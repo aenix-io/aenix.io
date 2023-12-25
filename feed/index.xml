@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ænix</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Amplify your data center with cloud transformation</description>
+	<lastBuildDate>Mon, 25 Dec 2023 00:35:11 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.4.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2023/12/cropped-AEnix_gradient_arrows5_square-32x32.png</url>
+	<title>Ænix</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Kubernetes-in-Kubernetes and PXE bootable server farm</title>
+		<link>/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/</link>
+		
+		<dc:creator><![CDATA[kvaps]]></dc:creator>
+		<pubDate>Thu, 21 Dec 2023 20:11:01 +0000</pubDate>
+				<category><![CDATA[Case Studies]]></category>
+		<category><![CDATA[Featured works]]></category>
+		<guid isPermaLink="false">/?p=748</guid>
+
+					<description><![CDATA[The comprehensive data center automation project, implementing infrastructure-as-code, stateless PXE-based server farm, software-defined storage, and declarative workload management.]]></description>
+										<content:encoded><![CDATA[
+<p>The comprehensive data center automation project, implementing infrastructure-as-code, stateless PXE-based server farm, software-defined storage, and declarative workload management.</p>
+
+
+
+<p><strong>Objective:</strong></p>
+
+
+
+<p>This project aimed to maximize the efficiency of WEDOS&#8217;s data centers, with a focus on utilizing oil cooling technology and automating server management processes. </p>
+
+
+
+<p>At the time of implementation, WEDOS operated two data centers. The second data center, fully built with oil cooling, was designed primarily for the Top-load <strong>HPE Moonshot 1500 Chassis</strong>, each housing 45 <strong>HPE ProLiant m710x Server Blades</strong>. </p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{ &quot;core&quot;:
+				{ &quot;image&quot;:
+					{   &quot;imageLoaded&quot;: false,
+						&quot;initialized&quot;: false,
+						&quot;lightboxEnabled&quot;: false,
+						&quot;hideAnimationEnabled&quot;: false,
+						&quot;preloadInitialized&quot;: false,
+						&quot;lightboxAnimation&quot;: &quot;zoom&quot;,
+						&quot;imageUploadedSrc&quot;: &quot;/wp-content/uploads/2023/12/wedos5.jpg&quot;,
+						&quot;imageCurrentSrc&quot;: &quot;&quot;,
+						&quot;targetWidth&quot;: &quot;1293&quot;,
+						&quot;targetHeight&quot;: &quot;861&quot;,
+						&quot;scaleAttr&quot;: &quot;&quot;,
+						&quot;dialogLabel&quot;: &quot;Enlarged image&quot;
+					}
+				}
+			}" data-wp-interactive class="wp-block-image size-large wp-lightbox-container"><img fetchpriority="high" decoding="async" width="1024" height="682" data-wp-effect--setStylesOnResize="effects.core.image.setStylesOnResize" data-wp-effect="effects.core.image.setButtonStyles" data-wp-init="effects.core.image.initOriginImage" data-wp-on--click="actions.core.image.showLightbox" data-wp-on--load="actions.core.image.handleLoad" data-id="1020" src="/wp-content/uploads/2023/12/wedos5-1024x682.jpg" alt="" class="wp-image-1020" srcset="/wp-content/uploads/2023/12/wedos5-1024x682.jpg 1024w, /wp-content/uploads/2023/12/wedos5-300x200.jpg 300w, /wp-content/uploads/2023/12/wedos5-768x511.jpg 768w, /wp-content/uploads/2023/12/wedos5-930x620.jpg 930w, /wp-content/uploads/2023/12/wedos5.jpg 1293w" sizes="(max-width: 1024px) 100vw, 1024px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			aria-label="Enlarge image"
+			data-wp-on--click="actions.core.image.showLightbox"
+			data-wp-style--right="context.core.image.imageButtonRight"
+			data-wp-style--top="context.core.image.imageButtonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button>        <div data-wp-body="" class="wp-lightbox-overlay zoom"
+            data-wp-bind--role="selectors.core.image.roleAttribute"
+            data-wp-bind--aria-label="selectors.core.image.dialogLabel"
+            data-wp-class--initialized="context.core.image.initialized"
+            data-wp-class--active="context.core.image.lightboxEnabled"
+            data-wp-class--hideAnimationEnabled="context.core.image.hideAnimationEnabled"
+            data-wp-bind--aria-modal="selectors.core.image.ariaModal"
+            data-wp-effect="effects.core.image.initLightbox"
+            data-wp-on--keydown="actions.core.image.handleKeydown"
+            data-wp-on--touchstart="actions.core.image.handleTouchStart"
+            data-wp-on--touchmove="actions.core.image.handleTouchMove"
+            data-wp-on--touchend="actions.core.image.handleTouchEnd"
+            data-wp-on--click="actions.core.image.hideLightbox"
+            tabindex="-1"
+            >
+                <button type="button" aria-label="Close" style="fill: #000" class="close-button" data-wp-on--click="actions.core.image.hideLightbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg>
+                </button>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large responsive-image"><img decoding="async" data-wp-bind--src="context.core.image.imageCurrentSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1020" src="" alt="" class="wp-image-1020"/></figure>
+</div>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large enlarged-image"><img decoding="async" data-wp-bind--src="selectors.core.image.enlargedImgSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1020" src="" alt="" class="wp-image-1020"/></figure>
+</div>
+                <div class="scrim" style="background-color: #fff" aria-hidden="true"></div>
+        </div></figure>
+
+
+
+<figure data-wp-context="{ &quot;core&quot;:
+				{ &quot;image&quot;:
+					{   &quot;imageLoaded&quot;: false,
+						&quot;initialized&quot;: false,
+						&quot;lightboxEnabled&quot;: false,
+						&quot;hideAnimationEnabled&quot;: false,
+						&quot;preloadInitialized&quot;: false,
+						&quot;lightboxAnimation&quot;: &quot;zoom&quot;,
+						&quot;imageUploadedSrc&quot;: &quot;/wp-content/uploads/2023/12/wedos6-1.jpg&quot;,
+						&quot;imageCurrentSrc&quot;: &quot;&quot;,
+						&quot;targetWidth&quot;: &quot;2048&quot;,
+						&quot;targetHeight&quot;: &quot;1152&quot;,
+						&quot;scaleAttr&quot;: &quot;&quot;,
+						&quot;dialogLabel&quot;: &quot;Enlarged image&quot;
+					}
+				}
+			}" data-wp-interactive class="wp-block-image size-large wp-lightbox-container"><img decoding="async" width="1024" height="576" data-wp-effect--setStylesOnResize="effects.core.image.setStylesOnResize" data-wp-effect="effects.core.image.setButtonStyles" data-wp-init="effects.core.image.initOriginImage" data-wp-on--click="actions.core.image.showLightbox" data-wp-on--load="actions.core.image.handleLoad" data-id="1021" src="/wp-content/uploads/2023/12/wedos6-1-1024x576.jpg" alt="" class="wp-image-1021" srcset="/wp-content/uploads/2023/12/wedos6-1-1024x576.jpg 1024w, /wp-content/uploads/2023/12/wedos6-1-300x169.jpg 300w, /wp-content/uploads/2023/12/wedos6-1-768x432.jpg 768w, /wp-content/uploads/2023/12/wedos6-1-1536x864.jpg 1536w, /wp-content/uploads/2023/12/wedos6-1.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			aria-label="Enlarge image"
+			data-wp-on--click="actions.core.image.showLightbox"
+			data-wp-style--right="context.core.image.imageButtonRight"
+			data-wp-style--top="context.core.image.imageButtonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button>        <div data-wp-body="" class="wp-lightbox-overlay zoom"
+            data-wp-bind--role="selectors.core.image.roleAttribute"
+            data-wp-bind--aria-label="selectors.core.image.dialogLabel"
+            data-wp-class--initialized="context.core.image.initialized"
+            data-wp-class--active="context.core.image.lightboxEnabled"
+            data-wp-class--hideAnimationEnabled="context.core.image.hideAnimationEnabled"
+            data-wp-bind--aria-modal="selectors.core.image.ariaModal"
+            data-wp-effect="effects.core.image.initLightbox"
+            data-wp-on--keydown="actions.core.image.handleKeydown"
+            data-wp-on--touchstart="actions.core.image.handleTouchStart"
+            data-wp-on--touchmove="actions.core.image.handleTouchMove"
+            data-wp-on--touchend="actions.core.image.handleTouchEnd"
+            data-wp-on--click="actions.core.image.hideLightbox"
+            tabindex="-1"
+            >
+                <button type="button" aria-label="Close" style="fill: #000" class="close-button" data-wp-on--click="actions.core.image.hideLightbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg>
+                </button>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large responsive-image"><img decoding="async" data-wp-bind--src="context.core.image.imageCurrentSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1021" src="" alt="" class="wp-image-1021"/></figure>
+</div>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large enlarged-image"><img decoding="async" data-wp-bind--src="selectors.core.image.enlargedImgSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1021" src="" alt="" class="wp-image-1021"/></figure>
+</div>
+                <div class="scrim" style="background-color: #fff" aria-hidden="true"></div>
+        </div></figure>
+
+
+
+<figure data-wp-context="{ &quot;core&quot;:
+				{ &quot;image&quot;:
+					{   &quot;imageLoaded&quot;: false,
+						&quot;initialized&quot;: false,
+						&quot;lightboxEnabled&quot;: false,
+						&quot;hideAnimationEnabled&quot;: false,
+						&quot;preloadInitialized&quot;: false,
+						&quot;lightboxAnimation&quot;: &quot;zoom&quot;,
+						&quot;imageUploadedSrc&quot;: &quot;/wp-content/uploads/2023/12/wedos4.jpg&quot;,
+						&quot;imageCurrentSrc&quot;: &quot;&quot;,
+						&quot;targetWidth&quot;: &quot;2048&quot;,
+						&quot;targetHeight&quot;: &quot;1152&quot;,
+						&quot;scaleAttr&quot;: &quot;&quot;,
+						&quot;dialogLabel&quot;: &quot;Enlarged image&quot;
+					}
+				}
+			}" data-wp-interactive class="wp-block-image size-large wp-lightbox-container"><img decoding="async" width="1024" height="576" data-wp-effect--setStylesOnResize="effects.core.image.setStylesOnResize" data-wp-effect="effects.core.image.setButtonStyles" data-wp-init="effects.core.image.initOriginImage" data-wp-on--click="actions.core.image.showLightbox" data-wp-on--load="actions.core.image.handleLoad" data-id="1022" src="/wp-content/uploads/2023/12/wedos4-1024x576.jpg" alt="" class="wp-image-1022" srcset="/wp-content/uploads/2023/12/wedos4-1024x576.jpg 1024w, /wp-content/uploads/2023/12/wedos4-300x169.jpg 300w, /wp-content/uploads/2023/12/wedos4-768x432.jpg 768w, /wp-content/uploads/2023/12/wedos4-1536x864.jpg 1536w, /wp-content/uploads/2023/12/wedos4.jpg 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			aria-label="Enlarge image"
+			data-wp-on--click="actions.core.image.showLightbox"
+			data-wp-style--right="context.core.image.imageButtonRight"
+			data-wp-style--top="context.core.image.imageButtonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button>        <div data-wp-body="" class="wp-lightbox-overlay zoom"
+            data-wp-bind--role="selectors.core.image.roleAttribute"
+            data-wp-bind--aria-label="selectors.core.image.dialogLabel"
+            data-wp-class--initialized="context.core.image.initialized"
+            data-wp-class--active="context.core.image.lightboxEnabled"
+            data-wp-class--hideAnimationEnabled="context.core.image.hideAnimationEnabled"
+            data-wp-bind--aria-modal="selectors.core.image.ariaModal"
+            data-wp-effect="effects.core.image.initLightbox"
+            data-wp-on--keydown="actions.core.image.handleKeydown"
+            data-wp-on--touchstart="actions.core.image.handleTouchStart"
+            data-wp-on--touchmove="actions.core.image.handleTouchMove"
+            data-wp-on--touchend="actions.core.image.handleTouchEnd"
+            data-wp-on--click="actions.core.image.hideLightbox"
+            tabindex="-1"
+            >
+                <button type="button" aria-label="Close" style="fill: #000" class="close-button" data-wp-on--click="actions.core.image.hideLightbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg>
+                </button>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large responsive-image"><img decoding="async" data-wp-bind--src="context.core.image.imageCurrentSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1022" src="" alt="" class="wp-image-1022"/></figure>
+</div>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large enlarged-image"><img decoding="async" data-wp-bind--src="selectors.core.image.enlargedImgSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1022" src="" alt="" class="wp-image-1022"/></figure>
+</div>
+                <div class="scrim" style="background-color: #fff" aria-hidden="true"></div>
+        </div></figure>
+</figure>
+
+
+
+<p></p>
+
+
+
+<p>The entire data center was constructed using these servers.</p>
+
+
+
+<p><strong>Implementation:</strong></p>
+
+
+
+<p> A distinctive feature of the implemented system was its stateless automatic provisioning. Servers booted from a network-boot server and connected to the assigned Kubernetes cluster, which then scheduled user workloads on them. Some servers were dedicated to cloud platform, while others managed hosting workloads like web servers, databases, and mail servers. Due to stateless nature the servers can be simple updated by reboot operation, during next-booting process they will fetch new images from the network-boot server.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" src="https://kubernetes.io/images/blog/2021-12-22-kubernetes-in-kubernetes-and-pxe-bootable-server-farm/scheme04.svg" alt=""/></figure>
+
+
+
+<p>To manage the entire infrastructure, the Kubefarm project was developed. It facilitated the launch of Kubernetes control planes for user servers, provided DHCP configuration, and operated a network boot server for node loading.</p>
+
+
+
+<p><strong>Outcomes:</strong></p>
+
+
+
+<p>The result was a fully managed infrastructure-as-a-code. System images for servers were compiled using Dockerfile too, allowing seamless cluster updates and convenient management through a specially developed utility, moonshotctl. This approach significantly enhanced the data center&#8217;s operational efficiency and resource management.</p>
+
+
+
+<p>The project was open sourced, and the expertise was transferred as much as possible to the infrastructure team, where the project is used and developed to this day.</p>
+
+
+
+<p><strong>Demonstration:</strong></p>
+
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://kvaps.github.io/images/posts/Kubernetes-in-Kubernetes-and-PXE-bootable-servers-farm/Argo_CD_Applications_kubefarm-network.html" class="vlp-link" title="Argo CD - Applications / kubefarm-foo" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img loading="lazy" decoding="async" style="max-width: 150px;" width="150" height="118" src="/wp-content/uploads/2023/12/argocd02.png" class="attachment-150x999 size-150x999" alt="" srcset="/wp-content/uploads/2023/12/argocd02.png 1794w, /wp-content/uploads/2023/12/argocd02-300x236.png 300w, /wp-content/uploads/2023/12/argocd02-1024x807.png 1024w, /wp-content/uploads/2023/12/argocd02-768x605.png 768w, /wp-content/uploads/2023/12/argocd02-1536x1211.png 1536w" sizes="(max-width: 150px) 100vw, 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Argo CD &#8211; Applications / kubefarm-foo</div><div class="vlp-block-1 vlp-link-summary">Kubefarm cluster deployed using Argo CD</div></div></div>
+
+
+<script async id="asciicast-258607" src="https://asciinema.org/a/258607.js"></script>
+
+
+
+<p><strong>Additional Links:</strong></p>
+
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://kubernetes.io/blog/2021/12/22/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/" class="vlp-link" title="Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img loading="lazy" decoding="async" style="max-width: 150px;" width="150" height="91" src="/wp-content/uploads/2023/12/Screenshot-2023-12-24-at-23-53-22-Kubernetes-in-Kubernetes-and-the-WEDOS-PXE-bootable-server-farm.png" class="attachment-150x999 size-150x999" alt="" srcset="/wp-content/uploads/2023/12/Screenshot-2023-12-24-at-23-53-22-Kubernetes-in-Kubernetes-and-the-WEDOS-PXE-bootable-server-farm.png 435w, /wp-content/uploads/2023/12/Screenshot-2023-12-24-at-23-53-22-Kubernetes-in-Kubernetes-and-the-WEDOS-PXE-bootable-server-farm-300x183.png 300w" sizes="(max-width: 150px) 100vw, 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Kubernetes-in-Kubernetes and the WEDOS PXE bootable server farm</div><div class="vlp-block-1 vlp-link-summary">When you own two data centers, thousands of physical servers, virtual machines and hosting for hundreds of thousands sites, Kubernetes can actually simplify the management of all these things.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/kubefarm/kubefarm" class="vlp-link" title="kubefarm: Automated Kubernetes deployment and the PXE-bootable servers farm" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/05c317c5539bc7f062f37aeefa6cb066a1664c61469bbcc97ce9db935a46617f/kubefarm/kubefarm" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">kubefarm: Automated Kubernetes deployment and the PXE-bootable servers farm</div><div class="vlp-block-1 vlp-link-summary">Automated Kubernetes deployment and the PXE-bootable servers farm &#8211; GitHub &#8211; kubefarm/kubefarm: Automated Kubernetes deployment and the PXE-bootable servers farm</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/kubefarm/kubernetes-in-kubernetes" class="vlp-link" title="kubernetes-in-kubernetes: Deploy Kubernetes in Kubernetes using Helm" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/629079abb01441c7d02d6c2e0624bd989fb316c7d31e4f95fe2c5c5beb2113a5/kubefarm/kubernetes-in-kubernetes" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">kubernetes-in-kubernetes: Deploy Kubernetes in Kubernetes using Helm</div><div class="vlp-block-1 vlp-link-summary">Deploy Kubernetes in Kubernetes using Helm. Contribute to kubefarm/kubernetes-in-kubernetes development by creating an account on GitHub.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://itnext.io/configuring-routing-for-metallb-in-l2-mode-7ea26e19219e" class="vlp-link" title="Configuring routing for MetalLB in L2 mode" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:774/0*wI1GLh4MrCzuwiwB.png" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Configuring routing for MetalLB in L2 mode</div><div class="vlp-block-1 vlp-link-summary">In this article I will show you how to configure source-based and policy-based routing for the external network on your cluster.</div></div></div>
+
+
+<p><strong>Presentations:</strong></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe loading="lazy" title="Case-Study: 600 Nodes on DRBD + LINSTOR for Kubernetes, OpenNebula and Proxmox" width="1200" height="675" src="https://www.youtube.com/embed/kMU3JAsFXQk?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Public Cloud and VPS hosting platform</title>
+		<link>/public-cloud-and-vps-hosting-platform/</link>
+		
+		<dc:creator><![CDATA[kvaps]]></dc:creator>
+		<pubDate>Thu, 21 Dec 2023 20:10:03 +0000</pubDate>
+				<category><![CDATA[Case Studies]]></category>
+		<guid isPermaLink="false">/?p=746</guid>
+
+					<description><![CDATA[Development of a cloud virtualization system for VPS hosting and public cloud platform.]]></description>
+										<content:encoded><![CDATA[
+<p>Development of a cloud virtualization system for VPS hosting and public cloud platform.</p>
+
+
+
+<p><strong>Objective:</strong></p>
+
+
+
+<p>The project aimed to develop a cloud virtualization system for creating VPS hosting and a public cloud platform.</p>
+
+
+
+<p><strong>Implementation:</strong></p>
+
+
+
+<p>Given the large number of servers, the management of OpenNebula was completely shifted into Kubernetes. This transition was facilitated by the development of the kube-opennebula project, which included fully automatic configuration of OpenNebula with all users, images, and data stores.</p>
+
+
+
+<p>A highly-customizable script was used for node configuration, executed by Kubernetes on each node. The storage system initially utilized LINSTOR SDS and was later transitioned to HPE 3par. An extensive API reference was prepared for integration with billing systems and the client’s system, covering various scenarios. The project also involved the development of a system for automatic preparation and unification of images. Several storage drivers like linstor_un and 3par were developed, along with a monitoring system and a multitude of plugins.</p>
+
+
+
+<p><strong>Outcomes:</strong></p>
+
+
+
+<p>The project successfully enabled the maintenance of multiple environments, such as production, devel and staging. The similarity for enviroments allowed for seamless development and integration of new features, significantly enhancing the efficiency and scalability of the cloud infrastructure.</p>
+
+
+
+<p><strong>Screenshots:</strong></p>
+
+
+
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex">
+<figure data-wp-context="{ &quot;core&quot;:
+				{ &quot;image&quot;:
+					{   &quot;imageLoaded&quot;: false,
+						&quot;initialized&quot;: false,
+						&quot;lightboxEnabled&quot;: false,
+						&quot;hideAnimationEnabled&quot;: false,
+						&quot;preloadInitialized&quot;: false,
+						&quot;lightboxAnimation&quot;: &quot;zoom&quot;,
+						&quot;imageUploadedSrc&quot;: &quot;/wp-content/uploads/2023/12/image-8.png&quot;,
+						&quot;imageCurrentSrc&quot;: &quot;&quot;,
+						&quot;targetWidth&quot;: &quot;2094&quot;,
+						&quot;targetHeight&quot;: &quot;1237&quot;,
+						&quot;scaleAttr&quot;: &quot;&quot;,
+						&quot;dialogLabel&quot;: &quot;Enlarged image&quot;
+					}
+				}
+			}" data-wp-interactive class="wp-block-image size-large wp-lightbox-container"><img loading="lazy" decoding="async" width="1024" height="605" data-wp-effect--setStylesOnResize="effects.core.image.setStylesOnResize" data-wp-effect="effects.core.image.setButtonStyles" data-wp-init="effects.core.image.initOriginImage" data-wp-on--click="actions.core.image.showLightbox" data-wp-on--load="actions.core.image.handleLoad" data-id="1037" src="/wp-content/uploads/2023/12/image-8-1024x605.png" alt="" class="wp-image-1037" srcset="/wp-content/uploads/2023/12/image-8-1024x605.png 1024w, /wp-content/uploads/2023/12/image-8-300x177.png 300w, /wp-content/uploads/2023/12/image-8-768x454.png 768w, /wp-content/uploads/2023/12/image-8-1536x907.png 1536w, /wp-content/uploads/2023/12/image-8-2048x1210.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			aria-label="Enlarge image"
+			data-wp-on--click="actions.core.image.showLightbox"
+			data-wp-style--right="context.core.image.imageButtonRight"
+			data-wp-style--top="context.core.image.imageButtonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button>        <div data-wp-body="" class="wp-lightbox-overlay zoom"
+            data-wp-bind--role="selectors.core.image.roleAttribute"
+            data-wp-bind--aria-label="selectors.core.image.dialogLabel"
+            data-wp-class--initialized="context.core.image.initialized"
+            data-wp-class--active="context.core.image.lightboxEnabled"
+            data-wp-class--hideAnimationEnabled="context.core.image.hideAnimationEnabled"
+            data-wp-bind--aria-modal="selectors.core.image.ariaModal"
+            data-wp-effect="effects.core.image.initLightbox"
+            data-wp-on--keydown="actions.core.image.handleKeydown"
+            data-wp-on--touchstart="actions.core.image.handleTouchStart"
+            data-wp-on--touchmove="actions.core.image.handleTouchMove"
+            data-wp-on--touchend="actions.core.image.handleTouchEnd"
+            data-wp-on--click="actions.core.image.hideLightbox"
+            tabindex="-1"
+            >
+                <button type="button" aria-label="Close" style="fill: #000" class="close-button" data-wp-on--click="actions.core.image.hideLightbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg>
+                </button>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large responsive-image"><img decoding="async" data-wp-bind--src="context.core.image.imageCurrentSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1037" src="" alt="" class="wp-image-1037"/></figure>
+</div>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large enlarged-image"><img decoding="async" data-wp-bind--src="selectors.core.image.enlargedImgSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1037" src="" alt="" class="wp-image-1037"/></figure>
+</div>
+                <div class="scrim" style="background-color: #fff" aria-hidden="true"></div>
+        </div></figure>
+
+
+
+<figure data-wp-context="{ &quot;core&quot;:
+				{ &quot;image&quot;:
+					{   &quot;imageLoaded&quot;: false,
+						&quot;initialized&quot;: false,
+						&quot;lightboxEnabled&quot;: false,
+						&quot;hideAnimationEnabled&quot;: false,
+						&quot;preloadInitialized&quot;: false,
+						&quot;lightboxAnimation&quot;: &quot;zoom&quot;,
+						&quot;imageUploadedSrc&quot;: &quot;/wp-content/uploads/2023/12/image-7.png&quot;,
+						&quot;imageCurrentSrc&quot;: &quot;&quot;,
+						&quot;targetWidth&quot;: &quot;1920&quot;,
+						&quot;targetHeight&quot;: &quot;1080&quot;,
+						&quot;scaleAttr&quot;: &quot;&quot;,
+						&quot;dialogLabel&quot;: &quot;Enlarged image&quot;
+					}
+				}
+			}" data-wp-interactive class="wp-block-image size-large wp-lightbox-container"><img loading="lazy" decoding="async" width="1024" height="576" data-wp-effect--setStylesOnResize="effects.core.image.setStylesOnResize" data-wp-effect="effects.core.image.setButtonStyles" data-wp-init="effects.core.image.initOriginImage" data-wp-on--click="actions.core.image.showLightbox" data-wp-on--load="actions.core.image.handleLoad" data-id="1036" src="/wp-content/uploads/2023/12/image-7-1024x576.png" alt="" class="wp-image-1036" srcset="/wp-content/uploads/2023/12/image-7-1024x576.png 1024w, /wp-content/uploads/2023/12/image-7-300x169.png 300w, /wp-content/uploads/2023/12/image-7-768x432.png 768w, /wp-content/uploads/2023/12/image-7-1536x864.png 1536w, /wp-content/uploads/2023/12/image-7.png 1920w" sizes="(max-width: 1024px) 100vw, 1024px" /><button
+			class="lightbox-trigger"
+			type="button"
+			aria-haspopup="dialog"
+			aria-label="Enlarge image"
+			data-wp-on--click="actions.core.image.showLightbox"
+			data-wp-style--right="context.core.image.imageButtonRight"
+			data-wp-style--top="context.core.image.imageButtonTop"
+		>
+			<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 12 12">
+				<path fill="#fff" d="M2 0a2 2 0 0 0-2 2v2h1.5V2a.5.5 0 0 1 .5-.5h2V0H2Zm2 10.5H2a.5.5 0 0 1-.5-.5V8H0v2a2 2 0 0 0 2 2h2v-1.5ZM8 12v-1.5h2a.5.5 0 0 0 .5-.5V8H12v2a2 2 0 0 1-2 2H8Zm2-12a2 2 0 0 1 2 2v2h-1.5V2a.5.5 0 0 0-.5-.5H8V0h2Z" />
+			</svg>
+		</button>        <div data-wp-body="" class="wp-lightbox-overlay zoom"
+            data-wp-bind--role="selectors.core.image.roleAttribute"
+            data-wp-bind--aria-label="selectors.core.image.dialogLabel"
+            data-wp-class--initialized="context.core.image.initialized"
+            data-wp-class--active="context.core.image.lightboxEnabled"
+            data-wp-class--hideAnimationEnabled="context.core.image.hideAnimationEnabled"
+            data-wp-bind--aria-modal="selectors.core.image.ariaModal"
+            data-wp-effect="effects.core.image.initLightbox"
+            data-wp-on--keydown="actions.core.image.handleKeydown"
+            data-wp-on--touchstart="actions.core.image.handleTouchStart"
+            data-wp-on--touchmove="actions.core.image.handleTouchMove"
+            data-wp-on--touchend="actions.core.image.handleTouchEnd"
+            data-wp-on--click="actions.core.image.hideLightbox"
+            tabindex="-1"
+            >
+                <button type="button" aria-label="Close" style="fill: #000" class="close-button" data-wp-on--click="actions.core.image.hideLightbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M13 11.8l6.1-6.3-1-1-6.1 6.2-6.1-6.2-1 1 6.1 6.3-6.5 6.7 1 1 6.5-6.6 6.5 6.6 1-1z"></path></svg>
+                </button>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large responsive-image"><img decoding="async" data-wp-bind--src="context.core.image.imageCurrentSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1036" src="" alt="" class="wp-image-1036"/></figure>
+</div>
+                <div class="lightbox-image-container">
+<figure class="wp-block-image size-large enlarged-image"><img decoding="async" data-wp-bind--src="selectors.core.image.enlargedImgSrc" data-wp-style--object-fit="selectors.core.image.lightboxObjectFit" data-id="1036" src="" alt="" class="wp-image-1036"/></figure>
+</div>
+                <div class="scrim" style="background-color: #fff" aria-hidden="true"></div>
+        </div></figure>
+</figure>
+
+
+
+<p></p>
+
+
+
+<p><strong>Additional links:</strong></p>
+
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/kvaps/kube-opennebula" class="vlp-link" title="kube-opennebula: Helm chart and OpenNebula images ready to deploy on Kubernetes" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/f95014add708ee4f052df9e22abde2b960f59163f4d9494a600a047145bdc179/kvaps/kube-opennebula" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">kube-opennebula: Helm chart and OpenNebula images ready to deploy on Kubernetes</div><div class="vlp-block-1 vlp-link-summary">Helm chart and OpenNebula images ready to deploy on Kubernetes &#8211; GitHub &#8211; kvaps/kube-opennebula: Helm chart and OpenNebula images ready to deploy on Kubernetes</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/OpenNebula/addon-linstor_un" class="vlp-link" title="addon-linstor_un: Community driven full-feature Linstor storage driver for OpenNebula" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/eaef5c803743372d7e4b29cb910d77af41deb8d0c6413ffc3fb3352257749727/OpenNebula/addon-linstor_un" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">addon-linstor_un: Community driven full-feature Linstor storage driver for OpenNebula</div><div class="vlp-block-1 vlp-link-summary">Community driven full-feature Linstor storage driver for OpenNebula &#8211; GitHub &#8211; OpenNebula/addon-linstor_un: Community driven full-feature Linstor storage driver for OpenNebula</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/kvaps/opennebula-images" class="vlp-link" title="opennebula-images: OpenNebula Images Generator" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/174457b057dd9c545da6981daa03dcb63df208e46188804b87937ff0a9da58a7/kvaps/opennebula-images" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">opennebula-images: OpenNebula Images Generator</div><div class="vlp-block-1 vlp-link-summary">OpenNebula Images Generator. Contribute to kvaps/opennebula-images development by creating an account on GitHub.</div></div></div>
+
+
+<p></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Lightweight VDI-infrastructure</title>
+		<link>/lightweight-vdi-infrastructure/</link>
+		
+		<dc:creator><![CDATA[kvaps]]></dc:creator>
+		<pubDate>Thu, 21 Dec 2023 20:08:39 +0000</pubDate>
+				<category><![CDATA[Case Studies]]></category>
+		<guid isPermaLink="false">/?p=744</guid>
+
+					<description><![CDATA[Virtual Desktop Infrastructure (VDI) is a technology where users operate on remote virtual machines instead of traditional physical computers.]]></description>
+										<content:encoded><![CDATA[
+<p><strong>Background:</strong></p>
+
+
+
+<p>Virtual Desktop Infrastructure (VDI) is a technology where users operate on remote virtual machines instead of traditional physical computers.</p>
+
+
+
+<p><strong>Implementation:</strong></p>
+
+
+
+<p>Users utilize thin clients as their local computers. These are simple single-board computers that boot over the network and do not have a physical hard drive for data storage. The work process initiates only when a user connects to the virtualization system. For every specific environment, a Windows virtual machine with pre-installed software is available.</p>
+
+
+
+<p><strong>Key Features:</strong></p>
+
+
+
+<ul>
+<li>The virtual machine acts as a template that can be independently updated. Upon connection, a snapshot of the selected virtual machine is created for the user, who then connects using the high-performant Spice protocol.</li>
+
+
+
+<li>Multiple screen support is available.</li>
+
+
+
+<li>Both local or remote USB devices can be passed through to the virtual machine using usbredir protocol.</li>
+
+
+
+<li>Users can be granted full administrative rights without risk, as the specific instance of the virtual machine is deleted right after disconnection.</li>
+</ul>
+
+
+
+<p><strong>Technologies Used:</strong></p>
+
+
+
+<ul>
+<li><strong>LTSP</strong> (Linux Terminal Server Project)</li>
+
+
+
+<li><strong>Usbredir</strong> (Part of Spice specification)</li>
+
+
+
+<li><strong>OpenNebula</strong> (Cloud Computing Platform)</li>
+</ul>
+
+
+
+<p><strong>Additional links:</strong></p>
+
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/kvaps/one-connect" class="vlp-link" title="one-connect" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/5a5c131056f2d8816d8aa2cfcbfeaaea888fdf759db133098d8a88540ae670b1/kvaps/one-connect" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">one-connect</div><div class="vlp-block-1 vlp-link-summary">Simple and secure access to your OpenNebula VMs via SPICE protocol.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/kvaps/usbredirtools" class="vlp-link" title="usbredirtools" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/e9ff05491c2d6631da872065ee933fc9214348aa89f8037e5744ae2a6f9a7dda/kvaps/usbredirtools" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">usbredirtools</div><div class="vlp-block-1 vlp-link-summary">Collection of scripts for passing through the usb-devices to VMs</div></div></div>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Highly efficient backup system for virtual machines and databases</title>
+		<link>/highly-efficient-backup-system-for-virtual-machines-and-databases/</link>
+		
+		<dc:creator><![CDATA[kvaps]]></dc:creator>
+		<pubDate>Thu, 21 Dec 2023 18:44:41 +0000</pubDate>
+				<category><![CDATA[Case Studies]]></category>
+		<guid isPermaLink="false">/?p=726</guid>
+
+					<description><![CDATA[Development of a large-scale backup system for virtual machines. The implementation of this system reduced the cost of storing backup copies by up to 75%!]]></description>
+										<content:encoded><![CDATA[
+<p>Development of a large-scale backup system for virtual machines. The implementation of this system reduced the cost of storing backup copies by up to 75%!</p>
+
+
+
+<p><strong>Objective:</strong></p>
+
+
+
+<p>The goal was to create an efficient backup system capable of reading data in real-time from the disks of virtual machines across several hundred servers and transferring it to a backup servers.</p>
+
+
+
+<p><strong><strong>Researched</strong></strong>:</p>
+
+
+
+<ul>
+<li><strong>Client Side:</strong> A comprehensive analysis of the efficiency and performance of various open-source backup systems was undertaken. Restic emerged as the most optimal solution based on this research.</li>
+
+
+
+<li><strong>Server Side:</strong> Different methods and filesystems were evaluated for their performance capabilities to establish an effective backend for the backup system.</li>
+</ul>
+
+
+
+<p><strong>Used technologies:</strong></p>
+
+
+
+<ul>
+<li><strong>Restic</strong> as highly efficient and feature-reach backup solution.</li>
+
+
+
+<li><strong>ZFS</strong> with <strong>dRAID</strong> and <strong>rest-server</strong> used for backend. This setup allowed for efficient data storage and swift recovery in the event of disk failures, even with large-capacity disks.</li>
+
+
+
+<li><strong>Kubernetes</strong> used for orchestration.</li>
+</ul>
+
+
+
+<p><strong>Outcomes:</strong></p>
+
+
+
+<p>This project successfully established a robust and scalable backup solution, enhancing data security and recovery capabilities across a large server network. The use of open-source tools like Restic and the ZFS file system, combined with the orchestration power of Kubernetes, resulted in a highly reliable and efficient backup system suitable for virtual machines backed by block storage.</p>
+
+
+
+<p>The same approach was later adapted for the efficient backup of databases, demonstrating its versatility and scalability.</p>
+
+
+
+<p><strong>Additional links:</strong></p>
+
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://itnext.io/backup-storage-for-thousands-of-virtual-machines-using-free-tools-b3909004bef2" class="vlp-link" title="Backup storage for thousands of virtual machines using free tools" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:1200/0*A6SRoMPAkAf-RnRB.png" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Backup storage for thousands of virtual machines using free tools</div><div class="vlp-block-1 vlp-link-summary">We needed a backup solution to handle thousands of backups each week and do it as fast and efficiently as possible.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://kvaps.medium.com/4bc1e8f083c1" class="vlp-link" title="Restic: Effective Backup from Stdin" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:720/0*uJ7As9uTvB-gvQLe.png" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Restic: Effective Backup from Stdin</div><div class="vlp-block-1 vlp-link-summary">A ready-made solution for setting up effective backup from Stdin, with deduplication and automatic cleaning of the repository from old copie</div></div></div>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Design a full feature CSI driver for shared SAN in Kubernetes</title>
+		<link>/design-a-full-feature-csi-driver-for-shared-san-in-kubernetes/</link>
+		
+		<dc:creator><![CDATA[kvaps]]></dc:creator>
+		<pubDate>Wed, 20 Dec 2023 07:21:49 +0000</pubDate>
+				<category><![CDATA[Case Studies]]></category>
+		<category><![CDATA[Featured works]]></category>
+		<guid isPermaLink="false">/?p=710</guid>
+
+					<description><![CDATA[A complex research of the new storage subsystem in the Linux kernel and QEMU Storage Daemon and developing the design for an innovative CSI driver for shared LUNs in Kubernetes. ]]></description>
+										<content:encoded><![CDATA[
+<p>A complex research of the new storage subsystem in the Linux kernel and QEMU Storage Daemon and developing the design for an innovative CSI driver for shared LUNs in Kubernetes. </p>
+
+
+
+<p><strong>Objective:</strong></p>
+
+
+
+<p>This research aimed to develop an innovative design for a Container Storage Interface (CSI) driver suitable for shared LUNs in Kubernetes, focusing on efficient snapshot creation and support for ReadWriteMany mode for live migration of virtual machines in KubeVirt.</p>
+
+
+
+<p><strong>Researched:</strong></p>
+
+
+
+<ul>
+<li><strong>Linux Kernel Subsystems:</strong> The study delved into advanced Linux kernel storage technologies, including ublk (Userspace Block Device Driver), VDPA (Virtual Data Path Acceleration), and vDUSE (Virtual Device User Space).</li>
+
+
+
+<li><strong>QEMU Storage Daemon:</strong> Investigated the specialized daemon responsible for data storage, along with its API.</li>
+
+
+
+<li><strong>Fencing Methods:</strong> Explored various techniques for handling faulty nodes.</li>
+
+
+
+<li><strong>Performance Analysis:</strong> Assessed the performance of different snapshot technologies, such as LVM, LVM Thin, QCOW2, and various device export technologies, including ublk, nbd, vhost, and vdpa.</li>
+</ul>
+
+
+
+<p><strong>Outcomes:</strong></p>
+
+
+
+<ul>
+<li><strong>Design Documentation:</strong> Produced a comprehensive design of all components for the Kubernetes CSI driver, complete with detailed documentation that outlines the interaction of all components. This encompassed the design of the driver&#8217;s components in Kubernetes, their low-level API interactions, and a high-level user interface for configuring the storage subsystem.</li>
+
+
+
+<li><strong>Community Engagement:</strong> The findings were presented to and discussed with the wider community, as well as with the core developers of QEMU.</li>
+</ul>
+
+
+
+<p><strong>Additional links:</strong></p>
+
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://habrastorage.org/webt/cp/cl/iz/cpclizqkb737ev5f_1nglxhrn7q.gif" class="vlp-link" title="Kubernetes CSI driver components" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://habrastorage.org/webt/cp/cl/iz/cpclizqkb737ev5f_1nglxhrn7q.gif" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Kubernetes CSI driver components</div><div class="vlp-block-1 vlp-link-summary">Graphical representation of dynamic PVC provisioning in Kubernetes </div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://itnext.io/the-evolution-of-network-virtualization-technologies-in-linux-6ba3a4e9f293" class="vlp-link" title="The Evolution of Network Virtualization Technologies in Linux" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:1080/0*Q2RZPvSUqJjgjOZx.png" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">The Evolution of Network Virtualization Technologies in Linux</div><div class="vlp-block-1 vlp-link-summary">How and why device virtualization technologies developed, how they work, their strengths and weaknesses.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://blog.deckhouse.io/lvm-qcow-csi-driver-shared-san-kubernetes-81455201590e" class="vlp-link" title="LVM+QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:1200/1*19x5GB1vrtTD02ScSUBYSg.png" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">LVM+QCOW2: creating a perfect CSI driver for shared SAN in Kubernetes</div><div class="vlp-block-1 vlp-link-summary">Building a fast and universal driver with clustered LVM and the QCOW2 for using any SAN-like storage system in K8s.</div></div></div>]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Prototype a virtualization subsystem for Deckhouse Kubernetes platform</title>
+		<link>/prototype-a-virtualization-subsystem-for-deckhouse-kubernetes-platform/</link>
+		
+		<dc:creator><![CDATA[kvaps]]></dc:creator>
+		<pubDate>Wed, 20 Dec 2023 07:21:00 +0000</pubDate>
+				<category><![CDATA[Case Studies]]></category>
+		<category><![CDATA[Featured works]]></category>
+		<guid isPermaLink="false">/?p=708</guid>
+
+					<description><![CDATA[Development of a Kubernetes-native cloud virtualization system, tailored to integrate with the Deckhouse Kubernetes platform, enabling compatibility with its existing modules.]]></description>
+										<content:encoded><![CDATA[
+<p>Development of a Kubernetes-native cloud virtualization system, tailored to integrate with the Deckhouse Kubernetes platform, enabling compatibility with its existing modules.</p>
+
+
+
+<p><strong>Objective:</strong></p>
+
+
+
+<p>The goal was to implement cloud system functionality on the Deckhouse Kubernetes platform, ensuring maximum compatibility and management through Kubernetes objects.</p>
+
+
+
+<p><strong>Researched:</strong></p>
+
+
+
+<p>Several open-source cloud platforms, including OpenStack, OpenNebula, CloudStack, Ganeti, and KubeVirt, were evaluated. After thorough comparison, KubeVirt was chosen as the most suitable solution.</p>
+
+
+
+<p><strong>Implementation:</strong></p>
+
+
+
+<ul>
+<li><strong>Network Improvements:</strong> The initial network implementation in KubeVirt was not satisfactory, prompting significant enhancements to achieve maximum performance and stability. The realization of the new macvtap method led to a 20% reduction in network latency for standard CNI binding method.</li>
+
+
+
+<li><strong>IPAM:</strong> A specialized IP Address Management service was developed to allocate static IP addresses for virtual machines, allowing them to operate alongside the ephemeral pods in Kubernetes.</li>
+
+
+
+<li><strong>Distributed Router:</strong> A distributed router was implemented to monitor the location of virtual machines within the cluster and dynamically adjust routes accordingly.</li>
+
+
+
+<li><strong>Cilium modifications:</strong> Cilium updated with custom patches to add functionality for preserving IP and MAC addresses during the live migration of virtual machines to different nodes.</li>
+</ul>
+
+
+
+<p><strong>Outcomes:</strong></p>
+
+
+
+<p>After the release of the alpha version, the development transferred to a dedicated virtualization team. This included the complete transfer of expertise and assistance in designing the API for the next version.</p>
+
+
+
+<p><strong>Additional Links:</strong></p>
+
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://blog.deckhouse.io/deckhouse-v1-43-introduces-the-next-generation-virtualization-system-347bd758021a" class="vlp-link" title="Deckhouse v1.43 introduces the next-generation virtualization system" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://miro.medium.com/v2/resize:fit:1200/0*1A2KX0mHjTsez1er.png" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Deckhouse v1.43 introduces the next-generation virtualization system</div><div class="vlp-block-1 vlp-link-summary">Over the past few years, we at Flant have been keeping a close eye on the technology leaders in the cloud-native space. But it’s more than…</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/kubevirt/kubevirt/pull/7648" class="vlp-link" title="Macvtap binding mode for pod network #7648" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/2bb7fc22042fbc296e8862cf210e18bd69a29989f2030ae93c003cdff13e2eae/kubevirt/kubevirt/pull/7648" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Macvtap binding mode for pod network #7648</div><div class="vlp-block-1 vlp-link-summary">This PR adds macvtap networking mode for binding podNetwork.<br />
+This method does not requires any bridges, as a result we have less latency to communicate with other pods and VMs.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://github.com/kubevirt/kubevirt/pull/7768" class="vlp-link" title="Allow live-migration for pod network in bridge mode #7768" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://opengraph.githubassets.com/f14345f16d0f9cba22d879ac5d3f1e22c517769930d76d315802ca15c0ce8ad3/kubevirt/kubevirt/pull/7768" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Allow live-migration for pod network in bridge mode #7768</div><div class="vlp-block-1 vlp-link-summary">This PR enables the live-migration feaure for pod networking in any mode.</div></div></div>
+
+
+<p><strong>Presentation:</strong></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe loading="lazy" title="KubeVirt, its networking, and how we brought it to the next level /  Andrei Kvapil (Palark)" width="1200" height="675" src="https://www.youtube.com/embed/jp2XY-9MORM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Research and integration of fast and reliable block storage for Deckhouse Kubernetes platform</title>
+		<link>/research-and-integration-of-fast-and-reliable-block-storage-for-deckhouse-kubernetes-platform/</link>
+		
+		<dc:creator><![CDATA[kvaps]]></dc:creator>
+		<pubDate>Wed, 13 Dec 2023 09:49:56 +0000</pubDate>
+				<category><![CDATA[Case Studies]]></category>
+		<guid isPermaLink="false">/?p=41</guid>
+
+					<description><![CDATA[Our task was to find an easy-to-use, reliable block-type storage for Kubernetes. Hence we benchmarked several Open Source solutions to see how they behave under various conditions and ultimately choosing to adopt LINSTOR.]]></description>
+										<content:encoded><![CDATA[
+<p>Our task was to find an easy-to-use, reliable block-type storage for Kubernetes. Hence we benchmarked several Open Source solutions to see how they behave under various conditions and ultimately choosing to adopt LINSTOR.</p>
+
+
+
+<p><strong>Objective</strong>:</p>
+
+
+
+<p>Prior to implementing a <a href="/research-and-integrate-a-virtualization-platform-for-kubernetes/">cloud virtualization system</a>, it was essential to establish a reliable block storage solution for the data of virtual machines as well container workloads.</p>
+
+
+
+<p><strong>Researched:</strong></p>
+
+
+
+<p>In collaboration with experts, we developed specialized testing tool set. We conducted an extensive evaluation of various storage solutions, including <strong>Ceph</strong>, <strong>Mayastor</strong>, <strong>Vitastor</strong>, and <strong>LINSTOR.</strong><br>The findings from our testing were publicly released and extensively discussed within the community.</p>
+
+
+
+<p><strong>Implementation:</strong></p>
+
+
+
+<p>The initial implementation of the module included:</p>
+
+
+
+<ul>
+<li>Docker images for LINSTOR and all it&#8217;s components built from source code;</li>
+
+
+
+<li>Configuration tool;</li>
+
+
+
+<li>Documentation;</li>
+
+
+
+<li>Integrating tests;</li>
+
+
+
+<li>Grafana dashboard;</li>
+
+
+
+<li>Prometheus alerts with detailed courses of actions.</li>
+</ul>
+
+
+
+<p><strong>Outcomes:</strong></p>
+
+
+
+<p>The LINSTOR module was successfully implemented and has been operational since the stable release of Deckhouse v1.33.<br>There were detailed training and knowledge transfer sessions, as well as several public presentations.</p>
+
+
+
+<p><strong>Additional links:</strong></p>
+
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://blog.palark.com/kubernetes-storage-performance-linstor-ceph-mayastor-vitastor/" class="vlp-link" title="Comparing Ceph, LINSTOR, Mayastor, and Vitastor storage performance in Kubernetes" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://blog.palark.com/wp-content/uploads/2022/06/Comparing-Ceph-LINSTOR-Mayastor-and-Vitastor-storage-performance-in-Kubernetes-1024x521.png" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Comparing Ceph, LINSTOR, Mayastor, and Vitastor storage performance in Kubernetes</div><div class="vlp-block-1 vlp-link-summary">Choosing an Open Source storage solution for your K8s clusters? These benchmarks might help you find the most suitable option for your case.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://linbit.com/blog/comparing-linstor-ceph-mayastor-vitastor-storage-performance-in-kubernetes/" class="vlp-link" title="Comparing LINSTOR, Ceph, Mayastor, &amp; Vitastor Storage Performance in Kubernetes" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img decoding="async" src="https://linbit.com/wp-content/uploads/2022/06/Comparing-LINSTOR-Ceph-Mayastor-Vitastor.jpg" style="max-width: 150px; max-height: 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">Comparing LINSTOR, Ceph, Mayastor, &amp; Vitastor Storage Performance in Kubernetes</div><div class="vlp-block-1 vlp-link-summary">This is a guest post by Andrei Kvapil, Solutions Architect at Flant.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://grafana.com/grafana/dashboards/15917-linstor-drbd/" class="vlp-link" title="LINSTOR / DRBD Dashboard | Grafana Labs" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img loading="lazy" decoding="async" style="max-width: 150px;" width="150" height="67" src="/wp-content/uploads/2023/12/image-11.png" class="attachment-150x999 size-150x999" alt="" srcset="/wp-content/uploads/2023/12/image-11.png 1311w, /wp-content/uploads/2023/12/image-11-300x135.png 300w, /wp-content/uploads/2023/12/image-11-1024x459.png 1024w, /wp-content/uploads/2023/12/image-11-768x344.png 768w" sizes="(max-width: 150px) 100vw, 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">LINSTOR / DRBD Dashboard | Grafana Labs</div><div class="vlp-block-1 vlp-link-summary">LINSTOR and DRBD dashboard ready to use with piraeus-operator.</div></div></div>
+
+<div class="vlp-link-container vlp-layout-quick wp-block-visual-link-preview-link"><a href="https://deckhouse.io/documentation/v1/modules/041-linstor/" class="vlp-link" title="The linstor module | Deckhouse" rel="nofollow" target="_blank"></a><div class="vlp-layout-zone-side"><div class="vlp-block-2 vlp-link-image"><img loading="lazy" decoding="async" style="max-width: 150px;" width="150" height="92" src="/wp-content/uploads/2023/12/663cf46e-1330-4827-8abc-f2de892f5965.png" class="attachment-150x999 size-150x999" alt="" srcset="/wp-content/uploads/2023/12/663cf46e-1330-4827-8abc-f2de892f5965.png 1300w, /wp-content/uploads/2023/12/663cf46e-1330-4827-8abc-f2de892f5965-300x185.png 300w, /wp-content/uploads/2023/12/663cf46e-1330-4827-8abc-f2de892f5965-1024x630.png 1024w, /wp-content/uploads/2023/12/663cf46e-1330-4827-8abc-f2de892f5965-768x473.png 768w" sizes="(max-width: 150px) 100vw, 150px" /></div></div><div class="vlp-layout-zone-main"><div class="vlp-block-0 vlp-link-title">The linstor module | Deckhouse</div><div class="vlp-block-1 vlp-link-summary">Deckhouse uses the linstor module to manage a replicated block storage in the Kubernetes cluster.</div></div></div>
+
+
+<p><strong>Presentation:</strong></p>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<div class="nv-iframe-embed"><iframe loading="lazy" title="LINSTOR Is Like Kubernetes, But for Block Devices / Andrei Kvapil" width="1200" height="675" src="https://www.youtube.com/embed/jwaqWezhugE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+</div></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
