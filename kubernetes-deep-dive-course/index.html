@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<title>Conferences &#8211; Ænix</title>
+<title>Kubernetes Deep Dive &#8211; Ænix</title>
 <meta name="robots" content="max-image-preview:large">
 <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 <link rel="dns-prefetch" href="//www.googletagmanager.com">
@@ -145,20 +145,25 @@
  :root{ --container: 748px;--postwidth:100%; --primarybtnbg: var(--nv-primary-accent); --secondarybtnbg: rgba(0, 0, 0, 0); --primarybtnhoverbg: var(--nv-secondary-accent); --secondarybtnhoverbg: var(--nv-dark-bg); --primarybtncolor: var(--nv-text-dark-bg); --secondarybtncolor: var(--nv-dark-bg); --primarybtnhovercolor: #ffffff; --secondarybtnhovercolor: var(--nv-text-dark-bg);--primarybtnborderradius:0;--secondarybtnborderradius:0;--secondarybtnborderwidth:2px;--btnpadding:12px 24px;--primarybtnpadding:12px 24px;--secondarybtnpadding:calc(12px - 2px) calc(24px - 2px); --btnfs: 14px; --btnlineheight: 1.6em; --bodyfontfamily: "Spline Sans"; --bodyfontsize: 16px; --bodylineheight: 1.7em; --bodyletterspacing: 0px; --bodyfontweight: 400; --bodytexttransform: none; --headingsfontfamily: Outfit; --h1fontsize: 39px; --h1fontweight: 600; --h1lineheight: 1.2em; --h1letterspacing: 0px; --h1texttransform: none; --h2fontsize: 28px; --h2fontweight: 600; --h2lineheight: 1.3em; --h2letterspacing: 0px; --h2texttransform: none; --h3fontsize: 20px; --h3fontweight: 600; --h3lineheight: 1.3em; --h3letterspacing: 0px; --h3texttransform: none; --h4fontsize: 16px; --h4fontweight: 600; --h4lineheight: 1.3em; --h4letterspacing: 0px; --h4texttransform: none; --h5fontsize: 14px; --h5fontweight: 600; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h5texttransform: none; --h6fontsize: 14px; --h6fontweight: 600; --h6lineheight: 1.3em; --h6letterspacing: 0px; --h6texttransform: none;--formfieldborderwidth:2px;--formfieldborderradius:0; --formfieldbgcolor: var(--nv-site-bg); --formfieldbordercolor: var(--nv-light-bg); --formfieldcolor: var(--nv-text-color);--formfieldpadding:10px 12px 10px 12px;; } .nv-index-posts{ --borderradius:0px; } .has-neve-button-color-color{ color: var(--nv-primary-accent)!important; } .has-neve-button-color-background-color{ background-color: var(--nv-primary-accent)!important; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:718px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 28px; } .single h1.entry-title{ --fontsize: 28px; } .neve-main{ --boxshadow:0 3px 6px -5px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1); } .nv-post-cover{ --height: 250px;--padding:40px 15px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:40px 15px; --bgcolor: var(--nv-dark-bg); } .nv-overlay{ --opacity: 50; --blendmode: normal; } .nv-is-boxed.nv-comments-wrap{ --padding:20px; } .nv-is-boxed.comment-respond{ --padding:20px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .global-styled{ --bgcolor: var(--nv-site-bg); } .header-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #f0f0f0; } .header-main{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-bottom{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #ffffff; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; --color: var(--nv-text-color); --bgcolor: var(--nv-site-bg); } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 90px; --fs: 100px;--padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon,.header-menu-sidebar .close-sidebar-panel .navbar-toggle{ --borderradius:0;--borderwidth:1px; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --color: var(--nv-text-color); --hovercolor: #008ef3; --hovertextcolor: var(--nv-text-color); --activecolor: var(--nv-text-color); --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --fontweight: 600; --texttransform: uppercase; --iconsize: 1em; } .hfg-is-group.has-primary-menu .inherit-ff{ --inheritedfw: 600; } .builder-item--custom_html{ --padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --fontweight: 500; --texttransform: none; --iconsize: 1em; --textalign: left;--justify: flex-start; } .footer-top-inner .row{ grid-template-columns:1fr 1fr 1fr; --valign: flex-start; } .footer-top{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-color); --bgcolor: #ffffff; } .footer-main-inner .row{ grid-template-columns:1fr 1fr 1fr; --valign: flex-start; } .footer-main{ --rowbcolor: var(--nv-light-bg); --color: #ffffff; --bgcolor: #0d0c0c; } .footer-bottom-inner .row{ grid-template-columns:1fr 1fr 1fr; --valign: center; } .footer-bottom{ --rowbcolor: var(--nv-light-bg); --color: var(--nv-text-dark-bg); --bgcolor: #000000; } .builder-item--footer-four-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-menu{ --hovercolor: var(--nv-primary-accent); --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --fontweight: 500; --texttransform: none; --iconsize: 1em; --textalign: left;--justify: flex-start; } @media(min-width: 576px){ :root{ --container: 992px;--postwidth:50%;--btnpadding:12px 24px;--primarybtnpadding:12px 24px;--secondarybtnpadding:calc(12px - 2px) calc(24px - 2px); --btnfs: 14px; --btnlineheight: 1.6em; --bodyfontsize: 16px; --bodylineheight: 1.7em; --bodyletterspacing: 0px; --h1fontsize: 55px; --h1lineheight: 1.3em; --h1letterspacing: 0px; --h2fontsize: 34px; --h2lineheight: 1.3em; --h2letterspacing: 0px; --h3fontsize: 20px; --h3lineheight: 1.3em; --h3letterspacing: 0px; --h4fontsize: 16px; --h4lineheight: 1.3em; --h4letterspacing: 0px; --h5fontsize: 14px; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h6fontsize: 14px; --h6lineheight: 1.3em; --h6letterspacing: 0px; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:962px } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 32px; } .single h1.entry-title{ --fontsize: 40px; } .nv-post-cover{ --height: 320px;--padding:60px 30px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 30px; } .nv-is-boxed.nv-comments-wrap{ --padding:30px; } .nv-is-boxed.comment-respond{ --padding:30px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 10em; --fs: 24px;--padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; } .builder-item--custom_html{ --padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; --textalign: left;--justify: flex-start; } .builder-item--footer-four-widgets{ --padding:0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--footer-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; --textalign: left;--justify: flex-start; } }@media(min-width: 960px){ :root{ --container: 1170px;--postwidth:50%;--btnpadding:12px 24px;--primarybtnpadding:12px 24px;--secondarybtnpadding:calc(12px - 2px) calc(24px - 2px); --btnfs: 16px; --btnlineheight: 1.6em; --bodyfontsize: 17px; --bodylineheight: 1.7em; --bodyletterspacing: 0px; --h1fontsize: 70px; --h1lineheight: 1.3em; --h1letterspacing: 0px; --h2fontsize: 46px; --h2lineheight: 1.3em; --h2letterspacing: 0px; --h3fontsize: 24px; --h3lineheight: 1.3em; --h3letterspacing: 0px; --h4fontsize: 20px; --h4lineheight: 1.3em; --h4letterspacing: 0px; --h5fontsize: 16px; --h5lineheight: 1.3em; --h5letterspacing: 0px; --h6fontsize: 16px; --h6lineheight: 1.3em; --h6letterspacing: 0px; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .neve-main > .container .col, body.post-type-archive-course .neve-main > .container .col, body.post-type-archive-llms_membership .neve-main > .container .col{ max-width: 90%; } body:not(.single):not(.archive):not(.blog):not(.search):not(.error404) .nv-sidebar-wrap, body.post-type-archive-course .nv-sidebar-wrap, body.post-type-archive-llms_membership .nv-sidebar-wrap{ max-width: 10%; } .neve-main > .archive-container .nv-index-posts.col{ max-width: 90%; } .neve-main > .archive-container .nv-sidebar-wrap{ max-width: 10%; } .neve-main > .single-post-container .nv-single-post-wrap.col{ max-width: 70%; } .single-post-container .alignfull > [class*="__inner-container"], .single-post-container .alignwide > [class*="__inner-container"]{ max-width:789px } .container-fluid.single-post-container .alignfull > [class*="__inner-container"], .container-fluid.single-post-container .alignwide > [class*="__inner-container"]{ max-width:calc(70% + 15px) } .neve-main > .single-post-container .nv-sidebar-wrap{ max-width: 30%; } .nv-meta-list{ --avatarsize: 20px; } .single .nv-meta-list{ --avatarsize: 20px; } .blog .blog-entry-title, .archive .blog-entry-title{ --fontsize: 32px; } .single h1.entry-title{ --fontsize: 65px; } .nv-post-cover{ --height: 400px;--padding:60px 40px;--justify: flex-start; --textalign: left; --valign: center; } .nv-post-cover .nv-title-meta-wrap, .nv-page-title-wrap, .entry-header{ --textalign: left; } .nv-is-boxed.nv-title-meta-wrap{ --padding:60px 40px; } .nv-is-boxed.nv-comments-wrap{ --padding:40px; } .nv-is-boxed.comment-respond{ --padding:40px; } .single:not(.single-product), .page{ --c-vspace:0 0 0 0;; } .header-menu-sidebar-bg{ --justify: flex-start; --textalign: left;--flexg: 1;--wrapdropdownwidth: auto; } .header-menu-sidebar{ width: 360px; } .builder-item--logo{ --maxwidth: 180px; --fs: 24px;--padding:10px 0;--margin:0; --textalign: left;--justify: flex-start; } .builder-item--nav-icon{ --label-margin:0 5px 0 0;;--padding:10px 15px;--margin:0; } .builder-item--primary-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 0.8em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 0.8em; } .builder-item--custom_html{ --padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; --textalign: left;--justify: flex-start; } .builder-item--footer-four-widgets{ --padding:0;--margin:0; --textalign: right;--justify: flex-end; } .builder-item--footer-menu{ --spacing: 20px; --height: 25px;--padding:0;--margin:0; --fontsize: 1em; --lineheight: 1.6; --letterspacing: 0px; --iconsize: 1em; --textalign: right;--justify: flex-end; } }:root{--nv-primary-accent:#3d6fe5;--nv-secondary-accent:#01216b;--nv-site-bg:#ffffff;--nv-light-bg:#f0eff4;--nv-dark-bg:#0d1317;--nv-text-color:#121212;--nv-text-dark-bg:#ffffff;--nv-c-1:#77b978;--nv-c-2:#f37262;--nv-fallback-ff:Arial, Helvetica, sans-serif;}</style>
 <link rel="stylesheet" id="neve-google-font-spline-sans-css" href="//fonts.googleapis.com/css?family=Spline+Sans%3A400%2C600%2C500&#038;display=swap&#038;ver=4.1.2" media="all">
 <link rel="stylesheet" id="neve-google-font-outfit-css" href="//fonts.googleapis.com/css?family=Outfit%3A400%2C600&#038;display=swap&#038;ver=4.1.2" media="all"> <!--n2css--><!--n2js--> <!-- Google tag (gtag.js) snippet added by Site Kit --> <!-- Google Analytics snippet added by Site Kit --> <script defer src="https://www.googletagmanager.com/gtag/js?id=GT-NMCJ23L" id="google_gtagjs-js"></script> <script defer id="google_gtagjs-js-after" src="data:text/javascript;base64,CndpbmRvdy5kYXRhTGF5ZXIgPSB3aW5kb3cuZGF0YUxheWVyIHx8IFtdO2Z1bmN0aW9uIGd0YWcoKXtkYXRhTGF5ZXIucHVzaChhcmd1bWVudHMpO30KZ3RhZygic2V0IiwibGlua2VyIix7ImRvbWFpbnMiOlsiZGV2LmFlbml4LmlvIl19KTsKZ3RhZygianMiLCBuZXcgRGF0ZSgpKTsKZ3RhZygic2V0IiwgImRldmVsb3Blcl9pZC5kWlROaU1UIiwgdHJ1ZSk7Cmd0YWcoImNvbmZpZyIsICJHVC1OTUNKMjNMIik7Cg=="></script> <!-- End Google tag (gtag.js) snippet added by Site Kit --><link rel="https://api.w.org/" href="/wp-json/">
-<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/1389">
+<link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/3408">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.8.2">
-<link rel="canonical" href="/conferences/">
-<link rel="shortlink" href="/?p=1389">
-<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fconferences%2F">
-<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fconferences%2F#038;format=xml">
+<link rel="canonical" href="/kubernetes-deep-dive-course/">
+<link rel="shortlink" href="/?p=3408">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fkubernetes-deep-dive-course%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2F%2Fkubernetes-deep-dive-course%2F#038;format=xml">
 <meta name="generator" content="Site Kit by Google 1.156.0">
 <!-- WP Social Preview --><meta property="og:locale" content="en_US">
-<meta property="og:url" content="/conferences/">
-<meta property="og:title" content="Conferences">
-<meta name="twitter:title" content="Conferences">
-<meta property="og:description" content="Videos">
-<meta name="twitter:description" content="Videos"> <!-- / WP Social Preview --><meta name="google-site-verification" content="x5_2JuQRhiG2h5RQk1-nF0CR13KCRST9hc59zxNHl3c">
+<meta property="og:url" content="/kubernetes-deep-dive-course/">
+<meta property="og:title" content="Kubernetes Deep Dive">
+<meta name="twitter:title" content="Kubernetes Deep Dive">
+<meta property="og:description" content="Kubernetes Deep Dive with Cozystack: Advanced Cluster &amp; Cloud Platform Administration This course is designed for engineers who want to deeply understand Kubernetes and learn how and why it works. We dissect containerization core concepts, networking, storage, security, and GitOps delivery using technologies powering Cozystack: Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux, etc. Key&hellip;&nbsp;Read More &raquo;Kubernetes Deep Dive">
+<meta name="twitter:description" content="Kubernetes Deep Dive with Cozystack: Advanced Cluster &amp; Cloud Platform Administration This course is designed for engineers who want to deeply understand Kubernetes and learn how and why it works. We dissect containerization core concepts, networking, storage, security, and GitOps delivery using technologies powering Cozystack: Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux, etc. Key&hellip;&nbsp;Read More &raquo;Kubernetes Deep Dive">
+<meta property="og:image" content="/wp-content/uploads/2025/07/cover-24444.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/wp-content/uploads/2025/07/cover-24444.png">
+<meta property="og:image:width" content="1919">
+<meta property="og:image:height" content="522"> <!-- / WP Social Preview --><meta name="google-site-verification" content="x5_2JuQRhiG2h5RQk1-nF0CR13KCRST9hc59zxNHl3c">
 <link rel="icon" href="/wp-content/uploads/2023/12/cropped-AEnix_gradient_arrows5_square-32x32.png" sizes="32x32">
 <link rel="icon" href="/wp-content/uploads/2023/12/cropped-AEnix_gradient_arrows5_square-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/wp-content/uploads/2023/12/cropped-AEnix_gradient_arrows5_square-180x180.png">
@@ -184,7 +189,7 @@
 	display: none;
 }</style>
 </head>
-<body class="wp-singular page-template-default page page-id-1389 wp-custom-logo wp-theme-neve  nv-blog-grid nv-sidebar-full-width nv-without-title menu_sidebar_slide_left" id="neve_body">
+<body class="wp-singular page-template-default page page-id-3408 wp-custom-logo wp-theme-neve  nv-blog-grid nv-sidebar-full-width menu_sidebar_slide_left" id="neve_body">
 <div class="wrapper">
 <header class="header"> <a class="neve-skip-link show-on-focus" href="#content"> Skip to content </a><div id="header-grid" class="hfg_header site-header">
 <nav class="header--row header-main hide-on-mobile hide-on-tablet layout-full-contained nv-navbar header--row" data-row-id="main" data-show-on="desktop"><div class="header--row-inner header-main-inner"><div class="container"><div class="row row--wrapper" data-section="hfg_header_layout_main">
@@ -194,25 +199,25 @@
 </div></div></div></div>
 <div class="hfg-slot right">
 <div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu"><div class="nv-nav-wrap"><div role="navigation" class="nav-menu-primary style-border-bottom m-style" aria-label="Primary Menu"><ul id="nv-primary-navigation-main" class="primary-menu-ul nav-ul menu-desktop">
-<li id="menu-item-359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-359">
+<li id="menu-item-359" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-359 nv-active">
 <div class="wrap">
 <a href="/products/"><span class="menu-item-title-wrap dd-title">Products</span></a><div role="button" aria-pressed="false" aria-label="Open Submenu" tabindex="0" class="caret-wrap caret 1" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div>
 </div>
 <ul class="sub-menu">
 <li id="menu-item-1586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1586"><div class="wrap"><a href="/cozystack/">Cozystack</a></div></li>
-<li id="menu-item-3440" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3440"><div class="wrap"><a href="/kubernetes-deep-dive-course/">Kubernetes Deep Dive</a></div></li>
+<li id="menu-item-3440" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3408 current_page_item menu-item-3440 nv-active"><div class="wrap"><a href="/kubernetes-deep-dive-course/" aria-current="page">Kubernetes Deep Dive</a></div></li>
 <li id="menu-item-3147" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3147"><div class="wrap"><a href="https://cloud.aenix.io/" target="_blank">Ænix Cloud</a></div></li>
 </ul>
 </li>
 <li id="menu-item-356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><div class="wrap"><a href="/case-studies/">Case Studies</a></div></li>
 <li id="menu-item-2572" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2572"><div class="wrap"><a href="https://blog.aenix.io/" target="_blank">Blog</a></div></li>
-<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-357 nv-active">
+<li id="menu-item-357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-357">
 <div class="wrap">
 <a href="/about-us/"><span class="menu-item-title-wrap dd-title">About Us</span></a><div role="button" aria-pressed="false" aria-label="Open Submenu" tabindex="0" class="caret-wrap caret 7" style="margin-left:5px;"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></div>
 </div>
 <ul class="sub-menu">
 <li id="menu-item-2686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2686"><div class="wrap"><a href="/about-us#team">Our Team</a></div></li>
-<li id="menu-item-2673" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1389 current_page_item menu-item-2673 nv-active"><div class="wrap"><a href="/conferences/" aria-current="page">Conferences</a></div></li>
+<li id="menu-item-2673" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2673"><div class="wrap"><a href="/conferences/">Conferences</a></div></li>
 <li id="menu-item-3221" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3221"><div class="wrap"><a href="/about-us#Community-Champions">Community Champions</a></div></li>
 <li id="menu-item-2689" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2689"><div class="wrap"><a href="/contact/#details">Company Details</a></div></li>
 </ul>
@@ -234,25 +239,25 @@
 <div class="close-sidebar-panel navbar-toggle-wrapper"> <button type="button" class="hamburger is-active  navbar-toggle active" value="Navigation Menu" aria-label="Navigation Menu " aria-expanded="false" onclick="if('undefined' !== typeof toggleAriaClick ) { toggleAriaClick() }"> <span class="bars"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </span> <span class="screen-reader-text"> Navigation Menu </span> </button>
 </div>
 <div id="header-menu-sidebar-inner" class="header-menu-sidebar-inner tcb "><div class="builder-item has-nav"><div class="item--inner builder-item--primary-menu has_menu" data-section="header_menu_primary" data-item-id="primary-menu"><div class="nv-nav-wrap"><div role="navigation" class="nav-menu-primary style-border-bottom m-style" aria-label="Primary Menu"><ul id="nv-primary-navigation-sidebar" class="primary-menu-ul nav-ul menu-mobile">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-359">
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-359 nv-active">
 <div class="wrap">
 <a href="/products/"><span class="menu-item-title-wrap dd-title">Products</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 1 " style="margin-left:5px;" aria-label="Toggle Products"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button>
 </div>
 <ul class="sub-menu">
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1586"><div class="wrap"><a href="/cozystack/">Cozystack</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3440"><div class="wrap"><a href="/kubernetes-deep-dive-course/">Kubernetes Deep Dive</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-3408 current_page_item menu-item-3440 nv-active"><div class="wrap"><a href="/kubernetes-deep-dive-course/" aria-current="page">Kubernetes Deep Dive</a></div></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3147"><div class="wrap"><a href="https://cloud.aenix.io/" target="_blank">Ænix Cloud</a></div></li>
 </ul>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><div class="wrap"><a href="/case-studies/">Case Studies</a></div></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2572"><div class="wrap"><a href="https://blog.aenix.io/" target="_blank">Blog</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-357 nv-active">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-357">
 <div class="wrap">
 <a href="/about-us/"><span class="menu-item-title-wrap dd-title">About Us</span></a><button tabindex="0" type="button" class="caret-wrap navbar-toggle 7 " style="margin-left:5px;" aria-label="Toggle About Us"><span class="caret"><svg fill="currentColor" aria-label="Dropdown" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span></button>
 </div>
 <ul class="sub-menu">
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2686"><div class="wrap"><a href="/about-us#team">Our Team</a></div></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1389 current_page_item menu-item-2673 nv-active"><div class="wrap"><a href="/conferences/" aria-current="page">Conferences</a></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2673"><div class="wrap"><a href="/conferences/">Conferences</a></div></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3221"><div class="wrap"><a href="/about-us#Community-Champions">Community Champions</a></div></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2689"><div class="wrap"><a href="/contact/#details">Company Details</a></div></li>
 </ul>
@@ -263,47 +268,389 @@
 <div class="header-menu-sidebar-overlay hfg-ov hfg-pe" onclick="if('undefined' !== typeof toggleAriaClick ) { toggleAriaClick() }"></div>
 </div></header><style>.nav-ul li:focus-within .wrap.active + .sub-menu { opacity: 1; visibility: visible; }.nav-ul li.neve-mega-menu:focus-within .wrap.active + .sub-menu { display: grid; }.nav-ul li > .wrap { display: flex; align-items: center; position: relative; padding: 0 4px; }.nav-ul:not(.menu-mobile):not(.neve-mega-menu) > li > .wrap > a { padding-top: 1px }</style>
 <style>.header-menu-sidebar .nav-ul li .wrap { padding: 0 4px; }.header-menu-sidebar .nav-ul li .wrap a { flex-grow: 1; display: flex; }.header-menu-sidebar .nav-ul li .wrap a .dd-title { width: var(--wrapdropdownwidth); }.header-menu-sidebar .nav-ul li .wrap button { border: 0; z-index: 1; background: 0; }.header-menu-sidebar .nav-ul li:not([class*=block]):not(.menu-item-has-children) > .wrap > a { padding-right: calc(1em + (18px*2)); text-wrap: wrap; white-space: normal;}.header-menu-sidebar .nav-ul li.menu-item-has-children:not([class*=block]) > .wrap > a { margin-right: calc(-1em - (18px*2)); padding-right: 46px;}</style>
+<div class="nv-post-cover" style="background-image:url(/wp-content/uploads/2025/07/cover-24444.png);">
+<div class="nv-overlay"></div>
+<div class="container"><div class="nv-title-meta-wrap "><h1 class="title entry-title">Kubernetes Deep Dive</h1></div></div>
+</div>
 <main id="content" class="neve-main"><div class="container single-page-container"><div class="row"><div class="nv-single-page-wrap col"><div class="nv-content-wrap entry-content">
-<div class="wp-block-cover alignfull" style="min-height:500px;aspect-ratio:unset;">
-<img decoding="async" width="2000" height="1000" class="wp-block-cover__image-background wp-image-1394" alt="" src="/wp-content/uploads/2024/02/blog-tech-conferences.jpg" data-object-fit="cover" srcset="/wp-content/uploads/2024/02/blog-tech-conferences.jpg 2000w, /wp-content/uploads/2024/02/blog-tech-conferences-510x255.jpg 510w, /wp-content/uploads/2024/02/blog-tech-conferences-300x150.jpg 300w, /wp-content/uploads/2024/02/blog-tech-conferences-1024x512.jpg 1024w, /wp-content/uploads/2024/02/blog-tech-conferences-768x384.jpg 768w, /wp-content/uploads/2024/02/blog-tech-conferences-1536x768.jpg 1536w" sizes="(max-width: 2000px) 100vw, 2000px"><span aria-hidden="true" class="wp-block-cover__background has-nv-dark-bg-background-color has-background-dim"></span><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-constrained wp-block-group-is-layout-constrained">
-<h1 class="wp-block-heading has-text-align-center">Conference Talks and Presentations</h1>
-<h2 class="wp-block-heading has-text-align-center">by our team</h2>
-</div></div></div>
+<h2 class="wp-block-heading">Kubernetes Deep Dive with Cozystack: Advanced Cluster &amp; Cloud Platform Administration</h2>
+<p>This course is designed for engineers who want to deeply understand Kubernetes and learn how and why it works. We dissect containerization core concepts, networking, storage, security, and GitOps delivery using technologies powering Cozystack: Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux, etc.</p>
+<h3 class="wp-block-heading">Key Features</h3>
+<ul class="wp-block-list">
+<li>Deep Dive – Each module uncovers internal mechanics and real-world operational scenarios, not just abstract examples.</li>
+<li>First-Hand Knowledge – Instructors are developers/contributors to the tools listed above. Learn from those who write the code.</li>
+<li>Practice + Code Review – Homework after each session: labs, Git MRs, or &#8220;break-fix&#8221; tasks. Mentors provide detailed feedback.</li>
+<li>Flexible Structure – Take individual topics, build a custom 5- or 10-module track, or complete all 15 to master Kubernetes.</li>
+<li>Optimal Workload – Weekly 3-hour sessions (lecture + lab). No context switching—balance learning with your actual job.</li>
+</ul>
+<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+<h2 class="wp-block-heading">Course Program</h2>
+<div class="custom-css-block"><style>.aagb_accordion_fd7bbf55_0 { 
+.aagb__accordion_body{
+  padding-top:5px !important;
+} }</style></div>
+<style>.aagb_accordion_fd7bbf55_0 .aagb__accordion_active .aagb__accordion_body {
+          border-top: 1px undefined #f0f4f7;
+        }
+      
+          .aagb_accordion_fd7bbf55_0 .aagb__accordion_container {
+            transition-duration: 0ms !important;
+            outline: 2px solid #00000000;
+          }
+          .aagb_accordion_fd7bbf55_0 .aagb__accordion_container:focus-visible {
+            outline: 2px solid #C2DBFE;
+          }</style>
+<div class="wp-block-aab-group-accordion searchable aagb_accordion_fd7bbf55_0 click false" id="group-accordion-fd7bbf55_0">
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 1: Containerization Under the Hood</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
 </div>
-<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
-<h2 class="wp-block-heading has-text-align-center">Videos</h2>
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%"><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><div class="nv-iframe-embed"><iframe loading="lazy" title="LINSTOR: Kubernetes-Like Open-Source Storage | Talk by Andrei Kvapil (Ænix)" width="1200" height="675" src="https://www.youtube.com/embed/HDnndikFZ04?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
-<figcaption class="wp-element-caption">Kubernetes is the new Skynet, or the rise of Kubernetes automation</figcaption></figure></div>
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%"><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><div class="nv-iframe-embed"><iframe loading="lazy" title="Kubernetes-in-Kubernetes with Kamaji, KubeVirt, and the Cluster API - DevConf.CZ 2025" width="1200" height="675" src="https://www.youtube.com/embed/7m1NOp2sUXQ?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
-<figcaption class="wp-element-caption">Kubernetes-in-Kubernetes with Kamaji, KubeVirt, and the Cluster API</figcaption></figure></div>
-<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><div class="nv-iframe-embed"><iframe loading="lazy" title="LINSTOR on Talos Linux: A Robust Base for Cozystack" width="1200" height="675" src="https://www.youtube.com/embed/JaQySmJsmrU?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
-<figcaption class="wp-element-caption">LINSTOR on Talos Linux: A Robust Base for Cozystack</figcaption></figure></div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>Kernel namespaces (PID, NET, MNT, UTS, IPC)</li>
+<li>cgroups v1/v2 and resource limits</li>
+<li>veth pairs, bridges, overlay networks</li>
+<li>iproute2 (ip link|addr|route) and tc</li>
+<li>Manual containerization with nsenter (no Docker)</li>
+</ul>
+<p>Outcome: Understand Linux process/traffic isolation, debug network/resource issues, and manually assemble a &#8220;container.&#8221;</p>
+</div></div>
 </div>
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%"><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><div class="nv-iframe-embed"><iframe loading="lazy" title="Cozystack on Talos Linux" width="1200" height="675" src="https://www.youtube.com/embed/s79VqXu-eG4?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
-<figcaption class="wp-element-caption">Cozystack on Talos Linux</figcaption></figure></div>
-<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><div class="nv-iframe-embed"><iframe loading="lazy" title="Talos Linux: You don&#039;t need an operating system, you only need Kubernetes / Andrei Kvapil" width="1200" height="675" src="https://www.youtube.com/embed/9CIMTum9bTA?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
-<figcaption class="wp-element-caption">Talos Linux: You don&#8217;t need an operating system, you only need Kubernetes</figcaption></figure></div>
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%"><figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><div class="nv-iframe-embed"><iframe loading="lazy" title="Cozystack: Free PaaS platform and framework for building clouds" width="1200" height="675" src="https://www.youtube.com/embed/24i9wIsJHGE?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
-<figcaption class="wp-element-caption">Introducing Cozystack: Free PaaS platform and framework for building clouds</figcaption></figure></div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 2: Image Building &amp; Registry Workflows</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
 </div>
-<div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex">
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%"></div>
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.34%"></div>
-<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:33.33%"></div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>OCI image/artifact specs</li>
+<li>Working with registries (Harbor, GHCR, ECR)</li>
+<li>Dockerfile best practices (multi-stage, layer caching)</li>
+</ul>
+<p>Outcome: Build secure, optimized images and publish them to repositories.</p>
+</div></div>
 </div>
-<div class="wp-block-columns alignwide are-vertically-aligned-center is-layout-flex wp-container-core-columns-is-layout-9d6595d7 wp-block-columns-is-layout-flex"></div>
-<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
-<div class="wp-block-cover alignfull" style="min-height:300px;aspect-ratio:unset;">
-<span aria-hidden="true" class="wp-block-cover__background has-nv-dark-bg-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
-<div style="height:140px" aria-hidden="true" class="wp-block-spacer"></div>
-<h2 class="wp-block-heading has-text-align-center has-nv-text-dark-bg-color has-text-color">Let’s work together on your <br>next cloud project</h2>
-<p class="has-text-align-center">Get a reliable and experienced partner to meet your business needs in the<br>realm of systems architecture and design.</p>
-<div class="wp-block-buttons is-horizontal is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-499968f5 wp-block-buttons-is-layout-flex"><div class="wp-block-button is-style-primary"><a class="wp-block-button__link wp-element-button" href="/contact/">CONTACT US</a></div></div>
-<div style="height:140px" aria-hidden="true" class="wp-block-spacer"></div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 3: Kubernetes Fundamentals</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>API objects (Pod → Deployment → ReplicaSet)</li>
+<li>Reconciliation loop: kube-api, scheduler, controller-manager</li>
+<li>etcd and desired state</li>
+<li>CRDs, controller-runtime, operator pattern</li>
+</ul>
+<p>Outcome: Describe resources via YAML, troubleshoot lifecycle issues, and write basic controllers.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 4: Kubernetes Networking (Core)</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>CNI plugins and pod network namespaces</li>
+<li>kube-proxy and service networking</li>
+<li>ClusterIP/NodePort/LoadBalancer services</li>
+<li>Service Discovery, DNS, headless services</li>
+<li>ingress-nginx: architecture, annotations, LB</li>
+</ul>
+<p>Outcome: Design/debug cluster networking and configure public-facing ingress.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 5: Talos Linux Deep Dive</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>Talos architecture: immutability, secure boot</li>
+<li>Cluster deployment and control-plane upgrades</li>
+<li>talm for configuration management</li>
+<li>Debugging without SSH: talosctl, kubectl-node-shell</li>
+</ul>
+<p>Outcome: Deploy/maintain Kubernetes clusters on Talos Linux and troubleshoot node issues.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 6: Storage in Kubernetes</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>CSI architecture, sidecars, VolumeLifecycle</li>
+<li>PV/PVC/StorageClass, reclaim policies, topology-aware volumes</li>
+<li>Snapshots and VolumePopulator</li>
+<li>In-tree vs. CSI drivers</li>
+</ul>
+<p>Outcome: Master Kubernetes storage, select drivers, and manage volumes/backups in production.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 7: LINSTOR as Kubernetes-Native Storage</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>DRBD and block device replication</li>
+<li>linstor-controller, satellite, linstor-csi</li>
+<li>Volume/replica/snapshot management</li>
+<li>Quorum, fencing, replica balancing</li>
+</ul>
+<p>Outcome: Deploy LINSTOR, ensure HA volumes, and recover from failures.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 8:  Advanced Kubernetes Networking</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>Cilium/Kube-OVN: eBPF datapath</li>
+<li>CNI chaining</li>
+<li>MetalLB for external load balancing</li>
+<li>Ingress/egress traffic</li>
+<li>NetworkPolicy (L3/L4 + L7 HTTP)</li>
+<li>Debugging with cilium-dbg, tcpdump -i vxlan</li>
+</ul>
+<p>Outcome: Confidently debug Kubernetes networking, enforce security policies, and fix complex issues.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 9:  RBAC &amp; OIDC</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>apiserver AuthN/AuthZ</li>
+<li>JWT tokens, certificates</li>
+<li>Keycloak integration</li>
+<li>ServiceAccount and RBAC policies</li>
+<li>oauth-proxy/oidc-proxy</li>
+</ul>
+<p>Outcome: &nbsp;Implement SSO authentication and delegate secure access.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 10: Kubernetes-Native Virtualization (KubeVirt)</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>KubeVirt architecture: virt-operator, virt-launcher, libvirt-qemu</li>
+<li>VM lifecycle, hot-plug disks/networks</li>
+<li>Frontend/backend networking</li>
+<li>Storage and live migration</li>
+</ul>
+<p>Outcome: &nbsp;Run/debug VMs inside Kubernetes.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 11: Kubernetes-in-Kubernetes (Cluster API)</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>Cluster API: CRDs, providers</li>
+<li>etcd, KubeVirt-CSI, CCM, cluster-autoscaler</li>
+<li>Kamaji, Konnectivity for multi-layer traffic</li>
+</ul>
+<p>Outcome: &nbsp;Automate nested Kubernetes cluster lifecycle.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 12: GitOps &amp; Application Delivery</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>CI: buildx, artifact publishing</li>
+<li>CD: ArgoCD vs. FluxCD</li>
+<li>Cozystack’s cozypkg for developer workflows</li>
+</ul>
+<p>Outcome: &nbsp;Automate CI/CD and release cycles.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 13: Observability</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>Metrics/logs with VictoriaMetrics, Grafana</li>
+<li>Alerting pipeline (IRM via Alerta)</li>
+<li>Incident resolution best practices</li>
+</ul>
+<p>Outcome: &nbsp;Master monitoring, logging, and alerting.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 14: Cozystack API &amp; Aggregation Layer</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>Kubernetes API Aggregation Layer</li>
+<li>OpenAPI/Swagger</li>
+<li>Cozystack’s Core/System/Apps CRDs</li>
+</ul>
+<p>Outcome: &nbsp;Extend Cozystack’s platform functionality.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 15: Writing Custom Operators</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>kubebuilder scaffolding, CRD v1</li>
+<li>controller-runtime: reconcile, watches, ownerRef</li>
+<li>Validating/Mutating webhooks</li>
+<li>ChatGPT as a pair-programmer</li>
+</ul>
+<p>Outcome: &nbsp;Build operators to automate custom app lifecycles.</p>
+</div></div>
+</div>
+<div class="wp-block-aab-accordion-item aagb__accordion_container panel" tabindex="0" style="border-top:none;border-right:none;border-bottom:none;border-left:none;border-radius:5px;margin-top:0px;margin-bottom:22px">
+<div class="aagb__accordion_head aab_right_icon  " data-active="false" style="border-radius:5px 5px 0 0;padding:25px 45px 25px 45px;border-top:none;border-right:none;border-bottom:none;border-left:none">
+<div class="aagb__accordion_heading aab_right_icon aagb_right_link"><div class="head_content_wrapper">
+<div class="title_wrapper"><h4 class="aagb__accordion_title" style="margin:0;color:#05001f">Module 16: SeaweedFS &amp; COSI (Object Storage in Kubernetes)</h4></div>
+<p class="aagb__accordion_subheading" placeholder="" style="margin:5px 0 0 0"></p>
+</div></div>
+<div class="aagb__accordion_icon" style="color:#0971eb"><div class="aagb__icon_dashicons_box"><span class="aagb__icon dashicons dashicons-arrow-down-alt2" style="font-size:23px"></span></div></div>
+</div>
+<div class="aagb__accordion_body   " role="region" style="border-radius:0 0 5px 5px;background-color:[object Object];border-top:1px undefined #000000;border-right:none;border-bottom:none;border-left:none;padding:25px 45px 25px 45px"><div class="aagb__accordion_component ">
+<p><strong>Topics:</strong></p>
+<ul class="wp-block-list">
+<li>SeaweedFS: master, volume-server, filer-server, S3 gateway</li>
+<li>Replication backends</li>
+<li>COSI (Container Object Storage Interface):<ul class="wp-block-list">
+<li>S3 bucket provisioning via Kubernetes manifests</li>
+<li>Temporary credentials for apps</li>
+</ul>
+</li>
+<li>Debugging with weed shell</li>
+</ul>
+<p>Outcome: &nbsp;Deploy S3-compatible storage in-cluster and automate bucket lifecycle.</p>
+</div></div>
 </div>
 </div>
+<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+<figure class="wp-block-riovizual-tablebuilder is-style-stripes rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73 is-scroll-on-mobile" rv-tb-responsive-breakpoint="768px"><table class=""><tbody>
+<tr>
+<th class="rv_tb-cell rv_tb-row-0-cell-0 rv_tb-rs-row-0-cell-0 rv_tb-cs-row-0-cell-0"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Package</div></div></div></th>
+<th class="rv_tb-cell rv_tb-row-0-cell-1 rv_tb-rs-row-0-cell-1 rv_tb-cs-row-0-cell-1"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Includes</div></div></div></th>
+<th class="rv_tb-cell rv_tb-row-0-cell-2 rv_tb-rs-row-0-cell-2 rv_tb-cs-row-0-cell-2"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Base Price</div></div></div></th>
+<th class="rv_tb-cell rv_tb-row-0-cell-3 rv_tb-rs-row-0-cell-3 rv_tb-cs-row-0-cell-3"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Discount</div></div></div></th>
+<th class="rv_tb-cell rv_tb-row-0-cell-4 rv_tb-rs-row-0-cell-4 rv_tb-cs-row-0-cell-4"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Final Price*</div></div></div></th>
+</tr>
+<tr>
+<td class="rv_tb-cell rv_tb-row-1-cell-0 rv_tb-rs-row-1-cell-0 rv_tb-cs-row-1-cell-0"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Single Module</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-1-cell-1 rv_tb-rs-row-1-cell-1 rv_tb-cs-row-1-cell-1"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">1 topic (3h online + HW review)</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-1-cell-2 rv_tb-rs-row-1-cell-2 rv_tb-cs-row-1-cell-2"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">$400</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-1-cell-3 rv_tb-rs-row-1-cell-3 rv_tb-cs-row-1-cell-3"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">&#8212;</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-1-cell-4 rv_tb-rs-row-1-cell-4 rv_tb-cs-row-1-cell-4"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">$400</div></div></div></td>
+</tr>
+<tr>
+<td class="rv_tb-cell rv_tb-row-2-cell-0 rv_tb-rs-row-2-cell-0 rv_tb-cs-row-2-cell-0"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Any 5 Modules</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-2-cell-1 rv_tb-rs-row-2-cell-1 rv_tb-cs-row-2-cell-1"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Custom track</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-2-cell-2 rv_tb-rs-row-2-cell-2 rv_tb-cs-row-2-cell-2"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">$2000</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-2-cell-3 rv_tb-rs-row-2-cell-3 rv_tb-cs-row-2-cell-3"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">-10%</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-2-cell-4 rv_tb-rs-row-2-cell-4 rv_tb-cs-row-2-cell-4"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">$2000</div></div></div></td>
+</tr>
+<tr>
+<td class="rv_tb-cell rv_tb-row-3-cell-0 rv_tb-rs-row-3-cell-0 rv_tb-cs-row-3-cell-0"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Any 10 Modules</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-3-cell-1 rv_tb-rs-row-3-cell-1 rv_tb-cs-row-3-cell-1"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Full DevOps path</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-3-cell-2 rv_tb-rs-row-3-cell-2 rv_tb-cs-row-3-cell-2"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">$4000</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-3-cell-3 rv_tb-rs-row-3-cell-3 rv_tb-cs-row-3-cell-3"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">-20%</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-3-cell-4 rv_tb-rs-row-3-cell-4 rv_tb-cs-row-3-cell-4"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">$4000</div></div></div></td>
+</tr>
+<tr>
+<td class="rv_tb-cell rv_tb-row-4-cell-0 rv_tb-rs-row-4-cell-0 rv_tb-cs-row-4-cell-0"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Full Course (15)</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-4-cell-1 rv_tb-rs-row-4-cell-1 rv_tb-cs-row-4-cell-1"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">Complete &#8220;Kubernetes Deep Dive&#8221;</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-4-cell-2 rv_tb-rs-row-4-cell-2 rv_tb-cs-row-4-cell-2"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">$6000</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-4-cell-3 rv_tb-rs-row-4-cell-3 rv_tb-cs-row-4-cell-3"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">-25%</div></div></div></td>
+<td class="rv_tb-cell rv_tb-row-4-cell-4 rv_tb-rs-row-4-cell-4 rv_tb-cs-row-4-cell-4"><div class="rv_tb-element"><div class="rv_tb-text-wrap rv_justify cell-element-0"><div class="rv_tb-text">$4500</div></div></div></td>
+</tr>
+</tbody></table>
+<figcaption class="rv_tb-caption" rv-tb-caption-position="bottom">*Price per participant. Includes materials, HW review, certificate, and expert Slack access. Corporate groups (&gt;8 people): Custom pricing available.</figcaption></figure><div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+<div class="wp-block-buttons is-horizontal is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-7e5fce0a wp-block-buttons-is-layout-flex"><div class="wp-block-button is-style-primary" id="aenix.io/contact/"><a class="wp-block-button__link has-nv-site-bg-color has-text-color has-link-color has-text-align-left wp-element-button" href="/contact/" style="text-transform:uppercase"> Let’s talk </a></div></div>
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
 </div></div></div></div></main><!--/.neve-main--><footer class="site-footer" id="site-footer"><div class="hfg_footer">
 <div class="footer--row footer-main hide-on-mobile hide-on-tablet layout-full-contained" id="cb-row--footer-desktop-main" data-row-id="main" data-show-on="desktop"><div class="footer--row-inner footer-main-inner footer-content-wrap"><div class="container"><div class="hfg-grid nv-footer-content hfg-grid-main row--wrapper row " data-section="hfg_footer_layout_main">
 <div class="hfg-slot left"></div>
@@ -335,5 +682,9 @@
 </div></div></div></div>
 </div></footer>
 </div>
-<!--/.wrapper--> <script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/neve\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script> <style id="core-block-supports-inline-css">.wp-container-core-columns-is-layout-9d6595d7{flex-wrap:nowrap;}.wp-container-core-buttons-is-layout-499968f5{justify-content:center;}</style> <script defer id="rtrar.appLocal-js-extra" src="data:text/javascript;base64,CnZhciBydGFmciA9IHsicnVsZXMiOiIifTsK"></script> <script defer src="/wp-content/plugins/real-time-auto-find-and-replace/assets/js/rtafar.local.js" id="rtrar.appLocal-js"></script> <script defer id="neve-script-js-extra" src="data:text/javascript;base64,CnZhciBOZXZlUHJvcGVydGllcyA9IHsiYWpheHVybCI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWFkbWluXC9hZG1pbi1hamF4LnBocCIsIm5vbmNlIjoiMGQyODE3ZmQ0MSIsImlzUlRMIjoiIiwiaXNDdXN0b21pemUiOiIifTsK"></script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_single_b29ca928ecdf47555b578269b5fd475c.js" id="neve-script-js"></script> <script defer id="neve-script-js-after" src="data:text/javascript;base64,Cgl2YXIgaHRtbCA9IGRvY3VtZW50LmRvY3VtZW50RWxlbWVudDsKCXZhciB0aGVtZSA9IGh0bWwuZ2V0QXR0cmlidXRlKCdkYXRhLW5ldmUtdGhlbWUnKSB8fCAnbGlnaHQnOwoJdmFyIHZhcmlhbnRzID0geyJsb2dvIjp7ImxpZ2h0Ijp7InNyYyI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9BRW5peF9ncmFkaWVudF9hcnJvd3M1LnBuZyIsInNyY3NldCI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9BRW5peF9ncmFkaWVudF9hcnJvd3M1LnBuZyAxOTQwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtNTEweDIyNC5wbmcgNTEwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtMzAweDEzMi5wbmcgMzAwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtMTAyNHg0NDkucG5nIDEwMjR3LCBodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMlwvQUVuaXhfZ3JhZGllbnRfYXJyb3dzNS03Njh4MzM3LnBuZyA3Njh3LCBodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMlwvQUVuaXhfZ3JhZGllbnRfYXJyb3dzNS0xNTM2eDY3NC5wbmcgMTUzNnciLCJzaXplcyI6IihtYXgtd2lkdGg6IDE5NDBweCkgMTAwdncsIDE5NDBweCJ9LCJkYXJrIjp7InNyYyI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9BRW5peF9ncmFkaWVudF9hcnJvd3M1LnBuZyIsInNyY3NldCI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9BRW5peF9ncmFkaWVudF9hcnJvd3M1LnBuZyAxOTQwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtNTEweDIyNC5wbmcgNTEwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtMzAweDEzMi5wbmcgMzAwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtMTAyNHg0NDkucG5nIDEwMjR3LCBodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMlwvQUVuaXhfZ3JhZGllbnRfYXJyb3dzNS03Njh4MzM3LnBuZyA3Njh3LCBodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMlwvQUVuaXhfZ3JhZGllbnRfYXJyb3dzNS0xNTM2eDY3NC5wbmcgMTUzNnciLCJzaXplcyI6IihtYXgtd2lkdGg6IDE5NDBweCkgMTAwdncsIDE5NDBweCJ9LCJzYW1lIjp0cnVlfX07CgoJZnVuY3Rpb24gc2V0Q3VycmVudFRoZW1lKCB0aGVtZSApIHsKCQl2YXIgcGljdHVyZXMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5Q2xhc3NOYW1lKCAnbmV2ZS1zaXRlLWxvZ28nICk7CgkJZm9yKHZhciBpID0gMDsgaTxwaWN0dXJlcy5sZW5ndGg7IGkrKykgewoJCQl2YXIgcGljdHVyZSA9IHBpY3R1cmVzLml0ZW0oaSk7CgkJCWlmKCAhIHBpY3R1cmUgKSB7CgkJCQljb250aW51ZTsKCQkJfTsKCQkJdmFyIGZpbGVFeHQgPSBwaWN0dXJlLnNyYy5zbGljZSgoTWF0aC5tYXgoMCwgcGljdHVyZS5zcmMubGFzdEluZGV4T2YoIi4iKSkgfHwgSW5maW5pdHkpICsgMSk7CgkJCWlmICggZmlsZUV4dCA9PT0gJ3N2ZycgKSB7CgkJCQlwaWN0dXJlLnJlbW92ZUF0dHJpYnV0ZSgnd2lkdGgnKTsKCQkJCXBpY3R1cmUucmVtb3ZlQXR0cmlidXRlKCdoZWlnaHQnKTsKCQkJCXBpY3R1cmUuc3R5bGUgPSAnd2lkdGg6IHZhcigtLW1heHdpZHRoKSc7CgkJCX0KCQkJdmFyIGNvbXBJZCA9IHBpY3R1cmUuZ2V0QXR0cmlidXRlKCdkYXRhLXZhcmlhbnQnKTsKCQkJaWYgKCBjb21wSWQgJiYgdmFyaWFudHNbY29tcElkXSApIHsKCQkJCXZhciBpc0NvbmRpdGlvbmFsID0gdmFyaWFudHNbY29tcElkXVsnc2FtZSddOwoJCQkJaWYgKCB0aGVtZSA9PT0gJ2xpZ2h0JyB8fCBpc0NvbmRpdGlvbmFsIHx8IHZhcmlhbnRzW2NvbXBJZF1bJ2RhcmsnXVsnc3JjJ10gPT09IGZhbHNlICkgewoJCQkJCXBpY3R1cmUuc3JjID0gdmFyaWFudHNbY29tcElkXVsnbGlnaHQnXVsnc3JjJ107CgkJCQkJcGljdHVyZS5zcmNzZXQgPSB2YXJpYW50c1tjb21wSWRdWydsaWdodCddWydzcmNzZXQnXSB8fCAnJzsKCQkJCQlwaWN0dXJlLnNpemVzID0gdmFyaWFudHNbY29tcElkXVsnbGlnaHQnXVsnc2l6ZXMnXTsKCQkJCQljb250aW51ZTsKCQkJCX07CgkJCQlwaWN0dXJlLnNyYyA9IHZhcmlhbnRzW2NvbXBJZF1bJ2RhcmsnXVsnc3JjJ107CgkJCQlwaWN0dXJlLnNyY3NldCA9IHZhcmlhbnRzW2NvbXBJZF1bJ2RhcmsnXVsnc3Jjc2V0J10gfHwgJyc7CgkJCQlwaWN0dXJlLnNpemVzID0gdmFyaWFudHNbY29tcElkXVsnZGFyayddWydzaXplcyddOwoJCQl9OwoJCX07Cgl9OwoKCXZhciBvYnNlcnZlciA9IG5ldyBNdXRhdGlvbk9ic2VydmVyKGZ1bmN0aW9uKG11dGF0aW9ucykgewoJCW11dGF0aW9ucy5mb3JFYWNoKGZ1bmN0aW9uKG11dGF0aW9uKSB7CgkJCWlmIChtdXRhdGlvbi50eXBlID09ICdhdHRyaWJ1dGVzJykgewoJCQkJdGhlbWUgPSBodG1sLmdldEF0dHJpYnV0ZSgnZGF0YS1uZXZlLXRoZW1lJyk7CgkJCQlzZXRDdXJyZW50VGhlbWUodGhlbWUpOwoJCQl9OwoJCX0pOwoJfSk7CgoJb2JzZXJ2ZXIub2JzZXJ2ZShodG1sLCB7CgkJYXR0cmlidXRlczogdHJ1ZQoJfSk7CmZ1bmN0aW9uIHRvZ2dsZUFyaWFDbGljaygpIHsgZnVuY3Rpb24gdG9nZ2xlQXJpYUV4cGFuZGVkKHRvZ2dsZSA9ICd0cnVlJykgeyBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCdidXR0b24ubmF2YmFyLXRvZ2dsZScpLmZvckVhY2goZnVuY3Rpb24oZWwpIHsgaWYgKCBlbC5jbGFzc0xpc3QuY29udGFpbnMoJ2NhcmV0LXdyYXAnKSApIHsgcmV0dXJuOyB9IGVsLnNldEF0dHJpYnV0ZSgnYXJpYS1leHBhbmRlZCcsICd0cnVlJyA9PT0gZWwuZ2V0QXR0cmlidXRlKCdhcmlhLWV4cGFuZGVkJykgPyAnZmFsc2UnIDogdG9nZ2xlKTsgfSk7IH0gdG9nZ2xlQXJpYUV4cGFuZGVkKCk7IGlmICggZG9jdW1lbnQuYm9keS5oYXNBdHRyaWJ1dGUoJ2RhdGEtZnRyYXAtbGlzdGVuZXInKSApIHsgcmV0dXJuOyB9IGRvY3VtZW50LmJvZHkuc2V0QXR0cmlidXRlKCdkYXRhLWZ0cmFwLWxpc3RlbmVyJywgJ3RydWUnKTsgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignZnRyYXAtZW5kJywgZnVuY3Rpb24oKSB7IHRvZ2dsZUFyaWFFeHBhbmRlZCgnZmFsc2UnKTsgfSk7IH0KdmFyIG1lbnVDYXJldHM9ZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiLm5hdi11bCBsaSA+IC53cmFwID4gLmNhcmV0Iik7bWVudUNhcmV0cy5mb3JFYWNoKGZ1bmN0aW9uKGUpe2UuYWRkRXZlbnRMaXN0ZW5lcigia2V5ZG93biIsZT0+ezEzPT09ZS5rZXlDb2RlJiYoZS50YXJnZXQucGFyZW50RWxlbWVudC5jbGFzc0xpc3QudG9nZ2xlKCJhY3RpdmUiKSxlLnRhcmdldC5nZXRBdHRyaWJ1dGUoImFyaWEtcHJlc3NlZCIpJiZlLnRhcmdldC5zZXRBdHRyaWJ1dGUoImFyaWEtcHJlc3NlZCIsInRydWUiPT09ZS50YXJnZXQuZ2V0QXR0cmlidXRlKCJhcmlhLXByZXNzZWQiKT8iZmFsc2UiOiJ0cnVlIikpfSksZS5wYXJlbnRFbGVtZW50LnBhcmVudEVsZW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigiZm9jdXNvdXQiLHQ9PnshZS5wYXJlbnRFbGVtZW50LnBhcmVudEVsZW1lbnQuY29udGFpbnModC5yZWxhdGVkVGFyZ2V0KSYmKGUucGFyZW50RWxlbWVudC5jbGFzc0xpc3QucmVtb3ZlKCJhY3RpdmUiKSxlLnNldEF0dHJpYnV0ZSgiYXJpYS1wcmVzc2VkIiwiZmFsc2UiKSl9KX0pOwo="></script> <script defer src="/wp-content/plugins/real-time-auto-find-and-replace/assets/js/rtafar.app.min.js" id="rtrar.app-js"></script> </body>
+<!--/.wrapper--> <script type="speculationrules">{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/neve\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}</script> <link rel="stylesheet" id="aagb-group-accordion-item-css" href="/wp-content/cache/autoptimize/css/autoptimize_single_2f1b9bf82e02f7fd143eb82f465430c4.css" media="all">
+<style id="aagb-fd7bbf55_0-inline-css">.aagb_accordion_fd7bbf55_0 > .aagb__accordion_container.aagb__accordion_active{ border-color: #f0f4f7 !important; border-width: 1px!important; background: #f0f3f7 !important; }.aagb_accordion_fd7bbf55_0 > .aagb__accordion_body--show{ border-top-color: #f0f4f7 !important; border-top-width: 1px!important;  }</style>
+<style id="rv-styles-inline-css">.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table { border-style: none; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder.is-style-stripes tbody tr:nth-child(odd) > * { background-color: #ffffff; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder.is-style-stripes tbody tr:nth-child(even) > * { background-color: #f9fafb; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table { border-collapse: collapse; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder.wp-block-riovizual-tablebuilder table tr .rv_tb-cell { border-style: none;text-align: center;padding: 8px 30px 8px 30px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-cell .rv_justify { justify-content: center; }undefined { justify-content: center; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-text { font-family: Nunito Sans;font-size: 16px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-0-cell-0 .cell-element-0 .rv_tb-text { font-weight: 700;font-size: 15px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-0-cell-0.rv_tb-rs-row-0-cell-0.rv_tb-cs-row-0-cell-0 { background-color: #f3f5f9;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0071f2;text-align: left;padding: 14px 10px 14px 30px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-cell.rv_tb-row-0-cell-0 .rv_justify { justify-content: left; }undefined { justify-content: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-0-cell-1 .cell-element-0 .rv_tb-text { font-weight: 700;font-size: 15px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-0-cell-1.rv_tb-rs-row-0-cell-1.rv_tb-cs-row-0-cell-1 { background-color: #f3f5f9;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0071f2;padding: 14px 10px 14px 10px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-0-cell-2 .cell-element-0 .rv_tb-text { font-weight: 700;font-size: 15px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-0-cell-2.rv_tb-rs-row-0-cell-2.rv_tb-cs-row-0-cell-2 { background-color: #f3f5f9;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0071f2;padding: 14px 10px 14px 10px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-0-cell-3 .cell-element-0 .rv_tb-text { font-weight: 700;font-size: 15px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-0-cell-3.rv_tb-rs-row-0-cell-3.rv_tb-cs-row-0-cell-3 { background-color: #f3f5f9;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0071f2;padding: 14px 10px 14px 10px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-0-cell-4 .cell-element-0 .rv_tb-text { font-weight: 700;font-size: 15px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-0-cell-4.rv_tb-rs-row-0-cell-4.rv_tb-cs-row-0-cell-4 { background-color: #f3f5f9;border-bottom-style: solid;border-bottom-width: 2px;border-bottom-color: #0071f2;padding: 14px 10px 14px 10px; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-1-cell-0.rv_tb-rs-row-1-cell-0.rv_tb-cs-row-1-cell-0 { text-align: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-cell.rv_tb-row-1-cell-0 .rv_justify { justify-content: left; }undefined { justify-content: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-1-cell-1 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-1-cell-2 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-1-cell-3 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-1-cell-4 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-2-cell-0.rv_tb-rs-row-2-cell-0.rv_tb-cs-row-2-cell-0 { text-align: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-cell.rv_tb-row-2-cell-0 .rv_justify { justify-content: left; }undefined { justify-content: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-2-cell-1 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-2-cell-2 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-2-cell-3 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-2-cell-4 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-3-cell-0.rv_tb-rs-row-3-cell-0.rv_tb-cs-row-3-cell-0 { text-align: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-cell.rv_tb-row-3-cell-0 .rv_justify { justify-content: left; }undefined { justify-content: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-3-cell-1 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-3-cell-2 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-3-cell-3 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-3-cell-4 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder table tr .rv_tb-cell.rv_tb-row-4-cell-0.rv_tb-rs-row-4-cell-0.rv_tb-cs-row-4-cell-0 { text-align: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-cell.rv_tb-row-4-cell-0 .rv_justify { justify-content: left; }undefined { justify-content: left; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-4-cell-1 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-4-cell-2 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-4-cell-3 .cell-element-0 .rv_tb-text { font-weight: 600; }.rv_tb-e46910d2-495c-4351-ada9-a26cdb683c73.wp-block-riovizual-tablebuilder .rv_tb-row-4-cell-4 .cell-element-0 .rv_tb-text { font-weight: 600; }</style>
+<link rel="stylesheet" id="rv-fonts-css" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&#038;&#038;display=swap" media="all">
+<style id="core-block-supports-inline-css">.wp-container-core-buttons-is-layout-7e5fce0a{justify-content:flex-start;}</style> <script defer id="rtrar.appLocal-js-extra" src="data:text/javascript;base64,CnZhciBydGFmciA9IHsicnVsZXMiOiIifTsK"></script> <script defer src="/wp-content/plugins/real-time-auto-find-and-replace/assets/js/rtafar.local.js" id="rtrar.appLocal-js"></script> <script defer id="neve-script-js-extra" src="data:text/javascript;base64,CnZhciBOZXZlUHJvcGVydGllcyA9IHsiYWpheHVybCI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWFkbWluXC9hZG1pbi1hamF4LnBocCIsIm5vbmNlIjoiMGQyODE3ZmQ0MSIsImlzUlRMIjoiIiwiaXNDdXN0b21pemUiOiIifTsK"></script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_single_b29ca928ecdf47555b578269b5fd475c.js" id="neve-script-js"></script> <script defer id="neve-script-js-after" src="data:text/javascript;base64,Cgl2YXIgaHRtbCA9IGRvY3VtZW50LmRvY3VtZW50RWxlbWVudDsKCXZhciB0aGVtZSA9IGh0bWwuZ2V0QXR0cmlidXRlKCdkYXRhLW5ldmUtdGhlbWUnKSB8fCAnbGlnaHQnOwoJdmFyIHZhcmlhbnRzID0geyJsb2dvIjp7ImxpZ2h0Ijp7InNyYyI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9BRW5peF9ncmFkaWVudF9hcnJvd3M1LnBuZyIsInNyY3NldCI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9BRW5peF9ncmFkaWVudF9hcnJvd3M1LnBuZyAxOTQwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtNTEweDIyNC5wbmcgNTEwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtMzAweDEzMi5wbmcgMzAwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtMTAyNHg0NDkucG5nIDEwMjR3LCBodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMlwvQUVuaXhfZ3JhZGllbnRfYXJyb3dzNS03Njh4MzM3LnBuZyA3Njh3LCBodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMlwvQUVuaXhfZ3JhZGllbnRfYXJyb3dzNS0xNTM2eDY3NC5wbmcgMTUzNnciLCJzaXplcyI6IihtYXgtd2lkdGg6IDE5NDBweCkgMTAwdncsIDE5NDBweCJ9LCJkYXJrIjp7InNyYyI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9BRW5peF9ncmFkaWVudF9hcnJvd3M1LnBuZyIsInNyY3NldCI6Imh0dHBzOlwvXC9kZXYuYWVuaXguaW9cL3dwLWNvbnRlbnRcL3VwbG9hZHNcLzIwMjNcLzEyXC9BRW5peF9ncmFkaWVudF9hcnJvd3M1LnBuZyAxOTQwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtNTEweDIyNC5wbmcgNTEwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtMzAweDEzMi5wbmcgMzAwdywgaHR0cHM6XC9cL2Rldi5hZW5peC5pb1wvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyM1wvMTJcL0FFbml4X2dyYWRpZW50X2Fycm93czUtMTAyNHg0NDkucG5nIDEwMjR3LCBodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMlwvQUVuaXhfZ3JhZGllbnRfYXJyb3dzNS03Njh4MzM3LnBuZyA3Njh3LCBodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDIzXC8xMlwvQUVuaXhfZ3JhZGllbnRfYXJyb3dzNS0xNTM2eDY3NC5wbmcgMTUzNnciLCJzaXplcyI6IihtYXgtd2lkdGg6IDE5NDBweCkgMTAwdncsIDE5NDBweCJ9LCJzYW1lIjp0cnVlfX07CgoJZnVuY3Rpb24gc2V0Q3VycmVudFRoZW1lKCB0aGVtZSApIHsKCQl2YXIgcGljdHVyZXMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5Q2xhc3NOYW1lKCAnbmV2ZS1zaXRlLWxvZ28nICk7CgkJZm9yKHZhciBpID0gMDsgaTxwaWN0dXJlcy5sZW5ndGg7IGkrKykgewoJCQl2YXIgcGljdHVyZSA9IHBpY3R1cmVzLml0ZW0oaSk7CgkJCWlmKCAhIHBpY3R1cmUgKSB7CgkJCQljb250aW51ZTsKCQkJfTsKCQkJdmFyIGZpbGVFeHQgPSBwaWN0dXJlLnNyYy5zbGljZSgoTWF0aC5tYXgoMCwgcGljdHVyZS5zcmMubGFzdEluZGV4T2YoIi4iKSkgfHwgSW5maW5pdHkpICsgMSk7CgkJCWlmICggZmlsZUV4dCA9PT0gJ3N2ZycgKSB7CgkJCQlwaWN0dXJlLnJlbW92ZUF0dHJpYnV0ZSgnd2lkdGgnKTsKCQkJCXBpY3R1cmUucmVtb3ZlQXR0cmlidXRlKCdoZWlnaHQnKTsKCQkJCXBpY3R1cmUuc3R5bGUgPSAnd2lkdGg6IHZhcigtLW1heHdpZHRoKSc7CgkJCX0KCQkJdmFyIGNvbXBJZCA9IHBpY3R1cmUuZ2V0QXR0cmlidXRlKCdkYXRhLXZhcmlhbnQnKTsKCQkJaWYgKCBjb21wSWQgJiYgdmFyaWFudHNbY29tcElkXSApIHsKCQkJCXZhciBpc0NvbmRpdGlvbmFsID0gdmFyaWFudHNbY29tcElkXVsnc2FtZSddOwoJCQkJaWYgKCB0aGVtZSA9PT0gJ2xpZ2h0JyB8fCBpc0NvbmRpdGlvbmFsIHx8IHZhcmlhbnRzW2NvbXBJZF1bJ2RhcmsnXVsnc3JjJ10gPT09IGZhbHNlICkgewoJCQkJCXBpY3R1cmUuc3JjID0gdmFyaWFudHNbY29tcElkXVsnbGlnaHQnXVsnc3JjJ107CgkJCQkJcGljdHVyZS5zcmNzZXQgPSB2YXJpYW50c1tjb21wSWRdWydsaWdodCddWydzcmNzZXQnXSB8fCAnJzsKCQkJCQlwaWN0dXJlLnNpemVzID0gdmFyaWFudHNbY29tcElkXVsnbGlnaHQnXVsnc2l6ZXMnXTsKCQkJCQljb250aW51ZTsKCQkJCX07CgkJCQlwaWN0dXJlLnNyYyA9IHZhcmlhbnRzW2NvbXBJZF1bJ2RhcmsnXVsnc3JjJ107CgkJCQlwaWN0dXJlLnNyY3NldCA9IHZhcmlhbnRzW2NvbXBJZF1bJ2RhcmsnXVsnc3Jjc2V0J10gfHwgJyc7CgkJCQlwaWN0dXJlLnNpemVzID0gdmFyaWFudHNbY29tcElkXVsnZGFyayddWydzaXplcyddOwoJCQl9OwoJCX07Cgl9OwoKCXZhciBvYnNlcnZlciA9IG5ldyBNdXRhdGlvbk9ic2VydmVyKGZ1bmN0aW9uKG11dGF0aW9ucykgewoJCW11dGF0aW9ucy5mb3JFYWNoKGZ1bmN0aW9uKG11dGF0aW9uKSB7CgkJCWlmIChtdXRhdGlvbi50eXBlID09ICdhdHRyaWJ1dGVzJykgewoJCQkJdGhlbWUgPSBodG1sLmdldEF0dHJpYnV0ZSgnZGF0YS1uZXZlLXRoZW1lJyk7CgkJCQlzZXRDdXJyZW50VGhlbWUodGhlbWUpOwoJCQl9OwoJCX0pOwoJfSk7CgoJb2JzZXJ2ZXIub2JzZXJ2ZShodG1sLCB7CgkJYXR0cmlidXRlczogdHJ1ZQoJfSk7CmZ1bmN0aW9uIHRvZ2dsZUFyaWFDbGljaygpIHsgZnVuY3Rpb24gdG9nZ2xlQXJpYUV4cGFuZGVkKHRvZ2dsZSA9ICd0cnVlJykgeyBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCdidXR0b24ubmF2YmFyLXRvZ2dsZScpLmZvckVhY2goZnVuY3Rpb24oZWwpIHsgaWYgKCBlbC5jbGFzc0xpc3QuY29udGFpbnMoJ2NhcmV0LXdyYXAnKSApIHsgcmV0dXJuOyB9IGVsLnNldEF0dHJpYnV0ZSgnYXJpYS1leHBhbmRlZCcsICd0cnVlJyA9PT0gZWwuZ2V0QXR0cmlidXRlKCdhcmlhLWV4cGFuZGVkJykgPyAnZmFsc2UnIDogdG9nZ2xlKTsgfSk7IH0gdG9nZ2xlQXJpYUV4cGFuZGVkKCk7IGlmICggZG9jdW1lbnQuYm9keS5oYXNBdHRyaWJ1dGUoJ2RhdGEtZnRyYXAtbGlzdGVuZXInKSApIHsgcmV0dXJuOyB9IGRvY3VtZW50LmJvZHkuc2V0QXR0cmlidXRlKCdkYXRhLWZ0cmFwLWxpc3RlbmVyJywgJ3RydWUnKTsgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignZnRyYXAtZW5kJywgZnVuY3Rpb24oKSB7IHRvZ2dsZUFyaWFFeHBhbmRlZCgnZmFsc2UnKTsgfSk7IH0KdmFyIG1lbnVDYXJldHM9ZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiLm5hdi11bCBsaSA+IC53cmFwID4gLmNhcmV0Iik7bWVudUNhcmV0cy5mb3JFYWNoKGZ1bmN0aW9uKGUpe2UuYWRkRXZlbnRMaXN0ZW5lcigia2V5ZG93biIsZT0+ezEzPT09ZS5rZXlDb2RlJiYoZS50YXJnZXQucGFyZW50RWxlbWVudC5jbGFzc0xpc3QudG9nZ2xlKCJhY3RpdmUiKSxlLnRhcmdldC5nZXRBdHRyaWJ1dGUoImFyaWEtcHJlc3NlZCIpJiZlLnRhcmdldC5zZXRBdHRyaWJ1dGUoImFyaWEtcHJlc3NlZCIsInRydWUiPT09ZS50YXJnZXQuZ2V0QXR0cmlidXRlKCJhcmlhLXByZXNzZWQiKT8iZmFsc2UiOiJ0cnVlIikpfSksZS5wYXJlbnRFbGVtZW50LnBhcmVudEVsZW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigiZm9jdXNvdXQiLHQ9PnshZS5wYXJlbnRFbGVtZW50LnBhcmVudEVsZW1lbnQuY29udGFpbnModC5yZWxhdGVkVGFyZ2V0KSYmKGUucGFyZW50RWxlbWVudC5jbGFzc0xpc3QucmVtb3ZlKCJhY3RpdmUiKSxlLnNldEF0dHJpYnV0ZSgiYXJpYS1wcmVzc2VkIiwiZmFsc2UiKSl9KX0pOwo="></script> <script defer src="/wp-content/plugins/real-time-auto-find-and-replace/assets/js/rtafar.app.min.js" id="rtrar.app-js"></script> <script defer id="jquery-core-js-extra" src="data:text/javascript;base64,CnZhciBhYWdiX2xvY2FsX29iamVjdCA9IHsiYWpheF91cmwiOiJodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJub25jZSI6IjlhZWQ4M2FhNjAiLCJsaWNlbnNpbmciOiIiLCJhc3NldHMiOiJodHRwczpcL1wvZGV2LmFlbml4LmlvXC93cC1jb250ZW50XC9wbHVnaW5zXC9hZHZhbmNlZC1hY2NvcmRpb24tYmxvY2tcL2Fzc2V0c1wvIn07Cg=="></script> <script defer src="/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script> <script defer src="/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_single_d05a4e7fb0d0c15e8966c4f0cf46a564.js" id="aagb-accordion-group-js"></script> <script defer src="/wp-content/cache/autoptimize/js/autoptimize_single_630567ede0d1a39f262aa560ee4dadc0.js" id="aagb-group-accordion-frontend-js"></script> <script src="/wp-content/cache/autoptimize/js/autoptimize_single_3b0b95c171fb994583f4cc2c12dc803b.js" id="riovizual-tablebuilder-view-script-js" defer data-wp-strategy="defer"></script> </body>
 </html>
