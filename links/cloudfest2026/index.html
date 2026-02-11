@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cozystack — CloudFest 2026</title>
+<meta name="description" content="Visit Cozystack at CloudFest 2026 — Booth Z22">
+<meta property="og:title" content="Cozystack — CloudFest 2026">
+<meta property="og:description" content="Visit us at Booth Z22">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script defer src="https://www.googletagmanager.com/gtag/js?id=GT-NMCJ23L"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GT-NMCJ23L');</script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: #eef2f7;
+    color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 16px 60px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-bio {
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .two-col {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .col-left {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .col-right {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .booth-card {
+    width: 100%;
+    background: #fff;
+    color: #1a1a1a;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-left: 4px solid #3574d4;
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .booth-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f3f8fe;
+    border-radius: 10px;
+    padding: 10px 16px;
+    flex-shrink: 0;
+  }
+
+  .booth-badge-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(0,0,0,0.4);
+    font-weight: 600;
+  }
+
+  .booth-badge-number {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .booth-info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .booth-event {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .booth-meta {
+    font-size: 13px;
+    color: rgba(0,0,0,0.4);
+    margin-top: 4px;
+  }
+
+  .booth-link {
+    color: #3574d4;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .booth-link:hover {
+    color: #1a5bb5;
+  }
+
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .link-btn {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 14px 20px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .link-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-1px);
+  }
+
+  .link-btn:active {
+    transform: translateY(0);
+  }
+
+  .link-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #f3f8fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 18px;
+    color: rgba(0,0,0,0.6);
+  }
+
+  .link-text {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .link-subtitle {
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+    margin-top: 2px;
+  }
+
+  .link-arrow {
+    opacity: 0.3;
+    flex-shrink: 0;
+    font-size: 12px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.25);
+    text-align: center;
+  }
+
+  .footer a {
+    color: rgba(0,0,0,0.35);
+    text-decoration: none;
+  }
+
+  .footer a:hover {
+    color: rgba(0,0,0,0.6);
+  }
+
+  @media (max-width: 768px) {
+    .two-col {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="logo">
+    <img src="https://raw.githubusercontent.com/cncf/artwork/main/projects/cozystack/stacked/color/cozystack-stacked-color.svg" alt="Cozystack">
+  </div>
+
+  <div class="profile-bio">Free and open-source PaaS framework for building clouds</div>
+
+  <div class="two-col">
+
+    <div class="col-left">
+      <div style="width:505px;max-width:100%;">
+        <div class="zcal-inline-widget"><a href="https://zcal.co/i/wUB120Eb">Schedule a Meeting</a></div>
+        <script defer type="text/javascript" src="https://static.zcal.co/embed/v1/embed.js"></script>
+      </div>
+    </div>
+
+    <div class="col-right">
+
+      <div class="booth-card">
+        <div class="booth-badge">
+          <div class="booth-badge-label">Booth</div>
+          <div class="booth-badge-number">Z22</div>
+        </div>
+        <div class="booth-info">
+          <div class="booth-event">Ænix and Cozystack Booth at CloudFest 2026</div>
+          <div class="booth-meta">
+            <a href="https://www.cloudfest.com/event/floor-plan" class="booth-link" target="_blank" rel="noopener">
+              <i class="fa-solid fa-map-location-dot"></i> Floor Plan
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="links">
+
+        <a href="https://aenix.io" class="link-btn" target="_blank" rel="noopener">
+          <div class="link-icon"><i class="fa-solid fa-globe"></i></div>
+          <div class="link-text">
+            Ænix
+            <div class="link-subtitle">aenix.io</div>
+          </div>
+          <i class="fa-solid fa-chevron-right link-arrow"></i>
+        </a>
+
+        <a href="https://aenix.io/cozystack" class="link-btn" target="_blank" rel="noopener">
+          <div class="link-icon"><i class="fa-solid fa-cloud"></i></div>
+          <div class="link-text">
+            Cozystack
+            <div class="link-subtitle">aenix.io/cozystack</div>
+          </div>
+          <i class="fa-solid fa-chevron-right link-arrow"></i>
+        </a>
+
+        <a href="https://github.com/cozystack/cozystack" class="link-btn" target="_blank" rel="noopener">
+          <div class="link-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="link-text">
+            GitHub
+            <div class="link-subtitle">cozystack/cozystack</div>
+          </div>
+          <i class="fa-solid fa-chevron-right link-arrow"></i>
+        </a>
+
+        <a href="https://t.me/cozystack" class="link-btn" target="_blank" rel="noopener">
+          <div class="link-icon"><i class="fa-brands fa-telegram"></i></div>
+          <div class="link-text">
+            Telegram
+            <div class="link-subtitle">Community Chat</div>
+          </div>
+          <i class="fa-solid fa-chevron-right link-arrow"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <a href="https://aenix.io">aenix.io</a>
+  </div>
+
+</div>
+
+</body>
+</html>
