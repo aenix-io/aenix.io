@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Are You Ready to Build a Modern Cloud?</title>
+<style>
+  :root {
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --success: #16a34a;
+    --danger: #dc2626;
+    --bg: #f8fafc;
+    --card: #ffffff;
+    --text: #1e293b;
+    --muted: #64748b;
+    --border: #e2e8f0;
+    --radius: 12px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .progress-bar {
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+
+  .progress-bar-fill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 2px;
+    transition: width 0.4s ease;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.04);
+  }
+
+  .step { display: none; }
+  .step.active { display: block; }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  .question-counter {
+    font-size: 13px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    font-size: 15px;
+    transition: border-color 0.2s;
+    outline: none;
+    margin-bottom: 16px;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: var(--primary);
+  }
+
+  .field-row {
+    display: flex;
+    gap: 12px;
+  }
+
+  .field-row .field {
+    flex: 1;
+  }
+
+  .field-row .field input {
+    margin-bottom: 16px;
+  }
+
+  @media (max-width: 480px) {
+    .field-row { flex-direction: column; gap: 0; }
+  }
+
+  .consent-note {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 12px;
+  }
+
+  .consent-note a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .consent-note a:hover { text-decoration: underline; }
+
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  .modal-overlay.visible { display: flex; }
+
+  .modal {
+    background: var(--card);
+    border-radius: var(--radius);
+    padding: 28px;
+    max-width: 520px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+
+  .modal h2 { margin-bottom: 16px; }
+
+  .modal p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+
+  .modal .btn-close {
+    margin-top: 12px;
+  }
+
+  .options { display: flex; flex-direction: column; gap: 10px; margin-top: 8px; }
+
+  .option {
+    padding: 14px 16px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1.4;
+    transition: border-color 0.2s, background 0.2s;
+    user-select: none;
+  }
+
+  .option:hover { border-color: var(--primary); background: #eff6ff; }
+
+  .option.selected {
+    border-color: var(--primary);
+    background: #dbeafe;
+  }
+
+  .option.correct {
+    border-color: var(--success);
+    background: #dcfce7;
+    cursor: default;
+  }
+
+  .option.wrong {
+    border-color: var(--danger);
+    background: #fee2e2;
+    cursor: default;
+  }
+
+  .option.disabled {
+    cursor: default;
+    opacity: 0.6;
+  }
+
+  .option.disabled:hover {
+    border-color: var(--border);
+    background: transparent;
+  }
+
+  .feedback {
+    margin-top: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    display: none;
+  }
+
+  .feedback.visible { display: block; }
+
+  .feedback.correct {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+  }
+
+  .feedback.wrong {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+  }
+
+  .feedback a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .feedback a:hover { text-decoration: underline; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 20px;
+  }
+
+  .btn:hover { background: var(--primary-dark); }
+  .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .result-score {
+    text-align: center;
+    padding: 32px 0 16px;
+  }
+
+  .result-score .score {
+    font-size: 64px;
+    font-weight: 800;
+    color: var(--primary);
+  }
+
+  .result-score .total {
+    font-size: 20px;
+    color: var(--muted);
+  }
+
+  .result-message {
+    text-align: center;
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  .result-details {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+  }
+
+  .result-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .result-icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+  .sending-status {
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 16px;
+  }
+
+  .review-question {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .review-question:last-child { border-bottom: none; }
+
+  .review-question h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+
+  .review-question .review-number {
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .review-options {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .review-opt {
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1.5px solid var(--border);
+    color: var(--muted);
+  }
+
+  .review-opt.correct {
+    border-color: var(--success);
+    background: #dcfce7;
+    color: var(--text);
+  }
+
+  .review-opt.wrong {
+    border-color: var(--danger);
+    background: #fee2e2;
+    color: var(--text);
+  }
+
+  .review-explanation {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--muted);
+    padding: 10px 12px;
+    background: var(--bg);
+    border-radius: 8px;
+  }
+
+  .review-explanation a {
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  .review-explanation a:hover { text-decoration: underline; }
+
+  .community-cta {
+    text-align: center;
+    padding: 24px 0 8px;
+    margin-top: 20px;
+  }
+
+  .community-cta.with-border {
+    border-top: 1px solid var(--border);
+  }
+
+  .community-cta p {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+
+  .community-btn { text-decoration: none; }
+  .community-btn:hover { text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="modal-overlay" id="privacy-modal">
+  <div class="modal">
+    <h2>Privacy Policy</h2>
+    <p>We collect your personal data (name, company, position, email, and optionally phone number) solely for the purpose of this quiz and potential follow-up communication related to the event.</p>
+    <p>Your data will be stored securely and will not be shared with or sold to third parties. We process your data based on your consent, which you provide by starting the quiz.</p>
+    <p>You have the right to access, correct, or request deletion of your personal data at any time by contacting the event organizers.</p>
+    <button class="btn btn-close" id="close-privacy">Close</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="progress-bar"><div class="progress-bar-fill" id="progress"></div></div>
+  <div class="card">
+    <!-- Step 0: Welcome / User Info -->
+    <div class="step active" id="step-intro">
+      <h1>Conference Quiz</h1>
+      <p class="subtitle">Test your knowledge! Answer a few questions and see how you score. Results are shown after each question.</p>
+      <form id="user-form">
+        <div class="field-row">
+          <div class="field">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" required placeholder="John">
+          </div>
+          <div class="field">
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" required placeholder="Doe">
+          </div>
+        </div>
+
+        <label for="company">Company *</label>
+        <input type="text" id="company" required placeholder="Acme Inc.">
+
+        <label for="position">Position *</label>
+        <input type="text" id="position" required placeholder="DevOps Engineer">
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" required placeholder="john@acme.com" pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+
+        <label for="phone">Phone (optional)</label>
+        <input type="text" id="phone" placeholder="+1 555 123 4567">
+
+        <button type="submit" class="btn">Start Quiz</button>
+        <p class="consent-note">By starting the quiz you agree to our <a href="#" id="privacy-link">Privacy Policy</a></p>
+      </form>
+    </div>
+
+    <!-- Question steps are generated dynamically -->
+    <div id="questions-container"></div>
+
+    <!-- Final step: Results -->
+    <div class="step" id="step-results">
+      <h2>Your Results</h2>
+      <div class="result-score">
+        <span class="score" id="final-score">0</span>
+        <span class="total" id="final-total">/0</span>
+      </div>
+      <div class="result-message" id="result-message"></div>
+      <div class="community-cta" style="padding-bottom: 28px;">
+        <p>We'd love to see you in our community! Join us and stay connected:</p>
+        <a href="https://aenix.io/links/cozystack/" target="_blank" rel="noopener" class="btn community-btn">Cozystack Community Links</a>
+      </div>
+      <div class="result-details" id="result-details"></div>
+      <div class="community-cta with-border">
+        <p>We'd love to see you in our community! Join us and stay connected:</p>
+        <a href="https://aenix.io/links/cozystack/" target="_blank" rel="noopener" class="btn community-btn">Cozystack Community Links</a>
+      </div>
+      <div class="sending-status" id="sending-status"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// =============================================================
+// CONFIGURATION — edit questions and settings here
+// =============================================================
+
+const CONFIG = {
+  // Google Apps Script Web App URL for saving results to Google Sheets.
+  // See README.md for setup instructions.
+  googleSheetWebhook: "https://script.google.com/macros/s/AKfycbx2ZafhCZPQnUjNNjI3_BcD88Uf_n1mIrdREACxK8doeW5GJLPDMnAWSbNEimnKouOSfA/exec",
+
+  // Title and description shown on the intro screen
+  title: "Are You Ready to Build a Modern Cloud?",
+  subtitle: "Test your cloud-native knowledge with 10 questions. After each answer, you'll see the correct solution with an explanation.",
+};
+
+const QUESTIONS = [
+  {
+    question: "Which virtualization approach is currently the most trending and vendor-neutral?",
+    options: [
+      "Proxmox",
+      "VMware",
+      "KubeVirt",
+      "OpenStack",
+    ],
+    correct: 2,
+    explanation: `<b>KubeVirt</b> is the correct answer. It is adopted by major vendors like Red Hat, NVIDIA, Microsoft, SUSE, and ByteDance (full list: <a href="https://github.com/kubevirt/kubevirt/blob/main/ADOPTERS.md" target="_blank" rel="noopener">ADOPTERS.md</a>). Cozystack also uses KubeVirt as its subsystem for running VMs natively in Kubernetes.<br><br><b>Why not the others?</b><br>• <b>VMware</b> — a purely vendor-locked product that is rapidly losing popularity due to Broadcom's aggressive licensing policies. Many organizations are actively migrating away.<br>• <b>Proxmox</b> — while open-source, it is controlled by a single company with a fairly closed development process that does not accept community pull requests.<br>• <b>OpenStack</b> — truly vendor-neutral and once very popular, but losing momentum due to its complexity and monolithic architecture.`,
+    reference: "https://kubevirt.io/",
+  },
+  {
+    question: "Which of the following projects is NOT part of the Linux Foundation?",
+    options: [
+      "Linux Kernel",
+      "Kubernetes",
+      "Cozystack",
+      "OpenShift",
+    ],
+    correct: 3,
+    explanation: `<b>OpenShift</b> is the correct answer — it is a proprietary Red Hat product, not a Linux Foundation project. <b>OKD</b>, the open-source variant of OpenShift, is not a CNCF project either.<br><br><b>How the others fit in:</b><br>• <b>Linux Foundation</b> is a nonprofit organization that hosts and promotes open-source projects, including the Linux Kernel itself.<br>• <b>CNCF</b> (Cloud Native Computing Foundation) is a subdivision of the Linux Foundation that includes Kubernetes and the entire ecosystem of cloud-native projects around it.<br>• <b>Cozystack</b> was accepted to CNCF on March 4, 2025 at the Sandbox maturity level.`,
+    reference: "https://www.cncf.io/projects/cozystack/",
+  },
+  {
+    question: "Which of the following is typically NOT a core feature of a managed Kubernetes service?",
+    options: [
+      "Automatically provisioned LoadBalancers",
+      "Automatic provisioning of S3 buckets",
+      "Automatically provisioned PersistentVolumes",
+      "Automatic node lifecycle management and rolling updates",
+    ],
+    correct: 1,
+    explanation: `<b>Automatic provisioning of S3 buckets</b> is the correct answer. The Container Object Storage Interface (COSI) standard is still in alpha and is not commonly supported by providers yet.<br><br><b>Why the others are core features:</b><br>LoadBalancers, PersistentVolumes, and automatic node lifecycle management with rolling updates are the essential features users expect from a truly managed Kubernetes. Users buy managed Kubernetes not to install and manage all these capabilities themselves — they need a stable platform they expect to get from a cloud provider.<br><br>Cozystack includes all of these features out of the box, along with autoscaling and automatic monitoring, allowing users to provision a managed Kubernetes cluster with a single click.`,
+    reference: "",
+  },
+  {
+    question: "Which OS is considered the most secure for running Kubernetes nodes and has the smallest attack surface?",
+    options: [
+      "Ubuntu",
+      "CentOS",
+      "Talos Linux",
+      "Flatcar",
+    ],
+    correct: 2,
+    explanation: `<b>Talos Linux</b> is a new-generation Kubernetes-specific distro that took a radically different approach. It completely removed all the traditional OS scaffolding — the system itself is a single Go binary with minimal dependencies. It does not allow loading kernel modules, and the entire system is built on Kubernetes principles with controllers and a reconciliation loop. Everything is configured via a single YAML file through a Kubernetes-like API.<br><br><b>Why not the others?</b><br>• <b>Ubuntu</b> and <b>CentOS</b> are general-purpose distros that are not Kubernetes-oriented. They include many packages and services that increase the attack surface.<br>• <b>Flatcar</b> is a continuation of the original CoreOS (before Red Hat acquired it) — the first attempt at a Kubernetes-specific distro. It features atomic updates, but still includes standard components like systemd, SSH, and others.<br><br>Cozystack uses Talos Linux because it allows us to create reliable and reproducible environments despite every bare-metal server being different.`,
+    reference: "https://www.talos.dev/",
+  },
+  {
+    question: "Which PostgreSQL operator is considered the most Kubernetes-native and modern today?",
+    options: [
+      "CloudNativePG",
+      "Zalando Postgres Operator",
+      "Percona Operator",
+      "Crunchy Data Postgres Operator",
+    ],
+    correct: 0,
+    explanation: `<b>CloudNativePG</b> relies directly on Kubernetes primitives and avoids external HA layers like Patroni, making it the most Kubernetes-native PostgreSQL operator. It is also a CNCF project.<br><br>Cozystack uses CloudNativePG to provide managed PostgreSQL databases as a service for its users.`,
+    reference: "https://cloudnative-pg.io/",
+  },
+  {
+    question: "Which metrics stack is the most efficient in terms of resource usage and ingestion performance?",
+    options: [
+      "Thanos",
+      "Prometheus",
+      "Mimir",
+      "VictoriaMetrics",
+    ],
+    correct: 3,
+    explanation: `<b>VictoriaMetrics</b> offers high-performance ingestion and storage with low resource consumption compared to alternatives. See the <a href="https://valyala.medium.com/prometheus-vs-victoriametrics-benchmark-on-node-exporter-metrics-4ca29c75590f" target="_blank" rel="noopener">benchmark comparison</a> for details.<br><br>Cozystack uses VictoriaMetrics as its monitoring stack.`,
+    reference: "https://victoriametrics.com/",
+  },
+  {
+    question: "Which storage system is typically the fastest for synchronous replicated workloads in Kubernetes?",
+    options: [
+      "Mayastor",
+      "LINSTOR / DRBD",
+      "Ceph RBD",
+      "Longhorn",
+    ],
+    correct: 1,
+    explanation: `<b>LINSTOR</b> is built on top of well-known and battle-tested technologies: ZFS, LVM, and DRBD. DRBD operates at the kernel block layer, enabling synchronous replication with near-local disk latency. See the <a href="https://linbit.com/blog/comparing-linstor-ceph-mayastor-vitastor-storage-performance-in-kubernetes/" target="_blank" rel="noopener">benchmark comparison</a> for details.<br><br>Cozystack uses LINSTOR and DRBD for virtual machines and databases, enabling highly-performant and highly-available volumes. It can also provision local volumes when an application does not require replication — for example, databases traditionally replicate at the application level. LINSTOR also supports RWX (ReadWriteMany) volumes, which Cozystack can pass through to user Kubernetes clusters.`,
+    reference: "https://linbit.com/linstor/",
+  },
+  {
+    question: "Which CNI is the most feature-rich for running virtual machines in Kubernetes?",
+    options: [
+      "Flannel",
+      "Cilium",
+      "Kube-OVN",
+      "Calico",
+    ],
+    correct: 2,
+    explanation: `<b>Kube-OVN</b> provides VPCs, subnets, floating IPs, NAT Gateway, and VLAN support — closest to cloud networking models like AWS or OpenStack. Most importantly, it provides consistent MAC addresses and live migration for virtual machines with IP address preservation.<br><br><b>Why not the others?</b><br>• <b>Flannel</b> — one of the earliest container-oriented CNIs, created when Kubernetes was designed for stateless workloads. It has barely changed since then and is valued solely for its simplicity.<br>• <b>Cilium</b> — a feature-rich CNI plugin that uses a modern eBPF-based stack, making it one of the fastest network plugins for Kubernetes. However, it remains focused on containers rather than virtual machines and does not provide a sufficient networking layer for VMs.<br>• <b>Calico</b> — a solid CNI for containers but also lacks the VM-specific features that Kube-OVN offers.<br><br>Cozystack uses Kube-OVN as its network transport and Cilium for policy enforcement and as a kube-proxy replacement, combining the best of both: rich VM networking and high-performance eBPF-based security.`,
+    reference: "https://kubeovn.github.io/docs/",
+  },
+  {
+    question: "Which S3-compatible storage is known for high performance, especially with many small objects?",
+    options: [
+      "MinIO",
+      "Ceph RGW",
+      "OpenIO",
+      "SeaweedFS",
+    ],
+    correct: 3,
+    explanation: `<b>SeaweedFS</b> uses an architecture inspired by Facebook Haystack, enabling O(1) disk access per object and very stable latency even at scale. It handles large numbers of small objects exceptionally well.<br><br><b>Why not the others?</b><br>• <b>Ceph RGW</b> — performs well for read-heavy workloads, but consumes too many resources on writes, making it less efficient for write-intensive or mixed scenarios.<br>• <b>MinIO</b> — popular and easy to deploy, but its performance degrades significantly with a large number of small objects since it stores each object as a separate file on the filesystem, with metadata also stored as files on disk. Additionally, as of 2026, MinIO is no longer open source.<br>• <b>OpenIO</b> — a less widely adopted solution with a grid-based architecture that has not gained significant traction in the Kubernetes ecosystem.<br><br>Cozystack uses SeaweedFS to provide S3-compatible object storage as a service.`,
+    reference: "https://github.com/seaweedfs/seaweedfs",
+  },
+  {
+    question: "Which approach provides the strongest cluster-level isolation for multi-tenant Kubernetes?",
+    options: [
+      "Capsule",
+      "Kamaji",
+      "vCluster",
+      "Kubernetes Namespaces",
+    ],
+    correct: 1,
+    explanation: `<b>Kamaji</b> provides dedicated control planes per tenant with separate API servers, etcd, and controllers, ensuring true cluster-level isolation. Each tenant gets a fully functional Kubernetes cluster with dedicated worker nodes (real VMs or bare-metal machines), while control plane components run as pods in a management cluster, making it efficient to operate at scale.<br><br><b>Why not the others?</b><br>• <b>Kubernetes Namespaces</b> — the most basic level of separation. All tenants share the same API server and control plane, making it impossible to enforce true isolation. A misconfigured RBAC policy can expose resources across tenants.<br>• <b>Capsule</b> — adds policy enforcement on top of namespaces (resource quotas, network policies), but tenants still share the same control plane and API server. It improves namespace-based multi-tenancy but does not provide cluster-level isolation.<br>• <b>vCluster</b> — creates virtual clusters inside namespaces with their own API server, but the underlying workloads still run in the host cluster's namespace. This means network and storage isolation depends on the host cluster's policies, not on true separation.<br><br>Cozystack uses Kamaji to provision fully isolated managed Kubernetes clusters for each tenant, running worker nodes inside KubeVirt VMs.`,
+    reference: "https://kamaji.clastix.io/",
+  },
+];
+
+// =============================================================
+// APP STATE
+// =============================================================
+
+let currentStep = 0; // 0 = intro, 1..N = questions, N+1 = results
+let score = 0;
+let answers = []; // { questionIndex, selectedOption, correct }
+let userData = {};
+let sessionId = "";
+
+const totalSteps = QUESTIONS.length + 2; // intro + questions + results
+const STORAGE_KEY = "conference_quiz_state";
+
+// =============================================================
+// STATE PERSISTENCE
+// =============================================================
+
+function generateSessionId() {
+  return Date.now().toString(36) + Math.random().toString(36).substring(2, 8);
+}
+
+function saveState(completed) {
+  const state = { currentStep, score, answers, userData, sessionId, completed: !!completed };
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); } catch(e) {}
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch(e) { return null; }
+}
+
+function clearState() {
+  try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+}
+
+// =============================================================
+// INIT
+// =============================================================
+
+function init() {
+  // Set title/subtitle from config
+  document.querySelector("#step-intro h1").textContent = CONFIG.title;
+  document.querySelector("#step-intro .subtitle").textContent = CONFIG.subtitle;
+  document.title = CONFIG.title;
+
+  // Generate question steps
+  const container = document.getElementById("questions-container");
+  QUESTIONS.forEach((q, i) => {
+    const div = document.createElement("div");
+    div.className = "step";
+    div.id = `step-q${i}`;
+    div.innerHTML = `
+      <div class="question-counter">Question ${i + 1} of ${QUESTIONS.length}</div>
+      <h2>${q.question}</h2>
+      <div class="options" id="options-${i}">
+        ${q.options.map((opt, oi) => `
+          <div class="option" data-question="${i}" data-option="${oi}">${opt}</div>
+        `).join("")}
+      </div>
+      <div class="feedback" id="feedback-${i}">
+        <p id="feedback-text-${i}"></p>
+        ${q.reference ? `<p style="margin-top:8px"><a href="${q.reference}" target="_blank" rel="noopener">Learn more &rarr;</a></p>` : ""}
+      </div>
+      <button class="btn" id="next-${i}" style="display:none" onclick="nextQuestion(${i})">
+        ${i < QUESTIONS.length - 1 ? "Next Question" : "See Results"}
+      </button>
+    `;
+    container.appendChild(div);
+  });
+
+  // Bind option clicks
+  document.querySelectorAll(".option").forEach(opt => {
+    opt.addEventListener("click", handleOptionClick);
+  });
+
+  // Bind form submit
+  document.getElementById("user-form").addEventListener("submit", handleFormSubmit);
+
+  // Privacy modal
+  document.getElementById("privacy-link").addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("privacy-modal").classList.add("visible");
+  });
+  document.getElementById("close-privacy").addEventListener("click", () => {
+    document.getElementById("privacy-modal").classList.remove("visible");
+  });
+  document.getElementById("privacy-modal").addEventListener("click", (e) => {
+    if (e.target === e.currentTarget) e.currentTarget.classList.remove("visible");
+  });
+
+  // Restore saved state
+  const saved = loadState();
+  if (saved && saved.answers && saved.answers.length > 0) {
+    currentStep = saved.currentStep;
+    score = saved.score;
+    answers = saved.answers;
+    userData = saved.userData;
+    sessionId = saved.sessionId || generateSessionId();
+
+    // Replay answered questions to restore UI
+    answers.forEach(a => {
+      const q = QUESTIONS[a.questionIndex];
+      const qi = a.questionIndex;
+      const oi = a.selectedOption;
+      const isCorrect = a.correct;
+
+      const allOpts = document.querySelectorAll(`#options-${qi} .option`);
+      allOpts.forEach((o, idx) => {
+        o.removeEventListener("click", handleOptionClick);
+        if (idx === q.correct) o.classList.add("correct");
+        else if (idx === oi && !isCorrect) o.classList.add("wrong");
+        else o.classList.add("disabled");
+      });
+
+      const fb = document.getElementById(`feedback-${qi}`);
+      const fbText = document.getElementById(`feedback-text-${qi}`);
+      fbText.innerHTML = (isCorrect ? "&#10004; Correct! " : "&#10008; Incorrect. ") + q.explanation;
+      fb.classList.add("visible", isCorrect ? "correct" : "wrong");
+      document.getElementById(`next-${qi}`).style.display = "inline-flex";
+    });
+
+    // Show correct step
+    if (saved.completed || currentStep >= totalSteps - 1) {
+      currentStep = totalSteps - 1;
+      showResults();
+    } else if (currentStep >= 1) {
+      showStep(`step-q${currentStep - 1}`);
+    }
+  } else {
+    updateProgress();
+  }
+}
+
+// =============================================================
+// NAVIGATION
+// =============================================================
+
+function updateProgress() {
+  const pct = (currentStep / (totalSteps - 1)) * 100;
+  document.getElementById("progress").style.width = pct + "%";
+}
+
+function showStep(stepId) {
+  document.querySelectorAll(".step").forEach(s => s.classList.remove("active"));
+  document.getElementById(stepId).classList.add("active");
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function handleFormSubmit(e) {
+  e.preventDefault();
+  userData = {
+    firstName: document.getElementById("first-name").value.trim(),
+    lastName: document.getElementById("last-name").value.trim(),
+    company: document.getElementById("company").value.trim(),
+    position: document.getElementById("position").value.trim(),
+    email: document.getElementById("email").value.trim(),
+    phone: document.getElementById("phone").value.trim(),
+  };
+  sessionId = generateSessionId();
+  currentStep = 1;
+  saveState();
+  sendResults();
+  showStep("step-q0");
+}
+
+function nextQuestion(i) {
+  if (i < QUESTIONS.length - 1) {
+    currentStep = i + 2;
+    saveState();
+    showStep(`step-q${i + 1}`);
+  } else {
+    currentStep = totalSteps - 1;
+    saveState();
+    showResults();
+  }
+}
+
+// =============================================================
+// QUESTION HANDLING
+// =============================================================
+
+function handleOptionClick(e) {
+  const opt = e.currentTarget;
+  const qi = parseInt(opt.dataset.question);
+  const oi = parseInt(opt.dataset.option);
+  const q = QUESTIONS[qi];
+
+  // Prevent re-answering
+  if (answers.find(a => a.questionIndex === qi)) return;
+
+  const isCorrect = oi === q.correct;
+  if (isCorrect) score++;
+
+  answers.push({ questionIndex: qi, selectedOption: oi, correct: isCorrect });
+
+  // Highlight options
+  const allOpts = document.querySelectorAll(`#options-${qi} .option`);
+  allOpts.forEach((o, idx) => {
+    o.removeEventListener("click", handleOptionClick);
+    if (idx === q.correct) {
+      o.classList.add("correct");
+    } else if (idx === oi && !isCorrect) {
+      o.classList.add("wrong");
+    } else {
+      o.classList.add("disabled");
+    }
+  });
+
+  // Show feedback
+  const fb = document.getElementById(`feedback-${qi}`);
+  const fbText = document.getElementById(`feedback-text-${qi}`);
+  fbText.innerHTML = (isCorrect ? "&#10004; Correct! " : "&#10008; Incorrect. ") + q.explanation;
+  fb.classList.add("visible", isCorrect ? "correct" : "wrong");
+
+  // Show next button
+  document.getElementById(`next-${qi}`).style.display = "inline-flex";
+
+  saveState();
+  sendResults();
+}
+
+// =============================================================
+// RESULTS
+// =============================================================
+
+function showResults() {
+  showStep("step-results");
+
+  document.getElementById("final-score").textContent = score;
+  document.getElementById("final-total").textContent = `/ ${QUESTIONS.length}`;
+
+  let msg;
+  if (score === 10) msg = "You should be running this booth 😄";
+  else if (score >= 7) msg = "☁️ Cloud Architect — impressive depth of knowledge!";
+  else if (score >= 4) msg = "🔧 Platform Engineer — solid foundational knowledge!";
+  else msg = "🔍 Cloud Curious — keep exploring, every expert started here!";
+  document.getElementById("result-message").textContent = msg;
+
+  // Detailed breakdown with all options and explanations
+  const details = document.getElementById("result-details");
+  details.innerHTML = answers.map(a => {
+    const q = QUESTIONS[a.questionIndex];
+    const qi = a.questionIndex;
+    const oi = a.selectedOption;
+    const icon = a.correct ? "✅" : "❌";
+
+    const optionsHtml = q.options.map((opt, idx) => {
+      let cls = "";
+      if (idx === q.correct) cls = "correct";
+      else if (idx === oi && !a.correct) cls = "wrong";
+      return `<div class="review-opt ${cls}">${opt}</div>`;
+    }).join("");
+
+    const refHtml = q.reference ? ` <a href="${q.reference}" target="_blank" rel="noopener">Learn more &rarr;</a>` : "";
+
+    return `<div class="review-question">
+      <div class="review-number">${icon} Question ${qi + 1} of ${QUESTIONS.length}</div>
+      <h3>${q.question}</h3>
+      <div class="review-options">${optionsHtml}</div>
+      <div class="review-explanation">${q.explanation}${refHtml}</div>
+    </div>`;
+  }).join("");
+
+  // Mark as completed and send to Google Sheets
+  saveState(true);
+  sendResults();
+}
+
+// =============================================================
+// GOOGLE SHEETS INTEGRATION
+// =============================================================
+
+function sendResults() {
+  if (!CONFIG.googleSheetWebhook) {
+    console.log("Quiz results:", { sessionId, userData, score, total: QUESTIONS.length, answers });
+    return;
+  }
+
+  const payload = {
+    sessionId: sessionId,
+    timestamp: new Date().toISOString(),
+    firstName: userData.firstName,
+    lastName: userData.lastName,
+    company: userData.company,
+    position: userData.position,
+    email: userData.email,
+    phone: userData.phone,
+    score: score,
+    total: QUESTIONS.length,
+    answers: answers.map(a => ({
+      question: QUESTIONS[a.questionIndex].question,
+      selected: QUESTIONS[a.questionIndex].options[a.selectedOption],
+      correct: a.correct,
+    })),
+  };
+
+  fetch(CONFIG.googleSheetWebhook, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  }).catch(() => {});
+}
+
+// =============================================================
+init();
+</script>
+</body>
+</html>
