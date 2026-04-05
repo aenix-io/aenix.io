@@ -3,7 +3,7 @@
 Generates the OSS Contribution report page for aenix.io.
 
 Fetches contribution data from GitHub API for Aenix engineers and updates
-the oss-contribution/index.html page with current statistics.
+the oss-contribution.html page with current statistics.
 
 Requires: GITHUB_TOKEN environment variable for API access.
 """
@@ -254,8 +254,8 @@ def collect_data():
 
 
 def update_html(data):
-    """Update the oss-contribution/index.html with new data."""
-    html_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "oss-contribution", "index.html")
+    """Update oss-contribution.html with new data."""
+    html_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "oss-contribution.html")
 
     if not os.path.exists(html_path):
         print(f"Error: {html_path} not found", file=sys.stderr)
