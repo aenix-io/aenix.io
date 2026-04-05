@@ -1,0 +1,43 @@
+name: Update OSS Contribution Report
+
+on:
+  schedule:
+    # 00:01 Pacific Time on the 1st of each month
+    # PST = UTC-8, PDT = UTC-7; using 08:01 UTC (covers PST)
+    - cron: '1 8 1 * *'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install requests jinja2
+
+      - name: Generate OSS report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate-oss-report.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add oss-contribution/index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update OSS contribution report $(date +%Y-%m-%d)"
+            git push
+          fi
