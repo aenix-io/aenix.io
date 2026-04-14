@@ -1,0 +1,91 @@
+{{ define "head" }}
+<link rel="stylesheet" href="/css/pricing-table.css">
+<link rel="stylesheet" href="/css/roi-calculator.css">
+{{ end }}
+
+{{ define "main" }}
+<section class="page-header">
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<div class="container">
+  <div class="page-content" style="max-width:100%">
+
+    {{/* Pricing table — from old site */}}
+    <div class="cozy-pricing">
+      <div class="cp-toggle" id="cpBillingToggle">
+        <button class="cp-tbtn cp-active" data-mode="annual">Annual <span class="cp-discount">-20%</span></button>
+        <button class="cp-tbtn" data-mode="monthly">Monthly</button>
+      </div>
+      <div class="cp-table-wrap"><table id="cpPricingTable"></table></div>
+      <div class="cp-cards" id="cpPricingCards"></div>
+    </div>
+
+    <div style="text-align:center;margin:2rem 0">
+      <a href="/contact/" class="btn btn-primary btn-lg">GET STARTED</a>
+    </div>
+
+    <ol style="font-size:.8125rem;color:var(--gray-500);max-width:800px;margin:2rem auto;padding-left:1.25rem">
+      <li>Incidents related to installation support will not count towards any support incident limit if reported within the 30-day installation support period.</li>
+      <li>Business hours are defined as Mon–Fri, 9am–6pm CET, excluding holidays.</li>
+      <li>«Emergency» is defined as an incident involving a production system being down or unresponsive, with no workaround available.</li>
+      <li>Time we actively dedicate to building features according to your roadmap per month.</li>
+    </ol>
+
+    {{/* ROI Calculator — from old site */}}
+    <div id="roi" style="height:80px"></div>
+    <div class="cozy-roi"><div class="wrap">
+      <h2>ROI Calculator</h2>
+      <div class="subtle">Pick your footprint and see projected 3-year savings, based on your matrices.</div>
+      <div class="panel" id="controls">
+        <div class="row">
+          <div><strong>How many nodes?</strong></div>
+          <div>
+            <div class="scale" id="nodes-scale"></div>
+            <div class="desc">Size of your infrastructure expressed as the number of physical-equivalent nodes.</div>
+          </div>
+        </div>
+        <div class="row">
+          <div><strong>How many services?</strong></div>
+          <div>
+            <div class="scale" id="services-scale"></div>
+            <div class="desc">Number of different service types you plan to use (PostgreSQL, GitLab, RabbitMQ, Ubuntu, Kubernetes, S3 storage, etc.).</div>
+          </div>
+        </div>
+      </div>
+      <div class="panel" style="margin-top:16px;">
+        <h2 style="margin:0 0 10px;">Results for selection</h2>
+        <div class="badge" id="badgeSel">10 nodes · 5 services · 3 years</div>
+        <div class="results">
+          <div class="card">
+            <h3>Savings vs Public Clouds</h3>
+            <div class="price" id="saveCloud">$—</div>
+            <div class="hint">3-year savings compared to running the same footprint on public clouds.</div>
+          </div>
+          <div class="card">
+            <h3>Savings vs In-House Development</h3>
+            <div class="price" id="saveInhouse">$—</div>
+            <div class="hint">3-year savings compared to building and operating your own platform in-house.</div>
+          </div>
+          <div class="card">
+            <h3>Savings vs Vendor Support</h3>
+            <div class="price" id="saveVendors">$—</div>
+            <div class="hint">3-year savings compared to buying paid support for all components from vendors.</div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+
+    <div style="text-align:center;margin:2rem 0">
+      <a href="/contact/" class="btn btn-primary btn-lg">CONTACT US</a>
+    </div>
+
+  </div>
+</div>
+
+<script defer src="/js/pricing-table.js"></script>
+<script defer src="/js/roi-calculator.js"></script>
+{{ end }}

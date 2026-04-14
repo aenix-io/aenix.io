@@ -1,0 +1,28 @@
+{{ define "main" }}
+<article class="page">
+  {{ if .Params.hero }}
+  <section class="hero {{ with .Params.heroClass }}{{ . }}{{ end }}">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="hero-subtitle">{{ . }}</p>{{ end }}
+      {{ with .Params.heroCta }}
+      <a href="{{ .url }}" class="btn btn-primary btn-lg">{{ .text }}</a>
+      {{ end }}
+    </div>
+  </section>
+  {{ else }}
+  <section class="page-header">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <div class="container">
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

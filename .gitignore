@@ -1,0 +1,6 @@
+# Hugo build output
+public/
+resources/_gen/
+
+# Hugo environment file
+.hugo_build.lock

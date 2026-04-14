@@ -1,0 +1,10 @@
+name = "Ænix"
+license = "Proprietary"
+licenselink = ""
+description = "Custom theme for aenix.io"
+tags = ["corporate", "cloud", "technology"]
+min_version = "0.160.0"
+
+[author]
+  name = "Ænix"
+  homepage = "https://aenix.io"
