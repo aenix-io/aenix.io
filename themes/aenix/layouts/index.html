@@ -1,21 +1,51 @@
 {{ define "main" }}
 
-{{/* ── Hero — text left, sphere image right ── */}}
-<section class="hero hero-home">
-  <div class="container hero-container">
+{{/* ── Hero ── */}}
+<section class="hero hero-home" id="hero">
+  {{/* Background environment */}}
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-flow" aria-hidden="true">
+      <canvas id="flow-canvas"></canvas>
+    </div>
+    <div class="hero-glow hero-glow--1" data-parallax="0.01"></div>
+    <div class="hero-glow hero-glow--2" data-parallax="0.02"></div>
+    <div class="hero-glow hero-glow--3" data-parallax="0.015"></div>
+    <div class="hero-vignette"></div>
+  </div>
+
+  {{/* Mid-layer: volumetric glow focal point */}}
+  <div class="hero-focal" aria-hidden="true" data-parallax="0.02">
+    <div class="focal-core"></div>
+    <div class="focal-haze focal-haze--1"></div>
+    <div class="focal-haze focal-haze--2"></div>
+    <div class="focal-haze focal-haze--3"></div>
+  </div>
+
+  <div class="hero-layout container">
     <div class="hero-content">
-      <h1>We build clouds!</h1>
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Cloud Infrastructure Platform
+      </div>
+      <h1 class="hero-title">We build<br>clouds!</h1>
       <p class="hero-subtitle">Amplify your data center with cloud transformation.</p>
       <div class="hero-cta">
-        <a href="/contact/" class="btn btn-primary btn-lg">Let's Talk</a>
+        <a href="/contact/" class="btn btn-hero-primary btn-lg">
+          Let's Talk
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="/cozystack/" class="btn btn-hero-ghost btn-lg">Explore Cozystack</a>
       </div>
     </div>
   </div>
+
+  <div class="hero-horizon"></div>
 </section>
 
 {{/* ── Services ── */}}
 {{ with .Params.services }}
-<section class="section" id="services">
+<section class="section section--alt" id="services">
   <div class="container">
     <div class="section-header">
       <p class="section-lead">{{ .subtitle }}</p>
@@ -40,15 +70,17 @@
       </div>
       {{ end }}
     </div>
-    <p class="opensource-tagline">We <span style="color:#f43f5e">❤️</span> and DO Open Source</p>
+    <p class="opensource-tagline">We <span style="color:#f43f5e">&#10084;&#65039;</span> and DO Open Source</p>
   </div>
 </section>
 {{ end }}
 
-{{/* ── Cozystack — dark section ── */}}
+{{/* ── Cozystack — Product Section ── */}}
 {{ with .Params.products }}
-<section class="section section--dark" id="products">
-  <div class="container">
+<section class="section" id="products" style="position:relative;overflow:hidden">
+  <div style="position:absolute;top:-100px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(1,165,255,0.06) 0%,transparent 60%);border-radius:50%;pointer-events:none"></div>
+  <div style="position:absolute;bottom:-100px;left:-150px;width:400px;height:400px;background:radial-gradient(circle,rgba(102,27,225,0.05) 0%,transparent 60%);border-radius:50%;pointer-events:none"></div>
+  <div class="container" style="position:relative;z-index:1">
     {{ range .items }}
     <div class="product-showcase">
       <div class="product-text">
@@ -92,7 +124,7 @@
 </section>
 {{ end }}
 
-{{/* ── Clients — logo grid ── */}}
+{{/* ── Clients ── */}}
 {{ with .Params.clients }}
 <section class="section clients-section">
   <div class="container">
