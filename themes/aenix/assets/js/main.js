@@ -31,19 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
-  /* ---- Scroll spine progress ---- */
-  const spineProgress = document.querySelector('.scroll-spine-progress');
-  const spineDot = document.querySelector('.scroll-spine-dot');
-  if (spineProgress && spineDot) {
-    window.addEventListener('scroll', () => {
-      const scrollable = document.documentElement.scrollHeight - window.innerHeight;
-      if (scrollable <= 0) return;
-      const pct = Math.min(window.scrollY / scrollable, 1) * 100;
-      spineProgress.style.height = pct + '%';
-      spineDot.style.top = pct + '%';
-    }, { passive: true });
-  }
-
   /* ---- Reveal animations on scroll ---- */
   const reveals = document.querySelectorAll('.reveal');
   if (reveals.length > 0 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {

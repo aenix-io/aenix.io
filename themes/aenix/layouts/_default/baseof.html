@@ -44,13 +44,6 @@
 <body class="{{ with .Params.bodyClass }}{{ . }}{{ end }}">
   {{ partial "header.html" . }}
 
-  {{/* Scroll spine — vertical progress indicator */}}
-  <div class="scroll-spine" aria-hidden="true">
-    <div class="scroll-spine-track"></div>
-    <div class="scroll-spine-progress"></div>
-    <div class="scroll-spine-dot"></div>
-  </div>
-
   <main id="content">
     {{ block "main" . }}{{ end }}
   </main>
