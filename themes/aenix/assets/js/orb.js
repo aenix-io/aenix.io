@@ -1,6 +1,7 @@
-/* Aenix — Flow Field v9
-   Dense, layered, living infrastructure background.
-   Three depth layers. Density variation. Directional flow. */
+/* Aenix — Interactive Particle Field
+   Noise-driven particles with cursor attraction,
+   connection lines, and layered depth.
+   Premium infrastructure feel. */
 
 (function () {
   'use strict';
@@ -11,153 +12,275 @@
   if (!canvas) return;
 
   const ctx = canvas.getContext('2d');
-  let W, H;
-  let dpr = Math.min(window.devicePixelRatio || 1, 2);
-  let lines = [];
+  let W, H, dpr;
+  let particles = [];
   let raf = null;
   let time = 0;
 
-  /* Palette */
-  const PAL = [
-    [1, 165, 255],
-    [9, 113, 235],
-    [102, 27, 225],
-    [60, 180, 255],
-    [140, 100, 255],
-    [190, 200, 255],
+  /* Cursor state */
+  let mx = -9999, my = -9999; // offscreen default
+  let cmx = -9999, cmy = -9999; // smoothed
+  let cursorActive = false;
+
+  /* Detect mobile */
+  const isMobile = window.innerWidth < 768;
+  const PARTICLE_COUNT = isMobile ? 180 : 400;
+  const CONNECT_DIST = isMobile ? 0 : 100; // no lines on mobile
+  const CURSOR_RADIUS = 160;
+  const CURSOR_FORCE = 0.6;
+  const LERP_SPEED = 0.04;
+
+  /* Palette — brand colors */
+  const COLORS = [
+    [1, 165, 255],     // #01A5FF primary
+    [9, 113, 235],     // #0971EB secondary
+    [102, 27, 225],    // #661BE1 accent
+    [60, 190, 255],    // light cyan
+    [140, 100, 255],   // light purple
+    [200, 215, 255],   // near-white
   ];
 
   function pick(a) { return a[Math.floor(Math.random() * a.length)]; }
   function rand(a, b) { return a + Math.random() * (b - a); }
 
-  /* Density map: more lines in center-left, fewer at edges */
-  function densityBias() {
-    // Weight toward center and left (behind text area)
-    const x = Math.random();
-    const y = Math.random();
-    // Gaussian-ish toward center vertically
-    const vy = 0.5 + (Math.random() + Math.random() + Math.random() - 1.5) * 0.4;
-    return Math.max(0.05, Math.min(0.95, vy));
+  /* ============================================================
+     Simple 2D value noise (no dependencies)
+     ============================================================ */
+  const NOISE_SIZE = 256;
+  const noiseTable = new Float32Array(NOISE_SIZE);
+  for (let i = 0; i < NOISE_SIZE; i++) noiseTable[i] = Math.random();
+
+  function noiseLerp(a, b, t) { return a + (b - a) * t; }
+
+  function noise2d(x, y) {
+    const xi = Math.floor(x) & (NOISE_SIZE - 1);
+    const yi = Math.floor(y) & (NOISE_SIZE - 1);
+    const xf = x - Math.floor(x);
+    const yf = y - Math.floor(y);
+    const sx = xf * xf * (3 - 2 * xf); // smoothstep
+    const sy = yf * yf * (3 - 2 * yf);
+
+    const i00 = noiseTable[(xi + yi * 7) & (NOISE_SIZE - 1)];
+    const i10 = noiseTable[(xi + 1 + yi * 7) & (NOISE_SIZE - 1)];
+    const i01 = noiseTable[(xi + (yi + 1) * 7) & (NOISE_SIZE - 1)];
+    const i11 = noiseTable[(xi + 1 + (yi + 1) * 7) & (NOISE_SIZE - 1)];
+
+    return noiseLerp(
+      noiseLerp(i00, i10, sx),
+      noiseLerp(i01, i11, sx),
+      sy
+    );
   }
 
   /* ============================================================
-     FlowLine — a smooth directional curve across the viewport.
-     Has a depth layer (far/mid/near) affecting blur and alpha.
+     Particle
      ============================================================ */
-  class FlowLine {
-    constructor(layer) {
-      this.layer = layer; // 0=far, 1=mid, 2=near
-
-      // Vertical position with density clustering
-      this.y = densityBias();
-
-      // Wave shape
-      this.amp = layer === 0 ? rand(0.03, 0.10) : layer === 1 ? rand(0.02, 0.08) : rand(0.01, 0.06);
-      this.freq = rand(0.4, 1.8);
-      this.phase = rand(0, Math.PI * 2);
-
-      // Horizontal flow speed
-      this.scrollSpeed = rand(0.01, 0.04);
-
-      // Slight diagonal
-      this.tilt = rand(-0.05, 0.05);
-
-      // Color
-      const c = pick(PAL);
-      this.cr = c[0]; this.cg = c[1]; this.cb = c[2];
-
-      // Layer-based visual properties
-      if (layer === 0) {
-        // Far: soft, wide, subdued
-        this.alpha = rand(0.008, 0.022);
-        this.width = rand(1.5, 3.5);
-      } else if (layer === 1) {
-        // Mid: moderate, pulled back
-        this.alpha = rand(0.015, 0.05);
-        this.width = rand(0.5, 1.5);
-      } else {
-        // Near: sharper but still restrained
-        this.alpha = rand(0.03, 0.10);
-        this.width = rand(0.3, 0.9);
-      }
-
-      // Some accent lines (near layer only, 10%)
-      if (layer === 2 && Math.random() < 0.10) {
-        this.alpha = rand(0.10, 0.22);
-        this.width = rand(0.6, 1.4);
-        const bright = pick([[1,165,255],[60,180,255],[190,200,255]]);
-        this.cr = bright[0]; this.cg = bright[1]; this.cb = bright[2];
-      }
-
-      // Travelling pulse
-      this.pulseSpeed = rand(0.02, 0.06);
-      this.pulsePhase = rand(0, 1);
-      this.pulseWidth = layer === 0 ? rand(0.15, 0.35) : rand(0.08, 0.22);
+  class Particle {
+    constructor() {
+      this.reset(true);
     }
 
-    draw(t) {
-      const segs = 80;
-      const scroll = t * this.scrollSpeed;
+    reset(initial) {
+      // Layer: 0=far, 1=mid, 2=near
+      this.layer = Math.random() < 0.3 ? 0 : Math.random() < 0.5 ? 1 : 2;
 
-      // Pulse
-      const pulse = ((t * this.pulseSpeed + this.pulsePhase) % 1.0);
+      this.x = rand(0, W);
+      this.y = rand(0, H);
+      this.vx = 0;
+      this.vy = 0;
 
-      ctx.lineCap = 'round';
+      // Noise sampling offset (unique per particle)
+      this.noiseOffX = rand(0, 100);
+      this.noiseOffY = rand(0, 100);
 
-      let px, py;
+      // Base drift speed
+      this.baseSpeed = this.layer === 0 ? rand(0.15, 0.4) : this.layer === 1 ? rand(0.3, 0.7) : rand(0.5, 1.0);
 
-      for (let i = 0; i <= segs; i++) {
-        const f = i / segs;
+      // Visual
+      const c = pick(COLORS);
+      this.cr = c[0]; this.cg = c[1]; this.cb = c[2];
 
-        const x = f * W;
-        const wave = Math.sin(f * this.freq * Math.PI * 2 + this.phase + scroll) * this.amp;
-        const tiltOff = (f - 0.5) * this.tilt;
-        const y = (this.y + wave + tiltOff) * H;
+      if (this.layer === 0) {
+        this.alpha = rand(0.06, 0.15);
+        this.size = rand(1.0, 2.5);
+      } else if (this.layer === 1) {
+        this.alpha = rand(0.10, 0.25);
+        this.size = rand(0.8, 1.8);
+      } else {
+        this.alpha = rand(0.15, 0.40);
+        this.size = rand(0.5, 1.3);
+      }
 
-        if (i > 0) {
-          // Pulse
-          const pd = Math.min(Math.abs(f - pulse), Math.abs(f - pulse + 1), Math.abs(f - pulse - 1));
-          const pb = Math.max(0, 1 - pd / this.pulseWidth);
-          const pf = pb * pb;
+      // Bright accent particles (8%)
+      if (Math.random() < 0.08) {
+        this.alpha = rand(0.4, 0.7);
+        this.size = rand(1.0, 2.0);
+        const bright = pick([[1,165,255],[200,215,255],[60,190,255]]);
+        this.cr = bright[0]; this.cg = bright[1]; this.cb = bright[2];
+      }
+    }
 
-          // Horizontal edge fade
-          const edgeX = Math.min(f * 4, (1 - f) * 4, 1);
+    update(t) {
+      // Noise-driven flow
+      const scale = 0.003;
+      const n = noise2d(
+        (this.x * scale + this.noiseOffX + t * 0.1),
+        (this.y * scale + this.noiseOffY + t * 0.08)
+      );
+      const angle = n * Math.PI * 4; // noise → angle
 
-          // Vertical edge fade (darker at top/bottom edges)
-          const yNorm = this.y + wave + tiltOff;
-          const edgeY = Math.min(yNorm * 5, (1 - yNorm) * 5, 1);
+      this.vx += Math.cos(angle) * this.baseSpeed * 0.15;
+      this.vy += Math.sin(angle) * this.baseSpeed * 0.15;
 
-          const a = (this.alpha + this.alpha * pf * 2.5) * edgeX * Math.max(edgeY, 0);
-          const w = this.width * (0.7 + pf * 0.6) * dpr;
+      // Global drift (left to right + slight downward)
+      this.vx += 0.12;
+      this.vy += 0.02;
 
-          if (a > 0.002) {
-            ctx.beginPath();
-            ctx.moveTo(px, py);
-            ctx.lineTo(x, y);
-            ctx.strokeStyle = `rgba(${this.cr},${this.cg},${this.cb},${a})`;
-            ctx.lineWidth = w;
-            ctx.stroke();
-          }
+      // Cursor attraction
+      if (cursorActive) {
+        const dx = cmx - this.x;
+        const dy = cmy - this.y;
+        const distSq = dx * dx + dy * dy;
+        const radius = CURSOR_RADIUS * dpr;
+        if (distSq < radius * radius && distSq > 1) {
+          const dist = Math.sqrt(distSq);
+          const force = (1 - dist / radius) * CURSOR_FORCE * this.baseSpeed;
+          this.vx += (dx / dist) * force;
+          this.vy += (dy / dist) * force;
         }
+      }
 
-        px = x;
-        py = y;
+      // Friction
+      this.vx *= 0.92;
+      this.vy *= 0.92;
+
+      this.x += this.vx;
+      this.y += this.vy;
+
+      // Wrap around edges
+      if (this.x > W + 20) this.x = -20;
+      if (this.x < -20) this.x = W + 20;
+      if (this.y > H + 20) this.y = -20;
+      if (this.y < -20) this.y = H + 20;
+    }
+
+    draw() {
+      const r = this.size * dpr;
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${this.cr},${this.cg},${this.cb},${this.alpha})`;
+      ctx.fill();
+
+      // Soft glow on bright particles
+      if (this.alpha > 0.3) {
+        const gr = r * 4;
+        const g = ctx.createRadialGradient(this.x, this.y, 0, this.x, this.y, gr);
+        g.addColorStop(0, `rgba(${this.cr},${this.cg},${this.cb},${this.alpha * 0.15})`);
+        g.addColorStop(1, `rgba(${this.cr},${this.cg},${this.cb},0)`);
+        ctx.fillStyle = g;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, gr, 0, Math.PI * 2);
+        ctx.fill();
       }
     }
   }
 
-  /* --- Glow spots (painted once per frame) --- */
-  function drawGlowSpots() {
-    // Very subtle atmospheric glow only — focal CSS element handles main glow
-    const g1 = ctx.createRadialGradient(W * 0.4, H * 0.45, 0, W * 0.4, H * 0.45, W * 0.35);
-    g1.addColorStop(0, 'rgba(1,165,255,0.012)');
-    g1.addColorStop(0.5, 'rgba(9,113,235,0.006)');
+  /* ============================================================
+     Connection lines (near-layer only, spatial hashing)
+     ============================================================ */
+  const CELL_SIZE = 120; // px
+  let grid = {};
+
+  function buildGrid() {
+    grid = {};
+    for (const p of particles) {
+      if (p.layer < 2) continue; // only near-layer connects
+      const cx = Math.floor(p.x / (CELL_SIZE * dpr));
+      const cy = Math.floor(p.y / (CELL_SIZE * dpr));
+      const key = cx + ',' + cy;
+      if (!grid[key]) grid[key] = [];
+      grid[key].push(p);
+    }
+  }
+
+  function drawConnections() {
+    if (CONNECT_DIST === 0) return;
+
+    const maxDist = CONNECT_DIST * dpr;
+    const maxDistSq = maxDist * maxDist;
+
+    ctx.lineCap = 'round';
+
+    for (const key in grid) {
+      const cell = grid[key];
+      const [cx, cy] = key.split(',').map(Number);
+
+      // Check this cell + 4 neighbors (right, bottom, bottom-right, bottom-left)
+      const neighbors = [
+        key,
+        (cx + 1) + ',' + cy,
+        cx + ',' + (cy + 1),
+        (cx + 1) + ',' + (cy + 1),
+        (cx - 1) + ',' + (cy + 1),
+      ];
+
+      for (const p of cell) {
+        let connections = 0;
+        for (const nk of neighbors) {
+          const ncell = grid[nk];
+          if (!ncell) continue;
+          for (const q of ncell) {
+            if (q === p || connections >= 3) continue;
+            const dx = p.x - q.x;
+            const dy = p.y - q.y;
+            const distSq = dx * dx + dy * dy;
+            if (distSq < maxDistSq) {
+              const alpha = (1 - Math.sqrt(distSq) / maxDist) * 0.12;
+              ctx.beginPath();
+              ctx.moveTo(p.x, p.y);
+              ctx.lineTo(q.x, q.y);
+              ctx.strokeStyle = `rgba(1,165,255,${alpha})`;
+              ctx.lineWidth = 0.5 * dpr;
+              ctx.stroke();
+              connections++;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* ============================================================
+     Cursor glow (canvas-drawn)
+     ============================================================ */
+  function drawCursorGlow() {
+    if (!cursorActive) return;
+    const r = 180 * dpr;
+    const g = ctx.createRadialGradient(cmx, cmy, 0, cmx, cmy, r);
+    g.addColorStop(0, 'rgba(1,165,255,0.06)');
+    g.addColorStop(0.4, 'rgba(9,113,235,0.03)');
+    g.addColorStop(1, 'rgba(0,0,0,0)');
+    ctx.fillStyle = g;
+    ctx.beginPath();
+    ctx.arc(cmx, cmy, r, 0, Math.PI * 2);
+    ctx.fill();
+  }
+
+  /* ============================================================
+     Ambient background
+     ============================================================ */
+  function drawAmbient() {
+    // Center glow
+    const g1 = ctx.createRadialGradient(W * 0.45, H * 0.5, 0, W * 0.45, H * 0.5, W * 0.4);
+    g1.addColorStop(0, 'rgba(1,165,255,0.015)');
+    g1.addColorStop(0.5, 'rgba(9,113,235,0.008)');
     g1.addColorStop(1, 'rgba(0,0,0,0)');
     ctx.fillStyle = g1;
     ctx.fillRect(0, 0, W, H);
 
-    const g2 = ctx.createRadialGradient(W * 0.7, H * 0.55, 0, W * 0.7, H * 0.55, W * 0.25);
-    g2.addColorStop(0, 'rgba(102,27,225,0.01)');
+    // Right purple
+    const g2 = ctx.createRadialGradient(W * 0.8, H * 0.6, 0, W * 0.8, H * 0.6, W * 0.25);
+    g2.addColorStop(0, 'rgba(102,27,225,0.012)');
     g2.addColorStop(1, 'rgba(0,0,0,0)');
     ctx.fillStyle = g2;
     ctx.fillRect(0, 0, W, H);
@@ -165,36 +288,22 @@
 
   /* --- Edge darkening --- */
   function drawEdges() {
-    // Top fade
-    const gt = ctx.createLinearGradient(0, 0, 0, H * 0.15);
-    gt.addColorStop(0, 'rgba(11,15,26,0.4)');
+    const gt = ctx.createLinearGradient(0, 0, 0, H * 0.12);
+    gt.addColorStop(0, 'rgba(11,15,26,0.5)');
     gt.addColorStop(1, 'rgba(11,15,26,0)');
     ctx.fillStyle = gt;
-    ctx.fillRect(0, 0, W, H * 0.15);
+    ctx.fillRect(0, 0, W, H * 0.12);
 
-    // Bottom fade
-    const gb = ctx.createLinearGradient(0, H * 0.85, 0, H);
+    const gb = ctx.createLinearGradient(0, H * 0.88, 0, H);
     gb.addColorStop(0, 'rgba(11,15,26,0)');
     gb.addColorStop(1, 'rgba(11,15,26,0.5)');
     ctx.fillStyle = gb;
-    ctx.fillRect(0, H * 0.85, W, H * 0.15);
-
-    // Left fade
-    const gl = ctx.createLinearGradient(0, 0, W * 0.08, 0);
-    gl.addColorStop(0, 'rgba(11,15,26,0.3)');
-    gl.addColorStop(1, 'rgba(11,15,26,0)');
-    ctx.fillStyle = gl;
-    ctx.fillRect(0, 0, W * 0.08, H);
-
-    // Right fade
-    const gr = ctx.createLinearGradient(W * 0.92, 0, W, 0);
-    gr.addColorStop(0, 'rgba(11,15,26,0)');
-    gr.addColorStop(1, 'rgba(11,15,26,0.3)');
-    ctx.fillStyle = gr;
-    ctx.fillRect(W * 0.92, 0, W * 0.08, H);
+    ctx.fillRect(0, H * 0.88, W, H * 0.12);
   }
 
-  /* --- Setup --- */
+  /* ============================================================
+     Setup & Loop
+     ============================================================ */
   function resize() {
     const rect = canvas.getBoundingClientRect();
     dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -206,47 +315,61 @@
 
   function init() {
     resize();
-    lines = [];
-
-    // Layer 0 — far: fewer, wider, blurry feel
-    for (let i = 0; i < 20; i++) lines.push(new FlowLine(0));
-    // Layer 1 — mid
-    for (let i = 0; i < 35; i++) lines.push(new FlowLine(1));
-    // Layer 2 — near: most lines, sharpest
-    for (let i = 0; i < 40; i++) lines.push(new FlowLine(2));
-
-    // Sort by layer (far drawn first)
-    lines.sort((a, b) => a.layer - b.layer);
+    particles = [];
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push(new Particle());
+    }
   }
 
   function frame() {
-    time += 0.008;
+    time += 0.004;
+
+    // Smooth cursor
+    if (cursorActive) {
+      cmx += (mx - cmx) * LERP_SPEED;
+      cmy += (my - cmy) * LERP_SPEED;
+    }
+
     ctx.clearRect(0, 0, W, H);
 
-    // Glow spots first (under lines)
-    drawGlowSpots();
+    drawAmbient();
 
-    // Far layer lines
-    for (const l of lines) {
-      if (l.layer === 0) l.draw(time);
-    }
+    // Update & draw particles by layer
+    for (const p of particles) p.update(time);
 
-    // Mid layer
-    for (const l of lines) {
-      if (l.layer === 1) l.draw(time);
-    }
+    // Build spatial grid for connections
+    if (CONNECT_DIST > 0) buildGrid();
 
-    // Near layer (on top)
-    for (const l of lines) {
-      if (l.layer === 2) l.draw(time);
-    }
+    // Draw far layer
+    for (const p of particles) { if (p.layer === 0) p.draw(); }
+    // Draw mid layer
+    for (const p of particles) { if (p.layer === 1) p.draw(); }
+    // Draw connections (near layer only)
+    if (CONNECT_DIST > 0) drawConnections();
+    // Draw near layer
+    for (const p of particles) { if (p.layer === 2) p.draw(); }
 
-    // Edge darkening on top
+    drawCursorGlow();
     drawEdges();
 
     raf = requestAnimationFrame(frame);
   }
 
+  /* --- Cursor tracking --- */
+  const hero = document.getElementById('hero');
+  if (hero) {
+    hero.addEventListener('mousemove', e => {
+      const rect = canvas.getBoundingClientRect();
+      mx = (e.clientX - rect.left) * dpr;
+      my = (e.clientY - rect.top) * dpr;
+      cursorActive = true;
+    });
+    hero.addEventListener('mouseleave', () => {
+      cursorActive = false;
+    });
+  }
+
+  /* --- Lifecycle --- */
   const obs = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) { if (!raf) raf = requestAnimationFrame(frame); }

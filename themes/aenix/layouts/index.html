@@ -14,13 +14,8 @@
     <div class="hero-vignette"></div>
   </div>
 
-  {{/* Mid-layer: volumetric glow focal point */}}
-  <div class="hero-focal" aria-hidden="true" data-parallax="0.02">
-    <div class="focal-core"></div>
-    <div class="focal-haze focal-haze--1"></div>
-    <div class="focal-haze focal-haze--2"></div>
-    <div class="focal-haze focal-haze--3"></div>
-  </div>
+  {{/* Horizon arc — glowing line */}}
+  <div class="hero-horizon-arc" aria-hidden="true"></div>
 
   <div class="hero-layout container">
     <div class="hero-content">
@@ -48,6 +43,7 @@
 <section class="section section--alt" id="services">
   <div class="container">
     <div class="section-header">
+      <span class="section-number">01</span>
       <p class="section-lead">{{ .subtitle }}</p>
     </div>
     <div class="services-grid">
@@ -81,6 +77,7 @@
   <div style="position:absolute;top:-100px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(1,165,255,0.06) 0%,transparent 60%);border-radius:50%;pointer-events:none"></div>
   <div style="position:absolute;bottom:-100px;left:-150px;width:400px;height:400px;background:radial-gradient(circle,rgba(102,27,225,0.05) 0%,transparent 60%);border-radius:50%;pointer-events:none"></div>
   <div class="container" style="position:relative;z-index:1">
+    <span class="section-number">02</span>
     {{ range .items }}
     <div class="product-showcase">
       <div class="product-text">
@@ -108,6 +105,7 @@
 <section class="section section--alt" id="works">
   <div class="container">
     <div class="section-header">
+      <span class="section-number">03</span>
       <h2>{{ .title | default "Featured Works" }}</h2>
     </div>
     <div class="featured-grid">
@@ -129,6 +127,7 @@
 <section class="section clients-section">
   <div class="container">
     <div class="section-header">
+      <span class="section-number">04</span>
       <h2>{{ .title | default "Our Clients" }}</h2>
     </div>
     <div class="clients-grid">
@@ -146,6 +145,7 @@
 {{ with .Params.cta }}
 <section class="section cta-banner">
   <div class="container">
+    <span class="section-number">05</span>
     <h2 class="cta-heading">{{ .title }}</h2>
     <p class="cta-description">{{ .description }}</p>
     <a href="{{ .button_url | default "/contact/" }}" class="btn btn-primary btn-lg">{{ .button_text | default "Let's Talk" }}</a>
