@@ -8,15 +8,24 @@ team:
   - name: "Andrei Kvapil"
     role: "CEO"
     photo: "/images/uploads/2023/12/maxim_filatov-defconf_cz_mini_2022-brno-2022_06_02-68-addbg2.jpg"
+    links:
+      github: "kvaps"
+      linkedin: "kvapss"
   - name: "Timur Tukaev"
     role: "COO"
     photo: "/images/uploads/2024/07/image-1.png"
+    links:
+      linkedin: "timur-tukaev"
   - name: "Viktoriia Kvapil"
     role: "Art Director"
     photo: "/images/uploads/2023/12/2023-12-19-20.14.24.jpg"
+    links:
+      linkedin: "kvapsova"
   - name: "Timofei Larkin"
     role: "Head of Development"
     photo: "/images/uploads/2025/07/Tim.png"
+    links:
+      github: "deckhouse"
   - name: "Julia Pavlova"
     role: "Drama Manager"
     photo: "/images/uploads/2025/07/YP2.png"
