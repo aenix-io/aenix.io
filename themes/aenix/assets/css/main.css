@@ -1058,6 +1058,7 @@ img { max-width: 100%; height: auto; display: block; }
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
+  opacity: 1;
 }
 
 /* ==========================================================================

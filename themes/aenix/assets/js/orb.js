@@ -101,20 +101,20 @@
       this.cr = c[0]; this.cg = c[1]; this.cb = c[2];
 
       if (this.layer === 0) {
-        this.alpha = rand(0.06, 0.15);
-        this.size = rand(1.0, 2.5);
+        this.alpha = rand(0.08, 0.20);
+        this.size = rand(1.2, 2.8);
       } else if (this.layer === 1) {
-        this.alpha = rand(0.10, 0.25);
-        this.size = rand(0.8, 1.8);
+        this.alpha = rand(0.14, 0.32);
+        this.size = rand(1.0, 2.0);
       } else {
-        this.alpha = rand(0.15, 0.40);
-        this.size = rand(0.5, 1.3);
+        this.alpha = rand(0.20, 0.50);
+        this.size = rand(0.7, 1.5);
       }
 
-      // Bright accent particles (8%)
-      if (Math.random() < 0.08) {
-        this.alpha = rand(0.4, 0.7);
-        this.size = rand(1.0, 2.0);
+      // Bright accent particles (10%)
+      if (Math.random() < 0.10) {
+        this.alpha = rand(0.5, 0.8);
+        this.size = rand(1.2, 2.2);
         const bright = pick([[1,165,255],[200,215,255],[60,190,255]]);
         this.cr = bright[0]; this.cg = bright[1]; this.cb = bright[2];
       }
@@ -235,12 +235,12 @@
             const dy = p.y - q.y;
             const distSq = dx * dx + dy * dy;
             if (distSq < maxDistSq) {
-              const alpha = (1 - Math.sqrt(distSq) / maxDist) * 0.12;
+              const alpha = (1 - Math.sqrt(distSq) / maxDist) * 0.18;
               ctx.beginPath();
               ctx.moveTo(p.x, p.y);
               ctx.lineTo(q.x, q.y);
               ctx.strokeStyle = `rgba(1,165,255,${alpha})`;
-              ctx.lineWidth = 0.5 * dpr;
+              ctx.lineWidth = 0.7 * dpr;
               ctx.stroke();
               connections++;
             }
