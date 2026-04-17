@@ -42,14 +42,14 @@
 {{ with .Params.services }}
 <section class="section section--alt" id="services">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-number">01</span>
       <p class="section-lead">{{ .subtitle }}</p>
     </div>
-    <div class="services-grid">
+    <div class="services-grid reveal-stagger">
       {{ $icons := slice "cloud" "terminal" "shield" "search" "monitor" "heart" }}
       {{ range $i, $item := .items }}
-      <div class="service-card">
+      <div class="service-card reveal" style="--i:{{ $i }};">
         <div class="service-card-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             {{ if eq $i 0 }}<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
@@ -77,9 +77,9 @@
   <div style="position:absolute;top:-100px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(1,165,255,0.06) 0%,transparent 60%);border-radius:50%;pointer-events:none"></div>
   <div style="position:absolute;bottom:-100px;left:-150px;width:400px;height:400px;background:radial-gradient(circle,rgba(102,27,225,0.05) 0%,transparent 60%);border-radius:50%;pointer-events:none"></div>
   <div class="container" style="position:relative;z-index:1">
-    <span class="section-number">02</span>
+    <span class="section-number reveal">02</span>
     {{ range .items }}
-    <div class="product-showcase">
+    <div class="product-showcase reveal">
       <div class="product-text">
         <h2>{{ .name }}</h2>
         <p>{{ .description }}</p>
@@ -104,14 +104,14 @@
 {{ with .Params.featured_works }}
 <section class="section section--alt" id="works">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-number">03</span>
       <h2>{{ .title | default "Featured Works" }}</h2>
     </div>
-    <div class="featured-grid">
+    <div class="featured-grid reveal-stagger">
       {{ range $i, $item := .items }}
       {{ $colors := slice "#0971EB" "#661BE1" "#01A5FF" }}
-      <a href="{{ $item.url }}" class="featured-card" style="--accent: {{ index $colors $i }}">
+      <a href="{{ $item.url }}" class="featured-card reveal" style="--accent: {{ index $colors $i }};--i:{{ $i }}">
         <div class="featured-card-number">{{ printf "%02d" (add $i 1) }}</div>
         <h3>{{ $item.title }}</h3>
         <span class="featured-card-arrow">&rarr;</span>
@@ -126,11 +126,11 @@
 {{ with .Params.clients }}
 <section class="section clients-section">
   <div class="container">
-    <div class="section-header">
+    <div class="section-header reveal">
       <span class="section-number">04</span>
       <h2>{{ .title | default "Our Clients" }}</h2>
     </div>
-    <div class="clients-grid">
+    <div class="clients-grid reveal">
       {{ range .items }}
       <a href="{{ .url }}" target="_blank" rel="noopener" class="client-logo" title="{{ .name }}">
         <img src="/images/clients/{{ .logo }}.png" alt="{{ .name }}" loading="lazy">
@@ -145,8 +145,8 @@
 {{ with .Params.cta }}
 <section class="section cta-banner">
   <div class="container">
-    <span class="section-number">05</span>
-    <h2 class="cta-heading">{{ .title }}</h2>
+    <span class="section-number reveal">05</span>
+    <h2 class="cta-heading reveal">{{ .title }}</h2>
     <p class="cta-description">{{ .description }}</p>
     <a href="{{ .button_url | default "/contact/" }}" class="btn btn-primary btn-lg">{{ .button_text | default "Let's Talk" }}</a>
   </div>
