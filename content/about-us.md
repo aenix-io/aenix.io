@@ -53,6 +53,7 @@ community_champions:
       github: "nbykov0"
 ---
 
+{{< two-cols >}}
 ## Our Story
 
 ![Our Story](/images/uploads/2023/12/1-edited.png)
@@ -60,7 +61,9 @@ community_champions:
 We started as a team of passionate professionals, the opinion leaders with modern visions, deeply connected to diverse IT communities. We committed to transforming our ideas into successful projects.
 
 As things fell into place, clients were drawn to us, paving the way for the establishment of an organization focused on delivering success and quality service to an increasing number of satisfied customers.
+{{< /two-cols >}}
 
+{{< two-cols >}}
 ## Open to community
 
 ![Open to Community](/images/uploads/2023/12/2-edited.png)
@@ -68,6 +71,7 @@ As things fell into place, clients were drawn to us, paving the way for the esta
 We proudly uphold a strong commitment to Open Source projects, recognizing their pivotal role in advancing technology and fostering community collaboration. We are staunch advocates for technological innovation and knowledge sharing.
 
 Our involvement extends to technical advocacy and regular participation in conferences. This allows us to both learn from and influence the evolving tech landscape, staying at the forefront of technological advancements and community-driven development.
+{{< /two-cols >}}
 
 ### Tailored Solutions
 
