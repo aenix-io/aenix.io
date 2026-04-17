@@ -1,31 +1,37 @@
 {{ define "main" }}
-<section class="page-header">
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+  </div>
   <div class="container">
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+    <h1 class="page-hero-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
   </div>
 </section>
 
-<div class="container">
-  {{ .Content }}
+<div class="section">
+  <div class="container">
+    {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . }}</div>{{ end }}
 
-  {{ $pages := .Pages }}
-  {{ if $pages }}
-  <div class="page-grid">
-    {{ range $pages }}
-    <article class="card">
-      {{ with .Params.image }}
-      <div class="card-image">
-        <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
-      </div>
+    {{ $pages := .Pages }}
+    {{ if $pages }}
+    <div class="card-grid">
+      {{ range $pages }}
+      <article class="card">
+        {{ with .Params.image }}
+        <div class="card-image">
+          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="card-body">
+          <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          {{ with .Description }}<p class="card-description">{{ . }}</p>{{ end }}
+        </div>
+      </article>
       {{ end }}
-      <div class="card-body">
-        <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-        {{ with .Description }}<p class="card-description">{{ . }}</p>{{ end }}
-      </div>
-    </article>
+    </div>
     {{ end }}
   </div>
-  {{ end }}
 </div>
 {{ end }}

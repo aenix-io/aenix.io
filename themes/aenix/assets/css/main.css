@@ -728,8 +728,62 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-page h1 { font-size: clamp(2rem, 4vw, 3rem); }
 
 /* ==========================================================================
-   PAGE HEADER
+   PAGE HERO — inner pages banner
    ========================================================================== */
+.page-hero {
+  position: relative;
+  padding: 6rem 0 4rem;
+  text-align: center;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+.page-hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.page-hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 10%, transparent 70%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, black 10%, transparent 70%);
+}
+.page-hero-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(1,165,255,0.06) 0%, rgba(102,27,225,0.03) 40%, transparent 70%);
+  border-radius: 50%;
+}
+.page-hero-title {
+  position: relative;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+.page-hero-subtitle {
+  position: relative;
+  font-size: 1.0625rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+.page-hero-cta {
+  position: relative;
+  margin-top: 1.5rem;
+}
+
+/* Legacy fallback */
 .page-header {
   padding: 5rem 0 3rem;
   background: var(--bg-secondary);
@@ -748,8 +802,14 @@ img { max-width: 100%; height: auto; display: block; }
    ========================================================================== */
 .page-content {
   padding: 3rem 0 4rem;
-  max-width: 760px;
+  max-width: 800px;
   margin: 0 auto;
+}
+.page-content img {
+  max-width: 100%;
+  border-radius: var(--radius-lg);
+  margin: 2rem 0;
+  border: 1px solid var(--border-subtle);
 }
 .page-content h2 { margin-top: 3rem; margin-bottom: 0.75rem; }
 .page-content h3 { margin-top: 2rem; margin-bottom: 0.5rem; }
@@ -1109,21 +1169,22 @@ img { max-width: 100%; height: auto; display: block; }
    ========================================================================== */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
-  background: var(--bg-glass);
-  border: 1px solid var(--border-subtle);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: all var(--duration) var(--ease);
+  transition: all 0.3s var(--ease);
+  box-shadow: var(--glass-shadow);
 }
 .card:hover {
-  border-color: var(--border-hover);
-  box-shadow: var(--shadow-card);
-  transform: translateY(-2px);
+  border-color: var(--glass-border-hover);
+  box-shadow: var(--glass-shadow), var(--shadow-card);
+  transform: translateY(-3px);
 }
 
 .card-image {
@@ -1157,25 +1218,33 @@ img { max-width: 100%; height: auto; display: block; }
    ========================================================================== */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2.5rem;
+  margin: 3rem 0;
 }
 .team-card { text-align: center; }
 .team-photo {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto 0.75rem;
+  margin: 0 auto 1rem;
   border: 2px solid var(--border-default);
-  transition: border-color 0.2s;
+  transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
 }
-.team-card:hover .team-photo { border-color: var(--brand-primary); }
+.team-card:hover .team-photo {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 20px rgba(1,165,255,0.15);
+}
 .team-photo img { width: 100%; height: 100%; object-fit: cover; }
-.team-name { font-size: 0.9375rem; margin-bottom: 0.125rem; }
+.team-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
 .team-role {
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--text-muted);
   font-family: var(--font-mono);
 }
