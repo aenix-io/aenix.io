@@ -83,13 +83,15 @@
   font-size: 14px;
   font-weight: 700;
   border-bottom: 1px solid var(--border-default);
-  /* Stick below the site header (72px tall), not at viewport top */
-  position: sticky; top: 72px; z-index: 20;
+  /* Stick to viewport top and cover the site header (z:100) */
+  position: sticky; top: 0; z-index: 101;
   padding: 20px 18px;
   box-shadow: 0 1px 0 var(--border-default);
 }
 .cozy-pricing thead th:first-child {
   background: #0F1525;
+  /* Corner cell must stay above both the site header and body-sticky first column */
+  z-index: 102;
 }
 .cozy-pricing td:first-child, .cozy-pricing th:first-child {
   text-align: left;
