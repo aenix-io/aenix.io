@@ -88,35 +88,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const ERASE_DUR = 900;
 
     const generateCloud = () => {
-      const baseY = 465 + rand(-10, 10);
-      const leftX = 80 + rand(-10, 10);
-      const rightX = 720 + rand(-10, 10);
-      const minY = 155 + rand(-20, 35);
-      const N = 3 + Math.floor(Math.random() * 3);
+      const baseY = 465 + rand(-8, 8);
+      const leftX = 90 + rand(-8, 8);
+      const rightX = 710 + rand(-8, 8);
+      const minY = 150 + rand(-15, 15);
+      const N = 4 + Math.floor(Math.random() * 2);
 
       const cloudPts = [];
-      cloudPts.push({x: leftX, y: baseY + rand(-5, 5)});
-      cloudPts.push({x: leftX - 25, y: baseY - 90 + rand(-15, 15)});
-      cloudPts.push({x: leftX + 20, y: baseY - 175 + rand(-30, 30)});
-      const spanLeft = leftX + 80;
-      const spanRight = rightX - 80;
+      cloudPts.push({x: leftX, y: baseY + rand(-4, 4)});
+      cloudPts.push({x: leftX - 35, y: baseY - 80 + rand(-10, 10)});
+      cloudPts.push({x: leftX + 10, y: baseY - 180 + rand(-15, 15)});
+      const spanLeft = leftX + 70;
+      const spanRight = rightX - 70;
       const span = spanRight - spanLeft;
       for (let i = 0; i < N; i++) {
         const t = (i + 0.5) / N;
-        const x = spanLeft + t * span + rand(-15, 15);
-        const tall = Math.random() < 0.4;
-        const y = minY + (tall ? rand(-35, 15) : rand(30, 120));
+        const x = spanLeft + t * span + rand(-10, 10);
+        const y = minY + rand(-20, 25);
         cloudPts.push({x, y});
         if (i < N - 1) {
           const vt = (i + 1) / N;
-          const vx = spanLeft + vt * span + rand(-10, 10);
-          const vy = y + 40 + rand(0, 35);
+          const vx = spanLeft + vt * span + rand(-8, 8);
+          const vy = minY + 70 + rand(-10, 15);
           cloudPts.push({x: vx, y: vy});
         }
       }
-      cloudPts.push({x: rightX - 20, y: baseY - 175 + rand(-30, 30)});
-      cloudPts.push({x: rightX + 25, y: baseY - 90 + rand(-15, 15)});
-      cloudPts.push({x: rightX, y: baseY + rand(-5, 5)});
+      cloudPts.push({x: rightX - 10, y: baseY - 180 + rand(-15, 15)});
+      cloudPts.push({x: rightX + 35, y: baseY - 80 + rand(-10, 10)});
+      cloudPts.push({x: rightX, y: baseY + rand(-4, 4)});
 
       const cloudD = smoothClosed(cloudPts);
       const ghostD = smoothClosed(cloudPts.map(p => ({x: p.x + rand(-3, 3), y: p.y + rand(-3, 3)})));
