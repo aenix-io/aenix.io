@@ -26,7 +26,10 @@
           </li>
           {{ else }}
           <li class="nav-item{{ if .Params.cta }} nav-item--cta{{ end }}">
-            <a href="{{ .URL }}" class="nav-link{{ if .Params.cta }} nav-link--cta{{ end }}">{{ .Name }}</a>
+            <a href="{{ .URL }}" class="nav-link{{ if .Params.cta }} nav-link--cta{{ end }}"{{ with .Params.external }} target="_blank" rel="noopener"{{ end }}>
+              {{ .Name }}
+              {{ with .Params.external }}<svg class="external-icon" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3.5 1.5h7v7M10.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>{{ end }}
+            </a>
           </li>
           {{ end }}
         {{ end }}
@@ -61,7 +64,7 @@
         </li>
         {{ else }}
         <li class="mobile-nav-item">
-          <a href="{{ .URL }}" class="mobile-nav-link">{{ .Name }}</a>
+          <a href="{{ .URL }}" class="mobile-nav-link"{{ with .Params.external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
         </li>
         {{ end }}
       {{ end }}
