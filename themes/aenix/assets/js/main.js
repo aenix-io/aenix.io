@@ -82,13 +82,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const generateCloud = () => {
       const baseY = 465 + rand(-6, 6);
-      const N = 3 + Math.floor(Math.random() * 4); // total domes 3..6
+      const N = 3 + Math.floor(Math.random() * 3); // total domes 3..5
 
       // N distinct radii drawn from N non-overlapping size buckets. No
       // interior pinning, no peak ratio: any circle can be the biggest
-      // and can sit anywhere in the chain.
-      const rMin = 60;
-      const rMax = [160, 145, 125, 110][Math.min(N - 3, 3)];
+      // and can sit anywhere in the chain. Roughly doubled from the
+      // previous range so the cloud reads much larger.
+      const rMin = 120;
+      const rMax = [320, 290, 250][Math.min(N - 3, 2)];
       const step = (rMax - rMin) / N;
       const radii = [];
       for (let i = 0; i < N; i++) {
@@ -104,8 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const allCircles = radii.map((r) => ({ r, cy: baseY - r }));
 
       // Packing factors — tighter when there are more domes so the
-      // overall width stays inside the viewBox.
-      const GAP = [0.82, 0.78, 0.72, 0.68][Math.min(N - 3, 3)];
+      // overall width stays manageable.
+      const GAP = [0.82, 0.78, 0.72][Math.min(N - 3, 2)];
 
       const xPositions = [0];
       for (let i = 1; i < N; i++) {
