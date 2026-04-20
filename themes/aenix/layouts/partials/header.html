@@ -40,31 +40,31 @@
       <span class="hamburger"></span>
     </button>
   </div>
-
-  {{/* Mobile menu */}}
-  <div class="mobile-menu" aria-hidden="true">
-    <nav aria-label="Mobile navigation">
-      <ul class="mobile-nav-list">
-        {{ range .Site.Menus.main }}
-          {{ if .HasChildren }}
-          <li class="mobile-nav-item has-children">
-            <button class="mobile-nav-link" aria-expanded="false">
-              {{ .Name }}
-              <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <ul class="mobile-submenu">
-              {{ range .Children }}
-              <li><a href="{{ .URL }}"{{ with .Params.external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a></li>
-              {{ end }}
-            </ul>
-          </li>
-          {{ else }}
-          <li class="mobile-nav-item">
-            <a href="{{ .URL }}" class="mobile-nav-link">{{ .Name }}</a>
-          </li>
-          {{ end }}
-        {{ end }}
-      </ul>
-    </nav>
-  </div>
 </header>
+
+{{/* Mobile menu — kept outside <header> so position:fixed escapes the sticky + backdrop-filter containing block */}}
+<div class="mobile-menu" aria-hidden="true">
+  <nav aria-label="Mobile navigation">
+    <ul class="mobile-nav-list">
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <li class="mobile-nav-item has-children">
+          <button class="mobile-nav-link" aria-expanded="false">
+            {{ .Name }}
+            <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="mobile-submenu">
+            {{ range .Children }}
+            <li><a href="{{ .URL }}"{{ with .Params.external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </li>
+        {{ else }}
+        <li class="mobile-nav-item">
+          <a href="{{ .URL }}" class="mobile-nav-link">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </nav>
+</div>
