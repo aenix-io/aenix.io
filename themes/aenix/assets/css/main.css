@@ -388,6 +388,8 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text-primary);
 }
 
+.dropdown-link { white-space: nowrap; }
+
 .external-icon { opacity: 0.3; }
 
 .header-actions { display: flex; align-items: center; gap: 12px; }
