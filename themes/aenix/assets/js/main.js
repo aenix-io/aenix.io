@@ -78,42 +78,57 @@ document.addEventListener('DOMContentLoaded', () => {
         : { x: px - h * ux, y: y2 };
     };
 
+    const VIEWBOX_W = 800;
+
     const generateCloud = () => {
       const baseY = 465 + rand(-6, 6);
-      const leftX = 90 + rand(-6, 6);
-      const rightX = 710 + rand(-6, 6);
       const pillH = 110 + rand(-6, 6);
       const topLine = baseY - pillH;
       const cornerR = pillH / 2;
-      const N = 4;
+      const N = 3 + Math.floor(Math.random() * 4); // 3..6
 
-      // Four overlapping circles on top of a pill-shaped base. Radii follow
-      // a small → medium → BIG → medium-small profile, matching the classic
-      // cartoon cloud reference. The base is a rectangle with fully rounded
-      // left/right sides (semicircular end caps, radius cornerR).
-      const radii = [
-        58 + rand(-6, 6),
-        82 + rand(-8, 8),
-        125 + rand(-10, 10),
-        72 + rand(-8, 8),
-      ];
-      const xRatios = [0.12, 0.32, 0.62, 0.88];
+      // N distinct radii drawn from N non-overlapping size buckets so
+      // every dome ends up visibly different from the others. Bucket
+      // range shrinks as N grows so the packed cloud fits the viewBox.
+      const rMin = 50;
+      const rMax = [135, 130, 115, 100][Math.min(N - 3, 3)];
+      const step = (rMax - rMin) / N;
+      const radii = [];
+      for (let i = 0; i < N; i++) {
+        radii.push(rMin + i * step + rand(0, step * 0.6));
+      }
+      // Fisher–Yates shuffle so each position gets a random size
+      for (let i = radii.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [radii[i], radii[j]] = [radii[j], radii[i]];
+      }
 
-      // The top of the pill runs between (leftX + cornerR, topLine) and
-      // (rightX - cornerR, topLine); humps sit on this flat segment.
+      // Overlap factor: adjacent centers sit at GAP * (r_i + r_{i+1})
+      // apart. Tighter packing for more domes keeps total width in check.
+      const GAP = [0.80, 0.78, 0.74, 0.70][Math.min(N - 3, 3)];
+
+      // Pack left-to-right
+      const offsets = [0];
+      for (let i = 1; i < N; i++) {
+        offsets.push(offsets[i - 1] + (radii[i - 1] + radii[i]) * GAP);
+      }
+      const packedW = offsets[N - 1] + radii[0] + radii[N - 1];
+      const totalW = packedW + 2 * cornerR;
+
+      // Centre the cloud horizontally in the viewBox
+      const leftX = (VIEWBOX_W - totalW) / 2;
+      const rightX = leftX + totalW;
       const humpLeftX = leftX + cornerR;
       const humpRightX = rightX - cornerR;
-      const humpSpan = humpRightX - humpLeftX;
 
-      const circles = xRatios.map((t, i) => ({
-        cx: humpLeftX + t * humpSpan + rand(-5, 5),
-        cy: topLine, // all on the top line for clean merge with pill
-        r: radii[i],
+      // Place circles so the leftmost extent of circle 0 = humpLeftX
+      // and the rightmost extent of circle N-1 = humpRightX.
+      const firstCx = humpLeftX + radii[0];
+      const circles = radii.map((r, i) => ({
+        cx: firstCx + offsets[i],
+        cy: topLine,
+        r,
       }));
-      // Lock first/last circle positions so their left/right extents
-      // coincide exactly with the pill's flat-top ends.
-      circles[0].cx = humpLeftX + circles[0].r;
-      circles[N - 1].cx = humpRightX - circles[N - 1].r;
 
       // Traverse the silhouette clockwise on screen. Every arc uses
       // sweep-flag=0 (counter-clockwise on screen when walked forward),
