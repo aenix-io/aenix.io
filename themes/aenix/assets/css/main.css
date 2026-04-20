@@ -1274,6 +1274,8 @@ img { max-width: 100%; height: auto; display: block; }
   margin: 0 auto 1rem;
   border: 2px solid var(--border-default);
   transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  isolation: isolate;
+  transform: translateZ(0);
 }
 .team-photo img,
 .page-content .team-photo img {
@@ -1281,10 +1283,11 @@ img { max-width: 100%; height: auto; display: block; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  max-width: none;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  border-radius: 50% !important;
+  max-width: none !important;
 }
 .team-card:hover .team-photo {
   border-color: var(--brand-primary);
