@@ -82,7 +82,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const generateCloud = () => {
       const baseY = 465 + rand(-6, 6);
-      const N = 3 + Math.floor(Math.random() * 4); // total domes 3..6
+      // Weighted pick with a bias toward 4 domes (~45%), the rest split
+      // across 3 / 5 / 6.
+      const pickN = () => {
+        const r = Math.random();
+        if (r < 0.45) return 4;
+        if (r < 0.67) return 3;
+        if (r < 0.87) return 5;
+        return 6;
+      };
+      const N = pickN();
 
       // N distinct radii drawn from N non-overlapping size buckets.
       const rMin = 60;
