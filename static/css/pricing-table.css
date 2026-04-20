@@ -83,15 +83,15 @@
   font-size: 14px;
   font-weight: 700;
   border-bottom: 1px solid var(--border-default);
-  /* Stick to viewport top and cover the site header (z:100) */
-  position: sticky; top: 0; z-index: 101;
+  /* Stick just below the site header (height 60px in scrolled state, z:100) */
+  position: sticky; top: 60px; z-index: 90;
   padding: 20px 18px;
   box-shadow: 0 1px 0 var(--border-default);
 }
 .cozy-pricing thead th:first-child {
   background: #0F1525;
-  /* Corner cell must stay above both the site header and body-sticky first column */
-  z-index: 102;
+  /* Corner cell must stay above the body-sticky first column */
+  z-index: 91;
 }
 .cozy-pricing td:first-child, .cozy-pricing th:first-child {
   text-align: left;
@@ -169,6 +169,7 @@
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
+  white-space: nowrap;
   background: linear-gradient(160deg, #1a8fe6 0%, var(--brand-secondary, #0971EB) 45%, #0756b8 100%);
   color: #fff !important;
   font-size: 14px;
