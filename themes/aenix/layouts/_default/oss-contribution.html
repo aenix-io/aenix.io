@@ -1,0 +1,184 @@
+{{ define "main" }}
+{{ $p := .Params }}
+
+<section class="oss-hero">
+  <div class="page-hero-bg">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+  </div>
+  <div class="container">
+    {{ with $p.eyebrow }}<span class="eyebrow reveal">{{ . }}</span>{{ end }}
+    <h1 class="page-hero-title reveal">
+      {{ with $p.hero.title_pre }}{{ . }}<br>{{ end }}<span class="grad">{{ $p.hero.title | default .Title }}</span>
+    </h1>
+    {{ with $p.hero.subtitle }}<p class="page-hero-subtitle reveal">{{ . }}</p>{{ end }}
+
+    {{ with $p.hero_stats }}
+    <div class="oss-stats-row reveal-stagger">
+      {{ range $i, $s := . }}
+      <div class="oss-stat reveal" style="--i:{{ $i }}">
+        <div class="oss-stat-v oss-stat-v--{{ $s.variant | default "default" }}">{{ $s.value }}</div>
+        <div class="oss-stat-l">{{ $s.label | safeHTML }}</div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{ with $p.categories }}
+<section class="section oss-section">
+  <div class="container">
+    <span class="eyebrow reveal">Overview</span>
+    <h2 class="reveal">Three categories of contribution</h2>
+    {{ with $p.categories_lead }}<p class="lead reveal">{{ . }}</p>{{ end }}
+    <div class="oss-cat-row reveal-stagger">
+      {{ range $i, $c := . }}
+      <div class="oss-cat reveal" style="{{ printf "--i:%d; --cat-color: %s" $i ($c.color | default "var(--brand-primary)") | safeCSS }}">
+        <div class="oss-cat-label">{{ $c.label }}</div>
+        <div class="oss-cat-n">{{ $c.value }}</div>
+        <div class="oss-cat-sub">{{ $c.sub }}</div>
+        <div class="oss-cat-val">{{ $c.val }}</div>
+        <div class="oss-cat-hrs">{{ $c.hrs }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.projects }}
+<section class="section section--alt oss-section">
+  <div class="container">
+    <span class="eyebrow reveal">External OSS</span>
+    <h2 class="reveal">Upstream contributions</h2>
+    {{ with $p.projects_lead }}<p class="lead reveal">{{ . }}</p>{{ end }}
+    <div class="oss-proj-grid reveal-stagger">
+      {{ range $i, $pr := . }}
+      <div class="oss-proj reveal" style="--i:{{ $i }}">
+        <div class="oss-proj-head">
+          <div class="oss-proj-ico" aria-hidden="true">{{ $pr.icon | safeHTML }}</div>
+          <div class="oss-proj-name">{{ $pr.name }}</div>
+        </div>
+        <div class="oss-proj-desc">{{ $pr.desc }}</div>
+        <div class="oss-proj-meta">
+          <div class="oss-proj-prs">
+            <div class="oss-proj-prs-n">{{ $pr.prs }}</div>
+            <div class="oss-proj-prs-l">merged PR{{ if ne $pr.prs 1 }}s{{ end }}</div>
+          </div>
+          {{ with $pr.tag }}<span class="oss-tag oss-tag--{{ $pr.tag_kind | default "o" }}">{{ . }}</span>{{ end }}
+        </div>
+        {{ with $pr.authors }}<div class="oss-proj-auth">{{ . }}</div>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.cncf_stats }}
+<section class="section oss-section">
+  <div class="container">
+    <span class="eyebrow reveal">Full Picture</span>
+    <h2 class="reveal">All contributions — CNCF definition</h2>
+    {{ with $p.cncf_lead }}<p class="lead reveal">{{ . }}</p>{{ end }}
+    <div class="oss-cncf-grid reveal-stagger">
+      {{ range $i, $c := . }}
+      <div class="oss-cncf-c reveal" style="{{ printf "--i:%d; --cncf-color: %s" $i ($c.color | default "var(--brand-primary)") | safeCSS }}">
+        <div class="oss-cncf-label">{{ $c.label }}</div>
+        <div class="oss-cncf-n">{{ $c.value }}</div>
+        <div class="oss-cncf-sub">{{ $c.sub }}</div>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ with $p.contrib_table }}
+    <div class="oss-contrib-wrap reveal">
+      <table class="oss-contrib-tbl">
+        <thead><tr>
+          <th>Project / Category</th>
+          <th class="r">Merged PRs</th>
+          <th class="r">Issues</th>
+          <th class="r">Reviews</th>
+          <th class="r">Comments</th>
+        </tr></thead>
+        <tbody>
+          {{ range $grp := . }}
+          <tr class="oss-cat-hdr"><td colspan="5">{{ $grp.group }}</td></tr>
+          {{ $rowspan := len $grp.rows }}
+          {{ range $ri, $row := $grp.rows }}
+          <tr>
+            <td{{ if $row.muted }} class="oss-muted"{{ end }}>{{ $row.name }}</td>
+            <td class="r"{{ if $row.bold }} style="font-weight:700"{{ end }}>{{ $row.prs }}</td>
+            {{ if eq $ri 0 }}
+              {{ if $grp.issues }}<td class="r oss-group-val" rowspan="{{ $rowspan }}" style="{{ "--oss-color:#e07b39" | safeCSS }}">{{ $grp.issues }}</td>{{ else if $grp.issues_placeholder }}<td class="r oss-muted-cell" rowspan="{{ $rowspan }}">{{ $grp.issues_placeholder }}</td>{{ end }}
+              {{ if $grp.reviews }}<td class="r oss-group-val" rowspan="{{ $rowspan }}" style="{{ "--oss-color:var(--brand-green)" | safeCSS }}">{{ $grp.reviews }}</td>{{ end }}
+              {{ if $grp.comments }}<td class="r oss-group-val" rowspan="{{ $rowspan }}" style="{{ "--oss-color:var(--brand-primary)" | safeCSS }}">{{ $grp.comments }}</td>{{ end }}
+            {{ end }}
+          </tr>
+          {{ end }}
+          {{ with $grp.subtotal }}
+          <tr class="oss-subtotal">
+            <td>{{ .name }}</td>
+            <td class="r">{{ .prs }}</td>
+            <td class="r">{{ .issues }}</td>
+            <td class="r">{{ .reviews }}</td>
+            <td class="r">{{ .comments }}</td>
+          </tr>
+          {{ end }}
+          {{ end }}
+          {{ with $p.contrib_total }}
+          <tr class="oss-total">
+            <td>{{ .name | default "Grand total" }}</td>
+            <td class="r">{{ .prs }}</td>
+            <td class="r">{{ .issues }}</td>
+            <td class="r">{{ .reviews }}</td>
+            <td class="r">{{ .comments }}</td>
+          </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+    {{ with $p.contrib_note }}<p class="oss-note">{{ . }}</p>{{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with $p.cost_summary }}
+<section class="section section--alt oss-section oss-cost">
+  <div class="container">
+    <span class="eyebrow reveal">Investment</span>
+    <h2 class="reveal">
+      Value of the contribution
+      {{ with $p.cost_methodology }}<span class="oss-tip-wrap"><span class="oss-tip-q" tabindex="0" aria-label="Methodology">?</span><span class="oss-tip-body">{{ . | safeHTML }}</span></span>{{ end }}
+    </h2>
+    <div class="oss-cost-grid reveal-stagger">
+      {{ range $i, $c := . }}
+      <div class="oss-cost-c reveal" style="--i:{{ $i }}">
+        <div class="oss-cost-lbl">{{ $c.label }}</div>
+        <div class="oss-cost-v">{{ $c.value }}{{ with $c.unit }} <span class="oss-cost-u">{{ . }}</span>{{ end }}</div>
+        <div class="oss-cost-s">{{ $c.sub }}</div>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ with $p.cost_breakdown }}
+    <div class="oss-cost-break reveal-stagger">
+      {{ range $i, $b := . }}
+      <div class="oss-cost-br reveal" style="{{ printf "--i:%d; --br-color: %s" $i ($b.color | default "var(--brand-primary)") | safeCSS }}">
+        <div class="oss-cost-br-cat">{{ $b.cat }}</div>
+        <div class="oss-cost-br-prs">{{ $b.prs }}</div>
+        <div class="oss-cost-br-hrs">{{ $b.hours }}</div>
+        <div class="oss-cost-br-val">{{ $b.value }}</div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ with $p.last_updated }}<p class="oss-last-updated">Last updated: {{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
