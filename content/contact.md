@@ -5,8 +5,8 @@ url: "/contact/"
 layout: "contact"
 
 zcal:
-  url: "https://zcal.co/i/wUB120Eb"
-  text: "1 Hour Meet – Schedule a meeting"
+  url: "https://zcal.co/i/s5C4-cO1"
+  text: "Aenix meeting - Schedule a meeting"
 
 hubspot_form:
   portal_id: "14498285"
@@ -38,8 +38,8 @@ offices:
 
 ## Schedule a meeting
 
-<div class="zcal-inline-widget"><a href="https://zcal.co/i/wUB120Eb">1 Hour Meet – Schedule a meeting</a></div>
-<script defer type="text/javascript" src="https://static.zcal.co/embed/v1/embed.js"></script>
+<script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+<div class="zcal-inline-widget"><a href="https://zcal.co/i/s5C4-cO1">Aenix meeting - Schedule a meeting</a></div>
 
 ## Write to us
 
