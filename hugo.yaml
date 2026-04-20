@@ -49,13 +49,6 @@ menus:
       url: /kubernetes-deep-dive-course/
       parent: products
       weight: 2
-    - name: Ænix Cloud
-      url: https://cloud.aenix.io/
-      parent: products
-      weight: 3
-      params:
-        external: true
-
     - name: Pricing
       url: /pricing/
       weight: 20
