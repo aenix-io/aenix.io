@@ -3,9 +3,9 @@
 Generates the OSS Contribution report page for aenix.io.
 
 Fetches contribution data from GitHub API for Aenix engineers and updates
-the content/oss-contribution.md page with current statistics. Only
-aggregate numbers are regenerated — hand-curated narrative (upstream
-project bullets, per-repo breakdown list) is preserved.
+the content/oss-contribution.md frontmatter with current aggregate
+statistics. Only numeric fields are regenerated — hand-curated narrative
+(project descriptions, authors, methodology text) is preserved.
 
 Requires: GITHUB_TOKEN environment variable for API access.
 """
@@ -18,6 +18,7 @@ import time
 from datetime import datetime, timezone
 
 import requests
+import yaml
 
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
 HEADERS = {
@@ -25,7 +26,6 @@ HEADERS = {
     "Authorization": f"Bearer {GITHUB_TOKEN}",
 }
 
-# Engineers and their start dates (first regular commit to aenix-io/aenix-org)
 ENGINEERS = [
     {"login": "kvaps", "since": "2025-01-21", "status": "active"},
     {"login": "lllamnyp", "since": "2025-01-31", "status": "active"},
@@ -41,7 +41,6 @@ ENGINEERS = [
     {"login": "BROngineer", "since": "2026-03-09", "status": "active"},
 ]
 
-# External projects to track PRs for
 EXTERNAL_PROJECTS = [
     "seaweedfs/seaweedfs",
     "seaweedfs/seaweedfs-cosi-driver",
@@ -87,7 +86,6 @@ HOURS_PER_PERSONAL_PR = 5
 
 
 def api_get(url, params=None):
-    """Make a GitHub API request with rate limit handling."""
     for _ in range(3):
         resp = requests.get(url, headers=HEADERS, params=params)
         if resp.status_code == 200:
@@ -143,7 +141,7 @@ def get_contribution_stats(login):
 
 def collect_data():
     print("Collecting contribution data...", file=sys.stderr)
-    data = {"engineers": [], "date": datetime.now(timezone.utc).strftime("%B %d, %Y")}
+    data = {"engineers": []}
 
     for eng in ENGINEERS:
         login = eng["login"]
@@ -225,17 +223,118 @@ def collect_data():
     data["total_value"] = int(data["total_hours"] * HOURLY_RATE)
     data["eng_months"] = round(data["total_hours"] / 168, 1)
     data["cost_per_pr"] = int(data["total_value"] / data["total_prs"]) if data["total_prs"] else 0
+    data["date"] = datetime.now(timezone.utc).strftime("%B %d, %Y")
+    data["iso_date"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     return data
 
 
-def update_markdown(data):
-    """Regenerate aggregate numbers in content/oss-contribution.md.
+def num(n):
+    return f"{int(n):,}"
 
-    Preserves hand-curated narrative — only swaps numeric values in the
-    Overview table, CNCF totals list, and Investment & Value block.
-    Also writes last_updated into frontmatter.
-    """
+
+def usd(n):
+    return f"${int(n):,}"
+
+
+def split_frontmatter(text):
+    """Return (frontmatter_str, body_str). Expects `---\\n...\\n---\\n...`."""
+    m = re.match(r"^---\n(.*?\n)---\n?(.*)$", text, flags=re.DOTALL)
+    if not m:
+        raise ValueError("Frontmatter block not found")
+    return m.group(1), m.group(2)
+
+
+def update_fm_values(fm, data):
+    """Mutate parsed frontmatter dict in place with fresh numeric values."""
+    fm["last_updated"] = data["iso_date"]
+
+    date_end = datetime.now(timezone.utc).strftime("%b %Y")
+    fm["eyebrow"] = f"Open Source · Jan 2025 – {date_end}"
+
+    # hero_stats — expect 5 entries in known order; update values only
+    hs = fm.get("hero_stats") or []
+    hs_values = [
+        num(data["total_prs"]),
+        num(data["total_cozy_prs"]),
+        num(data["total_external_prs"]),
+        num(data["total_personal_prs"]),
+        str(data["num_engineers"]),
+    ]
+    for i, v in enumerate(hs_values):
+        if i < len(hs):
+            hs[i]["value"] = v
+
+    # categories — 3 entries: cozy, external, personal
+    cats = fm.get("categories") or []
+    cats_data = [
+        (num(data["total_cozy_prs"]), usd(data["cozy_value"]), f"~{num(data['cozy_hours'])} hours · avg 4h/PR"),
+        (num(data["total_external_prs"]), usd(data["ext_value"]), f"~{num(int(data['ext_hours']))} hours · varies 4–14h/PR"),
+        (num(data["total_personal_prs"]), usd(data["personal_value"]), f"~{num(data['personal_hours'])} hours · avg 5h/PR"),
+    ]
+    for i, (val, money, hrs) in enumerate(cats_data):
+        if i < len(cats):
+            cats[i]["value"] = val
+            cats[i]["val"] = money
+            cats[i]["hrs"] = hrs
+
+    # cncf_stats — 4 entries: issues, reviews, comments, non-PR total
+    cncf = fm.get("cncf_stats") or []
+    cncf_values = [
+        f"{num(data['total_issues'])}+",
+        f"{num(data['total_reviews'])}+",
+        f"{num(data['total_comments'])}+",
+        f"{num(data['non_pr_total'])}+",
+    ]
+    for i, v in enumerate(cncf_values):
+        if i < len(cncf):
+            cncf[i]["value"] = v
+
+    # contrib_total — grand total row
+    ct = fm.get("contrib_total")
+    if ct:
+        ct["prs"] = num(data["total_prs"])
+        ct["issues"] = f"{num(data['total_issues'])}+"
+        ct["reviews"] = f"{num(data['total_reviews'])}+"
+        ct["comments"] = f"{num(data['total_comments'])}+"
+
+    # contrib_table subtotals for Cozystack and External groups; Personal is one row
+    tbl = fm.get("contrib_table") or []
+    if len(tbl) >= 2:
+        if tbl[0].get("subtotal"):
+            tbl[0]["subtotal"]["prs"] = num(data["total_cozy_prs"])
+        if tbl[1].get("subtotal"):
+            tbl[1]["subtotal"]["prs"] = num(data["total_external_prs"])
+    if len(tbl) >= 3 and tbl[2].get("rows"):
+        for row in tbl[2]["rows"]:
+            row["prs"] = num(data["total_personal_prs"])
+
+    # cost_summary — 4 tiles
+    cs = fm.get("cost_summary") or []
+    if len(cs) >= 4:
+        cs[0]["value"] = num(data["total_prs"])
+        cs[1]["value"] = num(int(data["total_hours"]))
+        cs[1]["sub"] = f"{data['eng_months']} engineer-months"
+        total_value_k = int(round(data["total_value"] / 1000))
+        cs[2]["value"] = f"${total_value_k}"
+        cs[2]["sub"] = f"{usd(data['total_value'])} equivalent"
+        cs[3]["value"] = usd(data["cost_per_pr"])
+
+    # cost_breakdown — 3 breakdowns
+    cb = fm.get("cost_breakdown") or []
+    if len(cb) >= 3:
+        cb[0]["prs"] = f"{num(data['total_cozy_prs'])} PRs · avg 4h/PR"
+        cb[0]["hours"] = f"{num(data['cozy_hours'])} hours"
+        cb[0]["value"] = usd(data["cozy_value"])
+        cb[1]["prs"] = f"{num(data['total_external_prs'])} PRs · avg 8.5h/PR"
+        cb[1]["hours"] = f"{num(int(data['ext_hours']))} hours"
+        cb[1]["value"] = usd(data["ext_value"])
+        cb[2]["prs"] = f"{num(data['total_personal_prs'])} PRs · avg 5h/PR"
+        cb[2]["hours"] = f"{num(data['personal_hours'])} hours"
+        cb[2]["value"] = usd(data["personal_value"])
+
+
+def update_markdown(data):
     md_path = os.path.join(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
         "content",
@@ -246,93 +345,24 @@ def update_markdown(data):
         sys.exit(1)
 
     with open(md_path, "r", encoding="utf-8") as f:
-        md = f.read()
+        text = f.read()
 
-    def usd(n):
-        return f"${int(n):,}"
+    fm_text, body = split_frontmatter(text)
+    fm = yaml.safe_load(fm_text) or {}
 
-    def num(n):
-        return f"{int(n):,}"
+    update_fm_values(fm, data)
 
-    iso_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-
-    if re.search(r"^last_updated:", md, flags=re.MULTILINE):
-        md = re.sub(
-            r"^last_updated:.*$",
-            f'last_updated: "{iso_date}"',
-            md,
-            count=1,
-            flags=re.MULTILINE,
-        )
-    else:
-        md = re.sub(
-            r"(^---\n(?:.*\n)*?)(---\n)",
-            rf'\1last_updated: "{iso_date}"\n\2',
-            md,
-            count=1,
-        )
-
-    md = re.sub(
-        r"(\| Cozystack ecosystem \| )[^|]+(\| )[^|]+(\| )[^|]+(\|)",
-        rf"\g<1>{num(data['total_cozy_prs'])} \g<2>~{num(data['cozy_hours'])} h \g<3>{usd(data['cozy_value'])} \g<4>",
-        md,
-    )
-    md = re.sub(
-        r"(\| External OSS upstream \| )[^|]+(\| )[^|]+(\| )[^|]+(\|)",
-        rf"\g<1>{num(data['total_external_prs'])} \g<2>~{num(int(data['ext_hours']))} h \g<3>{usd(data['ext_value'])} \g<4>",
-        md,
-    )
-    md = re.sub(
-        r"(\| Personal OSS \(lexfrei\) \| )[^|]+(\| )[^|]+(\| )[^|]+(\|)",
-        rf"\g<1>{num(data['total_personal_prs'])} \g<2>~{num(data['personal_hours'])} h \g<3>{usd(data['personal_value'])} \g<4>",
-        md,
+    new_fm = yaml.safe_dump(
+        fm,
+        sort_keys=False,
+        allow_unicode=True,
+        default_flow_style=False,
+        width=1000,
     )
 
-    md = re.sub(
-        r"(## All Contributions — CNCF Definition \(Jan 2025 – )[^)]+(\))",
-        rf"\g<1>{data['date']}\g<2>",
-        md,
-    )
-
-    md = re.sub(r"(- Issues opened: )[\d,+ ]+", rf"\g<1>{num(data['total_issues'])}+", md)
-    md = re.sub(r"(- PR reviews: )[\d,+ ]+", rf"\g<1>{num(data['total_reviews'])}+", md)
-    md = re.sub(r"(- Comments: )[\d,+ ]+", rf"\g<1>{num(data['total_comments'])}+", md)
-    md = re.sub(r"(- Non-PR total: )[\d,+ ]+", rf"\g<1>{num(data['non_pr_total'])}+", md)
-
-    md = re.sub(
-        r"(\| External OSS projects \| )[\d,]+( \|)",
-        rf"\g<1>{num(data['total_external_prs'])}\g<2>",
-        md,
-    )
-    md = re.sub(
-        r"(\| Personal OSS \(lexfrei\) \| )[\d,]+( \|)",
-        rf"\g<1>{num(data['total_personal_prs'])}\g<2>",
-        md,
-    )
-
-    md = re.sub(
-        r"(\*\*Total PRs:\*\* )[\d,]+",
-        rf"\g<1>{num(data['total_prs'])}",
-        md,
-    )
-    md = re.sub(
-        r"(\*\*Total hours:\*\* )[\d,]+ h \([\d.]+ engineer-months\)",
-        rf"\g<1>{num(int(data['total_hours']))} h ({data['eng_months']} engineer-months)",
-        md,
-    )
-    md = re.sub(
-        r"(\*\*Total value:\*\* )\$[\d,]+ equivalent",
-        rf"\g<1>{usd(data['total_value'])} equivalent",
-        md,
-    )
-    md = re.sub(
-        r"(\*\*Cost per PR:\*\* )\$[\d,]+ avg",
-        rf"\g<1>{usd(data['cost_per_pr'])} avg",
-        md,
-    )
-
+    new_text = f"---\n{new_fm}---\n{body}"
     with open(md_path, "w", encoding="utf-8") as f:
-        f.write(md)
+        f.write(new_text)
 
     print(f"Updated {md_path}", file=sys.stderr)
     print(f"  Total PRs: {data['total_prs']}", file=sys.stderr)

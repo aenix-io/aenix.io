@@ -23,7 +23,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install requests jinja2
+        run: pip install requests pyyaml
 
       - name: Generate OSS report
         env:
