@@ -7,28 +7,28 @@ url: "/about-us/"
 team:
   - name: "Andrei Kvapil"
     role: "CEO"
-    photo: "/images/uploads/2023/12/maxim_filatov-defconf_cz_mini_2022-brno-2022_06_02-68-addbg2.jpg"
+    photo: "/images/uploads/2026/04/andrei-kvapil.jpg"
     links:
       github: "kvaps"
       linkedin: "kvapss"
   - name: "Timur Tukaev"
     role: "COO"
-    photo: "/images/uploads/2024/07/image-1.png"
+    photo: "/images/uploads/2026/04/timur-tukaev.png"
     links:
       linkedin: "timur-tukaev"
   - name: "Viktoriia Kvapil"
     role: "Art Director"
-    photo: "/images/uploads/2023/12/2023-12-19-20.14.24.jpg"
+    photo: "/images/uploads/2026/04/viktoriia-kvapil.jpg"
     links:
       linkedin: "kvapsova"
   - name: "Timofei Larkin"
     role: "Head of Development"
-    photo: "/images/uploads/2025/07/Tim.png"
+    photo: "/images/uploads/2026/04/timofei-larkin.png"
     links:
       github: "deckhouse"
   - name: "Julia Pavlova"
     role: "Drama Manager"
-    photo: "/images/uploads/2025/07/YP2.png"
+    photo: "/images/uploads/2026/04/julia-pavlova.png"
 
 community_champions:
   - name: "George Gaál"
