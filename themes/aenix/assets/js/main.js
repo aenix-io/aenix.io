@@ -122,21 +122,31 @@ document.addEventListener('DOMContentLoaded', () => {
       cloudPts.push({x: rightX + 40, y: baseY - 100 + rand(-8, 8)});
       cloudPts.push({x: rightX + 10, y: peakY(profile[N - 1]) + 20});
 
-      // Peaks from right to left (counter-clockwise when viewed top-down)
+      // Peaks from right to left (counter-clockwise when viewed top-down).
+      // Each peak is a rounded dome: right-shoulder + apex + left-shoulder
+      // so the Bezier smoother produces a curved top instead of a V.
       const peaksLTR = [];
+      const bumpWidth = Math.min(70, (span / N) * 0.45);
       for (let i = N - 1; i >= 0; i--) {
         const t = (i + 0.5) / N;
-        const x = spanLeft + t * span + rand(-6, 6);
-        const y = peakY(profile[i]);
+        const cx = spanLeft + t * span + rand(-5, 5);
+        const apexY = peakY(profile[i]);
+        // Shoulder drop is proportional to peak height so tall peaks stay pointy-free
+        const drop = 18 + profile[i] * 12;
+        // Right shoulder (traversal enters from the right)
+        cloudPts.push({x: cx + bumpWidth, y: apexY + drop});
+        // Apex
         peakIdx.push(cloudPts.length);
-        peaksLTR.unshift({x, y});
-        cloudPts.push({x, y});
+        peaksLTR.unshift({x: cx, y: apexY});
+        cloudPts.push({x: cx, y: apexY});
+        // Left shoulder
+        cloudPts.push({x: cx - bumpWidth, y: apexY + drop});
         if (i > 0) {
           const vt = i / N;
-          const vx = spanLeft + vt * span + rand(-5, 5);
-          // Shallow valley — stays close to the peak height so top looks round
+          const vx = spanLeft + vt * span + rand(-4, 4);
+          // Shallow valley — stays close to peak height so top looks round
           const peakAvg = (profile[i] + profile[i - 1]) / 2;
-          const vy = baseY - peakAvg * MAX_BUMP * 0.82 + rand(-6, 6);
+          const vy = baseY - peakAvg * MAX_BUMP * 0.82 + rand(-4, 4);
           cloudPts.push({x: vx, y: vy});
         }
       }
