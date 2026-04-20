@@ -45,6 +45,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroCloudSvg = heroCloud && heroCloud.querySelector('.hero-cloud-svg');
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (heroCloudSvg) {
+    const rand = (a, b) => a + Math.random() * (b - a);
+    heroCloudSvg.querySelectorAll('.hc-hatch line').forEach(el => {
+      const x = (+el.getAttribute('x1') + +el.getAttribute('x2')) / 2;
+      const y = (+el.getAttribute('y1') + +el.getAttribute('y2')) / 2;
+      el.setAttribute('transform', `rotate(${rand(-8, 8)} ${x} ${y}) translate(${rand(-3, 3)} ${rand(-3, 3)})`);
+    });
+    heroCloudSvg.querySelectorAll('.hc-labels text').forEach(el => {
+      const x = +el.getAttribute('x'), y = +el.getAttribute('y');
+      el.setAttribute('transform', `rotate(${rand(-4, 4)} ${x} ${y})`);
+    });
+    heroCloudSvg.querySelectorAll('.hc-grid line').forEach(el => {
+      if (Math.random() < 0.18) el.style.display = 'none';
+      else el.style.opacity = rand(0.55, 1);
+    });
+    heroCloudSvg.querySelectorAll('.hc-ticks line').forEach(el => {
+      if (Math.random() < 0.15) el.style.display = 'none';
+    });
+    heroCloudSvg.style.setProperty('transform', `rotate(${rand(-1.2, 1.2)}deg)`);
+
     const groups = [
       { sel: '.hc-grid line',  delay: 0,    dur: 900,  step: 30 },
       { sel: '.hc-dims path',  delay: 300,  dur: 800,  step: 40 },
