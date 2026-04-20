@@ -1,0 +1,19 @@
+<div class="partners-grid">
+  {{ range .Page.Params.partners }}
+  <article class="partner-card">
+    <div class="partner-logo-box">
+      <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy">
+    </div>
+    <div class="partner-body">
+      <h3 class="partner-name">{{ .name }}</h3>
+      {{ with .location }}
+      <p class="partner-location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>{{ . }}</span>
+      </p>
+      {{ end }}
+      <p class="partner-description">{{ .description }}</p>
+    </div>
+  </article>
+  {{ end }}
+</div>

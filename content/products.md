@@ -14,10 +14,4 @@ Advanced course for engineers on containerization, networking, storage, security
 {{< /product-card >}}
 {{< /products-grid >}}
 
----
-
-## Let's work together on your next cloud project
-
-Get a reliable and experienced partner to meet your business needs in the realm of systems architecture and design.
-
-[CONTACT US →](/contact/)
+{{< cta >}}

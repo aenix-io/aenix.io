@@ -26,4 +26,4 @@ We have been using Kubernetes in production environments and managing it for man
 
 Entrust us with the creation of your own managed Kubernetes service for your users and become a reliable Kubernetes provider today!
 
-[CONTACT US →](/contact/)
+{{< cta title="Become a reliable Kubernetes provider" description="Entrust us with the creation of your own managed Kubernetes service. We know how to build it right — on bare metal or virtual machines." >}}
