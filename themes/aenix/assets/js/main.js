@@ -90,8 +90,8 @@ document.addEventListener('DOMContentLoaded', () => {
       // N distinct radii drawn from N non-overlapping size buckets so
       // every dome ends up visibly different from the others. Bucket
       // range shrinks as N grows so the packed cloud fits the viewBox.
-      const rMin = 50;
-      const rMax = [135, 130, 115, 100][Math.min(N - 3, 3)];
+      const rMin = 60;
+      const rMax = [160, 150, 125, 100][Math.min(N - 3, 3)];
       const step = (rMax - rMin) / N;
       const radii = [];
       for (let i = 0; i < N; i++) {
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Overlap factor: adjacent centers sit at GAP * (r_i + r_{i+1})
       // apart. Tighter packing for more domes keeps total width in check.
-      const GAP = [0.80, 0.78, 0.74, 0.70][Math.min(N - 3, 3)];
+      const GAP = [0.82, 0.78, 0.70, 0.66][Math.min(N - 3, 3)];
 
       // Pack left-to-right
       const offsets = [0];
