@@ -11,24 +11,31 @@ team:
     links:
       github: "kvaps"
       linkedin: "kvapss"
+      telegram: "kvaps"
   - name: "Timur Tukaev"
     role: "COO"
     photo: "/images/uploads/2026/04/timur-tukaev.png"
     links:
       linkedin: "timur-tukaev"
+      telegram: "tym83"
   - name: "Viktoriia Kvapil"
     role: "Art Director"
     photo: "/images/uploads/2026/04/viktoriia-kvapil.jpg"
     links:
       linkedin: "kvapsova"
+      telegram: "bluebery_pie"
+      dribbble: "Vikitoriia-lu"
   - name: "Timofei Larkin"
     role: "Head of Development"
     photo: "/images/uploads/2026/04/timofei-larkin.png"
     links:
       github: "deckhouse"
+      telegram: "lllamnyp"
   - name: "Julia Pavlova"
     role: "Drama Manager"
     photo: "/images/uploads/2026/04/julia-pavlova.png"
+    links:
+      telegram: "tvoya_sowest"
 
 community_champions:
   - name: "George Gaál"
