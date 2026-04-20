@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // N distinct radii drawn from N non-overlapping size buckets.
       const rMin = 60;
-      const rMax = [160, 145, 125, 110][Math.min(N - 3, 3)];
+      const rMax = [210, 175, 145, 125][Math.min(N - 3, 3)];
       const step = (rMax - rMin) / N;
       const radii = [];
       for (let i = 0; i < N; i++) {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Packing factors — tighter when there are more domes so the
       // overall width stays inside the viewBox.
-      const GAP = [0.82, 0.78, 0.72, 0.68][Math.min(N - 3, 3)];
+      const GAP = [0.82, 0.78, 0.72, 0.66][Math.min(N - 3, 3)];
 
       const xPositions = [0];
       for (let i = 1; i < N; i++) {
