@@ -84,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const baseY = 465 + rand(-6, 6);
       const pillH = 110 + rand(-6, 6);
       const topLine = baseY - pillH;
-      const cornerR = pillH / 2;
       const N = 3 + Math.floor(Math.random() * 4); // 3..6
 
       // N distinct radii drawn from N non-overlapping size buckets so
@@ -112,40 +111,45 @@ document.addEventListener('DOMContentLoaded', () => {
       for (let i = 1; i < N; i++) {
         offsets.push(offsets[i - 1] + (radii[i - 1] + radii[i]) * GAP);
       }
+      // Top width: leftmost of circle[0] to rightmost of circle[N-1]
       const packedW = offsets[N - 1] + radii[0] + radii[N - 1];
-      const totalW = packedW + 2 * cornerR;
 
-      // Centre the cloud horizontally in the viewBox
-      const leftX = (VIEWBOX_W - totalW) / 2;
-      const rightX = leftX + totalW;
-      const humpLeftX = leftX + cornerR;
-      const humpRightX = rightX - cornerR;
+      // Side quarter-arcs roll the flat bottom into the first/last dome's
+      // vertical tangent — so the sides are fully rounded with no extra
+      // bumps. Bound the corner radius so the flat bottom keeps some width.
+      const cornerR = Math.min(pillH, packedW * 0.25);
 
-      // Place circles so the leftmost extent of circle 0 = humpLeftX
-      // and the rightmost extent of circle N-1 = humpRightX.
-      const firstCx = humpLeftX + radii[0];
+      const leftX = (VIEWBOX_W - packedW) / 2;
+      const rightX = leftX + packedW;
+
+      // Place circles so the leftmost extent of circle 0 = leftX and
+      // the rightmost extent of circle N-1 = rightX.
+      const firstCx = leftX + radii[0];
       const circles = radii.map((r, i) => ({
         cx: firstCx + offsets[i],
         cy: topLine,
         r,
       }));
 
-      // Traverse the silhouette clockwise on screen. Every arc uses
-      // sweep-flag=0 (counter-clockwise on screen when walked forward),
-      // which is what "bulging outward" means at every point on a convex
-      // outer boundary.
+      // Traverse the silhouette clockwise on screen.
+      //   flat bottom → bottom-right corner (quarter-arc) → vertical right
+      //   side → last dome (vertical tangent at rightX,topLine) → domes
+      //   right-to-left → first dome ends at (leftX,topLine) → vertical
+      //   left side → bottom-left corner (quarter-arc) → close.
       const fmt = (n) => n.toFixed(1);
-      let d = `M ${fmt(humpLeftX)} ${fmt(baseY)}`;
+      let d = `M ${fmt(leftX + cornerR)} ${fmt(baseY)}`;
       // Flat bottom
-      d += ` L ${fmt(humpRightX)} ${fmt(baseY)}`;
-      // Right rounded end cap (bottom-right → top-right via rightX)
-      d += ` A ${fmt(cornerR)} ${fmt(cornerR)} 0 0 0 ${fmt(humpRightX)} ${fmt(topLine)}`;
-      // Humps, walked right → left over the top
+      d += ` L ${fmt(rightX - cornerR)} ${fmt(baseY)}`;
+      // Bottom-right quarter-arc: rolls from horizontal to vertical tangent
+      d += ` A ${fmt(cornerR)} ${fmt(cornerR)} 0 0 0 ${fmt(rightX)} ${fmt(baseY - cornerR)}`;
+      // Vertical right side up to last dome's rightmost point
+      d += ` L ${fmt(rightX)} ${fmt(topLine)}`;
+      // Domes, walked right → left over the top
       for (let i = N - 1; i >= 0; i--) {
         const c = circles[i];
         let ex, ey;
         if (i === 0) {
-          ex = humpLeftX;
+          ex = leftX;
           ey = topLine;
         } else {
           const inter = upperIntersect(circles[i - 1], c);
@@ -159,8 +163,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         d += ` A ${fmt(c.r)} ${fmt(c.r)} 0 0 0 ${fmt(ex)} ${fmt(ey)}`;
       }
-      // Left rounded end cap (top-left → bottom-left via leftX)
-      d += ` A ${fmt(cornerR)} ${fmt(cornerR)} 0 0 0 ${fmt(humpLeftX)} ${fmt(baseY)}`;
+      // Vertical left side down from first dome's leftmost point
+      d += ` L ${fmt(leftX)} ${fmt(baseY - cornerR)}`;
+      // Bottom-left quarter-arc: rolls back to horizontal
+      d += ` A ${fmt(cornerR)} ${fmt(cornerR)} 0 0 0 ${fmt(leftX + cornerR)} ${fmt(baseY)}`;
       d += ` Z`;
 
       const mainCloudPaths = heroCloudSvg.querySelectorAll('.hc-cloud path');
