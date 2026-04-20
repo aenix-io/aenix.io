@@ -45,7 +45,7 @@ menus:
       url: /cozystack/
       parent: products
       weight: 1
-    - name: Kubernetes Deep Dive
+    - name: Kubernetes Deep Dive Course
       url: /kubernetes-deep-dive-course/
       parent: products
       weight: 2
