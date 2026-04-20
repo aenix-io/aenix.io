@@ -101,6 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const j = Math.floor(Math.random() * (i + 1));
         [radii[i], radii[j]] = [radii[j], radii[i]];
       }
+      // Pin the tallest dome to an interior slot so the cloud always has
+      // a peak rising above both edges.
+      let maxIdx = 0;
+      for (let i = 1; i < N; i++) if (radii[i] > radii[maxIdx]) maxIdx = i;
+      if (maxIdx === 0 || maxIdx === N - 1) {
+        const interiorIdx = 1 + Math.floor(Math.random() * (N - 2));
+        [radii[maxIdx], radii[interiorIdx]] = [radii[interiorIdx], radii[maxIdx]];
+      }
 
       // Overlap factor: adjacent centers sit at GAP * (r_i + r_{i+1})
       // apart. Tighter packing for more domes keeps total width in check.
