@@ -117,8 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
       cloudPts.push({x: leftX + span * 0.65, y: baseY + 18 + rand(-3, 3)});
       cloudPts.push({x: leftX + span * 0.90, y: baseY + 8 + rand(-3, 3)});
 
-      // Right rounded corner: base → mid → top
-      cloudPts.push({x: rightX + 25, y: baseY - 20 + rand(-5, 5)});
+      // Right rounded corner: base (aligned with belly) → mid → top
+      cloudPts.push({x: rightX + 25, y: baseY + 12 + rand(-4, 4)});
       cloudPts.push({x: rightX + 40, y: baseY - 100 + rand(-8, 8)});
       cloudPts.push({x: rightX + 10, y: peakY(profile[N - 1]) + 20});
 
@@ -151,10 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       }
 
-      // Left rounded corner: top → mid → base
+      // Left rounded corner: top → mid → base (aligned with belly)
       cloudPts.push({x: leftX - 10, y: peakY(profile[0]) + 20});
       cloudPts.push({x: leftX - 40, y: baseY - 100 + rand(-8, 8)});
-      cloudPts.push({x: leftX - 25, y: baseY - 20 + rand(-5, 5)});
+      cloudPts.push({x: leftX - 25, y: baseY + 12 + rand(-4, 4)});
 
       const cloudD = smoothClosed(cloudPts);
       const ghostD = smoothClosed(cloudPts.map(p => ({x: p.x + rand(-3, 3), y: p.y + rand(-3, 3)})));
