@@ -1,7 +1,10 @@
 <div class="partners-grid">
   {{ range .Page.Params.partners }}
-  {{ $tag := "article" }}{{ if .url }}{{ $tag = "a" }}{{ end }}
-  <{{ $tag }} class="partner-card"{{ with .url }} href="{{ . }}" target="_blank" rel="noopener"{{ end }}>
+  {{ if .url }}
+  <a class="partner-card" href="{{ .url }}" target="_blank" rel="noopener">
+  {{ else }}
+  <article class="partner-card">
+  {{ end }}
     <div class="partner-logo-box">
       <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy">
     </div>
@@ -15,6 +18,6 @@
       {{ end }}
       <p class="partner-description">{{ .description }}</p>
     </div>
-  </{{ $tag }}>
+  {{ if .url }}</a>{{ else }}</article>{{ end }}
   {{ end }}
 </div>
