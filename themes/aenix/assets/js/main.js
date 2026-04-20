@@ -82,70 +82,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const generateCloud = () => {
       const baseY = 465 + rand(-6, 6);
-      const pillH = 110 + rand(-6, 6);
-      const topLine = baseY - pillH;
-      const midY = (topLine + baseY) / 2;
-      const cornerR = pillH / 2;
-      const N = 3 + Math.floor(Math.random() * 4); // total visible domes 3..6
-      const Nint = N - 2;                          // interior (above topLine)
+      const N = 3 + Math.floor(Math.random() * 4); // total domes 3..6
 
-      // The interior peak radius has to be at least 2.5× the cap radius.
-      const peakR = cornerR * 2.5 + rand(0, 20);
-      // Smaller interior domes — drawn from Nint-1 distinct size buckets
-      // so every interior dome comes out visibly different.
-      const smallMin = 75;
-      const smallMax = cornerR * 2.2; // always stays below peakR
-      const smalls = [];
-      const smallCount = Nint - 1;
-      const smallStep = smallCount > 0 ? (smallMax - smallMin) / smallCount : 0;
-      for (let i = 0; i < smallCount; i++) {
-        smalls.push(smallMin + i * smallStep + rand(0, smallStep * 0.6));
+      // N distinct radii drawn from N non-overlapping size buckets. No
+      // interior pinning, no peak ratio: any circle can be the biggest
+      // and can sit anywhere in the chain.
+      const rMin = 60;
+      const rMax = [160, 145, 125, 110][Math.min(N - 3, 3)];
+      const step = (rMax - rMin) / N;
+      const radii = [];
+      for (let i = 0; i < N; i++) {
+        radii.push(rMin + i * step + rand(0, step * 0.6));
       }
-      // Shuffle smalls, then drop the peak in at a random interior slot
-      for (let i = smalls.length - 1; i > 0; i--) {
+      for (let i = radii.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [smalls[i], smalls[j]] = [smalls[j], smalls[i]];
+        [radii[i], radii[j]] = [radii[j], radii[i]];
       }
-      const peakIdx = Math.floor(Math.random() * Nint);
-      const interiorRadii = [
-        ...smalls.slice(0, peakIdx),
-        peakR,
-        ...smalls.slice(peakIdx),
-      ];
 
-      // Side caps are circles centred at midY with radius cornerR. Their
-      // bottom (6 o'clock) sits exactly on baseY so the flat bottom meets
-      // them with matching horizontal tangents — no vertical straight
-      // segment, no stretching, no extra bump.
-      const allCircles = [
-        { r: cornerR, cy: midY },
-        ...interiorRadii.map((r) => ({ r, cy: topLine })),
-        { r: cornerR, cy: midY },
-      ];
+      // Every circle's BOTTOM sits exactly on baseY, so nothing can ever
+      // extend past the base. Centre: (cx, baseY - r).
+      const allCircles = radii.map((r) => ({ r, cy: baseY - r }));
 
-      // Packing factors — tighter when there are more interiors.
-      const interiorGap = [0.82, 0.78, 0.72, 0.68][Math.min(Nint - 1, 3)];
-      const capFactor = [0.85, 0.83, 0.78, 0.74][Math.min(Nint - 1, 3)];
+      // Packing factors — tighter when there are more domes so the
+      // overall width stays inside the viewBox.
+      const GAP = [0.82, 0.78, 0.72, 0.68][Math.min(N - 3, 3)];
 
       const xPositions = [0];
-      for (let i = 1; i < allCircles.length; i++) {
-        const prev = allCircles[i - 1];
-        const curr = allCircles[i];
-        let dx;
-        if (prev.cy !== curr.cy) {
-          // cap ↔ interior: distance constrained by interior's radius so
-          // the two circles chain above topLine
-          const rInt = prev.r === cornerR ? curr.r : prev.r;
-          dx = rInt * capFactor;
-        } else {
-          dx = (prev.r + curr.r) * interiorGap;
-        }
-        xPositions.push(xPositions[i - 1] + dx);
+      for (let i = 1; i < N; i++) {
+        xPositions.push(xPositions[i - 1] + (allCircles[i - 1].r + allCircles[i].r) * GAP);
       }
-      const totalW = xPositions[allCircles.length - 1] + 2 * cornerR;
+      const totalW = xPositions[N - 1] + allCircles[0].r + allCircles[N - 1].r;
 
       const leftX = (VIEWBOX_W - totalW) / 2;
-      const firstCx = leftX + cornerR;
+      const firstCx = leftX + allCircles[0].r;
       const circles = allCircles.map((c, i) => ({
         cx: firstCx + xPositions[i],
         cy: c.cy,
@@ -153,19 +122,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }));
 
       // Outline traversal (clockwise on screen).
+      //   flat bottom from the leftmost circle's 6 o'clock to the
+      //   rightmost's 6 o'clock → arcs right-to-left over the top,
+      //   ending back at the leftmost's 6 o'clock.
+      // Edge circles (i = 0 or N-1) wrap >180° from baseY up past 12;
+      // middle arcs stay <180° between neighbour intersections.
       const fmt = (n) => n.toFixed(1);
-      const leftCap = circles[0];
-      const rightCap = circles[circles.length - 1];
-      let d = `M ${fmt(leftCap.cx)} ${fmt(baseY)}`;
-      // Flat bottom
-      d += ` L ${fmt(rightCap.cx)} ${fmt(baseY)}`;
-      // Arcs right-to-left. Cap arcs cover > 180° (from 6 o'clock past 12
-      // to the intersection with the next dome), interior arcs cover < 180°.
-      for (let i = circles.length - 1; i >= 0; i--) {
+      let d = `M ${fmt(circles[0].cx)} ${fmt(baseY)}`;
+      d += ` L ${fmt(circles[N - 1].cx)} ${fmt(baseY)}`;
+      for (let i = N - 1; i >= 0; i--) {
         const c = circles[i];
         let ex, ey;
         if (i === 0) {
-          ex = leftCap.cx;
+          ex = circles[0].cx;
           ey = baseY;
         } else {
           const inter = upperIntersect(circles[i - 1], c);
@@ -177,8 +146,8 @@ document.addEventListener('DOMContentLoaded', () => {
             ey = c.cy;
           }
         }
-        const isCap = c.r === cornerR && c.cy === midY;
-        const largeArc = isCap ? 1 : 0;
+        const isEdge = i === 0 || i === N - 1;
+        const largeArc = isEdge ? 1 : 0;
         d += ` A ${fmt(c.r)} ${fmt(c.r)} 0 ${largeArc} 0 ${fmt(ex)} ${fmt(ey)}`;
       }
       d += ` Z`;
