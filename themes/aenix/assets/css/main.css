@@ -837,6 +837,99 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ==========================================================================
+   PRODUCTS GRID — 2 products side by side
+   ========================================================================== */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--glass-shadow);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+.product-card:hover::before { transform: scaleX(1); }
+.product-card:hover {
+  background: var(--glass-bg-hover);
+  border-color: var(--glass-border-hover);
+  box-shadow: var(--glass-shadow), var(--shadow-card);
+  transform: translateY(-3px);
+  color: var(--text-primary);
+}
+.product-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+.product-card-image img {
+  max-width: 140px;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  object-fit: contain;
+}
+.product-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: var(--text-primary);
+}
+.product-card-description {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+.product-card-description p {
+  margin: 0;
+}
+.product-card-link {
+  color: var(--brand-primary);
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: transform 0.25s var(--ease);
+  display: inline-block;
+}
+.product-card:hover .product-card-link {
+  transform: translateX(4px);
+}
+@media (max-width: 768px) {
+  .products-grid { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
    TWO-COLS — image + text side by side
    ========================================================================== */
 .two-cols {
