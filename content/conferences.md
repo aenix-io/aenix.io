@@ -3,6 +3,28 @@ title: "Conferences"
 description: "Conference talks and presentations by the Ænix team."
 url: "/conferences/"
 image: "/images/uploads/2024/02/blog-tech-conferences.jpg"
+
+videos:
+  - id: "7sx7oV25zYc"
+    title: "Platformize It! Building a Unified and Extensible Platform Framework"
+  - id: "S__h_QaoYEk"
+    title: "GPU-powered AI on VMs, Kubernetes & Bare Metal with Cozystack"
+  - id: "wBKrGVWbdcI"
+    title: "Kubernetes is the new Skynet, or the rise of Kubernetes automation"
+  - id: "7m1NOp2sUXQ"
+    title: "Kubernetes-in-Kubernetes with Kamaji, KubeVirt, and the Cluster API"
+  - id: "HDnndikFZ04"
+    title: "LINSTOR: Kubernetes-Like Open-Source Storage"
+  - id: "JaQySmJsmrU"
+    title: "LINSTOR on Talos Linux: A Robust Base for Cozystack"
+  - id: "4RVe32xRITo"
+    title: "Comparing GitOps: Argo CD vs Flux CD, with Andrei Kvapil"
+  - id: "s79VqXu-eG4"
+    title: "Cozystack on Talos Linux"
+  - id: "9CIMTum9bTA"
+    title: "Talos Linux: You don't need an operating system, you only need Kubernetes"
+  - id: "24i9wIsJHGE"
+    title: "Introducing Cozystack: Free PaaS platform and framework for building clouds"
 ---
 
 ![Conferences](/images/uploads/2024/02/blog-tech-conferences.jpg)
@@ -11,16 +33,7 @@ image: "/images/uploads/2024/02/blog-tech-conferences.jpg"
 
 ### Videos
 
-1. Platformize It! Building a Unified and Extensible Platform Framework
-2. GPU-powered AI on VMs, Kubernetes & Bare Metal with Cozystack
-3. Kubernetes is the new Skynet, or the rise of Kubernetes automation
-4. Kubernetes-in-Kubernetes with Kamaji, KubeVirt, and the Cluster API
-5. LINSTOR: Kubernetes-Like Open-Source Storage
-6. LINSTOR on Talos Linux: A Robust Base for Cozystack
-7. Comparing GitOps: Argo CD vs Flux CD, with Andrei Kvapil
-8. Cozystack on Talos Linux
-9. Talos Linux: You don't need an operating system, you only need Kubernetes
-10. Introducing Cozystack: Free PaaS platform and framework for building clouds
+{{< videos >}}
 
 ---
 

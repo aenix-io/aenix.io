@@ -13,6 +13,27 @@ hubspot_form:
   form_id: "9c75a775-0206-45b1-b0f5-e34454247317"
   region: "eu1"
   script: "//js-eu1.hsforms.net/forms/embed/v2.js"
+
+offices:
+  - name: "EU Office"
+    company: "AENIX s.r.o."
+    address: |
+      Sladkovského 546/8
+      273 43 Buštěhrad
+      Czech Republic
+    details:
+      - "CIN: 21493871"
+      - "VAT Number: CZ21493871"
+      - "CZ Databox ID: 2rvcmud"
+  - name: "US Office"
+    company: "AENIX INC"
+    address: |
+      131 Continental Drive, Suite 301
+      Newark, County of New Castle
+      Delaware, United States
+      ZIP Code: 19713
+    details:
+      - "Registration Number: 10075938"
 ---
 
 ## Schedule a meeting
@@ -33,29 +54,10 @@ hubspot_form:
 
 ## Company Details {#details}
 
-### EU Office
-
-**AENIX s.r.o.**
-Sladkovského 546/8
-273 43 Buštěhrad
-Czech Republic
-
-- CIN: 21493871
-- VAT Number: CZ21493871
-- CZ Databox ID: 2rvcmud
-
-### US Office
-
-**AENIX INC**
-131 Continental Drive, Suite 301
-Newark, County of New Castle
-Delaware, United States
-ZIP Code: 19713
-
-- Registration Number: 10075938
+{{< offices >}}
 
 *The address above is the company's office. Personal visits only by prior arrangement.*
 
 **Email:** [info@aenix.io](mailto:info@aenix.io)
 
-Follow us on social media: [LinkedIn](https://www.linkedin.com/company/aenix/) · [Telegram](https://t.me/cozystack) · [Facebook](https://www.facebook.com/aenix.io) · [X](https://x.com/aenix_io)
+{{< social-icons linkedin="https://www.linkedin.com/company/aenix/" telegram="https://t.me/cozystack" facebook="https://www.facebook.com/aenix.io" x="https://x.com/aenix_io" >}}
