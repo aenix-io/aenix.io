@@ -6,11 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.querySelector('.mobile-menu-toggle');
   const mobileMenu = document.querySelector('.mobile-menu');
   if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', isOpen);
-      mobileMenu.setAttribute('aria-hidden', !isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
+    const setMenu = (open) => {
+      mobileMenu.classList.toggle('open', open);
+      menuToggle.setAttribute('aria-expanded', open);
+      mobileMenu.setAttribute('aria-hidden', !open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+    menuToggle.addEventListener('click', () => setMenu(!mobileMenu.classList.contains('open')));
+    // Close on Escape
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) setMenu(false);
+    });
+    // Close when a nav link is tapped (so in-page navigation feels right)
+    mobileMenu.querySelectorAll('a[href]').forEach(a => {
+      a.addEventListener('click', () => setMenu(false));
     });
   }
 

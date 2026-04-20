@@ -36,14 +36,14 @@
       </a>
     </nav>
 
-    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span class="hamburger"></span>
-    </button>
   </div>
 </header>
 
-{{/* Mobile menu — kept outside <header> so position:fixed escapes the sticky + backdrop-filter containing block */}}
-<div class="mobile-menu" aria-hidden="true">
+{{/* Mobile menu toggle + menu — kept outside <header> so position:fixed escapes the sticky + backdrop-filter containing block */}}
+<button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+  <span class="hamburger"></span>
+</button>
+<div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <nav aria-label="Mobile navigation">
     <ul class="mobile-nav-list">
       {{ range .Site.Menus.main }}

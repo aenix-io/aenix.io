@@ -22,7 +22,7 @@ Kubernetes plays a key role here because it offers a convenient and unified way 
 
 Many try to replicate the success of leading cloud providers, but most Kubernetes installations are not fully functional. As a result of such integrations they make many mistakes, eg. the data usually stored inside virtual machines breaking the flexibility, and cluster auto-scaling does not work properly. This is all due to a lack of understanding of Kubernetes concepts and the needs of end-users.
 
-We have been using Kubernetes in production environments and managing it for many years. We know what your users realy want and what truly managed Kubernetes should be like. Our portfolio includes cases of organizing automatic Kubernetes provisioning on bare-metal servers, as well in virtual machines. We have extensive experience in building private and public clouds for Kubernetes, and we know how to do it right.
+We have been using Kubernetes in production environments and managing it for many years. We know what your users really want and what truly managed Kubernetes should be like. Our portfolio includes cases of organizing automatic Kubernetes provisioning on bare-metal servers, as well in virtual machines. We have extensive experience in building private and public clouds for Kubernetes, and we know how to do it right.
 
 Entrust us with the creation of your own managed Kubernetes service for your users and become a reliable Kubernetes provider today!
 

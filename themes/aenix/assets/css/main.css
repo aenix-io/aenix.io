@@ -382,16 +382,22 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .github-link:hover { color: var(--brand-primary); }
 
-/* Mobile menu toggle */
+/* Mobile menu toggle — floating, escapes header's backdrop-filter stacking context */
 .mobile-menu-toggle {
   display: none;
+  position: fixed;
+  top: 18px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 8px;
+  padding: 0;
   color: var(--text-primary);
-  position: relative;
-  z-index: 200;
+  z-index: 201;
 }
 .hamburger, .hamburger::before, .hamburger::after {
   display: block;
@@ -452,7 +458,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 @media (max-width: 960px) {
   .main-nav, .header-cta { display: none; }
-  .mobile-menu-toggle { display: block; }
+  .mobile-menu-toggle { display: flex; }
 }
 
 /* ==========================================================================
@@ -1464,6 +1470,12 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text-primary);
   text-align: center;
   margin-top: 3.5rem;
+}
+.opensource-tagline .heart-icon {
+  display: inline-block;
+  vertical-align: -3px;
+  margin: 0 0.15em;
+  filter: drop-shadow(0 0 10px rgba(244, 63, 94, 0.35));
 }
 
 .clients-section { padding-top: var(--section-pad); }

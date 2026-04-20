@@ -79,7 +79,7 @@
       items: [
         { k:"Fast-track security bug fixing", v:{basic:"✖", standard:"✔", plus:"✔", enterprise:"✔"} },
         { k:"CVE Vulnerabilities", v:{basic:"✔", standard:"✔", plus:"✔", enterprise:"✔"} },
-        { k:"User Autentification Support", v:{basic:"✔", standard:"✔", plus:"✔", enterprise:"✔"} }
+        { k:"User Authentication Support", v:{basic:"✔", standard:"✔", plus:"✔", enterprise:"✔"} }
       ]
     },
     {
