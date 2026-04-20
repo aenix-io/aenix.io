@@ -1,3 +1,11 @@
-<div class="two-cols">
-  {{ .Inner | markdownify }}
+{{- $image := .Get "image" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $imgRight := .Get "imgRight" -}}
+<div class="two-cols{{ if $imgRight }} two-cols--reverse{{ end }}">
+  <div class="two-cols-image">
+    <img src="{{ $image }}" alt="{{ $alt }}" loading="lazy">
+  </div>
+  <div class="two-cols-text">
+    {{ .Inner | markdownify }}
+  </div>
 </div>
