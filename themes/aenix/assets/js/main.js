@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const DRAW_TOTAL = 3200;
     const ERASE_DUR = 900;
 
-    // Upper intersection point between two circles whose centers share a y.
+    // Upper intersection point between two circles (smaller y in screen space).
     const upperIntersect = (c1, c2) => {
       const dx = c2.cx - c1.cx;
       const dy = c2.cy - c1.cy;
@@ -99,78 +99,85 @@ document.addEventListener('DOMContentLoaded', () => {
       const h = Math.sqrt(hSq);
       const px = c1.cx + (a * dx) / d;
       const py = c1.cy + (a * dy) / d;
-      // Two candidates — pick the one with smaller y (upper in screen space)
-      const ox = (h * dy) / d;
-      const oy = (h * dx) / d;
-      return { x: px + ox, y: py - oy };
+      // Perpendicular unit vector to the centerline
+      const ux = -dy / d;
+      const uy = dx / d;
+      // Two candidates; pick the one with smaller y
+      const y1 = py + h * uy;
+      const y2 = py - h * uy;
+      return y1 < y2
+        ? { x: px + h * ux, y: y1 }
+        : { x: px - h * ux, y: y2 };
     };
 
     const generateCloud = () => {
       const baseY = 465 + rand(-6, 6);
       const leftX = 90 + rand(-6, 6);
       const rightX = 710 + rand(-6, 6);
+      const pillH = 110 + rand(-6, 6);
+      const topLine = baseY - pillH;
+      const cornerR = pillH / 2;
       const N = 4;
 
-      // Four overlapping circles on top of a rectangular base, sized so one
-      // dominant dome anchors the silhouette (matches the classic cartoon
-      // cloud from the reference).
-      //       small       medium        BIG          medium-small
+      // Four overlapping circles on top of a pill-shaped base. Radii follow
+      // a small → medium → BIG → medium-small profile, matching the classic
+      // cartoon cloud reference. The base is a rectangle with fully rounded
+      // left/right sides (semicircular end caps, radius cornerR).
       const radii = [
         58 + rand(-6, 6),
         82 + rand(-8, 8),
         125 + rand(-10, 10),
         72 + rand(-8, 8),
       ];
-      const xRatios = [0.12, 0.30, 0.60, 0.86];
-      // cy jitter keeps the domes from sitting on a perfectly straight line
-      const cyJitter = [rand(-6, 4), rand(-8, 4), rand(-10, 0), rand(-6, 4)];
-      const totalW = rightX - leftX;
-      const topLine = baseY - 105 + rand(-6, 6);
+      const xRatios = [0.12, 0.32, 0.62, 0.88];
+
+      // The top of the pill runs between (leftX + cornerR, topLine) and
+      // (rightX - cornerR, topLine); humps sit on this flat segment.
+      const humpLeftX = leftX + cornerR;
+      const humpRightX = rightX - cornerR;
+      const humpSpan = humpRightX - humpLeftX;
 
       const circles = xRatios.map((t, i) => ({
-        cx: leftX + t * totalW + rand(-5, 5),
-        cy: topLine + cyJitter[i],
+        cx: humpLeftX + t * humpSpan + rand(-5, 5),
+        cy: topLine, // all on the top line for clean merge with pill
         r: radii[i],
       }));
-      // Make sure the leftmost and rightmost circles reach the cloud edges
-      circles[0].cx = leftX + circles[0].r;
-      circles[N - 1].cx = rightX - circles[N - 1].r;
+      // Lock first/last circle positions so their left/right extents
+      // coincide exactly with the pill's flat-top ends.
+      circles[0].cx = humpLeftX + circles[0].r;
+      circles[N - 1].cx = humpRightX - circles[N - 1].r;
 
-      // Build the outline as a path. Traversal goes clockwise on screen:
-      //   bottom-left → up left edge → over the domes (left→right) → down
-      //   right edge → across bottom → close.
-      // Each dome contributes a circular arc; intersections with neighbours
-      // define transition points, so the whole top silhouette is made of
-      // true circle arcs with no sharp joints.
+      // Traverse the silhouette clockwise on screen. Every arc uses
+      // sweep-flag=0 (counter-clockwise on screen when walked forward),
+      // which is what "bulging outward" means at every point on a convex
+      // outer boundary.
       const fmt = (n) => n.toFixed(1);
-      const leftTop = { x: circles[0].cx - circles[0].r, y: circles[0].cy };
-      const rightTop = {
-        x: circles[N - 1].cx + circles[N - 1].r,
-        y: circles[N - 1].cy,
-      };
-      let d = `M ${fmt(leftX)} ${fmt(baseY)}`;
-      d += ` L ${fmt(leftTop.x)} ${fmt(leftTop.y)}`;
-      for (let i = 0; i < N; i++) {
+      let d = `M ${fmt(humpLeftX)} ${fmt(baseY)}`;
+      // Flat bottom
+      d += ` L ${fmt(humpRightX)} ${fmt(baseY)}`;
+      // Right rounded end cap (bottom-right → top-right via rightX)
+      d += ` A ${fmt(cornerR)} ${fmt(cornerR)} 0 0 0 ${fmt(humpRightX)} ${fmt(topLine)}`;
+      // Humps, walked right → left over the top
+      for (let i = N - 1; i >= 0; i--) {
         const c = circles[i];
         let ex, ey;
-        if (i === N - 1) {
-          ex = rightTop.x;
-          ey = rightTop.y;
+        if (i === 0) {
+          ex = humpLeftX;
+          ey = topLine;
         } else {
-          const inter = upperIntersect(c, circles[i + 1]);
+          const inter = upperIntersect(circles[i - 1], c);
           if (inter) {
             ex = inter.x;
             ey = inter.y;
           } else {
-            ex = c.cx + c.r;
+            ex = c.cx - c.r;
             ey = c.cy;
           }
         }
-        // sweep-flag = 1 traces the short arc going clockwise on screen
-        // (i.e. over the top of the dome) from left to right.
-        d += ` A ${fmt(c.r)} ${fmt(c.r)} 0 0 1 ${fmt(ex)} ${fmt(ey)}`;
+        d += ` A ${fmt(c.r)} ${fmt(c.r)} 0 0 0 ${fmt(ex)} ${fmt(ey)}`;
       }
-      d += ` L ${fmt(rightX)} ${fmt(baseY)}`;
+      // Left rounded end cap (top-left → bottom-left via leftX)
+      d += ` A ${fmt(cornerR)} ${fmt(cornerR)} 0 0 0 ${fmt(humpLeftX)} ${fmt(baseY)}`;
       d += ` Z`;
 
       const mainCloudPaths = heroCloudSvg.querySelectorAll('.hc-cloud path');
