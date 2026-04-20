@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ERASE_DUR = 900;
 
     const generateCloud = () => {
-      const baseY = 465 + rand(-8, 8);
+      const baseY = 420 + rand(-8, 8);
       const leftX = 90 + rand(-8, 8);
       const rightX = 710 + rand(-8, 8);
       const N = 3 + Math.floor(Math.random() * 3);
