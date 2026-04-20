@@ -82,31 +82,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const generateCloud = () => {
       const baseY = 465 + rand(-6, 6);
-      const N = 3 + Math.floor(Math.random() * 3); // total domes 3..5
+      const N = 3 + Math.floor(Math.random() * 4); // total domes 3..6
 
-      // N distinct radii drawn from N non-overlapping size buckets. No
-      // interior pinning, no peak ratio: any circle can be the biggest
-      // and can sit anywhere in the chain. Roughly doubled from the
-      // previous range so the cloud reads much larger.
-      const rMin = 120;
-      const rMax = [320, 290, 250][Math.min(N - 3, 2)];
+      // N distinct radii drawn from N non-overlapping size buckets.
+      const rMin = 60;
+      const rMax = [160, 145, 125, 110][Math.min(N - 3, 3)];
       const step = (rMax - rMin) / N;
       const radii = [];
       for (let i = 0; i < N; i++) {
         radii.push(rMin + i * step + rand(0, step * 0.6));
       }
-      for (let i = radii.length - 1; i > 0; i--) {
+      // Sort ascending, then pin the two smallest to the edges so every
+      // interior dome comes out taller than both corner domes. Interior
+      // radii are shuffled among themselves; the two edge slots swap
+      // randomly as well.
+      radii.sort((a, b) => a - b);
+      const edgeA = radii[0];
+      const edgeB = radii[1];
+      const interior = radii.slice(2);
+      for (let i = interior.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [radii[i], radii[j]] = [radii[j], radii[i]];
+        [interior[i], interior[j]] = [interior[j], interior[i]];
       }
+      const [leftEdge, rightEdge] = Math.random() < 0.5 ? [edgeA, edgeB] : [edgeB, edgeA];
+      radii.length = 0;
+      radii.push(leftEdge, ...interior, rightEdge);
 
       // Every circle's BOTTOM sits exactly on baseY, so nothing can ever
       // extend past the base. Centre: (cx, baseY - r).
       const allCircles = radii.map((r) => ({ r, cy: baseY - r }));
 
       // Packing factors — tighter when there are more domes so the
-      // overall width stays manageable.
-      const GAP = [0.82, 0.78, 0.72][Math.min(N - 3, 2)];
+      // overall width stays inside the viewBox.
+      const GAP = [0.82, 0.78, 0.72, 0.68][Math.min(N - 3, 3)];
 
       const xPositions = [0];
       for (let i = 1; i < N; i++) {
