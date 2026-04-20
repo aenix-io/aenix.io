@@ -320,6 +320,22 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .nav-link:hover { color: var(--text-primary); }
 
+/* Contact (or other flagged) nav item rendered as a CTA pill */
+.nav-item--cta { margin-left: 10px; }
+.nav-link--cta {
+  padding: 8px 18px;
+  color: var(--text-primary);
+  border: 1px solid var(--border-default);
+  border-radius: 999px;
+  font-weight: 600;
+  transition: border-color 0.2s var(--ease), background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.nav-link--cta:hover {
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+  background: rgba(1,165,255,0.05);
+}
+
 .dropdown-arrow { transition: transform 0.2s var(--ease); opacity: 0.4; }
 .nav-item.has-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
 
@@ -1729,6 +1745,18 @@ img { max-width: 100%; height: auto; display: block; }
   transition: transform 0.4s var(--ease);
 }
 .card:hover .card-image img { transform: scale(1.03); }
+.card-image--placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(1,165,255,0.18), transparent 60%),
+    radial-gradient(circle at 70% 70%, rgba(102,27,225,0.18), transparent 60%),
+    var(--bg-secondary);
+  color: rgba(1,165,255,0.7);
+  transition: transform 0.4s var(--ease);
+}
+.card:hover .card-image--placeholder { transform: scale(1.03); }
 
 .card-body { padding: 1.5rem; }
 .card-title { font-size: 1.0625rem; margin-bottom: 0.5rem; }

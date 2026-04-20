@@ -103,6 +103,8 @@ menus:
     - name: Contact
       url: /contact/
       weight: 50
+      params:
+        cta: true
 
   footer:
     - name: Cozystack

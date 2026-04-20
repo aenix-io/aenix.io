@@ -52,12 +52,12 @@
 
 /* Desktop table */
 .cozy-pricing .cp-table-wrap {
-  overflow-x: auto;
+  /* overflow-x auto was breaking sticky <thead> by creating a scroll container;
+     the table fits within the 1200px container at all desktop widths we target */
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-default);
   background: var(--glass-bg);
   backdrop-filter: var(--glass-blur);
-  -webkit-overflow-scrolling: touch;
   position: relative;
 }
 .cozy-pricing table {
@@ -77,16 +77,19 @@
   color: var(--text-secondary);
 }
 .cozy-pricing thead th {
-  background: rgba(1,165,255,0.06);
+  /* Solid fill so the sticky row doesn't show body content bleeding through */
+  background: #0F1525;
   color: var(--brand-primary);
   font-size: 14px;
   font-weight: 700;
   border-bottom: 1px solid var(--border-default);
-  position: sticky; top: 0; z-index: 3;
+  /* Stick below the site header (72px tall), not at viewport top */
+  position: sticky; top: 72px; z-index: 20;
   padding: 20px 18px;
+  box-shadow: 0 1px 0 var(--border-default);
 }
 .cozy-pricing thead th:first-child {
-  background: rgba(1,165,255,0.06);
+  background: #0F1525;
 }
 .cozy-pricing td:first-child, .cozy-pricing th:first-child {
   text-align: left;

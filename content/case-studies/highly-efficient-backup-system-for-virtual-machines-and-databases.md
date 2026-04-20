@@ -6,7 +6,6 @@ aliases:
 image: "/images/uploads/2023/12/a0dc3433-ffe7-4c92-b2e7-81f8df67a7cc.webp"
 ---
 
-Development of a large-scale backup system for virtual machines. The implementation of this system reduced the cost of storing backup copies by up to 75%!
 
 ## Objective
 

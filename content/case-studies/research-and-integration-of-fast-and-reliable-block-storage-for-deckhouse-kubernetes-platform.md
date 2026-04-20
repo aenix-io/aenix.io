@@ -6,7 +6,6 @@ aliases:
 image: "/images/uploads/2023/12/d9c97ad4-81c8-47ec-ad45-0767466a9ca5.webp"
 ---
 
-Our task was to find an easy-to-use, reliable block-type storage for Kubernetes. Hence we benchmarked several Open Source solutions to see how they behave under various conditions and ultimately choosing to adopt LINSTOR.
 
 ## Objective
 

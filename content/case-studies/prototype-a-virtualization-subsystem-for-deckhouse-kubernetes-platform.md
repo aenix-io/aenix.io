@@ -6,7 +6,6 @@ aliases:
 image: "/images/uploads/2023/12/5248ce00-9428-4fb8-9aa7-215209b86d39.webp"
 ---
 
-Development of a Kubernetes-native cloud virtualization system, tailored to integrate with the Deckhouse Kubernetes platform, enabling compatibility with its existing modules.
 
 ## Objective
 

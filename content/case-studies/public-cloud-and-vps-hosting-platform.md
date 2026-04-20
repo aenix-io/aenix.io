@@ -6,7 +6,6 @@ aliases:
 image: "/images/uploads/2023/12/78f250bb-636e-4db7-a20a-9f2ab1a0b4f8.webp"
 ---
 
-Development of a cloud virtualization system for VPS hosting and public cloud platform.
 
 ## Objective
 

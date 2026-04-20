@@ -6,7 +6,6 @@ aliases:
 image: "/images/uploads/2023/12/d0ef24a4-35e7-435c-9d1d-e19c81b3de75.webp"
 ---
 
-The comprehensive data center automation project, implementing infrastructure-as-code, stateless PXE-based server farm, software-defined storage, and declarative workload management.
 
 ## Objective
 

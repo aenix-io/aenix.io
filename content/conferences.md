@@ -29,10 +29,6 @@ videos:
 
 ![Conferences](/images/uploads/2024/02/blog-tech-conferences.jpg)
 
-## Conference Talks and Presentations by our team
-
-### Videos
-
 {{< videos >}}
 
 {{< cta >}}

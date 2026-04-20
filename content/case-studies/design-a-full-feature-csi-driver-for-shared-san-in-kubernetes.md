@@ -6,7 +6,6 @@ aliases:
 image: "/images/uploads/2023/12/60028b6b-a1ce-43e2-9f7f-ee020f4fbb45.webp"
 ---
 
-A complex research of the new storage subsystem in the Linux kernel and QEMU Storage Daemon and developing the design for an innovative CSI driver for shared LUNs in Kubernetes.
 
 ## Objective
 
