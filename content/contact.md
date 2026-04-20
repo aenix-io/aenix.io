@@ -8,12 +8,6 @@ zcal:
   url: "https://zcal.co/i/s5C4-cO1"
   text: "Aenix meeting - Schedule a meeting"
 
-hubspot_form:
-  portal_id: "14498285"
-  form_id: "9c75a775-0206-45b1-b0f5-e34454247317"
-  region: "eu1"
-  script: "//js-eu1.hsforms.net/forms/embed/v2.js"
-
 offices:
   - name: "EU Office"
     company: "AENIX s.r.o."
@@ -43,14 +37,7 @@ offices:
 
 ## Write to us
 
-<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/embed/v2.js"></script>
-<script>
-  hbspt.forms.create({
-    portalId: "14498285",
-    formId: "9c75a775-0206-45b1-b0f5-e34454247317",
-    region: "eu1"
-  });
-</script>
+<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/cscyywLwAlFHb2ECKg45ES0ur5wQYKEzRUBFeEytdwPJtOtoAfILvFxKP6QXbZTvuX"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
 
 ## Company Details {#details}
 
