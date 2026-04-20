@@ -109,6 +109,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const interiorIdx = 1 + Math.floor(Math.random() * (N - 2));
         [radii[maxIdx], radii[interiorIdx]] = [radii[interiorIdx], radii[maxIdx]];
       }
+      // Keep the interior peak at least 1.5× taller than either edge dome
+      const peakR = Math.max(...radii);
+      const edgeCap = peakR / 1.5;
+      if (radii[0] > edgeCap) radii[0] = edgeCap;
+      if (radii[N - 1] > edgeCap) radii[N - 1] = edgeCap;
 
       // Overlap factor: adjacent centers sit at GAP * (r_i + r_{i+1})
       // apart. Tighter packing for more domes keeps total width in check.
