@@ -67,10 +67,8 @@ menus:
       weight: 30
 
     - name: Blog
-      url: https://blog.aenix.io/
+      url: /blog/
       weight: 35
-      params:
-        external: true
 
     - name: About Us
       url: /about-us/
