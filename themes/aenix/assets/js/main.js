@@ -40,6 +40,61 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  /* ---- Hero blueprint cloud ---- */
+  const heroCloud = document.querySelector('.hero-cloud');
+  const heroCloudSvg = heroCloud && heroCloud.querySelector('.hero-cloud-svg');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (heroCloudSvg) {
+    const groups = [
+      { sel: '.hc-grid line',  delay: 0,    dur: 900,  step: 30 },
+      { sel: '.hc-dims path',  delay: 300,  dur: 800,  step: 40 },
+      { sel: '.hc-cloud path', delay: 700,  dur: 1800, step: 400 },
+      { sel: '.hc-seams path', delay: 2200, dur: 700,  step: 80 },
+      { sel: '.hc-back path',  delay: 2200, dur: 700,  step: 0 },
+      { sel: '.hc-hatch line', delay: 2600, dur: 500,  step: 40 },
+    ];
+    groups.forEach(g => {
+      heroCloudSvg.querySelectorAll(g.sel).forEach((el, i) => {
+        let len = 100;
+        try { len = el.getTotalLength() || 100; } catch (_) {}
+        el.style.setProperty('--hc-len', `${len}px`);
+        if (!prefersReduced) {
+          el.style.transition = `stroke-dashoffset ${g.dur}ms ease-out ${g.delay + i * g.step}ms`;
+        }
+      });
+    });
+    if (prefersReduced) {
+      heroCloudSvg.classList.add('hc-animate');
+      heroCloudSvg.querySelectorAll('.hc-labels text').forEach(t => t.classList.add('visible'));
+    } else {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        heroCloudSvg.classList.add('hc-animate');
+      }));
+      setTimeout(() => {
+        heroCloudSvg.querySelectorAll('.hc-labels text').forEach(t => t.classList.add('visible'));
+      }, 1300);
+    }
+
+    const hero = document.getElementById('hero');
+    if (hero && !prefersReduced) {
+      let raf = 0, px = 0, py = 0;
+      const apply = () => {
+        raf = 0;
+        const r = heroCloud.getBoundingClientRect();
+        heroCloud.style.setProperty('--mx', `${px - r.left}px`);
+        heroCloud.style.setProperty('--my', `${py - r.top}px`);
+      };
+      hero.addEventListener('mousemove', (e) => {
+        px = e.clientX; py = e.clientY;
+        if (!raf) raf = requestAnimationFrame(apply);
+      });
+      hero.addEventListener('mouseleave', () => {
+        heroCloud.style.removeProperty('--mx');
+        heroCloud.style.removeProperty('--my');
+      });
+    }
+  }
+
   /* ---- Reveal animations on scroll ---- */
   const reveals = document.querySelectorAll('.reveal');
   if (reveals.length > 0 && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
