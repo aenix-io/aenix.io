@@ -4,10 +4,14 @@
 {{ end }}
 
 {{ define "main" }}
-<section class="page-header">
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+  </div>
   <div class="container">
-    <h1>{{ .Title }}</h1>
-    {{ with .Description }}<p class="page-subtitle">{{ . }}</p>{{ end }}
+    <h1 class="page-hero-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
   </div>
 </section>
 
