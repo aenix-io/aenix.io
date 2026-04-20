@@ -129,7 +129,7 @@
       return `<div class="cp-price">${usd.format(p.price[mode])}<span> / month</span></div>
               <div class="cp-billed">billed ${mode === 'annual' ? 'annually' : 'monthly'}</div>`;
     }
-    return `<a href="${p.contactUrl}" target="_blank" rel="noopener" class="cp-request-btn">Request pricing</a>`;
+    return `<a href="${p.contactUrl}" target="_blank" rel="noopener" class="cp-request-btn">Request quote</a>`;
   }
 
   function renderTable(){
