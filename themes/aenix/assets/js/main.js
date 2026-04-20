@@ -47,44 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroCloudSvg) {
     const rand = (a, b) => a + Math.random() * (b - a);
 
-    const smoothClosed = (pts) => {
-      const n = pts.length;
-      const mx0 = (pts[n-1].x + pts[0].x) / 2;
-      const my0 = (pts[n-1].y + pts[0].y) / 2;
-      let d = `M ${mx0.toFixed(1)} ${my0.toFixed(1)}`;
-      for (let i = 0; i < n; i++) {
-        const cur = pts[i];
-        const nxt = pts[(i + 1) % n];
-        const ex = (cur.x + nxt.x) / 2;
-        const ey = (cur.y + nxt.y) / 2;
-        d += ` Q ${cur.x.toFixed(1)} ${cur.y.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
-      }
-      return d + ' Z';
-    };
-
-    const smoothOpen = (pts) => {
-      if (pts.length < 2) return '';
-      let d = `M ${pts[0].x.toFixed(1)} ${pts[0].y.toFixed(1)}`;
-      for (let i = 1; i < pts.length - 1; i++) {
-        const cur = pts[i], nxt = pts[i+1];
-        const ex = (cur.x + nxt.x) / 2;
-        const ey = (cur.y + nxt.y) / 2;
-        d += ` Q ${cur.x.toFixed(1)} ${cur.y.toFixed(1)} ${ex.toFixed(1)} ${ey.toFixed(1)}`;
-      }
-      const last = pts[pts.length - 1];
-      d += ` L ${last.x.toFixed(1)} ${last.y.toFixed(1)}`;
-      return d;
-    };
-
     const DRAW_GROUPS = [
       { sel: '.hc-grid line',  delay: 0,    dur: 900,  step: 30 },
       { sel: '.hc-dims path',  delay: 300,  dur: 800,  step: 40 },
       { sel: '.hc-cloud path', delay: 700,  dur: 1800, step: 400 },
-      { sel: '.hc-seams path', delay: 2200, dur: 700,  step: 80 },
-      { sel: '.hc-back path',  delay: 2200, dur: 700,  step: 0 },
-      { sel: '.hc-hatch line', delay: 2600, dur: 500,  step: 40 },
     ];
-    const DRAW_TOTAL = 3200;
+    const DRAW_TOTAL = 2600;
     const ERASE_DUR = 900;
 
     // Upper intersection point between two circles (smaller y in screen space).
@@ -184,44 +152,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (mainCloudPaths[0]) mainCloudPaths[0].setAttribute('d', d);
       if (mainCloudPaths[1]) mainCloudPaths[1].setAttribute('d', d);
 
-      // Decorative inner curls between adjacent domes.
-      const backPaths = heroCloudSvg.querySelectorAll('.hc-back path');
-      for (let j = 0; j < backPaths.length; j++) {
-        if (j >= N - 1) {
-          backPaths[j].setAttribute('d', '');
-          continue;
-        }
-        const p1 = circles[j];
-        const p2 = circles[j + 1];
-        const vx = (p1.cx + p2.cx) / 2 + rand(-6, 6);
-        const vy = Math.max(p1.cy, p2.cy) + 35 + rand(0, 8);
-        const half = Math.min(26, (p2.cx - p1.cx) / 3) + rand(-4, 4);
-        const dPath = `M ${fmt(vx - half)} ${fmt(vy - 8)} Q ${fmt(vx)} ${fmt(vy + 22)} ${fmt(vx + half)} ${fmt(vy - 8)}`;
-        backPaths[j].setAttribute('d', dPath);
-      }
-
-      const seamPath = heroCloudSvg.querySelector('.hc-seam path');
-      if (seamPath) {
-        const seamPts = [];
-        const sStart = leftX + 60 + rand(-10, 10);
-        const sEnd = rightX - 60 + rand(-10, 10);
-        const steps = 5 + Math.floor(Math.random() * 3);
-        for (let i = 0; i <= steps; i++) {
-          const t = i / steps;
-          seamPts.push({
-            x: sStart + t * (sEnd - sStart),
-            y: baseY - 40 + rand(-10, 10),
-          });
-        }
-        seamPath.setAttribute('d', smoothOpen(seamPts));
-      }
-
-      heroCloudSvg.querySelectorAll('.hc-hatch line').forEach(el => {
-        el.style.removeProperty('display');
-        const x = (+el.getAttribute('x1') + +el.getAttribute('x2')) / 2;
-        const y = (+el.getAttribute('y1') + +el.getAttribute('y2')) / 2;
-        el.setAttribute('transform', `rotate(${rand(-8, 8)} ${x} ${y}) translate(${rand(-3, 3)} ${rand(-3, 3)})`);
-      });
       heroCloudSvg.querySelectorAll('.hc-labels text').forEach(el => {
         const x = +el.getAttribute('x'), y = +el.getAttribute('y');
         el.setAttribute('transform', `rotate(${rand(-4, 4)} ${x} ${y})`);
