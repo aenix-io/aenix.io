@@ -104,12 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
       for (let i = 0; i < N; i++) {
         const t = (i + 0.5) / N;
         const x = spanLeft + t * span + rand(-15, 15);
-        const y = minY + rand(0, 55);
+        const tall = Math.random() < 0.4;
+        const y = minY + (tall ? rand(-35, 15) : rand(30, 120));
         cloudPts.push({x, y});
         if (i < N - 1) {
           const vt = (i + 1) / N;
           const vx = spanLeft + vt * span + rand(-10, 10);
-          const vy = y + 30 + rand(0, 25);
+          const vy = y + 40 + rand(0, 35);
           cloudPts.push({x: vx, y: vy});
         }
       }
@@ -123,28 +124,21 @@ document.addEventListener('DOMContentLoaded', () => {
       if (mainCloudPaths[0]) mainCloudPaths[0].setAttribute('d', cloudD);
       if (mainCloudPaths[1]) mainCloudPaths[1].setAttribute('d', ghostD);
 
+      const peakIdx = [];
+      for (let j = 3; j < cloudPts.length - 3; j += 2) peakIdx.push(j);
       const backPaths = heroCloudSvg.querySelectorAll('.hc-back path');
-      if (backPaths.length) {
-        const bN = 3 + Math.floor(Math.random() * 3);
-        const bStart = leftX + 160 + rand(-20, 20);
-        const bEnd = rightX - 160 + rand(-20, 20);
-        const bSpan = bEnd - bStart;
-        const bMinY = minY + 30;
-        const backPts = [];
-        backPts.push({x: bStart, y: baseY - 130 + rand(-10, 10)});
-        for (let i = 0; i < bN; i++) {
-          const t = (i + 0.5) / bN;
-          const x = bStart + t * bSpan + rand(-10, 10);
-          const y = bMinY + rand(0, 50);
-          backPts.push({x, y});
-          if (i < bN - 1) {
-            const vt = (i + 1) / bN;
-            backPts.push({x: bStart + vt * bSpan, y: y + 25 + rand(0, 15)});
-          }
+      for (let j = 0; j < backPaths.length; j++) {
+        if (j >= peakIdx.length - 1) {
+          backPaths[j].setAttribute('d', '');
+          continue;
         }
-        backPts.push({x: bEnd, y: baseY - 130 + rand(-10, 10)});
-        backPaths[0].setAttribute('d', smoothOpen(backPts));
-        for (let i = 1; i < backPaths.length; i++) backPaths[i].setAttribute('d', '');
+        const p1 = cloudPts[peakIdx[j]];
+        const p2 = cloudPts[peakIdx[j + 1]];
+        const vx = (p1.x + p2.x) / 2 + rand(-6, 6);
+        const vy = Math.max(p1.y, p2.y) + 28 + rand(0, 10);
+        const half = Math.min(30, (p2.x - p1.x) / 2.5) + rand(-4, 4);
+        const d = `M ${(vx - half).toFixed(1)} ${(vy - 10).toFixed(1)} Q ${vx.toFixed(1)} ${(vy + 22).toFixed(1)} ${(vx + half).toFixed(1)} ${(vy - 10).toFixed(1)}`;
+        backPaths[j].setAttribute('d', d);
       }
 
       const seamPath = heroCloudSvg.querySelector('.hc-seam path');
@@ -157,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const t = i / steps;
           seamPts.push({
             x: sStart + t * (sEnd - sStart),
-            y: baseY - 65 + rand(-20, 20),
+            y: baseY - 40 + rand(-10, 10),
           });
         }
         seamPath.setAttribute('d', smoothOpen(seamPts));
@@ -221,6 +215,21 @@ document.addEventListener('DOMContentLoaded', () => {
     generateCloud();
     setupDrawTransitions();
     startDraw();
+
+    let busy = false;
+    heroCloudSvg.addEventListener('click', () => {
+      if (busy || prefersReduced) return;
+      busy = true;
+      setupEraseTransitions();
+      heroCloudSvg.classList.remove('hc-animate');
+      heroCloudSvg.querySelectorAll('.hc-labels text').forEach(t => t.classList.remove('visible'));
+      setTimeout(() => {
+        generateCloud();
+        setupDrawTransitions();
+        startDraw();
+        setTimeout(() => { busy = false; }, DRAW_TOTAL);
+      }, ERASE_DUR + 50);
+    });
 
     const hero = document.getElementById('hero');
     if (hero && !prefersReduced) {

@@ -586,6 +586,8 @@ img { max-width: 100%; height: auto; display: block; }
   height: auto;
   overflow: visible;
   display: block;
+  pointer-events: auto;
+  cursor: pointer;
 }
 .hero-cloud-svg text { opacity: 0; }
 .hero-cloud-svg .hc-labels text.visible { opacity: 0.75; transition: opacity 600ms ease-out; }
