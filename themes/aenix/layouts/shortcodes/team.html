@@ -3,9 +3,7 @@
   {{ $member := . }}
   <div class="team-card">
     {{ with .photo }}
-    <div class="team-photo">
-      <img src="{{ . }}" alt="{{ $member.name }}" loading="lazy">
-    </div>
+    <div class="team-photo" style="background-image: url('{{ . }}');" role="img" aria-label="{{ $member.name }}"></div>
     {{ end }}
     <h3 class="team-name">{{ .name }}</h3>
     <p class="team-role">{{ .role }}</p>
