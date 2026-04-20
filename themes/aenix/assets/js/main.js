@@ -91,29 +91,41 @@ document.addEventListener('DOMContentLoaded', () => {
       const baseY = 465 + rand(-8, 8);
       const leftX = 90 + rand(-8, 8);
       const rightX = 710 + rand(-8, 8);
-      const minY = 150 + rand(-15, 15);
-      const N = 4 + Math.floor(Math.random() * 2);
+      const N = 3 + Math.floor(Math.random() * 3);
+
+      // Relative bump heights: medium → high → mid → low (→ lowest)
+      // 1 = tallest (highest peak), 0.2 = lowest short bump.
+      const PROFILES = {
+        3: [0.55, 1.00, 0.30],
+        4: [0.55, 1.00, 0.70, 0.25],
+        5: [0.55, 1.00, 0.75, 0.40, 0.25],
+      };
+      const profile = PROFILES[N];
+      const MAX_BUMP = 310;
+      const peakY = (h) => baseY - h * MAX_BUMP + rand(-10, 10);
 
       const cloudPts = [];
       cloudPts.push({x: leftX, y: baseY + rand(-4, 4)});
       cloudPts.push({x: leftX - 35, y: baseY - 80 + rand(-10, 10)});
-      cloudPts.push({x: leftX + 10, y: baseY - 180 + rand(-15, 15)});
+      cloudPts.push({x: leftX + 10, y: peakY(profile[0]) - 20});
       const spanLeft = leftX + 70;
       const spanRight = rightX - 70;
       const span = spanRight - spanLeft;
       for (let i = 0; i < N; i++) {
         const t = (i + 0.5) / N;
-        const x = spanLeft + t * span + rand(-10, 10);
-        const y = minY + rand(-20, 25);
+        const x = spanLeft + t * span + rand(-8, 8);
+        const y = peakY(profile[i]);
         cloudPts.push({x, y});
         if (i < N - 1) {
           const vt = (i + 1) / N;
-          const vx = spanLeft + vt * span + rand(-8, 8);
-          const vy = minY + 70 + rand(-10, 15);
+          const vx = spanLeft + vt * span + rand(-6, 6);
+          // Valley sits between neighbouring peak heights, dipped a bit further
+          const peakAvg = (profile[i] + profile[i + 1]) / 2;
+          const vy = baseY - peakAvg * MAX_BUMP * 0.55 + rand(-10, 10);
           cloudPts.push({x: vx, y: vy});
         }
       }
-      cloudPts.push({x: rightX - 10, y: baseY - 180 + rand(-15, 15)});
+      cloudPts.push({x: rightX - 10, y: peakY(profile[N - 1]) - 20});
       cloudPts.push({x: rightX + 35, y: baseY - 80 + rand(-10, 10)});
       cloudPts.push({x: rightX, y: baseY + rand(-4, 4)});
 
