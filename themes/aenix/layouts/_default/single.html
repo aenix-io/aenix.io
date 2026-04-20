@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article class="page">
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="page-hero-grid"></div>
+      <div class="page-hero-glow"></div>
+    </div>
+    <div class="container">
+      <h1 class="page-hero-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+      {{ with .Params.heroCta }}
+      <div class="page-hero-cta">
+        <a href="{{ .url }}" class="btn btn-primary btn-lg">{{ .text }}</a>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

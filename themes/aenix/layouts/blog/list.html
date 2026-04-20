@@ -1,0 +1,58 @@
+{{ define "main" }}
+{{ $feed := .Params.blog.feed_url | default "https://blog.aenix.io/feed" }}
+{{ $source := .Params.blog.source_url | default "https://blog.aenix.io/" }}
+{{ $sourceLabel := .Params.blog.source_label | default "blog.aenix.io" }}
+
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+  </div>
+  <div class="container">
+    <h1 class="page-hero-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<div class="section">
+  <div class="container">
+    {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . }}</div>{{ end }}
+
+    <div
+      class="blog-feed"
+      data-blog-feed="{{ $feed }}"
+      data-blog-source="{{ $source }}"
+      data-blog-source-label="{{ $sourceLabel }}"
+    >
+      <div class="blog-feed-status" data-blog-status role="status" aria-live="polite">
+        <div class="blog-feed-spinner" aria-hidden="true"></div>
+        <p>Loading latest articles…</p>
+      </div>
+
+      <div class="card-grid blog-grid" data-blog-grid hidden></div>
+
+      <div class="blog-feed-fallback" data-blog-fallback hidden>
+        <p>We couldn't load the feed right now.</p>
+        <a class="btn btn-ghost" href="{{ $source }}" target="_blank" rel="noopener">
+          Open blog on {{ $sourceLabel }}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 1.5h7v7M10.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+      <div class="blog-feed-footer" data-blog-footer hidden>
+        <a class="blog-feed-all" href="{{ $source }}" target="_blank" rel="noopener">
+          All articles on {{ $sourceLabel }}
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3.5 1.5h7v7M10.5 1.5L1.5 10.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+  {{ $blog := resources.Get "js/blog-rss.js" | fingerprint }}
+  {{ if $blog }}
+    <script src="{{ $blog.RelPermalink }}" defer></script>
+  {{ end }}
+{{ end }}

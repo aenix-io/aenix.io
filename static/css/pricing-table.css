@@ -1,0 +1,259 @@
+/* Pricing table — dark theme, matching main.css tokens */
+.cozy-pricing {
+  font-family: 'Inter', -apple-system, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  color: var(--text-primary);
+}
+
+/* Billing toggle */
+.cozy-pricing .cp-toggle {
+  display: flex;
+  justify-content: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-default);
+  border-radius: 999px;
+  width: fit-content;
+  margin: 0 auto 32px;
+  padding: 4px;
+}
+.cozy-pricing .cp-tbtn {
+  border: none;
+  padding: 10px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--text-secondary);
+  background: transparent;
+  cursor: pointer;
+  transition: 0.25s var(--ease);
+}
+.cozy-pricing .cp-tbtn:hover { color: var(--text-primary); }
+.cozy-pricing .cp-tbtn.cp-active {
+  background: linear-gradient(160deg, #1a8fe6 0%, var(--brand-secondary, #0971EB) 45%, #0756b8 100%);
+  color: #fff;
+  border: 1px solid rgba(1,165,255,0.15);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.4),
+    0 4px 12px rgba(1,165,255,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.cozy-pricing .cp-discount {
+  font-size: 12px;
+  color: #0B0F1A;
+  background: #D4F6B2;
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin-left: 8px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* Desktop table */
+.cozy-pricing .cp-table-wrap {
+  /* overflow-x auto was breaking sticky <thead> by creating a scroll container;
+     the table fits within the 1200px container at all desktop widths we target */
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-default);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  position: relative;
+}
+.cozy-pricing table {
+  width: 100%;
+  border-collapse: separate !important;
+  border-spacing: 0;
+  min-width: 940px;
+  margin: 0;
+}
+.cozy-pricing th, .cozy-pricing td {
+  padding: 14px 18px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  background: transparent;
+  line-height: 1.45;
+  color: var(--text-secondary);
+}
+.cozy-pricing thead th {
+  /* Solid fill so the sticky row doesn't show body content bleeding through */
+  background: #0F1525;
+  color: var(--brand-primary);
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-default);
+  /* Stick just below the site header (height 60px in scrolled state, z:100) */
+  position: sticky; top: 60px; z-index: 90;
+  padding: 20px 18px;
+  box-shadow: 0 1px 0 var(--border-default);
+}
+.cozy-pricing thead th:first-child {
+  background: #0F1525;
+  /* Corner cell must stay above the body-sticky first column */
+  z-index: 91;
+}
+.cozy-pricing td:first-child, .cozy-pricing th:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  padding-left: 28px;
+  position: sticky; left: 0; z-index: 2;
+  background: #0B0F1A;
+}
+.cozy-pricing tbody tr td:first-child {
+  background: #0B0F1A;
+}
+.cozy-pricing tbody tr td {
+  border-top: 1px solid rgba(255,255,255,0.04);
+}
+.cozy-pricing .cp-section-row td {
+  background: transparent !important;
+  font-weight: 700;
+  color: var(--brand-primary);
+  font-size: 13px;
+  text-align: left;
+  padding-top: 28px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  position: static;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-top: none;
+}
+.cozy-pricing tbody tr.cp-alt td { background: rgba(255,255,255,0.015); }
+.cozy-pricing tbody tr.cp-alt td:first-child { background: #0d121e; }
+.cozy-pricing tbody tr:hover td { background: rgba(1,165,255,0.03); }
+.cozy-pricing tbody tr:hover td:first-child { background: #111827; }
+
+/* UI atoms */
+.cozy-pricing .cp-plan {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.01em;
+}
+.cozy-pricing .cp-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 6px;
+  white-space: nowrap;
+}
+.cozy-pricing .cp-price span {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-left: 4px;
+}
+.cozy-pricing .cp-billed {
+  color: var(--text-muted, var(--text-secondary));
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+  opacity: 0.7;
+}
+.cozy-pricing .cp-ok {
+  color: #D4F6B2;
+  font-weight: 700;
+  font-size: 16px;
+}
+.cozy-pricing .cp-no {
+  color: rgba(255,255,255,0.2);
+  font-size: 16px;
+}
+
+/* Request quote button */
+.cozy-pricing .cp-request-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  background: linear-gradient(160deg, #1a8fe6 0%, var(--brand-secondary, #0971EB) 45%, #0756b8 100%);
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(1,165,255,0.15);
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.35s var(--ease);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.4),
+    0 4px 12px rgba(1,165,255,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.cozy-pricing .cp-request-btn:hover {
+  background: linear-gradient(160deg, #2196f3 0%, #0a7de8 45%, var(--brand-secondary, #0971EB) 100%);
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.4),
+    0 6px 24px rgba(1,165,255,0.2),
+    inset 0 1px 0 rgba(255,255,255,0.12);
+}
+
+/* Mobile cards */
+.cozy-pricing .cp-cards { display: none; }
+@media (max-width: 720px) {
+  .cozy-pricing .cp-table-wrap { display: none; }
+  .cozy-pricing .cp-cards { display: grid; gap: 16px; }
+  .cozy-pricing .cp-card {
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    overflow: hidden;
+  }
+  .cozy-pricing .cp-chead {
+    border-bottom: 1px solid var(--border-default);
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+  }
+  .cozy-pricing .cp-section {
+    margin-top: 18px;
+    font-weight: 700;
+    color: var(--brand-primary);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .cozy-pricing .cp-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
+  .cozy-pricing .cp-row:first-of-type { border-top: none; }
+  .cozy-pricing .cp-k {
+    flex: 1 1 auto;
+    padding-right: 12px;
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+  .cozy-pricing .cp-v {
+    flex: 0 0 auto;
+    text-align: right;
+    white-space: nowrap;
+    color: var(--text-primary);
+  }
+  .cozy-pricing .cp-row.cp-long {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .cozy-pricing .cp-row.cp-long .cp-k {
+    padding-right: 0;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .cozy-pricing .cp-row.cp-long .cp-v {
+    text-align: left;
+    white-space: normal;
+    word-break: break-word;
+    hyphens: auto;
+    color: var(--text-secondary);
+  }
+}

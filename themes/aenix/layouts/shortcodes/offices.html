@@ -1,0 +1,14 @@
+<div class="offices-grid">
+  {{ range .Page.Params.offices }}
+  <div class="office-card">
+    <h3 class="office-name">{{ .name }}</h3>
+    <p class="office-company">{{ .company }}</p>
+    <p class="office-address">{{ .address | replaceRE "\n" "<br>" | safeHTML }}</p>
+    {{ with .details }}
+    <ul class="office-details">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>

@@ -1,0 +1,68 @@
+.cozy-roi {
+  --panel: #121933;
+  --panel-2: #0f1530;
+  --text: #ecf1ff;
+  --muted: #a9b4d0;
+  --accent: #6ea8fe;
+  --accent-2: #9cd1ff;
+  --ok: #3ad29f;
+  --radius: 16px;
+  --shadow: 0 8px 30px rgba(10, 14, 40, 0.5);
+  --border: 1px solid rgba(255,255,255,.08);
+  background: radial-gradient(1200px 800px at 20% -10%, rgba(34, 58, 142, .35), transparent 60%),
+              radial-gradient(900px 700px at 120% 20%, rgba(0, 146, 255, .25), transparent 55%),
+              var(--bg);
+  color: var(--text);
+  padding: 24px;
+  font: 15px/1.45 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Open Sans", Arial;
+}
+.cozy-roi .wrap { max-width: 1000px; margin: 0 auto; }
+.cozy-roi .subtle { color: var(--muted); margin-bottom: 20px; }
+.cozy-roi .panel {
+  background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+  border: var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+.cozy-roi .row { display: grid; gap: 10px; margin-top: 10px; }
+@media (min-width: 680px) {
+  .cozy-roi .row { grid-template-columns: 220px 1fr; align-items: center; }
+}
+.cozy-roi .scale { display: flex; gap: 8px; flex-wrap: wrap; }
+.cozy-roi .pill {
+  border: var(--border);
+  background: rgba(255,255,255,.03);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  user-select: none;
+  transition: .18s ease;
+}
+.cozy-roi .pill:hover { background: rgba(255,255,255,.06); }
+.cozy-roi .pill.active { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #0b1220; }
+.cozy-roi .desc { color: var(--muted); font-size: 12px; margin-top: 6px; }
+.cozy-roi .results { display: grid; gap: 12px; margin-top: 16px; }
+.cozy-roi .card {
+  border: var(--border);
+  border-radius: 14px;
+  padding: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02));
+}
+.cozy-roi .card h3 { margin: 0 0 6px; font-size: 16px; font-weight: 700; }
+.cozy-roi .price { font-size: 28px; font-weight: 800; color: var(--ok); }
+.cozy-roi .hint { color: var(--muted); font-size: 12px; margin-top: 6px; }
+.cozy-roi .badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: var(--border);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.cozy-roi .row > div:first-child {
+  padding-left: 8px;
+}

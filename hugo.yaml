@@ -1,0 +1,131 @@
+baseURL: https://aenix.io/
+languageCode: en-us
+title: "Ænix — Amplify your data center with cloud transformation"
+theme: aenix
+enableRobotsTXT: true
+canonicalizeURLs: false
+
+params:
+  description: "We build clouds! End-to-end solutions for data centers, designed to meet the evolving demands of modern business."
+  author: Ænix
+  email: info@aenix.io
+  googleAnalytics: GT-NMCJ23L
+  social:
+    linkedin: https://www.linkedin.com/company/aenix/
+    telegram: https://t.me/cozystack
+    facebook: https://www.facebook.com/aenix.io
+    x: https://x.com/aenix_io
+    github: https://github.com/aenix-io
+  company:
+    eu:
+      name: AENIX s.r.o.
+      address: "Sladkovského 546/8273"
+      city: "Buštěhrad"
+      zip: "273 43"
+      country: Czech Republic
+      cin: "21493871"
+      vat: CZ21493871
+      databox: 2rvcmud
+    us:
+      name: AENIX INC
+      address: "131 Continental Drive, Suite 301"
+      city: "Newark, County of New Castle"
+      state: Delaware
+      country: United States
+      zip: "19713"
+      registration: "10075938"
+
+menus:
+  main:
+    - name: Products
+      url: /products/
+      weight: 10
+      identifier: products
+    - name: Cozystack
+      url: /cozystack/
+      parent: products
+      weight: 1
+    - name: Kubernetes Deep Dive Course
+      url: /kubernetes-deep-dive-course/
+      parent: products
+      weight: 2
+    - name: Pricing
+      url: /pricing/
+      weight: 20
+      identifier: pricing
+    - name: Enterprise Support
+      url: "/pricing/#support"
+      parent: pricing
+      weight: 1
+    - name: ROI Calculator
+      url: "/pricing/#roi"
+      parent: pricing
+      weight: 2
+
+    - name: Case Studies
+      url: /case-studies/
+      weight: 30
+
+    - name: Blog
+      url: /blog/
+      weight: 35
+
+    - name: About Us
+      url: /about-us/
+      weight: 40
+      identifier: about
+    - name: Our Partners
+      url: /our-partners/
+      parent: about
+      weight: 1
+    - name: Our Team
+      url: "/about-us/#team"
+      parent: about
+      weight: 2
+    - name: Conferences
+      url: /conferences/
+      parent: about
+      weight: 3
+    - name: Company Details
+      url: "/contact/#details"
+      parent: about
+      weight: 4
+
+    - name: Contact
+      url: /contact/
+      weight: 50
+      params:
+        cta: true
+
+  footer:
+    - name: Cozystack
+      url: /cozystack/
+      weight: 1
+    - name: Pricing
+      url: /pricing/
+      weight: 2
+    - name: Case Studies
+      url: /case-studies/
+      weight: 3
+    - name: About Us
+      url: /about-us/
+      weight: 4
+    - name: Contact
+      url: /contact/
+      weight: 5
+
+taxonomies: {}
+
+outputs:
+  home:
+    - HTML
+    - RSS
+  section:
+    - HTML
+  page:
+    - HTML
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

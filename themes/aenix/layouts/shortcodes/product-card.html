@@ -1,0 +1,14 @@
+{{- $title := .Get "title" -}}
+{{- $image := .Get "image" -}}
+{{- $url := .Get "url" -}}
+{{- $linkText := .Get "linkText" | default "Learn more" -}}
+<a href="{{ $url }}" class="product-card">
+  <div class="product-card-image">
+    <img src="{{ $image }}" alt="{{ $title }}" loading="lazy">
+  </div>
+  <div class="product-card-body">
+    <h3 class="product-card-title">{{ $title }}</h3>
+    <div class="product-card-description">{{ .Inner | markdownify }}</div>
+    <span class="product-card-link">{{ $linkText }} →</span>
+  </div>
+</a>

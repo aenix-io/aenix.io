@@ -1,0 +1,149 @@
+{{ define "main" }}
+
+{{/* ── Hero ── */}}
+<section class="hero hero-home" id="hero">
+  {{/* Background environment */}}
+  <div class="hero-bg">
+    <div class="hero-grid"></div>
+    <div class="hero-flow" aria-hidden="true">
+      <canvas id="flow-canvas"></canvas>
+    </div>
+    <div class="hero-glow hero-glow--1" data-parallax="0.01"></div>
+    <div class="hero-glow hero-glow--2" data-parallax="0.02"></div>
+    <div class="hero-glow hero-glow--3" data-parallax="0.015"></div>
+    <div class="hero-vignette"></div>
+  </div>
+
+  <div class="hero-layout container">
+    <div class="hero-content">
+      <h1 class="hero-title">We build clouds!</h1>
+      <p class="hero-subtitle">Amplify your data center with cloud transformation.</p>
+      <div class="hero-cta">
+        <a href="/contact/" class="btn btn-hero-primary btn-lg">
+          Let's Talk
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="/cozystack/" class="btn btn-hero-ghost btn-lg">Explore Cozystack</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-horizon"></div>
+</section>
+
+{{/* ── Services ── */}}
+{{ with .Params.services }}
+<section class="section section--alt" id="services">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-number">01</span>
+      <p class="section-lead">{{ .subtitle }}</p>
+    </div>
+    <div class="services-grid reveal-stagger">
+      {{ $icons := slice "cloud" "terminal" "shield" "search" "monitor" "heart" }}
+      {{ range $i, $item := .items }}
+      <div class="service-card reveal" style="--i:{{ $i }};">
+        <div class="service-card-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            {{ if eq $i 0 }}<path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+            {{ else if eq $i 1 }}<polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+            {{ else if eq $i 2 }}<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            {{ else if eq $i 3 }}<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            {{ else if eq $i 4 }}<rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/>
+            {{ else }}<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+            {{ end }}
+          </svg>
+        </div>
+        <h3>{{ $item.title }}</h3>
+        <p>{{ $item.description }}</p>
+      </div>
+      {{ end }}
+    </div>
+    <p class="opensource-tagline">We <svg class="heart-icon" width="18" height="18" viewBox="0 0 24 24" fill="#f43f5e" stroke="#f43f5e" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg> and DO Open Source</p>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Cozystack — Product Section ── */}}
+{{ with .Params.products }}
+<section class="section" id="products" style="position:relative;overflow:hidden">
+  <div style="position:absolute;top:-100px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(1,165,255,0.06) 0%,transparent 60%);border-radius:50%;pointer-events:none"></div>
+  <div style="position:absolute;bottom:-100px;left:-150px;width:400px;height:400px;background:radial-gradient(circle,rgba(102,27,225,0.05) 0%,transparent 60%);border-radius:50%;pointer-events:none"></div>
+  <div class="container" style="position:relative;z-index:1">
+    <span class="section-number reveal">02</span>
+    {{ range .items }}
+    <div class="product-showcase reveal">
+      <div class="product-text">
+        <h2>{{ .name }}</h2>
+        <p>{{ .description }}</p>
+        <div class="product-buttons">
+          {{ range .buttons }}
+          <a href="{{ .url }}" class="btn {{ if eq .text "REQUEST A DEMO" }}btn-primary{{ else }}btn-ghost{{ end }}">{{ .text }}</a>
+          {{ end }}
+        </div>
+      </div>
+      <div class="product-visual">
+        <div class="product-screenshot">
+          <img src="/images/cozystack-screenshot.png" alt="Cozystack Dashboard" loading="lazy">
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Featured Works ── */}}
+{{ with .Params.featured_works }}
+<section class="section section--alt" id="works">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-number">03</span>
+      <h2>{{ .title | default "Featured Works" }}</h2>
+    </div>
+    <div class="featured-grid reveal-stagger">
+      {{ range $i, $item := .items }}
+      {{ $colors := slice "#0971EB" "#661BE1" "#01A5FF" }}
+      <a href="{{ $item.url }}" class="featured-card reveal" style="--accent: {{ index $colors $i }};--i:{{ $i }}">
+        <div class="featured-card-number">{{ printf "%02d" (add $i 1) }}</div>
+        <h3>{{ $item.title }}</h3>
+        <span class="featured-card-arrow">&rarr;</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── Clients ── */}}
+{{ with .Params.clients }}
+<section class="section clients-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-number">04</span>
+      <h2>{{ .title | default "Our Clients" }}</h2>
+    </div>
+    <div class="clients-grid reveal">
+      {{ range .items }}
+      <a href="{{ .url }}" target="_blank" rel="noopener" class="client-logo" title="{{ .name }}">
+        <img src="/images/clients/{{ .logo }}" alt="{{ .name }}" loading="lazy">
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* ── CTA ── */}}
+{{ with .Params.cta }}
+<section class="section cta-banner">
+  <div class="container">
+    <span class="section-number reveal">05</span>
+    <h2 class="cta-heading reveal">{{ .title }}</h2>
+    <p class="cta-description">{{ .description }}</p>
+    <a href="{{ .button_url | default "/contact/" }}" class="btn btn-primary btn-lg">{{ .button_text | default "Let's Talk" }}</a>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}

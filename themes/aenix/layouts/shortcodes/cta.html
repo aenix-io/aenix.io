@@ -1,0 +1,13 @@
+{{- $title := .Get "title" | default "Let's work together on your next cloud project" -}}
+{{- $description := .Get "description" | default "Get a reliable and experienced partner to meet your business needs in the realm of systems architecture and design." -}}
+{{- $buttonText := .Get "button_text" | default "CONTACT US" -}}
+{{- $buttonUrl := .Get "button_url" | default "/contact/" -}}
+{{- $number := .Get "number" -}}
+<section class="section cta-banner cta-banner--inline">
+  <div class="container">
+    {{ with $number }}<span class="section-number reveal">{{ . }}</span>{{ end }}
+    <h2 class="cta-heading reveal">{{ $title }}</h2>
+    <p class="cta-description">{{ $description }}</p>
+    <a href="{{ $buttonUrl }}" class="btn btn-primary btn-lg">{{ $buttonText }}</a>
+  </div>
+</section>
