@@ -1,0 +1,11 @@
+<div class="action-buttons">
+  {{- with .Get "primary_text" -}}
+  <a href="{{ $.Get "primary_url" }}" class="btn btn-primary btn-lg">{{ . }}</a>
+  {{- end -}}
+  {{- with .Get "secondary_text" -}}
+  <a href="{{ $.Get "secondary_url" }}" class="btn btn-secondary btn-lg"{{ if $.Get "secondary_external" }} target="_blank" rel="noopener"{{ end }}>{{ . }}</a>
+  {{- end -}}
+  {{- with .Get "tertiary_text" -}}
+  <a href="{{ $.Get "tertiary_url" }}" class="btn btn-secondary btn-lg"{{ if $.Get "tertiary_external" }} target="_blank" rel="noopener"{{ end }}>{{ . }}</a>
+  {{- end -}}
+</div>

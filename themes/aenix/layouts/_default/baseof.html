@@ -23,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
   {{/* CSS */}}
-  {{ $style := resources.Get "css/main.css" }}
+  {{ $style := resources.Get "css/main.css" | fingerprint }}
   {{ if $style }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   {{ end }}
@@ -56,12 +56,12 @@
 
   {{ partial "footer.html" . }}
 
-  {{ $js := resources.Get "js/main.js" }}
+  {{ $js := resources.Get "js/main.js" | fingerprint }}
   {{ if $js }}
     <script src="{{ $js.RelPermalink }}"></script>
   {{ end }}
 
-  {{ $orb := resources.Get "js/orb.js" }}
+  {{ $orb := resources.Get "js/orb.js" | fingerprint }}
   {{ if $orb }}
     <script src="{{ $orb.RelPermalink }}"></script>
   {{ end }}

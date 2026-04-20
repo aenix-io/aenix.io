@@ -45,4 +45,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
     reveals.forEach(el => revealObs.observe(el));
   }
+
+  /* ---- Image lightbox ---- */
+  const lightboxSelector = '.page-content img, .two-cols-image img';
+  const lightboxTargets = document.querySelectorAll(lightboxSelector);
+  if (lightboxTargets.length > 0) {
+    // Build overlay once
+    const overlay = document.createElement('div');
+    overlay.className = 'lightbox-overlay';
+    overlay.innerHTML = '<button class="lightbox-close" aria-label="Close">&times;</button><img class="lightbox-image" alt="">';
+    document.body.appendChild(overlay);
+    const overlayImg = overlay.querySelector('.lightbox-image');
+    const close = () => {
+      overlay.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+    overlay.addEventListener('click', e => { if (e.target === overlay || e.target.classList.contains('lightbox-close')) close(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
+    lightboxTargets.forEach(img => {
+      img.classList.add('lightbox-trigger');
+      img.addEventListener('click', () => {
+        overlayImg.src = img.src;
+        overlayImg.alt = img.alt || '';
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+  }
 });
