@@ -88,9 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const ERASE_DUR = 900;
 
     const generateCloud = () => {
-      const baseY = 420 + rand(-8, 8);
-      const leftX = 90 + rand(-8, 8);
-      const rightX = 710 + rand(-8, 8);
+      const baseY = 475 + rand(-6, 6);
+      const leftX = 100 + rand(-6, 6);
+      const rightX = 700 + rand(-6, 6);
       const N = 3 + Math.floor(Math.random() * 3);
 
       // Relative bump heights: medium → high → mid → low (→ lowest)
@@ -101,33 +101,50 @@ document.addEventListener('DOMContentLoaded', () => {
         5: [0.55, 1.00, 0.75, 0.40, 0.25],
       };
       const profile = PROFILES[N];
-      const MAX_BUMP = 310;
-      const peakY = (h) => baseY - h * MAX_BUMP + rand(-10, 10);
+      const MAX_BUMP = 300;
+      const peakY = (h) => baseY - h * MAX_BUMP + rand(-8, 8);
+
+      const spanLeft = leftX + 60;
+      const spanRight = rightX - 60;
+      const span = spanRight - spanLeft;
 
       const cloudPts = [];
-      cloudPts.push({x: leftX, y: baseY + rand(-4, 4)});
-      cloudPts.push({x: leftX - 35, y: baseY - 80 + rand(-10, 10)});
-      cloudPts.push({x: leftX + 10, y: peakY(profile[0]) - 20});
-      const spanLeft = leftX + 70;
-      const spanRight = rightX - 70;
-      const span = spanRight - spanLeft;
-      for (let i = 0; i < N; i++) {
+      const peakIdx = [];
+
+      // Rounded belly: 4 sag points along the bottom edge (slight downward bulge)
+      cloudPts.push({x: leftX + span * 0.15, y: baseY + 8 + rand(-3, 3)});
+      cloudPts.push({x: leftX + span * 0.40, y: baseY + 18 + rand(-3, 3)});
+      cloudPts.push({x: leftX + span * 0.65, y: baseY + 18 + rand(-3, 3)});
+      cloudPts.push({x: leftX + span * 0.90, y: baseY + 8 + rand(-3, 3)});
+
+      // Right rounded corner: base → mid → top
+      cloudPts.push({x: rightX + 25, y: baseY - 20 + rand(-5, 5)});
+      cloudPts.push({x: rightX + 40, y: baseY - 100 + rand(-8, 8)});
+      cloudPts.push({x: rightX + 10, y: peakY(profile[N - 1]) + 20});
+
+      // Peaks from right to left (counter-clockwise when viewed top-down)
+      const peaksLTR = [];
+      for (let i = N - 1; i >= 0; i--) {
         const t = (i + 0.5) / N;
-        const x = spanLeft + t * span + rand(-8, 8);
+        const x = spanLeft + t * span + rand(-6, 6);
         const y = peakY(profile[i]);
+        peakIdx.push(cloudPts.length);
+        peaksLTR.unshift({x, y});
         cloudPts.push({x, y});
-        if (i < N - 1) {
-          const vt = (i + 1) / N;
-          const vx = spanLeft + vt * span + rand(-6, 6);
-          // Valley sits between neighbouring peak heights, dipped a bit further
-          const peakAvg = (profile[i] + profile[i + 1]) / 2;
-          const vy = baseY - peakAvg * MAX_BUMP * 0.55 + rand(-10, 10);
+        if (i > 0) {
+          const vt = i / N;
+          const vx = spanLeft + vt * span + rand(-5, 5);
+          // Shallow valley — stays close to the peak height so top looks round
+          const peakAvg = (profile[i] + profile[i - 1]) / 2;
+          const vy = baseY - peakAvg * MAX_BUMP * 0.82 + rand(-6, 6);
           cloudPts.push({x: vx, y: vy});
         }
       }
-      cloudPts.push({x: rightX - 10, y: peakY(profile[N - 1]) - 20});
-      cloudPts.push({x: rightX + 35, y: baseY - 80 + rand(-10, 10)});
-      cloudPts.push({x: rightX, y: baseY + rand(-4, 4)});
+
+      // Left rounded corner: top → mid → base
+      cloudPts.push({x: leftX - 10, y: peakY(profile[0]) + 20});
+      cloudPts.push({x: leftX - 40, y: baseY - 100 + rand(-8, 8)});
+      cloudPts.push({x: leftX - 25, y: baseY - 20 + rand(-5, 5)});
 
       const cloudD = smoothClosed(cloudPts);
       const ghostD = smoothClosed(cloudPts.map(p => ({x: p.x + rand(-3, 3), y: p.y + rand(-3, 3)})));
@@ -135,16 +152,14 @@ document.addEventListener('DOMContentLoaded', () => {
       if (mainCloudPaths[0]) mainCloudPaths[0].setAttribute('d', cloudD);
       if (mainCloudPaths[1]) mainCloudPaths[1].setAttribute('d', ghostD);
 
-      const peakIdx = [];
-      for (let j = 3; j < cloudPts.length - 3; j += 2) peakIdx.push(j);
       const backPaths = heroCloudSvg.querySelectorAll('.hc-back path');
       for (let j = 0; j < backPaths.length; j++) {
-        if (j >= peakIdx.length - 1) {
+        if (j >= peaksLTR.length - 1) {
           backPaths[j].setAttribute('d', '');
           continue;
         }
-        const p1 = cloudPts[peakIdx[j]];
-        const p2 = cloudPts[peakIdx[j + 1]];
+        const p1 = peaksLTR[j];
+        const p2 = peaksLTR[j + 1];
         const vx = (p1.x + p2.x) / 2 + rand(-6, 6);
         const vy = Math.max(p1.y, p2.y) + 28 + rand(0, 10);
         const half = Math.min(30, (p2.x - p1.x) / 2.5) + rand(-4, 4);
