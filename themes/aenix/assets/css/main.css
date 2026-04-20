@@ -569,25 +569,23 @@ img { max-width: 100%; height: auto; display: block; }
 /* ---- Da Vinci blueprint cloud ---- */
 .hero-cloud {
   position: absolute;
-  inset: 0;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  left: 50%;
+  bottom: calc(100% + 1rem);
+  transform: translateX(-50%);
+  width: min(720px, 90%);
   pointer-events: none;
   color: var(--brand-primary);
   --mx: 50%;
   --my: 50%;
-  --spot: 240px;
+  --spot: 160px;
   -webkit-mask-image: radial-gradient(circle var(--spot) at var(--mx) var(--my), rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.25) 100%);
   mask-image: radial-gradient(circle var(--spot) at var(--mx) var(--my), rgba(0,0,0,1) 0%, rgba(0,0,0,0.85) 35%, rgba(0,0,0,0.25) 100%);
 }
 .hero-cloud-svg {
-  width: min(1200px, 100%);
+  width: 100%;
   height: auto;
-  max-height: 80vh;
   overflow: visible;
-  transform: translate(4%, -12%);
+  display: block;
 }
 .hero-cloud-svg text { opacity: 0; }
 .hero-cloud-svg .hc-labels text.visible { opacity: 0.75; transition: opacity 600ms ease-out; }
@@ -628,6 +626,7 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-content {
   max-width: 700px;
   text-align: center;
+  position: relative;
 }
 .hero-subtitle {
   margin-left: auto;
