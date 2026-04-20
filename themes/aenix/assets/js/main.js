@@ -87,94 +87,110 @@ document.addEventListener('DOMContentLoaded', () => {
     const DRAW_TOTAL = 3200;
     const ERASE_DUR = 900;
 
+    // Upper intersection point between two circles whose centers share a y.
+    const upperIntersect = (c1, c2) => {
+      const dx = c2.cx - c1.cx;
+      const dy = c2.cy - c1.cy;
+      const d = Math.hypot(dx, dy);
+      if (d > c1.r + c2.r || d < Math.abs(c1.r - c2.r) || d === 0) return null;
+      const a = (c1.r * c1.r - c2.r * c2.r + d * d) / (2 * d);
+      const hSq = c1.r * c1.r - a * a;
+      if (hSq < 0) return null;
+      const h = Math.sqrt(hSq);
+      const px = c1.cx + (a * dx) / d;
+      const py = c1.cy + (a * dy) / d;
+      // Two candidates — pick the one with smaller y (upper in screen space)
+      const ox = (h * dy) / d;
+      const oy = (h * dx) / d;
+      return { x: px + ox, y: py - oy };
+    };
+
     const generateCloud = () => {
-      const baseY = 475 + rand(-6, 6);
-      const leftX = 100 + rand(-6, 6);
-      const rightX = 700 + rand(-6, 6);
-      const N = 3 + Math.floor(Math.random() * 3);
+      const baseY = 465 + rand(-6, 6);
+      const leftX = 90 + rand(-6, 6);
+      const rightX = 710 + rand(-6, 6);
+      const N = 4;
 
-      // Relative bump heights: medium → high → mid → low (→ lowest)
-      // 1 = tallest (highest peak), 0.2 = lowest short bump.
-      const PROFILES = {
-        3: [0.55, 1.00, 0.30],
-        4: [0.55, 1.00, 0.70, 0.25],
-        5: [0.55, 1.00, 0.75, 0.40, 0.25],
+      // Four overlapping circles on top of a rectangular base, sized so one
+      // dominant dome anchors the silhouette (matches the classic cartoon
+      // cloud from the reference).
+      //       small       medium        BIG          medium-small
+      const radii = [
+        58 + rand(-6, 6),
+        82 + rand(-8, 8),
+        125 + rand(-10, 10),
+        72 + rand(-8, 8),
+      ];
+      const xRatios = [0.12, 0.30, 0.60, 0.86];
+      // cy jitter keeps the domes from sitting on a perfectly straight line
+      const cyJitter = [rand(-6, 4), rand(-8, 4), rand(-10, 0), rand(-6, 4)];
+      const totalW = rightX - leftX;
+      const topLine = baseY - 105 + rand(-6, 6);
+
+      const circles = xRatios.map((t, i) => ({
+        cx: leftX + t * totalW + rand(-5, 5),
+        cy: topLine + cyJitter[i],
+        r: radii[i],
+      }));
+      // Make sure the leftmost and rightmost circles reach the cloud edges
+      circles[0].cx = leftX + circles[0].r;
+      circles[N - 1].cx = rightX - circles[N - 1].r;
+
+      // Build the outline as a path. Traversal goes clockwise on screen:
+      //   bottom-left → up left edge → over the domes (left→right) → down
+      //   right edge → across bottom → close.
+      // Each dome contributes a circular arc; intersections with neighbours
+      // define transition points, so the whole top silhouette is made of
+      // true circle arcs with no sharp joints.
+      const fmt = (n) => n.toFixed(1);
+      const leftTop = { x: circles[0].cx - circles[0].r, y: circles[0].cy };
+      const rightTop = {
+        x: circles[N - 1].cx + circles[N - 1].r,
+        y: circles[N - 1].cy,
       };
-      const profile = PROFILES[N];
-      const MAX_BUMP = 300;
-      const peakY = (h) => baseY - h * MAX_BUMP + rand(-8, 8);
-
-      const spanLeft = leftX + 60;
-      const spanRight = rightX - 60;
-      const span = spanRight - spanLeft;
-
-      const cloudPts = [];
-      const peakIdx = [];
-
-      // Rounded belly: 4 sag points along the bottom edge (slight downward bulge)
-      cloudPts.push({x: leftX + span * 0.15, y: baseY + 8 + rand(-3, 3)});
-      cloudPts.push({x: leftX + span * 0.40, y: baseY + 18 + rand(-3, 3)});
-      cloudPts.push({x: leftX + span * 0.65, y: baseY + 18 + rand(-3, 3)});
-      cloudPts.push({x: leftX + span * 0.90, y: baseY + 8 + rand(-3, 3)});
-
-      // Right rounded corner: base (aligned with belly) → mid → top
-      cloudPts.push({x: rightX + 25, y: baseY + 12 + rand(-4, 4)});
-      cloudPts.push({x: rightX + 40, y: baseY - 100 + rand(-8, 8)});
-      cloudPts.push({x: rightX + 10, y: peakY(profile[N - 1]) + 20});
-
-      // Peaks from right to left (counter-clockwise when viewed top-down).
-      // Each peak is a rounded dome: right-shoulder + apex + left-shoulder
-      // so the Bezier smoother produces a curved top instead of a V.
-      const peaksLTR = [];
-      const bumpWidth = Math.min(70, (span / N) * 0.45);
-      for (let i = N - 1; i >= 0; i--) {
-        const t = (i + 0.5) / N;
-        const cx = spanLeft + t * span + rand(-5, 5);
-        const apexY = peakY(profile[i]);
-        // Shoulder drop is proportional to peak height so tall peaks stay pointy-free
-        const drop = 18 + profile[i] * 12;
-        // Right shoulder (traversal enters from the right)
-        cloudPts.push({x: cx + bumpWidth, y: apexY + drop});
-        // Apex
-        peakIdx.push(cloudPts.length);
-        peaksLTR.unshift({x: cx, y: apexY});
-        cloudPts.push({x: cx, y: apexY});
-        // Left shoulder
-        cloudPts.push({x: cx - bumpWidth, y: apexY + drop});
-        if (i > 0) {
-          const vt = i / N;
-          const vx = spanLeft + vt * span + rand(-4, 4);
-          // Shallow valley — stays close to peak height so top looks round
-          const peakAvg = (profile[i] + profile[i - 1]) / 2;
-          const vy = baseY - peakAvg * MAX_BUMP * 0.82 + rand(-4, 4);
-          cloudPts.push({x: vx, y: vy});
+      let d = `M ${fmt(leftX)} ${fmt(baseY)}`;
+      d += ` L ${fmt(leftTop.x)} ${fmt(leftTop.y)}`;
+      for (let i = 0; i < N; i++) {
+        const c = circles[i];
+        let ex, ey;
+        if (i === N - 1) {
+          ex = rightTop.x;
+          ey = rightTop.y;
+        } else {
+          const inter = upperIntersect(c, circles[i + 1]);
+          if (inter) {
+            ex = inter.x;
+            ey = inter.y;
+          } else {
+            ex = c.cx + c.r;
+            ey = c.cy;
+          }
         }
+        // sweep-flag = 1 traces the short arc going clockwise on screen
+        // (i.e. over the top of the dome) from left to right.
+        d += ` A ${fmt(c.r)} ${fmt(c.r)} 0 0 1 ${fmt(ex)} ${fmt(ey)}`;
       }
+      d += ` L ${fmt(rightX)} ${fmt(baseY)}`;
+      d += ` Z`;
 
-      // Left rounded corner: top → mid → base (aligned with belly)
-      cloudPts.push({x: leftX - 10, y: peakY(profile[0]) + 20});
-      cloudPts.push({x: leftX - 40, y: baseY - 100 + rand(-8, 8)});
-      cloudPts.push({x: leftX - 25, y: baseY + 12 + rand(-4, 4)});
-
-      const cloudD = smoothClosed(cloudPts);
-      const ghostD = smoothClosed(cloudPts.map(p => ({x: p.x + rand(-3, 3), y: p.y + rand(-3, 3)})));
       const mainCloudPaths = heroCloudSvg.querySelectorAll('.hc-cloud path');
-      if (mainCloudPaths[0]) mainCloudPaths[0].setAttribute('d', cloudD);
-      if (mainCloudPaths[1]) mainCloudPaths[1].setAttribute('d', ghostD);
+      if (mainCloudPaths[0]) mainCloudPaths[0].setAttribute('d', d);
+      if (mainCloudPaths[1]) mainCloudPaths[1].setAttribute('d', d);
 
+      // Decorative inner curls between adjacent domes.
       const backPaths = heroCloudSvg.querySelectorAll('.hc-back path');
       for (let j = 0; j < backPaths.length; j++) {
-        if (j >= peaksLTR.length - 1) {
+        if (j >= N - 1) {
           backPaths[j].setAttribute('d', '');
           continue;
         }
-        const p1 = peaksLTR[j];
-        const p2 = peaksLTR[j + 1];
-        const vx = (p1.x + p2.x) / 2 + rand(-6, 6);
-        const vy = Math.max(p1.y, p2.y) + 28 + rand(0, 10);
-        const half = Math.min(30, (p2.x - p1.x) / 2.5) + rand(-4, 4);
-        const d = `M ${(vx - half).toFixed(1)} ${(vy - 10).toFixed(1)} Q ${vx.toFixed(1)} ${(vy + 22).toFixed(1)} ${(vx + half).toFixed(1)} ${(vy - 10).toFixed(1)}`;
-        backPaths[j].setAttribute('d', d);
+        const p1 = circles[j];
+        const p2 = circles[j + 1];
+        const vx = (p1.cx + p2.cx) / 2 + rand(-6, 6);
+        const vy = Math.max(p1.cy, p2.cy) + 35 + rand(0, 8);
+        const half = Math.min(26, (p2.cx - p1.cx) / 3) + rand(-4, 4);
+        const dPath = `M ${fmt(vx - half)} ${fmt(vy - 8)} Q ${fmt(vx)} ${fmt(vy + 22)} ${fmt(vx + half)} ${fmt(vy - 8)}`;
+        backPaths[j].setAttribute('d', dPath);
       }
 
       const seamPath = heroCloudSvg.querySelector('.hc-seam path');
