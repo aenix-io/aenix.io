@@ -40,6 +40,11 @@
   </script>
   {{ end }}
 
+  {{/* Ahrefs Analytics */}}
+  {{ with .Site.Params.ahrefsAnalytics }}
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="{{ . }}" async></script>
+  {{ end }}
+
   {{ block "head" . }}{{ end }}
 
   {{/* Apollo tracker */}}
