@@ -411,6 +411,30 @@ document.addEventListener('DOMContentLoaded', () => {
     generateCloud();
     startDraw();
 
+    // Size and visibility sync with the hero title. The cloud silhouette
+    // (without callouts) must stay narrower than "We build clouds!"; if
+    // there isn't enough vertical room above the title, hide the cloud.
+    const heroTitle = document.querySelector('.hero-title');
+    const syncCloudSize = () => {
+      if (!heroTitle) return;
+      const titleWidth = heroTitle.offsetWidth;
+      if (!titleWidth) return;
+      // Cloud silhouette ≈ 700 of 1600 viewBox units (≈ 0.44 of container).
+      // Picking container = 1.9 × title width keeps cloud ≈ 0.83 × title.
+      const containerW = Math.round(titleWidth * 1.9);
+      heroCloud.style.width = `${containerW}px`;
+
+      // Measure and hide if the cloud would punch through the top of the viewport.
+      // Temporarily ensure it's visible to measure.
+      const wasHidden = heroCloud.style.display === 'none';
+      if (wasHidden) heroCloud.style.display = '';
+      const rect = heroCloud.getBoundingClientRect();
+      const overflow = rect.top < 20;
+      heroCloud.style.display = overflow ? 'none' : '';
+    };
+    syncCloudSize();
+    window.addEventListener('resize', syncCloudSize, { passive: true });
+
     if (!prefersReduced) {
       let raf = 0, returnRaf = 0, px = 0, py = 0;
       let curMx = null, curMy = null;

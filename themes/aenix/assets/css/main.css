@@ -572,7 +572,10 @@ img { max-width: 100%; height: auto; display: block; }
   left: 50%;
   bottom: 100%;
   transform: translateX(-50%);
+  /* Width is sized from JS to the hero title's width; these are just
+     safe fallbacks until JS runs. */
   width: min(1230px, 53vw);
+  max-width: 96vw;
   pointer-events: none;
   color: var(--brand-primary);
   --mx: 50%;
