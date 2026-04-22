@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         : { x: px - h * ux, y: y2 };
     };
 
-    const VIEWBOX_W = 1000;
+    const VIEWBOX_W = 1600;
 
     const generateCloud = () => {
       const baseY = 465 + rand(-6, 6);
@@ -159,6 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (mainCloudPaths[1]) mainCloudPaths[1].setAttribute('d', d);
 
       regenerateDims(circles, baseY);
+      regenerateCallouts(circles, baseY);
 
       heroCloudSvg.querySelectorAll('.hc-grid line').forEach(el => {
         el.style.removeProperty('display');
@@ -166,6 +167,126 @@ document.addEventListener('DOMContentLoaded', () => {
         else el.style.opacity = rand(0.55, 1);
       });
       heroCloudSvg.style.removeProperty('transform');
+    };
+
+    // Leader-line callouts: dot inside a dome, bent stick out to a label.
+    const CALLOUT_LABELS = ['kubernetes', 'databases', 'virtualization', 'billing', 'AI'];
+    const regenerateCallouts = (circles, baseY) => {
+      const g = heroCloudSvg.querySelector('.hc-callouts');
+      if (!g) return;
+      g.innerHTML = '';
+      const SVG = 'http://www.w3.org/2000/svg';
+      const fmt = (n) => n.toFixed(1);
+
+      const minY = Math.min(...circles.map((c) => c.cy - c.r));
+      const cy = (minY + baseY) / 2;
+
+      // Five slots spread around the cloud: two on the left, one up top,
+      // two on the right — drawn as L-shaped leader lines with a knee.
+      // slot.side: 'left' | 'top' | 'right'.
+      const topY = Math.max(30, minY - 80);
+      // Top callouts anchor above a real dome (not at the midpoint between
+      // two domes), so the vertical leader never lines up with a top-chain
+      // dimension label (which live at the midpoints).
+      const topDome = circles[Math.floor(rand(0, circles.length))];
+      const jx = () => rand(-25, 25);
+      const jy = () => rand(-15, 15);
+      const jSeg = () => 80 + Math.random() * 120; // 80..200
+      // Keep left/right slots out of the mid-y band where the vertical
+      // dimension labels sit (roughly midY ± 50).
+      const upperY = () => Math.max(topY + 10, cy - 110 + jy());
+      const lowerY = () => Math.min(baseY - 50, cy + 110 + jy());
+      const slots = [
+        { side: 'left',  lx: 220             + jx(), ly: upperY(),        seg: jSeg() },
+        { side: 'left',  lx: 240             + jx(), ly: lowerY(),        seg: jSeg() },
+        { side: 'top',   lx: topDome.cx      + jx(), ly: topY + jy() * 0.5, seg: jSeg() },
+        { side: 'right', lx: VIEWBOX_W - 240 + jx(), ly: upperY(),        seg: jSeg() },
+        { side: 'right', lx: VIEWBOX_W - 220 + jx(), ly: lowerY(),        seg: jSeg() },
+      ];
+      // Shuffle the labels so the order of names around the cloud varies.
+      const shuffled = CALLOUT_LABELS.slice();
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+
+      shuffled.forEach((name, i) => {
+        const slot = slots[i];
+
+        // Pick the dome whose centre is nearest to the label endpoint so
+        // the dot lands inside an actually-cloudy part of the shape.
+        let best = circles[0];
+        let bestDist = Infinity;
+        for (const c of circles) {
+          const d = Math.hypot(c.cx - slot.lx, c.cy - slot.ly);
+          if (d < bestDist) { bestDist = d; best = c; }
+        }
+        // Dot: offset from dome centre, toward the label, but kept inside.
+        const vX = slot.lx - best.cx;
+        const vY = slot.ly - best.cy;
+        const vLen = Math.hypot(vX, vY) || 1;
+        const dotOff = best.r * (0.25 + rand(0, 0.2));
+        const dotX = best.cx + (vX / vLen) * dotOff;
+        const dotY = best.cy + (vY / vLen) * dotOff;
+
+        // Knee: elbow point. The terminal segment is horizontal (for
+        // left/right slots) or vertical (for the top slot). Clamp the
+        // segment length so the knee always sits on the LABEL side of
+        // the dot — this keeps the angle at the elbow obtuse (>90°)
+        // instead of collapsing into an acute V.
+        let kneeX, kneeY;
+        let seg = slot.seg;
+        if (slot.side === 'left') {
+          // Knee must be left of the dot; keep a ≥20px gap for a clearly
+          // obtuse angle.
+          const maxSeg = dotX - slot.lx - 20;
+          seg = Math.max(30, Math.min(seg, maxSeg));
+          kneeX = slot.lx + seg;
+          kneeY = slot.ly;
+        } else if (slot.side === 'right') {
+          const maxSeg = slot.lx - dotX - 20;
+          seg = Math.max(30, Math.min(seg, maxSeg));
+          kneeX = slot.lx - seg;
+          kneeY = slot.ly;
+        } else {
+          // Top slot: knee sits below the label, but must stay above the dot.
+          const maxSeg = dotY - slot.ly - 20;
+          seg = Math.max(30, Math.min(seg, maxSeg));
+          kneeX = slot.lx;
+          kneeY = slot.ly + seg;
+        }
+
+        // Leader path: dot → knee → label endpoint.
+        const line = document.createElementNS(SVG, 'path');
+        line.setAttribute('d', `M ${fmt(dotX)} ${fmt(dotY)} L ${fmt(kneeX)} ${fmt(kneeY)} L ${fmt(slot.lx)} ${fmt(slot.ly)}`);
+        g.appendChild(line);
+
+        // Dot at the inside end
+        const dot = document.createElementNS(SVG, 'circle');
+        dot.setAttribute('cx', fmt(dotX));
+        dot.setAttribute('cy', fmt(dotY));
+        dot.setAttribute('r', '3.5');
+        dot.setAttribute('fill', 'currentColor');
+        dot.setAttribute('stroke', 'none');
+        g.appendChild(dot);
+
+        // Label text at the outer endpoint, sitting next to the terminal segment.
+        const anchor = slot.side === 'left' ? 'end' : slot.side === 'right' ? 'start' : 'middle';
+        const offX = slot.side === 'left' ? -8 : slot.side === 'right' ? 8 : 0;
+        const offY = slot.side === 'top' ? -8 : 6;
+        const t = document.createElementNS(SVG, 'text');
+        t.setAttribute('x', fmt(slot.lx + offX));
+        t.setAttribute('y', fmt(slot.ly + offY));
+        t.setAttribute('text-anchor', anchor);
+        t.setAttribute('fill', 'currentColor');
+        t.setAttribute('stroke', 'none');
+        t.setAttribute('font-family', "'JetBrains Mono', 'Inter', system-ui, sans-serif");
+        t.setAttribute('font-size', '18');
+        t.setAttribute('font-weight', '500');
+        t.setAttribute('letter-spacing', '1');
+        t.textContent = name.toUpperCase();
+        g.appendChild(t);
+      });
     };
 
     // Rebuild dimension arrows + labels so they track the actual circle layout.
@@ -289,6 +410,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     generateCloud();
     startDraw();
+
+    // Size and visibility sync with the hero title. The cloud silhouette
+    // (without callouts) must stay narrower than "We build clouds!"; if
+    // there isn't enough vertical room above the title, hide the cloud.
+    const heroTitle = document.querySelector('.hero-title');
+    const syncCloudSize = () => {
+      if (!heroTitle) return;
+      const titleWidth = heroTitle.offsetWidth;
+      if (!titleWidth) return;
+      // Cloud silhouette ≈ 700 of 1600 viewBox units (≈ 0.44 of container).
+      // Picking container = 1.9 × title width keeps cloud ≈ 0.83 × title.
+      const containerW = Math.round(titleWidth * 1.9);
+      heroCloud.style.width = `${containerW}px`;
+
+      // Measure and hide if the cloud would punch through the top of the viewport.
+      // Temporarily ensure it's visible to measure.
+      const wasHidden = heroCloud.style.display === 'none';
+      if (wasHidden) heroCloud.style.display = '';
+      const rect = heroCloud.getBoundingClientRect();
+      const overflow = rect.top < 20;
+      heroCloud.style.display = overflow ? 'none' : '';
+    };
+    syncCloudSize();
+    window.addEventListener('resize', syncCloudSize, { passive: true });
 
     if (!prefersReduced) {
       let raf = 0, returnRaf = 0, px = 0, py = 0;

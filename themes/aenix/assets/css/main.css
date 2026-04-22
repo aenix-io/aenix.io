@@ -572,7 +572,10 @@ img { max-width: 100%; height: auto; display: block; }
   left: 50%;
   bottom: 100%;
   transform: translateX(-50%);
-  width: min(900px, 95%);
+  /* Width is sized from JS to the hero title's width; these are just
+     safe fallbacks until JS runs. */
+  width: min(1230px, 53vw);
+  max-width: 96vw;
   pointer-events: none;
   color: var(--brand-primary);
   --mx: 50%;
@@ -588,12 +591,14 @@ img { max-width: 100%; height: auto; display: block; }
   display: block;
   pointer-events: auto;
 }
-.hero-cloud-svg text { opacity: 0; }
+.hero-cloud-svg .hc-labels text { opacity: 0; }
 .hero-cloud-svg .hc-labels text.visible { opacity: 0.75; transition: opacity 600ms ease-out; }
 .hero-cloud-svg .hc-grid,
-.hero-cloud-svg .hc-dims { opacity: 0; transition: opacity 1200ms ease-out; }
+.hero-cloud-svg .hc-dims,
+.hero-cloud-svg .hc-callouts { opacity: 0; transition: opacity 1200ms ease-out; }
 .hero-cloud-svg.hc-animate .hc-grid { opacity: 0.15; }
 .hero-cloud-svg.hc-animate .hc-dims { opacity: 0.6; }
+.hero-cloud-svg.hc-animate .hc-callouts { opacity: 0.9; }
 .hero-cloud-svg .hc-cloud path {
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
