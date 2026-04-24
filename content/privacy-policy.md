@@ -24,7 +24,7 @@ We use the information we collect to:
 - improve our website, products, and marketing;
 - comply with legal obligations.
 
-## {#cookies}Cookies, analytics, visitor identification, and sales/marketing tools
+## Cookies, analytics, visitor identification, and sales/marketing tools {#cookies}
 
 We use cookies and similar tracking technologies on our website. Some of these technologies are strictly necessary for the website to operate. Others are used only where permitted by law or where you have given consent.
 
@@ -58,7 +58,7 @@ Depending on your location, you may have rights to access, correct, delete, or r
 
 For California residents and other U.S. state privacy law rights (including the right to opt out of sale/sharing of personal information), please use the **[Your Privacy Choices](#your-privacy-choices)** link in the footer or contact us at **privacy@aenix.io**.
 
-## {#your-privacy-choices}Your Privacy Choices
+## Your Privacy Choices {#your-privacy-choices}
 
 You can manage your cookie and tracking preferences at any time. Click below to open our cookie preferences panel where you can:
 
