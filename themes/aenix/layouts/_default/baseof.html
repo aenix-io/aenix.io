@@ -14,13 +14,14 @@
   {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
 
   {{/* Favicon */}}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   {{/* Fonts */}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
 
   {{/* CSS */}}
   {{ $style := resources.Get "css/main.css" | fingerprint }}
@@ -28,24 +29,15 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   {{ end }}
 
-  {{/* Google Analytics */}}
-  {{ with .Site.Params.googleAnalytics }}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+  {{/* Analytics config — IDs only, no scripts loaded here.
+       Actual script loading happens in consent.js after user consent. */}}
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ . }}');
+    {{ with .Site.Params.googleAnalytics }}window.AENIX_GA_ID      = '{{ . }}';{{ end }}
+    {{ with .Site.Params.ahrefsAnalytics }}window.AENIX_AHREFS_KEY = '{{ . }}';{{ end }}
+    window.AENIX_APOLLO_ID  = '66b1e05b9f632a02d2ea4fad';
   </script>
-  {{ end }}
 
   {{ block "head" . }}{{ end }}
-
-  {{/* Apollo tracker */}}
-  <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-  o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-  o.onload=function(){window.trackingFunctions.onLoad({appId:"66b1e05b9f632a02d2ea4fad"})},
-  document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="{{ with .Params.bodyClass }}{{ . }}{{ end }}">
   {{ partial "header.html" . }}
@@ -56,6 +48,69 @@
 
   {{ partial "footer.html" . }}
 
+  {{/* ── Cookie consent banner ──────────────────────────────────── */}}
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" hidden>
+    <div class="cookie-banner__inner">
+      <div class="cookie-banner__text">
+        <p class="cookie-banner__title">We use cookies and tracking technologies</p>
+        <p class="cookie-banner__body">We use essential cookies to make this website work. With your consent, we also use analytics, visitor identification, enrichment, and sales/marketing automation tools to understand how visitors use our site, identify company-level interest, improve our content, and support relevant B2B communications. You can accept all cookies, reject non-essential cookies, or manage your preferences at any time.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button id="cookie-accept-all" class="btn btn-primary">Accept all</button>
+        <button id="cookie-reject"     class="btn btn-secondary">Reject non-essential</button>
+        <button id="cookie-manage"     class="btn btn-ghost">Manage preferences</button>
+      </div>
+    </div>
+  </div>
+
+  {{/* ── Cookie preferences modal ───────────────────────────────── */}}
+  <div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-label="Cookie preferences" hidden>
+    <div id="cookie-modal-backdrop" class="cookie-modal__backdrop"></div>
+    <div class="cookie-modal__dialog">
+      <div class="cookie-modal__header">
+        <h2 class="cookie-modal__title">Cookie preferences</h2>
+        <button id="cookie-modal-close" class="cookie-modal__close" aria-label="Close">&times;</button>
+      </div>
+
+      <div class="cookie-modal__body">
+        <div class="cookie-pref-row">
+          <div class="cookie-pref-info">
+            <strong>Essential cookies</strong>
+            <p>Required for the website to function correctly. Cannot be disabled.</p>
+          </div>
+          <span class="cookie-always-on">Always active</span>
+        </div>
+
+        <div class="cookie-pref-row">
+          <div class="cookie-pref-info">
+            <strong>Analytics</strong>
+            <p>Help us understand how visitors use our site and improve our content (Google Analytics, Ahrefs Analytics).</p>
+          </div>
+          <label class="cookie-toggle">
+            <input type="checkbox" id="pref-analytics">
+            <span class="cookie-toggle__track"><span class="cookie-toggle__thumb"></span></span>
+          </label>
+        </div>
+
+        <div class="cookie-pref-row">
+          <div class="cookie-pref-info">
+            <strong>Visitor identification &amp; sales tools</strong>
+            <p>Identify company-level interest, enrich business contact data, and support relevant B2B outreach (Apollo.io).</p>
+          </div>
+          <label class="cookie-toggle">
+            <input type="checkbox" id="pref-marketing">
+            <span class="cookie-toggle__track"><span class="cookie-toggle__thumb"></span></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="cookie-modal__footer">
+        <button id="cookie-accept-all-modal" class="btn btn-ghost">Accept all</button>
+        <button id="cookie-save-prefs"       class="btn btn-primary">Save preferences</button>
+      </div>
+    </div>
+  </div>
+
   {{ $js := resources.Get "js/main.js" | fingerprint }}
   {{ if $js }}
     <script src="{{ $js.RelPermalink }}"></script>
@@ -64,6 +119,11 @@
   {{ $orb := resources.Get "js/orb.js" | fingerprint }}
   {{ if $orb }}
     <script src="{{ $orb.RelPermalink }}"></script>
+  {{ end }}
+
+  {{ $consent := resources.Get "js/consent.js" | fingerprint }}
+  {{ if $consent }}
+    <script src="{{ $consent.RelPermalink }}"></script>
   {{ end }}
 
   {{ block "scripts" . }}{{ end }}
