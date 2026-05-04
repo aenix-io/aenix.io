@@ -791,6 +791,26 @@ img { max-width: 100%; height: auto; display: block; }
   text-align: center;
   position: relative;
 }
+/* On the home page: text occupies the LEFT half of the hero so the
+   chip (positioned right-of-centre in the 3D scene) reads cleanly */
+.hero-home .hero-layout {
+  justify-content: flex-start;
+}
+.hero-home .hero-content {
+  text-align: left;
+  max-width: 540px;
+  margin-left: 0;
+}
+.hero-home .hero-subtitle { margin-left: 0; margin-right: 0; }
+.hero-home .hero-cta { justify-content: flex-start; }
+@media (max-width: 1100px) {
+  /* Recentre below 1100px — not enough room for side-by-side */
+  .hero-home .hero-layout { justify-content: center; }
+  .hero-home .hero-content { text-align: center; margin-left: auto; }
+  .hero-home .hero-subtitle { margin-left: auto; margin-right: auto; }
+  .hero-home .hero-cta { justify-content: center; }
+}
+
 .hero-subtitle {
   margin-left: auto;
   margin-right: auto;
