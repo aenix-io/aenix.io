@@ -1,5 +1,24 @@
-{{/* Phase 1: canvas only. Phase 4 will add overlay annotations
-     (AENIX CONTROL PLANE / COMPLEXITY / SIMPLICITY / feature bar). */}}
+{{/* hero-3d: 3D canvas + floating annotations.
+     Annotations are rendered above the canvas but below hero-content.
+     Hidden on mobile (≤ 768px) along with the canvas itself. */}}
 <div class="hero-3d" aria-hidden="true">
   <canvas id="hero-3d-canvas" class="hero-3d-canvas"></canvas>
+
+  <div class="hero-3d-annotations">
+    <div class="ann ann--control-plane">
+      <span class="ann-eyebrow">AENIX CONTROL PLANE</span>
+      <p class="ann-body">Orchestrate. Automate.<br>Optimize.</p>
+      <span class="ann-line" aria-hidden="true"></span>
+    </div>
+
+    <div class="ann ann--complexity">
+      <span class="ann-eyebrow">COMPLEXITY</span>
+      <p class="ann-body">Unmanaged<br>Infrastructure</p>
+    </div>
+
+    <div class="ann ann--simplicity">
+      <span class="ann-eyebrow">SIMPLICITY</span>
+      <p class="ann-body">Managed<br>Infrastructure</p>
+    </div>
+  </div>
 </div>
