@@ -1,9 +1,14 @@
 /* Aenix — Interactive 3D Hero Scene
-   Phase 1: wireframe terrain with simplex-noise displacement,
-   camera parallax on mouse, reduced-motion + offscreen pause.
-   Phase 2+ will add: central chip, energy flows, annotations, bloom. */
+   Phase 1: wireframe terrain (simplex displacement), parallax, fog.
+   Phase 2: central isometric Æ chip + edge glow + components +
+            UnrealBloomPass postprocessing.
+   Phase 3+ will add: energy flows, HTML annotations. */
 
 import * as THREE from 'three';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass }     from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
 
 (function () {
   'use strict';
@@ -40,9 +45,9 @@ import * as THREE from 'three';
   const scene = new THREE.Scene();
   scene.fog = new THREE.Fog(0x0b0f1a, 12, 32);
 
-  const camera = new THREE.PerspectiveCamera(40, 1, 0.1, 100);
-  camera.position.set(0, 4.5, 9);
-  camera.lookAt(0, 0.2, 0);
+  const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
+  camera.position.set(0, 3.4, 8.4);
+  camera.lookAt(0, 0.6, 0);
 
   /* ── Terrain ──────────────────────────────────────────────────
      Plane subdivided into a grid. Vertex shader displaces Y based
@@ -148,7 +153,7 @@ import * as THREE from 'three';
         float fade = smoothstep(1.05, 0.25, dist);
 
         // also fade closer to the camera edge so the chip area reads cleanly
-        float nearFade = smoothstep(2.5, 5.5, length(vWorldPos.xz));
+        float nearFade = smoothstep(3.5, 7.0, length(vWorldPos.xz));
 
         float alpha = fade * nearFade * 0.85;
         gl_FragColor = vec4(col, alpha);
@@ -172,9 +177,9 @@ import * as THREE from 'three';
       void main(){
         vec2 c = vUv - 0.5;
         float d = length(c);
-        // central purple hint
-        vec3 col = mix(vec3(0.4,0.1,0.9), vec3(0.0,0.1,0.4), smoothstep(0.0,0.6,d));
-        float a = smoothstep(0.55, 0.05, d) * 0.18;
+        // soft purple hint, very low intensity
+        vec3 col = mix(vec3(0.3,0.1,0.7), vec3(0.0,0.05,0.3), smoothstep(0.0,0.6,d));
+        float a = smoothstep(0.55, 0.05, d) * 0.07;
         gl_FragColor = vec4(col, a);
       }
     `,
@@ -183,11 +188,190 @@ import * as THREE from 'three';
   glow.position.set(0, 0.3, -4);
   scene.add(glow);
 
+  /* ── Central chip ────────────────────────────────────────────
+     Isometric thin board with the Æ glyph rasterised onto its top
+     face, glowing rim, and a few small "component" cubes scattered
+     around it that bob slowly on Y.                              */
+
+  const chipGroup = new THREE.Group();
+  chipGroup.position.set(0, 0.5, 0);
+  chipGroup.rotation.x = -0.21; // ~12° forward tilt
+  chipGroup.rotation.y = 0.06;
+  scene.add(chipGroup);
+
+  // 1. Body (dark slab)
+  const CHIP_W = 2.6, CHIP_T = 0.10, CHIP_D = 1.7;
+  const chipBodyGeo = new THREE.BoxGeometry(CHIP_W, CHIP_T, CHIP_D);
+  const chipBodyMat = new THREE.MeshBasicMaterial({ color: 0x0a1530 });
+  chipGroup.add(new THREE.Mesh(chipBodyGeo, chipBodyMat));
+
+  // 2. Edges — bright cyan lines, additive (bloom turns this into a glow)
+  const chipEdgesGeo = new THREE.EdgesGeometry(chipBodyGeo);
+  const chipEdgesMat = new THREE.LineBasicMaterial({
+    color: 0x01a5ff,
+    transparent: true,
+    opacity: 0.9,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false,
+  });
+  chipGroup.add(new THREE.LineSegments(chipEdgesGeo, chipEdgesMat));
+
+  // 3. Top face plane with Æ logo (rasterised SVG → CanvasTexture)
+  const TEX_SIZE = 512;
+  const logoCanvas = document.createElement('canvas');
+  logoCanvas.width = logoCanvas.height = TEX_SIZE;
+  const lctx = logoCanvas.getContext('2d');
+
+  function drawLogoCanvas(img) {
+    // Background — chip surface
+    lctx.fillStyle = '#0a1530';
+    lctx.fillRect(0, 0, TEX_SIZE, TEX_SIZE);
+
+    // Subtle circuit hint: faint grid
+    lctx.strokeStyle = 'rgba(1,165,255,0.10)';
+    lctx.lineWidth = 1;
+    for (let x = 32; x < TEX_SIZE; x += 32) {
+      lctx.beginPath(); lctx.moveTo(x, 0); lctx.lineTo(x, TEX_SIZE); lctx.stroke();
+    }
+    for (let y = 32; y < TEX_SIZE; y += 32) {
+      lctx.beginPath(); lctx.moveTo(0, y); lctx.lineTo(TEX_SIZE, y); lctx.stroke();
+    }
+
+    // Inner border — glowing
+    lctx.shadowColor = '#01a5ff';
+    lctx.shadowBlur = 24;
+    lctx.strokeStyle = '#01a5ff';
+    lctx.lineWidth = 3;
+    lctx.strokeRect(28, 28, TEX_SIZE - 56, TEX_SIZE - 56);
+    lctx.shadowBlur = 0;
+
+    // Æ glyph centred
+    if (img && img.complete && img.naturalWidth > 0) {
+      const W = 240;
+      const H = W * (img.naturalHeight / img.naturalWidth);
+      lctx.shadowColor = '#01a5ff';
+      lctx.shadowBlur = 18;
+      lctx.drawImage(img, (TEX_SIZE - W) / 2, (TEX_SIZE - H) / 2, W, H);
+      lctx.shadowBlur = 0;
+    } else {
+      // Fallback Æ (text)
+      lctx.font = 'bold 220px Inter, sans-serif';
+      lctx.fillStyle = '#01a5ff';
+      lctx.textAlign = 'center';
+      lctx.textBaseline = 'middle';
+      lctx.shadowColor = '#01a5ff';
+      lctx.shadowBlur = 18;
+      lctx.fillText('Æ', TEX_SIZE / 2, TEX_SIZE / 2);
+      lctx.shadowBlur = 0;
+    }
+  }
+
+  // Initial draw with placeholder; refresh once SVG loads
+  drawLogoCanvas(null);
+  const logoTex = new THREE.CanvasTexture(logoCanvas);
+  logoTex.colorSpace = THREE.SRGBColorSpace;
+  logoTex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+
+  const logoImg = new Image();
+  logoImg.onload = () => {
+    drawLogoCanvas(logoImg);
+    logoTex.needsUpdate = true;
+  };
+  logoImg.onerror = () => { /* keep fallback */ };
+  logoImg.src = '/images/logo-icon.svg';
+
+  const topPlaneGeo = new THREE.PlaneGeometry(CHIP_W * 0.96, CHIP_D * 0.96);
+  const topPlaneMat = new THREE.MeshBasicMaterial({
+    map: logoTex,
+    transparent: true,
+  });
+  const topPlane = new THREE.Mesh(topPlaneGeo, topPlaneMat);
+  topPlane.rotation.x = -Math.PI / 2;
+  topPlane.position.y = CHIP_T / 2 + 0.001;
+  chipGroup.add(topPlane);
+
+  // 4. Outer halo plane behind chip (additive radial gradient, subtle)
+  const haloGeo = new THREE.PlaneGeometry(4.4, 3.0);
+  const haloMat = new THREE.ShaderMaterial({
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+    uniforms: { uTime: { value: 0 } },
+    vertexShader: `varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+    fragmentShader: `
+      uniform float uTime;
+      varying vec2 vUv;
+      void main(){
+        vec2 c = vUv - 0.5;
+        float d = length(c * vec2(1.0, 1.5));
+        float pulse = 0.90 + 0.10 * sin(uTime * 1.2);
+        float a = smoothstep(0.5, 0.0, d) * 0.18 * pulse;
+        // brand cyan core, fading to deep blue at edge (no purple here)
+        vec3 col = mix(vec3(0.0,0.65,1.0), vec3(0.05,0.15,0.6), smoothstep(0.0, 0.5, d));
+        gl_FragColor = vec4(col, a);
+      }
+    `,
+  });
+  const halo = new THREE.Mesh(haloGeo, haloMat);
+  halo.rotation.x = -Math.PI / 2;
+  halo.position.y = -CHIP_T / 2 - 0.02;
+  chipGroup.add(halo);
+
+  // 5. Surrounding components — small bobbing cubes
+  const components = [];
+  const componentColors = [0x01a5ff, 0x0971eb, 0x661be1, 0x94dee0];
+  const positions = [
+    [-0.95, -0.65], [ 0.85, -0.55], [ 1.10,  0.50],
+    [-1.10,  0.45], [ 0.45,  0.70], [-0.40, -0.70],
+  ];
+  for (let i = 0; i < positions.length; i++) {
+    const [px, pz] = positions[i];
+    const size = 0.16 + Math.random() * 0.10;
+    const compGeo = new THREE.BoxGeometry(size, size * 0.45, size);
+    const compMat = new THREE.MeshBasicMaterial({
+      color: componentColors[i % componentColors.length],
+    });
+    const cube = new THREE.Mesh(compGeo, compMat);
+    cube.position.set(px, CHIP_T / 2 + size * 0.45 / 2 + 0.005, pz);
+    // glowing edge wireframe
+    const edgeGeo = new THREE.EdgesGeometry(compGeo);
+    const edgeMat = new THREE.LineBasicMaterial({
+      color: 0x01a5ff,
+      transparent: true,
+      opacity: 0.55,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false,
+    });
+    cube.add(new THREE.LineSegments(edgeGeo, edgeMat));
+    cube.userData.bobPhase = Math.random() * Math.PI * 2;
+    cube.userData.bobAmp   = 0.025 + Math.random() * 0.025;
+    cube.userData.baseY    = cube.position.y;
+    chipGroup.add(cube);
+    components.push(cube);
+  }
+
+  /* ── Postprocessing — UnrealBloom (skipped on low-end CPUs) */
+  const lowEnd = (navigator.hardwareConcurrency || 4) < 4;
+  let composer = null;
+  if (!lowEnd) {
+    composer = new EffectComposer(renderer);
+    composer.addPass(new RenderPass(scene, camera));
+    const bloom = new UnrealBloomPass(
+      new THREE.Vector2(canvas.clientWidth, canvas.clientHeight),
+      0.55, // strength — softer
+      0.45, // radius
+      0.82  // threshold — only really bright bits bloom
+    );
+    composer.addPass(bloom);
+    composer.addPass(new OutputPass());
+  }
+
   /* ── Resize ──────────────────────────────────────────────── */
   function resize() {
     const r = canvas.getBoundingClientRect();
     if (r.width === 0 || r.height === 0) return;
     renderer.setSize(r.width, r.height, false);
+    if (composer) composer.setSize(r.width, r.height);
     camera.aspect = r.width / r.height;
     camera.updateProjectionMatrix();
   }
@@ -225,15 +409,26 @@ import * as THREE from 'three';
     smoothed.x += (target.x - smoothed.x) * 0.04;
     smoothed.y += (target.y - smoothed.y) * 0.04;
 
-    camera.position.x = smoothed.x * 0.6;
-    camera.position.y = 4.5 + smoothed.y * -0.4;
-    camera.lookAt(0, 0.2 + smoothed.y * 0.1, 0);
+    camera.position.x = smoothed.x * 0.55;
+    camera.position.y = 3.4 + smoothed.y * -0.35;
+    camera.lookAt(0, 0.6 + smoothed.y * 0.08, 0);
 
     if (!reduceMotion) {
       terrainMat.uniforms.uTime.value = t;
+      haloMat.uniforms.uTime.value = t;
+
+      // gentle chip rotation drift
+      chipGroup.rotation.y = 0.06 + Math.sin(t * 0.25) * 0.05;
+
+      // bob each component
+      for (const c of components) {
+        c.position.y = c.userData.baseY + Math.sin(t * 1.2 + c.userData.bobPhase) * c.userData.bobAmp;
+        c.rotation.y = t * 0.3 + c.userData.bobPhase;
+      }
     }
 
-    renderer.render(scene, camera);
+    if (composer) composer.render();
+    else renderer.render(scene, camera);
     raf = requestAnimationFrame(frame);
   }
 
