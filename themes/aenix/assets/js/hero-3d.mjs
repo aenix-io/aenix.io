@@ -350,6 +350,85 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     components.push(cube);
   }
 
+  /* ── Energy flows ────────────────────────────────────────────
+     Left lane: turbulent purple particles drifting toward the chip,
+                their velocity perturbed by sin/cos curl-noise.
+     Right lane: organised cyan particles flowing outward in 5 fixed
+                 horizontal "lanes", giving a beam-stream feel.
+     Both use additive Points; bloom lifts them to glowing beads.   */
+
+  // Soft sprite texture (radial gradient → punch-out instead of square pixels)
+  function makeSpriteTex() {
+    const S = 64;
+    const cv = document.createElement('canvas');
+    cv.width = cv.height = S;
+    const cx = cv.getContext('2d');
+    const g = cx.createRadialGradient(S/2, S/2, 0, S/2, S/2, S/2);
+    g.addColorStop(0.0, 'rgba(255,255,255,1.0)');
+    g.addColorStop(0.4, 'rgba(255,255,255,0.6)');
+    g.addColorStop(1.0, 'rgba(255,255,255,0.0)');
+    cx.fillStyle = g;
+    cx.fillRect(0, 0, S, S);
+    const t = new THREE.CanvasTexture(cv);
+    t.colorSpace = THREE.SRGBColorSpace;
+    return t;
+  }
+  const spriteTex = makeSpriteTex();
+
+  // ── LEFT FLOW (turbulent purple) ─────────────────────────────
+  const LEFT_COUNT = 600;
+  const leftPos = new Float32Array(LEFT_COUNT * 3);
+  const leftSpawn = (i) => {
+    leftPos[i*3]   = -2.4 - Math.random() * 5.0;          // x ∈ [-7.4, -2.4]
+    leftPos[i*3+1] = (Math.random() - 0.5) * 2.4 + 0.4;   // y around chip level
+    leftPos[i*3+2] = (Math.random() - 0.5) * 2.0;         // z spread
+  };
+  for (let i = 0; i < LEFT_COUNT; i++) leftSpawn(i);
+  const leftGeo = new THREE.BufferGeometry();
+  leftGeo.setAttribute('position', new THREE.BufferAttribute(leftPos, 3));
+  const leftMat = new THREE.PointsMaterial({
+    color: 0xb070ff,
+    size: 0.10,
+    map: spriteTex,
+    alphaTest: 0.001,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false,
+    sizeAttenuation: true,
+  });
+  const leftPoints = new THREE.Points(leftGeo, leftMat);
+  scene.add(leftPoints);
+
+  // ── RIGHT FLOW (ordered cyan beams) ──────────────────────────
+  const RIGHT_LANES = 5;
+  const RIGHT_PER_LANE = 80;
+  const RIGHT_COUNT = RIGHT_LANES * RIGHT_PER_LANE;
+  const rightPos = new Float32Array(RIGHT_COUNT * 3);
+  const rightLane = new Int8Array(RIGHT_COUNT);
+  for (let l = 0; l < RIGHT_LANES; l++) {
+    for (let j = 0; j < RIGHT_PER_LANE; j++) {
+      const i = l * RIGHT_PER_LANE + j;
+      rightPos[i*3]   = 1.6 + Math.random() * 6.0;                    // x ∈ [1.6, 7.6]
+      rightPos[i*3+1] = 0.55 + (l - (RIGHT_LANES - 1) / 2) * 0.16;    // 5 lanes
+      rightPos[i*3+2] = (l - (RIGHT_LANES - 1) / 2) * 0.18 + (Math.random() - 0.5) * 0.05;
+      rightLane[i] = l;
+    }
+  }
+  const rightGeo = new THREE.BufferGeometry();
+  rightGeo.setAttribute('position', new THREE.BufferAttribute(rightPos, 3));
+  const rightMat = new THREE.PointsMaterial({
+    color: 0x01a5ff,
+    size: 0.07,
+    map: spriteTex,
+    alphaTest: 0.001,
+    transparent: true,
+    blending: THREE.AdditiveBlending,
+    depthWrite: false,
+    sizeAttenuation: true,
+  });
+  const rightPoints = new THREE.Points(rightGeo, rightMat);
+  scene.add(rightPoints);
+
   /* ── Postprocessing — UnrealBloom (skipped on low-end CPUs) */
   const lowEnd = (navigator.hardwareConcurrency || 4) < 4;
   let composer = null;
@@ -425,6 +504,42 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         c.position.y = c.userData.baseY + Math.sin(t * 1.2 + c.userData.bobPhase) * c.userData.bobAmp;
         c.rotation.y = t * 0.3 + c.userData.bobPhase;
       }
+
+      /* Energy flows */
+      // Left turbulent: drift toward chip with sin/cos perturbation
+      const lp = leftGeo.attributes.position.array;
+      for (let i = 0; i < LEFT_COUNT; i++) {
+        const ix = i * 3;
+        const x = lp[ix], y = lp[ix+1], z = lp[ix+2];
+        // pseudo curl-noise: perpendicular pair of sin fields
+        const nx =  Math.sin(y * 1.6 + t * 0.45) + Math.cos(z * 1.3 - t * 0.22);
+        const ny =  Math.cos(x * 1.4 + t * 0.30) - Math.sin(z * 1.7 + t * 0.18);
+        const nz =  Math.sin(x * 1.2 - t * 0.25) + Math.cos(y * 1.1 + t * 0.32);
+        // base drift toward +X (chip)
+        lp[ix]   += 0.030 + nx * 0.008;
+        lp[ix+1] += ny * 0.006;
+        lp[ix+2] += nz * 0.006;
+        // re-spawn when crossing chip plane
+        if (lp[ix] > -1.4) {
+          lp[ix]   = -7.4 + Math.random() * 0.4;
+          lp[ix+1] = (Math.random() - 0.5) * 2.4 + 0.4;
+          lp[ix+2] = (Math.random() - 0.5) * 2.0;
+        }
+      }
+      leftGeo.attributes.position.needsUpdate = true;
+
+      // Right organised: steady rightward, thin lane wobble
+      const rp = rightGeo.attributes.position.array;
+      for (let i = 0; i < RIGHT_COUNT; i++) {
+        const ix = i * 3;
+        rp[ix] += 0.045;
+        // tiny vertical wobble for life — without breaking the lane
+        rp[ix+1] += Math.sin(t * 3.0 + i) * 0.0008;
+        if (rp[ix] > 8.0) {
+          rp[ix] = 1.6;
+        }
+      }
+      rightGeo.attributes.position.needsUpdate = true;
     }
 
     if (composer) composer.render();
