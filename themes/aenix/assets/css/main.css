@@ -515,7 +515,7 @@ img { max-width: 100%; height: auto; display: block; }
   mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 10%, transparent 70%);
 }
 
-/* Flow canvas — full background */
+/* Flow canvas — full background (2D fallback when WebGL unavailable) */
 .hero-flow {
   position: absolute;
   inset: 0;
@@ -524,6 +524,24 @@ img { max-width: 100%; height: auto; display: block; }
   display: block;
   width: 100%;
   height: 100%;
+}
+
+/* 3D hero scene — sits above flow-canvas, below hero-content.
+   On successful WebGL init, hero-3d.mjs sets #flow-canvas { display:none }. */
+.hero-3d {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.hero-3d-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 768px) {
+  /* On mobile we keep the lighter glows + grid only — skip the 3D scene */
+  .hero-3d { display: none; }
 }
 
 /* Ambient glows */

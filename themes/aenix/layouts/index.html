@@ -14,9 +14,12 @@
     <div class="hero-vignette"></div>
   </div>
 
+  {{/* 3D scene canvas (positioned absolute behind hero-content via CSS).
+       Lives inside .hero-bg so it sits behind hero text but above flow-canvas. */}}
+  {{ partial "hero-3d.html" . }}
+
   <div class="hero-layout container">
     <div class="hero-content">
-      {{ partial "hero-cloud.html" . }}
       <h1 class="hero-title">We build clouds!</h1>
       <p class="hero-subtitle">Amplify your data center with cloud transformation.</p>
       <div class="hero-cta">
@@ -147,4 +150,11 @@
 </section>
 {{ end }}
 
+{{ end }}
+
+{{ define "scripts" }}
+{{ $hero3d := resources.Get "js/hero-3d.mjs" | fingerprint }}
+{{ if $hero3d }}
+<script type="module" src="{{ $hero3d.RelPermalink }}"></script>
+{{ end }}
 {{ end }}
