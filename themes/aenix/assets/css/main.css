@@ -492,8 +492,13 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-home {
   min-height: calc(100vh - 72px);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   padding: 0;
+}
+.hero-home .hero-layout {
+  /* fill the viewport space ABOVE the feature bar */
+  flex: 1 0 auto;
 }
 
 /* ---- Background system ---- */
@@ -515,7 +520,7 @@ img { max-width: 100%; height: auto; display: block; }
   mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 10%, transparent 70%);
 }
 
-/* Flow canvas — full background */
+/* Flow canvas — full background (2D fallback when WebGL unavailable) */
 .hero-flow {
   position: absolute;
   inset: 0;
@@ -524,6 +529,157 @@ img { max-width: 100%; height: auto; display: block; }
   display: block;
   width: 100%;
   height: 100%;
+}
+
+/* 3D hero scene — sits above flow-canvas, below hero-content.
+   On successful WebGL init, hero-3d.mjs sets #flow-canvas { display:none }. */
+.hero-3d {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+.hero-3d-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Floating annotations layered on top of the 3D scene */
+.hero-3d-annotations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+.ann {
+  position: absolute;
+  color: var(--text-secondary);
+  font-size: 12px;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+  max-width: 220px;
+}
+.ann-eyebrow {
+  display: block;
+  color: var(--brand-primary);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.ann-body {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.85;
+}
+.ann-line {
+  display: block;
+  position: absolute;
+  width: 1px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(1, 165, 255, 0.55) 0%,
+    rgba(1, 165, 255, 0.55) 50%,
+    transparent 50%,
+    transparent 100%);
+  background-size: 1px 6px;
+  background-repeat: repeat-y;
+}
+/* Top-right "AENIX CONTROL PLANE" — leader line dropping toward chip */
+.ann--control-plane {
+  top: 16%;
+  right: 8%;
+  text-align: left;
+}
+.ann--control-plane .ann-line {
+  top: 100%;
+  left: 30%;
+  height: 50px;
+  margin-top: 6px;
+}
+/* Middle-left "COMPLEXITY" — sits at chip vertical band, far left */
+.ann--complexity {
+  top: 30%;
+  left: 5%;
+  text-align: left;
+}
+/* Middle-right "SIMPLICITY" */
+.ann--simplicity {
+  top: 30%;
+  right: 5%;
+  text-align: left;
+}
+@media (max-width: 1100px) {
+  /* Tighten margins on smaller desktops */
+  .ann--complexity { left: 3%; }
+  .ann--simplicity { right: 3%; }
+  .ann--control-plane { right: 5%; }
+}
+@media (max-width: 900px) {
+  /* No room for floating annotations — let the canvas breathe */
+  .hero-3d-annotations { display: none; }
+}
+@media (max-width: 768px) {
+  /* On mobile we keep the lighter glows + grid only — skip the 3D scene */
+  .hero-3d { display: none; }
+}
+
+/* ── Hero feature bar ──────────────────────────────────────────
+   Bottom-of-hero pillars row. 4 features each with coloured icon,
+   bold title, supporting copy. */
+.hero-features {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: 32px 24px 48px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.hero-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.hero-feature-icon {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--c, var(--brand-primary));
+  background: color-mix(in srgb, var(--c, var(--brand-primary)) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c, var(--brand-primary)) 35%, transparent);
+}
+.hero-feature-title {
+  display: block;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.hero-feature-desc {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.45;
+}
+@media (max-width: 900px) {
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 32px;
+    padding: 24px 16px 32px;
+  }
+}
+@media (max-width: 540px) {
+  .hero-features { grid-template-columns: 1fr; }
 }
 
 /* Ambient glows */

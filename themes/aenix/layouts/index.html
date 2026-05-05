@@ -14,9 +14,12 @@
     <div class="hero-vignette"></div>
   </div>
 
+  {{/* 3D scene canvas (positioned absolute behind hero-content via CSS).
+       Lives inside .hero-bg so it sits behind hero text but above flow-canvas. */}}
+  {{ partial "hero-3d.html" . }}
+
   <div class="hero-layout container">
     <div class="hero-content">
-      {{ partial "hero-cloud.html" . }}
       <h1 class="hero-title">We build clouds!</h1>
       <p class="hero-subtitle">Amplify your data center with cloud transformation.</p>
       <div class="hero-cta">
@@ -25,6 +28,46 @@
           <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m0 0L9 4m4 4L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
         <a href="/cozystack/" class="btn btn-hero-ghost btn-lg">Explore Cozystack</a>
+      </div>
+    </div>
+  </div>
+
+  {{/* Bottom feature bar — pillars of the platform */}}
+  <div class="hero-features container" aria-label="Platform pillars">
+    <div class="hero-feature">
+      <span class="hero-feature-icon" style="--c:#01A5FF" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 7 9 7 9 3"/><polyline points="21 7 15 7 15 3"/><polyline points="3 17 9 17 9 21"/><polyline points="21 17 15 17 15 21"/><line x1="3" y1="3" x2="9" y2="9"/><line x1="21" y1="3" x2="15" y2="9"/><line x1="3" y1="21" x2="9" y2="15"/><line x1="21" y1="21" x2="15" y2="15"/></svg>
+      </span>
+      <div>
+        <strong class="hero-feature-title">Scalable</strong>
+        <p class="hero-feature-desc">Built to scale with your ambitions.</p>
+      </div>
+    </div>
+    <div class="hero-feature">
+      <span class="hero-feature-icon" style="--c:#661BE1" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </span>
+      <div>
+        <strong class="hero-feature-title">Secure</strong>
+        <p class="hero-feature-desc">Enterprise-grade security by design.</p>
+      </div>
+    </div>
+    <div class="hero-feature">
+      <span class="hero-feature-icon" style="--c:#01A5FF" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      </span>
+      <div>
+        <strong class="hero-feature-title">Performant</strong>
+        <p class="hero-feature-desc">High performance for any workload.</p>
+      </div>
+    </div>
+    <div class="hero-feature">
+      <span class="hero-feature-icon" style="--c:#661BE1" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </span>
+      <div>
+        <strong class="hero-feature-title">Reliable</strong>
+        <p class="hero-feature-desc">99.99% uptime you can depend on.</p>
       </div>
     </div>
   </div>
@@ -147,4 +190,11 @@
 </section>
 {{ end }}
 
+{{ end }}
+
+{{ define "scripts" }}
+{{ $hero3d := resources.Get "js/hero-3d.mjs" | fingerprint }}
+{{ if $hero3d }}
+<script type="module" src="{{ $hero3d.RelPermalink }}"></script>
+{{ end }}
 {{ end }}

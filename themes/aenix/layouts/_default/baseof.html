@@ -37,6 +37,18 @@
     window.AENIX_APOLLO_ID  = '66b1e05b9f632a02d2ea4fad';
   </script>
 
+  {{/* three.js import map — home page only (used by hero-3d.mjs) */}}
+  {{ if .IsHome }}
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  {{ end }}
+
   {{ block "head" . }}{{ end }}
 </head>
 <body class="{{ with .Params.bodyClass }}{{ . }}{{ end }}">
