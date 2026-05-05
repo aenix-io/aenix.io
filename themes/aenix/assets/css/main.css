@@ -591,26 +591,26 @@ img { max-width: 100%; height: auto; display: block; }
 }
 /* Top-right "AENIX CONTROL PLANE" — leader line dropping toward chip */
 .ann--control-plane {
-  top: 22%;
-  right: 10%;
+  top: 16%;
+  right: 8%;
   text-align: left;
 }
 .ann--control-plane .ann-line {
   top: 100%;
-  left: 0;
-  height: 80px;
+  left: 30%;
+  height: 50px;
   margin-top: 6px;
 }
-/* Middle-left "COMPLEXITY" */
+/* Middle-left "COMPLEXITY" — sits at chip vertical band, far left */
 .ann--complexity {
-  top: 46%;
-  left: 6%;
+  top: 30%;
+  left: 5%;
   text-align: left;
 }
 /* Middle-right "SIMPLICITY" */
 .ann--simplicity {
-  top: 46%;
-  right: 6%;
+  top: 30%;
+  right: 5%;
   text-align: left;
 }
 @media (max-width: 1100px) {
@@ -791,26 +791,6 @@ img { max-width: 100%; height: auto; display: block; }
   text-align: center;
   position: relative;
 }
-/* On the home page: text occupies the LEFT half of the hero so the
-   chip (positioned right-of-centre in the 3D scene) reads cleanly */
-.hero-home .hero-layout {
-  justify-content: flex-start;
-}
-.hero-home .hero-content {
-  text-align: left;
-  max-width: 540px;
-  margin-left: 0;
-}
-.hero-home .hero-subtitle { margin-left: 0; margin-right: 0; }
-.hero-home .hero-cta { justify-content: flex-start; }
-@media (max-width: 1100px) {
-  /* Recentre below 1100px — not enough room for side-by-side */
-  .hero-home .hero-layout { justify-content: center; }
-  .hero-home .hero-content { text-align: center; margin-left: auto; }
-  .hero-home .hero-subtitle { margin-left: auto; margin-right: auto; }
-  .hero-home .hero-cta { justify-content: center; }
-}
-
 .hero-subtitle {
   margin-left: auto;
   margin-right: auto;

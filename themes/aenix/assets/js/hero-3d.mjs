@@ -45,9 +45,9 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const scene = new THREE.Scene();
   scene.fog = new THREE.Fog(0x0b0f1a, 12, 32);
 
-  const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 100);
-  camera.position.set(0.6, 1.9, 5.6);
-  camera.lookAt(0.8, 0.5, 0);
+  const camera = new THREE.PerspectiveCamera(46, 1, 0.1, 100);
+  camera.position.set(0, 3.0, 6.0);
+  camera.lookAt(0, 0.6, 0);
 
   /* ── Terrain ──────────────────────────────────────────────────
      Plane subdivided into a grid. Vertex shader displaces Y based
@@ -194,11 +194,15 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
      around it that bob slowly on Y.                              */
 
   const chipGroup = new THREE.Group();
-  // Offset right so the hero text on the LEFT reads clean
-  const CHIP_X = 1.6;
-  chipGroup.position.set(CHIP_X, 0.5, 0);
-  chipGroup.rotation.x = -0.21; // ~12° forward tilt
-  chipGroup.rotation.y = 0.10;
+  // Chip floats above the lookAt point; the camera (cy=3.0) sits above
+  // the chip (cy=1.6) so the top face — with the Æ glyph — is clearly
+  // visible. In screen space the chip lands in the upper third of the
+  // hero, well above the title and CTA buttons.
+  const CHIP_X = 0.0;
+  const CHIP_Y = 1.6;
+  chipGroup.position.set(CHIP_X, CHIP_Y, 0);
+  chipGroup.rotation.x = -0.22;
+  chipGroup.rotation.y = 0.08;
   scene.add(chipGroup);
 
   // 1. Body (dark slab)
@@ -219,9 +223,10 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   });
   chipGroup.add(new THREE.LineSegments(chipEdgesGeo, chipEdgesMat));
 
-  // Big bright pad UNDER the chip — extends well beyond on each side so its
-  // edges peek out around the chip body and bloom into a strong halo.
-  const rimGeo = new THREE.PlaneGeometry(CHIP_W * 2.4, CHIP_D * 2.2);
+  // Tight rim glow — soft cyan disc just under the chip, sized so the
+  // halo only peeks out around the chip's silhouette (not as a separate
+  // floor disc).
+  const rimGeo = new THREE.PlaneGeometry(CHIP_W * 1.4, CHIP_D * 1.4);
   const rimMat = new THREE.ShaderMaterial({
     transparent: true,
     depthWrite: false,
@@ -232,16 +237,15 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       varying vec2 vUv;
       void main(){
         vec2 c = vUv - 0.5;
-        // anisotropic — wider in X for the horizontal-streak look
-        float d = length(c * vec2(0.55, 1.4));
-        float a = smoothstep(0.55, 0.0, d) * 0.55;
-        gl_FragColor = vec4(0.10, 0.7, 1.0, a);
+        float d = length(c * vec2(0.85, 1.0));
+        float a = smoothstep(0.5, 0.05, d) * 0.40;
+        gl_FragColor = vec4(0.15, 0.7, 1.0, a);
       }
     `,
   });
   const rim = new THREE.Mesh(rimGeo, rimMat);
   rim.rotation.x = -Math.PI / 2;
-  rim.position.y = -CHIP_T / 2 - 0.01;
+  rim.position.y = -CHIP_T / 2 - 0.005;
   chipGroup.add(rim);
 
   // 3. Top face plane with Æ logo (rasterised SVG → CanvasTexture)
@@ -409,8 +413,8 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const LEFT_END_X   = CHIP_X - 1.6;  // re-spawn just before chip
   const leftPos = new Float32Array(LEFT_COUNT * 3);
   const leftSpawn = (i) => {
-    leftPos[i*3]   = LEFT_SPAWN_X - Math.random() * 2.5;     // x ∈ [-8.5, -6.0]
-    leftPos[i*3+1] = (Math.random() - 0.5) * 2.4 + 0.4;
+    leftPos[i*3]   = LEFT_SPAWN_X - Math.random() * 2.5;          // x ∈ [-8.5, -6.0]
+    leftPos[i*3+1] = CHIP_Y + (Math.random() - 0.5) * 1.6;        // around chip height
     leftPos[i*3+2] = (Math.random() - 0.5) * 2.0;
   };
   for (let i = 0; i < LEFT_COUNT; i++) leftSpawn(i);
@@ -441,7 +445,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     for (let j = 0; j < RIGHT_PER_LANE; j++) {
       const i = l * RIGHT_PER_LANE + j;
       rightPos[i*3]   = RIGHT_START_X + Math.random() * (RIGHT_END_X - RIGHT_START_X);
-      rightPos[i*3+1] = 0.55 + (l - (RIGHT_LANES - 1) / 2) * 0.16;
+      rightPos[i*3+1] = CHIP_Y + 0.05 + (l - (RIGHT_LANES - 1) / 2) * 0.16;
       rightPos[i*3+2] = (l - (RIGHT_LANES - 1) / 2) * 0.18 + (Math.random() - 0.5) * 0.05;
       rightLane[i] = l;
     }
@@ -520,9 +524,9 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     smoothed.x += (target.x - smoothed.x) * 0.04;
     smoothed.y += (target.y - smoothed.y) * 0.04;
 
-    camera.position.x = 0.6 + smoothed.x * 0.40;
-    camera.position.y = 1.9 + smoothed.y * -0.25;
-    camera.lookAt(0.8, 0.5 + smoothed.y * 0.06, 0);
+    camera.position.x = smoothed.x * 0.40;
+    camera.position.y = 3.0 + smoothed.y * -0.30;
+    camera.lookAt(smoothed.x * 0.1, 0.6 + smoothed.y * 0.06, 0);
 
     if (!reduceMotion) {
       terrainMat.uniforms.uTime.value = t;
@@ -553,7 +557,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         // re-spawn just before the chip
         if (lp[ix] > LEFT_END_X) {
           lp[ix]   = LEFT_SPAWN_X - Math.random() * 2.5;
-          lp[ix+1] = (Math.random() - 0.5) * 2.4 + 0.4;
+          lp[ix+1] = CHIP_Y + (Math.random() - 0.5) * 1.6;
           lp[ix+2] = (Math.random() - 0.5) * 2.0;
         }
       }
