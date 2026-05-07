@@ -545,82 +545,121 @@ img { max-width: 100%; height: auto; display: block; }
   height: 100%;
 }
 
-/* Floating annotations layered on top of the 3D scene */
+/* Floating peak annotations layered on top of the 3D scene.
+   Style: surveyor-style topographic markers — thin dotted leader
+   line dropping from a small label down to a mountain peak. */
 .hero-3d-annotations {
   position: absolute;
   inset: 0;
   pointer-events: none;
   font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
-.ann {
+.peak {
   position: absolute;
   color: var(--text-secondary);
-  font-size: 12px;
-  line-height: 1.45;
+  font-size: 11px;
+  line-height: 1.40;
   letter-spacing: 0.04em;
-  max-width: 220px;
+  max-width: 180px;
+  text-align: left;
+  /* Subtle scrim + glow so the label stays readable over bright wireframe peaks */
+  text-shadow:
+    0 0 6px rgba(11, 15, 26, 0.95),
+    0 0 12px rgba(11, 15, 26, 0.7),
+    0 1px 2px rgba(0, 0, 0, 0.9);
+  isolation: isolate;
 }
-.ann-eyebrow {
+/* Soft radial scrim behind each label so text reads cleanly over bright ridges */
+.peak::before {
+  content: "";
+  position: absolute;
+  inset: -10px -14px -8px -14px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(11, 15, 26, 0.78) 0%,
+    rgba(11, 15, 26, 0.55) 45%,
+    rgba(11, 15, 26, 0) 78%);
+  z-index: -1;
+  pointer-events: none;
+}
+.peak-eyebrow {
   display: block;
   color: var(--brand-primary);
   font-weight: 700;
-  font-size: 11px;
-  letter-spacing: 0.18em;
+  font-size: 10px;
+  letter-spacing: 0.20em;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
+  white-space: nowrap;
 }
-.ann-body {
+.peak-body {
   margin: 0;
   color: var(--text-primary);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 400;
   opacity: 0.85;
 }
-.ann-line {
+.peak-line {
   display: block;
   position: absolute;
   width: 1px;
   background-image: linear-gradient(
     to bottom,
-    rgba(1, 165, 255, 0.55) 0%,
-    rgba(1, 165, 255, 0.55) 50%,
+    rgba(1, 165, 255, 0.65) 0%,
+    rgba(1, 165, 255, 0.65) 50%,
     transparent 50%,
     transparent 100%);
-  background-size: 1px 6px;
+  background-size: 1px 5px;
   background-repeat: repeat-y;
+  /* Each peak sets top/left/height locally */
 }
-/* Top-right "AENIX CONTROL PLANE" — leader line dropping toward chip */
-.ann--control-plane {
-  top: 16%;
-  right: 8%;
-  text-align: left;
+/* Survey-style terminus marker at the end of each leader line */
+.peak-line::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid rgba(1, 165, 255, 0.85);
+  background: rgba(1, 165, 255, 0.18);
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 0 0 6px rgba(1, 165, 255, 0.55);
 }
-.ann--control-plane .ann-line {
-  top: 100%;
-  left: 30%;
-  height: 50px;
+/* Left mountains (3 labels) */
+.peak--kubernetes  { top: 12%;  left: 6%;  }
+.peak--vms         { top: 24%;  left: 14%; }
+.peak--databases   { top: 38%;  left: 4%;  }
+/* Right mountains (3 labels) */
+.peak--storage     { top: 12%;  right: 6%; }
+.peak--networking  { top: 24%;  right: 14%;}
+.peak--observability { top: 38%;  right: 4%;  }
+
+/* Each label drops a leader line down toward its peak */
+.peak-line {
+  top: 100%; left: 50%;
+  height: 48px;
   margin-top: 6px;
+  transform: translateX(-0.5px);
 }
-/* Middle-left "COMPLEXITY" — sits at chip vertical band, far left */
-.ann--complexity {
-  top: 30%;
-  left: 5%;
-  text-align: left;
+.peak--databases .peak-line,
+.peak--observability .peak-line { height: 36px; }
+
+@media (max-width: 1280px) {
+  .peak--kubernetes  { top: 10%; left: 3%;  }
+  .peak--vms         { top: 22%; left: 9%;  }
+  .peak--databases   { top: 36%; left: 2%;  }
+  .peak--storage     { top: 10%; right: 3%; }
+  .peak--networking  { top: 22%; right: 9%; }
+  .peak--observability { top: 36%; right: 2%;  }
 }
-/* Middle-right "SIMPLICITY" */
-.ann--simplicity {
-  top: 30%;
-  right: 5%;
-  text-align: left;
+@media (max-width: 1024px) {
+  /* Cull the middle pair to avoid overlap with shrinking canvas */
+  .peak--vms,
+  .peak--networking { display: none; }
 }
-@media (max-width: 1100px) {
-  /* Tighten margins on smaller desktops */
-  .ann--complexity { left: 3%; }
-  .ann--simplicity { right: 3%; }
-  .ann--control-plane { right: 5%; }
-}
-@media (max-width: 900px) {
-  /* No room for floating annotations — let the canvas breathe */
+@media (max-width: 820px) {
+  /* No room for any floating annotations on small screens */
   .hero-3d-annotations { display: none; }
 }
 @media (max-width: 768px) {
