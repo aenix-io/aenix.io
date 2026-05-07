@@ -103,31 +103,29 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         g.yz=a0.yz*x12.xz+h.yz*x12.yw;
         return 130.0*dot(m,g);
       }
-      // Lower-octave fbm: only 3 octaves so we get a few large
-      // peaks instead of dense noise.
       float fbm(vec2 p){
         float a=0.5, sum=0.0;
-        for(int i=0;i<3;i++){ sum += a*snoise(p); p *= 2.05; a *= 0.5; }
+        for(int i=0;i<2;i++){ sum += a*snoise(p); p *= 2.05; a *= 0.5; }
         return sum;
       }
 
       void main(){
         vec3 p = position;
-        // Lower-frequency sampling — broader, calmer mountain forms
-        // (roughly 2–3 big peaks per side instead of jagged noise).
-        vec2 uv2 = vec2(p.x * 0.055, p.z * 0.07);
+        vec2 uv2 = vec2(p.x * 0.05, p.z * 0.06);
 
-        float h = fbm(uv2) * 1.4 + 0.20 * fbm(uv2 * 2.4);
-        // soften the secondary ridge term — less spiky tops
-        h = h * 0.60 + 0.30 * abs(snoise(uv2 * 0.45));
+        // V-SHAPE FIRST: silhouette is driven by |x|, not by noise.
+        // This guarantees clear left/right peaks and an open centre.
+        float vshape = pow(smoothstep(2.5, 9.5, abs(p.x)), 1.1);
+        // Light z-jitter so the ridge isn't a perfect plateau — gives
+        // 2–3 broad peaks per side without looking noisy.
+        float zVar   = 0.55 + abs(snoise(vec2(p.z * 0.14, p.x * 0.04))) * 0.50;
+        // Very gentle micro-noise on top so the wireframe has texture.
+        float micro  = 0.85 + fbm(uv2) * 0.15;
 
-        // Wider, sharper V-valley so the centre stays fully open for
-        // the hero copy. Mask is 0 at |x|<3, full at |x|>=11.
-        float vmask = smoothstep(3.0, 11.0, abs(p.x));
-        float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.5;
+        float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.45;
 
-        float amp = 7.5;
-        h = h * vmask * (1.0 + frontBoost);
+        float amp = 7.0;
+        float h = vshape * zVar * micro * (1.0 + frontBoost);
 
         p.y += h * amp;
 
@@ -144,34 +142,24 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       varying float vElevation;
 
       void main(){
-        // Inverted lighting hierarchy: low-elevation slopes (near the
-        // valley) are brighter; high peaks are DARKER + less saturated.
-        // No more white blow-out on summits.
+        // Pure dark-blue palette — no white blow-out, no light tint.
+        // Peaks are darker than the valley edges, valley centre is
+        // dimmed via alpha (the only "highlight" is a CSS-side glow).
         float t = clamp(vElevation / 4.0, 0.0, 1.0);
-        // mix from bright cyan at base to a darker, desaturated blue at peak
-        vec3 baseCol = mix(uColorHi, uColorLo * 0.45, t);
-        // pull saturation down at the highest peaks
+        vec3 baseCol = mix(uColorHi, uColorLo * 0.50, t);
         float lum = dot(baseCol, vec3(0.299, 0.587, 0.114));
-        vec3 col  = mix(baseCol, vec3(lum), t * 0.45);
+        vec3 col  = mix(baseCol, vec3(lum) * 0.85, t * 0.55);
 
-        // Far-back fade so the deepest ridges dissolve into bg.
-        float distFade = smoothstep(-34.0, -22.0, vWorldPos.z);
-
-        // Valley alpha reveal — keep the centre band quiet so the
-        // hero copy never fights wires.
+        float distFade  = smoothstep(-34.0, -22.0, vWorldPos.z);
         float valleyDim = smoothstep(0.0, 3.0, abs(vWorldPos.x));
-        valleyDim = mix(0.16, 1.0, valleyDim);
-
+        valleyDim = mix(0.12, 1.0, valleyDim);
         float frontEdge = smoothstep(2.0, 9.5, vWorldPos.z);
-        float nearDim = mix(1.0, 0.40, frontEdge);
+        float nearDim   = mix(1.0, 0.40, frontEdge);
 
-        // Ground-haze: low-altitude wires get a very gentle white
-        // tint, simulating valley fog and lifting the centre as the
-        // brightest reading.
-        float groundFog = smoothstep(0.5, -1.4, vWorldPos.y);
-        col = mix(col, vec3(0.78, 0.88, 1.00), groundFog * 0.35);
-
-        float alpha = distFade * valleyDim * nearDim * 0.70;
+        // Whole scene held to ~45% (was 70%) so there's no overall
+        // brightness bloom. Brightness budget is reserved for the
+        // small CSS centre glow.
+        float alpha = distFade * valleyDim * nearDim * 0.45;
         gl_FragColor = vec4(col, alpha);
       }
     `,
@@ -245,42 +233,26 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     flowGroup.add(new THREE.Line(geo, mat));
   }
 
-  // ── FLOWS (both ridges → centre valley) ──
-  // Symmetric, very subtle. Same count and opacity on both sides so
-  // the scene stays balanced (no single bright side). Left curves
-  // get a small chaos offset; right curves are slightly smoother as
-  // they approach the centre. Lines are 1 px and barely visible.
+  // ── FLOWS (minimal, structured) ──
+  // Three lines total: one descending the left slope, one descending
+  // the right slope, both arriving at the centre core. Each line
+  // hugs the terrain (control points stay close to the slope), and
+  // opacity is held low so the wireframe stays the dominant read.
   const FLOW_HALF = [
-    // [x, y, z, chaos]   x is the left-side magnitude; we mirror for right
-    [ 8.5, 4.4,  -6, 1.10],
-    [ 6.5, 4.0,  -2, 1.00],
-    [ 7.5, 4.2, -10, 1.15],
-    [ 5.5, 3.6,   2, 0.95],
-    [ 4.5, 3.2,   5, 0.90],
+    // [magX, startY, startZ]
+    [ 8.0, 4.5, -4 ],
   ];
-  function addFlow(side, [mag, sy, sz, chaos]) {
+  function addFlow(side, [mag, sy, sz]) {
     const sx = side * mag;
     const start = new THREE.Vector3(sx, sy, sz);
-    // Control points placed near a straight line from start→CORE, with
-    // a bias to STAY LOW (closer to the slope surface) and a tiny X
-    // jitter for organic feel. Keeps the line hugging the terrain
-    // instead of bowing through the air.
     const dx = CORE.x - sx, dy = CORE.y - sy, dz = CORE.z - sz;
-    const mid1 = new THREE.Vector3(
-      sx + dx * 0.34 + sx * 0.04 * chaos,
-      sy + dy * 0.55,                         // descend faster — hug slope
-      sz + dz * 0.34
-    );
-    const mid2 = new THREE.Vector3(
-      sx + dx * 0.72 + sx * 0.02,
-      sy + dy * 0.86,                         // already nearly at floor
-      sz + dz * 0.72
-    );
+    const mid1 = new THREE.Vector3(sx + dx * 0.35, sy + dy * 0.55, sz + dz * 0.35);
+    const mid2 = new THREE.Vector3(sx + dx * 0.72, sy + dy * 0.88, sz + dz * 0.72);
     const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, CORE);
-    addCurve(curve, cPurple, cCyan, 0.18);
+    addCurve(curve, cPurple, cCyan, 0.16);
   }
-  FLOW_HALF.forEach(p => addFlow(-1, p)); // left
-  FLOW_HALF.forEach(p => addFlow( 1, p)); // right (mirror)
+  FLOW_HALF.forEach(p => addFlow(-1, p));
+  FLOW_HALF.forEach(p => addFlow( 1, p));
 
   scene.add(flowGroup);
 

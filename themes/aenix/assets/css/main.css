@@ -734,23 +734,43 @@ img { max-width: 100%; height: auto; display: block; }
   background: radial-gradient(ellipse 85% 75% at 50% 50%, transparent 35%, var(--bg-main) 100%);
 }
 
-/* Centre valley = the brightest point of the scene. Soft cyan pool,
-   no visible shape or border — just luminance that anchors the eye
-   on the V where input flows converge. */
+/* Centre valley focal point — barely-visible cyan pool, kept very
+   small and low-opacity so it doesn't compete with the text. */
 .hero-control-glow {
   position: absolute;
   left: 50%;
-  top: 60%;
-  width: 620px;
+  top: 64%;
+  width: 360px;
+  height: 160px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: radial-gradient(ellipse at center,
+    rgba(110, 195, 255, 0.10) 0%,
+    rgba(1, 165, 255, 0.04) 50%,
+    transparent 80%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+/* Soft dark scrim behind the hero copy so the title and CTAs stay
+   crisp regardless of what the wireframe is doing behind them. */
+.hero-text-scrim {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 720px;
   height: 280px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   background: radial-gradient(ellipse at center,
-    rgba(140, 215, 255, 0.22) 0%,
-    rgba(1, 165, 255, 0.10) 40%,
+    rgba(11, 15, 26, 0.72) 0%,
+    rgba(11, 15, 26, 0.40) 45%,
     transparent 78%);
-  filter: blur(32px);
+  filter: blur(20px);
   z-index: 0;
+}
+@media (max-width: 768px) {
+  .hero-text-scrim { display: none; }
 }
 @media (max-width: 768px) {
   .hero-control-glow { display: none; }
