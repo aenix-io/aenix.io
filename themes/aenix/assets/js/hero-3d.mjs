@@ -240,23 +240,31 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     flowGroup.add(new THREE.Line(geo, mat));
   }
 
-  // ── INPUT FLOWS (left ridges → core) ──
-  // Subtle thin lines descending from a few left-side ridge points
-  // toward the central control core. Kept low-opacity and away from
-  // the upper-left edge so UnrealBloom doesn't smear them into a
-  // bright streak.
-  const INPUT_ORIGINS = [
-    [ -9.0, 4.6, -6], [-7.0, 4.2, -2], [-8.5, 4.4, -10],
-    [ -6.0, 3.8,  2], [-5.0, 3.4,  5],
+  // ── FLOWS (both ridges → centre valley) ──
+  // Symmetric, very subtle. Same count and opacity on both sides so
+  // the scene stays balanced (no single bright side). Left curves
+  // get a small chaos offset; right curves are slightly smoother as
+  // they approach the centre. Lines are 1 px and barely visible.
+  const FLOW_HALF = [
+    // [x, y, z, chaos]   x is the left-side magnitude; we mirror for right
+    [ 8.5, 4.4,  -6, 1.10],
+    [ 6.5, 4.0,  -2, 1.00],
+    [ 7.5, 4.2, -10, 1.15],
+    [ 5.5, 3.6,   2, 0.95],
+    [ 4.5, 3.2,   5, 0.90],
   ];
-  INPUT_ORIGINS.forEach(([sx, sy, sz], i) => {
+  function addFlow(side, [mag, sy, sz, chaos]) {
+    const sx = side * mag;
     const start = new THREE.Vector3(sx, sy, sz);
-    const chaos = 1.0 + (i % 3) * 0.10;
-    const mid1 = new THREE.Vector3(sx * 0.78 * chaos, sy * 0.55, sz * 0.85);
-    const mid2 = new THREE.Vector3(sx * 0.12, -0.20, sz * 0.40 + 0.6);
+    const mid1  = new THREE.Vector3(sx * 0.78 * chaos, sy * 0.55, sz * 0.85);
+    const mid2  = new THREE.Vector3(sx * 0.12, -0.20, sz * 0.40 + 0.6);
     const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, CORE);
-    addCurve(curve, cPurple, cCyan, 0.32);
-  });
+    // Right side gets slightly less chaos jitter — feels "smoother"
+    // and "more aligned" as the brief asks.
+    addCurve(curve, cPurple, cCyan, 0.18);
+  }
+  FLOW_HALF.forEach(p => addFlow(-1, p)); // left
+  FLOW_HALF.forEach(p => addFlow( 1, p)); // right (mirror)
 
   scene.add(flowGroup);
 
@@ -270,13 +278,14 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const PEAK_DEFS = [
     // [id, x, y, z] — Y values picked so the projected dot lands on
     // the visible ridge silhouette under the down-tilted camera.
-    // Lower world Y projects FURTHER DOWN on screen with this tilt.
-    ['kubernetes',    -10.0, 2.0, -10],
-    ['vms',            -6.5, 1.4,  -8],
-    ['databases',      -3.5, 0.6,  -6],
-    ['storage',         10.0, 2.0, -10],
-    ['networking',       6.5, 1.4,  -8],
-    ['observability',    3.5, 0.6,  -6],
+    // Inner pair pushed further out on X to keep their labels clear
+    // of the centred title.
+    ['kubernetes',    -11.0, 2.0, -10],
+    ['vms',            -7.5, 1.4,  -8],
+    ['databases',      -5.5, 0.8,  -6],
+    ['storage',         11.0, 2.0, -10],
+    ['networking',       7.5, 1.4,  -8],
+    ['observability',    5.5, 0.8,  -6],
   ];
   const peakAnchors = PEAK_DEFS.map(([id, x, y, z]) => ({
     id,
@@ -286,11 +295,8 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const annotationsEl = document.querySelector('.hero-3d-annotations');
   const projVec = new THREE.Vector3();
   let annotationsReady = false;
-  // Labels live on a fixed top row at LABEL_TOP_Y (matches CSS `.peak { top }`).
-  // The leader line that hangs below each label is sized per-peak so its
-  // bottom dot sits exactly on the projected peak point.
-  const LABEL_TOP_Y = 96;
-  const LABEL_HEIGHT_APPROX = 50;
+  // Each label is anchored to its peak point: CSS positions the label
+  // (peak-x, peak-y) and shifts it just above the dot via transform.
   function projectPeakLabels() {
     const r = canvas.getBoundingClientRect();
     if (r.width === 0) return;
@@ -300,8 +306,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       const sx = (projVec.x * 0.5 + 0.5) * r.width;
       const sy = (-projVec.y * 0.5 + 0.5) * r.height;
       a.el.style.setProperty('--peak-x', sx + 'px');
-      const lineH = Math.max(28, sy - LABEL_TOP_Y - LABEL_HEIGHT_APPROX);
-      a.el.style.setProperty('--peak-line-h', lineH + 'px');
+      a.el.style.setProperty('--peak-y', sy + 'px');
     }
     if (!annotationsReady && annotationsEl) {
       annotationsEl.classList.add('peaks-ready');

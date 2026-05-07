@@ -563,25 +563,22 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
 .peak {
-  --peak-label-w: 132px;
-  --peak-line-h: 80px;       /* JS overrides per peak so all labels sit on a uniform top row */
+  --peak-line-h: 20px;       /* short tick from peak point up to label */
+  --peak-label-w: 120px;
   position: absolute;
-  /* Labels sit on a fixed top row BELOW the sticky header; only X
-     follows the projected peak. Vertical attachment to the peak is
-     provided by the dotted line (.peak-line) whose per-peak height is
-     set from JS. */
-  top: 96px;
+  /* Anchor the label JUST ABOVE its projected peak point — no top-row
+     pile-up, no UI tooltip feel. The dot at the bottom of the line sits
+     exactly on (--peak-x, --peak-y). */
   left: var(--peak-x, 50%);
+  top:  var(--peak-y, 50%);
   width: var(--peak-label-w);
-  transform: translateX(-50%);
-  color: var(--text-secondary);
-  font-size: 11px;
-  line-height: 1.45;
+  transform: translate(-50%, calc(-100% - var(--peak-line-h) - 4px));
+  color: rgba(220, 232, 246, 0.92);
+  font-size: 10px;
+  line-height: 1.4;
   letter-spacing: 0.04em;
   text-align: center;
-  text-shadow:
-    0 1px 2px rgba(0, 0, 0, 0.95),
-    0 0 4px rgba(11, 15, 26, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95);
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -590,23 +587,22 @@ img { max-width: 100%; height: auto; display: block; }
 .peak-eyebrow {
   display: block;
   color: var(--brand-primary);
-  font-weight: 700;
-  font-size: 10px;
-  letter-spacing: 0.20em;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   white-space: nowrap;
 }
 .peak-body {
   margin: 0;
-  color: var(--text-primary);
-  font-size: 11px;
+  color: rgba(220, 232, 246, 0.74);
+  font-size: 10px;
   font-weight: 400;
-  opacity: 0.82;
 }
 
-/* Thin dotted leader line — vertical column from label bottom down to
-   the peak point. Length matches --peak-line-h on .peak. */
+/* Short solid (not dotted) tick from the dot up to the label — feels
+   like a map annotation, not a UI tooltip. */
 .peak-line {
   display: block;
   position: absolute;
@@ -614,31 +610,23 @@ img { max-width: 100%; height: auto; display: block; }
   left: 50%;
   transform: translateX(-50%);
   width: 1px;
-  height: var(--peak-line-h);
-  background-image: linear-gradient(
-    to bottom,
-    rgba(1, 165, 255, 0.55) 0%,
-    rgba(1, 165, 255, 0.55) 50%,
-    transparent 50%,
-    transparent 100%);
-  background-size: 1px 5px;
-  background-repeat: repeat-y;
+  height: var(--peak-line-h, 20px);
+  background: linear-gradient(to bottom,
+    rgba(160, 210, 255, 0.0) 0%,
+    rgba(160, 210, 255, 0.45) 100%);
 }
-/* Small glowing dot at the connection point (= the peak anchor in 3D
-   projected to screen). CSS-only; not a 3D mesh, so no orb/blob. */
+/* Small dot at the peak point — CSS only, no 3D mesh. Subtle glow. */
 .peak-line::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -3px;
-  width: 6px;
-  height: 6px;
+  bottom: -2px;
+  width: 4px;
+  height: 4px;
   border-radius: 50%;
-  background: rgba(180, 230, 255, 0.95);
+  background: rgba(190, 230, 255, 0.95);
   transform: translateX(-50%);
-  box-shadow:
-    0 0 4px rgba(1, 165, 255, 0.9),
-    0 0 10px rgba(1, 165, 255, 0.55);
+  box-shadow: 0 0 4px rgba(1, 165, 255, 0.55);
 }
 
 @media (max-width: 1280px) {
@@ -746,22 +734,21 @@ img { max-width: 100%; height: auto; display: block; }
   background: radial-gradient(ellipse 85% 75% at 50% 50%, transparent 35%, var(--bg-main) 100%);
 }
 
-/* Control-zone glow — subtle radial pool of brand-cyan in the centre
-   valley, signalling the convergence point where input flows arrive
-   and output flows depart. NOT a visible UI box — just energy. */
+/* Soft focus glow at the centre valley — barely visible light pool,
+   no shape, no panel. Just gentle luminance to anchor the eye. */
 .hero-control-glow {
   position: absolute;
   left: 50%;
   top: 58%;
-  width: 640px;
-  height: 280px;
+  width: 540px;
+  height: 220px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   background: radial-gradient(ellipse at center,
-    rgba(1, 165, 255, 0.18) 0%,
-    rgba(1, 165, 255, 0.08) 40%,
-    transparent 75%);
-  filter: blur(28px);
+    rgba(1, 165, 255, 0.10) 0%,
+    rgba(1, 165, 255, 0.04) 45%,
+    transparent 78%);
+  filter: blur(36px);
   z-index: 0;
 }
 @media (max-width: 768px) {
