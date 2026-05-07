@@ -46,8 +46,8 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   // Camera looks forward into a valley — placed slightly above the floor,
   // tilted just enough to see the distant mountains rise.
   const camera = new THREE.PerspectiveCamera(52, 1, 0.1, 100);
-  camera.position.set(0, 1.6, 9.0);
-  camera.lookAt(0, 1.0, -2.0);
+  camera.position.set(0, 1.0, 9.0);
+  camera.lookAt(0, 2.4, -2.0);
 
   /* ── Valley terrain ──────────────────────────────────────────
      Big plane lying flat, displaced by simplex noise. A "valley
@@ -68,7 +68,6 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       uTime:    { value: 0 },
       uColorLo: { value: new THREE.Color(0x0971eb) }, // brand blue (low)
       uColorHi: { value: new THREE.Color(0x01a5ff) }, // brand cyan (high)
-      uAccent:  { value: new THREE.Color(0x661be1) }, // brand purple (peak accent)
     },
     transparent: true,
     wireframe: true,
@@ -125,8 +124,9 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         // rise higher than distant ones, so the silhouette feels grounded.
         float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.5;
 
-        // amplitude in metres
-        float amp = 4.6;
+        // amplitude in metres — tuned so peaks reach near the top of the
+        // viewport (no empty sky above the wireframe).
+        float amp = 6.2;
         h = h * vmask * (1.0 + frontBoost);
 
         p.y += h * amp;
@@ -140,17 +140,13 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     fragmentShader: /* glsl */`
       uniform vec3 uColorLo;
       uniform vec3 uColorHi;
-      uniform vec3 uAccent;
       varying vec3 vWorldPos;
       varying float vElevation;
 
       void main(){
-        // colour by elevation
+        // colour by elevation — pure brand blue → cyan
         float t = clamp(vElevation / 4.0, 0.0, 1.0);
         vec3 col = mix(uColorLo, uColorHi, t);
-
-        // subtle purple bleed on the very tallest peaks
-        col = mix(col, uAccent, pow(t, 2.2) * 0.35);
 
         // ridge accent — extra brightness on tall peaks
         col += pow(max(vElevation - 1.5, 0.0) * 0.5, 1.6) * vec3(0.4, 0.7, 1.0);
@@ -162,12 +158,15 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         float valleyDim = smoothstep(0.0, 3.0, abs(vWorldPos.x));
         valleyDim = mix(0.18, 1.0, valleyDim);
 
-        // softly fade the very front edge so the hero copy never fights wires
-        float frontFade = 1.0 - smoothstep(2.0, 9.5, vWorldPos.z);
-        // when frontFade is high we are NEAR the camera ⇒ dim
-        float nearDim = mix(0.25, 1.0, smoothstep(0.0, 1.0, 1.0 - frontFade));
+        // Softly fade only the very front edge so foreground wires don't
+        // crowd the hero copy. Distant peaks stay at full brightness so
+        // the silhouette reaches the top of the canvas cleanly.
+        float frontEdge = smoothstep(2.0, 9.5, vWorldPos.z);
+        float nearDim = mix(1.0, 0.40, frontEdge);
 
-        float alpha = distFade * valleyDim * nearDim * 0.85;
+        // Slightly more transparent overall (~17% vs prior 0.85) so the
+        // wireframe reads as atmosphere rather than solid mesh.
+        float alpha = distFade * valleyDim * nearDim * 0.70;
         gl_FragColor = vec4(col, alpha);
       }
     `,
@@ -200,6 +199,67 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const horizon = new THREE.Mesh(horizonGeo, horizonMat);
   horizon.position.set(0, 1.5, -22);
   scene.add(horizon);
+
+  /* ── Energy flow lines ───────────────────────────────────────
+     Thin glowing curves descending from the mountain ridges into
+     the valley floor. Each curve carries a vertex-colour gradient
+     from brand-purple at the peak to brand-cyan at the valley.    */
+  const flowGroup = new THREE.Group();
+  // Origins are scattered along both ridges at varying depths so the
+  // flows feel organic, not symmetric.
+  const FLOW_ORIGINS = [
+    // Left ridge — chaotic near, calmer far
+    [-13.5, 4.8, -10],
+    [-11.0, 5.6,  -6],
+    [-12.5, 5.2,  -2],
+    [-10.0, 4.8,   2],
+    [ -8.5, 4.0,   5],
+    // Right ridge mirror
+    [ 13.5, 4.8, -10],
+    [ 11.0, 5.6,  -6],
+    [ 12.5, 5.2,  -2],
+    [ 10.0, 4.8,   2],
+    [  8.5, 4.0,   5],
+    // A couple of deep-back flows that descend toward the centre
+    [ -7.0, 4.6, -14],
+    [  7.0, 4.6, -14],
+  ];
+  const cPurple = new THREE.Color(0x661be1);
+  const cCyan   = new THREE.Color(0x01a5ff);
+  const flowSegments = 36;
+  FLOW_ORIGINS.forEach(([sx, sy, sz]) => {
+    // Bezier from peak → valley floor near centre, with curvature
+    // following the slope outline so the line "hugs" the mountain.
+    const start = new THREE.Vector3(sx, sy, sz);
+    const end   = new THREE.Vector3(sx * 0.06, -1.05, sz * 0.45 + 1.0);
+    const mid1  = new THREE.Vector3(sx * 0.78, sy * 0.55, sz * 0.85);
+    const mid2  = new THREE.Vector3(sx * 0.30, -0.30, sz * 0.55 + 0.4);
+    const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, end);
+    const pts = curve.getPoints(flowSegments);
+    const geo = new THREE.BufferGeometry().setFromPoints(pts);
+    const colors = new Float32Array(pts.length * 3);
+    const mixed = new THREE.Color();
+    for (let i = 0; i < pts.length; i++) {
+      const t = i / (pts.length - 1);
+      // Ease so the purple fades early and the cyan dominates the lower
+      // (in-valley) portion — matches "brand-cyan in the control zone".
+      const k = Math.pow(t, 0.85);
+      mixed.copy(cPurple).lerp(cCyan, k);
+      colors[i * 3]     = mixed.r;
+      colors[i * 3 + 1] = mixed.g;
+      colors[i * 3 + 2] = mixed.b;
+    }
+    geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+    const mat = new THREE.LineBasicMaterial({
+      vertexColors: true,
+      transparent: true,
+      opacity: 0.55,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false,
+    });
+    flowGroup.add(new THREE.Line(geo, mat));
+  });
+  scene.add(flowGroup);
 
   /* ── Postprocessing — UnrealBloom (skipped on low-end CPUs) */
   const lowEnd = (navigator.hardwareConcurrency || 4) < 4;
