@@ -641,8 +641,14 @@ img { max-width: 100%; height: auto; display: block; }
     0 0 10px rgba(1, 165, 255, 0.55);
 }
 
+@media (max-width: 1280px) {
+  /* Hide the inner pair so they don't crowd the centred title at
+     intermediate widths */
+  .peak--databases,
+  .peak--observability { display: none; }
+}
 @media (max-width: 1024px) {
-  /* Cull the middle pair to avoid overlap on narrower viewports */
+  /* Drop the middle pair too — only the outer labels remain */
   .peak--vms,
   .peak--networking { display: none; }
 }

@@ -41,13 +41,14 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
 
   /* ── Scene ────────────────────────────────────────────────── */
   const scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0x0b0f1a, 14, 38);
+  scene.fog = new THREE.Fog(0x0b0f1a, 22, 60);
 
-  // Camera looks forward into a valley — placed slightly above the floor,
-  // tilted just enough to see the distant mountains rise.
-  const camera = new THREE.PerspectiveCamera(52, 1, 0.1, 100);
-  camera.position.set(0, 1.0, 9.0);
-  camera.lookAt(0, 2.4, -2.0);
+  // Camera elevated and tilted further down so the back ridges
+  // actually fill the upper part of the viewport — no dark sky band
+  // between the header and the wireframe.
+  const camera = new THREE.PerspectiveCamera(58, 1, 0.1, 100);
+  camera.position.set(0, 5.0, 9.5);
+  camera.lookAt(0, -0.6, -4.0);
 
   /* ── Valley terrain ──────────────────────────────────────────
      Big plane lying flat, displaced by simplex noise. A "valley
@@ -55,10 +56,10 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
      the text sits cleanly. Mountains rise on the left and right,
      fading to fog at the back.                                   */
 
-  const TERRAIN_W = 50;
-  const TERRAIN_D = 38;
-  const SEG_X = 180;
-  const SEG_Y = 120;
+  const TERRAIN_W = 56;
+  const TERRAIN_D = 54;
+  const SEG_X = 200;
+  const SEG_Y = 160;
 
   const terrainGeo = new THREE.PlaneGeometry(TERRAIN_W, TERRAIN_D, SEG_X, SEG_Y);
   terrainGeo.rotateX(-Math.PI / 2);
@@ -124,9 +125,9 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         // rise higher than distant ones, so the silhouette feels grounded.
         float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.5;
 
-        // amplitude in metres — tuned so peaks reach near the top of the
-        // viewport (no empty sky above the wireframe).
-        float amp = 6.2;
+        // amplitude in metres — tall peaks so the silhouette reaches
+        // up toward the header.
+        float amp = 7.5;
         h = h * vmask * (1.0 + frontBoost);
 
         p.y += h * amp;
@@ -151,21 +152,20 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         // ridge accent — extra brightness on tall peaks
         col += pow(max(vElevation - 1.5, 0.0) * 0.5, 1.6) * vec3(0.4, 0.7, 1.0);
 
-        // distance fade toward the back (foggy horizon)
-        float distFade = smoothstep(-18.0, 0.0, vWorldPos.z);
+        // Very gentle far-fade so the absolute back of the terrain
+        // dissolves into the bg, but everything in the visible frame
+        // stays fully rendered (no empty band under the header).
+        float distFade = smoothstep(-34.0, -22.0, vWorldPos.z);
 
         // valley reveal — keep the centre band quiet
         float valleyDim = smoothstep(0.0, 3.0, abs(vWorldPos.x));
         valleyDim = mix(0.18, 1.0, valleyDim);
 
         // Softly fade only the very front edge so foreground wires don't
-        // crowd the hero copy. Distant peaks stay at full brightness so
-        // the silhouette reaches the top of the canvas cleanly.
+        // crowd the hero copy.
         float frontEdge = smoothstep(2.0, 9.5, vWorldPos.z);
         float nearDim = mix(1.0, 0.40, frontEdge);
 
-        // Slightly more transparent overall (~17% vs prior 0.85) so the
-        // wireframe reads as atmosphere rather than solid mesh.
         float alpha = distFade * valleyDim * nearDim * 0.70;
         gl_FragColor = vec4(col, alpha);
       }
@@ -241,48 +241,21 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   }
 
   // ── INPUT FLOWS (left ridges → core) ──
-  // Slightly chaotic origins; first control point pushed outward (chaos),
-  // second control point near core (alignment), end exactly at core.
+  // Subtle thin lines descending from a few left-side ridge points
+  // toward the central control core. Kept low-opacity and away from
+  // the upper-left edge so UnrealBloom doesn't smear them into a
+  // bright streak.
   const INPUT_ORIGINS = [
-    [-13.5, 5.0, -10], [-11.0, 5.6,  -6], [-12.5, 5.2,  -2],
-    [-10.0, 4.7,   2], [ -8.5, 4.1,   5], [ -7.5, 4.6, -14],
-    // a few extra short tributaries — chaos density on the slopes
-    [-12.0, 4.4,  -8], [-10.5, 4.0,  -4], [ -9.0, 3.6,   0],
+    [ -9.0, 4.6, -6], [-7.0, 4.2, -2], [-8.5, 4.4, -10],
+    [ -6.0, 3.8,  2], [-5.0, 3.4,  5],
   ];
   INPUT_ORIGINS.forEach(([sx, sy, sz], i) => {
     const start = new THREE.Vector3(sx, sy, sz);
-    // Chaos control point — push away from the smooth path on the slope.
-    const chaos = 1.0 + (i % 3) * 0.15;
+    const chaos = 1.0 + (i % 3) * 0.10;
     const mid1 = new THREE.Vector3(sx * 0.78 * chaos, sy * 0.55, sz * 0.85);
-    // Alignment control point — close to core on the X axis already.
-    const mid2 = new THREE.Vector3(sx * 0.10, -0.20, sz * 0.40 + 0.6);
+    const mid2 = new THREE.Vector3(sx * 0.12, -0.20, sz * 0.40 + 0.6);
     const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, CORE);
-    addCurve(curve, cPurple, cCyan, 0.55);
-  });
-
-  // ── OUTPUT FLOWS (core → right side, parallel/organised) ──
-  // Six rails fanning slightly outward but staying nearly parallel,
-  // emerging from the same core point and exiting beyond the right edge.
-  const OUTPUT_RAILS = [
-    [ 14, 0.6, -2 ], [ 14, 0.2,  0 ], [ 14, -0.2, 1.5 ],
-    [ 14, -0.6, 3 ], [ 13, 1.0, -4 ], [ 13, -1.0, 4 ],
-  ];
-  OUTPUT_RAILS.forEach(([ex, ey, ez]) => {
-    const end = new THREE.Vector3(ex, ey, ez);
-    // Both control points lie on a near-straight line from CORE→end so
-    // the rail reads as a clean, organised exit (no dramatic curvature).
-    const mid1 = new THREE.Vector3(
-      CORE.x + (end.x - CORE.x) * 0.30,
-      CORE.y + (end.y - CORE.y) * 0.25,
-      CORE.z + (end.z - CORE.z) * 0.30
-    );
-    const mid2 = new THREE.Vector3(
-      CORE.x + (end.x - CORE.x) * 0.70,
-      CORE.y + (end.y - CORE.y) * 0.60,
-      CORE.z + (end.z - CORE.z) * 0.70
-    );
-    const curve = new THREE.CubicBezierCurve3(CORE, mid1, mid2, end);
-    addCurve(curve, cCyan, cWhite, 0.70);
+    addCurve(curve, cPurple, cCyan, 0.32);
   });
 
   scene.add(flowGroup);
@@ -295,14 +268,15 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
      dot at the projected coordinate). Positions chosen so the six
      screen projections spread across the viewport without stacking. */
   const PEAK_DEFS = [
-    // [id, x, y, z] — chosen so projected screen-X positions are
-    // ≥160 px apart at 1280, with no overlap onto the centre title.
-    ['kubernetes',    -10.0, 5.5, -10],  // outer-left
-    ['vms',            -6.5, 4.2,  -8],  // mid-left
-    ['databases',      -3.5, 3.0,  -6],  // inner-left
-    ['storage',         10.0, 5.5, -10],
-    ['networking',       6.5, 4.2,  -8],
-    ['observability',    3.5, 3.0,  -6],
+    // [id, x, y, z] — Y values picked so the projected dot lands on
+    // the visible ridge silhouette under the down-tilted camera.
+    // Lower world Y projects FURTHER DOWN on screen with this tilt.
+    ['kubernetes',    -10.0, 2.0, -10],
+    ['vms',            -6.5, 1.4,  -8],
+    ['databases',      -3.5, 0.6,  -6],
+    ['storage',         10.0, 2.0, -10],
+    ['networking',       6.5, 1.4,  -8],
+    ['observability',    3.5, 0.6,  -6],
   ];
   const peakAnchors = PEAK_DEFS.map(([id, x, y, z]) => ({
     id,
@@ -343,9 +317,9 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     composer.addPass(new RenderPass(scene, camera));
     const bloom = new UnrealBloomPass(
       new THREE.Vector2(canvas.clientWidth, canvas.clientHeight),
-      0.55, // strength
-      0.50, // radius
-      0.82  // threshold
+      0.32, // strength — kept low so flows don't smear into streaks
+      0.40, // radius
+      0.85  // threshold
     );
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
@@ -387,21 +361,23 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const start = performance.now();
 
   function frame() {
-    const t = (performance.now() - start) * 0.001;
-
     smoothed.x += (target.x - smoothed.x) * 0.04;
     smoothed.y += (target.y - smoothed.y) * 0.04;
 
     // very subtle camera parallax — keep the valley framing stable
     camera.position.x = smoothed.x * 0.35;
-    camera.position.y = 1.0 + smoothed.y * -0.20;
-    camera.lookAt(smoothed.x * 0.05, 2.4 + smoothed.y * 0.05, -2.0);
+    camera.position.y = 5.0 + smoothed.y * -0.20;
+    camera.lookAt(smoothed.x * 0.05, -0.6 + smoothed.y * 0.05, -4.0);
 
     if (composer) composer.render();
     else renderer.render(scene, camera);
     projectPeakLabels();
     raf = requestAnimationFrame(frame);
   }
+  // run one synchronous projection pass at init so labels never wait
+  // for the first rAF tick (which can be delayed in some browsers)
+  camera.updateMatrixWorld(true);
+  projectPeakLabels();
 
   /* ── Pause when offscreen ────────────────────────────────── */
   const obs = new IntersectionObserver((entries) => {
