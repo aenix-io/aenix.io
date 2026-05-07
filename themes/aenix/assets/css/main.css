@@ -734,21 +734,22 @@ img { max-width: 100%; height: auto; display: block; }
   background: radial-gradient(ellipse 85% 75% at 50% 50%, transparent 35%, var(--bg-main) 100%);
 }
 
-/* Soft focus glow at the centre valley — barely visible light pool,
-   no shape, no panel. Just gentle luminance to anchor the eye. */
+/* Centre valley = the brightest point of the scene. Soft cyan pool,
+   no visible shape or border — just luminance that anchors the eye
+   on the V where input flows converge. */
 .hero-control-glow {
   position: absolute;
   left: 50%;
-  top: 58%;
-  width: 540px;
-  height: 220px;
+  top: 60%;
+  width: 620px;
+  height: 280px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   background: radial-gradient(ellipse at center,
-    rgba(1, 165, 255, 0.10) 0%,
-    rgba(1, 165, 255, 0.04) 45%,
+    rgba(140, 215, 255, 0.22) 0%,
+    rgba(1, 165, 255, 0.10) 40%,
     transparent 78%);
-  filter: blur(36px);
+  filter: blur(32px);
   z-index: 0;
 }
 @media (max-width: 768px) {

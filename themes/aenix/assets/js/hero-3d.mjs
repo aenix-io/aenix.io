@@ -103,30 +103,29 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         g.yz=a0.yz*x12.xz+h.yz*x12.yw;
         return 130.0*dot(m,g);
       }
+      // Lower-octave fbm: only 3 octaves so we get a few large
+      // peaks instead of dense noise.
       float fbm(vec2 p){
         float a=0.5, sum=0.0;
-        for(int i=0;i<5;i++){ sum += a*snoise(p); p *= 2.05; a *= 0.5; }
+        for(int i=0;i<3;i++){ sum += a*snoise(p); p *= 2.05; a *= 0.5; }
         return sum;
       }
 
       void main(){
         vec3 p = position;
-        // Static terrain — no time-based displacement. Uses a fixed seed.
-        vec2 uv2 = vec2(p.x * 0.10, p.z * 0.12);
+        // Lower-frequency sampling — broader, calmer mountain forms
+        // (roughly 2–3 big peaks per side instead of jagged noise).
+        vec2 uv2 = vec2(p.x * 0.055, p.z * 0.07);
 
-        // base ridged height
-        float h = fbm(uv2) * 1.6 + 0.25 * fbm(uv2 * 2.4);
-        h = h * 0.55 + 0.55 * abs(snoise(uv2 * 0.55));
+        float h = fbm(uv2) * 1.4 + 0.20 * fbm(uv2 * 2.4);
+        // soften the secondary ridge term — less spiky tops
+        h = h * 0.60 + 0.30 * abs(snoise(uv2 * 0.45));
 
-        // VALLEY MASK — flatten the centre band so the hero copy reads.
-        // mask is 0 at x=0, ramps to 1 by |x|=8.
-        float vmask = smoothstep(2.0, 9.0, abs(p.x));
-        // FOREGROUND BOOST — peaks closer to the camera (positive p.z)
-        // rise higher than distant ones, so the silhouette feels grounded.
+        // Wider, sharper V-valley so the centre stays fully open for
+        // the hero copy. Mask is 0 at |x|<3, full at |x|>=11.
+        float vmask = smoothstep(3.0, 11.0, abs(p.x));
         float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.5;
 
-        // amplitude in metres — tall peaks so the silhouette reaches
-        // up toward the header.
         float amp = 7.5;
         h = h * vmask * (1.0 + frontBoost);
 
@@ -145,26 +144,32 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       varying float vElevation;
 
       void main(){
-        // colour by elevation — pure brand blue → cyan
+        // Inverted lighting hierarchy: low-elevation slopes (near the
+        // valley) are brighter; high peaks are DARKER + less saturated.
+        // No more white blow-out on summits.
         float t = clamp(vElevation / 4.0, 0.0, 1.0);
-        vec3 col = mix(uColorLo, uColorHi, t);
+        // mix from bright cyan at base to a darker, desaturated blue at peak
+        vec3 baseCol = mix(uColorHi, uColorLo * 0.45, t);
+        // pull saturation down at the highest peaks
+        float lum = dot(baseCol, vec3(0.299, 0.587, 0.114));
+        vec3 col  = mix(baseCol, vec3(lum), t * 0.45);
 
-        // ridge accent — extra brightness on tall peaks
-        col += pow(max(vElevation - 1.5, 0.0) * 0.5, 1.6) * vec3(0.4, 0.7, 1.0);
-
-        // Very gentle far-fade so the absolute back of the terrain
-        // dissolves into the bg, but everything in the visible frame
-        // stays fully rendered (no empty band under the header).
+        // Far-back fade so the deepest ridges dissolve into bg.
         float distFade = smoothstep(-34.0, -22.0, vWorldPos.z);
 
-        // valley reveal — keep the centre band quiet
+        // Valley alpha reveal — keep the centre band quiet so the
+        // hero copy never fights wires.
         float valleyDim = smoothstep(0.0, 3.0, abs(vWorldPos.x));
-        valleyDim = mix(0.18, 1.0, valleyDim);
+        valleyDim = mix(0.16, 1.0, valleyDim);
 
-        // Softly fade only the very front edge so foreground wires don't
-        // crowd the hero copy.
         float frontEdge = smoothstep(2.0, 9.5, vWorldPos.z);
         float nearDim = mix(1.0, 0.40, frontEdge);
+
+        // Ground-haze: low-altitude wires get a very gentle white
+        // tint, simulating valley fog and lifting the centre as the
+        // brightest reading.
+        float groundFog = smoothstep(0.5, -1.4, vWorldPos.y);
+        col = mix(col, vec3(0.78, 0.88, 1.00), groundFog * 0.35);
 
         float alpha = distFade * valleyDim * nearDim * 0.70;
         gl_FragColor = vec4(col, alpha);
@@ -256,11 +261,22 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   function addFlow(side, [mag, sy, sz, chaos]) {
     const sx = side * mag;
     const start = new THREE.Vector3(sx, sy, sz);
-    const mid1  = new THREE.Vector3(sx * 0.78 * chaos, sy * 0.55, sz * 0.85);
-    const mid2  = new THREE.Vector3(sx * 0.12, -0.20, sz * 0.40 + 0.6);
+    // Control points placed near a straight line from start→CORE, with
+    // a bias to STAY LOW (closer to the slope surface) and a tiny X
+    // jitter for organic feel. Keeps the line hugging the terrain
+    // instead of bowing through the air.
+    const dx = CORE.x - sx, dy = CORE.y - sy, dz = CORE.z - sz;
+    const mid1 = new THREE.Vector3(
+      sx + dx * 0.34 + sx * 0.04 * chaos,
+      sy + dy * 0.55,                         // descend faster — hug slope
+      sz + dz * 0.34
+    );
+    const mid2 = new THREE.Vector3(
+      sx + dx * 0.72 + sx * 0.02,
+      sy + dy * 0.86,                         // already nearly at floor
+      sz + dz * 0.72
+    );
     const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, CORE);
-    // Right side gets slightly less chaos jitter — feels "smoother"
-    // and "more aligned" as the brief asks.
     addCurve(curve, cPurple, cCyan, 0.18);
   }
   FLOW_HALF.forEach(p => addFlow(-1, p)); // left
