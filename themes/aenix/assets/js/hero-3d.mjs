@@ -201,50 +201,30 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   scene.add(horizon);
 
   /* ── Energy flow lines ───────────────────────────────────────
-     Thin glowing curves descending from the mountain ridges into
-     the valley floor. Each curve carries a vertex-colour gradient
-     from brand-purple at the peak to brand-cyan at the valley.    */
+     Two-stage flow that visualises chaos → control → order:
+     - INPUT: scattered curves from many left-ridge points, slightly
+       chaotic high on the slope, converging smoothly toward a small
+       control "core" near the valley floor (x≈0, y≈-0.3).
+     - OUTPUT: organised parallel rails leaving the core toward the
+       right edge — slightly brighter than input.
+     Both use vertex-colour gradients (purple→cyan for input, pure
+     cyan for output) and additive blending.                         */
   const flowGroup = new THREE.Group();
-  // Origins are scattered along both ridges at varying depths so the
-  // flows feel organic, not symmetric.
-  const FLOW_ORIGINS = [
-    // Left ridge — chaotic near, calmer far
-    [-13.5, 4.8, -10],
-    [-11.0, 5.6,  -6],
-    [-12.5, 5.2,  -2],
-    [-10.0, 4.8,   2],
-    [ -8.5, 4.0,   5],
-    // Right ridge mirror
-    [ 13.5, 4.8, -10],
-    [ 11.0, 5.6,  -6],
-    [ 12.5, 5.2,  -2],
-    [ 10.0, 4.8,   2],
-    [  8.5, 4.0,   5],
-    // A couple of deep-back flows that descend toward the centre
-    [ -7.0, 4.6, -14],
-    [  7.0, 4.6, -14],
-  ];
   const cPurple = new THREE.Color(0x661be1);
   const cCyan   = new THREE.Color(0x01a5ff);
-  const flowSegments = 36;
-  FLOW_ORIGINS.forEach(([sx, sy, sz]) => {
-    // Bezier from peak → valley floor near centre, with curvature
-    // following the slope outline so the line "hugs" the mountain.
-    const start = new THREE.Vector3(sx, sy, sz);
-    const end   = new THREE.Vector3(sx * 0.06, -1.05, sz * 0.45 + 1.0);
-    const mid1  = new THREE.Vector3(sx * 0.78, sy * 0.55, sz * 0.85);
-    const mid2  = new THREE.Vector3(sx * 0.30, -0.30, sz * 0.55 + 0.4);
-    const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, end);
-    const pts = curve.getPoints(flowSegments);
+  const cWhite  = new THREE.Color(0xb0e5ff);
+
+  // Single "core" position the input collapses to and the output emerges from.
+  const CORE = new THREE.Vector3(0.0, -0.35, 1.0);
+
+  function addCurve(curve, colorStart, colorEnd, opacity, segments = 38) {
+    const pts = curve.getPoints(segments);
     const geo = new THREE.BufferGeometry().setFromPoints(pts);
     const colors = new Float32Array(pts.length * 3);
     const mixed = new THREE.Color();
     for (let i = 0; i < pts.length; i++) {
       const t = i / (pts.length - 1);
-      // Ease so the purple fades early and the cyan dominates the lower
-      // (in-valley) portion — matches "brand-cyan in the control zone".
-      const k = Math.pow(t, 0.85);
-      mixed.copy(cPurple).lerp(cCyan, k);
+      mixed.copy(colorStart).lerp(colorEnd, Math.pow(t, 0.85));
       colors[i * 3]     = mixed.r;
       colors[i * 3 + 1] = mixed.g;
       colors[i * 3 + 2] = mixed.b;
@@ -253,13 +233,107 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     const mat = new THREE.LineBasicMaterial({
       vertexColors: true,
       transparent: true,
-      opacity: 0.55,
+      opacity,
       blending: THREE.AdditiveBlending,
       depthWrite: false,
     });
     flowGroup.add(new THREE.Line(geo, mat));
+  }
+
+  // ── INPUT FLOWS (left ridges → core) ──
+  // Slightly chaotic origins; first control point pushed outward (chaos),
+  // second control point near core (alignment), end exactly at core.
+  const INPUT_ORIGINS = [
+    [-13.5, 5.0, -10], [-11.0, 5.6,  -6], [-12.5, 5.2,  -2],
+    [-10.0, 4.7,   2], [ -8.5, 4.1,   5], [ -7.5, 4.6, -14],
+    // a few extra short tributaries — chaos density on the slopes
+    [-12.0, 4.4,  -8], [-10.5, 4.0,  -4], [ -9.0, 3.6,   0],
+  ];
+  INPUT_ORIGINS.forEach(([sx, sy, sz], i) => {
+    const start = new THREE.Vector3(sx, sy, sz);
+    // Chaos control point — push away from the smooth path on the slope.
+    const chaos = 1.0 + (i % 3) * 0.15;
+    const mid1 = new THREE.Vector3(sx * 0.78 * chaos, sy * 0.55, sz * 0.85);
+    // Alignment control point — close to core on the X axis already.
+    const mid2 = new THREE.Vector3(sx * 0.10, -0.20, sz * 0.40 + 0.6);
+    const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, CORE);
+    addCurve(curve, cPurple, cCyan, 0.55);
   });
+
+  // ── OUTPUT FLOWS (core → right side, parallel/organised) ──
+  // Six rails fanning slightly outward but staying nearly parallel,
+  // emerging from the same core point and exiting beyond the right edge.
+  const OUTPUT_RAILS = [
+    [ 14, 0.6, -2 ], [ 14, 0.2,  0 ], [ 14, -0.2, 1.5 ],
+    [ 14, -0.6, 3 ], [ 13, 1.0, -4 ], [ 13, -1.0, 4 ],
+  ];
+  OUTPUT_RAILS.forEach(([ex, ey, ez]) => {
+    const end = new THREE.Vector3(ex, ey, ez);
+    // Both control points lie on a near-straight line from CORE→end so
+    // the rail reads as a clean, organised exit (no dramatic curvature).
+    const mid1 = new THREE.Vector3(
+      CORE.x + (end.x - CORE.x) * 0.30,
+      CORE.y + (end.y - CORE.y) * 0.25,
+      CORE.z + (end.z - CORE.z) * 0.30
+    );
+    const mid2 = new THREE.Vector3(
+      CORE.x + (end.x - CORE.x) * 0.70,
+      CORE.y + (end.y - CORE.y) * 0.60,
+      CORE.z + (end.z - CORE.z) * 0.70
+    );
+    const curve = new THREE.CubicBezierCurve3(CORE, mid1, mid2, end);
+    addCurve(curve, cCyan, cWhite, 0.70);
+  });
+
   scene.add(flowGroup);
+
+  /* ── Peak label anchors ──────────────────────────────────────
+     Six fixed 3D points on the ridges. Each frame we project them
+     to screen space and write the result to CSS variables on the
+     matching .peak--<id> label, so the label and its leader line
+     visually anchor to a specific peak (no 3D meshes — just a CSS
+     dot at the projected coordinate). Positions chosen so the six
+     screen projections spread across the viewport without stacking. */
+  const PEAK_DEFS = [
+    // [id, x, y, z] — chosen so projected screen-X positions are
+    // ≥160 px apart at 1280, with no overlap onto the centre title.
+    ['kubernetes',    -10.0, 5.5, -10],  // outer-left
+    ['vms',            -6.5, 4.2,  -8],  // mid-left
+    ['databases',      -3.5, 3.0,  -6],  // inner-left
+    ['storage',         10.0, 5.5, -10],
+    ['networking',       6.5, 4.2,  -8],
+    ['observability',    3.5, 3.0,  -6],
+  ];
+  const peakAnchors = PEAK_DEFS.map(([id, x, y, z]) => ({
+    id,
+    pos: new THREE.Vector3(x, y, z),
+    el:  document.querySelector('.peak--' + id),
+  }));
+  const annotationsEl = document.querySelector('.hero-3d-annotations');
+  const projVec = new THREE.Vector3();
+  let annotationsReady = false;
+  // Labels live on a fixed top row at LABEL_TOP_Y (matches CSS `.peak { top }`).
+  // The leader line that hangs below each label is sized per-peak so its
+  // bottom dot sits exactly on the projected peak point.
+  const LABEL_TOP_Y = 96;
+  const LABEL_HEIGHT_APPROX = 50;
+  function projectPeakLabels() {
+    const r = canvas.getBoundingClientRect();
+    if (r.width === 0) return;
+    for (const a of peakAnchors) {
+      if (!a.el) continue;
+      projVec.copy(a.pos).project(camera);
+      const sx = (projVec.x * 0.5 + 0.5) * r.width;
+      const sy = (-projVec.y * 0.5 + 0.5) * r.height;
+      a.el.style.setProperty('--peak-x', sx + 'px');
+      const lineH = Math.max(28, sy - LABEL_TOP_Y - LABEL_HEIGHT_APPROX);
+      a.el.style.setProperty('--peak-line-h', lineH + 'px');
+    }
+    if (!annotationsReady && annotationsEl) {
+      annotationsEl.classList.add('peaks-ready');
+      annotationsReady = true;
+    }
+  }
 
   /* ── Postprocessing — UnrealBloom (skipped on low-end CPUs) */
   const lowEnd = (navigator.hardwareConcurrency || 4) < 4;
@@ -320,11 +394,12 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
 
     // very subtle camera parallax — keep the valley framing stable
     camera.position.x = smoothed.x * 0.35;
-    camera.position.y = 1.6 + smoothed.y * -0.20;
-    camera.lookAt(smoothed.x * 0.05, 1.0 + smoothed.y * 0.05, -2.0);
+    camera.position.y = 1.0 + smoothed.y * -0.20;
+    camera.lookAt(smoothed.x * 0.05, 2.4 + smoothed.y * 0.05, -2.0);
 
     if (composer) composer.render();
     else renderer.render(scene, camera);
+    projectPeakLabels();
     raf = requestAnimationFrame(frame);
   }
 

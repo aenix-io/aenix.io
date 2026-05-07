@@ -516,11 +516,14 @@ img { max-width: 100%; height: auto; display: block; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.030) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.030) 1px, transparent 1px);
   background-size: 72px 72px;
-  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 10%, transparent 70%);
-  mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 10%, transparent 70%);
+  /* Inverted mask: grid is FAINT in the centre control zone (so the
+     control glow reads cleanly) and stronger at the edges (giving
+     the corners more depth/structure). */
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 55%, transparent 0%, black 80%);
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 55%, transparent 0%, black 80%);
 }
 
 /* Flow canvas — full background (2D fallback when WebGL unavailable) */
@@ -549,8 +552,10 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* Floating peak annotations layered on top of the 3D scene.
-   Style: surveyor-style topographic markers — thin dotted leader
-   line dropping from a small label down to a mountain peak. */
+   Each .peak--<id> is anchored to a 3D peak position projected to
+   screen space by hero-3d.mjs (sets --peak-x, --peak-y on the el).
+   The label sits ABOVE that point with a thin dotted vertical leader
+   line dropping back down to a small glowing dot at the peak. */
 .hero-3d-annotations {
   position: absolute;
   inset: 0;
@@ -558,19 +563,30 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
 .peak {
+  --peak-label-w: 132px;
+  --peak-line-h: 80px;       /* JS overrides per peak so all labels sit on a uniform top row */
   position: absolute;
+  /* Labels sit on a fixed top row BELOW the sticky header; only X
+     follows the projected peak. Vertical attachment to the peak is
+     provided by the dotted line (.peak-line) whose per-peak height is
+     set from JS. */
+  top: 96px;
+  left: var(--peak-x, 50%);
+  width: var(--peak-label-w);
+  transform: translateX(-50%);
   color: var(--text-secondary);
   font-size: 11px;
-  line-height: 1.40;
+  line-height: 1.45;
   letter-spacing: 0.04em;
-  max-width: 180px;
-  text-align: left;
-  /* Crisp text-shadow only — readability comes from contrast, not from
-     a dark scrim plate behind the text. */
+  text-align: center;
   text-shadow:
     0 1px 2px rgba(0, 0, 0, 0.95),
     0 0 4px rgba(11, 15, 26, 0.85);
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
+.hero-3d-annotations.peaks-ready .peak { opacity: 1; }
+
 .peak-eyebrow {
   display: block;
   color: var(--brand-primary);
@@ -586,71 +602,47 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text-primary);
   font-size: 11px;
   font-weight: 400;
-  opacity: 0.85;
+  opacity: 0.82;
 }
+
+/* Thin dotted leader line — vertical column from label bottom down to
+   the peak point. Length matches --peak-line-h on .peak. */
 .peak-line {
   display: block;
   position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
   width: 1px;
+  height: var(--peak-line-h);
   background-image: linear-gradient(
     to bottom,
-    rgba(1, 165, 255, 0.65) 0%,
-    rgba(1, 165, 255, 0.65) 50%,
+    rgba(1, 165, 255, 0.55) 0%,
+    rgba(1, 165, 255, 0.55) 50%,
     transparent 50%,
     transparent 100%);
   background-size: 1px 5px;
   background-repeat: repeat-y;
-  /* Each peak sets top/left/height locally */
 }
-/* Glowing summit beacon at the end of each leader line — bright dot
-   with a subtle outer halo so it reads as the peak summit anchor. */
+/* Small glowing dot at the connection point (= the peak anchor in 3D
+   projected to screen). CSS-only; not a 3D mesh, so no orb/blob. */
 .peak-line::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -4px;
-  width: 8px;
-  height: 8px;
+  bottom: -3px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: radial-gradient(circle,
-    rgba(255, 255, 255, 0.95) 0%,
-    rgba(102, 188, 255, 0.85) 40%,
-    rgba(1, 165, 255, 0.4) 75%,
-    rgba(1, 165, 255, 0) 100%);
+  background: rgba(180, 230, 255, 0.95);
   transform: translateX(-50%);
   box-shadow:
-    0 0 8px rgba(1, 165, 255, 0.9),
-    0 0 18px rgba(102, 27, 225, 0.45);
+    0 0 4px rgba(1, 165, 255, 0.9),
+    0 0 10px rgba(1, 165, 255, 0.55);
 }
-/* Left mountains (3 labels) */
-.peak--kubernetes  { top: 12%;  left: 6%;  }
-.peak--vms         { top: 24%;  left: 14%; }
-.peak--databases   { top: 38%;  left: 4%;  }
-/* Right mountains (3 labels) */
-.peak--storage     { top: 12%;  right: 6%; }
-.peak--networking  { top: 24%;  right: 14%;}
-.peak--observability { top: 38%;  right: 4%;  }
 
-/* Each label drops a leader line down toward its peak */
-.peak-line {
-  top: 100%; left: 50%;
-  height: 48px;
-  margin-top: 6px;
-  transform: translateX(-0.5px);
-}
-.peak--databases .peak-line,
-.peak--observability .peak-line { height: 36px; }
-
-@media (max-width: 1280px) {
-  .peak--kubernetes  { top: 10%; left: 3%;  }
-  .peak--vms         { top: 22%; left: 9%;  }
-  .peak--databases   { top: 36%; left: 2%;  }
-  .peak--storage     { top: 10%; right: 3%; }
-  .peak--networking  { top: 22%; right: 9%; }
-  .peak--observability { top: 36%; right: 2%;  }
-}
 @media (max-width: 1024px) {
-  /* Cull the middle pair to avoid overlap with shrinking canvas */
+  /* Cull the middle pair to avoid overlap on narrower viewports */
   .peak--vms,
   .peak--networking { display: none; }
 }
@@ -746,6 +738,28 @@ img { max-width: 100%; height: auto; display: block; }
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse 85% 75% at 50% 50%, transparent 35%, var(--bg-main) 100%);
+}
+
+/* Control-zone glow — subtle radial pool of brand-cyan in the centre
+   valley, signalling the convergence point where input flows arrive
+   and output flows depart. NOT a visible UI box — just energy. */
+.hero-control-glow {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  width: 640px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  background: radial-gradient(ellipse at center,
+    rgba(1, 165, 255, 0.18) 0%,
+    rgba(1, 165, 255, 0.08) 40%,
+    transparent 75%);
+  filter: blur(28px);
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .hero-control-glow { display: none; }
 }
 
 
