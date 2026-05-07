@@ -68,6 +68,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       uTime:    { value: 0 },
       uColorLo: { value: new THREE.Color(0x0971eb) }, // brand blue (low)
       uColorHi: { value: new THREE.Color(0x01a5ff) }, // brand cyan (high)
+      uAccent:  { value: new THREE.Color(0x661be1) }, // brand purple (peak accent)
     },
     transparent: true,
     wireframe: true,
@@ -110,8 +111,8 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
 
       void main(){
         vec3 p = position;
+        // Static terrain — no time-based displacement. Uses a fixed seed.
         vec2 uv2 = vec2(p.x * 0.10, p.z * 0.12);
-        uv2.y += uTime * 0.025;
 
         // base ridged height
         float h = fbm(uv2) * 1.6 + 0.25 * fbm(uv2 * 2.4);
@@ -120,12 +121,13 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         // VALLEY MASK — flatten the centre band so the hero copy reads.
         // mask is 0 at x=0, ramps to 1 by |x|=8.
         float vmask = smoothstep(2.0, 9.0, abs(p.x));
-        // also subtly raise mountains in the deeper distance (-z big)
-        float distRaise = smoothstep(0.0, 14.0, -p.z) * 0.6;
+        // FOREGROUND BOOST — peaks closer to the camera (positive p.z)
+        // rise higher than distant ones, so the silhouette feels grounded.
+        float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.5;
 
         // amplitude in metres
         float amp = 4.6;
-        h = h * vmask * (1.0 + distRaise);
+        h = h * vmask * (1.0 + frontBoost);
 
         p.y += h * amp;
 
@@ -138,6 +140,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     fragmentShader: /* glsl */`
       uniform vec3 uColorLo;
       uniform vec3 uColorHi;
+      uniform vec3 uAccent;
       varying vec3 vWorldPos;
       varying float vElevation;
 
@@ -145,6 +148,9 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         // colour by elevation
         float t = clamp(vElevation / 4.0, 0.0, 1.0);
         vec3 col = mix(uColorLo, uColorHi, t);
+
+        // subtle purple bleed on the very tallest peaks
+        col = mix(col, uAccent, pow(t, 2.2) * 0.35);
 
         // ridge accent — extra brightness on tall peaks
         col += pow(max(vElevation - 1.5, 0.0) * 0.5, 1.6) * vec3(0.4, 0.7, 1.0);
@@ -256,10 +262,6 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     camera.position.x = smoothed.x * 0.35;
     camera.position.y = 1.6 + smoothed.y * -0.20;
     camera.lookAt(smoothed.x * 0.05, 1.0 + smoothed.y * 0.05, -2.0);
-
-    if (!reduceMotion) {
-      terrainMat.uniforms.uTime.value = t;
-    }
 
     if (composer) composer.render();
     else renderer.render(scene, camera);

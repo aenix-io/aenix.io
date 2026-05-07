@@ -613,18 +613,25 @@ img { max-width: 100%; height: auto; display: block; }
   background-repeat: repeat-y;
   /* Each peak sets top/left/height locally */
 }
-/* Survey-style terminus marker at the end of each leader line */
+/* Glowing summit beacon at the end of each leader line — bright dot
+   with a subtle outer halo so it reads as the peak summit anchor. */
 .peak-line::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -3px;
-  width: 6px;
-  height: 6px;
-  border: 1px solid rgba(1, 165, 255, 0.85);
-  background: rgba(1, 165, 255, 0.18);
-  transform: translateX(-50%) rotate(45deg);
-  box-shadow: 0 0 6px rgba(1, 165, 255, 0.55);
+  bottom: -4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(102, 188, 255, 0.85) 40%,
+    rgba(1, 165, 255, 0.4) 75%,
+    rgba(1, 165, 255, 0) 100%);
+  transform: translateX(-50%);
+  box-shadow:
+    0 0 8px rgba(1, 165, 255, 0.9),
+    0 0 18px rgba(102, 27, 225, 0.45);
 }
 /* Left mountains (3 labels) */
 .peak--kubernetes  { top: 12%;  left: 6%;  }
@@ -752,6 +759,28 @@ img { max-width: 100%; height: auto; display: block; }
   background: radial-gradient(ellipse 85% 75% at 50% 50%, transparent 35%, var(--bg-main) 100%);
 }
 
+/* Centre valley control glow — soft radiant pool under the hero copy
+   so the eye reads "infrastructure, under control" right in the middle. */
+.hero-valley-glow {
+  position: absolute;
+  left: 50%;
+  bottom: 22%;
+  width: 760px;
+  height: 320px;
+  transform: translateX(-50%);
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at center,
+      rgba(1, 165, 255, 0.18) 0%,
+      rgba(102, 27, 225, 0.10) 40%,
+      transparent 72%);
+  filter: blur(40px);
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .hero-valley-glow { display: none; }
+}
+
 .hero-horizon {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -869,6 +898,21 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ---- Hero copy ---- */
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.30em;
+  color: var(--brand-primary);
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  padding: 4px 12px;
+  border: 1px solid rgba(1, 165, 255, 0.30);
+  border-radius: 999px;
+  background: rgba(1, 165, 255, 0.06);
+}
 
 .hero-title {
   color: #fff;
