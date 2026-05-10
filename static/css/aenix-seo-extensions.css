@@ -416,24 +416,15 @@
   background: #EFF6FF;
 }
 
-/* ─── pipedrive-form (live embedded Pipedrive web form) ─────── */
+/* ─── pipedrive-form (native Pipedrive embed via loader) ────── */
+/* The loader injects the form's own DOM with styles set inside
+   Pipedrive (dark theme, brand colors). We only constrain layout. */
 .pipedrive-form {
   margin: 1.5rem 0;
   max-width: 720px;
 }
-.pipedrive-form__title {
-  margin: 0.5rem 0 1rem;
-  color: var(--aenix-primary);
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-.pipedrive-form iframe {
-  display: block;
+.pipedrive-form .pipedriveWebForms {
   width: 100%;
-  min-height: 760px;
-  border: none;
-  border-radius: 8px;
-  background: #111827;
 }
 .pipedrive-form--error {
   padding: 1rem;
