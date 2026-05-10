@@ -15,8 +15,7 @@ language: "de"
 
 ## Discovery-Call planen
 
-<script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
-<div class="zcal-inline-widget"><a href="https://zcal.co/i/s5C4-cO1">Aenix Meeting — 30-Minuten-Discovery-Call planen</a></div>
+{{< pipedrive-form type="discovery" >}}
 
 **Im Call besprechen wir:**
 
@@ -34,7 +33,13 @@ Keine Verpflichtung. Wenn Ænix Platform nicht der richtige Fit ist, sagen wir d
 
 ## Schreiben Sie uns
 
-<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/cscyywLwAlFHb2ECKg45ES0ur5wQYKEzRUBFeEytdwPJtOtoAfILvFxKP6QXbZTvuX"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+{{< pipedrive-form type="discovery" >}}
+
+Für ein Architecture Review nutzen Sie das [Architecture Review Formular →](#architecture-review).
+
+### Architecture Review {#architecture-review}
+
+{{< pipedrive-form type="demo" >}}
 
 ---
 
@@ -42,7 +47,7 @@ Keine Verpflichtung. Wenn Ænix Platform nicht der richtige Fit ist, sagen wir d
 
 | Anfrage | Bester Weg |
 |---|---|
-| **Vertrieb / Discovery-Call** | [Über zcal planen](https://zcal.co/i/s5C4-cO1) (30 min, keine Verpflichtung) |
+| **Vertrieb / Discovery-Call** | Nutzen Sie das [Discovery-Formular](#discovery-call-planen) oben (30 min, keine Verpflichtung) |
 | **Pre-Sales technische Fragen** | Pipedrive-Formular oben |
 | **Partner-Programm** | [/de/partner/](/de/partner/) → Bewerbungsformular, oder E-Mail sales@aenix.io |
 | **Bestehender Kunden-Support** | Per Ihrem Support-Tier — direkter Support-Kanal |

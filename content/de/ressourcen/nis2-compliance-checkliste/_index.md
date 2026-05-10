@@ -14,7 +14,7 @@ language: "de"
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — NIS2-konform by design (Tenant CRD mit NetworkPolicy / Cilium für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging, Coordinated Vulnerability Disclosure aligned mit Artikel 30).
 
 <div class="lead-magnet-form">
-{{< placeholder-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" >}}
 [NIS2-Checkliste herunterladen (PDF)]
 </div>
 

@@ -16,7 +16,7 @@ language: "en"
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers exiting VMware Cloud Director; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises exiting VCF.
 
 <div class="lead-magnet-form">
-{{< placeholder-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" >}}
 [Download the checklist (PDF)]
 </div>
 

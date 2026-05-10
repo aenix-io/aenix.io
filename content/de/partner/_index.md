@@ -72,14 +72,13 @@ Typische Zeit von Bewerbung bis erster Deal-Registrierung: 4-6 Wochen.
 
 ---
 
-## Bewerben
+## Bewerben {#apply}
 
 Bewerben Sie sich zum Partner-Programm. Wir prüfen Ihr Geschäft und melden uns innerhalb 5 Werktagen.
 
-<div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Zum Partner-Programm bewerben</a>
-  <a class="cta-secondary" href="mailto:sales@aenix.io">E-Mail sales@aenix.io</a>
-</div>
+{{< pipedrive-form type="partner" >}}
+
+Oder E-Mail an [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 

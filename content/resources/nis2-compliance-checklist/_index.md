@@ -14,7 +14,7 @@ language: "en"
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — NIS2-aligned by design (Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging, coordinated vulnerability disclosure aligned with Article 30).
 
 <div class="lead-magnet-form">
-{{< placeholder-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" >}}
 [Download the NIS2 checklist (PDF)]
 </div>
 

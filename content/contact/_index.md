@@ -15,12 +15,7 @@ language: "en"
 
 ## Schedule a discovery call
 
-{{< design-note >}}
-Embed Aenix zcal calendar widget (existing — `https://zcal.co/i/s5C4-cO1`). Render at full width below the H2.
-{{< /design-note >}}
-
-<script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
-<div class="zcal-inline-widget"><a href="https://zcal.co/i/s5C4-cO1">Aenix meeting — Schedule a 30-minute discovery call</a></div>
+{{< pipedrive-form type="discovery" >}}
 
 **On the call we'll cover:**
 
@@ -38,13 +33,13 @@ No commitment. If Ænix Platform isn't the right fit, we'll say so directly.
 
 ## Write to us
 
-{{< design-note >}}
-Embed Pipedrive web form (existing — `https://webforms.pipedrive.com/f/cscyywLwAlFHb2ECKg45ES0ur5wQYKEzRUBFeEytdwPJtOtoAfILvFxKP6QXbZTvuX`). Render full-width below H2.
+{{< pipedrive-form type="discovery" >}}
 
-Form should include optional "I'm interested in:" multi-select with options: Public Cloud Edition / ISP Edition / Enterprise Edition / IDP Edition / AI/ML Edition / Pure Cozystack support / Partner Program / General inquiry.
-{{< /design-note >}}
+For an architecture review specifically, use the [Architecture Review form →](#architecture-review).
 
-<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/cscyywLwAlFHb2ECKg45ES0ur5wQYKEzRUBFeEytdwPJtOtoAfILvFxKP6QXbZTvuX"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+### Architecture Review {#architecture-review}
+
+{{< pipedrive-form type="demo" >}}
 
 ---
 
@@ -52,7 +47,7 @@ Form should include optional "I'm interested in:" multi-select with options: Pub
 
 | Inquiry | Best route |
 |---|---|
-| **Sales / discovery call** | [Schedule via zcal](https://zcal.co/i/s5C4-cO1) (30 min, no commitment) |
+| **Sales / discovery call** | Use the [Discovery form](#schedule-a-discovery-call) above (30 min, no commitment) |
 | **Pre-sales technical questions** | Pipedrive form above; we route to solutions engineering |
 | **Partner Program** | [/partners/](/partners/) → apply form, or email sales@aenix.io |
 | **Existing customer support** | Per your support tier — direct support channel from your engagement onboarding |

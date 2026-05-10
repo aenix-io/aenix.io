@@ -14,7 +14,7 @@ language: "de"
 > **Passt zu:** **[Ænix Platform AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling, fertigen Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen. Der Decision-Guide outputs eine Architektur-Pattern, die direkt auf AI/ML Edition Deployment-Scope mappt.
 
 <div class="lead-magnet-form">
-{{< placeholder-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" >}}
 [Sovereign-AI-Decision-Guide herunterladen (PDF)]
 </div>
 

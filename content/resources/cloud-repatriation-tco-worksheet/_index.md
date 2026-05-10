@@ -11,7 +11,7 @@ language: "en"
 > **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** — repatriation destination depends on buyer profile. Hosting providers / regional clouds → ISP Edition. Regulated enterprises → Enterprise Edition. Large operators → Public Cloud Edition. Product engineering teams → IDP Edition. AI-heavy → AI/ML Edition.
 
 <div class="lead-magnet-form">
-{{< placeholder-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" >}}
 [Download the TCO worksheet (Excel + Google Sheets)]
 </div>
 

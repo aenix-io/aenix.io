@@ -103,11 +103,9 @@ This course is excellent for active contributors who want production-operations 
 
 ---
 
-## How to enroll
+## How to enroll {#enroll}
 
-<div class="cta-row">
-  <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Enroll in next cohort</a>
-</div>
+{{< pipedrive-form type="course" >}}
 
 ---
 

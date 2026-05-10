@@ -47,12 +47,11 @@ Plus / Enterprise Support-Tier-Kunden erhalten:
 
 ---
 
-## Wie anmelden
+## Wie anmelden {#enroll}
 
-<div class="cta-row">
-  <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Zur nächsten Kohorte anmelden</a>
-  <a class="cta-secondary" href="/contact/">Discovery-Call für Team-Training</a>
-</div>
+{{< pipedrive-form type="course" >}}
+
+Für Team-Training bitte zusätzlich [Discovery-Call buchen →](/de/kontakt/).
 
 ---
 

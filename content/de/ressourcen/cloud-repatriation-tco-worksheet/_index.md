@@ -11,7 +11,7 @@ language: "de"
 > **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — Repatriation-Destination hängt vom Buyer-Profil ab. Hosting-Anbieter / regionale Clouds → ISP Edition. Regulierte Unternehmen → Enterprise Edition. Große Betreiber → Public Cloud Edition.
 
 <div class="lead-magnet-form">
-{{< placeholder-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" >}}
 [TCO-Worksheet herunterladen (Excel + Google Sheets)]
 </div>
 

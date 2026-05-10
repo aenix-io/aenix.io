@@ -1,0 +1,46 @@
+{{/*
+  pipedrive-form — embed Pipedrive web form by type.
+
+  Usage:
+    {{< pipedrive-form type="discovery" >}}
+    {{< pipedrive-form type="demo" >}}
+    {{< pipedrive-form type="partner" >}}
+    {{< pipedrive-form type="course" >}}
+    {{< pipedrive-form type="lead-magnet" resource="vmware-migration-checklist" >}}
+
+  Types map to live forms in Pipedrive (EN, dark theme).
+*/}}
+{{- $type := .Get "type" | default "discovery" -}}
+{{- $forms := dict
+  "discovery"   "https://webforms.pipedrive.com/f/6q7WndUAgBy6O39xYLMkxLyz8aRoqiG1MOYYVypkivNMvOPAjHz0l1woJar9SwhiYH"
+  "demo"        "https://webforms.pipedrive.com/f/6N4WW0OF7TqxjUwxoH5gOGTLyjAgxGu1PQGzfL4RtejZCCjsGKHcmAxoIJjnLST5qb"
+  "partner"     "https://webforms.pipedrive.com/f/cty2KVOnv9koet2bpPxw66V5J6c23LPgaOgRfTQ4X17TKYPPcRFKKee4aZZwipagvN"
+  "course"      "https://webforms.pipedrive.com/f/6iAy0A6xuylQBs3ZZVcfmRc5XB66PItuSDzMq5ZSt2Iv13MfQblEZ4PU9RcA03rHLd"
+  "lead-magnet" "https://webforms.pipedrive.com/f/bXxMh2vc9rRzTjKcSteAQVyk1exxYnGS8MZYGFBhTGSzWllZt9NF9njiCx1qRubZzt"
+-}}
+{{- $titles := dict
+  "discovery"   "Book a discovery call"
+  "demo"        "Request an architecture review"
+  "partner"     "Apply to the partner program"
+  "course"      "Enrol in the Kubernetes Deep Dive course"
+  "lead-magnet" "Get the resource by email"
+-}}
+{{- $url := index $forms $type -}}
+{{- $title := index $titles $type -}}
+{{- if not $url -}}
+  <div class="pipedrive-form pipedrive-form--error">
+    <strong>pipedrive-form:</strong> unknown type "{{ $type }}".
+    Valid: discovery, demo, partner, course, lead-magnet.
+  </div>
+{{- else -}}
+<div class="pipedrive-form pipedrive-form--{{ $type }}">
+  {{- with $title }}<h3 class="pipedrive-form__title">{{ . }}</h3>{{ end -}}
+  <iframe
+    src="{{ $url }}"
+    title="{{ $title }}"
+    loading="lazy"
+    style="border:none;width:100%;min-height:760px;background:#111827;border-radius:8px;"
+    allow="clipboard-write"
+  ></iframe>
+</div>
+{{- end -}}

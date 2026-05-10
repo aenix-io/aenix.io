@@ -14,7 +14,7 @@ language: "de"
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — DORA-konform by design (kundenkontrollierte Schlüssel, audit-bereites Logging, Multi-Tenant Tenant CRD aligned mit ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz).
 
 <div class="lead-magnet-form">
-{{< placeholder-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" >}}
 [DORA-Checkliste herunterladen (PDF)]
 </div>
 

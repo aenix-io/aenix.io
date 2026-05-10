@@ -14,7 +14,7 @@ language: "de"
 > **Passt zu:** **[Ænix Platform IDP Edition](/de/produkte/aenix-platform/idp-edition/)** — Internal Developer Platform Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation. Die meisten Assessment-Outcomes empfehlen IDP Edition als strukturierten nächsten Schritt.
 
 <div class="lead-magnet-form">
-{{< placeholder-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" >}}
 [Maturity Assessment herunterladen (PDF + interaktives Formular)]
 </div>
 

@@ -180,14 +180,13 @@ Primary today: EU + DACH + Central Asia (Aenix-direct presence). Expanding via p
 
 ---
 
-## Apply
+## Apply {#apply}
 
 Apply to the Partner Program. We'll review your business and reach out within 5 business days.
 
-<div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Apply to the Partner Program</a>
-  <a class="cta-secondary" href="mailto:sales@aenix.io">Email sales@aenix.io</a>
-</div>
+{{< pipedrive-form type="partner" >}}
+
+Or email [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
