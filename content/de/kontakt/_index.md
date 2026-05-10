@@ -29,17 +29,9 @@ language: "de"
 
 Keine Verpflichtung. Wenn Ænix Platform nicht der richtige Fit ist, sagen wir das direkt.
 
----
-
-## Schreiben Sie uns
-
-{{< pipedrive-form type="discovery" >}}
-
-Für ein Architecture Review nutzen Sie das [Architecture Review Formular →](#architecture-review).
-
-### Architecture Review {#architecture-review}
-
-{{< pipedrive-form type="demo" >}}
+Für ein ausführliches Architecture Review statt eines Discovery-Calls,
+erwähnen Sie "Architecture Review" im Nachrichtenfeld — wir leiten
+Sie an Solutions Engineering weiter.
 
 ---
 

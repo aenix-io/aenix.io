@@ -1,15 +1,18 @@
 baseURL: https://aenix.io/
 languageCode: en-us
-title: "Ænix — Amplify your data center with cloud transformation"
+title: "Ænix — Turnkey cloud platform on Cozystack (CNCF)"
 theme: aenix
 enableRobotsTXT: true
 canonicalizeURLs: false
 
 params:
-  description: "We build clouds! End-to-end solutions for data centers, designed to meet the evolving demands of modern business."
+  description: "Aenix builds Ænix Platform — a turnkey commercial cloud-in-a-box based on Cozystack (CNCF). Five editions for hosting providers, regulated enterprises, public clouds, product engineering teams, AI-heavy organizations."
   author: Ænix
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
+  # Hide design-notes by default. Enable per-build with HUGO_PARAMS_SHOW_DESIGN_NOTES=true
+  # for design hand-off previews (notes are visible source-of-record for designers).
+  hide_design_notes: true
   social:
     linkedin: https://www.linkedin.com/company/aenix/
     telegram: https://t.me/cozystack
@@ -37,86 +40,143 @@ params:
 
 menus:
   main:
+    # ── Products (Ænix Platform + 5 editions) ──
     - name: Products
-      url: /products/
+      url: /products/aenix-platform/
       weight: 10
       identifier: products
-    - name: Cozystack
-      url: /cozystack/
+    - name: Ænix Platform overview
+      url: /products/aenix-platform/
       parent: products
       weight: 1
-    - name: Kubernetes Deep Dive Course
-      url: /kubernetes-deep-dive-course/
+    - name: Public Cloud Edition
+      url: /products/aenix-platform/public-cloud-edition/
       parent: products
       weight: 2
-    - name: Pricing
-      url: /pricing/
-      weight: 20
-      identifier: pricing
-    - name: Enterprise Support
-      url: "/pricing/#support"
-      parent: pricing
-      weight: 1
-    - name: ROI Calculator
-      url: "/pricing/#roi"
-      parent: pricing
-      weight: 2
+    - name: ISP Edition
+      url: /products/aenix-platform/isp-edition/
+      parent: products
+      weight: 3
+    - name: Enterprise Edition
+      url: /products/aenix-platform/enterprise-edition/
+      parent: products
+      weight: 4
+    - name: IDP Edition
+      url: /products/aenix-platform/idp-edition/
+      parent: products
+      weight: 5
+    - name: AI/ML Edition
+      url: /products/aenix-platform/ai-ml-edition/
+      parent: products
+      weight: 6
+    - name: Cozystack (open source)
+      url: /products/cozystack/
+      parent: products
+      weight: 7
 
-    - name: Case Studies
-      url: /case-studies/
+    # ── Solutions ──
+    - name: Solutions
+      url: /solutions/
+      weight: 20
+
+    # ── Services ──
+    - name: Services
+      url: /services/
       weight: 30
 
+    # ── Industries ──
+    - name: Industries
+      url: /industries/
+      weight: 40
+
+    # ── Pricing ──
+    - name: Pricing
+      url: /pricing/
+      weight: 50
+
+    # ── Resources ──
+    - name: Resources
+      url: /resources/
+      weight: 60
+      identifier: resources
+    - name: Lead magnets
+      url: /resources/
+      parent: resources
+      weight: 1
     - name: Blog
       url: /blog/
-      weight: 35
-
-    - name: About Us
-      url: /about-us/
-      weight: 40
-      identifier: about
+      parent: resources
+      weight: 2
+    - name: Kubernetes Deep Dive Course
+      url: /kubernetes-deep-dive/
+      parent: resources
+      weight: 3
     - name: OSS Contribution Report
       url: /oss-contribution/
-      parent: about
+      parent: resources
+      weight: 4
+
+    # ── Company ──
+    - name: Company
+      url: /about/
+      weight: 70
+      identifier: company
+    - name: About
+      url: /about/
+      parent: company
       weight: 1
-    - name: Our Partners
-      url: /our-partners/
-      parent: about
+    - name: Partners
+      url: /partners/
+      parent: company
       weight: 2
-    - name: Our Team
-      url: "/about-us/#team"
-      parent: about
-      weight: 3
     - name: Conferences
       url: /conferences/
-      parent: about
+      parent: company
+      weight: 3
+    - name: Case Studies
+      url: /case-studies/
+      parent: company
       weight: 4
-    - name: Company Details
-      url: "/contact/#details"
-      parent: about
+    - name: Enterprise Support
+      url: /enterprise-support/
+      parent: company
       weight: 5
 
+    # ── Contact (CTA) ──
     - name: Contact
       url: /contact/
-      weight: 50
+      weight: 80
       params:
         cta: true
 
   footer:
-    - name: Cozystack
-      url: /cozystack/
+    - name: Ænix Platform
+      url: /products/aenix-platform/
       weight: 1
+    - name: Solutions
+      url: /solutions/
+      weight: 2
+    - name: Services
+      url: /services/
+      weight: 3
     - name: Pricing
       url: /pricing/
-      weight: 2
-    - name: Case Studies
-      url: /case-studies/
-      weight: 3
-    - name: About Us
-      url: /about-us/
       weight: 4
+    - name: Resources
+      url: /resources/
+      weight: 5
+    - name: Blog
+      url: /blog/
+      weight: 6
+    - name: About
+      url: /about/
+      weight: 7
+    - name: Partners
+      url: /partners/
+      weight: 8
     - name: Contact
       url: /contact/
-      weight: 5
+      weight: 9
 
 taxonomies: {}
 

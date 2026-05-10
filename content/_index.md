@@ -13,14 +13,6 @@ language: "en"
 
 ---
 
-## Hero block — what the visitor sees first (designer brief)
-
-{{< design-note >}}
-Hero is two-thirds page width, left-aligned. Above the headline — small "ÆNIX" wordmark + brand-orange tag pill: "Turnkey cloud-in-a-box". Headline 56pt; subheadline 22pt; two CTA buttons (primary teal + secondary outline). Right side: clean architecture illustration (5 edition tiles around a central Cozystack core; subtle animation optional). Below the fold: trust strip with CNCF badge, OpenSSF Best Practices badge, "Apache 2.0" mark, "AENIX s.r.o." + "AENIX INC" jurisdiction marks.
-{{< /design-note >}}
-
----
-
 ## Quick facts
 
 - **Open-core company.** We create and maintain Cozystack — a CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026) — and commercialize it as Ænix Platform.

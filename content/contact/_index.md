@@ -29,17 +29,9 @@ language: "en"
 
 No commitment. If Ænix Platform isn't the right fit, we'll say so directly.
 
----
-
-## Write to us
-
-{{< pipedrive-form type="discovery" >}}
-
-For an architecture review specifically, use the [Architecture Review form →](#architecture-review).
-
-### Architecture Review {#architecture-review}
-
-{{< pipedrive-form type="demo" >}}
+If you'd like an in-depth architecture review instead, mention
+"architecture review" in the message field and we'll route you to
+solutions engineering.
 
 ---
 
