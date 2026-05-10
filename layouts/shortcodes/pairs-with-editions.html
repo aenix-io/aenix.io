@@ -1,0 +1,104 @@
+{{/*
+  pairs-with-editions.html — Shortcode that renders a "Pairs with: <Edition>"
+  callout block based on the page's frontmatter `pairs_with_editions:` array.
+
+  Usage in content/<page>.md:
+    {{< pairs-with-editions >}}
+    {{< pairs-with-editions style="badge" >}}      ← inline mini-badge
+    {{< pairs-with-editions style="card" >}}       ← prominent CTA card
+
+  Default style: "callout" (matches the inline body style we already use).
+
+  Styles:
+    - callout: blockquote-style (default; matches existing body content)
+    - badge:   inline pill, top of page
+    - card:    larger CTA card with secondary text + Discovery CTA
+
+  Reads from .Page.Params.pairs_with_editions ([]string of edition slugs).
+  Edition slug map (also defined in PACK_EDITION_MAPPING.md):
+    public-cloud, isp, enterprise, idp, ai-ml, cozystack-support
+
+  Locale-aware: uses /de/produkte/aenix-platform/<edition>/ on DE pages.
+
+  Last updated: 2026-05-10
+*/}}
+
+{{- $editions := .Page.Params.pairs_with_editions -}}
+{{- if not $editions -}}
+  {{/* Silent no-op if frontmatter field is absent — don't error */}}
+{{- else -}}
+
+{{- $isDE := eq .Page.Params.language "de" -}}
+{{- $style := .Get "style" | default "callout" -}}
+{{- $basePath := cond $isDE "/de/produkte/aenix-platform/" "/products/aenix-platform/" -}}
+{{- $platformLink := cond $isDE "/de/produkte/aenix-platform/" "/products/aenix-platform/" -}}
+
+{{- $editionLabels := dict
+  "public-cloud" "Public Cloud Edition"
+  "isp" "ISP Edition"
+  "enterprise" "Enterprise Edition"
+  "idp" "IDP Edition"
+  "ai-ml" "AI/ML Edition"
+  "cozystack-support" "Pure Cozystack with Ænix Support"
+-}}
+
+{{- $editionSlugs := dict
+  "public-cloud" "public-cloud-edition/"
+  "isp" "isp-edition/"
+  "enterprise" "enterprise-edition/"
+  "idp" "idp-edition/"
+  "ai-ml" "ai-ml-edition/"
+  "cozystack-support" "isp-edition/#cozystack-support-tier"
+-}}
+
+{{- $labelPrefix := cond $isDE "Passt zu" "Pairs with" -}}
+
+{{- if eq $style "badge" -}}
+<div class="pairs-with-editions-badge">
+  <span class="badge-label">{{ $labelPrefix }}:</span>
+  {{- range $i, $slug := $editions }}
+    {{- $label := index $editionLabels $slug -}}
+    {{- $url := index $editionSlugs $slug -}}
+    {{- if $i }} · {{ end -}}
+    <a href="{{ $basePath }}{{ $url }}" class="badge-link">Ænix Platform {{ $label }}</a>
+  {{- end }}
+</div>
+
+{{- else if eq $style "card" -}}
+<aside class="pairs-with-editions-card">
+  <h3>{{ if $isDE }}Bereit für die nächste Stufe?{{ else }}Ready for the next step?{{ end }}</h3>
+  <p>
+    {{ $labelPrefix }}:
+    {{- range $i, $slug := $editions }}
+      {{- $label := index $editionLabels $slug -}}
+      {{- $url := index $editionSlugs $slug -}}
+      {{- if $i }}, {{ end -}}
+      <a href="{{ $basePath }}{{ $url }}"><strong>Ænix Platform {{ $label }}</strong></a>
+    {{- end }}.
+  </p>
+  <p class="cta-row">
+    <a href="/contact/{{- if $isDE }}{{- end }}?source=pairs-with" class="btn btn-primary">
+      {{ if $isDE }}Discovery-Call buchen{{ else }}Book a discovery call{{ end }}
+    </a>
+    <a href="{{ $platformLink }}" class="btn btn-secondary">
+      {{ if $isDE }}Alle Editions ansehen →{{ else }}See all editions →{{ end }}
+    </a>
+  </p>
+</aside>
+
+{{- else -}}
+{{/* Default style: callout (blockquote-style, matches body content) */}}
+<blockquote class="pairs-with-editions-callout">
+  <p>
+    <strong>{{ $labelPrefix }}:</strong>
+    {{- range $i, $slug := $editions }}
+      {{- $label := index $editionLabels $slug -}}
+      {{- $url := index $editionSlugs $slug -}}
+      {{- if $i }}; {{ end }}
+      <strong><a href="{{ $basePath }}{{ $url }}">Ænix Platform {{ $label }}</a></strong>
+    {{- end }}.
+  </p>
+</blockquote>
+{{- end -}}
+
+{{- end -}}

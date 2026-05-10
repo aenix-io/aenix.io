@@ -1,0 +1,50 @@
+{{/*
+  seo/pairs-with-editions-badge.html — Auto-rendered badge for landing pages
+  with `pairs_with_editions:` in frontmatter.
+
+  Place in your single.html layout right after the H1 (or before, depending
+  on theme), e.g.:
+    {{ partial "seo/pairs-with-editions-badge.html" . }}
+
+  Auto-locale-aware: respects .Params.language. Reads pairs_with_editions
+  array. Silent no-op if frontmatter missing (so safe to include in shared
+  layouts).
+
+  Last updated: 2026-05-10
+*/}}
+
+{{- $editions := .Params.pairs_with_editions -}}
+{{- if $editions -}}
+{{- $isDE := eq .Params.language "de" -}}
+{{- $basePath := cond $isDE "/de/produkte/aenix-platform/" "/products/aenix-platform/" -}}
+{{- $labelPrefix := cond $isDE "Passt zu" "Pairs with" -}}
+
+{{- $editionLabels := dict
+  "public-cloud" "Public Cloud Edition"
+  "isp" "ISP Edition"
+  "enterprise" "Enterprise Edition"
+  "idp" "IDP Edition"
+  "ai-ml" "AI/ML Edition"
+  "cozystack-support" "Pure Cozystack with Ænix Support"
+-}}
+{{- $editionSlugs := dict
+  "public-cloud" "public-cloud-edition/"
+  "isp" "isp-edition/"
+  "enterprise" "enterprise-edition/"
+  "idp" "idp-edition/"
+  "ai-ml" "ai-ml-edition/"
+  "cozystack-support" "isp-edition/#cozystack-support-tier"
+-}}
+
+<div class="pairs-with-editions-badge" role="complementary" aria-label="Pairs with editions">
+  <span class="badge-label">{{ $labelPrefix }}:</span>
+  {{- range $i, $slug := $editions }}
+    {{- $label := index $editionLabels $slug -}}
+    {{- $url := index $editionSlugs $slug -}}
+    {{- if $i }} <span class="badge-separator">·</span> {{ end -}}
+    <a href="{{ $basePath }}{{ $url }}" class="badge-link" data-edition="{{ $slug }}">
+      Ænix Platform {{ $label }}
+    </a>
+  {{- end }}
+</div>
+{{- end -}}

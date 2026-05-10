@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{/*
+  Placeholder homepage — overrides theme/aenix/layouts/index.html.
+  Renders new content body with a generic hero + design-note callout
+  for the eventual hero illustration / animation.
+*/}}
+<article class="page page-home">
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <div class="page-hero-grid"></div>
+      <div class="page-hero-glow"></div>
+    </div>
+    <div class="container">
+      <h1 class="page-hero-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+      <div class="page-hero-cta" style="margin-top:1.5rem">
+        <a href="/contact/" class="btn btn-primary btn-lg">Book a discovery call</a>
+        <a href="/products/aenix-platform/" class="btn btn-secondary btn-lg" style="margin-left:0.5rem">Explore Ænix Platform →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

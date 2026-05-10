@@ -1,0 +1,31 @@
+{{/* JSON-LD BlogPosting — blog articles */}}
+{{- $author := .Params.author | default "Timur Tukaev" -}}
+{{- $section := .Params.articleSection | default "Blog" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": {{ $author | jsonify }},
+    "url": "{{ "/about/" | absURL }}"
+  },
+  "publisher": { "@id": "{{ "/#org" | absURL }}" },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  },
+  {{- with .Params.images }}
+  "image": "{{ index . 0 | absURL }}",
+  {{- else }}
+  "image": "{{ "img/aenix-social-card.png" | absURL }}",
+  {{- end }}
+  "articleSection": {{ $section | jsonify }},
+  "wordCount": {{ .WordCount }},
+  "keywords": {{ delimit (.Params.keywords | default (slice .Params.primary_keyword)) ", " | jsonify }}
+}
+</script>

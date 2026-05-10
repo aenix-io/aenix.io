@@ -1,0 +1,23 @@
+{{/* JSON-LD Service — solutions, services, industries pages */}}
+{{- $service := .Params.service | default dict -}}
+{{- $serviceType := index $service "type" | default .Title -}}
+{{- $areaServed := index $service "areaServed" | default (slice "EU" "DACH" "Central Asia" "MENA") -}}
+{{- $audienceType := index $service "audience" | default "" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ .Title | jsonify }},
+  "url": "{{ .Permalink }}",
+  "provider": { "@id": "{{ "/#org" | absURL }}" },
+  "serviceType": {{ $serviceType | jsonify }},
+  "areaServed": {{ $areaServed | jsonify }},
+  {{- if $audienceType }}
+  "audience": {
+    "@type": "Audience",
+    "audienceType": {{ $audienceType | jsonify }}
+  },
+  {{- end }}
+  "description": {{ .Description | jsonify }}
+}
+</script>

@@ -1,0 +1,21 @@
+{{/*
+  lorem-block — placeholder body text (lorem ipsum) for sections that
+  need filler before final copy is approved.
+
+  Usage:
+    {{< lorem-block >}}
+    {{< lorem-block paragraphs="3" >}}
+    {{< lorem-block paragraphs="1" length="short" >}}
+*/}}
+{{- $count := .Get "paragraphs" | default "2" | int -}}
+{{- $length := .Get "length" | default "medium" -}}
+{{- $short := "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." -}}
+{{- $medium := "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur." -}}
+{{- $long := "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus nulla gravida orci a odio nullam varius turpis." -}}
+{{- $text := cond (eq $length "short") $short (cond (eq $length "long") $long $medium) -}}
+<div class="lorem-block">
+  <span class="lorem-block__tag">PLACEHOLDER — sample copy</span>
+  {{- range seq $count }}
+  <p>{{ $text | safeHTML }}</p>
+  {{- end }}
+</div>

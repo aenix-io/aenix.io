@@ -1,0 +1,37 @@
+{{/* seo-blocks — single-call shortcode that renders all GEO content blocks
+  in correct order from frontmatter. Usage in markdown:
+
+      {{< seo-blocks >}}
+
+  This emits, in order:
+    1. Direct answer paragraph (bold, under H1)
+    2. Quick facts block (bulleted list)
+
+  FAQ section is rendered by `{{< seo-faq >}}` shortcode separately
+  (typically near the end of the page).
+*/}}
+
+{{- $page := .Page -}}
+
+{{- with $page.Params.direct_answer -}}
+<div class="seo-direct-answer">
+  {{ . | markdownify }}
+</div>
+{{- end -}}
+
+{{- with $page.Params.quick_facts -}}
+<section class="seo-quick-facts" aria-label="Quick facts">
+  <h2>Quick facts</h2>
+  <ul class="quick-facts-list">
+    {{- range . }}
+    <li>
+      <strong>{{ index . "label" }}:</strong>
+      {{ index . "value" | markdownify }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- with $page.Params.quick_facts_source }}
+  <p class="quick-facts-source"><em>Source: {{ . | markdownify }}</em></p>
+  {{- end }}
+</section>
+{{- end -}}

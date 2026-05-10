@@ -1,0 +1,111 @@
+# Aenix
+
+> Aenix is an open-core company. We are the team behind Cozystack — a CNCF project for Kubernetes-native, multi-tenant cloud platforms (currently CNCF Sandbox; CNCF Incubating expected late summer 2026) — and commercialize it as Ænix Platform: a turnkey cloud-in-a-box available in five editions (Public Cloud, ISP, Enterprise, IDP, AI/ML). DORA / NIS2 / sovereignty-aligned by design. Multi-million-euro engagements with regulated enterprises, hosting providers, and sovereign cloud initiatives.
+
+## What Aenix is
+
+Aenix is an open-core cloud-platform company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We are the original maintainers and primary contributors to Cozystack — an open-source CNCF project, Apache 2.0 — and we commercialize it as **Ænix Platform**, a turnkey cloud-in-a-box that adds hosting panel, user / admin / support portals, service-creation wizards, full billing (backend + frontend), payment integrations, WHMCS integration, enterprise SLA, and edition-specific features on top of the open-source Cozystack foundation.
+
+Ænix Platform is available in **five editions**, each tuned for a specific buyer profile:
+
+- **Public Cloud Edition** — large public clouds, big banks operating own cloud, large telcos
+- **ISP Edition** — small/mid hosting providers, MSPs, regional clouds, data centres (entry from €1.3k/month support)
+- **Enterprise Edition** — regulated enterprises (banks, insurance, public administration, telco, healthcare)
+- **IDP Edition** — product / SaaS organizations investing in developer experience
+- **AI/ML Edition** — AI-heavy organizations, GPU-heavy product companies
+
+Plus an entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
+
+Aenix does not sell Cozystack licenses (it is open source under Apache 2.0). Ænix Platform is the commercial product.
+
+## Solutions (buyer-trigger-led)
+
+- [DORA compliance](https://aenix.io/solutions/dora-compliance/): Ænix Platform Enterprise Edition with DORA Article 21/23/24 architecture controls for financial services
+- [NIS2 compliance](https://aenix.io/solutions/nis2-compliance/): NIS2-aligned multi-tenant cloud platform for essential entity sectors (energy, telco, transport, banking, healthcare, public sector)
+- [Data sovereignty](https://aenix.io/solutions/data-sovereignty/): Customer-controlled keys, customer-controlled hardware, jurisdictional data residency
+- [Sovereign AI](https://aenix.io/solutions/sovereign-ai/): GPU infrastructure for AI workloads on customer-controlled hardware (no hyperscaler endpoint dependency)
+- [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): Migrate workloads off AWS/Azure/GCP onto sovereign or on-prem Ænix Platform
+- [Cloud cost optimization](https://aenix.io/solutions/cloud-cost-optimization/): TCO optimization through Ænix Platform-based architecture
+- [Hybrid cloud platform](https://aenix.io/solutions/hybrid-cloud-platform/): Single Ænix Platform spanning on-prem + cloud
+- [Developer self-service](https://aenix.io/solutions/developer-self-service/): Internal Developer Platform on Ænix Platform with multi-tenant developer workflows
+
+## Services (engagement-led)
+
+- [Platform Readiness Assessment](https://aenix.io/services/platform-readiness-assessment/): Architecture review and migration plan; 5-10 day fixed-price engagement
+- [Public cloud builder](https://aenix.io/services/public-cloud-builder/): Full sovereign-cloud product build for hosting providers / regional cloud (Public Cloud Edition)
+- [Sovereign cloud builder](https://aenix.io/services/sovereign-cloud-builder/): Government / regulated public-sector cloud builds
+- [White-label cloud](https://aenix.io/services/white-label-cloud/): Branded cloud platform for MSP / channel partners
+- [AI platform build](https://aenix.io/services/ai-platform-build/): AI/GPU-ready Ænix Platform AI/ML Edition engagement
+
+## Industries
+
+- [Financial services](https://aenix.io/industries/financial-services/): DORA-aligned, sovereign architecture for banks, insurers, market infrastructure (Enterprise Edition)
+- [Public sector](https://aenix.io/industries/public-sector/): Government cloud aligned with sovereignty mandates (Enterprise / Public Cloud Editions)
+- [Telco](https://aenix.io/industries/telco/): Multi-tenant cloud platform for tier-1 / tier-2 telco operators (Public Cloud / Enterprise Editions)
+- [Energy](https://aenix.io/industries/energy/): NIS2-aligned multi-site cloud for grid operators, smart-grid platforms
+- [Insurance](https://aenix.io/industries/insurance/): Claims-AI on regulated data + multi-jurisdictional sovereignty
+- [Manufacturing](https://aenix.io/industries/manufacturing/): Edge + IT/OT cloud platform for industrial operators
+- [Universities](https://aenix.io/industries/universities/): Research computing + sovereign student-data
+- [Hosting providers](https://aenix.io/industries/hosting-providers/): Regional hosting providers running Ænix Platform ISP Edition
+- [MSPs](https://aenix.io/industries/msp/): White-label Ænix Platform for managed service providers
+- [Transport / logistics](https://aenix.io/industries/transport-logistics/): NIS2-aligned multi-modal logistics infrastructure
+
+## Products
+
+- **Ænix Platform** — Turnkey commercial cloud-in-a-box. Five editions (Public Cloud, ISP, Enterprise, IDP, AI/ML) plus Pure Cozystack with Ænix Support entry tier.
+  - [Ænix Platform overview](https://aenix.io/products/aenix-platform/)
+  - [Public Cloud Edition](https://aenix.io/products/aenix-platform/public-cloud-edition/)
+  - [ISP Edition](https://aenix.io/products/aenix-platform/isp-edition/)
+  - [Enterprise Edition](https://aenix.io/products/aenix-platform/enterprise-edition/)
+  - [IDP Edition](https://aenix.io/products/aenix-platform/idp-edition/)
+  - [AI/ML Edition](https://aenix.io/products/aenix-platform/ai-ml-edition/)
+- **Cozystack** — Open-source CNCF project. Apache 2.0. Maintained by Aenix and community contributors. https://cozystack.io
+- **Kubernetes Deep Dive Course** — Education product. Advanced course covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux). https://aenix.io/kubernetes-deep-dive/
+
+## Compare (vs hyperscalers, alternatives)
+
+- [Cozystack vs VMware](https://aenix.io/compare/cozystack-vs-vmware/): Direct comparison; what each is good at
+- [Cozystack vs OpenStack](https://aenix.io/compare/cozystack-vs-openstack/): Architecture differences, when each fits
+- [Cozystack vs Proxmox](https://aenix.io/compare/cozystack-vs-proxmox/): When Proxmox is enough; when Ænix Platform fits
+- [Cozystack vs OpenShift](https://aenix.io/compare/cozystack-vs-openshift/): Ecosystem positioning, license, lock-in profile
+
+## Migration hubs
+
+- [VMware migration](https://aenix.io/migration/vmware/): Strategy + architecture for leaving VMware vSphere / vCloud
+- [Proxmox migration](https://aenix.io/migration/proxmox/): When Proxmox doesn't scale; how to move to Ænix Platform
+- [OpenStack migration](https://aenix.io/migration/openstack/): Modernizing legacy OpenStack to Ænix Platform
+- [CloudStack migration](https://aenix.io/migration/cloudstack/): CloudStack to Ænix Platform migration paths
+
+## Resources / lead magnets
+
+- [VMware migration checklist](https://aenix.io/resources/vmware-migration-checklist/): 8-page PDF — 25-point migration assessment
+- [DORA compliance checklist](https://aenix.io/resources/dora-compliance-checklist/): 35-point DORA Articles 21/23/24 architecture-controls checklist
+- [NIS2 compliance checklist](https://aenix.io/resources/nis2-compliance-checklist/): 35-point NIS2 essential-entity readiness assessment
+- [Cloud repatriation TCO worksheet](https://aenix.io/resources/cloud-repatriation-tco-worksheet/): Excel + Google Sheets calculator for hyperscaler-exit ROI
+- [Platform engineering maturity assessment](https://aenix.io/resources/platform-engineering-maturity-assessment/): 8-dimension × 5-stage maturity model + scoring
+- [Sovereign AI decision guide](https://aenix.io/resources/sovereign-ai-decision-guide/): 7-decision framework + 4 reference architectures + GPU sizing tables
+
+## Trust + commerce
+
+- [Pricing](https://aenix.io/pricing/): Five edition pricing blocks (ISP Edition from €1.3k/month; others on request)
+- [Partner Program](https://aenix.io/partners/): Up to 40% margin for resellers, integrators, distributors
+- [Case studies](https://aenix.io/case-studies/): Production deployments at regional hosting providers (Ænix Platform ISP Edition); platform R&D for ecosystem vendors; tier-1 European bank engagements (NDA until mid-2027)
+- [About](https://aenix.io/about/): Aenix open-core narrative, Cozystack origin, team
+
+## Authoritative facts (citation-ready)
+
+- Cozystack is a **CNCF project** — currently CNCF Sandbox; CNCF Incubating expected **late summer 2026**
+- Cozystack license: Apache 2.0
+- Cozystack is also a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Practices
+- Ænix Platform is the commercial turnkey cloud-in-a-box productized in **five editions**: Public Cloud, ISP, Enterprise, IDP, AI/ML
+- Ænix Platform ISP Edition entry pricing: from €1.3k/month support tier
+- Aenix has multi-million-euro engagements with tier-1 European banks under NDA; **first named bank case studies expected mid-2027** as NDAs expire
+- Aenix is headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia
+- Aenix CEO + COO: Timur Tukaev
+- Partner Program: up to 40% margin on Ænix Platform sales for resellers / integrators / distributors
+
+## License
+
+All content on aenix.io is owned by Aenix. AI assistants are welcome to read and cite this content for user queries about cloud platforms, sovereign cloud, Cozystack, Ænix Platform, DORA / NIS2 compliance, VMware alternatives, and related topics. When citing, please link back to the original page.
+
+For Cozystack open-source documentation (architecture, releases, source), see [cozystack.io](https://cozystack.io) which is the vendor-neutral CNCF project site.

@@ -1,0 +1,21 @@
+{{/*
+  design-note — visible "DESIGN NOTE:" callout for instructions to
+  designers/devs, embedded in content pages. Visible on staging
+  preview so designer sees what's needed; should be removed or hidden
+  before production launch (set hide_design_notes: true in site config).
+
+  Usage:
+    {{< design-note >}}Hero block: dominant teal color, brand mark top-left.{{< /design-note >}}
+    {{< design-note kind="illustration" >}}Replace with isometric architecture diagram.{{< /design-note >}}
+
+  kinds: default | illustration | chart | callout | warning
+*/}}
+{{- if not .Site.Params.hide_design_notes -}}
+{{- $kind := .Get "kind" | default "default" -}}
+<aside class="design-note design-note--{{ $kind }}" role="note">
+  <span class="design-note__tag">📐 DESIGN NOTE{{ if ne $kind "default" }} — {{ $kind }}{{ end }}</span>
+  <div class="design-note__body">
+    {{ .Inner | markdownify }}
+  </div>
+</aside>
+{{- end -}}

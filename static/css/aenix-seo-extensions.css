@@ -1,0 +1,429 @@
+/*
+  aenix-seo-extensions.css — supplementary styles for SEO/GEO components
+  injected via hugo-templates/ partials and shortcodes.
+
+  Add to your Hugo theme's <head> (or via head-end.html partial after
+  bootstrap install):
+    <link rel="stylesheet" href="{{ "css/aenix-seo-extensions.css" | absURL }}">
+
+  Designed to be theme-neutral — uses CSS variables that fall back to
+  reasonable defaults; if your Aenix theme defines --aenix-* variables,
+  they take precedence.
+
+  Last updated: 2026-05-10
+*/
+
+:root {
+  /* Aenix brand placeholder palette (matches POSITIONING.md placeholder)
+     Override in theme if real brand colors differ. */
+  --aenix-primary: var(--aenix-color-primary, #0F4C5C);
+  --aenix-accent: var(--aenix-color-accent, #E36414);
+  --aenix-bg-tint: var(--aenix-color-bg-tint, #F8F4F0);
+  --aenix-text: var(--aenix-color-text, #1A1A1A);
+  --aenix-text-muted: var(--aenix-color-text-muted, #6B6B6B);
+}
+
+/* ─── Pairs-with-editions: BADGE (auto-injected by partial) ─────────── */
+
+.pairs-with-editions-badge {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0.875rem;
+  margin: 0.75rem 0 1.5rem;
+  background-color: var(--aenix-bg-tint);
+  border: 1px solid rgba(15, 76, 92, 0.15);
+  border-left: 3px solid var(--aenix-primary);
+  border-radius: 6px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.pairs-with-editions-badge .badge-label {
+  font-weight: 600;
+  color: var(--aenix-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.75rem;
+}
+
+.pairs-with-editions-badge .badge-link {
+  color: var(--aenix-primary);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  font-weight: 500;
+}
+
+.pairs-with-editions-badge .badge-link:hover {
+  color: var(--aenix-accent);
+}
+
+.pairs-with-editions-badge .badge-separator {
+  color: var(--aenix-text-muted);
+}
+
+/* ─── Pairs-with-editions: CALLOUT (shortcode style="callout", default) ─── */
+
+.pairs-with-editions-callout {
+  border-left: 4px solid var(--aenix-primary);
+  background-color: var(--aenix-bg-tint);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 0 6px 6px 0;
+}
+
+.pairs-with-editions-callout p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.pairs-with-editions-callout strong {
+  color: var(--aenix-primary);
+}
+
+.pairs-with-editions-callout a {
+  color: var(--aenix-primary);
+}
+
+.pairs-with-editions-callout a:hover {
+  color: var(--aenix-accent);
+}
+
+/* ─── Pairs-with-editions: CARD (shortcode style="card", prominent CTA) ─── */
+
+.pairs-with-editions-card {
+  background-color: var(--aenix-primary);
+  color: white;
+  padding: 1.75rem 2rem;
+  margin: 2rem 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(15, 76, 92, 0.15);
+}
+
+.pairs-with-editions-card h3 {
+  color: white;
+  margin: 0 0 0.5rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.pairs-with-editions-card p {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+
+.pairs-with-editions-card a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.pairs-with-editions-card .cta-row {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.pairs-with-editions-card .btn {
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border: 2px solid transparent;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.pairs-with-editions-card .btn-primary {
+  background-color: var(--aenix-accent);
+  color: white;
+  border-color: var(--aenix-accent);
+}
+
+.pairs-with-editions-card .btn-primary:hover {
+  background-color: white;
+  color: var(--aenix-accent);
+}
+
+.pairs-with-editions-card .btn-secondary {
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+
+.pairs-with-editions-card .btn-secondary:hover {
+  background-color: white;
+  color: var(--aenix-primary);
+}
+
+/* ─── Mobile responsive ───────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  .pairs-with-editions-badge {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .pairs-with-editions-badge .badge-separator {
+    display: none;
+  }
+  .pairs-with-editions-card {
+    padding: 1.25rem 1.5rem;
+  }
+  .pairs-with-editions-card .cta-row {
+    flex-direction: column;
+  }
+  .pairs-with-editions-card .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ─── Error page (404) ────────────────────────────────────────────── */
+
+.error-page {
+  padding: 3rem 0;
+  min-height: 60vh;
+}
+
+.error-page-hero {
+  text-align: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(15, 76, 92, 0.1);
+  margin-bottom: 2rem;
+}
+
+.error-page-hero .error-code {
+  display: block;
+  font-size: 6rem;
+  font-weight: 700;
+  color: var(--aenix-primary);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.error-page-hero h1 {
+  font-size: 1.75rem;
+  color: var(--aenix-text);
+  margin-top: 0.5rem;
+}
+
+.error-page-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.error-page-content table {
+  width: 100%;
+  font-size: 0.9375rem;
+  border-collapse: collapse;
+}
+
+.error-page-content table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid rgba(15, 76, 92, 0.08);
+}
+
+
+/* ============================================================
+   PLACEHOLDER COMPONENTS
+   For staging preview — visibly distinguishable from real content
+   so designers/sales know what to replace.
+   ============================================================ */
+
+/* Common tag style — dashed orange "PLACEHOLDER" label */
+.placeholder-image .placeholder-tag,
+.placeholder-quote__tag,
+.placeholder-logos__tag,
+.placeholder-form__tag,
+.lorem-block__tag,
+.design-note__tag {
+  display: inline-block;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: #B85C00;
+  background: #FFF4E6;
+  border: 1px dashed #E36414;
+  padding: 0.125rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 0.625rem;
+}
+
+/* ─── placeholder-image ─────────────────────────────────────── */
+.placeholder-image {
+  margin: 1rem 0;
+}
+.placeholder-image svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* ─── placeholder-quote ─────────────────────────────────────── */
+.placeholder-quote {
+  border: 2px dashed #B5C9CF;
+  background: #F8FBFC;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  border-radius: 6px;
+}
+.placeholder-quote blockquote {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+.placeholder-quote blockquote p {
+  font-style: italic;
+  color: var(--aenix-text);
+  margin: 0.5rem 0;
+}
+.placeholder-quote blockquote footer {
+  font-size: 0.875rem;
+  color: var(--aenix-text-muted);
+}
+
+/* ─── placeholder-logos ─────────────────────────────────────── */
+.placeholder-logos {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #F8FBFC;
+  border: 2px dashed #B5C9CF;
+  border-radius: 6px;
+}
+.placeholder-logos__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+.placeholder-logos__item svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── placeholder-form ──────────────────────────────────────── */
+.placeholder-form {
+  border: 2px dashed #B5C9CF;
+  background: #F8FBFC;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  max-width: 560px;
+}
+.placeholder-form h3 {
+  margin: 0.5rem 0 1rem;
+  color: var(--aenix-primary);
+  font-size: 1.125rem;
+}
+.placeholder-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.placeholder-form__field {
+  padding: 0.5rem 0.75rem;
+  background: white;
+  border: 1px solid #D6DEE0;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #6B6B6B;
+}
+.placeholder-form__field em {
+  font-size: 0.75rem;
+  color: #B85C00;
+  font-style: normal;
+  margin-left: 0.5rem;
+}
+.placeholder-form__field--textarea {
+  min-height: 4em;
+}
+.placeholder-form__field--checkbox {
+  background: #FAFCFD;
+}
+.placeholder-form__field--hidden {
+  background: #EFF2F4;
+  font-family: ui-monospace, monospace;
+  font-size: 0.75rem;
+}
+.placeholder-form__submit {
+  margin-top: 1rem;
+  padding: 0.625rem 1.25rem;
+  background: #D6DEE0;
+  color: #6B6B6B;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: not-allowed;
+}
+.placeholder-form__note {
+  margin-top: 0.625rem;
+  font-size: 0.75rem;
+  color: #6B6B6B;
+}
+.placeholder-form__note code {
+  background: #EFF2F4;
+  padding: 0.125rem 0.25rem;
+  border-radius: 3px;
+  font-size: 0.6875rem;
+}
+
+/* ─── lorem-block ───────────────────────────────────────────── */
+.lorem-block {
+  border-left: 3px solid #E36414;
+  padding: 0.5rem 1rem;
+  background: #FFFAF5;
+  margin: 1rem 0;
+}
+.lorem-block p {
+  margin: 0.5rem 0;
+  color: var(--aenix-text-muted);
+  font-style: italic;
+}
+
+/* ─── design-note ───────────────────────────────────────────── */
+.design-note {
+  border-left: 4px solid #E36414;
+  background: #FFF8F0;
+  padding: 0.875rem 1.125rem;
+  margin: 1rem 0;
+  border-radius: 0 6px 6px 0;
+}
+.design-note__body {
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
+  color: var(--aenix-text);
+}
+.design-note__body p {
+  margin: 0.375rem 0;
+}
+.design-note--warning {
+  border-color: #DC2626;
+  background: #FEF2F2;
+}
+.design-note--illustration,
+.design-note--chart {
+  border-color: #2563EB;
+  background: #EFF6FF;
+}
+
+/* ─── Hide all placeholder content in print or production mode ─ */
+@media print {
+  .placeholder-image,
+  .placeholder-quote,
+  .placeholder-logos,
+  .placeholder-form,
+  .lorem-block,
+  .design-note {
+    display: none;
+  }
+}

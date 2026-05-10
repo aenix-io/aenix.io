@@ -1,0 +1,30 @@
+{{/*
+  placeholder-quote — sample customer quote block, for landings that
+  reference {{QUOTE_X}} placeholders before the actual customer quote
+  is approved (NDA-protected for bank cases until mid-2027).
+
+  Usage:
+    {{< placeholder-quote >}}
+    {{< placeholder-quote vertical="financial" >}}
+
+  Renders a styled callout that visibly says "PLACEHOLDER — sample
+  text" so it's clearly not a real customer quote.
+*/}}
+{{- $vertical := .Get "vertical" | default "generic" -}}
+{{- $samples := dict
+  "generic"   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "financial" "Aenix delivered a DORA-aligned cloud platform on schedule. Lorem ipsum, replace with actual quote when NDA expires."
+  "hosting"   "Migrating from VMware Cloud Director to ISP Edition saved us X% in licensing — placeholder, replace with real customer quote."
+  "ai"        "We process N tokens/day on customer-controlled hardware at a fraction of hyperscaler API cost. Placeholder quote."
+  "telco"     "Single platform across core + regional + edge sites. Placeholder; pending NDA expiration mid-2027."
+-}}
+{{- $sampleText := index $samples $vertical | default (index $samples "generic") -}}
+<aside class="placeholder-quote" data-vertical="{{ $vertical }}">
+  <span class="placeholder-quote__tag">PLACEHOLDER — sample text</span>
+  <blockquote>
+    <p>"{{ $sampleText }}"</p>
+    <footer>
+      <strong>— Customer name pending</strong> · Title pending · Company pending
+    </footer>
+  </blockquote>
+</aside>

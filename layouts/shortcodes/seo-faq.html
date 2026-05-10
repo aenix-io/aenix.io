@@ -1,0 +1,27 @@
+{{/* seo-faq — renders FAQ section from frontmatter.
+
+  Usage in markdown:
+      {{< seo-faq >}}
+
+  Reads .Params.faq from frontmatter. Same data is consumed by
+  jsonld-faqpage.html partial, so visible content + JSON-LD stay
+  in sync (single source of truth).
+
+  Frontmatter shape:
+    faq:
+      - q: "Question text"
+        a: "Answer text"
+*/}}
+
+{{- $faq := .Page.Params.faq -}}
+{{- if $faq }}
+<section class="seo-faq" aria-label="Frequently asked questions">
+  <h2>Frequently asked questions</h2>
+  {{- range $faq }}
+  <details class="faq-item">
+    <summary><h3>{{ index . "q" }}</h3></summary>
+    <div class="faq-answer">{{ index . "a" | markdownify }}</div>
+  </details>
+  {{- end }}
+</section>
+{{- end -}}

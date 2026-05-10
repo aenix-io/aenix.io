@@ -1,0 +1,43 @@
+{{/* customer-evidence — renders logos + named quote from frontmatter.
+
+  Usage:
+      {{< customer-evidence >}}
+
+  Frontmatter shape:
+    customer_evidence:
+      logos:
+        - alt: "Beeline Kazakhstan"
+          src: "/img/logos/beeline-kz.svg"
+          url: "https://www.beeline.kz/"
+      quote:
+        text: "Quote text"
+        author: "Person Name"
+        title: "Their Title"
+        company: "Company Name"
+*/}}
+
+{{- $evidence := .Page.Params.customer_evidence -}}
+{{- if $evidence }}
+<section class="customer-evidence" aria-label="Customer evidence">
+  {{- with index $evidence "logos" }}
+  <div class="customer-logos">
+    {{- range . }}
+    {{- if index . "url" }}
+    <a href="{{ index . "url" }}"><img src="{{ index . "src" }}" alt="{{ index . "alt" }}" loading="lazy" /></a>
+    {{- else }}
+    <img src="{{ index . "src" }}" alt="{{ index . "alt" }}" loading="lazy" />
+    {{- end }}
+    {{- end }}
+  </div>
+  {{- end }}
+
+  {{- with index $evidence "quote" }}
+  <blockquote class="customer-quote">
+    <p>{{ index . "text" | markdownify }}</p>
+    <footer>
+      — <strong>{{ index . "author" }}</strong>{{ with index . "title" }}, {{ . }}{{ end }}{{ with index . "company" }}, {{ . }}{{ end }}
+    </footer>
+  </blockquote>
+  {{- end }}
+</section>
+{{- end -}}

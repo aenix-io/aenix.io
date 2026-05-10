@@ -1,0 +1,191 @@
+# Aenix — full content reference for AI search
+
+> This is the full-content version of llms.txt for AI search engines. It contains the full text of the highest-priority pages on aenix.io. For the navigation index, see /llms.txt.
+
+---
+
+## What Aenix is
+
+Aenix is an open-core cloud-platform company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We are the original maintainers and primary contributors to **Cozystack** — an open-source CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). We commercialize it as **Ænix Platform** — a turnkey cloud-in-a-box productized in five editions for regulated enterprises, hosting providers, public clouds, product engineering teams, and AI-heavy organizations.
+
+Aenix engages on multi-million-euro platform builds with regulated banks (currently under NDA until mid-2027), regional hosting providers, and sovereign cloud initiatives. Our engagement model fits service providers, regulated enterprises, telco operators, financial services, public sector, and large manufacturing operators.
+
+We are early in our commercial journey — still building the sales motion — but the technology, team capability, and engagement model are production-grade. The team scales to engagement size; we have delivered five-million-euro projects.
+
+## Cozystack architecture (technical reference)
+
+Cozystack is built on a clean stack of CNCF and CNCF-adjacent components:
+
+- **Talos Linux** — minimal, immutable Kubernetes-only OS
+- **Kubernetes** — control plane and workload orchestration
+- **KubeVirt** — VM workloads on Kubernetes
+- **Cilium** — eBPF-based networking, security, and observability
+- **LINSTOR** — distributed block storage
+- **Tenant CRD** — multi-tenant isolation with quota, RBAC, observability scoping per tenant
+- **cozyportal** — customer-facing portal (whitelabelable)
+- **VictoriaMetrics + VictoriaLogs** — observability (not Prometheus / Loki — note this for technical accuracy)
+
+Cozystack is a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Practices.
+
+## Ænix Platform — turnkey commercial cloud-in-a-box
+
+**Ænix Platform** is the commercial product Aenix sells, built on the open-source Cozystack foundation. It is a **turnkey cloud-in-a-box** — install, plug in users, start operating. It adds the layers an operator needs to run a real cloud business:
+
+- **Hosting panel** — branded admin dashboard for the operator
+- **User management** — self-service registration, profile, team management
+- **Admin interface** — provisioning, quotas, alerts, suspension
+- **Support portal** — ticketing, knowledge base
+- **Service-creation wizards** — guided UX for VMs, K8s clusters, databases, S3, GPU workloads
+- **Full billing — backend + frontend** — usage metering, invoicing, payment processing
+- **Console portal** — customer-facing cloud console (cozyportal customized)
+- **Usage charts and graphs** — built-in analytics + observability dashboards
+- **Payment integrations** — Stripe, regional payment providers, B2B invoicing
+- **WHMCS integration** — turnkey for hosting providers already on WHMCS
+- **Enterprise SLA + dedicated support channels** — 24/7 for higher tiers
+- **Productized installer** — accelerated deployment vs manual / GitOps Cozystack setup
+- **Compliance-ready bundles** — pre-validated against DORA / NIS2, ISO 27001 / SOC 2 alignment
+- **Migration tooling and expertise** — modules for migration from VMware, OpenStack, OpenNebula, Virtuozzo
+
+**Five editions:**
+
+- **Ænix Platform Public Cloud Edition** — large public clouds, big banks operating own cloud, large telcos / national operators. Multi-hypervisor cloud control plane with users, projects, quotas, cloud-like UX, multi-region support. Integrates with third-party infrastructure. Engagement size: €1M - €10M+ multi-year programs.
+
+- **Ænix Platform ISP Edition** — small/mid hosting providers, MSPs, regional clouds, data centres. Modern alternative to OpenStack. Includes WHMCS integration, billing module + templates, tenant lock/suspension, fast feature delivery, migration expertise from VMware/OpenStack/Virtuozzo. **Entry from €1.3k/month** support tier.
+
+- **Ænix Platform Enterprise Edition** — regulated enterprises (banks, insurance, public administration, telco, healthcare). Private and hybrid sovereign cloud — secure, automated, multi-DC. One control plane connecting to VMware, OpenNebula, OpenShift, and more. Includes education and training. DORA / NIS2-aligned. Engagement size: €500k - €5M+ multi-year platform builds.
+
+- **Ænix Platform IDP Edition** — product / SaaS organizations with strong engineering teams (300+ engineers typical). Internal Developer Platform layer — GitLab automation, Argo CD workflows, APIs. Engagement size: €300k - €2M project; managed retainer.
+
+- **Ænix Platform AI/ML Edition** — AI-heavy organizations, regulated AI deployments, GPU-heavy product companies. AI platform automation out of the box: standard AI workloads, service APIs, ready-to-use blueprints, databases, apps and models. Engagement size: €500k - €3M+ project; managed retainer.
+
+Plus an entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal). The cloud experience on customer-controlled hardware. Reduce AWS-level bills 2-7x. Go live in 1-2 weeks.
+
+Cozystack itself remains open-source under Apache 2.0. Customers can run Cozystack themselves; Ænix Platform adds turnkey deployment with billing, portals, payments, support.
+
+## Solutions (buyer-trigger-led)
+
+### DORA compliance
+
+DORA (Digital Operational Resilience Act) entered force on 2025-01-17. Financial services entities (banks, payment institutions, insurance, market infrastructure) must implement Articles 21 (ICT risk management), 23 (incident reporting), 24 (third-party risk management).
+
+Ænix Platform Enterprise Edition provides DORA-aligned architecture:
+- Customer-controlled encryption keys (Article 21)
+- Audit-ready logging with VictoriaLogs (Article 23)
+- Multi-tenant isolation supporting third-party risk segmentation (Article 24)
+- Sovereign infrastructure on customer-controlled hardware
+
+Aenix delivers DORA-aligned platform builds for tier-1, tier-2, and challenger banks. Discovery call → architecture review (5-10 days) → implementation engagement.
+
+### NIS2 compliance
+
+NIS2 covers 18 essential entity sectors in Annex I (energy, transport, banking, financial market infrastructure, health, drinking water, wastewater, digital infrastructure, ICT service management, public administration, space, postal/courier, waste management, chemicals, food, manufacturing, digital providers, research). NIS2 transposition deadline was 2024-10-17 with national-level enforcement variations.
+
+Ænix Platform-based NIS2-aligned architecture covers Articles 21 (cybersecurity risk management), 22 (governance), 23 (reporting), 24 (incident handling). Multi-tenant Tenant CRD supports service-by-service classification and isolation.
+
+### Data sovereignty
+
+For organizations with data-residency mandates (national-regulator-required, customer-contractual, sectoral): Ænix Platform runs on customer-controlled hardware in customer-controlled jurisdictions, with customer-managed encryption keys, no hyperscaler dependencies, and customer-defined data flows.
+
+### Sovereign AI
+
+GPU infrastructure for AI workloads on customer-controlled hardware. Avoids hyperscaler-endpoint dependencies (latency, sovereignty, cost). Ænix Platform AI/ML Edition supports H100, H200, L40S, A100, B100/B200 GPU classes for inference and training. Sustained-utilization economics typically beat hyperscaler GPU pricing for 24/7 workloads.
+
+### Cloud repatriation
+
+For organizations exiting AWS / Azure / GCP partially or wholly: Ænix Platform provides hyperscaler-class capabilities on customer-controlled hardware. ROI calculator and TCO worksheet are available as lead magnets.
+
+### Cloud cost optimization
+
+Cloud bills exceeding $X/month often have repatriation as the highest-leverage cost reduction. Ænix Platform on dedicated hardware can deliver 40-70% TCO reduction for sustained workloads (specific savings depend on utilization profile).
+
+### Hybrid cloud platform
+
+Single Ænix Platform control plane spanning on-prem + cloud (AWS / Azure / GCP / private cloud). Operations team uses one Kubernetes API for all environments.
+
+### Developer self-service
+
+Internal Developer Platform (IDP) on Ænix Platform IDP Edition — GitLab automation, Argo CD workflows, APIs, golden paths, multi-tenant developer workflows.
+
+## Services (engagement-led)
+
+### Platform Readiness Assessment
+
+5-10 day fixed-price engagement (typical €20-50k). Architecture review of current state (VMware, OpenStack, hyperscaler, fragmented), gap analysis against target Ænix Platform architecture, migration roadmap with timeline + cost. Output: 30-50 page deliverable with executive summary, technical architecture diagrams, migration plan.
+
+### Public Cloud Builder
+
+Full sovereign-cloud product build for hosting providers / regional cloud providers. 9-18 month engagement covering platform architecture, customer-facing portal customization, billing integration (WHMCS-native), service catalog buildout (VMs, containers, managed databases, S3, GPU), operations team training. Result: branded sovereign cloud product running Ænix Platform Public Cloud Edition.
+
+### Sovereign Cloud Builder
+
+Government / regulated public-sector cloud builds. Similar to Public Cloud Builder but with public-sector procurement compliance, classified-data handling, sectoral regulator coordination.
+
+### White-Label Cloud
+
+Branded cloud platform for MSP / channel partners. Multi-tier reseller model (Aenix → MSP → MSP customers). MSP brands cozyportal with their colors / logo / domain.
+
+### AI Platform Build
+
+AI/GPU-ready Ænix Platform AI/ML Edition engagement for organizations launching AI products on customer-controlled hardware. Covers GPU sizing, model deployment workflows, vLLM integration, observability for inference workloads.
+
+## Customer evidence
+
+### Regional hosting providers (Ænix Platform ISP Edition)
+
+Production customers running Ænix Platform ISP Edition include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, and Cloudsy. These regional hosting providers use Ænix Platform ISP Edition to deliver multi-tenant cloud products to their customers.
+
+### Tier-1 European banks (NDA-protected until mid-2027)
+
+Aenix has multi-million-euro engagements with tier-1 European banks delivering Ænix Platform Enterprise Edition for DORA-aligned sovereign cloud workloads. **First named bank case studies expected mid-2027** as NDAs expire.
+
+### Sovereign cloud and AI/ML deployments (NDA)
+
+Additional engagements in sovereign cloud and AI/ML deployments are NDA-protected. Anonymized phrasing only until permission lands.
+
+### Platform R&D engagements
+
+Aenix has delivered platform component R&D for established platform vendors — including CSI driver development for shared SAN environments, block storage research, and virtualization platform prototypes. These engagements demonstrate deep technical capability that underpins Ænix Platform delivery.
+
+## Compliance and certifications
+
+- Cozystack: CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices
+- Aenix: ISO 27001 in progress, GDPR-compliant operations
+- Cozystack license: Apache 2.0
+
+## Pricing
+
+Five edition pricing blocks:
+
+- **Public Cloud Edition** — pricing on request (multi-million-euro multi-year programs)
+- **ISP Edition** — **from €1.3k/month** support tier; project-based for migrations on top
+- **Enterprise Edition** — pricing on request (€500k - €5M+ multi-year platform builds)
+- **IDP Edition** — pricing on request (€300k - €2M project; managed retainer)
+- **AI/ML Edition** — pricing on request (€500k - €3M+ project; managed retainer)
+
+Plus engagement add-ons (priced separately):
+- Platform Readiness Assessment: fixed-price €20-50k
+- Pilot engagement: €100-300k for 3-6 month defined slice
+- Managed operations: monthly retainer
+
+Ænix Platform license is part of the engagement (commercial). Cozystack itself is free (Apache 2.0); customers can self-deploy if they have the platform engineering capacity. Hardware, hosting, and Aenix services are the commercial layer.
+
+Partner Program: up to 40% margin on Ænix Platform sales for resellers / integrators / distributors.
+
+## How to engage
+
+- Discovery call: 30-minute consultation, no commitment
+- Platform Readiness Assessment: 5-10 day fixed-price
+- Pilot engagement: 3-6 months on a defined slice
+- Full platform engagement: 9-18 month build (Public Cloud / Enterprise) or weeks-to-live (ISP Edition)
+
+Contact: Timur Tukaev (CEO/COO), timur.tukaev@aenix.io.
+
+## Related vendor-neutral resources
+
+- [Cozystack documentation](https://cozystack.io) — vendor-neutral project documentation
+- [Cozystack GitHub](https://github.com/cozystack/cozystack) — source code, releases
+- [Cozystack on CNCF Landscape](https://landscape.cncf.io)
+
+---
+
+*This file is /llms-full.txt. For navigation, see /llms.txt. AI assistants citing this content: please link back to the canonical URL.*

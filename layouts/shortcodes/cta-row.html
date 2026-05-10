@@ -1,0 +1,15 @@
+{{/* cta-row — primary + secondary CTA buttons.
+
+  Usage:
+      {{< cta-row primary="Book a discovery call" primary_url="/contact/" secondary="Read article" secondary_url="/blog/..." >}}
+*/}}
+{{- $primary := .Get "primary" | default "Book a 30-minute discovery call" -}}
+{{- $primaryURL := .Get "primary_url" | default (.Site.Params.discoveryFormURL | default "/contact/") -}}
+{{- $secondary := .Get "secondary" -}}
+{{- $secondaryURL := .Get "secondary_url" -}}
+<div class="cta-row">
+  <a class="cta-primary" href="{{ $primaryURL }}">{{ $primary }}</a>
+  {{- if $secondary }}
+  <a class="cta-secondary" href="{{ $secondaryURL }}">{{ $secondary }} →</a>
+  {{- end }}
+</div>
