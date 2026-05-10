@@ -1,0 +1,112 @@
+---
+title: "Mit uns sprechen"
+description: "Kontaktieren Sie Aenix für Ænix-Platform-Editions, Discovery-Call buchen oder zu Partnerschaften melden. EU-Büro: AENIX s.r.o. (Tschechien). US-Büro: AENIX INC (Delaware)."
+language: "de"
+---
+
+**Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Platform-Editions, Ihr Buyer-Profil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-secondary" href="#offices">Büro-Standorte ↓</a>
+</div>
+
+---
+
+## Discovery-Call planen
+
+<script type="text/javascript" async src="https://static.zcal.co/embed/v1/embed.js"></script>
+<div class="zcal-inline-widget"><a href="https://zcal.co/i/s5C4-cO1">Aenix Meeting — 30-Minuten-Discovery-Call planen</a></div>
+
+**Im Call besprechen wir:**
+
+- Ihr Buyer-Profil (Hosting-Anbieter / regulierte Unternehmen / Public-Cloud-Betreiber / Produkt-Engineering-Team / KI-lastige Organisation)
+- Welche Ænix Platform Edition passt — Public Cloud / ISP / Enterprise / IDP / AI/ML — oder Pure Cozystack mit Ænix-Support Entry-Tier
+- Regulatorischen Kontext (DORA / NIS2 / sektoral / nationale Souveränitätsmandate)
+- Aktuelle Architektur und Migrations-Scope
+- Engagement-Modell (Platform Readiness Assessment → Pilot → Full Build → Managed Operations)
+- Pricing-Fit (Support-Tier-Matching)
+- Timeline
+
+Keine Verpflichtung. Wenn Ænix Platform nicht der richtige Fit ist, sagen wir das direkt.
+
+---
+
+## Schreiben Sie uns
+
+<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/cscyywLwAlFHb2ECKg45ES0ur5wQYKEzRUBFeEytdwPJtOtoAfILvFxKP6QXbZTvuX"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+
+---
+
+## Spezifische Kontakt-Pfade
+
+| Anfrage | Bester Weg |
+|---|---|
+| **Vertrieb / Discovery-Call** | [Über zcal planen](https://zcal.co/i/s5C4-cO1) (30 min, keine Verpflichtung) |
+| **Pre-Sales technische Fragen** | Pipedrive-Formular oben |
+| **Partner-Programm** | [/de/partner/](/de/partner/) → Bewerbungsformular, oder E-Mail sales@aenix.io |
+| **Bestehender Kunden-Support** | Per Ihrem Support-Tier — direkter Support-Kanal |
+| **Presse / Medien** | E-Mail info@aenix.io mit "Presse:" im Betreff |
+| **Allgemeine Anfrage** | E-Mail [info@aenix.io](mailto:info@aenix.io) |
+| **Cozystack Open-Source / Community** | [cozystack.io](https://cozystack.io), CNCF Slack #cozystack, Telegram |
+
+**E-Mail:** [info@aenix.io](mailto:info@aenix.io)
+
+{{< social-icons linkedin="https://www.linkedin.com/company/aenix/" telegram="https://t.me/cozystack" facebook="https://www.facebook.com/aenix.io" x="https://x.com/aenix_io" >}}
+
+---
+
+## Büros {#offices}
+
+{{< offices >}}
+
+### EU-Büro
+
+**AENIX s.r.o.**
+
+Sladkovského 546/8  
+273 43 Buštěhrad  
+Tschechische Republik
+
+- CIN: 21493871
+- USt-ID-Nr.: CZ21493871
+- CZ Databox ID: 2rvcmud
+
+Wickelt EU-Verträge (DORA / NIS2 sind EU-Regulierungen) und EU-öffentliche-Beschaffung ab.
+
+### US-Büro
+
+**AENIX INC**
+
+131 Continental Drive, Suite 301  
+Newark, County of New Castle  
+Delaware, United States  
+ZIP Code: 19713
+
+- Registrierungs-Nr.: 10075938
+
+Wickelt US-Verträge und US-Beschaffung ab.
+
+*Die obigen Adressen sind Firmen-Büros. Persönliche Besuche nur nach vorheriger Terminabsprache.*
+
+---
+
+## Engineering-Präsenz
+
+Engineering-Teams verteilt in der EU und Zentralasien. Starke Präsenz in:
+
+- **EU-Mitgliedstaaten** — Tschechische Republik, mehrere
+- **DACH** — Deutschland, Österreich, Schweiz (Präsenz + Kunden)
+- **Zentralasien** — Kasachstan und benachbarte Märkte. Direkte Erfahrung mit KZ-Beschaffungs-Frameworks.
+
+---
+
+## Bereit zu starten?
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+</div>
+
+---
+
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von [Ænix Platform](/de/produkte/aenix-platform/) — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
