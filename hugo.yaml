@@ -77,17 +77,232 @@ menus:
     # ── Solutions ──
     - name: Solutions
       url: /solutions/
+      identifier: solutions
       weight: 20
+    # group: Regulatory
+    - name: Regulatory
+      identifier: solutions-regulatory
+      parent: solutions
+      weight: 10
+      params: { heading: true }
+    - name: DORA Compliance
+      url: /solutions/dora-compliance/
+      parent: solutions-regulatory
+      weight: 1
+    - name: NIS2 Compliance
+      url: /solutions/nis2-compliance/
+      parent: solutions-regulatory
+      weight: 2
+    - name: Data Sovereignty
+      url: /solutions/data-sovereignty/
+      parent: solutions-regulatory
+      weight: 3
+    # group: Cost & Architecture
+    - name: Cost & Architecture
+      identifier: solutions-cost
+      parent: solutions
+      weight: 20
+      params: { heading: true }
+    - name: Cloud Repatriation
+      url: /solutions/cloud-repatriation/
+      parent: solutions-cost
+      weight: 1
+    - name: Cloud Cost Optimization
+      url: /solutions/cloud-cost-optimization/
+      parent: solutions-cost
+      weight: 2
+    - name: Hybrid Cloud Platform
+      url: /solutions/hybrid-cloud-platform/
+      parent: solutions-cost
+      weight: 3
+    # group: Developer & AI
+    - name: Developer & AI
+      identifier: solutions-devai
+      parent: solutions
+      weight: 30
+      params: { heading: true }
+    - name: Developer Self-Service
+      url: /solutions/developer-self-service/
+      parent: solutions-devai
+      weight: 1
+    - name: Sovereign AI
+      url: /solutions/sovereign-ai/
+      parent: solutions-devai
+      weight: 2
 
     # ── Services ──
     - name: Services
       url: /services/
+      identifier: services
       weight: 30
+    # group: Cloud Building
+    - name: Cloud Building
+      identifier: services-cloud-building
+      parent: services
+      weight: 10
+      params: { heading: true }
+    - name: Build Private Cloud
+      url: /services/build-private-cloud/
+      parent: services-cloud-building
+      weight: 1
+    - name: Sovereign Cloud Builder
+      url: /services/sovereign-cloud-builder/
+      parent: services-cloud-building
+      weight: 2
+    - name: Public Cloud Builder
+      url: /services/public-cloud-builder/
+      parent: services-cloud-building
+      weight: 3
+    - name: White-Label Cloud
+      url: /services/white-label-cloud/
+      parent: services-cloud-building
+      weight: 4
+    # group: Platform Engineering
+    - name: Platform Engineering
+      identifier: services-platform
+      parent: services
+      weight: 20
+      params: { heading: true }
+    - name: Platform Engineering service
+      url: /services/platform-engineering/
+      parent: services-platform
+      weight: 1
+    - name: Platform Readiness Assessment
+      url: /services/platform-readiness-assessment/
+      parent: services-platform
+      weight: 2
+    - name: Internal Developer Platform
+      url: /services/internal-developer-platform/
+      parent: services-platform
+      weight: 3
+    - name: Enterprise Platform Engineering
+      url: /services/enterprise-platform-engineering/
+      parent: services-platform
+      weight: 4
+    # group: Consulting
+    - name: Consulting
+      identifier: services-consulting
+      parent: services
+      weight: 30
+      params: { heading: true }
+    - name: Cloud Strategy Consultancy
+      url: /services/cloud-strategy-consultancy/
+      parent: services-consulting
+      weight: 1
+    - name: Cloud Engineering
+      url: /services/cloud-engineering/
+      parent: services-consulting
+      weight: 2
+    - name: Kubernetes Consulting
+      url: /services/kubernetes-consulting/
+      parent: services-consulting
+      weight: 3
+    - name: DevOps Consulting
+      url: /services/devops-consulting/
+      parent: services-consulting
+      weight: 4
+    - name: Private Cloud Consulting
+      url: /services/private-cloud-consulting/
+      parent: services-consulting
+      weight: 5
+    - name: SRE Consulting
+      url: /services/sre-consulting/
+      parent: services-consulting
+      weight: 6
+    # group: AI
+    - name: AI
+      identifier: services-ai
+      parent: services
+      weight: 40
+      params: { heading: true }
+    - name: AI Platform Build
+      url: /services/ai-platform-build/
+      parent: services-ai
+      weight: 1
 
     # ── Industries ──
     - name: Industries
       url: /industries/
+      identifier: industries
       weight: 40
+    # group: Regulated
+    - name: Regulated
+      identifier: industries-regulated
+      parent: industries
+      weight: 10
+      params: { heading: true }
+    - name: Financial Services
+      url: /industries/financial-services/
+      parent: industries-regulated
+      weight: 1
+    - name: Insurance
+      url: /industries/insurance/
+      parent: industries-regulated
+      weight: 2
+    - name: Public Sector
+      url: /industries/public-sector/
+      parent: industries-regulated
+      weight: 3
+    # group: Telco & Hosting
+    - name: Telco & Hosting
+      identifier: industries-telco
+      parent: industries
+      weight: 20
+      params: { heading: true }
+    - name: Telco
+      url: /industries/telco/
+      parent: industries-telco
+      weight: 1
+    - name: Hosting Providers
+      url: /industries/hosting-providers/
+      parent: industries-telco
+      weight: 2
+    - name: MSP
+      url: /industries/msp/
+      parent: industries-telco
+      weight: 3
+    # group: Industrial
+    - name: Industrial
+      identifier: industries-industrial
+      parent: industries
+      weight: 30
+      params: { heading: true }
+    - name: Energy
+      url: /industries/energy/
+      parent: industries-industrial
+      weight: 1
+    - name: Manufacturing
+      url: /industries/manufacturing/
+      parent: industries-industrial
+      weight: 2
+    - name: Transport & Logistics
+      url: /industries/transport-logistics/
+      parent: industries-industrial
+      weight: 3
+    # group: Education
+    - name: Education
+      identifier: industries-education
+      parent: industries
+      weight: 40
+      params: { heading: true }
+    - name: Universities
+      url: /industries/universities/
+      parent: industries-education
+      weight: 1
+    - name: Education K-12
+      url: /industries/education-k12/
+      parent: industries-education
+      weight: 2
+    # group: Other
+    - name: Other
+      identifier: industries-other
+      parent: industries
+      weight: 50
+      params: { heading: true }
+    - name: SMB / Mid-Market
+      url: /industries/smb-mid-market/
+      parent: industries-other
+      weight: 1
 
     # ── Pricing ──
     - name: Pricing
