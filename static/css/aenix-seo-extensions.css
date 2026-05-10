@@ -436,6 +436,148 @@
   font-size: 0.875rem;
 }
 
+/* ============================================================
+   HOMEPAGE COMPONENTS
+   ============================================================ */
+
+/* ─── Hero extras (tag pill + trust strip) ──────────────────── */
+.page-hero--home .page-hero-tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--aenix-accent, #E36414);
+  background: rgba(227, 100, 20, 0.08);
+  border: 1px solid rgba(227, 100, 20, 0.2);
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+.page-hero-trust {
+  margin-top: 1.5rem;
+  font-size: 0.8125rem;
+  color: var(--aenix-text-muted, #6B6B6B);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* ─── "What we replace" + "Pick your edition" card grids ────── */
+/* Reuses theme .card-grid + .card; adds tag + meta + link styling. */
+.card-grid--replace,
+.card-grid--editions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+.card--replace,
+.card--edition {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid rgba(15, 76, 92, 0.1);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+}
+.card--replace:hover,
+.card--edition:hover {
+  border-color: var(--aenix-primary, #0F4C5C);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(15, 76, 92, 0.08);
+}
+.card--replace .card-body,
+.card--edition .card-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+.card--replace .card-tag,
+.card--edition .card-tag {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--aenix-accent, #E36414);
+}
+.card--neutral .card-tag {
+  color: var(--aenix-text-muted, #6B6B6B);
+}
+.card--replace .card-title,
+.card--edition .card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--aenix-text, #1A1A1A);
+  margin: 0;
+  line-height: 1.3;
+}
+.card--replace .card-description,
+.card--edition .card-description {
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--aenix-text, #1A1A1A);
+  margin: 0;
+}
+.card--edition .card-meta {
+  font-size: 0.8125rem;
+  color: var(--aenix-text-muted, #6B6B6B);
+  margin: 0;
+  font-style: italic;
+}
+.card--replace .card-link,
+.card--edition .card-link {
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--aenix-primary, #0F4C5C);
+}
+
+/* ─── Engagement steps (3-step process) ─────────────────────── */
+.engagement-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2rem;
+}
+.engagement-step {
+  background: var(--aenix-bg-tint, #F8F4F0);
+  border-radius: 10px;
+  padding: 1.5rem 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.engagement-step__number {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--aenix-primary, #0F4C5C);
+  color: white;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9375rem;
+}
+.engagement-step__title {
+  margin: 0.25rem 0 0;
+  font-size: 1.125rem;
+  color: var(--aenix-text, #1A1A1A);
+}
+.engagement-step__body {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--aenix-text, #1A1A1A);
+}
+
 /* ─── Grouped dropdown (Solutions/Services/Industries) ──────── */
 /* Wider panel for grouped dropdowns; multi-column layout. */
 .dropdown-menu--grouped {
