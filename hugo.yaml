@@ -10,6 +10,9 @@ params:
   author: Ænix
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
+  ahrefsAnalytics: GQGQZe4HnT/wYo45t5cUEw
+  # gtmContainer: GTM-XXXXXXX  # uncomment + set when GTM container is provisioned
+  # hotjarId: 0000000           # uncomment + set when Hotjar site ID is provisioned
   # Hide design-notes by default. Enable per-build with HUGO_PARAMS_SHOW_DESIGN_NOTES=true
   # for design hand-off previews (notes are visible source-of-record for designers).
   hide_design_notes: true
