@@ -15,6 +15,21 @@ language: "de"
 
 ## Discovery-Call planen
 
+Zwei Wege, einen 30-Minuten-Discovery-Call zu buchen — wählen Sie, was für Ihren Workflow passt:
+
+<div class="contact-cta-row">
+  <a class="contact-cta contact-cta--primary" href="https://zcal.co/i/s5C4-cO1" target="_blank" rel="noopener">
+    <span class="contact-cta__label">Termin im Kalender wählen</span>
+    <span class="contact-cta__hint">Sofortige Buchung · zcal · 30 min</span>
+  </a>
+  <a class="contact-cta contact-cta--secondary" href="#discovery-form">
+    <span class="contact-cta__label">Oder Formular unten ausfüllen ↓</span>
+    <span class="contact-cta__hint">Wir melden uns innerhalb von 1 Werktag</span>
+  </a>
+</div>
+
+<div id="discovery-form"></div>
+
 {{< pipedrive-form type="discovery" >}}
 
 **Im Call besprechen wir:**

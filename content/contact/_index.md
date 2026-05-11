@@ -15,6 +15,21 @@ language: "en"
 
 ## Schedule a discovery call
 
+Two ways to book a 30-minute discovery call — pick whichever fits your workflow:
+
+<div class="contact-cta-row">
+  <a class="contact-cta contact-cta--primary" href="https://zcal.co/i/s5C4-cO1" target="_blank" rel="noopener">
+    <span class="contact-cta__label">Pick a time on the calendar</span>
+    <span class="contact-cta__hint">Instant booking · zcal · 30 min</span>
+  </a>
+  <a class="contact-cta contact-cta--secondary" href="#discovery-form">
+    <span class="contact-cta__label">Or fill out the form below ↓</span>
+    <span class="contact-cta__hint">We email you within one business day</span>
+  </a>
+</div>
+
+<div id="discovery-form"></div>
+
 {{< pipedrive-form type="discovery" >}}
 
 **On the call we'll cover:**

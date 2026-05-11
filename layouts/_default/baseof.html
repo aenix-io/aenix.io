@@ -18,16 +18,19 @@
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  {{/* DNS prefetch / preconnect for third-party services we expect to load */}}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  {{/* DNS prefetch for third-party services we expect to load on consent */}}
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://analytics.ahrefs.com">
   <link rel="dns-prefetch" href="https://assets.apollo.io">
   <link rel="dns-prefetch" href="https://webforms.pipedrive.com">
 
-  {{/* Fonts */}}
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  {{/* Self-hosted fonts (Inter + JetBrains Mono, latin + latin-ext subsets).
+       Replaces fonts.googleapis.com CDN — faster (no Google DNS+TLS),
+       GDPR-clean (no IP leakage to Google's servers). */}}
+  <link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css">
 
   {{/* CSS — theme base */}}
   {{ $style := resources.Get "css/main.css" | fingerprint }}

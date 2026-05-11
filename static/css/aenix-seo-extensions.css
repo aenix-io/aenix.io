@@ -1222,6 +1222,61 @@
 .blog-quiz__result .blog-quiz__retry { margin-top: 0.5rem; }
 
 /* ============================================================
+   CONTACT PAGE CTA — zcal + form
+   ============================================================ */
+
+.contact-cta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+.contact-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1.125rem 1.375rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+}
+.contact-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(15, 76, 92, 0.12);
+}
+.contact-cta--primary {
+  background: var(--aenix-primary, #0F4C5C);
+  color: white;
+  border: 1px solid var(--aenix-primary, #0F4C5C);
+}
+.contact-cta--primary:hover {
+  background: #0c3f4c;
+}
+.contact-cta--secondary {
+  background: var(--aenix-bg-tint, #F8F4F0);
+  color: var(--aenix-text, #1A1A1A);
+  border: 1px solid rgba(15, 76, 92, 0.15);
+}
+.contact-cta--secondary:hover {
+  border-color: var(--aenix-primary, #0F4C5C);
+}
+.contact-cta__label {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+.contact-cta__hint {
+  font-size: 0.8125rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 720px) {
+  .contact-cta-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================================================
    COOKIE CONSENT BANNER
    ============================================================ */
 
