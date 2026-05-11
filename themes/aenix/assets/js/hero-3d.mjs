@@ -108,50 +108,32 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         for(int i=0;i<2;i++){ sum += a*snoise(p); p *= 2.05; a *= 0.5; }
         return sum;
       }
-      // 2D radial gaussian — used to place explicit named peaks.
-      float gauss(vec2 pos, vec2 c, float s){
-        vec2 d = (pos - c) / s;
-        return exp(-dot(d, d) * 0.5);
-      }
 
       void main(){
         vec3 p = position;
-        vec2 pos2 = vec2(p.x, p.z);
-        vec2 uv2  = vec2(p.x * 0.05, p.z * 0.06);
+        vec2 uv2 = vec2(p.x * 0.05, p.z * 0.06);
 
-        // ── V silhouette baseline (open centre, ridges on the sides) ──
-        // Slightly different cutoff for L vs R → composition is no
-        // longer a perfect mirror.
+        // STRICT V silhouette — centre is mathematically clean
+        // (vshape = 0 at |x| < 3.0), so NO geometry hangs above the
+        // valley. Slight L/R asymmetry, sharper power for less dome.
         float xAbs   = abs(p.x);
-        float vLow   = (p.x < 0.0) ? 2.7 : 3.1;   // L cuts in earlier
-        float vHigh  = (p.x < 0.0) ? 9.6 : 10.2;
-        float vshape = pow(smoothstep(vLow, vHigh, xAbs), 1.10);
+        float vLow   = (p.x < 0.0) ? 3.0 : 3.3;
+        float vHigh  = (p.x < 0.0) ? 9.4 : 10.0;
+        float vshape = pow(smoothstep(vLow, vHigh, xAbs), 1.25);
 
-        // ── Explicit dominant + secondary peaks per side ──
-        // Left side: one big peak in the mid distance + 2 smaller
-        // companions further back / closer to the camera.
-        float lDom  = gauss(pos2, vec2(-6.6, -3.5), 3.0) * 1.00;
-        float lSec1 = gauss(pos2, vec2(-9.6,-10.5), 2.1) * 0.55;
-        float lSec2 = gauss(pos2, vec2(-4.4,  3.8), 1.9) * 0.42;
-        // Right side: dominant peak placed deeper (z=-7) so the two
-        // sides are NOT a mirror image.
-        float rDom  = gauss(pos2, vec2( 7.2, -6.8), 3.2) * 0.95;
-        float rSec1 = gauss(pos2, vec2(10.5, -1.2), 2.0) * 0.50;
-        float rSec2 = gauss(pos2, vec2( 5.1,  4.2), 1.8) * 0.46;
-        float peaks = max(lDom, max(lSec1, max(lSec2,
-                       max(rDom, max(rSec1, rSec2)))));
+        // Ridged noise on Z gives ANGULAR varying peak heights.
+        // abs() + pow(0.7) makes the ridges sharp (not smooth domes).
+        float rZ   = pow(abs(snoise(vec2(p.z * 0.085, p.x * 0.035))), 0.70);
+        float rZ2  = pow(abs(snoise(vec2(p.z * 0.20,  p.x * 0.05))), 0.85) * 0.30;
+        float heightVar = 0.45 + rZ * 0.80 + rZ2; // ~0.45 lows, ~1.55 dominant peaks
 
-        // ── Combine ──
-        // V floor sets the ridge baseline (~60% of full height) and
-        // peaks rise on top of it.
-        float h = max(vshape * 0.55, peaks);
-        // Subtle micro-texture
-        h *= 0.86 + fbm(uv2) * 0.14;
+        // Tiny micro-texture so the wireframe has surface detail.
+        float micro = 0.88 + fbm(uv2) * 0.12;
 
         float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.40;
 
-        float amp = 7.4;
-        h *= (1.0 + frontBoost);
+        float amp = 7.0;
+        float h = vshape * heightVar * micro * (1.0 + frontBoost);
 
         p.y += h * amp;
 
@@ -168,13 +150,16 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       varying float vElevation;
 
       void main(){
-        // Pure dark-blue palette — no white blow-out, no light tint.
-        // Peaks are darker than the valley edges, valley centre is
-        // dimmed via alpha (the only "highlight" is a CSS-side glow).
+        // Pure dark-blue palette — no white blow-out.
         float t = clamp(vElevation / 4.0, 0.0, 1.0);
         vec3 baseCol = mix(uColorHi, uColorLo * 0.50, t);
         float lum = dot(baseCol, vec3(0.299, 0.587, 0.114));
         vec3 col  = mix(baseCol, vec3(lum) * 0.85, t * 0.55);
+
+        // Distance fog — back ridges blend into the bg colour so the
+        // upper area reads as atmospheric depth, not a flat plane.
+        float depth   = smoothstep(0.0, -22.0, vWorldPos.z);
+        col = mix(col, vec3(0.043, 0.058, 0.10), depth * 0.55);
 
         float distFade  = smoothstep(-34.0, -22.0, vWorldPos.z);
         float valleyDim = smoothstep(0.0, 3.0, abs(vWorldPos.x));
@@ -182,10 +167,9 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         float frontEdge = smoothstep(2.0, 9.5, vWorldPos.z);
         float nearDim   = mix(1.0, 0.40, frontEdge);
 
-        // Whole scene held to ~45% (was 70%) so there's no overall
-        // brightness bloom. Brightness budget is reserved for the
-        // small CSS centre glow.
         float alpha = distFade * valleyDim * nearDim * 0.45;
+        // Reduce alpha further on the far ridges (fog effect)
+        alpha *= 1.0 - depth * 0.35;
         gl_FragColor = vec4(col, alpha);
       }
     `,
@@ -205,12 +189,12 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     fragmentShader: `
       varying vec2 vUv;
       void main(){
-        // Faint horizon haze — provides atmospheric depth in the upper
-        // area so the back ridges feel "far away" rather than flat.
+        // Very faint horizon haze — only at the bottom-centre band of
+        // the plane, no decorative streak. Soft cyan dissolved into bg.
         float dx = abs(vUv.x - 0.5);
         float dy = vUv.y;
-        float a = smoothstep(0.7, 0.0, dx) * smoothstep(0.0, 0.45, dy) * 0.13;
-        vec3 col = mix(vec3(0.02,0.10,0.28), vec3(0.06,0.32,0.55), 1.0 - dx);
+        float a = smoothstep(0.55, 0.0, dx) * smoothstep(0.45, 0.0, dy) * 0.06;
+        vec3 col = vec3(0.045, 0.20, 0.42);
         gl_FragColor = vec4(col, a);
       }
     `,
@@ -272,8 +256,18 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     const sx = side * mag;
     const start = new THREE.Vector3(sx, sy, sz);
     const dx = CORE.x - sx, dy = CORE.y - sy, dz = CORE.z - sz;
-    const mid1 = new THREE.Vector3(sx + dx * 0.35, sy + dy * 0.55, sz + dz * 0.35);
-    const mid2 = new THREE.Vector3(sx + dx * 0.72, sy + dy * 0.88, sz + dz * 0.72);
+    // mid1: mostly DESCEND (little X change, lots of Y descent)
+    // mid2: bend toward the centre near the floor
+    const mid1 = new THREE.Vector3(
+      sx + dx * 0.12,
+      sy + dy * 0.65,
+      sz + dz * 0.20
+    );
+    const mid2 = new THREE.Vector3(
+      sx + dx * 0.55,
+      sy + dy * 0.94,
+      sz + dz * 0.55
+    );
     const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, CORE);
     addCurve(curve, cPurple, cCyan, 0.16);
   }
