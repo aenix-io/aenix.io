@@ -7,6 +7,44 @@ type: "article"
 topics: ["DORA", "NIS2", "Nutanix", "Kubernetes", "Sovereignty", "Cloud Repatriation"]
 language: "en"
 companion_landing: "/services/platform-readiness-assessment/"
+quiz:
+  title: "Test yourself: 14-day Cloud Readiness Assessment"
+  questions:
+    - q: "How many parallel workstreams structure the Aenix 14-day assessment?"
+      options:
+        - { text: "Two", correct: false }
+        - { text: "Four", correct: true }
+        - { text: "Six", correct: false }
+        - { text: "Eight", correct: false }
+      explanation: "Four workstreams run in parallel: (1) Inventory and platform maturity, (2) Sovereignty and regulator gap, (3) Cost and cloud-spend posture, (4) Developer self-service and platform engineering. Each maps to one buyer pressure."
+    - q: "What share of public-cloud spend does the assessment typically find structurally repatriable in 6–12 months without performance regression?"
+      options:
+        - { text: "5–10%", correct: false }
+        - { text: "15–35%", correct: true }
+        - { text: "50–70%", correct: false }
+        - { text: "80–100%", correct: false }
+      explanation: "Common Workstream 3 findings include: 15–35% of public-cloud spend is structurally repatriable in 6–12 months without performance regression; egress costs concentrate in flows that were never architected; reservation discount realization is below 60%."
+    - q: "On the 14-day calendar, what happens on Day 10?"
+      options:
+        - { text: "Final executive readout", correct: false }
+        - { text: "Report drafting starts", correct: false }
+        - { text: "Findings checkpoint — preliminary findings shared with the customer for sharpening or contesting", correct: true }
+        - { text: "Vendor shortlisting workshop", correct: false }
+      explanation: "Day 10 is the findings checkpoint (60 min). The customer corrects, sharpens, or contests preliminary findings before the final report is drafted on days 11–13. The executive readout is Day 14. Vendor shortlisting only happens in the 28-day variant."
+    - q: "According to the article, why does Aenix push back on pre-decided answers at Day 0?"
+      options:
+        - { text: "It blocks parallel workstream execution", correct: false }
+        - { text: "A report aligned with a pre-decided answer is discounted internally as confirmation bias", correct: true }
+        - { text: "It triggers regulatory non-compliance", correct: false }
+        - { text: "It changes the engagement pricing tier", correct: false }
+      explanation: "If the sponsor enters with \"we are moving everything to Azure\" or \"we are going on-prem with Cozystack\" already decided, the report is discounted internally as confirmation. Pre-existing answers contaminate the assessment."
+    - q: "Which of these is named as a STRONG fit for starting the assessment?"
+      options:
+        - { text: "A 5-person IT team running one or two systems", correct: false }
+        - { text: "You just signed a multi-year hyperscaler commitment", correct: false }
+        - { text: "A specific regulator deadline (DORA Article 28, NIS2, sectoral audit)", correct: true }
+        - { text: "You do not yet know whether you have a sovereignty problem at all", correct: false }
+      explanation: "Strong fits include a regulator deadline, an upcoming board-level cost decision, a new platform engineering function being stood up, or an AI / data-residency project blocked at architecture review. The other options are explicitly listed as poor fits."
 ---
 
 **This is the long-form companion to our [Platform Readiness Assessment landing page](/services/platform-readiness-assessment/). It walks through the methodology in detail — workstreams, deliverables, examples of findings, common pitfalls — for technical leaders evaluating whether a 14-day or 28-day cloud readiness assessment is the right next step.**

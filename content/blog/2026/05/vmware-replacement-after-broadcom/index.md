@@ -7,6 +7,42 @@ type: "tutorial"
 topics: ["VMware", "Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU"]
 language: "en"
 companion_landing: "/alternatives/vmware-alternative/"
+quiz:
+  title: "Test yourself: VMware replacement essentials"
+  questions:
+    - q: "According to the article, what kind of price increases on VCF renewal does Aenix observe across its customer pipeline?"
+      options:
+        - { text: "10–25% over previous spend", correct: false }
+        - { text: "2× to 5× over previous spend", correct: true }
+        - { text: "6× to 10× over previous spend", correct: false }
+      explanation: "The piece states that renewal quotes \"have come back at 2× to 5× prior spend across our pipeline\" after Broadcom replaced perpetual licensing with VCF subscription bundles."
+    - q: "Which Cozystack component is positioned as the direct vCenter alternative?"
+      options:
+        - { text: "KubeVirt", correct: false }
+        - { text: "The Cozystack control plane (Kubernetes API + cozyportal)", correct: true }
+        - { text: "Cilium", correct: false }
+        - { text: "Tenant CRD only", correct: false }
+      explanation: "The architecture-mapping table maps the Kubernetes API + cozyportal as the vCenter alternative, with Cluster API providing multi-cluster federation. KubeVirt replaces ESXi; Cilium replaces NSX."
+    - q: "Which of these limitations is described as industry-wide rather than Cozystack-specific?"
+      options:
+        - { text: "GPU live migration is not supported", correct: true }
+        - { text: "Windows VMs are not supported", correct: false }
+        - { text: "No support for air-gapped install", correct: false }
+        - { text: "No multi-tenancy", correct: false }
+      explanation: "The FAQ explicitly calls GPU live migration an industry-wide limitation — VMware vGPU has known caveats too. Cozystack supports Windows VMs (with an automated VMware-Tools cleanup step), air-gap install, and multi-tenancy via the Tenant CRD."
+    - q: "In the recommended VMware-to-Cozystack migration sequence, what comes immediately before VM-by-VM image migration to KubeVirt?"
+      options:
+        - { text: "Decommissioning VMware", correct: false }
+        - { text: "Deploying Cozystack in parallel on new or repurposed hardware", correct: true }
+        - { text: "Network and storage cutover", correct: false }
+        - { text: "DR cutover validation", correct: false }
+      explanation: "The migration runs: discovery & assessment → Cozystack deployed in parallel → VM-by-VM image migration → network and storage cutover → validation and DR cutover → VMware decommission. No big-bang cutover."
+    - q: "What is the typical timeline for a smaller VMware estate (under 200 VMs, simple networking) according to the article?"
+      options:
+        - { text: "1–2 weeks", correct: false }
+        - { text: "6–12 weeks from discovery to decommission", correct: true }
+        - { text: "12–18 months", correct: false }
+      explanation: "Smaller estates take 6–12 weeks; larger or complex ones (vCD, NSX-heavy, regulated workloads) run 3–9 months. The driver is rarely raw migration speed — it is regression testing and parallel-run windows."
 ---
 
 **This is the long-form companion to our [VMware alternative landing page](/alternatives/vmware-alternative). It walks through what changed under Broadcom, what a credible VMware replacement actually looks like in production, and how a real migration runs end-to-end.**

@@ -7,6 +7,42 @@ type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "Cloud Repatriation", "AI/ML", "GPU"]
 language: "en"
 companion_landing: "/solutions/cloud-repatriation/"
+quiz:
+  title: "Test yourself: Cloud repatriation playbook"
+  questions:
+    - q: "According to the Broadcom Private Cloud Outlook 2025 cited in the article, what share of organizations are evaluating repatriation?"
+      options:
+        - { text: "23%", correct: false }
+        - { text: "53%", correct: false }
+        - { text: "69%", correct: true }
+        - { text: "92%", correct: false }
+      explanation: "69% of organizations are evaluating repatriation according to Broadcom 2025. 53% now prioritize private cloud for new workloads — those are two different stats from the same report."
+    - q: "In the workload classification step, how many labels can a workload receive?"
+      options:
+        - { text: "Two — repatriate or stay", correct: false }
+        - { text: "Four — repatriate now / repatriate later / stay in cloud / reassess", correct: true }
+        - { text: "Six categories", correct: false }
+      explanation: "Step 2 of the playbook assigns each workload one of four labels. The \"reassess\" bucket exists because some workloads need PoC or instrumentation before a credible decision can be made."
+    - q: "For a typical 100-VM repatriation, how long does end-to-end elapsed time usually take from \"we should look at this\" to \"we are running on the destination platform\"?"
+      options:
+        - { text: "4–8 weeks", correct: false }
+        - { text: "8–14 months", correct: true }
+        - { text: "24–36 months", correct: false }
+      explanation: "For an org with ~100 VMs and a moderate cloud bill: 2–4 weeks assessment, 2–4 months destination platform build, 6–18 months workload migration in cohorts. Total elapsed: 8–14 months."
+    - q: "Which of these is NOT on the article's list of when repatriation is the wrong answer?"
+      options:
+        - { text: "You have a small IT team running a handful of services", correct: false }
+        - { text: "Your portfolio is dominated by hyperscaler-proprietary services with no realistic alternatives", correct: false }
+        - { text: "You are subject to DORA Article 28 supplier-concentration requirements", correct: true }
+        - { text: "You are at year 1 of a 5-year commitment with steep penalties", correct: false }
+      explanation: "DORA Article 28 is actually a trigger to consider repatriation, not a reason to avoid it. The wrong-answer list covers small teams, proprietary-dependency-heavy portfolios, fundamentally elastic businesses, stretched platform teams, and early-stage commitment lockups."
+    - q: "What is \"Pitfall 1\" — the most strategic pitfall called out in the playbook?"
+      options:
+        - { text: "Treating repatriation as a cost project rather than a platform project", correct: true }
+        - { text: "Buying the wrong GPU class", correct: false }
+        - { text: "Not negotiating the AWS exit fee", correct: false }
+        - { text: "Doing it in winter", correct: false }
+      explanation: "A repatriation measured purely on cost reduction tends to under-invest in the platform work that makes the cost reduction sustainable. Two years in, the team has saved money but lost velocity — and that triggers a partial reverse-repatriation back into the hyperscaler."
 ---
 
 **Cloud repatriation is no longer a contrarian position. The Broadcom Private Cloud Outlook 2025 reports that 69% of organizations are evaluating repatriation and 53% now prioritize private cloud for new workloads. This is the practical playbook for the reverse cloud migration — what to evaluate, what to build, what to move first, and where most teams get it wrong. It's the long-form companion to our [cloud repatriation services page](/solutions/cloud-repatriation/), where the engagement that runs this work is described.**
