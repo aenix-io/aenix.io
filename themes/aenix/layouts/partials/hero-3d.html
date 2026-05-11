@@ -1,73 +1,41 @@
 {{/* hero-3d: 3D valley canvas + topographic peak labels.
-     Each label has a small SVG icon, a short eyebrow, a 2-line
-     description, a thin dotted leader line, and a glowing dot at
-     the projected peak position. */}}
+     The labels mimic surveyor annotations on a topographic map —
+     thin dotted line + minimal eyebrow + body text. They point to
+     mountain peaks rendered by hero-3d.mjs.                      */}}
 <div class="hero-3d" aria-hidden="true">
   <canvas id="hero-3d-canvas" class="hero-3d-canvas"></canvas>
 
   <div class="hero-3d-annotations">
-    {{/* Left side peaks */}}
+    {{/* Left side peaks — descending from far-back/high to near/low */}}
     <div class="peak peak--kubernetes">
-      <svg class="peak-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M12 2 L21 7 L21 17 L12 22 L3 17 L3 7 Z"/>
-        <circle cx="12" cy="12" r="3"/>
-        <path d="M12 9 L12 6 M15 12 L18 11 M14 14 L16 17 M10 14 L8 17 M9 12 L6 11"/>
-      </svg>
-      <span class="peak-eyebrow">Kubernetes</span>
+      <span class="peak-eyebrow">KUBERNETES</span>
       <p class="peak-body">Orchestrate<br>containers at scale</p>
       <span class="peak-line" aria-hidden="true"></span>
     </div>
     <div class="peak peak--vms">
-      <svg class="peak-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect x="3" y="4" width="18" height="13" rx="2"/>
-        <path d="M8 21h8 M12 17v4"/>
-        <path d="M9 10 L13 12 L9 14 Z"/>
-      </svg>
-      <span class="peak-eyebrow">Virtual Machines</span>
+      <span class="peak-eyebrow">VIRTUAL MACHINES</span>
       <p class="peak-body">Run and manage<br>VM workloads</p>
       <span class="peak-line" aria-hidden="true"></span>
     </div>
     <div class="peak peak--databases">
-      <svg class="peak-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <ellipse cx="12" cy="5" rx="8" ry="2.5"/>
-        <path d="M4 5v6c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5V5"/>
-        <path d="M4 11v6c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5v-6"/>
-      </svg>
-      <span class="peak-eyebrow">Databases</span>
+      <span class="peak-eyebrow">DATABASES</span>
       <p class="peak-body">Reliable data<br>management</p>
       <span class="peak-line" aria-hidden="true"></span>
     </div>
 
     {{/* Right side peaks */}}
     <div class="peak peak--storage">
-      <svg class="peak-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect x="3" y="4"  width="18" height="5" rx="1"/>
-        <rect x="3" y="11" width="18" height="5" rx="1"/>
-        <rect x="3" y="18" width="18" height="3" rx="1"/>
-        <circle cx="7" cy="6.5" r="0.6" fill="currentColor"/>
-        <circle cx="7" cy="13.5" r="0.6" fill="currentColor"/>
-      </svg>
-      <span class="peak-eyebrow">Storage</span>
+      <span class="peak-eyebrow">STORAGE</span>
       <p class="peak-body">Scalable storage<br>for any workload</p>
       <span class="peak-line" aria-hidden="true"></span>
     </div>
     <div class="peak peak--networking">
-      <svg class="peak-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <circle cx="12" cy="5" r="2.4"/>
-        <circle cx="5"  cy="18" r="2.4"/>
-        <circle cx="19" cy="18" r="2.4"/>
-        <path d="M12 7.4L6.6 16 M12 7.4L17.4 16 M6.6 18h10.8"/>
-      </svg>
-      <span class="peak-eyebrow">Networking</span>
+      <span class="peak-eyebrow">NETWORKING</span>
       <p class="peak-body">High performance<br>connectivity</p>
       <span class="peak-line" aria-hidden="true"></span>
     </div>
     <div class="peak peak--observability">
-      <svg class="peak-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M4 20V10 M9 20V6 M14 20v-9 M19 20V13"/>
-        <path d="M3 20h18"/>
-      </svg>
-      <span class="peak-eyebrow">Observability</span>
+      <span class="peak-eyebrow">OBSERVABILITY</span>
       <p class="peak-body">Monitor everything.<br>Gain insights.</p>
       <span class="peak-line" aria-hidden="true"></span>
     </div>

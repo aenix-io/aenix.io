@@ -128,11 +128,6 @@
     <script src="{{ $js.RelPermalink }}"></script>
   {{ end }}
 
-  {{ $orb := resources.Get "js/orb.js" | fingerprint }}
-  {{ if $orb }}
-    <script src="{{ $orb.RelPermalink }}"></script>
-  {{ end }}
-
   {{ $consent := resources.Get "js/consent.js" | fingerprint }}
   {{ if $consent }}
     <script src="{{ $consent.RelPermalink }}"></script>

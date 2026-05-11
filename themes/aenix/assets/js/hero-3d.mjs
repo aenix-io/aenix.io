@@ -16,7 +16,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const canvas = document.getElementById('hero-3d-canvas');
   if (!canvas) return;
 
-  // WebGL availability check — fall back silently to orb.js if unsupported
+  // WebGL availability check — hide canvas silently if unsupported
   let renderer;
   try {
     renderer = new THREE.WebGLRenderer({
@@ -26,14 +26,10 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       powerPreference: 'high-performance',
     });
   } catch (e) {
-    console.warn('[hero-3d] WebGL unavailable, falling back', e);
+    console.warn('[hero-3d] WebGL unavailable', e);
     canvas.style.display = 'none';
     return;
   }
-
-  // Hide 2D fallback canvas so orb.js never starts its raf loop
-  const flowCanvas = document.getElementById('flow-canvas');
-  if (flowCanvas) flowCanvas.style.display = 'none';
 
   const DPR = Math.min(window.devicePixelRatio || 1, 1.5);
   renderer.setPixelRatio(DPR);
@@ -41,12 +37,12 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
 
   /* ── Scene ────────────────────────────────────────────────── */
   const scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0x0b0f1a, 16, 48);
+  scene.fog = new THREE.Fog(0x0b0f1a, 22, 60);
 
   // Camera elevated and tilted further down so the back ridges
   // actually fill the upper part of the viewport — no dark sky band
   // between the header and the wireframe.
-  const camera = new THREE.PerspectiveCamera(58, 1, 0.1, 100);
+  const camera = new THREE.PerspectiveCamera(48, 1, 0.1, 100);
   camera.position.set(0, 5.0, 9.5);
   camera.lookAt(0, -0.6, -4.0);
 
@@ -58,8 +54,8 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
 
   const TERRAIN_W = 56;
   const TERRAIN_D = 54;
-  const SEG_X = 200;
-  const SEG_Y = 160;
+  const SEG_X = 60;
+  const SEG_Y = 54;
 
   const terrainGeo = new THREE.PlaneGeometry(TERRAIN_W, TERRAIN_D, SEG_X, SEG_Y);
   terrainGeo.rotateX(-Math.PI / 2);
@@ -105,37 +101,48 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       }
       float fbm(vec2 p){
         float a=0.5, sum=0.0;
-        for(int i=0;i<2;i++){ sum += a*snoise(p); p *= 2.05; a *= 0.5; }
+        for(int i=0;i<5;i++){ sum += a*snoise(p); p *= 2.05; a *= 0.5; }
         return sum;
       }
 
       void main(){
         vec3 p = position;
-        vec2 uv2 = vec2(p.x * 0.05, p.z * 0.06);
+        // Static terrain — no time-based displacement. Uses a fixed seed.
+        vec2 uv2 = vec2(p.x * 0.10, p.z * 0.12);
 
-        // STRICT V silhouette — centre is mathematically clean
-        // (vshape = 0 at |x| < 3.0), so NO geometry hangs above the
-        // valley. Slight L/R asymmetry, sharper power for less dome.
-        float xAbs   = abs(p.x);
-        float vLow   = (p.x < 0.0) ? 3.0 : 3.3;
-        float vHigh  = (p.x < 0.0) ? 9.4 : 10.0;
-        float vshape = pow(smoothstep(vLow, vHigh, xAbs), 1.25);
+        // base ridged height
+        float h = fbm(uv2) * 1.6 + 0.25 * fbm(uv2 * 2.4);
+        h = h * 0.55 + 0.55 * abs(snoise(uv2 * 0.55));
 
-        // Ridged noise on Z gives ANGULAR varying peak heights.
-        // abs() + pow(0.7) makes the ridges sharp (not smooth domes).
-        float rZ   = pow(abs(snoise(vec2(p.z * 0.085, p.x * 0.035))), 0.70);
-        float rZ2  = pow(abs(snoise(vec2(p.z * 0.20,  p.x * 0.05))), 0.85) * 0.30;
-        float heightVar = 0.45 + rZ * 0.80 + rZ2; // ~0.45 lows, ~1.55 dominant peaks
+        // VALLEY MASK — flatten the centre band so the hero copy reads.
+        // mask is 0 at x=0, ramps to 1 by |x|=8.
+        float vmask = smoothstep(2.0, 9.0, abs(p.x));
+        // SIDE BOOST — exaggerate the V shape: outer flanks rise much
+        // higher than the noise alone would give, so the silhouette
+        // reads as two ridges with a clear valley between them.
+        float sideBoost = smoothstep(4.0, 13.0, abs(p.x)) * 0.95;
+        // FOREGROUND BOOST — peaks closer to the camera (positive p.z)
+        // rise higher than distant ones, so the silhouette feels grounded.
+        float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.4;
+        // BACK RIDGE — close the far end of the valley with a low
+        // ridge in the centre so the middle doesn't drop off into a
+        // cliff/void. Only kicks in at the back and only in the centre.
+        float backDist    = smoothstep(-4.0, -16.0, p.z);
+        float centerBand  = 1.0 - smoothstep(2.0, 9.0, abs(p.x));
+        float backRidge   = backDist * centerBand * 0.20;
+        vmask = max(vmask, backRidge);
 
-        // Tiny micro-texture so the wireframe has surface detail.
-        float micro = 0.88 + fbm(uv2) * 0.12;
+        // amplitude in metres — tall peaks so the silhouette reaches
+        // up toward the header.
+        float amp = 7.5;
+        h = h * vmask * (1.0 + frontBoost + sideBoost);
 
-        float frontBoost = smoothstep(-12.0, 6.0, p.z) * 0.40;
+        // CENTRE DIP — push the valley floor DOWN below the base level
+        // so the V shape reads as a real depression, not just a flat
+        // strip between ridges. Strongest at x=0, fades out by |x|=8.
+        float dip = (1.0 - smoothstep(0.0, 8.0, abs(p.x))) * 2.5;
 
-        float amp = 7.0;
-        float h = vshape * heightVar * micro * (1.0 + frontBoost);
-
-        p.y += h * amp;
+        p.y += h * amp - dip;
 
         vElevation = h * amp;
         vec4 worldPos = modelMatrix * vec4(p, 1.0);
@@ -150,133 +157,69 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       varying float vElevation;
 
       void main(){
-        // Pure dark-blue palette — no white blow-out.
+        // colour by elevation — pure brand blue → cyan
         float t = clamp(vElevation / 4.0, 0.0, 1.0);
-        vec3 baseCol = mix(uColorHi, uColorLo * 0.50, t);
-        float lum = dot(baseCol, vec3(0.299, 0.587, 0.114));
-        vec3 col  = mix(baseCol, vec3(lum) * 0.85, t * 0.55);
+        vec3 col = mix(uColorLo, uColorHi, t);
 
-        // Distance fog — back ridges blend into the bg colour so the
-        // upper area reads as atmospheric depth, not a flat plane.
-        float depth   = smoothstep(0.0, -22.0, vWorldPos.z);
-        col = mix(col, vec3(0.043, 0.058, 0.10), depth * 0.55);
+        // ridge accent — gentle extra brightness on tall peaks
+        col += pow(max(vElevation - 2.2, 0.0) * 0.30, 1.8) * vec3(0.18, 0.32, 0.55);
 
-        float distFade  = smoothstep(-34.0, -22.0, vWorldPos.z);
+        // Very gentle far-fade so the absolute back of the terrain
+        // dissolves into the bg, but everything in the visible frame
+        // stays fully rendered (no empty band under the header).
+        float distFade = smoothstep(-34.0, -22.0, vWorldPos.z);
+
+        // valley reveal — keep the centre band quiet
         float valleyDim = smoothstep(0.0, 3.0, abs(vWorldPos.x));
-        valleyDim = mix(0.12, 1.0, valleyDim);
-        float frontEdge = smoothstep(2.0, 9.5, vWorldPos.z);
-        float nearDim   = mix(1.0, 0.40, frontEdge);
+        valleyDim = mix(0.18, 1.0, valleyDim);
 
-        float alpha = distFade * valleyDim * nearDim * 0.45;
-        // Reduce alpha further on the far ridges (fog effect)
-        alpha *= 1.0 - depth * 0.35;
+        // Softly fade only the very front edge so foreground wires don't
+        // crowd the hero copy.
+        float frontEdge = smoothstep(2.0, 9.5, vWorldPos.z);
+        float nearDim = mix(1.0, 0.40, frontEdge);
+
+        float alpha = distFade * valleyDim * nearDim * 0.35;
         gl_FragColor = vec4(col, alpha);
       }
     `,
   });
 
   const terrain = new THREE.Mesh(terrainGeo, terrainMat);
-  terrain.position.set(0, -1.2, -3.0);
+  terrain.position.set(0, -19.5, -3.0);
   scene.add(terrain);
 
-  /* ── Perspective floor grid ──────────────────────────────────
-     Cyan grid extending from the camera into the distance through
-     the valley floor. Bright near the vanishing point so the eye
-     reads it as a horizon/road. */
-  const floorGeo = new THREE.PlaneGeometry(26, 30);
-  floorGeo.rotateX(-Math.PI / 2);
-  const floorMat = new THREE.ShaderMaterial({
+  /* ── Solid fill behind the wireframe ────────────────────────
+     50% black "glass" inside every triangle. Shares the same
+     vertex shader so the displaced surface lines up with the
+     wireframe; polygonOffset pushes it slightly back to avoid
+     z-fighting with the glowing edges on top. Alpha also fades
+     at the far back and near front so the panel boundaries
+     mirror the wireframe's fade and don't appear as hard edges. */
+  const terrainFillMat = new THREE.ShaderMaterial({
+    uniforms: terrainMat.uniforms,
     transparent: true,
-    depthWrite: false,
-    uniforms: {
-      uColor:  { value: new THREE.Color(0x66c6ff) },
-      uOrigin: { value: new THREE.Vector3(0, 0, -4) }, // vanishing point
-    },
-    vertexShader: `
+    depthWrite: true,
+    polygonOffset: true,
+    polygonOffsetFactor: 1.0,
+    polygonOffsetUnits: 1.0,
+    side: THREE.DoubleSide,
+    vertexShader: terrainMat.vertexShader,
+    fragmentShader: /* glsl */`
       varying vec3 vWorldPos;
+      varying float vElevation;
       void main(){
-        vec4 wp = modelMatrix * vec4(position, 1.0);
-        vWorldPos = wp.xyz;
-        gl_Position = projectionMatrix * viewMatrix * wp;
-      }
-    `,
-    fragmentShader: `
-      uniform vec3 uColor;
-      uniform vec3 uOrigin;
-      varying vec3 vWorldPos;
-      void main(){
-        // grid lines (1.2 unit cells)
-        vec2 cell = abs(fract(vWorldPos.xz * (1.0/1.2)) - 0.5);
-        float line = min(cell.x, cell.y);
-        float lineMask = 1.0 - smoothstep(0.0, 0.06, line);
-
-        // 1) Fade outside the central X band (sides → invisible)
-        float xFade = 1.0 - smoothstep(4.0, 12.0, abs(vWorldPos.x));
-        // 2) Brightness peaks near the vanishing point and falls off
-        //    both toward the camera AND toward the far back.
-        float dz = vWorldPos.z - uOrigin.z;
-        float zFade = exp(-abs(dz) * 0.18);
-
-        float a = lineMask * xFade * zFade * 0.55;
-        gl_FragColor = vec4(uColor, a);
+        float distFade  = smoothstep(-34.0, -22.0, vWorldPos.z);
+        float frontEdge = smoothstep(2.0, 9.5, vWorldPos.z);
+        float nearDim   = mix(1.0, 0.40, frontEdge);
+        float a = distFade * nearDim * 0.15;
+        gl_FragColor = vec4(0.025, 0.08, 0.22, a);
       }
     `,
   });
-  const floor = new THREE.Mesh(floorGeo, floorMat);
-  floor.position.set(0, -1.0, -4.0);
-  scene.add(floor);
-
-  /* ── Bright central horizon point (focal core) ───────────────
-     Small additive billboard at the floor vanishing point. Sits
-     where the flow lines converge — gives the scene its anchor. */
-  const coreGeo = new THREE.PlaneGeometry(3.2, 3.2);
-  const coreMat = new THREE.ShaderMaterial({
-    transparent: true,
-    depthWrite: false,
-    blending: THREE.AdditiveBlending,
-    vertexShader: `varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
-    fragmentShader: `
-      varying vec2 vUv;
-      void main(){
-        vec2 d = vUv - 0.5;
-        float r = length(d);
-        // bright tight core fading outward
-        float core = pow(1.0 - smoothstep(0.0, 0.08, r), 1.5);
-        float halo = pow(1.0 - smoothstep(0.0, 0.45, r), 2.5) * 0.45;
-        float a = core * 0.85 + halo;
-        // white-cyan core
-        vec3 col = mix(vec3(0.7, 0.92, 1.0), vec3(1.0), core);
-        gl_FragColor = vec4(col, a);
-      }
-    `,
-  });
-  const coreMesh = new THREE.Mesh(coreGeo, coreMat);
-  coreMesh.position.set(0, -0.45, -4.2);
-  scene.add(coreMesh);
-
-  /* ── Soft horizon glow plane far back ────────────────────── */
-  const horizonGeo = new THREE.PlaneGeometry(80, 18);
-  const horizonMat = new THREE.ShaderMaterial({
-    transparent: true,
-    depthWrite: false,
-    uniforms: {},
-    vertexShader: `varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
-    fragmentShader: `
-      varying vec2 vUv;
-      void main(){
-        // Very faint horizon haze — only at the bottom-centre band of
-        // the plane, no decorative streak. Soft cyan dissolved into bg.
-        float dx = abs(vUv.x - 0.5);
-        float dy = vUv.y;
-        float a = smoothstep(0.55, 0.0, dx) * smoothstep(0.45, 0.0, dy) * 0.06;
-        vec3 col = vec3(0.045, 0.20, 0.42);
-        gl_FragColor = vec4(col, a);
-      }
-    `,
-  });
-  const horizon = new THREE.Mesh(horizonGeo, horizonMat);
-  horizon.position.set(0, 1.5, -22);
-  scene.add(horizon);
+  const terrainFill = new THREE.Mesh(terrainGeo, terrainFillMat);
+  terrainFill.position.copy(terrain.position);
+  terrainFill.renderOrder = -1;
+  scene.add(terrainFill);
 
   /* ── Energy flow lines ───────────────────────────────────────
      Two-stage flow that visualises chaos → control → order:
@@ -293,7 +236,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const cWhite  = new THREE.Color(0xb0e5ff);
 
   // Single "core" position the input collapses to and the output emerges from.
-  const CORE = new THREE.Vector3(0.0, -0.35, 1.0);
+  const CORE = new THREE.Vector3(0.0, -20.5, 1.0);
 
   function addCurve(curve, colorStart, colorEnd, opacity, segments = 38) {
     const pts = curve.getPoints(segments);
@@ -318,41 +261,23 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     flowGroup.add(new THREE.Line(geo, mat));
   }
 
-  // ── FLOWS — many descending rays into the focal core ──
-  // 8 lines per side, scattered along the ridge at varying depths
-  // and heights. Each line drops along its slope and curves into
-  // the central core at the floor's vanishing point. Per-line
-  // opacity stays low so density doesn't read as brightness.
-  const FLOW_HALF = [
-    // [magX, startY, startZ]
-    [ 9.5, 4.6, -10],
-    [ 8.5, 4.4,  -7],
-    [ 7.5, 4.0,  -4],
-    [ 8.0, 4.2,  -1],
-    [ 6.5, 3.7,   2],
-    [ 7.5, 4.0,  -6],
-    [ 9.0, 4.5,  -3],
-    [ 5.5, 3.4,   4],
+  // ── INPUT FLOWS (left ridges → core) ──
+  // Subtle thin lines descending from a few left-side ridge points
+  // toward the central control core. Kept low-opacity and away from
+  // the upper-left edge so UnrealBloom doesn't smear them into a
+  // bright streak.
+  const INPUT_ORIGINS = [
+    [ -9.0, -11.7, -6], [-7.0, -12.1, -2], [-8.5, -11.9, -10],
+    [ -6.0, -12.5,  2], [-5.0, -12.9,  5],
   ];
-  function addFlow(side, [mag, sy, sz], jitter) {
-    const sx = side * (mag + jitter * 0.3);
+  INPUT_ORIGINS.forEach(([sx, sy, sz], i) => {
     const start = new THREE.Vector3(sx, sy, sz);
-    const dx = CORE.x - sx, dy = CORE.y - sy, dz = CORE.z - sz;
-    const mid1 = new THREE.Vector3(
-      sx + dx * 0.15 + jitter * 0.4,
-      sy + dy * 0.62,
-      sz + dz * 0.22
-    );
-    const mid2 = new THREE.Vector3(
-      sx + dx * 0.58,
-      sy + dy * 0.92,
-      sz + dz * 0.58
-    );
+    const chaos = 1.0 + (i % 3) * 0.10;
+    const mid1 = new THREE.Vector3(sx * 0.78 * chaos, sy * 0.55, sz * 0.85);
+    const mid2 = new THREE.Vector3(sx * 0.12, -0.20, sz * 0.40 + 0.6);
     const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, CORE);
-    addCurve(curve, cPurple, cCyan, 0.12);
-  }
-  FLOW_HALF.forEach((p, i) => addFlow(-1, p, ((i * 17) % 5) - 2));
-  FLOW_HALF.forEach((p, i) => addFlow( 1, p, ((i * 13) % 5) - 2));
+    addCurve(curve, cPurple, cCyan, 0.16);
+  });
 
   scene.add(flowGroup);
 
@@ -363,28 +288,210 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
      visually anchor to a specific peak (no 3D meshes — just a CSS
      dot at the projected coordinate). Positions chosen so the six
      screen projections spread across the viewport without stacking. */
+  // Hand-picked peak coords (world x, y, z) via click-to-pick debug mode.
+  // To re-pick: temporarily restore the click handler from git history.
   const PEAK_DEFS = [
-    // [id, x, y, z] — Y values picked so the projected dot lands on
-    // the visible ridge silhouette under the down-tilted camera.
-    // Inner pair pushed further out on X to keep their labels clear
-    // of the centred title.
-    ['kubernetes',    -11.0, 2.0, -10],
-    ['vms',            -7.5, 1.4,  -8],
-    ['databases',      -5.5, 0.8,  -6],
-    ['storage',         11.0, 2.0, -10],
-    ['networking',       7.5, 1.4,  -8],
-    ['observability',    5.5, 0.8,  -6],
+    ['kubernetes',    -20.44, -6.70, -26.98],
+    ['vms',           -13.03, -6.86, -15.07],
+    ['databases',     -12.97, -12.38, -26.96],
+    ['storage',        14.90, -6.44, -16.96],
+    ['networking',     13.85, -9.01,  -7.70],
+    ['observability',  24.10, -6.00, -27.97],
   ];
   const peakAnchors = PEAK_DEFS.map(([id, x, y, z]) => ({
     id,
     pos: new THREE.Vector3(x, y, z),
     el:  document.querySelector('.peak--' + id),
   }));
+
+  /* ── DEBUG: type "debug" anywhere on the page to enable
+     click-to-pick peak coords. Click each peak in PEAK_DEFS order;
+     coords print to console in the exact PEAK_DEFS format so you can
+     paste them back. Inactive by default — no overhead until typed. */
+  {
+    const SEQUENCE = 'debug';
+    let typed = '';
+    let active = false;
+    let nextIdx = 0;
+    const PEAK_ORDER = PEAK_DEFS.map(([id]) => id);
+    const _clickPt = new THREE.Vector3();
+
+    function _smoothstep(a, b, x) {
+      const t = Math.max(0, Math.min(1, (x - a) / (b - a)));
+      return t * t * (3 - 2 * t);
+    }
+    function _mod289(v) { return v - Math.floor(v * (1 / 289)) * 289; }
+    function _permute(v) { return _mod289(((v * 34) + 1) * v); }
+    function _snoise2(vx, vy) {
+      const C0 = 0.211324865405187, C1 = 0.366025403784439;
+      const C2 = -0.577350269189626, C3 = 0.024390243902439;
+      const s = (vx + vy) * C1;
+      let ix = Math.floor(vx + s);
+      let iy = Math.floor(vy + s);
+      const t = (ix + iy) * C0;
+      const x0x = vx - ix + t;
+      const x0y = vy - iy + t;
+      const i1x = x0x > x0y ? 1 : 0;
+      const i1y = x0x > x0y ? 0 : 1;
+      const x12_0 = x0x + C0 - i1x;
+      const x12_1 = x0y + C0 - i1y;
+      const x12_2 = x0x + C2;
+      const x12_3 = x0y + C2;
+      ix = _mod289(ix); iy = _mod289(iy);
+      let p0 = _permute(_permute(iy) + ix);
+      let p1 = _permute(_permute(iy + i1y) + ix + i1x);
+      let p2 = _permute(_permute(iy + 1) + ix + 1);
+      let m0 = Math.max(0.5 - (x0x * x0x + x0y * x0y), 0);
+      let m1 = Math.max(0.5 - (x12_0 * x12_0 + x12_1 * x12_1), 0);
+      let m2 = Math.max(0.5 - (x12_2 * x12_2 + x12_3 * x12_3), 0);
+      m0 = m0 * m0; m0 = m0 * m0;
+      m1 = m1 * m1; m1 = m1 * m1;
+      m2 = m2 * m2; m2 = m2 * m2;
+      const x_0 = 2 * (p0 * C3 - Math.floor(p0 * C3)) - 1;
+      const x_1 = 2 * (p1 * C3 - Math.floor(p1 * C3)) - 1;
+      const x_2 = 2 * (p2 * C3 - Math.floor(p2 * C3)) - 1;
+      const h_0 = Math.abs(x_0) - 0.5;
+      const h_1 = Math.abs(x_1) - 0.5;
+      const h_2 = Math.abs(x_2) - 0.5;
+      const a0_0 = x_0 - Math.floor(x_0 + 0.5);
+      const a0_1 = x_1 - Math.floor(x_1 + 0.5);
+      const a0_2 = x_2 - Math.floor(x_2 + 0.5);
+      m0 *= 1.79284291400159 - 0.85373472095314 * (a0_0 * a0_0 + h_0 * h_0);
+      m1 *= 1.79284291400159 - 0.85373472095314 * (a0_1 * a0_1 + h_1 * h_1);
+      m2 *= 1.79284291400159 - 0.85373472095314 * (a0_2 * a0_2 + h_2 * h_2);
+      const gx = a0_0 * x0x + h_0 * x0y;
+      const gy = a0_1 * x12_0 + h_1 * x12_1;
+      const gz = a0_2 * x12_2 + h_2 * x12_3;
+      return 130 * (m0 * gx + m1 * gy + m2 * gz);
+    }
+    function _fbm2(px, py) {
+      let a = 0.5, sum = 0, cx = px, cy = py;
+      for (let i = 0; i < 5; i++) {
+        sum += a * _snoise2(cx, cy);
+        cx *= 2.05; cy *= 2.05; a *= 0.5;
+      }
+      return sum;
+    }
+    function terrainLocalY(x, z) {
+      const ux = x * 0.10, uy = z * 0.12;
+      let h = _fbm2(ux, uy) * 1.6 + 0.25 * _fbm2(ux * 2.4, uy * 2.4);
+      h = h * 0.55 + 0.55 * Math.abs(_snoise2(ux * 0.55, uy * 0.55));
+      const vmask     = _smoothstep(2.0, 9.0, Math.abs(x));
+      const sideBoost = _smoothstep(4.0, 13.0, Math.abs(x)) * 0.95;
+      const frontBoost = _smoothstep(-12.0, 6.0, z) * 0.4;
+      const backDist  = _smoothstep(-4.0, -16.0, z);
+      const centerBand = 1.0 - _smoothstep(2.0, 9.0, Math.abs(x));
+      const backRidge = backDist * centerBand * 0.20;
+      const vmF = Math.max(vmask, backRidge);
+      const amp = 7.5;
+      h = h * vmF * (1.0 + frontBoost + sideBoost);
+      const dip = (1.0 - _smoothstep(0.0, 8.0, Math.abs(x))) * 2.5;
+      return h * amp - dip;
+    }
+
+    let overlay = null;
+    const pickedLines = [];
+
+    function ensureOverlay() {
+      if (overlay) return overlay;
+      overlay = document.createElement('div');
+      overlay.style.cssText = [
+        'position: fixed', 'top: 16px', 'right: 16px',
+        'z-index: 9999', 'pointer-events: none',
+        'background: rgba(11, 15, 26, 0.92)',
+        'border: 1px solid rgba(1, 165, 255, 0.5)',
+        'border-radius: 6px',
+        'padding: 12px 14px',
+        'font-family: "JetBrains Mono", ui-monospace, monospace',
+        'font-size: 12px', 'line-height: 1.5',
+        'color: #b0e5ff',
+        'white-space: pre',
+        'max-width: 90vw', 'overflow: auto',
+        'box-shadow: 0 4px 24px rgba(0,0,0,0.6)',
+      ].join(';');
+      document.body.appendChild(overlay);
+      return overlay;
+    }
+
+    function renderOverlay(statusLine) {
+      const o = ensureOverlay();
+      const header = `[hero-3d] click-to-pick — ${nextIdx}/${PEAK_ORDER.length}`;
+      o.textContent = [header, '', ...pickedLines, '', statusLine].join('\n');
+    }
+
+    function onClick(e) {
+      if (nextIdx >= PEAK_ORDER.length) {
+        renderOverlay('✓ All picked. Paste lines into PEAK_DEFS. Type "debug" to reset.');
+        return;
+      }
+      const r = canvas.getBoundingClientRect();
+      const ndcX = ((e.clientX - r.left) / r.width) * 2 - 1;
+      const ndcY = -(((e.clientY - r.top) / r.height) * 2 - 1);
+      _clickPt.set(ndcX, ndcY, 0.5).unproject(camera);
+      const dx = _clickPt.x - camera.position.x;
+      const dy = _clickPt.y - camera.position.y;
+      const dz = _clickPt.z - camera.position.z;
+      const dlen = Math.hypot(dx, dy, dz);
+      const dirx = dx / dlen, diry = dy / dlen, dirz = dz / dlen;
+      const STEP = 0.15, MAX_DIST = 80;
+      for (let t = 0.5; t < MAX_DIST; t += STEP) {
+        const rx = camera.position.x + dirx * t;
+        const ry = camera.position.y + diry * t;
+        const rz = camera.position.z + dirz * t;
+        if (Math.abs(rx) > 30 || rz < -32 || rz > 22) continue;
+        const lz = rz - terrain.position.z;
+        const ly = terrainLocalY(rx, lz);
+        const surfY = terrain.position.y + ly;
+        if (ry < surfY) {
+          const id = PEAK_ORDER[nextIdx];
+          const pad = ' '.repeat(Math.max(1, 16 - id.length));
+          pickedLines.push(
+            `    ['${id}',${pad}${rx.toFixed(2)}, ${surfY.toFixed(2)}, ${rz.toFixed(2)}],`
+          );
+          nextIdx++;
+          const status = nextIdx < PEAK_ORDER.length
+            ? `→ click peak for '${PEAK_ORDER[nextIdx]}'`
+            : '✓ All picked. Paste lines into PEAK_DEFS. Type "debug" to reset.';
+          renderOverlay(status);
+          return;
+        }
+      }
+      renderOverlay('⚠ No terrain hit. Click again on a mountain.');
+    }
+
+    function activate() {
+      pickedLines.length = 0;
+      nextIdx = 0;
+      if (active) {
+        renderOverlay(`→ click peak for '${PEAK_ORDER[0]}'`);
+        return;
+      }
+      active = true;
+      canvas.style.pointerEvents = 'auto';
+      canvas.style.cursor = 'crosshair';
+      canvas.addEventListener('click', onClick);
+      renderOverlay(`→ click peak for '${PEAK_ORDER[0]}'`);
+    }
+
+    window.addEventListener('keydown', (e) => {
+      // Ignore when typing into inputs
+      const tag = (e.target && e.target.tagName) || '';
+      if (tag === 'INPUT' || tag === 'TEXTAREA' || e.target?.isContentEditable) return;
+      const k = (e.key || '').toLowerCase();
+      if (k.length !== 1) return;
+      typed = (typed + k).slice(-SEQUENCE.length);
+      if (typed === SEQUENCE) activate();
+    });
+  }
   const annotationsEl = document.querySelector('.hero-3d-annotations');
   const projVec = new THREE.Vector3();
   let annotationsReady = false;
-  // Each label is anchored to its peak point: CSS positions the label
-  // (peak-x, peak-y) and shifts it just above the dot via transform.
+  // Each label hovers a fixed distance ABOVE its own peak. Both --peak-x
+  // and --peak-y are set per frame from the projected peak position;
+  // the dotted leader line has a fixed short length so the dot lands
+  // exactly on the peak.
+  const LABEL_HEIGHT_APPROX = 50;
+  const LEADER_LINE_H = 28;
   function projectPeakLabels() {
     const r = canvas.getBoundingClientRect();
     if (r.width === 0) return;
@@ -394,7 +501,11 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       const sx = (projVec.x * 0.5 + 0.5) * r.width;
       const sy = (-projVec.y * 0.5 + 0.5) * r.height;
       a.el.style.setProperty('--peak-x', sx + 'px');
-      a.el.style.setProperty('--peak-y', sy + 'px');
+      // Label top = peak screen Y minus (line + label height) so the
+      // leader-line dot lands precisely on the peak.
+      const topY = sy - LEADER_LINE_H - LABEL_HEIGHT_APPROX;
+      a.el.style.setProperty('--peak-y', topY + 'px');
+      a.el.style.setProperty('--peak-line-h', LEADER_LINE_H + 'px');
     }
     if (!annotationsReady && annotationsEl) {
       annotationsEl.classList.add('peaks-ready');
@@ -410,9 +521,9 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     composer.addPass(new RenderPass(scene, camera));
     const bloom = new UnrealBloomPass(
       new THREE.Vector2(canvas.clientWidth, canvas.clientHeight),
-      0.32, // strength — kept low so flows don't smear into streaks
+      0.09, // strength — halved, only faint glow around peaks
       0.40, // radius
-      0.85  // threshold
+      0.92  // threshold — only the brightest highlights bloom
     );
     composer.addPass(bloom);
     composer.addPass(new OutputPass());
@@ -454,13 +565,15 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const start = performance.now();
 
   function frame() {
-    smoothed.x += (target.x - smoothed.x) * 0.04;
-    smoothed.y += (target.y - smoothed.y) * 0.04;
+    smoothed.x += (target.x - smoothed.x) * 0.010;
+    smoothed.y += (target.y - smoothed.y) * 0.010;
 
-    // very subtle camera parallax — keep the valley framing stable
-    camera.position.x = smoothed.x * 0.35;
-    camera.position.y = 5.0 + smoothed.y * -0.20;
-    camera.lookAt(smoothed.x * 0.05, -0.6 + smoothed.y * 0.05, -4.0);
+    // Camera arc — position swings further than the lookAt point so
+    // the parallax reads as rotation around the valley rather than
+    // a flat slide.
+    camera.position.x = smoothed.x * 0.85;
+    camera.position.y = 5.0 + smoothed.y * -0.50;
+    camera.lookAt(smoothed.x * 0.08, -0.6 + smoothed.y * 0.08, -4.0);
 
     if (composer) composer.render();
     else renderer.render(scene, camera);

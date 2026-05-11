@@ -526,19 +526,7 @@ img { max-width: 100%; height: auto; display: block; }
   mask-image: radial-gradient(ellipse 60% 55% at 50% 55%, transparent 0%, black 80%);
 }
 
-/* Flow canvas — full background (2D fallback when WebGL unavailable) */
-.hero-flow {
-  position: absolute;
-  inset: 0;
-}
-#flow-canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* 3D hero scene — sits above flow-canvas, below hero-content.
-   On successful WebGL init, hero-3d.mjs sets #flow-canvas { display:none }. */
+/* 3D hero scene — sits inside .hero-bg, below hero-content. */
 .hero-3d {
   position: absolute;
   inset: 0;
@@ -563,54 +551,49 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
 .peak {
-  --peak-line-h: 22px;
-  --peak-label-w: 140px;
+  --peak-label-w: 132px;
+  --peak-line-h: 28px;       /* JS sets fixed short leader so the dot lands on the peak */
   position: absolute;
-  /* Label anchored just above its projected peak point; the dot at
-     the bottom of the line sits exactly on (--peak-x, --peak-y). */
+  /* Each label hovers directly above its own peak — JS sets --peak-x
+     and --peak-y per frame from the projected peak position so the
+     leader dot kisses the peak from below. */
+  top: var(--peak-y, 96px);
   left: var(--peak-x, 50%);
-  top:  var(--peak-y, 50%);
   width: var(--peak-label-w);
-  transform: translate(-50%, calc(-100% - var(--peak-line-h) - 4px));
-  color: rgba(220, 232, 246, 0.92);
-  font-size: 10px;
-  line-height: 1.4;
+  transform: translateX(-50%);
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.45;
   letter-spacing: 0.04em;
-  text-align: left;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95);
+  text-align: center;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 4px rgba(11, 15, 26, 0.85);
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 .hero-3d-annotations.peaks-ready .peak { opacity: 1; }
 
-.peak-icon {
-  display: block;
-  width: 22px;
-  height: 22px;
-  color: var(--brand-primary);
-  margin-bottom: 6px;
-  opacity: 0.85;
-  filter: drop-shadow(0 0 3px rgba(1,165,255,0.45));
-}
 .peak-eyebrow {
   display: block;
   color: var(--brand-primary);
   font-weight: 700;
   font-size: 10px;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.20em;
   text-transform: uppercase;
   margin-bottom: 3px;
   white-space: nowrap;
 }
 .peak-body {
   margin: 0;
-  color: rgba(220, 232, 246, 0.74);
-  font-size: 10px;
+  color: var(--text-primary);
+  font-size: 11px;
   font-weight: 400;
+  opacity: 0.82;
 }
 
-/* Short solid (not dotted) tick from the dot up to the label — feels
-   like a map annotation, not a UI tooltip. */
+/* Thin dotted leader line — vertical column from label bottom down to
+   the peak point. Length matches --peak-line-h on .peak. */
 .peak-line {
   display: block;
   position: absolute;
@@ -618,23 +601,31 @@ img { max-width: 100%; height: auto; display: block; }
   left: 50%;
   transform: translateX(-50%);
   width: 1px;
-  height: var(--peak-line-h, 20px);
-  background: linear-gradient(to bottom,
-    rgba(160, 210, 255, 0.0) 0%,
-    rgba(160, 210, 255, 0.45) 100%);
+  height: var(--peak-line-h);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(1, 165, 255, 0.55) 0%,
+    rgba(1, 165, 255, 0.55) 50%,
+    transparent 50%,
+    transparent 100%);
+  background-size: 1px 5px;
+  background-repeat: repeat-y;
 }
-/* Small dot at the peak point — CSS only, no 3D mesh. Subtle glow. */
+/* Small glowing dot at the connection point (= the peak anchor in 3D
+   projected to screen). CSS-only; not a 3D mesh, so no orb/blob. */
 .peak-line::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -2px;
-  width: 4px;
-  height: 4px;
+  bottom: -3px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: rgba(190, 230, 255, 0.95);
+  background: rgba(180, 230, 255, 0.95);
   transform: translateX(-50%);
-  box-shadow: 0 0 4px rgba(1, 165, 255, 0.55);
+  box-shadow:
+    0 0 4px rgba(1, 165, 255, 0.9),
+    0 0 10px rgba(1, 165, 255, 0.55);
 }
 
 @media (max-width: 1280px) {
@@ -666,20 +657,19 @@ img { max-width: 100%; height: auto; display: block; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
-  padding: 22px 32px;
-  margin: 0 auto 32px;
+  padding: 32px 24px 48px;
+  margin: 0 auto;
   max-width: 1200px;
-  /* Single pill-shaped container around all four features. */
-  background: rgba(13, 19, 33, 0.55);
-  border: 1px solid rgba(96, 132, 188, 0.18);
-  border-radius: 18px;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 .hero-feature {
   display: flex;
   align-items: flex-start;
   gap: 14px;
+  padding: 14px 16px;
+  background: rgba(11, 15, 26, 0.55);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 .hero-feature-icon {
   flex: 0 0 auto;
@@ -748,60 +738,23 @@ img { max-width: 100%; height: auto; display: block; }
   background: radial-gradient(ellipse 85% 75% at 50% 50%, transparent 35%, var(--bg-main) 100%);
 }
 
-/* Centre valley focal point. Tight bright inner core (where flows
-   converge) with a very gentle outer falloff. Kept small + soft so
-   it never blows out — just gives the eye a single anchor. */
+/* Control-zone glow — subtle radial pool of brand-cyan in the centre
+   valley, signalling the convergence point where input flows arrive
+   and output flows depart. NOT a visible UI box — just energy. */
 .hero-control-glow {
   position: absolute;
   left: 50%;
-  top: 66%;
-  width: 380px;
-  height: 170px;
+  top: 35%;
+  width: 800px;
+  height: 400px;
   transform: translate(-50%, -50%);
   pointer-events: none;
   background: radial-gradient(ellipse at center,
-    rgba(180, 225, 255, 0.22) 0%,
-    rgba(110, 195, 255, 0.10) 22%,
-    rgba(1, 165, 255, 0.04) 55%,
-    transparent 82%);
-  filter: blur(36px);
+    rgba(1, 165, 255, 0.18) 0%,
+    rgba(1, 165, 255, 0.08) 40%,
+    transparent 75%);
+  filter: blur(28px);
   z-index: 0;
-}
-
-/* Atmospheric vertical wash for the upper area — slightly brighter
-   navy near the horizon line, fading to deep navy under the header.
-   Adds depth without adding light. */
-.hero-bg-grad {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(to bottom,
-    rgba(7, 10, 18, 0.85) 0%,
-    rgba(7, 10, 18, 0.40) 28%,
-    rgba(8, 22, 38, 0.0) 60%,
-    rgba(7, 10, 18, 0.0) 100%);
-  z-index: 0;
-}
-
-/* Soft dark scrim behind the hero copy so the title and CTAs stay
-   crisp regardless of what the wireframe is doing behind them. */
-.hero-text-scrim {
-  position: absolute;
-  left: 50%;
-  top: 46%;
-  width: 720px;
-  height: 280px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  background: radial-gradient(ellipse at center,
-    rgba(11, 15, 26, 0.72) 0%,
-    rgba(11, 15, 26, 0.40) 45%,
-    transparent 78%);
-  filter: blur(20px);
-  z-index: 0;
-}
-@media (max-width: 768px) {
-  .hero-text-scrim { display: none; }
 }
 @media (max-width: 768px) {
   .hero-control-glow { display: none; }
@@ -809,12 +762,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 
 .hero-horizon {
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 100px;
-  background: linear-gradient(to top, var(--bg-secondary) 0%, transparent 100%);
-  z-index: 1;
-  pointer-events: none;
+  display: none;
 }
 
 /* ---- Da Vinci blueprint cloud ---- */
@@ -885,6 +833,7 @@ img { max-width: 100%; height: auto; display: block; }
   max-width: 700px;
   text-align: center;
   position: relative;
+  transform: translateY(-15vh);
 }
 .hero-subtitle {
   margin-left: auto;
