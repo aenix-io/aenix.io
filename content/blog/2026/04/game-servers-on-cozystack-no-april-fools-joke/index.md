@@ -8,6 +8,39 @@ topics: ["Open Source", "Kubernetes", "CNCF", "Cloud", "Game Servers", "Cozystac
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*54n_wsW7R9MGslexi-xaLg.png"
 source_url: "https://blog.aenix.io/game-servers-on-cozystack-no-april-fools-joke-798704b32998"
+quiz:
+  title: "Test yourself: Cozystack for game servers"
+  questions:
+    - q: "How many managed services does Cozystack provide out of the box, according to the article?"
+      options:
+        - { text: "About 5", correct: false }
+        - { text: "More than 20 — databases, queues, caching, S3, VMs, K8s clusters, networking, load balancers", correct: true }
+        - { text: "Hundreds", correct: false }
+      explanation: "20+ managed services: databases (PostgreSQL, MariaDB, MongoDB), message queues (Kafka, RabbitMQ), caching (Redis), S3 storage, virtual machines, Kubernetes clusters, networking, load balancers. Everything runs on hardware with no extra virtualization layers."
+    - q: "Why does the article argue game servers are a particularly demanding workload?"
+      options:
+        - { text: "They require GPU at all times", correct: false }
+        - { text: "Latency must be minimal, load fluctuates unpredictably, and servers must be reliably isolated from each other", correct: true }
+        - { text: "They need closed-source patches", correct: false }
+      explanation: "Latency must be minimal; load fluctuates unpredictably; servers must be reliably isolated. The \"noisy neighbour\" virtualisation overhead invisible in business apps becomes immediately noticeable in games."
+    - q: "After the Cozystack v1.0 release, what mechanism powers external application connections?"
+      options:
+        - { text: "Bash scripts", correct: false }
+        - { text: "Package + PackageSource resources managed by cozystack-operator (apt-like, but for Kubernetes)", correct: true }
+        - { text: "A direct OCI-registry mirror", correct: false }
+      explanation: "After v1.0, the platform moved to package-based architecture with Package and PackageSource resources managed by cozystack-operator. Works like apt for Debian, but for Kubernetes — applications are packaged as Helm charts, published as OCI artifacts, described via ApplicationDefinition CRDs."
+    - q: "What is \"cozylex\"?"
+      options:
+        - { text: "A networking plugin", correct: false }
+        - { text: "A repository implementing managed Minecraft server (PaperMC) for Cozystack via MinecraftServer + MinecraftPlugin CRDs", correct: true }
+        - { text: "A storage backend", correct: false }
+      explanation: "cozylex is the first external-apps repository (built by Aleksei Sviridkin / @lexfrei) that provides managed Minecraft on Cozystack. MinecraftServer CRD = PaperMC servers with auto-updates/backups/limits; MinecraftPlugin CRD = installs plugins from Hangar with auto-updates."
+    - q: "What planned product line will the game-servers work become?"
+      options:
+        - { text: "Cozystack Lite", correct: false }
+        - { text: "Game Server Edition — with planned support for Counter-Strike, Rust, FiveM, Factorio, etc.", correct: true }
+        - { text: "PlayPack", correct: false }
+      explanation: "The team plans to expand the approach into Game Server Edition, accept Minecraft as an official example of pluggable application, and add Counter-Strike, Rust, FiveM, Factorio, and others."
 ---
 
 Hello, world! We are the team behind[Cozystack](https://cozystack.io), an open-source platform for building clouds on your own hardware. We want to explain why we decided to target the game server space and what came of it.

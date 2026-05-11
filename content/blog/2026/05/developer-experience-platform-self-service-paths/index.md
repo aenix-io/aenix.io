@@ -7,6 +7,39 @@ type: "article"
 topics: ["Backstage", "Kubernetes"]
 language: "en"
 companion_landing: "/solutions/developer-self-service/"
+quiz:
+  title: "Test yourself: self-service paths that get used"
+  questions:
+    - q: "According to the article, what is the metric that determines whether self-service paths actually pay off?"
+      options:
+        - { text: "Number of paths built", correct: false }
+        - { text: "Adoption — does product team actually use them, or do they keep filing tickets?", correct: true }
+        - { text: "Number of features per path", correct: false }
+      explanation: "A platform that's technically self-service but operationally clunky doesn't get adopted; teams keep filing tickets because tickets feel reliable. Adoption is the metric. Architecture decisions cascade from there."
+    - q: "How many characteristics of golden paths \"that work\" does the article enumerate?"
+      options:
+        - { text: "Three", correct: false }
+        - { text: "Five", correct: true }
+        - { text: "Eight", correct: false }
+      explanation: "Five: faster than the ticket alternative, reliable enough to trust, documented in 1 page or less, owned by a real team, has escape hatches."
+    - q: "Which three of the top-10 self-service paths cover ~60% of typical product-team request volume?"
+      options:
+        - { text: "Secrets, identity, observability", correct: false }
+        - { text: "Environment provisioning + application deployment + database provisioning", correct: true }
+        - { text: "Backup/DR, CI/CD, network access", correct: false }
+      explanation: "The first three of the top-10 cover ~60% of typical request volume — environment provisioning (dev/staging/preview/prod), application deployment, database provisioning. Build them first."
+    - q: "What does the article identify as Pitfall 1 — the most common failure?"
+      options:
+        - { text: "Buying Backstage before underlying capabilities are self-service (\"Backstage as the platform\")", correct: true }
+        - { text: "Using Argo CD instead of Flux", correct: false }
+        - { text: "Hiring too many SREs", correct: false }
+      explanation: "Pitfall 1: Backstage as the platform. Buying Backstage before underlying capabilities are self-service produces a beautiful catalog over the same operational mess. Adoption stalls."
+    - q: "What does the article say golden paths must serve (% of cases) and what about the rest?"
+      options:
+        - { text: "100% — no exceptions allowed", correct: false }
+        - { text: "80% of cases via golden paths; the remaining 20% need escape hatches with real platform-team conversation", correct: true }
+        - { text: "50% — half automated, half ticketed", correct: false }
+      explanation: "Pitfall 2 (too rigid): golden paths must serve 80% of cases; the remaining 20% need escape hatches. Without them, teams that have specialised needs route around the platform entirely."
 ---
 
 **This is the long-form companion to our [developer self-service solutions page](/solutions/developer-self-service). It walks through what self-service paths actually look like in production, how to design them so product teams adopt them, and the operational practices that keep them maintained.**

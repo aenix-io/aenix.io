@@ -7,6 +7,39 @@ type: "article"
 topics: ["DORA", "NIS2", "VMware", "Cozystack", "Cilium", "Talos"]
 language: "en"
 companion_landing: "/services/build-private-cloud/"
+quiz:
+  title: "Test yourself: 90-day private cloud playbook"
+  questions:
+    - q: "How long does the discovery phase last in the playbook?"
+      options:
+        - { text: "One day", correct: false }
+        - { text: "One week — output is a one-page architecture brief, no code yet", correct: true }
+        - { text: "One month", correct: false }
+      explanation: "Day-0 discovery is one week. Output: a one-page architecture brief covering trigger, workload portfolio, capacity, hardware constraints, and compliance scope. No code yet."
+    - q: "What is the primary deliverable at end of day-30?"
+      options:
+        - { text: "Production-ready multi-tenant platform with all customer workloads migrated", correct: false }
+        - { text: "Working single-tenant single-cluster platform with basic observability — not yet production-ready for customers", correct: true }
+        - { text: "Just the hardware racked", correct: false }
+      explanation: "End of day-30: working platform — single-tenant, single-cluster, basic observability. NOT production-ready for customers yet. Multi-tenancy and operations come in days 31-60."
+    - q: "What gets explicitly skipped in the 90-day scope?"
+      options:
+        - { text: "Backup and DR with Velero", correct: false }
+        - { text: "Multi-region operation, GPU workload optimisation, comprehensive compliance certification, polished UI, legacy decommission", correct: true }
+        - { text: "Identity integration", correct: false }
+      explanation: "Honest acknowledgments of what 90 days does NOT cover: polished customer-facing portal, multi-region/multi-DC operation, GPU/AI workload optimization, comprehensive compliance certification (architecture is aligned, but audit is separate), legacy decommissioning (months 4-12 in cohorts)."
+    - q: "What is the typical duration of the foundation phase?"
+      options:
+        - { text: "Days 1-30 — hardware → OS+platform → storage+network → identity+observability", correct: true }
+        - { text: "Days 31-60", correct: false }
+        - { text: "Days 61-90", correct: false }
+      explanation: "Foundation phase = days 1-30: week 1 hardware, week 2 OS+platform, week 3 storage+network, week 4 identity+observability. Multi-tenancy + operations is days 31-60; workload onboarding + golden paths is days 61-90."
+    - q: "What infrastructure is set up in week 4?"
+      options:
+        - { text: "KubeVirt VMs only", correct: false }
+        - { text: "Identity (Keycloak or chosen IdP) + observability (VictoriaMetrics + VictoriaLogs) + initial dashboards/alerts + audit logging", correct: true }
+        - { text: "Tenant CRD multi-tenancy", correct: false }
+      explanation: "Week 4 closes the foundation: Keycloak (or chosen IdP) integrated; VictoriaMetrics + VictoriaLogs deployed; initial dashboards and alerts; audit logging configured. Multi-tenancy comes only in week 5-6."
 ---
 
 **This is the long-form companion to our [build private cloud services page](/services/build-private-cloud). It walks through what it actually takes to build a private cloud in 90 days — what to build first, what to skip, where most teams stumble. Written for platform leads, infrastructure architects, and engineering managers about to take this on.**

@@ -7,6 +7,40 @@ type: "article"
 topics: ["VMware", "OpenStack", "OpenShift", "Kubernetes", "Cozystack", "Sovereignty"]
 language: "en"
 companion_landing: "/alternatives/vmware-alternatives/"
+quiz:
+  title: "Test yourself: best VMware alternatives in 2026"
+  questions:
+    - q: "How many decision questions does the article propose to ask BEFORE evaluating products?"
+      options:
+        - { text: "Two", correct: false }
+        - { text: "Five", correct: true }
+        - { text: "Ten", correct: false }
+      explanation: "Five questions: primary workload mix, multi-tenancy needs, scale, existing vendor relationships, trigger (cost/sovereignty/AI/etc.). Together they narrow the realistic shortlist to 1-2 candidates."
+    - q: "Which VMware alternative is named \"best\" for SMB / single-tenant / labs?"
+      options:
+        - { text: "OpenStack", correct: false }
+        - { text: "OpenShift Virtualization", correct: false }
+        - { text: "Proxmox VE", correct: true }
+        - { text: "Cozystack", correct: false }
+      explanation: "Proxmox VE — open source, large community, well-suited to single-tenant deployments under ~50 hosts. Cozystack is the runner-up but is overkill for the SMB single-tenant case."
+    - q: "For ROBO / edge specifically, which alternative is named best?"
+      options:
+        - { text: "Scale Computing HC3", correct: true }
+        - { text: "Cozystack", correct: false }
+        - { text: "Azure Stack HCI", correct: false }
+      explanation: "Scale Computing HC3 — appliance designed for ROBO/edge, operationally simple, designed for environments without dedicated infrastructure team. Cozystack is the runner-up only when multi-site unified operations matter."
+    - q: "Which architectural mismatch with VMware does Cozystack require redesign on (rather than 1:1 mapping)?"
+      options:
+        - { text: "CPU instruction set", correct: false }
+        - { text: "Networking — Cilium (eBPF) is fundamentally different from NSX", correct: true }
+        - { text: "BIOS firmware", correct: false }
+      explanation: "Two areas need redesign rather than 1:1 mapping when leaving VMware for Cozystack: networking (Cilium ≠ NSX — different model) and multi-tenancy (Tenant CRD ≠ vCloud Director — conceptually different). Both are decided in architecture review before migration commits."
+    - q: "For pure container workloads (no VMs), what does the article recommend?"
+      options:
+        - { text: "Cozystack", correct: false }
+        - { text: "Vanilla Kubernetes — without VMs the KubeVirt layer is unnecessary overhead", correct: true }
+        - { text: "Proxmox", correct: false }
+      explanation: "Without VM workloads, Cozystack's KubeVirt layer is unnecessary; vanilla Kubernetes is the smaller, simpler platform. Cozystack is the runner-up only if multi-tenant Kubernetes isolation matters."
 ---
 
 **This is the long-form companion to our [VMware alternatives listicle](/alternatives/vmware-alternatives). It walks through the best VMware alternatives in 2026 in depth — what each is, who they fit, the trade-offs, and a structured decision framework for picking one.**

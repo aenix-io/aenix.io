@@ -7,6 +7,39 @@ type: "article"
 topics: ["OpenStack", "OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Talos"]
 language: "en"
 companion_landing: "/products/cozystack/"
+quiz:
+  title: "Test yourself: what Cozystack is"
+  questions:
+    - q: "When was Cozystack open-sourced, and why?"
+      options:
+        - { text: "2020 — to support a Series A pitch", correct: false }
+        - { text: "2023 — because the architectural pattern (built originally for service-provider customers) proved generally useful", correct: true }
+        - { text: "2026 — after CNCF acceptance", correct: false }
+      explanation: "Cozystack started as an internal platform for service-provider customers. It was open-sourced in 2023 because the architectural pattern proved generally useful beyond Aenix's own customer engagements."
+    - q: "Why does Cozystack use Talos Linux as its host OS by default?"
+      options:
+        - { text: "Talos is the only Linux that supports KubeVirt", correct: false }
+        - { text: "Talos is minimal and immutable — no SSH, configuration via API, no shell — operationally simpler and more secure than general-purpose Linux for Kubernetes hosts", correct: true }
+        - { text: "Talos is the cheapest commercial license", correct: false }
+      explanation: "Talos: no SSH, configuration via API, no package manager, no shell. Whole classes of incident (drift, manual hotfixes, snowflake nodes) disappear. Patching is boring."
+    - q: "Why does the article emphasise that Cozystack and Aenix are intentionally separate?"
+      options:
+        - { text: "Marketing reasons", correct: false }
+        - { text: "Customer choice (deploy without Aenix), project longevity (CNCF-governed survives Aenix decisions), Aenix focus (sells engagement, not licenses)", correct: true }
+        - { text: "CNCF requires it", correct: false }
+      explanation: "Three reasons: (1) customers can deploy Cozystack independently of Aenix, (2) project longevity — Cozystack survives Aenix-business decisions because CNCF-governed and Apache-licensed, (3) Aenix focus is engagement (assessment, build, support) rather than licenses."
+    - q: "How does the article characterise OpenStack vs Cozystack architecturally?"
+      options:
+        - { text: "Both are 2010s-era; choose by license", correct: false }
+        - { text: "OpenStack is 2010s-era (50–100+ services, distinct teams per component); Cozystack is 2020s-era Kubernetes-native (5–15 components as Kubernetes operators, single platform team)", correct: true }
+        - { text: "Cozystack is closed source; OpenStack is open source", correct: false }
+      explanation: "OpenStack: 2010s architecture, comprehensive but operationally heavy, 50–100+ services. Cozystack: 2020s-era Kubernetes-native, single platform abstraction, 5–15 components running as Kubernetes operators with single platform team."
+    - q: "In the architectural choices, why is Cilium picked over NSX-equivalent vendor offerings?"
+      options:
+        - { text: "Cilium is faster than every alternative", correct: false }
+        - { text: "eBPF-based with native L4/L7 policies, observability, service mesh — replaces NSX functionality without licensing", correct: true }
+        - { text: "Cozystack is forked from Cilium", correct: false }
+      explanation: "Choice 4: Cilium gives eBPF-based networking with native L4/L7 policies, observability, and service-mesh capabilities — replacing what NSX did in VMware deployments without the NSX licensing."
 ---
 
 **This is the long-form companion to our [Cozystack product page](/products/cozystack/). It walks through what Cozystack is, the architecture, how it differs from OpenStack and OpenShift, and where it fits in the 2026 cloud platform landscape.**
