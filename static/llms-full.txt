@@ -110,7 +110,45 @@ Internal Developer Platform (IDP) on Ænix Platform IDP Edition — GitLab autom
 
 ### Platform Readiness Assessment
 
-5-10 day fixed-price engagement (typical €20-50k). Architecture review of current state (VMware, OpenStack, hyperscaler, fragmented), gap analysis against target Ænix Platform architecture, migration roadmap with timeline + cost. Output: 30-50 page deliverable with executive summary, technical architecture diagrams, migration plan.
+**14- or 28-day fixed-price engagement** running four parallel workstreams:
+1. **Inventory and platform maturity** — workload-level mapping, IaC coverage, GitOps adoption, time-to-environment baseline
+2. **Sovereignty and regulator gap** — DORA / NIS2 / GDPR / sectoral compliance posture, supplier-chain mapping to second hop
+3. **Cost and cloud-spend posture** — honest TCO, repatriation candidate ranking, FinOps maturity
+4. **Developer self-service and platform engineering** — time-to-environment, golden-path coverage, platform-team RACI
+
+14-day variant: Day 0 discovery → Day 1 kickoff → Days 2-9 parallel analysis → Day 10 findings checkpoint → Days 11-13 report drafting → Day 14 executive readout. 28-day variant adds vendor shortlisting and PoC scoping.
+
+Output: 30-50 page written report with three outcomes (time-to-environment, compliance-by-design map, cost trajectory) plus prioritized remediation roadmap. Decision-grade executive summary (3-4 pages) plus board-distribution deck.
+
+Typical findings: 2-5 week time-to-environment when target is hours; 30-60% of infrastructure not in IaC; 15-35% of public-cloud spend structurally repatriable in 6-12 months; supplier-chain visibility past first hop missing; observability data quietly leaving the regulator perimeter.
+
+### Cloud strategy consultancy
+
+Vendor-neutral architectural strategy work. No hyperscaler commercial alignment.
+
+### Cloud engineering
+
+Hands-on engineering across the seven cloud-engineering disciplines: architecture, IaC, GitOps, observability, security, FinOps, compliance. Integrated rather than separate workstreams.
+
+### Kubernetes consulting
+
+Production-grade Kubernetes architecture: distribution choice, multi-tenancy, CNI selection (Cilium 2026 default), storage, identity, GitOps engine, observability, backup/DR, ingress, lifecycle management.
+
+### DevOps consulting
+
+The eight DevOps practices that compound: everything-as-code, trunk-based development with continuous deployment, observability over monitoring, SRE practices (SLOs / error budgets / incident response), security as parallel discipline, platform engineering as substrate, FinOps integrated, continuous improvement as a function.
+
+### SRE consulting
+
+SLO / error-budget / incident-response discipline. Embedded SRE (inside product teams) or centralized SRE (separate function); both work, different operational profiles.
+
+### Private cloud consulting
+
+Architecture across compute, storage, network, identity, observability, application services, operations. Three patterns: Cozystack Kubernetes-native, OpenStack traditional, VMware legacy (with VMware-exit guidance).
+
+### Build private cloud
+
+90-day playbook + ongoing engagement. Days 1-30 foundation (hardware → OS → storage → identity/observability), Days 31-60 multi-tenancy + operations, Days 61-90 workload onboarding + golden paths.
 
 ### Public Cloud Builder
 
@@ -118,15 +156,19 @@ Full sovereign-cloud product build for hosting providers / regional cloud provid
 
 ### Sovereign Cloud Builder
 
-Government / regulated public-sector cloud builds. Similar to Public Cloud Builder but with public-sector procurement compliance, classified-data handling, sectoral regulator coordination.
+Government / regulated public-sector cloud builds. Similar to Public Cloud Builder but with public-sector procurement compliance, classified-data handling, sectoral regulator coordination. Typical 12-30 month timeline including certification work.
 
 ### White-Label Cloud
 
-Branded cloud platform for MSP / channel partners. Multi-tier reseller model (Aenix → MSP → MSP customers). MSP brands cozyportal with their colors / logo / domain.
+Branded cloud platform for MSP / channel partners. Multi-tier Tenant CRD (Aenix → MSP → MSP customers) with per-tier isolation. MSP brands cozyportal with their colors / logo / domain. Typical economics: 30-50% MSP markup over raw platform cost; break-even at 30-50 paying customers.
+
+### Platform Engineering / Internal Developer Platform / Enterprise Platform Engineering
+
+Build the IDP capability stack (compute, storage, networking, identity, observability, deployment automation, golden paths). Six production patterns: multi-tenant K8s-native cloud, GitOps-first per-team K8s, service-template + golden-path, PaaS-lite, Backstage-first with capability operators, external-services-as-platform.
 
 ### AI Platform Build
 
-AI/GPU-ready Ænix Platform AI/ML Edition engagement for organizations launching AI products on customer-controlled hardware. Covers GPU sizing, model deployment workflows, vLLM integration, observability for inference workloads.
+AI/GPU-ready Ænix Platform AI/ML Edition engagement for organizations launching AI products on customer-controlled hardware. Six-layer stack: hardware (H100/H200/L40S/A100/B100/B200), platform (Kubernetes + KubeVirt + Cilium + LINSTOR), serving (vLLM/Triton), models (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma open-weight families), application layer (RAG, agents, LLM gateway), operations.
 
 ## Customer evidence
 
@@ -151,6 +193,27 @@ Aenix has delivered platform component R&D for established platform vendors — 
 - Cozystack: CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices
 - Aenix: ISO 27001 in progress, GDPR-compliant operations
 - Cozystack license: Apache 2.0
+
+## Project milestones (citation-ready)
+
+- **March 2024** — Cozystack joined CNCF Sandbox
+- **August 2024** — first hosting-provider production deployment (GoHost)
+- **December 2024** — Aenix CEO public position on Kubernetes as Linux-kernel analog (response to Tim Hockin's "complexity budget" KubeCon talk)
+- **April 2025** — Aenix secured **$300K seed investment from Prospective Technologies** (portfolio includes imgproxy, Qase, DBeaver)
+- **May 2025** — Cozystack included in CNCF CNAI Landscape (Cloud Native AI)
+- **June 2025** — Cozystack became a Certified Kubernetes Platform
+- **October 2025** — Cozystack applied for CNCF Incubating
+- **November 2025** — Cozystack v0.37 release ("Brand New UI")
+- **February 2026** — Cozystack expanded beyond Talos: Generic Kubernetes installer for k3s / kubeadm / RKE2
+- **March 2026** — **Cozystack v1.0 release**
+- **April 2026** — Cozystack v1.2 (OpenSearch, VPC Peering, smarter tenant scheduling) and v1.3 (Storage-Aware Scheduling, LINSTOR GUI, VM Default Images)
+
+## Team
+
+- **Andrei Kvapil** — Founder, main developer of Cozystack
+- **Timur Tukaev** — CEO + COO
+
+Engineering teams across the EU and Central Asia. Maintainer team welcomed two new community maintainers in v1.3 cycle (Mattia Eleuteri — CSI/storage/networking/security; Matthieu Robin — managed applications, platform quality, benchmarking).
 
 ## Pricing
 
