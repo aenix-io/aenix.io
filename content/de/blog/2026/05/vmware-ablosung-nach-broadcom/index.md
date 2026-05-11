@@ -7,6 +7,40 @@ type: "article"
 topics: ["DORA", "NIS2", "VMware", "Kubernetes", "Cozystack", "KubeVirt"]
 language: "de"
 companion_landing: "/de/alternativen/vmware-alternative/"
+quiz:
+  title: "Wissens-Check: VMware-Ablösung nach Broadcom"
+  questions:
+    - q: "Welche Preiserhöhungen bei VCF-Verlängerungen werden im Artikel beobachtet?"
+      options:
+        - { text: "10–25 % über bisherige Ausgaben", correct: false }
+        - { text: "2–5× über bisherige Ausgaben", correct: true }
+        - { text: "6–10× über bisherige Ausgaben", correct: false }
+      explanation: "Verlängerungsangebote sind mit 2–5× höher als zuvor gekommen, nachdem Broadcom die ewige Lizenzierung durch VCF-Subscription-Bündel ersetzt hat."
+    - q: "Welche Cozystack-Komponente ist im Mapping das vCenter-Äquivalent?"
+      options:
+        - { text: "KubeVirt auf Talos", correct: false }
+        - { text: "Cozystack Control Plane (Kubernetes API + cozyportal)", correct: true }
+        - { text: "Cilium", correct: false }
+        - { text: "LINSTOR", correct: false }
+      explanation: "Im Architektur-Mapping ist die Cozystack Control Plane (Kubernetes API + cozyportal) das vCenter-Äquivalent. KubeVirt ersetzt vSphere/ESXi; Cilium ersetzt NSX; LINSTOR ersetzt vSAN."
+    - q: "Welche zwei Bereiche erfordern Redesign anstelle eines 1:1-Mappings beim VMware-→-Cozystack-Wechsel?"
+      options:
+        - { text: "Storage und CPU-Architektur", correct: false }
+        - { text: "Networking (Cilium ≠ NSX) und Multi-Mandanten-Modell (Tenant CRD ≠ vCloud Director)", correct: true }
+        - { text: "Backup und Power-Management", correct: false }
+      explanation: "Networking ist grundsätzlich anders (Cilium eBPF vs NSX) und das Multi-Mandanten-Modell ist konzeptionell anders (Kubernetes-natives Tenant CRD vs vCD Organisationen). Beides wird im Architektur-Review vor Migration entschieden."
+    - q: "In welcher Reihenfolge läuft eine echte VMware-→-Cozystack-Migration?"
+      options:
+        - { text: "Sofortige Decommission, dann Migration", correct: false }
+        - { text: "Discovery → parallele Cozystack-Bereitstellung → VM-Image-Migration → Netzwerk/Storage-Cutover → Validierung/DR-Cutover → VMware-Decommission", correct: true }
+        - { text: "Big-Bang-Cutover an einem Wochenende", correct: false }
+      explanation: "Sechsstufige Migration mit Cozystack parallel zur bestehenden VMware-Umgebung, kein Big-Bang. Workloads migrieren in Kohorten; jede wird parallel verifiziert; VMware wird erst nach Cohort-Abschluss decommissioniert."
+    - q: "Wie lange dauert eine Migration für kleinere Bestände (unter 200 VMs, einfaches Networking)?"
+      options:
+        - { text: "1–2 Wochen", correct: false }
+        - { text: "6–12 Wochen von Discovery bis Decommission", correct: true }
+        - { text: "2–3 Jahre", correct: false }
+      explanation: "Kleinere Bestände: 6–12 Wochen. Größere und komplexere Bestände (vCD, NSX-lastig, regulierte Workloads): 3–9 Monate, in Kohorten. Der Treiber sind Regressionstests und Parallel-Run-Fenster, nicht reine Migrationsgeschwindigkeit."
 ---
 
 **Dies ist die ausführliche Begleitung zu unserer [VMware-Alternative-Landing-Page](/de/alternativen/vmware-alternative). Sie führt durch den Wandel unter Broadcom, was eine glaubwürdige VMware-Ablösung in der Produktion tatsächlich bedeutet, und wie eine echte Migration End-to-End abläuft.**

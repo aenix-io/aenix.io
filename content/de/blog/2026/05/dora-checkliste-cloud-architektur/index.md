@@ -7,6 +7,39 @@ type: "article"
 topics: ["DORA", "Compliance", "Backup & DR", "Observability"]
 language: "de"
 companion_landing: "/de/loesungen/dora-compliance/"
+quiz:
+  title: "Wissens-Check: DORA-Checkliste für Cloud-Architektur"
+  questions:
+    - q: "Welcher DORA-Artikel verlangt einen dokumentierten Exit-Plan für kritische Funktionen?"
+      options:
+        - { text: "Artikel 21", correct: false }
+        - { text: "Artikel 28(8)", correct: true }
+        - { text: "Artikel 30", correct: false }
+      explanation: "DORA Artikel 28(8) verlangt für kritische Funktionen einen dokumentierten Exit-Plan UND einen tatsächlichen Test innerhalb der letzten 24 Monate. Ein Plan ohne Test reicht nicht — die Time-to-Exit ist sonst fiktiv."
+    - q: "Wie tief in die Lieferantenkette muss laut Artikel-30/Article-28-Erwartungen mindestens dokumentiert werden?"
+      options:
+        - { text: "Nur direkter Lieferant", correct: false }
+        - { text: "Bis zur zweiten Hop (Sub-Lieferanten des direkten Lieferanten)", correct: true }
+        - { text: "Bis zum Stromanbieter des Rechenzentrums", correct: false }
+      explanation: "Lieferanten-Transparenz bis zur zweiten Hop. Service-Katalog mit Lieferanten-Mapping; Sub-Lieferantenketten für kritische Funktionen dokumentiert; Konzentrationsrisiko-Position annual reviewed."
+    - q: "Was ist die häufigste DORA-Lücke laut Artikel?"
+      options:
+        - { text: "Fehlende MFA", correct: false }
+        - { text: "Observability verlässt den Aufsichtsbereich leise — SaaS-Observability prozessiert Logs außerhalb der zulässigen Region", correct: true }
+        - { text: "Falsche Hypervisor-Wahl", correct: false }
+      explanation: "Lücke 1: Observability verlässt den Aufsichtsbereich leise. Die Produktionsdatenbank kann konform sein; der SaaS-Observability-Stack, der Logs daraus sammelt, in der Regel nicht. DORA-Artikel-28-Datenresidenzerwartungen gelten für die gesamte ICT-Drittanbieter-Vereinbarung."
+    - q: "Was muss für Operative Resilienz im Cloud-Architektur-Kontext sichergestellt sein?"
+      options:
+        - { text: "Nur Backup-Plan", correct: false }
+        - { text: "RTO/RPO dokumentiert und annual getestet, Architektur unterstützt kontrollierte Failure-Injection, Backup/DR über Regionen hinweg", correct: true }
+        - { text: "Nur DR-Site", correct: false }
+      explanation: "Operative Resilienz erfordert RTO/RPO dokumentiert UND annual getestet (nicht nur dokumentiert), Architektur die kontrollierte Failure-Injection (Chaos Engineering) ohne inakzeptable Kundenwirkung unterstützt, Backup und DR über mindestens zwei Regionen hinweg."
+    - q: "Worauf bezieht sich \"Konzentrationsrisiko als Beschaffungsfrage behandelt\"?"
+      options:
+        - { text: "Eine richtige Vorgehensweise", correct: false }
+        - { text: "Ein häufiger Fehler — vertragliche Lieferanten-Diversität ohne tatsächliche architektonische Diversität", correct: true }
+        - { text: "Eine GDPR-Anforderung", correct: false }
+      explanation: "Häufige Lücke: Konzentrationsrisiko wird oft markiert und dann durch vertragliche Diversitätsklauseln gemildert — ohne architektonische Änderung daran, wie Workloads tatsächlich von einem Anbieter abhängen. DORA fordert die substantielle Resilienz, nicht nur die vertragliche Formalität."
 ---
 
 Begleitung zur **[DORA-Compliance-Page](/de/loesungen/dora-compliance)**. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung.

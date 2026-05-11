@@ -7,6 +7,39 @@ type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Cozystack", "KubeVirt"]
 language: "de"
 companion_landing: "/de/produkte/private-cloud/"
+quiz:
+  title: "Wissens-Check: Private-Cloud-Anbieter im Vergleich"
+  questions:
+    - q: "Welche zwei Bedeutungen unterscheidet der Artikel bei \"Private Cloud\"?"
+      options:
+        - { text: "Frei vs kostenpflichtig", correct: false }
+        - { text: "Plattform (Software, die Sie deployieren) vs Anbieter (Vendor, der dedizierte Infrastruktur bereitstellt)", correct: true }
+        - { text: "On-Prem vs Colocation", correct: false }
+      explanation: "Private-Cloud-Plattform = Software (VMware VCF, Cozystack, OpenStack, OpenShift Virtualization, Proxmox VE). Private-Cloud-Anbieter = Vendor mit dedizierter Single-Tenant-Infrastruktur (IBM Cloud Private, Oracle, Hyperscaler souveräne Regionen, regionale Provider)."
+    - q: "Welcher regionale Anbieter wird für die DACH-Region speziell genannt?"
+      options:
+        - { text: "Hetzner (Deutschland) — Bare Metal + Cloud, beliebt in DACH", correct: true }
+        - { text: "AWS Frankfurt", correct: false }
+        - { text: "DigitalOcean", correct: false }
+      explanation: "Genannte regionale souveräne Anbieter: Hetzner (Deutschland), OVHcloud (Frankreich, starke EU-Positionierung), QazCloud (Kasachstan). AWS Sovereign Cloud / Azure Sovereign / GCP sind die Hyperscaler-souveränen Angebote."
+    - q: "Was ist im Vergleich die \"beste Wahl\" für Service Provider mit Multi-Mandanten- und AI/GPU-Bedarf?"
+      options:
+        - { text: "VMware VCF", correct: false }
+        - { text: "Cozystack (Apache 2.0, KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal)", correct: true }
+        - { text: "Proxmox VE", correct: false }
+      explanation: "Cozystack ist die beste Wahl für Service Provider, regulierte Mandantenfähigkeit und AI/GPU-Betreiber. Stärken: Single-Stack für VMs + Container + Datenbanken + S3 + GPU. Multi-Mandant strukturell, nicht nachträglich aufgesetzt."
+    - q: "Für welche Zielgruppe wird Proxmox VE empfohlen?"
+      options:
+        - { text: "Hyperscaler-Konkurrenten", correct: false }
+        - { text: "SMB-Virtualisierung, Labs, Single-Tenant-Deployments unter ~50 Hosts", correct: true }
+        - { text: "Service Provider mit 1000+ Kunden", correct: false }
+      explanation: "Proxmox VE: AGPLv3 + kommerzielle Subscription, KVM + LXC + ZFS + Ceph (Community). Beste Wahl für SMB-Virtualisierung, Labs, Single-Tenant. Reif, einfach zu installieren, starke Community."
+    - q: "Welche Lizenzform hat VMware Cloud Foundation nach der Broadcom-Übernahme?"
+      options:
+        - { text: "Apache 2.0 Open Source", correct: false }
+        - { text: "Subscription-only (mit beobachteten 2–5× Preiserhöhungen)", correct: true }
+        - { text: "Ewige Lizenzen verfügbar", correct: false }
+      explanation: "VMware Cloud Foundation ist nach Broadcom Subscription-only. Beobachtete Preiserhöhungen 2–5× bei Verlängerung. Limits: Subscription-Druck, Vendor-Lock-in, Souveränitätsbedenken (US-Anbieter)."
 ---
 
 **Begleitung zur [Private-Cloud-Plattform-Page](/de/produkte/private-cloud). Überblick über Private-Cloud-Anbieter und -Plattformen in 2026 — was verfügbar ist, wer was bietet, welche architektonischen Trade-offs.**
