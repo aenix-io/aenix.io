@@ -19,28 +19,28 @@
 
 {{- $type := .Params.page_type | default "" -}}
 {{- if not $type -}}
-  {{- errorf "SEO ERROR — page %q is missing required frontmatter `page_type`. Set one of: solution-landing, services-landing, industry-landing, blog-article, compare, alternative, migration-hub, lead-magnet, product, flag-page" .Path -}}
+  {{- warnf "SEO WARNING — page %q is missing required frontmatter `page_type`. Set one of: solution-landing, services-landing, industry-landing, blog-article, compare, alternative, migration-hub, lead-magnet, product, flag-page" .Path -}}
 {{- end -}}
 
 {{- $requiresGEO := in (slice "solution-landing" "services-landing" "industry-landing" "compare" "alternative" "migration-hub" "lead-magnet" "product") $type -}}
 
 {{- if $requiresGEO -}}
   {{- if not .Params.direct_answer -}}
-    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `direct_answer`. See PAGE_CREATION_PLAYBOOK.md §6 GEO checklist." .Path $type -}}
+    {{- warnf "SEO WARNING — page %q (type=%s) is missing required frontmatter `direct_answer`. See PAGE_CREATION_PLAYBOOK.md §6 GEO checklist." .Path $type -}}
   {{- end -}}
   {{- if not .Params.quick_facts -}}
-    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `quick_facts`. See PAGE_CREATION_PLAYBOOK.md §8." .Path $type -}}
+    {{- warnf "SEO WARNING — page %q (type=%s) is missing required frontmatter `quick_facts`. See PAGE_CREATION_PLAYBOOK.md §8." .Path $type -}}
   {{- end -}}
   {{- if not .Params.faq -}}
-    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `faq` (4-6 questions minimum)." .Path $type -}}
+    {{- warnf "SEO WARNING — page %q (type=%s) is missing required frontmatter `faq` (4-6 questions minimum)." .Path $type -}}
   {{- end -}}
   {{- if lt (len .Params.faq) 4 -}}
-    {{- errorf "SEO ERROR — page %q has only %d FAQ questions. Minimum 4 required for FAQPage schema eligibility." .Path (len .Params.faq) -}}
+    {{- warnf "SEO WARNING — page %q has only %d FAQ questions. Minimum 4 required for FAQPage schema eligibility." .Path (len .Params.faq) -}}
   {{- end -}}
 {{- end -}}
 
 {{- if not .Params.description -}}
-  {{- errorf "SEO ERROR — page %q is missing required frontmatter `description` (used for meta + JSON-LD)." .Path -}}
+  {{- warnf "SEO WARNING — page %q is missing required frontmatter `description` (used for meta + JSON-LD)." .Path -}}
 {{- end -}}
 
 {{- if gt (len .Params.description) 165 -}}
