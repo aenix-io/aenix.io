@@ -1,0 +1,99 @@
+{{ define "main" }}
+{{/*
+  Blog index — card grid + filters by type and topic.
+  Filters are client-side (data-attributes + JS).
+*/}}
+{{- $posts := where .Site.RegularPages "Section" "blog" -}}
+{{- $posts = $posts.ByDate.Reverse -}}
+
+{{/* Collect all unique types + topics for filter chips */}}
+{{- $types := slice -}}
+{{- $topics := slice -}}
+{{- range $posts -}}
+  {{- with .Params.type -}}{{- $types = $types | append . -}}{{- end -}}
+  {{- with .Params.topics -}}{{- range . -}}{{- $topics = $topics | append . -}}{{- end -}}{{- end -}}
+{{- end -}}
+{{- $types = $types | uniq | sort -}}
+{{- $topics = $topics | uniq | sort -}}
+
+<section class="page-hero blog-hero">
+  <div class="page-hero-bg">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+  </div>
+  <div class="container">
+    <h1 class="page-hero-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+  </div>
+</section>
+
+<div class="section">
+  <div class="container">
+    {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . }}</div>{{ end }}
+
+    {{ if or $types $topics }}
+    <div class="blog-filters" data-blog-filters>
+      {{ if $types }}
+      <div class="blog-filters__row">
+        <span class="blog-filters__label">Type:</span>
+        <button class="blog-chip blog-chip--active" data-filter-group="type" data-filter-value="">All</button>
+        {{ range $types }}
+        <button class="blog-chip" data-filter-group="type" data-filter-value="{{ . | urlize }}">{{ . | humanize | title }}</button>
+        {{ end }}
+      </div>
+      {{ end }}
+      {{ if $topics }}
+      <div class="blog-filters__row">
+        <span class="blog-filters__label">Topic:</span>
+        <button class="blog-chip blog-chip--active" data-filter-group="topic" data-filter-value="">All</button>
+        {{ range $topics }}
+        <button class="blog-chip" data-filter-group="topic" data-filter-value="{{ . | urlize }}">{{ . | humanize | title }}</button>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="card-grid blog-grid" data-blog-grid>
+      {{ range $posts }}
+      {{- $post := . -}}
+      {{- $type := .Params.type | default "article" | urlize -}}
+      {{- $topicSlugs := slice -}}
+      {{- with .Params.topics -}}{{- range . -}}{{- $topicSlugs = $topicSlugs | append (. | urlize) -}}{{- end -}}{{- end -}}
+      <article class="card blog-card" data-post-type="{{ $type }}" data-post-topics="{{ delimit $topicSlugs " " }}">
+        <a href="{{ .RelPermalink }}" class="card-image-link">
+          {{ with .Params.cover_image }}
+          <div class="card-image"><img src="{{ . }}" alt="{{ $post.Title }}" loading="lazy"></div>
+          {{ else }}
+          <div class="card-image card-image--placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          {{ end }}
+        </a>
+        <div class="card-body">
+          <div class="blog-card__meta">
+            <span class="blog-card__type">{{ .Params.type | default "article" | humanize | title }}</span>
+            <time class="blog-card__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+          </div>
+          <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+          {{ with .Params.description }}<p class="card-description">{{ . | truncate 180 }}</p>{{ else }}<p class="card-description">{{ .Summary | plainify | truncate 180 }}</p>{{ end }}
+          {{ with .Params.topics }}
+          <div class="blog-card__topics">
+            {{ range . }}<span class="blog-card__topic">{{ . | humanize | title }}</span>{{ end }}
+          </div>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+
+    <div class="blog-empty" data-blog-empty hidden>
+      <p>No posts match the selected filters.</p>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+<script src="/js/blog-filter.js" defer></script>
+{{ end }}

@@ -393,7 +393,17 @@ menus:
       url: /contact/
       weight: 9
 
-taxonomies: {}
+taxonomies:
+  type: types
+  topic: topics
+  author: authors
+
+permalinks:
+  blog: /blog/:year/:month/:slug/
+
+# Disable auto taxonomy term lists outside /blog/ — we still want them
+# to exist as Hugo metadata for filter chips, but not as top-level pages.
+disableKinds: []
 
 outputs:
   home:
@@ -408,3 +418,14 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: github-dark
+    lineNos: false
+    codeFences: true
+    guessSyntax: true
+    noClasses: false   # use CSS classes (we ship them in main.css)
+    tabWidth: 2
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false

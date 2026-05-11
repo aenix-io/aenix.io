@@ -1,0 +1,24 @@
+{{/*
+  quote — styled pull-quote (distinct from markdown blockquote).
+
+  Usage:
+    {{< quote author="Andrei Kvapil" role="Founder, Aenix" >}}
+    Cozystack is what we wish OpenStack had become — a cloud-in-a-box
+    you can actually operate at scale.
+    {{< /quote >}}
+*/}}
+{{- $author := .Get "author" -}}
+{{- $role := .Get "role" -}}
+{{- $source := .Get "source" -}}
+<figure class="pull-quote">
+  <blockquote class="pull-quote__body">
+    {{ .Inner | markdownify }}
+  </blockquote>
+  {{ if or $author $role $source }}
+  <figcaption class="pull-quote__attribution">
+    {{ with $author }}<span class="pull-quote__author">{{ . }}</span>{{ end }}
+    {{ with $role }}<span class="pull-quote__role">{{ . }}</span>{{ end }}
+    {{ with $source }}<a class="pull-quote__source" href="{{ . }}" rel="noopener" target="_blank">source</a>{{ end }}
+  </figcaption>
+  {{ end }}
+</figure>

@@ -1,0 +1,15 @@
+{{/*
+  factoid — pulled-out number / fact, visually loud.
+
+  Usage:
+    {{< factoid number="92%" label="of EU financial entities under DORA scope by Q4 2025" >}}
+    {{< factoid number="3.5x" label="GPU utilisation gain after multi-tenant scheduler" source="Internal benchmark, 2026-Q1" >}}
+*/}}
+{{- $number := .Get "number" -}}
+{{- $label := .Get "label" -}}
+{{- $source := .Get "source" -}}
+<aside class="factoid" role="note">
+  <div class="factoid__number">{{ $number }}</div>
+  <div class="factoid__label">{{ $label | safeHTML }}</div>
+  {{ with $source }}<div class="factoid__source">{{ . }}</div>{{ end }}
+</aside>

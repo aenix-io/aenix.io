@@ -1,0 +1,23 @@
+{{- $url := .Permalink -}}
+{{- $title := .Title -}}
+<ul class="blog-share">
+  <li><a class="blog-share__link blog-share__link--linkedin"
+         href="https://www.linkedin.com/sharing/share-offsite/?url={{ $url | urlquery }}"
+         target="_blank" rel="noopener nofollow" aria-label="Share on LinkedIn"
+         data-share="linkedin"
+         data-share-url="{{ $url }}"
+         data-share-title="{{ $title }}">in</a></li>
+  <li><a class="blog-share__link blog-share__link--x"
+         href="https://x.com/intent/tweet?url={{ $url | urlquery }}&text={{ $title | urlquery }}"
+         target="_blank" rel="noopener nofollow" aria-label="Share on X"
+         data-share="x">𝕏</a></li>
+  <li><a class="blog-share__link blog-share__link--telegram"
+         href="https://t.me/share/url?url={{ $url | urlquery }}&text={{ $title | urlquery }}"
+         target="_blank" rel="noopener nofollow" aria-label="Share on Telegram"
+         data-share="telegram">tg</a></li>
+  <li><button class="blog-share__link blog-share__link--copy"
+              type="button"
+              data-share="copy"
+              data-share-url="{{ $url }}"
+              aria-label="Copy link">⧉</button></li>
+</ul>

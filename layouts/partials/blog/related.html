@@ -1,0 +1,75 @@
+{{- /*
+  Related posts: prefer explicit `related_posts:` frontmatter (slice
+  of paths). Fallback: top 3 posts in /blog/ with the most overlap on
+  `topics:`, excluding the current post.
+*/ -}}
+{{- $current := . -}}
+{{- $lang := .Params.language | default "en" -}}
+{{- $related := slice -}}
+
+{{- with .Params.related_posts -}}
+  {{- range . -}}
+    {{- with $.Site.GetPage . -}}{{- $related = $related | append . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if not $related -}}
+  {{- $myTopics := $current.Params.topics | default slice -}}
+  {{- if $myTopics -}}
+    {{- $candidates := where $.Site.RegularPages "Section" "blog" -}}
+    {{- $candidates = where $candidates "Permalink" "ne" $current.Permalink -}}
+    {{- $scored := slice -}}
+    {{- range $candidates -}}
+      {{- $other := . -}}
+      {{- $otherTopics := .Params.topics | default slice -}}
+      {{- $score := 0 -}}
+      {{- range $myTopics -}}
+        {{- if in $otherTopics . -}}{{- $score = add $score 1 -}}{{- end -}}
+      {{- end -}}
+      {{- if gt $score 0 -}}
+        {{- $scored = $scored | append (dict "page" $other "score" $score) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $scored = sort $scored "score" "desc" -}}
+    {{- range first 3 $scored -}}
+      {{- $related = $related | append .page -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Final fallback: 3 newest posts */ -}}
+{{- if not $related -}}
+  {{- $latest := where $.Site.RegularPages "Section" "blog" -}}
+  {{- $latest = where $latest "Permalink" "ne" $current.Permalink -}}
+  {{- $latest = $latest.ByDate.Reverse -}}
+  {{- range first 3 $latest -}}{{- $related = $related | append . -}}{{- end -}}
+{{- end -}}
+
+{{- if $related -}}
+{{- $heading := "Read also" -}}
+{{- if eq $lang "de" -}}{{- $heading = "Lesen Sie auch" -}}{{- end -}}
+<section class="blog-related">
+  <div class="container">
+    <h2 class="blog-related__heading">{{ $heading }}</h2>
+    <div class="card-grid blog-related__grid">
+      {{ range first 3 $related }}
+      <article class="card blog-card">
+        <a href="{{ .RelPermalink }}" class="card-image-link">
+          <div class="card-image card-image--placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+        </a>
+        <div class="card-body">
+          <div class="blog-card__meta">
+            <span class="blog-card__type">{{ .Params.type | default "article" | humanize | title }}</span>
+            <time class="blog-card__date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+          </div>
+          <h3 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{ with .Params.description }}<p class="card-description">{{ . | truncate 140 }}</p>{{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{- end -}}
