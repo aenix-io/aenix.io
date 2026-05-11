@@ -1,72 +1,17 @@
 {{ define "main" }}
-{{- $post := . -}}
-{{- $companion := .Params.companion_landing -}}
-{{- $topics := .Params.topics | default slice -}}
-{{- $type := .Params.type | default "article" -}}
+{{/*
+  Backup-path layout for blog posts where Hugo template lookup
+  reaches /layouts/<section>/single.html (i.e. when frontmatter
+  `type:` is unset and section "blog" is used as the type).
 
-<article class="blog-post">
-  <header class="blog-post-hero">
-    <div class="container">
-      <div class="blog-post-hero__meta">
-        <span class="blog-post-hero__type">{{ $type | humanize | title }}</span>
-        {{ with .Date }}<time class="blog-post-hero__date" datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>{{ end }}
-        {{ with .Params.author }}<span class="blog-post-hero__author">by {{ . }}</span>{{ end }}
-      </div>
-      <h1 class="blog-post-hero__title">{{ .Title }}</h1>
-      {{ with .Description }}<p class="blog-post-hero__lede">{{ . }}</p>{{ end }}
-      {{ if $topics }}
-      <div class="blog-post-hero__topics">
-        {{ range $topics }}<a href="/topics/{{ . | urlize }}/" class="blog-post-hero__topic">{{ . | humanize | title }}</a>{{ end }}
-      </div>
-      {{ end }}
-    </div>
-  </header>
-
-  {{ with .Params.cover_image }}
-  <div class="container">
-    <figure class="blog-post-cover">
-      <img src="{{ . }}" alt="{{ $post.Title }}" loading="eager">
-    </figure>
-  </div>
-  {{ else }}
-  <div class="container">
-    <figure class="blog-post-cover blog-post-cover--placeholder">
-      <svg viewBox="0 0 1200 630" width="100%" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-        <rect width="1200" height="630" fill="#0F4C5C"/>
-        <text x="600" y="320" fill="#E36414" text-anchor="middle" font-family="ui-monospace, monospace" font-size="32" font-weight="700">PLACEHOLDER COVER · 1200×630</text>
-        <text x="600" y="370" fill="#F8F4F0" text-anchor="middle" font-family="ui-monospace, monospace" font-size="18">{{ $post.Title }}</text>
-      </svg>
-    </figure>
-  </div>
-  {{ end }}
-
-  <div class="container blog-post-layout">
-    <aside class="blog-post-share" aria-label="Share">
-      {{ partial "blog/share-bar.html" . }}
-    </aside>
-
-    <div class="blog-post-content page-content">
-      {{ .Content }}
-
-      {{ if .Params.quiz }}
-      {{ partial "blog/quiz.html" . }}
-      {{ end }}
-
-      {{ if $companion }}
-      <aside class="blog-post-companion">
-        <div class="blog-post-companion__label">Looking for the service?</div>
-        <a href="{{ $companion }}" class="blog-post-companion__link">{{ .Params.companion_label | default "See the related Aenix engagement →" }}</a>
-      </aside>
-      {{ end }}
-    </div>
-  </div>
-
-  {{ partial "blog/related.html" . }}
-
-  <div class="container blog-post-footer">
-    <a href="/blog/" class="blog-post-back">← Back to blog</a>
-  </div>
-</article>
+  For posts with type: "article" / "tutorial" / "news" /
+  "announcement" / etc. in frontmatter, Hugo skips this file and
+  lands on /layouts/_default/single.html — which we also override
+  at project level (see layouts/_default/single.html). Both call
+  the same partial below, so the rendering is identical regardless
+  of which lookup path Hugo follows.
+*/}}
+{{ partial "blog-single-body.html" . }}
 {{ end }}
 
 {{ define "scripts" }}

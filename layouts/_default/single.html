@@ -1,0 +1,53 @@
+{{ define "main" }}
+{{/*
+  Project-level override of theme's _default/single.html.
+
+  Hugo template lookup for blog posts uses frontmatter `type:`
+  ("article" / "tutorial" / "news" / "announcement") BEFORE falling
+  back to section. Since /layouts/article/single.html doesn't exist
+  and Hugo doesn't fall back to /layouts/<section>/single.html when
+  type is explicitly set, it lands on _default/single.html. Without
+  this project-level override, theme's _default/single.html would
+  win — and it renders only title/description/content, no quiz,
+  no share bar, no related posts, no companion-landing back-link.
+
+  We branch on .Section here: blog posts get the full blog template;
+  everything else (landings, about, contact, conferences, etc.)
+  gets the theme-equivalent default behavior.
+*/}}
+{{ if eq .Section "blog" }}
+  {{ partial "blog-single-body.html" . }}
+{{ else }}
+  {{/* Match theme's _default/single.html behaviour for non-blog pages */}}
+  <article class="page">
+    <section class="page-hero">
+      <div class="page-hero-bg">
+        <div class="page-hero-grid"></div>
+        <div class="page-hero-glow"></div>
+      </div>
+      <div class="container">
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Description }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+        {{ with .Params.heroCta }}
+        <div class="page-hero-cta">
+          <a href="{{ .url }}" class="btn btn-primary btn-lg">{{ .text }}</a>
+        </div>
+        {{ end }}
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="page-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </article>
+{{ end }}
+{{ end }}
+
+{{ define "scripts" }}
+{{ if eq .Section "blog" }}
+{{ if .Params.quiz }}<script src="/js/blog-quiz.js" defer></script>{{ end }}
+<script src="/js/blog-share.js" defer></script>
+{{ end }}
+{{ end }}
