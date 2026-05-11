@@ -3,7 +3,7 @@ title: "Cozystack applied to CNCF Incubated"
 description: "We’ve just submitted our application to move from CNCF Sandbox to Incubated. We’d love your support — drop a like to cheer us on. It won’t…"
 date: "2025-10-08"
 author: "Timur Tukaev"
-type: "article"
+type: "news"
 topics: ["Cozystack", "CNCF"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*_xs_0yX9K8OK2BRzFEpj6g.png"

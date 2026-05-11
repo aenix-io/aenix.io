@@ -3,7 +3,7 @@ title: "🔴 CNCF Webinar: One API to Rule Them All — Building a Unified P
 description: "Speaker: Andrei Kvapil, Ænix CEO, Cozystack maintainer"
 date: "2025-09-03"
 author: "Timur Tukaev"
-type: "article"
+type: "news"
 topics: ["Kubernetes", "Cozystack", "CNCF", "Platform Engineering", "Observability", "etcd"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*OO-ATURlxPokRXAy1Ee8nA.png"

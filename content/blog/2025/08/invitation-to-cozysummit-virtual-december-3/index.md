@@ -3,7 +3,7 @@ title: "Invitation to CozySummit Virtual — December 3"
 description: "Join us on December 3 for CozySummit Virtual, the first conference for CozyStack developers and users."
 date: "2025-08-14"
 author: "Timur Tukaev"
-type: "article"
+type: "news"
 topics: ["Kubernetes", "Cozystack", "AI/ML", "CNCF"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*zEOKAq9jaDdY4Y9drKo9jw.jpeg"
