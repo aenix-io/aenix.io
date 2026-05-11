@@ -3,7 +3,7 @@ title: "CozySummit Virtual 2026: The Program Is Set — and It Looks Amazing!"
 description: "We are thrilled to announce the full lineup of talks for the new CozySummit Virtual 2026! The program is ready, and we can’t wait to share it with you. Five..."
 date: "2026-04-06"
 author: "Timur Tukaev"
-type: "article"
+type: "news"
 topics: ["Open Source", "Platform Engineering", "CNCF", "DevOps", "Kubernetes"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*NpRvSM1Y7tFtb2BDf9KCpw.png"

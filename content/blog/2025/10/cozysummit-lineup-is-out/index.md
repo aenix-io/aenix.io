@@ -3,7 +3,7 @@ title: "👻 CozySummit lineup is out!"
 description: "Yaaay! We’ve published the schedule for CozySummit 2025 Virtual — an online conference for Cozystack developers and users, hosted together…"
 date: "2025-10-14"
 author: "Timur Tukaev"
-type: "article"
+type: "news"
 topics: ["Proxmox", "Cozystack", "CNCF", "Storage"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*XfMqb8nryVeTytZOexqc3Q.png"

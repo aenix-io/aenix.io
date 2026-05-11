@@ -8,6 +8,39 @@ topics: ["DevOps", "Open Source", "Ansible", "Kubernetes", "Platform Engineering
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*TRGnafeMsVruWze2D0p6DA.png"
 source_url: "https://blog.aenix.io/deploy-cozystack-on-any-kubernetes-with-ansible-b28e61f586f9"
+quiz:
+  title: "Test yourself: Cozystack via Ansible"
+  questions:
+    - q: "What is the official Ansible collection that deploys Cozystack on generic Kubernetes called?"
+      options:
+        - { text: "cozystack.installer", correct: true }
+        - { text: "cozystack.bootstrap", correct: false }
+        - { text: "aenix.deploy", correct: false }
+      explanation: "cozystack.installer automates complete Cozystack deployment on generic Kubernetes (k3s, kubeadm, or RKE2) — turning a single ansible-playbook run into a fully configured cloud platform."
+    - q: "Which Kubernetes installers does the Ansible collection support?"
+      options:
+        - { text: "Only k3s", correct: false }
+        - { text: "k3s, kubeadm, or RKE2", correct: true }
+        - { text: "Only kubeadm", correct: false }
+      explanation: "cozystack.installer supports k3s, kubeadm, and RKE2 — the three most common generic Kubernetes installation paths on regular Linux distributions."
+    - q: "Which audience is named as the FIRST target user for the Ansible installer?"
+      options:
+        - { text: "Pure hobbyists", correct: false }
+        - { text: "Regulated environments where company mandates a specific Linux distribution and replacing the OS is not an option", correct: true }
+        - { text: "Universities only", correct: false }
+      explanation: "Four target audiences listed: (1) regulated environments with mandated Linux distros, (2) existing K8s clusters wanting Cozystack capabilities without rebuild, (3) multi-environment teams (define config once), (4) CI/CD workflows (integrate Cozystack provisioning into automation)."
+    - q: "How does the article suggest installing the collection?"
+      options:
+        - { text: "apt-get install cozystack", correct: false }
+        - { text: "ansible-galaxy collection install git+https://github.com/cozystack/ansible-cozystack.git", correct: true }
+        - { text: "helm install cozystack", correct: false }
+      explanation: "The install command: `ansible-galaxy collection install git+https://github.com/cozystack/ansible-cozystack.git`. The repository includes a complete example — from bare Ubuntu nodes to a running Cozystack platform in one command."
+    - q: "Why does this exist alongside the Talos-based Cozystack default?"
+      options:
+        - { text: "Talos was deprecated", correct: false }
+        - { text: "For teams that can't adopt the full Cozystack stack with Talos Linux — corporate policies, existing infrastructure, OS-specific requirements", correct: true }
+        - { text: "Ansible is faster", correct: false }
+      explanation: "For teams that can't adopt full Cozystack stack with Talos — due to corporate policies (mandated Linux distros), existing infrastructure (already-built K8s clusters), or OS-specific requirements (specific kernel modules / drivers / packages) — the Ansible collection brings the same Cozystack experience to existing clusters."
 ---
 
 For teams that can’t adopt the full Cozystack stack with Talos Linux — whether due to corporate policies, existing infrastructure, or OS-specific requirements — we now offer an official Ansible collection that brings the same Cozystack experience to your existing clusters.

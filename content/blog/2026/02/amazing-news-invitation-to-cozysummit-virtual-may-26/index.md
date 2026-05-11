@@ -3,7 +3,7 @@ title: "Amazing news! Invitation to CozySummit Virtual — May 26"
 description: "Join us on May 26 for 2nd CozySummit Virtual, conference for CozyStack developers and adopters."
 date: "2026-02-11"
 author: "Timur Tukaev"
-type: "article"
+type: "news"
 topics: ["Cozystack", "GitOps", "CNCF", "Platform Engineering", "Compliance", "Observability"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*h7Bgr28OCTG8XS5WUtb7RA.png"
