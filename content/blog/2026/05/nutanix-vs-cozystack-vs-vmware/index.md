@@ -1,0 +1,88 @@
+---
+title: "Nutanix vs Cozystack vs VMware — choosing your virtualization platform in 2026"
+description: "This is the long-form companion to our Nutanix alternative page. It compares Nutanix HCI (with AHV), VMware (post-Broadcom), and Cozystack — three different..."
+date: "2026-05-01"
+author: "Aenix Team"
+type: "article"
+topics: ["VMware", "Nutanix", "Kubernetes", "Cozystack", "KubeVirt", "Cilium"]
+language: "en"
+companion_landing: "/alternatives/nutanix-alternative/"
+---
+
+**This is the long-form companion to our [Nutanix alternative page](/alternatives/nutanix-alternative). It compares Nutanix HCI (with AHV), VMware (post-Broadcom), and Cozystack — three different architectural choices for organizations evaluating their virtualization platform in 2026.**
+
+In 2026 the realistic shortlist for production virtualization platforms includes (among others) Nutanix AHV, VMware Cloud Foundation, and Cozystack. Each represents a different architectural philosophy.
+
+## Architectural philosophies
+
+**Nutanix:** vendor-led integrated HCI appliance. Operational simplicity and integrated support are the core value proposition.
+
+**VMware:** mature legacy stack with deep ecosystem integration. Vendor-managed roadmap; subscription-led economics.
+
+**Cozystack:** open-source Kubernetes-native platform. Customer-controlled architecture; community-governed roadmap.
+
+## Detailed comparison
+
+| | Nutanix AHV | VMware (VCF) | Cozystack |
+|---|---|---|---|
+| **License** | Subscription | Subscription only | Apache 2.0 |
+| **Open source** | No | No | Full |
+| **Foundation** | Proprietary KVM (AHV) | vSphere/ESXi | KubeVirt on Kubernetes |
+| **Multi-tenancy** | Limited | vCloud Director | Tenant CRD |
+| **Storage** | Distributed (proprietary) | vSAN | LINSTOR or Ceph |
+| **Network** | AHV networking | NSX | Cilium |
+| **Containers** | Karbon (separate) | Tanzu (separate) | Native |
+| **Hardware** | Nutanix appliance | x86 | Commodity x86 |
+| **Best for** | HCI-focused enterprises | Existing VMware estates | Service providers + sovereign cloud |
+
+## When each wins
+
+### Nutanix wins
+- Existing Nutanix HCI investment with operational expertise
+- Strong preference for integrated appliance + commercial support
+- VM-only workload portfolio
+- Mid-size enterprise with integrated procurement
+
+### VMware wins
+- Existing VMware estate where renewal economics are still tolerable
+- Deep vSphere expertise that's hard to migrate
+- Specific VMware-only features (some niche advanced networking, storage)
+- (Increasingly rare in 2026 due to Broadcom pricing)
+
+### Cozystack wins
+- Service-provider or multi-tenant cloud-builder model
+- Sovereignty / regulator requirements
+- Open-source procurement preference
+- Mixed VM + container workloads on one platform
+- AI/GPU at scale with Kubernetes-native tooling
+
+## Migration economics
+
+Migrating between these platforms is not free. Realistic cost estimates:
+
+- **VMware → Cozystack:** 8-18 months elapsed for 100-1000 VM estate; assessment + destination build + cohort migration. Net positive after Year 2 typically.
+- **VMware → Nutanix:** Similar timeline; uses Nutanix Move tooling.
+- **Nutanix → Cozystack:** 6-12 months; KVM image compatibility helps.
+- **Cozystack → VMware/Nutanix:** Rare in 2026 (reverse migration).
+
+## How to decide
+
+The decision tree:
+
+1. **Existing platform with deep expertise + economics still work?** → Stay.
+2. **Multi-tenant or service-provider model?** → Cozystack.
+3. **Sovereignty / open-source-first procurement?** → Cozystack.
+4. **HCI appliance preference + Nutanix relationship?** → Nutanix.
+5. **VMware estate, no triggers to leave?** → VMware (with eye on next renewal).
+6. **Greenfield + Kubernetes-fluent team?** → Cozystack.
+
+## How to start
+
+If a structured assessment helps clarify, see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+
+---
+
+*Aenix is the team behind Cozystack.*
+
+<!-- SEO: title "Nutanix vs Cozystack vs VMware — 2026 Virtualization Platform Comparison | Aenix"
+Word count: ~700. -->
