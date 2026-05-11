@@ -43,8 +43,10 @@
   {{- warnf "SEO WARNING — page %q is missing required frontmatter `description` (used for meta + JSON-LD)." .Path -}}
 {{- end -}}
 
-{{- if gt (len .Params.description) 165 -}}
-  {{- warnf "SEO WARNING — page %q description is %d chars (>160). SERP snippet will truncate." .Path (len .Params.description) -}}
+{{- with .Params.description -}}
+  {{- if gt (len .) 165 -}}
+    {{- warnf "SEO WARNING — page %q description is %d chars (>160). SERP snippet will truncate." $.Path (len .) -}}
+  {{- end -}}
 {{- end -}}
 
 {{/* ============================================================ */}}
