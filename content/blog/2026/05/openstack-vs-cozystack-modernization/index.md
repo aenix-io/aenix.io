@@ -7,6 +7,41 @@ type: "article"
 topics: ["OpenStack", "Kubernetes", "Cozystack", "Sovereignty", "Migration"]
 language: "en"
 companion_landing: "/alternatives/openstack-alternative/"
+quiz:
+  title: "Test yourself: OpenStack modernization"
+  questions:
+    - q: "Which Cozystack component plays the role of OpenStack Neutron (networking)?"
+      options:
+        - { text: "Cilium", correct: true }
+        - { text: "KubeVirt", correct: false }
+        - { text: "LINSTOR", correct: false }
+        - { text: "cozyportal", correct: false }
+      explanation: "In the OpenStack→Cozystack translation table: Nova→KubeVirt, Neutron→Cilium, Cinder→LINSTOR (or Ceph), Swift→SeaweedFS, Keystone→K8s RBAC + IdP, Glance→KubeVirt CDI image registry, Magnum→native (K8s is the platform), Heat→K8s operators + GitOps, Horizon→cozyportal."
+    - q: "Why does the article say OpenStack engineer expertise is shrinking?"
+      options:
+        - { text: "OpenStack will be EOL'd", correct: false }
+        - { text: "New engineers are trained on Kubernetes, not OpenStack", correct: true }
+        - { text: "OpenStack pays less", correct: false }
+      explanation: "Engineer scarcity: the OpenStack expertise pool is shrinking. New engineers are trained on Kubernetes, not OpenStack. Combined with component sprawl (30+ services per typical deployment) and upgrade pain, this is the structural pressure."
+    - q: "Which modernization path is named as \"most common for full modernization\"?"
+      options:
+        - { text: "Path 1 — stay and tune", correct: false }
+        - { text: "Path 2 — Kubernetes-on-OpenStack", correct: false }
+        - { text: "Path 3 — parallel deployment, cohort-by-cohort migration, decommission OpenStack as cohorts complete", correct: true }
+        - { text: "Path 4 — full lift-and-shift", correct: false }
+      explanation: "Path 3 (parallel deployment) is the most common path for full modernization. Build Cozystack alongside OpenStack on new hardware; migrate cohort by cohort; decommission OpenStack as cohorts complete."
+    - q: "Where does the article say OpenStack still wins?"
+      options:
+        - { text: "SMB single-tenant deployments", correct: false }
+        - { text: "Telecom-scale deployments (NFV, DPDK, SR-IOV) and government/sovereign clouds where OpenStack is procurement-mandated", correct: true }
+        - { text: "Greenfield AI workloads", correct: false }
+      explanation: "OpenStack still wins for telecom-scale deployments (running thousands of nodes with NFV, DPDK, SR-IOV, high-throughput networking) and large government/sovereign clouds where it's procurement-mandated, plus organizations 5+ years deep in OpenStack expertise."
+    - q: "For mid-size (50-500 hosts) OpenStack to Cozystack migration, what is total elapsed time?"
+      options:
+        - { text: "1-2 weeks", correct: false }
+        - { text: "6-15 months depending on scale", correct: true }
+        - { text: "5+ years", correct: false }
+      explanation: "For mid-size (50-500 hosts): 14-28 day assessment + 1-3 months Cozystack foundation + 4-12 months migration cohorts + OpenStack decommission. Total: 6-15 months depending on scale."
 ---
 
 **This is the long-form companion to our [OpenStack alternative page](/alternatives/openstack-alternative). It walks through OpenStack's current state, the architectural shift toward Kubernetes-native platforms, and the realistic modernization paths for OpenStack operators in 2026.**

@@ -7,6 +7,39 @@ type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "AI/ML", "Multi-tenancy", "Financial Services"]
 language: "en"
 companion_landing: "/solutions/sovereign-ai/"
+quiz:
+  title: "Test yourself: seven sovereign-AI decisions"
+  questions:
+    - q: "How many decisions does the article say define a sovereign AI architecture?"
+      options:
+        - { text: "Three", correct: false }
+        - { text: "Seven", correct: true }
+        - { text: "Twelve", correct: false }
+      explanation: "Seven decisions: trigger profile, regulatory scope, model selection, hardware sizing, multi-tenancy model, sovereignty controls, operational model. They're not independent — earlier decisions shape later ones."
+    - q: "For a \"regulated finance + sustained inference + multi-tenant\" pattern, what model class does the article suggest?"
+      options:
+        - { text: "Proprietary closed-weight (OpenAI/Anthropic API)", correct: false }
+        - { text: "Open-weight Llama 70B-class on H100/L40S fleet, multi-tenant Tenant CRD, customer-controlled keys, Aenix-managed operations", correct: true }
+        - { text: "Custom-trained from scratch", correct: false }
+      explanation: "Pattern 1 example for regulated finance: DORA + Article 28 controls + multi-tenant Tenant CRD + customer-controlled keys + Aenix-managed operations + open-weight Llama 70B class on H100/L40S fleet."
+    - q: "Which open-weight model families does the article list as common 2026 choices?"
+      options:
+        - { text: "Llama, Mistral, Qwen, DeepSeek, Phi, Gemma", correct: true }
+        - { text: "Only GPT-4 derivatives", correct: false }
+        - { text: "Only Llama", correct: false }
+      explanation: "Common 2026 open-weight families: Llama, Mistral, Qwen, DeepSeek, Phi, Gemma. Selection depends on language requirement, workload type, license terms, capability target."
+    - q: "In the seven decisions, what does \"sovereignty controls\" specifically include?"
+      options:
+        - { text: "Just key management", correct: false }
+        - { text: "Customer-controlled encryption keys (HSM), supplier-chain transparency to second hop, audit-trail completeness, air-gap option for the most sensitive workloads", correct: true }
+        - { text: "Just air-gap", correct: false }
+      explanation: "Sovereignty controls = customer-controlled keys (HSM), supplier transparency to second hop, audit-trail completeness in regulator-consumable formats, and air-gap option for the most sensitive workloads."
+    - q: "What does the article say about how the seven decisions relate to each other?"
+      options:
+        - { text: "They are independent", correct: false }
+        - { text: "They interlock — trigger profile shapes regulatory scope; regulatory scope shapes sovereignty controls; sovereignty controls shape operational model; operational model affects model selection feasibility", correct: true }
+        - { text: "They contradict each other", correct: false }
+      explanation: "The seven aren't independent. Trigger profile shapes regulatory scope; regulatory scope shapes sovereignty controls; sovereignty controls shape operational model; operational model affects model selection feasibility. The decision guide walks through them in that order."
 ---
 
 Companion to **[Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide)**.

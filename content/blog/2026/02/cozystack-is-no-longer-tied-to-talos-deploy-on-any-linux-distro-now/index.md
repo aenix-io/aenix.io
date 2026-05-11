@@ -8,6 +8,39 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*nMttTSsu5Os7m1Pku0zBNA.png"
 source_url: "https://medium.com/@tym83/cozystack-is-no-longer-tied-to-talos-deploy-on-any-linux-distro-now-dd8cd8b05b7e"
+quiz:
+  title: "Test yourself: Cozystack on any Linux"
+  questions:
+    - q: "What does the article say is now possible with Cozystack regarding Linux distributions?"
+      options:
+        - { text: "Cozystack still only supports Talos", correct: false }
+        - { text: "You can transform any existing Kubernetes cluster — regardless of underlying Linux distribution — into a Cozystack cloud platform", correct: true }
+        - { text: "Cozystack now requires Ubuntu", correct: false }
+      explanation: "Cozystack expanded beyond Talos Linux. Any existing K8s cluster — regardless of underlying Linux distro — can be transformed into a fully featured cloud platform with the entire Cozystack stack."
+    - q: "Which one of these is named as a reason to choose Generic Kubernetes over Talos for Cozystack?"
+      options:
+        - { text: "Talos is faster than every alternative", correct: false }
+        - { text: "Corporate compliance requires a pre-approved list of Linux distributions", correct: true }
+        - { text: "Talos is no longer supported", correct: false }
+      explanation: "Reasons listed: corporate compliance with strict security policies / pre-approved distros, skipping the Talos learning curve, OS-specific requirements (drivers, kernel modules, packages), enhancing existing K8s clusters, infrastructure constraints (some public clouds where replacing the OS isn't an option)."
+    - q: "Which Kubernetes installer is named in the step-by-step guide for Ubuntu/Debian?"
+      options:
+        - { text: "k3s (also kubeadm and RKE2)", correct: true }
+        - { text: "Only kops", correct: false }
+        - { text: "Only Tanzu", correct: false }
+      explanation: "The step-by-step guide installs Cozystack on Ubuntu/Debian using k3s (also kubeadm or RKE2). The method can be adapted to other Linux distros; official guides for more popular distros are planned."
+    - q: "Cozystack is part of which CNCF tier?"
+      options:
+        - { text: "CNCF Graduated", correct: false }
+        - { text: "CNCF Sandbox (under Apache 2.0)", correct: true }
+        - { text: "CNCF Incubating (final)", correct: false }
+      explanation: "Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license. (Aenix has also applied for CNCF Incubating, with a decision pending.)"
+    - q: "Which storage and networking layers does the announcement explicitly name as part of Cozystack on generic K8s?"
+      options:
+        - { text: "Linstor storage + Kube-OVN networking + KubeVirt virtualization", correct: true }
+        - { text: "Only Ceph + Calico", correct: false }
+        - { text: "Just NFS + flannel", correct: false }
+      explanation: "The article explicitly names: Linstor storage, Kube-OVN networking, KubeVirt virtualization, DBaaS, and one-click services like Kafka, Cilium, Grafana, Victoria Metrics, etc."
 ---
 
 ---

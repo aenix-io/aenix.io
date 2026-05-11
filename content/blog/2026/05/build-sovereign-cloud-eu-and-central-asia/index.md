@@ -7,6 +7,40 @@ type: "tutorial"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup & DR", "Observability"]
 language: "en"
 companion_landing: "/services/sovereign-cloud-builder/"
+quiz:
+  title: "Test yourself: building a sovereign cloud"
+  questions:
+    - q: "How many requirements define \"real\" sovereignty in the article?"
+      options:
+        - { text: "Two — data residency + encryption", correct: false }
+        - { text: "Eight — residency, customer-controlled keys, OSS foundation, supplier-chain transparency, air-gap option, audit completeness, no phone-home, sovereign operational independence", correct: true }
+        - { text: "Three", correct: false }
+      explanation: "A \"sovereign cloud\" product that doesn't substantively satisfy all eight will fail under regulator audit. Sovereignty is more than data residency."
+    - q: "Which French sovereign-cloud certification is named?"
+      options:
+        - { text: "BSI C5", correct: false }
+        - { text: "SecNumCloud", correct: true }
+        - { text: "DORA", correct: false }
+      explanation: "SecNumCloud is France's strict sovereign requirement. BSI C5 is Germany's cloud security catalogue. EUCS is the emerging EU-wide framework."
+    - q: "What is the typical end-to-end timeline for building a sovereign cloud product to first customer GA?"
+      options:
+        - { text: "3-6 weeks", correct: false }
+        - { text: "12-30 months from project start, depending on certification scope", correct: true }
+        - { text: "5-10 years", correct: false }
+      explanation: "Discovery + assessment 4-8 weeks; architecture + procurement readiness 2-4 months; phase-2 platform build 8-24 months including certification work; customer onboarding ongoing. Total elapsed: 12-30 months."
+    - q: "Which Cozystack feature is NOT named as supporting sovereign-cloud builders?"
+      options:
+        - { text: "Tenant CRD multi-tenancy", correct: false }
+        - { text: "WHMCS billing integration", correct: false }
+        - { text: "Mandatory phone-home telemetry", correct: true }
+        - { text: "Air-gap install support", correct: false }
+      explanation: "Cozystack has no phone-home by default — telemetry is opt-in. The article explicitly lists this as a sovereign-friendly property. Tenant CRD, cozyportal, WHMCS billing, air-gap, VictoriaMetrics + VictoriaLogs, and Cilium are the named sovereign-friendly features."
+    - q: "For Pattern 2 (managed sovereign cloud), what is the trade-off?"
+      options:
+        - { text: "Maximum sovereignty + maximum operational footprint", correct: false }
+        - { text: "Operational simplification with substantive sovereignty (cloud-provider hardware + sovereign jurisdiction + customer-controlled keys + transparent supply chain)", correct: true }
+        - { text: "No sovereignty at all", correct: false }
+      explanation: "Pattern 2: cloud-provider hardware + sovereign jurisdiction + customer-controlled keys + transparent supply chain. Operational simplification with substantive sovereignty. Right for most regulated enterprise workloads. Pattern 1 (full on-prem) is for the most sensitive workloads."
 ---
 
 **Long-form companion to [sovereign cloud builder services page](/services/sovereign-cloud-builder). What it takes to build a sovereign cloud product that actually satisfies sovereignty mandates — architecturally, operationally, and procurementally.**
