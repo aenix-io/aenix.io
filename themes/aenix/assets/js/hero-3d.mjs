@@ -179,6 +179,81 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   terrain.position.set(0, -1.2, -3.0);
   scene.add(terrain);
 
+  /* ── Perspective floor grid ──────────────────────────────────
+     Cyan grid extending from the camera into the distance through
+     the valley floor. Bright near the vanishing point so the eye
+     reads it as a horizon/road. */
+  const floorGeo = new THREE.PlaneGeometry(26, 30);
+  floorGeo.rotateX(-Math.PI / 2);
+  const floorMat = new THREE.ShaderMaterial({
+    transparent: true,
+    depthWrite: false,
+    uniforms: {
+      uColor:  { value: new THREE.Color(0x66c6ff) },
+      uOrigin: { value: new THREE.Vector3(0, 0, -4) }, // vanishing point
+    },
+    vertexShader: `
+      varying vec3 vWorldPos;
+      void main(){
+        vec4 wp = modelMatrix * vec4(position, 1.0);
+        vWorldPos = wp.xyz;
+        gl_Position = projectionMatrix * viewMatrix * wp;
+      }
+    `,
+    fragmentShader: `
+      uniform vec3 uColor;
+      uniform vec3 uOrigin;
+      varying vec3 vWorldPos;
+      void main(){
+        // grid lines (1.2 unit cells)
+        vec2 cell = abs(fract(vWorldPos.xz * (1.0/1.2)) - 0.5);
+        float line = min(cell.x, cell.y);
+        float lineMask = 1.0 - smoothstep(0.0, 0.06, line);
+
+        // 1) Fade outside the central X band (sides → invisible)
+        float xFade = 1.0 - smoothstep(4.0, 12.0, abs(vWorldPos.x));
+        // 2) Brightness peaks near the vanishing point and falls off
+        //    both toward the camera AND toward the far back.
+        float dz = vWorldPos.z - uOrigin.z;
+        float zFade = exp(-abs(dz) * 0.18);
+
+        float a = lineMask * xFade * zFade * 0.55;
+        gl_FragColor = vec4(uColor, a);
+      }
+    `,
+  });
+  const floor = new THREE.Mesh(floorGeo, floorMat);
+  floor.position.set(0, -1.0, -4.0);
+  scene.add(floor);
+
+  /* ── Bright central horizon point (focal core) ───────────────
+     Small additive billboard at the floor vanishing point. Sits
+     where the flow lines converge — gives the scene its anchor. */
+  const coreGeo = new THREE.PlaneGeometry(3.2, 3.2);
+  const coreMat = new THREE.ShaderMaterial({
+    transparent: true,
+    depthWrite: false,
+    blending: THREE.AdditiveBlending,
+    vertexShader: `varying vec2 vUv; void main(){ vUv=uv; gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}`,
+    fragmentShader: `
+      varying vec2 vUv;
+      void main(){
+        vec2 d = vUv - 0.5;
+        float r = length(d);
+        // bright tight core fading outward
+        float core = pow(1.0 - smoothstep(0.0, 0.08, r), 1.5);
+        float halo = pow(1.0 - smoothstep(0.0, 0.45, r), 2.5) * 0.45;
+        float a = core * 0.85 + halo;
+        // white-cyan core
+        vec3 col = mix(vec3(0.7, 0.92, 1.0), vec3(1.0), core);
+        gl_FragColor = vec4(col, a);
+      }
+    `,
+  });
+  const coreMesh = new THREE.Mesh(coreGeo, coreMat);
+  coreMesh.position.set(0, -0.45, -4.2);
+  scene.add(coreMesh);
+
   /* ── Soft horizon glow plane far back ────────────────────── */
   const horizonGeo = new THREE.PlaneGeometry(80, 18);
   const horizonMat = new THREE.ShaderMaterial({
@@ -243,36 +318,41 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     flowGroup.add(new THREE.Line(geo, mat));
   }
 
-  // ── FLOWS (minimal, structured) ──
-  // Three lines total: one descending the left slope, one descending
-  // the right slope, both arriving at the centre core. Each line
-  // hugs the terrain (control points stay close to the slope), and
-  // opacity is held low so the wireframe stays the dominant read.
+  // ── FLOWS — many descending rays into the focal core ──
+  // 8 lines per side, scattered along the ridge at varying depths
+  // and heights. Each line drops along its slope and curves into
+  // the central core at the floor's vanishing point. Per-line
+  // opacity stays low so density doesn't read as brightness.
   const FLOW_HALF = [
     // [magX, startY, startZ]
-    [ 8.0, 4.5, -4 ],
+    [ 9.5, 4.6, -10],
+    [ 8.5, 4.4,  -7],
+    [ 7.5, 4.0,  -4],
+    [ 8.0, 4.2,  -1],
+    [ 6.5, 3.7,   2],
+    [ 7.5, 4.0,  -6],
+    [ 9.0, 4.5,  -3],
+    [ 5.5, 3.4,   4],
   ];
-  function addFlow(side, [mag, sy, sz]) {
-    const sx = side * mag;
+  function addFlow(side, [mag, sy, sz], jitter) {
+    const sx = side * (mag + jitter * 0.3);
     const start = new THREE.Vector3(sx, sy, sz);
     const dx = CORE.x - sx, dy = CORE.y - sy, dz = CORE.z - sz;
-    // mid1: mostly DESCEND (little X change, lots of Y descent)
-    // mid2: bend toward the centre near the floor
     const mid1 = new THREE.Vector3(
-      sx + dx * 0.12,
-      sy + dy * 0.65,
-      sz + dz * 0.20
+      sx + dx * 0.15 + jitter * 0.4,
+      sy + dy * 0.62,
+      sz + dz * 0.22
     );
     const mid2 = new THREE.Vector3(
-      sx + dx * 0.55,
-      sy + dy * 0.94,
-      sz + dz * 0.55
+      sx + dx * 0.58,
+      sy + dy * 0.92,
+      sz + dz * 0.58
     );
     const curve = new THREE.CubicBezierCurve3(start, mid1, mid2, CORE);
-    addCurve(curve, cPurple, cCyan, 0.16);
+    addCurve(curve, cPurple, cCyan, 0.12);
   }
-  FLOW_HALF.forEach(p => addFlow(-1, p));
-  FLOW_HALF.forEach(p => addFlow( 1, p));
+  FLOW_HALF.forEach((p, i) => addFlow(-1, p, ((i * 17) % 5) - 2));
+  FLOW_HALF.forEach((p, i) => addFlow( 1, p, ((i * 13) % 5) - 2));
 
   scene.add(flowGroup);
 

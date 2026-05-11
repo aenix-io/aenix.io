@@ -563,12 +563,11 @@ img { max-width: 100%; height: auto; display: block; }
   font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
 .peak {
-  --peak-line-h: 20px;       /* short tick from peak point up to label */
-  --peak-label-w: 120px;
+  --peak-line-h: 22px;
+  --peak-label-w: 140px;
   position: absolute;
-  /* Anchor the label JUST ABOVE its projected peak point — no top-row
-     pile-up, no UI tooltip feel. The dot at the bottom of the line sits
-     exactly on (--peak-x, --peak-y). */
+  /* Label anchored just above its projected peak point; the dot at
+     the bottom of the line sits exactly on (--peak-x, --peak-y). */
   left: var(--peak-x, 50%);
   top:  var(--peak-y, 50%);
   width: var(--peak-label-w);
@@ -577,21 +576,30 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 10px;
   line-height: 1.4;
   letter-spacing: 0.04em;
-  text-align: center;
+  text-align: left;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95);
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 .hero-3d-annotations.peaks-ready .peak { opacity: 1; }
 
+.peak-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  color: var(--brand-primary);
+  margin-bottom: 6px;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 3px rgba(1,165,255,0.45));
+}
 .peak-eyebrow {
   display: block;
   color: var(--brand-primary);
-  font-weight: 600;
-  font-size: 9px;
-  letter-spacing: 0.18em;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   white-space: nowrap;
 }
 .peak-body {
@@ -658,9 +666,15 @@ img { max-width: 100%; height: auto; display: block; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
-  padding: 32px 24px 48px;
-  margin: 0 auto;
+  padding: 22px 32px;
+  margin: 0 auto 32px;
   max-width: 1200px;
+  /* Single pill-shaped container around all four features. */
+  background: rgba(13, 19, 33, 0.55);
+  border: 1px solid rgba(96, 132, 188, 0.18);
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 .hero-feature {
   display: flex;
