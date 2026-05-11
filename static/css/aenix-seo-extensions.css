@@ -1221,6 +1221,131 @@
 .blog-quiz__result { text-align: center; }
 .blog-quiz__result .blog-quiz__retry { margin-top: 0.5rem; }
 
+/* ============================================================
+   COOKIE CONSENT BANNER
+   ============================================================ */
+
+#aenix-consent-root {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+#aenix-consent-root .aenix-consent-banner {
+  pointer-events: auto;
+}
+
+.aenix-consent-banner {
+  background: var(--aenix-text, #1A1A1A);
+  color: white;
+  border-top: 3px solid var(--aenix-accent, #E36414);
+  box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.18);
+}
+.aenix-consent-banner__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 1.5rem;
+  align-items: center;
+}
+.aenix-consent-banner__intro h2 {
+  margin: 0 0 0.375rem;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: white;
+}
+.aenix-consent-banner__intro p {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+}
+.aenix-consent-banner__intro a {
+  color: var(--aenix-accent, #E36414);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.aenix-consent-banner__actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.aenix-consent-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.12s, border-color 0.12s, color 0.12s;
+  white-space: nowrap;
+}
+.aenix-consent-btn--primary {
+  background: var(--aenix-accent, #E36414);
+  color: white;
+  border-color: var(--aenix-accent, #E36414);
+}
+.aenix-consent-btn--primary:hover {
+  background: #B85C00;
+  border-color: #B85C00;
+}
+.aenix-consent-btn--secondary {
+  background: transparent;
+  color: white;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+.aenix-consent-btn--secondary:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.06);
+}
+.aenix-consent-banner__settings {
+  grid-column: 1 / -1;
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+.aenix-consent-cat {
+  margin: 0.625rem 0;
+}
+.aenix-consent-cat label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+.aenix-consent-cat label input[type="checkbox"] {
+  accent-color: var(--aenix-accent, #E36414);
+  width: 1rem;
+  height: 1rem;
+}
+.aenix-consent-cat p {
+  margin: 0.25rem 0 0 1.5rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.7);
+}
+.aenix-consent-banner__settings .aenix-consent-btn {
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 800px) {
+  .aenix-consent-banner__inner {
+    grid-template-columns: 1fr;
+  }
+  .aenix-consent-banner__actions {
+    justify-content: stretch;
+  }
+  .aenix-consent-btn {
+    flex: 1;
+    text-align: center;
+  }
+}
+
 /* ─── Hide all placeholder content in print or production mode ─ */
 @media print {
   .placeholder-image,

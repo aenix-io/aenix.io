@@ -11,6 +11,7 @@ params:
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
   ahrefsAnalytics: GQGQZe4HnT/wYo45t5cUEw
+  apolloAppId: 66b1e05b9f632a02d2ea4fad
   # gtmContainer: GTM-XXXXXXX  # uncomment + set when GTM container is provisioned
   # hotjarId: 0000000           # uncomment + set when Hotjar site ID is provisioned
   # Hide design-notes by default. Enable per-build with HUGO_PARAMS_SHOW_DESIGN_NOTES=true

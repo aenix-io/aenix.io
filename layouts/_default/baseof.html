@@ -18,9 +18,15 @@
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  {{/* Fonts */}}
+  {{/* DNS prefetch / preconnect for third-party services we expect to load */}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://analytics.ahrefs.com">
+  <link rel="dns-prefetch" href="https://assets.apollo.io">
+  <link rel="dns-prefetch" href="https://webforms.pipedrive.com">
+
+  {{/* Fonts */}}
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
   {{/* CSS — theme base */}}
@@ -32,52 +38,13 @@
   {{/* Project-level SEO/GEO emission — canonical, JSON-LD, hreflang, OG extras, aenix-seo-extensions.css */}}
   {{ partial "seo/head.html" . }}
 
-  {{/* Google Tag Manager (container — fires before GA so GA can be added via GTM) */}}
-  {{ with .Site.Params.gtmContainer }}
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','{{ . }}');</script>
-  {{ end }}
-
-  {{/* Google Analytics (gtag — direct, alongside or instead of GTM) */}}
-  {{ with .Site.Params.googleAnalytics }}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ . }}');
-  </script>
-  {{ end }}
-
-  {{/* Ahrefs Analytics */}}
-  {{ with .Site.Params.ahrefsAnalytics }}
-  <script src="https://analytics.ahrefs.com/analytics.js" data-key="{{ . }}" async></script>
-  {{ end }}
-
-  {{/* Hotjar (optional) */}}
-  {{ with .Site.Params.hotjarId }}
-  <script>(function(h,o,t,j,a,r){h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-  h._hjSettings={hjid:{{ . }},hjsv:6};a=o.getElementsByTagName('head')[0];
-  r=o.createElement('script');r.async=1;r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-  a.appendChild(r);})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');</script>
-  {{ end }}
-
   {{ block "head" . }}{{ end }}
-
-  {{/* Apollo tracker */}}
-  <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
-  o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
-  o.onload=function(){window.trackingFunctions.onLoad({appId:"66b1e05b9f632a02d2ea4fad"})},
-  document.head.appendChild(o)}initApollo();</script>
 </head>
 <body class="{{ with .Params.bodyClass }}{{ . }}{{ end }}">
-  {{/* GTM noscript fallback (recommended by Google immediately after <body>) */}}
+  {{/* GTM <noscript> fallback (only renders when GTM container is configured AND consent granted; here we emit it always so GTM works for no-JS visitors after consent decision is reflected in a cookie, but since cookie-gating happens client-side this is best-effort) */}}
   {{ with .Site.Params.gtmContainer }}
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ . }}"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
   {{ end }}
 
   {{ partial "header.html" . }}
@@ -88,14 +55,33 @@
 
   {{ partial "footer.html" . }}
 
+  {{/* Cookie consent + tracker activator
+       Always rendered. Reads data-* attributes to know which trackers to
+       activate on consent. Defaults consent to "denied" before user choice
+       per Google Consent Mode v2. */}}
+  <div id="aenix-consent-root"
+       data-lang="{{ .Site.Language.Lang | default "en" }}"
+       {{ with .Site.Params.googleAnalytics }}data-ga-id="{{ . }}"{{ end }}
+       {{ with .Site.Params.gtmContainer }}data-gtm-container="{{ . }}"{{ end }}
+       {{ with .Site.Params.ahrefsAnalytics }}data-ahrefs-key="{{ . }}"{{ end }}
+       {{ with .Site.Params.apolloAppId }}data-apollo-app-id="{{ . }}"{{ end }}
+       {{ with .Site.Params.hotjarId }}data-hotjar-id="{{ . }}"{{ end }}
+       hidden></div>
+  <script src="/js/consent.js" defer></script>
+
   {{ $js := resources.Get "js/main.js" | fingerprint }}
   {{ if $js }}
     <script src="{{ $js.RelPermalink }}"></script>
   {{ end }}
 
+  {{/* orb.js — particle field for the home hero. Only loads if a
+       #flow-canvas element is present on the page (the script itself
+       bails out otherwise). Deferred so it doesn't block interactive. */}}
+  {{ if .IsHome }}
   {{ $orb := resources.Get "js/orb.js" | fingerprint }}
   {{ if $orb }}
-    <script src="{{ $orb.RelPermalink }}"></script>
+    <script src="{{ $orb.RelPermalink }}" defer></script>
+  {{ end }}
   {{ end }}
 
   {{ block "scripts" . }}{{ end }}
