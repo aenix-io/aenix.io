@@ -5,6 +5,7 @@ date: "2026-02-27"
 author: "Timur Tukaev"
 type: "news"
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*bI_Zo21na7E1xiKxoAnCBg.png"
 source_url: "https://blog.aenix.io/join-%C3%A6nix-at-cloudfest-2026-26ca996d344c"
 ---
 

@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Proxmox", "Cozystack", "CNCF", "Storage"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*XfMqb8nryVeTytZOexqc3Q.png"
 source_url: "https://medium.com/@tym83/cozysummit-lineup-is-out-dd34315ff33f"
 ---
 

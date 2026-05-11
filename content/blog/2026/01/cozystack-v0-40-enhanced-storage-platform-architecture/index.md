@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "LINSTOR", "Observability", "Storage", "etcd"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*rjM-h-08RaKjwq9Jc9se6g.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-40-enhanced-storage-platform-architecture-9c5ab48abd68"
 ---
 

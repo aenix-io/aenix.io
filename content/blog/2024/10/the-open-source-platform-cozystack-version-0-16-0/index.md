@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "GitOps", "Observability"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*jOAv-G1LLJy84HwQHpI0Pw.png"
 source_url: "https://medium.com/@tym83/the-open-source-platform-cozystack-version-0-16-0-e2e86ca6ec47"
 ---
 

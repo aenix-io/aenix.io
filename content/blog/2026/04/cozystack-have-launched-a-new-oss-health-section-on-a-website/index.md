@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Open Source", "DevOps", "Kubernetes", "CNCF", "Platform Engineering", "Cozystack"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*aXwgmFc0CGbAzMet5bY0IQ.png"
 source_url: "https://blog.aenix.io/cozystack-have-launched-a-new-oss-health-section-on-a-website-fa1f4d889c47"
 ---
 

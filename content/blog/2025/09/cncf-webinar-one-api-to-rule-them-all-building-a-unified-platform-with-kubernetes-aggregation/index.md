@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "CNCF", "Platform Engineering", "Observability", "etcd"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*OO-ATURlxPokRXAy1Ee8nA.png"
 source_url: "https://medium.com/@tym83/cncf-webinar-one-api-to-rule-them-all-building-a-unified-platform-with-kubernetes-aggregation-4b03ec5ee222"
 ---
 

@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "AI/ML", "CNCF"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*zEOKAq9jaDdY4Y9drKo9jw.jpeg"
 source_url: "https://medium.com/@tym83/invitation-to-cozysummit-virtual-december-3-050bc72f1b4b"
 ---
 

@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Cozystack", "Open Source"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*0Xw0OKj1Ldx9MLJqOWX7CQ.jpeg"
 source_url: "https://medium.com/@tym83/cozystack-on-hacktoberfest-become-a-part-of-the-global-it-event-e288144861eb"
 ---
 

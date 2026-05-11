@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "tutorial"
 topics: ["DevOps", "Open Source", "Ansible", "Kubernetes", "Platform Engineering", "Cozystack"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*TRGnafeMsVruWze2D0p6DA.png"
 source_url: "https://blog.aenix.io/deploy-cozystack-on-any-kubernetes-with-ansible-b28e61f586f9"
 ---
 

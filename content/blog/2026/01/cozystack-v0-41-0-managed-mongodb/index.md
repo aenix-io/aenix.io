@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Observability", "etcd"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*PKML-xY94j4iWwjUpKo1Yg.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-41-0-managed-mongodb-d93ce116eb88"
 ---
 

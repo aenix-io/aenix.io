@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "tutorial"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*nMttTSsu5Os7m1Pku0zBNA.png"
 source_url: "https://medium.com/@tym83/cozystack-is-no-longer-tied-to-talos-deploy-on-any-linux-distro-now-dd8cd8b05b7e"
 ---
 

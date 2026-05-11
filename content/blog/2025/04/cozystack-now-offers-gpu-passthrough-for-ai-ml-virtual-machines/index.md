@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI/ML", "GPU", "Multi-tenancy"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*Z4hqqFhepCzEwJn7WZpJQw.png"
 source_url: "https://medium.com/@tym83/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines-b8783c0ce358"
 ---
 

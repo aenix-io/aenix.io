@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "LINSTOR", "Multi-tenancy", "Observability"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*NSPtCnH5tEiXHe7Dv62DCw.jpeg"
 source_url: "https://medium.com/@tym83/cozystack-1-2-opensearch-vpc-peering-and-smarter-tenant-scheduling-777a13bbe25c"
 ---
 

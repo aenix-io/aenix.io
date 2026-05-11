@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Open Source", "Platform Engineering", "CNCF", "DevOps", "Kubernetes"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*NpRvSM1Y7tFtb2BDf9KCpw.png"
 source_url: "https://blog.aenix.io/cozysummit-virtual-2026-the-program-is-set-and-it-looks-amazing-0a921fb62229"
 ---
 

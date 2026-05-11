@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/0*ScnWV4E2GWHi4fRh"
 source_url: "https://medium.com/@tym83/cozystack-v0-34-d66557a0deeb"
 ---
 

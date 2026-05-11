@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "CNCF"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*AO-WkXfp0XykgStCON_N4A.jpeg"
 source_url: "https://medium.com/@tym83/cozystack-%C3%A6nix-at-kubecon-europe-430eea0e9a3c"
 ---
 

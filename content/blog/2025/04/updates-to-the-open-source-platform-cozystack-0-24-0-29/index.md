@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/0*XPWNsEtGmcIiY6zs"
 source_url: "https://medium.com/@tym83/updates-to-the-open-source-platform-cozystack-0-24-0-29-d47788ab7ebe"
 ---
 

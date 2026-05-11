@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Multi-tenancy", "Observability"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*O0OQMDGX0oHS2AXm0zDg4g.png"
 source_url: "https://medium.com/@tym83/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21-22e84c65b29d"
 ---
 

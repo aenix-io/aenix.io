@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "GitOps", "CNCF", "Platform Engineering", "Compliance", "Observability"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*h7Bgr28OCTG8XS5WUtb7RA.png"
 source_url: "https://medium.com/@tym83/amazing-news-invitation-to-cozysummit-virtual-may-26-db5190fc4afd"
 ---
 

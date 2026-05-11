@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Multi-tenancy", "CNCF"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*WLZZyy9BhhuQQ69f3jRGWQ.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-37-brand-new-ui-dd4ad96eac57"
 ---
 

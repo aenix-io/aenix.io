@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Multi-tenancy", "Observability", "Terraform"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*26UVJiADy26X-QtmslpZqw.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-20-release-terraform-keycloak-and-stability-security-improvements-55dd25335e6e"
 ---
 

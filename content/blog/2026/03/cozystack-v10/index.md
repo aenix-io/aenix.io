@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Open Source", "Kubernetes", "Platform Engineering", "DevOps", "CNCF", "Cozystack"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*zVcPk2CIGDmyEdt8CmRTCQ.png"
 source_url: "https://blog.aenix.io/cozystack-v1-0-b3f70879b250"
 ---
 

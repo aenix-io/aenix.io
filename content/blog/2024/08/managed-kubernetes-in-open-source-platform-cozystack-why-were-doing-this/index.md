@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Multi-tenancy", "Observability", "Terraform"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/0*2NqXHHzohclI0ZPo.png"
 source_url: "https://medium.com/@tym83/managed-kubernetes-in-open-source-platform-cozystack-why-were-doing-this-94d42c7c48da"
 ---
 

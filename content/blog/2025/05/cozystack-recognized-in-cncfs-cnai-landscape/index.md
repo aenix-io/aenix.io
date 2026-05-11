@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "AI/ML", "GPU", "CNCF", "Platform Engineering"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*JqeVSHv3Vzld4DhSKOA5GQ.png"
 source_url: "https://medium.com/@tym83/cozystack-recognized-in-cncfs-cnai-landscape-331f892b9639"
 ---
 

@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Platform Engineering", "Kubernetes", "DevOps", "Open Source", "CNCF", "Cozystack"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*lLZdb10kWsO4TwvhRA-CAg.png"
 source_url: "https://blog.aenix.io/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images-3ad9b04a39de"
 ---
 

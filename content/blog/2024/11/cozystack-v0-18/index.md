@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "Multi-tenancy", "Observability"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*z7lAeBBjXlxFY_hE6AyN0A.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-18-d724cd6d2fa1"
 ---
 

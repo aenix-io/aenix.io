@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "Observability", "Storage", "etcd"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*2QrRVPI2aX1cTINRsKtFzA.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-%D0%B8-workloadmonitor-ff22e6d20b17"
 ---
 

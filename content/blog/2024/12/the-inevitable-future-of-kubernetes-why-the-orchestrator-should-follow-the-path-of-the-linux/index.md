@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Talos"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/0*25rAkaFo6sux9O2L"
 source_url: "https://medium.com/@tym83/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux-367f49916712"
 ---
 

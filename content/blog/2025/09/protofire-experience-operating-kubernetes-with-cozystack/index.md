@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Talos", "Financial Services", "CNCF", "Migration"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*ZaReZmQFCRYbv7yM1zoq-g.png"
 source_url: "https://medium.com/@tym83/protofire-experience-operating-kubernetes-with-cozystack-1daa682945f5"
 ---
 

@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Open Source", "Kubernetes", "CNCF", "Cloud", "Game Servers", "Cozystack"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*54n_wsW7R9MGslexi-xaLg.png"
 source_url: "https://blog.aenix.io/game-servers-on-cozystack-no-april-fools-joke-798704b32998"
 ---
 

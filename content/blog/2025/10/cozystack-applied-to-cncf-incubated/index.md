@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "CNCF"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*_xs_0yX9K8OK2BRzFEpj6g.png"
 source_url: "https://medium.com/@tym83/cozystack-applied-to-cncf-incubated-7c22faa134a3"
 ---
 

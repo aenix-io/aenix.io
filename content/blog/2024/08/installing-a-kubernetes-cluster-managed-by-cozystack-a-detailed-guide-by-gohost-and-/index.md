@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "tutorial"
 topics: ["Proxmox", "Kubernetes", "Cozystack", "Talos", "Hosting", "etcd"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*ZLyJcdvbsPSJnErGKwlJ0g.png"
 source_url: "https://medium.com/@tym83/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-%C3%A6nix-2b2d2e0ddbdb"
 ---
 

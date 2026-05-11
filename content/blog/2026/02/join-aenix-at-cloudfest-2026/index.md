@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Cozystack", "Hosting"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*bI_Zo21na7E1xiKxoAnCBg.png"
 source_url: "https://medium.com/@tym83/join-%C3%A6nix-at-cloudfest-2026-26ca996d344c"
 ---
 

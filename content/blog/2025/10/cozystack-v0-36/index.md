@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Talos", "Multi-tenancy", "Observability", "Storage"]
 language: "en"
+cover_image: "https://cdn-images-1.medium.com/max/1200/1*VDRWuShaJJRRl6HIfP61uA.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-36-dfa5a10bd86a"
 ---
 
