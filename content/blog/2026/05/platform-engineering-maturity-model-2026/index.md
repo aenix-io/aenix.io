@@ -7,6 +7,39 @@ type: "article"
 topics: ["GitOps", "Multi-tenancy", "Platform Engineering", "Observability"]
 language: "en"
 companion_landing: "/services/platform-engineering/"
+quiz:
+  title: "Test yourself: PE maturity model"
+  questions:
+    - q: "How many maturity stages does the model define?"
+      options:
+        - { text: "Three", correct: false }
+        - { text: "Five", correct: true }
+        - { text: "Eight", correct: false }
+      explanation: "Five stages: pre-platform → shared infrastructure → self-service primitives → internal developer platform → mature platform engineering. Most organizations sit at stage 2-3."
+    - q: "How many dimensions does each platform get scored on?"
+      options:
+        - { text: "Five", correct: false }
+        - { text: "Eight (workload portability, GitOps adoption, observability unification, secrets handling, identity model, multi-tenancy, DR posture, self-service depth)", correct: true }
+        - { text: "Twelve", correct: false }
+      explanation: "Eight dimensions: workload portability, GitOps adoption, observability unification, secrets handling, identity model, multi-tenancy, disaster-recovery posture, self-service depth. Each scored on a 5-stage rubric matching overall stages."
+    - q: "For a mid-large engineering organisation (200+ engineers), what target stage does the article recommend within 18-24 months?"
+      options:
+        - { text: "Stage 2", correct: false }
+        - { text: "Stage 4 across all 8 dimensions", correct: true }
+        - { text: "Stage 5 immediately", correct: false }
+      explanation: "For 200+ engineers, multiple product teams: target stage 4 across all 8 dimensions within 18-24 months. Mature stage 5 typically takes 3-5 years. Smaller orgs (<100 engineers) — stage 3 may be sufficient; stage 4-5 is over-engineering."
+    - q: "Why does the article say to walk through the assessment with engineering leadership and platform team SEPARATELY?"
+      options:
+        - { text: "It's faster", correct: false }
+        - { text: "Disagreement between the two = real signal — surfaces hidden gaps in shared understanding", correct: true }
+        - { text: "Confidentiality reasons", correct: false }
+      explanation: "Walk through separately, then compare answers — disagreement = real signal. Where engineering leadership and platform team disagree on the maturity score, you've found a gap in shared understanding that's worth surfacing."
+    - q: "Which dimension is \"self-service depth\" specifically about?"
+      options:
+        - { text: "Backstage UI polish", correct: false }
+        - { text: "Golden paths covering 80% of common requests", correct: true }
+        - { text: "Number of self-service buttons", correct: false }
+      explanation: "Self-service depth = golden paths covering 80% of common requests. The other 20% need escape hatches (real conversation with platform team), but a mature platform absorbs the bulk of the volume through opinionated paths."
 ---
 
 Companion to **[Platform Engineering Maturity Assessment](/resources/platform-engineering-maturity-assessment)**.
