@@ -7,6 +7,39 @@ type: "article"
 topics: ["NIS2", "AI/ML", "GPU", "Compliance"]
 language: "en"
 companion_landing: "/industries/energy/"
+quiz:
+  title: "Test yourself: smart-grid platform architecture"
+  questions:
+    - q: "What three pressures converge on energy infrastructure modernization in 2026 according to the article?"
+      options:
+        - { text: "GDPR, M&A, and remote work", correct: false }
+        - { text: "NIS2 compliance, AI for grid operations, and edge compute at substation density", correct: true }
+        - { text: "Hyperscaler outage, ESG reporting, and AGI", correct: false }
+      explanation: "The piece names three pressures: NIS2 compliance pressure, AI demand for grid optimisation, and edge compute requirements at substation density. Combined, they push energy operators away from centralized SCADA architectures."
+    - q: "In the IT/OT convergence pattern, what kind of boundary does the article recommend between IT and OT zones?"
+      options:
+        - { text: "No boundary — full merge", correct: false }
+        - { text: "Strict, air-gapped or restricted-egress with controlled-channel updates for OT", correct: true }
+        - { text: "Soft, policy-based with shared identity", correct: false }
+      explanation: "The article rejects the \"merge IT and OT\" pattern as dangerous. The working pattern is \"convergence with boundaries\": OT zone is air-gapped or strictly restricted-egress, updates go through Harbor mirror or manual approval, identity is separate from workforce IT."
+    - q: "Which AI use cases are listed as common at energy operators?"
+      options:
+        - { text: "Personalised marketing and customer-LTV prediction only", correct: false }
+        - { text: "Load + generation forecasting, predictive maintenance, demand response, market-price optimisation, grid topology", correct: true }
+        - { text: "Synthetic-data generation only", correct: false }
+      explanation: "Common AI workloads named: load forecasting (short/medium/long-term), generation forecasting (renewables), predictive maintenance (transformer/line/substation health), demand response automation, market-price optimisation, grid topology optimisation, and customer-facing AI."
+    - q: "What hardware sizing does the article suggest for a mid-size energy operator (5–10 GW generation portfolio) running grid-AI?"
+      options:
+        - { text: "2–4 GPUs", correct: false }
+        - { text: "16–64 GPUs across H100/L40S, with elastic burst for re-training", correct: true }
+        - { text: "500+ GPUs minimum", correct: false }
+      explanation: "For a 5–10 GW operator: 16–64 GPUs across H100 / L40S (forecasting + inference workloads) plus elastic burst capacity for re-training cycles."
+    - q: "Why does the article argue that long platform horizon (decade-plus) suits Apache 2.0 + CNCF projects for energy operators?"
+      options:
+        - { text: "Faster vendor support tickets", correct: false }
+        - { text: "Grid hardware refresh cycles are decade-scale, so vendor-roadmap risk is the long-term failure mode and OSS/CNCF governance minimises it", correct: true }
+        - { text: "Cheaper licensing only", correct: false }
+      explanation: "The long horizon argument: Apache 2.0 license + CNCF Project community governance fits decade-plus operational planning. Vendor roadmap risk — the dominant failure mode over 10–20 years — is minimised because the community can outlive any single vendor."
 ---
 
 **This is the long-form companion to our [energy industry page](/industries/energy/). It walks through smart grid platform architecture in 2026 — what's actually being built at energy operators consolidating legacy SCADA/DCS, adding AI for grid optimization, and aligning with NIS2 essential-entity requirements. Written for grid IT leads, OT engineers, and infrastructure architects at energy operators.**

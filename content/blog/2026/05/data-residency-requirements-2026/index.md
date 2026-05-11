@@ -7,6 +7,43 @@ type: "tutorial"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Compliance", "Backup & DR"]
 language: "en"
 companion_landing: "/solutions/data-sovereignty/"
+quiz:
+  title: "Test yourself: data residency in 2026"
+  questions:
+    - q: "According to the article, which is the single most common data-residency failure mode found during platform readiness assessments?"
+      options:
+        - { text: "Production storage in the wrong region", correct: false }
+        - { text: "Application logs and metrics shipped to a SaaS observability vendor with US-default processing region", correct: true }
+        - { text: "Backup retention policies missing", correct: false }
+        - { text: "Customer data going to a CDN edge", correct: false }
+      explanation: "Failure 1 — \"production is right, observability is wrong.\" Compliance teams catch the production storage but miss the telemetry plane that ships logs/metrics to a US-based SaaS observability region."
+    - q: "How deep into the supplier chain does DORA Article 30(2)(a) (and equivalent NIS2 provisions) typically require visibility?"
+      options:
+        - { text: "Only the direct contracted vendor", correct: false }
+        - { text: "To the second hop (sub-contractors of your direct supplier)", correct: true }
+        - { text: "Every tier all the way to the data-centre electricity provider", correct: false }
+      explanation: "The article cites Article 30(2)(a) as requiring transparency to the second hop. \"Most organizations cannot answer it, beyond the first hop.\""
+    - q: "Which of these does the article say residency does NOT solve, even with all data in the right region?"
+      options:
+        - { text: "Sovereignty fully (keys, supplier chain, audit gaps remain)", correct: true }
+        - { text: "Backup retention policies", correct: false }
+        - { text: "Encryption-at-rest configuration", correct: false }
+        - { text: "IaC drift detection", correct: false }
+      explanation: "The article explicitly notes that residency does not solve sovereignty fully — keys held by a non-sovereign provider, dependencies in non-sovereign jurisdictions, and audit-process gaps can still fail the broader sovereignty test."
+    - q: "Which legal regime is named as still permitting US-government data requests over EU regions of US-headquartered providers?"
+      options:
+        - { text: "GDPR", correct: false }
+        - { text: "NIS2", correct: false }
+        - { text: "US CLOUD Act and similar regimes", correct: true }
+        - { text: "eIDAS", correct: false }
+      explanation: "US-headquartered cloud providers operating EU regions remain subject to US-government data requests under CLOUD Act and similar regimes. Some regulators consider this a residual risk that requires sovereign-cloud arrangements rather than hyperscaler regions."
+    - q: "For multinational organisations, what does the article recommend instead of a single global residency policy?"
+      options:
+        - { text: "A worldwide data-handling policy enforced in HQ", correct: false }
+        - { text: "Per-jurisdiction tenant boundaries with explicit cross-border controls", correct: true }
+        - { text: "One hyperscaler globally with a long-term contract", correct: false }
+        - { text: "Outsourcing residency to a managed-service provider", correct: false }
+      explanation: "The architecture answer is per-jurisdiction tenant boundaries with explicit cross-border controls — the residency landscape is a matrix of jurisdictions with overlapping and sometimes contradictory requirements, not a single rule."
 ---
 
 **This is the long-form companion to our [data sovereignty services page](/solutions/data-sovereignty/). It walks through what data-residency rules actually require, where typical cloud setups quietly fail, and what an architecture that can demonstrate residency at every layer looks like — for the platform engineers, cloud architects, and compliance leads who have to translate "data must stay in jurisdiction X" into running systems.**

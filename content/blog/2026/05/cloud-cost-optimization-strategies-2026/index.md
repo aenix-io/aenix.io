@@ -7,6 +7,41 @@ type: "tutorial"
 topics: ["Kubernetes", "Cloud Repatriation", "Financial Services", "Cost Optimization"]
 language: "en"
 companion_landing: "/solutions/cloud-cost-optimization/"
+quiz:
+  title: "Test yourself: cloud cost optimisation in 2026"
+  questions:
+    - q: "What are the two layers the article uses to organise all cost-optimisation work?"
+      options:
+        - { text: "FinOps and DevOps", correct: false }
+        - { text: "Configurational and architectural optimisation", correct: true }
+        - { text: "Tooling and culture", correct: false }
+        - { text: "Compute and storage", correct: false }
+      explanation: "Configurational (use what you have, better — typically 15–25% on a moderately managed estate) is run first; architectural (change what you run on — repatriation, replace managed services, switch providers) is evaluated only after configurational savings are captured."
+    - q: "Which strategy is named as having highly variable savings (0–30%) depending on managed-service exposure?"
+      options:
+        - { text: "Capture commitment-realization gap", correct: false }
+        - { text: "Eliminate waste systematically", correct: false }
+        - { text: "Review managed-service premiums", correct: true }
+        - { text: "Storage tiering and lifecycle", correct: false }
+      explanation: "Hyperscaler managed services are priced 2–4× over self-managed equivalents. Savings are 0–30% depending on how much of your spend is in managed databases, managed Kubernetes control planes, managed observability, etc."
+    - q: "Typical impact of Strategy 7 (Kubernetes-specific cost optimisation) on Kubernetes spend?"
+      options:
+        - { text: "5–10%", correct: false }
+        - { text: "20–50%", correct: true }
+        - { text: "70–90%", correct: false }
+      explanation: "Kubernetes-specific optimisation — right-sizing pod requests/limits, autoscaler tuning, Spot/Preemptible adoption, multi-tenant consolidation, OpenCost/Kubecost — typically lands 20–50% on Kubernetes spend."
+    - q: "Why is egress described as \"high-leverage to reclaim\" even though it is a smaller share of the bill?"
+      options:
+        - { text: "Egress contracts have public reference prices", correct: false }
+        - { text: "It is a high-margin line for cloud providers, so reclaimed savings drop straight to the operator", correct: true }
+        - { text: "It is taxed differently", correct: false }
+      explanation: "Egress is typically 5–25% on the egress lines specifically (less on overall bill) but is high-margin for cloud providers — every dollar reclaimed is a dollar saved with no operational trade-off."
+    - q: "According to the piece, when does configurational optimisation stop paying and architectural moves become warranted?"
+      options:
+        - { text: "When the team gets bored", correct: false }
+        - { text: "When the savings hit the structural ceiling — i.e. the architecture itself, not its tuning, is the next constraint", correct: true }
+        - { text: "After the first audit", correct: false }
+      explanation: "Configurational first, captures those savings, then evaluate architectural moves. Skipping configurational leaves money on the table; skipping architectural means optimisation hits a structural ceiling and the operator is stuck."
 ---
 
 **This is the long-form companion to our [cloud cost optimization services page](/solutions/cloud-cost-optimization/). It walks through cloud cost optimization strategies that actually work — what to fix first, where the structural limits sit, and how to tell the difference between a configurational savings and a strategic decision. Written for the platform engineers, finance partners, and infrastructure leads who own cloud-cost trajectories.**

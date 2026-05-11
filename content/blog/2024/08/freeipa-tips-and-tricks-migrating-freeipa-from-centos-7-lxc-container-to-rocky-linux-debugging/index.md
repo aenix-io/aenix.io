@@ -7,6 +7,43 @@ type: "article"
 topics: ["Proxmox", "Cozystack", "Migration", "Backup & DR", "FreeIPA"]
 language: "en"
 source_url: "https://medium.com/@tym83/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging-b8b923499b96"
+quiz:
+  title: "Test yourself: FreeIPA recovery + migration"
+  questions:
+    - q: "What was the underlying reason the original LXC container would not start on the modern Proxmox host?"
+      options:
+        - { text: "Wrong CPU architecture", correct: false }
+        - { text: "Outdated systemd inside the container only supported Cgroups v1, while modern Proxmox uses Cgroups v2", correct: true }
+        - { text: "A corrupted root filesystem", correct: false }
+        - { text: "Missing kernel module", correct: false }
+      explanation: "The new Proxmox runs on Cgroups v2; the outdated container systemd only supports Cgroups v1. systemd inside wouldn't start, but a bash shell could still be entered."
+    - q: "Why did the author have to set the system date back before running ipactl restart?"
+      options:
+        - { text: "To fool a license check", correct: false }
+        - { text: "Because most certificates had expired and FreeIPA services need valid certs to start, but you cannot renew them while services are down", correct: true }
+        - { text: "To pin Kerberos tickets", correct: false }
+        - { text: "To match the LXC host clock", correct: false }
+      explanation: "A circular failure: services need valid certs to start, but cert renewal needs the services to be running. Setting the date back before expiry breaks the loop. NTP is disabled first so it doesn't resync to real time."
+    - q: "Which CentOS-7 mirror configuration trick does the article use after EOL?"
+      options:
+        - { text: "Switching baseurl from mirror.centos.org to vault.centos.org and disabling mirrorlist", correct: true }
+        - { text: "Re-signing every package locally", correct: false }
+        - { text: "Skipping yum updates entirely", correct: false }
+      explanation: "The sed pair comments out mirrorlist and rewrites baseurl from mirror.centos.org to vault.centos.org so post-EOL CentOS 7 still installs packages from the archive."
+    - q: "What command is used to enter the Proxmox LXC container space from the host?"
+      options:
+        - { text: "pct enter <id>", correct: true }
+        - { text: "lxc-attach -n <name>", correct: false }
+        - { text: "docker exec -it <id> bash", correct: false }
+        - { text: "nsenter -t <pid>", correct: false }
+      explanation: "`pct enter 112` — the Proxmox-native command for jumping into an LXC container. It works even when systemd inside is broken because it just spawns bash."
+    - q: "Which command did the author use to surface the per-cert expiry status during diagnosis?"
+      options:
+        - { text: "openssl x509 -in *.pem -noout -dates", correct: false }
+        - { text: "getcert list | grep -E \"Request ID|status|certificate|expires\"", correct: true }
+        - { text: "ipa cert-show all", correct: false }
+        - { text: "kinit admin && klist", correct: false }
+      explanation: "`getcert list` (from certmonger) gives the canonical view of FreeIPA-tracked certs. Grep narrows to the ID/status/path/expiry lines. ipa-getcert resubmit -i <ID> then drives the renewal."
 ---
 
 ---

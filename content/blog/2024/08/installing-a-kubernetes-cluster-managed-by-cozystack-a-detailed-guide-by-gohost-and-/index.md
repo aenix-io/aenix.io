@@ -8,6 +8,44 @@ topics: ["Proxmox", "Kubernetes", "Cozystack", "Talos", "Hosting", "etcd"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*ZLyJcdvbsPSJnErGKwlJ0g.png"
 source_url: "https://medium.com/@tym83/installing-a-kubernetes-cluster-managed-by-cozystack-a-detailed-guide-by-gohost-and-%C3%A6nix-2b2d2e0ddbdb"
+quiz:
+  title: "Test yourself: Cozystack + Talos installation"
+  questions:
+    - q: "In the cluster topology described, what is the minimum number of servers needed in the cluster to ensure fault tolerance?"
+      options:
+        - { text: "1", correct: false }
+        - { text: "2", correct: false }
+        - { text: "3", correct: true }
+        - { text: "5", correct: false }
+      explanation: "The article specifies 3 servers as the minimum to provide fault tolerance, with NVMe disks for containers and SSD for the OS."
+    - q: "What is the role of the management host in this Cozystack setup?"
+      options:
+        - { text: "It runs the production workloads after install", correct: false }
+        - { text: "It is used only for the initial cluster setup (and as an example default gateway)", correct: true }
+        - { text: "It permanently hosts the Cozystack control plane", correct: false }
+        - { text: "It runs LINSTOR storage", correct: false }
+      explanation: "The management-host is needed only for initial cluster setup; another gateway can replace it after deployment. SRV1/SRV2/SRV3 use it as default gateway during bootstrap."
+    - q: "Which OS does Cozystack use as its host OS in this guide?"
+      options:
+        - { text: "Ubuntu Server", correct: false }
+        - { text: "Talos Linux", correct: true }
+        - { text: "Rocky Linux", correct: false }
+        - { text: "Debian", correct: false }
+      explanation: "Cozystack runs on Talos Linux, which the guide highlights for its high security level. Ubuntu 22.04 is only used for the management host that bootstraps the cluster."
+    - q: "What does the network plugin (cluster.network.cni) get set to in the Talos patch shown?"
+      options:
+        - { text: "flannel", correct: false }
+        - { text: "calico", correct: false }
+        - { text: "none (CNI is provided by Cozystack itself, not Talos)", correct: true }
+        - { text: "cilium", correct: false }
+      explanation: "cluster.network.cni.name is set to \"none\" in the patch — Cozystack supplies its own CNI (Cilium) on top, so the Talos default must be disabled."
+    - q: "Which architectural property of Cozystack does the author single out as appealing for hosting providers in particular?"
+      options:
+        - { text: "Tenant Kubernetes clusters run as VMs inside the host cluster — no nested hypervisor for the control plane", correct: true }
+        - { text: "Built-in support for Microsoft Active Directory", correct: false }
+        - { text: "Free commercial license for resellers", correct: false }
+        - { text: "Mandatory air-gap install", correct: false }
+      explanation: "The author calls out that Cozystack runs tenant Kubernetes control planes inside the host Kubernetes — no virtualization for the control plane — while workers run as VMs. That gives optimal resource use without sacrificing tenant isolation."
 ---
 
 ---

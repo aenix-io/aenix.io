@@ -7,6 +7,39 @@ type: "article"
 topics: ["NIS2", "Financial Services", "Compliance"]
 language: "en"
 companion_landing: "/solutions/nis2-compliance/"
+quiz:
+  title: "Test yourself: NIS2 for cloud infrastructure"
+  questions:
+    - q: "When was NIS2 transposition into national law due across EU member states?"
+      options:
+        - { text: "17 January 2025", correct: false }
+        - { text: "17 October 2024", correct: true }
+        - { text: "1 January 2026", correct: false }
+      explanation: "NIS2 transposition was due by 17 October 2024 (some member states ran late). DORA — easy to confuse — went into force on 17 January 2025."
+    - q: "In the NIS2 incident-reporting timeline (Article 23), what is the deadline for the first \"early warning\"?"
+      options:
+        - { text: "24 hours of becoming aware", correct: true }
+        - { text: "72 hours of becoming aware", correct: false }
+        - { text: "One month of becoming aware", correct: false }
+      explanation: "Three-stage process: early warning within 24h, incident notification within 72h, final report within one month. The 24h alert is usually the tightest constraint and forces investment in detection telemetry."
+    - q: "Cloud providers and datacenter providers are classified under NIS2 as which kind of entity?"
+      options:
+        - { text: "Important entities (Annex II)", correct: false }
+        - { text: "Essential entities under Digital Infrastructure (Annex I)", correct: true }
+        - { text: "Out of scope", correct: false }
+      explanation: "Annex I (essential entities) lists Digital Infrastructure including IXPs, DNS service providers, TLD name registries, cloud providers, datacenter providers, CDN providers, MSPs, MSSPs, and public electronic communications services."
+    - q: "In Article 21 → architecture mapping, which control is named for service-to-service authentication?"
+      options:
+        - { text: "Username + password rotation", correct: false }
+        - { text: "Workload identity via SPIFFE/SPIRE or equivalent", correct: true }
+        - { text: "Anonymous internal traffic", correct: false }
+      explanation: "Under \"Access control / human resources\" the architecture mapping names workload identity (SPIFFE/SPIRE or equivalent) for service-to-service auth. Privileged access management, joiner-mover-leaver automation, and asset register completeness round out the control area."
+    - q: "How does NIS2 typically apply for entities below the size threshold but in specific roles like DNS service providers?"
+      options:
+        - { text: "Always exempt", correct: false }
+        - { text: "Some entities are in scope regardless of size — e.g. DNS service providers, TLD registries, MSPs", correct: true }
+        - { text: "Only above 500 employees", correct: false }
+      explanation: "Entity classification depends on size thresholds AND sector-specific criteria. Some entities are in scope regardless of size — explicitly DNS service providers, TLD registries, MSPs."
 ---
 
 **This is the long-form companion to our [NIS2 compliance services page](/solutions/nis2-compliance/). It walks through what NIS2 actually requires of your cloud architecture — by Article, by control, with a working checklist for the engineers and architects implementing it.**
