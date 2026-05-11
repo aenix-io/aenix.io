@@ -7,6 +7,39 @@ type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Kubernetes", "Cozystack"]
 language: "de"
 companion_landing: "/de/produkte/cozystack/"
+quiz:
+  title: "Wissens-Check: Cozystack-Architektur"
+  questions:
+    - q: "Wie viele architektonische Hauptentscheidungen werden für Cozystack im Artikel beschrieben?"
+      options:
+        - { text: "Drei", correct: false }
+        - { text: "Sieben", correct: true }
+        - { text: "Zwölf", correct: false }
+      explanation: "Sieben Wahlen: KubeVirt für Virtualisierung, Talos Linux als OS, LINSTOR als Standard-Storage, Cilium für Networking, Tenant CRD für Multi-Tenancy, Flux für GitOps, VictoriaMetrics + VictoriaLogs für Observability."
+    - q: "Warum ist Talos Linux das Standard-OS für Cozystack?"
+      options:
+        - { text: "Talos ist der einzige Linux mit KubeVirt-Unterstützung", correct: false }
+        - { text: "Minimal und immutable Linux für Kubernetes — kein SSH, Konfiguration über API, operativ einfacher und sicherer", correct: true }
+        - { text: "Talos ist die günstigste kommerzielle Lizenz", correct: false }
+      explanation: "Talos ist minimal und immutable — kein SSH, Konfiguration über API, kein Paketmanager, keine Shell. Operativ einfacher und sicherer als allgemeines Linux für Kubernetes-Hosts."
+    - q: "Wann ist Cozystack die richtige Antwort?"
+      options:
+        - { text: "Service-Provider-Modell, regulierte Multi-Tenant, KI/GPU at scale, Greenfield Private Cloud, VMware-Ausstieg", correct: true }
+        - { text: "Nur SMB-Single-Tenant", correct: false }
+        - { text: "Nur ROBO/Edge", correct: false }
+      explanation: "Cozystack passt für: Service-Provider-Modell, regulierte Multi-Tenant, KI/GPU at scale, Greenfield Private Cloud, VMware-Ausstieg. Für SMB-Single-Tenant ist Proxmox VE besser geeignet."
+    - q: "Was ersetzt Cilium im Vergleich zu VMware-Bereitstellungen?"
+      options:
+        - { text: "vCenter", correct: false }
+        - { text: "NSX (Networking) — eBPF-basiert mit nativen L4/L7-Policies und Observability", correct: true }
+        - { text: "vSphere", correct: false }
+      explanation: "Cilium ersetzt NSX-Funktionalität in Cozystack-Bereitstellungen. eBPF-basiert mit nativen L4/L7-Policies und Observability — ohne NSX-Lizenzkosten."
+    - q: "Wie verhält sich Cozystack zu OpenStack architektonisch?"
+      options:
+        - { text: "Beide sind 2010er-Architektur", correct: false }
+        - { text: "Kubernetes-nativ, leichteres operatives Footprint", correct: true }
+        - { text: "Cozystack ist ein OpenStack-Fork", correct: false }
+      explanation: "Cozystack ist Kubernetes-nativ mit leichterem operativen Footprint vs OpenStack (operativ schwer, 50+ Komponenten). vs OpenShift: Apache 2.0 ohne Vendor-Lock-in. vs Proxmox: für Multi-Tenant-Skala."
 ---
 
 Begleitung zur **[Cozystack-Page](/de/produkte/cozystack)**.
