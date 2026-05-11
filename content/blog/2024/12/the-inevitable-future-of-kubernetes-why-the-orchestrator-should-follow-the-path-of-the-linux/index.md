@@ -8,6 +8,39 @@ topics: ["Kubernetes", "Talos"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/0*25rAkaFo6sux9O2L"
 source_url: "https://medium.com/@tym83/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux-367f49916712"
+quiz:
+  title: "Test yourself: Kubernetes-as-the-Linux-kernel argument"
+  questions:
+    - q: "Whose KubeCon talk does the article respond to as the entry point?"
+      options:
+        - { text: "Tim Hockin — proposing a \"complexity budget\" for Kubernetes", correct: true }
+        - { text: "Liz Rice — eBPF in production", correct: false }
+        - { text: "Kelsey Hightower — Kubernetes the Hard Way retrospective", correct: false }
+      explanation: "Tim Hockin, an early Kubernetes developer, gave a talk at KubeCon Chicago (November 9) proposing a \"complexity budget\" — each new feature consumes part of a fixed allocation. The article extends rather than rejects the argument."
+    - q: "What is the central analogy of Timur's piece?"
+      options:
+        - { text: "Kubernetes should evolve like the Linux kernel — a complex foundation managed by specialists, with platforms playing the role of Linux distributions", correct: true }
+        - { text: "Kubernetes should follow the Apache HTTPd model", correct: false }
+        - { text: "Kubernetes should split into a microkernel architecture", correct: false }
+      explanation: "A sysadmin doesn't bypass distributions to assemble Linux from scratch. Kubernetes should be treated the same way: the kernel-equivalent is managed by specialists; opinionated platforms (open-source or proprietary) are the \"distributions.\""
+    - q: "Of the components the article lists for a Linux distribution, which is named first?"
+      options:
+        - { text: "A package manager", correct: true }
+        - { text: "A graphical installer", correct: false }
+        - { text: "A bootloader", correct: false }
+      explanation: "The article lists a package manager as the first key component, followed by kernel + GNU utilities, dedicated repositories, defined release cycles, kernel optimizations, CLI/GUI tools, and a maintaining community."
+    - q: "Which CNCF body is named as a candidate for initiating the strategic discussion about Kubernetes' future as a kernel-equivalent?"
+      options:
+        - { text: "TAG App Delivery + Technical Oversight Committee + maintainers + sponsors", correct: true }
+        - { text: "CNCF Foundation Board only", correct: false }
+        - { text: "The Cloud Native Buildpacks team", correct: false }
+      explanation: "The article names TAG App Delivery, the Technical Oversight Committee, maintainers, and major Kubernetes sponsors as the bodies that should initiate the discussion. Engaging the market and creating guidelines for platform development would follow."
+    - q: "What does the article identify as the bottleneck under the current \"Kubernetes as standalone software\" framing?"
+      options:
+        - { text: "CPU performance", correct: false }
+        - { text: "Reliance on engineers and their skillsets — building/maintaining infra requires specialists in Kubernetes itself", correct: true }
+        - { text: "Storage costs", correct: false }
+      explanation: "Under the current framing, infrastructure depends on engineers who fully understand Kubernetes — a scarce specialty. Few people understand the Linux kernel deeply, but the industry doesn't expect it because distributions abstract that away. The same shift is needed for Kubernetes."
 ---
 
 ---

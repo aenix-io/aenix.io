@@ -7,6 +7,40 @@ type: "article"
 topics: ["OpenStack", "Kubernetes", "KubeVirt", "Sovereignty", "Multi-tenancy", "Financial Services"]
 language: "en"
 companion_landing: "/services/private-cloud-consulting/"
+quiz:
+  title: "Test yourself: private cloud architecture in 2026"
+  questions:
+    - q: "How many functional layers does the article structure a modern private cloud into?"
+      options:
+        - { text: "Three", correct: false }
+        - { text: "Six (hardware, OS+platform foundation, storage+networking, control plane, app+platform services, operations)", correct: true }
+        - { text: "Twelve", correct: false }
+      explanation: "Six layers: hardware → OS+platform foundation → storage and networking → control plane → application+platform services → operations. Skipping any layer (especially operations) produces a stack that \"works\" but isn't production-grade."
+    - q: "Which storage option is named as Cozystack's default for replicated block?"
+      options:
+        - { text: "Ceph (Rook-managed)", correct: false }
+        - { text: "LINSTOR (DRBD-based)", correct: true }
+        - { text: "Vendor SAN", correct: false }
+        - { text: "Longhorn", correct: false }
+      explanation: "LINSTOR is the Cozystack default — operationally simpler than Ceph. Ceph is more flexible but heavier. The choice between them is mostly a question of operational team capacity vs feature breadth."
+    - q: "Capacity sizing rubric for ~100-VM-equivalent workload — how many compute servers does the article suggest as a starting point?"
+      options:
+        - { text: "2–3", correct: false }
+        - { text: "6–10 dual-socket servers with 256–512 GB RAM each, plus 30% headroom", correct: true }
+        - { text: "50+ servers minimum", correct: false }
+      explanation: "For 100-VM equivalent: 6–10 dual-socket servers, 256–512 GB RAM each, 30% headroom for failures and growth. ~100 TB replicated storage (3-replica) needs ~300 TB raw."
+    - q: "In Decision 4 (multi-tenancy model), what is named as the right choice for \"absolute isolation\" requirements?"
+      options:
+        - { text: "Soft multi-tenancy with namespaces", correct: false }
+        - { text: "Tenant CRD with quotas", correct: false }
+        - { text: "Cluster per tenant — operationally expensive but maximum isolation", correct: true }
+      explanation: "Soft multi-tenancy = namespaces+RBAC for trusting tenants; Tenant CRD = right for service-provider/regulated multi-tenancy; cluster-per-tenant = absolute isolation when full physical separation is required (operationally expensive)."
+    - q: "Which one of these is described as a \"legacy\" private-cloud pattern in the article's three architectural patterns?"
+      options:
+        - { text: "Cozystack-based Kubernetes-native cloud", correct: false }
+        - { text: "OpenStack-based traditional private cloud", correct: false }
+        - { text: "VMware Cloud Foundation (VCF)", correct: true }
+      explanation: "Pattern 3 is VCF — the explicitly \"legacy\" option. Subscription-only post-Broadcom with 2-5× price increases and lock-in to a single vendor's roadmap. The article points VMware-exit readers to /alternatives/vmware-alternative/."
 ---
 
 **This is the long-form companion to our [private cloud consulting services page](/services/private-cloud-consulting/). It walks through what private cloud architecture actually looks like in 2026 — the components, the decisions that matter, the patterns that work, and where teams routinely stumble. Written for architects, platform leads, and infrastructure decision-makers.**

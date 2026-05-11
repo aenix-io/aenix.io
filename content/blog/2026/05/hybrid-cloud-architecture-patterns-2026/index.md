@@ -7,6 +7,39 @@ type: "tutorial"
 topics: ["AI/ML", "Observability"]
 language: "en"
 companion_landing: "/solutions/hybrid-cloud-platform/"
+quiz:
+  title: "Test yourself: hybrid cloud architecture"
+  questions:
+    - q: "Which definition of hybrid cloud does the article hold up as \"where the leverage is\"?"
+      options:
+        - { text: "Hybrid as workload distribution (some on each substrate, no integration)", correct: false }
+        - { text: "Hybrid as data flow (explicit cross-substrate data flows)", correct: false }
+        - { text: "Hybrid as unified platform — single platform abstraction running on multiple substrates", correct: true }
+      explanation: "Three definitions in increasing order of usefulness: workload distribution (operationally fragmented), data flow (architecturally honest but half the work), unified platform (where the leverage is — single platform abstraction, consistent operations across substrates)."
+    - q: "Which hybrid pattern is named as the most common in 2026?"
+      options:
+        - { text: "Pattern 1 — Steady-state on-prem + elastic in public cloud", correct: true }
+        - { text: "Pattern 4 — Edge + core hybrid", correct: false }
+        - { text: "Pattern 5 — AI-specific split", correct: false }
+      explanation: "Pattern 1 — predictable steady-state on private cloud, elastic spike workloads in public cloud — is named as the most common hybrid pattern in 2026, especially for SaaS companies with steady customer count plus spike-y customer-facing patterns."
+    - q: "What three architectural principles separate working hybrid from \"fragmented multi-cloud\"?"
+      options:
+        - { text: "One platform abstraction, workload portability where it matters, explicit data flow control", correct: true }
+        - { text: "A single hyperscaler, GitOps, and a CDN", correct: false }
+        - { text: "Two hypervisors, one identity provider, OpenAPI", correct: false }
+      explanation: "Three principles: (1) one platform abstraction (e.g., Kubernetes API as lingua franca), (2) workload portability where it matters (critical workloads use platform abstractions that work on multiple substrates), (3) explicit data flow control (cross-cloud and cross-region flows are designed, costed, monitored)."
+    - q: "Which named failure mode is \"cloud bursting nobody uses\"?"
+      options:
+        - { text: "Failure 1", correct: false }
+        - { text: "Failure 2 — bursting capability is theoretical because cross-substrate data movement is too slow", correct: true }
+        - { text: "Failure 5", correct: false }
+      explanation: "Failure 2 — architecture supports bursting from on-prem to public cloud for capacity overflow, but in production the bursting capability is theoretical (cross-substrate data movement is too slow). Architecture is over-engineered for unused capability."
+    - q: "For Pattern 2 (critical on-prem + non-critical in public cloud), what does the article identify as driving the split?"
+      options:
+        - { text: "Cost only", correct: false }
+        - { text: "Sovereignty / regulator pressure (DORA, sectoral, residency)", correct: true }
+        - { text: "AI workload economics", correct: false }
+      explanation: "Pattern 2 puts regulated workloads (banking, healthcare, public-sector) on private cloud and auxiliary workloads (analytics, internal tooling, dev/test) in public cloud. The driver is sovereignty — DORA, sectoral rules, data-residency mandates — not pure cost."
 ---
 
 **This is the long-form companion to our [hybrid cloud platform services page](/solutions/hybrid-cloud-platform/). It walks through hybrid cloud architecture patterns that work in production, the patterns that look good but fail in practice, and how to pick the right architecture for your workload portfolio.**

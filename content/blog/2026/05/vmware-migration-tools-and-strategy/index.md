@@ -7,6 +7,39 @@ type: "article"
 topics: ["VMware", "Nutanix", "OpenShift", "Kubernetes", "Cozystack", "KubeVirt"]
 language: "en"
 companion_landing: "/migration/vmware/"
+quiz:
+  title: "Test yourself: VMware migration tooling"
+  questions:
+    - q: "How many honest VMware migration paths does the article identify?"
+      options:
+        - { text: "Three: VMware-managed, KubeVirt-based, lift-and-shift to public cloud", correct: true }
+        - { text: "Five", correct: false }
+        - { text: "Eight", correct: false }
+      explanation: "Three paths: (1) VMware-managed migration using vendor-supplied tools (HCX, MTV, Nutanix Move), (2) KubeVirt-based migration to open-source destinations (Cozystack, OpenShift Virt), (3) lift-and-shift to VMware-on-cloud (defers the architectural question)."
+    - q: "For most 2026 migrations driven by Broadcom pricing or sovereignty, which path does the article recommend?"
+      options:
+        - { text: "Path 1 — vendor-tools-led", correct: false }
+        - { text: "Path 2 — KubeVirt-based to open destination", correct: true }
+        - { text: "Path 3 — lift-and-shift to public cloud", correct: false }
+      explanation: "Path 2 wins for most 2026 migrations driven by Broadcom pricing or sovereignty: open destination architecture, no vendor lock-in at destination, modern Kubernetes-native foundation. The article focuses there for the rest of the piece."
+    - q: "Which Red Hat tool handles VMware → KubeVirt at bulk scale?"
+      options:
+        - { text: "Forklift / Migration Toolkit for Virtualization (MTV)", correct: true }
+        - { text: "KubeVirt CDI alone", correct: false }
+        - { text: "virtv2v alone", correct: false }
+      explanation: "Forklift (also packaged as MTV — Migration Toolkit for Virtualization) handles bulk VM migration with metadata preservation. virtv2v is the lower-level conversion tool used internally by Forklift. KubeVirt CDI handles disk-level import."
+    - q: "How many workloads per cohort does the article suggest for cohort-based migration?"
+      options:
+        - { text: "1–5", correct: false }
+        - { text: "10–50", correct: true }
+        - { text: "500+", correct: false }
+      explanation: "Cohort-based migration: 10-50 workloads at a time. Cohort cadence is 1-3 cohorts per month at steady state. Each cohort runs through pre-migration validation → image conversion → cutover → post-migration validation → parallel run → signoff → VMware-side decommission."
+    - q: "What is the typical destination-platform-build duration before migration cohort 1 starts (for Cozystack-based destinations)?"
+      options:
+        - { text: "1 week", correct: false }
+        - { text: "1–3 months", correct: true }
+        - { text: "12 months", correct: false }
+      explanation: "1-3 months destination-build before migration cohort 1. Most migrations fail when workloads move to a destination that's been engineered as a PoC, not as a production platform. Engineer the destination first."
 ---
 
 **This is the long-form companion to our [VMware migration hub](/migration/vmware/). It walks through VMware migration tooling and strategy in 2026 — what's available, how to choose between paths, where most migrations stumble.**
