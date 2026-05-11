@@ -12,35 +12,35 @@ quiz:
   questions:
     - q: "How does the article cleanly characterise each of the three terms?"
       options:
-        - { text: "All three are roles", correct: false }
-        - { text: "DevOps is a practice, SRE is a discipline, platform engineering is a function", correct: true }
-        - { text: "They are synonyms", correct: false }
+        - { text: "DevOps = practice, SRE = discipline, PE = function", correct: true }
+        - { text: "All three are roles held by individual engineers", correct: false }
+        - { text: "They are synonyms — interchangeable labels for the same job", correct: false }
       explanation: "The cleanest summary in the piece: DevOps is a practice (lives inside product teams), SRE is a discipline (software engineering applied to operations), platform engineering is a function (a separate team whose customers are other engineering teams)."
     - q: "In the original Google SRE formulation, what fraction of an SRE's time is allowed to be operational toil?"
       options:
-        - { text: "No more than 10%", correct: false }
-        - { text: "No more than 50%", correct: true }
-        - { text: "No upper limit — toil is the whole job", correct: false }
+        - { text: "No upper limit (toil is the entire role by definition)", correct: false }
+        - { text: "No more than 10% (per the strictest Google rotation)", correct: false }
+        - { text: "No more than 50% (per Google's original SRE formulation)", correct: true }
       explanation: "The original Google rule: operational toil cannot exceed 50% of an SRE's time. The remainder is software engineering work that reduces toil."
     - q: "What target ratio of platform-team to product-engineer headcount does the article cite as typical in mature organisations?"
       options:
-        - { text: "1:2 to 1:5", correct: false }
-        - { text: "1:10 to 1:20", correct: true }
-        - { text: "1:50 to 1:100", correct: false }
+        - { text: "1:2 to 1:5 (heavy platform investment, early growth)", correct: false }
+        - { text: "1:50 to 1:100 (very-mature, automation-saturated platform)", correct: false }
+        - { text: "1:10 to 1:20 (typical mature-organisation ratio)", correct: true }
       explanation: "The piece names 1:10 to 1:20 as typical for mature organisations. Lower than 1:10 means the platform is over-staffed; higher than 1:20 usually means platform team is being out-paced by product growth."
     - q: "According to the article, what is Backstage?"
       options:
-        - { text: "A complete platform engineering substrate", correct: false }
-        - { text: "An IDP frontend (catalog + UI) — not the platform itself", correct: true }
-        - { text: "A CI/CD engine", correct: false }
-        - { text: "A GitOps controller", correct: false }
+        - { text: "A complete platform engineering substrate (full IDP stack)", correct: false }
+        - { text: "An IDP frontend (catalog + UI) on top of the platform", correct: true }
+        - { text: "A CI/CD engine for service deployment", correct: false }
+        - { text: "A GitOps controller for declarative cluster state", correct: false }
       explanation: "\"Backstage is a portal (catalog + UI), not a platform. The platform sits underneath; the portal exposes it.\" Pitfall 2 also reinforces this: buying Backstage without an underlying opinionated platform produces a catalog over the same operational mess."
     - q: "Which Aenix-default GitOps engine is named in the article?"
       options:
-        - { text: "Argo CD", correct: false }
-        - { text: "Flux", correct: true }
-        - { text: "Both at once", correct: false }
-        - { text: "Spinnaker", correct: false }
+        - { text: "Argo CD (UI-first GitOps with strong app-of-apps)", correct: false }
+        - { text: "Flux (Cozystack default, upstream-Kubernetes idiomatic)", correct: true }
+        - { text: "Both at once (Argo CD on top of Flux for HA)", correct: false }
+        - { text: "Spinnaker (Netflix-origin multi-cloud release engine)", correct: false }
       explanation: "Both Argo CD and Flux are production-grade. The article notes Cozystack uses Flux as the default — Flux is closer to the upstream Kubernetes way; Argo CD has stronger UI ergonomics."
 ---
 

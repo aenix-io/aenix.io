@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "Why does the article call distribution choice \"structural\"?"
       options:
-        - { text: "It is the most expensive line item", correct: false }
-        - { text: "It determines operational model, multi-tenancy approach, storage/networking integration, vendor relationship, and long-term cost trajectory", correct: true }
-        - { text: "Only the CNCF-graduated distros are allowed", correct: false }
+        - { text: "It is usually the most expensive single line item", correct: false }
+        - { text: "It governs ops model, tenancy, vendor, and cost path", correct: true }
+        - { text: "Only CNCF-graduated distros are allowed in production", correct: false }
       explanation: "Distribution choice (vanilla / Cozystack / OpenShift / Rancher / managed) is architectural, not just tooling. It governs the operational model, multi-tenancy approach, storage and networking integration, vendor relationship, and long-term cost trajectory. Getting it wrong is expensive to undo."
     - q: "For most multi-tenant deployments in 2026, which multi-tenancy pattern does the article identify as the default?"
       options:
-        - { text: "Soft multi-tenancy (namespaces + RBAC)", correct: false }
-        - { text: "Hard multi-tenancy via Tenant CRD", correct: true }
-        - { text: "Cluster per tenant", correct: false }
+        - { text: "Hard multi-tenancy via a Tenant CRD", correct: true }
+        - { text: "Soft multi-tenancy with namespaces and RBAC", correct: false }
+        - { text: "A dedicated cluster per individual tenant", correct: false }
       explanation: "Most 2026 multi-tenant deployments use the Tenant CRD pattern — strong isolation without per-tenant cluster overhead. Cozystack ships this out of the box. Cluster-per-tenant is only used when full physical isolation is required."
     - q: "Which CNI does the article identify as the new default for multi-tenant deployments in 2026?"
       options:
-        - { text: "Flannel", correct: false }
-        - { text: "Calico", correct: false }
-        - { text: "Cilium (eBPF-based, network policies + observability + service mesh in one)", correct: true }
-      explanation: "Cilium has converged as the 2026 default. Its network policies integrate with the multi-tenancy model, observability is native, and it carries the CNCF Graduated badge."
+        - { text: "Flannel — simple host-gw networking", correct: false }
+        - { text: "Calico — BGP and policy enforcement", correct: false }
+        - { text: "Cilium — eBPF, policies, and observability", correct: true }
+      explanation: "Cilium has converged as the 2026 default. Its network policies integrate with the multi-tenancy model, observability is native, and it carries the CNCF Graduated badge — network policies plus observability plus service mesh in one."
     - q: "For DR specifically, what production pattern does the article recommend on top of Velero?"
       options:
-        - { text: "Per-app patterns (e.g., PostgreSQL PITR) layered on top of Velero infrastructure", correct: true }
-        - { text: "Velero is enough by itself", correct: false }
-        - { text: "Use cloud-provider snapshots only", correct: false }
+        - { text: "Velero alone is sufficient for typical DR cases", correct: false }
+        - { text: "Per-app patterns like PostgreSQL PITR on top of Velero", correct: true }
+        - { text: "Cloud-provider volume snapshots used exclusively", correct: false }
       explanation: "Velero handles Kubernetes-native backup/restore; per-app patterns (PostgreSQL point-in-time recovery, etc.) layered on top give you the recovery point objectives that DR cases actually need."
     - q: "In the bare-metal deployment default for ingress and load balancing, which combination is named?"
       options:
-        - { text: "AWS ELB + NGINX", correct: false }
-        - { text: "MetalLB + Cilium", correct: true }
-        - { text: "F5 + Istio", correct: false }
+        - { text: "AWS ELB plus NGINX ingress controller", correct: false }
+        - { text: "F5 BIG-IP plus Istio service mesh", correct: false }
+        - { text: "MetalLB plus Cilium for L2 and L7", correct: true }
       explanation: "Bare-metal deployments default to MetalLB (layer-2 load balancing) plus Cilium (layer-7). Service mesh (Istio/Linkerd) is for advanced traffic management on top."
 ---
 

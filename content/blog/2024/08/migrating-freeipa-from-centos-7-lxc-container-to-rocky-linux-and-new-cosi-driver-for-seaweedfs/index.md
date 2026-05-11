@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "What does COSI stand for and what does it do?"
       options:
-        - { text: "Container Object Storage Interface — unified Kubernetes API for declarative S3-bucket provisioning and access management", correct: true }
-        - { text: "Common Open Storage Init", correct: false }
-        - { text: "Centralized Open Storage Interface", correct: false }
+        - { text: "Common Open Storage Init — bootstrap framework for cluster S3", correct: false }
+        - { text: "Centralized Object Storage Index — registry of S3 endpoints", correct: false }
+        - { text: "Container Object Storage Interface — Kubernetes API for S3 buckets", correct: true }
       explanation: "COSI = Container Object Storage Interface for Kubernetes. It introduces BucketClaim, Bucket, and BucketAccess resources for declarative S3 bucket provisioning and access management — based on the PVC pattern."
     - q: "Which three CRDs does COSI introduce?"
       options:
-        - { text: "Pod, Service, Deployment", correct: false }
         - { text: "BucketClaim, Bucket, BucketAccess", correct: true }
-        - { text: "Tenant, Namespace, Quota", correct: false }
+        - { text: "Pod, Service, Deployment", correct: false }
+        - { text: "Tenant, Namespace, ResourceQuota", correct: false }
       explanation: "BucketClaim (request), Bucket (provisioned bucket), BucketAccess (access binding). The pattern is analogous to PersistentVolumeClaim/PersistentVolume/Secret for storage."
     - q: "What did Aenix do with the SeaweedFS COSI driver they developed?"
       options:
-        - { text: "Kept it proprietary inside Cozystack", correct: false }
-        - { text: "Open-sourced it and gifted it to the SeaweedFS community — moved under the SeaweedFS organisation umbrella", correct: true }
-        - { text: "Sold it to Red Hat", correct: false }
+        - { text: "Kept it proprietary inside the Cozystack distribution", correct: false }
+        - { text: "Open-sourced it and gifted it to the SeaweedFS community", correct: true }
+        - { text: "Sold the codebase to Red Hat as part of OpenShift Data", correct: false }
       explanation: "Aenix developed the COSI driver in open source and gifted it to the SeaweedFS community. The project moved under the SeaweedFS organisation; the official SeaweedFS chart was expanded to include COSI support."
     - q: "Why was Cozystack adding S3 bucket support relevant to this driver?"
       options:
-        - { text: "Coincidence", correct: false }
-        - { text: "Cozystack needed S3 buckets for tenants to order automatically from Kubernetes — the COSI driver enables this", correct: true }
-        - { text: "It replaces SeaweedFS entirely", correct: false }
+        - { text: "Pure coincidence — the two projects evolved independently", correct: false }
+        - { text: "Cozystack tenants can now order buckets from Kubernetes directly", correct: true }
+        - { text: "The driver replaces SeaweedFS entirely with a new storage layer", correct: false }
       explanation: "Aenix was working on S3 bucket support in Cozystack (PR #131). The COSI driver allows Cozystack tenants to automatically order buckets directly from Kubernetes, instead of provisioning out-of-band."
     - q: "What was the related article in the same announcement about?"
       options:
-        - { text: "Migrating FreeIPA from CentOS 7 LXC container to Rocky Linux + cert recovery — by Andrei Kvapil", correct: true }
-        - { text: "Cozystack v1.0 release", correct: false }
-        - { text: "KubeCon recap", correct: false }
+        - { text: "A recap of the most recent KubeCon EU conference", correct: false }
+        - { text: "The Cozystack v1.0 release notes and feature highlights", correct: false }
+        - { text: "FreeIPA migration from CentOS 7 LXC to Rocky Linux", correct: true }
       explanation: "The first part of the post points readers to a long-form FreeIPA migration article by Andrei Kvapil — covering an LXC container on CentOS 7 that had been non-functional for several months, debugging certificates, and migration to Rocky Linux."
 ---
 

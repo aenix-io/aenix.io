@@ -12,34 +12,34 @@ quiz:
   questions:
     - q: "According to the article, what structural advantage do hosting providers have that hyperscalers can't easily replicate?"
       options:
-        - { text: "Better hardware procurement", correct: false }
-        - { text: "Customer relationships, regional presence, pricing flexibility, sovereignty positioning", correct: true }
-        - { text: "Lower latency to ChatGPT", correct: false }
+        - { text: "Customer relationships, regional presence, sovereignty fit", correct: true }
+        - { text: "Better hardware procurement leverage with OEMs", correct: false }
+        - { text: "Lower network latency to leading LLM endpoints", correct: false }
       explanation: "Hosting providers in 2026 have customer relationships, regional presence, pricing flexibility, and sovereignty positioning that hyperscalers can't easily replicate. They lack the cloud product to monetize this at scale — Cozystack-based modernization closes the gap."
     - q: "What is the typical end-to-end timeline from project start to GA for a hosting-provider modernization?"
       options:
-        - { text: "1-2 months", correct: false }
-        - { text: "9-18 months from project start to GA", correct: true }
-        - { text: "5+ years", correct: false }
+        - { text: "Roughly 1 to 2 months end-to-end", correct: false }
+        - { text: "Roughly 9 to 18 months end-to-end", correct: true }
+        - { text: "Five years or more before any GA", correct: false }
       explanation: "Six steps from assessment → Cozystack pilot → beta customer cohort (3-5 friendlies) → limited GA (10-50 customers, billing patterns validated) → general availability → specialty expansion (GPU, AI, regional sovereignty). Total: 9-18 months."
     - q: "For a mid-size hosting provider (1000-10000 customers), what is the typical operational team size post-launch?"
       options:
-        - { text: "1 engineer", correct: false }
-        - { text: "3-7 engineers", correct: true }
-        - { text: "50+ engineers", correct: false }
+        - { text: "Just 1 engineer covering everything", correct: false }
+        - { text: "More than 50 engineers on the platform", correct: false }
+        - { text: "Around 3 to 7 engineers on the platform", correct: true }
       explanation: "Mid-size hosting provider (1000-10000 customers): typically 3-7 engineers operating the platform post-launch. Customer pricing typically 30-50% above platform raw cost; break-even on first 50-100 paying customers."
     - q: "Which named pitfall is \"operations team sized for 50 customers; signs 200 in Q1\"?"
       options:
-        - { text: "Common pitfall — under-staffing operational team relative to customer growth", correct: true }
-        - { text: "Not a pitfall — easy fix", correct: false }
-        - { text: "Required by SLA", correct: false }
+        - { text: "Common pitfall — operations understaffed for growth", correct: true }
+        - { text: "Not a pitfall — easily fixed by quick hiring", correct: false }
+        - { text: "Required by hosting-industry SLA frameworks", correct: false }
       explanation: "Listed common pitfalls: underinvesting in customer-facing portal polish, inadequate billing accuracy from day 1, ops team sized for 50 customers but signs 200 in Q1, generic catalog instead of differentiation."
     - q: "What is the modernization target for the service catalog (vs the typical starting point)?"
       options:
-        - { text: "Just VMs", correct: false }
-        - { text: "Expanded catalog: VMs, K8s, managed databases, S3, GPU — versus typical starting point of VMs and maybe managed databases", correct: true }
-        - { text: "Email hosting only", correct: false }
-      explanation: "Most hosting providers in 2026: bare-metal/VPS, per-customer manual provisioning, limited service catalog (VMs maybe managed DBs), custom or WHMCS billing. Target: Kubernetes-native multi-tenant Cozystack, self-service portal, expanded catalog (VMs/K8s/managed DBs/S3/GPU), WHMCS-integrated billing, per-customer observability + audit."
+        - { text: "VMs only — the original hosting baseline", correct: false }
+        - { text: "Email and shared web hosting as primary services", correct: false }
+        - { text: "VMs, Kubernetes, managed databases, S3, and GPU", correct: true }
+      explanation: "Most hosting providers in 2026: bare-metal/VPS, per-customer manual provisioning, limited service catalog (VMs maybe managed DBs), custom or WHMCS billing. Target: Kubernetes-native multi-tenant Cozystack, self-service portal, expanded catalog (VMs/K8s/managed DBs/S3/GPU), WHMCS-integrated billing, per-customer observability and audit."
 ---
 
 Companion to **[hosting providers industry page](/industries/hosting-providers)**.

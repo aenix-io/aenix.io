@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "How many cloud engineering disciplines does the article identify as the 2026 standard?"
       options:
-        - { text: "Three", correct: false }
-        - { text: "Seven", correct: true }
-        - { text: "Twelve", correct: false }
+        - { text: "Three foundational disciplines", correct: false }
+        - { text: "Twelve specialised disciplines", correct: false }
+        - { text: "Seven compounding disciplines", correct: true }
       explanation: "Seven disciplines that compound: architecture, IaC, GitOps, observability, security, FinOps, compliance. They are not separate functions but overlapping disciplines integrated through platform engineering."
     - q: "Which IaC tool is named as a \"programmer-friendly alternative\" to Terraform / OpenTofu?"
       options:
-        - { text: "Pulumi", correct: true }
-        - { text: "Crossplane", correct: false }
-        - { text: "Helm", correct: false }
+        - { text: "Pulumi (multi-language SDK)", correct: true }
+        - { text: "Crossplane (Kubernetes-native CRDs)", correct: false }
+        - { text: "Helm (chart-based templating)", correct: false }
       explanation: "Pulumi as a programmer-friendly alternative — uses general-purpose programming languages (TypeScript, Python, Go, etc.) rather than HCL. Crossplane is the Kubernetes-native infrastructure abstraction; Terraform / OpenTofu are the HCL standards."
     - q: "In Discipline 5 (Security), which workload identity standard is named?"
       options:
-        - { text: "OAuth 2.0", correct: false }
-        - { text: "SPIFFE/SPIRE", correct: true }
-        - { text: "SAML", correct: false }
+        - { text: "OAuth 2.0 with PKCE flow", correct: false }
+        - { text: "SAML federated assertions", correct: false }
+        - { text: "SPIFFE/SPIRE workload identity", correct: true }
       explanation: "Discipline 5 covers workload identity (SPIFFE/SPIRE), secrets management (Vault or external secrets), policy-as-code (OPA/Kyverno), supply-chain security (Sigstore), runtime threat detection."
     - q: "In Discipline 6 (FinOps), what relationship structure is recommended?"
       options:
         - { text: "Outsource FinOps fully to a managed-service provider", correct: false }
-        - { text: "A FinOps owner with platform-team relationship — cost as a non-functional requirement, per-team / per-service attribution, cost gates in IaC review", correct: true }
-        - { text: "Quarterly cost reviews only at executive level", correct: false }
+        - { text: "A FinOps owner partnered with the platform team", correct: true }
+        - { text: "Quarterly cost reviews held only at executive level", correct: false }
       explanation: "FinOps owner with platform-team relationship. Cost is a non-functional requirement; per-team / per-service cost attribution; cost gates in IaC review process. Built into the engineering loop, not a quarterly fire drill."
     - q: "What does the article say is the integrating function across all seven disciplines?"
       options:
-        - { text: "A separate FinOps department", correct: false }
-        - { text: "Platform engineering — the seven are overlapping disciplines integrated through it", correct: true }
-        - { text: "Compliance audits", correct: false }
+        - { text: "Platform engineering as the integrator", correct: true }
+        - { text: "A standalone FinOps department", correct: false }
+        - { text: "Periodic compliance audit cycles", correct: false }
       explanation: "A mature cloud-engineering organization practices all seven, not as separate functions but as overlapping disciplines integrated through platform engineering. The platform team is the integrator."
 ---
 

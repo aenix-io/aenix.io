@@ -13,33 +13,33 @@ quiz:
   questions:
     - q: "What does Nova map to in the OpenStack→Cozystack component table?"
       options:
-        - { text: "Cilium on Talos", correct: false }
-        - { text: "KubeVirt on Talos", correct: true }
-        - { text: "LINSTOR + Ceph", correct: false }
+        - { text: "KubeVirt on Talos (compute layer)", correct: true }
+        - { text: "Cilium on Talos (networking layer)", correct: false }
+        - { text: "LINSTOR + Ceph (block-storage layer)", correct: false }
       explanation: "Per the component mapping: Nova (compute) → KubeVirt on Talos. Neutron maps to Cilium (eBPF); Cinder maps to LINSTOR or Ceph (Rook-managed)."
     - q: "Which of the three migration pressures is structurally tied to Red Hat OSP transitioning toward OpenShift Virtualization?"
       options:
-        - { text: "Engineer scarcity", correct: false }
-        - { text: "Vendor distro lifecycle", correct: true }
-        - { text: "Service-catalog ceiling", correct: false }
+        - { text: "Engineer scarcity (shrinking OpenStack talent pool)", correct: false }
+        - { text: "Vendor distro lifecycle (OSP 17/18 final major lines)", correct: true }
+        - { text: "Service-catalog ceiling (limited day-2 platform features)", correct: false }
       explanation: "Red Hat OSP 17/18 are the final major release lines as Red Hat transitions toward OpenShift Virtualization. Mirantis transitioned years ago; Canonical Charmed OpenStack has narrower enterprise sales motion. Vendor distro lifecycle is the structural pressure forcing the decision."
     - q: "For a tier-1 telco with 1,000-5,000 nodes and certified VNFs, what's the realistic total modernization timeline?"
       options:
-        - { text: "12-24 months", correct: false }
-        - { text: "24-48 months for full modernization; first production workloads on Cozystack within 12-18 months", correct: true }
-        - { text: "6-12 months", correct: false }
+        - { text: "6-12 months end-to-end (rapid greenfield programme)", correct: false }
+        - { text: "12-24 months end-to-end (single calendar-year migration)", correct: false }
+        - { text: "24-48 months total; first workloads on Cozystack in 12-18", correct: true }
       explanation: "Tier-1 telco modernization is 24-48 months total, with first production workloads on Cozystack within 12-18 months. The VNF modernization track runs 18-36 months in parallel. Mid-size enterprises (200-500 nodes) hit 12-24 months."
     - q: "Which three approaches does the article describe for handling certified VNFs in a tier-1 telco migration?"
       options:
         - { text: "Force re-certification, drop the VNF, or replace the vendor", correct: false }
-        - { text: "Run VNFs on KubeVirt under Cozystack, keep certified VNFs on OpenStack in parallel, or negotiate a cloud-native (CNF) equivalent with the vendor", correct: true }
-        - { text: "Wait for the regulator to decide", correct: false }
+        - { text: "Run VNFs on KubeVirt, parallel OSP, or vendor CNF path", correct: true }
+        - { text: "Wait for the regulator to decide (defer migration entirely)", correct: false }
       explanation: "The three documented approaches: (1) run VNFs as VMs on KubeVirt (vendor cert may or may not extend); (2) keep certified VNFs on OpenStack with parallel platforms for that VNF's lifecycle; (3) align with the vendor's own CNF modernization toward Cloud-Native Network Functions on Kubernetes."
     - q: "What culture/discipline shift does the article say takes 4-8 weeks of focused training plus 3-6 months of practice for OpenStack operators?"
       options:
-        - { text: "Learning the Cozystack CLI", correct: false }
-        - { text: "Internalising GitOps discipline (declarative changes) instead of imperative APIs (CLI, REST, console actions)", correct: true }
-        - { text: "Reading Kubernetes RBAC documentation", correct: false }
+        - { text: "Internalising GitOps discipline (declarative over imperative)", correct: true }
+        - { text: "Learning the Cozystack CLI (commands, flags, plugin model)", correct: false }
+        - { text: "Reading Kubernetes RBAC docs (Roles and ClusterRoles)", correct: false }
       explanation: "OpenStack operators are used to imperative APIs. Cozystack expects GitOps for production changes — a culture shift, not just a tool shift. Engineers need 4-8 weeks focused training plus 3-6 months practice to internalise GitOps discipline."
 ---
 

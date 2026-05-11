@@ -19,10 +19,10 @@ quiz:
       explanation: "69% of organizations are evaluating repatriation according to Broadcom 2025. 53% now prioritize private cloud for new workloads — those are two different stats from the same report."
     - q: "In the workload classification step, how many labels can a workload receive?"
       options:
-        - { text: "Two — repatriate or stay", correct: false }
-        - { text: "Four — repatriate now / repatriate later / stay in cloud / reassess", correct: true }
-        - { text: "Six categories", correct: false }
-      explanation: "Step 2 of the playbook assigns each workload one of four labels. The \"reassess\" bucket exists because some workloads need PoC or instrumentation before a credible decision can be made."
+        - { text: "Four labels with a reassess bucket", correct: true }
+        - { text: "Two — repatriate or stay in cloud", correct: false }
+        - { text: "Six fine-grained category buckets", correct: false }
+      explanation: "Step 2 of the playbook assigns each workload one of four labels: repatriate now / repatriate later / stay in cloud / reassess. The \"reassess\" bucket exists because some workloads need PoC or instrumentation before a credible decision can be made."
     - q: "For a typical 100-VM repatriation, how long does end-to-end elapsed time usually take from \"we should look at this\" to \"we are running on the destination platform\"?"
       options:
         - { text: "4–8 weeks", correct: false }
@@ -38,10 +38,10 @@ quiz:
       explanation: "DORA Article 28 is actually a trigger to consider repatriation, not a reason to avoid it. The wrong-answer list covers small teams, proprietary-dependency-heavy portfolios, fundamentally elastic businesses, stretched platform teams, and early-stage commitment lockups."
     - q: "What is \"Pitfall 1\" — the most strategic pitfall called out in the playbook?"
       options:
-        - { text: "Treating repatriation as a cost project rather than a platform project", correct: true }
-        - { text: "Buying the wrong GPU class", correct: false }
-        - { text: "Not negotiating the AWS exit fee", correct: false }
-        - { text: "Doing it in winter", correct: false }
+        - { text: "Buying the wrong GPU SKU class", correct: false }
+        - { text: "Treating it as a cost cut, not platform work", correct: true }
+        - { text: "Failing to negotiate exit-fee terms", correct: false }
+        - { text: "Choosing the wrong cutover season", correct: false }
       explanation: "A repatriation measured purely on cost reduction tends to under-invest in the platform work that makes the cost reduction sustainable. Two years in, the team has saved money but lost velocity — and that triggers a partial reverse-repatriation back into the hyperscaler."
 ---
 

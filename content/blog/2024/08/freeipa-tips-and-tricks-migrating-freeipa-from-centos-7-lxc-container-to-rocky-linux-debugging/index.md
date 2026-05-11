@@ -12,23 +12,23 @@ quiz:
   questions:
     - q: "What was the underlying reason the original LXC container would not start on the modern Proxmox host?"
       options:
-        - { text: "Wrong CPU architecture", correct: false }
-        - { text: "Outdated systemd inside the container only supported Cgroups v1, while modern Proxmox uses Cgroups v2", correct: true }
-        - { text: "A corrupted root filesystem", correct: false }
-        - { text: "Missing kernel module", correct: false }
+        - { text: "Cgroups version mismatch — old systemd needs v1, modern Proxmox runs v2", correct: true }
+        - { text: "Wrong CPU architecture for the container image", correct: false }
+        - { text: "A corrupted root filesystem inside the container", correct: false }
+        - { text: "A missing kernel module on the Proxmox host", correct: false }
       explanation: "The new Proxmox runs on Cgroups v2; the outdated container systemd only supports Cgroups v1. systemd inside wouldn't start, but a bash shell could still be entered."
     - q: "Why did the author have to set the system date back before running ipactl restart?"
       options:
-        - { text: "To fool a license check", correct: false }
-        - { text: "Because most certificates had expired and FreeIPA services need valid certs to start, but you cannot renew them while services are down", correct: true }
-        - { text: "To pin Kerberos tickets", correct: false }
-        - { text: "To match the LXC host clock", correct: false }
+        - { text: "To roll back a license-validity check inside FreeIPA", correct: false }
+        - { text: "To pin existing Kerberos tickets to a known TGT lifetime", correct: false }
+        - { text: "Most certs had expired and services need valid certs to start", correct: true }
+        - { text: "To match the LXC host clock and avoid time-skew errors", correct: false }
       explanation: "A circular failure: services need valid certs to start, but cert renewal needs the services to be running. Setting the date back before expiry breaks the loop. NTP is disabled first so it doesn't resync to real time."
     - q: "Which CentOS-7 mirror configuration trick does the article use after EOL?"
       options:
-        - { text: "Switching baseurl from mirror.centos.org to vault.centos.org and disabling mirrorlist", correct: true }
-        - { text: "Re-signing every package locally", correct: false }
-        - { text: "Skipping yum updates entirely", correct: false }
+        - { text: "Re-sign every package locally with a private GPG key", correct: false }
+        - { text: "Skip yum updates entirely and freeze the existing state", correct: false }
+        - { text: "Repoint baseurl to vault.centos.org and disable mirrorlist", correct: true }
       explanation: "The sed pair comments out mirrorlist and rewrites baseurl from mirror.centos.org to vault.centos.org so post-EOL CentOS 7 still installs packages from the archive."
     - q: "What command is used to enter the Proxmox LXC container space from the host?"
       options:
@@ -40,9 +40,9 @@ quiz:
     - q: "Which command did the author use to surface the per-cert expiry status during diagnosis?"
       options:
         - { text: "openssl x509 -in *.pem -noout -dates", correct: false }
-        - { text: "getcert list | grep -E \"Request ID|status|certificate|expires\"", correct: true }
-        - { text: "ipa cert-show all", correct: false }
-        - { text: "kinit admin && klist", correct: false }
+        - { text: "getcert list | grep -E 'status|expires'", correct: true }
+        - { text: "ipa cert-show --all --raw", correct: false }
+        - { text: "kinit admin && klist -e -f", correct: false }
       explanation: "`getcert list` (from certmonger) gives the canonical view of FreeIPA-tracked certs. Grep narrows to the ID/status/path/expiry lines. ipa-getcert resubmit -i <ID> then drives the renewal."
 ---
 

@@ -12,34 +12,34 @@ quiz:
   questions:
     - q: "For SMB IT departments, labs, single-tenant deployments under ~50 hosts, which platform does the article recommend?"
       options:
+        - { text: "Proxmox VE", correct: true }
         - { text: "VMware VCF", correct: false }
         - { text: "Cozystack", correct: false }
-        - { text: "Proxmox VE", correct: true }
-      explanation: "Proxmox VE: mature, easy to install, strong community, AGPLv3 + commercial subscription. Excellent for single-team or single-tenant deployments under ~50 hosts. Multi-tenancy is namespace-based; not designed for hard isolation."
+      explanation: "Proxmox VE is mature, easy to install, has a strong community, and uses AGPLv3 plus commercial subscription. Excellent for single-team or single-tenant deployments under ~50 hosts. Multi-tenancy is namespace-based; not designed for hard isolation."
     - q: "Which architectural property gives Cozystack its edge for service providers and regulated multi-tenant?"
       options:
-        - { text: "Tenant CRD — Kubernetes-native, structural multi-tenancy", correct: true }
-        - { text: "Per-VM licensing", correct: false }
-        - { text: "Closed-source code", correct: false }
-      explanation: "Cozystack's Tenant CRD provides Kubernetes-native multi-tenancy that is production-grade for service providers and regulated multi-tenant. Plus first-class managed databases, S3 object storage, and GPU services."
+        - { text: "Per-VM licensing model", correct: false }
+        - { text: "Closed-source codebase", correct: false }
+        - { text: "Kubernetes-native Tenant CRD", correct: true }
+      explanation: "Cozystack's Tenant CRD provides structural, Kubernetes-native multi-tenancy that is production-grade for service providers and regulated multi-tenant. Plus first-class managed databases, S3 object storage, and GPU services."
     - q: "In the comparison matrix, what does Proxmox VE list for \"managed databases\"?"
       options:
-        - { text: "First-class — PostgreSQL, MySQL, Redis, Kafka, etc.", correct: false }
+        - { text: "First-class via operators", correct: false }
+        - { text: "Limited via vCD plugins", correct: false }
         - { text: "Manual / community", correct: true }
-        - { text: "Limited via vCD", correct: false }
-      explanation: "Proxmox managed databases = manual / community integration. VMware = limited. Cozystack = first-class (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ via operators)."
+      explanation: "Proxmox managed databases = manual / community integration. VMware = limited (via vCD plugins). Cozystack = first-class via operators: PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ."
     - q: "For Proxmox → Cozystack migration, what does the article say is the typical timeline?"
       options:
-        - { text: "1 weekend", correct: false }
-        - { text: "2-4 weeks assessment + 3-9 months implementation", correct: true }
-        - { text: "24+ months", correct: false }
-      explanation: "Proxmox → Cozystack migration: VM images (qcow2) import directly into KubeVirt CDI; multi-tenant model designed during migration (Proxmox didn't have one); storage and network re-architecture. 2-4 weeks assessment + 3-9 months implementation."
+        - { text: "2-4 weeks plus 3-9 months", correct: true }
+        - { text: "1 weekend cutover", correct: false }
+        - { text: "24+ months program", correct: false }
+      explanation: "Proxmox → Cozystack migration: VM images (qcow2) import directly into KubeVirt CDI; multi-tenant model is designed during migration (Proxmox didn't have one); storage and network are re-architected. Typical timeline: 2-4 weeks assessment plus 3-9 months implementation."
     - q: "Why does the article note that Proxmox → VMware is rare in 2026?"
       options:
-        - { text: "It's technically impossible", correct: false }
-        - { text: "Reverse migration usually doesn't make economic sense post-Broadcom", correct: true }
-        - { text: "Proxmox community blocks it", correct: false }
-      explanation: "Proxmox → VMware migration is rare in 2026 because reverse migration usually doesn't make economic sense post-Broadcom — VMware's subscription pricing makes the move uneconomical for most organizations."
+        - { text: "It is technically impossible", correct: false }
+        - { text: "Economics rarely justify the reverse move", correct: true }
+        - { text: "The Proxmox community forbids it", correct: false }
+      explanation: "Proxmox → VMware migration is rare in 2026 because the economics rarely justify the reverse move post-Broadcom — VMware's subscription pricing makes the move uneconomical for most organizations."
 ---
 
 **This is the long-form companion to our [Proxmox alternative page](/alternatives/proxmox-alternative). It walks through where Proxmox VE, VMware (post-Broadcom), and Cozystack each fit — by use case, scale, and operational model.**

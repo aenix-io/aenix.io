@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "How long does the discovery phase last in the playbook?"
       options:
-        - { text: "One day", correct: false }
-        - { text: "One week — output is a one-page architecture brief, no code yet", correct: true }
-        - { text: "One month", correct: false }
+        - { text: "One week", correct: true }
+        - { text: "One sprint of two weeks", correct: false }
+        - { text: "One month of workshops", correct: false }
       explanation: "Day-0 discovery is one week. Output: a one-page architecture brief covering trigger, workload portfolio, capacity, hardware constraints, and compliance scope. No code yet."
     - q: "What is the primary deliverable at end of day-30?"
       options:
-        - { text: "Production-ready multi-tenant platform with all customer workloads migrated", correct: false }
-        - { text: "Working single-tenant single-cluster platform with basic observability — not yet production-ready for customers", correct: true }
-        - { text: "Just the hardware racked", correct: false }
+        - { text: "All customer workloads migrated to multi-tenant production", correct: false }
+        - { text: "Hardware racked, cabled, and powered on", correct: false }
+        - { text: "Working single-tenant cluster with basic observability", correct: true }
       explanation: "End of day-30: working platform — single-tenant, single-cluster, basic observability. NOT production-ready for customers yet. Multi-tenancy and operations come in days 31-60."
     - q: "What gets explicitly skipped in the 90-day scope?"
       options:
-        - { text: "Backup and DR with Velero", correct: false }
-        - { text: "Multi-region operation, GPU workload optimisation, comprehensive compliance certification, polished UI, legacy decommission", correct: true }
-        - { text: "Identity integration", correct: false }
+        - { text: "Multi-region operation and GPU workload optimisation", correct: true }
+        - { text: "Backup and disaster recovery with Velero", correct: false }
+        - { text: "Identity integration via Keycloak or chosen IdP", correct: false }
       explanation: "Honest acknowledgments of what 90 days does NOT cover: polished customer-facing portal, multi-region/multi-DC operation, GPU/AI workload optimization, comprehensive compliance certification (architecture is aligned, but audit is separate), legacy decommissioning (months 4-12 in cohorts)."
     - q: "What is the typical duration of the foundation phase?"
       options:
-        - { text: "Days 1-30 — hardware → OS+platform → storage+network → identity+observability", correct: true }
-        - { text: "Days 31-60", correct: false }
-        - { text: "Days 61-90", correct: false }
+        - { text: "Days 31 to 60 of the playbook", correct: false }
+        - { text: "Days 1 to 30 of the playbook", correct: true }
+        - { text: "Days 61 to 90 of the playbook", correct: false }
       explanation: "Foundation phase = days 1-30: week 1 hardware, week 2 OS+platform, week 3 storage+network, week 4 identity+observability. Multi-tenancy + operations is days 31-60; workload onboarding + golden paths is days 61-90."
     - q: "What infrastructure is set up in week 4?"
       options:
-        - { text: "KubeVirt VMs only", correct: false }
-        - { text: "Identity (Keycloak or chosen IdP) + observability (VictoriaMetrics + VictoriaLogs) + initial dashboards/alerts + audit logging", correct: true }
-        - { text: "Tenant CRD multi-tenancy", correct: false }
+        - { text: "KubeVirt VM templates and snapshot policies", correct: false }
+        - { text: "Tenant CRD multi-tenancy with per-tenant RBAC", correct: false }
+        - { text: "Identity provider integration and observability stack", correct: true }
       explanation: "Week 4 closes the foundation: Keycloak (or chosen IdP) integrated; VictoriaMetrics + VictoriaLogs deployed; initial dashboards and alerts; audit logging configured. Multi-tenancy comes only in week 5-6."
 ---
 

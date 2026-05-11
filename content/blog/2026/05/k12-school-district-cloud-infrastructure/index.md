@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "How does the article distinguish K-12 districts from universities for cloud infrastructure?"
       options:
-        - { text: "Universities are smaller", correct: false }
-        - { text: "K-12 doesn't run research computing, doesn't teach Kubernetes mostly, treats student-data privacy as primary concern, operates at consumer-facing scale, has 3-5 year procurement cycles", correct: true }
-        - { text: "Same drivers, different licensing", correct: false }
-      explanation: "Different drivers → different architectural answers. Universities focus on research computing + AI/ML labs + curriculum-driven cloud-native education. K-12 districts focus on student-data privacy, scale (10K-100K+ students), and long procurement cycles."
+        - { text: "Universities are smaller and less complex than districts", correct: false }
+        - { text: "Same drivers, different licensing and procurement rules", correct: false }
+        - { text: "K-12 centres on student-data privacy and 3-5 year cycles", correct: true }
+      explanation: "Different drivers → different architectural answers. Universities focus on research computing, AI/ML labs, and curriculum-driven cloud-native education. K-12 districts focus on student-data privacy, scale (10K-100K+ students), and long procurement cycles, and they don't run research computing or mostly teach Kubernetes."
     - q: "When is sovereign infrastructure actually warranted for K-12?"
       options:
-        - { text: "For every district", correct: false }
-        - { text: "Only when (a) regulatory pressure for student-data residency, (b) liability/public-commitment to local data residency, or (c) district building its own EdTech learning platform", correct: true }
-        - { text: "Never", correct: false }
-      explanation: "Three scenarios where sovereign fits: regulatory pressure (some EU member states require student-data residency), liability/public-commitment (high-profile districts that committed to local residency), EdTech platform development (districts building their own learning platforms). Most K-12 districts: hyperscaler-managed + standard EdTech is right."
+        - { text: "For every K-12 district as a default architecture", correct: false }
+        - { text: "When residency rules, liability, or own EdTech apply", correct: true }
+        - { text: "Almost never — hyperscaler-managed is always right", correct: false }
+      explanation: "Three scenarios where sovereign fits: regulatory pressure (some EU member states require student-data residency), liability/public-commitment (high-profile districts that committed to local residency), and EdTech platform development (districts building their own learning platforms). For most districts, hyperscaler-managed plus standard EdTech is right."
     - q: "What multi-tenancy pattern is recommended for a district-tier deployment?"
       options:
-        - { text: "One namespace for everyone", correct: false }
-        - { text: "District-tier Cozystack cluster with Tenant CRD per school", correct: true }
-        - { text: "Cluster per student", correct: false }
-      explanation: "District-tier cluster: Cozystack at central district IT; Tenant CRD per school for isolation; sovereign by architecture (student data on customer hardware, customer-controlled keys); federated workforce identity to Google Classroom / Microsoft 365."
+        - { text: "One shared namespace across all schools in the district", correct: false }
+        - { text: "A separate cluster spun up per individual student", correct: false }
+        - { text: "One district Cozystack cluster with a Tenant per school", correct: true }
+      explanation: "District-tier cluster: Cozystack at central district IT; Tenant CRD per school for isolation; sovereign by architecture (student data on customer hardware, customer-controlled keys); federated workforce identity to Google Classroom or Microsoft 365."
     - q: "Which named pitfall is \"vendor-led education cloud with lock-in\"?"
       options:
-        - { text: "Common pitfall — gets MSPs sucked into a vendor relationship that locks the district", correct: true }
-        - { text: "Recommended approach", correct: false }
-        - { text: "A regulatory requirement", correct: false }
+        - { text: "A common pitfall — districts get locked into one vendor stack", correct: true }
+        - { text: "A recommended approach for low-resource district IT teams", correct: false }
+        - { text: "A regulatory requirement under most state K-12 rules", correct: false }
       explanation: "Common pitfalls: underestimating EdTech vendor integration complexity, skipping FERPA/GDPR audit-readiness, vendor-led \"education cloud\" with lock-in, mid-cycle re-architecture due to budget cycle mismatch."
     - q: "For consortia (multi-district shared platform), what model does the article propose?"
       options:
-        - { text: "Single hyperscaler tenant per district", correct: false }
-        - { text: "Federated multi-district platform with shared core, per-district isolation, joint procurement, distributed operations", correct: true }
-        - { text: "Each district runs its own from scratch", correct: false }
+        - { text: "A single shared hyperscaler tenant covering every district", correct: false }
+        - { text: "Federated platform with shared core and per-district isolation", correct: true }
+        - { text: "Each district runs an independent stack from scratch", correct: false }
       explanation: "For consortia: federated multi-district platform with shared core, per-district isolation, joint procurement, distributed operations. This pools investment without sacrificing district-level data control."
 ---
 

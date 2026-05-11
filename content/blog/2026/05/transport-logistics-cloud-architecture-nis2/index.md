@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "Under NIS2, what category does transport fall into?"
       options:
-        - { text: "Important entity (Annex II)", correct: false }
-        - { text: "Essential entity (Annex I) — Article 21/23 obligations apply to ICT", correct: true }
-        - { text: "Out of scope", correct: false }
+        - { text: "Essential entity under Annex I", correct: true }
+        - { text: "Important entity under Annex II", correct: false }
+        - { text: "Out of scope for transport ICT", correct: false }
       explanation: "Transport is in NIS2 Annex I as an essential entity. Article 21 risk-management measures and Article 23 incident reporting apply to ICT used by transport organisations (rail, road, water, air)."
     - q: "What three-tier architecture does the article describe for transport / logistics?"
       options:
-        - { text: "HQ Cloud (TMS, fleet management, AI training, customer-facing) + Regional sites (operational centres, regional dispatch, AI inference) + Edge (depots, ports, terminals, on-vehicle compute)", correct: true }
-        - { text: "Just hyperscaler region", correct: false }
-        - { text: "Single on-prem cluster", correct: false }
+        - { text: "Single hyperscaler region for everything", correct: false }
+        - { text: "HQ cloud, regional sites, and edge tier", correct: true }
+        - { text: "One consolidated on-prem cluster", correct: false }
       explanation: "Three tiers: HQ Cloud (transport management system, fleet management, AI training, customer-facing) → Regional sites (operational centres, regional dispatch, AI inference) → Edge (depots, ports, terminals, on-vehicle compute). Cozystack at all three with OT boundary at edge for safety-critical systems."
     - q: "Which transport-specific NIS2 architecture controls does the article highlight?"
       options:
-        - { text: "Multi-modal data sovereignty (cross-border freight), sub-contractor visibility (logistics chains often 5+ levels deep), BCP for kinetic disruption, air-gap for safety-critical OT", correct: true }
-        - { text: "Standard Article 21 only", correct: false }
-        - { text: "Just MFA", correct: false }
+        - { text: "Standard Article 21 risk-management measures only", correct: false }
+        - { text: "Cross-border freight, deep sub-contractor visibility, BCP, OT air-gap", correct: true }
+        - { text: "Multi-factor authentication for operator consoles only", correct: false }
       explanation: "Standard Article 21 + 23 mapping plus transport-specific: multi-modal data sovereignty (cross-border freight data), sub-contractor visibility (logistics chains often 5+ levels), BCP for kinetic disruption scenarios (port closures, road blockages, weather), air-gap for safety-critical OT (rail signalling, automated terminal ops)."
     - q: "What kind of AI workload pattern is most common in transport?"
       options:
-        - { text: "One-off batch jobs", correct: false }
-        - { text: "Sustained 24/7 inference where dedicated GPU economics fit (route optimisation, demand forecasting, predictive maintenance, last-mile, customer-facing AI)", correct: true }
-        - { text: "Only training, no inference", correct: false }
+        - { text: "One-off batch jobs run overnight", correct: false }
+        - { text: "Training-only workloads, no inference", correct: false }
+        - { text: "Sustained 24/7 inference at scale", correct: true }
       explanation: "Most transport AI workloads are sustained 24/7 inference where dedicated GPU economics fit. Use cases: route optimisation (real-time + planning), demand forecasting, predictive maintenance for fleet, last-mile optimisation, customer-facing AI (delivery ETA, customer service)."
     - q: "Why does the article say sub-contractor visibility is particularly hard in logistics?"
       options:
-        - { text: "Sub-contractors don't exist in logistics", correct: false }
-        - { text: "Logistics chains often have 5+ levels of sub-contracting — visibility past second hop (NIS2/DORA expected) is unusually challenging", correct: true }
-        - { text: "It's easy", correct: false }
+        - { text: "Sub-contractors are rare in transport chains", correct: false }
+        - { text: "Tracing is trivial with modern TMS tooling", correct: false }
+        - { text: "Chains run 5+ sub-contracting levels deep", correct: true }
       explanation: "Logistics chains often have 5+ levels of sub-contracting (carrier → forwarder → broker → handler → terminal operator). NIS2 (and DORA) expect supplier transparency to second hop — for logistics, even that is unusually hard, and beyond second hop is often impossible without dedicated traceability tooling."
 ---
 

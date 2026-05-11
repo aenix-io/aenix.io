@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "How does the article characterise the three platforms' architectural philosophies?"
       options:
-        - { text: "Nutanix = vendor-led integrated HCI appliance; VMware = mature legacy with deep ecosystem; Cozystack = open-source Kubernetes-native, customer-controlled", correct: true }
-        - { text: "All three are open-source community projects", correct: false }
-        - { text: "All are subscription-based with similar pricing", correct: false }
+        - { text: "Nutanix HCI; VMware legacy ecosystem; Cozystack OSS K8s", correct: true }
+        - { text: "All three are open-source community-governed projects", correct: false }
+        - { text: "All three are subscription-led with comparable list pricing", correct: false }
       explanation: "Three different philosophies: Nutanix prioritises vendor-led HCI integration and operational simplicity; VMware brings mature ecosystem integration with subscription-led economics; Cozystack offers open-source Kubernetes-native architecture with community-governed roadmap."
     - q: "For VMware→Cozystack migration of a 100–1000 VM estate, what timeline is given?"
       options:
-        - { text: "1-2 weeks", correct: false }
-        - { text: "8-18 months elapsed; net positive after Year 2 typically", correct: true }
-        - { text: "36+ months", correct: false }
+        - { text: "1-2 weeks elapsed (rapid in-place replatform)", correct: false }
+        - { text: "8-18 months elapsed; positive economics after Year 2", correct: true }
+        - { text: "36+ months elapsed (long-tail decommission)", correct: false }
       explanation: "VMware → Cozystack: 8-18 months elapsed for 100-1000 VM estate (assessment + destination build + cohort migration). Net positive economically after Year 2 typically, accounting for migration cost vs avoided licensing."
     - q: "In the decision tree, who should choose Nutanix over Cozystack?"
       options:
-        - { text: "Service-provider multi-customer cloud builders", correct: false }
         - { text: "HCI appliance preference + existing Nutanix relationship", correct: true }
-        - { text: "Open-source-first procurement", correct: false }
+        - { text: "Service-provider multi-customer cloud builders (white-label)", correct: false }
+        - { text: "Open-source-first procurement (sovereignty mandate)", correct: false }
       explanation: "Decision tree: HCI appliance preference + Nutanix relationship → Nutanix. Open-source-first procurement / sovereignty / multi-tenant cloud-builder model → Cozystack. Existing VMware estate with no triggers to leave → VMware."
     - q: "In the comparison matrix, what does Nutanix list under \"containers\"?"
       options:
-        - { text: "Native Kubernetes", correct: false }
-        - { text: "Karbon (separate product)", correct: true }
-        - { text: "Tanzu integration", correct: false }
+        - { text: "Native Kubernetes (containers + VMs on one plane)", correct: false }
+        - { text: "Tanzu integration (federated control plane)", correct: false }
+        - { text: "Karbon (separate Kubernetes product alongside AHV)", correct: true }
       explanation: "Nutanix containers = Karbon (separate product). VMware = Tanzu (separate product). Cozystack = native Kubernetes (containers and VMs on the same platform). The \"separate product\" pattern is a key architectural difference."
     - q: "What kind of hardware does Nutanix run on vs Cozystack?"
       options:
-        - { text: "Both run on commodity x86", correct: false }
-        - { text: "Nutanix runs on Nutanix appliance hardware; Cozystack runs on commodity x86", correct: true }
-        - { text: "Both require ARM", correct: false }
+        - { text: "Both run on standard commodity x86 servers", correct: false }
+        - { text: "Both require modern ARM-based server hardware", correct: false }
+        - { text: "Nutanix on Nutanix appliances; Cozystack on commodity x86", correct: true }
       explanation: "Nutanix = Nutanix appliance hardware (HCI model). VMware VCF = x86 (general). Cozystack = commodity x86. Cozystack's commodity-x86 fit means existing VMware hardware usually qualifies for repurpose during migration."
 ---
 

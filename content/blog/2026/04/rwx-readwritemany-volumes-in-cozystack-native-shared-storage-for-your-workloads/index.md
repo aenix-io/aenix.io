@@ -13,34 +13,34 @@ quiz:
   questions:
     - q: "Starting from which Cozystack version are RWX (ReadWriteMany) volumes supported out of the box?"
       options:
-        - { text: "v0.20", correct: false }
         - { text: "v1.0", correct: true }
+        - { text: "v0.20", correct: false }
         - { text: "v2.0", correct: false }
       explanation: "Starting with Cozystack v1.0, you can use ReadWriteMany (RWX) persistent volumes out of the box. Multiple pods and VMs can mount the same volume simultaneously."
     - q: "What technology stack powers RWX under the hood?"
       options:
-        - { text: "NFSv4 + plain Linux NFS server", correct: false }
-        - { text: "LINSTOR + NFS-Ganesha — each RWX PVC auto-provisions a dedicated NFS server backed by replicated block storage, with CiliumNetworkPolicy for traffic isolation", correct: true }
-        - { text: "iSCSI + multipath", correct: false }
+        - { text: "Plain Linux NFSv4 server running on a control-plane node", correct: false }
+        - { text: "iSCSI exports with multipath and a shared LVM pool", correct: false }
+        - { text: "LINSTOR with NFS-Ganesha and CiliumNetworkPolicy isolation", correct: true }
       explanation: "RWX is powered by LINSTOR + NFS-Ganesha. Each RWX PVC automatically provisions a dedicated NFS server backed by replicated block storage. CiliumNetworkPolicy handles traffic isolation between tenants."
     - q: "How does a tenant request an RWX volume?"
       options:
-        - { text: "File a ticket with the platform team", correct: false }
-        - { text: "Create a standard PVC with accessModes: [ReadWriteMany] and storageClassName: nfs", correct: true }
-        - { text: "Use a custom proprietary CRD only available to admins", correct: false }
+        - { text: "Create a standard PVC with ReadWriteMany and storageClassName nfs", correct: true }
+        - { text: "File a platform-team ticket so an operator can provision the share", correct: false }
+        - { text: "Use a proprietary admin-only CRD shipped with the operator", correct: false }
       explanation: "Tenants create a standard PVC with accessModes: [ReadWriteMany] and storageClassName: nfs. No external NFS infrastructure needed — everything runs inside Cozystack."
     - q: "Which use case is NOT named as unlocked by RWX?"
       options:
         - { text: "Multi-replica deployments sharing persistent state", correct: false }
-        - { text: "Shared data across multiple VMs in tenant Kubernetes clusters", correct: false }
         - { text: "GPU live migration between physical hosts", correct: true }
-        - { text: "Volume snapshots, expansion, cloning per volume", correct: false }
+        - { text: "Shared data across multiple VMs in tenant K8s clusters", correct: false }
+        - { text: "Volume snapshots, expansion, and cloning per volume", correct: false }
       explanation: "RWX unlocks: multi-replica deployments sharing persistent state; shared data across multiple VMs in tenant K8s clusters; volume snapshots, expansion, and cloning per volume; no external NFS infrastructure needed. GPU live migration is an unrelated industry-wide limitation."
     - q: "How does the article describe what Cozystack is, in this announcement?"
       options:
-        - { text: "A licensed commercial-only product", correct: false }
-        - { text: "A free and open-source PaaS platform and framework for building clouds — runs full-featured cloud on bare metal with managed Kubernetes, VMs, databases, storage on Talos / KubeVirt / Flux CD / LINSTOR", correct: true }
-        - { text: "A frontend for AWS", correct: false }
+        - { text: "A licensed commercial-only orchestration product", correct: false }
+        - { text: "A managed AWS frontend with hosted control plane", correct: false }
+        - { text: "A free and open-source PaaS framework for building clouds", correct: true }
       explanation: "The boilerplate: Cozystack is a free and open-source PaaS platform and framework for building clouds. Runs full-featured cloud on bare metal with managed Kubernetes, VMs, databases, and storage — powered by proven CNCF technologies (Talos, KubeVirt, Flux CD, LINSTOR)."
 ---
 

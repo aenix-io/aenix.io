@@ -14,32 +14,32 @@ quiz:
     - q: "How many parallel infrastructure environments does a typical tier-1 European telco operate in 2026?"
       options:
         - { text: "One unified hyperscaler estate", correct: false }
-        - { text: "Three or four (legacy NFV, IT cloud, edge, AI/data lake)", correct: true }
-        - { text: "Only legacy NFV plus a single edge stack", correct: false }
+        - { text: "Three or four parallel environments", correct: true }
+        - { text: "Legacy NFV plus a single edge stack", correct: false }
       explanation: "The post states tier-1 telcos operate three or four parallel environments: legacy NFV (2015-2020 vintage), IT cloud, edge compute, and AI/data lake/analytics."
     - q: "Where does the single-platform Cozystack vision require nuance rather than a straightforward fit?"
       options:
-        - { text: "IT cloud workloads, which still need a separate VMware estate", correct: false }
-        - { text: "AI / data lake workloads, which can't be sovereign", correct: false }
-        - { text: "The NFV environment specifically, because VNF certification remains vendor-bound", correct: true }
+        - { text: "IT cloud workloads needing VMware separately", correct: false }
+        - { text: "AI / data lake workloads that can't be sovereign", correct: false }
+        - { text: "NFV, since VNF certification is vendor-bound", correct: true }
       explanation: "The article notes that the platform underneath can host KubeVirt-based VNFs, but VNF certification with vendor equipment remains vendor-managed and some VNFs are certified only on specific OpenStack distributions."
     - q: "What footprint does Cozystack support for typical telco edge sites?"
       options:
-        - { text: "Around 3-node clusters at edge sites with federation to regional and core platforms", correct: true }
-        - { text: "Minimum 12-node clusters per MEC location", correct: false }
-        - { text: "Single-node-only deployments without federation", correct: false }
+        - { text: "~3-node clusters federated to core", correct: true }
+        - { text: "12-node minimum per MEC location", correct: false }
+        - { text: "Single-node-only, no federation path", correct: false }
       explanation: "The post specifies that Cozystack supports edge deployment with reduced footprint, with ~3-node clusters at edge sites typical, federating to regional and core platforms under the same operational model."
     - q: "Why are sustained-utilisation AI workloads at telcos a good fit for Cozystack AI/ML Edition rather than hyperscaler?"
       options:
-        - { text: "Because hyperscalers cannot run inference workloads at all", correct: false }
-        - { text: "Because dedicated GPU economics beat hyperscaler when utilisation is sustained", correct: true }
-        - { text: "Because regulators forbid GPU usage on hyperscalers", correct: false }
+        - { text: "Hyperscalers cannot run inference at all", correct: false }
+        - { text: "Dedicated GPU economics beat hyperscaler", correct: true }
+        - { text: "Regulators forbid GPU usage in hyperscalers", correct: false }
       explanation: "The post explains that telco AI patterns (traffic prediction, anomaly detection, customer-facing AI) are dominated by sustained-utilisation profiles — exactly the case where dedicated GPU economics beat hyperscaler."
     - q: "How long does a typical tier-1 telco modernization programme run end-to-end?"
       options:
-        - { text: "3-6 months", correct: false }
-        - { text: "6-12 months", correct: false }
-        - { text: "18-36+ months across phased workstreams", correct: true }
+        - { text: "18-36+ months phased programme", correct: true }
+        - { text: "3-6 months accelerated programme", correct: false }
+        - { text: "6-12 months phased programme", correct: false }
       explanation: "The article states tier-1 telco modernization runs 18-36+ months, phased across strategic engagement, IT cloud, AI/data lake, edge, and NFV modernization tracks."
 ---
 

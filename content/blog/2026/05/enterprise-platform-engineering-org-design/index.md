@@ -13,34 +13,34 @@ quiz:
   questions:
     - q: "At roughly what scale does a single platform team typically stop scaling further, per the article?"
       options:
-        - { text: "10-20 product teams", correct: false }
-        - { text: "50-100 product teams or 500-1,000 product engineers", correct: true }
-        - { text: "5,000+ product engineers", correct: false }
+        - { text: "Around 10-20 product teams", correct: false }
+        - { text: "Around 50-100 product teams", correct: true }
+        - { text: "Past 5,000 product engineers", correct: false }
       explanation: "A single platform team scales to roughly 50-100 product teams or 500-1,000 product engineers. Above that, the platform function fragments by domain, BU, or geography, and platform-of-platforms governance becomes its own discipline."
     - q: "What's the article's rule-of-thumb for foundational substrate platform headcount?"
       options:
-        - { text: "1 platform engineer per 10 product engineers", correct: false }
-        - { text: "1 platform engineer per 50-100 product engineers, with total platform function at 5-10% of engineering headcount", correct: true }
-        - { text: "A fixed team of 5 regardless of size", correct: false }
+        - { text: "About 1 platform engineer per 10 product engineers", correct: false }
+        - { text: "A fixed team of 5 regardless of overall org size", correct: false }
+        - { text: "About 1 platform engineer per 50-100 product engineers", correct: true }
       explanation: "Foundational substrate: 1 engineer per 50-100 product engineers. At 2,000 product engineers, that's 20-40 platform engineers split across infra/data/app/SRE sub-teams. Total platform function should be 5-10% of engineering headcount; below that it's structurally underfunded."
     - q: "Which of the listed failure modes does the article describe as 'Backstage-as-platform anti-pattern'?"
       options:
-        - { text: "Backstage being too expensive to license", correct: false }
-        - { text: "Buying Backstage and declaring the platform problem solved before the underlying capabilities are actually self-service", correct: true }
-        - { text: "Backstage UI being too complex for product teams", correct: false }
+        - { text: "Buying Backstage before the underlying capabilities are self-service", correct: true }
+        - { text: "Backstage being too expensive to license at enterprise scale", correct: false }
+        - { text: "Backstage UI being too complex for product teams to adopt", correct: false }
       explanation: "Backstage as a portal works only when the underlying capabilities are actually self-service. Buying Backstage before the platform substrate produces beautiful catalogs over operational chaos — adoption stalls. Backstage works as the user-facing layer after the substrate is real."
     - q: "What scope does the article say the Architecture Review Board (ARB) should NOT take on?"
       options:
-        - { text: "Setting deprecation timelines", correct: false }
-        - { text: "Micromanaging individual product team architecture decisions within their own scope", correct: true }
+        - { text: "Setting deprecation timelines for legacy stacks", correct: false }
         - { text: "Approving new vendor or open-source dependencies", correct: false }
-      explanation: "ARB owns cross-team decisions only — deprecation timelines, technology radar, new dependencies, multi-team architectural decisions. It must not micromanage product team's own architecture; overreach creates political friction that undermines the governance function."
+        - { text: "Micromanaging a product team's internal architecture", correct: true }
+      explanation: "ARB owns cross-team decisions only — deprecation timelines, technology radar, new dependencies, multi-team architectural decisions. It must not micromanage a product team's own architecture; overreach creates political friction that undermines the governance function."
     - q: "Which org-design pattern fits organisations with strong BU autonomy like established financial services?"
       options:
-        - { text: "Pattern A — domain-aligned platform fragmentation", correct: false }
         - { text: "Pattern B — BU-aligned platform federation", correct: true }
-        - { text: "Pattern C — hybrid shared substrate + domain extensions", correct: false }
-      explanation: "Pattern B (BU-aligned federation) fits organisations with strong BU autonomy — most established financial services and large industrial conglomerates. Pattern A fits clear engineering-domain boundaries (fintech, consumer-tech); Pattern C balances consistency with domain specialisation."
+        - { text: "Pattern A — domain-aligned platform fragmentation", correct: false }
+        - { text: "Pattern C — hybrid shared substrate plus extensions", correct: false }
+      explanation: "Pattern B fits organisations with strong BU autonomy — most established financial services and large industrial conglomerates. Pattern A fits clear engineering-domain boundaries (fintech, consumer-tech); Pattern C balances consistency with domain specialisation."
 ---
 
 **Long-form companion to the [enterprise platform engineering services page](/services/enterprise-platform-engineering/). For Engineering VPs, Heads of Platform, and Chief Architects designing platform-engineering function at 1,000+-engineer organisations — covering org design, headcount math, governance models, and the failure modes that recur at this scale.**

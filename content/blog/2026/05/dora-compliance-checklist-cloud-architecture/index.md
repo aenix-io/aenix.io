@@ -12,37 +12,37 @@ quiz:
   questions:
     - q: "When did DORA come into force in the EU?"
       options:
-        - { text: "17 October 2024", correct: false }
         - { text: "17 January 2025", correct: true }
+        - { text: "17 October 2024", correct: false }
         - { text: "1 January 2026", correct: false }
       explanation: "DORA (Regulation (EU) 2022/2554) has been in force since 17 January 2025. NIS2 was transposed across member states from 17 October 2024 — easy to confuse."
     - q: "Which DORA pillar concentrates the most architectural work for cloud teams?"
       options:
         - { text: "Pillar 1 — ICT risk management", correct: false }
+        - { text: "Pillar 4 — ICT third-party risk", correct: true }
         - { text: "Pillar 3 — operational resilience testing", correct: false }
-        - { text: "Pillar 4 — management of ICT third-party risk (Articles 28–44)", correct: true }
         - { text: "Pillar 5 — information sharing", correct: false }
-      explanation: "The article calls Pillar 4 \"where most of the new technical work concentrates\" — every hyperscaler, SaaS, and managed service in the stack becomes an \"ICT third-party service provider\" with Article 28–44 obligations."
+      explanation: "Articles 28–44 (Pillar 4) are \"where most of the new technical work concentrates\" — every hyperscaler, SaaS, and managed service in the stack becomes an ICT third-party service provider with new obligations."
     - q: "For a critical-function arrangement, which exit-readiness expectation is increasingly enforced by supervisors?"
       options:
         - { text: "A documented exit policy on file", correct: false }
-        - { text: "A full or partial exit drill within the past 24 months", correct: true }
         - { text: "Quarterly exit-cost recalculations", correct: false }
+        - { text: "A partial exit drill within the past 24 months", correct: true }
         - { text: "A signed migration contract with a backup provider", correct: false }
       explanation: "Article 28(8) requires an exit plan; supervisors increasingly expect at least a partial exit drill within the past 24 months for critical-function arrangements. A plan that has never been rehearsed makes the time-to-exit fictional."
     - q: "In the four typical gaps section, where does the article say data residency most often quietly leaks outside the regulator perimeter?"
       options:
-        - { text: "In the production database", correct: false }
-        - { text: "In the SaaS observability stack collecting application logs", correct: true }
-        - { text: "In customer-facing CDN nodes", correct: false }
-        - { text: "In the CI/CD compute layer", correct: false }
+        - { text: "In the SaaS observability stack collecting logs", correct: true }
+        - { text: "In the production database storing client records", correct: false }
+        - { text: "In customer-facing CDN edge nodes", correct: false }
+        - { text: "In the CI/CD compute layer running builds", correct: false }
       explanation: "Gap 1 — observability data quietly leaves the regulator's perimeter. The production database may be compliant; the SaaS observability stack collecting logs from it usually is not, and DORA Article 28's data-residency expectations apply to the entire ICT third-party arrangement."
     - q: "How frequently does DORA require threat-led penetration testing (TLPT) for significant entities?"
       options:
         - { text: "Annually", correct: false }
+        - { text: "Only after a major incident", correct: false }
         - { text: "Every three years", correct: true }
         - { text: "Every five years", correct: false }
-        - { text: "Only after a major incident", correct: false }
       explanation: "For significant entities, TLPT is required every three years. Other in-scope entities run scenario-based resilience testing at least annually."
 ---
 

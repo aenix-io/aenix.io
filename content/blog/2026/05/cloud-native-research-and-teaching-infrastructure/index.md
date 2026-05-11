@@ -12,35 +12,35 @@ quiz:
   questions:
     - q: "What three university missions does the article structure its analysis around?"
       options:
-        - { text: "Marketing, recruitment, alumni engagement", correct: false }
-        - { text: "Research computing for AI, reproducible research, cloud-native curriculum delivery", correct: true }
-        - { text: "Compliance, accreditation, ranking", correct: false }
+        - { text: "Marketing, recruitment, and alumni engagement", correct: false }
+        - { text: "Compliance, accreditation, and ranking metrics", correct: false }
+        - { text: "AI research, reproducibility, and cloud-native teaching", correct: true }
       explanation: "Mission 1 — research computing for the AI era; Mission 2 — reproducible research infrastructure (Plan S, FAIR, Horizon Europe); Mission 3 — cloud-native curriculum delivery (teaching Kubernetes/GitOps/observability hands-on)."
     - q: "Why is the article skeptical of \"departmental clusters\" as the only research-computing model?"
       options:
-        - { text: "They are too cheap", correct: false }
-        - { text: "They fragment expertise — each lab maintains its own cluster", correct: true }
-        - { text: "EuroHPC bans them", correct: false }
+        - { text: "They fragment expertise across each separate lab", correct: true }
+        - { text: "They are too cheap to justify central IT involvement", correct: false }
+        - { text: "EuroHPC procurement rules explicitly ban them", correct: false }
       explanation: "Departmental clusters fragment expertise — every lab ends up running its own. The article argues for shared GPU pool with strong isolation, self-service for PIs, IaC-managed for reproducibility, and integrated with national/European research infrastructure."
     - q: "Which European umbrella initiative is named for connecting reproducible-research infrastructure across universities?"
       options:
+        - { text: "GAIA-X federated cloud framework", correct: false }
         - { text: "EOSC — European Open Science Cloud", correct: true }
-        - { text: "GAIA-X", correct: false }
-        - { text: "EUCS", correct: false }
-        - { text: "Horizon 2030", correct: false }
+        - { text: "EUCS cloud security certification", correct: false }
+        - { text: "Horizon 2030 research programme", correct: false }
       explanation: "EOSC connects reproducible-research infrastructure across European universities. Cozystack platforms can participate in EOSC federations through standard Kubernetes APIs."
     - q: "Which Cozystack feature directly supports the curriculum-delivery requirement that broken student environments don't affect adjacent students?"
       options:
-        - { text: "Tenant CRD per cohort", correct: true }
-        - { text: "KubeVirt live migration", correct: false }
-        - { text: "cozyportal", correct: false }
-        - { text: "Velero backup", correct: false }
+        - { text: "KubeVirt live VM migration", correct: false }
+        - { text: "Tenant CRD scoped per cohort", correct: true }
+        - { text: "cozyportal self-service UI", correct: false }
+        - { text: "Velero backup and restore", correct: false }
       explanation: "Tenant CRD per cohort isolates students; quota and RBAC contain misconfiguration; instructor self-service via cozyportal lets instructors create/destroy student environments without an IT ticket."
     - q: "Why does the article argue that per-CPU subscription pricing fits university economics poorly?"
       options:
-        - { text: "Per-CPU pricing is illegal in EU procurement", correct: false }
-        - { text: "University IT budgets do not scale linearly with compute demand, while per-CPU pricing does", correct: true }
-        - { text: "Universities only use ARM CPUs", correct: false }
+        - { text: "Per-CPU pricing is illegal under EU procurement rules", correct: false }
+        - { text: "Most universities only run ARM-based academic clusters", correct: false }
+        - { text: "University budgets don't scale with compute demand", correct: true }
       explanation: "University IT budgets don't scale with compute demand. Open-source platforms with optional commercial support are sustainable economically; per-CPU subscription pricing typical of commercial alternatives doesn't fit university economics."
 ---
 

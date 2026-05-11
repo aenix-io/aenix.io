@@ -13,33 +13,33 @@ quiz:
   questions:
     - q: "What is TLPT and how often is it required under DORA for significant financial entities?"
       options:
-        - { text: "Threat-Led Penetration Testing, run every three years against live production by an external test provider", correct: true }
-        - { text: "Tactical Live Performance Test, run quarterly by the entity's internal SOC", correct: false }
-        - { text: "Transaction-Level Privacy Test, run annually as part of GDPR audit", correct: false }
-      explanation: "The article defines TLPT as Threat-Led Penetration Testing, required every three years as a structured red-team exercise against live production by an external test provider, with the CSIRT/SOC treated as a real defender."
+        - { text: "Tactical Live Performance Test, run quarterly by internal SOC", correct: false }
+        - { text: "Threat-Led Penetration Testing, run every three years", correct: true }
+        - { text: "Transaction-Level Privacy Test, run annually with GDPR audit", correct: false }
+      explanation: "TLPT is Threat-Led Penetration Testing, required every three years as a structured red-team exercise against live production by an external test provider, with the CSIRT/SOC treated as a real defender."
     - q: "What does the article say about why the 24-hour DORA Article 23 early-warning window often turns out to be fictional in practice?"
       options:
-        - { text: "Supervisors rarely actually enforce the timer", correct: false }
-        - { text: "Detection telemetry is tuned for performance and not security, so the signal-to-noise on Article 23 triggers is too low", correct: true }
-        - { text: "Most banks have outsourced detection to MSSPs that miss the window", correct: false }
-      explanation: "TLPT-readiness question 1 explains that if detection telemetry is tuned for performance and not security, the 24-hour window is fictional — most banks have rich performance telemetry and alert-fatigued security telemetry."
+        - { text: "Supervisors rarely enforce the 24-hour clock in practice", correct: false }
+        - { text: "Most banks have outsourced detection to MSSPs that miss it", correct: false }
+        - { text: "Detection telemetry is tuned for performance, not security", correct: true }
+      explanation: "TLPT-readiness question 1 explains that if detection telemetry is tuned for performance and not security, the 24-hour window is fictional — most banks have rich performance telemetry and alert-fatigued security telemetry, so the signal-to-noise on Article 23 triggers is too low."
     - q: "How does the Cozystack-based architecture address Article 28's concentration-risk substantive condition (not just procurement)?"
       options:
-        - { text: "By contracting two hyperscalers simultaneously", correct: false }
-        - { text: "Workloads use platform abstractions (Kubernetes, KubeVirt, S3-compatible storage) that exist on multiple substrates, so the exit destination is named at the architecture level", correct: true }
-        - { text: "By requiring all data to live on-prem only", correct: false }
-      explanation: "Gap 3 (concentration risk) describes the substantive answer: workloads use platform abstractions that exist on multiple substrates, and the exit destination is named at the architecture level, not the legal level."
+        - { text: "Workloads use platform abstractions that exist on multiple substrates", correct: true }
+        - { text: "By contracting two competing hyperscalers simultaneously", correct: false }
+        - { text: "By forcing all data and compute to live strictly on-prem", correct: false }
+      explanation: "Gap 3 (concentration risk) describes the substantive answer: workloads use platform abstractions — Kubernetes, KubeVirt, S3-compatible storage — that exist on multiple substrates, and the exit destination is named at the architecture level, not the legal level."
     - q: "Under Article 30(2)(a), supplier-chain visibility must extend to which level?"
       options:
-        - { text: "Only the direct contracted vendor — first hop", correct: false }
-        - { text: "Second hop — the contracted vendor's own critical providers", correct: true }
+        - { text: "Only the directly contracted vendor — first hop", correct: false }
         - { text: "Full transitive closure of every upstream dependency", correct: false }
+        - { text: "Second hop — the contracted vendor's own critical providers", correct: true }
       explanation: "Gap 4 states Article 30(2)(a) requires visibility to second hop — the contracted hyperscaler's data-centre operators, network providers, and shared platform services beneath."
     - q: "In the engagement model, what does Aenix explicitly NOT do in Phase 4 (Managed retainer)?"
       options:
-        - { text: "Provide Tier-3 SLA support", correct: false }
-        - { text: "Hold kubectl access to the customer's production cluster — operates via GitOps PR review only", correct: true }
-        - { text: "Participate in TLPT preparation", correct: false }
+        - { text: "Hold kubectl access to the customer's production cluster", correct: true }
+        - { text: "Provide Tier-3 SLA support for the platform substrate", correct: false }
+        - { text: "Participate in TLPT preparation and post-mortems", correct: false }
       explanation: "Phase 4 explicitly states: 'No kubectl access to customer production cluster — operates via GitOps PR review only. Critical for bank governance.'"
 ---
 

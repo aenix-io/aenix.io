@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "How is KubeVirt characterised relative to vSphere/ESXi in the compute layer?"
       options:
-        - { text: "KubeVirt is type-2 conceptually but operationally type-1-like (KVM running as Pods, standard QEMU/KVM under the hood)", correct: true }
-        - { text: "KubeVirt is microkernel-based", correct: false }
-        - { text: "KubeVirt is a paravirtualisation layer", correct: false }
+        - { text: "KubeVirt is conceptually type-2 but operationally type-1-like", correct: true }
+        - { text: "KubeVirt is built on a microkernel hypervisor design", correct: false }
+        - { text: "KubeVirt is a paravirtualisation layer above guests", correct: false }
       explanation: "KubeVirt is type-2 conceptually (KVM as Pods) but operationally type-1-like. Standard QEMU/KVM under the hood; broad guest OS support. Live migration on CPU; GPU live migration is industry-wide limitation, not specific to KubeVirt."
     - q: "What does the article say about migrating from NSX-heavy environments to Cilium?"
       options:
-        - { text: "Direct 1:1 mapping", correct: false }
-        - { text: "Requires policy redesign — not a 1:1 mapping; the architectural model is different", correct: true }
-        - { text: "Cilium auto-imports NSX rules", correct: false }
+        - { text: "Direct one-to-one mapping of all NSX rules", correct: false }
+        - { text: "Cilium auto-imports NSX rules during install", correct: false }
+        - { text: "Policy redesign is required, not a 1:1 mapping", correct: true }
       explanation: "Migration from NSX-heavy environment to Cilium requires policy redesign — not a 1:1 mapping. The architectural model is different. Most teams plan this in architecture review before any migration commits."
     - q: "In the operational implications, how long does the article say it takes for VMware-trained engineers to ramp on the kubectl-centric model?"
       options:
-        - { text: "1-2 days", correct: false }
-        - { text: "4-8 weeks with focused training", correct: true }
-        - { text: "12 months minimum", correct: false }
+        - { text: "One to two days of self-paced study", correct: false }
+        - { text: "Four to eight weeks with focused training", correct: true }
+        - { text: "Twelve months minimum of on-the-job ramp", correct: false }
       explanation: "The shift from vCenter-centric to kubectl-centric is a real operational learning curve. Most engineers ramp in 4-8 weeks with focused training. Aenix runs the training as part of professional services."
     - q: "For mission-critical DR, how does the article compare SRM vs Velero + per-app PITR?"
       options:
-        - { text: "Both work; SRM is plug-and-play vendor-managed, Velero stack is more transparent and tunable (more moving parts; more flexibility)", correct: true }
+        - { text: "Both work; trade plug-and-play against transparency", correct: true }
         - { text: "SRM is the only viable option for production DR", correct: false }
-        - { text: "Velero is faster than SRM", correct: false }
+        - { text: "Velero benchmarks faster than SRM at scale", correct: false }
       explanation: "Both work for mission-critical DR. SRM = mature DR orchestration, vendor-managed, plug-and-play. Velero + per-app PITR (PostgreSQL, etc.) = more moving parts but more transparent and tunable."
     - q: "For a typical 100-VM VMware → Cozystack migration, what is the elapsed-time estimate?"
       options:
-        - { text: "~2 weeks", correct: false }
-        - { text: "7-10 months elapsed", correct: true }
-        - { text: "~3 years", correct: false }
+        - { text: "Around two weeks of focused cutover work", correct: false }
+        - { text: "Around three years of phased migration", correct: false }
+        - { text: "Seven to ten months elapsed end to end", correct: true }
       explanation: "Typical 100-VM VMware → Cozystack migration: 7-10 months elapsed (discovery, parallel deployment, image migration cohorts, network/storage cutover, DR cutover, decommission). The driver is regression testing and parallel-run windows, not raw migration speed."
 ---
 

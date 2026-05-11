@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "When was NIS2 transposition into national law due across EU member states?"
       options:
-        - { text: "17 January 2025", correct: false }
-        - { text: "17 October 2024", correct: true }
-        - { text: "1 January 2026", correct: false }
+        - { text: "17 October 2024 (Member-State transposition into law)", correct: true }
+        - { text: "17 January 2025 (commonly confused with DORA in-force date)", correct: false }
+        - { text: "1 January 2026 (full ENISA reporting framework live)", correct: false }
       explanation: "NIS2 transposition was due by 17 October 2024 (some member states ran late). DORA — easy to confuse — went into force on 17 January 2025."
     - q: "In the NIS2 incident-reporting timeline (Article 23), what is the deadline for the first \"early warning\"?"
       options:
-        - { text: "24 hours of becoming aware", correct: true }
-        - { text: "72 hours of becoming aware", correct: false }
-        - { text: "One month of becoming aware", correct: false }
+        - { text: "72 hours of becoming aware (Article 33 GDPR-aligned)", correct: false }
+        - { text: "One month of becoming aware (final report deadline)", correct: false }
+        - { text: "24 hours of becoming aware (early warning to CSIRT)", correct: true }
       explanation: "Three-stage process: early warning within 24h, incident notification within 72h, final report within one month. The 24h alert is usually the tightest constraint and forces investment in detection telemetry."
     - q: "Cloud providers and datacenter providers are classified under NIS2 as which kind of entity?"
       options:
-        - { text: "Important entities (Annex II)", correct: false }
         - { text: "Essential entities under Digital Infrastructure (Annex I)", correct: true }
-        - { text: "Out of scope", correct: false }
+        - { text: "Important entities under Digital Providers (Annex II)", correct: false }
+        - { text: "Out of scope (covered by sector regulators instead)", correct: false }
       explanation: "Annex I (essential entities) lists Digital Infrastructure including IXPs, DNS service providers, TLD name registries, cloud providers, datacenter providers, CDN providers, MSPs, MSSPs, and public electronic communications services."
     - q: "In Article 21 → architecture mapping, which control is named for service-to-service authentication?"
       options:
-        - { text: "Username + password rotation", correct: false }
-        - { text: "Workload identity via SPIFFE/SPIRE or equivalent", correct: true }
-        - { text: "Anonymous internal traffic", correct: false }
+        - { text: "Username + password rotation (with PAM vaulting)", correct: false }
+        - { text: "Workload identity (SPIFFE/SPIRE or equivalent)", correct: true }
+        - { text: "Anonymous internal traffic (trusted-zone networking)", correct: false }
       explanation: "Under \"Access control / human resources\" the architecture mapping names workload identity (SPIFFE/SPIRE or equivalent) for service-to-service auth. Privileged access management, joiner-mover-leaver automation, and asset register completeness round out the control area."
     - q: "How does NIS2 typically apply for entities below the size threshold but in specific roles like DNS service providers?"
       options:
-        - { text: "Always exempt", correct: false }
-        - { text: "Some entities are in scope regardless of size — e.g. DNS service providers, TLD registries, MSPs", correct: true }
-        - { text: "Only above 500 employees", correct: false }
+        - { text: "Always exempt (size thresholds override sector criteria)", correct: false }
+        - { text: "Only when above 500 employees (per Article 2.1 thresholds)", correct: false }
+        - { text: "In scope regardless of size (DNS, TLD registries, MSPs)", correct: true }
       explanation: "Entity classification depends on size thresholds AND sector-specific criteria. Some entities are in scope regardless of size — explicitly DNS service providers, TLD registries, MSPs."
 ---
 

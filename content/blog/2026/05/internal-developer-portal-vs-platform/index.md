@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "In the article's framing, what is the right minimum scale to consider Backstage?"
       options:
-        - { text: "Any size", correct: false }
-        - { text: "200+ engineers, 100+ services, 5+ engineers on the platform team to maintain it", correct: true }
-        - { text: "50 engineers", correct: false }
+        - { text: "Any size, even a single ten-person team", correct: false }
+        - { text: "Around 200+ engineers and 100+ services", correct: true }
+        - { text: "Around 50 engineers, before service sprawl", correct: false }
       explanation: "Backstage works well at: 200+ engineers, 100+ services, platform team has 5+ engineers who can dedicate time to maintenance, plugin ecosystem matches your tooling, and customisation is a priority. Below this, operational cost overshoots value."
     - q: "When does the article say a portal becomes valuable, regardless of choice?"
       options:
-        - { text: "Always — every team needs one", correct: false }
-        - { text: "Service count is large (50+), team is large, cross-team service discovery is real, or compliance/audit requires service catalog", correct: true }
-        - { text: "Only when budget allows", correct: false }
+        - { text: "Always — every product team needs one from day one", correct: false }
+        - { text: "Only when the budget allows a dedicated portal team", correct: false }
+        - { text: "When service count crosses ~50 or audit demands a catalog", correct: true }
       explanation: "Portal becomes valuable when service count (50+) exceeds what engineers can hold in their heads, team size is large with non-platform-fluent engineers, cross-team service discovery is real, or compliance/audit requires a service catalog."
     - q: "For organisations that don't need a portal at all, what does the article suggest as adequate?"
       options:
-        - { text: "Custom UI", correct: false }
-        - { text: "IaC repository + Markdown documentation + GitOps interface", correct: true }
-        - { text: "Spreadsheet", correct: false }
+        - { text: "A bespoke custom UI built in-house", correct: false }
+        - { text: "IaC repo plus Markdown docs plus GitOps interface", correct: true }
+        - { text: "A shared spreadsheet of services and owners", correct: false }
       explanation: "For under ~100 engineers (small services count, fluent platform team), no portal: IaC repo + Markdown docs + GitOps interface. Strengths: zero operational cost beyond Git. Weakness: discoverability scales poorly past 30-50 services."
     - q: "What is Port (port.io)'s positioning in the article?"
       options:
-        - { text: "Open-source self-hosted", correct: false }
-        - { text: "SaaS internal developer portal — quicker to deploy than Backstage; SaaS dependency = sovereignty implications", correct: true }
-        - { text: "CI/CD pipeline runner", correct: false }
+        - { text: "Open-source self-hosted alternative to Backstage", correct: false }
+        - { text: "CI/CD pipeline runner with catalog features bolted on", correct: false }
+        - { text: "SaaS internal developer portal, opinionated, quick to deploy", correct: true }
       explanation: "Port is SaaS — no self-hosting; quicker to deploy than Backstage; opinionated. Trade-offs: SaaS dependency (sovereignty implications); less customizable than Backstage. Best for mid-size orgs willing to use SaaS."
     - q: "What clean shorthand does the article use to describe the platform vs portal split?"
       options:
-        - { text: "\"A platform without a portal still works. A portal without a platform is wallpaper.\"", correct: true }
-        - { text: "\"Portal is content, platform is form.\"", correct: false }
-        - { text: "\"Both are equal.\"", correct: false }
+        - { text: "Platform alone works; portal alone is wallpaper", correct: true }
+        - { text: "Portal is content, and platform is form", correct: false }
+        - { text: "Both layers are equal and interchangeable", correct: false }
       explanation: "The article's memorable framing: \"A platform without a portal still works. A portal without a platform is wallpaper.\" Capability stack vs UI/catalog layer — confusing them is why so many Backstage-first projects stall."
 ---
 

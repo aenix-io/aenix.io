@@ -13,33 +13,33 @@ quiz:
   questions:
     - q: "Why does Kubernetes require a separate cluster per user in the managed-Kubernetes model?"
       options:
-        - { text: "For billing simplicity only", correct: false }
         - { text: "Kubernetes operates on a single-tenant basis", correct: true }
-        - { text: "Because Helm requires it", correct: false }
+        - { text: "Billing pipelines are simpler with one cluster per user", correct: false }
+        - { text: "Helm releases conflict when shared across tenants", correct: false }
       explanation: "Managed Kubernetes provides a Kubernetes API in your cloud for users. Kubernetes operates single-tenant, meaning a separate cluster is required per user — that is the architectural assumption."
     - q: "According to the article, what kind of services do users now expect from every modern cloud?"
       options:
-        - { text: "Just VMs and storage", correct: false }
-        - { text: "Kubernetes + Simple Storage Service + Monitoring + Managed Databases (and more)", correct: true }
-        - { text: "Only AI inference endpoints", correct: false }
+        - { text: "Just VMs and block storage for self-management", correct: false }
+        - { text: "Only AI inference endpoints with token-based pricing", correct: false }
+        - { text: "Kubernetes, object storage, monitoring, managed databases", correct: true }
       explanation: "Leading cloud providers reshaped expectations: users expect Kubernetes, Simple Storage Services, Monitoring, Managed Databases, etc. Just selling VMs is no longer enough — users build infrastructure from these services as building blocks."
     - q: "What does the article identify as the typical mistake when teams build managed Kubernetes themselves?"
       options:
-        - { text: "Storing data inside virtual machines (breaking flexibility) and broken cluster auto-scaling", correct: true }
-        - { text: "Choosing Cilium over Calico", correct: false }
-        - { text: "Using too many GPUs", correct: false }
+        - { text: "Picking Cilium over Calico for the cluster CNI", correct: false }
+        - { text: "Data stored inside VMs and broken cluster auto-scaling", correct: true }
+        - { text: "Over-allocating GPUs to small inference jobs", correct: false }
       explanation: "Common mistakes from misunderstanding Kubernetes concepts and end-user needs: data stored inside VMs (which breaks the K8s flexibility model) and cluster auto-scaling that doesn't actually work properly. The result is most Kubernetes installations are not fully functional as managed services."
     - q: "Why is administering managed Kubernetes-as-a-service rare expertise?"
       options:
-        - { text: "Hyperscalers patent it", correct: false }
-        - { text: "Many people use Kubernetes; fewer administer it on premises; almost no one knows how to build a full-featured managed K8s service", correct: true }
-        - { text: "It requires 10+ years experience", correct: false }
+        - { text: "Hyperscalers hold patents over the operator pattern", correct: false }
+        - { text: "Certification requires 10+ years of CKA-level practice", correct: false }
+        - { text: "Few know how to build a full managed K8s service", correct: true }
       explanation: "Many know how to USE Kubernetes; fewer know how to ADMINISTER it on premises; and almost no one knows how to BUILD a full-featured managed Kubernetes service. The gap is structural; this is why most attempts replicate hyperscaler outcomes only partially."
     - q: "What change in market behaviour is the article observing?"
       options:
-        - { text: "Users buying more virtual machines", correct: false }
-        - { text: "A decrease in traditional VM sales as users seek smarter services they can manage as code with tools like Terraform", correct: true }
-        - { text: "A return to physical servers", correct: false }
+        - { text: "A decrease in traditional VM sales in favour of smarter services", correct: true }
+        - { text: "Users buying more virtual machines per workload than before", correct: false }
+        - { text: "A return to physical servers and bare-metal-only deployments", correct: false }
       explanation: "The article opens with: have you noticed a decrease in traditional virtual-machine sales? Users want smarter services to deploy applications, manage infrastructure as code with tools like Terraform, and consume managed services as building blocks rather than handling manual VM and database configuration."
 ---
 

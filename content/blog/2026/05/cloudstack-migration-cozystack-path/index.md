@@ -13,33 +13,33 @@ quiz:
   questions:
     - q: "Which three pressures does the article cite as the main drivers of CloudStack modernization in 2026?"
       options:
-        - { text: "Engineer scarcity, service-catalog ceiling, Kubernetes-native customer demand", correct: true }
+        - { text: "Engineer scarcity, catalog ceiling, K8s-native demand", correct: true }
         - { text: "License cost, vendor lock-in, regulator pressure", correct: false }
-        - { text: "Performance issues, security CVEs, hardware EOL", correct: false }
+        - { text: "Performance issues, security CVEs, hardware end-of-life", correct: false }
       explanation: "The three dominant pressures are engineer scarcity (CloudStack expertise pool shrinking), service-catalog ceiling (VMs/networks/storage scope can't absorb managed DBs / S3 / GPU natively), and Kubernetes-native customer demand."
     - q: "Which two CloudStack areas need substantial redesign rather than 1:1 mapping to Cozystack?"
       options:
-        - { text: "Hypervisor and storage", correct: false }
-        - { text: "Networking (Cilium's eBPF model vs CloudStack's L2/L3 virtual router) and service catalog (offerings vs package + ApplicationDefinition)", correct: true }
-        - { text: "Accounts/domains and the management server", correct: false }
+        - { text: "Hypervisor layer and the storage subsystem", correct: false }
+        - { text: "Accounts/domains model and the management server", correct: false }
+        - { text: "Networking model and the service catalog", correct: true }
       explanation: "Networking needs redesign because Cilium's eBPF L4/L7 model is fundamentally different from CloudStack's L2/L3-anchored virtual router. Service catalog redesigns from CloudStack service offerings to Cozystack package definitions + ApplicationDefinition."
     - q: "What's the realistic total elapsed time for a CloudStack-to-Cozystack migration end to end?"
       options:
-        - { text: "3-6 months", correct: false }
-        - { text: "6-9 months", correct: false }
-        - { text: "12-24 months", correct: true }
+        - { text: "Twelve to twenty-four months end to end", correct: true }
+        - { text: "Three to six months end to end", correct: false }
+        - { text: "Six to nine months end to end", correct: false }
       explanation: "Total elapsed time is 12-24 months from project start to CloudStack fully retired, split across assessment (3-6 weeks), foundation (2-4 months), service catalog (2-4 months), VM cohort migration (3-9 months), and decommission (2-6 months)."
     - q: "Where does the article say CloudStack modernization is a poor fit?"
       options:
-        - { text: "Operators with growing demand for managed databases", correct: false }
-        - { text: "Very small operators (<200 customers) where Cozystack ISP Edition fixed cost overshoots the savings", correct: true }
-        - { text: "Operators running KVM-based CloudStack", correct: false }
+        - { text: "Operators with growing managed-database demand", correct: false }
+        - { text: "Very small operators below roughly 200 customers", correct: true }
+        - { text: "Operators running KVM-based CloudStack today", correct: false }
       explanation: "Cozystack ISP Edition fixed-cost economics don't pay back for very small operators (<200 customers), and operators with declining customer counts can't justify the modernization cost. Growing managed-service demand and KVM-based CloudStack are strong-fit signals."
     - q: "How does the article suggest handling customers who built tooling against the CloudStack API?"
       options:
-        - { text: "Force all customers to rewrite immediately at cutover", correct: false }
-        - { text: "Either provide a CloudStack-API-compatible shim on Cozystack for a subset of operations, or migrate customer-facing API to Cozystack-native patterns", correct: true }
+        - { text: "Force all customers to rewrite at cutover", correct: false }
         - { text: "Drop those customers from the migration scope", correct: false }
+        - { text: "Offer a compatibility shim or planned API migration", correct: true }
       explanation: "The article calls out customer self-service-API divergence as a stumble point and recommends either a CloudStack-API-compatible shim (for a subset of operations) or planned customer-facing API migration to Cozystack-native patterns."
 ---
 

@@ -13,33 +13,33 @@ quiz:
   questions:
     - q: "What is the toil cap that the Google SRE formulation puts on SRE engineers?"
       options:
-        - { text: "50% — beyond that, the function degrades into traditional ops", correct: true }
         - { text: "20% — SREs should mostly write code", correct: false }
-        - { text: "No cap, as long as SLOs are met", correct: false }
+        - { text: "50% — above that it becomes ops", correct: true }
+        - { text: "No fixed cap, as long as SLOs are met", correct: false }
       explanation: "The Google formulation caps operational toil at 50%; the rest must go to software engineering that reduces toil. Teams that structurally exceed this cap have an ops function masquerading as SRE."
     - q: "Why does the article say SLOs without roadmap consequences are not SRE practice?"
       options:
-        - { text: "Because SLOs are too hard to measure without dashboards", correct: false }
-        - { text: "Because the error budget is meant to be a contract — SLO breach must shift product prioritisation, not just trigger firefighting", correct: true }
-        - { text: "Because SLOs require a centralised SRE function to enforce", correct: false }
+        - { text: "Error budgets must steer product priorities", correct: true }
+        - { text: "SLOs are too hard to measure without dashboards", correct: false }
+        - { text: "SLOs need a central SRE function to enforce", correct: false }
       explanation: "Error budgets are a contract: when they burn down, feature work pauses and reliability work takes priority. Organisations that have SLOs but don't let them affect roadmap have observability with SLO labels, not SRE practice."
     - q: "Which engagement model does the article recommend for 500+ engineer organisations with multiple business units?"
       options:
         - { text: "Embedded SRE inside each product team", correct: false }
-        - { text: "Centralised SRE function only", correct: false }
-        - { text: "Hybrid — embedded SREs plus a centralised function", correct: true }
+        - { text: "Hybrid: embedded plus a central function", correct: true }
+        - { text: "Centralised SRE function as the only mode", correct: false }
       explanation: "The hybrid model (embedded + centralised) is recommended for 500+-engineer organisations with multiple BUs; below 500 engineers, the dual investment is hard to amortise."
     - q: "What observability stack does Aenix recommend by default for SRE engagements?"
       options:
-        - { text: "Prometheus + Loki", correct: false }
-        - { text: "VictoriaMetrics for metrics, VictoriaLogs for logs, OpenTelemetry for tracing", correct: true }
-        - { text: "Datadog SaaS", correct: false }
+        - { text: "Prometheus, Loki, and Jaeger stack", correct: false }
+        - { text: "Datadog SaaS as the unified backend", correct: false }
+        - { text: "VictoriaMetrics, VictoriaLogs, OpenTelemetry", correct: true }
       explanation: "Aenix's default observability recommendation is VictoriaMetrics + VictoriaLogs + OpenTelemetry — self-hosted, sovereignty-friendly, lower overhead than Prometheus + Loki at scale, and no SaaS data-residency leak."
     - q: "When does the article say an SRE engagement is a poor fit?"
       options:
+        - { text: "Firefighting culture without leadership backing", correct: true }
         - { text: "When the organisation has 100-200 engineers", correct: false }
-        - { text: "When there is pure firefighting culture without engineering-leadership sponsorship for the discipline shift", correct: true }
-        - { text: "When platform engineering already exists", correct: false }
+        - { text: "When platform engineering already exists in-house", correct: false }
       explanation: "Without executive backing for the discipline shift, SRE engagement degrades to incident response training — helpful but not what Aenix sells. Platform engineering existing is actually a strong-fit signal."
 ---
 

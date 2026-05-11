@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "According to the article, what is the honest test for whether Cozystack fits an SMB or mid-market organisation?"
       options:
-        - { text: "Have at least 1 of the 6 criteria", correct: false }
-        - { text: "Have at least 3 of 6 (regulated data, multi-tenant model, sustained workloads, internal platform team, AI/GPU at scale, specific exit trigger)", correct: true }
-        - { text: "Have all 6 of them", correct: false }
+        - { text: "At least 3 of 6 criteria match", correct: true }
+        - { text: "At least 1 of the 6 criteria", correct: false }
+        - { text: "All 6 of the criteria match", correct: false }
       explanation: "The honest test: 0-1 of the criteria = over-engineering, 2 = marginal, 3+ = fits. Criteria are regulated data, multi-tenant model, sustained workloads, internal platform team, AI/GPU at scale, specific exit trigger."
     - q: "Which alternative does the article recommend for SMB without regulated data?"
       options:
-        - { text: "Cozystack — always", correct: false }
-        - { text: "Hyperscaler-managed deployments (AWS / Azure / GCP), DigitalOcean / Hetzner / OVHcloud, or Proxmox VE for on-prem", correct: true }
-        - { text: "Custom build", correct: false }
+        - { text: "Always Cozystack for consistency", correct: false }
+        - { text: "Custom-built virtualisation platform", correct: false }
+        - { text: "Hyperscaler-managed or Proxmox VE", correct: true }
       explanation: "For SMB without regulated data: hyperscaler-managed (AWS/Azure/GCP) for operational simplicity, or DigitalOcean/Hetzner/OVHcloud for managed cloud-adjacent, or Proxmox VE for on-prem virtualization. Cozystack is over-engineering for these cases."
     - q: "What does the article offer as a free initial step for evaluating Cozystack fit?"
       options:
-        - { text: "Two-week paid PoC", correct: false }
-        - { text: "15-minute fit-check call — free, no sales pressure", correct: true }
-        - { text: "Full architecture audit", correct: false }
+        - { text: "Two-week paid proof-of-concept", correct: false }
+        - { text: "Free 15-minute fit-check call", correct: true }
+        - { text: "Full paid architecture audit", correct: false }
       explanation: "The mid-market engagement model starts with a 15-minute fit-check call (free, no sales pressure), then optionally architecture review (5-10 days), then phase-2 implementation only if it actually fits. The article is explicit: for most SMB outreach, the honest answer is \"stay where you are.\""
     - q: "For a \"mid-market becoming multi-tenant\" example, what use case is named?"
       options:
-        - { text: "Personal blog hosting", correct: false }
-        - { text: "SaaS company with 100+ customers needing hard isolation, B2B platform serving regulated industry customers, specialty cloud product for vertical market", correct: true }
+        - { text: "Personal blog hosting platform", correct: false }
         - { text: "Single-team developer environment", correct: false }
+        - { text: "SaaS with 100+ customers needing hard isolation", correct: true }
       explanation: "Mid-market becoming multi-tenant examples: SaaS company with 100+ customers needing hard isolation; B2B platform serving regulated industry customers; specialty cloud product for vertical market. These match Cozystack's strengths in structural multi-tenancy."
     - q: "What is named as a \"container-only mid-market\" alternative if Cozystack is over-engineering?"
       options:
-        - { text: "Vanilla Kubernetes — lighter than Cozystack, fits container-only deployments", correct: true }
-        - { text: "OpenStack", correct: false }
-        - { text: "A bigger Cozystack", correct: false }
+        - { text: "Vanilla Kubernetes without KubeVirt", correct: true }
+        - { text: "OpenStack on shared hardware pool", correct: false }
+        - { text: "A bigger multi-region Cozystack", correct: false }
       explanation: "For container-only mid-market: vanilla Kubernetes is lighter than Cozystack (no KubeVirt overhead). Other \"doesn't fit\" alternatives include staying on existing managed cloud (don't fix what isn't broken) or Hetzner cloud + VPS for small operationally-simple teams."
 ---
 

@@ -12,35 +12,35 @@ quiz:
   questions:
     - q: "How many \"practices that compound\" does the article identify?"
       options:
-        - { text: "Three", correct: false }
-        - { text: "Five", correct: false }
-        - { text: "Eight", correct: true }
-        - { text: "Twelve", correct: false }
+        - { text: "Eight compounding practices", correct: true }
+        - { text: "Three compounding practices", correct: false }
+        - { text: "Five compounding practices", correct: false }
+        - { text: "Twelve compounding practices", correct: false }
       explanation: "Eight practices: everything-as-code, trunk-based dev with CD, observability over monitoring, SRE practices, security-as-parallel-discipline, platform engineering as substrate, FinOps integrated, and continuous improvement as a function."
     - q: "In the article's ranking, what is Practice 1 — the most foundational?"
       options:
         - { text: "Trunk-based development with continuous deployment", correct: false }
-        - { text: "Everything-as-code (IaC, GitOps, config-as-code, policy-as-code, drift detection)", correct: true }
-        - { text: "SRE error budgets", correct: false }
-        - { text: "FinOps gates in CI/CD", correct: false }
+        - { text: "Everything-as-code across infra, config, and policy", correct: true }
+        - { text: "SRE error budgets driving release cadence", correct: false }
+        - { text: "FinOps cost gates integrated into CI/CD pipelines", correct: false }
       explanation: "Practice 1 is everything-as-code. Without it, the other practices either don't scale or aren't auditable. The article spells out IaC, GitOps, config-as-code, policy-as-code (OPA/Kyverno), and drift detection as the discipline."
     - q: "Which set of metrics is named as \"product-team metrics\" that the platform exists to make achievable?"
       options:
-        - { text: "CAC and LTV", correct: false }
-        - { text: "DORA metrics — deployment frequency, lead time, change-failure rate, time-to-restore", correct: true }
-        - { text: "OKRs", correct: false }
+        - { text: "CAC and LTV business metrics", correct: false }
+        - { text: "Company-wide OKRs and key results", correct: false }
+        - { text: "DORA delivery-performance metrics", correct: true }
       explanation: "DORA (DevOps Research and Assessment) metrics are explicitly framed as product-team metrics — but the platform's job is to make them achievable."
     - q: "For Practice 5 (security as parallel discipline), how does the article describe the current state?"
       options:
-        - { text: "\"Security shifted left\"", correct: false }
-        - { text: "\"Security shifted everywhere\" — integrated through the lifecycle, not a final gate", correct: true }
-        - { text: "\"Security outsourced to a SaaS\"", correct: false }
+        - { text: "Security shifted left into developer workflows", correct: false }
+        - { text: "Security shifted everywhere across the lifecycle", correct: true }
+        - { text: "Security outsourced to a managed SaaS vendor", correct: false }
       explanation: "The article notes that security shifted left for a decade; the 2026 state is \"security shifted everywhere\" — SAST/DAST in CI, container scanning + SBOM, runtime policy-as-code, workload identity (SPIFFE/SPIRE), supply-chain attestations."
     - q: "What does the piece say is the typical structural problem with hiring a \"DevOps engineer\"?"
       options:
-        - { text: "They are not certified", correct: false }
-        - { text: "The title increasingly means a specific thing — many \"DevOps engineer\" hires actually do platform engineering work, which is a different function", correct: true }
-        - { text: "They only know Jenkins", correct: false }
+        - { text: "The role actually requires platform engineering work", correct: true }
+        - { text: "Candidates lack relevant industry certifications", correct: false }
+        - { text: "Candidates only know Jenkins-era tooling", correct: false }
       explanation: "Avoid hiring a \"DevOps engineer\" who actually does platform engineering, or an \"SRE\" who actually does general infrastructure. The titles increasingly mean specific things — mismatched titles cause org-design confusion."
 ---
 

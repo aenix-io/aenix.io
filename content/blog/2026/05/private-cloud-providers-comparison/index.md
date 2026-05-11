@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "The article distinguishes which two senses of \"private cloud\"?"
       options:
-        - { text: "Free vs paid", correct: false }
-        - { text: "Platform (software you deploy) vs provider (vendor delivering dedicated infrastructure you consume)", correct: true }
-        - { text: "On-prem vs colocation", correct: false }
+        - { text: "Platform (software) vs provider (dedicated infrastructure)", correct: true }
+        - { text: "Free (open source) vs paid (commercial subscription)", correct: false }
+        - { text: "On-prem (owned racks) vs colocation (rented data center)", correct: false }
       explanation: "Private cloud platforms = software (VMware VCF, Cozystack, OpenStack, OpenShift Virtualization, Proxmox VE). Private cloud providers = vendors delivering dedicated infrastructure (IBM Cloud Private, Oracle dedicated regions, hyperscaler \"sovereign\" regions, regional providers). The article focuses primarily on platforms."
     - q: "Which open-source platform is described as \"newer than OpenStack; smaller community than Kubernetes-only deployments\"?"
       options:
-        - { text: "Cozystack", correct: true }
-        - { text: "Apache CloudStack", correct: false }
-        - { text: "Proxmox VE", correct: false }
+        - { text: "Apache CloudStack (mature OSS, service-provider origin)", correct: false }
+        - { text: "Cozystack (CNCF Sandbox, KubeVirt-native cloud platform)", correct: true }
+        - { text: "Proxmox VE (Debian-based, KVM + LXC virtualization)", correct: false }
       explanation: "Cozystack — Apache 2.0, CNCF Project, KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. Strengths: single platform for VMs+containers+databases+S3+GPU, structural multi-tenancy. Limits: newer than OpenStack; smaller community than Kubernetes-only stacks."
     - q: "What pricing trajectory does the article observe for VMware VCF after the Broadcom acquisition?"
       options:
-        - { text: "10–20% increases", correct: false }
-        - { text: "2–5× price increases observed", correct: true }
-        - { text: "50–80% reductions", correct: false }
+        - { text: "10-20% increases (mild inflation, modest re-pricing)", correct: false }
+        - { text: "50-80% reductions (aggressive cuts to retain customers)", correct: false }
+        - { text: "2-5× price increases observed across the pipeline", correct: true }
       explanation: "Subscription-only post-Broadcom; 2-5× price increases observed across the article's pipeline. Vendor lock-in plus sovereignty concerns are the listed limits, alongside pricing."
     - q: "For which segment is Apache CloudStack named as still established?"
       options:
-        - { text: "Hyperscaler-managed Kubernetes", correct: false }
-        - { text: "Service providers in some EU, MENA, APAC markets", correct: true }
-        - { text: "AI/GPU operators only", correct: false }
+        - { text: "Service providers in EU, MENA, and APAC markets", correct: true }
+        - { text: "Hyperscaler-managed Kubernetes (EKS / GKE / AKS shops)", correct: false }
+        - { text: "AI/GPU operators only (model-serving infrastructure)", correct: false }
       explanation: "Apache CloudStack remains established with service providers in some EU, MENA, and APAC markets. Strengths: mature service-provider features and native multi-tenancy. Limits: smaller community than alternatives; less Kubernetes-native."
     - q: "What is named as the architectural strength of Nutanix among commercial closed-source platforms?"
       options:
-        - { text: "Multi-cloud bursting", correct: false }
-        - { text: "Operationally simple, integrated stack", correct: true }
-        - { text: "Open-source code", correct: false }
+        - { text: "Multi-cloud bursting (workload mobility across hyperscalers)", correct: false }
+        - { text: "Open-source code (Apache-licensed core distribution)", correct: false }
+        - { text: "Operationally simple, integrated stack (HCI appliance)", correct: true }
       explanation: "Nutanix (AHV proprietary KVM-based + Files + Volumes + Era for databases): operationally simple, integrated stack. Limits: closed source, appliance lock-in, less flexibility than open alternatives."
 ---
 

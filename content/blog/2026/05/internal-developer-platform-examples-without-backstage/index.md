@@ -12,34 +12,34 @@ quiz:
   questions:
     - q: "What does \"IDP vs IDP problem\" mean in the article?"
       options:
-        - { text: "Identity-provider vs internal-developer-platform clash", correct: false }
-        - { text: "The same acronym means both internal developer PLATFORM (capability stack) and internal developer PORTAL (UI/catalog layer)", correct: true }
-        - { text: "Two product lines compete in the marketplace", correct: false }
-      explanation: "The article makes the \"platform vs portal\" distinction explicit. A platform without a portal still works; a portal without a platform is wallpaper. Most adoption stalls happen when teams buy a portal and the underlying capabilities aren't actually self-service."
+        - { text: "Identity-provider vs internal-developer-platform naming clash", correct: false }
+        - { text: "Two competing product lines in the IDP market category", correct: false }
+        - { text: "The acronym hides platform vs portal — two different layers", correct: true }
+      explanation: "The article makes the \"platform vs portal\" distinction explicit. The same acronym means both internal developer platform (capability stack) and internal developer portal (UI/catalog layer). A platform without a portal still works; a portal without a platform is wallpaper."
     - q: "How many production IDP patterns does the article enumerate?"
       options:
-        - { text: "Three", correct: false }
-        - { text: "Six", correct: true }
-        - { text: "Ten", correct: false }
-      explanation: "Six patterns: (1) multi-tenant Kubernetes-native cloud platform, (2) GitOps-first per-team Kubernetes, (3) service-template + golden-path, (4) PaaS-lite layered on Kubernetes, (5) Backstage-first with capability operators, (6) external-services-as-platform."
+        - { text: "Six distinct patterns", correct: true }
+        - { text: "Three distinct patterns", correct: false }
+        - { text: "Ten distinct patterns", correct: false }
+      explanation: "Six patterns: (1) multi-tenant Kubernetes-native cloud platform, (2) GitOps-first per-team Kubernetes, (3) service-template plus golden-path, (4) PaaS-lite layered on Kubernetes, (5) Backstage-first with capability operators, (6) external-services-as-platform."
     - q: "For Pattern 4 (PaaS-lite layered on Kubernetes), what is the trade-off?"
       options:
-        - { text: "Lowest cognitive overhead for product teams; less flexibility for non-standard cases", correct: true }
         - { text: "Highest cognitive overhead but maximum flexibility", correct: false }
-        - { text: "Requires Cozystack", correct: false }
+        - { text: "Lowest cognitive overhead, less flexibility for edge cases", correct: true }
+        - { text: "Requires Cozystack as the underlying distribution", correct: false }
       explanation: "PaaS-lite (Knative or Cloud-Foundry-style abstractions on Kubernetes) gives product teams a `git push → deploy` experience. Lowest cognitive overhead; trade-off is reduced flexibility for non-standard cases that need raw Kubernetes access."
     - q: "For Pattern 5 (Backstage-first with capability operators), what additional discipline does the article say platform teams must invest in?"
       options:
-        - { text: "A dedicated SRE team", correct: false }
-        - { text: "Product-management practices: catalog hygiene, deprecations, roadmap", correct: true }
-        - { text: "Annual hardware refresh", correct: false }
+        - { text: "A dedicated SRE team for the portal itself", correct: false }
+        - { text: "Catalog hygiene, deprecations, and roadmap discipline", correct: true }
+        - { text: "An annual hardware refresh for the portal nodes", correct: false }
       explanation: "Backstage as the catalog with capability operators behind each entry works well — but only if the platform team invests in product-management practices: catalog hygiene, deprecation policies, roadmap for what gets added next."
     - q: "According to the tools section, what is positioned as the de facto orchestration layer for modern internal developer platforms?"
       options:
-        - { text: "Nomad", correct: false }
-        - { text: "Kubernetes — distribution choice depends on operational model", correct: true }
-        - { text: "OpenStack", correct: false }
-      explanation: "Kubernetes is named as the de facto orchestration layer. Distribution choice (Cozystack for multi-tenant + virtualization, OpenShift for enterprise commercial, vanilla for simplicity, Talos as the OS underneath) depends on operational model."
+        - { text: "HashiCorp Nomad as the orchestrator", correct: false }
+        - { text: "OpenStack with Heat orchestration", correct: false }
+        - { text: "Kubernetes (distribution per op model)", correct: true }
+      explanation: "Kubernetes is named as the de facto orchestration layer. Distribution choice (Cozystack for multi-tenant plus virtualization, OpenShift for enterprise commercial, vanilla for simplicity, Talos as the OS underneath) depends on operational model."
 ---
 
 **This is the long-form companion to our [internal developer platform services page](/services/internal-developer-platform/). It walks through real internal developer platform examples — what to build, what to skip, what tools matter, and how to do it without making Backstage the centerpiece of your architecture.**

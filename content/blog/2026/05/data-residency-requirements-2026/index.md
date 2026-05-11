@@ -12,36 +12,36 @@ quiz:
   questions:
     - q: "According to the article, which is the single most common data-residency failure mode found during platform readiness assessments?"
       options:
-        - { text: "Production storage in the wrong region", correct: false }
-        - { text: "Application logs and metrics shipped to a SaaS observability vendor with US-default processing region", correct: true }
-        - { text: "Backup retention policies missing", correct: false }
-        - { text: "Customer data going to a CDN edge", correct: false }
+        - { text: "Production storage provisioned in the wrong region", correct: false }
+        - { text: "Telemetry shipped to a SaaS observability vendor abroad", correct: true }
+        - { text: "Backup retention policies missing from configuration", correct: false }
+        - { text: "Customer data egressing through a CDN edge node", correct: false }
       explanation: "Failure 1 — \"production is right, observability is wrong.\" Compliance teams catch the production storage but miss the telemetry plane that ships logs/metrics to a US-based SaaS observability region."
     - q: "How deep into the supplier chain does DORA Article 30(2)(a) (and equivalent NIS2 provisions) typically require visibility?"
       options:
-        - { text: "Only the direct contracted vendor", correct: false }
-        - { text: "To the second hop (sub-contractors of your direct supplier)", correct: true }
-        - { text: "Every tier all the way to the data-centre electricity provider", correct: false }
+        - { text: "Only the direct contracted vendor and no further", correct: false }
+        - { text: "Every tier down to the data-centre electricity provider", correct: false }
+        - { text: "To the second hop, your supplier's sub-contractors", correct: true }
       explanation: "The article cites Article 30(2)(a) as requiring transparency to the second hop. \"Most organizations cannot answer it, beyond the first hop.\""
     - q: "Which of these does the article say residency does NOT solve, even with all data in the right region?"
       options:
-        - { text: "Sovereignty fully (keys, supplier chain, audit gaps remain)", correct: true }
-        - { text: "Backup retention policies", correct: false }
-        - { text: "Encryption-at-rest configuration", correct: false }
-        - { text: "IaC drift detection", correct: false }
+        - { text: "Full sovereignty across keys, suppliers, and audit", correct: true }
+        - { text: "Backup retention policy configuration", correct: false }
+        - { text: "Encryption-at-rest cipher configuration", correct: false }
+        - { text: "IaC drift detection across the estate", correct: false }
       explanation: "The article explicitly notes that residency does not solve sovereignty fully — keys held by a non-sovereign provider, dependencies in non-sovereign jurisdictions, and audit-process gaps can still fail the broader sovereignty test."
     - q: "Which legal regime is named as still permitting US-government data requests over EU regions of US-headquartered providers?"
       options:
-        - { text: "GDPR", correct: false }
-        - { text: "NIS2", correct: false }
+        - { text: "GDPR data protection regulation", correct: false }
+        - { text: "NIS2 cybersecurity directive", correct: false }
         - { text: "US CLOUD Act and similar regimes", correct: true }
-        - { text: "eIDAS", correct: false }
+        - { text: "eIDAS electronic-identity framework", correct: false }
       explanation: "US-headquartered cloud providers operating EU regions remain subject to US-government data requests under CLOUD Act and similar regimes. Some regulators consider this a residual risk that requires sovereign-cloud arrangements rather than hyperscaler regions."
     - q: "For multinational organisations, what does the article recommend instead of a single global residency policy?"
       options:
-        - { text: "A worldwide data-handling policy enforced in HQ", correct: false }
-        - { text: "Per-jurisdiction tenant boundaries with explicit cross-border controls", correct: true }
-        - { text: "One hyperscaler globally with a long-term contract", correct: false }
+        - { text: "Per-jurisdiction tenant boundaries with cross-border controls", correct: true }
+        - { text: "A worldwide data-handling policy enforced from HQ", correct: false }
+        - { text: "A single hyperscaler globally on a long-term contract", correct: false }
         - { text: "Outsourcing residency to a managed-service provider", correct: false }
       explanation: "The architecture answer is per-jurisdiction tenant boundaries with explicit cross-border controls — the residency landscape is a matrix of jurisdictions with overlapping and sometimes contradictory requirements, not a single rule."
 ---

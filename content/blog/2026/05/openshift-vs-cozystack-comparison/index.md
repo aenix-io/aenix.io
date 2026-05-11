@@ -12,33 +12,33 @@ quiz:
   questions:
     - q: "What architectural foundation do both OpenShift Virtualization and Cozystack share?"
       options:
-        - { text: "OpenStack", correct: false }
-        - { text: "KubeVirt — both run VMs as Kubernetes resources alongside containers", correct: true }
-        - { text: "Bare libvirt", correct: false }
+        - { text: "KubeVirt — VMs as Kubernetes objects next to containers", correct: true }
+        - { text: "OpenStack (Nova + Neutron) under a Kubernetes wrapper", correct: false }
+        - { text: "Bare libvirt with custom Ansible orchestration on top", correct: false }
       explanation: "Both are KubeVirt-based; both inherit Kubernetes operational patterns (declarative config, GitOps, RBAC, observability); both support production VM workloads with live migration, snapshots, multi-tenant isolation."
     - q: "How is OpenShift Virtualization's commercial model characterised?"
       options:
-        - { text: "Open-source community-governed", correct: false }
-        - { text: "Red Hat commercial subscription, per-core or per-socket pricing", correct: true }
-        - { text: "Free for first year", correct: false }
+        - { text: "Open-source community-governed (Apache 2.0, vendor-neutral)", correct: false }
+        - { text: "Red Hat commercial subscription, per-core or per-socket", correct: true }
+        - { text: "Free for the first year, then per-VM commercial pricing", correct: false }
       explanation: "OpenShift Virtualization = Red Hat commercial subscription; per-core or per-socket pricing; includes Red Hat support, certification, ecosystem access. Cozystack = Apache 2.0 open source; Aenix offers optional commercial support tiers."
     - q: "What multi-tenancy model does OpenShift use vs Cozystack?"
       options:
-        - { text: "OpenShift = namespace-based with Project CRD; Cozystack = Tenant CRD with nested tenants and billing-friendly model", correct: true }
-        - { text: "Both use the same Tenant CRD", correct: false }
-        - { text: "OpenShift uses cluster-per-tenant; Cozystack uses namespaces", correct: false }
+        - { text: "Both share the same Tenant CRD with nested-tenant model", correct: false }
+        - { text: "OpenShift = namespace + Project CRD; Cozystack = Tenant CRD", correct: true }
+        - { text: "OpenShift = cluster-per-tenant; Cozystack = namespace-per-tenant", correct: false }
       explanation: "OpenShift: namespace-based with Project CRD; RBAC and quotas at namespace level — works for enterprise multi-BU. Cozystack: Tenant CRD with nested tenants, scoped audit, billing-friendly model — works for service-provider multi-customer plus enterprise multi-BU."
     - q: "When does OpenShift win in the comparison?"
       options:
-        - { text: "Service-provider multi-customer model", correct: false }
-        - { text: "Existing Red Hat / OpenShift commitments + enterprise procurement standardised on Red Hat + need for integrated Red Hat ecosystem", correct: true }
-        - { text: "Sovereignty / open-source-first procurement", correct: false }
+        - { text: "Existing Red Hat commitments + Red-Hat-standardised procurement", correct: true }
+        - { text: "Service-provider multi-customer model (white-label resale)", correct: false }
+        - { text: "Open-source-first procurement and sovereignty mandate", correct: false }
       explanation: "OpenShift wins for: existing Red Hat commitments, enterprise procurement standardised on Red Hat, integrated Red Hat ecosystem (Ansible/Satellite/IDM), commercial-grade SLA support, compliance requirements that call for major-vendor support model."
     - q: "For OpenShift→Cozystack migration of a mid-size deployment, what timeline does the article quote?"
       options:
-        - { text: "Days", correct: false }
-        - { text: "3-9 months", correct: true }
-        - { text: "5+ years", correct: false }
+        - { text: "Days (image-compatible lift-and-shift on shared KubeVirt)", correct: false }
+        - { text: "5+ years (multi-phase decommission alongside legacy)", correct: false }
+        - { text: "3-9 months elapsed for a mid-size deployment", correct: true }
       explanation: "Both KubeVirt-based, so VM-level migration is straightforward (image-level compatibility). Architectural delta is in multi-tenancy model, networking, storage, operational tooling. Realistic migration timeline: 3-9 months for mid-size deployment."
 ---
 

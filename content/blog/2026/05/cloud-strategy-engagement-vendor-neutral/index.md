@@ -13,33 +13,33 @@ quiz:
   questions:
     - q: "How many strategic questions does the article say a 2026 cloud strategy engagement has to answer?"
       options:
-        - { text: "Three", correct: false }
-        - { text: "Five — workload class placement, sovereignty position, cost trajectory, operational model, regulatory evolution", correct: true }
-        - { text: "Seven", correct: false }
+        - { text: "Five strategic questions", correct: true }
+        - { text: "Three strategic questions", correct: false }
+        - { text: "Seven strategic questions", correct: false }
       explanation: "Five questions: where each workload class lives, sovereignty position, 3-5 year cost trajectory, operational model that scales, and how the regulatory landscape evolves. A strategy missing any of these is a tooling roadmap, not a strategy."
     - q: "Why does the article argue Big-4 cloud advisory is structurally not vendor-neutral?"
       options:
-        - { text: "Because Big-4 consultants are not technically competent", correct: false }
-        - { text: "Because Big-4 firms have partnership programmes with hyperscalers and integration revenue follows hyperscaler-aligned recommendations", correct: true }
-        - { text: "Because Big-4 firms are too expensive to be objective", correct: false }
+        - { text: "Their consultants lack technical competence in cloud", correct: false }
+        - { text: "Their fees are too high to allow objective analysis", correct: false }
+        - { text: "Their integration revenue follows hyperscaler partnerships", correct: true }
       explanation: "Deloitte, KPMG, EY, PwC each have hyperscaler partnership programmes; most engagements end with hyperscaler-aligned modernization plans because that's where integration revenue follows. Vendor-neutral by marketing, vendor-aligned by economics."
     - q: "What does the article say Aenix will explicitly do when trade-offs warrant it?"
       options:
-        - { text: "Always recommend Aenix Platform regardless", correct: false }
-        - { text: "Say 'stay on hyperscaler' in writing, even when it means no follow-on platform work for Aenix", correct: true }
-        - { text: "Hand the customer to a Big-4 firm", correct: false }
+        - { text: "Always recommend Aenix Platform regardless of fit", correct: false }
+        - { text: "Recommend staying on hyperscaler in writing", correct: true }
+        - { text: "Hand the engagement off to a Big-4 firm", correct: false }
       explanation: "Aenix's vendor-neutral position means they will write 'stay on hyperscaler' when warranted. The downside-incentive — engagements that end with no follow-on Aenix platform work — is real, and that's how vendor-neutrality is supposed to operate."
     - q: "What's the page-count range of the synthesised strategy deliverable described in the article?"
       options:
-        - { text: "10-15 pages", correct: false }
-        - { text: "30-50 pages of usable detail, plus an executive deck", correct: true }
-        - { text: "100+ pages of executive-grade slides", correct: false }
+        - { text: "Ten to fifteen pages of focused summary", correct: false }
+        - { text: "Thirty to fifty pages plus an executive deck", correct: true }
+        - { text: "One hundred or more pages of executive slides", correct: false }
       explanation: "The deliverable is 30-50 pages of usable detail (3-5 page exec summary, 5-8 pages per workstream, 2-3 page roadmap) plus an executive deck. The article positions this against 100-page executive-grade theatre as decision-velocity over slide polish."
     - q: "How does the article distinguish Cloud Strategy Consultancy from a Platform Readiness Assessment?"
       options:
-        - { text: "Strategy is tactical; PRA is strategic", correct: false }
-        - { text: "PRA is tactical (assesses current state against settled target, produces 14-28 day remediation plan); Strategy is strategic (defines the target and substrate position when direction is still in question)", correct: true }
-        - { text: "They are the same product with different names", correct: false }
+        - { text: "Strategy is tactical while PRA is strategic", correct: false }
+        - { text: "They are the same product under different names", correct: false }
+        - { text: "PRA is tactical; Strategy defines target and substrate", correct: true }
       explanation: "PRA = tactical, used when strategic direction is settled, produces a 14-28 day remediation plan. Cloud Strategy = strategic, used when the direction is still in question, defines target architecture and substrate position. Most customers engage strategy first, then assessment, then implementation."
 ---
 

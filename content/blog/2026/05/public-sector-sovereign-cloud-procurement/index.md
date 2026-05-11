@@ -21,14 +21,14 @@ quiz:
       options:
         - { text: "They lack a regional datacentre presence", correct: false }
         - { text: "They do not support GDPR Articles 44-50", correct: false }
-        - { text: "The provider retains operational access to customer encryption keys", correct: true }
+        - { text: "Provider retains access to encryption keys", correct: true }
       explanation: "The article calls this out specifically as the most common point where hyperscaler 'sovereign' offerings fall short — the provider retains operational access to keys, which fails the substantive condition for customer-controlled encryption keys."
     - q: "How far should the supplier chain be documented under Article 28-equivalent provisions across the major frameworks?"
       options:
-        - { text: "Only the first hop (the hyperscaler itself)", correct: false }
+        - { text: "Only the first hop is required", correct: false }
         - { text: "At least to the second hop", correct: true }
-        - { text: "No documentation is required if GDPR applies", correct: false }
-      explanation: "The post explains that Article 28-equivalent provisions expect documentation of the supplier chain at least to the second hop, and that most hyperscaler-based sovereign-cloud arrangements stop at the first hop."
+        - { text: "No documentation needed under GDPR", correct: false }
+      explanation: "The post explains that Article 28-equivalent provisions expect documentation of the supplier chain at least to the second hop, and that most hyperscaler-based sovereign-cloud arrangements stop at the first hop (the hyperscaler itself)."
     - q: "Which entity does the post identify as Aenix's EU contracting entity?"
       options:
         - { text: "AENIX INC (Delaware)", correct: false }
@@ -37,9 +37,9 @@ quiz:
       explanation: "The article states that AENIX s.r.o. in Czechia is the EU contracting entity, while AENIX INC in Delaware is the US contracting entity."
     - q: "What is the typical end-to-end timeline from project start to certified production for a public-sector sovereign cloud engagement?"
       options:
-        - { text: "3-6 months", correct: false }
-        - { text: "6-12 months", correct: false }
-        - { text: "12-36 months due to certification overhead", correct: true }
+        - { text: "12-36 months end-to-end", correct: true }
+        - { text: "3-6 months fast-track", correct: false }
+        - { text: "6-12 months phased rollout", correct: false }
       explanation: "The post specifies a 12-36 month total timeline from project start to certified production — substantially longer than private-sector engagements because of certification overhead, but compounding into annual recertification afterwards."
 ---
 

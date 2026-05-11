@@ -12,36 +12,36 @@ quiz:
   questions:
     - q: "How many layers does the article say a real private LLM stack has?"
       options:
-        - { text: "Three", correct: false }
-        - { text: "Six — hardware, platform, serving, model, application, operations", correct: true }
-        - { text: "Nine", correct: false }
+        - { text: "Six (HW, platform, serving, model, app, operations)", correct: true }
+        - { text: "Three (HW, model, app — the coarse-grain view)", correct: false }
+        - { text: "Nine (per MLOps reference architecture, end-to-end)", correct: false }
       explanation: "Skipping any of the six layers — particularly the platform and operations layers — produces a PoC that does not survive contact with production."
     - q: "Which serving stack is named as the default choice for most production inference workloads?"
       options:
-        - { text: "TGI", correct: false }
-        - { text: "llama.cpp / Ollama", correct: false }
-        - { text: "vLLM", correct: true }
-        - { text: "NVIDIA Triton Inference Server", correct: false }
+        - { text: "vLLM (PagedAttention, high-throughput transformer serving)", correct: true }
+        - { text: "TGI (HuggingFace Text Generation Inference engine)", correct: false }
+        - { text: "llama.cpp / Ollama (lightweight local-model runtimes)", correct: false }
+        - { text: "NVIDIA Triton Inference Server (multi-framework backend)", correct: false }
       explanation: "vLLM is the default for transformer model inference because of its high throughput via PagedAttention. Triton is good for mixed workloads (LLM + vision + classical ML); TGI has niche features; llama.cpp/Ollama suit small models or PoCs."
     - q: "Around what sustained utilization does the crossover from hyperscaler GPU economics to on-premise typically happen?"
       options:
-        - { text: "5–10%", correct: false }
-        - { text: "30–50%", correct: true }
-        - { text: "70–90%", correct: false }
+        - { text: "5-10% utilization (very light, sporadic inference loads)", correct: false }
+        - { text: "70-90% utilization (near-saturated continuous workloads)", correct: false }
+        - { text: "30-50% sustained utilization (typical crossover band)", correct: true }
       explanation: "The article notes that the crossover varies by GPU class and utilization but moves a lot of inference workloads onto on-premise economics around 30–50% sustained utilization."
     - q: "Which GPU class is positioned as the cost-effective inference choice for tenant-fleet inference, distinct from the H100/H200 fine-tuning workhorse?"
       options:
-        - { text: "L40S (48 GB)", correct: true }
-        - { text: "B200 (Blackwell)", correct: false }
-        - { text: "AMD MI300", correct: false }
-        - { text: "Groq", correct: false }
+        - { text: "AMD MI300 (CDNA3 accelerator, ROCm software stack)", correct: false }
+        - { text: "L40S (48 GB, multi-tenant inference fleet workhorse)", correct: true }
+        - { text: "B200 Blackwell (next-gen, longest lead time on supply)", correct: false }
+        - { text: "Groq LPU (custom inference ASIC, low-latency throughput)", correct: false }
       explanation: "The L40S has 48 GB of GPU memory and is positioned for inference of smaller models or as part of a multi-tenant inference fleet. The H100/H200 are the fine-tuning + high-throughput inference workhorses; Blackwell is for the largest models with longer lead times."
     - q: "What is \"Pitfall 3\" — under-sizing memory — caused by, according to the article?"
       options:
-        - { text: "Choosing FP16 instead of FP8", correct: false }
-        - { text: "Not accounting for KV cache memory that scales with context length and batch size", correct: true }
-        - { text: "Running the model on AMD GPUs", correct: false }
-        - { text: "Using vLLM instead of Triton", correct: false }
+        - { text: "Choosing FP16 precision instead of FP8 quantisation", correct: false }
+        - { text: "Running the model on AMD GPUs (ROCm vs CUDA gap)", correct: false }
+        - { text: "Ignoring KV cache memory growth (context × batch size)", correct: true }
+        - { text: "Using vLLM instead of Triton (different memory profiles)", correct: false }
       explanation: "A model that \"fits\" by parameter count may not fit at the operational batch size because of KV cache memory growth with context length and batch size. Right-sizing requires actual benchmark with realistic context lengths."
 ---
 
