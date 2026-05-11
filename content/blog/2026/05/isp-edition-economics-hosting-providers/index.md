@@ -8,6 +8,39 @@ topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud
 language: "en"
 companion_landing: "/products/aenix-platform/isp-edition/"
 companion_label: "See ISP Edition product details →"
+quiz:
+  title: "Test yourself: ISP Edition unit economics"
+  questions:
+    - q: "What is the published entry price for ISP Edition Basic support tier?"
+      options:
+        - { text: "€500/month for unlimited nodes", correct: false }
+        - { text: "From €1.3k/month covering 10 nodes", correct: true }
+        - { text: "Per-VM pricing starting at €5/VM/month", correct: false }
+      explanation: "The pricing section explicitly states 'from €1.3k/month for the Basic support tier covering 10 nodes' — Aenix does not charge per VM, per CPU, or per GB."
+    - q: "At a mid-size provider running 500 tenants, what is the all-in cost per typical tenant the article cites?"
+      options:
+        - { text: "€5-10/month", correct: false }
+        - { text: "€20-40/month at the lower end of resource consumption", correct: true }
+        - { text: "€80-100/month", correct: false }
+      explanation: "The unit economics section calculates €15-30/month direct infra cost plus €5-10 platform-team allocation across 500 tenants, landing at €20-40/month all-in per typical tenant."
+    - q: "Around what break-even tenant count does the article say ISP Edition starts to make economic sense?"
+      options:
+        - { text: "100-200 tenants", correct: false }
+        - { text: "~1,000-2,000 paying tenants depending on ARPU mix", correct: true }
+        - { text: "10,000+ tenants", correct: false }
+      explanation: "The break-even math section computes total monthly fixed cost of €50-90k and with €40-80/month margin per tenant, break-even sits at roughly 1,000-2,000 paying tenants."
+    - q: "Which of these is identified as the biggest single failure mode for ISP Edition providers in the pipeline?"
+      options:
+        - { text: "Customer-facing portal under-investment", correct: false }
+        - { text: "Service-catalog mismatch — exposing services the team can't operate", correct: false }
+        - { text: "Operations team sized for current customers, not 18-month-out volume", correct: true }
+      explanation: "The article calls the operations under-staffing 'the biggest single failure mode in our pipeline': 4-person ops teams that worked at 50 customers can't scale at 200+, SLA breaches multiply, churn picks up."
+    - q: "Why does the article say providers below ~300 customers are usually NOT a fit for ISP Edition?"
+      options:
+        - { text: "Cozystack technically can't scale that small", correct: false }
+        - { text: "The fixed-cost stack overwhelms margin contribution at that scale", correct: true }
+        - { text: "EU regulators forbid clouds with under 300 tenants", correct: false }
+      explanation: "The article explicitly says 'for providers below ~300 customers, ISP Edition is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
 ---
 
 **Long-form companion to the [ISP Edition landing](/products/aenix-platform/isp-edition/). Walks through the unit economics, infrastructure cost, platform-team capacity, and payback profile for hosting providers evaluating Ænix Platform ISP Edition — versus continuing on VMware, OpenStack, or per-customer-built infrastructure.**

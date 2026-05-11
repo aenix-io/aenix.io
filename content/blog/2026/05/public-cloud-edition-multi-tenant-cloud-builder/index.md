@@ -8,6 +8,39 @@ topics: ["Cozystack", "Multi-tenancy", "Sovereignty", "Cloud", "Platform Enginee
 language: "en"
 companion_landing: "/products/aenix-platform/public-cloud-edition/"
 companion_label: "See Public Cloud Edition product details →"
+quiz:
+  title: "Test yourself: Public Cloud Edition"
+  questions:
+    - q: "How many managed services does Public Cloud Edition typically target compared to ISP Edition?"
+      options:
+        - { text: "Same ~20 services, just at higher scale", correct: false }
+        - { text: "30-50+ services versus ~20 for ISP Edition", correct: true }
+        - { text: "100+ services to match hyperscaler depth", correct: false }
+      explanation: "The article states ISP Edition exposes ~20 managed services while Public Cloud Edition typically targets 30-50+ services across compute, storage, databases, AI/GPU, etc."
+    - q: "What is the typical engagement size and duration for a Public Cloud Edition build?"
+      options:
+        - { text: "€100k-€500k over 6-12 months", correct: false }
+        - { text: "€1M-€10M+ multi-year programmes over 18-36 months", correct: true }
+        - { text: "Fixed €500k annual subscription", correct: false }
+      explanation: "The engagement structure section explicitly states engagement size is €1M-€10M+ multi-year programmes, with the build phased across 18-36 months."
+    - q: "Why does the article say regulator dialog should happen in Phase 0-1 rather than Phase 4?"
+      options:
+        - { text: "Regulators require notification before any construction begins", correct: false }
+        - { text: "Late-phase regulator engagement forces rebuilding architecture to satisfy expectations that could have been designed in", correct: true }
+        - { text: "Phase 4 is too late legally to obtain operating licences", correct: false }
+      explanation: "The failure pattern 'Regulator dialog deferred' explains projects that defer the conversation find themselves rebuilding architecture to satisfy expectations they could have designed for at the start."
+    - q: "Which buyer profile is described as a POOR fit for Public Cloud Edition?"
+      options:
+        - { text: "Smaller hosting providers", correct: true }
+        - { text: "Tier-1 telcos launching sovereign cloud products", correct: false }
+        - { text: "Large banks operating their own cloud", correct: false }
+      explanation: "The article lists smaller hosting providers as poor fit because ISP Edition fits substantially better on economics and operational model; Public Cloud Edition is for tier-1/national-scale builds."
+    - q: "What happens in Phase 1 (Foundation) of a Public Cloud Edition engagement?"
+      options:
+        - { text: "Open-market customer launch with full marketing activation", correct: false }
+        - { text: "Service catalog buildout for all 30-50+ managed services", correct: false }
+        - { text: "Hardware procurement, Talos/Cozystack deployment in first DC, storage and identity foundation", correct: true }
+      explanation: "Phase 1 covers hardware procurement and racking, Talos/Cozystack platform deployment in the first datacentre, storage layer, networking foundation, identity integration, and initial observability — ending with a working single-region internal platform."
 ---
 
 **Long-form companion to the [Public Cloud Edition landing](/products/aenix-platform/public-cloud-edition/). For tier-1 telcos, national operators, big banks building their own cloud, and large sovereign cloud initiatives evaluating what a multi-million-euro Aenix engagement actually covers — and how to phase it across the 18-36 months it typically runs.**

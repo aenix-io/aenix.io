@@ -8,6 +8,39 @@ topics: ["DORA", "Financial Services", "Compliance", "Sovereignty", "Multi-tenan
 language: "en"
 companion_landing: "/products/aenix-platform/enterprise-edition/"
 companion_label: "See Enterprise Edition product details →"
+quiz:
+  title: "Test yourself: DORA Article 21 & 28 architecture"
+  questions:
+    - q: "What are the DORA Article 23 incident reporting windows that detection telemetry must support?"
+      options:
+        - { text: "1-hour early warning, 24-hour incident notification, 7-day final report", correct: false }
+        - { text: "24-hour early warning, 72-hour incident notification, one-month final report", correct: true }
+        - { text: "No fixed windows — entity defines its own SLO", correct: false }
+      explanation: "The article specifies that detection must operate within Article 23 windows: 24-hour early warning, 72-hour incident notification, and one-month final report."
+    - q: "Why does the article say SaaS observability vendors like Datadog/New Relic/Splunk Cloud create a DORA Article 28 risk?"
+      options:
+        - { text: "They charge in USD and breach FX exposure rules", correct: false }
+        - { text: "Their data-processing region defaults to US, so application logs containing transaction details quietly leave the regulator perimeter", correct: true }
+        - { text: "They don't sign EU Standard Contractual Clauses", correct: false }
+      explanation: "Pattern 1 in the Article 28 section describes how SaaS observability tools default to US data processing, moving customer identifiers and protected data to non-compliant jurisdiction every minute — Article 28 residency expectations apply to the entire ICT third-party arrangement."
+    - q: "Article 28(8) requires a documented exit plan with what additional property that most entities lack?"
+      options:
+        - { text: "Tested feasibility — supervisors expect a rehearsal within the past 24 months", correct: true }
+        - { text: "Notarised legal copy filed with the supervisor", correct: false }
+        - { text: "A second backup hyperscaler under contract", correct: false }
+      explanation: "Pattern 2 in the Article 28 section explains that most entities have an exit plan on paper but few have rehearsed it, and supervisors are now asking for rehearsal within the last 24 months."
+    - q: "What does 'advisory-only support model' mean in Enterprise Edition?"
+      options:
+        - { text: "Aenix only provides written advice, no engineering work", correct: false }
+        - { text: "Aenix engineers do not require kubectl access to customer production — they operate via GitOps PR review", correct: true }
+        - { text: "Customer must hire its own consultancy for any cluster changes", correct: false }
+      explanation: "The article describes advisory-only as: Aenix engineers don't need kubectl access to production; reviewers operate via GitOps PR review, runbooks remain customer-side — critical for banks where vendor-side access is a structural risk."
+    - q: "What total elapsed time does the article cite for an Enterprise Edition production deployment at a tier-1 bank with full TLPT readiness?"
+      options:
+        - { text: "6-12 months", correct: false }
+        - { text: "12-18 months", correct: false }
+        - { text: "18-36 months", correct: true }
+      explanation: "The engagement structure section states 18-36 months for tier-1 banks with full TLPT readiness, and 12-18 months for mid-size regulated enterprises with narrower scope."
 ---
 
 **Long-form companion to the [Enterprise Edition landing](/products/aenix-platform/enterprise-edition/). For regulated enterprises — banks, insurers, public-sector entities, energy operators, healthcare — translating DORA Article 21 and Article 28 obligations into a running cloud architecture that survives a supervisory audit.**

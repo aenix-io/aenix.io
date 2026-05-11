@@ -8,6 +8,39 @@ topics: ["AI/ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"
 language: "en"
 companion_landing: "/products/aenix-platform/ai-ml-edition/"
 companion_label: "See AI/ML Edition product details →"
+quiz:
+  title: "Test yourself: sustained GPU economics"
+  questions:
+    - q: "At what H100 utilisation does on-prem GPU typically beat hyperscaler pricing according to the article?"
+      options:
+        - { text: "Around 5-10% utilisation — almost always cheaper to own", correct: false }
+        - { text: "Around 30% utilisation", correct: true }
+        - { text: "Only above 80% sustained utilisation", correct: false }
+      explanation: "The crossover analysis states H100 sustained crossover is around 30% utilisation: hyperscaler H100 is ~€3-4/hr, while amortised on-prem H100 works out to ~€0.9-1.3/hr at 30% utilisation."
+    - q: "What is the 2026 default serving stack for transformer model inference cited in the article?"
+      options:
+        - { text: "TGI for all transformer workloads", correct: false }
+        - { text: "vLLM, because PagedAttention delivers high throughput", correct: true }
+        - { text: "Triton only, with vLLM deprecated", correct: false }
+      explanation: "Layer 3 (Serving stack) states 'vLLM is the 2026 default for transformer-model inference (PagedAttention delivers high throughput)', with Triton fitting mixed workloads."
+    - q: "What is the most common initial GPU-sizing mistake the article identifies?"
+      options:
+        - { text: "Buying too many H100s instead of L40S for inference", correct: false }
+        - { text: "Not accounting for KV cache memory that scales with context length and batch size", correct: true }
+        - { text: "Skipping NVLink between GPUs", correct: false }
+      explanation: "Pitfall 3 says the most common initial-sizing mistake is not accounting for KV cache memory — a model that 'fits' by parameter count may not fit at the operational batch size."
+    - q: "For sustained 24/7 customer-facing inference, how much cheaper is owning the GPUs after Year 2 according to the article?"
+      options:
+        - { text: "Roughly the same — break-even at Year 5", correct: false }
+        - { text: "30-60% cheaper after Year 2, accounting for hardware refresh and operational overhead", correct: true }
+        - { text: "10× cheaper, instantly profitable", correct: false }
+      explanation: "The crossover section concludes that for sustained 24/7 customer-facing inference (millions of tokens per day), owning the GPUs is typically 30-60% cheaper after Year 2."
+    - q: "Why is the 'SaaS endpoint marketed as private LLM' pattern called a pitfall?"
+      options:
+        - { text: "The endpoints rate-limit aggressively", correct: false }
+        - { text: "The data still leaves the customer perimeter even with a strong privacy clause, which fails the substantive requirement for regulated data", correct: true }
+        - { text: "SaaS endpoints lack OpenAI-compatible APIs", correct: false }
+      explanation: "Pitfall 2 (model-API-as-private-LLM) says the data still leaves the customer perimeter even when the privacy clause is strong, and for regulated-data workloads this fails the substantive requirement."
 ---
 
 **Long-form companion to the [AI/ML Edition landing](/products/aenix-platform/ai-ml-edition/). Walks through GPU economics for sustained inference, multi-tenant GPU scheduling, model selection trade-offs, and the architectural decisions that make dedicated AI infrastructure pay back over Year 2 — versus continuing on hyperscaler GPU or proprietary model APIs.**

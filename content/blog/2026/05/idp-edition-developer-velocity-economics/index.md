@@ -8,6 +8,39 @@ topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
 language: "en"
 companion_landing: "/products/aenix-platform/idp-edition/"
 companion_label: "See IDP Edition product details →"
+quiz:
+  title: "Test yourself: IDP Edition economics"
+  questions:
+    - q: "What is the typical time-to-environment in 200+-engineer organisations the article describes as the core symptom of developer drag?"
+      options:
+        - { text: "2-6 weeks for what should be a 30-minute self-service action", correct: true }
+        - { text: "1-2 days, mostly waiting on CI", correct: false }
+        - { text: "Same-day, but with degraded SLAs", correct: false }
+      explanation: "The article opens this section explicitly: time-to-environment is 2-6 weeks for what should be a 30-minute self-service action — IAM, network, observability, compliance, and approvals each compound the delay."
+    - q: "Why is Backstage-as-platform called an anti-pattern in this article?"
+      options:
+        - { text: "Backstage is closed-source and locks teams to Spotify's roadmap", correct: false }
+        - { text: "It performs poorly above 50 teams and crashes Kubernetes API servers", correct: false }
+        - { text: "Backstage is a portal, not a platform — buying it before the underlying capabilities are self-service produces a beautiful catalog over the same operational chaos", correct: true }
+      explanation: "The article states explicitly: 'Backstage is a portal, not a platform' and warns that buying it before underlying capabilities are truly self-service stalls adoption."
+    - q: "What is the typical mature ratio of platform engineers to product engineers recommended in IDP Edition?"
+      options:
+        - { text: "1 platform engineer per 3-5 product engineers", correct: false }
+        - { text: "1 platform engineer per 10-20 product engineers", correct: true }
+        - { text: "1 platform engineer per 50-100 product engineers", correct: false }
+      explanation: "The 'What stays the customer's responsibility' section states the typical mature ratio is 1 platform engineer per 10-20 product engineers, with hiring ahead of demand recommended."
+    - q: "Which characteristic of a 'platform that works' is described as the trust threshold for adoption?"
+      options:
+        - { text: "Owned by a real team with named on-call", correct: false }
+        - { text: "Documented in one page or less", correct: false }
+        - { text: "Reliable enough to trust — works the first time, every time, for the documented use case", correct: true }
+      explanation: "The five characteristics list specifies that if the self-service path breaks 1 in 10 times, teams stop trusting it and adoption stalls — reliability is the trust threshold."
+    - q: "For whom does the article say IDP Edition is a POOR fit?"
+      options:
+        - { text: "Organisations with 200+ engineers and 5+ product teams", correct: false }
+        - { text: "Under 50 engineers in a single product team, or where hyperscaler-managed Kubernetes meets all requirements with no sovereignty concerns", correct: true }
+        - { text: "Any organisation with regulated data residency requirements", correct: false }
+      explanation: "The 'Poor fit' section lists under 50 engineers with a single product team (DevOps-only is right) and hyperscaler-managed-meets-needs-with-no-sovereignty-pressure as the two poor-fit cases."
 ---
 
 **Long-form companion to the [IDP Edition landing](/products/aenix-platform/idp-edition/). For engineering leaders at 200-2,000-engineer organisations evaluating whether an Internal Developer Platform pays back — versus continuing on DevOps-only, ticket-driven infrastructure, or a half-built in-house platform.**

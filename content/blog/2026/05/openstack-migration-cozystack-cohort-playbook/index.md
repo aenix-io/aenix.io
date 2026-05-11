@@ -8,6 +8,39 @@ topics: ["OpenStack", "Cozystack", "Migration", "Multi-tenancy", "Kubernetes"]
 language: "en"
 companion_landing: "/migration/openstack/"
 companion_label: "See OpenStack migration hub →"
+quiz:
+  title: "Test yourself: OpenStack-to-Cozystack migration"
+  questions:
+    - q: "What does Nova map to in the OpenStack→Cozystack component table?"
+      options:
+        - { text: "Cilium on Talos", correct: false }
+        - { text: "KubeVirt on Talos", correct: true }
+        - { text: "LINSTOR + Ceph", correct: false }
+      explanation: "Per the component mapping: Nova (compute) → KubeVirt on Talos. Neutron maps to Cilium (eBPF); Cinder maps to LINSTOR or Ceph (Rook-managed)."
+    - q: "Which of the three migration pressures is structurally tied to Red Hat OSP transitioning toward OpenShift Virtualization?"
+      options:
+        - { text: "Engineer scarcity", correct: false }
+        - { text: "Vendor distro lifecycle", correct: true }
+        - { text: "Service-catalog ceiling", correct: false }
+      explanation: "Red Hat OSP 17/18 are the final major release lines as Red Hat transitions toward OpenShift Virtualization. Mirantis transitioned years ago; Canonical Charmed OpenStack has narrower enterprise sales motion. Vendor distro lifecycle is the structural pressure forcing the decision."
+    - q: "For a tier-1 telco with 1,000-5,000 nodes and certified VNFs, what's the realistic total modernization timeline?"
+      options:
+        - { text: "12-24 months", correct: false }
+        - { text: "24-48 months for full modernization; first production workloads on Cozystack within 12-18 months", correct: true }
+        - { text: "6-12 months", correct: false }
+      explanation: "Tier-1 telco modernization is 24-48 months total, with first production workloads on Cozystack within 12-18 months. The VNF modernization track runs 18-36 months in parallel. Mid-size enterprises (200-500 nodes) hit 12-24 months."
+    - q: "Which three approaches does the article describe for handling certified VNFs in a tier-1 telco migration?"
+      options:
+        - { text: "Force re-certification, drop the VNF, or replace the vendor", correct: false }
+        - { text: "Run VNFs on KubeVirt under Cozystack, keep certified VNFs on OpenStack in parallel, or negotiate a cloud-native (CNF) equivalent with the vendor", correct: true }
+        - { text: "Wait for the regulator to decide", correct: false }
+      explanation: "The three documented approaches: (1) run VNFs as VMs on KubeVirt (vendor cert may or may not extend); (2) keep certified VNFs on OpenStack with parallel platforms for that VNF's lifecycle; (3) align with the vendor's own CNF modernization toward Cloud-Native Network Functions on Kubernetes."
+    - q: "What culture/discipline shift does the article say takes 4-8 weeks of focused training plus 3-6 months of practice for OpenStack operators?"
+      options:
+        - { text: "Learning the Cozystack CLI", correct: false }
+        - { text: "Internalising GitOps discipline (declarative changes) instead of imperative APIs (CLI, REST, console actions)", correct: true }
+        - { text: "Reading Kubernetes RBAC documentation", correct: false }
+      explanation: "OpenStack operators are used to imperative APIs. Cozystack expects GitOps for production changes — a culture shift, not just a tool shift. Engineers need 4-8 weeks focused training plus 3-6 months practice to internalise GitOps discipline."
 ---
 
 **Long-form companion to the [OpenStack migration hub](/migration/openstack/). A cohort-based migration playbook from production OpenStack to Cozystack — covering component mapping, image conversion, networking redesign, operational handover, and the realistic timeline for tier-1 telco-scale and mid-size enterprise estates.**

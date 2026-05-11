@@ -8,6 +8,39 @@ topics: ["Public Sector", "Sovereignty", "Compliance", "NIS2", "Cozystack"]
 language: "en"
 companion_landing: "/industries/public-sector/"
 companion_label: "See public-sector industry page →"
+quiz:
+  title: "Test yourself: public-sector sovereign cloud"
+  questions:
+    - q: "Which framework is described as the most demanding EU-member-state sovereign-cloud scheme and the reference for several other national initiatives?"
+      options:
+        - { text: "France: SecNumCloud", correct: true }
+        - { text: "Germany: BSI C5", correct: false }
+        - { text: "Spain: ENS High", correct: false }
+      explanation: "The post identifies SecNumCloud as the strict French national framework — the most demanding EU-member-state sovereign-cloud scheme and the reference standard for several other national initiatives."
+    - q: "Why do hyperscaler 'sovereign' offerings most commonly fail the substantive sovereignty test?"
+      options:
+        - { text: "They lack a regional datacentre presence", correct: false }
+        - { text: "They do not support GDPR Articles 44-50", correct: false }
+        - { text: "The provider retains operational access to customer encryption keys", correct: true }
+      explanation: "The article calls this out specifically as the most common point where hyperscaler 'sovereign' offerings fall short — the provider retains operational access to keys, which fails the substantive condition for customer-controlled encryption keys."
+    - q: "How far should the supplier chain be documented under Article 28-equivalent provisions across the major frameworks?"
+      options:
+        - { text: "Only the first hop (the hyperscaler itself)", correct: false }
+        - { text: "At least to the second hop", correct: true }
+        - { text: "No documentation is required if GDPR applies", correct: false }
+      explanation: "The post explains that Article 28-equivalent provisions expect documentation of the supplier chain at least to the second hop, and that most hyperscaler-based sovereign-cloud arrangements stop at the first hop."
+    - q: "Which entity does the post identify as Aenix's EU contracting entity?"
+      options:
+        - { text: "AENIX INC (Delaware)", correct: false }
+        - { text: "AENIX s.r.o. (Czechia)", correct: true }
+        - { text: "AENIX GmbH (Germany)", correct: false }
+      explanation: "The article states that AENIX s.r.o. in Czechia is the EU contracting entity, while AENIX INC in Delaware is the US contracting entity."
+    - q: "What is the typical end-to-end timeline from project start to certified production for a public-sector sovereign cloud engagement?"
+      options:
+        - { text: "3-6 months", correct: false }
+        - { text: "6-12 months", correct: false }
+        - { text: "12-36 months due to certification overhead", correct: true }
+      explanation: "The post specifies a 12-36 month total timeline from project start to certified production — substantially longer than private-sector engagements because of certification overhead, but compounding into annual recertification afterwards."
 ---
 
 **Long-form companion to the [public-sector industry page](/industries/public-sector/). For procurement leads, IT directors, and platform engineers at government and quasi-public organisations translating sovereignty mandates and procurement frameworks into a running cloud platform — covering SecNumCloud, BSI C5, EUCS, Kazakhstan procurement-portal sovereignty, APAC variants, and what it takes to satisfy them substantively, not just contractually.**

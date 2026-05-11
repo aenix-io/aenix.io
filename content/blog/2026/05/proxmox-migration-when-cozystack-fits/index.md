@@ -8,6 +8,39 @@ topics: ["Proxmox", "Cozystack", "Migration", "Multi-tenancy", "Hosting"]
 language: "en"
 companion_landing: "/migration/proxmox/"
 companion_label: "See Proxmox migration hub →"
+quiz:
+  title: "Test yourself: Proxmox-to-Cozystack migration"
+  questions:
+    - q: "Around what customer count does Proxmox's multi-tenancy model start to feel thin for hosting providers?"
+      options:
+        - { text: "~50 customers", correct: false }
+        - { text: "~300 customers", correct: true }
+        - { text: "~5,000 customers", correct: false }
+      explanation: "Above ~300 customer-facing tenants, Proxmox's namespace+permissions model (no hard isolation) starts to feel thin; per-customer audit trails, isolation guarantees, and quota enforcement become operational pain."
+    - q: "Which two Proxmox components map to KubeVirt and Cilium respectively in Cozystack?"
+      options:
+        - { text: "ZFS storage and Proxmox Backup Server", correct: false }
+        - { text: "KVM hypervisor and Linux SDN / bridges", correct: true }
+        - { text: "LXC containers and pvecli", correct: false }
+      explanation: "Per the architectural mapping table: KVM hypervisor → KubeVirt (KVM-based), and Linux SDN / bridges → Cilium (eBPF). LXC needs redesign rather than 1:1 mapping; PBS maps to Velero+S3+PITR."
+    - q: "For a typical 300-1,000 customer hosting provider, what's the realistic end-to-end migration timeline?"
+      options:
+        - { text: "1-3 months", correct: false }
+        - { text: "6-18 months", correct: true }
+        - { text: "3-5 years", correct: false }
+      explanation: "Total time from project start to Proxmox fully retired is 6-18 months for typical mid-size providers. Larger operators (1,000-5,000 customers) extend Phase 3 to 12-24 months for sustainable cohort pacing."
+    - q: "Why is LXC the most problematic Proxmox component to migrate?"
+      options:
+        - { text: "Because LXC is closed source", correct: false }
+        - { text: "Because LXC is system-style containers (full OS image) while Kubernetes containers are application-style (single process) — workloads either become KubeVirt VMs or get refactored", correct: true }
+        - { text: "Because LXC doesn't support snapshots", correct: false }
+      explanation: "Proxmox LXC = system containers (full OS image); Kubernetes containers = application containers (single process or small set). Workloads using LXC for system-container patterns either migrate to KubeVirt VMs (1:1 but heavier) or get refactored to Kubernetes-native apps."
+    - q: "When does the article say a hosting provider should stay on Proxmox rather than migrate?"
+      options:
+        - { text: "When the operator has stable customer base under ~200 customers and mostly-VM workloads", correct: true }
+        - { text: "When customers demand managed PostgreSQL", correct: false }
+        - { text: "When the operator needs multi-DC active/active", correct: false }
+      explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — Cozystack ISP Edition is over-engineered for that scope. Managed services and multi-DC active/active are pressures that justify migration."
 ---
 
 **Long-form companion to the [Proxmox migration hub](/migration/proxmox/). For service providers, MSPs, and growing enterprises whose Proxmox VE deployment is hitting multi-tenancy, service-catalog, or scale ceilings — what a Proxmox-to-Cozystack migration looks like, and when staying on Proxmox is still the right call.**

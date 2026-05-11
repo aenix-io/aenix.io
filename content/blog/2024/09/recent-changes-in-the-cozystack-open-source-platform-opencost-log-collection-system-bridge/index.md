@@ -3,7 +3,7 @@ title: "Recent Changes in the Cozystack Open Source Platform: Opencost, Log Coll
 description: "Over the past couple of months, we have been actively developing our Cozystack Open Source platform, and today we’re presenting the…"
 date: "2024-09-26"
 author: "Andrei Kvapil"
-type: "article"
+type: "news"
 topics: ["Kubernetes", "Platform Engineering", "DevOps", "Open Source", "Cozystack"]
 language: "en"
 cover_image: "https://cdn-images-1.medium.com/max/1200/1*ZE25TSWfLE46qz7vy5xQGQ.jpeg"
