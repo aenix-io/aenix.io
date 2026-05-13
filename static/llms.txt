@@ -131,6 +131,7 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 - [Build private cloud — 90-day playbook](https://aenix.io/blog/2026/05/build-private-cloud-90-day-playbook/): Week-by-week phased buildout
 - [The Inevitable Future of Kubernetes (Tim Hockin's complexity budget)](https://aenix.io/blog/2024/12/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux/): Aenix CEO position on Kubernetes as Linux-kernel analog
 - [Game Servers on Cozystack](https://aenix.io/blog/2026/04/game-servers-on-cozystack-no-april-fools-joke/): Real-time, latency-critical workload pattern on Kubernetes-native cloud
+- [Ænix Billing — per-minute usage-based billing for Managed PostgreSQL, Redis, Kafka, ClickHouse on Cozystack](https://aenix.io/blog/2026/05/aenix-billing-per-minute-managed-services-cozystack/): Kubernetes-native `billing.aenix.io/v1alpha1` extension API for hosting providers. Replaces custom Prometheus scripts and monthly spreadsheet exports. Distributed as Ænix Enterprise module; Cozystack itself remains Apache-2.0.
 
 ## Trust + commerce
 
