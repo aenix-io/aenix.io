@@ -29,6 +29,18 @@ Aenix does not sell Cozystack licenses (it is open source under Apache 2.0). Æn
 - [Hybrid cloud platform](https://aenix.io/solutions/hybrid-cloud-platform/): Single Ænix Platform spanning on-prem + cloud
 - [Developer self-service](https://aenix.io/solutions/developer-self-service/): Internal Developer Platform on Ænix Platform with multi-tenant developer workflows
 
+## By role (job-title entry points)
+
+- [By role overview](https://aenix.io/for/): Role-specific entry points; each role can engage Aenix two ways — turnkey Ænix Platform, or Aenix as the engineering team that builds a custom platform on Cozystack.
+- [For Heads of Infrastructure](https://aenix.io/for/head-of-infrastructure/): Exit VMware/Nutanix on an open, Kubernetes-native platform (KubeVirt VMs + containers), no per-core licensing.
+- [For Heads of Platform Engineering](https://aenix.io/for/head-of-platform-engineering/): Multi-tenant internal developer platform with real self-service — a backend, not just a portal.
+- [For CTOs & VPs of Engineering](https://aenix.io/for/cto/): Cloud repatriation and cost/control on a sovereign, open platform run on owned or leased hardware.
+- [For Heads of Cloud at SIs/MSPs](https://aenix.io/for/head-of-cloud/): Branded cloud to resell or build for clients; up to 40% partner margin; the VMware-exit offer.
+- [For Heads of Alliances](https://aenix.io/for/head-of-alliances/): Add an open cloud line with deal protection and up to 40% margin; resell or co-deliver.
+- [For CISOs & Compliance Leads](https://aenix.io/for/ciso/): Sovereignty and DORA/NIS2 you can evidence — customer-held keys, your hardware and jurisdiction.
+- [VMware exit for integrators & MSPs](https://aenix.io/partners/vmware-exit/): Post-Broadcom partner offer — resell or co-deliver an open cloud, up to 40% margin, Aenix as your engineering bench.
+- [VMware cost calculator](https://aenix.io/resources/vmware-cost-calculator/): Interactive tool — enter cores and renewal price, get annual saving, 3-year net, and migration payback.
+
 ## Services (engagement-led)
 
 Strategic + consulting:

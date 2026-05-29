@@ -27,6 +27,14 @@ Aenix führt End-to-End-VMware-Migrationen durch — Bewertung, Sequenzierung, I
 
 ---
 
+## Kostendifferenz abschätzen
+
+Modellieren Sie das Delta vor der Entscheidung: Bestandsgröße und aktuellen VMware-Preis eingeben — der Rechner zeigt Jahresersparnis, 3-Jahres-Netto nach Migration und die Amortisation. Vollständiges Tool und Methodik: **[VMware-Kostenrechner](/de/ressourcen/vmware-kostenrechner/)**.
+
+{{< vmware-calculator lang="de" currency="€" >}}
+
+---
+
 /contact/
 
 - **[VMware Alternative](/de/alternativen/vmware-alternative/)**

@@ -1,7 +1,7 @@
 ---
 title: "VMware migration — exit VCF without breaking the application"
 description: "Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on..."
-related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/aenix-platform/", "/products/cozystack"]
+related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/aenix-platform/", "/products/cozystack", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
 language: "en"
 ---
 
@@ -86,6 +86,18 @@ Networking and storage on Cozystack (or alternative) are different from NSX/vSAN
 </div>
 
 <!-- /BLOCK 4 -->
+
+---
+
+<!-- BLOCK 4b: COST CALCULATOR -->
+
+## Estimate the cost difference
+
+Before committing, model the delta. Enter your estate size and current VMware price; the calculator shows the annual saving, the three-year net after migration, and how fast the migration pays back. For the standalone tool and methodology, see the **[VMware cost calculator](/resources/vmware-cost-calculator/)**.
+
+{{< vmware-calculator >}}
+
+<!-- /BLOCK 4b -->
 
 ---
 

@@ -179,4 +179,10 @@ Book a 30-minute discovery call. We'll discuss your platform priorities, regulat
 
 ---
 
+## Find your entry point by role
+
+Not sure which edition fits? Start from your seat — **[by role](/for/)**: infrastructure, platform engineering, CTO, cloud, alliances, or compliance.
+
+---
+
 *Ænix Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain. Aenix is the open-core company. Aenix is headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia.*

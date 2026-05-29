@@ -1,0 +1,78 @@
+{{- /*
+  vmware-calculator.html — self-contained VMware-exit savings calculator.
+  Usage: {{< vmware-calculator >}}  or  {{< vmware-calculator lang="de" currency="€" >}}
+  No external dependencies. Recomputes live. Figures are illustrative; inputs are editable.
+  Last updated: 2026-05-29
+*/ -}}
+{{- $lang := .Get "lang" | default "en" -}}
+{{- $cur := .Get "currency" | default "$" -}}
+{{- $id := .Ordinal -}}
+{{- $t := dict
+  "title"      (cond (eq $lang "de") "VMware-Ausstieg: Einsparungsrechner" "VMware-exit savings calculator")
+  "cores"      (cond (eq $lang "de") "CPU-Kerne im Bestand" "CPU cores in your estate")
+  "vmwarecost" (cond (eq $lang "de") "VMware/VCF Kosten pro Kern/Jahr" "VMware/VCF cost per core/year")
+  "aenixcost"  (cond (eq $lang "de") "Aenix-Support pro Kern/Jahr" "Aenix support per core/year")
+  "migration"  (cond (eq $lang "de") "Einmalige Migrationskosten" "One-time migration cost")
+  "vmwareann"  (cond (eq $lang "de") "VMware-Kosten pro Jahr (heute)" "VMware cost per year (today)")
+  "aenixann"   (cond (eq $lang "de") "Aenix-Support pro Jahr" "Aenix support per year")
+  "netann"     (cond (eq $lang "de") "Netto-Ersparnis pro Jahr" "Net saving per year")
+  "net3"       (cond (eq $lang "de") "Netto-Ersparnis über 3 Jahre" "Net saving over 3 years")
+  "payback"    (cond (eq $lang "de") "Amortisation der Migration" "Migration payback")
+  "months"     (cond (eq $lang "de") "Monate" "months")
+  "note"       (cond (eq $lang "de") "Illustrativ. Werte editierbar. Lizenzwegfall = Apache 2.0; Sie zahlen Support und/oder Aufbau." "Illustrative. Edit the inputs. License line disappears (Apache 2.0); you pay support and/or the build.")
+-}}
+
+<div class="vmcalc" id="vmcalc-{{ $id }}" data-cur="{{ $cur }}">
+  <h3 class="vmcalc-title">{{ index $t "title" }}</h3>
+  <div class="vmcalc-grid">
+    <label>{{ index $t "cores" }}<input type="number" min="0" step="1" data-k="cores" value="1000"></label>
+    <label>{{ index $t "vmwarecost" }} ({{ $cur }})<input type="number" min="0" step="1" data-k="vmware" value="350"></label>
+    <label>{{ index $t "aenixcost" }} ({{ $cur }})<input type="number" min="0" step="1" data-k="aenix" value="80"></label>
+    <label>{{ index $t "migration" }} ({{ $cur }})<input type="number" min="0" step="1000" data-k="mig" value="150000"></label>
+  </div>
+  <div class="vmcalc-out">
+    <div class="vmcalc-row"><span>{{ index $t "vmwareann" }}</span><b data-o="vmwareann">—</b></div>
+    <div class="vmcalc-row"><span>{{ index $t "aenixann" }}</span><b data-o="aenixann">—</b></div>
+    <div class="vmcalc-row vmcalc-hl"><span>{{ index $t "netann" }}</span><b data-o="netann">—</b></div>
+    <div class="vmcalc-row vmcalc-hl"><span>{{ index $t "net3" }}</span><b data-o="net3">—</b></div>
+    <div class="vmcalc-row"><span>{{ index $t "payback" }}</span><b data-o="payback">—</b></div>
+  </div>
+  <p class="vmcalc-note">{{ index $t "note" }}</p>
+</div>
+
+<style>
+.vmcalc{border:1px solid #d8dee9;border-radius:10px;padding:1.25rem 1.25rem 1rem;margin:1.5rem 0;background:#fbfcfe}
+.vmcalc-title{margin:0 0 .75rem;font-size:1.1rem}
+.vmcalc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem 1rem}
+.vmcalc-grid label{display:flex;flex-direction:column;font-size:.85rem;font-weight:600;gap:.3rem}
+.vmcalc-grid input{padding:.5rem .6rem;border:1px solid #c4cdd9;border-radius:6px;font-size:1rem;font-weight:400}
+.vmcalc-out{margin-top:1rem;border-top:1px solid #e3e8ef;padding-top:.75rem}
+.vmcalc-row{display:flex;justify-content:space-between;align-items:baseline;padding:.3rem 0;font-size:.95rem}
+.vmcalc-row b{font-variant-numeric:tabular-nums}
+.vmcalc-hl{font-size:1.05rem}
+.vmcalc-hl b{color:#0a7d34}
+.vmcalc-note{margin:.75rem 0 0;font-size:.78rem;color:#5a6677}
+@media(max-width:520px){.vmcalc-grid{grid-template-columns:1fr}}
+</style>
+
+<script>
+(function(){
+  var root=document.getElementById("vmcalc-{{ $id }}");
+  if(!root)return;
+  var cur=root.getAttribute("data-cur")||"$";
+  function num(k){var el=root.querySelector('[data-k="'+k+'"]');var v=parseFloat(el&&el.value);return isFinite(v)&&v>0?v:0;}
+  function fmt(v){return cur+Math.round(v).toLocaleString("en-US");}
+  function set(o,t){var el=root.querySelector('[data-o="'+o+'"]');if(el)el.textContent=t;}
+  function calc(){
+    var cores=num("cores"),vmware=num("vmware"),aenix=num("aenix"),mig=num("mig");
+    var vAnn=cores*vmware, aAnn=cores*aenix, net=vAnn-aAnn;
+    set("vmwareann",fmt(vAnn));
+    set("aenixann",fmt(aAnn));
+    set("netann",fmt(net));
+    set("net3",fmt(net*3-mig));
+    if(net>0){var m=Math.ceil(mig/(net/12));set("payback",m+" {{ index $t "months" }}");}
+    else{set("payback","—");}
+  }
+  root.addEventListener("input",calc);calc();
+})();
+</script>

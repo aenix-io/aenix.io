@@ -190,4 +190,12 @@ Or email [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
+## Partner resources
+
+- **[VMware exit for integrators & MSPs](/partners/vmware-exit/)** — the post-Broadcom offer you resell or co-deliver.
+- **[For Heads of Alliances](/for/head-of-alliances/)** and **[For Heads of Cloud](/for/head-of-cloud/)** — role pages for your champions.
+- **[VMware cost calculator](/resources/vmware-cost-calculator/)** — a client-facing savings model for the renewal conversation.
+
+---
+
 *Aenix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project — and the maker of [Ænix Platform](/products/aenix-platform/) — turnkey commercial cloud-in-a-box in five editions. AENIX s.r.o. (Czechia) and AENIX INC (Delaware).*
