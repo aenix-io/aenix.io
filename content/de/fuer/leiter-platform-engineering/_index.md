@@ -3,6 +3,7 @@ title: "Für Platform-Engineering-Leiter — eine IDP ohne Lock-in"
 description: "Self-Service mit Golden Paths für Entwickler auf einer offenen, Kubernetes-nativen Plattform. Schlüsselfertig kaufen — oder Ihre IDP mit Aenix aufbauen."
 type: "page"
 language: "de"
+images: ["img/og/og-leiter-platform-engineering-de.png"]
 hreflang_en: /for/head-of-platform-engineering/
 primary_keyword: "internal developer platform plattform engineering"
 related_pages:

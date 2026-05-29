@@ -3,6 +3,7 @@ title: "For Heads of Cloud at SIs & MSPs — a cloud you resell or build"
 description: "Turn the VMware exit into your margin. Offer clients a branded cloud on an open platform — resell it, or have Aenix build it as your engineering team. Up to 40% margin."
 type: "page"
 language: "en"
+images: ["img/og/og-head-of-cloud.png"]
 hreflang_de: /de/fuer/leiter-cloud/
 primary_keyword: "white-label cloud platform for service providers"
 related_pages:

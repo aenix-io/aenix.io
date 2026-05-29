@@ -3,6 +3,7 @@ title: "For Heads of Infrastructure — exit VMware on your terms"
 description: "If you own the VMware estate after Broadcom's price changes, here are your real options: an open turnkey cloud platform, or an engineering team to build your own. EU-based."
 type: "page"
 language: "en"
+images: ["img/og/og-head-of-infrastructure.png"]
 hreflang_de: /de/fuer/leiter-infrastruktur/
 primary_keyword: "vmware alternative for infrastructure leaders"
 related_pages:

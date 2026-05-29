@@ -398,6 +398,329 @@ menus:
       params:
         cta: true
 
+  # ── German (DE) main menu — rendered on /de/ pages (language: de) ──
+  main_de:
+    - name: Produkte
+      url: /de/produkte/aenix-platform/
+      identifier: products-de
+      weight: 10
+    - name: Ænix Platform Überblick
+      url: /de/produkte/aenix-platform/
+      parent: products-de
+      weight: 1
+    - name: Public Cloud Edition
+      url: /de/produkte/aenix-platform/public-cloud-edition/
+      parent: products-de
+      weight: 2
+    - name: ISP Edition
+      url: /de/produkte/aenix-platform/isp-edition/
+      parent: products-de
+      weight: 3
+    - name: Enterprise Edition
+      url: /de/produkte/aenix-platform/enterprise-edition/
+      parent: products-de
+      weight: 4
+    - name: IDP Edition
+      url: /de/produkte/aenix-platform/idp-edition/
+      parent: products-de
+      weight: 5
+    - name: AI/ML Edition
+      url: /de/produkte/aenix-platform/ai-ml-edition/
+      parent: products-de
+      weight: 6
+    - name: Cozystack (Open Source)
+      url: /de/produkte/cozystack/
+      parent: products-de
+      weight: 7
+    - name: Lösungen
+      url: /de/loesungen/
+      identifier: solutions-de
+      weight: 20
+    - name: Regulatorik
+      identifier: solutions-de-reg
+      parent: solutions-de
+      weight: 10
+      params: { heading: true }
+    - name: DORA-Compliance
+      url: /de/loesungen/dora-compliance/
+      parent: solutions-de-reg
+      weight: 1
+    - name: NIS2-Compliance
+      url: /de/loesungen/nis2-compliance/
+      parent: solutions-de-reg
+      weight: 2
+    - name: Datensouveränität
+      url: /de/loesungen/data-sovereignty/
+      parent: solutions-de-reg
+      weight: 3
+    - name: Kosten & Architektur
+      identifier: solutions-de-cost
+      parent: solutions-de
+      weight: 20
+      params: { heading: true }
+    - name: Cloud-Repatriation
+      url: /de/loesungen/cloud-repatriation/
+      parent: solutions-de-cost
+      weight: 1
+    - name: Cloud-Kostenoptimierung
+      url: /de/loesungen/cloud-kostenoptimierung/
+      parent: solutions-de-cost
+      weight: 2
+    - name: Hybrid Cloud
+      url: /de/loesungen/hybrid-cloud/
+      parent: solutions-de-cost
+      weight: 3
+    - name: Developer & KI
+      identifier: solutions-de-devai
+      parent: solutions-de
+      weight: 30
+      params: { heading: true }
+    - name: Developer-Self-Service
+      url: /de/loesungen/developer-self-service/
+      parent: solutions-de-devai
+      weight: 1
+    - name: Souveräne KI
+      url: /de/loesungen/sovereign-ai/
+      parent: solutions-de-devai
+      weight: 2
+    - name: Dienstleistungen
+      url: /de/dienstleistungen/
+      identifier: services-de
+      weight: 30
+    - name: Cloud-Aufbau
+      identifier: services-de-build
+      parent: services-de
+      weight: 10
+      params: { heading: true }
+    - name: Private Cloud aufbauen
+      url: /de/dienstleistungen/build-private-cloud/
+      parent: services-de-build
+      weight: 1
+    - name: Sovereign Cloud Builder
+      url: /de/dienstleistungen/sovereign-cloud-builder/
+      parent: services-de-build
+      weight: 2
+    - name: Public Cloud Builder
+      url: /de/dienstleistungen/public-cloud-builder/
+      parent: services-de-build
+      weight: 3
+    - name: White-Label-Cloud
+      url: /de/dienstleistungen/white-label-cloud/
+      parent: services-de-build
+      weight: 4
+    - name: Platform Engineering
+      identifier: services-de-pe
+      parent: services-de
+      weight: 20
+      params: { heading: true }
+    - name: Platform-Engineering-Service
+      url: /de/dienstleistungen/platform-engineering/
+      parent: services-de-pe
+      weight: 1
+    - name: Platform Readiness Assessment
+      url: /de/dienstleistungen/platform-readiness-assessment/
+      parent: services-de-pe
+      weight: 2
+    - name: Internal Developer Platform
+      url: /de/dienstleistungen/internal-developer-platform/
+      parent: services-de-pe
+      weight: 3
+    - name: Enterprise Platform Engineering
+      url: /de/dienstleistungen/enterprise-platform-engineering/
+      parent: services-de-pe
+      weight: 4
+    - name: Beratung
+      identifier: services-de-consult
+      parent: services-de
+      weight: 30
+      params: { heading: true }
+    - name: Cloud-Strategieberatung
+      url: /de/dienstleistungen/cloud-strategy-consultancy/
+      parent: services-de-consult
+      weight: 1
+    - name: Cloud Engineering
+      url: /de/dienstleistungen/cloud-engineering/
+      parent: services-de-consult
+      weight: 2
+    - name: Kubernetes-Beratung
+      url: /de/dienstleistungen/kubernetes-consulting/
+      parent: services-de-consult
+      weight: 3
+    - name: DevOps-Beratung
+      url: /de/dienstleistungen/devops-consulting/
+      parent: services-de-consult
+      weight: 4
+    - name: Private-Cloud-Beratung
+      url: /de/dienstleistungen/private-cloud-consulting/
+      parent: services-de-consult
+      weight: 5
+    - name: SRE-Beratung
+      url: /de/dienstleistungen/sre-consulting/
+      parent: services-de-consult
+      weight: 6
+    - name: KI
+      identifier: services-de-ai
+      parent: services-de
+      weight: 40
+      params: { heading: true }
+    - name: AI Platform Build
+      url: /de/dienstleistungen/ai-platform-build/
+      parent: services-de-ai
+      weight: 1
+    - name: Branchen
+      url: /de/branchen/
+      identifier: industries-de
+      weight: 40
+    - name: Reguliert
+      identifier: industries-de-reg
+      parent: industries-de
+      weight: 10
+      params: { heading: true }
+    - name: Finanzdienstleistungen
+      url: /de/branchen/finanzdienstleistungen/
+      parent: industries-de-reg
+      weight: 1
+    - name: Versicherung
+      url: /de/branchen/versicherung/
+      parent: industries-de-reg
+      weight: 2
+    - name: Öffentlicher Sektor
+      url: /de/branchen/oeffentlicher-sektor/
+      parent: industries-de-reg
+      weight: 3
+    - name: Telco & Hosting
+      identifier: industries-de-telco
+      parent: industries-de
+      weight: 20
+      params: { heading: true }
+    - name: Telco
+      url: /de/branchen/telco/
+      parent: industries-de-telco
+      weight: 1
+    - name: Hosting-Anbieter
+      url: /de/branchen/hosting-anbieter/
+      parent: industries-de-telco
+      weight: 2
+    - name: MSP
+      url: /de/branchen/msp/
+      parent: industries-de-telco
+      weight: 3
+    - name: Industrie
+      identifier: industries-de-ind
+      parent: industries-de
+      weight: 30
+      params: { heading: true }
+    - name: Energie
+      url: /de/branchen/energie/
+      parent: industries-de-ind
+      weight: 1
+    - name: Fertigung
+      url: /de/branchen/fertigung/
+      parent: industries-de-ind
+      weight: 2
+    - name: Transport & Logistik
+      url: /de/branchen/transport-logistik/
+      parent: industries-de-ind
+      weight: 3
+    - name: Bildung
+      identifier: industries-de-edu
+      parent: industries-de
+      weight: 40
+      params: { heading: true }
+    - name: Universitäten
+      url: /de/branchen/universitaeten/
+      parent: industries-de-edu
+      weight: 1
+    - name: K-12-Bildung
+      url: /de/branchen/k12-bildung/
+      parent: industries-de-edu
+      weight: 2
+    - name: Sonstige
+      identifier: industries-de-other
+      parent: industries-de
+      weight: 50
+      params: { heading: true }
+    - name: Mittelstand
+      url: /de/branchen/mittelstand/
+      parent: industries-de-other
+      weight: 1
+    - name: Migration
+      url: /de/migration/
+      identifier: migrate-de
+      weight: 45
+    - name: VMware-Alternative
+      url: /de/alternativen/vmware-alternative/
+      parent: migrate-de
+      weight: 1
+    - name: VMware-Migration
+      url: /de/migration/vmware/
+      parent: migrate-de
+      weight: 2
+    - name: Cozystack vs VMware
+      url: /de/vergleichen/cozystack-vs-vmware/
+      parent: migrate-de
+      weight: 3
+    - name: Alle Alternativen
+      url: /de/alternativen/
+      parent: migrate-de
+      weight: 4
+    - name: Preise
+      url: /de/preise/
+      weight: 50
+    - name: Ressourcen
+      url: /de/ressourcen/
+      identifier: resources-de
+      weight: 60
+    - name: Lead-Magnets
+      url: /de/ressourcen/
+      parent: resources-de
+      weight: 1
+    - name: Blog
+      url: /de/blog/
+      parent: resources-de
+      weight: 2
+    - name: Kubernetes Deep Dive
+      url: /de/kubernetes-deep-dive/
+      parent: resources-de
+      weight: 3
+    - name: VMware-Kostenrechner
+      url: /de/ressourcen/vmware-kostenrechner/
+      parent: resources-de
+      weight: 4
+    - name: Unternehmen
+      url: /de/ueber-uns/
+      identifier: company-de
+      weight: 70
+    - name: Über uns
+      url: /de/ueber-uns/
+      parent: company-de
+      weight: 1
+    - name: Partner
+      url: /de/partner/
+      parent: company-de
+      weight: 2
+    - name: Konferenzen
+      url: /de/konferenzen/
+      parent: company-de
+      weight: 3
+    - name: Case Studies
+      url: /de/case-studies/
+      parent: company-de
+      weight: 4
+    - name: Enterprise Support
+      url: /de/enterprise-support/
+      parent: company-de
+      weight: 5
+    - name: VMware-Ausstieg für Partner
+      url: /de/partner/vmware-exit/
+      parent: company-de
+      weight: 6
+    - name: Kontakt
+      url: /de/kontakt/
+      weight: 80
+      params:
+        cta: true
+
   footer:
     - name: Ænix Platform
       url: /products/aenix-platform/

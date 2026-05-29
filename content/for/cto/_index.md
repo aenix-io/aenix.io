@@ -3,6 +3,7 @@ title: "For CTOs & VPs of Engineering — control your cloud economics"
 description: "Cloud bills up, lock-in tightening. Repatriate or build on an open, sovereign platform — turnkey or with Aenix as your engineering team. EU-based, Apache 2.0."
 type: "page"
 language: "en"
+images: ["img/og/og-cto.png"]
 hreflang_de: /de/fuer/cto/
 primary_keyword: "cloud repatriation platform for CTOs"
 related_pages:

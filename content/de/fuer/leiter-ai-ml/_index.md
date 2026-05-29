@@ -3,6 +3,7 @@ title: "Für AI/ML-Leiter — GPU-Infrastruktur, die Sie kontrollieren"
 description: "Training und Inferenz auf eigenen GPUs, in Ihrer Jurisdiktion, ohne Hyperscaler-Endpoint-Lock-in. Eine schlüsselfertige KI-Plattform — oder mit Aenix gebaut."
 type: "page"
 language: "de"
+images: ["img/og/og-leiter-ai-ml-de.png"]
 hreflang_en: /for/head-of-ai-ml/
 primary_keyword: "souveräne ki gpu plattform"
 secondary_keywords: ["souveräne ki", "private gpu cloud", "ki inferenz plattform"]

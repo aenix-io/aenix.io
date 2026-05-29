@@ -3,6 +3,7 @@ title: "VMware cost calculator — model your post-Broadcom savings"
 description: "Free VMware cost calculator: enter your cores and renewal price, see annual savings, 3-year net, and migration payback when you move to an open platform."
 type: "page"
 language: "en"
+images: ["img/og/og-vmware-cost-calculator.png"]
 hreflang_de: /de/ressourcen/vmware-kostenrechner/
 primary_keyword: "vmware cost calculator"
 secondary_keywords: ["vmware license calculator", "vmware tco calculator", "vmware exit savings"]

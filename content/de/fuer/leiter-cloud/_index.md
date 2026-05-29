@@ -3,6 +3,7 @@ title: "Für Cloud-Leiter bei SIs & MSPs — Cloud zum Wiederverkauf"
 description: "Machen Sie den VMware-Ausstieg zu Ihrer Marge. Bieten Sie Kunden eine gebrandete Cloud auf offener Plattform — wiederverkaufen oder mit Aenix bauen. Bis 40% Marge."
 type: "page"
 language: "de"
+images: ["img/og/og-leiter-cloud-de.png"]
 hreflang_en: /for/head-of-cloud/
 primary_keyword: "white label cloud plattform anbieter"
 related_pages:

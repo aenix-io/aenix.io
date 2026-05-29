@@ -3,6 +3,7 @@ title: "VMware-Kostenrechner — Einsparungen nach Broadcom berechnen"
 description: "Kostenloser VMware-Kostenrechner: Kerne und Verlängerungspreis eingeben und Jahresersparnis, 3-Jahres-Netto und Amortisation der Migration auf offene Plattform sehen."
 type: "page"
 language: "de"
+images: ["img/og/og-vmware-kostenrechner-de.png"]
 hreflang_en: /resources/vmware-cost-calculator/
 primary_keyword: "vmware kostenrechner"
 secondary_keywords: ["vmware lizenzkosten", "vmware tco rechner", "vmware ausstieg ersparnis"]

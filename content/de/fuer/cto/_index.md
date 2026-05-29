@@ -3,6 +3,7 @@ title: "Für CTOs & VPs Engineering — Cloud-Ökonomie zurückgewinnen"
 description: "Cloud-Kosten steigen, Lock-in wächst, Souveränität wird Kundenanforderung. Repatriieren oder auf offener Plattform bauen — schlüsselfertig oder mit Aenix als Team."
 type: "page"
 language: "de"
+images: ["img/og/og-cto-de.png"]
 hreflang_en: /for/cto/
 primary_keyword: "cloud repatriation private cloud cto"
 related_pages:

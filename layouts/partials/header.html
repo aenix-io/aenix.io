@@ -14,6 +14,8 @@
     .dropdown-menu--grouped, .dropdown-group, .dropdown-group-heading,
     .dropdown-group-list
 */}}
+{{- $menu := .Site.Menus.main -}}
+{{- if eq .Params.language "de" -}}{{- $menu = (.Site.Menus.main_de | default .Site.Menus.main) -}}{{- end -}}
 <header class="site-header">
   <div class="container">
     <a href="/" class="logo" aria-label="Ænix Home">
@@ -22,7 +24,7 @@
 
     <nav class="main-nav" aria-label="Main navigation">
       <ul class="nav-list">
-        {{ range .Site.Menus.main }}
+        {{ range $menu }}
           {{ if .HasChildren }}
           {{- $hasGroups := false -}}
           {{- range .Children -}}
@@ -81,7 +83,7 @@
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <nav aria-label="Mobile navigation">
     <ul class="mobile-nav-list">
-      {{ range .Site.Menus.main }}
+      {{ range $menu }}
         {{ if .HasChildren }}
         <li class="mobile-nav-item has-children">
           <button class="mobile-nav-link" aria-expanded="false">

@@ -3,6 +3,7 @@ title: "For Heads of Platform Engineering — an IDP without the lock-in"
 description: "Give developers golden-path self-service on an open, Kubernetes-native platform. Buy it turnkey or have Aenix build your internal developer platform with you."
 type: "page"
 language: "en"
+images: ["img/og/og-head-of-platform-engineering.png"]
 hreflang_de: /de/fuer/leiter-platform-engineering/
 primary_keyword: "internal developer platform for platform teams"
 related_pages:

@@ -3,6 +3,7 @@ title: "For CISOs & Compliance Leads — sovereignty you can evidence"
 description: "DORA, NIS2 and data-residency turn cloud into a control problem. Run regulated workloads on a platform where keys, hardware and jurisdiction are yours. EU engineers."
 type: "page"
 language: "en"
+images: ["img/og/og-ciso.png"]
 hreflang_de: /de/fuer/ciso/
 primary_keyword: "sovereign compliant cloud platform for CISOs"
 related_pages:

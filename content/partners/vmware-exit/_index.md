@@ -3,6 +3,7 @@ title: "VMware exit for integrators & MSPs — turn the renewal into margin"
 description: "Your clients' VMware costs jumped. Offer an open, sovereign cloud you resell or co-deliver on Cozystack — up to 40% margin, deal protection, Aenix as your bench."
 type: "page"
 language: "en"
+images: ["img/og/og-vmware-exit-partners.png"]
 hreflang_de: /de/partner/vmware-exit/
 primary_keyword: "vmware exit for integrators and msps"
 secondary_keywords: ["vmware alternative for partners", "broadcom vmware alternative", "vmware migration partner"]
