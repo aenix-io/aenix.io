@@ -15,7 +15,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Your cloud bill scales with growth, the lock-in tightens, and "sovereign" is now a customer requirement. As CTO you need the economics and control back without slowing the roadmap. Aenix gives you an open, Kubernetes-native platform you can run on your own or leased hardware — delivered turnkey, or built with you by the team behind it.**
+**Your cloud bill scales with growth, lock-in tightens, and "sovereign" is now a customer requirement. Take back the economics and the control without slowing the roadmap: an open, Kubernetes-native platform on your own or leased hardware — delivered turnkey, or built with you by the team behind it.**
 
 > **Pairs with:** **[Cloud repatriation](/solutions/cloud-repatriation/)** and **[cost optimization](/solutions/cloud-cost-optimization/)** engagements, **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)**, all on open-source **[Cozystack](/products/cozystack/)**.
 

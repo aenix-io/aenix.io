@@ -15,7 +15,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**You're building the platform other teams build on. The job is golden paths and self-service — multi-tenant Kubernetes, databases, storage and environments developers provision themselves — without becoming a ticket queue or marrying a closed vendor. Aenix delivers that as a turnkey internal developer platform, or as the engineering team that builds yours on open foundations.**
+**You build the platform every other team builds on. The win is golden paths and real self-service — multi-tenant Kubernetes, databases and environments developers spin up themselves — with no ticket queue and no closed vendor. Aenix delivers that as a turnkey internal developer platform, or builds yours on open foundations.**
 
 > **Pairs with:** **[Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)** for a ready internal developer platform, or **[Internal Developer Platform build](/services/internal-developer-platform/)** to design one to your org. Open-source core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
 

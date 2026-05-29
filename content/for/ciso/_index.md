@@ -15,7 +15,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**DORA, NIS2 and sectoral data-residency rules turned cloud into a control-and-evidence problem: prove where data lives, who holds the keys, and how far the supplier chain reaches. As CISO or compliance lead you need a platform where the answers are structural — your hardware, your jurisdiction, your keys. Aenix delivers that turnkey, or builds it with you.**
+**DORA, NIS2 and data-residency turned cloud into a control-and-evidence problem: prove where data lives, who holds the keys, how far the supplier chain reaches. You need a platform where the answers are structural — your hardware, your jurisdiction, your keys. Aenix delivers it turnkey, or builds it with you.**
 
 > **Pairs with:** **[DORA](/solutions/dora-compliance/)**, **[NIS2](/solutions/nis2-compliance/)** and **[data-sovereignty](/solutions/data-sovereignty/)** engagements, **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)**, on open-source **[Cozystack](/products/cozystack/)**.
 

@@ -15,7 +15,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Broadcom reshaped the VMware partner program and your clients are asking what's next. As the person who owns partnerships, you can add an open, sovereign cloud line your team co-sells into every VMware account — with up to 40% margin and deal protection. Resell it as a product, or co-deliver with Aenix as the engineering team behind it.**
+**Broadcom reshaped the VMware partner program — and your clients want what's next. Add an open, sovereign cloud line your team co-sells into every VMware account: up to 40% margin, deal protection. Resell it, or co-deliver with Aenix as the engineering team behind it.**
 
 > **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/aenix-platform/)** (five editions to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
 

@@ -16,7 +16,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**You own the VMware estate, and Broadcom's licensing changes just made your renewal a board-level number. The realistic exit is an open, Kubernetes-native platform that runs VMs, containers, storage and networking on hardware you control — with no per-core tax. Aenix gives you that platform two ways: as a turnkey product you run, or as an engineering team that builds it with you.**
+**Broadcom turned your VMware renewal into a board-level line item. The exit: an open, Kubernetes-native platform that runs your VMs, containers, storage and networking on hardware you own — no per-core tax. Aenix delivers it two ways — a turnkey product you run, or our engineers building it with you.**
 
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for a turnkey private cloud, or **[Build a Private Cloud](/services/build-private-cloud/)** when you want us to design and stand it up to your spec. Both run on **[Cozystack](/products/cozystack/)** — open source, Apache 2.0.
 

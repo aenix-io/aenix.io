@@ -15,7 +15,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Your clients' VMware renewals just jumped, and they're asking you for an alternative. That's your opening: a branded cloud — VMs, Kubernetes, databases, storage — on an open platform, with no per-core tax eating your margin. Aenix lets you resell it as a product or build your own with us as your engineering team. You keep the client and the recurring revenue.**
+**Your clients' VMware renewals jumped — and they're asking you what's next. That's your opening: a branded cloud (VMs, Kubernetes, databases, storage) on an open platform, no per-core tax eating your margin. Resell it as a product, or build your own with Aenix as your engineering team. You keep the client and the recurring revenue.**
 
 > **Pairs with:** **[White-label cloud](/services/white-label-cloud/)** and **[Public cloud builder](/services/public-cloud-builder/)**, **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** (branded portal + billing), and the **[Partner Program](/partners/)** (up to 40% margin). Core: open-source **[Cozystack](/products/cozystack/)**.
 
