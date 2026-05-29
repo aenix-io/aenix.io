@@ -334,6 +334,32 @@ menus:
       url: /oss-contribution/
       parent: resources
       weight: 4
+    - name: VMware Cost Calculator
+      url: /resources/vmware-cost-calculator/
+      parent: resources
+      weight: 5
+
+    # ── Migrate ──
+    - name: Migrate
+      url: /migration/
+      identifier: migrate
+      weight: 45
+    - name: VMware Alternative
+      url: /alternatives/vmware-alternative/
+      parent: migrate
+      weight: 1
+    - name: VMware Migration
+      url: /migration/vmware/
+      parent: migrate
+      weight: 2
+    - name: Cozystack vs VMware
+      url: /compare/cozystack-vs-vmware/
+      parent: migrate
+      weight: 3
+    - name: All alternatives
+      url: /alternatives/
+      parent: migrate
+      weight: 4
 
     # ── Company ──
     - name: Company
@@ -360,6 +386,10 @@ menus:
       url: /enterprise-support/
       parent: company
       weight: 5
+    - name: VMware Exit for Partners
+      url: /partners/vmware-exit/
+      parent: company
+      weight: 6
 
     # ── Contact (CTA) ──
     - name: Contact

@@ -11,6 +11,7 @@ related_pages:
   - /for/head-of-cloud/
   - /for/head-of-alliances/
   - /for/ciso/
+  - /for/head-of-ai-ml/
 ---
 
 **Pick the page written for your seat. Each one starts from the problem your role owns — VMware exit, developer self-service, cloud economics, a cloud to resell, a partner line, or regulatory sovereignty — and routes you to the right Aenix offer. Every role can engage us two ways: a turnkey platform you run, or our engineering team that builds it with you.**
@@ -30,6 +31,7 @@ related_pages:
 - **[Head of Cloud (SI / MSP)](/for/head-of-cloud/)** — a branded cloud you resell or build, with up to 40% margin.
 - **[Head of Alliances / Partnerships](/for/head-of-alliances/)** — add an open cloud line to your portfolio, deal-protected.
 - **[CISO / Compliance Lead](/for/ciso/)** — sovereignty and DORA/NIS2 you can evidence, not just assert.
+- **[Head of AI/ML](/for/head-of-ai-ml/)** — GPU training and inference on infrastructure you control.
 
 ---
 

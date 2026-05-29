@@ -11,6 +11,7 @@ related_pages:
   - /de/fuer/leiter-cloud/
   - /de/fuer/leiter-allianzen/
   - /de/fuer/ciso/
+  - /de/fuer/leiter-ai-ml/
 ---
 
 **Wählen Sie die Seite für Ihre Position. Jede startet beim Problem Ihrer Rolle — VMware-Ausstieg, Developer-Self-Service, Cloud-Ökonomie, eine Cloud zum Wiederverkauf, eine Partner-Linie oder regulatorische Souveränität — und führt zum passenden Aenix-Angebot. Jede Rolle kann uns auf zwei Wegen einbinden: eine schlüsselfertige Plattform, die Sie betreiben, oder unser Team, das sie mit Ihnen baut.**
@@ -30,6 +31,7 @@ related_pages:
 - **[Leiter Cloud (SI / MSP)](/de/fuer/leiter-cloud/)** — eine gebrandete Cloud zum Wiederverkauf oder Aufbau, bis 40% Marge.
 - **[Leiter Allianzen / Partnerschaften](/de/fuer/leiter-allianzen/)** — eine offene Cloud-Linie ins Portfolio, deal-geschützt.
 - **[CISO / Compliance-Leiter](/de/fuer/ciso/)** — belegbare Souveränität und DORA/NIS2.
+- **[Leiter AI/ML](/de/fuer/leiter-ai-ml/)** — GPU-Training und -Inferenz auf Infrastruktur, die Sie kontrollieren.
 
 ---
 

@@ -45,7 +45,7 @@ EU-based engineers · Apache 2.0 platform · No per-CPU licensing · Mutual NDA 
 
 ## What you're actually trying to do
 
-Replace the hypervisor layer without re-platforming the business overnight. That means: a multi-tenant platform that runs your existing VMs (KubeVirt), gives dev teams managed Kubernetes, keeps storage and networking software-defined, and stays under your operational control — on your hardware, in your jurisdiction. The license line that Broadcom was eating should become budget you redeploy, not a new subscription to a different vendor.
+Replace the hypervisor layer without re-platforming the business overnight: one multi-tenant platform that runs your existing VMs (KubeVirt), gives teams managed Kubernetes, and keeps storage and networking software-defined — on your hardware, under your control. The license line Broadcom was eating becomes budget you redeploy, not a subscription to a different vendor.
 
 ---
 

@@ -38,6 +38,7 @@ Aenix does not sell Cozystack licenses (it is open source under Apache 2.0). Æn
 - [For Heads of Cloud at SIs/MSPs](https://aenix.io/for/head-of-cloud/): Branded cloud to resell or build for clients; up to 40% partner margin; the VMware-exit offer.
 - [For Heads of Alliances](https://aenix.io/for/head-of-alliances/): Add an open cloud line with deal protection and up to 40% margin; resell or co-deliver.
 - [For CISOs & Compliance Leads](https://aenix.io/for/ciso/): Sovereignty and DORA/NIS2 you can evidence — customer-held keys, your hardware and jurisdiction.
+- [For Heads of AI/ML](https://aenix.io/for/head-of-ai-ml/): GPU training and inference on customer-controlled hardware; sovereign AI, no model-endpoint lock-in.
 - [VMware exit for integrators & MSPs](https://aenix.io/partners/vmware-exit/): Post-Broadcom partner offer — resell or co-deliver an open cloud, up to 40% margin, Aenix as your engineering bench.
 - [VMware cost calculator](https://aenix.io/resources/vmware-cost-calculator/): Interactive tool — enter cores and renewal price, get annual saving, 3-year net, and migration payback.
 

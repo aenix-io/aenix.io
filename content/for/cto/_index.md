@@ -43,7 +43,7 @@ EU-based engineers · Apache 2.0 platform · Run on your hardware · No hypersca
 
 ## What you're actually trying to do
 
-Take back control of cost and data location for the workloads that don't belong on a hyperscaler — while keeping developer velocity. That means an open platform (VMs + Kubernetes + managed databases + storage) you can run on bare metal or leased servers, with a credible migration path and a TCO you can defend to the board.
+Take back cost and data-location control for the workloads that don't belong on a hyperscaler — without losing developer velocity. One open platform (VMs, Kubernetes, managed databases, storage) on bare metal or leased servers, a credible migration path, and a TCO you can defend to the board.
 
 ---
 
