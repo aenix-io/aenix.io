@@ -532,7 +532,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   // A couple of peaks sit low on the ridge where the default short stem
   // buries the label against the terrain. Give them a taller leader line
   // so both the label and its "leg" lift clearly above the peak.
-  const LEADER_LINE_OVERRIDES = { kubernetes: 78, vms: 100, networking: 380 };
+  const LEADER_LINE_OVERRIDES = { kubernetes: 78, vms: 100, networking: 380, observability: 78 };
   function projectPeakLabels() {
     const r = canvas.getBoundingClientRect();
     if (r.width === 0) return;
