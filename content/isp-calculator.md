@@ -5,7 +5,7 @@ slug: isp-calculator
 layout: isp-calculator
 sitemap:
   disable: true
-_build:
+build:
   list: never
 robotsNoIndex: true
 bodyClass: isp-calc-page

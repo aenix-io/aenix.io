@@ -490,10 +490,18 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .hero-home {
-  min-height: calc(100vh - 72px);
+  /* Full viewport: the wireframe terrain and ambient bg flow under the
+     translucent sticky header so mountains touch the top edge. */
+  min-height: 100vh;
+  margin-top: -72px;
+  padding-top: 72px;
   display: flex;
-  align-items: center;
-  padding: 0;
+  flex-direction: column;
+  align-items: stretch;
+}
+.hero-home .hero-layout {
+  /* fill the viewport space ABOVE the feature bar */
+  flex: 1 0 auto;
 }
 
 /* ---- Background system ---- */
@@ -508,22 +516,189 @@ img { max-width: 100%; height: auto; display: block; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(255,255,255,0.030) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.030) 1px, transparent 1px);
   background-size: 72px 72px;
-  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 10%, transparent 70%);
-  mask-image: radial-gradient(ellipse 80% 70% at 50% 50%, black 10%, transparent 70%);
+  /* Inverted mask: grid is FAINT in the centre control zone (so the
+     control glow reads cleanly) and stronger at the edges (giving
+     the corners more depth/structure). */
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 55%, transparent 0%, black 80%);
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 55%, transparent 0%, black 80%);
 }
 
-/* Flow canvas — full background */
-.hero-flow {
+/* 3D hero scene — sits inside .hero-bg, below hero-content. */
+.hero-3d {
   position: absolute;
   inset: 0;
+  z-index: 1;
+  pointer-events: none;
 }
-#flow-canvas {
+.hero-3d-canvas {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+/* Floating peak annotations layered on top of the 3D scene.
+   Each .peak--<id> is anchored to a 3D peak position projected to
+   screen space by hero-3d.mjs (sets --peak-x, --peak-y on the el).
+   The label sits ABOVE that point with a thin dotted vertical leader
+   line dropping back down to a small glowing dot at the peak. */
+.hero-3d-annotations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+.peak {
+  --peak-label-w: 132px;
+  --peak-line-h: 28px;       /* JS sets fixed short leader so the dot lands on the peak */
+  position: absolute;
+  /* Each label hovers directly above its own peak — JS sets --peak-x
+     and --peak-y per frame from the projected peak position so the
+     leader dot kisses the peak from below. */
+  top: var(--peak-y, 96px);
+  left: var(--peak-x, 50%);
+  width: var(--peak-label-w);
+  transform: translateX(-50%);
+  color: var(--text-secondary);
+  font-size: 11px;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 4px rgba(11, 15, 26, 0.85);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.hero-3d-annotations.peaks-ready .peak { opacity: 1; }
+
+.peak-eyebrow {
+  display: block;
+  color: var(--brand-primary);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  white-space: nowrap;
+}
+.peak-body {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 400;
+  opacity: 0.82;
+}
+
+/* Thin dotted leader line — vertical column from label bottom down to
+   the peak point. Length matches --peak-line-h on .peak. */
+.peak-line {
+  display: block;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: var(--peak-line-h);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(1, 165, 255, 0.55) 0%,
+    rgba(1, 165, 255, 0.55) 50%,
+    transparent 50%,
+    transparent 100%);
+  background-size: 1px 5px;
+  background-repeat: repeat-y;
+}
+/* Small glowing dot at the connection point (= the peak anchor in 3D
+   projected to screen). CSS-only; not a 3D mesh, so no orb/blob. */
+.peak-line::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(180, 230, 255, 0.95);
+  transform: translateX(-50%);
+  box-shadow:
+    0 0 4px rgba(1, 165, 255, 0.9),
+    0 0 10px rgba(1, 165, 255, 0.55);
+}
+
+@media (max-width: 1280px) {
+  /* The floating peak labels are anchored to hand-picked 3D coords tuned
+     for full desktop width. Below 1280px (and at tall/narrow aspect ratios)
+     they drift to or past the viewport edges, so show the terrain alone —
+     it reads cleanly on its own. */
+  .hero-3d-annotations { display: none; }
+}
+@media (max-width: 960px) {
+  /* Below 960px the hero collapses to min-height:auto and the copy drops
+     to normal flow, so the full-viewport 3D scene no longer has room — it
+     crowds and overlaps the title. Keep only the lighter glows + grid here. */
+  .hero-3d { display: none; }
+}
+
+/* ── Hero feature bar ──────────────────────────────────────────
+   Bottom-of-hero pillars row. 4 features each with coloured icon,
+   bold title, supporting copy. */
+.hero-features {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  padding: 32px 24px 48px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.hero-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  background: rgba(11, 15, 26, 0.55);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.hero-feature-icon {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: var(--c, var(--brand-primary));
+  background: color-mix(in srgb, var(--c, var(--brand-primary)) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c, var(--brand-primary)) 35%, transparent);
+}
+.hero-feature-title {
+  display: block;
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.hero-feature-desc {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.45;
+}
+@media (max-width: 900px) {
+  .hero-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 32px;
+    padding: 24px 16px 32px;
+  }
+}
+@media (max-width: 540px) {
+  .hero-features { grid-template-columns: 1fr; }
 }
 
 /* Ambient glows */
@@ -557,13 +732,31 @@ img { max-width: 100%; height: auto; display: block; }
   background: radial-gradient(ellipse 85% 75% at 50% 50%, transparent 35%, var(--bg-main) 100%);
 }
 
-.hero-horizon {
+/* Control-zone glow — subtle radial pool of brand-cyan in the centre
+   valley, signalling the convergence point where input flows arrive
+   and output flows depart. NOT a visible UI box — just energy. */
+.hero-control-glow {
   position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 100px;
-  background: linear-gradient(to top, var(--bg-secondary) 0%, transparent 100%);
-  z-index: 1;
+  left: 50%;
+  top: 35%;
+  width: 800px;
+  height: 400px;
+  transform: translate(-50%, -50%);
   pointer-events: none;
+  background: radial-gradient(ellipse at center,
+    rgba(1, 165, 255, 0.18) 0%,
+    rgba(1, 165, 255, 0.08) 40%,
+    transparent 75%);
+  filter: blur(28px);
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .hero-control-glow { display: none; }
+}
+
+
+.hero-horizon {
+  display: none;
 }
 
 /* ---- Da Vinci blueprint cloud ---- */
@@ -634,6 +827,7 @@ img { max-width: 100%; height: auto; display: block; }
   max-width: 700px;
   text-align: center;
   position: relative;
+  transform: translateY(-15vh);
 }
 .hero-subtitle {
   margin-left: auto;
@@ -674,6 +868,21 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* ---- Hero copy ---- */
+
+.hero-eyebrow {
+  display: inline-block;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.30em;
+  color: var(--brand-primary);
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  padding: 4px 12px;
+  border: 1px solid rgba(1, 165, 255, 0.30);
+  border-radius: 999px;
+  background: rgba(1, 165, 255, 0.06);
+}
 
 .hero-title {
   color: #fff;
@@ -789,7 +998,12 @@ img { max-width: 100%; height: auto; display: block; }
   .hero-subtitle { margin-left: auto; margin-right: auto; }
   .hero-cta { justify-content: center; }
   .hero-layout { justify-content: center; }
-  .hero-home { min-height: auto; padding: 4rem 0; }
+  /* Below this width the hero collapses to min-height:auto. The base
+     margin-top:-72px (bleed terrain under the sticky header) and the
+     translateY(-15vh) copy-lift then drag the title up behind the header,
+     so neutralise both — the lift only matters on the full-viewport scene. */
+  .hero-home { min-height: auto; margin-top: 0; padding: 4rem 0; }
+  .hero-content { transform: none; }
   .hero-layout { min-height: auto; }
 }
 
