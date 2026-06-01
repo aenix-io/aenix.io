@@ -304,17 +304,16 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
     el:  document.querySelector('.peak--' + id),
   }));
 
-  /* ── DEBUG: type "debug" anywhere on the page to enable
-     click-to-pick peak coords. Click each peak in PEAK_DEFS order;
-     coords print to console in the exact PEAK_DEFS format so you can
-     paste them back. Inactive by default — no overhead until typed. */
+  /* ── DEBUG: type "move" anywhere on the page to reposition the peak
+     labels by dragging. Each label becomes grab-able; its glowing dot
+     snaps onto the terrain under the cursor (or floats at the same depth
+     over open sky). A live panel prints the updated PEAK_DEFS — hit Copy
+     and paste them over the array above. Zero overhead until triggered. */
+  let debugDragging = false;
   {
-    const SEQUENCE = 'debug';
+    const SEQUENCE = 'move';
     let typed = '';
     let active = false;
-    let nextIdx = 0;
-    const PEAK_ORDER = PEAK_DEFS.map(([id]) => id);
-    const _clickPt = new THREE.Vector3();
 
     function _smoothstep(a, b, x) {
       const t = Math.max(0, Math.min(1, (x - a) / (b - a)));
@@ -389,48 +388,17 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       return h * amp - dip;
     }
 
-    let overlay = null;
-    const pickedLines = [];
-
-    function ensureOverlay() {
-      if (overlay) return overlay;
-      overlay = document.createElement('div');
-      overlay.style.cssText = [
-        'position: fixed', 'top: 16px', 'right: 16px',
-        'z-index: 9999', 'pointer-events: none',
-        'background: rgba(11, 15, 26, 0.92)',
-        'border: 1px solid rgba(1, 165, 255, 0.5)',
-        'border-radius: 6px',
-        'padding: 12px 14px',
-        'font-family: "JetBrains Mono", ui-monospace, monospace',
-        'font-size: 12px', 'line-height: 1.5',
-        'color: #b0e5ff',
-        'white-space: pre',
-        'max-width: 90vw', 'overflow: auto',
-        'box-shadow: 0 4px 24px rgba(0,0,0,0.6)',
-      ].join(';');
-      document.body.appendChild(overlay);
-      return overlay;
-    }
-
-    function renderOverlay(statusLine) {
-      const o = ensureOverlay();
-      const header = `[hero-3d] click-to-pick — ${nextIdx}/${PEAK_ORDER.length}`;
-      o.textContent = [header, '', ...pickedLines, '', statusLine].join('\n');
-    }
-
-    function onClick(e) {
-      if (nextIdx >= PEAK_ORDER.length) {
-        renderOverlay('✓ All picked. Paste lines into PEAK_DEFS. Type "debug" to reset.');
-        return;
-      }
+    /* Ray-march the cursor onto the terrain surface (re-uses the noise
+       field above), returning the 3D hit point or null over open sky. */
+    const _ray = new THREE.Vector3();
+    function screenToTerrain(clientX, clientY) {
       const r = canvas.getBoundingClientRect();
-      const ndcX = ((e.clientX - r.left) / r.width) * 2 - 1;
-      const ndcY = -(((e.clientY - r.top) / r.height) * 2 - 1);
-      _clickPt.set(ndcX, ndcY, 0.5).unproject(camera);
-      const dx = _clickPt.x - camera.position.x;
-      const dy = _clickPt.y - camera.position.y;
-      const dz = _clickPt.z - camera.position.z;
+      const ndcX = ((clientX - r.left) / r.width) * 2 - 1;
+      const ndcY = -(((clientY - r.top) / r.height) * 2 - 1);
+      _ray.set(ndcX, ndcY, 0.5).unproject(camera);
+      const dx = _ray.x - camera.position.x;
+      const dy = _ray.y - camera.position.y;
+      const dz = _ray.z - camera.position.z;
       const dlen = Math.hypot(dx, dy, dz);
       const dirx = dx / dlen, diry = dy / dlen, dirz = dz / dlen;
       const STEP = 0.15, MAX_DIST = 80;
@@ -440,37 +408,106 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
         const rz = camera.position.z + dirz * t;
         if (Math.abs(rx) > 30 || rz < -32 || rz > 22) continue;
         const lz = rz - terrain.position.z;
-        const ly = terrainLocalY(rx, lz);
-        const surfY = terrain.position.y + ly;
-        if (ry < surfY) {
-          const id = PEAK_ORDER[nextIdx];
-          const pad = ' '.repeat(Math.max(1, 16 - id.length));
-          pickedLines.push(
-            `    ['${id}',${pad}${rx.toFixed(2)}, ${surfY.toFixed(2)}, ${rz.toFixed(2)}],`
-          );
-          nextIdx++;
-          const status = nextIdx < PEAK_ORDER.length
-            ? `→ click peak for '${PEAK_ORDER[nextIdx]}'`
-            : '✓ All picked. Paste lines into PEAK_DEFS. Type "debug" to reset.';
-          renderOverlay(status);
-          return;
-        }
+        const surfY = terrain.position.y + terrainLocalY(rx, lz);
+        if (ry < surfY) return new THREE.Vector3(rx, surfY, rz);
       }
-      renderOverlay('⚠ No terrain hit. Click again on a mountain.');
+      return null;
+    }
+
+    /* Fallback for dragging over open sky: keep the anchor's current
+       view-depth and just slide it within the screen plane. */
+    const _depth = new THREE.Vector3();
+    function screenAtDepth(clientX, clientY, refPos) {
+      const r = canvas.getBoundingClientRect();
+      _depth.copy(refPos).project(camera);
+      const ndcX = ((clientX - r.left) / r.width) * 2 - 1;
+      const ndcY = -(((clientY - r.top) / r.height) * 2 - 1);
+      return new THREE.Vector3(ndcX, ndcY, _depth.z).unproject(camera);
+    }
+
+    function fmtLine(a) {
+      const pad = ' '.repeat(Math.max(1, 16 - a.id.length));
+      return `    ['${a.id}',${pad}${a.pos.x.toFixed(2)}, ` +
+             `${a.pos.y.toFixed(2)}, ${a.pos.z.toFixed(2)}],`;
+    }
+
+    let listEl = null;
+    function buildOverlay() {
+      const box = document.createElement('div');
+      box.style.cssText = [
+        'position: fixed', 'top: 16px', 'right: 16px', 'z-index: 9999',
+        'background: rgba(11, 15, 26, 0.94)',
+        'border: 1px solid rgba(1, 165, 255, 0.5)', 'border-radius: 8px',
+        'padding: 12px 14px',
+        'font-family: "JetBrains Mono", ui-monospace, monospace',
+        'font-size: 12px', 'line-height: 1.5', 'color: #b0e5ff',
+        'max-width: 92vw', 'box-shadow: 0 4px 24px rgba(0,0,0,0.6)',
+      ].join(';');
+
+      const head = document.createElement('div');
+      head.textContent = 'hero-3d · drag the labels to reposition';
+      head.style.cssText = 'margin-bottom:8px;color:#7fd4ff;font-weight:600';
+
+      listEl = document.createElement('pre');
+      listEl.style.cssText = 'margin:0;white-space:pre;user-select:text';
+
+      const btn = document.createElement('button');
+      btn.textContent = 'Copy PEAK_DEFS';
+      btn.style.cssText = [
+        'margin-top:10px', 'cursor:pointer', 'width:100%',
+        'background:rgba(1,165,255,0.15)', 'color:#dff3ff',
+        'border:1px solid rgba(1,165,255,0.5)', 'border-radius:5px',
+        'padding:6px 10px', 'font:inherit',
+      ].join(';');
+      btn.onclick = () => {
+        const text = peakAnchors.map(fmtLine).join('\n');
+        if (navigator.clipboard) navigator.clipboard.writeText(text);
+        btn.textContent = 'Copied ✓';
+        setTimeout(() => { btn.textContent = 'Copy PEAK_DEFS'; }, 1200);
+      };
+
+      box.append(head, listEl, btn);
+      document.body.appendChild(box);
+    }
+    function refresh() {
+      if (listEl) listEl.textContent = peakAnchors.map(fmtLine).join('\n');
+    }
+
+    let dragAnchor = null;
+    function onMove(e) {
+      if (!dragAnchor) return;
+      const hit = screenToTerrain(e.clientX, e.clientY)
+               || screenAtDepth(e.clientX, e.clientY, dragAnchor.pos);
+      dragAnchor.pos.copy(hit);
+      refresh();
+    }
+    function onUp() {
+      if (dragAnchor && dragAnchor.el) dragAnchor.el.style.cursor = 'grab';
+      dragAnchor = null;
+      debugDragging = false;
+      window.removeEventListener('pointermove', onMove);
     }
 
     function activate() {
-      pickedLines.length = 0;
-      nextIdx = 0;
-      if (active) {
-        renderOverlay(`→ click peak for '${PEAK_ORDER[0]}'`);
-        return;
-      }
+      if (active) return;
       active = true;
-      canvas.style.pointerEvents = 'auto';
-      canvas.style.cursor = 'crosshair';
-      canvas.addEventListener('click', onClick);
-      renderOverlay(`→ click peak for '${PEAK_ORDER[0]}'`);
+      for (const a of peakAnchors) {
+        if (!a.el) continue;
+        // override any responsive `display:none` so all six are pickable
+        a.el.style.setProperty('display', 'block', 'important');
+        a.el.style.pointerEvents = 'auto';
+        a.el.style.cursor = 'grab';
+        a.el.addEventListener('pointerdown', (e) => {
+          e.preventDefault();
+          dragAnchor = a;
+          debugDragging = true;
+          a.el.style.cursor = 'grabbing';
+          window.addEventListener('pointermove', onMove);
+          window.addEventListener('pointerup', onUp, { once: true });
+        });
+      }
+      buildOverlay();
+      refresh();
     }
 
     window.addEventListener('keydown', (e) => {
@@ -492,6 +529,10 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   // exactly on the peak.
   const LABEL_HEIGHT_APPROX = 50;
   const LEADER_LINE_H = 28;
+  // A couple of peaks sit low on the ridge where the default short stem
+  // buries the label against the terrain. Give them a taller leader line
+  // so both the label and its "leg" lift clearly above the peak.
+  const LEADER_LINE_OVERRIDES = { kubernetes: 78, vms: 100, networking: 380 };
   function projectPeakLabels() {
     const r = canvas.getBoundingClientRect();
     if (r.width === 0) return;
@@ -500,12 +541,13 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
       projVec.copy(a.pos).project(camera);
       const sx = (projVec.x * 0.5 + 0.5) * r.width;
       const sy = (-projVec.y * 0.5 + 0.5) * r.height;
+      const lineH = LEADER_LINE_OVERRIDES[a.id] || LEADER_LINE_H;
       a.el.style.setProperty('--peak-x', sx + 'px');
       // Label top = peak screen Y minus (line + label height) so the
       // leader-line dot lands precisely on the peak.
-      const topY = sy - LEADER_LINE_H - LABEL_HEIGHT_APPROX;
+      const topY = sy - lineH - LABEL_HEIGHT_APPROX;
       a.el.style.setProperty('--peak-y', topY + 'px');
-      a.el.style.setProperty('--peak-line-h', LEADER_LINE_H + 'px');
+      a.el.style.setProperty('--peak-line-h', lineH + 'px');
     }
     if (!annotationsReady && annotationsEl) {
       annotationsEl.classList.add('peaks-ready');
@@ -551,6 +593,7 @@ import { OutputPass }      from 'three/addons/postprocessing/OutputPass.js';
   const heroEl = document.getElementById('hero');
   if (heroEl && !reduceMotion) {
     heroEl.addEventListener('mousemove', (e) => {
+      if (debugDragging) return;   // freeze camera while dragging a label
       const r = heroEl.getBoundingClientRect();
       target.x = ((e.clientX - r.left) / r.width - 0.5) * 2;
       target.y = ((e.clientY - r.top) / r.height - 0.5) * 2;

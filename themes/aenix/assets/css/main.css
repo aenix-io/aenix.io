@@ -629,22 +629,16 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 @media (max-width: 1280px) {
-  /* Hide the inner pair so they don't crowd the centred title at
-     intermediate widths */
-  .peak--databases,
-  .peak--observability { display: none; }
-}
-@media (max-width: 1024px) {
-  /* Drop the middle pair too — only the outer labels remain */
-  .peak--vms,
-  .peak--networking { display: none; }
-}
-@media (max-width: 820px) {
-  /* No room for any floating annotations on small screens */
+  /* The floating peak labels are anchored to hand-picked 3D coords tuned
+     for full desktop width. Below 1280px (and at tall/narrow aspect ratios)
+     they drift to or past the viewport edges, so show the terrain alone —
+     it reads cleanly on its own. */
   .hero-3d-annotations { display: none; }
 }
-@media (max-width: 768px) {
-  /* On mobile we keep the lighter glows + grid only — skip the 3D scene */
+@media (max-width: 960px) {
+  /* Below 960px the hero collapses to min-height:auto and the copy drops
+     to normal flow, so the full-viewport 3D scene no longer has room — it
+     crowds and overlaps the title. Keep only the lighter glows + grid here. */
   .hero-3d { display: none; }
 }
 
@@ -1004,7 +998,12 @@ img { max-width: 100%; height: auto; display: block; }
   .hero-subtitle { margin-left: auto; margin-right: auto; }
   .hero-cta { justify-content: center; }
   .hero-layout { justify-content: center; }
-  .hero-home { min-height: auto; padding: 4rem 0; }
+  /* Below this width the hero collapses to min-height:auto. The base
+     margin-top:-72px (bleed terrain under the sticky header) and the
+     translateY(-15vh) copy-lift then drag the title up behind the header,
+     so neutralise both — the lift only matters on the full-viewport scene. */
+  .hero-home { min-height: auto; margin-top: 0; padding: 4rem 0; }
+  .hero-content { transform: none; }
   .hero-layout { min-height: auto; }
 }
 
