@@ -1,8 +1,38 @@
 ---
 title: "Ænix Platform Public Cloud Edition"
-description: "Ænix Platform Public Cloud Edition — multi-hypervisor cloud control plane for large public clouds, big banks operating own cloud, large telcos. Multi-region, third-party integration, turnkey portal+billing+payments. Built for scale."
+description: "Turnkey multi-hypervisor public-cloud control plane for large operators, banks, and telcos: multi-region, billing, payments, and a brandable portal."
 type: "page"
 language: "en"
+direct_answer: |
+  **Ænix Platform Public Cloud Edition is a turnkey public-cloud control plane for large operators — public-cloud companies, big banks running their own internal cloud, and national telcos launching or scaling sovereign cloud products. It is built on Cozystack, the open-source CNCF project Aenix created and maintains, and adds a multi-region control plane, full billing back-end and front-end, payment integrations, a brandable customer portal, and operator-grade UX on top. It is multi-hypervisor (native KubeVirt VMs plus integration with existing VMware, OpenStack, OpenNebula, and OpenShift estates) and multi-tenant via the Cozystack Tenant CRD, so operators can extend an existing cloud estate and consolidate gradually rather than rip and replace.**
+quick_facts:
+  - label: "What it is"
+    value: "A turnkey, multi-region public-cloud control plane for large operators — public-cloud providers, banks running their own cloud, and national telcos."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "For"
+    value: "Large public-cloud operators, Tier-1 banks operating their own cloud, and large telcos / national operators."
+  - label: "Architecture"
+    value: "Kubernetes-native, multi-hypervisor (KubeVirt plus VMware / OpenStack / OpenNebula / OpenShift integration), multi-region control plane, multi-tenant via Tenant CRD."
+  - label: "Engagement"
+    value: "Multi-year programs; 3-6 month pilot, then 9-18 months to full multi-region production. Optional Aenix-managed operations under SLA."
+  - label: "Compliance"
+    value: "Pre-validated against DORA, NIS2, ISO 27001, and SOC 2 for regulated operators."
+faq:
+  - q: "How is Public Cloud Edition different from running open-source Cozystack ourselves?"
+    a: "Cozystack is the engine; Public Cloud Edition adds the operator surface a cloud business needs — multi-region control plane, billing back-end and front-end, payment integrations, brandable customer portal, productized installer, enterprise SLA, and dedicated support. Building those from scratch costs years of engineering."
+  - q: "How is Public Cloud Edition different from Enterprise Edition?"
+    a: "Public Cloud Edition is for operators selling cloud as a product (public cloud, a bank's internal cloud, a large telco). Enterprise Edition is for regulated enterprises consuming cloud internally. Same Cozystack foundation, different feature bundle and engagement model."
+  - q: "Can it coexist with our existing VMware or OpenStack estate?"
+    a: "Yes. Public Cloud Edition is designed for multi-hypervisor coexistence and gradual consolidation rather than rip-and-replace, with migration patterns for cohort-based VMware exit and OpenStack consolidation."
+  - q: "What is the typical multi-region pattern?"
+    a: "Two to N+1 regions with tenant-scope policy enforcement, customer-controlled region selection, and a recommended per-region capacity-planning model. Network and identity federation are handled at the platform layer."
+  - q: "Do we need a 24/7 in-house operations team?"
+    a: "No. Public Cloud Edition supports customer-operated and Aenix-managed-operations models. A hybrid split (vendor control plane plus customer data plane) is common in regulated bank deployments."
+  - q: "What does it cost?"
+    a: "Public Cloud Edition is scoped as a multi-year program and priced on request via a discovery call. The standalone Ænix Platform pricing tiers (Basic, Standard, Plus, Enterprise) sit below this operator-scale engagement."
 ---
 
 **A turnkey public-cloud control plane for large operators — public-cloud companies, big banks running own cloud, national telcos. Multi-hypervisor, multi-region, integrates with third-party infrastructure. Built for data centres and cloud providers launching or scaling public clouds at hyperscaler-adjacent scale.**

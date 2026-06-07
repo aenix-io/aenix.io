@@ -1,6 +1,6 @@
 ---
 title: "Financial-services cloud platforms — what TLPT readiness actually looks like in 2026"
-description: "Long-form companion to the financial-services industry page. For platform engineers at banks, insurers, payment institutions translating DORA's TLPT obligations, supplier-chain transparency, and exit-readiness into architecture that survives a real supervisor cycle."
+description: "What TLPT readiness under DORA actually looks like in 2026 for platform engineers at banks, insurers, and payment institutions facing a real supervisor cycle."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

@@ -1,6 +1,6 @@
 ---
 title: "Public-sector sovereign cloud — from procurement framework to running platform"
-description: "Long-form companion to the public-sector industry page. For procurement leads, IT directors, and platform engineers at government and quasi-public organisations translating sovereignty mandates and procurement frameworks into a running cloud platform."
+description: "Long-form companion to the public-sector industry page: how procurement leads and IT directors turn sovereignty mandates into a running cloud platform."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

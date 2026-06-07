@@ -3,6 +3,36 @@ title: "VMware migration — exit VCF without breaking the application"
 description: "Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on..."
 related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/aenix-platform/", "/products/cozystack", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
 language: "en"
+direct_answer: |
+  **A VMware migration in the post-Broadcom era is a planned project to move workloads off VMware Cloud Foundation (VCF), vSphere, and vCloud Director onto infrastructure the organization controls. It suits enterprises, hosting providers, and regulated operators facing Broadcom subscription increases, sovereignty rules (DORA, NIS2), or repatriation goals. Aenix runs these migrations end to end — inventory and workload classification, destination architecture, cohort-based cutover with parallel-run validation, and VMware decommission. The destination Aenix typically recommends is Cozystack, an Apache 2.0 CNCF project running VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking and LINSTOR storage. Done well, a structured migration produces a platform the customer owns and a 30-60% cost reduction on workloads that move.**
+quick_facts:
+  - label: "What it is"
+    value: "An end-to-end project to move workloads off VMware VCF / vSphere / vCloud Director onto customer-controlled infrastructure, typically Cozystack."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Enterprises exiting VCF, hosting providers exiting VMware Cloud Director, and operators driven by Broadcom pricing, DORA / NIS2 sovereignty rules, or cloud repatriation."
+  - label: "Engagement timeline"
+    value: "Assessment in 14-28 days; a 100-VM estate typically completes in 8-12 months, a 1000-VM estate in 18-24 months."
+  - label: "Migration method"
+    value: "Cohort-based cutover with VMware running in parallel until validation; KubeVirt CDI for image conversion and automated Windows VM cleanup."
+  - label: "Destination platform"
+    value: "Cozystack default — KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
+faq:
+  - q: "Can we keep VMware running during the migration?"
+    a: "Yes, that is the standard pattern. VMware and the destination platform run in parallel, and workloads migrate cohort by cohort with validation before each cutover, so there is no big-bang weekend move."
+  - q: "What if our VCF commitments lock us in for years?"
+    a: "Cohort sequencing is aligned with subscription expirations, so workloads move as commitments lapse. The plan respects what is contractually paid for and avoids the final renewal."
+  - q: "Do you support Windows VMs?"
+    a: "Yes. KubeVirt runs Windows VMs, and Aenix uses automated VMware Tools cleanup before the first KubeVirt boot to avoid driver conflicts."
+  - q: "What platform do you migrate to?"
+    a: "Cozystack by default — an Apache 2.0 CNCF project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking, LINSTOR storage, and Tenant CRD multi-tenancy. Other destinations are used where technically appropriate."
+  - q: "How much can a VMware migration save?"
+    a: "Done well, a structured migration produces a 30-60% cost reduction on workloads that move, driven by removing per-core VMware licensing. Aenix models the delta with honest TCO before committing, using the VMware cost calculator."
+  - q: "How does Aenix engage on a VMware migration?"
+    a: "It starts with a 14-28 day assessment (estate inventory, destination architecture, workload classification, cutover sequencing), followed by a 6-18 month implementation phase with Aenix engineers integrated into your team, and optional managed Cozystack operations afterward."
 ---
 
 <!-- BLOCK 1: HERO -->

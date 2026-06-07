@@ -1,6 +1,6 @@
 ---
 title: "SRE as a product discipline — what an SRE engagement actually changes"
-description: "Long-form companion to the SRE consulting services page. For engineering leaders deciding whether to embed SRE inside product teams, centralize SRE as a function, or buy SRE engineering as an engagement — what each option actually delivers and how to measure whether SRE practice is real or theatre."
+description: "Companion to the SRE consulting page: embed SRE in product teams, centralize it as a function, or buy an engagement — what each delivers and how to measure it."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

@@ -1,6 +1,6 @@
 ---
 title: "ISP Edition economics — when a turnkey cloud-in-a-box pays back for hosting providers"
-description: "A unit-economics walkthrough for hosting providers evaluating Ænix Platform ISP Edition: ARPU expectations, infrastructure cost per tenant, platform-team capacity, payback profile, and where the model breaks."
+description: "Unit economics of Ænix Platform ISP Edition for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

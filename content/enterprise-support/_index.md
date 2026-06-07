@@ -1,6 +1,6 @@
 ---
 title: "Enterprise support"
-description: "Enterprise support for Ænix Platform deployments and Cozystack-running organizations. SLA tiers, dedicated channels, compliance certification support. From Aenix — Cozystack maintainers."
+description: "Enterprise support for Ænix Platform and Cozystack from the engineers who maintain it: SLA tiers, dedicated channels, and compliance support."
 language: "en"
 ---
 

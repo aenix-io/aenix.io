@@ -10,6 +10,38 @@ related_pages:
   - /products/aenix-platform/ai-ml-edition/
   - /products/cozystack
 language: "en"
+direct_answer: |
+  **A cloud platform for energy operators is a sovereign, NIS2-aligned infrastructure that runs consistently across headquarters, regional control centres, and substation edge under one Kubernetes operational model. It serves electricity, gas, oil, and heating operators classified as essential entities under NIS2 Annex I, who must run grid-data analytics, AI forecasting, and OT systems on critical-infrastructure that depreciates over decades. Aenix applies this pattern using Cozystack, an open-source CNCF platform that unifies virtual machines and containers on one Kubernetes API, supports air-gapped OT boundaries, and runs on customer hardware with customer-controlled keys. Aenix sells the productized Ænix Platform plus platform-engineering services on top, and is currently piloting Cozystack with an energy operator for grid-data analytics and AI-driven forecasting.**
+
+quick_facts:
+  - label: "What it is"
+    value: "A sovereign, NIS2-aligned cloud platform for energy operators spanning HQ, regional control centres, and substation edge under one Kubernetes operational model"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Electricity, gas, oil, and district-heating operators classified as NIS2 essential entities under Annex I"
+  - label: "Key capability"
+    value: "Multi-site architecture (central control + regional sites + substation edge) with air-gapped OT boundary and AI infrastructure for grid forecasting"
+  - label: "Regulatory scope"
+    value: "NIS2 Article 21 risk management and Article 23 incident reporting, plus member-state sectoral overlays (BSI, ANSSI, NCSC)"
+  - label: "Engagement timeline"
+    value: "Platform Readiness Assessment first; Phase 2 implementation typically spans 12-30 months for a multi-site energy platform"
+
+faq:
+  - q: "Is energy in scope for NIS2?"
+    a: "Yes. Energy is an essential-entity sector under NIS2 Annex I, covering electricity (production, transmission, distribution), gas, oil, district heating and cooling, and hydrogen. Article 21 risk-management obligations and Article 23 incident-reporting requirements apply to operators in these categories."
+  - q: "Does Cozystack support air-gapped deployments for OT systems?"
+    a: "Yes. Cozystack supports air-gapped deployments that are documented and tested. For energy operators, this allows a restricted or fully isolated OT boundary for SCADA, DCS, and RTU systems while IT and analytics workloads run under the same Kubernetes operational model."
+  - q: "How does the platform run at substations and remote generation sites?"
+    a: "The architecture uses a multi-site pattern: central control plus regional aggregation plus a substation edge tier, all under one Kubernetes API. Edge sites run local compute with central policy and tolerate intermittent connectivity, which suits distributed generation and microgrids."
+  - q: "Why does an open-source platform suit grid infrastructure?"
+    a: "Grid hardware depreciates over decades, so the platform must outlast multiple hardware generations. Cozystack is Apache 2.0 with CNCF community governance and runs on customer hardware, avoiding per-core licensing and vendor lock-in across decade-plus operational planning horizons."
+  - q: "What does Aenix sell, and how is it different from Cozystack?"
+    a: "Cozystack is the open-source CNCF platform foundation. Aenix sells Ænix Platform, a productized commercial offering based on Cozystack, plus platform-engineering services. Platform pricing tiers are Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, and Enterprise (custom)."
+  - q: "How does an engagement start?"
+    a: "It starts with a Platform Readiness Assessment that maps NIS2 and sectoral compliance gaps, multi-site architecture, OT/IT boundary design, smart-grid consolidation, and AI infrastructure for grid use cases. Phase 2 implementation typically spans 12-30 months for a multi-site energy platform."
 ---
 
 **Energy operators in 2026 face a specific combination of pressures: NIS2 essential-entity classification (energy is in scope), sovereign-cloud requirements for critical-infrastructure data, edge compute at substations and generation sites, AI-driven grid optimization and forecasting, and the operational reality that hardware refresh cycles for grid infrastructure are measured in decades, not years. The architectural answer is a coherent platform that runs at HQ, regional control centres, and substation edge — under one operational model with NIS2-aligned controls.**

@@ -1,7 +1,39 @@
 ---
 title: "Ænix Platform"
-description: "Ænix Platform — turnkey cloud-in-a-box from Aenix, based on open-source Cozystack. Five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML. Hosting panel, billing, portals, payments, support — ready to install and operate."
+description: "Ænix Platform: turnkey cloud-in-a-box built on open-source Cozystack. Five editions with hosting panel, billing, portals, payments, and enterprise support."
 language: "en"
+direct_answer: |
+  **Ænix Platform is a turnkey "cloud-in-a-box" from Aenix, the open-core company behind Cozystack. It packages the open-source Cozystack project (a CNCF Sandbox project, Apache 2.0) and adds the commercial layer an operator needs to run a real cloud business: a hosting panel, user/admin/support portals, service-creation wizards, full billing (backend and frontend), payment and WHMCS integrations, a branded customer console, enterprise SLA, and dedicated support. It is offered in five editions matching five buyer profiles: Public Cloud, ISP, Enterprise, IDP, and AI/ML. Cozystack provides the Kubernetes-native engine (KubeVirt for VMs and containers, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy); Aenix sells the productized platform and services on top.**
+
+quick_facts:
+  - label: "What it is"
+    value: "A turnkey cloud-in-a-box that productizes open-source Cozystack with portals, billing, payments, and enterprise support for cloud operators."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Editions"
+    value: "Five — Public Cloud, ISP, Enterprise, IDP, and AI/ML — same product, different feature bundles per buyer profile"
+  - label: "Architecture"
+    value: "Kubernetes-native: Talos + KubeVirt (VMs and containers on one Kubernetes API) + Cilium (eBPF) + LINSTOR/DRBD + Tenant CRD multi-tenancy, on customer-controlled hardware"
+  - label: "Engagement"
+    value: "License plus services bundle; ISP Edition entry from EUR 1.3k/month support tier, with multi-million-euro Public Cloud and Enterprise builds"
+  - label: "Compliance"
+    value: "Bundles pre-validated against DORA and NIS2 architecture, aligned with ISO 27001 and SOC 2"
+
+faq:
+  - q: "What does Ænix Platform add over open-source Cozystack?"
+    a: "Cozystack is the Kubernetes-native engine. Ænix Platform adds the commercial operator layer: hosting panel, user/admin/support portals, service-creation wizards, full billing (backend and frontend), branded customer console, usage charts, payment and WHMCS integrations, a productized installer, enterprise SLA, dedicated support, and compliance-ready bundles."
+  - q: "Can I run Cozystack myself instead of buying Ænix Platform?"
+    a: "Yes. Cozystack is Apache 2.0 and anyone can run it free. Aenix is the original maintainer and is often consulted on architecture by self-running teams. Ænix Platform is for organizations that need a turnkey cloud with billing, portals, payments, and support without building it in-house."
+  - q: "How is Ænix Platform priced?"
+    a: "Pricing depends on edition and scope. The ISP Edition support tier starts from EUR 1.3k/month. Public Cloud and Enterprise full builds are typically multi-million-euro multi-year programs. Other editions are priced on request via a discovery call."
+  - q: "Which edition is right for my organization?"
+    a: "Public Cloud Edition for large public clouds, banks, and telcos; ISP Edition for hosting providers, MSPs, and regional clouds; Enterprise Edition for regulated banks, insurers, and public sector; IDP Edition for product teams investing in developer experience; AI/ML Edition for GPU-heavy and AI-native companies."
+  - q: "Is Ænix Platform built on a CNCF project?"
+    a: "Yes. The Cozystack foundation is a CNCF project (currently CNCF Sandbox, with CNCF Incubating expected late summer 2026), a CNCF-Certified Kubernetes Distribution, and meets OpenSSF Best Practices. Ænix Platform inherits this lineage and adds enterprise productization."
+  - q: "What technology underpins Ænix Platform?"
+    a: "Cozystack: a Kubernetes-native stack using KubeVirt to run virtual machines and containers on a single Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD replicated storage, and a Tenant CRD for multi-tenancy. It runs on customer-controlled hardware, including Talos Linux nodes."
 ---
 
 **Ænix Platform is a turnkey cloud-in-a-box. It is based on the open-source Cozystack project we created and maintain (CNCF project, Apache 2.0), and adds everything an operator needs to run a real cloud business: hosting panel, user / admin / support portals, service-creation wizards, full billing (backend + frontend), payment integrations, WHMCS integration, and enterprise SLA. Five editions match five buyer profiles. Install. Plug in users. Start operating.**

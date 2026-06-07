@@ -8,6 +8,36 @@ related_pages:
   - /products/aenix-platform/idp-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **Aenix DevOps consulting is a hands-on engineering engagement, not a slide-deck advisory: senior engineers who build and operate platforms in production work alongside an internal team to install platform-level CI/CD and GitOps (Argo CD or Flux), infrastructure-as-code (Terraform, OpenTofu, Crossplane), observability (VictoriaMetrics and VictoriaLogs), and SRE practices, leaving written runbooks the customer owns. It fits organizations with working CI/CD but reactive ops, fragmented tooling, or external pressure such as a regulator, scale, or technical debt. Aenix is the team behind Cozystack, an Apache 2.0 CNCF project, so the practices installed are sustainable independently of Aenix and progress is measured in DORA metrics and SLO compliance rather than workshop output.**
+quick_facts:
+  - label: "What it is"
+    value: "A senior-engineer DevOps consulting engagement that installs production CI/CD, IaC, observability, and SRE practices and transfers ownership to the internal team"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Engagement modes"
+    value: "DevOps maturity assessment (14-28 days), transformation (3-9 months), or managed DevOps-as-a-service with a documented exit path"
+  - label: "Who it is for"
+    value: "Service providers, regulated enterprises, AI/GPU operators, and telecom operators whose CI/CD works but ops is reactive or tooling is fragmented"
+  - label: "Outcome measured by"
+    value: "DORA metrics (deployment frequency, lead time, change-failure rate, time-to-restore), SLO compliance, and time-to-environment"
+  - label: "Tooling installed"
+    value: "Argo CD or Flux GitOps, Terraform / OpenTofu / Crossplane IaC, VictoriaMetrics + VictoriaLogs observability"
+faq:
+  - q: "How is Aenix DevOps consulting different from Big-4 DevOps consulting?"
+    a: "Big-4 engagements are typically delivered by management consultants and shaped by partner-channel economics, often producing a transformation roadmap rather than working systems. Aenix engineers do the work themselves, calibrated against platforms they actually operate, with no hyperscaler or vendor partnerships influencing recommendations."
+  - q: "Does the engagement cover SRE work as well as DevOps?"
+    a: "Yes. SRE practices such as SLOs, error budgets, incident response, blameless post-mortems, and capacity planning are part of the scope. Aenix does not draw a hard line between DevOps and SRE in its services."
+  - q: "What happens if our team cannot operate what was built?"
+    a: "Three options are available: extend the engagement to grow internal capacity, move to an optional managed-services arrangement, or run a hybrid where Aenix operates critical systems while the internal team owns the rest. The decision is made during the assessment phase."
+  - q: "Will you work with our existing tools or force a rip-and-replace?"
+    a: "Usually Aenix extends what works and replaces only what does not, with named justification in the report. Aenix sells no licensed tooling and does not replace tools simply to sell new ones."
+  - q: "How long does an engagement take and how does it start?"
+    a: "Most engagements start with a 14-28 day DevOps maturity assessment, followed by a 3-9 month transformation phase, with an optional ongoing operate phase. It begins with a free 30-minute discovery call to confirm fit and scope."
+  - q: "Why is an open-source foundation relevant to DevOps consulting?"
+    a: "Cozystack is an Apache 2.0 CNCF project, so the CI/CD, IaC, and observability practices Aenix installs run on open standards and tooling with no per-core licensing. That means the resulting DevOps function is sustainable without continued dependence on Aenix."
 ---
 
 <!-- BLOCK 1: HERO -->

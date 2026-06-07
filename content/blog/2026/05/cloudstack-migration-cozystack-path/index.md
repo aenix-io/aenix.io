@@ -1,6 +1,6 @@
 ---
 title: "CloudStack migration to Cozystack — the modernization path for established service providers"
-description: "Long-form companion to the CloudStack migration hub. For service providers running Apache CloudStack who are evaluating Cozystack as a Kubernetes-native modernization target — covering architectural mapping, migration phases, and where the trade-offs differ from VMware or OpenStack migrations."
+description: "How service providers can modernize Apache CloudStack to Cozystack as a Kubernetes-native target, with architecture mapping, migration phases, and trade-offs."
 date: 2026-05-11
 author: "Aenix Team"
 type: "tutorial"

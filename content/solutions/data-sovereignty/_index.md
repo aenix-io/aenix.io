@@ -11,6 +11,36 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **Data sovereignty for cloud infrastructure means proving, with evidence, that data lives in the jurisdiction a regulator requires at every layer — production storage, replicas, backups, observability, and CI/CD artifacts — with encryption keys held by the data owner and supplier dependencies transparent past the first hop. It is the operational requirement behind DORA, NIS2, GDPR, sectoral data-residency rules, and EU member-state sovereign-cloud mandates. Aenix runs a structured engagement that maps where each data class actually lives, identifies gaps, and defines sovereignty-by-design for regulated organizations. Aenix is the company behind Cozystack, an Apache 2.0 CNCF project that runs on the customer's chosen hardware in the chosen jurisdiction, with the customer holding cluster-level access — making sovereignty structural rather than contractual.**
+quick_facts:
+  - label: "What it is"
+    value: "A structured engagement to take a data-sovereignty position from claim to demonstrable architecture across every data layer"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Banks, insurers, public-sector and quasi-public bodies, healthcare, telecom and critical-infrastructure operators, and multinationals under data-localization rules"
+  - label: "Engagement timeline"
+    value: "14-day focused scope or 28-day full sovereignty plus adjacent regulatory overlap; fixed-price, single invoice, mutual NDA at kickoff"
+  - label: "Standards covered"
+    value: "DORA, NIS2, GDPR, sectoral data-residency rules, and EU member-state and non-EU sovereign-cloud mandates"
+  - label: "Delivered by"
+    value: "Aenix engineers across the EU, DACH, and Central Asia, with no hyperscaler commercial alignment"
+faq:
+  - q: "Is data sovereignty the same as data residency?"
+    a: "No. Data residency is necessary but not sufficient. Sovereignty also requires control of encryption keys, supplier-chain transparency past the first hop, audit-readiness, and operational independence from a single provider. A workload can be in the right region and still fail the sovereignty test."
+  - q: "Do we need to go fully on-prem to be sovereign?"
+    a: "Not necessarily. The right answer depends on the data class, the regulator, and operational realities. Some workloads achieve sovereignty under hyperscaler sovereign-cloud arrangements with caveats; others require dedicated infrastructure under the customer's control. The engagement determines which is which per data class."
+  - q: "How does this differ from a Big-4 sovereignty assessment?"
+    a: "Big-4 advisory is usually delivered by management consultants, handed off to a separate implementation team, and shaped by the firm's hyperscaler partnerships. Aenix engineers do both the assessment and the implementation and are not commercially tied to any provider, so the report's bias is toward what can be demonstrated and operated under your governance."
+  - q: "What does the engagement produce?"
+    a: "A data-residency map per data class (production, backup, observability, CI/CD), an encryption and key-custody review, a supplier-chain map traced to the second hop, an audit-readiness assessment, and an architecture-level remediation plan with effort estimates and regulatory-deadline alignment."
+  - q: "Why does Cozystack help with data sovereignty?"
+    a: "Cozystack is an Apache 2.0 CNCF project that runs KubeVirt VMs and containers on one Kubernetes API on the customer's chosen hardware in the chosen jurisdiction, with the customer holding cluster-level access and customer-controlled keys at every data layer. There is no per-core licensing and no provider lock-in, so sovereignty is structural rather than contractual."
+  - q: "Can we run this under a public-sector procurement process?"
+    a: "Yes. Aenix accepts RFI / RFP through standard procurement channels in EU member states and Kazakhstan. The 30-minute discovery call covers procedural fit and confirms which 14-day or 28-day variant matches your situation."
 ---
 
 <!-- BLOCK 1: HERO -->

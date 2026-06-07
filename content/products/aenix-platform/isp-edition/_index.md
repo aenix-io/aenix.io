@@ -1,8 +1,38 @@
 ---
 title: "Ænix Platform ISP Edition"
-description: "Ænix Platform ISP Edition — turnkey cloud platform for small/mid hosting providers, MSPs, regional clouds, data centres. WHMCS-integrated billing, tenant lock/suspension, migration from VMware/OpenStack/Virtuozzo. From €1.3k/month."
+description: "Ænix Platform ISP Edition: turnkey Kubernetes-native cloud platform for hosting providers and MSPs, with WHMCS billing and VMware/OpenStack migration."
 type: "page"
 language: "en"
+direct_answer: |
+  **Ænix Platform ISP Edition is a turnkey, Kubernetes-native cloud platform for small and mid-size hosting providers, MSPs, regional cloud providers, and data centres that want to launch or modernize a multi-tenant cloud product without building it from scratch. It is the productized, supported distribution of Cozystack (an Apache 2.0 CNCF project created and maintained by Aenix) and adds the commercial surfaces a hosting business needs: WHMCS-integrated billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage, and GPU workloads. Aenix delivers it with migration tooling and expertise from VMware, OpenStack, Virtuozzo, and OpenNebula, getting providers production-ready in weeks rather than months.**
+quick_facts:
+  - label: "What it is"
+    value: "Turnkey, supported cloud-in-a-box for hosting providers, MSPs, regional clouds, and data centres, built on Cozystack with WHMCS billing and a white-label portal."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Small and mid-size hosting providers, MSPs, regional cloud providers, and data centres modernizing or expanding a cloud product."
+  - label: "Replaces"
+    value: "OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, and custom in-house hosting panels."
+  - label: "Architecture"
+    value: "Kubernetes-native: KubeVirt (VMs and containers on one Kubernetes API), Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy, plus cozyportal, VictoriaMetrics, and VictoriaLogs."
+  - label: "Time to live"
+    value: "Production-ready in weeks via the productized installer and migration tooling; entry support tier from EUR 1.3k/month."
+faq:
+  - q: "How is ISP Edition different from running open-source Cozystack ourselves?"
+    a: "Cozystack is the engine; ISP Edition adds the commercial surfaces a hosting business needs: WHMCS integration, full billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, migration tooling, and an enterprise support tier from EUR 1.3k/month."
+  - q: "Can we keep our own billing system instead of WHMCS?"
+    a: "Yes. ISP Edition supports two integration modes: WHMCS as the customer-facing front with Cozystack as the substrate, or cozyportal as the front with WHMCS as the billing back-end. Custom billing integrations are also supported."
+  - q: "What does ISP Edition replace?"
+    a: "It replaces OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, and custom in-house hosting panels, consolidating compute, Kubernetes, managed databases, S3 storage, GPU, billing, and the customer portal under one Kubernetes-native platform."
+  - q: "How long does migration from VMware or OpenStack take?"
+    a: "The productized installer brings ISP Edition live in weeks. End-customer migration is workload-dependent; a typical pattern is a parallel run with cohort-based migration over several months for mid-size hosting estates, delivered with Aenix tooling and runbooks."
+  - q: "Does ISP Edition support white-label and multi-tier reseller models?"
+    a: "Yes. cozyportal is fully white-labelable per provider (colors, logo, domain), and multi-tier reseller models are supported (Aenix to MSP to MSP customers). A partner program offers deal registration, sales kit, pre-sales support, and training."
+  - q: "What hardware does ISP Edition need?"
+    a: "Bare-metal servers, such as Hetzner, OVH, your own data centre, or colocation. Cozystack is hardware-agnostic, and ISP Edition adds operations runbooks for typical hosting hardware. Sizing is scoped on a discovery call."
 ---
 
 **A modern alternative to OpenStack built for small and mid-size hosting providers, MSPs, regional cloud providers, and data centres. Turnkey cloud-in-a-box: hosting panel, billing, customer portal, payments, support — install, plug in users, start operating. WHMCS-integrated. Production-ready in weeks.**

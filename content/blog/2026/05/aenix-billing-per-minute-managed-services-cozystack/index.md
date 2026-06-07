@@ -1,6 +1,6 @@
 ---
 title: "Ænix Billing — per-minute usage-based billing for Managed PostgreSQL, Redis, Kafka and ClickHouse on Cozystack"
-description: "Ænix Billing closes the gap between hosting managed Postgres / Redis / Kafka / ClickHouse on Cozystack and charging tenants per-minute, by CPU, memory and disk — through a Kubernetes-native billing API. No spreadsheets, no quarterly reconciliation."
+description: "Ænix Billing brings AWS-style per-minute, usage-based billing to managed Postgres, Redis, Kafka and ClickHouse on Cozystack via a Kubernetes-native API."
 slug: "aenix-billing-per-minute-managed-services-cozystack"
 date: "2026-05-13"
 author: "Timur Tukaev"

@@ -10,6 +10,36 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **DORA compliance for cloud infrastructure means proving that your cloud architecture satisfies the EU Digital Operational Resilience Act, in force since 17 January 2025, across ICT third-party risk (Articles 28-30), concentration risk, tested exit-readiness (Article 28(8)), and operational-resilience testing (Title IV). It applies to banks, insurers, investment and payment firms, crypto-asset service providers, and the ICT third parties serving them. Aenix, the company behind the CNCF project Cozystack, runs a DORA-aligned platform readiness engagement that produces a control-level map of what an entity can demonstrate today, a concentration-risk picture mapped to the second supplier hop, exit-feasibility analysis, and an architecture-level remediation plan, delivered by engineers with no hyperscaler commercial bias.**
+quick_facts:
+  - label: "What it is"
+    value: "A DORA-aligned platform readiness engagement that checks cloud architecture against ICT third-party risk, concentration risk, exit-readiness, and operational-resilience testing."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Regulation"
+    value: "EU Digital Operational Resilience Act (DORA), in force since 17 January 2025; key articles 28-30 and Title IV"
+  - label: "Who it is for"
+    value: "Banks, insurers, investment and payment firms, crypto-asset service providers, and ICT third-party providers serving in-scope financial entities in the EU and DACH"
+  - label: "Engagement timeline"
+    value: "14-day (focused DORA scope) or 28-day (DORA plus adjacent NIS2 / GDPR mapping); fixed-price, mutual NDA at kickoff"
+  - label: "Delivered by"
+    value: "Aenix engineers, the team behind Cozystack, not management consultants; no commercial tie to AWS, Azure, or GCP"
+faq:
+  - q: "Is Aenix a DORA-certified provider?"
+    a: "There is no DORA certification stamp by design. DORA defines obligations a financial entity must satisfy; how it demonstrates satisfaction is open. Aenix is an EU-based ICT services provider running DORA-aligned engagements, and one deliverable is a documentation pack that supports your supervisory dialog."
+  - q: "What does DORA require of cloud architecture?"
+    a: "Four substantive areas: ICT third-party risk transparency including sub-contractors (Articles 28-30), a documented and increasingly tested exit plan for critical-function arrangements (Article 28(8)), operational-resilience testing run against live architecture (Title IV), and data residency, supervisory access, and customer-controlled encryption keys at every layer."
+  - q: "How does this differ from a Big-4 DORA assessment?"
+    a: "Big-4 assessments are typically delivered by consultants, handed to a separate implementation team, and shaped by hyperscaler partnerships. Aenix engineers do the assessment and the implementation, with no commercial tie to any hyperscaler, so effort estimates are calibrated against work actually shipped."
+  - q: "What does the engagement deliver?"
+    a: "A DORA control-level map of what you can demonstrate today, a concentration-risk picture mapped to the second supplier hop, exit-feasibility analysis with time-to-exit estimates, resilience-testing readiness, and an architecture-level remediation plan with effort estimates. Delivered as a fixed-price 14-day or 28-day engagement."
+  - q: "Will Aenix recommend Cozystack at the end?"
+    a: "The report names the recommended architecture with reasoning. Where a Cozystack-based architecture fits DORA's substantive requirements better than the alternative, the report explains why with named controls. Where it does not, Aenix says so. Cozystack is Apache 2.0 with no per-core licensing."
+  - q: "How does this relate to NIS2 and GDPR work?"
+    a: "The 28-day variant maps the same controls back to NIS2 where applicable to your sectoral scope and to GDPR. The architecture surface that satisfies DORA's substantive requirements largely also satisfies NIS2's, so the report does that mapping rather than asking you to repeat the work."
 ---
 
 <!-- BLOCK 1: HERO -->

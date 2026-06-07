@@ -10,6 +10,36 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **A sovereign cloud platform for the public sector is infrastructure that government, public administration, and quasi-public bodies own and control end to end, so regulated and classified data stays within the jurisdiction mandated by procurement and law. Aenix builds these platforms for EU member states and Central Asia on Cozystack, its open-source Apache 2.0 foundation that runs virtual machines and containers on one Kubernetes API. Engagements typically start with a Platform Readiness Assessment covering sovereignty, NIS2 and sectoral regulator gaps, procurement-process readiness, and capability transfer, then move to hardware-to-platform-to-operations implementation. Air-gapped deployments, customer-controlled encryption keys, and knowledge handover to in-house teams are first-class deliverables, and Aenix responds to RFI and RFP through standard government procurement channels.**
+quick_facts:
+  - label: "What it is"
+    value: "A customer-owned, audit-ready sovereign cloud platform for public-sector and quasi-public organizations, built on the open-source Cozystack foundation."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Government IT agencies, public administration, and quasi-public infrastructure operators (transport, energy, water) across the EU and Central Asia, including NIS2 essential entities."
+  - label: "Standards and regulations"
+    value: "NIS2 (essential-entity scope), data-localization and procurement-mandated sovereignty rules; Cozystack is a Kubernetes Certified Distribution following OpenSSF Best Practices."
+  - label: "Key capability"
+    value: "Air-gapped deployments and customer-controlled encryption keys; KubeVirt VMs plus containers, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant-CRD multi-tenancy."
+  - label: "Engagement model"
+    value: "Platform Readiness Assessment first, then end-to-end hardware-to-platform-to-operations implementation with runbooks and capability transfer to in-house teams."
+faq:
+  - q: "Does Aenix respond to public-sector RFI and RFP through official procurement portals?"
+    a: "Yes. Aenix accepts RFI and RFP through standard government channels, including goszakup.gov.kz, mitwork.kz, zakup.sk.kz and the Unified Procurement Platform in Kazakhstan, and TED plus national e-procurement portals in EU member states. Responses cover company profile, references where permissions allow, technical compliance, and pricing."
+  - q: "Can the platform run fully air-gapped for classified or sensitive data?"
+    a: "Yes. Cozystack supports air-gapped deployments for the most sensitive workloads, and the Ænix Platform Enterprise Edition adds strict customer-controlled encryption keys, so data classes that cannot leave the perimeter remain in jurisdiction at every layer."
+  - q: "How does this help with NIS2 compliance?"
+    a: "Public administration and quasi-public infrastructure operators in transport, energy, and water are commonly in scope as NIS2 essential entities. Aenix engagements include a regulator-gap workstream against NIS2 and sectoral requirements, and the platform is designed to be audit-ready for supervisor inspection."
+  - q: "Is there proprietary lock-in?"
+    a: "No. The foundation is Cozystack, an Apache 2.0 CNCF project with no per-CPU or per-core licensing. The architecture is source-available for evaluation, which avoids the proprietary lock-in that often disqualifies vendors in public-sector tenders."
+  - q: "Can our in-house team operate the platform after the build?"
+    a: "Yes. Capability transfer is a primary deliverable. Phase 2 implementation runs hardware-to-platform-to-operations with a documented exit path, including knowledge handover and runbooks, so the customer team operates the platform independently."
+  - q: "What does Aenix sell on top of the open-source project?"
+    a: "Aenix sells the Ænix Platform, a productized commercial offering based on Cozystack, plus services such as the Platform Readiness Assessment and implementation. Platform pricing tiers are Basic at $1,250/mo (10 nodes), Standard at $3,000, Plus at $5,500, and Enterprise Custom."
 ---
 
 **Public-sector and quasi-public organizations face a particular combination of constraints in 2026: procurement-mandated sovereignty (EU member states, Kazakhstan, several APAC jurisdictions), NIS2 compliance (essential entity scoping), data-localization rules, and increasing AI workload pressure on data classes that cannot leave the perimeter. The architectural answer is structurally sovereign, customer-controlled, and audit-ready — built on infrastructure the organization actually owns.**

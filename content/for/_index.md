@@ -1,6 +1,6 @@
 ---
 title: "By role — find the Aenix entry point for your job"
-description: "Role-specific entry points to Aenix. Whether you run infrastructure, platform engineering, cloud, alliances, compliance, or engineering — start where your problem lives."
+description: "Role-specific entry points to Aenix — infrastructure, platform engineering, cloud, alliances, compliance or engineering. Start where your problem lives."
 type: "page"
 language: "en"
 images: ["img/og/og-for.png"]

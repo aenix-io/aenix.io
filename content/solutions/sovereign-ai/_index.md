@@ -10,6 +10,36 @@ related_pages:
   - /products/aenix-platform/ai-ml-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **Sovereign AI infrastructure runs GenAI, inference, fine-tuning, and RAG on hardware the customer owns or controls, in the customer's chosen jurisdiction, under the customer's encryption keys — with model weights, prompts, completions, and embeddings never leaving the perimeter. It is built for regulated organizations (financial services, healthcare, public sector) and AI/GPU operators whose data class, regulator, or inference economics make hyperscaler AI services unviable. Aenix designs, builds, and operates these platforms on Cozystack, an Apache 2.0 CNCF project that combines KubeVirt VMs and Kubernetes inference workloads on one API, with NVIDIA GPU scheduling (MIG, time-slicing, passthrough, vGPU). Aenix has no model-provider bias and recommends the open-weight model — Llama, Mistral, Qwen, DeepSeek, Phi — that fits the data class and economics.**
+quick_facts:
+  - label: "What it is"
+    value: "AI inference, fine-tuning, and RAG running on customer-controlled hardware, in the customer's jurisdiction, under the customer's keys, with data never leaving the perimeter"
+  - label: "Who it's for"
+    value: "Regulated financial services, healthcare, public sector, and AI/GPU operators where data class, regulator, or inference economics rule out hyperscaler AI services"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Platform"
+    value: "Cozystack — KubeVirt for VMs and Kubernetes for inference on one API; NVIDIA GPU scheduling via MIG, time-slicing, passthrough, and vGPU"
+  - label: "Validated GPUs"
+    value: "NVIDIA A100, H100, H200, L40S, and Blackwell; specific model-to-hardware fit established during the assessment"
+  - label: "Engagement"
+    value: "14- or 28-day fixed-price Platform Readiness Assessment, then Aenix-delivered Phase 2 implementation (typically 3-9 months); air-gapped deployment supported"
+faq:
+  - q: "Is sovereign AI the same as private AI?"
+    a: "No. Private AI is used both for SaaS endpoints with a privacy clause and for true on-prem deployments. Sovereign AI specifically requires the model running on customer hardware, data staying inside the customer perimeter, and the platform operated under customer governance."
+  - q: "Which open-weight LLMs does Aenix support?"
+    a: "The current production-ready landscape includes Llama, Mistral, Qwen, DeepSeek, Phi, and Gemma, plus specialized code, vision, and embedding models. Specific selection happens during the assessment based on data class, language requirements, and inference economics."
+  - q: "Does sovereign AI cover training, or only inference?"
+    a: "Both. Inference is the more common entry point; most regulated organizations start there and add fine-tuning of open-weight models later. Full pre-training of frontier models is rare in this segment."
+  - q: "Which GPUs are validated for the platform?"
+    a: "NVIDIA A100, H100, H200, L40S, and Blackwell. Container GPU workloads use MIG, time-slicing, or passthrough; VM-based GPU workloads use NVIDIA vGPU. Specific model-to-hardware fit is established during the assessment."
+  - q: "Can the platform run air-gapped?"
+    a: "Yes. Air-gapped, restricted-egress deployment is supported for public-sector classified, defence-adjacent, and critical-infrastructure workloads where the regulator requires it."
+  - q: "Does Aenix have a model-provider bias?"
+    a: "No. Aenix has no commercial relationship with any LLM provider. The architecture recommends the open-weight model and serving stack — vLLM, Triton, or alternatives — that fit the customer's data class, regulator, and inference economics."
 ---
 
 <!-- BLOCK 1: HERO -->

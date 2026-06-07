@@ -1,6 +1,6 @@
 ---
 title: "Vendor-neutral cloud strategy — what an honest cloud advisory engagement looks like in 2026"
-description: "Long-form companion to the cloud strategy consultancy services page. What a vendor-neutral cloud strategy engagement actually delivers, how it differs from Big-4 cloud advisory and hyperscaler-aligned consultancies, and the questions that matter in 2026."
+description: "What a vendor-neutral cloud strategy engagement actually delivers, and how it differs from Big-4 cloud advisory and hyperscaler-aligned consultancies."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

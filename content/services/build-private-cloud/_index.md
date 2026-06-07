@@ -8,6 +8,37 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack
 language: "en"
+direct_answer: |
+  **Building a private cloud means designing, deploying, and operating cloud-style infrastructure on hardware you control — covering platform, storage, networking, multi-tenancy, observability, and compliance as one coherent system rather than a one-off project. It suits organizations with a platform engineering function and a clear trigger such as a VMware exit, a sovereignty mandate, AI/GPU workloads, or runaway public-cloud costs. Aenix builds private clouds end-to-end on Cozystack, an open-source CNCF project it runs in production with service providers, banks, telecom, and AI operators. The stack uses KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, and LINSTOR/DRBD storage, with handover so the customer's own team operates the platform afterward.**
+
+quick_facts:
+  - label: "What it is"
+    value: "An end-to-end engagement to design, build, and hand over a production private cloud on hardware the customer controls, built on Cozystack."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it's for"
+    value: "Organizations with (or building) a platform engineering function and a concrete trigger — VMware exit, sovereignty mandate, AI/GPU workloads, or public-cloud cost cliff."
+  - label: "Engagement timeline"
+    value: "Free 30-minute discovery, 14-28 day assessment, then a 3-12 month build, with optional ongoing managed operations."
+  - label: "Technology stack"
+    value: "Cozystack on Talos by default; KubeVirt for VMs and containers on one Kubernetes API; Cilium (eBPF) networking; LINSTOR/DRBD (or Ceph) storage; Tenant CRD multi-tenancy."
+  - label: "Ownership"
+    value: "The platform is built on open source and operated by the customer's own team after knowledge transfer — the cloud is theirs, not Aenix's."
+
+faq:
+  - q: "What does a build-private-cloud engagement actually include?"
+    a: "Hardware sizing and vendor selection, the platform layer (Cozystack on Talos or an existing Kubernetes extension), storage and backup architecture, networking, multi-tenancy via the Tenant CRD, an observability and operations setup, self-service golden paths, compliance work, and knowledge transfer so your team operates it."
+  - q: "How long does it take to build a private cloud with Aenix?"
+    a: "A free 30-minute discovery confirms fit, a 14-28 day assessment produces architecture, sizing, and a build plan, and the build itself runs 3-12 months depending on scope. Ongoing managed operations are available afterward if the customer prefers not to run it in-house."
+  - q: "Is the private cloud locked to Aenix?"
+    a: "No. It is built on Cozystack, an open-source CNCF project under Apache 2.0 with no per-CPU or per-core licensing. After knowledge transfer your own platform team operates the cloud. Aenix has no hyperscaler partnership economics shaping the architecture."
+  - q: "What technology does Aenix use to build a private cloud?"
+    a: "Cozystack on Talos by default, with KubeVirt running virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, and LINSTOR/DRBD (or Ceph) for storage. Multi-tenancy, RBAC, quotas, and audit are handled through the Tenant CRD."
+  - q: "When does building a private cloud make sense versus staying on public cloud?"
+    a: "It fits when you have or are building a platform engineering function, a specific trigger like a VMware exit or sovereignty mandate, sustained workloads or AI/GPU at scale where the economics favor dedicated infrastructure, and a team that can operate it after handover. The assessment phase clarifies fit before any build begins."
+
 ---
 
 **The phrase "build a private cloud" sounds like it should be straightforward in 2026. The reality: it's an architecture problem, an operational discipline problem, and a team-capacity problem at the same time. Done well, it produces a platform that compounds value for years. Done badly, it produces operational debt and the next emergency.**

@@ -11,6 +11,38 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **A hybrid cloud platform is a single operating model that runs workloads consistently across customer-controlled hardware, public cloud regions, and edge sites instead of as separate, fragmented silos. It suits enterprises with a genuinely heterogeneous workload portfolio — some elastic and customer-facing, some steady-state or regulated, some GPU-bound for AI inference. Aenix designs and operates hybrid platforms on Cozystack, an open-source CNCF project that unifies virtual machines (KubeVirt) and containers on one Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. The result is one platform team, one observability stack, and consistent deployment patterns across every substrate, with no vendor lock-in and no per-CPU licensing.**
+
+quick_facts:
+  - label: "What it is"
+    value: "A single Kubernetes-native operating model that runs workloads consistently across on-prem, public cloud, and edge"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Enterprises with a heterogeneous workload portfolio spanning elastic, steady-state, regulated, and GPU/AI workloads"
+  - label: "Delivered as"
+    value: "Platform Readiness Assessment (14-28 days) followed by Phase 2 implementation, typically 6-18 months"
+  - label: "Key capability"
+    value: "One control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds via Ænix Platform Enterprise Edition"
+  - label: "Foundation"
+    value: "KubeVirt for VMs and containers on one API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy"
+
+faq:
+  - q: "How is hybrid cloud different from multi-cloud?"
+    a: "Hybrid usually means a mix of public cloud and on-prem or private infrastructure. Multi-cloud means using multiple public clouds. The two can coexist. The architectural challenges overlap, but the strategic drivers differ: hybrid is often about sovereignty, cost, and steady-state workloads, while multi-cloud is about provider diversity."
+  - q: "Do all workloads need to be portable across substrates?"
+    a: "No. Some workloads are best run as hyperscaler-native, using proprietary cloud services. A sound hybrid architecture treats these as deliberate non-portable choices rather than accidents, and classifies each workload to the substrate where it makes economic and operational sense."
+  - q: "Does running a hybrid platform on Cozystack create vendor lock-in?"
+    a: "No. Cozystack is open-source under Apache 2.0 and is a CNCF project. The same platform runs across customer hardware, public cloud regions, and edge sites, so you avoid the structural lock-in of a single-vendor hybrid product whose roadmap becomes your roadmap."
+  - q: "Who should not invest in a hybrid platform?"
+    a: "If most of your workloads clearly belong in one place — full public cloud or full private cloud — hybrid is over-engineering. The investment compounds only when your portfolio is genuinely split across elastic, steady-state, regulated, and AI-economics workloads."
+  - q: "How does Aenix deliver a hybrid cloud platform?"
+    a: "Engagement starts with a Platform Readiness Assessment (14-28 days) producing workload classification, a hybrid architecture target, a cross-substrate operations model, and migration sequencing. Phase 2 implementation has Aenix engineers build the platform end-to-end, typically over 6-18 months."
+  - q: "What technology underpins the platform?"
+    a: "Cozystack uses KubeVirt to run virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, LINSTOR/DRBD for replicated storage, and a Tenant CRD for multi-tenancy. Aenix sells Ænix Platform, a productized offering, plus services on top."
 ---
 
 <!-- BLOCK 1 -->

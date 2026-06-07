@@ -1,6 +1,6 @@
 ---
 title: "VMware exit for integrators & MSPs — turn the renewal into margin"
-description: "Your clients' VMware costs jumped. Offer an open, sovereign cloud you resell or co-deliver on Cozystack — up to 40% margin, deal protection, Aenix as your bench."
+description: "Your clients' VMware costs jumped. Offer an open, sovereign cloud you resell or co-deliver on Cozystack — up to 40% margin, deal protection."
 type: "page"
 language: "en"
 images: ["img/og/og-vmware-exit-partners.png"]

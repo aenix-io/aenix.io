@@ -9,6 +9,36 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **NIS2 compliance for cloud infrastructure means aligning your platform architecture with the EU NIS2 Directive (EU 2022/2555), which imposes cybersecurity risk-management (Article 21), incident reporting at 24-hour, 72-hour, and one-month timelines (Article 23), and ICT supply-chain risk obligations on essential and important entities and the ICT third parties serving them. Aenix runs NIS2-aligned platform readiness engagements that produce a control-level map, supply-chain mapping to the second hop, an incident-detection capability assessment, and an architecture-level remediation plan, delivered by EU-based engineers. The Aenix Platform Enterprise Edition is NIS2-aligned by design, built on Cozystack — an Apache 2.0, CNCF project providing Tenant CRD multi-tenancy, Cilium (eBPF) segmentation, customer-controlled encryption, and audit-ready logging.**
+quick_facts:
+  - label: "What it is"
+    value: "A NIS2-aligned platform readiness engagement that maps your cloud architecture against the EU NIS2 Directive (EU 2022/2555) and produces an architecture-level remediation plan."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Essential and important entities (energy, transport, banking, healthcare, digital infrastructure, public administration, and more) plus the ICT third parties serving them."
+  - label: "Engagement timeline"
+    value: "14-day focused NIS2 variant, or 28-day variant mapping NIS2 + DORA + GDPR in one engagement."
+  - label: "Standard covered"
+    value: "NIS2 Directive (EU) 2022/2555 — Articles 21 (risk management), 23 (incident reporting), 30 (coordinated vulnerability disclosure)."
+  - label: "Key capability"
+    value: "Cozystack delivers Tenant CRD multi-tenancy, Cilium/NetworkPolicy segmentation, customer-controlled keys, air-gap support, and full audit trails — sovereignty by architecture."
+faq:
+  - q: "Has the NIS2 transposition deadline passed?"
+    a: "Yes. For most EU member states the 17 October 2024 transposition deadline has passed and competent authorities are operational. Some member states' transpositions remain delayed, but in-scope entities should treat the obligations as live."
+  - q: "Is there a NIS2 certification we can obtain?"
+    a: "No. NIS2 is outcome-based. National cybersecurity certification schemes may be referenced in implementing rules, but there is no single NIS2 stamp or certificate to achieve."
+  - q: "How does NIS2 differ from DORA?"
+    a: "DORA is sector-specific to financial services; NIS2 is sectoral but far broader. Many entities fall under both with overlapping but not identical requirements. The 28-day Aenix engagement variant maps both regulators, plus GDPR, in a single engagement."
+  - q: "What does the Aenix NIS2 engagement produce?"
+    a: "A NIS2 control-level map, supply-chain mapping to the second hop for critical-function ICT third parties, an incident detection and reporting capability assessment against the 24/72-hour and one-month timelines, a business continuity and vulnerability management posture review, and an architecture-level remediation plan."
+  - q: "How does Cozystack support NIS2 requirements?"
+    a: "Cozystack provides Tenant CRD multi-tenancy with Cilium (eBPF) and NetworkPolicy segmentation, customer-controlled encryption keys, air-gap deployment, and full audit logging. These map to NIS2 Article 21 risk management and incident-detection needs, giving sovereignty by architecture rather than by add-on."
+  - q: "Who delivers the engagement?"
+    a: "EU-based engineers with experience inside the same regulatory frameworks as your customers and with regulator-dialog experience. Recommendations reflect technical fit and regulatory alignment, with no hyperscaler partnership bias."
 ---
 
 <!-- BLOCK 1 -->

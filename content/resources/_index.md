@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-description: "Free Aenix resources — checklists, decision guides, TCO worksheets, maturity assessments. Used internally during Aenix engagements; available free for self-assessment. PDF + Excel + interactive."
+description: "Free Aenix resources — checklists, decision guides, TCO worksheets, maturity assessments. The same frameworks used in paid engagements, free to self-assess."
 language: "en"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "For Heads of AI/ML — GPU infrastructure you actually control"
-description: "Run training and inference on your own GPUs, in your jurisdiction, with no hyperscaler endpoint lock-in. A turnkey AI platform, or built with you by the team behind it."
+description: "Run training and inference on your own GPUs, in your jurisdiction, with no hyperscaler lock-in. A turnkey AI platform, or built with you by the team behind it."
 type: "page"
 language: "en"
 images: ["img/og/og-head-of-ai-ml.png"]

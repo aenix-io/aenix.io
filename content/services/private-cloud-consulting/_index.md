@@ -10,6 +10,38 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **Private cloud consulting is an advisory and delivery service in which experienced platform engineers design, build, migrate to, and operate a private cloud running on infrastructure the customer controls. Aenix delivers it as the team behind Cozystack, an open-source CNCF project that runs virtual machines (via KubeVirt) and containers on one Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Engagements suit organizations leaving VMware after Broadcom changes, meeting sovereignty mandates, repatriating from hyperscalers, or sizing private infrastructure for AI workloads. Aenix covers architecture design, multi-tenancy and operations model, migration, and operational handover, recommending platforms on technical fit rather than partnership economics, with no per-CPU licensing and no vendor-roadmap lock-in.**
+
+quick_facts:
+  - label: "What it is"
+    value: "Advisory and delivery service where Aenix engineers design, build, migrate to, and operate a customer-controlled private cloud."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Organizations exiting VMware after Broadcom, under sovereignty mandates, repatriating from hyperscalers, building a service-provider cloud, or sizing private AI infrastructure."
+  - label: "Engagement model"
+    value: "Architecture review (5-15 days), implementation (3-12 months), or managed private cloud; preceded by a free 30-minute discovery call."
+  - label: "Platform foundation"
+    value: "Cozystack: KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
+  - label: "Vendor stance"
+    value: "No hyperscaler bias; OpenStack, OpenShift, and vendor-led platforms supported when they fit better than Cozystack."
+
+faq:
+  - q: "Do we have to use Cozystack for the private cloud?"
+    a: "No. Cozystack is the open-source foundation Aenix recommends for multi-tenant and sovereign use cases, but engagements also extend OpenStack, OpenShift, and vendor-led platforms when those are the better technical fit. Recommendations reflect technical fit, not partnership economics."
+  - q: "How does private cloud consulting differ from VMware migration consulting?"
+    a: "VMware migration is one path that can lead to private cloud when the destination is private. A private cloud engagement covers all paths to a customer-controlled platform: VMware exit, OpenStack rebuild, hyperscaler repatriation, and greenfield builds."
+  - q: "What does an engagement cover?"
+    a: "Four areas: architecture design (compute via KubeVirt, LINSTOR/Ceph storage, Cilium networking, identity, observability, backup/DR); multi-tenancy and operations model using the Tenant CRD, quotas, RBAC, and audit; migration and integration; and operational handover with runbooks and knowledge transfer to your platform team."
+  - q: "How long does it take and how is it structured?"
+    a: "It starts with a free 30-minute discovery call, then an architecture review of 5-15 days producing a target architecture and capacity model, followed by an optional implementation engagement of 3-12 months with Aenix engineers integrated into your team, and optional managed operation afterward."
+  - q: "Is the private cloud platform vendor-locked or licensed per CPU?"
+    a: "No. The recommended foundation, Cozystack, is open source under Apache 2.0 with no per-CPU or per-core licensing, so the platform is one you own without vendor-roadmap lock-in. Aenix productizes it as the Ænix Platform and sells services on top, but the underlying project stays open."
+  - q: "Private cloud or hybrid cloud — which should we choose?"
+    a: "Most modern deployments end up hybrid, with selected workloads on private infrastructure and others remaining in public cloud. Pure private cloud is a specific choice driven by sovereignty or cost economics. The engagement assesses which model fits your workloads, regulations, and budget."
 ---
 
 <!-- BLOCK 1 -->

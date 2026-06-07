@@ -11,6 +11,36 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **Aenix builds sovereign, edge-ready cloud platforms for telecom operators across the EU, DACH, and Central Asia, using Cozystack — the open-source (Apache 2.0) CNCF platform Aenix maintains. The same platform runs at core data centres, regional sites, and customer-edge locations under one operations model, replacing aging NFV environments with a Kubernetes-native foundation that runs VMs and containers on one API via KubeVirt. It supports 5G MEC and VNFs at the edge, multi-tenant customer-facing sovereign cloud products via the Tenant CRD, sovereign AI for telco-data analytics and customer-care workloads, and NIS2 essential-entity compliance with air-gapped deployments and customer-controlled encryption. Aenix delivers this as a Platform Readiness Assessment followed by a 6-24 month multi-site implementation, with no per-CPU licensing.**
+quick_facts:
+  - label: "What it is"
+    value: "A sovereign, edge-to-core cloud platform for telecom operators, built on Cozystack and delivered with Aenix implementation services."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it's for"
+    value: "Telecom operators in the EU, DACH, and Central Asia running NFV-to-Kubernetes transitions, edge cloud, sovereign-cloud product launches, or telco AI infrastructure."
+  - label: "Key capability"
+    value: "One platform across core DC, regional, and customer-edge sites: KubeVirt for VMs and containers, Cilium (eBPF) networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy for customer-facing offers."
+  - label: "Regulation"
+    value: "NIS2 essential-entity compliance for telecom: air-gapped deployments, customer-controlled encryption, audit-readiness."
+  - label: "Engagement"
+    value: "Platform Readiness Assessment first; Phase 2 multi-site implementation typically spans 6-24 months."
+faq:
+  - q: "Can the same platform run at both core data centres and edge sites?"
+    a: "Yes. Cozystack runs at core data centres, regional sites, and customer-edge locations under one unified operations model, supporting 5G MEC and VNFs at the edge while sharing the same platform abstraction with the core."
+  - q: "How does Aenix help telcos replace legacy NFV environments?"
+    a: "Aenix transitions legacy NFV environments to Kubernetes-native equivalents on Cozystack, which runs both VMs and containers on a single Kubernetes API through KubeVirt — so VNFs and cloud-native workloads coexist on one platform."
+  - q: "Is this suitable for launching customer-facing sovereign cloud products?"
+    a: "Yes. Cozystack's Tenant CRD is designed for the service-provider, multi-tenant model, making it suitable for telcos that resell platform capability or launch customer-facing sovereign cloud products at multi-region scale."
+  - q: "Does it support NIS2 compliance for telecom operators?"
+    a: "Telecom is an essential entity under NIS2. The platform supports air-gapped deployments, customer-controlled encryption, and audit-readiness aligned to NIS2 controls, with telecom-specific NIS2 workstreams in the Platform Readiness Assessment."
+  - q: "Is there per-CPU or per-core licensing?"
+    a: "No. Cozystack is Apache 2.0 with no per-CPU or per-core licensing, which avoids vendor lock-in across the long hardware refresh cycles typical in telecom. Aenix sells the productized Ænix Platform and services on top."
+  - q: "How long does a telecom platform engagement take?"
+    a: "Aenix starts with a Platform Readiness Assessment covering multi-site architecture, edge readiness, sovereign-cloud packaging, NIS2 controls, and telco AI use cases. Phase 2 implementation typically spans 6-24 months for a multi-site telecom platform."
 ---
 
 **Telecom operators in 2026 face an architectural inflection point: legacy NFV environments aging out, edge-compute demands growing, sovereign-cloud branded products launching across the sector, AI workloads on customer data, and NIS2 essential-entity compliance. The architectural answer is a coherent platform that runs at core data centres, regional sites, and customer edge — under one operations model.**

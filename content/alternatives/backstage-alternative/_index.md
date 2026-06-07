@@ -3,6 +3,36 @@ title: "Backstage alternative — when an internal developer portal isn't the ri
 description: "Backstage (CNCF Incubating) is excellent at what it is: a service catalog and developer portal with a strong plugin ecosystem. The misuse is treating it as..."
 related_pages: ["/services/internal-developer-platform", "/products/aenix-platform/idp-edition/", "/products/cozystack"]
 language: "en"
+direct_answer: |
+  **A Backstage alternative is the right consideration only in specific cases, because Backstage (CNCF Incubating) is a service catalog and developer portal, not the platform itself. It is the UI and discoverability layer that sits on top of a platform. If self-service paths still take weeks after adopting Backstage, the platform underneath is the real bottleneck, not the portal. Aenix addresses this with Cozystack, an open-source Kubernetes-native platform (Apache 2.0) providing virtualization via KubeVirt, multi-tenancy through the Tenant CRD, managed services, Cilium eBPF networking, and LINSTOR storage. Backstage, cozyportal, or no portal at all can run on top. For teams under 100 engineers, a portal is often unnecessary; an IaC repository plus GitOps suffices.**
+quick_facts:
+  - label: "What it is"
+    value: "Guidance on when an internal developer portal like Backstage is the wrong layer to fix, and how to build the platform underneath it first"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Backstage relationship"
+    value: "Cozystack is not a Backstage replacement; it is the platform Backstage (or cozyportal, or no portal) sits on top of"
+  - label: "Who it is for"
+    value: "Platform engineering and IDP teams whose self-service paths remain slow despite adopting a developer portal"
+  - label: "Productized offering"
+    value: "Ænix Platform IDP Edition adds GitLab automation, Argo CD workflows, and golden-path templates on the Cozystack foundation; Backstage UI can be integrated as the front-end"
+  - label: "Starting point"
+    value: "A Platform Readiness Assessment / architecture review to decide whether a portal is needed at all and which one fits"
+faq:
+  - q: "Is Cozystack an alternative to Backstage?"
+    a: "No. Backstage is a service catalog and developer portal — the UI layer. Cozystack is the Kubernetes-native platform underneath it, providing virtualization, multi-tenancy, managed services, and observability. You can run Backstage as a tenant workload on Cozystack, run the native cozyportal instead, or run no portal at all."
+  - q: "When do I actually need a Backstage alternative?"
+    a: "When you don't have an underlying platform yet (a portal without a platform is wallpaper), when Backstage's operational cost is too high for your team size, when you want a SaaS portal instead of self-hosted (Port, Cortex, Compass), or when you disagree with Backstage's baked-in opinions. If none apply, keep Backstage."
+  - q: "Do small teams need a developer portal at all?"
+    a: "Often not. Many organizations under 100 engineers find that an infrastructure-as-code repository plus good documentation and a GitOps surface is sufficient. Backstage's plugin ecosystem requires ongoing engineering capacity to maintain, which smaller teams may not sustain."
+  - q: "What is cozyportal?"
+    a: "cozyportal is the Cozystack-native developer portal — simpler and tighter to the platform than Backstage, with a smaller plugin ecosystem. It is one option for teams that want a portal closely integrated with Cozystack rather than the broader Backstage ecosystem."
+  - q: "Can I keep Backstage and still use Cozystack?"
+    a: "Yes. The platform decision (Cozystack vs OpenShift vs vanilla Kubernetes) is independent of the portal decision (Backstage vs cozyportal vs Port vs none). Backstage runs as a tenant Kubernetes workload pointing at the capabilities Cozystack provides. Ænix Platform IDP Edition can integrate the Backstage UI as the front-end."
+  - q: "How do I decide whether I need a portal?"
+    a: "Through a focused architecture review. Aenix runs this as part of its Platform Readiness Assessment, which answers whether you need a portal at all and, if so, which one fits your operational model and team size."
 ---
 
 **Backstage (CNCF Incubating) is excellent at what it is: a service catalog and developer portal with a strong plugin ecosystem. The misuse is treating it as the platform itself, when it's the UI/discoverability layer on top of a platform. If you've adopted Backstage and self-service paths still take weeks — Backstage isn't the problem; the platform underneath is.**

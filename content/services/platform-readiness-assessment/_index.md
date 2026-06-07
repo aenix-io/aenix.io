@@ -3,6 +3,36 @@ title: "Platform Readiness Assessment — for cloud sovereignty, migration, and 
 description: "A structured cloud readiness assessment that gives you three concrete outcomes: time-to-environment metric, compliance-by-design map, and cost-and-control..."
 related_pages: ["/solutions/data-sovereignty/", "/solutions/dora-compliance/", "/solutions/cloud-repatriation/", "/solutions/sovereign-ai/", "/services/platform-engineering/", "/products/aenix-platform/", "/products/cozystack/", "/pricing"]
 language: "en"
+direct_answer: |
+  **The Platform Readiness Assessment is a fixed-price engagement from Aenix that evaluates an organization's cloud platform across four workstreams — platform maturity and inventory, sovereignty and regulator gap (DORA, NIS2, GDPR), cloud-spend posture, and developer self-service — and delivers a written report in 14 days (or 28 for the full variant). It is built for organizations with their own platform-engineering teams that face sovereignty pressure, repatriation or cost mandates, sovereign-AI requirements, or slow time-to-environment. The work is done by Aenix platform engineers who build and operate Cozystack in production, not by management consultants. Outputs are three written, dated deliverables: a time-to-environment metric, a compliance-by-design map, and a cost-and-control trajectory.**
+quick_facts:
+  - label: "What it is"
+    value: "A fixed-price cloud readiness assessment that produces a written time-to-environment metric, compliance-by-design map, and cost-and-control trajectory in 14 days."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Engagement timeline"
+    value: "14-day focused variant (single workstream emphasis) or 28-day full variant (all four workstreams, multi-BU interviews, Phase 2 roadmap)."
+  - label: "Who delivers it"
+    value: "Aenix platform engineers who build and operate Cozystack in production — not seconded consultants or a partner network."
+  - label: "Who it's for"
+    value: "Organizations with their own platform/SRE teams facing sovereignty, repatriation, cost-control, sovereign-AI, or time-to-environment pressure."
+  - label: "Access required"
+    value: "Read-only on architecture docs, Git orgs, public-cloud billing, and observability dashboards — no write credentials, no production kubectl."
+faq:
+  - q: "How is this different from a Big-4 cloud readiness assessment?"
+    a: "Big-4 assessments are usually delivered by management consultants who hand off to a separate implementation team and a hyperscaler partner. Aenix engineers run both the assessment and any follow-on implementation, and are not commercially aligned with any hyperscaler, so recommendations reflect what the team can stand behind technically and operate under your governance."
+  - q: "Will Aenix pitch us Cozystack at the end?"
+    a: "The report names the recommended stack with reasoning. In most cases that is Cozystack — the open-source CNCF project Aenix builds — but when the work points elsewhere, the report says so. It is not a sales engagement for Cozystack."
+  - q: "How long does the assessment take and what does it cost?"
+    a: "Two variants: a 14-day focused engagement on a single workstream and a 28-day full engagement covering all four workstreams with a Phase 2 roadmap. Both are fixed-price with a single invoice and a mutual NDA at kickoff. If a Phase 2 implementation follows, the assessment cost is credited against it, subject to scope."
+  - q: "What access does Aenix need to run it?"
+    a: "Read-only access to architecture documents, GitHub/GitLab organizations, public-cloud billing, and observability dashboards. No kubectl access to production and no credentials to anything writable are required."
+  - q: "What does the assessment actually deliver?"
+    a: "Three written, dated outputs handed to the executive sponsor: a time-to-environment metric (current vs target with a delivery plan), a compliance-by-design map across DORA / NIS2 / GDPR and sectoral controls, and a 12-month cost-and-control trajectory with caps and ranked repatriation candidates."
+  - q: "Does it work for an organization that has already chosen a stack?"
+    a: "Yes. The workstreams shift emphasis toward operational readiness, multi-tenancy model, regulator gap, and developer self-service rather than vendor selection — for example if you have already committed to KubeVirt, Cilium, LINSTOR, and Talos."
 ---
 
 <!-- BLOCK 1: HERO -->

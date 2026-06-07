@@ -1,6 +1,6 @@
 ---
 title: "Case studies"
-description: "Aenix case studies — Ænix Platform deployments at regional hosting providers, deep platform R&D for ecosystem vendors, tier-1 European bank engagements (NDA until mid-2027). Production proof points."
+description: "Aenix case studies: Ænix Platform deployments at regional hosting providers, platform R&D for ecosystem vendors, and NDA-protected tier-1 European bank work."
 language: "en"
 ---
 

@@ -13,6 +13,34 @@ related_pages:
   - /solutions/cloud-repatriation/
   - /resources/cloud-repatriation-tco-worksheet/
   - /products/cozystack/
+direct_answer: |
+  **The VMware cost calculator on aenix.io is a free interactive tool that estimates how much an organization can save by moving VMware/VCF workloads to an open Apache 2.0 platform after Broadcom's licensing changes. Built by Aenix, the team behind the CNCF project Cozystack, it takes four inputs — CPU cores, current VMware cost per core per year, Aenix support cost per core per year, and one-time migration cost — and returns annual VMware spend, net annual saving, the three-year net delta after migration, and migration payback time. It targets infrastructure, finance and procurement teams scoping a VMware exit. The target platform, Cozystack, carries no per-core or per-socket license fee, so the recurring license line VMware charges disappears and only support plus a one-time migration remain.**
+quick_facts:
+  - label: "What it is"
+    value: "A free interactive calculator that models VMware/VCF cost versus an open-platform alternative and shows annual saving, three-year net, and migration payback."
+  - label: "Who it's for"
+    value: "Infrastructure, finance and procurement teams scoping a post-Broadcom VMware exit."
+  - label: "Inputs"
+    value: "CPU cores, VMware cost per core/year, Aenix support per core/year, and one-time migration cost."
+  - label: "Target platform"
+    value: "Cozystack — KubeVirt VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+faq:
+  - q: "Is this an official VMware or Broadcom calculator?"
+    a: "No. It is an independent estimator built by Aenix to compare VMware/VCF spend against an open Apache 2.0 platform. Enter your own renewal figures for an accurate result."
+  - q: "What cost per core should I enter?"
+    a: "Use your current VMware/VCF subscription cost divided by the number of licensed cores. If you only have a total renewal figure, divide it by your core count to get the per-core number."
+  - q: "Does the target platform really have no license cost?"
+    a: "Cozystack is Apache 2.0 with no per-core or per-socket license fee. You pay only for support and/or the build engagement, both of which are editable in the calculator."
+  - q: "Do I have to migrate every workload to see savings?"
+    a: "No. Savings apply only to the workloads that move; some workloads are better left where they are. The VMware migration page covers sequencing and what to keep in the cloud."
+  - q: "What does Aenix charge for the platform?"
+    a: "The Cozystack platform is free under Apache 2.0. Aenix sells the productized Ænix Platform plus support and services, with tiers starting at Basic 1,250 USD per month for 10 nodes, then Standard, Plus, and Enterprise (custom)."
+  - q: "Can Aenix validate the numbers the calculator produces?"
+    a: "Yes. A 30-minute discovery call produces an honest, workload-level TCO that accounts for migration cost, support, and the workloads that should stay in the cloud."
 ---
 
 <!-- BLOCK 1: HERO -->

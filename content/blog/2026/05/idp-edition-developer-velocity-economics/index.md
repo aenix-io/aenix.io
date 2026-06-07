@@ -1,6 +1,6 @@
 ---
 title: "IDP Edition — the cost of developer drag, and what an internal developer platform actually pays back"
-description: "Long-form companion to the IDP Edition product page. Walks through time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an internal developer platform versus DevOps-only or ticket-driven infrastructure."
+description: "Long-form companion to the IDP Edition page: time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

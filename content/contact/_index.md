@@ -1,6 +1,6 @@
 ---
 title: "Talk to us"
-description: "Contact Aenix to discuss Ænix Platform editions, schedule a discovery call, or reach out about partnerships. EU office: AENIX s.r.o. (Czechia). US office: AENIX INC (Delaware)."
+description: "Contact Aenix to discuss Ænix Platform editions, book a discovery call, or explore partnerships. EU office in Czechia, US office in Delaware."
 language: "en"
 ---
 

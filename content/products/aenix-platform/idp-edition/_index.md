@@ -1,8 +1,38 @@
 ---
 title: "Ænix Platform IDP Edition"
-description: "Ænix Platform IDP Edition — Internal Developer Platform layer on top of the Cozystack cloud foundation. GitLab automation, Argo CD workflows, APIs. Engineers spend less time on routine work and more on shipping product."
+description: "Ænix Platform IDP Edition adds a self-service Internal Developer Platform on the Cozystack cloud foundation: GitLab CI/CD, Argo CD GitOps, self-service APIs."
 type: "page"
 language: "en"
+direct_answer: |
+  **Ænix Platform IDP Edition is a productized Internal Developer Platform layer that Aenix builds on top of Cozystack, the open-source Kubernetes-native cloud foundation it created and maintains. It is for product and SaaS organizations with strong engineering teams (typically 300+ engineers, though smaller high-DevEx teams also fit) that want self-service developer experience without building a platform-engineering function from scratch. It pairs a multi-tenant cloud substrate (KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD tenancy) with pre-integrated GitLab CI/CD, Argo CD GitOps workflows, self-service APIs, service-creation wizards, golden-path templates, and engineering productivity dashboards. Delivered as a project plus optional managed retainer, it gives engineers self-service environments, databases, and clusters without ticket queues.**
+quick_facts:
+  - label: "What it is"
+    value: "A productized Internal Developer Platform layer built by Aenix on top of the Cozystack Kubernetes-native cloud foundation."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Product / SaaS organizations with strong engineering teams (typically 300+ engineers; smaller high-DevEx teams also fit)."
+  - label: "Engagement"
+    value: "EUR 300k - 2M project, then optional managed retainer; 6-12 months to production for a typical IDP build."
+  - label: "Key capability"
+    value: "Pre-integrated GitLab CI/CD, Argo CD GitOps, self-service APIs and wizards for environments, managed databases, storage and clusters."
+  - label: "Foundation"
+    value: "KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
+faq:
+  - q: "How is IDP Edition different from running open-source Cozystack ourselves?"
+    a: "Cozystack provides the multi-tenant cloud foundation. IDP Edition adds the platform-product layer on top: pre-integrated GitLab and Argo CD, self-service APIs, service-creation wizards, golden-path templates, productivity dashboards, and Aenix's IDP design and delivery experience, so the platform-engineering team does not start from zero."
+  - q: "How does IDP Edition compare to Backstage?"
+    a: "Backstage is a UI framework, not an IDP by itself. IDP Edition includes the underlying cloud foundation, the GitLab and Argo CD integration, the self-service APIs, and the golden-path patterns that turn a Backstage-style UI into real self-service. Backstage UI can be used as the front-end if preferred."
+  - q: "Is IDP Edition only for organizations with 300+ engineers?"
+    a: "That is the typical scale where IDP investment pays back, but smaller organizations with strong developer-experience focus or fast-growing engineering teams can fit. A discovery call confirms whether the scope makes sense."
+  - q: "Can we run IDP Edition on hyperscaler infrastructure?"
+    a: "Yes. Cozystack and IDP Edition run on hyperscaler bare-metal or dedicated instances when sovereignty is not binding. More common is customer-controlled hardware such as an own data center, colocation, or providers like Hetzner or OVH."
+  - q: "Does IDP Edition integrate with our existing CI?"
+    a: "Yes. GitLab integration is pre-built, and GitHub, Bitbucket, and other systems are supported via standard webhooks and Argo CD patterns. Templates cover common workload types such as web service, worker, batch job, and ML pipeline."
+  - q: "What does IDP Edition cost and how long does it take?"
+    a: "Pricing is on request, typically a EUR 300k - 2M project with an optional managed retainer afterward. A typical IDP build reaches production in 6-12 months, shorter for golden-path-only scope. Engagements start with a free 30-minute discovery call."
 ---
 
 **An Internal Developer Platform layer on top of a Kubernetes-native cloud. GitLab automation, Argo CD workflows, and APIs — so your engineers spend less time on routine work and more on shipping product. Includes the full Cozystack-based cloud underneath: tenancy, observability, secrets, identity, multi-cluster.**

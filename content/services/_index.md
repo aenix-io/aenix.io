@@ -1,6 +1,6 @@
 ---
 title: "Services"
-description: "Aenix services — engagement-led entry points. Platform Readiness Assessment (entry offer, 5-10 days fixed-price), platform engineering, internal developer platform, devops/k8s/private-cloud consulting, public cloud builder, sovereign cloud builder, AI platform build."
+description: "Aenix services: Platform Readiness Assessment entry offer, platform engineering, internal developer platform, and public, sovereign, and AI cloud builds."
 language: "en"
 ---
 

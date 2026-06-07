@@ -9,7 +9,38 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/aenix-platform/ai-ml-edition/
   - /products/cozystack/
+  - /migration/ibm/
 language: "en"
+direct_answer: |
+  **Aenix builds and operates DORA-aligned, sovereign cloud platforms for financial-services organizations — banks, insurers, investment firms, and payment institutions — across the EU, DACH, and Central Asia. The foundation is Cozystack, an Apache 2.0 open-source platform (CNCF Sandbox project) that unifies virtual machines and containers on one Kubernetes API using KubeVirt, Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. It runs on customer hardware with customer-controlled encryption keys and customer-owned audit trails, so data residency and operational resilience are structural rather than bolted on. Aenix sells the productized Ænix Platform plus engineering services, and typically engages through a Platform Readiness Assessment covering DORA Article 28 supplier risk, exit-feasibility, FinOps, and sovereign-AI architecture for sensitive financial data.**
+quick_facts:
+  - label: "What it is"
+    value: "A DORA-aligned sovereign cloud platform for banks, insurers, investment firms, and payment institutions, built on Cozystack and run on customer-controlled infrastructure."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it's for"
+    value: "Financial-services organizations facing DORA enforcement, ICT third-party concentration scrutiny, VMware/Broadcom exit, and sovereign-AI requirements."
+  - label: "Key capability"
+    value: "VMs and containers on one Kubernetes API (KubeVirt), Cilium eBPF networking, LINSTOR/DRBD storage, Tenant-CRD multi-tenant isolation, customer-held keys and audit trails."
+  - label: "Engagement"
+    value: "Platform Readiness Assessment (DORA/sovereignty, cost, platform engineering, AI workstreams) plus a Phase 2 implementation roadmap."
+  - label: "Regulatory scope"
+    value: "DORA (in force January 2025), NIS2, GDPR; EU member-state and Kazakhstan procurement channels."
+faq:
+  - q: "Does the platform help with DORA compliance?"
+    a: "Yes. Engagements address DORA Article 28 ICT third-party risk, supplier-concentration analysis, exit-feasibility, operational resilience testing, and audit-readiness. Customer-controlled keys and customer-owned audit trails support regulator dialog. See the DORA compliance solution page and the free DORA Compliance Checklist."
+  - q: "Is this a viable VMware / VCF replacement for a regulated bank?"
+    a: "Yes. Cozystack runs both virtual machines (via KubeVirt) and containers on a single Kubernetes API, on customer hardware, under Apache 2.0 with no per-core licensing. It targets the VCF subscription pressure many financial-sector firms face after the Broadcom acquisition."
+  - q: "Can we run AI on sensitive financial data without it leaving our perimeter?"
+    a: "Yes. The sovereign-AI workstream architects GenAI, inference, and analytics on customer or financial data that cannot leave the perimeter — for example fraud detection or claims processing on private LLM infrastructure running on customer-controlled hardware."
+  - q: "How does an engagement start?"
+    a: "Most start with a Platform Readiness Assessment combining sovereignty/DORA, cost, platform-engineering, and (where applicable) AI-infrastructure workstreams. The output is a written, regulator-readiness-aligned report plus a Phase 2 implementation roadmap. Financial-services engagements often use the broader 28-day variant."
+  - q: "What is the licensing and lock-in model?"
+    a: "The platform foundation, Cozystack, is Apache 2.0 open source with no per-CPU or per-core licensing. It runs on customer hardware with customer-controlled keys and audit trails, so sovereignty and exit-readiness are structural. Aenix sells the productized Ænix Platform and services on top."
+  - q: "Which regions and regulatory frameworks does Aenix cover?"
+    a: "Aenix operates teams in the EU and Central Asia and engages with financial-services organizations across the EU, DACH, and Central Asia, aligned with DORA, NIS2, GDPR, and Kazakhstan frameworks. RFI/RFP is accepted through standard procurement channels in EU member states and Kazakhstan."
 ---
 
 <!-- BLOCK 1: HERO -->

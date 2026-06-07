@@ -1,6 +1,6 @@
 ---
 title: "OpenStack migration — a cohort-based playbook for moving to Cozystack in 2026"
-description: "Long-form companion to the OpenStack migration hub. Cohort-based migration playbook from production OpenStack to Cozystack — component mapping, image conversion, networking redesign, operational handover, and the realistic timeline for tier-1 telco-scale and mid-size enterprise estates."
+description: "Cohort-based playbook for migrating production OpenStack to Cozystack: component mapping, image conversion, networking redesign, handover, and timeline."
 date: 2026-05-11
 author: "Aenix Team"
 type: "tutorial"

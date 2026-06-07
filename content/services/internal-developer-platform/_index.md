@@ -8,6 +8,36 @@ related_pages:
   - /products/aenix-platform/idp-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **An internal developer platform (IDP) is a self-service capability layer that lets product engineers provision environments, deploy applications, and access observability, secrets, and networking through opinionated golden paths instead of infrastructure tickets. Aenix builds IDPs that get adopted, not just architected: 5-10 documented golden paths on a multi-tenant Kubernetes foundation, with operational runbooks and knowledge transfer so the customer's platform team owns the result. The foundation is typically Cozystack, an Apache 2.0 CNCF project combining KubeVirt VMs and containers, Cilium eBPF networking, LINSTOR storage, and Tenant-CRD multi-tenancy. Engagements run in three phases — readiness assessment, build, and optional managed operation — and use developer portals such as Backstage only where they fit, never as a destination.**
+quick_facts:
+  - label: "What it is"
+    value: "A self-service platform giving product teams golden paths for provisioning, deployment, and operations on a multi-tenant Kubernetes foundation"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it's for"
+    value: "Organizations with 3+ product teams, weeks-long time-to-environment, and inconsistent per-team infrastructure patterns"
+  - label: "Engagement timeline"
+    value: "Phase 1 assessment 14-28 days; Phase 2 build 3-9 months; optional Phase 3 managed operation"
+  - label: "Foundation"
+    value: "Cozystack pattern — KubeVirt VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy"
+  - label: "Developer portal"
+    value: "Backstage, Port, or Cortex used only where catalog discipline is mature; the portal sits on top of the platform, not in place of it"
+faq:
+  - q: "Internal developer platform vs internal developer portal — which do we need?"
+    a: "A portal (Backstage, Port, Cortex) is the UI and catalog; a platform is the underlying capability stack. Most organizations need the platform first. For teams under roughly 200 engineers, a well-documented platform with simple IaC entry points is usually enough; portal value emerges at scale."
+  - q: "Do we have to build on Cozystack?"
+    a: "No. Cozystack is the foundation Aenix recommends when it fits, which for multi-tenant or sovereign use cases it usually does. For organizations deeply on OpenShift, vanilla Kubernetes, or other distributions, Aenix extends the existing platform instead."
+  - q: "How long is a typical IDP engagement?"
+    a: "Phase 1 assessment runs 14-28 days. Phase 2 build runs 3-9 months elapsed depending on scope: foundation first (1-2 months), golden paths layered on (1-3 months), with knowledge transfer running throughout."
+  - q: "What happens if our team can't operate the IDP after handover?"
+    a: "Two paths: an optional managed-services engagement where Aenix operates the platform under contract, or an extension of the build engagement to grow internal platform-team capacity. The decision is named explicitly during the assessment phase."
+  - q: "Why does Aenix not just sell Backstage?"
+    a: "Backstage is a tool, not a destination. Aenix uses it where it serves the customer's operational maturity and recommends alternatives (Port, Cortex, custom) or no portal at all when they fit better. The decision is calibrated against the team's needs, not vendor incentives."
+  - q: "Is the platform open source, and do we own it?"
+    a: "Yes. The foundation is Cozystack, an Apache 2.0 CNCF project with no per-core licensing. The IDP Aenix builds is one the customer owns and operates, with no vendor-roadmap lock-in. Aenix sells the productized Ænix Platform and services on top."
 ---
 
 <!-- BLOCK 1: HERO -->

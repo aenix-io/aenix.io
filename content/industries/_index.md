@@ -1,6 +1,6 @@
 ---
 title: "Industries"
-description: "Aenix industry landings — vertical proof and use cases. Financial services, public sector, telco, hosting providers, energy, insurance, healthcare, manufacturing, transport, education, MSP, universities. Each industry maps to specific Ænix Platform editions."
+description: "Aenix industry landings: regulatory triggers, architecture patterns and use cases for finance, public sector, telco and hosting, mapped to Platform editions."
 language: "en"
 ---
 

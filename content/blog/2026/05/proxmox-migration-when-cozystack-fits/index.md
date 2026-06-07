@@ -1,6 +1,6 @@
 ---
 title: "Proxmox to Cozystack — when single-tenant outgrows itself"
-description: "Long-form companion to the Proxmox migration hub. For service providers, MSPs, and growing enterprises whose Proxmox VE deployment is hitting multi-tenancy, service-catalog, or scale ceilings — what a Proxmox-to-Cozystack migration looks like, and when staying on Proxmox is still the right call."
+description: "When does Proxmox VE outgrow single-tenant? A Proxmox-to-Cozystack migration guide for MSPs and growing teams hitting multi-tenancy and scale limits."
 date: 2026-05-11
 author: "Aenix Team"
 type: "tutorial"

@@ -10,6 +10,36 @@ related_pages:
   - /products/cozystack
   - /pricing
 language: "en"
+direct_answer: |
+  **Cozystack is an open-source, Kubernetes-native VMware alternative that replaces the full VMware Cloud Foundation stack — vSphere/ESXi, vCenter, vSAN, NSX, vCloud Director, and Site Recovery Manager — on your own bare metal. It is built for service providers exiting VMware Cloud Director and regulated enterprises exiting VCF. It runs virtual machines through KubeVirt (KVM-based, with live migration and snapshots) alongside containers on one Kubernetes API, uses Cilium (eBPF) for networking, LINSTOR or Ceph for storage, and a Tenant CRD for native multi-tenancy. Licensed Apache 2.0 with no per-CPU, per-VM, or per-core metering. Aenix, the company behind Cozystack, productizes it as the Ænix Platform and runs the VMware migration end to end.**
+quick_facts:
+  - label: "What it is"
+    value: "An open-source, Kubernetes-native platform that replaces the full VMware Cloud Foundation stack (vSphere, vCenter, vSAN, NSX, vCloud Director, SRM) on bare metal."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Service providers exiting VMware Cloud Director and regulated enterprises exiting VMware Cloud Foundation."
+  - label: "Architecture"
+    value: "KubeVirt VMs + containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR or Ceph storage, Tenant CRD multi-tenancy."
+  - label: "Migration"
+    value: "Six-step path: discover, deploy in parallel, migrate VMs via KubeVirt CDI, cut over networking and storage, validate DR, decommission VMware."
+  - label: "Commercial model"
+    value: "OSS is free; Ænix Platform tiers start at Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise custom."
+faq:
+  - q: "Is Cozystack a true one-to-one replacement for VMware Cloud Foundation?"
+    a: "It maps the full VCF stack: KubeVirt for vSphere/ESXi, Kubernetes API plus cozyportal for vCenter and vCloud Director, LINSTOR or Ceph for vSAN, Cilium for NSX, and Velero plus S3 plus PostgreSQL PITR for Site Recovery Manager. Networking and multi-tenancy need redesign rather than literal 1:1 mapping, which the architecture review covers."
+  - q: "How does Cozystack avoid Broadcom-style renewal increases?"
+    a: "Cozystack is licensed Apache 2.0 with no per-CPU, per-VM, or per-core meter, so the open-source code stays usable regardless of any support contract. Your spend is hardware plus an optional Aenix engagement, not a subscription tied to socket counts."
+  - q: "What replaces ESXi in Cozystack?"
+    a: "KubeVirt, a KVM-based virtualization layer that runs on Talos and provides live migration and snapshots. It runs VMs and containers on the same Kubernetes API, so legacy VM workloads and cloud-native workloads share one control plane."
+  - q: "Can Cozystack run in an air-gapped or sovereign environment?"
+    a: "Yes. Air-gapped installation is supported and documented with no extra licensing, there is no phone-home telemetry (opt-in, disabled by default), and it runs on your own bare metal with an EU support team. This supports DORA and NIS2 operational-resilience and supplier-risk requirements."
+  - q: "What does it cost compared to VMware?"
+    a: "The Cozystack platform is free and open source. Aenix sells the productized Ænix Platform with support tiers starting at Basic $1,250/mo for 10 nodes, then Standard $3,000, Plus $5,500, and Enterprise custom, plus professional services for migration. VMware VCF pricing is quote-driven and non-public."
+  - q: "Does Cozystack support GPUs for AI and VDI workloads?"
+    a: "Yes. It provides NVIDIA vGPU for VMs and MIG/time-slicing for containers, validated on A100, H100, H200, L40S, and Blackwell GPUs, so AI training and GPU-as-a-service workloads run alongside general virtualization."
 ---
 
 <!-- BLOCK 1: HERO -->

@@ -1,6 +1,6 @@
 ---
 title: "AI/ML Edition — when sustained-inference economics beat hyperscaler GPU"
-description: "Long-form companion to the AI/ML Edition product page. Walks through GPU economics for sustained inference, multi-tenant GPU scheduling, and the architectural decisions that make dedicated AI infrastructure pay back over Year 2."
+description: "Long-form companion to the AI/ML Edition page: GPU economics for sustained inference, multi-tenant GPU scheduling, and when dedicated AI infra pays back."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

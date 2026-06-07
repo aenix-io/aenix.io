@@ -3,6 +3,36 @@ title: "Private cloud platform — open source, Kubernetes-native, multi-tenant"
 description: "Cozystack is the open-source private cloud platform built for service providers, regulated enterprises, and sovereign-cloud builders. KubeVirt-based..."
 related_pages: ["/services/private-cloud-consulting", "/solutions/data-sovereignty", "/solutions/cloud-repatriation", "/alternatives/vmware-alternative", "/products/cozystack"]
 language: "en"
+direct_answer: |
+  **A private cloud platform is infrastructure an organization runs on hardware it owns or controls, replacing the VMware Cloud Foundation stack with software it governs end to end. Cozystack is an open-source, Kubernetes-native private cloud platform built for service providers, regulated enterprises, telecom operators, and sovereign-cloud builders. It combines KubeVirt virtualization for VMs and containers, Cilium (eBPF) networking, LINSTOR/DRBD replicated storage, a Tenant CRD multi-tenant control plane, managed databases, S3 object storage, and GPU as a service on bare metal. Cozystack is a CNCF project under Apache 2.0 with no per-CPU or per-core licensing. Aenix, the company behind Cozystack, builds and maintains it and offers the productized Ænix Platform plus commercial support and engineering services on top.**
+quick_facts:
+  - label: "What it is"
+    value: "An open-source, Kubernetes-native private cloud platform that runs VMs and containers on bare metal you own, replacing the VMware Cloud Foundation stack."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it's for"
+    value: "Service providers, regulated enterprises (DORA / sectoral compliance), telecom operators, public sector, and AI/GPU operators."
+  - label: "Core stack"
+    value: "KubeVirt for VMs and containers, Cilium (eBPF) networking, LINSTOR/DRBD replicated storage, Tenant CRD multi-tenancy."
+  - label: "Commercial offering"
+    value: "Aenix sells the productized Ænix Platform plus support tiers: Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise Custom."
+  - label: "Deployment options"
+    value: "Self-deploy from open source (docs at cozystack.io), or Aenix-supported assessment and implementation; air-gapped installs supported."
+faq:
+  - q: "What is the difference between Cozystack and Aenix?"
+    a: "Cozystack is the open-source platform and a CNCF project, community-governed under Apache 2.0. Aenix is the company that builds and maintains Cozystack, runs it in production, and offers the productized Ænix Platform plus commercial support and professional services. You can run Cozystack entirely without Aenix."
+  - q: "How does a Cozystack private cloud differ from VMware Cloud Foundation?"
+    a: "Cozystack replaces the full VCF stack with a Kubernetes-native equivalent under Apache 2.0. It uses KubeVirt instead of vSphere/ESXi, Cilium instead of NSX, a Tenant CRD instead of vCloud Director, and has no per-CPU or per-core subscription. The operational footprint is lighter and there is no vendor lock-in."
+  - q: "How is Cozystack different from OpenStack?"
+    a: "Both are open-source private cloud platforms. OpenStack is older, broader in scope, and more operationally complex; Cozystack is Kubernetes-native, more focused, and has a lighter operational footprint. OpenStack remains strong where deep OpenStack expertise already exists."
+  - q: "Does Cozystack support air-gapped deployments?"
+    a: "Yes. Cozystack has a documented air-gapped install workflow, making it suitable for classified, defence, healthcare, and other highly restricted environments where outbound connectivity is not permitted."
+  - q: "What does it cost to run Cozystack?"
+    a: "The Cozystack platform is open source under Apache 2.0 and free to run on your own hardware, with no per-CPU, per-VM, or per-core meter. Aenix support tiers start at Basic $1,250/mo (10 nodes), then Standard $3,000, Plus $5,500, and Enterprise Custom, plus engagement-based professional services."
+  - q: "Can Cozystack run both virtual machines and containers?"
+    a: "Yes. Cozystack uses KubeVirt to run KVM-based VMs (with live migration, snapshots, and templates) alongside Kubernetes containers on a single Kubernetes API, so you do not need separate VM and container platforms."
 ---
 
 <!-- BLOCK 1: HERO -->

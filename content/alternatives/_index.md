@@ -1,6 +1,6 @@
 ---
 title: "Alternatives"
-description: "Aenix alternatives — Cozystack and Ænix Platform compared with VMware, OpenStack, OpenShift, Proxmox, Nutanix, Backstage. Honest comparisons, when each fits, migration paths."
+description: "Cozystack and Ænix Platform compared with VMware, OpenStack, OpenShift, Proxmox, Nutanix and Backstage — honest comparisons and migration paths."
 language: "en"
 ---
 

@@ -8,6 +8,36 @@ related_pages:
   - /products/aenix-platform/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **Kubernetes consulting is expert advisory and implementation work that helps an organization design, harden, and operate production-grade Kubernetes — covering distribution choice, multi-tenancy, networking, storage, identity, observability, GitOps discipline, and operational runbooks. It is for teams whose existing clusters are operational but problematic, who need hard tenant isolation, or who are migrating from VMware or OpenStack. Aenix delivers it through the engineers who build and operate Cozystack, an open-source CNCF Kubernetes-native platform run in production by service providers, banks, and AI operators. Engagements stay distribution-neutral: Aenix sells no licensed distribution and recommends the right stack — Cozystack, vanilla Kubernetes, OpenShift, or vendor-led — for the case at hand.**
+quick_facts:
+  - label: "What it is"
+    value: "Advisory and hands-on implementation for production multi-tenant Kubernetes — architecture, tenancy, operations, and production-readiness."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it's for"
+    value: "Teams with problematic clusters, hard multi-tenancy or regulated-isolation needs, in-flight VMware/OpenStack migrations, or pre-GA production-readiness reviews."
+  - label: "Engagement timeline"
+    value: "Architecture review 5-10 days (fixed-price); implementation 1-6 months (Aenix engineers integrated with your team); optional managed engagement for on-call operation."
+  - label: "Technology foundation"
+    value: "KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
+  - label: "Vendor stance"
+    value: "Distribution-neutral — Aenix sells no licensed distribution and recommends Cozystack, vanilla Kubernetes, OpenShift, or vendor-led per the case."
+faq:
+  - q: "Do you only work with Cozystack?"
+    a: "No. Aenix extends whatever Kubernetes distribution fits the case. Cozystack is recommended where multi-tenancy and virtualization matter; vanilla Kubernetes, OpenShift, or vendor-led distributions fit other cases. Aenix sells no licensed distribution, so the recommendation stays neutral."
+  - q: "How is Kubernetes consulting different from a managed service like EKS, AKS, or GKE?"
+    a: "Managed Kubernetes services run the control plane for you. Consulting addresses your architecture and operational decisions on top — distribution choice, multi-tenancy design, observability, GitOps, and runbooks. The two are complementary, not alternatives."
+  - q: "What does a typical engagement cost and how long does it take?"
+    a: "An architecture review runs 5-10 days at a fixed price and produces a written assessment and target architecture. Implementation is time-and-materials or fixed-scope, typically 1-6 months, with Aenix engineers integrated into your team."
+  - q: "Do you provide on-call or 24x7 support after implementation?"
+    a: "Yes, under a managed engagement. A standard implementation engagement leaves your team operating with documented runbooks and knowledge transfer; a managed engagement extends Aenix as on-call operators."
+  - q: "Why Aenix specifically for Kubernetes consulting?"
+    a: "Aenix is the team behind Cozystack, an open-source CNCF Kubernetes-native platform run in production. Recommendations come from systems Aenix builds and operates, delivered by senior engineers rather than analysts, with no licensed-distribution sales incentive."
+  - q: "Can consulting expand into a productized platform engagement?"
+    a: "Yes. Stand-alone consulting is available, and scope can expand into an Ænix Platform engagement (tiers from Basic $1,250/mo for 10 nodes up to Enterprise Custom) when the work moves toward a productized cloud platform."
 ---
 
 <!-- BLOCK 1 -->

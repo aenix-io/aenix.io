@@ -3,6 +3,36 @@ title: "Cozystack — open-source cloud platform on Kubernetes"
 description: "Cozystack is the open-source cloud platform Aenix created and maintains, and a CNCF project. It runs virtual machines, containers, managed databases, S3..."
 related_pages: ["/products/aenix-platform", "/products/aenix-platform/isp-edition", "/services/platform-engineering", "/services/private-cloud-consulting", "/alternatives/vmware-alternative"]
 language: "en"
+direct_answer: |
+  **Cozystack is an open-source cloud platform built on Kubernetes that runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own, under one Kubernetes-native control plane with multi-tenant isolation. It is licensed Apache 2.0 with no per-CPU or per-core fees, and is a CNCF project (Sandbox since February 2025, CNCF Incubating expected late summer 2026). Aenix is the open-core company that created and maintains Cozystack and is its largest single contributor. Cozystack fits service providers, regulated enterprises, telecom operators, and platform teams that want a self-hosted alternative to proprietary virtualization and public cloud. Aenix sells Ænix Platform, a turnkey cloud-in-a-box on top of Cozystack, plus engagement and managed services.**
+quick_facts:
+  - label: "What it is"
+    value: "An open-source, Kubernetes-native cloud platform running VMs, containers, managed databases, S3, and GPU workloads on bare metal under one multi-tenant control plane."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Core technology"
+    value: "KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD and Rook-Ceph storage, Tenant CRD multi-tenancy, VictoriaMetrics + VictoriaLogs observability."
+  - label: "Who it is for"
+    value: "Service providers, regulated enterprises (DORA/NIS2), telecom operators, AI/GPU operators, and enterprise platform teams running self-hosted private cloud."
+  - label: "Commercial offering"
+    value: "Aenix sells Ænix Platform (turnkey cloud-in-a-box) and services; support tiers Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise Custom."
+  - label: "Certifications"
+    value: "CNCF-Certified Kubernetes Distribution and OpenSSF Best Practices badge."
+faq:
+  - q: "Is Cozystack free to use?"
+    a: "Yes. Cozystack is open source under Apache 2.0 with no per-CPU or per-core licensing, so anyone can deploy it on their own or leased servers. Aenix's commercial Ænix Platform and support engagements on top are optional."
+  - q: "What is the difference between Cozystack and Ænix Platform?"
+    a: "Cozystack is the open-source, community-governed CNCF project. Ænix Platform is Aenix's turnkey commercial cloud-in-a-box built on top of Cozystack, adding a hosting panel, billing, portals, payments, support, a productized installer, and enterprise SLA across five editions."
+  - q: "How does Cozystack run both virtual machines and containers?"
+    a: "Cozystack uses KubeVirt to run KVM-based virtual machines side by side with containers on the same Kubernetes API. VMs support live migration, snapshots, and templates, so legacy VM workloads and cloud-native containers share one control plane."
+  - q: "Can Cozystack be deployed air-gapped?"
+    a: "Yes. Cozystack has a documented air-gapped install workflow, which suits classified, healthcare-restricted, and defence-adjacent environments where the platform must run without internet access."
+  - q: "What hardware does Cozystack support?"
+    a: "Cozystack runs on commodity x86 servers, with ARM support emerging. Bare metal is preferred, though running on VMs is possible. Storage options include LINSTOR (DRBD), Rook-Ceph, and vendor SAN."
+  - q: "Does Aenix provide commercial support?"
+    a: "Yes. Aenix offers Platform Readiness Assessments, build engagements, and managed engagements, with support tiers from Basic ($1,250/month per 10 nodes) up to Enterprise Custom. Direct support covers EU, DACH, and Central Asia time zones, with other regions via partners."
 ---
 
 <!-- BLOCK 1: HERO -->

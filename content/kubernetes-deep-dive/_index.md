@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes Deep Dive Course"
-description: "Kubernetes Deep Dive Course from Aenix — advanced training for engineers covering the Cozystack stack: Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, production-grade."
+description: "Kubernetes Deep Dive Course from Aenix — advanced, hands-on training for engineers on the Cozystack stack: Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux."
 language: "en"
 ---
 

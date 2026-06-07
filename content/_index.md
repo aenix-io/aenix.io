@@ -1,6 +1,6 @@
 ---
 title: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering"
-description: "Ænix Platform — turnkey cloud-in-a-box on Cozystack (CNCF). Five editions for hosting providers, regulated enterprises, public clouds, product engineering teams, and AI-heavy organizations. Open core. EU + US jurisdictions."
+description: "Ænix Platform — turnkey cloud-in-a-box on Cozystack (CNCF). Five editions for hosting, enterprises, public clouds, engineering, and AI teams. Open core."
 language: "en"
 hero_h1: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering."
 hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-source Cozystack project we created and maintain (CNCF). Five editions, one foundation. For hosting providers, regulated enterprises, public clouds, product engineering teams, AI-heavy organizations."

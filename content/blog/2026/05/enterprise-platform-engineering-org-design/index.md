@@ -1,6 +1,6 @@
 ---
 title: "Enterprise platform engineering — org design, headcount, and the failure modes at 1,000+ engineers"
-description: "Long-form companion to the enterprise platform engineering services page. For Engineering VPs, Heads of Platform, and Chief Architects designing platform-engineering function at 1,000+-engineer organisations — covering org design, headcount math, governance, and the failure modes that recur at scale."
+description: "Org design, headcount math, governance, and recurring failure modes for building a platform-engineering function at 1,000+-engineer organisations."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

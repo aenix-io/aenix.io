@@ -1,6 +1,6 @@
 ---
 title: "Telco cloud modernization in 2026 — from legacy NFV to Kubernetes-native edge"
-description: "Long-form companion to the telco industry page. For network architects, cloud-platform leads, and CTOs at tier-1 and tier-2 telecom operators planning the modernization of legacy NFV environments to Kubernetes-native sovereign cloud platforms."
+description: "How tier-1 and tier-2 telecom operators modernize legacy NFV environments into Kubernetes-native sovereign cloud platforms — a guide for architects."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

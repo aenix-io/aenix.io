@@ -9,6 +9,36 @@ related_pages:
   - /products/aenix-platform/isp-edition/
   - /products/aenix-platform/enterprise-edition/
 language: "en"
+direct_answer: |
+  **The VMware Migration Assessment Checklist is a 25-point structured discovery framework for organizations evaluating a VMware exit, covering workload inventory, dependency mapping (vSAN, NSX, vCloud Director, vRealize), network and storage redesign, multi-tenancy modelling, AI/GPU workloads, sovereignty and compliance (DORA, NIS2), operational readiness, and cost trajectory. It is aimed at infrastructure leads, platform engineers, CIO offices, and procurement teams in early evaluation. Aenix uses the same checklist during its 14-day Platform Readiness Assessment and offers it free as a downloadable PDF. The recommended destination is Cozystack, the Apache 2.0 CNCF project Aenix builds, which runs VMs and containers on one Kubernetes API via KubeVirt with Cilium networking and LINSTOR/DRBD storage.**
+quick_facts:
+  - label: "What it is"
+    value: "A free 25-point checklist for evaluating a VMware exit, spanning inventory, dependencies, networking, storage, multi-tenancy, AI/GPU, sovereignty, and cost."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it's for"
+    value: "Infrastructure leads, platform engineers, CIO offices, and procurement teams in early VMware-exit evaluation."
+  - label: "How Aenix uses it"
+    value: "It mirrors the structured discovery Aenix runs during its 14-day Platform Readiness Assessment."
+  - label: "Destination platform"
+    value: "Cozystack — VMs and containers on one Kubernetes API via KubeVirt, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
+  - label: "Compliance coverage"
+    value: "Checklist items map VMware exit decisions to DORA and NIS2 alignment and key custody."
+faq:
+  - q: "What does the VMware migration checklist cover?"
+    a: "Eight areas: workload inventory and criticality tiers, dependencies (vSAN, NSX, vCloud Director, vRealize), network and storage redesign, multi-tenancy modelling, AI/GPU workloads, sovereignty and compliance, operational readiness, and cost trajectory."
+  - q: "How much does the checklist cost?"
+    a: "It is free. The download is a lead magnet, so it asks for an email address but carries no charge or commitment."
+  - q: "What platform does the checklist recommend migrating to?"
+    a: "Cozystack, the Apache 2.0 CNCF project Aenix builds. It runs VMs and containers on one Kubernetes API using KubeVirt, with Cilium networking and LINSTOR/DRBD storage. vCloud Director organizations map to the Cozystack Tenant CRD."
+  - q: "How does the checklist map vCloud Director multi-tenancy?"
+    a: "It translates vCloud Director organizations to the Cozystack Tenant CRD, the native multi-tenancy primitive, so hosting providers can model existing tenant boundaries on the new platform."
+  - q: "Can I get a deeper assessment than the checklist provides?"
+    a: "Yes. The checklist supports internal discovery; for TCO modelling and architecture design, Aenix runs a 14-day Platform Readiness Assessment. Ænix Platform pricing starts at Basic $1,250/mo for 10 nodes, with Standard, Plus, and Enterprise tiers."
+  - q: "Does the checklist address AI and GPU workloads?"
+    a: "Yes. It compares VMware vGPU to KubeVirt vGPU so teams running GPU-backed AI/ML workloads can plan how those map onto a Kubernetes-based platform after a VMware exit."
 ---
 
 **A 25-point checklist for organizations evaluating a VMware exit. Covers inventory, dependencies, networking, storage, multi-tenancy, AI/GPU, sovereignty, and operational readiness. Used by Aenix during 14-day Platform Readiness Assessments and offered free to teams in early evaluation.**

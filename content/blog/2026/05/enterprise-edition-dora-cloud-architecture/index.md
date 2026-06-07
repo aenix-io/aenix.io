@@ -1,6 +1,6 @@
 ---
 title: "Enterprise Edition for regulated cloud — DORA Articles 21 and 28 mapped to running architecture"
-description: "Long-form companion to the Enterprise Edition product page. For regulated enterprises (banks, insurers, public sector, energy, healthcare) translating DORA Article 21 and Article 28 obligations into a defensible cloud architecture."
+description: "Mapping DORA Article 21 and Article 28 obligations to a defensible cloud architecture for regulated enterprises — banks, insurers, public sector, energy."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

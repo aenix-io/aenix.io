@@ -1,8 +1,38 @@
 ---
 title: "Ænix Platform AI/ML Edition"
-description: "Ænix Platform AI/ML Edition — turnkey AI infrastructure for AI-heavy organizations. Standard AI workloads, service APIs, ready blueprints, databases, models. Multi-tenant GPU scheduling. Sovereignty controls. From idea to running jobs faster."
+description: "Ænix Platform AI/ML Edition: turnkey self-hosted AI infrastructure with multi-tenant GPU scheduling, model serving, and sovereignty controls."
 type: "page"
 language: "en"
+direct_answer: |
+  **Ænix Platform AI/ML Edition is turnkey, self-hosted AI infrastructure for AI-heavy and regulated organizations that need to run inference, fine-tuning, and RAG workloads on their own GPUs instead of hyperscaler AI APIs. Built on Cozystack (Apache 2.0, CNCF project), it bundles multi-tenant GPU scheduling with GPU-class awareness, pre-integrated model serving (vLLM-compatible), vector databases, object storage, ready-to-use open-weight models, service APIs, and sovereignty controls such as customer-controlled encryption keys and air-gapped deployment. Aenix, the open-core company behind Cozystack, productizes and delivers it as a project plus optional managed retainer, letting AI teams reach production faster while keeping model weights, training data, and operations fully under customer control.**
+quick_facts:
+  - label: "What it is"
+    value: "Turnkey, self-hosted multi-tenant AI infrastructure for inference, fine-tuning, and RAG on customer-controlled GPUs"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "For"
+    value: "AI-native organizations at scale, regulated AI deployments, GPU-heavy product companies, telcos and enterprises running internal AI platforms"
+  - label: "GPU support"
+    value: "NVIDIA H100, H200, A100, L40S, B100/B200 (Blackwell); CPU-only and alternative accelerators (AMD MI series, Intel Gaudi) supported"
+  - label: "Foundation"
+    value: "Cozystack with KubeVirt (VMs + containers on one Kubernetes API), Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy"
+  - label: "Engagement"
+    value: "3-6 months for a typical inference fleet; 6-12 months for full inference + fine-tuning + RAG; optional managed retainer"
+faq:
+  - q: "How is AI/ML Edition different from running open-source Cozystack with our own AI stack?"
+    a: "Cozystack provides the multi-tenant Kubernetes and GPU foundation. AI/ML Edition adds pre-integrated inference (vLLM), fine-tuning and RAG patterns, GPU-class-aware multi-tenant scheduling, vector DB and object storage, ready-to-use models and blueprints, AI service APIs, bundled sovereignty controls, GPU sizing expertise, and Aenix delivery experience, saving teams the MLOps build effort."
+  - q: "Which open-weight models are supported?"
+    a: "Open-weight families including Llama 3.x, Mistral / Mixtral, Qwen, DeepSeek (incl. V3), Phi, and Gemma, with new models added as the landscape evolves. Proprietary closed-weight models can be integrated via an API gateway pattern but are not run on customer infrastructure."
+  - q: "Which GPU classes do you support?"
+    a: "NVIDIA H100 and H200 for flagship inference and fine-tuning, A100 for general-purpose work, L40S for cost-effective inference, and B100/B200 (Blackwell) for large training and inference. CPU-only is viable for small models and RAG, and AMD MI series and Intel Gaudi are supported for sovereignty and supply-continuity scenarios."
+  - q: "Can we run this air-gapped?"
+    a: "Yes. Air-gapped deployment is one of the four standard reference architectures: open-weight models, a self-contained registry, customer-controlled HSM-backed keys, and customer-side audit logging. Operational overhead is higher, but sovereignty is maximal."
+  - q: "Is sovereign inference cheaper than hyperscaler AI APIs?"
+    a: "For sustained inference (steady production load or millions of tokens per day), running on owned or leased GPU infrastructure typically delivers a significantly lower cost per token than per-token API pricing. The breakeven depends on your workload pattern, which a discovery call scopes."
+  - q: "Can we fine-tune on customer data and keep ownership?"
+    a: "Yes. Fine-tuning is a first-class workload supporting LoRA, QLoRA, and full or partial multi-GPU runs. Training data and the resulting models stay customer-controlled, with an audit-isolated environment available for regulated training data."
 ---
 
 **AI platform automation out of the box. Standard AI workloads, service APIs, and ready-to-use blueprints, databases, apps and models — so your AI team goes from idea to running jobs faster. Multi-tenant GPU scheduling, vector DBs, sovereignty controls included. Built for AI-native organizations and regulated AI deployments at scale.**

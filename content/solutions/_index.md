@@ -1,6 +1,6 @@
 ---
 title: "Solutions"
-description: "Aenix solutions — trigger-led entry points for cloud platform engagements. DORA, NIS2, data sovereignty, sovereign AI, cloud repatriation, cloud cost optimization, hybrid cloud, developer self-service. Each solution maps to specific Ænix Platform editions and engagement scope."
+description: "Aenix solutions — trigger-led entry points for cloud platform engagements: DORA, NIS2, data sovereignty, sovereign AI, cloud repatriation, hybrid cloud."
 language: "en"
 ---
 

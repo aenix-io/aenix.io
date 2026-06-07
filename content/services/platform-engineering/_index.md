@@ -9,6 +9,36 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **Platform engineering services build and operate the internal developer platform that product teams use for self-service environment provisioning, deployment, observability, secrets, and identity. Aenix delivers these services as the engineering team behind Cozystack, an open-source CNCF project (Apache 2.0) that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and a Tenant CRD multi-tenancy model. Engagements run in three modes: a 14-28 day Platform Readiness Assessment, a 3-12 month platform build with structured knowledge transfer, or a managed platform service with a documented in-house exit path. The work targets organizations with multiple product teams, slow time-to-environment, or compliance and sovereignty pressure, typically from roughly three product teams or thirty engineers upward.**
+quick_facts:
+  - label: "What it is"
+    value: "Build, operation, and acceleration of an internal developer platform with self-service golden paths, multi-tenancy, and a sustainable operational model."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Engineering organizations with multiple product teams, mixed Kubernetes/IaC stacks, or compliance and sovereignty pressure; break-even around 3 product teams or 30 engineers."
+  - label: "Engagement modes"
+    value: "Platform Readiness Assessment (14-28 days), platform build (3-12 months), or managed platform service with documented in-house exit path."
+  - label: "Platform foundation"
+    value: "Cozystack: KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
+  - label: "Delivery"
+    value: "EU-based engineers across CEE and Central Asia; no hyperscaler bias; structured knowledge transfer so your team operates the platform."
+faq:
+  - q: "What is the difference between platform engineering, DevOps, and SRE?"
+    a: "Platform engineering builds and operates the internal platform that product teams consume. DevOps is a cultural-and-tooling practice inside product teams. SRE is a reliability function with operational responsibilities. They overlap in tooling but answer different questions."
+  - q: "Do we have to use Cozystack to engage Aenix?"
+    a: "No. Cozystack is the platform Aenix recommends when it fits, which covers most multi-tenant or sovereign use cases. For organizations invested in OpenShift, vanilla Kubernetes, or vendor-led stacks, Aenix extends the platform you already run."
+  - q: "How large does our organization need to be?"
+    a: "The engagement scales from roughly 50-person engineering organizations to 5000-person organizations. The break-even for structured platform engineering is approximately 3 product teams or 30 engineers; smaller single-team setups are better served by lighter DevOps practice."
+  - q: "Can Aenix extend our existing platform team rather than replace it?"
+    a: "Yes. A time-and-materials engagement adds 2-5 senior platform engineers to your existing team, working under your governance and on-call patterns."
+  - q: "What does the ramp-down look like at the end of an engagement?"
+    a: "Engagements include structured knowledge transfer throughout, named in-house owners, and runbook authoring. By the end of the build phase your team operates the platform without Aenix. An optional managed-services arrangement extends support if needed."
+  - q: "How does an engagement typically start?"
+    a: "Most engagements begin with a free 30-minute discovery call to confirm fit and stage, followed by a 14-28 day Platform Readiness Assessment that produces a written target architecture and roadmap. The build-versus-managed decision is informed by the assessment's capacity workstream."
 ---
 
 <!-- BLOCK 1: HERO -->

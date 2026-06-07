@@ -1,6 +1,6 @@
 ---
 title: "Public Cloud Edition — what it actually takes to launch a sovereign cloud product at scale"
-description: "Long-form companion to the Public Cloud Edition product page. For tier-1 telcos, national operators, big banks building their own cloud, and large sovereign cloud initiatives: what a multi-million-euro multi-year build covers, and how to phase it."
+description: "Long-form companion to the Public Cloud Edition page: what a multi-year, multi-million-euro sovereign cloud build covers for telcos, banks, and operators."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

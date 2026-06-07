@@ -1,8 +1,38 @@
 ---
 title: "Ænix Platform Enterprise Edition"
-description: "Ænix Platform Enterprise Edition — private and hybrid sovereign cloud for banks, insurance, public administration, telco, healthcare. DORA / NIS2-aligned. Multi-DC. One control plane connecting to VMware, OpenNebula, OpenShift. Customer-controlled keys."
+description: "Ænix Platform Enterprise Edition: private and hybrid sovereign cloud for regulated banks, insurance, public sector, telco and healthcare. DORA / NIS2-aligned."
 type: "page"
 language: "en"
+direct_answer: |
+  **Ænix Platform Enterprise Edition is a private and hybrid sovereign cloud built for regulated enterprises — banks, insurance carriers, public administration, telco, and healthcare operators. It runs on Cozystack, the open-source CNCF project Aenix created, and is delivered as multi-year platform builds (typically 9-18 months to full production). It provides a single Kubernetes-native control plane that coexists with existing VMware, OpenNebula, and OpenShift estates rather than forcing rip-and-replace. The edition adds pre-validated DORA and NIS2 architecture controls, customer-controlled encryption keys at every data layer, audit-ready logging, multi-datacenter operations, ISO 27001 and SOC 2 alignment support, enterprise SLA with 24/7 support, and engineering training. No per-CPU or per-core licensing applies.**
+quick_facts:
+  - label: "What it is"
+    value: "Private and hybrid sovereign cloud for regulated enterprises, built on Cozystack with one control plane that coexists with VMware, OpenNebula, and OpenShift"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "For"
+    value: "Regulated enterprises — banks, insurance, public administration, telco, healthcare, regulated industrial / energy operators"
+  - label: "Engagement"
+    value: "Multi-year platform builds; 3-6 month pilot, 9-18 months to full multi-DC production"
+  - label: "Compliance"
+    value: "DORA / NIS2-aligned by design; ISO 27001 / SOC 2 alignment; air-gap and sovereign-deployment options"
+  - label: "Architecture"
+    value: "Kubernetes-native, multi-DC, KubeVirt VMs + containers on one API, Cilium (eBPF) networking, LINSTOR storage, Tenant CRD multi-tenancy, customer-controlled keys"
+faq:
+  - q: "How is Enterprise Edition different from running open-source Cozystack ourselves?"
+    a: "Cozystack provides the Kubernetes-native multi-tenant platform foundation. Enterprise Edition adds pre-validated DORA / NIS2 architecture bundles, multi-DC operations runbooks, customer-managed encryption at every layer, an audit-ready logging stack, hybrid integration with VMware / OpenNebula / OpenShift, ISO 27001 / SOC 2 alignment support, enterprise SLA with 24/7 support, and engineering training."
+  - q: "Can Enterprise Edition coexist with our existing VMware, OpenStack, or OpenShift?"
+    a: "Yes. It is designed for coexistence, not rip-and-replace. A single Cozystack-based control plane integrates with existing VMware Cloud Foundation, OpenStack, OpenNebula, and OpenShift estates, allowing gradual consolidation at the pace of each workload. Many enterprise deployments run hybrid for years."
+  - q: "How does Enterprise Edition support DORA and NIS2 compliance?"
+    a: "It provides customer-controlled encryption keys at every data layer, audit-ready logging via VictoriaLogs with an immutable backend, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness mechanics, and Cilium-based network segmentation. These map to specific DORA Article 21/23/28 and NIS2 Article 21/23/30 requirements."
+  - q: "What is the deployment timeline?"
+    a: "A defined-slice pilot runs 3-6 months. A full Enterprise Edition deployment runs 9-18 months. Multi-DC deployments with sovereign-deployment requirements typically run 12-24 months. Engagements usually start with a fixed-price Platform Readiness Assessment for DORA / NIS2 gap analysis and an architecture roadmap."
+  - q: "Is air-gapped deployment supported?"
+    a: "Yes. Enterprise Edition supports fully air-gapped operation with no internet egress required, using offline updates via signed bundles. It is used in defence, sovereign cloud, and isolated industrial environments. Encryption keys are customer-managed (BYOK / HYOK) with HSM integration."
+  - q: "Who controls the encryption keys?"
+    a: "The customer. Keys are held by the customer at every layer — primary store, replicas, backups, observability data, and model weights at rest. Vendor-managed-only keys are explicitly avoided, and provider personnel access is logged and time-limited."
 ---
 
 **Private and hybrid sovereign cloud for regulated enterprises. Secure, automated, and easy to extend. Built for multi-DC setups, DORA / NIS2 compliance, and enterprise integrations. One control plane that connects to VMware, OpenNebula, OpenShift, and more — turnkey cloud-in-a-box on customer-controlled hardware. Includes education and training.**

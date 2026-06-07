@@ -10,6 +10,36 @@ related_pages:
   - /products/cozystack/
   - /pricing
 language: "en"
+direct_answer: |
+  **Cloud repatriation is the practice of moving selected workloads out of public cloud (AWS, Azure, GCP) into private cloud, hybrid, or on-premises environments, typically to cut steady-state cost, satisfy data-sovereignty and regulatory pressure (DORA, NIS2, GDPR), or control AI and inference economics. Aenix runs a structured repatriation engagement, delivered as part of its Platform Readiness Assessment, that produces an honest TCO model, a per-workload "repatriate now / later / stay" ranking, a destination architecture, and a cutover sequence. Aenix is the company behind Cozystack, an Apache 2.0 CNCF project that unifies VMs and containers on one Kubernetes API and is the platform Aenix typically recommends as a repatriation destination. The engagement is delivered by engineers with no hyperscaler commercial bias.**
+quick_facts:
+  - label: "What it is"
+    value: "A structured engagement that moves selected workloads from public cloud to private cloud, hybrid, or on-prem without breaking the application."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Engagement length"
+    value: "14-day (focused TCO + repatriation) or 28-day (full repatriation program), fixed-price, single invoice"
+  - label: "Who it is for"
+    value: "Organizations with seven-figure cloud bills, predictable steady-state workloads, sovereignty exposure, or AI/ML egress and inference costs, plus an internal platform-engineering function"
+  - label: "Deliverables"
+    value: "Honest TCO model, per-workload repatriation ranking, destination architecture, cutover sequencing, and a Phase 2 implementation roadmap"
+  - label: "Destination platform"
+    value: "Cozystack — KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy"
+faq:
+  - q: "Is cloud repatriation the same as going fully on-prem?"
+    a: "No. Repatriation usually means moving a subset of workloads — typically 30-60%, the steady-state, regulated, or expensive ones — to private cloud, hybrid, or on-prem, while elastic and latency-sensitive workloads stay in public cloud. Treating it as all-or-nothing usually destroys the economic case."
+  - q: "How long does a cloud repatriation take?"
+    a: "The Aenix assessment is 14 or 28 days. Phase 2 implementation depends on estate size: roughly 6-12 months for a 100-VM estate and 12-24 months for a 1000-VM estate. The economic case typically clarifies after 9-12 months as cloud commitments lapse."
+  - q: "Will Aenix just recommend Cozystack at the end?"
+    a: "Only where it fits. Where Cozystack suits the destination architecture better than the alternative, the report explains why with named architectural attributes. Where a different stack fits — hyperscaler with better controls, OpenShift, or vanilla Kubernetes on commodity hardware — Aenix says so. There is no hyperscaler commercial bias."
+  - q: "What does the repatriation destination platform cost?"
+    a: "Cozystack itself is Apache 2.0 with no per-CPU or per-core licensing. The productized Ænix Platform and support are priced in tiers: Basic at $1,250/mo (10 nodes), Standard at $3,000/mo, Plus at $5,500/mo, and Enterprise on custom terms."
+  - q: "What if our public cloud reserved commitments lock us in?"
+    a: "The cutover sequencing plan respects commitment expiration ladders. Repatriation cadence is aligned with AWS Reserved Instances, Azure RI, and Savings Plan expirations rather than fighting them, so workloads move as commitments lapse."
+  - q: "What if our team cannot operate a private cloud platform afterwards?"
+    a: "Two paths are scoped during the assessment: Aenix runs the platform under a managed-services arrangement, or Aenix builds your platform team's capacity through a structured platform-engineering engagement."
 ---
 
 <!-- BLOCK 1: HERO -->

@@ -1,6 +1,6 @@
 ---
 title: "Ænix Platform pricing"
-description: "Ænix Platform pricing — five editions × four support tiers. ISP Edition entry from $1,250 / month (10 nodes). Public Cloud / Enterprise / IDP / AI/ML editions priced per engagement. Free ROI calculator. Cozystack open source remains free."
+description: "Ænix Platform pricing: five editions and four support tiers. ISP Edition from $1,250/month for 10 nodes. Free ROI calculator. Cozystack stays open source."
 language: "en"
 ---
 

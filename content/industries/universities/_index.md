@@ -9,6 +9,36 @@ related_pages:
   - /products/aenix-platform/ai-ml-edition/
   - /products/cozystack
 language: "en"
+direct_answer: |
+  **Cozystack is an open-source cloud platform that universities and research institutions use to serve three overlapping missions on one foundation: research computing (including GPU clusters for AI/ML), reproducible research environments for publication, and curriculum delivery for cloud-native courses. It is multi-tenant via a Tenant CRD, so departments, labs, and student cohorts get isolated quotas, RBAC, and audit trails; it runs VMs and containers side by side on one Kubernetes API through KubeVirt; and it supports air-gapped deployment where research-data sovereignty matters. Aenix, the team behind Cozystack, builds and supports these platforms for universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia, with academic-friendly engagement structures aligned to grant cycles.**
+quick_facts:
+  - label: "What it is"
+    value: "An open-source, multi-tenant Cozystack cloud platform for university research computing, reproducible research, and cloud-native teaching, built and supported by Aenix."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia."
+  - label: "Key capability"
+    value: "GPU-as-a-service (vGPU, MIG, time-slicing; validated A100/H100/H200/L40S/Blackwell), Tenant CRD per-lab and per-cohort isolation, KubeVirt VMs plus containers, and air-gapped support."
+  - label: "Standards and federation"
+    value: "Supports reproducible-research mandates (Plan S, FAIR, Horizon Europe) and integrates with research-infrastructure federations such as EOSC, EuroHPC, and GÉANT via standard Kubernetes APIs."
+  - label: "Engagement"
+    value: "Academic discounts, phased engagement aligned to grant cycles, and explicit capacity transfer to in-house academic IT."
+faq:
+  - q: "Can Cozystack provide GPU access for AI/ML research labs?"
+    a: "Yes. Cozystack offers GPU-as-a-service with NVIDIA vGPU, MIG, and time-slicing for shared utilization, validated on A100, H100, H200, L40S, and Blackwell. Labs self-provision GPU environments under per-lab quotas via the Tenant CRD, without ticket queues."
+  - q: "How does Cozystack isolate departments, labs, and student cohorts?"
+    a: "Through the Tenant CRD multi-tenancy model. Each department, lab, or student cohort gets its own tenant with quotas, RBAC, and audit trails. Cohort sandboxes support per-student quotas and automatic cleanup, so teaching and research workloads stay isolated on shared hardware."
+  - q: "Does Cozystack support sensitive or classified research data?"
+    a: "Yes. Cozystack supports air-gapped deployment for medical, classified, or industrial-partner research under NDA constraints, keeping data within institutional control. This suits sovereignty requirements where research data cannot leave the institution."
+  - q: "Can it run both legacy VM workloads and modern containers?"
+    a: "Yes. Cozystack runs VMs and containers side by side on a single Kubernetes API using KubeVirt. This accommodates legacy research workflows alongside modern containerized pipelines without requiring a separate virtualization stack."
+  - q: "Is Cozystack suitable for teaching cloud-native courses?"
+    a: "Yes. Computer-science and engineering departments use it to teach Kubernetes, KubeVirt, GitOps, and observability. Because it is open source (Apache 2.0) and a CNCF project, students can run it on personal hardware and gain CNCF-ecosystem familiarity that matches production reality."
+  - q: "How does Aenix structure university engagements?"
+    a: "Aenix offers academic discounts on commercial support tiers, phased engagement aligned to research-grant cycles, and explicit capacity transfer so academic IT teams operate the platform after build. Engagements can run through EU TED and member-state public-procurement portals and serve multi-institution consortia."
 ---
 
 **Universities and research institutions in 2026 need cloud-native infrastructure for three overlapping missions: serious research computing (especially AI/ML), reproducible research environments for publication, and curriculum delivery for cloud-native courses. Cozystack provides a single open-source foundation that serves all three — multi-tenant for departments, labs, and student cohorts; KubeVirt for legacy and modern workloads; GPU-as-a-service for AI research; air-gapped support where research data sovereignty matters.**

@@ -10,6 +10,36 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+direct_answer: |
+  **Cloud cost optimization is the practice of reducing public-cloud spend by eliminating waste, right-sizing resources, tuning commitments, and deciding which workloads belong in the hyperscaler versus on infrastructure you control. It is for organizations with seven-figure annual cloud bills, sustained predictable workloads, and a cost trajectory that worries finance. Aenix runs a structured, vendor-neutral cost engagement (14 or 28 days) that produces an honest TCO model, a quantified cost-leak inventory, right-sizing recommendations, and a 12-month spend trajectory. Aenix holds no hyperscaler partnership, so recommendations are not shaped by partnership economics. When the math favours leaving cloud, Cozystack — the open-source Kubernetes-native platform behind Aenix — provides a customer-controlled destination, typically cutting TCO 40-70% on sustained workloads.**
+quick_facts:
+  - label: "What it is"
+    value: "A structured engagement that quantifies where public-cloud spend leaks and decides what to fix in-cloud versus move to controlled infrastructure"
+  - label: "Who it is for"
+    value: "Organizations with seven-figure annual cloud bills, sustained predictable workloads, or an upcoming board-level cost decision"
+  - label: "Engagement timeline"
+    value: "14-day focused cost scope or 28-day full cost program; free 30-minute discovery call on Day 0, written executive readout on the final day"
+  - label: "Vendor neutrality"
+    value: "Aenix holds no hyperscaler partnership; recommendations are not shaped by partnership economics"
+  - label: "Typical savings range"
+    value: "15-25% addressable from cost leaks before any architectural change; 40-70% TCO reduction when sustained workloads move to customer-controlled hardware"
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+faq:
+  - q: "Is this a FinOps engagement or a cost-optimization engagement?"
+    a: "Both. Pure FinOps captures configurational savings — right-sizing, reservation tuning, waste elimination. The architecture-level decisions that separate structural from configurational savings require platform engineering. The Aenix engagement covers both layers in one program."
+  - q: "How does this differ from a Big-4 cloud cost engagement?"
+    a: "Big-4 engagements are usually delivered by management consultants and shaped by hyperscaler-partnership economics. Aenix engineers do the work, and Aenix is partnered with no hyperscaler. The recommendation states plainly when staying in cloud is right and when leaving is right."
+  - q: "Can you guarantee a specific percentage of savings?"
+    a: "No, and Aenix does not pitch percentage promises. Well-managed estates typically yield 15-25% before any architectural change; mismanaged estates 30-50%; estates with a strong repatriation case can be higher but require Phase 2 implementation work. The honest figure comes from the assessment."
+  - q: "Will Aenix recommend repatriation at the end?"
+    a: "Only when the math supports it and the buyer can operate the destination platform. Often the answer is partial repatriation of selected workloads plus optimization for the remainder; sometimes pure optimization is right. The written report names the answer for your specific case."
+  - q: "What does Aenix deliver at the end of the engagement?"
+    a: "An honest TCO model by account, service, and team; a quantified cost-leak inventory with named commitments and instance IDs; per-workload right-sizing recommendations; architectural cost decisions; a 12-month spend trajectory with confidence ranges; and a FinOps owner and process plan."
+  - q: "Can we run this under a procurement process?"
+    a: "Yes. Aenix accepts RFI and RFP through standard procurement channels in EU member states and Kazakhstan. The engagement is fixed-price with a single invoice; the assessment fee is credited toward Phase 2 implementation subject to scope."
 ---
 
 <!-- BLOCK 1: HERO -->
