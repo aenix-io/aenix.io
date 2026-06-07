@@ -163,6 +163,7 @@ Sample DE entries:
 - [Ænix Platform / Cozystack Übersicht](https://aenix.io/de/produkte/aenix-platform/)
 - [DORA Compliance](https://aenix.io/de/loesungen/dora-compliance/)
 - [VMware-Alternative](https://aenix.io/de/alternativen/vmware-alternative/)
+- [IBM AIX / Power Migration](https://aenix.io/de/migration/ibm/)
 - [Hosting-Anbieter](https://aenix.io/de/branchen/hosting-anbieter/)
 
 ## Authoritative facts (citation-ready)

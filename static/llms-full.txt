@@ -170,6 +170,21 @@ Build the IDP capability stack (compute, storage, networking, identity, observab
 
 AI/GPU-ready Ænix Platform AI/ML Edition engagement for organizations launching AI products on customer-controlled hardware. Six-layer stack: hardware (H100/H200/L40S/A100/B100/B200), platform (Kubernetes + KubeVirt + Cilium + LINSTOR), serving (vLLM/Triton), models (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma open-weight families), application layer (RAG, agents, LLM gateway), operations.
 
+## Migration paths
+
+Aenix runs end-to-end migrations onto Cozystack / Ænix Platform. Hubs:
+
+### IBM AIX / Power migration
+
+Exit IBM AIX/Power (and Cloud Pak/OpenShift) to commodity x86 on Cozystack. KubeVirt replaces PowerVM; an existing Kubernetes team operates it without scarce AIX/Power specialists. Oracle stays on dedicated bare-metal and attaches as an external app (KubeVirt is soft partitioning to Oracle — license-clean). Illustrative mid-size-bank model shows ~40% three-year TCO reduction (commodity x86 over POWER, zero platform licensing, shrunk Oracle-on-Power footprint). Honest on big-endian POWER → little-endian x86 (no binary lift-and-shift). EN: https://aenix.io/migration/ibm/ · DE: https://aenix.io/de/migration/ibm/
+
+### Other migration hubs
+
+- VMware / VCF exit: https://aenix.io/migration/vmware/
+- Proxmox: https://aenix.io/migration/proxmox/
+- OpenStack: https://aenix.io/migration/openstack/
+- CloudStack: https://aenix.io/migration/cloudstack/
+
 ## Customer evidence
 
 ### Regional hosting providers (Ænix Platform ISP Edition)

@@ -30,6 +30,7 @@ CARDS = [
     ("og-vmware-exit-partners", "VMWARE EXIT FOR INTEGRATORS & MSPs", "Turn the renewal into margin"),
     ("og-vmware-cost-calculator", "TOOL", "VMware cost calculator"),
     ("og-ibm-migration", "IBM AIX / POWER MIGRATION", "Exit Power to an open cloud"),
+    ("og-vmware-replacement-broadcom", "VMWARE REPLACEMENT", "Life after Broadcom"),
     # DE
     ("og-fuer-de", "NACH ROLLE", "Ihr Einstieg zu Aenix"),
     ("og-leiter-infrastruktur-de", "FÜR INFRASTRUKTURLEITER", "VMware ablösen, zu Ihren Bedingungen"),
@@ -41,6 +42,7 @@ CARDS = [
     ("og-leiter-ai-ml-de", "FÜR AI / ML-LEITER", "GPU-Infrastruktur, die Sie kontrollieren"),
     ("og-vmware-exit-partners-de", "VMWARE-AUSSTIEG FÜR INTEGRATOREN", "Verlängerung zu Marge"),
     ("og-vmware-kostenrechner-de", "TOOL", "VMware-Kostenrechner"),
+    ("og-ibm-migration-de", "IBM AIX / POWER MIGRATION", "Von Power zur offenen Cloud"),
 ]
 
 
