@@ -1,8 +1,38 @@
 ---
 title: "Ænix Platform Public Cloud Edition"
-description: "Ænix Platform Public Cloud Edition — Multi-Hypervisor-Cloud-Control-Plane für große Public Clouds, große Banken mit eigener Cloud, große Telcos. Multi-Region, Drittanbieter-Integration, turnkey Portal+Billing+Payments."
+description: "Multi-Hypervisor-Control-Plane für große Public Clouds, Banken und Telcos: Multi-Region, turnkey Portal, Billing und Payments — gebaut auf Cozystack."
 type: "page"
 language: "de"
+direct_answer: |
+  **Die Ænix Platform Public Cloud Edition ist eine turnkey Public-Cloud-Control-Plane für große Betreiber — Public-Cloud-Unternehmen, große Banken mit eigener Cloud und nationale Telcos. Sie orchestriert KubeVirt-VMs und -Container über eine einzige Kubernetes-API und integriert sich mit bestehender VMware-, OpenStack-, OpenNebula- und OpenShift-Infrastruktur (Multi-Hypervisor, Multi-Region). Sie baut auf dem Open-Source-Projekt Cozystack (Apache 2.0, CNCF) auf und ergänzt es um Multi-Region-Control-Plane, Billing-Backend und -Frontend, Payment-Integrationen, gebrandetes Kundenportal, produktisierten Installer, Enterprise-SLA und dedizierten Support. Aenix liefert die Plattform plus Engineering-Services für mehrjährige Programme im Bereich €1M-€10M+.**
+quick_facts:
+  - label: "Was es ist"
+    value: "Turnkey Public-Cloud-Control-Plane (Multi-Hypervisor, Multi-Region) für große Cloud-Betreiber, Banken mit eigener Cloud und nationale Telcos, gebaut auf Cozystack"
+  - label: "Lizenz"
+    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+  - label: "Status"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+  - label: "Zielgruppe"
+    value: "Große Public-Cloud-Betreiber, Tier-1-Banken mit eigener Cloud, große Telcos / nationale Operatoren"
+  - label: "Architektur"
+    value: "Kubernetes-nativ; KubeVirt für VMs und Container über eine API; Cilium (eBPF) Networking; LINSTOR/DRBD Storage; Multi-Tenant über Tenant CRD"
+  - label: "Engagement-Größe"
+    value: "€1M-€10M+ mehrjährige Programme; 3-6 Monate Pilot, 6-18 Monate für vollständiges Multi-Region-Deployment"
+  - label: "Regulatorik"
+    value: "Vorvalidiert gegen DORA / NIS2 / ISO 27001 / SOC 2, wenn der Betreiber selbst eine regulierte Entität ist"
+faq:
+  - q: "Wie unterscheidet sich Public Cloud Edition vom Selbstbetrieb von Open-Source-Cozystack?"
+    a: "Cozystack ist eine Kubernetes-native Multi-Tenant-Cloud-Plattform, endet aber vor der Operator-Surface, die ein echtes Cloud-Geschäft braucht. Public Cloud Edition ergänzt Multi-Region-Control-Plane, Billing-Backend und -Frontend, Payment-Integrationen, kundenseitige Portal-Anpassung, produktisierten Installer, Enterprise-SLA und dedizierten Support."
+  - q: "Wie unterscheidet sich Public Cloud Edition von der Enterprise Edition?"
+    a: "Public Cloud Edition ist für Betreiber, die Cloud als Produkt verkaufen (Public Cloud, große Bank-interne Cloud, großer Telco). Enterprise Edition ist für regulierte Unternehmen, die Cloud intern konsumieren. Gleiche Cozystack-Foundation, unterschiedliches Feature-Bundle und Engagement-Modell."
+  - q: "Kann Public Cloud Edition mit unserem bestehenden VMware- oder OpenStack-Estate koexistieren?"
+    a: "Ja. Public Cloud Edition ist für Multi-Hypervisor-Koexistenz designed. Sie integriert sich mit bestehenden VMware-, OpenStack-, OpenNebula- und OpenShift-Footprints und ermöglicht graduelle Konsolidierung statt Rip-and-Replace."
+  - q: "Unterstützt Public Cloud Edition Multi-Region-Deployments?"
+    a: "Ja. Die Control-Plane orchestriert Workload-Platzierung, Identity, Network und Storage-Policy über Regionen hinweg. Das Tenant CRD skaliert natürlich auf regionales und multi-regionales Deployment. Ein vollständiges Multi-Region-Deployment dauert typisch 6-18 Monate, eine Pilot-Phase 3-6 Monate."
+  - q: "Was kostet Public Cloud Edition?"
+    a: "Public Cloud Edition wird als mehrjähriges Programm im Bereich €1M-€10M+ kalkuliert, Pricing auf Anfrage. Die produktisierte Ænix Platform ist daneben in Stufen verfügbar (Basic 1.250 $/Monat für 10 Nodes, Standard 3.000 $, Plus 5.500 $, Enterprise Custom). Ein Discovery-Call definiert den Scope."
+  - q: "Welche Compliance-Anforderungen deckt Public Cloud Edition ab?"
+    a: "Public Cloud Edition ist vorvalidiert gegen DORA, NIS2, ISO 27001 und SOC 2 — relevant, wenn der Cloud-Betreiber selbst eine regulierte Entität ist, etwa eine Bank mit eigener Cloud oder ein nationaler Telco."
 ---
 
 **Eine turnkey Public-Cloud-Control-Plane für große Betreiber — Public-Cloud-Unternehmen, große Banken mit eigener Cloud, nationale Telcos. Multi-Hypervisor, Multi-Region, integriert mit Drittanbieter-Infrastruktur. Gebaut für Rechenzentren und Cloud-Anbieter, die Public Clouds at hyperscaler-adjacent scale starten oder skalieren.**

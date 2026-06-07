@@ -1,6 +1,6 @@
 ---
 title: "Aenix Partner-Programm"
-description: "Aenix Partner-Programm — bis zu 40% Marge auf Ænix-Platform-Verkäufe für Reseller, Integratoren und Distributoren. Deal-Schutz, Sales-Kit, Technical-Pre-Sales-Support, L3-Support-Zugang, Training. Aktuelle Partner: GoHost.kz, Hidora, QOSI, TECH EVOLVERS INC."
+description: "Aenix Partner-Programm: bis zu 40% Marge auf Ænix-Platform-Verkäufe, Deal-Schutz, Sales-Kit und L3-Support für Reseller, Integratoren und Distributoren."
 language: "de"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Über Aenix"
-description: "Aenix ist ein Open-Core-Unternehmen mit Hauptsitz in Tschechien und den USA. Wir haben Cozystack — ein CNCF-Projekt — erstellt und kommerzialisieren es als Ænix Platform: turnkey Cloud-in-a-Box in fünf Editions. Produktionsreife Technologie und Team."
+description: "Aenix ist ein Open-Core-Unternehmen aus Tschechien und den USA. Wir haben Cozystack (CNCF-Projekt) erstellt und kommerzialisieren es als Ænix Platform."
 language: "de"
 ---
 

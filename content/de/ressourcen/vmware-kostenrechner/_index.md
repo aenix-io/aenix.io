@@ -1,6 +1,6 @@
 ---
 title: "VMware-Kostenrechner — Einsparungen nach Broadcom berechnen"
-description: "Kostenloser VMware-Kostenrechner: Kerne und Verlängerungspreis eingeben und Jahresersparnis, 3-Jahres-Netto und Amortisation der Migration auf offene Plattform sehen."
+description: "Kostenloser VMware-Kostenrechner: Kerne und Verlängerungspreis eingeben, Jahresersparnis, 3-Jahres-Netto und Migrations-Amortisation berechnen."
 type: "page"
 language: "de"
 images: ["img/og/og-vmware-kostenrechner-de.png"]
@@ -12,6 +12,36 @@ related_pages:
   - /de/migration/
   - /de/loesungen/cloud-repatriation/
   - /de/ressourcen/
+direct_answer: |
+  **Der VMware-Kostenrechner von Aenix ist ein kostenloses, interaktives Werkzeug, das Broadcoms VMware/VCF-Verlängerung in eine konkrete Zahl übersetzt: Sie geben Ihre CPU-Kerne, den Preis pro Kern und Jahr sowie die einmaligen Migrationskosten ein und sehen sofort Jahreskosten, Netto-Jahresersparnis, das Drei-Jahres-Netto und die Amortisationszeit. Er richtet sich an Infrastruktur-, Finanz- und Einkaufsteams, die einen VMware-Ausstieg planen. Die modellierte Zielplattform ist Cozystack (Apache 2.0, keine Pro-Core-Lizenz) — gebaut vom Team hinter Cozystack. Auf migrierten Workloads sind typischerweise 30–60% Kostensenkung möglich; Ihre Zahlen können abweichen.**
+quick_facts:
+  - label: "Was es ist"
+    value: "Interaktiver Rechner, der VMware/VCF-Kosten gegen eine offene Apache-2.0-Alternative stellt und Jahresersparnis, 3-Jahres-Netto und Amortisation ausgibt."
+  - label: "Für wen"
+    value: "Infrastruktur-, Finanz- und Einkaufsteams, die einen VMware-Ausstieg nach der Broadcom-Verlängerung planen."
+  - label: "Eingaben"
+    value: "CPU-Kerne, VMware-Kosten pro Kern/Jahr, Aenix-Support pro Kern/Jahr, einmalige Migrationskosten."
+  - label: "Typisches Ergebnis"
+    value: "30–60% Kostensenkung bei migrierten Workloads (eigene Zahlen können abweichen)."
+  - label: "Lizenz"
+    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+  - label: "Zielplattform"
+    value: "Cozystack — KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage."
+  - label: "Status"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+faq:
+  - q: "Ist das ein offizieller VMware/Broadcom-Rechner?"
+    a: "Nein. Es ist ein unabhängiger Schätzer von Aenix, der VMware/VCF-Ausgaben mit einer offenen Apache-2.0-Alternative vergleicht. Geben Sie Ihre eigenen Zahlen ein, um ein belastbares Ergebnis für Ihren Bestand zu erhalten."
+  - q: "Welchen Preis pro Kern soll ich eingeben?"
+    a: "Nehmen Sie Ihre aktuelle VMware/VCF-Subskription und teilen Sie sie durch die Zahl der lizenzierten Kerne. Liegt nur eine Gesamtsumme vor, teilen Sie diese durch die Kernzahl, um den Preis pro Kern und Jahr zu erhalten."
+  - q: "Hat die Zielplattform wirklich keine Lizenzkosten?"
+    a: "Die Plattform ist Cozystack, lizenziert unter Apache 2.0 — es gibt keine Pro-Core- oder Pro-Socket-Lizenz. Sie zahlen nur Support und/oder das einmalige Aufbauprojekt; beide Posten sind im Rechner editierbar."
+  - q: "Muss ich meinen gesamten Bestand migrieren?"
+    a: "Nein. Die Ersparnis gilt für die migrierten Workloads; manche Workloads bleiben besser, wo sie sind. Der Rechner liefert ein Lizenz- und Support-Delta, keine erzwungene Komplettmigration."
+  - q: "Was deckt der Rechner nicht ab?"
+    a: "Bewusst einfache Eingaben für ein belegbares Ergebnis. Eine volle TCO umfasst Strom, Hardware-Refresh, Personal und Workloads, die in der Cloud bleiben — das modellieren wir im Erstgespräch Workload-genau mit Ihnen."
+  - q: "Können Sie meine Zahlen validieren?"
+    a: "Ja. Ein 30-minütiges Erstgespräch liefert eine ehrliche, Workload-genaue TCO-Einschätzung mit dem Team hinter Cozystack."
 ---
 
 <!-- BLOCK 1: HERO -->

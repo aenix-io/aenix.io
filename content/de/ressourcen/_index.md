@@ -1,6 +1,6 @@
 ---
 title: "Ressourcen"
-description: "Kostenlose Aenix-Ressourcen — Checklisten, Decision Guides, TCO-Worksheets, Maturity Assessments. Intern bei Aenix-Engagements verwendet; verfügbar kostenlos zur Selbsteinschätzung."
+description: "Kostenlose Aenix-Ressourcen — Checklisten, Decision Guides, TCO-Worksheets und Maturity Assessments. Die gleichen Frameworks zur Selbsteinschätzung."
 language: "de"
 ---
 

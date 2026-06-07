@@ -1,6 +1,6 @@
 ---
 title: "Mit uns sprechen"
-description: "Kontaktieren Sie Aenix für Ænix-Platform-Editions, Discovery-Call buchen oder zu Partnerschaften melden. EU-Büro: AENIX s.r.o. (Tschechien). US-Büro: AENIX INC (Delaware)."
+description: "Kontaktieren Sie Aenix zu Ænix-Platform-Editions, Discovery-Calls oder Partnerschaften. EU-Büro: AENIX s.r.o. (Tschechien), US-Büro: AENIX INC (Delaware)."
 language: "de"
 ---
 

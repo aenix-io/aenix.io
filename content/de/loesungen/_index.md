@@ -1,6 +1,6 @@
 ---
 title: "Lösungen"
-description: "Aenix-Lösungen — trigger-basierte Einstiegspunkte für Cloud-Plattform-Engagements. DORA, NIS2, Datensouveränität, souveräne KI, Cloud-Repatriation, Cloud-Kostenoptimierung, Hybrid Cloud, Developer Self-Service. Jede Lösung mappt auf spezifische Ænix-Platform-Editions und Engagement-Scope."
+description: "Aenix-Lösungen für Cloud-Plattform-Engagements: DORA, NIS2, Datensouveränität, souveräne KI, Cloud-Repatriation, Kostenoptimierung, Hybrid Cloud."
 language: "de"
 ---
 

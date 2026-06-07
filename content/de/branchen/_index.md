@@ -1,6 +1,6 @@
 ---
 title: "Branchen"
-description: "Aenix Branchen-Landings — vertikaler Proof und Use Cases. Finanzdienstleistungen, öffentlicher Sektor, Telco, Hosting-Anbieter, Energie, Versicherung, Fertigung, Transport, Bildung, MSP, Universitäten."
+description: "Aenix Branchen-Landings — vertikaler Proof und Use Cases für Finanzdienstleistungen, öffentlicher Sektor, Telco, Hosting, Energie und weitere Branchen."
 language: "de"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Für Infrastrukturleiter — VMware ablösen, zu Ihren Bedingungen"
-description: "Nach den Broadcom-Preisen ist die VMware-Verlängerung Chefsache. Ihre echten Optionen: eine offene, schlüsselfertige Cloud-Plattform — oder ein Team, das Ihre baut."
+description: "Nach den Broadcom-Preisen ist die VMware-Verlängerung Chefsache. Ihre Optionen: eine offene, schlüsselfertige Cloud-Plattform — oder ein Team, das Ihre baut."
 type: "page"
 language: "de"
 images: ["img/og/og-leiter-infrastruktur-de.png"]

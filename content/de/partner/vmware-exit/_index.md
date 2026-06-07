@@ -1,6 +1,6 @@
 ---
 title: "VMware-Ausstieg für Integratoren & MSPs — Verlängerung zu Marge"
-description: "Die VMware-Kosten Ihrer Kunden sind gestiegen. Bieten Sie eine offene, souveräne Cloud auf Cozystack zum Wiederverkauf oder Co-Delivery — bis 40% Marge, Deal-Schutz."
+description: "Die VMware-Kosten Ihrer Kunden sind gestiegen. Bieten Sie eine offene, souveräne Cloud auf Cozystack zum Wiederverkauf oder Co-Delivery — bis 40% Marge."
 type: "page"
 language: "de"
 images: ["img/og/og-vmware-exit-partners-de.png"]

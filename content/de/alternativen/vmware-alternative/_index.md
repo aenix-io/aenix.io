@@ -3,6 +3,36 @@ title: "VMware Alternative — Open Source, souverän, Kubernetes-nativ"
 description: "Cozystack ist die moderne Open-Source-Alternative zu VMware in 2026 — eine einzige Plattform, die vSphere, ESXi, vCenter, vSAN, NSX, vCloud Director und den..."
 related_pages: ["/de/alternativen/proxmox-alternative", "/de/produkte/private-cloud", "/de/migration/vmware"]
 language: "de"
+direct_answer: |
+  **Cozystack ist die Open-Source-Alternative zu VMware für Organisationen, die einen produktionsreifen Ersatz für den VCF-Stack auf eigener Hardware benötigen — nicht ein Downgrade auf Community-Tooling. Eine Kubernetes-native Plattform betreibt virtuelle Maschinen (über KubeVirt), Container, verwaltete Datenbanken, S3-Object-Storage und GPU-Workloads unter einer einzigen Steuerungsebene und ersetzt vSphere/ESXi, vCenter, vSAN, NSX und vCloud Director. Cozystack ist ein CNCF-Projekt unter Apache-2.0-Lizenz ohne CPU- oder Core-basierte Lizenzierung. Aenix ist das Unternehmen dahinter und liefert die produktisierte Ænix Platform sowie Migrations-, Support- und Betriebsdienste für einen sicheren VMware-Ausstieg in der DACH-Region.**
+quick_facts:
+  - label: "Was es ist"
+    value: "Kubernetes-native Open-Source-Plattform, die den VMware-VCF-Stack (vSphere, vCenter, vSAN, NSX, vCloud Director) auf eigener Hardware ersetzt"
+  - label: "Lizenz"
+    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+  - label: "Status"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+  - label: "Technologie-Stack"
+    value: "KubeVirt für VMs und Container, Cilium (eBPF) Networking, LINSTOR/DRBD oder Rook-Ceph Storage, Tenant-CRD-Mandantenfähigkeit"
+  - label: "Zielgruppe"
+    value: "Hosting-Anbieter (vCloud-Director-Ausstieg), regulierte Unternehmen und Banken (VCF-Ausstieg), große Cloud-Betreiber"
+  - label: "Regulatorik"
+    value: "Unterstützt nachweisbare Kontrolle über ICT-Dritte gemäß DORA und NIS2 — souveräne Alternative zum US-Hypervisor-Stack"
+  - label: "Engagement"
+    value: "Ænix Platform ab Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell; deutschsprachiges Vertriebs- und Support-Team"
+faq:
+  - q: "Ist Cozystack ein vollwertiger Ersatz für VMware oder nur für einfache Workloads?"
+    a: "Cozystack ist als produktionsreifer Ersatz konzipiert, nicht als Downgrade. Es betreibt vollständige KVM-basierte VMs über KubeVirt mit Live-Migration, Block-Storage und Snapshots, dazu Container, verwaltete Datenbanken, S3-Object-Storage und GPU-Workloads unter einer Kubernetes-nativen Steuerungsebene."
+  - q: "Was ersetzt die einzelnen VMware-Komponenten in Cozystack?"
+    a: "vSphere/ESXi wird zu KubeVirt auf Talos, vCenter zur Cozystack Control Plane, vSAN zu LINSTOR oder Rook-Ceph, NSX zu Cilium (eBPF), vCloud Director zu Tenant CRD plus cozyportal, und Site Recovery Manager zu Velero, S3 und PostgreSQL PITR."
+  - q: "Wie funktioniert die Lizenzierung im Vergleich zu Broadcom/VMware?"
+    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung und ohne verpflichtende VCF-Bündelung. Es gibt keine Subscription-only-Falle und keine 2-5× Verlängerungssprünge. Aenix bietet kommerzielle Support- und Betriebsstufen für die produktisierte Ænix Platform an."
+  - q: "Hilft Cozystack bei DORA- und NIS2-Anforderungen?"
+    a: "Ja. DORA (seit Januar 2025) und NIS2 erfordern nachweisbare Kontrolle über kritische ICT-Dritte. Eine selbst betriebene Open-Source-Plattform auf eigener Hardware reduziert die Abhängigkeit von einem US-Hypervisor-Stack und unterstützt Souveränitäts- und Auditanforderungen europäischer Banken, Telkos und staatlicher Workloads."
+  - q: "Wer betreibt die Migration von VMware zu Cozystack?"
+    a: "Aenix ist das Unternehmen hinter Cozystack und betreibt Produktionsbereitstellungen für Service Provider, Banken und Telekommunikationsbetreiber. Das Team stellt das Migrations-, Support- und Betriebsmodell für den VMware-Ausstieg bereit und ist in der gesamten DACH-Region mit deutschsprachigem Vertrieb und Support verfügbar."
+  - q: "Was kostet die Ænix Platform?"
+    a: "Die Preisstufen beginnen bei Basic mit 1.250 $/Monat für 10 Nodes, Standard bei 3.000 $, Plus bei 5.500 $ und Enterprise individuell. Cozystack selbst ist quelloffen unter Apache 2.0; die kostenpflichtigen Stufen umfassen Produktisierung, Support und Betrieb."
 ---
 
 **Cozystack ist die moderne Open-Source-Alternative zu VMware in 2026 — eine einzige Plattform, die vSphere, ESXi, vCenter, vSAN, NSX, vCloud Director und den restlichen VCF-Stack auf Ihrer eigenen Hardware ersetzt.**

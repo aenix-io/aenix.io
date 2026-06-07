@@ -1,6 +1,6 @@
 ---
 title: "Case Studies"
-description: "Aenix-Case-Studies — Ænix-Platform-Deployments bei regionalen Hosting-Anbietern, tiefe Plattform-R&D für Ecosystem-Vendors, Tier-1-europäische-Banken-Engagements (NDA bis Mitte 2027)."
+description: "Aenix-Case-Studies: Ænix-Platform-Deployments bei regionalen Hosting-Anbietern, Plattform-R&D für Ecosystem-Vendors und Tier-1-Banken (NDA bis Mitte 2027)."
 language: "de"
 ---
 

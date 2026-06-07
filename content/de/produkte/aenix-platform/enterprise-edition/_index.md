@@ -1,8 +1,38 @@
 ---
 title: "Ænix Platform Enterprise Edition"
-description: "Ænix Platform Enterprise Edition — private und hybride souveräne Cloud für Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen. DORA / NIS2-konform. Multi-DC. Eine Control Plane verbindet VMware, OpenNebula, OpenShift. Kundenkontrollierte Schlüssel."
+description: "Ænix Platform Enterprise Edition: souveräne Cloud für regulierte Unternehmen. DORA-/NIS2-konform, Multi-DC, eine Control Plane über VMware und OpenShift."
 type: "page"
 language: "de"
+direct_answer: |
+  **Die Ænix Platform Enterprise Edition ist eine private und hybride souveräne Cloud für regulierte Unternehmen — Banken, Versicherungen, öffentliche Verwaltung, Telco und Gesundheitswesen. Sie basiert auf dem Open-Source-Projekt Cozystack (CNCF, Apache 2.0) und bringt VMware, OpenNebula und OpenShift unter eine einzige Kubernetes-native Control Plane, statt sie zu ersetzen. Aenix liefert vorvalidierte DORA- und NIS2-Architekturkontrollen, kundenkontrollierte Verschlüsselungsschlüssel auf jeder Datenschicht, audit-bereites Logging via VictoriaLogs, Multi-DC-Failover sowie Air-Gap-Betrieb. Engagements umfassen Discovery, Readiness Assessment, Pilot und vollständigen Multi-DC-Build samt Enterprise-SLA, 24/7-Support und Engineering-Training.**
+quick_facts:
+  - label: "Was es ist"
+    value: "Private und hybride souveräne Cloud für regulierte Unternehmen auf Basis von Cozystack — Multi-DC, DORA-/NIS2-konform, eine Control Plane über VMware, OpenNebula und OpenShift"
+  - label: "Lizenz"
+    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+  - label: "Status"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+  - label: "Für wen"
+    value: "Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen, regulierte Industrie / Energieversorger"
+  - label: "Compliance"
+    value: "DORA / NIS2 by Design; ISO 27001 / SOC 2 Alignment; kundenverwaltete Schlüssel (BYOK / HYOK) mit HSM-Integration"
+  - label: "Architektur"
+    value: "Kubernetes-nativ mit KubeVirt (VMs + Container), Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Tenant-CRD-Mandantenfähigkeit; Multi-DC und Air-Gap-fähig"
+  - label: "Engagement"
+    value: "Mehrjährige Plattform-Builds (€500k - €5M+); Time-to-Production 9-18 Monate Full Estate, 3-6 Monate Pilot"
+faq:
+  - q: "Wie unterscheidet sich die Enterprise Edition vom Selbstbetrieb von Open-Source-Cozystack?"
+    a: "Cozystack liefert die Kubernetes-native Multi-Tenant-Foundation. Die Enterprise Edition ergänzt vorvalidierte DORA-/NIS2-Architektur-Bundles, Multi-DC-Operations-Runbooks, kundenverwaltete Verschlüsselung auf jeder Schicht inklusive Backups und Observability, audit-bereites Logging, Hybrid-Integration mit VMware / OpenNebula / OpenShift, ISO 27001 / SOC 2 Alignment-Support, Enterprise-SLA mit 24/7-Support sowie inkludiertes Engineering-Training."
+  - q: "Kann die Enterprise Edition mit bestehendem VMware, OpenStack oder OpenShift koexistieren?"
+    a: "Ja. Sie ist für Koexistenz statt Rip-and-Replace ausgelegt. Die Control Plane integriert bestehende VMware Cloud Foundation, OpenStack, OpenNebula und OpenShift Estates; die Konsolidierung erfolgt graduell im Workload-Tempo. Viele Deployments laufen über Jahre hybrid."
+  - q: "Wie unterstützt die Enterprise Edition DORA- und NIS2-Compliance?"
+    a: "Über vorvalidierte Architekturkontrollen: kundenkontrollierte Schlüssel (DORA Art. 21(2)(h)), unveränderbares Audit-Logging via VictoriaLogs (Art. 21(2)(i), Art. 23), Tenant-CRD-Segmentierung nach ICT-Risikoklasse mit Cilium-NetworkPolicy, getestete Exit-Mechanik (Art. 28(7)(c)) und Lieferantentransparenz. NIS2 deckt Risikomanagement-Maßnahmen (Art. 21) und Reporting-Templates (Art. 23) ab."
+  - q: "Wird Air-Gap-Betrieb unterstützt?"
+    a: "Ja. Die Enterprise Edition läuft in vollständig air-gapped Umgebungen ohne Internet-Egress, mit Offline-Updates über signierte Bundles. Genutzt in Verteidigung, souveräner Cloud und isolierten Industrie-Umgebungen."
+  - q: "Wer kontrolliert die Verschlüsselungsschlüssel?"
+    a: "Der Kunde. Schlüssel liegen auf jeder Schicht beim Kunden — Primary Store, Replikate, Backups, Observability-Daten und Modell-Gewichte at rest. BYOK / HYOK mit HSM-Integration wird unterstützt; reine Vendor-managed-Schlüssel werden explizit vermieden."
+  - q: "Was kostet die Enterprise Edition?"
+    a: "Pricing auf Anfrage — typischerweise €500k - €5M+ für mehrjährige Plattform-Builds. Ein Platform Readiness Assessment (5-10 Tage, Festpreis €20-50k) liefert DORA-/NIS2-Gap-Analyse und Architektur-Roadmap. Scope wird im Discovery-Call definiert."
 ---
 
 **Private und hybride souveräne Cloud für regulierte Unternehmen. Sicher, automatisiert und einfach erweiterbar. Gebaut für Multi-DC-Setups, DORA / NIS2-Compliance und Enterprise-Integrationen. Eine Control Plane, die VMware, OpenNebula, OpenShift und mehr verbindet — turnkey Cloud-in-a-Box auf kundenkontrollierter Hardware. Inklusive Bildung und Training.**

@@ -1,6 +1,6 @@
 ---
 title: "Turnkey Cloud-Plattform — fünf Editions, eine Foundation"
-description: "Aenix baut Ænix Platform — eine turnkey Cloud-in-a-Box basierend auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen. Fünf Editions für Hosting-Anbieter, regulierte Unternehmen, Public Clouds, Produkt-Engineering-Teams und KI-lastige Organisationen. CNCF-Projekt. DORA / NIS2 / Souveränität by Design."
+description: "Ænix Platform — turnkey Cloud-in-a-Box auf Basis des CNCF-Projekts Cozystack. Fünf Editions für Hosting, Enterprise und Public Cloud. DORA / NIS2 by Design."
 type: "page"
 language: "de"
 ---

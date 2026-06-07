@@ -1,8 +1,36 @@
 ---
 title: "Ænix Platform IDP Edition"
-description: "Ænix Platform IDP Edition — Internal Developer Platform Layer auf der Cozystack-Cloud-Foundation. GitLab-Automation, Argo CD Workflows, APIs. Engineers verbringen weniger Zeit mit Routine-Arbeit und mehr mit Produkt-Auslieferung."
+description: "Ænix Platform IDP Edition: Internal-Developer-Platform-Layer auf der Cozystack-Cloud-Foundation mit GitLab-Automation, Argo-CD-Workflows und Self-Service-APIs."
 type: "page"
 language: "de"
+direct_answer: |
+  **Die Ænix Platform IDP Edition ist ein produktisierter Internal-Developer-Platform-Layer auf einer Kubernetes-nativen Cloud-Foundation aus Cozystack. Sie richtet sich an Produkt- und SaaS-Organisationen mit starken Engineering-Teams, die in Developer Experience investieren. Die Edition liefert Golden Paths, Self-Service-APIs, GitLab-Automation, Argo-CD-Workflows und Service-Erstellungs-Wizards über einem Multi-Tenant-Kubernetes-Substrat — sodass Engineers Environments, Datenbanken und Cluster ohne Ticket-Queues hochfahren. Aenix baut, betreibt und pflegt die Plattform; die offene Cozystack-Foundation (Apache 2.0, KubeVirt, Cilium, LINSTOR, Tenant-CRD-Mandantenfähigkeit) bringt Tenancy, Observability, Secrets, Identity und Multi-Cluster bereits mit.**
+quick_facts:
+  - label: "Was es ist"
+    value: "Produktisierter Internal-Developer-Platform-Layer (Golden Paths, Self-Service-APIs, GitLab, Argo CD) auf einer Kubernetes-nativen Cozystack-Cloud-Foundation"
+  - label: "Für wen"
+    value: "Produkt- und SaaS-Organisationen mit starken Engineering-Teams, typisch 300+ Engineers (kleinere Teams mit hohem DevEx-Fokus passen ebenfalls)"
+  - label: "Foundation"
+    value: "Open-Source Cozystack — KubeVirt (VMs + Container auf einer Kubernetes-API), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
+  - label: "Lizenz"
+    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+  - label: "Status"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+  - label: "Engagement"
+    value: "€300k - €2M Projekt; Time-to-Production 6-12 Monate; Managed-Retainer post-Deployment optional"
+faq:
+  - q: "Was ist die Ænix Platform IDP Edition?"
+    a: "Ein produktisierter Internal-Developer-Platform-Layer auf einer Kubernetes-nativen Cozystack-Cloud-Foundation. Sie liefert Golden Paths, Self-Service-APIs, GitLab-Automation, Argo-CD-Workflows und Service-Erstellungs-Wizards, mit denen Engineers Environments, Datenbanken und Cluster ohne Ticket-Queues bereitstellen."
+  - q: "Wie unterscheidet sich die IDP Edition von Backstage?"
+    a: "Backstage ist ein internes Tool, das Sie selbst bauen und betreiben. Die IDP Edition ist ein managed Plattform-Produkt mit inkludierter Cloud-Foundation: Aenix baut und betreibt den Stack, während Ihr Engineering die Golden Paths besitzt. Cozystack liefert Tenancy, Observability, Secrets und Multi-Cluster bereits mit."
+  - q: "Auf welcher Technologie basiert die IDP Edition?"
+    a: "Auf Open-Source Cozystack, einem CNCF-Projekt unter Apache 2.0. Die Foundation nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und ein Tenant-CRD für Mandantenfähigkeit. Observability läuft über VictoriaMetrics und VictoriaLogs."
+  - q: "Was kostet die IDP Edition?"
+    a: "Pricing auf Anfrage. Typische Engagements liegen bei €300k - €2M Projekt, mit optionalem Managed-Retainer nach dem Deployment. Time-to-Production beträgt 6-12 Monate für einen typischen IDP-Build, kürzer bei Golden-Path-only-Scope."
+  - q: "Wer kauft die IDP Edition typischerweise?"
+    a: "Produkt- und SaaS-Organisationen mit starken Engineering-Teams — VP Engineering, SaaS-CTOs und Plattform-Engineering-Leads, die eine IDP-as-Product statt eines weiteren internen Tools wollen. Typisch ab 300+ Engineers, aber auch kleinere Teams mit hohem Developer-Experience-Fokus."
+  - q: "Vermeidet die IDP Edition Vendor-Lock-in?"
+    a: "Ja. Die Foundation ist Open-Source Cozystack unter Apache 2.0 ohne CPU-/Core-basierte Lizenzierung. Der gesamte Stack läuft auf Standard-Kubernetes-APIs, sodass keine proprietäre Bindung an Aenix entsteht."
 ---
 
 **Ein Internal Developer Platform Layer auf einer Kubernetes-nativen Cloud. GitLab-Automation, Argo CD Workflows und APIs — damit Ihre Engineers weniger Zeit mit Routine-Arbeit und mehr Zeit mit Produkt-Auslieferung verbringen. Inklusive der vollständigen Cozystack-basierten Cloud darunter: Tenancy, Observability, Secrets, Identity, Multi-Cluster.**

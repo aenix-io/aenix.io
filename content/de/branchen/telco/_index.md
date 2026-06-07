@@ -11,6 +11,38 @@ related_pages:
   - /de/produkte/aenix-platform/enterprise-edition/
   - /de/produkte/cozystack/
 language: "de"
+direct_answer: |
+  **Eine Cloud-Plattform für Telekommunikations-Operatoren vereint Core-Rechenzentrum, Regionalstandorte und Customer-Edge unter einem Operations-Modell. Sie löst NFV-Legacy ab, trägt souveräne Cloud-Produkte für Endkunden, betreibt KI-Workloads auf Telco-Daten und erfüllt NIS2 (Telekommunikation als wesentliche Entität). Aenix baut diese Plattformen für Operatoren in EU, DACH und Zentralasien auf Basis von Cozystack — einem CNCF-Projekt unter Apache-2.0-Lizenz. Cozystack vereint virtuelle Maschinen (KubeVirt) und Container auf einer Kubernetes-API, Cilium-eBPF-Networking und LINSTOR/DRBD-Storage, und läuft mit identischem Stack an Core und Edge. Aenix liefert die produktisierte Ænix Platform plus Implementierungs- und Betriebs-Services.**
+
+quick_facts:
+  - label: "Was es ist"
+    value: "Eine einheitliche Cloud- und Edge-Plattform für Telekommunikations-Operatoren — Core, Regional und Customer-Edge unter einem Operations-Modell"
+  - label: "Lizenz"
+    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+  - label: "Status"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+  - label: "Zielgruppe"
+    value: "Telekommunikations-Operatoren in EU, DACH und Zentralasien mit NFV-Modernisierung, souveränen Cloud-Launches und Edge-Bedarf"
+  - label: "Technologie"
+    value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
+  - label: "Regulatorik"
+    value: "Telekommunikation ist wesentliche Entität unter NIS2; Plattform unterstützt souveräne und NIS2-konforme Architekturen"
+  - label: "Kommerzielles Modell"
+    value: "Ænix Platform (produktisiert) plus Services; Stufen Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell"
+
+faq:
+  - q: "Wie ersetzt eine Kubernetes-Plattform Legacy-NFV bei Telekommunikations-Operatoren?"
+    a: "Cozystack führt virtuelle Maschinen (über KubeVirt) und Container auf einer einzigen Kubernetes-API zusammen. Bestehende VNFs laufen als VMs weiter, während neue Network-Functions cloud-native werden. So gelingt der NFV-Übergang schrittweise — ohne Big-Bang-Migration und ohne separate VM- und Container-Stacks zu betreiben."
+  - q: "Kann dieselbe Plattform an Core und Edge laufen?"
+    a: "Ja. Cozystack läuft mit identischem Stack im Core-Rechenzentrum, an Regionalstandorten und am Customer-Edge. Operatoren betreiben Central-Core, Regional und Customer-Edge unter einem einheitlichen Operations-Modell statt getrennter Werkzeugketten je Standort."
+  - q: "Eignet sich die Plattform für souveräne Cloud-Produkte gegenüber Endkunden?"
+    a: "Ja. Die Mandantenfähigkeit über das Tenant-CRD erlaubt Operatoren, kundenseitige souveräne Cloud-Produkte zu starten. Die Ænix Platform Public Cloud Edition ist auf souveräne Cloud-Launches im Multi-Region-Scale ausgelegt."
+  - q: "Erfüllt die Plattform NIS2 für Telekommunikations-Operatoren?"
+    a: "Telekommunikation gilt unter NIS2 als wesentliche Entität. Die Plattform unterstützt NIS2-konforme interne Cloud- und Edge-Architekturen; die Ænix Platform Enterprise Edition adressiert genau diese Compliance-Anforderungen."
+  - q: "Welche Lizenzkosten entstehen für die Plattform-Software?"
+    a: "Cozystack steht unter Apache 2.0 — keine CPU- oder Core-basierte Lizenzierung. Kommerziell bietet Aenix die produktisierte Ænix Platform plus Services in Stufen ab Basic 1.250 $/Monat (10 Nodes) bis Enterprise (individuell)."
+  - q: "Gibt es namentliche Telco-Referenzen?"
+    a: "Öffentliche Telco-Referenzen sind derzeit NDA-geschützt und liegen in derselben Kohorte wie Bank-Engagements. Erste namentliche Telco-Case-Studies werden Mitte 2027 erwartet."
 ---
 
 **Telekommunikations-Operatoren in 2026 stehen vor einem architektonischen Wendepunkt: Legacy-NFV-Umgebungen veralten, Edge-Compute-Anforderungen wachsen, souveräne-Cloud-gebrandete Produkte starten im Sektor, KI-Workloads auf Kundendaten und NIS2-wesentliche-Entität-Compliance. Die architektonische Antwort ist eine kohärente Plattform, die in Core-Rechenzentren, regionalen Standorten und Customer-Edge läuft — unter einem Operations-Modell.**

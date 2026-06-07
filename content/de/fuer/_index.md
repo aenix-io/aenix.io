@@ -1,6 +1,6 @@
 ---
 title: "Nach Rolle — Ihr Einstieg zu Aenix nach Aufgabe"
-description: "Rollenspezifische Einstiegspunkte zu Aenix. Ob Infrastruktur, Platform Engineering, Cloud, Allianzen, Compliance oder Engineering — starten Sie bei Ihrem Problem."
+description: "Rollenspezifische Einstiegspunkte zu Aenix — Infrastruktur, Platform Engineering, Cloud, Allianzen, Compliance oder Engineering. Starten Sie bei Ihrem Problem."
 type: "page"
 language: "de"
 images: ["img/og/og-fuer-de.png"]

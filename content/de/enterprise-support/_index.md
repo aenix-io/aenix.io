@@ -1,6 +1,6 @@
 ---
 title: "Enterprise-Support"
-description: "Aenix Enterprise-Support für Ænix Platform und Cozystack — vier Support-Tiers (Basic, Standard, Plus, Enterprise) ab $1,250/Monat. SLA, dedizierte Kanäle, Named TAM, Compliance-Support."
+description: "Aenix Enterprise-Support für Ænix Platform und Cozystack — vier Tiers (Basic, Standard, Plus, Enterprise) ab $1,250/Monat mit SLA, Named TAM und Compliance."
 language: "de"
 ---
 

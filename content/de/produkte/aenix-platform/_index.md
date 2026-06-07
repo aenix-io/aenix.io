@@ -1,7 +1,37 @@
 ---
 title: "Ænix Platform"
-description: "Ænix Platform — turnkey Cloud-in-a-Box von Aenix, basierend auf Open-Source-Cozystack. Fünf Editions: Public Cloud, ISP, Enterprise, IDP, AI/ML. Hosting-Panel, Billing, Portale, Payments, Support — bereit zur Installation und zum Betrieb."
+description: "Ænix Platform — turnkey Cloud-in-a-Box von Aenix auf Open-Source-Cozystack. Fünf Editions, Hosting-Panel, Billing, Portale, Payments, bereit zum Betrieb."
 language: "de"
+direct_answer: |
+  **Ænix Platform ist eine turnkey Cloud-in-a-Box von Aenix, dem Open-Core-Unternehmen hinter Cozystack. Sie basiert auf dem Open-Source-Projekt Cozystack (CNCF-Sandbox-Projekt, Apache 2.0) und ergänzt alles, was ein Betreiber für ein echtes Cloud-Geschäft braucht: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing (Backend + Frontend), Payment-Integrationen, WHMCS-Integration und Enterprise-SLA. Das Produkt erscheint in fünf Editions — Public Cloud, ISP, Enterprise, IDP und AI/ML — passend zu fünf Buyer-Profilen. Technisch ist die Plattform Kubernetes-nativ (KubeVirt für VMs und Container, Cilium für eBPF-Networking, LINSTOR für Storage, Tenant-CRD-Mandantenfähigkeit) und läuft auf kundenkontrollierter Hardware.**
+quick_facts:
+  - label: "Was es ist"
+    value: "Turnkey Cloud-in-a-Box (kommerzielles Produkt + Services von Aenix), basierend auf Open-Source-Cozystack, in fünf Editions"
+  - label: "Lizenz"
+    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+  - label: "Status"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+  - label: "Zielgruppe"
+    value: "Public-Cloud-Betreiber, Hosting-Anbieter / MSPs, regulierte Unternehmen (DORA / NIS2), Produkt- / SaaS-Teams und KI-lastige Organisationen"
+  - label: "Architektur"
+    value: "Kubernetes-nativ — KubeVirt (VMs + Container über eine API), Cilium (eBPF-Networking), LINSTOR (Storage), Tenant-CRD-Mandantenfähigkeit, kundenkontrollierte Hardware"
+  - label: "Was über Cozystack hinaus hinzukommt"
+    value: "Hosting-Panel, User- / Admin- / Support-Portale, Service-Wizards, vollständiges Billing, Console-Portal, Payment- und WHMCS-Integration, Enterprise-SLA"
+  - label: "Engagement-Modell"
+    value: "Lizenz + Services Bundle; ISP-Edition-Entry ab €1.3k/Monat (Support-Tier), Full Builds bis Mehr-Millionen-Euro"
+faq:
+  - q: "Was fügt Ænix Platform über Open-Source-Cozystack hinaus hinzu?"
+    a: "Cozystack ist die Foundation — eine Kubernetes-native Multi-Tenant-Cloud-Plattform. Ænix Platform ergänzt Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing (Backend + Frontend), Console-Portal, Usage-Charts, Payment- und WHMCS-Integration, produktisierten Installer, Enterprise-SLA, dedizierten Support sowie Edition-spezifische Features und Compliance-fertige Bundles."
+  - q: "Was kostet Ænix Platform?"
+    a: "Pricing hängt von Edition und Engagement-Scope ab. Die ISP Edition startet ab €1.3k/Monat im Support-Tier. Public-Cloud- und Enterprise-Full-Builds liegen typisch im Bereich von mehreren Hunderttausend bis über zehn Millionen Euro über mehrere Jahre. Weitere Editions: Pricing on Request via Discovery-Call."
+  - q: "Welche der fünf Editions passt zu meiner Organisation?"
+    a: "Public Cloud Edition für große Cloud-Betreiber, Banken und Telcos; ISP Edition für Hosting-Anbieter und MSPs; Enterprise Edition für regulierte Unternehmen unter DORA / NIS2; IDP Edition für Produkt- / SaaS-Teams mit Developer-Experience-Fokus; AI/ML Edition für KI-native und GPU-lastige Organisationen. Im Zweifel klärt ein Discovery-Call den Fit."
+  - q: "Ist Cozystack wirklich Open Source und herstellerneutral?"
+    a: "Ja. Cozystack steht unter Apache 2.0 und ist ein CNCF-Sandbox-Projekt (seit 28.02.2025), das Aenix erstellt hat und pflegt. Es gibt keine CPU- oder Core-basierte Lizenzierung. Ænix Platform ist die kommerzielle, produktisierte Schicht darüber; die Open-Source-Basis bleibt frei nutzbar."
+  - q: "Auf welcher Hardware läuft Ænix Platform?"
+    a: "Auf kundenkontrollierter Hardware — eigene Rechenzentren oder gemietete Bare-Metal-Server (etwa Hetzner oder OVH). Die Plattform ist Kubernetes-nativ und nutzt KubeVirt für VMs und Container, Cilium für Networking und LINSTOR für Storage. Es besteht keine Bindung an einen Public-Cloud-Anbieter."
+  - q: "Unterstützt Ænix Platform die Migration von VMware oder OpenStack?"
+    a: "Ja. Es gibt Migrations-Tooling und -Expertise für die Migration von VMware, OpenStack, OpenNebula und Virtuozzo. Eine Control Plane kann bestehende Umgebungen wie VMware, OpenNebula oder OpenShift verbinden, was schrittweise Migrationen ohne Big-Bang-Umstellung ermöglicht."
 ---
 
 **Ænix Platform ist eine turnkey Cloud-in-a-Box. Sie basiert auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen (CNCF-Projekt, Apache 2.0), und ergänzt alles, was ein Betreiber braucht, um ein echtes Cloud-Geschäft zu führen: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing (Backend + Frontend), Payment-Integrationen, WHMCS-Integration, Enterprise-SLA. Fünf Editions passen zu fünf Buyer-Profilen. Installieren. Nutzer einbinden. Betrieb starten.**
