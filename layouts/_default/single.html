@@ -38,7 +38,9 @@
 
     <div class="container">
       <div class="page-content">
+        {{ partial "seo/geo-intro.html" . }}
         {{ .Content }}
+        {{ partial "seo/geo-faq.html" . }}
       </div>
     </div>
   </article>

@@ -19,27 +19,39 @@
 
 {{- $type := .Params.page_type | default "" -}}
 {{- if not $type -}}
-  {{- warnf "SEO WARNING — page %q is missing required frontmatter `page_type`. Set one of: solution-landing, services-landing, industry-landing, blog-article, compare, alternative, migration-hub, lead-magnet, product, flag-page" .Path -}}
+  {{/* Non-content kinds (home, section hub roots, taxonomy/term pages) are treated
+       as flag-page — they carry no GEO requirement. Only a genuine leaf page with
+       no page_type is a real authoring gap worth warning about. */}}
+  {{- if in (slice "home" "section" "taxonomy" "term") .Kind -}}
+    {{- $type = "flag-page" -}}
+  {{- else -}}
+    {{- warnf "SEO WARNING — page %q is missing required frontmatter `page_type`. Set one of: solution-landing, services-landing, industry-landing, blog-article, compare, alternative, migration-hub, lead-magnet, product, flag-page" .Path -}}
+  {{- end -}}
 {{- end -}}
 
 {{- $requiresGEO := in (slice "solution-landing" "services-landing" "industry-landing" "compare" "alternative" "migration-hub" "lead-magnet" "product") $type -}}
 
 {{- if $requiresGEO -}}
+  {{/* Hard-fail: GEO backfill is complete across all landing pages (EN + DE).
+       A missing GEO field on a landing type now breaks the build so the standard
+       can never silently regress. See CLAUDE.md Rule 10. */}}
   {{- if not .Params.direct_answer -}}
-    {{- warnf "SEO WARNING — page %q (type=%s) is missing required frontmatter `direct_answer`. See PAGE_CREATION_PLAYBOOK.md §6 GEO checklist." .Path $type -}}
+    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `direct_answer`. See PAGE_CREATION_PLAYBOOK.md §6 GEO checklist." .Path $type -}}
   {{- end -}}
   {{- if not .Params.quick_facts -}}
-    {{- warnf "SEO WARNING — page %q (type=%s) is missing required frontmatter `quick_facts`. See PAGE_CREATION_PLAYBOOK.md §8." .Path $type -}}
+    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `quick_facts`. See PAGE_CREATION_PLAYBOOK.md §8." .Path $type -}}
   {{- end -}}
-  {{- if not .Params.faq -}}
-    {{- warnf "SEO WARNING — page %q (type=%s) is missing required frontmatter `faq` (4-6 questions minimum)." .Path $type -}}
-  {{- end -}}
-  {{- if lt (len .Params.faq) 4 -}}
-    {{- warnf "SEO WARNING — page %q has only %d FAQ questions. Minimum 4 required for FAQPage schema eligibility." .Path (len .Params.faq) -}}
+  {{- with .Params.faq -}}
+    {{- if lt (len .) 4 -}}
+      {{- errorf "SEO ERROR — page %q has only %d FAQ questions. Minimum 4 required for FAQPage schema eligibility." $.Path (len .) -}}
+    {{- end -}}
+  {{- else -}}
+    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `faq` (4-6 questions minimum)." .Path $type -}}
   {{- end -}}
 {{- end -}}
 
-{{- if not .Params.description -}}
+{{- if and (not .Params.description) (not (in (slice "taxonomy" "term") .Kind)) -}}
+  {{/* taxonomy/term list pages are auto-generated and carry no authored description */}}
   {{- warnf "SEO WARNING — page %q is missing required frontmatter `description` (used for meta + JSON-LD)." .Path -}}
 {{- end -}}
 

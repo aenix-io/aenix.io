@@ -5,6 +5,32 @@ theme: aenix
 enableRobotsTXT: true
 canonicalizeURLs: false
 
+# Sitewide page_type assignment (GEO). Cascades into every landing page by
+# section so authors don't repeat it. Page-level `page_type` in frontmatter
+# overrides the cascade. EN + DE slugs both covered; non-matching globs are
+# harmless. /for/ and /fuer/ are flag-page (no GEO requirement).
+cascade:
+  - _target: { path: '/{,de/}{solutions,loesungen}/**' }
+    page_type: solution-landing
+  - _target: { path: '/{,de/}{services,dienstleistungen}/**' }
+    page_type: services-landing
+  - _target: { path: '/{,de/}{industries,branchen}/**' }
+    page_type: industry-landing
+  - _target: { path: '/{,de/}{alternatives,alternativen}/**' }
+    page_type: alternative
+  - _target: { path: '/{,de/}{compare,vergleichen}/**' }
+    page_type: compare
+  - _target: { path: '/{,de/}migration/**' }
+    page_type: migration-hub
+  - _target: { path: '/{,de/}{resources,ressourcen}/**' }
+    page_type: lead-magnet
+  - _target: { path: '/{,de/}{products,produkte}/**' }
+    page_type: product
+  - _target: { path: '/{,de/}{for,fuer}/**' }
+    page_type: flag-page
+  - _target: { path: '/{,de/}blog/**' }
+    page_type: blog-article
+
 params:
   description: "Aenix builds Ænix Platform — a turnkey commercial cloud-in-a-box based on Cozystack (CNCF). Five editions for hosting providers, regulated enterprises, public clouds, product engineering teams, AI-heavy organizations."
   author: Ænix

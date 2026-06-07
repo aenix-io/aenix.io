@@ -1,0 +1,20 @@
+{{/* seo/geo-faq — renders the FAQ section from frontmatter `faq:`.
+  Same data source as the FAQPage JSON-LD (partials/seo/jsonld-faqpage.html),
+  so visible content + structured data stay in sync.
+
+  Auto-injected by _default/single.html and _default/list.html for any page
+  that defines `faq:`. Also wrapped by the {{< seo-faq >}} shortcode.
+  Pass the page as context: {{ partial "seo/geo-faq.html" . }}
+*/}}
+{{- $faqTitle := cond (or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/")) "Häufig gestellte Fragen" "Frequently asked questions" -}}
+{{- with .Params.faq -}}
+<section class="seo-faq" aria-label="{{ $faqTitle }}">
+  <h2>{{ $faqTitle }}</h2>
+  {{- range . }}
+  <details class="faq-item">
+    <summary><h3>{{ index . "q" }}</h3></summary>
+    <div class="faq-answer">{{ index . "a" | markdownify }}</div>
+  </details>
+  {{- end }}
+</section>
+{{- end -}}

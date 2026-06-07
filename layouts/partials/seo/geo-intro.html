@@ -1,0 +1,32 @@
+{{/* seo/geo-intro — renders the GEO answer-first blocks from frontmatter:
+       1. direct_answer paragraph (bold, citation-ready, under H1)
+       2. quick_facts block (bulleted list + optional source)
+
+  Auto-injected by _default/single.html and _default/list.html for any page
+  that defines these params. Also wrapped by the {{< seo-blocks >}} shortcode.
+  Pass the page as context: {{ partial "seo/geo-intro.html" . }}
+*/}}
+{{- with .Params.direct_answer -}}
+<div class="seo-direct-answer">
+  {{ . | markdownify }}
+</div>
+{{- end -}}
+
+{{- $isDE := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
+{{- $qfTitle := cond $isDE "Auf einen Blick" "Quick facts" -}}
+{{- with .Params.quick_facts -}}
+<section class="seo-quick-facts" aria-label="{{ $qfTitle }}">
+  <h2>{{ $qfTitle }}</h2>
+  <ul class="quick-facts-list">
+    {{- range . }}
+    <li>
+      <strong>{{ index . "label" }}:</strong>
+      {{ index . "value" | markdownify }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- with $.Params.quick_facts_source }}
+  <p class="quick-facts-source"><em>Source: {{ . | markdownify }}</em></p>
+  {{- end }}
+</section>
+{{- end -}}

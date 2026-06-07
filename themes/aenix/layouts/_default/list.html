@@ -12,7 +12,9 @@
 
 <div class="section">
   <div class="container">
+    {{ partial "seo/geo-intro.html" . }}
     {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . }}</div>{{ end }}
+    {{ partial "seo/geo-faq.html" . }}
 
     {{ $pages := .Pages }}
     {{ if $pages }}
