@@ -98,6 +98,23 @@ The site itself is bilingual (EN + DE in `/content/` and `/content/de/`), but gi
 
 Every landing page that has a companion blog article must use a *shifted parent_topic*. Landing owns one head term; article owns adjacent / sub-topic / informational term. Existing pairs were validated through Ahrefs `keywords-explorer-overview` queries. When adding new pairs, run the same check (`parent_topic` field must differ).
 
+### Rule 10 — GEO frontmatter on every new landing page (mandatory, automatic)
+
+Site goal #2 is being cited by AI search engines. Every **new** landing page (`solution-landing`, `services-landing`, `industry-landing`, `compare`, `alternative`, `migration-hub`, `lead-magnet`, `product`) MUST ship with GEO frontmatter from the start — do this without being asked:
+
+- `direct_answer:` — one bold, citation-ready paragraph (75-150 words): *what it is, who it's for, how Aenix helps*.
+- `quick_facts:` — 5-7 `label`/`value` bullets (+ optional `quick_facts_source`).
+- `faq:` — **minimum 4** `q`/`a` entries (powers visible FAQ **and** FAQPage JSON-LD from one source).
+- `description:` ≤ 160 chars. `primary_keyword` + `secondary_keywords`. `images: ["img/og/<slug>.png"]` (generate via `scripts/generate-og-cards.py`).
+
+**Rendering is automatic — do NOT hand-place the blocks.** `_default/single.html` and the theme `_default/list.html` auto-inject `direct_answer` + `quick_facts` (top of content) and `faq` (bottom) via partials `seo/geo-intro.html` + `seo/geo-faq.html`. The `{{< seo-blocks >}}` / `{{< seo-faq >}}` shortcodes are thin wrappers over the same partials — only for pages whose template doesn't auto-inject; using them on an auto-injected page double-renders.
+
+**`page_type` is auto-assigned by section** via the `cascade` block in `hugo.yaml` (EN + DE slugs). New pages under an existing section inherit it; set `page_type` in frontmatter only for an exception or a new section (then add a cascade entry). FAQPage JSON-LD and validation live in `layouts/partials/seo/head.html`.
+
+**Validation is HARD-FAIL (since the 2026-06 GEO backfill).** A landing-type page missing `direct_answer`, `quick_facts`, or `faq` (≥4) calls `errorf` → the Hugo build fails (Netlify deploy blocked). This is intentional: the GEO standard cannot silently regress. So a new landing page WITHOUT these three fields will break the build — add them when you create the page. `page_type` (non-content kinds default to flag-page) and `description` length/absence remain warn-level. All EN (66) and DE (66) landing pages are backfilled; the only residual warnings are on the preserved pages `/oss-contribution`, `/quiz`, `/quiz/modern-cloud` (do not touch — see Preserved pages).
+
+When a new top-30 page ships, also add it to `static/llms.txt` (Rule 3).
+
 ---
 
 ## Content type taxonomy
