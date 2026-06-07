@@ -29,6 +29,7 @@ CARDS = [
     ("og-head-of-ai-ml", "FOR HEADS OF AI / ML", "GPU infrastructure you control"),
     ("og-vmware-exit-partners", "VMWARE EXIT FOR INTEGRATORS & MSPs", "Turn the renewal into margin"),
     ("og-vmware-cost-calculator", "TOOL", "VMware cost calculator"),
+    ("og-ibm-migration", "IBM AIX / POWER MIGRATION", "Exit Power to an open cloud"),
     # DE
     ("og-fuer-de", "NACH ROLLE", "Ihr Einstieg zu Aenix"),
     ("og-leiter-infrastruktur-de", "FÜR INFRASTRUKTURLEITER", "VMware ablösen, zu Ihren Bedingungen"),

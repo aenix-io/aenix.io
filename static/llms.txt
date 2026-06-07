@@ -117,6 +117,7 @@ AI:
 - [Proxmox migration](https://aenix.io/migration/proxmox/): When Proxmox doesn't scale; how to move to Ænix Platform
 - [OpenStack migration](https://aenix.io/migration/openstack/): Modernizing legacy OpenStack to Ænix Platform
 - [CloudStack migration](https://aenix.io/migration/cloudstack/): CloudStack to Ænix Platform migration paths
+- [IBM AIX / Power migration](https://aenix.io/migration/ibm/): Exit IBM AIX/Power and Cloud Pak/OpenShift to commodity x86; honest TCO (~40% over 3 years), Oracle-safe design, KubeVirt replacing PowerVM
 
 ## Resources / lead magnets
 
