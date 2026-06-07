@@ -6,7 +6,7 @@ related_pages:
   - /de/produkte/aenix-platform/public-cloud-edition/
   - /de/produkte/aenix-platform/isp-edition/
   - /de/produkte/cozystack
-  - /de/alternativen/vmware-alternatives
+  - /de/alternativen/vmware-alternativen
 language: "de"
 direct_answer: |
   **Public Cloud Builder ist die Aenix-Dienstleistung, mit der Hosting-Anbieter, Telekommunikations-Operatoren und regionale Betreiber ein eigenes, kundenseitiges Cloud-Produkt auf einer Open-Source-Foundation starten. Die Lösung basiert auf Cozystack, der Apache-2.0-lizenzierten, Kubernetes-nativen Plattform, die VMs und Container über KubeVirt auf einer Kubernetes-API vereint, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage nutzt und Mandantenfähigkeit über das Tenant-CRD abbildet. Aenix übernimmt Architektur, Produkt-Readiness-Assessment und Implementation und liefert die produktisierte Ænix Platform (Public Cloud Edition oder ISP Edition), damit Betreiber ein glaubwürdiges, souveränes Cloud-Angebot bereitstellen, ohne selbst Hyperscaler-Engineering aufbauen zu müssen.**

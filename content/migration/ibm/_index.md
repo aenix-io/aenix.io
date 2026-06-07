@@ -16,6 +16,7 @@ secondary_keywords:
   - "private cloud for banks"
 images: ["img/og/og-ibm-migration.png"]
 language: "en"
+hreflang_de: /de/migration/ibm/
 related_pages:
   - /alternatives/openshift-alternative
   - /compare/cozystack-vs-openshift
