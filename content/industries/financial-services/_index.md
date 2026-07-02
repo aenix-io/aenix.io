@@ -78,7 +78,7 @@ Most engagements combine two or more of these triggers.
 - **Nutanix Financial Services ECI 2025:** 92% rate their infrastructure as not ready for cloud-native or container workloads. 62% are hiring GenAI specialists.
 - **Broadcom Private Cloud Outlook 2025:** 53% prioritize private cloud for new workloads. 69% evaluating repatriation.
 
-These trends concentrate in financial services first; the architectural decisions made now will shape the sector for the next decade.
+These trends concentrate in financial services first.
 
 ---
 

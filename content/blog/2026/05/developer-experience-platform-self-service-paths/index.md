@@ -107,7 +107,7 @@ Most organizations use a mix: GitOps + IaC as the source of truth, portal as the
 
 ### Identity model
 
-Workforce identity (Keycloak / Okta / Azure AD) federates to platform identity. Service identity (SPIFFE/SPIRE or service accounts) handles service-to-service. Joining the two seamlessly is platform-team work.
+Workforce identity (Keycloak / Okta / Azure AD) federates to platform identity. Service identity (SPIFFE/SPIRE or service accounts) handles service-to-service. Joining the two is platform-team work.
 
 ## What goes wrong
 

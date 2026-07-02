@@ -33,7 +33,7 @@ faq:
     a: "Support tiers start at Basic $1,250/month for 10 nodes, then Standard $3,000 and Plus $5,500, with Enterprise pricing custom. The productized ISP Edition adds white-label portal, reseller model, and billing; partners can earn up to 40% margin on resold engagements."
 ---
 
-**Managed Service Providers (MSPs) in 2026 are asked by enterprise customers for cloud capabilities that combine MSP managed-service relationship with hyperscaler-class capabilities. Building this from scratch is non-trivial. Cozystack-based platform with white-label branding is the realistic path — and what Aenix delivers.**
+**Managed Service Providers (MSPs) in 2026 are asked by enterprise customers for cloud capabilities that combine MSP managed-service relationship with hyperscaler-class capabilities. Cozystack-based platform with white-label branding is the realistic path — and what Aenix delivers.**
 
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — fully white-labelable cozyportal, multi-tier reseller model, WHMCS-integrated billing, from €1.3k/month support tier. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 

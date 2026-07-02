@@ -262,7 +262,7 @@ Open-source means there is no per-CPU, per-VM, or per-core meter. Your spend is 
 
 ### What is the best alternative for VMware?
 
-For enterprise on-prem virtualization, Cozystack is the leading open-source alternative — it replaces the whole VCF stack (vSphere, vCenter, vSAN, NSX, vCloud Director) with one Kubernetes-native platform on your own hardware. Other commonly cited VMware alternatives are Nutanix AHV (proprietary HCI), Proxmox VE (KVM-based, SMB-friendly), Scale Computing HC3 (appliance HCI), Verge.io, OpenStack, Red Hat OpenShift Virtualization, and Microsoft Azure Stack HCI. The right choice depends on workload mix (VMs only vs. VMs + containers + databases), tenancy needs, sovereignty requirements, and operating model.
+For enterprise on-prem virtualization, Cozystack is a full open-source alternative — it replaces the whole VCF stack (vSphere, vCenter, vSAN, NSX, vCloud Director) with one Kubernetes-native platform on your own hardware. Other commonly cited VMware alternatives are Nutanix AHV (proprietary HCI), Proxmox VE (KVM-based, SMB-friendly), Scale Computing HC3 (appliance HCI), Verge.io, OpenStack, Red Hat OpenShift Virtualization, and Microsoft Azure Stack HCI. The right choice depends on workload mix (VMs only vs. VMs + containers + databases), tenancy needs, sovereignty requirements, and operating model.
 
 ### Why is VMware going away?
 
