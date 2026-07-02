@@ -225,27 +225,6 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Is "cloud repatriation" the same as "going on-prem"?**
-Not necessarily. Repatriation usually means moving a subset of workloads from public cloud to private cloud, hybrid, or on-prem — not a full exit. The right answer for most organizations is selective repatriation, not all-or-nothing.
-
-**How long does a typical repatriation take?**
-The assessment is 14 or 28 days. Phase 2 implementation depends on workload count and complexity: 6-12 months for a 100-VM estate, 12-24 months for a 1000-VM estate. The economic case usually gets clearer after 9-12 months as commitments lapse.
-
-**What if our public cloud commitments lock us in?**
-The cutover sequencing plan in the report respects commitment expiration ladders. Repatriation cadence aligns with your AWS Reserved Instances / Azure RI / Savings Plan expirations rather than fighting them.
-
-**Will Aenix recommend Cozystack at the end?**
-Where Cozystack fits the destination architecture better than the alternative, the report explains why with named controls and architectural attributes. Where a different stack fits — including hyperscaler-with-better-controls, OpenShift, or vanilla Kubernetes on commodity hardware — we say so.
-
-**What if our team can't run a private cloud platform?**
-Two paths: (1) Aenix runs the platform under a managed-services arrangement, or (2) Aenix builds your platform team's capacity through a structured platform-engineering engagement. Both are scoped during the assessment.
-
-**More questions?** See the **[reverse cloud migration playbook](/blog/2026/05/reverse-cloud-migration-playbook/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

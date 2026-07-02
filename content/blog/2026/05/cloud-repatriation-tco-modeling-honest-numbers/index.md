@@ -4,7 +4,7 @@ description: "Companion to Cloud Repatriation TCO Worksheet."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
-topics: ["Cloud Repatriation", "Financial Services", "Platform Engineering", "Backup & DR", "Observability"]
+topics: ["Cloud Repatriation", "Financial Services", "Platform Engineering", "Backup and DR", "Observability"]
 language: "en"
 companion_landing: "/solutions/cloud-repatriation/"
 quiz:
@@ -97,4 +97,3 @@ For full engagement see **[Cloud repatriation services](/solutions/cloud-repatri
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~450. -->

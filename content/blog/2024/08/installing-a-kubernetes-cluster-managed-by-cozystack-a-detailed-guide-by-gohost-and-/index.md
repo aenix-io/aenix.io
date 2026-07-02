@@ -168,7 +168,6 @@ curl -LO https://github.com/aenix-io/talm/releases/download/v0.5.7/talm-linux-am
 chmod +x ./talm-linux-amd64
 sudo mv ./talm-linux-amd64 /usr/local/bin/talm
 
-
 echo "Specify the directory name for the configuration files,"
 echo -e "the directory will be located in the catalog ${GREEN}/opt/${NC}. By default: ${GREEN}/opt/cozystack${NC}"
 echo -e "${YELLOW}"

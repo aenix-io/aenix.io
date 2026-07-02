@@ -197,24 +197,6 @@ No per-CPU, per-VM, or per-core meter. Hardware + chosen Aenix tier.
 
 <!-- BLOCK 8: FAQ -->
 
-## FAQ
-
-**What's the difference between Cozystack the project and Aenix the company?**
-Cozystack is the open-source platform (CNCF Project). Aenix is the company that builds and maintains Cozystack, runs it in production, and offers commercial support and professional services. Cozystack remains community-governed and Apache 2.0; Aenix's services are independent.
-
-**Can we run Cozystack without Aenix?**
-Yes — Cozystack is fully open source. Many production deployments are self-managed.
-
-**How is Cozystack different from OpenStack?**
-Both are open-source private cloud platforms. OpenStack is older, broader-scope, more operationally complex; Cozystack is Kubernetes-native, more focused, lighter operational footprint. For new deployments in 2026, Cozystack is increasingly the default; OpenStack remains strong where deep OpenStack expertise exists.
-
-**Does Cozystack support air-gapped deployments?**
-Yes, with documented install workflow. Suitable for classified, defence, healthcare, and other highly-restricted environments.
-
-**More questions?** See **[private cloud providers comparison](/blog/2026/05/private-cloud-providers-comparison/)** or visit **[cozystack.io](https://cozystack.io)**.
-
-<!-- /BLOCK 8 -->
-
 ---
 
 <!-- BLOCK 9: BOTTOM CTA -->

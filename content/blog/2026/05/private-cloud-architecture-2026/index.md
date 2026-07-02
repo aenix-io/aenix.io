@@ -220,7 +220,3 @@ For details see the **[private cloud consulting services page](/services/private
 
 *Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!--
-SEO: meta description (≤155): "Private cloud architecture 2026: 6-layer model, 3 working patterns, key architectural decisions, sizing, common mistakes."
-Word count: ~2900.
--->

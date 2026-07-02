@@ -2,6 +2,19 @@
 title: "Aenix Produkte"
 description: "Aenix-Produkte — Ænix Platform (turnkey kommerzielle Cloud-in-a-Box, fünf Editions), Cozystack (Open-Source CNCF-Projekt), Kubernetes Deep Dive Kurs."
 language: "de"
+page_type: "flag-page"
+cascade:
+  page_type: "product"
+hreflang_en: /products/
+faq:
+  - q: "Was ist der Unterschied zwischen Ænix Platform und Cozystack?"
+    a: "Cozystack ist die Open-Source-Foundation — ein CNCF-Projekt unter Apache 2.0, das jeder herunterladen, modifizieren und betreiben kann. Ænix Platform ist die kommerzielle turnkey-Version, die Aenix verkauft, mit Hosting-Panel, vollständigem Billing, Portalen, Payments, produktisiertem Installer, Enterprise-SLA und Edition-spezifischen Features pro Buyer-Profil (Public Cloud / ISP / Enterprise / IDP / AI/ML)."
+  - q: "Welche drei Produkte bietet Aenix an?"
+    a: "Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box mit fünf Editions passend zu fünf Buyer-Profilen. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen."
+  - q: "Ist Cozystack Open Source?"
+    a: "Ja. Cozystack ist eine Open-Source Kubernetes-native Multi-Tenant Cloud-Plattform, ein CNCF-Projekt unter Apache 2.0 — jeder kann es betreiben. Erstellt und gewartet von Aenix."
+  - q: "Was ist der Kubernetes Deep Dive Kurs?"
+    a: "Ein fortgeschrittener Kurs für Engineers, der den Cozystack-Stack abdeckt — Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux und weitere Kubernetes-Tools. Zielgruppe sind Plattform-Engineers, Kubernetes-Operatoren und OSS-Beitragende, die den Stack lernen."
 ---
 
 **Drei Produkte, unterschiedliche Zielgruppen. Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box mit fünf Editions passend zu fünf Buyer-Profilen. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen.**
@@ -60,13 +73,10 @@ Wenn Sie eine turnkey Cloud (Billing, Portale, Payments, Support, produktisierte
 
 ---
 
-## Häufige Fragen
 
-### Was ist der Unterschied zwischen Ænix Platform und Cozystack?
+---
 
-Cozystack ist die Open-Source-Foundation — ein CNCF-Projekt unter Apache 2.0, das jeder herunterladen, modifizieren und betreiben kann. Ænix Platform ist die kommerzielle turnkey-Version, die Aenix verkauft, mit Hosting-Panel, vollständigem Billing, Portalen, Payments, produktisiertem Installer, Enterprise-SLA und Edition-spezifischen Features pro Buyer-Profil (Public Cloud / ISP / Enterprise / IDP / AI/ML).
-
-### Welches Produkt sollte ich zuerst ansehen?
+## Welches Produkt sollte ich zuerst ansehen?
 
 - **Public-Cloud-Betreiber / große Bank / großer Telco:** [Ænix Platform Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)
 - **Hosting-Anbieter / MSP / regionale Cloud:** [Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)

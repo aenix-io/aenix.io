@@ -119,5 +119,3 @@ If your OpenStack deployment is hitting modernization triggers, the structured n
 
 *Aenix is the team behind Cozystack.*
 
-<!-- SEO: title "OpenStack vs Cozystack — Modernization for OpenStack Operators in 2026 | Aenix"
-Word count: ~900. -->

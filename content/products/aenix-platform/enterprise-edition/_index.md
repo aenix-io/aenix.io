@@ -3,6 +3,7 @@ title: "Ænix Platform Enterprise Edition"
 description: "Ænix Platform Enterprise Edition: private and hybrid sovereign cloud for regulated banks, insurance, public sector, telco and healthcare. DORA / NIS2-aligned."
 type: "page"
 language: "en"
+hreflang_de: /de/produkte/aenix-platform/enterprise-edition/
 direct_answer: |
   **Ænix Platform Enterprise Edition is a private and hybrid sovereign cloud built for regulated enterprises — banks, insurance carriers, public administration, telco, and healthcare operators. It runs on Cozystack, the open-source CNCF project Aenix created, and is delivered as multi-year platform builds (typically 9-18 months to full production). It provides a single Kubernetes-native control plane that coexists with existing VMware, OpenNebula, and OpenShift estates rather than forcing rip-and-replace. The edition adds pre-validated DORA and NIS2 architecture controls, customer-controlled encryption keys at every data layer, audit-ready logging, multi-datacenter operations, ISO 27001 and SOC 2 alignment support, enterprise SLA with 24/7 support, and engineering training. No per-CPU or per-core licensing applies.**
 quick_facts:
@@ -44,14 +45,6 @@ faq:
 
 ---
 
-## Quick facts
-
-- **For:** Regulated enterprises — banks, insurance, public administration, telco, healthcare, regulated industrial / energy operators
-- **Foundation:** Open-source Cozystack (CNCF project, Apache 2.0)
-- **Engagement size:** €500k - €5M+ multi-year platform builds
-- **Time to production:** 9-18 months full estate; 3-6 month pilot phase
-- **Architecture:** Kubernetes-native, multi-DC, integrates with existing VMware / OpenNebula / OpenShift, customer-controlled keys, audit-ready logging
-- **Compliance posture:** DORA / NIS2-aligned by design; ISO 27001 / SOC 2 alignment; sovereign-deployment options
 
 ---
 
@@ -68,7 +61,7 @@ Enterprise Edition is built for **coexistence**, not rip-and-replace. Existing V
 ### DORA architecture controls
 
 - Customer-controlled encryption keys (Article 21(2)(h)) at every data layer
-- Audit-ready logging via VictoriaLogs with immutable backend (Article 21(2)(i) + Article 23)
+- Audit-ready logging via VictoriaLogs with immutable backend (Article 21(2)(i) + Articles 17–19)
 - Multi-tenant Tenant CRD aligned with ICT risk classification (Article 21(2)(a))
 - Tested exit-readiness mechanics (Article 28(7)(c))
 - Supplier transparency to second hop (Article 28(3))
@@ -79,7 +72,7 @@ Enterprise Edition is built for **coexistence**, not rip-and-replace. Existing V
 
 - Article 21 cybersecurity risk-management measures across 10 control areas
 - Article 23 incident handling + reporting templates aligned to 24h / 72h / 1-month timelines
-- Article 30 coordinated vulnerability disclosure aligned
+- Article 12 coordinated vulnerability disclosure aligned
 - Tenant CRD with NetworkPolicy / Cilium for segmentation
 
 [NIS2 compliance services →](/solutions/nis2-compliance/) | [Free NIS2 checklist →](/resources/nis2-compliance-checklist/)
@@ -159,49 +152,16 @@ Anonymized phrasing pattern: "Tier-1 European bank engagement under DORA scope" 
 
 ---
 
-## Frequently asked questions
-
-### How is Enterprise Edition different from running open-source Cozystack ourselves?
-
-Cozystack provides the Kubernetes-native multi-tenant cloud platform foundation. Enterprise Edition adds: pre-validated DORA / NIS2 architecture bundles, multi-DC operations runbook, customer-managed encryption at every layer (incl. backups + observability), audit-ready logging stack, hybrid integration patterns with VMware / OpenNebula / OpenShift, ISO 27001 / SOC 2 alignment support, enterprise SLA + 24/7 support, and engineering training included.
-
-### How is Enterprise Edition different from Public Cloud Edition?
-
-Enterprise Edition is for regulated enterprises consuming cloud internally (single-organization use, often hybrid integration with existing VMware / OpenNebula / OpenShift). Public Cloud Edition is for operators selling cloud as a product (public cloud, big bank's internal cloud at scale, large telco). Same Cozystack foundation; different feature bundle.
-
-### Can Enterprise Edition coexist with our existing VMware / OpenStack / OpenShift?
-
-Yes. Designed for coexistence — Enterprise Edition's control plane integrates with existing VMware Cloud Foundation, OpenStack, OpenNebula, OpenShift estates. Gradual consolidation at workload pace. Many bank deployments run hybrid for years.
-
-### What's the deployment timeline?
-
-Pilot (defined slice): 3-6 months. Full Enterprise Edition deployment: 9-18 months. Multi-DC with sovereign-deployment requirements: 12-24 months.
-
-### How does this satisfy DORA Article 28 supplier exit?
-
-Workload portability is structural — workloads expressible as Kubernetes manifests + Helm, deployable to a second substrate without rewrite. Customer-controlled hardware. Documented exit plan tested at least every 24 months. Provider-side exit support contracted.
-
-### What about ISO 27001 / SOC 2?
-
-Enterprise Edition is pre-validated against ISO 27001 / SOC 2 architectural requirements. Aenix supports customer certification documentation and audit-readiness work as part of the engagement. Aenix's own ISO 27001 certification is in progress.
-
-### Can we keep our existing storage / network / identity?
-
-Generally yes. Enterprise Edition uses storage classes (LINSTOR by default; integrates with shared SAN), CNI (Cilium by default), and identity (OIDC federation with existing SSO) compatible with most existing enterprise stacks.
-
-### Is air-gap supported?
-
-Yes. Enterprise Edition supports air-gapped deployments with offline updates via signed bundles. Used in defence, sovereign cloud, isolated industrial environments.
 
 ---
 
-## How to start
+## Book an architecture review
 
-Book a 30-minute discovery call. We'll discuss your regulatory context (DORA / NIS2 / sectoral), current architecture, sovereignty requirements, and Enterprise Edition fit.
+Tell us your regulatory context (DORA / NIS2 / sectoral), current architecture, and sovereignty requirements — we'll set up a focused architecture review with an Aenix engineer and confirm Enterprise Edition fit.
 
-<div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
-</div>
+{{< pipedrive-form type="demo" >}}
+
+Prefer a shorter first step? [Book a 30-minute discovery call](/contact/) instead.
 
 ---
 

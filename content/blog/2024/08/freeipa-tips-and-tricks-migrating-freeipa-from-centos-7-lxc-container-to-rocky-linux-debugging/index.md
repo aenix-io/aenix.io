@@ -4,7 +4,7 @@ description: "Recently, I had the task of updating an outdated FreeIPA in a larg
 date: "2024-08-01"
 author: "Timur Tukaev"
 type: "article"
-topics: ["Proxmox", "Cozystack", "Migration", "Backup & DR", "FreeIPA"]
+topics: ["Proxmox", "Cozystack", "Migration", "Backup and DR", "FreeIPA"]
 language: "en"
 source_url: "https://medium.com/@tym83/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging-b8b923499b96"
 quiz:

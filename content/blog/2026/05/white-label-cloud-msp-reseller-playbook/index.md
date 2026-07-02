@@ -82,4 +82,3 @@ For details see **[white label cloud services](/services/white-label-cloud)**.
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~400. -->

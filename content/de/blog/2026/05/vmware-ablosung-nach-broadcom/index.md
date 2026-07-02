@@ -115,11 +115,9 @@ Architektonische Implikationen:
 
 ## Wie geht es weiter?
 
-Für eine spezifische Bewertung Ihres VMware-Ausstiegs siehe **[VMware-Alternative-Landing](/de/alternativen/vmware-alternative)** oder **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+Für eine spezifische Bewertung Ihres VMware-Ausstiegs siehe **[VMware-Alternative-Landing](/de/alternativen/vmware-alternative)** oder **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 ---
 
-*Aenix ist das Team hinter Cozystack — CNCF Project-Projekt, Kubernetes Certified Distribution.*
+*Aenix ist das Team hinter Cozystack — CNCF-Projekt, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "VMware-Ablösung nach Broadcom — Leitfaden für DACH | Aenix"
-Word count: ~900. -->

@@ -41,17 +41,6 @@ faq:
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
-
----
-
-## Quick facts
-
-- **For:** Product / SaaS organizations with strong engineering teams investing in developer experience (typically 300+ engineers, but smaller teams with high DevEx focus also fit)
-- **Foundation:** Open-source Cozystack (CNCF project, Apache 2.0)
-- **Engagement size:** €300k - €2M project; managed retainer post-deployment
-- **Time to production:** 6-12 months for typical IDP build; shorter for golden-path-only scope
-- **Architecture:** Kubernetes-native cloud + IDP layer (GitLab, Argo CD, APIs, golden paths, service-creation wizards, internal portal)
-
 ---
 
 ## What's included in IDP Edition
@@ -142,11 +131,6 @@ Pricing on request — €300k - €2M project; managed retainer post-deployment
 ## Customer evidence
 
 IDP Edition customers are currently NDA-protected. Product / SaaS engagements active. Anonymized phrasing pattern: "Mid-large product company building IDP for 300+ engineers".
-
----
-
-## Frequently asked questions
-
 ### How is IDP Edition different from running open-source Cozystack ourselves?
 
 Cozystack provides the multi-tenant cloud foundation — a strong substrate for an IDP. IDP Edition adds the platform-product layer on top: GitLab + Argo CD pre-integration, APIs for self-service, service-creation wizards, golden-path templates, engineering productivity dashboards, and Aenix's IDP design + delivery experience. For organizations that want IDP-as-product and have not built one before, this saves 12-24 months of platform-engineering team-build.

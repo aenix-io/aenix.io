@@ -87,4 +87,3 @@ Most AI startups: inference + occasional fine-tuning. Training at scale is rare 
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~400. -->

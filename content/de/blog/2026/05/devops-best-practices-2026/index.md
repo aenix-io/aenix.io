@@ -74,4 +74,3 @@ Begleitung zur **[DevOps-Consulting-Page](/de/dienstleistungen/devops-consulting
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~250. -->

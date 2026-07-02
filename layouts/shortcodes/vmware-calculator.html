@@ -41,18 +41,19 @@
 </div>
 
 <style>
-.vmcalc{border:1px solid #d8dee9;border-radius:10px;padding:1.25rem 1.25rem 1rem;margin:1.5rem 0;background:#fbfcfe}
-.vmcalc-title{margin:0 0 .75rem;font-size:1.1rem}
-.vmcalc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem 1rem}
-.vmcalc-grid label{display:flex;flex-direction:column;font-size:.85rem;font-weight:600;gap:.3rem}
-.vmcalc-grid input{padding:.5rem .6rem;border:1px solid #c4cdd9;border-radius:6px;font-size:1rem;font-weight:400}
-.vmcalc-out{margin-top:1rem;border-top:1px solid #e3e8ef;padding-top:.75rem}
-.vmcalc-row{display:flex;justify-content:space-between;align-items:baseline;padding:.3rem 0;font-size:.95rem}
-.vmcalc-row b{font-variant-numeric:tabular-nums}
+.vmcalc{border:1px solid var(--glass-border,rgba(255,255,255,.1));border-radius:var(--radius-lg,16px);padding:1.4rem 1.4rem 1.15rem;margin:1.75rem 0;background:var(--glass-bg,rgba(255,255,255,.02))}
+.vmcalc-title{margin:0 0 .75rem;font-size:1.15rem;color:var(--text-primary,#F1F5F9)}
+.vmcalc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem 1.1rem}
+.vmcalc-grid label{display:flex;flex-direction:column;font-size:.8rem;font-weight:600;gap:.3rem;color:var(--text-secondary,#94A3B8)}
+.vmcalc-grid input{padding:.55rem .65rem;border:1px solid var(--glass-border,rgba(255,255,255,.14));border-radius:var(--radius-sm,8px);background:rgba(0,0,0,.25);color:var(--text-primary,#F1F5F9);font-size:1rem;font-weight:500}
+.vmcalc-grid input:focus{outline:none;border-color:var(--brand-primary,#01A5FF)}
+.vmcalc-out{margin-top:1.15rem;border-top:1px solid var(--glass-border,rgba(255,255,255,.1));padding-top:.85rem}
+.vmcalc-row{display:flex;justify-content:space-between;align-items:baseline;padding:.32rem 0;font-size:.92rem;color:var(--text-secondary,#94A3B8)}
+.vmcalc-row b{font-variant-numeric:tabular-nums;color:var(--text-primary,#F1F5F9);font-weight:700}
 .vmcalc-hl{font-size:1.05rem}
-.vmcalc-hl b{color:#0a7d34}
-.vmcalc-note{margin:.75rem 0 0;font-size:.78rem;color:#5a6677}
-@media(max-width:520px){.vmcalc-grid{grid-template-columns:1fr}}
+.vmcalc-hl b{color:var(--brand-green,#7ee081)}
+.vmcalc-note{margin:.85rem 0 0;font-size:.76rem;color:var(--text-secondary,#94A3B8);opacity:.8}
+@media(max-width:560px){.vmcalc-grid{grid-template-columns:1fr}}
 </style>
 
 <script>

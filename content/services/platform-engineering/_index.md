@@ -223,27 +223,6 @@ We accept RFI / RFP through standard procurement channels.
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**What's the difference between platform engineering, DevOps, and SRE?**
-Platform engineering builds and operates the internal platform that product teams use. DevOps is a cultural-and-tooling practice within product teams. SRE is a reliability function with operational responsibilities. They overlap in tooling but answer different questions. We've written a longer **[platform engineering vs DevOps vs SRE guide](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)**.
-
-**Do we need to use Cozystack?**
-No. Cozystack is the platform we recommend when it fits — for most multi-tenant or sovereign use cases, it does. For organizations deeply invested in OpenShift, vanilla Kubernetes, or vendor-led stacks, we extend the platform you have.
-
-**How big does our org need to be?**
-The engagement scales from 50-person engineering organizations (light platform engineering function) to 5000-person organizations (multi-team platform engineering). The break-even for structured platform engineering is roughly 3 product teams or 30 engineers.
-
-**Can we engage Aenix to extend our existing platform team?**
-Yes. Time-and-materials engagement to add 2-5 senior platform engineers to your existing team, working under your governance.
-
-**What's the ramp-down look like?**
-The engagement is structured with knowledge transfer throughout, named in-house owners, and runbook authoring. By end of Phase 2, your team operates without us. Optional managed-services arrangement extends if needed.
-
-**More questions?** See the **[platform engineering vs DevOps guide](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

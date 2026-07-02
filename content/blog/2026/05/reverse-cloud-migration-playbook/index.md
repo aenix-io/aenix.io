@@ -242,29 +242,3 @@ Aenix runs this as a 14- or 28-day **[Platform Readiness Assessment](/services/p
 
 *Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-repatriation engagements and platform engineering programs across the EU, DACH, and Central Asia.*
 
-<!--
-SEO meta description (≤155 chars):
-"Reverse cloud migration playbook for 2026: honest TCO, workload ranking, destination architecture, cutover sequencing, and 4 common pitfalls."
-
-OG image: 1200×630 — reverse-arrow visual + workload-classification card
-
-Slug: /blog/2026/05/reverse-cloud-migration-playbook/
-
-Hreflang setup (when DE locale launches):
-- en: /blog/2026/05/reverse-cloud-migration-playbook/
-- de: /de/blog/2026/05/reverse-cloud-migration-playbook/
-- x-default: en
-
-Word count: 2500-3500. Actual: ~3000.
-
-Keyword cannibalization check:
-- This article: "reverse cloud migration" parent
-- Cloud repatriation landing: "cloud repatriation" parent — DIFFERENT
-- DORA landing: "dora compliance" — DIFFERENT
-- DORA article: "dora compliance checklist" — DIFFERENT
-- Platform readiness assessment landing: "cloud readiness assessment" — DIFFERENT
-- Platform readiness assessment article: "cloud assessment framework" — DIFFERENT
-- VMware alternative landing/article: "vmware alternative" / "vmware replacement" — DIFFERENT
-
-No conflicts.
--->

@@ -39,17 +39,6 @@ faq:
   <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
 </div>
-
----
-
-## Quick facts
-
-- **Für:** Produkt- / SaaS-Organisationen mit starken Engineering-Teams, die in Developer Experience investieren (typisch 300+ Engineers, aber kleinere Teams mit hohem DevEx-Fokus passen auch)
-- **Foundation:** Open-Source Cozystack (CNCF-Projekt, Apache 2.0)
-- **Engagement-Größe:** €300k - €2M Projekt; Managed-Retainer post-Deployment
-- **Time-to-Production:** 6-12 Monate für typischen IDP-Build; kürzer für Golden-Path-only-Scope
-- **Architektur:** Kubernetes-native Cloud + IDP-Layer (GitLab, Argo CD, APIs, Golden Paths, Service-Erstellungs-Wizards, internes Portal)
-
 ---
 
 ## Was in der IDP Edition enthalten ist

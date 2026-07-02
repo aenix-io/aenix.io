@@ -70,4 +70,3 @@ Typischer repatriierter Bestand:
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~250. -->

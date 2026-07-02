@@ -143,7 +143,7 @@ Each OpenBAO instance comes with TLS enabled (cert-manager’s self-signed certi
 
 #### SeaweedFS: tiered storage pools
 
-Operators can now set up disk-type-specific pools (SSD, HDD, NVMe) using the `volume.pools` or `volume.zones[name].pools` fields. For each pool, an additional set of volume servers is created, along with the corresponding `BucketClass` и `BucketAccessClass`.
+Operators can now set up disk-type-specific pools (SSD, HDD, NVMe) using the `volume.pools` or `volume.zones[name].pools` fields. For each pool, an additional set of volume servers is created, along with the corresponding `BucketClass` and `BucketAccessClass`.
 
 In MultiZone setups, each zone × pool combination gets its own set of volume servers (e.g., `us-east-ssd`, `us-west-hdd`), and nodes are matched via the `topology.kubernetes.io/zone` label. Existing deployments with no pools defined produce output identical to previous versions — no migration needed.
 

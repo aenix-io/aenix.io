@@ -54,7 +54,7 @@ Die Private-Cloud-Landschaft hat sich in den letzten 3 Jahren erheblich verände
 ## Open-Source-Plattformen
 
 ### Cozystack
-Apache-2.0-Lizenz, CNCF Project-Projekt. KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. **Beste Wahl für** Service Provider, regulierte Mandantenfähigkeit, AI/GPU-Betreiber. **Stärken:** Single-Stack für VMs + Container + DBs + S3 + GPU. Mandantenfähigkeit strukturell.
+Apache-2.0-Lizenz, CNCF-Projekt. KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. **Beste Wahl für** Service Provider, regulierte Mandantenfähigkeit, AI/GPU-Betreiber. **Stärken:** Single-Stack für VMs + Container + DBs + S3 + GPU. Mandantenfähigkeit strukturell.
 
 ### OpenStack
 Apache-2.0-Lizenz, OpenInfra Foundation. Nova + Neutron + Cinder + Swift + Keystone. **Beste Wahl für** große Telekommunikations-Cluster, behördliche Clouds, OpenStack-erfahrene Teams. **Stärken:** Reif, breite Community, viele Vendor-Distributionen.
@@ -107,4 +107,3 @@ Wenn Cozystack zu Ihrer Situation passt — siehe **[Private-Cloud-Plattform-Pag
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~800. -->

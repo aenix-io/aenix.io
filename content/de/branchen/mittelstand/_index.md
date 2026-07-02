@@ -5,6 +5,7 @@ related_pages:
   - /products/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
 language: "de"
+hreflang_en: /industries/smb-mid-market/
 direct_answer: |
   **Diese Seite beantwortet ehrlich, wann Cozystack für den deutschen Mittelstand passt und wann nicht. Cozystack ist zweckgebaut für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder. Für kleine KMU (unter ~100 Mitarbeitern, single-tenant, einfache Infrastruktur) ist Cozystack Over-Engineering — Hyperscaler, Hetzner oder Proxmox sind dort einfacher. Cozystack lohnt sich für Mittelständler mit regulierten Daten, DACH-Souveränitätsanforderungen, interner Plattform-Engineering-Funktion oder einem Weg zu Multi-Tenant (etwa SaaS). KMU konsumieren die Plattform meist als Produkt über einen Aenix-Partner (regionaler MSP oder Hosting-Anbieter), der die Ænix Platform darunter betreibt. Direktes Aenix-Engagement ist im KMU-Maßstab selten passend.**
 quick_facts:
@@ -39,46 +40,66 @@ faq:
 
 **Cozystack ist zweckgebaut für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder. Für KMU und kleinen Mittelstand (unter ~100 Mitarbeitern, single-tenant, einfache Infrastruktur) ist Cozystack Over-Engineering. Die ehrliche Antwort zählt mehr als der Sales-Pitch.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — aber **nur über einen Aenix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden konsumieren Cloud als Produkt vom Partner, der Ænix Platform darunter betreibt. Direktes Aenix-Engagement ist im KMU-Maßstab selten passend.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — aber **nur über einen Aenix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden konsumieren Cloud als Produkt vom Partner, der die Ænix Platform darunter betreibt. Ein direktes Aenix-Engagement passt im KMU-Maßstab selten.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">15-min-Fit-Check (kostenlos)</a>
+  <a class="cta-primary" href="/de/kontakt/">Kurzer Fit-Check-Call (15 Min, kostenlos)</a>
 </div>
 
 ---
 
 ## Wann Cozystack NICHT für KMU passt
 
-- Single Team, single Produktlinie, single Tenant
+- Ein Team, eine Produktlinie, ein Tenant
 - Unter 50 Server / Hosts
 - Bestehendes IT-Team kleiner als 5
-- Keine Plattform-Engineering-Funktion
-- Einfaches Workload-Portfolio
+- Keine Plattform-Engineering-Funktion (und kein Plan, eine aufzubauen)
+- Einfaches Workload-Portfolio (ein paar VMs, einfache Datenbanken)
+- Public-Cloud-Ökonomie (AWS/Azure/GCP) funktioniert und das Team ist damit vertraut
 
-In diesen Fällen Hyperscaler / Hetzner / Proxmox einfacher.
+In diesen Fällen ist **Cozystack Over-Engineering**. Realistische Alternativen:
+
+- **Einfache Hyperscaler-Deployments** — AWS/Azure/GCP mit Managed Services
+- **Proxmox VE** — für KMU-On-Prem-Virtualisierung
+- **Hetzner / OVHcloud / ähnliche** — Managed Infrastructure
+- **Cloud-Managed-Plattformen** — DigitalOcean, Linode, Hostinger für sehr kleine Teams
 
 ---
 
-## Wann Cozystack für Mittelstand passen könnte
+## Wann Cozystack für den Mittelstand passen könnte
 
-- Mittelstand mit **regulierten Daten** (Banking-, Healthcare-adjacent)
-- Mittelstand mit **DACH-spezifischer Souveränität**
+- Mittelstand mit **regulierten Daten** (Banking-nah, Healthcare-nah)
+- Mittelstand mit **spezifischem Souveränitäts-Druck** (DACH-Finanzdienstleistungs-KMU)
 - Mittelstand mit **interner Plattform-Engineering-Funktion**
-- Mittelstand wird **Multi-Tenant** (z.B. SaaS)
-- Mittelstand mit **spezifischem Kosten-Trigger**
+- Mittelstand, der **Multi-Tenant** wird (z.B. SaaS-Unternehmen mit 100+ Kunden)
+- Mittelstand mit **spezifischem Kosten-Trigger** bei Skalierung (FinOps-Mandat)
 
-In diesen Fällen — Discovery-Call bestätigt Fit oder weist auf Einfacheres hin.
+Für diese Fälle bestätigt ein Discovery-Call, ob Cozystack passt oder ob etwas Einfacheres richtig ist.
+
+---
+
+## Was wir KMU / Mittelstand anbieten
+
+- **15-minütiger Fit-Check-Call** — kostenlos, ehrlich, ohne Sales-Druck. Wir sagen Ihnen, ob Cozystack passt oder nicht.
+- **Architektur-Review** (5-10 Tage, Festpreis) — für Organisationen, die vor einer Festlegung eine strukturierte Bewertung wünschen.
+- **Phase-2-Implementierung** — nur wenn die Bewertung bestätigt, dass Cozystack passt.
 
 ---
 
 ## Warum wir das ehrlich publizieren
 
-Cozystack ist Open Source. Wir verkaufen keine Lizenzen. Was Sie nicht brauchen zu bauen, würde unserer Reputation schaden.
+Cozystack ist Open Source. Wir verkaufen keine Lizenzen. Ihnen etwas zu bauen, das Sie nicht brauchen, würde unserer Reputation schaden. Besser, von Anfang an ehrlich zu sein und uns auf Right-Fit-Projekte einzulassen.
 
-/contact/
+Evidenz aus dem Kundenstamm: Die meisten Aenix-Engagements betreffen Engineering-Organisationen mit 200+ Mitarbeitern. KMU-Engagements sind selten — und wenn sie vorkommen, werden sie durch Ausnahmefälle mit regulierten Daten getrieben, nicht durch generische "Cloud-Plattform"-Bedürfnisse.
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
 
-<!-- Word count: ~300. Honest positioning. -->
+- **[Wann Cozystack für KMU und Mittelstand passt — ehrliche Antwort](/blog/2026/05/when-cozystack-fits-smb-and-mid-market/)**
+
+---
+
+*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack. Wir engagieren uns bei Projekten, bei denen die Architektur wirklich passt.*

@@ -85,10 +85,9 @@ DORA gilt für betroffene Finanzunternehmen und ihre ICT-Drittanbieter mit kriti
 
 ## Wie geht es weiter?
 
-Strukturierte DORA-Bewertung → **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+Strukturierte DORA-Bewertung → **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 ---
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~450. -->

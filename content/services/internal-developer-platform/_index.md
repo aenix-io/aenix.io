@@ -217,24 +217,6 @@ If Phase 2 follows assessment, assessment cost credited against implementation s
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Internal developer platform vs internal developer portal — which do we need?**
-A portal (Backstage, Port, Cortex) is the UI/catalog. A platform is the underlying capability stack. You probably need a platform; whether you also need a portal depends on team size and discoverability needs. For most organizations under 200 engineers, a well-documented platform with simple IaC entry points is enough; portal value emerges at scale.
-
-**Do we need to build on Cozystack?**
-No. Cozystack is the foundation we recommend when it fits — for multi-tenant or sovereign use cases, it usually does. For organizations deeply on OpenShift, vanilla Kubernetes, or other distributions, we extend the existing platform.
-
-**How long is a typical IDP engagement?**
-Assessment: 14-28 days. Build: 3-9 months elapsed depending on scope. Foundation comes first (1-2 months); golden paths layer on (1-3 months); knowledge transfer runs throughout.
-
-**What if our team can't operate the IDP after handover?**
-Two paths: (1) optional managed-services engagement where Aenix operates under contract; (2) extension of the build engagement to grow internal team capacity. The decision is named explicitly during assessment.
-
-**More questions?** See the **[IDP examples and architecture article](/blog/2026/05/internal-developer-platform-examples-without-backstage/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

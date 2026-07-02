@@ -5,6 +5,7 @@ related_pages:
   - /de/dienstleistungen/public-cloud-builder
   - /products/cozystack
 language: "de"
+hreflang_en: /industries/hosting-providers/
 direct_answer: |
   **Eine Cloud-Plattform für Hosting-Anbieter ermöglicht es traditionellen Hostern (Shared, VPS, Dedicated, Bare Metal), Cloud-Dienste anzubieten, die preislich mit Hyperscalern konkurrieren, ohne ihre direkten Kundenbeziehungen aufzugeben. Aenix liefert dies über Cozystack, eine Kubernetes-native Open-Source-Plattform, die VMs (KubeVirt) und Container über eine einzige API bereitstellt, Kunden über das Tenant-CRD mandantenfähig isoliert und einen Service-Katalog jenseits reiner VMs bietet. Die produktisierte Ænix Platform ISP Edition ergänzt WHMCS-Billing-Integration, Tenant Lock/Suspension und Migrations-Tooling von VMware, OpenStack und Virtuozzo. Lizenzierung erfolgt unter Apache 2.0 ohne per-CPU-Modell.**
 quick_facts:
@@ -37,44 +38,58 @@ faq:
     a: "Die ISP Edition positioniert sich als moderne Alternative zu OpenStack: produktisierter Installer, schnellere Feature-Bereitstellung, WHMCS-integriertes Billing und ein Service-Katalog jenseits reiner VMs — bei geringerer operativer Komplexität durch die Kubernetes-native Architektur."
 ---
 
-**Hosting-Anbieter in 2026 stehen vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren, aber mit den Kundenbeziehungs-Vorteilen, die Hosting-Anbieter bereits haben. Die architektonische Antwort ist eine Kubernetes-native Plattform mit Multi-Tenant-Kunden-Isolation, Billing-Integration und einem Service-Katalog jenseits von VMs — Cozystacks Designziel.**
+**Hosting-Anbieter stehen 2026 vor Kundennachfrage nach Cloud-Fähigkeiten, die preislich mit Hyperscalern konkurrieren, aber mit den Kundenbeziehungs-Vorteilen und der Preisflexibilität, die Hosting-Anbieter bereits haben. Die architektonische Antwort ist eine Kubernetes-native Plattform mit Multi-Tenant-Kunden-Isolation, Billing-Integration und einem Service-Katalog jenseits von VMs — Cozystacks Designziel.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Tenant Lock/Suspension, Fast Feature Delivery, produktisierter Installer, Migrations-Tooling von VMware/OpenStack/Virtuozzo. Ab €1.3k/Monat Support-Tier. Öffentliche Produktionskunden: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Tenant Lock/Suspension, Fast Feature Delivery, produktisierter Installer, Migrations-Tooling von VMware/OpenStack/Virtuozzo. Einstieg ab €1.3k/Monat Support-Tier. Öffentliche Produktionskunden: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/">Modernisierungs-Leitfaden →</a>
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/">Hosting-Plattform-Modernisierung →</a>
 </div>
 
 ---
 
-## Wen wir bedienen
+## Wer in der Zielgruppe ist
 
-- Traditionelle Hosting-Anbieter (Shared, VPS, Dedicated Server)
-- Regionale Cloud-Anbieter unter Souveränitäts-Mandaten
+- Traditionelle Hosting-Anbieter (Shared, VPS, Dedicated Server) bei der Modernisierung
+- Regionale Cloud-Anbieter, die lokale Souveränitäts-Mandate bedienen
 - Spezial-Hosting-Anbieter (Gaming, KI, Finanzdienstleistungen)
 - Bare-Metal-as-a-Service-Anbieter
 
 ---
 
-## Warum Cozystack passt
+## Wofür Hosting-Anbieter zu uns kommen
 
-- Multi-Tenant Tenant CRD
-- WHMCS-Integration (zwei Modi)
-- Open-Source-Plattform — keine per-CPU-Lizenzierung
-- Service-Katalog jenseits VMs
-- Operative Einfachheit
+- **Modernisierung von VPS zum Cloud-Produkt** — Multi-Tenant-Kubernetes-native Plattform
+- **Service-Katalog-Erweiterung** — VMs + Container + Managed Databases + S3 + GPU auf einer Plattform
+- **WHMCS-Integration** — produktionsreif, zwei Integrationsmodi
+- **Kundenseitiges Portal** — cozyportal, anpassbar pro Anbieter
+- **Souveräne-Cloud-Produkt-Launches** — für regionale Märkte
 
-Produktive Referenz: Ænix Platform ISP Edition deployments at regional hosting providers (currently listed on aenix.io); tier-1 European bank engagements under NDA until mid-2027.
+Für ein sales-geführtes Engagement siehe **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** und **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)**.
 
 ---
 
-/contact/
+## Warum Cozystack zu Hosting-Anbietern passt
 
-- **[Public-Cloud-Builder-Services](/de/dienstleistungen/public-cloud-builder)** (sales-led)
+- **Multi-Tenant Tenant CRD** — Kunden-Isolation auf Produktionsniveau
+- **WHMCS-Integration** — zwei Modi (native UI + cozyportal-Frontend)
+- **Open-Source-Plattform** — keine Per-CPU-Lizenzierung, Hosting-Marge bleibt erhalten
+- **Service-Katalog** — weit über VMs hinaus (Managed DBs, S3, GPU)
+- **Operative Einfachheit** — eine Plattform, ein Team
+
+Produktive Referenzen: regionale Hosting-Anbieter betreiben die Ænix Platform ISP Edition; Tier-1-europäische Bank-Deployments unter NDA bis Mitte 2027.
+
+---
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+- **[Public-Cloud-Builder-Services](/de/dienstleistungen/public-cloud-builder/)** — Engagement
+- **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)** — gebrandet für Reseller
+- **[Artikel: Hosting-Anbieter-Plattform-Modernisierung](/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/)**
 
 ---
 
 *Aenix ist das Team hinter Cozystack.*
-
-<!-- Word count: ~350. -->

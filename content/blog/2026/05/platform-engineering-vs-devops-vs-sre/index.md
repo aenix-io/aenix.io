@@ -241,15 +241,3 @@ For the engagement details and pricing, see the **[platform engineering services
 
 *Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build platform engineering programs across the EU, DACH, and Central Asia.*
 
-<!--
-SEO meta description (≤155 chars):
-"Platform engineering vs DevOps vs SRE in 2026: terminology guide, what each function owns, tools, metrics, maturity progression, common pitfalls."
-
-OG image: 1200×630 — three-circle Venn diagram of the three functions
-
-Slug: /blog/2026/05/platform-engineering-vs-devops-vs-sre/
-
-Word count: ~3000.
-
-Keyword cannibalization check: distinct parent topic from platform-engineering landing and all 14 other artifacts. No conflicts.
--->

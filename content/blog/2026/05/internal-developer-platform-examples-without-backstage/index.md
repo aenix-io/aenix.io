@@ -229,8 +229,3 @@ For services details see the **[internal developer platform services page](/serv
 
 *Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!--
-SEO meta description (≤155 chars):
-"Internal developer platform examples 2026: 6 architectural patterns, tools, decision tree, common mistakes. Without Backstage lock-in."
-Word count: ~2900.
--->

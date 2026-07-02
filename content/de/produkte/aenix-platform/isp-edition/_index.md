@@ -3,6 +3,7 @@ title: "Ænix Platform ISP Edition"
 description: "Ænix Platform ISP Edition: schlüsselfertige Cloud-Plattform für Hosting-Anbieter und MSPs. WHMCS-Billing, Tenant-Suspension, Migration von VMware/OpenStack."
 type: "page"
 language: "de"
+hreflang_en: /products/aenix-platform/isp-edition/
 direct_answer: |
   **Die Ænix Platform ISP Edition ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Sie bündelt Hosting-Panel, kundenseitiges Portal (cozyportal), Billing, Payment-Processing, Tenant-Suspension und Support in einem produktisierten Stack auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Die Plattform ersetzt OpenStack, VMware Cloud Director, Virtuozzo und eigene In-House-Panels, ist WHMCS-integriert und in Wochen produktionsreif. Aenix liefert Enterprise-Support ab €1.3k/Monat sowie produktisierte Migrations-Module und Engagement-Expertise für den Umstieg von VMware, OpenStack, Virtuozzo und OpenNebula.**
 quick_facts:
@@ -40,20 +41,12 @@ faq:
 **Eine moderne Alternative zu OpenStack, gebaut für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Turnkey Cloud-in-a-Box: Hosting-Panel, Billing, Kunden-Portal, Payments, Support — installieren, Nutzer einbinden, Betrieb starten. WHMCS-integriert. Produktionsreif in Wochen.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
 </div>
 
 ---
 
-## Quick facts
-
-- **Für:** Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren beim Modernisieren oder Erweitern des Cloud-Produkts
-- **Foundation:** Open-Source Cozystack (CNCF-Projekt, Apache 2.0)
-- **Entry-Pricing:** **Ab €1.3k/Monat** Support-Tier
-- **Time-to-Live:** Wochen (mit produktisiertem Installer + Migrations-Tooling)
-- **Ersetzt:** OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, eigene In-House-Panels
-- **Architektur:** Kubernetes-nativ (Talos + KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal + VictoriaMetrics + VictoriaLogs)
 
 ---
 
@@ -160,44 +153,16 @@ Für Produkt-Teams, die Cozystack auf eigener / gemieteter Hardware (Hetzner, OV
 
 ---
 
-## Häufige Fragen
-
-### Wie unterscheidet sich ISP Edition vom Selbstbetrieb von Open-Source-Cozystack?
-
-Cozystack gibt Ihnen den Motor. ISP Edition gibt Ihnen das Auto: WHMCS-Integration, Billing, Kunden-Portal, Payment-Processing, Tenant-Suspension, Support — alle Surfaces, die ein echtes Cloud-Geschäft braucht. Plus Enterprise-Support-Tier.
-
-### Was beinhaltet €1.3k/Monat?
-
-Entry-Support-Tier — direkter Support-Kanal, Named TAM in höheren Tiers, Zugang zu ISP-spezifischen Modulen, Migrations-Expertise. Im Discovery-Call besprechen wir die aktuelle Tier-Aufteilung.
-
-### Können wir unser eigenes Billing-System statt WHMCS nutzen?
-
-Ja. Zwei Integrationsmodi:
-1. **WHMCS-Frontend + Cozystack-Backend** — Ihre Kunden sehen WHMCS; Cozystack ist das Substrat
-2. **cozyportal-Frontend + WHMCS-Backend** — Ihre Kunden sehen cozyportal; WHMCS handhabt Billing
-Plus Support für Custom-Billing bei Bedarf.
-
-### Wie lange dauert Migration von VMware?
-
-Produktisierter Installer bringt ISP Edition in Wochen live. VMware-Kundenmigration ist workload-abhängig — typisches Muster ist Parallel-Run mit kohorten-basierter Migration über 3-6 Monate für mittelgroße Hosting-Estates.
-
-### Unterstützen Sie White-Label?
-
-Ja. cozyportal ist vollständig white-label-fähig pro Anbieter — Farben, Logo, Domain. Multi-Tier-Reseller-Modell unterstützt (Aenix → MSP → MSP-Kunden).
-
-### Gibt es eine Managed-Operations-Option?
-
-Ja. Aenix kann ISP Edition unter Vertrag betreiben, während Sie sich auf Kundenakquise konzentrieren. Im Discovery-Call besprechen.
 
 ---
 
-## Wie starten
+## Architektur-Review buchen
 
-Buchen Sie einen 30-Minuten-Discovery-Call. Wir besprechen Ihr Hosting-Geschäft, aktuellen Stack, Kundenmix und ISP Edition Fit.
+Erzählen Sie uns von Ihrem Hosting-Geschäft, aktuellen Stack und Kundenmix — wir richten ein fokussiertes Architektur-Review mit einem Aenix-Engineer ein und bestätigen den ISP Edition Fit.
 
-<div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
-</div>
+{{< pipedrive-form type="demo" >}}
+
+Lieber ein kürzerer erster Schritt? [30-Minuten-Discovery-Call buchen](/de/kontakt/) stattdessen.
 
 ---
 

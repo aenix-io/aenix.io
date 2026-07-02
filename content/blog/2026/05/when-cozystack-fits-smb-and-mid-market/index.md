@@ -85,7 +85,7 @@ If you have 0-1 of these, Cozystack is over-engineering. If 2, marginal. If 3+, 
 - Mid-market with intentional in-house platform engineering investment
 - Fast-growing tech-mid-market scaling beyond hyperscaler simple model
 
-## Aenix engagement model для mid-market
+## Aenix engagement model for mid-market
 
 - **15-minute fit-check call** — free, no sales pressure
 - **Architecture review** (5-10 days) — if mid-market wants structured assessment
@@ -97,4 +97,3 @@ For most SMB outreach, the honest answer is "stay where you are." We're explicit
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~500. Honest article. -->

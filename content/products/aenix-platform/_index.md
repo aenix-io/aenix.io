@@ -42,18 +42,6 @@ faq:
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="https://cozystack.io">Cozystack open source →</a>
 </div>
-
----
-
-## Quick facts
-
-- **Five editions:** Public Cloud / ISP / Enterprise / IDP / AI/ML — same product, different feature bundles per buyer profile
-- **Foundation:** Open-source Cozystack (CNCF project, Apache 2.0; CNCF Incubating expected late summer 2026)
-- **What's added over Cozystack:** Hosting panel + user / admin / support portals + service-creation wizards + full billing (backend + frontend) + console portal + usage charts + payment integrations + WHMCS integration + enterprise SLA + dedicated support + edition-specific features
-- **Engagement model:** License + services bundle. Entry from €1.3k/month (ISP Edition support tier); multi-million-euro for Public Cloud / Enterprise builds
-- **Architecture:** Kubernetes-native (Talos + KubeVirt + Cilium + LINSTOR + Tenant CRD), multi-tenant, customer-controlled hardware
-- **Customer evidence:** Tier-1 European bank engagements under NDA (named cases expected mid-2027); regional hosting providers in production
-
 ---
 
 ## What Ænix Platform adds over open-source Cozystack
@@ -160,11 +148,6 @@ The cloud experience on customer-controlled hardware. Reduce AWS-level bills 2-7
 | Roadmap influence | Community-driven | Customer requirements heard |
 
 If you have platform engineering capacity and want full control: run Cozystack yourself, free. If you need a turnkey cloud-in-a-box with billing, portals, and enterprise support: Ænix Platform.
-
----
-
-## Frequently asked questions
-
 ### What does Ænix Platform add over open-source Cozystack?
 
 Cozystack is the engine — Kubernetes-native multi-tenant cloud platform foundation. Ænix Platform is the car — adds hosting panel, user / admin / support portals, service-creation wizards, full billing (backend + frontend), console portal, usage charts, payment integrations, WHMCS integration, productized installer, enterprise SLA, dedicated support, edition-specific features per buyer profile, and compliance-ready bundles.

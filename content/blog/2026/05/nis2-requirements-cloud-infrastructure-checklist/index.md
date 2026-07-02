@@ -172,7 +172,7 @@ For cloud architecture this requires:
 
 Many essential and important entities must register with their national competent authority. The architecture decision: ensure your registration data (including DNS, IP ranges, contact details) reflects what's actually deployed.
 
-## Article 30 — coordinated vulnerability disclosure
+## Article 12 — coordinated vulnerability disclosure
 
 Member states must designate a CSIRT to coordinate vulnerability disclosures. Entities should publish a vulnerability disclosure policy. Architecture: a structured CSAF feed or Hugo-equivalent for security advisories, with named contact points.
 
@@ -273,8 +273,3 @@ For details see the **[NIS2 compliance services page](/solutions/nis2-compliance
 
 *Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution.*
 
-<!--
-SEO meta description (≤155):
-"NIS2 requirements for cloud infrastructure 2026: Article 21 controls, Article 23 incident reporting, working architecture checklist."
-Word count: ~2900.
--->

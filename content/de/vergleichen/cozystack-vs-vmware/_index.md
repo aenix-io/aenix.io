@@ -3,6 +3,7 @@ title: "Cozystack vs VMware — Head-to-Head-Vergleich für die Post-Broadcom-Ä
 description: "Sie erwägen einen VMware-Ausstieg. Die Destination-Shortlist umfasst Cozystack. Diese Seite vergleicht die beiden Head-to-Head — was ist gleich, was ist..."
 related_pages: ["/de/alternativen/vmware-alternative", "/de/produkte/aenix-platform/", "/de/produkte/cozystack", "/de/migration/vmware"]
 language: "de"
+hreflang_en: /compare/cozystack-vs-vmware/
 direct_answer: |
   **Cozystack vs VMware ist ein Head-to-Head-Vergleich für Organisationen, die in der Post-Broadcom-Ära einen VMware-Ausstieg planen und Cozystack bereits auf der Shortlist haben. VMware Cloud Foundation ist ein proprietärer, subscription-pflichtiger Stack aus ESXi, vSAN und NSX. Cozystack ist eine quelloffene Cloud-Plattform unter Apache 2.0, die auf Kubernetes und KubeVirt aufsetzt, VMs und Container über eine gemeinsame API betreibt, Cilium (eBPF) für Networking sowie LINSTOR oder Rook-Ceph für Storage nutzt und Mandantenfähigkeit über das Tenant-CRD bietet. Aenix, das Open-Core-Unternehmen hinter Cozystack, liefert die produktisierte Ænix Platform und Migrationsservices für den Wechsel von VMware.**
 
@@ -37,11 +38,11 @@ faq:
     a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack, einem CNCF-Projekt. Aenix liefert die produktisierte Ænix Platform sowie Migrationsservices für den VMware-Ausstieg. Die Ænix Platform gibt es in fünf Editions; die Einstiegsstufe Basic kostet 1.250 $/Monat für 10 Nodes."
 ---
 
-**Sie erwägen einen VMware-Ausstieg. Die Destination-Shortlist umfasst Cozystack. Diese Seite vergleicht die beiden Head-to-Head — was ist gleich, was ist anders, was kostet die Migration, was läuft besser auf welchem.**
+**Sie erwägen einen VMware-Ausstieg. Die Destination-Shortlist umfasst Cozystack. Diese Seite vergleicht die beiden Head-to-Head — was gleich ist, was anders ist, was die Migration kostet, was auf welchem besser läuft.**
 
-Für breitere VMware-Alternativen-Evaluierung siehe **[VMware-Alternativen-Listicle](/de/alternativen/vmware-alternativen/)**. Für die fokussierte Vendor-Empfehlung siehe **[VMware-Alternative](/de/alternativen/vmware-alternative/)**. Diese Seite nimmt an, dass Sie bereits Cozystack spezifisch erwägen.
+Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternativen-Listicle](/de/alternativen/vmware-alternativen/)**. Für die fokussierte Vendor-Empfehlung siehe **[VMware-Alternative](/de/alternativen/vmware-alternative/)**. Diese Seite nimmt an, dass Sie Cozystack bereits spezifisch erwägen.
 
-> **Passt zu:** **[Ænix Platform](/de/produkte/aenix-platform/)** — turnkey kommerzielle Cloud-in-a-Box auf Cozystack. Fünf Editions: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig).
+> **Passt zu:** **[Ænix Platform](/de/produkte/aenix-platform/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Fünf Editions: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig). Die richtige Edition hängt von Ihrem Buyer-Profil post-VMware ab.
 
 ---
 
@@ -49,31 +50,75 @@ Für breitere VMware-Alternativen-Evaluierung siehe **[VMware-Alternativen-Listi
 
 | | VMware (VCF) | Cozystack |
 |---|---|---|
-| **Lizenz** | Subscription only | Apache 2.0 (Open Source) |
-| **Foundation** | ESXi Hypervisor | Kubernetes + KubeVirt |
-| **Multi-Tenancy** | vCD Organizations | Tenant CRD |
-| **Storage** | vSAN proprietär | LINSTOR / Rook-Ceph |
-| **Networking** | NSX | Cilium (eBPF) |
-| **Container** | Tanzu add-on | Kubernetes-nativ |
-| **GPU** | vGPU-Lizenz | KubeVirt vGPU + MIG |
-| **Lock-in** | Vendor-Stack tief | Open Source, kundenkontrolliert |
+| **Lizenz** | Nur Subscription | Apache 2.0 (Open Source) |
+| **Compute** | vSphere / ESXi | KubeVirt auf Talos |
+| **Storage** | vSAN | LINSTOR oder Rook-Ceph |
+| **Netzwerk** | NSX | Cilium (eBPF) |
+| **Multi-Tenancy** | vCloud Director | Tenant CRD |
+| **Service-Katalog** | vRealize / Aria | ApplicationDefinition + cozyportal |
+| **Backup/DR** | Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
+| **GPU für VMs** | NVIDIA vGPU unter Horizon | NVIDIA vGPU + KubeVirt |
+| **Air-Gap** | Unterstützt (zusätzliche Lizenzierung) | Unterstützt (keine Zusatzkosten) |
+| **Ops-Modell** | Vendor-Support benötigt Umgebungszugriff | Aenix-Advisory + GitOps-PR-Review (kein kubectl-Zugriff nötig) |
 
 ---
 
-## Wann Cozystack vs VMware
+## Wo Cozystack tatsächlich besser ist
 
-**Cozystack passt wenn:**
-- Open-Source-First-Anforderung
-- Souveränität / kundenkontrollierte Schlüssel
-- Multi-Tenant-Cloud-Builder-Use-Case
-- Kubernetes-First-Workloads + Legacy-VM-Mix
-- Post-Broadcom-Kosten-Druck
-
-**VMware passt wenn:**
-- Tiefe vSphere-Investition + Skill-Set
-- VCF-Subscription-Renewal vertretbar
-- Keine sovereignty/Open-Source-Anforderung
+- **Preisgestaltung** — keine Subscription pro CPU / pro Socket. Hardware + gewählter Aenix-Tier.
+- **Multi-Tenancy** — Tenant CRD ist nativ; vCD ist angeklebtes Legacy.
+- **Container-Workloads** — Cozystack ist Kubernetes-native, Container und VMs koexistieren auf einer Plattform. Tanzu ist ein OpenShift-artiges Add-on für VMware.
+- **Souveränität** — Open Source auf Kundenhardware mit kundenkontrollierten Schlüsseln.
+- **Vendor-Neutralität** — kein Broadcom-artiger Preisdruck auf die Roadmap.
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+## Wo VMware weiterhin besser sein kann
+
+- **Bestehende VMware-Expertise** — Ihr Team hat 10 Jahre vSphere-Wissen, das sich nicht sofort übertragen lässt.
+- **Spezifische VMware-only-Features** — einige Nischen-Features im Advanced Networking / Storage haben keine direkten Äquivalente.
+- **Enterprise-Beschaffung** — die VMware-Beschaffung ist in vielen Unternehmen etabliert.
+- **Bestehende Tooling-Integration** — VMware integriert sich mit breiterem Enterprise-Tooling (Ansible Tower, ServiceNow, etc.).
+
+Wenn Sie bereits tief auf VMware setzen und die Renewal-Ökonomie tragbar ist, ist "bleiben und optimieren" eine valide Antwort.
+
+---
+
+## Migrations-Timing
+
+| Estate-Größe | Assessment | Umsetzung | Gesamt |
+|---|---|---|---|
+| <100 VMs | 14 Tage | 6-9 Monate | 7-10 Monate |
+| 100-500 VMs | 28 Tage | 9-15 Monate | 10-16 Monate |
+| 500-2000 VMs | 28 Tage | 15-24 Monate | 16-25 Monate |
+
+Kohorten-basierte Migration; ausgerichtet an den VCF-Subscription-Abläufen.
+
+---
+
+## Kosten-Trajektorie
+
+Für ein Estate mit 200 VMs zu typischer VMware-VCF-Preisgestaltung:
+
+- **Jahr 1 VMware-VCF-Subscription:** ~$X (variiert; jüngste Pipeline zeigt 2-5× des ursprünglichen Deal-Preises)
+- **Jahr 1 Migrationskosten:** Assessment + Cozystack-Plattform-Aufbau + Migrations-Aufwand + Aenix-Support
+- **Ab Jahr 2 Cozystack-TCO:** Hardware-Refresh / Abschreibung + Aenix-Support-Tier
+- **Kumulative Nettoposition:** typischerweise positiv bis Ende Jahr 2; deutlich positiv bis Ende Jahr 3
+
+Ehrliche TCO-Modellierung ist Teil der Assessment-Phase.
+
+---
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+- **[VMware-Alternative](/de/alternativen/vmware-alternative/)** — fokussierte Empfehlung
+- **[VMware-Alternativen-Listicle](/de/alternativen/vmware-alternativen/)** — breiterer Markt-Scan
+- **[VMware-Migrations-Hub](/de/migration/vmware/)** — Migrations-Methodik
+- **[Cozystack](/de/produkte/cozystack/)** — Plattform-Details
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**
+
+---
+
+*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

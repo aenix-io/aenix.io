@@ -6,6 +6,7 @@ related_pages:
   - /de/produkte/aenix-platform/idp-edition/
   - /de/produkte/cozystack
 language: "de"
+hreflang_en: /alternatives/backstage-alternative/
 direct_answer: |
   **Eine Backstage-Alternative im engeren Sinne gibt es nicht — Backstage (CNCF Incubating) ist ein Service-Katalog und Developer-Portal, also die UI- und Discoverability-Schicht, nicht die Plattform selbst. Wer Backstage adoptiert hat und trotzdem auf wochenlange Self-Service-Pfade wartet, hat ein Plattform-Problem, kein Portal-Problem. Cozystack, das Open-Source-Fundament hinter der Ænix Platform, liefert die fehlende Schicht darunter: Kubernetes-native Virtualisierung (KubeVirt), Multi-Tenancy über die Tenant-CRD, Managed Services, Cilium-Networking, LINSTOR-Storage und Observability. Backstage kann als Front-End integriert werden; die produktisierte Foundation darunter ist es, die eine Internal Developer Platform funktionieren lässt.**
 
@@ -40,27 +41,68 @@ faq:
     a: "Über ein Architektur-Review. Es klärt, ob das Problem im Portal oder in der Plattform-Foundation liegt, und ob die Ænix Platform IDP Edition mit Cozystack darunter die Self-Service-Pfade beschleunigt — mit Backstage als optionalem Front-End."
 ---
 
-**Backstage (CNCF Incubating) ist exzellent in dem, was es ist: ein Service-Katalog und Developer-Portal mit starkem Plugin-Ökosystem. Der Missbrauch ist, es als die Plattform selbst zu behandeln, wenn es die UI-/Discoverability-Schicht oben auf einer Plattform ist. Wenn Sie Backstage adoptiert haben und Self-Service-Pfade immer noch Wochen dauern — Backstage ist nicht das Problem; die Plattform darunter ist es.**
+**Backstage (CNCF Incubating) ist exzellent in dem, was es ist: ein Service-Katalog und Developer-Portal mit einem starken Plugin-Ökosystem. Der Fehlgebrauch besteht darin, es als die Plattform selbst zu behandeln, wenn es die UI-/Discoverability-Schicht oben auf einer Plattform ist. Wenn Sie Backstage adoptiert haben und Self-Service-Pfade immer noch Wochen dauern — dann ist nicht Backstage das Problem, sondern die Plattform darunter.**
 
-Cozystack bietet die zugrunde liegende Plattform, auf der Backstage (oder jedes Developer-Portal) aufsitzt — Kubernetes-native Virtualisierung, Multi-Tenancy, Managed Services, Observability — Open-Source und operativ kohärent.
+Cozystack liefert die zugrunde liegende Plattform, auf der Backstage (oder jedes Developer-Portal) aufsitzt — Kubernetes-native Virtualisierung, Multi-Tenancy, Managed Services, Observability — Open Source und operativ kohärent.
 
-> **Passt zu:** **[Ænix Platform IDP Edition](/de/produkte/aenix-platform/idp-edition/)** — vollständige Internal Developer Platform mit Cloud-Foundation darunter. GitLab-Automation, Argo CD Workflows, Golden-Path-Templates. Backstage UI kann als Front-End integriert werden, wenn der Kunde es bevorzugt; die Foundation darunter ist es, was die IDP funktionieren lässt.
+> **Passt zu:** **[Ænix Platform IDP Edition](/de/produkte/aenix-platform/idp-edition/)** — vollständige Internal Developer Platform mit Cloud-Foundation darunter. GitLab-Automation, Argo-CD-Workflows, Golden-Path-Templates. Die Backstage-UI kann als Front-End integriert werden, wenn der Kunde das bevorzugt; die Foundation darunter ist es, die die IDP funktionieren lässt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/internal-developer-portal-vs-platform/">Portal vs Plattform →</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
+  <a class="cta-secondary" href="/blog/2026/05/internal-developer-portal-vs-platform/">Portal vs Plattform →</a>
 </div>
 
 ---
 
-## Wann Backstage allein nicht ausreicht
+## Wann Sie tatsächlich eine Backstage-Alternative brauchen
 
-- Self-Service-Pfade dauern immer noch Wochen
-- Cloud-Foundation darunter ist fragmentiert
-- Multi-Tenant-Garantien fehlen
-- Observability nicht team-scoped
-- Kubernetes-Cluster-Lifecycle nicht produktisiert
+Die ehrlichen Fälle:
+
+- **Sie haben noch keine zugrunde liegende Plattform** — ein Portal ohne Plattform darunter ist Tapete. Bauen Sie zuerst die Plattform; ein Portal kommt später hinzu, falls nötig.
+- **Die operativen Kosten von Backstage sind für Ihre Teamgröße zu hoch** — das Plugin-Ökosystem erfordert Engineering-Kapazität zur Pflege. Kleinere Organisationen (unter 100 Engineers) finden leichtgewichtigere Alternativen oft nachhaltiger.
+- **Sie wollen ein SaaS-Portal, nicht selbst gehostet** — Port, Cortex, Compass.
+- **Sie wollen andere eingebaute Meinungen** — das Portal ist meinungsstark; wenn Sie mit den Ansichten von Backstage nicht übereinstimmen, gibt es Alternativen.
+
+Wenn keiner dieser Punkte zutrifft und Backstage für Sie funktioniert — bleiben Sie bei Backstage. Die Empfehlung ist ehrlich.
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+## Wie eine "Alternative" für verschiedene Fälle aussieht
+
+| Fall | Empfehlung |
+|---|---|
+| Zugrunde liegende Plattform zuerst nötig | Plattform mit Cozystack (oder gewählter Kubernetes-Plattform) bauen; Portal später |
+| SaaS-Portal nötig, nicht selbst gehostet | Port, Cortex oder Compass |
+| Leichtgewichtiges Portal, kleineres Team | Markdown-Dokumentationsseite mit YAML-Katalog in Git |
+| Backstage, aber andere Meinungen nötig | Backstage mit Custom-Plugins (weiterhin Backstage, aber angepasst) |
+| Kein Portal wirklich nötig | Keins bauen — IaC-Repo + gute Dokumentation reichen für viele Organisationen unter 100 Engineers |
+
+---
+
+## Wo Cozystack in die Diskussion passt
+
+Cozystack ist **keine** Alternative zu Backstage — es ist die Plattform darunter.
+
+- **Sie können Backstage auf Cozystack betreiben** — Backstage als Tenant-Kubernetes-Workload, wobei Cozystack die zugrunde liegenden Fähigkeiten bereitstellt, auf die Backstage verweist.
+- **Oder cozyportal statt Backstage betreiben** — cozyportal ist das Cozystack-native Portal, einfacher und enger mit der Plattform verzahnt; mit weniger Plugin-Ökosystem.
+- **Oder gar kein Portal betreiben** — viele Cozystack-Bereitstellungen haben kein separates Portal; die IaC- + GitOps-Oberfläche reicht aus.
+
+Die Plattform-Entscheidung (Cozystack vs OpenShift vs Vanilla-Kubernetes) ist unabhängig von der Portal-Entscheidung (Backstage vs cozyportal vs Port vs keins).
+
+---
+
+## Wie Sie entscheiden, was Sie brauchen
+
+Ein fokussiertes Architektur-Review beantwortet: Brauchen Sie überhaupt ein Portal? Wenn ja, welches passt zu Ihrem operativen Modell? Aenix führt dies im Rahmen des **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** durch.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+- **[Internal Developer Portal vs Plattform](/blog/2026/05/internal-developer-portal-vs-platform/)** — Entitäts-Abgrenzung
+- **[Internal-Developer-Platform-Services](/de/dienstleistungen/internal-developer-platform/)** — Plattform-Engagement
+- **[Cozystack](/de/produkte/cozystack/)** — die Plattform, auf der Backstage aufsitzen kann
+
+---
+
+*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

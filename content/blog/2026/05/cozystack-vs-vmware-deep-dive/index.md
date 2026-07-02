@@ -133,5 +133,3 @@ For higher-level evaluation, **[VMware alternative](/alternatives/vmware-alterna
 
 *Aenix is the team behind Cozystack.*
 
-<!-- SEO: title "Cozystack vs VMware — Deep-Dive Comparison for Platform Engineers | Aenix"
-Word count: ~900. -->

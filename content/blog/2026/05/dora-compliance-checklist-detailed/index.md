@@ -10,12 +10,12 @@ companion_landing: "/solutions/dora-compliance/"
 quiz:
   title: "Test yourself: DORA evidence checklist"
   questions:
-    - q: "For each Article 21 / Article 28 requirement, what three things should you be able to do \"demonstrably\"?"
+    - q: "For each Article 6 / Article 28 requirement, what three things should you be able to do \"demonstrably\"?"
       options:
         - { text: "Name the control, locate it in the running system, evidence it for the regulator", correct: true }
         - { text: "Buy a vendor product, store the receipt, file it under DORA", correct: false }
         - { text: "Write a one-page annual summary signed by the CISO", correct: false }
-      explanation: "For each Article 21 / Article 28 requirement: name the control, locate it in the running system (configurations, logs, test results), and provide evidence in a regulator-consumable format. \"We have a DORA policy\" is now insufficient."
+      explanation: "For each Article 6 / Article 28 requirement: name the control, locate it in the running system (configurations, logs, test results), and provide evidence in a regulator-consumable format. \"We have a DORA policy\" is now insufficient."
     - q: "Which is NOT named as one of the four most-common DORA findings?"
       options:
         - { text: "Observability data leaving the regulator perimeter", correct: false }
@@ -54,7 +54,7 @@ For financial entities, "we have a DORA policy" is now insufficient. Supervisors
 
 ## What demonstrable means
 
-For each Article 21 and Article 28 requirement, you should be able to:
+For each Article 6 and Article 28 requirement, you should be able to:
 
 - **Name the control** that satisfies it
 - **Locate it in the running system** (not just policy)
@@ -79,4 +79,3 @@ For deeper engagement: **[DORA compliance services](/solutions/dora-compliance/)
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~300. -->

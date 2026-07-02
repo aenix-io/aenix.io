@@ -212,21 +212,6 @@ If Phase 2 follows assessment, assessment fee credited subject to scope.
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Can we keep VMware running during migration?**
-Yes — that's the standard pattern. VMware and destination platform run in parallel; workloads migrate cohort by cohort with validation.
-
-**What if our VCF commitments lock us in for years?**
-Cohort sequencing aligns with subscription expirations. Workloads move when commitments lapse. The plan respects what's contractually paid for.
-
-**Do you support Windows VMs?**
-Yes. KubeVirt runs Windows; we have automated VMware Tools cleanup before first KubeVirt boot.
-
-**More questions?** See **[VMware migration playbook article](/blog/2026/05/vmware-migration-tools-and-strategy/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: CTA -->

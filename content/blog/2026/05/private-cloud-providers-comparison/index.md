@@ -197,8 +197,3 @@ If your situation fits Cozystack — see **[private cloud platform page](/produc
 
 *Aenix is the team behind Cozystack.*
 
-<!--
-SEO meta description (≤155):
-"Private cloud providers 2026: Cozystack, OpenStack, OpenShift, Proxmox, VMware, Nutanix compared. Open-source vs commercial, decision tree, migration paths."
-Word count: ~1700.
--->

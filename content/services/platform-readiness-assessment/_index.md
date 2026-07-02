@@ -252,33 +252,6 @@ For named case studies see **[Customer stories](/case-studies/)** — request th
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**How is this different from a Big-4 cloud readiness assessment?**
-Big-4 assessments are typically delivered by management consultants who hand off to a separate implementation team — and to a hyperscaler partner whose incentives are not aligned with yours. Our engineers do both the assessment and the implementation, and we are not commercially aligned with any hyperscaler. The bias of our recommendations is toward what we can stand behind technically and operate under your governance.
-
-**Will Aenix pitch us Cozystack at the end?**
-The report names the stack we'd recommend with reasoning. In ~80% of cases that's Cozystack. When it isn't, we say so. We won't deliver an assessment that ends "and the answer is Cozystack" if the work doesn't justify it — that would damage the reputation that makes the assessment work.
-
-**Do you sign mutual NDAs?**
-Yes — at kickoff. Customer interviews and proprietary architecture details stay confidential.
-
-**What access do you actually need?**
-Read-only on architecture docs, GitHub / GitLab orgs, public-cloud billing, observability dashboards. We do not need kubectl access to production. We do not need credentials to anything writable.
-
-**What if our existing public-cloud commitments lock us in for 2 more years?**
-The trajectory plan accounts for commitment-vehicle expirations. Repatriation cadence is sequenced so that workloads move as commitments lapse, not before.
-
-**Can we run this engagement under government procurement (Kazakhstan, EU, etc.)?**
-Yes. We accept RFI / RFP through standard government procurement channels. Discovery call covers the procedural fit.
-
-**Does this work for an organization that's already chosen a stack?**
-Yes — the workstreams change emphasis. If you've committed to KubeVirt + Cilium + LINSTOR + Talos for example, the assessment focuses on operational readiness, multi-tenancy model, regulator gap, and developer self-service rather than vendor selection.
-
-**More questions?** See the **[methodology deep-dive on our blog](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

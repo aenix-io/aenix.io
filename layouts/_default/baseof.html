@@ -6,12 +6,7 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} – Ænix{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
-  {{/* Open Graph */}}
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  {{ with .Params.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+  {{/* Open Graph / Twitter meta are emitted once by seo/head.html (partial invoked below) — do not duplicate here. */}}
 
   {{/* Favicon */}}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -21,7 +16,6 @@
   {{/* DNS prefetch for third-party services we expect to load on consent */}}
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://analytics.ahrefs.com">
-  <link rel="dns-prefetch" href="https://assets.apollo.io">
   <link rel="dns-prefetch" href="https://webforms.pipedrive.com">
 
   {{/* Self-hosted fonts (Inter + JetBrains Mono, latin + latin-ext subsets).
@@ -67,7 +61,6 @@
        {{ with .Site.Params.googleAnalytics }}data-ga-id="{{ . }}"{{ end }}
        {{ with .Site.Params.gtmContainer }}data-gtm-container="{{ . }}"{{ end }}
        {{ with .Site.Params.ahrefsAnalytics }}data-ahrefs-key="{{ . }}"{{ end }}
-       {{ with .Site.Params.apolloAppId }}data-apollo-app-id="{{ . }}"{{ end }}
        {{ with .Site.Params.hotjarId }}data-hotjar-id="{{ . }}"{{ end }}
        hidden></div>
   <script src="/js/consent.js" defer></script>

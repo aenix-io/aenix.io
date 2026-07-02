@@ -11,6 +11,32 @@ related_pages:
   - /de/loesungen/sovereign-ai/
   - /de/produkte/
   - /de/dienstleistungen/
+hide_closing_cta: true
+quick_facts:
+  - label: "Was es ist"
+    value: "mandantenfähige GPU-Plattform für Training und Inferenz auf eigener Hardware."
+  - label: "Für wen"
+    value: "Leiter AI/ML, MLOps-Leads, AI-Platform-Owner."
+  - label: "Kontrolle"
+    value: "Ihre GPUs, Ihre Jurisdiktion, Ihre Modellwahl — keine Hyperscaler-Endpoint-Abhängigkeit."
+  - label: "Lizenz"
+    value: "Apache-2.0-Kern (Cozystack) — keine Pro-GPU-Plattformkosten."
+  - label: "Status"
+    value: "auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026)."
+  - label: "Häufiger Fehler"
+    value: "auf einem Hyperscaler-Endpoint prototypen und dann feststellen, dass die Datenklasse dort produktiv nicht hin darf."
+quick_facts_source: "[CNCF Landscape](https://landscape.cncf.io), [Cozystack-Doku](https://cozystack.io)"
+faq:
+  - q: "Training und Inferenz beides?"
+    a: "Ja — GPU-Scheduling für Training plus One-Click-LLM/vLLM-Serving auf derselben mandantenfähigen Plattform."
+  - q: "Müssen Modelle unsere Infrastruktur verlassen?"
+    a: "Nein. Modelle und Daten bleiben auf Ihren GPUs in Ihrer Jurisdiktion; Sie wählen offene/selbstgehostete Modelle statt eines festen Endpoints."
+  - q: "Wie teilen Teams knappe GPUs?"
+    a: "Mandantenfähiges Scheduling mit Quotas und Isolation — Self-Service ohne dediziertes Cluster je Team."
+  - q: "Build oder Buy?"
+    a: "AI/ML-Edition für Tempo; das Aufbau-Modell, wenn GPU-Topologie und Serving zu Ihrem Stack passen müssen."
+  - q: "Bezug zu Souveräne-KI-Regeln?"
+    a: "Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) — Betrieb auf kundenkontrollierter Hardware ist die strukturelle Antwort."
 ---
 
 <!-- BLOCK 1: HERO -->
@@ -55,16 +81,6 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ---
 
-## Auf einen Blick
-
-- **Was es ist:** mandantenfähige GPU-Plattform für Training und Inferenz auf eigener Hardware.
-- **Für wen:** Leiter AI/ML, MLOps-Leads, AI-Platform-Owner.
-- **Kontrolle:** Ihre GPUs, Ihre Jurisdiktion, Ihre Modellwahl — keine Hyperscaler-Endpoint-Abhängigkeit.
-- **Lizenz:** Apache-2.0-Kern (Cozystack) — keine Pro-GPU-Plattformkosten.
-- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026).
-- **Häufiger Fehler:** auf einem Hyperscaler-Endpoint prototypen und dann feststellen, dass die Datenklasse dort produktiv nicht hin darf.
-
-[Quelle: [CNCF Landscape](https://landscape.cncf.io), [Cozystack-Doku](https://cozystack.io)]
 
 ---
 
@@ -76,22 +92,6 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ---
 
-## FAQ
-
-**Training und Inferenz beides?**
-Ja — GPU-Scheduling für Training plus One-Click-LLM/vLLM-Serving auf derselben mandantenfähigen Plattform.
-
-**Müssen Modelle unsere Infrastruktur verlassen?**
-Nein. Modelle und Daten bleiben auf Ihren GPUs in Ihrer Jurisdiktion; Sie wählen offene/selbstgehostete Modelle statt eines festen Endpoints.
-
-**Wie teilen Teams knappe GPUs?**
-Mandantenfähiges Scheduling mit Quotas und Isolation — Self-Service ohne dediziertes Cluster je Team.
-
-**Build oder Buy?**
-AI/ML-Edition für Tempo; das Aufbau-Modell, wenn GPU-Topologie und Serving zu Ihrem Stack passen müssen.
-
-**Bezug zu Souveräne-KI-Regeln?**
-Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) — Betrieb auf kundenkontrollierter Hardware ist die strukturelle Antwort.
 
 ---
 

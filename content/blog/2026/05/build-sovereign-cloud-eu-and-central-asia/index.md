@@ -4,7 +4,7 @@ description: "Long-form companion to sovereign cloud builder services page. What
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
-topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup & DR", "Observability"]
+topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup and DR", "Observability"]
 language: "en"
 companion_landing: "/services/sovereign-cloud-builder/"
 quiz:
@@ -130,4 +130,3 @@ For details see **[sovereign cloud builder services page](/services/sovereign-cl
 
 *Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- Word count: ~1100. -->

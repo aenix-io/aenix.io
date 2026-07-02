@@ -1,16 +1,19 @@
 {{/*
-  pipedrive-form — embed Pipedrive web form by type using the native
-  Pipedrive loader (div[data-pd-webforms] + loader script). This is
-  the official Pipedrive embed, not an iframe — form styling (dark
-  theme, button colors, "Full name" field) is configured inside
-  Pipedrive itself.
+  pipedrive-form — embed a Pipedrive web form by type using the native
+  Pipedrive loader (div[data-pd-webforms] + loader script). This is the
+  official Pipedrive embed, not an iframe — form styling (dark theme,
+  button colors, GDPR consent) is configured inside Pipedrive itself.
 
   Usage:
     {{< pipedrive-form type="discovery" >}}
     {{< pipedrive-form type="demo" >}}
     {{< pipedrive-form type="partner" >}}
     {{< pipedrive-form type="course" >}}
-    {{< pipedrive-form type="lead-magnet" >}}
+    {{< pipedrive-form type="lead-magnet" resource="dora-compliance-checklist" >}}
+
+  Lead magnets: each magnet has its own Pipedrive form so it can redirect
+  to its own thank-you page and be attributed separately. Pass the magnet
+  slug via `resource=`. Valid resources are the keys in $leadMagnets below.
 */}}
 {{- $type := .Get "type" | default "discovery" -}}
 {{- $forms := dict
@@ -18,17 +21,51 @@
   "demo"        "https://webforms.pipedrive.com/f/6N4WW0OF7TqxjUwxoH5gOGTLyjAgxGu1PQGzfL4RtejZCCjsGKHcmAxoIJjnLST5qb"
   "partner"     "https://webforms.pipedrive.com/f/cty2KVOnv9koet2bpPxw66V5J6c23LPgaOgRfTQ4X17TKYPPcRFKKee4aZZwipagvN"
   "course"      "https://webforms.pipedrive.com/f/6iAy0A6xuylQBs3ZZVcfmRc5XB66PItuSDzMq5ZSt2Iv13MfQblEZ4PU9RcA03rHLd"
-  "lead-magnet" "https://webforms.pipedrive.com/f/bXxMh2vc9rRzTjKcSteAQVyk1exxYnGS8MZYGFBhTGSzWllZt9NF9njiCx1qRubZzt"
 -}}
-{{- $url := index $forms $type -}}
-{{- if not $url -}}
-  <div class="pipedrive-form pipedrive-form--error">
-    <strong>pipedrive-form:</strong> unknown type "{{ $type }}".
-    Valid: discovery, demo, partner, course, lead-magnet.
-  </div>
+{{/* German core forms — fill these with the DE Pipedrive URLs when they exist.
+     Empty strings fall back to the EN form above (see selection logic below),
+     so DE pages keep working until the German forms are created. */}}
+{{- $formsDe := dict
+  "discovery"   "https://webforms.pipedrive.com/f/ckuneLeniEqnRApsOuUmRugGsbU4Jgd1AB4FDmq17fBSzsvHUGonJl3e04pjzCi9j5"
+  "demo"        "https://webforms.pipedrive.com/f/6crYdzgsIXe5rKiwsHrpjLmOAOPxPxquBr4lXXnnxlunocSTT1vcf4bZcDKSMG3aGn"
+  "partner"     "https://webforms.pipedrive.com/f/czO1JNPe2DyqYNvSWUEBWZQsfKgy4QrNX5gqq4ESaHE59yJ5NK5NK3886ZjGYN6LXd"
+  "course"      "https://webforms.pipedrive.com/f/6OttwFPFP6J2jokDhfm6UVMbrlrhvLj5d8PLrEoiNcRpa2wDZYUwXGRFknCINKGMpR"
+-}}
+{{- $leadMagnets := dict
+  "dora-compliance-checklist"                "https://webforms.pipedrive.com/f/bXxMh2vc9rRzTjKcSteAQVyk1exxYnGS8MZYGFBhTGSzWllZt9NF9njiCx1qRubZzt"
+  "nis2-compliance-checklist"                "https://webforms.pipedrive.com/f/6Wcj1uZn9v9xPM8JFADOc7KWoSmgf2as8G9EG5AI8zeE1WznXvHd4wvAXJoGlBIHoD"
+  "vmware-migration-checklist"               "https://webforms.pipedrive.com/f/6OyYpe2bMTwn69umoROcqf5q5KkjxDMQWhTY5ORal0t0A5B8V55tItoUm6aoy5YeNJ"
+  "cloud-repatriation-tco-worksheet"         "https://webforms.pipedrive.com/f/cB1OvochC8sOk13FAUEXvhFV9Z6J08gihagnhlvtlnJggHnKzHCiYGr7dCTiGA87zt"
+  "platform-engineering-maturity-assessment" "https://webforms.pipedrive.com/f/6WfFxBtEofIsQURPaLifLXlH2BgJePIpQTQStpsi2wiMEFMs784FtNonOYSG3p6EhR"
+  "sovereign-ai-decision-guide"              "https://webforms.pipedrive.com/f/5XasxqvHYRlEXBQvbwFSjXQxHxWcPQvRnfzemOUVkJrThzwjGQRwzQ7Qf96xJwJSXp"
+-}}
+{{- $leadMagnetsDe := dict
+  "dora-compliance-checklist"                "https://webforms.pipedrive.com/f/bYSSQh4qiJE8TsmQ80dBvaS8OWb0S7k1Dhzplo4mXgQOcpCtTK8VKJVc7kAgQHyFrB"
+  "nis2-compliance-checklist"                "https://webforms.pipedrive.com/f/ckmDDHe3J019eUfZoJd0hnXHdtumGehktkEL4172TxqZVZgVod3DEXqTC1DFgZbzvJ"
+  "vmware-migration-checklist"               "https://webforms.pipedrive.com/f/6q8iKsmwODTsATaJuB2pHp8t98IvLB22SalWkAUl7xHzQJUvPZuVdeOnD1dqadXXfJ"
+  "cloud-repatriation-tco-worksheet"         "https://webforms.pipedrive.com/f/bXu3sGygIUw9xDF288F2SbhR5WfRTfEAWj0DN0uhnvqcFj5FDSug4JeEc4MfuBkY3p"
+  "platform-engineering-maturity-assessment" "https://webforms.pipedrive.com/f/6qbFgr1EMAgAtsm6LVQv22mpVq4UUUVR0hJ0mEXsy7Bqv5ZQrKSBAJoW3lk5wXQfon"
+  "sovereign-ai-decision-guide"              "https://webforms.pipedrive.com/f/6qfoGolI1jSJshW3CHW8pxN16JcEe9zkUo5twB0D1J3ix3yPBQs2stpWr5KWgohorh"
+-}}
+{{- $url := "" -}}
+{{- $err := "" -}}
+{{- if eq $type "lead-magnet" -}}
+  {{- $res := .Get "resource" | default "dora-compliance-checklist" -}}
+  {{- $map := cond (eq .Page.Params.language "de") $leadMagnetsDe $leadMagnets -}}
+  {{- $url = index $map $res -}}
+  {{- if not $url -}}{{ $url = index $leadMagnets $res }}{{- end -}}
+  {{- if not $url -}}{{ $err = printf "unknown lead-magnet resource %q" $res }}{{- end -}}
 {{- else -}}
+  {{- $cmap := cond (eq .Page.Params.language "de") $formsDe $forms -}}
+  {{- $url = index $cmap $type -}}
+  {{- if not $url -}}{{ $url = index $forms $type }}{{- end -}}
+  {{- if not $url -}}{{ $err = printf "unknown type %q (valid: discovery, demo, partner, course, lead-magnet)" $type }}{{- end -}}
+{{- end -}}
+{{- if $url -}}
 <div class="pipedrive-form pipedrive-form--{{ $type }}">
   <div class="pipedriveWebForms" data-pd-webforms="{{ $url }}"></div>
   <script src="https://webforms.pipedrive.com/f/loader"></script>
 </div>
+{{- else -}}
+  <div class="pipedrive-form pipedrive-form--error"><strong>pipedrive-form:</strong> {{ $err }}.</div>
 {{- end -}}

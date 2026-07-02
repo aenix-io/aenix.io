@@ -226,27 +226,6 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Is Aenix a "DORA-certified" provider?**
-There is no DORA certification stamp, by design. DORA defines obligations that must be satisfied; how a financial entity demonstrates that satisfaction is open. We are an EU-based ICT services provider running DORA-aligned engagements — and one of our deliverables is a documentation pack that supports your supervisory dialog.
-
-**How does this differ from a Big-4 DORA assessment?**
-Big-4 DORA assessments are typically delivered by management consultants, handed off to a separate implementation team, and shaped by the consultancy's hyperscaler partnerships. Our engineers do the assessment, the implementation, and we are not commercially tied to any hyperscaler. The report's bias is toward what we can stand behind technically and operate under your governance.
-
-**Will Aenix recommend Cozystack at the end?**
-The report names the architecture we recommend with reasoning. Where Cozystack fits DORA's substantive requirements better than the alternative, we explain with named controls. Where it doesn't, we say so.
-
-**Can we run this under a public-sector procurement process (e.g., goszakup.gov.kz, EU member-state portals)?**
-Yes. We accept RFI / RFP through standard procurement channels and have responded to procurement processes in EU member states and Kazakhstan. The discovery call covers procedural fit.
-
-**What is the relationship between this engagement and NIS2 / GDPR work?**
-The 28-day variant maps the same controls back to NIS2 (where applicable to your sectoral scope) and GDPR. The architecture surface that satisfies DORA's substantive requirements largely also satisfies NIS2's; we do that mapping in the report rather than asking you to do it twice.
-
-**More questions?** See the **[DORA compliance checklist article](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** for control-level depth, or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

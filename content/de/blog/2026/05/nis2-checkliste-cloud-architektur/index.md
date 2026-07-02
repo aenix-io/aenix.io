@@ -77,10 +77,9 @@ Die Architektur muss Erkennung und Reporting innerhalb dieser Zeitfenster unters
 
 ## Wie geht es weiter?
 
-**[Platform Readiness Assessment](/services/platform-readiness-assessment/)** mit NIS2-Schwerpunkt.
+**[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit NIS2-Schwerpunkt.
 
 ---
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~350. -->

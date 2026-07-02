@@ -84,4 +84,3 @@ Total elapsed: 6-12 months.
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~400. -->

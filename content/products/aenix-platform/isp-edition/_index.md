@@ -3,6 +3,7 @@ title: "Ænix Platform ISP Edition"
 description: "Ænix Platform ISP Edition: turnkey Kubernetes-native cloud platform for hosting providers and MSPs, with WHMCS billing and VMware/OpenStack migration."
 type: "page"
 language: "en"
+hreflang_de: /de/produkte/aenix-platform/isp-edition/
 direct_answer: |
   **Ænix Platform ISP Edition is a turnkey, Kubernetes-native cloud platform for small and mid-size hosting providers, MSPs, regional cloud providers, and data centres that want to launch or modernize a multi-tenant cloud product without building it from scratch. It is the productized, supported distribution of Cozystack (an Apache 2.0 CNCF project created and maintained by Aenix) and adds the commercial surfaces a hosting business needs: WHMCS-integrated billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage, and GPU workloads. Aenix delivers it with migration tooling and expertise from VMware, OpenStack, Virtuozzo, and OpenNebula, getting providers production-ready in weeks rather than months.**
 quick_facts:
@@ -44,14 +45,6 @@ faq:
 
 ---
 
-## Quick facts
-
-- **For:** Small / mid hosting providers, MSPs, regional clouds, data centres modernizing or expanding cloud product
-- **Foundation:** Open-source Cozystack (CNCF project, Apache 2.0)
-- **Entry pricing:** **From €1.3k/month** support tier
-- **Time to live:** Weeks (with productized installer + migration tooling)
-- **Replaces:** OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, custom in-house panels
-- **Architecture:** Kubernetes-native (Talos + KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal + VictoriaMetrics + VictoriaLogs)
 
 ---
 
@@ -158,48 +151,16 @@ For product teams running Cozystack on their own / leased servers (Hetzner, OVH,
 
 ---
 
-## Frequently asked questions
-
-### How is ISP Edition different from running open-source Cozystack ourselves?
-
-Cozystack gives you the engine. ISP Edition gives you the car: WHMCS integration, billing, customer portal, payment processing, tenant suspension, support — all the surfaces a real cloud business needs. Plus enterprise support tier.
-
-### What does €1.3k/month include?
-
-Entry support tier — direct support channel, named TAM at higher tiers, access to ISP-specific modules, migration expertise. Ask on the discovery call for the current tier breakdown.
-
-### Can we use our own billing system instead of WHMCS?
-
-Yes. Two integration modes:
-1. **WHMCS-front + Cozystack-back** — your customers see WHMCS; Cozystack is the substrate
-2. **cozyportal-front + WHMCS-back** — your customers see cozyportal; WHMCS handles billing
-Plus support for custom billing if needed.
-
-### How long does migration from VMware take?
-
-Productized installer gets ISP Edition live in weeks. VMware customer migration is workload-dependent — typical pattern is parallel run with cohort-based migration over 3-6 months for mid-size hosting estates.
-
-### Do you support white-label?
-
-Yes. cozyportal is fully white-labelable per provider — colors, logo, domain. Multi-tier reseller model supported (Aenix → MSP → MSP customers).
-
-### Is there a managed-operations option?
-
-Yes. Aenix can run ISP Edition under contract while you focus on customer acquisition. Discuss on discovery call.
-
-### What hardware do we need?
-
-Bare-metal servers (Hetzner, OVH, your own datacenter, colocation). Cozystack is hardware-agnostic; ISP Edition adds operations runbooks for typical hosting hardware. Discuss sizing on discovery call.
 
 ---
 
-## How to start
+## Book an architecture review
 
-Book a 30-minute discovery call. We'll discuss your hosting business, current stack, customer mix, and ISP Edition fit.
+Tell us about your hosting business, current stack and customer mix — we'll set up a focused architecture review with an Aenix engineer and confirm ISP Edition fit.
 
-<div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
-</div>
+{{< pipedrive-form type="demo" >}}
+
+Prefer a shorter first step? [Book a 30-minute discovery call](/contact/) instead.
 
 ---
 

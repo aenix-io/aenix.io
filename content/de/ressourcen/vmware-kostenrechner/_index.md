@@ -62,20 +62,6 @@ faq:
 {{< vmware-calculator lang="de" currency="€" >}}
 
 Die Lizenzkosten, die Sie an VMware/Broadcom zahlen, entfallen auf einer offenen Plattform (Apache 2.0, keine Pro-Core-Gebühr). Es bleiben Support und die einmalige Migration — beides oben modelliert. Für ein tieferes, Workload-genaues Modell nutzen Sie die **[Cloud-Repatriation-Lösung](/de/loesungen/cloud-repatriation/)**.
-
----
-
-## Auf einen Blick
-
-- **Was es ist:** interaktiver Rechner für VMware/VCF-Kosten gegenüber einer offenen Alternative.
-- **Für wen:** Infrastruktur-, Finanz- und Einkaufsteams, die einen VMware-Ausstieg planen.
-- **Eingaben:** CPU-Kerne, VMware-Kosten pro Kern/Jahr, Aenix-Support pro Kern/Jahr, einmalige Migrationskosten.
-- **Typisches Ergebnis:** 30–60% Kostensenkung bei migrierten Workloads (Ihre Zahlen können abweichen).
-- **Lizenz:** Zielplattform ist [Cozystack](https://cozystack.io), Apache 2.0 — keine Pro-Core-Lizenz.
-- **Häufiger Fehler:** nur Lizenz-zu-Lizenz vergleichen und Migrationskosten sowie Workloads, die bleiben sollten, ignorieren.
-
-[Quelle: [Cozystack-Doku](https://cozystack.io); modellieren Sie Ihre Zahlen oben]
-
 ---
 
 ## Wie gerechnet wird
@@ -87,26 +73,6 @@ Die Lizenzkosten, die Sie an VMware/Broadcom zahlen, entfallen auf einer offenen
 - **Amortisation** = Migrationskosten ÷ monatliche Netto-Ersparnis.
 
 Bewusst einfache Eingaben für ein belegbares Ergebnis. Eine volle TCO umfasst Strom, Hardware-Refresh, Personal und die Workloads, die in der Cloud bleiben — das modellieren wir mit Ihnen im Gespräch.
-
----
-
-## FAQ
-
-**Ist das ein offizieller VMware/Broadcom-Rechner?**
-Nein. Ein unabhängiger Schätzer von Aenix, der VMware/VCF-Ausgaben mit einer offenen Alternative vergleicht. Nutzen Sie Ihre eigenen Zahlen.
-
-**Welchen Preis pro Kern eingeben?**
-Ihre aktuelle VMware/VCF-Subskription geteilt durch lizenzierte Kerne. Liegt nur eine Gesamtsumme vor, durch die Kernzahl teilen.
-
-**Hat die Plattform wirklich keine Lizenzkosten?**
-Die Plattform ist Cozystack, Apache 2.0 — keine Pro-Core-/Pro-Socket-Lizenz. Sie zahlen Support und/oder das Aufbauprojekt, beides oben editierbar.
-
-**Muss ich alles migrieren?**
-Nein. Die Ersparnis gilt für migrierte Workloads; manche bleiben besser, wo sie sind. Siehe [VMware-Migration](/de/migration/).
-
-**Können Sie meine Zahlen validieren?**
-Ja — ein Erstgespräch liefert eine ehrliche, Workload-genaue TCO.
-
 ---
 
 ## Aus der Zahl einen Plan machen

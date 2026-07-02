@@ -101,4 +101,3 @@ Break even on first 50-100 paying customers; positive economics as catalog adopt
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~500. -->

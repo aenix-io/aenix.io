@@ -40,18 +40,6 @@ faq:
   <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="https://cozystack.io">Cozystack Open Source →</a>
 </div>
-
----
-
-## Quick facts
-
-- **Fünf Editions:** Public Cloud / ISP / Enterprise / IDP / AI/ML — gleiches Produkt, unterschiedliche Feature-Bundles pro Buyer-Profil
-- **Foundation:** Open-Source Cozystack (CNCF-Projekt, Apache 2.0; CNCF Incubating erwartet Spätsommer 2026)
-- **Was über Cozystack hinaus hinzugefügt wird:** Hosting-Panel + User- / Admin- / Support-Portale + Service-Erstellungs-Wizards + vollständiges Billing (Backend + Frontend) + Console-Portal + Usage-Charts + Payment-Integrationen + WHMCS-Integration + Enterprise-SLA + dedizierter Support + Edition-spezifische Features
-- **Engagement-Modell:** Lizenz + Services Bundle. Entry ab €1.3k/Monat (ISP Edition Support-Tier); Mehr-Millionen-Euro für Public Cloud / Enterprise Builds
-- **Architektur:** Kubernetes-nativ (Talos + KubeVirt + Cilium + LINSTOR + Tenant CRD), Multi-Tenant, kundenkontrollierte Hardware
-- **Kunden-Evidenz:** Tier-1-europäische-Banken-Engagements unter NDA (namentliche Cases erwartet Mitte 2027); regionale Hosting-Anbieter in Produktion
-
 ---
 
 ## Was Ænix Platform über Open-Source-Cozystack hinaus liefert
@@ -156,11 +144,6 @@ Cloud-Erfahrung auf kundenkontrollierter Hardware. Reduzieren Sie AWS-Level-Rech
 | Admin-Interface | kubectl / GitOps | Eingebautes Admin-UI + Service-Wizards |
 | Compliance | Architektur-aligniert | Zertifizierte Bundles (ISO, SOC) |
 | Roadmap-Einfluss | Community-getrieben | Kundenanforderungen werden gehört |
-
----
-
-## Häufige Fragen
-
 ### Was fügt Ænix Platform über Open-Source-Cozystack hinaus hinzu?
 
 Cozystack ist der Motor — Kubernetes-native Multi-Tenant-Cloud-Plattform-Foundation. Ænix Platform ist das Auto — fügt Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing (Backend + Frontend), Console-Portal, Usage-Charts, Payment-Integrationen, WHMCS-Integration, produktisierten Installer, Enterprise-SLA, dedizierten Support, Edition-spezifische Features pro Buyer-Profil und Compliance-fertige Bundles hinzu.

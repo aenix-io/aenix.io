@@ -173,8 +173,3 @@ A hybrid platform engagement starts with workload classification. Aenix runs thi
 
 *Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!--
-SEO meta description (≤155):
-"Hybrid cloud architecture patterns 2026: 5 working patterns, common failures, when hybrid is wrong, implementation sequence."
-Word count: ~2400.
--->

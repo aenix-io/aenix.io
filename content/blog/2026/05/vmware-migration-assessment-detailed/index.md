@@ -80,4 +80,3 @@ For VMware-specific scope: **[VMware migration hub](/migration/vmware/)**.
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~350. -->

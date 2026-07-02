@@ -4,7 +4,7 @@
  *  - Banner appears at bottom on first visit (no choice in localStorage).
  *  - Three categories: necessary (always on), analytics, marketing.
  *  - Choice is persisted with 13-month expiry (GDPR standard).
- *  - Trackers (GA gtag, Ahrefs, Apollo, Hotjar, GTM) load ONLY after the
+ *  - Trackers (GA gtag, Ahrefs, Hotjar, GTM) load ONLY after the
  *    corresponding category is accepted.
  *  - Google Consent Mode v2: gtag is loaded but consent state is "denied"
  *    by default; on accept we send a `gtag('consent', 'update', ...)`.
@@ -28,7 +28,6 @@
   var GTM_ID = root.getAttribute('data-gtm-container') || '';
   var GA_ID = root.getAttribute('data-ga-id') || '';
   var AHREFS_KEY = root.getAttribute('data-ahrefs-key') || '';
-  var APOLLO_APP_ID = root.getAttribute('data-apollo-app-id') || '';
   var HOTJAR_ID = root.getAttribute('data-hotjar-id') || '';
 
   // -------------------------------------------------------------------
@@ -45,7 +44,7 @@
       catNecessaryName: 'Strictly necessary',
       catNecessaryDesc: 'Required for the site to function (cookie-consent state, language). Always active.',
       catAnalyticsName: 'Analytics',
-      catAnalyticsDesc: 'Helps us understand how visitors use the site (Google Analytics, Ahrefs Analytics, Apollo B2B tracking).',
+      catAnalyticsDesc: 'Helps us understand how visitors use the site (Google Analytics, Ahrefs Analytics).',
       catMarketingName: 'Marketing',
       catMarketingDesc: 'Used to measure ad performance and reach you with relevant content across platforms (Tag Manager, future ad platforms).',
       learnMore: 'Privacy policy',
@@ -62,7 +61,7 @@
       catNecessaryName: 'Unbedingt erforderlich',
       catNecessaryDesc: 'Erforderlich für den Betrieb der Website (Cookie-Consent-Status, Sprache). Immer aktiv.',
       catAnalyticsName: 'Analyse',
-      catAnalyticsDesc: 'Hilft uns zu verstehen, wie Besucher die Seite nutzen (Google Analytics, Ahrefs Analytics, Apollo B2B-Tracking).',
+      catAnalyticsDesc: 'Hilft uns zu verstehen, wie Besucher die Seite nutzen (Google Analytics, Ahrefs Analytics).',
       catMarketingName: 'Marketing',
       catMarketingDesc: 'Wird verwendet, um die Werbewirkung zu messen und Sie plattformübergreifend mit relevanten Inhalten zu erreichen (Tag Manager, zukünftige Werbeplattformen).',
       learnMore: 'Datenschutzerklärung',
@@ -101,7 +100,7 @@
   // -------------------------------------------------------------------
   // Tracker activation (called after consent is granted)
   // -------------------------------------------------------------------
-  var activated = { ga: false, ahrefs: false, apollo: false, gtm: false, hotjar: false };
+  var activated = { ga: false, ahrefs: false, gtm: false, hotjar: false };
 
   function loadScript(src, attrs) {
     var s = document.createElement('script');
@@ -147,22 +146,6 @@
     loadScript('https://analytics.ahrefs.com/analytics.js', { 'data-key': AHREFS_KEY });
   }
 
-  function activateApollo() {
-    if (activated.apollo || !APOLLO_APP_ID) return;
-    activated.apollo = true;
-    var n = Math.random().toString(36).substring(7);
-    var s = document.createElement('script');
-    s.src = 'https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache=' + n;
-    s.async = true;
-    s.defer = true;
-    s.onload = function () {
-      if (window.trackingFunctions && window.trackingFunctions.onLoad) {
-        window.trackingFunctions.onLoad({ appId: APOLLO_APP_ID });
-      }
-    };
-    document.head.appendChild(s);
-  }
-
   function activateHotjar() {
     if (activated.hotjar || !HOTJAR_ID) return;
     activated.hotjar = true;
@@ -184,7 +167,6 @@
     if (c.analytics) {
       activateGtag();
       activateAhrefs();
-      activateApollo();
     }
     if (c.marketing) {
       activateGTM();

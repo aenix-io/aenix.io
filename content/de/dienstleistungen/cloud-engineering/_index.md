@@ -8,6 +8,7 @@ related_pages:
   - /de/produkte/aenix-platform/
   - /de/produkte/cozystack
 language: "de"
+hreflang_en: /services/cloud-engineering/
 direct_answer: |
   **Cloud Engineering Services von Aenix bringen Senior-Engineers — keine Berater — in Ihre Cloud-Architektur-, Automatisierungs- und Operations-Arbeit. Das Engagement deckt das volle Spektrum ab: von Hyperscaler-nativer Architektur über Hybrid bis Private-Cloud-Plattform-Engineering. Konkret umfasst es Cloud-Architektur-Review und Ziel-Design, Infrastructure-as-Code-Reife (Terraform, OpenTofu, Pulumi, Crossplane), Observability-Stack-Engineering, CI/CD- und GitOps-Reife, Container-Orchestrierung, Network- und Identity-Engineering, FinOps sowie Compliance-Posture für DORA und NIS2. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Sandbox-Projekt) und kann das Engagement nahtlos mit der produktisierten Ænix Platform verbinden, wenn der Scope sich zu einer vollständigen Cloud-Plattform erweitert.**
 quick_facts:
@@ -38,12 +39,13 @@ faq:
     a: "Cozystack, das Open-Source-Fundament unter Apache 2.0: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRDs für Mandantenfähigkeit. Cozystack ist ein CNCF-Sandbox-Projekt."
 ---
 
-**"Cloud Engineering" deckt das volle Spektrum ab — von Hyperscaler-nativer Architektur bis Private-Cloud-Plattform-Engineering. Das Aenix-Engagement bringt Senior-Engineers — keine Berater — zur Cloud-Architektur-, Automatisierungs- und Operations-Arbeit, die Ihr Team braucht.**
+**"Cloud Engineering" deckt das volle Spektrum ab — von Hyperscaler-nativer Architektur bis Private-Cloud-Plattform-Engineering. Das Aenix-Engagement bringt Senior-Engineers — keine Berater — an die Cloud-Architektur-, Automatisierungs- und Operations-Arbeit, die Ihr Team braucht.**
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** wenn Scope sich zu produktisierter Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation auch verfügbar.
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)**, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-secondary" href="/blog/2026/05/cloud-engineering-disciplines-2026/">Cloud-Engineering-Disziplinen →</a>
 </div>
 
 ---
@@ -63,4 +65,18 @@ Für breiteren Scope siehe **[Platform Engineering Services](/de/dienstleistunge
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+## Engagement-Modi
+
+- Architektur-Review (5-10 Tage)
+- Implementations-Engagement (1-6 Monate)
+- Managed-Engagement
+
+Für die Methodologie siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+---
+
+*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

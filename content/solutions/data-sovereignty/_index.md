@@ -227,27 +227,6 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Is sovereignty just data residency?**
-Data residency is a necessary part of sovereignty, but not sufficient. Sovereignty also requires control of encryption keys, supplier-chain transparency, audit-readiness, and operational independence from a single provider's infrastructure decisions. A workload can be in the right region and still fail the sovereignty test.
-
-**Do we need to go fully on-prem to be sovereign?**
-Not necessarily. The right answer depends on the data class, the regulator, and the operational realities. Some workloads achieve sovereignty under hyperscaler sovereign-cloud arrangements (with caveats); others require dedicated infrastructure under the customer's control. The engagement determines which is which.
-
-**How does this differ from a Big-4 sovereignty assessment?**
-Big-4 sovereignty advisory work is typically delivered by management consultants, handed off to a separate implementation team, and shaped by the consultancy's hyperscaler partnerships. Our engineers do both the assessment and the implementation, and we are not commercially tied to any provider. The report's bias is toward what we can demonstrate and operate under your governance.
-
-**Will Aenix recommend Cozystack at the end?**
-Where Cozystack fits the sovereignty requirements better than the alternative, the report explains why with named architectural attributes. Where a hyperscaler sovereign-cloud arrangement or a different stack fits better, we say so.
-
-**Can we run this under a public-sector procurement process?**
-Yes. We accept RFI / RFP through standard procurement channels in EU member states and Kazakhstan. Discovery call covers procedural fit.
-
-**More questions?** See the **[data residency requirements article](/blog/2026/05/data-residency-requirements-2026/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

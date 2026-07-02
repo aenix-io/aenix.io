@@ -165,5 +165,3 @@ If you fit the profile, the structured next step is a focused assessment. Aenix 
 
 *Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Build Your Own Private Cloud — A 90-Day Playbook | Aenix"
-Word count: ~1500. -->

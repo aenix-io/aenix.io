@@ -96,4 +96,3 @@ Manufacturing of critical products (medical devices, computers, electronic equip
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~350. -->

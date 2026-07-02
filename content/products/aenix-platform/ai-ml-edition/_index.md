@@ -41,18 +41,6 @@ faq:
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
-
----
-
-## Quick facts
-
-- **For:** AI-heavy organizations, regulated AI deployments, GPU-heavy product companies, AI-native startups at scale
-- **Foundation:** Open-source Cozystack (CNCF project, Apache 2.0)
-- **Engagement size:** €500k - €3M+ project; managed retainer post-deployment
-- **Time to production:** 3-6 months for typical AI inference fleet; 6-12 months for full inference + fine-tuning + RAG architecture
-- **GPU support:** H100, H200, L40S, A100, B100/B200 (Blackwell); CPU-only and alternative accelerators (AMD MI series, Intel Gaudi) supported
-- **Architecture:** Kubernetes-native, multi-tenant GPU scheduling (Tenant CRD), KubeVirt for VM-bound workloads, vector DB + object storage included
-
 ---
 
 ## What's included in AI/ML Edition
@@ -150,11 +138,6 @@ Pricing on request — €500k - €3M+ project; managed retainer post-deploymen
 ## Customer evidence
 
 AI/ML Edition customers are NDA-protected. AI-native organizations and regulated AI deployments are in production. Anonymized phrasing pattern: "Sovereign AI infrastructure for regulated organization at scale".
-
----
-
-## Frequently asked questions
-
 ### How is AI/ML Edition different from running open-source Cozystack with our own AI stack?
 
 Cozystack provides the multi-tenant Kubernetes + GPU foundation. AI/ML Edition adds: pre-integrated inference (vLLM) + fine-tuning + RAG patterns, multi-tenant GPU scheduling with GPU-class awareness, vector DB + object storage included, ready-to-use models / blueprints, service APIs for AI-specific workflows, sovereignty controls bundled, GPU sizing expertise, and Aenix's AI engagement experience. For organisations not staffed for full MLOps engineering, this saves 12-24 months.

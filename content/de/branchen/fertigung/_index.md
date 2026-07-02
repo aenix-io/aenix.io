@@ -8,6 +8,7 @@ related_pages:
   - /de/produkte/aenix-platform/enterprise-edition/
   - /de/produkte/cozystack
 language: "de"
+hreflang_en: /industries/manufacturing/
 direct_answer: |
   **Eine Cloud-Plattform für Fertigung vereint IT- und OT-Workloads, Industrie-4.0-Anwendungen und KI-getriebene Qualitätskontrolle auf einer Kubernetes-API — über Hauptquartier, regionale Standorte und Produktions-Floor-Edge hinweg, unter einem Operations-Modell. Sie richtet sich an Fertigungs-Organisationen in der EU, DACH und Zentralasien, die gleichzeitig Industrie 4.0, NIS2-Compliance für Critical-Product-Hersteller, Edge-Compute, Datensouveränität für industrielles IP und Air-Gap-Isolation für OT-Netzwerke benötigen. Aenix liefert dies auf Basis von Cozystack (Apache 2.0, CNCF-Projekt) — KubeVirt für VMs und Container, Cilium für eBPF-Networking, LINSTOR für Storage — produktisiert als Ænix Platform Enterprise Edition mit Multi-DC- und Edge-Architektur.**
 quick_facts:
@@ -40,27 +41,68 @@ faq:
     a: "Aenix verkauft die produktisierte Ænix Platform plus Services. Preisstufen: Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise Custom. Für Multi-DC- und Edge-Fertigungsszenarien ist in der Regel die Enterprise Edition passend."
 ---
 
-**Fertigung in 2026 bedeutet gleichzeitige Anforderungen: Industrie-4.0-Transformation, NIS2-Compliance (Fertigung kritischer Produkte ist im Geltungsbereich), Edge-Compute an Produktionsstandorten, KI-getriebene Qualitätskontrolle und zunehmende souveräne-Cloud-Anforderungen für industrielles IP. Die architektonische Antwort ist eine kohärente Plattform, die in Hauptquartier, regionalen Standorten und Produktions-Floor-Edge läuft — unter einem Operations-Modell.**
+**Fertigung 2026 bedeutet gleichzeitige Anforderungen: Industrie-4.0-Transformation, NIS2-Compliance (die Fertigung kritischer Produkte ist im Geltungsbereich), Edge-Compute an Produktionsstandorten, KI-getriebene Qualitätskontrolle und zunehmende souveräne-Cloud-Anforderungen für industrielles IP. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, an regionalen Standorten und an der Produktions-Floor-Edge läuft — unter einem Operations-Modell.**
 
-Aenix baut Plattformen für Fertigungs-Organisationen in der EU, DACH und Zentralasien.
+Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentralasien.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — Multi-DC + Edge-Architektur für industrielles IT/OT, NIS2-Compliance für Critical-Product-Fertigung, Air-Gap-Support für OT-Netzwerke.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — Multi-DC- + Edge-Architektur für industrielles IT/OT, NIS2-Compliance für die Fertigung kritischer Produkte, Air-Gap-Support für OT-Netzwerke.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränität →</a>
 </div>
 
 ---
 
-## Wofür kommen Fertigungs-Teams zu uns
+## Wofür Fertigungs-Teams zu uns kommen
 
-- **IT/OT-Konvergenz-Plattform** — Edge-Compute mit Sicherheits-Boundary
-- **Industrie-4.0-Anwendungen** — IoT-Daten-Aggregation, Predictive Maintenance
-- **KI-getriebene Qualitätskontrolle** — auf Produktions-Daten mit Souveränitätskontrollen
-- **NIS2-Compliance** — für Critical-Product-Hersteller
-- **Air-Gap-Support für OT** — Operational-Technology-Netzwerke isoliert
+- **Edge-Cloud an Produktionsstandorten** — Industrie-4.0-Workloads nahe an der Maschinerie
+- **NIS2-Compliance** — die Fertigung kritischer Produkte ist im Geltungsbereich
+- **Souveräne Cloud für industrielles IP** — Konstruktionsdaten, Rezepturen, Supply-Chain-Daten
+- **KI-Workloads** — Qualitätskontrolle, Predictive Maintenance, Supply-Chain-Optimierung
+- **Hybrid: Cloud für Analytics, Edge für den Betrieb**
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+## Warum Fertigungs-Architektur anders ist
+
+- **Edge-Compute ist Kern, nicht optional** — Latenz-Anforderungen am Produktions-Floor
+- **Lange Abschreibungszyklen** — Fertigungsanlagen halten Jahrzehnte; die Plattform muss mit mehreren Hardware-Generationen funktionieren
+- **OT/IT-Konvergenz** — Operations Technology, die auf Information Technology trifft
+- **Lange Aufbewahrung** — Qualitäts-, Rückverfolgbarkeits- und Regulierungsdaten mit Anforderungen über mehrere Jahrzehnte
+- **Schutz von industriellem IP** — Konstruktionsdaten und Rezepturen haben eine höhere Vertraulichkeit als typische Unternehmensdaten
+
+---
+
+## Cozystack-Muster für die Fertigung
+
+- Multi-Site-Betrieb: Zentrale + regional + Produktions-Floor-Edge unter einer Plattform
+- Air-Gapped-Deployment für die sensibelsten Workloads (industrielles IP)
+- Multi-Tenant für Cross-BU- und Joint-Venture-Trennung
+- KI-Infrastruktur für Qualitätskontrolle und Predictive Maintenance
+
+---
+
+## Was in der Fertigung auf Cozystack läuft
+
+{{< placeholder-logos >}}
+
+*Kunden-Evidenz — von Aenix zu befüllen. Anonyme Proof Points:*
+- Ein Multi-Site-Hersteller betreibt eine einheitliche Plattform über Zentrale + regionale Produktionsstandorte
+- Ein Automobilzulieferer mit Souveränitätsanforderungen für industrielles IP
+- Ein Präzisionstechnik-Unternehmen mit KI-getriebener Qualitätskontrolle auf einem privaten LLM
+
+---
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Schutz von industriellem IP
+- **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — Regulierung kritischer Produkte
+- **[Souveräne KI](/de/loesungen/sovereign-ai/)** — KI auf industriellen Daten
+- **[Cozystack](/de/produkte/cozystack/)**
+
+---
+
+*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

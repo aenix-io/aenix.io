@@ -69,4 +69,3 @@ Begleitung zur **[VMware-Migration-Page](/de/migration/vmware)**.
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~250. -->

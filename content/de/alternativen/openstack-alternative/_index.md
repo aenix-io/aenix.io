@@ -8,6 +8,7 @@ related_pages:
   - /de/produkte/cozystack
   - /de/dienstleistungen/private-cloud-consulting
 language: "de"
+hreflang_en: /alternatives/openstack-alternative/
 direct_answer: |
   **Eine OpenStack-Alternative ist eine Cloud-Plattform, die dieselben Open-Source- und Multi-Tenant-Garantien wie OpenStack bietet, aber mit deutlich leichterem operativem Footprint. Sie richtet sich an Hosting-Anbieter, regionale Clouds, Telcos und Betreiber, die unter knapper OpenStack-Expertise, großen Operations-Teams und riskanten Upgrade-Zyklen leiden. Cozystack ist die Kubernetes-native Open-Source-Alternative unter derselben Lizenz (Apache 2.0): KubeVirt führt VMs und Container über eine Kubernetes-API, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD das Storage, und Tenant-CRDs liefern echte Mandantenfähigkeit. Aenix produktisiert dies als Ænix Platform und bietet Migration und Betrieb als Service an.**
 
@@ -42,27 +43,63 @@ faq:
     a: "Ja. Aenix ist das Open-Core-Unternehmen hinter Cozystack und produktisiert es als Ænix Platform. Angeboten werden Architektur-Reviews, Migration und Betrieb als Service. Preisstufen: Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell."
 ---
 
-**OpenStack ist ausgereift, breit und in Telco/Regierungs-Scale bewiesen. Es erfordert auch signifikante operative Expertise zum guten Betrieb, und OpenStack-Engineers in 2026 zu finden ist schwerer als vor 5 Jahren. Viele Organisationen fragen jetzt, ob der operative Footprint zur tatsächlichen Workload-Portfolio passt — und ob eine Kubernetes-native Alternative die richtige nächste Plattform ist.**
+**OpenStack ist ausgereift, breit und im Telco-/Government-Scale bewiesen. Der gute Betrieb erfordert zugleich erhebliche operative Expertise, und OpenStack-Engineers zu finden ist 2026 schwerer als noch vor fünf Jahren. Viele Organisationen fragen sich heute, ob der operative Footprint zum tatsächlichen Workload-Portfolio passt — und ob eine Kubernetes-native Alternative die richtige nächste Plattform ist.**
 
-Cozystack ist die Open-Source-Alternative für Organisationen, die OpenStack's Open-Source-und-Multi-Tenant-Garantien mit leichterem operativen Footprint wollen. Gleiche-Lizenz (Apache 2.0), Kubernetes-native Foundation, weniger bewegliche Teile.
+Cozystack ist die Open-Source-Alternative für Organisationen, die die Open-Source- und Multi-Tenant-Garantien von OpenStack mit einem leichteren operativen Footprint wollen. Gleiche Lizenz (Apache 2.0), Kubernetes-native Foundation, weniger bewegliche Teile.
 
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds, die von OpenStack modernisieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack at scale konsolidieren.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/openstack-vs-cozystack-modernization/">OpenStack → Cozystack Leitfaden →</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
+  <a class="cta-secondary" href="/blog/2026/05/openstack-vs-cozystack-modernization/">OpenStack → Cozystack Leitfaden →</a>
 </div>
 
 ---
 
-## Wann OpenStack nicht mehr die richtige Antwort ist
+## Wann OpenStack aufhört, die richtige Antwort zu sein
 
-- Engineers schwer zu finden / zu halten
-- 8-15+ Personen Operations-Team unverhältnismäßig zur Workload-Größe
-- Service-Katalog erfordert ständige DIY-Arbeit
-- Upgrade-Zyklen riskant und manuell
-- Workload-Mix verschoben zu Container-/Kubernetes-First
+- **Engineer-Hiring ist schwer** — OpenStack-Expertise schrumpft; Kubernetes-Expertise ist reichlich vorhanden.
+- **Operativer Footprint übersteigt den Wert** — Sie betreiben 30+ OpenStack-Komponenten, wo 5-10 Kubernetes-Operatoren ausreichen würden.
+- **Workload-Portfolio ist überwiegend modern** — die meisten Workloads sind Kubernetes-freundlich; Legacy-VMs sind eine Minderheit.
+- **Sie pflegen eigene Forks / Patches** — die Vendor-Distro-Version liegt zu weit hinter Upstream.
+- **Greenfield-Projekt** — eine neue Bereitstellung braucht die spezifischen Telco-Scale-Features von OpenStack nicht.
+
+Wenn Ihre Skala oder Ihr Use Case OpenStack wirklich erfordert (Large-Telco, tiefe OpenStack-Expertise, Telco-Scale-Features), bleiben Sie bei OpenStack. Eine ehrliche Beratung sagt das auch so.
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+## Cozystack als OpenStack-Alternative
+
+| | OpenStack | Cozystack |
+|---|---|---|
+| **Lizenz** | Apache 2.0 | Apache 2.0 |
+| **Foundation** | Mehrere Python-Projekte (Nova, Neutron, etc.) | Kubernetes + KubeVirt + Cilium |
+| **Multi-Tenancy** | Keystone Projects | Tenant CRD |
+| **Operativer Footprint** | Schwer (50-100+ Services) | Leicht (5-15 Operatoren) |
+| **Engineer-Verfügbarkeit** | Schrumpfend | Kubernetes-groß |
+| **VM-Workloads** | Nova + KVM | KubeVirt |
+| **Container-Workloads** | Magnum (separat) | Nativ |
+| **Am besten für** | Große Telco / Government / OpenStack-erfahrene Teams | Service-Provider, regulierte Multi-Tenancy, modernes Greenfield |
+
+---
+
+## Migration von OpenStack zu Cozystack
+
+VM-Image-Migration: unkompliziert (KVM → KubeVirt). Tenant-Modell: Neu-Architektur von Keystone Projects zu Tenant CRD. Netzwerk: Neutron → Cilium. Storage: Cinder → LINSTOR oder Ceph (oft bleibt Ceph).
+
+Typische Migration: 4-12 Monate für eine mittelgroße Bereitstellung.
+
+---
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+- **[OpenStack vs Cozystack Leitfaden](/blog/2026/05/openstack-vs-cozystack-modernization/)**
+- **[VMware-Alternative](/de/alternativen/vmware-alternative/)**
+- **[Cozystack](/de/produkte/cozystack/)**
+- **[Private-Cloud-Consulting](/de/dienstleistungen/private-cloud-consulting/)**
+
+---
+
+*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

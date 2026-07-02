@@ -78,4 +78,3 @@ Begleitung zur **[Kubernetes-Consulting-Page](/de/dienstleistungen/kubernetes-co
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~300. -->

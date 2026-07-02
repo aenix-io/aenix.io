@@ -1,0 +1,67 @@
+{{- /*
+  landing-cta.html — templated, funnel-aware closing CTA band for landing
+  pages. Rendered once by layouts/_default/single.html so the closing CTA no
+  longer has to be hand-pasted into every markdown file.
+
+  Behaviour:
+    - Renders only for landing sections (see $sections below).
+    - Opt out per page with `hide_closing_cta: true` (used on pages that ship a
+      bespoke closing CTA in-body, e.g. product editions / role pages).
+    - Copy is funnel-aware: migration/alternatives/compare lead with the
+      Platform Readiness Assessment; everything else leads with a discovery call.
+    - Localised EN/DE from the page `language` field.
+    - Override any field with a `closing_cta:` frontmatter map
+      (heading / description / primary_text / primary_url / secondary_text / secondary_url).
+*/ -}}
+{{- /* DE content lives under content/de/ (not a configured Hugo language), so
+       .Section is "de" for every DE page. Recover the real section from the
+       second URL segment in that case. */ -}}
+{{- $sec := .Section -}}
+{{- if eq $sec "de" -}}
+  {{- $parts := split (strings.TrimPrefix "/" .RelPermalink) "/" -}}
+  {{- if ge (len $parts) 2 }}{{ $sec = index $parts 1 }}{{ end -}}
+{{- end -}}
+{{- $sections := slice
+    "solutions" "services" "industries" "alternatives" "migration" "compare" "products" "for" "case-studies"
+    "loesungen" "dienstleistungen" "branchen" "alternativen" "vergleichen" "produkte" "fuer" -}}
+{{- if and (in $sections $sec) (not .Params.hide_closing_cta) -}}
+  {{- $de := eq (.Params.language | default "en") "de" -}}
+  {{- $contact := cond $de "/de/kontakt/" "/contact/" -}}
+  {{- $assess := cond $de "/de/dienstleistungen/platform-readiness-assessment/" "/services/platform-readiness-assessment/" -}}
+  {{- $pricing := cond $de "/de/preise/" "/pricing/" -}}
+  {{- $assessLed := in (slice "migration" "alternatives" "compare" "alternativen" "vergleichen") $sec -}}
+  {{- $heading := "" }}{{ $desc := "" }}{{ $pt := "" }}{{ $pu := "" }}{{ $st := "" }}{{ $su := "" -}}
+  {{- if $assessLed -}}
+    {{- $heading = cond $de "Planen Sie Ihren Umstieg?" "Planning your migration?" -}}
+    {{- $desc = cond $de "Starten Sie mit einer Platform-Readiness-Assessment zum Festpreis — Architektur-Review, Gap-Analyse und ein Fahrplan, den Sie dem Vorstand vorlegen können." "Start with a fixed-price Platform Readiness Assessment — architecture review, gap analysis, and a roadmap you can take to the board." -}}
+    {{- $pt = cond $de "Platform-Readiness-Assessment anfragen" "Get a Platform Readiness Assessment" -}}
+    {{- $pu = $assess -}}
+    {{- $st = cond $de "Discovery-Call buchen" "Book a discovery call" -}}
+    {{- $su = $contact -}}
+  {{- else -}}
+    {{- $heading = cond $de "Bereit für ein Gespräch?" "Ready to talk?" -}}
+    {{- $desc = cond $de "Buchen Sie einen 30-minütigen Discovery-Call — unverbindlich. Wir klären den Fit, die passende Edition und die nächsten Schritte." "Book a 30-minute discovery call — no commitment. We confirm fit, the right edition, and the next steps." -}}
+    {{- $pt = cond $de "30-minütigen Discovery-Call buchen" "Book a 30-minute discovery call" -}}
+    {{- $pu = $contact -}}
+    {{- $st = cond $de "Preise ansehen" "See pricing" -}}
+    {{- $su = $pricing -}}
+  {{- end -}}
+  {{- with .Params.closing_cta -}}
+    {{- with .heading }}{{ $heading = . }}{{ end -}}
+    {{- with .description }}{{ $desc = . }}{{ end -}}
+    {{- with .primary_text }}{{ $pt = . }}{{ end -}}
+    {{- with .primary_url }}{{ $pu = . }}{{ end -}}
+    {{- with .secondary_text }}{{ $st = . }}{{ end -}}
+    {{- with .secondary_url }}{{ $su = . }}{{ end -}}
+  {{- end -}}
+  <section class="cta-banner landing-cta">
+    <div class="container">
+      <h2 class="cta-heading">{{ $heading }}</h2>
+      {{- with $desc }}<p class="cta-description">{{ . }}</p>{{ end }}
+      <div class="cta-row cta-row--center">
+        <a class="cta-primary" href="{{ $pu }}">{{ $pt }}</a>
+        {{- with $su }}<a class="cta-secondary" href="{{ . }}">{{ $st }} →</a>{{ end }}
+      </div>
+    </div>
+  </section>
+{{- end -}}

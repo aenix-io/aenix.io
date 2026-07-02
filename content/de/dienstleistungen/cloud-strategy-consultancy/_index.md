@@ -8,6 +8,7 @@ related_pages:
   - /de/produkte/aenix-platform/
   - /de/produkte/cozystack
 language: "de"
+hreflang_en: /services/cloud-strategy-consultancy/
 direct_answer: |
   **Cloud-Strategie-Beratung beantwortet, welche Workloads in welche Umgebung gehören (Public, Private, Hybrid), was sie über alle Substrate hinweg wirklich kosten und in welcher Reihenfolge migriert wird. Aenix führt Cloud-Strategie als Teil seines Platform Readiness Assessments durch — geleitet von Architekten und Senior-Engineers, die Plattformen tatsächlich betreiben, nicht von Management-Beratern. Das Ergebnis ist ein umsetzbarer schriftlicher Bericht mit benannten Workloads, ehrlichem TCO-Modell, Souveränitäts-/Regulator-Lücken und einer Implementations-Roadmap, kein 200-seitiger Transformations-Plan. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und kann die empfohlene Architektur anschließend selbst umsetzen.**
 
@@ -42,12 +43,12 @@ faq:
     a: "Die Strategie mündet in eine Phase-2-Implementations-Roadmap, die Aenix als lieferbares Build-Engagement umsetzen kann. Die Ænix Platform ist in fünf Editions verfügbar; das Engagement enthält eine passende Edition-Empfehlung zu Ihrem Buyer-Profil."
 ---
 
-**Cloud-Strategie ist eine Frage, die Architekten und Senior-Engineers besser beantworten können als Management-Berater. Aenix führt Cloud-Strategie-Engagements als Teil des gleichen Platform Readiness Assessments durch, das umsetzbare Architektur liefert — schriftlicher Bericht mit benannten Workloads, Kosten und Timelines, kein 200-seitiger Transformations-Plan.**
+**Cloud-Strategie ist eine Frage, die Architekten und Senior-Engineers besser beantworten können als Management-Berater. Aenix führt Cloud-Strategie-Engagements als Teil desselben Platform Readiness Assessments durch, das umsetzbare Architektur liefert — ein schriftlicher Bericht mit benannten Workloads, Kosten und Timelines, kein 200-seitiger Transformationsplan.**
 
-> **Passt zu:** allen **[Ænix Platform Editions](/de/produkte/aenix-platform/)** — Strategie liefert die Edition-Empfehlung passend zu Ihrem Buyer-Profil und Engagement-Scope.
+> **Passt zu:** allen **[Ænix Platform Editions](/de/produkte/aenix-platform/)** — die Strategie ergibt, welche Edition zu Ihrem Buyer-Profil und Engagement-Scope passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment-Methodologie →</a>
 </div>
 
@@ -55,12 +56,28 @@ faq:
 
 ## Was unser Cloud-Strategie-Engagement abdeckt
 
-- **Workload-Klassifizierung** — was ist richtig für welches Substrat (public, private, hybrid)
-- **TCO ehrliches Modell** — über Substrate hinweg, mit realistischen Annahmen
-- **Souveränitäts-/Regulator-Lücke** — wo Compliance Architektur formt
+- **Workload-Klassifizierung** — was passt zu welchem Substrat (public, private, hybrid)
+- **Ehrliches TCO-Modell** — über Substrate hinweg, mit realistischen Annahmen
+- **Souveränitäts-/Regulator-Lücke** — wo Compliance die Architektur formt
 - **Migrations-Sequenzierung** — was bewegt sich zuerst, was bleibt, was ist hybrid
-- **Phase-2 Implementations-Roadmap** — Aenix-lieferbarer Build-Plan
+- **Phase-2-Implementations-Roadmap** — von Aenix lieferbarer Build-Plan
+
+Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Strategie-Schwerpunkt. Das Ergebnis ist ein schriftlicher Executive-Bericht.
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+## Wie wir uns von Big-4-Cloud-Strategie unterscheiden
+
+- **Engineers, keine Analysten** — dieselben Engineers, die produktive Plattformen bauen
+- **Keine Hyperscaler-Partnerschaft** — keine kommerzielle Verzerrung der Empfehlung
+- **Open-Source-Ziel bevorzugt** — wenn die Ökonomie es stützt
+
+Für konkrete Auslöser siehe **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)**, **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+---
+
+*Aenix ist das Team hinter Cozystack.*

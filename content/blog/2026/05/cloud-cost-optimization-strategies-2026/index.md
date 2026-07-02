@@ -267,15 +267,3 @@ If your trigger fits, the structured next step is a focused cost engagement. Aen
 
 *Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-cost engagements and platform-engineering programs across the EU, DACH, and Central Asia.*
 
-<!--
-SEO meta description (≤155 chars):
-"Cloud cost optimization strategies 2026: 8 disciplines from commitment tuning to Kubernetes cost optimization. Configurational and architectural levers."
-
-OG image: 1200×630
-
-Slug: /blog/2026/05/cloud-cost-optimization-strategies-2026/
-
-Word count: ~3000.
-
-Keyword cannibalization check: 14 artifact'ов на 14 разных parent topics. No conflicts.
--->

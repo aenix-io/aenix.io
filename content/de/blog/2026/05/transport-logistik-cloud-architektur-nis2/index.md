@@ -76,4 +76,3 @@ Standard-Article-21+23-Mapping; transport-spezifisch:
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~250. -->

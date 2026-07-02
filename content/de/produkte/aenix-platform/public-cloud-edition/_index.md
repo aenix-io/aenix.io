@@ -41,18 +41,6 @@ faq:
   <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
 </div>
-
----
-
-## Quick facts
-
-- **Für:** Große Public-Cloud-Betreiber, große Banken mit eigener Cloud, große Telcos / nationale Operatoren
-- **Foundation:** Open-Source Cozystack (CNCF-Projekt, Apache 2.0)
-- **Engagement-Größe:** €1M - €10M+ mehrjährige Programme
-- **Time-to-Production:** 6-18 Monate für vollständiges Multi-Region-Deployment; 3-6 Monate Pilot-Phase typisch
-- **Architektur:** Kubernetes-nativ, Multi-Hypervisor (KubeVirt + Integration mit VMware / OpenStack / OpenNebula / OpenShift / andere), Multi-Region-Control-Plane, Multi-Tenant Tenant CRD
-- **Ersetzt oder ergänzt:** OpenStack at scale, VMware Cloud Foundation, eigene In-House-Cloud-Plattformen
-
 ---
 
 ## Was in der Public Cloud Edition enthalten ist
@@ -133,11 +121,6 @@ Pricing auf Anfrage — Mehr-Millionen-Euro mehrjährige Programme. Discovery-Ca
 ## Kunden-Evidenz
 
 Public Cloud Edition Deployments sind derzeit NDA-geschützt. Tier-1-europäische-Banken-Engagements (mit eigener interner Cloud at scale) und regionale Telco-souveräne-Cloud-Produkt-Launches sind in Produktion. **Erste namentlich genannte Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
-
----
-
-## Häufige Fragen
-
 ### Wie unterscheidet sich Public Cloud Edition vom Selbstbetrieb von Open-Source-Cozystack?
 
 Cozystack ist eine saubere Kubernetes-native Multi-Tenant-Cloud-Plattform — aber endet vor der Operator-Surface, die ein echtes Cloud-Geschäft braucht. Public Cloud Edition ergänzt die Multi-Region-Control-Plane, Billing-Backend + -Frontend, Payment-Integrationen, kundenseitige Portal-Anpassung, produktisierten Installer, Enterprise-SLA und dedizierten Support.

@@ -4,7 +4,7 @@ description: "This is the long-form companion to our data sovereignty services p
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
-topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Compliance", "Backup & DR"]
+topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Compliance", "Backup and DR"]
 language: "en"
 companion_landing: "/solutions/data-sovereignty/"
 quiz:
@@ -228,24 +228,3 @@ Aenix runs this as part of the **[Platform Readiness Assessment](/services/platf
 
 *Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run data-sovereignty engagements and platform-engineering programs across the EU, DACH, and Central Asia.*
 
-<!--
-SEO meta description (≤155 chars):
-"Data residency requirements 2026: control-level checklist, common cloud failures, architectural patterns, country-specific notes. Practical guide."
-
-OG image: 1200×630 — globe with jurisdiction overlays + data-flow lines
-
-Slug: /blog/2026/05/data-residency-requirements-2026/
-
-Hreflang setup (when DE locale launches):
-- en: /blog/2026/05/data-residency-requirements-2026/
-- de: /de/blog/2026/05/datenresidenz-anforderungen-2026/
-- x-default: en
-
-Word count target: 2500-3500. Actual: ~3050.
-
-Keyword cannibalization check:
-- This article: "data residency requirements" parent
-- Data sovereignty landing: "data sovereignty" parent — DIFFERENT
-- DORA / Cloud-repatriation / Platform-readiness — all different parents
-No conflicts.
--->

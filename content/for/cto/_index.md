@@ -12,6 +12,7 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /resources/cloud-repatriation-tco-worksheet/
   - /products/cozystack/
+hide_closing_cta: true
 ---
 
 <!-- BLOCK 1: HERO -->

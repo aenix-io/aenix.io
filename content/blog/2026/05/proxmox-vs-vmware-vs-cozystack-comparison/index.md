@@ -142,5 +142,3 @@ Rare in 2026; reverse migration usually doesn't make economic sense post-Broadco
 
 *Aenix is the team behind Cozystack.*
 
-<!-- SEO: title "Proxmox vs VMware vs Cozystack — a 2026 Comparison | Aenix"
-Word count: ~1500. -->

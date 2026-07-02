@@ -215,24 +215,6 @@ Phase 2 implementation: assessment cost credited subject to scope.
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**How is this different from Big-4 DevOps consulting?**
-Big-4 engagements are typically delivered by management consultants and shaped by partner-channel economics. Our engineers do the work, calibrated against systems they actually operate. We don't have hyperscaler or vendor partnerships influencing recommendations.
-
-**Do you cover SRE work too?**
-Yes — SRE practices (SLOs, error budgets, incident response, capacity planning) are part of the engagement scope. We don't draw a hard line between DevOps and SRE in services. See **[Platform engineering vs DevOps vs SRE](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** for terminology.
-
-**What if our team can't operate what's built?**
-Three options: (1) extend the engagement to grow internal capacity; (2) optional managed-services arrangement; (3) hybrid where Aenix runs critical systems while internal team operates the rest. Decision is made during assessment.
-
-**Do you work with our existing tools?**
-Usually yes. We extend what works. We replace what doesn't, with named justification in the report. We don't replace tools to sell new tools.
-
-**More questions?** See the **[DevOps best practices article](/blog/2026/05/devops-best-practices-2026/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

@@ -117,5 +117,3 @@ If a structured assessment helps clarify, see **[Platform Readiness Assessment](
 
 *Aenix is the team behind Cozystack.*
 
-<!-- SEO: title "Nutanix vs Cozystack vs VMware — 2026 Virtualization Platform Comparison | Aenix"
-Word count: ~700. -->

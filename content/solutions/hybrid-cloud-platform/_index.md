@@ -204,18 +204,6 @@ Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end —
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Hybrid vs multi-cloud — different?**
-Hybrid usually = mix of public cloud + on-prem. Multi-cloud = mix of multiple public clouds. Both can coexist. The architectural challenges overlap; the strategic drivers differ.
-
-**Do all workloads need to be portable?**
-No. Some workloads are best as hyperscaler-native (using proprietary services). The architecture acknowledges these as deliberate non-portable choices, not accidents.
-
-**More questions?** See **[hybrid architecture patterns article](/blog/2026/05/hybrid-cloud-architecture-patterns-2026/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: CTA -->

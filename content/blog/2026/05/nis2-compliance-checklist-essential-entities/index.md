@@ -89,4 +89,3 @@ For deeper engagement: **[NIS2 compliance services](/solutions/nis2-compliance/)
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~300. -->

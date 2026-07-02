@@ -20,11 +20,17 @@ Embeds a live Pipedrive web form. Five types map to five live forms in the Aenix
 | `demo` | Aenix — Architecture Review | mentioned in `/contact/` message field |
 | `partner` | Aenix — Partner Program | `/partners/#apply` |
 | `course` | Aenix — Kubernetes Deep Dive Course | `/kubernetes-deep-dive/#enroll` |
-| `lead-magnet` | Aenix — Lead Magnet Download | 6 resource pages |
+| `lead-magnet` | Per-magnet forms (6), each redirecting to its thank-you page | resource pages — pass `resource="<magnet-slug>"` |
+
+Lead magnets use one Pipedrive form per magnet so each can redirect to its own
+thank-you page and be attributed separately. Pass the magnet slug via `resource=`
+(keys: `dora-compliance-checklist`, `nis2-compliance-checklist`, `vmware-migration-checklist`,
+`cloud-repatriation-tco-worksheet`, `platform-engineering-maturity-assessment`, `sovereign-ai-decision-guide`).
 
 **Example:**
 ```markdown
 {{< pipedrive-form type="discovery" >}}
+{{< pipedrive-form type="lead-magnet" resource="dora-compliance-checklist" >}}
 ```
 
 **Renders:** `<div class="pipedriveWebForms" data-pd-webforms="...">` + native Pipedrive loader script. Form styling (dark theme #111827, button color #01A5FF, Full-name field) is configured inside Pipedrive itself, not in site CSS.

@@ -123,7 +123,7 @@ Multiple Cozystack deployments, one per major department, with shared identity a
 ### Pattern C — research consortium platform
 Multi-institution research consortia operating shared Cozystack platform under joint governance. Best for collaborative research with significant compute demand.
 
-### Pattern D — НИОКР institute platform
+### Pattern D — R&D institute platform
 Research institutes (IT, engineering, biotech) operating Cozystack as core research infrastructure. Often combined with industrial-partner access via tenant CRD model.
 
 ## Specific university considerations
@@ -181,8 +181,5 @@ If your university or research institute fits the profile, the structured next s
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for universities, research institutes, and НИОКР organizations across the EU, DACH, and Central Asia.*
+*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia.*
 
-<!-- SEO meta description (≤155):
-"Cloud-native research and teaching infrastructure 2026: GPU clusters, reproducible research, cloud-native curriculum. Open-source Cozystack-based architecture."
-Word count: ~2100. -->

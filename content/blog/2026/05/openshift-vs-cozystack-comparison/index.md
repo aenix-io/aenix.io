@@ -122,5 +122,3 @@ For a specific evaluation, the assessment phase of either engagement helps clari
 
 *Aenix is the team behind Cozystack.*
 
-<!-- SEO: title "OpenShift vs Cozystack — Comparison for KubeVirt Platform Decisions | Aenix"
-Word count: ~700. -->

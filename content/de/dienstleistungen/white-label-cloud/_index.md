@@ -7,6 +7,7 @@ related_pages:
   - /de/partner/
   - /de/produkte/cozystack
 language: "de"
+hreflang_en: /services/white-label-cloud/
 direct_answer: |
   **White-Label Cloud ist ein gebrandetes Cloud-Produkt, das Managed Service Provider (MSPs), Reseller und System-Integratoren unter eigener Identität an ihre Kunden verkaufen — betrieben auf Shared- oder dedizierter Infrastruktur. Aenix baut solche Plattformen end-to-end auf Basis von Cozystack, dem Open-Source-Cloud-Stack (Apache 2.0, CNCF-Projekt), mit KubeVirt für VMs und Container auf einer Kubernetes-API. Das gebrandete cozyportal (Farben, Logo, Domain), ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden) und WHMCS-integriertes Billing ermöglichen es Partnern, mit Hyperscalern preislich zu konkurrieren und gleichzeitig ihre Kundenbeziehung zu behalten.**
 
@@ -41,12 +42,13 @@ faq:
     a: "Über das Partner-Programm sind bis zu 40% Marge auf weiterverkaufte Engagements möglich. Das Multi-Tier-Reseller-Modell erlaubt es, eigene Endkunden-Tarife zu setzen, während Aenix die Plattform betreibt und Support nach Reseller-Level staffelt."
 ---
 
-**Managed Service Provider (MSPs) und Reseller in 2026 stehen vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren — aber mit den Kundenbeziehungs-Vorteilen, die MSPs bereits haben. White-Label Cloud — gebrandet mit der MSP-Identität, betrieben auf Shared- oder dedizierter Infrastruktur — ist die realistische Antwort. Aenix baut diese end-to-end.**
+**Managed Service Provider (MSPs) und Reseller stehen 2026 vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren, aber mit den Kundenbeziehungs-Vorteilen, die MSPs bereits haben. White-Label Cloud — gebrandet mit der Identität des MSP, betrieben auf Shared- oder dedizierter Infrastruktur — ist die realistische Antwort. Aenix baut diese end-to-end.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden), WHMCS-integriertes Billing. Ab €1.3k/Monat Support-Tier. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden), WHMCS-integriertes Billing. Ab €1.3k/Monat Support-Tier. Siehe auch: **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-secondary" href="/blog/2026/05/white-label-cloud-msp-reseller-playbook/">Das MSP-Playbook lesen →</a>
 </div>
 
 ---
@@ -54,21 +56,39 @@ faq:
 ## Wer braucht eine White-Label Cloud
 
 - **MSPs**, die Cloud-Managed-Services an Enterprise-Kunden anbieten
-- **Reseller** mit etabliertem Kundenstamm
-- **Regionale System-Integratoren** mit Cloud-Produkt-Angebot
-- **Channel-Partner** mit Branchen-Spezialisierung
+- **Hosting-Reseller** beim Up-Market-Move
+- **System-Integratoren**, die Cloud als Teil eines breiteren Managed-Services-Angebots wollen
+- **Spezial-Beratungen** in regulierten Verticals (Finanzen, Gesundheitswesen, Regierung)
 
 ---
 
-## Was inkludiert ist
+## Was wir liefern
 
-- Vollständig white-label-fähiges cozyportal (Farben, Logo, Domain)
-- Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden)
-- WHMCS-integriertes Billing mit MSP-Branding
-- Service-Katalog jenseits VMs (managed DBs, S3, GPU)
-- Tenant Lock / Suspension Tools
-- Support-Tier-Stufung pro Reseller-Level
+- **Mandantenfähige Cozystack-Plattform** mit Reseller-Kunden-Hierarchie (verschachteltes Tenant CRD)
+- **Gebrandetes kundenseitiges Portal** — cozyportal pro Reseller anpassbar
+- **WHMCS-integriertes Billing** — produktionsreif, zwei Integrations-Modi
+- **Service-Katalog** — VMs, K8s, Managed Databases, S3, GPU
+- **Reseller- / Sub-Reseller-Modell** — für Multi-Tier-Partner-Channels
+- **Operations-Workflow** — Customer-Support, SLA-Management, Observability pro Tenant
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+## Engagement-Struktur
+
+- **Discovery + Produkt-Readiness-Assessment** (4-8 Wochen)
+- **Phase-2-Build** (4-12 Monate) — Plattform + Branding + Billing + Operations
+- **Phase 3 (optional)** — Managed-Services während des Ramps
+
+---
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+- **[White-Label-Cloud-MSP-Playbook](/blog/2026/05/white-label-cloud-msp-reseller-playbook/)**
+- **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** — breiterer Scope (Ihre eigene Cloud-Marke)
+- **[Cozystack](/de/produkte/cozystack/)**
+
+---
+
+*Aenix ist das Team hinter Cozystack.*

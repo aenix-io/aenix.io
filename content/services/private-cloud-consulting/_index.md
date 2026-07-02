@@ -201,21 +201,6 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Do we need to use Cozystack?**
-No. Cozystack is the foundation we recommend when it fits — multi-tenant + sovereign use cases — but we extend OpenStack, OpenShift, vendor-led platforms when those are the right fit.
-
-**Private cloud vs hybrid cloud — which?**
-Most modern deployments end up hybrid (selected workloads on private, others remain in public cloud). Pure private cloud is a specific architectural choice driven by sovereignty or cost economics. The engagement assesses which fits your case.
-
-**How does this differ from VMware migration consulting?**
-VMware migration is one path that leads to private cloud (when the destination is private). The engagement covers all paths: VMware exit, OpenStack rebuild, hyperscaler repatriation, greenfield.
-
-**More questions?** See **[private cloud architecture article](/blog/2026/05/private-cloud-architecture-2026/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: CTA -->

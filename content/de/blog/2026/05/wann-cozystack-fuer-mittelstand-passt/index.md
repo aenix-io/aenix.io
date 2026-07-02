@@ -80,4 +80,3 @@ Bei meisten KMU ist die ehrliche Antwort "bleibt wo ihr seid."
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~250. -->

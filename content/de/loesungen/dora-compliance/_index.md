@@ -8,6 +8,7 @@ related_pages:
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/produkte/aenix-platform/enterprise-edition/
 language: "de"
+hreflang_en: /solutions/dora-compliance/
 direct_answer: |
   **DORA-Compliance für Cloud-Infrastruktur bedeutet, die Cloud- und Plattform-Architektur eines Finanzunternehmens auditbereit an die Digital Operational Resilience Act (seit 17. Januar 2025 in Kraft) anzupassen. Betroffen sind Banken, Versicherer, Investmentfirmen, Zahlungsinstitute, Krypto-Asset-Anbieter und ihre kritischen ICT-Drittanbieter. Aenix — das Team hinter Cozystack (CNCF-Projekt) — führt DORA-fokussierte Plattform-Readiness-Assessments durch und liefert mit der Ænix Platform Enterprise Edition eine DORA-konforme Architektur: kundenkontrollierte Schlüssel, audit-bereites Logging via VictoriaLogs, Mandantenfähigkeit über das Tenant CRD nach ICT-Risikoklassifizierung, getestete Exit-Mechanik und Transparenz über ICT-Drittparteien-Risiken.**
 
@@ -42,50 +43,218 @@ faq:
     a: "Aenix bietet zwei Engagements an: ein 14-Tage-Engagement als fokussierte DORA-Bewertung und ein 28-Tage-Engagement, das DORA, NIS2 und GDPR gemeinsam abbildet. Beide folgen der Methodik des Platform Readiness Assessments."
 ---
 
-**Die Digital Operational Resilience Act (DORA) ist seit dem 17. Januar 2025 in Kraft. Für die Finanzbranche der EU — Banken, Versicherer, Investmentfirmen, Zahlungsinstitute, Krypto-Asset-Anbieter und ICT-Drittanbieter — hat DORA das fragmentierte Aufsichtsregime durch eine einheitliche Verordnung ersetzt.**
+<!-- BLOCK 1: HERO -->
 
-Aenix führt DORA-konforme Plattform-Readiness-Assessments für betroffene Unternehmen und ihre ICT-Drittanbieter durch.
+**DORA gilt seit dem 17. Januar 2025. Wenn Ihre Cloud-Architektur nicht unabhängig auf ICT-Drittparteien-Risiko, Konzentrationsrisiko, Exit-Bereitschaft und Tests der operativen Resilienz geprüft wurde, wird der nächste Aufsichtszyklus Lücken aufdecken, die Sie besser selbst zuerst finden.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — DORA-konform by design (kundenkontrollierte Schlüssel, audit-bereites Logging via VictoriaLogs, Multi-Tenant Tenant CRD nach ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz). Kostenlose [DORA-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
+Aenix führt ein DORA-konformes Platform-Readiness-Engagement für Finanzunternehmen und die sie beliefernden ICT-Drittanbieter durch. Das Ergebnis: eine Kontroll-Landkarte dessen, was Sie heute nachweisen können, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
+
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — DORA-konform by design (kundenkontrollierte Schlüssel auf jeder Ebene, audit-bereites Logging via VictoriaLogs, mandantenfähiges Tenant CRD abgestimmt auf die ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz bis zur zweiten Stufe). Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/dora-checkliste-cloud-architektur/">DORA-Checkliste →</a>
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/dora-checkliste-cloud-architektur/">DORA-Checkliste lesen →</a>
 </div>
 
----
+<div class="trust-badges">
+In der EU ansässige Ingenieure · Gegenseitige NDA zum Auftakt · Schriftliche Ergebnisse · Keine Hyperscaler-Voreingenommenheit
+</div>
 
-## Wer ist von DORA betroffen
 
-- **Banken und Kreditinstitute**
-- **Versicherer und Rückversicherer**
-- **Investmentfirmen, Zahlungsinstitute, Krypto-Asset-Service-Anbieter**
-- **ICT-Drittanbieter**, die kritische Funktionen für betroffene Unternehmen erbringen
+<!-- /BLOCK 1 -->
 
 ---
+
+<!-- BLOCK 2: WHO THIS IS FOR -->
+
+## Für wen das gedacht ist
+
+DORA gilt direkt oder indirekt für nahezu jede Organisation in der Finanz-Lieferkette der EU. Am häufigsten arbeiten wir mit:
+
+- **Banken und Kreditinstituten**, die bei den ICT-Drittparteien-Vereinbarungen nach Artikel 28 unter aufsichtlicher Prüfung stehen.
+- **Versicherern und Rückversicherern** mit Datenflüssen über mehrere Jurisdiktionen und grenzüberschreitendem Disaster Recovery.
+- **Investmentfirmen, Zahlungsinstituten und Krypto-Asset-Dienstleistern**, die als Finanzunternehmen nach DORA Artikel 2 in den Anwendungsbereich fallen.
+- **ICT-Drittdienstleistern**, die kritische Funktionen für betroffene Unternehmen erbringen — darunter Hosting-Anbieter, SaaS-Anbieter und Managed-Service-Betreiber.
+
+Wenn Ihr Cloud-Setup eine *kritische oder wichtige Funktion* im Sinne von DORA unterstützt, gelten die nachfolgenden Anforderungen materiell, nicht nur verfahrenstechnisch.
+
+<!-- /BLOCK 2 -->
+
+---
+
+<!-- BLOCK 3: FOUR THINGS DORA REQUIRES OF YOUR CLOUD -->
 
 ## Was DORA von Ihrer Cloud-Architektur fordert
 
-1. **ICT-Drittparteien-Risiko-Transparenz** (Artikel 28-30)
-2. **Exit-Bereitschaft** für kritische Funktionen (Artikel 28(8))
-3. **Operative Resilienz-Tests** (Titel IV)
-4. **Souveränität und Aufsichtszugang**
+<div class="grid-2x2">
 
-Detaillierte Checkliste: **[DORA-Compliance-Artikel](/de/blog/2026/05/dora-checkliste-cloud-architektur/)**.
+**1. Transparenz beim ICT-Drittparteien-Risiko (Artikel 28-30)**
+Jeder ICT-Lieferant in Ihrem Stack — Hyperscaler, SaaS, Managed Service — ist mit Pflichten aus Artikel 28 verbunden. Das Finanzunternehmen muss die Lieferkette abbilden, einschließlich Subunternehmern, mit einer dokumentierten Position zum Konzentrationsrisiko.
+
+**2. Exit-Bereitschaft für Vereinbarungen mit kritischer Funktion (Artikel 28(8))**
+Ein dokumentierter — und zunehmend getesteter — Exit-Plan für jede ICT-Vereinbarung mit kritischer Funktion. Reine Schreibtischplanungen genügen nicht mehr.
+
+**3. Tests der operativen Resilienz (Titel IV)**
+Jährliche szenariobasierte Tests für alle betroffenen Unternehmen. Bedrohungsgeleitete Penetrationstests alle drei Jahre für bedeutende Unternehmen. Beides läuft gegen die Live-Architektur, nicht gegen die Dokumentation.
+
+**4. Souveränität und aufsichtlicher Zugang**
+Datenresidenz auf jeder Ebene durchgesetzt — Produktion, Backup, Observability, CI/CD-Artefakte. Audit-Trails, die in regulatorisch verwertbaren Formaten exportierbar sind. Verschlüsselungsschlüssel unter der Kontrolle des Finanzunternehmens.
+
+</div>
+
+Eine Kontroll-Checkliste mit operativer Sprache zu jedem dieser Punkte finden Sie in **[der DORA-Compliance-Checkliste](/de/blog/2026/05/dora-checkliste-cloud-architektur/)**.
+
+<!-- /BLOCK 3 -->
 
 ---
 
-## Aenix-Engagement-Struktur
+<!-- BLOCK 4: WHERE CURRENT SETUPS FALL SHORT -->
 
-- **14-Tage-Engagement** — fokussierte DORA-Bewertung
-- **28-Tage-Engagement** — DORA + NIS2 + GDPR-Mapping
+## Wo die meisten Cloud-Setups zu kurz greifen
 
-Methodik: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+<div class="gap-cards-2">
 
-/contact/
+**Observability-Daten verlassen still den Perimeter des Regulators**
+Die Produktionsdatenbank mag konform sein. Der SaaS-Observability-Stack, der die Anwendungslogs einsammelt, ist es wahrscheinlich nicht. DORA Artikel 28 gilt für die gesamte ICT-Drittparteien-Vereinbarung.
+
+**Der Exit-Plan existiert auf dem Papier, wurde aber nie getestet**
+Artikel 28(8) verlangt einen Exit-Plan. Viele Unternehmen haben einen. Ohne eine Probe in den letzten 24 Monaten ist die Time-to-Exit fiktiv.
+
+**Konzentrationsrisiko wird als Beschaffungsfrage behandelt, nicht als Architekturfrage**
+Vertragliche Diversifizierungsklauseln ohne architektonische Diversität erfüllen die materiellen Anforderungen von Artikel 28 nicht.
+
+**Subunternehmer-Risiko ist jenseits der ersten Stufe unsichtbar**
+Artikel 30(2)(a) verlangt, dass das Finanzunternehmen die Kette kennt. Die meisten tun es nicht, über die erste Stufe hinaus.
+
+</div>
+
+Diese Lücken sind bei Institutionen verbreitet, die sich für cloud-reif halten. Sie früh aufzudecken ist günstiger, als sie unter aufsichtlichem Druck aufzudecken.
+
+<!-- /BLOCK 4 -->
 
 ---
 
-*Aenix ist das Team hinter Cozystack — CNCF Project-Projekt.*
+<!-- BLOCK 5: HOW WE HELP (linking to entry offer) -->
 
-<!-- Keyword: dora compliance DE 350/KD 0/TP 1000. Word count: ~400. -->
+## Wie Aenix hilft
+
+Unser DORA-Engagement ist in das **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** eingebettet, wobei der Workstream zu Souveränität und Regulator-Lücken für den DORA-spezifischen Anwendungsbereich in den Vordergrund gerückt wird. Das 14- oder 28-tägige Engagement liefert:
+
+- **DORA-Kontroll-Landkarte** — eine Kontrolle-für-Kontrolle-Tabelle, die zeigt, was Sie heute nachweisen können, was teilweise erfüllt ist und wo die architektonischen Lücken liegen.
+- **Konzentrationsrisiko-Bild** — Abbildung der Lieferkette (bis zur zweiten Stufe), mit quantifizierter Konzentrationsposition pro kritischer Funktion.
+- **Exit-Machbarkeitsanalyse** — kalibrierte Time-to-Exit-Schätzungen, Scoping von Exit-Übungen und Sequenzierung abgestimmt auf das Auslaufen von Verpflichtungen.
+- **Bereitschaft für Resilienz-Tests** — ob Ihre Architektur die szenariobasierten Tests unterstützt, die Aufsichtsbehörden erwarten.
+- **Remediationsplan auf Architekturebene** — was in welcher Reihenfolge zu beheben ist, mit Aufwandsschätzungen.
+
+Geliefert von Aenix-Ingenieuren — dem Team hinter Cozystack — nicht von Unternehmensberatern. Wir verkaufen Ihnen keine Hyperscaler-Partnerschaft, und der Bericht ist ehrlich dazu, welche architektonischen Entscheidungen den Aufwand wert sind.
+
+<!-- /BLOCK 5 -->
+
+---
+
+<!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
+
+## Warum gerade Aenix
+
+Die meiste DORA-Beratung kommt von den Big-Four-Beratungen, die an einen Hyperscaler-Partner übergeben, dessen Anreize die Empfehlung prägen. Die architektonische Antwort ist tendenziell die Architektur, die der Partner verkauft.
+
+Wir sind in drei konkreten Punkten anders:
+
+- **Keine Hyperscaler-Voreingenommenheit.** Unsere Empfehlungen sind kommerziell nicht an AWS, Azure, GCP oder einen einzelnen Anbieter gebunden. Wenn die Antwort Hyperscaler-mit-besseren-Kontrollen lautet, sagen wir das. Wenn die Antwort On-Prem oder Hybrid lautet, sagen wir das.
+- **Ingenieure statt Berater.** Dieselben Aenix-Ingenieure, die das Readiness-Engagement durchführen, bauen anschließend die Produktionsplattformen. Die Aufwandsschätzungen im Bericht sind an Arbeit kalibriert, die wir tatsächlich ausgeliefert haben.
+- **Open-Source-Plattformfundament.** Wir sind das Unternehmen hinter **[Cozystack](/de/produkte/cozystack/)** — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF-Best-Practices-Badge. Wo eine Cozystack-basierte Architektur die materiellen Anforderungen von DORA besser erfüllt als die Alternative, erklärt der Bericht das mit benannten Kontrollen.
+
+<!-- /BLOCK 6 -->
+
+---
+
+<!-- BLOCK 7: TIMELINE -->
+
+## Wie das Engagement abläuft
+
+| Wann | Was | Ergebnis |
+|---|---|---|
+| **Tag 0** | 30-min Discovery-Call (kostenlos) | Passung bestätigen, DORA-Scope eingrenzen (welche Artikel Sie binden), Sponsor identifizieren |
+| **Tage 1-13 (oder 1-27)** | Vier parallele Workstreams; Workstream zu Souveränität und Regulator-Lücken im Vordergrund | Tägliche asynchrone Updates, drei Checkpoints mit dem Sponsor |
+| **Tag 14 (oder 28)** | Executive-Readout (60-90 Min.) | Schriftlicher Bericht: DORA-Kontroll-Landkarte, Konzentrationsanalyse, Exit-Machbarkeit, Bereitschaft für Resilienz-Tests, Remediationsplan |
+
+Zur vollständigen Engagement-Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+
+<!-- /BLOCK 7 -->
+
+---
+
+<!-- BLOCK 8: PROOF -->
+
+## Wer das mit uns durchgeführt hat
+
+{{< placeholder-logos >}}
+
+Wir haben DORA-konforme Readiness-Engagements für Banken, Versicherer, Telekommunikationsbetreiber und ICT-Drittdienstleister in der gesamten EU und der DACH-Region durchgeführt. Gegenseitige NDA zum Auftakt; benannte Fallstudien auf Anfrage im Discovery-Call, sofern die Kundengenehmigungen dies erlauben.
+
+> {{< placeholder-quote >}}
+> *— {{NAME_1}}, {{TITLE_1}}*
+
+<!-- /BLOCK 8 -->
+
+---
+
+<!-- BLOCK 9: PRICING -->
+
+## Preise und Engagement-Umfang
+
+Das DORA-fokussierte Engagement läuft als Platform Readiness Assessment mit dem Workstream zu Souveränität und Regulator-Lücken als Hauptschwerpunkt.
+
+<div class="pricing-cards-2">
+
+### 14 Tage (fokussierter DORA-Scope)
+Vertiefung des DORA-fokussierten Workstreams, einzelne Geschäftseinheit / Domäne. Vollständige Kontroll-Landkarte, Konzentrationsanalyse, Exit-Machbarkeit, Remediationsplan.
+**{{PRICING_14_DAY}}**
+
+### 28 Tage (volle DORA + angrenzend)
+DORA + angrenzendes NIS2- / GDPR- / sektorales Overlap-Mapping. Stakeholder-Interviews über mehrere Geschäftseinheiten. Anbieter-Vorauswahl, wo anwendbar. Roadmap für die Phase-2-Implementierung.
+**{{PRICING_28_DAY}}**
+
+</div>
+
+Festpreis. Eine Rechnung. Gegenseitige NDA zum Auftakt. Folgt ein Phase-2-Implementierungs-Engagement, werden die Kosten des Assessments darauf angerechnet (abhängig vom Scope).
+
+Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitgliedstaaten und Kasachstan; der Discovery-Call klärt die verfahrenstechnische Passung.
+
+<!-- /BLOCK 9 -->
+
+---
+
+<!-- BLOCK 10: FAQ -->
+
+
+<!-- /BLOCK 10 -->
+
+---
+
+<!-- BLOCK 11: BOTTOM CTA -->
+
+<a id="discovery"></a>
+## Beginnen Sie mit einem 30-minütigen Discovery-Call
+
+Kostenlos. Keine Vorbereitung nötig. Wir bestätigen die Passung, grenzen den DORA-Scope auf die für Sie bindenden Artikel ein und sagen Ihnen, ob die 14-Tage- oder die 28-Tage-Variante zu Ihrer Situation passt.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+Oder lesen Sie weiter:
+- **[DORA-Compliance-Checkliste für Cloud-Architektur](/de/blog/2026/05/dora-checkliste-cloud-architektur/)** — der Leitfaden auf Kontrollebene
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — das Engagement, das den DORA-Workstream enthält
+- **[Datensouveränität im Jahr 2026](/de/loesungen/data-sovereignty/)** — angrenzender regulatorischer Auslöser
+- **[Cozystack](/de/produkte/cozystack/)** — die Plattform, die wir typischerweise für souveräne Architekturen empfehlen
+
+<!-- /BLOCK 11 -->
+
+---
+
+<!-- BLOCK 12: FOOTER TRUST STRIP -->
+
+*Aenix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir führen DORA-konforme Platform-Readiness-Engagements und Platform-Engineering-Programme für Finanzdienstleister in der gesamten EU und der DACH-Region durch.*
+
+<!-- /BLOCK 12 -->

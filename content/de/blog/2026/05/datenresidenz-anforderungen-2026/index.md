@@ -100,10 +100,9 @@ Datenresidenz ist die Anforderung, dass spezifizierte Daten in einer definierten
 
 ## Wie geht es weiter?
 
-Strukturierte Bewertung → **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+Strukturierte Bewertung → **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 ---
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~500. -->

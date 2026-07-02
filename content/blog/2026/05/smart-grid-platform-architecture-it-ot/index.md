@@ -220,9 +220,3 @@ For specific triggers see **[NIS2 compliance](/solutions/nis2-compliance/)**, **
 
 *Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
 
-<!--
-SEO meta description (≤155 chars):
-"Smart grid platform architecture 2026: IT/OT convergence with boundaries, edge tier at substation density, AI for forecasting, NIS2-aligned controls."
-Keyword target: smart grid platform US 60/KD 9/TP 1400 (parent topic catchment) + smart grid software (150/1) + grid management software (100/9).
-Word count: ~1900.
--->

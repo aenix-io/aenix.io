@@ -37,7 +37,6 @@ params:
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
   ahrefsAnalytics: GQGQZe4HnT/wYo45t5cUEw
-  apolloAppId: 66b1e05b9f632a02d2ea4fad
   # gtmContainer: GTM-XXXXXXX  # uncomment + set when GTM container is provisioned
   # hotjarId: 0000000           # uncomment + set when Hotjar site ID is provisioned
   # Hide design-notes by default. Enable per-build with HUGO_PARAMS_SHOW_DESIGN_NOTES=true
@@ -104,6 +103,11 @@ menus:
       parent: products
       weight: 7
 
+    - name: WHMCS × Cozystack integration
+      url: /products/whmcs-cozystack-integration/
+      parent: products
+      weight: 8
+
     # ── Solutions ──
     - name: Solutions
       url: /solutions/
@@ -145,6 +149,11 @@ menus:
       url: /solutions/hybrid-cloud-platform/
       parent: solutions-cost
       weight: 3
+
+    - name: Disaster Recovery
+      url: /solutions/disaster-recovery/
+      parent: solutions-cost
+      weight: 4
     # group: Developer & AI
     - name: Developer & AI
       identifier: solutions-devai
@@ -159,6 +168,16 @@ menus:
       url: /solutions/sovereign-ai/
       parent: solutions-devai
       weight: 2
+
+    - name: GPU Cloud Bursting
+      url: /solutions/gpu-cloud-bursting/
+      parent: solutions-devai
+      weight: 3
+
+    - name: Private LLM
+      url: /solutions/private-llm/
+      parent: solutions-devai
+      weight: 4
 
     # ── Services ──
     - name: Services
@@ -273,6 +292,11 @@ menus:
       url: /industries/public-sector/
       parent: industries-regulated
       weight: 3
+
+    - name: Healthcare
+      url: /industries/healthcare/
+      parent: industries-regulated
+      weight: 4
     # group: Telco & Hosting
     - name: Telco & Hosting
       identifier: industries-telco
@@ -365,6 +389,11 @@ menus:
       parent: resources
       weight: 5
 
+    - name: ROI & TCO Calculators
+      url: /roi-calculator/
+      parent: resources
+      weight: 6
+
     # ── Migrate ──
     - name: Migrate
       url: /migration/
@@ -382,6 +411,11 @@ menus:
       url: /compare/cozystack-vs-vmware/
       parent: migrate
       weight: 3
+    - name: Nutanix Migration
+      url: /migration/nutanix/
+      parent: migrate
+      weight: 3
+
     - name: All alternatives
       url: /alternatives/
       parent: migrate
@@ -458,6 +492,11 @@ menus:
       url: /de/produkte/cozystack/
       parent: products-de
       weight: 7
+
+    - name: WHMCS × Cozystack Integration
+      url: /de/produkte/whmcs-cozystack-integration/
+      parent: products-de
+      weight: 8
     - name: Lösungen
       url: /de/loesungen/
       identifier: solutions-de
@@ -496,6 +535,10 @@ menus:
       url: /de/loesungen/hybrid-cloud/
       parent: solutions-de-cost
       weight: 3
+    - name: Disaster Recovery
+      url: /de/loesungen/disaster-recovery/
+      parent: solutions-de-cost
+      weight: 4
     - name: Developer & KI
       identifier: solutions-de-devai
       parent: solutions-de
@@ -509,6 +552,15 @@ menus:
       url: /de/loesungen/sovereign-ai/
       parent: solutions-de-devai
       weight: 2
+
+    - name: GPU Cloud Bursting
+      url: /de/loesungen/gpu-cloud-bursting/
+      parent: solutions-de-devai
+      weight: 3
+    - name: Private LLM
+      url: /de/loesungen/private-llm/
+      parent: solutions-de-devai
+      weight: 4
     - name: Dienstleistungen
       url: /de/dienstleistungen/
       identifier: services-de
@@ -614,6 +666,11 @@ menus:
       url: /de/branchen/oeffentlicher-sektor/
       parent: industries-de-reg
       weight: 3
+
+    - name: Gesundheitswesen
+      url: /de/branchen/gesundheitswesen/
+      parent: industries-de-reg
+      weight: 4
     - name: Telco & Hosting
       identifier: industries-de-telco
       parent: industries-de
@@ -684,6 +741,10 @@ menus:
       weight: 2
     - name: Cozystack vs VMware
       url: /de/vergleichen/cozystack-vs-vmware/
+      parent: migrate-de
+      weight: 3
+    - name: Nutanix-Migration
+      url: /de/migration/nutanix/
       parent: migrate-de
       weight: 3
     - name: Alle Alternativen
@@ -782,7 +843,7 @@ taxonomies:
   author: authors
 
 permalinks:
-  blog: /blog/:year/:month/:slug/
+  blog: /blog/:year/:month/:contentbasename/
 
 # Disable auto taxonomy term lists outside /blog/ — we still want them
 # to exist as Hugo metadata for filter chips, but not as top-level pages.

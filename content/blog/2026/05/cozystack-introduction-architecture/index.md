@@ -167,6 +167,3 @@ A good engagement is honest about these cases.
 
 *Cozystack is a CNCF Project. Aenix is the company that builds and supports it.*
 
-<!-- SEO: title "Cozystack — Architecture, Comparison, and 2026 Fit | Aenix"
-Word count: ~1500.
--->

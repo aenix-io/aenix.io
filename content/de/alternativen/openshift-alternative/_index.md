@@ -8,6 +8,7 @@ related_pages:
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-engineering
 language: "de"
+hreflang_en: /alternatives/openshift-alternative/
 direct_answer: |
   **Eine OpenShift-Alternative ist eine Kubernetes-Plattform, die die Enterprise-Fähigkeiten von Red Hat OpenShift bietet, ohne das Red-Hat-Subscription-Modell und die Bindung an das Red-Hat-/IBM-Ökosystem. Cozystack ist die realistische Open-Source-First-Alternative: Es liefert KubeVirt-basierte Virtualisierung für VMs und Container über eine einheitliche Kubernetes-API, Cilium-Networking (eBPF), LINSTOR/DRBD-Storage und Tenant-CRD-basierte Mandantenfähigkeit unter Apache-2.0-Lizenz ohne Core-basierte Lizenzgebühren. Cozystack ist ein CNCF-Projekt. Aenix, das Open-Core-Unternehmen dahinter, bietet die produktisierte Ænix Platform plus Engineering-Services für regulierte Unternehmen und Produkt-Teams, die den OpenShift-Developer-Experience-Layer ersetzen wollen.**
 quick_facts:
@@ -40,25 +41,54 @@ faq:
     a: "Die Ænix Platform wird in Service-Stufen angeboten: Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach individuellem Angebot. Die Software Cozystack selbst ist Apache-2.0-lizenziert und ohne Core-basierte Gebühren."
 ---
 
-**OpenShift ist eine starke kommerzielle Kubernetes-Distribution mit ausgereiften Enterprise-Tools. Der Trade-off: das Red-Hat-Subscription-Modell und die enge Kopplung an das Red-Hat-/IBM-Ökosystem. Für Organisationen, die eine Open-Source-First-Foundation mit vergleichbaren Fähigkeiten suchen — einschließlich KubeVirt-basierter Virtualisierung und Multi-Tenancy — ist Cozystack die realistische Alternative.**
+**OpenShift ist eine starke kommerzielle Kubernetes-Distribution mit ausgereiften Enterprise-Tools. Der Trade-off ist das Red-Hat-Subscription-Modell und die enge Kopplung an das Red-Hat-/IBM-Ökosystem. Für Organisationen, die eine Open-Source-First-Foundation mit vergleichbaren Fähigkeiten suchen — einschließlich KubeVirt-basierter Virtualisierung und Multi-Tenancy — ist Cozystack die realistische Alternative.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen; **[IDP Edition](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams, die den OpenShift-Developer-Experience-Layer ersetzen.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen; **[IDP Edition](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/openshift-vs-cozystack-comparison/">OpenShift vs Cozystack →</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
+  <a class="cta-secondary" href="/blog/2026/05/openshift-vs-cozystack-comparison/">OpenShift vs Cozystack →</a>
 </div>
 
 ---
 
 ## Wann OpenShift nicht die richtige Antwort sein könnte
 
-- Red-Hat-Subscription-Kosten skalieren disproportional
-- IBM-Akquisitions-Effekte auf Roadmap und Pricing
-- Open-Source-First-Anforderung
-- Souveränitäts-Druck (US-Vendor-Abhängigkeit)
-- Strikte Kosten-Disziplin in nachhaltigen Workloads
+- **Bedenken bei den Subscription-Kosten** — die kommerzielle Red-Hat-OpenShift-Subscription skaliert mit der Größe der Bereitstellung.
+- **Open-Source-First-Beschaffung** — Organisationen, die Apache 2.0 der Red-Hat-Lizenzierung vorziehen.
+- **Leichterer operativer Footprint gewünscht** — die Oberfläche von OpenShift ist breiter als für manche Use Cases nötig.
+- **Service-Provider-Modell** — Multi-Customer-Cloud, in der die Red-Hat-Lizenz-Ökonomie nicht passt.
+- **Keine bestehende Red-Hat-Beziehung** — der Wert von OpenShift verstärkt sich im breiteren Red-Hat-Ökosystem.
+
+Wenn Sie bereits tief auf Red Hat / OpenShift setzen, lautet das Ergebnis der Alternativen-Analyse meist "bleiben". Für Greenfield- oder Exit-Entscheidungen lohnt sich der Vergleich mit Cozystack.
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+## Cozystack vs OpenShift
+
+| | OpenShift Virtualization | Cozystack |
+|---|---|---|
+| **Lizenz** | Kommerzielle Red-Hat-Subscription | Apache 2.0 |
+| **Foundation** | Kubernetes + KubeVirt + Red-Hat-Ökosystem | Kubernetes + KubeVirt + Cilium + LINSTOR |
+| **Multi-Tenancy** | Namespaces + Operators | Tenant CRD |
+| **Operativer Footprint** | OpenShift (breit) | Cozystack (fokussiert) |
+| **Vendor-Beziehung** | Red Hat / IBM | Keine (Open Source) |
+| **Kostenmodell** | Subscription pro CPU | Kostenlos + optionaler Support-Tier |
+| **Support** | Red Hat | Aenix oder Community |
+
+Beide sind KubeVirt-basiert, das zugrunde liegende VM-Modell ist also ähnlich. Die Unterschiede liegen bei Lizenzierung, operativem Footprint und Vendor-Beziehung.
+
+---
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+- **[OpenShift vs Cozystack Vergleich](/blog/2026/05/openshift-vs-cozystack-comparison/)**
+- **[VMware-Alternative](/de/alternativen/vmware-alternative/)**
+- **[Platform-Engineering-Services](/de/dienstleistungen/platform-engineering/)**
+- **[Cozystack](/de/produkte/cozystack/)**
+
+---
+
+*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

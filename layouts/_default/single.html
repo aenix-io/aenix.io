@@ -41,8 +41,11 @@
         {{ partial "seo/geo-intro.html" . }}
         {{ .Content }}
         {{ partial "seo/geo-faq.html" . }}
+        {{ partial "related-pages.html" . }}
       </div>
     </div>
+
+    {{ partial "landing-cta.html" . }}
   </article>
 {{ end }}
 {{ end }}

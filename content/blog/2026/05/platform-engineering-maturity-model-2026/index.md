@@ -95,4 +95,3 @@ For structured assessment with an external lens see **[Platform Readiness Assess
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~450. -->

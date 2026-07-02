@@ -229,8 +229,3 @@ For details and pricing see the **[Kubernetes consulting services page](/service
 
 *Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!--
-SEO meta description (≤155):
-"Production Kubernetes cluster setup 2026: architecture decisions (distribution, multi-tenancy, networking, storage), operational practices, common failures."
-Word count: ~2700.
--->

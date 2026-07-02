@@ -238,20 +238,3 @@ Aenix runs this as part of the **[Platform Readiness Assessment](/services/platf
 
 *Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build sovereign AI platforms for AI / GPU operators, financial services, and public-sector organizations across the EU, DACH, and Central Asia.*
 
-<!--
-SEO meta description (≤155 chars):
-"Private LLM deployment in 2026: model selection, hardware sizing, serving stack, platform, operations. Practical guide for regulated industries."
-
-OG image: 1200×630 — GPU rack + LLM token stream + jurisdictional shield
-
-Slug: /blog/2026/05/private-llm-deployment-guide/
-
-Hreflang setup (when DE locale launches):
-- en: /blog/2026/05/private-llm-deployment-guide/
-- de: /de/blog/2026/05/private-llm-deployment-guide/
-- x-default: en
-
-Word count target: 2500-3500. Actual: ~3200.
-
-Keyword cannibalization check: distinct parent topic from sovereign-ai landing and all other artifacts. No conflict.
--->

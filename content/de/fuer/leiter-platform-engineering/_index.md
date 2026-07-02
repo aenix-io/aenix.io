@@ -11,6 +11,30 @@ related_pages:
   - /de/dienstleistungen/
   - /de/produkte/
   - /de/partner/
+hide_closing_cta: true
+quick_facts:
+  - label: "Was es ist"
+    value: "mandantenfähige Internal Developer Platform (Self-Service VMs, K8s, DBs, Storage) auf Kubernetes-nativem Kern."
+  - label: "Für wen"
+    value: "Leiter / Direktoren Platform Engineering, Platform- / DevEx-Leads."
+  - label: "Lizenz"
+    value: "Apache 2.0 — keine Pro-Seat-Plattformkosten."
+  - label: "Status"
+    value: "auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026)."
+  - label: "Häufiger Fehler"
+    value: "ein Portal (Backstage) ohne echtes mandantenfähiges Backend kaufen — der Self-Service bleibt an Infra-Tickets hängen."
+quick_facts_source: "[CNCF Platforms White Paper](https://www.cncf.io/reports/), [Cozystack-Doku](https://cozystack.io)"
+faq:
+  - q: "Wie unterscheidet sich das von Backstage?"
+    a: "Backstage ist ein Entwicklerportal; es braucht eine Plattform dahinter. Cozystack ist diese Plattform — mandantenfähige Compute, K8s, Datenbanken und Storage. Backstage können Sie darauf setzen."
+  - q: "Bekommen Teams echte Isolation?"
+    a: "Ja — verschachtelte Mandanten mit Quotas und RBAC, Self-Service innerhalb der Leitplanken, ohne Cluster-Wildwuchs."
+  - q: "Build oder Buy?"
+    a: "Das Erstgespräch grenzt es ab. Tempo: IDP-Edition. Maßanzug: das Aufbau-Modell mit uns als Plattform-Bank."
+  - q: "Laufen bestehende Workloads?"
+    a: "VMs (KubeVirt) und Container auf einer Plattform, plus Managed Databases und S3-kompatibler Storage."
+  - q: "Was kostet das?"
+    a: "Apache-2.0-Kern, keine Pro-Entwickler-Lizenz. Sie zahlen Support und/oder Aufbau."
 ---
 
 <!-- BLOCK 1: HERO -->
@@ -55,15 +79,6 @@ Infrastruktur zum Produkt machen: Self-Service für VMs, Managed Kubernetes, Man
 
 ---
 
-## Auf einen Blick
-
-- **Was es ist:** mandantenfähige Internal Developer Platform (Self-Service VMs, K8s, DBs, Storage) auf Kubernetes-nativem Kern.
-- **Für wen:** Leiter / Direktoren Platform Engineering, Platform- / DevEx-Leads.
-- **Lizenz:** Apache 2.0 — keine Pro-Seat-Plattformkosten.
-- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026).
-- **Häufiger Fehler:** ein Portal (Backstage) ohne echtes mandantenfähiges Backend kaufen — der Self-Service bleibt an Infra-Tickets hängen.
-
-[Quelle: [CNCF Platforms White Paper](https://www.cncf.io/reports/), [Cozystack-Doku](https://cozystack.io)]
 
 ---
 
@@ -75,22 +90,6 @@ Infrastruktur zum Produkt machen: Self-Service für VMs, Managed Kubernetes, Man
 
 ---
 
-## FAQ
-
-**Wie unterscheidet sich das von Backstage?**
-Backstage ist ein Entwicklerportal; es braucht eine Plattform dahinter. Cozystack ist diese Plattform — mandantenfähige Compute, K8s, Datenbanken und Storage. Backstage können Sie darauf setzen.
-
-**Bekommen Teams echte Isolation?**
-Ja — verschachtelte Mandanten mit Quotas und RBAC, Self-Service innerhalb der Leitplanken, ohne Cluster-Wildwuchs.
-
-**Build oder Buy?**
-Das Erstgespräch grenzt es ab. Tempo: IDP-Edition. Maßanzug: das Aufbau-Modell mit uns als Plattform-Bank.
-
-**Laufen bestehende Workloads?**
-VMs (KubeVirt) und Container auf einer Plattform, plus Managed Databases und S3-kompatibler Storage.
-
-**Was kostet das?**
-Apache-2.0-Kern, keine Pro-Entwickler-Lizenz. Sie zahlen Support und/oder Aufbau.
 
 ---
 

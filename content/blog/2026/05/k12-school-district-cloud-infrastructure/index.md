@@ -91,4 +91,3 @@ For consortia (multi-district shared platform):
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~400. -->

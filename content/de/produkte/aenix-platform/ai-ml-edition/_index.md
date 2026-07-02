@@ -43,18 +43,6 @@ faq:
   <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
 </div>
-
----
-
-## Quick facts
-
-- **Für:** KI-lastige Organisationen, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen, KI-native Startups at scale
-- **Foundation:** Open-Source Cozystack (CNCF-Projekt, Apache 2.0)
-- **Engagement-Größe:** €500k - €3M+ Projekt; Managed-Retainer post-Deployment
-- **Time-to-Production:** 3-6 Monate für typische Inferenz-Fleet; 6-12 Monate für vollständige Inferenz + Fine-Tuning + RAG-Architektur
-- **GPU-Support:** H100, H200, L40S, A100, B100/B200 (Blackwell); CPU-only und alternative Beschleuniger (AMD MI Series, Intel Gaudi) unterstützt
-- **Architektur:** Kubernetes-nativ, Multi-Tenant-GPU-Scheduling (Tenant CRD), KubeVirt für VM-gebundene Workloads, Vector DB + Object Storage inklusive
-
 ---
 
 ## Was in der AI/ML Edition enthalten ist

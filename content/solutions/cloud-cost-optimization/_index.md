@@ -227,27 +227,6 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Is this a FinOps engagement or a cost-optimization engagement?**
-Both, with the platform-engineering layer that distinguishes structural from configurational optimization. Pure FinOps captures the configurational savings (right-sizing, reservation tuning, waste elimination); the architecture-level decisions require platform engineering. Our engagement covers both.
-
-**How does this differ from a Big-4 cloud cost engagement?**
-Big-4 engagements are usually delivered by management consultants and shaped by hyperscaler-partnership economics. Our engineers do the work, and we are not partnered with any hyperscaler. The recommendation will tell you when staying in cloud is right and when leaving is right.
-
-**Can you guarantee X% savings?**
-No, and we don't pitch percentage promises. The honest answer comes from the assessment. Our experience: well-managed estates yield 15-25% savings before architecture; mismanaged estates yield 30-50%; estates with a strong repatriation case can be substantially higher but require Phase 2 work.
-
-**Will Aenix recommend repatriation at the end?**
-Sometimes. When the math supports it and the buyer can operate the destination platform. Often, the answer is partial repatriation (selected workloads) plus optimization for the remainder. Sometimes pure optimization is right. The report names the answer for your specific case.
-
-**Can we run this under a procurement process?**
-Yes. We accept RFI / RFP through standard procurement channels in EU member states and Kazakhstan.
-
-**More questions?** See the **[cloud cost optimization strategies guide](/blog/2026/05/cloud-cost-optimization-strategies-2026/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

@@ -199,21 +199,6 @@ Delivered by EU-based engineers with regulator-dialog experience. Same engineers
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Has NIS2 transposition deadline passed?**
-Yes — for most member states the 17 October 2024 transposition deadline has passed. Some member states' transpositions remain delayed; competent authorities are operational.
-
-**Is there a NIS2 certification?**
-No. NIS2 is outcome-based; specific schemes (e.g., national cybersecurity certifications) may be referenced in implementing rules but there's no single NIS2 stamp.
-
-**How does NIS2 differ from DORA?**
-DORA is sector-specific (financial services); NIS2 is sectoral but broader. Many entities are in scope of both — overlapping but not identical requirements. The 28-day engagement variant maps both.
-
-**More questions?** See **[NIS2 requirements article](/blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: CTA -->

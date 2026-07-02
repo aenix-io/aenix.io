@@ -84,4 +84,3 @@ Standard **[Platform Readiness Assessment](/services/platform-readiness-assessme
 
 *Aenix is the team behind Cozystack.*
 
-<!-- Word count: ~400. -->

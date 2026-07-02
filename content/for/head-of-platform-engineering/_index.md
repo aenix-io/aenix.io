@@ -12,6 +12,7 @@ related_pages:
   - /products/aenix-platform/idp-edition/
   - /services/platform-engineering/
   - /products/cozystack/
+hide_closing_cta: true
 ---
 
 <!-- BLOCK 1: HERO -->

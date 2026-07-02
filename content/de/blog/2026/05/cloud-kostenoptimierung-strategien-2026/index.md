@@ -67,10 +67,9 @@ Nach 6-12 Monaten disziplinierter konfigurationeller Arbeit flacht die Einsparku
 
 ## Wie geht es weiter?
 
-**[Platform Readiness Assessment](/services/platform-readiness-assessment/)** mit Cost-Schwerpunkt oder **[Cloud Repatriation](/solutions/cloud-repatriation/)** für architektonische Änderung.
+**[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Cost-Schwerpunkt oder **[Cloud Repatriation](/solutions/cloud-repatriation/)** für architektonische Änderung.
 
 ---
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~300. -->

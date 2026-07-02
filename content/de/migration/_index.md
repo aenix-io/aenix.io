@@ -2,12 +2,16 @@
 title: "Migrations-Hubs"
 description: "Aenix-Migrations-Hubs — Strategie, Architektur und Kohorten-Patterns für Migration zu Ænix Platform von VMware, OpenStack, Proxmox, CloudStack."
 language: "de"
+page_type: "flag-page"
+cascade:
+  page_type: "migration-hub"
+hreflang_en: /migration/
 ---
 
 **Praktische Migrations-Patterns für den Wechsel zu Ænix Platform von existierenden Plattformen. Produktisiertes Migrations-Tooling für ISP Edition; Engineering-getriebene Migration für Enterprise + Public Cloud Edition Deployments. Kohorten-basiert; Parallel-Run-validiert.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 

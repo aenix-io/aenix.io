@@ -186,24 +186,6 @@ Entry tier — **Pure Cozystack with Ænix Support** — for product teams runni
 
 <!-- BLOCK 7: FAQ -->
 
-## FAQ
-
-**Cozystack vs OpenStack vs OpenShift?**
-See **[Cozystack architecture article](/blog/2026/05/cozystack-introduction-architecture/)** for detailed comparison. Briefly: Cozystack is Kubernetes-native (vs OpenStack's older architecture); open-source (vs OpenShift's Red Hat subscription); multi-tenant by design (vs vanilla Kubernetes); modern foundation (vs legacy hypervisor stacks).
-
-**Can we deploy Cozystack air-gapped?**
-Yes. Documented air-gap install workflow. Suitable for classified, healthcare-restricted, defence-adjacent.
-
-**What hardware does Cozystack support?**
-Commodity x86 servers. ARM support emerging. Bare metal preferred; VMs hosting Cozystack also possible. Storage: LINSTOR (DRBD), Rook-Ceph, vendor SAN supported.
-
-**Does Aenix provide commercial support globally?**
-Aenix-direct support: EU + DACH + Central Asia time zones. Other regions covered via partner network or extended-hours arrangements.
-
-**More questions?** See **[cozystack.io](https://cozystack.io)** for documentation, or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 7 -->
-
 ---
 
 <!-- BLOCK 8: BOTTOM CTA -->

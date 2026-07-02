@@ -117,7 +117,8 @@
 {{/* SEO extensions stylesheet (badge / callout / card / 404)        */}}
 {{/* ============================================================ */}}
 
-<link rel="stylesheet" href="{{ "css/aenix-seo-extensions.css" | absURL }}" />
+{{ $seoCss := resources.Get "css/aenix-seo-extensions.css" | fingerprint }}
+{{ with $seoCss }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
 
 {{/* ============================================================ */}}
 {{/* JSON-LD                                                         */}}

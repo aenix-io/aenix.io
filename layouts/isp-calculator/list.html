@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{/*
+  Full-bleed host page for the ISP unit-economics calculator SPA.
+  The app is a dense dashboard, too wide for the normal 800px content column,
+  so it is embedded as a full-viewport-width iframe from /isp-calculator-app/
+  (vendored production build of the aenix-io/roi-calculator repo).
+*/}}
+<div class="isp-calc-frame-wrap">
+  <div class="container isp-calc-intro">
+    <h1 class="page-hero-title" style="font-size:1.6rem;margin:0 0 .35rem">{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-hero-subtitle" style="margin:0 0 .75rem">{{ . }}</p>{{ end }}
+    <p style="margin:0"><a class="cta-secondary" href="/roi-calculator/">← All ROI &amp; TCO calculators</a>
+      <a class="cta-primary" href="/isp-calculator-app/" target="_blank" rel="noopener" style="margin-left:.5rem">Open full-screen ↗</a></p>
+  </div>
+  <iframe class="isp-calc-frame" src="/isp-calculator-app/" title="{{ .Title }}"
+    loading="lazy" style="width:100%;height:calc(100vh - 80px);min-height:900px;border:0;display:block"></iframe>
+</div>
+{{ end }}

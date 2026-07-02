@@ -259,35 +259,3 @@ For an infrastructure leader in 2026, the practical answer is to treat DORA-alig
 
 *Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run DORA-aligned platform readiness assessments and platform engineering programs for financial-services organizations across the EU.*
 
-<!--
-SEO meta description (≤155 chars):
-"DORA compliance for cloud infrastructure in 2026: what financial entities must demonstrate, where current setups fall short, a control-level checklist."
-
-OG image: 1200×630 — DORA / EU shield + cloud architecture grid
-
-Slug: /blog/2026/05/dora-compliance-cloud-infrastructure/
-
-Hreflang setup (when DE locale launches):
-- en: /blog/2026/05/dora-compliance-cloud-infrastructure/
-- de: /de/blog/2026/05/dora-compliance-cloud-infrastruktur/
-- x-default: en
-
-Canonical: self.
-
-Internal-link strategy:
-- Article → /services/platform-readiness-assessment/ — primary CTA destination
-- Article → /solutions/data-sovereignty/ — adjacent trigger
-- Article → /products/cozystack/ — underlying tech
-- Future: /solutions/dora-compliance/ landing — when built
-
-Word count target: 2500-3500. Actual: ~3100. On target.
-
-Keyword cannibalization check:
-- This article: "dora compliance" parent
-- Platform Readiness Assessment article: "cloud assessment framework" + "cloud migration assessment" parent — DIFFERENT
-- Platform Readiness Assessment landing: "cloud readiness assessment" parent — DIFFERENT
-- VMware alternative landing: "vmware alternative" parent — DIFFERENT
-- VMware alternative article: "vmware replacement" parent — DIFFERENT
-
-No conflicts. Each artifact owns a clearly distinct parent topic.
--->

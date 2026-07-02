@@ -154,5 +154,3 @@ For platform-first engagement see **[Internal Developer Platform services](/serv
 
 *Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "Internal Developer Portal vs Platform — and Where Backstage Fits | Aenix"
-Word count: ~1300. -->

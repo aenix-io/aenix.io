@@ -3,6 +3,7 @@ title: "Ænix Platform Enterprise Edition"
 description: "Ænix Platform Enterprise Edition: souveräne Cloud für regulierte Unternehmen. DORA-/NIS2-konform, Multi-DC, eine Control Plane über VMware und OpenShift."
 type: "page"
 language: "de"
+hreflang_en: /products/aenix-platform/enterprise-edition/
 direct_answer: |
   **Die Ænix Platform Enterprise Edition ist eine private und hybride souveräne Cloud für regulierte Unternehmen — Banken, Versicherungen, öffentliche Verwaltung, Telco und Gesundheitswesen. Sie basiert auf dem Open-Source-Projekt Cozystack (CNCF, Apache 2.0) und bringt VMware, OpenNebula und OpenShift unter eine einzige Kubernetes-native Control Plane, statt sie zu ersetzen. Aenix liefert vorvalidierte DORA- und NIS2-Architekturkontrollen, kundenkontrollierte Verschlüsselungsschlüssel auf jeder Datenschicht, audit-bereites Logging via VictoriaLogs, Multi-DC-Failover sowie Air-Gap-Betrieb. Engagements umfassen Discovery, Readiness Assessment, Pilot und vollständigen Multi-DC-Build samt Enterprise-SLA, 24/7-Support und Engineering-Training.**
 quick_facts:
@@ -38,20 +39,12 @@ faq:
 **Private und hybride souveräne Cloud für regulierte Unternehmen. Sicher, automatisiert und einfach erweiterbar. Gebaut für Multi-DC-Setups, DORA / NIS2-Compliance und Enterprise-Integrationen. Eine Control Plane, die VMware, OpenNebula, OpenShift und mehr verbindet — turnkey Cloud-in-a-Box auf kundenkontrollierter Hardware. Inklusive Bildung und Training.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
 </div>
 
 ---
 
-## Quick facts
-
-- **Für:** Regulierte Unternehmen — Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen, regulierte Industrie / Energieversorger
-- **Foundation:** Open-Source Cozystack (CNCF-Projekt, Apache 2.0)
-- **Engagement-Größe:** €500k - €5M+ mehrjährige Plattform-Builds
-- **Time-to-Production:** 9-18 Monate Full Estate; 3-6 Monate Pilot-Phase
-- **Architektur:** Kubernetes-nativ, Multi-DC, integriert mit existierendem VMware / OpenNebula / OpenShift, kundenkontrollierte Schlüssel, audit-bereites Logging
-- **Compliance-Posture:** DORA / NIS2-konform by Design; ISO 27001 / SOC 2 Alignment; Souveräne-Deployment-Optionen
 
 ---
 
@@ -68,8 +61,8 @@ Enterprise Edition ist gebaut für **Koexistenz**, nicht Rip-and-Replace. Existi
 ### DORA-Architekturkontrollen
 
 - Kundenkontrollierte Verschlüsselungsschlüssel (Artikel 21(2)(h)) auf jeder Datenschicht
-- Audit-bereites Logging via VictoriaLogs mit unveränderbarem Backend (Artikel 21(2)(i) + Artikel 23)
-- Multi-Tenant Tenant CRD nach ICT-Risikoklassifizierung (Artikel 21(2)(a))
+- Audit-bereites Logging via VictoriaLogs mit unveränderbarem Backend (Artikel 21(2)(i) + Artikel 17–19)
+- Multi-Tenant CRD nach ICT-Risikoklassifizierung (Artikel 21(2)(a))
 - Getestete Exit-Mechanik (Artikel 28(7)(c))
 - Lieferantentransparenz zur zweiten Stufe (Artikel 28(3))
 
@@ -79,7 +72,7 @@ Enterprise Edition ist gebaut für **Koexistenz**, nicht Rip-and-Replace. Existi
 
 - Artikel 21 Cybersicherheits-Risikomanagement-Maßnahmen über 10 Kontrollbereiche
 - Artikel 23 Vorfallhandhabung + Reporting-Templates aligniert mit 24h / 72h / 1-Monat-Timelines
-- Artikel 30 Coordinated Vulnerability Disclosure aligniert
+- Artikel 12 Coordinated Vulnerability Disclosure aligniert
 - Tenant CRD mit NetworkPolicy / Cilium für Segmentierung
 
 [NIS2-Compliance-Services →](/de/loesungen/nis2-compliance/) | [Kostenlose NIS2-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/)
@@ -96,7 +89,7 @@ Verschlüsselungsschlüssel beim Kunden auf jeder Schicht — Primary Store, Rep
 
 Unveränderbarer, exportierbarer, regulator-kompatibler Audit-Trail. Integration mit Customer-SIEM. Long-Tail-Retention erfüllt längste anwendbare regulatorische Anforderung (oft 5+ Jahre).
 
-### Multi-Tenant Tenant CRD
+### Multi-Tenant CRD
 
 Tenant CRD mit Quotas / RBAC / Observability per Workload. Tenant-Grenze erzwungen auf Network-, Identity-, Storage-, Observability-Schichten — nicht nur Namespace.
 
@@ -159,33 +152,16 @@ Anonymisierte Phrasierung: "Tier-1-europäische-Bank-Engagement unter DORA-Scope
 
 ---
 
-## Häufige Fragen
-
-### Wie unterscheidet sich Enterprise Edition vom Selbstbetrieb von Open-Source-Cozystack?
-
-Cozystack liefert die Kubernetes-native Multi-Tenant-Cloud-Plattform-Foundation. Enterprise Edition ergänzt: vorvalidierte DORA / NIS2-Architektur-Bundles, Multi-DC-Operations-Runbook, kundenverwaltete Verschlüsselung auf jeder Schicht (inkl. Backups + Observability), audit-bereiter Logging-Stack, Hybrid-Integrations-Patterns mit VMware / OpenNebula / OpenShift, ISO 27001 / SOC 2 Alignment-Support, Enterprise-SLA + 24/7 Support, Engineering-Training inklusive.
-
-### Wie unterscheidet sich Enterprise Edition von Public Cloud Edition?
-
-Enterprise Edition ist für regulierte Unternehmen, die Cloud intern konsumieren (single-organization use, oft Hybrid-Integration mit existierendem VMware / OpenNebula / OpenShift). Public Cloud Edition ist für Betreiber, die Cloud als Produkt verkaufen (Public Cloud, große Bank-interne Cloud at scale, große Telco). Gleiche Cozystack-Foundation; unterschiedliches Feature-Bundle.
-
-### Kann Enterprise Edition mit existierendem VMware / OpenStack / OpenShift koexistieren?
-
-Ja. Designed für Koexistenz — Enterprise Edition Control Plane integriert mit existierenden VMware Cloud Foundation, OpenStack, OpenNebula, OpenShift Estates. Graduelle Konsolidierung im Workload-Tempo. Viele Bank-Deployments laufen jahrelang hybrid.
-
-### Wird Air-Gap unterstützt?
-
-Ja. Enterprise Edition unterstützt Air-Gapped Deployments mit Offline-Updates über signierte Bundles. Genutzt in Verteidigung, souveräner Cloud, isolierten Industrie-Umgebungen.
 
 ---
 
-## Wie starten
+## Architektur-Review buchen
 
-Buchen Sie einen 30-Minuten-Discovery-Call. Wir besprechen Ihren regulatorischen Kontext (DORA / NIS2 / sektoral), aktuelle Architektur, Souveränitäts-Anforderungen und Enterprise Edition Fit.
+Erzählen Sie uns von Ihrem regulatorischen Kontext (DORA / NIS2 / sektoral), Ihrer aktuellen Architektur und Ihren Souveränitäts-Anforderungen — wir richten ein fokussiertes Architektur-Review mit einem Aenix-Engineer ein und bestätigen den Enterprise Edition Fit.
 
-<div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
-</div>
+{{< pipedrive-form type="demo" >}}
+
+Lieber ein kürzerer erster Schritt? [30-Minuten-Discovery-Call buchen](/de/kontakt/) stattdessen.
 
 ---
 

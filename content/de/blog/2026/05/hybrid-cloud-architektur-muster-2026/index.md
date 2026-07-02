@@ -75,10 +75,9 @@ KI-Training und Inferenz auf dediziertem GPU (Private Cloud); Rest des Geschäft
 
 ## Wie geht es weiter?
 
-**[Platform Readiness Assessment](/services/platform-readiness-assessment/)** mit Hybrid-Schwerpunkt.
+**[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Hybrid-Schwerpunkt.
 
 ---
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~400. -->

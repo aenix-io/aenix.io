@@ -85,10 +85,9 @@ Alle drei kümmern sich um:
 
 ## Wie geht es weiter?
 
-**[Platform Readiness Assessment](/services/platform-readiness-assessment/)** für eine strukturierte Bewertung.
+**[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** für eine strukturierte Bewertung.
 
 ---
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~400. -->

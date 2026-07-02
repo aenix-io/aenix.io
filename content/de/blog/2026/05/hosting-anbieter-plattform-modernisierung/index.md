@@ -83,4 +83,3 @@ Break-even: erste 50-100 zahlende Kunden.
 
 *Aenix ist das Team hinter Cozystack.*
 
-<!-- Word count: ~350. -->

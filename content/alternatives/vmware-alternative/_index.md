@@ -249,24 +249,6 @@ No per-CPU, per-VM, or per-core meter. Your spend is hardware + Aenix engagement
 
 <!-- BLOCK 11: FAQ (compact — 4 PAA questions only, full FAQ lives in /blog article) -->
 
-## FAQ
-
-**What is the best alternative for VMware?**
-For enterprise on-prem virtualization, Cozystack replaces the whole VCF stack with one open-source platform. Other commonly cited alternatives: Nutanix AHV, Proxmox VE, Scale Computing HC3, OpenStack, OpenShift Virtualization, Azure Stack HCI.
-
-**Why is VMware going away?**
-Broadcom's 2023 acquisition replaced perpetual licensing with subscription-only VCF bundles, drove price increases of 2× to 5× on renewal, and forced bundling — making VMware economically unviable for many customers.
-
-**What is replacing ESXi?**
-KubeVirt is the most-adopted open-source replacement, used by Cozystack, Platform9, and OpenShift Virtualization. Other paths: KVM/libvirt directly (Proxmox, OpenStack), Nutanix AHV, Hyper-V.
-
-**Who is VMware's biggest competitor?**
-There is no single biggest — different competitors win different segments. For service providers and sovereign-cloud buyers (Cozystack's segment), the realistic shortlist is Cozystack, OpenStack, and Nutanix.
-
-**More questions** about Windows VMs, vCD migration, hardware reuse, GPU support, and migration timelines: see the **[full VMware replacement guide on our blog](/blog/2026/05/vmware-replacement-after-broadcom/)** or **[talk to us](#contact)**.
-
-<!-- /BLOCK 11 -->
-
 ---
 
 <!-- BLOCK 12: BOTTOM CTA -->

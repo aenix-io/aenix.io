@@ -199,21 +199,6 @@ Time-and-materials or fixed-scope. Phase 2 typically 1-6 months.
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Do you only work with Cozystack?**
-No. We extend whatever Kubernetes distribution fits your case. Cozystack is recommended where multi-tenancy and virtualization matter; OpenShift, vanilla Kubernetes, or vendor-led distributions fit other cases.
-
-**How is this different from a managed Kubernetes service (EKS / AKS / GKE)?**
-Managed Kubernetes services run the control plane for you; consulting is about your architecture and operations decisions on top. The two are complementary.
-
-**Do you provide on-call / 24×7 support after implementation?**
-Yes — under a managed engagement. Standard implementation engagement leaves your team operating with documented runbooks; managed engagement extends Aenix as on-call.
-
-**More questions?** See **[the production cluster setup guide](/blog/2026/05/kubernetes-cluster-setup-production-architecture/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: CTA -->

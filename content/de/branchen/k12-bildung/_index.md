@@ -3,6 +3,7 @@ title: "Cloud-Plattform für K-12-Bildung — wenn souveräne Infrastruktur für
 description: "K-12-Bildung hat andere Infrastrukturanforderungen als Universitäten. Schulträger handhaben Schülerdaten unter strengen Residenz- / Datenschutzregelungen..."
 related_pages: ["/de/branchen/universitaeten", "/de/loesungen/data-sovereignty"]
 language: "de"
+hreflang_en: /industries/education-k12/
 direct_answer: |
   **Eine Cloud-Plattform für K-12-Bildung ist souveräne, mandantenfähige Infrastruktur für große Schulträger, Bildungsministerien und EdTech-Plattformen, die Schülerdaten unter DSGVO und nationalen Schulgesetzen mit strengen Datenresidenz-Anforderungen verarbeiten. Die meisten Schulträger sind durch Hyperscaler-managed-Services besser bedient; Cozystack passt für die Ausnahmefälle — große Schulträger mit Souveränitäts-Mandat, EdTech-Anbieter und Schulträger-Konsortien. Aenix baut auf Cozystack (Apache 2.0, CNCF-Sandbox), das VMs und Container über eine Kubernetes-API mit KubeVirt vereint, Tenant-CRD-Mandantenfähigkeit für Schulträger- und Schul-Ebenen bietet und souveränitätspflichtige Schülerdatenverarbeitung im großen Maßstab ermöglicht.**
 quick_facts:
@@ -35,31 +36,49 @@ faq:
     a: "Cozystack kombiniert KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für replizierten Storage. Die Tenant-CRD liefert Mandantenfähigkeit. Das Projekt ist Apache 2.0 lizenziert und CNCF-Sandbox-Projekt."
 ---
 
-**K-12-Bildung hat andere Infrastrukturanforderungen als Universitäten. Schulträger handhaben Schülerdaten unter strengen Residenz- / Datenschutzregelungen (DSGVO + nationale Regeln, Schulgesetze), bedienen oft 10.000-100.000+ Schüler. Die meisten Schulträger sind durch Hyperscaler-managed-Services gut bedient. Die Ausnahmefälle — große Schulträger mit Souveränitäts-Mandaten, EdTech-Plattformen, Schulträger-Konsortien — sind, wo Cozystack passen kann.**
+**K-12-Bildung hat andere Infrastrukturanforderungen als Universitäten. Schulträger handhaben Schülerdaten unter strengen Residenz- / Datenschutzregelungen (FERPA in den USA, DSGVO + nationale Regeln in der EU), bedienen oft 10.000-100.000+ Schüler über viele Schulen hinweg und arbeiten in langen Budgetzyklen. Die meisten Schulträger sind durch Hyperscaler-managed-Services gut bedient. Die Ausnahmefälle — große Schulträger mit Souveränitäts-Mandaten, KI-/EdTech-Plattformen, die Schülerdaten on-premise verarbeiten, Schulträger-Konsortien, die geteilte Infrastruktur aufbauen — sind dort, wo Cozystack passen kann.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveränitätspflichtige Schülerdatenverarbeitung im großen Schulträger- / Bildungsministerium-Maßstab.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveränitätspflichtige Schülerdatenverarbeitung im Maßstab großer Schulträger / Bildungsministerien.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-secondary" href="/blog/2026/05/k12-school-district-cloud-infrastructure/">K-12-Cloud-Architektur →</a>
 </div>
 
 ---
 
 ## Wann Cozystack für K-12 passt
 
-- Großer Schulträger mit Schülerdaten-Souveränitäts-Druck
-- Multi-Tenant (Schulträger zentral + Schul-Ebene)
-- EdTech-Plattform-Entwicklung
-- KI / Analytics auf Schülerdaten
+- **Großer Schulträger / regionales Konsortium** mit Souveränitäts-Druck bei Schülerdaten
+- **Multi-Tenant-Modell** — Schulträger zentral + Schul-Ebene + Klassenzimmer-Ebene isoliert
+- **EdTech-Plattform-Entwicklung** — Schulträger bauen ihr eigenes LMS / SIS / Analytics
+- **KI / Analytics auf Schülerdaten** — wo Hyperscaler-Endpunkte nicht akzeptabel sind
+- **Beschaffungspflichtige Souveränität** — einige EU-Mitgliedstaaten + Nicht-EU-Jurisdiktionen
 
-Für die meisten K-12 sind Hyperscaler-managed-Services + EdTech-Standards besser. Wir sind explizit, wenn das so ist.
+Für die meisten K-12-Schulträger sind Hyperscaler-managed-Services + Standard-EdTech-Tools der bessere Fit. Wir sind explizit, wenn das der Fall ist.
 
 ---
 
-/contact/
+## Was wir für passende K-12-Fälle abdecken
+
+- **Multi-Tenant-Schulträger-Plattform** — zentraler Betrieb + Isolation pro Schule
+- **FERPA- / DSGVO-konforme Architektur** — Verschlüsselung + Audit + Residenz
+- **KI-Infrastruktur** für Analytics, Lernmuster-KI auf lokalen Daten
+- **Schülerdaten-Residenz** auf jeder Ebene
+- **Planung für lange Budgetzyklen** — die Apache-2.0-Plattform passt zu den Budgetzyklen von Schulträgern
+
+---
+
+## Wie Sie starten
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+</div>
+
+- **[Artikel zur Cloud-Infrastruktur für K-12-Schulträger](/blog/2026/05/k12-school-district-cloud-infrastructure/)**
+- **[Branchenseite Universitäten](/de/branchen/universitaeten/)** — angrenzend
+- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Schülerdatenschutz
 
 ---
 
 *Aenix ist das Team hinter Cozystack.*
-
-<!-- Niche audience. Word count: ~250. -->

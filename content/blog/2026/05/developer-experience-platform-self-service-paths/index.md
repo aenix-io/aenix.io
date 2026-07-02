@@ -144,5 +144,3 @@ For details see **[developer self-service services](/solutions/developer-self-se
 
 *Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "Developer Experience Platform — Self-Service Paths That Actually Work | Aenix"
-Word count: ~1300. -->

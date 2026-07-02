@@ -235,27 +235,6 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
-## FAQ
-
-**Is sovereign AI the same as "private AI"?**
-"Private AI" is used by both vendors offering SaaS endpoints with privacy clauses and vendors offering true on-prem deployments. Sovereign AI specifically requires the model running on customer hardware, the data staying in the customer perimeter, and the platform operated under customer governance. We use the more specific term to avoid ambiguity.
-
-**Which open-weight LLMs do you support?**
-The current production-ready landscape: Llama, Mistral, Qwen, DeepSeek, Phi, Gemma, and several specialized models (code, vision, embeddings). Specific model selection happens during the assessment based on data class, language requirements, and inference economics.
-
-**What about training, not just inference?**
-Both. Inference is the more common entry point — most regulated organizations start with inference and add fine-tuning later. Full pre-training of frontier models is rare in this segment; fine-tuning of open-weight models is common.
-
-**Will Aenix recommend Cozystack at the end?**
-Where Cozystack fits the AI platform requirements better than the alternative, the report explains why with named architectural attributes. For some specific cases — e.g., a customer already deeply on a different Kubernetes platform — we may recommend extending the existing platform rather than replacing it.
-
-**What about hyperscaler "sovereign cloud" AI services?**
-For some workloads they fit. For others, the service plane remaining in the hyperscaler's control fails the substantive sovereignty requirement. The assessment makes the call per workload.
-
-**More questions?** See the **[private LLM deployment guide](/blog/2026/05/private-llm-deployment-guide/)** or **[talk to us](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->

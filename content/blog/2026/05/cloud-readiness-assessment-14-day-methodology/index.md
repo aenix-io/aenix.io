@@ -236,23 +236,3 @@ If your trigger is a specific regulator or cost pressure, the dedicated solution
 
 *Aenix runs platform readiness assessments and platform engineering programs across the EU and Central Asia. We are the company behind Cozystack, a CNCF Project, Kubernetes Certified Distribution.*
 
-<!--
-SEO meta description (≤155 chars):
-"Cloud readiness assessment methodology — 14 days, 4 workstreams, 3 outcomes. What's actually inspected, what the report contains, common findings."
-
-OG image: 1200×630 — methodology timeline visual
-
-Slug: /blog/2026/05/cloud-readiness-assessment-14-day-methodology/
-
-Hreflang setup (when DE locale launches):
-- en: /blog/2026/05/cloud-readiness-assessment-14-day-methodology/
-- de: /de/blog/2026/05/cloud-readiness-assessment-methodik/
-- x-default: en
-
-Internal-link strategy:
-- Landing → article: "see methodology deep-dive on our blog"
-- Article → landing: "Want the short version? Services landing page" (footer)
-- No canonical between them.
-
-Word count target: 2500-3500. Actual: ~3300. On target.
--->
