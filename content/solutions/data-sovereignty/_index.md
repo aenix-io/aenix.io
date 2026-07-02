@@ -45,7 +45,6 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-
 **Data sovereignty is no longer a procurement clause. DORA, NIS2, GDPR, sectoral data-residency rules, and explicit sovereign-cloud mandates from EU member states and non-EU jurisdictions all converge on the same operational requirement: prove, with evidence, that your data lives where the regulator says it must — at every layer, including backups, observability, and CI/CD artifacts.**
 
 Aenix runs a structured engagement for organizations that need to take a sovereignty position from claim to demonstrable architecture. Output: a control-level map of where your data actually lives today, where the gaps are, and what sovereignty-by-design looks like for your stack.
@@ -60,6 +59,7 @@ Aenix runs a structured engagement for organizations that need to take a soverei
 <div class="trust-badges">
 EU-based engineers · Apache 2.0 platform · Written deliverables · Mutual NDA at kickoff
 </div>
+
 
 <!-- /BLOCK 1 -->
 
@@ -166,6 +166,10 @@ Delivered by Aenix engineers — the team behind Cozystack — across the EU, DA
 
 ---
 
+{{< factoid number="14 days" label="from sovereignty claim to a demonstrable data-residency map, key-custody review, and remediation plan" >}}
+
+---
+
 <!-- BLOCK 7: TIMELINE -->
 
 ## What the engagement looks like
@@ -227,6 +231,9 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
+
+<!-- /BLOCK 10 -->
+
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
@@ -236,7 +243,9 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 Free. No prep needed. We confirm fit, narrow the sovereignty scope to your binding regulators or clauses, and tell you whether the 14-day or the 28-day variant matches your situation.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+</div>
 
 Or read more:
 - **[Data residency requirements 2026](/blog/2026/05/data-residency-requirements-2026/)** — practical guide
@@ -255,18 +264,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO meta tags:
-- title: "Data Sovereignty for Cloud Infrastructure — Demonstrable Jurisdictional Control | Aenix"
-- description: "Data sovereignty engagement: data-residency map, key custody, supplier-chain transparency, audit-readiness. EU engineers, no hyperscaler bias."
-- og:image: 1200×630 — sovereignty visual (EU flag + cloud architecture)
-- canonical: this URL
-- hreflang: en (default), de
-
-JSON-LD:
-- WebPage / BreadcrumbList: Home → Solutions → Data Sovereignty
-- Service schema: name="Data sovereignty engagement", provider=Aenix
-- FAQPage from BLOCK 10
-
-Word count: 900-1100. Actual: ~1080.
--->

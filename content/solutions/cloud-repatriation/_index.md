@@ -44,7 +44,6 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-
 **The Broadcom Private Cloud Outlook 2025 found 69% of organizations are evaluating cloud repatriation, and 53% now prioritize private cloud for new workloads. The reasons vary — runaway cost, regulator pressure, AI data residency, predictable performance — but the architectural work is the same: identify the right workloads to move, run the move without breaking the application, and end up with a platform you can actually operate.**
 
 Aenix runs the technical engagement that turns "we need to leave AWS / Azure / GCP" from a board statement into a working plan with workloads ranked, costs modelled, and a destination architecture that won't reinvent the public cloud the wrong way.
@@ -64,6 +63,9 @@ No hyperscaler bias · Honest TCO modelling · Engineers, not consultants · Apa
 
 ---
 
+
+---
+
 <!-- BLOCK 2: WHO THIS IS FOR -->
 
 ## Who repatriation actually fits
@@ -77,6 +79,8 @@ Repatriation is not for everyone. The teams that benefit most from a structured 
 - **An internal platform-engineering function** (or one being stood up) — repatriation requires somebody to run the destination platform afterwards.
 
 If your situation matches at least three of those, repatriation deserves a structured look. If you have a small IT team running a handful of services, the answer is almost always "stay in public cloud and tune your spend."
+
+{{< factoid number="84%" label="of financial-services firms had adjusted their cloud strategy because of regulatory developments" source="LSEG Global Cloud Survey 2025" >}}
 
 <!-- /BLOCK 2 -->
 
@@ -147,6 +151,8 @@ The repatriation engagement runs as part of our **[Platform Readiness Assessment
 - **Phase 2 implementation roadmap** — what an Aenix-delivered Phase 2 would do, in what sequence, with effort estimates.
 
 Delivered by Aenix engineers who have built and operated production platforms for service providers, banks, and AI operators across the EU and Central Asia. We are not commercially aligned with any hyperscaler, and the report's bias is toward what we can stand behind technically.
+
+{{< factoid number="30-60%" label="better unit economics on-prem or in private cloud for steady-state workloads, once egress, idle resources, and underused commitments are counted honestly" >}}
 
 <!-- /BLOCK 5 -->
 
@@ -225,6 +231,11 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
+
+**More questions?** See the **[reverse cloud migration playbook](/blog/2026/05/reverse-cloud-migration-playbook/)** or **[talk to us](#discovery)**.
+
+<!-- /BLOCK 10 -->
+
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
@@ -234,7 +245,9 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 Free. No prep needed. We confirm fit, identify your top cost concerns, and tell you whether the 14-day or 28-day variant matches your situation.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+</div>
 
 Or read more:
 - **[Reverse cloud migration playbook](/blog/2026/05/reverse-cloud-migration-playbook/)** — the long-form playbook
@@ -252,18 +265,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO meta tags:
-- title: "Cloud Repatriation — Exit Public Cloud Without Breaking the Application | Aenix"
-- description: "Cloud repatriation engagement: honest TCO, workload ranking, destination architecture, cutover sequencing. EU engineers, no hyperscaler bias."
-- og:image: 1200×630 — repatriation arrow + cost trend chart
-- canonical: this URL
-- hreflang: en (default), de
-
-JSON-LD:
-- WebPage / BreadcrumbList: Home → Solutions → Cloud Repatriation
-- Service schema: name="Cloud repatriation engagement", provider=Aenix
-- FAQPage from BLOCK 10
-
-Word count: 900-1100. Actual: ~1080.
--->

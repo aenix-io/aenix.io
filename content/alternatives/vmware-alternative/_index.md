@@ -44,7 +44,6 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-
 **Replace vSphere, vCenter, vSAN, NSX, and the rest of VCF with one Kubernetes-native platform on your own bare metal — no per-CPU licensing, no Broadcom renewal cliff, no US-vendor lock-in.**
 
 Cozystack is a CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Aenix builds it, operates it in production with hosting providers and banks, and runs the migration end-to-end.
@@ -61,6 +60,9 @@ CNCF Project · Kubernetes Certified Distribution · OpenSSF Best Practices · A
 </div>
 
 <!-- /BLOCK 1 -->
+
+---
+
 
 ---
 
@@ -103,6 +105,8 @@ DORA, NIS2, and on-prem mandates make a closed US hypervisor a documented operat
 KubeVirt, Cilium, LINSTOR, and Flux ship faster as community projects than Broadcom can match in the open.
 
 </div>
+
+{{< factoid number="2–5×" label="renewal price increases observed on VMware VCF bundles after the Broadcom acquisition" >}}
 
 <!-- /BLOCK 3 -->
 
@@ -159,12 +163,45 @@ Two layers need redesign rather than 1:1 mapping: **networking** (Cilium ≠ NSX
 
 ## Migration path — six steps
 
-1. **Discover** — vSphere/VCF inventory, dependencies, workload buckets
-2. **Deploy in parallel** — Cozystack on new or repurposed hardware
-3. **Migrate VMs** — KubeVirt CDI + dedicated migration scripts, Windows VM cleanup automated
-4. **Cut over networking and storage** — Cilium policy parity, LINSTOR/Ceph import
-5. **Validate and cut over DR** — Velero playbook replaces SRM
-6. **Decommission VMware** — repurpose hardware as licenses lapse
+<div class="engagement-steps">
+
+  <div class="engagement-step">
+    <div class="engagement-step__number">1</div>
+    <h3 class="engagement-step__title">Discover</h3>
+    <p class="engagement-step__body">vSphere/VCF inventory, dependencies, workload buckets.</p>
+  </div>
+
+  <div class="engagement-step">
+    <div class="engagement-step__number">2</div>
+    <h3 class="engagement-step__title">Deploy in parallel</h3>
+    <p class="engagement-step__body">Cozystack on new or repurposed hardware.</p>
+  </div>
+
+  <div class="engagement-step">
+    <div class="engagement-step__number">3</div>
+    <h3 class="engagement-step__title">Migrate VMs</h3>
+    <p class="engagement-step__body">KubeVirt CDI + dedicated migration scripts, Windows VM cleanup automated.</p>
+  </div>
+
+  <div class="engagement-step">
+    <div class="engagement-step__number">4</div>
+    <h3 class="engagement-step__title">Cut over networking and storage</h3>
+    <p class="engagement-step__body">Cilium policy parity, LINSTOR/Ceph import.</p>
+  </div>
+
+  <div class="engagement-step">
+    <div class="engagement-step__number">5</div>
+    <h3 class="engagement-step__title">Validate and cut over DR</h3>
+    <p class="engagement-step__body">Velero playbook replaces SRM.</p>
+  </div>
+
+  <div class="engagement-step">
+    <div class="engagement-step__number">6</div>
+    <h3 class="engagement-step__title">Decommission VMware</h3>
+    <p class="engagement-step__body">Repurpose hardware as licenses lapse.</p>
+  </div>
+
+</div>
 
 OpenStack, CloudStack, and Proxmox migrations follow the same playbook with different image-import and network-mapping steps.
 
@@ -241,13 +278,16 @@ The Cozystack platform is open source and free to run. Aenix offers:
 
 No per-CPU, per-VM, or per-core meter. Your spend is hardware + Aenix engagement.
 
-
-
 <!-- /BLOCK 10 -->
 
 ---
 
-<!-- BLOCK 11: FAQ (compact — 4 PAA questions only, full FAQ lives in /blog article) -->
+<!-- BLOCK 11: FAQ (rendered from frontmatter faq: — single source of truth) -->
+
+
+More questions about Windows VMs, vCD migration, hardware reuse, GPU support, and migration timelines: see the **[full VMware replacement guide on our blog](/blog/2026/05/vmware-replacement-after-broadcom/)** or **[talk to us](#contact)**.
+
+<!-- /BLOCK 11 -->
 
 ---
 
@@ -267,8 +307,6 @@ Deeper inventory, 4-6 week engagement, full migration plan with timeline, budget
 Run a workload cohort on Cozystack hardware we provision, parallel to your VMware estate, validated against your application owners.
 
 </div>
-
-
 
 Or read the **[full VMware replacement guide on our blog](/blog/2026/05/vmware-replacement-after-broadcom/)** · See **[the VMware migration path](/migration/vmware)** · Compare to the broader market in **[VMware alternatives 2026](/alternatives/vmware-alternatives)**.
 
@@ -295,7 +333,3 @@ JSON-LD on page (handled by aenix.io site framework):
 - FAQPage from BLOCK 11 (4 questions)
 -->
 
-<!--
-Word count: ~1050 (target 800-1100). On budget.
-Article version (long-form): ../article.md (~2900 words) — moves to /blog/.
--->

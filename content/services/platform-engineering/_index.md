@@ -43,7 +43,6 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-
 **Platform engineering is no longer a debate; it's an operational layer that mature engineering organizations now treat as core infrastructure. The question is not whether to invest in it, but whether to build the function in-house slowly, hire a consultancy that hands off to junior implementers, or work with engineers who have already operated multi-tenant platforms in production.**
 
 Aenix is the platform engineering team behind [Cozystack](/products/cozystack/), a CNCF project running in production with service providers, banks, and AI operators. We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
@@ -63,6 +62,9 @@ Production-grade platform team · Apache 2.0 foundation · Engineers, not archit
 
 ---
 
+
+---
+
 <!-- BLOCK 2: WHO THIS IS FOR -->
 
 ## Who needs structured platform engineering
@@ -79,6 +81,10 @@ Platform engineering as a function fits when at least three of the following hol
 If three or more apply, structured platform engineering is the leverage. If your organization has a single 10-person dev team and one set of services, lighter-weight DevOps practice is more cost-effective.
 
 <!-- /BLOCK 2 -->
+
+---
+
+{{< factoid number="3 teams / 30 engineers" label="the rough break-even where structured platform engineering starts to pay off" >}}
 
 ---
 
@@ -223,6 +229,11 @@ We accept RFI / RFP through standard procurement channels.
 
 <!-- BLOCK 10: FAQ -->
 
+
+**More questions?** See the **[platform engineering vs DevOps guide](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** or **[talk to us](#discovery)**.
+
+<!-- /BLOCK 10 -->
+
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
@@ -232,7 +243,9 @@ We accept RFI / RFP through standard procurement channels.
 
 Free. No prep needed. We confirm fit, identify your platform engineering stage, and tell you whether assessment, build, or managed engagement matches your situation.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+</div>
 
 Or read more:
 - **[Platform engineering vs DevOps vs SRE](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** — terminology and team structure
@@ -251,18 +264,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO meta tags:
-- title: "Platform Engineering Services — Build the Platform Your Developers Actually Use | Aenix"
-- description: "Platform engineering services: assessment, build, or managed engagement. EU engineers, open-source foundation, no hyperscaler bias."
-- og:image: 1200×630 — platform layers + golden-path visual
-- canonical: this URL
-- hreflang: en (default), de
-
-JSON-LD:
-- WebPage / BreadcrumbList: Home → Services → Platform Engineering
-- Service schema
-- FAQPage from BLOCK 10
-
-Word count: ~1100.
--->

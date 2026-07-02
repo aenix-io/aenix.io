@@ -37,7 +37,6 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-
 **A structured cloud readiness assessment that gives you three concrete outcomes: time-to-environment metric, compliance-by-design map, and cost-and-control trajectory. Run by Aenix platform engineers — the team behind Cozystack — not management consultants.**
 
 If you're evaluating data sovereignty, DORA / NIS2 compliance, cloud repatriation, sovereign AI, or a self-service platform for your developers — this is the engagement that turns the question into a written plan with numbers, owners, and a timeline.
@@ -54,6 +53,9 @@ Aenix engineers, not consultants · Fixed-price · Written deliverables · No ve
 </div>
 
 <!-- /BLOCK 1 -->
+
+---
+
 
 ---
 
@@ -123,6 +125,8 @@ A 12-month spending plan with caps and a clear path between current public-cloud
 </div>
 
 All three outputs are **written**, **dated**, and **handed to the executive sponsor** — not just discussed in a workshop.
+
+{{< factoid number="14 days" label="from kickoff to a written, dated readiness report in the executive sponsor's hands" >}}
 
 <!-- /BLOCK 4 -->
 
@@ -202,6 +206,8 @@ That matters because:
 
 Aenix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project (Kubernetes Certified Distribution, OpenSSF Best Practices). The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
 
+{{< factoid number="5-20" label="platform readiness assessments Aenix runs per year across the EU and Central Asia" >}}
+
 <!-- /BLOCK 7 -->
 
 ---
@@ -252,6 +258,11 @@ For named case studies see **[Customer stories](/case-studies/)** — request th
 
 <!-- BLOCK 10: FAQ -->
 
+
+**More questions?** See the **[methodology deep-dive on our blog](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)** or **[talk to us](#discovery)**.
+
+<!-- /BLOCK 10 -->
+
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
@@ -261,7 +272,9 @@ For named case studies see **[Customer stories](/case-studies/)** — request th
 
 Free. No prep needed. We confirm fit, agree on a focused scope, and tell you whether the 14-day or the 28-day variant matches your situation. If neither fits, we say so.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+</div>
 
 Or read more:
 - **[Cloud readiness assessment — 14-day methodology in detail](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)**
@@ -278,20 +291,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO meta tags:
-- title: "Platform Readiness Assessment — Cloud Sovereignty, Migration, and Cost in 14 Days | Aenix"
-- description: "A 14-day cloud readiness assessment for sovereignty, migration, and cost posture. Three outcomes: time-to-environment, compliance-by-design, cost trajectory. Aenix engineers."
-- og:image: 1200×630 — schedule pattern + 3-outcome icons
-- canonical: this URL
-- hreflang: en (default), de (when DE locale launches)
-
-JSON-LD on page:
-- WebPage / BreadcrumbList: Home → Services → Platform Readiness Assessment
-- Service schema (schema.org/Service): name, provider (Aenix), serviceType ("Cloud readiness assessment"), areaServed (Worldwide / EU / Central Asia)
-- FAQPage from BLOCK 10
-
-Word count target: 900-1100. Actual: ~1100. On budget.
-
-Article companion (long-form): ../article.md — methodology deep-dive at /blog/2026/05/cloud-readiness-assessment-14-day-methodology/
--->

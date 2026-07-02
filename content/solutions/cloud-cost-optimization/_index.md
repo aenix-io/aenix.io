@@ -44,7 +44,6 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-
 **Public-cloud bills don't shrink by themselves. The combination of underutilized commitments, idle resources, egress charges, and hyperscaler-managed-service premiums means most cloud spend is 20-40% higher than it needs to be — before any architectural change. The right cloud cost optimization engagement names where the spend leaks, what's worth fixing inside the hyperscaler, and what's worth moving to a platform you control.**
 
 Aenix runs a structured cloud-cost engagement that answers, with numbers: where you stand today, where you can be in 12 months, and what the architectural decisions cost you on the way.
@@ -64,6 +63,9 @@ No hyperscaler bias · Honest TCO modelling · EU engineers · Written deliverab
 
 ---
 
+
+---
+
 <!-- BLOCK 2: WHO THIS IS FOR -->
 
 ## Who has a cloud cost problem worth fixing
@@ -78,6 +80,8 @@ The cloud-cost engagement fits when at least three of the following hold:
 - **A board-level cost decision is upcoming** — budget review, repatriation question, hiring freeze, or M&A.
 
 If your situation matches at least three, the engagement returns its cost in identified savings within the assessment itself, before any implementation work begins. If you have fewer signals — most of the value is in routine FinOps tooling, not a structured engagement.
+
+{{< factoid number="20–40%" label="how much most public-cloud spend runs above what it needs to be, before any architectural change" >}}
 
 <!-- /BLOCK 2 -->
 
@@ -104,6 +108,8 @@ Managed databases, managed Kubernetes, managed observability — all priced 2-4�
 </div>
 
 A structured cost engagement captures all four with quantified-per-account-and-team numbers. Most organizations can identify 15-25% addressable savings from these without architectural change.
+
+{{< factoid number="15–25%" label="addressable savings a structured engagement typically identifies from the four leak categories, without architectural change" >}}
 
 <!-- /BLOCK 3 -->
 
@@ -227,6 +233,11 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
+
+**More questions?** See the **[cloud cost optimization strategies guide](/blog/2026/05/cloud-cost-optimization-strategies-2026/)** or **[talk to us](#discovery)**.
+
+<!-- /BLOCK 10 -->
+
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
@@ -236,7 +247,9 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 Free. No prep needed. We confirm fit, identify your top cost concerns, and tell you whether the 14-day or 28-day variant matches your situation.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+</div>
 
 Or read more:
 - **[Cloud cost optimization strategies guide](/blog/2026/05/cloud-cost-optimization-strategies-2026/)** — practical depth
@@ -255,18 +268,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO meta tags:
-- title: "Cloud Cost Optimization — Predictable Spend, Honest Engineering | Aenix"
-- description: "Cloud cost optimization engagement: TCO modelling, cost-leak inventory, right-sizing, architectural decisions, 12-month trajectory. EU engineers, no hyperscaler bias."
-- og:image: 1200×630 — declining cost line + leak-fix indicators
-- canonical: this URL
-- hreflang: en (default), de
-
-JSON-LD:
-- WebPage / BreadcrumbList
-- Service schema: name="Cloud cost optimization engagement", provider=Aenix
-- FAQPage from BLOCK 10
-
-Word count: ~1080.
--->

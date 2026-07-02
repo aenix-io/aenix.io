@@ -44,7 +44,6 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-
 **For regulated workloads, AI is no longer a hyperscaler-only conversation. Sensitive data classes, sectoral rules, and the economics of inference at scale are pushing financial services, healthcare, public sector, and AI-platform operators toward sovereign AI infrastructure — GenAI, inference, and analytics on the customer's own hardware, in the customer's chosen jurisdiction, under the customer's encryption keys.**
 
 Aenix builds and operates sovereign AI infrastructure for organizations whose data class, regulator, or economics make hyperscaler AI services unviable. Output: an architecture, a deployment, and an operations model your team can actually run.
@@ -59,6 +58,7 @@ Aenix builds and operates sovereign AI infrastructure for organizations whose da
 <div class="trust-badges">
 NVIDIA-validated GPU stack · Apache 2.0 platform · EU engineers · Air-gapped deployment supported
 </div>
+
 
 <!-- /BLOCK 1 -->
 
@@ -77,6 +77,8 @@ Sovereign AI is not for every workload. It is the right answer when at least thr
 - **Air-gap or restricted-egress is required** — public-sector classified, defence-adjacent, or critical-infrastructure workloads.
 
 If you have none of these, sovereign AI is over-engineering. If you have three or more, the question is not whether — it's how, by when, and at what cost.
+
+{{< factoid number="14-28 days" label="from Platform Readiness Assessment to a written architecture, GPU strategy, and sovereignty controls for your data class" >}}
 
 <!-- /BLOCK 2 -->
 
@@ -157,6 +159,8 @@ The implementation phase delivers:
 
 Validated GPU models include NVIDIA A100, H100, H200, L40S, and Blackwell. Specific model fit is established during the assessment.
 
+{{< factoid number="3-9 months" label="typical Phase 2 to a production sovereign AI platform on hardware you own, in the jurisdiction you choose" >}}
+
 <!-- /BLOCK 5 -->
 
 ---
@@ -235,6 +239,9 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
+
+<!-- /BLOCK 10 -->
+
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
@@ -244,7 +251,9 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 Free. No prep needed. We confirm fit, narrow the AI workload scope to your data class and regulator, and tell you whether the 14-day or the 28-day assessment matches your situation.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+</div>
 
 Or read more:
 - **[Private LLM deployment guide](/blog/2026/05/private-llm-deployment-guide/)** — practical architecture
@@ -263,18 +272,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO meta tags:
-- title: "Sovereign AI Infrastructure — GenAI on Data That Can't Leave the Perimeter | Aenix"
-- description: "Sovereign AI infrastructure: GenAI, inference, and fine-tuning on customer hardware. NVIDIA-validated, Kubernetes-native, no model-provider bias."
-- og:image: 1200×630 — GPU stack + jurisdictional shield + LLM tokens
-- canonical: this URL
-- hreflang: en (default), de
-
-JSON-LD:
-- WebPage / BreadcrumbList: Home → Solutions → Sovereign AI
-- Service schema: name="Sovereign AI infrastructure engagement", provider=Aenix
-- FAQPage from BLOCK 10
-
-Word count: 900-1100. Actual: ~1100.
--->

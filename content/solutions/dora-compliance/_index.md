@@ -44,8 +44,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-
-**DORA has been in force since 17 January 2025. If your cloud architecture has not been independently checked against ICT third-party risk, concentration risk, exit-readiness, and operational-resilience testing, the next supervisory cycle will surface gaps you'd rather find first.**
+**DORA applies from 17 January 2025. If your cloud architecture has not been independently checked against ICT third-party risk, concentration risk, exit-readiness, and operational-resilience testing, the next supervisory cycle will surface gaps you'd rather find first.**
 
 Aenix runs a DORA-aligned platform readiness engagement for financial entities and the ICT third parties serving them. Output: a control-level map of what you can demonstrate today, where the gaps are, and what an architecture-level remediation plan looks like.
 
@@ -60,6 +59,7 @@ Aenix runs a DORA-aligned platform readiness engagement for financial entities a
 EU-based engineers · Mutual NDA at kickoff · Written deliverables · No hyperscaler bias
 </div>
 
+
 <!-- /BLOCK 1 -->
 
 ---
@@ -72,12 +72,16 @@ DORA applies, directly or indirectly, to almost every organization in the EU's f
 
 - **Banks and credit institutions** facing supervisor-level scrutiny on Article 28 ICT third-party arrangements.
 - **Insurers and reinsurers** with multi-jurisdiction data flows and cross-border DR.
-- **Investment firms, payment institutions, and crypto-asset service providers** scoped under DORA Title V.
+- **Investment firms, payment institutions, and crypto-asset service providers** in scope as financial entities under DORA Article 2.
 - **ICT third-party service providers** that supply critical functions to in-scope entities — including hosting providers, SaaS vendors, and managed-service operators.
 
 If your cloud setup supports a *critical or important function* under DORA, the requirements below apply substantively, not just procedurally.
 
 <!-- /BLOCK 2 -->
+
+---
+
+{{< factoid number="17 Jan 2025" label="date DORA became binding on EU financial entities and the ICT third parties serving them" >}}
 
 ---
 
@@ -104,6 +108,10 @@ Data residency enforced at every layer — production, backup, observability, CI
 For a control-level checklist with operational language for each of these, see **[the DORA compliance checklist](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)**.
 
 <!-- /BLOCK 3 -->
+
+---
+
+{{< factoid number="Every 3 years" label="threat-led penetration testing required for significant entities under Title IV, on top of annual scenario-based testing" >}}
 
 ---
 
@@ -226,6 +234,9 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 <!-- BLOCK 10: FAQ -->
 
+
+<!-- /BLOCK 10 -->
+
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
@@ -235,7 +246,9 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 
 Free. No prep needed. We confirm fit, narrow the DORA scope to your binding articles, and tell you whether the 14-day or the 28-day variant matches your situation.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+</div>
 
 Or read more:
 - **[DORA compliance checklist for cloud architecture](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** — the control-level guide
@@ -253,21 +266,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO meta tags:
-- title: "DORA Compliance for Cloud Infrastructure — Architecture Readiness | Aenix"
-- description: "DORA compliance for cloud architecture. Article 28 supplier risk, exit-readiness, operational resilience testing. EU engineers, no hyperscaler bias, written deliverables."
-- og:image: 1200×630 — DORA / EU shield + cloud architecture grid
-- canonical: this URL
-- hreflang: en (default), de (when DE locale launches at /de/loesungen/dora-compliance/)
-
-JSON-LD on page:
-- WebPage / BreadcrumbList: Home → Solutions → DORA Compliance
-- Service schema (schema.org/Service): name="DORA-aligned platform readiness", provider=Aenix, areaServed=EU/DACH/Central Asia
-- FAQPage from BLOCK 10
-
-Word count target: 900-1100. Actual: ~1050. On budget.
-
-Article companion (long-form): ../article.md → /blog/2026/05/dora-compliance-checklist-cloud-architecture/
-Keyword split: landing owns "dora compliance" head (1100/6); article owns "dora compliance checklist" (200/0) + framework + deadline sub-cluster.
--->
