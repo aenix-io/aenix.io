@@ -3,44 +3,10 @@ title: "Ænix Secures $300K Seed Investment from Prospective Technologies to Acc
 description: "Ænix, the company behind the open-source Cozystack platform, today announced a $300,000 seed investment round by Prospective Technologies…"
 date: "2025-04-11"
 author: "Timur Tukaev"
-type: "article"
+type: "announcement"
 topics: ["Cozystack", "Sovereignty", "AI/ML", "Financial Services", "CNCF", "Compliance"]
 language: "en"
 source_url: "https://medium.com/@tym83/%C3%A6nix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud-4f4ea88b08c1"
-quiz:
-  title: "Test yourself: Aenix seed investment"
-  questions:
-    - q: "How much was Ænix's seed investment from Prospective Technologies, announced in April 2025?"
-      options:
-        - { text: "$50,000", correct: false }
-        - { text: "$3 million", correct: false }
-        - { text: "$300,000", correct: true }
-        - { text: "$30 million", correct: false }
-      explanation: "$300K seed round announced April 2025, led by Prospective Technologies — a VC firm known for backing developer tools (imgproxy, Qase, DBeaver portfolio)."
-    - q: "Which other developer-tools companies are named in Prospective Technologies' portfolio?"
-      options:
-        - { text: "Stripe, Twilio, Zoom", correct: false }
-        - { text: "imgproxy, Qase, DBeaver", correct: true }
-        - { text: "Anthropic, OpenAI, Cohere", correct: false }
-      explanation: "Prospective Technologies' developer-tools portfolio includes imgproxy, Qase, and DBeaver. The shared theme is open-source-friendly developer infrastructure."
-    - q: "When did Aenix officially contribute Cozystack to the CNCF?"
-      options:
-        - { text: "October 2024", correct: false }
-        - { text: "April 2025", correct: false }
-        - { text: "March 2024", correct: true }
-      explanation: "Aenix contributed Cozystack to the CNCF in March 2024, ensuring long-term commitment to open-source development under the Linux Foundation's governance — making Cozystack vendor-neutral for organizations building secure, compliant, scalable cloud infrastructure."
-    - q: "How does Aenix monetize Cozystack?"
-      options:
-        - { text: "A premium subscription with enterprise features and SLA support", correct: true }
-        - { text: "Per-VM licensing fees on the Cozystack platform itself", correct: false }
-        - { text: "Advertising revenue served through the dashboard UI", correct: false }
-      explanation: "Ænix Enterprise for Cozystack — a premium subscription offering enterprise features, support with guaranteed SLA, and professional services. Per CNCF / Apache 2.0 obligations, the Cozystack platform code itself remains free."
-    - q: "Andrei Kvapil — what is his role at Aenix?"
-      options:
-        - { text: "CTO and head of platform engineering", correct: false }
-        - { text: "CEO and main developer of Cozystack", correct: true }
-        - { text: "Outside investor with no operational role", correct: false }
-      explanation: "Andrei Kvapil is the CEO of Aenix and the main developer of Cozystack. His quoted statement frames Prospective's investment as aligned with Aenix's vision of empowering businesses with open, sovereign cloud solutions."
 ---
 
 ---
