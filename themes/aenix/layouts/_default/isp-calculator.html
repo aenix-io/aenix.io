@@ -1,0 +1,24 @@
+{{ define "head" }}
+<meta name="robots" content="noindex,nofollow">
+<style>
+  body.isp-calc-page,
+  body.isp-calc-page main#content { background: #0B0F1A; }
+  body.isp-calc-page main#content { padding: 0; margin: 0; }
+  .isp-calc-frame {
+    display: block;
+    width: 100%;
+    min-height: 92vh;
+    border: 0;
+    background: #0B0F1A;
+  }
+</style>
+{{ end }}
+
+{{ define "main" }}
+<iframe
+  class="isp-calc-frame"
+  src="/isp-calculator-app/index.html"
+  title="Cozystack ROI Calculator"
+  loading="eager"
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{ end }}

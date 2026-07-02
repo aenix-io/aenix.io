@@ -58,6 +58,18 @@ community_champions:
     links:
       telegram: "@nbykov"
       github: "nbykov0"
+  - name: "Matthieu Robin"
+    role: "Community Champion"
+    photo: "/images/uploads/2026/04/matthieu-robin.jpg"
+    links:
+      github: "matthieu-robin"
+      linkedin: "robinmatthieu"
+  - name: "Mattia Eleuteri"
+    role: "Community Champion"
+    photo: "/images/uploads/2026/04/mattia-eleuteri.jpg"
+    links:
+      github: "mattia-eleuteri"
+      linkedin: "mattia-eleuteri"
 ---
 
 {{< two-cols image="/images/uploads/2023/12/1-edited.png" alt="Our Story" >}}

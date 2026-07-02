@@ -1,0 +1,43 @@
+{{/* hero-3d: 3D valley canvas + topographic peak labels.
+     The labels mimic surveyor annotations on a topographic map —
+     thin dotted line + minimal eyebrow + body text. They point to
+     mountain peaks rendered by hero-3d.mjs.                      */}}
+<div class="hero-3d" aria-hidden="true">
+  <canvas id="hero-3d-canvas" class="hero-3d-canvas"></canvas>
+
+  <div class="hero-3d-annotations">
+    {{/* Left side peaks — descending from far-back/high to near/low */}}
+    <div class="peak peak--kubernetes">
+      <span class="peak-eyebrow">KUBERNETES</span>
+      <p class="peak-body">Orchestrate<br>containers at scale</p>
+      <span class="peak-line" aria-hidden="true"></span>
+    </div>
+    <div class="peak peak--vms">
+      <span class="peak-eyebrow">VIRTUAL MACHINES</span>
+      <p class="peak-body">Run and manage<br>VM workloads</p>
+      <span class="peak-line" aria-hidden="true"></span>
+    </div>
+    <div class="peak peak--databases">
+      <span class="peak-eyebrow">DATABASES</span>
+      <p class="peak-body">Reliable data<br>management</p>
+      <span class="peak-line" aria-hidden="true"></span>
+    </div>
+
+    {{/* Right side peaks */}}
+    <div class="peak peak--storage">
+      <span class="peak-eyebrow">STORAGE</span>
+      <p class="peak-body">Scalable storage<br>for any workload</p>
+      <span class="peak-line" aria-hidden="true"></span>
+    </div>
+    <div class="peak peak--networking">
+      <span class="peak-eyebrow">NETWORKING</span>
+      <p class="peak-body">High performance<br>connectivity</p>
+      <span class="peak-line" aria-hidden="true"></span>
+    </div>
+    <div class="peak peak--observability">
+      <span class="peak-eyebrow">OBSERVABILITY</span>
+      <p class="peak-body">Monitor everything.<br>Gain insights.</p>
+      <span class="peak-line" aria-hidden="true"></span>
+    </div>
+  </div>
+</div>
