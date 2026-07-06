@@ -1412,6 +1412,10 @@
   .placeholder-logos,
   .placeholder-form,
   .lorem-block,
+  .design-note {
+    display: none;
+  }
+}
 
 /* ==========================================================================
    CTA BUTTONS & ROWS
@@ -1758,10 +1762,6 @@ summary:focus-visible,
 .page-content > p { margin-bottom: 1.45rem; }
 .page-content > h2 { margin-top: 3.5rem; }
 .page-content > h2:first-child { margin-top: 0; }
-  .design-note {
-    display: none;
-  }
-}
 
 /* ============================================================
    HOMEPAGE LAYOUT — wide breakout grids + section rhythm
