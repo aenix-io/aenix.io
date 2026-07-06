@@ -44,7 +44,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/services/platform-engineering/">Platform engineering services →</a>
+  <a class="cta-secondary" href="/services/platform-engineering/">Platform engineering →</a>
 </div>
 
 ---

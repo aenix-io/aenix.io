@@ -51,7 +51,7 @@ Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF 
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/devops-best-practices-2026/">Read DevOps best practices →</a>
+  <a class="cta-secondary" href="/blog/2026/05/devops-best-practices-2026/">Best practices →</a>
 </div>
 
 <div class="trust-badges">

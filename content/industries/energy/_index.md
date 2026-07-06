@@ -52,7 +52,7 @@ Aenix is currently piloting Cozystack with an energy operator and applies the sa
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/smart-grid-platform-architecture-it-ot/">Smart grid platform architecture →</a>
+  <a class="cta-secondary" href="/blog/2026/05/smart-grid-platform-architecture-it-ot/">Grid architecture →</a>
 </div>
 
 ---

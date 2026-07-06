@@ -23,7 +23,7 @@ related_pages:
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/solutions/sovereign-ai/">See sovereign AI →</a>
+  <a class="cta-secondary" href="/solutions/sovereign-ai/">Sovereign AI →</a>
 </div>
 
 <div class="trust-badges">

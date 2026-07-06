@@ -52,7 +52,7 @@ Aenix runs NIS2-aligned platform readiness engagements for in-scope entities and
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/">Read NIS2 checklist →</a>
+  <a class="cta-secondary" href="/blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/">NIS2 checklist →</a>
 </div>
 
 <div class="trust-badges">

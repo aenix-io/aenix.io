@@ -38,7 +38,7 @@ faq:
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — but **only via an Aenix [Partner](/partners/)** (regional MSP / hosting provider). SMB customers consume cloud as a product from the partner, who runs Ænix Platform underneath. Direct Aenix engagement is rarely fit at SMB scale.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Quick fit-check call (15 min, free)</a>
+  <a class="cta-primary" href="/contact/">Fit-check call →</a>
 </div>
 
 ---

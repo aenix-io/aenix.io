@@ -56,7 +56,7 @@ Building and running a platform yourself means a platform-engineering team plus 
 If you sell managed cloud to your own customers, our full **[ISP unit-economics calculator](/isp-calculator/)** models the monthly P&L — infrastructure footprint, service portfolio (managed Kubernetes, VMs, databases, GPU, object storage), capacity utilization, staffing, and a before/after Cozystack comparison — with multi-currency support and a one-click PDF report.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/isp-calculator/">Open the ISP unit-economics calculator →</a>
+  <a class="cta-primary" href="/isp-calculator/">Open calculator →</a>
 </div>
 
 See the **[ISP Edition](/products/aenix-platform/isp-edition/)** for the product behind this model.

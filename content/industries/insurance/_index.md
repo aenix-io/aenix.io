@@ -50,7 +50,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/solutions/dora-compliance/">DORA compliance solutions →</a>
+  <a class="cta-secondary" href="/solutions/dora-compliance/">DORA compliance →</a>
 </div>
 
 ---

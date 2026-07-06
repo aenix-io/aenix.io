@@ -51,7 +51,7 @@ Aenix builds internal developer platforms (IDPs) that get adopted. Not Backstage
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/internal-developer-platform-examples-without-backstage/">Read IDP examples →</a>
+  <a class="cta-secondary" href="/blog/2026/05/internal-developer-platform-examples-without-backstage/">IDP examples →</a>
 </div>
 
 <div class="trust-badges">

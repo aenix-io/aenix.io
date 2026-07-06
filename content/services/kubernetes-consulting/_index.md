@@ -51,7 +51,7 @@ Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF 
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/kubernetes-cluster-setup-production-architecture/">Production cluster guide →</a>
+  <a class="cta-secondary" href="/blog/2026/05/kubernetes-cluster-setup-production-architecture/">Cluster guide →</a>
 </div>
 
 <div class="trust-badges">

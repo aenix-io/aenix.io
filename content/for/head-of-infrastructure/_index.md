@@ -107,7 +107,7 @@ Free, no prep. We confirm fit, look at your current estate, and tell you whether
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/migration/vmware/">VMware migration path →</a>
+  <a class="cta-secondary" href="/migration/vmware/">VMware migration →</a>
 </div>
 
 ---

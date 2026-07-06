@@ -24,7 +24,7 @@ hide_closing_cta: true
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/solutions/developer-self-service/">See developer self-service →</a>
+  <a class="cta-secondary" href="/solutions/developer-self-service/">Developer self-service →</a>
 </div>
 
 <div class="trust-badges">

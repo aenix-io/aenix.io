@@ -17,7 +17,7 @@ If you came here because of one of these — start at the linked page; we can ta
       <div class="card-tag">Leaving VMware</div>
       <h3 class="card-title">VMware / vSphere replacement</h3>
       <p class="card-description">Broadcom price changes pushed you to look for a successor. We move VMware estates to Cozystack-based platforms — VM-first, with a real cloud-business stack on top.</p>
-      <span class="card-link">VMware migration path →</span>
+      <span class="card-link">VMware migration →</span>
     </div>
   </a>
 
