@@ -46,9 +46,9 @@ faq:
 
 **Replace vSphere, vCenter, vSAN, NSX, and the rest of VCF with one Kubernetes-native platform on your own bare metal — no per-CPU licensing, no Broadcom renewal cliff, no US-vendor lock-in.**
 
-Cozystack is a CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Aenix builds it, operates it in production with hosting providers and banks, and runs the migration end-to-end.
+Cozystack is a CNCF project. Aenix builds it, operates it in production with hosting providers and banks, and runs the migration end-to-end.
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers (most common 2026 trigger — VMware Cloud Director exit); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises (VMware Cloud Foundation exit); **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers (VMware Cloud Director exit); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises (VMware Cloud Foundation exit); **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
@@ -93,7 +93,7 @@ For a head-to-head listicle: **[VMware alternatives 2026](/alternatives/vmware-a
 <div class="grid-2x2">
 
 **1. Subscription-only economics, post-Broadcom**
-Renewals at 2× to 5× prior spend, perpetual licenses retired, mandatory VCF bundling.
+Perpetual licenses retired, mandatory VCF bundling, renewals subscription-only.
 
 **2. Stack-wide vendor lock-in**
 vSphere, NSX, vSAN, vCD, Aria — replacing one means rebuilding the rest.
@@ -130,7 +130,7 @@ KubeVirt, Cilium, LINSTOR, and Flux ship faster as community projects than Broad
 
 </div>
 
-Runs on your bare metal. No public-cloud dependency. No phone-home telemetry by default.
+Runs on your bare metal — no public-cloud dependency.
 
 <!-- /BLOCK 4 -->
 
@@ -298,7 +298,7 @@ More questions about Windows VMs, vCD migration, hardware reuse, GPU support, an
 <div class="cta-cards">
 
 **Architecture review (60 min)**
-Free. Your stack against Cozystack mapping, written assessment with workload buckets and risk flags. Best first step.
+Free. Your stack against Cozystack mapping, written assessment with workload buckets and risk flags.
 
 **Migration assessment (paid)**
 Deeper inventory, 4-6 week engagement, full migration plan with timeline, budget, and success criteria.

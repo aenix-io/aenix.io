@@ -46,7 +46,7 @@ faq:
 
 **DORA applies from 17 January 2025. If your cloud architecture has not been independently checked against ICT third-party risk, concentration risk, exit-readiness, and operational-resilience testing, the next supervisory cycle will surface gaps you'd rather find first.**
 
-Aenix runs a DORA-aligned platform readiness engagement for financial entities and the ICT third parties serving them. Output: a control-level map of what you can demonstrate today, where the gaps are, and what an architecture-level remediation plan looks like.
+Aenix runs a DORA-aligned platform readiness engagement for financial entities and the ICT third parties serving them.
 
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — DORA-aligned by design (customer-controlled keys at every layer, audit-ready logging via VictoriaLogs, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness mechanics, supplier transparency to second hop). Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
@@ -135,7 +135,7 @@ Article 30(2)(a) requires the financial entity to know the chain. Most do not, b
 
 </div>
 
-These gaps are common across institutions that consider themselves cloud-mature. Surfacing them early is cheaper than surfacing them under supervisory pressure.
+Surfacing these gaps early is cheaper than surfacing them under supervisory pressure.
 
 <!-- /BLOCK 4 -->
 
@@ -153,7 +153,7 @@ Our DORA engagement is built into the **[Platform Readiness Assessment](/service
 - **Resilience-testing readiness** — whether your architecture supports the scenario-based testing supervisors expect.
 - **Architecture-level remediation plan** — what to fix, in what sequence, with effort estimates.
 
-Delivered by Aenix engineers — the team behind Cozystack — not management consultants. We don't sell you a hyperscaler partnership, and the report is honest about which architectural choices are worth the work.
+Delivered by Aenix engineers — the team behind Cozystack — not management consultants.
 
 <!-- /BLOCK 5 -->
 
@@ -163,7 +163,7 @@ Delivered by Aenix engineers — the team behind Cozystack — not management co
 
 ## Why Aenix specifically
 
-Most DORA advisory work comes from Big-4 consultancies that hand off to a hyperscaler partner whose incentives shape the recommendation. The architectural answer tends to be the architecture the partner sells.
+Most DORA advisory work comes from Big-4 consultancies that hand off to a hyperscaler partner whose incentives shape the recommendation.
 
 We are different in three concrete ways:
 
@@ -210,8 +210,6 @@ We have run DORA-aligned readiness engagements for banks, insurers, telecom oper
 
 ## Pricing and engagement scope
 
-The DORA-emphasized engagement runs as a Platform Readiness Assessment with the sovereignty-and-regulator-gap workstream as the primary focus.
-
 <div class="pricing-cards-2">
 
 ### 14-day (focused DORA scope)
@@ -244,7 +242,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 <a id="discovery"></a>
 ## Start with a 30-minute discovery call
 
-Free. No prep needed. We confirm fit, narrow the DORA scope to your binding articles, and tell you whether the 14-day or the 28-day variant matches your situation.
+Free, no prep needed. We confirm fit, narrow the DORA scope to your binding articles, and recommend the 14-day or 28-day variant for your situation.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

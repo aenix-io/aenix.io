@@ -48,7 +48,7 @@ faq:
 
 Aenix runs the technical engagement that turns "we need to leave AWS / Azure / GCP" from a board statement into a working plan with workloads ranked, costs modelled, and a destination architecture that won't reinvent the public cloud the wrong way.
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** — the right edition follows your buyer profile. Hosting providers / regional clouds: [ISP Edition](/products/aenix-platform/isp-edition/). Regulated enterprises: [Enterprise Edition](/products/aenix-platform/enterprise-edition/). Large operators: [Public Cloud Edition](/products/aenix-platform/public-cloud-edition/). Product engineering teams: [IDP Edition](/products/aenix-platform/idp-edition/). AI-heavy: [AI/ML Edition](/products/aenix-platform/ai-ml-edition/). Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
+> **Pairs with** any **[Ænix Platform Edition](/products/aenix-platform/)** by buyer profile: hosting / regional clouds → [ISP](/products/aenix-platform/isp-edition/); regulated enterprises → [Enterprise](/products/aenix-platform/enterprise-edition/); large operators → [Public Cloud](/products/aenix-platform/public-cloud-edition/); product teams → [IDP](/products/aenix-platform/idp-edition/); AI-heavy → [AI/ML](/products/aenix-platform/ai-ml-edition/). Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
@@ -70,7 +70,7 @@ No hyperscaler bias · Honest TCO modelling · Engineers, not consultants · Apa
 
 ## Who repatriation actually fits
 
-Repatriation is not for everyone. The teams that benefit most from a structured cloud-repatriation engagement share a common profile:
+Repatriation is not for everyone. The teams that benefit most share a common profile:
 
 - **Heavy public-cloud bills** — annual spend in the seven figures, and the renewal trajectory is steeper than revenue.
 - **Predictable, steady-state workloads** — not the elastic spike workloads hyperscalers were designed for.
@@ -106,8 +106,6 @@ Hyperscaler-proprietary services lock the architecture into one vendor's roadmap
 
 </div>
 
-The Broadcom Private Cloud Outlook 2025 quantified the shift: **69% of organizations are evaluating repatriation; 53% prioritize private cloud for new workloads.** The LSEG Global Cloud Survey 2025 found **84% of financial services firms had adjusted their cloud strategy because of regulatory developments.**
-
 <!-- /BLOCK 3 -->
 
 ---
@@ -132,7 +130,7 @@ Most repatriations are not all-or-nothing. The right outcome is usually 30-60% o
 
 </div>
 
-These mistakes are independent of cloud provider, vendor, or destination platform. They're the predictable failure modes of repatriation done as a spreadsheet exercise instead of a platform-engineering program.
+These failure modes are independent of cloud provider, vendor, or destination platform — they're what happens when repatriation is run as a spreadsheet exercise instead of a platform-engineering program.
 
 <!-- /BLOCK 4 -->
 
@@ -150,7 +148,7 @@ The repatriation engagement runs as part of our **[Platform Readiness Assessment
 - **Cutover sequencing** — repatriation cohorts that respect commitment expirations and minimize cross-environment data movement.
 - **Phase 2 implementation roadmap** — what an Aenix-delivered Phase 2 would do, in what sequence, with effort estimates.
 
-Delivered by Aenix engineers who have built and operated production platforms for service providers, banks, and AI operators across the EU and Central Asia. We are not commercially aligned with any hyperscaler, and the report's bias is toward what we can stand behind technically.
+Delivered by Aenix engineers who have built and operated production platforms for service providers, banks, and AI operators across the EU and Central Asia. The report's bias is toward what we can stand behind technically.
 
 {{< factoid number="30-60%" label="better unit economics on-prem or in private cloud for steady-state workloads, once egress, idle resources, and underused commitments are counted honestly" >}}
 

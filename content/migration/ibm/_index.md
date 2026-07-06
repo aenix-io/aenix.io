@@ -70,9 +70,9 @@ faq:
 
 **IBM POWER hardware is capital-heavy, AIX/PowerVM is licensed per socket, and SWMA/HWMA renewals compound every year — while AIX specialists get harder to hire. An IBM exit moves those workloads onto commodity x86 running an open, Kubernetes-native platform your existing team can operate.**
 
-Aenix runs IBM AIX/Power migrations end-to-end. The same engineers who built and operate [Cozystack](/products/cozystack/) — the open-source destination platform, Apache 2.0, a CNCF project — work alongside your team for assessment, sequencing, and execution.
+Aenix runs IBM AIX/Power migrations end-to-end. The same engineers who built and operate [Cozystack](/products/cozystack/) — the open-source destination platform — work alongside your team for assessment, sequencing, and execution.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated banks and enterprises (air-gap, billing, fully managed migration). Replacing IBM Cloud Pak / OpenShift specifically? See the **[OpenShift alternative](/alternatives/openshift-alternative/)**.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated banks (air-gap, billing, fully managed migration), or the **[OpenShift alternative](/alternatives/openshift-alternative/)** if you're specifically replacing IBM Cloud Pak / OpenShift.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
@@ -89,8 +89,8 @@ Aenix runs IBM AIX/Power migrations end-to-end. The same engineers who built and
 
 Organizations triggered by:
 
-- **IBM Power Systems (AIX) hardware at end-of-life** — refresh means another capital-heavy POWER purchase, or an exit. The AIX end-of-life window is the natural trigger.
-- **IBM cost compounding** — premium POWER CapEx, AIX + PowerVM licensing by socket, and IBM SWMA/HWMA support contracts year over year.
+- **IBM Power Systems (AIX) hardware at end-of-life** — refresh means another capital-heavy POWER purchase, or an exit.
+- **IBM cost compounding** — premium POWER CapEx, socket-based AIX + PowerVM licensing, and SWMA/HWMA renewals, year over year.
 - **Oracle-on-Power tax** — Oracle carries a core-factor of 1.0 on POWER (the maximum). Every non-Oracle workload still sitting on POWER inflates the licensable core count.
 - **Scarce specialists** — AIX/PowerVM expertise is a shrinking, expensive talent pool; Kubernetes/DevOps is not.
 - **Sovereignty and sanctions exposure** — a proprietary, single-vendor stack is a different risk profile from an open, CNCF-governed platform for state-owned and regulated institutions.
@@ -122,7 +122,7 @@ POWER frames retired as cohorts complete; AIX/PowerVM and IBM support contracts 
 
 </div>
 
-**Honest scoping note — endianness.** AIX is big-endian on POWER; x86 is little-endian. There is no binary lift-and-shift. Modern microservices and standard database/middleware move cleanly; legacy monoliths need a re-architecture step. We separate the two classes in the assessment rather than discover it mid-cutover.
+**Honest scoping note — endianness.** AIX is big-endian on POWER, x86 little-endian: there is no binary lift-and-shift. Modern microservices and standard database/middleware move cleanly; legacy monoliths need re-architecture. We separate the two classes in the assessment, not mid-cutover.
 
 <!-- /BLOCK 3 -->
 
@@ -132,7 +132,7 @@ POWER frames retired as cohorts complete; AIX/PowerVM and IBM support contracts 
 
 ## The economics: Cozystack vs IBM
 
-For decision-makers outside IT, the language that lands is cost. The model below is an illustrative list-price scenario for a mid-size bank (~500 staff) moving the subset of workloads that can leave POWER (microservices, VMs, non-Oracle databases) over a three-year horizon. Figures are order-of-magnitude and recomputed on real estate data during assessment.
+The model below is an illustrative list-price scenario for a mid-size bank (~500 staff) moving the subset of workloads that can leave POWER (microservices, VMs, non-Oracle databases) over a three-year horizon. Figures are order-of-magnitude and recomputed on real estate data during assessment.
 
 | Line item (3 years) | IBM / AIX / Power | Cozystack (x86) |
 |---|---|---|
@@ -145,7 +145,7 @@ For decision-makers outside IT, the language that lands is cost. The model below
 
 {{< factoid number="~40%" label="illustrative three-year TCO reduction — driven by commodity x86 over POWER, zero platform licensing, and shrinking the Oracle-on-Power footprint" source="Aenix TCO model, mid-size-bank scenario, list-price order-of-magnitude" >}}
 
-The Ænix subscription is comparable to IBM maintenance alone, but already includes 24×7 support, enterprise modules, install, training, and migration — no separate one-off fees. Model your own numbers with the **[ROI calculator](/pricing/)** or a **[discovery call](/contact/)**.
+The Ænix subscription is comparable to IBM maintenance alone, yet bundles support, install, training, and migration with no separate one-off fees. Model your own numbers with the **[ROI calculator](/pricing/)** or a **[discovery call](/contact/)**.
 
 <!-- /BLOCK 4 -->
 
@@ -161,7 +161,7 @@ The single most expensive mistake in a Power-to-Kubernetes move is running produ
 - **The node is licensed, not the pod.** A whole worker node counts even if Oracle uses a fraction of its cores; a KubeVirt VM does not qualify as Oracle-approved hard partitioning.
 - **The clean path:** keep production Oracle on dedicated, separately-licensed bare-metal and attach it to the platform as an **external application** (Helm chart / operator wrapping connection points and credentials via external secret reference) over a private network. Tenant workloads reach it like any managed endpoint; the database is never pulled into the cluster.
 
-This matches how most banks already run Oracle, and it compresses the licensable footprint as non-Oracle workloads leave POWER. (Oracle's partitioning policy is "educational, not contractual" — finalize the model with Oracle and your legal team.)
+It compresses the licensable footprint as non-Oracle workloads leave POWER. (Oracle's partitioning policy is "educational, not contractual" — finalize the model with Oracle and your legal team.)
 
 <!-- /BLOCK 5 -->
 
@@ -180,7 +180,7 @@ This matches how most banks already run Oracle, and it compresses the licensable
 | Multi-tenancy | Native (Tenant model, eBPF isolation, billing integration) | Native (Keystone, projects, quotas) | Supported (OpenShift namespaces + Zen) |
 | On-prem / air-gap | Yes | Yes | Yes (operator-catalog mirroring) |
 
-Cozystack is a [CNCF Sandbox project](https://landscape.cncf.io) — its license is guaranteed to stay Apache 2.0, removing the "vendor changes the license" risk that applies to proprietary and quasi-open products. For a state-owned bank under a digital-sovereignty mandate, that is a fundamentally different risk profile.
+Cozystack is a [CNCF Sandbox project](https://landscape.cncf.io) — its license is guaranteed to stay Apache 2.0, removing the "vendor changes the license" risk of proprietary and quasi-open products: a fundamentally different risk profile for a state-owned bank under a digital-sovereignty mandate.
 
 <!-- /BLOCK 6 -->
 
@@ -221,10 +221,10 @@ A recurring real-world idea: stand the platform up on the POWER servers being fr
 
 ## Why Aenix specifically
 
-- **We built the destination.** Implementation estimates are calibrated against work we have shipped, not theory.
-- **Honest about hard parts.** Endianness, Oracle licensing, and legacy re-architecture are surfaced in the assessment — not discovered mid-cutover.
-- **Operable by your team.** The platform runs on Kubernetes skills you can hire, ending dependence on scarce AIX/PowerVM specialists.
-- **Open destination.** Cozystack is Apache 2.0 and CNCF-governed — the platform you migrate to is one you own, with no license that can change under you.
+- **We built the destination.** Estimates are calibrated against work we have shipped, not theory.
+- **Honest about hard parts.** Endianness, Oracle licensing, and legacy re-architecture are surfaced in the assessment, not mid-cutover.
+- **Operable by your team.** Kubernetes skills you can hire, not scarce AIX/PowerVM specialists.
+- **Open destination.** Apache 2.0 and CNCF-governed — you own the platform you migrate to, with no license that can change under you.
 - **EU + Central Asia teams.** Time-zone-friendly for MENA and CIS estates; aligned with EU regulatory frameworks.
 
 <!-- /BLOCK 9 -->

@@ -46,9 +46,9 @@ faq:
 
 **For regulated workloads, AI is no longer a hyperscaler-only conversation. Sensitive data classes, sectoral rules, and the economics of inference at scale are pushing financial services, healthcare, public sector, and AI-platform operators toward sovereign AI infrastructure — GenAI, inference, and analytics on the customer's own hardware, in the customer's chosen jurisdiction, under the customer's encryption keys.**
 
-Aenix builds and operates sovereign AI infrastructure for organizations whose data class, regulator, or economics make hyperscaler AI services unviable. Output: an architecture, a deployment, and an operations model your team can actually run.
+Aenix builds and operates these platforms end-to-end: an architecture, a deployment, and an operations model your team can actually run.
 
-> **Pairs with:** **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** — AI platform automation out of the box (multi-tenant GPU scheduling for H100/H200/L40S/A100/Blackwell, ready-to-use blueprints for inference + fine-tuning + RAG, vector DB + object storage included, sovereignty controls). For regulated AI workloads layered on a broader sovereign cloud: combine with [Enterprise Edition](/products/aenix-platform/enterprise-edition/). Free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
+> **Pairs with:** **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** — AI platform automation out of the box (multi-tenant GPU scheduling, inference/fine-tuning/RAG blueprints, vector DB + object storage, sovereignty controls); add [Enterprise Edition](/products/aenix-platform/enterprise-edition/) for a broader sovereign cloud, or the free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
@@ -104,7 +104,7 @@ Kubernetes-native AI platform with clear ownership of GPU scheduling, autoscalin
 
 </div>
 
-This is not "private AI" as marketing wallpaper for a SaaS endpoint with a privacy clause. It's an architecturally sovereign stack with named components and demonstrable controls.
+This is not "private AI" as a label for a SaaS endpoint with a privacy clause. It's an architecturally sovereign stack with named components and demonstrable controls.
 
 <!-- /BLOCK 3 -->
 
@@ -130,7 +130,7 @@ A team runs vLLM or llama.cpp on a couple of bare-metal boxes, calls it private 
 
 </div>
 
-The honest answer is usually a Kubernetes-native AI platform on customer-controlled hardware, with a defined operations model. We've shipped that pattern in production for AI/GPU operators and regulated enterprises.
+The honest answer is usually a Kubernetes-native AI platform on customer-controlled hardware, with a defined operations model.
 
 <!-- /BLOCK 4 -->
 
@@ -156,8 +156,6 @@ The implementation phase delivers:
 - **Validated model serving** — vLLM, Triton, or alternatives matched to model architecture.
 - **Self-service for data-science teams** — provisioning paths, observability, audit trails.
 - **Air-gapped deployment** where the regulator requires it.
-
-Validated GPU models include NVIDIA A100, H100, H200, L40S, and Blackwell. Specific model fit is established during the assessment.
 
 {{< factoid number="3-9 months" label="typical Phase 2 to a production sovereign AI platform on hardware you own, in the jurisdiction you choose" >}}
 

@@ -37,11 +37,9 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**A structured cloud readiness assessment that gives you three concrete outcomes: time-to-environment metric, compliance-by-design map, and cost-and-control trajectory. Run by Aenix platform engineers — the team behind Cozystack — not management consultants.**
+**If you're evaluating data sovereignty, DORA / NIS2 compliance, cloud repatriation, sovereign AI, or a self-service platform for your developers — this is the engagement that turns the question into a written plan with numbers, owners, and a timeline.**
 
-If you're evaluating data sovereignty, DORA / NIS2 compliance, cloud repatriation, sovereign AI, or a self-service platform for your developers — this is the engagement that turns the question into a written plan with numbers, owners, and a timeline.
-
-> **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — the assessment outputs which edition fits your scope. Public Cloud / ISP / Enterprise / IDP / AI/ML. Discovery call → Assessment → Edition recommendation → Pilot → Full build.
+> **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — the assessment recommends which edition fits your scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
@@ -63,7 +61,7 @@ Aenix engineers, not consultants · Fixed-price · Written deliverables · No ve
 
 ## When the Platform Readiness Assessment fits
 
-Buyers reach us with one of four pressures. The assessment addresses them as a single program — not four disconnected workstreams.
+Buyers reach us with one of four pressures. The assessment addresses them as a single program.
 
 <div class="trigger-grid-2x2">
 
@@ -123,8 +121,6 @@ A control-level map for the regulatory frameworks you operate under — DORA, NI
 A 12-month spending plan with caps and a clear path between current public-cloud spend and a controllable hybrid or private-cloud posture. Repatriation candidates ranked by ROI. FinOps owner identified.
 
 </div>
-
-All three outputs are **written**, **dated**, and **handed to the executive sponsor** — not just discussed in a workshop.
 
 {{< factoid number="14 days" label="from kickoff to a written, dated readiness report in the executive sponsor's hands" >}}
 
@@ -204,7 +200,7 @@ That matters because:
 - Our recommendations come with implementation effort estimates we have actually paid.
 - If you decide to engage us for Phase 2 implementation, the same engineers continue.
 
-Aenix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project (Kubernetes Certified Distribution, OpenSSF Best Practices). The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
+Aenix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project. The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
 
 {{< factoid number="5-20" label="platform readiness assessments Aenix runs per year across the EU and Central Asia" >}}
 
@@ -242,7 +238,7 @@ If a Phase 2 engagement follows, the assessment cost is credited against the imp
 
 {{< placeholder-logos >}}
 
-We've run platform readiness assessments for service providers, regional cloud providers, financial-services organizations, telecom operators, and sovereign-cloud initiatives across the EU and Central Asia. Five to twenty assessments per year.
+We've run platform readiness assessments for service providers, regional cloud providers, financial-services organizations, telecom operators, and sovereign-cloud initiatives across the EU and Central Asia.
 
 > {{< placeholder-quote >}}
 > *— {{NAME_1}}, {{TITLE_1}}*

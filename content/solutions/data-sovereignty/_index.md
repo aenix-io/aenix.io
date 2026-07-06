@@ -45,11 +45,11 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Data sovereignty is no longer a procurement clause. DORA, NIS2, GDPR, sectoral data-residency rules, and explicit sovereign-cloud mandates from EU member states and non-EU jurisdictions all converge on the same operational requirement: prove, with evidence, that your data lives where the regulator says it must — at every layer, including backups, observability, and CI/CD artifacts.**
+**Data sovereignty is no longer a procurement clause — it is an operational requirement: prove, with evidence, that your data lives where the regulator says it must, at every layer and not only in production.**
 
-Aenix runs a structured engagement for organizations that need to take a sovereignty position from claim to demonstrable architecture. Output: a control-level map of where your data actually lives today, where the gaps are, and what sovereignty-by-design looks like for your stack.
+Aenix runs a structured engagement that produces a control-level map of where your data actually lives today, where the gaps are, and what sovereignty-by-design looks like for your stack.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises consuming sovereign cloud internally; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for operators offering sovereign cloud as a product. Customer-controlled keys at every data layer (primary store, replicas, backups, observability). Air-gap option supported.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises consuming sovereign cloud internally, or **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for operators offering it as a product — customer-controlled keys at every layer, air-gap optional.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
@@ -130,7 +130,7 @@ The hyperscaler is named in the contract. The hyperscaler's data-centre operator
 
 </div>
 
-These gaps are common across institutions that consider themselves sovereignty-compliant. Surfacing them under structured assessment is cheaper than surfacing them under regulator audit.
+Surfacing these gaps under structured assessment is cheaper than surfacing them under regulator audit.
 
 <!-- /BLOCK 4 -->
 
@@ -148,7 +148,7 @@ The data-sovereignty engagement runs as part of our **[Platform Readiness Assess
 - **Audit-readiness assessment** — what supervisor access processes are documented, what tested, what missing.
 - **Architecture-level remediation plan** — what to fix, in what sequence, with effort estimates and regulatory deadline alignment.
 
-Delivered by Aenix engineers — the team behind Cozystack — across the EU, DACH, and Central Asia. We are not commercially aligned with any hyperscaler, and the report's bias is toward what we can demonstrate and stand behind.
+Delivered by Aenix engineers — the team behind Cozystack — across the EU, DACH, and Central Asia, with no hyperscaler commercial alignment.
 
 <!-- /BLOCK 5 -->
 
@@ -260,7 +260,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run data-sovereignty engagements and platform-engineering programs for banks, insurers, public-sector organizations, and critical-infrastructure operators across the EU, DACH, and Central Asia.*
+*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
 

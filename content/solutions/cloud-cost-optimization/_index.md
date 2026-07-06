@@ -46,9 +46,7 @@ faq:
 
 **Public-cloud bills don't shrink by themselves. The combination of underutilized commitments, idle resources, egress charges, and hyperscaler-managed-service premiums means most cloud spend is 20-40% higher than it needs to be — before any architectural change. The right cloud cost optimization engagement names where the spend leaks, what's worth fixing inside the hyperscaler, and what's worth moving to a platform you control.**
 
-Aenix runs a structured cloud-cost engagement that answers, with numbers: where you stand today, where you can be in 12 months, and what the architectural decisions cost you on the way.
-
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers and regional clouds; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Sustained-utilisation economics on customer-controlled hardware typically cut TCO 40-70% vs hyperscaler. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
+> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers and regional clouds; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
@@ -79,7 +77,7 @@ The cloud-cost engagement fits when at least three of the following hold:
 - **FinOps function exists but is reactive** — the team flags overspend after it lands; they don't shape architecture decisions before.
 - **A board-level cost decision is upcoming** — budget review, repatriation question, hiring freeze, or M&A.
 
-If your situation matches at least three, the engagement returns its cost in identified savings within the assessment itself, before any implementation work begins. If you have fewer signals — most of the value is in routine FinOps tooling, not a structured engagement.
+Match at least three and the engagement returns its cost in identified savings within the assessment itself, before any implementation work begins. With fewer signals, most of the value is in routine FinOps tooling, not a structured engagement.
 
 {{< factoid number="20–40%" label="how much most public-cloud spend runs above what it needs to be, before any architectural change" >}}
 
@@ -107,7 +105,7 @@ Managed databases, managed Kubernetes, managed observability — all priced 2-4�
 
 </div>
 
-A structured cost engagement captures all four with quantified-per-account-and-team numbers. Most organizations can identify 15-25% addressable savings from these without architectural change.
+A structured cost engagement captures all four with quantified-per-account-and-team numbers.
 
 {{< factoid number="15–25%" label="addressable savings a structured engagement typically identifies from the four leak categories, without architectural change" >}}
 
@@ -154,7 +152,7 @@ The cost engagement runs as part of our **[Platform Readiness Assessment](/servi
 - **12-month spend trajectory** — current → optimized → architecturally-changed, with caps and confidence ranges.
 - **FinOps owner / process plan** — who runs the engine after we leave.
 
-Delivered by Aenix engineers who have built and operated production platforms across the EU and Central Asia. We are not commercially aligned with any hyperscaler — recommendations are not shaped by partnership economics.
+Delivered by Aenix engineers who have built and operated production platforms across the EU and Central Asia.
 
 <!-- /BLOCK 5 -->
 
