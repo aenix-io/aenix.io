@@ -26,19 +26,21 @@
       <ul class="nav-list">
         {{ range $menu }}
           {{ if .HasChildren }}
-          {{- $hasGroups := false -}}
+          {{- $groupCount := 0 -}}
           {{- range .Children -}}
-            {{- if .Params.heading -}}{{- $hasGroups = true -}}{{- end -}}
+            {{- if .Params.heading -}}{{- $groupCount = add $groupCount 1 -}}{{- end -}}
           {{- end -}}
+          {{- $hasGroups := gt $groupCount 0 -}}
+          {{- $isMega := ge $groupCount 5 -}}
           <li class="nav-item has-dropdown">
             <a href="{{ .URL }}" class="nav-link dropdown-toggle">
               {{ .Name }}
               <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
-            <ul class="dropdown-menu{{ if $hasGroups }} dropdown-menu--grouped{{ end }}">
+            <ul class="dropdown-menu{{ if $hasGroups }} dropdown-menu--grouped{{ end }}{{ if $isMega }} dropdown-menu--mega{{ end }}">
               {{ range .Children }}
                 {{ if .Params.heading }}
-                <li class="dropdown-group">
+                <li class="dropdown-group{{ if .Params.wide }} dropdown-group--wide{{ end }}">
                   <span class="dropdown-group-heading">{{ .Name }}</span>
                   {{ if .HasChildren }}
                   <ul class="dropdown-group-list">

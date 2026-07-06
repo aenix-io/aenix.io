@@ -179,6 +179,99 @@ menus:
       parent: solutions-devai
       weight: 4
 
+    # group: Industries
+    - name: Industries
+      identifier: solutions-industries
+      parent: solutions
+      weight: 40
+      params: { heading: true, wide: true }
+    - name: Financial Services
+      url: /industries/financial-services/
+      parent: solutions-industries
+      weight: 1
+    - name: Insurance
+      url: /industries/insurance/
+      parent: solutions-industries
+      weight: 2
+    - name: Public Sector
+      url: /industries/public-sector/
+      parent: solutions-industries
+      weight: 3
+    - name: Healthcare
+      url: /industries/healthcare/
+      parent: solutions-industries
+      weight: 4
+    - name: Telco
+      url: /industries/telco/
+      parent: solutions-industries
+      weight: 5
+    - name: Hosting Providers
+      url: /industries/hosting-providers/
+      parent: solutions-industries
+      weight: 6
+    - name: MSP
+      url: /industries/msp/
+      parent: solutions-industries
+      weight: 7
+    - name: Energy
+      url: /industries/energy/
+      parent: solutions-industries
+      weight: 8
+    - name: Manufacturing
+      url: /industries/manufacturing/
+      parent: solutions-industries
+      weight: 9
+    - name: Transport & Logistics
+      url: /industries/transport-logistics/
+      parent: solutions-industries
+      weight: 10
+    - name: Universities
+      url: /industries/universities/
+      parent: solutions-industries
+      weight: 11
+    - name: Education K-12
+      url: /industries/education-k12/
+      parent: solutions-industries
+      weight: 12
+    - name: SMB / Mid-Market
+      url: /industries/smb-mid-market/
+      parent: solutions-industries
+      weight: 13
+    - name: All industries
+      url: /industries/
+      parent: solutions-industries
+      weight: 14
+    # group: Migrate
+    - name: Migrate
+      identifier: solutions-migrate
+      parent: solutions
+      weight: 50
+      params: { heading: true }
+    - name: VMware Alternative
+      url: /alternatives/vmware-alternative/
+      parent: solutions-migrate
+      weight: 1
+    - name: VMware Migration
+      url: /migration/vmware/
+      parent: solutions-migrate
+      weight: 2
+    - name: Cozystack vs VMware
+      url: /compare/cozystack-vs-vmware/
+      parent: solutions-migrate
+      weight: 3
+    - name: Nutanix Migration
+      url: /migration/nutanix/
+      parent: solutions-migrate
+      weight: 4
+    - name: All alternatives
+      url: /alternatives/
+      parent: solutions-migrate
+      weight: 5
+    - name: Migration overview
+      url: /migration/
+      parent: solutions-migrate
+      weight: 6
+
     # ── Services ──
     - name: Services
       url: /services/
@@ -269,95 +362,6 @@ menus:
       parent: services-ai
       weight: 1
 
-    # ── Industries ──
-    - name: Industries
-      url: /industries/
-      identifier: industries
-      weight: 40
-    # group: Regulated
-    - name: Regulated
-      identifier: industries-regulated
-      parent: industries
-      weight: 10
-      params: { heading: true }
-    - name: Financial Services
-      url: /industries/financial-services/
-      parent: industries-regulated
-      weight: 1
-    - name: Insurance
-      url: /industries/insurance/
-      parent: industries-regulated
-      weight: 2
-    - name: Public Sector
-      url: /industries/public-sector/
-      parent: industries-regulated
-      weight: 3
-
-    - name: Healthcare
-      url: /industries/healthcare/
-      parent: industries-regulated
-      weight: 4
-    # group: Telco & Hosting
-    - name: Telco & Hosting
-      identifier: industries-telco
-      parent: industries
-      weight: 20
-      params: { heading: true }
-    - name: Telco
-      url: /industries/telco/
-      parent: industries-telco
-      weight: 1
-    - name: Hosting Providers
-      url: /industries/hosting-providers/
-      parent: industries-telco
-      weight: 2
-    - name: MSP
-      url: /industries/msp/
-      parent: industries-telco
-      weight: 3
-    # group: Industrial
-    - name: Industrial
-      identifier: industries-industrial
-      parent: industries
-      weight: 30
-      params: { heading: true }
-    - name: Energy
-      url: /industries/energy/
-      parent: industries-industrial
-      weight: 1
-    - name: Manufacturing
-      url: /industries/manufacturing/
-      parent: industries-industrial
-      weight: 2
-    - name: Transport & Logistics
-      url: /industries/transport-logistics/
-      parent: industries-industrial
-      weight: 3
-    # group: Education
-    - name: Education
-      identifier: industries-education
-      parent: industries
-      weight: 40
-      params: { heading: true }
-    - name: Universities
-      url: /industries/universities/
-      parent: industries-education
-      weight: 1
-    - name: Education K-12
-      url: /industries/education-k12/
-      parent: industries-education
-      weight: 2
-    # group: Other
-    - name: Other
-      identifier: industries-other
-      parent: industries
-      weight: 50
-      params: { heading: true }
-    - name: SMB / Mid-Market
-      url: /industries/smb-mid-market/
-      parent: industries-other
-      weight: 1
-
     # ── Pricing ──
     - name: Pricing
       url: /pricing/
@@ -393,33 +397,6 @@ menus:
       url: /roi-calculator/
       parent: resources
       weight: 6
-
-    # ── Migrate ──
-    - name: Migrate
-      url: /migration/
-      identifier: migrate
-      weight: 45
-    - name: VMware Alternative
-      url: /alternatives/vmware-alternative/
-      parent: migrate
-      weight: 1
-    - name: VMware Migration
-      url: /migration/vmware/
-      parent: migrate
-      weight: 2
-    - name: Cozystack vs VMware
-      url: /compare/cozystack-vs-vmware/
-      parent: migrate
-      weight: 3
-    - name: Nutanix Migration
-      url: /migration/nutanix/
-      parent: migrate
-      weight: 3
-
-    - name: All alternatives
-      url: /alternatives/
-      parent: migrate
-      weight: 4
 
     # ── Company ──
     - name: Company
@@ -561,6 +538,98 @@ menus:
       url: /de/loesungen/private-llm/
       parent: solutions-de-devai
       weight: 4
+    # group: Branchen
+    - name: Branchen
+      identifier: solutions-de-branchen
+      parent: solutions-de
+      weight: 40
+      params: { heading: true, wide: true }
+    - name: Finanzdienstleistungen
+      url: /de/branchen/finanzdienstleistungen/
+      parent: solutions-de-branchen
+      weight: 1
+    - name: Versicherung
+      url: /de/branchen/versicherung/
+      parent: solutions-de-branchen
+      weight: 2
+    - name: Öffentlicher Sektor
+      url: /de/branchen/oeffentlicher-sektor/
+      parent: solutions-de-branchen
+      weight: 3
+    - name: Gesundheitswesen
+      url: /de/branchen/gesundheitswesen/
+      parent: solutions-de-branchen
+      weight: 4
+    - name: Telco
+      url: /de/branchen/telco/
+      parent: solutions-de-branchen
+      weight: 5
+    - name: Hosting-Anbieter
+      url: /de/branchen/hosting-anbieter/
+      parent: solutions-de-branchen
+      weight: 6
+    - name: MSP
+      url: /de/branchen/msp/
+      parent: solutions-de-branchen
+      weight: 7
+    - name: Energie
+      url: /de/branchen/energie/
+      parent: solutions-de-branchen
+      weight: 8
+    - name: Fertigung
+      url: /de/branchen/fertigung/
+      parent: solutions-de-branchen
+      weight: 9
+    - name: Transport & Logistik
+      url: /de/branchen/transport-logistik/
+      parent: solutions-de-branchen
+      weight: 10
+    - name: Universitäten
+      url: /de/branchen/universitaeten/
+      parent: solutions-de-branchen
+      weight: 11
+    - name: K-12-Bildung
+      url: /de/branchen/k12-bildung/
+      parent: solutions-de-branchen
+      weight: 12
+    - name: Mittelstand
+      url: /de/branchen/mittelstand/
+      parent: solutions-de-branchen
+      weight: 13
+    - name: Alle Branchen
+      url: /de/branchen/
+      parent: solutions-de-branchen
+      weight: 14
+    # group: Migration
+    - name: Migration
+      identifier: solutions-de-migration
+      parent: solutions-de
+      weight: 50
+      params: { heading: true }
+    - name: VMware-Alternative
+      url: /de/alternativen/vmware-alternative/
+      parent: solutions-de-migration
+      weight: 1
+    - name: VMware-Migration
+      url: /de/migration/vmware/
+      parent: solutions-de-migration
+      weight: 2
+    - name: Cozystack vs VMware
+      url: /de/vergleichen/cozystack-vs-vmware/
+      parent: solutions-de-migration
+      weight: 3
+    - name: Nutanix-Migration
+      url: /de/migration/nutanix/
+      parent: solutions-de-migration
+      weight: 4
+    - name: Alle Alternativen
+      url: /de/alternativen/
+      parent: solutions-de-migration
+      weight: 5
+    - name: Migrationsübersicht
+      url: /de/migration/
+      parent: solutions-de-migration
+      weight: 6
     - name: Dienstleistungen
       url: /de/dienstleistungen/
       identifier: services-de
@@ -645,112 +714,6 @@ menus:
       url: /de/dienstleistungen/ai-platform-build/
       parent: services-de-ai
       weight: 1
-    - name: Branchen
-      url: /de/branchen/
-      identifier: industries-de
-      weight: 40
-    - name: Reguliert
-      identifier: industries-de-reg
-      parent: industries-de
-      weight: 10
-      params: { heading: true }
-    - name: Finanzdienstleistungen
-      url: /de/branchen/finanzdienstleistungen/
-      parent: industries-de-reg
-      weight: 1
-    - name: Versicherung
-      url: /de/branchen/versicherung/
-      parent: industries-de-reg
-      weight: 2
-    - name: Öffentlicher Sektor
-      url: /de/branchen/oeffentlicher-sektor/
-      parent: industries-de-reg
-      weight: 3
-
-    - name: Gesundheitswesen
-      url: /de/branchen/gesundheitswesen/
-      parent: industries-de-reg
-      weight: 4
-    - name: Telco & Hosting
-      identifier: industries-de-telco
-      parent: industries-de
-      weight: 20
-      params: { heading: true }
-    - name: Telco
-      url: /de/branchen/telco/
-      parent: industries-de-telco
-      weight: 1
-    - name: Hosting-Anbieter
-      url: /de/branchen/hosting-anbieter/
-      parent: industries-de-telco
-      weight: 2
-    - name: MSP
-      url: /de/branchen/msp/
-      parent: industries-de-telco
-      weight: 3
-    - name: Industrie
-      identifier: industries-de-ind
-      parent: industries-de
-      weight: 30
-      params: { heading: true }
-    - name: Energie
-      url: /de/branchen/energie/
-      parent: industries-de-ind
-      weight: 1
-    - name: Fertigung
-      url: /de/branchen/fertigung/
-      parent: industries-de-ind
-      weight: 2
-    - name: Transport & Logistik
-      url: /de/branchen/transport-logistik/
-      parent: industries-de-ind
-      weight: 3
-    - name: Bildung
-      identifier: industries-de-edu
-      parent: industries-de
-      weight: 40
-      params: { heading: true }
-    - name: Universitäten
-      url: /de/branchen/universitaeten/
-      parent: industries-de-edu
-      weight: 1
-    - name: K-12-Bildung
-      url: /de/branchen/k12-bildung/
-      parent: industries-de-edu
-      weight: 2
-    - name: Sonstige
-      identifier: industries-de-other
-      parent: industries-de
-      weight: 50
-      params: { heading: true }
-    - name: Mittelstand
-      url: /de/branchen/mittelstand/
-      parent: industries-de-other
-      weight: 1
-    - name: Migration
-      url: /de/migration/
-      identifier: migrate-de
-      weight: 45
-    - name: VMware-Alternative
-      url: /de/alternativen/vmware-alternative/
-      parent: migrate-de
-      weight: 1
-    - name: VMware-Migration
-      url: /de/migration/vmware/
-      parent: migrate-de
-      weight: 2
-    - name: Cozystack vs VMware
-      url: /de/vergleichen/cozystack-vs-vmware/
-      parent: migrate-de
-      weight: 3
-    - name: Nutanix-Migration
-      url: /de/migration/nutanix/
-      parent: migrate-de
-      weight: 3
-    - name: Alle Alternativen
-      url: /de/alternativen/
-      parent: migrate-de
-      weight: 4
     - name: Preise
       url: /de/preise/
       weight: 50
