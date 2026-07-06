@@ -3,7 +3,7 @@
   Usage:
       {{< cta-row primary="Book a discovery call" primary_url="/contact/" secondary="Read article" secondary_url="/blog/..." >}}
 */}}
-{{- $primary := .Get "primary" | default "Book a 30-minute discovery call" -}}
+{{- $primary := .Get "primary" | default "Book a discovery call" -}}
 {{- $primaryURL := .Get "primary_url" | default (.Site.Params.discoveryFormURL | default "/contact/") -}}
 {{- $secondary := .Get "secondary" -}}
 {{- $secondaryURL := .Get "secondary_url" -}}

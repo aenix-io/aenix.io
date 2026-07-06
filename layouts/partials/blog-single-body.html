@@ -73,7 +73,7 @@
       {{- $de := eq .Params.language "de" -}}
       {{- $tut := eq $type "tutorial" -}}
       {{- $heading := cond $tut (cond $de "Möchten Sie das mit uns umsetzen?" "Want this built with you?") (cond $de "Mit Aenix sprechen?" "Talk to Aenix?") -}}
-      {{- $btn := cond $tut (cond $de "Platform-Readiness-Assessment anfragen" "Get a Platform Readiness Assessment") (cond $de "30-minütigen Discovery-Call buchen" "Book a 30-minute discovery call") -}}
+      {{- $btn := cond $tut (cond $de "Assessment anfragen" "Get readiness assessment") (cond $de "Discovery-Call buchen" "Book a discovery call") -}}
       {{- $url := cond $tut (cond $de "/de/dienstleistungen/platform-readiness-assessment/" "/services/platform-readiness-assessment/") (cond $de "/de/kontakt/" "/contact/") -}}
       <aside class="blog-post-cta">
         <h3 class="blog-post-cta__heading">{{ $heading }}</h3>
