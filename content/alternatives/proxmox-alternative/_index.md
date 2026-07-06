@@ -1,7 +1,7 @@
 ---
 title: "Proxmox alternative — when SMB-grade virtualization stops being enough"
 description: "Proxmox VE is excellent for what it is: an open-source KVM-based virtualization platform optimized for small-to-mid-size deployments. The architectural..."
-related_pages: ["/alternatives/vmware-alternative", "/products/aenix-platform/isp-edition/", "/products/cozystack", "/services/private-cloud-consulting"]
+related_pages: ["/alternatives/vmware-alternative", "/products/aenix-platform/isp-edition/", "/products/cozystack", "/services/private-cloud-consulting", "/case-studies/bare-metal-kubernetes-messaging-saas/"]
 language: "en"
 direct_answer: |
   **A Proxmox alternative is a virtualization platform that takes over where Proxmox VE's small-to-mid-size design center stops scaling — typically when teams need hard multi-tenancy, a managed-service catalog beyond VMs, service-provider billing, or GPU and AI workloads. Cozystack is the open-source, Kubernetes-native alternative built for that next stage: it runs VMs through KubeVirt and containers on a single Kubernetes API, with Cilium (eBPF) networking, LINSTOR/DRBD storage, a Tenant CRD multi-tenancy model, and first-class managed databases and S3 object storage on the same hardware Proxmox runs on. Aenix, the team behind Cozystack, sells the productized Ænix Platform plus architecture and migration services for hosting providers, regional clouds, and regulated enterprises outgrowing Proxmox.**

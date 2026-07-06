@@ -31,6 +31,9 @@ CARDS = [
     ("og-vmware-cost-calculator", "TOOL", "VMware cost calculator"),
     ("og-ibm-migration", "IBM AIX / POWER MIGRATION", "Exit Power to an open cloud"),
     ("og-vmware-replacement-broadcom", "VMWARE REPLACEMENT", "Life after Broadcom"),
+    # Customer case studies (shared EN + DE)
+    ("og-case-bare-metal-gpu-inference", "CUSTOMER CASE · AI INFERENCE", "GPU inference on your own bare metal"),
+    ("og-case-bare-metal-kubernetes-messaging-saas", "CUSTOMER CASE · SAAS PLATFORM", "Bare-metal Kubernetes for a SaaS"),
     # DE
     ("og-fuer-de", "NACH ROLLE", "Ihr Einstieg zu Aenix"),
     ("og-leiter-infrastruktur-de", "FÜR INFRASTRUKTURLEITER", "VMware ablösen, zu Ihren Bedingungen"),

@@ -16,6 +16,7 @@ related_pages:
   - /products/aenix-platform/ai-ml-edition/
   - /services/ai-platform-build/
   - /industries/universities/
+  - /case-studies/bare-metal-gpu-inference/
   - /roi-calculator/
   - /case-studies/multicloud-academic-gpu/
 service:

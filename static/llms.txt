@@ -152,6 +152,8 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 - [Pricing](https://aenix.io/pricing/): Five edition pricing blocks (ISP Edition from €1.3k/month; others on request)
 - [Partner Program](https://aenix.io/partners/): Up to 40% margin for resellers, integrators, distributors
 - [Case studies](https://aenix.io/case-studies/): Production deployments at regional hosting providers (Ænix Platform ISP Edition); platform R&D for ecosystem vendors; tier-1 European bank engagements (NDA until mid-2027)
+- [Case: bare-metal GPU inference](https://aenix.io/case-studies/bare-metal-gpu-inference/): A mass-market mobile app moved ML inference off a rented GPU cloud onto its own 8×H100 bare-metal server on Cozystack — KubeVirt GPU passthrough, KEDA autoscaling, ~2 months to production, 2-3× GPU efficiency (anonymized)
+- [Case: Proxmox to Kubernetes for a messaging SaaS](https://aenix.io/case-studies/bare-metal-kubernetes-messaging-saas/): A WhatsApp/Telegram Business gateway moved ~25,000 per-customer instances off 13 Proxmox hosts onto one GitOps Cozystack cluster — managed MongoDB/PostgreSQL/RabbitMQ, one-person infra team (anonymized)
 - [About](https://aenix.io/about/): Aenix open-core narrative, Cozystack origin, team
 - [Conferences](https://aenix.io/conferences/): KubeCon, CloudFest, sovereign-cloud events where Aenix presents
 
