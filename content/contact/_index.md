@@ -4,7 +4,7 @@ description: "Contact Aenix to discuss Ænix Platform editions, book a discovery
 language: "en"
 ---
 
-**Book a 30-minute discovery call to discuss Ænix Platform editions, your buyer profile, and engagement scope. Or write to us for partnership, press, or general inquiries.**
+**Book a discovery call to discuss Ænix Platform editions, your buyer profile, and engagement scope. Or write to us for partnership, press, or general inquiries.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

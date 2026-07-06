@@ -49,7 +49,7 @@ Verfügbar in der gesamten DACH-Region. Deutschsprachiges Vertriebs- und Support
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">30-minütiges Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/de/migration/vmware">VMware-Migrationspfad ansehen →</a>
+  <a class="cta-secondary" href="/de/migration/vmware">VMware-Migration →</a>
 </div>
 
 ---

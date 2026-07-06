@@ -59,7 +59,7 @@ faq:
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for the regulated cloud foundation that DR sits on; **[DORA compliance](/solutions/dora-compliance/)** for the operational-resilience obligations DR helps you meet. Start with a **[Platform Readiness Assessment →](/services/platform-readiness-assessment/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/case-studies/sovereign-public-cloud/">See the case study →</a>
 </div>
 

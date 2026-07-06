@@ -112,7 +112,7 @@ Cozystack is open-source — many organizations run it without commercial Aenix 
 
 ## How to start
 
-Book a 30-minute discovery call. We'll match your situation against relevant case patterns and discuss next steps.
+Book a discovery call. We'll match your situation against relevant case patterns and discuss next steps.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

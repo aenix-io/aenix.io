@@ -24,7 +24,7 @@ Plus an entry tier — **Pure Cozystack with Ænix Support** — for product tea
 
 **Engagement size:** ISP Edition entry from €1.3k/month support; Public Cloud / Enterprise / IDP / AI/ML full builds €500k - €10M+ multi-year.
 
-[Explore Ænix Platform →](/products/aenix-platform/)
+[Explore platform →](/products/aenix-platform/)
 
 ---
 

@@ -41,7 +41,7 @@ faq:
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell, WHMCS-integriertes Billing, ab €1.3k/Monat Support-Tier. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/blog/2026/05/msp-cloud-platform-modernization/">MSP-Cloud-Modernisierung →</a>
 </div>
 
@@ -80,7 +80,7 @@ Für das vollständige Engagement siehe **[White-Label-Cloud-Services](/de/diens
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[White-Label-Cloud-Services](/de/dienstleistungen/white-label-cloud/)** — Engagement

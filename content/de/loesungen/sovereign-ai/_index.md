@@ -46,7 +46,7 @@ Aenix baut und betreibt souveräne KI-Infrastruktur für Organisationen, deren D
 > **Passt zu:** **[Ænix Platform AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** — KI-Plattform-Automatisierung out-of-the-box (Multi-Tenant-GPU-Scheduling für H100/H200/L40S/A100/Blackwell, fertige Blueprints für Inferenz + Fine-Tuning + RAG, Vector DB + Object Storage inkludiert, Souveränitätskontrollen). Für regulierte KI-Workloads auf einer breiteren souveränen Cloud: kombinieren mit [Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/). Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/private-llm-deployment-leitfaden/">Private-LLM-Leitfaden lesen →</a>
 </div>
 
@@ -243,7 +243,7 @@ Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitglied
 Kostenlos. Keine Vorbereitung nötig. Wir bestätigen die Eignung, grenzen den KI-Workload-Scope auf Ihre Datenklasse und Ihren Regulator ein und sagen Ihnen, ob das 14-tägige oder das 28-tägige Assessment zu Ihrer Situation passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder lesen Sie weiter:

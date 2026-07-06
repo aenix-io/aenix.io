@@ -1,0 +1,37 @@
+{{- /*
+  render-heading.html — default heading rendering PLUS server-side mid-page CTA
+  injection on long landing pages (marketer-approved cadence, decision #2).
+
+  Rules:
+    - Landing page_types only (solution/services/industry/alternative/migration/product/compare).
+    - Counts H2 sections; injects a slim inline CTA BEFORE the 3rd and 6th H2.
+    - First two H2s are never eligible (reader isn't decision-ready yet).
+    - Max 2 injected CTAs per page; the bottom landing-cta banner still renders.
+    - Alternating intent: first injected = soft (self-serve), second = hard (book call).
+    - Rendered server-side so links are crawler-visible and cause no CLS.
+  Non-landing pages (blog, hubs, etc.) get the plain default heading, untouched.
+*/ -}}
+{{- $p := .Page -}}
+{{- $landing := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare") ($p.Params.page_type | default "") -}}
+{{- if and $landing (eq .Level 2) -}}
+  {{- $n := add (int ($p.Scratch.Get "h2count" | default 0)) 1 -}}
+  {{- $p.Scratch.Set "h2count" $n -}}
+  {{- $done := int ($p.Scratch.Get "ctaInjected" | default 0) -}}
+  {{- if and (lt $done 2) (or (eq $n 3) (eq $n 6)) -}}
+    {{- $de := or (eq $p.Params.language "de") (hasPrefix $p.RelPermalink "/de/") -}}
+    {{- $soft := eq $done 0 -}}
+    {{- if $soft -}}
+      {{- $u := cond $de "/de/preise/" "/pricing/" -}}
+      {{- $t := cond $de "Vergleichen Sie noch?" "Still comparing?" -}}
+      {{- $l := cond $de "Preise & Editionen ansehen" "See pricing & editions" -}}
+      <div class="inline-cta inline-cta--soft"><span class="inline-cta__lead">{{ $t }}</span> <a class="inline-cta__link" href="{{ $u }}">{{ $l }} →</a></div>
+    {{- else -}}
+      {{- $u := cond $de "/de/kontakt/" "/contact/" -}}
+      {{- $t := cond $de "Umstieg planen?" "Ready to scope your build?" -}}
+      {{- $l := cond $de "Discovery-Call buchen" "Book a discovery call" -}}
+      <div class="inline-cta inline-cta--hard"><span class="inline-cta__lead">{{ $t }}</span> <a class="inline-cta__link inline-cta__link--primary" href="{{ $u }}">{{ $l }} →</a></div>
+    {{- end -}}
+    {{- $p.Scratch.Set "ctaInjected" (add $done 1) -}}
+  {{- end -}}
+{{- end -}}
+<h{{ .Level }} id="{{ .Anchor }}"{{ with .Attributes.class }} class="{{ . }}"{{ end }}>{{ .Text | safeHTML }}</h{{ .Level }}>

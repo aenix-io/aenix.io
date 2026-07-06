@@ -110,7 +110,7 @@ Ehrliche TCO-Modellierung ist Teil der Assessment-Phase.
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[VMware-Alternative](/de/alternativen/vmware-alternative/)** — fokussierte Empfehlung

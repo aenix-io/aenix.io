@@ -41,7 +41,7 @@ faq:
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — Multi-DC- + Edge-Architektur, NIS2-Compliance, Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/transport-logistik-cloud-architektur-nis2/">Transport-Architektur →</a>
 </div>
 
@@ -80,7 +80,7 @@ faq:
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Artikel zur Transport-Architektur](/de/blog/2026/05/transport-logistik-cloud-architektur-nis2/)**

@@ -51,7 +51,7 @@ Aenix runs NIS2-aligned platform readiness engagements for in-scope entities and
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — NIS2-aligned by design (Articles 21 risk management, 23 incident reporting, 30 coordinated vulnerability disclosure). Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/">Read NIS2 checklist →</a>
 </div>
 

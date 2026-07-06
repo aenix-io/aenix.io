@@ -7,8 +7,8 @@ language: "en"
 **Cozystack is free (Apache 2.0). Ænix Platform — our turnkey commercial cloud-in-a-box — is priced as a combination of an Edition (what you buy) and a Support Tier (how Aenix supports you). ISP Edition starts at $1,250 / month (Basic tier, 10 nodes); Enterprise tier with named TAM and air-gap is Custom-priced per RFP.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call to discuss pricing</a>
-  <a class="cta-secondary" href="#roi">Try the ROI calculator ↓</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="#roi">Try calculator ↓</a>
 </div>
 
 ---
@@ -240,7 +240,7 @@ Yes — up to 40% margin on Ænix Platform sales for resellers, integrators, and
 
 ## Ready to discuss?
 
-Book a 30-minute discovery call. We'll discuss your edition fit, support tier match, and engagement scope.
+Book a discovery call. We'll discuss your edition fit, support tier match, and engagement scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

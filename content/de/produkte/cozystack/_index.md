@@ -202,7 +202,7 @@ Einstiegs-Tier — **Pure Cozystack mit Ænix Support** — für Produkt-Teams, 
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[cozystack.io](https://cozystack.io)** — Installation, Dokumentation, Community

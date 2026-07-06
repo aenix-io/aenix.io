@@ -48,7 +48,7 @@ Aenix baut kundenseitige Public-Cloud-Produkte auf Cozystack — der Open-Source
 > **Passt zu:** **[Ænix Platform Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab €1.3k/Monat).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/blog/2026/05/launch-customer-facing-cloud-product/">Das Cloud-Produkt-Playbook lesen →</a>
 </div>
 
@@ -114,7 +114,7 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Playbook für kundenseitige Cloud-Produkte](/blog/2026/05/launch-customer-facing-cloud-product/)**

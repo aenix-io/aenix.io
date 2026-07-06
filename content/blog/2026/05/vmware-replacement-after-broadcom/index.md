@@ -59,7 +59,7 @@ Aenix is the company behind Cozystack. We build the platform, run production dep
 Available across North America, the EU, the UK, and the DACH region. German-speaking sales and support team for DACH customers.
 
 <div class="cta-row">
-  <a class="cta-primary" href="{{PIPEDRIVE_FORM_DEMO}}">Book an architecture review</a>
+  <a class="cta-primary" href="{{PIPEDRIVE_FORM_DEMO}}">Book a review</a>
   <a class="cta-secondary" href="/migration/vmware">See VMware migration path</a>
 </div>
 

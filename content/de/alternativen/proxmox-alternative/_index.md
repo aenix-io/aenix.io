@@ -44,7 +44,7 @@ Cozystack ist die Open-Source-Plattform, die für diese nächste Stufe gebaut wu
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/">Vollständigen Vergleich ansehen →</a>
+  <a class="cta-secondary" href="/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/">Vergleich ansehen →</a>
 </div>
 
 ---
@@ -93,7 +93,7 @@ Typische Migration: 2-4 Wochen Assessment + 3-9 Monate Umsetzung, je nach Umfang
 Wenn Sie evaluieren, wo Proxmox für Ihren Use Case aufhört, die richtige Wahl zu sein, starten Sie mit einem fokussierten Architektur-Review.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Proxmox vs VMware vs Cozystack — Vergleichs-Leitfaden](/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/)**

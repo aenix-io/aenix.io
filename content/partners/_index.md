@@ -7,8 +7,8 @@ language: "en"
 **Sell Ænix Platform — our turnkey commercial cloud-in-a-box — with up to 40% margin, deal protection, and direct access to the Aenix core team. For integrators, resellers, distributors, and regional cloud / sovereign-cloud builders.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Apply to the Partner Program</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Explore Ænix Platform →</a>
+  <a class="cta-primary" href="/partners/#apply">Become a partner</a>
+  <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
 </div>
 
 ---
@@ -182,7 +182,7 @@ Primary today: EU + DACH + Central Asia (Aenix-direct presence). Expanding via p
 
 ## Apply {#apply}
 
-Apply to the Partner Program. We'll review your business and reach out within 5 business days.
+Become a partner. We'll review your business and reach out within 5 business days.
 
 {{< pipedrive-form type="partner" >}}
 

@@ -21,7 +21,7 @@ related_pages:
 > **Pairs with:** **[DORA](/solutions/dora-compliance/)**, **[NIS2](/solutions/nis2-compliance/)** and **[data-sovereignty](/solutions/data-sovereignty/)** engagements, **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)**, on open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/solutions/dora-compliance/">See DORA compliance →</a>
 </div>
 
@@ -101,7 +101,7 @@ Yes — we accept RFI/RFP through standard EU member-state and Kazakhstan channe
 Free, no prep. We narrow the scope to the regulators and clauses that bind you, and tell you whether the assessment, the turnkey edition, or a build fits.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/solutions/data-sovereignty/">Data sovereignty →</a>
 </div>
 

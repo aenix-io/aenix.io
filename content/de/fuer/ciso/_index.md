@@ -20,7 +20,7 @@ related_pages:
 > **Passt zu:** **[DORA](/de/loesungen/dora-compliance/)**, **[NIS2](/de/loesungen/nis2-compliance/)** und **[Datensouveränität](/de/loesungen/data-sovereignty/)**, **[Ænix Platform](/de/produkte/)**, auf Open-Source-**[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/loesungen/dora-compliance/">DORA-Compliance ansehen →</a>
 </div>
 
@@ -100,7 +100,7 @@ Ja — wir akzeptieren RFI/RFP über EU- und Kasachstan-Standardkanäle.
 Kostenlos, ohne Vorbereitung. Wir grenzen den Scope auf die bindenden Regulierer und Klauseln ein und sagen, ob Assessment, schlüsselfertige Edition oder Aufbau passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränität →</a>
 </div>
 

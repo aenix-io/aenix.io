@@ -42,8 +42,8 @@ If you're early in the evaluation and want a single recommendation focused on mu
 > **Pairs with:** **[Ænix Platform](/products/aenix-platform/)** — five editions: ISP (hosting providers), Enterprise (regulated), Public Cloud (large operators), IDP (product engineering), AI/ML (AI-heavy). The right edition depends on your buyer profile post-VMware. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/alternatives/vmware-alternative/">See the focused recommendation →</a>
-  <a class="cta-secondary" href="/contact/?type=architecture-review">Talk to us about migration</a>
+  <a class="cta-primary" href="/alternatives/vmware-alternative/">See recommendation →</a>
+  <a class="cta-secondary" href="/contact/?type=architecture-review">Talk to us</a>
 </div>
 
 ---

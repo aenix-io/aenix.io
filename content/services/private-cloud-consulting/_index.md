@@ -54,8 +54,8 @@ Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF 
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building private/hybrid sovereign cloud; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators running their own public-cloud-class platform.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/private-cloud-architecture-2026/">Read the architecture guide →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/blog/2026/05/private-cloud-architecture-2026/">Read guide →</a>
 </div>
 
 <div class="trust-badges">

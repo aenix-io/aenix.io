@@ -21,8 +21,8 @@ related_pages:
 > **Passt zu:** **[Ænix Platform](/de/produkte/)** als schlüsselfertige Private Cloud — oder einem Aufbauprojekt nach Ihren Vorgaben. Offener Kern: **[Cozystack](https://cozystack.io)**, Apache 2.0.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
-  <a class="cta-secondary" href="/de/alternativen/">VMware-Alternative ansehen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
+  <a class="cta-secondary" href="/de/alternativen/">VMware-Alternative →</a>
 </div>
 
 <div class="trust-badges">
@@ -102,7 +102,7 @@ Die Pro-Core-Lizenz entfällt (Apache 2.0). Sie zahlen Support und/oder das Aufb
 Kostenlos, ohne Vorbereitung. Wir prüfen die Passung, sehen uns Ihre Umgebung an und sagen, ob die schlüsselfertige Edition oder das Aufbauprojekt passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/migration/">VMware-Migrationsweg →</a>
 </div>
 

@@ -8,7 +8,7 @@ language: "en"
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Start with Platform Readiness Assessment →</a>
+  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get readiness assessment →</a>
 </div>
 
 ---

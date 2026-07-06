@@ -64,7 +64,7 @@ faq:
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for the regulated cloud foundation; **[AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** for medical imaging, clinical NLP, and decision-support AI on patient data. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/solutions/data-sovereignty/">Data sovereignty →</a>
 </div>
 

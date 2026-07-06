@@ -23,7 +23,11 @@
          the subtitle on those page types — .Description still powers meta/OG/SERP.
          Non-landing list pages (section hubs, etc.) keep their subtitle. */}}
     {{- $landing := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare") (.Params.page_type | default "") -}}
-    {{ if and .Description (not $landing) }}<p class="page-hero-subtitle">{{ .Description }}</p>{{ end }}
+    {{/* Non-landing hubs: render short `hero_subtitle` (decoupled from meta) when
+         set, else fall back to the full `.Description`. .Description still powers
+         meta/OG/SERP either way. */}}
+    {{- $sub := .Params.hero_subtitle | default .Description -}}
+    {{ if and $sub (not $landing) }}<p class="page-hero-subtitle">{{ $sub }}</p>{{ end }}
   </div>
 </section>
 

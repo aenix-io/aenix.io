@@ -49,7 +49,7 @@ Aenix builds platforms for manufacturing organizations across the EU, DACH, and 
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — multi-DC + edge architecture for industrial IT/OT, NIS2 compliance for critical-product manufacturing, air-gap support for OT networks.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/solutions/data-sovereignty/">Data sovereignty →</a>
 </div>
 

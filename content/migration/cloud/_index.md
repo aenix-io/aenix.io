@@ -60,7 +60,7 @@ The team that ships your migration is the same team behind [Cozystack](/products
 > **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** — the destination depends on the buyer profile and migration pattern. Hosting providers exiting a shared cloud stack land on the ISP Edition; regulated enterprises on the Enterprise Edition; large operators on the Public Cloud Edition; product-engineering teams on the IDP Edition; AI-heavy estates on the AI/ML Edition.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/roi-calculator/">Model the TCO →</a>
 </div>
 

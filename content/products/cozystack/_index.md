@@ -43,7 +43,7 @@ faq:
 This page describes Cozystack as Aenix's open-source product. The open-source project itself lives at **[cozystack.io](https://cozystack.io)** with documentation, install guides, and the community. For the turnkey commercial cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/aenix-platform/)** with its five editions.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture review</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
   <a class="cta-secondary" href="https://cozystack.io">cozystack.io →</a>
 </div>
 
@@ -100,7 +100,7 @@ cozyportal for self-service. Production-ready WHMCS billing integration with two
 
 - **Cozystack** — open-source platform. CNCF project (currently Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Community-governed. Anyone can deploy, contribute, fork.
 - **Aenix** — the open-core company that created and maintains Cozystack. Largest single contributor. Maker of Ænix Platform.
-- **Ænix Platform** — Aenix's turnkey commercial cloud-in-a-box on top of Cozystack. Five editions (Public Cloud / ISP / Enterprise / IDP / AI/ML) matched to buyer profile. Adds hosting panel, billing, portals, payments, support, productized installer, enterprise SLA. **[Explore Ænix Platform →](/products/aenix-platform/)**.
+- **Ænix Platform** — Aenix's turnkey commercial cloud-in-a-box on top of Cozystack. Five editions (Public Cloud / ISP / Enterprise / IDP / AI/ML) matched to buyer profile. Adds hosting panel, billing, portals, payments, support, productized installer, enterprise SLA. **[Explore platform →](/products/aenix-platform/)**.
 - **cozystack.io** — official project site. Documentation, install, releases, community. Vendor-neutral, CNCF-aligned.
 - **aenix.io** (this site) — Aenix's commercial offering and product surface.
 

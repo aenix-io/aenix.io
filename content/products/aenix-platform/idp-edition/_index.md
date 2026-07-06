@@ -159,7 +159,7 @@ Yes — GitLab integration is pre-built; GitHub, Bitbucket, others supported via
 
 ## How to start
 
-Book a 30-minute discovery call. Bring your platform-engineering maturity self-assessment (or use our [free assessment](/resources/platform-engineering-maturity-assessment/)). We'll discuss IDP scope, current state, and engagement fit.
+Book a discovery call. Bring your platform-engineering maturity self-assessment (or use our [free assessment](/resources/platform-engineering-maturity-assessment/)). We'll discuss IDP scope, current state, and engagement fit.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

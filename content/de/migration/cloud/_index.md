@@ -45,7 +45,7 @@ Das Team, das Ihre Migration ausliefert, ist dasselbe Team hinter [Cozystack](/d
 > **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — das Ziel hängt vom Buyer-Profil und Migrationsmuster ab. Hosting-Anbieter, die einen geteilten Cloud-Stack verlassen, landen auf der ISP Edition; regulierte Unternehmen auf der Enterprise Edition; große Betreiber auf der Public Cloud Edition; Produkt-Engineering-Teams auf der IDP Edition; KI-lastige Bestände auf der AI/ML Edition.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/roi-rechner/">TCO modellieren →</a>
 </div>
 

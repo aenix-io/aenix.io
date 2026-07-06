@@ -47,7 +47,7 @@ Cozystack is the open-source alternative for organizations that want OpenStack's
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers and regional clouds modernizing from OpenStack; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators consolidating OpenStack at scale.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture review</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
   <a class="cta-secondary" href="/blog/2026/05/openstack-vs-cozystack-modernization/">OpenStack → Cozystack guide →</a>
 </div>
 

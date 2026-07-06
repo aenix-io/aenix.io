@@ -92,7 +92,7 @@ Typische Migration: 4-12 Monate für eine mittelgroße Bereitstellung.
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[OpenStack vs Cozystack Leitfaden](/blog/2026/05/openstack-vs-cozystack-modernization/)**

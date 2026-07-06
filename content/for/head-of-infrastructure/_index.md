@@ -22,8 +22,8 @@ related_pages:
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for a turnkey private cloud, or **[Build a Private Cloud](/services/build-private-cloud/)** when you want us to design and stand it up to your spec. Both run on **[Cozystack](/products/cozystack/)** — open source, Apache 2.0.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/alternatives/vmware-alternative/">See the VMware alternative →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/alternatives/vmware-alternative/">VMware alternative →</a>
 </div>
 
 <div class="trust-badges">
@@ -105,7 +105,7 @@ The per-core license line disappears (Apache 2.0). You pay for support and/or th
 Free, no prep. We confirm fit, look at your current estate, and tell you whether the turnkey edition or the build-with engagement matches your situation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/migration/vmware/">VMware migration path →</a>
 </div>
 

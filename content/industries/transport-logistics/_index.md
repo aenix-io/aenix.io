@@ -46,7 +46,7 @@ faq:
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — multi-DC + edge architecture, NIS2 compliance, sovereign-cloud option for cross-border logistics data.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/blog/2026/05/transport-logistics-cloud-architecture-nis2/">Transport architecture →</a>
 </div>
 

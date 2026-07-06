@@ -43,7 +43,7 @@ faq:
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — multi-DC private/hybrid sovereign cloud, customer-controlled hardware (no Nutanix appliance lock-in), DORA / NIS2 alignment.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture review</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
   <a class="cta-secondary" href="/blog/2026/05/nutanix-vs-cozystack-vs-vmware/">Nutanix vs Cozystack vs VMware →</a>
 </div>
 

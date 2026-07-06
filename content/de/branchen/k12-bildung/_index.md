@@ -72,7 +72,7 @@ Für die meisten K-12-Schulträger sind Hyperscaler-managed-Services + Standard-
 ## Wie Sie starten
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Artikel zur Cloud-Infrastruktur für K-12-Schulträger](/blog/2026/05/k12-school-district-cloud-infrastructure/)**

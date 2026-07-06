@@ -54,7 +54,7 @@ Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Sourc
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die ihre eigene Public-Cloud-Class-Plattform betreiben.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/blog/2026/05/private-cloud-architecture-2026/">Architektur-Leitfaden lesen →</a>
 </div>
 
@@ -215,7 +215,7 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Private Cloud Architecture 2026](/blog/2026/05/private-cloud-architecture-2026/)** — vollständiger Leitfaden

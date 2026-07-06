@@ -74,7 +74,7 @@ Aenix führt IBM-AIX/Power-Migrationen End-to-End durch. Dieselben Ingenieure, d
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Banken und Unternehmen (Air-Gap, Billing, gemanagte Migration). Sie ersetzen speziell IBM Cloud Pak / OpenShift? Siehe die **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">30-minütiges Discovery-Gespräch buchen</a>
+  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/preise/">Preise & Tiers ansehen →</a>
 </div>
 
@@ -270,7 +270,7 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 <a id="discovery"></a>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">30-minütiges Discovery-Gespräch buchen</a>
+  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Mit einem Assessment starten →</a>
 </div>
 

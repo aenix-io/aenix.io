@@ -8,7 +8,7 @@ language: "de"
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Mit Platform Readiness Assessment starten →</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment anfragen →</a>
 </div>
 
 ---

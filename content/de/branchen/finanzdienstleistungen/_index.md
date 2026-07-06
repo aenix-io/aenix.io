@@ -45,7 +45,7 @@ Aenix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** als regulierte Cloud-Foundation; **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** für Schadenfall-KI / Fraud Detection / souveräne KI-Workloads. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/loesungen/dora-compliance/">DORA-Compliance-Lösungen →</a>
 </div>
 
@@ -121,7 +121,7 @@ Beschaffung: Wir akzeptieren RFI / RFP über Standard-Beschaffungskanäle in EU-
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder mehr lesen:

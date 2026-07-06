@@ -48,7 +48,7 @@ Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentral
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — Multi-DC- + Edge-Architektur für industrielles IT/OT, NIS2-Compliance für die Fertigung kritischer Produkte, Air-Gap-Support für OT-Netzwerke.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränität →</a>
 </div>
 
@@ -95,7 +95,7 @@ Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentral
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Schutz von industriellem IP

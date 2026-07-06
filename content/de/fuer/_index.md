@@ -18,7 +18,7 @@ related_pages:
 **Wählen Sie die Seite für Ihre Position. Jede startet beim Problem Ihrer Rolle — VMware-Ausstieg, Developer-Self-Service, Cloud-Ökonomie, eine Cloud zum Wiederverkauf, eine Partner-Linie oder regulatorische Souveränität — und führt zum passenden Aenix-Angebot. Jede Rolle kann uns auf zwei Wegen einbinden: eine schlüsselfertige Plattform, die Sie betreiben, oder unser Team, das sie mit Ihnen baut.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/produkte/">Ænix Platform ansehen →</a>
 </div>
 

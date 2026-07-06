@@ -49,8 +49,8 @@ faq:
 **Ein VMware-Kostenrechner macht aus Broadcoms Verlängerung eine Zahl, mit der Sie handeln können. Geben Sie die CPU-Kerne Ihres Bestands und Ihren Preis pro Kern ein — und sehen Sie Jahreskosten, die Netto-Ersparnis beim Wechsel auf eine offene Apache-2.0-Plattform, das Drei-Jahres-Delta nach Migration und die Amortisation. Gebaut von Aenix — dem Team hinter Cozystack.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
-  <a class="cta-secondary" href="/de/migration/">VMware-Migrationsweg ansehen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
+  <a class="cta-secondary" href="/de/migration/">VMware-Migration →</a>
 </div>
 
 <!-- /BLOCK 1 -->
@@ -78,7 +78,7 @@ Bewusst einfache Eingaben für ein belegbares Ergebnis. Eine volle TCO umfasst S
 ## Aus der Zahl einen Plan machen
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/alternativen/">VMware-Alternative →</a>
 </div>
 

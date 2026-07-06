@@ -20,7 +20,7 @@ related_pages:
 > **Passt zu:** **[White-Label-Cloud-Aufbau](/de/dienstleistungen/)**, **[Ænix Platform ISP](/de/produkte/)** (gebrandetes Portal + Billing) und dem **[Partnerprogramm](/de/partner/)** (bis 40% Marge). Kern: Open-Source-**[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/partner/">Partnerprogramm ansehen →</a>
 </div>
 
@@ -99,7 +99,7 @@ WHMCS-integriertes Billing kommt mit der ISP-Edition.
 Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren Kundenstamm an und sagen, ob Wiederverkauf der ISP-Edition oder eigener Aufbau der schnellere Weg zur Marge ist.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/">White-Label-Cloud →</a>
 </div>
 

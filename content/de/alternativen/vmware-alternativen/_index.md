@@ -185,7 +185,7 @@ Für Service-Provider, regulierte Unternehmen und Sovereign-Cloud-Builder: **Coz
 Wenn Ihre Situation nicht zum Cozystack-Profil passt, decken die acht obigen Optionen die realistische Landschaft 2026 ab. Die richtige Wahl ist überwiegend eine Funktion von Skala, operativem Modell und bestehenden Beziehungen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

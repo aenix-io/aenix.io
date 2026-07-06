@@ -48,7 +48,7 @@ faq:
 > **Passt zu:** allen **[Ænix Platform Editions](/de/produkte/aenix-platform/)** — die Strategie ergibt, welche Edition zu Ihrem Buyer-Profil und Engagement-Scope passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment-Methodologie →</a>
 </div>
 
@@ -75,7 +75,7 @@ Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen
 Für konkrete Auslöser siehe **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)**, **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

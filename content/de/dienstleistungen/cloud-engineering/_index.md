@@ -44,7 +44,7 @@ faq:
 > **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)**, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/blog/2026/05/cloud-engineering-disciplines-2026/">Cloud-Engineering-Disziplinen →</a>
 </div>
 
@@ -74,7 +74,7 @@ Für breiteren Scope siehe **[Platform Engineering Services](/de/dienstleistunge
 Für die Methodologie siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

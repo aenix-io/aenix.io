@@ -37,7 +37,7 @@ faq:
   - q: "Which Ænix Platform edition fits a CloudStack migration?"
     a: "ISP Edition suits hosting providers and regional clouds, while Public Cloud Edition fits large operators. Both run the same Cozystack foundation, so the choice depends on scale and the operator's tenant and billing requirements."
   - q: "How do I start a CloudStack migration with Aenix?"
-    a: "Book a 30-minute discovery call. For broader scoping, the Platform Readiness Assessment service covers engagement methodology, current-state analysis, and a migration plan before any production move begins."
+    a: "Book a discovery call. For broader scoping, the Platform Readiness Assessment service covers engagement methodology, current-state analysis, and a migration plan before any production move begins."
 ---
 
 **Apache CloudStack remains established in some service-provider markets. For organizations modernizing to a Kubernetes-native foundation, Aenix runs CloudStack-to-Cozystack migrations.**
@@ -45,7 +45,7 @@ faq:
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers and regional clouds; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
 </div>
 
 ---

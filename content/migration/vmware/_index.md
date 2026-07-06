@@ -45,8 +45,8 @@ Aenix runs end-to-end VMware migrations for organizations exiting VCF. Same engi
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers exiting VMware Cloud Director (most common 2026 pattern); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises exiting VCF; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/vmware-migration-tools-and-strategy/">Read the migration playbook →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/blog/2026/05/vmware-migration-tools-and-strategy/">Read playbook →</a>
 </div>
 
 <!-- /BLOCK 1 -->

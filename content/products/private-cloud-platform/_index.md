@@ -43,7 +43,7 @@ faq:
 The Cozystack platform replaces the entire VMware Cloud Foundation stack with a Kubernetes-native equivalent that you operate under your own governance. Aenix is the company behind Cozystack — we build it, ship it in production with banks, telecom operators, and AI/GPU operators across the EU and Central Asia, and back it with engineering services.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book a 30-minute architecture review</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
   <a class="cta-secondary" href="https://cozystack.io">cozystack.io →</a>
 </div>
 

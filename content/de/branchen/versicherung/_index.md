@@ -50,7 +50,7 @@ Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zen
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für die DORA-konforme regulierte Cloud-Foundation; **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** für Schadenbearbeitungs-KI und Underwriting-KI-Workloads auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/loesungen/dora-compliance/">DORA-Compliance-Lösungen →</a>
 </div>
 
@@ -87,7 +87,7 @@ Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zen
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[DORA-Compliance](/de/loesungen/dora-compliance/)**

@@ -1698,3 +1698,45 @@ summary:focus-visible,
   .positioning-line p { font-size: 0.82rem; }
   .positioning-line .container { padding-top: 0.6rem; padding-bottom: 0.6rem; }
 }
+
+/* ── Hero microcopy (expectation-setting line under the primary CTA) ── */
+.page-hero-microcopy {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary, #94A3B8);
+  max-width: 46ch;
+}
+
+/* ── Mid-page inline CTAs (server-injected via render-heading hook) ── */
+.inline-cta {
+  margin: 2.25rem 0;
+  padding: 0.9rem 1.15rem;
+  border-radius: 10px;
+  border: 1px solid var(--border-color, rgba(148,163,184,0.22));
+  background: var(--bg-secondary, #0e1424);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.inline-cta--hard { border-left: 3px solid var(--brand-primary, #01A5FF); }
+.inline-cta__lead { color: var(--text-primary, #F1F5F9); font-weight: 600; }
+.inline-cta__link {
+  color: var(--brand-primary, #01A5FF);
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.inline-cta__link:hover { text-decoration: underline; }
+.inline-cta__link--primary {
+  background: var(--brand-secondary, #0B63CE);
+  color: #fff;
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+}
+.inline-cta__link--primary:hover { background: var(--brand-primary, #01A5FF); text-decoration: none; }
+@media (max-width: 640px) {
+  .inline-cta { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
+}

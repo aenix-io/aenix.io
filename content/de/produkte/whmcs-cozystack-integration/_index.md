@@ -53,7 +53,7 @@ service:
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — die vollständige Hosting-Anbieter-Edition (gebrandetes Portal, Katalog, Support), zu der diese WHMCS-Integration gehört. Neu bei Cozystack? Starten Sie mit **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/branchen/hosting-anbieter/">Für Hosting-Anbieter →</a>
 </div>
 

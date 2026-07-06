@@ -50,7 +50,7 @@ Aenix is the platform engineering team behind [Cozystack](/products/cozystack/),
 > **Pairs with:** **[Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)** for product / SaaS engineering teams; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building internal platforms. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/blog/2026/05/platform-engineering-vs-devops-vs-sre/">Platform engineering vs DevOps vs SRE →</a>
 </div>
 
@@ -244,7 +244,7 @@ We accept RFI / RFP through standard procurement channels.
 Free. No prep needed. We confirm fit, identify your platform engineering stage, and tell you whether assessment, build, or managed engagement matches your situation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
 </div>
 
 Or read more:

@@ -52,8 +52,8 @@ Aenix runs a structured engagement for organizations that need to take a soverei
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises consuming sovereign cloud internally; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for operators offering sovereign cloud as a product. Customer-controlled keys at every data layer (primary store, replicas, backups, observability). Air-gap option supported.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/data-residency-requirements-2026/">Read the data residency guide →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/blog/2026/05/data-residency-requirements-2026/">Read guide →</a>
 </div>
 
 <div class="trust-badges">
@@ -244,7 +244,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 Free. No prep needed. We confirm fit, narrow the sovereignty scope to your binding regulators or clauses, and tell you whether the 14-day or the 28-day variant matches your situation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
 </div>
 
 Or read more:

@@ -44,7 +44,7 @@ Aenix führt ein strukturiertes Cloud-Kosten-Engagement durch, das mit Zahlen be
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds; **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber. Die Wirtschaftlichkeit dauerhafter Auslastung auf kundeneigener Hardware senkt die TCO typischerweise um 40-70 % gegenüber Hyperscalern. Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/">Leitfaden zu Optimierungsstrategien lesen →</a>
 </div>
 
@@ -235,7 +235,7 @@ Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitglied
 Kostenlos. Keine Vorbereitung nötig. Wir bestätigen die Passung, identifizieren Ihre wichtigsten Kostenanliegen und sagen Ihnen, ob die 14-Tage- oder die 28-Tage-Variante zu Ihrer Situation passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder lesen Sie weiter:

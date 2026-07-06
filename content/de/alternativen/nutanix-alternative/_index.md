@@ -77,7 +77,7 @@ Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkei
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Nutanix vs Cozystack vs VMware](/blog/2026/05/nutanix-vs-cozystack-vs-vmware/)**

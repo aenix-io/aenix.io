@@ -27,7 +27,10 @@
       </div>
       <div class="container">
         <h1 class="page-hero-title">{{ .Title }}</h1>
-        {{ with .Description }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+        {{/* Short hero subtitle decoupled from meta: `hero_subtitle` (≤12 words,
+             scannable) renders in the hero; `.Description` stays full-length for
+             meta/OG/SERP. Falls back to .Description when hero_subtitle is unset. */}}
+        {{ with (.Params.hero_subtitle | default .Description) }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
         {{ with .Params.heroCta }}
         <div class="page-hero-cta">
           <a href="{{ .url }}" class="btn btn-primary btn-lg">{{ .text }}</a>

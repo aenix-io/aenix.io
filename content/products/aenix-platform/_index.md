@@ -186,7 +186,7 @@ Yes — up to 40% margin on Ænix Platform sales for resellers, integrators, and
 
 ## How to start
 
-Book a 30-minute discovery call. We'll discuss your platform priorities, regulatory context, scope, and which Ænix Platform edition fits.
+Book a discovery call. We'll discuss your platform priorities, regulatory context, scope, and which Ænix Platform edition fits.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

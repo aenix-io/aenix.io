@@ -10,7 +10,7 @@ hide_closing_cta: true
 **Thank you — your download is ready.** The NIS2 Compliance Readiness Checklist is below. We've also sent a copy to the email you provided.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/downloads/aenix-nis2-compliance-checklist.pdf" download>Download the PDF ↓</a>
+  <a class="cta-primary" href="/downloads/aenix-nis2-compliance-checklist.pdf" download>Download PDF ↓</a>
 </div>
 
 ---

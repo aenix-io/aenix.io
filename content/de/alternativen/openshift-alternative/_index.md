@@ -81,7 +81,7 @@ Beide sind KubeVirt-basiert, das zugrunde liegende VM-Modell ist also ähnlich. 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[OpenShift vs Cozystack Vergleich](/blog/2026/05/openshift-vs-cozystack-comparison/)**

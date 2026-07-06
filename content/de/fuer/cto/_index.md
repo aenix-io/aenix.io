@@ -20,7 +20,7 @@ related_pages:
 > **Passt zu:** **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** und **[Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, **[Ænix Platform](/de/produkte/)**, auf Open-Source-**[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/loesungen/cloud-repatriation/">Cloud-Repatriation ansehen →</a>
 </div>
 
@@ -99,7 +99,7 @@ Apache 2.0 und Ihre Infrastruktur. Support und Projekte sind Services, keine fes
 Kostenlos, ohne Vorbereitung. Wir prüfen die Ökonomie und sagen, ob schlüsselfertig oder Aufbau passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/ressourcen/">Ressourcen & TCO →</a>
 </div>
 

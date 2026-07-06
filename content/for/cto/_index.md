@@ -22,8 +22,8 @@ hide_closing_cta: true
 > **Pairs with:** **[Cloud repatriation](/solutions/cloud-repatriation/)** and **[cost optimization](/solutions/cloud-cost-optimization/)** engagements, **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)**, all on open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/resources/cloud-repatriation-tco-worksheet/">Get the TCO worksheet →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/resources/cloud-repatriation-tco-worksheet/">Get worksheet →</a>
 </div>
 
 <div class="trust-badges">
@@ -101,7 +101,7 @@ Apache 2.0 and your infrastructure. Support and engagements are services, not a 
 Free, no prep. We pressure-test the economics and tell you whether turnkey or a build-with engagement fits.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/solutions/cloud-repatriation/">Cloud repatriation →</a>
 </div>
 

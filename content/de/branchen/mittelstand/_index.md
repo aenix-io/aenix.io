@@ -95,7 +95,7 @@ Evidenz aus dem Kundenstamm: Die meisten Aenix-Engagements betreffen Engineering
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Wann Cozystack für KMU und Mittelstand passt — ehrliche Antwort](/blog/2026/05/when-cozystack-fits-smb-and-mid-market/)**

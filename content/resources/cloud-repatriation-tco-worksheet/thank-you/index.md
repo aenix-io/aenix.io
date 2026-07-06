@@ -10,8 +10,8 @@ hide_closing_cta: true
 **Thank you — your download is ready.** The Cloud Repatriation TCO Worksheet is below. We've also sent a copy to the email you provided.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/downloads/aenix-cloud-repatriation-tco-worksheet.pdf" download>Download the PDF ↓</a>
-  <a class="cta-secondary" href="/downloads/aenix-cloud-repatriation-tco-worksheet.csv" download>Download the editable CSV ↓</a>
+  <a class="cta-primary" href="/downloads/aenix-cloud-repatriation-tco-worksheet.pdf" download>Download PDF ↓</a>
+  <a class="cta-secondary" href="/downloads/aenix-cloud-repatriation-tco-worksheet.csv" download>Download CSV ↓</a>
 </div>
 
 ---

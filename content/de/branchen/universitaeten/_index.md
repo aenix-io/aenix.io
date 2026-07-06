@@ -49,7 +49,7 @@ Aenix baut Cozystack-basierte Plattformen für Universitäten, Forschungsinstitu
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveräne Studierendendaten + Multi-Tenant-Isolation von Forschungsgruppen; **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** für KI/ML-Forschungslabore mit GPU-Pools.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/blog/2026/05/cloud-native-research-and-teaching-infrastructure/">Cloud-native Forschungs-Infrastruktur →</a>
 </div>
 
@@ -161,7 +161,7 @@ Für konkrete Konditionen siehe Discovery-Call.
 ## Wie Sie starten
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder mehr lesen:

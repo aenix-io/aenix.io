@@ -47,7 +47,7 @@ faq:
 Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Unsere DevOps-Consulting-Engagements erweitern unsere Engineers in Ihre — für Assessment, Transformation oder nachhaltigen Betrieb.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/devops-best-practices-2026/">DevOps Best Practices lesen →</a>
 </div>
 
@@ -228,7 +228,7 @@ Phase-2-Implementation: die Assessment-Kosten werden je nach Scope angerechnet.
 ## Starten Sie mit einem 30-minütigen Discovery-Call
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder lesen Sie mehr:

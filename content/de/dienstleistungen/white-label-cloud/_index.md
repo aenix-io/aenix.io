@@ -82,7 +82,7 @@ faq:
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[White-Label-Cloud-MSP-Playbook](/blog/2026/05/white-label-cloud-msp-reseller-playbook/)**

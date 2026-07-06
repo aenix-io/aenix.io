@@ -21,8 +21,8 @@ related_pages:
 > **Pairs with:** **[White-label cloud](/services/white-label-cloud/)** and **[Public cloud builder](/services/public-cloud-builder/)**, **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** (branded portal + billing), and the **[Partner Program](/partners/)** (up to 40% margin). Core: open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/partners/">See the Partner Program →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/partners/">Partner Program →</a>
 </div>
 
 <div class="trust-badges">
@@ -101,7 +101,7 @@ WHMCS-integrated billing ships with the ISP Edition, with two integration modes.
 Free, no prep. We look at your client base and tell you whether reselling the ISP Edition or building your own cloud with us is the faster path to margin.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/services/white-label-cloud/">White-label cloud →</a>
 </div>
 

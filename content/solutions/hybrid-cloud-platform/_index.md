@@ -55,7 +55,7 @@ Aenix builds and operates hybrid cloud platforms based on [Cozystack](/products/
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — one control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds. For large operators or telcos: combine with **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for multi-region public-cloud-class control plane.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/blog/2026/05/hybrid-cloud-architecture-patterns-2026/">Hybrid architecture patterns →</a>
 </div>
 

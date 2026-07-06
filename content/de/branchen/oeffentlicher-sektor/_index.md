@@ -50,7 +50,7 @@ Aenix baut Plattformen für öffentliche und quasi-öffentliche Organisationen i
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveräne Cloud mit strikt kundenkontrollierten Schlüsseln + Air-Gap-Option; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große öffentliche-Sektor-Cloud-Produkt-Launches im Hyperscaler-nahen Maßstab.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/loesungen/data-sovereignty/">Datensouveränitäts-Lösungen →</a>
 </div>
 
@@ -123,7 +123,7 @@ Wir antworten mit: Unternehmensprofil, früheren öffentlichen-Sektor-Referenzen
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder mehr lesen:

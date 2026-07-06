@@ -51,8 +51,8 @@ Cozystack is a CNCF project (currently CNCF Sandbox; CNCF Incubating expected la
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers (most common 2026 trigger — VMware Cloud Director exit); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises (VMware Cloud Foundation exit); **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book a 60-minute architecture review</a>
-  <a class="cta-secondary" href="/migration/vmware">See the migration path →</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
+  <a class="cta-secondary" href="/migration/vmware">Migration path →</a>
 </div>
 
 <div class="trust-badges">

@@ -187,6 +187,6 @@ Pick the entry that fits — we'll route from there.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Explore Ænix Platform →</a>
+  <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
   <a class="cta-secondary" href="/pricing/">See pricing</a>
 </div>

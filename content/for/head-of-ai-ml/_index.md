@@ -21,7 +21,7 @@ related_pages:
 > **Pairs with:** **[Sovereign AI](/solutions/sovereign-ai/)** and **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** for one-click GPU inference, or **[AI Platform Build](/services/ai-platform-build/)** to design it to your stack. Open core: **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/solutions/sovereign-ai/">See sovereign AI →</a>
 </div>
 
@@ -101,7 +101,7 @@ See [sovereign AI](/solutions/sovereign-ai/) — running on customer-controlled 
 Free, no prep. We look at your GPU footprint and model/data constraints and tell you whether the AI/ML Edition or a build-with engagement fits.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/products/aenix-platform/ai-ml-edition/">AI/ML Edition →</a>
 </div>
 

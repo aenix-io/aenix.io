@@ -7,7 +7,7 @@ language: "de"
 **Fortgeschrittener Kubernetes-Kurs von Aenix. Engineers lernen den gleichen Stack, der Ænix-Platform-Deployments antreibt — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, produktionsreif, unterrichtet von den Engineers, die Cozystack pflegen.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Zur nächsten Kohorte anmelden</a>
+  <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Jetzt anmelden</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Ænix-Platform-Engagement →</a>
 </div>
 

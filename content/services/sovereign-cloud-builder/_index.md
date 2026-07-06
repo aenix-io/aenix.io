@@ -50,7 +50,7 @@ Aenix builds sovereign cloud products on Cozystack for governments, quasi-public
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/">Read the sovereign cloud playbook →</a>
+  <a class="cta-secondary" href="/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/">Read playbook →</a>
 </div>
 
 ---

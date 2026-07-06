@@ -45,7 +45,7 @@ Aenix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das glei
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT; **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** für Netzoptimierungs-KI-Workloads.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/smart-grid-plattform-architektur-it-ot/">Smart-Grid-Plattform-Architektur →</a>
 </div>
 
@@ -134,7 +134,7 @@ Wir akzeptieren RFI / RFP über:
 ## Wie Sie starten
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder mehr lesen:

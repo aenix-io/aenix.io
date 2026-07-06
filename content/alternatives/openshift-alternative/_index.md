@@ -46,7 +46,7 @@ faq:
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises; **[IDP Edition](/products/aenix-platform/idp-edition/)** for product engineering teams replacing OpenShift's developer experience layer.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture review</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
   <a class="cta-secondary" href="/blog/2026/05/openshift-vs-cozystack-comparison/">OpenShift vs Cozystack →</a>
 </div>
 

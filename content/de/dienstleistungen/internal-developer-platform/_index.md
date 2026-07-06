@@ -49,7 +49,7 @@ Aenix baut Internal Developer Platforms (IDPs), die adoptiert werden. Nicht Back
 > **Passt zu:** **[Ænix Platform IDP Edition](/de/produkte/aenix-platform/idp-edition/)** — Internal Developer Platform Layer (GitLab-Automation, Argo CD Workflows, APIs, Golden Paths, Productivity-Dashboards) auf der Cozystack-Cloud-Foundation. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/">IDP-Beispiele lesen →</a>
 </div>
 
@@ -232,7 +232,7 @@ Wenn Phase 2 auf das Assessment folgt, werden die Assessment-Kosten je nach Scop
 ## Beginnen Sie mit einem 30-minütigen Discovery-Call
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder lesen Sie mehr:

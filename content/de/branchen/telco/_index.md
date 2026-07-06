@@ -53,7 +53,7 @@ Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien.
 > **Passt zu:** **[Ænix Platform Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für Telcos, die kundenseitige souveräne Cloud-Produkte im Multi-Region-Maßstab launchen; **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für NIS2-konforme interne Cloud- und Edge-Plattformen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/loesungen/sovereign-ai/">Souveräne KI für Telco →</a>
 </div>
 
@@ -117,7 +117,7 @@ Die Phase-2-Implementierung erstreckt sich typischerweise über 6–24 Monate f�
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Souveräne KI](/de/loesungen/sovereign-ai/)** — Telekom-KI-Use-Cases

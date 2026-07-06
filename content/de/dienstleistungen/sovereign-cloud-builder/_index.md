@@ -100,7 +100,7 @@ Aenix akzeptiert RFI / RFP über:
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Sovereign-Cloud-Playbook](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)**

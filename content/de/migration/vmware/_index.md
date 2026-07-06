@@ -45,7 +45,7 @@ Aenix führt End-to-End-VMware-Migrationen für Organisationen durch, die VCF ve
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter, die VMware Cloud Director verlassen (häufigstes Muster 2026); **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die VCF verlassen; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/vmware-migration-tools-strategie/">Zum Migrations-Playbook →</a>
 </div>
 
@@ -226,7 +226,7 @@ Wenn Phase 2 auf das Assessment folgt, wird die Assessment-Gebühr je nach Scope
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[VMware-Migrations-Tools und -Strategie](/de/blog/2026/05/vmware-migration-tools-strategie/)**

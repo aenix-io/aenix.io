@@ -48,7 +48,7 @@ Aenix baut Private Clouds end-to-end auf Basis von [Cozystack](/de/produkte/cozy
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die eine Multi-Region-Plattform in Public-Cloud-Qualität brauchen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/blog/2026/05/build-private-cloud-90-day-playbook/">Das 90-Tage-Playbook lesen →</a>
 </div>
 
@@ -120,7 +120,7 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 ## Wie Sie starten
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Private Cloud aufbauen — 90-Tage-Playbook](/blog/2026/05/build-private-cloud-90-day-playbook/)**

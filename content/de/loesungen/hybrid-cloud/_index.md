@@ -46,7 +46,7 @@ Aenix baut und betreibt Hybrid-Cloud-Plattformen auf Basis von [Cozystack](/de/p
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telkos: kombinieren Sie diese mit der **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/">Hybrid-Architektur-Muster →</a>
 </div>
 
@@ -207,7 +207,7 @@ Umsetzung in Phase 2: Aenix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 <a id="discovery"></a>
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Hybrid-Cloud-Architektur-Muster](/de/blog/2026/05/hybrid-cloud-architektur-muster-2026/)**

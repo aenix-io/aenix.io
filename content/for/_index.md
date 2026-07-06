@@ -18,8 +18,8 @@ related_pages:
 **Pick the page written for your seat. Each one starts from the problem your role owns — VMware exit, developer self-service, cloud economics, a cloud to resell, a partner line, or regulatory sovereignty — and routes you to the right Aenix offer. Every role can engage us two ways: a turnkey platform you run, or our engineering team that builds it with you.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Explore Ænix Platform →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
 </div>
 
 ---

@@ -46,7 +46,7 @@ faq:
 > **Passt zu:** **[Souveräne KI](/de/loesungen/sovereign-ai/)** und **[Ænix Platform AI/ML](/de/produkte/)** für One-Click-GPU-Inferenz — oder einem Aufbauprojekt nach Ihrem Stack. Offener Kern: **[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/loesungen/sovereign-ai/">Souveräne KI ansehen →</a>
 </div>
 
@@ -100,7 +100,7 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-/Daten-Zwänge an und sagen, ob AI/ML-Edition oder Aufbauprojekt passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/produkte/">AI/ML-Edition →</a>
 </div>
 

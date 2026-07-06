@@ -75,8 +75,8 @@ Aenix runs IBM AIX/Power migrations end-to-end. The same engineers who built and
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated banks and enterprises (air-gap, billing, fully managed migration). Replacing IBM Cloud Pak / OpenShift specifically? See the **[OpenShift alternative](/alternatives/openshift-alternative/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/pricing/">See pricing & tiers →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/pricing/">See pricing →</a>
 </div>
 
 <!-- /BLOCK 1 -->
@@ -271,8 +271,8 @@ Estate size and the legacy/microservice mix drive the actual schedule; sequencin
 <a id="discovery"></a>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Start with an assessment →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get an assessment →</a>
 </div>
 
 - **[OpenShift alternative](/alternatives/openshift-alternative/)** — replacing Cloud Pak / OpenShift

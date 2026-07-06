@@ -41,8 +41,8 @@ Aenix builds developer self-service capability into platforms that product teams
 > **Pairs with:** **[Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)** — Internal Developer Platform layer with GitLab automation, Argo CD workflows, APIs for self-service, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/developer-experience-platform-self-service-paths/">Read the self-service paths guide →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/blog/2026/05/developer-experience-platform-self-service-paths/">Read guide →</a>
 </div>
 
 ---

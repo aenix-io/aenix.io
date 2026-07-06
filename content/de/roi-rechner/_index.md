@@ -27,7 +27,7 @@ faq:
 **Vier interaktive Rechner für die Ökonomie einer eigenen Cloud-Plattform. Modellieren Sie einen VMware-Ausstieg, vergleichen Sie die Gesamtkosten für den Eigenbau einer Plattform gegenüber dem Betrieb auf Cozystack mit Ænix-Support, dimensionieren Sie die Unit Economics eines Hosting-Geschäfts oder wägen Sie den Kauf von GPUs gegen deren Miete ab. Jede Eingabe ist editierbar, jedes Ergebnis wird live neu berechnet — von Aenix, dem Team hinter Cozystack.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/preise/">Preise ansehen →</a>
 </div>
 
@@ -77,8 +77,8 @@ Siehe die **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** und **
 Ein Discovery-Call macht aus diesen Schätzungen eine belastbare TCO auf Workload-Ebene — inklusive dem, was besser bleibt, wo es ist.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Ænix Platform entdecken →</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Platform entdecken →</a>
 </div>
 
 ---

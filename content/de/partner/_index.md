@@ -7,8 +7,8 @@ language: "de"
 **Verkaufen Sie Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box — mit bis zu 40% Marge, Deal-Schutz und direktem Zugang zum Aenix-Core-Team. Für Integratoren, Reseller, Distributoren und regionale Cloud- / souveräne-Cloud-Builder.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Zum Partner-Programm bewerben</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Ænix Platform entdecken →</a>
+  <a class="cta-primary" href="/partners/#apply">Partner werden</a>
+  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Platform entdecken →</a>
 </div>
 
 ---

@@ -50,7 +50,7 @@ Aenix baut Developer-self-service in Plattformen ein, die Produktteams auch wirk
 > **Passt zu:** **[Ænix Platform IDP Edition](/de/produkte/aenix-platform/idp-edition/)** — Internal Developer Platform Layer mit GitLab-Automatisierung, Argo CD Workflows, APIs für self-service, Golden-Path-Templates und Dashboards für die Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/">Leitfaden zu Self-Service-Pfaden lesen →</a>
 </div>
 
@@ -126,7 +126,7 @@ Self-service ist Teil der umfassenderen Platform-Engineering-Arbeit — siehe **
 ## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Artikel zu Self-Service-Pfaden](/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/)**

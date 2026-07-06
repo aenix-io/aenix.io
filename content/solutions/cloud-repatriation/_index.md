@@ -51,8 +51,8 @@ Aenix runs the technical engagement that turns "we need to leave AWS / Azure / G
 > **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** — the right edition follows your buyer profile. Hosting providers / regional clouds: [ISP Edition](/products/aenix-platform/isp-edition/). Regulated enterprises: [Enterprise Edition](/products/aenix-platform/enterprise-edition/). Large operators: [Public Cloud Edition](/products/aenix-platform/public-cloud-edition/). Product engineering teams: [IDP Edition](/products/aenix-platform/idp-edition/). AI-heavy: [AI/ML Edition](/products/aenix-platform/ai-ml-edition/). Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/reverse-cloud-migration-playbook/">Read the repatriation playbook →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/blog/2026/05/reverse-cloud-migration-playbook/">Read playbook →</a>
 </div>
 
 <div class="trust-badges">
@@ -246,7 +246,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 Free. No prep needed. We confirm fit, identify your top cost concerns, and tell you whether the 14-day or 28-day variant matches your situation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
 </div>
 
 Or read more:

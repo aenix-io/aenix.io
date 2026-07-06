@@ -38,7 +38,7 @@ faq:
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — fully white-labelable cozyportal, multi-tier reseller model, WHMCS-integrated billing, from €1.3k/month support tier. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/blog/2026/05/msp-cloud-platform-modernization/">MSP cloud modernization →</a>
 </div>
 

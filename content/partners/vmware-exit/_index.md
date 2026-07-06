@@ -23,7 +23,7 @@ related_pages:
 > **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection), **[white-label cloud](/services/white-label-cloud/)** delivery, and the open **[VMware alternative](/alternatives/vmware-alternative/)**. Core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Apply to the Partner Program</a>
+  <a class="cta-primary" href="/partners/#apply">Become a partner</a>
   <a class="cta-secondary" href="/contact/">Book a partner call →</a>
 </div>
 
@@ -120,7 +120,7 @@ Use the [VMware cost calculator](/resources/vmware-cost-calculator/) on the call
 Free, no prep. We map your client base to the editions, walk through margin and deal protection, and decide resell vs co-deliver.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Apply to the Partner Program</a>
+  <a class="cta-primary" href="/partners/#apply">Become a partner</a>
   <a class="cta-secondary" href="/for/head-of-cloud/">For Heads of Cloud →</a>
 </div>
 

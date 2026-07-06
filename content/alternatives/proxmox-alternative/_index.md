@@ -42,8 +42,8 @@ Cozystack is the open-source platform built for that next stage. Kubernetes-nati
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant by design, productized installer. From €1.3k/month support tier.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture review</a>
-  <a class="cta-secondary" href="/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/">See the full comparison →</a>
+  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
+  <a class="cta-secondary" href="/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/">Full comparison →</a>
 </div>
 
 ---

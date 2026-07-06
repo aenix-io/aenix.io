@@ -59,7 +59,7 @@ faq:
 > **Pairs with:** **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** — GPU scheduling, fractional sharing, and blueprints for inference and fine-tuning. For the elastic GPU capacity underneath it, combine with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)**. For the wider strategy, see **[Sovereign AI](/solutions/sovereign-ai/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/case-studies/ai-universal-installer/">See the case study →</a>
 </div>
 

@@ -48,7 +48,7 @@ Aenix übernimmt das technische Engagement, das "wir müssen AWS / Azure / GCP v
 > **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — die richtige Edition folgt Ihrem Buyer-Profil. Hosting-Anbieter / regionale Clouds: [ISP Edition](/de/produkte/aenix-platform/isp-edition/). Regulierte Unternehmen: [Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/). Große Betreiber: [Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/). Produkt-Engineering-Teams: [IDP Edition](/de/produkte/aenix-platform/idp-edition/). KI-lastig: [AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/reverse-cloud-migration-leitfaden/">Repatriation-Leitfaden lesen →</a>
 </div>
 
@@ -237,7 +237,7 @@ Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitglied
 Kostenlos. Keine Vorbereitung nötig. Wir bestätigen die Eignung, identifizieren Ihre wichtigsten Kostenbedenken und sagen Ihnen, ob die 14-Tage- oder die 28-Tage-Variante zu Ihrer Situation passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder lesen Sie weiter:

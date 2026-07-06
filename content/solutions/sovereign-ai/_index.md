@@ -51,8 +51,8 @@ Aenix builds and operates sovereign AI infrastructure for organizations whose da
 > **Pairs with:** **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** — AI platform automation out of the box (multi-tenant GPU scheduling for H100/H200/L40S/A100/Blackwell, ready-to-use blueprints for inference + fine-tuning + RAG, vector DB + object storage included, sovereignty controls). For regulated AI workloads layered on a broader sovereign cloud: combine with [Enterprise Edition](/products/aenix-platform/enterprise-edition/). Free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/private-llm-deployment-guide/">Read the private LLM guide →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/blog/2026/05/private-llm-deployment-guide/">Read guide →</a>
 </div>
 
 <div class="trust-badges">
@@ -252,7 +252,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 Free. No prep needed. We confirm fit, narrow the AI workload scope to your data class and regulator, and tell you whether the 14-day or the 28-day assessment matches your situation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
 </div>
 
 Or read more:

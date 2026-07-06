@@ -170,7 +170,7 @@ AI/ML Edition includes VictoriaMetrics + VictoriaLogs for AI-specific metrics (i
 
 ## How to start
 
-Book a 30-minute discovery call. Bring your AI workload profile (steady inference / training / fine-tuning / RAG / mix), regulatory scope, and target deployment model. We'll discuss AI/ML Edition fit and engagement scope.
+Book a discovery call. Bring your AI workload profile (steady inference / training / fine-tuning / RAG / mix), regulatory scope, and target deployment model. We'll discuss AI/ML Edition fit and engagement scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

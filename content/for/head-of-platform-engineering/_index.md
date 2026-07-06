@@ -22,7 +22,7 @@ hide_closing_cta: true
 > **Pairs with:** **[Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)** for a ready internal developer platform, or **[Internal Developer Platform build](/services/internal-developer-platform/)** to design one to your org. Open-source core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/solutions/developer-self-service/">See developer self-service →</a>
 </div>
 
@@ -101,7 +101,7 @@ Apache 2.0 core, no per-developer licensing. You pay for support and/or the buil
 Free, no prep. We look at how your teams provision today and tell you whether the IDP Edition or a build-with engagement gets you to self-service faster.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/services/internal-developer-platform/">IDP build service →</a>
 </div>
 

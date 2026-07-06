@@ -154,13 +154,13 @@ For product teams running Cozystack on their own / leased servers (Hetzner, OVH,
 
 ---
 
-## Book an architecture review
+## Book a review
 
 Tell us about your hosting business, current stack and customer mix — we'll set up a focused architecture review with an Aenix engineer and confirm ISP Edition fit.
 
 {{< pipedrive-form type="demo" >}}
 
-Prefer a shorter first step? [Book a 30-minute discovery call](/contact/) instead.
+Prefer a shorter first step? [Book a discovery call](/contact/) instead.
 
 ---
 

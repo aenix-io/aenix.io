@@ -47,8 +47,8 @@ Wenn Sie Datensouveränität, DORA- / NIS2-Compliance, Cloud-Repatriation, souve
 > **Passt zu:** allen **[Ænix Platform Editions](/de/produkte/aenix-platform/)** — das Assessment ergibt, welche Edition zu Ihrem Scope passt. Public Cloud / ISP / Enterprise / IDP / AI/ML. Discovery-Call → Assessment → Edition-Empfehlung → Pilot → Full Build.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
-  <a class="cta-secondary" href="#what-we-look-at">Sehen, was 14 Tage abdecken →</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-secondary" href="#what-we-look-at">Details ansehen →</a>
 </div>
 
 <div class="trust-badges">
@@ -271,7 +271,7 @@ Für benannte Case Studies siehe **[Customer Stories](/de/case-studies/)** — f
 Kostenlos. Keine Vorbereitung nötig. Wir bestätigen den Fit, einigen uns auf einen fokussierten Scope und sagen Ihnen, ob die 14-Tage- oder die 28-Tage-Variante zu Ihrer Situation passt. Passt keine, sagen wir das.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder lesen Sie mehr:

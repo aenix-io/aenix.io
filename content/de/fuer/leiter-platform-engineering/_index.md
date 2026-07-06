@@ -44,7 +44,7 @@ faq:
 > **Passt zu:** **[Ænix Platform IDP](/de/produkte/)** als fertige IDP — oder einem Aufbauprojekt nach Ihrer Organisation. Offener Kern: **[Cozystack](https://cozystack.io)**, Apache 2.0.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/loesungen/developer-self-service/">Developer-Self-Service ansehen →</a>
 </div>
 
@@ -98,7 +98,7 @@ Infrastruktur zum Produkt machen: Self-Service für VMs, Managed Kubernetes, Man
 Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren heutigen Bereitstellungsweg an und sagen, ob IDP-Edition oder Aufbauprojekt schneller zum Self-Service führt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütiges Erstgespräch buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/">Dienstleistungen →</a>
 </div>
 

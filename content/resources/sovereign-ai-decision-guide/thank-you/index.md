@@ -10,7 +10,7 @@ hide_closing_cta: true
 **Thank you — your download is ready.** The Sovereign AI Decision Guide is below. We've also sent a copy to the email you provided.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/downloads/aenix-sovereign-ai-decision-guide.pdf" download>Download the PDF ↓</a>
+  <a class="cta-primary" href="/downloads/aenix-sovereign-ai-decision-guide.pdf" download>Download PDF ↓</a>
 </div>
 
 ---

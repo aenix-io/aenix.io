@@ -50,7 +50,7 @@ Aenix builds platforms for telecom operators across the EU, DACH, and Central As
 > **Pairs with:** **[Ænix Platform Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for telcos launching customer-facing sovereign cloud products at multi-region scale; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for NIS2-aligned internal cloud and edge platforms.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/solutions/sovereign-ai/">Sovereign AI for telco →</a>
 </div>
 

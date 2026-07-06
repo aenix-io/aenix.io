@@ -21,8 +21,8 @@ related_pages:
 > **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/aenix-platform/)** (five editions to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Apply to the Partner Program</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Explore the editions →</a>
+  <a class="cta-primary" href="/partners/#apply">Become a partner</a>
+  <a class="cta-secondary" href="/products/aenix-platform/">Explore editions →</a>
 </div>
 
 <div class="trust-badges">
@@ -94,7 +94,7 @@ No. Resell only, or co-deliver with Aenix as your engineering bench — your cho
 Five editions matched to buyer profile (Public Cloud, ISP, Enterprise, IDP, AI/ML), plus services. See [Ænix Platform](/products/aenix-platform/).
 
 **How do we start?**
-[Apply to the Partner Program](/partners/#apply) or book a call; we enable your sales team with the kit and pre-sales support.
+[Become a partner](/partners/#apply) or book a call; we enable your sales team with the kit and pre-sales support.
 
 ---
 
@@ -103,8 +103,8 @@ Five editions matched to buyer profile (Public Cloud, ISP, Enterprise, IDP, AI/M
 Free, no prep. We map your client base to the editions, walk through margin and deal protection, and set up enablement.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Apply to the Partner Program</a>
-  <a class="cta-secondary" href="/contact/">Book a 30-minute call →</a>
+  <a class="cta-primary" href="/partners/#apply">Become a partner</a>
+  <a class="cta-secondary" href="/contact/">Book a call →</a>
 </div>
 
 ---

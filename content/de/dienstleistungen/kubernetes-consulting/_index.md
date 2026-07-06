@@ -47,7 +47,7 @@ Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Sourc
 > **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)**, wenn der Consulting-Scope sich zu einem produktisierten Cloud-Plattform-Engagement erweitert. Eigenständiges Consulting ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/produktion-kubernetes-cluster-architektur/">Leitfaden für Produktions-Cluster →</a>
 </div>
 
@@ -212,7 +212,7 @@ Time-and-Materials oder Fixed-Scope. Phase 2 typischerweise 1-6 Monate.
 ## Starten Sie mit einem 30-minütigen Discovery-Call
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Leitfaden zum Produktions-Cluster-Setup](/de/blog/2026/05/produktion-kubernetes-cluster-architektur/)**

@@ -52,7 +52,7 @@ Aenix führt ein DORA-konformes Platform-Readiness-Engagement für Finanzunterne
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — DORA-konform by design (kundenkontrollierte Schlüssel auf jeder Ebene, audit-bereites Logging via VictoriaLogs, mandantenfähiges Tenant CRD abgestimmt auf die ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz bis zur zweiten Stufe). Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/dora-checkliste-cloud-architektur/">DORA-Checkliste lesen →</a>
 </div>
 
@@ -240,7 +240,7 @@ Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitglied
 Kostenlos. Keine Vorbereitung nötig. Wir bestätigen die Passung, grenzen den DORA-Scope auf die für Sie bindenden Artikel ein und sagen Ihnen, ob die 14-Tage- oder die 28-Tage-Variante zu Ihrer Situation passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder lesen Sie weiter:

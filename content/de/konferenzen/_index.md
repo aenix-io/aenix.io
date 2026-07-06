@@ -8,7 +8,7 @@ language: "de"
 
 <div class="cta-row">
   <a class="cta-primary" href="https://www.linkedin.com/company/aenix/">Aenix auf LinkedIn folgen für kommende Vorträge →</a>
-  <a class="cta-secondary" href="/de/kontakt/">Uns zu Ihrem Event einladen</a>
+  <a class="cta-secondary" href="/de/kontakt/">Zum Event einladen</a>
 </div>
 
 ---

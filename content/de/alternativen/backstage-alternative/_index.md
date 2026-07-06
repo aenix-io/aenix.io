@@ -96,7 +96,7 @@ Die Plattform-Entscheidung (Cozystack vs OpenShift vs Vanilla-Kubernetes) ist un
 Ein fokussiertes Architektur-Review beantwortet: Brauchen Sie überhaupt ein Portal? Wenn ja, welches passt zu Ihrem operativen Modell? Aenix führt dies im Rahmen des **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** durch.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 - **[Internal Developer Portal vs Plattform](/blog/2026/05/internal-developer-portal-vs-platform/)** — Entitäts-Abgrenzung

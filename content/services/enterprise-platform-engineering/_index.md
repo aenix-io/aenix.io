@@ -43,7 +43,7 @@ faq:
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated multi-DC platforms; **[IDP Edition](/products/aenix-platform/idp-edition/)** for product-engineering-led IDP at enterprise scale.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/services/platform-engineering/">Platform engineering services →</a>
 </div>
 

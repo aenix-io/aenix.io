@@ -211,7 +211,7 @@ Kein Per-CPU-, Per-VM- oder Per-Core-Meter. Hardware + gewählter Aenix-Tier.
 ## Loslegen
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder:

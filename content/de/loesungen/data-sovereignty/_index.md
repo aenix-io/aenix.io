@@ -46,7 +46,7 @@ Aenix führt ein strukturiertes Engagement für Organisationen durch, die eine S
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die souveräne Cloud intern konsumieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für Betreiber, die souveräne Cloud als Produkt anbieten. Kundenkontrollierte Schlüssel auf jeder Datenschicht (Primärspeicher, Replikate, Backups, Observability). Air-Gap-Option unterstützt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/blog/2026/05/datenresidenz-anforderungen-2026/">Datenresidenz-Leitfaden lesen →</a>
 </div>
 
@@ -234,7 +234,7 @@ Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitglied
 Kostenlos. Keine Vorbereitung nötig. Wir bestätigen die Eignung, grenzen den Souveränitätsumfang auf Ihre bindenden Regulatoren oder Klauseln ein und sagen Ihnen, ob die 14-tägige oder die 28-tägige Variante zu Ihrer Situation passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">30-minütigen Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 Oder lesen Sie mehr:

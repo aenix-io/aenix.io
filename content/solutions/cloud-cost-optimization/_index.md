@@ -51,8 +51,8 @@ Aenix runs a structured cloud-cost engagement that answers, with numbers: where 
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers and regional clouds; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Sustained-utilisation economics on customer-controlled hardware typically cut TCO 40-70% vs hyperscaler. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="/blog/2026/05/cloud-cost-optimization-strategies-2026/">Read the optimization strategies guide →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="/blog/2026/05/cloud-cost-optimization-strategies-2026/">Read guide →</a>
 </div>
 
 <div class="trust-badges">
@@ -248,7 +248,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 Free. No prep needed. We confirm fit, identify your top cost concerns, and tell you whether the 14-day or 28-day variant matches your situation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
 </div>
 
 Or read more:

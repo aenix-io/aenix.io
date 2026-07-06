@@ -44,8 +44,8 @@ If you're evaluating data sovereignty, DORA / NIS2 compliance, cloud repatriatio
 > **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — the assessment outputs which edition fits your scope. Public Cloud / ISP / Enterprise / IDP / AI/ML. Discovery call → Assessment → Edition recommendation → Pilot → Full build.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
-  <a class="cta-secondary" href="#what-we-look-at">See what 14 days cover →</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-secondary" href="#what-we-look-at">See details →</a>
 </div>
 
 <div class="trust-badges">
@@ -273,7 +273,7 @@ For named case studies see **[Customer stories](/case-studies/)** — request th
 Free. No prep needed. We confirm fit, agree on a focused scope, and tell you whether the 14-day or the 28-day variant matches your situation. If neither fits, we say so.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
 </div>
 
 Or read more:

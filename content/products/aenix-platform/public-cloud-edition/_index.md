@@ -156,7 +156,7 @@ Public Cloud Edition supports both customer-operated and Aenix-managed-operation
 
 ## How to start
 
-Book a 30-minute discovery call. We'll discuss your cloud product strategy, scale, regulatory context, and Public Cloud Edition fit.
+Book a discovery call. We'll discuss your cloud product strategy, scale, regulatory context, and Public Cloud Edition fit.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

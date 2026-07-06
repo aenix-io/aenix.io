@@ -40,7 +40,7 @@ faq:
 > **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** when scope expands to a productized cloud platform. Stand-alone engineering augmentation also available for organizations not yet evaluating Ænix Platform.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a 30-minute discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
   <a class="cta-secondary" href="/blog/2026/05/cloud-engineering-disciplines-2026/">Cloud engineering disciplines →</a>
 </div>
 

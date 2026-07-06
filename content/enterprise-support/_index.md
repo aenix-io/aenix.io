@@ -7,7 +7,7 @@ language: "en"
 **Aenix Enterprise Support covers Ænix Platform deployments (commercial) and self-running Cozystack environments (when needed). Direct access to the engineers who maintain Cozystack and ship Ænix Platform.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a support discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a discovery call</a>
 </div>
 
 ---
@@ -96,7 +96,7 @@ Aenix engagement model includes engineering services beyond support: feature dev
 
 ## How to start
 
-Book a 30-minute discovery call to scope your support requirements.
+Book a discovery call to scope your support requirements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>

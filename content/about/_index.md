@@ -178,7 +178,7 @@ Render existing team grid (Andrei, Timur, Viktoriia, Timofei, Julia + Community 
 
 ## Get in touch
 
-Book a 30-minute discovery call to discuss your buyer profile, edition fit, and engagement scope.
+Book a discovery call to discuss your buyer profile, edition fit, and engagement scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a discovery call</a>
