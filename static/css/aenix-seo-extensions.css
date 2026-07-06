@@ -21,7 +21,7 @@
   /* Solid backgrounds that carry white text need the darker brand blue
      for WCAG contrast; the bright blue is for text/links/accents on dark. */
   --aenix-fill: var(--aenix-color-fill, var(--brand-secondary, #0971EB));
-  --aenix-accent: var(--aenix-color-accent, #F0862F);
+  --aenix-accent: var(--aenix-color-accent, #A78BFA);
   --aenix-bg-tint: var(--aenix-color-bg-tint, rgba(255, 255, 255, 0.04));
   --aenix-surface: var(--aenix-color-surface, rgba(255, 255, 255, 0.05));
   --aenix-text: var(--aenix-color-text, var(--text-primary, #F1F5F9));
@@ -152,8 +152,8 @@
 }
 
 .pairs-with-editions-card .btn-primary:hover {
-  background-color: #FF9D4D;
-  border-color: #FF9D4D;
+  background-color: #C4B5FD;
+  border-color: #C4B5FD;
 }
 
 .pairs-with-editions-card .btn-secondary {
@@ -253,9 +253,9 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 700;
-  color: #FFB570;
-  background: rgba(227, 100, 20, 0.12);
-  border: 1px dashed #E36414;
+  color: #94DEE0;
+  background: rgba(148, 222, 224, 0.10);
+  border: 1px dashed rgba(148, 222, 224, 0.6);
   padding: 0.125rem 0.5rem;
   border-radius: 3px;
   margin-bottom: 0.625rem;
@@ -344,7 +344,7 @@
 }
 .placeholder-form__field em {
   font-size: 0.75rem;
-  color: #FFB570;
+  color: #94DEE0;
   font-style: normal;
   margin-left: 0.5rem;
 }
@@ -383,9 +383,9 @@
 
 /* ─── lorem-block ───────────────────────────────────────────── */
 .lorem-block {
-  border-left: 3px solid #E36414;
+  border-left: 3px solid rgba(148, 222, 224, 0.55);
   padding: 0.5rem 1rem;
-  background: rgba(227, 100, 20, 0.06);
+  background: rgba(148, 222, 224, 0.06);
   margin: 1rem 0;
 }
 .lorem-block p {
@@ -396,8 +396,8 @@
 
 /* ─── design-note ───────────────────────────────────────────── */
 .design-note {
-  border-left: 4px solid #E36414;
-  background: rgba(227, 100, 20, 0.08);
+  border-left: 4px solid rgba(148, 222, 224, 0.55);
+  background: rgba(148, 222, 224, 0.08);
   padding: 0.875rem 1.125rem;
   margin: 1rem 0;
   border-radius: 0 6px 6px 0;
@@ -453,8 +453,8 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--aenix-accent);
-  background: rgba(227, 100, 20, 0.08);
-  border: 1px solid rgba(227, 100, 20, 0.2);
+  background: rgba(139, 92, 246, 0.10);
+  border: 1px solid rgba(139, 92, 246, 0.30);
   border-radius: 999px;
   margin-bottom: 1rem;
 }
@@ -966,7 +966,7 @@
 .factoid {
   margin: 1.75rem 0;
   padding: 1.25rem 1.5rem;
-  background: linear-gradient(135deg, rgba(1, 165, 255, 0.08), rgba(240, 134, 47, 0.06));
+  background: linear-gradient(135deg, rgba(1, 165, 255, 0.08), rgba(102, 27, 225, 0.10));
   border-left: 4px solid var(--aenix-accent);
   border-radius: 0 10px 10px 0;
 }
@@ -1349,8 +1349,8 @@
   border-color: var(--aenix-accent);
 }
 .aenix-consent-btn--primary:hover {
-  background: #FF9D4D;
-  border-color: #FF9D4D;
+  background: #C4B5FD;
+  border-color: #C4B5FD;
 }
 .aenix-consent-btn--secondary {
   background: transparent;
