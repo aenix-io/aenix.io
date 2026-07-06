@@ -34,7 +34,7 @@
     {{ if or $types $topics }}
     <div class="blog-filters" data-blog-filters>
       {{ if $types }}
-      <div class="blog-filters__row">
+      <div class="blog-filters__row blog-filters__row--type">
         <span class="blog-filters__label">Type:</span>
         <button class="blog-chip blog-chip--active" data-filter-group="type" data-filter-value="">All</button>
         {{ range $types }}
@@ -43,7 +43,7 @@
       </div>
       {{ end }}
       {{ if $topics }}
-      <div class="blog-filters__row">
+      <div class="blog-filters__row blog-filters__row--topic">
         <span class="blog-filters__label">Topic:</span>
         <button class="blog-chip blog-chip--active" data-filter-group="topic" data-filter-value="">All</button>
         {{ range $topics }}

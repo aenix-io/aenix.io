@@ -1936,3 +1936,28 @@ summary:focus-visible,
 }
 .faq-answer p { margin: 0 0 0.75rem; }
 .faq-answer p:last-child { margin-bottom: 0; }
+
+/* ============================================================
+   BLOG FILTERS — quiet the ~35-chip topic wall
+   Type row keeps full-size chips (6 items, primary filter);
+   the long topic row steps back visually.
+   ============================================================ */
+.blog-filters {
+  padding: 0.875rem 1.125rem;
+}
+.blog-filters__row--topic .blog-chip {
+  font-size: 0.75rem;
+  padding: 0.125rem 0.55rem;
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.10);
+  color: var(--aenix-text-muted);
+}
+.blog-filters__row--topic .blog-chip:hover {
+  color: var(--aenix-text);
+  border-color: var(--aenix-primary);
+}
+.blog-filters__row--topic .blog-chip--active {
+  background: var(--aenix-fill);
+  color: white;
+  border-color: var(--aenix-fill);
+}
