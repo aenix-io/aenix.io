@@ -1,6 +1,7 @@
 ---
 title: "About Aenix"
 description: "Aenix is an open-core company that created and maintains Cozystack, a CNCF project, and commercializes it as Ænix Platform — a cloud-in-a-box in five editions."
+hero_subtitle: "The open-core company behind Cozystack"
 language: "en"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Enterprise support"
 description: "Enterprise support for Ænix Platform and Cozystack from the engineers who maintain it: SLA tiers, dedicated channels, and compliance support."
+hero_subtitle: "SLA-backed support from the engineers who maintain it"
 language: "en"
 ---
 

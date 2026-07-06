@@ -1,6 +1,7 @@
 ---
 title: "A sovereign public cloud on bare metal"
 description: "A Swiss provider moved off a hypervisor stack to a full commercial public cloud on Cozystack — multi-region across three data centres, synchronous cross-DC replication, at-rest encryption, and a 20-hour incident closed with zero data loss."
+hero_subtitle: "A commercial public cloud on bare metal, multi-region"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"

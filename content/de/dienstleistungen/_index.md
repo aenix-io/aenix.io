@@ -1,6 +1,7 @@
 ---
 title: "Dienstleistungen"
 description: "Aenix-Dienstleistungen: Platform Readiness Assessment, Platform Engineering, Internal Developer Platform und Cloud-Consulting — engagement-basiert."
+hero_subtitle: "Vom Readiness Assessment bis zur fertig gebauten Cloud-Plattform"
 language: "de"
 ---
 

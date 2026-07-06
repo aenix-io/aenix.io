@@ -1,6 +1,7 @@
 ---
 title: "Für CTOs & VPs Engineering — Cloud-Ökonomie zurückgewinnen"
 description: "Cloud-Kosten und Lock-in steigen, Souveränität wird Kundenanforderung. Repatriieren oder auf offener Plattform bauen — schlüsselfertig oder mit Aenix."
+hero_subtitle: "Cloud-Kosten senken und Vendor-Lock-in entkommen"
 type: "page"
 language: "de"
 images: ["img/og/og-cto-de.png"]

@@ -1,6 +1,7 @@
 ---
 title: "Cozystack as a universal installer: an AI platform shipped into the customer's environment"
 description: "A telecom integrator built a corporate AI platform on Cozystack — GPU, RAG on Qdrant, NVIDIA Dynamo inference, geo-distributed GPU — and shipped the same distribution into a state-owned end customer."
+hero_subtitle: "A corporate AI platform shipped into the customer's environment"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"

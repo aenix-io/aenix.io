@@ -1,6 +1,7 @@
 ---
 title: "Für Cloud-Leiter bei SIs & MSPs — Cloud zum Wiederverkauf"
 description: "Machen Sie den VMware-Ausstieg zu Ihrer Marge: gebrandete Cloud auf offener Plattform — wiederverkaufen oder mit Aenix bauen. Bis 40% Marge."
+hero_subtitle: "Machen Sie den VMware-Ausstieg zu Ihrer Marge"
 type: "page"
 language: "de"
 images: ["img/og/og-leiter-cloud-de.png"]

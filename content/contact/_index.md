@@ -1,6 +1,7 @@
 ---
 title: "Talk to us"
 description: "Contact Aenix to discuss Ænix Platform editions, book a discovery call, or explore partnerships. EU office in Czechia, US office in Delaware."
+hero_subtitle: "Book a discovery call or explore a partnership"
 language: "en"
 ---
 

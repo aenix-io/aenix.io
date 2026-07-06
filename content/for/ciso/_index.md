@@ -1,6 +1,7 @@
 ---
 title: "For CISOs & Compliance Leads — sovereignty you can evidence"
 description: "DORA, NIS2 and data-residency turn cloud into a control problem. Run regulated workloads on a platform where keys, hardware and jurisdiction are yours."
+hero_subtitle: "Sovereignty you can evidence for DORA and NIS2"
 type: "page"
 language: "en"
 images: ["img/og/og-ciso.png"]

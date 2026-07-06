@@ -1,6 +1,7 @@
 ---
 title: "Für Platform-Engineering-Leiter — eine IDP ohne Lock-in"
 description: "Self-Service mit Golden Paths für Entwickler auf einer offenen, Kubernetes-nativen Plattform. Schlüsselfertig kaufen — oder Ihre IDP mit Aenix aufbauen."
+hero_subtitle: "Golden-Path-Self-Service für Entwickler, ohne Lock-in"
 type: "page"
 language: "de"
 images: ["img/og/og-leiter-platform-engineering-de.png"]

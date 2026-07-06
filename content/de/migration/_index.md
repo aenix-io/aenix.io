@@ -1,6 +1,7 @@
 ---
 title: "Migrations-Hubs"
 description: "Aenix-Migrations-Hubs — Strategie, Architektur und Kohorten-Patterns für Migration zu Ænix Platform von VMware, OpenStack, Proxmox, CloudStack."
+hero_subtitle: "Strategie und Architektur für die Migration von Altvirtualisierung"
 language: "de"
 page_type: "flag-page"
 cascade:

@@ -1,6 +1,7 @@
 ---
 title: "Industries"
 description: "Aenix industry landings: regulatory triggers, architecture patterns and use cases for finance, public sector, telco and hosting, mapped to Platform editions."
+hero_subtitle: "Regulatory triggers and architecture patterns, mapped to your sector"
 language: "en"
 ---
 

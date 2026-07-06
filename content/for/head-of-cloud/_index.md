@@ -1,6 +1,7 @@
 ---
 title: "For Heads of Cloud at SIs & MSPs — a cloud you resell or build"
 description: "Turn the VMware exit into your margin. Offer clients a branded cloud on an open platform — resell it, or have Aenix build it as your team. Up to 40% margin."
+hero_subtitle: "Turn the VMware exit into your margin"
 type: "page"
 language: "en"
 images: ["img/og/og-head-of-cloud.png"]

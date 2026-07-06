@@ -1,6 +1,7 @@
 ---
 title: "Case studies"
 description: "Aenix case studies: Ænix Platform deployments at regional hosting providers, platform R&D for ecosystem vendors, and NDA-protected tier-1 European bank work."
+hero_subtitle: "Real Aenix Platform deployments across hosting, AI, and academia"
 language: "en"
 ---
 

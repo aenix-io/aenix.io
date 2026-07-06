@@ -1,6 +1,7 @@
 ---
 title: "Resources"
 description: "Free Aenix resources — checklists, decision guides, TCO worksheets, maturity assessments. The same frameworks used in paid engagements, free to self-assess."
+hero_subtitle: "Free checklists, TCO worksheets, and decision guides to self-assess"
 language: "en"
 ---
 

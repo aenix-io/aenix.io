@@ -1,6 +1,7 @@
 ---
 title: "Branchen"
 description: "Aenix Branchen-Landings — vertikaler Proof und Use Cases für Finanzdienstleistungen, öffentlicher Sektor, Telco, Hosting, Energie und weitere Branchen."
+hero_subtitle: "Regulatorische Trigger und Architekturmuster für Ihre Branche"
 language: "de"
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "For CTOs & VPs of Engineering — control your cloud economics"
 description: "Cloud bills up, lock-in tightening. Repatriate or build on an open, sovereign platform — turnkey or with Aenix as your engineering team. EU-based, Apache 2.0."
+hero_subtitle: "Cut cloud costs and escape vendor lock-in"
 type: "page"
 language: "en"
 images: ["img/og/og-cto.png"]

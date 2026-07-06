@@ -1,6 +1,7 @@
 ---
 title: "Für AI/ML-Leiter — GPU-Infrastruktur, die Sie kontrollieren"
 description: "Training und Inferenz auf eigenen GPUs, in Ihrer Jurisdiktion, ohne Hyperscaler-Endpoint-Lock-in. Eine schlüsselfertige KI-Plattform — oder mit Aenix gebaut."
+hero_subtitle: "GPU-Infrastruktur in Ihrer Jurisdiktion, ohne Hyperscaler-Lock-in"
 type: "page"
 language: "de"
 images: ["img/og/og-leiter-ai-ml-de.png"]

@@ -1,6 +1,7 @@
 ---
 title: "For Heads of Platform Engineering — an IDP without the lock-in"
 description: "Give developers golden-path self-service on an open, Kubernetes-native platform. Buy it turnkey or have Aenix build your internal developer platform with you."
+hero_subtitle: "Golden-path developer self-service without the lock-in"
 type: "page"
 language: "en"
 images: ["img/og/og-head-of-platform-engineering.png"]

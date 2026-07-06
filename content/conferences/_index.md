@@ -1,6 +1,7 @@
 ---
 title: "Aenix at conferences"
 description: "Conference talks by the Aenix team on Cozystack architecture, KubeVirt, GitOps, sovereign AI, and platform engineering — CloudFest, KubeCon, and KCDs."
+hero_subtitle: "Meet the Aenix team at CloudFest and KubeCon"
 language: "en"
 ---
 

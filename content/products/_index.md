@@ -1,6 +1,7 @@
 ---
 title: "Aenix products"
 description: "Aenix products — Ænix Platform (turnkey cloud-in-a-box, five editions), Cozystack (open-source CNCF project we maintain) and the Kubernetes Deep Dive course."
+hero_subtitle: "Turnkey platform, open-source Cozystack, and expert training"
 language: "en"
 ---
 

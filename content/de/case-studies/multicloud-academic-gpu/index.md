@@ -1,6 +1,7 @@
 ---
 title: "Von der Public Cloud zu Bare Metal — Rechenleistung nach Bedarf"
 description: "Ein europäischer SaaS für akademisches Rechnen migrierte von einem Hyperscaler auf eigenes Bare Metal mit Cozystack, behielt eine einheitliche Cluster API und senkte die GPU-Kosten um etwa das Fünffache."
+hero_subtitle: "Vom Hyperscaler auf Bare Metal, GPU-Kosten rund 5x gesenkt"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"

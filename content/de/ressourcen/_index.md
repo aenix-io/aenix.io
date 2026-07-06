@@ -1,6 +1,7 @@
 ---
 title: "Ressourcen"
 description: "Kostenlose Aenix-Ressourcen — Checklisten, Decision Guides, TCO-Worksheets und Maturity Assessments. Die gleichen Frameworks zur Selbsteinschätzung."
+hero_subtitle: "Kostenlose Checklisten, TCO-Worksheets und Decision Guides"
 language: "de"
 ---
 

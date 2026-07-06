@@ -1,6 +1,7 @@
 ---
 title: "From public cloud to bare metal — and bursting compute on demand"
 description: "A European academic-computing SaaS moved off a public hyperscaler onto owned bare metal on Cozystack, kept a single Cluster API across bare metal, hyperscaler and a sovereign OpenStack cloud, and cut GPU cost ~5×."
+hero_subtitle: "Off hyperscaler onto bare metal, GPU cost cut ~5x"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"

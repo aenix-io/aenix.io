@@ -1,6 +1,7 @@
 ---
 title: "Eine souveräne Public Cloud auf Bare Metal"
 description: "Ein Schweizer Provider migrierte von einem Hypervisor-Stack auf eine vollwertige kommerzielle Public Cloud mit Cozystack — Multi-Region über drei Rechenzentren, synchrone Replikation und Verschlüsselung."
+hero_subtitle: "Kommerzielle Public Cloud auf Bare Metal, Multi-Region"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"

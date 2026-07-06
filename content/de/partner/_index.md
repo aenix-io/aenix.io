@@ -1,6 +1,7 @@
 ---
 title: "Aenix Partner-Programm"
 description: "Aenix Partner-Programm: bis zu 40% Marge auf Ænix-Platform-Verkäufe, Deal-Schutz, Sales-Kit und L3-Support für Reseller, Integratoren und Distributoren."
+hero_subtitle: "Offene Cloud-Plattform wiederverkaufen, bis zu 40% Marge"
 language: "de"
 ---
 

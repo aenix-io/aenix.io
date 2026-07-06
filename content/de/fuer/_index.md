@@ -1,6 +1,7 @@
 ---
 title: "Nach Rolle — Ihr Einstieg zu Aenix nach Aufgabe"
 description: "Rollenspezifische Einstiegspunkte zu Aenix — Infrastruktur, Platform Engineering, Cloud, Allianzen, Compliance oder Engineering. Starten Sie bei Ihrem Problem."
+hero_subtitle: "Finden Sie Ihren Einstieg nach Rolle"
 type: "page"
 language: "de"
 images: ["img/og/og-fuer-de.png"]

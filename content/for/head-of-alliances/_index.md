@@ -1,6 +1,7 @@
 ---
 title: "For Heads of Alliances — add an open cloud line, up to 40% margin"
 description: "Post-Broadcom, your clients need a VMware alternative. Add Ænix Platform to your portfolio: up to 40% margin, deal protection, co-sell. Resell or co-deliver."
+hero_subtitle: "Add an open cloud line, up to 40% margin"
 type: "page"
 language: "en"
 images: ["img/og/og-head-of-alliances.png"]

@@ -1,6 +1,7 @@
 ---
 title: "Lösungen"
 description: "Aenix-Lösungen für Cloud-Plattform-Engagements: DORA, NIS2, Datensouveränität, souveräne KI, Cloud-Repatriation, Kostenoptimierung, Hybrid Cloud."
+hero_subtitle: "Regulierungsgetriebene Einstiegspunkte in Cloud-Plattform-Projekte"
 language: "de"
 ---
 

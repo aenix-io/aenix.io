@@ -1,6 +1,7 @@
 ---
 title: "Cozystack als universeller Installer: eine KI-Plattform im Kundenumfeld"
 description: "Ein Telco-Integrator baute auf Cozystack eine Unternehmens-KI-Plattform — GPU, RAG auf Qdrant, NVIDIA-Dynamo-Inferenz, Geo-GPU — und lieferte dieselbe Distribution beim staatlichen Endkunden aus."
+hero_subtitle: "Unternehmens-KI-Plattform, ausgeliefert direkt im Kundenumfeld"
 date: 2026-06-15
 lastmod: 2026-06-15
 page_type: "case-study"

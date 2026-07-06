@@ -1,6 +1,7 @@
 ---
 title: "Für Allianz-Leiter — offene Cloud-Linie, bis 40% Marge"
 description: "Nach Broadcom brauchen Ihre Kunden eine VMware-Alternative. Ænix Platform ins Portfolio: bis 40% Marge, Deal-Schutz, Co-Sell. Wiederverkauf oder Co-Delivery."
+hero_subtitle: "Offene Cloud-Linie ins Portfolio, bis zu 40% Marge"
 type: "page"
 language: "de"
 images: ["img/og/og-leiter-allianzen-de.png"]

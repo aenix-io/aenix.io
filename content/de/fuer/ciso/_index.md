@@ -1,6 +1,7 @@
 ---
 title: "Für CISOs & Compliance-Leiter — belegbare Souveränität"
 description: "DORA, NIS2 und Datenresidenz machen Cloud zum Kontrollproblem. Regulierte Workloads auf einer Plattform, bei der Schlüssel und Hardware Ihnen gehören."
+hero_subtitle: "Souveränität, die Sie für DORA und NIS2 belegen"
 type: "page"
 language: "de"
 images: ["img/og/og-ciso-de.png"]
