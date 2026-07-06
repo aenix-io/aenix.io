@@ -1813,3 +1813,126 @@ summary:focus-visible,
 .page-hero--home .page-hero-trust {
   justify-content: center;
 }
+
+/* ============================================================
+   GEO ANSWER BLOCKS — direct answer, quick facts, FAQ
+   Auto-injected on every landing by seo/geo-intro.html and
+   seo/geo-faq.html. Previously unstyled: the direct answer read
+   as a bold wall, quick facts as a bare list, FAQ as naked
+   disclosure triangles.
+   ============================================================ */
+
+/* Direct answer: citation-ready lead panel under the H1 */
+.seo-direct-answer {
+  margin: 1.5rem 0 2rem;
+  padding: 1.375rem 1.625rem;
+  background: linear-gradient(135deg, rgba(1, 165, 255, 0.07), rgba(102, 27, 225, 0.05));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 3px solid var(--aenix-primary);
+  border-radius: 0 12px 12px 0;
+}
+.seo-direct-answer p {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+/* Source marks the whole paragraph bold (citation emphasis);
+   render it as calm lead text instead of a bold wall. */
+.seo-direct-answer strong {
+  font-weight: 500;
+  color: var(--aenix-text);
+}
+
+/* Quick facts: definition rows in a quiet panel */
+.seo-quick-facts {
+  margin: 2rem 0 2.5rem;
+  padding: 1.25rem 1.5rem 1rem;
+  background: var(--aenix-bg-tint);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+.page-content .seo-quick-facts h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--aenix-text-muted);
+}
+.seo-quick-facts .quick-facts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.quick-facts-list li {
+  display: flex;
+  gap: 0.875rem;
+  margin: 0;
+  padding: 0.625rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--aenix-text-muted);
+}
+.quick-facts-list li:first-child { border-top: none; }
+.quick-facts-list li > strong {
+  flex: 0 0 175px;
+  font-weight: 600;
+  color: var(--aenix-text);
+}
+.quick-facts-source {
+  margin: 0.625rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--aenix-text-muted);
+}
+@media (max-width: 640px) {
+  .quick-facts-list li { flex-direction: column; gap: 0.125rem; }
+  .quick-facts-list li > strong { flex: none; }
+}
+
+/* FAQ: card-style disclosure items */
+.seo-faq { margin: 3rem 0 1rem; }
+.faq-item {
+  margin: 0.625rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: var(--aenix-bg-tint);
+  overflow: hidden;
+}
+.faq-item summary {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.875rem 1.125rem;
+  cursor: pointer;
+  user-select: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::before {
+  content: "+";
+  flex: 0 0 auto;
+  font-weight: 700;
+  color: var(--aenix-primary);
+  transition: transform 0.15s ease;
+}
+.faq-item[open] summary::before {
+  transform: rotate(45deg);
+}
+.page-content .faq-item summary h3,
+.faq-item summary h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--aenix-text);
+}
+.faq-item summary:hover h3 { color: var(--aenix-primary); }
+.faq-answer {
+  padding: 0 1.125rem 1rem 2.45rem;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--aenix-text-muted);
+}
+.faq-answer p { margin: 0 0 0.75rem; }
+.faq-answer p:last-child { margin-bottom: 0; }
