@@ -39,7 +39,7 @@ faq:
 **Ænix Platform is a turnkey cloud-in-a-box. It is based on the open-source Cozystack project we created and maintain (CNCF project, Apache 2.0), and adds everything an operator needs to run a real cloud business: hosting panel, user / admin / support portals, service-creation wizards, full billing (backend + frontend), payment integrations, WHMCS integration, and enterprise SLA. Five editions match five buyer profiles. Install. Plug in users. Start operating.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="https://cozystack.io">Cozystack open source →</a>
 </div>
 ---
@@ -189,7 +189,7 @@ Yes — up to 40% margin on Ænix Platform sales for resellers, integrators, and
 Book a discovery call. We'll discuss your platform priorities, regulatory context, scope, and which Ænix Platform edition fits.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 ---

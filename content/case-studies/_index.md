@@ -116,7 +116,7 @@ Cozystack is open-source — many organizations run it without commercial Aenix 
 Book a discovery call. We'll match your situation against relevant case patterns and discuss next steps.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 ---

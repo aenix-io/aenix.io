@@ -39,7 +39,7 @@ faq:
 **Private and hybrid sovereign cloud for regulated enterprises. Built for multi-DC setups, DORA / NIS2 compliance, and enterprise integrations. One control plane that connects to VMware, OpenNebula, OpenShift, and more — turnkey cloud-in-a-box on customer-controlled hardware. Includes education and training.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
 

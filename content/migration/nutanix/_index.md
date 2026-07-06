@@ -59,7 +59,7 @@ faq:
 > **Pairs with:** the **[Ænix Platform](/products/aenix-platform/)** edition that matches your estate — Enterprise for regulated workloads, ISP for hosting providers, Public Cloud for large operators. Decide the destination on the **[Nutanix alternative](/alternatives/nutanix-alternative/)** comparison, then model the numbers with the **[ROI & TCO calculator](/roi-calculator/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/alternatives/nutanix-alternative/">Why Cozystack vs Nutanix →</a>
 </div>
 

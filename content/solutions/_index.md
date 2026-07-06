@@ -8,7 +8,7 @@ language: "en"
 **Trigger-led entry points to Aenix engagements. Find the buyer-side reason that brings you to us, then jump to the matching solution. Each solution maps to specific Ænix Platform editions and engagement scope.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get readiness assessment →</a>
 </div>
 

@@ -27,7 +27,7 @@ faq:
 **Four interactive calculators for the economics of running your own cloud platform. Model a VMware exit, compare the total cost of building a platform yourself versus running on Cozystack with Ænix support, size the unit economics of a hosting business, or weigh owning GPUs against renting them. Every input is editable and every result recomputes live — built by Aenix, the team behind Cozystack.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/pricing/">See pricing →</a>
 </div>
 
@@ -86,7 +86,7 @@ See the **[AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** and **[Sove
 A discovery call turns these estimates into an honest, workload-level TCO — including what to keep where it is.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
 </div>
 

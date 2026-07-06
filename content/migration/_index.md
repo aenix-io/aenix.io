@@ -8,7 +8,7 @@ language: "en"
 **Practical migration patterns for moving onto Ænix Platform from existing platforms. Productized migration tooling for ISP Edition; engineering-led migration for Enterprise + Public Cloud Edition deployments. Cohort-based; parallel-run-validated.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/services/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 

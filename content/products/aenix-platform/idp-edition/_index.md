@@ -38,7 +38,7 @@ faq:
 **An Internal Developer Platform layer on top of a Kubernetes-native cloud. GitLab automation, Argo CD workflows, and APIs — so your engineers spend less time on routine work and more on shipping product. Includes the full Cozystack-based cloud underneath: tenancy, observability, secrets, identity, multi-cluster.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
 ---
@@ -162,7 +162,7 @@ Yes — GitLab integration is pre-built; GitHub, Bitbucket, others supported via
 Book a discovery call. Bring your platform-engineering maturity self-assessment (or use our [free assessment](/resources/platform-engineering-maturity-assessment/)). We'll discuss IDP scope, current state, and engagement fit.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 ---

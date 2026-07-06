@@ -45,7 +45,7 @@ faq:
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers and regional clouds; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 ---

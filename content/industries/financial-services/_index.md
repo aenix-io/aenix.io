@@ -53,7 +53,7 @@ Aenix builds and operates platforms for financial-services organizations across 
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for the regulated cloud foundation; **[AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** for claims AI / fraud detection / sovereign AI workloads. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/solutions/dora-compliance/">DORA compliance →</a>
 </div>
 

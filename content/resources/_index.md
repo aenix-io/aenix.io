@@ -8,7 +8,7 @@ language: "en"
 **Free downloadable assets — checklists, decision guides, TCO worksheets, maturity assessments. The same frameworks Aenix uses during paid engagements, available free for your team's self-assessment.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/services/platform-readiness-assessment/">Or go deeper with Platform Readiness Assessment →</a>
 </div>
 

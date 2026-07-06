@@ -8,7 +8,7 @@ language: "en"
 **Vertical proof points and engagement patterns by industry. Find your sector — read about the regulatory triggers, architectural patterns, and Ænix Platform editions that fit. All major engagements NDA-protected; first named bank cases expected mid-2027.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/case-studies/">See case studies →</a>
 </div>
 

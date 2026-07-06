@@ -43,7 +43,7 @@ faq:
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereignty-mandated student-data handling at large district / ministry-of-education scale.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/k12-school-district-cloud-infrastructure/">K-12 cloud architecture →</a>
 </div>
 

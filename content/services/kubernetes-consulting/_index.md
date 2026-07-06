@@ -50,7 +50,7 @@ Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF 
 > **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** when consulting scope expands into a productized cloud platform engagement. Stand-alone consulting also available for organizations not yet evaluating Ænix Platform.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/kubernetes-cluster-setup-production-architecture/">Cluster guide →</a>
 </div>
 

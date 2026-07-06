@@ -8,7 +8,7 @@ language: "en"
 **Book a discovery call to discuss Ænix Platform editions, your buyer profile, and engagement scope. Or write to us for partnership, press, or general inquiries.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="#offices">Office locations ↓</a>
 </div>
 
@@ -151,7 +151,7 @@ Aenix accepts RFI / RFP through standard procurement channels in EU member state
 ## Ready to start?
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 ---

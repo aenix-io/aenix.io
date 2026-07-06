@@ -63,7 +63,7 @@ faq:
 > **Pairs with:** **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** — multi-tenant GPU scheduling, fractional sharing and ready blueprints for inference and fine-tuning. For the elastic self-service cloud underneath it, combine with **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/case-studies/multicloud-academic-gpu/">See the case study →</a>
 </div>
 

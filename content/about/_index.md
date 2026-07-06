@@ -182,7 +182,7 @@ Render existing team grid (Andrei, Timur, Viktoriia, Timofei, Julia + Community 
 Book a discovery call to discuss your buyer profile, edition fit, and engagement scope.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/contact/">Contact details →</a>
 </div>
 

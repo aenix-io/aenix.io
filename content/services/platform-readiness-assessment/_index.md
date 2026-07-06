@@ -42,7 +42,7 @@ faq:
 > **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — the assessment recommends which edition fits your scope.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="#what-we-look-at">See details →</a>
 </div>
 
@@ -269,7 +269,7 @@ For named case studies see **[Customer stories](/case-studies/)** — request th
 Free. No prep needed. We confirm fit, agree on a focused scope, and tell you whether the 14-day or the 28-day variant matches your situation. If neither fits, we say so.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 Or read more:

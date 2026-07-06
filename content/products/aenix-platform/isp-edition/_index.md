@@ -39,7 +39,7 @@ faq:
 **A modern alternative to OpenStack built for small and mid-size hosting providers, MSPs, regional cloud providers, and data centres. Turnkey cloud-in-a-box: hosting panel, billing, customer portal, payments, support — install, plug in users, start operating. WHMCS-integrated. Production-ready in weeks.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
 

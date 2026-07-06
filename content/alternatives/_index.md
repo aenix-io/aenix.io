@@ -8,7 +8,7 @@ language: "en"
 **Cozystack and Ænix Platform compared with the most common alternatives. Honest assessments — when each fits, when it doesn't, what migration looks like. Not marketing battle cards.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
 </div>
 

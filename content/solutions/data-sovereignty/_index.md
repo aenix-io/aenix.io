@@ -52,7 +52,7 @@ Aenix runs a structured engagement that produces a control-level map of where yo
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises consuming sovereign cloud internally, or **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for operators offering it as a product — customer-controlled keys at every layer, air-gap optional.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/data-residency-requirements-2026/">Read guide →</a>
 </div>
 
@@ -244,7 +244,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 Free. No prep needed. We confirm fit, narrow the sovereignty scope to your binding regulators or clauses, and tell you whether the 14-day or the 28-day variant matches your situation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 Or read more:

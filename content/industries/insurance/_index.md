@@ -49,7 +49,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for DORA-aligned regulated cloud foundation; **[AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** for claims-processing AI and underwriting AI workloads on regulated data. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/solutions/dora-compliance/">DORA compliance →</a>
 </div>
 

@@ -38,7 +38,7 @@ faq:
 > **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — strategy outputs which edition fits your buyer profile and engagement scope.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/services/platform-readiness-assessment/">Assessment methodology →</a>
 </div>
 

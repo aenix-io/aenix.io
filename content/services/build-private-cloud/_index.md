@@ -48,7 +48,7 @@ Aenix builds private clouds end-to-end based on [Cozystack](/products/cozystack/
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building private/hybrid sovereign cloud; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators needing multi-region public-cloud-class platform.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/build-private-cloud-90-day-playbook/">Read playbook →</a>
 </div>
 

@@ -48,7 +48,7 @@ Aenix builds Cozystack-based platforms for universities, research institutes, an
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereign student-data + multi-tenant research-group isolation; **[AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** for AI/ML research labs with GPU pools.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/cloud-native-research-and-teaching-infrastructure/">Cloud-native research infrastructure →</a>
 </div>
 

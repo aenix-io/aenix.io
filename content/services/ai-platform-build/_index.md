@@ -40,7 +40,7 @@ faq:
 > **Pairs with:** **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** — turnkey AI infrastructure with multi-tenant GPU scheduling (H100/H200/L40S/A100/Blackwell), ready blueprints for inference + fine-tuning + RAG, sovereignty controls for regulated AI workloads. Free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/build-ai-platform-for-startups/">Read playbook →</a>
 </div>
 

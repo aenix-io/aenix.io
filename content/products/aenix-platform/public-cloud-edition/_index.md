@@ -38,7 +38,7 @@ faq:
 **A turnkey public-cloud control plane for large operators — public-cloud companies, big banks running own cloud, national telcos. Multi-hypervisor, multi-region, integrates with third-party infrastructure. Built for data centres and cloud providers launching or scaling public clouds at hyperscaler-adjacent scale.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
 ---
@@ -159,7 +159,7 @@ Public Cloud Edition supports both customer-operated and Aenix-managed-operation
 Book a discovery call. We'll discuss your cloud product strategy, scale, regulatory context, and Public Cloud Edition fit.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 ---

@@ -40,7 +40,7 @@ faq:
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — modern alternative to OpenStack for hosting providers. WHMCS-integrated billing, tenant lock/suspension, fast feature delivery, productized installer, migration tooling from VMware/OpenStack/Virtuozzo. Entry from €1.3k/month support tier. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/hosting-provider-platform-modernization/">Hosting platform modernization →</a>
 </div>
 

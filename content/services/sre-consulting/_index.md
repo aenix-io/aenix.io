@@ -38,7 +38,7 @@ faq:
 > **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** — SRE practice tied to the production platform you're operating. Stand-alone SRE consulting also available.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/platform-engineering-vs-devops-vs-sre/">SRE vs DevOps vs Platform Engineering →</a>
 </div>
 

@@ -51,7 +51,7 @@ Aenix is currently piloting Cozystack with an energy operator and applies the sa
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for NIS2-aligned multi-site architecture with air-gap option for OT; **[AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** for grid-optimization AI workloads.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/smart-grid-platform-architecture-it-ot/">Grid architecture →</a>
 </div>
 

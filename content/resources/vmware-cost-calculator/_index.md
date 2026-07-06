@@ -48,7 +48,7 @@ faq:
 **A VMware cost calculator turns Broadcom's renewal into a number you can act on. Enter the CPU cores in your estate and what you pay per core today, and it shows the annual cost, the net saving if you move to an open Apache-2.0 platform, the three-year delta after migration, and how fast the migration pays back. Built by Aenix — the team behind Cozystack.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/migration/vmware/">VMware migration →</a>
 </div>
 
@@ -77,7 +77,7 @@ These are deliberately simple inputs so the output is defensible. A full TCO inc
 ## Turn the number into a plan
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/alternatives/vmware-alternative/">VMware alternative →</a>
 </div>
 

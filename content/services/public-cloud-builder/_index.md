@@ -47,7 +47,7 @@ Aenix builds customer-facing public cloud products on Cozystack — the open-sou
 > **Pairs with:** **[Ænix Platform Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large public-cloud operators (multi-region, cloud-like UX, multi-hypervisor); **[ISP Edition](/products/aenix-platform/isp-edition/)** for small / mid hosting providers and regional clouds (WHMCS-integrated, productized installer, from €1.3k/month).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/launch-customer-facing-cloud-product/">Read playbook →</a>
 </div>
 

@@ -49,7 +49,7 @@ Aenix builds platforms for public-sector and quasi-public organizations across t
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereign cloud with strict customer-controlled keys + air-gap option; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large public-sector cloud product launches at hyperscaler-adjacent scale.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/solutions/data-sovereignty/">Data sovereignty solutions →</a>
 </div>
 

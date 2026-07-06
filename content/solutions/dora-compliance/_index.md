@@ -51,7 +51,7 @@ Aenix runs a DORA-aligned platform readiness engagement for financial entities a
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — DORA-aligned by design (customer-controlled keys at every layer, audit-ready logging via VictoriaLogs, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness mechanics, supplier transparency to second hop). Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/blog/2026/05/dora-compliance-checklist-cloud-architecture/">Get checklist →</a>
 </div>
 
@@ -245,7 +245,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 Free, no prep needed. We confirm fit, narrow the DORA scope to your binding articles, and recommend the 14-day or 28-day variant for your situation.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
 Or read more:

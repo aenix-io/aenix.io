@@ -8,7 +8,7 @@ language: "en"
 **Engagement-led entry points to Aenix work. Pick the engagement type that matches what you need to do — assess, build, operate. All paths lead to Ænix Platform deployments matched to your buyer profile.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a discovery call</a>
+  <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get readiness assessment →</a>
 </div>
 

@@ -28,7 +28,7 @@
     {{- else -}}
       {{- $u := cond $de "/de/kontakt/" "/contact/" -}}
       {{- $t := cond $de "Umstieg planen?" "Ready to scope your build?" -}}
-      {{- $l := cond $de "Discovery-Call buchen" "Book a discovery call" -}}
+      {{- $l := cond $de "Discovery-Call buchen" "Book a call" -}}
       <div class="inline-cta inline-cta--hard"><span class="inline-cta__lead">{{ $t }}</span> <a class="inline-cta__link inline-cta__link--primary" href="{{ $u }}">{{ $l }} →</a></div>
     {{- end -}}
     {{- $p.Scratch.Set "ctaInjected" (add $done 1) -}}
