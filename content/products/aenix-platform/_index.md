@@ -93,7 +93,7 @@ Modern alternative to OpenStack. Includes WHMCS integration, billing module + te
 
 For regulated enterprises (banks, insurance, public administration, telco, healthcare) facing DORA / NIS2 / sovereignty pressure.
 
-Private and hybrid sovereign cloud — secure, automated, easy to extend. Multi-DC setups. One control plane that can connect to VMware, OpenNebula, OpenShift, and more. Includes education and training.
+Private and hybrid sovereign cloud. Multi-DC setups. One control plane that can connect to VMware, OpenNebula, OpenShift, and more. Includes education and training.
 
 **Engagement size:** €500k - €5M+ multi-year platform builds. Tier-1 European banks under NDA.
 

@@ -111,7 +111,7 @@ This article focuses on platform; portal layer is a smaller, secondary decision.
 
 **Example stack:** Backstage + Crossplane + custom Kubernetes operators per service type.
 
-**Why it works:** Catalog-first UX is intuitive for product teams; operators provide robust automation.
+**Why it works:** Catalog-first UX is intuitive for product teams; operators handle the actual provisioning.
 
 **Trade-off:** Platform team must invest in product-management practices (catalog hygiene, deprecations, roadmap).
 

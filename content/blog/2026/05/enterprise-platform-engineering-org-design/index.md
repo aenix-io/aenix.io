@@ -74,7 +74,7 @@ Coordination across multiple platform teams becomes its own
 discipline — platform-of-platforms governance, shared standards,
 escalation paths for cross-platform decisions.
 
-### 2. Governance ovrhead becomes substantial
+### 2. Governance overhead becomes substantial
 
 Architecture decisions affect thousands of engineers and millions
 of euros of recurring cost. Decision-making cannot be ad-hoc; it

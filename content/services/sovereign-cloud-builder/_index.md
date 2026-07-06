@@ -1,6 +1,6 @@
 ---
 title: "Sovereign cloud builder — design and ship a sovereign cloud product for regulated markets"
-description: "Sovereign cloud is a procurement-mandated reality in 2026 across EU member states, Kazakhstan, several APAC jurisdictions, and growing list of others...."
+description: "Sovereign cloud is a procurement-mandated reality in 2026 across EU member states, Kazakhstan, and several APAC jurisdictions...."
 related_pages:
   - /solutions/data-sovereignty
   - /industries/public-sector
@@ -42,7 +42,7 @@ faq:
     a: "The product is built on Cozystack, which runs virtual machines via KubeVirt and containers on a single Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. The Enterprise Edition adds strict customer-controlled-keys and air-gap support for the most sensitive workloads."
 ---
 
-**Sovereign cloud is a procurement-mandated reality in 2026 across EU member states, Kazakhstan, several APAC jurisdictions, and growing list of others. Building one means designing for substantive sovereignty — not just marketing claims — including encryption-key custody, supplier-chain transparency, audit-readiness, and regulator-aligned operational model.**
+**Sovereign cloud is a procurement-mandated reality in 2026 across EU member states, Kazakhstan, and several APAC jurisdictions. Building one means designing for substantive sovereignty — not just marketing claims — including encryption-key custody, supplier-chain transparency, audit-readiness, and regulator-aligned operational model.**
 
 Aenix builds sovereign cloud products on Cozystack for governments, quasi-public entities, and regional operators serving sovereignty-mandated markets.
 

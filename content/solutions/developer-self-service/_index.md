@@ -1,6 +1,6 @@
 ---
 title: "Developer self-service — environments in hours, not weeks"
-description: "The single most expensive thing happening in most engineering organizations is the wait time between \"team needs an environment\" and \"team has an..."
+description: "One of the most expensive things in most engineering organizations is the wait time between \"team needs an environment\" and \"team has an..."
 type: "page"
 related_pages: ["/services/internal-developer-platform", "/services/platform-engineering", "/products/aenix-platform/idp-edition/", "/products/cozystack"]
 language: "en"
@@ -34,9 +34,9 @@ faq:
     a: "No. The capability is built on Cozystack, an open-source CNCF project licensed under Apache 2.0 with no per-CPU or per-core licensing. The golden paths and platform layer use standard Kubernetes APIs, so the foundation remains portable."
 ---
 
-**The single most expensive thing happening in most engineering organizations is the wait time between "team needs an environment" and "team has an environment." When that gap is days or weeks, product velocity decays measurably; when it's hours, the platform investment compounds for years.**
+**One of the most expensive things in most engineering organizations is the wait time between "team needs an environment" and "team has an environment." When that gap is days or weeks, product velocity decays measurably; when it's hours, the platform investment compounds for years.**
 
-Aenix builds developer self-service capability into platforms that product teams actually adopt — not Backstage as wallpaper, but underlying golden paths that turn requests into provisioned reality without filing tickets.
+Aenix builds developer self-service capability into platforms that product teams actually adopt — not Backstage as wallpaper, but underlying golden paths that provision what a team asks for without filing a ticket.
 
 > **Pairs with:** **[Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)** — Internal Developer Platform layer with GitLab automation, Argo CD workflows, APIs for self-service, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
