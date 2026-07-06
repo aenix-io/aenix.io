@@ -1740,3 +1740,21 @@ summary:focus-visible,
 @media (max-width: 640px) {
   .inline-cta { flex-direction: column; align-items: flex-start; gap: 0.4rem; }
 }
+
+/* ── Landing readability: cap running-prose measure (~68ch) ──
+   Long lines are the main driver of the "wall of text" feeling. Constrain the
+   MEASURE of running prose while leaving full-width structural blocks
+   (tables, grids, gap-cards, factoids, forms, stat rows) at their own width.
+   Prose stays left-aligned; the freed space becomes right-hand whitespace. */
+.page-content > p,
+.page-content > ul,
+.page-content > ol,
+.page-content > blockquote,
+.seo-direct-answer,
+.seo-quick-facts .quick-facts-list {
+  max-width: 68ch;
+}
+/* A touch more vertical rhythm so sections breathe. */
+.page-content > p { margin-bottom: 1.45rem; }
+.page-content > h2 { margin-top: 3.5rem; }
+.page-content > h2:first-child { margin-top: 0; }
