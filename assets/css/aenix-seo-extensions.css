@@ -2312,3 +2312,92 @@ summary:focus-visible,
 }
 .footer-nav-group a { color: #94A3B8; }
 .footer-nav-group a:hover { color: var(--brand-primary, #01A5FF); }
+
+/* ============================================================
+   HOMEPAGE POLISH PASS
+   Quieter hero badge, drawn diagram wires, price emphasis in
+   the edition selector, section air, final CTA band.
+   ============================================================ */
+
+/* Hero badge: quieter, less shouty */
+.page-hero--split .page-hero-tag {
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  padding: 0.3125rem 0.875rem;
+  background: rgba(139, 92, 246, 0.08);
+  border-color: rgba(139, 92, 246, 0.22);
+  margin-bottom: 1.25rem;
+}
+
+/* Diagram: wires draw once on load (reduced-motion reset zeroes it) */
+.hero-diagram__wires path {
+  stroke-dasharray: 40;
+  stroke-dashoffset: 40;
+  animation: hero-wire-draw 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.hero-diagram__wires path:nth-child(-n+4) { animation-delay: 0.55s; }
+.hero-diagram__wires path:nth-child(5)    { animation-delay: 0.35s; }
+.hero-diagram__wires path:nth-child(6)    { animation-delay: 0.2s; }
+.hero-diagram__wires path:nth-child(n+7)  { animation-delay: 0.05s; }
+@keyframes hero-wire-draw {
+  to { stroke-dashoffset: 0; }
+}
+/* Soft brand glow behind the diagram */
+.hero-split__visual {
+  position: relative;
+}
+.hero-split__visual::before {
+  content: "";
+  position: absolute;
+  inset: 8% 4%;
+  background: radial-gradient(ellipse at 50% 45%,
+    rgba(1, 165, 255, 0.10), rgba(102, 27, 225, 0.07) 55%, transparent 75%);
+  filter: blur(12px);
+  pointer-events: none;
+}
+.hero-diagram { position: relative; }
+
+/* Hero glow box: hide its hard edge on small screens */
+@media (max-width: 640px) {
+  .page-hero-glow { display: none; }
+}
+
+/* Edition selector: retire the duplicated in-card eyebrow, make the
+   engagement figure the anchor instead of an italic aside */
+.edition-selector.is-tabbed .card--edition .card-tag { display: none; }
+.edition-selector.is-tabbed .card--edition .card-meta {
+  order: -1;
+  font-style: normal;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--aenix-primary);
+  letter-spacing: 0.01em;
+}
+.edition-selector.is-tabbed .card--edition .card-body { position: relative; }
+
+/* Section air + calmer section intros */
+.page-home .page-content h2 { margin-top: 5rem; }
+.page-home .page-content h2 + p {
+  color: var(--aenix-text-muted);
+  max-width: 56ch;
+}
+
+/* Final CTA band */
+.page-home .cta-final {
+  width: min(920px, calc(100vw - 3rem));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 4.5rem 0 1rem;
+  padding: 3rem 2rem 3.25rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(1, 165, 255, 0.10), transparent 65%),
+    radial-gradient(ellipse at 50% 120%, rgba(102, 27, 225, 0.10), transparent 60%),
+    rgba(255, 255, 255, 0.02);
+}
+.page-home .cta-final h2 { margin-top: 0; }
+.page-home .cta-final h2 + p { margin: 0.5rem auto 0; }
+.page-home .cta-final .cta-row { margin-top: 1.75rem; margin-bottom: 0; }
