@@ -2401,3 +2401,48 @@ summary:focus-visible,
 .page-home .cta-final h2 { margin-top: 0; }
 .page-home .cta-final h2 + p { margin: 0.5rem auto 0; }
 .page-home .cta-final .cta-row { margin-top: 1.75rem; margin-bottom: 0; }
+
+/* ============================================================
+   BUTTON UNIFICATION — glass treatment sitewide
+   Solid (primary) buttons: top sheen + glow. Outline (secondary)
+   buttons: translucent glass with backdrop blur. Matching heights
+   within each row.
+   ============================================================ */
+.cta-primary,
+.blog-quiz__start,
+.blog-quiz__next,
+.blog-quiz__retry,
+.contact-cta--primary,
+.aenix-consent-btn--primary,
+.inline-cta__link--primary {
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0) 45%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), var(--glow-btn, 0 0 24px rgba(1, 165, 255, 0.3), 0 4px 16px rgba(0, 0, 0, 0.3));
+}
+.cta-primary:hover {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 0 32px rgba(1, 165, 255, 0.4), 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+.aenix-consent-btn--primary {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+.cta-secondary,
+.contact-cta--secondary,
+.aenix-consent-btn--secondary,
+.pairs-with-editions-card .btn-secondary {
+  background-color: var(--glass-bg, rgba(255, 255, 255, 0.03));
+  -webkit-backdrop-filter: var(--glass-blur, blur(16px) saturate(120%));
+  backdrop-filter: var(--glass-blur, blur(16px) saturate(120%));
+  box-shadow: var(--glass-shadow, inset 0 1px 0 rgba(255, 255, 255, 0.04));
+}
+.cta-secondary:hover {
+  background-color: rgba(1, 165, 255, 0.07);
+}
+
+/* Equal heights inside any CTA row: one padding per row context */
+.page-hero-cta .btn,
+.cta-row .cta-primary,
+.cta-row .cta-secondary {
+  align-items: center;
+}
+.page-hero-cta .btn-xl { padding: 1rem 2.25rem; font-size: 1rem; line-height: 1.2; }
+.cta-row .cta-primary,
+.cta-row .cta-secondary { padding: 0.8125rem 1.75rem; line-height: 1.2; }

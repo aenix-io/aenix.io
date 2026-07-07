@@ -216,26 +216,30 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .btn-primary {
-  background: var(--brand-secondary);
+  background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0) 45%), var(--brand-secondary);
   color: #fff;
-  box-shadow: var(--glow-btn);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), var(--glow-btn);
 }
 .btn-primary:hover {
-  background: var(--brand-primary);
+  background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0) 45%), var(--brand-primary);
   color: #fff;
-  box-shadow: 0 0 32px rgba(1,165,255,0.4), 0 6px 20px rgba(0,0,0,0.3);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 0 32px rgba(1,165,255,0.4), 0 6px 20px rgba(0,0,0,0.3);
   transform: translateY(-1px);
 }
 
 .btn-secondary {
-  background: transparent;
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: var(--glass-blur);
+  backdrop-filter: var(--glass-blur);
   color: var(--text-primary);
   border-color: var(--border-default);
+  box-shadow: var(--glass-shadow);
 }
 .btn-secondary:hover {
   border-color: var(--brand-primary);
   color: var(--brand-primary);
-  background: rgba(1,165,255,0.05);
+  background: rgba(1,165,255,0.07);
+  box-shadow: var(--glass-shadow);
 }
 
 .btn-ghost {
