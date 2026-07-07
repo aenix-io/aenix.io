@@ -2446,3 +2446,33 @@ summary:focus-visible,
 .page-hero-cta .btn-xl { padding: 1rem 2.25rem; font-size: 1rem; line-height: 1.2; }
 .cta-row .cta-primary,
 .cta-row .cta-secondary { padding: 0.8125rem 1.75rem; line-height: 1.2; }
+
+/* ============================================================
+   WHAT WE REPLACE — equal card heights across both groups
+   The two groups share one row grid (subgrid): three equal card
+   rows sized by the tallest card overall; links pin to the
+   card bottom.
+   ============================================================ */
+@media (min-width: 901px) {
+  .page-home .replace-groups {
+    grid-template-rows: auto repeat(3, 1fr);
+    gap: 0.875rem 2rem;
+  }
+  .page-home .replace-groups .replace-group {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+  }
+  .page-home .replace-groups .replace-group__label {
+    margin-bottom: 0;
+    align-self: center;
+  }
+  .page-home .replace-groups .card-grid--replace {
+    display: contents;
+  }
+}
+.card--replace .card-body {
+  height: 100%;
+  grid-template-rows: auto 1fr auto;
+}
+.card--replace .card-link { align-self: end; }
