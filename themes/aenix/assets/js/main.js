@@ -23,6 +23,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---- Reveal-on-scroll tagging ---- */
+  // Structural content blocks get the theme .reveal treatment. Classes
+  // are added here (not in markup), so without JS everything stays
+  // visible; the reveal observer below picks them up.
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealTargets = document.querySelectorAll([
+      '.page-content > h2',
+      '.page-content > table',
+      '.page-content > blockquote',
+      '.seo-quick-facts',
+      '.faq-item',
+      '.trust-badges',
+      '.pricing-cards-2', '.pricing-cards-3',
+      '.capability-grid-3x3', '.trigger-grid-2x2', '.capability-grid',
+      '.fit-grid', '.timeline-horizontal', '.lead-magnet-form',
+      '.grid-2x2', '.gap-cards-2', '.cta-cards', '.cs-stats',
+      '.replace-group', '.edition-selector', '.open-core-split',
+      '.engagement-step', '.cta-final', '.related-pages__card',
+      '.landing-cta'
+    ].join(','));
+    revealTargets.forEach(el => el.classList.add('reveal'));
+  }
+
   /* ---- Desktop dropdown keyboard support ---- */
   // Panels open via :focus-within (CSS); Escape moves focus back to the
   // toggle and drops it so the panel closes without tabbing through
