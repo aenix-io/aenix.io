@@ -337,7 +337,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .dropdown-arrow { transition: transform 0.2s var(--ease); opacity: 0.4; }
-.nav-item.has-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
+.nav-item.has-dropdown:hover .dropdown-arrow,
+.nav-item.has-dropdown:focus-within .dropdown-arrow { transform: rotate(180deg); }
 
 .dropdown-menu {
   position: absolute;
@@ -354,7 +355,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .dropdown-menu ul, .dropdown-menu { background: transparent; }
 .dropdown-menu::before { display: none; }
-.nav-item.has-dropdown:hover .dropdown-menu {
+.nav-item.has-dropdown:hover .dropdown-menu,
+.nav-item.has-dropdown:focus-within .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -3150,5 +3152,23 @@ body.modal-open { overflow: hidden; }
   .footer-bottom {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* ==========================================================================
+   REDUCED MOTION — global reset (WCAG 2.1 AA / PRODUCT.md requirement)
+   Component-specific reduce rules above stay for their extra handling
+   (canvas removal, dash-offset snaps); this catches everything else,
+   including the extension components (card lifts, FAQ marker, dropdown
+   slide, share/chip transitions). No JS depends on transitionend.
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }

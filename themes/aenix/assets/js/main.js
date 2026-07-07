@@ -23,6 +23,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---- Desktop dropdown keyboard support ---- */
+  // Panels open via :focus-within (CSS); Escape moves focus back to the
+  // toggle and drops it so the panel closes without tabbing through
+  // every remaining link.
+  document.querySelectorAll('.nav-item.has-dropdown').forEach(item => {
+    item.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && item.contains(document.activeElement)) {
+        const toggle = item.querySelector('.dropdown-toggle');
+        e.stopPropagation();
+        if (toggle) toggle.focus();
+        document.activeElement.blur();
+      }
+    });
+  });
+
   /* ---- Mobile submenu toggles ---- */
   document.querySelectorAll('.mobile-nav-item.has-children > button').forEach(btn => {
     btn.addEventListener('click', () => {
