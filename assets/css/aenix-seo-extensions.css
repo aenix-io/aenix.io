@@ -2526,3 +2526,40 @@ summary:focus-visible,
 }
 .page-home .page-content > h2 { margin-top: 5.5rem; }
 .page-home .page-content > h2:first-child { margin-top: 2.5rem; }
+
+/* ============================================================
+   CONTENT TABLES + BLOCKQUOTES (landing/compare/blog bodies)
+   Markdown tables scroll inside their own box instead of
+   pushing the page sideways on small screens; blockquotes get
+   a real quote treatment (they had none).
+   ============================================================ */
+.page-content table,
+.blog-post-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+.page-content blockquote,
+.blog-post-content blockquote {
+  margin: 1.75rem 0;
+  padding: 1.125rem 1.375rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 12px;
+}
+.page-content blockquote p,
+.blog-post-content blockquote p {
+  margin: 0 0 0.625rem;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--aenix-text);
+}
+.page-content blockquote p:last-child,
+.blog-post-content blockquote p:last-child { margin-bottom: 0; }
+.page-content blockquote em,
+.blog-post-content blockquote em {
+  color: var(--aenix-text-muted);
+  font-size: 0.9375rem;
+}
