@@ -2476,3 +2476,19 @@ summary:focus-visible,
   grid-template-rows: auto 1fr auto;
 }
 .card--replace .card-link { align-self: end; }
+
+/* ============================================================
+   HOMEPAGE — headings on the wide track, no divider lines
+   Section H2s and their intro lines align with the left edge of
+   the breakout blocks below them instead of the narrow prose
+   column; separation comes from air and section-type contrast.
+   ============================================================ */
+.page-home .page-content > h2,
+.page-home .page-content > h2 + p {
+  width: min(1140px, calc(100vw - 3rem));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page-home .page-content > h2 { margin-top: 5.5rem; }
+.page-home .page-content > h2:first-child { margin-top: 2.5rem; }

@@ -82,7 +82,6 @@ If you came here because of one of these — start at the linked page; we can ta
 
 </div>
 
----
 
 ## Pick your edition
 
@@ -177,7 +176,6 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
 
 </div>
 
----
 
 ## Why open core
 
@@ -210,7 +208,7 @@ What that buys you in practice:
 <span><strong>Supplier transparency to the second hop</strong> — DORA-aligned subcontractor disclosure, with the upstream project being our own work.</span>
 </li>
 <li class="advantage-row">
-<svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="7.5" cy="7.5" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 17 17M14 14l2-2M12 16l1.5-1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+<svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="6" cy="10" r="3.25" stroke="currentColor" stroke-width="1.5"/><path d="M9.25 10H17M14 10v3M17 10v2.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
 <span><strong>Customer-controlled keys at every layer</strong> — encryption keys for storage, secrets, audit logs are yours, not ours.</span>
 </li>
 <li class="advantage-row">
@@ -221,7 +219,6 @@ What that buys you in practice:
 
 </div>
 
----
 
 ## How we engage
 
@@ -247,7 +244,6 @@ What that buys you in practice:
 
 </div>
 
----
 
 <div class="cta-final">
 
