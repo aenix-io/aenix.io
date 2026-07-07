@@ -2276,23 +2276,13 @@ summary:focus-visible,
   font-size: 1.125rem;
 }
 @media (min-width: 1024px) {
-  .page-home .engagement-steps::before {
-    content: "";
-    position: absolute;
-    top: 2.9rem;
-    left: 4%;
-    right: 4%;
-    height: 2px;
-    background: linear-gradient(90deg, rgba(1, 165, 255, 0.45), rgba(167, 139, 250, 0.45));
-  }
-  .page-home .engagement-steps { position: relative; }
   .engagement-step:not(:last-child)::after {
     content: "→";
     position: absolute;
-    top: 2.35rem;
-    right: -1.35rem;
-    color: rgba(148, 163, 184, 0.7);
-    font-size: 1.25rem;
+    top: 2.3rem;
+    right: -1.4rem;
+    color: rgba(148, 163, 184, 0.9);
+    font-size: 1.375rem;
   }
 }
 
