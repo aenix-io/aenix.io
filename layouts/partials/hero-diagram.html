@@ -1,77 +1,107 @@
 {{/*
-  hero-diagram.html — product architecture visual for the homepage hero.
-  Pure inline SVG, brand tokens only. Reads bottom-up: infrastructure
-  nodes → open-source Cozystack core → commercial Ænix Platform layer →
-  the operator surfaces (portal / billing / tenants / workloads).
-  Animation is CSS-driven and inherits the global reduced-motion reset.
+  hero-diagram.html — layered product architecture visual for the
+  homepage hero. Four bands (self-service surfaces -> Ænix Platform ->
+  Cozystack core -> any infrastructure) joined by glowing bus
+  connectors. Entrance: the platform band glows first, then the wires
+  light up outward and the junction dots pop. All animation is CSS
+  (classes hd-z1/z2/z3) and inherits the global reduced-motion reset.
 */}}
-<svg class="hero-diagram" viewBox="0 0 460 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ænix Platform architecture: portal, billing, tenants, and workloads on the Ænix Platform layer, built on the open-source Cozystack core, running on your infrastructure">
-  <!-- connectors -->
-  <g class="hero-diagram__wires" stroke="rgba(1,165,255,0.35)" stroke-width="1.5">
-    <path d="M85 96v22"/><path d="M195 96v22"/><path d="M305 96v22"/><path d="M405 96v22"/>
-    <path d="M230 178v22"/>
-    <path d="M230 260v22"/>
-    <path d="M110 342v-18"/><path d="M230 342v-18"/><path d="M350 342v-18"/>
+<svg class="hero-diagram" viewBox="0 0 520 620" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ænix Platform architecture: self-service experience (landing portal, infrastructure provision, service catalog, billing) on the Ænix Platform communication and operations layer, built on the Cozystack core (CNCF Sandbox: compute, storage, network, telemetry, IAM), running on any infrastructure — bare metal, private cloud, or public cloud">
+  <defs>
+    <linearGradient id="hd-plat-fill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1180F5"/>
+      <stop offset="1" stop-color="#0A5FD6"/>
+    </linearGradient>
+    <filter id="hd-plat-glow" x="-30%" y="-80%" width="160%" height="260%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="hd-dot-glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ══ Band 1: Self-Service Experience ══ -->
+  <rect x="20" y="20" width="480" height="130" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.10)"/>
+  <text x="260" y="52" text-anchor="middle" fill="#F1F5F9" font-size="15" font-weight="700">Self-Service Experience</text>
+  <g stroke="rgba(255,255,255,0.07)"><path d="M140 72v56"/><path d="M260 72v56"/><path d="M380 72v56"/></g>
+  <g class="hd-icons" stroke="#B6C6DC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(80 88)"><rect x="-9" y="-8" width="18" height="13" rx="2"/><path d="M-3 8h6M0 5v3"/></g>
+    <g transform="translate(200 88)"><path d="M0-9 8-4.5v9L0 9l-8-4.5v-9L0-9ZM-8-4.5 0 0l8-4.5M0 0v9"/></g>
+    <g transform="translate(320 88)"><path d="M0-8.5 1.8-2.3 8 0 1.8 2.3 0 8.5-1.8 2.3-8 0l6.2-2.3L0-8.5Z"/><path d="M6.5-7.5v3M8 -6h-3"/></g>
+    <g transform="translate(440 88)"><rect x="-9" y="-7" width="18" height="14" rx="2"/><path d="M-9-2h18M-5.5 4h5"/></g>
+  </g>
+  <text x="80" y="122" text-anchor="middle" fill="#94A3B8" font-size="11.5">Landing portal</text>
+  <text x="200" y="116" text-anchor="middle" fill="#94A3B8" font-size="11.5">Infrastructure</text>
+  <text x="200" y="130" text-anchor="middle" fill="#94A3B8" font-size="11.5">provision</text>
+  <text x="320" y="122" text-anchor="middle" fill="#94A3B8" font-size="11.5">Service catalog</text>
+  <text x="440" y="122" text-anchor="middle" fill="#94A3B8" font-size="11.5">Billing</text>
+
+  <!-- connectors band1 -> platform -->
+  <g class="hd-wires hd-z1" stroke="rgba(1,165,255,0.5)" stroke-width="1.5">
+    <path d="M80 150v22"/><path d="M200 150v22"/><path d="M320 150v22"/><path d="M440 150v22"/>
+    <path d="M80 172h360"/>
+    <path d="M260 172v16"/>
+  </g>
+  <g class="hd-dots hd-z1" fill="#01A5FF" filter="url(#hd-dot-glow)">
+    <circle cx="80" cy="172" r="3"/><circle cx="200" cy="172" r="3"/><circle cx="320" cy="172" r="3"/><circle cx="440" cy="172" r="3"/>
   </g>
 
-  <!-- top chips: operator surfaces -->
-  <g class="hero-diagram__chips">
-    <g>
-      <rect x="30" y="60" width="110" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
-      <text x="85" y="83" text-anchor="middle" fill="#F1F5F9" font-size="14" font-weight="600">Portal</text>
-    </g>
-    <g>
-      <rect x="150" y="60" width="90" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
-      <text x="195" y="83" text-anchor="middle" fill="#F1F5F9" font-size="14" font-weight="600">Billing</text>
-    </g>
-    <g>
-      <rect x="250" y="60" width="100" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
-      <text x="300" y="83" text-anchor="middle" fill="#F1F5F9" font-size="14" font-weight="600">Tenants</text>
-    </g>
-    <g>
-      <rect x="360" y="60" width="90" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
-      <text x="405" y="83" text-anchor="middle" fill="#F1F5F9" font-size="13" font-weight="600">Workloads</text>
-    </g>
+  <!-- ══ Band 2: Ænix Platform (glowing) ══ -->
+  <rect class="hd-plat-halo" x="20" y="190" width="480" height="72" rx="14" fill="rgba(17,128,245,0.55)" filter="url(#hd-plat-glow)"/>
+  <rect x="20" y="190" width="480" height="72" rx="14" fill="url(#hd-plat-fill)" stroke="rgba(140,200,255,0.55)"/>
+  <rect x="21" y="191" width="478" height="34" rx="13" fill="rgba(255,255,255,0.10)"/>
+  <text x="260" y="222" text-anchor="middle" fill="#FFFFFF" font-size="21" font-weight="800" letter-spacing="0.2">Ænix Platform</text>
+  <text x="260" y="245" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="12">Communication &amp; Operations Layer</text>
+
+  <!-- connectors platform -> core -->
+  <g class="hd-wires hd-z2" stroke="rgba(1,165,255,0.5)" stroke-width="1.5">
+    <path d="M260 262v20"/>
+    <path d="M100 282h320"/>
+    <path d="M100 282v18"/><path d="M420 282v18"/>
+  </g>
+  <g class="hd-dots hd-z2" fill="#01A5FF" filter="url(#hd-dot-glow)">
+    <circle cx="260" cy="282" r="3"/><circle cx="100" cy="282" r="3"/><circle cx="420" cy="282" r="3"/>
   </g>
 
-  <!-- Ænix Platform layer (commercial, violet) -->
-  <g>
-    <rect x="30" y="118" width="400" height="60" rx="12" fill="rgba(139,92,246,0.10)" stroke="rgba(167,139,250,0.45)" stroke-width="1.5"/>
-    <text x="52" y="147" fill="#F1F5F9" font-size="17" font-weight="700">Ænix Platform</text>
-    <text x="52" y="166" fill="#94A3B8" font-size="12">commercial layer · SLA · integrations</text>
-    <rect x="330" y="134" width="78" height="26" rx="13" fill="rgba(167,139,250,0.16)"/>
-    <text x="369" y="151" text-anchor="middle" fill="#C4B5FD" font-size="12" font-weight="600">product</text>
+  <!-- ══ Band 3: Cozystack Core ══ -->
+  <rect x="20" y="300" width="480" height="140" rx="14" fill="rgba(1,165,255,0.05)" stroke="rgba(1,165,255,0.30)"/>
+  <text x="260" y="332" text-anchor="middle" fill="#F1F5F9" font-size="15" font-weight="700">Cozystack Core <tspan fill="#01A5FF" font-weight="600">(CNCF Sandbox)</tspan></text>
+  <g stroke="rgba(255,255,255,0.07)"><path d="M116 352v58"/><path d="M212 352v58"/><path d="M308 352v58"/><path d="M404 352v58"/></g>
+  <g class="hd-icons" stroke="#B6C6DC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(68 372)"><rect x="-7" y="-7" width="14" height="14" rx="2"/><rect x="-3" y="-3" width="6" height="6"/><path d="M-4-10v3M0-10v3M4-10v3M-4 7v3M0 7v3M4 7v3M-10-4h3M-10 0h3M-10 4h3M7-4h3M7 0h3M7 4h3"/></g>
+    <g transform="translate(164 372)"><ellipse cx="0" cy="-5.5" rx="8" ry="3.5"/><path d="M-8-5.5v11c0 2 3.6 3.5 8 3.5s8-1.5 8-3.5v-11M-8 0c0 2 3.6 3.5 8 3.5S8 2 8 0"/></g>
+    <g transform="translate(260 372)"><circle cx="-5.5" cy="-5" r="2.8"/><circle cx="6" cy="-2" r="2.8"/><circle cx="-2" cy="6" r="2.8"/><path d="M-3.2-3.3 3.4-2.7M-4.4-2.6-2.8 3.3M3.6-.1-.4 4.3"/></g>
+    <g transform="translate(356 372)"><path d="M-7 8V1M-1 8v-7M5 8v-11"/><path d="M-7-4l5-4 4 3 5-5"/></g>
+    <g transform="translate(452 372)"><rect x="-7" y="-2" width="14" height="10" rx="2"/><path d="M-4-2v-3.5a4 4 0 0 1 8 0V-2M0 2.5v2"/></g>
+  </g>
+  <text x="68" y="404" text-anchor="middle" fill="#94A3B8" font-size="11.5">Compute</text>
+  <text x="164" y="404" text-anchor="middle" fill="#94A3B8" font-size="11.5">Storage</text>
+  <text x="260" y="404" text-anchor="middle" fill="#94A3B8" font-size="11.5">Network</text>
+  <text x="356" y="404" text-anchor="middle" fill="#94A3B8" font-size="11.5">Telemetry</text>
+  <text x="452" y="404" text-anchor="middle" fill="#94A3B8" font-size="11.5">IAM</text>
+  <text x="260" y="426" text-anchor="middle" fill="#64748B" font-size="10.5">open-source core · Apache 2.0</text>
+
+  <!-- connectors core -> infrastructure -->
+  <g class="hd-wires hd-z3" stroke="rgba(1,165,255,0.5)" stroke-width="1.5">
+    <path d="M130 440v20"/><path d="M260 440v20"/><path d="M390 440v20"/>
+    <path d="M130 460h260"/>
+    <path d="M130 460v18"/><path d="M260 460v18"/><path d="M390 460v18"/>
+  </g>
+  <g class="hd-dots hd-z3" fill="#01A5FF" filter="url(#hd-dot-glow)">
+    <circle cx="130" cy="460" r="3"/><circle cx="260" cy="460" r="3"/><circle cx="390" cy="460" r="3"/>
   </g>
 
-  <!-- Cozystack core (open source, blue) -->
-  <g>
-    <rect x="30" y="200" width="400" height="60" rx="12" fill="rgba(1,165,255,0.08)" stroke="rgba(1,165,255,0.5)" stroke-width="1.5"/>
-    <text x="52" y="229" fill="#F1F5F9" font-size="17" font-weight="700">Cozystack</text>
-    <text x="52" y="248" fill="#94A3B8" font-size="12">open-source core · Apache 2.0</text>
-    <rect x="342" y="216" width="66" height="26" rx="13" fill="rgba(1,165,255,0.16)"/>
-    <text x="375" y="233" text-anchor="middle" fill="#01A5FF" font-size="12" font-weight="600">CNCF</text>
+  <!-- ══ Band 4: Any Infrastructure ══ -->
+  <rect x="20" y="478" width="480" height="122" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.10)"/>
+  <text x="260" y="510" text-anchor="middle" fill="#F1F5F9" font-size="15" font-weight="700">Any Infrastructure</text>
+  <g stroke="rgba(255,255,255,0.07)"><path d="M180 528v48"/><path d="M340 528v48"/></g>
+  <g class="hd-icons" stroke="#B6C6DC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(100 546)"><rect x="-9" y="-8" width="18" height="7" rx="1.5"/><rect x="-9" y="1" width="18" height="7" rx="1.5"/><path d="M5.5-4.5h.01M5.5 4.5h.01"/></g>
+    <g transform="translate(260 546)"><path d="M-5-1.5a5 5 0 0 1 9.6-1.6A4 4 0 0 1 4 5h-9a4.5 4.5 0 0 1 0-9"/><path d="M-1.5 5v0M0 1.5v0"/><circle cx="0" cy="2.5" r="1.4"/></g>
+    <g transform="translate(420 546)"><path d="M-5-1.5a5 5 0 0 1 9.6-1.6A4 4 0 0 1 4 5h-9a4.5 4.5 0 0 1 0-9"/></g>
   </g>
-
-  <!-- infrastructure nodes -->
-  <g class="hero-diagram__nodes">
-    <g>
-      <rect x="55" y="324" width="110" height="40" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
-      <circle cx="72" cy="344" r="3.5" fill="#94DEE0"/>
-      <text x="86" y="349" fill="#94A3B8" font-size="12" font-weight="500">node-01</text>
-    </g>
-    <g>
-      <rect x="175" y="324" width="110" height="40" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
-      <circle cx="192" cy="344" r="3.5" fill="#94DEE0"/>
-      <text x="206" y="349" fill="#94A3B8" font-size="12" font-weight="500">node-02</text>
-    </g>
-    <g>
-      <rect x="295" y="324" width="110" height="40" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
-      <circle cx="312" cy="344" r="3.5" fill="#94DEE0"/>
-      <text x="326" y="349" fill="#94A3B8" font-size="12" font-weight="500">node-03</text>
-    </g>
-  </g>
-
-  <!-- your infrastructure label -->
-  <text x="230" y="30" text-anchor="middle" fill="#8493A8" font-size="11" font-weight="700" letter-spacing="1.5">YOUR CLOUD BUSINESS</text>
-  <text x="230" y="378" text-anchor="middle" fill="#8493A8" font-size="11" font-weight="700" letter-spacing="1.5">YOUR HARDWARE</text>
+  <text x="100" y="580" text-anchor="middle" fill="#94A3B8" font-size="11.5">Bare Metal</text>
+  <text x="260" y="580" text-anchor="middle" fill="#94A3B8" font-size="11.5">Private Cloud</text>
+  <text x="420" y="580" text-anchor="middle" fill="#94A3B8" font-size="11.5">Public Cloud</text>
 </svg>

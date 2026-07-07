@@ -2057,7 +2057,7 @@ summary:focus-visible,
 .hero-diagram {
   display: block;
   width: 100%;
-  max-width: 460px;
+  max-width: 520px;
   height: auto;
   margin: 0 auto;
 }
@@ -2319,18 +2319,32 @@ summary:focus-visible,
   margin-bottom: 1.25rem;
 }
 
-/* Diagram: wires draw once on load (reduced-motion reset zeroes it) */
-.hero-diagram__wires path {
-  stroke-dasharray: 40;
-  stroke-dashoffset: 40;
-  animation: hero-wire-draw 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+/* Diagram entrance: the platform band glows first, then the bus wires
+   light up outward (up to the surfaces, down to the metal) and the
+   junction dots pop. The global reduced-motion reset zeroes it all. */
+.hd-plat-halo {
+  opacity: 0;
+  animation: hd-fade 0.9s ease-out 0.1s forwards;
 }
-.hero-diagram__wires path:nth-child(-n+4) { animation-delay: 0.55s; }
-.hero-diagram__wires path:nth-child(5)    { animation-delay: 0.35s; }
-.hero-diagram__wires path:nth-child(6)    { animation-delay: 0.2s; }
-.hero-diagram__wires path:nth-child(n+7)  { animation-delay: 0.05s; }
-@keyframes hero-wire-draw {
+.hd-wires path {
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: hd-wire 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.hd-z1 path { animation-delay: 0.75s; }
+.hd-z2 path { animation-delay: 0.45s; }
+.hd-z3 path { animation-delay: 0.75s; }
+.hd-dots circle {
+  opacity: 0;
+  animation: hd-fade 0.45s ease-out forwards;
+}
+.hd-dots.hd-z2 circle { animation-delay: 0.85s; }
+.hd-dots.hd-z1 circle, .hd-dots.hd-z3 circle { animation-delay: 1.2s; }
+@keyframes hd-wire {
   to { stroke-dashoffset: 0; }
+}
+@keyframes hd-fade {
+  to { opacity: 1; }
 }
 /* Soft brand glow behind the diagram */
 .hero-split__visual {
