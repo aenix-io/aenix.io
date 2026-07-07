@@ -1,0 +1,77 @@
+{{/*
+  hero-diagram.html — product architecture visual for the homepage hero.
+  Pure inline SVG, brand tokens only. Reads bottom-up: infrastructure
+  nodes → open-source Cozystack core → commercial Ænix Platform layer →
+  the operator surfaces (portal / billing / tenants / workloads).
+  Animation is CSS-driven and inherits the global reduced-motion reset.
+*/}}
+<svg class="hero-diagram" viewBox="0 0 460 380" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ænix Platform architecture: portal, billing, tenants, and workloads on the Ænix Platform layer, built on the open-source Cozystack core, running on your infrastructure">
+  <!-- connectors -->
+  <g class="hero-diagram__wires" stroke="rgba(1,165,255,0.35)" stroke-width="1.5">
+    <path d="M85 96v22"/><path d="M195 96v22"/><path d="M305 96v22"/><path d="M405 96v22"/>
+    <path d="M230 178v22"/>
+    <path d="M230 260v22"/>
+    <path d="M110 342v-18"/><path d="M230 342v-18"/><path d="M350 342v-18"/>
+  </g>
+
+  <!-- top chips: operator surfaces -->
+  <g class="hero-diagram__chips">
+    <g>
+      <rect x="30" y="60" width="110" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+      <text x="85" y="83" text-anchor="middle" fill="#F1F5F9" font-size="14" font-weight="600">Portal</text>
+    </g>
+    <g>
+      <rect x="150" y="60" width="90" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+      <text x="195" y="83" text-anchor="middle" fill="#F1F5F9" font-size="14" font-weight="600">Billing</text>
+    </g>
+    <g>
+      <rect x="250" y="60" width="100" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+      <text x="300" y="83" text-anchor="middle" fill="#F1F5F9" font-size="14" font-weight="600">Tenants</text>
+    </g>
+    <g>
+      <rect x="360" y="60" width="90" height="36" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+      <text x="405" y="83" text-anchor="middle" fill="#F1F5F9" font-size="13" font-weight="600">Workloads</text>
+    </g>
+  </g>
+
+  <!-- Ænix Platform layer (commercial, violet) -->
+  <g>
+    <rect x="30" y="118" width="400" height="60" rx="12" fill="rgba(139,92,246,0.10)" stroke="rgba(167,139,250,0.45)" stroke-width="1.5"/>
+    <text x="52" y="147" fill="#F1F5F9" font-size="17" font-weight="700">Ænix Platform</text>
+    <text x="52" y="166" fill="#94A3B8" font-size="12">commercial layer · SLA · integrations</text>
+    <rect x="330" y="134" width="78" height="26" rx="13" fill="rgba(167,139,250,0.16)"/>
+    <text x="369" y="151" text-anchor="middle" fill="#C4B5FD" font-size="12" font-weight="600">product</text>
+  </g>
+
+  <!-- Cozystack core (open source, blue) -->
+  <g>
+    <rect x="30" y="200" width="400" height="60" rx="12" fill="rgba(1,165,255,0.08)" stroke="rgba(1,165,255,0.5)" stroke-width="1.5"/>
+    <text x="52" y="229" fill="#F1F5F9" font-size="17" font-weight="700">Cozystack</text>
+    <text x="52" y="248" fill="#94A3B8" font-size="12">open-source core · Apache 2.0</text>
+    <rect x="342" y="216" width="66" height="26" rx="13" fill="rgba(1,165,255,0.16)"/>
+    <text x="375" y="233" text-anchor="middle" fill="#01A5FF" font-size="12" font-weight="600">CNCF</text>
+  </g>
+
+  <!-- infrastructure nodes -->
+  <g class="hero-diagram__nodes">
+    <g>
+      <rect x="55" y="324" width="110" height="40" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+      <circle cx="72" cy="344" r="3.5" fill="#94DEE0"/>
+      <text x="86" y="349" fill="#94A3B8" font-size="12" font-weight="500">node-01</text>
+    </g>
+    <g>
+      <rect x="175" y="324" width="110" height="40" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+      <circle cx="192" cy="344" r="3.5" fill="#94DEE0"/>
+      <text x="206" y="349" fill="#94A3B8" font-size="12" font-weight="500">node-02</text>
+    </g>
+    <g>
+      <rect x="295" y="324" width="110" height="40" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+      <circle cx="312" cy="344" r="3.5" fill="#94DEE0"/>
+      <text x="326" y="349" fill="#94A3B8" font-size="12" font-weight="500">node-03</text>
+    </g>
+  </g>
+
+  <!-- your infrastructure label -->
+  <text x="230" y="30" text-anchor="middle" fill="#8493A8" font-size="11" font-weight="700" letter-spacing="1.5">YOUR CLOUD BUSINESS</text>
+  <text x="230" y="378" text-anchor="middle" fill="#8493A8" font-size="11" font-weight="700" letter-spacing="1.5">YOUR HARDWARE</text>
+</svg>

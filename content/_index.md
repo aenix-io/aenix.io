@@ -10,9 +10,13 @@ hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-sou
 
 If you came here because of one of these — start at the linked page; we can take it from there in a 30-minute discovery call.
 
+<div class="replace-groups">
+
+<div class="replace-group">
+<p class="replace-group__label">Migration / replacement</p>
 <div class="card-grid card-grid--replace">
 
-  <a href="/alternatives/vmware-alternative/" class="card card--replace">
+  <a href="/alternatives/vmware-alternative/" class="card card--replace card--anchor">
     <div class="card-body">
       <div class="card-tag">Leaving VMware</div>
       <h3 class="card-title">VMware / vSphere replacement</h3>
@@ -38,6 +42,13 @@ If you came here because of one of these — start at the linked page; we can ta
       <span class="card-link">Repatriation engagement →</span>
     </div>
   </a>
+
+</div>
+</div>
+
+<div class="replace-group">
+<p class="replace-group__label">New cloud / sovereignty / compliance</p>
+<div class="card-grid card-grid--replace">
 
   <a href="/solutions/dora-compliance/" class="card card--replace">
     <div class="card-body">
@@ -67,6 +78,9 @@ If you came here because of one of these — start at the linked page; we can ta
   </a>
 
 </div>
+</div>
+
+</div>
 
 ---
 
@@ -74,8 +88,20 @@ If you came here because of one of these — start at the linked page; we can ta
 
 Five editions match five buyer profiles. Same Cozystack core; different bundle of features, integrations, and engagement size.
 
-<div class="card-grid card-grid--editions">
+<div class="edition-selector" data-edition-tabs>
 
+<div class="edition-selector__tabs" role="tablist" aria-label="Editions" aria-orientation="vertical">
+<button class="edition-tab" id="edition-tab-0" role="tab" aria-selected="true" aria-controls="edition-panel-0" type="button">Public Cloud</button>
+<button class="edition-tab" id="edition-tab-1" role="tab" aria-selected="false" aria-controls="edition-panel-1" type="button" tabindex="-1">ISP</button>
+<button class="edition-tab" id="edition-tab-2" role="tab" aria-selected="false" aria-controls="edition-panel-2" type="button" tabindex="-1">Enterprise</button>
+<button class="edition-tab" id="edition-tab-3" role="tab" aria-selected="false" aria-controls="edition-panel-3" type="button" tabindex="-1">IDP</button>
+<button class="edition-tab" id="edition-tab-4" role="tab" aria-selected="false" aria-controls="edition-panel-4" type="button" tabindex="-1">AI/ML</button>
+<button class="edition-tab" id="edition-tab-5" role="tab" aria-selected="false" aria-controls="edition-panel-5" type="button" tabindex="-1">Pure Cozystack + Support</button>
+</div>
+
+<div class="edition-selector__panels">
+
+<div class="edition-panel" id="edition-panel-0" role="tabpanel" aria-labelledby="edition-tab-0">
   <a href="/products/aenix-platform/public-cloud-edition/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">Public Cloud</div>
@@ -85,7 +111,9 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <span class="card-link">Explore →</span>
     </div>
   </a>
+</div>
 
+<div class="edition-panel" id="edition-panel-1" role="tabpanel" aria-labelledby="edition-tab-1">
   <a href="/products/aenix-platform/isp-edition/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">ISP / Hosting</div>
@@ -95,7 +123,9 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <span class="card-link">Explore →</span>
     </div>
   </a>
+</div>
 
+<div class="edition-panel" id="edition-panel-2" role="tabpanel" aria-labelledby="edition-tab-2">
   <a href="/products/aenix-platform/enterprise-edition/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">Regulated Enterprise</div>
@@ -105,7 +135,9 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <span class="card-link">Explore →</span>
     </div>
   </a>
+</div>
 
+<div class="edition-panel" id="edition-panel-3" role="tabpanel" aria-labelledby="edition-tab-3">
   <a href="/products/aenix-platform/idp-edition/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">Product Engineering</div>
@@ -115,7 +147,9 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <span class="card-link">Explore →</span>
     </div>
   </a>
+</div>
 
+<div class="edition-panel" id="edition-panel-4" role="tabpanel" aria-labelledby="edition-tab-4">
   <a href="/products/aenix-platform/ai-ml-edition/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">AI / ML</div>
@@ -125,7 +159,9 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <span class="card-link">Explore →</span>
     </div>
   </a>
+</div>
 
+<div class="edition-panel" id="edition-panel-5" role="tabpanel" aria-labelledby="edition-tab-5">
   <a href="/products/cozystack/" class="card card--edition card--neutral">
     <div class="card-body">
       <div class="card-tag">Open source</div>
@@ -135,6 +171,9 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <span class="card-link">Cozystack →</span>
     </div>
   </a>
+</div>
+
+</div>
 
 </div>
 
@@ -142,16 +181,45 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
 
 ## Why open core
 
+<div class="open-core-split">
+
+<div class="open-core-split__intro">
+
 We are the open-core company behind **Cozystack** — a CNCF project we created and maintain. Currently CNCF Sandbox; CNCF Incubating expected late summer 2026. Apache 2.0.
 
 Ænix Platform is the commercial productization of Cozystack: hosting panel, user / admin / support portals, service-creation wizards, full billing, payment integrations, WHMCS integration, enterprise SLA.
 
 What that buys you in practice:
 
-- **No proprietary lock-in at the platform layer** — the substrate is the same OSS project anyone else can run. Contracts are about who builds, runs, and supports it.
-- **Supplier transparency to the second hop** — DORA-aligned subcontractor disclosure, with the upstream project being our own work.
-- **Customer-controlled keys at every layer** — encryption keys for storage, secrets, audit logs are yours, not ours.
-- **Two jurisdictions** — AENIX s.r.o. (Czechia) for EU contracts and EU public-sector procurement. AENIX INC (Delaware) for US contracts.
+<div class="trust-panel" aria-label="Project credentials">
+<span class="trust-pill">CNCF Sandbox</span>
+<span class="trust-pill">Apache 2.0</span>
+<span class="trust-pill">Built on Cozystack</span>
+<span class="trust-pill">AENIX s.r.o. (CZ) · AENIX INC (DE, USA)</span>
+</div>
+
+</div>
+
+<ul class="advantage-list">
+<li class="advantage-row">
+<svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="4" y="9" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 9V6a3 3 0 0 1 5.83-1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+<span><strong>No proprietary lock-in at the platform layer</strong> — the substrate is the same OSS project anyone else can run. Contracts are about who builds, runs, and supports it.</span>
+</li>
+<li class="advantage-row">
+<svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M2 10s3-5.5 8-5.5S18 10 18 10s-3 5.5-8 5.5S2 10 2 10Z" stroke="currentColor" stroke-width="1.5"/><circle cx="10" cy="10" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
+<span><strong>Supplier transparency to the second hop</strong> — DORA-aligned subcontractor disclosure, with the upstream project being our own work.</span>
+</li>
+<li class="advantage-row">
+<svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="7.5" cy="7.5" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M10.5 10.5 17 17M14 14l2-2M12 16l1.5-1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+<span><strong>Customer-controlled keys at every layer</strong> — encryption keys for storage, secrets, audit logs are yours, not ours.</span>
+</li>
+<li class="advantage-row">
+<svg class="advantage-row__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/><path d="M2.5 10h15M10 2.5c2.5 2.5 2.5 12.5 0 15M10 2.5c-2.5 2.5-2.5 12.5 0 15" stroke="currentColor" stroke-width="1.5"/></svg>
+<span><strong>Two jurisdictions</strong> — AENIX s.r.o. (Czechia) for EU contracts and EU public-sector procurement. AENIX INC (Delaware) for US contracts.</span>
+</li>
+</ul>
+
+</div>
 
 ---
 

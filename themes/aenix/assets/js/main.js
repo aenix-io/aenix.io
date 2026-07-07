@@ -38,6 +38,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ---- Edition selector tabs (homepage) ---- */
+  // Progressive enhancement: without JS the six edition cards render as
+  // a stacked grid; with JS the list becomes a vertical tablist showing
+  // one card at a time. All card content stays in the DOM.
+  document.querySelectorAll('[data-edition-tabs]').forEach(root => {
+    const tabs = [...root.querySelectorAll('[role="tab"]')];
+    const panels = [...root.querySelectorAll('[role="tabpanel"]')];
+    if (!tabs.length || tabs.length !== panels.length) return;
+    root.classList.add('is-tabbed');
+    const select = (i, focus) => {
+      tabs.forEach((t, j) => {
+        t.setAttribute('aria-selected', j === i);
+        t.tabIndex = j === i ? 0 : -1;
+        panels[j].hidden = j !== i;
+      });
+      if (focus) tabs[i].focus();
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(i));
+      t.addEventListener('keydown', e => {
+        const dir = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+        if (dir) { e.preventDefault(); select((i + dir + tabs.length) % tabs.length, true); }
+        else if (e.key === 'Home') { e.preventDefault(); select(0, true); }
+        else if (e.key === 'End') { e.preventDefault(); select(tabs.length - 1, true); }
+      });
+    });
+    select(0);
+  });
+
   /* ---- Mobile submenu toggles ---- */
   document.querySelectorAll('.mobile-nav-item.has-children > button').forEach(btn => {
     btn.addEventListener('click', () => {

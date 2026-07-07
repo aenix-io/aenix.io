@@ -9,28 +9,30 @@
 {{- $h1 := .Params.hero_h1 | default .Title -}}
 {{- $sub := .Params.hero_subtitle | default .Description -}}
 <article class="page page-home">
-  <section class="page-hero page-hero--home">
+  <section class="page-hero page-hero--home page-hero--split">
     <div class="page-hero-bg">
       <div class="page-hero-grid"></div>
       <div class="page-hero-glow"></div>
     </div>
-    <div class="container">
-      <div class="page-hero-tag">Turnkey cloud-in-a-box · Open-source core · CNCF</div>
-      <h1 class="page-hero-title">{{ $h1 }}</h1>
-      {{ with $sub }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
-      <div class="page-hero-cta" style="margin-top:1.75rem">
-        <a href="/contact/" class="btn btn-primary btn-lg">Book a call</a>
-        <a href="/products/aenix-platform/" class="btn btn-secondary btn-lg" style="margin-left:0.5rem">Explore platform →</a>
+    <div class="container hero-split">
+      <div class="hero-split__copy">
+        <div class="page-hero-tag">Turnkey cloud-in-a-box · Open-source core · CNCF</div>
+        <h1 class="page-hero-title">{{ $h1 }}</h1>
+        {{ with $sub }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+        <div class="page-hero-cta">
+          <a href="/contact/" class="btn btn-primary btn-xl">Book a call</a>
+          <a href="/products/aenix-platform/" class="btn btn-secondary btn-lg">Explore platform →</a>
+        </div>
+        <p class="page-hero-microcopy">30-minute discovery call — no slides, we scope your build or migration.</p>
+        <div class="page-hero-trust page-hero-trust--pills" aria-label="Trust indicators">
+          <span class="trust-pill">CNCF project (Sandbox)</span>
+          <span class="trust-pill">Apache 2.0</span>
+          <span class="trust-pill">AENIX s.r.o. (CZ)</span>
+          <span class="trust-pill">AENIX INC (DE, USA)</span>
+        </div>
       </div>
-      <p class="page-hero-microcopy">30-minute discovery call — no slides, we scope your build or migration.</p>
-      <div class="page-hero-trust" aria-label="Trust indicators">
-        <span>CNCF project (Sandbox)</span>
-        <span>·</span>
-        <span>Apache 2.0</span>
-        <span>·</span>
-        <span>AENIX s.r.o. (CZ)</span>
-        <span>·</span>
-        <span>AENIX INC (DE, USA)</span>
+      <div class="hero-split__visual">
+        {{ partial "hero-diagram.html" . }}
       </div>
     </div>
   </section>
