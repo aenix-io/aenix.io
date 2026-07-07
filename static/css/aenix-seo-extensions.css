@@ -2386,25 +2386,58 @@ summary:focus-visible,
   max-width: 56ch;
 }
 
-/* Final CTA band */
+/* Final CTA band: copy left, actions right, gradient frame,
+   glowing network flourish in the corner */
 .page-home .cta-final {
-  width: min(920px, calc(100vw - 3rem));
+  width: min(1140px, calc(100vw - 3rem));
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 2rem 2.5rem;
   margin: 4.5rem 0 1rem;
-  padding: 3rem 2rem 3.25rem;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 16px;
+  padding: 3.25rem 3rem;
+  text-align: left;
+  border: 1px solid transparent;
+  border-radius: 20px;
   background:
-    radial-gradient(ellipse at 50% 0%, rgba(1, 165, 255, 0.10), transparent 65%),
-    radial-gradient(ellipse at 50% 120%, rgba(102, 27, 225, 0.10), transparent 60%),
-    rgba(255, 255, 255, 0.02);
+    linear-gradient(140deg, #0E1630 0%, #0A0F22 48%, #150F38 100%) padding-box,
+    linear-gradient(135deg, rgba(148, 222, 224, 0.8), rgba(1, 165, 255, 0.65) 30%, rgba(102, 27, 225, 0.8)) border-box;
 }
-.page-home .cta-final h2 { margin-top: 0; }
-.page-home .cta-final h2 + p { margin: 0.5rem auto 0; }
-.page-home .cta-final .cta-row { margin-top: 1.75rem; margin-bottom: 0; }
+.page-home .cta-final h2 {
+  margin: 0;
+  font-size: clamp(1.75rem, 3vw, 2.375rem);
+}
+.page-home .cta-final h2 + p {
+  margin: 0.625rem 0 0;
+  max-width: 44ch;
+}
+.cta-final__copy { position: relative; z-index: 1; }
+.cta-final__actions {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  justify-content: flex-end;
+}
+.cta-final__art {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: min(46%, 460px);
+  height: auto;
+  pointer-events: none;
+}
+@media (max-width: 900px) {
+  .page-home .cta-final {
+    grid-template-columns: 1fr;
+    padding: 2.5rem 1.75rem;
+  }
+  .cta-final__actions { justify-content: flex-start; }
+  .cta-final__art { opacity: 0.55; }
+}
 
 /* ============================================================
    BUTTON UNIFICATION — glass treatment sitewide

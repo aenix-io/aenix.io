@@ -246,13 +246,43 @@ What that buys you in practice:
 
 
 <div class="cta-final">
+<svg class="cta-final__art" viewBox="0 0 420 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs>
+<linearGradient id="cf-line" x1="0" y1="300" x2="420" y2="0">
+<stop offset="0" stop-color="#01A5FF" stop-opacity="0.15"/>
+<stop offset="0.55" stop-color="#01A5FF" stop-opacity="0.55"/>
+<stop offset="1" stop-color="#8B5CF6" stop-opacity="0.85"/>
+</linearGradient>
+<filter id="cf-dot-glow" x="-200%" y="-200%" width="500%" height="500%">
+<feGaussianBlur stdDeviation="2.5" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<g stroke="url(#cf-line)" stroke-width="1.5">
+<path d="M0 300C130 258 240 190 420 20"/>
+<path d="M60 300C190 272 300 205 420 95"/>
+<path d="M150 300C260 288 350 245 420 165"/>
+<path d="M250 300C320 296 385 275 420 230"/>
+</g>
+<g fill="#01A5FF" filter="url(#cf-dot-glow)">
+<circle cx="217" cy="212" r="3"/>
+<circle cx="330" cy="118" r="3"/>
+<circle cx="300" cy="221" r="2.5"/>
+<circle cx="383" cy="55" r="3" fill="#8B5CF6"/>
+<circle cx="392" cy="140" r="2.5" fill="#8B5CF6"/>
+<circle cx="368" cy="252" r="2.5" fill="#A78BFA"/>
+</g>
+</svg>
+<div class="cta-final__copy">
 
 ## Ready to talk?
 
 Pick the entry that fits — we'll route from there.
 
-<div class="cta-row cta-row--center">
-  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
+
+<div class="cta-row cta-final__actions">
+  <a class="cta-primary" href="/contact/">Book a call →</a>
   <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
   <a class="cta-secondary" href="/pricing/">See pricing</a>
 </div>
