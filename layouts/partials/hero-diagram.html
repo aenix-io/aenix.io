@@ -15,6 +15,11 @@
     <filter id="hd-plat-glow" x="-30%" y="-80%" width="160%" height="260%">
       <feGaussianBlur stdDeviation="14"/>
     </filter>
+    <linearGradient id="hd-glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.10"/>
+      <stop offset="0.45" stop-color="#FFFFFF" stop-opacity="0.02"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
     <filter id="hd-dot-glow" x="-200%" y="-200%" width="500%" height="500%">
       <feGaussianBlur stdDeviation="2.5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -22,7 +27,8 @@
   </defs>
 
   <!-- ══ Band 1: Self-Service Experience ══ -->
-  <rect x="20" y="20" width="480" height="130" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="20" y="20" width="480" height="130" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="21" y="21" width="478" height="128" rx="13" fill="url(#hd-glass)"/>
   <text x="260" y="52" text-anchor="middle" fill="#F1F5F9" font-size="15" font-weight="700">Self-Service Experience</text>
   <g stroke="rgba(255,255,255,0.07)"><path d="M140 72v56"/><path d="M260 72v56"/><path d="M380 72v56"/></g>
   <g class="hd-icons" stroke="#B6C6DC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -65,7 +71,8 @@
   </g>
 
   <!-- ══ Band 3: Cozystack Core ══ -->
-  <rect x="20" y="300" width="480" height="140" rx="14" fill="rgba(1,165,255,0.05)" stroke="rgba(1,165,255,0.30)"/>
+  <rect x="20" y="300" width="480" height="140" rx="14" fill="rgba(1,165,255,0.06)" stroke="rgba(1,165,255,0.32)"/>
+  <rect x="21" y="301" width="478" height="138" rx="13" fill="url(#hd-glass)"/>
   <text x="260" y="332" text-anchor="middle" fill="#F1F5F9" font-size="15" font-weight="700">Cozystack Core<tspan fill="#01A5FF" font-weight="600">&#160;(CNCF Project)</tspan></text>
   <g stroke="rgba(255,255,255,0.07)"><path d="M116 352v58"/><path d="M212 352v58"/><path d="M308 352v58"/><path d="M404 352v58"/></g>
   <g class="hd-icons" stroke="#B6C6DC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -93,7 +100,8 @@
   </g>
 
   <!-- ══ Band 4: Any Infrastructure ══ -->
-  <rect x="20" y="478" width="480" height="122" rx="14" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.10)"/>
+  <rect x="20" y="478" width="480" height="122" rx="14" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="21" y="479" width="478" height="121" rx="13" fill="url(#hd-glass)"/>
   <text x="260" y="510" text-anchor="middle" fill="#F1F5F9" font-size="15" font-weight="700">Any Infrastructure</text>
   <g stroke="rgba(255,255,255,0.07)"><path d="M180 528v48"/><path d="M340 528v48"/></g>
   <g class="hd-icons" stroke="#B6C6DC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
