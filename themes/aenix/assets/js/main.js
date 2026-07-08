@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const revealTargets = document.querySelectorAll([
       '.page-content > h2',
+      '.band > h2',
       '.page-content > table',
       '.page-content > blockquote',
       '.seo-quick-facts',

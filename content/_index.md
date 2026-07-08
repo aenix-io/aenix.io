@@ -6,6 +6,8 @@ hero_h1: "Run your own cloud — without VMware lock-in, hyperscaler bill, or tw
 hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-source Cozystack project we created and maintain (CNCF). Five editions, one foundation. For hosting providers, regulated enterprises, public clouds, product engineering teams, AI-heavy organizations."
 ---
 
+<div class="band band--tint">
+
 ## What we replace
 
 If you came here because of one of these — start at the linked page; we can take it from there in a 30-minute discovery call.
@@ -82,6 +84,10 @@ If you came here because of one of these — start at the linked page; we can ta
 
 </div>
 
+
+</div>
+
+<div class="band">
 
 ## Pick your edition
 
@@ -177,6 +183,10 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
 </div>
 
 
+</div>
+
+<div class="band band--tint">
+
 ## Why open core
 
 <div class="open-core-split">
@@ -220,6 +230,10 @@ What that buys you in practice:
 </div>
 
 
+</div>
+
+<div class="band">
+
 ## How we engage
 
 <div class="engagement-steps">
@@ -244,6 +258,8 @@ What that buys you in practice:
 
 </div>
 
+
+</div>
 
 <div class="cta-final">
 <svg class="cta-final__art" viewBox="0 0 420 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">

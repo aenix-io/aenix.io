@@ -2804,3 +2804,143 @@ a.card--replace:hover .card-link { transform: translateX(3px); }
 /* Reveal-on-scroll: classes are added by JS only, so no-JS
    visitors always see full content; theme reduced-motion rules
    already neutralize the transition. */
+
+/* ============================================================
+   HOMEPAGE ROUND 2 — background bands instead of frames
+   Sections separate by full-bleed background tint; roughly a
+   third of the decorative borders retire; replace-cards go
+   vertical; open-core benefits merge into one divided panel;
+   the engage strip gets a real timeline axis; CTA and footer
+   grow.
+   ============================================================ */
+
+/* --- Full-bleed section bands --- */
+body { overflow-x: clip; }
+.page-home .band {
+  --band-bg: var(--bg-main, #0B0F1A);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4rem 0 4.5rem;
+  background: var(--band-bg);
+}
+.page-home .band--tint {
+  --band-bg: #0D1424;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+.page-home .band > h2 {
+  width: min(1140px, calc(100vw - 3rem));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 0 0.75rem;
+  font-size: 1.875rem;
+}
+.page-home .band > h2 + p {
+  width: min(1140px, calc(100vw - 3rem));
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--aenix-text-muted);
+  max-width: none;
+}
+.page-home .band > h2 + p { max-width: none; }
+.page-home .band > h2 + p { /* readable measure inside the wide track */ }
+.page-home .band > h2 + p { font-size: 1rem; }
+.page-home .page-content > .cta-final { margin-top: 4.5rem; }
+
+/* --- What we replace: vertical cards, band does the separation --- */
+.card--replace .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1.375rem 1.5rem;
+}
+.card--replace .card-tag { padding-top: 0; }
+.card--replace .card-link { margin-top: auto; padding-top: 0.75rem; }
+.band--tint .card--replace {
+  background: rgba(11, 15, 26, 0.75);
+  border-color: transparent;
+}
+.band--tint .card--replace:hover { border-color: rgba(1, 165, 255, 0.35); }
+.band--tint .card--anchor { border-color: rgba(1, 165, 255, 0.4); }
+
+/* --- Hero trust pills: background only, no frame --- */
+.trust-pill { border-color: transparent; background: rgba(255, 255, 255, 0.055); }
+
+/* --- Why open core: one panel, hairline dividers --- */
+.advantage-list {
+  gap: 0;
+  background: rgba(11, 15, 26, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.advantage-row {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 1.25rem 1.375rem;
+}
+.advantage-row + .advantage-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+.band--tint .trust-panel { border-color: transparent; background: rgba(11, 15, 26, 0.6); }
+
+/* --- How we engage: real timeline axis above clean cards --- */
+.page-home .engagement-steps { border: none; }
+.engagement-step { border: none; background: rgba(255, 255, 255, 0.035); }
+@media (min-width: 1024px) {
+  .page-home .engagement-steps {
+    position: relative;
+    margin-top: 2.5rem;
+    padding-top: 3.5rem;
+  }
+  .page-home .engagement-steps::before {
+    content: "";
+    position: absolute;
+    top: 1.375rem;
+    left: 16.5%;
+    right: 16.5%;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(1, 165, 255, 0.55), rgba(167, 139, 250, 0.55));
+  }
+  .engagement-step { position: relative; }
+  .engagement-step__number {
+    position: absolute;
+    top: -4.875rem;
+    left: 50%;
+    translate: -50% 0;
+    box-shadow: 0 0 0 8px var(--band-bg, #0B0F1A);
+  }
+  .engagement-step:not(:last-child)::after { content: none; }
+}
+
+/* --- Bigger CTA band --- */
+.page-home .cta-final {
+  padding: 4rem 3.5rem;
+  gap: 2rem 3rem;
+}
+.page-home .cta-final h2 { font-size: clamp(2rem, 3.4vw, 2.75rem); }
+.page-home .cta-final h2 + p { font-size: 1.0625rem; }
+
+/* --- Bigger, roomier footer --- */
+.site-footer { padding: 5.5rem 0 2.5rem; }
+.footer-logo img { width: 128px; height: auto; }
+.footer-tagline { font-size: 1.0625rem; margin-top: 0.875rem; }
+.footer-top { margin-bottom: 3.5rem; }
+.footer-nav-group h4 { font-size: 0.75rem; margin-bottom: 0.75rem; }
+.footer-nav-group a { font-size: 0.875rem; padding: 0.125rem 0; }
+
+/* --- Empty data grids (partners / offices / videos / team):
+       shortcodes without frontmatter data render blank bands --- */
+.partners-grid:not(:has(*)),
+.offices-grid:not(:has(*)),
+.videos-grid:not(:has(*)),
+.team-grid:not(:has(*)) { display: none; }
+
+@media (max-width: 900px) {
+  .page-home .band { padding: 3rem 0 3.5rem; }
+}
