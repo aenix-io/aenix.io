@@ -95,6 +95,9 @@ cozyportal für Self-Service. Produktionsreife WHMCS-Billing-Integration mit zwe
 
 </div>
 
+![Cozystack dashboard — self-service catalog of managed services](/images/uploads/2026/04/cozystack-managed-services.png)
+
+
 <!-- /BLOCK 2 -->
 
 ---

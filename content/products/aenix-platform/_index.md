@@ -48,6 +48,9 @@ faq:
 
 Cozystack is the engine. Ænix Platform is the car — turnkey cloud with everything a real operator needs:
 
+![Ænix Platform console — managed tenant Kubernetes clusters](/images/uploads/2026/04/cozystack-managed-kubernetes.png)
+
+
 | Layer | What it is |
 |---|---|
 | **Hosting panel** | Branded admin dashboard for the platform operator |

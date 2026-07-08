@@ -138,9 +138,11 @@ Per CNCF-Community-Normen bleibt **cozystack.io vendor-neutral** — keine komme
 
 ## Unsere Geschichte
 
+{{< two-cols image="/images/uploads/2023/12/1-edited.png" alt="Unsere Geschichte" >}}
 Wir starteten als Team von Plattform-Engineers, die Cloud-Infrastruktur für Service-Anbieter und regulierte Unternehmen aufbauten. Das Muster, das wir immer wieder sahen: Kunden wollten eine echte Cloud (Multi-Tenant, Billing, Portale, GPU, Managed Services), aber wollten weder Hyperscaler-Abhängigkeit noch VMware-Lock-in. Die existierenden Open-Source-Optionen (rohes Kubernetes, OpenStack at scale) erforderten jahrelange Plattform-Engineering-Investitionen, die die meisten Kunden nicht leisten konnten.
 
 Also bauten wir Cozystack — eine Kubernetes-native Multi-Tenant-Cloud-Plattform — als die Foundation, die wir uns Jahre früher gewünscht hatten. Es wurde ein CNCF-Projekt. Dann produktisierten wir es als Ænix Platform: die turnkey Cloud-in-a-Box-Schicht obendrauf, mit fünf Editions passend zu fünf Buyer-Profilen.
+{{< /two-cols >}}
 
 Wir sind früh in unserer kommerziellen Reise. Die Technologie ist produktionsreif — Cozystack läuft in Produktion bei regionalen Hosting-Anbietern, und wir haben Mehr-Millionen-Euro-Engagements mit Tier-1-europäischen-Banken unter NDA. Die Sales-Motion baut noch.
 
