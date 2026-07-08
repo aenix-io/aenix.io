@@ -2944,3 +2944,44 @@ body { overflow-x: clip; }
 @media (max-width: 900px) {
   .page-home .band { padding: 3rem 0 3.5rem; }
 }
+
+/* ============================================================
+   HOMEPAGE ROUND 2.1 — feedback fixes
+   1) no dark gap between hero and the first band
+   2) timeline axis runs through the circle centers
+   3) section headings centered with their intro lines
+   4) tighter vertical rhythm between bands
+   ============================================================ */
+
+/* 1. Hero butts straight into the first band */
+.page-home .page-content { padding-top: 0; }
+.page-home .page-content > .band:first-child { margin-top: 0; }
+
+/* 4. Tighter band rhythm */
+.page-home .band { padding: 3.25rem 0 3.75rem; }
+.page-home .page-content > .cta-final { margin-top: 3rem; }
+
+/* 3. Centered section headings */
+.page-home .band > h2 { text-align: center; }
+.page-home .band > h2 + p {
+  text-align: center;
+  max-width: 62ch;
+  margin-left: auto;
+  margin-right: auto;
+  left: auto;
+  transform: none;
+  width: auto;
+  padding: 0 1.5rem;
+}
+
+/* 2. Timeline axis through the circle centers:
+   circle top sits at the container top, so its center is at
+   1.375rem — the line top matches it exactly. */
+@media (min-width: 1024px) {
+  .page-home .engagement-steps { margin-top: 2rem; padding-top: 3.5rem; }
+  .engagement-step__number { top: -3.5rem; }
+  .page-home .engagement-steps::before { top: calc(1.375rem - 1px); }
+}
+@media (max-width: 900px) {
+  .page-home .band { padding: 2.5rem 0 3rem; }
+}

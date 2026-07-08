@@ -41,10 +41,24 @@ document.addEventListener('DOMContentLoaded', () => {
       '.fit-grid', '.timeline-horizontal', '.lead-magnet-form',
       '.grid-2x2', '.gap-cards-2', '.cta-cards', '.cs-stats',
       '.replace-group', '.edition-selector', '.open-core-split',
-      '.engagement-step', '.cta-final', '.related-pages__card',
+      '.engagement-steps', '.cta-final', '.related-pages__card',
       '.landing-cta'
     ].join(','));
     revealTargets.forEach(el => el.classList.add('reveal'));
+    // Observe here as well (the theme observer runs later; if anything
+    // between fails, or IO never fires — throttled/headless contexts —
+    // the failsafe below still un-gates every block).
+    try {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
+      revealTargets.forEach(el => obs.observe(el));
+    } catch (e) { /* fall through to the failsafe */ }
+    setTimeout(() => {
+      document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+    }, 1800);
   }
 
   /* ---- Desktop dropdown keyboard support ---- */
