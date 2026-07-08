@@ -3,6 +3,20 @@ title: "Mit uns sprechen"
 description: "Kontaktieren Sie Aenix zu Ænix-Platform-Editions, Discovery-Calls oder Partnerschaften. EU-Büro: AENIX s.r.o. (Tschechien), US-Büro: AENIX INC (Delaware)."
 hero_subtitle: "Discovery-Call buchen oder Partnerschaft besprechen"
 language: "de"
+
+offices:
+  - name: "EU Office"
+    company: "AENIX s.r.o."
+    address: "Sladkovského 546/8\n273 43 Buštěhrad\nCzech Republic"
+    details:
+      - "CIN: 21493871"
+      - "VAT Number: CZ21493871"
+      - "CZ Databox ID: 2rvcmud"
+  - name: "US Office"
+    company: "AENIX INC"
+    address: "131 Continental Drive, Suite 301\nNewark, County of New Castle\nDelaware, United States\nZIP Code: 19713"
+    details:
+      - "Registration Number: 10075938"
 ---
 
 **Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Platform-Editions, Ihr Buyer-Profil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**

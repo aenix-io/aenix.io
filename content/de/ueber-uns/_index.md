@@ -3,6 +3,72 @@ title: "Über Aenix"
 description: "Aenix ist ein Open-Core-Unternehmen aus Tschechien und den USA. Wir haben Cozystack (CNCF-Projekt) erstellt und kommerzialisieren es als Ænix Platform."
 hero_subtitle: "Das Open-Core-Unternehmen hinter Cozystack"
 language: "de"
+
+team:
+  - name: "Andrei Kvapil"
+    role: "CEO"
+    photo: "/images/uploads/2026/04/andrei-kvapil.jpg"
+    links:
+      github: "kvaps"
+      linkedin: "kvapss"
+      telegram: "kvaps"
+  - name: "Timur Tukaev"
+    role: "COO"
+    photo: "/images/uploads/2026/04/timur-tukaev.png"
+    links:
+      linkedin: "timur-tukaev"
+      telegram: "tym83"
+  - name: "Viktoriia Kvapil"
+    role: "Art Director"
+    photo: "/images/uploads/2026/04/viktoriia-kvapil.jpg"
+    links:
+      linkedin: "kvapsova"
+      telegram: "bluebery_pie"
+      dribbble: "Vikitoriia-lu"
+  - name: "Timofei Larkin"
+    role: "Head of Development"
+    photo: "/images/uploads/2026/04/timofei-larkin.png"
+    links:
+      github: "deckhouse"
+      telegram: "lllamnyp"
+  - name: "Julia Pavlova"
+    role: "Drama Manager"
+    photo: "/images/uploads/2026/04/julia-pavlova.png"
+    links:
+      telegram: "tvoya_sowest"
+
+community_champions:
+  - name: "George Gaál"
+    role: "Community Champion"
+    photo: "/images/uploads/2023/12/2023-12-19-20.03.23.jpg"
+    links:
+      telegram: "@gecube"
+      github: "gecube"
+  - name: "Kingdon Barrett"
+    role: "Community Champion"
+    photo: "/images/uploads/2025/07/3286998.jpeg"
+    links:
+      telegram: "@kingdonb"
+      github: "kingdonb"
+      youtube: "yebyen/streams"
+  - name: "Nikita Bykov"
+    role: "Community Champion"
+    photo: "/images/uploads/2025/07/photo_2025-07-14-09.26.18.jpeg"
+    links:
+      telegram: "@nbykov"
+      github: "nbykov0"
+  - name: "Matthieu Robin"
+    role: "Community Champion"
+    photo: "/images/uploads/2026/04/matthieu-robin.jpg"
+    links:
+      github: "matthieu-robin"
+      linkedin: "robinmatthieu"
+  - name: "Mattia Eleuteri"
+    role: "Community Champion"
+    photo: "/images/uploads/2026/04/mattia-eleuteri.jpg"
+    links:
+      github: "mattia-eleuteri"
+      linkedin: "mattia-eleuteri"
 ---
 
 **Aenix ist ein Open-Core-Unternehmen mit Hauptsitz in Tschechien (AENIX s.r.o.) und den USA (AENIX INC, Delaware), mit Engineering-Teams in der EU und Zentralasien. Wir haben Cozystack erstellt und pflegen es — ein CNCF-Projekt (Apache 2.0) — und kommerzialisieren es als Ænix Platform, eine turnkey Cloud-in-a-Box produktisiert in fünf Editions.**

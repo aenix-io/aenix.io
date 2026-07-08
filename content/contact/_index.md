@@ -3,6 +3,20 @@ title: "Talk to us"
 description: "Contact Aenix to discuss Ænix Platform editions, book a discovery call, or explore partnerships. EU office in Czechia, US office in Delaware."
 hero_subtitle: "Book a discovery call or explore a partnership"
 language: "en"
+
+offices:
+  - name: "EU Office"
+    company: "AENIX s.r.o."
+    address: "Sladkovského 546/8\n273 43 Buštěhrad\nCzech Republic"
+    details:
+      - "CIN: 21493871"
+      - "VAT Number: CZ21493871"
+      - "CZ Databox ID: 2rvcmud"
+  - name: "US Office"
+    company: "AENIX INC"
+    address: "131 Continental Drive, Suite 301\nNewark, County of New Castle\nDelaware, United States\nZIP Code: 19713"
+    details:
+      - "Registration Number: 10075938"
 ---
 
 **Book a discovery call to discuss Ænix Platform editions, your buyer profile, and engagement scope. Or write to us for partnership, press, or general inquiries.**
