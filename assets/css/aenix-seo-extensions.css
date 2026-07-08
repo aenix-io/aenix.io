@@ -2985,3 +2985,50 @@ body { overflow-x: clip; }
 @media (max-width: 900px) {
   .page-home .band { padding: 2.5rem 0 3rem; }
 }
+
+/* ============================================================
+   HUB CARD GRIDS — child-page cards on section hubs
+   (Solutions / Services / Industries / Alternatives / Migration /
+   Case studies / Resources / product editions). Whole-card links,
+   text-first, no dead image zones.
+   ============================================================ */
+.card-grid--hub {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+a.card--hub {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+.card--hub .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 100%;
+  padding: 1.375rem 1.5rem;
+}
+.card--hub .card-title {
+  margin: 0;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--aenix-text);
+}
+.card--hub:hover .card-title { color: var(--aenix-primary); }
+.card--hub .card-description {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--aenix-text-muted);
+}
+.card--hub .card-link {
+  margin-top: auto;
+  padding-top: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--aenix-primary);
+}
+.card--hub .card-link::after { content: "\2192"; }
