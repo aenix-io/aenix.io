@@ -3032,3 +3032,65 @@ a.card--hub {
   color: var(--aenix-primary);
 }
 .card--hub .card-link::after { content: "\2192"; }
+
+/* ============================================================
+   LANDING / INNER HERO POLISH + ABOUT FACT PANELS
+   ============================================================ */
+
+/* Inner-page hero: balanced measured titles, livelier brand glow */
+.page-hero .page-hero-title {
+  max-width: 30ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
+  letter-spacing: -0.015em;
+}
+.page-hero .page-hero-glow {
+  width: 760px;
+  height: 440px;
+  background: radial-gradient(ellipse,
+    rgba(1, 165, 255, 0.09) 0%,
+    rgba(102, 27, 225, 0.055) 45%,
+    transparent 72%);
+}
+
+/* About: strong-led fact lists become divided panels (EN + DE ids) */
+#quick-facts + ul,
+#why-open-core + ul,
+#cozystack-and-cncf + ul,
+#warum-open-core + ul,
+#cozystack-und-cncf + ul {
+  list-style: none;
+  margin: 1.25rem 0 2rem;
+  padding: 0;
+  max-width: none;
+  background: var(--aenix-bg-tint);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  overflow: hidden;
+}
+#quick-facts + ul > li,
+#why-open-core + ul > li,
+#cozystack-and-cncf + ul > li,
+#warum-open-core + ul > li,
+#cozystack-und-cncf + ul > li {
+  margin: 0;
+  padding: 0.875rem 1.25rem;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--aenix-text-muted);
+}
+#quick-facts + ul > li + li,
+#why-open-core + ul > li + li,
+#cozystack-and-cncf + ul > li + li,
+#warum-open-core + ul > li + li,
+#cozystack-und-cncf + ul > li + li {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+#quick-facts + ul strong,
+#why-open-core + ul strong,
+#cozystack-and-cncf + ul strong,
+#warum-open-core + ul strong,
+#cozystack-und-cncf + ul strong {
+  color: var(--aenix-text);
+}
