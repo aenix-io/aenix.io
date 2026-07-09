@@ -61,6 +61,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1800);
   }
 
+  /* ---- GitHub stars chip (product hero) ---- */
+  document.querySelectorAll('[data-github-repo]').forEach(el => {
+    const slot = el.querySelector('[data-github-stars]');
+    if (!slot) return;
+    fetch('https://api.github.com/repos/' + el.dataset.githubRepo)
+      .then(r => r.ok ? r.json() : null)
+      .then(d => {
+        if (d && typeof d.stargazers_count === 'number') {
+          const n = d.stargazers_count;
+          slot.textContent = (n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : n) + ' stars';
+        }
+      })
+      .catch(() => { /* keep the static "GitHub" label */ });
+  });
+
   /* ---- Desktop dropdown keyboard support ---- */
   // Panels open via :focus-within (CSS); Escape moves focus back to the
   // toggle and drops it so the panel closes without tabbing through

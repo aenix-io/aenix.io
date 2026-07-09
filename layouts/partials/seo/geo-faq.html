@@ -8,7 +8,7 @@
 */}}
 {{- $faqTitle := cond (or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/")) "Häufig gestellte Fragen" "Frequently asked questions" -}}
 {{- with .Params.faq -}}
-<section class="seo-faq" aria-label="{{ $faqTitle }}">
+<section class="seo-faq" id="faq" aria-label="{{ $faqTitle }}">
   <h2>{{ $faqTitle }}</h2>
   {{- range . }}
   <details class="faq-item">

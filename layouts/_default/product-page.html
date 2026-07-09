@@ -1,0 +1,95 @@
+{{ define "main" }}
+{{/*
+  product-page.html — deep product-page template (reference: /products/cozystack/).
+
+  Driven by frontmatter:
+    hero_label     — small category label above the H1
+    hero_intro     — hero paragraph (markdown, rendered under the H1)
+    hero_ctas      — list of {text, url, kind: primary|secondary|link}
+    hero_badges    — list of credential chips
+    hero_visual    — name of a partial rendered in the hero's right column
+    github_repo    — owner/name; renders a star count chip (JS-filled)
+    local_nav      — list of {label, anchor} for the sticky section nav
+
+  Overview renders direct_answer (left) + quick_facts (right, sticky)
+  from the same GEO frontmatter the JSON-LD reads — same single source
+  as seo/geo-intro.html, presented as a two-column section.
+*/}}
+<article class="page product-page">
+
+  <section class="page-hero page-hero--product">
+    <div class="page-hero-bg">
+      <div class="page-hero-grid"></div>
+      <div class="page-hero-glow"></div>
+    </div>
+    <div class="container hero-split">
+      <div class="hero-split__copy">
+        {{ with .Params.hero_label }}<div class="page-hero-tag">{{ . }}</div>{{ end }}
+        <h1 class="page-hero-title">{{ .Title }}</h1>
+        {{ with .Params.hero_intro }}<div class="page-hero-subtitle product-hero-intro">{{ . | markdownify }}</div>{{ end }}
+        {{ with .Params.hero_ctas }}
+        <div class="page-hero-cta">
+          {{ range . }}
+            {{ if eq .kind "primary" }}<a href="{{ .url }}" class="btn btn-primary btn-lg">{{ .text }}</a>
+            {{ else if eq .kind "secondary" }}<a href="{{ .url }}" class="btn btn-secondary btn-lg">{{ .text }}</a>
+            {{ else }}<a href="{{ .url }}" class="hero-text-link">{{ .text }} →</a>{{ end }}
+          {{ end }}
+        </div>
+        {{ end }}
+        <div class="page-hero-trust page-hero-trust--pills">
+          {{ with .Params.github_repo }}
+          <a class="trust-pill trust-pill--stars" href="https://github.com/{{ . }}" target="_blank" rel="noopener" data-github-repo="{{ . }}">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.75.75 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/></svg>
+            <span data-github-stars>GitHub</span>
+          </a>
+          {{ end }}
+          {{ range .Params.hero_badges }}<span class="trust-pill">{{ . }}</span>{{ end }}
+        </div>
+      </div>
+      <div class="hero-split__visual">
+        {{ with .Params.hero_visual }}{{ partial (printf "%s.html" .) $ }}{{ end }}
+      </div>
+    </div>
+  </section>
+
+  {{ with .Params.local_nav }}
+  <nav class="local-nav" aria-label="On this page">
+    <div class="container local-nav__inner">
+      {{ range . }}<a href="{{ .anchor }}" class="local-nav__link">{{ .label }}</a>{{ end }}
+    </div>
+  </nav>
+  {{ end }}
+
+  {{ partial "positioning-line.html" . }}
+
+  <div class="section">
+    <div class="container">
+
+      <div class="overview-split" id="overview">
+        {{ with .Params.direct_answer }}
+        <div class="seo-direct-answer overview-split__lead">
+          {{ . | markdownify }}
+        </div>
+        {{ end }}
+        {{ with .Params.quick_facts }}
+        <aside class="seo-quick-facts overview-split__facts" aria-label="Quick facts">
+          <h2>Quick facts</h2>
+          <ul class="quick-facts-list">
+            {{ range . }}
+            <li><strong>{{ index . "label" }}:</strong> {{ index . "value" | markdownify }}</li>
+            {{ end }}
+          </ul>
+          {{ with $.Params.quick_facts_source }}<p class="quick-facts-source"><em>Source: {{ . | markdownify }}</em></p>{{ end }}
+        </aside>
+        {{ end }}
+      </div>
+
+      {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . }}</div>{{ end }}
+      {{ partial "seo/geo-faq.html" . }}
+      {{ partial "related-pages.html" . }}
+    </div>
+  </div>
+
+  {{ partial "landing-cta.html" . }}
+</article>
+{{ end }}

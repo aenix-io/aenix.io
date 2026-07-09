@@ -33,22 +33,44 @@ faq:
     a: "Cozystack runs on commodity x86 servers, with ARM support emerging. Bare metal is preferred, though running on VMs is possible. Storage options include LINSTOR (DRBD), Rook-Ceph, and vendor SAN."
   - q: "Does Aenix provide commercial support?"
     a: "Yes. Aenix offers Platform Readiness Assessments, build engagements, and managed engagements, with support tiers from Basic ($1,250/month per 10 nodes) up to Enterprise Custom. Direct support covers EU, DACH, and Central Asia time zones, with other regions via partners."
+
+layout: "product-page"
+hero_label: "Open Source · CNCF Project"
+hero_visual: "cozystack-tree"
+hero_intro: "**Cozystack is the open-source cloud platform Aenix created and maintains, and a CNCF project. It runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own — under one Kubernetes-native control plane with multi-tenant isolation. Apache 2.0 license, currently CNCF Sandbox (CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices badge.**"
+hero_ctas:
+  - text: "Get started"
+    url: "#how-to-use-cozystack"
+    kind: "primary"
+  - text: "Explore on GitHub"
+    url: "https://github.com/cozystack/cozystack"
+    kind: "secondary"
+  - text: "Talk to Ænix"
+    url: "/contact/"
+    kind: "link"
+hero_badges:
+  - "CNCF Project"
+  - "CNCF-Certified Kubernetes Distribution"
+  - "OpenSSF Best Practices"
+  - "Apache 2.0"
+github_repo: "cozystack/cozystack"
+local_nav:
+  - { label: "Overview", anchor: "#overview" }
+  - { label: "Features", anchor: "#whats-in-cozystack" }
+  - { label: "Architecture", anchor: "#architecture" }
+  - { label: "Production", anchor: "#who-runs-cozystack-in-production" }
+  - { label: "Getting started", anchor: "#how-to-use-cozystack" }
+  - { label: "Pricing", anchor: "#pricing" }
+  - { label: "FAQ", anchor: "#faq" }
 ---
 
-<!-- BLOCK 1: HERO -->
-
-
-**Cozystack is the open-source cloud platform Aenix created and maintains, and a CNCF project. It runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own — under one Kubernetes-native control plane with multi-tenant isolation. Apache 2.0 license, currently CNCF Sandbox (CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices badge.**
+<!-- BLOCK 1: OVERVIEW LEAD (hero itself renders from frontmatter) -->
 
 This page describes Cozystack as Aenix's open-source product. The open-source project itself lives at **[cozystack.io](https://cozystack.io)** with documentation, install guides, and the community. For the turnkey commercial cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/aenix-platform/)** with its five editions.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
   <a class="cta-secondary" href="https://cozystack.io">cozystack.io →</a>
-</div>
-
-<div class="trust-badges">
-CNCF Project · CNCF-Certified Kubernetes Distribution · OpenSSF Best Practices · Apache 2.0
 </div>
 
 <!-- /BLOCK 1 -->
@@ -59,13 +81,21 @@ CNCF Project · CNCF-Certified Kubernetes Distribution · OpenSSF Best Practices
 
 ## What's in Cozystack
 
-<div class="capability-grid-3x3">
+<div class="capability-matrix">
+
+<div class="cap-group">
+<p class="cap-group__label">Compute</p>
 
 **KubeVirt VMs**
 KVM-based VMs with live migration, snapshots, templates. Side-by-side with containers on the same Kubernetes platform.
 
-**Multi-tenant control plane**
-Tenant CRD, nested tenants, per-tenant quotas, RBAC, audit. Built for service-provider model.
+**GPU as a service**
+NVIDIA vGPU for VMs, MIG / time-slicing / passthrough for containers. A100, H100, H200, L40S, Blackwell validated.
+
+</div>
+
+<div class="cap-group">
+<p class="cap-group__label">Data &amp; storage</p>
 
 **Managed databases**
 PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB.
@@ -73,14 +103,24 @@ PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB.
 **S3 object storage**
 SeaweedFS-based S3-compatible storage for backups, applications, AI training data.
 
-**GPU as a service**
-NVIDIA vGPU for VMs, MIG / time-slicing / passthrough for containers. A100, H100, H200, L40S, Blackwell validated.
+**LINSTOR storage**
+Replicated block storage at scale. Rook-Ceph also supported.
+
+</div>
+
+<div class="cap-group">
+<p class="cap-group__label">Networking</p>
 
 **Cilium networking**
 eBPF-native, network policies, MetalLB, BGP. Replaces NSX-equivalent functionality.
 
-**LINSTOR storage**
-Replicated block storage at scale. Rook-Ceph also supported.
+</div>
+
+<div class="cap-group">
+<p class="cap-group__label">Platform operations</p>
+
+**Multi-tenant control plane**
+Tenant CRD, nested tenants, per-tenant quotas, RBAC, audit. Built for service-provider model.
 
 **Observability**
 VictoriaMetrics + VictoriaLogs included.
@@ -90,7 +130,19 @@ cozyportal for self-service. Production-ready WHMCS billing integration with two
 
 </div>
 
+</div>
+
 ![Cozystack dashboard — self-service catalog of managed services](/images/uploads/2026/04/cozystack-managed-services.png)
+
+<!-- /BLOCK 2 --->
+
+---
+
+<!-- BLOCK 2b: ARCHITECTURE -->
+
+## Architecture
+
+{{< cozystack-arch >}}
 
 <!-- /BLOCK 2 -->
 
@@ -99,6 +151,19 @@ cozyportal for self-service. Production-ready WHMCS billing integration with two
 <!-- BLOCK 3: PROJECT VS PRODUCT -->
 
 ## Cozystack the project vs Aenix the company vs Ænix Platform the product
+
+<div class="compare-split">
+<table>
+<thead><tr><th>Cozystack</th><th>Ænix Platform</th></tr></thead>
+<tbody>
+<tr><td>Open-source foundation</td><td>Commercial productization</td></tr>
+<tr><td>Infrastructure services</td><td>Portals and workflows</td></tr>
+<tr><td>Community support</td><td>Enterprise SLA</td></tr>
+<tr><td>Apache 2.0</td><td>Commercial integrations</td></tr>
+<tr><td>Operated by your team</td><td>Built and supported with Ænix</td></tr>
+</tbody>
+</table>
+</div>
 
 - **Cozystack** — open-source platform. CNCF project (currently Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Community-governed. Anyone can deploy, contribute, fork.
 - **Aenix** — the open-core company that created and maintains Cozystack. Largest single contributor. Maker of Ænix Platform.
@@ -114,9 +179,20 @@ You can use Cozystack open-source without Aenix; Aenix's commercial offering (Æ
 
 <!-- BLOCK 4: WHO USES COZYSTACK -->
 
+<div class="band band--content">
+
 ## Who runs Cozystack in production
 
+<div class="clients-grid--proof-wrap">
 {{< clients >}}
+</div>
+
+<div class="proof-facts">
+<span class="trust-pill">Production Kubernetes</span>
+<span class="trust-pill">Virtual machines</span>
+<span class="trust-pill">Managed databases</span>
+<span class="trust-pill">Multi-tenant environments</span>
+</div>
 
 Production deployments across the EU, DACH, and Central Asia. Customer base spans:
 
@@ -131,6 +207,8 @@ Cozystack is also listed in the [CNCF Landscape](https://landscape.cncf.io) — 
 
 > {{QUOTE_1 — pending permission}}
 
+</div>
+
 <!-- /BLOCK 4 -->
 
 ---
@@ -138,6 +216,16 @@ Cozystack is also listed in the [CNCF Landscape](https://landscape.cncf.io) — 
 <!-- BLOCK 5: HOW TO USE COZYSTACK -->
 
 ## How to use Cozystack
+
+<div class="edition-selector scenario-tabs" data-edition-tabs>
+
+<div class="edition-selector__tabs" role="tablist" aria-label="How to use Cozystack">
+<button class="edition-tab" id="use-tab-0" role="tab" aria-selected="true" aria-controls="use-panel-0" type="button">Deploy it yourself</button>
+<button class="edition-tab" id="use-tab-1" role="tab" aria-selected="false" aria-controls="use-panel-1" type="button" tabindex="-1">Get it built &amp; managed</button>
+</div>
+
+<div class="edition-selector__panels">
+<div class="edition-panel" id="use-panel-0" role="tabpanel" aria-labelledby="use-tab-0">
 
 ### Path 1: Self-deploy
 
@@ -147,6 +235,9 @@ Suitable when:
 - Your team has Kubernetes expertise to operate
 - No commercial support requirement
 - Lower-stakes / non-production initially
+
+</div>
+<div class="edition-panel" id="use-panel-1" role="tabpanel" aria-labelledby="use-tab-1">
 
 ### Path 2: Aenix-supported deployment
 
@@ -166,21 +257,42 @@ For specific use cases see:
 - **[Sovereign AI](/solutions/sovereign-ai/)** — AI workload focus
 - **[DORA compliance](/solutions/dora-compliance/)** — financial services
 
+</div>
+</div>
+
+</div>
+
 <!-- /BLOCK 5 -->
 
 ---
 
 <!-- BLOCK 6: PRICING -->
 
+<div class="band band--content band--pricing">
+
 ## Pricing
 
+<div class="pricing-split">
+
+<div class="pricing-split__col">
+
 Cozystack the platform is **free** (Apache 2.0). Anyone can run it.
+
+</div>
+
+<div class="pricing-split__col">
 
 For commercial Aenix support and the turnkey cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/aenix-platform/)** — five editions matched to buyer profile, with four support tiers (Basic from $1,250/month per 10 nodes; Standard $3,000; Plus $5,500; Enterprise Custom).
 
 Entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
+</div>
+
+</div>
+
 [Pricing details →](/pricing/) | [All editions →](/products/aenix-platform/)
+
+</div>
 
 <!-- /BLOCK 6 -->
 
