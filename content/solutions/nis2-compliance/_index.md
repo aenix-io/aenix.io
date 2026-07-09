@@ -173,7 +173,7 @@ Delivered by EU-based engineers with regulator-dialog experience. Same engineers
 
 <!-- BLOCK 8: PROOF -->
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 

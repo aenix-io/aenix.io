@@ -89,7 +89,7 @@ Das Ergebnis ist ein schriftlicher Bericht mit Ausrichtung auf Regulator-Bereits
 
 ## Was in Finanzdienstleistungen auf Cozystack läuft
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Kunden-Evidenz-Sektion — wird von Aenix mit namentlichen Kunden befüllt, wo Berechtigungen es erlauben. Anonyme Proof Points:*
 - Eine Tier-1-europäische Bank betreibt eine interne Cloud-Plattform mit Multi-Tenant-Isolation unter DORA-Artikel-28-Lieferanten-Konzentrationskontrollen.

@@ -117,7 +117,7 @@ Ergebnis ist ein schriftlicher Bericht, ausgerichtet auf den Dialog mit Aufsicht
 
 Wir veröffentlichen keine namentlichen Gesundheitskunden — Gesundheitsprojekte sind bis zur Freigabe durch NDA geschützt. Als architektonisches Nachweismuster siehe unsere anonymisierte **[souveräne Public-Cloud-Fallstudie](/de/case-studies/sovereign-public-cloud/)**: eine mandantenfähige Plattform, die regulierte Workloads mit vollständiger Datenresidenz und Schlüsseln im Besitz des Leistungserbringers betreibt — dasselbe strukturelle Muster, das ein Klinikverbund oder Krankenversicherer einsetzen würde.
 
-{{< placeholder-logos count="4" label="Healthcare customer logos (pending permission)" >}}
+{{< clients >}}
 
 ---
 

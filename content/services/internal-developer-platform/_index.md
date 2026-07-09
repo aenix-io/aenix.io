@@ -182,7 +182,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ## IDPs we've built
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 We've built internal developer platforms for service providers running multi-tenant clouds, regulated enterprises with strong sovereignty requirements, AI/GPU operators with multi-team data-science access, and telecom operators consolidating multiple legacy environments.
 

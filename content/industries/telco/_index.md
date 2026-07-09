@@ -87,7 +87,7 @@ Phase 2 implementation typically spans 6-24 months for a multi-site telecom plat
 
 ## What runs on Cozystack in telecom
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Customer evidence section — Aenix to populate. Anonymous proof points:*
 - A Tier-1 European telecom operating internal cloud platform across core + regional + edge sites.

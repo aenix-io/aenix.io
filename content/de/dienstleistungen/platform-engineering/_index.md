@@ -181,7 +181,7 @@ Für die Methodologie siehe **[Platform Readiness Assessment](/de/dienstleistung
 
 ## Plattformen, die wir gebaut haben
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Wir haben Plattformen für Service Provider mit Multi-Tenant-Clouds, regulierte Unternehmen mit internen Entwickler-Plattformen, KI/GPU-Operatoren, Telekom-Betreiber und Souveräne-Cloud-Initiativen in der EU, DACH und Zentralasien gebaut oder betrieben. Workloads umfassen VMs, Container, Managed Databases, S3 und GPU.
 

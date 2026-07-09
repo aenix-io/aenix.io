@@ -104,7 +104,7 @@ Pricing model design, customer-onboarding workflow, SLA design, regulatory posit
 
 ## Who's done this with Aenix
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Public references: regional hosting providers running Ænix Platform ISP Edition (currently listed on aenix.io customer logos). Tier-1 European bank engagements + several regional sovereign-cloud launches under NDA — first named cases expected mid-2027.
 

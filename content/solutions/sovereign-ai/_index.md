@@ -196,7 +196,7 @@ For full assessment methodology see **[Platform Readiness Assessment](/services/
 
 ## Sovereign AI platforms we've built
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 We have built and operated AI platforms for AI / GPU operators, financial-services organizations, and public-sector initiatives across the EU and Central Asia. Workload patterns include inference-at-scale (24/7), fine-tuning, RAG pipelines, and multi-tenant model serving.
 

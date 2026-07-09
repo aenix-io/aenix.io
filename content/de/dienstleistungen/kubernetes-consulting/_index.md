@@ -170,7 +170,7 @@ Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessmen
 
 ## Engagements, die wir durchgeführt haben
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 > *— {{NAME_1}}, {{TITLE_1}}*

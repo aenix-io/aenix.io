@@ -174,7 +174,7 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 
 <!-- BLOCK 8: PROOF -->
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 > *— {{NAME_1}}, {{TITLE_1}}*

@@ -122,7 +122,7 @@ Sie können Cozystack Open Source ohne Aenix nutzen; Aenix' kommerzielles Angebo
 
 ## Wer Cozystack in der Produktion betreibt
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Produktive Deployments in der EU, DACH und Zentralasien. Der Kundenstamm umfasst:
 

@@ -90,7 +90,7 @@ Die Phase-2-Implementierung erstreckt sich typischerweise über 6–24 Monate f�
 
 ## Was in der Telekommunikation auf Cozystack läuft
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Kunden-Evidenz-Sektion — von Aenix zu befüllen. Anonyme Proof Points:*
 - Ein Tier-1-europäischer Telekom-Operator betreibt eine interne Cloud-Plattform über Core-, regionale und Edge-Standorte.

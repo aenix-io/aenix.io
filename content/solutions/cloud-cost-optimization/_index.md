@@ -190,7 +190,7 @@ For full methodology see **[Platform Readiness Assessment](/services/platform-re
 
 ## Cost engagements we've run
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 We've run cost-emphasized engagements for service providers, financial-services organizations, telecom operators, and AI/GPU platforms across the EU, DACH, and Central Asia. Identified savings have ranged from 15% (well-managed cloud estate, mostly tactical optimization) to 50%+ (mismanaged spend with strong repatriation case).
 

@@ -188,7 +188,7 @@ Zur vollständigen Engagement-Methodik siehe **[Platform Readiness Assessment](/
 
 ## Wer das mit uns durchgeführt hat
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Wir haben DORA-konforme Readiness-Engagements für Banken, Versicherer, Telekommunikationsbetreiber und ICT-Drittdienstleister in der gesamten EU und der DACH-Region durchgeführt. Gegenseitige NDA zum Auftakt; benannte Fallstudien auf Anfrage im Discovery-Call, sofern die Kundengenehmigungen dies erlauben.
 

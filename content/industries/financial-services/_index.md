@@ -97,7 +97,7 @@ Output is a written report aligned with regulator-readiness and a Phase 2 implem
 
 ## What runs on Cozystack in financial services
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Customer evidence section — to be populated by Aenix with named customers where permissions allow. Anonymous proof points:*
 - A Tier-1 European bank running internal cloud platform with multi-tenant isolation under DORA Article 28 supplier-concentration controls.

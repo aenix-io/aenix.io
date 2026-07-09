@@ -85,7 +85,7 @@ Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentral
 
 ## Was in der Fertigung auf Cozystack läuft
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Kunden-Evidenz — von Aenix zu befüllen. Anonyme Proof Points:*
 - Ein Multi-Site-Hersteller betreibt eine einheitliche Plattform über Zentrale + regionale Produktionsstandorte

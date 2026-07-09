@@ -86,7 +86,7 @@ Aenix builds platforms for manufacturing organizations across the EU, DACH, and 
 
 ## What runs on Cozystack in manufacturing
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Customer evidence — Aenix to populate. Anonymous proof points:*
 - A multi-site manufacturer running unified platform across HQ + regional production sites

@@ -117,7 +117,7 @@ Many universities have access to EuroHPC or national HPC; Cozystack works alongs
 
 ## What runs on Cozystack in research and academic settings
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Customer evidence — Aenix to populate. Examples of proof points to include:*
 - A European research university operating shared GPU cluster for AI/ML research across 12 labs

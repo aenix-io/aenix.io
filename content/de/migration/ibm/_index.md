@@ -253,7 +253,7 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 
 ## IBM-Migrationen, die wir begleitet haben
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 

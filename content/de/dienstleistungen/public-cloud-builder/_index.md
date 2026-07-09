@@ -105,7 +105,7 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
 
 ## Wer das mit Aenix umgesetzt hat
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Öffentliche Referenzen: regionale Hosting-Anbieter, die Ænix Platform ISP Edition betreiben (derzeit auf den Kunden-Logos von aenix.io gelistet). Tier-1-Engagements europäischer Banken + mehrere regionale souveräne-Cloud-Launches unter NDA — erste namentliche Cases erwartet Mitte 2027.
 

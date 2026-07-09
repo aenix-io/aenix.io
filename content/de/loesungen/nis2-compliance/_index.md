@@ -169,7 +169,7 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 <!-- BLOCK 8: PROOF -->
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 

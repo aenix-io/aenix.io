@@ -74,7 +74,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 
 ## What runs on Cozystack in insurance
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Customer evidence — Aenix to populate. Anonymous proof points:*
 - A regional reinsurance carrier with multi-jurisdictional sovereignty requirements running internal cloud platform

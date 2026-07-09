@@ -99,7 +99,7 @@ KubeVirt und der Kubernetes-native Virtualisierungsstack haben eine Community vo
 
 ## Wer setzt Cozystack in der DACH-Region produktiv ein
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 

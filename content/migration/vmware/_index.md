@@ -183,7 +183,7 @@ For VMware-specific destination guidance, see **[VMware alternative](/alternativ
 
 ## VMware migrations we've supported
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 

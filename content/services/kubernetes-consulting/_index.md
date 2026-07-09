@@ -170,7 +170,7 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 
 ## Engagements we've run
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 > *— {{NAME_1}}, {{TITLE_1}}*

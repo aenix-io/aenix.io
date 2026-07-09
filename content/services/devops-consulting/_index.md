@@ -180,7 +180,7 @@ Most engagements start with assessment.
 
 ## DevOps engagements we've run
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 We've run DevOps consulting and transformation engagements for service providers, regulated enterprises, AI/GPU operators, and telecom operators across the EU, DACH, and Central Asia.
 

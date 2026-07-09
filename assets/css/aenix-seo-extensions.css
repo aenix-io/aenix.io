@@ -3094,3 +3094,31 @@ a.card--hub {
 #cozystack-und-cncf + ul strong {
   color: var(--aenix-text);
 }
+
+/* ============================================================
+   CLIENT LOGO STRIP — in-content variant of the theme
+   .clients-grid (the legacy homepage strip ran 80px logos;
+   inside landing bodies the strip runs quieter and smaller).
+   ============================================================ */
+.clients-grid--inline {
+  justify-content: flex-start;
+  gap: 1.25rem 2.25rem;
+  margin: 1.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--aenix-bg-tint);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+}
+.clients-grid--inline .client-logo,
+.clients-grid--inline .client-logo img {
+  height: 44px;
+}
+.clients-grid--inline .client-logo {
+  opacity: 0.75;
+}
+.clients-grid--inline .client-logo:hover { opacity: 1; }
+@media (max-width: 640px) {
+  .clients-grid--inline { gap: 1rem 1.5rem; justify-content: center; }
+  .clients-grid--inline .client-logo,
+  .clients-grid--inline .client-logo img { height: 36px; }
+}

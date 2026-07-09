@@ -86,7 +86,7 @@ Phase 2 implementation runs end-to-end: hardware-to-platform-to-operations, with
 
 ## What runs on Cozystack in public sector
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Customer evidence section — to be populated by Aenix with named references where permissions allow. Anonymous proof points:*
 - A central-government IT services agency operating shared sovereign cloud for ministries on Cozystack.

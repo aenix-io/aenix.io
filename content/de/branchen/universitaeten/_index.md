@@ -118,7 +118,7 @@ Viele Universitäten haben Zugang zu EuroHPC oder nationalem HPC; Cozystack arbe
 
 ## Was in Forschungs- und akademischen Umgebungen auf Cozystack läuft
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Kunden-Evidenz — von Aenix zu befüllen. Beispiele für einzubindende Proof Points:*
 - Eine europäische Forschungsuniversität betreibt einen geteilten GPU-Cluster für KI/ML-Forschung über 12 Labore

@@ -251,7 +251,7 @@ OpenStack, CloudStack, and Proxmox migrations follow the same playbook with diff
 
 ## Running in production with
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 > *— {{NAME_1}}, {{TITLE_1}}*

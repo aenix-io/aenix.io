@@ -116,7 +116,7 @@ You can use Cozystack open-source without Aenix; Aenix's commercial offering (Æ
 
 ## Who runs Cozystack in production
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Production deployments across the EU, DACH, and Central Asia. Customer base spans:
 

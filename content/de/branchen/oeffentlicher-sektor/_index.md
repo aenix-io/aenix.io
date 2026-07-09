@@ -87,7 +87,7 @@ Die Phase-2-Implementierung läuft End-to-End: von Hardware über Plattform bis 
 
 ## Was im öffentlichen Sektor auf Cozystack läuft
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Kunden-Evidenz-Sektion — wird von Aenix mit namentlichen Referenzen befüllt, wo Berechtigungen es erlauben. Anonyme Proof Points:*
 - Eine zentralstaatliche IT-Services-Agentur betreibt eine gemeinsame souveräne Cloud für Ministerien auf Cozystack.

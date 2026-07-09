@@ -180,7 +180,7 @@ Die meisten Engagements beginnen mit dem Assessment.
 
 ## DevOps-Engagements, die wir durchgeführt haben
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Wir haben DevOps-Consulting- und Transformations-Engagements für Service Provider, regulierte Unternehmen, KI/GPU-Operatoren und Telekom-Betreiber in der EU, DACH und Zentralasien durchgeführt.
 

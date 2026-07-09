@@ -153,7 +153,7 @@ For sovereignty / DORA / repatriation / AI-specific motivations, the relevant so
 
 ## What's running on Cozystack in production
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Production deployments across the EU, DACH, and Central Asia. Customer base spans service providers, regulated enterprises, telcos, and AI/GPU operators.
 

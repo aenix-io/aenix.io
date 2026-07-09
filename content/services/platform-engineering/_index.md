@@ -190,7 +190,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ## Platforms we've built
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 We've built or operated platforms for service providers running multi-tenant clouds, regulated enterprises building internal developer platforms, AI/GPU operators, telecom operators, and sovereign-cloud initiatives across the EU, DACH, and Central Asia. Workloads include VMs, containers, managed databases, S3, and GPU.
 

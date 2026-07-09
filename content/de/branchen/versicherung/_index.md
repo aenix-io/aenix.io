@@ -75,7 +75,7 @@ Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zen
 
 ## Was in Versicherungen auf Cozystack läuft
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Kunden-Evidenz — von Aenix zu befüllen. Anonyme Proof Points:*
 - Ein regionaler Rückversicherer mit multi-jurisdiktionalen Souveränitätsanforderungen betreibt eine interne Cloud-Plattform

@@ -181,7 +181,7 @@ Zur vollständigen Methodik siehe **[Platform Readiness Assessment](/de/dienstle
 
 ## Repatriation-Projekte, die wir begleitet haben
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Wir haben Cloud-Repatriation-Engagements für Service-Provider, Finanzdienstleister, Telekommunikationsbetreiber und KI-/GPU-Plattformen in der EU, der DACH-Region und Zentralasien durchgeführt. Die verschobenen Workloads reichten von Steady-State-Produktionsdatenbanken bis zu KI-Inferenz-Clustern; die Ergebnisse reichten von vollständig on-prem bis zu selektivem Hybrid.
 

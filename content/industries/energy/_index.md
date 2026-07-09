@@ -92,7 +92,7 @@ Aenix is currently piloting Cozystack with an energy operator and applies the sa
 
 ## What's running on Cozystack in energy
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Customer evidence — pilot in progress; named reference pending customer permissions.*
 

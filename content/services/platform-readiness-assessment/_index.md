@@ -236,7 +236,7 @@ If a Phase 2 engagement follows, the assessment cost is credited against the imp
 
 ## What we've assessed and built
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 We've run platform readiness assessments for service providers, regional cloud providers, financial-services organizations, telecom operators, and sovereign-cloud initiatives across the EU and Central Asia.
 

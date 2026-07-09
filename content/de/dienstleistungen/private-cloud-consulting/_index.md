@@ -177,7 +177,7 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 
 <!-- BLOCK 8: PROOF -->
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 > *— {{NAME_1}}, {{TITLE_1}}*

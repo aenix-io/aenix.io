@@ -189,7 +189,7 @@ Zur vollständigen Assessment-Methodik siehe **[Platform Readiness Assessment](/
 
 ## Souveräne KI-Plattformen, die wir gebaut haben
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Wir haben KI-Plattformen für KI/GPU-Betreiber, Finanzdienstleister und Initiativen des öffentlichen Sektors in der EU und Zentralasien gebaut und betrieben. Zu den Workload-Mustern zählen Inferenz im Maßstab (24/7), Fine-Tuning, RAG-Pipelines und Multi-Tenant-Model-Serving.
 

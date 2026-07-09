@@ -154,7 +154,7 @@ Für Souveränitäts-/DORA-/Repatriierungs-/KI-spezifische Motivationen die rele
 
 ## Was auf Cozystack in der Produktion läuft
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 Produktive Deployments in der EU, DACH und Zentralasien. Der Kundenstamm umfasst Service Provider, regulierte Unternehmen, Telcos und KI-/GPU-Betreiber.
 

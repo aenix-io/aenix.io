@@ -131,7 +131,7 @@ Cloud-Repatriation auf souveräne oder On-Prem-Ænix-Platform. 40-70% TCO-Redukt
 
 ### Regionale Hosting-Anbieter mit Ænix Platform ISP Edition
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 ### Tier-1-europäische-Banken (NDA-geschützt)
 

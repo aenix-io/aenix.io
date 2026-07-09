@@ -86,7 +86,7 @@ Aenix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das glei
 
 ## Was in der Energie auf Cozystack läuft
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 *Kunden-Evidenz — Pilot in Arbeit; benannte Referenz ausstehend bis zur Kunden-Genehmigung.*
 

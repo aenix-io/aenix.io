@@ -254,7 +254,7 @@ Estate size and the legacy/microservice mix drive the actual schedule; sequencin
 
 ## IBM migrations we've supported
 
-{{< placeholder-logos >}}
+{{< clients >}}
 
 > {{< placeholder-quote >}}
 
