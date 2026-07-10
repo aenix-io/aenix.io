@@ -16,29 +16,16 @@
     {{- end -}}
   {{- end -}}
   {{- if $cards -}}
-  {{- /* Cap the card row at three so the block does not compete with
-         the closing CTA; the remainder renders as a quiet link list. */ -}}
-  {{- $primary := first 3 $cards -}}
-  {{- $more := after 3 $cards -}}
-  {{- $moreLabel := cond (eq $lang "de") "Mehr entdecken" "Explore more" -}}
   <aside class="related-pages" aria-label="{{ $heading }}">
     <h2 class="related-pages__heading">{{ $heading }}</h2>
     <div class="related-pages__grid">
-      {{- range $primary }}
+      {{- range $cards }}
       <a class="related-pages__card" href="{{ .RelPermalink }}">
         <span class="related-pages__title">{{ .Title }}</span>
         {{- with .Description }}<span class="related-pages__desc">{{ . }}</span>{{ end }}
       </a>
       {{- end }}
     </div>
-    {{- if $more }}
-    <p class="related-pages__more-label">{{ $moreLabel }}</p>
-    <ul class="related-pages__more">
-      {{- range $more }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{- end }}
-    </ul>
-    {{- end }}
   </aside>
   {{- end -}}
 {{- end -}}
