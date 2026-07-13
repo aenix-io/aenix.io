@@ -61,6 +61,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1800);
   }
 
+  /* ---- Trust badge pills ---- */
+  // Progressive enhancement: the markdown keeps the credentials as one
+  // plain "A · B · C" line (SEO text untouched); JS splits it into
+  // icon pills. Without JS the line renders as quiet centered text.
+  (() => {
+    const icon = (paths) =>
+      `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
+    const ICONS = {
+      hex: icon('<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>'),
+      shield: icon('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'),
+      award: icon('<circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>'),
+      file: icon('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>'),
+      globe: icon('<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>'),
+      lock: icon('<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'),
+      check: icon('<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.27"/>')
+    };
+    const PICK = [
+      [/cncf/i, 'hex'],
+      [/openssf|best practices|soc\s?2|iso\s?\d|complian/i, 'shield'],
+      [/kubernetes|certified|distribution/i, 'award'],
+      [/apache|license|\bmit\b|\bgpl\b/i, 'file'],
+      [/gdpr|sovereign|residenc|\beu\b|nis\s?2|dora/i, 'globe'],
+      [/secur|encrypt|ssl|air.?gap/i, 'lock']
+    ];
+    document.querySelectorAll('.trust-badges').forEach(el => {
+      const text = el.textContent;
+      if (!text || !text.includes('·')) return;
+      const parts = text.split('·').map(s => s.trim()).filter(Boolean);
+      if (parts.length < 2) return;
+      el.textContent = '';
+      parts.forEach(label => {
+        const pill = document.createElement('span');
+        pill.className = 'trust-badge';
+        const hit = PICK.find(([re]) => re.test(label));
+        pill.innerHTML = ICONS[hit ? hit[1] : 'check'];
+        pill.appendChild(document.createTextNode(label));
+        el.appendChild(pill);
+      });
+    });
+  })();
+
   /* ---- Desktop dropdown keyboard support ---- */
   // Panels open via :focus-within (CSS); Escape moves focus back to the
   // toggle and drops it so the panel closes without tabbing through

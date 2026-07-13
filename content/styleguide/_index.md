@@ -15,48 +15,91 @@ build:
 
 ## Block 1 — Trust badge strip
 
-`.trust-badges`
+`.trust-badges` — keep the plain `·`-separated line in markdown (SEO text untouched); JS splits it into one pill per credential with a matching icon. Without JS it renders as a quiet centered line.
 
 <div class="trust-badges">
-CNCF Project · Apache 2.0 · Sample credential · Another credential
+CNCF Project · Apache 2.0 · OpenSSF Best Practices · GDPR Compliant · Kubernetes Certified Distribution
 </div>
 
 ---
 
 ## Block 2 — Bold-lead card grid
 
-`.grid-2x2` / `.gap-cards-2` / `.cta-cards` — paragraphs with a bold lead become cards.
+`.bold-grid` — one lead card plus three supporting cards with icon chips; not uniform by design. Three arrangements, chosen by what the section says. (Legacy equal grid `.grid-2x2` stays on pages until reassigned.)
 
-<div class="grid-2x2">
+**Variant A — full-width lead on top, heading/body split, three below:**
 
-**First card lead**
-Supporting sentence that explains the point in one or two lines.
+<div class="bold-grid bold-grid--hero">
+<div class="bold-card bold-card--lead">
+<span class="chip-label">Core platform</span>
+<div class="bold-split">
+<h3>Infrastructure that scales with your ambition.</h3>
+<div>
+<p>Elastic compute, global routing, and zero-trust security — unified under a single control plane built for teams that cannot afford downtime.</p>
+<div class="bold-card__actions"><a class="cta-primary" href="#">Start building →</a><a class="cta-secondary" href="#">View docs</a></div>
+</div>
+</div>
+</div>
+<div class="bold-grid__row">
+<div class="bold-card"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span><h3>Real-time observability</h3><p>Full-stack metrics, logs, and traces with sub-second latency across all services.</p><a href="#">Learn more →</a></div>
+<div class="bold-card"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><h3>Zero-trust security</h3><p>Identity-aware access, continuous verification, encrypted at every network layer.</p><a href="#">Learn more →</a></div>
+<div class="bold-card"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><h3>Automated compliance</h3><p>Continuous policy enforcement across SOC 2, ISO 27001, and GDPR controls.</p><a href="#">Learn more →</a></div>
+</div>
+</div>
 
-**Second card lead**
-Supporting sentence that explains the point in one or two lines.
+**Variant B — lead card left, three compact cards stacked right:**
 
-**Third card lead**
-Supporting sentence that explains the point in one or two lines.
+<div class="bold-grid bold-grid--side">
+<div class="bold-card bold-card--lead">
+<span class="chip-label">Core platform</span>
+<h3>Infrastructure that scales with your ambition.</h3>
+<p>Elastic compute, global routing, and zero-trust security — unified under a single control plane built for teams that cannot afford downtime.</p>
+<div class="bold-card__actions"><a class="cta-primary" href="#">Start building →</a><a class="cta-secondary" href="#">View docs</a></div>
+</div>
+<div class="bold-card"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span><h3>Real-time observability</h3><p>Full-stack metrics, logs, and traces with sub-second latency across all services.</p></div>
+<div class="bold-card"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><h3>Zero-trust security</h3><p>Identity-aware access, continuous verification, encrypted at every network layer.</p></div>
+<div class="bold-card"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><h3>Automated compliance</h3><p>Continuous policy enforcement across SOC 2, ISO 27001, and GDPR controls.</p></div>
+</div>
 
-**Fourth card lead**
-Supporting sentence that explains the point in one or two lines.
+**Variant C — Z-pattern with a stat panel top-right and a duo card below:**
 
+<div class="bold-grid bold-grid--z">
+<div class="bold-card bold-card--lead">
+<span class="chip-label">Core platform</span>
+<h3>Infrastructure that scales with your ambition.</h3>
+<p>Elastic compute, global routing, and zero-trust security — unified under a single control plane built for teams that cannot afford downtime.</p>
+<div class="bold-card__actions"><a class="cta-primary" href="#">Start building →</a><a class="cta-secondary" href="#">View docs</a></div>
+</div>
+<div class="bold-stats">
+<div><span class="bold-stat__value">99.99%</span><span class="bold-stat__label">Uptime SLA — guaranteed by contract</span></div>
+<div><span class="bold-stat__value">23</span><span class="bold-stat__label">Global regions, 140+ PoPs</span></div>
+</div>
+<div class="bold-grid__bottom">
+<div class="bold-card"><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span><h3>Real-time observability</h3><p>Full-stack metrics, logs, and traces with sub-second latency across all services.</p></div>
+<div class="bold-card bold-card--duo">
+<div><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><h3>Zero-trust security</h3><p>Identity-aware access, continuous verification, encrypted at every network layer.</p></div>
+<div><span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span><h3>Automated compliance</h3><p>Continuous policy enforcement across SOC 2, ISO 27001, and GDPR controls.</p></div>
+</div>
+</div>
 </div>
 
 ---
 
 ## Block 3 — Capability grid (3-up)
 
-`.capability-grid-3x3`
+`.capability-grid-3x3` — with an icon chip matching each card's meaning (`<span class="card-ico">` line inserted above the bold lead; text lines untouched).
 
 <div class="capability-grid-3x3">
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
 **Capability one**
 What it does, in a sentence.
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
 **Capability two**
 What it does, in a sentence.
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
 **Capability three**
 What it does, in a sentence.
 
@@ -101,6 +144,31 @@ What this tier covers, in one or two sentences, slightly longer to show equal he
 
 </div>
 
+**Variant B — editorial (`.who-for--editorial`): full-width heading, hairline, long copy left, compact lists right:**
+
+<div class="who-for who-for--editorial">
+<p class="who-for__label">Who it&rsquo;s for</p>
+<h3>Built for teams that cannot compromise on reliability.</h3>
+<div class="who-for__rule"></div>
+<div class="who-for__body">
+<div class="who-for__copy">
+<p>Architected for organizations where infrastructure downtime translates directly to revenue loss, regulatory risk, or reputational damage.</p>
+<p>Whether you run financial services, healthcare systems, or critical SaaS — built for contexts where reliability is a first-class requirement, not a bonus feature.</p>
+</div>
+<div class="who-for__fit">
+<ul>
+<li>Financial services and fintech</li>
+<li>Healthcare and life sciences</li>
+<li>Government and public sector</li>
+</ul>
+<ul class="who-for__not">
+<li>Personal hobby projects</li>
+<li>Ad-hoc scripts and experiments</li>
+</ul>
+</div>
+</div>
+</div>
+
 ---
 
 ## Block 6 — Horizontal timeline
@@ -124,7 +192,7 @@ Written report and executive session.
 
 ## Block 7 — Fact panel (label: value rows)
 
-Anchored heading id (`#quick-facts` pattern) + strong-led list renders as a divided panel.
+Anchored heading id (`#quick-facts` pattern) + strong-led list renders as a divided panel. Approved — but where the page allows, prefer the V_2 rows treatment (Block 16).
 
 ## Quick facts
 
@@ -187,12 +255,18 @@ Hidden-by-default detail that expands on click.
 
 ## Block 14 — Lead magnet panel
 
-`.lead-magnet-form` — framed panel for download forms.
+`.lead-magnet-split` — label, heading, and supporting line left; primary button and a quiet text link right. On download pages the Pipedrive embed keeps the same frame via `.lead-magnet-form`.
 
-<div class="lead-magnet-form">
-
-Sample form area — the Pipedrive embed renders here on real pages.
-
+<div class="lead-magnet-split">
+<div>
+<p class="lead-magnet-split__label">Get started today</p>
+<h3>Ready to run on infrastructure that won&rsquo;t let you down?</h3>
+<p>Talk to a solutions engineer and get a custom architecture review — free, no commitment.</p>
+</div>
+<div class="lead-magnet-split__actions">
+<a class="cta-primary" href="#">Book a demo →</a>
+<a class="hero-text-link" href="#">Read the architecture docs →</a>
+</div>
 </div>
 
 ---
