@@ -14,9 +14,22 @@
 
 {{- $isDE := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
 {{- $qfTitle := cond $isDE "Auf einen Blick" "Quick facts" -}}
+{{/* quick_facts_style frontmatter switch: "" (default framed panel)
+     or "rows" (open label/value rows, styleguide Block 16). */}}
+{{- $qfStyle := .Params.quick_facts_style | default "" -}}
 {{- with .Params.quick_facts -}}
-<section class="seo-quick-facts" aria-label="{{ $qfTitle }}">
+<section class="seo-quick-facts{{ if eq $qfStyle "rows" }} seo-quick-facts--rows{{ end }}" aria-label="{{ $qfTitle }}">
   <h2>{{ $qfTitle }}</h2>
+  {{- if eq $qfStyle "rows" }}
+  <ul class="facts-rows facts-rows--def">
+    {{- range . }}
+    <li>
+      <strong>{{ index . "label" }}</strong>
+      <span>{{ index . "value" | markdownify }}</span>
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
   <ul class="quick-facts-list">
     {{- range . }}
     <li>
@@ -25,6 +38,7 @@
     </li>
     {{- end }}
   </ul>
+  {{- end }}
   {{- with $.Params.quick_facts_source }}
   <p class="quick-facts-source"><em>Source: {{ . | markdownify }}</em></p>
   {{- end }}

@@ -7,8 +7,10 @@
   Pass the page as context: {{ partial "seo/geo-faq.html" . }}
 */}}
 {{- $faqTitle := cond (or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/")) "Häufig gestellte Fragen" "Frequently asked questions" -}}
+{{/* faq_style frontmatter switch: "" (default boxed cards) or
+     "rows" (open rows with hairlines, styleguide Block 23). */}}
 {{- with .Params.faq -}}
-<section class="seo-faq" aria-label="{{ $faqTitle }}">
+<section class="seo-faq{{ if eq ($.Params.faq_style | default "") "rows" }} faq-rows{{ end }}" aria-label="{{ $faqTitle }}">
   <h2>{{ $faqTitle }}</h2>
   {{- range . }}
   <details class="faq-item">

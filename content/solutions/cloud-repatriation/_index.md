@@ -10,6 +10,8 @@ related_pages:
   - /products/cozystack/
   - /pricing
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cloud repatriation is the practice of moving selected workloads out of public cloud (AWS, Azure, GCP) into private cloud, hybrid, or on-premises environments, typically to cut steady-state cost, satisfy data-sovereignty and regulatory pressure (DORA, NIS2, GDPR), or control AI and inference economics. Aenix runs a structured repatriation engagement, delivered as part of its Platform Readiness Assessment, that produces an honest TCO model, a per-workload "repatriate now / later / stay" ranking, a destination architecture, and a cutover sequence. Aenix is the company behind Cozystack, an Apache 2.0 CNCF project that unifies VMs and containers on one Kubernetes API and is the platform Aenix typically recommends as a repatriation destination. The engagement is delivered by engineers with no hyperscaler commercial bias.**
 quick_facts:
@@ -92,15 +94,19 @@ If your situation matches at least three of those, repatriation deserves a struc
 
 <div class="grid-2x2">
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></span>
 **1. Predictable cost on steady-state workloads**
 Hyperscaler economics favor elasticity. For workloads that run 24/7 at predictable utilization, the unit economics on-prem or in private cloud are routinely 30-60% better — once egress, idle resources, and underutilized commitments are accounted for honestly.
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
 **2. Regulatory and sovereignty pressure**
 DORA (in force January 2025), NIS2, GDPR, sectoral data-residency rules, and procurement-led sovereignty mandates (EU member states, Kazakhstan, others) increasingly force critical workloads into the financial entity's own environment.
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></span>
 **3. AI and analytics on sensitive data**
 GenAI, inference, and analytics workloads against regulated data classes face two-front pressure: model providers' data-handling terms aren't acceptable, and inference egress costs make hyperscaler economics unworkable at scale.
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg></span>
 **4. Operational and architectural control**
 Hyperscaler-proprietary services lock the architecture into one vendor's roadmap. Repatriation gives the platform team back the ability to choose, evolve, and audit the underlying components.
 
@@ -116,15 +122,19 @@ Hyperscaler-proprietary services lock the architecture into one vendor's roadmap
 
 <div class="gap-cards-2">
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>
 **The TCO model is wishful, not honest**
 Hardware cost is easy. Network, datacenter, storage tiering, observability, identity, backup, DR, ongoing platform-engineering capacity — usually missing or underestimated. The result: repatriation looks cheaper than it is, then disappoints the CFO 18 months in.
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>
 **The destination architecture is left for later**
 Workloads get moved to "an on-prem cluster" without a real platform underneath. The team rebuilds, in worse form, what hyperscalers spent a decade engineering. Self-service breaks. Velocity drops. Repatriation gets blamed.
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
 **Data gravity is treated as a checkbox**
 "Move the database last" — without a real plan for how 50 TB of production data crosses the network, what the cutover window looks like, how the rollback path works, and where backups live during the move.
 
+<span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg></span>
 **The exit is full-scope when selective is the right answer**
 Most repatriations are not all-or-nothing. The right outcome is usually 30-60% of workloads on-prem (the steady-state, regulated, or expensive ones), 40-70% staying in public cloud (the elastic, latency-sensitive, or hyperscaler-only ones). Treating repatriation as a binary decision destroys the economic case.
 
@@ -160,9 +170,13 @@ Delivered by Aenix engineers who have built and operated production platforms fo
 
 ## Why Aenix specifically
 
+<div class="advantage-panel">
+
 - **No hyperscaler bias.** Repatriation advisory work from Big-4 consultancies is shaped by their hyperscaler partnerships. Our recommendations are not commercially tied to AWS, Azure, GCP, or any single provider — we say "stay in public cloud" when that's the answer, and we say "fully on-prem" when that's the answer.
 - **Engineers, not consultants.** The engineers who run the repatriation engagement build the production platforms afterwards. The implementation effort estimates in the report are calibrated against work we have actually shipped — not against industry benchmarks.
 - **Open-source destination platform.** We are the company behind **[Cozystack](/products/cozystack/)** — an open-source Kubernetes-native cloud platform (CNCF Project, Kubernetes Certified Distribution). Where Cozystack fits the destination architecture better than the alternative, the report explains why with named architectural attributes. Where it doesn't, we say so.
+
+</div>
 
 <!-- /BLOCK 6 -->
 
