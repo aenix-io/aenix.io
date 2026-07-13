@@ -1836,24 +1836,29 @@ summary:focus-visible,
    disclosure triangles.
    ============================================================ */
 
-/* Direct answer: citation-ready lead panel under the H1 */
+/* Direct answer: citation-ready editorial lead under the H1.
+   No box (owner direction 2026-07-13, after IBM Think / Cloudflare
+   Learning Center references) — the answer is set larger than body
+   text and the typography does the work. */
 .seo-direct-answer {
-  margin: 1.5rem 0 2rem;
-  padding: 1.375rem 1.625rem;
-  background: linear-gradient(135deg, rgba(1, 165, 255, 0.07), rgba(102, 27, 225, 0.05));
-  border: 1px solid rgba(1, 165, 255, 0.22);
-  border-radius: 12px;
+  margin: 2rem 0 2.5rem;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  max-width: 62ch;
+  font-size: 1.25rem;
+  line-height: 1.65;
 }
-.seo-direct-answer p {
-  margin: 0;
-  font-size: 1.0625rem;
-  line-height: 1.7;
-}
+.seo-direct-answer p { margin: 0; }
 /* Source marks the whole paragraph bold (citation emphasis);
    render it as calm lead text instead of a bold wall. */
 .seo-direct-answer strong {
   font-weight: 500;
   color: var(--aenix-text);
+}
+@media (max-width: 640px) {
+  .seo-direct-answer { font-size: 1.125rem; }
 }
 
 /* Quick facts: definition rows in a quiet panel */
