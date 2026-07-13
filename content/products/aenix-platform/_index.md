@@ -2,6 +2,10 @@
 title: "Ænix Platform"
 description: "Ænix Platform: turnkey cloud-in-a-box built on open-source Cozystack. Five editions with hosting panel, billing, portals, payments, and enterprise support."
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer_image: "/images/cozystack-screenshot.png"
+direct_answer_image_alt: "Aenix Platform console built on Cozystack"
 direct_answer: |
   **Ænix Platform is a turnkey "cloud-in-a-box" from Aenix, the open-core company behind Cozystack. It packages the open-source Cozystack project (a CNCF Sandbox project, Apache 2.0) and adds the commercial layer an operator needs to run a real cloud business: a hosting panel, user/admin/support portals, service-creation wizards, full billing (backend and frontend), payment and WHMCS integrations, a branded customer console, enterprise SLA, and dedicated support. It is offered in five editions matching five buyer profiles: Public Cloud, ISP, Enterprise, IDP, and AI/ML. Cozystack provides the Kubernetes-native engine (KubeVirt for VMs and containers, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy); Aenix sells the productized platform and services on top.**
 
@@ -72,6 +76,10 @@ Cozystack is the engine. Ænix Platform is the car — turnkey cloud with everyt
 
 ## Five editions
 
+<div class="edition-cards">
+
+<div class="edition-card">
+
 ### Ænix Platform Public Cloud Edition
 
 For large public-cloud operators, large banks operating own cloud, large telcos / national operators.
@@ -81,6 +89,10 @@ Multi-hypervisor cloud control plane with users, projects, quotas, cloud-like UX
 **Engagement size:** €1M - €10M+ multi-year programs.
 
 [Public Cloud Edition details →](/products/aenix-platform/public-cloud-edition/)
+
+</div>
+
+<div class="edition-card">
 
 ### Ænix Platform ISP Edition
 
@@ -92,6 +104,10 @@ Modern alternative to OpenStack. Includes WHMCS integration, billing module + te
 
 [ISP Edition details →](/products/aenix-platform/isp-edition/)
 
+</div>
+
+<div class="edition-card">
+
 ### Ænix Platform Enterprise Edition
 
 For regulated enterprises (banks, insurance, public administration, telco, healthcare) facing DORA / NIS2 / sovereignty pressure.
@@ -101,6 +117,10 @@ Private and hybrid sovereign cloud. Multi-DC setups. One control plane that can 
 **Engagement size:** €500k - €5M+ multi-year platform builds. Tier-1 European banks under NDA.
 
 [Enterprise Edition details →](/products/aenix-platform/enterprise-edition/)
+
+</div>
+
+<div class="edition-card">
 
 ### Ænix Platform IDP Edition
 
@@ -112,6 +132,10 @@ Internal Developer Platform layer on top of the cloud — GitLab automation, Arg
 
 [IDP Edition details →](/products/aenix-platform/idp-edition/)
 
+</div>
+
+<div class="edition-card">
+
 ### Ænix Platform AI/ML Edition
 
 For AI-heavy organizations — AI-native startups at scale, regulated AI deployments, GPU-heavy product companies.
@@ -121,6 +145,10 @@ AI platform automation out of the box: standard AI workloads, service APIs, read
 **Engagement size:** €500k - €3M+ project; managed retainer.
 
 [AI/ML Edition details →](/products/aenix-platform/ai-ml-edition/)
+
+</div>
+
+</div>
 
 ---
 
@@ -136,6 +164,8 @@ The cloud experience on customer-controlled hardware. Reduce AWS-level bills 2-7
 
 ## Ænix Platform vs Cozystack — what's the difference?
 
+<div class="compare-elevated compare-elevated--col3">
+
 | Dimension | Cozystack (open source) | Ænix Platform (commercial) |
 |---|---|---|
 | License | Apache 2.0 (free) | Commercial |
@@ -149,6 +179,8 @@ The cloud experience on customer-controlled hardware. Reduce AWS-level bills 2-7
 | Admin interface | kubectl / GitOps | Built-in admin UI + service wizards |
 | Compliance | Architecture-aligned | Certified bundles (ISO, SOC) |
 | Roadmap influence | Community-driven | Customer requirements heard |
+
+</div>
 
 If you have platform engineering capacity and want full control: run Cozystack yourself, free. If you need a turnkey cloud-in-a-box with billing, portals, and enterprise support: Ænix Platform.
 ### What does Ænix Platform add over open-source Cozystack?

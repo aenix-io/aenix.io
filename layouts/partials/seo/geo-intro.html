@@ -6,10 +6,22 @@
   that defines these params. Also wrapped by the {{< seo-blocks >}} shortcode.
   Pass the page as context: {{ partial "seo/geo-intro.html" . }}
 */}}
+{{- $daImg := .Params.direct_answer_image -}}
 {{- with .Params.direct_answer -}}
+{{- if $daImg }}
+<div class="seo-direct-answer answer-split">
+  <div class="answer-split__text">
+    {{ . | markdownify }}
+  </div>
+  <figure class="answer-split__media">
+    <img src="{{ $daImg }}" alt="{{ $.Params.direct_answer_image_alt | default $.Title }}" loading="lazy">
+  </figure>
+</div>
+{{- else }}
 <div class="seo-direct-answer">
   {{ . | markdownify }}
 </div>
+{{- end }}
 {{- end -}}
 
 {{- $isDE := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}

@@ -472,6 +472,17 @@ From ten to ten thousand instances with the same SLA and security posture.
 
 </div>
 
+**Variant `--col3`** — when the highlighted product sits in the third column:
+
+<div class="compare-elevated compare-elevated--col3">
+
+| Feature | Other | Sample | 
+|---|---|---|
+| License | Free | Commercial |
+| SLA | Community | Enterprise tiers |
+
+</div>
+
 ---
 
 ## Block 26 — Lead magnet, V_2 split + pricing tiers
@@ -519,5 +530,50 @@ From ten to ten thousand instances with the same SLA and security posture.
 </ul>
 <a class="cta-secondary" href="#">Contact sales</a>
 </div>
+</div>
+
+---
+
+## Block 27 — Edition cards
+
+`.edition-cards` — h3-led product sections wrapped into cards (insert-only wrappers); the first card is the flagship and spans the full row.
+
+<div class="edition-cards">
+<div class="edition-card">
+<h3>Sample Flagship Edition</h3>
+<p>For large operators, banks running their own cloud, and national telcos.</p>
+<p>Multi-hypervisor control plane with users, projects, quotas, and multi-region support.</p>
+<p><strong>Engagement size:</strong> Multi-year programs.</p>
+<a href="#">Flagship Edition details →</a>
+</div>
+<div class="edition-card">
+<h3>Sample Second Edition</h3>
+<p>For hosting providers, MSPs, and regional clouds.</p>
+<p>Modern alternative to legacy stacks with billing and migration tooling.</p>
+<p><strong>Engagement size:</strong> Entry from a monthly support tier.</p>
+<a href="#">Second Edition details →</a>
+</div>
+<div class="edition-card">
+<h3>Sample Third Edition</h3>
+<p>For regulated enterprises facing compliance pressure.</p>
+<p>Private and hybrid sovereign cloud with multi-DC setups.</p>
+<p><strong>Engagement size:</strong> Multi-year platform builds.</p>
+<a href="#">Third Edition details →</a>
+</div>
+</div>
+
+---
+
+## Block 28 — Answer split (direct answer + illustration)
+
+`direct_answer_image` frontmatter switch — the GEO direct answer stays within ~8 of 12 grid columns; an on-topic image fills the free space. Text remains first in the DOM.
+
+<div class="seo-direct-answer answer-split">
+<div class="answer-split__text">
+<strong>Sample platform is a turnkey cloud-in-a-box. It packages an open-source engine and adds the commercial layer an operator needs: portals, billing, payments, and enterprise support — offered in editions matching distinct buyer profiles.</strong>
+</div>
+<figure class="answer-split__media">
+<img src="/images/cozystack-screenshot.png" alt="Sample platform console" loading="lazy">
+</figure>
 </div>
 
