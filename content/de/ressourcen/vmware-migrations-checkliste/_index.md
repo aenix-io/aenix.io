@@ -9,6 +9,8 @@ related_pages:
   - /de/produkte/aenix-platform/isp-edition/
   - /de/produkte/aenix-platform/enterprise-edition/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Die VMware-Migrations-Assessment-Checkliste von Aenix ist eine kostenlose 25-Punkt-Checkliste für Organisationen, die einen VMware-Ausstieg evaluieren. Sie strukturiert die interne Discovery über Inventar, Abhängigkeiten (vSAN, NSX, vCD, vRealize), Network- und Storage-Redesign, Multi-Tenancy-Modell, KI/GPU-Workloads, Souveränität und Compliance (DORA/NIS2) sowie operative Bereitschaft und Kosten-Trajektorie. Aenix nutzt dieselbe Checkliste während seiner 14-Tage-Platform-Readiness-Assessments. Sie richtet sich an Infrastruktur-Leads, Plattform-Engineers, CIO-Offices und Beschaffungs-Teams in früher Evaluierungs-Phase. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und liefert die Zielplattform für VMware-Migrationen auf Basis von KubeVirt, Cilium und LINSTOR.**
 quick_facts:
@@ -47,7 +49,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[Checkliste herunterladen (PDF)]
+<p class="lead-magnet-form__note">Checkliste herunterladen (PDF)</p>
 </div>
 
 ---
@@ -62,6 +64,16 @@ faq:
 - **Souveränität und Compliance** — DORA/NIS2-Alignment, Schlüssel-Custody
 - **Operative Bereitschaft** — Runbooks, On-Call, Knowledge Transfer
 - **Kosten-Trajektorie** — TCO-Inputs, Commitment-Ablaufe, Repatriation-Kandidaten
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>25-Punkt-Checkliste</b><div class="diagram__chips"><span>8 Bereiche</span><span>Kostenloses PDF</span></div></div>
+<div class="diagram__conn">führt zu</div>
+<div class="diagram__node diagram__node--brand"><b>14-Tage-Platform-Readiness-Assessment</b><div class="diagram__chips"><span>TCO-Modellierung</span><span>Architektur-Design</span></div></div>
+<div class="diagram__conn">Zielplattform</div>
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>VMs + Container auf einer Kubernetes-API</span></div></div>
+</div>
+</div>
 
 ---
 

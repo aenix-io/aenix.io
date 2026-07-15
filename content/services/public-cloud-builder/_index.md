@@ -8,6 +8,8 @@ related_pages:
   - /products/cozystack
   - /alternatives/vmware-alternatives
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Public cloud building is the engineering and go-to-market work of launching a customer-facing cloud product — VMs, Kubernetes, managed databases, object storage, and GPU — that external customers buy on a self-service, multi-tenant basis. It is for regional hosting providers, telecom operators, and specialty or sovereign cloud operators who want to move up-market without depending on a hyperscaler. Aenix builds these products on Cozystack, an open-source, Kubernetes-native platform (Apache 2.0) that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Aenix delivers architecture, WHMCS billing integration, a self-service customer portal, and pricing and go-to-market design through its productized Ænix Platform editions and consulting services.**
 quick_facts:
@@ -53,6 +55,9 @@ Aenix builds customer-facing public cloud products on Cozystack — the open-sou
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Who builds a customer-facing cloud product
 
 - **Hosting providers** moving up-market from VPS / dedicated servers
@@ -62,9 +67,24 @@ Aenix builds customer-facing public cloud products on Cozystack — the open-sou
 
 If you're a hyperscaler — this isn't relevant. If you're regional / vertical / specialty — Cozystack-based foundation is the realistic path.
 
+</div>
+</div>
+
 ---
 
 ## What we cover
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium eBPF</span><span>LINSTOR/DRBD</span></div></div>
+<div class="diagram__conn">powers</div>
+<div class="diagram__node diagram__node--brand"><b>Multi-tenant architecture</b><div class="diagram__chips"><span>Tenant CRD</span><span>Self-service portal</span><span>Service catalog</span></div></div>
+<div class="diagram__conn">billed via</div>
+<div class="diagram__node"><b>WHMCS billing</b><div class="diagram__chips"><span>Two modes</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Customer-facing cloud product</b><div class="diagram__chips"><span>VMs</span><span>K8s</span><span>Databases</span><span>S3</span><span>GPU</span></div></div>
+</div>
+</div>
 
 <div class="grid-2x2">
 
@@ -112,7 +132,9 @@ Public references: regional hosting providers running Ænix Platform ISP Edition
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Customer-facing cloud product playbook](/blog/2026/05/launch-customer-facing-cloud-product/)**
 - **[Industries — telco](/industries/telco/)** — telecom operator angle

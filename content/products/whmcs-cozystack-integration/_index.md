@@ -2,6 +2,8 @@
 title: "WHMCS Kubernetes & cloud — the Cozystack integration for hosters"
 description: "Sell Kubernetes clusters, managed databases, VMs, message brokers, object storage and GPU from WHMCS. The proprietary Aenix integration adds Cozystack services and billing to the panel you already run."
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "whmcs kubernetes"
 secondary_keywords: ["whmcs cloud", "sell kubernetes via whmcs", "kubernetes billing", "whmcs cozystack integration"]
 hreflang_de: /de/produkte/whmcs-cozystack-integration/
@@ -57,8 +59,23 @@ service:
   <a class="cta-secondary" href="/industries/hosting-providers/">For hosting providers →</a>
 </div>
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>WHMCS storefront</b><div class="diagram__chips"><span>Customer orders</span><span>Client area</span></div></div>
+<div class="diagram__conn">order placed</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix WHMCS module</b><div class="diagram__chips"><span>Provisioning</span><span>Metering</span></div></div>
+<div class="diagram__conn">provisions on demand</div>
+<div class="diagram__node"><b>Cozystack service catalog</b><div class="diagram__chips"><span>Kubernetes</span><span>Databases</span><span>VMs</span><span>Message brokers</span><span>S3 object storage</span><span>GPU</span></div></div>
+<div class="diagram__conn">usage metered back to</div>
+<div class="diagram__node"><b>WHMCS billing</b><div class="diagram__chips"><span>Metered invoices</span><span>One panel</span></div></div>
+</div>
+</div>
+
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## What your customers can self-serve from WHMCS
 
@@ -87,6 +104,9 @@ GPU-backed workloads for AI/ML and rendering — the fastest-growing line on mos
 </div>
 
 Provisioning, metering and invoicing all flow through your existing **WHMCS billing** — no second billing system to reconcile.
+
+</div>
+</div>
 
 ---
 

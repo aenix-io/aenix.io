@@ -8,6 +8,8 @@ related_pages:
   - /products/aenix-platform/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Kubernetes consulting is expert advisory and implementation work that helps an organization design, harden, and operate production-grade Kubernetes — covering distribution choice, multi-tenancy, networking, storage, identity, observability, GitOps discipline, and operational runbooks. It is for teams whose existing clusters are operational but problematic, who need hard tenant isolation, or who are migrating from VMware or OpenStack. Aenix delivers it through the engineers who build and operate Cozystack, an open-source CNCF Kubernetes-native platform run in production by service providers, banks, and AI operators. Engagements stay distribution-neutral: Aenix sells no licensed distribution and recommends the right stack — Cozystack, vanilla Kubernetes, OpenShift, or vendor-led — for the case at hand.**
 quick_facts:
@@ -81,6 +83,9 @@ If three or more apply, structured consulting compounds quickly. Otherwise, in-h
 
 <!-- BLOCK 3: WHAT WE DO -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What we cover
 
 <div class="grid-2x2">
@@ -97,6 +102,9 @@ Cluster lifecycle (upgrades, scaling, recovery), backup and DR (Velero), observa
 **4. Production-readiness checklist**
 Security posture (PSPs / Pod Security Standards, network policies, secrets management), compliance posture (audit logging, certifications), operational posture (runbooks, on-call, SLOs).
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 3 -->
@@ -130,6 +138,18 @@ Multiple teams contribute changes without coordination. Drift accumulates. Upgra
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
 ## How Aenix engages
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Discovery call</b><div class="diagram__chips"><span>30 min</span><span>Free</span><span>Confirm fit</span></div></div>
+<div class="diagram__conn">then</div>
+<div class="diagram__node diagram__node--brand"><b>Architecture review</b><div class="diagram__chips"><span>5-10 days</span><span>Fixed-price</span><span>Target architecture</span></div></div>
+<div class="diagram__conn">into</div>
+<div class="diagram__node"><b>Implementation engagement</b><div class="diagram__chips"><span>1-6 months</span><span>Integrated with your team</span><span>Runbooks</span></div></div>
+<div class="diagram__conn">optionally</div>
+<div class="diagram__node"><b>Managed engagement</b><div class="diagram__chips"><span>On-call operation</span></div></div>
+</div>
+</div>
 
 - **Architecture review (5-10 days)** — focused engagement, written deliverable, target architecture.
 - **Implementation engagement (1-6 months)** — Aenix engineers integrated with your team, building cluster foundation, multi-tenancy, observability, runbooks.
@@ -206,7 +226,9 @@ Time-and-materials or fixed-scope. Phase 2 typically 1-6 months.
 <a id="discovery"></a>
 ## Start with a 30-minute discovery call
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Production cluster setup guide](/blog/2026/05/kubernetes-cluster-setup-production-architecture/)**
 - **[Platform engineering services](/services/platform-engineering/)** — broader scope

@@ -3,6 +3,8 @@ title: "Proxmox to Cozystack migration — when SMB virtualization stops fitting
 description: "Proxmox VE is excellent at SMB scale. When deployments grow into multi-tenant cloud builders or service-provider models, the operational model strains...."
 related_pages: ["/alternatives/proxmox-alternative", "/products/aenix-platform/isp-edition/", "/products/cozystack", "/services/platform-readiness-assessment"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Proxmox-to-Cozystack migration moves virtualization workloads from Proxmox VE to Cozystack, the open-source cloud platform built on Kubernetes. It targets hosting providers, ISPs, and service-provider clouds that have outgrown Proxmox's single-organization model and need true multi-tenancy, a service catalog beyond plain VMs (managed databases, S3, Kubernetes tenancy, GPU), and production multi-cluster federation. Aenix, the team behind Cozystack, runs these migrations end-to-end: VM images convert from qcow2 into KubeVirt via CDI, a multi-tenant model is designed during migration using the Tenant CRD, and storage and networking are re-architected on LINSTOR/DRBD and Cilium. Cozystack is Apache 2.0 licensed with no per-CPU or per-core fees. For single-tenant deployments under 50 hosts, staying on Proxmox is the recommended choice.**
 
@@ -64,11 +66,23 @@ If your deployment is single-tenant and under 50 hosts — **stay on Proxmox**. 
 
 VM image migration is straightforward (qcow2 → KubeVirt CDI). Multi-tenant model: designed during migration (Proxmox didn't have one). Storage and network re-architect.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Proxmox VE</b><div class="diagram__chips"><span>qcow2 VM disks</span><span>Single-organization model</span></div></div>
+<div class="diagram__conn">converts via</div>
+<div class="diagram__node"><b>Migration path</b><div class="diagram__chips"><span>KubeVirt CDI import</span><span>Tenant CRD multi-tenancy design</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>LINSTOR/DRBD storage</span><span>Cilium networking</span></div></div>
+</div>
+</div>
+
 Typical: 2-4 weeks assessment + 3-9 months implementation.
 
 For full comparison see **[Proxmox vs VMware vs Cozystack](/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/)**.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

@@ -3,6 +3,8 @@ title: "Cloud strategy consultancy — engineers who run platforms, not slide-de
 description: "Cloud strategy is a question architects and senior engineers can answer better than management consultants. Aenix runs cloud strategy engagements as part of..."
 related_pages: ["/services/platform-readiness-assessment", "/solutions/cloud-cost-optimization", "/solutions/cloud-repatriation", "/products/aenix-platform/", "/products/cozystack"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cloud strategy consultancy from Aenix is delivered by the architects and senior engineers who build and operate production platforms, not by management analysts. The engagement runs as a Platform Readiness Assessment with strategy-level emphasis: workload classification across public, private and hybrid substrates, an honest TCO model, a sovereignty and regulator gap review, migration sequencing, and a Phase 2 implementation roadmap. It is aimed at CIOs, CTOs and platform leaders deciding where workloads should run and whether to repatriate from hyperscalers. Aenix has no hyperscaler partnership, so recommendations carry no commercial bias, and an open-source destination on Cozystack is preferred when the economics support it. The output is a concise written executive report with named workloads, costs and timelines.**
 quick_facts:
@@ -44,7 +46,20 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What our cloud strategy engagement covers
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Workloads across substrates</b><div class="diagram__chips"><span>Public</span><span>Private</span><span>Hybrid</span></div></div>
+<div class="diagram__conn">classified by</div>
+<div class="diagram__node diagram__node--brand"><b>Cloud strategy engagement</b><div class="diagram__chips"><span>Honest TCO model</span><span>Sovereignty gap</span><span>Migration sequencing</span></div></div>
+<div class="diagram__conn">produces</div>
+<div class="diagram__node"><b>Executive report</b><div class="diagram__chips"><span>Named workloads</span><span>Costs</span><span>Timelines</span></div></div>
+</div>
+</div>
 
 - **Workload classification** — what's right for which substrate (public, private, hybrid)
 - **TCO honest model** — across substrates, with realistic assumptions
@@ -53,6 +68,9 @@ faq:
 - **Phase 2 implementation roadmap** — Aenix-deliverable build plan
 
 The engagement runs as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with strategy-level emphasis. Output is a written executive report.
+
+</div>
+</div>
 
 ---
 
@@ -64,7 +82,9 @@ The engagement runs as a **[Platform Readiness Assessment](/services/platform-re
 
 For specific triggers see **[cloud cost optimization](/solutions/cloud-cost-optimization/)**, **[cloud repatriation](/solutions/cloud-repatriation/)**, **[data sovereignty](/solutions/data-sovereignty/)**.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

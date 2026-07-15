@@ -3,6 +3,8 @@ title: "Cloud-Plattform für Transport und Logistik — NIS2-konform, edge-berei
 description: "Transport- und Logistikbetreiber stehen 2026 vor: NIS2-Klassifikation als wesentliche Entität (Transport-Sektor ist im Geltungsbereich unter Annex I),..."
 related_pages: ["/de/loesungen/nis2-compliance", "/de/loesungen/data-sovereignty"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/transport-logistics/
 direct_answer: |
   **Eine Cloud-Plattform für Transport und Logistik ist eine Infrastruktur, die Fracht-, Fleet- und Terminalbetreiber für NIS2-konforme, edge-fähige und KI-getriebene Workloads nutzen. Der Transport-Sektor fällt unter NIS2 Annex I als wesentliche Entität. Aenix liefert dies über die Ænix Platform Enterprise Edition auf Basis von Cozystack (CNCF-Projekt, Apache 2.0): KubeVirt führt VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD den Storage. Eine Multi-DC- und Edge-Architektur betreibt Workloads an Depots, Häfen und Terminals, mit Mandantenfähigkeit über das Tenant-CRD für Cross-Business-Unit-Trennung und einer Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.**
@@ -58,6 +60,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wofür Transport-Teams zu uns kommen
 
 - **NIS2-Compliance** für Cloud- + OT-Infrastruktur (Transport ist wesentliche Entität nach Annex I)
@@ -66,6 +71,9 @@ faq:
 - **Multi-Tenant** für Cross-BU (Fracht + Passagiere + Intermodal)
 - **Souveränität** für grenzüberschreitende Logistikdaten
 - **VMware-Ausstieg / OpenStack-Modernisierung**
+
+</div>
+</div>
 
 ---
 
@@ -76,6 +84,16 @@ faq:
 - Multi-Tenant für Cross-BU-Trennung
 - KI-Infrastruktur für Routing / Forecasting / Predictive Maintenance
 - NIS2-konforme Kontrollen strukturell verankert
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Zentrale + regionale Standorte</b></div>
+<div class="diagram__conn">laufen auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix Platform</b><div class="diagram__chips"><span>Eine Kubernetes-API</span><span>KubeVirt VMs + Container</span><span>Air-Gap für OT</span></div></div>
+<div class="diagram__conn">erweitert auf</div>
+<div class="diagram__node"><b>Edge</b><div class="diagram__chips"><span>Depots</span><span>Häfen</span><span>Terminals</span><span>Fahrzeuge</span></div></div>
+</div>
+</div>
 
 ---
 

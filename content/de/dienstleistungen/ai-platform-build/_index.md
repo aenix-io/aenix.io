@@ -7,6 +7,8 @@ related_pages:
   - /de/produkte/cozystack
   - /de/branchen/finanzdienstleistungen
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **AI Platform Build ist der End-to-End-Service von Aenix für den Aufbau dedizierter KI-Infrastruktur für KI-Startups und KI-lastige Unternehmen. Statt Inferenz dauerhaft zu Hyperscaler-Preisen zu mieten, baut Aenix on-premises- oder colocation-basierte Plattformen mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), Modell-Deployment-Workflows (vLLM, Triton), Vector-DB- und Object-Storage-Integration sowie Souveränitätskontrollen. Für nachhaltige Workloads wie 24/7-Inferenz, Fine-Tuning und Training amortisiert sich dedizierte Infrastruktur typischerweise nach rund einem Jahr Betrieb. Die Plattform basiert auf Cozystack (CNCF-Projekt, Apache 2.0), das KubeVirt, Cilium und LINSTOR auf einer Kubernetes-API vereint.**
 quick_facts:
@@ -44,10 +46,13 @@ faq:
 > **Passt zu:** **[Ænix Platform AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), fertige Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen für regulierte KI-Workloads. Kostenloser [Sovereign AI Decision Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Wer baut dedizierte KI-Plattformen
 
@@ -56,6 +61,9 @@ faq:
 - **Öffentlicher Sektor** mit KI auf Bürgerdaten
 - **Gesundheitswesen** mit KI auf medizinischen Daten
 - **GPU-lastige Produkt-Unternehmen** mit Multi-Tenant-Anforderungen
+
+</div>
+</div>
 
 ---
 
@@ -69,6 +77,16 @@ faq:
 - Souveränitätskontrollen (kundenkontrollierte Schlüssel)
 - Observability für KI-Workloads
 - Operations-Team-Training
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Dedizierte KI-Plattform</b><div class="diagram__chips"><span>Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell)</span><span>Modell-Deployment (vLLM, Triton)</span><span>Vector-DB + Object-Storage</span></div></div>
+<div class="diagram__conn">basiert auf</div>
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>CNCF-Projekt</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">vereint</div>
+<div class="diagram__node"><b>KubeVirt, Cilium und LINSTOR</b><div class="diagram__chips"><span>auf einer Kubernetes-API</span><span>Mandantenfähigkeit über Tenant-CRD</span></div></div>
+</div>
+</div>
 
 ---
 

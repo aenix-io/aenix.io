@@ -12,7 +12,20 @@ language: "en"
   <a class="cta-secondary" href="/case-studies/">See case studies →</a>
 </div>
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Your sector</b><div class="diagram__chips"><span>Highly regulated</span><span>Cloud / hosting / MSP</span><span>Industrial / education</span><span>SMB / mid-market</span></div></div>
+<div class="diagram__conn">carries</div>
+<div class="diagram__node"><b>Regulatory trigger</b><div class="diagram__chips"><span>DORA</span><span>NIS2</span><span>Sovereignty mandates</span><span>Sectoral data laws</span></div></div>
+<div class="diagram__conn">mapped to</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform edition</b><div class="diagram__chips"><span>Enterprise</span><span>Public Cloud</span><span>AI/ML</span><span>ISP</span></div></div>
+</div>
+</div>
+
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Browse industries
 
@@ -40,6 +53,9 @@ language: "en"
 ### SMB / mid-market
 
 - **[SMB / mid-market](/industries/smb-mid-market/)** — Smaller organizations consuming cloud as a product. Pairs with: ISP Edition (via service-provider partner) or Pure Cozystack with Ænix Support.
+
+</div>
+</div>
 
 ---
 

@@ -3,6 +3,8 @@ title: "SRE consulting — site reliability practices for production at scale"
 description: "Site Reliability Engineering as a discipline applies software engineering to operations. The Aenix SRE engagement covers SLOs, error budgets, incident..."
 related_pages: ["/services/devops-consulting", "/services/platform-engineering", "/services/platform-readiness-assessment", "/products/aenix-platform/"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **SRE consulting from Aenix applies software engineering discipline to operations so production stays reliable as it scales. The engagement covers SLO design, error-budget frameworks, incident response with blameless post-mortems, reliability-focused observability, capacity planning, and toil reduction. It is aimed at platform, infrastructure, and operations teams running Kubernetes and Cozystack-based environments who need measurable reliability rather than ad-hoc firefighting. Aenix builds these practices into the platform foundation instead of bolting them on, and can pair the work with any Ænix Platform edition or deliver it stand-alone. Engagement modes range from a 5-10 day maturity assessment, to a 3-9 month implementation embedded with your team, to a managed engagement where Aenix acts as an on-call partner.**
 quick_facts:
@@ -44,7 +46,20 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What our SRE engagement covers
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Reliability goals</b><div class="diagram__chips"><span>Production at scale</span><span>Measurable reliability</span></div></div>
+<div class="diagram__conn">addressed by</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix SRE engagement</b><div class="diagram__chips"><span>SLOs</span><span>Observability</span><span>Incident response</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Reliable operation at scale</b><div class="diagram__chips"><span>Error budgets</span><span>Blameless post-mortems</span></div></div>
+</div>
+</div>
 
 - **SLO design** — collaboratively with product teams; per-service SLOs aligned with user impact
 - **Error budget framework** — budget consumption drives prioritization
@@ -55,6 +70,9 @@ faq:
 
 For broader DevOps scope see **[DevOps consulting](/services/devops-consulting/)**. For platform engineering scope see **[platform engineering](/services/platform-engineering/)**.
 
+</div>
+</div>
+
 ---
 
 ## Engagement modes
@@ -63,7 +81,9 @@ For broader DevOps scope see **[DevOps consulting](/services/devops-consulting/)
 - Implementation (3-9 months) — integrated with your team, building practices
 - Managed engagement — Aenix as on-call partner
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

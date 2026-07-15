@@ -3,6 +3,8 @@ title: "VMware cost calculator — model your post-Broadcom savings"
 description: "Free VMware cost calculator: enter your cores and renewal price, see annual savings, 3-year net, and migration payback when you move to an open platform."
 type: "page"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 images: ["img/og/og-vmware-cost-calculator.png"]
 hreflang_de: /de/ressourcen/vmware-kostenrechner/
 primary_keyword: "vmware cost calculator"
@@ -70,6 +72,16 @@ The license line you pay VMware/Broadcom disappears on an open platform (Apache 
 - **Net saving per year** = VMware annual − Aenix annual.
 - **3-year net saving** = net annual × 3 − one-time migration cost.
 - **Payback** = migration cost ÷ monthly net saving.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>VMware cost per year</b><div class="diagram__chips"><span>Cores × cost per core/year</span></div></div>
+<div class="diagram__conn">compared with</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix support per year</b><div class="diagram__chips"><span>Apache 2.0 platform</span><span>No per-core fee</span></div></div>
+<div class="diagram__conn">yields</div>
+<div class="diagram__node"><b>Net saving</b><div class="diagram__chips"><span>3-year net</span><span>Payback time</span></div></div>
+</div>
+</div>
 
 These are deliberately simple inputs so the output is defensible. A full TCO includes power, hardware refresh, staff and the workloads you keep in the cloud — we model those with you on a call.
 ---

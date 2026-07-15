@@ -18,6 +18,19 @@ hreflang_en: /migration/
 
 ---
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Source-Plattformen</b><div class="diagram__chips"><span>VMware</span><span>OpenStack</span><span>Proxmox</span><span>CloudStack</span></div></div>
+<div class="diagram__conn">bewerten</div>
+<div class="diagram__node"><b>Migrations-Pfad</b><div class="diagram__chips"><span>Kohorten-basiert</span><span>Parallel-Run-validiert</span></div></div>
+<div class="diagram__conn">wechseln zu</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>ISP Edition</span><span>Enterprise Edition</span><span>Public Cloud Edition</span></div></div>
+</div>
+</div>
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Migrations-Hubs durchsuchen
 
 ### VMware
@@ -30,6 +43,9 @@ Der größte einzelne Migrations-Trigger 2026 — Broadcom-Subscription-Druck + 
 ### OpenStack, Proxmox, CloudStack
 
 Modernisierungs-Patterns für jede Plattform — siehe entsprechende Migrations-Hubs für Details.
+
+</div>
+</div>
 
 ---
 

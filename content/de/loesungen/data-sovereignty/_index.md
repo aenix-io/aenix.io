@@ -4,6 +4,8 @@ description: "Datensouveränität ist 2026 keine Beschaffungsklausel mehr. DORA,
 type: "page"
 related_pages: ["/de/loesungen/dora-compliance", "/de/produkte/private-cloud"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /solutions/data-sovereignty/
 direct_answer: |
   **Datensouveränität bezeichnet die nachweisbare Kontrolle darüber, in welcher Jurisdiktion Daten gespeichert und verarbeitet werden — auf jeder Schicht, einschließlich Produktion, Backups, Observability und CI/CD-Artefakten. Sie ist 2026 eine harte regulatorische Anforderung aus DORA, NIS2, GDPR, sektoralen Datenresidenzregeln und souveränen Cloud-Mandaten der EU-Mitgliedstaaten. Aenix unterstützt regulierte Organisationen — Banken, öffentlicher Sektor, Gesundheitswesen, Telekommunikation — dabei, eine Souveränitätsposition von der Behauptung in eine nachweisbare Architektur zu überführen. Die Ænix Platform baut auf Cozystack (CNCF-Projekt, Apache 2.0) auf und ermöglicht kundenkontrollierte Schlüssel auf jeder Datenschicht sowie eine Air-Gap-Option für vollständige Datenresidenz.**
@@ -80,6 +82,9 @@ Wenn Sie einen konkreten Regulator, eine sektorale Regel oder eine Beschaffungsk
 
 <!-- BLOCK 3: WHAT SOVEREIGNTY ACTUALLY REQUIRES -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Was "Datensouveränität" tatsächlich von Ihrer Architektur verlangt
 
 <div class="grid-2x2">
@@ -99,6 +104,9 @@ Audit-Trails müssen in regulatorenkonformen Formaten exportierbar, gemäß den 
 </div>
 
 Für praktische Details mit kontrollebenengenauen Prüfungen siehe **[Datenresidenz-Anforderungen 2026](/de/blog/2026/05/datenresidenz-anforderungen-2026/)**.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -133,6 +141,16 @@ Diese Lücken sind bei Institutionen, die sich für souveränitätskonform halte
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
 ## Wie Aenix hilft
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Datensouveränität</b><div class="diagram__chips"><span>DORA, NIS2, GDPR</span></div></div>
+<div class="diagram__conn">verlangt</div>
+<div class="diagram__node"><b>Nachweisbare Datenresidenz auf jeder Schicht</b><div class="diagram__chips"><span>Produktion, Backup, Observability, CI/CD</span></div></div>
+<div class="diagram__conn">ermöglicht durch</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform auf Cozystack</b><div class="diagram__chips"><span>kundenkontrollierte Schlüssel · Air-Gap-Option</span></div></div>
+</div>
+</div>
 
 Das Datensouveränitäts-Engagement läuft als Teil unseres **[Platform Readiness Assessments](/de/dienstleistungen/platform-readiness-assessment/)**, mit dem Arbeitsstrang zur Souveränitäts- und Regulator-Lücke als primärem Fokus. Das 14- oder 28-tägige Engagement bringt hervor:
 

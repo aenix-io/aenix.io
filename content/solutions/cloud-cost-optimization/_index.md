@@ -10,6 +10,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cloud cost optimization is the practice of reducing public-cloud spend by eliminating waste, right-sizing resources, tuning commitments, and deciding which workloads belong in the hyperscaler versus on infrastructure you control. It is for organizations with seven-figure annual cloud bills, sustained predictable workloads, and a cost trajectory that worries finance. Aenix runs a structured, vendor-neutral cost engagement (14 or 28 days) that produces an honest TCO model, a quantified cost-leak inventory, right-sizing recommendations, and a 12-month spend trajectory. Aenix holds no hyperscaler partnership, so recommendations are not shaped by partnership economics. When the math favours leaving cloud, Cozystack — the open-source Kubernetes-native platform behind Aenix — provides a customer-controlled destination, typically cutting TCO 40-70% on sustained workloads.**
 quick_facts:
@@ -141,7 +143,22 @@ The honest engagement names which of these apply to your situation, and tells yo
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## How Aenix helps
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Public-cloud spend</b><div class="diagram__chips"><span>Underutilized commitments</span><span>Idle resources</span><span>Egress charges</span></div></div>
+<div class="diagram__conn">assessed by</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix cost engagement</b><div class="diagram__chips"><span>Honest TCO model</span><span>Cost-leak inventory</span><span>Right-sizing</span></div></div>
+<div class="diagram__conn">fix in-cloud or move</div>
+<div class="diagram__node"><b>Optimized estate</b><div class="diagram__chips"><span>Tuned commitments</span><span>Repatriation candidates</span></div></div>
+<div class="diagram__conn">typically cuts</div>
+<div class="diagram__node"><b>Predictable spend</b><div class="diagram__chips"><span>40-70% TCO reduction</span><span>Infrastructure you control</span></div></div>
+</div>
+</div>
 
 The cost engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with the cost-and-cloud-spend workstream as primary focus. The 14- or 28-day engagement produces:
 
@@ -153,6 +170,9 @@ The cost engagement runs as part of our **[Platform Readiness Assessment](/servi
 - **FinOps owner / process plan** — who runs the engine after we leave.
 
 Delivered by Aenix engineers who have built and operated production platforms across the EU and Central Asia.
+
+</div>
+</div>
 
 <!-- /BLOCK 5 -->
 

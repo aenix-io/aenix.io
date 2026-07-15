@@ -3,6 +3,10 @@ title: "Ænix Platform ISP Edition"
 description: "Ænix Platform ISP Edition: turnkey Kubernetes-native cloud platform for hosting providers and MSPs, with WHMCS billing and VMware/OpenStack migration."
 type: "page"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer_image: "/images/cozystack-screenshot.png"
+direct_answer_image_alt: "Ænix Platform console — ISP Edition"
 hreflang_de: /de/produkte/aenix-platform/isp-edition/
 direct_answer: |
   **Ænix Platform ISP Edition is a turnkey, Kubernetes-native cloud platform for small and mid-size hosting providers, MSPs, regional cloud providers, and data centres that want to launch or modernize a multi-tenant cloud product without building it from scratch. It is the productized, supported distribution of Cozystack (an Apache 2.0 CNCF project created and maintained by Aenix) and adds the commercial surfaces a hosting business needs: WHMCS-integrated billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage, and GPU workloads. Aenix delivers it with migration tooling and expertise from VMware, OpenStack, Virtuozzo, and OpenNebula, getting providers production-ready in weeks rather than months.**
@@ -129,7 +133,10 @@ Aenix delivers ISP Edition migrations with productized modules and engagement ex
 - **From Virtuozzo / OpenNebula** — modernizing legacy hosting stacks
 - **From custom panels** — consolidating multi-vendor stacks under one platform
 
-[VMware migration hub →](/migration/vmware/) | [OpenStack migration hub →](/migration/openstack/)
+<div class="cta-row">
+  <a class="cta-secondary" href="/migration/vmware/">VMware migration hub →</a>
+  <a class="cta-secondary" href="/migration/openstack/">OpenStack migration hub →</a>
+</div>
 
 ---
 

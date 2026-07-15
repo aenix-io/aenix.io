@@ -102,6 +102,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
+  /* ---- Answer clamp (Show more) ---- */
+  // Progressive enhancement: the full GEO answer is always in the DOM
+  // (crawlers and no-JS visitors read all of it). Only when the text
+  // actually overflows ~7 lines do we clamp it and reveal a toggle.
+  document.querySelectorAll('.answer-clamp').forEach(clamp => {
+    const body = clamp.querySelector('.answer-clamp__body');
+    const btn = clamp.querySelector('.answer-clamp__toggle');
+    if (!body || !btn) return;
+    clamp.classList.add('is-clampable');
+    requestAnimationFrame(() => {
+      // If clamping does not actually hide anything, drop it and show full text.
+      if (body.scrollHeight - body.clientHeight < 6) {
+        clamp.classList.remove('is-clampable');
+        return;
+      }
+      const label = btn.querySelector('.answer-clamp__label');
+      btn.addEventListener('click', () => {
+        const open = clamp.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (label) label.textContent = open ? 'Show less' : 'Show more';
+      });
+    });
+  });
+
   /* ---- Desktop dropdown keyboard support ---- */
   // Panels open via :focus-within (CSS); Escape moves focus back to the
   // toggle and drops it so the panel closes without tabbing through

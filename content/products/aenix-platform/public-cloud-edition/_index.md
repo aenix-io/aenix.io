@@ -3,6 +3,10 @@ title: "Ænix Platform Public Cloud Edition"
 description: "Turnkey multi-hypervisor public-cloud control plane for large operators, banks, and telcos: multi-region, billing, payments, and a brandable portal."
 type: "page"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer_image: "/images/cozystack-screenshot.png"
+direct_answer_image_alt: "Ænix Platform console — Public Cloud Edition"
 direct_answer: |
   **Ænix Platform Public Cloud Edition is a turnkey public-cloud control plane for large operators — public-cloud companies, big banks running their own internal cloud, and national telcos launching or scaling sovereign cloud products. It is built on Cozystack, the open-source CNCF project Aenix created and maintains, and adds a multi-region control plane, full billing back-end and front-end, payment integrations, a brandable customer portal, and operator-grade UX on top. It is multi-hypervisor (native KubeVirt VMs plus integration with existing VMware, OpenStack, OpenNebula, and OpenShift estates) and multi-tenant via the Cozystack Tenant CRD, so operators can extend an existing cloud estate and consolidate gradually rather than rip and replace.**
 quick_facts:
@@ -41,6 +45,7 @@ faq:
   <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
+
 ---
 
 ## What's included in Public Cloud Edition

@@ -90,6 +90,9 @@ If your situation matches at least three of those, repatriation deserves a struc
 
 <!-- BLOCK 3: FOUR REASONS TEAMS REPATRIATE IN 2026 -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Four reasons teams repatriate in 2026
 
 <div class="grid-2x2">
@@ -110,6 +113,9 @@ GenAI, inference, and analytics workloads against regulated data classes face tw
 **4. Operational and architectural control**
 Hyperscaler-proprietary services lock the architecture into one vendor's roadmap. Repatriation gives the platform team back the ability to choose, evolve, and audit the underlying components.
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 3 -->
@@ -148,7 +154,22 @@ These failure modes are independent of cloud provider, vendor, or destination pl
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## How Aenix helps
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Public cloud</b><div class="diagram__chips"><span>AWS</span><span>Azure</span><span>GCP</span></div></div>
+<div class="diagram__conn">assessed by</div>
+<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment</b><div class="diagram__chips"><span>Honest TCO model</span><span>Workload ranking</span><span>Destination architecture</span></div></div>
+<div class="diagram__conn">repatriate now / later / stay</div>
+<div class="diagram__node"><b>Cozystack private cloud</b><div class="diagram__chips"><span>VMs</span><span>Containers</span><span>One Kubernetes API</span></div></div>
+<div class="diagram__conn">on</div>
+<div class="diagram__node"><b>Bare metal you own</b><div class="diagram__chips"><span>Private cloud, hybrid, or on-prem</span></div></div>
+</div>
+</div>
 
 The repatriation engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**, with the cost-and-cloud-spend workstream as primary focus. The 14- or 28-day engagement produces:
 
@@ -161,6 +182,9 @@ The repatriation engagement runs as part of our **[Platform Readiness Assessment
 Delivered by Aenix engineers who have built and operated production platforms for service providers, banks, and AI operators across the EU and Central Asia. The report's bias is toward what we can stand behind technically.
 
 {{< factoid number="30-60%" label="better unit economics on-prem or in private cloud for steady-state workloads, once egress, idle resources, and underused commitments are counted honestly" >}}
+
+</div>
+</div>
 
 <!-- /BLOCK 5 -->
 

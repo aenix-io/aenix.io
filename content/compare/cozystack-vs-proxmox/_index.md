@@ -3,6 +3,8 @@ title: "Cozystack vs Proxmox VE — head-to-head for SMB and multi-tenant scale"
 description: "Different scales. Different design centers. Both open source."
 related_pages: ["/alternatives/proxmox-alternative", "/products/aenix-platform/isp-edition/", "/products/cozystack"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack and Proxmox VE are both open-source virtualization platforms, but they target different scales. Proxmox VE (AGPLv3) pairs KVM and LXC for SMB virtualization, labs, and single-tenant deployments under roughly 50 hosts. Cozystack (Apache 2.0) runs KubeVirt on Kubernetes, with a Tenant CRD for hard multi-tenancy, first-class managed databases and S3 object storage, and advanced GPU support (vGPU, MIG, time-slicing). It suits service providers and regulated multi-tenant environments that have outgrown Proxmox's design center. Aenix, the team behind Cozystack, sells the productized Ænix Platform plus services, including the ISP Edition cloud-in-a-box for hosting providers and regional clouds.**
 quick_facts:
@@ -37,6 +39,8 @@ faq:
 
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox's design center. From €1.3k/month support tier.
 
+<div class="compare-elevated compare-elevated--col3">
+
 | | Proxmox VE | Cozystack |
 |---|---|---|
 | **License** | AGPLv3 | Apache 2.0 |
@@ -48,11 +52,15 @@ faq:
 | **Best scale** | <50 hosts, single-tenant | Multi-tenant, service-provider |
 | **Best for** | SMB virtualization, labs | Service providers, regulated multi-tenant |
 
+</div>
+
 For teams under ~50 hosts on single-tenant deployments — Proxmox is the right answer. Cozystack starts paying off above that scale and where multi-tenancy matters.
 
 See **[Proxmox alternative](/alternatives/proxmox-alternative)** for migration guidance and **[Proxmox vs VMware vs Cozystack article](/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/)** for full comparison.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

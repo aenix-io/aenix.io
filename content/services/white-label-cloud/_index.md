@@ -3,6 +3,8 @@ title: "White label cloud — branded cloud product for MSPs and resellers"
 description: "Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the..."
 related_pages: ["/services/public-cloud-builder", "/products/aenix-platform/isp-edition/", "/partners/", "/products/cozystack"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **White-label cloud is a branded cloud product that a Managed Service Provider (MSP), hosting reseller, or system integrator sells under its own identity while running on infrastructure built and operated for it. Aenix builds these end-to-end on Cozystack, the open-source CNCF platform that runs virtual machines and containers on one Kubernetes API. A typical engagement delivers a multi-tenant platform with a nested Tenant CRD reseller-customer hierarchy, a customer-facing portal (cozyportal) branded per reseller, WHMCS-integrated billing, and a service catalog of VMs, Kubernetes, managed databases, S3, and GPU. It suits MSPs, hosting resellers, integrators, and regulated-vertical consultancies that want hyperscaler-competitive economics without per-CPU software licensing or vendor lock-in.**
 
@@ -57,7 +59,22 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What we deliver
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>You: MSP / reseller</b><div class="diagram__chips"><span>MSPs</span><span>Hosting resellers</span><span>System integrators</span></div></div>
+<div class="diagram__conn">get a platform built on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Branded cozyportal</span><span>WHMCS billing</span><span>Tenant CRD hierarchy</span></div></div>
+<div class="diagram__conn">branded as</div>
+<div class="diagram__node"><b>Your cloud offering</b><div class="diagram__chips"><span>VMs</span><span>Kubernetes</span><span>Managed databases</span><span>S3</span><span>GPU</span></div></div>
+<div class="diagram__conn">sold to</div>
+<div class="diagram__node"><b>Your customers</b><div class="diagram__chips"><span>Under your identity</span></div></div>
+</div>
+</div>
 
 - **Multi-tenant Cozystack platform** with reseller-customer hierarchy (nested Tenant CRD)
 - **Branded customer-facing portal** — cozyportal customizable per reseller
@@ -65,6 +82,9 @@ faq:
 - **Service catalog** — VMs, K8s, managed databases, S3, GPU
 - **Reseller / sub-reseller model** — for multi-tier partner channels
 - **Operations workflow** — customer support, SLA management, observability per tenant
+
+</div>
+</div>
 
 ---
 
@@ -76,7 +96,9 @@ faq:
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[White-label cloud MSP playbook](/blog/2026/05/white-label-cloud-msp-reseller-playbook/)**
 - **[Public cloud builder](/services/public-cloud-builder/)** — broader scope (your own cloud brand)

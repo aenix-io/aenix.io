@@ -3,6 +3,8 @@ title: "VMware Alternative — Open Source, souverän, Kubernetes-nativ"
 description: "Cozystack ist die moderne Open-Source-Alternative zu VMware in 2026 — eine einzige Plattform, die vSphere, ESXi, vCenter, vSAN, NSX, vCloud Director und den..."
 related_pages: ["/de/alternativen/proxmox-alternative", "/de/produkte/private-cloud", "/de/migration/vmware"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack ist die Open-Source-Alternative zu VMware für Organisationen, die einen produktionsreifen Ersatz für den VCF-Stack auf eigener Hardware benötigen — nicht ein Downgrade auf Community-Tooling. Eine Kubernetes-native Plattform betreibt virtuelle Maschinen (über KubeVirt), Container, verwaltete Datenbanken, S3-Object-Storage und GPU-Workloads unter einer einzigen Steuerungsebene und ersetzt vSphere/ESXi, vCenter, vSAN, NSX und vCloud Director. Cozystack ist ein CNCF-Projekt unter Apache-2.0-Lizenz ohne CPU- oder Core-basierte Lizenzierung. Aenix ist das Unternehmen dahinter und liefert die produktisierte Ænix Platform sowie Migrations-, Support- und Betriebsdienste für einen sicheren VMware-Ausstieg in der DACH-Region.**
 quick_facts:
@@ -41,6 +43,16 @@ Nach der Broadcom-Übernahme ist die VMware-Rechnung für viele Kunden unkalkuli
 
 Cozystack ist die Open-Source-Alternative für Organisationen, die einen echten Produktionsersatz brauchen — nicht ein Downgrade auf Community-Tooling. Es betreibt virtuelle Maschinen, Container, verwaltete Datenbanken, Object Storage und GPU-Workloads auf Ihrer eigenen Hardware unter einer Kubernetes-nativen Steuerungsebene. CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Kubernetes Certified Distribution, OpenSSF Best Practices.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>VMware VCF-Stack</b><div class="diagram__chips"><span>Broadcom-Übernahme</span><span>Subscription-only</span><span>2-5× Verlängerung</span></div></div>
+<div class="diagram__conn">Migration</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">ermöglicht</div>
+<div class="diagram__node"><b>sicherer VMware-Ausstieg</b><div class="diagram__chips"><span>eigene Hardware</span><span>DORA</span><span>NIS2</span></div></div>
+</div>
+</div>
+
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter (häufigster 2026-Trigger — VMware-Cloud-Director-Ausstieg); **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen (VCF-Ausstieg); **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 Aenix ist das Unternehmen hinter Cozystack. Wir bauen die Plattform, betreiben Produktionsbereitstellungen für Service Provider, Banken und Telekommunikationsbetreiber und stellen das Migrations-, Support- und Betriebsmodell bereit, das einen sicheren VMware-Ausstieg ermöglicht.
@@ -48,7 +60,7 @@ Aenix ist das Unternehmen hinter Cozystack. Wir bauen die Plattform, betreiben P
 Verfügbar in der gesamten DACH-Region. Deutschsprachiges Vertriebs- und Support-Team.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">30-minütiges Architektur-Review buchen</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">30-minütiges Architektur-Review buchen</a>
   <a class="cta-secondary" href="/de/migration/vmware">VMware-Migration →</a>
 </div>
 
@@ -83,6 +95,9 @@ KubeVirt und der Kubernetes-native Virtualisierungsstack haben eine Community vo
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## VMware → Cozystack Architektur-Mapping
 
 | VMware-Komponente | Cozystack-Äquivalent |
@@ -94,6 +109,9 @@ KubeVirt und der Kubernetes-native Virtualisierungsstack haben eine Community vo
 | vCloud Director | Tenant CRD + cozyportal |
 | Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
 | VMware Cloud Foundation | Cozystack |
+
+</div>
+</div>
 
 ---
 

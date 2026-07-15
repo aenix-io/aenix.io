@@ -14,6 +14,18 @@ language: "en"
 
 ---
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Source platforms</b><div class="diagram__chips"><span>VMware</span><span>OpenStack</span><span>Proxmox</span><span>CloudStack</span></div></div>
+<div class="diagram__conn">assess</div>
+<div class="diagram__node"><b>Migration path</b><div class="diagram__chips"><span>Readiness Assessment</span><span>Pilot cohort</span><span>Rolling migration</span></div></div>
+<div class="diagram__conn">cutover onto</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>LINSTOR</span><span>Cilium</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Outcome</b><div class="diagram__chips"><span>Faster feature velocity</span><span>Smaller ops team</span></div></div>
+</div>
+</div>
+
 ## Browse migration hubs
 
 ### VMware
@@ -51,6 +63,9 @@ Legacy CloudStack modernization patterns.
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Migration tooling included
 
 Ænix Platform includes productized migration modules for the most common source platforms:
@@ -62,6 +77,9 @@ Legacy CloudStack modernization patterns.
 - **CloudStack** → Kubernetes / KubeVirt
 
 For non-standard environments, Aenix engineering services build custom migration tooling as part of the engagement.
+
+</div>
+</div>
 
 ---
 

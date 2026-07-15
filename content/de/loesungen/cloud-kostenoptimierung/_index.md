@@ -4,6 +4,8 @@ description: "Public-Cloud-Rechnungen schrumpfen nicht von selbst. Die Kombinati
 type: "page"
 related_pages: ["/de/loesungen/cloud-repatriation", "/de/produkte/private-cloud", "/services/platform-readiness-assessment"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /solutions/cloud-cost-optimization/
 direct_answer: |
   **Cloud-Kostenoptimierung bedeutet, Public-Cloud-Ausgaben systematisch zu senken — durch das Beheben untergenutzter Reserved Instances und Savings Plans, idle und über-dimensionierter Ressourcen, Egress- und Cross-Region-Gebühren sowie Hyperscaler-Managed-Service-Aufschläge. Die meisten Cloud-Rechnungen liegen 20-40% höher als nötig, bevor irgendeine architektonische Änderung erfolgt. Aenix, das Team hinter Cozystack, benennt in einem 14- oder 28-Tage-Engagement, wo Ausgaben verloren gehen, was sich innerhalb des Hyperscalers lohnt zu beheben und welche Workloads sich auf eine kontrollierte Plattform (KubeVirt, Cilium, LINSTOR auf Kubernetes) verlagern lassen. Bei nachhaltigen Workloads erreicht die Repatriation eine TCO-Reduktion von 40-70%.**
@@ -78,6 +80,9 @@ Wenn Ihre Situation auf mindestens drei Punkte zutrifft, spielt das Engagement s
 
 <!-- BLOCK 3: WHERE THE COST LEAKS ARE -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wo sich Cloud-Kostenlecks konzentrieren
 
 <div class="grid-2x2">
@@ -97,6 +102,9 @@ Managed Databases, Managed Kubernetes, Managed Observability — im großen Maß
 </div>
 
 Ein strukturiertes Kosten-Engagement erfasst alle vier mit quantifizierten Zahlen pro Account und Team. Die meisten Organisationen können daraus 15-25 % adressierbare Einsparungen ohne architektonische Änderung identifizieren.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -131,6 +139,18 @@ Das ehrliche Engagement benennt, welche dieser Punkte auf Ihre Situation zutreff
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
 ## Wie Aenix hilft
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Public-Cloud-Rechnung</b><div class="diagram__chips"><span>20-40 % höher als nötig</span></div></div>
+<div class="diagram__conn">bereinigt durch</div>
+<div class="diagram__node"><b>FinOps-Analyse & Quick-Wins</b><div class="diagram__chips"><span>Rightsizing, Commitment-Bereinigung, Egress-Reduktion</span></div></div>
+<div class="diagram__conn">verlagert nachhaltige Workloads auf</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform (Cozystack)</b><div class="diagram__chips"><span>KubeVirt, Cilium (eBPF), LINSTOR/DRBD</span></div></div>
+<div class="diagram__conn">erreicht</div>
+<div class="diagram__node"><b>40-70 % TCO-Reduktion</b></div>
+</div>
+</div>
 
 Das Kosten-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit dem Workstream Kosten und Cloud-Ausgaben als primärem Fokus. Das 14- oder 28-tägige Engagement liefert:
 

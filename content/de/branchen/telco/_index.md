@@ -11,6 +11,8 @@ related_pages:
   - /de/produkte/aenix-platform/enterprise-edition/
   - /de/produkte/cozystack/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/telco/
 direct_answer: |
   **Eine Cloud-Plattform für Telekommunikations-Operatoren vereint Core-Rechenzentrum, Regionalstandorte und Customer-Edge unter einem Operations-Modell. Sie löst NFV-Legacy ab, trägt souveräne Cloud-Produkte für Endkunden, betreibt KI-Workloads auf Telco-Daten und erfüllt NIS2 (Telekommunikation als wesentliche Entität). Aenix baut diese Plattformen für Operatoren in EU, DACH und Zentralasien auf Basis von Cozystack — einem CNCF-Projekt unter Apache-2.0-Lizenz. Cozystack vereint virtuelle Maschinen (KubeVirt) und Container auf einer Kubernetes-API, Cilium-eBPF-Networking und LINSTOR/DRBD-Storage, und läuft mit identischem Stack an Core und Edge. Aenix liefert die produktisierte Ænix Platform plus Implementierungs- und Betriebs-Services.**
@@ -59,6 +61,9 @@ Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien.
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wofür Telekom-Operatoren zu uns kommen
 
 - **Souveräne-Cloud-Produkt-Launches** — Operatoren mit kundenseitiger souveräner Cloud (regionale souveräne Telco-Cloud-Produkte, mitgliedstaaten-spezifische souveräne Produkte). Siehe **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
@@ -67,6 +72,9 @@ Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien.
 - **Souveräne KI-Infrastruktur** — Telco-Daten-Analytics, Customer-Care-KI, Network-Ops-KI.
 - **NIS2-Compliance** — Telekommunikation ist eine wesentliche Entität unter NIS2.
 - **Hyperscaler-Ausstieg** — nachhaltige Workloads, bei denen die Ökonomie nicht mehr passt.
+
+</div>
+</div>
 
 ---
 
@@ -77,6 +85,18 @@ Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien.
 - **Regulatorische Komplexität** — NIS2-wesentliche-Entität, sektorale Telco-Regulatoren, Souveränitäts-Mandate pro Jurisdiktion.
 - **Kundenseitige Angebote** — viele Telcos verkaufen Plattform-Fähigkeit an Enterprise-Kunden weiter; das kundenseitige Multi-Tenant-Modell ist strukturell.
 - **Lange Abschreibungszyklen** — Hardware-Refresh-Zyklen länger als im typischen Enterprise; die Plattform muss auf mehreren Hardware-Generationen laufen.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Core-Rechenzentrum</b></div>
+<div class="diagram__conn">erweitert auf</div>
+<div class="diagram__node"><b>Regionale Standorte</b></div>
+<div class="diagram__conn">erweitert auf</div>
+<div class="diagram__node"><b>Customer-Edge</b><div class="diagram__chips"><span>5G-MEC</span><span>VNFs</span></div></div>
+<div class="diagram__conn">läuft auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt VMs + Container</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Tenant-CRD</span></div></div>
+</div>
+</div>
 
 ---
 

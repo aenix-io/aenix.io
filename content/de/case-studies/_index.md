@@ -72,7 +72,7 @@ Erste NDA-Abläufe erwartet Mitte 2027. Sobald sie landen, werden namentliche Ca
 ## Wie starten
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

@@ -6,6 +6,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack is an open-source (Apache 2.0) cloud platform that fits a narrow set of K-12 education cases: large school districts and regional consortia with student-data sovereignty mandates, EdTech teams building their own LMS/SIS/analytics, and AI or analytics workloads on student data that cannot run on hyperscaler endpoints. It runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium (eBPF) networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy that maps cleanly to district-central, per-school, and per-classroom isolation. Aenix, the team behind Cozystack, delivers the productized Ænix Platform plus support on top. For most K-12 districts, hyperscaler-managed services and standard EdTech tools remain the better fit, and Aenix says so openly.**
 quick_facts:
@@ -49,6 +51,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## When Cozystack fits K-12
 
 - **Large district / regional consortium** with student data sovereignty pressure
@@ -59,9 +64,22 @@ faq:
 
 For most K-12 districts, hyperscaler-managed services + standard EdTech tools is a better fit. We're explicit when this is the case.
 
+</div>
+</div>
+
 ---
 
 ## What we cover for fitting K-12 cases
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>District workloads</b><div class="diagram__chips"><span>LMS / SIS / analytics</span><span>AI / analytics on student data</span></div></div>
+<div class="diagram__conn">run on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>One Kubernetes API (KubeVirt)</span><span>Tenant-CRD multi-tenancy</span><span>Student-data residency at every layer</span></div></div>
+<div class="diagram__conn">isolates</div>
+<div class="diagram__node"><b>District / school / classroom</b><div class="diagram__chips"><span>Central operations</span><span>Per-school isolation</span><span>Classroom-level separation</span></div></div>
+</div>
+</div>
 
 - **Multi-tenant district platform** — central operations + per-school isolation
 - **FERPA / GDPR-aligned architecture** — encryption + audit + residency
@@ -73,7 +91,9 @@ For most K-12 districts, hyperscaler-managed services + standard EdTech tools is
 
 ## How to start
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[K-12 school district cloud infrastructure article](/blog/2026/05/k12-school-district-cloud-infrastructure/)**
 - **[Universities industry page](/industries/universities/)** — adjacent

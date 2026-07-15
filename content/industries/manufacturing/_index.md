@@ -8,6 +8,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **A cloud platform for manufacturing is a unified compute foundation that runs Industry 4.0 and IT/OT workloads consistently across HQ, regional sites, and production-floor edge under one operational model. It serves manufacturers in the EU, DACH, and Central Asia that must meet NIS2 compliance (manufacturing of critical products is in scope), protect industrial IP such as design data and formulations, and run AI for quality control and predictive maintenance. Aenix builds these platforms on Cozystack, an open-source CNCF project licensed under Apache 2.0 that runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-based multi-tenancy. Aenix also offers Ænix Platform, a productized commercial edition, plus implementation and support services.**
 
@@ -65,6 +67,9 @@ Aenix builds platforms for manufacturing organizations across the EU, DACH, and 
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Why manufacturing architecture is different
 
 - **Edge compute is core, not optional** — production-floor latency requirements
@@ -73,9 +78,22 @@ Aenix builds platforms for manufacturing organizations across the EU, DACH, and 
 - **Long retention** — quality, traceability, regulatory data with multi-decade requirements
 - **Industrial IP protection** — design data and formulations have higher confidentiality than typical enterprise data
 
+</div>
+</div>
+
 ---
 
 ## Cozystack pattern for manufacturing
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>IT/OT workloads</b><div class="diagram__chips"><span>KubeVirt VMs</span><span>Containers</span><span>AI quality control</span><span>Predictive maintenance</span></div></div>
+<div class="diagram__conn">run on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>One Kubernetes API</span><span>Tenant multi-tenancy</span><span>Air-gapped deployment</span></div></div>
+<div class="diagram__conn">deployed across</div>
+<div class="diagram__node"><b>Manufacturing sites</b><div class="diagram__chips"><span>HQ</span><span>Regional sites</span><span>Production-floor edge</span></div></div>
+</div>
+</div>
 
 - Multi-site operations: HQ + regional + production-floor edge under one platform
 - Air-gapped deployment for the most sensitive workloads (industrial IP)
@@ -95,7 +113,9 @@ Aenix builds platforms for manufacturing organizations across the EU, DACH, and 
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Data sovereignty](/solutions/data-sovereignty/)** — industrial IP protection
 - **[NIS2 compliance](/solutions/nis2-compliance/)** — critical-products regulatory

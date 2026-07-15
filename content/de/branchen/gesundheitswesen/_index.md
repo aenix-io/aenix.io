@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "industry-landing"
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "souveräne cloud gesundheitswesen"
 secondary_keywords: ["gesundheitswesen cloud", "datensouveränität gesundheitswesen"]
 related_pages:
@@ -90,6 +92,16 @@ Die meisten Projekte verbinden zwei oder mehr dieser Auslöser.
 
 Gesundheitsdaten sind die reibungsintensivste Datenklasse im europäischen Recht, und zwei Regelwerke treffen hier aufeinander.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Patientendaten</b><div class="diagram__chips"><span>GDPR Artikel 9 Sonderkategorie</span><span>Patientenakten, Bildarchive, genomische Daten</span></div></div>
+<div class="diagram__conn">gebunden an</div>
+<div class="diagram__node diagram__node--brand"><b>Souveräne Plattform auf Cozystack</b><div class="diagram__chips"><span>Benannte EU-/DACH-Regionen</span><span>Eigene Hardware des Leistungserbringers</span><span>Kundeneigene Schlüssel (BYOK)</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">erzeugt</div>
+<div class="diagram__node"><b>Audit-Trails im Besitz des Leistungserbringers</b><div class="diagram__chips"><span>Nachweisbar gegenüber Aufsichtsbehörden</span><span>NIS2-Nachweis für wesentliche Einrichtungen</span></div></div>
+</div>
+</div>
+
 **GDPR-Daten der Sonderkategorie.** Nach [Artikel 9 der GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj) sind Gesundheitsdaten besondere Kategorien personenbezogener Daten. Die Verarbeitung ist untersagt, sofern keine spezifische Bedingung greift, und selbst dann müssen Leistungserbringer verschärfte technische und organisatorische Schutzmaßnahmen nachweisen — Verschlüsselung, Zugriffskontrolle und dokumentierte Residenz. Ein generischer Hyperscaler-Vertrag behauptet diese Kontrollen; eine souveräne Plattform lässt Sie sie beweisen, weil die Schlüssel und Audit-Logs nie Ihre Hoheit verlassen.
 
 **NIS2-Pflichten für wesentliche Einrichtungen.** Der Gesundheitssektor ist eine wesentliche Einrichtung nach [NIS2 (Richtlinie (EU) 2022/2555)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), Anhang I. Betroffene Krankenhäuser und Gesundheitsorganisationen tragen verbindliche Pflichten zu Risikomanagement, Lieferkettensicherheit und Vorfallmeldung, mit Verantwortlichkeit auf Leitungsebene. [ENISA](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new) liefert die Referenzleitlinien, auf denen die nationalen Behörden aufbauen. Eine Plattform, deren Control Plane auditierbare Open Source ist, verkürzt den Weg von "wir arbeiten sicher" zu "hier ist der Nachweis".
@@ -99,6 +111,9 @@ Gesundheitsdaten sind die reibungsintensivste Datenklasse im europäischen Recht
 **Souveräne KI auf Patientendaten.** Medizinische KI ist der Punkt, an dem Souveränität und Ökonomie kollidieren: Bildgebungs- und klinische Sprachmodelle wollen GPUs, doch die Daten dürfen den Perimeter nicht verlassen. GPU-Inferenz und -Training auf derselben Plattform wie die Daten auszuführen — statt Akten an eine externe KI-API zu schicken — hält Sonderkategorie-Daten in der Rechtsordnung und liefert dennoch moderne Modellleistung.
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Wie Aenix mit Gesundheitsorganisationen arbeitet
 
@@ -110,6 +125,9 @@ Das Standardprojekt läuft als **[Platform Readiness Assessment](/de/dienstleist
 - **Kosten** — ein ehrliches TCO-Modell und Repatriation-Kandidaten für dauerhafte Workloads, bei denen sich die Public-Cloud-Ökonomie nicht mehr rechnet.
 
 Ergebnis ist ein schriftlicher Bericht, ausgerichtet auf den Dialog mit Aufsichtsbehörden, sowie eine Umsetzungs-Roadmap für Phase 2.
+
+</div>
+</div>
 
 ---
 

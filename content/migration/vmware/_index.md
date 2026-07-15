@@ -3,6 +3,8 @@ title: "VMware migration — exit VCF without breaking the application"
 description: "Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on..."
 related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/aenix-platform/", "/products/cozystack", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **A VMware migration in the post-Broadcom era is a planned project to move workloads off VMware Cloud Foundation (VCF), vSphere, and vCloud Director onto infrastructure the organization controls. It suits enterprises, hosting providers, and regulated operators facing Broadcom subscription increases, sovereignty rules (DORA, NIS2), or repatriation goals. Aenix runs these migrations end to end — inventory and workload classification, destination architecture, cohort-based cutover with parallel-run validation, and VMware decommission. The destination Aenix typically recommends is Cozystack, an Apache 2.0 CNCF project running VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking and LINSTOR storage. Done well, a structured migration produces a platform the customer owns and a 30-60% cost reduction on workloads that move.**
 quick_facts:
@@ -91,11 +93,26 @@ VMware decommission as cohorts complete. Hardware repurposed where applicable. F
 
 </div>
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>VMware VCF / vSphere / vCD</b><div class="diagram__chips"><span>vSAN</span><span>NSX</span><span>Windows VMs</span></div></div>
+<div class="diagram__conn">moves through</div>
+<div class="diagram__node"><b>Cohort-based cutover</b><div class="diagram__chips"><span>KubeVirt CDI conversion</span><span>Parallel-run validation</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">completes with</div>
+<div class="diagram__node"><b>VMware decommission</b><div class="diagram__chips"><span>Final renewal avoided</span><span>30-60% cost reduction</span></div></div>
+</div>
+</div>
+
 <!-- /BLOCK 3 -->
 
 ---
 
 <!-- BLOCK 4: COMMON MIGRATION FAILURES -->
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Where VMware migrations commonly fail
 
@@ -113,6 +130,9 @@ Workloads land on a private cloud that hasn't been engineered for production. Op
 **Network and storage redesign skipped**
 Networking and storage on Cozystack (or alternative) are different from NSX/vSAN. Skipping the redesign produces operational fragility.
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 4 -->
@@ -217,7 +237,9 @@ If Phase 2 follows assessment, assessment fee credited subject to scope.
 <!-- BLOCK 11: CTA -->
 
 <a id="discovery"></a>
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[VMware migration tools & strategy](/blog/2026/05/vmware-migration-tools-and-strategy/)**
 - **[VMware alternative](/alternatives/vmware-alternative/)** — destination focus

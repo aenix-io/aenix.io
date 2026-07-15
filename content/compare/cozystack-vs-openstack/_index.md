@@ -7,6 +7,8 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack and OpenStack are both open-source, Apache 2.0 private cloud platforms used to run virtual machines, containers, and storage on owned hardware. They differ in generation and operational footprint: OpenStack is a multi-project stack (Nova, Neutron, Cinder, Keystone) typically requiring 50 to 100 or more coordinated services, while Cozystack is built on a single Kubernetes API with KubeVirt for VMs, Cilium (eBPF) for networking, and LINSTOR/DRBD for storage, running roughly 5 to 15 operators. OpenStack suits large telco, government, and OpenStack-fluent teams; Cozystack suits service providers, regulated multi-tenant workloads, and modern greenfield builds. Aenix, the team behind the CNCF project Cozystack, sells the productized Ænix Platform plus migration services for teams modernizing away from OpenStack.**
 quick_facts:
@@ -43,6 +45,8 @@ faq:
 
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers modernizing from OpenStack; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators consolidating OpenStack at scale.
 
+<div class="compare-elevated compare-elevated--col3">
+
 | | OpenStack | Cozystack |
 |---|---|---|
 | **License** | Apache 2.0 | Apache 2.0 |
@@ -53,11 +57,15 @@ faq:
 | **Modernization path** | Major-version upgrades | Kubernetes-standard rolling |
 | **Best for** | Large telco / government / OpenStack-fluent | Service providers, regulated multi-tenant, modern greenfield |
 
+</div>
+
 For teams with deep OpenStack expertise — OpenStack remains valid. For greenfield or modernization triggered by engineer-availability — Cozystack.
 
 See **[OpenStack alternative](/alternatives/openstack-alternative)** for migration guidance.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

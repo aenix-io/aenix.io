@@ -10,6 +10,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **DORA compliance for cloud infrastructure means proving that your cloud architecture satisfies the EU Digital Operational Resilience Act, in force since 17 January 2025, across ICT third-party risk (Articles 28-30), concentration risk, tested exit-readiness (Article 28(8)), and operational-resilience testing (Title IV). It applies to banks, insurers, investment and payment firms, crypto-asset service providers, and the ICT third parties serving them. Aenix, the company behind the CNCF project Cozystack, runs a DORA-aligned platform readiness engagement that produces a control-level map of what an entity can demonstrate today, a concentration-risk picture mapped to the second supplier hop, exit-feasibility analysis, and an architecture-level remediation plan, delivered by engineers with no hyperscaler commercial bias.**
 quick_facts:
@@ -87,6 +89,9 @@ If your cloud setup supports a *critical or important function* under DORA, the 
 
 <!-- BLOCK 3: FOUR THINGS DORA REQUIRES OF YOUR CLOUD -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What DORA requires of your cloud architecture
 
 <div class="grid-2x2">
@@ -106,6 +111,9 @@ Data residency enforced at every layer — production, backup, observability, CI
 </div>
 
 For a control-level checklist with operational language for each of these, see **[the DORA compliance checklist](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)**.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -144,6 +152,16 @@ Surfacing these gaps early is cheaper than surfacing them under supervisory pres
 <!-- BLOCK 5: HOW WE HELP (linking to entry offer) -->
 
 ## How Aenix helps
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>DORA obligations</b><div class="diagram__chips"><span>ICT third-party risk (Articles 28-30)</span><span>Exit-readiness (Article 28(8))</span><span>Resilience testing (Title IV)</span></div></div>
+<div class="diagram__conn">satisfied by</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix Platform controls</b><div class="diagram__chips"><span>Customer-controlled keys</span><span>VictoriaLogs audit logging</span><span>Tenant CRD multi-tenancy</span><span>Supplier transparency to second hop</span></div></div>
+<div class="diagram__conn">documented as</div>
+<div class="diagram__node"><b>Audit-ready outcome</b><div class="diagram__chips"><span>DORA control-level map</span><span>Exit-feasibility analysis</span><span>Remediation plan</span></div></div>
+</div>
+</div>
 
 Our DORA engagement is built into the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**, with the sovereignty-and-regulator-gap workstream emphasized for DORA-specific scope. The 14- or 28-day engagement produces:
 

@@ -22,6 +22,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Ænix Platform
 
 **Turnkey kommerzielle Cloud-in-a-Box. Basiert auf Open-Source Cozystack. Fünf Editions für fünf Buyer-Profile. Hosting-Panel, Billing, Portale, Payments, Support — installieren, Nutzer einbinden, Betrieb starten.**
@@ -39,6 +42,9 @@ Plus ein **Entry-Tier** — **Pure Cozystack mit Ænix-Support** — für Produk
 **Engagement-Größe:** ISP Edition Entry ab €1.3k/Monat Support; Public Cloud / Enterprise / IDP / AI/ML Full Builds €500k - €10M+ mehrjährig.
 
 [Platform entdecken →](/de/produkte/aenix-platform/)
+
+</div>
+</div>
 
 ---
 
@@ -74,6 +80,15 @@ Wenn Sie eine turnkey Cloud (Billing, Portale, Payments, Support, produktisierte
 
 ---
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Open Source</span><span>CNCF, Apache 2.0</span><span>Jeder kann es betreiben</span></div></div>
+<div class="diagram__conn">produktisiert als</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Kommerziell</span><span>Fünf Editions + Entry-Tier</span></div></div>
+<div class="diagram__conn">vermittelt durch</div>
+<div class="diagram__node"><b>Kubernetes Deep Dive Kurs</b><div class="diagram__chips"><span>Bildungsprodukt</span><span>Für Engineers</span></div></div>
+</div>
+</div>
 
 ---
 

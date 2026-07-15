@@ -4,6 +4,8 @@ description: "Excel / Google Sheets template that lets you fill in your actual p
 type: "page"
 related_pages: ["/solutions/cloud-repatriation", "/solutions/cloud-cost-optimization", "/products/aenix-platform/"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **The Cloud Repatriation TCO Worksheet is a free Excel and Google Sheets template that compares the true total cost of ownership of staying on public cloud versus moving workloads to private cloud. It is built for CFOs, FinOps practitioners, platform engineering leads, and CIOs preparing a board recommendation. The worksheet captures often-missed costs on both sides: hyperscaler egress, idle and over-sized resources, reserved-instance underutilization, and managed-service premiums against destination hardware, colocation, storage, backup, DR, and platform-team capacity. Aenix uses it during the cost workstream of its Platform Readiness Assessment. The repatriation destination is the Ænix Platform, the company's productized offering built on Cozystack, an open-source CNCF project licensed under Apache 2.0.**
 
@@ -44,7 +46,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[Download the TCO worksheet (Excel + Google Sheets)]
+<p class="lead-magnet-form__note">Download the TCO worksheet (Excel + Google Sheets)</p>
 </div>
 
 ---
@@ -82,6 +84,16 @@ faq:
 ### Sheet 5: Decision framework
 - Stay / partial repatriate / full repatriate
 - Risk factors and dependencies
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>TCO worksheet</b><div class="diagram__chips"><span>Excel + Google Sheets</span><span>5 sheets</span></div></div>
+<div class="diagram__conn">feeds</div>
+<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment</b><div class="diagram__chips"><span>Cost workstream</span></div></div>
+<div class="diagram__conn">outputs</div>
+<div class="diagram__node"><b>Board recommendation</b><div class="diagram__chips"><span>Stay / partial / full repatriate</span></div></div>
+</div>
+</div>
 
 ---
 

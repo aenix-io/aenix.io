@@ -3,6 +3,10 @@ title: "Ænix Platform Enterprise Edition"
 description: "Ænix Platform Enterprise Edition: private and hybrid sovereign cloud for regulated banks, insurance, public sector, telco and healthcare. DORA / NIS2-aligned."
 type: "page"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer_image: "/images/cozystack-screenshot.png"
+direct_answer_image_alt: "Ænix Platform console — Enterprise Edition"
 hreflang_de: /de/produkte/aenix-platform/enterprise-edition/
 direct_answer: |
   **Ænix Platform Enterprise Edition is a private and hybrid sovereign cloud built for regulated enterprises — banks, insurance carriers, public administration, telco, and healthcare operators. It runs on Cozystack, the open-source CNCF project Aenix created, and is delivered as multi-year platform builds (typically 9-18 months to full production). It provides a single Kubernetes-native control plane that coexists with existing VMware, OpenNebula, and OpenShift estates rather than forcing rip-and-replace. The edition adds pre-validated DORA and NIS2 architecture controls, customer-controlled encryption keys at every data layer, audit-ready logging, multi-datacenter operations, ISO 27001 and SOC 2 alignment support, enterprise SLA with 24/7 support, and engineering training. No per-CPU or per-core licensing applies.**
@@ -66,7 +70,10 @@ Enterprise Edition is built for **coexistence**, not rip-and-replace. Existing V
 - Tested exit-readiness mechanics (Article 28(7)(c))
 - Supplier transparency to second hop (Article 28(3))
 
-[DORA compliance services →](/solutions/dora-compliance/) | [Free DORA checklist →](/resources/dora-compliance-checklist/)
+<div class="cta-row">
+  <a class="cta-secondary" href="/solutions/dora-compliance/">DORA compliance services →</a>
+  <a class="cta-secondary" href="/resources/dora-compliance-checklist/">Free DORA checklist →</a>
+</div>
 
 ### NIS2 architecture controls
 
@@ -75,7 +82,10 @@ Enterprise Edition is built for **coexistence**, not rip-and-replace. Existing V
 - Article 12 coordinated vulnerability disclosure aligned
 - Tenant CRD with NetworkPolicy / Cilium for segmentation
 
-[NIS2 compliance services →](/solutions/nis2-compliance/) | [Free NIS2 checklist →](/resources/nis2-compliance-checklist/)
+<div class="cta-row">
+  <a class="cta-secondary" href="/solutions/nis2-compliance/">NIS2 compliance services →</a>
+  <a class="cta-secondary" href="/resources/nis2-compliance-checklist/">Free NIS2 checklist →</a>
+</div>
 
 ### Sovereign deployment
 

@@ -8,6 +8,8 @@ related_pages:
   - /products/cozystack
   - /services/private-cloud-consulting
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **An OpenStack alternative is a cloud platform that delivers OpenStack's open-source and multi-tenant guarantees with a lighter operational footprint. Cozystack is a Kubernetes-native, Apache 2.0 alternative for service providers, regulated multi-tenant operators, and modern greenfield deployments that no longer need OpenStack's 50-100+ services or its shrinking engineering talent pool. It runs virtual machines (KubeVirt) and containers on one Kubernetes API, uses Cilium (eBPF) for networking, LINSTOR/DRBD for storage, and a Tenant CRD for multi-tenancy. Aenix, the team behind Cozystack, offers Ænix Platform, a productized commercial offering, plus migration and consulting services for organizations moving from OpenStack to a Kubernetes-native foundation.**
 quick_facts:
@@ -65,6 +67,8 @@ If your scale or use case genuinely requires OpenStack (large-telco, deep OpenSt
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint"><div class="band-fullbleed__inner">
+
 ## Cozystack as OpenStack alternative
 
 | | OpenStack | Cozystack |
@@ -78,6 +82,8 @@ If your scale or use case genuinely requires OpenStack (large-telco, deep OpenSt
 | **Container workloads** | Magnum (separate) | Native |
 | **Best for** | Large telco / government / OpenStack-fluent teams | Service providers, regulated multi-tenant, modern greenfield |
 
+</div></div>
+
 ---
 
 ## Migration from OpenStack to Cozystack
@@ -86,9 +92,21 @@ VM image migration: straightforward (KVM → KubeVirt). Tenant model: re-archite
 
 Typical migration: 4-12 months for mid-size deployment.
 
+<div class="arch-section__fig"><div class="diagram">
+<div class="diagram__node"><b>OpenStack</b><div class="diagram__chips"><span>50-100+ services</span><span>Nova / Neutron / Keystone</span><span>Shrinking talent pool</span></div></div>
+<div class="diagram__conn">migrates via</div>
+<div class="diagram__node"><b>4-12 month migration</b><div class="diagram__chips"><span>Keystone → Tenant CRD</span><span>Neutron → Cilium</span><span>Cinder → LINSTOR/Ceph</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>One Kubernetes API</span><span>KubeVirt VMs + containers</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Lighter operational footprint</b><div class="diagram__chips"><span>5-15 operators</span><span>Fewer moving parts</span></div></div>
+</div></div>
+
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[OpenStack vs Cozystack guide](/blog/2026/05/openstack-vs-cozystack-modernization/)**
 - **[VMware alternative](/alternatives/vmware-alternative/)**

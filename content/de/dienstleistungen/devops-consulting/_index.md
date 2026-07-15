@@ -5,6 +5,8 @@ related_pages:
   - /de/dienstleistungen/platform-engineering
   - /products/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/devops-consulting/
 direct_answer: |
   **DevOps Consulting von Aenix bedeutet, dass Senior-Engineers, die Plattformen tatsächlich in Produktion bauen und betreiben, Ihre Bereitstellungs-, Automatisierungs- und Betriebsprozesse verbessern — keine Slide-Deck-Berater. Aenix bietet drei Engagement-Modi: eine DevOps-Reifegrad-Bewertung (14-28 Tage), ein DevOps-Transformation-Engagement (3-9 Monate) und ein DevOps-as-a-Service-/Managed-Modell. Die Arbeit basiert auf Cozystack, einer Open-Source-Cloud-Plattform unter Apache 2.0, die VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-Netzwerk (eBPF) und LINSTOR-Storage vereint. Wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert, passt die Ænix Platform IDP Edition; für technischen Scope auf bestehender Infrastruktur gibt es das eigenständige Consulting-Engagement.**
@@ -64,6 +66,9 @@ Senior-Engineers, keine Analysten · Produktionserfahrung · Open-Source-Foundat
 
 <!-- BLOCK 2: WHO THIS IS FOR -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wer jetzt DevOps-Consulting braucht
 
 Das Engagement passt, wenn mindestens drei Punkte zutreffen:
@@ -75,6 +80,9 @@ Das Engagement passt, wenn mindestens drei Punkte zutreffen:
 - **Internes Team hat die Kapazität, Wissen aufzunehmen** — das Engagement zahlt sich nur aus, wenn das Kundenteam am Ende das Ownership übernimmt.
 
 Wenn drei oder mehr zutreffen, verzinst sich strukturiertes Consulting. Ist Ihr Team klein, ist eine interne DevOps-Funktion kosteneffizienter.
+
+</div>
+</div>
 
 <!-- /BLOCK 2 -->
 
@@ -101,6 +109,16 @@ Dokumentierte Incident-Response, blameless Post-mortems, SLO-/Error-Budget-Frame
 </div>
 
 Das Ergebnis wird in operativen Metriken gemessen — DORA-Metriken (Deployment-Frequenz, Lead Time, Change-Failure-Rate, Time-to-Restore), SLO-Compliance, Time-to-Environment.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Aenix-DevOps-Engagement</b><div class="diagram__chips"><span>Senior-Engineers, keine Analysten</span><span>Produktionserfahrung</span></div></div>
+<div class="diagram__conn">produziert</div>
+<div class="diagram__node"><b>DevOps-Praktiken auf Plattform-Ebene</b><div class="diagram__chips"><span>CI/CD und GitOps</span><span>Infrastructure-as-Code</span><span>Observability</span><span>Incident-Response und SRE-Praktiken</span></div></div>
+<div class="diagram__conn">gemessen in</div>
+<div class="diagram__node"><b>DORA-Metriken</b><div class="diagram__chips"><span>Deployment-Frequenz</span><span>Lead Time</span><span>Change-Failure-Rate</span><span>Time-to-Restore</span></div></div>
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 

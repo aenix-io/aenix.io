@@ -14,6 +14,16 @@ language: "en"
 
 ---
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Free resources</b><div class="diagram__chips"><span>Compliance checklists</span><span>Migration &amp; cost worksheets</span><span>Decision guides &amp; maturity models</span></div></div>
+<div class="diagram__conn">download &amp; self-assess</div>
+<div class="diagram__node"><b>Engagement</b><div class="diagram__chips"><span>Discovery call</span><span>Platform Readiness Assessment</span></div></div>
+<div class="diagram__conn">leads to</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Enterprise Edition</span><span>AI/ML Edition</span><span>IDP Edition</span></div></div>
+</div>
+</div>
+
 ## Browse resources
 
 ### Compliance checklists
@@ -56,6 +66,9 @@ You can opt out of the nurture sequence at any time.
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Pairing resources with engagements
 
 | Resource | Pairs with engagement |
@@ -66,6 +79,9 @@ You can opt out of the nurture sequence at any time.
 | Cloud Repatriation TCO Worksheet | Platform Readiness Assessment with cost workstream emphasis |
 | Sovereign AI Decision Guide | Sovereign AI architecture review (1-2 weeks); AI/ML Edition build |
 | Platform Engineering Maturity Assessment | Platform Readiness Assessment with IDP focus; IDP Edition build |
+
+</div>
+</div>
 
 ---
 

@@ -2,6 +2,8 @@
 title: "WHMCS Kubernetes & Cloud — die Cozystack-Integration für Hoster"
 description: "Verkaufen Sie Kubernetes-Cluster, Managed Datenbanken, VMs, Message-Broker, Objektspeicher und GPU direkt aus WHMCS. Die proprietäre Aenix-Integration bringt Cozystack-Services und Abrechnung in Ihr bestehendes Panel."
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "whmcs kubernetes"
 secondary_keywords: ["whmcs cloud", "kubernetes über whmcs verkaufen", "kubernetes abrechnung"]
 hreflang_en: /products/whmcs-cozystack-integration/
@@ -57,8 +59,23 @@ service:
   <a class="cta-secondary" href="/de/branchen/hosting-anbieter/">Für Hosting-Anbieter →</a>
 </div>
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>WHMCS-Panel</b><div class="diagram__chips"><span>Kunden bestellen</span></div></div>
+<div class="diagram__conn">bestellt</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix-WHMCS-Modul</b><div class="diagram__chips"><span>Provisionierung</span><span>Messung</span></div></div>
+<div class="diagram__conn">provisioniert on demand</div>
+<div class="diagram__node"><b>Cozystack-Servicekatalog</b><div class="diagram__chips"><span>Kubernetes</span><span>Datenbanken</span><span>VMs</span><span>Message-Broker</span><span>Objektspeicher</span><span>GPU</span></div></div>
+<div class="diagram__conn">Nutzung gemessen</div>
+<div class="diagram__node"><b>WHMCS-Abrechnung</b><div class="diagram__chips"><span>Rechnungsstellung</span><span>ein Panel</span></div></div>
+</div>
+</div>
+
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Was Ihre Kunden aus WHMCS selbst bestellen können
 
@@ -87,6 +104,9 @@ GPU-gestützte Workloads für KI/ML und Rendering — die am schnellsten wachsen
 </div>
 
 Provisionierung, Messung und Rechnungsstellung laufen vollständig über Ihre bestehende **WHMCS-Abrechnung** — kein zweites Abrechnungssystem zum Abgleichen.
+
+</div>
+</div>
 
 ---
 

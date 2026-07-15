@@ -11,6 +11,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Aenix builds sovereign, edge-ready cloud platforms for telecom operators across the EU, DACH, and Central Asia, using Cozystack — the open-source (Apache 2.0) CNCF platform Aenix maintains. The same platform runs at core data centres, regional sites, and customer-edge locations under one operations model, replacing aging NFV environments with a Kubernetes-native foundation that runs VMs and containers on one API via KubeVirt. It supports 5G MEC and VNFs at the edge, multi-tenant customer-facing sovereign cloud products via the Tenant CRD, sovereign AI for telco-data analytics and customer-care workloads, and NIS2 essential-entity compliance with air-gapped deployments and customer-controlled encryption. Aenix delivers this as a Platform Readiness Assessment followed by a 6-24 month multi-site implementation, with no per-CPU licensing.**
 quick_facts:
@@ -56,6 +58,9 @@ Aenix builds platforms for telecom operators across the EU, DACH, and Central As
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What telecom operators come to us for
 
 - **Sovereign cloud product launches** — operators offering customer-facing sovereign cloud (regional telco sovereign cloud products, member-state-specific sovereign products). See **[Data sovereignty](/solutions/data-sovereignty/)**.
@@ -65,9 +70,24 @@ Aenix builds platforms for telecom operators across the EU, DACH, and Central As
 - **NIS2 compliance** — telecom is an essential entity under NIS2.
 - **Hyperscaler exit** — sustained workloads where economics no longer fit.
 
+</div>
+</div>
+
 ---
 
 ## Why telco architecture is different
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Core data centre</b></div>
+<div class="diagram__conn">extends to</div>
+<div class="diagram__node"><b>Regional sites</b></div>
+<div class="diagram__conn">extends to</div>
+<div class="diagram__node"><b>Customer edge</b><div class="diagram__chips"><span>5G MEC</span><span>VNFs</span></div></div>
+<div class="diagram__conn">runs on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt VMs + containers</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Tenant CRD</span></div></div>
+</div>
+</div>
 
 - **Multi-site operations** — core DC + regional sites + edge sites + customer-premises equipment, under one platform abstraction.
 - **5G + AI convergence** — network slicing, MEC, and AI inference at edge.
@@ -113,7 +133,9 @@ Public references: NDA-protected. Telco engagements included in the same NDA coh
 
 ## How to start
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Sovereign AI](/solutions/sovereign-ai/)** — telecom AI use cases
 - **[Data sovereignty](/solutions/data-sovereignty/)** — telco regulatory trigger

@@ -8,6 +8,8 @@ related_pages:
   - /products/aenix-platform/idp-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Enterprise platform engineering is the discipline of building and operating internal platforms for large organizations that run many product teams across multiple business units, regions, and jurisdictions. At this scope, multi-tenancy, governance, audit-readiness, and ops-at-scale are mandatory rather than optional. It targets engineering organizations of roughly 500+ people with 5+ teams sharing one platform and multi-cluster, multi-region operations. Aenix delivers this on Cozystack, an Apache 2.0 CNCF Sandbox project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium (eBPF) networking, LINSTOR/DRBD storage, and structural Tenant-CRD multi-tenancy. Aenix combines a Platform Readiness Assessment, the productized Ænix Platform, and hands-on engineering to build a platform-as-a-product with fleet management and identity-integrated RBAC.**
 quick_facts:
@@ -61,6 +63,9 @@ For smaller scope (single-team or 1-3 teams), see **[platform engineering servic
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What's different at enterprise scale
 
 - **Multi-tenancy structural** — Tenant CRD on Cozystack; OpenShift Project CRD; equivalent abstractions.
@@ -69,13 +74,30 @@ For smaller scope (single-team or 1-3 teams), see **[platform engineering servic
 - **Platform-as-a-product** — internal product management discipline.
 - **Capacity planning** — quarterly review at organizational level.
 
+</div>
+</div>
+
 ---
 
 ## Engagement structure
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Platform Readiness Assessment</b><div class="diagram__chips"><span>Enterprise-scale workstreams</span></div></div>
+<div class="diagram__conn">scopes</div>
+<div class="diagram__node"><b>Phase 2 implementation</b><div class="diagram__chips"><span>6-18 months</span></div></div>
+<div class="diagram__conn">builds</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform on Cozystack</b><div class="diagram__chips"><span>Tenant CRD multi-tenancy</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Enterprise platform-as-a-product</b><div class="diagram__chips"><span>Fleet management</span><span>Identity-integrated RBAC</span><span>Audit-readiness</span></div></div>
+</div>
+</div>
+
 Standard **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with enterprise-scale workstream emphasis. Phase 2 implementation typically 6-18 months for enterprise platform.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

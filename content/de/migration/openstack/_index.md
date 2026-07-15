@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Die OpenStack-zu-Cozystack-Migration ist der Wechsel von einer OpenStack-Cloud zu Cozystack, um den operativen Footprint und den Bedarf an seltenem OpenStack-Engineering zu reduzieren. Sie richtet sich an Hosting-Anbieter, regionale Clouds und große Betreiber, die OpenStack at scale konsolidieren. Cozystack bündelt VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-eBPF-Networking und LINSTOR/DRBD-Storage und ist Apache-2.0-lizenziert ohne Core-basierte Lizenzkosten. Aenix führt die Migration in vier Phasen durch: Architektur-Review, Parallel-Deployment neben OpenStack, Workload-Migration nach Klasse und OpenStack-Decommission nach Final-Validation. Eine Total-Migration dauert für mittelgroße Estates typisch 12 bis 18 Monate.**
 
@@ -47,7 +49,7 @@ faq:
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack at scale konsolidieren.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/alternativen/openstack-alternative">OpenStack-Alternative →</a>
 </div>
 
@@ -61,6 +63,16 @@ faq:
 - **OpenStack-Decommission** — nach Final-Validation
 
 **Typischer Ablauf:** Architektur-Review → Parallel-Deployment → Workload-Migration → Decommission. Total-Migration typisch 12-18 Monate für mittelgroße Estates.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>OpenStack</b><div class="diagram__chips"><span>Compute / Storage / Network</span><span>Vielteiliger Komponentenstack</span></div></div>
+<div class="diagram__conn">migriert via</div>
+<div class="diagram__node"><b>Migrationsablauf</b><div class="diagram__chips"><span>Parallel-Deployment</span><span>Workload-Migration nach Klasse</span></div></div>
+<div class="diagram__conn">konsolidiert auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR/DRBD</span></div></div>
+</div>
+</div>
 
 ---
 

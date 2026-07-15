@@ -3,6 +3,8 @@ title: "Cloud platform for SMB and mid-market — honest answer when Cozystack f
 description: "Cozystack is purpose-built for service providers, regulated enterprises, and multi-tenant cloud builders. For SMB and small mid-market organizations (under..."
 related_pages: ["/products/cozystack", "/products/aenix-platform/isp-edition/", "/partners/", "/services/platform-readiness-assessment"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **For SMB and small mid-market organizations — under about 100 employees, single-tenant, with simple infrastructure — Cozystack is usually over-engineering, and Aenix says so openly. Cozystack is built for service providers, regulated enterprises, and multi-tenant cloud builders who need KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR storage, and Tenant-CRD isolation. Most Aenix engagements are 200-plus engineer organizations. SMB and mid-market fit is the exception, driven by regulated-data, sovereignty, or multi-tenant-SaaS triggers rather than generic cloud-platform needs. Aenix offers a free 15-minute fit-check, a fixed-price architecture review, and recommends simpler options like Proxmox VE or hyperscaler managed services when Cozystack does not fit.**
 quick_facts:
@@ -37,11 +39,26 @@ faq:
 
 > **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — but **only via an Aenix [Partner](/partners/)** (regional MSP / hosting provider). SMB customers consume cloud as a product from the partner, who runs Ænix Platform underneath. Direct Aenix engagement is rarely fit at SMB scale.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>SMB customer</b></div>
+<div class="diagram__conn">consumes cloud from</div>
+<div class="diagram__node"><b>Aenix Partner</b><div class="diagram__chips"><span>Regional MSP</span><span>Hosting provider</span></div></div>
+<div class="diagram__conn">runs</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b></div>
+<div class="diagram__conn">based on</div>
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Apache 2.0</span><span>CNCF project</span></div></div>
+</div>
+</div>
+
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Fit-check call →</a>
 </div>
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## When Cozystack does NOT fit SMB
 
@@ -58,6 +75,9 @@ In these cases, **Cozystack is over-engineering**. Realistic alternatives:
 - **Proxmox VE** — for SMB on-prem virtualization
 - **Hetzner / OVHcloud / similar** — managed infrastructure
 - **Cloud-managed platforms** — DigitalOcean, Linode, Hostinger for very small teams
+
+</div>
+</div>
 
 ---
 
@@ -89,7 +109,9 @@ Customer-base evidence: most Aenix engagements are 200+ engineering organization
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[When Cozystack fits SMB and mid-market — honest answer](/blog/2026/05/when-cozystack-fits-smb-and-mid-market/)**
 

@@ -10,6 +10,8 @@ related_pages:
   - /de/produkte/aenix-platform/public-cloud-edition/
   - /de/produkte/cozystack/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/public-sector/
 direct_answer: |
   **Eine souveräne Cloud-Plattform für den öffentlichen Sektor ist eine kundenkontrollierte, audit-bereite Infrastruktur, die beschaffungspflichtige Souveränität, NIS2-Compliance für wesentliche Entitäten und Datenlokalisierung erfüllt — gebaut auf Infrastruktur, die die Behörde selbst besitzt. Aenix baut solche Plattformen für öffentliche und quasi-öffentliche Organisationen in der EU und Zentralasien auf Basis von Cozystack (CNCF-Projekt, Apache 2.0). KubeVirt führt VMs und Container über eine einzige Kubernetes-API aus, Cilium (eBPF) übernimmt das Netzwerk, LINSTOR/DRBD den Storage, und das Tenant-CRD liefert Mandantenfähigkeit. Kundenkontrollierte Schlüssel und eine Air-Gap-Option erlauben den Betrieb sensibler Bürgerdaten und souveräner KI-Workloads, ohne das Perimeter zu verlassen.**
@@ -67,6 +69,9 @@ Die meisten Engagements umfassen formale Beschaffungsprozesse; Aenix akzeptiert 
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Warum der öffentliche Sektor anders ist
 
 - **Beschaffungsprozesse sind formal** — RFI- / RFP- / Ausschreibungs-Zyklen laufen über spezifische Portale (goszakup.gov.kz, mitwork.kz, zakup.sk.kz in Kasachstan; eTendering und mitgliedstaaten-spezifische Portale in der EU; äquivalente Prozesse anderswo).
@@ -75,6 +80,9 @@ Die meisten Engagements umfassen formale Beschaffungsprozesse; Aenix akzeptiert 
 - **Capability-Transfer an interne Teams** — viele Deployments im öffentlichen Sektor erfordern eine Wissensübergabe, sodass das Kundenteam nach dem Build eigenständig arbeitet.
 - **Open Source bevorzugt** — proprietäres Lock-in disqualifiziert häufig in der Bewertung.
 
+</div>
+</div>
+
 ---
 
 ## Wie Aenix mit öffentlichen-Sektor-Organisationen zusammenarbeitet
@@ -82,6 +90,16 @@ Die meisten Engagements umfassen formale Beschaffungsprozesse; Aenix akzeptiert 
 Das Standard-Engagement: **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit für den öffentlichen Sektor betonten Workstreams — Souveränität + Regulator-Gap (NIS2 / sektoral) + Beschaffungsprozess-Bereitschaft + Capability-Transfer an interne Teams.
 
 Die Phase-2-Implementierung läuft End-to-End: von Hardware über Plattform bis Betrieb, mit dokumentiertem Exit-Pfad (Wissenstransfer + Runbooks), sodass das Kundenteam eigenständig arbeitet.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment</b><div class="diagram__chips"><span>Souveränität</span><span>Regulator-Gap (NIS2 / sektoral)</span><span>Beschaffungsprozess-Bereitschaft</span></div></div>
+<div class="diagram__conn">führt zu</div>
+<div class="diagram__node"><b>Phase-2-Implementierung</b><div class="diagram__chips"><span>Hardware über Plattform bis Betrieb</span></div></div>
+<div class="diagram__conn">übergibt an</div>
+<div class="diagram__node"><b>Kundenteam-Betrieb</b><div class="diagram__chips"><span>Wissenstransfer</span><span>Runbooks</span></div></div>
+</div>
+</div>
 
 ---
 

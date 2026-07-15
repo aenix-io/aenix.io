@@ -4,6 +4,8 @@ description: "An 8-dimension self-assessment that scores your platform engineeri
 type: "page"
 related_pages: ["/services/platform-engineering", "/services/internal-developer-platform", "/products/aenix-platform/idp-edition/"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **The Platform Engineering Maturity Assessment is a free, 8-dimension self-assessment that scores an organization's platform engineering practice on a 5-stage rubric, from pre-platform to mature platform engineering. The eight dimensions are workload portability, GitOps adoption, observability unification, secrets handling, identity model, multi-tenancy, disaster-recovery posture, and self-service depth. It is built for engineering managers, VP Engineering, platform leads, and CIOs/CTOs scoping platform investment. Aenix uses the same instrument in its paid Platform Readiness Assessment to baseline organizations before recommending follow-on work, and now offers it free as a PDF plus an interactive form that auto-calculates a maturity stage and priority dimensions. Most outcomes recommend Aenix's IDP Edition, built on the Cozystack open-source platform, as the structured next step.**
 quick_facts:
@@ -42,7 +44,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[Download the maturity assessment (PDF + interactive form)]
+<p class="lead-magnet-form__note">Download the maturity assessment (PDF + interactive form)</p>
 </div>
 
 ---
@@ -59,6 +61,16 @@ faq:
 8. **Self-service depth** — golden paths, time-to-environment
 
 For each dimension, 5-stage rubric (Pre-platform → Mature platform engineering).
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>8-dimension self-assessment</b><div class="diagram__chips"><span>5-stage rubric</span><span>PDF + interactive form</span></div></div>
+<div class="diagram__conn">produces</div>
+<div class="diagram__node"><b>Maturity report</b><div class="diagram__chips"><span>Maturity stage</span><span>Priority dimensions</span></div></div>
+<div class="diagram__conn">points to</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform IDP Edition</b><div class="diagram__chips"><span>GitLab</span><span>Argo CD</span><span>Golden paths</span></div></div>
+</div>
+</div>
 
 ---
 

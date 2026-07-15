@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/aenix-platform/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/cloud-engineering/
 direct_answer: |
   **Cloud Engineering Services von Aenix bringen Senior-Engineers — keine Berater — in Ihre Cloud-Architektur-, Automatisierungs- und Operations-Arbeit. Das Engagement deckt das volle Spektrum ab: von Hyperscaler-nativer Architektur über Hybrid bis Private-Cloud-Plattform-Engineering. Konkret umfasst es Cloud-Architektur-Review und Ziel-Design, Infrastructure-as-Code-Reife (Terraform, OpenTofu, Pulumi, Crossplane), Observability-Stack-Engineering, CI/CD- und GitOps-Reife, Container-Orchestrierung, Network- und Identity-Engineering, FinOps sowie Compliance-Posture für DORA und NIS2. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Sandbox-Projekt) und kann das Engagement nahtlos mit der produktisierten Ænix Platform verbinden, wenn der Scope sich zu einer vollständigen Cloud-Plattform erweitert.**
@@ -50,6 +52,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Was abgedeckt ist
 
 - Cloud-Architektur-Review und Ziel-Design (public, private, hybrid)
@@ -61,7 +66,20 @@ faq:
 - FinOps-Integration
 - Compliance-Posture (DORA, NIS2, sektoral)
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Aenix-Engagement</b><div class="diagram__chips"><span>Senior-Engineers, keine Berater</span><span>Cloud-Architektur, Automatisierung, Operations</span></div></div>
+<div class="diagram__conn">deckt ab</div>
+<div class="diagram__node"><b>Public, Hybrid und On-Prem</b><div class="diagram__chips"><span>IaC (Terraform, OpenTofu, Pulumi, Crossplane)</span><span>Observability (VictoriaMetrics, Grafana, OpenTelemetry)</span><span>CI/CD und GitOps</span></div></div>
+<div class="diagram__conn">erweitert zu</div>
+<div class="diagram__node"><b>Ænix Platform auf Cozystack</b><div class="diagram__chips"><span>KubeVirt, Cilium, LINSTOR</span><span>Apache 2.0</span></div></div>
+</div>
+</div>
+
 Für breiteren Scope siehe **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)**. Für DevOps-spezifischen Scope siehe **[DevOps Consulting](/de/dienstleistungen/devops-consulting/)**.
+
+</div>
+</div>
 
 ---
 

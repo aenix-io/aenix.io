@@ -8,6 +8,8 @@ related_pages:
   - /products/aenix-platform/idp-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Aenix DevOps consulting is a hands-on engineering engagement, not a slide-deck advisory: senior engineers who build and operate platforms in production work alongside an internal team to install platform-level CI/CD and GitOps (Argo CD or Flux), infrastructure-as-code (Terraform, OpenTofu, Crossplane), observability (VictoriaMetrics and VictoriaLogs), and SRE practices, leaving written runbooks the customer owns. It fits organizations with working CI/CD but reactive ops, fragmented tooling, or external pressure such as a regulator, scale, or technical debt. Aenix is the team behind Cozystack, an Apache 2.0 CNCF project, so the practices installed are sustainable independently of Aenix and progress is measured in DORA metrics and SLO compliance rather than workshop output.**
 quick_facts:
@@ -82,6 +84,9 @@ If three or more apply, structured consulting compounds. If your team is small, 
 
 <!-- BLOCK 3: WHAT WE DO -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What an Aenix DevOps engagement produces
 
 <div class="grid-2x2">
@@ -101,6 +106,9 @@ Documented incident response, blameless post-mortems, SLO/error-budget framework
 </div>
 
 The output is measured in operational metrics — DORA metrics (deployment frequency, lead time, change-failure rate, time-to-restore), SLO compliance, time-to-environment.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -135,6 +143,16 @@ These failure modes are predictable. Engagement structure deliberately prevents 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
 ## How Aenix engages
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Current CI/CD and ops</b><div class="diagram__chips"><span>Working CI/CD</span><span>Reactive ops</span><span>Fragmented tooling</span></div></div>
+<div class="diagram__conn">assessed by</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix DevOps engagement</b><div class="diagram__chips"><span>Assessment</span><span>Transformation</span><span>Managed</span></div></div>
+<div class="diagram__conn">installs</div>
+<div class="diagram__node"><b>Production DevOps practices</b><div class="diagram__chips"><span>CI/CD and GitOps</span><span>IaC</span><span>Observability</span><span>SRE</span></div></div>
+</div>
+</div>
 
 Three modes:
 
@@ -222,7 +240,9 @@ Phase 2 implementation: assessment cost credited subject to scope.
 <a id="discovery"></a>
 ## Start with a 30-minute discovery call
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 Or read more:
 - **[DevOps best practices 2026](/blog/2026/05/devops-best-practices-2026/)** — practical playbook

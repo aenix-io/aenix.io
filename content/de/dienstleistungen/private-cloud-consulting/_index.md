@@ -10,6 +10,8 @@ related_pages:
   - /de/produkte/aenix-platform/public-cloud-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/private-cloud-consulting/
 direct_answer: |
   **Private Cloud Consulting von Aenix ist eine Engineering-geführte Beratung für Organisationen, die eine private, hybride oder souveräne Cloud planen und in Produktion bauen — nicht nur in Slide-Decks. Sie richtet sich an Banken und Versicherer unter DORA-Druck, öffentliche Verwaltung mit Souveränitätsmandaten, Telcos, Hosting-Anbieter und Unternehmen mit VMware-Ausstieg- oder Repatriation-Bedarf. Aenix ist das Team hinter Cozystack, einem Open-Source CNCF-Projekt unter Apache-2.0-Lizenz, das VMs und Container über eine Kubernetes-API (KubeVirt) vereint. Die Beratung deckt Architektur-Review, VMware-Ausstieg-Strategie, Souveränitäts-Anforderungen (DORA/NIS2), TCO-Modellierung, Kompetenz-Bewertung und eine Phase-2-Implementations-Roadmap ab.**
@@ -107,11 +109,24 @@ Runbooks, On-Call-Patterns, Capacity-Planning, Sicherheits- und Compliance-Postu
 
 </div>
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b></div>
+<div class="diagram__conn">vereint</div>
+<div class="diagram__node"><b>VMs und Container (KubeVirt)</b></div>
+<div class="diagram__conn">nutzt</div>
+<div class="diagram__node"><b>Cilium (eBPF) und LINSTOR/DRBD</b></div>
+</div>
+</div>
+
 <!-- /BLOCK 3 -->
 
 ---
 
 <!-- BLOCK 4: COMMON FAILURES -->
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Wo Private-Cloud-Projekte häufig scheitern
 
@@ -129,6 +144,9 @@ Für den VMware-Ausstieg gebaut, aber die KI-Workloads des nächsten Jahres nich
 **Unterinvestierte Platform-Team-Kapazität**
 Die Private Cloud ist gebaut; das Plattform-Team ist so groß wie das Team, das VMware betrieben hat. Operative Schulden bauen sich auf; das Team brennt aus; die Private Cloud wird zum nächsten Notfall.
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 4 -->

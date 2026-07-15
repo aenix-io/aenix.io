@@ -3,6 +3,10 @@ title: "Ænix Platform AI/ML Edition"
 description: "Ænix Platform AI/ML Edition: turnkey self-hosted AI infrastructure with multi-tenant GPU scheduling, model serving, and sovereignty controls."
 type: "page"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer_image: "/images/cozystack-screenshot.png"
+direct_answer_image_alt: "Ænix Platform console — AI/ML Edition"
 direct_answer: |
   **Ænix Platform AI/ML Edition is turnkey, self-hosted AI infrastructure for AI-heavy and regulated organizations that need to run inference, fine-tuning, and RAG workloads on their own GPUs instead of hyperscaler AI APIs. Built on Cozystack (Apache 2.0, CNCF project), it bundles multi-tenant GPU scheduling with GPU-class awareness, pre-integrated model serving (vLLM-compatible), vector databases, object storage, ready-to-use open-weight models, service APIs, and sovereignty controls such as customer-controlled encryption keys and air-gapped deployment. Aenix, the open-core company behind Cozystack, productizes and delivers it as a project plus optional managed retainer, letting AI teams reach production faster while keeping model weights, training data, and operations fully under customer control.**
 quick_facts:
@@ -41,6 +45,7 @@ faq:
   <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
+
 ---
 
 ## What's included in AI/ML Edition
@@ -131,7 +136,10 @@ Pricing on request — €500k - €3M+ project; managed retainer post-deploymen
 - **Full AI/ML Edition build** (6-12 months) — production AI infrastructure with all targeted workload types
 - **Managed retainer** (optional, ongoing) — Aenix runs the AI platform under SLA
 
-[AI Platform Build service →](/services/ai-platform-build/) | [Free Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/)
+<div class="cta-row">
+  <a class="cta-secondary" href="/services/ai-platform-build/">AI Platform Build service →</a>
+  <a class="cta-secondary" href="/resources/sovereign-ai-decision-guide/">Free Sovereign AI Decision Guide →</a>
+</div>
 
 ---
 

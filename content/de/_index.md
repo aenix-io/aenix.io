@@ -8,7 +8,7 @@ language: "de"
 **Ænix Platform ist eine turnkey Cloud-in-a-Box. Sie basiert auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen (CNCF-Projekt, Apache 2.0), und ergänzt alles, was ein Betreiber braucht, um ein echtes Cloud-Geschäft zu führen: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing, Payment-Integrationen, WHMCS-Integration, Enterprise-SLA. Fünf Editions passen zu fünf Buyer-Profilen. Installieren. Nutzer einbinden. Betrieb starten.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Platform entdecken →</a>
 </div>
 
@@ -194,7 +194,7 @@ Gleiches Produkt, unterschiedliche Feature-Bundles pro Buyer-Profil. Public Clou
 Buchen Sie einen 30-Minuten-Discovery-Call. Wir besprechen Ihr Buyer-Profil, regulatorischen Kontext, Scope und welche Ænix Platform Edition passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

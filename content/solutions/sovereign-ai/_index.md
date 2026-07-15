@@ -10,6 +10,8 @@ related_pages:
   - /products/aenix-platform/ai-ml-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Sovereign AI infrastructure runs GenAI, inference, fine-tuning, and RAG on hardware the customer owns or controls, in the customer's chosen jurisdiction, under the customer's encryption keys — with model weights, prompts, completions, and embeddings never leaving the perimeter. It is built for regulated organizations (financial services, healthcare, public sector) and AI/GPU operators whose data class, regulator, or inference economics make hyperscaler AI services unviable. Aenix designs, builds, and operates these platforms on Cozystack, an Apache 2.0 CNCF project that combines KubeVirt VMs and Kubernetes inference workloads on one API, with NVIDIA GPU scheduling (MIG, time-slicing, passthrough, vGPU). Aenix has no model-provider bias and recommends the open-weight model — Llama, Mistral, Qwen, DeepSeek, Phi — that fits the data class and economics.**
 quick_facts:
@@ -86,6 +88,9 @@ If you have none of these, sovereign AI is over-engineering. If you have three o
 
 <!-- BLOCK 3: WHAT SOVEREIGN AI ACTUALLY MEANS -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What sovereign AI actually means
 
 <div class="grid-2x2">
@@ -105,6 +110,9 @@ Kubernetes-native AI platform with clear ownership of GPU scheduling, autoscalin
 </div>
 
 This is not "private AI" as a label for a SaaS endpoint with a privacy clause. It's an architecturally sovereign stack with named components and demonstrable controls.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -139,6 +147,16 @@ The honest answer is usually a Kubernetes-native AI platform on customer-control
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
 ## How Aenix helps
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>AI workloads</b><div class="diagram__chips"><span>Inference</span><span>Fine-tuning</span><span>RAG</span></div></div>
+<div class="diagram__conn">scheduled on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Aenix</b><div class="diagram__chips"><span>KubeVirt VMs + Kubernetes</span><span>NVIDIA GPU: MIG, vGPU</span><span>Customer keys and hardware</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Sovereign AI</b><div class="diagram__chips"><span>Data never leaves the perimeter</span><span>No model-provider endpoints</span></div></div>
+</div>
+</div>
 
 The sovereign-AI engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + AI-platform workstreams emphasized. Where the engagement leads to implementation, Aenix delivers the platform end-to-end.
 

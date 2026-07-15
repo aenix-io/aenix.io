@@ -9,6 +9,8 @@ related_pages:
   - /products/aenix-platform/isp-edition/
   - /products/aenix-platform/enterprise-edition/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **The VMware Migration Assessment Checklist is a 25-point structured discovery framework for organizations evaluating a VMware exit, covering workload inventory, dependency mapping (vSAN, NSX, vCloud Director, vRealize), network and storage redesign, multi-tenancy modelling, AI/GPU workloads, sovereignty and compliance (DORA, NIS2), operational readiness, and cost trajectory. It is aimed at infrastructure leads, platform engineers, CIO offices, and procurement teams in early evaluation. Aenix uses the same checklist during its 14-day Platform Readiness Assessment and offers it free as a downloadable PDF. The recommended destination is Cozystack, the Apache 2.0 CNCF project Aenix builds, which runs VMs and containers on one Kubernetes API via KubeVirt with Cilium networking and LINSTOR/DRBD storage.**
 quick_facts:
@@ -47,7 +49,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[Download the checklist (PDF)]
+<p class="lead-magnet-form__note">Download the checklist (PDF)</p>
 </div>
 
 ---
@@ -62,6 +64,16 @@ faq:
 - **Sovereignty and compliance** — DORA/NIS2 alignment, key custody
 - **Operational readiness** — runbooks, on-call, knowledge transfer
 - **Cost trajectory** — TCO inputs, commitment expirations, repatriation candidates
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>25-point checklist</b><div class="diagram__chips"><span>8 areas</span><span>Free PDF</span></div></div>
+<div class="diagram__conn">feeds</div>
+<div class="diagram__node diagram__node--brand"><b>14-day Platform Readiness Assessment</b><div class="diagram__chips"><span>TCO modelling</span><span>Architecture design</span></div></div>
+<div class="diagram__conn">targets</div>
+<div class="diagram__node"><b>Cozystack destination</b><div class="diagram__chips"><span>VMs + containers on one Kubernetes API</span></div></div>
+</div>
+</div>
 
 ---
 

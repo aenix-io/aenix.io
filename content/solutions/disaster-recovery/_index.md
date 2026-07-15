@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "disaster recovery as a service"
 secondary_keywords: ["cloud disaster recovery", "disaster recovery solutions", "business continuity"]
 hreflang_de: "/de/loesungen/disaster-recovery/"
@@ -83,6 +85,18 @@ The protected tier of a sovereign DR platform is built on synchronous block repl
 
 On the reference architecture, Cozystack runs a compute cluster geo-distributed across three data centres. Volumes are replicated synchronously with **LINSTOR/DRBD** at replication factor three — one replica per site — and **etcd**, the Kubernetes cluster state store, is geo-distributed across the same three sites. The result is an architecture designed to survive the loss of an entire data centre with no data loss, because both the persistent data and the control-plane state already live elsewhere.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Primary data centre</b><div class="diagram__chips"><span>Committed writes</span></div></div>
+<div class="diagram__conn">replicated synchronously by</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Aenix</b><div class="diagram__chips"><span>LINSTOR/DRBD</span><span>Geo-distributed etcd</span></div></div>
+<div class="diagram__conn">across three data centres to</div>
+<div class="diagram__node"><b>Secondary data centre</b><div class="diagram__chips"><span>One replica per site</span></div></div>
+<div class="diagram__conn">fails over with</div>
+<div class="diagram__node"><b>Recovery</b><div class="diagram__chips"><span>No data loss</span></div></div>
+</div>
+</div>
+
 This is standard, open, [CNCF](https://www.cncf.io/)-aligned Kubernetes infrastructure rather than proprietary DR appliances. The [Kubernetes storage model](https://kubernetes.io/docs/concepts/storage/) treats the replicated volumes as ordinary persistent volumes, so applications do not need bespoke DR integration to benefit from cross-site durability.
 
 ---
@@ -113,6 +127,9 @@ For DORA-scoped entities specifically, this is the shape of evidence [DORA (Regu
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Not every workload needs the same recovery tier
 
 Treating every system as mission-critical is how DR budgets explode and drills become unmanageable. A working DR posture tiers the estate first.
@@ -122,6 +139,9 @@ Treating every system as mission-critical is how DR budgets explode and drills b
 - **Tier 2 — backup and rebuild.** Stateless or easily reconstructed services recovered from immutable backups and infrastructure-as-code, with an RTO measured in hours rather than seconds.
 
 Tiering is the first output of the assessment, because it decides where the expensive synchronous capacity goes and where a cheaper recovery path is honestly sufficient.
+
+</div>
+</div>
 
 ---
 

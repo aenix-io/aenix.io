@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/cozystack
   - /de/alternativen/vmware-alternativen
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/public-cloud-builder/
 direct_answer: |
   **Public Cloud Builder ist die Aenix-Dienstleistung, mit der Hosting-Anbieter, Telekommunikations-Operatoren und regionale Betreiber ein eigenes, kundenseitiges Cloud-Produkt auf einer Open-Source-Foundation starten. Die Lösung basiert auf Cozystack, der Apache-2.0-lizenzierten, Kubernetes-nativen Plattform, die VMs und Container über KubeVirt auf einer Kubernetes-API vereint, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage nutzt und Mandantenfähigkeit über das Tenant-CRD abbildet. Aenix übernimmt Architektur, Produkt-Readiness-Assessment und Implementation und liefert die produktisierte Ænix Platform (Public Cloud Edition oder ISP Edition), damit Betreiber ein glaubwürdiges, souveränes Cloud-Angebot bereitstellen, ohne selbst Hyperscaler-Engineering aufbauen zu müssen.**
@@ -65,6 +67,9 @@ Wenn Sie ein Hyperscaler sind — ist das nicht relevant. Wenn Sie regional / ve
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Was wir abdecken
 
 <div class="grid-2x2">
@@ -81,6 +86,9 @@ Self-Service-Portal, Customer-Support-Workflows, mandantenfähige Observability 
 **4. Go-to-Market-Support**
 Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische Positionierung pro Markt.
 
+</div>
+
+</div>
 </div>
 
 ---
@@ -100,6 +108,16 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
 - **WHMCS-Produktions-Integration** bereit (zwei Modi)
 - **Mandantenfähige operative Expertise** — eine produktive Cloud ist operativ etwas anderes als interne IT
 - **Teams in der EU + Zentralasien** für regionale Ausrichtung
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b></div>
+<div class="diagram__conn">produktisiert zu</div>
+<div class="diagram__node"><b>Ænix Platform (Public Cloud / ISP Edition)</b></div>
+<div class="diagram__conn">treibt an</div>
+<div class="diagram__node"><b>Kundenseitiges Cloud-Produkt</b></div>
+</div>
+</div>
 
 ---
 

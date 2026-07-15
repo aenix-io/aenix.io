@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "cloud bursting"
 secondary_keywords: ["gpu as a service", "multi-cloud kubernetes", "gpu cloud bursting"]
 hreflang_de: "/de/loesungen/gpu-cloud-bursting/"
@@ -70,6 +72,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What you get
 
 GPU cloud bursting on the Aenix platform is one elastic GPU pool spread across the infrastructure you already have and the clouds you want to reach.
@@ -85,11 +90,24 @@ GPU cloud bursting on the Aenix platform is one elastic GPU pool spread across t
 
 AI/ML teams with spiky training and inference demand, research institutions and universities running shared GPU for classes and experiments, and platform operators who want to offer GPU-as-a-service without reselling a hyperscaler. If your GPU demand is flat and predictable, you may not need bursting — buy for the baseline and stop. If it spikes, bursting is where the economics live.
 
+</div>
+</div>
+
 ---
 
 ## How it works
 
 The pattern is standard Kubernetes primitives, assembled and operated end-to-end.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Owned bare-metal GPU</b><div class="diagram__chips"><span>Baseline capacity</span><span>Fractional sharing (HAMi)</span></div></div>
+<div class="diagram__conn">unified by</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Aenix</b><div class="diagram__chips"><span>One Cluster API</span><span>Cluster Autoscaler</span></div></div>
+<div class="diagram__conn">bursts peaks into</div>
+<div class="diagram__node"><b>Public and sovereign cloud</b><div class="diagram__chips"><span>Elastic GPU, no lock-in</span></div></div>
+</div>
+</div>
 
 - **Cluster Autoscaler** watches for GPU pods that cannot be scheduled and provisions nodes on the right target — bare metal, hyperscaler or sovereign cloud — through the [Cluster API](https://cluster-api.sigs.k8s.io/), Kubernetes' declarative standard for lifecycle-managing clusters and machines. When the queue drains, the nodes are removed.
 - **Cilium plus a WireGuard mesh (Kilo)** provide the CNI and an encrypted overlay that spans clouds. Freshly autoscaled nodes advertise themselves into the mesh and reach shared storage with no manual steps — the [Kubernetes networking model](https://kubernetes.io/docs/concepts/services-networking/) treats them as if they were local.

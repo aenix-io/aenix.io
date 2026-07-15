@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "industry-landing"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "sovereign cloud for healthcare"
 secondary_keywords: ["healthcare data sovereignty", "healthcare private cloud", "NIS2 healthcare"]
 related_pages:
@@ -90,6 +92,16 @@ Most engagements combine two or more of these triggers.
 
 Health data is the highest-friction data class in European regulation, and two frameworks converge on it.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Patient data</b><div class="diagram__chips"><span>GDPR Article 9 special-category</span><span>Records, imaging, genomic data</span></div></div>
+<div class="diagram__conn">pinned to</div>
+<div class="diagram__node diagram__node--brand"><b>Sovereign platform on Cozystack</b><div class="diagram__chips"><span>Named EU / DACH regions</span><span>Provider's own hardware</span><span>Customer-held keys (BYOK)</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">produces</div>
+<div class="diagram__node"><b>Provider-owned audit trails</b><div class="diagram__chips"><span>Demonstrable to regulators</span><span>NIS2 essential-entity evidence</span></div></div>
+</div>
+</div>
+
 **GDPR special-category data.** Under [Article 9 of the GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj), data concerning health is special-category personal data. Processing is prohibited unless a specific condition applies, and even then providers must demonstrate heightened technical and organizational safeguards — encryption, access control, and documented residency. A generic hyperscaler contract asserts these controls; a sovereign platform lets you prove them, because the keys and the audit logs never leave your custody.
 
 **NIS2 essential-entity duties.** The health sector is an essential-entity sector under [NIS2 (Directive (EU) 2022/2555)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), Annex I. In-scope hospitals and health organizations carry binding risk-management, supply-chain-security, and incident-reporting obligations, with accountability at management level. [ENISA](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive-new) provides the reference guidance national authorities build on. A platform whose control plane is auditable open source shortens the distance between "we operate securely" and "here is the evidence."
@@ -99,6 +111,9 @@ Health data is the highest-friction data class in European regulation, and two f
 **Sovereign AI on patient data.** Medical AI is where sovereignty and economics collide: imaging and clinical-language models want GPUs, but the data cannot leave the perimeter. Running GPU inference and training inside the same platform as the data — rather than shipping records to an external AI API — keeps special-category data in-jurisdiction while still delivering modern model performance.
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## How Aenix engages with healthcare organizations
 
@@ -110,6 +125,9 @@ The standard engagement runs as a **[Platform Readiness Assessment](/services/pl
 - **Cost workstream** — an honest TCO model and repatriation candidates for sustained workloads where public-cloud economics no longer fit.
 
 Output is a written report aligned with regulator dialog plus a Phase 2 implementation roadmap.
+
+</div>
+</div>
 
 ---
 

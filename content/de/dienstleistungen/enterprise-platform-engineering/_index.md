@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/aenix-platform/idp-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Enterprise Platform Engineering ist die Disziplin, interne Plattformen für große Organisationen mit mehreren Produkt-Teams, BU-übergreifender Isolation und nachhaltigem Scale aufzubauen und zu betreiben. Sie unterscheidet sich vom Platform Engineering für ein einzelnes Team: Multi-Tenancy, Governance und Operations-at-Scale sind nicht verhandelbar. Zielgruppe sind Engineering-Organisationen mit 5+ Produkt-Teams, Multi-BU-Trennung, cross-jurisdiktionellen Souveränitätsanforderungen und Multi-Cluster-/Multi-Region-Betrieb. Aenix liefert dies mit Cozystack — strukturelle Mandantenfähigkeit über das Tenant CRD, KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium-eBPF-Networking und LINSTOR/DRBD-Storage — produktisiert als Ænix Platform Enterprise und IDP Edition inklusive Implementierungs- und Betriebs-Services.**
 quick_facts:
@@ -45,11 +47,14 @@ faq:
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Multi-DC-Plattformen; **[IDP Edition](/de/produkte/aenix-platform/idp-edition/)** für produkt-engineering-led IDP at enterprise scale.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-engineering/">Platform Engineering Services →</a>
 </div>
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Wann Enterprise-Scope zählt
 
@@ -61,6 +66,9 @@ faq:
 
 Für kleineren Scope siehe **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)**.
 
+</div>
+</div>
+
 ---
 
 ## Was bei Enterprise-Scale anders ist
@@ -70,6 +78,16 @@ Für kleineren Scope siehe **[Platform Engineering Services](/de/dienstleistunge
 - **Multi-Region-Operations** — Konsistenz über Geografien
 - **SLO-Disziplin** über Produkt-Teams
 - **Plattform-as-Product** — Internal NPS, Roadmap-Disziplin
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>5+ Produkt-Teams, Multi-BU</b><div class="diagram__chips"><span>Cross-jurisdiktionelle Souveränität</span><span>Multi-Cluster / Multi-Region</span></div></div>
+<div class="diagram__conn">teilen</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform auf Cozystack</b><div class="diagram__chips"><span>Tenant CRD (strukturelle Multi-Tenancy)</span><span>KubeVirt (VMs und Container)</span><span>Cilium-eBPF-Networking</span><span>LINSTOR/DRBD-Storage</span></div></div>
+<div class="diagram__conn">stellt bereit</div>
+<div class="diagram__node"><b>Isolierte Ressourcen je Mandant</b><div class="diagram__chips"><span>auf einer gemeinsamen Kubernetes-API</span><span>BU-übergreifende Trennung</span></div></div>
+</div>
+</div>
 
 ---
 

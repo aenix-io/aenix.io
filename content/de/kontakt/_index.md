@@ -22,7 +22,7 @@ offices:
 **Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Platform-Editions, Ihr Buyer-Profil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="#offices">Büro-Standorte ↓</a>
 </div>
 
@@ -131,7 +131,7 @@ Engineering-Teams verteilt in der EU und Zentralasien. Starke Präsenz in:
 ## Bereit zu starten?
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

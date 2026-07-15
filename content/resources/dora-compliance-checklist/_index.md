@@ -7,6 +7,8 @@ related_pages:
   - /resources/vmware-migration-checklist
   - /products/aenix-platform/enterprise-edition/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **The DORA Compliance Cloud Architecture Checklist is a free 35-point assessment that financial entities and ICT third-party providers use to evaluate whether their cloud infrastructure meets the EU Digital Operational Resilience Act (Regulation EU 2022/2554). It maps across five sections — workload portability and exit-readiness, concentration risk, operational resilience, sovereignty and supervisory access, and third-party risk and contracting — plus Article 21 risk management and Article 23 incident reporting. Aenix uses it during DORA-aligned readiness engagements. It pairs with Ænix Platform Enterprise Edition, built on Cozystack (CNCF Sandbox project, Apache 2.0), which delivers customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy aligned with ICT risk classification, and tested exit-readiness.**
 
@@ -45,7 +47,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[Download the DORA checklist (PDF)]
+<p class="lead-magnet-form__note">Download the DORA checklist (PDF)</p>
 </div>
 
 ---
@@ -60,6 +62,16 @@ faq:
 4. **Sovereignty and supervisory access** (5 checkpoints)
 5. **Third-party risk and contracting** (4 checkpoints)
 6. **Risk management and incident handling** (Article 21 + 23 specific) (12 checkpoints)
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>35-point self-assessment</b><div class="diagram__chips"><span>Article 21 + 23</span><span>Free PDF</span></div></div>
+<div class="diagram__conn">feeds</div>
+<div class="diagram__node diagram__node--brand"><b>DORA-aligned readiness engagement</b><div class="diagram__chips"><span>Used by Aenix</span></div></div>
+<div class="diagram__conn">prepares</div>
+<div class="diagram__node"><b>Supervisor dialog</b><div class="diagram__chips"><span>Tested exit-readiness</span></div></div>
+</div>
+</div>
 
 ---
 

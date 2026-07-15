@@ -8,11 +8,14 @@ language: "de"
 **Engagement-basierte Einstiegspunkte zu Aenix-Arbeit. Wählen Sie den Engagement-Typ, der zu dem passt, was Sie tun müssen — assess, build, betreiben. Alle Pfade führen zu Ænix-Platform-Deployments passend zu Ihrem Buyer-Profil.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment anfragen →</a>
 </div>
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Dienstleistungen durchsuchen
 
@@ -35,6 +38,9 @@ language: "de"
 - **[Kubernetes Consulting](/de/dienstleistungen/kubernetes-consulting/)** — Gezielte Kubernetes-Engagements
 - **[DevOps Consulting](/de/dienstleistungen/devops-consulting/)** — DevOps-Prozess + Tooling-Arbeit
 
+</div>
+</div>
+
 ---
 
 ## Engagement-Modell
@@ -44,6 +50,16 @@ language: "de"
 3. **Pilot-Engagement** (3-6 Monate, €100-300k) — definierter Slice, validierter Business Case
 4. **Vollständiger Edition-Build** — Wochen für ISP Edition; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML
 5. **Managed Operations** (laufender Retainer)
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Assessment</b><div class="diagram__chips"><span>Platform Readiness Assessment</span><span>Audit + Roadmap</span></div></div>
+<div class="diagram__conn">führt zu</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Platform-Build</b><div class="diagram__chips"><span>Platform Engineering</span><span>Internal Developer Platform</span><span>Public / Sovereign Cloud</span><span>AI Platform Build</span></div></div>
+<div class="diagram__conn">übergeben an</div>
+<div class="diagram__node"><b>Betrieb</b><div class="diagram__chips"><span>Managed Operations</span><span>DevOps Consulting</span></div></div>
+</div>
+</div>
 
 ---
 

@@ -8,11 +8,24 @@ language: "de"
 **Kostenlose herunterladbare Assets — Checklisten, Decision Guides, TCO-Worksheets, Maturity Assessments. Die gleichen Frameworks, die Aenix bei bezahlten Engagements verwendet, kostenlos zur Selbsteinschätzung Ihres Teams.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Oder gehen Sie tiefer mit Platform Readiness Assessment →</a>
 </div>
 
 ---
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Kostenlose Ressourcen</b><div class="diagram__chips"><span>Compliance-Checklisten</span><span>Migrations- &amp; Kosten-Worksheets</span><span>Decision Guides + Maturity Models</span></div></div>
+<div class="diagram__conn">herunterladen &amp; selbst einschätzen</div>
+<div class="diagram__node"><b>Engagement</b><div class="diagram__chips"><span>Discovery-Call</span><span>Platform Readiness Assessment</span></div></div>
+<div class="diagram__conn">führt zu</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Enterprise Edition</span><span>AI/ML Edition</span><span>IDP Edition</span></div></div>
+</div>
+</div>
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Ressourcen durchsuchen
 
@@ -30,6 +43,9 @@ language: "de"
 
 - **[Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/)** — 14-Seiten-PDF mit Foldout-Master-Decision-Tree. 7 Decisions, 4 Reference-Architekturen, GPU-Sizing-Tabellen. Passt zu: AI/ML Edition / [Souveräne-KI-Lösung](/de/loesungen/sovereign-ai/).
 - **[Platform Engineering Maturity Assessment](/de/ressourcen/platform-engineering-maturity-assessment/)** — 8-Dimensionen × 5-Stages-Rubrik (PDF + optionales interaktives Web-Formular). Passt zu: IDP Edition / [Internal Developer Platform Service](/de/dienstleistungen/internal-developer-platform/).
+
+</div>
+</div>
 
 ---
 

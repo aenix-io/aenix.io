@@ -9,6 +9,8 @@ related_pages:
   - /de/produkte/aenix-platform/ai-ml-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/universities/
 direct_answer: |
   **Eine Cloud-Plattform für Universitäten ist eine Cloud-native Infrastruktur, die drei überlappende Hochschul-Missionen auf einer Foundation bedient: Research Computing (besonders KI/ML und HPC), reproduzierbare Forschungs-Environments für Publikation und Cloud-native Curriculum-Auslieferung. Cozystack, das CNCF-Sandbox-Projekt hinter der Ænix Platform, liefert genau diese Foundation als Open Source unter Apache 2.0: Multi-Tenant-Isolation per Tenant CRD für Departments, Labore und Studierenden-Kohorten, KubeVirt für VMs und Container auf einer Kubernetes-API, GPU-as-a-Service für KI-Forschung sowie Air-Gapped-Support für souveräne Forschungsdaten. Aenix baut und betreibt diese Plattformen für Universitäten und Forschungsinstitute in der EU, DACH und Zentralasien.**
@@ -61,6 +63,18 @@ Aenix baut Cozystack-basierte Plattformen für Universitäten, Forschungsinstitu
 
 Moderne Forschung verlangt zunehmend GPU-Cluster, großskaliges Data Processing und HPC-nahe Workloads. KI/ML-Forschung, Computational Biology, Klimamodellierung, Materialwissenschaften — alle brauchen Infrastruktur, die zwischen klassischem HPC und modernem Cloud-native liegt.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Departments, Labore, Kohorten</b><div class="diagram__chips"><span>Quotas</span><span>RBAC</span><span>Audit-Trails</span></div></div>
+<div class="diagram__conn">isoliert durch</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack Tenant CRD</b><div class="diagram__chips"><span>Multi-Tenant</span><span>Self-Service</span></div></div>
+<div class="diagram__conn">provisioniert</div>
+<div class="diagram__node"><b>GPU-as-a-Service</b><div class="diagram__chips"><span>vGPU</span><span>MIG</span><span>Time-Slicing</span></div></div>
+<div class="diagram__conn">läuft neben</div>
+<div class="diagram__node"><b>VMs + Container</b><div class="diagram__chips"><span>KubeVirt</span><span>Eine Kubernetes-API</span></div></div>
+</div>
+</div>
+
 Cozystack liefert:
 - **GPU-Cluster** mit NVIDIA vGPU + MIG + Time-Slicing für geteilte Auslastung (validiert für A100, H100, H200, L40S, Blackwell)
 - **Multi-Tenant-Isolation pro Labor** — Tenant-CRD-Modell mit Quotas, RBAC und Audit-Trails pro Labor
@@ -92,6 +106,9 @@ Cozystack liefert:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Warum Universitäten speziell von Cozystack profitieren
 
 Über die drei Missionen hinaus gibt es mehrere universitätsspezifische Überlegungen:
@@ -113,6 +130,9 @@ Universitäten erneuern Infrastruktur nicht nach den Zeitplänen kommerzieller A
 
 ### EuroHPC- und nationale HPC-Einrichtungen benachbart
 Viele Universitäten haben Zugang zu EuroHPC oder nationalem HPC; Cozystack arbeitet daneben für das Workload-Portfolio, das keine volle HPC-Skala benötigt.
+
+</div>
+</div>
 
 ---
 

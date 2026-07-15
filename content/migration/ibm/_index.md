@@ -16,6 +16,8 @@ secondary_keywords:
   - "private cloud for banks"
 images: ["img/og/og-ibm-migration.png"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_de: /de/migration/ibm/
 related_pages:
   - /alternatives/openshift-alternative
@@ -124,6 +126,18 @@ POWER frames retired as cohorts complete; AIX/PowerVM and IBM support contracts 
 
 **Honest scoping note — endianness.** AIX is big-endian on POWER, x86 little-endian: there is no binary lift-and-shift. Modern microservices and standard database/middleware move cleanly; legacy monoliths need re-architecture. We separate the two classes in the assessment, not mid-cutover.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>IBM AIX / PowerVM on POWER</b><div class="diagram__chips"><span>LPARs</span><span>Socket-based licensing</span><span>SWMA/HWMA</span></div></div>
+<div class="diagram__conn">moves through</div>
+<div class="diagram__node"><b>Cohort-based cutover</b><div class="diagram__chips"><span>Microservices first</span><span>VMs via KubeVirt</span><span>Parallel-run validation</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack on commodity x86</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">completes with</div>
+<div class="diagram__node"><b>POWER frames retired</b><div class="diagram__chips"><span>~40% three-year TCO reduction</span><span>Oracle on dedicated bare-metal</span></div></div>
+</div>
+</div>
+
 <!-- /BLOCK 3 -->
 
 ---
@@ -153,6 +167,9 @@ The Ænix subscription is comparable to IBM maintenance alone, yet bundles suppo
 
 <!-- BLOCK 5: ORACLE -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Oracle: the licensing trap to avoid
 
 The single most expensive mistake in a Power-to-Kubernetes move is running production Oracle inside the cluster.
@@ -162,6 +179,9 @@ The single most expensive mistake in a Power-to-Kubernetes move is running produ
 - **The clean path:** keep production Oracle on dedicated, separately-licensed bare-metal and attach it to the platform as an **external application** (Helm chart / operator wrapping connection points and credentials via external secret reference) over a private network. Tenant workloads reach it like any managed endpoint; the database is never pulled into the cluster.
 
 It compresses the licensable footprint as non-Oracle workloads leave POWER. (Oracle's partitioning policy is "educational, not contractual" — finalize the model with Oracle and your legal team.)
+
+</div>
+</div>
 
 <!-- /BLOCK 5 -->
 

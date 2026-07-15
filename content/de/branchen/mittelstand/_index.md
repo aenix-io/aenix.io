@@ -5,6 +5,8 @@ related_pages:
   - /products/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/smb-mid-market/
 direct_answer: |
   **Diese Seite beantwortet ehrlich, wann Cozystack für den deutschen Mittelstand passt und wann nicht. Cozystack ist zweckgebaut für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder. Für kleine KMU (unter ~100 Mitarbeitern, single-tenant, einfache Infrastruktur) ist Cozystack Over-Engineering — Hyperscaler, Hetzner oder Proxmox sind dort einfacher. Cozystack lohnt sich für Mittelständler mit regulierten Daten, DACH-Souveränitätsanforderungen, interner Plattform-Engineering-Funktion oder einem Weg zu Multi-Tenant (etwa SaaS). KMU konsumieren die Plattform meist als Produkt über einen Aenix-Partner (regionaler MSP oder Hosting-Anbieter), der die Ænix Platform darunter betreibt. Direktes Aenix-Engagement ist im KMU-Maßstab selten passend.**
@@ -42,11 +44,26 @@ faq:
 
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — aber **nur über einen Aenix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden konsumieren Cloud als Produkt vom Partner, der die Ænix Platform darunter betreibt. Ein direktes Aenix-Engagement passt im KMU-Maßstab selten.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>KMU-Kunde</b></div>
+<div class="diagram__conn">konsumiert Cloud von</div>
+<div class="diagram__node"><b>Aenix-Partner</b><div class="diagram__chips"><span>Regionaler MSP</span><span>Hosting-Anbieter</span></div></div>
+<div class="diagram__conn">betreibt</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b></div>
+<div class="diagram__conn">basiert auf</div>
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Apache 2.0</span><span>CNCF-Projekt</span></div></div>
+</div>
+</div>
+
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Kurzer Fit-Check-Call (15 Min, kostenlos)</a>
 </div>
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Wann Cozystack NICHT für KMU passt
 
@@ -63,6 +80,9 @@ In diesen Fällen ist **Cozystack Over-Engineering**. Realistische Alternativen:
 - **Proxmox VE** — für KMU-On-Prem-Virtualisierung
 - **Hetzner / OVHcloud / ähnliche** — Managed Infrastructure
 - **Cloud-Managed-Plattformen** — DigitalOcean, Linode, Hostinger für sehr kleine Teams
+
+</div>
+</div>
 
 ---
 

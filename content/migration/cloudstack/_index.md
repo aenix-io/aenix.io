@@ -8,6 +8,8 @@ related_pages:
   - /services/platform-readiness-assessment
   - /alternatives/vmware-alternative
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **CloudStack-to-Cozystack migration moves an Apache CloudStack IaaS deployment onto a Kubernetes-native foundation. It is aimed at hosting providers, ISPs, and regional cloud operators that run multi-tenant infrastructure on CloudStack and want to modernize. Aenix, the team behind Cozystack, migrates VM images from KVM or XenServer to KubeVirt, maps CloudStack accounts and projects to the Cozystack Tenant CRD, and re-architects storage and networking on LINSTOR/DRBD and Cilium eBPF. CloudStack service-provider capabilities such as multi-tenant billing, customer portal, and service catalog map to the Tenant CRD plus cozyportal model. A mid-size service-provider migration typically runs four to twelve months, delivered on the Apache 2.0 licensed Cozystack stack with no per-CPU licensing.**
 quick_facts:
@@ -54,11 +56,23 @@ faq:
 
 VM image migration: KVM/XenServer → KubeVirt. Tenant model: CloudStack accounts/projects → Tenant CRD. Storage and network re-architect on Kubernetes-native foundation.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Apache CloudStack</b><div class="diagram__chips"><span>KVM / XenServer images</span><span>Accounts &amp; projects</span></div></div>
+<div class="diagram__conn">converts via</div>
+<div class="diagram__node"><b>Migration path</b><div class="diagram__chips"><span>KubeVirt image conversion</span><span>Tenant CRD mapping</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>LINSTOR/DRBD storage</span><span>Cilium eBPF networking</span></div></div>
+</div>
+</div>
+
 Typical: 4-12 months for mid-size service-provider deployment.
 
 CloudStack's service-provider features (multi-tenant billing, customer portal, service catalog) map naturally to Cozystack's Tenant CRD + cozyportal model.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 For broader engagement methodology see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 

@@ -7,6 +7,8 @@ related_pages:
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Eine Proxmox-zu-Cozystack-Migration verlagert Workloads von Proxmox VE auf Cozystack, eine offene Cloud-Plattform auf Kubernetes-Basis. Sie richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds, die das operative Modell von Proxmox bei 50+ Hosts, Multi-Tenancy für externe Kunden oder einem Service-Katalog jenseits reiner VMs überwachsen haben. VM-Images werden von KVM auf KubeVirt übertragen, Storage von ZFS oder Ceph auf LINSTOR, und Proxmox-Berechtigungen auf das Tenant-CRD-Modell. Aenix, das Open-Core-Unternehmen hinter Cozystack, führt diese Migrationen end-to-end durch: produktisierter Installer für die ISP Edition in Wochen, Workload-Migration in Kohorten über 3 bis 6 Monate.**
 
@@ -46,7 +48,7 @@ faq:
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab €1.3k/Monat Support-Tier.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/alternativen/proxmox-alternative">Proxmox-Alternative →</a>
 </div>
 
@@ -66,6 +68,16 @@ faq:
 ## Migrations-Pattern
 
 VM-Image-Migration: KVM (Proxmox) → KubeVirt (Cozystack). Storage: ZFS / Ceph → LINSTOR. Tenant-Modell: Proxmox-Permissions → Tenant CRD. Produktisierter Installer bringt ISP Edition in Wochen live; Workload-Migration in Kohorten über 3-6 Monate für mittelgroße Estates.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Proxmox VE</b><div class="diagram__chips"><span>KVM</span><span>ZFS / Ceph</span></div></div>
+<div class="diagram__conn">verlagert via</div>
+<div class="diagram__node"><b>VM-Image-Migration</b><div class="diagram__chips"><span>KVM zu KubeVirt</span><span>Permissions zu Tenant CRD</span></div></div>
+<div class="diagram__conn">läuft auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR/DRBD</span></div></div>
+</div>
+</div>
 
 ---
 

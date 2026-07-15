@@ -2,6 +2,8 @@
 title: "Ænix Platform"
 description: "Ænix Platform — turnkey Cloud-in-a-Box von Aenix auf Open-Source-Cozystack. Fünf Editions, Hosting-Panel, Billing, Portale, Payments, bereit zum Betrieb."
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Ænix Platform ist eine turnkey Cloud-in-a-Box von Aenix, dem Open-Core-Unternehmen hinter Cozystack. Sie basiert auf dem Open-Source-Projekt Cozystack (CNCF-Sandbox-Projekt, Apache 2.0) und ergänzt alles, was ein Betreiber für ein echtes Cloud-Geschäft braucht: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing (Backend + Frontend), Payment-Integrationen, WHMCS-Integration und Enterprise-SLA. Das Produkt erscheint in fünf Editions — Public Cloud, ISP, Enterprise, IDP und AI/ML — passend zu fünf Buyer-Profilen. Technisch ist die Plattform Kubernetes-nativ (KubeVirt für VMs und Container, Cilium für eBPF-Networking, LINSTOR für Storage, Tenant-CRD-Mandantenfähigkeit) und läuft auf kundenkontrollierter Hardware.**
 quick_facts:
@@ -37,14 +39,27 @@ faq:
 **Ænix Platform ist eine turnkey Cloud-in-a-Box. Sie basiert auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen (CNCF-Projekt, Apache 2.0), und ergänzt alles, was ein Betreiber braucht, um ein echtes Cloud-Geschäft zu führen: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing (Backend + Frontend), Payment-Integrationen, WHMCS-Integration, Enterprise-SLA. Fünf Editions passen zu fünf Buyer-Profilen. Installieren. Nutzer einbinden. Betrieb starten.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="https://cozystack.io">Cozystack Open Source →</a>
 </div>
+
 ---
 
 ## Was Ænix Platform über Open-Source-Cozystack hinaus liefert
 
 Cozystack ist der Motor. Ænix Platform ist das Auto — turnkey Cloud mit allem, was ein echter Betreiber braucht:
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Hosting-Panel</span><span>Billing</span><span>Portale</span><span>WHMCS-Integration</span><span>Enterprise-SLA</span></div></div>
+<div class="diagram__conn">produktisiert</div>
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Tenant-CRD-Mandantenfähigkeit</span><span>Service-Wizards</span><span>Admin-UI</span></div></div>
+<div class="diagram__conn">läuft auf</div>
+<div class="diagram__node"><b>Kubernetes-nativ</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium (eBPF)</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">auf</div>
+<div class="diagram__node"><b>kundenkontrollierte Hardware</b><div class="diagram__chips"><span>eigene Rechenzentren</span><span>gemietete Bare-Metal-Server</span></div></div>
+</div>
+</div>
 
 ![Ænix Platform console — managed tenant Kubernetes clusters](/images/uploads/2026/04/cozystack-managed-kubernetes.png)
 
@@ -67,6 +82,9 @@ Cozystack ist der Motor. Ænix Platform ist das Auto — turnkey Cloud mit allem
 | **Migrations-Tooling und -Expertise** | Module für Migration von VMware, OpenStack, OpenNebula, Virtuozzo |
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Fünf Editions
 
@@ -119,6 +137,9 @@ KI-Plattform-Automatisierung out-of-the-box: Standard-KI-Workloads, Service-APIs
 **Engagement-Größe:** €500k - €3M+ Projekt; Managed-Retainer.
 
 [AI/ML Edition Details →](/de/produkte/aenix-platform/ai-ml-edition/)
+
+</div>
+</div>
 
 ---
 
@@ -176,7 +197,7 @@ Ja — bis zu 40% Marge auf Ænix-Platform-Verkäufe für Reseller, Integratoren
 Buchen Sie einen 30-Minuten-Discovery-Call. Wir besprechen Ihre Plattform-Prioritäten, regulatorischen Kontext, Scope und welche Ænix Platform Edition passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

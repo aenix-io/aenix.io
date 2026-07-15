@@ -7,7 +7,7 @@ language: "de"
 **Aenix bietet Enterprise-Support für Ænix-Platform-Engagements und für Organisationen, die Cozystack selbst betreiben. Vier Support-Tiers — Basic, Standard, Plus, Enterprise — passend zu Ihren SLA-Anforderungen, Compliance-Posture und Ops-Kapazität.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/preise/">Pricing-Tiers ansehen →</a>
 </div>
 
@@ -49,7 +49,7 @@ Coverage:
 ## Wie starten
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

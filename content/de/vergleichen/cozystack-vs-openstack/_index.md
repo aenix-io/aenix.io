@@ -7,6 +7,8 @@ related_pages:
   - /de/produkte/aenix-platform/public-cloud-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack und OpenStack sind beide quelloffene Private-Cloud-Plattformen unter Apache 2.0. Der Unterschied liegt in Generation und operativem Footprint: OpenStack besteht aus 50-100+ eigenständigen Diensten (Nova, Neutron, Cinder, Keystone), während Cozystack auf einer einzigen Kubernetes-API aufsetzt und VMs sowie Container über KubeVirt vereint, mit Cilium (eBPF) fürs Networking und LINSTOR/DRBD für Storage. Für OpenStack-erfahrene Teams, die schrumpfende Engineering-Pools, schwere Upgrades und einen Kubernetes-First-Workload-Mix erleben, bietet Aenix die produktisierte Ænix Platform plus Betriebs-Services als Modernisierungspfad — turnkey, GitOps-gesteuert und ohne Core-basierte Lizenzierung.**
 quick_facts:
@@ -43,6 +45,8 @@ faq:
 
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter, die von OpenStack modernisieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack at scale konsolidieren.
 
+<div class="compare-elevated compare-elevated--col3">
+
 | | OpenStack | Cozystack |
 |---|---|---|
 | **Lizenz** | Apache 2.0 | Apache 2.0 |
@@ -52,6 +56,8 @@ faq:
 | **Multi-Tenancy** | Keystone Projects | Tenant CRD |
 | **Container** | Add-on | Native |
 | **Upgrade-Pfad** | Komplex | GitOps-managed |
+
+</div>
 
 ---
 

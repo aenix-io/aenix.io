@@ -8,6 +8,8 @@ related_pages:
   - /products/cozystack
   - /services/platform-readiness-assessment
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **OpenStack-to-Cozystack migration is the process of moving virtual machines, tenants, networking, and storage from an OpenStack cloud onto Cozystack, an open-source CNCF Sandbox platform that runs VMs and containers on a single Kubernetes API. It targets hosting providers, ISPs, and large operators where shrinking OpenStack engineer availability and operational footprint are forcing modernization. Aenix, the team behind Cozystack, runs these migrations end to end: KVM images convert to KubeVirt, the Keystone tenant model is re-architected onto the Tenant CRD, Neutron networking moves to Cilium (eBPF), and Cinder or Ceph storage moves to LINSTOR or stays on Ceph. A typical mid-size migration takes 4-12 months. Cozystack is Apache 2.0, with no per-CPU or per-core licensing.**
 quick_facts:
@@ -55,11 +57,23 @@ faq:
 
 VM image migration: KVM → KubeVirt is straightforward. Tenant model: re-architect from Keystone to Tenant CRD. Network: Neutron → Cilium. Storage: Cinder/Ceph → LINSTOR or Ceph (often Ceph stays).
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>OpenStack</b><div class="diagram__chips"><span>KVM images</span><span>Keystone tenants</span><span>Neutron networking</span></div></div>
+<div class="diagram__conn">converts via</div>
+<div class="diagram__node"><b>Migration path</b><div class="diagram__chips"><span>KVM to KubeVirt</span><span>Keystone to Tenant CRD</span><span>Neutron to Cilium</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Cilium eBPF networking</span><span>LINSTOR or Ceph storage</span></div></div>
+</div>
+</div>
+
 Typical: 4-12 months for mid-size deployment.
 
 For full comparison see **[OpenStack vs Cozystack modernization](/blog/2026/05/openstack-vs-cozystack-modernization/)**.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

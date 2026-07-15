@@ -3,6 +3,8 @@ title: "Cloud-Plattform für MSPs — gebrandeter Cloud-Produkt für Managed Ser
 description: "Managed Service Provider in 2026 werden von Enterprise-Kunden nach Cloud-Fähigkeiten gefragt, die MSP-Managed-Service-Beziehung mit..."
 related_pages: ["/de/dienstleistungen/white-label-cloud", "/products/cozystack"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/msp/
 direct_answer: |
   **Eine Cloud-Plattform für MSPs ist eine white-label-fähige Cloud-Infrastruktur, mit der Managed Service Provider unter eigener Marke Hyperscaler-ähnliche Dienste an ihre Kunden verkaufen. Zielgruppe sind Tier-2/Tier-3-MSPs, Systemintegratoren, Spezial-MSPs in regulierten Branchen und Reseller-Channel-Partner, die Cloud-Fähigkeiten ohne Bindung an einen Hyperscaler aufbauen wollen. Aenix liefert die produktisierte Ænix Platform (ISP Edition) auf Basis von Cozystack: KubeVirt für VMs und Container über eine Kubernetes-API, Cilium-Networking (eBPF) und LINSTOR/DRBD-Storage. Sie umfasst vollständig white-label-fähiges cozyportal, ein Multi-Tier-Reseller-Modell (Aenix zu MSP zu MSP-Kunden), WHMCS-integriertes Billing und ein Partner-Programm mit bis zu 40 Prozent Marge auf weiterverkaufte Engagements.**
@@ -65,9 +67,22 @@ faq:
 - **Operations-Workflow** — Kundensupport, SLA-Management, Observability
 - **Souveränitäts-Positionierung** — für MSPs, die regulierte Branchen bedienen
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Aenix-Tenant</b></div>
+<div class="diagram__conn">verschachtelt</div>
+<div class="diagram__node"><b>MSP-Tenant</b><div class="diagram__chips"><span>Gebrandetes cozyportal</span><span>WHMCS-integriertes Billing</span></div></div>
+<div class="diagram__conn">rechnet ab</div>
+<div class="diagram__node"><b>MSP-Kunden-Tenant</b></div>
+</div>
+</div>
+
 Für das vollständige Engagement siehe **[White-Label-Cloud-Services](/de/dienstleistungen/white-label-cloud/)**.
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Warum Cozystack zu MSPs passt
 
@@ -76,6 +91,9 @@ Für das vollständige Engagement siehe **[White-Label-Cloud-Services](/de/diens
 - **WHMCS nativ** — Billing läuft über das bestehende Kundenmanagement des MSP
 - **Open-Source-Plattform** — MSP ist nicht in Vendor-Lizenzierungs-Ökonomie eingesperrt
 - **Service-Katalog-Flexibilität** — MSP kuratiert, welche Services exponiert werden
+
+</div>
+</div>
 
 ---
 

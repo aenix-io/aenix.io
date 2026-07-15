@@ -1727,18 +1727,23 @@ summary:focus-visible,
 
 /* ── Mid-page inline CTAs (server-injected via render-heading hook) ── */
 .inline-cta {
-  margin: 2.25rem 0;
-  padding: 0.9rem 1.15rem;
-  border-radius: 10px;
-  border: 1px solid var(--border-color, rgba(148,163,184,0.22));
-  background: var(--bg-secondary, #0e1424);
+  margin: 1.5rem 0;
+  padding: 1rem 1.375rem;
+  border-radius: 12px;
+  border: 1px solid rgba(1, 165, 255, 0.18);
+  background: rgba(1, 165, 255, 0.04);
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem 0.75rem;
+  align-items: center;
+  gap: 0.5rem 0.875rem;
   font-size: 0.95rem;
   line-height: 1.4;
 }
+/* The CTA injects just before a heading; tighten the heading's top
+   margin so the callout doesn't float in a big empty gap. Needs to
+   beat .page-content > h2 (0,1,1), so scope it to .page-content. */
+.page-content .inline-cta + h2,
+.page-content .inline-cta + h3 { margin-top: 1.75rem; }
 .inline-cta--hard { border-color: rgba(1, 165, 255, 0.35); }
 .inline-cta__lead { color: var(--text-primary, #F1F5F9); font-weight: 600; }
 .inline-cta__link {
@@ -2601,10 +2606,10 @@ summary:focus-visible,
   display: flex;
   flex-wrap: wrap;
   gap: 0.625rem;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 1.75rem 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
   font-size: 0.8125rem;
   letter-spacing: 0.02em;
   color: var(--aenix-text-muted);
@@ -2693,6 +2698,12 @@ summary:focus-visible,
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem 1.25rem;
   margin: 1.5rem 0;
+}
+/* Pin the capability grid to 3 columns on desktop so it stays a clean
+   3-up (the "3x3" intent) on the wider content track instead of
+   reflowing to 4 with an orphan card. */
+@media (min-width: 760px) {
+  .capability-grid-3x3 { grid-template-columns: repeat(3, 1fr); }
 }
 .capability-grid-3x3 > p,
 .trigger-grid-2x2 > p {
@@ -2797,21 +2808,26 @@ summary:focus-visible,
   font-size: 0.9375rem;
 }
 
-/* Lead magnet form: framed panel with generous air (composition
-   per Figma block 14 — the split CTA variant is .lead-magnet-split) */
+/* Lead magnet form: layout-only wrapper — no box. The Pipedrive loader
+   renders its own themed card; we do not frame forms in a panel. */
 .lead-magnet-form {
   margin: 2rem 0;
-  padding: 2.25rem 2.5rem;
-  border: 1px solid rgba(1, 165, 255, 0.22);
-  border-radius: 16px;
-  background:
-    radial-gradient(ellipse at 0% 0%, rgba(1, 165, 255, 0.08), transparent 60%),
-    rgba(255, 255, 255, 0.02);
 }
 .lead-magnet-form > h3:first-child,
 .lead-magnet-form > p:first-child { margin-top: 0; }
-@media (max-width: 640px) {
-  .lead-magnet-form { padding: 1.5rem 1.25rem; }
+/* Deliverable caption under the form (the asset is delivered via the form,
+   so this is a label — not a live link). Brand-blue marker, never orange. */
+.lead-magnet-form__note {
+  margin: 1.5rem 0 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(1, 165, 255, 0.15);
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+.lead-magnet-form__note::before {
+  content: "\2193\00a0";
+  color: #01A5FF;
+  font-weight: 700;
 }
 
 /* ============================================================
@@ -3637,6 +3653,18 @@ a.card--hub {
     radial-gradient(ellipse at 0% 0%, rgba(1, 165, 255, 0.07), transparent 60%),
     rgba(255, 255, 255, 0.02);
 }
+/* When the panel wraps a real section heading (h2/h3) instead of a
+   sample h3 + eyebrow: keep the heading tidy inside the panel. */
+.lead-magnet-split h2,
+.lead-magnet-split h3:not(.faq-summary__title) {
+  margin: 0 0 0.5rem;
+  font-size: 1.375rem;
+  line-height: 1.3;
+  color: var(--aenix-text);
+}
+.lead-magnet-split > div > :first-child { margin-top: 0; }
+.lead-magnet-split > div > :last-child { margin-bottom: 0; }
+.lead-magnet-split .cta-row { margin: 0; }
 .lead-magnet-split p.lead-magnet-split__label,
 .lead-magnet-split__label {
   margin: 0 0 0.875rem;
@@ -3915,9 +3943,9 @@ a.card--hub {
    Text first in DOM (citation order preserved); stacks on mobile. --- */
 .seo-direct-answer.answer-split {
   display: grid;
-  grid-template-columns: minmax(0, 8fr) minmax(0, 4fr);
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
   gap: 2.5rem;
-  align-items: center;
+  align-items: start;
   max-width: none;
 }
 .answer-split__text { min-width: 0; }
@@ -3925,16 +3953,25 @@ a.card--hub {
   margin: 0;
   min-width: 0;
 }
-.answer-split__media img {
+/* The answer illustration is a product screenshot in a browser frame,
+   shown at a FIXED, pleasant aspect (a readable top-left crop) that is
+   independent of the answer text height — so it never stretches into a
+   tall sliver when the answer expands, and never collapses into a
+   cropped square when it is clamped. Top-aligned with the answer. */
+.answer-split__media .browser-frame img {
   display: block;
   width: 100%;
+  aspect-ratio: 4 / 3;
   height: auto;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
-  background: var(--aenix-bg-tint);
+  object-fit: cover;
+  object-position: left top;
+  margin: 0;
+  border: none;
+  border-radius: 0;
 }
 @media (max-width: 760px) {
   .seo-direct-answer.answer-split { grid-template-columns: 1fr; gap: 1.5rem; }
+  .answer-split__media .browser-frame img { aspect-ratio: 16 / 9; }
 }
 
 /* --- Edition cards (Block 27): h3-led product sections wrapped
@@ -3991,3 +4028,902 @@ a.card--hub {
   font-weight: 600;
 }
 .compare-elevated--col3 th:nth-child(3) { color: var(--aenix-primary); }
+
+/* --- One content track, no width jumps (owner rule). On
+   list-template pages the GEO blocks render as SIBLINGS of
+   .page-content inside the container; pin them to the same
+   centered content track (var --content-max). Single-template
+   pages nest them inside .page-content and are unaffected. --- */
+.container > .seo-direct-answer,
+.container > .seo-quick-facts,
+.container > .seo-faq {
+  max-width: var(--content-max);
+  margin-inline: auto;
+}
+.container > .seo-direct-answer > strong,
+.container > .seo-direct-answer > p {
+  display: block;
+  max-width: 62ch;
+}
+.container > .seo-direct-answer.answer-split { max-width: var(--content-max); }
+.container > .seo-direct-answer.answer-split .answer-split__text > strong,
+.container > .seo-direct-answer.answer-split .answer-split__text > p {
+  max-width: none;
+}
+
+/* --- Chrome review round fixes --- */
+
+/* Comparison tables fill the track edge to edge; the wrapper div
+   carries the mobile scroll instead of display:block on the table */
+.compare-elevated { overflow-x: auto; }
+.compare-elevated table {
+  display: table;
+  width: 100%;
+  overflow: visible;
+  margin: 1.5rem 0;
+}
+.compare-elevated th { background: none; }
+
+/* (Answer illustration sizing is handled above via the browser-frame
+   fixed-aspect rule — no stretch-to-text-height crop.) */
+
+/* Children hub grid joins the content track on list pages */
+.container > .card-grid--hub {
+  max-width: var(--content-max);
+  margin-inline: auto;
+}
+
+/* A fully bold opening paragraph reads as an editorial lede,
+   not a bold wall */
+.page-content > p:first-of-type:has(> strong:only-child) {
+  font-size: 1.1875rem;
+  line-height: 1.6;
+}
+.page-content > p:first-of-type > strong:only-child {
+  font-weight: 500;
+  color: var(--aenix-text);
+}
+
+/* Content screenshots sit framed on the dark theme, filling the
+   track edge to edge like the tables around them */
+.page-content > p > img:only-child {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: var(--aenix-bg-tint);
+}
+
+/* An odd trailing hub card spans the row instead of orphaning */
+.card-grid--hub > .card--hub:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+
+/* ════════════════════════════════════════════════════════════════════
+   NEW CONTENT & LONG-TEXT BLOCKS — Figma «Финал, все блоки»
+   Blocks 29–38 + Illustration Guidelines / Long-form reference.
+   Composition from Figma; tokens, fonts, and buttons are ours.
+   Added 2026-07-14.
+   ════════════════════════════════════════════════════════════════════ */
+
+/* --- Shared kicker: mono eyebrow label --- */
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--aenix-text-muted);
+  margin: 0 0 0.75rem;
+  display: block;
+}
+.kicker--brand { color: var(--aenix-primary); }
+
+/* --- Shared small icon (right-aligned, muted) --- */
+.card-ico-sm {
+  display: inline-grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  flex: 0 0 auto;
+  color: var(--aenix-text-muted);
+}
+.card-ico-sm svg { width: 16px; height: 16px; display: block; }
+
+/* --- Shared lightweight diagram (mono nodes + chips) --- */
+.diagram { display: flex; flex-direction: column; gap: 0.625rem; }
+.diagram__node {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 0.75rem 0.875rem;
+  text-align: center;
+}
+.diagram__node--brand {
+  border-color: rgba(1, 165, 255, 0.35);
+  background: rgba(1, 165, 255, 0.05);
+}
+.diagram__node b {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--aenix-text);
+}
+.diagram__node--brand b { color: var(--aenix-primary); }
+.diagram__chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+}
+.diagram__chips span {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--aenix-text-muted);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 5px;
+  padding: 0.125rem 0.4rem;
+}
+.diagram__row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.5rem; }
+.diagram__conn {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--aenix-text-muted);
+}
+
+/* --- Block 29 — Long-form editorial --- */
+.longform { max-width: 720px; margin: 2.5rem 0; }
+.longform__title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0.25rem 0 1.25rem;
+  text-wrap: balance;
+  color: var(--aenix-text);
+}
+.longform__lead {
+  margin: 0 0 1.25rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--aenix-text);
+}
+.longform__more { margin-top: 0.25rem; }
+.longform__more > summary {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: fit-content;
+  color: var(--aenix-primary);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.longform__more > summary::-webkit-details-marker { display: none; }
+.longform__more > summary::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translate(-0.1rem, -0.1rem);
+  transition: transform 0.15s ease;
+}
+.longform__more[open] > summary { margin-bottom: 1rem; }
+.longform__more[open] > summary::after { transform: rotate(-135deg) translate(-0.1rem, -0.1rem); }
+.longform__more p {
+  margin: 0 0 1rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--aenix-text-muted);
+}
+.longform__more p:last-child { margin-bottom: 0; }
+
+/* --- Block 30 — Editorial split --- */
+.editorial-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 2.5rem;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+.editorial-split__text h3 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--aenix-text);
+}
+.editorial-split__text > p {
+  margin: 0 0 1rem;
+  line-height: 1.7;
+  color: var(--aenix-text-muted);
+}
+.editorial-split__text > p:first-of-type { color: var(--aenix-text); }
+.editorial-split__text .cta-row { margin: 1.5rem 0 0; }
+.editorial-split__media { min-width: 0; }
+.editorial-split__media > img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: var(--aenix-bg-tint);
+}
+@media (max-width: 860px) {
+  .editorial-split { grid-template-columns: 1fr; gap: 1.75rem; }
+  .editorial-split__text { order: 1; }
+  .editorial-split__media { order: 2; }
+}
+
+/* --- Block 31 — Architecture section --- */
+.arch-section { margin: 2.5rem 0; }
+.arch-section > h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--aenix-text);
+}
+.arch-section__lead {
+  max-width: 62ch;
+  margin: 0;
+  line-height: 1.7;
+  color: var(--aenix-text-muted);
+}
+.arch-section__fig {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  background: var(--aenix-bg-tint);
+  padding: 1.75rem;
+  width: 100%;
+  margin: 1.5rem 0;
+}
+.arch-section__fig > img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+.arch-section__notes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+}
+.arch-section__note h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.375rem;
+  font-size: 1rem;
+  color: var(--aenix-text);
+}
+.arch-section__note h4 .card-ico-sm { color: var(--aenix-primary); }
+.arch-section__note p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--aenix-text-muted);
+}
+@media (max-width: 700px) {
+  .arch-section__notes { grid-template-columns: 1fr; gap: 1.25rem; }
+}
+
+/* --- Block 32 — Screenshot in a browser frame --- */
+.screenshot-section { margin: 2.5rem 0; }
+.browser-frame {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--aenix-bg-tint);
+}
+.browser-frame__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+.browser-frame__dots { display: flex; gap: 0.375rem; flex: 0 0 auto; }
+.browser-frame__dots span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.18);
+}
+.browser-frame__url {
+  margin: 0 auto;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--aenix-text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+}
+.browser-frame img { display: block; width: 100%; border-radius: 0; }
+.screenshot-section__caption {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--aenix-text-muted);
+  margin-top: 0.875rem;
+}
+
+/* --- Block 33 — Documentation highlight --- */
+.doc-highlight {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  background: var(--aenix-bg-tint);
+  padding: 1.75rem 2rem;
+  margin: 2rem 0;
+}
+.doc-highlight__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.doc-highlight__head .kicker--brand { margin-bottom: 0.375rem; }
+.doc-highlight__head h3 {
+  margin: 0;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  color: var(--aenix-text);
+}
+.doc-highlight__badge {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--aenix-primary);
+  border: 1px solid rgba(1, 165, 255, 0.3);
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+}
+.doc-highlight__badge::before {
+  content: "";
+  width: 0.375rem;
+  height: 0.375rem;
+  border-radius: 50%;
+  background: var(--aenix-primary);
+}
+.doc-highlight__step {
+  display: grid;
+  grid-template-columns: 2rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  margin-top: 1.5rem;
+}
+.doc-highlight__num {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: grid;
+  place-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--aenix-text-muted);
+}
+.doc-highlight__step-title {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--aenix-text);
+}
+.doc-highlight .highlight { margin: 0.5rem 0 0; width: 100%; }
+.doc-highlight .highlight pre { border-radius: 10px; }
+.doc-highlight__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  background: rgba(1, 165, 255, 0.05);
+  border: 1px solid rgba(1, 165, 255, 0.18);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+.doc-highlight__note-ico { flex: 0 0 auto; color: var(--aenix-primary); margin-top: 0.1rem; }
+.doc-highlight__note-ico svg { width: 18px; height: 18px; display: block; }
+.doc-highlight__note strong { display: block; color: var(--aenix-text); font-weight: 600; margin-bottom: 0.2rem; }
+.doc-highlight__note p { margin: 0; font-size: 0.9375rem; line-height: 1.6; color: var(--aenix-text-muted); }
+.doc-highlight__note code {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--aenix-text);
+  border-radius: 5px;
+  padding: 0.1rem 0.375rem;
+}
+
+/* --- Block 34 — Resource cards --- */
+.resource-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 14px;
+  background: var(--aenix-bg-tint);
+  padding: 1.5rem;
+}
+.resource-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.875rem;
+}
+.resource-card__top .kicker { margin: 0; }
+.resource-card h3 { margin: 0 0 0.5rem; font-size: 1.0625rem; color: var(--aenix-text); }
+.resource-card p { margin: 0 0 1.25rem; font-size: 0.9375rem; line-height: 1.6; color: var(--aenix-text-muted); }
+.resource-card__link {
+  margin-top: auto;
+  font-size: 0.875rem;
+  color: var(--aenix-primary);
+  text-decoration: none;
+}
+.resource-card__link:hover { text-decoration: underline; }
+
+/* --- Block 35 — Checklist (explicit .checklist + Goldmark task lists) --- */
+.checklist,
+.page-content ul:has(> li > input[type="checkbox"]) {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+.checklist > li,
+.page-content ul:has(> li > input[type="checkbox"]) > li {
+  position: relative;
+  margin: 0;
+  padding: 1rem 0 1rem 2.125rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--aenix-text-muted);
+}
+.checklist > li:last-child,
+.page-content ul:has(> li > input[type="checkbox"]) > li:last-child { border-bottom: none; }
+/* Draw our own box; hide the native disabled checkbox */
+.page-content ul:has(> li > input[type="checkbox"]) > li > input[type="checkbox"] { display: none; }
+.checklist > li::before,
+.page-content ul:has(> li > input[type="checkbox"]) > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1.05rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-sizing: border-box;
+}
+/* Checked / done: filled box + white check */
+.checklist > li.is-done::before,
+.page-content ul:has(> li > input[type="checkbox"]) > li:has(input:checked)::before {
+  background: var(--aenix-primary);
+  border-color: var(--aenix-primary);
+}
+.checklist > li.is-done::after,
+.page-content ul:has(> li > input[type="checkbox"]) > li:has(input:checked)::after {
+  content: "";
+  position: absolute;
+  left: 0.44rem;
+  top: 1.18rem;
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* Title / description */
+.checklist > li strong,
+.page-content ul:has(> li > input[type="checkbox"]) > li strong {
+  display: block;
+  color: var(--aenix-text);
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+.checklist > li span,
+.page-content ul:has(> li > input[type="checkbox"]) > li span { display: block; }
+.checklist > li.is-done strong,
+.page-content ul:has(> li > input[type="checkbox"]) > li:has(input:checked) strong {
+  text-decoration: line-through;
+  color: var(--aenix-text-muted);
+  font-weight: 600;
+}
+
+/* --- Block 36 — Metrics grid --- */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  background: var(--aenix-bg-tint);
+  overflow: hidden;
+  margin: 2rem 0;
+}
+.metric { padding: 1.75rem; border-right: 1px solid rgba(255, 255, 255, 0.08); }
+.metric:last-child { border-right: none; }
+.metric__value {
+  display: block;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--aenix-text);
+}
+.metric__label { display: block; margin-top: 0.5rem; font-size: 0.9375rem; color: var(--aenix-text); }
+.metric__note {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--aenix-text-muted);
+}
+@media (max-width: 760px) {
+  .metrics-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .metric:nth-child(2) { border-right: none; }
+  .metric:nth-child(1), .metric:nth-child(2) { border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+}
+@media (max-width: 460px) {
+  .metrics-grid { grid-template-columns: 1fr; }
+  .metric { border-right: none; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
+  .metric:last-child { border-bottom: none; }
+}
+
+/* --- Block 37 — Quote with person (framed testimonial) --- */
+.quote-person {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 16px;
+  background: var(--aenix-bg-tint);
+  padding: 2rem 2.25rem;
+  margin: 2rem 0;
+}
+.quote-person__body { margin: 0; font-size: 1.25rem; line-height: 1.6; color: var(--aenix-text); }
+.quote-person__cite { display: flex; align-items: center; gap: 0.875rem; margin-top: 1.5rem; }
+.quote-person__avatar {
+  flex: 0 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--aenix-text-muted);
+}
+.quote-person__name { display: block; font-weight: 700; color: var(--aenix-text); }
+.quote-person__role {
+  display: block;
+  margin-top: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--aenix-text-muted);
+}
+
+/* --- Block 38 — FAQ summary CTA panel (pairs with .faq-rows) --- */
+.faq-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem 2.5rem;
+  align-items: center;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid rgba(1, 165, 255, 0.22);
+  border-radius: 16px;
+  padding: 1.75rem 2rem;
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(1, 165, 255, 0.07), transparent 60%),
+    rgba(255, 255, 255, 0.02);
+}
+.faq-summary .faq-summary__title { margin: 0 0 0.375rem; font-size: 1.25rem; color: var(--aenix-text); }
+.faq-summary p { margin: 0; font-size: 0.9375rem; color: var(--aenix-text-muted); }
+.faq-summary .cta-row { margin: 0; }
+@media (max-width: 760px) { .faq-summary { grid-template-columns: 1fr; } }
+
+/* --- Reference — Illustration Guidelines --- */
+.illo-guide {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 1.75rem 0;
+}
+.illo-guide__head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.875rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.illo-guide__head--ok { color: var(--aenix-primary); }
+.illo-guide__head--no { color: var(--aenix-text-muted); }
+.illo-guide__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.illo-guide__list li {
+  margin: 0;
+  padding: 1rem 1.125rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+.illo-guide__list li:last-child { border-bottom: none; }
+.illo-guide__list strong { display: block; color: var(--aenix-text); font-weight: 600; font-size: 0.9375rem; }
+.illo-guide__list span { display: block; margin-top: 0.2rem; font-size: 0.8125rem; line-height: 1.5; color: var(--aenix-text-muted); }
+.illo-guide__list--no { background: rgba(255, 255, 255, 0.01); }
+.illo-guide__list--no li { display: flex; gap: 0.625rem; color: var(--aenix-text-muted); font-size: 0.9375rem; }
+.illo-guide__list--no li::before { content: "—"; flex: 0 0 auto; color: rgba(148, 163, 184, 0.55); }
+.illo-guide__callout {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  border: 1px solid rgba(167, 139, 250, 0.28);
+  background: rgba(167, 139, 250, 0.06);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+.illo-guide__callout-ico { flex: 0 0 auto; color: var(--aenix-accent); margin-top: 0.1rem; }
+.illo-guide__callout-ico svg { width: 18px; height: 18px; display: block; }
+.illo-guide__callout strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--aenix-accent);
+}
+.illo-guide__callout p { margin: 0; font-size: 0.9375rem; line-height: 1.6; color: var(--aenix-text-muted); }
+@media (max-width: 760px) { .illo-guide { grid-template-columns: 1fr; } }
+
+/* --- Capability grid refinement (Block 3): top-right category label --- */
+.capability-grid-3x3 > p { position: relative; }
+.cap-cat {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--aenix-text-muted);
+}
+
+/* --- Shared block intro (kicker + heading + lead) for section headers --- */
+.block-intro { margin: 2.5rem 0 1.25rem; max-width: var(--content-max); }
+.block-intro > h3 {
+  margin: 0.25rem 0 1rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+  color: var(--aenix-text);
+}
+.block-intro > p {
+  margin: 0;
+  max-width: 62ch;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--aenix-text-muted);
+}
+
+/* ============================================================
+   SYNTAX HIGHLIGHTING — brand-safe chroma palette.
+   Hugo emits chroma class spans (noClasses:false) but no token
+   colors ever shipped, so code rendered flat gray sitewide.
+   github-dark's own palette uses orange (#f0883e) and red
+   (#ff7b72) — off-brand — so this is a curated map: green
+   terminal strings/output, cyan keywords, violet functions,
+   blue numbers. No orange, no red.
+   ============================================================ */
+.chroma { color: #c9d1d9; background: transparent; }
+.chroma .err { color: #c9d1d9; }
+.chroma .c, .chroma .ch, .chroma .cm, .chroma .c1, .chroma .cs,
+.chroma .cp, .chroma .cpf { color: #8b949e; font-style: italic; }
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn, .chroma .kp,
+.chroma .kr, .chroma .kt { color: #94DEE0; }
+.chroma .o, .chroma .ow, .chroma .p { color: #c9d1d9; }
+.chroma .s, .chroma .sa, .chroma .sb, .chroma .sc, .chroma .dl,
+.chroma .sd, .chroma .s2, .chroma .se, .chroma .sh, .chroma .si,
+.chroma .sx, .chroma .sr, .chroma .s1, .chroma .ss { color: #7ee787; }
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh, .chroma .mi,
+.chroma .il, .chroma .mo { color: #79c0ff; }
+.chroma .na, .chroma .no { color: #79c0ff; }
+.chroma .nt { color: #94DEE0; }
+.chroma .nb, .chroma .bp, .chroma .nf, .chroma .fm { color: #d2a8ff; }
+.chroma .nc, .chroma .nn, .chroma .ne, .chroma .ni,
+.chroma .nd, .chroma .nl { color: #d2a8ff; }
+.chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi { color: #79c0ff; }
+.chroma .go { color: #7ee787; }
+.chroma .gp { color: #8b949e; }
+.chroma .gi { color: #7ee787; }
+.chroma .gd { color: #8b949e; }
+.chroma .gu { color: #94DEE0; }
+.chroma .gh { color: #79c0ff; font-weight: 600; }
+.chroma .gs { font-weight: 600; }
+.chroma .ge { font-style: italic; }
+
+/* Editorial split (Block 30): keep the two CTAs on one row inside
+   the narrow text column beside the diagram: stack the secondary
+   button under the primary so they never crowd the diagram edge */
+.editorial-split .cta-row {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.editorial-split .cta-row > a { width: auto; }
+
+/* ============================================================
+   LONG-FORM CONTENT GUIDELINES (styleguide reference) —
+   numbered rules panel + a prominent mandatory-rule callout.
+   ============================================================ */
+/* Rules panel and the mandatory-rule callout share one width.
+   .rules-list is an <ol>, so the prose 68ch cap (.page-content > ol,
+   specificity 0,1,1) applies — override at 0,2,0 so both fill the
+   full track. */
+.rules-list,
+.rule-required {
+  box-sizing: border-box;
+  width: 100%;
+}
+.page-content .rules-list,
+.page-content .rule-required { max-width: 100%; }
+.rules-list {
+  list-style: none;
+  counter-reset: rule;
+  margin: 1.5rem 0;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.rules-list li {
+  counter-increment: rule;
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: 1rem;
+  align-items: start;
+  margin: 0;
+  padding: 1.125rem 1.25rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--aenix-text);
+}
+.rules-list li:last-child { border-bottom: none; }
+.rules-list li::before {
+  content: counter(rule, decimal-leading-zero);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--aenix-text-muted);
+  padding-top: 0.15rem;
+}
+.rule-required {
+  display: flex;
+  gap: 0.875rem;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid rgba(1, 165, 255, 0.35);
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(1, 165, 255, 0.08), transparent 60%),
+    rgba(255, 255, 255, 0.02);
+  border-radius: 14px;
+}
+.rule-required__ico { flex: 0 0 auto; color: var(--aenix-primary); margin-top: 0.15rem; }
+.rule-required__ico svg { width: 20px; height: 20px; display: block; }
+.rule-required__label {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--aenix-primary);
+}
+.rule-required p { margin: 0; font-size: 1.0625rem; line-height: 1.55; color: var(--aenix-text); }
+.rule-required code { font-family: var(--font-mono); font-size: 0.9em; }
+
+/* ============================================================
+   FULL-BLEED SECTION BAND (Block 39) — a full-viewport-width
+   colored band usable on inner (list-template) pages to break a
+   long page into rhythm sections. Background spans the viewport;
+   inner content stays on the same 800px track as the rest of the
+   page, so the content grid width never jumps. Safe because
+   body has overflow-x: clip.
+   ============================================================ */
+.band-fullbleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 3.25rem 0;
+}
+.band-fullbleed + .band-fullbleed { margin-top: 0; }
+.band-fullbleed--tint { background: var(--aenix-bg-tint); }
+.band-fullbleed--accent {
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(1, 165, 255, 0.06), transparent 70%),
+    rgba(255, 255, 255, 0.015);
+}
+.band-fullbleed__inner {
+  width: min(var(--content-max), 100% - 4rem);
+  margin: 0 auto;
+}
+.band-fullbleed__inner > :first-child { margin-top: 0; }
+.band-fullbleed__inner > :last-child { margin-bottom: 0; }
+
+/* ============================================================
+   ANSWER CLAMP (Block 40) — long GEO answers show ~7 lines then a
+   "Show more" toggle. Progressive enhancement: the full answer is
+   always in the DOM (crawlers and no-JS visitors get all of it);
+   JS clamps visually only when the text actually overflows.
+   ============================================================ */
+.answer-clamp__body { margin: 0; }
+.answer-clamp__body > p { margin: 0; }
+.answer-clamp__toggle { display: none; }
+.answer-clamp.is-clampable .answer-clamp__body {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  line-clamp: 7;
+  overflow: hidden;
+}
+.answer-clamp.is-clampable.is-open .answer-clamp__body {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
+.answer-clamp.is-clampable .answer-clamp__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  margin-top: 0.875rem;
+  padding: 0;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  color: var(--aenix-primary);
+  cursor: pointer;
+}
+.answer-clamp__toggle svg { width: 14px; height: 14px; transition: transform 0.2s var(--ease, ease); }
+.answer-clamp.is-open .answer-clamp__toggle svg { transform: rotate(180deg); }
+.answer-clamp__toggle:hover { color: var(--aenix-text); }
+
+/* Pricing cards: an empty price written as **** in markdown renders
+   as an <hr> (thematic break) that lands in a grid cell and shoves
+   the column pairing off by one. Drop those rules from the grid. */
+.pricing-cards-2 hr,
+.pricing-cards-3 hr { display: none; }
+
+/* ============================================================
+   PIPEDRIVE FORM — the embed renders inside a cross-origin iframe
+   from webforms.pipedrive.com, so the fields and submit button
+   CANNOT be restyled from our CSS (they live in the iframe). We
+   frame the iframe in our design; the field/button theme (dark
+   mode, brand colors, fonts) is configured in the Pipedrive form
+   builder. The placeholder-form (our own markup) is styled above.
+   ============================================================ */
+/* Layout-only wrapper: the Pipedrive loader renders its own themed card,
+   so we do NOT add a panel here (border/bg/padding would double-box it). */
+.pipedrive-form {
+  margin: 1.75rem 0;
+}
+.pipedrive-form iframe { border: none; border-radius: 12px; width: 100%; }

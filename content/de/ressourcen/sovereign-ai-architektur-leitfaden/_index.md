@@ -7,6 +7,8 @@ related_pages:
   - /de/dienstleistungen/ai-platform-build
   - /de/produkte/aenix-platform/ai-ml-edition/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloser 12-seitiger Decision-Guide für IT- und Compliance-Verantwortliche, die souveräne KI-Infrastruktur evaluieren. Ein visueller Flowchart führt durch sieben Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope (DORA, NIS2, souveränes-Cloud-Mandat), Modell-Auswahl (Open-Weight wie Llama, Mistral, Qwen), Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen und operatives Modell. Der Guide liefert vier annotierte Architektur-Patterns und Sizing-Referenztabellen. Das Ergebnis mappt direkt auf die Ænix Platform AI/ML Edition — eine turnkey, selbst-gehostete KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0) mit Multi-Tenant-GPU-Scheduling und Souveränitätskontrollen.**
 quick_facts:
@@ -45,7 +47,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[Sovereign-AI-Decision-Guide herunterladen (PDF)]
+<p class="lead-magnet-form__note">Sovereign-AI-Decision-Guide herunterladen (PDF)</p>
 </div>
 
 ---
@@ -72,6 +74,16 @@ Vier gängige Patterns mit annotierten Diagrammen:
 
 ### Sizing-Referenz
 Praktische Sizing-Tabellen für gängige Workload-Profile.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>7 Schlüssel-Entscheidungen</b><div class="diagram__chips"><span>Trigger-Profil</span><span>regulatorischer Scope</span><span>Modell- + Hardware-Sizing</span></div></div>
+<div class="diagram__conn">mappt auf</div>
+<div class="diagram__node"><b>Architektur-Pattern</b><div class="diagram__chips"><span>eines von vier Patterns</span></div></div>
+<div class="diagram__conn">Deployment-Scope</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform AI/ML Edition</b><div class="diagram__chips"><span>Multi-Tenant-GPU-Scheduling</span><span>Inferenz + Fine-Tuning + RAG</span></div></div>
+</div>
+</div>
 
 ---
 

@@ -8,6 +8,8 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Building a private cloud means designing, deploying, and operating cloud-style infrastructure on hardware you control — covering platform, storage, networking, multi-tenancy, observability, and compliance as one coherent system rather than a one-off project. It suits organizations with a platform engineering function and a clear trigger such as a VMware exit, a sovereignty mandate, AI/GPU workloads, or runaway public-cloud costs. Aenix builds private clouds end-to-end on Cozystack, an open-source CNCF project it runs in production with service providers, banks, telecom, and AI operators. The stack uses KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, and LINSTOR/DRBD storage, with handover so the customer's own team operates the platform afterward.**
 
@@ -54,6 +56,9 @@ Aenix builds private clouds end-to-end based on [Cozystack](/products/cozystack/
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Who builds a private cloud successfully
 
 The work fits when:
@@ -65,9 +70,24 @@ The work fits when:
 
 If you're not sure on any of these, the assessment phase clarifies before building begins.
 
+</div>
+</div>
+
 ---
 
 ## What a "build private cloud" engagement actually covers
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Discovery</b><div class="diagram__chips"><span>30 min</span><span>Free</span></div></div>
+<div class="diagram__conn">confirms fit</div>
+<div class="diagram__node diagram__node--brand"><b>Build engagement</b><div class="diagram__chips"><span>Design</span><span>Build</span><span>Hand over</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Cozystack private cloud</b><div class="diagram__chips"><span>VMs</span><span>Containers</span><span>One Kubernetes API</span></div></div>
+<div class="diagram__conn">on</div>
+<div class="diagram__node"><b>Hardware you control</b><div class="diagram__chips"><span>You own and operate it</span></div></div>
+</div>
+</div>
 
 - **Hardware** — sizing, vendor selection, datacenter / colocation arrangements.
 - **Platform layer** — Cozystack on Talos (default), or extension of existing Kubernetes.
@@ -119,7 +139,9 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ## How to start
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Build private cloud — 90-day playbook](/blog/2026/05/build-private-cloud-90-day-playbook/)**
 - **[Private cloud consulting](/services/private-cloud-consulting/)** — broader scope

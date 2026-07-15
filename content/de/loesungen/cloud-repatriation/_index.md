@@ -4,6 +4,8 @@ description: "Der Broadcom Private Cloud Outlook 2025 fand heraus, dass 69% der 
 type: "page"
 related_pages: ["/de/loesungen/cloud-kostenoptimierung", "/de/produkte/private-cloud"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /solutions/cloud-repatriation/
 direct_answer: |
   **Cloud Repatriation bezeichnet die geplante Rückführung von Workloads aus Public Clouds (AWS, Azure, GCP) in eine eigene Private-Cloud- oder On-Premises-Umgebung. Sie richtet sich an Organisationen, die Kostenexplosion, Regulatordruck, KI-Datenresidenz oder vorhersagbare Performance adressieren müssen — laut Broadcom Private Cloud Outlook 2025 evaluieren 69% der Organisationen Repatriation. Aenix führt das technische Engagement durch, das eine Vorstandsaussage in einen umsetzbaren Plan mit benannten Workloads, modellierten Kosten und einer Zielarchitektur verwandelt. Die Zielplattform ist Cozystack, das offene (Apache 2.0), CNCF-basierte Fundament, das KubeVirt-VMs und Container über eine einzige Kubernetes-API betreibt.**
@@ -81,6 +83,9 @@ Wenn Ihre Situation mindestens drei dieser Punkte erfüllt, verdient Repatriatio
 
 <!-- BLOCK 3: FOUR REASONS TEAMS REPATRIATE IN 2026 -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Vier Gründe, warum Teams 2026 repatriieren
 
 <div class="grid-2x2">
@@ -100,6 +105,9 @@ Proprietäre Hyperscaler-Services binden die Architektur an die Roadmap eines ei
 </div>
 
 Der Broadcom Private Cloud Outlook 2025 hat die Verschiebung quantifiziert: **69% der Organisationen evaluieren Repatriation; 53% priorisieren Private Cloud für neue Workloads.** Die LSEG Global Cloud Survey 2025 ergab, dass **84% der Finanzdienstleister ihre Cloud-Strategie aufgrund regulatorischer Entwicklungen angepasst haben.**
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -134,6 +142,16 @@ Diese Fehler sind unabhängig von Cloud-Anbieter, Vendor oder Zielplattform. Es 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
 ## Wie Aenix hilft
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Workloads in Public Cloud</b><div class="diagram__chips"><span>AWS, Azure, GCP</span></div></div>
+<div class="diagram__conn">geordnet nach ROI und Risiko</div>
+<div class="diagram__node"><b>Workload-Repatriation-Ranking</b><div class="diagram__chips"><span>jetzt repatriieren / später repatriieren / in der Cloud bleiben</span></div></div>
+<div class="diagram__conn">migriert auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt-VMs und Container, Cilium (eBPF), LINSTOR/DRBD</span></div></div>
+</div>
+</div>
 
 Das Repatriation-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**, mit dem Kosten- und Cloud-Ausgaben-Workstream als primärem Fokus. Das 14- oder 28-tägige Engagement liefert:
 

@@ -3,6 +3,8 @@ title: "Cozystack vs VMware — head-to-head comparison for the post-Broadcom er
 description: "You're considering a VMware exit. The destination shortlist includes Cozystack. This page compares the two head-to-head — what's the same, what's different,..."
 related_pages: ["/alternatives/vmware-alternative", "/products/aenix-platform/", "/products/cozystack", "/migration/vmware"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack vs VMware is a head-to-head comparison for organizations planning a VMware (VCF) exit after Broadcom's pricing changes. Cozystack is an open-source (Apache 2.0) cloud platform built on Kubernetes that runs both virtual machines and containers through KubeVirt, with Cilium (eBPF) networking, LINSTOR or Rook-Ceph storage, and native multi-tenancy via a Tenant CRD. Unlike VMware's per-CPU subscription model, Cozystack has no licensing fees — cost is hardware plus a chosen support tier. Aenix, the team behind Cozystack (a CNCF project), provides the productized Ænix Platform and migration services, typically reaching a positive cumulative cost position by the end of Year 2. It suits IT leaders evaluating sovereign, vendor-neutral alternatives to vSphere, NSX, vSAN, and vCloud Director.**
 
@@ -47,6 +49,8 @@ For broader VMware-alternatives evaluation, see **[VMware alternatives listicle]
 
 ## Architecture comparison
 
+<div class="compare-elevated compare-elevated--col3">
+
 | | VMware (VCF) | Cozystack |
 |---|---|---|
 | **License** | Subscription only | Apache 2.0 (open source) |
@@ -59,6 +63,18 @@ For broader VMware-alternatives evaluation, see **[VMware alternatives listicle]
 | **GPU for VMs** | NVIDIA vGPU under Horizon | NVIDIA vGPU + KubeVirt |
 | **Air-gap** | Supported (extra licensing) | Supported (no extra cost) |
 | **Ops model** | Vendor support requires environment access | Aenix advisory + GitOps PR review (no kubectl access needed) |
+
+</div>
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Apache 2.0</span><span>Tenant CRD multi-tenancy</span></div></div>
+<div class="diagram__conn">one Kubernetes API</div>
+<div class="diagram__node"><b>VMs and containers</b><div class="diagram__chips"><span>KubeVirt on Talos</span></div></div>
+<div class="diagram__conn">networking and storage</div>
+<div class="diagram__node"><b>Platform services</b><div class="diagram__chips"><span>Cilium (eBPF)</span><span>LINSTOR or Rook-Ceph</span></div></div>
+</div>
+</div>
 
 ---
 
@@ -108,7 +124,9 @@ Honest TCO modelling is part of the assessment phase.
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[VMware alternative](/alternatives/vmware-alternative/)** — focused recommendation
 - **[VMware alternatives listicle](/alternatives/vmware-alternatives/)** — broader market scan
