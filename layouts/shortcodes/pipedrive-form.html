@@ -51,8 +51,8 @@
      dropdown inside the form itself. Fill the URLs once the forms exist in
      Pipedrive; an empty string renders a graceful "registration opens
      shortly" panel instead of a broken embed. */}}
-{{- $workshopFormEn := "" -}}
-{{- $workshopFormRu := "" -}}
+{{- $workshopFormEn := "https://webforms.pipedrive.com/f/bYZV7we2dsMGEnHA31g5JbwpBOjrZ5TtBQRmN8YkLCXQrpRp1m2PmglhvBHQB2eWRB" -}}
+{{- $workshopFormRu := "https://webforms.pipedrive.com/f/bYZV7we2dsMGEnHA31g5JbwpBOjrZ5TtBQRmN8YkLCXQrpRp1m2PmglhvBHQB2eWRB" -}}
 {{- $url := "" -}}
 {{- $err := "" -}}
 {{- $pending := false -}}
@@ -76,15 +76,6 @@
 <div class="pipedrive-form pipedrive-form--{{ $type }}">
   <div class="pipedriveWebForms" data-pd-webforms="{{ $url }}"></div>
   <script src="https://webforms.pipedrive.com/f/loader"></script>
-</div>
-{{- else if $pending -}}
-{{- $ruPage := eq .Page.Params.language "ru" -}}
-<div class="pipedrive-form pipedrive-form--pending">
-  {{- if $ruPage -}}
-  <p><strong>Регистрация откроется в ближайшие дни.</strong> Оставьте почту через <a href="/contact/">форму контакта</a> или напишите нам в <a href="https://t.me/cozystack" rel="noopener">Telegram</a> — пришлём ссылку на регистрацию первым.</p>
-  {{- else -}}
-  <p><strong>Registration opens shortly.</strong> Leave your email via the <a href="/contact/">contact form</a> or ping us on <a href="https://t.me/cozystack" rel="noopener">Telegram</a> — we will send you the registration link first.</p>
-  {{- end -}}
 </div>
 {{- else -}}
   <div class="pipedrive-form pipedrive-form--error"><strong>pipedrive-form:</strong> {{ $err }}.</div>

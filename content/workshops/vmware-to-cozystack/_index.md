@@ -88,7 +88,7 @@ No three-hour slide decks. Every participant gets a personal working environment
   <div class="agenda__row"><div class="agenda__time">01:30</div><div class="agenda__body"><strong>Building the infrastructure around it<span class="agenda__tag">hands-on</span></strong>A database in a couple of minutes, a service published to the network, monitoring and backups. At the end, the whole setup comes back up from a single file.</div></div>
   <div class="agenda__row"><div class="agenda__time">02:20</div><div class="agenda__body"><strong>An honest conversation about limitations<span class="agenda__tag">discussion</span></strong>What will not move one-to-one, and who should not migrate. Tell us about your hardest machine — and get a straight answer.</div></div>
   <div class="agenda__row"><div class="agenda__time">02:40</div><div class="agenda__body"><strong>A migration plan for your infrastructure<span class="agenda__tag">talk</span></strong>Where to start at home: the first non-critical workload, the stages of the move, and the support you get after the workshop.</div></div>
-  <div class="agenda__row"><div class="agenda__time">03:15</div><div class="agenda__body"><strong>Questions and conversation<span class="agenda__tag">45 min</span></strong>Individual cases over coffee. The team stays in the room.</div></div>
+  <div class="agenda__row"><div class="agenda__time">03:15</div><div class="agenda__body"><strong>Questions and conversation<span class="agenda__tag">45 min</span></strong>Open conversation over pizza and drinks. The speaker stays in the room — bring your own cases.</div></div>
 </div>
 
 ## What you leave with
@@ -135,16 +135,6 @@ No three-hour slide decks. Every participant gets a personal working environment
   <a class="cta-primary" href="#register">Register</a>
 </div>
 
-## What we will not promise
-
-Cozystack does not replicate VMware one-to-one, and we won't pretend it does:
-
-- **Automatic restart of machines from a failed server** is configured separately — we show how, and at what cost.
-- **There is no automatic load balancing between servers**, as in DRS, yet.
-- **Oracle, SAP, and some Microsoft licensing** needs case-by-case review — some systems are better left where they are.
-
-If migration doesn't make sense for your infrastructure, we will say so — right at the workshop.
-
 ## Your host
 
 <div class="speaker-card">
@@ -160,7 +150,7 @@ If migration doesn't make sense for your infrastructure, we will say so — righ
 
 ## Cities {#cities}
 
-The program is the same in every city. Pick the one that suits you and register — you choose the city right in the form.
+The program is the same in every city. Pick the one that suits you and register.
 
 <div class="city-cards">
   <a class="city-card" href="#register">
@@ -195,8 +185,6 @@ The program is the same in every city. Pick the one that suits you and register 
 
 ## Registration {#register}
 
-Attendance is free — with registration. Seats are limited: the earlier you register, the surer your seat. You pick the city right in the form; registrants are the first to learn the date and venue, and giving up a seat takes one reply to an email.
-
-If you can, come as a pair — an engineer and a manager: one leaves with hands-on experience, the other with a plan. And if this workshop is for a colleague rather than you, just forward them this page.
+Attendance is free — with registration.
 
 {{< pipedrive-form type="workshop" >}}
