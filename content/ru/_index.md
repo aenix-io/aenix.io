@@ -6,4 +6,4 @@ hreflang_en: "/"
 robots: "noindex, follow"
 ---
 
-**Русскоязычный раздел aenix.io.** Сейчас здесь живут страницы [тура воркшопов «VMware → Cozystack»](/ru/workshops/vmware-to-cozystack/). Основной сайт — [на английском](/).
+**Русскоязычный раздел aenix.io.** Сейчас здесь живёт страница [практического воркшопа по миграции с VMware](/ru/workshops/vmware-to-cozystack/). Основной сайт — [на английском](/).

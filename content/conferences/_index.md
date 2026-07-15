@@ -25,7 +25,7 @@ language: "en"
 
 ## Upcoming
 
-- **[VMware to Cozystack workshop tour — Central Asia](/workshops/vmware-to-cozystack/)** (August 2026) — free half-day hands-on workshops in Tashkent, Bishkek, Almaty, and Astana: migrate a live VM off VMware, build self-service infrastructure on Cozystack, keep a 30-day lab and maintainer chat. 20 seats per city.
+- **[Hands-on VMware migration workshops — Central Asia](/workshops/vmware-to-cozystack/)** (2026) — free workshops in Tashkent, Bishkek, Almaty, and Astana: migrate a real VM off VMware to open-source Cozystack, keep a 30-day test environment and a maintainer chat. Seats are limited.
 
 {{< design-note >}}
 Render upcoming-events block. Empty state: "Aenix conference calendar updates throughout the year — follow us on LinkedIn or subscribe for notifications." Calendar entries inserted as confirmed.

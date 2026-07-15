@@ -159,7 +159,7 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 
 ## Workshops (free hands-on events)
 
-- [VMware to Cozystack workshop tour](https://aenix.io/workshops/vmware-to-cozystack/): Free half-day hands-on workshops in Tashkent, Bishkek, Almaty, Astana (August 2026) — participants migrate a live VM off ESXi with virt-v2v, build self-service infrastructure (managed PostgreSQL, LoadBalancer, Grafana monitoring, Velero backup, GitOps), keep a 30-day demo environment and Cozystack-maintainer chat, and can earn a Cozystack certificate via take-home labs. Delivered in Russian; Russian pages at https://aenix.io/ru/workshops/vmware-to-cozystack/
+- [Hands-on VMware migration workshop](https://aenix.io/workshops/vmware-to-cozystack/): Free hands-on workshops in Tashkent, Bishkek, Almaty, and Astana — participants migrate a real VM off a running VMware server onto open-source Cozystack, build a database, monitoring, and backups around it, keep a 30-day test environment and a Cozystack-maintainer chat, and can earn the Cozystack Certified Fundamentals certificate via take-home labs. Delivered in Russian; Russian page at https://aenix.io/ru/workshops/vmware-to-cozystack/
 
 ## German (DACH locale)
 

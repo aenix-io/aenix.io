@@ -46,17 +46,9 @@ CARDS = [
     ("og-vmware-exit-partners-de", "VMWARE-AUSSTIEG FÜR INTEGRATOREN", "Verlängerung zu Marge"),
     ("og-vmware-kostenrechner-de", "TOOL", "VMware-Kostenrechner"),
     ("og-ibm-migration-de", "IBM AIX / POWER MIGRATION", "Von Power zur offenen Cloud"),
-    # Workshop tour (EN + RU)
-    ("og-workshop-tour", "FREE HANDS-ON TOUR · AUGUST 2026", "VMware to Cozystack workshops: Tashkent · Bishkek · Almaty · Astana"),
-    ("og-workshop-tashkent", "TASHKENT · AUGUST 2026 · FREE", "VMware to Cozystack: hands-on workshop"),
-    ("og-workshop-bishkek", "BISHKEK · AUGUST 2026 · FREE", "VMware to Cozystack: hands-on workshop"),
-    ("og-workshop-almaty", "ALMATY · AUGUST 2026 · FREE", "VMware to Cozystack: hands-on workshop"),
-    ("og-workshop-astana", "ASTANA · AUGUST 2026 · FREE", "VMware to Cozystack: hands-on workshop"),
-    ("og-workshop-tour-ru", "БЕСПЛАТНЫЙ ТУР · АВГУСТ 2026", "Воркшопы VMware → Cozystack: Ташкент · Бишкек · Алматы · Астана"),
-    ("og-workshop-tashkent-ru", "ТАШКЕНТ · АВГУСТ 2026 · БЕСПЛАТНО", "Воркшоп: миграция с VMware на Cozystack"),
-    ("og-workshop-bishkek-ru", "БИШКЕК · АВГУСТ 2026 · БЕСПЛАТНО", "Воркшоп: миграция с VMware на Cozystack"),
-    ("og-workshop-almaty-ru", "АЛМАТЫ · АВГУСТ 2026 · БЕСПЛАТНО", "Воркшоп: миграция с VMware на Cozystack"),
-    ("og-workshop-astana-ru", "АСТАНА · АВГУСТ 2026 · БЕСПЛАТНО", "Воркшоп: миграция с VMware на Cozystack"),
+    # Workshop landing (EN + RU)
+    ("og-workshop-tour", "TASHKENT · BISHKEK · ALMATY · ASTANA · FREE", "Migrating off VMware to open source: a hands-on workshop"),
+    ("og-workshop-tour-ru", "ТАШКЕНТ · БИШКЕК · АЛМАТЫ · АСТАНА · БЕСПЛАТНО", "Миграция с VMware на open source: практический воркшоп"),
 ]
 
 

@@ -1,116 +1,150 @@
 ---
-title: "VMware to Cozystack workshop tour — Central Asia, August 2026"
-description: "Free hands-on VMware exit workshops in Tashkent, Bishkek, Almaty, and Astana: migrate a real VM to open-source Cozystack, keep a 30-day lab and maintainer chat."
+title: "Hands-on workshop: migrating off VMware to open source"
+description: "A free hands-on workshop: migrate a virtual machine off VMware to an open platform and leave with a migration plan. Tashkent, Bishkek, Almaty, Astana."
 language: "en"
 layout: "event-landing"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/"
-primary_keyword: "vmware exit workshop central asia"
-secondary_keywords: ["vmware alternative workshop", "cozystack training", "vmware migration hands-on", "kubevirt workshop 2026"]
-related_pages: ["/migration/vmware/", "/compare/cozystack-vs-vmware/", "/alternatives/vmware-alternative/"]
+primary_keyword: "vmware migration workshop"
+secondary_keywords: ["vmware alternative", "vmware exit training", "open source virtualization workshop", "cozystack training"]
 images: ["img/og/og-workshop-tour.png"]
 hide_child_cards: true
-hero_eyebrow: "Workshop tour · Central Asia · August 2026"
+hero_eyebrow: "Hands-on workshop · Tashkent · Bishkek · Almaty · Astana"
 hero_from: "VMware"
-hero_to: "Cozystack"
-hero_tagline: "Four cities, one program: migrate a real VM off a live ESXi with your own hands — in half a day. Free, and honest about the limits."
+hero_to: "open source"
+hero_tagline: "A live environment instead of slides: in one day you migrate a real virtual machine off VMware yourself — and leave with a step-by-step migration plan."
 hero_chips:
-  - "Tashkent"
-  - "Bishkek"
-  - "Almaty"
-  - "Astana"
-  - "20 seats per city"
-  - "Free"
-hero_primary: { text: "Choose a city", href: "#cities" }
-hero_secondary: { text: "Cozystack vs VMware", href: "/compare/cozystack-vs-vmware/" }
-inshort_title: "In short"
+  - "Free with registration"
+  - "Seats are limited"
+  - "Held in Russian"
+hero_primary: { text: "Reserve a seat", href: "#register" }
+hero_secondary: { text: "See the program", href: "#program" }
+inshort_title: "About the workshop"
 quick_facts_style: "rows"
-translation:
-  - { from: "vSphere / ESXi", to: "KubeVirt" }
-  - { from: "vSAN", to: "LINSTOR" }
-  - { from: "NSX", to: "Cilium" }
-  - { from: "vMotion", to: "Live Migration" }
-  - { from: "vCenter", to: "Dashboard + API" }
-  - { from: "Veeam", to: "Velero" }
-translation_note: "You already know the meaning — the workshop adds the vocabulary. Every pair above is something you verify live, in your own tenant."
-stats:
-  - { number: "150–1500%", label: "documented VMware renewal increases — from AT&T's lawsuit to CISPE members" }
-  - { number: "72 cores", label: "minimum per subscription order, whatever your actual estate" }
-  - { number: "Oct 2, 2025", label: "vSphere 7 general support ended — extended support or no patches" }
+event:
+  name: "Migrating off VMware to open source — a hands-on workshop"
+  language: "ru"
+  price: 0
 direct_answer: |
-  **The VMware to Cozystack workshop tour is a series of free half-day hands-on trainings in Tashkent, Bishkek, Almaty, and Astana in August 2026, for teams facing Broadcom's new VMware economics. Led by Timur Tukaev — Cozystack maintainer, community manager, and Aenix co-founder — each workshop takes VMware administrators, infrastructure leads, and DevOps engineers through migrating a real virtual machine off a live ESXi and assembling self-service infrastructure on Cozystack, an open-source (Apache 2.0) cloud platform and CNCF project. About 70% of the time is practice in a personal tenant on a live cluster. Participants keep a demo environment and a direct chat with Cozystack maintainers for 30 days, and can earn an official Cozystack certificate by completing take-home labs. Attendance is free; each city is limited to 20 seats.**
+  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. It takes place in Tashkent, Bishkek, Almaty, and Astana. In one day, participants migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform developed within the CNCF — with their own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. The workshop is led by Timur Tukaev, Cozystack maintainer and Aenix co-founder. Afterwards, every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Cozystack Certified Fundamentals certificate. Attendance is free with registration; seats are limited.**
 
 quick_facts:
-  - label: "Cities"
-    value: "Tashkent, Bishkek, Almaty, Astana — August 2026, exact dates announced shortly"
   - label: "Format"
-    value: "Half-day hands-on workshop: roughly 30% explanation, 70% practice in a personal tenant on a live cluster, plus 45 minutes of open networking"
+    value: "An in-person workshop, about four hours: roughly three hours of practice in a personal working environment, the rest — short explanations and conversation"
+  - label: "Cities"
+    value: "Tashkent, Bishkek, Almaty, Astana; dates and venues to be announced"
   - label: "Price"
-    value: "Free. 20 seats per city, registration required"
+    value: "Free with registration; seats are limited"
   - label: "Language"
-    value: "Russian (commands, docs, and take-home materials in English)"
+    value: "Russian; commands and materials are in English"
   - label: "Who it's for"
-    value: "VMware administrators and engineers, sysadmins, infrastructure leads, CTOs and IT directors, Kubernetes / DevOps engineers"
+    value: "VMware administrators, sysadmins, infrastructure leads, technology executives, DevOps engineers"
   - label: "After the workshop"
-    value: "30-day demo environment, support chat with Cozystack maintainers, take-home labs, path to an official Cozystack certificate"
+    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the opportunity to earn the Cozystack Certified Fundamentals certificate"
   - label: "Host"
-    value: "Timur Tukaev — Cozystack maintainer, community manager of the project, Aenix co-founder"
+    value: "Timur Tukaev — Cozystack maintainer, Aenix co-founder"
 
 faq:
-  - q: "Which city should I register for?"
-    a: "Whichever is closest — the program is identical in all four cities: Tashkent, Bishkek, Almaty, and Astana. Each city has 20 seats, so register early in the city you can actually attend."
-  - q: "Will there be an online version?"
-    a: "The workshop itself is offline only — 70% of it is hands-on work with teaching assistants in the room, which does not translate to a webinar. What you do keep online: a personal demo environment and a support chat with Cozystack maintainers for 30 days after the event, plus take-home labs."
-  - q: "Can you run a private workshop for our company?"
-    a: "Yes — if you have a team of engineers and a VMware estate under renewal pressure, [contact us](/contact/) and we will discuss a dedicated session, including an architecture review of your specific workloads."
-  - q: "Who is behind the workshop?"
-    a: "Aenix — the company founded by the creators of Cozystack, an open-source cloud platform and CNCF project. The workshop is led by Timur Tukaev, Cozystack maintainer and community manager, with teaching assistants from the engineering team."
-  - q: "Is it really free? What's the catch?"
-    a: "Really free, including the 30-day environment, the maintainer chat, and the certificate. The honest motivation: some participants will later want help migrating production estates — that is Aenix's business. The workshop itself is training, not a pitch, and includes a block on when we advise you not to migrate."
+  - q: "How much does it cost?"
+    a: "Attendance is free; you only need to register. Seats are limited — we want everyone to get real time at the terminal and an assistant's attention when needed."
+  - q: "I run VMware but don't know Kubernetes. Will I keep up?"
+    a: "Yes. The workshop is built for exactly your profile: everything is explained through VMware concepts you already know, and assistants are there whenever something doesn't work. Your experience is the foundation we build on."
+  - q: "What language is the workshop in?"
+    a: "Russian. Commands and materials are in English. This page also has a [Russian version](/ru/workshops/vmware-to-cozystack/)."
+  - q: "What should I bring?"
+    a: "A laptop with a browser — that's all. Your working environment is prepared in advance; there is nothing to install."
+  - q: "Is this a sales presentation?"
+    a: "No. It is training: you spend most of the time working with your hands, and the program includes an honest conversation about what the platform cannot do and who should not migrate. No contracts, no pressure."
+  - q: "What exactly will I do with my own hands?"
+    a: "Move a virtual machine off a running VMware server, deploy a database, publish a service to the network, see how monitoring and backups work — and, at the end, bring the whole setup back up from a single file."
+  - q: "What happens after the workshop?"
+    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. Completing the labs earns you the Cozystack Certified Fundamentals certificate — also free."
+  - q: "We run Oracle, SAP, or specially licensed Windows. Will it migrate?"
+    a: "Maybe not — and we will say so directly. Vendor licensing restrictions are one of the topics of the honest-limitations conversation. Bring your hardest case and get a straight answer."
+  - q: "Can I bring my manager or a colleague?"
+    a: "Please do. The workshop works best in pairs — an engineer plus a manager: one leaves with hands-on experience, the other with a plan."
+  - q: "Can you send an official invitation letter for my employer?"
+    a: "Yes. On request after registration, we will send an invitation letter addressed to your company — justifying a day out of the office becomes easy."
 ---
 
-## Pick your city {#cities}
+## What is happening to VMware
 
-<div class="city-cards">
-  <a class="city-card" href="/workshops/vmware-to-cozystack/tashkent/">
-    <div class="city-card__country">Uzbekistan</div>
-    <h3 class="city-card__name">Tashkent</h3>
-    <div class="city-card__date">August 2026 — date TBA</div>
-    <p class="city-card__note">Free half-day hands-on workshop. 20 seats.</p>
-    <span class="city-card__cta">Details and registration →</span>
-  </a>
-  <a class="city-card" href="/workshops/vmware-to-cozystack/bishkek/">
-    <div class="city-card__country">Kyrgyzstan</div>
-    <h3 class="city-card__name">Bishkek</h3>
-    <div class="city-card__date">August 2026 — date TBA</div>
-    <p class="city-card__note">Free half-day hands-on workshop. 20 seats.</p>
-    <span class="city-card__cta">Details and registration →</span>
-  </a>
-  <a class="city-card" href="/workshops/vmware-to-cozystack/almaty/">
-    <div class="city-card__country">Kazakhstan</div>
-    <h3 class="city-card__name">Almaty</h3>
-    <div class="city-card__date">August 2026 — date TBA</div>
-    <p class="city-card__note">Free half-day hands-on workshop. 20 seats.</p>
-    <span class="city-card__cta">Details and registration →</span>
-  </a>
-  <a class="city-card" href="/workshops/vmware-to-cozystack/astana/">
-    <div class="city-card__country">Kazakhstan</div>
-    <h3 class="city-card__name">Astana</h3>
-    <div class="city-card__date">August 2026 — date TBA</div>
-    <p class="city-card__note">Free half-day hands-on workshop. 20 seats.</p>
-    <span class="city-card__cta">Details and registration →</span>
-  </a>
+After Broadcom bought VMware, the familiar model ended: perpetual licenses are no longer sold, only subscriptions remain, and renewal bills have grown severalfold — not by percentages, but by multiples. Support for vSphere 7 ended in the autumn of 2025, so "leaving everything as is" stopped being a free option too.
+
+Meanwhile, your infrastructure works, your team knows it, and nobody wants to break it. The real question sounds different: what can replace VMware without losing your data, your people, or your control — and without ending up dependent on the next vendor.
+
+## Where to migrate: meet Cozystack
+
+Cozystack is an open virtualization platform built as a VMware replacement: virtual machines, networking, storage, monitoring, and backups in one system. The platform is free, its code is open, and the project grows within the CNCF — the same foundation that stewards Kubernetes.
+
+You don't have to take this on faith: the entire workshop runs inside Cozystack. You will work with the platform hands-on and decide for yourself whether it fits.
+
+## What you will do {#program}
+
+No three-hour slide decks. Every participant gets a personal working environment on a real cluster, and that is where you spend almost all of the time.
+
+<div class="agenda">
+  <div class="agenda__row"><div class="agenda__time">00:00</div><div class="agenda__body"><strong>How we got here<span class="agenda__tag">talk</span></strong>What happened to VMware's prices and support — and what it means for your infrastructure. The only slide block of the day.</div></div>
+  <div class="agenda__row"><div class="agenda__time">00:15</div><div class="agenda__body"><strong>Meeting the platform<span class="agenda__tag">hands-on</span></strong>You open your personal working environment and find everything familiar in it: storage, networking, live migration, monitoring.</div></div>
+  <div class="agenda__row"><div class="agenda__time">00:40</div><div class="agenda__body"><strong>Migrating a virtual machine<span class="agenda__tag">hands-on</span></strong>You export a machine straight from a running VMware server, convert it, and start it on the new platform. It answers requests — your first migrated VM.</div></div>
+  <div class="agenda__row"><div class="agenda__time">01:30</div><div class="agenda__body"><strong>Building the infrastructure around it<span class="agenda__tag">hands-on</span></strong>A database in a couple of minutes, a service published to the network, monitoring and backups. At the end, the whole setup comes back up from a single file.</div></div>
+  <div class="agenda__row"><div class="agenda__time">02:20</div><div class="agenda__body"><strong>An honest conversation about limitations<span class="agenda__tag">discussion</span></strong>What will not move one-to-one, and who should not migrate. Tell us about your hardest machine — and get a straight answer.</div></div>
+  <div class="agenda__row"><div class="agenda__time">02:40</div><div class="agenda__body"><strong>A migration plan for your infrastructure<span class="agenda__tag">talk</span></strong>Where to start at home: the first non-critical workload, the stages of the move, and the support you get after the workshop.</div></div>
+  <div class="agenda__row"><div class="agenda__time">03:15</div><div class="agenda__body"><strong>Questions and conversation<span class="agenda__tag">45 min</span></strong>Individual cases over coffee. The team stays in the room.</div></div>
 </div>
 
-## The program in one paragraph
+## What you leave with
 
-A reality check on VMware economics (the only slide block of the day), then a vSphere → Cozystack translation map you verify live in your own tenant, then the core: live export from a running ESXi, virt-v2v conversion, and your own migrated VM answering requests. After that — managed PostgreSQL in three minutes, LoadBalancer, out-of-the-box Grafana monitoring, Velero backup, and the whole stack from one Git manifest. The day closes with an honest-limitations block, a pilot playbook for your own datacenter, and 45 minutes of open networking. Full agenda on each city page.
+- **A virtual machine you migrated yourself** — the first practical step of your migration.
+- **A step-by-step plan**: where to start, what to move first, and how to split the move into stages.
+- **Clarity about VMware**: what will migrate, what won't, and when staying is the wiser choice.
+- **Working skills with an open virtualization platform** — without courses or months of self-study.
+- **Materials and cheat sheets** to work with at home — plus a month of support after the workshop.
 
-## After the workshop — the part most events skip
+## Who should come
 
-- A **personal demo environment for 30 days** on a real cluster.
-- A **support chat with Cozystack maintainers** — answers from the people who write the platform.
-- **Take-home labs** extending the in-room build.
-- An **official Cozystack certificate** after completing the labs — free.
+<div class="persona-cards">
+  <div class="persona-card"><h3>VMware administrator / sysadmin</h3><ul>
+    <li>Everything is explained through concepts you already know — no Kubernetes required.</li>
+    <li>You migrate a machine yourself and take the working cheat sheet home.</li>
+    <li>A test environment and a maintainer chat for another month afterwards.</li>
+  </ul></div>
+  <div class="persona-card"><h3>Infrastructure lead</h3><ul>
+    <li>The full migration picture, including the limitations — we state them first.</li>
+    <li>A pilot plan tied to your renewal date.</li>
+    <li>Come together with one of your engineers: one sees the "how", the other decides the "when".</li>
+  </ul></div>
+  <div class="persona-card"><h3>Technology executive</h3><ul>
+    <li>The economics of the move, without marketing promises.</li>
+    <li>Straight answers about risk: open code, independent support, no single-vendor dependency.</li>
+    <li>A trained engineer and an honest assessment of your hardest systems — the same day.</li>
+  </ul></div>
+  <div class="persona-card"><h3>DevOps engineer</h3><ul>
+    <li>Virtual machines and containers in one system, managed as code.</li>
+    <li>Databases, storage, and monitoring — built in, no manual assembly.</li>
+    <li>A platform you and the virtualization team can finally agree on.</li>
+  </ul></div>
+</div>
+
+## A month of support and learning after the workshop
+
+- **Your test environment stays with you for another 30 days** — for experiments and certification prep.
+- **Take-home lab exercises** — with support from the Cozystack maintainers.
+- **A chat where Cozystack maintainers answer your questions.**
+- **The opportunity to earn the Cozystack Certified Fundamentals certificate** — free.
+
+<div class="cta-row">
+  <a class="cta-primary" href="#register">Reserve a seat</a>
+</div>
+
+## What we will not promise
+
+Cozystack does not replicate VMware one-to-one, and we won't pretend it does:
+
+- **Automatic restart of machines from a failed server** is configured separately — we show how, and at what cost.
+- **There is no automatic load balancing between servers**, as in DRS, yet.
+- **Oracle, SAP, and some Microsoft licensing** needs case-by-case review — some systems are better left where they are.
+
+If migration doesn't make sense for your infrastructure, we will say so — right at the workshop.
 
 ## Your host
 
@@ -118,15 +152,52 @@ A reality check on VMware economics (the only slide block of the day), then a vS
   <div class="speaker-card__photo">{{< placeholder-image width="400" height="400" label="Timur Tukaev — photo" >}}</div>
   <div>
     <h3 class="speaker-card__name">Timur Tukaev</h3>
-    <div class="speaker-card__role">Cozystack maintainer · community manager · Aenix co-founder</div>
+    <div class="speaker-card__role">Cozystack maintainer · Aenix co-founder</div>
     <div class="speaker-card__bio">
-      <p>Timur is a maintainer and the community manager of Cozystack, an open-source cloud platform and CNCF project, and a co-founder of Aenix — the company that builds and supports it. He works daily with teams leaving VMware across Europe and Central Asia, from first assessment to production.</p>
+      <p>Timur is a maintainer of the open Cozystack platform and a co-founder of Aenix, the company behind it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
     </div>
   </div>
 </div>
 
-Verify the platform before you come: the code, release cadence, and contributors are public at [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), docs at [cozystack.io](https://cozystack.io/docs/).
+## Cities {#cities}
 
-<div class="cta-row">
-  <a class="cta-primary" href="#cities">Choose a city and register</a>
+The program is the same in every city. Pick the one that suits you and register — you choose the city right in the form.
+
+<div class="city-cards">
+  <a class="city-card" href="#register">
+    <div class="city-card__country">Uzbekistan</div>
+    <h3 class="city-card__name">Tashkent</h3>
+    <div class="city-card__date">Date and time to be announced</div>
+    <p class="city-card__note">The venue will be announced. Registrants hear first.</p>
+    <span class="city-card__cta">Register →</span>
+  </a>
+  <a class="city-card" href="#register">
+    <div class="city-card__country">Kyrgyzstan</div>
+    <h3 class="city-card__name">Bishkek</h3>
+    <div class="city-card__date">Date and time to be announced</div>
+    <p class="city-card__note">The venue will be announced. Registrants hear first.</p>
+    <span class="city-card__cta">Register →</span>
+  </a>
+  <a class="city-card" href="#register">
+    <div class="city-card__country">Kazakhstan</div>
+    <h3 class="city-card__name">Almaty</h3>
+    <div class="city-card__date">Date and time to be announced</div>
+    <p class="city-card__note">The venue will be announced. Registrants hear first.</p>
+    <span class="city-card__cta">Register →</span>
+  </a>
+  <a class="city-card" href="#register">
+    <div class="city-card__country">Kazakhstan</div>
+    <h3 class="city-card__name">Astana</h3>
+    <div class="city-card__date">Date and time to be announced</div>
+    <p class="city-card__note">The venue will be announced. Registrants hear first.</p>
+    <span class="city-card__cta">Register →</span>
+  </a>
 </div>
+
+## Registration {#register}
+
+Attendance is free — with registration. Seats are limited: the earlier you register, the surer your seat. You pick the city right in the form; registrants are the first to learn the date and venue, and giving up a seat takes one reply to an email.
+
+If you can, come as a pair — an engineer and a manager: one leaves with hands-on experience, the other with a plan. And if this workshop is for a colleague rather than you, just forward them this page.
+
+{{< pipedrive-form type="workshop" >}}
