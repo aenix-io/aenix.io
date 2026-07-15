@@ -2,11 +2,38 @@
 title: "VMware to Cozystack workshop in Almaty — free, hands-on"
 description: "Free hands-on workshop in Almaty: migrate a real VM off VMware to open-source Cozystack, then keep a 30-day lab, maintainer chat, and a certification path."
 language: "en"
+layout: "event-landing"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/almaty/"
 primary_keyword: "vmware migration workshop almaty"
 secondary_keywords: ["vmware alternative kazakhstan", "cozystack workshop", "vmware exit training", "kubevirt hands-on workshop"]
 related_pages: ["/migration/vmware/", "/compare/cozystack-vs-vmware/", "/alternatives/vmware-alternative/"]
 images: ["img/og/og-workshop-almaty.png"]
+hero_eyebrow: "Hands-on workshop · Almaty · August 2026"
+hero_from: "VMware"
+hero_to: "Cozystack"
+hero_tagline: "Migrate a real VM off a live ESXi with your own hands — in half a day. Free, and honest about the limits."
+hero_chips:
+  - "August 2026 · date TBA"
+  - "Almaty, Kazakhstan"
+  - "20 seats"
+  - "Free"
+  - "In Russian"
+hero_primary: { text: "Reserve a free seat", href: "#register" }
+hero_secondary: { text: "See the program", href: "#program" }
+inshort_title: "In short"
+quick_facts_style: "rows"
+translation:
+  - { from: "vSphere / ESXi", to: "KubeVirt" }
+  - { from: "vSAN", to: "LINSTOR" }
+  - { from: "NSX", to: "Cilium" }
+  - { from: "vMotion", to: "Live Migration" }
+  - { from: "vCenter", to: "Dashboard + API" }
+  - { from: "Veeam", to: "Velero" }
+translation_note: "You already know the meaning — the workshop adds the vocabulary. Every pair above is something you verify live, in your own tenant."
+stats:
+  - { number: "150–1500%", label: "documented VMware renewal increases — from AT&T's lawsuit to CISPE members" }
+  - { number: "72 cores", label: "minimum per subscription order, whatever your actual estate" }
+  - { number: "Oct 2, 2025", label: "vSphere 7 general support ended — extended support or no patches" }
 event:
   name: "VMware to Cozystack — hands-on workshop, Almaty"
   city: "Almaty"
@@ -56,50 +83,19 @@ faq:
     a: "Yes — on request after registration we will send an official invitation letter addressed to your employer, so justifying half a day out of the office takes one email."
 ---
 
-{{< design-note kind="illustration" >}}
-Hero illustration: dark, technical, no stock-photo people. Suggested: a terminal
-window mid-`virt-v2v` next to the Cozystack dashboard, or an abstract
-"two worlds" bridge (vSphere UI fading into a Kubernetes-native dashboard).
-Venue photo block can be added to the event-meta strip once the venue is confirmed.
-{{< /design-note >}}
+None of this pricing story is your team's fault. The question is only whether the next renewal finds you with a tested alternative — or without one.
 
-**Broadcom changed VMware's economics: perpetual licenses are gone, subscriptions start at 72 cores, and renewals arrive with 150–1500% increases. This workshop is a practical answer — in half a day you migrate a real VM off a live ESXi and rebuild core virtualization workflows on an open-source platform, with your own hands.**
+## What you will do {#program}
 
-<div class="event-meta">
-  <div class="event-meta__item"><span class="event-meta__label">Date</span><span class="event-meta__value">August 2026, TBA</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">City</span><span class="event-meta__value">Almaty, Kazakhstan</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Seats</span><span class="event-meta__value">20</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Price</span><span class="event-meta__value">Free</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Language</span><span class="event-meta__value">Russian</span></div>
-</div>
-
-<div class="cta-row">
-  <a class="cta-primary" href="#register">Reserve a free seat</a>
-  <a class="cta-secondary" href="/workshops/vmware-to-cozystack/">All tour cities</a>
-</div>
-
----
-
-## Why this workshop exists
-
-- **Perpetual licenses are gone.** VMware is subscription-only now, with a 72-core minimum per order — small and mid-size estates pay for capacity they don't have.
-- **Renewals jumped 150–1500%.** Documented cases range from AT&T's lawsuit to CISPE members' public complaints. Your renewal is a question of *when*, not *if*.
-- **vSphere 7 general support ended on October 2, 2025.** Staying means paying for extended support or running unpatched.
-- **The exit fear is real, too.** "Kubernetes will devalue my 15 years of VMware" is the reason most teams stall. This workshop is built to remove exactly that fear — by translation, not replacement.
-
-None of this is your team's fault. The question is only whether the next renewal finds you with or without a tested alternative.
-
-## What you will do
-
-Roughly 30% explanation, 70% hands-on in your personal tenant on a live cluster. Every concept is introduced as a translation from vSphere: you already know the meaning, you're adding the vocabulary.
+Roughly 30% explanation, 70% hands-on in your personal tenant on a live cluster. Every concept is a translation from vSphere: you know the meaning, you add the vocabulary.
 
 <div class="agenda">
-  <div class="agenda__row"><div class="agenda__time">00:00</div><div class="agenda__body"><strong>Reality check<span class="agenda__tag">talk</span></strong>What VMware costs after Broadcom — and what "just staying" actually costs. The only slide-heavy block of the day.</div></div>
-  <div class="agenda__row"><div class="agenda__time">00:15</div><div class="agenda__body"><strong>The translation map<span class="agenda__tag">hands-on</span></strong>vSphere → Cozystack, primitive by primitive: vSAN → LINSTOR, NSX → Cilium, vMotion → live migration, vRealize → self-service catalog. You find each one live in your own tenant.</div></div>
-  <div class="agenda__row"><div class="agenda__time">00:40</div><div class="agenda__body"><strong>Migrate a VM from VMware<span class="agenda__tag">hands-on</span></strong>Live export from a running ESXi, virt-v2v conversion, then every participant launches the migrated VM in their tenant and gets an answer from the application inside it.</div></div>
-  <div class="agenda__row"><div class="agenda__time">01:30</div><div class="agenda__body"><strong>Self-service platform<span class="agenda__tag">hands-on</span></strong>Managed PostgreSQL in three minutes, LoadBalancer with a public IP, out-of-the-box Grafana monitoring, Velero backup — and the whole stack brought up from one Git manifest.</div></div>
-  <div class="agenda__row"><div class="agenda__time">02:20</div><div class="agenda__body"><strong>Honest limitations<span class="agenda__tag">discussion</span></strong>What does not migrate 1:1 — HA auto-restart, DRS, Oracle/SAP licensing — and when we advise you not to migrate at all. Bring your scariest VM and get a verdict.</div></div>
-  <div class="agenda__row"><div class="agenda__time">02:40</div><div class="agenda__body"><strong>Bringing it home<span class="agenda__tag">talk</span></strong>A pilot playbook for your own datacenter: choosing a non-critical first workload, phasing around your renewal date, take-home labs and the certificate path.</div></div>
+  <div class="agenda__row"><div class="agenda__time">00:00</div><div class="agenda__body"><strong>Reality check<span class="agenda__tag">talk</span></strong>What VMware costs after Broadcom — and what "just staying" actually costs. The only slide block of the day.</div></div>
+  <div class="agenda__row"><div class="agenda__time">00:15</div><div class="agenda__body"><strong>The translation map<span class="agenda__tag">hands-on</span></strong>vSphere → Cozystack, primitive by primitive — you find each one live in your own tenant.</div></div>
+  <div class="agenda__row"><div class="agenda__time">00:40</div><div class="agenda__body"><strong>Migrate a VM from VMware<span class="agenda__tag">hands-on</span></strong>Live export from a running ESXi, virt-v2v conversion — your migrated VM answers requests in your tenant.</div></div>
+  <div class="agenda__row"><div class="agenda__time">01:30</div><div class="agenda__body"><strong>Self-service platform<span class="agenda__tag">hands-on</span></strong>Managed PostgreSQL in three minutes, LoadBalancer, Grafana monitoring, Velero backup — then the whole stack from one Git manifest.</div></div>
+  <div class="agenda__row"><div class="agenda__time">02:20</div><div class="agenda__body"><strong>Honest limitations<span class="agenda__tag">discussion</span></strong>What does not migrate 1:1 — and when we advise you not to migrate. Bring your scariest VM, get a verdict.</div></div>
+  <div class="agenda__row"><div class="agenda__time">02:40</div><div class="agenda__body"><strong>Bringing it home<span class="agenda__tag">talk</span></strong>A pilot playbook for your own datacenter: first workload, phasing around your renewal, labs and the certificate path.</div></div>
   <div class="agenda__row"><div class="agenda__time">03:15</div><div class="agenda__body"><strong>Open networking<span class="agenda__tag">45 min</span></strong>Individual cases, questions, coffee. The team stays in the room.</div></div>
 </div>
 
@@ -107,35 +103,35 @@ Roughly 30% explanation, 70% hands-on in your personal tenant on a live cluster.
 
 <div class="persona-cards">
   <div class="persona-card"><h3>VMware administrator / sysadmin</h3><ul>
-    <li>Your vSphere experience is the foundation here — the whole day is a translation, not a restart from zero.</li>
-    <li>You personally migrate a VM off ESXi and leave with a vSphere → Cozystack cheat sheet.</li>
-    <li>30 days of demo environment and maintainer chat to keep practicing after.</li>
+    <li>The whole day is a translation from vSphere, not a restart from zero.</li>
+    <li>You personally migrate a VM off ESXi and keep the cheat sheet.</li>
+    <li>30 days of demo environment and maintainer chat afterwards.</li>
   </ul></div>
   <div class="persona-card"><h3>Infrastructure team lead</h3><ul>
-    <li>See the full migration path end to end — including the honest gaps, stated first.</li>
-    <li>Take home the economics logic and a phased pilot plan aligned with your renewal date.</li>
-    <li>Best attended in a pair with one of your engineers: you leave with proof and a plan.</li>
+    <li>The full migration path — including the honest gaps, stated first.</li>
+    <li>Economics logic and a phased pilot plan tied to your renewal date.</li>
+    <li>Best attended in a pair with one of your engineers.</li>
   </ul></div>
   <div class="persona-card"><h3>CTO / IT director</h3><ul>
-    <li>The exit-vs-renewal economics without marketing numbers — ranges, assumptions, and where the model breaks.</li>
-    <li>Vendor-risk questions answered directly: Apache 2.0 code, CNCF governance, support not locked to one company.</li>
+    <li>Exit-vs-renewal economics without marketing numbers.</li>
+    <li>Vendor risk answered directly: Apache 2.0, CNCF, no single-company support lock.</li>
     <li>A trained engineer and a straight verdict on your hardest workloads — same day.</li>
   </ul></div>
   <div class="persona-card"><h3>Kubernetes / DevOps engineer</h3><ul>
-    <li>VMs as first-class Kubernetes objects: KubeVirt, GitOps with Flux, one API for VMs and containers.</li>
-    <li>The infrastructure stack your virtualization team might actually agree to share with you.</li>
-    <li>Managed databases, S3, and tenant isolation out of the box — no assembly required.</li>
+    <li>VMs as first-class Kubernetes objects: KubeVirt, GitOps, one API.</li>
+    <li>A stack your virtualization team might actually agree to share.</li>
+    <li>Managed databases, S3, tenant isolation out of the box.</li>
   </ul></div>
 </div>
 
 ## What you take home
 
-- A **personal demo environment for 30 days** — keep experimenting on a real cluster after the workshop.
-- A **support chat with Cozystack maintainers for 30 days** — direct answers from the people who write the platform, not a ticket queue.
+- A **personal demo environment for 30 days** on a real cluster.
+- A **support chat with Cozystack maintainers** — answers from the people who write the platform.
 - **Take-home labs** that extend what you built in the room.
-- An **official Cozystack certificate** after completing the labs — free, and something your CV and your hiring manager both understand.
+- An **official Cozystack certificate** after the labs — free.
 - A **vSphere → Cozystack translation card** with working commands.
-- An **honest FAQ and objection map** for the internal discussions that start when you get back.
+- An **honest FAQ and objection map** for the discussions back at work.
 
 <div class="cta-row">
   <a class="cta-primary" href="#register">Reserve a free seat</a>
@@ -145,9 +141,9 @@ Roughly 30% explanation, 70% hands-on in your personal tenant on a live cluster.
 
 Cozystack is not a 1:1 VMware replacement, and pretending otherwise would waste your time:
 
-- **HA auto-restart** of VMs from a failed host is not a single out-of-the-box switch — it is assembled explicitly, and we show how and at what cost.
-- **There is no DRS analogue** for proactive load balancing of running VMs.
-- **Oracle, SAP, and some Microsoft licensing** needs per-vendor scoping — some workloads are cheaper to leave where they are.
+- **HA auto-restart** of VMs from a failed host is assembled explicitly, not a built-in switch — we show how and at what cost.
+- **There is no DRS analogue** for proactive balancing of running VMs.
+- **Oracle, SAP, and some Microsoft licensing** needs per-vendor scoping — some workloads are cheaper to leave in place.
 
 If migration doesn't make sense for your estate, we will say so at the workshop — selling you a stuck pilot helps nobody.
 
@@ -165,12 +161,14 @@ If migration doesn't make sense for your estate, we will say so at the workshop 
   </div>
 </div>
 
-Verify the platform before you come: Cozystack is Apache 2.0 open source and a CNCF project — the code, release cadence, and contributors are public at [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), docs at [cozystack.io](https://cozystack.io/docs/).
+Verify the platform before you come: the code, release cadence, and contributors are public at [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), docs at [cozystack.io](https://cozystack.io/docs/).
 
 ## Reserve your seat in Almaty {#register}
 
-Free, 20 seats, first come, first served. Registering now holds your seat: the exact date and venue go to registrants first, and if the date doesn't work for you, freeing the seat takes one reply.
+Free, 20 seats, first come, first served. Registering now holds your seat: the exact date and venue go to registrants first, and freeing the seat takes one reply if the date doesn't work.
 
-Come in a pair if you can: an engineer plus an infrastructure lead get the most out of the day, because one leaves with proof and the other with a plan. Not the right person for this? Forward the page to your VMware admin or infrastructure lead.
+Come in a pair if you can — an engineer plus an infrastructure lead: one leaves with proof, the other with a plan. Not the right person for this? Forward the page to your VMware admin or infrastructure lead.
 
 {{< pipedrive-form type="workshop" city="almaty" >}}
+
+Other tour stops: [all cities](/workshops/vmware-to-cozystack/).

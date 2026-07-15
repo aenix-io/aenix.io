@@ -2,11 +2,38 @@
 title: "Воркшоп в Астане: миграция с VMware на Cozystack"
 description: "Бесплатный практический воркшоп в Астане: перенесите настоящую VM с VMware на open-source Cozystack. После — 30 дней демо-среды, чат с мейнтейнерами, сертификат."
 language: "ru"
+layout: "event-landing"
 hreflang_en: "/workshops/vmware-to-cozystack/astana/"
 related_pages: ["/migration/vmware/", "/compare/cozystack-vs-vmware/", "/alternatives/vmware-alternative/"]
 primary_keyword: "миграция с vmware астана"
 secondary_keywords: ["замена vmware казахстан", "альтернатива vmware", "cozystack обучение", "kubevirt тренинг"]
 images: ["img/og/og-workshop-astana-ru.png"]
+hero_eyebrow: "Практический воркшоп · Астана · август 2026"
+hero_from: "VMware"
+hero_to: "Cozystack"
+hero_tagline: "Перевезите настоящую VM с живого ESXi своими руками — за полдня. Бесплатно и честно про ограничения."
+hero_chips:
+  - "Август 2026 · дата уточняется"
+  - "Астана, Казахстан"
+  - "20 мест"
+  - "Бесплатно"
+  - "На русском"
+hero_primary: { text: "Занять бесплатное место", href: "#register" }
+hero_secondary: { text: "Программа", href: "#program" }
+inshort_title: "Коротко"
+quick_facts_style: "rows"
+translation:
+  - { from: "vSphere / ESXi", to: "KubeVirt" }
+  - { from: "vSAN", to: "LINSTOR" }
+  - { from: "NSX", to: "Cilium" }
+  - { from: "vMotion", to: "Live Migration" }
+  - { from: "vCenter", to: "Dashboard + API" }
+  - { from: "Veeam", to: "Velero" }
+translation_note: "Смысл вы уже знаете — воркшоп добирает словарь. Каждую пару выше вы проверяете вживую, в своём тенанте."
+stats:
+  - { number: "150–1500%", label: "задокументированные подорожания продлений VMware — от иска AT&T до участников CISPE" }
+  - { number: "72 ядра", label: "минимальный заказ подписки — независимо от размера вашего парка" }
+  - { number: "02.10.2025", label: "конец общей поддержки vSphere 7 — extended support или без патчей" }
 event:
   name: "VMware → Cozystack — практический воркшоп, Астана"
   city: "Astana"
@@ -56,49 +83,19 @@ faq:
     a: "Да — по запросу после регистрации пришлём официальное письмо-приглашение в адрес вашей компании: обосновать полдня вне офиса станет делом одного письма."
 ---
 
-{{< design-note kind="illustration" >}}
-Hero illustration: same asset as the EN page (terminal mid-`virt-v2v` next to
-the Cozystack dashboard). Venue photo block added to the event-meta strip once
-the venue is confirmed.
-{{< /design-note >}}
+В этой ценовой истории нет вины вашей команды. Вопрос лишь в том, встретите ли вы следующее продление с проверенной альтернативой — или без неё.
 
-**Broadcom поменял экономику VMware: бессрочные лицензии отменены, подписка начинается с 72 ядер, а продления дорожают на 150–1500%. Этот воркшоп — практический ответ: за полдня вы своими руками переносите настоящую VM с живого ESXi и пересобираете ключевые сценарии виртуализации на открытой платформе.**
+## Что вы будете делать {#program}
 
-<div class="event-meta">
-  <div class="event-meta__item"><span class="event-meta__label">Дата</span><span class="event-meta__value">Август 2026, уточняется</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Город</span><span class="event-meta__value">Астана, Казахстан</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Мест</span><span class="event-meta__value">20</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Стоимость</span><span class="event-meta__value">Бесплатно</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Язык</span><span class="event-meta__value">Русский</span></div>
-</div>
-
-<div class="cta-row">
-  <a class="cta-primary" href="#register">Занять бесплатное место</a>
-  <a class="cta-secondary" href="/ru/workshops/vmware-to-cozystack/">Все города тура</a>
-</div>
-
----
-
-## Зачем этот воркшоп
-
-- **Бессрочных лицензий больше нет.** VMware продаётся только по подписке, минимум — 72 ядра на заказ: небольшие и средние парки платят за мощность, которой у них нет.
-- **Продления подорожали на 150–1500%.** Задокументированные случаи — от иска AT&T до публичных жалоб участников CISPE. Вопрос вашего продления — «когда», а не «если».
-- **Общая поддержка vSphere 7 закончилась 2 октября 2025.** Остаться — значит платить за extended support или жить без патчей.
-- **Страх выхода тоже реален.** «Kubernetes обесценит мои 15 лет на VMware» — главная причина, по которой команды буксуют. Воркшоп построен так, чтобы снять именно этот страх: переводом, а не заменой вашего опыта.
-
-В этом нет вины вашей команды. Вопрос лишь в том, встретите ли вы следующее продление с проверенной альтернативой или без неё.
-
-## Что вы будете делать
-
-Примерно 30% объяснений и 70% практики в персональном тенанте на живом кластере. Каждое понятие вводится как перевод с vSphere: смысл вы уже знаете — добираете словарь.
+Примерно 30% объяснений и 70% практики в персональном тенанте на живом кластере. Каждое понятие — перевод с vSphere: смысл вы знаете, добираете словарь.
 
 <div class="agenda">
-  <div class="agenda__row"><div class="agenda__time">00:00</div><div class="agenda__body"><strong>Reality check<span class="agenda__tag">доклад</span></strong>Сколько стоит VMware после Broadcom — и сколько на самом деле стоит «просто остаться». Единственный слайдовый блок за день.</div></div>
-  <div class="agenda__row"><div class="agenda__time">00:15</div><div class="agenda__body"><strong>Карта перевода<span class="agenda__tag">руками</span></strong>vSphere → Cozystack, примитив за примитивом: vSAN → LINSTOR, NSX → Cilium, vMotion → live migration, vRealize → каталог self-service. Каждый пункт вы находите вживую в своём тенанте.</div></div>
-  <div class="agenda__row"><div class="agenda__time">00:40</div><div class="agenda__body"><strong>Миграция VM из VMware<span class="agenda__tag">руками</span></strong>Живой экспорт с работающего ESXi, конвертация virt-v2v — и каждый участник запускает перенесённую VM в своём тенанте и получает ответ от приложения внутри неё.</div></div>
-  <div class="agenda__row"><div class="agenda__time">01:30</div><div class="agenda__body"><strong>Self-service платформа<span class="agenda__tag">руками</span></strong>Managed PostgreSQL за три минуты, LoadBalancer с внешним IP, мониторинг Grafana из коробки, бэкап Velero — и весь стек, поднятый из одного Git-манифеста.</div></div>
-  <div class="agenda__row"><div class="agenda__time">02:20</div><div class="agenda__body"><strong>Честные ограничения<span class="agenda__tag">обсуждение</span></strong>Что не переезжает 1:1 — авторестарт HA, DRS, лицензии Oracle/SAP — и когда мы сами советуем не мигрировать. Назовите свою самую страшную VM и получите вердикт.</div></div>
-  <div class="agenda__row"><div class="agenda__time">02:40</div><div class="agenda__body"><strong>Как повторить это у себя<span class="agenda__tag">доклад</span></strong>Плейбук пилота для вашего ЦОД: некритичная первая нагрузка, поэтапный план с привязкой к дате продления, домашние лабораторные и путь к сертификату.</div></div>
+  <div class="agenda__row"><div class="agenda__time">00:00</div><div class="agenda__body"><strong>Reality check<span class="agenda__tag">доклад</span></strong>Сколько стоит VMware после Broadcom — и сколько на самом деле стоит «просто остаться». Единственный слайдовый блок дня.</div></div>
+  <div class="agenda__row"><div class="agenda__time">00:15</div><div class="agenda__body"><strong>Карта перевода<span class="agenda__tag">руками</span></strong>vSphere → Cozystack, примитив за примитивом — каждый пункт вы находите вживую в своём тенанте.</div></div>
+  <div class="agenda__row"><div class="agenda__time">00:40</div><div class="agenda__body"><strong>Миграция VM из VMware<span class="agenda__tag">руками</span></strong>Живой экспорт с работающего ESXi, конвертация virt-v2v — ваша перенесённая VM отвечает на запросы в вашем тенанте.</div></div>
+  <div class="agenda__row"><div class="agenda__time">01:30</div><div class="agenda__body"><strong>Self-service платформа<span class="agenda__tag">руками</span></strong>Managed PostgreSQL за три минуты, LoadBalancer, мониторинг Grafana, бэкап Velero — и весь стек из одного Git-манифеста.</div></div>
+  <div class="agenda__row"><div class="agenda__time">02:20</div><div class="agenda__body"><strong>Честные ограничения<span class="agenda__tag">обсуждение</span></strong>Что не переезжает 1:1 — и когда мы сами советуем не мигрировать. Назовите свою самую страшную VM и получите вердикт.</div></div>
+  <div class="agenda__row"><div class="agenda__time">02:40</div><div class="agenda__body"><strong>Как повторить это у себя<span class="agenda__tag">доклад</span></strong>Плейбук пилота для вашего ЦОД: первая нагрузка, поэтапный план под дату продления, лабораторные и путь к сертификату.</div></div>
   <div class="agenda__row"><div class="agenda__time">03:15</div><div class="agenda__body"><strong>Открытый нетворкинг<span class="agenda__tag">45 мин</span></strong>Личные кейсы, вопросы, кофе. Команда остаётся в зале.</div></div>
 </div>
 
@@ -106,35 +103,35 @@ the venue is confirmed.
 
 <div class="persona-cards">
   <div class="persona-card"><h3>Администратор VMware / сисадмин</h3><ul>
-    <li>Ваш опыт vSphere здесь — фундамент: весь день построен как перевод, а не обучение с нуля.</li>
-    <li>Вы лично переносите VM с ESXi и уходите со шпаргалкой-переводчиком vSphere → Cozystack.</li>
-    <li>30 дней демо-среды и чата с мейнтейнерами, чтобы продолжить практику после.</li>
+    <li>Весь день — перевод с vSphere, а не обучение с нуля.</li>
+    <li>Вы лично переносите VM с ESXi и забираете шпаргалку-переводчик.</li>
+    <li>30 дней демо-среды и чата с мейнтейнерами после.</li>
   </ul></div>
   <div class="persona-card"><h3>Руководитель инфраструктуры</h3><ul>
-    <li>Весь путь миграции целиком — включая честные пробелы, названные первыми.</li>
-    <li>Экономическая логика и поэтапный план пилота с привязкой к вашей дате продления.</li>
-    <li>Лучше всего приходить в паре со своим инженером: уходите с доказательством и планом.</li>
+    <li>Весь путь миграции — включая честные пробелы, названные первыми.</li>
+    <li>Экономическая логика и поэтапный план пилота под вашу дату продления.</li>
+    <li>Лучше всего приходить в паре со своим инженером.</li>
   </ul></div>
   <div class="persona-card"><h3>CTO / ИТ-директор</h3><ul>
-    <li>Экономика «выход vs продление» без маркетинговых цифр — вилки, допущения и где модель ломается.</li>
-    <li>Прямые ответы на вопросы вендор-риска: код Apache 2.0, управление CNCF, поддержка не привязана к одной компании.</li>
-    <li>Обученный инженер и прямой вердикт по самым тяжёлым нагрузкам — в тот же день.</li>
+    <li>Экономика «выход vs продление» без маркетинговых цифр.</li>
+    <li>Вендор-риск в лоб: Apache 2.0, CNCF, поддержка не привязана к одной компании.</li>
+    <li>Обученный инженер и прямой вердикт по тяжёлым нагрузкам — в тот же день.</li>
   </ul></div>
   <div class="persona-card"><h3>Kubernetes / DevOps-инженер</h3><ul>
-    <li>VM как полноценные объекты Kubernetes: KubeVirt, GitOps на Flux, один API для VM и контейнеров.</li>
-    <li>Инфраструктурный стек, который команда виртуализации, возможно, и правда согласится использовать вместе с вами.</li>
-    <li>Managed-базы, S3 и изоляция тенантов из коробки — без самостоятельной сборки.</li>
+    <li>VM как полноценные объекты Kubernetes: KubeVirt, GitOps, один API.</li>
+    <li>Стек, который команда виртуализации, возможно, и правда согласится использовать вместе с вами.</li>
+    <li>Managed-базы, S3 и изоляция тенантов из коробки.</li>
   </ul></div>
 </div>
 
 ## Что вы забираете с собой
 
-- **Персональная демо-среда на 30 дней** — продолжайте эксперименты на настоящем кластере после воркшопа.
-- **Чат поддержки с мейнтейнерами Cozystack на 30 дней** — ответы от людей, которые пишут платформу, а не от очереди тикетов.
-- **Домашние лабораторные**, продолжающие то, что вы собрали в зале.
-- **Официальный сертификат Cozystack** после выполнения лабораторных — бесплатно; он имеет вес и в резюме, и в разговоре с работодателем.
+- **Персональная демо-среда на 30 дней** на настоящем кластере.
+- **Чат поддержки с мейнтейнерами Cozystack** — ответы от людей, которые пишут платформу.
+- **Домашние лабораторные**, продолжающие сборку из зала.
+- **Официальный сертификат Cozystack** после лабораторных — бесплатно.
 - **Карта-переводчик vSphere → Cozystack** с рабочими командами.
-- **Честный FAQ и карта возражений** для внутренних обсуждений, которые начнутся по возвращении.
+- **Честный FAQ и карта возражений** для обсуждений по возвращении.
 
 <div class="cta-row">
   <a class="cta-primary" href="#register">Занять бесплатное место</a>
@@ -144,7 +141,7 @@ the venue is confirmed.
 
 Cozystack — не замена VMware «один в один», и делать вид иначе — терять ваше время:
 
-- **Авторестарт VM с умершего хоста (аналог vSphere HA)** — не готовая кнопка из коробки: он собирается явно, и мы показываем, как и какой ценой.
+- **Авторестарт VM с умершего хоста (аналог vSphere HA)** собирается явно, это не готовая кнопка — покажем, как и какой ценой.
 - **Аналога DRS** — проактивной балансировки работающих VM — нет.
 - **Лицензии Oracle, SAP и части продуктов Microsoft** требуют разбора по вендору — часть нагрузок дешевле оставить на месте.
 
@@ -164,7 +161,7 @@ Cozystack — не замена VMware «один в один», и делать
   </div>
 </div>
 
-Проверьте платформу до воркшопа: Cozystack — open source под Apache 2.0 и проект CNCF. Код, темп релизов и контрибьюторы открыты: [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), документация — на [cozystack.io](https://cozystack.io/docs/).
+Проверьте платформу до воркшопа: код, темп релизов и контрибьюторы открыты — [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), документация — на [cozystack.io](https://cozystack.io/docs/).
 
 ## Регистрация — бесплатное место в Астане {#register}
 
@@ -173,3 +170,5 @@ Cozystack — не замена VMware «один в один», и делать
 Если можете — приходите парой: инженер плюс руководитель инфраструктуры получают от дня больше всех — один уходит с доказательством, второй — с планом. Это не ваш профиль? Перешлите страницу своему администратору VMware или руководителю инфраструктуры.
 
 {{< pipedrive-form type="workshop" city="astana" >}}
+
+Другие города тура: [все площадки](/ru/workshops/vmware-to-cozystack/).

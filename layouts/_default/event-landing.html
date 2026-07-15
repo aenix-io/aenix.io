@@ -1,0 +1,105 @@
+{{ define "main" }}
+{{/*
+  event-landing.html — dedicated layout for workshop / event pages
+  (selected via `layout: event-landing` in frontmatter).
+
+  Replaces the generic list.html flow for events: a compact hero answers
+  what/where/when/cost in one screen, the GEO blocks (direct_answer +
+  quick_facts) move to a quiet "In short" section before the FAQ instead
+  of opening the page as a text wall.
+
+  Frontmatter contract (all optional unless noted):
+    hero_eyebrow     — small mono line above the title
+    hero_from/to     — the two halves of the arrow title (required)
+    hero_tagline     — one human sentence under the title
+    hero_chips       — list of short fact strings
+    hero_primary     — {text, href} main CTA
+    hero_secondary   — {text, href} quiet CTA
+    translation      — list of {from, to} term pairs (signature strip)
+    translation_note — caption under the pairs
+    stats            — list of {number, label} pain stats
+    inshort_title    — heading for the direct_answer/quick_facts section
+*/}}
+
+<section class="event-hero">
+  <div class="page-hero-bg">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+  </div>
+  <div class="container">
+    {{ partial "lang-switch.html" . }}
+    {{ with .Params.hero_eyebrow }}<p class="event-hero__eyebrow">{{ . }}</p>{{ end }}
+    <h1 class="event-hero__title">
+      <span>{{ .Params.hero_from | default "VMware" }}</span>
+      <span class="event-hero__arrow" aria-hidden="true">&rarr;</span>
+      <span class="event-hero__to">{{ .Params.hero_to | default "Cozystack" }}</span>
+    </h1>
+    {{ with .Params.hero_tagline }}<p class="event-hero__tagline">{{ . }}</p>{{ end }}
+    {{ with .Params.hero_chips }}
+    <ul class="event-hero__chips">
+      {{ range . }}<li>{{ . }}</li>{{ end }}
+    </ul>
+    {{ end }}
+    <div class="event-hero__cta">
+      {{ with .Params.hero_primary }}<a class="cta-primary" href="{{ .href }}">{{ .text }}</a>{{ end }}
+      {{ with .Params.hero_secondary }}<a class="cta-secondary" href="{{ .href }}">{{ .text }}</a>{{ end }}
+    </div>
+  </div>
+</section>
+
+{{ with .Params.translation }}
+<section class="event-translate" aria-label="vSphere to Cozystack">
+  <div class="container">
+    <div class="event-translate__grid">
+      {{ range . }}
+      <div class="event-translate__pair">
+        <span class="event-translate__from">{{ .from }}</span>
+        <span class="event-translate__arrow" aria-hidden="true">&rarr;</span>
+        <span class="event-translate__to">{{ .to }}</span>
+      </div>
+      {{ end }}
+    </div>
+    {{ with $.Params.translation_note }}<p class="event-translate__note">{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.stats }}
+<section class="event-stats">
+  <div class="container">
+    <div class="event-stats__grid">
+      {{ range . }}
+      <div class="event-stat">
+        <span class="event-stat__number">{{ .number }}</span>
+        <span class="event-stat__label">{{ .label }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<div class="section event-body">
+  <div class="container">
+    <div class="event-prose">
+      {{ .Content }}
+    </div>
+  </div>
+</div>
+
+{{ if or .Params.direct_answer .Params.quick_facts .Params.faq }}
+<section class="event-outro">
+  <div class="container">
+    <div class="event-prose">
+      {{ if or .Params.direct_answer .Params.quick_facts }}
+      <div class="event-inshort">
+        {{ with .Params.inshort_title }}<h2>{{ . }}</h2>{{ end }}
+        {{ partial "seo/geo-intro.html" . }}
+      </div>
+      {{ end }}
+      {{ partial "seo/geo-faq.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

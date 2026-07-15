@@ -2,11 +2,40 @@
 title: "Тур воркшопов «VMware → Cozystack» — Центральная Азия, август 2026"
 description: "Бесплатные практические воркшопы в Ташкенте, Бишкеке, Алматы и Астане: перенесите настоящую VM с VMware на open-source Cozystack. 30 дней демо-среды и чата."
 language: "ru"
+layout: "event-landing"
 hreflang_en: "/workshops/vmware-to-cozystack/"
 primary_keyword: "замена vmware"
 secondary_keywords: ["миграция с vmware", "альтернатива vmware", "cozystack обучение", "kubevirt тренинг"]
+related_pages: ["/migration/vmware/", "/compare/cozystack-vs-vmware/", "/alternatives/vmware-alternative/"]
 images: ["img/og/og-workshop-tour-ru.png"]
 hide_child_cards: true
+hero_eyebrow: "Тур воркшопов · Центральная Азия · август 2026"
+hero_from: "VMware"
+hero_to: "Cozystack"
+hero_tagline: "Четыре города, одна программа: перевезите настоящую VM с живого ESXi своими руками — за полдня. Бесплатно и честно про ограничения."
+hero_chips:
+  - "Ташкент"
+  - "Бишкек"
+  - "Алматы"
+  - "Астана"
+  - "20 мест в городе"
+  - "Бесплатно"
+hero_primary: { text: "Выбрать город", href: "#cities" }
+hero_secondary: { text: "Cozystack vs VMware (EN)", href: "/compare/cozystack-vs-vmware/" }
+inshort_title: "Коротко"
+quick_facts_style: "rows"
+translation:
+  - { from: "vSphere / ESXi", to: "KubeVirt" }
+  - { from: "vSAN", to: "LINSTOR" }
+  - { from: "NSX", to: "Cilium" }
+  - { from: "vMotion", to: "Live Migration" }
+  - { from: "vCenter", to: "Dashboard + API" }
+  - { from: "Veeam", to: "Velero" }
+translation_note: "Смысл вы уже знаете — воркшоп добирает словарь. Каждую пару выше вы проверяете вживую, в своём тенанте."
+stats:
+  - { number: "150–1500%", label: "задокументированные подорожания продлений VMware — от иска AT&T до участников CISPE" }
+  - { number: "72 ядра", label: "минимальный заказ подписки — независимо от размера вашего парка" }
+  - { number: "02.10.2025", label: "конец общей поддержки vSphere 7 — extended support или без патчей" }
 direct_answer: |
   **Тур воркшопов «VMware → Cozystack» — серия бесплатных практических интенсивов на полдня в Ташкенте, Бишкеке, Алматы и Астане в августе 2026 для команд, столкнувшихся с новой экономикой VMware после Broadcom. Ведёт Тимур Тукаев — мейнтейнер Cozystack, комьюнити-менеджер проекта и сооснователь Aenix. На каждом воркшопе администраторы VMware, руководители инфраструктуры и DevOps-инженеры своими руками переносят настоящую виртуальную машину с живого ESXi и собирают self-service-инфраструктуру на Cozystack — открытой (Apache 2.0) облачной платформе, проекте CNCF. Около 70% времени — практика в персональном тенанте на живом кластере. Участники получают демо-среду и прямой чат с мейнтейнерами на 30 дней, а выполнив домашние лабораторные — официальный сертификат Cozystack. Участие бесплатное, в каждом городе — 20 мест.**
 
@@ -39,22 +68,7 @@ faq:
     a: "Правда бесплатно — включая 30 дней демо-среды, чат с мейнтейнерами и сертификат. Честная мотивация: части участников позже понадобится помощь с миграцией продакшена — это бизнес Aenix. Сам воркшоп — обучение, а не питч, и в программе есть блок о том, когда мы советуем не мигрировать."
 ---
 
-{{< design-note kind="illustration" >}}
-Hero illustration: same asset as the EN hub (tour map of the four cities in the
-site's dark style). City cards can each take a small skyline/landmark line icon.
-{{< /design-note >}}
-
-**Четыре города, одна программа: бесплатные полдня практики, за которые вы своими руками переносите настоящую VM с живого ESXi и пересобираете ключевые сценарии виртуализации на Cozystack — открытой (Apache 2.0) облачной платформе, проекте CNCF. Без маркетинговых слайдов: 70% времени — ваши руки в терминале, а слабые места платформы называются раньше сильных.**
-
-<div class="event-meta">
-  <div class="event-meta__item"><span class="event-meta__label">Когда</span><span class="event-meta__value">Август 2026</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Городов</span><span class="event-meta__value">4</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Мест в городе</span><span class="event-meta__value">20</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Стоимость</span><span class="event-meta__value">Бесплатно</span></div>
-  <div class="event-meta__item"><span class="event-meta__label">Язык</span><span class="event-meta__value">Русский</span></div>
-</div>
-
-## Выберите свой город
+## Выберите свой город {#cities}
 
 <div class="city-cards">
   <a class="city-card" href="/ru/workshops/vmware-to-cozystack/tashkent/">
@@ -87,24 +101,16 @@ site's dark style). City cards can each take a small skyline/landmark line icon.
   </a>
 </div>
 
----
-
-## Почему этот тур и почему сейчас
-
-Поглощение VMware компанией Broadcom переписало её экономику: бессрочные лицензии отменены, подписка начинается с 72 ядер на заказ, а задокументированные подорожания продлений — от 150% до 1500%: от иска AT&T до публичных жалоб участников CISPE. Общая поддержка vSphere 7 закончилась 2 октября 2025 — теперь и у варианта «остаться на месте» есть своя цена.
-
-Техническая альтернатива существует — VM как полноценные объекты Kubernetes, на open source, на вашем железе. Обычно не хватает другого: уверенности, что именно *ваша* команда это потянет. Именно этот пробел воркшоп закрывает лучше любого whitepaper: за полдня каждый участник своими руками переносит VM с живого ESXi и собирает вокруг неё self-service-платформу — сторедж, сеть, managed PostgreSQL, мониторинг, бэкап, GitOps.
-
 ## Программа одним абзацем
 
-Reality check по экономике VMware (единственный слайдовый блок дня), затем карта перевода vSphere → Cozystack, которую вы проверяете вживую в своём тенанте, затем ядро: живой экспорт с работающего ESXi, конвертация virt-v2v — и ваша собственная перенесённая VM отвечает на запросы. Дальше платформенная часть: managed PostgreSQL за три минуты, LoadBalancer, мониторинг Grafana из коробки, бэкап Velero и весь стек из одного Git-манифеста. День закрывают блок честных ограничений (что не переезжает 1:1 и когда мы сами советуем не мигрировать), плейбук пилота для вашего ЦОД и 45 минут открытого нетворкинга. Полная программа — на странице каждого города.
+Reality check по экономике VMware (единственный слайдовый блок дня), затем карта перевода vSphere → Cozystack, которую вы проверяете вживую в своём тенанте, затем ядро: живой экспорт с работающего ESXi, конвертация virt-v2v — и ваша перенесённая VM отвечает на запросы. Дальше — managed PostgreSQL за три минуты, LoadBalancer, мониторинг Grafana из коробки, бэкап Velero и весь стек из одного Git-манифеста. День закрывают блок честных ограничений, плейбук пилота для вашего ЦОД и 45 минут открытого нетворкинга. Полная программа — на странице каждого города.
 
 ## После воркшопа — то, что большинство событий пропускает
 
-- **Персональная демо-среда на 30 дней** на настоящем кластере — чтобы навык пережил первую рабочую неделю.
-- **Чат поддержки с мейнтейнерами Cozystack на 30 дней** — прямые ответы от людей, которые пишут платформу.
-- **Домашние лабораторные**, продолжающие то, что вы собрали в зале.
-- **Официальный сертификат Cozystack** после выполнения лабораторных — бесплатно.
+- **Персональная демо-среда на 30 дней** на настоящем кластере.
+- **Чат поддержки с мейнтейнерами Cozystack** — ответы от людей, которые пишут платформу.
+- **Домашние лабораторные**, продолжающие сборку из зала.
+- **Официальный сертификат Cozystack** после лабораторных — бесплатно.
 
 ## Ведущий
 
@@ -119,9 +125,8 @@ Reality check по экономике VMware (единственный слай�
   </div>
 </div>
 
-Проверьте платформу до воркшопа: Cozystack — open source под Apache 2.0 и проект CNCF. Код, темп релизов и контрибьюторы открыты: [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), документация — на [cozystack.io](https://cozystack.io/docs/).
+Проверьте платформу до воркшопа: код, темп релизов и контрибьюторы открыты — [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), документация — на [cozystack.io](https://cozystack.io/docs/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="#выберите-свой-город">Выбрать город и зарегистрироваться</a>
-  <a class="cta-secondary" href="/compare/cozystack-vs-vmware/">Cozystack против VMware — детально (EN)</a>
+  <a class="cta-primary" href="#cities">Выбрать город и зарегистрироваться</a>
 </div>
