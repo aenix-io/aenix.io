@@ -1,6 +1,6 @@
 ---
 title: "VMware to Cozystack workshop tour — Central Asia, August 2026"
-description: "Free hands-on VMware exit workshops in Tashkent, Bishkek, Almaty, and Astana: migrate a live VM to open-source Cozystack, keep a 30-day lab and maintainer chat."
+description: "Free hands-on VMware exit workshops in Tashkent, Bishkek, Almaty, and Astana: migrate a real VM to open-source Cozystack, keep a 30-day lab and maintainer chat."
 language: "en"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/"
 primary_keyword: "vmware exit workshop central asia"
@@ -120,6 +120,8 @@ A reality check on VMware economics (the only slide block of the day), then a vS
     </div>
   </div>
 </div>
+
+Verify the platform before you come: Cozystack is Apache 2.0 open source and a CNCF project — the code, release cadence, and contributors are public at [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), docs at [cozystack.io](https://cozystack.io/docs/).
 
 <div class="cta-row">
   <a class="cta-primary" href="#pick-your-city">Choose a city and register</a>

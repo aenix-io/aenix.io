@@ -1,6 +1,6 @@
 ---
 title: "VMware to Cozystack workshop in Astana — free, hands-on"
-description: "Free hands-on workshop in Astana: migrate a live VM off VMware to open-source Cozystack, then keep a 30-day lab, maintainer chat, and a certification path."
+description: "Free hands-on workshop in Astana: migrate a real VM off VMware to open-source Cozystack, then keep a 30-day lab, maintainer chat, and a certification path."
 language: "en"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/astana/"
 primary_keyword: "vmware migration workshop astana"
@@ -52,6 +52,8 @@ faq:
     a: "Maybe not — and we will tell you honestly. ISV licensing (Oracle counts every core in the cluster on a non-approved hypervisor; SAP and Microsoft keep certified-platform lists) is one of the real constraints covered in the limitations block. Bring your scariest VM and get a straight verdict."
   - q: "Can I bring my manager or a colleague?"
     a: "Please do. The workshop works best in pairs — an engineer plus an infrastructure lead — because you leave with both the hands-on proof and the person who can act on it."
+  - q: "Can you send an official invitation letter for my employer?"
+    a: "Yes — on request after registration we will send an official invitation letter addressed to your employer, so justifying half a day out of the office takes one email."
 ---
 
 {{< design-note kind="illustration" >}}
@@ -61,7 +63,7 @@ window mid-`virt-v2v` next to the Cozystack dashboard, or an abstract
 Venue photo block can be added to the event-meta strip once the venue is confirmed.
 {{< /design-note >}}
 
-**Broadcom changed VMware's economics: perpetual licenses are gone, subscriptions start at 72 cores, and renewals arrive at 150–1500% of the old price. This workshop is a practical answer — in half a day you migrate a real VM off a live ESXi and rebuild core virtualization workflows on an open-source platform, with your own hands.**
+**Broadcom changed VMware's economics: perpetual licenses are gone, subscriptions start at 72 cores, and renewals arrive with 150–1500% increases. This workshop is a practical answer — in half a day you migrate a real VM off a live ESXi and rebuild core virtualization workflows on an open-source platform, with your own hands.**
 
 <div class="event-meta">
   <div class="event-meta__item"><span class="event-meta__label">Date</span><span class="event-meta__value">August 2026, TBA</span></div>
@@ -117,7 +119,7 @@ Roughly 30% explanation, 70% hands-on in your personal tenant on a live cluster.
   <div class="persona-card"><h3>CTO / IT director</h3><ul>
     <li>The exit-vs-renewal economics without marketing numbers — ranges, assumptions, and where the model breaks.</li>
     <li>Vendor-risk questions answered directly: Apache 2.0 code, CNCF governance, support not locked to one company.</li>
-    <li>A trained engineer and a written verdict on your hardest workloads — same day.</li>
+    <li>A trained engineer and a straight verdict on your hardest workloads — same day.</li>
   </ul></div>
   <div class="persona-card"><h3>Kubernetes / DevOps engineer</h3><ul>
     <li>VMs as first-class Kubernetes objects: KubeVirt, GitOps with Flux, one API for VMs and containers.</li>
@@ -134,6 +136,10 @@ Roughly 30% explanation, 70% hands-on in your personal tenant on a live cluster.
 - An **official Cozystack certificate** after completing the labs — free, and something your CV and your hiring manager both understand.
 - A **vSphere → Cozystack translation card** with working commands.
 - An **honest FAQ and objection map** for the internal discussions that start when you get back.
+
+<div class="cta-row">
+  <a class="cta-primary" href="#register">Reserve a free seat</a>
+</div>
 
 ## What we will not promise
 
@@ -159,8 +165,12 @@ If migration doesn't make sense for your estate, we will say so at the workshop 
   </div>
 </div>
 
+Verify the platform before you come: Cozystack is Apache 2.0 open source and a CNCF project — the code, release cadence, and contributors are public at [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack), docs at [cozystack.io](https://cozystack.io/docs/).
+
 ## Reserve your seat in Astana {#register}
 
-Free, 20 seats, first come — first served. Come in a pair if you can: an engineer plus an infrastructure lead get the most out of the day, because one leaves with proof and the other with a plan.
+Free, 20 seats, first come, first served. Registering now holds your seat: the exact date and venue go to registrants first, and if the date doesn't work for you, freeing the seat takes one reply.
+
+Come in a pair if you can: an engineer plus an infrastructure lead get the most out of the day, because one leaves with proof and the other with a plan. Not the right person for this? Forward the page to your VMware admin or infrastructure lead.
 
 {{< pipedrive-form type="workshop" city="astana" >}}

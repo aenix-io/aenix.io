@@ -23,7 +23,7 @@
          made visitors read the same line twice (marketer review #3). Suppress
          the subtitle on those page types — .Description still powers meta/OG/SERP.
          Non-landing list pages (section hubs, etc.) keep their subtitle. */}}
-    {{- $landing := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare") (.Params.page_type | default "") -}}
+    {{- $landing := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare" "event-landing") (.Params.page_type | default "") -}}
     {{/* Non-landing hubs: render short `hero_subtitle` (decoupled from meta) when
          set, else fall back to the full `.Description`. .Description still powers
          meta/OG/SERP either way. */}}

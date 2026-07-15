@@ -4018,6 +4018,7 @@ a.lang-switch__item:hover {
   color: var(--aenix-text);
   background: rgba(255, 255, 255, 0.05);
 }
+.lang-switch__item:focus-visible { outline-offset: -3px; }
 .lang-switch__item--active {
   color: #fff;
   background: var(--aenix-fill, #0971EB);
@@ -4072,7 +4073,7 @@ a.lang-switch__item:hover {
 }
 .persona-card p, .persona-card ul {
   margin: 0;
-  font-size: 0.9063rem;
+  font-size: 0.9375rem;
   line-height: 1.55;
   color: var(--aenix-text-muted);
 }
@@ -4143,11 +4144,12 @@ a.lang-switch__item:hover {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
   text-decoration: none;
-  transition: border-color 0.2s var(--ease, ease), transform 0.2s var(--ease, ease);
+  transition: border-color 0.2s var(--ease, ease), transform 0.2s var(--ease, ease), box-shadow 0.2s var(--ease, ease);
 }
 .city-card:hover {
-  border-color: rgba(1, 165, 255, 0.45);
+  border-color: var(--aenix-primary);
   transform: translateY(-3px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 .city-card__country {
   font-family: var(--font-mono, monospace);
@@ -4158,20 +4160,21 @@ a.lang-switch__item:hover {
   color: var(--aenix-text-muted);
   margin-bottom: 0.375rem;
 }
-.city-card__name {
+.city-card .city-card__name {
   margin: 0 0 0.375rem;
   font-size: 1.375rem;
   color: var(--aenix-text);
 }
 .city-card__date {
-  font-size: 0.9063rem;
+  font-size: 0.9375rem;
   color: var(--aenix-primary);
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
 .city-card__note {
   margin: 0 0 1rem;
-  font-size: 0.9063rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--aenix-text-muted);
 }
@@ -4203,7 +4206,7 @@ a.lang-switch__item:hover {
   border-radius: 12px;
   display: block;
 }
-.speaker-card__name {
+.speaker-card .speaker-card__name {
   margin: 0 0 0.25rem;
   font-size: 1.1875rem;
 }
