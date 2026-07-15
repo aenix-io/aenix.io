@@ -47,9 +47,36 @@
   "platform-engineering-maturity-assessment" "https://webforms.pipedrive.com/f/6qbFgr1EMAgAtsm6LVQv22mpVq4UUUVR0hJ0mEXsy7Bqv5ZQrKSBAJoW3lk5wXQfon"
   "sovereign-ai-decision-guide"              "https://webforms.pipedrive.com/f/6qfoGolI1jSJshW3CHW8pxN16JcEe9zkUo5twB0D1J3ix3yPBQs2stpWr5KWgohorh"
 -}}
+{{/* Workshop registration forms — one form per city × language so each event
+     gets its own attribution and thank-you page. Fill the URLs as the forms
+     are created in Pipedrive; an empty string renders a graceful
+     "registration opens shortly" panel instead of a broken embed. */}}
+{{- $workshopForms := dict
+  "tashkent"  ""
+  "bishkek"   ""
+  "almaty"    ""
+  "astana"    ""
+-}}
+{{- $workshopFormsRu := dict
+  "tashkent"  ""
+  "bishkek"   ""
+  "almaty"    ""
+  "astana"    ""
+-}}
 {{- $url := "" -}}
 {{- $err := "" -}}
-{{- if eq $type "lead-magnet" -}}
+{{- $pending := false -}}
+{{- if eq $type "workshop" -}}
+  {{- $city := .Get "city" | default "" -}}
+  {{- if not (isset $workshopForms $city) -}}
+    {{- $err = printf "unknown workshop city %q (valid: tashkent, bishkek, almaty, astana)" $city -}}
+  {{- else -}}
+    {{- $wmap := cond (eq .Page.Params.language "ru") $workshopFormsRu $workshopForms -}}
+    {{- $url = index $wmap $city -}}
+    {{- if not $url -}}{{ $url = index $workshopForms $city }}{{- end -}}
+    {{- if not $url -}}{{ $pending = true }}{{- end -}}
+  {{- end -}}
+{{- else if eq $type "lead-magnet" -}}
   {{- $res := .Get "resource" | default "dora-compliance-checklist" -}}
   {{- $map := cond (eq .Page.Params.language "de") $leadMagnetsDe $leadMagnets -}}
   {{- $url = index $map $res -}}
@@ -59,12 +86,21 @@
   {{- $cmap := cond (eq .Page.Params.language "de") $formsDe $forms -}}
   {{- $url = index $cmap $type -}}
   {{- if not $url -}}{{ $url = index $forms $type }}{{- end -}}
-  {{- if not $url -}}{{ $err = printf "unknown type %q (valid: discovery, demo, partner, course, lead-magnet)" $type }}{{- end -}}
+  {{- if not $url -}}{{ $err = printf "unknown type %q (valid: discovery, demo, partner, course, lead-magnet, workshop)" $type }}{{- end -}}
 {{- end -}}
 {{- if $url -}}
 <div class="pipedrive-form pipedrive-form--{{ $type }}">
   <div class="pipedriveWebForms" data-pd-webforms="{{ $url }}"></div>
   <script src="https://webforms.pipedrive.com/f/loader"></script>
+</div>
+{{- else if $pending -}}
+{{- $ruPage := eq .Page.Params.language "ru" -}}
+<div class="pipedrive-form pipedrive-form--pending">
+  {{- if $ruPage -}}
+  <p><strong>Регистрация откроется в ближайшие дни.</strong> Оставьте почту через <a href="/contact/">форму контакта</a> или напишите нам в <a href="https://t.me/cozystack" rel="noopener">Telegram</a> — пришлём ссылку на регистрацию первым.</p>
+  {{- else -}}
+  <p><strong>Registration opens shortly.</strong> Leave your email via the <a href="/contact/">contact form</a> or ping us on <a href="https://t.me/cozystack" rel="noopener">Telegram</a> — we will send you the registration link first.</p>
+  {{- end -}}
 </div>
 {{- else -}}
   <div class="pipedrive-form pipedrive-form--error"><strong>pipedrive-form:</strong> {{ $err }}.</div>

@@ -25,7 +25,8 @@
 {{- end -}}
 
 {{- $isDE := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
-{{- $qfTitle := cond $isDE "Auf einen Blick" "Quick facts" -}}
+{{- $isRU := or (eq .Params.language "ru") (hasPrefix .RelPermalink "/ru/") -}}
+{{- $qfTitle := cond $isDE "Auf einen Blick" (cond $isRU "Коротко о главном" "Quick facts") -}}
 {{/* quick_facts_style frontmatter switch: "" (default framed panel)
      or "rows" (open label/value rows, styleguide Block 16). */}}
 {{- $qfStyle := .Params.quick_facts_style | default "" -}}

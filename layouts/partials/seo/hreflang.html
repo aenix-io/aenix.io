@@ -1,43 +1,48 @@
 {{/*
   seo/hreflang.html — Emits <link rel="alternate" hreflang="..."/> tags.
 
-  Resolves locale pair from frontmatter:
-    - EN page declares  hreflang_de: /de/<de-slug>/
+  Resolves locale pairs from frontmatter:
+    - EN page declares  hreflang_de: /de/<de-slug>/   and/or  hreflang_ru: /ru/<ru-slug>/
     - DE page declares  hreflang_en: /<en-slug>/
+    - RU page declares  hreflang_en: /<en-slug>/
 
-  If a counterpart exists, emits both `en` and `de` alternate links plus
-  `x-default` (always pointing at the EN version per Google's recommendation
-  for sites with no neutral landing).
+  If a counterpart exists, emits the pair plus `x-default` (always pointing
+  at the EN version per Google's recommendation for sites with no neutral
+  landing).
 
   If no counterpart declared in frontmatter, emits only `x-default = self`
   (so single-language pages still pass hreflang validation).
 
   Called from seo/head.html.
 
-  Last updated: 2026-05-10
+  Last updated: 2026-07-15 (RU locale support for /ru/workshops/)
 */}}
 
-{{- $isDE := eq .Params.language "de" -}}
+{{- $lang := .Params.language | default "en" -}}
 {{- $hreflangEN := .Params.hreflang_en -}}
 {{- $hreflangDE := .Params.hreflang_de -}}
+{{- $hreflangRU := .Params.hreflang_ru -}}
 {{- $self := .Permalink -}}
 {{- $base := .Site.BaseURL | strings.TrimSuffix "/" -}}
 
-{{- if $isDE -}}
-  {{/* DE page — emit DE self + EN counterpart (if declared) + x-default → EN */}}
-  <link rel="alternate" hreflang="de" href="{{ $self }}" />
+{{- if ne $lang "en" -}}
+  {{/* Non-EN page (de/ru) — emit self + EN counterpart (if declared) + x-default → EN */}}
+  <link rel="alternate" hreflang="{{ $lang }}" href="{{ $self }}" />
   {{- if $hreflangEN }}
   <link rel="alternate" hreflang="en" href="{{ printf "%s%s" $base $hreflangEN }}" />
   <link rel="alternate" hreflang="x-default" href="{{ printf "%s%s" $base $hreflangEN }}" />
   {{- else }}
-  {{/* DE page without EN counterpart — x-default points at DE self */}}
+  {{/* Non-EN page without EN counterpart — x-default points at self */}}
   <link rel="alternate" hreflang="x-default" href="{{ $self }}" />
   {{- end }}
 {{- else -}}
-  {{/* EN page (default) — emit EN self + DE counterpart (if declared) + x-default → EN */}}
+  {{/* EN page (default) — emit EN self + declared counterparts + x-default → EN */}}
   <link rel="alternate" hreflang="en" href="{{ $self }}" />
   {{- if $hreflangDE }}
   <link rel="alternate" hreflang="de" href="{{ printf "%s%s" $base $hreflangDE }}" />
+  {{- end }}
+  {{- if $hreflangRU }}
+  <link rel="alternate" hreflang="ru" href="{{ printf "%s%s" $base $hreflangRU }}" />
   {{- end }}
   <link rel="alternate" hreflang="x-default" href="{{ $self }}" />
 {{- end -}}

@@ -25,7 +25,7 @@
   {{- if in (slice "home" "section" "taxonomy" "term") .Kind -}}
     {{- $type = "flag-page" -}}
   {{- else -}}
-    {{- warnf "SEO WARNING — page %q is missing required frontmatter `page_type`. Set one of: solution-landing, services-landing, industry-landing, blog-article, compare, alternative, migration-hub, lead-magnet, product, flag-page" .Path -}}
+    {{- warnf "SEO WARNING — page %q is missing required frontmatter `page_type`. Set one of: solution-landing, services-landing, industry-landing, blog-article, compare, alternative, migration-hub, lead-magnet, product, event-landing, flag-page" .Path -}}
   {{- end -}}
 {{- end -}}
 
@@ -56,8 +56,9 @@
 {{- end -}}
 
 {{- with .Params.description -}}
-  {{- if gt (len .) 165 -}}
-    {{- warnf "SEO WARNING — page %q description is %d chars (>160). SERP snippet will truncate." $.Path (len .) -}}
+  {{/* strings.RuneCount, not len: len counts bytes and doubles Cyrillic/umlaut chars */}}
+  {{- if gt (strings.RuneCount .) 165 -}}
+    {{- warnf "SEO WARNING — page %q description is %d chars (>160). SERP snippet will truncate." $.Path (strings.RuneCount .) -}}
   {{- end -}}
 {{- end -}}
 
@@ -99,11 +100,14 @@
 <meta property="og:description" content="{{ .Description }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:type" content="{{ if eq $type "blog-article" }}article{{ else }}website{{ end }}" />
-<meta property="og:locale" content="{{ if eq .Params.language "de" }}de_DE{{ else }}en_US{{ end }}" />
+<meta property="og:locale" content="{{ if eq .Params.language "de" }}de_DE{{ else if eq .Params.language "ru" }}ru_RU{{ else }}en_US{{ end }}" />
 {{- if and (ne .Params.language "de") .Params.hreflang_de }}
 <meta property="og:locale:alternate" content="de_DE" />
 {{- end }}
-{{- if and (eq .Params.language "de") .Params.hreflang_en }}
+{{- if and (ne .Params.language "ru") .Params.hreflang_ru }}
+<meta property="og:locale:alternate" content="ru_RU" />
+{{- end }}
+{{- if and (ne (.Params.language | default "en") "en") .Params.hreflang_en }}
 <meta property="og:locale:alternate" content="en_US" />
 {{- end }}
 {{- with .Params.images }}
@@ -152,6 +156,10 @@
 
 {{- if eq $type "product" }}
   {{ partial "seo/jsonld-softwareapplication.html" . }}
+{{- end }}
+
+{{- if eq $type "event-landing" }}
+  {{ partial "seo/jsonld-event.html" . }}
 {{- end }}
 
 {{- if .Params.faq }}

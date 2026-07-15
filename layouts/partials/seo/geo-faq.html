@@ -6,7 +6,9 @@
   that defines `faq:`. Also wrapped by the {{< seo-faq >}} shortcode.
   Pass the page as context: {{ partial "seo/geo-faq.html" . }}
 */}}
-{{- $faqTitle := cond (or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/")) "Häufig gestellte Fragen" "Frequently asked questions" -}}
+{{- $isDEfaq := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
+{{- $isRUfaq := or (eq .Params.language "ru") (hasPrefix .RelPermalink "/ru/") -}}
+{{- $faqTitle := cond $isDEfaq "Häufig gestellte Fragen" (cond $isRUfaq "Частые вопросы" "Frequently asked questions") -}}
 {{/* faq_style frontmatter switch: "" (default boxed cards) or
      "rows" (open rows with hairlines, styleguide Block 23). */}}
 {{- with .Params.faq -}}
