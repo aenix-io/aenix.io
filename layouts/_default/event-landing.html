@@ -29,11 +29,15 @@
   <div class="container">
     {{ partial "lang-switch.html" . }}
     {{ with .Params.hero_eyebrow }}<p class="event-hero__eyebrow">{{ . }}</p>{{ end }}
+    {{ if .Params.hero_title }}
+    <h1 class="event-hero__title event-hero__title--text">{{ .Params.hero_title }}</h1>
+    {{ else }}
     <h1 class="event-hero__title">
       <span>{{ .Params.hero_from | default "VMware" }}</span>
       <span class="event-hero__arrow" aria-hidden="true">&rarr;</span>
       <span class="event-hero__to">{{ .Params.hero_to | default "Cozystack" }}</span>
     </h1>
+    {{ end }}
     {{ with .Params.hero_tagline }}<p class="event-hero__tagline">{{ . }}</p>{{ end }}
     {{ with .Params.hero_chips }}
     <ul class="event-hero__chips">

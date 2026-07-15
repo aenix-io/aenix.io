@@ -4424,3 +4424,11 @@ a.lang-switch__item:hover {
   .event-hero { padding: 4rem 0 3.5rem; }
   .event-prose > h2 { margin-top: 3.25rem; }
 }
+
+/* Plain-text hero title variant (no arrow construction) */
+.event-hero__title--text {
+  font-size: clamp(1.875rem, 3.8vw, 2.875rem);
+  line-height: 1.15;
+  max-width: 24ch;
+  margin-inline: auto;
+}

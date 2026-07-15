@@ -8,10 +8,9 @@ primary_keyword: "vmware migration workshop"
 secondary_keywords: ["vmware alternative", "vmware exit training", "open source virtualization workshop", "cozystack training"]
 images: ["img/og/og-workshop-tour.png"]
 hide_child_cards: true
-hero_eyebrow: "Hands-on workshop · Tashkent · Bishkek · Almaty · Astana"
-hero_from: "VMware"
-hero_to: "open source"
-hero_tagline: "A live environment instead of slides: in one day you migrate a real virtual machine off VMware yourself — and leave with a step-by-step migration plan."
+hero_eyebrow: "Tashkent · Bishkek · Almaty · Astana"
+hero_title: "Migrating off VMware to open source: a hands-on workshop"
+hero_tagline: "No theory for theory's sake: at the workshop you migrate a real virtual machine off VMware with your own hands, in a live environment — and leave with a step-by-step migration plan."
 hero_chips:
   - "Free with registration"
   - "Seats are limited"
