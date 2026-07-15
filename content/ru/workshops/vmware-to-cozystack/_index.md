@@ -15,7 +15,7 @@ hero_chips:
   - "Бесплатно по регистрации"
   - "Количество мест ограничено"
   - "На русском"
-hero_primary: { text: "Занять место", href: "#register" }
+hero_primary: { text: "Зарегистрироваться", href: "#register" }
 hero_secondary: { text: "Программа", href: "#program" }
 inshort_title: "О воркшопе"
 quick_facts_style: "rows"
@@ -132,7 +132,7 @@ Cozystack — открытая платформа виртуализации, к
 - **Возможность получить сертификат Cozystack Certified Fundamentals** — бесплатно.
 
 <div class="cta-row">
-  <a class="cta-primary" href="#register">Занять место</a>
+  <a class="cta-primary" href="#register">Зарегистрироваться</a>
 </div>
 
 ## Чего мы не обещаем

@@ -15,7 +15,7 @@ hero_chips:
   - "Free with registration"
   - "Seats are limited"
   - "Held in Russian"
-hero_primary: { text: "Reserve a seat", href: "#register" }
+hero_primary: { text: "Register", href: "#register" }
 hero_secondary: { text: "See the program", href: "#program" }
 inshort_title: "About the workshop"
 quick_facts_style: "rows"
@@ -132,7 +132,7 @@ No three-hour slide decks. Every participant gets a personal working environment
 - **The opportunity to earn the Cozystack Certified Fundamentals certificate** — free.
 
 <div class="cta-row">
-  <a class="cta-primary" href="#register">Reserve a seat</a>
+  <a class="cta-primary" href="#register">Register</a>
 </div>
 
 ## What we will not promise
