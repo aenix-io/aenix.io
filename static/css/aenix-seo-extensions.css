@@ -2978,7 +2978,7 @@ body { overflow-x: clip; }
     background: linear-gradient(90deg, rgba(1, 165, 255, 0.55), rgba(167, 139, 250, 0.55));
   }
   .engagement-step { position: relative; }
-  .engagement-step__number {
+  .page-home .engagement-step__number {
     position: absolute;
     top: -4.875rem;
     left: 50%;
@@ -3049,7 +3049,7 @@ body { overflow-x: clip; }
    1.375rem — the line top matches it exactly. */
 @media (min-width: 1024px) {
   .page-home .engagement-steps { margin-top: 2rem; padding-top: 3.5rem; }
-  .engagement-step__number { top: -3.5rem; }
+  .page-home .engagement-step__number { top: -3.5rem; }
   .page-home .engagement-steps::before { top: calc(1.375rem - 1px); }
 }
 @media (max-width: 900px) {
