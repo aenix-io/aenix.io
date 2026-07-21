@@ -4604,7 +4604,7 @@ a.card--hub {
   color: var(--aenix-text-muted);
 }
 .quote-person__avatar { overflow: hidden; }
-.quote-person__avatar img { display: block; width: 3.5rem; height: 3.5rem; border-radius: 50%; object-fit: cover; }
+.quote-person__avatar img { display: block; width: 3.5rem; height: 3.5rem; margin: 0; border-radius: 50%; object-fit: cover; }
 .quote-person__name { display: block; font-weight: 700; color: var(--aenix-text); }
 .quote-person__role {
   display: block;
