@@ -17,12 +17,79 @@ hero_chips:
   - "На русском"
 hero_primary: { text: "Зарегистрироваться", href: "#register" }
 hero_secondary: { text: "Программа", href: "#program" }
+speaker_photo: "images/workshops/timur-tukaev.png"
 inshort_title: "О воркшопе"
 quick_facts_style: "rows"
 event:
   name: "Миграция с VMware на open source — практический воркшоп"
   language: "ru"
   price: 0
+agenda:
+  - time: "00:00"
+    title: "С чего всё началось"
+    tag: "доклад"
+    kind: "talk"
+    body: "Что случилось с ценами и поддержкой VMware — и что это значит для вашей инфраструктуры. Единственный «слайдовый» блок дня."
+  - time: "00:15"
+    title: "Знакомство с платформой"
+    tag: "руками"
+    kind: "hands"
+    body: "Открываете личное рабочее окружение и находите в нём всё привычное: хранилище, сеть, живую миграцию, мониторинг."
+  - time: "00:40"
+    title: "Переносим виртуальную машину"
+    tag: "руками"
+    kind: "hands"
+    body: "Выгружаете машину прямо с работающего сервера VMware, конвертируете и запускаете на новой платформе. Она отвечает на запросы — это ваша первая перенесённая VM."
+  - time: "01:30"
+    title: "Собираем инфраструктуру вокруг"
+    tag: "руками"
+    kind: "hands"
+    body: "База данных за пару минут, публикация сервиса в сеть, мониторинг и резервное копирование. В финале вся инфраструктура поднимается заново из одного файла."
+  - time: "02:20"
+    title: "Честный разговор об ограничениях"
+    tag: "обсуждение"
+    kind: "discussion"
+    body: "Что не переедет один в один и кому мигрировать не стоит. Расскажите про свою самую сложную машину — получите прямой ответ."
+  - time: "02:40"
+    title: "План миграции для вашей инфраструктуры"
+    tag: "доклад"
+    kind: "talk"
+    body: "С чего начать у себя: первая некритичная нагрузка, этапы переезда, поддержка после воркшопа."
+  - time: "03:15"
+    title: "Вопросы и общение"
+    tag: "45 мин"
+    kind: "social"
+    body: "Свободная беседа за пиццей и напитками. Ведущий остаётся в зале — приходите со своими кейсами."
+cities:
+  - city: "Ташкент"
+    country: "Узбекистан"
+    status: "pending"
+    date: "Дата и время уточняются"
+    note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+    href: "#register"
+  - city: "Бишкек"
+    country: "Кыргызстан"
+    status: "pending"
+    date: "Дата и время уточняются"
+    note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+    href: "#register"
+  - city: "Алматы"
+    country: "Казахстан"
+    status: "pending"
+    date: "Дата и время уточняются"
+    note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+    href: "#register"
+  - city: "Астана"
+    country: "Казахстан"
+    status: "pending"
+    date: "Дата и время уточняются"
+    note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+    href: "#register"
+final_cta:
+  heading: "Миграция с VMware на open source: практический воркшоп"
+  text: "Участие бесплатное — при условии регистрации."
+  button: "Зарегистрироваться"
+  href: "#register"
 direct_answer: |
   **Это бесплатный практический воркшоп для тех, кто работает с VMware и решает, что делать дальше. Он пройдёт в Ташкенте, Бишкеке, Алматы и Астане. За один день участники своими руками переносят настоящую виртуальную машину с работающего сервера VMware на Cozystack — открытую платформу виртуализации, которая развивается в фонде CNCF. Большая часть времени — практика в личном рабочем окружении: перенос машины, база данных, мониторинг, резервное копирование. Ведёт Тимур Тукаев — мейнтейнер Cozystack и сооснователь Aenix. После воркшопа у каждого участника остаются тестовая среда на 30 дней, чат с мейнтейнерами платформы, домашние лабораторные работы и возможность получить сертификат Cozystack Certified Fundamentals. Участие бесплатное при условии регистрации; количество мест ограничено.**
 
@@ -65,126 +132,183 @@ faq:
     a: "Да. По запросу после регистрации пришлём письмо-приглашение в адрес вашей компании — обосновать день вне офиса будет просто."
 ---
 
-## Что происходит с VMware
-
-После покупки VMware компанией Broadcom привычная модель закончилась: бессрочные лицензии больше не продаются, остались только подписки, а счета за продление выросли в разы — не на проценты, а именно в разы. Поддержка vSphere 7 завершилась осенью 2025 года, так что «оставить всё как есть» тоже перестало быть бесплатным вариантом.
-
-При этом сама инфраструктура у вас работает, команда её знает, и ломать её никто не хочет. Вопрос звучит иначе: чем заменить VMware так, чтобы не потерять ни данные, ни людей, ни управляемость — и не попасть в зависимость от следующего вендора.
-
-## Куда мигрировать: знакомьтесь, Cozystack
-
-Cozystack — открытая платформа виртуализации, которую строят как замену VMware: виртуальные машины, сеть, хранилище, мониторинг и резервное копирование собраны в одну систему. Платформа бесплатна, её код открыт, а проект развивается в CNCF — том же фонде, который курирует Kubernetes.
-
-Верить на слово не нужно: весь воркшоп проходит внутри Cozystack. Вы поработаете с платформой руками и сами решите, подходит ли она вам.
-
-## Что вы будете делать {#program}
-
-Никаких слайдов на три часа. У каждого участника — своё рабочее окружение на настоящем кластере, и почти всё время вы проводите в нём.
-
-<div class="agenda">
-  <div class="agenda__row"><div class="agenda__time">00:00</div><div class="agenda__body"><strong>С чего всё началось<span class="agenda__tag">доклад</span></strong>Что случилось с ценами и поддержкой VMware — и что это значит для вашей инфраструктуры. Единственный «слайдовый» блок дня.</div></div>
-  <div class="agenda__row"><div class="agenda__time">00:15</div><div class="agenda__body"><strong>Знакомство с платформой<span class="agenda__tag">руками</span></strong>Открываете личное рабочее окружение и находите в нём всё привычное: хранилище, сеть, живую миграцию, мониторинг.</div></div>
-  <div class="agenda__row"><div class="agenda__time">00:40</div><div class="agenda__body"><strong>Переносим виртуальную машину<span class="agenda__tag">руками</span></strong>Выгружаете машину прямо с работающего сервера VMware, конвертируете и запускаете на новой платформе. Она отвечает на запросы — это ваша первая перенесённая VM.</div></div>
-  <div class="agenda__row"><div class="agenda__time">01:30</div><div class="agenda__body"><strong>Собираем инфраструктуру вокруг<span class="agenda__tag">руками</span></strong>База данных за пару минут, публикация сервиса в сеть, мониторинг и резервное копирование. В финале вся инфраструктура поднимается заново из одного файла.</div></div>
-  <div class="agenda__row"><div class="agenda__time">02:20</div><div class="agenda__body"><strong>Честный разговор об ограничениях<span class="agenda__tag">обсуждение</span></strong>Что не переедет один в один и кому мигрировать не стоит. Расскажите про свою самую сложную машину — получите прямой ответ.</div></div>
-  <div class="agenda__row"><div class="agenda__time">02:40</div><div class="agenda__body"><strong>План миграции для вашей инфраструктуры<span class="agenda__tag">доклад</span></strong>С чего начать у себя: первая некритичная нагрузка, этапы переезда, поддержка после воркшопа.</div></div>
-  <div class="agenda__row"><div class="agenda__time">03:15</div><div class="agenda__body"><strong>Вопросы и общение<span class="agenda__tag">45 мин</span></strong>Свободная беседа за пиццей и напитками. Ведущий остаётся в зале — приходите со своими кейсами.</div></div>
+<section class="ws-section ws-story" aria-labelledby="ws-vmware-h">
+<div class="ws-wrap ws-story__row">
+<div class="ws-story__text">
+<h2 class="ws-h2" id="ws-vmware-h">Что происходит с VMware</h2>
+<p>После покупки VMware компанией Broadcom привычная модель закончилась: бессрочные лицензии больше не продаются, остались только подписки, а счета за продление выросли в разы — не на проценты, а именно в разы. Поддержка vSphere&nbsp;7 завершилась осенью 2025 года, так что «оставить всё как есть» тоже перестало быть бесплатным вариантом.</p>
+<p>При этом сама инфраструктура у вас работает, команда её знает, и ломать её никто не хочет. Вопрос звучит иначе: чем заменить VMware так, чтобы не потерять ни данные, ни людей, ни управляемость — и не попасть в зависимость от следующего вендора.</p>
 </div>
-
-## С чем вы уйдёте
-
-- **Перенесённая своими руками виртуальная машина** — первый практический шаг вашей миграции.
-- **Пошаговый план**: с чего начать, что переносить первым и как разложить переезд по этапам.
-- **Ясность по VMware**: что переедет, что нет и в каком случае разумнее остаться.
-- **Навык работы с открытой платформой виртуализации** — без курсов и месяцев самообучения.
-- **Материалы и шпаргалки** для работы дома — и месяц поддержки после воркшопа.
-
-## Кому идти
-
-<div class="persona-cards">
-  <div class="persona-card"><h3>Администратор VMware / системный администратор</h3><ul>
-    <li>Всё объясняется через привычные вам понятия — Kubernetes знать не нужно.</li>
-    <li>Вы сами переносите машину и увозите рабочую шпаргалку.</li>
-    <li>Тестовая среда и чат с мейнтейнерами — ещё месяц после воркшопа.</li>
-  </ul></div>
-  <div class="persona-card"><h3>Руководитель инфраструктуры</h3><ul>
-    <li>Полная картина миграции, включая ограничения — о них мы говорим первыми.</li>
-    <li>План пилота, привязанный к вашей дате продления.</li>
-    <li>Приходите вместе со своим инженером: один увидит «как», второй решит «когда».</li>
-  </ul></div>
-  <div class="persona-card"><h3>Технический директор</h3><ul>
-    <li>Экономика перехода без маркетинговых обещаний.</li>
-    <li>Прямые ответы о рисках: открытый код, независимая поддержка, никакой привязки к одному поставщику.</li>
-    <li>Обученный инженер и честная оценка ваших самых сложных систем — в тот же день.</li>
-  </ul></div>
-  <div class="persona-card"><h3>Инженер DevOps</h3><ul>
-    <li>Виртуальные машины и контейнеры в одной системе, управляемой как код.</li>
-    <li>Базы данных, хранилище и мониторинг — из коробки, без ручной сборки.</li>
-    <li>Платформа, о которой вы наконец договоритесь с командой виртуализации.</li>
-  </ul></div>
+<div class="ws-story__visual ws-story__visual--legacy" aria-hidden="true">
+<div class="ws-legacy">
+<span class="ws-legacy__pressure"><svg viewBox="0 0 120 26" fill="none" focusable="false"><path d="M18 4l8 8 8-8M52 4l8 8 8-8M86 4l8 8 8-8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<span class="ws-legacy__slab ws-legacy__slab--1"></span>
+<span class="ws-legacy__slab ws-legacy__slab--2"></span>
+<span class="ws-legacy__slab ws-legacy__slab--3"></span>
+<span class="ws-legacy__slab ws-legacy__slab--4"></span>
+<span class="ws-legacy__lock"><svg viewBox="0 0 24 24" fill="none" focusable="false"><rect x="5" y="10.5" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="currentColor" stroke-width="1.8"/></svg></span>
 </div>
-
-## Месяц поддержки и обучения после воркшопа
-
-- **Ваша тестовая среда останется с вами ещё на 30 дней** — для экспериментов и подготовки к сертификации.
-- **Лабораторные работы для выполнения дома** — с поддержкой мейнтейнеров Cozystack.
-- **Чат, где на вопросы отвечают мейнтейнеры Cozystack.**
-- **Возможность получить сертификат Cozystack Certified Fundamentals** — бесплатно.
-
-<div class="cta-row">
-  <a class="cta-primary" href="#register">Зарегистрироваться</a>
 </div>
-
-## Ведущий
-
-<div class="speaker-card">
-  <div class="speaker-card__photo">{{< placeholder-image width="400" height="400" label="Тимур Тукаев — фото" >}}</div>
-  <div>
-    <h3 class="speaker-card__name">Тимур Тукаев</h3>
-    <div class="speaker-card__role">Мейнтейнер Cozystack · сооснователь Aenix</div>
-    <div class="speaker-card__bio">
-      <p>Тимур — мейнтейнер открытой платформы Cozystack и сооснователь компании Aenix, которая её разрабатывает. Формат воркшопа — его: без маркетинговых слайдов, большая часть времени за терминалом, а слабые места платформы называются раньше сильных.</p>
-    </div>
-  </div>
 </div>
-
-## Города {#cities}
-
-Программа во всех городах одинаковая. Выберите удобный город — и регистрируйтесь.
-
-<div class="city-cards">
-  <a class="city-card" href="#register">
-    <div class="city-card__country">Узбекистан</div>
-    <h3 class="city-card__name">Ташкент</h3>
-    <div class="city-card__date">Дата и время уточняются</div>
-    <p class="city-card__note">Место проведения будет объявлено. Зарегистрированные узнают первыми.</p>
-    <span class="city-card__cta">Зарегистрироваться →</span>
-  </a>
-  <a class="city-card" href="#register">
-    <div class="city-card__country">Кыргызстан</div>
-    <h3 class="city-card__name">Бишкек</h3>
-    <div class="city-card__date">Дата и время уточняются</div>
-    <p class="city-card__note">Место проведения будет объявлено. Зарегистрированные узнают первыми.</p>
-    <span class="city-card__cta">Зарегистрироваться →</span>
-  </a>
-  <a class="city-card" href="#register">
-    <div class="city-card__country">Казахстан</div>
-    <h3 class="city-card__name">Алматы</h3>
-    <div class="city-card__date">Дата и время уточняются</div>
-    <p class="city-card__note">Место проведения будет объявлено. Зарегистрированные узнают первыми.</p>
-    <span class="city-card__cta">Зарегистрироваться →</span>
-  </a>
-  <a class="city-card" href="#register">
-    <div class="city-card__country">Казахстан</div>
-    <h3 class="city-card__name">Астана</h3>
-    <div class="city-card__date">Дата и время уточняются</div>
-    <p class="city-card__note">Место проведения будет объявлено. Зарегистрированные узнают первыми.</p>
-    <span class="city-card__cta">Зарегистрироваться →</span>
-  </a>
+<div class="ws-wrap ws-story__row ws-story__row--reverse">
+<div class="ws-story__text">
+<h2 class="ws-h2" id="ws-cozy-h">Куда мигрировать: знакомьтесь, Cozystack</h2>
+<p>Cozystack — открытая платформа виртуализации, которую строят как замену VMware: виртуальные машины, сеть, хранилище, мониторинг и резервное копирование собраны в одну систему. Платформа бесплатна, её код открыт, а проект развивается в CNCF — том же фонде, который курирует Kubernetes.</p>
+<p>Верить на слово не нужно: весь воркшоп проходит внутри Cozystack. Вы поработаете с платформой руками и сами решите, подходит ли она вам.</p>
 </div>
+<div class="ws-story__visual ws-story__visual--platform">
+<div class="ws-platform">
+<div class="ws-platform__grid" aria-hidden="true"></div>
+<div class="ws-platform__head">{{< cozy-mark >}}</div>
+<ul class="ws-platform__layers">
+<li><span class="ws-platform__ic">{{< ws-icon name="vm" >}}</span>Виртуальные машины</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="devops" >}}</span>Сеть</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="admin" >}}</span>Хранилище</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="cto" >}}</span>Мониторинг</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="kit" >}}</span>Резервное копирование</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="ws-wrap ws-cta-center"><a class="cta-primary" href="#register">Зарегистрироваться</a></div>
+</section>
 
-## Регистрация {#register}
+<section class="ws-section ws-agenda" id="program" aria-labelledby="ws-agenda-h">
+<div class="ws-wrap">
+<h2 class="ws-h2" id="ws-agenda-h">Что вы будете делать</h2>
+<p class="ws-lead">Никаких слайдов на три часа. У каждого участника — своё рабочее окружение на настоящем кластере, и почти всё время вы проводите в нём.</p>
+{{< workshop-agenda >}}
+</div>
+</section>
 
-Участие бесплатное — при условии регистрации.
+<section class="ws-section ws-outcomes" aria-labelledby="ws-outcomes-h">
+<div class="ws-outcomes__bg" aria-hidden="true"></div>
+<div class="ws-wrap">
+<h2 class="ws-h2 ws-h2--light" id="ws-outcomes-h">С чем вы уйдёте</h2>
+<div class="ws-outcomes__grid">
+<article class="ws-outcome ws-outcome--hero">
+<span class="ws-outcome__num">01</span>
+<span class="ws-outcome__icon">{{< ws-icon name="vm" >}}</span>
+<p class="ws-outcome__text"><strong>Перенесённая своими руками виртуальная машина</strong> — первый практический шаг вашей миграции.</p>
+</article>
+<article class="ws-outcome">
+<span class="ws-outcome__num">02</span>
+<span class="ws-outcome__icon">{{< ws-icon name="plan" >}}</span>
+<p class="ws-outcome__text"><strong>Пошаговый план</strong>: с чего начать, что переносить первым и как разложить переезд по этапам.</p>
+</article>
+<article class="ws-outcome">
+<span class="ws-outcome__num">03</span>
+<span class="ws-outcome__icon">{{< ws-icon name="clarity" >}}</span>
+<p class="ws-outcome__text"><strong>Ясность по VMware</strong>: что переедет, что нет и в каком случае разумнее остаться.</p>
+</article>
+<article class="ws-outcome">
+<span class="ws-outcome__num">04</span>
+<span class="ws-outcome__icon">{{< ws-icon name="skill" >}}</span>
+<p class="ws-outcome__text"><strong>Навык работы с открытой платформой виртуализации</strong> — без курсов и месяцев самообучения.</p>
+</article>
+<article class="ws-outcome">
+<span class="ws-outcome__num">05</span>
+<span class="ws-outcome__icon">{{< ws-icon name="kit" >}}</span>
+<p class="ws-outcome__text"><strong>Материалы и шпаргалки</strong> для работы дома — и месяц поддержки после воркшопа.</p>
+</article>
+</div>
+<div class="ws-cta-center"><a class="cta-primary cta-lime" href="#register">Зарегистрироваться</a></div>
+</div>
+</section>
+
+<section class="ws-section ws-personas" aria-labelledby="ws-personas-h">
+<div class="ws-wrap">
+<h2 class="ws-h2" id="ws-personas-h">Кому идти</h2>
+<div class="ws-personas__grid">
+<article class="ws-persona">
+<span class="ws-persona__icon">{{< ws-icon name="admin" >}}</span>
+<h3 class="ws-persona__title">Администратор VMware / системный администратор</h3>
+<ul><li>Всё объясняется через привычные вам понятия — Kubernetes знать не нужно.</li><li>Вы сами переносите машину и увозите рабочую шпаргалку.</li><li>Тестовая среда и чат с мейнтейнерами — ещё месяц после воркшопа.</li></ul>
+</article>
+<article class="ws-persona">
+<span class="ws-persona__icon">{{< ws-icon name="lead" >}}</span>
+<h3 class="ws-persona__title">Руководитель инфраструктуры</h3>
+<ul><li>Полная картина миграции, включая ограничения — о них мы говорим первыми.</li><li>План пилота, привязанный к вашей дате продления.</li><li>Приходите вместе со своим инженером: один увидит «как», второй решит «когда».</li></ul>
+</article>
+<article class="ws-persona">
+<span class="ws-persona__icon">{{< ws-icon name="cto" >}}</span>
+<h3 class="ws-persona__title">Технический директор</h3>
+<ul><li>Экономика перехода без маркетинговых обещаний.</li><li>Прямые ответы о рисках: открытый код, независимая поддержка, никакой привязки к одному поставщику.</li><li>Обученный инженер и честная оценка ваших самых сложных систем — в тот же день.</li></ul>
+</article>
+<article class="ws-persona">
+<span class="ws-persona__icon">{{< ws-icon name="devops" >}}</span>
+<h3 class="ws-persona__title">Инженер DevOps</h3>
+<ul><li>Виртуальные машины и контейнеры в одной системе, управляемой как код.</li><li>Базы данных, хранилище и мониторинг — из коробки, без ручной сборки.</li><li>Платформа, о которой вы наконец договоритесь с командой виртуализации.</li></ul>
+</article>
+</div>
+</div>
+</section>
+
+<section class="ws-section ws-after" aria-labelledby="ws-after-h">
+<div class="ws-wrap ws-after__grid">
+<div class="ws-after__text">
+<h2 class="ws-h2" id="ws-after-h">Месяц поддержки и обучения после воркшопа</h2>
+<ul class="ws-checklist">
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Ваша тестовая среда останется с вами ещё на 30 дней</strong> — для экспериментов и подготовки к сертификации.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Лабораторные работы для выполнения дома</strong> — с поддержкой мейнтейнеров Cozystack.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Чат, где на вопросы отвечают мейнтейнеры Cozystack.</strong></span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Возможность получить сертификат Cozystack Certified Fundamentals</strong> — бесплатно.</span></li>
+</ul>
+<div class="ws-cta-row"><a class="cta-primary cta-lime" href="#register">Зарегистрироваться</a></div>
+</div>
+<div class="ws-after__stack" aria-hidden="true">
+<div class="ws-after__tile ws-after__tile--env"><span class="ws-after__ic">{{< ws-icon name="cal30" >}}</span><span class="ws-after__tile-label">Тестовая среда на 30 дней</span></div>
+<div class="ws-after__tile ws-after__tile--chat"><span class="ws-after__ic">{{< ws-icon name="chat" >}}</span><span class="ws-after__tile-label">Чат с мейнтейнерами Cozystack</span></div>
+<div class="ws-after__tile ws-after__tile--lab"><span class="ws-after__ic">{{< ws-icon name="lab" >}}</span><span class="ws-after__tile-label">Лабораторные работы</span></div>
+<div class="ws-cert">
+<span class="ws-cert__tag">образец</span>
+<span class="ws-cert__seal">{{< ws-icon name="cert" >}}</span>
+<span class="ws-cert__kicker">Certificate of completion</span>
+<span class="ws-cert__title">Cozystack Certified Fundamentals</span>
+<span class="ws-cert__line"></span>
+<span class="ws-cert__by">{{< cozy-mark class="cozy-mark--sm" >}} · Aenix</span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="ws-section ws-speaker" aria-labelledby="ws-speaker-h">
+<div class="ws-speaker__pattern" aria-hidden="true"></div>
+<div class="ws-wrap ws-speaker__grid">
+<div class="ws-speaker__photo">{{< workshop-photo src="images/workshops/timur-tukaev.png" alt="Тимур Тукаев" >}}</div>
+<div class="ws-speaker__info">
+<h2 class="ws-h2" id="ws-speaker-h">Ведущий</h2>
+<div class="ws-speaker__name">Тимур Тукаев</div>
+<div class="ws-speaker__role">Мейнтейнер Cozystack · сооснователь Aenix</div>
+<p class="ws-speaker__bio">Тимур — мейнтейнер открытой платформы Cozystack и сооснователь компании Aenix, которая её разрабатывает. Формат воркшопа — его: без маркетинговых слайдов, большая часть времени за терминалом, а слабые места платформы называются раньше сильных.</p>
+</div>
+</div>
+</section>
+
+<section class="ws-section ws-cities-sec" id="cities" aria-labelledby="ws-cities-h">
+<div class="ws-wrap">
+<h2 class="ws-h2" id="ws-cities-h">Города</h2>
+<p class="ws-lead">Программа во всех городах одинаковая. Выберите удобный город — и регистрируйтесь.</p>
+{{< workshop-cities >}}
+</div>
+</section>
+
+<section class="ws-section ws-register" id="register" aria-labelledby="ws-register-h">
+<div class="ws-register__bg" aria-hidden="true"></div>
+<div class="ws-wrap ws-register__inner">
+<h2 class="ws-h2 ws-h2--light" id="ws-register-h">Регистрация</h2>
+<p class="ws-register__lead">Участие бесплатное — при условии регистрации.</p>
+<div class="ws-register__form">
 
 {{< pipedrive-form type="workshop" >}}
+
+</div>
+</div>
+</section>
+
+<!-- TODO(legal/pipedrive): The RU registration form's consent text is
+     configured inside Pipedrive, not in this repo, and currently shows the
+     English line "I agree to be contacted by Aenix about its services".
+     Update the consent copy to approved Russian wording inside the Pipedrive
+     form (form id in layouts/shortcodes/pipedrive-form.html → $workshopFormRu).
+     Do not hardcode consent wording here. -->
