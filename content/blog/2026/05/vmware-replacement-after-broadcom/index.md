@@ -244,9 +244,6 @@ Cozystack is in production with:
 
 ## Pricing
 
-{{PRICING_FROM_AENIX}}
-*(mirror block from aenix.io/pricing — Aenix team to wire in current support tiers)*
-
 The Cozystack platform itself is open source and free to run. Aenix offers:
 
 - **Community** — GitHub issues, public Slack, no SLA.
