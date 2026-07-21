@@ -183,11 +183,11 @@ GitHub issues, public Slack, no SLA.
 
 ### Standard support
 Business-hours response, runbooks, advisory.
-****
+**On request**
 
 ### Enterprise / 24×7
 Production SLA, dedicated TAM, GitOps PR review, incident response.
-****
+**On request**
 
 </div>
 

@@ -230,11 +230,11 @@ Das Sovereign-AI-Engagement läuft in zwei Phasen.
 
 ### Assessment (14- oder 28-tägig)
 Architekturoptionen, GPU-Strategie, Souveränitätskontrollen, Betriebsmodell, Phase-2-Roadmap. Festpreis.
-****
+**Auf Anfrage**
 
 ### Phase-2-Implementierung
 Von Aenix gelieferter Aufbau der souveränen KI-Plattform. Fester Umfang oder Time-and-Materials, je nach Anzahl und Komplexität der Workloads. Typischerweise 3-9 Monate Laufzeit.
-**{{PRICING_PHASE_2}}**
+**Auf Anfrage**
 
 </div>
 

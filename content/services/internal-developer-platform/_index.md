@@ -219,11 +219,11 @@ We've built internal developer platforms for service providers running multi-ten
 
 ### Assessment (14-28 days)
 Fixed-price. Written deliverable, target IDP architecture, Phase 2 roadmap.
-****
+**On request**
 
 ### Build / Managed engagement
 Time-and-materials or fixed-scope. Phase 2 build typically 3-9 months elapsed.
-****
+**On request**
 
 </div>
 

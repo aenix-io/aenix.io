@@ -249,11 +249,11 @@ The repatriation-emphasized engagement runs as a Platform Readiness Assessment.
 
 ### 14-day (focused TCO + repatriation)
 TCO modelling depth, workload portfolio ranking, destination architecture options, cutover sequencing for top-priority workloads.
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (full repatriation program)
 Adds vendor shortlisting (compute / storage / network / observability), proof-of-concept scoping for 1-2 priority workloads, multi-BU stakeholder interviews, complete Phase 2 implementation roadmap.
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 

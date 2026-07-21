@@ -200,10 +200,10 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 <div class="pricing-cards-2">
 
 ### 14 Tage (fokussiert auf NIS2)
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (NIS2 + DORA + GDPR-Overlay)
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 

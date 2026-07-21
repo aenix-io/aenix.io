@@ -221,11 +221,11 @@ Das souveränitätsfokussierte Engagement läuft als Platform Readiness Assessme
 
 ### 14 Tage (fokussierter Souveränitätsumfang)
 Tiefe des Souveränitäts-Arbeitsstrangs, ein regulatorisches Rahmenwerk, eine Domäne. Datenresidenz-Karte, Schlüsselverwahrungs-Prüfung, Lieferkette (bis zum zweiten Hop), Remediationsplan.
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (volle Souveränität + angrenzend)
 Souveränität + angrenzende regulatorische Überschneidung (Mapping von DORA / NIS2 / sektoral / GDPR). Stakeholder-Interviews über mehrere Geschäftsbereiche. Vendor-Shortlisting, wo zutreffend. Roadmap für die Implementierung in Phase 2.
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 

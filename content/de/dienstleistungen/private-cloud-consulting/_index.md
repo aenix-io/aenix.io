@@ -209,10 +209,10 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 <div class="pricing-cards-2">
 
 ### Architektur-Review (5-15 Tage)
-****
+**Auf Anfrage**
 
 ### Implementation / Managed
-****
+**Auf Anfrage**
 
 </div>
 

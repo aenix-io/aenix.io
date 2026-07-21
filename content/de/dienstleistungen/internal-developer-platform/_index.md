@@ -221,11 +221,11 @@ Wir haben Internal Developer Platforms gebaut für Service-Anbieter, die mandant
 
 ### Assessment (14-28 Tage)
 Festpreis. Schriftliches Deliverable, Ziel-IDP-Architektur, Phase-2-Roadmap.
-****
+**Auf Anfrage**
 
 ### Build- / Managed-Engagement
 Time-and-Materials oder Fixed-Scope. Phase-2-Build typischerweise 3-9 Monate Laufzeit.
-****
+**Auf Anfrage**
 
 </div>
 

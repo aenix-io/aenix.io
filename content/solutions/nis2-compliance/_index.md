@@ -204,10 +204,10 @@ Delivered by EU-based engineers with regulator-dialog experience. Same engineers
 <div class="pricing-cards-2">
 
 ### 14-day (focused NIS2)
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (NIS2 + DORA + GDPR overlay)
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 

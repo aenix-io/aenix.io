@@ -203,11 +203,11 @@ Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessmen
 
 ### Architektur-Review (5-10 Tage)
 Festpreis.
-****
+**Auf Anfrage**
 
 ### Implementations-Engagement
 Time-and-Materials oder Fixed-Scope. Phase 2 typischerweise 1-6 Monate.
-****
+**Auf Anfrage**
 
 </div>
 

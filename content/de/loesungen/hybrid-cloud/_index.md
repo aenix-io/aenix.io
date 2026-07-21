@@ -201,10 +201,10 @@ Umsetzung in Phase 2: Aenix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 Tage)
-****
+**Auf Anfrage**
 
 ### Umsetzung
-****
+**Auf Anfrage**
 
 </div>
 

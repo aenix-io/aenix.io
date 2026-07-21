@@ -111,10 +111,10 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 Tage)
-****
+**Auf Anfrage**
 
 ### Build-Engagement (3-12 Monate)
-****
+**Auf Anfrage**
 
 </div>
 

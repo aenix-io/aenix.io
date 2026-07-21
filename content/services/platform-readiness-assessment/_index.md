@@ -234,11 +234,11 @@ Aenix is the company behind **[Cozystack](/products/cozystack/)**, an open-sourc
 
 ### 14-day (focused)
 Single workstream emphasis (sovereignty, OR cost, OR developer experience). Single business unit / domain. Written report and executive readout.
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (full)
 All four workstreams in depth. Multi-BU stakeholder interviews. Vendor shortlisting for relevant components. PoC scoping. Written report, executive readout, and a Phase 2 implementation roadmap.
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 

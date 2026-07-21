@@ -222,11 +222,11 @@ Das repatriation-fokussierte Engagement läuft als Platform Readiness Assessment
 
 ### 14 Tage (fokussiert auf TCO + Repatriation)
 Tiefe der TCO-Modellierung, Ranking des Workload-Portfolios, Optionen für die Zielarchitektur, Cutover-Sequenzierung für die Workloads mit höchster Priorität.
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (vollständiges Repatriation-Programm)
 Ergänzt um Vendor-Shortlisting (Compute / Storage / Netzwerk / Observability), Proof-of-Concept-Scoping für 1-2 Prioritäts-Workloads, Stakeholder-Interviews über mehrere Geschäftsbereiche, vollständige Implementierungs-Roadmap für Phase 2.
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 

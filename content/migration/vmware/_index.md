@@ -216,11 +216,11 @@ For VMware-specific destination guidance, see **[VMware alternative](/alternativ
 <div class="pricing-cards-2">
 
 ### Assessment
-****
+**On request**
 
 ### Implementation
 Time-and-materials or fixed-scope.
-****
+**On request**
 
 </div>
 

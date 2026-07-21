@@ -231,11 +231,11 @@ Named case studies available on the discovery call where customer permissions al
 
 ### Assessment (14-28 days)
 Fixed-price. Written deliverable, target architecture, Phase 2 roadmap.
-****
+**On request**
 
 ### Build / Managed engagement
 Time-and-materials or fixed-scope, depending on scope clarity. Phase 2 implementation typically 3-12 months elapsed; managed-services typically annual.
-****
+**On request**
 
 </div>
 

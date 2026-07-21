@@ -227,11 +227,11 @@ Das DORA-fokussierte Engagement läuft als Platform Readiness Assessment mit dem
 
 ### 14 Tage (fokussierter DORA-Scope)
 Vertiefung des DORA-fokussierten Workstreams, einzelne Geschäftseinheit / Domäne. Vollständige Kontroll-Landkarte, Konzentrationsanalyse, Exit-Machbarkeit, Remediationsplan.
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (volle DORA + angrenzend)
 DORA + angrenzendes NIS2- / GDPR- / sektorales Overlap-Mapping. Stakeholder-Interviews über mehrere Geschäftseinheiten. Anbieter-Vorauswahl, wo anwendbar. Roadmap für die Phase-2-Implementierung.
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 

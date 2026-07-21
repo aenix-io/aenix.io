@@ -132,10 +132,10 @@ Self-service ist Teil der umfassenderen Platform-Engineering-Arbeit — siehe **
 <div class="pricing-cards-2">
 
 ### Assessment
-****
+**Auf Anfrage**
 
 ### Build-Engagement
-****
+**Auf Anfrage**
 
 </div>
 

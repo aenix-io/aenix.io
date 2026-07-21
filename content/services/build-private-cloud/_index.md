@@ -119,10 +119,10 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 days)
-****
+**On request**
 
 ### Build engagement (3-12 months)
-****
+**On request**
 
 </div>
 

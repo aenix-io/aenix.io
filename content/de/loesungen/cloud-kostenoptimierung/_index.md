@@ -222,11 +222,11 @@ Das kostenfokussierte Engagement läuft als Platform Readiness Assessment.
 
 ### 14 Tage (fokussierter Kosten-Scope)
 Tiefe der TCO-Modellierung, Inventar der Kostenlecks, Right-sizing-Empfehlungen, Identifikation von Repatriation-Kandidaten, FinOps-Prozessplan.
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (vollständiges Kostenprogramm)
 Ergänzt um Anbieter-Shortlisting, PoC-Scoping für die besten Repatriation-Kandidaten, Stakeholder-Interviews über mehrere Geschäftsbereiche, vollständige Umsetzungs-Roadmap für Phase 2.
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 

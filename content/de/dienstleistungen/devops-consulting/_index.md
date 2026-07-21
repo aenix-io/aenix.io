@@ -217,11 +217,11 @@ Wir haben DevOps-Consulting- und Transformations-Engagements für Service Provid
 
 ### Assessment (14-28 Tage)
 Festpreis.
-****
+**Auf Anfrage**
 
 ### Transformation / Managed
 Time-and-Materials oder Fixed-Scope. Phase 2 typischerweise 3-9 Monate.
-****
+**Auf Anfrage**
 
 </div>
 

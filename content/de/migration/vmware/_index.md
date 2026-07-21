@@ -219,11 +219,11 @@ Ein Bestand von 100 VMs wird typischerweise in 8-12 Monaten abgeschlossen. Ein B
 <div class="pricing-cards-2">
 
 ### Assessment
-****
+**Auf Anfrage**
 
 ### Implementierung
 Time-and-Materials oder Fixed-Scope.
-****
+**Auf Anfrage**
 
 </div>
 

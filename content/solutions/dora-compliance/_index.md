@@ -232,11 +232,11 @@ We have run DORA-aligned readiness engagements for banks, insurers, telecom oper
 
 ### 14-day (focused DORA scope)
 DORA-emphasized workstream depth, single business unit / domain. Full control map, concentration analysis, exit-feasibility, remediation plan.
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (full DORA + adjacent)
 DORA + adjacent NIS2 / GDPR / sectoral overlap mapping. Multi-BU stakeholder interviews. Vendor shortlisting where applicable. Phase 2 implementation roadmap.
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 

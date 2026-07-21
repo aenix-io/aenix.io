@@ -231,11 +231,11 @@ The sovereignty-emphasized engagement runs as a Platform Readiness Assessment.
 
 ### 14-day (focused sovereignty scope)
 Sovereignty workstream depth, single regulatory framework, single domain. Data-residency map, key-custody review, supplier-chain (to second hop), remediation plan.
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (full sovereignty + adjacent)
 Sovereignty + adjacent regulatory overlap (DORA / NIS2 / sectoral / GDPR mapping). Multi-BU stakeholder interviews. Vendor shortlisting where applicable. Phase 2 implementation roadmap.
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 

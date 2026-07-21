@@ -208,10 +208,10 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 <div class="pricing-cards-2">
 
 ### Architecture review (5-15 days)
-****
+**On request**
 
 ### Implementation / Managed
-****
+**On request**
 
 </div>
 

@@ -236,11 +236,11 @@ Aenix ist das Unternehmen hinter **[Cozystack](/de/produkte/cozystack/)**, einem
 
 ### 14 Tage (fokussiert)
 Schwerpunkt auf einem Workstream (Souveränität ODER Kosten ODER Developer-Experience). Einzelne Business-Unit / Domain. Schriftlicher Bericht und Executive-Readout.
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (vollständig)
 Alle vier Workstreams in der Tiefe. Multi-BU-Stakeholder-Interviews. Vendor-Shortlisting für relevante Komponenten. PoC-Scoping. Schriftlicher Bericht, Executive-Readout und eine Phase-2-Implementations-Roadmap.
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 

@@ -217,11 +217,11 @@ We've run DevOps consulting and transformation engagements for service providers
 
 ### Assessment (14-28 days)
 Fixed-price.
-****
+**On request**
 
 ### Transformation / Managed
 Time-and-materials or fixed-scope. Phase 2 typically 3-9 months.
-****
+**On request**
 
 </div>
 

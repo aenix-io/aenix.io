@@ -220,11 +220,11 @@ Benannte Case Studies verfügbar im Discovery-Call, sofern Kunden-Berechtigungen
 
 ### Assessment (14-28 Tage)
 Festpreis. Schriftliches Deliverable, Ziel-Architektur, Phase-2-Roadmap.
-****
+**Auf Anfrage**
 
 ### Build- / Managed-Engagement
 Time-and-Materials oder Fixed-Scope, abhängig von der Scope-Klarheit. Phase-2-Implementation typischerweise 3-12 Monate; Managed-Services typischerweise jährlich.
-****
+**Auf Anfrage**
 
 </div>
 

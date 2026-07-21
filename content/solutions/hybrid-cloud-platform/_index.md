@@ -209,10 +209,10 @@ Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end —
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 days)
-****
+**On request**
 
 ### Implementation
-****
+**On request**
 
 </div>
 

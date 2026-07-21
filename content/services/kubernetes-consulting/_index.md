@@ -205,11 +205,11 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 
 ### Architecture review (5-10 days)
 Fixed-price.
-****
+**On request**
 
 ### Implementation engagement
 Time-and-materials or fixed-scope. Phase 2 typically 1-6 months.
-****
+**On request**
 
 </div>
 

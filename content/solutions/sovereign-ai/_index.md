@@ -237,11 +237,11 @@ The sovereign-AI engagement runs in two phases.
 
 ### Assessment (14- or 28-day)
 Architecture options, GPU strategy, sovereignty controls, operations model, Phase 2 roadmap. Fixed-price.
-****
+**On request**
 
 ### Phase 2 implementation
 Aenix-delivered build of the sovereign AI platform. Fixed-scope or time-and-materials, depending on workload count and complexity. Typical 3-9 months elapsed.
-**{{PRICING_PHASE_2}}**
+**On request**
 
 </div>
 

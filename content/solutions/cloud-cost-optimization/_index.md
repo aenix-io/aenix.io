@@ -233,11 +233,11 @@ The cost-emphasized engagement runs as a Platform Readiness Assessment.
 
 ### 14-day (focused cost scope)
 TCO modelling depth, cost-leak inventory, right-sizing recommendations, repatriation candidate identification, FinOps process plan.
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (full cost program)
 Adds vendor shortlisting, PoC scoping for top repatriation candidates, multi-BU stakeholder interviews, complete Phase 2 implementation roadmap.
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 

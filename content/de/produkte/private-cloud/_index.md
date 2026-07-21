@@ -200,11 +200,11 @@ GitHub Issues, öffentlicher Slack, keine SLA.
 
 ### Standard-Support
 Reaktion zu Geschäftszeiten, Runbooks, Advisory.
-****
+**Auf Anfrage**
 
 ### Enterprise / 24×7
 Produktions-SLA, dediziertes TAM, GitOps-PR-Review, Incident-Response.
-****
+**Auf Anfrage**
 
 </div>
 
