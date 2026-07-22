@@ -703,7 +703,7 @@ document.addEventListener('DOMContentLoaded', () => {
     car.addEventListener('mouseleave', start);
     car.addEventListener('focusin', stop);
     car.addEventListener('focusout', start);
-    show(Math.floor(Math.random() * slides.length)); /* vary first slide per load */
+    show(0); /* always lead with the first testimonial in data order */
     start();
   });
 })();

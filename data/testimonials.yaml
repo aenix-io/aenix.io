@@ -1,8 +1,18 @@
 # Customer testimonials for the rotating quote carousel ({{< quote-carousel >}}).
 # Add ONE entry here and it appears in the carousel on every page that uses it.
+# Order matters: the carousel always leads with the first entry below.
 # Tier-1 named quotes require Timur sign-off (CLAUDE.md Rule 1). EN is required;
 # quote_de / role_de are optional German overrides (fall back to EN on DE pages).
 # photo is optional — without it the avatar shows the person's initials.
+- name: "Alexandru Popescu"
+  role: "CEO, Nuvolos"
+  photo: "/images/quotes/alexandru-popescu.png"
+  quote: >-
+    Running Nuvolos on sovereign bare metal meant we needed hyperscaler-grade
+    multi-tenancy without the hyperscaler. Cozystack delivered exactly that —
+    isolated tenants, shared GPUs, KubeVirt for legacy workloads — and it's why
+    we can promise our customers infrastructure control, not just a workspace.
+
 - name: "Qasym Majen"
   role: "Founder, QOSI — Qazaq Open Source Initiative"
   role_de: "Gründer, QOSI — Qazaq Open Source Initiative"
@@ -38,15 +48,6 @@
     every conversation, flag risks before they become incidents, and help us
     turn Cozystack into real business results: shorter time-to-market,
     predictable operations, and infrastructure costs we can finally plan around.
-
-- name: "Alexandru Popescu"
-  role: "CEO, Nuvolos"
-  photo: "/images/quotes/alexandru-popescu.png"
-  quote: >-
-    Running Nuvolos on sovereign bare metal meant we needed hyperscaler-grade
-    multi-tenancy without the hyperscaler. Cozystack delivered exactly that —
-    isolated tenants, shared GPUs, KubeVirt for legacy workloads — and it's why
-    we can promise our customers infrastructure control, not just a workspace.
 
 - name: "Tamerlan"
   photo: "/images/quotes/tamerlan.jpg"
