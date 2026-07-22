@@ -37,7 +37,7 @@
       <span class="ws-city__date">{{ $c.date }}</span>
     </span>
     {{- with $c.venue }}<span class="ws-city__venue">{{ . }}</span>{{ end -}}
-    <span class="ws-city__note">{{ $c.note }}</span>
+    {{- with $c.note }}<span class="ws-city__note">{{ . }}</span>{{ end -}}
     <span class="ws-city__cta">{{ $cta }} <span aria-hidden="true">→</span></span>
   </a>
   {{- end -}}
