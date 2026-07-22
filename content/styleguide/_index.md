@@ -851,6 +851,14 @@ Cluster ready in 84 seconds.
 
 ---
 
+## Block 37b — Quote carousel
+
+`{{</* quote-carousel */>}}` — rotating testimonials from a single source (`data/testimonials.yaml`). Auto-advances (~6.5s), pauses on hover/focus, disabled under `prefers-reduced-motion`; dots jump between quotes. Every quote stays in the DOM for SEO/GEO — only the active one is shown. Add one entry to the data file and it appears in this carousel on every page that uses it. Replaces the old `{{QUOTE_X}}` / placeholder-quote slots site-wide.
+
+{{< quote-carousel >}}
+
+---
+
 ## Block 38 — FAQ with summary
 
 `.faq-rows` accordion (Block 23) followed by a `.faq-summary` CTA panel: bold title + muted line left, `.cta-row` actions right. Collapses to one column below 760px.

@@ -6056,3 +6056,22 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   .wb-factoid { grid-template-columns: 1fr; gap: 0.75rem; }
   .webinar-landing .ws-speaker__grid { grid-template-columns: 1fr; }
 }
+
+/* --- Quote carousel: rotating testimonials from one shared source --- */
+.quote-carousel { margin: 2rem 0; }
+.quote-carousel__viewport { display: grid; }
+/* all slides stacked in the same grid cell -> track height = tallest slide,
+   every slide stays in the DOM (SEO/GEO), only the active one is visible */
+.quote-carousel__slide { grid-area: 1 / 1; margin: 0; opacity: 0; visibility: hidden; transition: opacity 0.45s ease; }
+.quote-carousel__slide.is-active { opacity: 1; visibility: visible; }
+@media (prefers-reduced-motion: reduce) { .quote-carousel__slide { transition: none; } }
+.quote-carousel__dots { display: flex; gap: 0.5rem; justify-content: center; margin-top: 1.25rem; }
+.quote-carousel__dot {
+  width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.22); cursor: pointer;
+  transition: background 0.2s ease, width 0.2s ease;
+}
+.quote-carousel__dot:hover { background: rgba(255, 255, 255, 0.4); }
+.quote-carousel__dot.is-active { width: 22px; background: var(--aenix-primary, #01a5ff); }
+.quote-carousel__dot:focus-visible { outline: 2px solid var(--aenix-primary, #01a5ff); outline-offset: 2px; }
+.quote-carousel__slide { display: flex; flex-direction: column; justify-content: center; }

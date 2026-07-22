@@ -155,13 +155,7 @@ Produktive Deployments in der EU, DACH und Zentralasien. Der Kundenstamm umfasst
 
 Cozystack ist außerdem in der [CNCF Landscape](https://landscape.cncf.io) gelistet — Community-Produktionsnutzer über Aenix' Kundenstamm hinaus.
 
-<div class="quote-person">
-<p class="quote-person__body">"Cozystack hat die Energie eines jungen Projekts und die Stärke einer ausgereiften Plattform — eine seltene und für die alte Garde durchaus gefährliche Kombination. Aenix pflegt es mit der Denkweise eines hungrigen Startups: Sie hören zu, handeln schnell und lösen Kundenprobleme, anstatt sie in ein Support-Labyrinth zu schicken."</p>
-<div class="quote-person__cite">
-<span class="quote-person__avatar"><img src="/images/quotes/qasym-majen.png" alt="Qasym Majen"></span>
-<span><span class="quote-person__name">Qasym Majen</span><span class="quote-person__role">Gründer, QOSI — Qazaq Open Source Initiative</span></span>
-</div>
-</div>
+{{< quote-carousel >}}
 
 <!-- /BLOCK 4 -->
 
