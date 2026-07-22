@@ -16,13 +16,14 @@
     <div class="page-hero-glow"></div>
   </div>
   <div class="container">
+    {{ partial "lang-switch.html" . }}
     <h1 class="page-hero-title">{{ .Title }}</h1>
     {{/* Commercial landings open their body with a bold lead paragraph that
          restates the value prop; rendering .Description as a hero subtitle too
          made visitors read the same line twice (marketer review #3). Suppress
          the subtitle on those page types — .Description still powers meta/OG/SERP.
          Non-landing list pages (section hubs, etc.) keep their subtitle. */}}
-    {{- $landing := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare") (.Params.page_type | default "") -}}
+    {{- $landing := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare" "event-landing") (.Params.page_type | default "") -}}
     {{/* Non-landing hubs: render short `hero_subtitle` (decoupled from meta) when
          set, else fall back to the full `.Description`. .Description still powers
          meta/OG/SERP either way. */}}
@@ -42,8 +43,10 @@
     {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . }}</div>{{ end }}
     {{ partial "seo/geo-faq.html" . }}
 
+    {{/* Pages that render their own richer child navigation in-body (e.g. the
+         workshop tour hub's city cards) can suppress the automatic grid. */}}
     {{ $pages := .Pages }}
-    {{ if $pages }}
+    {{ if and $pages (not .Params.hide_child_cards) }}
     <div class="card-grid card-grid--hub">
       {{ range $pages }}
       {{/* Whole-card link; the dead 16:9 placeholder zones are gone.

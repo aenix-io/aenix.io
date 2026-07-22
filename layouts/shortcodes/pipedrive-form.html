@@ -47,9 +47,20 @@
   "platform-engineering-maturity-assessment" "https://webforms.pipedrive.com/f/6qbFgr1EMAgAtsm6LVQv22mpVq4UUUVR0hJ0mEXsy7Bqv5ZQrKSBAJoW3lk5wXQfon"
   "sovereign-ai-decision-guide"              "https://webforms.pipedrive.com/f/6qfoGolI1jSJshW3CHW8pxN16JcEe9zkUo5twB0D1J3ix3yPBQs2stpWr5KWgohorh"
 -}}
+{{/* Workshop registration — two universal forms (EN + RU), the city is a
+     dropdown inside the form itself. Fill the URLs once the forms exist in
+     Pipedrive; an empty string renders a graceful "registration opens
+     shortly" panel instead of a broken embed. */}}
+{{- $workshopFormEn := "https://webforms.pipedrive.com/f/6zj2NsfSUZtLNBne0tCMKoZnK1UaSfyuVNg6oVeSMMdlzQ6NYNTCNx4Wbs3OiV0eJ5" -}}
+{{- $workshopFormRu := "https://webforms.pipedrive.com/f/bYZV7we2dsMGEnHA31g5JbwpBOjrZ5TtBQRmN8YkLCXQrpRp1m2PmglhvBHQB2eWRB" -}}
 {{- $url := "" -}}
 {{- $err := "" -}}
-{{- if eq $type "lead-magnet" -}}
+{{- $pending := false -}}
+{{- if eq $type "workshop" -}}
+  {{- $url = cond (eq .Page.Params.language "ru") $workshopFormRu $workshopFormEn -}}
+  {{- if not $url -}}{{ $url = $workshopFormEn }}{{- end -}}
+  {{- if not $url -}}{{ $pending = true }}{{- end -}}
+{{- else if eq $type "lead-magnet" -}}
   {{- $res := .Get "resource" | default "dora-compliance-checklist" -}}
   {{- $map := cond (eq .Page.Params.language "de") $leadMagnetsDe $leadMagnets -}}
   {{- $url = index $map $res -}}
@@ -59,7 +70,7 @@
   {{- $cmap := cond (eq .Page.Params.language "de") $formsDe $forms -}}
   {{- $url = index $cmap $type -}}
   {{- if not $url -}}{{ $url = index $forms $type }}{{- end -}}
-  {{- if not $url -}}{{ $err = printf "unknown type %q (valid: discovery, demo, partner, course, lead-magnet)" $type }}{{- end -}}
+  {{- if not $url -}}{{ $err = printf "unknown type %q (valid: discovery, demo, partner, course, lead-magnet, workshop)" $type }}{{- end -}}
 {{- end -}}
 {{- if $url -}}
 <div class="pipedrive-form pipedrive-form--{{ $type }}">

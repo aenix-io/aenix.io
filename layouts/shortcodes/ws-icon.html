@@ -1,0 +1,27 @@
+{{/*
+  ws-icon — small pixel-inspired technical icons for the workshop landing.
+  Restrained 8-bit influence (crisp edges, blocky forms), currentColor, so the
+  campaign keeps a premium feel rather than a retro-game one. Decorative only:
+  every icon is aria-hidden and the meaning lives in the adjacent text.
+
+  Usage: {{< ws-icon name="vm" >}}
+*/}}
+{{- $name := .Get "name" -}}
+{{- $icons := dict
+  "vm"     `<rect x="3" y="5" width="18" height="12" rx="1"/><rect x="9" y="18" width="6" height="2"/><rect x="7" y="20" width="10" height="1.6"/><path d="M10 8.5v5l4-2.5-4-2.5Z"/>`
+  "plan"   `<rect x="4" y="4" width="3" height="3"/><rect x="9" y="5" width="11" height="1.8"/><rect x="4" y="10" width="3" height="3"/><rect x="9" y="11" width="11" height="1.8"/><rect x="4" y="16" width="3" height="3"/><rect x="9" y="17" width="8" height="1.8"/>`
+  "clarity" `<path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6-10-6-10-6Z" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9.5" y="9.5" width="5" height="5"/>`
+  "skill"  `<rect x="2.5" y="4" width="19" height="16" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 9l3 3-3 3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="11.5" y="14" width="6" height="1.8"/>`
+  "kit"    `<path d="M6 3h8l4 4v14H6V3Z" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="9" y="10" width="6" height="1.6"/><rect x="9" y="13.5" width="6" height="1.6"/><rect x="9" y="17" width="4" height="1.6"/>`
+  "admin"  `<rect x="3" y="4" width="18" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="14" width="18" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="6" y="6.5" width="2" height="1.8"/><rect x="6" y="16.5" width="2" height="1.8"/>`
+  "lead"   `<rect x="10" y="3" width="4" height="4"/><rect x="4" y="17" width="4" height="4"/><rect x="16" y="17" width="4" height="4"/><path d="M12 7v4M6 17v-3h12v3" fill="none" stroke="currentColor" stroke-width="1.8"/>`
+  "cto"    `<rect x="4" y="13" width="4" height="7"/><rect x="10" y="9" width="4" height="11"/><rect x="16" y="5" width="4" height="15"/><path d="M4 7l5-3 4 2 6-3" fill="none" stroke="currentColor" stroke-width="1.6"/>`
+  "devops" `<path d="M8 8a4 4 0 1 0 0 8c3 0 5-8 8-8a4 4 0 1 1 0 8c-3 0-5-8-8-8Z" fill="none" stroke="currentColor" stroke-width="1.8"/>`
+  "cal30"  `<rect x="3" y="5" width="18" height="16" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="3" y="5" width="18" height="4"/><rect x="7" y="2.5" width="2" height="4"/><rect x="15" y="2.5" width="2" height="4"/><text x="12" y="18" text-anchor="middle" font-size="8" font-weight="700" fill="currentColor" font-family="monospace">30</text>`
+  "chat"   `<path d="M3 5h18v11H9l-4 4v-4H3V5Z" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="7" y="9" width="2.4" height="2.4"/><rect x="11" y="9" width="2.4" height="2.4"/><rect x="15" y="9" width="2.4" height="2.4"/>`
+  "lab"    `<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="8" y="15" width="8" height="2.2"/>`
+  "cert"   `<rect x="3" y="4" width="18" height="12" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="6" y="7" width="8" height="1.6"/><rect x="6" y="10.5" width="6" height="1.6"/><circle cx="17" cy="17" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.4 19.5 14.5 23l2.5-1.4L19.5 23l-.9-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/>`
+-}}
+{{- with index $icons $name -}}
+<svg class="ws-icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" shape-rendering="crispEdges" aria-hidden="true" focusable="false">{{ . | safeHTML }}</svg>
+{{- end -}}

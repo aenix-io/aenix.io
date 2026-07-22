@@ -157,6 +157,10 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 - [About](https://aenix.io/about/): Aenix open-core narrative, Cozystack origin, team
 - [Conferences](https://aenix.io/conferences/): KubeCon, CloudFest, sovereign-cloud events where Aenix presents
 
+## Workshops (free hands-on events)
+
+- [Hands-on VMware migration workshop](https://aenix.io/workshops/vmware-to-cozystack/): Free hands-on workshops in Tashkent, Bishkek, Almaty, and Astana — participants migrate a real VM off a running VMware server onto open-source Cozystack, build a database, monitoring, and backups around it, keep a 30-day test environment and a Cozystack-maintainer chat, and can earn the Cozystack Certified Fundamentals certificate via take-home labs. Delivered in Russian; Russian page at https://aenix.io/ru/workshops/vmware-to-cozystack/
+
 ## German (DACH locale)
 
 A subset of pages is mirrored in German for the DACH market under `/de/`. Includes the editions, key solutions (DORA / NIS2 / Datensouveränität / cloud repatriation / sovereign AI), services, industries, and a German blog at `/de/blog/`. Hreflang annotations link EN ↔ DE versions where both exist.

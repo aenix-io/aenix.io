@@ -1,0 +1,22 @@
+{{/*
+  lang-switch.html — RU ⇄ EN language toggle pill for pages that declare a
+  locale counterpart in frontmatter (hreflang_ru on EN pages / hreflang_en on
+  RU pages). Rendered by _default/list.html inside the page hero.
+
+  Scope: only the EN↔RU pair (workshop pages). DE pages keep their existing
+  behavior (no visible switcher) — this partial no-ops for them.
+*/}}
+{{- $lang := .Params.language | default "en" -}}
+{{- $ru := .Params.hreflang_ru -}}
+{{- $en := .Params.hreflang_en -}}
+{{- if or (and (eq $lang "en") $ru) (and (eq $lang "ru") $en) -}}
+<nav class="lang-switch" aria-label="Language">
+  {{- if eq $lang "ru" }}
+  <a class="lang-switch__item" href="{{ $en | relURL }}" hreflang="en" lang="en">English</a>
+  <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="ru">Русский</span>
+  {{- else }}
+  <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="en">English</span>
+  <a class="lang-switch__item" href="{{ $ru | relURL }}" hreflang="ru" lang="ru">Русский</a>
+  {{- end }}
+</nav>
+{{- end -}}

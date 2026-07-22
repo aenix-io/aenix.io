@@ -46,6 +46,9 @@ CARDS = [
     ("og-vmware-exit-partners-de", "VMWARE-AUSSTIEG FÜR INTEGRATOREN", "Verlängerung zu Marge"),
     ("og-vmware-kostenrechner-de", "TOOL", "VMware-Kostenrechner"),
     ("og-ibm-migration-de", "IBM AIX / POWER MIGRATION", "Von Power zur offenen Cloud"),
+    # Workshop landing (EN + RU)
+    ("og-workshop-tour", "TASHKENT · BISHKEK · ALMATY · ASTANA · FREE", "Migrating off VMware to open source: a hands-on workshop"),
+    ("og-workshop-tour-ru", "ТАШКЕНТ · БИШКЕК · АЛМАТЫ · АСТАНА · БЕСПЛАТНО", "Миграция с VMware на open source: практический воркшоп"),
 ]
 
 

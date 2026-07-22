@@ -1,0 +1,44 @@
+{{/*
+  event/portrait.html — responsive, optimized speaker portrait.
+
+  Processes a transparent PNG from assets/ through Hugo's image pipeline and
+  emits a <picture> with a WebP srcset (alpha preserved) plus a PNG fallback,
+  so the campaign hero and the speaker feature share one optimized source.
+
+  ctx (dict):
+    src    — assets-relative path, e.g. "images/workshops/timur-tukaev.png" (required)
+    alt    — descriptive alt text (required; empty string only for decorative)
+    class  — extra class(es) on the <img>
+    sizes  — sizes attribute (default "(max-width: 760px) 80vw, 460px")
+    widths — slice of pixel widths to generate (default 380 560 760 1080)
+    eager  — true to load eagerly (hero); default lazy
+*/}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $sizes := .sizes | default "(max-width: 760px) 80vw, 460px" -}}
+{{- $widths := .widths | default (slice 380 560 760 1080) -}}
+{{- $eager := .eager | default false -}}
+{{- $img := resources.Get $src -}}
+{{- if $img -}}
+  {{- $webp := slice -}}
+  {{- $png := slice -}}
+  {{- range $widths -}}
+    {{- $w := . -}}
+    {{- if le $w $img.Width -}}
+      {{- $webp = $webp | append (printf "%s %dw" ($img.Resize (printf "%dx webp q82 Lanczos" $w)).RelPermalink $w) -}}
+      {{- $png = $png | append (printf "%s %dw" ($img.Resize (printf "%dx png" $w)).RelPermalink $w) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $fallbackW := cond (gt $img.Width 760) 760 $img.Width -}}
+  {{- $fallback := $img.Resize (printf "%dx png" $fallbackW) -}}
+<picture>
+  <source type="image/webp" srcset="{{ delimit $webp ", " }}" sizes="{{ $sizes }}">
+  <img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $png ", " }}" sizes="{{ $sizes }}"
+       width="{{ $fallback.Width }}" height="{{ $fallback.Height }}"
+       alt="{{ $alt }}"{{ with $class }} class="{{ . }}"{{ end }}
+       loading="{{ cond $eager "eager" "lazy" }}" decoding="async"{{ if $eager }} fetchpriority="high"{{ end }}>
+</picture>
+{{- else -}}
+  <div class="portrait-missing" role="img" aria-label="{{ $alt }}"><span>{{ $alt }}</span></div>
+{{- end -}}
