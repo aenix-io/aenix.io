@@ -14,7 +14,7 @@ hero_tagline: "Никакой теории ради теории: на ворк�
 hero_chips:
   - "Бесплатно по регистрации"
   - "Количество мест ограничено"
-  - "На русском"
+  - "На русском языке"
 hero_primary: { text: "Зарегистрироваться", href: "#register" }
 hero_secondary: { text: "Программа", href: "#program" }
 speaker_photo: "images/workshops/timur-tukaev.png"
@@ -140,13 +140,8 @@ faq:
 <p>При этом сама инфраструктура у вас работает, команда её знает, и ломать её никто не хочет. Вопрос звучит иначе: чем заменить VMware так, чтобы не потерять ни данные, ни людей, ни управляемость — и не попасть в зависимость от следующего вендора.</p>
 </div>
 <div class="ws-story__visual ws-story__visual--legacy" aria-hidden="true">
-<div class="ws-legacy">
-<span class="ws-legacy__pressure"><svg viewBox="0 0 120 26" fill="none" focusable="false"><path d="M18 4l8 8 8-8M52 4l8 8 8-8M86 4l8 8 8-8" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-<span class="ws-legacy__slab ws-legacy__slab--1"></span>
-<span class="ws-legacy__slab ws-legacy__slab--2"></span>
-<span class="ws-legacy__slab ws-legacy__slab--3"></span>
-<span class="ws-legacy__slab ws-legacy__slab--4"></span>
-<span class="ws-legacy__lock"><svg viewBox="0 0 24 24" fill="none" focusable="false"><rect x="5" y="10.5" width="14" height="10" rx="1.5" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" stroke="currentColor" stroke-width="1.8"/></svg></span>
+<div class="ws-lockin">
+<svg viewBox="0 0 320 280" width="100%" fill="none" focusable="false"><rect x="66" y="52" width="188" height="176" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(1,165,255,0.55)" stroke-width="2"/><rect x="86" y="70" width="148" height="30" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/><circle cx="100" cy="85" r="4" fill="#4796EA"/><rect x="114" y="82" width="72" height="6" rx="3" fill="rgba(255,255,255,0.2)"/><rect x="86" y="108" width="148" height="30" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/><circle cx="100" cy="123" r="4" fill="#75BCE4"/><rect x="114" y="120" width="60" height="6" rx="3" fill="rgba(255,255,255,0.18)"/><rect x="86" y="180" width="148" height="30" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/><circle cx="100" cy="195" r="4" fill="#4796EA"/><rect x="114" y="192" width="66" height="6" rx="3" fill="rgba(255,255,255,0.18)"/><rect x="40" y="150" width="240" height="22" rx="11" fill="rgba(148,163,184,0.16)" stroke="rgba(148,163,184,0.65)" stroke-width="1.5"/><g fill="none" stroke="rgba(148,163,184,0.7)" stroke-width="2"><circle cx="60" cy="161" r="6"/><circle cx="80" cy="161" r="6"/><circle cx="100" cy="161" r="6"/><circle cx="220" cy="161" r="6"/><circle cx="240" cy="161" r="6"/><circle cx="260" cy="161" r="6"/></g><rect x="130" y="146" width="60" height="50" rx="9" fill="rgba(252,165,165,0.16)" stroke="#FCA5A5" stroke-width="2.5"/><path d="M141 146 v-11 a19 19 0 0 1 38 0 v11" fill="none" stroke="#FCA5A5" stroke-width="2.5"/><circle cx="160" cy="167" r="5.5" fill="#FCA5A5"/><rect x="157" y="169" width="6" height="13" rx="3" fill="#FCA5A5"/></svg>
 </div>
 </div>
 </div>
@@ -158,19 +153,18 @@ faq:
 </div>
 <div class="ws-story__visual ws-story__visual--platform">
 <div class="ws-platform">
-<div class="ws-platform__grid" aria-hidden="true"></div>
 <div class="ws-platform__head">{{< cozy-mark >}}</div>
 <ul class="ws-platform__layers">
-<li><span class="ws-platform__ic">{{< ws-icon name="vm" >}}</span>Виртуальные машины</li>
-<li><span class="ws-platform__ic">{{< ws-icon name="devops" >}}</span>Сеть</li>
-<li><span class="ws-platform__ic">{{< ws-icon name="admin" >}}</span>Хранилище</li>
-<li><span class="ws-platform__ic">{{< ws-icon name="cto" >}}</span>Мониторинг</li>
-<li><span class="ws-platform__ic">{{< ws-icon name="kit" >}}</span>Резервное копирование</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>Виртуальные машины</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v2.5M12 10l-6 6.5M12 10l6 6.5"/></svg></span>Сеть</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12c0 1.66 3.13 3 7 3s7-1.34 7-3"/></svg></span>Хранилище</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l2.5-6 4.5 12 2.5-6h4.5"/></svg></span>Мониторинг</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6"/><path d="M4 4v4h4"/></svg></span>Резервное копирование</li>
 </ul>
 </div>
 </div>
 </div>
-<div class="ws-wrap ws-cta-center"><a class="cta-primary" href="#register">Зарегистрироваться</a></div>
+<div class="ws-wrap ws-cta-center"><a class="cta-primary cta-accent" href="#register">Зарегистрироваться</a></div>
 </section>
 
 <section class="ws-section ws-agenda" id="program" aria-labelledby="ws-agenda-h">
@@ -212,7 +206,7 @@ faq:
 <p class="ws-outcome__text"><strong>Материалы и шпаргалки</strong> для работы дома — и месяц поддержки после воркшопа.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-lime" href="#register">Зарегистрироваться</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Зарегистрироваться</a></div>
 </div>
 </section>
 
@@ -254,7 +248,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Чат, где на вопросы отвечают мейнтейнеры Cozystack.</strong></span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Возможность получить сертификат Cozystack Certified Fundamentals</strong> — бесплатно.</span></li>
 </ul>
-<div class="ws-cta-row"><a class="cta-primary cta-lime" href="#register">Зарегистрироваться</a></div>
+<div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Зарегистрироваться</a></div>
 </div>
 <div class="ws-after__stack" aria-hidden="true">
 <div class="ws-after__tile ws-after__tile--env"><span class="ws-after__ic">{{< ws-icon name="cal30" >}}</span><span class="ws-after__tile-label">Тестовая среда на 30 дней</span></div>
@@ -273,7 +267,6 @@ faq:
 </section>
 
 <section class="ws-section ws-speaker" aria-labelledby="ws-speaker-h">
-<div class="ws-speaker__pattern" aria-hidden="true"></div>
 <div class="ws-wrap ws-speaker__grid">
 <div class="ws-speaker__photo">{{< workshop-photo src="images/workshops/timur-tukaev.png" alt="Тимур Тукаев" >}}</div>
 <div class="ws-speaker__info">

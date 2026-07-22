@@ -1,0 +1,15 @@
+{{/*
+  workshop-photo — responsive optimized portrait for use inside content
+  (the speaker feature). Thin wrapper over the event/portrait.html partial so
+  the speaker photo and the hero portrait share one image pipeline.
+
+  Usage:
+    {{< workshop-photo src="images/workshops/timur-tukaev.png" alt="Тимур Тукаев" >}}
+*/}}
+{{- partial "event/portrait.html" (dict
+  "src" (.Get "src")
+  "alt" (.Get "alt")
+  "class" (.Get "class")
+  "sizes" (.Get "sizes" | default "(max-width: 760px) 60vw, 300px")
+  "widths" (slice 300 440 600)
+) -}}

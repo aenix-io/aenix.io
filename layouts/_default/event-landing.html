@@ -65,24 +65,15 @@
         </ul>
         {{ end }}
         <div class="event-hero__cta ws-hero__cta">
-          {{ with .Params.hero_primary }}<a class="cta-primary cta-lime" href="{{ .href }}">{{ .text }}</a>{{ end }}
+          {{ with .Params.hero_primary }}<a class="cta-primary cta-accent" href="{{ .href }}">{{ .text }}</a>{{ end }}
           {{ with .Params.hero_secondary }}<a class="cta-secondary" href="{{ .href }}">{{ .text }}</a>{{ end }}
         </div>
       </div>
 
       <div class="ws-hero__visual">
         <div class="ws-hero__stage">
-          <div class="ws-hero__stage-grid" aria-hidden="true"></div>
-          <svg class="ws-hero__stage-geo" viewBox="0 0 320 360" fill="none" aria-hidden="true" focusable="false">
-            <circle cx="52" cy="70" r="4.5" fill="currentColor"/><circle cx="268" cy="120" r="4.5" fill="currentColor"/>
-            <circle cx="40" cy="250" r="3.5" fill="currentColor"/><circle cx="284" cy="286" r="3.5" fill="currentColor"/>
-            <path d="M52 70h70M52 70v60M268 120h-46M268 120v70" stroke="currentColor" stroke-width="1.2"/>
-            <rect x="24" y="150" width="30" height="30" rx="4" stroke="currentColor" stroke-width="1.2"/>
-            <rect x="266" y="196" width="30" height="30" rx="4" stroke="currentColor" stroke-width="1.2"/>
-          </svg>
           <div class="ws-hero__stage-glow" aria-hidden="true"></div>
-          {{ partial "event/portrait.html" (dict "src" $photo "alt" $portraitAlt "class" "ws-hero__portrait" "sizes" "(max-width: 960px) 66vw, 460px" "widths" (slice 380 560 760 1080) "eager" true) }}
-          <span class="ws-hero__badge">{{ partial "event/cozystack-mark.html" (dict "class" "cozy-mark--badge") }}</span>
+          {{ partial "event/portrait.html" (dict "src" $photo "alt" $portraitAlt "class" "ws-hero__portrait" "sizes" "(max-width: 960px) 66vw, 560px" "widths" (slice 380 560 760 1080) "eager" true) }}
         </div>
       </div>
     </div>
@@ -133,6 +124,9 @@
       <div class="event-inshort">
         {{ with .Params.inshort_title }}<h2>{{ . }}</h2>{{ end }}
         {{ partial "seo/geo-intro.html" . }}
+        <div class="ws-cta-center ws-cta-center--outro">
+          <a class="cta-primary cta-accent" href="#register">{{ with .Params.hero_primary }}{{ .text }}{{ else }}{{ cond $isRU "Зарегистрироваться" "Register" }}{{ end }}</a>
+        </div>
       </div>
       {{ end }}
       {{ partial "seo/geo-faq.html" . }}
@@ -150,7 +144,7 @@
       {{ with .heading }}<h2 class="ws-final__title">{{ . }}</h2>{{ end }}
       {{ with .text }}<p class="ws-final__text">{{ . }}</p>{{ end }}
       <div class="ws-final__cta">
-        <a class="cta-primary cta-lime cta-lg" href="{{ .href | default "#register" }}">{{ .button | default (cond $isRU "Зарегистрироваться" "Register") }}</a>
+        <a class="cta-primary cta-accent cta-lg" href="{{ .href | default "#register" }}">{{ .button | default (cond $isRU "Зарегистрироваться" "Register") }}</a>
       </div>
     </div>
   </div>
