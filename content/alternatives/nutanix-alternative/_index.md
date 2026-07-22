@@ -6,6 +6,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **The leading open-source Nutanix alternative is Cozystack, a CNCF Sandbox project that runs virtual machines and containers on a single Kubernetes API. Where Nutanix AHV is proprietary KVM tied to certified appliance hardware and per-node subscriptions, Cozystack is Apache 2.0 licensed, runs on commodity hardware, and uses KubeVirt for VMs, Cilium (eBPF) for networking, and LINSTOR/DRBD for storage. Its Tenant CRD delivers production multi-tenancy, making it well-suited to service providers, regulated enterprises, and modern greenfield builds that Nutanix's VM-centric model handles less directly. Aenix, the team behind Cozystack, packages it as the productized Ænix Platform with enterprise support, so organizations escaping appliance lock-in keep an open foundation while retaining commercial backing.**
 quick_facts:
@@ -49,6 +51,8 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint"><div class="band-fullbleed__inner">
+
 ## When Nutanix may not be the right answer
 
 - **Closed-source concerns** — sovereignty, audit-readiness, supplier-chain transparency favor open source.
@@ -58,6 +62,8 @@ faq:
 - **Container + VM unified workloads** — Nutanix is VM-centric; native container handling is weaker.
 
 If your existing Nutanix deployment is operating well and economics support continuation — stay. The alternative analysis is for organizations triggered by one of the above.
+
+</div></div>
 
 ---
 
@@ -73,9 +79,19 @@ If your existing Nutanix deployment is operating well and economics support cont
 | **Hardware** | Appliance + certified hardware | Commodity |
 | **Best for** | Existing Nutanix HCI customers | Service providers, regulated multi-tenant, modern greenfield |
 
+<div class="arch-section__fig"><div class="diagram">
+<div class="diagram__node"><b>Nutanix AHV</b><div class="diagram__chips"><span>Proprietary KVM</span><span>Appliance lock-in</span><span>Per-node subscription</span></div></div>
+<div class="diagram__conn">replaced by</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt (KVM)</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Tenant CRD</span></div></div>
+<div class="diagram__conn">runs on</div>
+<div class="diagram__node"><b>Commodity hardware</b><div class="diagram__chips"><span>No certified-hardware requirement</span><span>Service providers</span><span>Regulated multi-tenant</span></div></div>
+</div></div>
+
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Nutanix vs Cozystack vs VMware](/blog/2026/05/nutanix-vs-cozystack-vs-vmware/)**
 - **[VMware alternative](/alternatives/vmware-alternative/)**

@@ -3,6 +3,8 @@ title: "VMware-Kostenrechner — Einsparungen nach Broadcom berechnen"
 description: "Kostenloser VMware-Kostenrechner: Kerne und Verlängerungspreis eingeben, Jahresersparnis, 3-Jahres-Netto und Migrations-Amortisation berechnen."
 type: "page"
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 images: ["img/og/og-vmware-kostenrechner-de.png"]
 hreflang_en: /resources/vmware-cost-calculator/
 primary_keyword: "vmware kostenrechner"
@@ -71,6 +73,16 @@ Die Lizenzkosten, die Sie an VMware/Broadcom zahlen, entfallen auf einer offenen
 - **Netto-Ersparnis pro Jahr** = VMware-Jahr − Aenix-Jahr.
 - **3-Jahres-Netto** = Netto-Jahr × 3 − einmalige Migrationskosten.
 - **Amortisation** = Migrationskosten ÷ monatliche Netto-Ersparnis.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>VMware-Kosten pro Jahr</b><div class="diagram__chips"><span>Kerne × Kosten pro Kern/Jahr</span></div></div>
+<div class="diagram__conn">verglichen mit</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix-Support pro Jahr</b><div class="diagram__chips"><span>Apache 2.0</span><span>keine Pro-Core-Gebühr</span></div></div>
+<div class="diagram__conn">ergibt</div>
+<div class="diagram__node"><b>Netto-Ersparnis</b><div class="diagram__chips"><span>3-Jahres-Netto</span><span>Amortisation</span></div></div>
+</div>
+</div>
 
 Bewusst einfache Eingaben für ein belegbares Ergebnis. Eine volle TCO umfasst Strom, Hardware-Refresh, Personal und die Workloads, die in der Cloud bleiben — das modellieren wir mit Ihnen im Gespräch.
 ---

@@ -7,6 +7,8 @@ related_pages:
   - /de/partner/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/white-label-cloud/
 direct_answer: |
   **White-Label Cloud ist ein gebrandetes Cloud-Produkt, das Managed Service Provider (MSPs), Reseller und System-Integratoren unter eigener Identität an ihre Kunden verkaufen — betrieben auf Shared- oder dedizierter Infrastruktur. Aenix baut solche Plattformen end-to-end auf Basis von Cozystack, dem Open-Source-Cloud-Stack (Apache 2.0, CNCF-Projekt), mit KubeVirt für VMs und Container auf einer Kubernetes-API. Das gebrandete cozyportal (Farben, Logo, Domain), ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden) und WHMCS-integriertes Billing ermöglichen es Partnern, mit Hyperscalern preislich zu konkurrieren und gleichzeitig ihre Kundenbeziehung zu behalten.**
@@ -62,6 +64,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Was wir liefern
 
 - **Mandantenfähige Cozystack-Plattform** mit Reseller-Kunden-Hierarchie (verschachteltes Tenant CRD)
@@ -70,6 +75,19 @@ faq:
 - **Service-Katalog** — VMs, K8s, Managed Databases, S3, GPU
 - **Reseller- / Sub-Reseller-Modell** — für Multi-Tier-Partner-Channels
 - **Operations-Workflow** — Customer-Support, SLA-Management, Observability pro Tenant
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Aenix</b></div>
+<div class="diagram__conn">betreibt für</div>
+<div class="diagram__node"><b>MSP</b></div>
+<div class="diagram__conn">verkauft an</div>
+<div class="diagram__node"><b>MSP-Kunden</b></div>
+</div>
+</div>
+
+</div>
+</div>
 
 ---
 

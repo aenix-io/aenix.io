@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "cloud bursting"
 secondary_keywords: ["gpu as a service", "multi cloud kubernetes"]
 hreflang_de: "/de/loesungen/gpu-cloud-bursting/"
@@ -68,6 +70,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Was Sie bekommen
 
 GPU-Cloud-Bursting auf der Aenix-Plattform ist ein elastischer GPU-Pool, verteilt über die Infrastruktur, die Sie bereits haben, und die Clouds, die Sie erreichen wollen.
@@ -83,11 +88,24 @@ GPU-Cloud-Bursting auf der Aenix-Plattform ist ein elastischer GPU-Pool, verteil
 
 AI/ML-Teams mit sprunghaftem Training- und Inferenz-Bedarf, Forschungseinrichtungen und Universitäten mit geteilten GPU für Kurse und Experimente sowie Plattform-Betreiber, die GPU-as-a-Service anbieten wollen, ohne einen Hyperscaler weiterzuverkaufen. Ist Ihr GPU-Bedarf flach und planbar, brauchen Sie womöglich kein Bursting — kaufen Sie für die Grundlast und gut. Springt er, liegt in Bursting die Ökonomie.
 
+</div>
+</div>
+
 ---
 
 ## Wie es funktioniert
 
 Das Muster besteht aus Standard-Kubernetes-Primitiven, zusammengesetzt und durchgängig betrieben.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Eine Cluster API</b><div class="diagram__chips"><span>Cozystack</span><span>Autoscaling</span><span>WireGuard-Mesh</span></div></div>
+<div class="diagram__conn">betreibt die Basis auf</div>
+<div class="diagram__node"><b>Eigenes Bare Metal</b><div class="diagram__chips"><span>Grundlast</span><span>Basis-Workloads</span></div></div>
+<div class="diagram__conn">burstet Spitzen in</div>
+<div class="diagram__node"><b>Public- & souveräne Cloud</b><div class="diagram__chips"><span>Burst-Target</span></div></div>
+</div>
+</div>
 
 - **Cluster Autoscaler** erkennt GPU-Pods, die nicht geplant werden können, und provisioniert Nodes auf dem richtigen Ziel — Bare Metal, Hyperscaler oder souveräne Cloud — über die [Cluster API](https://cluster-api.sigs.k8s.io/), Kubernetes' deklarativen Standard für den Lebenszyklus von Clustern und Maschinen. Leert sich die Queue, werden die Nodes entfernt.
 - **Cilium plus WireGuard-Mesh (Kilo)** liefern die CNI und ein verschlüsseltes Overlay über Clouds hinweg. Frisch autoskalierte Nodes melden sich ins Mesh und erreichen geteilten Storage ohne manuelle Schritte — das [Kubernetes-Netzwerkmodell](https://kubernetes.io/docs/concepts/services-networking/) behandelt sie, als wären sie lokal.

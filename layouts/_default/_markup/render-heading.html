@@ -13,7 +13,7 @@
 */ -}}
 {{- $p := .Page -}}
 {{- $landing := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare") ($p.Params.page_type | default "") -}}
-{{- if and $landing (eq .Level 2) -}}
+{{- if and $landing (not $p.Params.hide_inline_ctas) (eq .Level 2) -}}
   {{- $n := add (int ($p.Scratch.Get "h2count" | default 0)) 1 -}}
   {{- $p.Scratch.Set "h2count" $n -}}
   {{- $done := int ($p.Scratch.Get "ctaInjected" | default 0) -}}

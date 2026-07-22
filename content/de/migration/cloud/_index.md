@@ -3,6 +3,8 @@ title: "Cloud Migration — strategische Migration zu privater oder hybrider Inf
 description: "Cloud Migration ist 2026 nicht mehr \"alles in die Public Cloud\" — es ist eine strategische Entscheidung, welche Workloads wo am besten laufen. Aenix führt..."
 related_pages: ["/de/alternativen/vmware-alternative", "/de/loesungen/cloud-repatriation", "/de/produkte/private-cloud"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /migration/cloud/
 direct_answer: |
   **Cloud Migration bedeutet 2026 nicht mehr "alles in die Public Cloud", sondern die strategische Entscheidung, welche Workloads wo am besten laufen. Aenix führt strukturierte Migrationen für Unternehmen, Hosting-Anbieter und regulierte Organisationen im DACH-Raum durch: von Public-Cloud-Repatriierung über VMware-Ausstieg unter Broadcom-Druck bis zur Greenfield-Private-Cloud. Zielplattform ist die Ænix Platform auf Basis von Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0. Cozystack vereint virtuelle Maschinen (KubeVirt) und Container über eine einzige Kubernetes-API, mit Cilium-Networking (eBPF) und LINSTOR-Storage. Jedes Engagement folgt der Abfolge Assessment, Implementation und optionalem Operate, mit Aenix-Ingenieuren integriert in Ihr Team.**
@@ -92,7 +94,22 @@ Für Bestände, die einen Legacy-Virtualisierungs-Stack verlassen, ist die Image
 
 Die Sequenzierung respektiert, was Sie bereits bezahlt haben. Wenn Verträge oder Subscriptions noch Laufzeit haben, wandern die betroffenen Kohorten zuletzt, sodass der Plan nie eine Abschreibung committeter Ausgaben erzwingt. Ein Bestand von 100 Workloads wird typischerweise in Monaten abgeschlossen, nicht in Jahren; größere Bestände laufen in Kohorten über ein längeres Fenster, während die Quellumgebung Kohorte für Kohorte auslaufen.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Quellumgebung</b><div class="diagram__chips"><span>Public Cloud</span><span>Legacy-Virtualisierungs-Stack</span></div></div>
+<div class="diagram__conn">wandert durch</div>
+<div class="diagram__node"><b>Kohorten-basierte Migration</b><div class="diagram__chips"><span>Parallelbetrieb-Validierung</span><span>Automatisierte Image-Konvertierung</span></div></div>
+<div class="diagram__conn">landet auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">abgeschlossen mit</div>
+<div class="diagram__node"><b>Quelle stillgelegt</b><div class="diagram__chips"><span>Kohorte für Kohorte</span><span>Keine Abschreibung committeter Ausgaben</span></div></div>
+</div>
+</div>
+
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Wo Cloud-Migrationen häufig ins Stocken geraten
 
@@ -102,6 +119,9 @@ Die meisten gescheiterten Migrationen teilen eine kleine Menge von Ursachen, und
 - **Big-Bang-Cutover.** Ein "alles an einem Wochenende verschieben" überlebt den Kontakt mit einem Enterprise-Bestand selten. Kohorten-basierte Migration mit validiertem Parallelbetrieb ist das Muster, das funktioniert.
 - **Ein unter-konstruiertes Ziel.** Workloads landen auf einer Private-Plattform, die nie für die Produktion gebaut wurde; operative Schulden häufen sich an, und das Team gibt der Migration die Schuld, obwohl das eigentliche Problem die Reife des Ziels ist.
 - **Übersprungenes Network- und Storage-Redesign.** Das Networking und Storage des Ziels als Kopie der Quelle zu behandeln garantiert Fragilität. Sie werden für das Ziel frisch konstruiert.
+
+</div>
+</div>
 
 ---
 

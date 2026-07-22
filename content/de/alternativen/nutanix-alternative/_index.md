@@ -6,6 +6,8 @@ related_pages:
   - /de/produkte/aenix-platform/enterprise-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /alternatives/nutanix-alternative/
 direct_answer: |
   **Eine Nutanix-Alternative ist eine Plattform, die vergleichbare HCI- und VM-Fähigkeiten ohne Appliance-Lock-in und proprietäres Subscription-Modell liefert. Cozystack ist die Open-Source-Antwort: ein CNCF-Projekt unter Apache-2.0-Lizenz, das KubeVirt für VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für replizierten Storage kombiniert. Anders als Nutanix läuft Cozystack auf kundenkontrollierter Standard-Hardware mehrerer Hersteller, ohne CPU- oder Core-basierte Lizenzierung. Aenix, das Open-Core-Unternehmen hinter Cozystack, bietet mit der Ænix Platform Enterprise Edition eine produktisierte, turnkey Multi-DC-Private/Hybrid-Cloud mit DORA- und NIS2-Alignment für Organisationen, die Open-Source-First und Souveränität verlangen.**
@@ -41,6 +43,16 @@ faq:
 
 **Nutanix HCI ist operativ einfach, ausgereift und integriert. Die Trade-offs: Closed Source, Appliance-getriebener Lock-in und ein Subscription-Modell, das ähnlichen Druck-Dynamiken wie VMware folgt. Für Organisationen, die vergleichbare VM-Plattform-Fähigkeiten mit Open-Source-Foundations und Multi-Tenant-Cloud-Builder-Features suchen, ist Cozystack die realistische Alternative.**
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Nutanix HCI</b><div class="diagram__chips"><span>Closed Source</span><span>Appliance-Lock-in</span><span>Subscription-Modell</span></div></div>
+<div class="diagram__conn">Migration</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform Enterprise Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>souveräne Multi-DC-Private-/Hybrid-Cloud</b><div class="diagram__chips"><span>kundenkontrollierte Hardware</span><span>DORA</span><span>NIS2</span></div></div>
+</div>
+</div>
+
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — souveräne Multi-DC-Private-/Hybrid-Cloud, kundenkontrollierte Hardware (kein Nutanix-Appliance-Lock-in), DORA-/NIS2-Alignment.
 
 <div class="cta-row">
@@ -62,6 +74,9 @@ Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkei
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Cozystack vs Nutanix AHV
 
 | | Nutanix AHV | Cozystack |
@@ -73,6 +88,9 @@ Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkei
 | **Container** | Limitiert (Karbon-Plattform-Erweiterung) | Nativ |
 | **Hardware** | Appliance + zertifizierte Hardware | Commodity |
 | **Am besten für** | Bestehende Nutanix-HCI-Kunden | Service-Provider, regulierte Multi-Tenancy, modernes Greenfield |
+
+</div>
+</div>
 
 ---
 

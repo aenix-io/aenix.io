@@ -3,6 +3,8 @@ title: "Cloud-Plattform für Finanzdienstleistungen — DORA-konform, souverän,
 description: "Banken, Versicherer, Investmentfirmen und Zahlungsinstitute in der DACH-Region stehen 2026 vor der steilsten Kombination von Drücken: DORA-Durchsetzung (in..."
 related_pages: ["/de/loesungen/dora-compliance", "/de/loesungen/data-sovereignty", "/de/loesungen/sovereign-ai"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/financial-services/
 direct_answer: |
   **Eine Cloud-Plattform für Finanzdienstleistungen ist eine regulierungskonforme Infrastruktur-Foundation für Banken, Versicherer, Investmentfirmen und Zahlungsinstitute in der DACH-Region, die DORA-Vorgaben, ICT-Drittanbieter-Konzentrationsrisiken und souveräne KI-Anforderungen adressiert. Aenix baut diese Plattformen auf Cozystack — einer Open-Source-Foundation unter Apache 2.0, die VMs und Container über eine einzige Kubernetes-API mit KubeVirt bereitstellt, Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Tenant-CRD-Mandantenfähigkeit. Finanzdienstleister nutzen sie für DORA-konformes Plattform-Readiness, Hyperscaler-Repatriation, VMware-Ausstieg nach Broadcom und souveräne KI für sensible Finanzdaten — ohne CPU- oder Core-basierte Lizenzierung.**
@@ -51,6 +53,9 @@ Aenix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wofür Finanz-Teams zu uns kommen
 
 Die vier häufigsten Einstiegspunkte:
@@ -61,6 +66,9 @@ Die vier häufigsten Einstiegspunkte:
 - **VMware-Ausstieg** — VCF-Subscription-Druck im gesamten Finanzsektor. Siehe **[VMware-Alternative](/de/alternativen/vmware-alternative/)**.
 
 Die meisten Engagements kombinieren zwei oder mehr dieser Auslöser.
+
+</div>
+</div>
 
 ---
 
@@ -102,6 +110,16 @@ Das Ergebnis ist ein schriftlicher Bericht mit Ausrichtung auf Regulator-Bereits
 ---
 
 ## Warum Aenix speziell für Finanzdienstleistungen
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Druck im Finanzsektor</b><div class="diagram__chips"><span>DORA-Durchsetzung</span><span>ICT-Drittanbieter-Konzentration</span><span>VMware-/VCF-Ausstieg</span></div></div>
+<div class="diagram__conn">adressiert durch</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack auf Kunden-Hardware</b><div class="diagram__chips"><span>VMs + Container</span><span>Eine Kubernetes-API</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Strukturelle Souveränität</b><div class="diagram__chips"><span>Kundenkontrollierte Schlüssel</span><span>Kundeneigene Audit-Trails</span><span>Datenresidenz</span></div></div>
+</div>
+</div>
 
 - **Regulator-bewusstes Engineering.** Unser Team hat direkte Erfahrung mit DORA / NIS2 / GDPR / sektoralem Regulator-Dialog. Wir liefern kein Consulting, das die regulatorische Ebene ignoriert.
 - **Kein Hyperscaler-Bias.** Wir sind kommerziell nicht mit AWS / Azure / GCP verbunden. Empfehlungen spiegeln substanzielle Souveränität wider, nicht Partner-Ökonomie.

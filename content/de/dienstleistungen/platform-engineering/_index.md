@@ -3,6 +3,8 @@ title: "Platform Engineering Services — interne Plattform für Ihre Entwickler
 description: "Platform Engineering ist 2026 keine Diskussion mehr — es ist eine operative Schicht, die reife Engineering-Organisationen als Kerninfrastruktur behandeln...."
 related_pages: ["/de/produkte/private-cloud", "/services/platform-readiness-assessment"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/platform-engineering/
 direct_answer: |
   **Platform Engineering Services bedeuten, dass ein erfahrenes Team eine interne Entwickler-Plattform (Internal Developer Platform) für Ihre Produkt-Teams aufbaut, betreibt oder beschleunigt — damit Time-to-Environment von Wochen auf Stunden sinkt und überlastete DevOps/SRE-Funktionen entlastet werden. Aenix ist das Team hinter Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0, das VMs und Container über eine Kubernetes-API (KubeVirt), eBPF-Networking (Cilium), LINSTOR/DRBD-Storage und Tenant-CRD-Mandantenfähigkeit kombiniert. Wir bieten drei Engagement-Modi: Platform Readiness Assessment (14-28 Tage), Build-Engagement (3-12 Monate) und Managed-Engagement, in dem Aenix die Plattform unter Vertrag betreibt.**
@@ -101,11 +103,24 @@ Pair Programming, Knowledge-Transfer, Runbook-Erstellung mit benannten Ownern. D
 
 Das Ergebnis ist eine Plattform, die tatsächlich gebaut und in Produktion mit realistischen Workloads getestet wurde — keine Referenz-Architektur und kein Slide-Deck.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Aenix-Engineers</b></div>
+<div class="diagram__conn">bauen</div>
+<div class="diagram__node"><b>Interne Entwickler-Plattform</b></div>
+<div class="diagram__conn">bedient</div>
+<div class="diagram__node"><b>Produkt-Teams</b></div>
+</div>
+</div>
+
 <!-- /BLOCK 3 -->
 
 ---
 
 <!-- BLOCK 4: COMMON FAILURE PATTERNS -->
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Wo Platform-Engineering-Programme häufig scheitern
 
@@ -126,6 +141,9 @@ Engineering-Exzellenz ohne Produkt-Orientierung erzeugt ein intern konsumiertes 
 </div>
 
 Diese Fehlermodi sind vorhersehbar und vermeidbar — die Engagement-Struktur verhindert jeden bewusst.
+
+</div>
+</div>
 
 <!-- /BLOCK 4 -->
 
@@ -202,11 +220,11 @@ Benannte Case Studies verfügbar im Discovery-Call, sofern Kunden-Berechtigungen
 
 ### Assessment (14-28 Tage)
 Festpreis. Schriftliches Deliverable, Ziel-Architektur, Phase-2-Roadmap.
-****
+**Auf Anfrage**
 
 ### Build- / Managed-Engagement
 Time-and-Materials oder Fixed-Scope, abhängig von der Scope-Klarheit. Phase-2-Implementation typischerweise 3-12 Monate; Managed-Services typischerweise jährlich.
-****
+**Auf Anfrage**
 
 </div>
 

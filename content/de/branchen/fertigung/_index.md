@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/aenix-platform/enterprise-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/manufacturing/
 direct_answer: |
   **Eine Cloud-Plattform für Fertigung vereint IT- und OT-Workloads, Industrie-4.0-Anwendungen und KI-getriebene Qualitätskontrolle auf einer Kubernetes-API — über Hauptquartier, regionale Standorte und Produktions-Floor-Edge hinweg, unter einem Operations-Modell. Sie richtet sich an Fertigungs-Organisationen in der EU, DACH und Zentralasien, die gleichzeitig Industrie 4.0, NIS2-Compliance für Critical-Product-Hersteller, Edge-Compute, Datensouveränität für industrielles IP und Air-Gap-Isolation für OT-Netzwerke benötigen. Aenix liefert dies auf Basis von Cozystack (Apache 2.0, CNCF-Projekt) — KubeVirt für VMs und Container, Cilium für eBPF-Networking, LINSTOR für Storage — produktisiert als Ænix Platform Enterprise Edition mit Multi-DC- und Edge-Architektur.**
@@ -64,6 +66,9 @@ Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentral
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Warum Fertigungs-Architektur anders ist
 
 - **Edge-Compute ist Kern, nicht optional** — Latenz-Anforderungen am Produktions-Floor
@@ -72,9 +77,22 @@ Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentral
 - **Lange Aufbewahrung** — Qualitäts-, Rückverfolgbarkeits- und Regulierungsdaten mit Anforderungen über mehrere Jahrzehnte
 - **Schutz von industriellem IP** — Konstruktionsdaten und Rezepturen haben eine höhere Vertraulichkeit als typische Unternehmensdaten
 
+</div>
+</div>
+
 ---
 
 ## Cozystack-Muster für die Fertigung
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>IT/OT-Workloads</b><div class="diagram__chips"><span>KubeVirt VMs</span><span>Container</span><span>KI-Qualitätskontrolle</span><span>Predictive Maintenance</span></div></div>
+<div class="diagram__conn">läuft auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Eine Kubernetes-API</span><span>Tenant-Mandantenfähigkeit</span><span>Air-Gapped-Deployment</span></div></div>
+<div class="diagram__conn">ausgerollt über</div>
+<div class="diagram__node"><b>Produktionsstandorte</b><div class="diagram__chips"><span>Hauptquartier</span><span>Regionale Standorte</span><span>Produktions-Floor-Edge</span></div></div>
+</div>
+</div>
 
 - Multi-Site-Betrieb: Zentrale + regional + Produktions-Floor-Edge unter einer Plattform
 - Air-Gapped-Deployment für die sensibelsten Workloads (industrielles IP)

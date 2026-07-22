@@ -4,6 +4,8 @@ description: "Für regulierte Workloads ist KI nicht mehr nur ein Hyperscaler-Th
 type: "page"
 related_pages: ["/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/products/cozystack"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /solutions/sovereign-ai/
 direct_answer: |
   **Souveräne KI-Infrastruktur bedeutet, dass GenAI, Inferenz, Fine-Tuning und Analytics auf kundeneigener Hardware in der gewählten Jurisdiktion und unter kundenkontrollierten Verschlüsselungsschlüsseln laufen — Trainingsdaten, Prompts, Completions und Embeddings verlassen den Perimeter nie. Sie richtet sich an Finanzdienstleister, Gesundheitswesen, öffentlichen Sektor und KI-Plattform-Betreiber, deren Datenklasse, Regulator (DORA, NIS2, sektorale Vorgaben) oder Inferenz-Ökonomie Hyperscaler-KI-Services nicht praktikabel macht. Aenix baut und betreibt diese Infrastruktur auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0: eine Kubernetes-native KI-Plattform mit Multi-Tenant-GPU-Scheduling für A100, H100, H200, L40S und Blackwell, lokal betriebenen Open-Weight-Modellen (Llama, Mistral, Qwen, DeepSeek, Phi) und voller Kundengovernance.**
@@ -81,6 +83,16 @@ Trifft keiner dieser Punkte zu, ist souveräne KI Over-Engineering. Treffen drei
 
 ## Was souveräne KI tatsächlich bedeutet
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>GenAI, Inferenz, Fine-Tuning</b><div class="diagram__chips"><span>Open-Weight-Modelle</span><span>Llama, Mistral, Qwen</span></div></div>
+<div class="diagram__conn">laufen auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack auf kundeneigener Hardware</b><div class="diagram__chips"><span>AI/ML Edition</span><span>A100 / H100 / H200 / L40S / Blackwell</span><span>kundenkontrollierte Schlüssel</span></div></div>
+<div class="diagram__conn">halten</div>
+<div class="diagram__node"><b>Daten im eigenen Perimeter</b><div class="diagram__chips"><span>verlassen den Perimeter nie</span><span>gewählte Jurisdiktion</span></div></div>
+</div>
+</div>
+
 <div class="grid-2x2">
 
 **1. Das Modell läuft auf Ihrer Hardware**
@@ -105,6 +117,9 @@ Das ist keine "private KI" als Marketing-Tapete für einen SaaS-Endpunkt mit ein
 
 <!-- BLOCK 4: WHERE COMMON APPROACHES FAIL -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wo gängige KI-Plattform-Ansätze am Souveränitätstest scheitern
 
 <div class="gap-cards-2">
@@ -124,6 +139,9 @@ Ein Team betreibt vLLM oder llama.cpp auf ein paar Bare-Metal-Servern und nennt 
 </div>
 
 Die ehrliche Antwort ist meist eine Kubernetes-native KI-Plattform auf kundenkontrollierter Hardware mit einem definierten Betriebsmodell. Dieses Muster haben wir für KI/GPU-Betreiber und regulierte Unternehmen in Produktion ausgeliefert.
+
+</div>
+</div>
 
 <!-- /BLOCK 4 -->
 
@@ -212,11 +230,11 @@ Das Sovereign-AI-Engagement läuft in zwei Phasen.
 
 ### Assessment (14- oder 28-tägig)
 Architekturoptionen, GPU-Strategie, Souveränitätskontrollen, Betriebsmodell, Phase-2-Roadmap. Festpreis.
-****
+**Auf Anfrage**
 
 ### Phase-2-Implementierung
 Von Aenix gelieferter Aufbau der souveränen KI-Plattform. Fester Umfang oder Time-and-Materials, je nach Anzahl und Komplexität der Workloads. Typischerweise 3-9 Monate Laufzeit.
-**{{PRICING_PHASE_2}}**
+**Auf Anfrage**
 
 </div>
 

@@ -7,19 +7,32 @@
   Pass the page as context: {{ partial "seo/geo-intro.html" . }}
 */}}
 {{- $daImg := .Params.direct_answer_image -}}
+{{- $chev := `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>` -}}
+{{- $toggle := printf `<button type="button" class="answer-clamp__toggle" aria-expanded="false"><span class="answer-clamp__label">Show more</span>%s</button>` $chev -}}
 {{- with .Params.direct_answer -}}
 {{- if $daImg }}
 <div class="seo-direct-answer answer-split">
-  <div class="answer-split__text">
-    {{ . | markdownify }}
+  <div class="answer-split__text answer-clamp">
+    <div class="answer-clamp__body">{{ . | markdownify }}</div>
+    {{ $toggle | safeHTML }}
   </div>
   <figure class="answer-split__media">
-    <img src="{{ $daImg }}" alt="{{ $.Params.direct_answer_image_alt | default $.Title }}" loading="lazy">
+    <div class="browser-frame">
+      <div class="browser-frame__bar"><span class="browser-frame__dots"><span></span><span></span><span></span></span></div>
+      {{- $ip := printf "static%s" $daImg -}}
+      {{- if fileExists $ip -}}
+      {{- $dims := imageConfig $ip }}
+      <img src="{{ $daImg }}" width="{{ $dims.Width }}" height="{{ $dims.Height }}" alt="{{ $.Params.direct_answer_image_alt | default $.Title }}">
+      {{- else }}
+      <img src="{{ $daImg }}" alt="{{ $.Params.direct_answer_image_alt | default $.Title }}">
+      {{- end }}
+    </div>
   </figure>
 </div>
 {{- else }}
-<div class="seo-direct-answer">
-  {{ . | markdownify }}
+<div class="seo-direct-answer answer-clamp">
+  <div class="answer-clamp__body">{{ . | markdownify }}</div>
+  {{ $toggle | safeHTML }}
 </div>
 {{- end }}
 {{- end -}}

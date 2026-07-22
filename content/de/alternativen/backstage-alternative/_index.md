@@ -6,6 +6,8 @@ related_pages:
   - /de/produkte/aenix-platform/idp-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /alternatives/backstage-alternative/
 direct_answer: |
   **Eine Backstage-Alternative im engeren Sinne gibt es nicht — Backstage (CNCF Incubating) ist ein Service-Katalog und Developer-Portal, also die UI- und Discoverability-Schicht, nicht die Plattform selbst. Wer Backstage adoptiert hat und trotzdem auf wochenlange Self-Service-Pfade wartet, hat ein Plattform-Problem, kein Portal-Problem. Cozystack, das Open-Source-Fundament hinter der Ænix Platform, liefert die fehlende Schicht darunter: Kubernetes-native Virtualisierung (KubeVirt), Multi-Tenancy über die Tenant-CRD, Managed Services, Cilium-Networking, LINSTOR-Storage und Observability. Backstage kann als Front-End integriert werden; die produktisierte Foundation darunter ist es, die eine Internal Developer Platform funktionieren lässt.**
@@ -45,6 +47,16 @@ faq:
 
 Cozystack liefert die zugrunde liegende Plattform, auf der Backstage (oder jedes Developer-Portal) aufsitzt — Kubernetes-native Virtualisierung, Multi-Tenancy, Managed Services, Observability — Open Source und operativ kohärent.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Backstage — Developer-Portal</b><div class="diagram__chips"><span>Service-Katalog</span><span>langsame Self-Service-Pfade</span></div></div>
+<div class="diagram__conn">sitzt auf</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform IDP Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Tenant-CRD</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">lässt funktionieren</div>
+<div class="diagram__node"><b>Internal Developer Platform</b><div class="diagram__chips"><span>GitLab-Automation</span><span>Golden-Path-Templates</span></div></div>
+</div>
+</div>
+
 > **Passt zu:** **[Ænix Platform IDP Edition](/de/produkte/aenix-platform/idp-edition/)** — vollständige Internal Developer Platform mit Cloud-Foundation darunter. GitLab-Automation, Argo-CD-Workflows, Golden-Path-Templates. Die Backstage-UI kann als Front-End integriert werden, wenn der Kunde das bevorzugt; die Foundation darunter ist es, die die IDP funktionieren lässt.
 
 <div class="cta-row">
@@ -67,6 +79,9 @@ Wenn keiner dieser Punkte zutrifft und Backstage für Sie funktioniert — bleib
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wie eine "Alternative" für verschiedene Fälle aussieht
 
 | Fall | Empfehlung |
@@ -76,6 +91,9 @@ Wenn keiner dieser Punkte zutrifft und Backstage für Sie funktioniert — bleib
 | Leichtgewichtiges Portal, kleineres Team | Markdown-Dokumentationsseite mit YAML-Katalog in Git |
 | Backstage, aber andere Meinungen nötig | Backstage mit Custom-Plugins (weiterhin Backstage, aber angepasst) |
 | Kein Portal wirklich nötig | Keins bauen — IaC-Repo + gute Dokumentation reichen für viele Organisationen unter 100 Engineers |
+
+</div>
+</div>
 
 ---
 

@@ -11,6 +11,8 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Data sovereignty for cloud infrastructure means proving, with evidence, that data lives in the jurisdiction a regulator requires at every layer — production storage, replicas, backups, observability, and CI/CD artifacts — with encryption keys held by the data owner and supplier dependencies transparent past the first hop. It is the operational requirement behind DORA, NIS2, GDPR, sectoral data-residency rules, and EU member-state sovereign-cloud mandates. Aenix runs a structured engagement that maps where each data class actually lives, identifies gaps, and defines sovereignty-by-design for regulated organizations. Aenix is the company behind Cozystack, an Apache 2.0 CNCF project that runs on the customer's chosen hardware in the chosen jurisdiction, with the customer holding cluster-level access — making sovereignty structural rather than contractual.**
 quick_facts:
@@ -86,6 +88,9 @@ If you can name a specific regulator, sectoral rule, or procurement clause that 
 
 <!-- BLOCK 3: WHAT SOVEREIGNTY ACTUALLY REQUIRES -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What "data sovereignty" actually requires of your architecture
 
 <div class="grid-2x2">
@@ -105,6 +110,9 @@ Audit trails must be exportable in regulator-consumable formats, retained per th
 </div>
 
 For practical detail with control-level checks, see **[data residency requirements 2026](/blog/2026/05/data-residency-requirements-2026/)**.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -139,6 +147,16 @@ Surfacing these gaps under structured assessment is cheaper than surfacing them 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
 ## How Aenix helps
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Sovereignty requirement</b><div class="diagram__chips"><span>Data-residency at every layer</span><span>Key custody</span><span>Chosen jurisdiction</span></div></div>
+<div class="diagram__conn">met by</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Customer's chosen hardware in the chosen jurisdiction</span><span>Customer-controlled keys at every layer</span><span>Cluster-level access</span></div></div>
+<div class="diagram__conn">makes it</div>
+<div class="diagram__node"><b>Structural, not contractual</b><div class="diagram__chips"><span>Audit-readiness</span></div></div>
+</div>
+</div>
 
 The data-sovereignty engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**, with the sovereignty-and-regulator-gap workstream as primary focus. The 14- or 28-day engagement produces:
 
@@ -213,11 +231,11 @@ The sovereignty-emphasized engagement runs as a Platform Readiness Assessment.
 
 ### 14-day (focused sovereignty scope)
 Sovereignty workstream depth, single regulatory framework, single domain. Data-residency map, key-custody review, supplier-chain (to second hop), remediation plan.
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (full sovereignty + adjacent)
 Sovereignty + adjacent regulatory overlap (DORA / NIS2 / sectoral / GDPR mapping). Multi-BU stakeholder interviews. Vendor shortlisting where applicable. Phase 2 implementation roadmap.
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 

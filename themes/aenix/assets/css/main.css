@@ -41,6 +41,7 @@
   /* Spacing */
   --section-pad: 6rem;
   --container-max: 1200px;
+  --content-max: 1024px; /* single content track width (prose caps narrower for readability) */
   --gap-sm: 0.75rem;
   --gap-md: 1.5rem;
   --gap-lg: 2.5rem;
@@ -64,7 +65,7 @@
   --duration: 0.25s;
 
   /* Gradient */
-  --gradient-brand: linear-gradient(135deg, #D4F6B2, #01A5FF, #661BE1);
+  --gradient-brand: linear-gradient(135deg, #94DEE0, #01A5FF, #661BE1);
   --gradient-text: linear-gradient(135deg, #3BB8FF, #01A5FF, #A78BFA);
   --gradient-subtle: linear-gradient(135deg, rgba(1,165,255,0.1), rgba(102,27,225,0.1));
 
@@ -1107,7 +1108,7 @@ img { max-width: 100%; height: auto; display: block; }
    ========================================================================== */
 .page-content {
   padding: 3rem 0 4rem;
-  max-width: 800px;
+  max-width: var(--content-max);
   margin: 0 auto;
 }
 .page-content img {

@@ -3,6 +3,8 @@ title: "AI platform build — custom AI infrastructure for startups and enterpri
 description: "AI startups and AI-heavy enterprises in 2026 face the same architectural choice: rent inference at hyperscaler economics, or build dedicated infrastructure..."
 related_pages: ["/solutions/sovereign-ai", "/products/aenix-platform/ai-ml-edition/", "/products/cozystack", "/industries/financial-services"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **An AI platform build is an end-to-end engagement in which Aenix designs and operates dedicated GPU infrastructure for organizations running sustained AI workloads — 24/7 inference, fine-tuning, and training — where renting hyperscaler GPU capacity becomes too expensive over time. It is built for AI startups, GPU operators, research-heavy organizations, telcos, and enterprises with regulated data that cannot send it to external model providers. Aenix delivers the platform on Cozystack, an Apache 2.0 CNCF project that runs both VM and container GPU workloads on one Kubernetes API via KubeVirt, with validated support for A100, H100, H200, L40S, and Blackwell GPUs, inference serving (vLLM, Triton), multi-tenant model serving, and sovereignty controls for regulated data.**
 quick_facts:
@@ -56,7 +58,20 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What we deliver
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>AI platform build</b><div class="diagram__chips"><span>Discovery + workload-fit</span><span>Phase 2 build</span><span>Managed operations</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack GPU platform</b><div class="diagram__chips"><span>KubeVirt</span><span>VM + container GPU workloads</span><span>One Kubernetes API</span></div></div>
+<div class="diagram__conn">runs</div>
+<div class="diagram__node"><b>AI workloads</b><div class="diagram__chips"><span>Inference</span><span>Fine-tuning</span><span>Training</span></div></div>
+</div>
+</div>
 
 - **Cozystack-based AI platform** — KubeVirt + Kubernetes for both VM and container GPU workloads
 - **GPU validated** — A100, H100, H200, L40S, Blackwell
@@ -64,6 +79,9 @@ faq:
 - **Multi-tenant model serving** — for customer-facing AI products
 - **Sovereignty controls** for regulated data classes
 - **Operations model** for 24×7 GPU clusters
+
+</div>
+</div>
 
 ---
 
@@ -77,7 +95,9 @@ For sovereignty-emphasized workloads see **[Sovereign AI](/solutions/sovereign-a
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[AI platform startup playbook](/blog/2026/05/build-ai-platform-for-startups/)**
 - **[Sovereign AI](/solutions/sovereign-ai/)** — sovereignty-led AI infrastructure

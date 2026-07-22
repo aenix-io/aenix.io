@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/aenix-platform/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/cloud-strategy-consultancy/
 direct_answer: |
   **Cloud-Strategie-Beratung beantwortet, welche Workloads in welche Umgebung gehören (Public, Private, Hybrid), was sie über alle Substrate hinweg wirklich kosten und in welcher Reihenfolge migriert wird. Aenix führt Cloud-Strategie als Teil seines Platform Readiness Assessments durch — geleitet von Architekten und Senior-Engineers, die Plattformen tatsächlich betreiben, nicht von Management-Beratern. Das Ergebnis ist ein umsetzbarer schriftlicher Bericht mit benannten Workloads, ehrlichem TCO-Modell, Souveränitäts-/Regulator-Lücken und einer Implementations-Roadmap, kein 200-seitiger Transformations-Plan. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und kann die empfohlene Architektur anschließend selbst umsetzen.**
@@ -54,6 +56,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Was unser Cloud-Strategie-Engagement abdeckt
 
 - **Workload-Klassifizierung** — was passt zu welchem Substrat (public, private, hybrid)
@@ -62,7 +67,20 @@ faq:
 - **Migrations-Sequenzierung** — was bewegt sich zuerst, was bleibt, was ist hybrid
 - **Phase-2-Implementations-Roadmap** — von Aenix lieferbarer Build-Plan
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cloud-Strategie-Engagement</b><div class="diagram__chips"><span>Architekten und Senior-Engineers</span><span>Teil des Platform Readiness Assessments</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Umsetzbarer schriftlicher Bericht</b><div class="diagram__chips"><span>Benannte Workloads (Public, Private, Hybrid)</span><span>Ehrliches TCO-Modell</span><span>Souveränitäts-/Regulator-Lücke</span></div></div>
+<div class="diagram__conn">mündet in</div>
+<div class="diagram__node"><b>Phase-2-Implementations-Roadmap</b><div class="diagram__chips"><span>Von Aenix lieferbares Build-Engagement</span><span>Passende Ænix Platform Edition</span></div></div>
+</div>
+</div>
+
 Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Strategie-Schwerpunkt. Das Ergebnis ist ein schriftlicher Executive-Bericht.
+
+</div>
+</div>
 
 ---
 

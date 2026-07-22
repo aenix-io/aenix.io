@@ -4,6 +4,7 @@ description: "Ænix Platform: turnkey cloud-in-a-box built on open-source Cozyst
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
+hide_inline_ctas: true
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Aenix Platform console built on Cozystack"
 direct_answer: |
@@ -46,13 +47,24 @@ faq:
   <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="https://cozystack.io">Cozystack open source →</a>
 </div>
+
 ---
 
 ## What Ænix Platform adds over open-source Cozystack
 
 Cozystack is the engine. Ænix Platform is the car — turnkey cloud with everything a real operator needs:
 
-![Ænix Platform console — managed tenant Kubernetes clusters](/images/uploads/2026/04/cozystack-managed-kubernetes.png)
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Hosting panel</span><span>Billing</span><span>Portals</span><span>WHMCS</span><span>Enterprise SLA</span></div></div>
+<div class="diagram__conn">productizes</div>
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Tenant CRD</span><span>Service wizards</span><span>Dashboard / API</span></div></div>
+<div class="diagram__conn">runs on</div>
+<div class="diagram__node"><b>Kubernetes-native core</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium eBPF</span><span>LINSTOR / DRBD</span></div></div>
+<div class="diagram__conn">on</div>
+<div class="diagram__node"><b>Talos Linux</b><div class="diagram__chips"><span>Customer-controlled hardware</span></div></div>
+</div>
+</div>
 
 
 | Layer | What it is |
@@ -73,6 +85,9 @@ Cozystack is the engine. Ænix Platform is the car — turnkey cloud with everyt
 | **Migration tooling and expertise** | Modules for migration from VMware, OpenStack, OpenNebula, Virtuozzo |
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Five editions
 
@@ -150,6 +165,9 @@ AI platform automation out of the box: standard AI workloads, service APIs, read
 
 </div>
 
+</div>
+</div>
+
 ---
 
 ## Entry tier — Pure Cozystack with Ænix Support
@@ -219,12 +237,19 @@ Yes — up to 40% margin on Ænix Platform sales for resellers, integrators, and
 
 ---
 
+<div class="lead-magnet-split">
+<div>
+
 ## How to start
 
 Book a discovery call. We'll discuss your platform priorities, regulatory context, scope, and which Ænix Platform edition fits.
 
+</div>
+
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
+
 </div>
 
 ---

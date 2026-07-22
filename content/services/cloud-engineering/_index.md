@@ -3,6 +3,8 @@ title: "Cloud engineering services — practical engineering across hyperscaler,
 description: "\"Cloud engineering\" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Aenix engagement applies senior..."
 related_pages: ["/services/platform-engineering", "/services/devops-consulting", "/services/platform-readiness-assessment", "/products/aenix-platform/", "/products/cozystack"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cloud engineering services cover the full spectrum of technical work needed to design, automate, and operate cloud infrastructure across public hyperscaler, hybrid, and on-premises environments. Aenix delivers these services with senior engineers rather than advisory-only consultants, spanning cloud architecture review, infrastructure-as-code, observability, CI/CD and GitOps, Kubernetes platform decisions, network and identity, FinOps, and compliance posture for DORA and NIS2. The work is aimed at CTOs, VP Engineering, and platform teams that need execution capacity, not just recommendations. When scope expands into a productized private cloud, the engagement pairs with Ænix Platform, the commercial offering built on Cozystack, an Apache 2.0 CNCF project unifying virtual machines and containers on one Kubernetes API.**
 quick_facts:
@@ -46,6 +48,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What's covered
 
 - Cloud architecture review and target design (public, private, hybrid)
@@ -59,9 +64,22 @@ faq:
 
 For broader scope see **[Platform Engineering services](/services/platform-engineering/)**. For DevOps-specific scope see **[DevOps consulting](/services/devops-consulting/)**.
 
+</div>
+</div>
+
 ---
 
 ## Engagement modes
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Architecture review</b><div class="diagram__chips"><span>5-10 days</span><span>Target design</span><span>Public / private / hybrid</span></div></div>
+<div class="diagram__conn">scales to</div>
+<div class="diagram__node diagram__node--brand"><b>Implementation engagement</b><div class="diagram__chips"><span>1-6 months</span><span>Infrastructure-as-code</span><span>CI/CD and GitOps</span></div></div>
+<div class="diagram__conn">continues as</div>
+<div class="diagram__node"><b>Managed engagement</b><div class="diagram__chips"><span>Ongoing operations</span></div></div>
+</div>
+</div>
 
 - Architecture review (5-10 days)
 - Implementation engagement (1-6 months)
@@ -69,7 +87,9 @@ For broader scope see **[Platform Engineering services](/services/platform-engin
 
 For methodology see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

@@ -2,6 +2,9 @@
 public/
 resources/_gen/
 
+# Claude Code ephemeral worktrees (not part of the site)
+.claude/worktrees/
+
 # Hugo environment file
 .hugo_build.lock
 SESSION_LOG.md

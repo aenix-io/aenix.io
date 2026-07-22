@@ -3,6 +3,8 @@ title: "Cloud platform for hosting providers — modernize beyond VPS, launch cl
 description: "Hosting providers in 2026 face customer demand for cloud capabilities competitive with hyperscalers but with the customer-relationship advantages and..."
 related_pages: ["/services/public-cloud-builder", "/services/white-label-cloud", "/products/aenix-platform/isp-edition/", "/partners/", "/products/cozystack"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **A cloud platform for hosting providers lets a traditional shared, VPS, or dedicated-server business launch hyperscaler-class cloud products while keeping its direct customer relationships, pricing flexibility, and margin. Aenix delivers this with Cozystack, an open-source Kubernetes-native platform that runs VMs (via KubeVirt) and containers on one API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenant isolation. It is productized as the Ænix Platform ISP Edition, with WHMCS-integrated billing, tenant lock and suspension, a service catalog beyond VMs (managed databases, S3, GPU), and migration tooling from VMware, OpenStack, and Virtuozzo. Apache 2.0 licensing means no per-CPU fees, so hosting margin is preserved.**
 quick_facts:
@@ -55,6 +57,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What hosting providers come to us for
 
 - **Modernization from VPS to cloud product** — multi-tenant Kubernetes-native platform
@@ -64,6 +69,9 @@ faq:
 - **Sovereign cloud product launches** — for regional markets
 
 For sales-led engagement see **[public cloud builder](/services/public-cloud-builder/)** and **[white-label cloud](/services/white-label-cloud/)**.
+
+</div>
+</div>
 
 ---
 
@@ -75,11 +83,25 @@ For sales-led engagement see **[public cloud builder](/services/public-cloud-bui
 - **Service catalog** — far beyond VMs (managed DBs, S3, GPU)
 - **Operational simplicity** — single platform, single team
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>WHMCS billing</b><div class="diagram__chips"><span>Two integration modes</span><span>Tenant lock/suspension</span></div></div>
+<div class="diagram__conn">provisions through</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b><div class="diagram__chips"><span>cozyportal</span><span>Migration tooling</span></div></div>
+<div class="diagram__conn">exposes</div>
+<div class="diagram__node"><b>Cozystack service catalog</b><div class="diagram__chips"><span>VMs</span><span>Managed databases</span><span>S3</span><span>GPU</span></div></div>
+<div class="diagram__conn">isolates customers via</div>
+<div class="diagram__node"><b>Tenant CRD</b><div class="diagram__chips"><span>Production-grade isolation</span></div></div>
+</div>
+</div>
+
 Production references: regional hosting providers running Ænix Platform ISP Edition; tier-1 European bank deployments under NDA until mid-2027.
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Public cloud builder services](/services/public-cloud-builder/)** — engagement
 - **[White-label cloud](/services/white-label-cloud/)** — branded for resellers

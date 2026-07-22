@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/aenix-platform/public-cloud-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/sovereign-cloud-builder/
 direct_answer: |
   **Ein Sovereign Cloud Builder gestaltet und liefert ein souveränes Cloud-Produkt für regulierte Märkte, in denen Datensouveränität 2026 beschaffungspflichtig ist (EU-Mitgliedstaaten, Kasachstan, mehrere APAC-Jurisdiktionen). Aenix baut solche Produkte auf Cozystack (CNCF-Projekt, Apache 2.0) für Regierungen, quasi-öffentliche Entitäten, Telcos und regionale Operatoren. Der Fokus liegt auf substantieller Souveränität statt Marketing-Claims: kundenkontrollierte Verschlüsselungsschlüssel auf jeder Datenschicht, Lieferketten-Transparenz, audit-bereites unveränderbares Logging, protokollierter und zeitlich begrenzter Anbieter-Zugang sowie eine Air-Gap-Option. Cozystack bündelt VMs und Container (KubeVirt), eBPF-Networking (Cilium), repliziertes Storage (LINSTOR/DRBD) und CRD-basierte Mandantenfähigkeit auf einer Kubernetes-API.**
@@ -63,7 +65,20 @@ Aenix baut souveräne Cloud-Produkte auf Cozystack für Regierungen, quasi-öffe
 - **Regionale Operatoren** in Jurisdiktionen mit expliziten Souveränitätsmandaten
 - **Quasi-öffentliche Entitäten** (Transport, Energie, Banking-nah), die eine sektorale souveräne Cloud bauen
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b></div>
+<div class="diagram__conn">produktisiert zu</div>
+<div class="diagram__node"><b>Ænix Platform (Enterprise / Public Cloud Edition)</b></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Souveränes Cloud-Produkt</b></div>
+</div>
+</div>
+
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Was souveräne Cloud tatsächlich erfordert
 
@@ -77,6 +92,9 @@ Aenix baut souveräne Cloud-Produkte auf Cozystack für Regierungen, quasi-öffe
 - **Keine Phone-Home-Telemetrie** — ausschließlich Opt-in
 
 Das sind Differenzierungs-Features für ein souveränes Cloud-Produkt. "Souveräne" Hyperscaler-Regionen können sie substantiell nicht erreichen.
+
+</div>
+</div>
 
 ---
 

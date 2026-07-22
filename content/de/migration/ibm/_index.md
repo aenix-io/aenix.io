@@ -15,6 +15,8 @@ secondary_keywords:
   - "Private Cloud für Banken"
 images: ["img/og/og-ibm-migration-de.png"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /migration/ibm/
 related_pages:
   - /de/alternativen/openshift-alternative
@@ -74,7 +76,7 @@ Aenix führt IBM-AIX/Power-Migrationen End-to-End durch. Dieselben Ingenieure, d
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Banken und Unternehmen (Air-Gap, Billing, gemanagte Migration). Sie ersetzen speziell IBM Cloud Pak / OpenShift? Siehe die **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/preise/">Preise & Tiers ansehen →</a>
 </div>
 
@@ -123,6 +125,18 @@ POWER-Frames werden außer Betrieb genommen, sobald Kohorten abgeschlossen sind;
 
 **Ehrlicher Scoping-Hinweis — Endianness.** AIX ist Big-Endian auf POWER; x86 ist Little-Endian. Es gibt kein Binary-Lift-and-Shift. Moderne Microservices und Standard-Datenbank-/Middleware ziehen sauber um; Legacy-Monolithen brauchen einen Re-Architecture-Schritt. Wir trennen beide Klassen im Assessment, statt es mitten im Cutover zu entdecken.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>IBM AIX / PowerVM auf POWER</b><div class="diagram__chips"><span>LPARs</span><span>Lizenzierung pro Socket</span><span>SWMA/HWMA</span></div></div>
+<div class="diagram__conn">verlagert über</div>
+<div class="diagram__node"><b>Kohortenweiser Cutover</b><div class="diagram__chips"><span>Microservices zuerst</span><span>VMs via KubeVirt</span><span>Parallelbetrieb-Validierung</span></div></div>
+<div class="diagram__conn">migriert auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack auf Commodity-x86</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">abgeschlossen mit</div>
+<div class="diagram__node"><b>POWER-Frames außer Betrieb</b><div class="diagram__chips"><span>~40% TCO-Reduktion über drei Jahre</span><span>Oracle auf dediziertem Bare-Metal</span></div></div>
+</div>
+</div>
+
 <!-- /BLOCK 3 -->
 
 ---
@@ -144,13 +158,16 @@ Für Entscheider außerhalb der IT zählt die Sprache der Kosten. Das folgende M
 
 {{< factoid number="~40%" label="illustrative TCO-Reduktion über drei Jahre — durch Commodity-x86 statt POWER, null Plattform-Lizenzkosten und Verkleinern des Oracle-auf-Power-Footprints" source="Aenix-TCO-Modell, Szenario mittelgroße Bank, List-Price-Größenordnung" >}}
 
-Die Ænix-Subscription ist vergleichbar mit der reinen IBM-Maintenance, enthält aber bereits 24×7-Support, Enterprise-Module, Installation, Schulung und Migration — ohne separate Einmalgebühren. Rechnen Sie Ihre eigenen Zahlen mit dem **[ROI-Rechner](/de/preise/)** oder in einem **[Discovery-Gespräch](/contact/)**.
+Die Ænix-Subscription ist vergleichbar mit der reinen IBM-Maintenance, enthält aber bereits 24×7-Support, Enterprise-Module, Installation, Schulung und Migration — ohne separate Einmalgebühren. Rechnen Sie Ihre eigenen Zahlen mit dem **[ROI-Rechner](/de/preise/)** oder in einem **[Discovery-Gespräch](/de/kontakt/)**.
 
 <!-- /BLOCK 4 -->
 
 ---
 
 <!-- BLOCK 5: ORACLE -->
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Oracle: die Lizenzfalle, die es zu vermeiden gilt
 
@@ -161,6 +178,9 @@ Der teuerste Fehler bei einem Power-zu-Kubernetes-Umzug ist, produktives Oracle 
 - **Der saubere Weg:** produktives Oracle auf dedizierter, separat lizenzierter Bare-Metal-Hardware halten und als **externe Anwendung** (Helm-Chart / Operator mit Verbindungspunkten und Credentials via External Secret Reference) über ein privates Netz anbinden. Tenant-Workloads erreichen es wie jeden Managed-Endpoint; die Datenbank wird nie in den Cluster gezogen.
 
 Das entspricht der Praxis der meisten Banken und verdichtet den lizenzierbaren Footprint, sobald Nicht-Oracle-Workloads POWER verlassen. (Oracles Partitioning Policy ist "educational, not contractual" — das endgültige Modell mit Oracle und Ihrer Rechtsabteilung abstimmen.)
+
+</div>
+</div>
 
 <!-- /BLOCK 5 -->
 
@@ -270,7 +290,7 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 <a id="discovery"></a>
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Mit einem Assessment starten →</a>
 </div>
 

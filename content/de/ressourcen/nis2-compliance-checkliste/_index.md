@@ -7,6 +7,8 @@ related_pages:
   - /de/ressourcen/dora-compliance-checkliste
   - /de/produkte/aenix-platform/enterprise-edition/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Die NIS2-Compliance Cloud-Architektur-Checkliste von Aenix ist eine kostenlose 35-Punkt-Checkliste für wesentliche und wichtige Entitäten, die ihre Cloud-Infrastruktur auf die NIS2-Richtlinie ausrichten müssen. Sie deckt die zehn Risiko-Management-Maßnahmen aus Artikel 21, die Vorfall-Reporting-Timelines aus Artikel 23 (24 Stunden, 72 Stunden, 1 Monat), Lieferketten-Sicherheit, Geschäftskontinuität (RTO/RPO), MFA, Verschlüsselung und Vulnerability-Management ab. Sie richtet sich an CISOs, IT-Leiter und Compliance-Teams in Energie, Banking, Gesundheitswesen, öffentlicher Verwaltung und bei MSPs. Die Ænix Platform Enterprise Edition auf Basis von Cozystack setzt diese Kontrollen technisch um: Tenant-CRD-Mandantenfähigkeit mit Cilium-NetworkPolicy-Segmentierung, kundenkontrollierte Verschlüsselung und audit-bereites Logging.**
 
@@ -45,7 +47,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[NIS2-Checkliste herunterladen (PDF)]
+<p class="lead-magnet-form__note">NIS2-Checkliste herunterladen (PDF)</p>
 </div>
 
 ---

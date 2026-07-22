@@ -8,6 +8,8 @@ related_pages:
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/alternativen/vmware-alternative
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Die CloudStack-zu-Cozystack-Migration ist ein von Aenix durchgeführter Modernisierungspfad von Apache CloudStack hin zu einer Kubernetes-nativen Foundation auf Basis von Cozystack. Sie richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds, die ihre etablierten CloudStack-Estates auf eine offene, standardisierte Plattform überführen wollen. Aenix migriert VM-Images von KVM/XenServer zu KubeVirt, überführt CloudStack-Accounts und -Projects in das Tenant-CRD-Modell und re-architektiert Storage und Networking auf Kubernetes. Cozystack ist Apache-2.0-lizenziert (kein Core-basiertes Lizenzmodell) und ein CNCF-Projekt. Aenix bietet hierfür die Ænix Platform ISP Edition sowie Migrations-Services an.**
 
@@ -47,7 +49,7 @@ faq:
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---
@@ -57,6 +59,16 @@ faq:
 VM-Image-Migration: KVM/XenServer → KubeVirt. Tenant-Modell: CloudStack-Accounts/Projects → Tenant CRD. Storage und Network re-architected auf Kubernetes-nativer Foundation.
 
 **Typischer Ablauf:** Architektur-Review → Parallel-Deployment → Workload-Migration → CloudStack-Decommission. 9-15 Monate für mittelgroße Estates.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Apache CloudStack</b><div class="diagram__chips"><span>KVM/XenServer-Images</span><span>Accounts/Projects</span></div></div>
+<div class="diagram__conn">migriert via</div>
+<div class="diagram__node"><b>Migrationspfad</b><div class="diagram__chips"><span>VM-Images zu KubeVirt</span><span>Accounts/Projects zu Tenant CRD</span></div></div>
+<div class="diagram__conn">überführt auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Kubernetes-native Foundation</span><span>Apache 2.0</span></div></div>
+</div>
+</div>
 
 ---
 

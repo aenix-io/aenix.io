@@ -4,6 +4,8 @@ description: "Die meisten Unternehmen in 2026 sind bereits Hybrid — Public Clo
 type: "page"
 related_pages: ["/de/loesungen/cloud-repatriation", "/de/produkte/private-cloud", "/products/cozystack"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /solutions/hybrid-cloud-platform/
 direct_answer: |
   **Hybrid Cloud bedeutet, mehrere Substrate — Public Cloud, Private Cloud und On-Prem oder Edge — als eine kohärente Plattform zu betreiben statt als fragmentierten Flickenteppich. Aenix baut und betreibt Hybrid-Cloud-Plattformen auf Cozystack: Kubernetes-nativ und mandantenfähig, mit konsistenten Operations über Kunden-Hardware, Public-Cloud-Regionen und Edge-Sites. Eine Control Plane verbindet On-Prem mit VMware, OpenNebula, OpenShift und Public Clouds. Gleiche Kubernetes-API, gleiche Observability und gleiche Deployment-Muster über alle Substrate hinweg verhindern operative Drift und Vendor-Lock-in. Geeignet für Unternehmen und Telcos, die elastische Workloads in der Public Cloud und stetige, regulierte oder KI-Workloads On-Prem fahren.**
@@ -80,6 +82,16 @@ Wenn die meisten Workloads an einen Ort gehören — komplett Public Cloud oder 
 
 ## Was Hybrid Cloud zum Funktionieren bringt
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Eine Control Plane</b><div class="diagram__chips"><span>Cozystack</span><span>gleiche Kubernetes-API</span></div></div>
+<div class="diagram__conn">verbindet On-Prem mit</div>
+<div class="diagram__node"><b>VMware, OpenNebula, OpenShift</b><div class="diagram__chips"><span>Enterprise Edition</span></div></div>
+<div class="diagram__conn">und betreibt</div>
+<div class="diagram__node"><b>Public Clouds</b><div class="diagram__chips"><span>elastische Workloads</span></div></div>
+</div>
+</div>
+
 <div class="grid-2x2">
 
 **1. Eine Plattform, mehrere Substrate**
@@ -102,6 +114,9 @@ Ein einziges Plattform-Team, einheitliche Runbooks, konsistente Observability, e
 
 <!-- BLOCK 4: COMMON FAILURES -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Woran die meisten "hybriden" Architekturen tatsächlich scheitern
 
 <div class="gap-cards-2">
@@ -118,6 +133,9 @@ Ein einzelner Anbieter verkauft eine einheitliche Hybrid-Plattform, die auf sein
 **Operative Divergenz**
 Derselbe Workload läuft in der Public Cloud anders als on-prem. Operative Schulden häufen sich an; die Portabilität verschlechtert sich mit der Zeit.
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 4 -->
@@ -183,10 +201,10 @@ Umsetzung in Phase 2: Aenix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 Tage)
-****
+**Auf Anfrage**
 
 ### Umsetzung
-****
+**Auf Anfrage**
 
 </div>
 

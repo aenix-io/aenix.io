@@ -4,6 +4,8 @@ description: "A 12-page decision guide for organizations evaluating sovereign AI
 type: "page"
 related_pages: ["/solutions/sovereign-ai", "/services/ai-platform-build", "/products/aenix-platform/ai-ml-edition/"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **The Sovereign AI Architecture Decision Guide is a free 12-page PDF for organizations evaluating sovereign AI infrastructure - AI workloads run on infrastructure they control rather than on a hyperscaler API. It is aimed at AI infrastructure leads, CTOs, and platform engineering teams. A visual flowchart walks through seven decisions: trigger profile, regulatory scope (DORA, NIS2, sovereign-cloud mandates), open-weight model selection, GPU hardware sizing, multi-tenancy model, sovereignty controls, and operational model, then maps the answers to one of four architecture patterns. Aenix uses this framework when scoping sovereign AI engagements, and the output maps directly to the Ænix Platform AI/ML Edition, which is built on Cozystack, a CNCF project, and offers multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints.**
 quick_facts:
@@ -40,7 +42,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[Download the Sovereign AI Decision Guide (PDF)]
+<p class="lead-magnet-form__note">Download the Sovereign AI Decision Guide (PDF)</p>
 </div>
 
 ---
@@ -70,6 +72,16 @@ Four common patterns with annotated diagrams:
 
 ### Sizing reference
 Practical sizing tables for common workload profiles.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>7 key decisions</b><div class="diagram__chips"><span>Trigger profile</span><span>Regulatory scope</span><span>Model + hardware sizing</span></div></div>
+<div class="diagram__conn">maps to</div>
+<div class="diagram__node"><b>Architecture pattern</b><div class="diagram__chips"><span>One of four patterns</span></div></div>
+<div class="diagram__conn">deploys as</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform AI/ML Edition</b><div class="diagram__chips"><span>Multi-tenant GPU scheduling</span><span>Inference + fine-tuning + RAG</span></div></div>
+</div>
+</div>
 
 ---
 

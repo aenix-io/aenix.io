@@ -9,6 +9,9 @@ language: "en"
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Ænix Platform
 
 **Turnkey commercial cloud-in-a-box. Built on open-source Cozystack. Five editions for five buyer profiles. Hosting panel, billing, portals, payments, support — install, plug in users, start operating.**
@@ -26,6 +29,9 @@ Plus an entry tier — **Pure Cozystack with Ænix Support** — for product tea
 **Engagement size:** ISP Edition entry from €1.3k/month support; Public Cloud / Enterprise / IDP / AI/ML full builds €500k - €10M+ multi-year.
 
 [Explore platform →](/products/aenix-platform/)
+
+</div>
+</div>
 
 ---
 
@@ -65,25 +71,15 @@ The course also serves as a secondary funnel — engineers who learn the stack o
 
 ## How they relate
 
-```
-                    ┌──────────────────────┐
-                    │  Cozystack           │  ← Open-source CNCF project (Apache 2.0)
-                    │  (open source)       │     Anyone can run it
-                    └──────────┬───────────┘
-                               │
-              ┌────────────────┼────────────────┐
-              │                                  │
-              ▼                                  ▼
-   ┌──────────────────┐              ┌──────────────────────┐
-   │  Ænix Platform   │              │  Kubernetes          │
-   │  (commercial)    │              │  Deep Dive Course    │
-   │  5 editions      │              │  (education)         │
-   │  + entry tier    │              │                      │
-   │                  │              │                      │
-   │  Sold by Aenix   │              │  Sold by Aenix       │
-   │  for production  │              │  for engineers       │
-   └──────────────────┘              └──────────────────────┘
-```
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Open source</span><span>CNCF, Apache 2.0</span><span>Anyone can run it</span></div></div>
+<div class="diagram__conn">productized as</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Commercial</span><span>5 editions + entry tier</span><span>Sold for production</span></div></div>
+<div class="diagram__conn">taught via</div>
+<div class="diagram__node"><b>Kubernetes Deep Dive Course</b><div class="diagram__chips"><span>Education</span><span>For engineers</span></div></div>
+</div>
+</div>
 
 ---
 

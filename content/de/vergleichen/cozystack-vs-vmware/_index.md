@@ -3,6 +3,8 @@ title: "Cozystack vs VMware — Head-to-Head-Vergleich für die Post-Broadcom-Ä
 description: "Sie erwägen einen VMware-Ausstieg. Die Destination-Shortlist umfasst Cozystack. Diese Seite vergleicht die beiden Head-to-Head — was ist gleich, was ist..."
 related_pages: ["/de/alternativen/vmware-alternative", "/de/produkte/aenix-platform/", "/de/produkte/cozystack", "/de/migration/vmware"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /compare/cozystack-vs-vmware/
 direct_answer: |
   **Cozystack vs VMware ist ein Head-to-Head-Vergleich für Organisationen, die in der Post-Broadcom-Ära einen VMware-Ausstieg planen und Cozystack bereits auf der Shortlist haben. VMware Cloud Foundation ist ein proprietärer, subscription-pflichtiger Stack aus ESXi, vSAN und NSX. Cozystack ist eine quelloffene Cloud-Plattform unter Apache 2.0, die auf Kubernetes und KubeVirt aufsetzt, VMs und Container über eine gemeinsame API betreibt, Cilium (eBPF) für Networking sowie LINSTOR oder Rook-Ceph für Storage nutzt und Mandantenfähigkeit über das Tenant-CRD bietet. Aenix, das Open-Core-Unternehmen hinter Cozystack, liefert die produktisierte Ænix Platform und Migrationsservices für den Wechsel von VMware.**
@@ -48,6 +50,8 @@ Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternati
 
 ## Architektur-Vergleich
 
+<div class="compare-elevated compare-elevated--col3">
+
 | | VMware (VCF) | Cozystack |
 |---|---|---|
 | **Lizenz** | Nur Subscription | Apache 2.0 (Open Source) |
@@ -60,6 +64,18 @@ Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternati
 | **GPU für VMs** | NVIDIA vGPU unter Horizon | NVIDIA vGPU + KubeVirt |
 | **Air-Gap** | Unterstützt (zusätzliche Lizenzierung) | Unterstützt (keine Zusatzkosten) |
 | **Ops-Modell** | Vendor-Support benötigt Umgebungszugriff | Aenix-Advisory + GitOps-PR-Review (kein kubectl-Zugriff nötig) |
+
+</div>
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Apache 2.0</span><span>Tenant CRD</span></div></div>
+<div class="diagram__conn">eine gemeinsame Kubernetes-API</div>
+<div class="diagram__node"><b>VMs und Container</b><div class="diagram__chips"><span>KubeVirt auf Talos</span></div></div>
+<div class="diagram__conn">Netzwerk und Storage</div>
+<div class="diagram__node"><b>Plattform-Services</b><div class="diagram__chips"><span>Cilium (eBPF)</span><span>LINSTOR oder Rook-Ceph</span></div></div>
+</div>
+</div>
 
 ---
 

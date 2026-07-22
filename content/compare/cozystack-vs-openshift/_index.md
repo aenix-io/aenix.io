@@ -8,6 +8,8 @@ related_pages:
   - /products/cozystack
   - /migration/ibm/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack and OpenShift Virtualization both run virtual machines on Kubernetes through KubeVirt, but they differ in commercial model and scope. OpenShift Virtualization is Red Hat's per-CPU subscription product built on the broad OpenShift platform, best for existing Red Hat and IBM customers. Cozystack is an Apache 2.0, open-source platform combining Kubernetes, KubeVirt, Cilium (eBPF) networking, and LINSTOR/DRBD storage, with nested Tenant CRD multi-tenancy, making it well suited to open-source-first organizations and service providers. Cozystack is a CNCF Sandbox project with no per-CPU licensing. Aenix, the team behind Cozystack, sells the productized Ænix Platform plus support and migration services for enterprises evaluating an OpenShift alternative or planning a Red Hat exit.**
 quick_facts:
@@ -44,6 +46,8 @@ faq:
 
 > **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises evaluating OpenShift alternative; **[IDP Edition](/products/aenix-platform/idp-edition/)** for product engineering teams.
 
+<div class="compare-elevated compare-elevated--col3">
+
 | | OpenShift Virtualization | Cozystack |
 |---|---|---|
 | **License** | Red Hat commercial subscription | Apache 2.0 |
@@ -54,11 +58,15 @@ faq:
 | **Cost model** | Per-CPU subscription | Free + optional support tier |
 | **Best for** | Existing Red Hat customers | Open-source-first, service providers |
 
+</div>
+
 For Red Hat shops — OpenShift Virtualization fits. For open-source-first or service-provider model — Cozystack.
 
 See **[OpenShift alternative](/alternatives/openshift-alternative)** for migration guidance and **[OpenShift vs Cozystack article](/blog/2026/05/openshift-vs-cozystack-comparison/)** for detailed comparison.
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 ---
 

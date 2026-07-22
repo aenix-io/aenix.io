@@ -10,6 +10,8 @@ related_pages:
   - /products/aenix-platform/ai-ml-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **A cloud platform for energy operators is a sovereign, NIS2-aligned infrastructure that runs consistently across headquarters, regional control centres, and substation edge under one Kubernetes operational model. It serves electricity, gas, oil, and heating operators classified as essential entities under NIS2 Annex I, who must run grid-data analytics, AI forecasting, and OT systems on critical-infrastructure that depreciates over decades. Aenix applies this pattern using Cozystack, an open-source CNCF platform that unifies virtual machines and containers on one Kubernetes API, supports air-gapped OT boundaries, and runs on customer hardware with customer-controlled keys. Aenix sells the productized Ænix Platform plus platform-engineering services on top, and is currently piloting Cozystack with an energy operator for grid-data analytics and AI-driven forecasting.**
 
@@ -68,6 +70,9 @@ Aenix is currently piloting Cozystack with an energy operator and applies the sa
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Why energy architecture is different
 
 - **Edge compute is core, not optional** — substations, distributed generation, microgrids all need local compute with intermittent central connectivity
@@ -76,6 +81,9 @@ Aenix is currently piloting Cozystack with an energy operator and applies the sa
 - **Critical-infrastructure security model** — kinetic + cyber threats; air-gap for OT systems is often non-negotiable
 - **Regulatory triple stack** — NIS2 + sectoral energy regulations (national + EU) + cybersecurity-specific (NCAs)
 - **Mission-critical reliability** — outages have public-safety implications; architecture must support N+1 / N+2 redundancy structurally
+
+</div>
+</div>
 
 ---
 
@@ -87,6 +95,18 @@ Aenix is currently piloting Cozystack with an energy operator and applies the sa
 - **AI infrastructure** — for grid forecasting, demand response, predictive maintenance
 - **Sovereign by architecture** — open-source platform on customer hardware, customer-controlled keys
 - **Long-horizon platform** — Apache 2.0 license + community governance suit decade-plus operational planning
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Central control</b><div class="diagram__chips"><span>One Kubernetes API</span><span>Central policy</span></div></div>
+<div class="diagram__conn">sets policy for</div>
+<div class="diagram__node"><b>Regional sites</b><div class="diagram__chips"><span>Regional aggregation</span></div></div>
+<div class="diagram__conn">extends to</div>
+<div class="diagram__node"><b>Substation edge</b><div class="diagram__chips"><span>Local compute</span><span>Tolerates intermittent connectivity</span></div></div>
+<div class="diagram__conn">air-gapped from</div>
+<div class="diagram__node"><b>OT systems</b><div class="diagram__chips"><span>SCADA</span><span>DCS</span><span>RTU</span></div></div>
+</div>
+</div>
 
 ---
 
@@ -139,7 +159,9 @@ We accept RFI / RFP through:
 
 ## How to start
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 Or read more:
 - **[Smart grid platform architecture for IT/OT convergence](/blog/2026/05/smart-grid-platform-architecture-it-ot/)** — long-form

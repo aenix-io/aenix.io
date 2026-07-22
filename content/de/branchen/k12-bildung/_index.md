@@ -3,6 +3,8 @@ title: "Cloud-Plattform für K-12-Bildung — wenn souveräne Infrastruktur für
 description: "K-12-Bildung hat andere Infrastrukturanforderungen als Universitäten. Schulträger handhaben Schülerdaten unter strengen Residenz- / Datenschutzregelungen..."
 related_pages: ["/de/branchen/universitaeten", "/de/loesungen/data-sovereignty"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/education-k12/
 direct_answer: |
   **Eine Cloud-Plattform für K-12-Bildung ist souveräne, mandantenfähige Infrastruktur für große Schulträger, Bildungsministerien und EdTech-Plattformen, die Schülerdaten unter DSGVO und nationalen Schulgesetzen mit strengen Datenresidenz-Anforderungen verarbeiten. Die meisten Schulträger sind durch Hyperscaler-managed-Services besser bedient; Cozystack passt für die Ausnahmefälle — große Schulträger mit Souveränitäts-Mandat, EdTech-Anbieter und Schulträger-Konsortien. Aenix baut auf Cozystack (Apache 2.0, CNCF-Sandbox), das VMs und Container über eine Kubernetes-API mit KubeVirt vereint, Tenant-CRD-Mandantenfähigkeit für Schulträger- und Schul-Ebenen bietet und souveränitätspflichtige Schülerdatenverarbeitung im großen Maßstab ermöglicht.**
@@ -47,6 +49,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wann Cozystack für K-12 passt
 
 - **Großer Schulträger / regionales Konsortium** mit Souveränitäts-Druck bei Schülerdaten
@@ -57,9 +62,22 @@ faq:
 
 Für die meisten K-12-Schulträger sind Hyperscaler-managed-Services + Standard-EdTech-Tools der bessere Fit. Wir sind explizit, wenn das der Fall ist.
 
+</div>
+</div>
+
 ---
 
 ## Was wir für passende K-12-Fälle abdecken
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Schulträger-Workloads</b><div class="diagram__chips"><span>LMS / SIS / Analytics</span><span>KI / Analytics auf Schülerdaten</span></div></div>
+<div class="diagram__conn">läuft auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Eine Kubernetes-API (KubeVirt)</span><span>Tenant-CRD-Mandantenfähigkeit</span><span>Schülerdaten-Residenz auf jeder Ebene</span></div></div>
+<div class="diagram__conn">isoliert</div>
+<div class="diagram__node"><b>Schulträger / Schule / Klassenzimmer</b><div class="diagram__chips"><span>Zentraler Betrieb</span><span>Isolation pro Schule</span><span>Trennung auf Klassenzimmer-Ebene</span></div></div>
+</div>
+</div>
 
 - **Multi-Tenant-Schulträger-Plattform** — zentraler Betrieb + Isolation pro Schule
 - **FERPA- / DSGVO-konforme Architektur** — Verschlüsselung + Audit + Residenz

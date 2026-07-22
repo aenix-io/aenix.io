@@ -11,6 +11,8 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **A hybrid cloud platform is a single operating model that runs workloads consistently across customer-controlled hardware, public cloud regions, and edge sites instead of as separate, fragmented silos. It suits enterprises with a genuinely heterogeneous workload portfolio — some elastic and customer-facing, some steady-state or regulated, some GPU-bound for AI inference. Aenix designs and operates hybrid platforms on Cozystack, an open-source CNCF project that unifies virtual machines (KubeVirt) and containers on one Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. The result is one platform team, one observability stack, and consistent deployment patterns across every substrate, with no vendor lock-in and no per-CPU licensing.**
 
@@ -88,6 +90,16 @@ If most workloads belong in one place — full public cloud or full private clou
 
 ## What makes hybrid cloud work
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Mixed estate</b><div class="diagram__chips"><span>VMware</span><span>OpenNebula</span><span>OpenShift</span><span>Public cloud</span></div></div>
+<div class="diagram__conn">connected by</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack control plane</b><div class="diagram__chips"><span>One Kubernetes API</span><span>KubeVirt VMs + containers</span><span>Cilium (eBPF)</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Unified hybrid operations</b><div class="diagram__chips"><span>One platform team</span><span>One observability stack</span><span>Consistent deployment</span></div></div>
+</div>
+</div>
+
 <div class="grid-2x2">
 
 **1. One platform, multiple substrates**
@@ -134,6 +146,9 @@ Same workload runs differently on public cloud vs on-prem. Operational debt buil
 
 <!-- BLOCK 5: HOW WE HELP -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## How Aenix helps
 
 The hybrid-platform engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**. Output:
@@ -145,6 +160,9 @@ The hybrid-platform engagement runs as part of our **[Platform Readiness Assessm
 - **Phase 2 implementation roadmap**
 
 Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end — typically 6-18 months elapsed.
+
+</div>
+</div>
 
 <!-- /BLOCK 5 -->
 
@@ -191,10 +209,10 @@ Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end —
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 days)
-****
+**On request**
 
 ### Implementation
-****
+**On request**
 
 </div>
 
@@ -209,7 +227,9 @@ Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end —
 <!-- BLOCK 11: CTA -->
 
 <a id="discovery"></a>
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Hybrid cloud architecture patterns](/blog/2026/05/hybrid-cloud-architecture-patterns-2026/)**
 - **[Cloud repatriation](/solutions/cloud-repatriation/)**

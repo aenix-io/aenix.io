@@ -11,6 +11,8 @@ related_pages:
   - /products/cozystack/
   - /migration/ibm/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Aenix builds and operates DORA-aligned, sovereign cloud platforms for financial-services organizations — banks, insurers, investment firms, and payment institutions — across the EU, DACH, and Central Asia. The foundation is Cozystack, an Apache 2.0 open-source platform (CNCF Sandbox project) that unifies virtual machines and containers on one Kubernetes API using KubeVirt, Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. It runs on customer hardware with customer-controlled encryption keys and customer-owned audit trails, so data residency and operational resilience are structural rather than bolted on. Aenix sells the productized Ænix Platform plus engineering services, and typically engages through a Platform Readiness Assessment covering DORA Article 28 supplier risk, exit-feasibility, FinOps, and sovereign-AI architecture for sensitive financial data.**
 quick_facts:
@@ -59,6 +61,9 @@ Aenix builds and operates platforms for financial-services organizations across 
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What financial services teams come to us for
 
 The four most-common entry points:
@@ -69,6 +74,9 @@ The four most-common entry points:
 - **VMware exit** — VCF subscription pressure across the financial sector. See **[VMware alternative](/alternatives/vmware-alternative/)**.
 
 Most engagements combine two or more of these triggers.
+
+</div>
+</div>
 
 ---
 
@@ -111,6 +119,16 @@ Output is a written report aligned with regulator-readiness and a Phase 2 implem
 
 ## Why Aenix specifically for financial services
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Financial-services pressure</b><div class="diagram__chips"><span>DORA enforcement</span><span>ICT third-party concentration</span><span>VMware / VCF exit</span></div></div>
+<div class="diagram__conn">addressed by</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack on customer hardware</b><div class="diagram__chips"><span>VMs + containers</span><span>One Kubernetes API</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Structural sovereignty</b><div class="diagram__chips"><span>Customer-controlled keys</span><span>Customer-owned audit trails</span><span>Data residency</span></div></div>
+</div>
+</div>
+
 - **Regulator-aware engineering.** Our team has direct experience with DORA / NIS2 / GDPR / sectoral regulatory dialog. We don't deliver consulting that ignores the regulatory layer.
 - **No hyperscaler bias.** We're not commercially aligned with AWS / Azure / GCP. Recommendations reflect substantive sovereignty, not partner economics.
 - **Open-source platform foundation.** [Cozystack](/products/cozystack/) on customer hardware, customer-controlled keys, customer-owned audit trails. Sovereignty is structural.
@@ -128,7 +146,9 @@ Procurement: we accept RFI / RFP through standard procurement channels in EU mem
 
 ## How to start
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 Or read more:
 - **[DORA compliance](/solutions/dora-compliance/)** — financial-services regulatory trigger

@@ -14,6 +14,9 @@ language: "en"
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Browse services
 
 ### Entry offer (start here)
@@ -40,6 +43,9 @@ language: "en"
 - **[Cloud strategy consultancy](/services/cloud-strategy-consultancy/)** — CIO / CTO strategy work; multi-quarter engagements
 - **[SRE consulting](/services/sre-consulting/)** — SRE practice setup, on-call, runbook work
 
+</div>
+</div>
+
 ---
 
 ## Engagement model
@@ -53,6 +59,16 @@ Render as 5-step horizontal flow. Each step: number, bold heading, 1-line descri
 3. **Pilot engagement** (3-6 months, €100-300k) — defined slice, validated business case
 4. **Full Edition build** — weeks for ISP Edition; 9-18 months for Public Cloud / Enterprise / IDP / AI/ML
 5. **Managed operations** (ongoing retainer) — Aenix runs the platform you operate, or hybrid
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Assess</b><div class="diagram__chips"><span>Platform Readiness Assessment</span><span>Audit + roadmap</span></div></div>
+<div class="diagram__conn">leads to</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform build</b><div class="diagram__chips"><span>Platform engineering</span><span>IDP</span><span>Private / public / sovereign cloud</span><span>AI platform</span></div></div>
+<div class="diagram__conn">handed to</div>
+<div class="diagram__node"><b>Operate</b><div class="diagram__chips"><span>Managed operations</span><span>SRE / DevOps consulting</span></div></div>
+</div>
+</div>
 
 ---
 

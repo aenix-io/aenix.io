@@ -9,6 +9,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **NIS2 compliance for cloud infrastructure means aligning your platform architecture with the EU NIS2 Directive (EU 2022/2555), which imposes cybersecurity risk-management (Article 21), incident reporting at 24-hour, 72-hour, and one-month timelines (Article 23), and ICT supply-chain risk obligations on essential and important entities and the ICT third parties serving them. Aenix runs NIS2-aligned platform readiness engagements that produce a control-level map, supply-chain mapping to the second hop, an incident-detection capability assessment, and an architecture-level remediation plan, delivered by EU-based engineers. The Aenix Platform Enterprise Edition is NIS2-aligned by design, built on Cozystack — an Apache 2.0, CNCF project providing Tenant CRD multi-tenancy, Cilium (eBPF) segmentation, customer-controlled encryption, and audit-ready logging.**
 quick_facts:
@@ -80,6 +82,9 @@ If your sector is in scope or your customers are in scope, NIS2 architectural re
 
 <!-- BLOCK 3: WHAT NIS2 REQUIRES -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What NIS2 requires of cloud architecture
 
 <div class="grid-2x2">
@@ -99,6 +104,9 @@ Top management is responsible and trained on cybersecurity risk-management. Comp
 </div>
 
 For control-level checklist, see **[the NIS2 requirements article](/blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/)**.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -131,6 +139,16 @@ Patch cycles run on monthly cadence; critical vulnerabilities get emergency patc
 <!-- BLOCK 5: HOW WE HELP -->
 
 ## How Aenix helps
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>NIS2 obligations</b><div class="diagram__chips"><span>Article 21 risk management</span><span>Article 23 incident reporting</span><span>ICT supply-chain risk</span></div></div>
+<div class="diagram__conn">mapped control-by-control by</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix engagement on Cozystack</b><div class="diagram__chips"><span>Tenant CRD multi-tenancy</span><span>Cilium/NetworkPolicy segmentation</span><span>Customer-controlled keys</span><span>Audit-ready logging</span></div></div>
+<div class="diagram__conn">produces</div>
+<div class="diagram__node"><b>Audit-ready architecture</b><div class="diagram__chips"><span>Architecture-level remediation plan</span></div></div>
+</div>
+</div>
 
 The NIS2 engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + regulator-gap workstream emphasized. The 14- or 28-day engagement produces:
 
@@ -186,10 +204,10 @@ Delivered by EU-based engineers with regulator-dialog experience. Same engineers
 <div class="pricing-cards-2">
 
 ### 14-day (focused NIS2)
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (NIS2 + DORA + GDPR overlay)
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 
@@ -204,7 +222,9 @@ Delivered by EU-based engineers with regulator-dialog experience. Same engineers
 <!-- BLOCK 11: CTA -->
 
 <a id="discovery"></a>
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[NIS2 requirements article](/blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/)** — control-level guide
 - **[DORA compliance](/solutions/dora-compliance/)** — financial-services regulator

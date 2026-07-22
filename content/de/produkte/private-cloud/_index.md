@@ -3,6 +3,8 @@ title: "Private Cloud — Open Source, Kubernetes-nativ, mandantenfähig"
 description: "Cozystack ist die Open-Source-Private-Cloud-Plattform für Service Provider, regulierte Unternehmen und souveräne Cloud-Builder. KubeVirt-basierte..."
 related_pages: ["/de/alternativen/vmware-alternative", "/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/products/cozystack"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /products/private-cloud-platform/
 direct_answer: |
   **Eine Private Cloud auf Basis von Cozystack ist eine Kubernetes-native Plattform, die VMs und Container über eine einzige API auf eigener Hardware betreibt — gedacht für Service Provider, regulierte Unternehmen und souveräne Cloud-Builder im DACH-Raum. Cozystack bündelt KubeVirt-Virtualisierung, Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, eine mandantenfähige Steuerungsebene über das Tenant-CRD sowie verwaltete Datenbanken, S3 und GPU-as-a-Service. Es ist ein CNCF-Sandbox-Projekt unter Apache-2.0-Lizenz und ersetzt den VMware-Cloud-Foundation-Stack ohne CPU- oder Core-basierte Lizenzierung und ohne Vendor-Lock-in. Aenix, das Team hinter Cozystack, liefert die produktisierte Ænix Platform plus Support und professionelle Dienstleistungen.**
@@ -43,7 +45,7 @@ faq:
 Die Cozystack-Plattform ersetzt den gesamten VMware-Cloud-Foundation-Stack durch ein Kubernetes-natives Äquivalent, das Sie unter Ihrer eigenen Governance betreiben. Aenix ist das Unternehmen hinter Cozystack — wir bauen es, liefern es produktiv bei Banken, Telekommunikationsbetreibern und KI-/GPU-Betreibern in der EU und Zentralasien aus und stützen es mit Engineering-Services.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">30-minütigen Architektur-Review buchen</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">30-minütigen Architektur-Review buchen</a>
   <a class="cta-secondary" href="https://cozystack.io">cozystack.io →</a>
 </div>
 
@@ -72,6 +74,9 @@ CNCF-Projekt · Kubernetes Certified Distribution · OpenSSF Best Practices · A
 ---
 
 <!-- BLOCK 3: WHAT'S IN THE PLATFORM -->
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Was Cozystack als Private-Cloud-Plattform bietet
 
@@ -104,6 +109,21 @@ Velero + S3 + Per-Database-PITR für verwaltete Services.
 **9. Self-Service-Portal & WHMCS-Billing**
 cozyportal für Service-Provisioning. Produktionsreife WHMCS-Integration mit zwei Modi (native UI + Frontend Cozystack).
 
+</div>
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant-CRD (Mandantenfähigkeit)</span><span>cozyportal</span><span>WHMCS-Integration</span></div></div>
+<div class="diagram__conn">betreibt</div>
+<div class="diagram__node"><b>VMs und Container</b><div class="diagram__chips"><span>KubeVirt (Compute)</span><span>Verwaltete Services</span><span>S3</span><span>GPU as a Service</span></div></div>
+<div class="diagram__conn">laufen auf</div>
+<div class="diagram__node"><b>Kernkomponenten</b><div class="diagram__chips"><span>Cilium/eBPF (Networking)</span><span>LINSTOR/DRBD (Storage)</span></div></div>
+<div class="diagram__conn">auf</div>
+<div class="diagram__node"><b>Bare Metal, das Ihnen gehört</b><div class="diagram__chips"><span>eigene Hardware</span></div></div>
+</div>
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 3 -->
@@ -180,11 +200,11 @@ GitHub Issues, öffentlicher Slack, keine SLA.
 
 ### Standard-Support
 Reaktion zu Geschäftszeiten, Runbooks, Advisory.
-****
+**Auf Anfrage**
 
 ### Enterprise / 24×7
 Produktions-SLA, dediziertes TAM, GitOps-PR-Review, Incident-Response.
-****
+**Auf Anfrage**
 
 </div>
 

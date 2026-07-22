@@ -7,6 +7,8 @@ related_pages:
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/produkte/aenix-platform/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Site Reliability Engineering (SRE) wendet Software-Engineering-Methoden auf den IT-Betrieb an, um Produktion zuverlässig at scale zu halten. Das SRE-Consulting von Aenix richtet sich an Plattform- und Operations-Teams und deckt SLO-Design, Error-Budget-Frameworks, Incident-Response mit blameless Post-mortems, Observability-Praktiken sowie Capacity-Planning ab. Als Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) baut Aenix diese Reliability-Praxis direkt in die Plattform-Foundation ein statt sie nachträglich aufzusetzen: Cozystack vereint VMs und Container über eine Kubernetes-API mit Cilium-Networking und LINSTOR-Storage. Das Engagement ist mit jeder Ænix Platform Edition koppelbar oder eigenständig als reines SRE-Consulting buchbar.**
 
@@ -44,10 +46,13 @@ faq:
 > **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — SRE-Praxis verbunden mit der produktiven Plattform, die Sie betreiben. Eigenständiges SRE-Consulting auch verfügbar.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Was unser SRE-Engagement abdeckt
 
@@ -57,6 +62,19 @@ faq:
 - **Observability-Praktiken** — Metriken, Logs, Traces, Alert-Hygiene
 - **Capacity-Planning** und Performance-Engineering
 - **Reliability-Engineering** — Chaos-Testing, Resilienz-Patterns
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>SRE-Praktiken</b></div>
+<div class="diagram__conn">eingebaut in</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack Plattform-Foundation</b></div>
+<div class="diagram__conn">hält</div>
+<div class="diagram__node"><b>Produktion zuverlässig at scale</b></div>
+</div>
+</div>
+
+</div>
+</div>
 
 ---
 

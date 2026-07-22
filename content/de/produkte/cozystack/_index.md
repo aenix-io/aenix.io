@@ -5,6 +5,8 @@ related_pages:
   - /de/produkte/private-cloud
   - /de/dienstleistungen/platform-engineering
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /products/cozystack/
 direct_answer: |
   **Cozystack ist die von Aenix entwickelte Open-Source-Cloud-Plattform und ein CNCF-Projekt, mit der Unternehmen auf eigener Hardware eine private Cloud betreiben. Auf einer Kubernetes-nativen Steuerungsebene laufen virtuelle Maschinen (KubeVirt), Container, verwaltete Datenbanken, S3-kompatibler Object-Storage und GPU-Workloads — mit echter Mandantenfähigkeit über das Tenant-CRD. Cozystack steht unter Apache-2.0-Lizenz, ist eine Kubernetes Certified Distribution und folgt den OpenSSF Best Practices. Die Plattform richtet sich an Hosting-Provider, ISPs und Unternehmen, die VMware ablösen oder Cloud-Repatriierung umsetzen. Aenix selbst verkauft keine Lizenzen, sondern die produktisierte Ænix Platform plus Engineering- und Support-Engagement.**
@@ -47,7 +49,7 @@ faq:
 Diese Seite beschreibt Cozystack als Aenix' Open-Source-Produkt. Das Open-Source-Projekt selbst liegt unter **[cozystack.io](https://cozystack.io)** mit Dokumentation, Installationsanleitungen und der Community. Für die turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/aenix-platform/)** mit ihren fünf Editions.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Architektur-Review buchen</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
   <a class="cta-secondary" href="https://cozystack.io">cozystack.io →</a>
 </div>
 
@@ -61,6 +63,9 @@ CNCF-Projekt · CNCF-zertifizierte Kubernetes-Distribution · OpenSSF Best Pract
 ---
 
 <!-- BLOCK 2: WHAT'S IN COZYSTACK -->
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Was in Cozystack steckt
 
@@ -95,7 +100,22 @@ cozyportal für Self-Service. Produktionsreife WHMCS-Billing-Integration mit zwe
 
 </div>
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant-CRD-Mandantenfähigkeit</span><span>cozyportal</span><span>WHMCS-Billing</span></div></div>
+<div class="diagram__conn">eine Kubernetes-API</div>
+<div class="diagram__node"><b>Workloads</b><div class="diagram__chips"><span>KubeVirt VMs</span><span>Container</span><span>Verwaltete Datenbanken</span><span>S3-Object-Storage</span><span>GPU</span></div></div>
+<div class="diagram__conn">Networking, Storage, Observability</div>
+<div class="diagram__node"><b>Plattform-Dienste</b><div class="diagram__chips"><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Rook-Ceph</span><span>VictoriaMetrics + VictoriaLogs</span></div></div>
+<div class="diagram__conn">auf</div>
+<div class="diagram__node"><b>Bare Metal, das Ihnen gehört</b><div class="diagram__chips"><span>eigene Hardware</span></div></div>
+</div>
+</div>
+
 ![Cozystack dashboard — self-service catalog of managed services](/images/uploads/2026/04/cozystack-managed-services.png)
+
+</div>
+</div>
 
 
 <!-- /BLOCK 2 -->
@@ -135,7 +155,13 @@ Produktive Deployments in der EU, DACH und Zentralasien. Der Kundenstamm umfasst
 
 Cozystack ist außerdem in der [CNCF Landscape](https://landscape.cncf.io) gelistet — Community-Produktionsnutzer über Aenix' Kundenstamm hinaus.
 
-> {{QUOTE_1 — pending permission}}
+<div class="quote-person">
+<p class="quote-person__body">"Cozystack hat die Energie eines jungen Projekts und die Stärke einer ausgereiften Plattform — eine seltene und für die alte Garde durchaus gefährliche Kombination. Aenix pflegt es mit der Denkweise eines hungrigen Startups: Sie hören zu, handeln schnell und lösen Kundenprobleme, anstatt sie in ein Support-Labyrinth zu schicken."</p>
+<div class="quote-person__cite">
+<span class="quote-person__avatar"><img src="/images/quotes/qasym-majen.png" alt="Qasym Majen"></span>
+<span><span class="quote-person__name">Qasym Majen</span><span class="quote-person__role">Gründer, QOSI — Qazaq Open Source Initiative</span></span>
+</div>
+</div>
 
 <!-- /BLOCK 4 -->
 

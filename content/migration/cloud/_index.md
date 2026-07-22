@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "migration-hub"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "cloud migration services"
 secondary_keywords: ["cloud migration", "cloud migration strategy", "private cloud migration"]
 related_pages:
@@ -127,7 +129,22 @@ For estates leaving a legacy virtualisation stack, image conversion is automated
 
 Sequencing respects what you have already paid for. When contracts or subscriptions still have time on them, the affected cohorts move last, so the plan never forces a write-off of committed spend. A 100-workload estate typically completes in months, not years; larger estates run in cohorts across a longer window while the source environment winds down cohort by cohort.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Source estate</b><div class="diagram__chips"><span>Public cloud</span><span>Legacy virtualisation stack</span></div></div>
+<div class="diagram__conn">moves through</div>
+<div class="diagram__node"><b>Cohort-based migration</b><div class="diagram__chips"><span>Parallel-run validation</span><span>Automated image conversion</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">completes with</div>
+<div class="diagram__node"><b>Source decommissioned</b><div class="diagram__chips"><span>Cohort by cohort</span><span>No write-off of committed spend</span></div></div>
+</div>
+</div>
+
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Where cloud migrations commonly stall
 
@@ -147,6 +164,9 @@ Workloads land on a private platform that was never built for production; operat
 **Skipped network and storage redesign.**
 Treating the target's networking and storage as a copy of the source guarantees fragility. They are engineered fresh for the destination.
 
+</div>
+
+</div>
 </div>
 
 ---

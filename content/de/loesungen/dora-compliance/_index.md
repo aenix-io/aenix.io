@@ -8,6 +8,8 @@ related_pages:
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/produkte/aenix-platform/enterprise-edition/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /solutions/dora-compliance/
 direct_answer: |
   **DORA-Compliance für Cloud-Infrastruktur bedeutet, die Cloud- und Plattform-Architektur eines Finanzunternehmens auditbereit an die Digital Operational Resilience Act (seit 17. Januar 2025 in Kraft) anzupassen. Betroffen sind Banken, Versicherer, Investmentfirmen, Zahlungsinstitute, Krypto-Asset-Anbieter und ihre kritischen ICT-Drittanbieter. Aenix — das Team hinter Cozystack (CNCF-Projekt) — führt DORA-fokussierte Plattform-Readiness-Assessments durch und liefert mit der Ænix Platform Enterprise Edition eine DORA-konforme Architektur: kundenkontrollierte Schlüssel, audit-bereites Logging via VictoriaLogs, Mandantenfähigkeit über das Tenant CRD nach ICT-Risikoklassifizierung, getestete Exit-Mechanik und Transparenz über ICT-Drittparteien-Risiken.**
@@ -84,6 +86,9 @@ Wenn Ihr Cloud-Setup eine *kritische oder wichtige Funktion* im Sinne von DORA u
 
 <!-- BLOCK 3: FOUR THINGS DORA REQUIRES OF YOUR CLOUD -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Was DORA von Ihrer Cloud-Architektur fordert
 
 <div class="grid-2x2">
@@ -103,6 +108,9 @@ Datenresidenz auf jeder Ebene durchgesetzt — Produktion, Backup, Observability
 </div>
 
 Eine Kontroll-Checkliste mit operativer Sprache zu jedem dieser Punkte finden Sie in **[der DORA-Compliance-Checkliste](/de/blog/2026/05/dora-checkliste-cloud-architektur/)**.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -137,6 +145,16 @@ Diese Lücken sind bei Institutionen verbreitet, die sich für cloud-reif halten
 <!-- BLOCK 5: HOW WE HELP (linking to entry offer) -->
 
 ## Wie Aenix hilft
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>DORA (seit 17. Januar 2025)</b><div class="diagram__chips"><span>ICT-Drittparteien-Risiko · Exit-Bereitschaft · Resilienz-Tests</span></div></div>
+<div class="diagram__conn">erfüllt durch</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform Enterprise Edition</b><div class="diagram__chips"><span>kundenkontrollierte Schlüssel · VictoriaLogs · Tenant CRD</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Auditbereite Architektur</b></div>
+</div>
+</div>
 
 Unser DORA-Engagement ist in das **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** eingebettet, wobei der Workstream zu Souveränität und Regulator-Lücken für den DORA-spezifischen Anwendungsbereich in den Vordergrund gerückt wird. Das 14- oder 28-tägige Engagement liefert:
 
@@ -209,11 +227,11 @@ Das DORA-fokussierte Engagement läuft als Platform Readiness Assessment mit dem
 
 ### 14 Tage (fokussierter DORA-Scope)
 Vertiefung des DORA-fokussierten Workstreams, einzelne Geschäftseinheit / Domäne. Vollständige Kontroll-Landkarte, Konzentrationsanalyse, Exit-Machbarkeit, Remediationsplan.
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (volle DORA + angrenzend)
 DORA + angrenzendes NIS2- / GDPR- / sektorales Overlap-Mapping. Stakeholder-Interviews über mehrere Geschäftseinheiten. Anbieter-Vorauswahl, wo anwendbar. Roadmap für die Phase-2-Implementierung.
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 

@@ -8,6 +8,8 @@ related_pages:
   - /products/aenix-platform/idp-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **An internal developer platform (IDP) is a self-service capability layer that lets product engineers provision environments, deploy applications, and access observability, secrets, and networking through opinionated golden paths instead of infrastructure tickets. Aenix builds IDPs that get adopted, not just architected: 5-10 documented golden paths on a multi-tenant Kubernetes foundation, with operational runbooks and knowledge transfer so the customer's platform team owns the result. The foundation is typically Cozystack, an Apache 2.0 CNCF project combining KubeVirt VMs and containers, Cilium eBPF networking, LINSTOR storage, and Tenant-CRD multi-tenancy. Engagements run in three phases — readiness assessment, build, and optional managed operation — and use developer portals such as Backstage only where they fit, never as a destination.**
 quick_facts:
@@ -84,6 +86,16 @@ If your situation matches three of these, structured IDP work returns adoption +
 
 ## What an Aenix IDP engagement produces
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Product teams</b><div class="diagram__chips"><span>Environments</span><span>Deployments</span><span>Observability</span></div></div>
+<div class="diagram__conn">self-serve via</div>
+<div class="diagram__node diagram__node--brand"><b>Self-service IDP on Cozystack</b><div class="diagram__chips"><span>Golden paths</span><span>APIs</span><span>Multi-tenant Kubernetes</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Adoption and velocity</b><div class="diagram__chips"><span>Time-to-environment</span><span>Golden-path adoption</span><span>Internal NPS</span></div></div>
+</div>
+</div>
+
 <div class="grid-2x2">
 
 **1. Opinionated golden paths**
@@ -108,6 +120,9 @@ The output is measured in adoption metrics — time-to-environment, golden-path 
 
 <!-- BLOCK 4: COMMON IDP FAILURES -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Where IDP programs commonly fail
 
 <div class="gap-cards-2">
@@ -127,6 +142,9 @@ Without explicit headcount and protected golden-path work time, the platform tea
 </div>
 
 These failure modes are predictable. Engagement structure deliberately prevents each.
+
+</div>
+</div>
 
 <!-- /BLOCK 4 -->
 
@@ -201,11 +219,11 @@ We've built internal developer platforms for service providers running multi-ten
 
 ### Assessment (14-28 days)
 Fixed-price. Written deliverable, target IDP architecture, Phase 2 roadmap.
-****
+**On request**
 
 ### Build / Managed engagement
 Time-and-materials or fixed-scope. Phase 2 build typically 3-9 months elapsed.
-****
+**On request**
 
 </div>
 
@@ -224,7 +242,9 @@ If Phase 2 follows assessment, assessment cost credited against implementation s
 <a id="discovery"></a>
 ## Start with a 30-minute discovery call
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 Or read more:
 - **[IDP examples without Backstage lock-in](/blog/2026/05/internal-developer-platform-examples-without-backstage/)** — practical patterns

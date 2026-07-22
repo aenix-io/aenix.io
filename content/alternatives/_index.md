@@ -14,6 +14,16 @@ language: "en"
 
 ---
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Legacy platforms</b><div class="diagram__chips"><span>VMware</span><span>OpenStack</span><span>Proxmox</span><span>OpenShift</span></div></div>
+<div class="diagram__conn">compare &amp; migrate</div>
+<div class="diagram__node"><b>Migration hubs</b><div class="diagram__chips"><span>VMware</span><span>OpenStack</span><span>Proxmox</span><span>CloudStack</span></div></div>
+<div class="diagram__conn">land on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>ISP Edition</span><span>Enterprise Edition</span><span>IDP Edition</span></div></div>
+</div>
+</div>
+
 ## VMware
 
 Post-Broadcom, VMware customers face subscription pressure + license model uncertainty. The largest single migration trigger we see in 2026.
@@ -80,6 +90,9 @@ CloudStack legacy environments — modernization patterns to Cozystack-based sta
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## How to use this page
 
 1. **Identify what you're moving away from** — VMware / OpenStack / Proxmox / OpenShift / Nutanix / Backstage / CloudStack
@@ -87,6 +100,9 @@ CloudStack legacy environments — modernization patterns to Cozystack-based sta
 3. **Read the migration hub** if available — practical patterns
 4. **Identify the matching Edition** — what you'd run instead
 5. **Book a discovery call** — discuss your specific scope
+
+</div>
+</div>
 
 ---
 

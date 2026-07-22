@@ -7,6 +7,8 @@ related_pages:
   - /de/dienstleistungen/internal-developer-platform
   - /de/produkte/aenix-platform/idp-edition/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Das Platform Engineering Maturity Assessment ist eine kostenlose Selbsteinschätzung, die Ihre Platform-Engineering-Praxis über acht Dimensionen auf einer 5-Stufen-Reife-Skala (Pre-platform bis Mature platform engineering) bewertet. Es richtet sich an Plattform-Teams, CTOs und VP Engineering, die ihren Reifegrad baselinen und Lücken vor der nächsten Investition identifizieren wollen. Aenix nutzt dasselbe Assessment während seiner Platform Readiness Assessments. Bewertet werden Workload-Portabilität, GitOps-Adoption, Observability, Secrets-Handhabung, Identity-Modell, Multi-Tenancy, Disaster-Recovery und Self-Service-Tiefe. Die meisten Outcomes empfehlen die Ænix Platform IDP Edition auf der Cozystack-Cloud-Foundation als strukturierten nächsten Schritt.**
 quick_facts:
@@ -45,7 +47,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[Maturity Assessment herunterladen (PDF + interaktives Formular)]
+<p class="lead-magnet-form__note">Maturity Assessment herunterladen (PDF + interaktives Formular)</p>
 </div>
 
 ---
@@ -62,6 +64,16 @@ faq:
 8. **Self-Service-Tiefe** — Golden Paths, Time-to-Environment
 
 Für jede Dimension 5-Stufen-Rubrik (Pre-platform → Mature platform engineering).
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>8-Dimensionen-Selbsteinschätzung</b><div class="diagram__chips"><span>5-Stufen-Reife-Skala</span><span>PDF + interaktives Formular</span></div></div>
+<div class="diagram__conn">ergibt</div>
+<div class="diagram__node"><b>Reifegrad-Baseline</b><div class="diagram__chips"><span>Reifegrad</span><span>priorisierte Lücken</span></div></div>
+<div class="diagram__conn">empfiehlt</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform IDP Edition</b><div class="diagram__chips"><span>GitLab</span><span>Argo CD</span><span>Golden Paths</span></div></div>
+</div>
+</div>
 
 ---
 

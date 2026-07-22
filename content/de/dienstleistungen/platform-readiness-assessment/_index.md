@@ -3,6 +3,8 @@ title: "Platform Readiness Assessment — für Cloud-Souveränität, Migration u
 description: "Eine strukturierte Cloud-Readiness-Bewertung, die Ihnen drei konkrete Ergebnisse liefert: Time-to-Environment-Metrik, Compliance-by-Design-Karte und..."
 related_pages: ["/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/de/loesungen/cloud-repatriation"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/platform-readiness-assessment/
 direct_answer: |
   **Das Platform Readiness Assessment von Aenix ist ein zeitlich fixiertes Beratungsengagement (14 oder 28 Tage), das die Cloud-Reife einer Organisation in vier Workstreams bewertet — Inventar und Plattform-Reife, Souveränität und Regulator-Lücke (DORA, NIS2, GDPR), Kosten- und Cloud-Spend-Posture sowie Developer-Self-Service. Es liefert drei konkrete Ergebnisse: eine Time-to-Environment-Metrik, eine Compliance-by-Design-Karte und eine Kosten- und Kontroll-Trajektorie über 12 Monate. Durchgeführt wird es von den Plattform-Engineers hinter Cozystack — dem Apache-2.0-lizenzierten CNCF-Projekt — und es endet mit einer Edition-Empfehlung für die Ænix Platform. Es richtet sich an Organisationen, die Datensouveränität, Cloud-Repatriation, souveräne KI oder eine Self-Service-Plattform evaluieren.**
@@ -63,6 +65,9 @@ Aenix-Engineers, keine Berater · Festpreis · Schriftliche Deliverables · Kein
 
 <!-- BLOCK 2: WHY THIS ASSESSMENT (4 trigger callout) -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wann das Platform Readiness Assessment passt
 
 Buyer kommen mit einem von vier Drücken zu uns. Das Assessment adressiert sie als ein einziges Programm — nicht als vier unverbundene Workstreams.
@@ -81,6 +86,9 @@ Public-Cloud-Rechnung übersteigt die Vorhersehbarkeit, FinOps-Mandat, Repatriat
 **Developer-Self-Service und Time-to-Environment**
 Umgebungen, deren Provisionierung Wochen dauert, IAM/Network/Monitoring von Hand, mehrere Tools, die niemand besitzt. Ergebnis: Time-to-Environment-Baseline → Ziel mit einem Delivery-Plan.
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 2 -->
@@ -102,6 +110,16 @@ Das Assessment läuft parallel über vier Workstreams. Jeder hat auf unserer Sei
 | 4 | **Developer-Self-Service und Platform Engineering** | Time-to-Environment (aktuelle SLA), Provisionierungs-Reibungspunkte, Golden-Path-Abdeckung, interne Dokumentation, Platform-Team-Kapazität | Time-to-Environment-Baseline + Ziel-Metrik, Golden-Path-Vorschlag, Platform-Team-RACI |
 
 Jeder Workstream produziert einen 3-5-seitigen Abschnitt im finalen Bericht. Der vollständige Bericht landet am Ende von Woche 2 (oder Woche 4 für die tiefere Variante).
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment</b></div>
+<div class="diagram__conn">bewertet</div>
+<div class="diagram__node"><b>Vier Workstreams</b></div>
+<div class="diagram__conn">liefern</div>
+<div class="diagram__node"><b>Drei Ergebnisse</b></div>
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -218,11 +236,11 @@ Aenix ist das Unternehmen hinter **[Cozystack](/de/produkte/cozystack/)**, einem
 
 ### 14 Tage (fokussiert)
 Schwerpunkt auf einem Workstream (Souveränität ODER Kosten ODER Developer-Experience). Einzelne Business-Unit / Domain. Schriftlicher Bericht und Executive-Readout.
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (vollständig)
 Alle vier Workstreams in der Tiefe. Multi-BU-Stakeholder-Interviews. Vendor-Shortlisting für relevante Komponenten. PoC-Scoping. Schriftlicher Bericht, Executive-Readout und eine Phase-2-Implementations-Roadmap.
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 

@@ -10,6 +10,8 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **A sovereign cloud platform for the public sector is infrastructure that government, public administration, and quasi-public bodies own and control end to end, so regulated and classified data stays within the jurisdiction mandated by procurement and law. Aenix builds these platforms for EU member states and Central Asia on Cozystack, its open-source Apache 2.0 foundation that runs virtual machines and containers on one Kubernetes API. Engagements typically start with a Platform Readiness Assessment covering sovereignty, NIS2 and sectoral regulator gaps, procurement-process readiness, and capability transfer, then move to hardware-to-platform-to-operations implementation. Air-gapped deployments, customer-controlled encryption keys, and knowledge handover to in-house teams are first-class deliverables, and Aenix responds to RFI and RFP through standard government procurement channels.**
 quick_facts:
@@ -66,6 +68,9 @@ Most engagements involve formal procurement processes; Aenix accepts RFI / RFP t
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Why public sector is different
 
 - **Procurement processes are formal** — RFI / RFP / tender cycles run through specific portals (goszakup.gov.kz, mitwork.kz, zakup.sk.kz in Kazakhstan; eTendering and member-state portals in EU; equivalent processes elsewhere).
@@ -74,9 +79,22 @@ Most engagements involve formal procurement processes; Aenix accepts RFI / RFP t
 - **Capability transfer to in-house teams** — many public-sector deployments require knowledge handover so the customer team operates independently after build.
 - **Open-source preferred** — proprietary lock-in often disqualifies in evaluation.
 
+</div>
+</div>
+
 ---
 
 ## How Aenix engages with public-sector organizations
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment</b><div class="diagram__chips"><span>Sovereignty</span><span>Regulator-gap (NIS2 / sectoral)</span><span>Procurement-process readiness</span></div></div>
+<div class="diagram__conn">leads to</div>
+<div class="diagram__node"><b>Phase 2 implementation</b><div class="diagram__chips"><span>Hardware-to-platform-to-operations</span></div></div>
+<div class="diagram__conn">hands over to</div>
+<div class="diagram__node"><b>In-house team operations</b><div class="diagram__chips"><span>Knowledge transfer</span><span>Runbooks</span></div></div>
+</div>
+</div>
 
 The standard engagement: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with workstreams emphasized for public sector — sovereignty + regulator-gap (NIS2 / sectoral) + procurement-process readiness + capability transfer to in-house teams.
 
@@ -121,7 +139,9 @@ We respond with: company profile, prior public-sector references (where permissi
 
 ## How to start
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 Or read more:
 - **[Data sovereignty](/solutions/data-sovereignty/)** — sovereignty-led engagement

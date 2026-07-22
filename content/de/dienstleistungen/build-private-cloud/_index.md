@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/aenix-platform/public-cloud-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/build-private-cloud/
 direct_answer: |
   **Eine Private Cloud aufzubauen bedeutet 2026, eine eigene Cloud-Plattform für virtuelle Maschinen und Container auf eigener oder gemieteter Hardware zu betreiben — mit voller Daten- und Kostenkontrolle statt Public-Cloud-Abhängigkeit. Aenix baut Private Clouds end-to-end auf [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt (Apache 2.0): KubeVirt vereint VMs und Container auf einer Kubernetes-API, Cilium (eBPF) liefert das Netzwerk, LINSTOR/DRBD den Storage und das Tenant-CRD die Mandantenfähigkeit. Die Arbeit passt für Teams mit Plattform-Engineering-Funktion und konkretem Trigger — VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads oder FinOps-Klippe. Aenix liefert Assessment, Pilot, vollständigen Build und optional Managed Operations.**
@@ -79,6 +81,16 @@ Wenn Sie bei einem dieser Punkte unsicher sind, klärt die Assessment-Phase dies
 - **Compliance** — Souveränität, Audit-Bereitschaft je nach zuständigem Regulator.
 - **Wissenstransfer** — Ihr Plattform-Team betreibt sie nach der Übergabe.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Private Cloud auf Cozystack</b><div class="diagram__chips"><span>eigene oder gemietete Hardware</span><span>CNCF-Projekt, Apache 2.0</span></div></div>
+<div class="diagram__conn">vereint</div>
+<div class="diagram__node"><b>KubeVirt — VMs und Container</b><div class="diagram__chips"><span>Cilium (eBPF) Netzwerk</span><span>LINSTOR/DRBD Storage</span><span>auf einer Kubernetes-API</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Tenant-CRD — Mandantenfähigkeit</b><div class="diagram__chips"><span>RBAC, Quotas, Audit</span><span>Self-Service Golden Paths</span></div></div>
+</div>
+</div>
+
 ---
 
 ## Engagement-Struktur
@@ -99,14 +111,17 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 Tage)
-****
+**Auf Anfrage**
 
 ### Build-Engagement (3-12 Monate)
-****
+**Auf Anfrage**
 
 </div>
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Warum Aenix
 
@@ -114,6 +129,9 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 - **Kein Hyperscaler-Bias.** Keine Partnerschafts-Ökonomie prägt unsere Empfehlungen.
 - **Teams in der EU + Zentralasien.** Zeitzonen-freundlich.
 - **Open-Source-Plattform-Foundation** — die Cloud gehört Ihnen, nicht uns.
+
+</div>
+</div>
 
 ---
 

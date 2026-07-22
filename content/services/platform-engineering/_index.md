@@ -9,6 +9,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Platform engineering services build and operate the internal developer platform that product teams use for self-service environment provisioning, deployment, observability, secrets, and identity. Aenix delivers these services as the engineering team behind Cozystack, an open-source CNCF project (Apache 2.0) that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and a Tenant CRD multi-tenancy model. Engagements run in three modes: a 14-28 day Platform Readiness Assessment, a 3-12 month platform build with structured knowledge transfer, or a managed platform service with a documented in-house exit path. The work targets organizations with multiple product teams, slow time-to-environment, or compliance and sovereignty pressure, typically from roughly three product teams or thirty engineers upward.**
 quick_facts:
@@ -90,6 +92,9 @@ If three or more apply, structured platform engineering is the leverage. If your
 
 <!-- BLOCK 3: WHAT WE BUILD -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What an Aenix platform engineering engagement produces
 
 <div class="grid-2x2">
@@ -109,6 +114,9 @@ Pair programming, knowledge transfer, runbook authoring with named owners. Aenix
 </div>
 
 The output is a platform that's been actually built and tested in production with realistic workloads — not a reference architecture or a slide deck.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -143,6 +151,18 @@ These failure modes are predictable and avoidable — the engagement structure d
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
 ## How Aenix engages
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Current state</b><div class="diagram__chips"><span>Multiple product teams</span><span>Weeks to environment</span><span>Maxed DevOps / SRE</span></div></div>
+<div class="diagram__conn">engaged by</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix platform engineering engagement</b><div class="diagram__chips"><span>Readiness Assessment</span><span>Platform build</span><span>Managed service</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Internal developer platform</b><div class="diagram__chips"><span>Golden paths</span><span>Multi-tenancy</span><span>Operational model</span></div></div>
+<div class="diagram__conn">runs on</div>
+<div class="diagram__node"><b>Cozystack foundation</b><div class="diagram__chips"><span>VMs + containers</span><span>One Kubernetes API</span><span>Tenant CRD multi-tenancy</span></div></div>
+</div>
+</div>
 
 The engagement runs in three modes, scaled to where you are:
 
@@ -211,11 +231,11 @@ Named case studies available on the discovery call where customer permissions al
 
 ### Assessment (14-28 days)
 Fixed-price. Written deliverable, target architecture, Phase 2 roadmap.
-****
+**On request**
 
 ### Build / Managed engagement
 Time-and-materials or fixed-scope, depending on scope clarity. Phase 2 implementation typically 3-12 months elapsed; managed-services typically annual.
-****
+**On request**
 
 </div>
 

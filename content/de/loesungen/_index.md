@@ -8,11 +8,14 @@ language: "de"
 **Trigger-basierte Einstiegspunkte zu Aenix-Engagements. Finden Sie den Buyer-seitigen Grund, der Sie zu uns bringt, dann springen Sie zur passenden Lösung. Jede Lösung mappt auf spezifische Ænix-Platform-Editions und Engagement-Scope.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment anfragen →</a>
 </div>
 
 ---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Lösungen nach Trigger durchsuchen
 
@@ -36,6 +39,9 @@ language: "de"
 
 - **[Developer Self-Service](/de/loesungen/developer-self-service/)** — Internal Developer Platform mit Multi-Tenant-Developer-Workflows. Passt zu: IDP Edition. Kostenloses [Platform Engineering Maturity Assessment](/de/ressourcen/platform-engineering-maturity-assessment/).
 
+</div>
+</div>
+
 ---
 
 ## Wie diese Seite zu nutzen
@@ -44,6 +50,16 @@ language: "de"
 2. **Springen Sie zur Lösungs-Seite** — lesen Sie was wir liefern und wie
 3. **Prüfen Sie die passende Edition** — bestätigen Sie, welche Ænix Platform Edition zu Ihrem Scope passt
 4. **Discovery-Call buchen** — 30 min, kostenlos, keine Verpflichtung
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Ihr Trigger</b><div class="diagram__chips"><span>Regulatorisch</span><span>KI / GPU</span><span>Kosten / Konsolidierung</span><span>Engineering</span></div></div>
+<div class="diagram__conn">mappt auf</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Platform-Lösung</b><div class="diagram__chips"><span>DORA / NIS2</span><span>Souveräne KI</span><span>Cloud-Repatriation</span><span>Developer Self-Service</span></div></div>
+<div class="diagram__conn">passt zu</div>
+<div class="diagram__node"><b>Passende Edition</b><div class="diagram__chips"><span>Enterprise</span><span>AI/ML</span><span>Public Cloud</span><span>IDP</span><span>ISP</span></div></div>
+</div>
+</div>
 
 ---
 

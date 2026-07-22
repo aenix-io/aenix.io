@@ -8,6 +8,8 @@ related_pages:
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **A sovereign cloud builder designs and ships a substantively sovereign cloud product for regulated markets, going beyond regional data residency to deliver customer-controlled encryption keys, supplier-chain transparency, audit-ready trails, and an air-gap deployment option. It serves national and regional government IT services, telcos launching sovereign-cloud product lines, regional operators in jurisdictions with sovereignty mandates, and quasi-public entities. Aenix builds these products on Cozystack, an open-source Apache 2.0 CNCF project that runs virtual machines via KubeVirt and containers on a single Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. Because the foundation is open source with no phone-home telemetry, the resulting product can demonstrate transparency and regulator-aligned operations that hyperscaler "sovereign" regions cannot match substantively.**
 
@@ -79,13 +81,31 @@ These are differentiation features for a sovereign-cloud product. Hyperscaler "s
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Engagement structure
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Discovery + procurement-readiness</b><div class="diagram__chips"><span>BSI C5</span><span>SecNumCloud</span><span>EUCS</span></div></div>
+<div class="diagram__conn">scopes</div>
+<div class="diagram__node diagram__node--brand"><b>Aenix sovereign cloud build</b><div class="diagram__chips"><span>Sovereignty controls</span><span>Procurement-ready docs</span></div></div>
+<div class="diagram__conn">delivered on</div>
+<div class="diagram__node"><b>Cozystack platform</b><div class="diagram__chips"><span>KubeVirt VMs</span><span>Containers</span><span>One Kubernetes API</span></div></div>
+<div class="diagram__conn">runs on</div>
+<div class="diagram__node"><b>Customer hardware / jurisdiction</b><div class="diagram__chips"><span>Air-gap option</span><span>Customer-controlled keys</span></div></div>
+</div>
+</div>
 
 - **Discovery + procurement-readiness assessment** (4-8 weeks)
 - **Phase 2 build** (8-24 months) — platform + sovereignty controls + procurement-ready documentation
 - **Phase 3 (optional)** — managed operation under regulator-aligned governance
 
 For specific sovereign-cloud requirements (BSI C5, SecNumCloud, EUCS) — discussed during discovery.
+
+</div>
+</div>
 
 ---
 
@@ -98,7 +118,9 @@ Aenix accepts RFI / RFP through:
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Sovereign cloud playbook](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)**
 - **[Data sovereignty](/solutions/data-sovereignty/)** — adjacent solution

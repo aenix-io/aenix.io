@@ -40,9 +40,10 @@ faq:
 **KI-Plattform-Automatisierung out-of-the-Box. Standard-KI-Workloads, Service-APIs und fertige Blueprints, Datenbanken, Apps und Modelle — damit Ihr KI-Team von der Idee zu laufenden Jobs schneller kommt. Multi-Tenant-GPU-Scheduling, Vector-DBs, Souveränitätskontrollen inklusive. Gebaut für KI-native Organisationen und regulierte KI-Deployments at scale.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
 </div>
+
 ---
 
 ## Was in der AI/ML Edition enthalten ist
@@ -137,7 +138,7 @@ AI/ML Edition Kunden sind NDA-geschützt. KI-native Organisationen und reguliert
 Buchen Sie einen 30-Minuten-Discovery-Call. Bringen Sie Ihr KI-Workload-Profil (steady Inferenz / Training / Fine-Tuning / RAG / Mix), regulatorischen Scope und Ziel-Deployment-Modell mit.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

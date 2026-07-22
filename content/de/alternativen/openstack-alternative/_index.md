@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/cozystack
   - /de/dienstleistungen/private-cloud-consulting
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /alternatives/openstack-alternative/
 direct_answer: |
   **Eine OpenStack-Alternative ist eine Cloud-Plattform, die dieselben Open-Source- und Multi-Tenant-Garantien wie OpenStack bietet, aber mit deutlich leichterem operativem Footprint. Sie richtet sich an Hosting-Anbieter, regionale Clouds, Telcos und Betreiber, die unter knapper OpenStack-Expertise, großen Operations-Teams und riskanten Upgrade-Zyklen leiden. Cozystack ist die Kubernetes-native Open-Source-Alternative unter derselben Lizenz (Apache 2.0): KubeVirt führt VMs und Container über eine Kubernetes-API, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD das Storage, und Tenant-CRDs liefern echte Mandantenfähigkeit. Aenix produktisiert dies als Ænix Platform und bietet Migration und Betrieb als Service an.**
@@ -47,6 +49,16 @@ faq:
 
 Cozystack ist die Open-Source-Alternative für Organisationen, die die Open-Source- und Multi-Tenant-Garantien von OpenStack mit einem leichteren operativen Footprint wollen. Gleiche Lizenz (Apache 2.0), Kubernetes-native Foundation, weniger bewegliche Teile.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>OpenStack</b><div class="diagram__chips"><span>knappe OpenStack-Expertise</span><span>riskante Upgrade-Zyklen</span></div></div>
+<div class="diagram__conn">Migration</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>leichterer operativer Footprint</b><div class="diagram__chips"><span>echte Mandantenfähigkeit</span><span>5-15 Operatoren</span></div></div>
+</div>
+</div>
+
 > **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds, die von OpenStack modernisieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack at scale konsolidieren.
 
 <div class="cta-row">
@@ -68,6 +80,9 @@ Wenn Ihre Skala oder Ihr Use Case OpenStack wirklich erfordert (Large-Telco, tie
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Cozystack als OpenStack-Alternative
 
 | | OpenStack | Cozystack |
@@ -80,6 +95,9 @@ Wenn Ihre Skala oder Ihr Use Case OpenStack wirklich erfordert (Large-Telco, tie
 | **VM-Workloads** | Nova + KVM | KubeVirt |
 | **Container-Workloads** | Magnum (separat) | Nativ |
 | **Am besten für** | Große Telco / Government / OpenStack-erfahrene Teams | Service-Provider, regulierte Multi-Tenancy, modernes Greenfield |
+
+</div>
+</div>
 
 ---
 

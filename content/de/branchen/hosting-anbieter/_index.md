@@ -5,6 +5,8 @@ related_pages:
   - /de/dienstleistungen/public-cloud-builder
   - /products/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/hosting-providers/
 direct_answer: |
   **Eine Cloud-Plattform für Hosting-Anbieter ermöglicht es traditionellen Hostern (Shared, VPS, Dedicated, Bare Metal), Cloud-Dienste anzubieten, die preislich mit Hyperscalern konkurrieren, ohne ihre direkten Kundenbeziehungen aufzugeben. Aenix liefert dies über Cozystack, eine Kubernetes-native Open-Source-Plattform, die VMs (KubeVirt) und Container über eine einzige API bereitstellt, Kunden über das Tenant-CRD mandantenfähig isoliert und einen Service-Katalog jenseits reiner VMs bietet. Die produktisierte Ænix Platform ISP Edition ergänzt WHMCS-Billing-Integration, Tenant Lock/Suspension und Migrations-Tooling von VMware, OpenStack und Virtuozzo. Lizenzierung erfolgt unter Apache 2.0 ohne per-CPU-Modell.**
@@ -58,6 +60,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wofür Hosting-Anbieter zu uns kommen
 
 - **Modernisierung von VPS zum Cloud-Produkt** — Multi-Tenant-Kubernetes-native Plattform
@@ -68,6 +73,9 @@ faq:
 
 Für ein sales-geführtes Engagement siehe **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** und **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)**.
 
+</div>
+</div>
+
 ---
 
 ## Warum Cozystack zu Hosting-Anbietern passt
@@ -77,6 +85,18 @@ Für ein sales-geführtes Engagement siehe **[Public Cloud Builder](/de/dienstle
 - **Open-Source-Plattform** — keine Per-CPU-Lizenzierung, Hosting-Marge bleibt erhalten
 - **Service-Katalog** — weit über VMs hinaus (Managed DBs, S3, GPU)
 - **Operative Einfachheit** — eine Plattform, ein Team
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>WHMCS-Billing</b><div class="diagram__chips"><span>Zwei Integrationsmodi</span><span>Tenant Lock/Suspension</span></div></div>
+<div class="diagram__conn">provisioniert über</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b><div class="diagram__chips"><span>cozyportal</span><span>Migrations-Tooling</span></div></div>
+<div class="diagram__conn">stellt bereit</div>
+<div class="diagram__node"><b>Cozystack Service-Katalog</b><div class="diagram__chips"><span>VMs</span><span>Managed Databases</span><span>S3</span><span>GPU</span></div></div>
+<div class="diagram__conn">isoliert Kunden über</div>
+<div class="diagram__node"><b>Tenant-CRD</b><div class="diagram__chips"><span>Isolation auf Produktionsniveau</span></div></div>
+</div>
+</div>
 
 Produktive Referenzen: regionale Hosting-Anbieter betreiben die Ænix Platform ISP Edition; Tier-1-europäische Bank-Deployments unter NDA bis Mitte 2027.
 

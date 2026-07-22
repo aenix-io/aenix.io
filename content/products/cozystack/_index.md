@@ -3,6 +3,10 @@ title: "Cozystack — open-source cloud platform on Kubernetes"
 description: "Cozystack is the open-source cloud platform Aenix created and maintains, and a CNCF project. It runs virtual machines, containers, managed databases, S3..."
 related_pages: ["/products/aenix-platform", "/products/aenix-platform/isp-edition", "/services/platform-engineering", "/services/private-cloud-consulting", "/alternatives/vmware-alternative"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer_image: "/images/cozystack-screenshot.png"
+direct_answer_image_alt: "Cozystack console — self-service marketplace"
 direct_answer: |
   **Cozystack is an open-source cloud platform built on Kubernetes that runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own, under one Kubernetes-native control plane with multi-tenant isolation. It is licensed Apache 2.0 with no per-CPU or per-core fees, and is a CNCF project (Sandbox since February 2025, CNCF Incubating expected late summer 2026). Aenix is the open-core company that created and maintains Cozystack and is its largest single contributor. Cozystack fits service providers, regulated enterprises, telecom operators, and platform teams that want a self-hosted alternative to proprietary virtualization and public cloud. Aenix sells Ænix Platform, a turnkey cloud-in-a-box on top of Cozystack, plus engagement and managed services.**
 quick_facts:
@@ -57,6 +61,9 @@ CNCF Project · CNCF-Certified Kubernetes Distribution · OpenSSF Best Practices
 
 <!-- BLOCK 2: WHAT'S IN COZYSTACK -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What's in Cozystack
 
 <div class="capability-grid-3x3">
@@ -90,7 +97,20 @@ cozyportal for self-service. Production-ready WHMCS billing integration with two
 
 </div>
 
-![Cozystack dashboard — self-service catalog of managed services](/images/uploads/2026/04/cozystack-managed-services.png)
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant CRD multi-tenancy</span><span>cozyportal</span><span>WHMCS billing</span></div></div>
+<div class="diagram__conn">one Kubernetes API</div>
+<div class="diagram__node"><b>Workloads</b><div class="diagram__chips"><span>KubeVirt VMs</span><span>Containers</span><span>Managed databases</span><span>S3 object storage</span><span>GPU</span></div></div>
+<div class="diagram__conn">networking, storage, observability</div>
+<div class="diagram__node"><b>Platform services</b><div class="diagram__chips"><span>Cilium eBPF</span><span>LINSTOR / DRBD</span><span>Rook-Ceph</span><span>VictoriaMetrics + VictoriaLogs</span></div></div>
+<div class="diagram__conn">on</div>
+<div class="diagram__node"><b>Bare metal you own</b><div class="diagram__chips"><span>Commodity x86 servers</span></div></div>
+</div>
+</div>
+
+</div>
+</div>
 
 <!-- /BLOCK 2 -->
 
@@ -100,11 +120,15 @@ cozyportal for self-service. Production-ready WHMCS billing integration with two
 
 ## Cozystack the project vs Aenix the company vs Ænix Platform the product
 
+<div class="advantage-panel">
+
 - **Cozystack** — open-source platform. CNCF project (currently Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Community-governed. Anyone can deploy, contribute, fork.
 - **Aenix** — the open-core company that created and maintains Cozystack. Largest single contributor. Maker of Ænix Platform.
 - **Ænix Platform** — Aenix's turnkey commercial cloud-in-a-box on top of Cozystack. Five editions (Public Cloud / ISP / Enterprise / IDP / AI/ML) matched to buyer profile. Adds hosting panel, billing, portals, payments, support, productized installer, enterprise SLA. **[Explore platform →](/products/aenix-platform/)**.
 - **cozystack.io** — official project site. Documentation, install, releases, community. Vendor-neutral, CNCF-aligned.
 - **aenix.io** (this site) — Aenix's commercial offering and product surface.
+
+</div>
 
 You can use Cozystack open-source without Aenix; Aenix's commercial offering (Ænix Platform + engagement services) is optional. Many customers choose Ænix Platform for the turnkey package — billing, portals, payments, support — without building those layers themselves.
 
@@ -129,7 +153,13 @@ Production deployments across the EU, DACH, and Central Asia. Customer base span
 
 Cozystack is also listed in the [CNCF Landscape](https://landscape.cncf.io) — community production users beyond Aenix's customer base.
 
-> {{QUOTE_1 — pending permission}}
+<div class="quote-person">
+<p class="quote-person__body">"Cozystack has the energy of a young project and the strength of a mature platform — a rare and rather dangerous combination for the old guard. Aenix maintains it with the mindset of a hungry startup: they listen, move fast, and solve customer problems instead of sending them into a support maze."</p>
+<div class="quote-person__cite">
+<span class="quote-person__avatar"><img src="/images/quotes/qasym-majen.png" alt="Qasym Majen"></span>
+<span><span class="quote-person__name">Qasym Majen</span><span class="quote-person__role">Founder, QOSI — Qazaq Open Source Initiative</span></span>
+</div>
+</div>
 
 <!-- /BLOCK 4 -->
 
@@ -180,7 +210,10 @@ For commercial Aenix support and the turnkey cloud-in-a-box on top of Cozystack,
 
 Entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
-[Pricing details →](/pricing/) | [All editions →](/products/aenix-platform/)
+<div class="cta-row">
+  <a class="cta-secondary" href="/pricing/">Pricing details →</a>
+  <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
+</div>
 
 <!-- /BLOCK 6 -->
 
@@ -193,7 +226,9 @@ Entry tier — **Pure Cozystack with Ænix Support** — for product teams runni
 <!-- BLOCK 8: BOTTOM CTA -->
 
 <a id="discovery"></a>
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[cozystack.io](https://cozystack.io)** — install, documentation, community
 - **[Cozystack architecture article](/blog/2026/05/cozystack-introduction-architecture/)**

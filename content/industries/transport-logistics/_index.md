@@ -7,6 +7,8 @@ related_pages:
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Transport and logistics operators classified as essential entities under NIS2 (the transport sector falls under Annex I) need a cloud platform that runs consistently at headquarters, regional sites, and the edge — depots, ports, terminals, and vehicles — under one operational model. Aenix addresses this with Cozystack, the CNCF open-source platform it builds, and the commercial Ænix Platform on top. Cozystack runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage, and supports air-gapped operational-technology systems such as rail signalling and port automation. Built-in Tenant-CRD multi-tenancy separates freight, passenger, and intermodal business units, while AI infrastructure serves routing, demand forecasting, and predictive maintenance. NIS2-aligned controls are structural rather than bolted on.**
 
@@ -63,6 +65,9 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What transport teams come to us for
 
 - **NIS2 compliance** for cloud + OT infrastructure (transport is essential-entity Annex I)
@@ -72,9 +77,22 @@ faq:
 - **Sovereignty** for cross-border logistics data
 - **VMware exit / OpenStack modernization**
 
+</div>
+</div>
+
 ---
 
 ## Cozystack pattern for transport
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>HQ + regional sites</b></div>
+<div class="diagram__conn">run on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix Platform</b><div class="diagram__chips"><span>One Kubernetes API</span><span>KubeVirt VMs + containers</span><span>Air-gap for OT</span></div></div>
+<div class="diagram__conn">extends to</div>
+<div class="diagram__node"><b>Edge</b><div class="diagram__chips"><span>Depots</span><span>Ports</span><span>Terminals</span><span>Vehicles</span></div></div>
+</div>
+</div>
 
 - Multi-site: HQ + regional + depot/port/terminal edge under one Kubernetes API
 - Air-gap support for OT systems (rail signalling, port automation)
@@ -84,7 +102,9 @@ faq:
 
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Transport architecture article](/blog/2026/05/transport-logistics-cloud-architecture-nis2/)**
 - **[NIS2 compliance](/solutions/nis2-compliance/)**

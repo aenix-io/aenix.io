@@ -36,9 +36,10 @@ faq:
 **Ein Internal Developer Platform Layer auf einer Kubernetes-nativen Cloud. GitLab-Automation, Argo CD Workflows und APIs — damit Ihre Engineers weniger Zeit mit Routine-Arbeit und mehr Zeit mit Produkt-Auslieferung verbringen. Inklusive der vollständigen Cozystack-basierten Cloud darunter: Tenancy, Observability, Secrets, Identity, Multi-Cluster.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
 </div>
+
 ---
 
 ## Was in der IDP Edition enthalten ist
@@ -126,7 +127,7 @@ IDP Edition Kunden sind derzeit NDA-geschützt. Produkt- / SaaS-Engagements akti
 Buchen Sie einen 30-Minuten-Discovery-Call. Bringen Sie Ihre Plattform-Engineering-Reife-Selbsteinschätzung mit (oder nutzen Sie unser [kostenloses Assessment](/de/ressourcen/platform-engineering-maturity-assessment/)).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

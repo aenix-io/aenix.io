@@ -4,6 +4,8 @@ description: "Excel / Google Sheets Template, das Ihnen erlaubt, Ihren tatsächl
 type: "page"
 related_pages: ["/de/loesungen/cloud-repatriation", "/de/loesungen/cloud-kostenoptimierung", "/de/produkte/aenix-platform/"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Das Cloud-Repatriation-TCO-Worksheet ist ein kostenloses Excel- und Google-Sheets-Template, mit dem IT-Entscheider, FinOps-Teams und Plattform-Verantwortliche ihren tatsächlichen Public-Cloud-Spend eingeben und einen ehrlichen Total-Cost-of-Ownership-Vergleich gegen eine Private Cloud erstellen. Es modelliert versteckte Kosten wie Egress, ungenutzte und überdimensionierte Ressourcen, Commitment-Underutilisation und Hyperscaler-Managed-Service-Premiums sowie realistische Destination-Kosten über fünf Jahre. Aenix, das Open-Core-Unternehmen hinter dem CNCF-Projekt Cozystack, bietet das Worksheet an, damit Organisationen ihren Repatriation-Case faktenbasiert bewerten und bei Bedarf die Ænix Platform als Ziel-Plattform (KubeVirt, Cilium, LINSTOR auf einer Kubernetes-API) evaluieren können.**
 quick_facts:
@@ -42,7 +44,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[TCO-Worksheet herunterladen (Excel + Google Sheets)]
+<p class="lead-magnet-form__note">TCO-Worksheet herunterladen (Excel + Google Sheets)</p>
 </div>
 
 ---
@@ -67,6 +69,16 @@ faq:
 ### Sheet 3: Workload-Klassifizierung
 ### Sheet 4: Cost-Trajektorie (5-Jahre)
 ### Sheet 5: Decision-Framework
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>TCO-Worksheet</b><div class="diagram__chips"><span>Excel + Google Sheets</span><span>Fünf Sheets</span></div></div>
+<div class="diagram__conn">erstellt</div>
+<div class="diagram__node"><b>Ehrlicher 5-Jahres-TCO-Vergleich</b><div class="diagram__chips"><span>versteckte Kosten</span><span>Public Cloud vs Private Cloud</span></div></div>
+<div class="diagram__conn">Ziel-Plattform</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+</div>
+</div>
 
 ---
 

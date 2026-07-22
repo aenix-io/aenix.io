@@ -3,6 +3,10 @@ title: "Private cloud platform — open source, Kubernetes-native, multi-tenant"
 description: "Cozystack is the open-source private cloud platform built for service providers, regulated enterprises, and sovereign-cloud builders. KubeVirt-based..."
 related_pages: ["/services/private-cloud-consulting", "/solutions/data-sovereignty", "/solutions/cloud-repatriation", "/alternatives/vmware-alternative", "/products/cozystack"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer_image: "/images/cozystack-screenshot.png"
+direct_answer_image_alt: "Cozystack private-cloud console — self-service marketplace"
 direct_answer: |
   **A private cloud platform is infrastructure an organization runs on hardware it owns or controls, replacing the VMware Cloud Foundation stack with software it governs end to end. Cozystack is an open-source, Kubernetes-native private cloud platform built for service providers, regulated enterprises, telecom operators, and sovereign-cloud builders. It combines KubeVirt virtualization for VMs and containers, Cilium (eBPF) networking, LINSTOR/DRBD replicated storage, a Tenant CRD multi-tenant control plane, managed databases, S3 object storage, and GPU as a service on bare metal. Cozystack is a CNCF project under Apache 2.0 with no per-CPU or per-core licensing. Aenix, the company behind Cozystack, builds and maintains it and offers the productized Ænix Platform plus commercial support and engineering services on top.**
 quick_facts:
@@ -179,11 +183,11 @@ GitHub issues, public Slack, no SLA.
 
 ### Standard support
 Business-hours response, runbooks, advisory.
-****
+**On request**
 
 ### Enterprise / 24×7
 Production SLA, dedicated TAM, GitOps PR review, incident response.
-****
+**On request**
 
 </div>
 
@@ -204,7 +208,9 @@ No per-CPU, per-VM, or per-core meter. Hardware + chosen Aenix tier.
 <a id="discovery"></a>
 ## Get started
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 Or:
 - **[cozystack.io](https://cozystack.io)** — install and documentation

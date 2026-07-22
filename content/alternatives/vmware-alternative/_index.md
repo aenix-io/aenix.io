@@ -10,6 +10,8 @@ related_pages:
   - /products/cozystack
   - /pricing
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack is an open-source, Kubernetes-native VMware alternative that replaces the full VMware Cloud Foundation stack — vSphere/ESXi, vCenter, vSAN, NSX, vCloud Director, and Site Recovery Manager — on your own bare metal. It is built for service providers exiting VMware Cloud Director and regulated enterprises exiting VCF. It runs virtual machines through KubeVirt (KVM-based, with live migration and snapshots) alongside containers on one Kubernetes API, uses Cilium (eBPF) for networking, LINSTOR or Ceph for storage, and a Tenant CRD for native multi-tenancy. Licensed Apache 2.0 with no per-CPU, per-VM, or per-core metering. Aenix, the company behind Cozystack, productizes it as the Ænix Platform and runs the VMware migration end to end.**
 quick_facts:
@@ -114,6 +116,9 @@ KubeVirt, Cilium, LINSTOR, and Flux ship faster as community projects than Broad
 
 <!-- BLOCK 4: WHAT YOU GET (capability list) -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What Cozystack gives you instead
 
 <div class="capability-grid">
@@ -132,6 +137,9 @@ KubeVirt, Cilium, LINSTOR, and Flux ship faster as community projects than Broad
 
 Runs on your bare metal — no public-cloud dependency.
 
+</div>
+</div>
+
 <!-- /BLOCK 4 -->
 
 ---
@@ -139,6 +147,18 @@ Runs on your bare metal — no public-cloud dependency.
 <!-- BLOCK 5: ARCHITECTURE MAPPING (table only — no narrative) -->
 
 ## VMware → Cozystack: one-to-one component mapping
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>VMware Cloud Foundation</b><div class="diagram__chips"><span>vSphere / vCenter</span><span>vSAN / NSX</span><span>Per-CPU subscription</span></div></div>
+<div class="diagram__conn">migrate via</div>
+<div class="diagram__node"><b>Six-step migration</b><div class="diagram__chips"><span>KubeVirt CDI</span><span>Parallel deploy</span><span>Cilium / LINSTOR cutover</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt VMs + containers</span><span>Cilium (eBPF)</span><span>LINSTOR or Ceph</span><span>Tenant CRD</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>No per-CPU licensing</b><div class="diagram__chips"><span>Apache 2.0</span><span>Your bare metal</span><span>EU support team</span></div></div>
+</div>
+</div>
 
 | VMware / VCF | Cozystack equivalent |
 |---|---|

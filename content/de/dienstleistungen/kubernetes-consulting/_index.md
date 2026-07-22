@@ -5,6 +5,8 @@ related_pages:
   - /de/dienstleistungen/platform-engineering
   - /products/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/kubernetes-consulting/
 direct_answer: |
   **Kubernetes-Consulting von Aenix richtet sich an Organisationen, die Produktions-Kubernetes als Multi-Tenant-Plattform betreiben — nicht als generische Compute-Schicht. Aenix ist das Team hinter Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0, und betreibt diese Kubernetes-native Plattform in Produktion mit Service Providern, Banken und KI-Operatoren. Das Consulting deckt Architektur-Review (Distribution, CNI, Storage, Identity, Observability, GitOps), Multi-Tenancy-Design über das Tenant-CRD, operative Praktiken (Cluster-Lifecycle, Backup/DR, Incident Response) und Produktionsbereitschaft ab. Cozystack vereint VMs und Container über KubeVirt auf einer Kubernetes-API, mit Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage. Eigenständiges Consulting ist auch ohne Ænix-Platform-Evaluierung verfügbar.**
@@ -63,6 +65,9 @@ Produktions-Multi-Tenancy · Open-Source-Foundation · CNCF-Contributor · Senio
 
 <!-- BLOCK 2: WHO -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wer Kubernetes-Consulting braucht
 
 Das Engagement passt, wenn:
@@ -74,6 +79,9 @@ Das Engagement passt, wenn:
 - **Produktionsbereitschafts-Review** vor dem GA.
 
 Wenn drei oder mehr zutreffen, verzinst sich strukturiertes Consulting schnell. Andernfalls ist eine interne Kompetenz kosteneffizienter.
+
+</div>
+</div>
 
 <!-- /BLOCK 2 -->
 
@@ -97,6 +105,16 @@ Cluster-Lifecycle (Upgrades, Skalierung, Recovery), Backup und DR (Velero), Obse
 **4. Produktionsbereitschafts-Checkliste**
 Sicherheits-Posture (PSPs / Pod Security Standards, Network Policies, Secrets-Management), Compliance-Posture (Audit-Logging, Zertifizierungen), operative Posture (Runbooks, On-Call, SLOs).
 
+</div>
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Kubernetes-Consulting</b><div class="diagram__chips"><span>Team hinter Cozystack</span><span>Senior-Engineers, keine Analysten</span></div></div>
+<div class="diagram__conn">deckt ab</div>
+<div class="diagram__node"><b>Multi-Tenant-Produktionsplattform</b><div class="diagram__chips"><span>Architektur-Review</span><span>Multi-Tenancy-Design (Tenant-CRD)</span><span>Operative Praktiken</span><span>Produktionsbereitschafts-Checkliste</span></div></div>
+<div class="diagram__conn">läuft auf</div>
+<div class="diagram__node"><b>Cozystack (Apache 2.0)</b><div class="diagram__chips"><span>VMs und Container über KubeVirt</span><span>Cilium (eBPF) Networking</span><span>LINSTOR/DRBD Storage</span></div></div>
+</div>
 </div>
 
 <!-- /BLOCK 3 -->
@@ -185,11 +203,11 @@ Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessmen
 
 ### Architektur-Review (5-10 Tage)
 Festpreis.
-****
+**Auf Anfrage**
 
 ### Implementations-Engagement
 Time-and-Materials oder Fixed-Scope. Phase 2 typischerweise 1-6 Monate.
-****
+**Auf Anfrage**
 
 </div>
 

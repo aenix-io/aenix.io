@@ -3,6 +3,8 @@ title: "VMware Migration — VCF verlassen, ohne die Anwendung zu zerbrechen"
 description: "Post-Broadcom-VMware-Migration ist ein geplantes Projekt, kein Notfall. Gut umgesetzt produziert es eine Plattform, die Sie kontrollieren, und 30-60%..."
 related_pages: ["/de/alternativen/vmware-alternative", "/de/loesungen/cloud-repatriation", "/products/cozystack"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /migration/vmware/
 direct_answer: |
   **Eine VMware-Migration nach Broadcom ist ein geplantes Projekt, kein Notfall: Inventarisierung des vSphere/VCF/vCD-Bestands, Zielarchitektur, Migration in Kohorten mit Parallel-Run und VMware-Decommission. Aenix führt diese End-to-End-Migration durch und empfiehlt als Standard Cozystack, eine offene CNCF-Plattform (Apache 2.0), die VMs und Container über eine Kubernetes-API mit KubeVirt betreibt. Sie richtet sich an Hosting-Anbieter, die VMware Cloud Director verlassen, sowie an regulierte Unternehmen, die VCF ablösen. Gut umgesetzt liefert sie eine selbst kontrollierte Plattform und 30-60% Kostenreduktion bei migrierten Workloads ohne CPU- oder Core-basierte Lizenzierung.**
@@ -94,11 +96,26 @@ VMware-Decommission, sobald Kohorten abgeschlossen sind. Hardware wird wo mögli
 
 </div>
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>VMware VCF / vSphere / vCD</b><div class="diagram__chips"><span>vSAN</span><span>NSX</span><span>Windows-VMs</span></div></div>
+<div class="diagram__conn">wandert durch</div>
+<div class="diagram__node"><b>Kohorten-basierter Cutover</b><div class="diagram__chips"><span>KubeVirt-CDI-Konvertierung</span><span>Parallelbetrieb-Validierung</span></div></div>
+<div class="diagram__conn">landet auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">abgeschlossen mit</div>
+<div class="diagram__node"><b>VMware-Decommission</b><div class="diagram__chips"><span>Letzte Verlängerung vermieden</span><span>30-60% Kostenreduktion</span></div></div>
+</div>
+</div>
+
 <!-- /BLOCK 3 -->
 
 ---
 
 <!-- BLOCK 4: COMMON MIGRATION FAILURES -->
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
 ## Wo VMware-Migrationen häufig scheitern
 
@@ -116,6 +133,9 @@ Workloads landen auf einer Private Cloud, die nicht für die Produktion konstrui
 **Übersprungenes Network- und Storage-Redesign**
 Networking und Storage auf Cozystack (oder einer Alternative) unterscheiden sich von NSX/vSAN. Das Redesign zu überspringen produziert operative Fragilität.
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 4 -->
@@ -199,11 +219,11 @@ Ein Bestand von 100 VMs wird typischerweise in 8-12 Monaten abgeschlossen. Ein B
 <div class="pricing-cards-2">
 
 ### Assessment
-****
+**Auf Anfrage**
 
 ### Implementierung
 Time-and-Materials oder Fixed-Scope.
-****
+**Auf Anfrage**
 
 </div>
 

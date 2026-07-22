@@ -5,6 +5,8 @@ related_pages:
   - /de/dienstleistungen/platform-engineering
   - /products/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /services/internal-developer-platform/
 direct_answer: |
   **Eine Internal Developer Platform (IDP) ist eine intern bereitgestellte, opinionated Self-Service-Schicht, über die Produkt-Teams Umgebungen, Datenbanken und Deployments selbst bereitstellen, ohne für jede Anfrage ein Ticket beim Plattform- oder DevOps-Team zu öffnen. Sie richtet sich an Organisationen mit drei oder mehr Produkt-Teams, langer Time-to-Environment und inkonsistenten Infrastruktur-Mustern. Aenix baut IDPs, die tatsächlich adoptiert werden: Golden-Path-Templates, GitLab-Automation und Argo-CD-Workflows auf einer mandantenfähigen Cozystack-Foundation (KubeVirt für VMs und Container über eine Kubernetes-API, Cilium-Networking, LINSTOR-Storage, Tenant-CRD-Isolation). Cozystack ist Apache-2.0-lizenziert; Aenix liefert mit der Ænix Platform IDP Edition die produktisierte Variante plus operatives Handover, das Ihr Plattform-Team aufrechterhalten kann.**
@@ -66,6 +68,9 @@ Production-grade · Adoption-getrieben · Open-Source-Foundation · Ergebnis im 
 
 <!-- BLOCK 2: WHO THIS IS FOR -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wer braucht eine Internal Developer Platform
 
 Die Investition in eine Internal Developer Platform passt, wenn:
@@ -77,6 +82,9 @@ Die Investition in eine Internal Developer Platform passt, wenn:
 - **Spezifischer Druck** (Regulator, Kosten, Souveränität, Skalierung) macht strukturierte Plattform-Investition jetzt relevant
 
 Wenn Ihre Situation auf drei dieser Punkte passt, liefert strukturierte IDP-Arbeit Adoption + Velocity innerhalb weniger Monate. Wenn Sie ein Produkt-Team und eine kleine Infrastruktur-Oberfläche haben, liefern einfachere Shared-Tooling-Praktiken ein besseres Kosten-Nutzen-Verhältnis.
+
+</div>
+</div>
 
 <!-- /BLOCK 2 -->
 
@@ -103,6 +111,16 @@ Dokumentierte Plattform-Team-Verantwortlichkeiten, On-Call-Muster, Kapazitätspl
 </div>
 
 Das Ergebnis wird in Adoptions-Metriken gemessen — Time-to-Environment, Golden-Path-Adoptionsrate, interner NPS — nicht in Feature-Anzahl.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Aenix-IDP-Engagement</b><div class="diagram__chips"><span>Opinionated Plattform</span><span>Wissenstransfer und operatives Handover</span></div></div>
+<div class="diagram__conn">produziert</div>
+<div class="diagram__node"><b>Opinionated Plattform auf Cozystack</b><div class="diagram__chips"><span>Golden-Path-Templates</span><span>GitLab-Automation, Argo-CD-Workflows</span><span>KubeVirt, Cilium, LINSTOR</span><span>Tenant-CRD-Isolation</span></div></div>
+<div class="diagram__conn">gemessen in</div>
+<div class="diagram__node"><b>Adoptions-Metriken</b><div class="diagram__chips"><span>Time-to-Environment</span><span>Golden-Path-Adoptionsrate</span><span>interner NPS</span></div></div>
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -203,11 +221,11 @@ Wir haben Internal Developer Platforms gebaut für Service-Anbieter, die mandant
 
 ### Assessment (14-28 Tage)
 Festpreis. Schriftliches Deliverable, Ziel-IDP-Architektur, Phase-2-Roadmap.
-****
+**Auf Anfrage**
 
 ### Build- / Managed-Engagement
 Time-and-Materials oder Fixed-Scope. Phase-2-Build typischerweise 3-9 Monate Laufzeit.
-****
+**Auf Anfrage**
 
 </div>
 

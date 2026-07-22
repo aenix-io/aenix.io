@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "private llm"
 secondary_keywords: ["self-hosted llm", "on-premise llm", "on-prem genai"]
 hreflang_de: "/de/loesungen/private-llm/"
@@ -82,6 +84,16 @@ Das ist speziell das Problem „Private LLM / Self-Hosted LLM / On-Prem GenAI". 
 
 Eine On-Prem-GenAI-Plattform ist mehr als eine Modelldatei. Aenix setzt den gesamten Stack aus offenen, [CNCF](https://www.cncf.io/)-nahen Bausteinen zusammen, sodass nichts Sie zurück zu einem proprietären KI-Dienst zwingt.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Ihre Daten + Open-Weight-Modell</b><div class="diagram__chips"><span>Prompts</span><span>Dokumente</span><span>Llama / Mistral / Qwen</span></div></div>
+<div class="diagram__conn">für Inferenz bereitgestellt auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack-GPUs</b><div class="diagram__chips"><span>NVIDIA Dynamo</span><span>Qdrant-RAG</span><span>Daten bleiben in der Grenze</span></div></div>
+<div class="diagram__conn">erzeugt</div>
+<div class="diagram__node"><b>Private Inferenz</b><div class="diagram__chips"><span>Antworten bleiben in der Grenze</span><span>Weights, Keys, Logs bei Ihnen</span></div></div>
+</div>
+</div>
+
 - **Open-Weight-Modell-Serving.** Modelle wie Llama, Mistral und Qwen für Inferenz auf Ihren GPUs, den Teams als gewöhnliche Kubernetes-Services statt als externer Endpoint bereitgestellt.
 - **RAG über Ihre Dokumente.** Eine **Qdrant**-Vektordatenbank indexiert Ihre eigenen Inhalte und ruft zur Anfragezeit die relevanten Passagen ab, um Antworten in Ihren Daten zu erden. Sowohl die Quelldokumente als auch die generierten Antworten bleiben innerhalb der Grenze.
 - **Effiziente Inferenz.** **NVIDIA Dynamo** liefert disaggregiertes Serving und KV-Cache-bewusstes Routing über die GPU-Flotte, was die Auslastung teurer Karten ohne zusätzliche Anbieter-Lizenzen erhöht.
@@ -104,6 +116,9 @@ Konkret paketierte das Team **Qdrant** als Plattform-App für RAG neben den GPU-
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Welche Modelle und welche Workloads?
 
 „Private LLM" ist nicht ein Workload — es ist eine kleine Familie, und jede hat eine andere Infrastruktur-Form.
@@ -114,6 +129,9 @@ Konkret paketierte das Team **Qdrant** als Plattform-App für RAG neben den GPU-
 - **Batch und Klassifizierung.** Hochdurchsatz-, latenztolerante Jobs — Massen-Summarisierung, Extraktion, Tagging — bei denen fraktionales GPU-Sharing und Off-Peak-Scheduling die Auslastung hoch halten.
 
 Die GPU-Flotte gegen diesen Mix richtig zu dimensionieren, ist genau das, was ein Assessment klärt, bevor Hardware festgelegt wird.
+
+</div>
+</div>
 
 ---
 

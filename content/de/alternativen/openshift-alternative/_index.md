@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-engineering
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /alternatives/openshift-alternative/
 direct_answer: |
   **Eine OpenShift-Alternative ist eine Kubernetes-Plattform, die die Enterprise-Fähigkeiten von Red Hat OpenShift bietet, ohne das Red-Hat-Subscription-Modell und die Bindung an das Red-Hat-/IBM-Ökosystem. Cozystack ist die realistische Open-Source-First-Alternative: Es liefert KubeVirt-basierte Virtualisierung für VMs und Container über eine einheitliche Kubernetes-API, Cilium-Networking (eBPF), LINSTOR/DRBD-Storage und Tenant-CRD-basierte Mandantenfähigkeit unter Apache-2.0-Lizenz ohne Core-basierte Lizenzgebühren. Cozystack ist ein CNCF-Projekt. Aenix, das Open-Core-Unternehmen dahinter, bietet die produktisierte Ænix Platform plus Engineering-Services für regulierte Unternehmen und Produkt-Teams, die den OpenShift-Developer-Experience-Layer ersetzen wollen.**
@@ -43,6 +45,16 @@ faq:
 
 **OpenShift ist eine starke kommerzielle Kubernetes-Distribution mit ausgereiften Enterprise-Tools. Der Trade-off ist das Red-Hat-Subscription-Modell und die enge Kopplung an das Red-Hat-/IBM-Ökosystem. Für Organisationen, die eine Open-Source-First-Foundation mit vergleichbaren Fähigkeiten suchen — einschließlich KubeVirt-basierter Virtualisierung und Multi-Tenancy — ist Cozystack die realistische Alternative.**
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Red Hat OpenShift</b><div class="diagram__chips"><span>Red-Hat-Subscription-Modell</span><span>Red-Hat-/IBM-Ökosystem</span></div></div>
+<div class="diagram__conn">Migration</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform Enterprise Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Open-Source-First-Foundation</b><div class="diagram__chips"><span>Tenant-CRD-Mandantenfähigkeit</span><span>Souveränität</span></div></div>
+</div>
+</div>
+
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen; **[IDP Edition](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
 
 <div class="cta-row">
@@ -64,6 +76,9 @@ Wenn Sie bereits tief auf Red Hat / OpenShift setzen, lautet das Ergebnis der Al
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Cozystack vs OpenShift
 
 | | OpenShift Virtualization | Cozystack |
@@ -77,6 +92,9 @@ Wenn Sie bereits tief auf Red Hat / OpenShift setzen, lautet das Ergebnis der Al
 | **Support** | Red Hat | Aenix oder Community |
 
 Beide sind KubeVirt-basiert, das zugrunde liegende VM-Modell ist also ähnlich. Die Unterschiede liegen bei Lizenzierung, operativem Footprint und Vendor-Beziehung.
+
+</div>
+</div>
 
 ---
 

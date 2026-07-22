@@ -8,11 +8,21 @@ language: "de"
 **Cozystack und Ænix Platform verglichen mit den häufigsten Alternativen. Ehrliche Bewertungen — wann jeder passt, wann nicht, wie Migration aussieht. Keine Marketing-Battle-Cards.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Platform entdecken →</a>
 </div>
 
 ---
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Altsysteme</b><div class="diagram__chips"><span>VMware</span><span>Proxmox</span><span>OpenStack</span></div></div>
+<div class="diagram__conn">vergleichen &amp; migrieren</div>
+<div class="diagram__node"><b>Migrations-Hub</b><div class="diagram__chips"><span>VMware</span><span>Proxmox</span><span>OpenStack</span></div></div>
+<div class="diagram__conn">landen auf</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>ISP Edition</span><span>Enterprise Edition</span><span>Public Cloud Edition</span></div></div>
+</div>
+</div>
 
 ## VMware
 

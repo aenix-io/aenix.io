@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "migration-hub"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "nutanix migration"
 secondary_keywords: ["nutanix alternative", "leaving nutanix", "nutanix ahv migration"]
 hreflang_de: "/de/migration/nutanix/"
@@ -78,6 +80,9 @@ If two or more of these apply, a structured migration usually compounds in your 
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## What you migrate to
 
 The destination is a single Kubernetes-native platform assembled from open, [CNCF](https://www.cncf.io/)-aligned components rather than a second proprietary HCI stack.
@@ -88,6 +93,9 @@ The destination is a single Kubernetes-native platform assembled from open, [CNC
 - **No per-node hypervisor tax.** Cozystack is Apache 2.0 open source; the platform you migrate to has no per-node hypervisor license, so cluster growth does not compound a licensing bill.
 
 For the platform-level comparison — feature by feature, Cozystack versus Nutanix HCI — read the **[Nutanix alternative](/alternatives/nutanix-alternative/)** page. This hub assumes you have chosen the destination and focuses on the move.
+
+</div>
+</div>
 
 ---
 
@@ -101,6 +109,18 @@ Migration is cohort-based, not big-bang. A single-weekend "move it all" rarely s
 4. **Decommission.** Nutanix nodes are retired as cohorts complete and hardware is repurposed where it fits, so the final renewal is simply avoided.
 
 This is the same disciplined sequencing we use for **[VMware migration](/migration/vmware/)** — the mechanics differ, but the cohort-and-parallel-run pattern is what keeps a migration from becoming next year's emergency.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Nutanix AOS / AHV</b><div class="diagram__chips"><span>AOS storage fabric</span><span>Per-node licensing</span></div></div>
+<div class="diagram__conn">exported through</div>
+<div class="diagram__node"><b>Cohort cutover</b><div class="diagram__chips"><span>KubeVirt CDI conversion</span><span>Parallel run with Nutanix</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt VMs + containers</span><span>LINSTOR</span><span>Cilium</span></div></div>
+<div class="diagram__conn">completes with</div>
+<div class="diagram__node"><b>Nutanix nodes retired</b><div class="diagram__chips"><span>Hardware repurposed</span><span>Final renewal avoided</span></div></div>
+</div>
+</div>
 
 ---
 

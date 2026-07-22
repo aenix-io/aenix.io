@@ -3,6 +3,8 @@ title: "Platform Readiness Assessment — for cloud sovereignty, migration, and 
 description: "A structured cloud readiness assessment that gives you three concrete outcomes: time-to-environment metric, compliance-by-design map, and cost-and-control..."
 related_pages: ["/solutions/data-sovereignty/", "/solutions/dora-compliance/", "/solutions/cloud-repatriation/", "/solutions/sovereign-ai/", "/services/platform-engineering/", "/products/aenix-platform/", "/products/cozystack/", "/pricing"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **The Platform Readiness Assessment is a fixed-price engagement from Aenix that evaluates an organization's cloud platform across four workstreams — platform maturity and inventory, sovereignty and regulator gap (DORA, NIS2, GDPR), cloud-spend posture, and developer self-service — and delivers a written report in 14 days (or 28 for the full variant). It is built for organizations with their own platform-engineering teams that face sovereignty pressure, repatriation or cost mandates, sovereign-AI requirements, or slow time-to-environment. The work is done by Aenix platform engineers who build and operate Cozystack in production, not by management consultants. Outputs are three written, dated deliverables: a time-to-environment metric, a compliance-by-design map, and a cost-and-control trajectory.**
 quick_facts:
@@ -59,6 +61,9 @@ Aenix engineers, not consultants · Fixed-price · Written deliverables · No ve
 
 <!-- BLOCK 2: WHY THIS ASSESSMENT (4 trigger callout) -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## When the Platform Readiness Assessment fits
 
 Buyers reach us with one of four pressures. The assessment addresses them as a single program.
@@ -77,6 +82,9 @@ Public-cloud bill outpacing predictability, FinOps mandate, repatriation in road
 **Developer self-service and time-to-environment**
 Environments that take weeks to provision, IAM/network/monitoring done by hand, multiple tools nobody owns. Output: time-to-environment baseline → target with a delivery plan.
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 2 -->
@@ -161,6 +169,16 @@ If you're not sure which side you're on — **the discovery call answers that fo
 
 ## How the engagement runs
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Read-only inputs</b><div class="diagram__chips"><span>Architecture docs</span><span>Git orgs</span><span>Public-cloud billing</span><span>Observability dashboards</span></div></div>
+<div class="diagram__conn">assessed by</div>
+<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment</b><div class="diagram__chips"><span>Four workstreams</span><span>14-day or 28-day</span></div></div>
+<div class="diagram__conn">delivers</div>
+<div class="diagram__node"><b>Three written deliverables</b><div class="diagram__chips"><span>Time-to-environment metric</span><span>Compliance-by-design map</span><span>Cost-and-control trajectory</span></div></div>
+</div>
+</div>
+
 <div class="timeline-horizontal">
 
 **Day 0 — Discovery call (30 min, free)**
@@ -216,11 +234,11 @@ Aenix is the company behind **[Cozystack](/products/cozystack/)**, an open-sourc
 
 ### 14-day (focused)
 Single workstream emphasis (sovereignty, OR cost, OR developer experience). Single business unit / domain. Written report and executive readout.
-**{{PRICING_14_DAY}}**
+**On request**
 
 ### 28-day (full)
 All four workstreams in depth. Multi-BU stakeholder interviews. Vendor shortlisting for relevant components. PoC scoping. Written report, executive readout, and a Phase 2 implementation roadmap.
-**{{PRICING_28_DAY}}**
+**On request**
 
 </div>
 

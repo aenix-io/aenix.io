@@ -14,6 +14,9 @@ language: "en"
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Browse solutions by trigger
 
 ### Regulatory triggers
@@ -36,6 +39,9 @@ language: "en"
 
 - **[Developer self-service](/solutions/developer-self-service/)** — Internal Developer Platform with multi-tenant developer workflows. Pairs with: IDP Edition. Free [Platform Engineering Maturity Assessment](/resources/platform-engineering-maturity-assessment/).
 
+</div>
+</div>
+
 ---
 
 ## How to use this page
@@ -44,6 +50,16 @@ language: "en"
 2. **Jump to the solution page** — read what we deliver and how
 3. **Check the matched Edition** — confirm which Ænix Platform Edition fits your scope
 4. **Book a discovery call** — 30 min, free, no commitment
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Your trigger</b><div class="diagram__chips"><span>Regulatory</span><span>AI / GPU</span><span>Cost / consolidation</span><span>Engineering</span></div></div>
+<div class="diagram__conn">maps to</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform solution</b><div class="diagram__chips"><span>DORA / NIS2</span><span>Sovereign AI</span><span>Cloud repatriation</span><span>Developer self-service</span></div></div>
+<div class="diagram__conn">scoped as</div>
+<div class="diagram__node"><b>Matched Edition</b><div class="diagram__chips"><span>Enterprise</span><span>AI/ML</span><span>Public Cloud</span><span>IDP</span><span>ISP</span></div></div>
+</div>
+</div>
 
 ---
 

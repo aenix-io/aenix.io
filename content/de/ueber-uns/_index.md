@@ -250,7 +250,7 @@ Bestehendes Team-Grid (Andrei, Timur, Viktoriia, Timofei, Julia + Community Cham
 Buchen Sie einen 30-Minuten-Discovery-Call.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/kontakt/">Kontaktdetails →</a>
 </div>
 

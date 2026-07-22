@@ -38,9 +38,10 @@ faq:
 **Eine turnkey Public-Cloud-Control-Plane für große Betreiber — Public-Cloud-Unternehmen, große Banken mit eigener Cloud, nationale Telcos. Multi-Hypervisor, Multi-Region, integriert mit Drittanbieter-Infrastruktur. Gebaut für Rechenzentren und Cloud-Anbieter, die Public Clouds at hyperscaler-adjacent scale starten oder skalieren.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
   <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
 </div>
+
 ---
 
 ## Was in der Public Cloud Edition enthalten ist
@@ -140,7 +141,7 @@ Ja. Public Cloud Edition ist designed für Multi-Hypervisor-Koexistenz — gradu
 Buchen Sie einen 30-Minuten-Discovery-Call.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
 ---

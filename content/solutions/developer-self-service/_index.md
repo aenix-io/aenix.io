@@ -4,6 +4,8 @@ description: "One of the most expensive things in most engineering organizations
 type: "page"
 related_pages: ["/services/internal-developer-platform", "/services/platform-engineering", "/products/aenix-platform/idp-edition/", "/products/cozystack"]
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Developer self-service is the platform-engineering capability that lets product teams provision environments, databases, services, storage, and observability on their own — without filing tickets — typically in under an hour from request to running. It targets engineering organizations where the wait between "team needs an environment" and "team has one" stretches into days or weeks, decaying product velocity. Aenix builds this capability into platforms teams actually adopt: opinionated golden paths backed by a real platform layer, not a catalog UI as wallpaper. Engagements deliver a golden-path inventory of the ten most common requests, self-service paths designed and implemented by Aenix engineers, and an adoption-metrics framework. The work runs on the Ænix Platform IDP Edition, the company's productized Internal Developer Platform built on Cozystack.**
 quick_facts:
@@ -51,6 +53,18 @@ Aenix builds developer self-service capability into platforms that product teams
 
 A useful working definition: developer self-service is when the most common 10 product-team needs can be satisfied without filing a ticket, completed in under an hour from request to running.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Product teams</b><div class="diagram__chips"><span>Environment</span><span>Database</span><span>Service</span></div></div>
+<div class="diagram__conn">request without tickets</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform IDP Edition</b><div class="diagram__chips"><span>Golden paths</span><span>Self-service APIs</span></div></div>
+<div class="diagram__conn">provisions on Cozystack</div>
+<div class="diagram__node"><b>Provisioned services</b><div class="diagram__chips"><span>Object storage</span><span>Observability</span><span>CI/CD</span></div></div>
+<div class="diagram__conn">in under an hour</div>
+<div class="diagram__node"><b>Product velocity</b><div class="diagram__chips"><span>Hours, not weeks</span></div></div>
+</div>
+</div>
+
 Common requests:
 
 1. New environment provisioning (dev / staging / preview)
@@ -79,6 +93,9 @@ The honest version requires opinionated platform underneath, not just a catalog 
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## How Aenix engages
 
 Self-service is part of broader platform engineering work — see **[Internal Developer Platform services](/services/internal-developer-platform/)** and **[Platform Engineering services](/services/platform-engineering/)** for the engagement framing. The self-service-specific output is:
@@ -87,6 +104,9 @@ Self-service is part of broader platform engineering work — see **[Internal De
 - **Self-service paths designed** — for the priority requests
 - **Implementation engagement** — Aenix engineers build paths integrated with your platform
 - **Adoption metrics framework** — measure what's working
+
+</div>
+</div>
 
 ---
 
@@ -105,10 +125,10 @@ Self-service is part of broader platform engineering work — see **[Internal De
 <div class="pricing-cards-2">
 
 ### Assessment
-****
+**On request**
 
 ### Build engagement
-****
+**On request**
 
 </div>
 
@@ -116,7 +136,9 @@ Self-service is part of broader platform engineering work — see **[Internal De
 
 ## How to start
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[Self-service paths article](/blog/2026/05/developer-experience-platform-self-service-paths/)**
 - **[Internal developer platform](/services/internal-developer-platform/)** — broader scope

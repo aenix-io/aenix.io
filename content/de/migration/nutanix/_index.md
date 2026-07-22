@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "migration-hub"
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "nutanix migration"
 secondary_keywords: ["nutanix alternative", "nutanix verlassen", "nutanix ahv migration"]
 hreflang_de: "/de/migration/nutanix/"
@@ -78,6 +80,9 @@ Treffen zwei oder mehr davon zu, verstärkt sich eine strukturierte Migration me
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wohin Sie migrieren
 
 Das Ziel ist eine einzige Kubernetes-native Plattform, zusammengesetzt aus offenen, [CNCF](https://www.cncf.io/)-nahen Komponenten statt eines zweiten proprietären HCI-Stacks.
@@ -88,6 +93,9 @@ Das Ziel ist eine einzige Kubernetes-native Plattform, zusammengesetzt aus offen
 - **Keine Hypervisor-Abgabe pro Node.** Cozystack ist Apache-2.0-Open-Source; die Plattform, auf die Sie migrieren, hat keine Hypervisor-Lizenz pro Node, sodass Cluster-Wachstum keine Lizenzrechnung aufsummiert.
 
 Für den plattformweiten Vergleich — Feature für Feature, Cozystack gegen Nutanix HCI — lesen Sie die **[Nutanix-Alternative](/de/alternativen/nutanix-alternative/)**-Seite. Dieser Hub setzt voraus, dass Sie das Ziel gewählt haben, und konzentriert sich auf den Umzug.
+
+</div>
+</div>
 
 ---
 
@@ -101,6 +109,18 @@ Migration ist kohortenbasiert, nicht Big-Bang. Ein „alles an einem Wochenende"
 4. **Decommission.** Nutanix-Nodes werden außer Betrieb genommen, sobald Kohorten abgeschlossen sind, und Hardware wird wo möglich weiterverwendet, sodass das finale Renewal schlicht vermieden wird.
 
 Das ist dieselbe disziplinierte Sequenzierung, die wir für die **[VMware Migration](/de/migration/vmware/)** nutzen — die Mechanik unterscheidet sich, aber das Kohorten-und-Parallel-Run-Muster ist es, das eine Migration davor bewahrt, zum Notfall des nächsten Jahres zu werden.
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Nutanix AOS / AHV</b><div class="diagram__chips"><span>AOS-Storage-Fabric</span><span>Lizenzierung pro Node</span></div></div>
+<div class="diagram__conn">exportiert über</div>
+<div class="diagram__node"><b>Kohorten-Cutover</b><div class="diagram__chips"><span>KubeVirt-CDI-Konvertierung</span><span>Parallel-Run mit Nutanix</span></div></div>
+<div class="diagram__conn">migriert auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt-VMs + Container</span><span>LINSTOR</span><span>Cilium</span></div></div>
+<div class="diagram__conn">abgeschlossen mit</div>
+<div class="diagram__node"><b>Nutanix-Nodes außer Betrieb</b><div class="diagram__chips"><span>Hardware weiterverwendet</span><span>Finales Renewal vermieden</span></div></div>
+</div>
+</div>
 
 ---
 

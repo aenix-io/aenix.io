@@ -8,6 +8,8 @@ related_pages:
   - /de/produkte/aenix-platform/idp-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /solutions/developer-self-service/
 direct_answer: |
   **Developer Self-Service bedeutet, dass Produkt-Teams die häufigsten Plattform-Bedürfnisse — neue Environments, Services, Datenbanken, Object Storage, Observability oder CI/CD — eigenständig provisionieren, ohne ein Ticket zu öffnen, abgeschlossen in unter einer Stunde von Anfrage bis Lauf. Aenix baut diese Fähigkeit auf Cozystack (CNCF-Projekt, Apache 2.0) auf: KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) Networking und LINSTOR/DRBD Storage, mit Tenant-CRD-Mandantenfähigkeit. Statt Backstage nur als Oberfläche zu liefern, implementiert Aenix die zugrunde liegenden Golden Paths, die Anfragen in provisionierte Realität verwandeln — produktisiert in der Ænix Platform IDP Edition plus Services.**
@@ -58,6 +60,16 @@ Aenix baut Developer-self-service in Plattformen ein, die Produktteams auch wirk
 
 ## Wie Developer-self-service tatsächlich aussieht
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Anfrage des Produkt-Teams</b><div class="diagram__chips"><span>Environments, Services, Datenbanken</span></div></div>
+<div class="diagram__conn">provisioniert ohne Ticket über</div>
+<div class="diagram__node diagram__node--brand"><b>Golden Paths auf Cozystack</b><div class="diagram__chips"><span>GitLab-Automation, Argo CD Workflows</span></div></div>
+<div class="diagram__conn">verwandelt in unter einer Stunde in</div>
+<div class="diagram__node"><b>Provisionierte Realität</b></div>
+</div>
+</div>
+
 Eine praktikable Arbeitsdefinition: Developer-self-service liegt dann vor, wenn die zehn häufigsten Bedürfnisse eines Produktteams ohne Ticket erfüllt werden können — von der Anfrage bis zum laufenden Betrieb in unter einer Stunde.
 
 Häufige Anfragen:
@@ -77,6 +89,9 @@ Wenn 7 dieser 10 Punkte in Ihrer Organisation ein Ticket erfordern — genau dor
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wo die meisten "Self-Service"-Ansätze aufhören
 
 - **Backstage nur als Katalog** — die Registry existiert, aber die eigentliche Provisionierung erfordert weiterhin ein Eingreifen des Plattform-Teams.
@@ -85,6 +100,9 @@ Wenn 7 dieser 10 Punkte in Ihrer Organisation ein Ticket erfordern — genau dor
 - **Dokumentation als Self-Service** — ein "Sie können das selbst erledigen", das auf ein Runbook verweist, das die Teams manuell interpretieren müssen.
 
 Die ehrliche Variante braucht eine meinungsstarke Plattform darunter, nicht nur eine Katalog-Oberfläche.
+
+</div>
+</div>
 
 ---
 
@@ -114,10 +132,10 @@ Self-service ist Teil der umfassenderen Platform-Engineering-Arbeit — siehe **
 <div class="pricing-cards-2">
 
 ### Assessment
-****
+**Auf Anfrage**
 
 ### Build-Engagement
-****
+**Auf Anfrage**
 
 </div>
 

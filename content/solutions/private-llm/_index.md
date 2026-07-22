@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "private llm"
 secondary_keywords: ["self-hosted llm", "on-premise llm", "on-prem genai"]
 hreflang_de: "/de/loesungen/private-llm/"
@@ -82,6 +84,16 @@ This is the "private LLM / self-hosted LLM / on-prem GenAI" problem specifically
 
 An on-prem GenAI platform is more than a model file. Aenix assembles the full stack on open, [CNCF](https://www.cncf.io/)-aligned building blocks so nothing forces you back to a proprietary AI service.
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Your data + open-weight model</b><div class="diagram__chips"><span>Prompts</span><span>Documents</span><span>Llama / Mistral / Qwen</span></div></div>
+<div class="diagram__conn">served for inference on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack GPUs</b><div class="diagram__chips"><span>NVIDIA Dynamo</span><span>Qdrant RAG</span><span>Data never leaves the boundary</span></div></div>
+<div class="diagram__conn">produces</div>
+<div class="diagram__node"><b>Private inference</b><div class="diagram__chips"><span>Answers stay in the boundary</span><span>Weights, keys, logs you hold</span></div></div>
+</div>
+</div>
+
 - **Open-weight model serving.** Models such as Llama, Mistral, and Qwen served for inference on your GPUs, exposed to teams as ordinary Kubernetes services rather than an external endpoint.
 - **RAG over your documents.** A **Qdrant** vector database indexes your own content and retrieves the relevant passages at query time, grounding answers in your data. Both the source documents and the generated answers stay inside the boundary.
 - **Efficient inference.** **NVIDIA Dynamo** provides disaggregated serving and KV-cache-aware routing across the GPU fleet, raising utilization of expensive cards with no extra vendor licenses.
@@ -104,6 +116,9 @@ Concretely, the team packaged **Qdrant** as a platform app for RAG next to the G
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Which models and which workloads?
 
 "Private LLM" is not one workload — it is a small family, and each has a different infrastructure shape.
@@ -114,6 +129,9 @@ Concretely, the team packaged **Qdrant** as a platform app for RAG next to the G
 - **Batch and classification.** High-throughput, latency-tolerant jobs — bulk summarization, extraction, tagging — where fractional GPU sharing and off-peak scheduling keep utilization high.
 
 Right-sizing the GPU fleet against this mix is exactly what an assessment settles before any hardware is committed.
+
+</div>
+</div>
 
 ---
 

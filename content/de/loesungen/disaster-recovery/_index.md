@@ -5,6 +5,8 @@ date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 primary_keyword: "disaster recovery as a service"
 secondary_keywords: ["cloud disaster recovery", "disaster recovery loesungen", "business continuity"]
 hreflang_de: "/de/loesungen/disaster-recovery/"
@@ -79,6 +81,16 @@ Eine glaubwürdige DR-Fähigkeit verpflichtet sich auf beide Zahlen pro Workload
 
 ## Wie funktioniert synchrone DC-übergreifende Replikation?
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Cozystack Compute-Cluster</b><div class="diagram__chips"><span>geo-verteilt über drei Rechenzentren</span></div></div>
+<div class="diagram__conn">repliziert Volumes synchron mit</div>
+<div class="diagram__node"><b>LINSTOR/DRBD</b><div class="diagram__chips"><span>Replikationsfaktor drei — eine Replik pro Standort</span></div></div>
+<div class="diagram__conn">übersteht</div>
+<div class="diagram__node"><b>Verlust eines ganzen Rechenzentrums ohne Datenverlust</b></div>
+</div>
+</div>
+
 Der geschützte Tier einer souveränen DR-Plattform basiert auf synchroner Block-Replikation, sodass ein committeter Write in mehr als einem Rechenzentrum existiert, bevor der Anwendung der Erfolg gemeldet wird.
 
 In der Referenzarchitektur betreibt Cozystack einen Compute-Cluster, geo-verteilt über drei Rechenzentren. Volumes werden synchron mit **LINSTOR/DRBD** bei Replikationsfaktor drei repliziert — eine Replik pro Standort — und **etcd**, der Zustandsspeicher des Kubernetes-Clusters, ist über dieselben drei Standorte geo-verteilt. Das Ergebnis ist eine Architektur, die ausgelegt ist, den Verlust eines ganzen Rechenzentrums ohne Datenverlust zu überstehen, weil sowohl die persistenten Daten als auch der Control-Plane-Zustand bereits anderswo liegen.
@@ -113,6 +125,9 @@ Für DORA-regulierte Einrichtungen ist genau das die Form von Nachweis, die [DOR
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Nicht jeder Workload braucht denselben Recovery-Tier
 
 Jedes System als geschäftskritisch zu behandeln, ist der Weg, auf dem DR-Budgets explodieren und Drills unbeherrschbar werden. Eine funktionierende DR-Aufstellung stuft den Bestand zuerst.
@@ -122,6 +137,9 @@ Jedes System als geschäftskritisch zu behandeln, ist der Weg, auf dem DR-Budget
 - **Tier 2 — Backup und Rebuild.** Zustandslose oder leicht rekonstruierbare Dienste, wiederhergestellt aus unveränderlichen Backups und Infrastructure-as-Code, mit einem RTO in Stunden statt Sekunden.
 
 Die Einstufung ist das erste Ergebnis des Assessments, weil sie entscheidet, wohin die teure synchrone Kapazität geht und wo ein günstigerer Recovery-Pfad ehrlich ausreicht.
+
+</div>
+</div>
 
 ---
 

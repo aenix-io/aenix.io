@@ -3,6 +3,8 @@ title: "Cloud-Plattform für Energieversorger — NIS2-konform, edge-bereit, sou
 description: "Energieversorger in der DACH-Region stehen 2026 vor einer spezifischen Kombination von Drücken: NIS2-Klassifikation als wesentliche Entität (Energie ist im..."
 related_pages: ["/de/loesungen/nis2-compliance", "/de/loesungen/data-sovereignty", "/de/loesungen/sovereign-ai"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /industries/energy/
 direct_answer: |
   **Eine Cloud-Plattform für Energieversorger vereint OT-nahes Edge-Compute, NIS2-Compliance und souveräne Datenhaltung auf einer Kubernetes-API. Sie richtet sich an Netzbetreiber, Erzeuger und Stadtwerke in der DACH-Region, die als wesentliche Entitäten unter NIS2 fallen und Netz-, Kunden- und OT-Daten in eigener Kontrolle halten müssen. Aenix liefert dieses Muster mit Cozystack (CNCF-Projekt, Apache 2.0): KubeVirt betreibt VMs und Container nebeneinander, Cilium (eBPF) das Netzwerk, LINSTOR/DRBD den Storage, und das Tenant-CRD trennt Geschäftsbereiche mandantenfähig. Die Architektur unterstützt Multi-Site (Zentrale, Region, Umspannstation) mit Air-Gap-Option für OT und langen Operationshorizont ohne Core-basierte Lizenzkosten.**
@@ -62,6 +64,9 @@ Aenix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das glei
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Warum Energie-Architektur anders ist
 
 - **Edge-Compute ist Kern, nicht optional** — Umspannstationen, verteilte Erzeugung, Microgrids benötigen alle lokales Compute bei intermittierender zentraler Konnektivität
@@ -70,6 +75,9 @@ Aenix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das glei
 - **Critical-Infrastructure-Sicherheitsmodell** — kinetische + Cyber-Bedrohungen; Air-Gap für OT-Systeme ist oft nicht verhandelbar
 - **Regulatorischer Triple-Stack** — NIS2 + sektorale Energieregulierung (national + EU) + cybersecurity-spezifisch (NCAs)
 - **Mission-Critical-Zuverlässigkeit** — Ausfälle haben Auswirkungen auf die öffentliche Sicherheit; die Architektur muss N+1- / N+2-Redundanz strukturell unterstützen
+
+</div>
+</div>
 
 ---
 
@@ -81,6 +89,18 @@ Aenix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das glei
 - **KI-Infrastruktur** — für Netz-Forecasting, Demand Response, Predictive Maintenance
 - **Souverän nach Architektur** — Open-Source-Plattform auf Kunden-Hardware, kundengesteuerte Schlüssel
 - **Langfristige Plattform** — Apache-2.0-Lizenz + Community-Governance passen zu einer Betriebsplanung über ein Jahrzehnt hinaus
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Zentrale Steuerung</b><div class="diagram__chips"><span>Eine Kubernetes-API</span><span>Zentrale Policy</span></div></div>
+<div class="diagram__conn">steuert</div>
+<div class="diagram__node"><b>Regionale Standorte</b><div class="diagram__chips"><span>Regionale Aggregation</span></div></div>
+<div class="diagram__conn">erweitert auf</div>
+<div class="diagram__node"><b>Umspannstation-Edge</b><div class="diagram__chips"><span>Lokales Compute</span><span>Intermittierende Konnektivität</span></div></div>
+<div class="diagram__conn">getrennt von</div>
+<div class="diagram__node"><b>OT-Systeme</b><div class="diagram__chips"><span>SCADA</span><span>DCS</span><span>RTU</span></div></div>
+</div>
+</div>
 
 ---
 

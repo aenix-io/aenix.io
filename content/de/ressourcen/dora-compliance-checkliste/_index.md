@@ -7,6 +7,8 @@ related_pages:
   - /de/ressourcen/vmware-migrations-checkliste
   - /de/produkte/aenix-platform/enterprise-edition/
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Die DORA-Compliance Cloud-Architektur-Checkliste ist eine kostenlose 35-Punkt-Selbstbewertung in fünf Sektionen für Finanzinstitute und ICT-Drittanbieter, die ihre Cloud-Infrastruktur gegen die EU-Verordnung über digitale operationale Resilienz (DORA) prüfen. Sie deckt Artikel 21 Risiko-Management, Artikel 23 Vorfall-Reporting und Artikel 28 Lieferanten-Risiko sowie Workload-Portabilität, Exit-Bereitschaft, Konzentrations-Risiko, Souveränität und Aufsichtszugang ab. Zielgruppe sind CISOs, Cloud-Architekten und Compliance-Teams. Aenix nutzt sie in DORA-konformen Readiness-Engagements; die Ænix Platform Enterprise Edition (gebaut auf Cozystack) ist DORA-konform by design mit kundenkontrollierten Schlüsseln, audit-bereitem Logging und getesteter Exit-Mechanik.**
 quick_facts:
@@ -43,7 +45,7 @@ faq:
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
-[DORA-Checkliste herunterladen (PDF)]
+<p class="lead-magnet-form__note">DORA-Checkliste herunterladen (PDF)</p>
 </div>
 
 ---
@@ -58,6 +60,16 @@ faq:
 4. **Souveränität und Aufsichtszugang** (5 Checkpoints)
 5. **Drittanbieter-Risiko und Vertrags-Management** (4 Checkpoints)
 6. **Risiko-Management und Vorfall-Bearbeitung** (Artikel 21 + 23 spezifisch) (12 Checkpoints)
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>35-Punkt-Selbstbewertung</b><div class="diagram__chips"><span>Artikel 21 + 23</span><span>Kostenloses PDF</span></div></div>
+<div class="diagram__conn">führt zu</div>
+<div class="diagram__node diagram__node--brand"><b>DORA-konformes Readiness-Engagement</b><div class="diagram__chips"><span>Verwendet von Aenix</span></div></div>
+<div class="diagram__conn">bereitet vor</div>
+<div class="diagram__node"><b>Aufsichts-Dialog</b><div class="diagram__chips"><span>getestete Exit-Mechanik</span></div></div>
+</div>
+</div>
 
 ---
 

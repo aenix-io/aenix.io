@@ -7,6 +7,8 @@ related_pages:
   - /de/produkte/aenix-platform/idp-edition/
   - /de/produkte/cozystack
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **Cozystack vs OpenShift Virtualization vergleicht zwei KubeVirt-basierte Plattformen für virtuelle Maschinen und Container auf einer Kubernetes-API. Beide nutzen KubeVirt als Fundament, unterscheiden sich aber im kommerziellen Modell: OpenShift Virtualization erfordert eine Red-Hat-Subscription und bindet an den US-Vendor-Stack von Red Hat/IBM, während Cozystack unter Apache 2.0 quelloffen ist, ohne CPU- oder Core-basierte Lizenzierung. Der Vergleich richtet sich an Plattform- und Infrastruktur-Teams, die eine OpenShift-Alternative evaluieren. Aenix produktisiert Cozystack als Ænix Platform und liefert kommerziellen Support, sodass regulierte Unternehmen Souveränität, Kostendisziplin und kundenkontrollierte Hardware sowie Schlüssel ohne Vendor-Lock-in erreichen.**
 
@@ -45,6 +47,8 @@ faq:
 
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die OpenShift-Alternative evaluieren; **[IDP Edition](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams.
 
+<div class="compare-elevated compare-elevated--col3">
+
 | | OpenShift Virtualization | Cozystack |
 |---|---|---|
 | **Lizenz** | Red-Hat-Subscription | Apache 2.0 (Open Source) |
@@ -55,6 +59,8 @@ faq:
 | **Networking** | OpenShift SDN / OVN-Kubernetes | Cilium |
 | **Service-Katalog** | Operator Hub | Cozystack-Operatoren |
 | **Souveränität** | US-Vendor-Abhängigkeit | Customer-controlled, Open Source |
+
+</div>
 
 ---
 

@@ -3,6 +3,10 @@ title: "Ænix Platform IDP Edition"
 description: "Ænix Platform IDP Edition adds a self-service Internal Developer Platform on the Cozystack cloud foundation: GitLab CI/CD, Argo CD GitOps, self-service APIs."
 type: "page"
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer_image: "/images/cozystack-screenshot.png"
+direct_answer_image_alt: "Ænix Platform console — IDP Edition"
 direct_answer: |
   **Ænix Platform IDP Edition is a productized Internal Developer Platform layer that Aenix builds on top of Cozystack, the open-source Kubernetes-native cloud foundation it created and maintains. It is for product and SaaS organizations with strong engineering teams (typically 300+ engineers, though smaller high-DevEx teams also fit) that want self-service developer experience without building a platform-engineering function from scratch. It pairs a multi-tenant cloud substrate (KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD tenancy) with pre-integrated GitLab CI/CD, Argo CD GitOps workflows, self-service APIs, service-creation wizards, golden-path templates, and engineering productivity dashboards. Delivered as a project plus optional managed retainer, it gives engineers self-service environments, databases, and clusters without ticket queues.**
 quick_facts:
@@ -41,6 +45,7 @@ faq:
   <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/products/aenix-platform/">All editions →</a>
 </div>
+
 ---
 
 ## What's included in IDP Edition
@@ -124,7 +129,10 @@ Pricing on request — €300k - €2M project; managed retainer post-deployment
 - **Full IDP build** (6-12 months) — production IDP with all primary workload types, full self-service, observability + DR + tenancy at IDP-scale
 - **Managed retainer** (optional, ongoing) — Aenix runs the platform foundation while customer engineering owns the golden paths
 
-[Platform Readiness Assessment →](/services/platform-readiness-assessment/) | [Free Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/)
+<div class="cta-row">
+  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Platform Readiness Assessment →</a>
+  <a class="cta-secondary" href="/resources/platform-engineering-maturity-assessment/">Free Platform Engineering Maturity Assessment →</a>
+</div>
 
 ---
 

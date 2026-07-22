@@ -9,6 +9,8 @@ related_pages:
   - /services/platform-engineering
   - /migration/ibm/
 language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
 direct_answer: |
   **An OpenShift alternative is an open-source-first Kubernetes platform that delivers comparable enterprise capabilities — KubeVirt-based virtualization, multi-tenancy, and integrated networking and storage — without a Red Hat commercial subscription or coupling to the Red Hat / IBM ecosystem. Cozystack is the realistic alternative: an Apache 2.0, CNCF Sandbox project that runs virtual machines and containers on a single Kubernetes API via KubeVirt, with Cilium (eBPF) networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. It suits service providers and regulated enterprises pursuing open-core procurement or an exit from per-CPU licensing. Aenix, the team behind Cozystack, offers Ænix Platform (a productized distribution) and platform-engineering services on top.**
 quick_facts:
@@ -52,6 +54,8 @@ faq:
 
 ---
 
+<div class="band-fullbleed band-fullbleed--tint"><div class="band-fullbleed__inner">
+
 ## When OpenShift may not be the right answer
 
 - **Subscription cost concerns** — Red Hat OpenShift commercial subscription scales with deployment size.
@@ -61,6 +65,8 @@ faq:
 - **No existing Red Hat relationship** — OpenShift's value compounds with broader Red Hat ecosystem.
 
 If you're already deeply on Red Hat / OpenShift, the alternative analysis usually returns "stay." For greenfield or exit decisions, Cozystack is worth comparing.
+
+</div></div>
 
 ---
 
@@ -78,9 +84,19 @@ If you're already deeply on Red Hat / OpenShift, the alternative analysis usuall
 
 Both KubeVirt-based, so the underlying VM model is similar. The differences are around licensing, operational footprint, and vendor relationship.
 
+<div class="arch-section__fig"><div class="diagram">
+<div class="diagram__node"><b>OpenShift Virtualization</b><div class="diagram__chips"><span>Red Hat commercial subscription</span><span>Per-CPU subscription</span><span>Red Hat / IBM ecosystem</span></div></div>
+<div class="diagram__conn">replaced by</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Tenant CRD</span></div></div>
+<div class="diagram__conn">suits</div>
+<div class="diagram__node"><b>Service providers and regulated enterprises</b><div class="diagram__chips"><span>Open-core procurement</span><span>Exit from per-CPU licensing</span></div></div>
+</div></div>
+
 ---
 
-/contact/
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
 
 - **[OpenShift vs Cozystack comparison](/blog/2026/05/openshift-vs-cozystack-comparison/)**
 - **[VMware alternative](/alternatives/vmware-alternative/)**

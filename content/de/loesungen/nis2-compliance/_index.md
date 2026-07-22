@@ -4,6 +4,8 @@ description: "Die NIS2-Richtlinie (EU 2022/2555) ist seit dem Umsetzungstermin 1
 type: "page"
 related_pages: ["/de/loesungen/dora-compliance", "/de/loesungen/data-sovereignty", "/services/platform-readiness-assessment"]
 language: "de"
+quick_facts_style: "rows"
+faq_style: "rows"
 hreflang_en: /solutions/nis2-compliance/
 direct_answer: |
   **NIS2-Compliance für Cloud-Infrastruktur bedeutet, die Cyber­sicherheits- und Vorfallsmanagement-Pflichten der EU-Richtlinie 2022/2555 (Umsetzungstermin 17. Oktober 2024) direkt in der Plattform­architektur umzusetzen. Sie betrifft wesentliche und wichtige Entitäten — Energie, Verkehr, Banken, Gesundheitswesen, digitale Infrastruktur, öffentliche Verwaltung — sowie deren ICT-Drittanbieter. Aenix liefert mit der auf Cozystack aufbauenden Ænix Platform Enterprise Edition eine auditbereite Grundlage: Tenant-CRD-Mandantenfähigkeit mit NetworkPolicy und Cilium (eBPF) für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging und Coordinated Vulnerability Disclosure nach Artikel 30 — alles Open Source unter Apache 2.0 ohne Vendor-Lock-in.**
@@ -78,6 +80,16 @@ Wenn Ihr Sektor betroffen ist oder Ihre Kunden betroffen sind, gelten die archit
 
 ## Was NIS2 von der Cloud-Architektur fordert
 
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform Enterprise Edition</b><div class="diagram__chips"><span>Cozystack</span><span>Apache 2.0</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Segmentierung, Verschlüsselung, audit-bereites Logging</b><div class="diagram__chips"><span>Tenant-CRD</span><span>Cilium (eBPF)</span></div></div>
+<div class="diagram__conn">unterstützt</div>
+<div class="diagram__node"><b>NIS2-Konformität</b><div class="diagram__chips"><span>Artikel 21 / 23 / 30</span></div></div>
+</div>
+</div>
+
 <div class="grid-2x2">
 
 **1. Risikomanagement-Maßnahmen (Artikel 21)**
@@ -102,6 +114,9 @@ Eine Kontroll-Level-Checkliste finden Sie im **[Artikel zu den NIS2-Anforderunge
 
 <!-- BLOCK 4: WHERE COMMON SETUPS FAIL -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wo die meisten Cloud-Setups das NIS2-Audit nicht bestehen
 
 <div class="gap-cards-2">
@@ -118,6 +133,9 @@ NIS2 verlangt Betriebskontinuität. Die meisten BCP-Pläne sind Dokumente, die n
 **Schwachstellenmanagement ist reaktiv**
 Patch-Zyklen laufen im monatlichen Rhythmus; kritische Schwachstellen erhalten Notfall-Patches. NIS2 erwartet eine proaktivere Schwachstellenbehandlung für kritische Infrastruktur.
 
+</div>
+
+</div>
 </div>
 
 <!-- /BLOCK 4 -->
@@ -182,10 +200,10 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 <div class="pricing-cards-2">
 
 ### 14 Tage (fokussiert auf NIS2)
-**{{PRICING_14_DAY}}**
+**Auf Anfrage**
 
 ### 28 Tage (NIS2 + DORA + GDPR-Overlay)
-**{{PRICING_28_DAY}}**
+**Auf Anfrage**
 
 </div>
 
