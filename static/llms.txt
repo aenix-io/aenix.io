@@ -163,7 +163,7 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 
 ## Webinars (free live events)
 
-- [Launch or upgrade a public cloud your customers can buy](https://aenix.io/webinars/public-cloud-you-can-sell/): Free live webinar (~60 min) with Andrei Kvapil, creator of Cozystack — how hosting providers, cloud providers, data centers, MSPs, and telecom companies turn infrastructure into cloud services customers pay for. Covers the platform foundation (VMs, managed Kubernetes, databases, S3-compatible storage on Cozystack), Aenix modules that make it sellable (billing and usage metering, hosting panel, WHMCS/custom integrations), migration planning, and a two-week greenfield launch path. Free with registration; recording sent to all registrants.
+- [Launch or upgrade a public cloud your customers can buy](https://aenix.io/webinars/launch-public-cloud/): Free live webinar (~60 min) with Andrei Kvapil, creator of Cozystack — how hosting providers, cloud providers, data centers, MSPs, and telecom companies turn infrastructure into cloud services customers pay for. Covers the platform foundation (VMs, managed Kubernetes, databases, S3-compatible storage on Cozystack), Aenix modules that make it sellable (billing and usage metering, hosting panel, WHMCS/custom integrations), migration planning, and a two-week greenfield launch path. Free with registration; recording sent to all registrants.
 
 ## German (DACH locale)
 
