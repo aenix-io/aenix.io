@@ -27,6 +27,9 @@ CARDS = [
     ("og-workshop-en",
      "Tashkent · Bishkek · Almaty · Astana",
      "Migrating off VMware to open source: a hands-on workshop"),
+    ("og-webinar-en",
+     "Free live webinar · Online · with Andrei Kvapil",
+     "Launch or upgrade a public cloud your customers can buy"),
 ]
 
 CHROME_CANDIDATES = [
