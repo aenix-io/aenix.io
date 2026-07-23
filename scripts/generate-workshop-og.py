@@ -22,10 +22,10 @@ LOGO = os.path.join(ROOT, "static", "images", "logo-full-white.svg")
 
 CARDS = [
     ("og-workshop-ru",
-     "Ташкент · Бишкек · Алматы · Астана · Бесплатно",
+     "Ташкент · Бишкек · Алматы · Астана",
      "Миграция с VMware на open source: практический воркшоп"),
     ("og-workshop-en",
-     "Tashkent · Bishkek · Almaty · Astana · Free",
+     "Tashkent · Bishkek · Almaty · Astana",
      "Migrating off VMware to open source: a hands-on workshop"),
 ]
 

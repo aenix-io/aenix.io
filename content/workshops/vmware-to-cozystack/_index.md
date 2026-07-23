@@ -6,7 +6,7 @@ layout: "event-landing"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/"
 primary_keyword: "vmware migration workshop"
 secondary_keywords: ["vmware alternative", "vmware exit training", "open source virtualization workshop", "cozystack training"]
-images: ["img/og/og-workshop-en.png"]
+images: ["img/og/og-workshop-en.png?v=2"]
 hide_child_cards: true
 hero_eyebrow: "Tashkent · Bishkek · Almaty · Astana"
 hero_title: "Migrating off VMware to open source: a hands-on workshop"
