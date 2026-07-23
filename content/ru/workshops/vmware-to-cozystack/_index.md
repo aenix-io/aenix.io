@@ -71,7 +71,7 @@ cities:
     country: "Кыргызстан"
     status: "confirmed"
     date: "17 августа 2026, 14:00–18:00"
-    venue: "Технопарк, ул. Горького, 1а, конференц-зал"
+    venue: "Технопарк, ул. Горького, 1а, конференц-зал «GO»"
     href: "#register"
   - city: "Алматы"
     country: "Казахстан"
@@ -260,7 +260,7 @@ faq:
 <span class="ws-cert__kicker">Certificate of completion</span>
 <span class="ws-cert__title">Cozystack Certified Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">{{< cozy-mark class="cozy-mark--sm" >}} · Aenix</span>
+<span class="ws-cert__by">Cozystack · Aenix</span>
 </div>
 </div>
 </div>

@@ -71,7 +71,7 @@ cities:
     country: "Kyrgyzstan"
     status: "confirmed"
     date: "17 Aug 2026, 14:00–18:00"
-    venue: "Technopark, Gorkogo St. 1a, event hall"
+    venue: "Technopark, Gorkogo St. 1a, event hall “GO”"
     href: "#register"
   - city: "Almaty"
     country: "Kazakhstan"
@@ -260,7 +260,7 @@ faq:
 <span class="ws-cert__kicker">Certificate of completion</span>
 <span class="ws-cert__title">Cozystack Certified Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">{{< cozy-mark class="cozy-mark--sm" >}} · Aenix</span>
+<span class="ws-cert__by">Cozystack · Aenix</span>
 </div>
 </div>
 </div>

@@ -5507,7 +5507,7 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 }
 .ws-cert__title { font-size: 1.0625rem; font-weight: 700; color: var(--aenix-text); }
 .ws-cert__line { width: 60%; height: 1px; margin: 0.5rem 0 0.35rem; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent); }
-.ws-cert__by { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8125rem; color: var(--aenix-text-muted); }
+.ws-cert__by { font-size: 0.875rem; font-weight: 600; letter-spacing: 0.02em; color: #cbd5e1; }
 
 /* ==========================================================================
    SPEAKER
