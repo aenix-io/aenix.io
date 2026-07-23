@@ -6,7 +6,7 @@ layout: "event-landing"
 hreflang_en: "/workshops/vmware-to-cozystack/"
 primary_keyword: "миграция с vmware"
 secondary_keywords: ["замена vmware", "альтернатива vmware", "воркшоп по виртуализации", "cozystack обучение"]
-images: ["img/og/og-workshop-tour-ru.png"]
+images: ["img/og/og-workshop-ru.png"]
 hide_child_cards: true
 hero_eyebrow: "Ташкент · Бишкек · Алматы · Астана"
 hero_title: "Миграция с VMware на open source: практический воркшоп"
