@@ -1,124 +1,108 @@
 #!/usr/bin/env python3
 """Generate the campaign-style 1200x630 OG cards for the VMware->Cozystack
-workshop landing (RU + EN). Dark navy + blue->violet glow, typographic — matches
-the redesigned campaign page rather than the site's default teal OG template.
+workshop landing (RU + EN).
 
-These two cards are intentionally NOT produced by scripts/generate-og-cards.py
-(their entries were removed there) so this bespoke style is preserved.
+Renders an HTML card via headless Chrome so it uses the real Aenix logo
+(static/images/logo-full-white.svg) and the brand font Inter (Cyrillic from
+Google Fonts) — matching the redesigned campaign page. Dark navy + blue->violet
+glow, typographic. These two cards are intentionally NOT produced by
+generate-og-cards.py (their entries were removed there).
 
 Run: python3 scripts/generate-workshop-og.py  -> writes static/img/og/*.png
+Requires: Google Chrome / Chromium on PATH (or the macOS app), internet for fonts.
 """
 import os
-from PIL import Image, ImageDraw, ImageFont
+import shutil
+import subprocess
+import tempfile
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "static", "img", "og")
-os.makedirs(OUT, exist_ok=True)
-
-# Fonts: Inter (site font) ships woff2-latin only (no Cyrillic), so use Arial,
-# which has Cyrillic + the Æ ligature and reads close to the site's Inter.
-FONT_BOLD = "/System/Library/Fonts/Supplemental/Arial Bold.ttf"
-FONT_REG = "/System/Library/Fonts/Supplemental/Arial.ttf"
-
-W, H = 1200, 630
-NAVY = (11, 15, 26)        # #0B0F1A
-BLUE = (71, 150, 234)      # #4796EA
-CYAN = (145, 219, 235)     # #91DBEB
-VIOLET = (60, 27, 191)     # #3C1BBF
-WHITE = (241, 245, 249)    # #F1F5F9
-MUTED = (148, 163, 184)    # #94A3B8
+ROOT = os.path.join(os.path.dirname(__file__), "..")
+OUT = os.path.join(ROOT, "static", "img", "og")
+LOGO = os.path.join(ROOT, "static", "images", "logo-full-white.svg")
 
 CARDS = [
     ("og-workshop-tour-ru",
-     "ТАШКЕНТ · БИШКЕК · АЛМАТЫ · АСТАНА · БЕСПЛАТНО",
+     "Ташкент · Бишкек · Алматы · Астана · Бесплатно",
      "Миграция с VMware на open source: практический воркшоп"),
     ("og-workshop-tour",
-     "TASHKENT · BISHKEK · ALMATY · ASTANA · FREE",
+     "Tashkent · Bishkek · Almaty · Astana · Free",
      "Migrating off VMware to open source: a hands-on workshop"),
 ]
 
-
-def radial(cx, cy, rx, ry, color, max_a):
-    """Soft radial glow, computed small then upscaled (cheap, smooth)."""
-    sw, sh = 160, 84
-    layer = Image.new("RGBA", (sw, sh), (0, 0, 0, 0))
-    px = layer.load()
-    for y in range(sh):
-        for x in range(sw):
-            dx = (x / sw - cx) / rx
-            dy = (y / sh - cy) / ry
-            d = (dx * dx + dy * dy) ** 0.5
-            a = max(0.0, 1.0 - d)
-            a = a * a
-            if a > 0:
-                px[x, y] = (color[0], color[1], color[2], int(a * max_a))
-    return layer.resize((W, H), Image.BILINEAR)
+CHROME_CANDIDATES = [
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "chrome",
+]
 
 
-def wrap(draw, text, font, max_w):
-    words, lines, cur = text.split(), [], ""
-    for w in words:
-        t = (cur + " " + w).strip()
-        if draw.textlength(t, font=font) <= max_w:
-            cur = t
+def find_chrome():
+    for c in CHROME_CANDIDATES:
+        if os.path.sep in c:
+            if os.path.exists(c):
+                return c
         else:
-            if cur:
-                lines.append(cur)
-            cur = w
-    if cur:
-        lines.append(cur)
-    return lines
+            p = shutil.which(c)
+            if p:
+                return p
+    raise SystemExit("Chrome/Chromium not found. Install it or add to PATH.")
 
 
-def make(fn, eyebrow, title):
-    img = Image.new("RGBA", (W, H), NAVY + (255,))
-    # blue glow upper-right, violet glow lower-left (campaign feel; text stays left)
-    img = Image.alpha_composite(img, radial(0.78, 0.30, 0.5, 0.7, BLUE, 150))
-    img = Image.alpha_composite(img, radial(0.12, 1.02, 0.55, 0.6, VIOLET, 120))
-    d = ImageDraw.Draw(img)
-    margin = 80
-
-    # accent bar + wordmark (top-left)
-    d.rectangle([margin, 92, margin + 60, 100], fill=BLUE)
-    d.text((margin, 116), "ÆNIX", font=ImageFont.truetype(FONT_BOLD, 46), fill=WHITE)
-
-    # eyebrow (cities), letter-spaced manually
-    eb = ImageFont.truetype(FONT_BOLD, 24)
-    eb_y = 244
-    x = margin
-    for ch in eyebrow:
-        d.text((x, eb_y), ch, font=eb, fill=CYAN)
-        x += d.textlength(ch, font=eb) + 2
-
-    # headline: autoshrink so the whole block clears the footer
-    head_y = 300
-    footer_y = H - 64
-    max_h = footer_y - 26 - head_y
-    size = 76
-    while size > 34:
-        tf = ImageFont.truetype(FONT_BOLD, size)
-        lines = wrap(d, title, tf, W - 2 * margin)
-        if len(lines) * int(size * 1.16) <= max_h:
-            break
-        size -= 3
-    tf = ImageFont.truetype(FONT_BOLD, size)
-    lines = wrap(d, title, tf, W - 2 * margin)
-    y = head_y
-    for ln in lines:
-        d.text((margin, y), ln, font=tf, fill=WHITE)
-        y += int(size * 1.16)
-
-    # footer
-    d.text((margin, footer_y), "aenix.io  ·  built on Cozystack (CNCF)",
-           font=ImageFont.truetype(FONT_REG, 26), fill=MUTED)
-    # bottom accent gradient bar
-    for i in range(W):
-        t = i / W
-        c = tuple(int(BLUE[j] + (VIOLET[j] - BLUE[j]) * t) for j in range(3))
-        d.line([(i, H - 6), (i, H)], fill=c)
-
-    img.convert("RGB").save(os.path.join(OUT, fn + ".png"))
-    print("wrote", fn + ".png", size)
+HTML = """<!doctype html><html lang="{lang}"><head><meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  html,body{{margin:0;height:630px;overflow:hidden}}
+  .card{{width:1200px;height:630px;box-sizing:border-box;position:relative;overflow:hidden;
+    background:#0B0F1A;color:#F1F5F9;padding:70px 80px;display:flex;flex-direction:column;
+    font-family:'Inter',system-ui,'Helvetica Neue',Arial,sans-serif;}}
+  .card::before{{content:"";position:absolute;inset:0;
+    background:
+      radial-gradient(44% 58% at 80% 26%, rgba(71,150,234,.32), transparent 70%),
+      radial-gradient(52% 55% at 4% 106%, rgba(60,27,191,.34), transparent 66%);}}
+  .card::after{{content:"";position:absolute;left:0;right:0;bottom:0;height:6px;
+    background:linear-gradient(90deg,#4796EA,#3C1BBF);}}
+  .logo{{position:relative;z-index:1}}
+  .logo svg{{height:56px;width:auto;display:block}}
+  .spacer{{flex:1}}
+  .eyebrow{{position:relative;z-index:1;color:#91DBEB;font-weight:700;font-size:25px;
+    letter-spacing:.12em;text-transform:uppercase;margin:0 0 24px}}
+  .title{{position:relative;z-index:1;font-weight:800;font-size:{size}px;line-height:1.1;
+    letter-spacing:-.02em;margin:0;max-width:1040px}}
+  .footer{{position:relative;z-index:1;margin-top:30px;color:#94A3B8;font-size:24px}}
+  .footer b{{color:#cbd5e1;font-weight:600}}
+</style></head><body>
+<div class="card">
+  <div class="logo">{logo}</div>
+  <div class="spacer"></div>
+  <div class="eyebrow">{eyebrow}</div>
+  <h1 class="title">{title}</h1>
+  <div class="footer"><b>aenix.io</b> &nbsp;·&nbsp; built on Cozystack (CNCF)</div>
+</div></body></html>"""
 
 
-for fn, eb, ti in CARDS:
-    make(fn, eb, ti)
+def main():
+    chrome = find_chrome()
+    logo_svg = open(LOGO, encoding="utf-8").read().strip()
+    os.makedirs(OUT, exist_ok=True)
+    for fn, eyebrow, title in CARDS:
+        size = 60 if len(title) > 46 else 66
+        html = HTML.format(lang=("ru" if fn.endswith("-ru") else "en"),
+                           logo=logo_svg, eyebrow=eyebrow, title=title, size=size)
+        with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
+            f.write(html)
+            html_path = f.name
+        out_png = os.path.join(OUT, fn + ".png")
+        subprocess.run([
+            chrome, "--headless=new", "--disable-gpu", "--hide-scrollbars",
+            "--force-device-scale-factor=1", "--window-size=1200,630",
+            "--default-background-color=00000000",
+            "--virtual-time-budget=5000",
+            "--screenshot=" + out_png, "file://" + html_path,
+        ], check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        os.unlink(html_path)
+        print("wrote", fn + ".png", "size", size)
+
+
+if __name__ == "__main__":
+    main()
