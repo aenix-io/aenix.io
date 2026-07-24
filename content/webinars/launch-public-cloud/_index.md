@@ -8,7 +8,7 @@ primary_keyword: "build a public cloud platform"
 secondary_keywords: ["sell cloud services", "cozystack webinar", "cloud provider platform", "cloud service catalog", "cloud billing platform"]
 images: ["img/og/og-webinar-en.png"]
 hide_child_cards: true
-hero_eyebrow: "Free live webinar · Online · Date to be announced"
+hero_eyebrow: "Free live webinar · Online · August 19, 2026 · 10:00 CET"
 hero_title: "Launch or upgrade a public cloud your customers can buy"
 hero_tagline: "Andrei Kvapil, the creator of Cozystack, walks through the whole journey — from platform setup and service catalog to billing, integrations, migration planning, and your first paying customers."
 hero_chips:
@@ -21,11 +21,15 @@ hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
 inshort_title: "About the webinar"
 quick_facts_style: "rows"
-# Date is intentionally unset: no Event JSON-LD is emitted until a real date is
-# confirmed (see seo/jsonld-event.html — it only fires on event.start_date).
 event:
   name: "Launch or upgrade a public cloud your customers can buy — a live webinar"
   language: "en"
+  mode: "online"
+  start_date: "2026-08-19"
+  start_time: "10:00"
+  timezone: "+02:00"   # Central European time on 19 Aug (shown as "CET" in copy)
+  performer: "Andrei Kvapil"
+  performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
   price: 0
 direct_answer: |
   **This is a free live webinar for hosting providers, cloud providers, data center operators, MSPs, and telecom companies that want to turn their infrastructure into cloud services customers pay for. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — walks through the whole journey: choosing the platform, building a service catalog, connecting billing and usage metering, integrating with WHMCS or a custom panel, planning a migration, and reaching the first paying customers. The webinar covers both common starting points: providers with no cloud product to sell yet, and providers whose existing platform has become too complex or too expensive to sell. Attendance is free with registration, and every registrant receives the recording.**
@@ -34,7 +38,7 @@ quick_facts:
   - label: "Format"
     value: "A live online webinar, about 60 minutes: a walkthrough of the launch path, followed by a live Q&A with the speaker"
   - label: "Date"
-    value: "To be announced; register and we will email you the date and the calendar invite"
+    value: "August 19, 2026, 10:00 CET — online. Register to get the calendar invite and the recording."
   - label: "Price"
     value: "Free with registration; every registrant receives the recording"
   - label: "Language"
@@ -48,7 +52,7 @@ quick_facts:
 
 faq:
   - q: "When does the webinar take place?"
-    a: "The date is being finalized. Register now and we will email you the date and a calendar invite as soon as it is confirmed — and the recording afterwards, whether or not you can attend live."
+    a: "August 19, 2026 at 10:00 CET, online. Register and we will email you a calendar invite — and the recording afterwards, whether or not you can attend live."
   - q: "Is the webinar free?"
     a: "Yes. Attendance is free — you only need to register. Every registrant also receives the recording."
   - q: "Will there be a recording?"
@@ -62,7 +66,7 @@ faq:
 
 final_cta:
   heading: "Build a public cloud you can actually sell"
-  text: "Attendance is free — with registration. The date will be announced soon; registrants get the date, the calendar invite, and the recording."
+  text: "August 19, 2026 · 10:00 CET · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
   button: "Register"
   href: "#register"
 ---
@@ -91,7 +95,7 @@ final_cta:
 <span class="wb-start__label">A platform that got too complex</span>
 <span class="wb-start__sub">OpenStack, VMware, thin catalog</span>
 </li>
-<li class="wb-start wb-start--goal">
+<li class="wb-start">
 <span class="wb-start__ic">{{< ws-icon name="rocket" >}}</span>
 <span class="wb-start__label">A cloud your customers can buy</span>
 <span class="wb-start__sub">Launch or upgrade — same goal</span>
@@ -194,7 +198,7 @@ final_cta:
 <span class="ws-outcome__icon">{{< ws-icon name="billing" >}}</span>
 <p class="ws-outcome__text"><strong>A clear-eyed view of billing</strong>, usage metering, and panel integration — how they work in practice.</p>
 </article>
-<article class="ws-outcome">
+<article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">04</span>
 <span class="ws-outcome__icon">{{< ws-icon name="plan" >}}</span>
 <p class="ws-outcome__text"><strong>A migration and launch plan</strong> you can adapt to your own stack.</p>
@@ -237,7 +241,7 @@ final_cta:
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
 <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
 GitHub</a>
-<a class="wb-speaker__link" href="https://www.linkedin.com/in/kvapss/" target="_blank" rel="noopener">
+<a class="wb-speaker__link" href="https://www.linkedin.com/in/kvaps/" target="_blank" rel="noopener">
 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
 LinkedIn</a>
 </div>
@@ -249,7 +253,7 @@ LinkedIn</a>
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
 <h2 class="ws-h2 ws-h2--light" id="wb-register-h">Registration</h2>
-<p class="ws-register__lead">Attendance is free — with registration. The date will be announced soon: registrants get the date, the calendar invite, and the recording.</p>
+<p class="ws-register__lead">August 19, 2026 · 10:00 CET · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
 <div class="ws-register__form">
 
 {{< placeholder-form type="webinar" >}}

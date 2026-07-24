@@ -16,10 +16,13 @@
       capacity: 20                 # optional maximumAttendeeCapacity
       price: 0                     # optional; 0 → free offer
       registration_url: "..."      # optional; defaults to page URL
+      mode: "online"               # optional; "online" → OnlineEventAttendanceMode + VirtualLocation (default offline/physical)
+      performer: "..."             # optional; defaults to Timur Tukaev
+      performer_role: "..."        # optional; defaults to Timur's role
 
-  Performer/organizer are fixed: Timur Tukaev / Aenix.
-  Emitted only when event.start_date is present — a placeholder page ships
-  without Event schema rather than with fabricated dates.
+  Organizer is fixed (Aenix); performer/mode default to the workshop (Timur,
+  offline) unless overridden per-event. Emitted only when event.start_date is
+  present — a placeholder page ships without Event schema, never guess dates.
 */}}
 {{- $e := .Params.event | default dict -}}
 {{- $start := index $e "start_date" -}}
@@ -35,6 +38,10 @@
 {{- $capacity := index $e "capacity" -}}
 {{- $price := index $e "price" -}}
 {{- $reg := index $e "registration_url" | default .Permalink -}}
+{{- $mode := index $e "mode" | default "offline" -}}
+{{- $online := eq $mode "online" -}}
+{{- $perf := index $e "performer" | default "Timur Tukaev" -}}
+{{- $perfRole := index $e "performer_role" | default "Cozystack maintainer, community manager, Aenix co-founder" -}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -45,13 +52,19 @@
   "startDate": {{ $startISO | jsonify }},
   "endDate": {{ $end | jsonify }},
   "eventStatus": "https://schema.org/EventScheduled",
-  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventAttendanceMode": {{ cond $online "https://schema.org/OnlineEventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode" | jsonify }},
   {{- with index $e "language" }}
   "inLanguage": {{ . | jsonify }},
   {{- end }}
   {{- if $capacity }}
   "maximumAttendeeCapacity": {{ $capacity }},
   {{- end }}
+  {{- if $online }}
+  "location": {
+    "@type": "VirtualLocation",
+    "url": {{ $reg | jsonify }}
+  },
+  {{- else }}
   "location": {
     "@type": "Place",
     "name": {{ or $venue $city | jsonify }},
@@ -61,6 +74,7 @@
       "addressCountry": {{ $country | jsonify }}
     }
   },
+  {{- end }}
   {{- if ne $price nil }}
   "offers": {
     "@type": "Offer",
@@ -72,8 +86,8 @@
   {{- end }}
   "performer": {
     "@type": "Person",
-    "name": "Timur Tukaev",
-    "jobTitle": "Cozystack maintainer, community manager, Aenix co-founder"
+    "name": {{ $perf | jsonify }},
+    "jobTitle": {{ $perfRole | jsonify }}
   },
   "organizer": { "@id": "{{ "/#org" | absURL }}" }
 }

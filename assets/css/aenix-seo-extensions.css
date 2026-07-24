@@ -5955,7 +5955,9 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 .wb-cover__note-ic { display: inline-flex; flex: none; margin-top: 1px; color: var(--ws-violet); }
 .wb-cover__note-ic .ws-icon { width: 22px; height: 22px; }
 
-/* --- Who should attend (company tiles + role pills) --- */
+/* --- Who should attend (company tiles + role pills) — centered --- */
+.wb-audience .ws-h2 { text-align: center; }
+.wb-audience .ws-lead { text-align: center; margin-left: auto; margin-right: auto; }
 .wb-audience__tiles {
   list-style: none;
   margin: 2rem 0 0;
@@ -5990,8 +5992,8 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   border: 1px solid rgba(1, 165, 255, 0.22);
 }
 .wb-audience__ic .ws-icon { width: 26px; height: 26px; }
-.wb-audience__roles-label { margin: 2rem 0 1rem; font-size: 1rem; color: var(--aenix-text-muted); }
-.wb-audience__roles { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.625rem; }
+.wb-audience__roles-label { margin: 2rem 0 1rem; font-size: 1rem; color: var(--aenix-text-muted); text-align: center; }
+.wb-audience__roles { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.625rem; }
 .wb-audience__roles li {
   padding: 0.5rem 1.125rem;
   border-radius: 999px;
