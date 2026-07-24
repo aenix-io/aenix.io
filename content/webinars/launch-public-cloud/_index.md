@@ -21,13 +21,14 @@ hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
 inshort_title: "About the webinar"
 quick_facts_style: "rows"
+# NOTE: date is shown in the visible copy (hero, CTA, facts, FAQ). Event JSON-LD
+# is intentionally left OFF: the site's ld+json string values render double-
+# quoted on this build (jsonify affects breadcrumb/FAQ too), so a dated Event
+# schema would be malformed. Re-enable start_date/mode/performer once that's fixed.
 event:
   name: "Launch or upgrade a public cloud your customers can buy — a live webinar"
   language: "en"
   mode: "online"
-  start_date: "2026-08-19"
-  start_time: "10:00"
-  timezone: "+02:00"   # Central European time on 19 Aug (shown as "CET" in copy)
   performer: "Andrei Kvapil"
   performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
   price: 0
