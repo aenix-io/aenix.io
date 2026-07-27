@@ -6025,6 +6025,27 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 .wb-speaker__link svg { color: var(--aenix-text-muted); transition: color 0.15s var(--ease, ease); }
 .wb-speaker__link:hover svg { color: var(--ws-blue); }
 
+/* --- Registration: real ClickMeeting embed replaces the placeholder box --- */
+.webinar-landing .ws-register__inner { max-width: 840px; }
+.webinar-landing .ws-register__form {
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.cm-embed { width: 100%; }
+.cm-embed iframe {
+  display: block !important;
+  width: 100% !important;
+  max-width: 768px;
+  height: 1024px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
 /* --- Webinar responsive --- */
 @media (max-width: 960px) {
   .wb-cover__grid { grid-template-columns: 1fr; }

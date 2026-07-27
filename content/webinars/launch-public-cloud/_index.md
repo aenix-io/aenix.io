@@ -257,7 +257,7 @@ LinkedIn</a>
 <p class="ws-register__lead">August 19, 2026 · 10:00 CET · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
 <div class="ws-register__form">
 
-{{< placeholder-form type="webinar" >}}
+{{< clickmeeting room="18263597110070205" >}}
 
 </div>
 </div>
