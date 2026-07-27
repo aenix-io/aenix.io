@@ -76,7 +76,7 @@ cities:
   - city: "Almaty"
     country: "Kazakhstan"
     status: "confirmed"
-    date: "13 Aug 2026, 14:00–18:00"
+    date: "13 Aug 2026, 10:00–14:00"
     venue: "Almaty Hub, Zenkov St. 24, 4th floor"
     href: "#register"
   - city: "Astana"
