@@ -6,7 +6,7 @@ layout: "event-landing"
 hreflang_en: "/workshops/vmware-to-cozystack/"
 primary_keyword: "миграция с vmware"
 secondary_keywords: ["замена vmware", "альтернатива vmware", "воркшоп по виртуализации", "cozystack обучение"]
-images: ["img/og/og-workshop-tour-ru.png"]
+images: ["img/og/og-workshop-ru.png?v=2"]
 hide_child_cards: true
 hero_eyebrow: "Ташкент · Бишкек · Алматы · Астана"
 hero_title: "Миграция с VMware на open source: практический воркшоп"
@@ -63,27 +63,27 @@ agenda:
 cities:
   - city: "Ташкент"
     country: "Узбекистан"
-    status: "pending"
-    date: "Дата и время уточняются"
-    note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+    status: "confirmed"
+    date: "20 августа 2026, 15:00–19:00"
+    venue: "Impact.t Hub, улица Богибустан, 186, 5 этаж"
     href: "#register"
   - city: "Бишкек"
     country: "Кыргызстан"
-    status: "pending"
-    date: "Дата и время уточняются"
-    note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+    status: "confirmed"
+    date: "17 августа 2026, 14:00–18:00"
+    venue: "Технопарк, ул. Горького, 1а, конференц-зал «GO»"
     href: "#register"
   - city: "Алматы"
     country: "Казахстан"
-    status: "pending"
-    date: "Дата и время уточняются"
-    note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+    status: "confirmed"
+    date: "13 августа 2026, 14:00–18:00"
+    venue: "Almaty Hub, улица Зенкова, 24, 4 этаж"
     href: "#register"
   - city: "Астана"
     country: "Казахстан"
-    status: "pending"
-    date: "Дата и время уточняются"
-    note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+    status: "confirmed"
+    date: "24 августа 2026, 14:00–18:30"
+    venue: "Astana Hub, зал Franklin Herbert"
     href: "#register"
 final_cta:
   heading: "Миграция с VMware на open source: практический воркшоп"
@@ -97,7 +97,7 @@ quick_facts:
   - label: "Формат"
     value: "Очный воркшоп, около четырёх часов: примерно три часа практики в личном рабочем окружении, остальное — короткие объяснения и общение"
   - label: "Города"
-    value: "Ташкент, Бишкек, Алматы, Астана; даты и площадки уточняются"
+    value: "Ташкент, Бишкек, Алматы, Астана"
   - label: "Стоимость"
     value: "Бесплатно при условии регистрации; количество мест ограничено"
   - label: "Язык"
@@ -260,7 +260,7 @@ faq:
 <span class="ws-cert__kicker">Certificate of completion</span>
 <span class="ws-cert__title">Cozystack Certified Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">{{< cozy-mark class="cozy-mark--sm" >}} · Aenix</span>
+<span class="ws-cert__by">Cozystack · Aenix</span>
 </div>
 </div>
 </div>
