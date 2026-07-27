@@ -76,7 +76,7 @@ cities:
   - city: "Алматы"
     country: "Казахстан"
     status: "confirmed"
-    date: "13 августа 2026, 14:00–18:00"
+    date: "13 августа 2026, 10:00–14:00"
     venue: "Almaty Hub, улица Зенкова, 24, 4 этаж"
     href: "#register"
   - city: "Астана"
