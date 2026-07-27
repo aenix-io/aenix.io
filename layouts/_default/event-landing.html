@@ -1,0 +1,171 @@
+{{ define "head" }}
+{{/*
+  The event landing components live in assets/css/aenix-seo-extensions.css.
+  The redesign loads that stylesheet site-wide through partials/hooks/head-end.html;
+  until that lands, pull it in here so the layout is self-sufficient on the
+  current theme. Same for og:image — the theme baseof only reads `image`,
+  while these pages declare the standard Hugo `images` list.
+*/}}
+{{ with resources.Get "css/aenix-seo-extensions.css" | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
+{{ with index (.Params.images | default slice) 0 }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{ end }}
+{{ end }}
+
+{{ define "main" }}
+{{/*
+  event-landing.html — dedicated layout for workshop / event pages
+  (selected via `layout: event-landing` in frontmatter).
+
+  A campaign-style hero (headline + facts + CTA on the left, a large composited
+  speaker portrait on the right) opens the page; the narrative sections live in
+  the page body (.Content); the GEO blocks (direct_answer + quick_facts) move to
+  a quiet "In short" section, followed by the FAQ and a final full-width CTA.
+
+  Frontmatter contract (all optional unless noted):
+    hero_eyebrow     — small mono line above the title (the cities line)
+    hero_title       — plain-text headline (falls back to a from→to arrow title)
+    hero_from/to     — the two halves of the arrow title (fallback only)
+    hero_tagline     — one human sentence under the title
+    hero_chips       — list of short benefit strings (rendered as feature items)
+    hero_primary     — {text, href} main CTA (lime)
+    hero_secondary   — {text, href} quiet CTA
+    speaker_photo    — assets path to the composited portrait
+    translation      — list of {from, to} term pairs (optional signature strip)
+    stats            — list of {number, label} pain stats (optional)
+    inshort_title    — heading for the direct_answer/quick_facts section
+    final_cta        — {heading, text, button, href} closing conversion band
+*/}}
+{{- $isRU := eq (.Params.language | default "en") "ru" -}}
+{{- $photo := .Params.speaker_photo | default "images/workshops/timur-tukaev.png" -}}
+{{- $portraitAlt := cond $isRU "Тимур Тукаев — ведущий воркшопа" "Timur Tukaev — workshop host" -}}
+
+<section class="event-hero ws-hero">
+  <div class="ws-hero__bg" aria-hidden="true">
+    <div class="ws-hero__bg-grid"></div>
+    <div class="ws-hero__bg-glow"></div>
+  </div>
+  <div class="container">
+    <div class="ws-hero__inner">
+      <div class="ws-hero__content">
+        {{ partial "lang-switch.html" . }}
+        {{ with .Params.hero_eyebrow }}<p class="event-hero__eyebrow ws-hero__eyebrow">{{ . }}</p>{{ end }}
+        {{ if .Params.hero_title }}
+        <h1 class="event-hero__title event-hero__title--text ws-hero__title">{{ .Params.hero_title }}</h1>
+        {{ else }}
+        <h1 class="event-hero__title ws-hero__title">
+          <span>{{ .Params.hero_from | default "VMware" }}</span>
+          <span class="event-hero__arrow" aria-hidden="true">&rarr;</span>
+          <span class="event-hero__to">{{ .Params.hero_to | default "Cozystack" }}</span>
+        </h1>
+        {{ end }}
+        {{ with .Params.hero_tagline }}<p class="event-hero__tagline ws-hero__tagline">{{ . }}</p>{{ end }}
+        {{ with .Params.hero_chips }}
+        <ul class="ws-hero__features">
+          {{ range $i, $chip := . }}
+          <li class="ws-hero__feature">
+            <span class="ws-hero__feature-icon" aria-hidden="true">
+              {{- if eq $i 0 -}}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1.2a1.8 1.8 0 0 0 0 3.6V16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-3.2a1.8 1.8 0 0 0 0-3.6V8Z" stroke="currentColor" stroke-width="1.5"/><path d="m9.5 12 1.8 1.8L15 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              {{- else if eq $i 1 -}}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8.5" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16 6.2a3 3 0 0 1 0 5.6M17.5 19a5.5 5.5 0 0 0-3-4.9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              {{- else -}}
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.3" stroke="currentColor" stroke-width="1.5"/><path d="M3.7 12h16.6M12 3.7c2.2 2.3 3.4 5.2 3.4 8.3S14.2 18 12 20.3C9.8 18 8.6 15.1 8.6 12S9.8 6 12 3.7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              {{- end -}}
+            </span>
+            <span class="ws-hero__feature-text">{{ $chip }}</span>
+          </li>
+          {{ end }}
+        </ul>
+        {{ end }}
+        <div class="event-hero__cta ws-hero__cta">
+          {{ with .Params.hero_primary }}<a class="cta-primary cta-accent" href="{{ .href }}">{{ .text }}</a>{{ end }}
+          {{ with .Params.hero_secondary }}<a class="cta-secondary" href="{{ .href }}">{{ .text }}</a>{{ end }}
+        </div>
+      </div>
+
+      <div class="ws-hero__visual">
+        <div class="ws-hero__stage">
+          <div class="ws-hero__stage-glow" aria-hidden="true"></div>
+          {{ partial "event/portrait.html" (dict "src" $photo "alt" $portraitAlt "class" "ws-hero__portrait" "sizes" "(max-width: 960px) 66vw, 560px" "widths" (slice 380 560 760 1080) "eager" true) }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ with .Params.translation }}
+<section class="event-translate" aria-label="vSphere to Cozystack">
+  <div class="container">
+    <div class="event-translate__grid">
+      {{ range . }}
+      <div class="event-translate__pair">
+        <span class="event-translate__from">{{ .from }}</span>
+        <span class="event-translate__arrow" aria-hidden="true">&rarr;</span>
+        <span class="event-translate__to">{{ .to }}</span>
+      </div>
+      {{ end }}
+    </div>
+    {{ with $.Params.translation_note }}<p class="event-translate__note">{{ . }}</p>{{ end }}
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.stats }}
+<section class="event-stats">
+  <div class="container">
+    <div class="event-stats__grid">
+      {{ range . }}
+      <div class="event-stat">
+        <span class="event-stat__number">{{ .number }}</span>
+        <span class="event-stat__label">{{ .label }}</span>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<div class="event-body ws-body">
+  {{ .Content }}
+</div>
+
+{{ if or .Params.direct_answer .Params.quick_facts .Params.faq }}
+<section class="event-outro">
+  <div class="container">
+    <div class="event-prose">
+      {{ if or .Params.direct_answer .Params.quick_facts }}
+      <div class="event-inshort">
+        {{ with .Params.inshort_title }}<h2>{{ . }}</h2>{{ end }}
+        {{ partial "seo/geo-intro.html" . }}
+        <div class="ws-cta-center ws-cta-center--outro">
+          <a class="cta-primary cta-accent" href="#register">{{ with .Params.hero_primary }}{{ .text }}{{ else }}{{ cond $isRU "Зарегистрироваться" "Register" }}{{ end }}</a>
+        </div>
+      </div>
+      {{ end }}
+      {{ partial "seo/geo-faq.html" . }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Params.final_cta }}
+<section class="ws-final">
+  <div class="ws-final__bg" aria-hidden="true"><div class="ws-final__bg-grid"></div><div class="ws-final__bg-glow"></div></div>
+  <div class="container">
+    <div class="ws-final__inner">
+      {{ with $.Params.hero_eyebrow }}<p class="ws-final__eyebrow">{{ . }}</p>{{ end }}
+      {{ with .heading }}<h2 class="ws-final__title">{{ . }}</h2>{{ end }}
+      {{ with .text }}<p class="ws-final__text">{{ . }}</p>{{ end }}
+      <div class="ws-final__cta">
+        <a class="cta-primary cta-accent cta-lg" href="{{ .href | default "#register" }}">{{ .button | default (cond $isRU "Зарегистрироваться" "Register") }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

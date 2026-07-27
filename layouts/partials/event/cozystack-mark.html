@@ -1,0 +1,14 @@
+{{/*
+  event/cozystack-mark.html — official Cozystack logo (white lockup) for the
+  campaign composition (hero badge + "meet Cozystack" story block + certificate
+  mockup). Kept deliberately secondary to the Aenix global brand and the speaker.
+
+  Inlines the SVG from assets so it can be sized via CSS (height-driven) and
+  needs no extra request; white fill is intended for dark surfaces only.
+
+  ctx (dict): class (optional sizing modifier), label (optional aria label)
+*/}}
+{{- $class := .class | default "" -}}
+{{- $label := .label | default "Cozystack" -}}
+{{- $logo := resources.Get "images/cozystack-logo.svg" -}}
+<span class="cozy-mark {{ $class }}" role="img" aria-label="{{ $label }}">{{ with $logo }}{{ .Content | safeHTML }}{{ end }}</span>
