@@ -19,6 +19,7 @@
   "demo"        "Architecture Review (60 min)"
   "partner"     "Partner Program Application"
   "course"      "Kubernetes Deep Dive Course Enrollment"
+  "webinar"     "Webinar Registration"
   "lead-magnet" "Download Resource"
 -}}
 {{- $title := index $titles $type | default (index $titles "discovery") -}}
@@ -50,6 +51,8 @@
     <div class="placeholder-form__field placeholder-form__field--select">Cohort preference <em>(required)</em></div>
     <div class="placeholder-form__field placeholder-form__field--select">Number of seats: 1 / 2-5 / 6-10 / 10+ <em>(required)</em></div>
     <div class="placeholder-form__field placeholder-form__field--select">Payment method: Invoice / Credit card / PO <em>(required)</em></div>
+    {{- else if eq $type "webinar" }}
+    <div class="placeholder-form__field placeholder-form__field--textarea">What should the speaker address in the Q&amp;A? <em>(optional)</em></div>
     {{- else if eq $type "lead-magnet" }}
     <div class="placeholder-form__field placeholder-form__field--hidden"><em>(Hidden)</em> Resource: {{ $resource | default "unknown" }}</div>
     {{- end }}

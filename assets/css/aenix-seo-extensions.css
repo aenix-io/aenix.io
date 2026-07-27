@@ -5507,7 +5507,7 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 }
 .ws-cert__title { font-size: 1.0625rem; font-weight: 700; color: var(--aenix-text); }
 .ws-cert__line { width: 60%; height: 1px; margin: 0.5rem 0 0.35rem; background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.28), transparent); }
-.ws-cert__by { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.8125rem; color: var(--aenix-text-muted); }
+.ws-cert__by { font-size: 0.875rem; font-weight: 600; letter-spacing: 0.02em; color: #cbd5e1; }
 
 /* ==========================================================================
    SPEAKER
@@ -5584,7 +5584,7 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 .ws-city:hover .ws-city__cta span { transform: translateX(3px); }
 /* Confirmed cities: brighter treatment (status also carried by icon + text) */
 .ws-city--confirmed { border-color: rgba(1, 165, 255, 0.4); background: linear-gradient(180deg, rgba(1, 165, 255, 0.06), var(--ws-panel)); }
-.ws-city--confirmed .ws-city__icon { color: var(--ws-lime); }
+.ws-city--confirmed .ws-city__icon { color: var(--ws-cyan); }
 .ws-city--pending .ws-city__date { color: var(--aenix-text-muted); }
 
 /* ==========================================================================
@@ -5717,12 +5717,12 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
    RESPONSIVE
    ========================================================================== */
 @media (max-width: 960px) {
-  .event-hero.ws-hero { padding-bottom: 3rem; }
+  .event-hero.ws-hero { padding-bottom: 0; }
   .ws-hero__inner { grid-template-columns: 1fr; gap: 2rem; align-items: stretch; }
   .ws-hero__content { order: 1; padding-bottom: 0; }
-  .ws-hero__visual { order: 2; align-self: center; }
+  .ws-hero__visual { order: 2; align-self: end; }
   .ws-hero__title { max-width: 100%; }
-  .ws-hero__stage { max-width: 320px; margin: 0 auto; }
+  .ws-hero__stage { max-width: 340px; margin: 0 auto; }
   .ws-story__row,
   .ws-story__row--reverse { grid-template-columns: 1fr; gap: 1.75rem; }
   .ws-story__row--reverse .ws-story__text { order: 1; }
@@ -5744,7 +5744,7 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   .event-outro .facts-rows--def li:nth-last-child(2) { border-bottom: 1px solid rgba(255, 255, 255, 0.07); }
 }
 @media (max-width: 560px) {
-  .event-hero.ws-hero { padding: 2.5rem 0 3.25rem; }
+  .event-hero.ws-hero { padding: 2.5rem 0 0; }
   .ws-hero__features { flex-direction: column; align-items: stretch; }
   .ws-hero__feature { justify-content: flex-start; }
   .ws-hero__cta .cta-primary,
@@ -5769,4 +5769,290 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   .ws-city:hover,
   .ws-persona:hover,
   .cta-accent:hover { transform: none; }
+}
+
+/* ==========================================================================
+   Webinar landing  (/webinars/…, bodyClass "webinar-landing")
+   Reuses the workshop event-landing system (.ws-*) and adds a few webinar-only
+   pieces (.wb-*). Andrei's hero portrait is a transparent cut-out grounded to
+   the hero bottom, exactly like Timur's. It inherits the .ws-hero styles; the
+   only tweak is a slightly smaller portrait (his frame is taller than Timur's).
+   ========================================================================== */
+.webinar-landing .ws-hero__stage { max-width: 448px; }
+
+/* --- Story subheads --- */
+.wb-story__h3 {
+  margin: 0 0 0.875rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--aenix-text);
+}
+
+/* --- Story visual: two starting points → one goal --- */
+.wb-starts { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.wb-start {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 0.875rem;
+  align-items: center;
+  padding: 1rem 1.125rem;
+  border: 1px solid var(--ws-border);
+  border-radius: 12px;
+  background: var(--ws-panel);
+}
+.wb-start__ic {
+  grid-row: 1 / 3;
+  display: inline-flex;
+  width: 40px; height: 40px;
+  align-items: center; justify-content: center;
+  border-radius: 9px;
+  color: var(--ws-blue);
+  background: rgba(1, 165, 255, 0.1);
+  border: 1px solid rgba(1, 165, 255, 0.2);
+}
+.wb-start__ic .ws-icon { width: 22px; height: 22px; }
+.wb-start__label { grid-column: 2; grid-row: 1; align-self: end; font-size: 0.9375rem; font-weight: 700; color: var(--aenix-text); }
+.wb-start__sub { grid-column: 2; grid-row: 2; align-self: start; font-size: 0.8125rem; color: var(--aenix-text-muted); }
+.wb-start--goal {
+  border-color: rgba(69, 154, 255, 0.45);
+  background: linear-gradient(120deg, rgba(71, 150, 234, 0.16), transparent 62%), rgba(9, 13, 22, 0.4);
+}
+.wb-start--goal .wb-start__ic {
+  color: #fff;
+  background-image: var(--ws-cta-bg);
+  background-origin: border-box;
+  background-clip: border-box;
+  border-color: transparent;
+}
+
+/* --- Story visual: platform → sellable product (extends .ws-platform) --- */
+.wb-platform__cap {
+  display: block;
+  text-align: center;
+  margin: -0.25rem 0 0.875rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--aenix-text-muted);
+}
+.wb-platform__plus { display: flex; align-items: center; gap: 0.75rem; margin: 1rem 0 0.75rem; }
+.wb-platform__plus::before,
+.wb-platform__plus::after { content: ""; flex: 1; height: 1px; background: rgba(255, 255, 255, 0.12); }
+.wb-platform__plus span {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ws-violet);
+}
+.wb-platform__modules { position: relative; margin: 0; padding: 0; list-style: none; display: grid; gap: 0.625rem; }
+.wb-platform__modules li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 0.875rem;
+  border: 1px solid rgba(167, 139, 250, 0.24);
+  border-radius: 9px;
+  background: rgba(167, 139, 250, 0.06);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--aenix-text);
+}
+.wb-mod__ic { display: inline-flex; color: var(--ws-violet); }
+.wb-mod__ic .ws-icon { width: 20px; height: 20px; }
+
+/* --- "~2 weeks" factoid --- */
+.wb-factoid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 2rem;
+  align-items: center;
+  padding: 1.75rem 2rem;
+  border: 1px solid rgba(69, 154, 255, 0.35);
+  border-radius: 16px;
+  background:
+    radial-gradient(90% 130% at 0% 0%, rgba(1, 165, 255, 0.16), transparent 60%),
+    linear-gradient(120deg, rgba(71, 150, 234, 0.14), rgba(102, 27, 225, 0.10));
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.28);
+}
+.wb-factoid__num {
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+  color: var(--ws-cyan);
+}
+.wb-factoid__text { margin: 0; font-size: 1.0625rem; line-height: 1.55; color: var(--aenix-text); }
+
+/* --- What we'll cover (numbered cards) --- */
+.wb-cover__grid {
+  list-style: none;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.wb-cover__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  padding: 1.5rem 1.625rem 1.625rem;
+  border: 1px solid var(--ws-border);
+  border-radius: 13px;
+  background: var(--ws-panel);
+  transition: border-color 0.2s var(--ease, ease), transform 0.2s var(--ease, ease);
+}
+.wb-cover__item:hover { border-color: rgba(1, 165, 255, 0.4); transform: translateY(-2px); }
+.wb-cover__num {
+  position: absolute;
+  top: 1.1rem; right: 1.375rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 1.625rem;
+  font-weight: 800;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.12);
+}
+.wb-cover__icon {
+  display: inline-flex;
+  width: 44px; height: 44px;
+  align-items: center; justify-content: center;
+  border-radius: 10px;
+  color: var(--ws-blue);
+  background: rgba(1, 165, 255, 0.1);
+  border: 1px solid rgba(1, 165, 255, 0.22);
+}
+.wb-cover__item:nth-child(even) .wb-cover__icon {
+  color: var(--ws-violet);
+  background: rgba(167, 139, 250, 0.1);
+  border-color: rgba(167, 139, 250, 0.24);
+}
+.wb-cover__icon .ws-icon { width: 24px; height: 24px; }
+.wb-cover__text { margin: 0; font-size: 0.9375rem; line-height: 1.55; color: var(--aenix-text-muted); }
+.wb-cover__text strong { color: var(--aenix-text); font-weight: 700; }
+.wb-cover__note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 1rem 1.25rem;
+  border: 1px dashed var(--ws-border-strong);
+  border-radius: 12px;
+  background: var(--ws-panel);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--aenix-text-muted);
+}
+.wb-cover__note strong { color: var(--aenix-text); }
+.wb-cover__note-ic { display: inline-flex; flex: none; margin-top: 1px; color: var(--ws-violet); }
+.wb-cover__note-ic .ws-icon { width: 22px; height: 22px; }
+
+/* --- Who should attend (company tiles + role pills) — centered --- */
+.wb-audience .ws-h2 { text-align: center; }
+.wb-audience .ws-lead { text-align: center; margin-left: auto; margin-right: auto; }
+.wb-audience__tiles {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.875rem;
+}
+.wb-audience__tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding: 1.5rem 1rem;
+  border: 1px solid var(--ws-border);
+  border-radius: 14px;
+  background: var(--ws-panel);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--aenix-text);
+  transition: border-color 0.2s var(--ease, ease), transform 0.2s var(--ease, ease);
+}
+.wb-audience__tile:hover { border-color: rgba(1, 165, 255, 0.4); transform: translateY(-2px); }
+.wb-audience__ic {
+  display: inline-flex;
+  width: 48px; height: 48px;
+  align-items: center; justify-content: center;
+  border-radius: 12px;
+  color: var(--ws-blue);
+  background: rgba(1, 165, 255, 0.1);
+  border: 1px solid rgba(1, 165, 255, 0.22);
+}
+.wb-audience__ic .ws-icon { width: 26px; height: 26px; }
+.wb-audience__roles-label { margin: 2rem 0 1rem; font-size: 1rem; color: var(--aenix-text-muted); text-align: center; }
+.wb-audience__roles { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.625rem; }
+.wb-audience__roles li {
+  padding: 0.5rem 1.125rem;
+  border-radius: 999px;
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  background: rgba(167, 139, 250, 0.08);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--aenix-text);
+}
+
+/* --- Speaker (bigger portrait + social links) --- */
+.webinar-landing .ws-speaker__grid { grid-template-columns: 340px 1fr; }
+.wb-speaker__links { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
+.wb-speaker__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ws-border-strong);
+  border-radius: 10px;
+  background: var(--ws-panel);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--aenix-text);
+  text-decoration: none;
+  transition: border-color 0.15s var(--ease, ease), color 0.15s var(--ease, ease);
+}
+.wb-speaker__link:hover { border-color: var(--ws-blue); color: #fff; }
+.wb-speaker__link svg { color: var(--aenix-text-muted); transition: color 0.15s var(--ease, ease); }
+.wb-speaker__link:hover svg { color: var(--ws-blue); }
+
+/* --- Registration: real ClickMeeting embed replaces the placeholder box --- */
+.webinar-landing .ws-register__inner { max-width: 840px; }
+.webinar-landing .ws-register__form {
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.cm-embed { width: 100%; }
+.cm-embed iframe {
+  display: block !important;
+  width: 100% !important;
+  max-width: 768px;
+  height: 1040px;
+  margin: 0 auto;
+  border: 1px solid var(--ws-border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+/* --- Webinar responsive --- */
+@media (max-width: 960px) {
+  .wb-cover__grid { grid-template-columns: 1fr; }
+  .wb-audience__tiles { grid-template-columns: repeat(3, 1fr); }
+  .webinar-landing .ws-speaker__grid { grid-template-columns: 240px 1fr; }
+}
+@media (max-width: 640px) {
+  .wb-audience__tiles { grid-template-columns: repeat(2, 1fr); }
+  .wb-factoid { grid-template-columns: 1fr; gap: 0.75rem; }
+  .webinar-landing .ws-speaker__grid { grid-template-columns: 1fr; }
 }

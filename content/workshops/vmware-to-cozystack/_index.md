@@ -6,7 +6,7 @@ layout: "event-landing"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/"
 primary_keyword: "vmware migration workshop"
 secondary_keywords: ["vmware alternative", "vmware exit training", "open source virtualization workshop", "cozystack training"]
-images: ["img/og/og-workshop-tour.png"]
+images: ["img/og/og-workshop-en.png?v=2"]
 hide_child_cards: true
 hero_eyebrow: "Tashkent · Bishkek · Almaty · Astana"
 hero_title: "Migrating off VMware to open source: a hands-on workshop"
@@ -63,27 +63,27 @@ agenda:
 cities:
   - city: "Tashkent"
     country: "Uzbekistan"
-    status: "pending"
-    date: "Date and time to be announced"
-    note: "The venue will be announced. Registrants hear first."
+    status: "confirmed"
+    date: "20 Aug 2026, 15:00–19:00"
+    venue: "Impact.t Hub, Bogibuston St. 186, 5th floor"
     href: "#register"
   - city: "Bishkek"
     country: "Kyrgyzstan"
-    status: "pending"
-    date: "Date and time to be announced"
-    note: "The venue will be announced. Registrants hear first."
+    status: "confirmed"
+    date: "17 Aug 2026, 14:00–18:00"
+    venue: "Technopark, Gorkogo St. 1a, event hall “GO”"
     href: "#register"
   - city: "Almaty"
     country: "Kazakhstan"
-    status: "pending"
-    date: "Date and time to be announced"
-    note: "The venue will be announced. Registrants hear first."
+    status: "confirmed"
+    date: "13 Aug 2026, 14:00–18:00"
+    venue: "Almaty Hub, Zenkov St. 24, 4th floor"
     href: "#register"
   - city: "Astana"
     country: "Kazakhstan"
-    status: "pending"
-    date: "Date and time to be announced"
-    note: "The venue will be announced. Registrants hear first."
+    status: "confirmed"
+    date: "24 Aug 2026, 14:00–18:30"
+    venue: "Astana Hub, Franklin Herbert hall"
     href: "#register"
 final_cta:
   heading: "Migrating off VMware to open source: a hands-on workshop"
@@ -97,7 +97,7 @@ quick_facts:
   - label: "Format"
     value: "An in-person workshop, about four hours: roughly three hours of practice in a personal working environment, the rest — short explanations and conversation"
   - label: "Cities"
-    value: "Tashkent, Bishkek, Almaty, Astana; dates and venues to be announced"
+    value: "Tashkent, Bishkek, Almaty, Astana"
   - label: "Price"
     value: "Free with registration; seats are limited"
   - label: "Language"
@@ -260,7 +260,7 @@ faq:
 <span class="ws-cert__kicker">Certificate of completion</span>
 <span class="ws-cert__title">Cozystack Certified Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">{{< cozy-mark class="cozy-mark--sm" >}} · Aenix</span>
+<span class="ws-cert__by">Cozystack · Aenix</span>
 </div>
 </div>
 </div>

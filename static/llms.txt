@@ -161,6 +161,10 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 
 - [Hands-on VMware migration workshop](https://aenix.io/workshops/vmware-to-cozystack/): Free hands-on workshops in Tashkent, Bishkek, Almaty, and Astana — participants migrate a real VM off a running VMware server onto open-source Cozystack, build a database, monitoring, and backups around it, keep a 30-day test environment and a Cozystack-maintainer chat, and can earn the Cozystack Certified Fundamentals certificate via take-home labs. Delivered in Russian; Russian page at https://aenix.io/ru/workshops/vmware-to-cozystack/
 
+## Webinars (free live events)
+
+- [Launch or upgrade a public cloud your customers can buy](https://aenix.io/webinars/launch-public-cloud/): Free live webinar (~60 min) with Andrei Kvapil, creator of Cozystack — how hosting providers, cloud providers, data centers, MSPs, and telecom companies turn infrastructure into cloud services customers pay for. Covers the platform foundation (VMs, managed Kubernetes, databases, S3-compatible storage on Cozystack), Aenix modules that make it sellable (billing and usage metering, hosting panel, WHMCS/custom integrations), migration planning, and a two-week greenfield launch path. Free with registration; recording sent to all registrants.
+
 ## German (DACH locale)
 
 A subset of pages is mirrored in German for the DACH market under `/de/`. Includes the editions, key solutions (DORA / NIS2 / Datensouveränität / cloud repatriation / sovereign AI), services, industries, and a German blog at `/de/blog/`. Hreflang annotations link EN ↔ DE versions where both exist.
