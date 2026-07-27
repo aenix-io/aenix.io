@@ -1,0 +1,22 @@
+{{/*
+  clickmeeting — embed a ClickMeeting webinar registration / conference widget
+  (the official embed_conference.html script, marketing-provided and verified).
+
+  Usage:
+    {{< clickmeeting room="18263597110070205" >}}                 # 768x1024 (verified)
+    {{< clickmeeting room="18263597110070205" w="auto" h="auto" >}} # responsive variant
+
+  The injected iframe is made fluid via the .cm-embed CSS (max-width:100%),
+  so the fixed 768px width still fits narrow containers. Emitted as a shortcode
+  (not raw markdown) so the <script> tag survives Goldmark rendering.
+*/}}
+{{- $room := .Get "room" -}}
+{{- $w := .Get "w" | default "768" -}}
+{{- $h := .Get "h" | default "1024" -}}
+{{- if $room -}}
+<div class="cm-embed">
+<script type="text/javascript" src="https://embed.clickmeeting.com/embed_conference.html?r={{ $room }}&w={{ $w }}&h={{ $h }}"></script>
+</div>
+{{- else -}}
+<div class="pipedrive-form pipedrive-form--error"><strong>clickmeeting:</strong> missing <code>room</code> id.</div>
+{{- end -}}

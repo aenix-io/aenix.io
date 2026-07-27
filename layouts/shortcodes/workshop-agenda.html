@@ -1,0 +1,32 @@
+{{/*
+  workshop-agenda — renders the workshop timeline from the page's `agenda:`
+  frontmatter array, so the schedule is data, not markup. Every field is
+  authored copy; nothing here is invented.
+
+  Frontmatter shape:
+    agenda:
+      - time: "00:00"
+        title: "С чего всё началось"
+        tag:  "доклад"          # display label (localized)
+        kind: "talk"            # talk | hands | discussion | social (drives style)
+        body: "…"
+*/}}
+{{- $items := .Page.Params.agenda -}}
+{{- if $items -}}
+<div class="ws-timeline">
+  {{- range $i, $it := $items -}}
+  {{- $kind := $it.kind | default "talk" -}}
+  <div class="ws-timeline__item ws-timeline__item--{{ $kind }}">
+    <div class="ws-timeline__time">{{ $it.time }}</div>
+    <div class="ws-timeline__rail" aria-hidden="true"><span class="ws-timeline__node"></span></div>
+    <div class="ws-timeline__card">
+      <div class="ws-timeline__head">
+        <h3 class="ws-timeline__title">{{ $it.title }}</h3>
+        {{- with $it.tag }}<span class="ws-timeline__tag ws-timeline__tag--{{ $kind }}">{{ . }}</span>{{ end -}}
+      </div>
+      <p class="ws-timeline__body">{{ $it.body }}</p>
+    </div>
+  </div>
+  {{- end -}}
+</div>
+{{- end -}}

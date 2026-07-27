@@ -1,0 +1,45 @@
+{{/*
+  workshop-cities — renders the tour city cards from the page's `cities:`
+  frontmatter array. Cards are data-driven so the content team can add a city
+  or fill in a date/venue without touching markup.
+
+  Frontmatter shape:
+    cities:
+      - city: "Ташкент"
+        country: "Узбекистан"
+        status: "pending"        # pending | confirmed
+        date: "Дата и время уточняются"
+        venue: ""                # optional; shown when confirmed
+        note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
+        href: "#register"
+
+  Status is conveyed by text (the date/venue wording) AND an icon AND border
+  treatment — never by color alone.
+*/}}
+{{- $items := .Page.Params.cities -}}
+{{- $isRU := eq (.Page.Params.language | default "en") "ru" -}}
+{{- $cta := cond $isRU "Зарегистрироваться" "Register" -}}
+{{- if $items -}}
+<div class="ws-cities">
+  {{- range $i, $c := $items -}}
+  {{- $status := $c.status | default "pending" -}}
+  <a class="ws-city ws-city--{{ $status }}" href="{{ $c.href | default "#register" }}">
+    <span class="ws-city__country">{{ $c.country }}</span>
+    <span class="ws-city__name">{{ $c.city }}</span>
+    <span class="ws-city__meta">
+      <span class="ws-city__icon" aria-hidden="true">
+        {{- if eq $status "confirmed" -}}
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+        {{- else -}}
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.6V12l3 1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        {{- end -}}
+      </span>
+      <span class="ws-city__date">{{ $c.date }}</span>
+    </span>
+    {{- with $c.venue }}<span class="ws-city__venue">{{ . }}</span>{{ end -}}
+    {{- with $c.note }}<span class="ws-city__note">{{ . }}</span>{{ end -}}
+    <span class="ws-city__cta">{{ $cta }} <span aria-hidden="true">→</span></span>
+  </a>
+  {{- end -}}
+</div>
+{{- end -}}

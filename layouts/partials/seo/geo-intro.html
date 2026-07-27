@@ -1,0 +1,72 @@
+{{/* seo/geo-intro — renders the GEO answer-first blocks from frontmatter:
+       1. direct_answer paragraph (bold, citation-ready, under H1)
+       2. quick_facts block (bulleted list + optional source)
+
+  Auto-injected by _default/single.html and _default/list.html for any page
+  that defines these params. Also wrapped by the {{< seo-blocks >}} shortcode.
+  Pass the page as context: {{ partial "seo/geo-intro.html" . }}
+*/}}
+{{- $daImg := .Params.direct_answer_image -}}
+{{- $chev := `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>` -}}
+{{- $toggle := printf `<button type="button" class="answer-clamp__toggle" aria-expanded="false"><span class="answer-clamp__label">Show more</span>%s</button>` $chev -}}
+{{- with .Params.direct_answer -}}
+{{- if $daImg }}
+<div class="seo-direct-answer answer-split">
+  <div class="answer-split__text answer-clamp">
+    <div class="answer-clamp__body">{{ . | markdownify }}</div>
+    {{ $toggle | safeHTML }}
+  </div>
+  <figure class="answer-split__media">
+    <div class="browser-frame">
+      <div class="browser-frame__bar"><span class="browser-frame__dots"><span></span><span></span><span></span></span></div>
+      {{- $ip := printf "static%s" $daImg -}}
+      {{- if fileExists $ip -}}
+      {{- $dims := imageConfig $ip }}
+      <img src="{{ $daImg }}" width="{{ $dims.Width }}" height="{{ $dims.Height }}" alt="{{ $.Params.direct_answer_image_alt | default $.Title }}">
+      {{- else }}
+      <img src="{{ $daImg }}" alt="{{ $.Params.direct_answer_image_alt | default $.Title }}">
+      {{- end }}
+    </div>
+  </figure>
+</div>
+{{- else }}
+<div class="seo-direct-answer answer-clamp">
+  <div class="answer-clamp__body">{{ . | markdownify }}</div>
+  {{ $toggle | safeHTML }}
+</div>
+{{- end }}
+{{- end -}}
+
+{{- $isDE := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
+{{- $isRU := or (eq .Params.language "ru") (hasPrefix .RelPermalink "/ru/") -}}
+{{- $qfTitle := cond $isDE "Auf einen Blick" (cond $isRU "Коротко о главном" "Quick facts") -}}
+{{/* quick_facts_style frontmatter switch: "" (default framed panel)
+     or "rows" (open label/value rows, styleguide Block 16). */}}
+{{- $qfStyle := .Params.quick_facts_style | default "" -}}
+{{- with .Params.quick_facts -}}
+<section class="seo-quick-facts{{ if eq $qfStyle "rows" }} seo-quick-facts--rows{{ end }}" aria-label="{{ $qfTitle }}">
+  <h2>{{ $qfTitle }}</h2>
+  {{- if eq $qfStyle "rows" }}
+  <ul class="facts-rows facts-rows--def">
+    {{- range . }}
+    <li>
+      <strong>{{ index . "label" }}</strong>
+      <span>{{ index . "value" | markdownify }}</span>
+    </li>
+    {{- end }}
+  </ul>
+  {{- else }}
+  <ul class="quick-facts-list">
+    {{- range . }}
+    <li>
+      <strong>{{ index . "label" }}:</strong>
+      {{ index . "value" | markdownify }}
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+  {{- with $.Params.quick_facts_source }}
+  <p class="quick-facts-source"><em>Source: {{ . | markdownify }}</em></p>
+  {{- end }}
+</section>
+{{- end -}}
