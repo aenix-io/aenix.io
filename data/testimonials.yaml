@@ -20,13 +20,13 @@
   quote: >-
     Cozystack has the energy of a young project and the strength of a mature
     platform — a rare and rather dangerous combination for the old guard.
-    Aenix maintains it with the mindset of a hungry startup: they listen,
+    Ænix maintains it with the mindset of a hungry startup: they listen,
     move fast, and solve customer problems instead of sending them into a
     support maze.
   quote_de: >-
     Cozystack hat die Energie eines jungen Projekts und die Stärke einer
     ausgereiften Plattform — eine seltene und für die alte Garde durchaus
-    gefährliche Kombination. Aenix pflegt es mit der Denkweise eines hungrigen
+    gefährliche Kombination. Ænix pflegt es mit der Denkweise eines hungrigen
     Startups: Sie hören zu, handeln schnell und lösen Kundenprobleme, anstatt
     sie in ein Support-Labyrinth zu schicken.
 
@@ -34,22 +34,24 @@
   role: "CEO & Founder, Kubeone"
   photo: "/images/quotes/evgeniy-kozhukhovskiy.jpg"
   quote: >-
-    Cozystack is a powerful platform, but Aenix is what lets us squeeze every
+    Cozystack is a powerful platform, but Ænix is what lets us squeeze every
     last bit of value out of it. Their team knows the product down to the
     source code, responds within minutes rather than days, and treats our
-    roadmap as if it were their own. With Aenix behind us, we ship new managed
+    roadmap as if it were their own. With Ænix behind us, we ship new managed
     services faster and sleep better — the platform just keeps running.
 
 - name: "Sergey Fedenyak"
   role: "CEO & Founder, Gohost"
   quote: >-
-    Working with Aenix feels less like buying support and more like gaining an
+    Working with Ænix feels less like buying support and more like gaining an
     engineering partner. They bring serious product and platform expertise to
     every conversation, flag risks before they become incidents, and help us
     turn Cozystack into real business results: shorter time-to-market,
     predictable operations, and infrastructure costs we can finally plan around.
 
-- name: "Tamerlan"
+- name: "Tamerlan Abu"
+  role: "Founder, QOSI — Qazaq Open Source Initiative"
+  role_de: "Gründer, QOSI — Qazaq Open Source Initiative"
   photo: "/images/quotes/tamerlan.jpg"
   quote: >-
     Cozystack helps us stay agile and spread opensource as far as we can reach.
