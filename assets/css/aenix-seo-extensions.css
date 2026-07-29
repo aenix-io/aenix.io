@@ -5060,6 +5060,18 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   text-transform: uppercase;
   color: var(--ws-blue);
 }
+/* Clickable city picker in the hero — each city jumps to its registration */
+.ws-hero__cities { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.55rem; }
+.ws-hero__cities-sep { color: rgba(255, 255, 255, 0.28); }
+.ws-hero__city {
+  color: var(--ws-cyan);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(145, 219, 235, 0.5);
+  padding-bottom: 1px;
+  transition: color 0.15s var(--ease, ease), border-color 0.15s var(--ease, ease);
+}
+.ws-hero__city:hover,
+.ws-hero__city:focus-visible { color: #fff; border-bottom-color: #fff; }
 .ws-hero__title {
   margin: 0;
   font-size: clamp(2rem, 4.2vw, 3.25rem);

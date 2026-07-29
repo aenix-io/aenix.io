@@ -78,7 +78,9 @@ cities:
     status: "confirmed"
     date: "13 Aug 2026, 10:00–14:00"
     venue: "Almaty Hub, Zenkov St. 24, 4th floor"
-    href: "#register"
+    href: "https://forms.qosi.kz/s/cmqunqfix0039mw011sc3e8bn"
+    external: true
+    note: "Registration is on the organizer's form in Kazakhstan."
   - city: "Astana"
     country: "Kazakhstan"
     status: "confirmed"
