@@ -23,7 +23,9 @@
 <div class="ws-cities">
   {{- range $i, $c := $items -}}
   {{- $status := $c.status | default "pending" -}}
-  <a class="ws-city ws-city--{{ $status }}" href="{{ $c.href | default "#register" }}">
+  {{- $href := $c.href | default "#register" -}}
+  {{- $ext := or $c.external (hasPrefix $href "http") -}}
+  <a class="ws-city ws-city--{{ $status }}{{ if $ext }} ws-city--external{{ end }}" href="{{ $href }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}>
     <span class="ws-city__country">{{ $c.country }}</span>
     <span class="ws-city__name">{{ $c.city }}</span>
     <span class="ws-city__meta">
@@ -38,7 +40,7 @@
     </span>
     {{- with $c.venue }}<span class="ws-city__venue">{{ . }}</span>{{ end -}}
     {{- with $c.note }}<span class="ws-city__note">{{ . }}</span>{{ end -}}
-    <span class="ws-city__cta">{{ $cta }} <span aria-hidden="true">→</span></span>
+    <span class="ws-city__cta">{{ $cta }} <span aria-hidden="true">{{ if $ext }}↗{{ else }}→{{ end }}</span></span>
   </a>
   {{- end -}}
 </div>
