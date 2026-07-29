@@ -78,7 +78,9 @@ cities:
     status: "confirmed"
     date: "13 августа 2026, 10:00–14:00"
     venue: "Almaty Hub, улица Зенкова, 24, 4 этаж"
-    href: "#register"
+    href: "https://forms.qosi.kz/s/cmqunqfix0039mw011sc3e8bn"
+    external: true
+    note: "Регистрация — на форме организатора в Казахстане."
   - city: "Астана"
     country: "Казахстан"
     status: "confirmed"
