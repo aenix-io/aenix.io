@@ -1,0 +1,26 @@
+{{/*
+  placeholder-logos — sample customer logos grid for landings that
+  reference {{LOGOS}} placeholders before brand-approved logos are set.
+
+  Usage:
+    {{< placeholder-logos >}}
+    {{< placeholder-logos count="7" label="Hosting customers" >}}
+
+  Renders N greyed-out boxes with "Logo placeholder" + position number,
+  visibly distinguishable from real logos.
+*/}}
+{{- $count := .Get "count" | default "7" -}}
+{{- $label := .Get "label" | default "Customer logos placeholder" -}}
+<section class="placeholder-logos" aria-label="{{ $label }}">
+  <span class="placeholder-logos__tag">PLACEHOLDER — {{ $label }}</span>
+  <div class="placeholder-logos__grid">
+    {{- range seq (int $count) }}
+    <div class="placeholder-logos__item">
+      <svg viewBox="0 0 140 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo placeholder {{ . }}">
+        <rect width="100%" height="100%" fill="#E8EFF1" stroke="#B5C9CF" stroke-width="1.5" stroke-dasharray="4 3" rx="4"/>
+        <text x="50%" y="50%" font-family="system-ui,sans-serif" font-size="11" fill="#6B6B6B" text-anchor="middle" dominant-baseline="middle">Logo {{ . }}</text>
+      </svg>
+    </div>
+    {{- end }}
+  </div>
+</section>

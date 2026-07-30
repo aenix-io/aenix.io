@@ -1,0 +1,35 @@
+{{/*
+  404.html — site-wide error page template.
+
+  Renders content/404.md if it exists (rich navigation hub with
+  links to editions / solutions / services / resources). Falls back
+  to a minimal "page not found" if the content file is absent.
+
+  Maintained in: hugo-templates/layouts/404.html
+  Deployed by:   scripts/bootstrap-aenix-repo.sh → <repo>/layouts/404.html
+
+  Source for the rich content: pages/site-404/landing.md
+  (bootstrap script copies that into <repo>/content/404.md).
+
+  Last updated: 2026-05-10
+*/}}
+{{ define "main" }}
+{{ $page := .Site.GetPage "/404" }}
+<section class="error-page">
+  <div class="container">
+    <div class="error-page-hero">
+      <span class="error-code">404</span>
+      <h1>{{ if $page }}{{ $page.Title }}{{ else }}Page not found{{ end }}</h1>
+    </div>
+
+    {{ if $page }}
+      <div class="error-page-content">
+        {{ $page.Content }}
+      </div>
+    {{ else }}
+      <p>The page you're looking for doesn't exist.</p>
+      <a href="/" class="btn btn-primary">Back to Home</a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

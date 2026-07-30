@@ -1,0 +1,84 @@
+{{- /*
+  gpu-roi-calculator.html — GPU/AI-inference ROI: owning & hosting GPUs on your
+  own platform (Cozystack) vs renting equivalent GPU capacity in the cloud.
+  Self-contained, recomputes live.
+  Usage: {{< gpu-roi-calculator >}}  or  {{< gpu-roi-calculator lang="de" currency="€" >}}
+*/ -}}
+{{- $lang := .Get "lang" | default "en" -}}
+{{- $cur := .Get "currency" | default "€" -}}
+{{- $id := .Ordinal -}}
+{{- $de := eq $lang "de" -}}
+{{- $t := dict
+  "title"    (cond $de "GPU-ROI: eigene GPUs vs. Cloud-Miete" "GPU ROI: own GPUs vs. cloud rental")
+  "intro"    (cond $de "Vergleichen Sie die monatlichen Kosten eigener, auf Cozystack betriebener GPUs mit der Miete gleichwertiger GPU-Kapazität in der Cloud. Werte editierbar." "Compare the monthly cost of owning GPUs on Cozystack against renting equivalent GPU capacity in the cloud. Every input is editable.")
+  "gpus"     (cond $de "Anzahl GPUs" "Number of GPUs")
+  "capex"    (cond $de "Capex je GPU (inkl. Serveranteil)" "Capex per GPU (incl. server share)")
+  "amort"    (cond $de "Abschreibung (Monate)" "Amortization (months)")
+  "host"     (cond $de "Hosting je GPU/Monat (Colo, Strom, Betrieb)" "Hosting per GPU/month (colo, power, ops)")
+  "util"     (cond $de "Auslastung (%)" "Utilization (%)")
+  "rent"     (cond $de "Cloud-Mietpreis je GPU/Monat" "Cloud rental price per GPU/month")
+  "owned"    (cond $de "Eigene GPUs: Kosten / Monat" "Owned GPUs: cost / month")
+  "cloud"    (cond $de "Cloud-Miete: Kosten / Monat" "Cloud rental: cost / month")
+  "save"     (cond $de "Ersparnis / Monat" "Saving / month")
+  "perhr"    (cond $de "Effektive Kosten je GPU-Stunde (eigen, bei Auslastung)" "Effective cost per GPU-hour (owned, at utilization)")
+  "net3"     (cond $de "Netto-Ersparnis über die Abschreibung" "Net saving over the amortization period")
+  "payback"  (cond $de "Amortisation des Capex" "Capex payback")
+  "months"   (cond $de "Monate" "months")
+  "note"     (cond $de "Illustrativ. Eigene Kosten/Monat = abgeschriebener Capex + Hosting (kann während der Abschreibung höher sein als die Miete). Die Capex-Amortisation misst die operative Rückgewinnung (vermiedene Miete − Hosting) und schließt die Abschreibung aus — nach Ablauf der Abschreibung besitzen Sie die Karten und zahlen nur noch Hosting. Cloud-Miete zahlen Sie unabhängig von der Auslastung." "Illustrative. Owned cost/month = amortized capex + hosting (can exceed rental during the amortization period). Capex payback measures operational cash recovery (rental avoided − hosting) and excludes amortization — once amortization ends you own the cards and pay only hosting. Cloud rental is paid regardless of utilization.")
+-}}
+<div class="roicalc" id="gpuroi-{{ $id }}" data-cur="{{ $cur }}">
+  <h3 class="roicalc-title">{{ index $t "title" }}</h3>
+  <p class="roicalc-intro">{{ index $t "intro" }}</p>
+  <div class="roicalc-grid">
+    <label>{{ index $t "gpus" }}<input type="number" min="0" step="1" data-k="gpus" value="8"></label>
+    <label>{{ index $t "capex" }} ({{ $cur }})<input type="number" min="0" step="1000" data-k="capex" value="25000"></label>
+    <label>{{ index $t "amort" }}<input type="number" min="1" step="1" data-k="amort" value="36"></label>
+    <label>{{ index $t "host" }} ({{ $cur }})<input type="number" min="0" step="50" data-k="host" value="400"></label>
+    <label>{{ index $t "util" }}<input type="number" min="1" max="100" step="1" data-k="util" value="65"></label>
+    <label>{{ index $t "rent" }} ({{ $cur }})<input type="number" min="0" step="100" data-k="rent" value="1800"></label>
+  </div>
+  <div class="roicalc-out">
+    <div class="roicalc-row"><span>{{ index $t "owned" }}</span><b data-o="owned">—</b></div>
+    <div class="roicalc-row"><span>{{ index $t "cloud" }}</span><b data-o="cloud">—</b></div>
+    <div class="roicalc-row roicalc-hl"><span>{{ index $t "save" }}</span><b data-o="save">—</b></div>
+    <div class="roicalc-row"><span>{{ index $t "perhr" }}</span><b data-o="perhr">—</b></div>
+    <div class="roicalc-row roicalc-hl"><span>{{ index $t "net3" }}</span><b data-o="net3">—</b></div>
+    <div class="roicalc-row"><span>{{ index $t "payback" }}</span><b data-o="payback">—</b></div>
+  </div>
+  <p class="roicalc-note">{{ index $t "note" }}</p>
+</div>
+<script>
+(function(){
+  var root=document.getElementById("gpuroi-{{ $id }}");
+  if(!root)return;
+  var cur=root.getAttribute("data-cur")||"€";
+  var MON={{ if $de }}" {{ index $t "months" }}"{{ else }}" months"{{ end }};
+  function num(k){var el=root.querySelector('[data-k="'+k+'"]');var v=parseFloat(el&&el.value);return isFinite(v)&&v>=0?v:0;}
+  function fmt(v){return cur+Math.round(v).toLocaleString("en-US");}
+  function fmt2(v){return cur+(Math.round(v*100)/100).toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});}
+  function set(o,t,neg){var el=root.querySelector('[data-o="'+o+'"]');if(!el)return;el.textContent=t;var row=el.closest(".roicalc-row");if(row){row.classList.toggle("roicalc-neg",!!neg);}}
+  function calc(){
+    var gpus=num("gpus"),capex=num("capex"),amort=Math.max(1,num("amort")),host=num("host");
+    var util=Math.min(100,Math.max(0,num("util")))/100,rent=num("rent");
+    var ownedMonthly=gpus*(capex/amort)+gpus*host;
+    var cloudMonthly=gpus*rent;
+    var save=cloudMonthly-ownedMonthly;
+    var totalCapex=gpus*capex;
+    // effective cost per GPU-hour at utilization (730 hrs/mo per GPU)
+    var perGpuMonthly=gpus>0?ownedMonthly/gpus:0;
+    var billedHrs=730*util;
+    var perHr=billedHrs>0?perGpuMonthly/billedHrs:0;
+    set("owned",fmt(ownedMonthly));
+    set("cloud",fmt(cloudMonthly));
+    set("save",fmt(save),save<0);
+    set("perhr",(gpus>0&&util>0)?fmt2(perHr):"—");
+    set("net3",fmt(save*amort),save<0);
+    // Capex payback vs renting = upfront capex / monthly cash saving (rental
+    // avoided minus hosting), excluding amortization to avoid double-counting.
+    var cashSaving=cloudMonthly-gpus*host;
+    if(cashSaving>0){var m=Math.ceil(totalCapex/cashSaving);set("payback",m+MON);}
+    else{set("payback","—");}
+  }
+  root.addEventListener("input",calc);calc();
+})();
+</script>

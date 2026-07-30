@@ -23,6 +23,153 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---- Reveal-on-scroll tagging ---- */
+  // Structural content blocks get the theme .reveal treatment. Classes
+  // are added here (not in markup), so without JS everything stays
+  // visible; the reveal observer below picks them up.
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealTargets = document.querySelectorAll([
+      '.page-content > h2',
+      '.band > h2',
+      '.page-content > table',
+      '.page-content > blockquote',
+      '.seo-quick-facts',
+      '.faq-item',
+      '.trust-badges',
+      '.pricing-cards-2', '.pricing-cards-3',
+      '.capability-grid-3x3', '.trigger-grid-2x2', '.capability-grid',
+      '.fit-grid', '.timeline-horizontal', '.lead-magnet-form',
+      '.grid-2x2', '.gap-cards-2', '.cta-cards', '.cs-stats',
+      '.replace-group', '.edition-selector', '.open-core-split',
+      '.engagement-steps', '.cta-final', '.related-pages__card',
+      '.landing-cta'
+    ].join(','));
+    revealTargets.forEach(el => el.classList.add('reveal'));
+    // Observe here as well (the theme observer runs later; if anything
+    // between fails, or IO never fires — throttled/headless contexts —
+    // the failsafe below still un-gates every block).
+    try {
+      const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
+      revealTargets.forEach(el => obs.observe(el));
+    } catch (e) { /* fall through to the failsafe */ }
+    setTimeout(() => {
+      document.querySelectorAll('.reveal:not(.visible)').forEach(el => el.classList.add('visible'));
+    }, 1800);
+  }
+
+  /* ---- Trust badge pills ---- */
+  // Progressive enhancement: the markdown keeps the credentials as one
+  // plain "A · B · C" line (SEO text untouched); JS splits it into
+  // icon pills. Without JS the line renders as quiet centered text.
+  (() => {
+    const icon = (paths) =>
+      `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths}</svg>`;
+    const ICONS = {
+      hex: icon('<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>'),
+      shield: icon('<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>'),
+      award: icon('<circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>'),
+      file: icon('<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>'),
+      globe: icon('<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>'),
+      lock: icon('<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>'),
+      check: icon('<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.27"/>')
+    };
+    const PICK = [
+      [/cncf/i, 'hex'],
+      [/openssf|best practices|soc\s?2|iso\s?\d|complian/i, 'shield'],
+      [/kubernetes|certified|distribution/i, 'award'],
+      [/apache|license|\bmit\b|\bgpl\b/i, 'file'],
+      [/gdpr|sovereign|residenc|\beu\b|nis\s?2|dora/i, 'globe'],
+      [/secur|encrypt|ssl|air.?gap/i, 'lock']
+    ];
+    document.querySelectorAll('.trust-badges').forEach(el => {
+      const text = el.textContent;
+      if (!text || !text.includes('·')) return;
+      const parts = text.split('·').map(s => s.trim()).filter(Boolean);
+      if (parts.length < 2) return;
+      el.textContent = '';
+      parts.forEach(label => {
+        const pill = document.createElement('span');
+        pill.className = 'trust-badge';
+        const hit = PICK.find(([re]) => re.test(label));
+        pill.innerHTML = ICONS[hit ? hit[1] : 'check'];
+        pill.appendChild(document.createTextNode(label));
+        el.appendChild(pill);
+      });
+    });
+  })();
+
+  /* ---- Answer clamp (Show more) ---- */
+  // Progressive enhancement: the full GEO answer is always in the DOM
+  // (crawlers and no-JS visitors read all of it). Only when the text
+  // actually overflows ~7 lines do we clamp it and reveal a toggle.
+  document.querySelectorAll('.answer-clamp').forEach(clamp => {
+    const body = clamp.querySelector('.answer-clamp__body');
+    const btn = clamp.querySelector('.answer-clamp__toggle');
+    if (!body || !btn) return;
+    clamp.classList.add('is-clampable');
+    requestAnimationFrame(() => {
+      // If clamping does not actually hide anything, drop it and show full text.
+      if (body.scrollHeight - body.clientHeight < 6) {
+        clamp.classList.remove('is-clampable');
+        return;
+      }
+      const label = btn.querySelector('.answer-clamp__label');
+      btn.addEventListener('click', () => {
+        const open = clamp.classList.toggle('is-open');
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        if (label) label.textContent = open ? 'Show less' : 'Show more';
+      });
+    });
+  });
+
+  /* ---- Desktop dropdown keyboard support ---- */
+  // Panels open via :focus-within (CSS); Escape moves focus back to the
+  // toggle and drops it so the panel closes without tabbing through
+  // every remaining link.
+  document.querySelectorAll('.nav-item.has-dropdown').forEach(item => {
+    item.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && item.contains(document.activeElement)) {
+        const toggle = item.querySelector('.dropdown-toggle');
+        e.stopPropagation();
+        if (toggle) toggle.focus();
+        document.activeElement.blur();
+      }
+    });
+  });
+
+  /* ---- Edition selector tabs (homepage) ---- */
+  // Progressive enhancement: without JS the six edition cards render as
+  // a stacked grid; with JS the list becomes a vertical tablist showing
+  // one card at a time. All card content stays in the DOM.
+  document.querySelectorAll('[data-edition-tabs]').forEach(root => {
+    const tabs = [...root.querySelectorAll('[role="tab"]')];
+    const panels = [...root.querySelectorAll('[role="tabpanel"]')];
+    if (!tabs.length || tabs.length !== panels.length) return;
+    root.classList.add('is-tabbed');
+    const select = (i, focus) => {
+      tabs.forEach((t, j) => {
+        t.setAttribute('aria-selected', j === i);
+        t.tabIndex = j === i ? 0 : -1;
+        panels[j].hidden = j !== i;
+      });
+      if (focus) tabs[i].focus();
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(i));
+      t.addEventListener('keydown', e => {
+        const dir = { ArrowDown: 1, ArrowRight: 1, ArrowUp: -1, ArrowLeft: -1 }[e.key];
+        if (dir) { e.preventDefault(); select((i + dir + tabs.length) % tabs.length, true); }
+        else if (e.key === 'Home') { e.preventDefault(); select(0, true); }
+        else if (e.key === 'End') { e.preventDefault(); select(tabs.length - 1, true); }
+      });
+    });
+    select(0);
+  });
+
   /* ---- Mobile submenu toggles ---- */
   document.querySelectorAll('.mobile-nav-item.has-children > button').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -524,3 +671,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+/* Quote carousel — rotate testimonials, dots, pause on hover/focus, respect reduced-motion */
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cars = document.querySelectorAll('[data-quote-carousel]');
+  Array.prototype.forEach.call(cars, function (car) {
+    var slides = Array.prototype.slice.call(car.querySelectorAll('.quote-carousel__slide'));
+    var dots = Array.prototype.slice.call(car.querySelectorAll('.quote-carousel__dot'));
+    if (slides.length < 2) return;
+    var i = 0, timer = null, delay = parseInt(car.getAttribute('data-autoplay'), 10) || 6500;
+    function show(n) {
+      i = (n + slides.length) % slides.length;
+      slides.forEach(function (s, k) {
+        var on = k === i;
+        s.classList.toggle('is-active', on);
+        if (on) { s.removeAttribute('aria-hidden'); } else { s.setAttribute('aria-hidden', 'true'); }
+      });
+      dots.forEach(function (d, k) {
+        var on = k === i;
+        d.classList.toggle('is-active', on);
+        d.setAttribute('aria-selected', on ? 'true' : 'false');
+      });
+    }
+    function start() { if (reduce || timer) return; timer = setInterval(function () { show(i + 1); }, delay); }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    dots.forEach(function (d) {
+      d.addEventListener('click', function () { show(parseInt(d.getAttribute('data-goto'), 10)); stop(); start(); });
+    });
+    car.addEventListener('mouseenter', stop);
+    car.addEventListener('mouseleave', start);
+    car.addEventListener('focusin', stop);
+    car.addEventListener('focusout', start);
+    show(0); /* always lead with the first testimonial in data order */
+    start();
+  });
+})();

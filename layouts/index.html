@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{/*
+  Homepage layout. Renders:
+    - Hero: H1 + subtitle (from frontmatter hero_h1 / hero_subtitle,
+      falling back to .Title / .Description) + 2 CTAs + trust strip
+    - .Content (markdown body — "What we replace", "Pick your edition",
+      "Why open core", "How we engage", final CTA)
+*/}}
+{{- $h1 := .Params.hero_h1 | default .Title -}}
+{{- $sub := .Params.hero_subtitle | default .Description -}}
+<article class="page page-home">
+  <section class="page-hero page-hero--home page-hero--split">
+    <div class="page-hero-bg">
+      <div class="page-hero-grid"></div>
+      <div class="page-hero-glow"></div>
+    </div>
+    <div class="container hero-split">
+      <div class="hero-split__copy">
+        <div class="page-hero-tag">Turnkey cloud-in-a-box · Open-source core · CNCF</div>
+        <h1 class="page-hero-title">{{ $h1 }}</h1>
+        {{ with $sub }}<p class="page-hero-subtitle">{{ . }}</p>{{ end }}
+        <div class="page-hero-cta">
+          <a href="/contact/" class="btn btn-primary btn-xl">Book a call</a>
+          <a href="/products/aenix-platform/" class="btn btn-secondary btn-xl">Explore platform →</a>
+        </div>
+        <p class="page-hero-microcopy">30-minute discovery call — no slides, we scope your build or migration.</p>
+        <div class="page-hero-trust page-hero-trust--pills" aria-label="Trust indicators">
+          <span class="trust-pill">CNCF Project</span>
+          <span class="trust-pill">Apache 2.0</span>
+          <span class="trust-pill">AENIX s.r.o. (CZ)</span>
+          <span class="trust-pill">AENIX INC (DE, USA)</span>
+        </div>
+      </div>
+      <div class="hero-split__visual">
+        {{ partial "hero-diagram.html" . }}
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="page-content">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

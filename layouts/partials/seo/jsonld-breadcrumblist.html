@@ -1,0 +1,47 @@
+{{/* JSON-LD BreadcrumbList — every page.
+
+  Auto-derived from URL structure unless .Params.breadcrumb is set
+  in frontmatter (override).
+
+  Frontmatter override shape:
+  breadcrumb:
+    - name: Home
+      url: /
+    - name: Solutions
+      url: /solutions/
+    - name: DORA Compliance
+      url: /solutions/dora-compliance/
+*/}}
+{{- $crumbs := slice -}}
+{{- if .Params.breadcrumb -}}
+  {{- $crumbs = .Params.breadcrumb -}}
+{{- else -}}
+  {{- /* Auto-derive from URL */ -}}
+  {{- $crumbs = $crumbs | append (dict "name" "Home" "url" "/") -}}
+  {{- $segments := split (strings.TrimPrefix "/" (strings.TrimSuffix "/" .RelPermalink)) "/" -}}
+  {{- $cumulative := "" -}}
+  {{- range $segments -}}
+    {{- if . -}}
+      {{- $cumulative = printf "%s/%s" $cumulative . -}}
+      {{- $name := . | humanize | title -}}
+      {{- $crumbs = $crumbs | append (dict "name" $name "url" (printf "%s/" $cumulative)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- range $i, $crumb := $crumbs -}}
+      {{- if $i }},{{ end }}
+      {
+        "@type": "ListItem",
+        "position": {{ add $i 1 }},
+        "name": {{ index $crumb "name" | jsonify }},
+        "item": "{{ index $crumb "url" | absURL }}"
+      }
+    {{- end }}
+  ]
+}
+</script>
