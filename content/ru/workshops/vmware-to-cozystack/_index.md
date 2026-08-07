@@ -80,13 +80,14 @@ cities:
     venue: "Almaty Hub, улица Зенкова, 24, 4 этаж"
     href: "https://forms.qosi.kz/s/cmqunqfix0039mw011sc3e8bn"
     external: true
-    note: "Регистрация — на форме организатора в Казахстане."
+    note: "Партнёр в Алматы — QOSI (Qazaq Open Source Initiative); регистрация — на его форме."
   - city: "Астана"
     country: "Казахстан"
     status: "confirmed"
     date: "24 августа 2026, 14:00–18:30"
-    venue: "Astana Hub, зал Franklin Herbert"
+    venue: "Astana Hub, пр. Мангилик Ел, 55/1, блок С3.5, зал Franklin Herbert"
     href: "#register"
+    note: "Партнёр в Астане — GoHost.kz."
 final_cta:
   heading: "Миграция с VMware на open source: практический воркшоп"
   text: "Участие бесплатное — при условии регистрации."

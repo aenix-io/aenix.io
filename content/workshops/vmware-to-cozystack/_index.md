@@ -80,13 +80,14 @@ cities:
     venue: "Almaty Hub, Zenkov St. 24, 4th floor"
     href: "https://forms.qosi.kz/s/cmqunqfix0039mw011sc3e8bn"
     external: true
-    note: "Registration is on the organizer's form in Kazakhstan."
+    note: "Local partner in Almaty — QOSI, Qazaq Open Source Initiative; registration is on their form."
   - city: "Astana"
     country: "Kazakhstan"
     status: "confirmed"
     date: "24 Aug 2026, 14:00–18:30"
-    venue: "Astana Hub, Franklin Herbert hall"
+    venue: "Astana Hub, 55/1 Mangilik El Ave., Block C3.5, Franklin Herbert hall"
     href: "#register"
+    note: "Local partner in Astana — GoHost.kz."
 final_cta:
   heading: "Migrating off VMware to open source: a hands-on workshop"
   text: "Attendance is free — with registration."
