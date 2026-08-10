@@ -2,16 +2,17 @@ import { getStore } from '@netlify/blobs';
 
 // Anti-fraud allow-list: only URLs whose host is one of ours may be shortened,
 // so nobody can mask a phishing target behind an aenix.io/l/... link.
+// NOTE: creation is currently OPEN (no auth) — protection is the host allow-list only.
+// GitHub-org (aenix-org) auth will be added in a follow-up.
 const ALLOWED_HOSTS = new Set(['aenix.io', 'k.aenix.io', 'opc.aenix.io']);
 
 const SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$/; // 1-64, lowercase, no leading/trailing dash
 const RESERVED = new Set(['l', 'go', 'api', 'admin', 'static', 'assets']);
 const ALPHABET = 'abcdefghijkmnpqrstuvwxyz23456789'; // no ambiguous chars
 
-const json = (status, body) => ({
-  statusCode: status,
+const json = (status, body) => new Response(JSON.stringify(body), {
+  status,
   headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
-  body: JSON.stringify(body),
 });
 
 function randomSlug(n = 5) {
@@ -35,14 +36,10 @@ function validateTarget(raw) {
 export default async (req) => {
   if (req.method !== 'POST') return json(405, { error: 'Method not allowed.' });
 
-  const secret = process.env.SHORTENER_SECRET;
-  if (!secret) return json(500, { error: 'Shortener is not configured (missing SHORTENER_SECRET).' });
-
   let payload;
   try { payload = await req.json(); } catch { return json(400, { error: 'Bad JSON body.' }); }
 
-  const { url, slug: wanted, secret: given } = payload || {};
-  if (given !== secret) return json(401, { error: 'Wrong team secret.' });
+  const { url, slug: wanted } = payload || {};
 
   const v = validateTarget(String(url || ''));
   if (!v.ok) return json(400, { error: v.error });
