@@ -10,8 +10,12 @@
         <h1 class="lt-title">Link tools</h1>
         <p class="lt-sub">Build UTM-tagged campaign URLs and shorten <code>aenix.io</code> / <code>k.aenix.io</code> / <code>opc.aenix.io</code> links. Every link you create is saved to the registry.</p>
       </div>
-      <a href="/go/links/" class="lt-btn lt-btn-ghost lt-reg-link">📋 All links &amp; history →</a>
+      <div class="lt-headright">
+        <span id="lt-auth" class="lt-auth"></span>
+        <a href="/go/links/" class="lt-btn lt-btn-ghost lt-reg-link">📋 All links &amp; history →</a>
+      </div>
     </div>
+    <div id="lt-authbanner" class="lt-warn" hidden></div>
 
     <!-- ── 1. UTM builder ─────────────────────────────────────────── -->
     <div class="lt-card">
@@ -297,6 +301,10 @@
   .lt-tip.is-open .lt-tip-box{display:block}
   .lt-qrbox{margin-top:14px;padding:14px;background:#fff;border-radius:11px;display:inline-block}
   .lt-qrbox img,.lt-qrbox canvas{display:block}
+  .lt-headright{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .lt-auth{font-size:.85rem;color:var(--text-secondary,#94A3B8)}
+  .lt-auth a{color:var(--brand-primary,#01A5FF);text-decoration:none;font-weight:600}
+  .lt-auth .lt-gh{display:inline-flex;align-items:center;gap:7px;background:var(--brand-primary,#01A5FF);color:#001018;padding:8px 14px;border-radius:10px;font-weight:700}
   .lt-help{background:var(--glass-bg,rgba(255,255,255,.04));border:1px solid var(--glass-border,rgba(255,255,255,.08));border-radius:18px;padding:4px 26px}
   .lt-help summary{cursor:pointer;font-weight:600;color:var(--text-primary,#F1F5F9);padding:18px 0;font-size:1.05rem;list-style:none}
   .lt-help summary::-webkit-details-marker{display:none}
@@ -505,6 +513,24 @@
       var old=btn.textContent; btn.textContent='Copied!'; setTimeout(function(){ btn.textContent=old; },1400);
     });
   }
+
+  // ── auth state (GitHub / aenix-org) ──
+  function setGated(gated){
+    // when not logged in, disable creation but keep the UTM builder + Copy usable
+    $('sh-submit').disabled=gated; $('sh-submit').title=gated?'Log in with GitHub to create short links':'';
+  }
+  (function authState(){
+    // one-time banner from ?auth=...
+    var qp=new URLSearchParams(location.search), a=qp.get('auth');
+    if(a){ var b=$('lt-authbanner'), msg={ ok:'', notmember:'Access denied — you must be a member of the aenix-org GitHub organization.', denied:'GitHub login was cancelled or denied.', notconfigured:'Auth is not configured yet.', state:'Login expired, please try again.' }[a];
+      if(msg){ b.textContent='⚠ '+msg; b.hidden=false; } history.replaceState(null,'',location.pathname); }
+    fetch('/.netlify/functions/auth-me').then(function(r){return r.json();}).then(function(d){
+      var el=$('lt-auth');
+      if(d.open){ el.innerHTML='<span title="Auth not enforced yet">open access</span>'; setGated(false); return; }
+      if(d.authed){ el.innerHTML='✓ '+ (d.login?('@'+d.login):'signed in') +' · <a href="/.netlify/functions/auth-logout">Logout</a>'; setGated(false); }
+      else { el.innerHTML='<a class="lt-gh" href="/.netlify/functions/auth-start">Login with GitHub</a>'; setGated(true); }
+    }).catch(function(){ /* leave as-is */ });
+  })();
 })();
 </script>
 {{ end }}
