@@ -2,11 +2,13 @@ import { getStore } from '@netlify/blobs';
 
 const GA_ID = 'GT-NMCJ23L'; // same Google tag the site uses; lets GA4 count link clicks
 
-const notFound = () => ({
-  statusCode: 404,
+const htmlResponse = (status, body) => new Response(body, {
+  status,
   headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
-  body: '<!doctype html><meta charset="utf-8"><title>Link not found</title><p>This short link does not exist. <a href="https://aenix.io/">aenix.io</a></p>',
 });
+
+const notFound = () => htmlResponse(404,
+  '<!doctype html><meta charset="utf-8"><title>Link not found</title><p>This short link does not exist. <a href="https://aenix.io/">aenix.io</a></p>');
 
 const escapeJs = (s) => String(s).replace(/[\\'"<>]/g, (c) => '\\u' + c.charCodeAt(0).toString(16).padStart(4, '0'));
 
@@ -41,9 +43,5 @@ location.replace('${t}');
 <meta http-equiv="refresh" content="1;url=${target.replace(/"/g, '&quot;')}">
 </head><body><p>Redirecting to <a href="${target.replace(/"/g, '&quot;')}">${target.replace(/</g, '&lt;')}</a>…</p></body></html>`;
 
-  return {
-    statusCode: 200,
-    headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store' },
-    body: html,
-  };
+  return htmlResponse(200, html);
 };

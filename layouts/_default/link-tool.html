@@ -122,14 +122,9 @@
         <small id="sh-url-hint" class="lt-hint"></small>
       </label>
 
-      <div class="lt-grid">
-        <label class="lt-field"><span>Custom slug <small>(optional — leave blank for a random code)</small></span>
-          <div class="lt-slug"><span class="lt-slug-prefix">aenix.io/l/</span><input id="sh-slug" placeholder="cloudfest" autocomplete="off"></div>
-        </label>
-        <label class="lt-field"><span>Team secret <em>*</em></span>
-          <input id="sh-secret" type="password" placeholder="••••••••" autocomplete="current-password">
-        </label>
-      </div>
+      <label class="lt-field"><span>Custom slug <small>(optional — leave blank for a random code)</small></span>
+        <div class="lt-slug"><span class="lt-slug-prefix">aenix.io/l/</span><input id="sh-slug" placeholder="cloudfest" autocomplete="off"></div>
+      </label>
 
       <div class="lt-actions">
         <button id="sh-submit" type="button" class="lt-btn">Create short link</button>
@@ -299,16 +294,15 @@
   $('sh-url').addEventListener('input', checkUrl);
 
   $('sh-submit').addEventListener('click', function(){
-    var url = $('sh-url').value.trim(), slug = $('sh-slug').value.trim(), secret = $('sh-secret').value;
+    var url = $('sh-url').value.trim(), slug = $('sh-slug').value.trim();
     $('sh-error').hidden = true; $('sh-result').hidden = true;
     if(!url){ showErr('Enter a URL to shorten.'); return; }
     if(!hostAllowed(url)){ showErr('Only aenix.io, k.aenix.io and opc.aenix.io links can be shortened.'); return; }
-    if(!secret){ showErr('Team secret is required.'); return; }
 
     var btn = $('sh-submit'); btn.disabled = true; btn.textContent = 'Creating…';
     fetch('/.netlify/functions/shorten', {
       method:'POST', headers:{'content-type':'application/json'},
-      body: JSON.stringify({ url: url, slug: slug || undefined, secret: secret })
+      body: JSON.stringify({ url: url, slug: slug || undefined })
     }).then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
       .then(function(res){
         if(!res.ok){ showErr(res.j.error || 'Something went wrong.'); return; }
