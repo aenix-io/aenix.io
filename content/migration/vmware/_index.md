@@ -1,0 +1,259 @@
+---
+title: "VMware migration — exit VCF without breaking the application"
+description: "Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on..."
+related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/aenix-platform/", "/products/cozystack", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
+language: "en"
+quick_facts_style: "rows"
+faq_style: "rows"
+direct_answer: |
+  **A VMware migration in the post-Broadcom era is a planned project to move workloads off VMware Cloud Foundation (VCF), vSphere, and vCloud Director onto infrastructure the organization controls. It suits enterprises, hosting providers, and regulated operators facing Broadcom subscription increases, sovereignty rules (DORA, NIS2), or repatriation goals. Aenix runs these migrations end to end — inventory and workload classification, destination architecture, cohort-based cutover with parallel-run validation, and VMware decommission. The destination Aenix typically recommends is Cozystack, an Apache 2.0 CNCF project running VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking and LINSTOR storage. Done well, a structured migration produces a platform the customer owns and a 30-60% cost reduction on workloads that move.**
+quick_facts:
+  - label: "What it is"
+    value: "An end-to-end project to move workloads off VMware VCF / vSphere / vCloud Director onto customer-controlled infrastructure, typically Cozystack."
+  - label: "License"
+    value: "Apache 2.0 (no per-CPU / per-core licensing)"
+  - label: "Status"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+  - label: "Who it is for"
+    value: "Enterprises exiting VCF, hosting providers exiting VMware Cloud Director, and operators driven by Broadcom pricing, DORA / NIS2 sovereignty rules, or cloud repatriation."
+  - label: "Engagement timeline"
+    value: "Assessment in 14-28 days; a 100-VM estate typically completes in 8-12 months, a 1000-VM estate in 18-24 months."
+  - label: "Migration method"
+    value: "Cohort-based cutover with VMware running in parallel until validation; KubeVirt CDI for image conversion and automated Windows VM cleanup."
+  - label: "Destination platform"
+    value: "Cozystack default — KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
+faq:
+  - q: "Can we keep VMware running during the migration?"
+    a: "Yes, that is the standard pattern. VMware and the destination platform run in parallel, and workloads migrate cohort by cohort with validation before each cutover, so there is no big-bang weekend move."
+  - q: "What if our VCF commitments lock us in for years?"
+    a: "Cohort sequencing is aligned with subscription expirations, so workloads move as commitments lapse. The plan respects what is contractually paid for and avoids the final renewal."
+  - q: "Do you support Windows VMs?"
+    a: "Yes. KubeVirt runs Windows VMs, and Aenix uses automated VMware Tools cleanup before the first KubeVirt boot to avoid driver conflicts."
+  - q: "What platform do you migrate to?"
+    a: "Cozystack by default — an Apache 2.0 CNCF project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking, LINSTOR storage, and Tenant CRD multi-tenancy. Other destinations are used where technically appropriate."
+  - q: "How much can a VMware migration save?"
+    a: "Done well, a structured migration produces a 30-60% cost reduction on workloads that move, driven by removing per-core VMware licensing. Aenix models the delta with honest TCO before committing, using the VMware cost calculator."
+  - q: "How does Aenix engage on a VMware migration?"
+    a: "It starts with a 14-28 day assessment (estate inventory, destination architecture, workload classification, cutover sequencing), followed by a 6-18 month implementation phase with Aenix engineers integrated into your team, and optional managed Cozystack operations afterward."
+---
+
+<!-- BLOCK 1: HERO -->
+
+
+**Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on workloads that move. Done badly, it produces operational debt and a stalled migration that becomes the next year's emergency. The difference is structured assessment, honest TCO modelling, and engineers who have shipped this in production.**
+
+Aenix runs end-to-end VMware migrations for organizations exiting VCF. Same engineers who built and operate [Cozystack](/products/cozystack/) — the destination platform we typically recommend — work alongside your team for assessment, sequencing, and implementation.
+
+> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers exiting VMware Cloud Director (most common 2026 pattern); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises exiting VCF; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/blog/2026/05/vmware-migration-tools-and-strategy/">Read playbook →</a>
+</div>
+
+<!-- /BLOCK 1 -->
+
+---
+
+<!-- BLOCK 2: WHO -->
+
+## Who runs a VMware migration in 2026
+
+Organizations triggered by:
+
+- **Broadcom subscription renewal** — 2-5× pricing increases observed; ELA breakage; mandatory VCF bundling
+- **Sovereignty pressure** — DORA, NIS2, sectoral rules forcing critical workloads to customer-controlled infrastructure
+- **AI / GPU economics** — sustained workloads where VMware GPU model adds licensing complexity
+- **Repatriation strategy** — VMware-on-cloud workloads moving to private infrastructure
+- **Modernization** — old VCF estate where the upgrade path is also the exit path
+
+If two or more apply, structured migration compounds. If renewal is comfortable and no other trigger, "stay and tune" is honest.
+
+<!-- /BLOCK 2 -->
+
+---
+
+<!-- BLOCK 3: WHAT'S COVERED -->
+
+## What an Aenix VMware migration covers
+
+<div class="grid-2x2">
+
+**1. Inventory and assessment**
+vSphere / VCF / vCD inventory: workload count, OS mix, vSAN dependencies, NSX integrations, custom services, multi-site topology. Workload classification: migrate-now / migrate-later / stay / re-platform.
+
+**2. Destination architecture**
+Target platform on customer hardware. Cozystack default (KubeVirt + Cilium + LINSTOR + Tenant CRD); other options where appropriate. Sizing, capacity model, operations design.
+
+**3. Migration execution**
+Cohort-based migration. KubeVirt CDI for image conversion. Windows VM cleanup automated. Network and storage cutover. Parallel-run with VMware until validation. Cutover sequencing aligned with VCF subscription expirations.
+
+**4. Decommission**
+VMware decommission as cohorts complete. Hardware repurposed where applicable. Final renewal avoided.
+
+</div>
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>VMware VCF / vSphere / vCD</b><div class="diagram__chips"><span>vSAN</span><span>NSX</span><span>Windows VMs</span></div></div>
+<div class="diagram__conn">moves through</div>
+<div class="diagram__node"><b>Cohort-based cutover</b><div class="diagram__chips"><span>KubeVirt CDI conversion</span><span>Parallel-run validation</span></div></div>
+<div class="diagram__conn">lands on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__conn">completes with</div>
+<div class="diagram__node"><b>VMware decommission</b><div class="diagram__chips"><span>Final renewal avoided</span><span>30-60% cost reduction</span></div></div>
+</div>
+</div>
+
+<!-- /BLOCK 3 -->
+
+---
+
+<!-- BLOCK 4: COMMON MIGRATION FAILURES -->
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
+## Where VMware migrations commonly fail
+
+<div class="gap-cards-2">
+
+**No honest TCO before migration**
+Migration economics look attractive in theory; in practice, hardware refresh, platform-team capacity, and operational learning curve aren't accounted for. Project stalls when economics turn out different from assumed.
+
+**Big-bang cutover attempted**
+Single weekend "we'll move it all" rarely works at enterprise scale. Cohort-based migration with validated parallel-run is the working pattern.
+
+**Destination architecture inadequate**
+Workloads land on a private cloud that hasn't been engineered for production. Operational debt builds; team blames migration when the issue is destination platform maturity.
+
+**Network and storage redesign skipped**
+Networking and storage on Cozystack (or alternative) are different from NSX/vSAN. Skipping the redesign produces operational fragility.
+
+</div>
+
+</div>
+</div>
+
+<!-- /BLOCK 4 -->
+
+---
+
+<!-- BLOCK 4b: COST CALCULATOR -->
+
+## Estimate the cost difference
+
+Before committing, model the delta. Enter your estate size and current VMware price; the calculator shows the annual saving, the three-year net after migration, and how fast the migration pays back. For the standalone tool and methodology, see the **[VMware cost calculator](/resources/vmware-cost-calculator/)**.
+
+{{< vmware-calculator >}}
+
+<!-- /BLOCK 4b -->
+
+---
+
+<!-- BLOCK 5: HOW WE ENGAGE -->
+
+## How Aenix engages on VMware migration
+
+The engagement structure mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with VMware-migration emphasis:
+
+- **Assessment (14-28 days)** — VMware estate inventory, destination architecture, workload classification, cutover sequencing, Phase 2 roadmap.
+- **Phase 2 implementation (6-18 months)** — Aenix engineers integrated with your team for migration cohorts. Parallel-run validation. Knowledge transfer throughout.
+- **Phase 3 (optional)** — managed Cozystack operations after migration completes.
+
+For VMware-specific destination guidance, see **[VMware alternative](/alternatives/vmware-alternative/)** (singular, vendor-focused) or **[VMware alternatives listicle](/alternatives/vmware-alternatives/)** (plural, market scan).
+
+<!-- /BLOCK 5 -->
+
+---
+
+<!-- BLOCK 6: WHY AENIX -->
+
+## Why Aenix specifically for VMware migration
+
+- **Cozystack-native experience.** We built the destination platform many migrations end up on. Implementation effort estimates calibrated against work we've shipped.
+- **No hyperscaler bias.** Recommendations reflect technical fit, not partner economics. We say "stay in cloud" when right.
+- **EU + Central Asia teams.** Time-zone friendly; aligned with DACH/EU regulatory frameworks.
+- **Open-source destination.** Cozystack is Apache 2.0; the platform you migrate to is one you own.
+
+<!-- /BLOCK 6 -->
+
+---
+
+<!-- BLOCK 7: TIMELINE -->
+
+## Typical migration timeline
+
+| When | What |
+|---|---|
+| Day 0 | Discovery call (free) — confirm fit |
+| Days 1-13 (or 1-27) | Platform Readiness Assessment with VMware emphasis |
+| Day 14 (or 28) | Executive readout — written plan |
+| Months 1-3 | Destination platform foundation |
+| Months 3-12 | Workload cohorts migrate (cohort cadence aligned with VCF expirations) |
+| Months 12-24 | VMware decommission complete |
+
+100-VM estate typically completes in 8-12 months. 1000-VM estate in 18-24 months.
+
+<!-- /BLOCK 7 -->
+
+---
+
+<!-- BLOCK 8: PROOF -->
+
+## VMware migrations we've supported
+
+{{< clients >}}
+
+> {{< placeholder-quote >}}
+
+<!-- /BLOCK 8 -->
+
+---
+
+<!-- BLOCK 9: PRICING -->
+
+<div class="pricing-cards-2">
+
+### Assessment
+**On request**
+
+### Implementation
+Time-and-materials or fixed-scope.
+**On request**
+
+</div>
+
+If Phase 2 follows assessment, assessment fee credited subject to scope.
+
+<!-- /BLOCK 9 -->
+
+---
+
+<!-- BLOCK 10: FAQ -->
+
+---
+
+<!-- BLOCK 11: CTA -->
+
+<a id="discovery"></a>
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+</div>
+
+- **[VMware migration tools & strategy](/blog/2026/05/vmware-migration-tools-and-strategy/)**
+- **[VMware alternative](/alternatives/vmware-alternative/)** — destination focus
+- **[VMware alternatives listicle](/alternatives/vmware-alternatives/)** — market scan
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
+- **[Cozystack](/products/cozystack/)**
+
+<!-- /BLOCK 11 -->
+
+---
+
+*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+
+<!-- SEO: title "VMware Migration — Exit VCF Without Breaking the Application | Aenix"
+Description: "VMware migration end-to-end: assessment, destination architecture, cohort-based cutover, decommission. EU engineers, no hyperscaler bias."
+Word count: ~1000.
+-->

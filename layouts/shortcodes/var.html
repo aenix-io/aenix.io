@@ -1,0 +1,14 @@
+{{/*
+  var — inline highlight for variable names, system entities, CRDs.
+
+  Usage (inline, requires %-form):
+    The {{% var "Tenant" kind="crd" %}} CRD provisions a tenant.
+    Set {{% var "kubevirt.io/v1" kind="api" %}} in the manifest.
+    Run {{% var "cozystack-controller" kind="component" %}}.
+
+  kinds (changes color/style):
+    default | crd | api | component | env | path
+*/}}
+{{- $name := (.Get 0) | default (.Get "name") -}}
+{{- $kind := .Get "kind" | default "default" -}}
+<code class="entity-var entity-var--{{ $kind }}" data-entity="{{ $kind }}">{{ $name }}</code>

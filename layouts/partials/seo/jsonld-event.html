@@ -1,0 +1,95 @@
+{{/*
+  JSON-LD Event — workshop / event landing pages (page_type: event-landing).
+
+  Driven by an `event:` frontmatter map:
+
+    event:
+      name: "..."                  # optional, defaults to .Title
+      start_date: "2026-08-19"     # REQUIRED to emit — no schema until the real
+      end_date: "2026-08-19"       #   date is known (never publish guess dates)
+      start_time: "10:00"          # optional, local time
+      timezone: "+05:00"           # optional UTC offset, appended to start_time
+      city: "Tashkent"
+      country: "UZ"                # ISO 3166-1 alpha-2
+      venue: "..."                 # optional; omitted → city-level Place only
+      language: "ru"               # inLanguage of the event itself
+      capacity: 20                 # optional maximumAttendeeCapacity
+      price: 0                     # optional; 0 → free offer
+      registration_url: "..."      # optional; defaults to page URL
+      mode: "online"               # optional; "online" → OnlineEventAttendanceMode + VirtualLocation (default offline/physical)
+      performer: "..."             # optional; defaults to Timur Tukaev
+      performer_role: "..."        # optional; defaults to Timur's role
+
+  Organizer is fixed (Aenix); performer/mode default to the workshop (Timur,
+  offline) unless overridden per-event. Emitted only when event.start_date is
+  present — a placeholder page ships without Event schema, never guess dates.
+*/}}
+{{- $e := .Params.event | default dict -}}
+{{- $start := index $e "start_date" -}}
+{{- if $start -}}
+{{- $startTime := index $e "start_time" -}}
+{{- $tz := index $e "timezone" | default "" -}}
+{{- $startISO := cond (ne $startTime nil) (printf "%sT%s:00%s" $start $startTime $tz) $start -}}
+{{- $end := index $e "end_date" | default $start -}}
+{{- $name := index $e "name" | default .Title -}}
+{{- $city := index $e "city" | default "" -}}
+{{- $country := index $e "country" | default "" -}}
+{{- $venue := index $e "venue" -}}
+{{- $capacity := index $e "capacity" -}}
+{{- $price := index $e "price" -}}
+{{- $reg := index $e "registration_url" | default .Permalink -}}
+{{- $mode := index $e "mode" | default "offline" -}}
+{{- $online := eq $mode "online" -}}
+{{- $perf := index $e "performer" | default "Timur Tukaev" -}}
+{{- $perfRole := index $e "performer_role" | default "Cozystack maintainer, community manager, Aenix co-founder" -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationEvent",
+  "name": {{ $name | jsonify }},
+  "description": {{ .Description | jsonify }},
+  "url": "{{ .Permalink }}",
+  "startDate": {{ $startISO | jsonify }},
+  "endDate": {{ $end | jsonify }},
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": {{ cond $online "https://schema.org/OnlineEventAttendanceMode" "https://schema.org/OfflineEventAttendanceMode" | jsonify }},
+  {{- with index $e "language" }}
+  "inLanguage": {{ . | jsonify }},
+  {{- end }}
+  {{- if $capacity }}
+  "maximumAttendeeCapacity": {{ $capacity }},
+  {{- end }}
+  {{- if $online }}
+  "location": {
+    "@type": "VirtualLocation",
+    "url": {{ $reg | jsonify }}
+  },
+  {{- else }}
+  "location": {
+    "@type": "Place",
+    "name": {{ or $venue $city | jsonify }},
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": {{ $city | jsonify }},
+      "addressCountry": {{ $country | jsonify }}
+    }
+  },
+  {{- end }}
+  {{- if ne $price nil }}
+  "offers": {
+    "@type": "Offer",
+    "price": {{ $price | jsonify }},
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": {{ $reg | jsonify }}
+  },
+  {{- end }}
+  "performer": {
+    "@type": "Person",
+    "name": {{ $perf | jsonify }},
+    "jobTitle": {{ $perfRole | jsonify }}
+  },
+  "organizer": { "@id": "{{ "/#org" | absURL }}" }
+}
+</script>
+{{- end -}}

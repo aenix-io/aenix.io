@@ -1,0 +1,42 @@
+{{/* JSON-LD HowTo — services pages with step-by-step engagement.
+
+  Frontmatter shape:
+  howto_steps:
+    - name: "Step name"
+      text: "What happens in this step"
+  howto_total_time: "PT5D"  # ISO 8601 duration
+  howto_cost:
+    currency: "EUR"
+    value: "20000-50000"
+*/}}
+{{- $steps := .Params.howto_steps | default slice -}}
+{{- $totalTime := .Params.howto_total_time | default "" -}}
+{{- $cost := .Params.howto_cost | default dict -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": {{ printf "How %s works" .Title | jsonify }},
+  {{- if $totalTime }}
+  "totalTime": {{ $totalTime | jsonify }},
+  {{- end }}
+  {{- if $cost }}
+  "estimatedCost": {
+    "@type": "MonetaryAmount",
+    "currency": {{ index $cost "currency" | jsonify }},
+    "value": {{ index $cost "value" | jsonify }}
+  },
+  {{- end }}
+  "step": [
+    {{- range $i, $s := $steps -}}
+      {{- if $i }},{{ end }}
+      {
+        "@type": "HowToStep",
+        "position": {{ add $i 1 }},
+        "name": {{ index $s "name" | jsonify }},
+        "text": {{ index $s "text" | jsonify }}
+      }
+    {{- end }}
+  ]
+}
+</script>

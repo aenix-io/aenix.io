@@ -1,0 +1,25 @@
+{{/*
+  placeholder-image — visual placeholder for an illustration / diagram
+  that hasn't been designed yet.
+
+  Usage:
+    {{< placeholder-image >}}
+    {{< placeholder-image width="640" height="360" label="Architecture diagram" >}}
+    {{< placeholder-image width="1200" height="630" label="OG image (1200×630)" type="og" >}}
+
+  Renders an SVG rectangle with diagonal lines, dimensions, and a
+  centered label so designers know exactly what to replace and at what size.
+*/}}
+{{- $w := .Get "width" | default "640" -}}
+{{- $h := .Get "height" | default "320" -}}
+{{- $label := .Get "label" | default "Image placeholder" -}}
+{{- $type := .Get "type" | default "" -}}
+<figure class="placeholder-image placeholder-image--{{ $type | default "default" }}" style="max-width:{{ $w }}px;">
+  <svg viewBox="0 0 {{ $w }} {{ $h }}" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="{{ $label }}">
+    <rect width="100%" height="100%" fill="#E8EFF1" stroke="#B5C9CF" stroke-width="2" stroke-dasharray="8 6"/>
+    <line x1="0" y1="0" x2="{{ $w }}" y2="{{ $h }}" stroke="#B5C9CF" stroke-width="1"/>
+    <line x1="{{ $w }}" y1="0" x2="0" y2="{{ $h }}" stroke="#B5C9CF" stroke-width="1"/>
+    <text x="50%" y="48%" font-family="system-ui,sans-serif" font-size="20" font-weight="600" fill="#0F4C5C" text-anchor="middle" dominant-baseline="middle">{{ $label }}</text>
+    <text x="50%" y="62%" font-family="system-ui,sans-serif" font-size="14" fill="#6B6B6B" text-anchor="middle" dominant-baseline="middle">{{ $w }} × {{ $h }}</text>
+  </svg>
+</figure>

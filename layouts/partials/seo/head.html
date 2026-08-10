@@ -1,0 +1,167 @@
+{{/*
+  seo/head.html — Master SEO/GEO partial for aenix.io.
+
+  Called from layouts/partials/hooks/head-end.html. Emits all required
+  SEO and GEO scaffolding for every page based on page type and
+  frontmatter. If frontmatter is missing required fields, Hugo build
+  FAILS HARD with a descriptive error — this is intentional, not a bug.
+
+  WHY HARD-FAIL:
+  Pages without proper frontmatter rank poorly and are not cited by AI
+  search engines. We catch this at build time, not in production.
+
+  See docs/frontmatter-schema.md for the contract.
+*/}}
+
+{{/* ============================================================ */}}
+{{/* Validate REQUIRED frontmatter (hard-fail on missing fields)   */}}
+{{/* ============================================================ */}}
+
+{{- $type := .Params.page_type | default "" -}}
+{{- if not $type -}}
+  {{/* Non-content kinds (home, section hub roots, taxonomy/term pages) are treated
+       as flag-page — they carry no GEO requirement. Only a genuine leaf page with
+       no page_type is a real authoring gap worth warning about. */}}
+  {{- if in (slice "home" "section" "taxonomy" "term") .Kind -}}
+    {{- $type = "flag-page" -}}
+  {{- else -}}
+    {{- warnf "SEO WARNING — page %q is missing required frontmatter `page_type`. Set one of: solution-landing, services-landing, industry-landing, blog-article, compare, alternative, migration-hub, lead-magnet, product, event-landing, flag-page" .Path -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $requiresGEO := in (slice "solution-landing" "services-landing" "industry-landing" "compare" "alternative" "migration-hub" "lead-magnet" "product") $type -}}
+
+{{- if $requiresGEO -}}
+  {{/* Hard-fail: GEO backfill is complete across all landing pages (EN + DE).
+       A missing GEO field on a landing type now breaks the build so the standard
+       can never silently regress. See CLAUDE.md Rule 10. */}}
+  {{- if not .Params.direct_answer -}}
+    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `direct_answer`. See PAGE_CREATION_PLAYBOOK.md §6 GEO checklist." .Path $type -}}
+  {{- end -}}
+  {{- if not .Params.quick_facts -}}
+    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `quick_facts`. See PAGE_CREATION_PLAYBOOK.md §8." .Path $type -}}
+  {{- end -}}
+  {{- with .Params.faq -}}
+    {{- if lt (len .) 4 -}}
+      {{- errorf "SEO ERROR — page %q has only %d FAQ questions. Minimum 4 required for FAQPage schema eligibility." $.Path (len .) -}}
+    {{- end -}}
+  {{- else -}}
+    {{- errorf "SEO ERROR — page %q (type=%s) is missing required frontmatter `faq` (4-6 questions minimum)." .Path $type -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if and (not .Params.description) (not (in (slice "taxonomy" "term") .Kind)) -}}
+  {{/* taxonomy/term list pages are auto-generated and carry no authored description */}}
+  {{- warnf "SEO WARNING — page %q is missing required frontmatter `description` (used for meta + JSON-LD)." .Path -}}
+{{- end -}}
+
+{{- with .Params.description -}}
+  {{/* strings.RuneCount, not len: len counts bytes and doubles Cyrillic/umlaut chars */}}
+  {{- if gt (strings.RuneCount .) 165 -}}
+    {{- warnf "SEO WARNING — page %q description is %d chars (>160). SERP snippet will truncate." $.Path (strings.RuneCount .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{/* ============================================================ */}}
+{{/* Canonical + robots                                              */}}
+{{/* ============================================================ */}}
+
+{{- $canonical := .Permalink -}}
+{{- if .Params.canonical -}}
+  {{- if and (ne .Params.canonical "self") (ne .Params.canonical "en") -}}
+    {{- $canonical = .Params.canonical -}}
+  {{- end -}}
+{{- end -}}
+<link rel="canonical" href="{{ $canonical }}" />
+
+{{- with .Params.robots }}
+<meta name="robots" content="{{ . }}" />
+{{- end }}
+
+{{/* ============================================================ */}}
+{{/* Hreflang (EN ↔ DE locale pair via hreflang_en/hreflang_de)     */}}
+{{/* ============================================================ */}}
+
+{{ partial "seo/hreflang.html" . }}
+
+{{/* Legacy fallback: if a page declares Params.translations as a map      */}}
+{{/* (older convention), also emit those — non-conflicting with hreflang.html */}}
+{{- with .Params.translations }}
+  {{- range $lang, $url := . }}
+<link rel="alternate" hreflang="{{ $lang }}-legacy" href="{{ $url | absURL }}" />
+  {{- end }}
+{{- end }}
+
+{{/* ============================================================ */}}
+{{/* Open Graph + Twitter (citation-ready meta)                     */}}
+{{/* ============================================================ */}}
+
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:type" content="{{ if eq $type "blog-article" }}article{{ else }}website{{ end }}" />
+<meta property="og:locale" content="{{ if eq .Params.language "de" }}de_DE{{ else if eq .Params.language "ru" }}ru_RU{{ else }}en_US{{ end }}" />
+{{- if and (ne .Params.language "de") .Params.hreflang_de }}
+<meta property="og:locale:alternate" content="de_DE" />
+{{- end }}
+{{- if and (ne .Params.language "ru") .Params.hreflang_ru }}
+<meta property="og:locale:alternate" content="ru_RU" />
+{{- end }}
+{{- if and (ne (.Params.language | default "en") "en") .Params.hreflang_en }}
+<meta property="og:locale:alternate" content="en_US" />
+{{- end }}
+{{- with .Params.images }}
+<meta property="og:image" content="{{ index . 0 | absURL }}" />
+{{- else }}
+<meta property="og:image" content="{{ "img/aenix-social-card.png" | absURL }}" />
+{{- end }}
+<meta name="twitter:card" content="summary_large_image" />
+
+{{/* ============================================================ */}}
+{{/* SEO extensions stylesheet (badge / callout / card / 404)        */}}
+{{/* ============================================================ */}}
+
+{{ $seoCss := resources.Get "css/aenix-seo-extensions.css" | fingerprint }}
+{{ with $seoCss }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+
+{{/* ============================================================ */}}
+{{/* JSON-LD                                                         */}}
+{{/* ============================================================ */}}
+
+{{ partial "seo/jsonld-organization.html" . }}
+{{ partial "seo/jsonld-breadcrumblist.html" . }}
+
+{{- if .IsHome }}
+  {{ partial "seo/jsonld-website.html" . }}
+{{- end }}
+
+{{- if eq $type "solution-landing" }}
+  {{ partial "seo/jsonld-service.html" . }}
+{{- end }}
+
+{{- if eq $type "services-landing" }}
+  {{ partial "seo/jsonld-service.html" . }}
+  {{- if .Params.howto_steps }}
+  {{ partial "seo/jsonld-howto.html" . }}
+  {{- end }}
+{{- end }}
+
+{{- if eq $type "industry-landing" }}
+  {{ partial "seo/jsonld-service.html" . }}
+{{- end }}
+
+{{- if eq $type "blog-article" }}
+  {{ partial "seo/jsonld-blogposting.html" . }}
+{{- end }}
+
+{{- if eq $type "product" }}
+  {{ partial "seo/jsonld-softwareapplication.html" . }}
+{{- end }}
+
+{{- if eq $type "event-landing" }}
+  {{ partial "seo/jsonld-event.html" . }}
+{{- end }}
+
+{{- if .Params.faq }}
+  {{ partial "seo/jsonld-faqpage.html" . }}
+{{- end }}

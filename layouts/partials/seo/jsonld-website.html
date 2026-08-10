@@ -1,0 +1,13 @@
+{{/* JSON-LD WebSite — homepage only */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "{{ "/#website" | absURL }}",
+  "name": "Aenix",
+  "url": "{{ "/" | absURL }}",
+  "description": {{ .Site.Params.description | jsonify }},
+  "publisher": { "@id": "{{ "/#org" | absURL }}" },
+  "inLanguage": "en-US"
+}
+</script>

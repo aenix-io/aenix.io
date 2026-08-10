@@ -1,0 +1,72 @@
+{{- /*
+  Quiz block — reads `quiz:` from frontmatter, renders interactive
+  client-side quiz. JS in /js/blog-quiz.js handles answer selection,
+  scoring, and result tier.
+
+  Frontmatter shape:
+    quiz:
+      title: "Test yourself"               # optional
+      questions:
+        - q: "Question text?"
+          options:
+            - { text: "Wrong", correct: false }
+            - { text: "Right", correct: true }
+          explanation: "Why this is the answer."
+*/ -}}
+{{- $quiz := .Params.quiz -}}
+{{- $lang := .Params.language | default "en" -}}
+{{- $heading := $quiz.title | default "Test yourself" -}}
+{{- if eq $lang "de" -}}{{- $heading = $quiz.title | default "Testen Sie sich" -}}{{- end -}}
+{{- $startLabel := "Start quiz" -}}
+{{- if eq $lang "de" -}}{{- $startLabel = "Quiz starten" -}}{{- end -}}
+{{- $questions := $quiz.questions | default slice -}}
+
+{{- if $questions -}}
+<section class="blog-quiz" data-blog-quiz data-quiz-lang="{{ $lang }}">
+  <div class="blog-quiz__header">
+    <h2 class="blog-quiz__heading">{{ $heading }}</h2>
+    <p class="blog-quiz__intro">{{ len $questions }} questions · ~2 min</p>
+  </div>
+
+  <div class="blog-quiz__intro-screen" data-quiz-screen="intro">
+    <button class="blog-quiz__start" type="button" data-quiz-action="start">{{ $startLabel }}</button>
+  </div>
+
+  <div class="blog-quiz__game" data-quiz-screen="game" hidden>
+    {{ range $i, $q := $questions }}
+    <div class="blog-quiz__question" data-quiz-question="{{ $i }}"{{ if ne $i 0 }} hidden{{ end }}>
+      <div class="blog-quiz__progress">Question <span data-quiz-current>{{ add $i 1 }}</span> / {{ len $questions }}</div>
+      <h3 class="blog-quiz__q">{{ $q.q }}</h3>
+      <div class="blog-quiz__options">
+        {{ range $j, $opt := $q.options }}
+        <button class="blog-quiz__option" type="button"
+                data-quiz-option
+                data-quiz-correct="{{ if $opt.correct }}true{{ else }}false{{ end }}">
+          {{ $opt.text }}
+        </button>
+        {{ end }}
+      </div>
+      {{ with $q.explanation }}
+      <div class="blog-quiz__explanation" data-quiz-explanation hidden>
+        <strong>Why:</strong> {{ . }}
+      </div>
+      {{ end }}
+      <button class="blog-quiz__next" type="button" data-quiz-action="next" hidden>
+        {{ if eq $i (sub (len $questions) 1) }}{{ if eq $lang "de" }}Ergebnis sehen{{ else }}See result{{ end }}{{ else }}{{ if eq $lang "de" }}Weiter{{ else }}Next{{ end }}{{ end }} →
+      </button>
+    </div>
+    {{ end }}
+  </div>
+
+  <div class="blog-quiz__result" data-quiz-screen="result" hidden>
+    <div class="blog-quiz__score">
+      <span data-quiz-score>0</span> / {{ len $questions }}
+    </div>
+    <h3 class="blog-quiz__tier" data-quiz-tier></h3>
+    <p class="blog-quiz__praise" data-quiz-praise></p>
+    <button class="blog-quiz__retry" type="button" data-quiz-action="retry">
+      {{ if eq $lang "de" }}Nochmal versuchen{{ else }}Try again{{ end }}
+    </button>
+  </div>
+</section>
+{{- end -}}

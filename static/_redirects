@@ -1,0 +1,28 @@
+# Aenix.io — Netlify redirects
+# Format: from-path  to-path  status-code
+# https://docs.netlify.com/routing/redirects/redirect-options/
+#
+# Maintained in: hugo-templates/static/_redirects
+# Deployed by:   scripts/bootstrap-aenix-repo.sh → <repo>/static/_redirects
+#
+# Last updated: 2026-05-10
+
+# ─── URL renames (cleaner slugs) ──────────────────────────────────────────────
+/about-us/                          /about/                               301
+/our-partners/                      /partners/                            301
+/contact-us/                        /contact/                             301
+/kubernetes-deep-dive-course/       /kubernetes-deep-dive/                301
+
+# ─── Legacy product / service stubs (folded into editions / case studies) ─────
+/managed-kubernetes/                /products/aenix-platform/isp-edition/ 301
+/kubefarm/                          /case-studies/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/  301
+
+# ─── External app redirect (existing — preserved) ────────────────────────────
+/cloud/                             https://cloud.aenix.io/               302
+
+# ─── Removed Deckhouse case studies (Aenix did the work, no longer published) ──
+/case-studies/prototype-a-virtualization-subsystem-for-deckhouse-kubernetes-platform/    /case-studies/  410
+/case-studies/research-and-integration-of-fast-and-reliable-block-storage-for-deckhouse-kubernetes-platform/  /case-studies/  410
+
+# ─── Catch-all 404 (Netlify default behavior; kept explicit) ─────────────────
+/*                                  /404.html                             404

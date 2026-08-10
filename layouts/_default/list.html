@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{/*
+  Project-level override of theme's _default/list.html.
+
+  Landing pages on this site are authored as section bundles (`_index.md`),
+  so they render through the LIST template, not single.html. This override
+  keeps the theme's hero + content + child-card-grid, and adds two templated,
+  cross-cutting blocks so they no longer have to be hand-pasted per page:
+    - related-pages.html  (renders `related_pages:` frontmatter, ~137 pages)
+    - landing-cta.html    (funnel-aware closing CTA for landing sections)
+  Both partials no-op on pages that don't qualify (see their own guards).
+*/}}
+<section class="page-hero">
+  <div class="page-hero-bg">
+    <div class="page-hero-grid"></div>
+    <div class="page-hero-glow"></div>
+  </div>
+  <div class="container">
+    {{ partial "lang-switch.html" . }}
+    <h1 class="page-hero-title">{{ .Title }}</h1>
+    {{/* Commercial landings open their body with a bold lead paragraph that
+         restates the value prop; rendering .Description as a hero subtitle too
+         made visitors read the same line twice (marketer review #3). Suppress
+         the subtitle on those page types — .Description still powers meta/OG/SERP.
+         Non-landing list pages (section hubs, etc.) keep their subtitle. */}}
+    {{- $landing := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare" "event-landing") (.Params.page_type | default "") -}}
+    {{/* Non-landing hubs: render short `hero_subtitle` (decoupled from meta) when
+         set, else fall back to the full `.Description`. .Description still powers
+         meta/OG/SERP either way. */}}
+    {{- $sub := .Params.hero_subtitle | default .Description -}}
+    {{ if and $sub (not $landing) }}<p class="page-hero-subtitle">{{ $sub }}</p>{{ end }}
+  </div>
+</section>
+
+{{ partial "positioning-line.html" . }}
+
+<div class="section">
+  <div class="container">
+    {{/* GEO answer-first blocks (direct_answer + quick_facts) auto-injected from
+         frontmatter, matching the theme mechanism; geo-faq after the body. Bodies
+         must NOT also carry seo-blocks/seo-faq shortcodes (would double-render). */}}
+    {{ partial "seo/geo-intro.html" . }}
+    {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . }}</div>{{ end }}
+    {{ partial "seo/geo-faq.html" . }}
+
+    {{/* Pages that render their own richer child navigation in-body (e.g. the
+         workshop tour hub's city cards) can suppress the automatic grid. */}}
+    {{ $pages := .Pages }}
+    {{ if and $pages (not .Params.hide_child_cards) }}
+    <div class="card-grid card-grid--hub">
+      {{ range $pages }}
+      {{/* Whole-card link; the dead 16:9 placeholder zones are gone.
+           A real frontmatter `image` still renders when a page sets one. */}}
+      <a class="card card--hub" href="{{ .RelPermalink }}">
+        {{ with .Params.image }}
+        <div class="card-image">
+          <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+        </div>
+        {{ end }}
+        <div class="card-body">
+          <h2 class="card-title">{{ .Title }}</h2>
+          {{ with .Description }}<p class="card-description">{{ . }}</p>{{ end }}
+          <span class="card-link" aria-hidden="true"></span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ partial "related-pages.html" . }}
+  </div>
+</div>
+
+{{ partial "landing-cta.html" . }}
+{{ end }}

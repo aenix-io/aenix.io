@@ -1,0 +1,25 @@
+{{/*
+  clients.html — production-customer logo strip.
+
+  Renders the seven public production customers (ISP Edition) with the
+  legacy-site logo assets from static/images/clients/. Usage cleared
+  per CLAUDE.md Rule 1 (Timur sign-off, 2026-07-09, replacing the
+  placeholder-logos markers). Logos only — the surrounding heading on
+  each page provides the context line.
+*/}}
+{{- $clients := slice
+  (dict "name" "GoHost.kz" "url" "https://gohost.kz/" "logo" "/images/clients/gohost.svg")
+  (dict "name" "HDReady" "url" "https://hdready.com/" "logo" "/images/clients/hdready.svg")
+  (dict "name" "Beby Cloud" "url" "https://beby.cloud/en/" "logo" "/images/clients/beby.svg")
+  (dict "name" "HiKube" "url" "https://hikube.cloud/" "logo" "/images/clients/hikube.svg")
+  (dict "name" "UseTech" "url" "https://usetech.com/" "logo" "/images/clients/usetech.svg")
+  (dict "name" "Cloupard" "url" "https://cloupard.uz/" "logo" "/images/clients/cloupard.svg")
+  (dict "name" "Cloudsy" "url" "https://cloudsy.partners/" "logo" "/images/clients/cloudsy.svg")
+-}}
+<div class="clients-grid clients-grid--inline">
+  {{- range $clients }}
+  <a class="client-logo" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
+    <img src="{{ .logo }}" alt="{{ .name }}" loading="lazy" height="48">
+  </a>
+  {{- end }}
+</div>

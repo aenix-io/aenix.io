@@ -8,7 +8,7 @@ primary_keyword: "build a public cloud platform"
 secondary_keywords: ["sell cloud services", "cozystack webinar", "cloud provider platform", "cloud service catalog", "cloud billing platform"]
 images: ["img/og/og-webinar-en.png"]
 hide_child_cards: true
-hero_eyebrow: "Free live webinar · Online · August 19, 2026 · 10:00 CET"
+hero_eyebrow: "Free live webinar · Online · August 19, 2026 · 16:00 CEST (14:00 UTC)"
 hero_title: "Launch or upgrade a public cloud your customers can buy"
 hero_tagline: "Andrei Kvapil, the creator of Cozystack, walks through the whole journey — from platform setup and service catalog to billing, integrations, migration planning, and your first paying customers."
 hero_chips:
@@ -39,7 +39,7 @@ quick_facts:
   - label: "Format"
     value: "A live online webinar, about 60 minutes: a walkthrough of the launch path, followed by a live Q&A with the speaker"
   - label: "Date"
-    value: "August 19, 2026, 10:00 CET — online. Register to get the calendar invite and the recording."
+    value: "August 19, 2026, 16:00 CEST (14:00 UTC) — online. Register to get the calendar invite and the recording."
   - label: "Price"
     value: "Free with registration; every registrant receives the recording"
   - label: "Language"
@@ -53,7 +53,7 @@ quick_facts:
 
 faq:
   - q: "When does the webinar take place?"
-    a: "August 19, 2026 at 10:00 CET, online. Register and we will email you a calendar invite — and the recording afterwards, whether or not you can attend live."
+    a: "August 19, 2026 at 16:00 CEST (14:00 UTC), online. Register and we will email you a calendar invite — and the recording afterwards, whether or not you can attend live."
   - q: "Is the webinar free?"
     a: "Yes. Attendance is free — you only need to register. Every registrant also receives the recording."
   - q: "Will there be a recording?"
@@ -67,7 +67,7 @@ faq:
 
 final_cta:
   heading: "Build a public cloud you can actually sell"
-  text: "August 19, 2026 · 10:00 CET · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
+  text: "August 19, 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
   button: "Register"
   href: "#register"
 ---
@@ -254,7 +254,7 @@ LinkedIn</a>
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
 <h2 class="ws-h2 ws-h2--light" id="wb-register-h">Registration</h2>
-<p class="ws-register__lead">August 19, 2026 · 10:00 CET · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
+<p class="ws-register__lead">August 19, 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
 <div class="ws-register__form">
 
 {{< clickmeeting room="18263597110070205" >}}
