@@ -1,36 +1,15 @@
 import { getStore } from '@netlify/blobs';
+import { ALLOWED_HOSTS, SCHEMA_VERSION, sanitizeUrl, parseUtm, validateTarget, fnv1a, json } from './_shared.mjs';
 
-// Anti-fraud allow-list: only URLs whose host is one of ours may be shortened,
-// so nobody can mask a phishing target behind an aenix.io/l/... link.
-// NOTE: creation is currently OPEN (no auth) — protection is the host allow-list only.
-// GitHub-org (aenix-org) auth will be added in a follow-up.
-const ALLOWED_HOSTS = new Set(['aenix.io', 'k.aenix.io', 'opc.aenix.io']);
-
-const SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$/; // 1-64, lowercase, no leading/trailing dash
-const RESERVED = new Set(['l', 'go', 'api', 'admin', 'static', 'assets']);
-const ALPHABET = 'abcdefghijkmnpqrstuvwxyz23456789'; // no ambiguous chars
-
-const json = (status, body) => new Response(JSON.stringify(body), {
-  status,
-  headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
-});
+const SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$/;
+const RESERVED = new Set(['l', 'go', 'api', 'admin', 'static', 'assets', 'links']);
+const ALPHABET = 'abcdefghijkmnpqrstuvwxyz23456789';
 
 function randomSlug(n = 5) {
   let s = '';
   const bytes = crypto.getRandomValues(new Uint8Array(n));
   for (const b of bytes) s += ALPHABET[b % ALPHABET.length];
   return s;
-}
-
-function validateTarget(raw) {
-  let u;
-  try { u = new URL(raw); } catch { return { ok: false, error: 'Not a valid URL.' }; }
-  if (u.protocol !== 'https:' && u.protocol !== 'http:') return { ok: false, error: 'Only http(s) URLs are allowed.' };
-  const host = u.hostname.toLowerCase();
-  if (!ALLOWED_HOSTS.has(host)) {
-    return { ok: false, error: `Only aenix.io, k.aenix.io and opc.aenix.io links can be shortened (got "${host}").` };
-  }
-  return { ok: true, url: u.toString() };
 }
 
 export default async (req) => {
@@ -44,9 +23,22 @@ export default async (req) => {
   const v = validateTarget(String(url || ''));
   if (!v.ok) return json(400, { error: v.error });
 
-  const store = getStore('links');
+  // Strip secrets/PII from the target before persisting.
+  const { url: cleanUrl, stripped } = sanitizeUrl(v.url);
 
-  // Resolve slug: use requested one if free & valid, otherwise generate.
+  const store = getStore('links');
+  const base = (process.env.URL || 'https://aenix.io').replace(/\/$/, '');
+
+  // Idempotency: an auto-slug request for a target we already have returns the
+  // existing link instead of burning a new slug (safe double-submits).
+  if (wanted == null || String(wanted).trim() === '') {
+    const dedupKey = 'dedup_' + fnv1a(cleanUrl);
+    const existingSlug = await store.get(dedupKey);
+    if (existingSlug) {
+      return json(200, { slug: existingSlug, url: cleanUrl, short: `${base}/l/${existingSlug}`, deduped: true, stripped });
+    }
+  }
+
   let slug;
   if (wanted != null && String(wanted).trim() !== '') {
     slug = String(wanted).trim().toLowerCase();
@@ -61,9 +53,15 @@ export default async (req) => {
     if (!slug) return json(500, { error: 'Could not generate a free slug, try again.' });
   }
 
-  const record = { url: v.url, created: new Date().toISOString() };
-  await store.set(slug, JSON.stringify(record), { metadata: { url: v.url } });
+  const record = {
+    v: SCHEMA_VERSION, type: 'short', url: cleanUrl, utm: parseUtm(cleanUrl),
+    created: new Date().toISOString(), disabled: false,
+  };
+  await store.set(slug, JSON.stringify(record), { metadata: { url: cleanUrl } });
+  // dedup pointer for idempotency (only for auto-slug targets)
+  if (wanted == null || String(wanted).trim() === '') {
+    try { await store.set('dedup_' + fnv1a(cleanUrl), slug); } catch {}
+  }
 
-  const base = process.env.URL || 'https://aenix.io';
-  return json(200, { slug, url: v.url, short: `${base.replace(/\/$/, '')}/l/${slug}` });
+  return json(200, { slug, url: cleanUrl, short: `${base}/l/${slug}`, stripped });
 };

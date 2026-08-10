@@ -19,12 +19,18 @@
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
-# Short-link resolver: /l/<slug> is served by the go function (reads Netlify Blobs,
-# fires a GA4 event, then redirects). Must come BEFORE the catch-all 404 below.
+# Short-link resolver: /l/<slug> → go function (first-party click counter + 302
+# redirect to the target). Must come BEFORE the catch-all 404 below.
 [[redirects]]
   from = "/l/*"
   to = "/.netlify/functions/go?s=:splat"
   status = 200
+
+# Keep the /l/ and registry pages out of GA4/search as extra safety.
+[[headers]]
+  for = "/l/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
 
 [[redirects]]
   from = "/*"

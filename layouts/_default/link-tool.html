@@ -5,21 +5,43 @@
 {{ define "main" }}
 <section class="lt-wrap">
   <div class="lt-container">
-    <h1 class="lt-title">Link tools</h1>
-    <p class="lt-sub">Build UTM-tagged campaign URLs and shorten them. Only
-      <code>aenix.io</code>, <code>k.aenix.io</code> and <code>opc.aenix.io</code> links can be shortened.</p>
+    <div class="lt-head">
+      <div>
+        <h1 class="lt-title">Link tools</h1>
+        <p class="lt-sub">Build UTM-tagged campaign URLs and shorten <code>aenix.io</code> / <code>k.aenix.io</code> / <code>opc.aenix.io</code> links. Every link you create is saved to the registry.</p>
+      </div>
+      <a href="/go/links/" class="lt-btn lt-btn-ghost lt-reg-link">📋 All links &amp; history →</a>
+    </div>
 
     <!-- ── 1. UTM builder ─────────────────────────────────────────── -->
     <div class="lt-card">
       <h2 class="lt-h2"><span class="lt-step">1</span> UTM builder</h2>
 
+      <label class="lt-field lt-preset-field"><span>Quick preset <small>(fills Platform + Channel — you can tweak after)</small></span>
+        <select id="lt-preset">
+          <option value="">— none —</option>
+          <option value="linkedin|social">LinkedIn — organic post</option>
+          <option value="linkedin|paid_social">LinkedIn — paid ad</option>
+          <option value="x|social">X — organic post</option>
+          <option value="telegram|social">Telegram — channel post</option>
+          <option value="google|cpc">Google Ads — search (CPC)</option>
+          <option value="newsletter|email">Own newsletter — email</option>
+          <option value="g2|referral">G2 — listing/referral</option>
+          <option value="hackernews|social">Hacker News — post</option>
+          <option value="event|referral">Event — QR / offline</option>
+          <option value="sponsorship|display">Sponsorship — banner</option>
+        </select>
+      </label>
+
       <label class="lt-field">
-        <span>Base URL <em>*</em></span>
+        <span>Base URL <em>*</em>{{ "" }}
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">The page the link points to. Tag only external links that lead to our site — never internal navigation.<br><b>e.g.</b> https://aenix.io/pricing/</i></b></span>
         <input id="utm-base" type="url" placeholder="https://aenix.io/pricing/" autocomplete="off">
       </label>
 
       <div class="lt-grid">
-        <label class="lt-field"><span>Platform / resource <em>*</em> <small>(utm_source)</small></span>
+        <label class="lt-field"><span>Platform / resource <em>*</em> <small>(utm_source)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Where the link is physically published. Each Telegram channel or ad network is its own source.<br><b>e.g.</b> linkedin, g2, tg-cozystack</i></b></span>
           <select id="utm-source">
             <option value="" disabled selected>— choose —</option>
             <optgroup label="Social">
@@ -42,13 +64,31 @@
               <option value="discord">Discord</option>
               <option value="slack">Slack</option>
             </optgroup>
+            <optgroup label="CNCF ecosystem">
+              <option value="cncf">CNCF (landscape/blog)</option>
+              <option value="kubernetes-slack">Kubernetes Slack</option>
+              <option value="artifacthub">Artifact Hub</option>
+              <option value="thenewstack">The New Stack</option>
+              <option value="infoq">InfoQ</option>
+            </optgroup>
+            <optgroup label="Review &amp; intent">
+              <option value="g2">G2</option>
+              <option value="capterra">Capterra</option>
+              <option value="trustradius">TrustRadius</option>
+              <option value="stackshare">StackShare</option>
+            </optgroup>
             <optgroup label="Search">
               <option value="google">Google</option>
               <option value="bing">Bing</option>
             </optgroup>
-            <optgroup label="Email">
-              <option value="newsletter">Newsletter</option>
+            <optgroup label="Email (owned)">
+              <option value="newsletter">Own newsletter</option>
               <option value="email">Email (transactional)</option>
+            </optgroup>
+            <optgroup label="Media &amp; sponsorship">
+              <option value="podcast">Podcast</option>
+              <option value="sponsorship">Sponsorship</option>
+              <option value="newsletter-sponsor">Sponsored newsletter</option>
             </optgroup>
             <optgroup label="Own sites (cross-site banner)">
               <option value="aenix.io">aenix.io</option>
@@ -63,41 +103,78 @@
           <input id="utm-source-custom" class="lt-custom" placeholder="custom source (lowercase, no spaces)" autocomplete="off" hidden>
         </label>
 
-        <label class="lt-field"><span>Placement type <em>*</em> <small>(utm_medium)</small></span>
+        <label class="lt-field"><span>Channel <em>*</em> <small>(utm_medium)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">The GA4 traffic channel — <b>how</b> the visit is earned. These exact values make GA4 sort traffic correctly. Format/creative goes in Content, not here.<br><b>e.g.</b> Organic post → social; Paid ad → paid_social; Search ad → cpc</i></b></span>
           <select id="utm-medium">
             <option value="" disabled selected>— choose —</option>
-            <option value="organic_social">Organic post (social)</option>
-            <option value="paid_social">Paid ad (social)</option>
-            <option value="cpc">Search ad / CPC</option>
+            <option value="social">Organic post (social)</option>
+            <option value="paid_social">Paid ad (paid_social)</option>
+            <option value="cpc">Search ad (cpc)</option>
             <option value="display">Banner / display</option>
             <option value="video">Video</option>
-            <option value="story">Story / reel</option>
             <option value="email">Email</option>
-            <option value="newsletter">Newsletter</option>
-            <option value="influencer">Influencer</option>
             <option value="referral">Referral / partner</option>
             <option value="affiliate">Affiliate</option>
-            <option value="qr">QR code (offline)</option>
             <option value="__custom">Custom…</option>
           </select>
-          <input id="utm-medium-custom" class="lt-custom" placeholder="custom medium" autocomplete="off" hidden>
+          <input id="utm-medium-custom" class="lt-custom" placeholder="custom medium (GA4-valid)" autocomplete="off" hidden>
         </label>
 
-        <label class="lt-field"><span>Campaign <em>*</em> <small>(utm_campaign)</small></span>
-          <input id="utm-campaign" placeholder="cloudfest2026" autocomplete="off">
+        <label class="lt-field"><span>Campaign name <em>*</em> <small>(utm_campaign)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">The initiative — one stable name across ALL its links (don't put dates here, that fragments reports). Lowercase, no spaces.<br><b>e.g.</b> cloudfest2026, vmware-migration</i></b></span>
+          <input id="utm-campaign" list="campaign-list" placeholder="cloudfest2026" autocomplete="off">
+          <datalist id="campaign-list"></datalist>
         </label>
 
-        <label class="lt-field"><span>Launch date <small>(calendar → added to campaign)</small></span>
+        <label class="lt-field"><span>Region <small>(optional)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Target region — prefixed into the campaign so you can filter by geo.<br><b>e.g.</b> emea, amer, apac, cis, global</i></b></span>
+          <select id="utm-region">
+            <option value="">—</option>
+            <option value="global">global</option>
+            <option value="emea">emea</option>
+            <option value="amer">amer</option>
+            <option value="apac">apac</option>
+            <option value="cis">cis</option>
+          </select>
+        </label>
+
+        <label class="lt-field"><span>Funnel stage <small>(optional)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Where in the funnel: awareness / consideration / decision.<br><b>tofu</b> = top (awareness), <b>mofu</b> = middle, <b>bofu</b> = bottom (decision)</i></b></span>
+          <select id="utm-funnel">
+            <option value="">—</option>
+            <option value="tofu">tofu (awareness)</option>
+            <option value="mofu">mofu (consideration)</option>
+            <option value="bofu">bofu (decision)</option>
+          </select>
+        </label>
+
+        <label class="lt-field"><span>Type <small>(optional)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Campaign type — folded into the campaign name.<br><b>e.g.</b> event, webinar, launch, nurture, content, ad</i></b></span>
+          <select id="utm-type">
+            <option value="">—</option>
+            <option value="event">event</option>
+            <option value="webinar">webinar</option>
+            <option value="launch">launch</option>
+            <option value="nurture">nurture</option>
+            <option value="content">content</option>
+            <option value="ad">ad</option>
+          </select>
+        </label>
+
+        <label class="lt-field"><span>Format / content <small>(utm_content)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Which creative or variant — for A/B tests and telling placements apart. This is where format lives (banner, story, video…).<br><b>e.g.</b> hero-cta, banner-a, post-1, story-swipeup</i></b></span>
+          <input id="utm-content" list="content-list" placeholder="hero-cta" autocomplete="off">
+          <datalist id="content-list"><option value="hero-cta"><option value="cta-footer"><option value="banner-a"><option value="banner-b"><option value="post-1"><option value="story-swipeup"><option value="carousel"><option value="signature"></datalist>
+        </label>
+
+        <label class="lt-field"><span>Launch date <small>(optional → utm_id)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Optional cohort date. Goes to <b>utm_id</b> (GA4 "Campaign ID") — a separate dimension, so the campaign name stays clean and reports still roll up.<br><b>e.g.</b> 2026-08-10</i></b></span>
           <input id="utm-date" type="date" autocomplete="off">
         </label>
 
-        <label class="lt-field"><span>Content / variant <small>(utm_content)</small></span>
-          <input id="utm-content" list="content-list" placeholder="hero-button" autocomplete="off">
-          <datalist id="content-list"><option value="hero-button"><option value="cta-footer"><option value="post-1"><option value="post-2"><option value="story-swipeup"><option value="banner-top"><option value="signature"></datalist>
-        </label>
-
-        <label class="lt-field"><span>Term <small>(utm_term — paid search keyword)</small></span>
-          <input id="utm-term" placeholder="cozystack" autocomplete="off">
+        <label class="lt-field" id="utm-term-field" hidden><span>Term <small>(utm_term — paid search keyword)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Paid-search keyword only (shown for CPC). Don't put creative info here — that goes in Content.<br><b>e.g.</b> kubernetes-vmware</i></b></span>
+          <input id="utm-term" placeholder="kubernetes-vmware" autocomplete="off">
         </label>
       </div>
 
@@ -117,12 +194,14 @@
       <h2 class="lt-h2"><span class="lt-step">2</span> Shortener</h2>
 
       <label class="lt-field">
-        <span>URL to shorten <em>*</em></span>
+        <span>URL to shorten <em>*</em>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Only aenix.io / k.aenix.io / opc.aenix.io targets are allowed (anti-fraud — nobody can hide a foreign link behind our domain). UTM params on the target are preserved.</i></b></span>
         <input id="sh-url" type="url" placeholder="https://aenix.io/..." autocomplete="off">
         <small id="sh-url-hint" class="lt-hint"></small>
       </label>
 
-      <label class="lt-field"><span>Custom slug <small>(optional — leave blank for a random code)</small></span>
+      <label class="lt-field"><span>Custom slug <small>(optional — leave blank for a random code)</small>
+        <b class="lt-tip">ⓘ<i class="lt-tip-box">The tail of the short link. Readable is better for print/QR.<br><b>e.g.</b> aenix.io/l/cloudfest</i></b></span>
         <div class="lt-slug"><span class="lt-slug-prefix">aenix.io/l/</span><input id="sh-slug" placeholder="cloudfest" autocomplete="off"></div>
       </label>
 
@@ -135,7 +214,10 @@
         <div class="lt-result-row">
           <a id="sh-short" class="lt-out" href="#" target="_blank" rel="noopener"></a>
           <button id="sh-copy" type="button" class="lt-btn lt-btn-ghost">Copy</button>
+          <button id="sh-qr" type="button" class="lt-btn lt-btn-ghost">QR</button>
         </div>
+        <div id="sh-qrbox" class="lt-qrbox" hidden></div>
+        <p id="sh-stripped" class="lt-warn" hidden></p>
       </div>
       <p id="sh-error" class="lt-error" hidden></p>
     </div>
@@ -144,16 +226,17 @@
     <details class="lt-help">
       <summary>How this works — read once</summary>
       <div class="lt-help-body">
-        <p><strong>What UTM tags are for.</strong> They tell GA4 where a visitor came from. You add them to a link and publish that link <em>outside</em> the site — in a post, an ad, an email, a Telegram channel.</p>
-        <p><strong>Rule #0 — tag external links only.</strong> Never tag a link that both lives on our site and points to the same site (menus, internal banners). A UTM on an internal link <em>resets</em> the real source in GA4 and you lose the true origin.</p>
+        <p><strong>What UTM tags are for.</strong> They tell GA4 where a visitor came from. Add them to a link and publish it <em>outside</em> the site — a post, an ad, an email, a Telegram channel.</p>
+        <p><strong>Rule #0 — tag external links only.</strong> Never tag a link that lives on our site and points to the same site (menus, internal banners). A UTM on an internal link <em>resets</em> the real source in GA4 and you lose the true origin. The tool warns you when it detects this.</p>
         <ul>
-          <li><strong>Platform / resource</strong> = where the link physically sits (LinkedIn, a Telegram channel, Google Ads…). Each Telegram channel is its own source.</li>
-          <li><strong>Placement type</strong> = how the traffic is earned. Organic post → <code>social</code>; paid ad → <code>paid_social</code>; search ad → <code>cpc</code>; email → <code>email</code>. These exact values let GA4 sort traffic into the right channel.</li>
-          <li><strong>Campaign</strong> = the initiative, one name everywhere. Pick a <strong>launch date</strong> from the calendar and it’s appended automatically.</li>
-          <li><strong>Content / Term</strong> = optional: creative variant (A/B, which post/button) and paid-search keyword.</li>
+          <li><strong>Platform / resource</strong> (utm_source) = where the link sits — a network, a community, an event. Each Telegram channel is its own source.</li>
+          <li><strong>Channel</strong> (utm_medium) = the GA4 traffic type. Only GA4-valid values are offered (<code>social</code>, <code>paid_social</code>, <code>cpc</code>, <code>display</code>, <code>video</code>, <code>email</code>, <code>referral</code>, <code>affiliate</code>) so nothing falls into “Unassigned”. <strong>Format/creative does NOT go here</strong> — it goes in Content.</li>
+          <li><strong>Campaign</strong> = one stable name for the whole initiative. Region / funnel / type are folded in as a prefix so you can filter (e.g. <code>emea_tofu_event_cloudfest2026</code>). <strong>No dates in the campaign</strong> — the launch date goes to <code>utm_id</code> instead, keeping reports rolled-up.</li>
+          <li><strong>Content</strong> (utm_content) = the creative/variant for A/B and placements (<code>banner-a</code>, <code>story-swipeup</code>). <strong>Term</strong> = paid-search keyword only (appears when Channel = cpc).</li>
         </ul>
-        <p><strong>Cross-site banners.</strong> Banner on cozystack.io pointing to aenix.io (or the reverse) → set <em>Platform</em> to the site the banner sits on. Same-site → don’t tag (the tool warns you).</p>
-        <p><strong>Then:</strong> <em>Copy URL</em> for any site, or <em>Shorten</em> for aenix.io links (needs the team secret; only aenix.io / k.aenix.io / opc.aenix.io can be shortened — anti-fraud). The short link is <code>aenix.io/l/&lt;slug&gt;</code> and its clicks show up in GA4.</p>
+        <p><strong>⚠ Paid search (Google/Bing Ads).</strong> Those platforms auto-tag with GCLID/MSCLKID. <strong>Do NOT hand-tag paid-search final URLs</strong> — it breaks the Ads↔GA4 cost/attribution join. Use auto-tagging + GA4 linking. The tool warns on <code>google/bing + cpc</code>.</li>
+        <p><strong>Two sites.</strong> aenix.io and cozystack.io have separate GA4 properties. A short <code>aenix.io/l/…</code> link that targets cozystack.io redirects (302) and preserves the UTMs — the landing is attributed in cozystack’s property; the click count lives in this tool’s registry. For cross-site banners set <em>Platform</em> to the site the banner sits on.</p>
+        <p><strong>Shortening.</strong> <em>Copy URL</em> works for any site; <em>Shorten</em> is for aenix.io links only (anti-fraud allow-list). Short links are <code>aenix.io/l/&lt;slug&gt;</code>, redirect server-side with a first-party click counter (works even with ad-blockers), and <strong>every link you build is logged to the <a href="/go/links/">registry</a></strong>.</p>
       </div>
     </details>
   </div>
@@ -161,10 +244,12 @@
 
 <style>
   .lt-wrap{padding:6rem 20px;background:var(--bg-main,#0B0F1A)}
-  .lt-container{max-width:820px;margin:0 auto;font-family:var(--font-body,'Inter',system-ui,sans-serif)}
+  .lt-container{max-width:840px;margin:0 auto;font-family:var(--font-body,'Inter',system-ui,sans-serif)}
+  .lt-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:30px}
   .lt-title{font-size:2.1rem;margin:0 0 8px;color:var(--text-primary,#F1F5F9);font-weight:700}
-  .lt-sub{color:var(--text-secondary,#94A3B8);margin:0 0 30px;font-size:.98rem;line-height:1.6}
+  .lt-sub{color:var(--text-secondary,#94A3B8);margin:0;font-size:.98rem;line-height:1.6;max-width:560px}
   .lt-sub code,.lt-help-body code{background:rgba(255,255,255,.06);border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:5px;padding:1px 6px;font-family:var(--font-mono,monospace);font-size:.82em;color:var(--brand-cyan,#94DEE0)}
+  .lt-reg-link{white-space:nowrap;text-decoration:none}
   .lt-card{background:var(--glass-bg,rgba(255,255,255,.04));border:1px solid var(--glass-border,rgba(255,255,255,.08));border-radius:18px;padding:26px;margin-bottom:22px;backdrop-filter:var(--glass-blur,blur(16px) saturate(120%));-webkit-backdrop-filter:var(--glass-blur,blur(16px) saturate(120%))}
   .lt-h2{font-size:1.2rem;margin:0 0 20px;display:flex;align-items:center;gap:11px;color:var(--text-primary,#F1F5F9);font-weight:600}
   .lt-step{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--brand-primary,#01A5FF);color:#001018;font-size:.9rem;font-weight:700}
@@ -180,6 +265,12 @@
   .lt-custom{margin-top:8px}
   .lt-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
   @media(max-width:560px){.lt-grid{grid-template-columns:1fr}}
+  /* tooltips */
+  .lt-tip{display:inline-grid;place-items:center;width:15px;height:15px;margin-left:5px;border-radius:50%;background:rgba(1,165,255,.15);color:var(--brand-primary,#01A5FF);font-size:.62rem;font-weight:700;font-style:normal;cursor:help;position:relative;vertical-align:middle}
+  .lt-tip .lt-tip-box{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);width:250px;background:#0b1220;border:1px solid var(--brand-primary,#01A5FF);border-radius:10px;padding:10px 12px;font-size:.78rem;font-weight:400;font-style:normal;line-height:1.5;color:var(--text-primary,#F1F5F9);box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:20;text-transform:none;letter-spacing:normal}
+  .lt-tip .lt-tip-box b{color:var(--brand-cyan,#94DEE0)}
+  .lt-tip:hover .lt-tip-box{display:block}
+  @media(max-width:560px){.lt-tip .lt-tip-box{width:210px;left:auto;right:0;transform:none}}
   .lt-slug{display:flex;align-items:stretch;border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:11px;overflow:hidden}
   .lt-slug:focus-within{border-color:var(--brand-primary,#01A5FF);box-shadow:0 0 0 3px rgba(1,165,255,.2)}
   .lt-slug-prefix{background:rgba(255,255,255,.05);color:var(--text-secondary,#94A3B8);padding:11px 11px;font-size:.9rem;white-space:nowrap;border-right:1px solid var(--border-default,rgba(255,255,255,.1));font-family:var(--font-mono,monospace)}
@@ -202,6 +293,10 @@
   .lt-result-row{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
   .lt-error{margin-top:14px;background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.3);color:#fca5a5;border-radius:11px;padding:11px 15px;font-size:.9rem}
   .lt-warn{margin:0 0 12px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);color:#fcd34d;border-radius:11px;padding:10px 14px;font-size:.85rem}
+  .lt-preset-field select{border-color:rgba(1,165,255,.35)}
+  .lt-tip.is-open .lt-tip-box{display:block}
+  .lt-qrbox{margin-top:14px;padding:14px;background:#fff;border-radius:11px;display:inline-block}
+  .lt-qrbox img,.lt-qrbox canvas{display:block}
   .lt-help{background:var(--glass-bg,rgba(255,255,255,.04));border:1px solid var(--glass-border,rgba(255,255,255,.08));border-radius:18px;padding:4px 26px}
   .lt-help summary{cursor:pointer;font-weight:600;color:var(--text-primary,#F1F5F9);padding:18px 0;font-size:1.05rem;list-style:none}
   .lt-help summary::-webkit-details-marker{display:none}
@@ -216,77 +311,160 @@
 {{ end }}
 
 {{ define "scripts" }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
 <script>
 (function(){
   var ALLOWED = ['aenix.io','k.aenix.io','opc.aenix.io'];
+  var OWN = ['aenix.io','cozystack.io'];
   var $ = function(id){ return document.getElementById(id); };
 
   function hostAllowed(raw){
-    try{ var u = new URL(raw); return ALLOWED.indexOf(u.hostname.toLowerCase()) !== -1 && (u.protocol==='https:'||u.protocol==='http:'); }
+    try{ var u=new URL(raw); return ALLOWED.indexOf(u.hostname.toLowerCase())!==-1 && (u.protocol==='https:'||u.protocol==='http:'); }
     catch(e){ return false; }
   }
-  function clean(v){ return String(v||'').trim().toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9._-]/g,''); }
-
+  function clean(v){ return String(v||'').trim().toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9._-]/g,'').replace(/_/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,''); }
   function selectVal(selId, customId){
-    var sel = $(selId), custom = $(customId);
-    if(sel.value === '__custom'){ custom.hidden = false; return clean(custom.value); }
-    custom.hidden = true; return sel.value;
+    var sel=$(selId), custom=$(customId);
+    if(sel.value==='__custom'){ custom.hidden=false; return clean(custom.value); }
+    custom.hidden=true; return sel.value;
+  }
+
+  // reveal/hide a custom text input when "__custom" is picked (independent of anything else)
+  function toggleCustom(selId, customId){
+    var sel=$(selId), custom=$(customId), on=(sel.value==='__custom');
+    custom.hidden=!on; if(on){ custom.focus(); }
+  }
+  $('utm-source').addEventListener('change', function(){ toggleCustom('utm-source','utm-source-custom'); });
+  $('utm-medium').addEventListener('change', function(){ toggleCustom('utm-medium','utm-medium-custom'); });
+
+  // ── Tilda-style click tooltips (work on touch, not only hover) ──
+  Array.prototype.forEach.call(document.querySelectorAll('.lt-tip'), function(t){
+    t.addEventListener('click', function(e){
+      e.preventDefault();
+      var open = t.classList.contains('is-open');
+      Array.prototype.forEach.call(document.querySelectorAll('.lt-tip.is-open'), function(x){ x.classList.remove('is-open'); });
+      if(!open) t.classList.add('is-open');
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.lt-tip')) Array.prototype.forEach.call(document.querySelectorAll('.lt-tip.is-open'), function(x){ x.classList.remove('is-open'); });
+  });
+
+  // ── Preset: fills Platform + Channel in one pick ──
+  var DEFAULT_MEDIUM = { linkedin:'social', x:'social', facebook:'social', instagram:'social', telegram:'social',
+    youtube:'video', reddit:'social', tiktok:'social', hackernews:'social', github:'referral', devto:'social',
+    medium:'social', producthunt:'referral', stackoverflow:'referral', discord:'social', slack:'social',
+    cncf:'referral', 'kubernetes-slack':'social', artifacthub:'referral', thenewstack:'referral', infoq:'referral',
+    g2:'referral', capterra:'referral', trustradius:'referral', stackshare:'referral',
+    google:'cpc', bing:'cpc', newsletter:'email', email:'email', podcast:'referral', sponsorship:'display',
+    'newsletter-sponsor':'email', 'aenix.io':'referral', 'cozystack.io':'referral', event:'referral', partner:'referral' };
+  function setSelect(id, val){ var s=$(id); if([].some.call(s.options,function(o){return o.value===val;})){ s.value=val; } }
+  $('lt-preset').addEventListener('change', function(){
+    if(!this.value) return;
+    var parts=this.value.split('|');
+    setSelect('utm-source', parts[0]); toggleCustom('utm-source','utm-source-custom');
+    setSelect('utm-medium', parts[1]); toggleCustom('utm-medium','utm-medium-custom');
+    buildUtm();
+  });
+  // auto-suggest medium from source (only if medium still empty)
+  $('utm-source').addEventListener('change', function(){
+    if(!$('utm-medium').value && DEFAULT_MEDIUM[$('utm-source').value]){ setSelect('utm-medium', DEFAULT_MEDIUM[$('utm-source').value]); }
+  });
+
+  // ── saved campaigns (localStorage → datalist) ──
+  function loadCampaigns(){
+    var list=[]; try{ list=JSON.parse(localStorage.getItem('lt_campaigns')||'[]'); }catch(e){}
+    $('campaign-list').innerHTML = list.slice(0,20).map(function(c){ return '<option value="'+c.replace(/"/g,'')+'">'; }).join('');
+  }
+  function saveCampaign(name){
+    if(!name) return; var list=[]; try{ list=JSON.parse(localStorage.getItem('lt_campaigns')||'[]'); }catch(e){}
+    list = [name].concat(list.filter(function(c){ return c!==name; })).slice(0,20);
+    try{ localStorage.setItem('lt_campaigns', JSON.stringify(list)); }catch(e){}
+    loadCampaigns();
+  }
+  loadCampaigns();
+
+  // ── QR generation (client-side, no data leaves the browser) ──
+  var qrObj=null;
+  function showQR(text){
+    var box=$('sh-qrbox');
+    if(!box.hidden){ box.hidden=true; box.innerHTML=''; qrObj=null; return; }
+    box.innerHTML=''; box.hidden=false;
+    if(window.QRCode){ qrObj=new QRCode(box,{text:text,width:160,height:160,colorDark:'#0B0F1A',colorLight:'#ffffff'}); }
+    else { box.textContent='QR library not loaded.'; }
   }
 
   // ── UTM builder ──
   function buildUtm(){
-    var base = $('utm-base').value.trim();
+    // keep custom fields visible regardless of whether Base URL is filled yet
+    $('utm-source-custom').hidden = ($('utm-source').value!=='__custom');
+    $('utm-medium-custom').hidden = ($('utm-medium').value!=='__custom');
+
+    var source=selectVal('utm-source','utm-source-custom');
+    var medium=selectVal('utm-medium','utm-medium-custom');
+
+    // term field only for cpc
+    $('utm-term-field').hidden = (medium!=='cpc');
+    if(medium!=='cpc') $('utm-term').value='';
+
+    var base=$('utm-base').value.trim();
     if(!base){ $('utm-out').textContent='—'; $('utm-warn').hidden=true; return ''; }
 
-    var source   = selectVal('utm-source','utm-source-custom');
-    var medium   = selectVal('utm-medium','utm-medium-custom');
-    var campaign = clean($('utm-campaign').value);
-    var date     = $('utm-date').value;
-    if(date){ campaign = campaign ? (campaign + '-' + date) : date; }
-    var content  = clean($('utm-content').value);
-    var term     = clean($('utm-term').value);
+    var region=$('utm-region').value, funnel=$('utm-funnel').value, type=$('utm-type').value;
+    var name=clean($('utm-campaign').value);
+    var campaign=[region,funnel,type,name].filter(Boolean).join('_');
+    var id=$('utm-date').value;              // YYYY-MM-DD → utm_id (GA4 Campaign ID)
+    var content=clean($('utm-content').value);
+    var term=clean($('utm-term').value);
 
-    var params = [
-      ['utm_source', source], ['utm_medium', medium], ['utm_campaign', campaign],
-      ['utm_content', content], ['utm_term', term]
-    ].filter(function(p){ return p[1] !== '' && p[1] != null; });
+    var params=[
+      ['utm_source',source],['utm_medium',medium],['utm_campaign',campaign],
+      ['utm_id',id],['utm_content',content],['utm_term',term]
+    ].filter(function(p){ return p[1]!=='' && p[1]!=null; });
 
     var url;
-    try{ url = new URL(base); }
-    catch(e){ $('utm-out').textContent='Invalid base URL'; return ''; }
-    params.forEach(function(p){ url.searchParams.set(p[0], p[1]); });
-    var out = url.toString();
-    $('utm-out').textContent = out;
+    try{ url=new URL(base); } catch(e){ $('utm-out').textContent='Invalid base URL'; return ''; }
+    params.forEach(function(p){ url.searchParams.set(p[0],p[1]); });
+    var out=url.toString();
+    $('utm-out').textContent=out;
 
-    var targetHost = url.hostname.toLowerCase();
-    var warn = $('utm-warn');
-    if((source === 'aenix.io' || source === 'cozystack.io') && source === targetHost){
-      warn.textContent = '⚠ Source is the same site as the link target — that is an internal link. Do NOT tag internal links with UTM (it resets the real source in GA4).';
-      warn.hidden = false;
-    } else { warn.hidden = true; }
+    // warnings
+    var targetHost=url.hostname.toLowerCase(), warn=$('utm-warn'), msg='';
+    if(OWN.indexOf(source)!==-1 && source===targetHost){
+      msg='⚠ Source is the same site as the target — that is an internal link. Don’t tag internal links (it resets the real source in GA4).';
+    } else if((source==='google'||source==='bing') && medium==='cpc'){
+      msg='⚠ Google/Bing Ads auto-tag with GCLID/MSCLKID. Do NOT hand-tag paid-search final URLs — use auto-tagging + GA4 linking, or you’ll break the Ads↔GA4 cost/attribution join.';
+    }
+    if(msg){ warn.textContent=msg; warn.hidden=false; } else { warn.hidden=true; }
 
-    var send = $('utm-send');
-    if(hostAllowed(out)){ send.disabled = false; send.title = ''; }
-    else { send.disabled = true; send.title = 'Shortening is available only for aenix.io / k.aenix.io / opc.aenix.io links. Use Copy URL instead.'; }
+    var send=$('utm-send');
+    if(hostAllowed(out)){ send.disabled=false; send.title=''; }
+    else { send.disabled=true; send.title='Shortening is only for aenix.io / k.aenix.io / opc.aenix.io. Use Copy URL instead.'; }
 
     return out;
   }
 
-  ['utm-base','utm-source','utm-source-custom','utm-medium','utm-medium-custom',
-   'utm-campaign','utm-date','utm-content','utm-term'].forEach(function(id){
-    var el = $(id); el.addEventListener('input', buildUtm); el.addEventListener('change', buildUtm);
+  ['utm-base','utm-source','utm-source-custom','utm-medium','utm-medium-custom','utm-campaign',
+   'utm-region','utm-funnel','utm-type','utm-content','utm-date','utm-term'].forEach(function(id){
+    var el=$(id); el.addEventListener('input',buildUtm); el.addEventListener('change',buildUtm);
   });
 
-  $('utm-copy').addEventListener('click', function(){ var v=buildUtm(); if(v) copy(v,$('utm-copy')); });
+  function logUtm(u){
+    // record UTM links in the registry even when not shortened (fire-and-forget, deduped server-side)
+    try{ fetch('/.netlify/functions/log-utm',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({url:u})}); }catch(e){}
+  }
+
+  $('utm-copy').addEventListener('click', function(){ var v=buildUtm(); if(v){ copy(v,$('utm-copy')); logUtm(v); saveCampaign(clean($('utm-campaign').value)); } });
   $('utm-send').addEventListener('click', function(){
-    var v = buildUtm(); if(!v || $('utm-send').disabled) return;
-    $('sh-url').value = v; checkUrl();
-    $('sh-url').scrollIntoView({behavior:'smooth', block:'center'}); $('sh-url').focus();
+    var v=buildUtm(); if(!v || $('utm-send').disabled) return;
+    logUtm(v); saveCampaign(clean($('utm-campaign').value));
+    $('sh-url').value=v; checkUrl();
+    $('sh-url').scrollIntoView({behavior:'smooth',block:'center'}); $('sh-url').focus();
   });
 
   // ── Shortener ──
   function checkUrl(){
-    var v = $('sh-url').value.trim(), hint = $('sh-url-hint');
+    var v=$('sh-url').value.trim(), hint=$('sh-url-hint');
     if(!v){ hint.textContent=''; hint.className='lt-hint'; return; }
     if(hostAllowed(v)){ hint.textContent='✓ allowed domain'; hint.className='lt-hint ok'; }
     else{ hint.textContent='✗ only aenix.io, k.aenix.io, opc.aenix.io can be shortened'; hint.className='lt-hint bad'; }
@@ -294,31 +472,37 @@
   $('sh-url').addEventListener('input', checkUrl);
 
   $('sh-submit').addEventListener('click', function(){
-    var url = $('sh-url').value.trim(), slug = $('sh-slug').value.trim();
-    $('sh-error').hidden = true; $('sh-result').hidden = true;
+    var url=$('sh-url').value.trim(), slug=$('sh-slug').value.trim();
+    $('sh-error').hidden=true; $('sh-result').hidden=true;
     if(!url){ showErr('Enter a URL to shorten.'); return; }
     if(!hostAllowed(url)){ showErr('Only aenix.io, k.aenix.io and opc.aenix.io links can be shortened.'); return; }
 
-    var btn = $('sh-submit'); btn.disabled = true; btn.textContent = 'Creating…';
+    var btn=$('sh-submit'); btn.disabled=true; btn.textContent='Creating…';
     fetch('/.netlify/functions/shorten', {
       method:'POST', headers:{'content-type':'application/json'},
-      body: JSON.stringify({ url: url, slug: slug || undefined })
+      body: JSON.stringify({ url:url, slug: slug||undefined })
     }).then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
       .then(function(res){
-        if(!res.ok){ showErr(res.j.error || 'Something went wrong.'); return; }
-        var a = $('sh-short'); a.href = res.j.short; a.textContent = res.j.short;
-        $('sh-result').hidden = false;
+        if(!res.ok){ showErr(res.j.error||'Something went wrong.'); return; }
+        var a=$('sh-short'); a.href=res.j.short; a.textContent=res.j.short;
+        $('sh-result').hidden=false;
+        $('sh-qrbox').hidden=true; $('sh-qrbox').innerHTML='';
+        var st=$('sh-stripped');
+        if(res.j.stripped && res.j.stripped.length){ st.textContent='⚠ Removed sensitive params before saving: '+res.j.stripped.join(', '); st.hidden=false; }
+        else st.hidden=true;
+        saveCampaign(clean($('utm-campaign').value));
       })
       .catch(function(){ showErr('Network error, try again.'); })
-      .finally(function(){ btn.disabled = false; btn.textContent = 'Create short link'; });
+      .finally(function(){ btn.disabled=false; btn.textContent='Create short link'; });
   });
 
-  $('sh-copy').addEventListener('click', function(){ copy($('sh-short').textContent, $('sh-copy')); });
+  $('sh-copy').addEventListener('click', function(){ copy($('sh-short').textContent,$('sh-copy')); });
+  $('sh-qr').addEventListener('click', function(){ showQR($('sh-short').textContent); });
 
   function showErr(m){ var e=$('sh-error'); e.textContent=m; e.hidden=false; }
   function copy(text, btn){
     navigator.clipboard.writeText(text).then(function(){
-      var old = btn.textContent; btn.textContent='Copied!'; setTimeout(function(){ btn.textContent=old; }, 1400);
+      var old=btn.textContent; btn.textContent='Copied!'; setTimeout(function(){ btn.textContent=old; },1400);
     });
   }
 })();
