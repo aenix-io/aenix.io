@@ -1,0 +1,10 @@
+{
+  "name": "aenix-site-functions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Netlify functions for aenix.io (link shortener + UTM tool)",
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  }
+}

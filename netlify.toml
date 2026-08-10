@@ -6,6 +6,10 @@
   HUGO_VERSION = "0.151.1"
   HUGO_EXTENDED = "true"
 
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 [context.production.environment]
   HUGO_ENV = "production"
 
@@ -14,6 +18,13 @@
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+# Short-link resolver: /l/<slug> is served by the go function (reads Netlify Blobs,
+# fires a GA4 event, then redirects). Must come BEFORE the catch-all 404 below.
+[[redirects]]
+  from = "/l/*"
+  to = "/.netlify/functions/go?s=:splat"
+  status = 200
 
 [[redirects]]
   from = "/*"
