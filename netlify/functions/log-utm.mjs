@@ -1,5 +1,5 @@
 import { getStore } from '@netlify/blobs';
-import { SCHEMA_VERSION, sanitizeUrl, parseUtm, fnv1a, json } from './_shared.mjs';
+import { SCHEMA_VERSION, sanitizeUrl, parseUtm, fnv1a, json, requireSession } from './_shared.mjs';
 
 // Logs a UTM-tagged URL into the registry even when it is NOT shortened
 // (e.g. "Copy URL"). Dedupes by a 64-bit FNV-1a hash of the exact target
@@ -8,6 +8,9 @@ import { SCHEMA_VERSION, sanitizeUrl, parseUtm, fnv1a, json } from './_shared.mj
 
 export default async (req) => {
   if (req.method !== 'POST') return json(405, { error: 'Method not allowed.' });
+
+  const sess = requireSession(req);
+  if (!sess) return json(401, { error: 'Login required.' });
 
   let payload;
   try { payload = await req.json(); } catch { return json(400, { error: 'Bad JSON body.' }); }
@@ -25,7 +28,7 @@ export default async (req) => {
   const existing = await store.get(key);
   if (existing) return json(200, { logged: true, deduped: true });
 
-  const record = { v: SCHEMA_VERSION, type: 'utm', url: target, utm, created: new Date().toISOString(), disabled: false };
+  const record = { v: SCHEMA_VERSION, type: 'utm', url: target, utm, created: new Date().toISOString(), created_by: sess.login || null, disabled: false };
   await store.set(key, JSON.stringify(record));
   return json(200, { logged: true });
 };

@@ -1,5 +1,5 @@
 import { getStore } from '@netlify/blobs';
-import { ALLOWED_HOSTS, SCHEMA_VERSION, sanitizeUrl, parseUtm, validateTarget, fnv1a, json } from './_shared.mjs';
+import { ALLOWED_HOSTS, SCHEMA_VERSION, sanitizeUrl, parseUtm, validateTarget, fnv1a, json, requireSession } from './_shared.mjs';
 
 const SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$/;
 const RESERVED = new Set(['l', 'go', 'api', 'admin', 'static', 'assets', 'links']);
@@ -14,6 +14,9 @@ function randomSlug(n = 5) {
 
 export default async (req) => {
   if (req.method !== 'POST') return json(405, { error: 'Method not allowed.' });
+
+  const sess = requireSession(req);
+  if (!sess) return json(401, { error: 'Please log in with GitHub (aenix-org member) to create links.' });
 
   let payload;
   try { payload = await req.json(); } catch { return json(400, { error: 'Bad JSON body.' }); }
@@ -55,7 +58,7 @@ export default async (req) => {
 
   const record = {
     v: SCHEMA_VERSION, type: 'short', url: cleanUrl, utm: parseUtm(cleanUrl),
-    created: new Date().toISOString(), disabled: false,
+    created: new Date().toISOString(), created_by: sess.login || null, disabled: false,
   };
   await store.set(slug, JSON.stringify(record), { metadata: { url: cleanUrl } });
   // dedup pointer for idempotency (only for auto-slug targets)

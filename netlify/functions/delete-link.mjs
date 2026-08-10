@@ -1,5 +1,5 @@
 import { getStore } from '@netlify/blobs';
-import { json } from './_shared.mjs';
+import { json, requireSession } from './_shared.mjs';
 
 // Soft-delete (archive) / restore a registry entry. We never hard-delete: a slug
 // out in the wild must keep resolving to a "disabled" state (410), and slug reuse
@@ -8,6 +8,9 @@ import { json } from './_shared.mjs';
 
 export default async (req) => {
   if (req.method !== 'POST') return json(405, { error: 'Method not allowed.' });
+
+  const sess = requireSession(req);
+  if (!sess) return json(401, { error: 'Login required.' });
 
   let payload;
   try { payload = await req.json(); } catch { return json(400, { error: 'Bad JSON body.' }); }

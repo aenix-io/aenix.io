@@ -57,3 +57,50 @@ export const json = (status, body) => new Response(JSON.stringify(body), {
   status,
   headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' },
 });
+
+// ── GitHub-org auth ─────────────────────────────────────────────────────────
+import crypto from 'node:crypto';
+
+export const ORG = 'aenix-org';                     // only members may create links
+export const SESSION_COOKIE = 'lt_session';         // HttpOnly, signed — the real gate
+export const USER_COOKIE = 'lt_user';               // readable by the page for UI only
+export const GH_CLIENT_ID = process.env.GITHUB_OAUTH_CLIENT_ID || 'Ov23lixHhwxa1OzBIBy0';
+
+export function siteBase() { return (process.env.URL || 'https://aenix.io').replace(/\/$/, ''); }
+
+export function parseCookies(header) {
+  const out = {};
+  (header || '').split(';').forEach((p) => {
+    const i = p.indexOf('='); if (i < 0) return;
+    out[p.slice(0, i).trim()] = decodeURIComponent(p.slice(i + 1).trim());
+  });
+  return out;
+}
+
+// Signed session token: base64url(payload) + "." + HMAC-SHA256, keyed on the OAuth
+// client secret (already a server-only secret, so no extra env needed).
+export function signSession(payload, key) {
+  const data = Buffer.from(JSON.stringify(payload)).toString('base64url');
+  const mac = crypto.createHmac('sha256', key).update(data).digest('base64url');
+  return data + '.' + mac;
+}
+export function verifySession(token, key) {
+  if (!token || token.indexOf('.') === -1) return null;
+  const [data, mac] = token.split('.');
+  const expect = crypto.createHmac('sha256', key).update(data).digest('base64url');
+  try { if (!crypto.timingSafeEqual(Buffer.from(mac), Buffer.from(expect))) return null; }
+  catch { return null; }
+  let p; try { p = JSON.parse(Buffer.from(data, 'base64url').toString()); } catch { return null; }
+  if (!p.exp || p.exp < Date.now()) return null;
+  return p;
+}
+
+// Returns the session payload {login, exp} or null. If auth isn't configured yet
+// (no client secret) it returns { login: 'open', open: true } so the tools keep
+// working during the pre-auth window.
+export function requireSession(req) {
+  const key = process.env.GITHUB_OAUTH_CLIENT_SECRET;
+  if (!key) return { login: 'open', open: true };
+  const c = parseCookies(req.headers.get('cookie'));
+  return verifySession(c[SESSION_COOKIE], key);
+}

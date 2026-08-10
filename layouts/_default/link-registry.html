@@ -32,7 +32,7 @@
         <thead>
           <tr>
             <th>Type</th><th>Link / target</th><th>Source</th><th>Medium</th>
-            <th>Campaign</th><th class="lr-num">Clicks</th><th>Created</th><th></th>
+            <th>Campaign</th><th>By</th><th class="lr-num">Clicks</th><th>Created</th><th></th>
           </tr>
         </thead>
         <tbody id="lr-body"></tbody>
@@ -114,6 +114,7 @@
         +'<td>'+(u.source?esc(u.source):'<span class="lr-muted">—</span>')+'</td>'
         +'<td>'+(u.medium?esc(u.medium):'<span class="lr-muted">—</span>')+'</td>'
         +'<td>'+(u.campaign?esc(u.campaign):'<span class="lr-muted">—</span>')+'</td>'
+        +'<td>'+(r.created_by?('@'+esc(r.created_by)):'<span class="lr-muted">—</span>')+'</td>'
         +'<td class="lr-num">'+(r.type==='short'?(r.clicks||0):'<span class="lr-muted">—</span>')+'</td>'
         +'<td class="lr-date">'+fmtDate(r.created)+'</td>'
         +'<td><button class="lr-act" data-kind="'+esc(r.type)+'" data-key="'+esc(r.type==='short'?r.slug:r.key)+'" data-on="'+(r.disabled?'1':'0')+'">'+(r.disabled?'Restore':'Archive')+'</button></td>'
