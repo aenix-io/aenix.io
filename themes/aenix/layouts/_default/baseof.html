@@ -49,6 +49,8 @@
   </script>
   {{ end }}
 
+  {{ partial "utm-capture.html" . }}
+
   {{ block "head" . }}{{ end }}
 </head>
 <body class="{{ with .Params.bodyClass }}{{ . }}{{ end }}">
