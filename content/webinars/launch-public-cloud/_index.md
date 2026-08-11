@@ -1,105 +1,107 @@
 ---
-title: "Webinar: launch or upgrade a public cloud your customers can buy"
-description: "A free live webinar with Andrei Kvapil, creator of Cozystack: turn your infrastructure into cloud services customers pay for — platform, catalog, billing, migration."
+title: "Webinar: add Kubernetes, databases and GPU to your price list"
+description: "A free live webinar with Andrei Kvapil, creator of Cozystack: how a working hosting or cloud provider widens the catalog — managed Kubernetes, databases, S3 and GPU — beside the platform they already run, keeping their billing and their panel."
 language: "en"
 layout: "event-landing"
 bodyClass: "webinar-landing"
-primary_keyword: "build a public cloud platform"
-secondary_keywords: ["sell cloud services", "cozystack webinar", "cloud provider platform", "cloud service catalog", "cloud billing platform"]
+primary_keyword: "managed services for hosting providers"
+secondary_keywords: ["sell managed kubernetes", "managed database hosting provider", "gpu as a service provider", "cozystack webinar", "cloud service catalog"]
 images: ["img/og/og-webinar-en.png"]
 hide_child_cards: true
-hero_eyebrow: "Free live webinar · Online · August 19, 2026 · 16:00 CEST (14:00 UTC)"
-hero_title: "Launch or upgrade a public cloud your customers can buy"
-hero_tagline: "Andrei Kvapil, the creator of Cozystack, walks through the whole journey — from platform setup and service catalog to billing, integrations, migration planning, and your first paying customers."
+hero_eyebrow: "Free live webinar · Online · Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC)"
+hero_title: "Add Kubernetes, databases and GPU to your price list"
+hero_tagline: "One hour with Andrei Kvapil, the creator of Cozystack: how a working provider widens the catalog on the racks it already owns — beside the platform it already runs, keeping its own billing and its own panel."
 hero_chips:
   - "Free with registration"
-  - "Online, about 60 minutes"
-  - "Live Q&A with the speaker"
-  - "Recording sent to all registrants"
-hero_primary: { text: "Register", href: "#register" }
+  - "60 minutes, live Q&A"
+  - "Recording to every registrant"
+  - "Bring your stack — questions answered live"
+hero_primary: { text: "Save my seat", href: "#register" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
 inshort_title: "About the webinar"
 quick_facts_style: "rows"
-# NOTE: date is shown in the visible copy (hero, CTA, facts, FAQ). Event JSON-LD
-# is intentionally left OFF: the site's ld+json string values render double-
-# quoted on this build (jsonify affects breadcrumb/FAQ too), so a dated Event
-# schema would be malformed. Re-enable start_date/mode/performer once that's fixed.
+# NOTE: Event JSON-LD intentionally left off — the site's ld+json string values
+# render double-quoted on this build. Date lives in the visible copy.
 event:
-  name: "Launch or upgrade a public cloud your customers can buy — a live webinar"
+  name: "Add Kubernetes, databases and GPU to your price list — a live webinar"
   language: "en"
   mode: "online"
   performer: "Andrei Kvapil"
   performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
   price: 0
 direct_answer: |
-  **This is a free live webinar for hosting providers, cloud providers, data center operators, MSPs, and telecom companies that want to turn their infrastructure into cloud services customers pay for. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — walks through the whole journey: choosing the platform, building a service catalog, connecting billing and usage metering, integrating with WHMCS or a custom panel, planning a migration, and reaching the first paying customers. The webinar covers both common starting points: providers with no cloud product to sell yet, and providers whose existing platform has become too complex or too expensive to sell. Attendance is free with registration, and every registrant receives the recording.**
+  **This is a free live webinar for hosting providers, cloud providers, data centre operators, MSPs and telecoms that already sell infrastructure and are deciding what to sell next. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — walks through how a working provider widens its catalog with managed Kubernetes, managed databases, S3-compatible object storage and GPU: what runs beside the current stack, what happens to billing and to the customer panel, how customers move across one at a time, and what the first ninety days look like. Attendance is free with registration, and every registrant receives the recording.**
 
 quick_facts:
   - label: "Format"
-    value: "A live online webinar, about 60 minutes: a walkthrough of the launch path, followed by a live Q&A with the speaker"
+    value: "A live online webinar, about 60 minutes: a practical walkthrough followed by a live Q&A with the speaker"
   - label: "Date"
-    value: "August 19, 2026, 16:00 CEST (14:00 UTC) — online. Register to get the calendar invite and the recording."
+    value: "Wednesday 19 August 2026, 16:00 CEST (14:00 UTC) — online. Register to get the calendar invite and the recording."
   - label: "Price"
     value: "Free with registration; every registrant receives the recording"
   - label: "Language"
     value: "English"
   - label: "Who it's for"
-    value: "Founders, CTOs, COOs, and product leaders at hosting providers, cloud providers, data centers, MSPs, and telecom companies"
+    value: "Founders, CTOs, COOs and product leaders at hosting providers, cloud providers, data centres, MSPs and telecoms that already sell infrastructure"
   - label: "Host"
     value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), founder of Aenix"
   - label: "After the webinar"
-    value: "The recording, plus a practical view of a migration and launch plan you can adapt to your own stack"
+    value: "The recording, plus a practical view of a catalog and migration plan you can adapt to your own stack"
 
 faq:
-  - q: "When does the webinar take place?"
-    a: "August 19, 2026 at 16:00 CEST (14:00 UTC), online. Register and we will email you a calendar invite — and the recording afterwards, whether or not you can attend live."
-  - q: "Is the webinar free?"
-    a: "Yes. Attendance is free — you only need to register. Every registrant also receives the recording."
+  - q: "We already run a cloud platform. Is this relevant?"
+    a: "That is who it is built for. Most of the hour is about adding a second platform beside an existing one, widening the catalog and moving customers gradually — not about starting from zero."
+  - q: "Do we have to migrate off VMware, OpenStack or Proxmox?"
+    a: "No. The two run side by side for as long as you want. Several providers keep the old stack for the workloads that are happiest there and sell the new services from the new one."
+  - q: "What happens to our billing?"
+    a: "It stays yours. WHMCS has a ready integration, anything else connects over the platform API, and usage metering exports into whatever you invoice from today. Your customer database stays the source of truth."
+  - q: "We wrote our own control panel. Do we throw it away?"
+    a: "No. The platform exposes a REST API and its own panel is optional. Andrei covers both patterns: keeping your panel as the customer-facing surface, or white-labelling ours."
+  - q: "Can we sell GPU from the same platform?"
+    a: "Yes. Whole-card passthrough, vGPU and MIG on supported cards, so one card can serve more than one tenant. Andrei covers what each mode gives you and what you can put in a customer contract."
+  - q: "How many engineers does it take to run?"
+    a: "Fewer than OpenStack. The platform is one coherent Kubernetes-native stack rather than a dozen services you integrate yourself, and upgrades are a release rather than a project."
+  - q: "What does a pilot involve?"
+    a: "One node's worth of hardware to start, access, and someone to accept the result against criteria agreed by both sides. The pilot environment becomes your production — you add nodes as you grow into it."
   - q: "Will there be a recording?"
-    a: "Yes. The recording goes to everyone who registers, so it is worth signing up even if the live time does not suit you."
-  - q: "We already run cloud services. Is this still relevant for us?"
-    a: "Yes. A large part of the session is about upgrading and commercializing an existing platform — replacing OpenStack or VMware overhead, widening a thin service catalog, and fixing billing and metering — without rebuilding the business from scratch."
-  - q: "We don't sell cloud services yet. Is it useful?"
-    a: "Very. The webinar walks the greenfield path from infrastructure to first paying customers, including a realistic two-week launch scenario and a first service catalog you can actually offer."
-  - q: "Do I need to know Kubernetes to follow along?"
-    a: "No. Andrei explains the platform in terms of the cloud product you want to sell — virtual machines, managed Kubernetes, databases, and storage as services — not as an internals deep-dive. It is aimed at the people who decide what to build and sell."
+    a: "Yes, to everyone who registers. The Q&A is the exception — that part only happens live."
 
 final_cta:
-  heading: "Build a public cloud you can actually sell"
-  text: "August 19, 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
-  button: "Register"
+  heading: "Bring your stack to the Q&A"
+  text: "Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
+  button: "Save my seat"
   href: "#register"
 ---
 
 <section class="ws-section ws-story wb-story" aria-labelledby="wb-story-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-story-h">From infrastructure to services customers pay for</h2>
-<p class="ws-lead">Demand for cloud services keeps growing, and it has long since moved beyond virtual machines. Customers now expect managed Kubernetes, databases, object storage, self-service, and predictable billing. For local and regional providers, this shift is not just pressure from the hyperscalers — it is a revenue opportunity, because you already own the two things that matter most: the infrastructure and the customer relationships.</p>
+<h2 class="ws-h2" id="wb-story-h">Your infrastructure already earns. The question is what else it could sell</h2>
+<p class="ws-lead">You own the racks, you run the platform, and you have the customer relationships. What customers ask for keeps widening — managed Kubernetes, managed databases, object storage, GPU, self-service, predictable billing — and every service you cannot offer is a conversation that ends somewhere else. This session is about closing that gap without rebuilding the business underneath it.</p>
 </div>
 
 <div class="ws-wrap ws-story__row">
 <div class="ws-story__text">
-<h3 class="wb-story__h3">Two starting points, one goal</h3>
-<p>Some providers run hosting, colocation, or data center services, but have no modern cloud product to sell yet. Others already operate a cloud platform that has become too complex, too expensive, or too dependent on manual work — OpenStack overhead, VMware licensing, a thin service catalog, billing that never quite fits.</p>
-<p>In both cases the goal is the same: <strong>launch or upgrade your cloud services without rebuilding the business from scratch.</strong></p>
+<h3 class="wb-story__h3">Where this usually starts</h3>
+<p>A customer asks whether you do managed Postgres, and the answer is no. A renewal quote arrives with a number on it that changes the maths on your VM margin. The platform works, but keeping it working is somebody's entire job. Or the panel your team wrote years ago still runs provisioning, and every new service turns into another month of glue code.</p>
+<p>None of these calls for a rebuild. They call for <strong>one more platform beside what you run, and a way to sell what it can do.</strong></p>
 </div>
 <div class="ws-story__visual">
 <ul class="wb-starts" aria-hidden="true">
 <li class="wb-start">
-<span class="wb-start__ic">{{< ws-icon name="server" >}}</span>
-<span class="wb-start__label">Infrastructure, no cloud product yet</span>
-<span class="wb-start__sub">Hosting, colocation, data center</span>
+<span class="wb-start__ic">{{< ws-icon name="catalog" >}}</span>
+<span class="wb-start__label">A thin catalog</span>
+<span class="wb-start__sub">VMs sell, everything else goes elsewhere</span>
 </li>
 <li class="wb-start">
 <span class="wb-start__ic">{{< ws-icon name="stack" >}}</span>
-<span class="wb-start__label">A platform that got too complex</span>
-<span class="wb-start__sub">OpenStack, VMware, thin catalog</span>
+<span class="wb-start__label">A platform that got expensive</span>
+<span class="wb-start__sub">Licensing, overhead, manual work</span>
 </li>
 <li class="wb-start">
 <span class="wb-start__ic">{{< ws-icon name="rocket" >}}</span>
-<span class="wb-start__label">A cloud your customers can buy</span>
-<span class="wb-start__sub">Launch or upgrade — same goal</span>
+<span class="wb-start__label">A catalog customers can buy</span>
+<span class="wb-start__sub">On the racks you already own</span>
 </li>
 </ul>
 </div>
@@ -107,19 +109,20 @@ final_cta:
 
 <div class="ws-wrap ws-story__row ws-story__row--reverse">
 <div class="ws-story__text">
-<h3 class="wb-story__h3">From platform to sellable product</h3>
-<p>Andrei will show how to get there with Cozystack, an open-source cloud platform and CNCF Sandbox project that turns your infrastructure into a foundation for virtual machines, managed Kubernetes, databases, and S3-compatible storage.</p>
-<p>He will also show how Aenix's add-on modules turn that platform into a sellable product: <strong>billing and usage metering, a hosting panel, WHMCS and custom integrations, and a realistic migration plan.</strong></p>
+<h3 class="wb-story__h3">What lands in your price list</h3>
+<p>Cozystack is an open-source cloud platform and CNCF Sandbox project that turns your hardware into a catalog: virtual machines, managed Kubernetes, managed databases, S3-compatible object storage and GPU — each one ordered from a self-service panel, provisioned automatically, backed up and monitored. You set the price.</p>
+<p>On top of it, Ænix modules turn the platform into a business: <strong>billing and usage metering, a hosting panel, WHMCS and custom integrations, and a migration plan that moves customers one at a time.</strong></p>
 </div>
 <div class="ws-story__visual ws-story__visual--platform">
 <div class="ws-platform wb-platform">
 <div class="ws-platform__head">{{< cozy-mark >}}</div>
 <span class="wb-platform__cap">Open-source foundation</span>
 <ul class="ws-platform__layers">
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>Virtual machines</li>
 <li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3Z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></span>Managed Kubernetes</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12c0 1.66 3.13 3 7 3s7-1.34 7-3"/></svg></span>Databases</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12c0 1.66 3.13 3 7 3s7-1.34 7-3"/></svg></span>Managed databases</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>Virtual machines</li>
 <li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.3A3.5 3.5 0 0 1 17.5 18H7Z"/></svg></span>S3-compatible storage</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>GPU · passthrough, vGPU, MIG</li>
 </ul>
 <div class="wb-platform__plus"><span>+ Ænix modules</span></div>
 <ul class="wb-platform__modules">
@@ -132,47 +135,74 @@ final_cta:
 </div>
 
 <div class="ws-wrap">
-<div class="wb-factoid">
-<div class="wb-factoid__num">~2 weeks</div>
-<p class="wb-factoid__text">from installation to first customers on a greenfield setup — Andrei walks through exactly what those two weeks look like in practice.</p>
+<div class="cs-stats">
+  <div class="cs-stat"><div class="cs-stat__num">20+</div><div class="cs-stat__label">managed services in the catalog, ready to price and sell</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">1 GPU → many tenants</div><div class="cs-stat__label">whole-card passthrough, vGPU and MIG on supported cards</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">€0</div><div class="cs-stat__label">per-core hypervisor licensing — Apache 2.0, CNCF Sandbox project</div></div>
 </div>
+</div>
+</section>
+
+<section class="ws-section wb-proof" aria-labelledby="wb-proof-h">
+<div class="ws-wrap">
+<h2 class="ws-h2" id="wb-proof-h">European providers already running this</h2>
+<p class="ws-lead">Not pilots. Production platforms selling to real customers, built on the same foundation the session walks through.</p>
+
+<div class="wb-cover__grid">
+<article class="wb-cover__item">
+<span class="wb-cover__num">01</span>
+<span class="wb-cover__icon">{{< ws-icon name="shield" >}}</span>
+<div class="cs-stat__num" style="font-size:1.9rem;margin:.2rem 0 .1rem">3 data centres</div>
+<div class="cs-stat__label" style="margin-bottom:1rem">Switzerland · synchronous replication · 12+ tenants in production</div>
+<p class="wb-cover__text"><strong>A Swiss cloud provider</strong> moved off a hypervisor stack and a Jelastic/Virtuozzo legacy onto a full commercial public cloud — virtual machines, managed Kubernetes, databases and GPU, sold under its own brand. Its own engineers became Cozystack maintainers.</p>
+</article>
+<article class="wb-cover__item">
+<span class="wb-cover__num">02</span>
+<span class="wb-cover__icon">{{< ws-icon name="growth" >}}</span>
+<div class="cs-stat__num" style="font-size:1.9rem;margin:.2rem 0 .1rem">5× cheaper GPU</div>
+<div class="cs-stat__label" style="margin-bottom:1rem">~11,000 active users moved with no downtime</div>
+<p class="wb-cover__text"><strong>A European academic-computing platform</strong> moved off a public hyperscaler onto owned bare metal and kept a single Cluster API spanning bare metal, a hyperscaler and a sovereign Swiss cloud — with fractional GPU sharing across jobs.</p>
+</article>
+</div>
+
+<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>Both are anonymised at the customer's request. Andrei walks through what each of them actually did — and what he would do differently on your stack.</span></p>
 </div>
 </section>
 
 <section class="ws-section wb-cover" id="agenda" aria-labelledby="wb-cover-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="wb-cover-h">What we'll cover</h2>
-<p class="ws-lead">A practical walkthrough of the whole path — from why cloud services sell to reaching your first paying customers.</p>
+<p class="ws-lead">Forty-five minutes of practice, then your questions.</p>
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
 <span class="wb-cover__num">01</span>
-<span class="wb-cover__icon">{{< ws-icon name="growth" >}}</span>
-<p class="wb-cover__text"><strong>The opportunity.</strong> Why cloud services have become a growth opportunity for local and regional providers — and why selling only VMs holds providers back.</p>
+<span class="wb-cover__icon">{{< ws-icon name="catalog" >}}</span>
+<p class="wb-cover__text"><strong>The catalog, and what it earns.</strong> Managed Kubernetes, databases, object storage and GPU as sellable SKUs: what each takes to turn on, what to price it against, and which ones sell first.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">02</span>
-<span class="wb-cover__icon">{{< ws-icon name="shield" >}}</span>
-<p class="wb-cover__text"><strong>Where local providers win.</strong> Data sovereignty, latency, regional presence, and customer trust — the ground the hyperscalers can't take.</p>
+<span class="wb-cover__icon">{{< ws-icon name="layers" >}}</span>
+<p class="wb-cover__text"><strong>A second platform beside your current one.</strong> How Cozystack sits next to VMware, OpenStack, Proxmox or Virtuozzo without a cutover: where the two stacks touch on the network, on storage and at the load balancer.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">03</span>
-<span class="wb-cover__icon">{{< ws-icon name="stack" >}}</span>
-<p class="wb-cover__text"><strong>Why traditional stacks are hard to sell.</strong> An honest look at OpenStack, CloudStack, Virtuozzo, VMware, OpenNebula, and Proxmox — their trade-offs in complexity, cost, and migration.</p>
+<span class="wb-cover__icon">{{< ws-icon name="plan" >}}</span>
+<p class="wb-cover__text"><strong>Moving customers across, one at a time.</strong> Migration in practice — what moves cleanly, how long a per-customer move takes, and the workloads Andrei would leave exactly where they are.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">04</span>
-<span class="wb-cover__icon">{{< ws-icon name="layers" >}}</span>
-<p class="wb-cover__text"><strong>The platform foundation.</strong> How Cozystack provides virtual machines, managed Kubernetes, databases, S3-compatible storage, networking, monitoring, and multi-tenancy.</p>
+<span class="wb-cover__icon">{{< ws-icon name="billing" >}}</span>
+<p class="wb-cover__text"><strong>Billing, metering and your panel.</strong> Usage metering out of the platform and into your invoicing. WHMCS as a worked example, custom panels over the API, and tenant lifecycle tied to payment status.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">05</span>
-<span class="wb-cover__icon">{{< ws-icon name="billing" >}}</span>
-<p class="wb-cover__text"><strong>Turning it into a business.</strong> How Aenix modules add billing and usage metering, a hosting panel, and WHMCS or custom integrations with your existing systems.</p>
+<span class="wb-cover__icon">{{< ws-icon name="vm" >}}</span>
+<p class="wb-cover__text"><strong>GPU as a product.</strong> Renting a whole card or a slice of one: passthrough, vGPU and MIG, what each isolates, and what you can put in a customer contract.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">06</span>
 <span class="wb-cover__icon">{{< ws-icon name="rocket" >}}</span>
-<p class="wb-cover__text"><strong>To your first paying customers.</strong> How to get from installation to first customers, including migration planning and a two-week greenfield launch scenario.</p>
+<p class="wb-cover__text"><strong>The pilot, and the first ninety days.</strong> One node, roughly two weeks to a working environment, and the pilot becomes your production — no reinstall, acceptance criteria agreed by both sides.</p>
 </li>
 </ol>
 <p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>The session ends with a <strong>live Q&amp;A</strong>. Questions submitted at registration get priority — and this part only happens live.</span></p>
@@ -186,41 +216,41 @@ final_cta:
 <div class="ws-outcomes__grid">
 <article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">01</span>
-<span class="ws-outcome__icon">{{< ws-icon name="map" >}}</span>
-<p class="ws-outcome__text"><strong>A clear map of where you stand today</strong> — and what separates your infrastructure from a sellable cloud.</p>
+<span class="ws-outcome__icon">{{< ws-icon name="catalog" >}}</span>
+<p class="ws-outcome__text"><strong>A realistic next catalog</strong> — the services worth adding first, and what each one is worth to you.</p>
 </article>
 <article class="ws-outcome">
 <span class="ws-outcome__num">02</span>
-<span class="ws-outcome__icon">{{< ws-icon name="catalog" >}}</span>
-<p class="ws-outcome__text"><strong>A realistic first service catalog</strong> you could offer your customers.</p>
+<span class="ws-outcome__icon">{{< ws-icon name="billing" >}}</span>
+<p class="ws-outcome__text"><strong>A clear-eyed view of billing</strong>, usage metering and panel integration — how they work in practice.</p>
 </article>
 <article class="ws-outcome">
 <span class="ws-outcome__num">03</span>
-<span class="ws-outcome__icon">{{< ws-icon name="billing" >}}</span>
-<p class="ws-outcome__text"><strong>A clear-eyed view of billing</strong>, usage metering, and panel integration — how they work in practice.</p>
+<span class="ws-outcome__icon">{{< ws-icon name="map" >}}</span>
+<p class="ws-outcome__text"><strong>A migration path</strong> that keeps your customers online and your calendar your own.</p>
 </article>
 <article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">04</span>
 <span class="ws-outcome__icon">{{< ws-icon name="plan" >}}</span>
-<p class="ws-outcome__text"><strong>A migration and launch plan</strong> you can adapt to your own stack.</p>
+<p class="ws-outcome__text"><strong>A pilot you can actually start</strong> — one node, two weeks, and it becomes your production.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Register</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Save my seat</a></div>
 </div>
 </section>
 
 <section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="wb-audience-h">Who should attend</h2>
-<p class="ws-lead">The webinar is designed for teams turning infrastructure into cloud services. If you run VMware, OpenStack, Proxmox, or a custom stack today and are weighing your options, you will leave with a practical view of what modernization could look like for your business.</p>
+<p class="ws-lead">Providers that already sell infrastructure and are deciding what to sell next. If your platform today is VMware, OpenStack, Proxmox, Virtuozzo, CloudStack, OpenNebula or something you wrote yourself, the session is built around your situation.</p>
 <ul class="wb-audience__tiles">
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud providers</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Data center operators</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Data centre operators</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="msp" >}}</span>MSPs</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="telecom" >}}</span>Telecom companies</li>
 </ul>
-<p class="wb-audience__roles-label">Especially the people who own the numbers for cloud services:</p>
+<p class="wb-audience__roles-label">Especially the people who own the service catalog and the number under it:</p>
 <ul class="wb-audience__roles">
 <li>Founders</li>
 <li>CTOs</li>
@@ -237,7 +267,7 @@ final_cta:
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
 <div class="ws-speaker__role">Creator of Cozystack · Founder of Aenix</div>
-<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium, and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers turn their infrastructure into commercial cloud services.</p>
+<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers across Europe turn their infrastructure into commercial cloud services.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
 <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
@@ -254,7 +284,7 @@ LinkedIn</a>
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
 <h2 class="ws-h2 ws-h2--light" id="wb-register-h">Registration</h2>
-<p class="ws-register__lead">August 19, 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
+<p class="ws-register__lead">Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
 <div class="ws-register__form">
 
 {{< clickmeeting room="18263597110070205" >}}
