@@ -12,6 +12,11 @@ on:
   schedule:
     - cron: '0 */12 * * *'
   workflow_dispatch:
+    inputs:
+      allow_empty:
+        description: 'Sheet is genuinely empty — allow removing every link'
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -68,7 +73,7 @@ jobs:
           LINKS_SHEET_RANGE: ${{ vars.LINKS_SHEET_RANGE || 'Sheet1!A:F' }}
         run: |
           set -o pipefail
-          node scripts/sync-links.mjs 2>&1 | tee sync.log
+          node scripts/sync-links.mjs ${{ inputs.allow_empty && '--allow-empty' || '' }} 2>&1 | tee sync.log
 
       - name: Report to the job summary
         if: always()

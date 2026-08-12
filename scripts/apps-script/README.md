@@ -8,9 +8,23 @@ There is no token in the browser and no CORS to configure — that is the whole 
 
 1. Open the registry spreadsheet → **Extensions → Apps Script**.
 2. Delete whatever is in `Code.gs` and paste the contents of this directory's `Code.gs`.
-3. **Save**.
+3. Click **Untitled project** at the top left and give it a real name — `aenix short links`.
+4. **Save**.
 
 If the spreadsheet's tab is not called `Sheet1`, change `SHEET_NAME` at the top of the script.
+
+Do not skip the rename. The deployment runs as the accessing user, so every colleague hits Google's authorization screen the first time they create a link, and that screen shows the project name. `Untitled project (Unverified) needs your permission to access your data on Google` is indistinguishable from a phishing prompt, and people are right to cancel it.
+
+## 1a. Optional — drop the "Unverified" warning
+
+`(Unverified)` appears because the script's OAuth app has not been through Google's review. That is expected for an internal tool, and the way past it is **Advanced → Go to … (unsafe)**. To remove the warning instead, attach the script to a real Cloud project whose consent screen is internal to the domain:
+
+1. **Project Settings (⚙) → Google Cloud Platform (GCP) Project → Change project**, and enter project number `733264768547` (`aenix-cloud` — the same project that holds the Workload Identity pool).
+2. In the Cloud console: **APIs & Services → OAuth consent screen** → user type **Internal**.
+
+Internal apps are restricted to `aenix.io` accounts, which is the policy this tool wanted anyway, and Google does not require verification for them.
+
+Changing the Cloud project **revokes every authorization already granted** — everyone re-authorizes. Cheap while you are the only user, much less so after the team is onboarded, so decide this before rolling out.
 
 ## 2. Deploy as a web app
 
@@ -62,6 +76,8 @@ Note what this token can do: anything with `Contents: write` on that repository.
 ## Redeploying after an edit
 
 Apps Script keeps serving the deployed version, not the saved one. After editing `Code.gs`: **Deploy → Manage deployments → ✏️ → Version: New version → Deploy**. The URL stays the same.
+
+Take the ✏️ path, not **New deployment**. A new deployment mints a **new URL** and leaves the old one live, so the site keeps sending people to the previous version of the script while you assume you have updated it. If you do end up with a new URL, put it into `params.linkShortener.appsScriptUrl` in `hugo.yaml` and let the site rebuild.
 
 ## Keeping the rules in sync
 
