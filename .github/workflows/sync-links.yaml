@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write   # exchange this run's OIDC token for Google credentials
 
 concurrency:
   group: sync-links

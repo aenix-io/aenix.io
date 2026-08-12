@@ -10,11 +10,17 @@
 //   node scripts/sync-links.mjs --dry-run        # validate and report, write nothing
 //   node scripts/sync-links.mjs --from <file>    # read rows from a local JSON file
 //
-// Auth: GOOGLE_SERVICE_ACCOUNT_JSON holds the service-account key JSON. Share the
-// sheet with that account's client_email (Viewer is enough).
+// Auth, in order of preference:
+//   GOOGLE_ACCESS_TOKEN          an OAuth access token obtained elsewhere — this is
+//                                what Workload Identity Federation produces, and it
+//                                is the only option when the organization forbids
+//                                service-account keys
+//   GOOGLE_SERVICE_ACCOUNT_JSON  a service-account key, signed into a token here
+//
+// Either way the account must be able to read the sheet: share the spreadsheet
+// with its email (Viewer is enough).
 //
 // Env:
-//   GOOGLE_SERVICE_ACCOUNT_JSON  service-account key (raw JSON)
 //   LINKS_SHEET_ID               spreadsheet id
 //   LINKS_SHEET_RANGE            defaults to "Sheet1!A:F"
 
@@ -66,6 +72,31 @@ async function getAccessToken(credentials) {
   });
   if (!res.ok) throw new Error(`Google token request failed (${res.status}): ${await res.text()}`);
   return (await res.json()).access_token;
+}
+
+/**
+ * Prefer a token handed to us — Workload Identity Federation mints one per run,
+ * so nothing long-lived has to exist. Fall back to signing a service-account key
+ * for setups that still have one.
+ */
+async function resolveToken() {
+  const handed = (process.env.GOOGLE_ACCESS_TOKEN || '').trim();
+  if (handed) return handed;
+
+  const rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+  if (!rawKey) {
+    throw new Error('No Google credentials: set GOOGLE_ACCESS_TOKEN (Workload Identity '
+      + 'Federation) or GOOGLE_SERVICE_ACCOUNT_JSON (service-account key).');
+  }
+
+  let credentials;
+  try { credentials = JSON.parse(rawKey); } catch {
+    throw new Error('GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON.');
+  }
+  if (!credentials.client_email || !credentials.private_key) {
+    throw new Error('Service-account JSON is missing client_email or private_key.');
+  }
+  return getAccessToken(credentials);
 }
 
 async function fetchSheet(sheetId, range, token) {
@@ -127,20 +158,10 @@ async function main() {
     // Offline path: exercise validation and file writing without credentials.
     values = JSON.parse(await readFile(FROM_FILE, 'utf8'));
   } else {
-    const rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
     const sheetId = process.env.LINKS_SHEET_ID;
-    if (!rawKey) throw new Error('GOOGLE_SERVICE_ACCOUNT_JSON is not set.');
     if (!sheetId) throw new Error('LINKS_SHEET_ID is not set.');
 
-    let credentials;
-    try { credentials = JSON.parse(rawKey); } catch {
-      throw new Error('GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON.');
-    }
-    if (!credentials.client_email || !credentials.private_key) {
-      throw new Error('Service-account JSON is missing client_email or private_key.');
-    }
-
-    const token = await getAccessToken(credentials);
+    const token = await resolveToken();
     values = await fetchSheet(sheetId, process.env.LINKS_SHEET_RANGE || 'Sheet1!A:F', token);
   }
 
