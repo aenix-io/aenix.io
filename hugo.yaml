@@ -13,7 +13,7 @@ params:
   # see scripts/apps-script/README.md.
   linkShortener:
     sheetUrl: "https://docs.google.com/spreadsheets/d/1x9K7Bf4qesFw8_uD2GjTw_Pok0Pe1cf5X4rsu6x-XNo/edit"
-    appsScriptUrl: "https://script.google.com/a/macros/aenix.io/s/AKfycbx8rkjvh15wBkxvkyUgbfmmQETKEyg93e4-oXc9sBsj8Zrl3_E8EaRzS2iHnal2oUVbOw/exec"
+    appsScriptUrl: "https://script.google.com/a/macros/aenix.io/s/AKfycbz7u-bcr-OC7HVvV7LCgRN3Gm5MUAw5mOOXATa1VJtnNwbD0VQU6_97tU18vGAKtooa2g/exec"
   author: Ænix
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
