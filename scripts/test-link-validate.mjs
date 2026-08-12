@@ -2,7 +2,7 @@
 // Run: node scripts/test-link-validate.mjs
 import {
   validateTarget, validateSlug, sanitizeUrl, parseUtm, normalizeStatus,
-  isActive, randomSlug, validateRows, ALPHABET,
+  isActive, randomSlug, validateRecords, ALPHABET,
 } from './lib/link-validate.mjs';
 
 let pass = 0, fail = 0;
@@ -83,7 +83,7 @@ ok('random slug has no look-alikes', !/[l1o0]/.test(rs));
 ok('random slug passes slug validation', validateSlug(rs).ok);
 
 // ── whole-sheet validation (cross-row rules) ────────────────────────────────
-const { links, errors } = validateRows([
+const { links, errors } = validateRecords([
   { rowNumber: 2, slug: 'good', target_url: 'https://aenix.io/pricing/', status: 'active' },
   { rowNumber: 3, slug: 'good', target_url: 'https://aenix.io/other/', status: 'active' },      // dup slug
   { rowNumber: 4, slug: 'foreign', target_url: 'https://evil.example.com/', status: 'active' }, // foreign host
@@ -96,31 +96,31 @@ const { links, errors } = validateRows([
 ]);
 
 const slugs = links.map((l) => l.slug);
-ok('sheet: keeps the good row', slugs.includes('good'));
-ok('sheet: keeps a disabled row as history', slugs.includes('off'));
-ok('sheet: disabled row is not active', links.find((l) => l.slug === 'off').status === 'disabled');
-ok('sheet: drops the duplicate slug', links.filter((l) => l.slug === 'good').length === 1);
-ok('sheet: first row wins the slug', links.find((l) => l.slug === 'good').target_url.includes('/pricing/'));
-ok('sheet: drops the foreign host', !slugs.includes('foreign'));
-ok('sheet: drops the malformed slug', !slugs.includes('bad slug'));
-ok('sheet: drops the empty target', !slugs.includes('empty-target'));
-ok('sheet: drops the reserved slug', !slugs.includes('go'));
-ok('sheet: ignores blank padding rows silently', !errors.some((e) => e.row === 9));
-ok('sheet: strips a secret from the target', links.find((l) => l.slug === 'leak').target_url.indexOf('token=') === -1);
-ok('sheet: reports the stripped param', links.find((l) => l.slug === 'leak').stripped.includes('token'));
+ok('records: keeps the good row', slugs.includes('good'));
+ok('records: keeps a disabled row as history', slugs.includes('off'));
+ok('records: disabled row is not active', links.find((l) => l.slug === 'off').status === 'disabled');
+ok('records: drops the duplicate slug', links.filter((l) => l.slug === 'good').length === 1);
+ok('records: first row wins the slug', links.find((l) => l.slug === 'good').target_url.includes('/pricing/'));
+ok('records: drops the foreign host', !slugs.includes('foreign'));
+ok('records: drops the malformed slug', !slugs.includes('bad slug'));
+ok('records: drops the empty target', !slugs.includes('empty-target'));
+ok('records: drops the reserved slug', !slugs.includes('go'));
+ok('records: ignores blank padding rows silently', !errors.some((e) => e.row === 9));
+ok('records: strips a secret from the target', links.find((l) => l.slug === 'leak').target_url.indexOf('token=') === -1);
+ok('records: reports the stripped param', links.find((l) => l.slug === 'leak').stripped.includes('token'));
 
 const hard = errors.filter((e) => e.level !== 'warn');
-ok('sheet: reports exactly the 5 bad rows', hard.length === 5);
-ok('sheet: error carries the row number', hard.every((e) => typeof e.row === 'number'));
-ok('sheet: duplicate error names the winning row', hard.find((e) => e.row === 3).error.includes('row 2'));
+ok('records: reports exactly the 5 bad rows', hard.length === 5);
+ok('records: error carries the row number', hard.every((e) => typeof e.row === 'number'));
+ok('records: duplicate error names the winning row', hard.find((e) => e.row === 3).error.includes('at 2'));
 
 // duplicate targets warn but survive
-const dupTarget = validateRows([
+const dupTarget = validateRecords([
   { rowNumber: 2, slug: 'one', target_url: 'https://aenix.io/p/', status: 'active' },
   { rowNumber: 3, slug: 'two', target_url: 'https://aenix.io/p/', status: 'active' },
 ]);
-ok('sheet: same target keeps both rows', dupTarget.links.length === 2);
-ok('sheet: same target raises a warning', dupTarget.errors.some((e) => e.level === 'warn'));
+ok('records: same target keeps both rows', dupTarget.links.length === 2);
+ok('records: same target raises a warning', dupTarget.errors.some((e) => e.level === 'warn'));
 
 console.log(`\n${fail === 0 ? '\x1b[32mall green\x1b[0m' : '\x1b[31mFAILURES\x1b[0m'} — ${pass} passed, ${fail} failed`);
 process.exit(fail === 0 ? 0 : 1);

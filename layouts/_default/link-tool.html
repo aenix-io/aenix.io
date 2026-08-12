@@ -195,7 +195,7 @@
     <div class="lt-card">
       <h2 class="lt-h2"><span class="lt-step">2</span> Shortener</h2>
 
-      <p class="lt-note"><b>Create short link</b> opens a Google page in a new tab, which is where the link is actually created — sign in with your <code>aenix.io</code> account and it appears there. The link starts working after the site rebuilds, usually a couple of minutes later.</p>
+      <p class="lt-note">Links you add are kept <b>in this browser</b> until you commit them. Add as many as you need, then commit once — that opens a pull request, and the site rebuilds when it merges.</p>
 
       <label class="lt-field">
         <span>URL to shorten <em>*</em>
@@ -209,24 +209,31 @@
         <div class="lt-slug"><span class="lt-slug-prefix">aenix.io/l/</span><input id="sh-slug" placeholder="cloudfest" autocomplete="off"></div>
       </label>
 
-      <div class="lt-actions">
-        <button id="sh-submit" type="button" class="lt-btn">Create short link</button>
-      </div>
-      <p id="sh-setup" class="lt-warn" hidden>The shortener is not connected yet — the Apps Script web app URL is missing from <code>hugo.yaml</code>. See <code>scripts/apps-script/README.md</code>.</p>
+      <label class="lt-field"><span>Note <small>(optional — what this link is for)</small></span>
+        <input id="sh-note" placeholder="CloudFest QR on the booth banner" autocomplete="off">
+      </label>
 
-      <div id="sh-result" class="lt-result" hidden>
-        <span class="lt-preview-label">Submitted</span>
-        <p id="sh-result-msg" class="lt-result-msg"></p>
-        <div id="sh-known" hidden>
-          <div class="lt-result-row">
-            <code id="sh-short" class="lt-out"></code>
-            <button id="sh-copy" type="button" class="lt-btn lt-btn-ghost">Copy</button>
-            <button id="sh-qr" type="button" class="lt-btn lt-btn-ghost">QR</button>
-          </div>
-          <div id="sh-qrbox" class="lt-qrbox" hidden></div>
-        </div>
+      <div class="lt-actions">
+        <button id="sh-submit" type="button" class="lt-btn">Add to batch</button>
+        <button id="sh-cancel" type="button" class="lt-btn lt-btn-ghost" hidden>Cancel edit</button>
       </div>
       <p id="sh-error" class="lt-error" hidden></p>
+    </div>
+
+    <!-- ── 3. Pending changes ─────────────────────────────────────── -->
+    <div class="lt-card" id="commit">
+      <h2 class="lt-h2"><span class="lt-step">3</span> Uncommitted changes <span id="pc-count" class="lt-count">0</span></h2>
+
+      <p id="pc-empty" class="lt-note">Nothing pending. Links you add, edit or delete show up here before they reach the site.</p>
+
+      <ul id="pc-list" class="lt-pending-list" hidden></ul>
+
+      <div id="pc-actions" class="lt-actions" hidden>
+        <button id="pc-commit" type="button" class="lt-btn">Commit on GitHub →</button>
+        <button id="pc-discard" type="button" class="lt-btn lt-btn-ghost">Discard all</button>
+      </div>
+
+      <p id="pc-help" class="lt-note" hidden>Commit opens GitHub with the changeset already filled in. Press <b>Commit changes</b> there, choose <b>Create a new branch and start a pull request</b>, and open it — a links-only pull request is validated and merged automatically. Your pending list clears itself once the change is live.</p>
     </div>
 
     <!-- ── How to use (bottom) ────────────────────────────────────── -->
@@ -313,6 +320,22 @@
   .lt-qrfail{color:#0B0F1A;font-size:.82rem;display:block;max-width:220px}
   .lt-qrbox img,.lt-qrbox canvas{display:block}
   .lt-headright{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .lt-count{display:inline-grid;place-items:center;min-width:26px;height:24px;padding:0 8px;border-radius:20px;background:rgba(148,163,184,.14);color:var(--text-secondary,#94A3B8);font-size:.8rem;font-weight:700}
+  .lt-count.is-on{background:rgba(251,191,36,.16);color:#fcd34d}
+  .lt-pending-list{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px}
+  .lt-pending-item{display:flex;align-items:center;gap:11px;flex-wrap:wrap;background:rgba(255,255,255,.03);border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:11px;padding:10px 13px}
+  .lt-pending-item code{font-family:var(--font-mono,monospace);font-size:.84rem;color:var(--brand-cyan,#94DEE0)}
+  .lt-pending-op{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .lt-pending-item.add .lt-pending-op{background:rgba(212,246,178,.14);color:var(--brand-green,#D4F6B2)}
+  .lt-pending-item.edit .lt-pending-op{background:rgba(1,165,255,.16);color:var(--brand-primary,#01A5FF)}
+  .lt-pending-item.delete .lt-pending-op{background:rgba(248,113,113,.14);color:#fca5a5}
+  .lt-pending-item.disable .lt-pending-op{background:rgba(148,163,184,.16);color:#cbd5e1}
+  .lt-pending-item.enable .lt-pending-op{background:rgba(212,246,178,.14);color:var(--brand-green,#D4F6B2)}
+  .lt-pending-item.delete code{text-decoration:line-through;opacity:.7}
+  .lt-pending-target{flex:1;min-width:160px;color:var(--text-secondary,#94A3B8);font-size:.78rem;word-break:break-all}
+  .lt-act{margin-left:auto;background:transparent;border:1px solid var(--border-default,rgba(255,255,255,.1));color:var(--text-secondary,#94A3B8);border-radius:8px;padding:5px 11px;font-size:.76rem;font-weight:600;cursor:pointer;font-family:inherit}
+  .lt-act:hover{border-color:var(--brand-primary,#01A5FF);color:var(--brand-primary,#01A5FF)}
+  #pc-help{margin-top:16px}
   .lt-note{margin:-6px 0 18px;color:var(--text-secondary,#94A3B8);font-size:.86rem;line-height:1.6}
   .lt-note code{background:rgba(255,255,255,.06);border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:5px;padding:1px 6px;font-family:var(--font-mono,monospace);font-size:.82em;color:var(--brand-cyan,#94DEE0)}
   .lt-note b{color:var(--text-primary,#F1F5F9)}
@@ -331,7 +354,7 @@
 {{ end }}
 
 {{ define "scripts" }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+{{ partial "link-state.html" . }}
 <script>
 (function(){
   var ALLOWED = ['aenix.io','k.aenix.io','opc.aenix.io'];
@@ -339,7 +362,6 @@
   // Same rules as scripts/lib/link-validate.mjs — enforced again server-side.
   var SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$/;
   var RESERVED = ['l','go','api','admin','static','assets','links'];
-  var APPS_SCRIPT = {{ default "" site.Params.linkShortener.appsScriptUrl }};
   var $ = function(id){ return document.getElementById(id); };
 
   function hostAllowed(raw){
@@ -407,21 +429,6 @@
     loadCampaigns();
   }
   loadCampaigns();
-
-  // ── QR generation (client-side, no data leaves the browser) ──
-  var qrObj=null;
-  function showQR(text){
-    var box=$('sh-qrbox');
-    if(!box.hidden){ box.hidden=true; box.innerHTML=''; qrObj=null; return; }
-    box.innerHTML=''; box.hidden=false;
-    if(window.QRCode){ qrObj=new QRCode(box,{text:text,width:160,height:160,colorDark:'#0B0F1A',colorLight:'#ffffff'}); }
-    else {
-      // The QR library comes from a CDN; content blockers routinely drop it. Say
-      // so in a colour that is legible on the white QR panel — the previous
-      // message inherited light text and was invisible, which read as a blank box.
-      box.innerHTML='<span class="lt-qrfail">QR library blocked — the short link above still works.</span>';
-    }
-  }
 
   // ── UTM builder ──
   function buildUtm(){
@@ -495,66 +502,118 @@
   }
   $('sh-url').addEventListener('input', checkUrl);
 
-  // The link is created by an Apps Script web app bound to the registry sheet.
-  // We open it as a normal navigation instead of calling fetch: Apps Script
-  // sends no CORS headers for authenticated cross-origin requests, and a
-  // top-level tab lets Google do the aenix.io sign-in check itself — so this
-  // page never holds a credential.
+  // Adding a link only touches this browser. Nothing reaches the repository
+  // until the batch is committed, and committing is a plain navigation to
+  // GitHub — this page holds no credential, and GitHub decides who may write.
+  var ALPHABET='abcdefghijkmnpqrstuvwxyz23456789';   // no look-alikes: no l/1, no o/0
+  var editing=null;
+
+  function randomSlug(){
+    var s='', b=new Uint8Array(5); crypto.getRandomValues(b);
+    for(var i=0;i<5;i++) s+=ALPHABET[b[i]%ALPHABET.length];
+    return s;
+  }
+  function freeSlug(){
+    for(var i=0;i<12;i++){ var s=randomSlug(); if(!window.LinkState.taken(s)) return s; }
+    return null;
+  }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function showErr(m){ var e=$('sh-error'); e.textContent=m; e.hidden=false; }
+
   $('sh-submit').addEventListener('click', function(){
     var url=$('sh-url').value.trim(), slug=$('sh-slug').value.trim().toLowerCase();
-    $('sh-error').hidden=true; $('sh-result').hidden=true;
+    var note=$('sh-note').value.trim();
+    $('sh-error').hidden=true;
 
-    if(!APPS_SCRIPT){ showErr('The shortener is not connected yet — see the note above.'); return; }
     if(!url){ showErr('Enter a URL to shorten.'); return; }
     if(!hostAllowed(url)){ showErr('Only aenix.io, k.aenix.io and opc.aenix.io links can be shortened.'); return; }
+
     if(slug){
       if(!SLUG_RE.test(slug)){ showErr('Slug must be 1-64 chars: a-z, 0-9, hyphens (not at the ends).'); return; }
       if(RESERVED.indexOf(slug)!==-1){ showErr('"'+slug+'" is reserved — pick another slug.'); return; }
-    }
-    // The sheet is the authority on what is already taken; this only catches the
-    // mistakes worth catching without a round trip.
-
-    var q = 'url='+encodeURIComponent(url) + (slug ? '&slug='+encodeURIComponent(slug) : '');
-    // Open via a synthetic link rather than window.open(url,'_blank','noopener'):
-    // a non-empty feature string makes browsers open a popup window instead of a
-    // tab, and popups render inconsistently (or get blocked outright). An anchor
-    // gives a real tab and still gets noopener.
-    var a=document.createElement('a');
-    a.href=APPS_SCRIPT + (APPS_SCRIPT.indexOf('?')===-1 ? '?' : '&') + q;
-    a.target='_blank'; a.rel='noopener noreferrer';
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-
-    saveCampaign(clean($('utm-campaign').value));
-    $('sh-result').hidden=false;
-    $('sh-qrbox').hidden=true; $('sh-qrbox').innerHTML='';
-
-    if(slug){
-      $('sh-result-msg').textContent='Opened in a new tab — confirm it there. If it went through, your link will be:';
-      $('sh-short').textContent='https://aenix.io/l/'+slug;
-      $('sh-known').hidden=false;
+      if(slug!==editing && window.LinkState.taken(slug)){ showErr('"'+slug+'" is already taken.'); return; }
     } else {
-      $('sh-result-msg').textContent='Opened in a new tab — your short link is there. It uses a generated slug, so it can only be read off that page or the registry.';
-      $('sh-known').hidden=true;
+      slug=freeSlug();
+      if(!slug){ showErr('Could not generate a free slug — try again.'); return; }
     }
+
+    window.LinkState.upsert({ slug:slug, target_url:url, status:'active', note:note });
+    saveCampaign(clean($('utm-campaign').value));
+    editing=null; $('sh-cancel').hidden=true; $('sh-submit').textContent='Add to batch';
+    $('sh-url').value=''; $('sh-slug').value=''; $('sh-note').value=''; checkUrl();
+    document.getElementById('commit').scrollIntoView({behavior:'smooth',block:'start'});
   });
 
-  $('sh-copy').addEventListener('click', function(){ copy($('sh-short').textContent,$('sh-copy')); });
-  $('sh-qr').addEventListener('click', function(){ showQR($('sh-short').textContent); });
+  $('sh-cancel').addEventListener('click', function(){
+    editing=null; $('sh-cancel').hidden=true; $('sh-submit').textContent='Add to batch';
+    $('sh-url').value=''; $('sh-slug').value=''; $('sh-note').value=''; checkUrl(); $('sh-error').hidden=true;
+  });
 
-  function showErr(m){ var e=$('sh-error'); e.textContent=m; e.hidden=false; }
-  function copy(text, btn){
-    navigator.clipboard.writeText(text).then(function(){
-      var old=btn.textContent; btn.textContent='Copied!'; setTimeout(function(){ btn.textContent=old; },1400);
-    });
+  function loadForEdit(slug){
+    var rec=window.LinkState.working().filter(function(r){ return r.slug===slug; })[0];
+    if(!rec) return;
+    editing=slug;
+    $('sh-url').value=rec.target_url||''; $('sh-slug').value=slug; $('sh-note').value=rec.note||'';
+    $('sh-submit').textContent='Save change'; $('sh-cancel').hidden=false; checkUrl();
+    $('sh-url').scrollIntoView({behavior:'smooth',block:'center'});
   }
 
-  // Access control lives in Google: the Apps Script web app is restricted to the
-  // aenix.io Workspace domain, so there is nothing to gate on this page.
-  if(!APPS_SCRIPT){
-    $('sh-submit').disabled=true;
-    $('sh-submit').title='The Apps Script web app URL is not configured yet.';
-    $('sh-setup').hidden=false;
+  // ── pending changes ──
+  function renderPending(){
+    var changes=window.LinkState.changes();
+    var slugs=Object.keys(changes).sort();
+    var baseline=window.LinkState.baseline();
+    var has=slugs.length>0;
+    $('pc-count').textContent=slugs.length;
+    // nothing to commit is not a state worth drawing the eye to
+    $('pc-count').className='lt-count'+(has?' is-on':'');
+    $('pc-empty').hidden=has; $('pc-list').hidden=!has;
+    $('pc-actions').hidden=!has; $('pc-help').hidden=!has;
+    if(!has){ $('pc-list').innerHTML=''; return; }
+
+    $('pc-list').innerHTML=slugs.map(function(s){
+      var c=changes[s];
+      var was=baseline.filter(function(b){ return b.slug===s; })[0];
+      var kind;
+      if(c.op==='delete'){ kind='delete'; }
+      else if(!was){ kind='add'; }
+      else if(c.target_url===was.target_url && (c.note||'')===(was.note||'')){
+        // only the status moved — say which way, "edit" hides the one thing that changed
+        kind=(c.status||'active')==='active' ? 'enable' : 'disable';
+      } else { kind='edit'; }
+      return '<li class="lt-pending-item '+kind+'">'
+        +'<span class="lt-pending-op">'+kind+'</span>'
+        +'<code>/l/'+esc(s)+'/</code>'
+        +(c.op==='delete' ? '' : '<span class="lt-pending-target">'+esc(c.target_url)+'</span>')
+        +'<button class="lt-act" data-undo="'+esc(s)+'" type="button">Undo</button></li>';
+    }).join('');
   }
+
+  $('pc-list').addEventListener('click', function(e){
+    var b=e.target.closest('[data-undo]'); if(!b) return;
+    window.LinkState.revert(b.getAttribute('data-undo'));
+  });
+
+  $('pc-discard').addEventListener('click', function(){
+    if(!confirm('Discard every uncommitted change?')) return;
+    window.LinkState.clear();
+  });
+
+  $('pc-commit').addEventListener('click', function(){
+    var name=prompt('Name this batch (it becomes the file name):', window.LinkState.suggestName());
+    if(!name) return;
+    name=clean(name) || window.LinkState.suggestName();
+    var a=document.createElement('a');
+    a.href=window.LinkState.commitUrl(name);
+    a.target='_blank'; a.rel='noopener noreferrer';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  });
+
+  document.addEventListener('linkstate:change', renderPending);
+  renderPending();
+
+  var editParam=new URLSearchParams(location.search).get('edit');
+  if(editParam){ loadForEdit(editParam); history.replaceState(null,'',location.pathname+location.hash); }
 })();
 </script>
 {{ end }}
