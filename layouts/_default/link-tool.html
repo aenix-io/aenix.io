@@ -8,14 +8,12 @@
     <div class="lt-head">
       <div>
         <h1 class="lt-title">Link tools</h1>
-        <p class="lt-sub">Build UTM-tagged campaign URLs and shorten <code>aenix.io</code> / <code>k.aenix.io</code> / <code>opc.aenix.io</code> links. Every link you create is saved to the registry.</p>
+        <p class="lt-sub">Build UTM-tagged campaign URLs and shorten <code>aenix.io</code> / <code>k.aenix.io</code> / <code>opc.aenix.io</code> links. Short links are recorded in the <a href="/go/links/">registry</a>; a UTM URL you only copy is not stored anywhere.</p>
       </div>
       <div class="lt-headright">
-        <span id="lt-auth" class="lt-auth"></span>
-        <a href="/go/links/" class="lt-btn lt-btn-ghost lt-reg-link">📋 All links &amp; history →</a>
+        <a href="/go/links/" class="lt-btn lt-btn-ghost lt-reg-link">📋 All links →</a>
       </div>
     </div>
-    <div id="lt-authbanner" class="lt-warn" hidden></div>
 
     <!-- ── 1. UTM builder ─────────────────────────────────────────── -->
     <div class="lt-card">
@@ -197,6 +195,8 @@
     <div class="lt-card">
       <h2 class="lt-h2"><span class="lt-step">2</span> Shortener</h2>
 
+      <p class="lt-note"><b>Create short link</b> opens a Google page in a new tab, which is where the link is actually created — sign in with your <code>aenix.io</code> account and it appears there. The link starts working after the site rebuilds, usually a couple of minutes later.</p>
+
       <label class="lt-field">
         <span>URL to shorten <em>*</em>
           <b class="lt-tip">ⓘ<i class="lt-tip-box">Only aenix.io / k.aenix.io / opc.aenix.io targets are allowed (anti-fraud — nobody can hide a foreign link behind our domain). UTM params on the target are preserved.</i></b></span>
@@ -212,16 +212,19 @@
       <div class="lt-actions">
         <button id="sh-submit" type="button" class="lt-btn">Create short link</button>
       </div>
+      <p id="sh-setup" class="lt-warn" hidden>The shortener is not connected yet — the Apps Script web app URL is missing from <code>hugo.yaml</code>. See <code>scripts/apps-script/README.md</code>.</p>
 
       <div id="sh-result" class="lt-result" hidden>
-        <span class="lt-preview-label">Short link</span>
-        <div class="lt-result-row">
-          <a id="sh-short" class="lt-out" href="#" target="_blank" rel="noopener"></a>
-          <button id="sh-copy" type="button" class="lt-btn lt-btn-ghost">Copy</button>
-          <button id="sh-qr" type="button" class="lt-btn lt-btn-ghost">QR</button>
+        <span class="lt-preview-label">Submitted</span>
+        <p id="sh-result-msg" class="lt-result-msg"></p>
+        <div id="sh-known" hidden>
+          <div class="lt-result-row">
+            <code id="sh-short" class="lt-out"></code>
+            <button id="sh-copy" type="button" class="lt-btn lt-btn-ghost">Copy</button>
+            <button id="sh-qr" type="button" class="lt-btn lt-btn-ghost">QR</button>
+          </div>
+          <div id="sh-qrbox" class="lt-qrbox" hidden></div>
         </div>
-        <div id="sh-qrbox" class="lt-qrbox" hidden></div>
-        <p id="sh-stripped" class="lt-warn" hidden></p>
       </div>
       <p id="sh-error" class="lt-error" hidden></p>
     </div>
@@ -239,8 +242,15 @@
           <li><strong>Content</strong> (utm_content) = the creative/variant for A/B and placements (<code>banner-a</code>, <code>story-swipeup</code>). <strong>Term</strong> = paid-search keyword only (appears when Channel = cpc).</li>
         </ul>
         <p><strong>⚠ Paid search (Google/Bing Ads).</strong> Those platforms auto-tag with GCLID/MSCLKID. <strong>Do NOT hand-tag paid-search final URLs</strong> — it breaks the Ads↔GA4 cost/attribution join. Use auto-tagging + GA4 linking. The tool warns on <code>google/bing + cpc</code>.</li>
-        <p><strong>Two sites.</strong> aenix.io and cozystack.io have separate GA4 properties. A short <code>aenix.io/l/…</code> link that targets cozystack.io redirects (302) and preserves the UTMs — the landing is attributed in cozystack’s property; the click count lives in this tool’s registry. For cross-site banners set <em>Platform</em> to the site the banner sits on.</p>
-        <p><strong>Shortening.</strong> <em>Copy URL</em> works for any site; <em>Shorten</em> is for aenix.io links only (anti-fraud allow-list). Short links are <code>aenix.io/l/&lt;slug&gt;</code>, redirect server-side with a first-party click counter (works even with ad-blockers), and <strong>every link you build is logged to the <a href="/go/links/">registry</a></strong>.</p>
+        <p><strong>Two sites.</strong> aenix.io and cozystack.io have separate GA4 properties. Attribution happens on the destination site from the UTM tags the short link carries, so a link landing on cozystack.io is attributed in cozystack’s property. For cross-site banners set <em>Platform</em> to the site the banner sits on.</p>
+        <p><strong>Shortening.</strong> <em>Copy URL</em> works for any site; <em>Shorten</em> is for aenix.io / k.aenix.io / opc.aenix.io links only (anti-fraud allow-list). A short link is <code>aenix.io/l/&lt;slug&gt;</code> and is listed in the <a href="/go/links/">registry</a>.</p>
+        <p><strong>How a short link works, precisely.</strong> The site is a set of static files on GitHub Pages — there is no server to run code on. <code>/l/&lt;slug&gt;/</code> is a real HTML page that bounces the browser to the target with a <code>meta refresh</code> plus a JavaScript fallback. Consequences worth knowing:</p>
+        <ul>
+          <li><strong>There is no click counter, and there will not be one.</strong> Nothing counts a visit to <code>/l/…</code>. Measure campaigns in GA4 on the destination page via the UTM tags — that is what they are for.</li>
+          <li>The hop is a page load, not an HTTP 302. It is a beat slower than a real redirect and shows up in browser history.</li>
+          <li>Links are created in a spreadsheet and published by a build, so a new link is live within minutes, not instantly. Do not print a QR code before checking the link resolves.</li>
+          <li>To retire a link, set its <code>status</code> in the sheet to something other than <code>active</code>: the page stops being generated and the URL 404s, while the record stays as history.</li>
+        </ul>
       </div>
     </details>
   </div>
@@ -302,9 +312,10 @@
   .lt-qrbox{margin-top:14px;padding:14px;background:#fff;border-radius:11px;display:inline-block}
   .lt-qrbox img,.lt-qrbox canvas{display:block}
   .lt-headright{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-  .lt-auth{font-size:.85rem;color:var(--text-secondary,#94A3B8)}
-  .lt-auth a{color:var(--brand-primary,#01A5FF);text-decoration:none;font-weight:600}
-  .lt-auth .lt-gh{display:inline-flex;align-items:center;gap:7px;background:var(--brand-primary,#01A5FF);color:#001018;padding:8px 14px;border-radius:10px;font-weight:700}
+  .lt-note{margin:-6px 0 18px;color:var(--text-secondary,#94A3B8);font-size:.86rem;line-height:1.6}
+  .lt-note code{background:rgba(255,255,255,.06);border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:5px;padding:1px 6px;font-family:var(--font-mono,monospace);font-size:.82em;color:var(--brand-cyan,#94DEE0)}
+  .lt-note b{color:var(--text-primary,#F1F5F9)}
+  .lt-result-msg{margin:6px 0 12px;color:var(--text-secondary,#94A3B8);font-size:.87rem;line-height:1.6}
   .lt-help{background:var(--glass-bg,rgba(255,255,255,.04));border:1px solid var(--glass-border,rgba(255,255,255,.08));border-radius:18px;padding:4px 26px}
   .lt-help summary{cursor:pointer;font-weight:600;color:var(--text-primary,#F1F5F9);padding:18px 0;font-size:1.05rem;list-style:none}
   .lt-help summary::-webkit-details-marker{display:none}
@@ -324,6 +335,10 @@
 (function(){
   var ALLOWED = ['aenix.io','k.aenix.io','opc.aenix.io'];
   var OWN = ['aenix.io','cozystack.io'];
+  // Same rules as scripts/lib/link-validate.mjs — enforced again server-side.
+  var SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$/;
+  var RESERVED = ['l','go','api','admin','static','assets','links'];
+  var APPS_SCRIPT = {{ default "" site.Params.linkShortener.appsScriptUrl }};
   var $ = function(id){ return document.getElementById(id); };
 
   function hostAllowed(raw){
@@ -457,15 +472,10 @@
     var el=$(id); el.addEventListener('input',buildUtm); el.addEventListener('change',buildUtm);
   });
 
-  function logUtm(u){
-    // record UTM links in the registry even when not shortened (fire-and-forget, deduped server-side)
-    try{ fetch('/.netlify/functions/log-utm',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({url:u})}); }catch(e){}
-  }
-
-  $('utm-copy').addEventListener('click', function(){ var v=buildUtm(); if(v){ copy(v,$('utm-copy')); logUtm(v); saveCampaign(clean($('utm-campaign').value)); } });
+  $('utm-copy').addEventListener('click', function(){ var v=buildUtm(); if(v){ copy(v,$('utm-copy')); saveCampaign(clean($('utm-campaign').value)); } });
   $('utm-send').addEventListener('click', function(){
     var v=buildUtm(); if(!v || $('utm-send').disabled) return;
-    logUtm(v); saveCampaign(clean($('utm-campaign').value));
+    saveCampaign(clean($('utm-campaign').value));
     $('sh-url').value=v; checkUrl();
     $('sh-url').scrollIntoView({behavior:'smooth',block:'center'}); $('sh-url').focus();
   });
@@ -479,29 +489,40 @@
   }
   $('sh-url').addEventListener('input', checkUrl);
 
+  // The link is created by an Apps Script web app bound to the registry sheet.
+  // We open it as a normal navigation instead of calling fetch: Apps Script
+  // sends no CORS headers for authenticated cross-origin requests, and a
+  // top-level tab lets Google do the aenix.io sign-in check itself — so this
+  // page never holds a credential.
   $('sh-submit').addEventListener('click', function(){
-    var url=$('sh-url').value.trim(), slug=$('sh-slug').value.trim();
+    var url=$('sh-url').value.trim(), slug=$('sh-slug').value.trim().toLowerCase();
     $('sh-error').hidden=true; $('sh-result').hidden=true;
+
+    if(!APPS_SCRIPT){ showErr('The shortener is not connected yet — see the note above.'); return; }
     if(!url){ showErr('Enter a URL to shorten.'); return; }
     if(!hostAllowed(url)){ showErr('Only aenix.io, k.aenix.io and opc.aenix.io links can be shortened.'); return; }
+    if(slug){
+      if(!SLUG_RE.test(slug)){ showErr('Slug must be 1-64 chars: a-z, 0-9, hyphens (not at the ends).'); return; }
+      if(RESERVED.indexOf(slug)!==-1){ showErr('"'+slug+'" is reserved — pick another slug.'); return; }
+    }
+    // The sheet is the authority on what is already taken; this only catches the
+    // mistakes worth catching without a round trip.
 
-    var btn=$('sh-submit'); btn.disabled=true; btn.textContent='Creating…';
-    fetch('/.netlify/functions/shorten', {
-      method:'POST', headers:{'content-type':'application/json'},
-      body: JSON.stringify({ url:url, slug: slug||undefined })
-    }).then(function(r){ return r.json().then(function(j){ return {ok:r.ok, j:j}; }); })
-      .then(function(res){
-        if(!res.ok){ showErr(res.j.error||'Something went wrong.'); return; }
-        var a=$('sh-short'); a.href=res.j.short; a.textContent=res.j.short;
-        $('sh-result').hidden=false;
-        $('sh-qrbox').hidden=true; $('sh-qrbox').innerHTML='';
-        var st=$('sh-stripped');
-        if(res.j.stripped && res.j.stripped.length){ st.textContent='⚠ Removed sensitive params before saving: '+res.j.stripped.join(', '); st.hidden=false; }
-        else st.hidden=true;
-        saveCampaign(clean($('utm-campaign').value));
-      })
-      .catch(function(){ showErr('Network error, try again.'); })
-      .finally(function(){ btn.disabled=false; btn.textContent='Create short link'; });
+    var q = 'url='+encodeURIComponent(url) + (slug ? '&slug='+encodeURIComponent(slug) : '');
+    window.open(APPS_SCRIPT + (APPS_SCRIPT.indexOf('?')===-1 ? '?' : '&') + q, '_blank', 'noopener');
+
+    saveCampaign(clean($('utm-campaign').value));
+    $('sh-result').hidden=false;
+    $('sh-qrbox').hidden=true; $('sh-qrbox').innerHTML='';
+
+    if(slug){
+      $('sh-result-msg').textContent='Opened in a new tab — confirm it there. If it went through, your link will be:';
+      $('sh-short').textContent='https://aenix.io/l/'+slug;
+      $('sh-known').hidden=false;
+    } else {
+      $('sh-result-msg').textContent='Opened in a new tab — your short link is there. It uses a generated slug, so it can only be read off that page or the registry.';
+      $('sh-known').hidden=true;
+    }
   });
 
   $('sh-copy').addEventListener('click', function(){ copy($('sh-short').textContent,$('sh-copy')); });
@@ -514,23 +535,13 @@
     });
   }
 
-  // ── auth state (GitHub / aenix-org) ──
-  function setGated(gated){
-    // when not logged in, disable creation but keep the UTM builder + Copy usable
-    $('sh-submit').disabled=gated; $('sh-submit').title=gated?'Log in with GitHub to create short links':'';
+  // Access control lives in Google: the Apps Script web app is restricted to the
+  // aenix.io Workspace domain, so there is nothing to gate on this page.
+  if(!APPS_SCRIPT){
+    $('sh-submit').disabled=true;
+    $('sh-submit').title='The Apps Script web app URL is not configured yet.';
+    $('sh-setup').hidden=false;
   }
-  (function authState(){
-    // one-time banner from ?auth=...
-    var qp=new URLSearchParams(location.search), a=qp.get('auth');
-    if(a){ var b=$('lt-authbanner'), msg={ ok:'', notmember:'Access denied — you must be a member of the aenix-org GitHub organization.', denied:'GitHub login was cancelled or denied.', notconfigured:'Auth is not configured yet.', state:'Login expired, please try again.' }[a];
-      if(msg){ b.textContent='⚠ '+msg; b.hidden=false; } history.replaceState(null,'',location.pathname); }
-    fetch('/.netlify/functions/auth-me').then(function(r){return r.json();}).then(function(d){
-      var el=$('lt-auth');
-      if(d.open){ el.innerHTML='<span title="Auth not enforced yet">open access</span>'; setGated(false); return; }
-      if(d.authed){ el.innerHTML='✓ '+ (d.login?('@'+d.login):'signed in') +' · <a href="/.netlify/functions/auth-logout">Logout</a>'; setGated(false); }
-      else { el.innerHTML='<a class="lt-gh" href="/.netlify/functions/auth-start">Login with GitHub</a>'; setGated(true); }
-    }).catch(function(){ /* leave as-is */ });
-  })();
 })();
 </script>
 {{ end }}
