@@ -45,8 +45,24 @@ jobs:
           node scripts/test-link-validate.mjs
           node scripts/test-apps-script.mjs
 
+      # Workload Identity Federation: this run's OIDC token is exchanged for a
+      # Google token that lives minutes and is bound to this repository, so no
+      # long-lived Google credential exists anywhere. The organization forbids
+      # service-account keys, which is the same conclusion from the other side.
+      - name: Authenticate to Google
+        id: auth
+        if: vars.GCP_WORKLOAD_IDENTITY_PROVIDER != ''
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ vars.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ vars.GCP_SERVICE_ACCOUNT }}
+          token_format: access_token
+          # Reading one spreadsheet needs exactly this, not cloud-platform.
+          access_token_scopes: https://www.googleapis.com/auth/spreadsheets.readonly
+
       - name: Sync the sheet into data/links
         env:
+          GOOGLE_ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
           GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           LINKS_SHEET_ID: ${{ vars.LINKS_SHEET_ID || '1x9K7Bf4qesFw8_uD2GjTw_Pok0Pe1cf5X4rsu6x-XNo' }}
           LINKS_SHEET_RANGE: ${{ vars.LINKS_SHEET_RANGE || 'Sheet1!A:F' }}
