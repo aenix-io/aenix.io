@@ -1,0 +1,67 @@
+name: Link changes
+
+# Pull requests that only add or remove short links are validated and merged
+# without a human. Anything else is simply left open — this workflow never
+# rejects a pull request, it only declines to merge one.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      # The scope check runs FIRST and reads the file list from the API, before
+      # anything from the branch is checked out. A pull request that edits the
+      # validator must never get to run its own version of it.
+      - name: Is this a links-only change?
+        id: scope
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: |
+          files=$(gh api --paginate "repos/$REPO/pulls/$PR/files" --jq '.[].filename')
+          echo "Changed files:"; echo "$files" | sed 's/^/  /'
+          outside=$(echo "$files" | grep -vE '^data/links/[^/]+\.json$|^data/links/_inbox/[^/]+\.json$' || true)
+          if [ -n "$outside" ]; then
+            echo "Outside data/links — leaving this for a human:"; echo "$outside" | sed 's/^/  /'
+            echo "links_only=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "links_only=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout the merge result
+        if: steps.scope.outputs.links_only == 'true'
+        uses: actions/checkout@v4
+
+      # Only data files differ from base at this point, so the scripts being run
+      # are the ones already on the default branch.
+      - name: Validate
+        if: steps.scope.outputs.links_only == 'true'
+        run: |
+          node scripts/test-link-validate.mjs
+          node scripts/apply-links.mjs --check
+
+      - name: Merge
+        if: steps.scope.outputs.links_only == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.LINKS_SYNC_TOKEN }}
+          PR: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+        run: gh pr merge "$PR" --repo "$REPO" --squash --admin --delete-branch
+
+      - name: Explain why nothing was merged
+        if: steps.scope.outputs.links_only != 'true'
+        run: |
+          {
+            echo '## Not merged automatically'
+            echo
+            echo 'This pull request touches files outside `data/links/`, so it needs a human review.'
+            echo 'Link-only changes are merged without one.'
+          } >> "$GITHUB_STEP_SUMMARY"
