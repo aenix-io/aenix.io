@@ -7,6 +7,13 @@ canonicalizeURLs: false
 
 params:
   description: "We build clouds! End-to-end solutions for data centers, designed to meet the evolving demands of modern business."
+  # Link shortener: the spreadsheet is the input surface, git is the store.
+  # appsScriptUrl is the deployed Apps Script web app ("Create short link" on
+  # /go/ opens it). Leave it empty and the page tells you to deploy it first —
+  # see scripts/apps-script/README.md.
+  linkShortener:
+    sheetUrl: "https://docs.google.com/spreadsheets/d/1x9K7Bf4qesFw8_uD2GjTw_Pok0Pe1cf5X4rsu6x-XNo/edit"
+    appsScriptUrl: ""
   author: Ænix
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
