@@ -1,0 +1,22 @@
+# Written by the link editor at https://aenix.io/go/
+changes:
+  - op: upsert
+    slug: "a3s2jq"
+    target_url: "https://aenix.io/webinars/launch-public-cloud/?utm_source=linkedin&utm_medium=social&utm_campaign=workshop&utm_content=andrei"
+    status: "active"
+  - op: delete
+    slug: "cont"
+  - op: delete
+    slug: "cont2"
+  - op: delete
+    slug: "cont3"
+  - op: delete
+    slug: "cont4"
+  - op: delete
+    slug: "cont5"
+  - op: delete
+    slug: "cont6"
+  - op: delete
+    slug: "cont7"
+  - op: delete
+    slug: "cont8"
