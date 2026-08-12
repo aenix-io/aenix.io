@@ -1,0 +1,141 @@
+{{/*
+  Shared working state for the link tools.
+
+  The published registry is baked in at build time as the baseline; edits live in
+  localStorage as a changeset on top of it. Both /go/ and /go/links/ include this,
+  so a link deleted on the registry page shows up as pending on the editor page.
+
+  Because "pending" is computed by comparing against the baseline rather than by
+  remembering what was submitted, a merged pull request cleans itself up: the
+  next build ships the change as baseline, the comparison stops finding a
+  difference, and the entry leaves the pending list on its own.
+*/}}
+{{ $baseline := slice }}
+{{ range $slug, $l := site.Data.links }}
+  {{ if ne $slug "_inbox" }}
+    {{ $baseline = $baseline | append (dict
+      "slug"       $slug
+      "target_url" (default "" $l.target_url)
+      "status"     (default "active" $l.status)
+      "created_at" (default "" $l.created_at)
+      "created_by" (default "" $l.created_by)
+      "note"       (default "" $l.note)
+    ) }}
+  {{ end }}
+{{ end }}
+
+<script>
+window.LinkState = (function () {
+  var KEY = 'lt_changes_v1';
+  {{/* safeJS: without it Go escapes the JSON into a quoted string in JS context. */}}
+  var BASELINE = {{ $baseline | jsonify | safeJS }};
+  var REPO = 'https://github.com/aenix-io/aenix.io';
+
+  var base = {};
+  BASELINE.forEach(function (l) { base[l.slug] = l; });
+
+  function load() {
+    try { return JSON.parse(localStorage.getItem(KEY) || '{}'); } catch (e) { return {}; }
+  }
+  function save(c) {
+    try { localStorage.setItem(KEY, JSON.stringify(c)); } catch (e) {}
+    document.dispatchEvent(new CustomEvent('linkstate:change'));
+  }
+
+  function same(a, b) {
+    return a && b
+      && a.target_url === b.target_url
+      && (a.status || 'active') === (b.status || 'active')
+      && (a.note || '') === (b.note || '');
+  }
+
+  /* A change that matches the baseline again is not a change — drop it, so
+     undoing an edit by hand clears the pending marker instead of leaving a
+     no-op entry that would be committed for nothing. */
+  function prune(changes) {
+    var out = {};
+    Object.keys(changes).forEach(function (slug) {
+      var c = changes[slug];
+      if (c.op === 'delete') { if (base[slug]) out[slug] = c; return; }
+      if (!same(c, base[slug])) out[slug] = c;
+    });
+    return out;
+  }
+
+  return {
+    baseline: function () { return BASELINE.slice(); },
+
+    changes: function () { return prune(load()); },
+
+    /* Baseline overlaid with pending edits: what the registry should show. */
+    working: function () {
+      var changes = prune(load());
+      var rows = [];
+      BASELINE.forEach(function (l) {
+        var c = changes[l.slug];
+        if (c && c.op === 'delete') { rows.push(Object.assign({}, l, { _state: 'deleted' })); return; }
+        if (c) { rows.push(Object.assign({}, l, c, { _state: 'edited' })); return; }
+        rows.push(Object.assign({}, l, { _state: 'clean' }));
+      });
+      Object.keys(changes).forEach(function (slug) {
+        if (!base[slug] && changes[slug].op !== 'delete') {
+          rows.push(Object.assign({}, changes[slug], { _state: 'added' }));
+        }
+      });
+      return rows;
+    },
+
+    upsert: function (link) {
+      var c = load();
+      c[link.slug] = {
+        op: 'upsert', slug: link.slug, target_url: link.target_url,
+        status: link.status || 'active', note: link.note || ''
+      };
+      save(c);
+    },
+
+    remove: function (slug) {
+      var c = load();
+      if (!base[slug]) { delete c[slug]; }           // never published — just forget it
+      else { c[slug] = { op: 'delete', slug: slug }; }
+      save(c);
+    },
+
+    revert: function (slug) { var c = load(); delete c[slug]; save(c); },
+
+    clear: function () { save({}); },
+
+    count: function () { return Object.keys(prune(load())).length; },
+
+    taken: function (slug) {
+      var w = this.working();
+      for (var i = 0; i < w.length; i++) {
+        if (w[i].slug === slug && w[i]._state !== 'deleted') return true;
+      }
+      return false;
+    },
+
+    /* The changeset file the pipeline consumes, and the URL that opens GitHub
+       with it already filled in. One file per batch: the prefilled-file URL
+       carries exactly one, and a batch has to arrive as a single pull request. */
+    changeset: function () {
+      var changes = prune(load());
+      return { changes: Object.keys(changes).sort().map(function (s) { return changes[s]; }) };
+    },
+
+    commitUrl: function (name) {
+      var body = JSON.stringify(this.changeset(), null, 2) + '\n';
+      var file = 'data/links/_inbox/' + name + '.json';
+      return REPO + '/new/main?filename=' + encodeURIComponent(file)
+        + '&value=' + encodeURIComponent(body);
+    },
+
+    suggestName: function () {
+      var changes = prune(load());
+      var first = Object.keys(changes).sort()[0] || 'links';
+      var d = new Date().toISOString().slice(0, 10);
+      return d + '-' + first;
+    }
+  };
+})();
+</script>
