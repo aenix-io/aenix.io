@@ -509,7 +509,14 @@
     // mistakes worth catching without a round trip.
 
     var q = 'url='+encodeURIComponent(url) + (slug ? '&slug='+encodeURIComponent(slug) : '');
-    window.open(APPS_SCRIPT + (APPS_SCRIPT.indexOf('?')===-1 ? '?' : '&') + q, '_blank', 'noopener');
+    // Open via a synthetic link rather than window.open(url,'_blank','noopener'):
+    // a non-empty feature string makes browsers open a popup window instead of a
+    // tab, and popups render inconsistently (or get blocked outright). An anchor
+    // gives a real tab and still gets noopener.
+    var a=document.createElement('a');
+    a.href=APPS_SCRIPT + (APPS_SCRIPT.indexOf('?')===-1 ? '?' : '&') + q;
+    a.target='_blank'; a.rel='noopener noreferrer';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
 
     saveCampaign(clean($('utm-campaign').value));
     $('sh-result').hidden=false;
