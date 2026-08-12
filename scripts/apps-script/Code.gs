@@ -226,58 +226,43 @@ function notifyGitHub() {
 }
 
 // ── output ──────────────────────────────────────────────────────────────────
+/**
+ * Plain text, deliberately.
+ *
+ * HtmlService does not serve your markup directly: /exec returns a wrapper page
+ * that loads the real output in an iframe from googleusercontent.com. Anything
+ * that blocks that frame — an ad blocker, strict tracking protection, third-party
+ * cookie restrictions — leaves a blank white page with no error, while the script
+ * has already run and written the row. That failure is silent and looks exactly
+ * like the tool being broken.
+ *
+ * ContentService has no such wrapper. It is uglier and it is legible everywhere,
+ * which for a result that is one URL is the better trade.
+ */
 function page(kind, data) {
-  var esc = function (s) {
-    return String(s == null ? '' : s)
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-  };
+  var lines;
 
-  var body;
   if (kind === 'ok') {
-    var short = SITE_BASE + '/l/' + data.slug;
-    body =
-      '<h1>Short link created</h1>' +
-      '<div class="box"><code id="s">' + esc(short) + '</code>' +
-      '<button onclick="navigator.clipboard.writeText(document.getElementById(\'s\').textContent);' +
-      'this.textContent=\'Copied\'">Copy</button></div>' +
-      '<p class="t">→ ' + esc(data.target) + '</p>' +
-      (data.deduped ? '<p class="i">This target already had a short link, so you got the existing one back.</p>' : '') +
-      (data.stripped && data.stripped.length
-        ? '<p class="w">Removed sensitive parameter(s) before saving: ' + esc(data.stripped.join(', ')) + '</p>' : '') +
-      '<p class="i">The row is in the sheet now. The link starts working once the site rebuilds — ' +
-      'usually a couple of minutes.</p>';
+    lines = ['Short link created', '', '    ' + SITE_BASE + '/l/' + data.slug, '',
+      '  target: ' + data.target];
+    if (data.deduped) {
+      lines.push('', 'This target already had a short link, so you got the existing one back',
+        'instead of a second slug for the same page.');
+    }
+    if (data.stripped && data.stripped.length) {
+      lines.push('', 'Removed sensitive parameter(s) before saving: ' + data.stripped.join(', '));
+    }
+    lines.push('', 'The row is in the sheet. The link starts working once the site rebuilds,',
+      'usually a couple of minutes — check it resolves before printing a QR code.');
   } else if (kind === 'error') {
-    body = '<h1>Could not create the link</h1><p class="e">' + esc(data.message) + '</p>';
+    lines = ['Could not create the link', '', '  ' + data.message, '',
+      'Nothing was written to the sheet.'];
   } else {
-    body = '<h1>Link shortener</h1><p class="i">' + esc(data.message) + '</p>';
+    lines = ['aenix.io link shortener', '', '  ' + data.message];
   }
 
-  var html =
-    '<!doctype html><html><head><meta charset="utf-8">' +
-    '<meta name="viewport" content="width=device-width,initial-scale=1"><title>aenix.io short link</title>' +
-    '<style>' +
-    'body{margin:0;padding:40px 20px;background:#0B0F1A;color:#F1F5F9;' +
-    'font:15px/1.6 Inter,system-ui,-apple-system,sans-serif}' +
-    '.wrap{max-width:620px;margin:0 auto}' +
-    'h1{font-size:1.5rem;margin:0 0 20px}' +
-    '.box{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:rgba(212,246,178,.06);' +
-    'border:1px solid rgba(212,246,178,.25);border-radius:12px;padding:14px 16px}' +
-    'code{font-family:ui-monospace,SFMono-Regular,monospace;font-size:1rem;color:#94DEE0;word-break:break-all}' +
-    'button{background:#01A5FF;color:#001018;border:0;border-radius:9px;padding:8px 16px;' +
-    'font-weight:700;cursor:pointer;font-family:inherit}' +
-    '.t{color:#94A3B8;font-size:.85rem;word-break:break-all;margin:12px 0 0}' +
-    '.i{color:#94A3B8;font-size:.87rem;margin-top:16px}' +
-    '.w{color:#fcd34d;font-size:.87rem;margin-top:14px}' +
-    '.e{background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.3);color:#fca5a5;' +
-    'border-radius:12px;padding:14px 16px}' +
-    'a{color:#01A5FF}' +
-    '</style></head><body><div class="wrap">' + body +
-    '<p class="i"><a href="' + SITE_BASE + '/go/">← Back to the link tools</a> · ' +
-    '<a href="' + SITE_BASE + '/go/links/">Registry</a></p>' +
-    '</div></body></html>';
+  lines.push('', '---', 'Link tools: ' + SITE_BASE + '/go/', 'Registry:   ' + SITE_BASE + '/go/links/');
 
-  return HtmlService.createHtmlOutput(html)
-    .setTitle('aenix.io short link')
-    .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.DEFAULT);
+  return ContentService.createTextOutput(lines.join('\n'))
+    .setMimeType(ContentService.MimeType.TEXT);
 }

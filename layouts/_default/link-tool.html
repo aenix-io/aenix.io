@@ -310,6 +310,7 @@
   .lt-preset-field select{border-color:rgba(1,165,255,.35)}
   .lt-tip.is-open .lt-tip-box{display:block}
   .lt-qrbox{margin-top:14px;padding:14px;background:#fff;border-radius:11px;display:inline-block}
+  .lt-qrfail{color:#0B0F1A;font-size:.82rem;display:block;max-width:220px}
   .lt-qrbox img,.lt-qrbox canvas{display:block}
   .lt-headright{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
   .lt-note{margin:-6px 0 18px;color:var(--text-secondary,#94A3B8);font-size:.86rem;line-height:1.6}
@@ -414,7 +415,12 @@
     if(!box.hidden){ box.hidden=true; box.innerHTML=''; qrObj=null; return; }
     box.innerHTML=''; box.hidden=false;
     if(window.QRCode){ qrObj=new QRCode(box,{text:text,width:160,height:160,colorDark:'#0B0F1A',colorLight:'#ffffff'}); }
-    else { box.textContent='QR library not loaded.'; }
+    else {
+      // The QR library comes from a CDN; content blockers routinely drop it. Say
+      // so in a colour that is legible on the white QR panel — the previous
+      // message inherited light text and was invisible, which read as a blank box.
+      box.innerHTML='<span class="lt-qrfail">QR library blocked — the short link above still works.</span>';
+    }
   }
 
   // ── UTM builder ──
