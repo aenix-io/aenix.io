@@ -64,8 +64,11 @@ ok('only the deletion remains', S.count() === 1);
 const cs = S.changeset();
 ok('changeset carries the deletion', cs.changes.length === 1 && cs.changes[0].op === 'delete');
 const url = S.commitUrl('2026-08-12-test');
-ok('commit URL targets the inbox', url.includes(encodeURIComponent('data/links/_inbox/2026-08-12-test.json')));
-ok('commit URL carries the payload', decodeURIComponent(url.split('&value=')[1]).includes('"op": "delete"'));
+ok('commit URL targets the patch directory', url.includes(encodeURIComponent('data/linkpatches/2026-08-12-test.yaml')));
+const payload = decodeURIComponent(url.split('&value=')[1]);
+ok('commit URL carries YAML', payload.startsWith('# Written by the link editor'));
+ok('commit URL carries the deletion', /- op: delete\n\s+slug: "/.test(payload));
+ok('a deletion carries no target', !payload.includes('target_url'));
 ok('commit URL points at the repo', url.startsWith('https://github.com/aenix-io/aenix.io/new/main?'));
 
 S.revert(first);

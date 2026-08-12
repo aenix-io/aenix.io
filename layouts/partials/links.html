@@ -1,0 +1,60 @@
+{{/*
+  The effective link registry: data/links.yaml with every patch in
+  data/linkpatches/ applied on top, in file-name order.
+
+  Hugo reads the patches itself, so a merged pull request publishes its links on
+  the very next build — there is no apply step and no second pipeline. The daily
+  compaction job folds patches back into links.yaml purely to stop the directory
+  growing; it changes nothing about what the site renders.
+
+  Returns a slice of maps, newest state per slug. Used by the content adapter
+  that generates /l/<slug>/ and by both pages, so the merge happens once.
+*/}}
+{{ $out := newScratch }}
+{{ $order := slice }}
+
+{{ range site.Data.links.links }}
+  {{ $l := . }}
+  {{ with $l.slug }}
+    {{ $slug := . }}
+    {{ if not ($out.Get $slug) }}{{ $order = $order | append $slug }}{{ end }}
+    {{ $out.Set $slug (dict
+      "slug"       $slug
+      "target_url" (default "" $l.target_url)
+      "status"     (default "active" $l.status)
+      "created_at" (default "" $l.created_at)
+      "created_by" (default "" $l.created_by)
+      "note"       (default "" $l.note)
+    ) }}
+  {{ end }}
+{{ end }}
+
+{{/* Patches apply in file-name order — the editor names them by date, so later
+     batches win, which is the only ordering a human would predict. */}}
+{{ range $name, $patch := site.Data.linkpatches }}
+  {{ range $patch.changes }}
+    {{ $slug := .slug }}
+    {{ if $slug }}
+      {{ if eq (default "upsert" .op) "delete" }}
+        {{ $out.Delete $slug }}
+      {{ else }}
+        {{ $was := $out.Get $slug | default dict }}
+        {{ if not $was }}{{ $order = $order | append $slug }}{{ end }}
+        {{ $out.Set $slug (dict
+          "slug"       $slug
+          "target_url" (or .target_url (index $was "target_url") "")
+          "status"     (or .status (index $was "status") "active")
+          "created_at" (or (index $was "created_at") .created_at "")
+          "created_by" (or (index $was "created_by") .created_by "")
+          "note"       (or .note (index $was "note") "")
+        ) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $links := slice }}
+{{ range $order }}
+  {{ with $out.Get . }}{{ $links = $links | append . }}{{ end }}
+{{ end }}
+{{ return $links }}

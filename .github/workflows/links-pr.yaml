@@ -28,7 +28,7 @@ jobs:
         run: |
           files=$(gh api --paginate "repos/$REPO/pulls/$PR/files" --jq '.[].filename')
           echo "Changed files:"; echo "$files" | sed 's/^/  /'
-          outside=$(echo "$files" | grep -vE '^data/links/[^/]+\.json$|^data/links/_inbox/[^/]+\.json$' || true)
+          outside=$(echo "$files" | grep -vE '^data/linkpatches/[^/]+\.yaml$|^data/links\.yaml$' || true)
           if [ -n "$outside" ]; then
             echo "Outside data/links — leaving this for a human:"; echo "$outside" | sed 's/^/  /'
             echo "links_only=false" >> "$GITHUB_OUTPUT"
@@ -45,8 +45,9 @@ jobs:
       - name: Validate
         if: steps.scope.outputs.links_only == 'true'
         run: |
+          pip install --quiet pyyaml
           node scripts/test-link-validate.mjs
-          node scripts/apply-links.mjs --check
+          python3 scripts/compact-links.py --json | node scripts/check-links.mjs
 
       - name: Merge
         if: steps.scope.outputs.links_only == 'true'
@@ -62,6 +63,6 @@ jobs:
           {
             echo '## Not merged automatically'
             echo
-            echo 'This pull request touches files outside `data/links/`, so it needs a human review.'
+            echo 'This pull request touches files outside `data/linkpatches/`, so it needs a human review.'
             echo 'Link-only changes are merged without one.'
           } >> "$GITHUB_STEP_SUMMARY"

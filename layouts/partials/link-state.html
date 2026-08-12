@@ -10,19 +10,7 @@
   next build ships the change as baseline, the comparison stops finding a
   difference, and the entry leaves the pending list on its own.
 */}}
-{{ $baseline := slice }}
-{{ range $slug, $l := site.Data.links }}
-  {{ if ne $slug "_inbox" }}
-    {{ $baseline = $baseline | append (dict
-      "slug"       $slug
-      "target_url" (default "" $l.target_url)
-      "status"     (default "active" $l.status)
-      "created_at" (default "" $l.created_at)
-      "created_by" (default "" $l.created_by)
-      "note"       (default "" $l.note)
-    ) }}
-  {{ end }}
-{{ end }}
+{{ $baseline := partial "links.html" . }}
 
 <script>
 window.LinkState = (function () {
@@ -115,19 +103,35 @@ window.LinkState = (function () {
       return false;
     },
 
-    /* The changeset file the pipeline consumes, and the URL that opens GitHub
-       with it already filled in. One file per batch: the prefilled-file URL
-       carries exactly one, and a batch has to arrive as a single pull request. */
+    /* The patch file, as YAML — Hugo reads data/linkpatches/ directly, so a
+       merged pull request publishes on the next build with nothing in between.
+       One file per batch: the prefilled-file URL carries exactly one. */
     changeset: function () {
       var changes = prune(load());
       return { changes: Object.keys(changes).sort().map(function (s) { return changes[s]; }) };
     },
 
+    yaml: function () {
+      var q = function (v) {
+        return '"' + String(v == null ? '' : v).replace(/\\/g, '\\\\').replace(/"/g, '\\"') + '"';
+      };
+      var out = ['# Written by the link editor at https://aenix.io/go/', 'changes:'];
+      this.changeset().changes.forEach(function (c) {
+        out.push('  - op: ' + (c.op || 'upsert'));
+        out.push('    slug: ' + q(c.slug));
+        if (c.op !== 'delete') {
+          out.push('    target_url: ' + q(c.target_url));
+          out.push('    status: ' + q(c.status || 'active'));
+          if (c.note) out.push('    note: ' + q(c.note));
+        }
+      });
+      return out.join('\n') + '\n';
+    },
+
     commitUrl: function (name) {
-      var body = JSON.stringify(this.changeset(), null, 2) + '\n';
-      var file = 'data/links/_inbox/' + name + '.json';
+      var file = 'data/linkpatches/' + name + '.yaml';
       return REPO + '/new/main?filename=' + encodeURIComponent(file)
-        + '&value=' + encodeURIComponent(body);
+        + '&value=' + encodeURIComponent(this.yaml());
     },
 
     suggestName: function () {
