@@ -15,6 +15,12 @@
  */
 
 // ── config ──────────────────────────────────────────────────────────────────
+// The registry spreadsheet, opened by id rather than by container binding: a web
+// app runs outside any document context, so getActiveSpreadsheet() has no
+// "current" spreadsheet to return and fails on permissions. Leave empty to fall
+// back to the bound spreadsheet (works from a menu or trigger, not from the web
+// app). The id is not a secret — access is decided by sharing, not by obscurity.
+var SHEET_ID = '1x9K7Bf4qesFw8_uD2GjTw_Pok0Pe1cf5X4rsu6x-XNo';
 var SHEET_NAME = 'Sheet1';
 var SITE_BASE = 'https://aenix.io';
 var GITHUB_REPO = 'aenix-io/aenix.io';
@@ -99,7 +105,8 @@ function doGet(e) {
 
 // ── sheet access ────────────────────────────────────────────────────────────
 function getSheet() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ss = SHEET_ID ? SpreadsheetApp.openById(SHEET_ID) : SpreadsheetApp.getActiveSpreadsheet();
+  if (!ss) throw new Error('Could not open the registry spreadsheet.');
   var sheet = ss.getSheetByName(SHEET_NAME);
   if (!sheet) throw new Error('Sheet "' + SHEET_NAME + '" not found in this spreadsheet.');
   return sheet;

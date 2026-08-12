@@ -9,7 +9,17 @@ There is no token in the browser and no CORS to configure — that is the whole 
 1. Open the registry spreadsheet → **Extensions → Apps Script**.
 2. Delete whatever is in `Code.gs` and paste the contents of this directory's `Code.gs`.
 3. Click **Untitled project** at the top left and give it a real name — `aenix short links`.
-4. **Save**.
+4. **Project Settings (⚙)** → tick **Show "appsscript.json" manifest file in editor**. Open the `appsscript.json` that appears in the file list and replace it with this directory's copy.
+5. **Save**.
+
+Step 4 is not optional. Without an explicit `oauthScopes` list, Apps Script infers the permissions it asks for, and the inference is not stable across redeployments or a change of Cloud project — the failure looks like:
+
+```
+You do not have permission to call SpreadsheetApp.getActiveSpreadsheet.
+Required permissions: (…/auth/spreadsheets.currentonly || …/auth/spreadsheets)
+```
+
+The manifest also records the deployment settings (`executeAs`, `access`), so the intended configuration lives in the repository rather than only in a dialog someone clicked once.
 
 If the spreadsheet's tab is not called `Sheet1`, change `SHEET_NAME` at the top of the script.
 
@@ -78,6 +88,22 @@ Note what this token can do: anything with `Contents: write` on that repository.
 Apps Script keeps serving the deployed version, not the saved one. After editing `Code.gs`: **Deploy → Manage deployments → ✏️ → Version: New version → Deploy**. The URL stays the same.
 
 Take the ✏️ path, not **New deployment**. A new deployment mints a **new URL** and leaves the old one live, so the site keeps sending people to the previous version of the script while you assume you have updated it. If you do end up with a new URL, put it into `params.linkShortener.appsScriptUrl` in `hugo.yaml` and let the site rebuild.
+
+## When authorization breaks
+
+Changing the Cloud project, or redeploying after the script started calling a new service, invalidates the permissions already granted. Symptoms are always a `You do not have permission to call …` error naming the missing scope.
+
+Fix in this order:
+
+1. Confirm `appsscript.json` in the editor matches this directory's copy, and **Save**.
+2. **Deploy → Manage deployments → ✏️ → Version: New version → Deploy.** The running deployment keeps serving the old code until you do.
+3. Open the web app URL again and grant access. If the consent screen does not reappear, revoke the old grant first at <https://myaccount.google.com/permissions> and retry.
+
+### Why the broad `spreadsheets` scope
+
+The narrower `spreadsheets.currentonly` covers "the spreadsheet this application is installed in", and it is the obvious choice for a container-bound script — but it only applies when the code runs **in the document's context**: a custom menu, a sidebar, an `onOpen` trigger. A web app opened by URL runs outside any document, so there is no current spreadsheet to grant access to, and `getActiveSpreadsheet()` fails on permissions no matter how the script is bound.
+
+So the script opens the registry by id (`SHEET_ID` at the top of `Code.gs`) and asks for the full `spreadsheets` scope. That is a genuinely wider grant — it covers every spreadsheet the authorizing user can reach — and it is the price of the write path being a web app. Worth remembering when reviewing what the team is asked to approve.
 
 ## Keeping the rules in sync
 
