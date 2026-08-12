@@ -9,6 +9,15 @@ params:
   description: "We build clouds! End-to-end solutions for data centers, designed to meet the evolving demands of modern business."
   author: Ænix
   email: info@aenix.io
+
+  # Top announcement bar (Apollo-style). Set enabled: false to remove it.
+  # Bump `id` whenever the message changes so previously-dismissed visitors see the new one.
+  announcement:
+    enabled: true
+    id: webinar-2026-08-19
+    text: "Live webinar Wed 19 Aug 2026 16:00 CEST (14:00 UTC): Turnkey Public Cloud: From Installation and Setup to Your First Customers"
+    buttonText: "Learn More"
+    url: "https://u.to/v3_mIg"
   googleAnalytics: GT-NMCJ23L
   ahrefsAnalytics: GQGQZe4HnT/wYo45t5cUEw
   social:

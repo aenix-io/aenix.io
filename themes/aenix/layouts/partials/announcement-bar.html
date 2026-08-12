@@ -1,0 +1,28 @@
+{{ with .Site.Params.announcement }}
+{{ if .enabled }}
+{{ $id := .id | default "announcement" }}
+<div class="announcement-bar" id="announcement-bar" data-ann-id="{{ $id }}" role="region" aria-label="Announcement">
+  <div class="announcement-bar__inner">
+    <p class="announcement-bar__text">{{ .text }}</p>
+    {{ with .url }}
+    <a class="announcement-bar__cta" href="{{ . }}" target="_blank" rel="noopener">{{ $.Site.Params.announcement.buttonText | default "Learn More" }}</a>
+    {{ end }}
+  </div>
+  <button class="announcement-bar__close" type="button" aria-label="Dismiss announcement">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+  </button>
+</div>
+{{/* Hide instantly, before first paint, if this announcement was already dismissed — avoids a flash.
+     Reads the id from the element's data attribute so there is no JS-context escaping to trip over. */}}
+<script>
+(function(){
+  try {
+    var el = document.getElementById('announcement-bar');
+    if (el && localStorage.getItem('aenix-ann-dismissed') === el.dataset.annId) {
+      el.hidden = true;
+    }
+  } catch (e) {}
+})();
+</script>
+{{ end }}
+{{ end }}

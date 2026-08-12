@@ -295,6 +295,86 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: 0 1px 20px rgba(1,165,255,0.03);
 }
 
+/* ==========================================================================
+   ANNOUNCEMENT BAR (top promo strip — scrolls away above the sticky header)
+   ========================================================================== */
+.announcement-bar {
+  position: relative;
+  z-index: 90;
+  background: linear-gradient(90deg, var(--brand-accent) 0%, var(--brand-secondary) 55%, var(--brand-primary) 100%);
+  color: #fff;
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+}
+.announcement-bar[hidden] { display: none; }
+.announcement-bar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  min-height: 44px;
+  padding: 9px 56px;            /* right room clears the close button */
+}
+.announcement-bar__text {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+.announcement-bar__cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--bg-main);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease), background 0.15s var(--ease);
+}
+.announcement-bar__cta:hover {
+  background: var(--brand-green);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+.announcement-bar__close {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.15s var(--ease);
+}
+.announcement-bar__close:hover { background: rgba(255,255,255,0.24); }
+.announcement-bar__close:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+
+@media (max-width: 768px) {
+  .announcement-bar__inner {
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 52px 10px 16px;
+    text-align: center;
+  }
+  .announcement-bar__text { font-size: 0.82rem; }
+  .announcement-bar__close { top: 10px; transform: none; }
+}
+
 .logo { display: flex; align-items: center; flex-shrink: 0; }
 .logo img { height: 36px; width: auto; }
 

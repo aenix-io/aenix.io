@@ -54,6 +54,7 @@
   {{ block "head" . }}{{ end }}
 </head>
 <body class="{{ with .Params.bodyClass }}{{ . }}{{ end }}">
+  {{ partial "announcement-bar.html" . }}
   {{ partial "header.html" . }}
 
   <main id="content">
