@@ -1,0 +1,77 @@
+name: Sync short links
+
+# The registry spreadsheet is the input surface; this job is the only thing that
+# turns it into repository state. The Apps Script fires repository_dispatch right
+# after it appends a row, so a new link normally lands within a minute. The
+# schedule is the safety net for rows edited by hand in the sheet, which nothing
+# announces.
+
+on:
+  repository_dispatch:
+    types: [links-updated]
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-links
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # A PAT, not GITHUB_TOKEN: a push made with GITHUB_TOKEN does not start
+          # another workflow, so the Pages deploy would never run and the synced
+          # links would sit in the repository without ever being published.
+          token: ${{ secrets.LINKS_SYNC_TOKEN }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # The sync rewrites the published registry, so a broken rule set must stop
+      # it here rather than land as mangled data.
+      - name: Test the validation rules
+        run: |
+          node scripts/test-link-validate.mjs
+          node scripts/test-apps-script.mjs
+
+      - name: Sync the sheet into data/links
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          LINKS_SHEET_ID: ${{ vars.LINKS_SHEET_ID || '1x9K7Bf4qesFw8_uD2GjTw_Pok0Pe1cf5X4rsu6x-XNo' }}
+          LINKS_SHEET_RANGE: ${{ vars.LINKS_SHEET_RANGE || 'Sheet1!A:F' }}
+        run: |
+          set -o pipefail
+          node scripts/sync-links.mjs 2>&1 | tee sync.log
+
+      - name: Report to the job summary
+        if: always()
+        run: |
+          {
+            echo '## Short-link sync'
+            echo
+            echo '```'
+            cat sync.log 2>/dev/null || echo 'the sync produced no output'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit the changes
+        run: |
+          git add -A data/links
+          if git diff --cached --quiet; then
+            echo 'Registry already matches the sheet — nothing to commit.'
+            exit 0
+          fi
+          git config user.name 'aenix-bot'
+          git config user.email 'info@aenix.io'
+          git commit --signoff --message 'chore(links): sync short links from the registry sheet'
+          git push
