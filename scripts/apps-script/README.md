@@ -99,7 +99,11 @@ Fix in this order:
 2. **Deploy → Manage deployments → ✏️ → Version: New version → Deploy.** The running deployment keeps serving the old code until you do.
 3. Open the web app URL again and grant access. If the consent screen does not reappear, revoke the old grant first at <https://myaccount.google.com/permissions> and retry.
 
-`spreadsheets.currentonly` limits the script to the spreadsheet it is bound to, which is why it is used here instead of the broader `spreadsheets`. If a future change makes the script open other spreadsheets by id, that scope will stop being sufficient and has to be widened deliberately.
+### Why the broad `spreadsheets` scope
+
+The narrower `spreadsheets.currentonly` covers "the spreadsheet this application is installed in", and it is the obvious choice for a container-bound script — but it only applies when the code runs **in the document's context**: a custom menu, a sidebar, an `onOpen` trigger. A web app opened by URL runs outside any document, so there is no current spreadsheet to grant access to, and `getActiveSpreadsheet()` fails on permissions no matter how the script is bound.
+
+So the script opens the registry by id (`SHEET_ID` at the top of `Code.gs`) and asks for the full `spreadsheets` scope. That is a genuinely wider grant — it covers every spreadsheet the authorizing user can reach — and it is the price of the write path being a web app. Worth remembering when reviewing what the team is asked to approve.
 
 ## Keeping the rules in sync
 
