@@ -95,24 +95,25 @@ export function randomSlug(n = 5, rand) {
 }
 
 /**
- * Validate a whole sheet in one pass, so cross-row rules (duplicate slugs,
- * duplicate targets) can be applied. Input rows are the raw sheet rows;
- * output is {links, errors} where links are the rows that earned a data file.
+ * Validate every link in one pass, so the cross-record rules — duplicate slugs
+ * above all — can be applied. Records carry a `where` label (a file path, or a
+ * file path and index) that is echoed back in errors so a human can find the
+ * offending entry.
  *
- * Row order is authoritative: on a slug collision the FIRST row wins, so an
- * accidental later edit can never hijack a link that is already published.
+ * Order is authoritative: on a slug collision the FIRST record wins, so a later
+ * addition can never hijack a link that is already published.
  */
-export function validateRows(rows) {
+export function validateRecords(records) {
   const links = [];
   const errors = [];
-  const seenSlugs = new Map();   // slug -> row number
+  const seenSlugs = new Map();   // slug -> where it was first seen
   const seenTargets = new Map(); // clean target -> slug
 
-  rows.forEach((row, i) => {
-    const rowNo = row.rowNumber ?? i + 2; // +2: header is row 1
+  records.forEach((row, i) => {
+    const rowNo = row.where ?? row.rowNumber ?? `#${i + 1}`;
     const reject = (error) => errors.push({ row: rowNo, slug: row.slug || '', error });
 
-    // Fully blank rows are just spreadsheet padding — silently ignored.
+    // Entirely blank entries are padding — silently ignored.
     const blank = !String(row.slug || '').trim() && !String(row.target_url || '').trim();
     if (blank) return;
 
@@ -123,7 +124,7 @@ export function validateRows(rows) {
     if (!t.ok) { reject(t.error); return; }
 
     if (seenSlugs.has(s.slug)) {
-      reject(`Duplicate slug — already used on row ${seenSlugs.get(s.slug)}.`);
+      reject(`Duplicate slug — already used at ${seenSlugs.get(s.slug)}.`);
       return;
     }
     seenSlugs.set(s.slug, rowNo);
