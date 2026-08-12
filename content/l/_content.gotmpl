@@ -1,0 +1,30 @@
+{{/*
+  Short links: one page per file in data/links/, published at /l/<slug>/.
+
+  The files are written by scripts/sync-links.mjs from the registry spreadsheet.
+  Rows whose status is not "active" are kept in data/ as history but produce no
+  page here, so a disabled link 404s instead of redirecting.
+*/}}
+{{ range $slug, $link := site.Data.links }}
+  {{ $target := $link.target_url }}
+  {{ $status := default "active" $link.status }}
+
+  {{ if and $target (eq $status "active") }}
+    {{ $.AddPage (dict
+      "path"    $slug
+      "title"   (printf "Redirecting to %s" $target)
+      "kind"    "page"
+      "layout"  "redirect"
+      "build"   (dict "render" "always" "list" "never" "publishResources" false)
+      "sitemap" (dict "disable" true)
+      "params"  (dict
+        "target"     $target
+        "slug"       $slug
+        "created_at" (default "" $link.created_at)
+        "created_by" (default "" $link.created_by)
+        "note"       (default "" $link.note)
+      )
+      "content" (dict "mediaType" "text/html" "value" "")
+    ) }}
+  {{ end }}
+{{ end }}

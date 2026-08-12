@@ -1,0 +1,222 @@
+#!/usr/bin/env node
+// Sync the short-link registry from Google Sheets into data/links/*.yaml.
+//
+// One row in the sheet == one file in data/links/. Hugo turns every active file
+// into a static redirect page at /l/<slug>/. Nothing here talks to a backend:
+// the sheet is the input surface, git is the store, Pages is the server.
+//
+// Usage:
+//   node scripts/sync-links.mjs                  # read the sheet, write data/links/
+//   node scripts/sync-links.mjs --dry-run        # validate and report, write nothing
+//   node scripts/sync-links.mjs --from <file>    # read rows from a local JSON file
+//
+// Auth, in order of preference:
+//   GOOGLE_ACCESS_TOKEN          an OAuth access token obtained elsewhere — this is
+//                                what Workload Identity Federation produces, and it
+//                                is the only option when the organization forbids
+//                                service-account keys
+//   GOOGLE_SERVICE_ACCOUNT_JSON  a service-account key, signed into a token here
+//
+// Either way the account must be able to read the sheet: share the spreadsheet
+// with its email (Viewer is enough).
+//
+// Env:
+//   LINKS_SHEET_ID               spreadsheet id
+//   LINKS_SHEET_RANGE            defaults to "Sheet1!A:F"
+
+import { createSign } from 'node:crypto';
+import { readFile, readdir, writeFile, unlink, mkdir } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import { validateRows } from './lib/link-validate.mjs';
+
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const OUT_DIR = path.join(ROOT, 'data', 'links');
+const TOKEN_URL = 'https://oauth2.googleapis.com/token';
+const SCOPE = 'https://www.googleapis.com/auth/spreadsheets.readonly';
+
+const argv = process.argv.slice(2);
+const hasFlag = (f) => argv.includes(f);
+const flagValue = (f) => { const i = argv.indexOf(f); return i === -1 ? null : argv[i + 1]; };
+
+const DRY_RUN = hasFlag('--dry-run');
+const FROM_FILE = flagValue('--from');
+// Guard rail: an empty sheet normally means the API hiccuped, not that every
+// link was deleted. Refuse to prune everything unless it is said out loud.
+const ALLOW_EMPTY = hasFlag('--allow-empty');
+
+const b64url = (buf) => Buffer.from(buf).toString('base64url');
+
+// ── Google auth (dependency-free: sign our own JWT, swap it for a token) ─────
+async function getAccessToken(credentials) {
+  const now = Math.floor(Date.now() / 1000);
+  const header = b64url(JSON.stringify({ alg: 'RS256', typ: 'JWT' }));
+  const claim = b64url(JSON.stringify({
+    iss: credentials.client_email,
+    scope: SCOPE,
+    aud: TOKEN_URL,
+    iat: now,
+    exp: now + 3600,
+  }));
+  const signature = b64url(
+    createSign('RSA-SHA256').update(`${header}.${claim}`).end().sign(credentials.private_key),
+  );
+
+  const res = await fetch(TOKEN_URL, {
+    method: 'POST',
+    headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      grant_type: 'urn:ietf:params:oauth:grant-type:jwt-bearer',
+      assertion: `${header}.${claim}.${signature}`,
+    }),
+  });
+  if (!res.ok) throw new Error(`Google token request failed (${res.status}): ${await res.text()}`);
+  return (await res.json()).access_token;
+}
+
+/**
+ * Prefer a token handed to us — Workload Identity Federation mints one per run,
+ * so nothing long-lived has to exist. Fall back to signing a service-account key
+ * for setups that still have one.
+ */
+async function resolveToken() {
+  const handed = (process.env.GOOGLE_ACCESS_TOKEN || '').trim();
+  if (handed) return handed;
+
+  const rawKey = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+  if (!rawKey) {
+    throw new Error('No Google credentials: set GOOGLE_ACCESS_TOKEN (Workload Identity '
+      + 'Federation) or GOOGLE_SERVICE_ACCOUNT_JSON (service-account key).');
+  }
+
+  let credentials;
+  try { credentials = JSON.parse(rawKey); } catch {
+    throw new Error('GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON.');
+  }
+  if (!credentials.client_email || !credentials.private_key) {
+    throw new Error('Service-account JSON is missing client_email or private_key.');
+  }
+  return getAccessToken(credentials);
+}
+
+async function fetchSheet(sheetId, range, token) {
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${encodeURIComponent(sheetId)}`
+    + `/values/${encodeURIComponent(range)}?majorDimension=ROWS`;
+  const res = await fetch(url, { headers: { authorization: `Bearer ${token}` } });
+  if (!res.ok) throw new Error(`Sheets read failed (${res.status}): ${await res.text()}`);
+  return (await res.json()).values || [];
+}
+
+// ── sheet rows → objects, keyed by the header row, not by column order ──────
+const FIELDS = ['slug', 'target_url', 'status', 'created_at', 'created_by', 'note'];
+
+function toRows(values) {
+  if (!values.length) return [];
+  const header = values[0].map((h) => String(h || '').trim().toLowerCase().replace(/\s+/g, '_'));
+  const missing = ['slug', 'target_url'].filter((f) => !header.includes(f));
+  if (missing.length) {
+    throw new Error(`Sheet header is missing required column(s): ${missing.join(', ')}. `
+      + `Expected: ${FIELDS.join(' | ')}`);
+  }
+  return values.slice(1).map((cells, i) => {
+    const row = { rowNumber: i + 2 };
+    FIELDS.forEach((f) => {
+      const at = header.indexOf(f);
+      row[f] = at === -1 ? '' : String(cells[at] ?? '').trim();
+    });
+    return row;
+  });
+}
+
+// ── minimal YAML writer (every scalar quoted — no clever type coercion) ─────
+const yamlString = (s) => `"${String(s).replace(/\\/g, '\\\\').replace(/"/g, '\\"')}"`;
+
+function toYaml(link) {
+  const lines = [
+    '# Generated by scripts/sync-links.mjs from the link registry spreadsheet.',
+    '# Do not edit by hand — edit the sheet, the next sync overwrites this file.',
+    `slug: ${yamlString(link.slug)}`,
+    `target_url: ${yamlString(link.target_url)}`,
+    `status: ${yamlString(link.status)}`,
+  ];
+  if (link.created_at) lines.push(`created_at: ${yamlString(link.created_at)}`);
+  if (link.created_by) lines.push(`created_by: ${yamlString(link.created_by)}`);
+  if (link.note) lines.push(`note: ${yamlString(link.note)}`);
+
+  const utm = Object.entries(link.utm || {}).filter(([, v]) => v);
+  if (utm.length) {
+    lines.push('utm:');
+    for (const [k, v] of utm) lines.push(`  ${k}: ${yamlString(v)}`);
+  }
+  return lines.join('\n') + '\n';
+}
+
+async function main() {
+  let values;
+
+  if (FROM_FILE) {
+    // Offline path: exercise validation and file writing without credentials.
+    values = JSON.parse(await readFile(FROM_FILE, 'utf8'));
+  } else {
+    const sheetId = process.env.LINKS_SHEET_ID;
+    if (!sheetId) throw new Error('LINKS_SHEET_ID is not set.');
+
+    const token = await resolveToken();
+    values = await fetchSheet(sheetId, process.env.LINKS_SHEET_RANGE || 'Sheet1!A:F', token);
+  }
+
+  const rows = toRows(values);
+  const { links, errors } = validateRows(rows);
+
+  const warnings = errors.filter((e) => e.level === 'warn');
+  const rejected = errors.filter((e) => e.level !== 'warn');
+
+  for (const e of rejected) console.error(`  ✗ row ${e.row}${e.slug ? ` (${e.slug})` : ''}: ${e.error}`);
+  for (const e of warnings) console.warn(`  ! row ${e.row} (${e.slug}): ${e.error}`);
+  for (const l of links.filter((l) => l.stripped.length)) {
+    console.warn(`  ! ${l.slug}: dropped sensitive param(s) from the target: ${l.stripped.join(', ')}`);
+  }
+
+  await mkdir(OUT_DIR, { recursive: true });
+  const existing = (await readdir(OUT_DIR)).filter((f) => f.endsWith('.yaml'));
+
+  if (!links.length && existing.length && !ALLOW_EMPTY) {
+    throw new Error(`Sheet produced 0 valid links but ${existing.length} file(s) exist. `
+      + 'Refusing to wipe the registry — pass --allow-empty if this is intentional.');
+  }
+
+  const wanted = new Map(links.map((l) => [`${l.slug}.yaml`, toYaml(l)]));
+  let written = 0, removed = 0, unchanged = 0;
+
+  for (const [name, body] of wanted) {
+    const file = path.join(OUT_DIR, name);
+    let current = null;
+    try { current = await readFile(file, 'utf8'); } catch { /* new file */ }
+    if (current === body) { unchanged++; continue; }
+    if (!DRY_RUN) await writeFile(file, body, 'utf8');
+    written++;
+    console.log(`  ${current === null ? '+' : '~'} data/links/${name}`);
+  }
+
+  // A row removed from the sheet stops resolving. Only this directory, only .yaml.
+  for (const name of existing) {
+    if (wanted.has(name)) continue;
+    if (!DRY_RUN) await unlink(path.join(OUT_DIR, name));
+    removed++;
+    console.log(`  - data/links/${name}`);
+  }
+
+  const active = links.filter((l) => l.status === 'active').length;
+  console.log(`\n${DRY_RUN ? '[dry-run] ' : ''}${links.length} link(s) in the sheet `
+    + `(${active} active, ${links.length - active} disabled) — `
+    + `${written} written, ${removed} removed, ${unchanged} unchanged, ${rejected.length} rejected.`);
+
+  // Rejected rows are reported loudly but never block the sync: one bad row must
+  // not stop every good link from publishing.
+  if (rejected.length) console.error(`\n${rejected.length} row(s) were rejected — see above.`);
+}
+
+main().catch((err) => {
+  console.error(`\nsync-links failed: ${err.message}`);
+  process.exit(1);
+});
