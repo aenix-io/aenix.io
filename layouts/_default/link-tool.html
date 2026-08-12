@@ -206,7 +206,7 @@
 
       <label class="lt-field"><span>Custom slug <small>(optional — leave blank for a random code)</small>
         <b class="lt-tip">ⓘ<i class="lt-tip-box">The tail of the short link. Readable is better for print/QR.<br><b>e.g.</b> aenix.io/l/cloudfest</i></b></span>
-        <div class="lt-slug"><span class="lt-slug-prefix">aenix.io/l/</span><input id="sh-slug" placeholder="cloudfest" autocomplete="off"></div>
+        <div class="lt-slug"><span class="lt-slug-prefix">aenix.io/l/</span><input id="sh-slug" placeholder="cloudfest" autocomplete="off"><button id="sh-reroll" type="button" class="lt-slug-btn" title="Generate another handle">↻</button></div>
       </label>
 
       <label class="lt-field"><span>Note <small>(optional — what this link is for)</small></span>
@@ -297,6 +297,8 @@
   .lt-slug-prefix{background:rgba(255,255,255,.05);color:var(--text-secondary,#94A3B8);padding:11px 11px;font-size:.9rem;white-space:nowrap;border-right:1px solid var(--border-default,rgba(255,255,255,.1));font-family:var(--font-mono,monospace)}
   .lt-slug input{border:none;border-radius:0;background:transparent}
   .lt-slug input:focus{box-shadow:none}
+  .lt-slug-btn{background:rgba(255,255,255,.05);border:0;border-left:1px solid var(--border-default,rgba(255,255,255,.1));color:var(--text-secondary,#94A3B8);padding:0 14px;cursor:pointer;font-size:1rem;font-family:inherit}
+  .lt-slug-btn:hover{color:var(--brand-primary,#01A5FF)}
   .lt-preview{background:rgba(255,255,255,.02);border:1px dashed var(--border-hover,rgba(255,255,255,.15));border-radius:11px;padding:13px 15px;margin:8px 0 14px}
   .lt-preview-label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-secondary,#94A3B8);margin-bottom:5px}
   .lt-out{font-family:var(--font-mono,'JetBrains Mono',monospace);font-size:.88rem;color:var(--text-primary,#F1F5F9);word-break:break-all}
@@ -509,9 +511,14 @@
   var editing=null;
 
   function randomSlug(){
-    var s='', b=new Uint8Array(5); crypto.getRandomValues(b);
-    for(var i=0;i<5;i++) s+=ALPHABET[b[i]%ALPHABET.length];
+    var s='', b=new Uint8Array(6); crypto.getRandomValues(b);
+    for(var i=0;i<6;i++) s+=ALPHABET[b[i]%ALPHABET.length];
     return s;
+  }
+  // Offer a handle up front rather than leaving the field blank: seeing the slug
+  // before committing beats discovering it afterwards, and it stays editable.
+  function suggestSlug(){
+    if(!$('sh-slug').value) $('sh-slug').value=freeSlug()||'';
   }
   function freeSlug(){
     for(var i=0;i<12;i++){ var s=randomSlug(); if(!window.LinkState.taken(s)) return s; }
@@ -541,6 +548,7 @@
     saveCampaign(clean($('utm-campaign').value));
     editing=null; $('sh-cancel').hidden=true; $('sh-submit').textContent='Add to batch';
     $('sh-url').value=''; $('sh-slug').value=''; $('sh-note').value=''; checkUrl();
+    suggestSlug();
     document.getElementById('commit').scrollIntoView({behavior:'smooth',block:'start'});
   });
 
@@ -611,6 +619,8 @@
 
   document.addEventListener('linkstate:change', renderPending);
   renderPending();
+  suggestSlug();
+  $('sh-reroll').addEventListener('click', function(){ $('sh-slug').value=''; suggestSlug(); });
 
   var editParam=new URLSearchParams(location.search).get('edit');
   if(editParam){ loadForEdit(editParam); history.replaceState(null,'',location.pathname+location.hash); }
