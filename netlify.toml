@@ -1,3 +1,6 @@
+# Netlify builds deploy previews only. Production is GitHub Pages (see CNAME and
+# .github/workflows/hugo.yaml), so nothing here runs on the live site.
+
 [build]
   publish = "public"
   command = "hugo --gc --minify"
@@ -5,10 +8,6 @@
 [build.environment]
   HUGO_VERSION = "0.151.1"
   HUGO_EXTENDED = "true"
-
-[functions]
-  directory = "netlify/functions"
-  node_bundler = "esbuild"
 
 [context.production.environment]
   HUGO_ENV = "production"
@@ -18,19 +17,6 @@
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-
-# Short-link resolver: /l/<slug> → go function (first-party click counter + 302
-# redirect to the target). Must come BEFORE the catch-all 404 below.
-[[redirects]]
-  from = "/l/*"
-  to = "/.netlify/functions/go?s=:splat"
-  status = 200
-
-# Keep the /l/ and registry pages out of GA4/search as extra safety.
-[[headers]]
-  for = "/l/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
 
 [[redirects]]
   from = "/*"
