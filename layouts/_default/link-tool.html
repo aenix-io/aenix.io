@@ -328,10 +328,13 @@
   .lt-pending-item.add .lt-pending-op{background:rgba(212,246,178,.14);color:var(--brand-green,#D4F6B2)}
   .lt-pending-item.edit .lt-pending-op{background:rgba(1,165,255,.16);color:var(--brand-primary,#01A5FF)}
   .lt-pending-item.delete .lt-pending-op{background:rgba(248,113,113,.14);color:#fca5a5}
+  .lt-pending-item.disable .lt-pending-op{background:rgba(148,163,184,.16);color:#cbd5e1}
+  .lt-pending-item.enable .lt-pending-op{background:rgba(212,246,178,.14);color:var(--brand-green,#D4F6B2)}
   .lt-pending-item.delete code{text-decoration:line-through;opacity:.7}
   .lt-pending-target{flex:1;min-width:160px;color:var(--text-secondary,#94A3B8);font-size:.78rem;word-break:break-all}
   .lt-act{margin-left:auto;background:transparent;border:1px solid var(--border-default,rgba(255,255,255,.1));color:var(--text-secondary,#94A3B8);border-radius:8px;padding:5px 11px;font-size:.76rem;font-weight:600;cursor:pointer;font-family:inherit}
   .lt-act:hover{border-color:var(--brand-primary,#01A5FF);color:var(--brand-primary,#01A5FF)}
+  #pc-help{margin-top:16px}
   .lt-note{margin:-6px 0 18px;color:var(--text-secondary,#94A3B8);font-size:.86rem;line-height:1.6}
   .lt-note code{background:rgba(255,255,255,.06);border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:5px;padding:1px 6px;font-family:var(--font-mono,monospace);font-size:.82em;color:var(--brand-cyan,#94DEE0)}
   .lt-note b{color:var(--text-primary,#F1F5F9)}
@@ -567,8 +570,14 @@
 
     $('pc-list').innerHTML=slugs.map(function(s){
       var c=changes[s];
-      var known=baseline.some(function(b){ return b.slug===s; });
-      var kind=c.op==='delete' ? 'delete' : (known ? 'edit' : 'add');
+      var was=baseline.filter(function(b){ return b.slug===s; })[0];
+      var kind;
+      if(c.op==='delete'){ kind='delete'; }
+      else if(!was){ kind='add'; }
+      else if(c.target_url===was.target_url && (c.note||'')===(was.note||'')){
+        // only the status moved — say which way, "edit" hides the one thing that changed
+        kind=(c.status||'active')==='active' ? 'enable' : 'disable';
+      } else { kind='edit'; }
       return '<li class="lt-pending-item '+kind+'">'
         +'<span class="lt-pending-op">'+kind+'</span>'
         +'<code>/l/'+esc(s)+'/</code>'
