@@ -1,13 +1,11 @@
 // Validation rules for short links.
 //
-// These rules are enforced TWICE, on purpose:
-//   1. in the Apps Script web app (scripts/apps-script/Code.gs) — at write time,
-//      so a human gets an error instead of a broken row;
-//   2. here, in the sync job — at read time, because the sheet can be edited by
-//      hand and rows can arrive that never passed through the web app.
-//
-// Keep the two copies in sync. Code.gs is a hand-pasted standalone script and
-// cannot import this module, so the duplication is structural, not accidental.
+// The editor at /go/ checks the same rules in the browser so a mistake is caught
+// while it is being typed, but that check is a convenience, not a guarantee: a
+// changeset is a file in a pull request and can be written by hand. This module
+// is the one that decides, and it runs in CI on the result of applying a
+// changeset — which is where a duplicate slug or a foreign host actually
+// becomes a problem.
 
 // Anti-fraud allow-list: only URLs whose host is one of ours may be shortened.
 export const ALLOWED_HOSTS = new Set(['aenix.io', 'k.aenix.io', 'opc.aenix.io']);
