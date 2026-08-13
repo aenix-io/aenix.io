@@ -153,7 +153,7 @@ final_cta:
 <span class="wb-cover__num">01</span>
 <span class="wb-cover__icon">{{< ws-icon name="shield" >}}</span>
 <div class="cs-stat__num" style="font-size:1.9rem;margin:.2rem 0 .1rem">3 data centres</div>
-<div class="cs-stat__label" style="margin-bottom:1rem">Switzerland · synchronous replication · 12+ tenants in production</div>
+<div class="cs-stat__label" style="margin-bottom:1rem">Switzerland · synchronous replication · 60+ tenants in production</div>
 <p class="wb-cover__text"><strong>A Swiss cloud provider</strong> moved off a hypervisor stack and a Jelastic/Virtuozzo legacy onto a full commercial public cloud — virtual machines, managed Kubernetes, databases and GPU, sold under its own brand. Its own engineers became Cozystack maintainers.</p>
 </article>
 <article class="wb-cover__item">
