@@ -64,7 +64,7 @@ cities:
   - city: "Tashkent"
     country: "Uzbekistan"
     status: "confirmed"
-    date: "20 Aug 2026, 15:00–19:00"
+    date: "26 Aug 2026, 15:00–19:00"
     venue: "Impact.t Hub, Bogibuston St. 186, 5th floor"
     href: "#register"
   - city: "Bishkek"
