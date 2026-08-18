@@ -64,7 +64,7 @@ cities:
   - city: "Ташкент"
     country: "Узбекистан"
     status: "confirmed"
-    date: "20 августа 2026, 15:00–19:00"
+    date: "26 августа 2026, 15:00–19:00"
     venue: "Impact.t Hub, улица Богибустан, 186, 5 этаж"
     href: "#register"
   - city: "Бишкек"
