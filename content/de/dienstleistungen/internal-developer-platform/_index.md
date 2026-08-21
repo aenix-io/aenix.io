@@ -206,7 +206,7 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 
 Wir haben Internal Developer Platforms gebaut für Service-Anbieter, die mandantenfähige Clouds betreiben, regulierte Unternehmen mit starken Souveränitätsanforderungen, KI/GPU-Operatoren mit Multi-Team-Data-Science-Zugang und Telekom-Operatoren, die mehrere Legacy-Umgebungen konsolidieren.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 <!-- /BLOCK 8 -->

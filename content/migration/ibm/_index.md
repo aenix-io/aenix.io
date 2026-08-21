@@ -276,7 +276,7 @@ Estate size and the legacy/microservice mix drive the actual schedule; sequencin
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 11 -->
 

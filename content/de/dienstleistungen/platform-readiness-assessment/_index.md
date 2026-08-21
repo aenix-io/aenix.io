@@ -260,10 +260,10 @@ Folgt ein Phase-2-Engagement, werden die Assessment-Kosten gegen das Implementat
 
 Wir haben Platform-Readiness-Assessments für Service Provider, regionale Cloud-Provider, Financial-Services-Organisationen, Telekom-Betreiber und Souveräne-Cloud-Initiativen in der EU und Zentralasien durchgeführt. Fünf bis zwanzig Assessments pro Jahr.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_2}}, {{TITLE_2}}*
 
 Für benannte Case Studies siehe **[Customer Stories](/de/case-studies/)** — fordern Sie die geschützten Versionen im Discovery-Call an, wo anwendbar.

@@ -198,7 +198,7 @@ Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end —
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 8 -->
 

@@ -121,7 +121,7 @@ Anonymous proof points:
 - Architecture pattern: central control + regional aggregation + substation edge tier; air-gapped OT boundary; AI/ML cluster for forecasting
 - Adjacent energy-sector platform engagements scoped through procurement processes
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

@@ -161,7 +161,7 @@ For sovereignty / DORA / repatriation / AI-specific motivations, the relevant so
 
 Production deployments across the EU, DACH, and Central Asia. Customer base spans service providers, regulated enterprises, telcos, and AI/GPU operators.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 6 -->
 

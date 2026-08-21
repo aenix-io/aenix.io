@@ -1,5 +1,5 @@
 ---
-title: "Cloud platform for financial services — DORA-compliant, sovereign, AI-ready"
+title: "Cloud platform for financial services — DORA-aligned, sovereign, AI-ready"
 description: "Banks, insurers, investment firms, and payment institutions face the steepest combination of pressures in 2026: DORA enforcement (in force January 2025),..."
 related_pages:
   - /solutions/dora-compliance/
@@ -107,13 +107,13 @@ Output is a written report aligned with regulator-readiness and a Phase 2 implem
 
 {{< clients >}}
 
-*Customer evidence section — to be populated by Aenix with named customers where permissions allow. Anonymous proof points:*
+Financial-services references stay anonymous until the NDAs expire; these are live engagements:
 - A Tier-1 European bank running internal cloud platform with multi-tenant isolation under DORA Article 28 supplier-concentration controls.
 - A regional insurance carrier with sovereign-cloud requirements and AI-assisted claims processing on private LLM infrastructure.
 - A payment-institution operating critical-infrastructure workloads across two EU member-state regions with full data residency.
 - A fintech operating across the EU and Central Asia with a unified platform under multi-jurisdictional sovereignty controls.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

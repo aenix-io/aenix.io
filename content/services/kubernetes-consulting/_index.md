@@ -192,7 +192,7 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 <!-- /BLOCK 8 -->

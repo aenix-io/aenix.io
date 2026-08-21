@@ -275,7 +275,7 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 11 -->
 

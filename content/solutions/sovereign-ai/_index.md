@@ -218,7 +218,7 @@ For full assessment methodology see **[Platform Readiness Assessment](/services/
 
 We have built and operated AI platforms for AI / GPU operators, financial-services organizations, and public-sector initiatives across the EU and Central Asia. Workload patterns include inference-at-scale (24/7), fine-tuning, RAG pipelines, and multi-tenant model serving.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 Named case studies available on the discovery call where customer permissions allow.

@@ -190,7 +190,7 @@ Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessmen
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 <!-- /BLOCK 8 -->

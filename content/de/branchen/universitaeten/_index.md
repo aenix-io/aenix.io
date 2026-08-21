@@ -147,7 +147,7 @@ Viele Universitäten haben Zugang zu EuroHPC oder nationalem HPC; Cozystack arbe
 - Ein Forschungskonsortium mehrerer Institutionen mit föderiertem Cozystack über die Institutionen hinweg
 - Ein Research-Computing-Service, der Cozystack Fakultäten über mehrere Universitäten hinweg anbietet
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

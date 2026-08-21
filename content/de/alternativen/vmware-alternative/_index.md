@@ -119,7 +119,7 @@ KubeVirt und der Kubernetes-native Virtualisierungsstack haben eine Community vo
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

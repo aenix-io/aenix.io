@@ -203,7 +203,7 @@ Zur vollständigen Methodik siehe **[Platform Readiness Assessment](/de/dienstle
 
 Wir haben Cloud-Repatriation-Engagements für Service-Provider, Finanzdienstleister, Telekommunikationsbetreiber und KI-/GPU-Plattformen in der EU, der DACH-Region und Zentralasien durchgeführt. Die verschobenen Workloads reichten von Steady-State-Produktionsdatenbanken bis zu KI-Inferenz-Clustern; die Ergebnisse reichten von vollständig on-prem bis zu selektivem Hybrid.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 Benannte Case Studies sind im Discovery-Call verfügbar, sofern die Kundenfreigaben es erlauben.

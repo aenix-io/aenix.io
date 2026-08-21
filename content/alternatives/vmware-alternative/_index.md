@@ -273,10 +273,10 @@ OpenStack, CloudStack, and Proxmox migrations follow the same playbook with diff
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_2}}, {{TITLE_2}}*
 
 Service providers, telecom operators, regional sovereign clouds, GPU/AI operators, regulated enterprises across the EU and North America.

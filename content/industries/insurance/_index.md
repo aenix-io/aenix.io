@@ -101,7 +101,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 - An insurance group with AI-assisted claims processing on private LLM infrastructure
 - A multi-product insurer with multi-BU separation under DORA Article 28 controls
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

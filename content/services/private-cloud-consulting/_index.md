@@ -196,7 +196,7 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 <!-- /BLOCK 8 -->

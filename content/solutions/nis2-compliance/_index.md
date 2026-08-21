@@ -193,7 +193,7 @@ Delivered by EU-based engineers with regulator-dialog experience. Same engineers
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 8 -->
 

@@ -204,7 +204,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 We've built internal developer platforms for service providers running multi-tenant clouds, regulated enterprises with strong sovereignty requirements, AI/GPU operators with multi-team data-science access, and telecom operators consolidating multiple legacy environments.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 <!-- /BLOCK 8 -->

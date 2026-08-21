@@ -115,7 +115,7 @@ Phase 2 implementation typically spans 6-24 months for a multi-site telecom plat
 - A telecom AI initiative for customer-care and network-operations workloads on private LLM infrastructure.
 - A 5G MEC deployment with Kubernetes + KubeVirt for VNFs at edge sites.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 Public references: NDA-protected — telco engagements sit in the same NDA cohort as the bank work, with naming permitted from mid-2027. The closest written-up case is [a telecom operator that built a corporate AI platform on Cozystack and shipped the same distribution into a state-owned end customer](/case-studies/ai-universal-installer/).
 

@@ -190,7 +190,7 @@ Umsetzung in Phase 2: Aenix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 8 -->
 

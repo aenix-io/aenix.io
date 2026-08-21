@@ -203,7 +203,7 @@ Zur vollständigen Methodik siehe **[Platform Readiness Assessment](/de/dienstle
 
 Wir haben kostenfokussierte Engagements für Service-Provider, Finanzdienstleister, Telekommunikationsbetreiber und AI-/GPU-Plattformen in der EU, in der DACH-Region und in Zentralasien durchgeführt. Die identifizierten Einsparungen reichten von 15 % (gut verwaltete Cloud-Landschaft, überwiegend taktische Optimierung) bis über 50 % (schlecht verwaltete Ausgaben mit starkem Repatriation-Argument).
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 Namentlich genannte Fallstudien sind im Discovery-Call verfügbar, sofern die Kundenfreigaben dies erlauben.

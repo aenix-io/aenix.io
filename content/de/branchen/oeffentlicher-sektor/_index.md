@@ -113,7 +113,7 @@ Die Phase-2-Implementierung läuft End-to-End: von Hardware über Plattform bis 
 - Ein quasi-öffentlicher Infrastruktur-Betreiber (Transport, Energie, Wasser) unter NIS2-Klassifizierung als wesentliche Entität.
 - Eine öffentliche-Sektor-KI-Initiative für die Analyse von Regierungsdaten auf privater LLM-Infrastruktur.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

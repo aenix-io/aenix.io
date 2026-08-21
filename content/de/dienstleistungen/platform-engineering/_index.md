@@ -203,7 +203,7 @@ Für die Methodologie siehe **[Platform Readiness Assessment](/de/dienstleistung
 
 Wir haben Plattformen für Service Provider mit Multi-Tenant-Clouds, regulierte Unternehmen mit internen Entwickler-Plattformen, KI/GPU-Operatoren, Telekom-Betreiber und Souveräne-Cloud-Initiativen in der EU, DACH und Zentralasien gebaut oder betrieben. Workloads umfassen VMs, Container, Managed Databases, S3 und GPU.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 Benannte Case Studies verfügbar im Discovery-Call, sofern Kunden-Berechtigungen es erlauben.

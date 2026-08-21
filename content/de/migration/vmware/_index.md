@@ -208,7 +208,7 @@ Ein Bestand von 100 VMs wird typischerweise in 8-12 Monaten abgeschlossen. Ein B
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 8 -->
 

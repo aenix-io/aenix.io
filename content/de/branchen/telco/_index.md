@@ -118,7 +118,7 @@ Die Phase-2-Implementierung erstreckt sich typischerweise über 6–24 Monate f�
 - Eine Telekom-KI-Initiative für Customer-Care- und Network-Operations-Workloads auf privater LLM-Infrastruktur.
 - Ein 5G-MEC-Deployment mit Kubernetes + KubeVirt für VNFs an Edge-Standorten.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 Öffentliche Referenzen: NDA-geschützt. Telco-Engagements sind in derselben NDA-Kohorte wie die Bank-Engagements enthalten; erste namentliche Telco-Case-Studies werden Mitte 2027 erwartet.
 

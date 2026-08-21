@@ -217,7 +217,7 @@ For the full engagement methodology, see **[Platform Readiness Assessment](/serv
 
 We have run DORA-aligned readiness engagements for banks, insurers, telecom operators, and ICT third-party service providers across the EU and DACH. Mutual NDA at kickoff; named case studies available on the discovery call where customer permissions allow.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 <!-- /BLOCK 8 -->

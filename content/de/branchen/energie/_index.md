@@ -115,7 +115,7 @@ Anonyme Proof Points:
 - Architektur-Muster: zentrale Steuerung + regionale Aggregation + Umspannstation-Edge-Tier; Air-Gapped-OT-Boundary; KI/ML-Cluster für Forecasting
 - Angrenzende Plattform-Engagements im Energiesektor über Beschaffungsprozesse skopiert
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

@@ -106,13 +106,13 @@ Phase 2 implementation runs end-to-end: hardware-to-platform-to-operations, with
 
 {{< clients >}}
 
-*Customer evidence section — to be populated by Aenix with named references where permissions allow. Anonymous proof points:*
+Public-sector references are anonymous by procurement convention rather than by NDA alone; these are live engagements:
 - A central-government IT services agency operating shared sovereign cloud for ministries on Cozystack.
 - A regional government with classified-data-residency requirements running air-gapped Cozystack deployment.
 - A quasi-public infrastructure operator (transport, energy, water) under NIS2 essential-entity classification.
 - A public-sector AI initiative for government-data analytics on private LLM infrastructure.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

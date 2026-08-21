@@ -189,7 +189,7 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 8 -->
 

@@ -102,7 +102,7 @@ Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zen
 - Eine Versicherungsgruppe mit KI-gestützter Schadenbearbeitung auf privater LLM-Infrastruktur
 - Ein Multi-Produkt-Versicherer mit Multi-BU-Trennung unter DORA-Artikel-28-Kontrollen
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

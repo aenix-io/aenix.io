@@ -146,7 +146,7 @@ Many universities have access to EuroHPC or national HPC; Cozystack works alongs
 - A multi-institution research consortium with federated Cozystack across institutions
 - A research-computing service offering Cozystack to faculty across multiple universities
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

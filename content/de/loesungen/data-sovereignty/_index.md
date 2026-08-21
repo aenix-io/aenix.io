@@ -202,7 +202,7 @@ Für die vollständige Methodik siehe **[Platform Readiness Assessment](/de/dien
 
 Wir haben Datensouveränitäts-Assessments und Platform-Engineering-Programme für Banken, Versicherer, Organisationen des öffentlichen Sektors und ICT-Drittanbieter in der gesamten EU, der DACH-Region und Zentralasien durchgeführt. Die Ergebnisse reichen von vollständigen On-Prem-Aufbauten souveräner Cloud bis zur selektiven Repatriierung regulierter Workloads.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 Benannte Fallstudien sind im Discovery-Call verfügbar, sofern die Kundenfreigaben es erlauben.

@@ -178,7 +178,7 @@ Für Souveränitäts-/DORA-/Repatriierungs-/KI-spezifische Motivationen die rele
 
 Produktive Deployments in der EU, DACH und Zentralasien. Der Kundenstamm umfasst Service Provider, regulierte Unternehmen, Telcos und KI-/GPU-Betreiber.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 6 -->
 

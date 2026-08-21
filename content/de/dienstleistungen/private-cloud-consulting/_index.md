@@ -197,7 +197,7 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 <!-- /BLOCK 8 -->

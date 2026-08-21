@@ -1,5 +1,5 @@
 ---
-title: "Cloud-Plattform für Finanzdienstleistungen — DORA-konform, souverän, KI-bereit"
+title: "Cloud-Plattform für Finanzdienstleistungen — auf DORA ausgerichtet, souverän, KI-bereit"
 description: "Banken, Versicherer, Investmentfirmen und Zahlungsinstitute in der DACH-Region stehen 2026 vor der steilsten Kombination von Drücken: DORA-Durchsetzung (in..."
 related_pages: ["/de/loesungen/dora-compliance", "/de/loesungen/data-sovereignty", "/de/loesungen/sovereign-ai"]
 language: "de"
@@ -42,7 +42,7 @@ faq:
 
 **Banken, Versicherer, Investmentfirmen und Zahlungsinstitute stehen 2026 vor der steilsten Kombination von Belastungen: DORA-Durchsetzung (in Kraft seit Januar 2025), sektorale Aufsicht zur ICT-Drittanbieter-Konzentration, KI-Workload-Ökonomie und dem Post-Broadcom-VMware-Ausstieg. Die architektonische Antwort ist nicht "eine weitere Hyperscaler-Region" — sondern eine kohärente Plattform, in der Souveränität, Audit-Bereitschaft und operative Disziplin strukturell verankert sind statt nachträglich aufgesetzt.**
 
-Aenix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), betreibt Produktions-Workloads unter DORA-konformer Governance.
+Aenix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), betreibt Produktions-Workloads unter einer auf DORA ausgerichteten Governance.
 
 > **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** als regulierte Cloud-Foundation; **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** für Schadenfall-KI / Fraud Detection / souveräne KI-Workloads. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
@@ -105,7 +105,7 @@ Das Ergebnis ist ein schriftlicher Bericht mit Ausrichtung auf Regulator-Bereits
 - Ein Zahlungsinstitut betreibt Critical-Infrastructure-Workloads über zwei EU-Mitgliedstaat-Regionen mit vollständiger Datenresidenz.
 - Ein Fintech, das über die EU und Zentralasien hinweg mit einer einheitlichen Plattform unter multi-jurisdiktionalen Souveränitätskontrollen operiert.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 ---
 

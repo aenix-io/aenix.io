@@ -212,7 +212,7 @@ For the full methodology see **[Platform Readiness Assessment](/services/platfor
 
 We have run data-sovereignty assessments and platform-engineering programs for banks, insurers, public-sector organizations, and ICT third-party providers across the EU, DACH, and Central Asia. Outcomes range from full on-prem sovereign-cloud builds to selective repatriation of regulated workloads.
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 > *— {{NAME_1}}, {{TITLE_1}}*
 
 Named case studies available on the discovery call where customer permissions allow.

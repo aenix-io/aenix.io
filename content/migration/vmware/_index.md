@@ -205,7 +205,7 @@ For VMware-specific destination guidance, see **[VMware alternative](/alternativ
 
 {{< clients >}}
 
-> {{< placeholder-quote >}}
+{{< quote-carousel >}}
 
 <!-- /BLOCK 8 -->
 
