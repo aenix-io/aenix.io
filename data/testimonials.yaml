@@ -13,6 +13,17 @@
     isolated tenants, shared GPUs, KubeVirt for legacy workloads — and it's why
     we can promise our customers infrastructure control, not just a workspace.
 
+- name: "Matthieu Robin"
+  role: "Hikube — Swiss sovereign cloud"
+  role_de: "Hikube — souveräne Schweizer Cloud"
+  photo: "/images/quotes/matthieu-robin.jpg"
+  quote: >-
+    Aenix has been a true partner in building Hikube, our Swiss sovereign
+    cloud. Their technology is rock-solid, but what really sets them apart is
+    how closely they listen and the quality of their support, always
+    responsive, always invested in our success. As Hikube has grown, Aenix has
+    grown with us. It's a partnership in the fullest sense.
+
 - name: "Qasym Majen"
   role: "Founder, QOSI — Qazaq Open Source Initiative"
   role_de: "Gründer, QOSI — Qazaq Open Source Initiative"
