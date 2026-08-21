@@ -4930,6 +4930,242 @@ a.card--hub {
 }
 .pipedrive-form iframe { border: none; border-radius: 12px; width: 100%; }
 
+/* ============================================================
+   Private webinar materials page (/web0826/)
+   ============================================================ */
+
+.wm-page {
+  background: var(--bg-main, #0b0f1a);
+  color: var(--aenix-text, #e8edf5);
+}
+.wm-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 8.5rem 0 5.5rem;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(1, 165, 255, 0.2), transparent 30rem),
+    linear-gradient(180deg, #070b15, var(--bg-main, #0b0f1a));
+}
+.wm-hero__bg,
+.wm-hero__grid,
+.wm-hero__glow { position: absolute; inset: 0; pointer-events: none; }
+.wm-hero__grid {
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+.wm-hero__glow {
+  background: radial-gradient(circle at 76% 34%, rgba(167, 139, 250, 0.16), transparent 28rem);
+}
+.wm-hero .container { position: relative; z-index: 1; }
+.wm-hero__inner { max-width: 820px; }
+.wm-hero__eyebrow,
+.wm-kicker {
+  margin: 0 0 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--aenix-primary, #01a5ff);
+}
+.wm-hero h1 {
+  margin: 0;
+  max-width: 12ch;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 0.94;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+.wm-hero__text {
+  margin: 1.5rem 0 0;
+  max-width: 68ch;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: rgba(232, 237, 245, 0.76);
+}
+.wm-body { padding: 0; }
+.wm-section {
+  position: relative;
+  padding: 4.75rem 0;
+}
+.wm-section--intro { padding-top: 5.25rem; }
+.wm-section--muted {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.01));
+}
+.wm-wrap {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+.wm-wrap h2 {
+  margin: 0 0 1rem;
+  max-width: 760px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--aenix-text, #e8edf5);
+}
+.wm-wrap p {
+  margin: 0 0 1rem;
+  max-width: 70ch;
+  color: var(--aenix-text-muted, #9aa8bd);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.wm-lead {
+  font-size: 1.1rem !important;
+  color: rgba(232, 237, 245, 0.78) !important;
+}
+.wm-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  margin-top: 2rem;
+}
+.wm-two-col {
+  display: grid;
+  grid-template-columns: 0.85fr 1.4fr;
+  gap: 3rem;
+  align-items: center;
+}
+.wm-video {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: #050812;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.32);
+}
+.wm-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.wm-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.wm-card {
+  display: flex;
+  min-height: 260px;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(1, 165, 255, 0.11), transparent 16rem),
+    rgba(255, 255, 255, 0.035);
+  color: inherit;
+  text-decoration: none;
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+.wm-card:hover,
+.wm-card:focus-visible {
+  transform: translateY(-2px);
+  border-color: rgba(1, 165, 255, 0.42);
+  background-color: rgba(255, 255, 255, 0.055);
+}
+.wm-card__type {
+  width: fit-content;
+  margin-bottom: 1.15rem;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid rgba(1, 165, 255, 0.26);
+  border-radius: 999px;
+  background: rgba(1, 165, 255, 0.1);
+  color: var(--aenix-primary, #01a5ff);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+.wm-card h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  line-height: 1.2;
+  color: #fff;
+}
+.wm-card p { margin-bottom: 1.5rem; }
+.wm-card__link {
+  margin-top: auto;
+  color: var(--aenix-primary, #01a5ff);
+  font-weight: 700;
+}
+.wm-audit {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 3rem;
+  align-items: start;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(1, 165, 255, 0.16), transparent 28rem),
+    rgba(255, 255, 255, 0.035);
+}
+.wm-checks {
+  display: grid;
+  gap: 0.85rem;
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+.wm-checks li {
+  position: relative;
+  padding-left: 1.75rem;
+  color: var(--aenix-text-muted, #9aa8bd);
+  line-height: 1.6;
+}
+.wm-checks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 999px;
+  background: var(--aenix-primary, #01a5ff);
+  box-shadow: 0 0 0 4px rgba(1, 165, 255, 0.12);
+}
+.wm-speaker {
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.16);
+}
+.wm-speaker picture,
+.wm-speaker img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.wm-speaker h3 {
+  margin: 1rem 0 0.25rem;
+  color: #fff;
+  font-size: 1.25rem;
+}
+.wm-speaker p {
+  margin-bottom: 0.65rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 860px) {
+  .wm-hero { padding: 7rem 0 4rem; }
+  .wm-section { padding: 3.5rem 0; }
+  .wm-two-col,
+  .wm-audit,
+  .wm-cards { grid-template-columns: 1fr; }
+  .wm-audit { padding: 1.25rem; }
+  .wm-card { min-height: 0; }
+}
+
 /* ==========================================================================
    Workshop / event-landing campaign  (/workshops/, /ru/workshops/)
    Aenix campaign page for the Cozystack VMware-migration workshops.
