@@ -10,6 +10,7 @@ date: 2026-08-21
 lastmod: 2026-08-21
 weight: 30
 robots: "index,follow"
+images: ["img/og/og-tco-methodology.png"]
 dataset_version: "0.2.0"
 related_pages:
   - /alternatives/vmware-alternative/

@@ -223,8 +223,7 @@ Cozystack was built for service providers first. The same model works for any or
 
 ## Who runs Cozystack in production
 
-{{LOGOS}}
-*(logo strip — Aenix team adds: Hidora/Hikube + N additional customers)*
+{{< clients >}}
 
 Cozystack is in production with:
 
@@ -234,11 +233,7 @@ Cozystack is in production with:
 - **A Czech enterprise hosting provider** — VMware migration in progress, Cozystack as the new foundation.
 - **A Polish AI/GPU operator** — Blackwell-class GPU platform for inference customers.
 
-> {{QUOTE_1}}
-> *(— CTO, customer name TBC by Aenix team)*
-
-> {{QUOTE_2}}
-> *(— Infrastructure lead, customer name TBC)*
+{{< quote-carousel >}}
 
 ---
 
