@@ -1,6 +1,6 @@
 ---
 title: "Case studies"
-description: "Aenix case studies: five detailed deployments with numbers — GPU repatriation, Proxmox consolidation, a sovereign public cloud, multi-cloud GPU bursting, and an AI platform shipped as an installer."
+description: "Five Aenix deployments written up with numbers: GPU repatriation, Proxmox consolidation, a sovereign public cloud, GPU bursting, an AI platform as installer."
 hero_subtitle: "Real Aenix Platform deployments across hosting, AI, and academia"
 language: "en"
 ---

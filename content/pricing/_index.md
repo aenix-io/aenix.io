@@ -1,6 +1,6 @@
 ---
 title: "Ænix Platform pricing"
-description: "Ænix Platform pricing: a published price list for hosting providers and product teams from $1,250/month per 10 nodes. Enterprise programmes are scoped per RFP. Cozystack stays open source."
+description: "Ænix Platform pricing: published price list for providers from $1,250/month per 10 nodes; enterprise programmes quoted per RFP. Cozystack stays open source."
 hero_subtitle: "Published price list for providers from $1,250/month; enterprise programmes scoped per RFP"
 language: "en"
 ---

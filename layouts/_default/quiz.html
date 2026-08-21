@@ -20,7 +20,13 @@
 {{ end }}
 
 {{ define "main" }}
-{{ $app := .Params.quiz_app | default (printf "/quiz-app/%s/" (path.Base .File.Dir)) }}
+{{/* Generated section list pages have no backing file, hence the guard. */}}
+{{ $app := .Params.quiz_app }}
+{{ if not $app }}{{ with .File }}{{ $app = printf "/quiz-app/%s/" (path.Base .Dir) }}{{ end }}{{ end }}
+{{ if $app }}
 <iframe class="quiz-frame" src="{{ $app }}" title="{{ .Title }}"
         loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{ else }}
+{{ .Content }}
+{{ end }}
 {{ end }}
