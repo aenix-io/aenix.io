@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article class="wm-page">
+  <section class="wm-hero">
+    <div class="wm-hero__bg" aria-hidden="true">
+      <div class="wm-hero__grid"></div>
+      <div class="wm-hero__glow"></div>
+    </div>
+    <div class="container">
+      <div class="wm-hero__inner">
+        <p class="wm-hero__eyebrow">Private attendee resources · August 2026 webinar</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="wm-hero__text">{{ . }}</p>{{ end }}
+      </div>
+    </div>
+  </section>
+  <div class="wm-body">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}
