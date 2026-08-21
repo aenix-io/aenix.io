@@ -130,6 +130,18 @@ Universities don't refresh infrastructure on commercial-vendor schedules. Open-s
 ### EuroHPC and national HPC facilities adjacent
 Many universities have access to EuroHPC or national HPC; Cozystack works alongside these for the workload portfolio that doesn't need full HPC-scale.
 
+### Slurm is not the enemy, and we are not replacing it
+Every research-computing conversation reaches this point, so it belongs here rather than in a footnote. Slurm is the right scheduler for tightly-coupled batch on a homogeneous cluster — MPI jobs, a fair-share queue, months of accounting history, and a user base that already knows `sbatch`. A Kubernetes platform does not schedule that class of work better, and a migration that takes it away buys resentment.
+
+What the platform is for is everything the batch cluster is bad at: long-running interactive notebooks, per-group JupyterHub, web-facing research services and portals, databases behind those services, teaching environments that appear for a semester and vanish, VMs for the software a research group cannot containerize, and shared GPUs for inference rather than queued training.
+
+Two patterns work in practice, and both are ordinary:
+
+- **Side by side.** Slurm keeps the batch partition; the platform takes the services and interactive work, with the same storage mounted on both sides so a dataset does not need copying to be used from either.
+- **Slurm inside a tenant.** A Slurm cluster runs as a workload on the platform — controller and nodes as VMs or containers in one tenant — so a group gets its own queue without a second physical cluster and without central IT operating it by hand.
+
+Multi-tenancy is what makes either honest: per-group quotas on CPU, memory, storage and GPU, isolated networks, and usage attributable to a grant, which is the number a research-computing director is actually asked for.
+
 </div>
 </div>
 

@@ -100,6 +100,14 @@ Aenix builds platforms for manufacturing organizations across the EU, DACH, and 
 - Multi-tenant for cross-BU and joint-venture separation
 - AI infrastructure for quality control and predictive maintenance
 
+### Where the platform sits in the Purdue model
+
+The platform lives at Levels 3 and 3.5 — site operations and the DMZ — and does not reach down into Levels 0 to 2. Controllers, PLCs, SCADA and the safety systems stay exactly where they are, on their own network, under their own change control. What runs on the platform is the layer above: MES and historians, OPC-UA collectors and unified-namespace brokers, quality-inspection inference, the data pipeline out to the corporate level, and the VM-packaged industrial applications the vendor supports on one specific OS.
+
+The IEC 62443 framing follows from that placement: the platform is one or more zones with defined conduits into the OT network, so segmentation is a design property rather than a firewall exception list. Cilium network policy defines the conduits, Tenant CRD boundaries separate a line, a site or a joint-venture partner, and the whole thing runs air-gapped where the site security concept requires it. Component-level certification for the industrial devices remains the device vendors' obligation — that is not something an infrastructure platform can grant.
+
+**What the floor does when the uplink dies.** This is the question that decides the architecture, so the answer should be plain: a site cluster keeps running. Control never depended on the platform in the first place, because it lives below it. The site's own workloads — the historian, the local inference for inspection, MES functions running on site — keep serving from local storage, with their state replicated inside the site rather than to headquarters. What stops is what should stop: replication upward, central dashboards refreshing, cross-site aggregation. When the link returns, buffered data drains and the site resynchronizes. Production does not wait on a WAN circuit or on a control plane in another country, which is also why a hyperscaler edge service is a poor fit for a factory.
+
 ---
 
 ## What runs on Cozystack in manufacturing

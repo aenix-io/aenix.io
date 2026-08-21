@@ -110,6 +110,16 @@ Health data is the highest-friction data class in European regulation, and two f
 
 **Sovereign AI on patient data.** Medical AI is where sovereignty and economics collide: imaging and clinical-language models want GPUs, but the data cannot leave the perimeter. Running GPU inference and training inside the same platform as the data — rather than shipping records to an external AI API — keeps special-category data in-jurisdiction while still delivering modern model performance.
 
+### What this looks like for the systems you actually run
+
+Healthcare infrastructure is not generic infrastructure, and the platform has to meet the estate where it is.
+
+- **PACS and the imaging archive.** A PACS is a storage problem wearing a clinical badge: large immutable objects, a long legal retention period, latency that radiologists notice, and a DICOM interface everything speaks. Cozystack gives it S3-compatible object storage for the archive tier with LINSTOR/DRBD block storage for the online tier, both inside the same cluster and the same encryption boundary as the rest of the estate — so imaging is not a separate silo with its own backup story. Retention and immutability are set per bucket; the object store is not shared with a public cloud tenant you cannot name.
+- **The DICOM and HL7/FHIR path.** Modality gateways, DICOM routers, integration engines and FHIR servers are mostly long-lived stateful services, often vendor-supplied as an appliance or a VM image with a support matrix that names an operating system. They run as KubeVirt VMs on the same platform as the containerized services, on the same network, with the same backup class — no second virtualization stack to license and operate alongside Kubernetes.
+- **Vendor-locked clinical applications.** Every hospital has a handful of applications the vendor will only support on a specific OS and a specific hypervisor generation. These are the workloads that block a container-only platform. They stay as VMs, indefinitely, and stop being the reason a modernization stalls.
+- **Imaging AI next to the imaging data.** Because inference runs as a tenant workload on the same cluster as the archive, a segmentation or triage model reads from local object storage rather than a copy shipped somewhere else — the GPU is inside the perimeter that the DPIA already covers.
+
+
 ---
 
 <div class="band-fullbleed band-fullbleed--tint">

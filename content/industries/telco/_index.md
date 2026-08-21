@@ -95,6 +95,17 @@ Aenix builds platforms for telecom operators across the EU, DACH, and Central As
 - **Customer-facing offers** — many telcos resell platform capability to enterprise customers; multi-tenant customer-facing model is structural.
 - **Long depreciation cycles** — hardware refresh cycles longer than typical enterprise; platform must work on multiple hardware generations.
 
+### The dataplane question
+
+Everything above is true of any distributed estate. What makes telco different is that a share of the workload does not tolerate a generic Kubernetes dataplane, and a platform that cannot say how it handles that is not a telco platform.
+
+- **SR-IOV and device passthrough.** Packet-processing functions want a VF bound directly to the workload, not a veth pair. Cozystack supports SR-IOV virtual functions and PCI passthrough into both KubeVirt VMs and containers, so a VNF that was certified on a VF keeps its VF. Where a function needs a whole NIC or an accelerator, it gets one.
+- **DPDK and userspace networking.** Functions built on DPDK bypass the kernel network stack entirely; they need hugepages, CPU pinning, isolated cores and a NUMA-aware placement, not a best-effort scheduler slot. Those are node-level and pod-level settings on the platform, applied per workload class rather than cluster-wide, so a DPDK function and an ordinary microservice share a cluster without either compromising.
+- **CNFs and the VNFs that are not ready to become CNFs.** Vendor network functions arrive as VMs with a support matrix, and the transition to containers happens on the vendor's schedule, not yours. Both run side by side on one platform: KubeVirt for the VM-packaged functions, containers for the cloud-native ones, one API, one lifecycle, one observability stack.
+- **Cilium and eBPF for everything else.** Management, OSS/BSS, customer-facing services and MEC applications run on the eBPF dataplane, with network policy and observability that do not require a sidecar per pod.
+
+The honest boundary: this is a platform for the estate around the network — MEC, edge applications, OSS/BSS, customer-facing cloud, AI inference, and the VNFs that live in a data centre. It is not a claim to replace a purpose-built packet core.
+
 ---
 
 ## How Aenix engages with telecom operators
