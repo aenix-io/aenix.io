@@ -5,11 +5,11 @@ hero_subtitle: "Real Aenix Platform deployments across hosting, AI, and academia
 language: "en"
 ---
 
-**Five deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, public references include regional hosting providers running Ænix Platform Provider Edition, platform R&D for ecosystem vendors, and tier-1 European bank engagements still under NDA.**
+**Nine deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, public references include regional hosting providers running Ænix Platform Provider Edition, platform R&D for ecosystem vendors, and tier-1 European bank engagements still under NDA.**
 
 ---
 
-## The five detailed cases
+## The detailed cases
 
 ### [8xH100 inference on your own bare metal](/case-studies/bare-metal-gpu-inference/)
 
@@ -27,6 +27,22 @@ A Swiss provider replaced a hypervisor stack with a full commercial public cloud
 
 A European academic-computing SaaS left a hyperscaler for owned bare metal without downtime for thousands of active users, kept one Cluster API across bare metal, hyperscaler and a sovereign OpenStack cloud, and cut GPU cost about fivefold.
 
+### [One portal over OpenNebula, VMware and Kubernetes](/case-studies/unified-cloud-portal-financial-group/)
+
+A financial group in Asia put one self-service catalogue over three infrastructures it kept running underneath — OpenNebula, VMware and Kubernetes-as-a-Service. Four months to production, and the provisioning that used to arrive as tickets became automation.
+
+### [A private cloud inside a bank](/case-studies/private-cloud-in-a-bank/)
+
+Internal teams get environments and managed services on demand, inside the bank, with per-tenant RBAC, self-managed firewall and load-balancer rules, backup policy and threshold alerting. Three months from the start of integration, on the bank's own Keycloak and Ceph.
+
+### [An internal data and AI platform, GPUs included](/case-studies/internal-data-and-ai-platform/)
+
+One platform for analytics, data lakes and model training as well as AI/ML services: GPU pools with time-slicing and per-tenant quotas, a single scheduler for pods and VMs, and usage metrics precise enough to charge teams. In rollout, with the GPU layer already complete.
+
+### [When the return packet takes the wrong door](/case-studies/metallb-evpn-address-mobility/)
+
+A hosting provider's public addresses were pinned to a rack and half the traffic died silently. A controller turned six manual commands per subnet per node into declared state and made every node a VTEP in the provider's EVPN fabric, so the address follows the workload.
+
 ### [Cozystack as a universal installer](/case-studies/ai-universal-installer/)
 
 A telecom operator and integrator built a corporate AI platform — GPU scheduling, RAG on Qdrant, NVIDIA Dynamo inference, geo-distributed GPU — then shipped the same distribution into a state-owned end customer's own environment.
@@ -42,7 +58,7 @@ A telecom operator and integrator built a corporate AI platform — GPU scheduli
 
 - **Public production customers (subject to permission per use):** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform Provider Edition)
 - **Platform R&D engagements:** CSI driver development, block storage research, virtualization platform prototypes — for ecosystem vendors
-- **Detailed written-up deployments:** five, anonymized by contract, with architecture and figures published in full (above)
+- **Detailed written-up deployments:** nine, anonymized by contract, with architecture and figures published in full (above)
 - **Tier-1 European banks:** multi-million-euro Ænix Platform Enterprise Edition engagements (NDA-protected; naming permitted from mid-2027)
 - **Engagement sizes:** from a $1,250/month Provider Edition support tier through to multi-year Public Cloud and Enterprise builds quoted per RFP
 

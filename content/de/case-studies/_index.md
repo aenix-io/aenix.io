@@ -5,11 +5,11 @@ hero_subtitle: "Echte Ænix-Platform-Deployments aus Hosting, KI und Forschung"
 language: "de"
 ---
 
-**Fünf Deployments, unten ausführlich dokumentiert: wie das Estate vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der Provider Edition, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
+**Neun Deployments, unten ausführlich dokumentiert: wie das Estate vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der Provider Edition, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
 
 ---
 
-## Die fünf ausführlichen Cases
+## Die ausführlichen Cases
 
 ### [8xH100-Inferenz auf eigenem Bare Metal](/de/case-studies/bare-metal-gpu-inference/)
 
@@ -27,6 +27,22 @@ Ein Schweizer Anbieter ersetzte seinen Hypervisor-Stack durch eine vollwertige k
 
 Ein europäisches SaaS für akademisches Rechnen verließ einen Hyperscaler ohne Downtime für Tausende aktive Nutzer, behielt eine Cluster-API über Bare Metal, Hyperscaler und eine souveräne OpenStack-Cloud und senkte die GPU-Kosten um etwa das Fünffache.
 
+### [Ein Portal über OpenNebula, VMware und Kubernetes](/de/case-studies/unified-cloud-portal-financial-group/)
+
+Eine Finanzgruppe in Asien legte einen Self-Service-Katalog über drei Infrastrukturen, die darunter weiterlaufen — OpenNebula, VMware und Kubernetes-as-a-Service. Vier Monate bis Produktion, und aus Provisioning-Tickets wurde Automatisierung.
+
+### [Eine Private Cloud in einer Bank](/de/case-studies/private-cloud-in-a-bank/)
+
+Interne Teams bekommen Umgebungen und Managed Services auf Abruf, im Haus, mit RBAC je Tenant, selbst verwalteten Firewall- und Load-Balancer-Regeln, Backup-Policy und Schwellwert-Alarmen. Drei Monate ab Integrationsbeginn, auf dem eigenen Keycloak und Ceph der Bank.
+
+### [Eine interne Daten- und KI-Plattform, GPUs inklusive](/de/case-studies/internal-data-and-ai-platform/)
+
+Eine Plattform für Analytik, Data Lakes und Modelltraining ebenso wie für KI/ML-Services: GPU-Pools mit Time-Slicing und Quotas je Tenant, ein Scheduler für Pods und VMs, Verbrauchsmetriken fein genug für interne Verrechnung. In Einführung, die GPU-Schicht ist fertig.
+
+### [Wenn das Antwortpaket die falsche Tür nimmt](/de/case-studies/metallb-evpn-address-mobility/)
+
+Beim Hosting-Anbieter hingen öffentliche Adressen am Rack, die Hälfte des Verkehrs starb still. Ein Controller machte aus sechs Handkommandos pro Subnetz pro Node deklarierten Zustand und jeden Node zum VTEP in der EVPN-Fabric — die Adresse folgt dem Workload.
+
 ### [Cozystack als universeller Installer](/de/case-studies/ai-universal-installer/)
 
 Ein Telekom-Betreiber und Systemintegrator baute eine Unternehmens-KI-Plattform — GPU-Scheduling, RAG auf Qdrant, NVIDIA-Dynamo-Inferenz, geo-verteilte GPU — und lieferte dieselbe Distribution in die Umgebung eines staatlichen Endkunden aus.
@@ -42,7 +58,7 @@ Ein Telekom-Betreiber und Systemintegrator baute eine Unternehmens-KI-Plattform 
 
 - **Öffentliche Produktivkunden:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform Provider Edition)
 - **Plattform-R&D-Engagements:** CSI-Driver-Entwicklung, Block-Storage-Forschung, Virtualisierungs-Plattform-Prototypen
-- **Ausführlich dokumentierte Deployments:** fünf, vertraglich anonymisiert, mit vollständiger Architektur und Zahlen (oben)
+- **Ausführlich dokumentierte Deployments:** neun, vertraglich anonymisiert, mit vollständiger Architektur und Zahlen (oben)
 - **Tier-1-europäische-Banken:** Mehr-Millionen-Euro Ænix Platform Enterprise Edition Engagements (NDA-geschützt; Namensnennung ab Mitte 2027)
 - **Engagement-Größen:** 1.250 USD/Monat (Provider Edition Support-Tier) bis zu mehrjährigen Programmen nach RFP
 

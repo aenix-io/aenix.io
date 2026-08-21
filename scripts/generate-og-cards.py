@@ -3,14 +3,31 @@
 Brand: deep teal bg #0F4C5C, orange accent #E36414, cream text #F8F4F0.
 Run: python3 scripts/generate-og-cards.py  -> writes static/img/og/*.png
 """
+import glob
 import os
 from PIL import Image, ImageDraw, ImageFont
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "static", "img", "og")
 os.makedirs(OUT, exist_ok=True)
 
-FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-FONT_R = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+def _font(*candidates):
+    """First font that exists — the script runs on Linux CI and on macOS laptops."""
+    for path in candidates:
+        if os.path.exists(path):
+            return path
+    raise SystemExit("no usable font found; tried: " + ", ".join(candidates))
+
+
+_LIBREOFFICE = "/opt/homebrew/Caskroom/libreoffice/*/LibreOffice.app/Contents/Resources/fonts/truetype"
+
+FONT = _font(
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    *glob.glob(f"{_LIBREOFFICE}/DejaVuSans-Bold.ttf"),
+)
+FONT_R = _font(
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    *glob.glob(f"{_LIBREOFFICE}/DejaVuSans.ttf"),
+)
 BG = (15, 76, 92)        # #0F4C5C
 ACCENT = (227, 100, 20)  # #E36414
 CREAM = (248, 244, 240)  # #F8F4F0
@@ -34,6 +51,10 @@ CARDS = [
     # Customer case studies (shared EN + DE)
     ("og-case-bare-metal-gpu-inference", "CUSTOMER CASE · AI INFERENCE", "GPU inference on your own bare metal"),
     ("og-case-bare-metal-kubernetes-messaging-saas", "CUSTOMER CASE · SAAS PLATFORM", "Bare-metal Kubernetes for a SaaS"),
+    ("og-case-unified-cloud-portal-financial-group", "CUSTOMER CASE · SELF-SERVICE PORTAL", "One portal over three infrastructures"),
+    ("og-case-private-cloud-in-a-bank", "CUSTOMER CASE · BANKING", "A private cloud inside a bank"),
+    ("og-case-internal-data-and-ai-platform", "CUSTOMER CASE · DATA & AI", "An internal data and AI platform"),
+    ("og-case-metallb-evpn-address-mobility", "CUSTOMER CASE · NETWORKING", "When the return packet takes the wrong door"),
     # DE
     ("og-fuer-de", "NACH ROLLE", "Ihr Einstieg zu Aenix"),
     ("og-leiter-infrastruktur-de", "FÜR INFRASTRUKTURLEITER", "VMware ablösen, zu Ihren Bedingungen"),
