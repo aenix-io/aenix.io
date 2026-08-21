@@ -1,5 +1,5 @@
 ---
-title: "SRE Consulting — Site-Reliability-Praktiken für Produktion at scale"
+title: "SRE Consulting — Site-Reliability-Praktiken für Produktion im großen Maßstab"
 description: "Site Reliability Engineering als Disziplin wendet Software-Engineering auf Operations an. Das Aenix-SRE-Engagement deckt SLOs, Error-Budgets,..."
 related_pages:
   - /de/dienstleistungen/devops-consulting
@@ -10,13 +10,13 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Site Reliability Engineering (SRE) wendet Software-Engineering-Methoden auf den IT-Betrieb an, um Produktion zuverlässig at scale zu halten. Das SRE-Consulting von Aenix richtet sich an Plattform- und Operations-Teams und deckt SLO-Design, Error-Budget-Frameworks, Incident-Response mit blameless Post-mortems, Observability-Praktiken sowie Capacity-Planning ab. Als Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) baut Aenix diese Reliability-Praxis direkt in die Plattform-Foundation ein statt sie nachträglich aufzusetzen: Cozystack vereint VMs und Container über eine Kubernetes-API mit Cilium-Networking und LINSTOR-Storage. Das Engagement ist mit jeder Ænix Platform Edition koppelbar oder eigenständig als reines SRE-Consulting buchbar.**
+  **Site Reliability Engineering (SRE) wendet Software-Engineering-Methoden auf den IT-Betrieb an, um Produktion zuverlässig im großen Maßstab zu halten. Das SRE-Consulting von Aenix richtet sich an Plattform- und Operations-Teams und deckt SLO-Design, Error-Budget-Frameworks, Incident-Response mit blameless Post-mortems, Observability-Praktiken sowie Capacity-Planning ab. Als Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) baut Aenix diese Reliability-Praxis direkt in die Plattform-Foundation ein statt sie nachträglich aufzusetzen: Cozystack vereint VMs und Container über eine Kubernetes-API mit Cilium-Networking und LINSTOR-Storage. Das Engagement ist mit jeder Ænix Platform Edition koppelbar oder eigenständig als reines SRE-Consulting buchbar.**
 
 quick_facts:
   - label: "Was es ist"
     value: "SRE-Consulting-Engagement, das Reliability-Praktiken (SLOs, Error-Budgets, Incident-Response) in die produktive Plattform-Foundation einbaut"
   - label: "Zielgruppe"
-    value: "Plattform- und Operations-Teams, die Produktion zuverlässig at scale betreiben müssen"
+    value: "Plattform- und Operations-Teams, die Produktion zuverlässig im großen Maßstab betreiben müssen"
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
@@ -41,7 +41,7 @@ faq:
     a: "Ein Error-Budget definiert, wie viel Unzuverlässigkeit ein Service haben darf, bevor SLOs verletzt werden. Die Budget-Konsumtion treibt die Priorisierung: Ist das Budget aufgebraucht, hat Stabilität Vorrang vor neuen Features. So wird die Balance zwischen Tempo und Zuverlässigkeit datenbasiert statt aus dem Bauch heraus entschieden."
 ---
 
-**Site Reliability Engineering als Disziplin wendet Software-Engineering auf Operations an. Das Aenix-SRE-Engagement deckt SLOs, Error-Budgets, Incident-Response und die operativen Praktiken ab, die Produktion zuverlässig at scale halten — eingebaut in die Plattform-Foundation, nicht aufgesetzt.**
+**Site Reliability Engineering als Disziplin wendet Software-Engineering auf Operations an. Das Aenix-SRE-Engagement deckt SLOs, Error-Budgets, Incident-Response und die operativen Praktiken ab, die Produktion zuverlässig im großen Maßstab halten — eingebaut in die Plattform-Foundation, nicht aufgesetzt.**
 
 > **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — SRE-Praxis verbunden mit der produktiven Plattform, die Sie betreiben. Eigenständiges SRE-Consulting auch verfügbar.
 
@@ -69,7 +69,7 @@ faq:
 <div class="diagram__conn">eingebaut in</div>
 <div class="diagram__node diagram__node--brand"><b>Cozystack Plattform-Foundation</b></div>
 <div class="diagram__conn">hält</div>
-<div class="diagram__node"><b>Produktion zuverlässig at scale</b></div>
+<div class="diagram__node"><b>Produktion zuverlässig im großen Maßstab</b></div>
 </div>
 </div>
 

@@ -101,7 +101,7 @@ Vorvalidiert gegen DORA / NIS2 / ISO 27001 / SOC 2 — relevant wenn der Cloud-B
 
 ## Pricing
 
-Mehr-Millionen-Euro mehrjährige Programme. Discovery-Call zur Scope-Definition.
+Mehrjährige Programme, Angebot nach RFP. Discovery-Call zur Scope-Definition.
 
 [Public Cloud Edition diskutieren →](/de/kontakt/?edition=public-cloud)
 
@@ -121,7 +121,7 @@ Mehr-Millionen-Euro mehrjährige Programme. Discovery-Call zur Scope-Definition.
 
 ## Kunden-Evidenz
 
-Public Cloud Edition Deployments sind derzeit NDA-geschützt. Tier-1-europäische-Banken-Engagements (mit eigener interner Cloud at scale) und regionale Telco-souveräne-Cloud-Produkt-Launches sind in Produktion. **Erste namentlich genannte Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
+Public Cloud Edition Deployments sind derzeit NDA-geschützt. Tier-1-europäische-Banken-Engagements (mit eigener interner Cloud im großen Maßstab) und regionale Telco-souveräne-Cloud-Produkt-Launches sind in Produktion. **Erste namentlich genannte Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
 ### Wie unterscheidet sich Public Cloud Edition vom Selbstbetrieb von Open-Source-Cozystack?
 
 Cozystack ist eine saubere Kubernetes-native Multi-Tenant-Cloud-Plattform — aber endet vor der Operator-Surface, die ein echtes Cloud-Geschäft braucht. Public Cloud Edition ergänzt die Multi-Region-Control-Plane, Billing-Backend + -Frontend, Payment-Integrationen, kundenseitige Portal-Anpassung, produktisierten Installer, Enterprise-SLA und dedizierten Support.

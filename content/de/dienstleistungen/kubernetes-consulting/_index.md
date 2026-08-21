@@ -18,7 +18,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Service Provider, Banken und KI-Operatoren, die Produktions-Kubernetes at scale zuverlässig betreiben müssen"
+    value: "Service Provider, Banken und KI-Operatoren, die Produktions-Kubernetes im großen Maßstab zuverlässig betreiben müssen"
   - label: "Schwerpunkte"
     value: "Multi-Tenancy (Tenant-CRD, Namespace-Strategie, RBAC, Quotas), Networking (Cilium/eBPF), Storage (LINSTOR/DRBD), Observability, GitOps-Disziplin"
   - label: "Plattform-Grundlage"
@@ -42,7 +42,7 @@ faq:
 
 <!-- BLOCK 1 -->
 
-**Die meisten Kubernetes-Consulting-Engagements behandeln Kubernetes als generische Compute-Plattform. Die Realität ist, dass Produktions-Kubernetes aus spezifischen Gründen schwierig ist: Multi-Tenancy, Observability, Identität, Networking, Storage-Auswahl, GitOps-Disziplin und die operativen Praktiken, die einen Cluster zuverlässig at scale halten. Generisches Consulting, das diese Spezifika nicht adressiert, erzeugt einen Cluster, der "funktioniert", aber nicht gut läuft.**
+**Die meisten Kubernetes-Consulting-Engagements behandeln Kubernetes als generische Compute-Plattform. Die Realität ist, dass Produktions-Kubernetes aus spezifischen Gründen schwierig ist: Multi-Tenancy, Observability, Identität, Networking, Storage-Auswahl, GitOps-Disziplin und die operativen Praktiken, die einen Cluster zuverlässig im großen Maßstab halten. Generisches Consulting, das diese Spezifika nicht adressiert, erzeugt einen Cluster, der "funktioniert", aber nicht gut läuft.**
 
 Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Multi-Tenant-Kubernetes-nativen Plattform, die wir in Produktion mit Service Providern, Banken und KI-Operatoren betreiben. Unsere Kubernetes-Consulting-Engagements bringen dieselben Engineers in Ihr Team.
 
@@ -131,7 +131,7 @@ Sicherheits-Posture (PSPs / Pod Security Standards, Network Policies, Secrets-Ma
 "Wir sind ein OpenShift-Shop" — selbst wenn OpenShift für einen Multi-Tenant-Cloud-Use-Case Komplexität hinzufügt, in dem Cozystack besser passen würde. Die Distributions-Auswahl ist strukturell.
 
 **Multi-Tenancy aufgesetzt statt eingebaut**
-Cluster startete als Single-Team; Multi-Tenancy später über Namespaces und Konvention hinzugefügt. Kippt at scale oder unter Regulator-Audit.
+Cluster startete als Single-Team; Multi-Tenancy später über Namespaces und Konvention hinzugefügt. Kippt im großen Maßstab oder unter Regulator-Audit.
 
 **Observability nicht investiert**
 Prometheus ohne Retention-Pläne deployt, Grafana-Dashboards aus Blog-Posts kopiert. Kippt im Produktions-Maßstab.

@@ -32,7 +32,7 @@ faq:
   - q: "Was bedeutet es, eine Private Cloud aufzubauen?"
     a: "Eine eigene Cloud-Plattform für VMs und Container auf eigener oder gemieteter Hardware zu betreiben — mit Self-Service, Mandantenfähigkeit und Automatisierung wie bei einer Public Cloud, aber unter voller Daten- und Kostenkontrolle. Aenix realisiert das auf Cozystack, einem CNCF-Open-Source-Projekt."
   - q: "Für wen lohnt sich der Aufbau einer Private Cloud?"
-    a: "Für Teams, die eine Plattform-Engineering-Funktion haben oder aufbauen und einen konkreten Trigger besitzen: VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads at scale oder eine FinOps-Klippe. Die Ökonomie muss dedizierte Infrastruktur tragen — nachhaltige Workloads, regulierte Daten oder GPU-Lasten."
+    a: "Für Teams, die eine Plattform-Engineering-Funktion haben oder aufbauen und einen konkreten Trigger besitzen: VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads im großen Maßstab oder eine FinOps-Klippe. Die Ökonomie muss dedizierte Infrastruktur tragen — nachhaltige Workloads, regulierte Daten oder GPU-Lasten."
   - q: "Welche Technologie steckt hinter der Aenix Private Cloud?"
     a: "Cozystack (Apache 2.0). KubeVirt vereint VMs und Container auf einer Kubernetes-API, Cilium (eBPF) liefert das Netzwerk, LINSTOR/DRBD den replizierten Storage und das Tenant-CRD die Mandantenfähigkeit. Alles auf Standard-Kubernetes, ohne proprietären Lock-in."
   - q: "Wie läuft ein Engagement mit Aenix ab?"
@@ -62,7 +62,7 @@ Die Arbeit passt, wenn:
 
 - Sie haben oder bauen eine Plattform-Engineering-Funktion (das ist eine operative Verpflichtung, kein einmaliges Projekt).
 - Sie haben einen spezifischen Trigger — VMware-Ausstieg, Souveränitätsmandat, KI-Workloads, FinOps-Klippe.
-- Die Ökonomie unterstützt dedizierte Infrastruktur (nachhaltige Workloads, regulierte Daten oder KI/GPU at scale).
+- Die Ökonomie unterstützt dedizierte Infrastruktur (nachhaltige Workloads, regulierte Daten oder KI/GPU im großen Maßstab).
 - Das Kunden-Team kann den Betrieb aufrechterhalten, nachdem Aenix geht (oder hat sich für Managed-Services entschieden).
 
 Wenn Sie bei einem dieser Punkte unsicher sind, klärt die Assessment-Phase dies, bevor der Aufbau beginnt.

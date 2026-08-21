@@ -1,57 +1,163 @@
+{{- /*
+  Site footer. Link targets differ per locale — the DE locale uses German
+  slugs (/de/loesungen/, /de/dienstleistungen/ …), so an English footer would
+  drop a German visitor onto English pages. Both label and href come from the
+  same per-language dict below; add a locale by adding a branch.
+*/ -}}
+{{- /* The site is single-language in Hugo terms; the DE locale is content
+     under /de/ flagged with language: "de" in frontmatter. */ -}}
+{{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
+{{- $f := dict
+  "tagline"    "Turnkey cloud platform.<br>Built on Cozystack."
+  "product"    "Product"
+  "platform"   "Ænix Platform"
+  "cozystack"  "Cozystack"
+  "pricing"    "Pricing"
+  "pricingUrl" "/pricing/"
+  "platformUrl" "/products/aenix-platform/"
+  "cozystackUrl" "/products/cozystack/"
+  "solutions"  "Solutions"
+  "allSolutions" "All solutions"
+  "solutionsUrl" "/solutions/"
+  "doraUrl"    "/solutions/dora-compliance/"
+  "nis2Url"    "/solutions/nis2-compliance/"
+  "aiUrl"      "/solutions/sovereign-ai/"
+  "ai"         "Sovereign AI"
+  "engagement" "Engagement"
+  "services"   "Services"
+  "servicesUrl" "/services/"
+  "industries" "Industries"
+  "industriesUrl" "/industries/"
+  "alternatives" "Alternatives"
+  "alternativesUrl" "/alternatives/"
+  "migration"  "Migration"
+  "migrationUrl" "/migration/"
+  "resources"  "Resources"
+  "leadMagnets" "Lead magnets"
+  "resourcesUrl" "/resources/"
+  "blog"       "Blog"
+  "blogUrl"    "/blog/"
+  "course"     "Course"
+  "courseUrl"  "/kubernetes-deep-dive/"
+  "oss"        "OSS report"
+  "company"    "Company"
+  "about"      "About"
+  "aboutUrl"   "/about/"
+  "partners"   "Partners"
+  "partnersUrl" "/partners/"
+  "conferences" "Conferences"
+  "conferencesUrl" "/conferences/"
+  "cases"      "Case studies"
+  "casesUrl"   "/case-studies/"
+  "contact"    "Contact"
+  "contactUrl" "/contact/"
+  "community"  "Community"
+  "calculators" "TCO calculators"
+  "calculatorsUrl" "/roi-calculator/"
+  "legal"      "Privacy policy"
+  "legalUrl"   "/privacy-policy/"
+  "imprint"    ""
+  "imprintUrl" ""
+  "cookies"    "Cookie settings"
+  "rights"     "All Rights Reserved"
+-}}
+{{- if $de -}}
+{{- $f = merge $f (dict
+  "tagline"    "Schlüsselfertige Cloud-Plattform.<br>Auf Basis von Cozystack."
+  "product"    "Produkt"
+  "pricing"    "Preise"
+  "pricingUrl" "/de/preise/"
+  "platformUrl" "/de/produkte/aenix-platform/"
+  "cozystackUrl" "/de/produkte/cozystack/"
+  "solutions"  "Lösungen"
+  "allSolutions" "Alle Lösungen"
+  "solutionsUrl" "/de/loesungen/"
+  "doraUrl"    "/de/loesungen/dora-compliance/"
+  "nis2Url"    "/de/loesungen/nis2-compliance/"
+  "aiUrl"      "/de/loesungen/sovereign-ai/"
+  "ai"         "Souveräne KI"
+  "engagement" "Zusammenarbeit"
+  "services"   "Dienstleistungen"
+  "servicesUrl" "/de/dienstleistungen/"
+  "industries" "Branchen"
+  "industriesUrl" "/de/branchen/"
+  "alternatives" "Alternativen"
+  "alternativesUrl" "/de/alternativen/"
+  "migrationUrl" "/de/migration/"
+  "resources"  "Ressourcen"
+  "leadMagnets" "Praxisleitfäden"
+  "resourcesUrl" "/de/ressourcen/"
+  "blogUrl"    "/de/blog/"
+  "course"     "Schulung"
+  "courseUrl"  "/de/kubernetes-deep-dive/"
+  "oss"        "OSS-Bericht"
+  "company"    "Unternehmen"
+  "about"      "Über uns"
+  "aboutUrl"   "/de/ueber-uns/"
+  "partnersUrl" "/de/partner/"
+  "conferences" "Konferenzen"
+  "conferencesUrl" "/de/konferenzen/"
+  "casesUrl"   "/de/case-studies/"
+  "contact"    "Kontakt"
+  "contactUrl" "/de/kontakt/"
+  "calculators" "TCO-Rechner"
+  "calculatorsUrl" "/de/roi-rechner/"
+  "legal"      "Datenschutz"
+  "imprint"    "Impressum"
+  "imprintUrl" "/de/impressum/"
+  "cookies"    "Cookie-Einstellungen"
+  "rights"     "Alle Rechte vorbehalten"
+) -}}
+{{- end -}}
 <footer class="site-footer">
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="/" class="footer-logo" aria-label="Ænix Home">
+        <a href="{{ if $de }}/de/{{ else }}/{{ end }}" class="footer-logo" aria-label="Ænix Home">
           <img src="/images/logo-full-white.svg" alt="Ænix" width="100" height="34">
         </a>
-        <p class="footer-tagline">Turnkey cloud platform.<br>Built on Cozystack.</p>
+        <p class="footer-tagline">{{ index $f "tagline" | safeHTML }}</p>
       </div>
       <div class="footer-nav">
-        {{/* Product group */}}
         <div class="footer-nav-group">
-          <h4>Product</h4>
-          <a href="/products/aenix-platform/">Ænix Platform</a>
-          <a href="/products/cozystack/">Cozystack</a>
-          <a href="/pricing/">Pricing</a>
+          <h4>{{ index $f "product" }}</h4>
+          <a href="{{ index $f "platformUrl" }}">{{ index $f "platform" }}</a>
+          <a href="{{ index $f "cozystackUrl" }}">{{ index $f "cozystack" }}</a>
+          <a href="{{ index $f "pricingUrl" }}">{{ index $f "pricing" }}</a>
+          <a href="{{ index $f "calculatorsUrl" }}">{{ index $f "calculators" }}</a>
         </div>
-        {{/* Solutions */}}
         <div class="footer-nav-group">
-          <h4>Solutions</h4>
-          <a href="/solutions/">All solutions</a>
-          <a href="/solutions/dora-compliance/">DORA</a>
-          <a href="/solutions/nis2-compliance/">NIS2</a>
-          <a href="/solutions/sovereign-ai/">Sovereign AI</a>
+          <h4>{{ index $f "solutions" }}</h4>
+          <a href="{{ index $f "solutionsUrl" }}">{{ index $f "allSolutions" }}</a>
+          <a href="{{ index $f "doraUrl" }}">DORA</a>
+          <a href="{{ index $f "nis2Url" }}">NIS2</a>
+          <a href="{{ index $f "aiUrl" }}">{{ index $f "ai" }}</a>
         </div>
-        {{/* Services + Industries */}}
         <div class="footer-nav-group">
-          <h4>Engagement</h4>
-          <a href="/services/">Services</a>
-          <a href="/industries/">Industries</a>
-          <a href="/alternatives/">Alternatives</a>
-          <a href="/migration/">Migration</a>
+          <h4>{{ index $f "engagement" }}</h4>
+          <a href="{{ index $f "servicesUrl" }}">{{ index $f "services" }}</a>
+          <a href="{{ index $f "industriesUrl" }}">{{ index $f "industries" }}</a>
+          <a href="{{ index $f "alternativesUrl" }}">{{ index $f "alternatives" }}</a>
+          <a href="{{ index $f "migrationUrl" }}">{{ index $f "migration" }}</a>
         </div>
-        {{/* Resources */}}
         <div class="footer-nav-group">
-          <h4>Resources</h4>
-          <a href="/resources/">Lead magnets</a>
-          <a href="/blog/">Blog</a>
-          <a href="/kubernetes-deep-dive/">Course</a>
-          <a href="/oss-contribution/">OSS report</a>
+          <h4>{{ index $f "resources" }}</h4>
+          <a href="{{ index $f "resourcesUrl" }}">{{ index $f "leadMagnets" }}</a>
+          <a href="{{ index $f "blogUrl" }}">{{ index $f "blog" }}</a>
+          <a href="{{ index $f "courseUrl" }}">{{ index $f "course" }}</a>
+          <a href="/oss-contribution/">{{ index $f "oss" }}</a>
         </div>
-        {{/* Company */}}
         <div class="footer-nav-group">
-          <h4>Company</h4>
-          <a href="/about/">About</a>
-          <a href="/partners/">Partners</a>
-          <a href="/conferences/">Conferences</a>
-          <a href="/case-studies/">Case studies</a>
-          <a href="/contact/">Contact</a>
+          <h4>{{ index $f "company" }}</h4>
+          <a href="{{ index $f "aboutUrl" }}">{{ index $f "about" }}</a>
+          <a href="{{ index $f "partnersUrl" }}">{{ index $f "partners" }}</a>
+          <a href="{{ index $f "conferencesUrl" }}">{{ index $f "conferences" }}</a>
+          <a href="{{ index $f "casesUrl" }}">{{ index $f "cases" }}</a>
+          <a href="{{ index $f "contactUrl" }}">{{ index $f "contact" }}</a>
         </div>
-        {{/* Community */}}
         <div class="footer-nav-group">
-          <h4>Community</h4>
-          <a href="https://github.com/aenix-io" target="_blank" rel="noopener">GitHub</a>
+          <h4>{{ index $f "community" }}</h4>
+          <a href="https://github.com/cozystack/cozystack" target="_blank" rel="noopener">GitHub</a>
           <a href="https://cozystack.io" target="_blank" rel="noopener">cozystack.io</a>
           <a href="https://t.me/cozystack" target="_blank" rel="noopener">Telegram</a>
           <a href="https://www.linkedin.com/company/aenix/" target="_blank" rel="noopener">LinkedIn</a>
@@ -59,8 +165,10 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; {{ now.Year }} Ænix, All Rights Reserved &nbsp;·&nbsp;
-        <a href="#" data-aenix-consent-open>Cookie settings</a>
+      <p class="footer-copy">&copy; {{ now.Year }} Ænix, {{ index $f "rights" }} &nbsp;·&nbsp;
+        <a href="{{ index $f "legalUrl" }}">{{ index $f "legal" }}</a> &nbsp;·&nbsp;
+        {{ with index $f "imprintUrl" }}<a href="{{ . }}">{{ index $f "imprint" }}</a> &nbsp;·&nbsp;{{ end }}
+        <a href="#" data-aenix-consent-open>{{ index $f "cookies" }}</a>
       </p>
     </div>
   </div>

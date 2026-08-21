@@ -45,7 +45,7 @@ Proxmox ist exzellent für kleine Umgebungen. Jenseits einer bestimmten Skala we
 
 ## OpenStack
 
-OpenStack läuft at scale, ist aber operativ schwer. Häufiger Modernisierungs-Trigger.
+OpenStack läuft im großen Maßstab, ist aber operativ schwer. Häufiger Modernisierungs-Trigger.
 
 - **[OpenStack-Alternative](/de/alternativen/openstack-alternative/)** — wann OpenStack ersetzen
 - **[OpenStack-Migrations-Hub](/de/migration/openstack/)** — Modernisierungs-Patterns

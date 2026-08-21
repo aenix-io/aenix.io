@@ -68,7 +68,7 @@ Wenn Sie früh in der Evaluierung sind und eine einzige Empfehlung fokussiert au
 - **Broadcom Private Cloud Outlook 2025:** 53 % der Organisationen priorisieren jetzt Private Cloud für neue Workloads; 69 % evaluieren Repatriation.
 - **VCF-Subscription-Preise** haben branchenweit Verlängerungskosten-Erhöhungen von 2-5× ausgelöst.
 - **Souveränitäts-Druck** — DORA, NIS2 und sektorale Regeln verlagern kritische Workloads auf kundenkontrollierte Infrastruktur.
-- **KI-Ökonomie** — anhaltende Inferenz-Workloads at scale, bei denen die Hyperscaler-Ökonomie nicht passt; Private Cloud + GPU ist für viele die Antwort.
+- **KI-Ökonomie** — anhaltende Inferenz-Workloads im großen Maßstab, bei denen die Hyperscaler-Ökonomie nicht passt; Private Cloud + GPU ist für viele die Antwort.
 
 Die folgenden Alternativen decken die realistischen Optionen ab.
 
@@ -192,7 +192,7 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 - **SMB / Single-Tenant:** Proxmox VE
 - **ROBO / Edge:** Scale Computing
 - **Microsoft-Shop:** Azure Stack HCI
-- **KI/GPU at scale:** Cozystack oder OpenShift auf dedizierter GPU-Infrastruktur
+- **KI/GPU im großen Maßstab:** Cozystack oder OpenShift auf dedizierter GPU-Infrastruktur
 
 ---
 

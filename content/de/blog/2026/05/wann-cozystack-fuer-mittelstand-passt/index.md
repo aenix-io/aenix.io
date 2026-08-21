@@ -15,7 +15,7 @@ quiz:
         - { text: "1", correct: false }
         - { text: "Mindestens 3", correct: true }
         - { text: "Alle 6", correct: false }
-      explanation: "Der ehrliche Test: 0-1 Kriterien = Over-Engineering, 2 = marginal, 3+ = passt. Kriterien sind: regulierte Daten, Multi-Tenant-Modell, stetig-state-Workloads, internes Plattform-Team, KI/GPU at scale, spezifischer Exit-Trigger."
+      explanation: "Der ehrliche Test: 0-1 Kriterien = Over-Engineering, 2 = marginal, 3+ = passt. Kriterien sind: regulierte Daten, Multi-Tenant-Modell, stetig-state-Workloads, internes Plattform-Team, KI/GPU im großen Maßstab, spezifischer Exit-Trigger."
     - q: "Welche Alternative wird für KMU ohne regulierte Daten empfohlen?"
       options:
         - { text: "Cozystack — immer", correct: false }
@@ -51,7 +51,7 @@ Cozystack passt, wenn mindestens drei zutreffen:
 2. Multi-Tenant-Modell
 3. Stetig-state-Workloads
 4. Internes Plattform-Team
-5. KI/GPU-Workloads at scale
+5. KI/GPU-Workloads im großen Maßstab
 6. Spezifischer Exit-Trigger
 
 Bei 0-1: Over-Engineering. Bei 2: marginal. Bei 3+: passt.

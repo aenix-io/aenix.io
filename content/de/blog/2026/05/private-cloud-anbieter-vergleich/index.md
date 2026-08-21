@@ -91,7 +91,7 @@ Red Hat kommerzielle Subscription. **Wann sinnvoll:** bestehende Red Hat / OpenS
 4. **Bestehende Red Hat / OpenShift-Verpflichtungen?** → OpenShift Virtualization
 5. **SMB / single-tenant?** → Proxmox VE
 6. **Plattform nicht selbst betreiben wollen?** → Regionaler souveräner Cloud-Anbieter (Hetzner, OVHcloud, regulated enterprise customers (NDA-protected))
-7. **KI/GPU at scale, sustained utilization?** → Cozystack oder OpenShift auf dediziertem GPU
+7. **KI/GPU im großen Maßstab, sustained utilization?** → Cozystack oder OpenShift auf dediziertem GPU
 8. **Souveränität + EU + niedriger operativer Footprint?** → Cozystack mit Aenix-Support
 
 ## Migrationspfade

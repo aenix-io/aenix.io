@@ -4,7 +4,7 @@ description: "Konferenz-Vorträge des Aenix-Teams zu Cozystack-Architektur, Kube
 language: "de"
 ---
 
-**Das Aenix-Team spricht auf Kubernetes-, Cloud- und Platform-Engineering-Konferenzen weltweit — wir teilen, wie Cozystack funktioniert, wie Ænix Platform es für produktive Cloud-Operations erweitert und welche Architektur-Entscheidungen hinter souveräner / regulierter Cloud at scale stehen.**
+**Das Aenix-Team spricht auf Kubernetes-, Cloud- und Platform-Engineering-Konferenzen weltweit — wir teilen, wie Cozystack funktioniert, wie Ænix Platform es für produktive Cloud-Operations erweitert und welche Architektur-Entscheidungen hinter souveräner / regulierter Cloud im großen Maßstab stehen.**
 
 <div class="cta-row">
   <a class="cta-primary" href="https://www.linkedin.com/company/aenix/">Aenix auf LinkedIn folgen für kommende Vorträge →</a>

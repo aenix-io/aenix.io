@@ -14,7 +14,7 @@ quiz:
       options:
         - { text: "Service-Provider mit 1000+ Kunden", correct: false }
         - { text: "SMB-IT, Labs, single-tenant Bereitstellungen unter ~50 Hosts, mostly VMs", correct: true }
-        - { text: "KI/GPU at scale", correct: false }
+        - { text: "KI/GPU im großen Maßstab", correct: false }
       explanation: "Proxmox VE: KVM + LXC + ZFS + Ceph (Community). Beste Wahl für SMB-IT, Labs, single-tenant-Bereitstellungen unter ~50 Hosts, mostly VM-Workloads."
     - q: "Welche architektonische Eigenschaft gibt Cozystack einen Edge für Service-Provider?"
       options:
@@ -31,9 +31,9 @@ quiz:
     - q: "Wann ist Cozystack die Wahl bei KI/GPU?"
       options:
         - { text: "Nie", correct: false }
-        - { text: "KI/GPU at scale (sustained inference, multi-tenant data-science teams)", correct: true }
+        - { text: "KI/GPU im großen Maßstab (sustained inference, multi-tenant data-science teams)", correct: true }
         - { text: "Nur für AGI", correct: false }
-      explanation: "KI/GPU at scale → Cozystack. Multi-Tenant-GPU-Scheduling, vGPU + MIG + time-slicing, validierte H100/H200/L40S/Blackwell-Hardware, Tenant CRD für mehrere data-science-Teams."
+      explanation: "KI/GPU im großen Maßstab → Cozystack. Multi-Tenant-GPU-Scheduling, vGPU + MIG + time-slicing, validierte H100/H200/L40S/Blackwell-Hardware, Tenant CRD für mehrere data-science-Teams."
     - q: "Was treibt die Wahl zwischen Proxmox und Cozystack hauptsächlich?"
       options:
         - { text: "Skala und Use Case (single-tenant SMB → Proxmox; Multi-Tenant Cloud → Cozystack)", correct: true }
@@ -59,7 +59,7 @@ Drei Hauptoptionen für Open-Source-fähige Virtualisierung in 2026: Proxmox VE,
 1. <50 Hosts, single-tenant, mostly VMs → Proxmox VE
 2. Service Provider, Multi-Tenant Cloud → Cozystack
 3. Bestehende VMware-Investition stabil → bleiben (mit Exit-Plan)
-4. KI/GPU at scale → Cozystack
+4. KI/GPU im großen Maßstab → Cozystack
 
 ---
 

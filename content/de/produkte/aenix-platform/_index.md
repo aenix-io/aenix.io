@@ -20,7 +20,7 @@ quick_facts:
   - label: "Was über Cozystack hinaus hinzukommt"
     value: "Hosting-Panel, User- / Admin- / Support-Portale, Service-Wizards, vollständiges Billing, Console-Portal, Payment- und WHMCS-Integration, Enterprise-SLA"
   - label: "Engagement-Modell"
-    value: "Lizenz + Services Bundle; ISP-Edition-Entry ab 1.250 USD/Monat (Support-Tier), Full Builds bis Mehr-Millionen-Euro"
+    value: "Lizenz + Services Bundle; ISP-Edition-Entry ab 1.250 USD/Monat (Support-Tier), Full Builds nach RFP"
 faq:
   - q: "Was fügt Ænix Platform über Open-Source-Cozystack hinaus hinzu?"
     a: "Cozystack ist die Foundation — eine Kubernetes-native Multi-Tenant-Cloud-Plattform. Ænix Platform ergänzt Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing (Backend + Frontend), Console-Portal, Usage-Charts, Payment- und WHMCS-Integration, produktisierten Installer, Enterprise-SLA, dedizierten Support sowie Edition-spezifische Features und Compliance-fertige Bundles."
@@ -130,7 +130,7 @@ Internal Developer Platform Layer auf der Cloud — GitLab-Automation, Argo CD W
 
 ### Ænix Platform AI/ML Edition
 
-Für KI-lastige Organisationen — KI-native Startups at scale, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen.
+Für KI-lastige Organisationen — KI-native Startups im Wachstum, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen.
 
 KI-Plattform-Automatisierung out-of-the-box: Standard-KI-Workloads, Service-APIs, fertige Blueprints, Datenbanken, Apps und Modelle. Von der Idee zu laufenden Jobs schneller.
 

@@ -1,5 +1,5 @@
 ---
-title: "Enterprise Platform Engineering — interne Plattformen für Organisationen at scale"
+title: "Enterprise Platform Engineering — interne Plattformen für Organisationen im großen Maßstab"
 description: "Enterprise Platform Engineering ist die Disziplin des Aufbauens und Betreibens interner Plattformen für Organisationen mit mehreren Produkt-Teams,..."
 related_pages:
   - /de/dienstleistungen/platform-engineering

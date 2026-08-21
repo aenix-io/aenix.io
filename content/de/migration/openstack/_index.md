@@ -11,7 +11,7 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Die OpenStack-zu-Cozystack-Migration ist der Wechsel von einer OpenStack-Cloud zu Cozystack, um den operativen Footprint und den Bedarf an seltenem OpenStack-Engineering zu reduzieren. Sie richtet sich an Hosting-Anbieter, regionale Clouds und große Betreiber, die OpenStack at scale konsolidieren. Cozystack bündelt VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-eBPF-Networking und LINSTOR/DRBD-Storage und ist Apache-2.0-lizenziert ohne Core-basierte Lizenzkosten. Aenix führt die Migration in vier Phasen durch: Architektur-Review, Parallel-Deployment neben OpenStack, Workload-Migration nach Klasse und OpenStack-Decommission nach Final-Validation. Eine Total-Migration dauert für mittelgroße Estates typisch 12 bis 18 Monate.**
+  **Die OpenStack-zu-Cozystack-Migration ist der Wechsel von einer OpenStack-Cloud zu Cozystack, um den operativen Footprint und den Bedarf an seltenem OpenStack-Engineering zu reduzieren. Sie richtet sich an Hosting-Anbieter, regionale Clouds und große Betreiber, die OpenStack im großen Maßstab konsolidieren. Cozystack bündelt VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-eBPF-Networking und LINSTOR/DRBD-Storage und ist Apache-2.0-lizenziert ohne Core-basierte Lizenzkosten. Aenix führt die Migration in vier Phasen durch: Architektur-Review, Parallel-Deployment neben OpenStack, Workload-Migration nach Klasse und OpenStack-Decommission nach Final-Validation. Eine Total-Migration dauert für mittelgroße Estates typisch 12 bis 18 Monate.**
 
 quick_facts:
   - label: "Was es ist"
@@ -21,7 +21,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Für wen"
-    value: "Hosting-Anbieter und regionale Clouds (ISP Edition); große Betreiber, die OpenStack at scale konsolidieren (Public Cloud Edition)"
+    value: "Hosting-Anbieter und regionale Clouds (ISP Edition); große Betreiber, die OpenStack im großen Maßstab konsolidieren (Public Cloud Edition)"
   - label: "Migrationsablauf"
     value: "Architektur-Review → Parallel-Deployment → Workload-Migration nach Klasse → Decommission"
   - label: "Dauer"
@@ -46,7 +46,7 @@ faq:
 
 **OpenStack bleibt valide, wo tiefe Expertise lebt. Wo Engineer-Verfügbarkeit und operativer Footprint Modernisierung erzwingen, ist Cozystack die realistische nächste Plattform. Aenix führt OpenStack-zu-Cozystack-Migrationen durch.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack at scale konsolidieren.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

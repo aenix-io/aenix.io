@@ -8,7 +8,10 @@
 */}}
 {{- $daImg := .Params.direct_answer_image -}}
 {{- $chev := `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>` -}}
-{{- $toggle := printf `<button type="button" class="answer-clamp__toggle" aria-expanded="false"><span class="answer-clamp__label">Show more</span>%s</button>` $chev -}}
+{{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
+{{- $more := cond $de "Mehr anzeigen" "Show more" -}}
+{{- $less := cond $de "Weniger anzeigen" "Show less" -}}
+{{- $toggle := printf `<button type="button" class="answer-clamp__toggle" aria-expanded="false" data-label-more="%s" data-label-less="%s"><span class="answer-clamp__label">%s</span>%s</button>` $more $less $more $chev -}}
 {{- with .Params.direct_answer -}}
 {{- if $daImg }}
 <div class="seo-direct-answer answer-split">

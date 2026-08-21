@@ -115,7 +115,7 @@ Vorvalidiert gegen ISO 27001 / SOC 2. Aenix unterstützt Zertifizierungs-Dokumen
 
 | Buyer | Typisches Engagement |
 |---|---|
-| Tier-1 / Tier-2 europäische Bank | DORA-konforme Multi-DC-souveräne Cloud — Mehr-Millionen-Euro mehrjährig |
+| Tier-1 / Tier-2 europäische Bank | DORA-konforme Multi-DC-souveräne Cloud — mehrjähriges Programm nach RFP |
 | Versicherer | DORA-Scope + GDPR + sektoral; Souveränität für regulierte Workloads |
 | Große öffentliche Verwaltung | Souveräne Cloud aligniert mit nationalen Beschaffungs-Mandaten |
 | Telco-Operator | NIS2 wesentliche-Entität-Compliance + Kunden-Cloud-Produkt-Möglichkeit |

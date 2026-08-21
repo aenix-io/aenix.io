@@ -22,7 +22,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Hosting-Anbieter, regionale Clouds, Telcos und Betreiber, die von OpenStack modernisieren oder at scale konsolidieren"
+    value: "Hosting-Anbieter, regionale Clouds, Telcos und Betreiber, die von OpenStack modernisieren oder im großen Maßstab konsolidieren"
   - label: "Architektur"
     value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Wann sinnvoll"
@@ -59,7 +59,7 @@ Cozystack ist die Open-Source-Alternative für Organisationen, die die Open-Sour
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds, die von OpenStack modernisieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack at scale konsolidieren.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds, die von OpenStack modernisieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

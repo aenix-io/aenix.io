@@ -24,10 +24,10 @@ quiz:
       explanation: "Talos ist minimal und immutable — kein SSH, Konfiguration über API, kein Paketmanager, keine Shell. Operativ einfacher und sicherer als allgemeines Linux für Kubernetes-Hosts."
     - q: "Wann ist Cozystack die richtige Antwort?"
       options:
-        - { text: "Service-Provider-Modell, regulierte Multi-Tenant, KI/GPU at scale, Greenfield Private Cloud, VMware-Ausstieg", correct: true }
+        - { text: "Service-Provider-Modell, regulierte Multi-Tenant, KI/GPU im großen Maßstab, Greenfield Private Cloud, VMware-Ausstieg", correct: true }
         - { text: "Nur SMB-Single-Tenant", correct: false }
         - { text: "Nur ROBO/Edge", correct: false }
-      explanation: "Cozystack passt für: Service-Provider-Modell, regulierte Multi-Tenant, KI/GPU at scale, Greenfield Private Cloud, VMware-Ausstieg. Für SMB-Single-Tenant ist Proxmox VE besser geeignet."
+      explanation: "Cozystack passt für: Service-Provider-Modell, regulierte Multi-Tenant, KI/GPU im großen Maßstab, Greenfield Private Cloud, VMware-Ausstieg. Für SMB-Single-Tenant ist Proxmox VE besser geeignet."
     - q: "Was ersetzt Cilium im Vergleich zu VMware-Bereitstellungen?"
       options:
         - { text: "vCenter", correct: false }
@@ -65,7 +65,7 @@ Native Kubernetes-Ressource für Mandantengrenzen.
 Leichtgewichtig, am Upstream-Kubernetes-Weg ausgerichtet.
 
 ### Wahl 7: VictoriaMetrics + VictoriaLogs für Observability
-Geringerer Overhead als Prometheus + Loki at scale.
+Geringerer Overhead als Prometheus + Loki im großen Maßstab.
 
 ## Cozystack vs OpenStack vs OpenShift
 
@@ -77,7 +77,7 @@ Geringerer Overhead als Prometheus + Loki at scale.
 
 - Service-Provider-Modell
 - Regulierte Multi-Tenant
-- KI/GPU at scale
+- KI/GPU im großen Maßstab
 - Greenfield Private Cloud
 - VMware-Ausstieg
 

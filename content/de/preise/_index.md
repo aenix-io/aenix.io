@@ -1,15 +1,15 @@
 ---
 title: "Ænix Platform Preise"
-description: "Ænix Platform Preise: fünf Editions × vier Support-Tiers. ISP Edition ab $1.250 / Monat (10 Nodes). Kostenloser ROI-Calculator. Cozystack bleibt frei."
-hero_subtitle: "Fünf Editions, vier Support-Tiers, ab $1.250/Monat"
+description: "Ænix Platform Preise: veröffentlichte Preisliste für Hosting-Anbieter und Produktteams ab 1.250 USD/Monat pro 10 Nodes. Enterprise-Programme nach RFP. Cozystack bleibt frei."
+hero_subtitle: "Veröffentlichte Preisliste für Anbieter ab 1.250 USD/Monat; Enterprise-Programme nach RFP"
 language: "de"
 ---
 
-**Cozystack ist kostenlos (Apache 2.0). Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box — wird als Kombination aus einer Edition (was Sie kaufen) und einem Support-Tier (wie Aenix Sie unterstützt) bepreist. ISP Edition startet ab $1,250 / Monat (Basic Tier, 10 Nodes); Enterprise Tier mit Named TAM und Air-Gap ist Custom-bepreist pro RFP.**
+**Cozystack ist kostenlos (Apache 2.0). Für die Ænix Platform — unsere schlüsselfertige kommerzielle Cloud-in-a-Box — gibt es zwei Wege. Hosting-Anbieter, MSPs und Produktteams kaufen aus einer veröffentlichten Preisliste: Support-Tiers pro 10 physische Nodes, ab 1.250 USD / Monat. Enterprise-, Public-Cloud-, IDP- und AI/ML-Programme werden nach RFP kalkuliert — die Zahl hängt von Estate-Größe, regulatorischem Scope, Migrationsvolumen und Betriebsmodell ab, und jede auf einer Webseite gedruckte Zahl wäre für Ihren Fall falsch.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="#roi">ROI-Calculator ↓</a>
+  <a class="cta-secondary" href="/tco-calculator/">TCO modellieren →</a>
 </div>
 
 ---
@@ -43,22 +43,22 @@ Plus **Entry-Tier — Pure Cozystack mit Ænix-Support** — für Produkt-Teams 
 
 ## Schritt 2 — Support-Tier wählen {#support}
 
-Pricing pro 10 physikalische Nodes / Monat. Jahresverträge: 20% Rabatt.
+Das ist die veröffentlichte Preisliste, und mehr gibt es nicht: Sie gilt für die ISP Edition und für Pure Cozystack mit Ænix Support. Preise pro 10 physische Nodes / Monat in USD; Jahresverträge 20% Rabatt. Jahresverträge 20% Rabatt.
 
 | Tier | Jahrespreis (pro Monat) | Monatspreis | Für wen |
 |---|---|---|---|
-| **Basic** | **$1,250** | $1,500 | Kleine Anbieter, Startups, interne Teams mit limitierten Workloads |
-| **Standard** | **$3,000** | $3,600 | Mittelgroße Anbieter / Rechenzentren, wachsende Teams mit Produktions-SLAs |
-| **Plus** | **$5,500** | $6,600 | Regulierte Organisationen, SPs/DCs mit mission-kritischen Clustern |
-| **Enterprise** | **Custom** | (pro RFP) | Großflächige Plattformen, Partner mit Roadmap-Einfluss |
+| **Basic** | **1.250 USD** | 1.500 USD | Kleine Anbieter, Startups, interne Teams mit begrenzten Workloads |
+| **Standard** | **3.000 USD** | 3.600 USD | Mittelgroße Anbieter / Rechenzentren, wachsende Teams mit Produktions-SLAs |
+| **Plus** | **5.500 USD** | 6.600 USD | Regulierte Organisationen, SPs/DCs mit geschäftskritischen Clustern |
+| **Enterprise** | **Nach RFP** | (nach RFP) | Großflächige Plattformen, Partner mit Roadmap-Einfluss |
 
 ### SLA-garantierter Support
 
 | Feature | Basic | Standard | Plus | Enterprise |
 |---|---|---|---|---|
-| Paket umfasst | 10 physikalische Nodes | 10 physikalische Nodes | 10 physikalische Nodes | 10 physikalische Nodes |
+| Paket umfasst | 10 physische Nodes | 10 physische Nodes | 10 physische Nodes | 10 physische Nodes |
 | Vorfälle abgedeckt | 5 | Unbegrenzt | Unbegrenzt | Unbegrenzt |
-| Service-Desk-Stunden | Geschäftszeiten | Geschäftszeiten | 24/7 | 24/7 |
+| Service-Desk-Zeiten | Geschäftszeiten | Geschäftszeiten | 24/7 | 24/7 |
 | Notfall-Reaktionszeit | 8 Stunden | 4 Stunden | 4 Stunden | 1 Stunde |
 | Standard-Reaktionszeit | 2 Werktage | 2 Werktage | 8 Stunden | 4 Stunden |
 
@@ -73,13 +73,15 @@ Pricing pro 10 physikalische Nodes / Monat. Jahresverträge: 20% Rabatt.
 | Backup-System | ✓ | ✓ | ✓ | ✓ |
 | GPU-Sharing | ✗ | ✓ | ✓ | ✓ |
 
+Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen nicht gegen das Incident-Limit, wenn sie innerhalb der 30-tägigen Installationsphase gemeldet werden. Geschäftszeiten sind Mo-Fr, 9-18 Uhr MEZ, ohne Feiertage. Ein Notfall ist ein Produktivsystem, das ausgefallen oder nicht erreichbar ist und für das kein Workaround existiert. Priority Engagement Time ist die Zeit, die wir aktiv für Features auf Ihrer Roadmap aufwenden.
+
 ---
 
 ## Engagement-Zusätze (separat bepreist)
 
 ### Platform Readiness Assessment
 
-5-10 Tage Festpreis-Engagement covering Stakeholder-Interviews, aktuelle-Architektur-Dokumentation, Gap-Analyse vs Ziel-Ænix-Platform-Architektur, Edition-Empfehlung, Migrations-Roadmap, Risiko-Register.
+5-10 Tage Festpreis-Engagement mit Stakeholder-Interviews, aktuelle-Architektur-Dokumentation, Gap-Analyse vs Ziel-Ænix-Platform-Architektur, Edition-Empfehlung, Migrations-Roadmap, Risiko-Register.
 
 **Kosten:** Festpreis, vor Beginn vereinbart (Scope-abhängig).
 
@@ -105,15 +107,13 @@ Monatlicher Retainer post-Deployment — laufender Plattform-Betrieb, Monitoring
 
 ---
 
-## ROI-Calculator {#roi}
+## Rechnen Sie selbst nach {#roi}
 
-Der Calculator schätzt 3-Jahres-Ersparnisse beim Betrieb von Ænix Platform vs drei Baselines:
+Drei Rechner, jeder mit eigenem Modell und eigenen Quellen. Jeder Preis trägt Quelle, Datum und Art der Quelle (Herstellerliste, Dritte, abgeleitet, eigene Schätzung), und jeder Rechner exportiert ein PDF für die Finanzabteilung.
 
-- **vs Public Cloud (AWS / Azure / GCP)** — Sustained-Workload-Ökonomie auf kundenkontrollierter Hardware
-- **vs In-House-Build** — Kosten für den Bau einer vergleichbaren Plattform aus Open-Source-Komponenten
-- **vs kommerzieller Vendor (VMware / ähnlich)** — Lizenz + Support-Kostendifferenz
-
-Passen Sie Node-Anzahl und Service-Anzahl an, um Ihrem Szenario zu entsprechen.
+- **[Platform-TCO-Rechner](/tco-calculator/)** — Fünf-Jahres-TCO gegen dreizehn On-Prem-Plattformen: VMware, Nutanix, OpenShift, Proxmox, OpenStack, CloudStack, OpenNebula, Harvester, Rancher, Virtuozzo. Software, einmalige Migration und Personal, mit Break-even und dem Fall, in dem die andere Plattform gewinnt.
+- **[Cloud-Repatriation-Rechner](/cloud-calculator/)** — Ihre AWS-, Azure- oder GCP-Rechnung gegen denselben Workload auf eigener oder gemieteter Hardware, inklusive Commitment- und Enterprise-Rabatten auf der Cloud-Seite.
+- **[ISP-Unit-Economics-Rechner](/isp-calculator/)** — monatliche GuV pro Node, wenn Sie Managed Services weiterverkaufen: Umsatz, COGS, Personal, Amortisation.
 
 ---
 

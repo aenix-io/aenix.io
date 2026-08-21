@@ -15,7 +15,7 @@ quiz:
         - { text: "Bessere Hardware-Beschaffung", correct: false }
         - { text: "Kundenbeziehungen, regionale Präsenz, Preisflexibilität, Souveränitäts-Positionierung", correct: true }
         - { text: "Niedrigere Latenz", correct: false }
-      explanation: "Hosting-Anbieter haben Kundenbeziehungen, regionale Präsenz, Preisflexibilität, Souveränitäts-Positionierung — Vorteile die Hyperscaler nicht leicht replizieren. Was fehlt: Cloud-Produkt zur Monetarisierung at scale."
+      explanation: "Hosting-Anbieter haben Kundenbeziehungen, regionale Präsenz, Preisflexibilität, Souveränitäts-Positionierung — Vorteile die Hyperscaler nicht leicht replizieren. Was fehlt: Cloud-Produkt zur Monetarisierung im großen Maßstab."
     - q: "Wie lange dauert das End-to-End-Engagement von Projektstart zu GA?"
       options:
         - { text: "1-2 Monate", correct: false }
@@ -46,7 +46,7 @@ Begleitung zur **[Hosting-Anbieter-Page](/de/branchen/hosting-anbieter)**.
 
 ## Die Hosting-Anbieter-Chance
 
-Hosting-Anbieter haben strukturelle Vorteile, die Hyperscaler nicht leicht replizieren können: Kundenbeziehungen, regionale Präsenz, Preisflexibilität, Souveränitäts-Positionierung. Was fehlt: Cloud-Produkt zur Monetarisierung at scale.
+Hosting-Anbieter haben strukturelle Vorteile, die Hyperscaler nicht leicht replizieren können: Kundenbeziehungen, regionale Präsenz, Preisflexibilität, Souveränitäts-Positionierung. Was fehlt: Cloud-Produkt zur Monetarisierung im großen Maßstab.
 
 Cozystack-basierte Modernisierung schließt diese Lücke.
 

@@ -21,7 +21,7 @@ quick_facts:
   - label: "Architektur-Unterschied"
     value: "OpenStack: 50-100+ eigenständige Dienste; Cozystack: 5-15 Operatoren auf einer Kubernetes-API mit KubeVirt für VMs und Container"
   - label: "Zielgruppe"
-    value: "Hosting-Anbieter und große Betreiber, die von OpenStack modernisieren oder es at scale konsolidieren"
+    value: "Hosting-Anbieter und große Betreiber, die von OpenStack modernisieren oder es im großen Maßstab konsolidieren"
   - label: "Multi-Tenancy"
     value: "OpenStack über Keystone Projects; Cozystack über das Tenant-CRD"
   - label: "Engagement mit Aenix"
@@ -43,7 +43,7 @@ faq:
 
 **Beide sind Open-Source-Private-Cloud-Plattformen. Beide Apache 2.0. Beide produktionserprobt. Der Unterschied ist Generation und operativer Footprint.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter, die von OpenStack modernisieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack at scale konsolidieren.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter, die von OpenStack modernisieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="compare-elevated compare-elevated--col3">
 

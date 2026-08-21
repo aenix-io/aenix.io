@@ -118,10 +118,13 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
       const label = btn.querySelector('.answer-clamp__label');
+      // Labels come from the template so the locale owns the wording.
+      const more = btn.dataset.labelMore || 'Show more';
+      const less = btn.dataset.labelLess || 'Show less';
       btn.addEventListener('click', () => {
         const open = clamp.classList.toggle('is-open');
         btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-        if (label) label.textContent = open ? 'Show less' : 'Show more';
+        if (label) label.textContent = open ? less : more;
       });
     });
   });
