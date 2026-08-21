@@ -45,6 +45,7 @@ def frontmatter(meta: dict, weight: int) -> str:
         f"title: {yaml_str(meta['title'])}",
         f"description: {yaml_str(meta['description'])}",
         'type: "page"',
+        'page_type: "flag-page"',
         'language: "en"',
         f"date: {meta['dateModified']}",
         f"lastmod: {meta['dateModified']}",

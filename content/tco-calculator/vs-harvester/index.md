@@ -4,6 +4,7 @@
 title: "Harvester vs Cozystack: HCI TCO Comparison [2026]"
 description: "Harvester HCI (free path or SUSE subscription) vs Cozystack. Upgrade toil of the free path is modeled as staffing, not ignored."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

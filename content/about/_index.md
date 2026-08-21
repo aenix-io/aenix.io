@@ -172,7 +172,7 @@ For governments and sovereign cloud builders, engagements run through public-sec
 
 **Public production customers** running Ænix Platform ISP Edition: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**NDA-protected engagements** (banks, sovereign cloud, AI/ML): multi-million-euro Ænix Platform Enterprise Edition + Public Cloud Edition deployments. **First named bank case studies expected mid-2027** as NDAs expire.
+**NDA-protected engagements** (banks, sovereign cloud, AI/ML): multi-million-euro Ænix Platform Enterprise Edition and Public Cloud Edition deployments; naming permitted from mid-2027. [Five deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
 
 **Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud / VPS hosting platforms, lightweight VDI, backup systems reducing storage cost up to 75% — work that demonstrates deep technical capability underpinning Ænix Platform delivery. [See case studies →](/case-studies/)
 

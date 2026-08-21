@@ -1,11 +1,40 @@
 ---
 title: "Case studies"
-description: "Aenix case studies: Ænix Platform deployments at regional hosting providers, platform R&D for ecosystem vendors, and NDA-protected tier-1 European bank work."
+description: "Aenix case studies: five detailed deployments with numbers — GPU repatriation, Proxmox consolidation, a sovereign public cloud, multi-cloud GPU bursting, and an AI platform shipped as an installer."
 hero_subtitle: "Real Aenix Platform deployments across hosting, AI, and academia"
 language: "en"
 ---
 
-**Aenix delivers production cloud platforms across multiple customer types. Public references include regional hosting providers running Ænix Platform ISP Edition, deep platform R&D for ecosystem vendors, and (under NDA until mid-2027) multi-million-euro engagements with tier-1 European banks.**
+**Five deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, public references include regional hosting providers running Ænix Platform ISP Edition, platform R&D for ecosystem vendors, and tier-1 European bank engagements still under NDA.**
+
+---
+
+## The five detailed cases
+
+### [8xH100 inference on your own bare metal](/case-studies/bare-metal-gpu-inference/)
+
+A mass-market mobile photo and video app moved AI inference off a rented per-hour GPU cloud onto its own 8xH100 server, with KubeVirt GPU passthrough. Two to three times the GPU efficiency at the same workload, roughly two months to production.
+
+### [Bare-metal Kubernetes for a messaging-API SaaS](/case-studies/bare-metal-kubernetes-messaging-saas/)
+
+Thirteen Proxmox hypervisor hosts consolidated onto a single declarative cluster carrying 25,000 workload instances, managed databases included, run by one engineer through GitOps.
+
+### [A sovereign public cloud on bare metal](/case-studies/sovereign-public-cloud/)
+
+A Swiss provider replaced a hypervisor stack with a full commercial public cloud across three data centres — synchronous cross-DC replication, at-rest encryption, GPU in production, and a 20-hour incident closed with zero data loss.
+
+### [From public cloud to bare metal, bursting on demand](/case-studies/multicloud-academic-gpu/)
+
+A European academic-computing SaaS left a hyperscaler for owned bare metal without downtime for thousands of active users, kept one Cluster API across bare metal, hyperscaler and a sovereign OpenStack cloud, and cut GPU cost about fivefold.
+
+### [Cozystack as a universal installer](/case-studies/ai-universal-installer/)
+
+A telecom operator and integrator built a corporate AI platform — GPU scheduling, RAG on Qdrant, NVIDIA Dynamo inference, geo-distributed GPU — then shipped the same distribution into a state-owned end customer's own environment.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Discuss your case</a>
+  <a class="cta-secondary" href="/tco-calculator/">Model your TCO →</a>
+</div>
 
 ---
 
@@ -13,7 +42,8 @@ language: "en"
 
 - **Public production customers (subject to permission per use):** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform ISP Edition)
 - **Platform R&D engagements:** CSI driver development, block storage research, virtualization platform prototypes — for ecosystem vendors
-- **Tier-1 European banks:** multi-million-euro Ænix Platform Enterprise Edition engagements (NDA-protected; named cases expected mid-2027)
+- **Detailed written-up deployments:** five, anonymized by contract, with architecture and figures published in full (above)
+- **Tier-1 European banks:** multi-million-euro Ænix Platform Enterprise Edition engagements (NDA-protected; naming permitted from mid-2027)
 - **Engagement sizes:** from a $1,250/month ISP Edition support tier through to multi-year Public Cloud and Enterprise builds quoted per RFP
 
 ---

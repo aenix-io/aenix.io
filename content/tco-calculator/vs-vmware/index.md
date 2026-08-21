@@ -4,6 +4,7 @@
 title: "VMware vs Cozystack: TCO & Exit Cost Calculator [2026]"
 description: "Compare VMware VCF licensing (Broadcom renewal uplift included) against Cozystack with migration one-time costs. Sourced defaults, honest break-even."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

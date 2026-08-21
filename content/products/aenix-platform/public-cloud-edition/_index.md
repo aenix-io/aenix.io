@@ -136,7 +136,7 @@ Multi-year programme, quoted per RFP. Discovery call to scope.
 
 ## Customer evidence
 
-Public Cloud Edition deployments are currently NDA-protected. Tier-1 European bank engagements (operating own internal cloud at scale) and regional telco sovereign cloud product launches are in production. **First named case studies expected mid-2027** as NDAs expire.
+Bank and telco Public Cloud Edition deployments are NDA-protected until mid-2027. One commercial public cloud built on this edition is written up in detail: [a Swiss provider running three data centres with synchronous cross-DC replication and GPU in production](/case-studies/sovereign-public-cloud/).
 ### How is Public Cloud Edition different from running open-source Cozystack ourselves?
 
 Cozystack is a clean Kubernetes-native multi-tenant cloud platform — but it stops short of the operator surface a real cloud business needs. Public Cloud Edition adds the multi-region control plane, billing back-end + front-end, payment integrations, customer-facing portal customization, productized installer, enterprise SLA, and dedicated support. For organizations operating cloud at scale, building these surfaces from scratch costs years of engineering — Public Cloud Edition delivers them as the product.

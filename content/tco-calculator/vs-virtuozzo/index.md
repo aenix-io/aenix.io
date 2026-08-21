@@ -4,6 +4,7 @@
 title: "Virtuozzo vs Cozystack: TCO Comparison [2026]"
 description: "Virtuozzo Hybrid Infrastructure vs Cozystack: default TCO tables for 50/200/1,000 VMs. Low-confidence figures are labeled as estimates."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

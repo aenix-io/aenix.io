@@ -4,6 +4,7 @@
 title: "OpenNebula vs Cozystack: TCO Comparison [2026]"
 description: "OpenNebula base + per-node subscription vs Cozystack per-node support: default TCO tables for 50/200/1,000 VMs with sources and break-even."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

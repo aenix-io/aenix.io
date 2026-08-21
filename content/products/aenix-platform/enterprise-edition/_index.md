@@ -156,7 +156,7 @@ Multi-year platform build, quoted per RFP. Discovery call to scope.
 
 ## Customer evidence
 
-Tier-1 / tier-2 European bank engagements are in production. **All currently NDA-protected; first named bank case studies expected mid-2027** as NDAs expire.
+Tier-1 / tier-2 European bank engagements are in production and NDA-protected; naming is permitted from mid-2027 as the NDAs expire. [Five deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact. Reference calls with existing customers can be arranged under NDA for an active opportunity.
 
 Anonymized phrasing pattern: "Tier-1 European bank engagement under DORA scope" / "Multi-million-euro Ænix Platform Enterprise Edition deployment with regulated financial institution".
 

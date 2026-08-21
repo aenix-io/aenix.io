@@ -4,6 +4,7 @@
 title: "CloudStack vs Cozystack: TCO Comparison [2026]"
 description: "Apache CloudStack with commercial support vs Cozystack. Default comparison tables for 50/200/1,000 VMs, every default sourced and dated."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

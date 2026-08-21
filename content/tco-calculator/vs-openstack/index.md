@@ -4,6 +4,7 @@
 title: "OpenStack vs Cozystack: Ops Cost & TCO Compare [2026]"
 description: "Self-managed OpenStack is free software with a real staffing bill. Compare its personnel-driven TCO against Cozystack with sources on every figure."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

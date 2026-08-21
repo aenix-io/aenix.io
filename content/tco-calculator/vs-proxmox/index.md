@@ -4,6 +4,7 @@
 title: "Proxmox vs Cozystack: TCO Comparison Calculator [2026]"
 description: "Proxmox VE subscription + staffing vs Cozystack managed platform. Includes the case where Proxmox stays cheaper — with numbers and sources."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

@@ -5,7 +5,7 @@ hero_subtitle: "Regulatory triggers and architecture patterns, mapped to your se
 language: "en"
 ---
 
-**Vertical proof points and engagement patterns by industry. Find your sector — read about the regulatory triggers, architectural patterns, and Ænix Platform editions that fit. All major engagements NDA-protected; first named bank cases expected mid-2027.**
+**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix Platform edition that fits. Bank engagements stay anonymous until mid-2027, but [five deployments are written up in full](/case-studies/) with their architecture and numbers.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -63,7 +63,7 @@ language: "en"
 
 **Public production customers** (Ænix Platform ISP Edition, currently listed on aenix.io): GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**NDA-protected engagements** (banks, sovereign cloud, AI/ML, telco): multi-million-euro Enterprise Edition + Public Cloud Edition deployments. **First named bank case studies expected mid-2027** as NDAs expire.
+**NDA-protected engagements** (banks, sovereign cloud, AI/ML, telco): multi-million-euro Enterprise Edition and Public Cloud Edition deployments; naming permitted from mid-2027. [Five deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
 
 **Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud / VPS hosting platforms, lightweight VDI, backup systems reducing storage cost up to 75%. [See case studies →](/case-studies/)
 

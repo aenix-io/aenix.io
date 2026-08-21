@@ -4,6 +4,7 @@
 title: "TCO Calculator Methodology: Formulas & Sources — Ænix"
 description: "Every formula, every default, every source of the Cozystack TCO calculator — including the published sanity table with the cases where Cozystack loses."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

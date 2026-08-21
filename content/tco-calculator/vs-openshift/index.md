@@ -4,6 +4,7 @@
 title: "OpenShift vs Cozystack: Virtualization TCO Compare [2026]"
 description: "Red Hat OpenShift OVE per-socket subscriptions vs Cozystack per-node support. Support-tier SKU switching modeled explicitly, sources on every number."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

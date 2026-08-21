@@ -95,7 +95,7 @@ For sales-led engagement see **[public cloud builder](/services/public-cloud-bui
 </div>
 </div>
 
-Production references: regional hosting providers running Ænix Platform ISP Edition; tier-1 European bank deployments under NDA until mid-2027.
+Production references: regional hosting providers running Ænix Platform ISP Edition; tier-1 European bank deployments under NDA until mid-2027. Closest written-up case: [a Swiss provider running a commercial public cloud across three data centres](/case-studies/sovereign-public-cloud/).
 
 ---
 

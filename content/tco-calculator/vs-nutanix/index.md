@@ -4,6 +4,7 @@
 title: "Nutanix vs Cozystack: TCO & Quote Sensitivity [2026]"
 description: "Nutanix quote pricing varies ~$70–650/core/yr. See the TCO range against Cozystack, HCL refresh risk, and where each platform wins."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

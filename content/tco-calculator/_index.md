@@ -4,6 +4,7 @@
 title: "Private Cloud TCO Calculator: Cozystack vs 13 Platforms"
 description: "Compare 5-year private cloud TCO: Cozystack vs VMware, AWS, Azure, Nutanix, OpenShift, Proxmox and 7 more. Public methodology, sourced prices, honest break-even."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

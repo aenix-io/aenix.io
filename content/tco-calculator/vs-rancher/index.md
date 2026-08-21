@@ -4,6 +4,7 @@
 title: "Rancher + Harvester vs Cozystack: TCO Compare [2026]"
 description: "Rancher needs Harvester for the VM layer — the pair is priced together vs Cozystack, including the reported 2025 core-based repricing toggle."
 type: "page"
+page_type: "flag-page"
 language: "en"
 date: 2026-08-21
 lastmod: 2026-08-21

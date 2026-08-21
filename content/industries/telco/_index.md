@@ -117,7 +117,7 @@ Phase 2 implementation typically spans 6-24 months for a multi-site telecom plat
 
 > {{< placeholder-quote >}}
 
-Public references: NDA-protected. Telco engagements included in the same NDA cohort as bank engagements; first named telco case studies expected mid-2027.
+Public references: NDA-protected — telco engagements sit in the same NDA cohort as the bank work, with naming permitted from mid-2027. The closest written-up case is [a telecom operator that built a corporate AI platform on Cozystack and shipped the same distribution into a state-owned end customer](/case-studies/ai-universal-installer/).
 
 ---
 

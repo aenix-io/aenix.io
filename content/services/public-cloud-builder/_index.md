@@ -126,7 +126,7 @@ Pricing model design, customer-onboarding workflow, SLA design, regulatory posit
 
 {{< clients >}}
 
-Public references: regional hosting providers running Ænix Platform ISP Edition (currently listed on aenix.io customer logos). Tier-1 European bank engagements + several regional sovereign-cloud launches under NDA — first named cases expected mid-2027.
+Public references: regional hosting providers running Ænix Platform ISP Edition (currently listed on aenix.io customer logos). Tier-1 European bank engagements and several regional sovereign-cloud launches are under NDA until mid-2027. Written up in detail: [a Swiss provider's commercial public cloud across three data centres](/case-studies/sovereign-public-cloud/).
 
 > {{< placeholder-quote >}}
 
