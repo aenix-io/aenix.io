@@ -3,7 +3,7 @@ title: "OpenStack to Cozystack migration — modernizing the operational footpri
 description: "OpenStack remains valid where deep expertise lives. Where engineer-availability and operational footprint are pressuring modernization, Cozystack is the..."
 related_pages:
   - /alternatives/openstack-alternative
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack
   - /services/platform-readiness-assessment
@@ -39,12 +39,12 @@ faq:
   - q: "When should we keep OpenStack instead of migrating?"
     a: "OpenStack remains valid where deep in-house expertise lives and the operational footprint is sustainable. Migration makes sense when engineer availability is shrinking or operational overhead is pressuring modernization toward a Kubernetes-native platform."
   - q: "Who performs the migration?"
-    a: "Aenix, the team behind Cozystack, runs OpenStack-to-Cozystack migrations. Engagements pair with the Ænix Platform ISP Edition for hosting providers and the Public Cloud Edition for large operators consolidating OpenStack at scale."
+    a: "Aenix, the team behind Cozystack, runs OpenStack-to-Cozystack migrations. Engagements pair with the Ænix Platform Provider Edition for hosting providers and the Provider Edition for large operators consolidating OpenStack at scale."
 ---
 
 **OpenStack remains valid where deep expertise lives. Where engineer-availability and operational footprint are pressuring modernization, Cozystack is the realistic next platform. Aenix runs OpenStack-to-Cozystack migrations.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers and regional clouds; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators consolidating OpenStack at scale.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers and regional clouds; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators consolidating OpenStack at scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

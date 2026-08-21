@@ -2,7 +2,7 @@
 title: "CloudStack zu Cozystack Migration"
 description: "Apache CloudStack bleibt etabliert in einigen Service-Provider-Märkten. Für Organisationen, die zu einer Kubernetes-nativen Foundation modernisieren, führt..."
 related_pages:
-  - /de/produkte/aenix-platform/isp-edition/
+  - /de/produkte/aenix-platform/provider-edition/
   - /de/produkte/aenix-platform/public-cloud-edition/
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
@@ -11,7 +11,7 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Die CloudStack-zu-Cozystack-Migration ist ein von Aenix durchgeführter Modernisierungspfad von Apache CloudStack hin zu einer Kubernetes-nativen Foundation auf Basis von Cozystack. Sie richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds, die ihre etablierten CloudStack-Estates auf eine offene, standardisierte Plattform überführen wollen. Aenix migriert VM-Images von KVM/XenServer zu KubeVirt, überführt CloudStack-Accounts und -Projects in das Tenant-CRD-Modell und re-architektiert Storage und Networking auf Kubernetes. Cozystack ist Apache-2.0-lizenziert (kein Core-basiertes Lizenzmodell) und ein CNCF-Projekt. Aenix bietet hierfür die Ænix Platform ISP Edition sowie Migrations-Services an.**
+  **Die CloudStack-zu-Cozystack-Migration ist ein von Aenix durchgeführter Modernisierungspfad von Apache CloudStack hin zu einer Kubernetes-nativen Foundation auf Basis von Cozystack. Sie richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds, die ihre etablierten CloudStack-Estates auf eine offene, standardisierte Plattform überführen wollen. Aenix migriert VM-Images von KVM/XenServer zu KubeVirt, überführt CloudStack-Accounts und -Projects in das Tenant-CRD-Modell und re-architektiert Storage und Networking auf Kubernetes. Cozystack ist Apache-2.0-lizenziert (kein Core-basiertes Lizenzmodell) und ein CNCF-Projekt. Aenix bietet hierfür die Ænix Platform Provider Edition sowie Migrations-Services an.**
 
 quick_facts:
   - label: "Was es ist"
@@ -27,7 +27,7 @@ quick_facts:
   - label: "Typische Dauer"
     value: "9-15 Monate für mittelgroße Estates (Architektur-Review, Parallel-Deployment, Workload-Migration, Decommission)"
   - label: "Passende Edition"
-    value: "Ænix Platform ISP Edition (Hosting/regionale Clouds); Public Cloud Edition (große Betreiber)"
+    value: "Ænix Platform Provider Edition (Hosting/regionale Clouds); Provider Edition (große Betreiber)"
 
 faq:
   - q: "Was passiert bei einer Migration von CloudStack zu Cozystack?"
@@ -37,7 +37,7 @@ faq:
   - q: "Welche Lizenz hat Cozystack?"
     a: "Cozystack ist unter Apache 2.0 lizenziert. Es gibt kein CPU- oder Core-basiertes Lizenzmodell. Cozystack ist zudem ein CNCF-Projekt (Sandbox seit Februar 2025), was Vendor-Neutralität und offene Governance sicherstellt."
   - q: "Für wen eignet sich die Migration zu Cozystack?"
-    a: "Die Migration richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds mit bestehenden CloudStack-Estates. Für Hosting-Anbieter und regionale Clouds passt die Ænix Platform ISP Edition, für große Betreiber die Public Cloud Edition."
+    a: "Die Migration richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds mit bestehenden CloudStack-Estates. Für Hosting-Anbieter und regionale Clouds passt die Ænix Platform Provider Edition, für große Betreiber die Provider Edition."
   - q: "Wie wird das Tenant-Modell von CloudStack übernommen?"
     a: "CloudStack-Accounts und -Projects werden in das Tenant-CRD-Modell von Cozystack überführt. Die Mandantenfähigkeit basiert dabei auf Kubernetes-CRDs, sodass die bestehende Mandantenstruktur auf eine Kubernetes-native Foundation abgebildet wird."
   - q: "Bleibt CloudStack während der Migration in Betrieb?"
@@ -46,7 +46,7 @@ faq:
 
 **Apache CloudStack bleibt etabliert in einigen Service-Provider-Märkten. Für Organisationen, die zu einer Kubernetes-nativen Foundation modernisieren, führt Aenix CloudStack-zu-Cozystack-Migrationen durch.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für Hosting-Anbieter und regionale Clouds; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -72,4 +72,4 @@ VM-Image-Migration: KVM/XenServer → KubeVirt. Tenant-Modell: CloudStack-Accoun
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

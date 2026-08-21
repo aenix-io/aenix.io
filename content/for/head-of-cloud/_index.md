@@ -10,7 +10,7 @@ primary_keyword: "white-label cloud platform for service providers"
 related_pages:
   - /services/white-label-cloud/
   - /services/public-cloud-builder/
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /partners/
   - /products/cozystack/
 ---
@@ -19,7 +19,7 @@ related_pages:
 
 **Your clients' VMware renewals jumped — and they're asking you what's next. That's your opening: a branded cloud (VMs, Kubernetes, databases, storage) on an open platform, no per-core tax eating your margin. Resell it as a product, or build your own with Aenix as your engineering team. You keep the client and the recurring revenue.**
 
-> **Pairs with:** **[White-label cloud](/services/white-label-cloud/)** and **[Public cloud builder](/services/public-cloud-builder/)**, **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** (branded portal + billing), and the **[Partner Program](/partners/)** (up to 40% margin). Core: open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[White-label cloud](/services/white-label-cloud/)** and **[Public cloud builder](/services/public-cloud-builder/)**, **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** (branded portal + billing), and the **[Partner Program](/partners/)** (up to 40% margin). Core: open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -51,7 +51,7 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 
 ## Two ways Aenix helps you
 
-**1. Resell a ready platform.** [Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/) is a white-labelable cloud — customer portal, service catalog (VMs, K8s, managed DBs, S3, GPU), WHMCS-integrated billing, multi-tier reseller model. You brand and sell; we provide platform and support. The [Partner Program](/partners/) gives up to 40% margin with deal protection.
+**1. Resell a ready platform.** [Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/) is a white-labelable cloud — customer portal, service catalog (VMs, K8s, managed DBs, S3, GPU), WHMCS-integrated billing, multi-tier reseller model. You brand and sell; we provide platform and support. The [Partner Program](/partners/) gives up to 40% margin with deal protection.
 
 **2. Build your own, with our team.** Want your own differentiated cloud? Cozystack is the framework and **Aenix is your outsourced engineering team** — we design and stand up your [public cloud](/services/public-cloud-builder/) or [white-label cloud](/services/white-label-cloud/), fill the K8s/KubeVirt gap, and you own the platform and the client.
 
@@ -81,7 +81,7 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 ## FAQ
 
 **Do we resell, or build our own?**
-Both are supported. Resell the ISP Edition for speed-to-market; build a differentiated platform with us when you want your own IP. The call scopes which fits.
+Both are supported. Resell the Provider Edition for speed-to-market; build a differentiated platform with us when you want your own IP. The call scopes which fits.
 
 **What's the margin model?**
 Up to 40% on Ænix Platform license + support via the [Partner Program](/partners/), plus your own recurring managed-services revenue on top.
@@ -93,13 +93,13 @@ Yes — the customer portal and service catalog are white-labelable; clients see
 No — that's the build-with model. We engineer the platform and enable your team.
 
 **Does it cover billing?**
-WHMCS-integrated billing ships with the ISP Edition, with two integration modes.
+WHMCS-integrated billing ships with the Provider Edition, with two integration modes.
 
 ---
 
 ## Start with a 30-minute discovery call
 
-Free, no prep. We look at your client base and tell you whether reselling the ISP Edition or building your own cloud with us is the faster path to margin.
+Free, no prep. We look at your client base and tell you whether reselling the Provider Edition or building your own cloud with us is the faster path to margin.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -108,7 +108,7 @@ Free, no prep. We look at your client base and tell you whether reselling the IS
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
 
 <!--
 SEO/GEO:

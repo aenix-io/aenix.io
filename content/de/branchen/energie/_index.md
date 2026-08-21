@@ -23,7 +23,7 @@ quick_facts:
   - label: "Technologie"
     value: "KubeVirt (VMs + Container), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Engagement"
-    value: "Ænix Platform (Enterprise Edition für NIS2-Multi-Site mit Air-Gap; AI/ML Edition für Netzoptimierungs-Workloads) plus Services; Preisstufen ab Basic 1.250 $/Mon. (10 Nodes)"
+    value: "Ænix Platform (Enterprise Edition für NIS2-Multi-Site mit Air-Gap; AI & GPU für Netzoptimierungs-Workloads) plus Services; Preisstufen ab Basic 1.250 $/Mon. (10 Nodes)"
 
 faq:
   - q: "Ist Cozystack NIS2-konform für Energieversorger?"
@@ -35,7 +35,7 @@ faq:
   - q: "Wie passt die lange Abschreibungszyklus von Netz-Hardware zur Plattform?"
     a: "Netzinfrastruktur wird in Jahrzehnten abgeschrieben. Cozystack steht unter Apache 2.0 ohne Core-basierte Lizenzierung und ist ein CNCF-Projekt — das gibt einen langen Operationshorizont ohne Vendor-Lock-in und ohne Lizenzkosten, die mit Hardware-Refresh-Zyklen kollidieren."
   - q: "Welche Ænix-Platform-Edition passt für Energieversorger?"
-    a: "Die Enterprise Edition deckt NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT ab. Für KI-getriebene Netzoptimierung, Forecasting und Predictive Maintenance ergänzt die AI/ML Edition die nötige GPU- und KI-Infrastruktur."
+    a: "Die Enterprise Edition deckt NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT ab. Für KI-getriebene Netzoptimierung, Forecasting und Predictive Maintenance ergänzt die AI & GPU die nötige GPU- und KI-Infrastruktur."
   - q: "Eignet sich die Plattform für VMware-Ausstieg oder OpenStack-Modernisierung?"
     a: "Ja. KubeVirt betreibt bestehende VMs und neue Container nebeneinander auf einer Kubernetes-API, was die Migration weg von VMware oder einer alternden OpenStack-Umgebung ohne Komplettumbau ermöglicht. Apache-2.0-Lizenzierung entfernt zudem die Core-basierten Lizenzkosten klassischer Virtualisierungsstacks."
 ---
@@ -44,7 +44,7 @@ faq:
 
 Aenix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das gleiche Multi-Site-, NIS2-konforme, souveränitätsfreundliche Plattform-Muster an, das bei unseren Kunden aus dem Finanzdienstleistungs- und Telekommunikationssektor läuft. Die energiespezifische Arbeit legt den Schwerpunkt auf IT/OT-Konvergenz, Edge-Resilienz und Air-Gap-Support für OT-Systeme.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT; **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** für Netzoptimierungs-KI-Workloads.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT; **[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** für Netzoptimierungs-KI-Workloads.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

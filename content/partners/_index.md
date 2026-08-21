@@ -117,7 +117,7 @@ Grid of partner cards. Each card: logo, name, location, 1-line description. Exis
 
 Current public partners include:
 
-- **GoHost.kz** (Kazakhstan, Karaganda) — hosting and cloud provider, Ænix Platform ISP Edition deployment
+- **GoHost.kz** (Kazakhstan, Karaganda) — hosting and cloud provider, Ænix Platform Provider Edition deployment
 - **Hidora** (Switzerland, Geneva) — European cloud provider, sovereign cloud focus
 - **QOSI** (Kazakhstan) — digital sovereignty + open-source ecosystem
 - **TECH EVOLVERS INC** (Caribbean, Central + South America) — cloud-native consultancy and systems integrator, Kubestronaut team
@@ -149,7 +149,7 @@ Up to 40% on Ænix Platform license + support tier sales. Margin tier depends on
 
 ### Which Editions can I sell?
 
-All five — Public Cloud, ISP, Enterprise, IDP, AI/ML. Plus Pure Cozystack with Ænix Support entry tier. Most regional partners start with ISP Edition (most productized; entry from $1,250/month) and add Enterprise / Public Cloud Editions as their team builds up.
+Both — Provider and Enterprise — plus the AI & GPU and Developer Self-Service modules and the Pure Cozystack with Ænix Support entry tier. Most regional partners start with Provider Edition (the productized one; entry from $1,250/month) and add Enterprise Edition as their team builds up.
 
 ### Is there exclusivity?
 
@@ -199,4 +199,4 @@ Or email [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
-*Aenix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project — and the maker of [Ænix Platform](/products/aenix-platform/) — turnkey commercial cloud-in-a-box in five editions. AENIX s.r.o. (Czechia) and AENIX INC (Delaware).*
+*Aenix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project — and the maker of [Ænix Platform](/products/aenix-platform/) — turnkey commercial cloud-in-a-box in two editions. AENIX s.r.o. (Czechia) and AENIX INC (Delaware).*

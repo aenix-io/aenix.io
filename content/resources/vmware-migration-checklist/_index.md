@@ -6,7 +6,7 @@ related_pages:
   - /migration/vmware
   - /alternatives/vmware-alternative
   - /services/platform-readiness-assessment
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /products/aenix-platform/enterprise-edition/
 language: "en"
 quick_facts_style: "rows"
@@ -45,7 +45,7 @@ faq:
 
 **A 25-point checklist for organizations evaluating a VMware exit. Covers inventory, dependencies, networking, storage, multi-tenancy, AI/GPU, sovereignty, and operational readiness. Used by Aenix during 14-day Platform Readiness Assessments and offered free to teams in early evaluation.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers exiting VMware Cloud Director; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises exiting VCF.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers exiting VMware Cloud Director; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises exiting VCF.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

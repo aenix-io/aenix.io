@@ -27,7 +27,7 @@ language: "en"
 
 ### Path 1 — Ænix Platform customers (support bundled)
 
-If you have an Ænix Platform engagement (Public Cloud / ISP / Enterprise / IDP / AI/ML Edition), enterprise support is part of the engagement bundle. Specific SLA matches your **support tier** (independent of edition):
+If you have an Ænix Platform engagement (Public Cloud / ISP / Enterprise / IDP / AI & GPU), enterprise support is part of the engagement bundle. Specific SLA matches your **support tier** (independent of edition):
 
 - **Basic** ($1,250/month per 10 nodes annual) — Business-hours support, 8-hour emergency response
 - **Standard** ($3,000/month) — Business-hours support, 4-hour emergency response, priority tickets

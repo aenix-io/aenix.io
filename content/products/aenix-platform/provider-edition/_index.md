@@ -1,15 +1,17 @@
 ---
-title: "Ænix Platform ISP Edition"
-description: "Ænix Platform ISP Edition: turnkey Kubernetes-native cloud platform for hosting providers and MSPs, with WHMCS billing and VMware/OpenStack migration."
+title: "Ænix Platform Provider Edition — for everyone who sells cloud"
+description: "Ænix Platform Provider Edition: turnkey cloud platform for anyone selling cloud — hosting providers, MSPs, telcos, national operators. Billing, portal, multi-region."
 type: "page"
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Ænix Platform console — ISP Edition"
-hreflang_de: /de/produkte/aenix-platform/isp-edition/
+direct_answer_image_alt: "Ænix Platform console — Provider Edition"
+hreflang_de: /de/produkte/aenix-platform/provider-edition/
+aliases:
+  - /products/aenix-platform/isp-edition/
 direct_answer: |
-  **Ænix Platform ISP Edition is a turnkey, Kubernetes-native cloud platform for small and mid-size hosting providers, MSPs, regional cloud providers, and data centres that want to launch or modernize a multi-tenant cloud product without building it from scratch. It is the productized, supported distribution of Cozystack (an Apache 2.0 CNCF project created and maintained by Aenix) and adds the commercial surfaces a hosting business needs: WHMCS-integrated billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage, and GPU workloads. Aenix delivers it with migration tooling and expertise from VMware, OpenStack, Virtuozzo, and OpenNebula, getting providers production-ready in weeks rather than months.**
+  **Ænix Platform Provider Edition is a turnkey, Kubernetes-native cloud platform for small and mid-size hosting providers, MSPs, regional cloud providers, and data centres that want to launch or modernize a multi-tenant cloud product without building it from scratch. It is the productized, supported distribution of Cozystack (an Apache 2.0 CNCF project created and maintained by Aenix) and adds the commercial surfaces a hosting business needs: WHMCS-integrated billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage, and GPU workloads. Aenix delivers it with migration tooling and expertise from VMware, OpenStack, Virtuozzo, and OpenNebula, getting providers production-ready in weeks rather than months.**
 quick_facts:
   - label: "What it is"
     value: "Turnkey, supported cloud-in-a-box for hosting providers, MSPs, regional clouds, and data centres, built on Cozystack with WHMCS billing and a white-label portal."
@@ -18,26 +20,26 @@ quick_facts:
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
   - label: "Who it is for"
-    value: "Small and mid-size hosting providers, MSPs, regional cloud providers, and data centres modernizing or expanding a cloud product."
+    value: "Anyone selling cloud capacity to someone else: hosting providers, MSPs, regional clouds and data centres at the small end; telcos, national operators and banks running a commercial cloud at the large end."
   - label: "Replaces"
     value: "OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, and custom in-house hosting panels."
   - label: "Architecture"
     value: "Kubernetes-native: KubeVirt (VMs and containers on one Kubernetes API), Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy, plus cozyportal, VictoriaMetrics, and VictoriaLogs."
   - label: "Time to live"
-    value: "Production-ready in weeks via the productized installer and migration tooling; entry support tier from $1,250/month."
+    value: "Weeks via the productized installer at provider scale; 6-18 months for a multi-region national build. Entry support tier from $1,250/month; large programmes quoted per RFP."
 faq:
-  - q: "How is ISP Edition different from running open-source Cozystack ourselves?"
-    a: "Cozystack is the engine; ISP Edition adds the commercial surfaces a hosting business needs: WHMCS integration, full billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, migration tooling, and an enterprise support tier from $1,250/month."
+  - q: "How is Provider Edition different from running open-source Cozystack ourselves?"
+    a: "Cozystack is the engine; Provider Edition adds the commercial surfaces a hosting business needs: WHMCS integration, full billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, migration tooling, and an enterprise support tier from $1,250/month."
   - q: "Can we keep our own billing system instead of WHMCS?"
-    a: "Yes. ISP Edition supports two integration modes: WHMCS as the customer-facing front with Cozystack as the substrate, or cozyportal as the front with WHMCS as the billing back-end. Custom billing integrations are also supported."
-  - q: "What does ISP Edition replace?"
+    a: "Yes. Provider Edition supports two integration modes: WHMCS as the customer-facing front with Cozystack as the substrate, or cozyportal as the front with WHMCS as the billing back-end. Custom billing integrations are also supported."
+  - q: "What does Provider Edition replace?"
     a: "It replaces OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, and custom in-house hosting panels, consolidating compute, Kubernetes, managed databases, S3 storage, GPU, billing, and the customer portal under one Kubernetes-native platform."
   - q: "How long does migration from VMware or OpenStack take?"
-    a: "The productized installer brings ISP Edition live in weeks. End-customer migration is workload-dependent; a typical pattern is a parallel run with cohort-based migration over several months for mid-size hosting estates, delivered with Aenix tooling and runbooks."
-  - q: "Does ISP Edition support white-label and multi-tier reseller models?"
+    a: "The productized installer brings Provider Edition live in weeks. End-customer migration is workload-dependent; a typical pattern is a parallel run with cohort-based migration over several months for mid-size hosting estates, delivered with Aenix tooling and runbooks."
+  - q: "Does Provider Edition support white-label and multi-tier reseller models?"
     a: "Yes. cozyportal is fully white-labelable per provider (colors, logo, domain), and multi-tier reseller models are supported (Aenix to MSP to MSP customers). A partner program offers deal registration, sales kit, pre-sales support, and training."
-  - q: "What hardware does ISP Edition need?"
-    a: "Bare-metal servers, such as Hetzner, OVH, your own data centre, or colocation. Cozystack is hardware-agnostic, and ISP Edition adds operations runbooks for typical hosting hardware. Sizing is scoped on a discovery call."
+  - q: "What hardware does Provider Edition need?"
+    a: "Bare-metal servers, such as Hetzner, OVH, your own data centre, or colocation. Cozystack is hardware-agnostic, and Provider Edition adds operations runbooks for typical hosting hardware. Sizing is scoped on a discovery call."
 ---
 
 **A modern alternative to OpenStack built for small and mid-size hosting providers, MSPs, regional cloud providers, and data centres. Turnkey cloud-in-a-box: hosting panel, billing, customer portal, payments, support — install, plug in users, start operating. WHMCS-integrated. Production-ready in weeks.**
@@ -52,7 +54,7 @@ faq:
 
 ---
 
-## What's included in ISP Edition
+## What's included in Provider Edition
 
 ### WHMCS integration
 
@@ -92,9 +94,9 @@ Managed databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 
 ---
 
-## Why hosting providers / MSPs choose ISP Edition over OpenStack
+## Why hosting providers / MSPs choose Provider Edition over OpenStack
 
-| Dimension | OpenStack | Ænix Platform ISP Edition |
+| Dimension | OpenStack | Ænix Platform Provider Edition |
 |---|---|---|
 | Time to production | 6+ months typical | Weeks |
 | Operations team size | 8-15+ engineers | 3-7 engineers |
@@ -110,7 +112,7 @@ Managed databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 
 Most small and mid providers are not running OpenStack at all — they are running Virtualizor, SolusVM, Proxmox with a billing bolt-on, or a panel written in-house. Those tools do one job well: sell and provision VPS.
 
-| Dimension | Virtualizor / SolusVM class panels | Ænix Platform ISP Edition |
+| Dimension | Virtualizor / SolusVM class panels | Ænix Platform Provider Edition |
 |---|---|---|
 | Product catalogue | VPS, and variations on VPS | VMs plus managed Kubernetes, PostgreSQL, MySQL, ClickHouse, Kafka, RabbitMQ, Redis, S3, GPU |
 | Where the margin is | Reselling capacity, competing on price per vCPU | Managed services on top of the same hardware, priced per service |
@@ -119,29 +121,57 @@ Most small and mid providers are not running OpenStack at all — they are runni
 | Upgrades | Panel upgrade, hypervisor upgrade, both manual | One GitOps-managed platform version |
 | Lock-in | Proprietary panel, per-VM licence | Apache 2.0 core; you can stay on plain Cozystack and drop the commercial layer |
 
-The honest read: if VPS resale is your whole business and you are happy with the margin, a panel is cheaper and simpler, and you should keep it. ISP Edition pays for itself when you want to sell managed services — databases, Kubernetes, GPU — without building each one yourself.
+The honest read: if VPS resale is your whole business and you are happy with the margin, a panel is cheaper and simpler, and you should keep it. Provider Edition pays for itself when you want to sell managed services — databases, Kubernetes, GPU — without building each one yourself.
 
 ---
 
 ## Production customers (currently listed on aenix.io)
 
-Regional hosting providers running Ænix Platform ISP Edition include **GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy**.
+Regional hosting providers running Ænix Platform Provider Edition include **GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy**.
 
-These customers use Ænix Platform ISP Edition to deliver multi-tenant cloud products to their end customers across the EU, DACH, Central Asia, and other regions.
+These customers use Ænix Platform Provider Edition to deliver multi-tenant cloud products to their end customers across the EU, DACH, Central Asia, and other regions.
+
+---
+
+## One edition, two ends of the same scale
+
+A regional hoster with forty nodes and a national operator with several data centres are the same business — you sell capacity to someone who is not you, so you need billing, a customer-facing portal, tenant isolation you can defend, and payments that reconcile. That is one product, not two, and the difference is how much of it gets switched on.
+
+| | Provider scale | National / operator scale |
+|---|---|---|
+| Who | Hosting providers, MSPs, regional clouds, data centres | Telcos, national operators, banks running a commercial cloud, large public clouds |
+| Regions | One or a few sites | Multi-region control plane, workload placement and policy across regions |
+| Billing | WHMCS-integrated, Stripe and regional processors | Full billing backend plus your own frontend, custom payment integrations |
+| Existing estate | Migrate off it | Federate with it — one control plane over VMware, OpenNebula, OpenShift while you migrate |
+| Onboarding | Productized installer, weeks to live | 3-6 month pilot, then 6-18 months to full multi-region |
+| Bought as | Published price list, from $1,250 / month per 10 nodes | Multi-year programme, quoted per RFP |
+
+The technology underneath is identical, which is the point: a provider that grows into the right column does not replatform, it turns on multi-region and keeps its portal, its billing and its tenants.
+
+[What operator scale involves →](/products/aenix-platform/public-cloud-edition/)
+
+---
+
+## Add a module
+
+Two capability packs extend either edition. Both are ordinary tenant workloads on the same platform, so adding one is a configuration decision rather than a second procurement.
+
+- **[AI and GPU](/products/aenix-platform/ai-ml-edition/)** — multi-tenant GPU scheduling, fractioning and MIG, model serving, vector databases. Providers sell it as GPU-as-a-Service; internal platforms use it for their own inference.
+- **[Developer self-service](/products/aenix-platform/idp-edition/)** — golden paths, GitLab and Argo CD automation, self-service APIs. Mostly bought with Enterprise Edition, but a provider building a developer-facing product uses the same layer.
 
 ---
 
 ## Pricing
 
-**Entry from $1,250/month support tier.** Higher tiers and project-based migration / build engagements priced on request via discovery call.
+**Entry from $1,250/month support tier**, per 10 physical nodes — the published [price list](/pricing/) applies. Multi-region operator builds and migration engagements are quoted per RFP after scoping.
 
-[Discuss ISP Edition pricing →](/contact/?edition=isp)
+[Discuss Provider Edition pricing →](/contact/?edition=provider)
 
 ---
 
 ## Migration paths
 
-Aenix delivers ISP Edition migrations with productized modules and engagement expertise:
+Aenix delivers Provider Edition migrations with productized modules and engagement expertise:
 
 - **From VMware Cloud Director / vSphere** — most common 2026 trigger (Broadcom subscription pressure)
 - **From OpenStack** — operational complexity reduction; faster feature velocity
@@ -178,7 +208,7 @@ For product teams running Cozystack on their own / leased servers (Hetzner, OVH,
 
 ## Book a review
 
-Tell us about your hosting business, current stack and customer mix — we'll set up a focused architecture review with an Aenix engineer and confirm ISP Edition fit.
+Tell us about your hosting business, current stack and customer mix — we'll set up a focused architecture review with an Aenix engineer and confirm Provider Edition fit.
 
 {{< pipedrive-form type="demo" >}}
 
@@ -186,4 +216,4 @@ Prefer a shorter first step? [Book a discovery call](/contact/) instead.
 
 ---
 
-*Ænix Platform ISP Edition is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Aenix is the open-core company.*
+*Ænix Platform Provider Edition is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Aenix is the open-core company.*

@@ -4,7 +4,7 @@ description: "Replace vSphere, vCenter, vSAN, NSX, and the rest of VCF with one 
 related_pages:
   - /migration/vmware
   - /alternatives/vmware-alternatives
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /products/aenix-platform/enterprise-edition/
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack
@@ -50,7 +50,7 @@ faq:
 
 Cozystack is a CNCF project. Aenix builds it, operates it in production with hosting providers and banks, and runs the migration end-to-end.
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers (VMware Cloud Director exit); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises (VMware Cloud Foundation exit); **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers (VMware Cloud Director exit); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises (VMware Cloud Foundation exit); **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

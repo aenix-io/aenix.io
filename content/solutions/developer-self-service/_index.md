@@ -7,14 +7,14 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Developer self-service is the platform-engineering capability that lets product teams provision environments, databases, services, storage, and observability on their own — without filing tickets — typically in under an hour from request to running. It targets engineering organizations where the wait between "team needs an environment" and "team has one" stretches into days or weeks, decaying product velocity. Aenix builds this capability into platforms teams actually adopt: opinionated golden paths backed by a real platform layer, not a catalog UI as wallpaper. Engagements deliver a golden-path inventory of the ten most common requests, self-service paths designed and implemented by Aenix engineers, and an adoption-metrics framework. The work runs on the Ænix Platform IDP Edition, the company's productized Internal Developer Platform built on Cozystack.**
+  **Developer self-service is the platform-engineering capability that lets product teams provision environments, databases, services, storage, and observability on their own — without filing tickets — typically in under an hour from request to running. It targets engineering organizations where the wait between "team needs an environment" and "team has one" stretches into days or weeks, decaying product velocity. Aenix builds this capability into platforms teams actually adopt: opinionated golden paths backed by a real platform layer, not a catalog UI as wallpaper. Engagements deliver a golden-path inventory of the ten most common requests, self-service paths designed and implemented by Aenix engineers, and an adoption-metrics framework. The work runs on the Developer Self-Service module of Ænix Platform, the company's productized Internal Developer Platform built on Cozystack.**
 quick_facts:
   - label: "What it is"
     value: "A platform-engineering capability where the most common product-team needs are satisfied without tickets, completed in under an hour from request to running."
   - label: "Who it's for"
     value: "Engineering organizations where provisioning environments, databases, or services requires platform-team tickets and waits of days or weeks."
   - label: "Delivered on"
-    value: "Ænix Platform IDP Edition — GitLab automation, Argo CD workflows, golden-path templates, self-service APIs, and productivity dashboards, built on Cozystack."
+    value: "the Developer Self-Service module of Ænix Platform — GitLab automation, Argo CD workflows, golden-path templates, self-service APIs, and productivity dashboards, built on Cozystack."
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Engagement timeline"
@@ -29,7 +29,7 @@ faq:
   - q: "How does Aenix deliver developer self-service?"
     a: "Through a golden-path inventory (current versus target state), self-service paths designed for priority requests, an implementation engagement where Aenix engineers build the paths into your platform, and an adoption-metrics framework to measure what works. It is scoped within broader Internal Developer Platform and Platform Engineering services."
   - q: "What platform does the self-service capability run on?"
-    a: "The Ænix Platform IDP Edition — an Internal Developer Platform layer with GitLab automation, Argo CD workflows, self-service APIs, golden-path templates, and engineering productivity dashboards. It is built on Cozystack, which runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage."
+    a: "The the Developer Self-Service module of Ænix Platform — an Internal Developer Platform layer with GitLab automation, Argo CD workflows, self-service APIs, golden-path templates, and engineering productivity dashboards. It is built on Cozystack, which runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage."
   - q: "How long before product teams can self-serve?"
     a: "Discovery is a free 30-minute call. Assessment runs 14-28 days within a Platform Readiness Assessment. The build engagement spans 1-6 months depending on how many golden paths are in scope and the maturity of the existing platform."
   - q: "Is there vendor lock-in?"
@@ -40,7 +40,7 @@ faq:
 
 Aenix builds developer self-service capability into platforms that product teams actually adopt — not Backstage as wallpaper, but underlying golden paths that provision what a team asks for without filing a ticket.
 
-> **Pairs with:** **[Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)** — Internal Developer Platform layer with GitLab automation, Argo CD workflows, APIs for self-service, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** — Internal Developer Platform layer with GitLab automation, Argo CD workflows, APIs for self-service, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -57,7 +57,7 @@ A useful working definition: developer self-service is when the most common 10 p
 <div class="diagram">
 <div class="diagram__node"><b>Product teams</b><div class="diagram__chips"><span>Environment</span><span>Database</span><span>Service</span></div></div>
 <div class="diagram__conn">request without tickets</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform IDP Edition</b><div class="diagram__chips"><span>Golden paths</span><span>Self-service APIs</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>the Developer Self-Service module of Ænix Platform</b><div class="diagram__chips"><span>Golden paths</span><span>Self-service APIs</span></div></div>
 <div class="diagram__conn">provisions on Cozystack</div>
 <div class="diagram__node"><b>Provisioned services</b><div class="diagram__chips"><span>Object storage</span><span>Observability</span><span>CI/CD</span></div></div>
 <div class="diagram__conn">in under an hour</div>

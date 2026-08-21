@@ -3,7 +3,7 @@ title: "White-Label Cloud — gebrandetes Cloud-Produkt für MSPs und Reseller"
 description: "Managed Service Provider (MSPs) und Reseller in 2026 stehen vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren — aber..."
 related_pages:
   - /de/dienstleistungen/public-cloud-builder
-  - /de/produkte/aenix-platform/isp-edition/
+  - /de/produkte/aenix-platform/provider-edition/
   - /de/partner/
   - /de/produkte/cozystack
 language: "de"
@@ -25,7 +25,7 @@ quick_facts:
   - label: "Technik"
     value: "KubeVirt für VMs + Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Produkt"
-    value: "Ænix Platform ISP Edition — white-label cozyportal, Multi-Tier-Reseller-Modell, WHMCS-integriertes Billing, ab 1.250 USD/Monat Support-Tier"
+    value: "Ænix Platform Provider Edition — white-label cozyportal, Multi-Tier-Reseller-Modell, WHMCS-integriertes Billing, ab 1.250 USD/Monat Support-Tier"
   - label: "Partner-Marge"
     value: "Bis zu 40% Marge auf weiterverkaufte Engagements über das Partner-Programm"
 
@@ -46,7 +46,7 @@ faq:
 
 **Managed Service Provider (MSPs) und Reseller stehen 2026 vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren, aber mit den Kundenbeziehungs-Vorteilen, die MSPs bereits haben. White-Label Cloud — gebrandet mit der Identität des MSP, betrieben auf Shared- oder dedizierter Infrastruktur — ist die realistische Antwort. Aenix baut diese end-to-end.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden), WHMCS-integriertes Billing. Ab 1.250 USD/Monat Support-Tier. Siehe auch: **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden), WHMCS-integriertes Billing. Ab 1.250 USD/Monat Support-Tier. Siehe auch: **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

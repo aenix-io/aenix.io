@@ -105,7 +105,7 @@ Tenant CRD with quota / RBAC / observability per workload. Tenant boundary enfor
 
 ### Sovereign AI infrastructure
 
-H100, H200, L40S, A100, Blackwell (B100/B200) GPU classes supported. Multi-tenant GPU scheduling. Customer-controlled keys for AI workloads. See [Sovereign AI](/solutions/sovereign-ai/) and [AI/ML Edition](/products/aenix-platform/ai-ml-edition/) for AI-specific feature bundle.
+H100, H200, L40S, A100, Blackwell (B100/B200) GPU classes supported. Multi-tenant GPU scheduling. Customer-controlled keys for AI workloads. See [Sovereign AI](/solutions/sovereign-ai/) and [AI & GPU](/products/aenix-platform/ai-ml-edition/) for AI-specific feature bundle.
 
 ### Education and training included
 

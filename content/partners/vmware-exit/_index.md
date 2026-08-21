@@ -51,7 +51,7 @@ If your clients are getting VMware renewal quotes they don't like, this is built
 <div class="grid-2x2">
 
 **1. Resell a ready platform**
-Sell [Ænix Platform](/partners/) (Public Cloud / ISP / Enterprise / IDP / AI/ML) under your brand. Up to **40% margin**, deal protection, sales kit, technical pre-sales, L3 support. The ISP Edition ships a white-label portal and WHMCS billing.
+Sell [Ænix Platform](/partners/) (Public Cloud / ISP / Enterprise / IDP / AI/ML) under your brand. Up to **40% margin**, deal protection, sales kit, technical pre-sales, L3 support. The Provider Edition ships a white-label portal and WHMCS billing.
 
 **2. Co-deliver / build with our team**
 Want your own differentiated cloud? Cozystack is the framework and **Aenix is your outsourced engineering team** — we run the [VMware migration](/migration/vmware/) and stand up a [white-label cloud](/services/white-label-cloud/) you own, filling the Kubernetes/KubeVirt gap without a hiring cycle.
@@ -99,7 +99,7 @@ Either way, the per-core license your client pays VMware becomes margin and recu
 ## FAQ
 
 **Do we resell or build?**
-Both are supported. Resell the ISP Edition for speed; co-build a differentiated cloud with us for your own IP. The partner call scopes which fits per deal.
+Both are supported. Resell the Provider Edition for speed; co-build a differentiated cloud with us for your own IP. The partner call scopes which fits per deal.
 
 **What margin can we make?**
 Up to 40% on Ænix Platform license + support via the [Partner Program](/partners/), plus recurring managed-services margin on top.
@@ -126,7 +126,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/partners/vmware-exit/ ; hreflang de → /de/partner/vmware-exit/, x-default EN.

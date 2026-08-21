@@ -10,7 +10,7 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Das Platform Engineering Maturity Assessment ist eine kostenlose Selbsteinschätzung, die Ihre Platform-Engineering-Praxis über acht Dimensionen auf einer 5-Stufen-Reife-Skala (Pre-platform bis Mature platform engineering) bewertet. Es richtet sich an Plattform-Teams, CTOs und VP Engineering, die ihren Reifegrad baselinen und Lücken vor der nächsten Investition identifizieren wollen. Aenix nutzt dasselbe Assessment während seiner Platform Readiness Assessments. Bewertet werden Workload-Portabilität, GitOps-Adoption, Observability, Secrets-Handhabung, Identity-Modell, Multi-Tenancy, Disaster-Recovery und Self-Service-Tiefe. Die meisten Outcomes empfehlen die Ænix Platform IDP Edition auf der Cozystack-Cloud-Foundation als strukturierten nächsten Schritt.**
+  **Das Platform Engineering Maturity Assessment ist eine kostenlose Selbsteinschätzung, die Ihre Platform-Engineering-Praxis über acht Dimensionen auf einer 5-Stufen-Reife-Skala (Pre-platform bis Mature platform engineering) bewertet. Es richtet sich an Plattform-Teams, CTOs und VP Engineering, die ihren Reifegrad baselinen und Lücken vor der nächsten Investition identifizieren wollen. Aenix nutzt dasselbe Assessment während seiner Platform Readiness Assessments. Bewertet werden Workload-Portabilität, GitOps-Adoption, Observability, Secrets-Handhabung, Identity-Modell, Multi-Tenancy, Disaster-Recovery und Self-Service-Tiefe. Die meisten Outcomes empfehlen die the Developer Self-Service module of Ænix Platform auf der Cozystack-Cloud-Foundation als strukturierten nächsten Schritt.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine 8-Dimensionen-Selbsteinschätzung, die die Platform-Engineering-Reife einer Organisation auf einer 5-Stufen-Skala bewertet."
@@ -21,7 +21,7 @@ quick_facts:
   - label: "Bewertete Dimensionen"
     value: "Workload-Portabilität, GitOps, Observability, Secrets, Identity, Multi-Tenancy, Disaster Recovery, Self-Service-Tiefe"
   - label: "Empfohlener nächster Schritt"
-    value: "Ænix Platform IDP Edition (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation"
+    value: "the Developer Self-Service module of Ænix Platform (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation"
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
@@ -36,14 +36,14 @@ faq:
   - q: "Was kostet das Assessment?"
     a: "Das Assessment ist kostenlos und als PDF plus interaktives Formular zum Herunterladen verfügbar. Cozystack selbst steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
   - q: "Was wird nach dem Assessment empfohlen?"
-    a: "Die meisten Outcomes empfehlen die Ænix Platform IDP Edition als strukturierten nächsten Schritt — den Internal-Developer-Platform-Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation mit KubeVirt für VMs und Container, Cilium-Networking und LINSTOR-Storage."
+    a: "Die meisten Outcomes empfehlen die the Developer Self-Service module of Ænix Platform als strukturierten nächsten Schritt — den Internal-Developer-Platform-Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation mit KubeVirt für VMs und Container, Cilium-Networking und LINSTOR-Storage."
   - q: "Was ist der Zusammenhang zwischen Aenix und Cozystack?"
     a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack, einem CNCF-Projekt. Aenix verkauft die produktisierte Ænix Platform plus Services; Cozystack bleibt Open Source unter Apache 2.0."
 ---
 
 **Eine 8-Dimensionen-Selbsteinschätzung, die Ihre Platform-Engineering-Praxis auf einer 5-Stufen-Reife-Skala bewertet. Verwendet von Aenix während Platform Readiness Assessment, um Organisationen vor Phase-2-Empfehlung zu baselinen.**
 
-> **Passt zu:** **[Ænix Platform IDP Edition](/de/produkte/aenix-platform/idp-edition/)** — Internal Developer Platform Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation. Die meisten Assessment-Outcomes empfehlen IDP Edition als strukturierten nächsten Schritt.
+> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)** — Internal Developer Platform Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation. Die meisten Assessment-Outcomes empfehlen Developer Self-Service als strukturierten nächsten Schritt.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
@@ -71,10 +71,10 @@ Für jede Dimension 5-Stufen-Rubrik (Pre-platform → Mature platform engineerin
 <div class="diagram__conn">ergibt</div>
 <div class="diagram__node"><b>Reifegrad-Baseline</b><div class="diagram__chips"><span>Reifegrad</span><span>priorisierte Lücken</span></div></div>
 <div class="diagram__conn">empfiehlt</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform IDP Edition</b><div class="diagram__chips"><span>GitLab</span><span>Argo CD</span><span>Golden Paths</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>the Developer Self-Service module of Ænix Platform</b><div class="diagram__chips"><span>GitLab</span><span>Argo CD</span><span>Golden Paths</span></div></div>
 </div>
 </div>
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

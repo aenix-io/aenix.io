@@ -3,7 +3,7 @@ title: "Cozystack vs OpenStack — head-to-head for OpenStack-fluent teams"
 description: "Both are open-source private cloud platforms. Both Apache 2.0. Both production-proven. The difference is generation and operational footprint."
 related_pages:
   - /alternatives/openstack-alternative
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /products/aenix-platform/public-cloud-edition/
   - /products/cozystack
 language: "en"
@@ -38,12 +38,12 @@ faq:
   - q: "Can Cozystack run virtual machines like OpenStack does?"
     a: "Yes. Cozystack runs VMs through KubeVirt and containers through Kubernetes on a single API, so virtual machines and containers share the same control plane, networking (Cilium/eBPF), and storage (LINSTOR/DRBD)."
   - q: "Who supports a Cozystack migration from OpenStack?"
-    a: "Aenix, the team behind the CNCF project Cozystack, offers the Ænix Platform plus migration services. The Public Cloud Edition targets large operators consolidating OpenStack at scale, and the ISP Edition targets hosting providers modernizing from OpenStack."
+    a: "Aenix, the team behind the CNCF project Cozystack, offers the Ænix Platform plus migration services. Provider Edition covers both cases: hosting providers modernizing off OpenStack, and large operators consolidating OpenStack at scale with a multi-region control plane."
 ---
 
 **Both are open-source private cloud platforms. Both Apache 2.0. Both production-proven. The difference is generation and operational footprint.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers modernizing from OpenStack; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators consolidating OpenStack at scale.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers modernizing from OpenStack, and [at operator scale](/products/aenix-platform/public-cloud-edition/) for large operators consolidating OpenStack.
 
 <div class="compare-elevated compare-elevated--col3">
 

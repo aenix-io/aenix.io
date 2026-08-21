@@ -17,7 +17,7 @@ secondary_keywords:
   - "Proxmox Alternative"
 related_pages:
   - /de/alternativen/proxmox-alternative/
-  - /de/produkte/aenix-platform/isp-edition/
+  - /de/produkte/aenix-platform/provider-edition/
   - /de/loesungen/data-sovereignty/
   - /de/dienstleistungen/build-private-cloud/
 faq:

@@ -288,7 +288,7 @@ Strong fit:
 Marginal fit:
 
 - Single ministry / agency procurement with smaller scope — may fit
-  Enterprise Edition rather than Public Cloud Edition
+  Enterprise Edition rather than Provider Edition
 
 Poor fit:
 

@@ -26,7 +26,7 @@ language: "de"
 
 ### Pfad 1 — Ænix-Platform-Kunden (Support gebündelt)
 
-Wenn Sie ein Ænix-Platform-Engagement haben (Public Cloud / ISP / Enterprise / IDP / AI/ML Edition), ist Enterprise-Support Teil des Engagement-Bundles. Spezifisches SLA passt zu Ihrem **Support-Tier** (unabhängig von der Edition):
+Wenn Sie ein Ænix-Platform-Engagement haben (Public Cloud / ISP / Enterprise / IDP / AI & GPU), ist Enterprise-Support Teil des Engagement-Bundles. Spezifisches SLA passt zu Ihrem **Support-Tier** (unabhängig von der Edition):
 
 - **Basic** ($1,250/Monat per 10 Nodes annual) — Geschäftszeiten-Support, 8-Stunden-Notfall-Reaktion
 - **Standard** ($3,000/Monat) — Geschäftszeiten-Support, 4-Stunden-Notfall-Reaktion, Prioritäts-Tickets
@@ -54,4 +54,4 @@ Coverage:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Hersteller von [Ænix Platform](/de/produkte/aenix-platform/) — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Hersteller von [Ænix Platform](/de/produkte/aenix-platform/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

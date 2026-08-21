@@ -24,7 +24,7 @@ quick_facts:
   - label: "Kernfunktion"
     value: "Kubernetes-native Plattform-Foundation: KubeVirt-Virtualisierung, Tenant-CRD-Mandantenfähigkeit, Managed Services, Cilium-Networking, LINSTOR-Storage, team-scoped Observability"
   - label: "Passende Edition"
-    value: "Ænix Platform IDP Edition — vollständige Internal Developer Platform mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates; Backstage UI optional als Front-End integrierbar"
+    value: "the Developer Self-Service module of Ænix Platform — vollständige Internal Developer Platform mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates; Backstage UI optional als Front-End integrierbar"
   - label: "Engagement"
     value: "Architektur-Review als Einstieg; produktisierte Ænix Platform plus Services in den Stufen Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise Custom"
 
@@ -34,13 +34,13 @@ faq:
   - q: "Warum dauern Self-Service-Pfade trotz Backstage immer noch Wochen?"
     a: "Weil das Engpass-Problem meist unter dem Portal liegt: eine fragmentierte Cloud-Foundation, fehlende Multi-Tenant-Garantien und ein nicht produktisierter Kubernetes-Cluster-Lifecycle. Backstage zeigt Golden Paths an, kann sie aber nicht selbst bereitstellen, wenn die Plattform darunter fehlt."
   - q: "Muss ich Backstage durch Cozystack ersetzen?"
-    a: "Nein. Cozystack und Backstage konkurrieren nicht. Cozystack ist die Plattform-Foundation, Backstage die Portal-Schicht darüber. Die Ænix Platform IDP Edition kann Backstage als Front-End integrieren, wenn der Kunde es bevorzugt."
+    a: "Nein. Cozystack und Backstage konkurrieren nicht. Cozystack ist die Plattform-Foundation, Backstage die Portal-Schicht darüber. Die the Developer Self-Service module of Ænix Platform kann Backstage als Front-End integrieren, wenn der Kunde es bevorzugt."
   - q: "Welche Ænix Platform Edition passt für eine Internal Developer Platform?"
-    a: "Die IDP Edition. Sie kombiniert die Cozystack-Foundation mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates zu einer vollständigen Internal Developer Platform. Eine Backstage-UI lässt sich optional als Front-End anbinden."
+    a: "Die Developer Self-Service. Sie kombiniert die Cozystack-Foundation mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates zu einer vollständigen Internal Developer Platform. Eine Backstage-UI lässt sich optional als Front-End anbinden."
   - q: "Ist Cozystack Open Source und wie ist die Lizenzierung?"
     a: "Cozystack steht unter Apache 2.0 und ist ein CNCF-Projekt (Sandbox seit dem 28.02.2025, Incubating erwartet für Spätsommer 2026). Es gibt keine CPU- oder Core-basierte Lizenzierung. Aenix verkauft die produktisierte Ænix Platform plus Services darum herum."
   - q: "Wie steige ich am besten ein, wenn Backstage bereits läuft?"
-    a: "Über ein Architektur-Review. Es klärt, ob das Problem im Portal oder in der Plattform-Foundation liegt, und ob die Ænix Platform IDP Edition mit Cozystack darunter die Self-Service-Pfade beschleunigt — mit Backstage als optionalem Front-End."
+    a: "Über ein Architektur-Review. Es klärt, ob das Problem im Portal oder in der Plattform-Foundation liegt, und ob die the Developer Self-Service module of Ænix Platform mit Cozystack darunter die Self-Service-Pfade beschleunigt — mit Backstage als optionalem Front-End."
 ---
 
 **Backstage (CNCF Incubating) ist exzellent in dem, was es ist: ein Service-Katalog und Developer-Portal mit einem starken Plugin-Ökosystem. Der Fehlgebrauch besteht darin, es als die Plattform selbst zu behandeln, wenn es die UI-/Discoverability-Schicht oben auf einer Plattform ist. Wenn Sie Backstage adoptiert haben und Self-Service-Pfade immer noch Wochen dauern — dann ist nicht Backstage das Problem, sondern die Plattform darunter.**
@@ -51,13 +51,13 @@ Cozystack liefert die zugrunde liegende Plattform, auf der Backstage (oder jedes
 <div class="diagram">
 <div class="diagram__node"><b>Backstage — Developer-Portal</b><div class="diagram__chips"><span>Service-Katalog</span><span>langsame Self-Service-Pfade</span></div></div>
 <div class="diagram__conn">sitzt auf</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform IDP Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Tenant-CRD</span><span>Apache 2.0</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>the Developer Self-Service module of Ænix Platform</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Tenant-CRD</span><span>Apache 2.0</span></div></div>
 <div class="diagram__conn">lässt funktionieren</div>
 <div class="diagram__node"><b>Internal Developer Platform</b><div class="diagram__chips"><span>GitLab-Automation</span><span>Golden-Path-Templates</span></div></div>
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform IDP Edition](/de/produkte/aenix-platform/idp-edition/)** — vollständige Internal Developer Platform mit Cloud-Foundation darunter. GitLab-Automation, Argo-CD-Workflows, Golden-Path-Templates. Die Backstage-UI kann als Front-End integriert werden, wenn der Kunde das bevorzugt; die Foundation darunter ist es, die die IDP funktionieren lässt.
+> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)** — vollständige Internal Developer Platform mit Cloud-Foundation darunter. GitLab-Automation, Argo-CD-Workflows, Golden-Path-Templates. Die Backstage-UI kann als Front-End integriert werden, wenn der Kunde das bevorzugt; die Foundation darunter ist es, die die IDP funktionieren lässt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

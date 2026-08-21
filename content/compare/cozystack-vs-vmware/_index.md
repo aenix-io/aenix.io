@@ -43,7 +43,7 @@ faq:
 
 For broader VMware-alternatives evaluation, see **[VMware alternatives listicle](/alternatives/vmware-alternatives/)**. For the focused vendor recommendation, see **[VMware alternative](/alternatives/vmware-alternative/)**. This page assumes you're already considering Cozystack specifically.
 
-> **Pairs with:** **[Ænix Platform](/products/aenix-platform/)** — turnkey commercial cloud-in-a-box on top of Cozystack. Five editions: ISP (hosting providers), Enterprise (regulated), Public Cloud (large operators), IDP (product engineering), AI/ML (AI-heavy). The right edition depends on your buyer profile post-VMware.
+> **Pairs with:** **[Ænix Platform](/products/aenix-platform/)** — turnkey commercial cloud-in-a-box on top of Cozystack. Two editions: Provider, if you sell cloud to customers, and Enterprise, if you run it for your own organisation. The right one depends on which side of that line you are on post-VMware.
 
 ---
 

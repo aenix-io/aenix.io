@@ -5,7 +5,7 @@ hero_subtitle: "Echte Ænix-Platform-Deployments aus Hosting, KI und Forschung"
 language: "de"
 ---
 
-**Fünf Deployments, unten ausführlich dokumentiert: wie das Estate vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der ISP Edition, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
+**Fünf Deployments, unten ausführlich dokumentiert: wie das Estate vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der Provider Edition, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
 
 ---
 
@@ -40,17 +40,17 @@ Ein Telekom-Betreiber und Systemintegrator baute eine Unternehmens-KI-Plattform 
 
 ## Quick facts
 
-- **Öffentliche Produktivkunden:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform ISP Edition)
+- **Öffentliche Produktivkunden:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform Provider Edition)
 - **Plattform-R&D-Engagements:** CSI-Driver-Entwicklung, Block-Storage-Forschung, Virtualisierungs-Plattform-Prototypen
 - **Ausführlich dokumentierte Deployments:** fünf, vertraglich anonymisiert, mit vollständiger Architektur und Zahlen (oben)
 - **Tier-1-europäische-Banken:** Mehr-Millionen-Euro Ænix Platform Enterprise Edition Engagements (NDA-geschützt; Namensnennung ab Mitte 2027)
-- **Engagement-Größen:** 1.250 USD/Monat (ISP Edition Support-Tier) bis zu mehrjährigen Programmen nach RFP
+- **Engagement-Größen:** 1.250 USD/Monat (Provider Edition Support-Tier) bis zu mehrjährigen Programmen nach RFP
 
 ---
 
 ## Case-Kategorien
 
-### Regionale Hosting-Anbieter (Ænix Platform ISP Edition)
+### Regionale Hosting-Anbieter (Ænix Platform Provider Edition)
 
 Produktive Deployments mit unserer hosting-spezifischen Edition. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, Multi-Tier-Reseller-Modell, erweiterter Service-Katalog, Tenant Lock/Suspension.
 
@@ -63,7 +63,7 @@ Produktive Deployments mit unserer hosting-spezifischen Edition. WHMCS-integrier
 - Cloupard
 - Cloudsy
 
-[Ænix Platform ISP Edition →](/de/produkte/aenix-platform/isp-edition/)
+[Ænix Platform Provider Edition →](/de/produkte/aenix-platform/provider-edition/)
 
 ### Tier-1-europäische-Banken-Engagements (NDA bis Mitte 2027)
 
@@ -83,7 +83,7 @@ CSI-Driver-Entwicklung für Shared-SAN-Umgebungen, Backup-System mit bis zu 75% 
 
 | Kundentyp | Was wir sagen können |
 |---|---|
-| Regionale Hosting-Anbieter | Namentlich (derzeit auf aenix.io gelistet); Deployment-Scope; Ænix Platform ISP Edition Nutzung |
+| Regionale Hosting-Anbieter | Namentlich (derzeit auf aenix.io gelistet); Deployment-Scope; Ænix Platform Provider Edition Nutzung |
 | Plattform-R&D für Ecosystem-Vendors | Projektname und -outcomes |
 | Tier-1-europäische-Banken | Anonymisiert nur ("Tier-1-europäische-Bank unter DORA-Scope") bis Mitte 2027 NDA-Abläufe |
 | Souveräne Cloud-Initiativen | Anonymisiert nur |
@@ -107,4 +107,4 @@ Erste NDA-Abläufe erwartet Mitte 2027. Sobald sie landen, werden namentliche Ca
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

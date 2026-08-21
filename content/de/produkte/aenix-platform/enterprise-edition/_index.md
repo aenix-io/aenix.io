@@ -95,7 +95,7 @@ Tenant CRD mit Quotas / RBAC / Observability per Workload. Tenant-Grenze erzwung
 
 ### Souveräne KI-Infrastruktur
 
-H100, H200, L40S, A100, Blackwell (B100/B200) GPU-Klassen unterstützt. Multi-Tenant-GPU-Scheduling. Kundenkontrollierte Schlüssel für KI-Workloads. Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) und [AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/) für KI-spezifisches Feature-Bundle.
+H100, H200, L40S, A100, Blackwell (B100/B200) GPU-Klassen unterstützt. Multi-Tenant-GPU-Scheduling. Kundenkontrollierte Schlüssel für KI-Workloads. Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) und [AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/) für KI-spezifisches Feature-Bundle.
 
 ### Bildung und Training inklusive
 

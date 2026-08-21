@@ -1,12 +1,12 @@
 ---
 title: "Cozystack vs Proxmox VE — head-to-head for SMB and multi-tenant scale"
 description: "Different scales. Different design centers. Both open source."
-related_pages: ["/alternatives/proxmox-alternative", "/products/aenix-platform/isp-edition/", "/products/cozystack"]
+related_pages: ["/alternatives/proxmox-alternative", "/products/aenix-platform/provider-edition/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cozystack and Proxmox VE are both open-source virtualization platforms, but they target different scales. Proxmox VE (AGPLv3) pairs KVM and LXC for SMB virtualization, labs, and single-tenant deployments under roughly 50 hosts. Cozystack (Apache 2.0) runs KubeVirt on Kubernetes, with a Tenant CRD for hard multi-tenancy, first-class managed databases and S3 object storage, and advanced GPU support (vGPU, MIG, time-slicing). It suits service providers and regulated multi-tenant environments that have outgrown Proxmox's design center. Aenix, the team behind Cozystack, sells the productized Ænix Platform plus services, including the ISP Edition cloud-in-a-box for hosting providers and regional clouds.**
+  **Cozystack and Proxmox VE are both open-source virtualization platforms, but they target different scales. Proxmox VE (AGPLv3) pairs KVM and LXC for SMB virtualization, labs, and single-tenant deployments under roughly 50 hosts. Cozystack (Apache 2.0) runs KubeVirt on Kubernetes, with a Tenant CRD for hard multi-tenancy, first-class managed databases and S3 object storage, and advanced GPU support (vGPU, MIG, time-slicing). It suits service providers and regulated multi-tenant environments that have outgrown Proxmox's design center. Aenix, the team behind Cozystack, sells the productized Ænix Platform plus services, including the Provider Edition cloud-in-a-box for hosting providers and regional clouds.**
 quick_facts:
   - label: "What it is"
     value: "A head-to-head comparison of Proxmox VE and Cozystack as open-source virtualization platforms, mapped to scale and tenancy needs."
@@ -32,12 +32,12 @@ faq:
   - q: "Does Cozystack support GPUs better than Proxmox VE?"
     a: "Proxmox VE offers GPU passthrough. Cozystack supports vGPU, MIG, and time-slicing, allowing GPUs to be shared across tenants and workloads, which matters for AI/ML and multi-tenant providers."
   - q: "What does Aenix offer on top of Cozystack?"
-    a: "Aenix is the team behind Cozystack and sells the productized Ænix Platform plus services. The ISP Edition is a turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox, with support tiers starting around $1,250/month."
+    a: "Aenix is the team behind Cozystack and sells the productized Ænix Platform plus services. The Provider Edition is a turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox, with support tiers starting around $1,250/month."
 ---
 
 **Different scales. Different design centers. Both open source.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox's design center. From $1,250/month support tier.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox's design center. From $1,250/month support tier.
 
 <div class="compare-elevated compare-elevated--col3">
 

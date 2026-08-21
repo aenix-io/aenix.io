@@ -222,7 +222,7 @@ the platform substrate produces beautiful catalogs over operational
 chaos. Adoption stalls.
 
 Fix: Backstage as the user-facing layer after the platform
-substrate is real. Aenix's IDP Edition can be paired with Backstage
+substrate is real. Aenix's Developer Self-Service can be paired with Backstage
 where the customer prefers; cozyportal also works.
 
 ### 3. Fragmentation without governance
@@ -280,7 +280,7 @@ initial setup.
 ### Workstream 3 — Cozystack-based platform substrate (where applicable)
 
 Foundational substrate built on Ænix Platform Enterprise Edition
-(for regulated organisations) or IDP Edition (for product-focused
+(for regulated organisations) or Developer Self-Service (for product-focused
 organisations). Multi-region, multi-DC, audit-isolated environments,
 DORA / NIS2 alignment where applicable.
 
@@ -314,12 +314,12 @@ Strong fit:
 
 Marginal fit:
 
-- 500-1,000 engineers — may fit IDP Edition (lighter scope) rather
+- 500-1,000 engineers — may fit Developer Self-Service (lighter scope) rather
   than full enterprise platform engineering engagement
 
 Poor fit:
 
-- Smaller organisations — IDP Edition or Platform Engineering
+- Smaller organisations — Developer Self-Service or Platform Engineering
   services are the right scope
 - Single-BU organisations regardless of engineering count — the
   governance overhead doesn't pay back
@@ -332,7 +332,7 @@ Poor fit:
   smaller-scope scope
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   the IDP-layer engagement
-- **[IDP Edition product page](/products/aenix-platform/idp-edition/)** —
+- **[Developer Self-Service product page](/products/aenix-platform/idp-edition/)** —
   for product-engineering-focused organisations
 - **[Enterprise Edition product page](/products/aenix-platform/enterprise-edition/)** —
   for regulated organisations
@@ -340,7 +340,7 @@ Poor fit:
   six production patterns
 - **[Platform engineering maturity model](/blog/2026/05/platform-engineering-maturity-model-2026/)** —
   five-stage, eight-dimension maturity model
-- **[IDP Edition — developer velocity economics](/blog/2026/05/idp-edition-developer-velocity-economics/)** —
+- **[Developer Self-Service — developer velocity economics](/blog/2026/05/idp-edition-developer-velocity-economics/)** —
   the IDP economic case
 - **[Build private cloud — 90-day playbook](/blog/2026/05/build-private-cloud-90-day-playbook/)** —
   for the substrate-build workstream

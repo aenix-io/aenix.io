@@ -1,11 +1,11 @@
 ---
 title: "Aenix products"
-description: "Aenix products — Ænix Platform (turnkey cloud-in-a-box, five editions), Cozystack (open-source CNCF project we maintain) and the Kubernetes Deep Dive course."
+description: "Aenix products — Ænix Platform (turnkey cloud-in-a-box, two editions), Cozystack (open-source CNCF project we maintain) and the Kubernetes Deep Dive course."
 hero_subtitle: "Turnkey platform, open-source Cozystack, and expert training"
 language: "en"
 ---
 
-**Three products, distinct audiences. Ænix Platform — our turnkey commercial cloud-in-a-box with five editions matching five buyer profiles. Cozystack — the open-source CNCF project we created and maintain. Kubernetes Deep Dive Course — for engineers learning the stack.**
+**Three products, distinct audiences. Ænix Platform — our turnkey commercial cloud-in-a-box with two editions plus two modules. Cozystack — the open-source CNCF project we created and maintain. Kubernetes Deep Dive Course — for engineers learning the stack.**
 
 ---
 
@@ -14,19 +14,19 @@ language: "en"
 
 ## Ænix Platform
 
-**Turnkey commercial cloud-in-a-box. Built on open-source Cozystack. Five editions for five buyer profiles. Hosting panel, billing, portals, payments, support — install, plug in users, start operating.**
+**Turnkey commercial cloud-in-a-box. Built on open-source Cozystack. Two editions: one for selling cloud, one for running your own. Hosting panel, billing, portals, payments, support — install, plug in users, start operating.**
 
 | Edition | For | What's distinct |
 |---|---|---|
-| **Public Cloud Edition** | Large public clouds, big banks operating own cloud, large telcos | Multi-hypervisor cloud control plane, multi-region, third-party integration |
-| **ISP Edition** | Small / mid hosting providers, MSPs, regional clouds, data centres | WHMCS integration, billing module + templates, tenant lock/suspension, migration from VMware/OpenStack/Virtuozzo. From $1,250/month |
+| **Provider Edition** | Large public clouds, big banks operating own cloud, large telcos | Multi-hypervisor cloud control plane, multi-region, third-party integration |
+| **Provider Edition** | Small / mid hosting providers, MSPs, regional clouds, data centres | WHMCS integration, billing module + templates, tenant lock/suspension, migration from VMware/OpenStack/Virtuozzo. From $1,250/month |
 | **Enterprise Edition** | Regulated enterprises (banks, insurance, public administration, telco, healthcare) | DORA / NIS2 architecture, multi-DC, hybrid sovereign, integrates with VMware/OpenNebula/OpenShift |
-| **IDP Edition** | Product / SaaS organizations with strong engineering teams | Internal Developer Platform layer — GitLab, Argo CD workflows, APIs |
-| **AI/ML Edition** | AI-heavy organizations, regulated AI deployments, GPU-heavy product companies | AI platform automation out of the box, ready blueprints, models, DBs |
+| **Developer Self-Service** | Product / SaaS organizations with strong engineering teams | Internal Developer Platform layer — GitLab, Argo CD workflows, APIs |
+| **AI & GPU** | AI-heavy organizations, regulated AI deployments, GPU-heavy product companies | AI platform automation out of the box, ready blueprints, models, DBs |
 
 Plus an entry tier — **Pure Cozystack with Ænix Support** — for product teams running on Hetzner / OVH / leased bare-metal who want vendor support without the commercial portal/billing layer.
 
-**Engagement size:** ISP Edition entry from $1,250/month support; Public Cloud / Enterprise / IDP / AI/ML full builds are quoted per RFP.
+**Engagement size:** Provider Edition entry from $1,250/month support; Public Cloud / Enterprise / IDP / AI/ML full builds are quoted per RFP.
 
 [Explore platform →](/products/aenix-platform/)
 
@@ -99,11 +99,11 @@ No. The course is for engineers who want to learn the stack. It's separate from 
 
 ### Which product should I look at first?
 
-- **Public-cloud operator / big bank / large telco:** [Ænix Platform Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)
-- **Hosting provider / MSP / regional cloud:** [Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)
+- **Public-cloud operator / big bank / large telco:** [Ænix Platform Provider Edition](/products/aenix-platform/public-cloud-edition/)
+- **Hosting provider / MSP / regional cloud:** [Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)
 - **Regulated bank / insurance / public sector:** [Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)
-- **Product / SaaS team:** [Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)
-- **AI-heavy / GPU-heavy:** [Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)
+- **Product / SaaS team:** [the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)
+- **AI-heavy / GPU-heavy:** [the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)
 - **Engineer evaluating the tech:** [Cozystack](https://cozystack.io)
 - **Engineer learning the stack:** [Kubernetes Deep Dive Course](/kubernetes-deep-dive/)
 

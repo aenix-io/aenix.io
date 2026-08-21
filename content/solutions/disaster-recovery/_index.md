@@ -152,4 +152,4 @@ The engagement runs as a **[Platform Readiness Assessment](/services/platform-re
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, available in five editions: Public Cloud, ISP, Enterprise, IDP, and AI/ML. We build sovereign disaster-recovery and business-continuity platforms for regulated organizations across the EU and DACH.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top. We build sovereign disaster-recovery and business-continuity platforms for regulated organizations across the EU and DACH.*

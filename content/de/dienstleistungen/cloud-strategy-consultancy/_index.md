@@ -42,7 +42,7 @@ faq:
   - q: "Welche Technologie steht hinter der empfohlenen Plattform?"
     a: "Die Ænix Platform basiert auf Cozystack: KubeVirt für VMs und Container auf einer einzigen Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRDs für Mandantenfähigkeit. Lizenziert unter Apache 2.0, ohne CPU-/Core-basierte Lizenzkosten."
   - q: "Was passiert nach der Strategie-Phase?"
-    a: "Die Strategie mündet in eine Phase-2-Implementations-Roadmap, die Aenix als lieferbares Build-Engagement umsetzen kann. Die Ænix Platform ist in fünf Editions verfügbar; das Engagement enthält eine passende Edition-Empfehlung zu Ihrem Buyer-Profil."
+    a: "Die Strategie mündet in eine Phase-2-Implementations-Roadmap, die Aenix als lieferbares Build-Engagement umsetzen kann. Die Ænix Platform ist in zwei Editions verfügbar; das Engagement enthält eine passende Edition-Empfehlung zu Ihrem Buyer-Profil."
 ---
 
 **Cloud-Strategie ist eine Frage, die Architekten und Senior-Engineers besser beantworten können als Management-Berater. Aenix führt Cloud-Strategie-Engagements als Teil desselben Platform Readiness Assessments durch, das umsetzbare Architektur liefert — ein schriftlicher Bericht mit benannten Workloads, Kosten und Timelines, kein 200-seitiger Transformationsplan.**

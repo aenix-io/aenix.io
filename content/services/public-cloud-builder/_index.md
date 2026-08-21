@@ -4,7 +4,7 @@ description: "Hosting providers, telcos, and regional operators in 2026 face the
 related_pages:
   - /services/private-cloud-consulting
   - /products/aenix-platform/public-cloud-edition/
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /products/cozystack
   - /alternatives/vmware-alternatives
 language: "en"
@@ -26,7 +26,7 @@ quick_facts:
   - label: "Engagement timeline"
     value: "Free 30-minute discovery call, 4-8 week architecture and product-readiness assessment, then 6-18 month implementation"
   - label: "Productized option"
-    value: "Ænix Platform ISP Edition (from $1,250/month) for small / mid providers; Public Cloud Edition for multi-region operators"
+    value: "Ænix Platform Provider Edition (from $1,250/month) for small / mid providers; Provider Edition for multi-region operators"
 faq:
   - q: "What does it take to launch a public cloud product on Cozystack?"
     a: "A multi-tenant architecture using the Tenant CRD, a self-service customer portal, a service catalog (VMs, Kubernetes, managed databases, S3, GPU), billing integration via WHMCS, and go-to-market design covering pricing, onboarding, and SLAs. Aenix delivers this through a discovery call, a 4-8 week readiness assessment, and a 6-18 month implementation."
@@ -37,16 +37,16 @@ faq:
   - q: "Is Cozystack open source and free of per-core licensing?"
     a: "Yes. Cozystack is licensed under Apache 2.0 with no per-CPU or per-core licensing. It runs VMs and containers on a single Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage. Aenix sells the productized Ænix Platform and services on top."
   - q: "What is the difference between the consulting service and Ænix Platform editions?"
-    a: "The public cloud builder service covers architecture, product-readiness, and go-to-market work for launching a cloud product. Ænix Platform editions are the productized software foundation: ISP Edition (from $1,250/month, WHMCS-integrated) for small and mid providers, and Public Cloud Edition for multi-region operators."
+    a: "The public cloud builder service covers architecture, product-readiness, and go-to-market work for launching a cloud product. Ænix Platform editions are the productized software foundation: Provider Edition (from $1,250/month, WHMCS-integrated) for small and mid providers, and Provider Edition for multi-region operators."
   - q: "How long until first customers are onboarded?"
     a: "After a free 30-minute discovery call, the architecture and product-readiness assessment runs 4-8 weeks, followed by a 6-18 month implementation that builds the platform, onboarding workflows, and the first customer cohort. An optional managed-services phase can cover the early ramp."
 ---
 
 **Hosting providers, telcos, and regional operators in 2026 face the question: how do we offer a credible cloud product to enterprise customers without becoming a hyperscaler? Demand for sovereign, regional, and specialty cloud is rising, but shipping one means solving multi-tenancy, billing, and self-service operations — not just standing up VMs.**
 
-Aenix builds customer-facing public cloud products on Cozystack — the open-source Kubernetes-native platform that powers Ænix Platform ISP Edition deployments at regional hosting providers and several other regional cloud launches.
+Aenix builds customer-facing public cloud products on Cozystack — the open-source Kubernetes-native platform that powers Ænix Platform Provider Edition deployments at regional hosting providers and several other regional cloud launches.
 
-> **Pairs with:** **[Ænix Platform Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large public-cloud operators (multi-region, cloud-like UX, multi-hypervisor); **[ISP Edition](/products/aenix-platform/isp-edition/)** for small / mid hosting providers and regional clouds (WHMCS-integrated, productized installer, from $1,250/month).
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large public-cloud operators (multi-region, cloud-like UX, multi-hypervisor); **[Provider Edition](/products/aenix-platform/provider-edition/)** for small / mid hosting providers and regional clouds (WHMCS-integrated, productized installer, from $1,250/month).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -126,7 +126,7 @@ Pricing model design, customer-onboarding workflow, SLA design, regulatory posit
 
 {{< clients >}}
 
-Public references: regional hosting providers running Ænix Platform ISP Edition (currently listed on aenix.io customer logos). Tier-1 European bank engagements and several regional sovereign-cloud launches are under NDA until mid-2027. Written up in detail: [a Swiss provider's commercial public cloud across three data centres](/case-studies/sovereign-public-cloud/).
+Public references: regional hosting providers running Ænix Platform Provider Edition (currently listed on aenix.io customer logos). Tier-1 European bank engagements and several regional sovereign-cloud launches are under NDA until mid-2027. Written up in detail: [a Swiss provider's commercial public cloud across three data centres](/case-studies/sovereign-public-cloud/).
 
 {{< quote-carousel >}}
 

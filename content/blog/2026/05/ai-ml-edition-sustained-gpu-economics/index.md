@@ -1,13 +1,13 @@
 ---
-title: "AI/ML Edition — when sustained-inference economics beat hyperscaler GPU"
-description: "Long-form companion to the AI/ML Edition page: GPU economics for sustained inference, multi-tenant GPU scheduling, and when dedicated AI infra pays back."
+title: "AI & GPU — when sustained-inference economics beat hyperscaler GPU"
+description: "Long-form companion to the AI & GPU page: GPU economics for sustained inference, multi-tenant GPU scheduling, and when dedicated AI infra pays back."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
 topics: ["AI/ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
 language: "en"
 companion_landing: "/products/aenix-platform/ai-ml-edition/"
-companion_label: "See AI/ML Edition product details →"
+companion_label: "See AI & GPU product details →"
 quiz:
   title: "Test yourself: sustained GPU economics"
   questions:
@@ -43,18 +43,18 @@ quiz:
       explanation: "Pitfall 2 (model-API-as-private-LLM) says the data still leaves the customer perimeter even when the privacy clause is strong, and for regulated-data workloads this fails the substantive requirement."
 ---
 
-**Long-form companion to the [AI/ML Edition landing](/products/aenix-platform/ai-ml-edition/). Walks through GPU economics for sustained inference, multi-tenant GPU scheduling, model selection trade-offs, and the architectural decisions that make dedicated AI infrastructure pay back over Year 2 — versus continuing on hyperscaler GPU or proprietary model APIs.**
+**Long-form companion to the [AI & GPU landing](/products/aenix-platform/ai-ml-edition/). Walks through GPU economics for sustained inference, multi-tenant GPU scheduling, model selection trade-offs, and the architectural decisions that make dedicated AI infrastructure pay back over Year 2 — versus continuing on hyperscaler GPU or proprietary model APIs.**
 
 The "should we run our own AI infrastructure?" conversation has shifted
 in 2026. For sporadic experimentation, hyperscaler GPU on demand is
 still right. For sustained 24/7 inference, the math has moved
 substantially. This article walks through where the crossover sits,
-what an AI platform actually costs to operate, and what AI/ML Edition
+what an AI platform actually costs to operate, and what AI & GPU
 ships that you'd otherwise have to build.
 
 ## The crossover point — sustained inference
 
-The economics question that drives most AI/ML Edition engagements:
+The economics question that drives most AI & GPU engagements:
 *at what utilisation does our own GPU infrastructure beat hyperscaler
 GPU?*
 
@@ -91,7 +91,7 @@ when fit assessment finds the workload profile.
 ## What goes into a real AI platform
 
 GPU is the visible cost line. The real platform has six layers, each
-of which AI/ML Edition standardises:
+of which AI & GPU standardises:
 
 ### Layer 1 — Hardware
 
@@ -110,7 +110,7 @@ inference patterns.
 
 ### Layer 2 — Platform
 
-This is where AI/ML Edition adds substantial value over rolling your
+This is where AI & GPU adds substantial value over rolling your
 own. Cozystack provides:
 
 - **KubeVirt** for VM-bound AI workloads (legacy notebook environments,
@@ -131,7 +131,7 @@ scheduling works.
 
 vLLM is the 2026 default for transformer-model inference (PagedAttention
 delivers high throughput). NVIDIA Triton fits mixed workloads (LLM +
-vision + classical ML). TGI has niche features. AI/ML Edition includes
+vision + classical ML). TGI has niche features. AI & GPU includes
 both vLLM and Triton, pre-integrated with the platform autoscaling
 and observability.
 
@@ -153,7 +153,7 @@ range for general use, smaller models (Phi, Gemma) for cost-sensitive
 paths, plus an embedding model for RAG. Fine-tuning happens for
 domain-specific accuracy needs.
 
-AI/ML Edition pre-deploys curated open-weight models in the cluster
+AI & GPU pre-deploys curated open-weight models in the cluster
 registry. Customer can add others; Aenix engagement covers compatibility
 testing.
 
@@ -188,7 +188,7 @@ underperform expectations. The operational surface includes:
 - **On-call** — GPU failures, OOM events, queue backups
 - **Capacity planning** — when to buy more GPUs? When to retire older?
 
-AI/ML Edition ships VictoriaMetrics + VictoriaLogs with AI-specific
+AI & GPU ships VictoriaMetrics + VictoriaLogs with AI-specific
 metrics out of the box (token/sec per tenant, latency percentiles per
 model version, cost-per-token per tenant) plus a capacity-planning
 dashboard tied to the GPU sizing tables.
@@ -208,7 +208,7 @@ multiple data-science teams.
 **Pattern 3 — inference + fine-tuning + RAG full stack.** 32-512 GPUs
 across roles. Vector DB, embedding model, LLM gateway. Best for:
 financial services, healthcare, public sector with sustained AI
-programme. This is the typical AI/ML Edition flagship deployment.
+programme. This is the typical AI & GPU flagship deployment.
 
 **Pattern 4 — air-gapped sovereign deployment.** No internet egress;
 updates through controlled channels. Customer-supplied hardware,
@@ -247,7 +247,7 @@ build-out but under-staffs operations ends up with a stack that "works"
 but isn't audit-grade or business-continuity-grade. Plan operations
 team size for sustained workload, not PoC.
 
-## When AI/ML Edition is the right answer
+## When AI & GPU is the right answer
 
 Strong fit:
 
@@ -281,7 +281,7 @@ Poor fit:
   using the [Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/) framework plus Aenix experience
 - **Pilot engagement** (3-6 months) — defined slice: one workload
   class, one tenant, one model family
-- **Full AI/ML Edition build** (6-12 months) — production AI
+- **Full AI & GPU build** (6-12 months) — production AI
   infrastructure with all targeted workload types
 - **Managed retainer** (ongoing) — Aenix runs the AI platform under
   SLA
@@ -290,7 +290,7 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 
 ## Where to dig deeper
 
-- **[AI/ML Edition landing](/products/aenix-platform/ai-ml-edition/)** —
+- **[AI & GPU landing](/products/aenix-platform/ai-ml-edition/)** —
   feature list, GPU sizing tables, edition-specific FAQ
 - **[Sovereign AI services](/solutions/sovereign-ai/)** — buyer-trigger
   landing for sovereign AI
@@ -307,6 +307,6 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 
 *Aenix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. Cozystack was included in the CNCF CNAI Landscape
-in May 2025. Our AI/ML Edition engagements are NDA-protected; anonymized
+in May 2025. Our AI & GPU engagements are NDA-protected; anonymized
 phrasing pattern is "Sovereign AI infrastructure for regulated
 organisation at scale."*

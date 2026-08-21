@@ -45,7 +45,7 @@ faq:
 
 **Beide KubeVirt-basiert. Unterschiedliche kommerzielle Modelle, unterschiedliche operative Footprints.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die OpenShift-Alternative evaluieren; **[IDP Edition](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die OpenShift-Alternative evaluieren; **[Developer Self-Service](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams.
 
 <div class="compare-elevated compare-elevated--col3">
 
@@ -79,4 +79,4 @@ faq:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

@@ -1,14 +1,14 @@
 ---
-title: "Ænix Platform IDP Edition"
-description: "Ænix Platform IDP Edition adds a self-service Internal Developer Platform on the Cozystack cloud foundation: GitLab CI/CD, Argo CD GitOps, self-service APIs."
+title: "Internal developer platform — the self-service module of Ænix Platform"
+description: "the Developer Self-Service module of Ænix Platform adds a self-service Internal Developer Platform on the Cozystack cloud foundation: GitLab CI/CD, Argo CD GitOps, self-service APIs."
 type: "page"
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer_image: "/images/cozystack-screenshot.png"
-direct_answer_image_alt: "Ænix Platform console — IDP Edition"
+direct_answer_image_alt: "Ænix Platform console — Developer Self-Service"
 direct_answer: |
-  **Ænix Platform IDP Edition is a productized Internal Developer Platform layer that Aenix builds on top of Cozystack, the open-source Kubernetes-native cloud foundation it created and maintains. It is for product and SaaS organizations with strong engineering teams (typically 300+ engineers, though smaller high-DevEx teams also fit) that want self-service developer experience without building a platform-engineering function from scratch. It pairs a multi-tenant cloud substrate (KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD tenancy) with pre-integrated GitLab CI/CD, Argo CD GitOps workflows, self-service APIs, service-creation wizards, golden-path templates, and engineering productivity dashboards. Delivered as a project plus optional managed retainer, it gives engineers self-service environments, databases, and clusters without ticket queues.**
+  **the Developer Self-Service module of Ænix Platform is a productized Internal Developer Platform layer that Aenix builds on top of Cozystack, the open-source Kubernetes-native cloud foundation it created and maintains. It is for product and SaaS organizations with strong engineering teams (typically 300+ engineers, though smaller high-DevEx teams also fit) that want self-service developer experience without building a platform-engineering function from scratch. It pairs a multi-tenant cloud substrate (KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD tenancy) with pre-integrated GitLab CI/CD, Argo CD GitOps workflows, self-service APIs, service-creation wizards, golden-path templates, and engineering productivity dashboards. Delivered as a project plus optional managed retainer, it gives engineers self-service environments, databases, and clusters without ticket queues.**
 quick_facts:
   - label: "What it is"
     value: "A productized Internal Developer Platform layer built by Aenix on top of the Cozystack Kubernetes-native cloud foundation."
@@ -25,19 +25,21 @@ quick_facts:
   - label: "Foundation"
     value: "KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
 faq:
-  - q: "How is IDP Edition different from running open-source Cozystack ourselves?"
-    a: "Cozystack provides the multi-tenant cloud foundation. IDP Edition adds the platform-product layer on top: pre-integrated GitLab and Argo CD, self-service APIs, service-creation wizards, golden-path templates, productivity dashboards, and Aenix's IDP design and delivery experience, so the platform-engineering team does not start from zero."
-  - q: "How does IDP Edition compare to Backstage?"
-    a: "Backstage is a UI framework, not an IDP by itself. IDP Edition includes the underlying cloud foundation, the GitLab and Argo CD integration, the self-service APIs, and the golden-path patterns that turn a Backstage-style UI into real self-service. Backstage UI can be used as the front-end if preferred."
-  - q: "Is IDP Edition only for organizations with 300+ engineers?"
+  - q: "How is Developer Self-Service different from running open-source Cozystack ourselves?"
+    a: "Cozystack provides the multi-tenant cloud foundation. Developer Self-Service adds the platform-product layer on top: pre-integrated GitLab and Argo CD, self-service APIs, service-creation wizards, golden-path templates, productivity dashboards, and Aenix's IDP design and delivery experience, so the platform-engineering team does not start from zero."
+  - q: "How does Developer Self-Service compare to Backstage?"
+    a: "Backstage is a UI framework, not an IDP by itself. Developer Self-Service includes the underlying cloud foundation, the GitLab and Argo CD integration, the self-service APIs, and the golden-path patterns that turn a Backstage-style UI into real self-service. Backstage UI can be used as the front-end if preferred."
+  - q: "Is Developer Self-Service only for organizations with 300+ engineers?"
     a: "That is the typical scale where IDP investment pays back, but smaller organizations with strong developer-experience focus or fast-growing engineering teams can fit. A discovery call confirms whether the scope makes sense."
-  - q: "Can we run IDP Edition on hyperscaler infrastructure?"
-    a: "Yes. Cozystack and IDP Edition run on hyperscaler bare-metal or dedicated instances when sovereignty is not binding. More common is customer-controlled hardware such as an own data center, colocation, or providers like Hetzner or OVH."
-  - q: "Does IDP Edition integrate with our existing CI?"
+  - q: "Can we run Developer Self-Service on hyperscaler infrastructure?"
+    a: "Yes. Cozystack and Developer Self-Service run on hyperscaler bare-metal or dedicated instances when sovereignty is not binding. More common is customer-controlled hardware such as an own data center, colocation, or providers like Hetzner or OVH."
+  - q: "Does Developer Self-Service integrate with our existing CI?"
     a: "Yes. GitLab integration is pre-built, and GitHub, Bitbucket, and other systems are supported via standard webhooks and Argo CD patterns. Templates cover common workload types such as web service, worker, batch job, and ML pipeline."
-  - q: "What does IDP Edition cost and how long does it take?"
+  - q: "What does Developer Self-Service cost and how long does it take?"
     a: "Pricing is a project plus an optional managed retainer, quoted per RFP after scoping. A typical IDP build reaches production in 6-12 months, shorter for golden-path-only scope. Engagements start with a free 30-minute discovery call."
 ---
+
+> **This is the developer self-service module.** Ænix Platform has two editions — [Provider](/products/aenix-platform/provider-edition/) and [Enterprise](/products/aenix-platform/enterprise-edition/) — and this capability extends either one. Most teams buy it with Enterprise Edition, as the layer their own developers touch.
 
 **An Internal Developer Platform layer on top of a Kubernetes-native cloud. GitLab automation, Argo CD workflows, and APIs — so your engineers spend less time on routine work and more on shipping product. Includes the full Cozystack-based cloud underneath: tenancy, observability, secrets, identity, multi-cluster.**
 
@@ -48,7 +50,7 @@ faq:
 
 ---
 
-## What's included in IDP Edition
+## What's included in Developer Self-Service
 
 ### Internal Developer Platform layer
 
@@ -92,7 +94,7 @@ Platform-engineering team training as part of the engagement. Course (Kubernetes
 
 ---
 
-## Who buys IDP Edition
+## Who buys Developer Self-Service
 
 | Buyer | Typical engagement |
 |---|---|
@@ -102,11 +104,11 @@ Platform-engineering team training as part of the engagement. Course (Kubernetes
 
 ---
 
-## Why IDP Edition over alternatives
+## Why Developer Self-Service over alternatives
 
-| Vs. | Why IDP Edition |
+| Vs. | Why Developer Self-Service |
 |---|---|
-| **Building IDP on Backstage from scratch** | Backstage is a UI framework. IDP Edition includes the underlying cloud foundation (multi-tenant K8s, DBs, storage, identity, observability) plus the IDP layer on top. Significantly faster time to production. |
+| **Building IDP on Backstage from scratch** | Backstage is a UI framework. Developer Self-Service includes the underlying cloud foundation (multi-tenant K8s, DBs, storage, identity, observability) plus the IDP layer on top. Significantly faster time to production. |
 | **Hyperscaler "developer platforms"** (AWS Proton, GCP Cloud Workstations, etc.) | Not bound to one hyperscaler. Cozystack-based foundation runs on customer-controlled hardware or any infrastructure. No data egress costs for cross-team interactions. |
 | **Heroku / fly.io / Render-style PaaS** | Multi-tenant by design for organizations operating their own platform. No per-app pricing. Customer-controlled — appropriate for regulated workloads. |
 | **Custom in-house IDP** | Aenix has built this pattern many times — engagement avoids the multi-year build path. Customer engineering team focuses on golden paths specific to their org, not foundation. |
@@ -117,7 +119,7 @@ Platform-engineering team training as part of the engagement. Course (Kubernetes
 
 Project plus managed retainer, quoted per RFP. Discovery call to scope.
 
-[Discuss IDP Edition →](/contact/?edition=idp)
+[Discuss Developer Self-Service →](/contact/?edition=idp)
 
 ---
 
@@ -138,14 +140,14 @@ Project plus managed retainer, quoted per RFP. Discovery call to scope.
 
 ## Customer evidence
 
-IDP Edition customers are currently NDA-protected. Product / SaaS engagements active. Anonymized phrasing pattern: "Mid-large product company building IDP for 300+ engineers".
-### How is IDP Edition different from running open-source Cozystack ourselves?
+Developer Self-Service customers are currently NDA-protected. Product / SaaS engagements active. Anonymized phrasing pattern: "Mid-large product company building IDP for 300+ engineers".
+### How is Developer Self-Service different from running open-source Cozystack ourselves?
 
-Cozystack provides the multi-tenant cloud foundation — a strong substrate for an IDP. IDP Edition adds the platform-product layer on top: GitLab + Argo CD pre-integration, APIs for self-service, service-creation wizards, golden-path templates, engineering productivity dashboards, and Aenix's IDP design + delivery experience. For organizations that want IDP-as-product and have not built one before, this saves 12-24 months of platform-engineering team-build.
+Cozystack provides the multi-tenant cloud foundation — a strong substrate for an IDP. Developer Self-Service adds the platform-product layer on top: GitLab + Argo CD pre-integration, APIs for self-service, service-creation wizards, golden-path templates, engineering productivity dashboards, and Aenix's IDP design + delivery experience. For organizations that want IDP-as-product and have not built one before, this saves 12-24 months of platform-engineering team-build.
 
 ### How does this compare to Backstage?
 
-Backstage is a UI framework — useful but not an IDP by itself. IDP Edition includes the underlying cloud foundation, the GitLab + Argo CD integration, the APIs, and the golden-path patterns that turn Backstage-style UI into actual self-service capability. We can integrate Backstage UI as the front-end if customer prefers; the foundation underneath is what makes the IDP work.
+Backstage is a UI framework — useful but not an IDP by itself. Developer Self-Service includes the underlying cloud foundation, the GitLab + Argo CD integration, the APIs, and the golden-path patterns that turn Backstage-style UI into actual self-service capability. We can integrate Backstage UI as the front-end if customer prefers; the foundation underneath is what makes the IDP work.
 
 ### Is this only for orgs with 300+ engineers?
 
@@ -155,9 +157,9 @@ That's the typical scale where IDP investment pays back, but smaller organizatio
 
 Yes. Pilot scope often = top-3 workload types (web service, worker, database-backed app) with golden paths and first squad onboarded. Full IDP scope expands from there.
 
-### Can we run IDP Edition on hyperscaler infrastructure?
+### Can we run Developer Self-Service on hyperscaler infrastructure?
 
-Yes — Cozystack and IDP Edition run on hyperscaler bare-metal / dedicated instances when sovereignty isn't binding. More common is customer-controlled hardware (own DC, colocation, Hetzner / OVH).
+Yes — Cozystack and Developer Self-Service run on hyperscaler bare-metal / dedicated instances when sovereignty isn't binding. More common is customer-controlled hardware (own DC, colocation, Hetzner / OVH).
 
 ### Does it integrate with our existing CI?
 
@@ -175,4 +177,4 @@ Book a discovery call. Bring your platform-engineering maturity self-assessment 
 
 ---
 
-*Ænix Platform IDP Edition is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Aenix is the open-core company.*
+*the Developer Self-Service module of Ænix Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Aenix is the open-core company.*

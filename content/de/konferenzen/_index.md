@@ -62,4 +62,4 @@ Für Einladungen: [Discovery-Call buchen](/de/kontakt/) und "Speaking-Einladung"
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/aenix-platform/) — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/aenix-platform/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

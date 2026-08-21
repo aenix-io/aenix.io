@@ -279,7 +279,7 @@ Strong fit:
 Marginal fit:
 
 - Smaller banks where the budget envelope for a multi-year programme
-  isn't yet sized for it; ISP Edition with sovereignty-focused
+  isn't yet sized for it; Provider Edition with sovereignty-focused
   architecture may bridge
 
 Poor fit:

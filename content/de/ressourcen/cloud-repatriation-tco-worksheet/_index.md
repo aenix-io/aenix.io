@@ -18,7 +18,7 @@ quick_facts:
   - label: "Versteckte Kosten"
     value: "Modelliert Egress, Idle/Over-sized Ressourcen, RI/Savings-Plans-Underutilisation und Hyperscaler-Managed-Service-Premiums"
   - label: "Ziel-Plattform"
-    value: "Jede Ænix Platform Edition; Repatriation-Destination je nach Buyer-Profil (ISP, Enterprise oder Public Cloud Edition)"
+    value: "Jede Ænix Platform Edition; Repatriation-Destination je nach Buyer-Profil (ISP, Enterprise oder Provider Edition)"
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
@@ -31,7 +31,7 @@ faq:
   - q: "Brauche ich Cozystack oder die Ænix Platform, um das Worksheet zu nutzen?"
     a: "Nein. Das Template ist anbieterneutral und funktioniert für jede Repatriation-Destination. Wenn Sie eine Ziel-Plattform suchen, modelliert es die Kosten einer Ænix-Platform-Umgebung (Cozystack-basiert: KubeVirt, Cilium, LINSTOR) realistisch mit, aber das Worksheet selbst setzt kein bestimmtes Produkt voraus."
   - q: "Welche Ænix Platform Edition passt zu meinem Repatriation-Case?"
-    a: "Die Destination hängt vom Buyer-Profil ab: Hosting-Anbieter und regionale Clouds passen zur ISP Edition, regulierte Unternehmen zur Enterprise Edition und große Betreiber zur Public Cloud Edition. Alle Editions basieren auf demselben Open-Source-Kern Cozystack."
+    a: "Die Destination hängt vom Buyer-Profil ab: Hosting-Anbieter und regionale Clouds passen zur Provider Edition, regulierte Unternehmen zur Enterprise Edition und große Betreiber zur Provider Edition. Alle Editions basieren auf demselben Open-Source-Kern Cozystack."
   - q: "Was kostet die Ænix Platform als Repatriation-Ziel?"
     a: "Die Ænix Platform wird in Stufen angeboten: Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise als individuelles Angebot. Der Open-Source-Kern Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
   - q: "Über welchen Zeitraum vergleicht das Worksheet die Kosten?"
@@ -40,7 +40,7 @@ faq:
 
 **Excel / Google Sheets Template, das Ihnen erlaubt, Ihren tatsächlichen Public-Cloud-Spend einzugeben und einen ehrlichen TCO-Vergleich gegen Private Cloud zu erhalten. Modelliert versteckte Kosten (Egress, ungenutzte Ressourcen, Commitment-Underutilisation, Hyperscaler-Managed-Service-Premiums) plus realistische Destination-Kosten.**
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — Repatriation-Destination hängt vom Buyer-Profil ab. Hosting-Anbieter / regionale Clouds → ISP Edition. Regulierte Unternehmen → Enterprise Edition. Große Betreiber → Public Cloud Edition.
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — Repatriation-Destination hängt vom Buyer-Profil ab. Hosting-Anbieter / regionale Clouds → Provider Edition. Regulierte Unternehmen → Enterprise Edition. Große Betreiber → Provider Edition.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
@@ -82,4 +82,4 @@ faq:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

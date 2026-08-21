@@ -1,10 +1,10 @@
 ---
-title: "Ænix Platform Public Cloud Edition"
+title: "Ænix Platform Provider Edition"
 description: "Multi-Hypervisor-Control-Plane für große Public Clouds, Banken und Telcos: Multi-Region, turnkey Portal, Billing und Payments — gebaut auf Cozystack."
 type: "page"
 language: "de"
 direct_answer: |
-  **Die Ænix Platform Public Cloud Edition ist eine turnkey Public-Cloud-Control-Plane für große Betreiber — Public-Cloud-Unternehmen, große Banken mit eigener Cloud und nationale Telcos. Sie orchestriert KubeVirt-VMs und -Container über eine einzige Kubernetes-API und integriert sich mit bestehender VMware-, OpenStack-, OpenNebula- und OpenShift-Infrastruktur (Multi-Hypervisor, Multi-Region). Sie baut auf dem Open-Source-Projekt Cozystack (Apache 2.0, CNCF) auf und ergänzt es um Multi-Region-Control-Plane, Billing-Backend und -Frontend, Payment-Integrationen, gebrandetes Kundenportal, produktisierten Installer, Enterprise-SLA und dedizierten Support. Aenix liefert die Plattform plus Engineering-Services für mehrjährige Programme, Angebot nach RFP.**
+  **Die Ænix Platform Provider Edition ist eine turnkey Public-Cloud-Control-Plane für große Betreiber — Public-Cloud-Unternehmen, große Banken mit eigener Cloud und nationale Telcos. Sie orchestriert KubeVirt-VMs und -Container über eine einzige Kubernetes-API und integriert sich mit bestehender VMware-, OpenStack-, OpenNebula- und OpenShift-Infrastruktur (Multi-Hypervisor, Multi-Region). Sie baut auf dem Open-Source-Projekt Cozystack (Apache 2.0, CNCF) auf und ergänzt es um Multi-Region-Control-Plane, Billing-Backend und -Frontend, Payment-Integrationen, gebrandetes Kundenportal, produktisierten Installer, Enterprise-SLA und dedizierten Support. Aenix liefert die Plattform plus Engineering-Services für mehrjährige Programme, Angebot nach RFP.**
 quick_facts:
   - label: "Was es ist"
     value: "Turnkey Public-Cloud-Control-Plane (Multi-Hypervisor, Multi-Region) für große Cloud-Betreiber, Banken mit eigener Cloud und nationale Telcos, gebaut auf Cozystack"
@@ -21,19 +21,21 @@ quick_facts:
   - label: "Regulatorik"
     value: "Vorvalidiert gegen DORA / NIS2 / ISO 27001 / SOC 2, wenn der Betreiber selbst eine regulierte Entität ist"
 faq:
-  - q: "Wie unterscheidet sich Public Cloud Edition vom Selbstbetrieb von Open-Source-Cozystack?"
-    a: "Cozystack ist eine Kubernetes-native Multi-Tenant-Cloud-Plattform, endet aber vor der Operator-Surface, die ein echtes Cloud-Geschäft braucht. Public Cloud Edition ergänzt Multi-Region-Control-Plane, Billing-Backend und -Frontend, Payment-Integrationen, kundenseitige Portal-Anpassung, produktisierten Installer, Enterprise-SLA und dedizierten Support."
-  - q: "Wie unterscheidet sich Public Cloud Edition von der Enterprise Edition?"
-    a: "Public Cloud Edition ist für Betreiber, die Cloud als Produkt verkaufen (Public Cloud, große Bank-interne Cloud, großer Telco). Enterprise Edition ist für regulierte Unternehmen, die Cloud intern konsumieren. Gleiche Cozystack-Foundation, unterschiedliches Feature-Bundle und Engagement-Modell."
-  - q: "Kann Public Cloud Edition mit unserem bestehenden VMware- oder OpenStack-Estate koexistieren?"
-    a: "Ja. Public Cloud Edition ist für Multi-Hypervisor-Koexistenz designed. Sie integriert sich mit bestehenden VMware-, OpenStack-, OpenNebula- und OpenShift-Footprints und ermöglicht graduelle Konsolidierung statt Rip-and-Replace."
-  - q: "Unterstützt Public Cloud Edition Multi-Region-Deployments?"
+  - q: "Wie unterscheidet sich Provider Edition vom Selbstbetrieb von Open-Source-Cozystack?"
+    a: "Cozystack ist eine Kubernetes-native Multi-Tenant-Cloud-Plattform, endet aber vor der Operator-Surface, die ein echtes Cloud-Geschäft braucht. Provider Edition ergänzt Multi-Region-Control-Plane, Billing-Backend und -Frontend, Payment-Integrationen, kundenseitige Portal-Anpassung, produktisierten Installer, Enterprise-SLA und dedizierten Support."
+  - q: "Wie unterscheidet sich Provider Edition von der Enterprise Edition?"
+    a: "Provider Edition ist für Betreiber, die Cloud als Produkt verkaufen (Public Cloud, große Bank-interne Cloud, großer Telco). Enterprise Edition ist für regulierte Unternehmen, die Cloud intern konsumieren. Gleiche Cozystack-Foundation, unterschiedliches Feature-Bundle und Engagement-Modell."
+  - q: "Kann Provider Edition mit unserem bestehenden VMware- oder OpenStack-Estate koexistieren?"
+    a: "Ja. Provider Edition ist für Multi-Hypervisor-Koexistenz designed. Sie integriert sich mit bestehenden VMware-, OpenStack-, OpenNebula- und OpenShift-Footprints und ermöglicht graduelle Konsolidierung statt Rip-and-Replace."
+  - q: "Unterstützt Provider Edition Multi-Region-Deployments?"
     a: "Ja. Die Control-Plane orchestriert Workload-Platzierung, Identity, Network und Storage-Policy über Regionen hinweg. Das Tenant CRD skaliert natürlich auf regionales und multi-regionales Deployment. Ein vollständiges Multi-Region-Deployment dauert typisch 6-18 Monate, eine Pilot-Phase 3-6 Monate."
-  - q: "Was kostet Public Cloud Edition?"
-    a: "Public Cloud Edition wird als mehrjähriges Programm nach RFP kalkuliert. Die produktisierte Ænix Platform ist daneben in Stufen verfügbar (Basic 1.250 $/Monat für 10 Nodes, Standard 3.000 $, Plus 5.500 $, Enterprise Custom). Ein Discovery-Call definiert den Scope."
-  - q: "Welche Compliance-Anforderungen deckt Public Cloud Edition ab?"
-    a: "Public Cloud Edition ist vorvalidiert gegen DORA, NIS2, ISO 27001 und SOC 2 — relevant, wenn der Cloud-Betreiber selbst eine regulierte Entität ist, etwa eine Bank mit eigener Cloud oder ein nationaler Telco."
+  - q: "Was kostet Provider Edition?"
+    a: "Provider Edition wird als mehrjähriges Programm nach RFP kalkuliert. Die produktisierte Ænix Platform ist daneben in Stufen verfügbar (Basic 1.250 $/Monat für 10 Nodes, Standard 3.000 $, Plus 5.500 $, Enterprise Custom). Ein Discovery-Call definiert den Scope."
+  - q: "Welche Compliance-Anforderungen deckt Provider Edition ab?"
+    a: "Provider Edition ist vorvalidiert gegen DORA, NIS2, ISO 27001 und SOC 2 — relevant, wenn der Cloud-Betreiber selbst eine regulierte Entität ist, etwa eine Bank mit eigener Cloud oder ein nationaler Telco."
 ---
+
+> **Das ist die Provider Edition im Betreiber-Maßstab.** Die Ænix Platform hat zwei Editions — [Provider](/de/produkte/aenix-platform/provider-edition/) für Organisationen, die Cloud an Kunden verkaufen, und [Enterprise](/de/produkte/aenix-platform/enterprise-edition/) für Organisationen, die Cloud für sich selbst betreiben. Alles auf dieser Seite ist die Provider Edition mit eingeschalteter Multi-Region, Multi-Hypervisor und vollem Billing — und wird als mehrjähriges Programm gekauft, nicht aus der Preisliste.
 
 **Eine turnkey Public-Cloud-Control-Plane für große Betreiber — Public-Cloud-Unternehmen, große Banken mit eigener Cloud, nationale Telcos. Multi-Hypervisor, Multi-Region, integriert mit Drittanbieter-Infrastruktur. Gebaut für Rechenzentren und Cloud-Anbieter, die Public Clouds at hyperscaler-adjacent scale starten oder skalieren.**
 
@@ -44,11 +46,11 @@ faq:
 
 ---
 
-## Was in der Public Cloud Edition enthalten ist
+## Was in der Provider Edition enthalten ist
 
 ### Multi-Hypervisor-Cloud-Control-Plane
 
-Eine Cloud-Control-Plane, die KubeVirt-VMs (nativ Cozystack) orchestriert und mit existierender VMware-, OpenStack-, OpenNebula- und OpenShift-Infrastruktur integriert. Kein "Rip-and-Replace" — Public Cloud Edition kann ein existierendes Cloud-Estate erweitern, während graduell konsolidiert wird.
+Eine Cloud-Control-Plane, die KubeVirt-VMs (nativ Cozystack) orchestriert und mit existierender VMware-, OpenStack-, OpenNebula- und OpenShift-Infrastruktur integriert. Kein "Rip-and-Replace" — Provider Edition kann ein existierendes Cloud-Estate erweitern, während graduell konsolidiert wird.
 
 ### Multi-Region-Support
 
@@ -88,12 +90,12 @@ Vorvalidiert gegen DORA / NIS2 / ISO 27001 / SOC 2 — relevant wenn der Cloud-B
 
 ---
 
-## Wer kauft Public Cloud Edition
+## Wer kauft Provider Edition
 
 | Buyer | Typisches Engagement |
 |---|---|
 | Großer Public-Cloud-Betreiber | Neuer Cloud-Produkt-Launch oder Multi-Region-Scale-Up |
-| Tier-1-Bank mit eigener Cloud | DORA-konform, souverän, Multi-Region-interne Cloud — typisch Enterprise Edition mit Public-Cloud-Edition-class Scale-Out |
+| Tier-1-Bank mit eigener Cloud | DORA-konform, souverän, Multi-Region-interne Cloud — typisch Enterprise Edition mit Provider Edition im Betreiber-Maßstab-class Scale-Out |
 | Großer Telco / nationaler Operator | Kundenseitiges souveränes Cloud-Produkt, oft regional + Edge |
 | Großes Unternehmen mit hyperscaler-scale-interner Cloud | Internes Cloud-Produkt für viele BUs / Töchter |
 
@@ -103,7 +105,7 @@ Vorvalidiert gegen DORA / NIS2 / ISO 27001 / SOC 2 — relevant wenn der Cloud-B
 
 Mehrjährige Programme, Angebot nach RFP. Discovery-Call zur Scope-Definition.
 
-[Public Cloud Edition diskutieren →](/de/kontakt/?edition=public-cloud)
+[Provider Edition diskutieren →](/de/kontakt/?edition=public-cloud)
 
 ---
 
@@ -112,7 +114,7 @@ Mehrjährige Programme, Angebot nach RFP. Discovery-Call zur Scope-Definition.
 - **Discovery-Call** (30 min, kostenlos) — Fit bestätigen
 - **Platform Readiness Assessment** (5-10 Tage, Festpreis) — aktuelle Architektur, Ziel-Architektur, Migrations-Roadmap, Risiko-Register
 - **Pilot-Engagement** (3-6 Monate) — definierter Slice (eine Region, eine Tenant-Kohorte, eine Produktlinie)
-- **Vollständiger Public Cloud Edition Build** (9-18 Monate) — Multi-Region-Produktion, Kunden-Onboarding-Workflows, Operations-Team-Training
+- **Vollständiger Provider Edition Build** (9-18 Monate) — Multi-Region-Produktion, Kunden-Onboarding-Workflows, Operations-Team-Training
 - **Managed Operations** (optional, laufend) — Aenix betreibt die Cloud-Control-Plane unter SLA
 
 [Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)
@@ -121,18 +123,18 @@ Mehrjährige Programme, Angebot nach RFP. Discovery-Call zur Scope-Definition.
 
 ## Kunden-Evidenz
 
-Public Cloud Edition Deployments sind derzeit NDA-geschützt. Tier-1-europäische-Banken-Engagements (mit eigener interner Cloud im großen Maßstab) und regionale Telco-souveräne-Cloud-Produkt-Launches sind in Produktion. **Erste namentlich genannte Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
-### Wie unterscheidet sich Public Cloud Edition vom Selbstbetrieb von Open-Source-Cozystack?
+Provider Edition Deployments sind derzeit NDA-geschützt. Tier-1-europäische-Banken-Engagements (mit eigener interner Cloud im großen Maßstab) und regionale Telco-souveräne-Cloud-Produkt-Launches sind in Produktion. **Erste namentlich genannte Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
+### Wie unterscheidet sich Provider Edition vom Selbstbetrieb von Open-Source-Cozystack?
 
-Cozystack ist eine saubere Kubernetes-native Multi-Tenant-Cloud-Plattform — aber endet vor der Operator-Surface, die ein echtes Cloud-Geschäft braucht. Public Cloud Edition ergänzt die Multi-Region-Control-Plane, Billing-Backend + -Frontend, Payment-Integrationen, kundenseitige Portal-Anpassung, produktisierten Installer, Enterprise-SLA und dedizierten Support.
+Cozystack ist eine saubere Kubernetes-native Multi-Tenant-Cloud-Plattform — aber endet vor der Operator-Surface, die ein echtes Cloud-Geschäft braucht. Provider Edition ergänzt die Multi-Region-Control-Plane, Billing-Backend + -Frontend, Payment-Integrationen, kundenseitige Portal-Anpassung, produktisierten Installer, Enterprise-SLA und dedizierten Support.
 
-### Wie unterscheidet sich Public Cloud Edition von Enterprise Edition?
+### Wie unterscheidet sich Provider Edition von Enterprise Edition?
 
-Public Cloud Edition ist für Betreiber, die Cloud als Produkt verkaufen (Public Cloud, große Bank-interne Cloud, großer Telco). Enterprise Edition ist für regulierte Unternehmen, die Cloud intern konsumieren (single-customer use, DORA / NIS2-Alignment, Hybrid-Integration mit VMware / OpenNebula / OpenShift). Gleiche Cozystack-Foundation; unterschiedliches Feature-Bundle und Engagement-Modell.
+Provider Edition ist für Betreiber, die Cloud als Produkt verkaufen (Public Cloud, große Bank-interne Cloud, großer Telco). Enterprise Edition ist für regulierte Unternehmen, die Cloud intern konsumieren (single-customer use, DORA / NIS2-Alignment, Hybrid-Integration mit VMware / OpenNebula / OpenShift). Gleiche Cozystack-Foundation; unterschiedliches Feature-Bundle und Engagement-Modell.
 
-### Kann Public Cloud Edition mit unserem existierenden VMware / OpenStack Estate koexistieren?
+### Kann Provider Edition mit unserem existierenden VMware / OpenStack Estate koexistieren?
 
-Ja. Public Cloud Edition ist designed für Multi-Hypervisor-Koexistenz — graduelle Konsolidierung statt Rip-and-Replace.
+Ja. Provider Edition ist designed für Multi-Hypervisor-Koexistenz — graduelle Konsolidierung statt Rip-and-Replace.
 
 ---
 
@@ -146,4 +148,4 @@ Buchen Sie einen 30-Minuten-Discovery-Call.
 
 ---
 
-*Ænix Platform Public Cloud Edition basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*
+*Ænix Platform Provider Edition basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*

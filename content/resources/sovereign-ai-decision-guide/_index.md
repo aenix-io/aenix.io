@@ -7,7 +7,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The Sovereign AI Architecture Decision Guide is a free 12-page PDF for organizations evaluating sovereign AI infrastructure - AI workloads run on infrastructure they control rather than on a hyperscaler API. It is aimed at AI infrastructure leads, CTOs, and platform engineering teams. A visual flowchart walks through seven decisions: trigger profile, regulatory scope (DORA, NIS2, sovereign-cloud mandates), open-weight model selection, GPU hardware sizing, multi-tenancy model, sovereignty controls, and operational model, then maps the answers to one of four architecture patterns. Aenix uses this framework when scoping sovereign AI engagements, and the output maps directly to the Ænix Platform AI/ML Edition, which is built on Cozystack, a CNCF project, and offers multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints.**
+  **The Sovereign AI Architecture Decision Guide is a free 12-page PDF for organizations evaluating sovereign AI infrastructure - AI workloads run on infrastructure they control rather than on a hyperscaler API. It is aimed at AI infrastructure leads, CTOs, and platform engineering teams. A visual flowchart walks through seven decisions: trigger profile, regulatory scope (DORA, NIS2, sovereign-cloud mandates), open-weight model selection, GPU hardware sizing, multi-tenancy model, sovereignty controls, and operational model, then maps the answers to one of four architecture patterns. Aenix uses this framework when scoping sovereign AI engagements, and the output maps directly to the AI & GPU module of Ænix Platform, which is built on Cozystack, a CNCF project, and offers multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints.**
 quick_facts:
   - label: "What it is"
     value: "A free 12-page decision guide and visual flowchart for designing sovereign AI infrastructure, the same framework Aenix uses to scope sovereign AI engagements"
@@ -16,7 +16,7 @@ quick_facts:
   - label: "What it covers"
     value: "Seven decisions plus four architecture patterns: single-tenant inference, multi-tenant inference fleet, inference + fine-tuning + RAG, and air-gapped sovereign deployment"
   - label: "Maps to"
-    value: "Ænix Platform AI/ML Edition - multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints"
+    value: "the AI & GPU module of Ænix Platform - multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints"
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
@@ -29,7 +29,7 @@ faq:
   - q: "Which AI models and GPUs does the guide cover?"
     a: "It covers open-weight model selection across families such as Llama, Mistral, Qwen, DeepSeek, Phi, and Gemma, and weighs open-weight versus proprietary. Hardware sizing covers GPUs including A100, H100, H200, L40S, and Blackwell, with practical sizing tables for common workload profiles."
   - q: "How does the guide relate to the Ænix Platform?"
-    a: "The guide outputs an architecture pattern that maps directly to the deployment scope of Ænix Platform AI/ML Edition - turnkey AI infrastructure with multi-tenant GPU scheduling and blueprints for inference, fine-tuning, and RAG, built on Cozystack with sovereignty controls."
+    a: "The guide outputs an architecture pattern that maps directly to the deployment scope of the AI & GPU module of Ænix Platform - turnkey AI infrastructure with multi-tenant GPU scheduling and blueprints for inference, fine-tuning, and RAG, built on Cozystack with sovereignty controls."
   - q: "How does Cozystack enable multi-tenant sovereign AI?"
     a: "Cozystack runs VMs and containers on one Kubernetes API via KubeVirt, uses Cilium (eBPF) for networking and LINSTOR/DRBD for storage, and isolates teams through a Tenant CRD. This supports namespace-per-team, cluster-per-tenant, and multi-tenant GPU scheduling under Apache 2.0 with no per-core licensing."
   - q: "How much does the decision guide cost?"
@@ -38,7 +38,7 @@ faq:
 
 **A 12-page decision guide for organizations evaluating sovereign AI infrastructure. Visual flowchart leads through 7 key decisions: trigger profile, regulatory scope, model selection, hardware sizing, multi-tenancy model, sovereignty controls, operational model. Used by Aenix during sovereign AI engagement scoping.**
 
-> **Pairs with:** **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** — turnkey AI infrastructure with multi-tenant GPU scheduling, ready blueprints for inference + fine-tuning + RAG, sovereignty controls. The decision guide outputs an architecture pattern that maps directly to AI/ML Edition deployment scope.
+> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)** — turnkey AI infrastructure with multi-tenant GPU scheduling, ready blueprints for inference + fine-tuning + RAG, sovereignty controls. The decision guide outputs an architecture pattern that maps directly to AI & GPU deployment scope.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
@@ -79,7 +79,7 @@ Practical sizing tables for common workload profiles.
 <div class="diagram__conn">maps to</div>
 <div class="diagram__node"><b>Architecture pattern</b><div class="diagram__chips"><span>One of four patterns</span></div></div>
 <div class="diagram__conn">deploys as</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform AI/ML Edition</b><div class="diagram__chips"><span>Multi-tenant GPU scheduling</span><span>Inference + fine-tuning + RAG</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>the AI & GPU module of Ænix Platform</b><div class="diagram__chips"><span>Multi-tenant GPU scheduling</span><span>Inference + fine-tuning + RAG</span></div></div>
 </div>
 </div>
 

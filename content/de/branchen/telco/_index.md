@@ -39,7 +39,7 @@ faq:
   - q: "Kann dieselbe Plattform an Core und Edge laufen?"
     a: "Ja. Cozystack läuft mit identischem Stack im Core-Rechenzentrum, an Regionalstandorten und am Customer-Edge. Operatoren betreiben Central-Core, Regional und Customer-Edge unter einem einheitlichen Operations-Modell statt getrennter Werkzeugketten je Standort."
   - q: "Eignet sich die Plattform für souveräne Cloud-Produkte gegenüber Endkunden?"
-    a: "Ja. Die Mandantenfähigkeit über das Tenant-CRD erlaubt Operatoren, kundenseitige souveräne Cloud-Produkte zu starten. Die Ænix Platform Public Cloud Edition ist auf souveräne Cloud-Launches im Multi-Region-Scale ausgelegt."
+    a: "Ja. Die Mandantenfähigkeit über das Tenant-CRD erlaubt Operatoren, kundenseitige souveräne Cloud-Produkte zu starten. Die Ænix Platform Provider Edition ist auf souveräne Cloud-Launches im Multi-Region-Scale ausgelegt."
   - q: "Erfüllt die Plattform NIS2 für Telekommunikations-Operatoren?"
     a: "Telekommunikation gilt unter NIS2 als wesentliche Entität. Die Plattform unterstützt NIS2-konforme interne Cloud- und Edge-Architekturen; die Ænix Platform Enterprise Edition adressiert genau diese Compliance-Anforderungen."
   - q: "Welche Lizenzkosten entstehen für die Plattform-Software?"
@@ -52,7 +52,7 @@ faq:
 
 Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), läuft an Core und Edge.
 
-> **Passt zu:** **[Ænix Platform Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für Telcos, die kundenseitige souveräne Cloud-Produkte im Multi-Region-Maßstab launchen; **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für NIS2-konforme interne Cloud- und Edge-Plattformen.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für Telcos, die kundenseitige souveräne Cloud-Produkte im Multi-Region-Maßstab launchen; **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für NIS2-konforme interne Cloud- und Edge-Plattformen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

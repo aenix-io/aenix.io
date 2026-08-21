@@ -49,7 +49,7 @@ faq:
 
 Aenix builds platforms for telecom operators across the EU, DACH, and Central Asia. Same platform, [Cozystack](/products/cozystack/), running at core and edge.
 
-> **Pairs with:** **[Ænix Platform Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for telcos launching customer-facing sovereign cloud products at multi-region scale; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for NIS2-aligned internal cloud and edge platforms.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/public-cloud-edition/)** for telcos launching customer-facing sovereign cloud products at multi-region scale; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for NIS2-aligned internal cloud and edge platforms.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

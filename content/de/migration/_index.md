@@ -9,7 +9,7 @@ cascade:
 hreflang_en: /migration/
 ---
 
-**Praktische Migrations-Patterns für den Wechsel zu Ænix Platform von existierenden Plattformen. Produktisiertes Migrations-Tooling für ISP Edition; Engineering-getriebene Migration für Enterprise + Public Cloud Edition Deployments. Kohorten-basiert; Parallel-Run-validiert.**
+**Praktische Migrations-Patterns für den Wechsel zu Ænix Platform von existierenden Plattformen. Produktisiertes Migrations-Tooling für Provider Edition; Engineering-getriebene Migration für Enterprise + Provider Edition Deployments. Kohorten-basiert; Parallel-Run-validiert.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -24,7 +24,7 @@ hreflang_en: /migration/
 <div class="diagram__conn">bewerten</div>
 <div class="diagram__node"><b>Migrations-Pfad</b><div class="diagram__chips"><span>Kohorten-basiert</span><span>Parallel-Run-validiert</span></div></div>
 <div class="diagram__conn">wechseln zu</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>ISP Edition</span><span>Enterprise Edition</span><span>Public Cloud Edition</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Provider Edition</span><span>Enterprise Edition</span><span>Provider Edition</span></div></div>
 </div>
 </div>
 

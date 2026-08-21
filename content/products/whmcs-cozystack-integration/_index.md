@@ -8,7 +8,7 @@ primary_keyword: "whmcs kubernetes"
 secondary_keywords: ["whmcs cloud", "sell kubernetes via whmcs", "kubernetes billing", "whmcs cozystack integration"]
 hreflang_de: /de/produkte/whmcs-cozystack-integration/
 related_pages:
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /industries/hosting-providers/
   - /industries/msp/
   - /services/white-label-cloud/
@@ -52,7 +52,7 @@ service:
 
 **Sell Kubernetes clusters, managed databases, virtual machines, message brokers, object storage and GPU straight from WHMCS. Your customers order, you bill, Cozystack provisions — no separate control plane, no rip-and-replace.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — the full hosting-provider edition (branded portal, catalog, support) that this WHMCS integration is part of. New to Cozystack? Start with **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — the full hosting-provider edition (branded portal, catalog, support) that this WHMCS integration is part of. New to Cozystack? Start with **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -130,7 +130,7 @@ Not on WHMCS, or running something else? We also help hosters and clouds:
 - **Integrate** Cozystack and billing with other control panels.
 - **Package and add** the specific apps and services your customers ask for.
 
-Especially if you are already on WHMCS — this is the fastest way to start selling Kubernetes, databases, VMs and GPU, and earn more from the customers you already have. See the **[ISP Edition economics](/products/aenix-platform/isp-edition/)** and the anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**.
+Especially if you are already on WHMCS — this is the fastest way to start selling Kubernetes, databases, VMs and GPU, and earn more from the customers you already have. See the **[Provider Edition economics](/products/aenix-platform/provider-edition/)** and the anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**.
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, available in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*

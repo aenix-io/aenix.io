@@ -170,4 +170,4 @@ Aenix accepts RFI / RFP through standard procurement channels in EU member state
 
 ---
 
-*Aenix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of [Ænix Platform](/products/aenix-platform/) — turnkey commercial cloud-in-a-box in five editions.*
+*Aenix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of [Ænix Platform](/products/aenix-platform/) — turnkey commercial cloud-in-a-box in two editions.*

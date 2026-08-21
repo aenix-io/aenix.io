@@ -21,7 +21,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Regulierte Unternehmen (Enterprise Edition) und Produkt-Engineering-Teams, die den OpenShift-Developer-Layer ersetzen (IDP Edition)"
+    value: "Regulierte Unternehmen (Enterprise Edition) und Produkt-Engineering-Teams, die den OpenShift-Developer-Layer ersetzen (Developer Self-Service)"
   - label: "Kernfunktionen"
     value: "KubeVirt-Virtualisierung (VMs + Container auf einer Kubernetes-API), Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Souveränität"
@@ -38,7 +38,7 @@ faq:
   - q: "Ist Cozystack für regulierte Unternehmen und Souveränitätsanforderungen geeignet?"
     a: "Ja. Als Open-Source-First-Plattform ohne Abhängigkeit vom US-Vendor Red Hat/IBM adressiert Cozystack Souveränitäts-Anforderungen. Für regulierte Unternehmen bietet Aenix die Ænix Platform Enterprise Edition mit den dafür passenden Engineering-Services."
   - q: "Kann Cozystack den Developer-Experience-Layer von OpenShift ersetzen?"
-    a: "Die Ænix Platform IDP Edition richtet sich an Produkt-Engineering-Teams, die den OpenShift-Developer-Experience-Layer durch eine Open-Source-First-Internal-Developer-Platform ersetzen möchten — auf Standard-Kubernetes und ohne proprietäres Vendor-Ökosystem."
+    a: "Die the Developer Self-Service module of Ænix Platform richtet sich an Produkt-Engineering-Teams, die den OpenShift-Developer-Experience-Layer durch eine Open-Source-First-Internal-Developer-Platform ersetzen möchten — auf Standard-Kubernetes und ohne proprietäres Vendor-Ökosystem."
   - q: "Wie viel kostet die Ænix Platform als OpenShift-Alternative?"
     a: "Die Ænix Platform wird in Service-Stufen angeboten: Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach individuellem Angebot. Die Software Cozystack selbst ist Apache-2.0-lizenziert und ohne Core-basierte Gebühren."
 ---
@@ -55,7 +55,7 @@ faq:
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen; **[IDP Edition](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen; **[Developer Self-Service](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

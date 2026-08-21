@@ -26,11 +26,11 @@ language: "de"
 ### Build-Engagements
 
 - **[Platform Engineering](/de/dienstleistungen/platform-engineering/)** — Bauen Sie eine produktive Cloud-Plattform; passt zu jeder Ænix Platform Edition
-- **[Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/)** — IDP-Build für Produkt- / SaaS-Organisationen; passt zur IDP Edition
-- **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** — Kundenseitiger Cloud-Produkt-Build; passt zur Public Cloud Edition oder ISP Edition
+- **[Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/)** — IDP-Build für Produkt- / SaaS-Organisationen; passt zur Developer Self-Service
+- **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** — Kundenseitiger Cloud-Produkt-Build; passt zur Provider Edition oder Provider Edition
 - **[Sovereign Cloud Builder](/de/dienstleistungen/sovereign-cloud-builder/)** — Regierungs- / öffentliche-Sektor-souveräne-Cloud-Builds; passt zur Enterprise Edition
-- **[White-Label Cloud](/de/dienstleistungen/white-label-cloud/)** — Gebrandete Cloud-Plattform für MSP / Channel-Partner; passt zur ISP Edition
-- **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)** — KI/GPU-Infrastruktur-Build; passt zur AI/ML Edition
+- **[White-Label Cloud](/de/dienstleistungen/white-label-cloud/)** — Gebrandete Cloud-Plattform für MSP / Channel-Partner; passt zur Provider Edition
+- **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)** — KI/GPU-Infrastruktur-Build; passt zur AI & GPU
 
 ### Consulting-Engagements
 
@@ -48,7 +48,7 @@ language: "de"
 1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope, regulatorischer Kontext, Edition-Match bestätigen
 2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — aktuelle-Zustand-Audit + Edition-Empfehlung + Roadmap
 3. **Pilot-Engagement** (3-6 Monate, Angebot nach RFP) — definierter Slice, validierter Business Case
-4. **Vollständiger Edition-Build** — Wochen für ISP Edition; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML
+4. **Vollständiger Edition-Build** — Wochen für Provider Edition; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML
 5. **Managed Operations** (laufender Retainer)
 
 <div class="arch-section__fig">
@@ -65,7 +65,7 @@ language: "de"
 
 ## Pricing
 
-ISP Edition Entry ab 1.250 USD pro Monat (Basic Support-Tier, 10 Nodes). Andere Editions: Pricing on Request via Discovery-Call. [Pricing-Details →](/de/preise/).
+Provider Edition Entry ab 1.250 USD pro Monat (Basic Support-Tier, 10 Nodes). Andere Editions: Pricing on Request via Discovery-Call. [Pricing-Details →](/de/preise/).
 
 ---
 

@@ -4,7 +4,7 @@ description: "Hosting-Anbieter, Telcos und regionale Operatoren in 2026 stehen v
 related_pages:
   - /de/dienstleistungen/private-cloud-consulting
   - /de/produkte/aenix-platform/public-cloud-edition/
-  - /de/produkte/aenix-platform/isp-edition/
+  - /de/produkte/aenix-platform/provider-edition/
   - /de/produkte/cozystack
   - /de/alternativen/vmware-alternativen
 language: "de"
@@ -12,7 +12,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/public-cloud-builder/
 direct_answer: |
-  **Public Cloud Builder ist die Aenix-Dienstleistung, mit der Hosting-Anbieter, Telekommunikations-Operatoren und regionale Betreiber ein eigenes, kundenseitiges Cloud-Produkt auf einer Open-Source-Foundation starten. Die Lösung basiert auf Cozystack, der Apache-2.0-lizenzierten, Kubernetes-nativen Plattform, die VMs und Container über KubeVirt auf einer Kubernetes-API vereint, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage nutzt und Mandantenfähigkeit über das Tenant-CRD abbildet. Aenix übernimmt Architektur, Produkt-Readiness-Assessment und Implementation und liefert die produktisierte Ænix Platform (Public Cloud Edition oder ISP Edition), damit Betreiber ein glaubwürdiges, souveränes Cloud-Angebot bereitstellen, ohne selbst Hyperscaler-Engineering aufbauen zu müssen.**
+  **Public Cloud Builder ist die Aenix-Dienstleistung, mit der Hosting-Anbieter, Telekommunikations-Operatoren und regionale Betreiber ein eigenes, kundenseitiges Cloud-Produkt auf einer Open-Source-Foundation starten. Die Lösung basiert auf Cozystack, der Apache-2.0-lizenzierten, Kubernetes-nativen Plattform, die VMs und Container über KubeVirt auf einer Kubernetes-API vereint, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage nutzt und Mandantenfähigkeit über das Tenant-CRD abbildet. Aenix übernimmt Architektur, Produkt-Readiness-Assessment und Implementation und liefert die produktisierte Ænix Platform (Provider Edition oder Provider Edition), damit Betreiber ein glaubwürdiges, souveränes Cloud-Angebot bereitstellen, ohne selbst Hyperscaler-Engineering aufbauen zu müssen.**
 quick_facts:
   - label: "Was es ist"
     value: "Aenix-Dienstleistung zum Aufbau eines kundenseitigen Public-Cloud-Produkts auf Cozystack, der Open-Source-Kubernetes-Plattform"
@@ -23,7 +23,7 @@ quick_facts:
   - label: "Zielgruppe"
     value: "Hosting-Anbieter, Telekommunikations-Operatoren, regionale Betreiber und branchenspezifische Clouds (Finanz, Regierung, KI)"
   - label: "Produkt"
-    value: "Ænix Platform Public Cloud Edition (Multi-Region, Cloud-like UX, Multi-Hypervisor) und ISP Edition (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat)"
+    value: "Ænix Platform Provider Edition (Multi-Region, Cloud-like UX, Multi-Hypervisor) und Provider Edition (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat)"
   - label: "Technologie"
     value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Engagement"
@@ -36,7 +36,7 @@ faq:
   - q: "Für wen eignet sich diese Dienstleistung?"
     a: "Für Hosting-Anbieter beim Up-Market-Move von VPS/Dedicated Servers, Telekommunikations-Operatoren mit Enterprise-Cloud-Launch, regionale Betreiber in souveränitätsrelevanten Jurisdiktionen sowie branchenspezifische Clouds für Finanz-, Regierungs- oder KI-Workloads."
   - q: "Welche Ænix-Platform-Edition passt zu meinem Vorhaben?"
-    a: "Die Public Cloud Edition richtet sich an große Public-Cloud-Betreiber mit Multi-Region, Cloud-like UX und Multi-Hypervisor. Die ISP Edition passt zu kleinen bis mittleren Hosting-Anbietern und regionalen Clouds; sie ist WHMCS-integriert, bringt einen produktisierten Installer mit und startet ab 1.250 USD/Monat."
+    a: "Die Provider Edition richtet sich an große Public-Cloud-Betreiber mit Multi-Region, Cloud-like UX und Multi-Hypervisor. Die Provider Edition passt zu kleinen bis mittleren Hosting-Anbietern und regionalen Clouds; sie ist WHMCS-integriert, bringt einen produktisierten Installer mit und startet ab 1.250 USD/Monat."
   - q: "Wie ist das Engagement strukturiert?"
     a: "Es beginnt mit einem kostenlosen Discovery-Call (30 min), gefolgt von einem Architektur- und Produkt-Readiness-Assessment (4-8 Wochen) mit Produkt- und GTM-Schwerpunkt, einer Implementation über 6-18 Monate und optional einem Managed-Services-Arrangement während des frühen Customer-Ramp."
   - q: "Entsteht durch die Open-Source-Foundation ein Vendor-Lock-in?"
@@ -45,9 +45,9 @@ faq:
 
 **Hosting-Anbieter, Telcos und regionale Operatoren stehen 2026 vor der Frage: Wie bieten wir Enterprise-Kunden ein glaubwürdiges Cloud-Produkt, ohne zum Hyperscaler zu werden? Der Markt für souveräne / regionale / Spezial-Cloud wächst, doch die architektonische und operative Arbeit, um eine auszuliefern, ist nicht-trivial.**
 
-Aenix baut kundenseitige Public-Cloud-Produkte auf Cozystack — der Open-Source-Kubernetes-nativen Plattform, die Ænix Platform ISP Edition Deployments bei regionalen Hosting-Anbietern und mehrere weitere regionale Cloud-Launches antreibt.
+Aenix baut kundenseitige Public-Cloud-Produkte auf Cozystack — der Open-Source-Kubernetes-nativen Plattform, die Ænix Platform Provider Edition Deployments bei regionalen Hosting-Anbietern und mehrere weitere regionale Cloud-Launches antreibt.
 
-> **Passt zu:** **[Ænix Platform Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat).
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -113,7 +113,7 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
 <div class="diagram">
 <div class="diagram__node diagram__node--brand"><b>Cozystack</b></div>
 <div class="diagram__conn">produktisiert zu</div>
-<div class="diagram__node"><b>Ænix Platform (Public Cloud / ISP Edition)</b></div>
+<div class="diagram__node"><b>Ænix Platform (Public Cloud / Provider Edition)</b></div>
 <div class="diagram__conn">treibt an</div>
 <div class="diagram__node"><b>Kundenseitiges Cloud-Produkt</b></div>
 </div>
@@ -125,7 +125,7 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
 
 {{< clients >}}
 
-Öffentliche Referenzen: regionale Hosting-Anbieter, die Ænix Platform ISP Edition betreiben (derzeit auf den Kunden-Logos von aenix.io gelistet). Tier-1-Engagements europäischer Banken + mehrere regionale souveräne-Cloud-Launches unter NDA — erste namentliche Cases erwartet Mitte 2027.
+Öffentliche Referenzen: regionale Hosting-Anbieter, die Ænix Platform Provider Edition betreiben (derzeit auf den Kunden-Logos von aenix.io gelistet). Tier-1-Engagements europäischer Banken + mehrere regionale souveräne-Cloud-Launches unter NDA — erste namentliche Cases erwartet Mitte 2027.
 
 {{< quote-carousel >}}
 

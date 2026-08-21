@@ -52,7 +52,7 @@ faq:
 
 Aenix builds and operates platforms for financial-services organizations across the EU, DACH, and Central Asia. Same platform, [Cozystack](/products/cozystack/), running production workloads under DORA-aligned governance.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for the regulated cloud foundation; **[AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** for claims AI / fraud detection / sovereign AI workloads. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for the regulated cloud foundation; **[AI & GPU](/products/aenix-platform/ai-ml-edition/)** for claims AI / fraud detection / sovereign AI workloads. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

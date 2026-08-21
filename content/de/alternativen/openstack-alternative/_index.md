@@ -3,7 +3,7 @@ title: "OpenStack-Alternative — wenn operative Komplexität sich nicht mehr au
 description: "OpenStack ist ausgereift, breit und in Telco/Regierungs-Scale bewiesen. Es erfordert auch signifikante operative Expertise zum guten Betrieb, und..."
 related_pages:
   - /de/alternativen/vmware-alternative
-  - /de/produkte/aenix-platform/isp-edition/
+  - /de/produkte/aenix-platform/provider-edition/
   - /de/produkte/aenix-platform/public-cloud-edition/
   - /de/produkte/cozystack
   - /de/dienstleistungen/private-cloud-consulting
@@ -53,13 +53,13 @@ Cozystack ist die Open-Source-Alternative für Organisationen, die die Open-Sour
 <div class="diagram">
 <div class="diagram__node"><b>OpenStack</b><div class="diagram__chips"><span>knappe OpenStack-Expertise</span><span>riskante Upgrade-Zyklen</span></div></div>
 <div class="diagram__conn">Migration</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform Provider Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
 <div class="diagram__conn">liefert</div>
 <div class="diagram__node"><b>leichterer operativer Footprint</b><div class="diagram__chips"><span>echte Mandantenfähigkeit</span><span>5-15 Operatoren</span></div></div>
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für Hosting-Anbieter und regionale Clouds, die von OpenStack modernisieren; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für Hosting-Anbieter und regionale Clouds, die von OpenStack modernisieren; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

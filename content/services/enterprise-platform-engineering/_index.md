@@ -42,7 +42,7 @@ faq:
 
 **Enterprise platform engineering is the discipline of building and operating internal platforms for organizations with multiple product teams, cross-BU isolation, and sustained scale. It's a different scope from "platform engineering for a single team" — multi-tenancy, governance, and ops-at-scale are non-negotiable.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated multi-DC platforms; **[IDP Edition](/products/aenix-platform/idp-edition/)** for product-engineering-led IDP at enterprise scale.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated multi-DC platforms; **[Developer Self-Service](/products/aenix-platform/idp-edition/)** for product-engineering-led IDP at enterprise scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

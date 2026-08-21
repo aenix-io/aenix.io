@@ -1,7 +1,7 @@
 ---
 title: "Cloud platform for SMB and mid-market — honest answer when Cozystack fits"
 description: "Cozystack is purpose-built for service providers, regulated enterprises, and multi-tenant cloud builders. For SMB and small mid-market organizations (under..."
-related_pages: ["/products/cozystack", "/products/aenix-platform/isp-edition/", "/partners/", "/services/platform-readiness-assessment"]
+related_pages: ["/products/cozystack", "/products/aenix-platform/provider-edition/", "/partners/", "/services/platform-readiness-assessment"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -17,7 +17,7 @@ quick_facts:
   - label: "Who it is for"
     value: "Mid-market with regulated data, sovereignty pressure, an internal platform-engineering function, or a path to multi-tenant SaaS; usually not single-tenant SMB under ~50 hosts."
   - label: "How SMB engages"
-    value: "Typically through an Aenix Partner (regional MSP or hosting provider) running Ænix Platform ISP Edition; direct Aenix engagement is rarely a fit at SMB scale."
+    value: "Typically through an Aenix Partner (regional MSP or hosting provider) running Ænix Platform Provider Edition; direct Aenix engagement is rarely a fit at SMB scale."
   - label: "First step"
     value: "Free 15-minute fit-check call, then an optional fixed-price 5-10 day architecture review before any implementation."
 faq:
@@ -26,7 +26,7 @@ faq:
   - q: "When does Cozystack make sense for a mid-market company?"
     a: "When there is regulated data, specific sovereignty pressure, an internal platform-engineering function, a move toward multi-tenant SaaS with 100-plus customers, or a clear cost trigger at scale. A discovery call confirms whether Cozystack fits or whether something simpler is right."
   - q: "How does an SMB buy Ænix Platform?"
-    a: "Most SMB customers consume cloud as a product from an Aenix Partner (a regional MSP or hosting provider) running Ænix Platform ISP Edition underneath. Direct engagement with Aenix is rarely the right fit at SMB scale."
+    a: "Most SMB customers consume cloud as a product from an Aenix Partner (a regional MSP or hosting provider) running Ænix Platform Provider Edition underneath. Direct engagement with Aenix is rarely the right fit at SMB scale."
   - q: "What does Aenix charge for Ænix Platform?"
     a: "Ænix Platform pricing starts at Basic $1,250/month for 10 nodes, then Standard $3,000, Plus $5,500, and Enterprise (custom). Cozystack itself is open source under Apache 2.0 with no license fees."
   - q: "Why does Aenix tell SMBs not to use Cozystack?"
@@ -37,7 +37,7 @@ faq:
 
 **Cozystack is purpose-built for service providers, regulated enterprises, and multi-tenant cloud builders. For SMB and small mid-market organizations (under ~100 employees, single-tenant, simple infrastructure), Cozystack is over-engineering. The honest answer matters more than the sales pitch.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — but **only via an Aenix [Partner](/partners/)** (regional MSP / hosting provider). SMB customers consume cloud as a product from the partner, who runs Ænix Platform underneath. Direct Aenix engagement is rarely fit at SMB scale.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — but **only via an Aenix [Partner](/partners/)** (regional MSP / hosting provider). SMB customers consume cloud as a product from the partner, who runs Ænix Platform underneath. Direct Aenix engagement is rarely fit at SMB scale.
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -45,7 +45,7 @@ faq:
 <div class="diagram__conn">consumes cloud from</div>
 <div class="diagram__node"><b>Aenix Partner</b><div class="diagram__chips"><span>Regional MSP</span><span>Hosting provider</span></div></div>
 <div class="diagram__conn">runs</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform Provider Edition</b></div>
 <div class="diagram__conn">based on</div>
 <div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Apache 2.0</span><span>CNCF project</span></div></div>
 </div>

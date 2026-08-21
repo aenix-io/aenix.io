@@ -35,7 +35,7 @@ faq:
   - q: "Wie teilen Teams knappe GPUs?"
     a: "Mandantenfähiges Scheduling mit Quotas und Isolation — Self-Service ohne dediziertes Cluster je Team."
   - q: "Build oder Buy?"
-    a: "AI/ML-Edition für Tempo; das Aufbau-Modell, wenn GPU-Topologie und Serving zu Ihrem Stack passen müssen."
+    a: "AI & GPU für Tempo; das Aufbau-Modell, wenn GPU-Topologie und Serving zu Ihrem Stack passen müssen."
   - q: "Bezug zu Souveräne-KI-Regeln?"
     a: "Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) — Betrieb auf kundenkontrollierter Hardware ist die strukturelle Antwort."
 ---
@@ -98,11 +98,11 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-/Daten-Zwänge an und sagen, ob AI/ML-Edition oder Aufbauprojekt passt.
+Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-/Daten-Zwänge an und sagen, ob AI & GPU oder Aufbauprojekt passt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">AI/ML-Edition →</a>
+  <a class="cta-secondary" href="/de/produkte/">AI & GPU →</a>
 </div>
 
 ---

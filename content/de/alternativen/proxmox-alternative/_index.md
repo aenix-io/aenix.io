@@ -46,13 +46,13 @@ Cozystack ist die Open-Source-Plattform, die für diese nächste Stufe gebaut wu
 <div class="diagram">
 <div class="diagram__node"><b>Proxmox VE</b><div class="diagram__chips"><span>SMB-Virtualisierung</span><span>VM-fokussiert</span></div></div>
 <div class="diagram__conn">Migration</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform ISP Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Tenant-CRD</span><span>Apache 2.0</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform Provider Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Tenant-CRD</span><span>Apache 2.0</span></div></div>
 <div class="diagram__conn">unterstützt</div>
 <div class="diagram__node"><b>regulierte Multi-Customer-Cloud</b><div class="diagram__chips"><span>GPU-as-a-Service</span><span>verwaltete Datenbanken</span></div></div>
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, multi-tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, multi-tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

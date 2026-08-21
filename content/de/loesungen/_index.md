@@ -23,21 +23,21 @@ language: "de"
 
 - **[DORA-Compliance](/de/loesungen/dora-compliance/)** — Cloud-Architektur aligniert mit DORA Artikeln 21, 23, 24, 28. Für Finanzinstitute und ICT-Drittanbieter im Geltungsbereich. Passt zu: Enterprise Edition. Kostenlose [DORA-Checkliste](/de/ressourcen/dora-compliance-checkliste/).
 - **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — NIS2-konforme Multi-Tenant-Cloud-Plattform für wesentliche und wichtige Entitäten. Passt zu: Enterprise Edition. Kostenlose [NIS2-Checkliste](/de/ressourcen/nis2-compliance-checkliste/).
-- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Kundenkontrollierte Schlüssel, kundenkontrollierte Hardware, jurisdiktionsbezogene Datenresidenz. Passt zu: Enterprise Edition oder Public Cloud Edition.
+- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Kundenkontrollierte Schlüssel, kundenkontrollierte Hardware, jurisdiktionsbezogene Datenresidenz. Passt zu: Enterprise Edition oder Provider Edition.
 
 ### KI / GPU-Trigger
 
-- **[Souveräne KI](/de/loesungen/sovereign-ai/)** — GPU-Infrastruktur für KI-Workloads auf kundenkontrollierter Hardware. Passt zu: AI/ML Edition. Kostenloser [Sovereign AI Decision Guide](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
+- **[Souveräne KI](/de/loesungen/sovereign-ai/)** — GPU-Infrastruktur für KI-Workloads auf kundenkontrollierter Hardware. Passt zu: AI & GPU. Kostenloser [Sovereign AI Decision Guide](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 ### Kosten- / Konsolidierungs-Trigger
 
 - **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** — Migrieren Sie Workloads von AWS / Azure / GCP auf souveräne oder On-Prem-Ænix-Platform. Passt zu: jeder Edition. Kostenloses [TCO-Worksheet](/de/ressourcen/cloud-repatriation-tco-worksheet/).
-- **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)** — TCO-Optimierung durch Ænix-Platform-basierte Architektur. Passt zu: ISP / Enterprise / Public Cloud Editions.
-- **[Hybrid-Cloud-Plattform](/de/loesungen/hybrid-cloud/)** — Eine Ænix Platform spannend über On-Prem + Cloud. Passt zu: Enterprise Edition oder Public Cloud Edition.
+- **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)** — TCO-Optimierung durch Ænix-Platform-basierte Architektur. Passt zu: ISP / Enterprise / Provider Editions.
+- **[Hybrid-Cloud-Plattform](/de/loesungen/hybrid-cloud/)** — Eine Ænix Platform spannend über On-Prem + Cloud. Passt zu: Enterprise Edition oder Provider Edition.
 
 ### Engineering-Trigger
 
-- **[Developer Self-Service](/de/loesungen/developer-self-service/)** — Internal Developer Platform mit Multi-Tenant-Developer-Workflows. Passt zu: IDP Edition. Kostenloses [Platform Engineering Maturity Assessment](/de/ressourcen/platform-engineering-maturity-assessment/).
+- **[Developer Self-Service](/de/loesungen/developer-self-service/)** — Internal Developer Platform mit Multi-Tenant-Developer-Workflows. Passt zu: Developer Self-Service. Kostenloses [Platform Engineering Maturity Assessment](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 </div>
 </div>

@@ -20,7 +20,7 @@ hide_closing_cta: true
 
 **You build the platform every other team builds on. The win is golden paths and real self-service — multi-tenant Kubernetes, databases and environments developers spin up themselves — with no ticket queue and no closed vendor. Aenix delivers that as a turnkey internal developer platform, or builds yours on open foundations.**
 
-> **Pairs with:** **[Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)** for a ready internal developer platform, or **[Internal Developer Platform build](/services/internal-developer-platform/)** to design one to your org. Open-source core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
+> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** for a ready internal developer platform, or **[Internal Developer Platform build](/services/internal-developer-platform/)** to design one to your org. Open-source core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -52,7 +52,7 @@ Turn infrastructure into a product: self-service provisioning of VMs, managed Ku
 
 ## Two ways Aenix helps you
 
-**1. Run a turnkey IDP.** [Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/) ships the multi-tenant control plane, self-service portal, service catalog and golden-path provisioning on the open-source Cozystack core. Your platform team curates; developers self-serve.
+**1. Run a turnkey IDP.** [the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/) ships the multi-tenant control plane, self-service portal, service catalog and golden-path provisioning on the open-source Cozystack core. Your platform team curates; developers self-serve.
 
 **2. Build your own, with our team.** Cozystack is the framework; **Aenix is your outsourced platform-engineering team**. We design tenancy, golden paths and the catalog around your org, integrate your CI/CD and identity, and hand over a platform your team owns. See [platform engineering](/services/platform-engineering/) and [IDP build](/services/internal-developer-platform/).
 
@@ -87,7 +87,7 @@ Backstage is a developer portal; it needs a platform behind it. Cozystack is tha
 Yes — nested tenants with quotas and RBAC, so each team self-serves inside guardrails without a cluster sprawl.
 
 **Build or buy — which should we do?**
-The discovery call scopes it. Teams wanting speed take the IDP Edition; teams wanting a bespoke fit take the build-with engagement where we're your platform bench.
+The discovery call scopes it. Teams wanting speed take the Developer Self-Service; teams wanting a bespoke fit take the build-with engagement where we're your platform bench.
 
 **Does it run our existing workloads?**
 VMs (KubeVirt) and containers on one platform, plus managed databases and S3-compatible storage — so legacy and cloud-native coexist.
@@ -99,7 +99,7 @@ Apache 2.0 core, no per-developer licensing. You pay for support and/or the buil
 
 ## Start with a 30-minute discovery call
 
-Free, no prep. We look at how your teams provision today and tell you whether the IDP Edition or a build-with engagement gets you to self-service faster.
+Free, no prep. We look at how your teams provision today and tell you whether the Developer Self-Service or a build-with engagement gets you to self-service faster.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -108,7 +108,7 @@ Free, no prep. We look at how your teams provision today and tell you whether th
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
 
 <!--
 SEO/GEO:

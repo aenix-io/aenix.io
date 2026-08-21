@@ -48,7 +48,7 @@ faq:
 
 Aenix builds sovereign cloud products on Cozystack for governments, quasi-public entities, and regional operators serving sovereignty-mandated markets.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereign clouds with strict customer-controlled-keys + air-gap support; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large sovereign-cloud product launches at hyperscaler-adjacent scale.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereign clouds with strict customer-controlled-keys + air-gap support; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large sovereign-cloud product launches at hyperscaler-adjacent scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

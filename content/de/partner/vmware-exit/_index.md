@@ -50,7 +50,7 @@ Wenn Ihre Kunden VMware-Angebote bekommen, die ihnen nicht gefallen — dafür i
 <div class="grid-2x2">
 
 **1. Fertige Plattform wiederverkaufen**
-Verkaufen Sie [Ænix Platform](/de/partner/) (Public Cloud / ISP / Enterprise / IDP / AI/ML) unter Ihrer Marke. Bis **40% Marge**, Deal-Schutz, Sales-Kit, technisches Pre-Sales, L3-Support. Die ISP-Edition bringt White-Label-Portal und WHMCS-Billing.
+Verkaufen Sie [Ænix Platform](/de/partner/) (Public Cloud / ISP / Enterprise / IDP / AI/ML) unter Ihrer Marke. Bis **40% Marge**, Deal-Schutz, Sales-Kit, technisches Pre-Sales, L3-Support. Die Provider Edition bringt White-Label-Portal und WHMCS-Billing.
 
 **2. Mit unserem Team co-delivern / bauen**
 Eigene differenzierte Cloud? Cozystack ist das Framework, **Aenix Ihr ausgelagertes Engineering-Team** — wir führen die [VMware-Migration](/de/migration/) durch und stellen eine [White-Label-Cloud](/de/dienstleistungen/) auf, die Ihnen gehört, und schließen die K8s/KubeVirt-Lücke.
@@ -98,7 +98,7 @@ So oder so: Die Pro-Core-Lizenz, die Ihr Kunde an VMware zahlt, wird zu Marge un
 ## FAQ
 
 **Wiederverkaufen oder bauen?**
-Beides. ISP-Edition für Tempo; mit uns eine differenzierte Cloud für eigenes IP. Das Partnergespräch grenzt es pro Deal ab.
+Beides. Provider Edition für Tempo; mit uns eine differenzierte Cloud für eigenes IP. Das Partnergespräch grenzt es pro Deal ab.
 
 **Welche Marge ist möglich?**
 Bis 40% auf Lizenz + Support über das [Partnerprogramm](/de/partner/), plus wiederkehrende Managed-Services-Marge.

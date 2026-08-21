@@ -21,14 +21,14 @@ quick_facts:
   - label: "Technische Basis"
     value: "Cozystack mit KubeVirt (VMs und Container über eine Kubernetes-API), Cilium (eBPF) Networking und LINSTOR/DRBD Storage; Mandantenfähigkeit über das Tenant-CRD"
   - label: "Passende Edition"
-    value: "Ænix Platform Enterprise Edition verbindet On-Prem mit VMware, OpenNebula, OpenShift und Public Clouds; für große Betreiber kombinierbar mit der Public Cloud Edition"
+    value: "Ænix Platform Enterprise Edition verbindet On-Prem mit VMware, OpenNebula, OpenShift und Public Clouds; für große Betreiber kombinierbar mit der Provider Edition"
   - label: "Engagement"
     value: "Aenix liefert die produktisierte Ænix Platform plus Services; Preisstufen Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell"
 faq:
   - q: "Was unterscheidet eine kohärente Hybrid-Cloud-Architektur von einem fragmentierten Flickenteppich?"
     a: "Bei einer kohärenten Architektur teilen alle Substrate dieselbe Kubernetes-API, dieselbe Observability und dieselben Deployment-Muster. Ein fragmentierter Flickenteppich entsteht durch getrennte Teams und Tools für Public Cloud und On-Prem, was zu operativer Drift führt — gleiche Workloads laufen unterschiedlich an verschiedenen Orten."
   - q: "Welche Substrate kann die Ænix Platform über eine Control Plane verbinden?"
-    a: "Die Ænix Platform Enterprise Edition verbindet On-Prem-Hardware mit VMware, OpenNebula, OpenShift und Public Clouds über eine einzige Control Plane. Für große Betreiber oder Telcos lässt sie sich mit der Public Cloud Edition kombinieren."
+    a: "Die Ænix Platform Enterprise Edition verbindet On-Prem-Hardware mit VMware, OpenNebula, OpenShift und Public Clouds über eine einzige Control Plane. Für große Betreiber oder Telcos lässt sie sich mit der Provider Edition kombinieren."
   - q: "Vermeidet Cozystack Vendor-Lock-in in einer Hybrid-Cloud?"
     a: "Ja. Cozystack ist unter Apache 2.0 lizenziert, ohne CPU- oder Core-basierte Lizenzierung, und baut auf CNCF-Standardbausteinen wie KubeVirt, Cilium und LINSTOR. Dadurch entfällt das strukturelle Lock-in vieler Vendor-getriebener Hybrid-Lösungen."
   - q: "Für welche Workloads eignet sich Public Cloud, für welche On-Prem?"
@@ -45,7 +45,7 @@ faq:
 
 Aenix baut und betreibt Hybrid-Cloud-Plattformen auf Basis von [Cozystack](/de/produkte/cozystack/) — Kubernetes-nativ, mandantenfähig, mit konsistenten Operations über Kunden-Hardware, Public-Cloud-Regionen und Edge-Standorte hinweg.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telkos: kombinieren Sie diese mit der **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telkos: kombinieren Sie diese mit der **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

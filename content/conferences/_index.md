@@ -81,10 +81,10 @@ The Aenix team's typical talk subjects:
 
 ### Commercial and edition-specific
 
-- Building a sovereign cloud product — ISP Edition + WHMCS integration patterns
+- Building a sovereign cloud product — Provider Edition + WHMCS integration patterns
 - DORA / NIS2 architecture for regulated enterprises — Enterprise Edition design
-- Sovereign AI infrastructure — AI/ML Edition GPU patterns
-- Internal Developer Platform on Kubernetes — IDP Edition golden paths
+- Sovereign AI infrastructure — AI & GPU GPU patterns
+- Internal Developer Platform on Kubernetes — Developer Self-Service golden paths
 - Open-core go-to-market — how Aenix turns Cozystack into Ænix Platform
 
 ### Industry and policy
@@ -119,4 +119,4 @@ For invitations: book a [discovery call](/contact/) and mention "speaking invita
 
 ---
 
-*Aenix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), Apache 2.0. Aenix commercializes Cozystack as [Ænix Platform](/products/aenix-platform/) — turnkey commercial cloud-in-a-box in five editions.*
+*Aenix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), Apache 2.0. Aenix commercializes Cozystack as [Ænix Platform](/products/aenix-platform/) — turnkey commercial cloud-in-a-box in two editions.*

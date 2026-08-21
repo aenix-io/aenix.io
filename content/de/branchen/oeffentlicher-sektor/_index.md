@@ -49,7 +49,7 @@ faq:
 
 Aenix baut Plattformen für öffentliche und quasi-öffentliche Organisationen in der EU und Zentralasien. Open-Source-Foundation ([Cozystack](/de/produkte/cozystack/)), beschaffungsportal-bereit, regulator-konform.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveräne Cloud mit strikt kundenkontrollierten Schlüsseln + Air-Gap-Option; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große öffentliche-Sektor-Cloud-Produkt-Launches im Hyperscaler-nahen Maßstab.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveräne Cloud mit strikt kundenkontrollierten Schlüsseln + Air-Gap-Option; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große öffentliche-Sektor-Cloud-Produkt-Launches im Hyperscaler-nahen Maßstab.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

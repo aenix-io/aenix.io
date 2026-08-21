@@ -30,7 +30,7 @@ quick_facts:
   - label: "Technologie-Basis"
     value: "Cozystack: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Produkt"
-    value: "Ænix Platform in fünf Editions; passend Enterprise Edition (regulierte Unternehmen) und Public Cloud Edition (große Betreiber)"
+    value: "Ænix Platform in zwei Editions; passend Enterprise Edition (regulierte Unternehmen) und Provider Edition (große Betreiber)"
 
 faq:
   - q: "Was umfasst ein Private Cloud Consulting bei Aenix?"
@@ -44,7 +44,7 @@ faq:
   - q: "Hilft Aenix beim VMware-Ausstieg nach der Broadcom-Übernahme?"
     a: "Ja. Die VMware-Ausstieg-Strategie ist ein Kernbestandteil. Da KubeVirt VMs und Container auf einer Kubernetes-API betreibt, lassen sich bestehende VM-Workloads auf eine Apache-2.0-lizenzierte Plattform ohne CPU-/Core-basierte Lizenzierung migrieren."
   - q: "Vermeidet die Plattform Vendor-Lock-in und Lizenzkosten?"
-    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Als CNCF-Projekt mit offenem Code vermeidet es proprietären Lock-in. Aenix bietet zusätzlich die produktisierte Ænix Platform mit kommerziellem Support in fünf Editions an."
+    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Als CNCF-Projekt mit offenem Code vermeidet es proprietären Lock-in. Aenix bietet zusätzlich die produktisierte Ænix Platform mit kommerziellem Support in zwei Editions an."
 ---
 
 <!-- BLOCK 1 -->
@@ -53,7 +53,7 @@ faq:
 
 Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Kubernetes-nativen Private-Cloud-Plattform, die wir in Produktion mit Service Providern, Banken und regulierten Unternehmen betreiben. Unsere Private-Cloud-Consulting-Engagements bringen dieselben Engineers in Ihr Engagement.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die ihre eigene Public-Cloud-Class-Plattform betreiben.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die ihre eigene Public-Cloud-Class-Plattform betreiben.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

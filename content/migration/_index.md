@@ -5,7 +5,7 @@ hero_subtitle: "Strategy and architecture to migrate off legacy virtualization"
 language: "en"
 ---
 
-**Practical migration patterns for moving onto Ænix Platform from existing platforms. Productized migration tooling for ISP Edition; engineering-led migration for Enterprise + Public Cloud Edition deployments. Cohort-based; parallel-run-validated.**
+**Practical migration patterns for moving onto Ænix Platform from existing platforms. Productized migration tooling for Provider Edition; engineering-led migration for Enterprise + Provider Edition deployments. Cohort-based; parallel-run-validated.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -51,7 +51,7 @@ For Proxmox environments hitting scale limits (multi-tenancy, service catalog, b
 
 - **[Proxmox migration](/migration/proxmox/)** — migration patterns
 
-**Typical pattern:** Productized installer for ISP Edition → Workload migration via standard VM export/import → Tenant model alignment → Cutover.
+**Typical pattern:** Productized installer for Provider Edition → Workload migration via standard VM export/import → Tenant model alignment → Cutover.
 
 ### CloudStack
 

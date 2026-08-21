@@ -27,7 +27,7 @@ quick_facts:
   - label: "Engagement-Phasen"
     value: "Discovery-Call, Platform Readiness Assessment (5-10 Tage, Festpreis vorab vereinbart), Pilot (3-6 Monate), vollständiger Build (9-18 Monate), optional Managed Operations"
   - label: "Produkt"
-    value: "Ænix Platform — produktisierte Cloud-in-a-Box in fünf Editions; Preise Basic 1.250 $/Mon. (10 Nodes) / Standard 3.000 $ / Plus 5.500 $ / Enterprise Custom"
+    value: "Ænix Platform — produktisierte Cloud-in-a-Box in zwei Editions; Preise Basic 1.250 $/Mon. (10 Nodes) / Standard 3.000 $ / Plus 5.500 $ / Enterprise Custom"
 faq:
   - q: "Was bedeutet es, eine Private Cloud aufzubauen?"
     a: "Eine eigene Cloud-Plattform für VMs und Container auf eigener oder gemieteter Hardware zu betreiben — mit Self-Service, Mandantenfähigkeit und Automatisierung wie bei einer Public Cloud, aber unter voller Daten- und Kostenkontrolle. Aenix realisiert das auf Cozystack, einem CNCF-Open-Source-Projekt."
@@ -47,7 +47,7 @@ faq:
 
 Aenix baut Private Clouds end-to-end auf Basis von [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das wir in Produktion mit Service-Anbietern, Banken, Telcos und KI-Operatoren betreiben.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die eine Multi-Region-Plattform in Public-Cloud-Qualität brauchen.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die eine Multi-Region-Plattform in Public-Cloud-Qualität brauchen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

@@ -31,7 +31,7 @@ faq:
   - q: "Bekommen Teams echte Isolation?"
     a: "Ja — verschachtelte Mandanten mit Quotas und RBAC, Self-Service innerhalb der Leitplanken, ohne Cluster-Wildwuchs."
   - q: "Build oder Buy?"
-    a: "Das Erstgespräch grenzt es ab. Tempo: IDP-Edition. Maßanzug: das Aufbau-Modell mit uns als Plattform-Bank."
+    a: "Das Erstgespräch grenzt es ab. Tempo: Developer Self-Service. Maßanzug: das Aufbau-Modell mit uns als Plattform-Bank."
   - q: "Laufen bestehende Workloads?"
     a: "VMs (KubeVirt) und Container auf einer Plattform, plus Managed Databases und S3-kompatibler Storage."
   - q: "Was kostet das?"
@@ -96,7 +96,7 @@ Infrastruktur zum Produkt machen: Self-Service für VMs, Managed Kubernetes, Man
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren heutigen Bereitstellungsweg an und sagen, ob IDP-Edition oder Aufbauprojekt schneller zum Self-Service führt.
+Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren heutigen Bereitstellungsweg an und sagen, ob Developer Self-Service oder Aufbauprojekt schneller zum Self-Service führt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>

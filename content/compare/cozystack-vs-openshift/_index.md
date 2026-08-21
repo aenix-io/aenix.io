@@ -44,7 +44,7 @@ faq:
 
 **Both KubeVirt-based. Different commercial models, different operational footprints.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises evaluating OpenShift alternative; **[IDP Edition](/products/aenix-platform/idp-edition/)** for product engineering teams.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises evaluating OpenShift alternative; **[Developer Self-Service](/products/aenix-platform/idp-edition/)** for product engineering teams.
 
 <div class="compare-elevated compare-elevated--col3">
 

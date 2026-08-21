@@ -20,7 +20,7 @@ language: "de"
 <div class="diagram__conn">vergleichen &amp; migrieren</div>
 <div class="diagram__node"><b>Migrations-Hub</b><div class="diagram__chips"><span>VMware</span><span>Proxmox</span><span>OpenStack</span></div></div>
 <div class="diagram__conn">landen auf</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>ISP Edition</span><span>Enterprise Edition</span><span>Public Cloud Edition</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Provider Edition</span><span>Enterprise Edition</span><span>Provider Edition</span></div></div>
 </div>
 </div>
 
@@ -32,16 +32,16 @@ Post-Broadcom stehen VMware-Kunden vor Subscription-Druck + Lizenz-Modell-Unsich
 - **[Cozystack vs VMware](/de/vergleichen/cozystack-vs-vmware/)** — direkter Head-to-Head-Architektur-Vergleich
 - **[VMware-Migrations-Hub](/de/migration/vmware/)** — Strategie + Architektur + Kohorten-Migrations-Patterns
 
-**Passt zu:** ISP Edition (Hosting-Anbieter, die VMware Cloud Director verlassen); Enterprise Edition (regulierte Unternehmen, die VMware Cloud Foundation verlassen); Public Cloud Edition (große Betreiber).
+**Passt zu:** Provider Edition (Hosting-Anbieter, die VMware Cloud Director verlassen); Enterprise Edition (regulierte Unternehmen, die VMware Cloud Foundation verlassen); Provider Edition (große Betreiber).
 
 ## Proxmox
 
-Proxmox ist exzellent für kleine Umgebungen. Jenseits einer bestimmten Skala werden Multi-Tenancy + Service-Katalog + Billing limitierend. ISP Edition füllt diese Lücke.
+Proxmox ist exzellent für kleine Umgebungen. Jenseits einer bestimmten Skala werden Multi-Tenancy + Service-Katalog + Billing limitierend. Provider Edition füllt diese Lücke.
 
 - **[Proxmox-Alternative](/de/alternativen/proxmox-alternative/)** — wann Proxmox nicht ausreicht
 - **[Proxmox-Migrations-Hub](/de/migration/proxmox/)** — Migrations-Patterns
 
-**Passt zu:** ISP Edition.
+**Passt zu:** Provider Edition.
 
 ## OpenStack
 
@@ -50,7 +50,7 @@ OpenStack läuft im großen Maßstab, ist aber operativ schwer. Häufiger Modern
 - **[OpenStack-Alternative](/de/alternativen/openstack-alternative/)** — wann OpenStack ersetzen
 - **[OpenStack-Migrations-Hub](/de/migration/openstack/)** — Modernisierungs-Patterns
 
-**Passt zu:** ISP Edition oder Public Cloud Edition.
+**Passt zu:** Provider Edition oder Provider Edition.
 
 ---
 

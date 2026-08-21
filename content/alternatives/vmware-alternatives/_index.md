@@ -41,7 +41,7 @@ faq:
 
 If you're early in the evaluation and want a single recommendation focused on multi-tenant + sovereign + AI-ready cloud — see our **[VMware alternative landing](/alternatives/vmware-alternative/)** which goes deep on Cozystack as our recommendation. This page is the broader market scan.
 
-> **Pairs with:** **[Ænix Platform](/products/aenix-platform/)** — five editions: ISP (hosting providers), Enterprise (regulated), Public Cloud (large operators), IDP (product engineering), AI/ML (AI-heavy). The right edition depends on your buyer profile post-VMware. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Platform](/products/aenix-platform/)** — Two editions: Provider, if you sell cloud to customers, and Enterprise, if you run it for your own organisation. The right one depends on which side of that line you are on post-VMware. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/alternatives/vmware-alternative/">See recommendation →</a>

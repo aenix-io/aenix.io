@@ -47,7 +47,7 @@ faq:
 
 Aenix builds private clouds end-to-end based on [Cozystack](/products/cozystack/), an open-source CNCF project we run in production with service providers, banks, telecom, and AI operators.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building private/hybrid sovereign cloud; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators needing multi-region public-cloud-class platform.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building private/hybrid sovereign cloud; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators needing multi-region public-cloud-class platform.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

@@ -78,7 +78,7 @@ Red Hat kommerzielle Subscription. **Wann sinnvoll:** bestehende Red Hat / OpenS
 - **AWS Sovereign Cloud, Azure Sovereign, GCP** — Hyperscaler-souveräne Angebote
 - **Hetzner** (Deutschland) — Bare Metal + Cloud, beliebt in DACH
 - **OVHcloud** (Frankreich) — starke EU-souveräne Positionierung
-- **Ænix Platform ISP Edition deployments at regional hosting providers (currently listed on aenix.io); tier-1 European bank engagements under NDA until mid-2027** — regionales souveränes Cloud-Produkt
+- **Ænix Platform Provider Edition deployments at regional hosting providers (currently listed on aenix.io); tier-1 European bank engagements under NDA until mid-2027** — regionales souveränes Cloud-Produkt
 - **QazCloud** (Kasachstan) — souveränes KI-Ökosystem
 
 **Trade-off:** Anbieter-managed Convenience vs. direkte Hardware-Kontrolle.

@@ -1,11 +1,11 @@
 ---
-title: "Turnkey Cloud-Plattform — fünf Editions, eine Foundation"
-description: "Ænix Platform — turnkey Cloud-in-a-Box auf Basis des CNCF-Projekts Cozystack. Fünf Editions für Hosting, Enterprise und Public Cloud. DORA / NIS2 by Design."
+title: "Turnkey Cloud-Plattform — zwei Editions, eine Foundation"
+description: "Ænix Platform — turnkey Cloud-in-a-Box auf Basis des CNCF-Projekts Cozystack. Zwei Editions für Hosting, Enterprise und Public Cloud. DORA / NIS2 by Design."
 type: "page"
 language: "de"
 ---
 
-**Ænix Platform ist eine turnkey Cloud-in-a-Box. Sie basiert auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen (CNCF-Projekt, Apache 2.0), und ergänzt alles, was ein Betreiber braucht, um ein echtes Cloud-Geschäft zu führen: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing, Payment-Integrationen, WHMCS-Integration, Enterprise-SLA. Fünf Editions passen zu fünf Buyer-Profilen. Installieren. Nutzer einbinden. Betrieb starten.**
+**Ænix Platform ist eine turnkey Cloud-in-a-Box. Sie basiert auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen (CNCF-Projekt, Apache 2.0), und ergänzt alles, was ein Betreiber braucht, um ein echtes Cloud-Geschäft zu führen: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing, Payment-Integrationen, WHMCS-Integration, Enterprise-SLA. Zwei Editions decken beide Fälle ab. Installieren. Nutzer einbinden. Betrieb starten.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -17,8 +17,8 @@ language: "de"
 ## Quick facts
 
 - **Open-Core-Unternehmen.** Wir erstellen und pflegen Cozystack — ein CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026) — und kommerzialisieren es als Ænix Platform.
-- **Fünf Editions** passend zum Buyer-Profil: Public Cloud / ISP / Enterprise / IDP / AI/ML. Plus Entry-Tier — Pure Cozystack mit Ænix-Support — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
-- **Engagement-Größe:** ISP Edition Entry ab 1.250 USD/Monat Support-Tier; Public Cloud / Enterprise Full Builds nach RFP.
+- **Zwei Editions:** Provider, wenn Sie Cloud verkaufen; Enterprise, wenn Sie sie selbst betreiben. Dazu die Module AI & GPU und Developer Self-Service sowie der Entry-Tier Pure Cozystack mit Ænix-Support.
+- **Engagement-Größe:** Provider Edition ab 1.250 USD/Monat Support-Tier; Betreiber- und Enterprise-Builds nach RFP.
 - **Regulatorischer Fokus:** DORA (in Kraft seit 2025-01-17), NIS2 (Umsetzungsfrist 2024-10-17), nationale Souveränitäts-Mandate.
 - **Architektur:** Kubernetes-nativ, Multi-Tenant Tenant CRD, kundenkontrollierte Hardware. Aufgebaut auf Talos + Kubernetes + KubeVirt + Cilium + LINSTOR + cozyportal + VictoriaMetrics + VictoriaLogs.
 - **Geografie:** AENIX s.r.o. (Tschechien) + AENIX INC (Delaware), mit Engineering-Teams in der EU und Zentralasien.
@@ -26,57 +26,35 @@ language: "de"
 
 ---
 
-## Fünf Editions — ein Produkt, fünf Buyer-Profile
+## Zwei Editions
 
-### Ænix Platform Public Cloud Edition
+Eine Frage entscheidet: Verkaufen Sie Cloud an andere, oder betreiben Sie sie für die eigene Organisation? Derselbe Cozystack-Kern, unterschiedliche kommerzielle Oberfläche.
 
-**Für:** Große Public-Cloud-Betreiber, große Banken mit eigener Cloud, große Telcos / nationale Operatoren
+### Ænix Platform Provider Edition
 
-Multi-Hypervisor-Cloud-Control-Plane mit Nutzern, Projekten, Quotas, Cloud-like UX, Multi-Region-Support. Integration mit Drittanbieter-Infrastruktur. Gebaut für große Rechenzentren und Cloud-Anbieter, die Public Clouds starten oder skalieren.
+**Für:** alle, die Cloud-Kapazität verkaufen — Hosting-Anbieter, MSPs, regionale Clouds und Rechenzentren am einen Ende; Telcos, nationale Betreiber und Banken mit kommerzieller Cloud am anderen.
 
-**Engagement:** Mehrjähriges Programm, Angebot nach RFP
+Billing-Backend und -Frontend, WHMCS-Integration, Payment-Processing, White-Label-Kundenportal, Tenant-Sperrung und -Suspendierung, Service-Erstellungs-Wizards. Im Betreiber-Maßstab zusätzlich Multi-Region-Control-Plane und Föderation mit dem bestehenden VMware-, OpenNebula- oder OpenShift-Bestand.
 
-[Public Cloud Edition →](/de/produkte/aenix-platform/public-cloud-edition/)
+**Wie gekauft:** Preisliste ab **1.250 USD/Monat** pro 10 Nodes; Multi-Region-Programme nach RFP
 
-### Ænix Platform ISP Edition
-
-**Für:** Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren
-
-Moderne Alternative zu OpenStack. WHMCS-Integration, Billing-Modul + Templates, Tenant Lock/Suspension, Fast Feature Delivery, Migrations-Expertise von VMware/OpenStack/Virtuozzo.
-
-**Engagement:** Produktisiert — Entry ab **1.250 USD/Monat** Support-Tier
-
-[ISP Edition →](/de/produkte/aenix-platform/isp-edition/)
+[Provider Edition →](/de/produkte/aenix-platform/provider-edition/) · [Im Betreiber-Maßstab →](/de/produkte/aenix-platform/public-cloud-edition/)
 
 ### Ænix Platform Enterprise Edition
 
-**Für:** Regulierte Unternehmen (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen)
+**Für:** regulierte Organisationen, die Cloud für sich selbst betreiben — Banken, Versicherer, öffentliche Verwaltung, Telco, Gesundheitswesen, Energie.
 
-Private und hybride souveräne Cloud — sicher, automatisiert, einfach erweiterbar. Multi-DC. Eine Control Plane verbindet VMware, OpenNebula, OpenShift und mehr. DORA / NIS2-konform. Inklusive Bildung und Training.
+Private und hybride souveräne Cloud über mehrere Rechenzentren. DORA- und NIS2-Architekturkontrollen, kundenverwaltete Schlüssel, auditfähiges Logging, Air-Gap. Eine Control Plane über VMware, OpenNebula und OpenShift. Schulung inklusive.
 
-**Engagement:** Mehrjähriger Plattform-Build, Angebot nach RFP
+**Wie gekauft:** mehrjähriger Plattform-Build, Angebot nach RFP
 
 [Enterprise Edition →](/de/produkte/aenix-platform/enterprise-edition/)
 
-### Ænix Platform IDP Edition
+### Zwei Module, für beide Editions
 
-**Für:** Produkt- / SaaS-Organisationen mit starken Engineering-Teams
+**[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** — mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken. **[Developer Self-Service](/de/produkte/aenix-platform/idp-edition/)** — Golden Paths, GitLab- und Argo-CD-Automatisierung, Self-Service-APIs.
 
-Internal Developer Platform Layer auf der Cloud — GitLab-Automation, Argo CD Workflows, APIs. Engineers verbringen weniger Zeit mit Routine-Arbeit und mehr Zeit mit Produkt-Auslieferung.
-
-**Engagement:** Projekt plus Managed-Retainer, Angebot nach RFP
-
-[IDP Edition →](/de/produkte/aenix-platform/idp-edition/)
-
-### Ænix Platform AI/ML Edition
-
-**Für:** KI-lastige Organisationen, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen
-
-KI-Plattform-Automatisierung out-of-the-box: Standard-KI-Workloads, Service-APIs, fertige Blueprints, Datenbanken, Apps und Modelle. Von der Idee zu laufenden Jobs schneller.
-
-**Engagement:** Projekt, Angebot nach RFP; Managed-Retainer
-
-[AI/ML Edition →](/de/produkte/aenix-platform/ai-ml-edition/)
+Dazu der Entry-Tier **Pure Cozystack mit Ænix-Support** für Produkt-Teams auf eigener oder gemieteter Hardware.
 
 ---
 
@@ -109,15 +87,15 @@ Unsere Enterprise Edition ist DORA / NIS2-konform by Design. Kundenkontrollierte
 
 ### "Wir modernisieren unser Hosting-Geschäft"
 
-ISP Edition ersetzt OpenStack / VMware Cloud Director / Virtuozzo durch eine turnkey Cloud-Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, erweiterter Service-Katalog. Migration in Kohorten. Produktionsreif in Wochen. Ab 1.250 USD/Monat.
+Provider Edition ersetzt OpenStack / VMware Cloud Director / Virtuozzo durch eine turnkey Cloud-Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, erweiterter Service-Katalog. Migration in Kohorten. Produktionsreif in Wochen. Ab 1.250 USD/Monat.
 
-[ISP Edition →](/de/produkte/aenix-platform/isp-edition/) | [VMware-Migrations-Hub →](/de/migration/vmware/)
+[Provider Edition →](/de/produkte/aenix-platform/provider-edition/) | [VMware-Migrations-Hub →](/de/migration/vmware/)
 
 ### "Wir bauen souveräne KI-Infrastruktur"
 
-AI/ML Edition für KI-lastige Organisationen. Multi-Tenant-GPU-Scheduling (H100, H200, L40S, A100, Blackwell). Fertige Inferenz + Fine-Tuning + RAG-Patterns. Kundenkontrollierte Schlüssel. Souveränitätskontrollen.
+AI & GPU für KI-lastige Organisationen. Multi-Tenant-GPU-Scheduling (H100, H200, L40S, A100, Blackwell). Fertige Inferenz + Fine-Tuning + RAG-Patterns. Kundenkontrollierte Schlüssel. Souveränitätskontrollen.
 
-[AI/ML Edition →](/de/produkte/aenix-platform/ai-ml-edition/) | [Souveräne KI →](/de/loesungen/sovereign-ai/) | [Kostenloser Sovereign-AI-Decision-Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/)
+[AI & GPU →](/de/produkte/aenix-platform/ai-ml-edition/) | [Souveräne KI →](/de/loesungen/sovereign-ai/) | [Kostenloser Sovereign-AI-Decision-Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/)
 
 ### "Wir verlassen die Hyperscaler-Cloud"
 
@@ -129,7 +107,7 @@ Cloud-Repatriation auf souveräne oder On-Prem-Ænix-Platform. 40-70% TCO-Redukt
 
 ## Kunden-Evidenz
 
-### Regionale Hosting-Anbieter mit Ænix Platform ISP Edition
+### Regionale Hosting-Anbieter mit Ænix Platform Provider Edition
 
 {{< clients >}}
 
@@ -150,7 +128,7 @@ CSI-Driver-Entwicklung, Virtualisierungs-Plattform-Forschung, Public-Cloud / VPS
 1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope und Timeline bestätigen
 2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — Aktuelle Architektur-Audit, Gap-Analyse, Migrations-Roadmap
 3. **Pilot-Engagement** (3-6 Monate) — definierter Slice, validierter Business Case
-4. **Vollständiger Edition-Build** — Wochen für ISP Edition; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML — Produktions-Deployment
+4. **Vollständiger Edition-Build** — Wochen für Provider Edition; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML — Produktions-Deployment
 5. **Managed Operations** (laufender Retainer) — Aenix betreibt die Plattform, die Sie operieren, oder hybrid
 
 [Detaillierte Preise und Engagement-Modell →](/de/preise/)
@@ -169,7 +147,7 @@ Bis zu **40% Marge** auf Ænix-Platform-Verkäufe für Reseller, Integratoren un
 
 ### Was ist Ænix Platform?
 
-Eine turnkey kommerzielle Cloud-in-a-Box von Aenix, basierend auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen. Sie ergänzt die Schichten, die ein echter Cloud-Betreiber braucht — Hosting-Panel, Billing, Portale, Payments, Support — und liefert in fünf Editions passend zum Buyer-Profil.
+Eine turnkey kommerzielle Cloud-in-a-Box von Aenix, basierend auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen. Sie ergänzt die Schichten, die ein echter Cloud-Betreiber braucht — Hosting-Panel, Billing, Portale, Payments, Support — und liefert in zwei Editions passend zum Buyer-Profil.
 
 ### Wie ist die Beziehung zwischen Aenix, Ænix Platform und Cozystack?
 
@@ -181,11 +159,11 @@ Ja. Cozystack ist Apache 2.0. Jeder kann es ausführen. Aenix ist der Original-M
 
 ### Wer sind Aenix-Kunden?
 
-Öffentliche Produktivkunden mit Ænix Platform ISP Edition: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Wir arbeiten auch mit Tier-1-europäischen-Banken unter NDA an Mehr-Millionen-Euro Enterprise-Edition-Engagements; erste namentlich genannte Bank-Case-Studies erwartet Mitte 2027.
+Öffentliche Produktivkunden mit Ænix Platform Provider Edition: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Wir arbeiten auch mit Tier-1-europäischen-Banken unter NDA an Mehr-Millionen-Euro Enterprise-Edition-Engagements; erste namentlich genannte Bank-Case-Studies erwartet Mitte 2027.
 
-### Warum fünf Editions?
+### Warum zwei Editions?
 
-Gleiches Produkt, unterschiedliche Feature-Bundles pro Buyer-Profil. Public Cloud Edition für große Betreiber; ISP Edition für Hosting-Anbieter; Enterprise Edition für regulierte Unternehmen; IDP Edition für Produkt-Engineering-Teams; AI/ML Edition für KI-lastige Organisationen. Editions teilen die Cozystack-Foundation; Bundles unterscheiden sich in Portalen, Billing-Surfaces, Integrationen, Support-Tier und Edition-spezifischen Modulen.
+Derselbe Cozystack-Kern, zwei kommerzielle Pakete. Provider Edition, wenn Sie Kapazität an Kunden verkaufen — Billing, Payments, Kundenportal, Tenant-Suspendierung. Enterprise Edition, wenn Sie Cloud unter Aufsicht für die eigene Organisation betreiben — Schlüsselhoheit, auditfähiges Logging, Air-Gap, Kontroll-Mapping. GPU und Developer Self-Service sind Module, weil beide Seiten danach fragen.
 
 ---
 

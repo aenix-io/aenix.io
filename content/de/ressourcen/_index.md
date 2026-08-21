@@ -20,7 +20,7 @@ language: "de"
 <div class="diagram__conn">herunterladen &amp; selbst einschätzen</div>
 <div class="diagram__node"><b>Engagement</b><div class="diagram__chips"><span>Discovery-Call</span><span>Platform Readiness Assessment</span></div></div>
 <div class="diagram__conn">führt zu</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Enterprise Edition</span><span>AI/ML Edition</span><span>IDP Edition</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Enterprise Edition</span><span>AI & GPU</span><span>Developer Self-Service</span></div></div>
 </div>
 </div>
 
@@ -41,8 +41,8 @@ language: "de"
 
 ### Decision Guides + Maturity Models
 
-- **[Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/)** — 14-Seiten-PDF mit Foldout-Master-Decision-Tree. 7 Decisions, 4 Reference-Architekturen, GPU-Sizing-Tabellen. Passt zu: AI/ML Edition / [Souveräne-KI-Lösung](/de/loesungen/sovereign-ai/).
-- **[Platform Engineering Maturity Assessment](/de/ressourcen/platform-engineering-maturity-assessment/)** — 8-Dimensionen × 5-Stages-Rubrik (PDF + optionales interaktives Web-Formular). Passt zu: IDP Edition / [Internal Developer Platform Service](/de/dienstleistungen/internal-developer-platform/).
+- **[Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/)** — 14-Seiten-PDF mit Foldout-Master-Decision-Tree. 7 Decisions, 4 Reference-Architekturen, GPU-Sizing-Tabellen. Passt zu: AI & GPU / [Souveräne-KI-Lösung](/de/loesungen/sovereign-ai/).
+- **[Platform Engineering Maturity Assessment](/de/ressourcen/platform-engineering-maturity-assessment/)** — 8-Dimensionen × 5-Stages-Rubrik (PDF + optionales interaktives Web-Formular). Passt zu: Developer Self-Service / [Internal Developer Platform Service](/de/dienstleistungen/internal-developer-platform/).
 
 </div>
 </div>

@@ -59,7 +59,7 @@ Wenn Sie Managed Cloud an Ihre eigenen Kunden verkaufen, modelliert unser vollst
   <a class="cta-primary" href="/isp-calculator/">ISP-Unit-Economics-Rechner öffnen →</a>
 </div>
 
-Siehe die **[ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für das Produkt hinter diesem Modell.
+Siehe die **[Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für das Produkt hinter diesem Modell.
 
 ---
 
@@ -69,7 +69,7 @@ Eigene GPUs auf der eigenen Plattform gegenüber der Miete gleichwertiger GPU-Ka
 
 {{< gpu-roi-calculator lang="de" currency="€" >}}
 
-Siehe die **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** und **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
+Siehe die **[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** und **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
 ---
 
 ## Aus den Zahlen einen Plan machen

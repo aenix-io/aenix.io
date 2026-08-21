@@ -344,9 +344,9 @@ Poor fit:
   the modernization path analysis
 - **[OpenStack alternative](/alternatives/openstack-alternative/)** —
   alternative-focused commercial landing
-- **[ISP Edition product page](/products/aenix-platform/isp-edition/)** —
+- **[Provider Edition product page](/products/aenix-platform/provider-edition/)** —
   common target edition for hosting-provider OpenStack migrations
-- **[Public Cloud Edition product page](/products/aenix-platform/public-cloud-edition/)** —
+- **[Provider Edition product page](/products/aenix-platform/public-cloud-edition/)** —
   common target edition for tier-1 telco OpenStack migrations
 
 ---

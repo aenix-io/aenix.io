@@ -34,7 +34,7 @@ cascade:
     page_type: event-landing
 
 params:
-  description: "Aenix builds Ænix Platform — a turnkey commercial cloud-in-a-box based on Cozystack (CNCF). Five editions for hosting providers, regulated enterprises, public clouds, product engineering teams, AI-heavy organizations."
+  description: "Aenix builds Ænix Platform — a turnkey commercial cloud-in-a-box based on Cozystack (CNCF). Two editions: Provider, for organisations selling cloud, and Enterprise, for organisations running their own."
   author: Ænix
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
@@ -80,24 +80,24 @@ menus:
       url: /products/aenix-platform/
       parent: products
       weight: 1
-    - name: Public Cloud Edition
-      url: /products/aenix-platform/public-cloud-edition/
+    - name: Provider Edition
+      url: /products/aenix-platform/provider-edition/
       parent: products
       weight: 2
-    - name: ISP Edition
-      url: /products/aenix-platform/isp-edition/
-      parent: products
-      weight: 3
     - name: Enterprise Edition
       url: /products/aenix-platform/enterprise-edition/
       parent: products
+      weight: 3
+    - name: "AI & GPU module"
+      url: /products/aenix-platform/ai-ml-edition/
+      parent: products
       weight: 4
-    - name: IDP Edition
+    - name: Developer Self-Service module
       url: /products/aenix-platform/idp-edition/
       parent: products
       weight: 5
-    - name: AI/ML Edition
-      url: /products/aenix-platform/ai-ml-edition/
+    - name: Cloud at operator scale
+      url: /products/aenix-platform/public-cloud-edition/
       parent: products
       weight: 6
     - name: Cozystack (open source)
@@ -447,24 +447,24 @@ menus:
       url: /de/produkte/aenix-platform/
       parent: products-de
       weight: 1
-    - name: Public Cloud Edition
-      url: /de/produkte/aenix-platform/public-cloud-edition/
+    - name: Provider Edition
+      url: /de/produkte/aenix-platform/provider-edition/
       parent: products-de
       weight: 2
-    - name: ISP Edition
-      url: /de/produkte/aenix-platform/isp-edition/
-      parent: products-de
-      weight: 3
     - name: Enterprise Edition
       url: /de/produkte/aenix-platform/enterprise-edition/
       parent: products-de
+      weight: 3
+    - name: "AI- & GPU-Modul"
+      url: /de/produkte/aenix-platform/ai-ml-edition/
+      parent: products-de
       weight: 4
-    - name: IDP Edition
+    - name: Developer-Self-Service-Modul
       url: /de/produkte/aenix-platform/idp-edition/
       parent: products-de
       weight: 5
-    - name: AI/ML Edition
-      url: /de/produkte/aenix-platform/ai-ml-edition/
+    - name: Cloud im Betreiber-Maßstab
+      url: /de/produkte/aenix-platform/public-cloud-edition/
       parent: products-de
       weight: 6
     - name: Cozystack (Open Source)

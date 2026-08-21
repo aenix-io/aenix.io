@@ -11,7 +11,7 @@ related_pages:
   - /partners/
   - /products/aenix-platform/
   - /services/white-label-cloud/
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /products/cozystack/
 ---
 
@@ -19,7 +19,7 @@ related_pages:
 
 **Broadcom reshaped the VMware partner program — and your clients want what's next. Add an open, sovereign cloud line your team co-sells into every VMware account: up to 40% margin, deal protection. Resell it, or co-deliver with Aenix as the engineering team behind it.**
 
-> **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/aenix-platform/)** (five editions to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/aenix-platform/)** (two editions plus two modules to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
@@ -27,7 +27,7 @@ related_pages:
 </div>
 
 <div class="trust-badges">
-Up to 40% margin · Deal protection · Co-sell + pre-sales support · Five editions to sell
+Up to 40% margin · Deal protection · Co-sell + pre-sales support · Two editions plus two modules to sell
 </div>
 
 <!-- /BLOCK 1 -->
@@ -92,7 +92,7 @@ Yes — registered opportunities are reserved to the partner; no channel conflic
 No. Resell only, or co-deliver with Aenix as your engineering bench — your choice per deal.
 
 **What do we sell, exactly?**
-Five editions matched to buyer profile (Public Cloud, ISP, Enterprise, IDP, AI/ML), plus services. See [Ænix Platform](/products/aenix-platform/).
+Two editions — Provider and Enterprise — plus AI & GPU and Developer Self-Service modules, and services. See [Ænix Platform](/products/aenix-platform/).
 
 **How do we start?**
 [Become a partner](/partners/#apply) or book a call; we enable your sales team with the kit and pre-sales support.
@@ -110,7 +110,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
 
 <!--
 SEO/GEO:

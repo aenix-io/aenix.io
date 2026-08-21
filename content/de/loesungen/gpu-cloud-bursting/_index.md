@@ -60,7 +60,7 @@ faq:
 
 **Die Basis besitzen, nur die Spitzen mieten. Cloud Bursting lässt Sie stetige GPU-Workloads auf selbst kontrollierter Hardware betreiben und Inferenz- oder Training-Spitzen bei Bedarf in Public- oder souveräne Clouds auslagern — und die Zusatzkapazität danach wieder abbauen. Aenix baut das als GPU-as-a-Service auf einer einzigen Kubernetes-Plattform, damit Ihre Teams elastische GPU erhalten — ohne Hyperscaler-Lock-in, ohne intransparente Abrechnung, ohne komplette Migration.**
 
-> **Passt zu:** **[Ænix Platform AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** — Multi-Tenant-GPU-Scheduling, fraktionales Sharing und fertige Blueprints für Inferenz und Fine-Tuning. Für die elastische Self-Service-Cloud darunter: kombinieren mit **[Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)**. Rechnen Sie die Zahlen mit den **[ROI- & TCO-Rechnern](/de/roi-rechner/)** durch.
+> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/aenix-platform/ai-ml-edition/)** — Multi-Tenant-GPU-Scheduling, fraktionales Sharing und fertige Blueprints für Inferenz und Fine-Tuning. Für die elastische Self-Service-Cloud darunter: kombinieren mit **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)**. Rechnen Sie die Zahlen mit den **[ROI- & TCO-Rechnern](/de/roi-rechner/)** durch.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

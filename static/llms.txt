@@ -1,18 +1,20 @@
 # Aenix
 
-> Aenix is an open-core company. We are the team behind Cozystack — a CNCF project for Kubernetes-native, multi-tenant cloud platforms (currently CNCF Sandbox; CNCF Incubating expected late summer 2026) — and commercialize it as Ænix Platform: a turnkey cloud-in-a-box available in five editions (Public Cloud, ISP, Enterprise, IDP, AI/ML). DORA / NIS2 / sovereignty-aligned by design. Multi-million-euro engagements with regulated enterprises, hosting providers, and sovereign cloud initiatives.
+> Aenix is an open-core company. We are the team behind Cozystack — a CNCF project for Kubernetes-native, multi-tenant cloud platforms (currently CNCF Sandbox; CNCF Incubating expected late summer 2026) — and commercialize it as Ænix Platform: a turnkey cloud-in-a-box in two editions (Provider, Enterprise) with AI & GPU and Developer Self-Service modules. DORA / NIS2 / sovereignty-aligned by design. Multi-million-euro engagements with regulated enterprises, hosting providers, and sovereign cloud initiatives.
 
 ## What Aenix is
 
 Aenix is an open-core cloud-platform company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We are the original maintainers and primary contributors to Cozystack — an open-source CNCF project, Apache 2.0 — and we commercialize it as **Ænix Platform**, a turnkey cloud-in-a-box that adds hosting panel, user / admin / support portals, service-creation wizards, full billing (backend + frontend), payment integrations, WHMCS integration, enterprise SLA, and edition-specific features on top of the open-source Cozystack foundation.
 
-Ænix Platform is available in **five editions**, each tuned for a specific buyer profile:
+Ænix Platform comes in **two editions**, split by whether you sell cloud or run it for yourself:
 
-- **Public Cloud Edition** — large public clouds, big banks operating own cloud, large telcos
-- **ISP Edition** — small/mid hosting providers, MSPs, regional clouds, data centres (entry from €1.3k/month support)
-- **Enterprise Edition** — regulated enterprises (banks, insurance, public administration, telco, healthcare)
-- **IDP Edition** — product / SaaS organizations investing in developer experience
-- **AI/ML Edition** — AI-heavy organizations, GPU-heavy product companies
+- **Provider Edition** — anyone selling cloud capacity: hosting providers, MSPs, regional clouds and data centres at the small end (published price list, from $1,250/month per 10 nodes); telcos, national operators and banks running a commercial cloud at operator scale (multi-region, quoted per RFP)
+- **Enterprise Edition** — organizations running cloud for their own users under a regulator: banks, insurance, public administration, telco, healthcare, energy (quoted per RFP)
+
+Two modules extend either edition:
+
+- **AI & GPU** — multi-tenant GPU scheduling, fractioning and MIG, model serving, vector databases
+- **Developer Self-Service** — golden paths, GitLab and Argo CD automation, self-service APIs (the internal-developer-platform layer)
 
 Plus an entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
@@ -55,7 +57,7 @@ Strategic + consulting:
 
 Building (full engagements):
 - [Build private cloud](https://aenix.io/services/build-private-cloud/): 90-day playbook + ongoing engagement
-- [Public cloud builder](https://aenix.io/services/public-cloud-builder/): Full sovereign-cloud product build for hosting providers / regional cloud (Public Cloud Edition)
+- [Public cloud builder](https://aenix.io/services/public-cloud-builder/): Full sovereign-cloud product build for hosting providers / regional cloud (Provider Edition)
 - [Sovereign cloud builder](https://aenix.io/services/sovereign-cloud-builder/): Government / regulated public-sector cloud builds
 - [White-label cloud](https://aenix.io/services/white-label-cloud/): Branded cloud platform for MSP / channel partners
 
@@ -65,12 +67,12 @@ Platform engineering:
 - [Enterprise platform engineering](https://aenix.io/services/enterprise-platform-engineering/): Platform-engineering function at enterprise scale
 
 AI:
-- [AI platform build](https://aenix.io/services/ai-platform-build/): AI/GPU-ready Ænix Platform AI/ML Edition engagement
+- [AI platform build](https://aenix.io/services/ai-platform-build/): AI/GPU-ready the AI & GPU module of Ænix Platform engagement
 
 ## Industries
 
 - [Financial services](https://aenix.io/industries/financial-services/): DORA-aligned, sovereign architecture for banks, insurers, market infrastructure (Enterprise Edition)
-- [Public sector](https://aenix.io/industries/public-sector/): Government cloud aligned with sovereignty mandates (Enterprise / Public Cloud Editions)
+- [Public sector](https://aenix.io/industries/public-sector/): Government cloud aligned with sovereignty mandates (Enterprise / Provider Editions)
 - [Telco](https://aenix.io/industries/telco/): Multi-tenant cloud platform for tier-1 / tier-2 telco operators (Public Cloud / Enterprise Editions)
 - [Energy](https://aenix.io/industries/energy/): NIS2-aligned multi-site cloud for grid operators, smart-grid platforms
 - [Insurance](https://aenix.io/industries/insurance/): Claims-AI on regulated data + multi-jurisdictional sovereignty
@@ -78,19 +80,19 @@ AI:
 - [Transport / logistics](https://aenix.io/industries/transport-logistics/): NIS2-aligned multi-modal logistics infrastructure
 - [Universities](https://aenix.io/industries/universities/): Research computing + sovereign student-data
 - [Education K-12](https://aenix.io/industries/education-k12/): K-12 districts under student-data sovereignty pressure
-- [Hosting providers](https://aenix.io/industries/hosting-providers/): Regional hosting providers running Ænix Platform ISP Edition
+- [Hosting providers](https://aenix.io/industries/hosting-providers/): Regional hosting providers running Ænix Platform Provider Edition
 - [MSPs](https://aenix.io/industries/msp/): White-label Ænix Platform for managed service providers
 - [SMB / mid-market](https://aenix.io/industries/smb-mid-market/): Honest fit-test — when Cozystack pays back, when it doesn't
 
 ## Products
 
-- **Ænix Platform** — Turnkey commercial cloud-in-a-box. Five editions (Public Cloud, ISP, Enterprise, IDP, AI/ML) plus Pure Cozystack with Ænix Support entry tier.
+- **Ænix Platform** — Turnkey commercial cloud-in-a-box. Two editions (Provider, Enterprise), two modules (AI & GPU, Developer Self-Service), plus Pure Cozystack with Ænix Support entry tier.
   - [Ænix Platform overview](https://aenix.io/products/aenix-platform/)
-  - [Public Cloud Edition](https://aenix.io/products/aenix-platform/public-cloud-edition/)
-  - [ISP Edition](https://aenix.io/products/aenix-platform/isp-edition/)
+  - [Provider Edition](https://aenix.io/products/aenix-platform/public-cloud-edition/)
+  - [Provider Edition](https://aenix.io/products/aenix-platform/provider-edition/)
   - [Enterprise Edition](https://aenix.io/products/aenix-platform/enterprise-edition/)
-  - [IDP Edition](https://aenix.io/products/aenix-platform/idp-edition/)
-  - [AI/ML Edition](https://aenix.io/products/aenix-platform/ai-ml-edition/)
+  - [Developer Self-Service](https://aenix.io/products/aenix-platform/idp-edition/)
+  - [AI & GPU](https://aenix.io/products/aenix-platform/ai-ml-edition/)
 - **Cozystack** — Open-source CNCF project. Apache 2.0. Maintained by Aenix and community contributors. [cozystack.io](https://cozystack.io)
 - **Kubernetes Deep Dive Course** — Education product. Advanced course covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux). [kubernetes-deep-dive course](https://aenix.io/kubernetes-deep-dive/)
 
@@ -160,9 +162,9 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 
 ## Trust + commerce
 
-- [Pricing](https://aenix.io/pricing/): Five edition pricing blocks (ISP Edition from €1.3k/month; others on request)
+- [Pricing](https://aenix.io/pricing/): Five edition pricing blocks (Provider Edition from €1.3k/month; others on request)
 - [Partner Program](https://aenix.io/partners/): Up to 40% margin for resellers, integrators, distributors
-- [Case studies](https://aenix.io/case-studies/): Production deployments at regional hosting providers (Ænix Platform ISP Edition); platform R&D for ecosystem vendors; tier-1 European bank engagements (NDA until mid-2027)
+- [Case studies](https://aenix.io/case-studies/): Production deployments at regional hosting providers (Ænix Platform Provider Edition); platform R&D for ecosystem vendors; tier-1 European bank engagements (NDA until mid-2027)
 - [Case: bare-metal GPU inference](https://aenix.io/case-studies/bare-metal-gpu-inference/): A mass-market mobile app moved ML inference off a rented GPU cloud onto its own 8×H100 bare-metal server on Cozystack — KubeVirt GPU passthrough, KEDA autoscaling, ~2 months to production, 2-3× GPU efficiency (anonymized)
 - [Case: Proxmox to Kubernetes for a messaging SaaS](https://aenix.io/case-studies/bare-metal-kubernetes-messaging-saas/): A WhatsApp/Telegram Business gateway moved ~25,000 per-customer instances off 13 Proxmox hosts onto one GitOps Cozystack cluster — managed MongoDB/PostgreSQL/RabbitMQ, one-person infra team (anonymized)
 - [About](https://aenix.io/about/): Aenix open-core narrative, Cozystack origin, team
@@ -188,8 +190,8 @@ Sample DE entries:
 - Cozystack is a **CNCF project** — currently CNCF Sandbox; CNCF Incubating expected **late summer 2026**
 - Cozystack license: Apache 2.0
 - Cozystack is also a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Practices
-- Ænix Platform is the commercial turnkey cloud-in-a-box productized in **five editions**: Public Cloud, ISP, Enterprise, IDP, AI/ML
-- Ænix Platform ISP Edition entry pricing: from €1.3k/month support tier
+- Ænix Platform is the commercial turnkey cloud-in-a-box in **two editions** — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top
+- Ænix Platform Provider Edition entry pricing: from $1,250/month support tier per 10 nodes; Enterprise Edition quoted per RFP
 - Aenix has multi-million-euro engagements with tier-1 European banks under NDA; **first named bank case studies expected mid-2027** as NDAs expire
 - Aenix is headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia
 - Aenix CEO + COO: Timur Tukaev

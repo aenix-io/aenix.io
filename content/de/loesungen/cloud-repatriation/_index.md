@@ -36,7 +36,7 @@ faq:
   - q: "Wie läuft ein Repatriation-Engagement mit Aenix ab?"
     a: "Aenix übersetzt die strategische Entscheidung in einen umsetzbaren Plan: Inventarisierung und Auswahl der zu migrierenden Workloads, Kostenmodellierung gegenüber dem aktuellen Public-Cloud-Setup und Entwurf der Zielarchitektur. Ein kostenloses Cloud-Repatriation-TCO-Worksheet steht für die erste Einschätzung bereit."
   - q: "Welche Edition der Ænix Platform passt zu Repatriation?"
-    a: "Jede Ænix Platform Edition unterstützt Repatriation; die Wahl folgt dem Buyer-Profil. Hosting-Anbieter und regionale Clouds wählen die ISP Edition, regulierte Unternehmen die Enterprise Edition, große Betreiber die Public Cloud Edition, Produkt-Engineering-Teams die IDP Edition und KI-lastige Umgebungen die AI/ML Edition."
+    a: "Jede Ænix Platform Edition unterstützt Repatriation; die Wahl folgt dem Buyer-Profil. Hosting-Anbieter und regionale Clouds wählen die Provider Edition, regulierte Unternehmen die Enterprise Edition, große Betreiber die Provider Edition, Produkt-Engineering-Teams die Developer Self-Service und KI-lastige Umgebungen die AI & GPU."
   - q: "Was kostet die Ænix Platform?"
     a: "Die Ænix Platform kombiniert Produkt und Services in vier Stufen: Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $/Monat, Plus 5.500 $/Monat und Enterprise mit individueller Preisgestaltung. Cozystack selbst ist Open Source unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
 ---
@@ -47,7 +47,7 @@ faq:
 
 Aenix übernimmt das technische Engagement, das "wir müssen AWS / Azure / GCP verlassen" von einer Vorstandsaussage in einen funktionierenden Plan verwandelt — mit priorisierten Workloads, modellierten Kosten und einer Zielarchitektur, die die Public Cloud nicht auf die falsche Weise neu erfindet.
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — die richtige Edition folgt Ihrem Buyer-Profil. Hosting-Anbieter / regionale Clouds: [ISP Edition](/de/produkte/aenix-platform/isp-edition/). Regulierte Unternehmen: [Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/). Große Betreiber: [Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/). Produkt-Engineering-Teams: [IDP Edition](/de/produkte/aenix-platform/idp-edition/). KI-lastig: [AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — die richtige Edition folgt Ihrem Buyer-Profil. Hosting-Anbieter / regionale Clouds: [Provider Edition](/de/produkte/aenix-platform/provider-edition/). Regulierte Unternehmen: [Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/). Große Betreiber: [Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/). Produkt-Engineering-Teams: [Developer Self-Service](/de/produkte/aenix-platform/idp-edition/). KI-lastig: [AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

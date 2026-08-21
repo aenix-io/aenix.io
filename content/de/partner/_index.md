@@ -18,7 +18,7 @@ language: "de"
 
 - **Marge:** bis zu **40%** auf Ænix-Platform-Lizenz + Support-Tier-Verkäufe
 - **Deal-Schutz:** Registrierte Opportunities werden für den Partner reserviert — kein Channel-Konflikt
-- **Fünf Editions zu verkaufen:** Public Cloud / ISP / Enterprise / IDP / AI/ML
+- **Zwei Editions zu verkaufen:** Public Cloud / ISP / Enterprise / IDP / AI/ML
 - **L3-Support-Zugang:** direkte Linie zum Aenix-Core-Engineering für Partner-supported Customers
 - **Training inklusive:** Kubernetes Deep Dive Kurs + Ænix-Platform-spezifische Befähigung
 - **Sales-Kit:** Decks, Battle Cards, Demo-Environment, Technical-Pre-Sales-Support
@@ -55,7 +55,7 @@ Wiederkehrende Marge auf mehrjährige Support-Verträge — Partner verdienen am
 
 Aktuelle öffentliche Partner:
 
-- **GoHost.kz** (Kasachstan, Karaganda) — Hosting- und Cloud-Anbieter, Ænix Platform ISP Edition Deployment
+- **GoHost.kz** (Kasachstan, Karaganda) — Hosting- und Cloud-Anbieter, Ænix Platform Provider Edition Deployment
 - **Hidora** (Schweiz, Genf) — europäischer Cloud-Anbieter, souveräner Cloud-Fokus
 - **QOSI** (Kasachstan) — digitale Souveränität + Open-Source-Ökosystem
 - **TECH EVOLVERS INC** (Karibik, Mittel- + Südamerika) — Cloud-native Beratung und System-Integrator, Kubestronaut-Team
@@ -83,4 +83,4 @@ Oder E-Mail an [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt — und Hersteller von [Ænix Platform](/de/produkte/aenix-platform/) — turnkey kommerzielle Cloud-in-a-Box in fünf Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt — und Hersteller von [Ænix Platform](/de/produkte/aenix-platform/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

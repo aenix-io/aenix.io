@@ -50,7 +50,7 @@ faq:
   - q: "Wie geht eine souveräne Cloud mit GDPR-Gesundheitsdaten der Sonderkategorie um?"
     a: "Gesundheitsdaten sind besondere Kategorien nach GDPR Artikel 9 und benötigen daher eine spezifische Rechtsgrundlage und stärkere Schutzmaßnahmen. Eine souveräne Plattform bindet die Speicherung an eine benannte EU-Region, verschlüsselt Daten mit kundeneigenen Schlüsseln und erzeugt Audit-Logs im Besitz des Leistungserbringers — Residenz und Zugriffskontrollen sind so gegenüber einer Aufsichts- oder Datenschutzbehörde nachweisbar."
   - q: "Können wir Medizin-KI auf Patientendaten betreiben, ohne sie an einen Hyperscaler zu senden?"
-    a: "Ja. Die AI/ML Edition führt GPU-Inferenz und -Training innerhalb desselben souveränen Perimeters wie die Daten aus, sodass Bildgebungsmodelle, klinisches NLP und Entscheidungsunterstützung Patientendaten verarbeiten, ohne dass diese die Rechtsordnung oder Kontrolle des Leistungserbringers verlassen."
+    a: "Ja. Die AI & GPU führt GPU-Inferenz und -Training innerhalb desselben souveränen Perimeters wie die Daten aus, sodass Bildgebungsmodelle, klinisches NLP und Entscheidungsunterstützung Patientendaten verarbeiten, ohne dass diese die Rechtsordnung oder Kontrolle des Leistungserbringers verlassen."
   - q: "Nennen Sie Referenzkunden aus dem Gesundheitswesen?"
     a: "Namentliche Gesundheitsreferenzen sind noch nicht öffentlich — Gesundheitsprojekte sind durch NDA geschützt. Wir teilen eine anonymisierte souveräne Public-Cloud-Fallstudie als architektonisches Nachweismuster; Gesundheits-Logos werden ergänzt, sobald die Freigaben vorliegen."
   - q: "Wie läuft ein Projekt ab und wie lange dauert es?"
@@ -63,7 +63,7 @@ faq:
 
 **Krankenhäuser, Krankenversicherer, Diagnostiklabore und Medizin-KI-Teams verarbeiten die sensibelsten personenbezogenen Daten der Wirtschaft unter zwei harten Vorgaben: den GDPR-Pflichten für besondere Datenkategorien und den NIS2-Pflichten für wesentliche Einrichtungen. Die architektonische Antwort ist nicht "ein Gesundheits-SaaS in fremder Cloud" — sondern eine souveräne Plattform, in der Datenresidenz, Schlüsselhoheit und Audit-Trails strukturell verankert sind. Aenix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/) und lässt produktive Gesundheits-Workloads auf eigener Hardware des Leistungserbringers laufen.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für das regulierte Cloud-Fundament; **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** für medizinische Bildgebung, klinisches NLP und Entscheidungsunterstützung auf Patientendaten. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für das regulierte Cloud-Fundament; **[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** für medizinische Bildgebung, klinisches NLP und Entscheidungsunterstützung auf Patientendaten. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Buchen Sie ein 30-minütiges Erstgespräch</a>

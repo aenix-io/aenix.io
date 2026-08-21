@@ -53,7 +53,7 @@ faq:
 
 Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a Kubernetes-native private cloud platform we run in production with service providers, banks, and regulated enterprises. Our private cloud consulting engagements bring those same engineers to your engagement.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building private/hybrid sovereign cloud; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators running their own public-cloud-class platform.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building private/hybrid sovereign cloud; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators running their own public-cloud-class platform.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

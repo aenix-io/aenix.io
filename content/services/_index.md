@@ -26,12 +26,12 @@ language: "en"
 ### Build engagements
 
 - **[Platform engineering](/services/platform-engineering/)** — Build a production cloud platform; pairs with any Ænix Platform Edition
-- **[Internal developer platform](/services/internal-developer-platform/)** — IDP build for product / SaaS organizations; pairs with IDP Edition
+- **[Internal developer platform](/services/internal-developer-platform/)** — IDP build for product / SaaS organizations; pairs with Developer Self-Service
 - **[Build private cloud](/services/build-private-cloud/)** — Private cloud build for enterprises; pairs with Enterprise Edition
-- **[Public cloud builder](/services/public-cloud-builder/)** — Customer-facing cloud product build; pairs with Public Cloud Edition or ISP Edition
+- **[Public cloud builder](/services/public-cloud-builder/)** — Customer-facing cloud product build; pairs with Provider Edition or Provider Edition
 - **[Sovereign cloud builder](/services/sovereign-cloud-builder/)** — Government / public-sector sovereign cloud builds; pairs with Enterprise Edition
-- **[White-label cloud](/services/white-label-cloud/)** — Branded cloud platform for MSP / channel partners; pairs with ISP Edition
-- **[AI platform build](/services/ai-platform-build/)** — AI/GPU infrastructure build; pairs with AI/ML Edition
+- **[White-label cloud](/services/white-label-cloud/)** — Branded cloud platform for MSP / channel partners; pairs with Provider Edition
+- **[AI platform build](/services/ai-platform-build/)** — AI/GPU infrastructure build; pairs with AI & GPU
 
 ### Consulting engagements
 
@@ -57,7 +57,7 @@ Render as 5-step horizontal flow. Each step: number, bold heading, 1-line descri
 1. **Discovery call** (30 min, free) — confirm fit, scope, regulatory context, edition match
 2. **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — current-state audit + edition recommendation + roadmap
 3. **Pilot engagement** (3-6 months, quoted per RFP) — defined slice, validated business case
-4. **Full Edition build** — weeks for ISP Edition; 9-18 months for Public Cloud / Enterprise / IDP / AI/ML
+4. **Full Edition build** — weeks for Provider Edition; 9-18 months for Public Cloud / Enterprise / IDP / AI/ML
 5. **Managed operations** (ongoing retainer) — Aenix runs the platform you operate, or hybrid
 
 <div class="arch-section__fig">
@@ -74,7 +74,7 @@ Render as 5-step horizontal flow. Each step: number, bold heading, 1-line descri
 
 ## Pricing
 
-ISP Edition entry from $1,250 per month (Basic support tier, 10 nodes). Other editions: pricing on request via discovery call. Engagement add-ons (assessment, pilot, build, managed ops) priced separately per scope. [Pricing details →](/pricing/).
+Provider Edition entry from $1,250 per month (Basic support tier, 10 nodes). Other editions: pricing on request via discovery call. Engagement add-ons (assessment, pilot, build, managed ops) priced separately per scope. [Pricing details →](/pricing/).
 
 ---
 

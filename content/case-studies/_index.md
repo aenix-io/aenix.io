@@ -5,7 +5,7 @@ hero_subtitle: "Real Aenix Platform deployments across hosting, AI, and academia
 language: "en"
 ---
 
-**Five deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, public references include regional hosting providers running Ænix Platform ISP Edition, platform R&D for ecosystem vendors, and tier-1 European bank engagements still under NDA.**
+**Five deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, public references include regional hosting providers running Ænix Platform Provider Edition, platform R&D for ecosystem vendors, and tier-1 European bank engagements still under NDA.**
 
 ---
 
@@ -40,17 +40,17 @@ A telecom operator and integrator built a corporate AI platform — GPU scheduli
 
 ## Quick facts
 
-- **Public production customers (subject to permission per use):** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform ISP Edition)
+- **Public production customers (subject to permission per use):** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform Provider Edition)
 - **Platform R&D engagements:** CSI driver development, block storage research, virtualization platform prototypes — for ecosystem vendors
 - **Detailed written-up deployments:** five, anonymized by contract, with architecture and figures published in full (above)
 - **Tier-1 European banks:** multi-million-euro Ænix Platform Enterprise Edition engagements (NDA-protected; naming permitted from mid-2027)
-- **Engagement sizes:** from a $1,250/month ISP Edition support tier through to multi-year Public Cloud and Enterprise builds quoted per RFP
+- **Engagement sizes:** from a $1,250/month Provider Edition support tier through to multi-year Public Cloud and Enterprise builds quoted per RFP
 
 ---
 
 ## Case categories
 
-### Regional hosting providers (Ænix Platform ISP Edition)
+### Regional hosting providers (Ænix Platform Provider Edition)
 
 Production deployments running our hosting-specific edition. WHMCS-integrated billing, branded customer-facing portal, multi-tier reseller model, expanded service catalog (managed databases, S3, GPU), tenant lock/suspension.
 
@@ -63,9 +63,9 @@ Production deployments running our hosting-specific edition. WHMCS-integrated bi
 - Cloupard
 - Cloudsy
 
-These customers use Ænix Platform ISP Edition to deliver multi-tenant cloud products to their end customers.
+These customers use Ænix Platform Provider Edition to deliver multi-tenant cloud products to their end customers.
 
-[Ænix Platform ISP Edition →](/products/aenix-platform/isp-edition/)
+[Ænix Platform Provider Edition →](/products/aenix-platform/provider-edition/)
 
 ### Tier-1 European bank engagements (NDA until mid-2027)
 
@@ -107,7 +107,7 @@ These engagements predate Ænix Platform's commercial launch and represent the t
 
 | Customer type | What we can say |
 |---|---|
-| Regional hosting providers | Named (currently listed on aenix.io); deployment scope; Ænix Platform ISP Edition usage |
+| Regional hosting providers | Named (currently listed on aenix.io); deployment scope; Ænix Platform Provider Edition usage |
 | Platform R&D for ecosystem vendors | Project name and outcomes; vendor-specific details vary |
 | Tier-1 European banks | Anonymized only ("tier-1 European bank under DORA scope") until mid-2027 NDA expirations |
 | Sovereign cloud initiatives | Anonymized only; named cases pending procurement / publicity windows |
@@ -127,7 +127,7 @@ For NDA-protected engagements (banks, sovereign cloud, AI/ML), Aenix sales can a
 
 The platform R&D engagements are historical work — Aenix delivered the projects. Some predate the Aenix legal entities in their current form but are credited as Aenix work.
 
-The hosting providers are current Ænix Platform ISP Edition customers.
+The hosting providers are current Ænix Platform Provider Edition customers.
 
 The bank engagements are current Ænix Platform Enterprise Edition customers (NDA-protected until mid-2027).
 
@@ -151,4 +151,4 @@ Book a discovery call. We'll match your situation against relevant case patterns
 
 ---
 
-*Aenix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of Ænix Platform — a turnkey commercial cloud-in-a-box with five editions.*
+*Aenix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of Ænix Platform — a turnkey commercial cloud-in-a-box with two editions.*

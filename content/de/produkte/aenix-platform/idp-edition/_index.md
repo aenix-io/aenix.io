@@ -1,10 +1,10 @@
 ---
-title: "Ænix Platform IDP Edition"
-description: "Ænix Platform IDP Edition: Internal-Developer-Platform-Layer auf der Cozystack-Cloud-Foundation mit GitLab-Automation, Argo-CD-Workflows und Self-Service-APIs."
+title: "the Developer Self-Service module of Ænix Platform"
+description: "the Developer Self-Service module of Ænix Platform: Internal-Developer-Platform-Layer auf der Cozystack-Cloud-Foundation mit GitLab-Automation, Argo-CD-Workflows und Self-Service-APIs."
 type: "page"
 language: "de"
 direct_answer: |
-  **Die Ænix Platform IDP Edition ist ein produktisierter Internal-Developer-Platform-Layer auf einer Kubernetes-nativen Cloud-Foundation aus Cozystack. Sie richtet sich an Produkt- und SaaS-Organisationen mit starken Engineering-Teams, die in Developer Experience investieren. Die Edition liefert Golden Paths, Self-Service-APIs, GitLab-Automation, Argo-CD-Workflows und Service-Erstellungs-Wizards über einem Multi-Tenant-Kubernetes-Substrat — sodass Engineers Environments, Datenbanken und Cluster ohne Ticket-Queues hochfahren. Aenix baut, betreibt und pflegt die Plattform; die offene Cozystack-Foundation (Apache 2.0, KubeVirt, Cilium, LINSTOR, Tenant-CRD-Mandantenfähigkeit) bringt Tenancy, Observability, Secrets, Identity und Multi-Cluster bereits mit.**
+  **Die the Developer Self-Service module of Ænix Platform ist ein produktisierter Internal-Developer-Platform-Layer auf einer Kubernetes-nativen Cloud-Foundation aus Cozystack. Sie richtet sich an Produkt- und SaaS-Organisationen mit starken Engineering-Teams, die in Developer Experience investieren. Die Edition liefert Golden Paths, Self-Service-APIs, GitLab-Automation, Argo-CD-Workflows und Service-Erstellungs-Wizards über einem Multi-Tenant-Kubernetes-Substrat — sodass Engineers Environments, Datenbanken und Cluster ohne Ticket-Queues hochfahren. Aenix baut, betreibt und pflegt die Plattform; die offene Cozystack-Foundation (Apache 2.0, KubeVirt, Cilium, LINSTOR, Tenant-CRD-Mandantenfähigkeit) bringt Tenancy, Observability, Secrets, Identity und Multi-Cluster bereits mit.**
 quick_facts:
   - label: "Was es ist"
     value: "Produktisierter Internal-Developer-Platform-Layer (Golden Paths, Self-Service-APIs, GitLab, Argo CD) auf einer Kubernetes-nativen Cozystack-Cloud-Foundation"
@@ -19,19 +19,21 @@ quick_facts:
   - label: "Engagement"
     value: "Projekt, Angebot nach RFP; Time-to-Production 6-12 Monate; Managed-Retainer post-Deployment optional"
 faq:
-  - q: "Was ist die Ænix Platform IDP Edition?"
+  - q: "Was ist die the Developer Self-Service module of Ænix Platform?"
     a: "Ein produktisierter Internal-Developer-Platform-Layer auf einer Kubernetes-nativen Cozystack-Cloud-Foundation. Sie liefert Golden Paths, Self-Service-APIs, GitLab-Automation, Argo-CD-Workflows und Service-Erstellungs-Wizards, mit denen Engineers Environments, Datenbanken und Cluster ohne Ticket-Queues bereitstellen."
-  - q: "Wie unterscheidet sich die IDP Edition von Backstage?"
-    a: "Backstage ist ein internes Tool, das Sie selbst bauen und betreiben. Die IDP Edition ist ein managed Plattform-Produkt mit inkludierter Cloud-Foundation: Aenix baut und betreibt den Stack, während Ihr Engineering die Golden Paths besitzt. Cozystack liefert Tenancy, Observability, Secrets und Multi-Cluster bereits mit."
-  - q: "Auf welcher Technologie basiert die IDP Edition?"
+  - q: "Wie unterscheidet sich die Developer Self-Service von Backstage?"
+    a: "Backstage ist ein internes Tool, das Sie selbst bauen und betreiben. Die Developer Self-Service ist ein managed Plattform-Produkt mit inkludierter Cloud-Foundation: Aenix baut und betreibt den Stack, während Ihr Engineering die Golden Paths besitzt. Cozystack liefert Tenancy, Observability, Secrets und Multi-Cluster bereits mit."
+  - q: "Auf welcher Technologie basiert die Developer Self-Service?"
     a: "Auf Open-Source Cozystack, einem CNCF-Projekt unter Apache 2.0. Die Foundation nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und ein Tenant-CRD für Mandantenfähigkeit. Observability läuft über VictoriaMetrics und VictoriaLogs."
-  - q: "Was kostet die IDP Edition?"
+  - q: "Was kostet die Developer Self-Service?"
     a: "Pricing auf Anfrage. Typische Engagements liegen bei Projekt, Angebot nach RFP, mit optionalem Managed-Retainer nach dem Deployment. Time-to-Production beträgt 6-12 Monate für einen typischen IDP-Build, kürzer bei Golden-Path-only-Scope."
-  - q: "Wer kauft die IDP Edition typischerweise?"
+  - q: "Wer kauft die Developer Self-Service typischerweise?"
     a: "Produkt- und SaaS-Organisationen mit starken Engineering-Teams — VP Engineering, SaaS-CTOs und Plattform-Engineering-Leads, die eine IDP-as-Product statt eines weiteren internen Tools wollen. Typisch ab 300+ Engineers, aber auch kleinere Teams mit hohem Developer-Experience-Fokus."
-  - q: "Vermeidet die IDP Edition Vendor-Lock-in?"
+  - q: "Vermeidet die Developer Self-Service Vendor-Lock-in?"
     a: "Ja. Die Foundation ist Open-Source Cozystack unter Apache 2.0 ohne CPU-/Core-basierte Lizenzierung. Der gesamte Stack läuft auf Standard-Kubernetes-APIs, sodass keine proprietäre Bindung an Aenix entsteht."
 ---
+
+> **Das ist das Developer-Self-Service-Modul.** Die Ænix Platform hat zwei Editions — [Provider](/de/produkte/aenix-platform/provider-edition/) und [Enterprise](/de/produkte/aenix-platform/enterprise-edition/) — und diese Fähigkeit erweitert beide. Die meisten Teams kaufen sie zusammen mit der Enterprise Edition, als die Ebene, die ihre eigenen Entwickler bedienen.
 
 **Ein Internal Developer Platform Layer auf einer Kubernetes-nativen Cloud. GitLab-Automation, Argo CD Workflows und APIs — damit Ihre Engineers weniger Zeit mit Routine-Arbeit und mehr Zeit mit Produkt-Auslieferung verbringen. Inklusive der vollständigen Cozystack-basierten Cloud darunter: Tenancy, Observability, Secrets, Identity, Multi-Cluster.**
 
@@ -42,7 +44,7 @@ faq:
 
 ---
 
-## Was in der IDP Edition enthalten ist
+## Was in der Developer Self-Service enthalten ist
 
 ### Internal Developer Platform Layer
 
@@ -86,7 +88,7 @@ Plattform-Engineering-Team-Training als Teil des Engagements. Kurs (Kubernetes D
 
 ---
 
-## Wer kauft IDP Edition
+## Wer kauft Developer Self-Service
 
 | Buyer | Typisches Engagement |
 |---|---|
@@ -100,7 +102,7 @@ Plattform-Engineering-Team-Training als Teil des Engagements. Kurs (Kubernetes D
 
 Projekt plus Managed-Retainer, Angebot nach RFP post-Deployment.
 
-[IDP Edition diskutieren →](/de/kontakt/?edition=idp)
+[Developer Self-Service diskutieren →](/de/kontakt/?edition=idp)
 
 ---
 
@@ -118,7 +120,7 @@ Projekt plus Managed-Retainer, Angebot nach RFP post-Deployment.
 
 ## Kunden-Evidenz
 
-IDP Edition Kunden sind derzeit NDA-geschützt. Produkt- / SaaS-Engagements aktiv. Anonymisierte Phrasierung: "Mittel-bis-großes Produkt-Unternehmen baut IDP für 300+ Engineers".
+Developer Self-Service Kunden sind derzeit NDA-geschützt. Produkt- / SaaS-Engagements aktiv. Anonymisierte Phrasierung: "Mittel-bis-großes Produkt-Unternehmen baut IDP für 300+ Engineers".
 
 ---
 
@@ -132,4 +134,4 @@ Buchen Sie einen 30-Minuten-Discovery-Call. Bringen Sie Ihre Plattform-Engineeri
 
 ---
 
-*Ænix Platform IDP Edition basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*
+*the Developer Self-Service module of Ænix Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*

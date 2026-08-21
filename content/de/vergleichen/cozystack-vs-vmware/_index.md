@@ -21,7 +21,7 @@ quick_facts:
   - label: "Zielgruppe"
     value: "Organisationen mit VMware-Ausstieg, Souveränitäts- oder Open-Source-Anforderung und Multi-Tenant-Cloud-Builder-Use-Cases"
   - label: "Produkt von Aenix"
-    value: "Ænix Platform — turnkey kommerzielle Cloud-in-a-Box auf Cozystack in fünf Editions (ISP, Enterprise, Public Cloud, IDP, AI/ML)"
+    value: "Ænix Platform — turnkey kommerzielle Cloud-in-a-Box auf Cozystack in zwei Editions (ISP, Enterprise, Public Cloud, IDP, AI/ML)"
   - label: "Preisstufen"
     value: "Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell"
 
@@ -37,14 +37,14 @@ faq:
   - q: "Wie funktioniert Mandantenfähigkeit in Cozystack im Vergleich zu VMware?"
     a: "VMware nutzt vCloud-Director-Organizations für Mandantentrennung. Cozystack bietet Mandantenfähigkeit über das Tenant-CRD, mit dem isolierte Mandanten als Kubernetes-native Ressourcen verwaltet werden — passend für Cloud-Builder und Hosting-Anbieter."
   - q: "Wer steht hinter Cozystack und wie erfolgt die Migration von VMware?"
-    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack, einem CNCF-Projekt. Aenix liefert die produktisierte Ænix Platform sowie Migrationsservices für den VMware-Ausstieg. Die Ænix Platform gibt es in fünf Editions; die Einstiegsstufe Basic kostet 1.250 $/Monat für 10 Nodes."
+    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack, einem CNCF-Projekt. Aenix liefert die produktisierte Ænix Platform sowie Migrationsservices für den VMware-Ausstieg. Die Ænix Platform gibt es in zwei Editions; die Einstiegsstufe Basic kostet 1.250 $/Monat für 10 Nodes."
 ---
 
 **Sie erwägen einen VMware-Ausstieg. Die Destination-Shortlist umfasst Cozystack. Diese Seite vergleicht die beiden Head-to-Head — was gleich ist, was anders ist, was die Migration kostet, was auf welchem besser läuft.**
 
 Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternativen-Listicle](/de/alternativen/vmware-alternativen/)**. Für die fokussierte Vendor-Empfehlung siehe **[VMware-Alternative](/de/alternativen/vmware-alternative/)**. Diese Seite nimmt an, dass Sie Cozystack bereits spezifisch erwägen.
 
-> **Passt zu:** **[Ænix Platform](/de/produkte/aenix-platform/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Fünf Editions: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig). Die richtige Edition hängt von Ihrem Buyer-Profil post-VMware ab.
+> **Passt zu:** **[Ænix Platform](/de/produkte/aenix-platform/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Zwei Editions: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig). Die richtige Edition hängt von Ihrem Buyer-Profil post-VMware ab.
 
 ---
 

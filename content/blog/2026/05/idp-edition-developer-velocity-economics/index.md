@@ -1,15 +1,15 @@
 ---
-title: "IDP Edition — the cost of developer drag, and what an internal developer platform actually pays back"
-description: "Long-form companion to the IDP Edition page: time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
+title: "Developer Self-Service — the cost of developer drag, and what an internal developer platform actually pays back"
+description: "Long-form companion to the Developer Self-Service page: time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
 language: "en"
 companion_landing: "/products/aenix-platform/idp-edition/"
-companion_label: "See IDP Edition product details →"
+companion_label: "See Developer Self-Service product details →"
 quiz:
-  title: "Test yourself: IDP Edition economics"
+  title: "Test yourself: Developer Self-Service economics"
   questions:
     - q: "What is the typical time-to-environment in 200+-engineer organisations the article describes as the core symptom of developer drag?"
       options:
@@ -23,7 +23,7 @@ quiz:
         - { text: "Backstage is a portal, not a platform substrate", correct: true }
         - { text: "Backstage performs poorly past 50 product teams", correct: false }
       explanation: "The article states explicitly: 'Backstage is a portal, not a platform' and warns that buying it before underlying capabilities are truly self-service produces a beautiful catalog over the same operational chaos, and adoption stalls."
-    - q: "What is the typical mature ratio of platform engineers to product engineers recommended in IDP Edition?"
+    - q: "What is the typical mature ratio of platform engineers to product engineers recommended in Developer Self-Service?"
       options:
         - { text: "About 1 platform engineer per 3-5 product engineers", correct: false }
         - { text: "About 1 platform engineer per 50-100 product engineers", correct: false }
@@ -35,7 +35,7 @@ quiz:
         - { text: "Reliable enough to work the first time, every time", correct: true }
         - { text: "Documented in one page or less per golden path", correct: false }
       explanation: "The five characteristics list specifies that if the self-service path breaks 1 in 10 times, teams stop trusting it and adoption stalls — reliability is the trust threshold for the documented use case."
-    - q: "For whom does the article say IDP Edition is a POOR fit?"
+    - q: "For whom does the article say Developer Self-Service is a POOR fit?"
       options:
         - { text: "Organisations with 200+ engineers and 5+ product teams", correct: false }
         - { text: "Organisations with regulated data-residency requirements", correct: false }
@@ -43,7 +43,7 @@ quiz:
       explanation: "The 'Poor fit' section lists under 50 engineers with a single product team (DevOps-only is the right fit) and hyperscaler-managed-meets-needs with no sovereignty pressure as the two poor-fit cases."
 ---
 
-**Long-form companion to the [IDP Edition landing](/products/aenix-platform/idp-edition/). For engineering leaders at 200-2,000-engineer organisations evaluating whether an Internal Developer Platform pays back — versus continuing on DevOps-only, ticket-driven infrastructure, or a half-built in-house platform.**
+**Long-form companion to the [Developer Self-Service landing](/products/aenix-platform/idp-edition/). For engineering leaders at 200-2,000-engineer organisations evaluating whether an Internal Developer Platform pays back — versus continuing on DevOps-only, ticket-driven infrastructure, or a half-built in-house platform.**
 
 The "should we invest in a platform team?" conversation tends to stall
 at one of two places: either the CFO can't see the economic case ("we
@@ -53,7 +53,7 @@ shallow, and has lost trust in the category.
 
 This article walks through both. What does the cost of developer drag
 actually look like in numbers? What does an IDP that *works* deliver?
-And what does Ænix Platform IDP Edition do that you'd otherwise have
+And what does the Developer Self-Service module of Ænix Platform do that you'd otherwise have
 to build?
 
 ## The cost of developer drag
@@ -117,9 +117,9 @@ Product teams can deviate when their case is special. The escape is
 to a real conversation with the platform team, not "use the path or
 fail."
 
-## What IDP Edition ships
+## What Developer Self-Service ships
 
-Ænix Platform IDP Edition is the productisation of these characteristics
+the Developer Self-Service module of Ænix Platform is the productisation of these characteristics
 on top of the Cozystack foundation. Specifically:
 
 ### A multi-tenant Cozystack platform with Tenant CRD
@@ -134,7 +134,7 @@ operationally expensive" trilemma without compromise.
 
 ### Golden-path-first cozyportal
 
-The cozyportal in IDP Edition exposes opinionated paths for the 5-10
+The cozyportal in Developer Self-Service exposes opinionated paths for the 5-10
 most common product-team needs: environment provisioning, application
 deployment, managed-database provisioning, observability onboarding,
 secrets management. Each path completes in minutes.
@@ -158,13 +158,13 @@ weeks.
 ### Internal-product-management discipline built in
 
 The platform team is treated as a function with product-team
-customers. IDP Edition engagement includes platform-team RACI,
+customers. Developer Self-Service engagement includes platform-team RACI,
 internal-NPS metrics, deprecation policy templates, roadmap-management
 patterns. The discipline is often the missing piece.
 
 ## What stays the customer's responsibility
 
-IDP Edition is the platform substrate plus the operational discipline.
+Developer Self-Service is the platform substrate plus the operational discipline.
 Several things remain yours:
 
 - **Defining your specific golden paths** — the 5-10 you build first
@@ -191,7 +191,7 @@ identity, release engineering independently. Above ~50 engineers the
 duplication overwhelms the savings. Above ~200 engineers it's an
 operational drag.
 
-IDP Edition shifts the model: platform engineering compounds
+Developer Self-Service shifts the model: platform engineering compounds
 sublinearly with team count. Adding the 21st product team doesn't add
 21st-team's-worth of platform overhead — the existing platform absorbs
 them.
@@ -204,7 +204,7 @@ engineering capacity and clear architectural opinions. Trade-off:
 ready" for product teams; ongoing platform-component maintenance
 overhead.
 
-IDP Edition delivers the platform substrate in 3-6 months with
+Developer Self-Service delivers the platform substrate in 3-6 months with
 ongoing Aenix support. For organisations not staffed for a 12-24
 month build, this is the difference between platform engineering
 happening this year or in 2028.
@@ -215,7 +215,7 @@ Backstage is a portal, not a platform. Buying Backstage before the
 underlying capabilities are self-service produces a beautiful catalog
 over the same operational chaos. Adoption stalls.
 
-IDP Edition's cozyportal can be replaced or augmented by Backstage if
+Developer Self-Service's cozyportal can be replaced or augmented by Backstage if
 the customer prefers — but the underlying capabilities (environment
 provisioning, observability, secrets, identity) are self-service
 because the platform is, not because the portal pretends they are.
@@ -228,12 +228,12 @@ vendor's; you can't replicate exactly elsewhere); cost ceiling
 (hyperscaler economics on sustained workloads); sovereignty
 implications.
 
-IDP Edition fits when the cost or sovereignty trade-offs make
+Developer Self-Service fits when the cost or sovereignty trade-offs make
 self-managed worth the operational investment. For early-stage
 companies without sovereignty pressure, hyperscaler-managed is still
 the right call.
 
-## When IDP Edition is the right answer
+## When Developer Self-Service is the right answer
 
 Strong fit:
 
@@ -252,7 +252,7 @@ Marginal fit:
   start with Pure Cozystack with Ænix Support and scale into IDP
   Edition as the team grows
 - Strong existing in-house platform with specific gaps — partial
-  engagement may fit better than full IDP Edition
+  engagement may fit better than full Developer Self-Service
 
 Poor fit:
 
@@ -268,7 +268,7 @@ Poor fit:
   recommended golden paths
 - **Pilot deployment** (3-6 months) — Cozystack platform + 3-5 golden
   paths + 2-3 pilot product teams onboarded
-- **Full IDP Edition build** (6-18 months) — platform expanded to
+- **Full Developer Self-Service build** (6-18 months) — platform expanded to
   full engineering organisation, all targeted golden paths shipped
 - **Managed retainer** (optional, ongoing) — Aenix runs platform
   Tier-3 under SLA
@@ -277,7 +277,7 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 
 ## Where to dig deeper
 
-- **[IDP Edition landing](/products/aenix-platform/idp-edition/)** —
+- **[Developer Self-Service landing](/products/aenix-platform/idp-edition/)** —
   feature list, edition-specific FAQ
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   engagement details

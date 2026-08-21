@@ -49,7 +49,7 @@ faq:
 
 Aenix is the platform engineering team behind [Cozystack](/products/cozystack/), a CNCF project running in production with service providers, banks, and AI operators. We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
 
-> **Pairs with:** **[Ænix Platform IDP Edition](/products/aenix-platform/idp-edition/)** for product / SaaS engineering teams; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building internal platforms. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** for product / SaaS engineering teams; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building internal platforms. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

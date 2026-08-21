@@ -51,7 +51,7 @@ faq:
 
 Aenix runs a structured engagement that produces a control-level map of where your data actually lives today, where the gaps are, and what sovereignty-by-design looks like for your stack.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises consuming sovereign cloud internally, or **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for operators offering it as a product — customer-controlled keys at every layer, air-gap optional.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises consuming sovereign cloud internally, or **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for operators offering it as a product — customer-controlled keys at every layer, air-gap optional.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

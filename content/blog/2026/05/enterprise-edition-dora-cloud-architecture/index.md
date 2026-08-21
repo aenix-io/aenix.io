@@ -202,7 +202,7 @@ Several Enterprise-specific layers:
   workloads.
 - **Multi-DC active/passive or active/active** — Enterprise typically
   deploys to two or more datacentres with cross-DC replication tuned
-  for RTO/RPO targets. ISP Edition is single-DC by default.
+  for RTO/RPO targets. Provider Edition is single-DC by default.
 - **Advisory-only support model** — Aenix engineers do not require
   kubectl access to your production cluster. Reviewers operate via
   GitOps PR review; runbooks remain on the customer side. Critical
@@ -251,13 +251,13 @@ Strong fit:
 Marginal fit:
 
 - Mid-size organisations where the regulatory pressure is real but
-  the budget for a multi-year programme isn't yet there. ISP Edition
+  the budget for a multi-year programme isn't yet there. Provider Edition
   with sovereignty-focused architecture may bridge.
 
 Poor fit:
 
 - Organisations without regulatory pressure. Use a different edition
-  (IDP Edition or Pure Cozystack Support) — Enterprise Edition's
+  (Developer Self-Service or Pure Cozystack Support) — Enterprise Edition's
   compliance overhead doesn't pay back without the regulator driver.
 
 ## Engagement structure

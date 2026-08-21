@@ -6,7 +6,7 @@ related_pages:
   - /solutions/cloud-repatriation/
   - /solutions/data-sovereignty/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/isp-edition/
+  - /products/aenix-platform/provider-edition/
   - /products/aenix-platform/enterprise-edition/
   - /products/cozystack/
 language: "en"
@@ -48,7 +48,7 @@ faq:
 
 **Public-cloud bills don't shrink by themselves. The combination of underutilized commitments, idle resources, egress charges, and hyperscaler-managed-service premiums means most cloud spend is 20-40% higher than it needs to be — before any architectural change. The right cloud cost optimization engagement names where the spend leaks, what's worth fixing inside the hyperscaler, and what's worth moving to a platform you control.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** for hosting providers and regional clouds; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises; **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** if you sell cloud to customers, at [provider or operator scale](/products/aenix-platform/public-cloud-edition/); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** if you run it for your own organisation. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

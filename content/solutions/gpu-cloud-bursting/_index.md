@@ -62,7 +62,7 @@ faq:
 
 **Own the baseline, rent only the peaks. Cloud bursting lets you run steady GPU workloads on hardware you control and spill inference or training spikes into public or sovereign clouds on demand — then tear the extra capacity down. Aenix builds this as GPU-as-a-service on a single Kubernetes platform, so your teams get elastic GPU without hyperscaler lock-in, opaque billing, or a full migration.**
 
-> **Pairs with:** **[Ænix Platform AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** — multi-tenant GPU scheduling, fractional sharing and ready blueprints for inference and fine-tuning. For the elastic self-service cloud underneath it, combine with **[Public Cloud Edition](/products/aenix-platform/public-cloud-edition/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**.
+> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)** — multi-tenant GPU scheduling, fractional sharing and ready blueprints for inference and fine-tuning. For the elastic self-service cloud underneath it, combine with **[Provider Edition](/products/aenix-platform/public-cloud-edition/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -129,4 +129,4 @@ Your mix of baseline, peak and burst target decides the saving. Model it with th
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, available in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML. We build multi-cloud GPU platforms for AI/ML, research and platform-operator organizations across the EU and DACH.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top. We build multi-cloud GPU platforms for AI/ML, research and platform-operator organizations across the EU and DACH.*

@@ -1,9 +1,9 @@
 ---
 title: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering"
-description: "Ænix Platform — turnkey cloud-in-a-box on Cozystack (CNCF). Five editions for hosting, enterprises, public clouds, engineering, and AI teams. Open core."
+description: "Ænix Platform — turnkey cloud-in-a-box on Cozystack (CNCF). Two editions: one for selling cloud, one for running your own. Open core."
 language: "en"
 hero_h1: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering."
-hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-source Cozystack project we created and maintain (CNCF). Five editions, one foundation. For hosting providers, regulated enterprises, public clouds, product engineering teams, AI-heavy organizations."
+hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-source Cozystack project we created and maintain (CNCF). Two editions, one foundation. For hosting providers, telcos and operators selling cloud; and for regulated enterprises running their own."
 ---
 
 <div class="band band--tint">
@@ -91,82 +91,43 @@ If you came here because of one of these — start at the linked page; we can ta
 
 ## Pick your edition
 
-Five editions match five buyer profiles. Same Cozystack core; different bundle of features, integrations, and engagement size.
+Two editions, split by one question: are you selling cloud to other people, or running it for your own organisation? Same Cozystack core underneath, different commercial surface on top.
 
 <div class="edition-selector" data-edition-tabs>
 
 <div class="edition-selector__tabs" role="tablist" aria-label="Editions" aria-orientation="vertical">
-<button class="edition-tab" id="edition-tab-0" role="tab" aria-selected="true" aria-controls="edition-panel-0" type="button">Public Cloud</button>
-<button class="edition-tab" id="edition-tab-1" role="tab" aria-selected="false" aria-controls="edition-panel-1" type="button" tabindex="-1">ISP</button>
-<button class="edition-tab" id="edition-tab-2" role="tab" aria-selected="false" aria-controls="edition-panel-2" type="button" tabindex="-1">Enterprise</button>
-<button class="edition-tab" id="edition-tab-3" role="tab" aria-selected="false" aria-controls="edition-panel-3" type="button" tabindex="-1">IDP</button>
-<button class="edition-tab" id="edition-tab-4" role="tab" aria-selected="false" aria-controls="edition-panel-4" type="button" tabindex="-1">AI/ML</button>
-<button class="edition-tab" id="edition-tab-5" role="tab" aria-selected="false" aria-controls="edition-panel-5" type="button" tabindex="-1">Pure Cozystack + Support</button>
+<button class="edition-tab" id="edition-tab-0" role="tab" aria-selected="true" aria-controls="edition-panel-0" type="button">Provider</button>
+<button class="edition-tab" id="edition-tab-1" role="tab" aria-selected="false" aria-controls="edition-panel-1" type="button" tabindex="-1">Enterprise</button>
+<button class="edition-tab" id="edition-tab-2" role="tab" aria-selected="false" aria-controls="edition-panel-2" type="button" tabindex="-1">Pure Cozystack + Support</button>
 </div>
 
 <div class="edition-selector__panels">
 
 <div class="edition-panel" id="edition-panel-0" role="tabpanel" aria-labelledby="edition-tab-0">
-  <a href="/products/aenix-platform/public-cloud-edition/" class="card card--edition">
+  <a href="/products/aenix-platform/provider-edition/" class="card card--edition">
     <div class="card-body">
-      <div class="card-tag">Public Cloud</div>
-      <h3 class="card-title">Public Cloud Edition</h3>
-      <p class="card-description"><strong>You're a:</strong> large public-cloud operator, big bank operating its own cloud, or large telco / national operator launching or scaling a cloud.</p>
-      <p class="card-meta">Multi-year programme, per RFP</p>
+      <div class="card-tag">You sell cloud</div>
+      <h3 class="card-title">Provider Edition</h3>
+      <p class="card-description"><strong>You're a:</strong> hosting provider, MSP, regional cloud or data centre — or a telco, national operator or bank running a commercial cloud. Billing, payments, white-label portal, tenant isolation, multi-region when you need it.</p>
+      <p class="card-meta">From $1,250 / month; operator scale per RFP</p>
       <span class="card-link">Explore →</span>
     </div>
   </a>
 </div>
 
 <div class="edition-panel" id="edition-panel-1" role="tabpanel" aria-labelledby="edition-tab-1">
-  <a href="/products/aenix-platform/isp-edition/" class="card card--edition">
-    <div class="card-body">
-      <div class="card-tag">ISP / Hosting</div>
-      <h3 class="card-title">ISP Edition</h3>
-      <p class="card-description"><strong>You're a:</strong> hosting provider, MSP, regional cloud, or data centre selling cloud to your customers. WHMCS-integrated, billing included, fast feature delivery.</p>
-      <p class="card-meta">From $1,250 / month support</p>
-      <span class="card-link">Explore →</span>
-    </div>
-  </a>
-</div>
-
-<div class="edition-panel" id="edition-panel-2" role="tabpanel" aria-labelledby="edition-tab-2">
   <a href="/products/aenix-platform/enterprise-edition/" class="card card--edition">
     <div class="card-body">
-      <div class="card-tag">Regulated Enterprise</div>
+      <div class="card-tag">You run your own cloud</div>
       <h3 class="card-title">Enterprise Edition</h3>
-      <p class="card-description"><strong>You're a:</strong> regulated enterprise (bank / insurer / public sector / energy / healthcare). DORA-aligned, NIS2-aligned, customer-controlled keys, audit-ready.</p>
+      <p class="card-description"><strong>You're a:</strong> regulated enterprise — bank, insurer, public sector, energy, healthcare, telco. DORA- and NIS2-aligned controls, customer-held keys, audit-ready logging, air-gap, multi-DC.</p>
       <p class="card-meta">Multi-year programme, per RFP</p>
       <span class="card-link">Explore →</span>
     </div>
   </a>
 </div>
 
-<div class="edition-panel" id="edition-panel-3" role="tabpanel" aria-labelledby="edition-tab-3">
-  <a href="/products/aenix-platform/idp-edition/" class="card card--edition">
-    <div class="card-body">
-      <div class="card-tag">Product Engineering</div>
-      <h3 class="card-title">IDP Edition</h3>
-      <p class="card-description"><strong>You're a:</strong> product engineering team building an internal developer platform. Self-service environments, golden paths, no MLOps engineering bill.</p>
-      <p class="card-meta">Project plus managed retainer, per RFP</p>
-      <span class="card-link">Explore →</span>
-    </div>
-  </a>
-</div>
-
-<div class="edition-panel" id="edition-panel-4" role="tabpanel" aria-labelledby="edition-tab-4">
-  <a href="/products/aenix-platform/ai-ml-edition/" class="card card--edition">
-    <div class="card-body">
-      <div class="card-tag">AI / ML</div>
-      <h3 class="card-title">AI/ML Edition</h3>
-      <p class="card-description"><strong>You're a:</strong> AI-native organization at scale, regulated AI deployment, or GPU-heavy product company. Multi-tenant GPU scheduling, vector DB, sovereignty controls.</p>
-      <p class="card-meta">Project plus managed retainer, per RFP</p>
-      <span class="card-link">Explore →</span>
-    </div>
-  </a>
-</div>
-
-<div class="edition-panel" id="edition-panel-5" role="tabpanel" aria-labelledby="edition-tab-5">
+<div class="edition-panel" id="edition-panel-2" role="tabpanel" aria-labelledby="edition-tab-2">
   <a href="/products/cozystack/" class="card card--edition card--neutral">
     <div class="card-body">
       <div class="card-tag">Open source</div>
@@ -179,6 +140,10 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
 </div>
 
 </div>
+
+</div>
+
+Two modules extend either edition: **[AI &amp; GPU](/products/aenix-platform/ai-ml-edition/)** — multi-tenant GPU scheduling, model serving, vector databases — and **[Developer Self-Service](/products/aenix-platform/idp-edition/)** — golden paths, GitLab and Argo CD automation, self-service APIs.
 
 </div>
 

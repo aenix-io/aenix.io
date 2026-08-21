@@ -79,7 +79,7 @@ Eine Cloud-Linie ins Portfolio holen, die Sie kontrollieren: gebrandet, mandante
 ## FAQ
 
 **Wiederverkaufen oder selbst bauen?**
-Beides. ISP-Edition für Tempo; eigene Plattform mit uns für eigenes IP. Das Gespräch grenzt es ab.
+Beides. Provider Edition für Tempo; eigene Plattform mit uns für eigenes IP. Das Gespräch grenzt es ab.
 
 **Wie sieht das Margenmodell aus?**
 Bis 40% auf Lizenz + Support über das [Partnerprogramm](/de/partner/), plus Ihr eigener wiederkehrender Managed-Services-Umsatz.
@@ -91,13 +91,13 @@ Ja — Kundenportal und Service-Katalog sind White-Label-fähig.
 Nein — das ist das Aufbau-Modell. Wir engineeren und befähigen Ihr Team.
 
 **Ist Billing dabei?**
-WHMCS-integriertes Billing kommt mit der ISP-Edition.
+WHMCS-integriertes Billing kommt mit der Provider Edition.
 
 ---
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren Kundenstamm an und sagen, ob Wiederverkauf der ISP-Edition oder eigener Aufbau der schnellere Weg zur Marge ist.
+Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren Kundenstamm an und sagen, ob Wiederverkauf der Provider Edition oder eigener Aufbau der schnellere Weg zur Marge ist.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>

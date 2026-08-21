@@ -47,7 +47,7 @@ faq:
   - q: "Wie funktioniert RAG auf einer Private-LLM-Plattform?"
     a: "Retrieval-augmented Generation indexiert Ihre eigenen Dokumente in eine Vektordatenbank — Qdrant auf dieser Plattform — und ruft zur Anfragezeit die relevantesten Passagen ab, um die Antwort des Modells zu erden. Es läuft neben den GPU-Inferenz-Workloads innerhalb derselben Grenze, sodass sowohl die Quelldokumente als auch die generierten Antworten privat bleiben."
   - q: "Kann ich Modelle auf meinen eigenen Daten fine-tunen?"
-    a: "Ja. Weil GPUs und Daten in derselben Plattform liegen, können Sie Open-Weight-Modelle auf proprietären Daten fine-tunen oder anpassen, ohne dass diese Daten Ihre Infrastruktur verlassen. Die AI/ML Edition liefert GPU-Scheduling, fraktionales Sharing und Blueprints für Inferenz- und Fine-Tuning-Workloads."
+    a: "Ja. Weil GPUs und Daten in derselben Plattform liegen, können Sie Open-Weight-Modelle auf proprietären Daten fine-tunen oder anpassen, ohne dass diese Daten Ihre Infrastruktur verlassen. Die AI & GPU liefert GPU-Scheduling, fraktionales Sharing und Blueprints für Inferenz- und Fine-Tuning-Workloads."
   - q: "Wie unterscheidet sich ein Private LLM von Sovereign AI?"
     a: "Sie sind verwandt, aber nicht derselbe Head-Term. Private LLM benennt den konkreten Workload — ein Self-Hosted-Modell auf Ihren GPUs. Sovereign AI ist die umfassendere Strategie, KI-Compute, Daten und Governance innerhalb einer von Ihnen kontrollierten Jurisdiktion zu halten. Ein Private LLM ist meist eine Komponente eines Sovereign-AI-Programms; die Sovereign-AI-Seite zeigt das größere Bild."
   - q: "Was umfasst ein Aenix Private-LLM-Engagement?"
@@ -58,7 +58,7 @@ faq:
 
 **Betreiben Sie Ihr eigenes großes Sprachmodell auf selbst kontrollierter Hardware — Open-Weight-Modelle wie Llama, Mistral und Qwen, für Inferenz bereitgestellt, mit RAG in Ihren Dokumenten geerdet und bei Bedarf auf Ihren Daten fine-getunt. Ein Private LLM hält Prompts, Embeddings, Weights, Keys und den Audit-Trail auf Ihrer Seite der Grenze, sodass Sie moderne GenAI erhalten, ohne sensiblen Text an eine Drittanbieter-API zu senden. Aenix baut diese Plattformen auf [Cozystack](/de/produkte/cozystack/), auf Ihren eigenen GPUs.**
 
-> **Passt zu:** **[Ænix Platform AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** — GPU-Scheduling, fraktionales Sharing und Blueprints für Inferenz und Fine-Tuning. Für die elastische GPU-Kapazität darunter: kombinieren mit **[GPU-Cloud-Bursting](/de/loesungen/gpu-cloud-bursting/)**. Für die umfassendere Strategie: **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
+> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/aenix-platform/ai-ml-edition/)** — GPU-Scheduling, fraktionales Sharing und Blueprints für Inferenz und Fine-Tuning. Für die elastische GPU-Kapazität darunter: kombinieren mit **[GPU-Cloud-Bursting](/de/loesungen/gpu-cloud-bursting/)**. Für die umfassendere Strategie: **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -137,7 +137,7 @@ Die GPU-Flotte gegen diesen Mix richtig zu dimensionieren, ist genau das, was ei
 
 ## Wie Aenix bei Private LLM arbeitet
 
-Das Engagement läuft als **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)**: GPU-Architektur und Sizing, der Inferenz-Stack, eine Qdrant-Vektordatenbank für RAG, Multi-Tenant-Isolation und SSO und — wo relevant — eine Fine-Tuning-Pipeline, alles auf Ihrer eigenen Hardware bereitgestellt. Wo GPU-Bedarf sprunghaft ist, kombiniert es mit **[GPU-Cloud-Bursting](/de/loesungen/gpu-cloud-bursting/)**, sodass Sie die Grundlast besitzen und Spitzen bursten; wo der Treiber Jurisdiktion und Governance statt eines einzelnen Workloads ist, rollt es in ein **[Sovereign-AI](/de/loesungen/sovereign-ai/)**-Programm auf der **[AI/ML Edition](/de/produkte/aenix-platform/ai-ml-edition/)** ein.
+Das Engagement läuft als **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)**: GPU-Architektur und Sizing, der Inferenz-Stack, eine Qdrant-Vektordatenbank für RAG, Multi-Tenant-Isolation und SSO und — wo relevant — eine Fine-Tuning-Pipeline, alles auf Ihrer eigenen Hardware bereitgestellt. Wo GPU-Bedarf sprunghaft ist, kombiniert es mit **[GPU-Cloud-Bursting](/de/loesungen/gpu-cloud-bursting/)**, sodass Sie die Grundlast besitzen und Spitzen bursten; wo der Treiber Jurisdiktion und Governance statt eines einzelnen Workloads ist, rollt es in ein **[Sovereign-AI](/de/loesungen/sovereign-ai/)**-Programm auf der **[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** ein.
 
 
 ---
