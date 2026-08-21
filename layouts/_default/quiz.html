@@ -1,0 +1,26 @@
+{{ define "head" }}
+{{/*
+  Host page for the standalone conference quiz.
+
+  The quiz is a self-contained app (own markup, styles and lead capture) that
+  predates the Hugo site — it lives at /static/quiz-app/<slug>/ and is embedded
+  here so the /quiz/<slug>/ URL printed on conference materials keeps working.
+  Do not inline it into the theme: the app owns its own form and submit flow.
+*/}}
+<meta name="robots" content="noindex,follow">
+<style>
+  body.quiz-page main#content { padding: 0; margin: 0; }
+  .quiz-frame {
+    display: block;
+    width: 100%;
+    min-height: 92vh;
+    border: 0;
+  }
+</style>
+{{ end }}
+
+{{ define "main" }}
+{{ $app := .Params.quiz_app | default (printf "/quiz-app/%s/" (path.Base .File.Dir)) }}
+<iframe class="quiz-frame" src="{{ $app }}" title="{{ .Title }}"
+        loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{ end }}

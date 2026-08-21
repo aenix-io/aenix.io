@@ -78,6 +78,8 @@ community_champions:
 ## Quick facts
 
 - **Gründung:** AENIX s.r.o. (Tschechische Republik) + AENIX INC (Delaware, USA)
+- **Team:** 20 Mitarbeitende — Platform Engineering, SRE, Design und Vertrieb, verteilt über EU und Zentralasien
+- **Investoren:** PTV
 - **Geografie:** EU + Zentralasien Engineering-Teams
 - **CEO:** Andrei Kvapil
 - **COO:** Timur Tukaev
@@ -215,7 +217,7 @@ CEO: Andrei Kvapil. COO: Timur Tukaev. Engineering-Team verteilt in der EU und Z
 
 ### Wie groß ist Aenix?
 
-Wir skalieren Teams zur Engagement-Größe. Mehr-Millionen-Euro-Projekte geliefert; Team wächst schnell, wenn Engagements es erfordern. Spezifische Kopfzahl nicht öffentlich offengelegt.
+Zwanzig Mitarbeitende, finanziert von PTV. Das ist bewusst klein für die Größe der Projekte: Die Plattform ist ein Produkt, ein Bank-Build ist deshalb eher Konfiguration und Migration als ein individuelles Bauvorhaben — und dieselben Engineers, die Cozystack upstream pflegen, arbeiten auf Ihrem Cluster. Für ein großes Programm stellen wir ein benanntes Delivery-Team und skalieren es je Phase; eine Bank an Reserveleuten halten wir nicht vor.
 
 ### Was ist "Open-Core"?
 
