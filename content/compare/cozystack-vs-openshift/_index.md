@@ -60,6 +60,14 @@ faq:
 
 </div>
 
+### Operators and certified images — the part that usually decides it
+
+The comparison table understates what OpenShift customers actually buy. OperatorHub with Red Hat-certified operators, UBI base images with a supported lifecycle, and a vendor who will take a support call about a third-party operator running on their platform: that ecosystem is real, and for an organisation whose procurement requires a certified image for every workload, it settles the question. Cozystack has no equivalent certification programme and does not claim one.
+
+What Cozystack offers instead is a smaller set of managed services maintained as part of the platform itself — PostgreSQL, MySQL, ClickHouse, Kafka, RabbitMQ, Redis, S3, managed Kubernetes — rather than a marketplace of operators you assemble and then own. Upstream operators (CNPG, Strimzi, anything else) run on it normally; they are simply your responsibility, as they are on any Kubernetes.
+
+Read it this way: if your constraint is "every component must be vendor-certified and supported by one throat to choke", OpenShift is the correct answer and this page will not change that. If your constraint is licence cost per core and operational surface area, the trade goes the other way.
+
 For Red Hat shops — OpenShift Virtualization fits. For open-source-first or service-provider model — Cozystack.
 
 See **[OpenShift alternative](/alternatives/openshift-alternative)** for migration guidance and **[OpenShift vs Cozystack article](/blog/2026/05/openshift-vs-cozystack-comparison/)** for detailed comparison.

@@ -106,6 +106,21 @@ Managed databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 | Vendor support | Community + add-ons | Aenix enterprise support from $1,250/month |
 | Upgrade cadence | Manual / risky | GitOps-managed, low-risk |
 
+### And versus the VPS control panels
+
+Most small and mid providers are not running OpenStack at all — they are running Virtualizor, SolusVM, Proxmox with a billing bolt-on, or a panel written in-house. Those tools do one job well: sell and provision VPS.
+
+| Dimension | Virtualizor / SolusVM class panels | Ænix Platform ISP Edition |
+|---|---|---|
+| Product catalogue | VPS, and variations on VPS | VMs plus managed Kubernetes, PostgreSQL, MySQL, ClickHouse, Kafka, RabbitMQ, Redis, S3, GPU |
+| Where the margin is | Reselling capacity, competing on price per vCPU | Managed services on top of the same hardware, priced per service |
+| Tenancy model | An account owning VMs | Tenant CRD — quotas, RBAC, network isolation, per-tenant observability and billing |
+| Kubernetes for customers | Not offered, or a separate product to operate | Native, with a managed control plane per tenant |
+| Upgrades | Panel upgrade, hypervisor upgrade, both manual | One GitOps-managed platform version |
+| Lock-in | Proprietary panel, per-VM licence | Apache 2.0 core; you can stay on plain Cozystack and drop the commercial layer |
+
+The honest read: if VPS resale is your whole business and you are happy with the margin, a panel is cheaper and simpler, and you should keep it. ISP Edition pays for itself when you want to sell managed services — databases, Kubernetes, GPU — without building each one yourself.
+
 ---
 
 ## Production customers (currently listed on aenix.io)

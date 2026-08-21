@@ -121,6 +121,17 @@ Pre-validated against ISO 27001 / SOC 2. Aenix supports certification documentat
 
 ---
 
+## Where Enterprise Edition sits against the incumbents
+
+| Vs. | The trade |
+|---|---|
+| **Nutanix** | Nutanix sells an appliance-grade experience: HCI with Prism, one vendor for hardware and software, and an operations story that genuinely works out of the box. The costs are the licence per core, the hardware compatibility list, and an exit that gets harder each renewal — and quotes swing widely, so the same estate can price anywhere in a broad band. Enterprise Edition runs on commodity hardware with no per-core licence, and Kubernetes is the API rather than a bolted-on add-on. [Five-year TCO with quote sensitivity](/tco-calculator/vs-nutanix/). |
+| **Azure Stack HCI / Azure Local** | The right answer if your target state is Azure and this is a landing zone for workloads that cannot leave the building yet: the Azure control plane, Azure billing, Azure identity, one operating model. It is also the opposite of sovereignty — the control plane is Microsoft's, the meter runs to Microsoft, and a jurisdiction question about the control plane has one answer. Enterprise Edition puts the control plane inside your perimeter, including fully air-gapped, with customer-managed keys. |
+| **VMware / VCF under Broadcom** | The migration everyone is currently modelling. See [Cozystack vs VMware](/compare/cozystack-vs-vmware/) and the [five-year TCO](/tco-calculator/vs-vmware/). |
+| **OpenShift** | A real ecosystem advantage in certified operators and images, against a per-core subscription and a heavier platform. [The honest version](/compare/cozystack-vs-openshift/). |
+
+---
+
 ## Who buys Enterprise Edition
 
 | Buyer | Typical engagement |

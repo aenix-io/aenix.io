@@ -32,7 +32,16 @@ faq:
   - q: "What is cozyportal?"
     a: "cozyportal is the Cozystack-native developer portal — simpler and tighter to the platform than Backstage, with a smaller plugin ecosystem. It is one option for teams that want a portal closely integrated with Cozystack rather than the broader Backstage ecosystem."
   - q: "Can I keep Backstage and still use Cozystack?"
-    a: "Yes. The platform decision (Cozystack vs OpenShift vs vanilla Kubernetes) is independent of the portal decision (Backstage vs cozyportal vs Port vs none). Backstage runs as a tenant Kubernetes workload pointing at the capabilities Cozystack provides. Ænix Platform IDP Edition can integrate the Backstage UI as the front-end."
+    a: "Yes. The platform decision (Cozystack vs OpenShift vs vanilla Kubernetes) is independent of the portal decision (Backstage vs cozyportal vs Port vs none).
+
+### Humanitec and Port specifically
+
+These two come up most often in IDP evaluations, and neither competes with Cozystack — they compete with Backstage and with each other.
+
+- **Port** is a hosted developer portal: a software catalogue, scorecards, self-service actions. Its actions call your infrastructure; it does not have any. Fast to stand up, and a genuinely better fit than Backstage for a team that does not want to run a portal.
+- **Humanitec** is a platform orchestrator: golden paths, environment templates, a resource-graph abstraction over what your clusters expose. It orchestrates infrastructure it does not own.
+
+Both leave the same question unanswered: what actually provisions the database, the cluster, the VM, the GPU when a developer clicks the button. On Cozystack those are first-class API objects with tenancy, quotas and backup already attached, so a self-service action is a Kubernetes API call rather than a Terraform pipeline someone has to maintain. Run Port or Humanitec on top if you want their developer experience — [IDP Edition](/products/aenix-platform/idp-edition/) ships cozyportal for teams that would rather not add a third vendor. Backstage runs as a tenant Kubernetes workload pointing at the capabilities Cozystack provides. Ænix Platform IDP Edition can integrate the Backstage UI as the front-end."
   - q: "How do I decide whether I need a portal?"
     a: "Through a focused architecture review. Aenix runs this as part of its Platform Readiness Assessment, which answers whether you need a portal at all and, if so, which one fits your operational model and team size."
 ---
@@ -71,6 +80,7 @@ If none of these apply and Backstage works for you — keep Backstage. The recom
 |---|---|
 | Need underlying platform first | Build platform with Cozystack (or chosen Kubernetes platform); portal later |
 | Need SaaS portal, not self-hosted | Port, Cortex, or Compass |
+| Need golden paths and environment orchestration, not a catalogue | Humanitec (or Port's workflow layer) — but on a platform that can actually provision what the golden path promises |
 | Need lightweight portal, smaller team | Markdown documentation site with YAML catalog in Git |
 | Need Backstage but different opinions | Backstage with custom plugins (still Backstage, but customized) |
 | Don't actually need a portal | Don't build one — IaC repo + good documentation suffices for many sub-100-engineer orgs |
@@ -96,6 +106,15 @@ Cozystack is **not** an alternative to Backstage — it's the platform underneat
 - **Or run no portal** — many Cozystack deployments don't have a separate portal; the IaC + GitOps surface is sufficient.
 
 The platform decision (Cozystack vs OpenShift vs vanilla Kubernetes) is independent of the portal decision (Backstage vs cozyportal vs Port vs none).
+
+### Humanitec and Port specifically
+
+These two come up most often in IDP evaluations, and neither competes with Cozystack — they compete with Backstage and with each other.
+
+- **Port** is a hosted developer portal: a software catalogue, scorecards, self-service actions. Its actions call your infrastructure; it does not have any. Fast to stand up, and a genuinely better fit than Backstage for a team that does not want to run a portal.
+- **Humanitec** is a platform orchestrator: golden paths, environment templates, a resource-graph abstraction over what your clusters expose. It orchestrates infrastructure it does not own.
+
+Both leave the same question unanswered: what actually provisions the database, the cluster, the VM, the GPU when a developer clicks the button. On Cozystack those are first-class API objects with tenancy, quotas and backup already attached, so a self-service action is a Kubernetes API call rather than a Terraform pipeline someone has to maintain. Run Port or Humanitec on top if you want their developer experience — [IDP Edition](/products/aenix-platform/idp-edition/) ships cozyportal for teams that would rather not add a third vendor.
 
 ---
 

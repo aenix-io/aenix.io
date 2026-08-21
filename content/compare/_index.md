@@ -15,3 +15,25 @@ call.
 For market-wide listicles (e.g. "best VMware alternatives") see
 **[Alternatives →](/alternatives/)**.
 For migration playbooks see **[Migration hubs →](/migration/)**.
+
+## Cost comparisons with sourced prices
+
+The four write-ups above are architectural. For the money, the TCO calculator
+compares five-year cost against thirteen platforms, with each price carrying a
+source, a date and a source-nature label, and each page stating the case where
+the other platform wins:
+
+[Nutanix](/tco-calculator/vs-nutanix/) ·
+[VMware](/tco-calculator/vs-vmware/) ·
+[OpenShift](/tco-calculator/vs-openshift/) ·
+[Proxmox VE](/tco-calculator/vs-proxmox/) ·
+[OpenStack](/tco-calculator/vs-openstack/) ·
+[CloudStack](/tco-calculator/vs-cloudstack/) ·
+[OpenNebula](/tco-calculator/vs-opennebula/) ·
+[Harvester](/tco-calculator/vs-harvester/) ·
+[Rancher](/tco-calculator/vs-rancher/) ·
+[Virtuozzo](/tco-calculator/vs-virtuozzo/)
+
+Already on a hyperscaler instead? The [cloud repatriation calculator](/cloud-calculator/)
+prices an AWS, Azure or GCP footprint against the same workload on your own or
+rented hardware.

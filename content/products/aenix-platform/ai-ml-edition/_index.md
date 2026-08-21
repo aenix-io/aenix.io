@@ -117,6 +117,8 @@ Productized patterns for migration from hyperscaler AI (AWS Bedrock, Azure OpenA
 | **Building AI infra on raw Kubernetes + GPU drivers** | Multi-tenant GPU scheduling, observability, sovereignty controls, ready blueprints, service APIs — all included. Avoid 12-24 months of MLOps engineering. |
 | **Closed-source MLOps platforms** | Open-source foundation (Cozystack Apache 2.0) — no per-engineer / per-model licensing. Customer-controlled. |
 | **Building in-house from open-source components** | Aenix has built this many times. Engagement avoids the multi-year build path. |
+| **Run:ai (NVIDIA)** | Run:ai is a GPU scheduler and quota layer that assumes a Kubernetes platform already exists underneath — cluster lifecycle, storage, networking, tenancy and the VM estate are still yours to build and run. AI/ML Edition brings the platform itself: GPU fractioning and MIG, KubeVirt for the workloads that never containerized, LINSTOR/DRBD storage, Tenant CRD isolation. It is also Apache 2.0 with no per-GPU subscription and no NVIDIA-only hardware assumption. If you already run a mature Kubernetes platform and only need scheduling, Run:ai is a narrower and reasonable purchase. |
+| **Kubeflow** | Kubeflow is an ML toolchain — pipelines, notebooks, training operators, serving — not an infrastructure platform, and running it is itself a platform-engineering project. AI/ML Edition supplies what Kubeflow assumes: multi-tenant GPU scheduling, managed databases and vector stores, object storage, observability, isolation per team. The two are complementary: teams run Kubeflow, or Dynamo, or plain vLLM, as tenant workloads on top. |
 
 ---
 
