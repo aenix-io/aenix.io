@@ -35,6 +35,7 @@ build:
 <div class="wm-video" aria-label="Webinar video player">
 <iframe src="https://www.youtube-nocookie.com/embed/eRFap6FzNj0" title="Turnkey Public Cloud webinar recording" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+<p class="wm-video-link">Direct video link: <a href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">https://youtu.be/eRFap6FzNj0</a></p>
 </div>
 </section>
 

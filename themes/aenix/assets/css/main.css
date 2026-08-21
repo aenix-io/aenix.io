@@ -1305,6 +1305,17 @@ img { max-width: 100%; height: auto; display: block; }
   border: 0;
 }
 
+.wm-video-link {
+  grid-column: 2;
+  margin-top: -2rem;
+  font-size: 0.95rem;
+}
+
+.wm-video-link a {
+  font-weight: 700;
+  word-break: break-word;
+}
+
 .wm-cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1443,6 +1454,11 @@ img { max-width: 100%; height: auto; display: block; }
   .wm-audit,
   .wm-cards {
     grid-template-columns: 1fr;
+  }
+
+  .wm-video-link {
+    grid-column: 1;
+    margin-top: -1.75rem;
   }
 
   .wm-audit {
