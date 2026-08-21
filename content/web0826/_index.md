@@ -19,8 +19,8 @@ build:
 <h2 id="materials-h">Launch or upgrade a public cloud your customers can buy</h2>
 <p class="wm-lead">Thank you for joining Andrei Kvapil's session on turning hosting, colocation, or data center infrastructure into commercial cloud services. The recording is available in closed access for two weeks, together with the supporting materials below.</p>
 <div class="wm-actions">
-<a class="cta-primary cta-accent" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Open video on YouTube</a>
-<a class="cta-secondary" href="#audit">Book free infrastructure audit</a>
+<a class="btn btn-primary" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Open video on YouTube</a>
+<a class="btn btn-secondary" href="#audit">Book free infrastructure audit</a>
 </div>
 </div>
 </section>
@@ -70,7 +70,7 @@ build:
 <li>Discussion of what can become managed Kubernetes, databases, S3-compatible storage, GPU, and VM services.</li>
 <li>A practical next-step plan for launch, migration, or modernization.</li>
 </ul>
-<a class="cta-primary cta-accent cta-lg" href="https://zcal.co/t/aenix/60mindemo" target="_blank" rel="noopener">Book a meeting with Andrei</a>
+<a class="btn btn-primary btn-lg" href="https://zcal.co/t/aenix/60mindemo" target="_blank" rel="noopener">Book a meeting with Andrei</a>
 </div>
 <aside class="wm-speaker" aria-label="Speaker">
 {{< workshop-photo src="images/webinars/andrei-kvapil.png" alt="Andrei Kvapil" >}}
