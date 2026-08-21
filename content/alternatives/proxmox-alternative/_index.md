@@ -41,7 +41,7 @@ faq:
 
 Cozystack is the open-source platform built for that next stage. Kubernetes-native virtualization (KubeVirt), multi-tenant control plane, managed database services, S3 object storage, GPU as a service — on the same hardware Proxmox runs on, with a different operational model.
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant by design, productized installer. From €1.3k/month support tier.
+> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant by design, productized installer. From $1,250/month support tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

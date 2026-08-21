@@ -32,12 +32,12 @@ faq:
   - q: "Does Cozystack support GPUs better than Proxmox VE?"
     a: "Proxmox VE offers GPU passthrough. Cozystack supports vGPU, MIG, and time-slicing, allowing GPUs to be shared across tenants and workloads, which matters for AI/ML and multi-tenant providers."
   - q: "What does Aenix offer on top of Cozystack?"
-    a: "Aenix is the team behind Cozystack and sells the productized Ænix Platform plus services. The ISP Edition is a turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox, with support tiers starting around €1.3k/month."
+    a: "Aenix is the team behind Cozystack and sells the productized Ænix Platform plus services. The ISP Edition is a turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox, with support tiers starting around $1,250/month."
 ---
 
 **Different scales. Different design centers. Both open source.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox's design center. From €1.3k/month support tier.
+> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox's design center. From $1,250/month support tier.
 
 <div class="compare-elevated compare-elevated--col3">
 

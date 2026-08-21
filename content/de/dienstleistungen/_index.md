@@ -21,7 +21,7 @@ language: "de"
 
 ### Entry-Offer (hier starten)
 
-- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — 5-10 Tage Festpreis-Engagement (typisch €20-50k). Architektur-Audit + Edition-Empfehlung + Migrations-Roadmap. **Häufigster Startpunkt.**
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — 5-10 Tage Festpreis-Engagement (Festpreis vorab vereinbart). Architektur-Audit + Edition-Empfehlung + Migrations-Roadmap. **Häufigster Startpunkt.**
 
 ### Build-Engagements
 
@@ -46,8 +46,8 @@ language: "de"
 ## Engagement-Modell
 
 1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope, regulatorischer Kontext, Edition-Match bestätigen
-2. **Platform Readiness Assessment** (5-10 Tage, Festpreis €20-50k) — aktuelle-Zustand-Audit + Edition-Empfehlung + Roadmap
-3. **Pilot-Engagement** (3-6 Monate, €100-300k) — definierter Slice, validierter Business Case
+2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — aktuelle-Zustand-Audit + Edition-Empfehlung + Roadmap
+3. **Pilot-Engagement** (3-6 Monate, Angebot nach RFP) — definierter Slice, validierter Business Case
 4. **Vollständiger Edition-Build** — Wochen für ISP Edition; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML
 5. **Managed Operations** (laufender Retainer)
 
@@ -65,7 +65,7 @@ language: "de"
 
 ## Pricing
 
-ISP Edition Entry ab €1.3k / $1,250 pro Monat (Basic Support-Tier, 10 Nodes). Andere Editions: Pricing on Request via Discovery-Call. [Pricing-Details →](/de/preise/).
+ISP Edition Entry ab 1.250 USD pro Monat (Basic Support-Tier, 10 Nodes). Andere Editions: Pricing on Request via Discovery-Call. [Pricing-Details →](/de/preise/).
 
 ---
 

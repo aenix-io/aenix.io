@@ -273,7 +273,7 @@ Poor fit:
 - **Managed retainer** (optional, ongoing) — Aenix runs platform
   Tier-3 under SLA
 
-Engagement size: €300k - €2M project; managed retainer post-deployment.
+Engagement size: Project plus managed retainer, quoted per RFP.
 
 ## Where to dig deeper
 

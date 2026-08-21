@@ -17,7 +17,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Engagement"
-    value: "€300k - €2M Projekt; Time-to-Production 6-12 Monate; Managed-Retainer post-Deployment optional"
+    value: "Projekt, Angebot nach RFP; Time-to-Production 6-12 Monate; Managed-Retainer post-Deployment optional"
 faq:
   - q: "Was ist die Ænix Platform IDP Edition?"
     a: "Ein produktisierter Internal-Developer-Platform-Layer auf einer Kubernetes-nativen Cozystack-Cloud-Foundation. Sie liefert Golden Paths, Self-Service-APIs, GitLab-Automation, Argo-CD-Workflows und Service-Erstellungs-Wizards, mit denen Engineers Environments, Datenbanken und Cluster ohne Ticket-Queues bereitstellen."
@@ -26,7 +26,7 @@ faq:
   - q: "Auf welcher Technologie basiert die IDP Edition?"
     a: "Auf Open-Source Cozystack, einem CNCF-Projekt unter Apache 2.0. Die Foundation nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und ein Tenant-CRD für Mandantenfähigkeit. Observability läuft über VictoriaMetrics und VictoriaLogs."
   - q: "Was kostet die IDP Edition?"
-    a: "Pricing auf Anfrage. Typische Engagements liegen bei €300k - €2M Projekt, mit optionalem Managed-Retainer nach dem Deployment. Time-to-Production beträgt 6-12 Monate für einen typischen IDP-Build, kürzer bei Golden-Path-only-Scope."
+    a: "Pricing auf Anfrage. Typische Engagements liegen bei Projekt, Angebot nach RFP, mit optionalem Managed-Retainer nach dem Deployment. Time-to-Production beträgt 6-12 Monate für einen typischen IDP-Build, kürzer bei Golden-Path-only-Scope."
   - q: "Wer kauft die IDP Edition typischerweise?"
     a: "Produkt- und SaaS-Organisationen mit starken Engineering-Teams — VP Engineering, SaaS-CTOs und Plattform-Engineering-Leads, die eine IDP-as-Product statt eines weiteren internen Tools wollen. Typisch ab 300+ Engineers, aber auch kleinere Teams mit hohem Developer-Experience-Fokus."
   - q: "Vermeidet die IDP Edition Vendor-Lock-in?"
@@ -98,7 +98,7 @@ Plattform-Engineering-Team-Training als Teil des Engagements. Kurs (Kubernetes D
 
 ## Pricing
 
-Pricing auf Anfrage — €300k - €2M Projekt; Managed-Retainer post-Deployment.
+Projekt plus Managed-Retainer, Angebot nach RFP post-Deployment.
 
 [IDP Edition diskutieren →](/de/kontakt/?edition=idp)
 

@@ -136,7 +136,7 @@ Pre-validated against ISO 27001 / SOC 2. Aenix supports certification documentat
 
 ## Pricing
 
-Pricing on request — €500k - €5M+ multi-year platform builds. Discovery call to scope.
+Multi-year platform build, quoted per RFP. Discovery call to scope.
 
 [Discuss Enterprise Edition →](/contact/?edition=enterprise)
 
@@ -145,7 +145,7 @@ Pricing on request — €500k - €5M+ multi-year platform builds. Discovery ca
 ## Engagement structure
 
 - **Discovery call** (30 min, free)
-- **Platform Readiness Assessment** (5-10 days, fixed-price €20-50k) — DORA / NIS2 gap analysis + architecture roadmap
+- **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — DORA / NIS2 gap analysis + architecture roadmap
 - **Pilot engagement** (3-6 months) — defined slice (one workload class, one BU, one site)
 - **Full Enterprise Edition build** (9-18 months) — multi-DC production deployment, compliance certification support, operations team training
 - **Managed operations** (optional, ongoing) — Aenix runs the platform under SLA

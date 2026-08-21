@@ -92,7 +92,7 @@ Use the **[Cloud Repatriation TCO Worksheet](/resources/cloud-repatriation-tco-w
 ## How we engage on migrations
 
 1. **Discovery call** — confirm fit, scope, timeline
-2. **Platform Readiness Assessment** (5-10 days, fixed-price €20-50k) — current-state audit, target architecture, cohort plan, risk register
+2. **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — current-state audit, target architecture, cohort plan, risk register
 3. **Pilot cohort** (3-6 months) — first cohort migration, validated patterns, knowledge transfer
 4. **Rolling migration** — cohort-by-cohort production migration with parallel-run validation
 5. **Decommission** — source platform shutdown after final validation

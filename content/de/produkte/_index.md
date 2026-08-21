@@ -32,14 +32,14 @@ faq:
 | Edition | Für | Was unterscheidet |
 |---|---|---|
 | **Public Cloud Edition** | Große Public Clouds, große Banken mit eigener Cloud, große Telcos | Multi-Hypervisor-Cloud-Control-Plane, Multi-Region, Drittanbieter-Integration |
-| **ISP Edition** | Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren | WHMCS-Integration, Billing-Modul + Templates, Tenant Lock/Suspension, Migration von VMware/OpenStack/Virtuozzo. Ab €1.3k/Monat |
+| **ISP Edition** | Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren | WHMCS-Integration, Billing-Modul + Templates, Tenant Lock/Suspension, Migration von VMware/OpenStack/Virtuozzo. Ab 1.250 USD/Monat |
 | **Enterprise Edition** | Regulierte Unternehmen (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | DORA / NIS2-Architektur, Multi-DC, hybrid souverän, Integration mit VMware/OpenNebula/OpenShift |
 | **IDP Edition** | Produkt- / SaaS-Organisationen mit starken Engineering-Teams | Internal Developer Platform Layer — GitLab, Argo CD Workflows, APIs |
 | **AI/ML Edition** | KI-lastige Organisationen, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen | KI-Plattform-Automatisierung out-of-the-box, fertige Blueprints, Modelle, DBs |
 
 Plus ein **Entry-Tier** — **Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware ohne kommerzielle Portal-/Billing-Schicht.
 
-**Engagement-Größe:** ISP Edition Entry ab €1.3k/Monat Support; Public Cloud / Enterprise / IDP / AI/ML Full Builds €500k - €10M+ mehrjährig.
+**Engagement-Größe:** ISP Edition Entry ab 1.250 USD/Monat Support; Public Cloud / Enterprise / IDP / AI/ML Full Builds nach RFP.
 
 [Platform entdecken →](/de/produkte/aenix-platform/)
 

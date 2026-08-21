@@ -242,7 +242,7 @@ Strong fit:
   obligations.
 - You have a board-level decision to bring critical-function workloads
   off hyperscaler.
-- You can budget €500k–€5M for a multi-year platform programme.
+- You can budget for a multi-year platform programme, sized at scoping.
 - You have or can hire a 5-10 engineer platform team to operate the
   infrastructure.
 - You have sectoral pressure on TLPT, supplier-chain audit, or

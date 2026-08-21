@@ -21,7 +21,7 @@ quick_facts:
   - label: "Underlying technology"
     value: "KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage."
   - label: "Commercial entry"
-    value: "Ænix Platform support tiers from €1.3k/month; Partner Program offers up to 40% margin on resold engagements."
+    value: "Ænix Platform support tiers from $1,250/month; Partner Program offers up to 40% margin on resold engagements."
 faq:
   - q: "Why would a hosting provider move from VPS to a Kubernetes-native cloud platform?"
     a: "Customers increasingly expect cloud capabilities competitive with hyperscalers — managed databases, object storage, GPU, and self-service. A Kubernetes-native platform adds these as a single service catalog while the provider keeps its direct customer relationship and pricing flexibility."
@@ -39,7 +39,7 @@ faq:
 
 **Hosting providers in 2026 face customer demand for cloud capabilities competitive with hyperscalers but with the customer-relationship advantages and pricing flexibility that hosting providers already have. The architectural answer is a Kubernetes-native platform with multi-tenant customer isolation, billing integration, and a service catalog beyond VMs — Cozystack's design center.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — modern alternative to OpenStack for hosting providers. WHMCS-integrated billing, tenant lock/suspension, fast feature delivery, productized installer, migration tooling from VMware/OpenStack/Virtuozzo. Entry from €1.3k/month support tier. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — modern alternative to OpenStack for hosting providers. WHMCS-integrated billing, tenant lock/suspension, fast feature delivery, productized installer, migration tooling from VMware/OpenStack/Virtuozzo. Entry from $1,250/month support tier. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

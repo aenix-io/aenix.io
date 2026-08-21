@@ -41,7 +41,7 @@ faq:
 
 **Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the customer-relationship advantages MSPs already have. White-label cloud — branded with the MSP's identity, run on shared or dedicated infrastructure — is the realistic answer. Aenix builds these end-to-end.**
 
-> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — fully white-labelable cozyportal, multi-tier reseller model (Aenix → MSP → MSP customers), WHMCS-integrated billing. From €1.3k/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Platform ISP Edition](/products/aenix-platform/isp-edition/)** — fully white-labelable cozyportal, multi-tier reseller model (Aenix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

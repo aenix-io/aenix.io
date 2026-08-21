@@ -116,7 +116,7 @@ Pre-validated against DORA / NIS2 / ISO 27001 / SOC 2 — relevant when the clou
 
 ## Pricing
 
-Pricing on request — multi-million-euro multi-year programs. Discovery call to scope.
+Multi-year programme, quoted per RFP. Discovery call to scope.
 
 [Discuss Public Cloud Edition →](/contact/?edition=public-cloud)
 

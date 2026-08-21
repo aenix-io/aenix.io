@@ -14,7 +14,7 @@ language: "en"
 - **Public production customers (subject to permission per use):** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform ISP Edition)
 - **Platform R&D engagements:** CSI driver development, block storage research, virtualization platform prototypes — for ecosystem vendors
 - **Tier-1 European banks:** multi-million-euro Ænix Platform Enterprise Edition engagements (NDA-protected; named cases expected mid-2027)
-- **Engagement sizes:** €1.3k/month (ISP Edition support tier) to €10M+ multi-year (Public Cloud / Enterprise full builds)
+- **Engagement sizes:** from a $1,250/month ISP Edition support tier through to multi-year Public Cloud and Enterprise builds quoted per RFP
 
 ---
 

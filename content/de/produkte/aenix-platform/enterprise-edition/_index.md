@@ -20,7 +20,7 @@ quick_facts:
   - label: "Architektur"
     value: "Kubernetes-nativ mit KubeVirt (VMs + Container), Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Tenant-CRD-Mandantenfähigkeit; Multi-DC und Air-Gap-fähig"
   - label: "Engagement"
-    value: "Mehrjährige Plattform-Builds (€500k - €5M+); Time-to-Production 9-18 Monate Full Estate, 3-6 Monate Pilot"
+    value: "Mehrjährige Plattform-Builds, Angebot nach RFP; Time-to-Production 9-18 Monate Full Estate, 3-6 Monate Pilot"
 faq:
   - q: "Wie unterscheidet sich die Enterprise Edition vom Selbstbetrieb von Open-Source-Cozystack?"
     a: "Cozystack liefert die Kubernetes-native Multi-Tenant-Foundation. Die Enterprise Edition ergänzt vorvalidierte DORA-/NIS2-Architektur-Bundles, Multi-DC-Operations-Runbooks, kundenverwaltete Verschlüsselung auf jeder Schicht inklusive Backups und Observability, audit-bereites Logging, Hybrid-Integration mit VMware / OpenNebula / OpenShift, ISO 27001 / SOC 2 Alignment-Support, Enterprise-SLA mit 24/7-Support sowie inkludiertes Engineering-Training."
@@ -33,7 +33,7 @@ faq:
   - q: "Wer kontrolliert die Verschlüsselungsschlüssel?"
     a: "Der Kunde. Schlüssel liegen auf jeder Schicht beim Kunden — Primary Store, Replikate, Backups, Observability-Daten und Modell-Gewichte at rest. BYOK / HYOK mit HSM-Integration wird unterstützt; reine Vendor-managed-Schlüssel werden explizit vermieden."
   - q: "Was kostet die Enterprise Edition?"
-    a: "Pricing auf Anfrage — typischerweise €500k - €5M+ für mehrjährige Plattform-Builds. Ein Platform Readiness Assessment (5-10 Tage, Festpreis €20-50k) liefert DORA-/NIS2-Gap-Analyse und Architektur-Roadmap. Scope wird im Discovery-Call definiert."
+    a: "Angebot nach RFP für mehrjährige Plattform-Builds. Ein Platform Readiness Assessment (5-10 Tage, Festpreis vorab vereinbart) liefert DORA-/NIS2-Gap-Analyse und Architektur-Roadmap. Scope wird im Discovery-Call definiert."
 ---
 
 **Private und hybride souveräne Cloud für regulierte Unternehmen. Sicher, automatisiert und einfach erweiterbar. Gebaut für Multi-DC-Setups, DORA / NIS2-Compliance und Enterprise-Integrationen. Eine Control Plane, die VMware, OpenNebula, OpenShift und mehr verbindet — turnkey Cloud-in-a-Box auf kundenkontrollierter Hardware. Inklusive Bildung und Training.**
@@ -126,7 +126,7 @@ Vorvalidiert gegen ISO 27001 / SOC 2. Aenix unterstützt Zertifizierungs-Dokumen
 
 ## Pricing
 
-Pricing auf Anfrage — €500k - €5M+ mehrjährige Plattform-Builds. Discovery-Call zur Scope-Definition.
+Mehrjähriger Plattform-Build, Angebot nach RFP. Discovery-Call zur Scope-Definition.
 
 [Enterprise Edition diskutieren →](/de/kontakt/?edition=enterprise)
 
@@ -135,7 +135,7 @@ Pricing auf Anfrage — €500k - €5M+ mehrjährige Plattform-Builds. Discover
 ## Engagement-Struktur
 
 - **Discovery-Call** (30 min, kostenlos)
-- **Platform Readiness Assessment** (5-10 Tage, Festpreis €20-50k) — DORA / NIS2 Gap-Analyse + Architektur-Roadmap
+- **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — DORA / NIS2 Gap-Analyse + Architektur-Roadmap
 - **Pilot-Engagement** (3-6 Monate) — definierter Slice (eine Workload-Klasse, ein BU, ein Standort)
 - **Vollständiger Enterprise Edition Build** (9-18 Monate) — Multi-DC-Produktions-Deployment, Compliance-Zertifizierungs-Support, Operations-Team-Training
 - **Managed Operations** (optional, laufend) — Aenix betreibt die Plattform unter SLA

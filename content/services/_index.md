@@ -21,7 +21,7 @@ language: "en"
 
 ### Entry offer (start here)
 
-- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — 5-10 day fixed-price engagement (typical €20-50k). Architecture audit + edition recommendation + migration roadmap. **Single most common starting point.**
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — 5-10 day fixed-price engagement, price agreed before it starts. Architecture audit + edition recommendation + migration roadmap. **Single most common starting point.**
 
 ### Build engagements
 
@@ -55,8 +55,8 @@ Render as 5-step horizontal flow. Each step: number, bold heading, 1-line descri
 {{< /design-note >}}
 
 1. **Discovery call** (30 min, free) — confirm fit, scope, regulatory context, edition match
-2. **Platform Readiness Assessment** (5-10 days, fixed-price €20-50k) — current-state audit + edition recommendation + roadmap
-3. **Pilot engagement** (3-6 months, €100-300k) — defined slice, validated business case
+2. **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — current-state audit + edition recommendation + roadmap
+3. **Pilot engagement** (3-6 months, quoted per RFP) — defined slice, validated business case
 4. **Full Edition build** — weeks for ISP Edition; 9-18 months for Public Cloud / Enterprise / IDP / AI/ML
 5. **Managed operations** (ongoing retainer) — Aenix runs the platform you operate, or hybrid
 
@@ -74,7 +74,7 @@ Render as 5-step horizontal flow. Each step: number, bold heading, 1-line descri
 
 ## Pricing
 
-ISP Edition entry from €1.3k / $1,250 per month (Basic support tier, 10 nodes). Other editions: pricing on request via discovery call. Engagement add-ons (assessment, pilot, build, managed ops) priced separately per scope. [Pricing details →](/pricing/).
+ISP Edition entry from $1,250 per month (Basic support tier, 10 nodes). Other editions: pricing on request via discovery call. Engagement add-ons (assessment, pilot, build, managed ops) priced separately per scope. [Pricing details →](/pricing/).
 
 ---
 

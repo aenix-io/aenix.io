@@ -20,12 +20,12 @@ quick_facts:
   - label: "Was über Cozystack hinaus hinzukommt"
     value: "Hosting-Panel, User- / Admin- / Support-Portale, Service-Wizards, vollständiges Billing, Console-Portal, Payment- und WHMCS-Integration, Enterprise-SLA"
   - label: "Engagement-Modell"
-    value: "Lizenz + Services Bundle; ISP-Edition-Entry ab €1.3k/Monat (Support-Tier), Full Builds bis Mehr-Millionen-Euro"
+    value: "Lizenz + Services Bundle; ISP-Edition-Entry ab 1.250 USD/Monat (Support-Tier), Full Builds bis Mehr-Millionen-Euro"
 faq:
   - q: "Was fügt Ænix Platform über Open-Source-Cozystack hinaus hinzu?"
     a: "Cozystack ist die Foundation — eine Kubernetes-native Multi-Tenant-Cloud-Plattform. Ænix Platform ergänzt Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing (Backend + Frontend), Console-Portal, Usage-Charts, Payment- und WHMCS-Integration, produktisierten Installer, Enterprise-SLA, dedizierten Support sowie Edition-spezifische Features und Compliance-fertige Bundles."
   - q: "Was kostet Ænix Platform?"
-    a: "Pricing hängt von Edition und Engagement-Scope ab. Die ISP Edition startet ab €1.3k/Monat im Support-Tier. Public-Cloud- und Enterprise-Full-Builds liegen typisch im Bereich von mehreren Hunderttausend bis über zehn Millionen Euro über mehrere Jahre. Weitere Editions: Pricing on Request via Discovery-Call."
+    a: "Pricing hängt von Edition und Engagement-Scope ab. Die ISP Edition startet ab 1.250 USD/Monat im Support-Tier. Public-Cloud- und Enterprise-Full-Builds liegen typisch im Bereich von mehreren Hunderttausend bis über zehn Millionen Euro über mehrere Jahre. Weitere Editions: Pricing on Request via Discovery-Call."
   - q: "Welche der fünf Editions passt zu meiner Organisation?"
     a: "Public Cloud Edition für große Cloud-Betreiber, Banken und Telcos; ISP Edition für Hosting-Anbieter und MSPs; Enterprise Edition für regulierte Unternehmen unter DORA / NIS2; IDP Edition für Produkt- / SaaS-Teams mit Developer-Experience-Fokus; AI/ML Edition für KI-native und GPU-lastige Organisationen. Im Zweifel klärt ein Discovery-Call den Fit."
   - q: "Ist Cozystack wirklich Open Source und herstellerneutral?"
@@ -94,7 +94,7 @@ Für große Public-Cloud-Betreiber, große Banken mit eigener Cloud, große Telc
 
 Multi-Hypervisor-Cloud-Control-Plane mit Nutzern, Projekten, Quotas, Cloud-like UX, Multi-Region-Support. Integration mit Drittanbieter-Infrastruktur. Gebaut für große Rechenzentren und Cloud-Anbieter, die Public Clouds starten oder skalieren.
 
-**Engagement-Größe:** €1M - €10M+ mehrjährige Programme.
+**Engagement-Größe:** Mehrjähriges Programm, Angebot nach RFP.
 
 [Public Cloud Edition Details →](/de/produkte/aenix-platform/public-cloud-edition/)
 
@@ -104,7 +104,7 @@ Für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter, Reche
 
 Moderne Alternative zu OpenStack. Inklusive WHMCS-Integration, Billing-Modul + Templates, Tenant Lock/Suspension, Fast Feature Delivery, Migrations-Expertise von VMware/OpenStack/Virtuozzo.
 
-**Engagement-Größe:** Produktisiert — Entry ab **€1.3k/Monat** Support-Tier; projektbasiert für Migrationen.
+**Engagement-Größe:** Produktisiert — Entry ab **1.250 USD/Monat** Support-Tier; projektbasiert für Migrationen.
 
 [ISP Edition Details →](/de/produkte/aenix-platform/isp-edition/)
 
@@ -114,7 +114,7 @@ Für regulierte Unternehmen (Banken, Versicherungen, öffentliche Verwaltung, Te
 
 Private und hybride souveräne Cloud — sicher, automatisiert, einfach erweiterbar. Multi-DC-Setups. Eine Control Plane verbindet VMware, OpenNebula, OpenShift und mehr. Inklusive Bildung und Training.
 
-**Engagement-Größe:** €500k - €5M+ mehrjährige Plattform-Builds. Tier-1-europäische-Banken unter NDA.
+**Engagement-Größe:** Mehrjähriger Plattform-Build, Angebot nach RFP. Tier-1-europäische-Banken unter NDA.
 
 [Enterprise Edition Details →](/de/produkte/aenix-platform/enterprise-edition/)
 
@@ -124,7 +124,7 @@ Für Produkt- / SaaS-Organisationen mit starken Engineering-Teams, die in Develo
 
 Internal Developer Platform Layer auf der Cloud — GitLab-Automation, Argo CD Workflows, APIs. Engineers verbringen weniger Zeit mit Routine-Arbeit und mehr mit Produkt-Auslieferung.
 
-**Engagement-Größe:** €300k - €2M Projekt; Managed-Retainer post-Deployment.
+**Engagement-Größe:** Projekt plus Managed-Retainer, Angebot nach RFP post-Deployment.
 
 [IDP Edition Details →](/de/produkte/aenix-platform/idp-edition/)
 
@@ -134,7 +134,7 @@ Für KI-lastige Organisationen — KI-native Startups at scale, regulierte KI-De
 
 KI-Plattform-Automatisierung out-of-the-box: Standard-KI-Workloads, Service-APIs, fertige Blueprints, Datenbanken, Apps und Modelle. Von der Idee zu laufenden Jobs schneller.
 
-**Engagement-Größe:** €500k - €3M+ Projekt; Managed-Retainer.
+**Engagement-Größe:** Projekt, Angebot nach RFP; Managed-Retainer.
 
 [AI/ML Edition Details →](/de/produkte/aenix-platform/ai-ml-edition/)
 
@@ -174,7 +174,7 @@ Cozystack ist der Motor — Kubernetes-native Multi-Tenant-Cloud-Plattform-Found
 
 ### Wie wird Ænix Platform bepreist?
 
-Pricing hängt von Edition und Engagement-Scope ab. ISP Edition Entry ab €1.3k/Monat Support-Tier. Public Cloud / Enterprise Full Builds typisch €500k - €10M+ mehrjährig. Andere Editions: Pricing on Request via Discovery-Call. [Preisseite →](/de/preise/).
+Pricing hängt von Edition und Engagement-Scope ab. ISP Edition Entry ab 1.250 USD/Monat Support-Tier. Public Cloud / Enterprise Full Builds werden nach RFP angeboten. Andere Editions: Pricing on Request via Discovery-Call. [Preisseite →](/de/preise/).
 
 ### Welche Edition passt für meine Organisation?
 

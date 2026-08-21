@@ -13,10 +13,10 @@ quiz:
   questions:
     - q: "What is the published entry price for ISP Edition Basic support tier?"
       options:
-        - { text: "From €1.3k per month covering 10 nodes", correct: true }
+        - { text: "From $1,250 per month covering 10 nodes", correct: true }
         - { text: "€500 per month for unlimited nodes and tenants", correct: false }
         - { text: "Per-VM pricing starting around €5 per VM monthly", correct: false }
-      explanation: "The pricing section explicitly states 'from €1.3k/month for the Basic support tier covering 10 nodes' — Aenix does not charge per VM, per CPU, or per GB."
+      explanation: "The pricing section explicitly states 'from $1,250/month for the Basic support tier covering 10 nodes' — Aenix does not charge per VM, per CPU, or per GB."
     - q: "At a mid-size provider running 500 tenants, what is the all-in cost per typical tenant the article cites?"
       options:
         - { text: "Around €5 to €10 per tenant per month", correct: false }
@@ -83,7 +83,7 @@ depth.
 ## Pricing model
 
 ISP Edition is the only Ænix Platform edition with a published entry
-price: from **€1.3k/month** for the Basic support tier covering 10
+price: from **$1,250/month** for the Basic support tier covering 10
 nodes. Higher tiers (Standard, Enterprise) add SLA, dedicated TAM,
 24×7 response, with pricing on RFP. Aenix does not charge per VM,
 per CPU, or per GB — the Cozystack platform itself is free under

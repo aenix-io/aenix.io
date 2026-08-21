@@ -286,7 +286,7 @@ Poor fit:
 - **Managed retainer** (ongoing) — Aenix runs the AI platform under
   SLA
 
-Engagement size: €500k - €3M+ project; managed retainer post-deployment.
+Engagement size: Project plus managed retainer, quoted per RFP.
 
 ## Where to dig deeper
 

@@ -19,7 +19,7 @@ quick_facts:
   - label: "Who it is for"
     value: "Product / SaaS organizations with strong engineering teams (typically 300+ engineers; smaller high-DevEx teams also fit)."
   - label: "Engagement"
-    value: "EUR 300k - 2M project, then optional managed retainer; 6-12 months to production for a typical IDP build."
+    value: "Quoted per RFP after scoping, then an optional managed retainer; 6-12 months to production for a typical IDP build."
   - label: "Key capability"
     value: "Pre-integrated GitLab CI/CD, Argo CD GitOps, self-service APIs and wizards for environments, managed databases, storage and clusters."
   - label: "Foundation"
@@ -36,7 +36,7 @@ faq:
   - q: "Does IDP Edition integrate with our existing CI?"
     a: "Yes. GitLab integration is pre-built, and GitHub, Bitbucket, and other systems are supported via standard webhooks and Argo CD patterns. Templates cover common workload types such as web service, worker, batch job, and ML pipeline."
   - q: "What does IDP Edition cost and how long does it take?"
-    a: "Pricing is on request, typically a EUR 300k - 2M project with an optional managed retainer afterward. A typical IDP build reaches production in 6-12 months, shorter for golden-path-only scope. Engagements start with a free 30-minute discovery call."
+    a: "Pricing is a project plus an optional managed retainer, quoted per RFP after scoping. A typical IDP build reaches production in 6-12 months, shorter for golden-path-only scope. Engagements start with a free 30-minute discovery call."
 ---
 
 **An Internal Developer Platform layer on top of a Kubernetes-native cloud. GitLab automation, Argo CD workflows, and APIs — so your engineers spend less time on routine work and more on shipping product. Includes the full Cozystack-based cloud underneath: tenancy, observability, secrets, identity, multi-cluster.**
@@ -115,7 +115,7 @@ Platform-engineering team training as part of the engagement. Course (Kubernetes
 
 ## Pricing
 
-Pricing on request — €300k - €2M project; managed retainer post-deployment. Discovery call to scope.
+Project plus managed retainer, quoted per RFP. Discovery call to scope.
 
 [Discuss IDP Edition →](/contact/?edition=idp)
 

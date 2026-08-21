@@ -112,7 +112,7 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <div class="card-tag">Public Cloud</div>
       <h3 class="card-title">Public Cloud Edition</h3>
       <p class="card-description"><strong>You're a:</strong> large public-cloud operator, big bank operating its own cloud, or large telco / national operator launching or scaling a cloud.</p>
-      <p class="card-meta">€1M – €10M+ multi-year</p>
+      <p class="card-meta">Multi-year programme, per RFP</p>
       <span class="card-link">Explore →</span>
     </div>
   </a>
@@ -124,7 +124,7 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <div class="card-tag">ISP / Hosting</div>
       <h3 class="card-title">ISP Edition</h3>
       <p class="card-description"><strong>You're a:</strong> hosting provider, MSP, regional cloud, or data centre selling cloud to your customers. WHMCS-integrated, billing included, fast feature delivery.</p>
-      <p class="card-meta">From €1.3k / month support</p>
+      <p class="card-meta">From $1,250 / month support</p>
       <span class="card-link">Explore →</span>
     </div>
   </a>
@@ -136,7 +136,7 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <div class="card-tag">Regulated Enterprise</div>
       <h3 class="card-title">Enterprise Edition</h3>
       <p class="card-description"><strong>You're a:</strong> regulated enterprise (bank / insurer / public sector / energy / healthcare). DORA-aligned, NIS2-aligned, customer-controlled keys, audit-ready.</p>
-      <p class="card-meta">€500k – €5M+ project</p>
+      <p class="card-meta">Multi-year programme, per RFP</p>
       <span class="card-link">Explore →</span>
     </div>
   </a>
@@ -148,7 +148,7 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <div class="card-tag">Product Engineering</div>
       <h3 class="card-title">IDP Edition</h3>
       <p class="card-description"><strong>You're a:</strong> product engineering team building an internal developer platform. Self-service environments, golden paths, no MLOps engineering bill.</p>
-      <p class="card-meta">€300k – €2M+ project</p>
+      <p class="card-meta">Project plus managed retainer, per RFP</p>
       <span class="card-link">Explore →</span>
     </div>
   </a>
@@ -160,7 +160,7 @@ Five editions match five buyer profiles. Same Cozystack core; different bundle o
       <div class="card-tag">AI / ML</div>
       <h3 class="card-title">AI/ML Edition</h3>
       <p class="card-description"><strong>You're a:</strong> AI-native organization at scale, regulated AI deployment, or GPU-heavy product company. Multi-tenant GPU scheduling, vector DB, sovereignty controls.</p>
-      <p class="card-meta">€500k – €3M+ project</p>
+      <p class="card-meta">Project plus managed retainer, per RFP</p>
       <span class="card-link">Explore →</span>
     </div>
   </a>

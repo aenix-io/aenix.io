@@ -22,7 +22,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Engagement"
-    value: "Ænix Platform ISP Edition ab €1.3k/Monat Support-Tier; Partner-Programm mit bis zu 40% Marge"
+    value: "Ænix Platform ISP Edition ab 1.250 USD/Monat Support-Tier; Partner-Programm mit bis zu 40% Marge"
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
 faq:
@@ -35,14 +35,14 @@ faq:
   - q: "Wie werden Kunden auf einer gemeinsamen Plattform voneinander isoliert?"
     a: "Cozystack nutzt ein Multi-Tenant Tenant-CRD für die Kunden-Isolation. Networking läuft über Cilium (eBPF), persistenter Storage über LINSTOR/DRBD. Jeder Mandant erhält abgegrenzte Ressourcen über eine einzige Kubernetes-API."
   - q: "Was kostet die Ænix Platform ISP Edition?"
-    a: "Cozystack selbst ist Open Source unter Apache 2.0 und kostenlos. Die produktisierte Ænix Platform mit Support beginnt beim ISP-Support-Tier ab €1.3k/Monat. Das Partner-Programm bietet Hosting-Anbietern bis zu 40% Marge."
+    a: "Cozystack selbst ist Open Source unter Apache 2.0 und kostenlos. Die produktisierte Ænix Platform mit Support beginnt beim ISP-Support-Tier ab 1.250 USD/Monat. Das Partner-Programm bietet Hosting-Anbietern bis zu 40% Marge."
   - q: "Worin unterscheidet sich die Plattform von OpenStack für Hosting-Anbieter?"
     a: "Die ISP Edition positioniert sich als moderne Alternative zu OpenStack: produktisierter Installer, schnellere Feature-Bereitstellung, WHMCS-integriertes Billing und ein Service-Katalog jenseits reiner VMs — bei geringerer operativer Komplexität durch die Kubernetes-native Architektur."
 ---
 
 **Hosting-Anbieter stehen 2026 vor Kundennachfrage nach Cloud-Fähigkeiten, die preislich mit Hyperscalern konkurrieren, aber mit den Kundenbeziehungs-Vorteilen und der Preisflexibilität, die Hosting-Anbieter bereits haben. Die architektonische Antwort ist eine Kubernetes-native Plattform mit Multi-Tenant-Kunden-Isolation, Billing-Integration und einem Service-Katalog jenseits von VMs — Cozystacks Designziel.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Tenant Lock/Suspension, Fast Feature Delivery, produktisierter Installer, Migrations-Tooling von VMware/OpenStack/Virtuozzo. Einstieg ab €1.3k/Monat Support-Tier. Öffentliche Produktionskunden: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Tenant Lock/Suspension, Fast Feature Delivery, produktisierter Installer, Migrations-Tooling von VMware/OpenStack/Virtuozzo. Einstieg ab 1.250 USD/Monat Support-Tier. Öffentliche Produktionskunden: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

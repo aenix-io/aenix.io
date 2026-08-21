@@ -21,8 +21,8 @@ quiz:
       options:
         - { text: "€100k-€500k over 6-12 months", correct: false }
         - { text: "Fixed €500k annual subscription", correct: false }
-        - { text: "€1M-€10M+ over 18-36 months", correct: true }
-      explanation: "The engagement structure section explicitly states size is €1M-€10M+ in multi-year programmes, with the build phased across 18-36 months."
+        - { text: "A multi-year programme phased over 18-36 months", correct: true }
+      explanation: "The engagement structure section describes a multi-year programme quoted per RFP, with the build phased across 18-36 months."
     - q: "Why does the article say regulator dialog should happen in Phase 0-1 rather than Phase 4?"
       options:
         - { text: "Regulators require pre-construction notification", correct: false }
@@ -257,7 +257,7 @@ Poor fit:
 - **Managed Tier-3** (ongoing) — Aenix retainer until customer team
   is ready to absorb
 
-Engagement size: €1M - €10M+ multi-year programmes.
+Engagement size: multi-year programme, quoted per RFP.
 
 ## Where to dig deeper
 

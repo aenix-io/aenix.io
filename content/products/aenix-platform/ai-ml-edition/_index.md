@@ -122,7 +122,7 @@ Productized patterns for migration from hyperscaler AI (AWS Bedrock, Azure OpenA
 
 ## Pricing
 
-Pricing on request — €500k - €3M+ project; managed retainer post-deployment. Discovery call to scope.
+Project plus managed retainer, quoted per RFP. Discovery call to scope.
 
 [Discuss AI/ML Edition →](/contact/?edition=ai-ml)
 

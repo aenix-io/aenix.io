@@ -29,7 +29,7 @@ quick_facts:
   - label: "Technologie"
     value: "Cozystack: KubeVirt (VMs + Container über eine Kubernetes-API), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Beschaffung"
-    value: "RFI/RFP über Standard-Kanäle (eVergabe, EU eTendering, goszakup.gov.kz); EU-Beschaffung über AENIX s.r.o. (Tschechien); Engagements €2M–€10M+ mehrjährig"
+    value: "RFI/RFP über Standard-Kanäle (eVergabe, EU eTendering, goszakup.gov.kz); EU-Beschaffung über AENIX s.r.o. (Tschechien); mehrjährige Engagements, im Beschaffungsverfahren bepreist"
 faq:
   - q: "Ist die Plattform für den öffentlichen Sektor souverän und kundenkontrolliert?"
     a: "Ja. Die Architektur ist strukturell souverän, kundenkontrolliert und audit-bereit. Sie läuft auf Infrastruktur, die die Organisation selbst besitzt. Die Ænix Platform Enterprise Edition bietet strikt kundenkontrollierte Schlüssel und eine Air-Gap-Option für Datenklassen, die das Perimeter nicht verlassen dürfen."
@@ -38,7 +38,7 @@ faq:
   - q: "Kann die Plattform souveräne KI-Workloads mit Bürgerdaten ausführen?"
     a: "Ja. Aenix liefert souveräne KI-Infrastruktur für Abteilungen mit sensiblen Bürgerdaten und KI-Use-Cases. Datenklassen, die das Perimeter nicht verlassen können, bleiben in der Jurisdiktion und unter kundenkontrollierten Schlüsseln."
   - q: "Wie läuft die Beschaffung mit Aenix ab?"
-    a: "Aenix akzeptiert RFI/RFP über Standard-Beschaffungs-Kanäle in EU-Mitgliedstaaten. AENIX s.r.o. (Tschechien) handhabt EU-Beschaffung über Portale wie eVergabe (Deutschland), EU eTendering und goszakup.gov.kz (Kasachstan). Engagement-Größe: €2M–€10M+ mehrjährige Programme."
+    a: "Aenix akzeptiert RFI/RFP über Standard-Beschaffungs-Kanäle in EU-Mitgliedstaaten. AENIX s.r.o. (Tschechien) handhabt EU-Beschaffung über Portale wie eVergabe (Deutschland), EU eTendering und goszakup.gov.kz (Kasachstan). Mehrjährige Programme werden im Beschaffungsverfahren selbst bepreist."
   - q: "Worauf basiert die Plattform technisch?"
     a: "Auf Cozystack, einem CNCF-Projekt unter Apache 2.0. KubeVirt führt VMs und Container über eine einzige Kubernetes-API aus, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD den Storage und das Tenant-CRD die Mandantenfähigkeit. Keine CPU-/Core-basierte Lizenzierung."
   - q: "Gibt es Vendor-Lock-in oder Core-basierte Lizenzkosten?"

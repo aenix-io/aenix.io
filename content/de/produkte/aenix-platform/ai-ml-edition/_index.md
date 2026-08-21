@@ -21,7 +21,7 @@ quick_facts:
   - label: "Souveränität"
     value: "Kundenkontrollierte Verschlüsselungsschlüssel für Modell-Gewichte, Trainingsdaten und Vector-Indexe; Air-Gap-Deployment unterstützt; Anbieter-Personal-Zugang protokolliert und zeitlich begrenzt"
   - label: "Engagement"
-    value: "€500k - €3M+ Projekt; 3-6 Monate für typische Inferenz-Fleet, 6-12 Monate für Full-Stack; optionaler Managed-Retainer post-Deployment"
+    value: "Projekt, Angebot nach RFP; 3-6 Monate für typische Inferenz-Fleet, 6-12 Monate für Full-Stack; optionaler Managed-Retainer post-Deployment"
 faq:
   - q: "Worauf basiert die Ænix Platform AI/ML Edition?"
     a: "Sie basiert auf Cozystack, einem Open-Source-CNCF-Projekt unter Apache 2.0, das Aenix erstellt hat und pflegt. Cozystack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage. Die AI/ML Edition ergänzt dies um Multi-Tenant-GPU-Scheduling, Service-APIs und KI-Blueprints."
@@ -34,7 +34,7 @@ faq:
   - q: "Welche GPUs und Modelle werden unterstützt?"
     a: "Unterstützt werden H100, H200, L40S, A100 und B100/B200 (Blackwell) sowie CPU-only und alternative Beschleuniger wie AMD MI Series und Intel Gaudi. Vor-deployte Open-Weight-Modelle umfassen die Familien Llama, Mistral, Qwen, DeepSeek, Phi und Gemma; Sizing-Referenzen reichen von 7B bis 405B in Single-Card-, Multi-Card- und Multi-Node-Konfigurationen."
   - q: "Was kostet die AI/ML Edition und wie läuft ein Engagement ab?"
-    a: "Das Engagement liegt typischerweise bei €500k - €3M+ pro Projekt mit optionalem Managed-Retainer nach dem Deployment. Es startet mit einem kostenlosen 30-Minuten-Discovery-Call, gefolgt von einem Architektur-Review, einem Pilot-Engagement (3-6 Monate) und dem vollständigen Build (6-12 Monate je nach Workload-Umfang)."
+    a: "Das Engagement liegt bei einem nach RFP angebotenen Projekt mit optionalem Managed-Retainer nach dem Deployment. Es startet mit einem kostenlosen 30-Minuten-Discovery-Call, gefolgt von einem Architektur-Review, einem Pilot-Engagement (3-6 Monate) und dem vollständigen Build (6-12 Monate je nach Workload-Umfang)."
 ---
 
 **KI-Plattform-Automatisierung out-of-the-Box. Standard-KI-Workloads, Service-APIs und fertige Blueprints, Datenbanken, Apps und Modelle — damit Ihr KI-Team von der Idee zu laufenden Jobs schneller kommt. Multi-Tenant-GPU-Scheduling, Vector-DBs, Souveränitätskontrollen inklusive. Gebaut für KI-native Organisationen und regulierte KI-Deployments at scale.**
@@ -109,7 +109,7 @@ Produktisierte Patterns für Migration von Hyperscaler-KI (AWS Bedrock, Azure Op
 
 ## Pricing
 
-Pricing auf Anfrage — €500k - €3M+ Projekt; Managed-Retainer post-Deployment.
+Projekt plus Managed-Retainer nach dem Deployment, Angebot nach RFP.
 
 [AI/ML Edition diskutieren →](/de/kontakt/?edition=ai-ml)
 

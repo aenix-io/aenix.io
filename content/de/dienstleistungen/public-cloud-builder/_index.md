@@ -23,7 +23,7 @@ quick_facts:
   - label: "Zielgruppe"
     value: "Hosting-Anbieter, Telekommunikations-Operatoren, regionale Betreiber und branchenspezifische Clouds (Finanz, Regierung, KI)"
   - label: "Produkt"
-    value: "Ænix Platform Public Cloud Edition (Multi-Region, Cloud-like UX, Multi-Hypervisor) und ISP Edition (WHMCS-integriert, produktisierter Installer, ab €1.3k/Monat)"
+    value: "Ænix Platform Public Cloud Edition (Multi-Region, Cloud-like UX, Multi-Hypervisor) und ISP Edition (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat)"
   - label: "Technologie"
     value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Engagement"
@@ -36,7 +36,7 @@ faq:
   - q: "Für wen eignet sich diese Dienstleistung?"
     a: "Für Hosting-Anbieter beim Up-Market-Move von VPS/Dedicated Servers, Telekommunikations-Operatoren mit Enterprise-Cloud-Launch, regionale Betreiber in souveränitätsrelevanten Jurisdiktionen sowie branchenspezifische Clouds für Finanz-, Regierungs- oder KI-Workloads."
   - q: "Welche Ænix-Platform-Edition passt zu meinem Vorhaben?"
-    a: "Die Public Cloud Edition richtet sich an große Public-Cloud-Betreiber mit Multi-Region, Cloud-like UX und Multi-Hypervisor. Die ISP Edition passt zu kleinen bis mittleren Hosting-Anbietern und regionalen Clouds; sie ist WHMCS-integriert, bringt einen produktisierten Installer mit und startet ab €1.3k/Monat."
+    a: "Die Public Cloud Edition richtet sich an große Public-Cloud-Betreiber mit Multi-Region, Cloud-like UX und Multi-Hypervisor. Die ISP Edition passt zu kleinen bis mittleren Hosting-Anbietern und regionalen Clouds; sie ist WHMCS-integriert, bringt einen produktisierten Installer mit und startet ab 1.250 USD/Monat."
   - q: "Wie ist das Engagement strukturiert?"
     a: "Es beginnt mit einem kostenlosen Discovery-Call (30 min), gefolgt von einem Architektur- und Produkt-Readiness-Assessment (4-8 Wochen) mit Produkt- und GTM-Schwerpunkt, einer Implementation über 6-18 Monate und optional einem Managed-Services-Arrangement während des frühen Customer-Ramp."
   - q: "Entsteht durch die Open-Source-Foundation ein Vendor-Lock-in?"
@@ -47,7 +47,7 @@ faq:
 
 Aenix baut kundenseitige Public-Cloud-Produkte auf Cozystack — der Open-Source-Kubernetes-nativen Plattform, die Ænix Platform ISP Edition Deployments bei regionalen Hosting-Anbietern und mehrere weitere regionale Cloud-Launches antreibt.
 
-> **Passt zu:** **[Ænix Platform Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab €1.3k/Monat).
+> **Passt zu:** **[Ænix Platform Public Cloud Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[ISP Edition](/de/produkte/aenix-platform/isp-edition/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

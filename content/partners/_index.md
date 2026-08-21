@@ -149,7 +149,7 @@ Up to 40% on Ænix Platform license + support tier sales. Margin tier depends on
 
 ### Which Editions can I sell?
 
-All five — Public Cloud, ISP, Enterprise, IDP, AI/ML. Plus Pure Cozystack with Ænix Support entry tier. Most regional partners start with ISP Edition (most productized; entry from €1.3k/month) and add Enterprise / Public Cloud Editions as their team builds up.
+All five — Public Cloud, ISP, Enterprise, IDP, AI/ML. Plus Pure Cozystack with Ænix Support entry tier. Most regional partners start with ISP Edition (most productized; entry from $1,250/month) and add Enterprise / Public Cloud Editions as their team builds up.
 
 ### Is there exclusivity?
 

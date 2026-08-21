@@ -29,11 +29,11 @@ Plus Engagement-Zusätze (Platform Readiness Assessment, Pilot, Full Build, Mana
 
 | Edition | Für | Engagement-Größe |
 |---|---|---|
-| **Public Cloud Edition** | Große Public Clouds, große Banken mit eigener Cloud, große Telcos | €1M - €10M+ mehrjährig |
-| **ISP Edition** | Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren | Produktisiert — Entry ab €1.3k / $1,250 / Monat |
-| **Enterprise Edition** | Regulierte Unternehmen (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | €500k - €5M+ mehrjährig |
-| **IDP Edition** | Produkt- / SaaS-Organisationen, die in Developer Experience investieren | €300k - €2M Projekt; Managed-Retainer |
-| **AI/ML Edition** | KI-lastige Organisationen, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen | €500k - €3M+ Projekt; Managed-Retainer |
+| **Public Cloud Edition** | Große Public Clouds, große Banken mit eigener Cloud, große Telcos | Mehrjähriges Programm, Angebot nach RFP |
+| **ISP Edition** | Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren | Produktisiert — Preisliste, ab 1.250 USD / Monat pro 10 Nodes |
+| **Enterprise Edition** | Regulierte Unternehmen (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | Mehrjähriges Programm, Angebot nach RFP |
+| **IDP Edition** | Produkt- / SaaS-Organisationen, die in Developer Experience investieren | Projekt plus Managed-Retainer, Angebot nach RFP |
+| **AI/ML Edition** | KI-lastige Organisationen, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen | Projekt, Angebot nach RFP; Managed-Retainer |
 
 Plus **Entry-Tier — Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
 
@@ -81,7 +81,7 @@ Pricing pro 10 physikalische Nodes / Monat. Jahresverträge: 20% Rabatt.
 
 5-10 Tage Festpreis-Engagement covering Stakeholder-Interviews, aktuelle-Architektur-Dokumentation, Gap-Analyse vs Ziel-Ænix-Platform-Architektur, Edition-Empfehlung, Migrations-Roadmap, Risiko-Register.
 
-**Kosten:** Typisch €20-50k (Scope-abhängig).
+**Kosten:** Festpreis, vor Beginn vereinbart (Scope-abhängig).
 
 [Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)
 
@@ -89,13 +89,13 @@ Pricing pro 10 physikalische Nodes / Monat. Jahresverträge: 20% Rabatt.
 
 3-6 Monate Projekt auf definiertem Slice (eine Workload-Klasse, eine Kundenkohorte, ein Standort).
 
-**Kosten:** Typisch €100-300k (Scope-abhängig).
+**Kosten:** Angebot nach RFP, sobald der Scope definiert ist.
 
 ### Vollständiger Edition-Build
 
 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML Deployments. Wochen-zu-live für ISP Edition mit produktisiertem Installer.
 
-**Kosten:** ISP Edition projektbasiert auf monatlichem Support; Public Cloud / Enterprise / IDP / AI/ML €500k - €10M+ Scope-abhängig.
+**Kosten:** ISP Edition projektbasiert auf monatlichem Support; Public Cloud / Enterprise / IDP / AI/ML nach RFP.
 
 ### Managed Operations
 
@@ -119,7 +119,7 @@ Passen Sie Node-Anzahl und Service-Anzahl an, um Ihrem Szenario zu entsprechen.
 
 ## Public Sector / Regierungs-Beschaffung
 
-Für Regierungen und souveräne Cloud-Konsortien engagiert Aenix durch öffentliche Beschaffungsprozesse (RFI / RFP). AENIX s.r.o. (Tschechien) wickelt EU-Beschaffung ab; AENIX INC (Delaware) wickelt US-Beschaffung ab. Engagement-Größe €2M - €10M+ für mehrjährige Programme.
+Für Regierungen und souveräne Cloud-Konsortien engagiert Aenix durch öffentliche Beschaffungsprozesse (RFI / RFP). AENIX s.r.o. (Tschechien) wickelt EU-Beschaffung ab; AENIX INC (Delaware) wickelt US-Beschaffung ab. Mehrjährige Programme werden im Beschaffungsverfahren bepreist.
 
 [Sovereign Cloud Builder Service →](/de/dienstleistungen/sovereign-cloud-builder/)
 

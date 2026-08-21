@@ -24,7 +24,7 @@ faq:
     a: "The defaults are realistic mid-market starting points, not your numbers. Replace every field with your own figures — the outputs recompute live and are only as good as the inputs."
 ---
 
-**Four interactive calculators for the economics of running your own cloud platform. Model a VMware exit, compare the total cost of building a platform yourself versus running on Cozystack with Ænix support, size the unit economics of a hosting business, or weigh owning GPUs against renting them. Every input is editable and every result recomputes live — built by Aenix, the team behind Cozystack.**
+**Interactive calculators for the economics of running your own cloud platform. Compare five-year TCO against thirteen on-prem platforms, price a hyperscaler bill against your own hardware, size the unit economics of a hosting business, or weigh owning GPUs against renting them. Every input is editable, every price carries its source and date, and every result recomputes live — built by Aenix, the team behind Cozystack.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -33,21 +33,35 @@ faq:
 
 ---
 
-## VMware exit savings
+## Platform TCO — Cozystack vs 13 on-prem platforms
 
-Model what a VMware/VCF renewal costs versus an open-platform alternative — annual saving, three-year net, and migration payback.
+The full model: five-year total cost of ownership against VMware (VCF / VVF / vSphere), Nutanix, OpenShift (OVE and Container Platform), Proxmox VE, OpenStack, CloudStack, OpenNebula, Harvester, Rancher and Virtuozzo. Three cost articles — software, one-time migration, personnel. Every default price carries its source, date and nature (vendor list, third-party, derived, owner estimate), and each comparison states where the other platform wins.
 
-{{< vmware-calculator >}}
+<div class="cta-row">
+  <a class="cta-primary" href="/tco-calculator/">Open TCO calculator →</a>
+  <a class="cta-secondary" href="/tco-calculator/methodology/">Methodology and sources →</a>
+</div>
 
-For a deeper, workload-level model, use the **[cloud repatriation TCO worksheet](/resources/cloud-repatriation-tco-worksheet/)** or the standalone **[VMware cost calculator](/resources/vmware-cost-calculator/)**.
+Per-platform breakdowns: [vs VMware](/tco-calculator/vs-vmware/) · [vs Nutanix](/tco-calculator/vs-nutanix/) · [vs OpenShift](/tco-calculator/vs-openshift/) · [vs Proxmox](/tco-calculator/vs-proxmox/) · [vs OpenStack](/tco-calculator/vs-openstack/) · [vs CloudStack](/tco-calculator/vs-cloudstack/) · [vs OpenNebula](/tco-calculator/vs-opennebula/) · [vs Harvester](/tco-calculator/vs-harvester/) · [vs Rancher](/tco-calculator/vs-rancher/) · [vs Virtuozzo](/tco-calculator/vs-virtuozzo/)
 
 ---
 
-## Platform TCO — DIY vs Ænix
+## Cloud repatriation — hyperscaler bill vs your own hardware
 
-Building and running a platform yourself means a platform-engineering team plus proprietary-stack licenses. This compares that against running on Cozystack with Ænix support.
+Already on AWS, Azure or GCP. Price the same workload footprint — vCPU, RAM, block and object storage, managed Kubernetes, databases, GPUs, egress, cross-AZ — against running it on Cozystack on owned or rented hardware, with commitment and enterprise discounts on the cloud side and hardware, power, PUE, colocation and operations staffing on yours.
 
-{{< platform-tco-calculator >}}
+<div class="cta-row">
+  <a class="cta-primary" href="/cloud-calculator/">Open repatriation calculator →</a>
+  <a class="cta-secondary" href="/resources/cloud-repatriation-tco-worksheet/">Get the worksheet →</a>
+</div>
+
+---
+
+## VMware exit — quick estimate
+
+A four-input sanity check on a VMware/VCF renewal: annual saving, three-year net, migration payback. For the sourced five-year model with quote sensitivity, use [Cozystack vs VMware](/tco-calculator/vs-vmware/) above.
+
+{{< vmware-calculator >}}
 
 ---
 
@@ -75,6 +89,7 @@ See the **[AI/ML Edition](/products/aenix-platform/ai-ml-edition/)** and **[Sove
 
 ## How these calculators work
 
+- **Two kinds of tool:** the TCO, repatriation and ISP calculators are full models — every price carries a source and a date, the assumptions are editable, and each produces a PDF report you can hand to finance. The VMware-exit and GPU blocks on this page are quick four-input estimates, useful for a first sanity check and nothing more.
 - **What they are:** independent, editable estimators for the economics of running a cloud platform on an open foundation.
 - **Who they're for:** infrastructure, finance and procurement teams scoping a platform build, a VMware exit, a hosting business, or a GPU investment.
 - **The target platform:** [Cozystack](https://cozystack.io), Apache 2.0 — no per-core/per-socket license. You pay for support and/or the build.

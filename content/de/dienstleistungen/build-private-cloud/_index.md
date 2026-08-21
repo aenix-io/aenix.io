@@ -25,7 +25,7 @@ quick_facts:
   - label: "Zielgruppe"
     value: "Teams mit Plattform-Engineering-Funktion und konkretem Trigger: VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads oder Kostenoptimierung"
   - label: "Engagement-Phasen"
-    value: "Discovery-Call, Platform Readiness Assessment (5-10 Tage, €20-50k), Pilot (3-6 Monate), vollständiger Build (9-18 Monate), optional Managed Operations"
+    value: "Discovery-Call, Platform Readiness Assessment (5-10 Tage, Festpreis vorab vereinbart), Pilot (3-6 Monate), vollständiger Build (9-18 Monate), optional Managed Operations"
   - label: "Produkt"
     value: "Ænix Platform — produktisierte Cloud-in-a-Box in fünf Editions; Preise Basic 1.250 $/Mon. (10 Nodes) / Standard 3.000 $ / Plus 5.500 $ / Enterprise Custom"
 faq:
@@ -36,7 +36,7 @@ faq:
   - q: "Welche Technologie steckt hinter der Aenix Private Cloud?"
     a: "Cozystack (Apache 2.0). KubeVirt vereint VMs und Container auf einer Kubernetes-API, Cilium (eBPF) liefert das Netzwerk, LINSTOR/DRBD den replizierten Storage und das Tenant-CRD die Mandantenfähigkeit. Alles auf Standard-Kubernetes, ohne proprietären Lock-in."
   - q: "Wie läuft ein Engagement mit Aenix ab?"
-    a: "In Phasen: kostenloser Discovery-Call (30 min), Platform Readiness Assessment (5-10 Tage, Festpreis €20-50k), Pilot-Engagement (3-6 Monate), vollständiger Build (9-18 Monate) und optional laufende Managed Operations als Retainer."
+    a: "In Phasen: kostenloser Discovery-Call (30 min), Platform Readiness Assessment (5-10 Tage, Festpreis vorab vereinbart), Pilot-Engagement (3-6 Monate), vollständiger Build (9-18 Monate) und optional laufende Managed Operations als Retainer."
   - q: "Was kostet die Ænix Platform?"
     a: "Die produktisierte Ænix Platform gibt es in Editions mit gestaffelten Preisen: Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Aufwand. Der projektbasierte Build wird separat als Assessment, Pilot und Vollausbau kalkuliert."
   - q: "Entsteht durch Cozystack ein Vendor-Lock-in?"

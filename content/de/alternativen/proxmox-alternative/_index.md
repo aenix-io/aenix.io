@@ -22,14 +22,14 @@ quick_facts:
   - label: "Mandantenfähigkeit"
     value: "Tenant-CRD statt Namespace plus Berechtigungen wie bei Proxmox"
   - label: "Engagement"
-    value: "Ænix Platform Support-Tiers ab €1.3k/Monat (10 Nodes); Standard, Plus und Enterprise verfügbar"
+    value: "Ænix Platform Support-Tiers ab 1.250 USD/Monat (10 Nodes); Standard, Plus und Enterprise verfügbar"
 faq:
   - q: "Ist Cozystack eine echte Proxmox-Alternative?"
     a: "Nur oberhalb der Designziele von Proxmox VE. Für Single-Tenant, VM-fokussierte Bereitstellungen unter etwa 50 Hosts bleibt Proxmox die richtige Wahl. Cozystack passt, wenn Mandantenfähigkeit at scale, verwaltete Datenbanken, GPU-Workloads oder eine regulierte Multi-Customer-Cloud gefordert sind."
   - q: "Wie verwaltet Cozystack VMs im Vergleich zu Proxmox?"
     a: "Proxmox VE nutzt KVM und LXC mit eigener Steuerungsebene. Cozystack nutzt KubeVirt und betreibt VMs sowie Container über eine einheitliche Kubernetes-API. So lassen sich VMs, verwaltete Datenbanken, S3 und Kubernetes-Mandanten in einer Plattform kombinieren."
   - q: "Welche Lizenz hat Cozystack und was kostet es?"
-    a: "Cozystack steht unter Apache 2.0, ohne CPU- oder Core-basierte Lizenzierung. Aenix bietet kommerziellen Support für die produktisierte Ænix Platform ab €1.3k/Monat (10 Nodes), mit Standard-, Plus- und Enterprise-Tiers für größere Bereitstellungen."
+    a: "Cozystack steht unter Apache 2.0, ohne CPU- oder Core-basierte Lizenzierung. Aenix bietet kommerziellen Support für die produktisierte Ænix Platform ab 1.250 USD/Monat (10 Nodes), mit Standard-, Plus- und Enterprise-Tiers für größere Bereitstellungen."
   - q: "Unterstützt Cozystack Mandantenfähigkeit besser als Proxmox?"
     a: "Proxmox bildet Mandanten über Namespaces und Berechtigungen ab. Cozystack nutzt ein dediziertes Tenant-CRD als First-Class-Konzept, das für Service-Provider-Skala mit Abrechnung pro Mandant und Multi-Cluster-Föderation ausgelegt ist."
   - q: "Wie behandelt Cozystack GPU-Workloads?"
@@ -52,7 +52,7 @@ Cozystack ist die Open-Source-Plattform, die für diese nächste Stufe gebaut wu
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, multi-tenant by design, produktisierter Installer. Ab €1.3k/Monat Support-Tier.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, multi-tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

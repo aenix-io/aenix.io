@@ -24,7 +24,7 @@ quick_facts:
   - label: "Service-Katalog"
     value: "Cozystack: VMs (KubeVirt) + Kubernetes + Datenbanken + S3 + GPU; Proxmox: VMs + LXC"
   - label: "Engagement"
-    value: "Ænix Platform Support ab €1.3k/Monat (ISP Edition); Aenix bietet produktisierte Plattform plus Services"
+    value: "Ænix Platform Support ab 1.250 USD/Monat (ISP Edition); Aenix bietet produktisierte Plattform plus Services"
 faq:
   - q: "Was ist der Hauptunterschied zwischen Cozystack und Proxmox VE?"
     a: "Proxmox VE ist eine SMB-Virtualisierungsplattform für internes IT mit VMs und LXC. Cozystack ist ein Multi-Tenant-Cloud-Builder auf Kubernetes-Basis mit strukturellem Tenant CRD, einem breiten Service-Katalog (Datenbanken, S3, GPU) und Billing-Integration. Sie zielen auf unterschiedliche Skalen und Anwendungsfälle."
@@ -37,12 +37,12 @@ faq:
   - q: "Wie löst Cozystack Mandantenfähigkeit besser als Proxmox?"
     a: "Cozystack nutzt eine strukturelle Mandantentrennung über das Tenant CRD, sodass jeder Mandant isolierte Ressourcen erhält. Proxmox bietet nur permissions-basierte Trennung, die für echte Multi-Tenant-Clouds mit externen Kunden limitiert ist."
   - q: "Was bietet Aenix zusätzlich zum Open-Source-Cozystack?"
-    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und bietet die produktisierte Ænix Platform — etwa die ISP Edition mit WHMCS-Billing-Integration und dem white-label cozyportal — plus kommerziellen Support ab €1.3k/Monat für Anbieter, die Proxmox überwachsen."
+    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und bietet die produktisierte Ænix Platform — etwa die ISP Edition mit WHMCS-Billing-Integration und dem white-label cozyportal — plus kommerziellen Support ab 1.250 USD/Monat für Anbieter, die Proxmox überwachsen."
 ---
 
 **Unterschiedliche Skalen. Unterschiedliche Designziele. Beide Open Source.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. Ab €1.3k/Monat Support-Tier.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="compare-elevated compare-elevated--col3">
 

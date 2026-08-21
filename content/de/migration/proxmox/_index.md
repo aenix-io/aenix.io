@@ -26,7 +26,7 @@ quick_facts:
   - label: "Migrations-Zeitrahmen"
     value: "ISP Edition über produktisierten Installer in Wochen live; Workload-Migration in Kohorten über 3 bis 6 Monate für mittelgroße Estates"
   - label: "Engagement"
-    value: "Ænix Platform ISP Edition ab €1.3k/Monat Support-Tier, mit WHMCS-integriertem Billing und White-Label-Customer-Portal"
+    value: "Ænix Platform ISP Edition ab 1.250 USD/Monat Support-Tier, mit WHMCS-integriertem Billing und White-Label-Customer-Portal"
 
 faq:
   - q: "Wann lohnt sich eine Migration von Proxmox zu Cozystack?"
@@ -36,7 +36,7 @@ faq:
   - q: "Wie lange dauert eine Proxmox-zu-Cozystack-Migration?"
     a: "Der produktisierte Installer bringt die ISP Edition innerhalb von Wochen live. Die eigentliche Workload-Migration erfolgt in Kohorten über 3 bis 6 Monate für mittelgroße Estates, um Risiko und Ausfallzeiten zu begrenzen."
   - q: "Welche Cozystack-Edition passt für Hosting-Anbieter, die Proxmox ablösen?"
-    a: "Die Ænix Platform ISP Edition — eine turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds. Sie bietet WHMCS-integriertes Billing, ist Multi-Tenant by design und kommt mit produktisiertem Installer. Support ab €1.3k/Monat."
+    a: "Die Ænix Platform ISP Edition — eine turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds. Sie bietet WHMCS-integriertes Billing, ist Multi-Tenant by design und kommt mit produktisiertem Installer. Support ab 1.250 USD/Monat."
   - q: "Wie wird Cozystack lizenziert und welche Folgekosten gibt es?"
     a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Es gibt keine pro-Socket- oder pro-Core-Gebühren wie bei proprietären Virtualisierungs-Stacks. Aenix verkauft die produktisierte Ænix Platform plus Services in vier Tiers: Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise Custom."
   - q: "Bringt Cozystack neben VMs auch weitere Cloud-Dienste mit?"
@@ -45,7 +45,7 @@ faq:
 
 **Proxmox VE ist exzellent at SMB-Skala. Wenn Deployments zu Multi-Tenant-Cloud-Buildern oder Service-Provider-Modellen wachsen, strapaziert das operative Modell. Aenix führt Proxmox-zu-Cozystack-Migrationen end-to-end durch.**
 
-> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab €1.3k/Monat Support-Tier.
+> **Passt zu:** **[Ænix Platform ISP Edition](/de/produkte/aenix-platform/isp-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

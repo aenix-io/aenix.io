@@ -24,10 +24,10 @@ quick_facts:
   - label: "Architecture"
     value: "Kubernetes-native: KubeVirt (VMs and containers on one Kubernetes API), Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy, plus cozyportal, VictoriaMetrics, and VictoriaLogs."
   - label: "Time to live"
-    value: "Production-ready in weeks via the productized installer and migration tooling; entry support tier from EUR 1.3k/month."
+    value: "Production-ready in weeks via the productized installer and migration tooling; entry support tier from $1,250/month."
 faq:
   - q: "How is ISP Edition different from running open-source Cozystack ourselves?"
-    a: "Cozystack is the engine; ISP Edition adds the commercial surfaces a hosting business needs: WHMCS integration, full billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, migration tooling, and an enterprise support tier from EUR 1.3k/month."
+    a: "Cozystack is the engine; ISP Edition adds the commercial surfaces a hosting business needs: WHMCS integration, full billing, a white-label customer portal, payment processing, automatic tenant lock and suspension, migration tooling, and an enterprise support tier from $1,250/month."
   - q: "Can we keep our own billing system instead of WHMCS?"
     a: "Yes. ISP Edition supports two integration modes: WHMCS as the customer-facing front with Cozystack as the substrate, or cozyportal as the front with WHMCS as the billing back-end. Custom billing integrations are also supported."
   - q: "What does ISP Edition replace?"
@@ -84,7 +84,7 @@ Proprietary modules (beyond open-source Cozystack) shipped without the long wait
 
 ### Enterprise support
 
-24/7 support with named technical account manager (higher tiers). Entry tier from €1.3k/month.
+24/7 support with named technical account manager (higher tiers). Entry tier from $1,250/month.
 
 ### Service catalog beyond VMs
 
@@ -103,7 +103,7 @@ Managed databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 | Billing | DIY integration | WHMCS-native + Stripe + regional providers |
 | Multi-tenancy | Project model — limited | Tenant CRD with quotas / RBAC / observability per tenant |
 | Migration from VMware | Heavy lift | Productized modules + Aenix expertise |
-| Vendor support | Community + add-ons | Aenix enterprise support from €1.3k/month |
+| Vendor support | Community + add-ons | Aenix enterprise support from $1,250/month |
 | Upgrade cadence | Manual / risky | GitOps-managed, low-risk |
 
 ---
@@ -118,7 +118,7 @@ These customers use Ænix Platform ISP Edition to deliver multi-tenant cloud pro
 
 ## Pricing
 
-**Entry from €1.3k/month support tier.** Higher tiers and project-based migration / build engagements priced on request via discovery call.
+**Entry from $1,250/month support tier.** Higher tiers and project-based migration / build engagements priced on request via discovery call.
 
 [Discuss ISP Edition pricing →](/contact/?edition=isp)
 

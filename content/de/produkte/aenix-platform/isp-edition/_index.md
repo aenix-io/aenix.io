@@ -5,7 +5,7 @@ type: "page"
 language: "de"
 hreflang_en: /products/aenix-platform/isp-edition/
 direct_answer: |
-  **Die Ænix Platform ISP Edition ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Sie bündelt Hosting-Panel, kundenseitiges Portal (cozyportal), Billing, Payment-Processing, Tenant-Suspension und Support in einem produktisierten Stack auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Die Plattform ersetzt OpenStack, VMware Cloud Director, Virtuozzo und eigene In-House-Panels, ist WHMCS-integriert und in Wochen produktionsreif. Aenix liefert Enterprise-Support ab €1.3k/Monat sowie produktisierte Migrations-Module und Engagement-Expertise für den Umstieg von VMware, OpenStack, Virtuozzo und OpenNebula.**
+  **Die Ænix Platform ISP Edition ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Sie bündelt Hosting-Panel, kundenseitiges Portal (cozyportal), Billing, Payment-Processing, Tenant-Suspension und Support in einem produktisierten Stack auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Die Plattform ersetzt OpenStack, VMware Cloud Director, Virtuozzo und eigene In-House-Panels, ist WHMCS-integriert und in Wochen produktionsreif. Aenix liefert Enterprise-Support ab 1.250 USD/Monat sowie produktisierte Migrations-Module und Engagement-Expertise für den Umstieg von VMware, OpenStack, Virtuozzo und OpenNebula.**
 quick_facts:
   - label: "Was es ist"
     value: "Schlüsselfertige Cloud-in-a-Box für Hosting-Anbieter und MSPs: Panel, Billing, Portal, Payments und Support auf Kubernetes-nativer Basis (Cozystack)"
@@ -20,12 +20,12 @@ quick_facts:
   - label: "Ersetzt"
     value: "OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, eigene In-House-Panels"
   - label: "Pricing"
-    value: "Enterprise-Support ab €1.3k/Monat; höhere Tiers und Migrations-/Build-Engagements auf Anfrage"
+    value: "Enterprise-Support ab 1.250 USD/Monat; höhere Tiers und Migrations-/Build-Engagements auf Anfrage"
 faq:
   - q: "Wie unterscheidet sich die ISP Edition vom Selbstbetrieb von Open-Source-Cozystack?"
     a: "Cozystack liefert den Motor, die ISP Edition das fertige Auto: WHMCS-Integration, Billing, Kunden-Portal, Payment-Processing, Tenant-Suspension und Enterprise-Support — alle Surfaces, die ein echtes Cloud-Geschäft braucht. Cozystack bleibt Apache-2.0-Open-Source; die ISP Edition ergänzt produktisierte Module und einen Support-Tier."
   - q: "Was kostet die ISP Edition?"
-    a: "Der Entry-Support-Tier startet ab €1.3k/Monat und umfasst direkten Support-Kanal, Zugang zu ISP-spezifischen Modulen und Migrations-Expertise. Höhere Tiers bringen einen Named Technical Account Manager. Migrations- und Build-Engagements werden projektbasiert im Discovery-Call kalkuliert."
+    a: "Der Entry-Support-Tier startet ab 1.250 USD/Monat und umfasst direkten Support-Kanal, Zugang zu ISP-spezifischen Modulen und Migrations-Expertise. Höhere Tiers bringen einen Named Technical Account Manager. Migrations- und Build-Engagements werden projektbasiert im Discovery-Call kalkuliert."
   - q: "Können wir unser eigenes Billing statt WHMCS nutzen?"
     a: "Ja. Es gibt zwei Integrationsmodi: WHMCS als kundenseitiges Frontend mit Cozystack als Backend, oder cozyportal als Frontend mit WHMCS als Billing-Backend. Custom-Billing wird bei Bedarf unterstützt, da die Plattform vollständige Nutzungsdaten über eine klare API bereitstellt."
   - q: "Von welchen Plattformen migriert die ISP Edition?"
@@ -82,7 +82,7 @@ Proprietäre Module (über Open-Source-Cozystack hinaus) ausgeliefert ohne die l
 
 ### Enterprise-Support
 
-24/7-Support mit Named Technical Account Manager (höhere Tiers). Entry-Tier ab €1.3k/Monat.
+24/7-Support mit Named Technical Account Manager (höhere Tiers). Entry-Tier ab 1.250 USD/Monat.
 
 ### Service-Katalog jenseits VMs
 
@@ -101,7 +101,7 @@ Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 | Billing | DIY-Integration | WHMCS-nativ + Stripe + regionale Anbieter |
 | Multi-Tenancy | Project-Modell — limitiert | Tenant CRD mit Quotas / RBAC / Observability per Tenant |
 | Migration von VMware | Schwere Aufgabe | Produktisierte Module + Aenix-Expertise |
-| Vendor-Support | Community + Add-ons | Aenix Enterprise-Support ab €1.3k/Monat |
+| Vendor-Support | Community + Add-ons | Aenix Enterprise-Support ab 1.250 USD/Monat |
 | Upgrade-Kadenz | Manuell / risikoreich | GitOps-managed, low-risk |
 
 ---
@@ -116,7 +116,7 @@ Diese Kunden nutzen Ænix Platform ISP Edition, um Multi-Tenant-Cloud-Produkte a
 
 ## Pricing
 
-**Entry ab €1.3k/Monat Support-Tier.** Höhere Tiers und projektbasierte Migrations- / Build-Engagements auf Anfrage via Discovery-Call.
+**Entry ab 1.250 USD/Monat Support-Tier.** Höhere Tiers und projektbasierte Migrations- / Build-Engagements auf Anfrage via Discovery-Call.
 
 [ISP Edition Pricing diskutieren →](/de/kontakt/?edition=isp)
 

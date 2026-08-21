@@ -83,7 +83,7 @@ community_champions:
 - **COO:** Timur Tukaev
 - **Open-Source-Pedigree:** Wir haben Cozystack erstellt — CNCF-Projekt, Apache 2.0, derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026
 - **Kommerzielles Produkt:** Ænix Platform — fünf Editions (Public Cloud / ISP / Enterprise / IDP / AI/ML), plus Pure Cozystack mit Ænix-Support Entry-Tier
-- **Engagement-Skala:** ISP Edition Entry ab €1.3k/Monat Support-Tier; Public Cloud / Enterprise Full Builds €500k - €10M+ mehrjährig
+- **Engagement-Skala:** ISP Edition Entry ab 1.250 USD/Monat Support-Tier; Public Cloud / Enterprise Full Builds nach RFP
 - **Phase:** Frühe kommerzielle Reise — produktionsreife Technologie, wachsende Sales-Motion
 
 ---
@@ -102,7 +102,7 @@ Wir bauen turnkey Cloud-Plattformen für Organisationen, die echte Cloud-Infrast
 
 Plus ein **Entry-Tier** — **Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
 
-Wir engagieren at scale: von €1.3k/Monat produktisiertem Support bis €10M+ mehrjährigen Plattform-Builds.
+Wir engagieren at scale: von 1.250 USD/Monat produktisiertem Support bis zu mehrjährigen Plattform-Builds.
 
 ---
 
@@ -155,12 +155,12 @@ Das ist eine bewusste Sequenz: **Technologie zuerst, Community zweitens, Kommerz
 Aenix-Engagements folgen typischerweise dieser Sequenz:
 
 1. **Discovery-Call** (kostenlos, 30 min) — Fit, Scope, regulatorischer Kontext, Edition-Match bestätigen
-2. **Platform Readiness Assessment** (5-10 Tage, Festpreis €20-50k) — aktuelle-Zustand-Audit, Gap-Analyse, Edition-Empfehlung, Migrations-Roadmap
-3. **Pilot-Engagement** (3-6 Monate, €100-300k) — definierter Slice, validierter Business Case, Kunden-seitiges Lernen
-4. **Vollständiger Edition-Build** — Wochen für ISP Edition mit produktisiertem Installer; 9-18 Monate (€500k - €10M+) für Public Cloud / Enterprise Full Deployments
+2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — aktuelle-Zustand-Audit, Gap-Analyse, Edition-Empfehlung, Migrations-Roadmap
+3. **Pilot-Engagement** (3-6 Monate, Angebot nach RFP) — definierter Slice, validierter Business Case, Kunden-seitiges Lernen
+4. **Vollständiger Edition-Build** — Wochen für ISP Edition mit produktisiertem Installer; 9-18 Monate für Public Cloud / Enterprise Full Deployments, Angebot nach RFP
 5. **Managed Operations** (laufender Retainer) — optional post-Deployment
 
-Für Regierungen und souveräne Cloud-Builder laufen Engagements durch öffentliche Beschaffung (RFI / RFP) und können bis €10M+ reichen.
+Für Regierungen und souveräne Cloud-Builder laufen Engagements durch öffentliche Beschaffung (RFI / RFP) und werden im Beschaffungsverfahren selbst bepreist.
 
 [Pricing- und Engagement-Details →](/de/preise/)
 

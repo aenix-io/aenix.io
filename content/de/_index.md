@@ -18,7 +18,7 @@ language: "de"
 
 - **Open-Core-Unternehmen.** Wir erstellen und pflegen Cozystack — ein CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026) — und kommerzialisieren es als Ænix Platform.
 - **Fünf Editions** passend zum Buyer-Profil: Public Cloud / ISP / Enterprise / IDP / AI/ML. Plus Entry-Tier — Pure Cozystack mit Ænix-Support — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
-- **Engagement-Größe:** ISP Edition Entry ab €1.3k/Monat Support-Tier; Public Cloud / Enterprise Full Builds €500k - €10M+ mehrjährig.
+- **Engagement-Größe:** ISP Edition Entry ab 1.250 USD/Monat Support-Tier; Public Cloud / Enterprise Full Builds nach RFP.
 - **Regulatorischer Fokus:** DORA (in Kraft seit 2025-01-17), NIS2 (Umsetzungsfrist 2024-10-17), nationale Souveränitäts-Mandate.
 - **Architektur:** Kubernetes-nativ, Multi-Tenant Tenant CRD, kundenkontrollierte Hardware. Aufgebaut auf Talos + Kubernetes + KubeVirt + Cilium + LINSTOR + cozyportal + VictoriaMetrics + VictoriaLogs.
 - **Geografie:** AENIX s.r.o. (Tschechien) + AENIX INC (Delaware), mit Engineering-Teams in der EU und Zentralasien.
@@ -34,7 +34,7 @@ language: "de"
 
 Multi-Hypervisor-Cloud-Control-Plane mit Nutzern, Projekten, Quotas, Cloud-like UX, Multi-Region-Support. Integration mit Drittanbieter-Infrastruktur. Gebaut für große Rechenzentren und Cloud-Anbieter, die Public Clouds starten oder skalieren.
 
-**Engagement:** €1M - €10M+ mehrjährige Programme
+**Engagement:** Mehrjähriges Programm, Angebot nach RFP
 
 [Public Cloud Edition →](/de/produkte/aenix-platform/public-cloud-edition/)
 
@@ -44,7 +44,7 @@ Multi-Hypervisor-Cloud-Control-Plane mit Nutzern, Projekten, Quotas, Cloud-like 
 
 Moderne Alternative zu OpenStack. WHMCS-Integration, Billing-Modul + Templates, Tenant Lock/Suspension, Fast Feature Delivery, Migrations-Expertise von VMware/OpenStack/Virtuozzo.
 
-**Engagement:** Produktisiert — Entry ab **€1.3k/Monat** Support-Tier
+**Engagement:** Produktisiert — Entry ab **1.250 USD/Monat** Support-Tier
 
 [ISP Edition →](/de/produkte/aenix-platform/isp-edition/)
 
@@ -54,7 +54,7 @@ Moderne Alternative zu OpenStack. WHMCS-Integration, Billing-Modul + Templates, 
 
 Private und hybride souveräne Cloud — sicher, automatisiert, einfach erweiterbar. Multi-DC. Eine Control Plane verbindet VMware, OpenNebula, OpenShift und mehr. DORA / NIS2-konform. Inklusive Bildung und Training.
 
-**Engagement:** €500k - €5M+ mehrjährige Plattform-Builds
+**Engagement:** Mehrjähriger Plattform-Build, Angebot nach RFP
 
 [Enterprise Edition →](/de/produkte/aenix-platform/enterprise-edition/)
 
@@ -64,7 +64,7 @@ Private und hybride souveräne Cloud — sicher, automatisiert, einfach erweiter
 
 Internal Developer Platform Layer auf der Cloud — GitLab-Automation, Argo CD Workflows, APIs. Engineers verbringen weniger Zeit mit Routine-Arbeit und mehr Zeit mit Produkt-Auslieferung.
 
-**Engagement:** €300k - €2M Projekt; Managed-Retainer
+**Engagement:** Projekt plus Managed-Retainer, Angebot nach RFP
 
 [IDP Edition →](/de/produkte/aenix-platform/idp-edition/)
 
@@ -74,7 +74,7 @@ Internal Developer Platform Layer auf der Cloud — GitLab-Automation, Argo CD W
 
 KI-Plattform-Automatisierung out-of-the-box: Standard-KI-Workloads, Service-APIs, fertige Blueprints, Datenbanken, Apps und Modelle. Von der Idee zu laufenden Jobs schneller.
 
-**Engagement:** €500k - €3M+ Projekt; Managed-Retainer
+**Engagement:** Projekt, Angebot nach RFP; Managed-Retainer
 
 [AI/ML Edition →](/de/produkte/aenix-platform/ai-ml-edition/)
 
@@ -109,7 +109,7 @@ Unsere Enterprise Edition ist DORA / NIS2-konform by Design. Kundenkontrollierte
 
 ### "Wir modernisieren unser Hosting-Geschäft"
 
-ISP Edition ersetzt OpenStack / VMware Cloud Director / Virtuozzo durch eine turnkey Cloud-Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, erweiterter Service-Katalog. Migration in Kohorten. Produktionsreif in Wochen. Ab €1.3k/Monat.
+ISP Edition ersetzt OpenStack / VMware Cloud Director / Virtuozzo durch eine turnkey Cloud-Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, erweiterter Service-Katalog. Migration in Kohorten. Produktionsreif in Wochen. Ab 1.250 USD/Monat.
 
 [ISP Edition →](/de/produkte/aenix-platform/isp-edition/) | [VMware-Migrations-Hub →](/de/migration/vmware/)
 
@@ -148,7 +148,7 @@ CSI-Driver-Entwicklung, Virtualisierungs-Plattform-Forschung, Public-Cloud / VPS
 ## Wie wir engagieren
 
 1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope und Timeline bestätigen
-2. **Platform Readiness Assessment** (5-10 Tage, Festpreis €20-50k) — Aktuelle Architektur-Audit, Gap-Analyse, Migrations-Roadmap
+2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — Aktuelle Architektur-Audit, Gap-Analyse, Migrations-Roadmap
 3. **Pilot-Engagement** (3-6 Monate) — definierter Slice, validierter Business Case
 4. **Vollständiger Edition-Build** — Wochen für ISP Edition; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML — Produktions-Deployment
 5. **Managed Operations** (laufender Retainer) — Aenix betreibt die Plattform, die Sie operieren, oder hybrid
