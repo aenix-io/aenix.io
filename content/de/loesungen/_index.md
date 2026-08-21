@@ -1,11 +1,11 @@
 ---
 title: "Lösungen"
 description: "Aenix-Lösungen für Cloud-Plattform-Engagements: DORA, NIS2, Datensouveränität, souveräne KI, Cloud-Repatriation, Kostenoptimierung, Hybrid Cloud."
-hero_subtitle: "Regulierungsgetriebene Einstiegspunkte in Cloud-Plattform-Projekte"
+hero_subtitle: "Beginnen Sie bei dem Problem, das Sie hergeführt hat"
 language: "de"
 ---
 
-**Trigger-basierte Einstiegspunkte zu Aenix-Engagements. Finden Sie den Buyer-seitigen Grund, der Sie zu uns bringt, dann springen Sie zur passenden Lösung. Jede Lösung mappt auf spezifische Ænix-Platform-Editions und Engagement-Scope.**
+**Aenix baut und betreibt Cloud-Plattformen auf Hardware, die Sie kontrollieren — für Organisationen, die echte Cloud-Infrastruktur brauchen, aber keinen Hyperscaler darunter. Die meisten kommen aus einem von sechs Gründen hierher: eine Aufsichtsbehörde (DORA, NIS2), eine Souveränitätsanforderung, ein KI-Workload, der das Haus nicht verlassen darf, eine Cloud-Rechnung, die nicht mehr aufgeht, eine VMware-Verlängerung, oder Entwickler, die wochenlang auf eine Umgebung warten. Wählen Sie den passenden Grund — die jeweilige Seite beschreibt Architektur, passende Edition und den Ablauf eines Engagements.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

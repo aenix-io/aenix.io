@@ -111,6 +111,17 @@ AI:
 - [Cozystack vs Proxmox](https://aenix.io/compare/cozystack-vs-proxmox/): When Proxmox is enough; when Ænix Platform fits
 - [Cozystack vs OpenShift](https://aenix.io/compare/cozystack-vs-openshift/): Ecosystem positioning, license, lock-in profile
 
+## TCO calculators (sourced prices, public methodology)
+
+- [Platform TCO calculator](https://aenix.io/tco-calculator/): Five-year TCO, Cozystack vs 13 on-prem platforms; every price carries source, date and source-nature; break-even and the case where the competitor wins
+- [Cozystack vs Nutanix TCO](https://aenix.io/tco-calculator/vs-nutanix/): Nutanix NCI quote sensitivity (~$70-650/core/yr) against Cozystack, with HCL refresh risk
+- [Cozystack vs VMware TCO](https://aenix.io/tco-calculator/vs-vmware/): VCF / VVF / vSphere Standard five-year cost against Cozystack
+- [Cozystack vs OpenShift TCO](https://aenix.io/tco-calculator/vs-openshift/): OVE and Container Platform subscriptions against Cozystack
+- [Cozystack vs Proxmox TCO](https://aenix.io/tco-calculator/vs-proxmox/): Where Proxmox VE stays cheaper, and where it stops
+- [TCO methodology and sources](https://aenix.io/tco-calculator/methodology/): Cost model, formulas, and the provenance of every default
+- [Cloud repatriation calculator](https://aenix.io/cloud-calculator/): AWS / Azure / GCP bill against the same workload on owned or rented hardware
+- [ISP unit-economics calculator](https://aenix.io/isp-calculator/): Monthly P&L per node for providers selling managed services
+
 ## Migration hubs
 
 - [VMware migration](https://aenix.io/migration/vmware/): Strategy + architecture for leaving VMware vSphere / vCloud

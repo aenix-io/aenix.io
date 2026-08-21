@@ -163,6 +163,14 @@ Cozystack is also listed in the [CNCF Landscape](https://landscape.cncf.io) — 
 
 ## How to use Cozystack
 
+### Before either path: what a trial actually costs
+
+There is no `kind` or single-binary demo, and pretending otherwise wastes an evening. Cozystack assumes Talos Linux and a real disk layout, because the storage and networking layers it manages are not simulated.
+
+The smallest honest lab is **three nodes** — physical hosts, or virtual machines with host CPU passthrough, which is what most people use. Per node: 8 cores, 24 GB RAM, a 50 GB system disk and a 256 GB raw secondary disk for the data pool. That is enough for a couple of tenants, a few tenant Kubernetes clusters and some VMs or databases. Three cheap dedicated servers from any provider will do it; so will one workstation with 96 GB of RAM running three VMs.
+
+The [getting-started tutorial](https://cozystack.io/docs/getting-started/) walks the whole path: Talos install via boot-to-talos, cluster bootstrap with Talm, Cozystack install, first tenant, then a VM and a managed database. Expect an afternoon the first time.
+
 ### Path 1: Self-deploy
 
 Cozystack is open source. Install, documentation, community at **[cozystack.io](https://cozystack.io)**. CNCF Slack and Telegram for community support.
