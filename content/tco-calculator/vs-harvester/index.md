@@ -6,8 +6,8 @@ description: "Harvester HCI (free path or SUSE subscription) vs Cozystack. Upgra
 type: "page"
 page_type: "flag-page"
 language: "en"
-date: 2026-08-21
-lastmod: 2026-08-21
+date: 2026-08-22
+lastmod: 2026-08-22
 weight: 30
 robots: "index,follow"
 images: ["img/og/og-tco-vs-harvester.png"]
@@ -25,8 +25,8 @@ related_pages:
      (title, description, self-canonical /tco-calculator/vs-harvester/). -->
 <article class="tco-spoke tco-tier-2">
   <h1>SUSE Harvester vs Cozystack — 5-year TCO</h1>
-  <p class="stamp">Last updated: <time datetime="2026-08-21">2026-08-21</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
-  <p class="lead">Cozystack 5-year TCO for 200 VMs is $366,915 vs Harvester (SUSE) $395,581, at typical negotiated prices, Q3 2026 (including one-time migration costs).</p>
+  <p class="stamp">Last updated: <time datetime="2026-08-22">2026-08-22</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
+  <p class="lead">Cozystack 5-year TCO for 200 VMs is $342,915 vs Harvester (SUSE) $395,581, at typical negotiated prices, Q3 2026 (including one-time migration costs).</p>
   <!-- calculator widget: eager iframe, fixed size (no CLS, §7.2); the app URL stays noindex,indexifembedded -->
   <iframe src="/tco-calculator-app/?vs=harvester" title="Cozystack TCO Calculator — vs Harvester (SUSE)" loading="eager" width="100%" height="900"></iframe>
   <h2>Harvester (SUSE) vs Cozystack at default assumptions</h2>
@@ -47,24 +47,24 @@ related_pages:
       <tr>
         <td>Mid-size — 200 VMs</td>
         <td>$395,581</td>
-        <td>$366,915</td>
-        <td><strong>$28,666</strong> (7%)</td>
-        <td>$31 / VM / mo</td>
-        <td>month 41</td>
+        <td>$342,915</td>
+        <td><strong>$52,666</strong> (13%)</td>
+        <td>$29 / VM / mo</td>
+        <td>month 25</td>
       </tr>
       <tr>
         <td>Enterprise — 1,000 VMs</td>
         <td>$1,535,461</td>
-        <td>$1,666,562</td>
-        <td>−$131,101 (Harvester (SUSE) cheaper)</td>
-        <td>$28 / VM / mo</td>
-        <td>not within horizon</td>
+        <td>$1,514,562</td>
+        <td><strong>$20,899</strong> (1%)</td>
+        <td>$25 / VM / mo</td>
+        <td>month 53</td>
       </tr>
     </tbody>
   </table>
-  <p class="footnote">* Cozystack total includes the one-time migration from Harvester (SUSE) (VMs × $/VM, default $300 — owner estimate, Ænix field data). Estimates only — not a quote.</p>
+  <p class="footnote">* Cozystack total includes the one-time migration from Harvester (SUSE) (a fixed setup plus a marginal $/VM — owner estimate, Ænix field data). Estimates only — not a quote.</p>
   <h2>Break-even</h2>
-  <p>Cozystack becomes cheaper than Harvester (SUSE) when Harvester (SUSE) support $/node/yr exceeds $1,579 (current: $2,100) — it already does at the current value. One-time migration costs pay back in month 41.</p>
+  <p>Cozystack becomes cheaper than Harvester (SUSE) when Harvester (SUSE) support $/node/yr exceeds $1,142 (current: $2,100) — it already does at the current value. One-time migration costs pay back in month 25.</p>
   <h2>Key facts</h2>
   <ul>
     <li>Harvester (SUSE) software is free; commercial support is ~$2100/node/yr (effective $1,800–2,400/node/yr all-in (analyst, research/03 §5) — midpoint; as of 2026-07).</li>
@@ -72,18 +72,18 @@ related_pages:
   </ul>
   <h2>When to choose Harvester (SUSE)</h2>
   <ul>
-    <li>Scale below the crossover: at 50 VMs / 1000 VMs Harvester (SUSE) is cheaper at default assumptions — the table above shows it openly.</li>
+    <li>Scale below the crossover: at 50 VMs Harvester (SUSE) is cheaper at default assumptions — the table above shows it openly.</li>
     <li>Hard vendor-ecosystem dependencies (ISV certifications, existing tooling and runbooks) that outweigh the cost delta.</li>
   </ul>
   <h2>How this is calculated</h2>
-  <p>Three cost articles — software (licenses + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; an internal sizing chain (CPU oversubscription 3:1, RAM target 85%, per-platform storage replication, N+1 HA headroom) only produces the node/core/socket counters that licenses bill against. Renewal uplifts apply only after a real renewal event inside the horizon. Default pricing basis is realized (typical negotiated) — conservative against our own headline. Every default carries a source, date and source nature; owner estimates (migration $/VM, personnel days) are labeled as Ænix field data. <a href="/tco-calculator/methodology/">Full methodology, formulas and the complete source list</a>.</p>
+  <p>Three cost articles — software (licenses + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; an internal sizing chain (CPU oversubscription 3:1, RAM target 85%, per-platform storage replication, N+1 HA headroom) only produces the node/core/socket counters that licenses bill against. Renewal uplifts apply only after a real renewal event inside the horizon. Default pricing basis is realized (typical negotiated) — conservative against our own headline. Every default carries a source, date and source nature; owner estimates (migration setup and $/VM, personnel days) are labeled as Ænix field data. <a href="/tco-calculator/methodology/">Full methodology, formulas and the complete source list</a>.</p>
   <h2>Frequently asked questions</h2>
   <h3>How much does Harvester (SUSE) cost for 200 VMs over 5 years?</h3>
   <p>At default assumptions (EU region, typical negotiated prices, Q3 2026) the model puts Harvester (SUSE) at $395,581 over 5 years across the three cost articles: software (licenses + vendor support), migration (one-time, target platform only) and personnel (a days-per-month staffing model).</p>
   <h3>Is Cozystack cheaper than Harvester (SUSE)?</h3>
-  <p>At 50 VMs: Harvester (SUSE) is $11,038 cheaper. At 200 VMs: Cozystack is $28,666 cheaper (7%). At 1000 VMs: Harvester (SUSE) is $131,101 cheaper. Cozystack becomes cheaper than Harvester (SUSE) when Harvester (SUSE) support $/node/yr exceeds $1,579 (current: $2,100) — it already does at the current value.</p>
+  <p>At 50 VMs: Harvester (SUSE) is $11,038 cheaper. At 200 VMs: Cozystack is $52,666 cheaper (13%). At 1000 VMs: Cozystack is $20,899 cheaper (1%). Cozystack becomes cheaper than Harvester (SUSE) when Harvester (SUSE) support $/node/yr exceeds $1,142 (current: $2,100) — it already does at the current value.</p>
   <h3>What does migration from Harvester (SUSE) to Cozystack cost?</h3>
-  <p>For 200 VMs the model estimates $60,000 one-time: VMs × $300/VM (owner estimate — Ænix field data: 50 VMs ≈ $15K, typical Cozystack migrations $10–20K total). Professional services or training can be added via the &quot;migration extras&quot; input (default $0). One-time migration costs pay back in month 41.</p>
+  <p>For 200 VMs the model estimates $36,000 one-time: $8,000 of fixed setup — discovery, standing up the target, cutover design, runbook — plus 200 × $140/VM marginal (owner estimate — Ænix field data: 50 VMs ≈ $15K total). Most of a small migration is the setup, which is why cost does not scale with the estate. Professional services or training can be added via the &quot;migration extras&quot; input (default $0). One-time migration costs pay back in month 25.</p>
   <p><a href="/tco-calculator/">All 10 platform comparisons</a> · <a href="/tco-calculator/methodology/">Methodology</a></p>
 </article>
 <script type="application/ld+json">
@@ -99,7 +99,7 @@ related_pages:
     "price": "0",
     "priceCurrency": "USD"
   },
-  "dateModified": "2026-08-21",
+  "dateModified": "2026-08-22",
   "publisher": {
     "@type": "Organization",
     "name": "Ænix",

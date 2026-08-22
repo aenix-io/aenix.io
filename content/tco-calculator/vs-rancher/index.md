@@ -6,8 +6,8 @@ description: "Rancher needs Harvester for the VM layer — the pair is priced to
 type: "page"
 page_type: "flag-page"
 language: "en"
-date: 2026-08-21
-lastmod: 2026-08-21
+date: 2026-08-22
+lastmod: 2026-08-22
 weight: 30
 robots: "index,follow"
 images: ["img/og/og-tco-vs-rancher.png"]
@@ -25,8 +25,8 @@ related_pages:
      (title, description, self-canonical /tco-calculator/vs-rancher/). -->
 <article class="tco-spoke tco-tier-2">
   <h1>Rancher (with Harvester) vs Cozystack — 5-year TCO</h1>
-  <p class="stamp">Last updated: <time datetime="2026-08-21">2026-08-21</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
-  <p class="lead">Cozystack 5-year TCO for 200 VMs is $225,915 vs Rancher (+ Harvester) $332,646, at typical negotiated prices, Q3 2026 (including one-time migration costs).</p>
+  <p class="stamp">Last updated: <time datetime="2026-08-22">2026-08-22</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
+  <p class="lead">Cozystack 5-year TCO for 200 VMs is $224,315 vs Rancher (+ Harvester) $332,646, at typical negotiated prices, Q3 2026 (including one-time migration costs).</p>
   <!-- calculator widget: eager iframe, fixed size (no CLS, §7.2); the app URL stays noindex,indexifembedded -->
   <iframe src="/tco-calculator-app/?vs=rancher" title="Cozystack TCO Calculator — vs Rancher (+ Harvester)" loading="eager" width="100%" height="900"></iframe>
   <h2>Rancher (+ Harvester) vs Cozystack at default assumptions</h2>
@@ -39,32 +39,32 @@ related_pages:
       <tr>
         <td>SMB — 50 VMs</td>
         <td>$109,348</td>
-        <td>$99,256</td>
-        <td><strong>$10,093</strong> (9%)</td>
-        <td>$110 / VM / mo</td>
-        <td>month 19</td>
+        <td>$104,856</td>
+        <td><strong>$4,493</strong> (4%)</td>
+        <td>$117 / VM / mo</td>
+        <td>month 42</td>
       </tr>
       <tr>
         <td>Mid-size — 200 VMs</td>
         <td>$332,646</td>
-        <td>$225,915</td>
-        <td><strong>$106,731</strong> (32%)</td>
-        <td>$63 / VM / mo</td>
-        <td>month 9</td>
+        <td>$224,315</td>
+        <td><strong>$108,331</strong> (33%)</td>
+        <td>$62 / VM / mo</td>
+        <td>month 8</td>
       </tr>
       <tr>
         <td>Enterprise — 1,000 VMs</td>
         <td>$1,309,344</td>
-        <td>$925,811</td>
-        <td><strong>$383,533</strong> (29%)</td>
-        <td>$77 / VM / mo</td>
+        <td>$901,811</td>
+        <td><strong>$407,533</strong> (31%)</td>
+        <td>$75 / VM / mo</td>
         <td>month 1</td>
       </tr>
     </tbody>
   </table>
-  <p class="footnote">* Cozystack total includes the one-time migration from Rancher (+ Harvester) (VMs × $/VM, default $300 — owner estimate, Ænix field data). Estimates only — not a quote.</p>
+  <p class="footnote">* Cozystack total includes the one-time migration from Rancher (+ Harvester) (a fixed setup plus a marginal $/VM — owner estimate, Ænix field data). Estimates only — not a quote.</p>
   <h2>Break-even</h2>
-  <p>Cozystack is cheaper than Rancher (+ Harvester) across the whole tested range of Rancher (+ Harvester) support $/node/yr (0–10× the current value). One-time migration costs pay back in month 9.</p>
+  <p>Cozystack is cheaper than Rancher (+ Harvester) across the whole tested range of Rancher (+ Harvester) support $/node/yr (0–10× the current value). One-time migration costs pay back in month 8.</p>
   <h2>Key facts</h2>
   <ul>
     <li>Rancher (+ Harvester) software is free; commercial support is ~$2110/node/yr (same anchor — reported range midpoint; as of 2026-07).</li>
@@ -75,14 +75,14 @@ related_pages:
     <li>Hard vendor-ecosystem dependencies (ISV certifications, existing tooling and runbooks) that outweigh the cost delta.</li>
   </ul>
   <h2>How this is calculated</h2>
-  <p>Three cost articles — software (licenses + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; an internal sizing chain (CPU oversubscription 3:1, RAM target 85%, per-platform storage replication, N+1 HA headroom) only produces the node/core/socket counters that licenses bill against. Renewal uplifts apply only after a real renewal event inside the horizon. Default pricing basis is realized (typical negotiated) — conservative against our own headline. Every default carries a source, date and source nature; owner estimates (migration $/VM, personnel days) are labeled as Ænix field data. <a href="/tco-calculator/methodology/">Full methodology, formulas and the complete source list</a>.</p>
+  <p>Three cost articles — software (licenses + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; an internal sizing chain (CPU oversubscription 3:1, RAM target 85%, per-platform storage replication, N+1 HA headroom) only produces the node/core/socket counters that licenses bill against. Renewal uplifts apply only after a real renewal event inside the horizon. Default pricing basis is realized (typical negotiated) — conservative against our own headline. Every default carries a source, date and source nature; owner estimates (migration setup and $/VM, personnel days) are labeled as Ænix field data. <a href="/tco-calculator/methodology/">Full methodology, formulas and the complete source list</a>.</p>
   <h2>Frequently asked questions</h2>
   <h3>How much does Rancher (+ Harvester) cost for 200 VMs over 5 years?</h3>
   <p>At default assumptions (EU region, typical negotiated prices, Q3 2026) the model puts Rancher (+ Harvester) at $332,646 over 5 years across the three cost articles: software (licenses + vendor support), migration (one-time, target platform only) and personnel (a days-per-month staffing model).</p>
   <h3>Is Cozystack cheaper than Rancher (+ Harvester)?</h3>
-  <p>At 50 VMs: Cozystack is $10,093 cheaper (9%). At 200 VMs: Cozystack is $106,731 cheaper (32%). At 1000 VMs: Cozystack is $383,533 cheaper (29%). Cozystack is cheaper than Rancher (+ Harvester) across the whole tested range of Rancher (+ Harvester) support $/node/yr (0–10× the current value).</p>
+  <p>At 50 VMs: Cozystack is $4,493 cheaper (4%). At 200 VMs: Cozystack is $108,331 cheaper (33%). At 1000 VMs: Cozystack is $407,533 cheaper (31%). Cozystack is cheaper than Rancher (+ Harvester) across the whole tested range of Rancher (+ Harvester) support $/node/yr (0–10× the current value).</p>
   <h3>What does migration from Rancher (+ Harvester) to Cozystack cost?</h3>
-  <p>For 200 VMs the model estimates $18,000 one-time: VMs × $90/VM (owner estimate — Ænix field data: 50 VMs ≈ $15K, typical Cozystack migrations $10–20K total). Professional services or training can be added via the &quot;migration extras&quot; input (default $0). One-time migration costs pay back in month 9.</p>
+  <p>For 200 VMs the model estimates $16,400 one-time: $8,000 of fixed setup — discovery, standing up the target, cutover design, runbook — plus 200 × $42/VM marginal (owner estimate — Ænix field data: 50 VMs ≈ $15K total). Most of a small migration is the setup, which is why cost does not scale with the estate. Professional services or training can be added via the &quot;migration extras&quot; input (default $0). One-time migration costs pay back in month 8.</p>
   <p><a href="/tco-calculator/">All 10 platform comparisons</a> · <a href="/tco-calculator/methodology/">Methodology</a></p>
 </article>
 <script type="application/ld+json">
@@ -98,7 +98,7 @@ related_pages:
     "price": "0",
     "priceCurrency": "USD"
   },
-  "dateModified": "2026-08-21",
+  "dateModified": "2026-08-22",
   "publisher": {
     "@type": "Organization",
     "name": "Ænix",
