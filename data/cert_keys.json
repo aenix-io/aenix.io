@@ -1,0 +1,10 @@
+[
+  {
+    "kid": "ccf-2026a",
+    "alg": "Ed25519",
+    "pub": "REPLACE_WITH_BASE64URL_PUBLIC_KEY",
+    "fp": "REPLACE_WITH_SHA256_FINGERPRINT",
+    "not_before": "2026-08-01",
+    "not_after": "2028-08-01"
+  }
+]
