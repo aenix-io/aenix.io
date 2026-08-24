@@ -7,7 +7,7 @@ language: "ru"
 url: "/certification/exam/"
 ---
 
-Экзамен идёт на отдельной странице — **[exam.aenix.io](https://exam.aenix.io/)**. Там вас
+Экзамен идёт на отдельной странице — **<a href="https://exam.aenix.io/" target="_blank" rel="noopener">exam.aenix.io</a>**. Там вас
 попросят войти по ссылке, которую мы прислали, и покажут соглашение кандидата.
 
 <p class="cert__note"><strong>Нет доступа?</strong> Напишите
