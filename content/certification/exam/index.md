@@ -1,7 +1,7 @@
 ---
 title: "Экзамен CCF"
-description: "Cozystack Certified Fundamentals — 60 вопросов, 90 минут. Нужен доступ."
-eyebrow: "Cozystack Certified Fundamentals · бета"
+description: "Ænix Certification for Cozystack — Fundamentals — 60 вопросов, 90 минут. Нужен доступ."
+eyebrow: "Ænix Certification for Cozystack — Fundamentals · бета"
 layout: "cert-page"
 language: "ru"
 url: "/certification/exam/"

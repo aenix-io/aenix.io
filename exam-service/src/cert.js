@@ -2,7 +2,9 @@
 const B64U = (bytes) => btoa(String.fromCharCode(...new Uint8Array(bytes)))
   .replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
 
+// Название программы и эмитент — в одном месте, чтобы смена была правкой одной строки.
 export const ISSUER = "AENIX s.r.o.";
+export const PROGRAM = "Aenix Certification for Cozystack";
 
 /**
  * Запись пишется ПОЗИЦИОННЫМ списком, а не парами «ключ-значение»: так ссылка выходит

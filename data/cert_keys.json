@@ -1,10 +1,10 @@
 [
-  {
-    "kid": "ccf-2026a",
-    "alg": "Ed25519",
-    "pub": "REPLACE_WITH_BASE64URL_PUBLIC_KEY",
-    "fp": "REPLACE_WITH_SHA256_FINGERPRINT",
-    "not_before": "2026-08-01",
-    "not_after": "2028-08-01"
-  }
+ {
+  "kid": "ccf-2026a",
+  "alg": "Ed25519",
+  "pub": "Cr2D4Xjxj1yPIRNqVrlvMlSPrXvZDedmpCIUCg24lLc",
+  "fp": "9e80b9a32dfc0852c9ddbe4ee04e9006",
+  "not_before": "2026-08-01",
+  "not_after": "2028-08-01"
+ }
 ]

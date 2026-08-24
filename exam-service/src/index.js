@@ -4,7 +4,7 @@
 // сессии, журнал и ключ подписи. Браузер получает по одному вопросу и никогда —
 // правильный ответ.
 import { buildForm, present, grade } from "./bank.js";
-import { buildPayload, sign, certUrl, serial, expiryFrom } from "./cert.js";
+import { buildPayload, sign, certUrl, serial, expiryFrom, PROGRAM } from "./cert.js";
 
 const PASS_RATIO = 0.75;      // 45 из 60. Внутренний параметр: на страницах он не публикуется.
 const EXAM_MINUTES = 90;
@@ -186,7 +186,7 @@ export default {
       const issued = new Date().toISOString().slice(0, 10);
       const sn = serial();
       const payload = buildPayload({
-        kid: env.SIGNING_KID, exam: "CCF", level: "Fundamentals",
+        kid: env.SIGNING_KID, exam: PROGRAM, level: "Fundamentals (CCF)",
         platform: env.PLATFORM_VERSION, serial: sn,
         name: acc.name,                       // имя из записи аккаунта, не из ввода кандидата
         issued, expires: expiryFrom(issued), beta: true,
