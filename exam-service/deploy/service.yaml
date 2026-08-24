@@ -1,0 +1,86 @@
+# Само приложение. Обычный Deployment в кластере тенанта.
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: exam-secrets
+  namespace: tenant-aenix
+type: Opaque
+stringData:
+  # Закрытый ключ подписи. Здесь и только здесь: ни в репозитории, ни в образе.
+  # Потеря ключа = невозможность выдавать новые сертификаты, поэтому нужна
+  # офлайн-копия в двух местах.
+  SIGNING_KEY: ЗАМЕНИТЕ_БАЗА64_PKCS8
+  SIGNING_KID: ccf-2026a
+  ADMIN_TOKEN: ЗАМЕНИТЕ_СЛУЧАЙНОЙ_СТРОКОЙ
+  DATABASE_URL: postgres://exam:ЗАМЕНИТЕ_ПАРОЛЬ@postgres-exam-db-rw:5432/exam
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: exam-bank
+  namespace: tenant-aenix
+type: Opaque
+stringData:
+  # Банк вопросов. Отдельным секретом, а не в образе: образ попадает в реестр,
+  # а банк не должен попадать никуда.
+  bank.json: |
+    []
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: exam
+  namespace: tenant-aenix
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: exam }
+  template:
+    metadata:
+      labels: { app: exam }
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        seccompProfile: { type: RuntimeDefault }
+      containers:
+        - name: exam
+          image: ЗАМЕНИТЕ_НА_СВОЙ_РЕЕСТР/exam-service:v1
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities: { drop: ["ALL"] }
+          envFrom:
+            - secretRef: { name: exam-secrets }
+          env:
+            - name: PLATFORM_VERSION
+              value: "v1.6"
+            - name: SITE_BASE
+              value: "https://aenix.io"
+            - name: SERVICE_BASE
+              value: "https://exam.aenix.io"
+            - name: BANK_PATH
+              value: /bank/bank.json
+          volumeMounts:
+            - name: bank
+              mountPath: /bank
+              readOnly: true
+          resources:
+            requests: { cpu: 50m, memory: 128Mi }
+            limits:   { cpu: 500m, memory: 512Mi }
+          readinessProbe:
+            httpGet: { path: /healthz, port: 8080 }
+      volumes:
+        - name: bank
+          secret: { secretName: exam-bank }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: exam
+  namespace: tenant-aenix
+spec:
+  selector: { app: exam }
+  ports:
+    - port: 80
+      targetPort: 8080

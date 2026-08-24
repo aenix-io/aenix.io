@@ -27,6 +27,38 @@ export default {
     const url = new URL(req.url);
     const p = url.pathname;
 
+    // --- выдача приглашения (для того, кто выдаёт доступ) ----------------------
+    // Здесь же фиксируется имя латиницей: оно попадёт в сертификат и кандидату
+    // не редактируется. Если бы имя вводил он сам, один общий аккаунт выписывал бы
+    // сертификаты на весь отдел.
+    if (p === "/admin/invite" && req.method === "POST") {
+      if (req.headers.get("authorization") !== `Bearer ${env.ADMIN_TOKEN}`)
+        return json({ error: "нет доступа" }, 403);
+      const { name, email, company } = await req.json();
+      if (!name || !/^[A-Za-z .'-]{3,60}$/.test(name))
+        return json({ error: "имя нужно латиницей, как в загранпаспорте" }, 400);
+
+      const account = crypto.randomUUID();
+      await env.DB.prepare(
+        `INSERT INTO accounts (id,name,email,exam_version,attempts_used,seen_ids,created_at)
+         VALUES (?,?,?,?,0,'[]',?)`)
+        .bind(account, name, email || null, env.PLATFORM_VERSION, now()).run();
+
+      // Талон живёт 72 часа. Пароль не выдаём вовсе: в переписке он остаётся навсегда,
+      // а вместе с ним приходят хранение, сброс и повторная отправка.
+      const token = [...crypto.getRandomValues(new Uint8Array(20))]
+        .map((b) => "0123456789abcdefghjkmnpqrstvwxyz"[b % 32]).join("");
+      await env.DB.prepare(
+        "INSERT INTO invites (token,account_id,name,expires_at) VALUES (?,?,?,?)")
+        .bind(token, account, name, now() + 72 * 3600).run();
+
+      return json({
+        account, name, company: company || null,
+        invite_url: `${env.SERVICE_BASE}/enroll?t=${token}`,
+        expires_in_hours: 72,
+      });
+    }
+
     // --- вход по пригласительной ссылке ---------------------------------------
     // Паролей не рассылаем: ссылка живёт 72 часа и обменивается на аккаунт. Это
     // снимает и хранение паролей, и пересылку их в переписке, и процедуру сброса.

@@ -75,3 +75,45 @@ We may update this Privacy Policy from time to time. When we do, we will update 
 ## Contact
 
 If you have questions about this Privacy Policy or how we handle your personal data, please contact us at **privacy@aenix.io**.
+
+## Certification programme
+
+This section covers the Cozystack certification programme at
+[aenix.io/certification](/certification/): the CCF exam, certificates and the
+workshop labs badge.
+
+**Who processes the data.** AENIX s.r.o., Sladkovského 546/8273, 273 43 Buštěhrad,
+Czech Republic, CIN 21493871. Write to info@aenix.io with any question about this
+section.
+
+**What we collect.** Your name in Latin script, e-mail address and company, given when
+we issue your exam access. Your exam attempts: which questions you were shown, what you
+answered, when, and the result. The serial number of any certificate issued to you. If
+you upload a labs bundle, the file itself — check identifiers and their outcomes, with a
+cluster identifier and platform version.
+
+**Why we may do this.** To run the exam and issue the certificate you asked for, and to
+keep the exam meaningful — which is why attempts are logged and why we can revoke a
+certificate. We do not rely on consent here: consent can be withdrawn, and a signature
+that has already been published cannot be recalled.
+
+**How long we keep it.** The issuance record — serial number, name, dates, status — for
+the certificate's validity plus twelve months, because without it we cannot revoke a
+certificate or confirm one. Attempts and answers for twelve months, to set the pass mark
+from real data. Labs bundles until the badge is decided, plus six months.
+
+**What is public, and by whose hand.** A certificate is a link containing your name and
+a signature over it. Nothing is published by us: you publish it, when and where you
+choose. Once you have, it cannot be recalled from the internet — not by you and not by
+us. What we can do is add its serial number to the revocation list, after which the
+verification page reports it as revoked.
+
+**The verification page carries no analytics.** Your name sits in that page's address,
+and it must not travel onward. That page loads no third-party scripts at all, and our
+build fails if it ever does.
+
+**Your rights.** Ask us for a copy of what we hold, ask for corrections, ask for
+deletion. Deletion means we remove your account, attempts and bundles, and add your
+certificate to the revocation list — the published link itself is beyond anyone's reach,
+including ours. You may also complain to the Czech data protection authority
+(Úřad pro ochranu osobních údajů).
