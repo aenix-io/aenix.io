@@ -80,8 +80,9 @@ jobs:
             test -f "public/certification/$p/index.html"
           done
           test -f public/workshop/labs/index.html
+          # Кавычки у атрибутов ищем необязательными: hugo --minify их снимает.
           for t in cert-page cert-practice cert-verify; do
-            grep -rq "data-tpl=\"$t\"" public/certification public/workshop
+            grep -rqE "data-tpl=\"?$t" public/certification public/workshop
           done
 
       - name: Upload artifact
