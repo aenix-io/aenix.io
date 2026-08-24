@@ -19,11 +19,11 @@ url: "/workshop/labs/"
 ## Что нужно сделать
 
 1. Пройти лабораторные из
-   [репозитория воркшопа](https://github.com/aenix-org/cozystack-migration-workshop). Их
+   <a href="https://github.com/aenix-org/cozystack-migration-workshop" target="_blank" rel="noopener">репозитория воркшопа</a>. Их
    пятнадцать, каждая со своим скриптом проверки.
 2. После каждой запустить `./check.sh` — он сохранит результат.
 3. В конце запустить `check/bundle.sh` — он соберёт всё в один файл.
-4. Загрузить этот файл на **[exam.aenix.io/labs](https://exam.aenix.io/labs)**.
+4. Загрузить этот файл на **<a href="https://exam.aenix.io/labs" target="_blank" rel="noopener">exam.aenix.io/labs</a>**.
 
 ## Про файл
 
