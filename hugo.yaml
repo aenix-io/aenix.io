@@ -59,6 +59,10 @@ menus:
       url: /kubernetes-deep-dive-course/
       parent: products
       weight: 2
+    - name: Certification
+      url: /certification/
+      parent: products
+      weight: 3
     - name: Pricing
       url: /pricing/
       weight: 20

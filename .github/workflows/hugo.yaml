@@ -66,6 +66,24 @@ jobs:
         run: |
           echo -e "\nDisallow: /" >> public/robots.txt
           cat public/robots.txt
+      - name: Verify certification pages
+        # Страница проверки сертификата обязана быть самодостаточной: в её адресе
+        # лежит имя держателя, и оно не должно уезжать в аналитику. Плюс Hugo молча
+        # подставляет обычный шаблон при опечатке в layout — ловим и это.
+        run: |
+          f=public/certification/verify/index.html
+          test -f "$f"
+          ! grep -Eq '(src|href)="(https?:)?//' "$f"
+          ! grep -Eq 'consent\.js|fonts\.(googleapis|gstatic)|AENIX_GA_ID|AENIX_APOLLO_ID|AENIX_AHREFS' "$f"
+          grep -q 'Content-Security-Policy' "$f"
+          for p in "" rules practice exam verify; do
+            test -f "public/certification/$p/index.html"
+          done
+          test -f public/workshop/labs/index.html
+          for t in cert-page cert-practice cert-verify; do
+            grep -rq "data-tpl=\"$t\"" public/certification public/workshop
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
