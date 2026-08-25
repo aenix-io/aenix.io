@@ -1,0 +1,32 @@
+{{ define "head" }}
+{{ $css := resources.Get "css/cert.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ end }}
+{{ define "main" }}
+<article class="cert" data-tpl="cert-materials">
+  <section class="cert__hero">
+    <div class="container">
+      <p class="cert__eyebrow">{{ .Params.eyebrow }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="cert__lead">{{ .Description }}</p>
+    </div>
+  </section>
+  <div class="container">
+    <div class="lesson">{{ .Content }}</div>
+    <div class="toc">
+      {{ range .Pages.ByParam "lesson" }}
+      <div class="toc__i">
+        <span class="toc__n">{{ .Params.lesson }}</span>
+        <span>
+          <a class="toc__t" href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <div class="toc__d">{{ .Description }}</div>
+        </span>
+      </div>
+      {{ end }}
+    </div>
+    <p style="margin-top:34px">
+      <a class="cert__btn" href="/certification/materials/all/">Одной страницей — для печати и PDF</a>
+    </p>
+  </div>
+</article>
+{{ end }}
