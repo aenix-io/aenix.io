@@ -2,6 +2,7 @@
 title: "Каталог управляемых сервисов"
 description: "Что можно заказать у платформы, что происходит после нажатия кнопки и почему это всегда один и тот же механизм."
 lesson: 3
+weight: 3
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/catalog/"
@@ -36,12 +37,12 @@ url: "/certification/materials/catalog/"
   <text x="75" y="110" text-anchor="middle" font-family="monospace" font-size="11" fill="#1e40af">kind: Postgres</text>
   <path d="M145 98 L185 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
   <rect x="190" y="70" width="130" height="56" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
-  <text x="255" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#312e81">Оператор</text>
-  <text x="255" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">увидел, начал работу</text>
+  <text x="255" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#312e81">HelmRelease</text>
+  <text x="255" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">Flux разворачивает чарт</text>
   <path d="M325 98 L365 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
   <rect x="370" y="70" width="130" height="56" rx="8" fill="#f1f5f9" stroke="#64748b"/>
-  <text x="435" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">HelmRelease</text>
-  <text x="435" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">разворачивает чарт</text>
+  <text x="435" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Оператор</text>
+  <text x="435" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">приехал из чарта, ведёт базу</text>
   <path d="M505 98 L545 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
   <rect x="550" y="70" width="100" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
   <text x="600" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#14532d">Поды</text>
@@ -52,8 +53,12 @@ url: "/certification/materials/catalog/"
 <figcaption>Один и тот же путь для базы, очереди, виртуалки и кластера.</figcaption>
 </figure>
 
-Вы создаёте объект. Оператор его замечает и создаёт `HelmRelease`. Flux разворачивает
-чарт. Появляются поды, диски, сервисы и секреты с паролями.
+Вы создаёте объект. Платформа заводит на него `HelmRelease`, Flux разворачивает чарт —
+а уже из чарта приезжает **оператор**, который дальше и ведёт вашу базу: следит за
+репликацией, снимает копии, переключает главную копию при отказе.
+
+Порядок звеньев стоит запомнить именно так: оператор приезжает **из** чарта, а не
+предшествует ему.
 
 Отсюда два практических вывода, которые попадают в вопросы. Первый: **дашборд не делает
 ничего особенного** — нажатие кнопки собирает ровно такой же объект и отправляет его в
@@ -101,7 +106,7 @@ API. Второй: если сервис не поднялся, смотреть
 <h4>Что спросят на экзамене</h4>
 <ul>
 <li>Что заказ любого сервиса — это объект в API, а дашборд лишь собирает его за вас.</li>
-<li>Цепочку: объект → оператор → HelmRelease → работающие поды.</li>
+<li>Цепочку: объект → HelmRelease → чарт → оператор → работающие поды.</li>
 <li>Что диагностику начинают с состояния HelmRelease.</li>
 <li>Что пользователей и базы заводит платформа, а пароли кладёт в секрет.</li>
 <li>Разницу между <code>replicated</code> и <code>local</code>.</li>

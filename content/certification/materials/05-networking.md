@@ -2,6 +2,7 @@
 title: "Сети"
 description: "Четыре компонента, каждый со своей задачей: кто носит пакеты внутри, кто делит сети между тенантами, кто выдаёт внешние адреса и кто пускает HTTP."
 lesson: 5
+weight: 5
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/networking/"

@@ -2,6 +2,7 @@
 title: "Виртуальные машины"
 description: "Как виртуалка становится обычной нагрузкой Kubernetes, зачем диск отдельно от машины и где проходят честные границы."
 lesson: 4
+weight: 4
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/virtualization/"

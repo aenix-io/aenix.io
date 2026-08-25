@@ -14,7 +14,7 @@
   <div class="container">
     <div class="lesson">{{ .Content }}</div>
     <div class="toc">
-      {{ range .Pages.ByParam "lesson" }}
+      {{ range (where .Pages "Params.lesson" "!=" nil).ByParam "lesson" }}
       <div class="toc__i">
         <span class="toc__n">{{ .Params.lesson }}</span>
         <span>
