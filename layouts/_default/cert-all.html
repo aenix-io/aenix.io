@@ -1,0 +1,22 @@
+{{ define "head" }}
+{{ $css := resources.Get "css/cert.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<meta name="robots" content="noindex">
+{{ end }}
+{{ define "main" }}
+<article class="cert" data-tpl="cert-all">
+  <div class="container">
+    <h1 style="margin-top:40px">{{ .Title }}</h1>
+    <p class="cert__lead">{{ .Description }}</p>
+    <div class="lesson">
+      {{ range (where site.RegularPages "Section" "certification").ByParam "lesson" }}
+        {{ if .Params.lesson }}
+          <h1 style="page-break-before:always;margin-top:60px">{{ .Params.lesson }}. {{ .Title }}</h1>
+          <p class="cert__lead">{{ .Description }}</p>
+          {{ .Content }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}

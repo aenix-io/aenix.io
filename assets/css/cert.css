@@ -1,7 +1,26 @@
-.cert{--cbg:#f8fafc;--ccard:#fff;--cline:#e2e8f0;--cink:#0f172a;--cmut:#64748b;--cacc:#2563eb;--cok:#16a34a;--cno:#dc2626}
-.cert__hero{padding:64px 0 40px;background:linear-gradient(180deg,#f1f5f9,transparent)}
+/* Сайт всегда тёмный (--bg-main:#0B0F1A), поэтому тёмная палитра здесь базовая,
+   а не включается по системной настройке. Светлая остаётся только для печати. */
+.cert{--cbg:#111827;--ccard:#151C2C;--cline:rgba(255,255,255,.14);--cink:#E6EDF7;
+      --cmut:#9FB0C9;--cacc:#4F8FF7;--cok:#4ade80;--cno:#f87171}
+.cert__hero{padding:72px 0 48px;background:linear-gradient(180deg,rgba(79,143,247,.10),transparent)}
+/* Ширина строки. Длинная строка читается плохо: глаз теряет начало следующей.
+   66 символов — классическая мера для основного текста. */
+.cert .container{max-width:1120px}
+.cert__body,.cert__hero__inner{max-width:66ch}
+.cert h2{max-width:66ch}.cert h3{max-width:66ch}
+.cert p,.cert ul,.cert ol,.cert blockquote{max-width:66ch}
+.cert li{max-width:none}
+.cert table{max-width:100%}
 .cert__eyebrow{color:var(--cmut);font-size:.9rem;letter-spacing:.04em;text-transform:uppercase;margin:0 0 8px}
-.cert__lead{font-size:1.15rem;color:var(--cmut);max-width:62ch}
+.cert__lead{font-size:1.17rem;line-height:1.6;color:var(--cmut);max-width:60ch;margin-top:14px}
+/* Воздух между абзацами: без него текст читается как сплошная стена. */
+.cert p{margin:0 0 1.35em;line-height:1.72}
+.cert h2{margin:2.4em 0 .7em;line-height:1.3}
+.cert h3{margin:1.9em 0 .55em;line-height:1.35}
+.cert ul,.cert ol{margin:0 0 1.35em;padding-left:1.4em}
+.cert li{margin:.45em 0;line-height:1.7}
+.cert table{margin:1.6em 0}
+.cert td,.cert th{padding:11px 14px;line-height:1.55}
 .cert__grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:32px 0}
 .cert__card{border:1px solid var(--cline);border-radius:14px;padding:24px;background:var(--ccard);display:flex;flex-direction:column}
 .cert__card h3{margin:0 0 8px;font-size:1.15rem}
@@ -21,6 +40,66 @@
 .q__opt--no{border-color:var(--cno);background:#fef2f2}
 .q__why{margin:14px 0 0;padding:12px 14px;background:var(--cbg);border-radius:9px;color:var(--cmut);font-size:.95rem}
 .q__bar{display:flex;justify-content:space-between;align-items:center;color:var(--cmut);font-size:.92rem;margin-bottom:8px}
-@media (prefers-color-scheme:dark){.cert{--cbg:#0f172a;--ccard:#1e293b;--cline:#334155;--cink:#e2e8f0;--cmut:#94a3b8}
-.cert__hero{background:linear-gradient(180deg,#1e293b,transparent)}.q__opt{background:#1e293b}
-.q__opt--ok{background:#052e16}.q__opt--no{background:#450a0a}}
+.lesson{max-width:74ch}
+.lesson h2{margin-top:2.2em;padding-top:.6em;border-top:1px solid var(--cline)}
+.lesson h3{margin-top:1.6em}
+.lesson p,.lesson li{line-height:1.68}
+.lesson figure{margin:28px 0;text-align:center}
+.lesson figure svg{max-width:100%;height:auto}
+.lesson figcaption{color:var(--cmut);font-size:.9rem;margin-top:10px}
+.exam-box{border:1px solid var(--cacc);border-left-width:4px;border-radius:10px;
+  padding:18px 20px;margin:26px 0;background:color-mix(in srgb,var(--cacc) 5%,transparent)}
+.exam-box h4{margin:0 0 10px;font-size:1rem;color:var(--cacc)}
+.exam-box ul{margin:0;padding-left:20px}
+.exam-box li{margin:5px 0}
+.doclink{border-left:3px solid var(--cline);padding-left:14px;color:var(--cmut);margin:20px 0}
+.lnav{display:flex;justify-content:space-between;gap:16px;margin:44px 0 0;
+  padding-top:22px;border-top:1px solid var(--cline)}
+.lnav a{text-decoration:none;color:var(--cacc);font-weight:600;max-width:46%}
+.lnav span{display:block;color:var(--cmut);font-weight:400;font-size:.85rem}
+.toc{counter-reset:l}
+.toc__i{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--cline);align-items:baseline}
+.toc__n{color:var(--cmut);font-variant-numeric:tabular-nums;min-width:2.2em}
+.toc__t{font-weight:600;text-decoration:none;color:var(--cink)}
+.toc__d{color:var(--cmut);font-size:.93rem;margin-top:3px}
+@media print{.lnav,.cert__btn,header,footer{display:none}.lesson{max-width:none}
+  .lesson h2{page-break-after:avoid}figure{page-break-inside:avoid}}
+
+/* Исключения из меры: сетки, таблицы и врезки живут по своей ширине. */
+.cert__grid,.cert__facts,.cert .toc{max-width:none}
+.cert__grid p{max-width:none}
+.cert__card p{margin-bottom:18px}
+.exam-box{max-width:66ch}
+.exam-box li{max-width:none}
+.lesson figure{max-width:none}
+.cert__note{max-width:66ch;padding:12px 0 12px 18px;line-height:1.65}
+.lesson>table{max-width:none}
+/* Заметный отступ перед врезкой и после неё */
+.cert__note,.exam-box,.doclink{margin-top:1.9em;margin-bottom:1.9em}
+
+@media print{
+  html,body{background:#fff!important;color:#000!important;
+            -webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .cert{--cbg:#f8fafc;--ccard:#fff;--cline:#cbd5e1;--cink:#0f172a;--cmut:#475569;--cacc:#1d4ed8}
+  .cert__hero{background:none;padding:0 0 20px}
+  .lesson{font-size:11pt;line-height:1.5}
+  .lesson h2{font-size:15pt}.lesson h3{font-size:12.5pt}
+  figcaption,.doclink{font-size:9.5pt}
+  .exam-box,.q,table,tr,figure{break-inside:avoid;page-break-inside:avoid}
+  h2,h3{break-after:avoid;page-break-after:avoid}
+  p,li{orphans:3;widows:3}
+}
+@page{size:A4;margin:18mm 16mm}
+/* колонка по центру, а не прижата влево */
+.lesson{margin-inline:auto}
+.lesson h2{max-width:none}
+/* узкий экран */
+@media (max-width:640px){
+  .lesson figure{overflow-x:auto}
+  .lesson figure svg{min-width:520px;max-width:none}
+  .lnav{flex-direction:column;gap:18px}
+  .lnav a{max-width:none}
+  .lesson table{display:block;overflow-x:auto}
+}
+.lesson pre{overflow-x:auto;max-width:100%}
+.lesson code{overflow-wrap:anywhere}

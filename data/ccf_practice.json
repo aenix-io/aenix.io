@@ -4,7 +4,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "You want to list pods in every namespace. Which command is correct?",
+  "stem": "Нужно вывести поды из всех пространств имён. Какая команда сделает это правильно?",
   "options": [
    {
     "key": "A",
@@ -24,7 +24,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "`-A` (all namespaces) is the flag; there is no namespace named \"all\".",
+  "rationale": "Нужный флаг — `-A` (all namespaces). Пространства имён с именем «all» не существует.",
   "multi": false
  },
  {
@@ -32,7 +32,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "A pod does not start. Which command shows its recent events?",
+  "stem": "Под не запускается. Какая команда покажет его последние события?",
   "options": [
    {
     "key": "A",
@@ -52,7 +52,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "`describe` shows the events, which usually explain scheduling and startup failures; `logs` needs a started container.",
+  "rationale": "`describe` показывает события — обычно именно они объясняют, почему под не встал на узел или не стартовал. Для `logs` контейнер должен уже запуститься.",
   "multi": false
  },
  {
@@ -60,7 +60,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "Which command lists all resource types available in a cluster?",
+  "stem": "Какая команда выведет все типы ресурсов, доступные в кластере?",
   "options": [
    {
     "key": "A",
@@ -80,7 +80,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "`kubectl api-resources` lists every resource type the cluster serves, including Cozystack's custom types.",
+  "rationale": "`kubectl api-resources` перечисляет все типы ресурсов, которые отдаёт кластер, включая собственные типы Cozystack.",
   "multi": false
  },
  {
@@ -88,7 +88,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "Which object keeps the desired number of pod replicas running?",
+  "stem": "Какой объект поддерживает нужное количество реплик пода?",
   "options": [
    {
     "key": "A",
@@ -108,7 +108,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "the ReplicaSet (created by a Deployment) keeps the declared number of pod replicas running.",
+  "rationale": "ReplicaSet (его создаёт Deployment) следит за тем, чтобы работало объявленное число реплик пода.",
   "multi": false
  },
  {
@@ -116,7 +116,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "You need an external IP for a service on bare metal Cozystack. Which Service type requests one?",
+  "stem": "Сервису на bare metal в Cozystack нужен внешний IP. Какой тип Service его запрашивает?",
   "options": [
    {
     "key": "A",
@@ -136,7 +136,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "type LoadBalancer requests an external IP; in Cozystack MetalLB provides these IPs on bare metal.",
+  "rationale": "Внешний IP запрашивает тип LoadBalancer. На bare metal в Cozystack такие адреса выдаёт MetalLB.",
   "multi": false
  },
  {
@@ -144,27 +144,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "In Cozystack, how does a virtual machine run?",
+  "stem": "Как в Cozystack работает виртуальная машина?",
   "options": [
    {
     "key": "A",
-    "text": "On a separate hypervisor cluster outside Kubernetes"
+    "text": "На отдельном кластере гипервизоров вне Kubernetes"
    },
    {
     "key": "B",
-    "text": "As a Kubernetes pod managed by KubeVirt"
+    "text": "Как под Kubernetes под управлением KubeVirt"
    },
    {
     "key": "C",
-    "text": "As a systemd service on the node"
+    "text": "Как systemd-сервис на узле"
    },
    {
     "key": "D",
-    "text": "Inside the dashboard process"
+    "text": "Внутри процесса дашборда"
    }
   ],
   "answer": "B",
-  "rationale": "KubeVirt runs each VM inside a pod (with QEMU); a VM is a Kubernetes workload.",
+  "rationale": "KubeVirt запускает каждую ВМ внутри пода (через QEMU), так что ВМ — обычная нагрузка Kubernetes.",
   "multi": false
  },
  {
@@ -172,7 +172,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "Which field of a manifest holds the desired state of the object?",
+  "stem": "В каком поле манифеста задаётся желаемое состояние объекта?",
   "options": [
    {
     "key": "A",
@@ -192,7 +192,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "`spec` declares the desired state; `metadata` holds identity, `kind` and `apiVersion` select the type.",
+  "rationale": "Желаемое состояние объявляет `spec`. В `metadata` лежит идентификация объекта, а `kind` и `apiVersion` задают его тип.",
   "multi": false
  },
  {
@@ -200,7 +200,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "Which command validates a manifest without creating resources?",
+  "stem": "Какая команда проверит манифест, ничего при этом не создав?",
   "options": [
    {
     "key": "A",
@@ -220,7 +220,7 @@
    }
   ],
   "answer": "A",
-  "rationale": "`--dry-run=server` sends the manifest to the API server for validation without persisting anything.",
+  "rationale": "`--dry-run=server` отправляет манифест на проверку в API-сервер, но ничего не сохраняет.",
   "multi": false
  },
  {
@@ -228,27 +228,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "A managed application in Cozystack (for example a database) generates connection credentials. Where does it deliver them?",
+  "stem": "Управляемое приложение в Cozystack (например, база данных) сгенерировало учётные данные для подключения. Куда оно их положит?",
   "options": [
    {
     "key": "A",
-    "text": "In a ConfigMap in the platform namespace"
+    "text": "В ConfigMap в пространстве имён платформы"
    },
    {
     "key": "B",
-    "text": "In a generated Secret in the tenant namespace"
+    "text": "В созданный Secret в пространстве имён тенанта"
    },
    {
     "key": "C",
-    "text": "In the application logs"
+    "text": "В логи приложения"
    },
    {
     "key": "D",
-    "text": "In the Platform Package configuration"
+    "text": "В конфигурацию Platform Package"
    }
   ],
   "answer": "B",
-  "rationale": "managed apps deliver credentials in generated Secrets; the tenant kubeconfig is also built from a Secret (module M2).",
+  "rationale": "Управляемые приложения отдают учётные данные через созданные Secret. Из Secret собирается и kubeconfig тенанта (модуль M2).",
   "multi": false
  },
  {
@@ -256,27 +256,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "What is a Helm release?",
+  "stem": "Что такое Helm release?",
   "options": [
    {
     "key": "A",
-    "text": "A version of the Helm binary"
+    "text": "Версия бинарника Helm"
    },
    {
     "key": "B",
-    "text": "One installed instance of a chart in a cluster"
+    "text": "Один установленный в кластере экземпляр чарта"
    },
    {
     "key": "C",
-    "text": "A Git tag in the chart repository"
+    "text": "Git-тег в репозитории чарта"
    },
    {
     "key": "D",
-    "text": "A Kubernetes namespace"
+    "text": "Пространство имён Kubernetes"
    }
   ],
   "answer": "B",
-  "rationale": "a release is one installed instance of a chart; one chart can produce many releases with different values.",
+  "rationale": "Release — это один установленный экземпляр чарта. Из одного чарта можно получить много релизов с разными values.",
   "multi": false
  },
  {
@@ -284,27 +284,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "What does the `--install` flag add to `helm upgrade`?",
+  "stem": "Что добавляет флаг `--install` к команде `helm upgrade`?",
   "options": [
    {
     "key": "A",
-    "text": "It forces a reinstall of every pod"
+    "text": "Принудительно переустанавливает все поды"
    },
    {
     "key": "B",
-    "text": "It installs the release if it does not exist yet"
+    "text": "Устанавливает релиз, если его ещё нет"
    },
    {
     "key": "C",
-    "text": "It upgrades all releases in the cluster"
+    "text": "Обновляет все релизы в кластере"
    },
    {
     "key": "D",
-    "text": "It validates values without applying them"
+    "text": "Проверяет values, не применяя их"
    }
   ],
   "answer": "B",
-  "rationale": "`upgrade --install` is idempotent — it installs when the release is absent and upgrades when it exists.",
+  "rationale": "`upgrade --install` идемпотентна: релиза нет — установит, релиз есть — обновит.",
   "multi": false
  },
  {
@@ -312,27 +312,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "What does the READY column of `kubectl get hr -A` tell you?",
+  "stem": "О чём говорит колонка READY в выводе `kubectl get hr -A`?",
   "options": [
    {
     "key": "A",
-    "text": "Whether the pod images were pulled"
+    "text": "Скачаны ли образы подов"
    },
    {
     "key": "B",
-    "text": "Whether the HelmRelease is reconciled and healthy"
+    "text": "Прошёл ли HelmRelease сверку и здоров ли он"
    },
    {
     "key": "C",
-    "text": "Whether the node is schedulable"
+    "text": "Можно ли планировать поды на узел"
    },
    {
     "key": "D",
-    "text": "Whether the Git repository is reachable"
+    "text": "Доступен ли Git-репозиторий"
    }
   ],
   "answer": "B",
-  "rationale": "READY True means the HelmRelease is reconciled and healthy; False sends you to MESSAGE and `kubectl describe hr`.",
+  "rationale": "READY True значит, что HelmRelease сведён с желаемым состоянием и здоров. Если False — смотрите колонку MESSAGE и `kubectl describe hr`.",
   "multi": false
  },
  {
@@ -340,27 +340,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m0",
-  "stem": "What happens when a HelmRelease is suspended?",
+  "stem": "Что происходит, когда HelmRelease переводят в suspend?",
   "options": [
    {
     "key": "A",
-    "text": "The workload pods are deleted"
+    "text": "Поды нагрузки удаляются"
    },
    {
     "key": "B",
-    "text": "The controller stops reconciling it; manual changes stay"
+    "text": "Контроллер перестаёт его сверять, ручные правки сохраняются"
    },
    {
     "key": "C",
-    "text": "The chart is removed from the repository"
+    "text": "Чарт удаляется из репозитория"
    },
    {
     "key": "D",
-    "text": "The namespace is locked for all users"
+    "text": "Пространство имён блокируется для всех пользователей"
    }
   ],
   "answer": "B",
-  "rationale": "suspend stops reconciliation, so manual changes stay; resume gives control back to the declared state.",
+  "rationale": "Suspend останавливает сверку, поэтому ручные правки остаются на месте. Resume возвращает управление объявленному состоянию.",
   "multi": false
  },
  {
@@ -368,7 +368,7 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "What is the correct bottom-up order of the Cozystack layers?",
+  "stem": "Как выглядит правильный порядок слоёв Cozystack снизу вверх?",
   "options": [
    {
     "key": "A",
@@ -388,7 +388,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "Talos is the node OS, Kubernetes (management cluster) runs on it, and the Cozystack platform is installed on top of Kubernetes.",
+  "rationale": "Talos — операционная система узла, поверх неё работает Kubernetes (management-кластер), а уже на Kubernetes ставится платформа Cozystack.",
   "multi": false
  },
  {
@@ -396,27 +396,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "How does Cozystack expose platform objects like tenants and VMs?",
+  "stem": "В каком виде Cozystack отдаёт объекты платформы — тенанты, виртуальные машины и прочее?",
   "options": [
    {
     "key": "A",
-    "text": "Through a separate proprietary API server unrelated to Kubernetes"
+    "text": "Через отдельный проприетарный API-сервер, не связанный с Kubernetes"
    },
    {
     "key": "B",
-    "text": "As rows in an internal SQL database"
+    "text": "Как строки во внутренней SQL-базе"
    },
    {
     "key": "C",
-    "text": "As Kubernetes custom resources (CRDs)"
+    "text": "Как кастомные ресурсы Kubernetes (CRD)"
    },
    {
     "key": "D",
-    "text": "Only through the web dashboard"
+    "text": "Только через веб-дашборд"
    }
   ],
   "answer": "C",
-  "rationale": "Cozystack extends Kubernetes with custom resources; the dashboard and Terraform are clients of the same Kubernetes API.",
+  "rationale": "Cozystack расширяет Kubernetes кастомными ресурсами. Дашборд и Terraform — такие же клиенты того же Kubernetes API.",
   "multi": false
  },
  {
@@ -424,27 +424,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "How does an operator change the configuration of a Talos node?",
+  "stem": "Как оператор меняет конфигурацию узла с Talos?",
   "options": [
    {
     "key": "A",
-    "text": "SSH to the node and edit files"
+    "text": "Заходит по SSH и правит файлы"
    },
    {
     "key": "B",
-    "text": "Apply declarative machine configuration through the Talos API"
+    "text": "Применяет декларативную machine configuration через Talos API"
    },
    {
     "key": "C",
-    "text": "Use the package manager on the node"
+    "text": "Пользуется пакетным менеджером на узле"
    },
    {
     "key": "D",
-    "text": "Edit the root filesystem from a rescue shell"
+    "text": "Правит корневую файловую систему из rescue-шелла"
    }
   ],
   "answer": "B",
-  "rationale": "Talos has no SSH and a read-only root filesystem; the only path is declarative machine configuration through the Talos API.",
+  "rationale": "В Talos нет SSH, а корневая файловая система только для чтения. Единственный путь — декларативная machine configuration через Talos API.",
   "multi": false
  },
  {
@@ -452,27 +452,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "Why does Cozystack ship its own Talos image?",
+  "stem": "Зачем Cozystack поставляет собственный образ Talos?",
   "options": [
    {
     "key": "A",
-    "text": "To add an SSH server for debugging"
+    "text": "Чтобы добавить SSH-сервер для отладки"
    },
    {
     "key": "B",
-    "text": "To include the DRBD and ZFS kernel modules the platform needs"
+    "text": "Чтобы включить модули ядра DRBD и ZFS, нужные платформе"
    },
    {
     "key": "C",
-    "text": "To replace kubelet with a custom agent"
+    "text": "Чтобы заменить kubelet собственным агентом"
    },
    {
     "key": "D",
-    "text": "To reduce the license cost of stock Talos"
+    "text": "Чтобы снизить стоимость лицензии на стоковый Talos"
    }
   ],
   "answer": "B",
-  "rationale": "the platform needs the DRBD (LINSTOR storage) and ZFS kernel modules, which the stock Talos image does not include.",
+  "rationale": "Платформе нужны модули ядра DRBD (для хранилища LINSTOR) и ZFS, а в стоковом образе Talos их нет.",
   "multi": false
  },
  {
@@ -480,7 +480,7 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "Which tool is the recommended path for bootstrapping Kubernetes on Talos in Cozystack?",
+  "stem": "Каким инструментом в Cozystack рекомендуют разворачивать Kubernetes на Talos?",
   "options": [
    {
     "key": "A",
@@ -500,7 +500,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "Talm is Cozystack's own Talos configuration manager with Helm-like templating and the documented recommended bootstrap path.",
+  "rationale": "Talm — собственный менеджер конфигураций Talos от Cozystack с шаблонизацией в духе Helm. Именно он описан в документации как рекомендованный путь.",
   "multi": false
  },
  {
@@ -508,27 +508,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "In the PXE install method, which two components run as temporary Docker containers? (Choose the correct pair.)",
+  "stem": "При установке через PXE два компонента запускаются как временные Docker-контейнеры. Какая пара?",
   "options": [
    {
     "key": "A",
-    "text": "Matchbox and dnsmasq"
+    "text": "Matchbox и dnsmasq"
    },
    {
     "key": "B",
-    "text": "Keycloak and MetalLB"
+    "text": "Keycloak и MetalLB"
    },
    {
     "key": "C",
-    "text": "FluxCD and Helm"
+    "text": "FluxCD и Helm"
    },
    {
     "key": "D",
-    "text": "CoreDNS and Multus"
+    "text": "CoreDNS и Multus"
    }
   ],
   "answer": "A",
-  "rationale": "PXE install runs Matchbox (serves the Talos image over HTTP) and dnsmasq (DHCP + TFTP) as temporary containers.",
+  "rationale": "При установке по PXE во временных контейнерах поднимаются Matchbox (раздаёт образ Talos по HTTP) и dnsmasq (DHCP + TFTP).",
   "multi": false
  },
  {
@@ -536,27 +536,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "How do you verify that a Cozystack installation finished successfully?",
+  "stem": "Как убедиться, что установка Cozystack прошла успешно?",
   "options": [
    {
     "key": "A",
-    "text": "`kubectl get nodes` shows all nodes Ready"
+    "text": "`kubectl get nodes` показывает все узлы в Ready"
    },
    {
     "key": "B",
-    "text": "`helm list` shows one release"
+    "text": "`helm list` показывает один релиз"
    },
    {
     "key": "C",
-    "text": "`kubectl get hr -A` shows all HelmReleases READY"
+    "text": "`kubectl get hr -A` показывает все HelmRelease в READY"
    },
    {
     "key": "D",
-    "text": "`talosctl version` returns without error"
+    "text": "`talosctl version` отрабатывает без ошибок"
    }
   ],
   "answer": "C",
-  "rationale": "the documented success check is that every platform HelmRelease shows READY True in `kubectl get hr -A`.",
+  "rationale": "В документации критерий успеха один: в `kubectl get hr -A` у всех HelmRelease платформы READY True.",
   "multi": false
  },
  {
@@ -564,7 +564,7 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "A team wants the full Cozystack feature set, but their nodes run RKE2, not Talos. Which variant fits?",
+  "stem": "Команде нужен полный набор возможностей Cozystack, но на узлах стоит RKE2, а не Talos. Какой вариант подойдёт?",
   "options": [
    {
     "key": "A",
@@ -584,7 +584,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "`isp-full-generic` gives the full feature set on generic distributions (k3s, kubeadm, RKE2) instead of Talos.",
+  "rationale": "`isp-full-generic` даёт полный набор возможностей на обычных дистрибутивах (k3s, kubeadm, RKE2) вместо Talos.",
   "multi": false
  },
  {
@@ -592,7 +592,7 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "Which variant runs on top of an existing managed Kubernetes cluster and ships **without** CNI, storage, and virtualization?",
+  "stem": "Какой вариант ставится поверх уже существующего управляемого кластера Kubernetes и идёт **без** CNI, хранилища и виртуализации?",
   "options": [
    {
     "key": "A",
@@ -612,7 +612,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "`isp-hosted` runs on an existing managed Kubernetes cluster, which already provides CNI, storage, and (if any) virtualization.",
+  "rationale": "`isp-hosted` работает на готовом управляемом кластере Kubernetes, где CNI, хранилище и виртуализация (если она есть) уже предоставлены провайдером.",
   "multi": false
  },
  {
@@ -620,27 +620,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "What does the `default` variant contain?",
+  "stem": "Что входит в вариант `default`?",
   "options": [
    {
     "key": "A",
-    "text": "The full PaaS stack with monitoring"
+    "text": "Полный PaaS-стек с мониторингом"
    },
    {
     "key": "B",
-    "text": "Only PackageSources, with no preconfigured bundle"
+    "text": "Только PackageSources, без готового набора компонентов"
    },
    {
     "key": "C",
-    "text": "Only the dashboard and API"
+    "text": "Только дашборд и API"
    },
    {
     "key": "D",
-    "text": "A demo tenant with sample apps"
+    "text": "Демо-тенант с примерами приложений"
    }
   ],
   "answer": "B",
-  "rationale": "the `default` variant installs only PackageSources; the administrator enables every component manually (BYOP).",
+  "rationale": "Вариант `default` ставит только PackageSources — каждый компонент администратор включает руками (подход BYOP).",
   "multi": false
  },
  {
@@ -648,7 +648,7 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "How are platform packages named?",
+  "stem": "Как называются пакеты платформы?",
   "options": [
    {
     "key": "A",
@@ -668,7 +668,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "platform packages follow the `cozystack.<component>` naming, listed by `kubectl get package`.",
+  "rationale": "Пакеты платформы именуются по схеме `cozystack.<component>` — их список выдаёт `kubectl get package`.",
   "multi": false
  },
  {
@@ -676,27 +676,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "When can you disable a platform package through `bundles.disabledPackages`?",
+  "stem": "Когда можно отключить пакет платформы через `bundles.disabledPackages`?",
   "options": [
    {
     "key": "A",
-    "text": "At any time; the platform removes the component automatically"
+    "text": "В любой момент — платформа сама удалит компонент"
    },
    {
     "key": "B",
-    "text": "Before install; removing it later requires a manual Helm operation"
+    "text": "До установки; убрать его потом придётся вручную через Helm"
    },
    {
     "key": "C",
-    "text": "Only in the `default` variant"
+    "text": "Только в варианте `default`"
    },
    {
     "key": "D",
-    "text": "Never; the package set is fixed per variant"
+    "text": "Никогда — набор пакетов жёстко задан вариантом"
    }
   ],
   "answer": "B",
-  "rationale": "disabling works before install; removing an installed component is a manual Helm operation the platform does not do for you.",
+  "rationale": "Отключение работает до установки. Уже установленный компонент придётся снимать вручную через Helm — сама платформа этого не сделает.",
   "multi": false
  },
  {
@@ -704,7 +704,7 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "Which component reconciles all platform HelmReleases?",
+  "stem": "Какой компонент сверяет все HelmRelease платформы?",
   "options": [
    {
     "key": "A",
@@ -712,7 +712,7 @@
    },
    {
     "key": "B",
-    "text": "The dashboard"
+    "text": "Дашборд"
    },
    {
     "key": "C",
@@ -724,7 +724,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "FluxCD is the GitOps engine; every platform component is a HelmRelease that FluxCD reconciles continuously.",
+  "rationale": "FluxCD — движок GitOps. Каждый компонент платформы описан как HelmRelease, и FluxCD непрерывно сверяет их с желаемым состоянием.",
   "multi": false
  },
  {
@@ -732,7 +732,7 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "Which component runs tenant Kubernetes control planes as pods in the management cluster?",
+  "stem": "Какой компонент запускает control plane тенантных кластеров Kubernetes в виде подов в управляющем кластере?",
   "options": [
    {
     "key": "A",
@@ -752,7 +752,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "Kamaji runs tenant Kubernetes control planes as pods inside the management cluster.",
+  "rationale": "Kamaji поднимает control plane тенантных кластеров Kubernetes как поды внутри управляющего кластера.",
   "multi": false
  },
  {
@@ -760,7 +760,7 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "Which component provides replicated block storage for persistent volumes?",
+  "stem": "Какой компонент даёт реплицируемое блочное хранилище для persistent volumes?",
   "options": [
    {
     "key": "A",
@@ -780,7 +780,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "LINSTOR orchestrates DRBD replicated block volumes; SeaweedFS is object storage and Velero is backup.",
+  "rationale": "LINSTOR управляет реплицируемыми блочными томами DRBD. SeaweedFS — объектное хранилище, Velero — резервные копии.",
   "multi": false
  },
  {
@@ -788,27 +788,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "What is the minimal documented cluster profile for a dev/lab install?",
+  "stem": "Какая минимальная конфигурация кластера описана в документации для dev/lab-установки?",
   "options": [
    {
     "key": "A",
-    "text": "1 node, 4 cores / 8 GB RAM"
+    "text": "1 узел, 4 ядра / 8 ГБ RAM"
    },
    {
     "key": "B",
-    "text": "3 nodes, 8 cores / 24 GB RAM / 50 GB + 256 GB disks each"
+    "text": "3 узла, по 8 ядер / 24 ГБ RAM / диски 50 ГБ + 256 ГБ"
    },
    {
     "key": "C",
-    "text": "6 nodes, 32 cores / 128 GB RAM each"
+    "text": "6 узлов, по 32 ядра / 128 ГБ RAM"
    },
    {
     "key": "D",
-    "text": "2 nodes, 16 cores / 64 GB RAM each"
+    "text": "2 узла, по 16 ядер / 64 ГБ RAM"
    }
   ],
   "answer": "B",
-  "rationale": "the documented minimal profile is 3 nodes with 8 cores / 24 GB RAM and the two-disk layout (50 GB system + 256 GB data).",
+  "rationale": "В документации минимум — 3 узла по 8 ядер и 24 ГБ RAM с двумя дисками: 50 ГБ под систему и 256 ГБ под данные.",
   "multi": false
  },
  {
@@ -816,27 +816,27 @@
   "domain": "D1",
   "domain_name": "Архитектура и основы Cozystack",
   "module": "m1",
-  "stem": "Which network condition is strongly discouraged for a Cozystack cluster?",
+  "stem": "Какое состояние сети крайне нежелательно для кластера Cozystack?",
   "options": [
    {
     "key": "A",
-    "text": "10 Gbps links between nodes"
+    "text": "Каналы 10 Гбит/с между узлами"
    },
    {
     "key": "B",
-    "text": "All nodes in one L2 segment"
+    "text": "Все узлы в одном L2-сегменте"
    },
    {
     "key": "C",
-    "text": "Round-trip time above 20 ms between nodes"
+    "text": "RTT между узлами выше 20 мс"
    },
    {
     "key": "D",
-    "text": "Using nip.io as the platform FQDN in a lab"
+    "text": "nip.io как FQDN платформы в лабе"
    }
   ],
   "answer": "C",
-  "rationale": "the latency requirement is RTT under 10 ms; above 20 ms is strongly discouraged (unsupported).",
+  "rationale": "Требование по задержкам — RTT меньше 10 мс. Выше 20 мс работать крайне не рекомендуется, такая конфигурация не поддерживается.",
   "multi": false
  },
  {
@@ -844,27 +844,27 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "What is the primary unit of isolation in Cozystack?",
+  "stem": "Что в Cozystack служит основной единицей изоляции?",
   "options": [
    {
     "key": "A",
-    "text": "The Pod"
+    "text": "Под"
    },
    {
     "key": "B",
-    "text": "The Tenant custom resource"
+    "text": "Ресурс Tenant"
    },
    {
     "key": "C",
-    "text": "The HelmRelease"
+    "text": "HelmRelease"
    },
    {
     "key": "D",
-    "text": "The Node"
+    "text": "Узел"
    }
   ],
   "answer": "B",
-  "rationale": "the Tenant CR is the \"namespace with enhanced scope\" — the platform's primary isolation unit.",
+  "rationale": "Ресурс Tenant — это «пространство имён с расширенными возможностями» и основная единица изоляции в платформе.",
   "multi": false
  },
  {
@@ -872,27 +872,27 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "How does a tenant administrator create a sub-tenant?",
+  "stem": "Как администратор тенанта создаёт вложенный тенант?",
   "options": [
    {
     "key": "A",
-    "text": "By opening a support ticket to the platform team"
+    "text": "Через заявку в команду платформы"
    },
    {
     "key": "B",
-    "text": "By creating a Tenant CR, like any other catalog application"
+    "text": "Создаёт ресурс Tenant — как любое приложение из каталога"
    },
    {
     "key": "C",
-    "text": "By running a Talos API command"
+    "text": "Командой через Talos API"
    },
    {
     "key": "D",
-    "text": "By editing the Platform Package"
+    "text": "Правкой Platform Package"
    }
   ],
   "answer": "B",
-  "rationale": "Tenant is itself a catalog application; a sub-tenant is a Tenant CR created in the parent's namespace.",
+  "rationale": "Tenant сам по себе — приложение из каталога. Вложенный тенант создаётся как ресурс Tenant в пространстве имён родителя.",
   "multi": false
  },
  {
@@ -900,7 +900,7 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "Tenant `beta` is nested inside tenant `alpha`, which is under root. Which namespace does `beta` get?",
+  "stem": "Тенант `beta` вложен в тенант `alpha`, тот — в корневой. Какое пространство имён получит `beta`?",
   "options": [
    {
     "key": "A",
@@ -920,7 +920,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "ancestry accumulates (root is not repeated): root/alpha/beta -> tenant-alpha-beta.",
+  "rationale": "Цепочка предков накапливается, но корневой тенант в имени не повторяется: root/alpha/beta даёт tenant-alpha-beta.",
   "multi": false
  },
  {
@@ -928,27 +928,27 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "Why are dashes forbidden in tenant names?",
+  "stem": "Почему в именах тенантов запрещён дефис?",
   "options": [
    {
     "key": "A",
-    "text": "Kubernetes forbids dashes in all resource names"
+    "text": "Kubernetes запрещает дефисы в именах ресурсов"
    },
    {
     "key": "B",
-    "text": "The dash is the ancestry separator in derived namespace names"
+    "text": "Дефис разделяет предков в имени пространства имён"
    },
    {
     "key": "C",
-    "text": "Dashes conflict with the Keycloak username format"
+    "text": "Дефис ломает формат имени пользователя в Keycloak"
    },
    {
     "key": "D",
-    "text": "The dashboard cannot render dashes"
+    "text": "Дашборд не умеет отображать дефисы"
    }
   ],
   "answer": "B",
-  "rationale": "the dash separates ancestor names inside the derived namespace; a dash inside a tenant name would make the ancestry ambiguous.",
+  "rationale": "Дефисом разделяются имена предков в производном пространстве имён. Дефис внутри имени тенанта сделал бы цепочку предков неоднозначной.",
   "multi": false
  },
  {
@@ -956,7 +956,7 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "Where do you find the tenant's own namespace in its CR?",
+  "stem": "Где в ресурсе тенанта искать его собственное пространство имён?",
   "options": [
    {
     "key": "A",
@@ -976,7 +976,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "`metadata.namespace` is the parent's namespace (where the CR lives); `status.namespace` is the namespace the platform created for the tenant itself.",
+  "rationale": "В `metadata.namespace` лежит пространство имён родителя — там живёт сам ресурс. А `status.namespace` — то пространство имён, которое платформа создала для этого тенанта.",
   "multi": false
  },
  {
@@ -984,7 +984,7 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "Which label allows a pod to reach the Kubernetes apiserver in a tenant?",
+  "stem": "Какая метка разрешает поду обращаться к apiserver Kubernetes внутри тенанта?",
   "options": [
    {
     "key": "A",
@@ -1004,7 +1004,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "the documented opt-in label is `policy.cozystack.io/allow-to-apiserver: \"true\"`, set per pod.",
+  "rationale": "Доступ включается явно меткой `policy.cozystack.io/allow-to-apiserver: \"true\"` — она ставится на каждый под отдельно.",
   "multi": false
  },
  {
@@ -1012,27 +1012,27 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "How do you disable network isolation for a tenant in v1.5?",
+  "stem": "Как отключить сетевую изоляцию тенанта в v1.5?",
   "options": [
    {
     "key": "A",
-    "text": "Set `isolated: false` on the Tenant CR"
+    "text": "Выставить `isolated: false` в ресурсе Tenant"
    },
    {
     "key": "B",
-    "text": "Delete the Cilium network policies manually"
+    "text": "Удалить сетевые политики Cilium вручную"
    },
    {
     "key": "C",
-    "text": "You cannot: isolation is mandatory since v1.0"
+    "text": "Никак: с v1.0 изоляция обязательна"
    },
    {
     "key": "D",
-    "text": "Use the `default` variant"
+    "text": "Использовать вариант `default`"
    }
   ],
   "answer": "C",
-  "rationale": "the `isolated` flag was removed in v1.0; isolation is mandatory and cannot be switched off.",
+  "rationale": "Флаг `isolated` убрали в v1.0. Изоляция обязательна, отключить её нельзя.",
   "multi": false
  },
  {
@@ -1040,7 +1040,7 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "Which component enforces tenant network isolation?",
+  "stem": "Какой компонент обеспечивает сетевую изоляцию тенантов?",
   "options": [
    {
     "key": "A",
@@ -1060,7 +1060,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "Cilium's eBPF datapath enforces the automatically generated network policies that isolate tenants.",
+  "rationale": "Изолирующие сетевые политики генерируются автоматически, а применяет их eBPF-датаплейн Cilium.",
   "multi": false
  },
  {
@@ -1068,7 +1068,7 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "Which set lists the per-tenant service toggles?",
+  "stem": "В каком наборе перечислены переключатели сервисов уровня тенанта?",
   "options": [
    {
     "key": "A",
@@ -1088,7 +1088,7 @@
    }
   ],
   "answer": "A",
-  "rationale": "the four per-tenant service toggles on the Tenant CR are etcd, monitoring, ingress, and seaweedfs.",
+  "rationale": "В ресурсе Tenant есть ровно четыре таких переключателя: etcd, monitoring, ingress и seaweedfs.",
   "multi": false
  },
  {
@@ -1096,27 +1096,27 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "Tenant `beta` (inside `alpha`) has no monitoring enabled. `alpha` has `monitoring: true`. Where do beta's metrics go?",
+  "stem": "У тенанта `beta` внутри `alpha` мониторинг не включён, а у `alpha` стоит `monitoring: true`. Куда пойдут метрики beta?",
   "options": [
    {
     "key": "A",
-    "text": "Nowhere: monitoring is off for beta"
+    "text": "Никуда: у beta мониторинг выключен"
    },
    {
     "key": "B",
-    "text": "To alpha's monitoring stack"
+    "text": "В стек мониторинга alpha"
    },
    {
     "key": "C",
-    "text": "Always to the root tenant's stack"
+    "text": "Всегда в стек корневого тенанта"
    },
    {
     "key": "D",
-    "text": "To an external SaaS collector"
+    "text": "Во внешний SaaS-коллектор"
    }
   ],
   "answer": "B",
-  "rationale": "a missing service is inherited from the nearest ancestor that runs it — here the parent alpha, not necessarily root.",
+  "rationale": "Отсутствующий сервис наследуется от ближайшего предка, у которого он поднят. Здесь это родитель alpha, а вовсе не обязательно корень.",
   "multi": false
  },
  {
@@ -1124,7 +1124,7 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "Which preset series has a 1:4 CPU-to-RAM ratio?",
+  "stem": "У какой серии пресетов соотношение CPU к RAM равно 1:4?",
   "options": [
    {
     "key": "A",
@@ -1144,7 +1144,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "preset ratios are t1=1:0.5, c1=1:1, s1=1:2, u1=1:4, m1=1:8 — the 1:4 series is u1. (This asks about tenant/app presets, not VM instance types.)",
+  "rationale": "Соотношения по пресетам: t1=1:0.5, c1=1:1, s1=1:2, u1=1:4, m1=1:8. Значит, 1:4 — это u1. (Речь про пресеты тенантов и приложений, а не про типы инстансов ВМ.)",
   "multi": false
  },
  {
@@ -1152,7 +1152,7 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "With the default `cpuAllocationRatio` of 10, what does a workload with a 2-CPU limit request from the scheduler?",
+  "stem": "При стандартном `cpuAllocationRatio` = 10 сколько CPU запросит у планировщика нагрузка с лимитом в 2 CPU?",
   "options": [
    {
     "key": "A",
@@ -1172,7 +1172,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "request = limit / cpuAllocationRatio = 2 / 10 = 0.2 CPU.",
+  "rationale": "Запрос считается как лимит, делённый на cpuAllocationRatio: 2 / 10 = 0.2 CPU.",
   "multi": false
  },
  {
@@ -1180,27 +1180,27 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "A manifest sets both a preset and an explicit `resources: {cpu, memory}` block. What applies?",
+  "stem": "В манифесте одновременно указан пресет и явный блок `resources: {cpu, memory}`. Что сработает?",
   "options": [
    {
     "key": "A",
-    "text": "The preset; explicit resources are ignored"
+    "text": "Пресет; явные ресурсы игнорируются"
    },
    {
     "key": "B",
-    "text": "The explicit resources; they override the preset"
+    "text": "Явные ресурсы; они перекрывают пресет"
    },
    {
     "key": "C",
-    "text": "Neither; the manifest is rejected"
+    "text": "Ничего; манифест будет отклонён"
    },
    {
     "key": "D",
-    "text": "The larger of the two values per field"
+    "text": "Большее из двух значений по каждому полю"
    }
   ],
   "answer": "B",
-  "rationale": "explicit `resources: {cpu, memory}` values always take priority over the chosen preset.",
+  "rationale": "Явные значения в `resources: {cpu, memory}` всегда важнее выбранного пресета.",
   "multi": false
  },
  {
@@ -1208,27 +1208,27 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "What does the documented script use to build a tenant kubeconfig?",
+  "stem": "Из чего скрипт из документации собирает kubeconfig для тенанта?",
   "options": [
    {
     "key": "A",
-    "text": "The Keycloak admin password"
+    "text": "Из пароля администратора Keycloak"
    },
    {
     "key": "B",
-    "text": "The token, CA certificate, and server address from the tenant secret"
+    "text": "Из токена и CA-сертификата в секрете тенанта плюс адреса сервера из кубконфига администратора"
    },
    {
     "key": "C",
-    "text": "The Platform Package YAML"
+    "text": "Из YAML-файла Platform Package"
    },
    {
     "key": "D",
-    "text": "The Talos machine configuration"
+    "text": "Из конфигурации машины Talos"
    }
   ],
   "answer": "B",
-  "rationale": "the tenant secret holds the token, the CA certificate, and the API server address — the three parts of a kubeconfig.",
+  "rationale": "Скрипт из документации читает одноимённый секрет тенанта и берёт оттуда токен (поле token), CA-сертификат (ca.crt) и пространство имён по умолчанию. Адрес API-сервера в секрете не лежит — его скрипт подставляет из текущего кубконфига администратора, который скрипт и запускает.",
   "multi": false
  },
  {
@@ -1236,7 +1236,7 @@
   "domain": "D2",
   "domain_name": "Тенанты и доступ",
   "module": "m2",
-  "stem": "The platform domain is `cloud.example.com`. What is the default domain of tenant `alpha` under root?",
+  "stem": "Домен платформы — `cloud.example.com`. Какой домен по умолчанию получит тенант `alpha` в корне?",
   "options": [
    {
     "key": "A",
@@ -1256,7 +1256,7 @@
    }
   ],
   "answer": "A",
-  "rationale": "the default tenant domain is `<name>.<parent-domain>`; alpha under root gets `alpha.cloud.example.com`.",
+  "rationale": "Домен тенанта по умолчанию строится как `<имя>.<домен родителя>`, поэтому alpha в корне получает `alpha.cloud.example.com`.",
   "multi": false
  },
  {
@@ -1264,27 +1264,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "Which group of the catalog does **Qdrant** belong to?",
+  "stem": "К какой группе каталога относится **Qdrant**?",
   "options": [
    {
     "key": "A",
-    "text": "Messaging"
+    "text": "Обмен сообщениями"
    },
    {
     "key": "B",
-    "text": "Databases"
+    "text": "Базы данных"
    },
    {
     "key": "C",
-    "text": "Networking services"
+    "text": "Сетевые сервисы"
    },
    {
     "key": "D",
-    "text": "Platform services"
+    "text": "Сервисы платформы"
    }
   ],
   "answer": "B",
-  "rationale": "Qdrant is a vector database — it belongs to the databases group.",
+  "rationale": "Qdrant — векторная база данных, поэтому её место в группе баз данных.",
   "multi": false
  },
  {
@@ -1292,7 +1292,7 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "Which operator manages PostgreSQL in Cozystack?",
+  "stem": "Какой оператор управляет PostgreSQL в Cozystack?",
   "options": [
    {
     "key": "A",
@@ -1300,7 +1300,7 @@
    },
    {
     "key": "B",
-    "text": "Percona operator"
+    "text": "Оператор Percona"
    },
    {
     "key": "C",
@@ -1308,11 +1308,11 @@
    },
    {
     "key": "D",
-    "text": "Altinity operator"
+    "text": "Оператор Altinity"
    }
   ],
   "answer": "C",
-  "rationale": "CloudNativePG runs managed PostgreSQL; Strimzi is Kafka, Percona is MongoDB, Altinity is ClickHouse.",
+  "rationale": "За управляемый PostgreSQL отвечает CloudNativePG. Strimzi — это Kafka, Percona — MongoDB, Altinity — ClickHouse.",
   "multi": false
  },
  {
@@ -1320,27 +1320,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "How does a tenant admin create a sub-tenant?",
+  "stem": "Как администратор тенанта создаёт вложенный тенант?",
   "options": [
    {
     "key": "A",
-    "text": "By opening a support ticket to the platform team"
+    "text": "Через заявку в команду платформы"
    },
    {
     "key": "B",
-    "text": "By deploying the Tenant application from the catalog"
+    "text": "Разворачивает приложение Tenant из каталога"
    },
    {
     "key": "C",
-    "text": "By editing the Platform Package"
+    "text": "Правкой Platform Package"
    },
    {
     "key": "D",
-    "text": "By creating a Kubernetes namespace directly"
+    "text": "Создаёт пространство имён Kubernetes напрямую"
    }
   ],
   "answer": "B",
-  "rationale": "Tenant is itself a catalog application; a sub-tenant is deployed like any other app, inside the parent tenant.",
+  "rationale": "Tenant сам по себе — приложение из каталога. Вложенный тенант разворачивается внутри родительского так же, как любое другое приложение.",
   "multi": false
  },
  {
@@ -1348,7 +1348,7 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "In which API group do catalog application resources live?",
+  "stem": "В какой API-группе живут ресурсы приложений каталога?",
   "options": [
    {
     "key": "A",
@@ -1368,7 +1368,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "all catalog applications are custom resources in `apps.cozystack.io/v1alpha1`.",
+  "rationale": "Все приложения каталога — это кастомные ресурсы в группе `apps.cozystack.io/v1alpha1`.",
   "multi": false
  },
  {
@@ -1376,27 +1376,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "You create a `Postgres` CR. What does the platform create next in the chain?",
+  "stem": "Вы создали ресурс `Postgres`. Что платформа создаст следующим звеном цепочки?",
   "options": [
    {
     "key": "A",
-    "text": "A HelmRelease that installs the application chart"
+    "text": "HelmRelease, который ставит чарт приложения"
    },
    {
     "key": "B",
-    "text": "A Docker Compose file"
+    "text": "Файл Docker Compose"
    },
    {
     "key": "C",
-    "text": "A new Kubernetes node"
+    "text": "Новый узел Kubernetes"
    },
    {
     "key": "D",
-    "text": "A Velero backup"
+    "text": "Резервную копию Velero"
    }
   ],
   "answer": "A",
-  "rationale": "the chain is CR -> HelmRelease (FluxCD) -> Helm chart -> operator -> running workload.",
+  "rationale": "Цепочка такая: ресурс → HelmRelease (FluxCD) → чарт Helm → оператор → работающая нагрузка.",
   "multi": false
  },
  {
@@ -1404,7 +1404,7 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "Which command shows all catalog application kinds available on the cluster?",
+  "stem": "Какая команда покажет все типы приложений каталога, доступные в кластере?",
   "options": [
    {
     "key": "A",
@@ -1424,7 +1424,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "`kubectl api-resources | grep apps.cozystack` lists every catalog kind the platform serves.",
+  "rationale": "`kubectl api-resources | grep apps.cozystack` выводит все типы каталога, которые обслуживает платформа.",
   "multi": false
  },
  {
@@ -1432,27 +1432,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "What does the Cozystack dashboard create when you deploy an application from a form?",
+  "stem": "Что создаёт дашборд Cozystack, когда вы разворачиваете приложение через форму?",
   "options": [
    {
     "key": "A",
-    "text": "A shell script on the management node"
+    "text": "Shell-скрипт на управляющем узле"
    },
    {
     "key": "B",
-    "text": "The same custom resource that `kubectl apply` would create"
+    "text": "Тот же кастомный ресурс, что и `kubectl apply`"
    },
    {
     "key": "C",
-    "text": "A Docker container outside Kubernetes"
+    "text": "Docker-контейнер вне Kubernetes"
    },
    {
     "key": "D",
-    "text": "A snapshot of the tenant namespace"
+    "text": "Снимок пространства имён тенанта"
    }
   ],
   "answer": "B",
-  "rationale": "the dashboard talks directly to the Kubernetes API; the form creates the same CR that kubectl would apply.",
+  "rationale": "Дашборд работает напрямую с API Kubernetes: форма создаёт ровно тот же ресурс, который вы применили бы через kubectl.",
   "multi": false
  },
  {
@@ -1460,27 +1460,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "How are the dashboard's application forms defined?",
+  "stem": "Откуда берутся формы приложений в дашборде?",
   "options": [
    {
     "key": "A",
-    "text": "They are generated from the application resource schemas"
+    "text": "Генерируются из схем ресурсов приложений"
    },
    {
     "key": "B",
-    "text": "They are hand-coded for each application by the frontend team"
+    "text": "Их вручную пишут фронтендеры для каждого приложения"
    },
    {
     "key": "C",
-    "text": "They are configured in the Platform Package"
+    "text": "Настраиваются в Platform Package"
    },
    {
     "key": "D",
-    "text": "They are imported from Terraform modules"
+    "text": "Импортируются из модулей Terraform"
    }
   ],
   "answer": "A",
-  "rationale": "the dashboard is schema-driven — forms are generated from the application resource schemas, so UI and API never diverge.",
+  "rationale": "дашборд построен на схемах: формы генерируются из схем ресурсов приложений, поэтому UI и API никогда не расходятся.",
   "multi": false
  },
  {
@@ -1488,27 +1488,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "A team manages all infrastructure in Terraform and wants Cozystack databases in the same codebase. What is the most natural path?",
+  "stem": "Команда держит всю инфраструктуру в Terraform и хочет описывать базы данных Cozystack в той же кодовой базе. Как это сделать проще всего?",
   "options": [
    {
     "key": "A",
-    "text": "Click through the dashboard and document the steps"
+    "text": "Кликать в дашборде и записывать шаги в документацию"
    },
    {
     "key": "B",
-    "text": "Use the Cozystack Terraform provider or `kubernetes_manifest` resources"
+    "text": "Использовать Terraform-провайдер Cozystack или ресурсы `kubernetes_manifest`"
    },
    {
     "key": "C",
-    "text": "Write a cron job that runs kubectl"
+    "text": "Написать cron-задачу, которая вызывает kubectl"
    },
    {
     "key": "D",
-    "text": "Edit the Platform Package"
+    "text": "Править Platform Package"
    }
   ],
   "answer": "B",
-  "rationale": "the official Terraform provider (or a plain kubernetes_manifest resource) manages the same CRs as code.",
+  "rationale": "официальный Terraform-провайдер (или обычный ресурс kubernetes_manifest) управляет теми же CR как кодом.",
   "multi": false
  },
  {
@@ -1516,27 +1516,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "What happens when you run `kubectl delete` on a `Postgres` application CR?",
+  "stem": "Что произойдёт, если выполнить `kubectl delete` для CR приложения `Postgres`?",
   "options": [
    {
     "key": "A",
-    "text": "Only the CR object is removed; the database keeps running"
+    "text": "Удалится только объект CR, база продолжит работать"
    },
    {
     "key": "B",
-    "text": "The application and its workloads are removed"
+    "text": "Удалится приложение вместе со своими нагрузками"
    },
    {
     "key": "C",
-    "text": "The command is rejected; applications can only be deleted from the dashboard"
+    "text": "Команда не пройдёт: приложения удаляются только из дашборда"
    },
    {
     "key": "D",
-    "text": "The database is archived to S3 automatically"
+    "text": "База автоматически уедет в архив в S3"
    }
   ],
   "answer": "B",
-  "rationale": "deleting the application CR removes the whole application, including its pods and data — treat it like dropping a database.",
+  "rationale": "удаление CR приложения сносит приложение целиком — вместе с подами и данными. Относитесь к этому как к DROP DATABASE.",
   "multi": false
  },
  {
@@ -1544,7 +1544,7 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "Which set of applications received TLS support in Cozystack v1.5?",
+  "stem": "Какой набор приложений получил поддержку TLS в Cozystack v1.5?",
   "options": [
    {
     "key": "A",
@@ -1564,7 +1564,7 @@
    }
   ],
   "answer": "A",
-  "rationale": "v1.5 added TLS for Kafka, NATS, Qdrant, and PostgreSQL; externally published databases get TLS automatically.",
+  "rationale": "в v1.5 TLS появился у Kafka, NATS, Qdrant и PostgreSQL; базы, опубликованные наружу, получают TLS автоматически.",
   "multi": false
  },
  {
@@ -1572,27 +1572,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "What is the purpose of an ApplicationDefinition?",
+  "stem": "Для чего нужен ApplicationDefinition?",
   "options": [
    {
     "key": "A",
-    "text": "To define resource quotas for a tenant"
+    "text": "Чтобы задать квоты ресурсов для тенанта"
    },
    {
     "key": "B",
-    "text": "To add a new application type to the catalog, backed by a Helm chart"
+    "text": "Чтобы добавить в каталог новый тип приложения на основе Helm-чарта"
    },
    {
     "key": "C",
-    "text": "To describe the network policy of an application"
+    "text": "Чтобы описать сетевую политику приложения"
    },
    {
     "key": "D",
-    "text": "To pin the platform to a specific version"
+    "text": "Чтобы зафиксировать платформу на конкретной версии"
    }
   ],
   "answer": "B",
-  "rationale": "an ApplicationDefinition registers a new catalog application type backed by a Helm chart, with a CR kind and dashboard form.",
+  "rationale": "ApplicationDefinition регистрирует в каталоге новый тип приложения на базе Helm-чарта — со своим kind CR и формой в дашборде.",
   "multi": false
  },
  {
@@ -1600,27 +1600,27 @@
   "domain": "D3",
   "domain_name": "Каталог управляемых приложений",
   "module": "m3",
-  "stem": "What does the `cozy-default` BackupClass in v1.5 give you?",
+  "stem": "Что даёт BackupClass `cozy-default` в v1.5?",
   "options": [
    {
     "key": "A",
-    "text": "Automatic snapshots of every virtual machine"
+    "text": "Автоматические снапшоты всех виртуальных машин"
    },
    {
     "key": "B",
-    "text": "Working managed-app backups out of the box, using a shared system S3 bucket"
+    "text": "Рабочие резервные копии управляемых приложений «из коробки» — в общий системный S3-бакет"
    },
    {
     "key": "C",
-    "text": "A full copy of the management cluster"
+    "text": "Полную копию management-кластера"
    },
    {
     "key": "D",
-    "text": "Incremental block-level VM backups"
+    "text": "Инкрементальные поблочные копии виртуальных машин"
    }
   ],
   "answer": "B",
-  "rationale": "cozy-default is the out-of-the-box BackupClass wired to a shared system S3 bucket (full model in M6).",
+  "rationale": "cozy-default — готовый BackupClass, подключённый к общему системному S3-бакету (полная модель — в M6).",
   "multi": false
  },
  {
@@ -1628,27 +1628,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "How does KubeVirt run a virtual machine?",
+  "stem": "Как KubeVirt запускает виртуальную машину?",
   "options": [
    {
     "key": "A",
-    "text": "On a separate hypervisor cluster next to Kubernetes"
+    "text": "На отдельном кластере гипервизоров рядом с Kubernetes"
    },
    {
     "key": "B",
-    "text": "Inside a Kubernetes pod, as a qemu process"
+    "text": "Внутри пода Kubernetes, как процесс qemu"
    },
    {
     "key": "C",
-    "text": "As a WebAssembly module in the kubelet"
+    "text": "Как WebAssembly-модуль внутри kubelet"
    },
    {
     "key": "D",
-    "text": "Inside a Docker-in-Docker container on the control plane"
+    "text": "Внутри Docker-in-Docker контейнера на control plane"
    }
   ],
   "answer": "B",
-  "rationale": "KubeVirt runs each VM as a qemu/KVM process inside a pod, so the VM is a normal Kubernetes workload.",
+  "rationale": "KubeVirt запускает каждую ВМ как процесс qemu/KVM внутри пода, поэтому ВМ — обычная нагрузка Kubernetes.",
   "multi": false
  },
  {
@@ -1656,27 +1656,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "What is the role of CDI in the virtualization stack?",
+  "stem": "Какая роль у CDI в стеке виртуализации?",
   "options": [
    {
     "key": "A",
-    "text": "It schedules VM pods across nodes"
+    "text": "Распределяет поды виртуальных машин по узлам"
    },
    {
     "key": "B",
-    "text": "It provides the VNC console for VMs"
+    "text": "Даёт VNC-консоль для виртуальных машин"
    },
    {
     "key": "C",
-    "text": "It imports disk images into persistent volumes"
+    "text": "Загружает образы дисков в персистентные тома"
    },
    {
     "key": "D",
-    "text": "It replicates disks between data centers"
+    "text": "Реплицирует диски между дата-центрами"
    }
   ],
   "answer": "C",
-  "rationale": "CDI (Containerized Data Importer) fills PVCs with disk images — from URLs, registries, or uploads — via DataVolume objects.",
+  "rationale": "CDI (Containerized Data Importer) наполняет PVC образами дисков — из URL, реестров или загрузок — через объекты DataVolume.",
   "multi": false
  },
  {
@@ -1684,27 +1684,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "Which statement about VMs in Cozystack is correct?",
+  "stem": "Какое утверждение о виртуальных машинах в Cozystack верно?",
   "options": [
    {
     "key": "A",
-    "text": "VMs are excluded from tenant quotas"
+    "text": "На ВМ не распространяются квоты тенанта"
    },
    {
     "key": "B",
-    "text": "VMs bypass Cilium network policies"
+    "text": "ВМ обходят сетевые политики Cilium"
    },
    {
     "key": "C",
-    "text": "VMs need a dedicated, separate scheduler service"
+    "text": "Для ВМ нужен отдельный планировщик"
    },
    {
     "key": "D",
-    "text": "VMs are placed by the standard Kubernetes scheduler"
+    "text": "ВМ размещает штатный планировщик Kubernetes"
    }
   ],
   "answer": "D",
-  "rationale": "because a VM is a pod, the standard scheduler places it, and quotas and network policies apply to it.",
+  "rationale": "раз ВМ — это под, её размещает штатный планировщик, а квоты и сетевые политики действуют на неё как на обычную нагрузку.",
   "multi": false
  },
  {
@@ -1712,27 +1712,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "What is the canonical way to create a virtual machine in Cozystack v1.5?",
+  "stem": "Как правильно создать виртуальную машину в Cozystack v1.5?",
   "options": [
    {
     "key": "A",
-    "text": "Create a single VirtualMachine resource with an inline disk"
+    "text": "Создать один ресурс VirtualMachine с диском внутри"
    },
    {
     "key": "B",
-    "text": "Create a VMDisk first, then a VMInstance that references it"
+    "text": "Сначала создать VMDisk, затем VMInstance со ссылкой на него"
    },
    {
     "key": "C",
-    "text": "Create a VMInstance first; the platform creates disks automatically"
+    "text": "Сначала создать VMInstance — диски платформа создаст сама"
    },
    {
     "key": "D",
-    "text": "Create a DataVolume and a Pod manually"
+    "text": "Создать DataVolume и Pod вручную"
    }
   ],
   "answer": "B",
-  "rationale": "the canonical v1.5 model is two CRs, disk first: VMDisk (storage), then VMInstance referencing it.",
+  "rationale": "штатная модель v1.5 — два CR, и диск первым: VMDisk (хранилище), затем VMInstance со ссылкой на него.",
   "multi": false
  },
  {
@@ -1740,27 +1740,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "Why are the disk and the instance separate resources?",
+  "stem": "Почему диск и инстанс — отдельные ресурсы?",
   "options": [
    {
     "key": "A",
-    "text": "Kubernetes cannot store two specifications in one object"
+    "text": "Kubernetes не умеет хранить две спецификации в одном объекте"
    },
    {
     "key": "B",
-    "text": "The disk lifecycle is independent: data can survive instance deletion and disks can be reused"
+    "text": "У диска свой жизненный цикл: данные переживают удаление инстанса, диски можно переиспользовать"
    },
    {
     "key": "C",
-    "text": "Disks and instances must run in different namespaces"
+    "text": "Диски и инстансы обязаны жить в разных пространствах имён"
    },
    {
     "key": "D",
-    "text": "It is required for live migration"
+    "text": "Без этого не работает живая миграция"
    }
   ],
   "answer": "B",
-  "rationale": "separate lifecycles are the point — a disk survives instance deletion, can be re-attached and backed up on its own.",
+  "rationale": "весь смысл — в раздельных жизненных циклах: диск переживает удаление инстанса, его можно подключить заново и бэкапить отдельно.",
   "multi": false
  },
  {
@@ -1768,27 +1768,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "A team wants every new VM to start from the same prepared Ubuntu image, without downloading it each time. What should they use?",
+  "stem": "Команда хочет, чтобы каждая новая ВМ стартовала с одного и того же подготовленного образа Ubuntu и он не скачивался каждый раз. Что использовать?",
   "options": [
    {
     "key": "A",
-    "text": "A VMImage (golden image) as the disk source"
+    "text": "VMImage (golden image) как источник диска"
    },
    {
     "key": "B",
-    "text": "An empty disk source"
+    "text": "Пустой диск"
    },
    {
     "key": "C",
-    "text": "The upload source with a shared laptop"
+    "text": "Загрузку образа с общего ноутбука"
    },
    {
     "key": "D",
-    "text": "A larger instance type"
+    "text": "Инстанс большего размера"
    }
   ],
   "answer": "A",
-  "rationale": "a VMImage is the golden image: publish once, then clone new disks from it with source.image.name.",
+  "rationale": "VMImage — это и есть golden image: публикуете один раз, а дальше клонируете из него диски через source.image.name.",
   "multi": false
  },
  {
@@ -1796,7 +1796,7 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "A Linux VM boots, but its network configuration is broken and SSH does not work. Which access method still works?",
+  "stem": "Linux-машина загрузилась, но сеть настроена криво и SSH не работает. Каким способом до неё всё ещё можно достучаться?",
   "options": [
    {
     "key": "A",
@@ -1808,15 +1808,15 @@
    },
    {
     "key": "C",
-    "text": "kubectl port-forward to the guest"
+    "text": "kubectl port-forward внутрь гостя"
    },
    {
     "key": "D",
-    "text": "The dashboard file manager"
+    "text": "Файловый менеджер в дашборде"
    }
   ],
   "answer": "B",
-  "rationale": "the serial console does not depend on guest networking — it is the last-resort access path.",
+  "rationale": "последовательная консоль не зависит от сети внутри гостя — это путь доступа на самый крайний случай.",
   "multi": false
  },
  {
@@ -1824,27 +1824,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "What does cloud-init do?",
+  "stem": "Что делает cloud-init?",
   "options": [
    {
     "key": "A",
-    "text": "It replicates VM disks across nodes"
+    "text": "Реплицирует диски ВМ между узлами"
    },
    {
     "key": "B",
-    "text": "It configures the guest OS at first boot: users, SSH keys, packages"
+    "text": "Настраивает гостевую ОС при первой загрузке: пользователей, SSH-ключи, пакеты"
    },
    {
     "key": "C",
-    "text": "It schedules the VM pod onto a node"
+    "text": "Размещает под виртуальной машины на узле"
    },
    {
     "key": "D",
-    "text": "It converts disk images between formats"
+    "text": "Конвертирует образы дисков между форматами"
    }
   ],
   "answer": "B",
-  "rationale": "cloud-init runs at first boot inside the guest and applies users, keys, hostname, and packages.",
+  "rationale": "cloud-init отрабатывает при первой загрузке внутри гостя и настраивает пользователей, ключи, hostname и пакеты.",
   "multi": false
  },
  {
@@ -1852,27 +1852,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "Which feature exists in Cozystack v1.5?",
+  "stem": "Какая возможность реально есть в Cozystack v1.5?",
   "options": [
    {
     "key": "A",
-    "text": "Automatic restart of VMs after host failure (vSphere HA equivalent)"
+    "text": "Автоперезапуск ВМ после отказа хоста (аналог vSphere HA)"
    },
    {
     "key": "B",
-    "text": "Continuous automatic VM rebalancing across nodes (DRS equivalent)"
+    "text": "Постоянная автобалансировка ВМ по узлам (аналог DRS)"
    },
    {
     "key": "C",
-    "text": "Live migration of running VMs between nodes"
+    "text": "Живая миграция работающих ВМ между узлами"
    },
    {
     "key": "D",
-    "text": "Changed-block-tracking incremental VM backups"
+    "text": "Инкрементальные бэкапы ВМ через changed block tracking"
    }
   ],
   "answer": "C",
-  "rationale": "live migration exists; HA auto-restart, DRS rebalancing, and CBT backups are honest gaps of v1.5.",
+  "rationale": "живая миграция есть; автоперезапуск HA, балансировка DRS и бэкапы через CBT — честные пробелы v1.5.",
   "multi": false
  },
  {
@@ -1880,27 +1880,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "A team asks: \"If a node dies, will our VMs restart on another node automatically?\" What is the honest v1.5 answer?",
+  "stem": "Команда спрашивает: «Если узел умрёт, наши ВМ сами перезапустятся на другом?» Какой честный ответ для v1.5?",
   "options": [
    {
     "key": "A",
-    "text": "Yes, KubeVirt restarts them within seconds"
+    "text": "Да, KubeVirt поднимет их за считаные секунды"
    },
    {
     "key": "B",
-    "text": "No — there is no fencing-based auto-restart out of the box; recovery includes manual steps"
+    "text": "Нет — автоперезапуска с фенсингом «из коробки» нет, в восстановлении есть ручные шаги"
    },
    {
     "key": "C",
-    "text": "Yes, but only for Windows guests"
+    "text": "Да, но только для Windows-гостей"
    },
    {
     "key": "D",
-    "text": "Only if DRS is enabled"
+    "text": "Только если включён DRS"
    }
   ],
   "answer": "B",
-  "rationale": "there is no fencing-based auto-restart in v1.5; node-failure recovery for VMs includes manual steps.",
+  "rationale": "в v1.5 нет автоперезапуска на основе фенсинга; восстановление ВМ после отказа узла включает ручные шаги.",
   "multi": false
  },
  {
@@ -1908,27 +1908,27 @@
   "domain": "D4",
   "domain_name": "Основы виртуализации",
   "module": "m4",
-  "stem": "What changed for GPU passthrough in v1.5?",
+  "stem": "Что изменилось в проброске GPU в v1.5?",
   "options": [
    {
     "key": "A",
-    "text": "GPUs can no longer be attached to VMs"
+    "text": "GPU больше нельзя подключить к ВМ"
    },
    {
     "key": "B",
-    "text": "Node preparation was automated: GPU node labeling and device binding"
+    "text": "Подготовку узлов автоматизировали: разметку GPU-узлов и привязку устройств"
    },
    {
     "key": "C",
-    "text": "GPU passthrough now requires a commercial license"
+    "text": "Проброска GPU теперь требует коммерческой лицензии"
    },
    {
     "key": "D",
-    "text": "GPUs are shared between VMs by default"
+    "text": "GPU по умолчанию делятся между ВМ"
    }
   ],
   "answer": "B",
-  "rationale": "v1.5 automated GPU node preparation: labeling and vfio-pci device binding; a VMInstance requests a GPU via its gpus field.",
+  "rationale": "в v1.5 автоматизировали подготовку GPU-узлов: расстановку меток и привязку устройств к vfio-pci; сама VMInstance запрашивает GPU через поле gpus.",
   "multi": false
  },
  {
@@ -1936,7 +1936,7 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "Which component enforces tenant network isolation in Cozystack?",
+  "stem": "Какой компонент обеспечивает сетевую изоляцию тенантов в Cozystack?",
   "options": [
    {
     "key": "A",
@@ -1956,7 +1956,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "Cilium enforces the automatically generated network policies that isolate tenants (M2).",
+  "rationale": "Cilium применяет автоматически сгенерированные сетевые политики, которые изолируют тенанты (M2).",
   "multi": false
  },
  {
@@ -1964,27 +1964,27 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "A pod inside a tenant must call the Kubernetes API server. What is required?",
+  "stem": "Поду внутри тенанта нужно обращаться к API-серверу Kubernetes. Что для этого нужно?",
   "options": [
    {
     "key": "A",
-    "text": "Nothing; API access is open by default"
+    "text": "Ничего, доступ к API открыт по умолчанию"
    },
    {
     "key": "B",
-    "text": "The label `policy.cozystack.io/allow-to-apiserver: \"true\"` on the pod"
+    "text": "Метка `policy.cozystack.io/allow-to-apiserver: \"true\"` на поде"
    },
    {
     "key": "C",
-    "text": "Setting `isolated: false` on the Tenant resource"
+    "text": "Поставить `isolated: false` в ресурсе Tenant"
    },
    {
     "key": "D",
-    "text": "A dedicated ingress rule"
+    "text": "Отдельное правило ingress"
    }
   ],
   "answer": "B",
-  "rationale": "API server access is closed by default; the pod opts in with the `policy.cozystack.io/allow-to-apiserver: \"true\"` label.",
+  "rationale": "доступ к API-серверу по умолчанию закрыт; под явно его запрашивает меткой `policy.cozystack.io/allow-to-apiserver: \"true\"`.",
   "multi": false
  },
  {
@@ -1992,27 +1992,27 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "Which property does Kube-OVN add to the platform?",
+  "stem": "Что добавляет платформе Kube-OVN?",
   "options": [
    {
     "key": "A",
-    "text": "TLS termination for web applications"
+    "text": "Терминацию TLS для веб-приложений"
    },
    {
     "key": "B",
-    "text": "Stable pod IP addresses across rescheduling"
+    "text": "Постоянные IP-адреса подов при переезде между узлами"
    },
    {
     "key": "C",
-    "text": "eBPF-based kube-proxy replacement"
+    "text": "Замену kube-proxy на eBPF"
    },
    {
     "key": "D",
-    "text": "DNS record management"
+    "text": "Управление DNS-записями"
    }
   ],
   "answer": "B",
-  "rationale": "Kube-OVN's centralized IPAM keeps a pod's IP across rescheduling; the other options belong to TenantGateway/cert-manager, Cilium, and ExternalDNS.",
+  "rationale": "централизованный IPAM в Kube-OVN сохраняет IP пода при перепланировании; остальные пункты — про TenantGateway/cert-manager, Cilium и ExternalDNS.",
   "multi": false
  },
  {
@@ -2020,27 +2020,27 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "Why are stable IP addresses especially important for virtual machines?",
+  "stem": "Почему постоянные IP-адреса особенно важны для виртуальных машин?",
   "options": [
    {
     "key": "A",
-    "text": "VMs cannot use DHCP"
+    "text": "ВМ не умеют работать по DHCP"
    },
    {
     "key": "B",
-    "text": "Kubernetes forbids IP changes for pods"
+    "text": "Kubernetes запрещает подам менять IP"
    },
    {
     "key": "C",
-    "text": "Guest workloads, firewall rules, and licenses often depend on a fixed IP"
+    "text": "Нагрузки внутри гостя, правила фаервола и лицензии часто завязаны на фиксированный IP"
    },
    {
     "key": "D",
-    "text": "Live migration requires IPv6"
+    "text": "Живая миграция требует IPv6"
    }
   ],
   "answer": "C",
-  "rationale": "guests, firewall rules, and licenses often pin to an IP; a VM that changed IP on every migration would break them.",
+  "rationale": "гостевые системы, правила фаервола и лицензии часто привязаны к IP; ВМ, меняющая адрес при каждой миграции, всё это сломает.",
   "multi": false
  },
  {
@@ -2048,27 +2048,27 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "A colleague asks which CNI layer does what. Which pairing is correct?",
+  "stem": "Коллега спрашивает, кто из двух CNI за что отвечает. Какая пара верна?",
   "options": [
    {
     "key": "A",
-    "text": "Cilium: overlay and IPAM; Kube-OVN: network policies"
+    "text": "Cilium: наложенная сеть и IPAM; Kube-OVN: сетевые политики"
    },
    {
     "key": "B",
-    "text": "Cilium: policies and Services (eBPF); Kube-OVN: overlay, centralized IPAM, stable IPs, VPC"
+    "text": "Cilium: политики и Services (eBPF); Kube-OVN: наложенная сеть, централизованный IPAM, постоянные IP, VPC"
    },
    {
     "key": "C",
-    "text": "Both layers do the same job for redundancy"
+    "text": "Оба слоя делают одно и то же для надёжности"
    },
    {
     "key": "D",
-    "text": "Kube-OVN replaces Cilium in v1.5"
+    "text": "В v1.5 Kube-OVN заменил Cilium"
    }
   ],
   "answer": "B",
-  "rationale": "the two CNIs cooperate: Cilium handles packet processing, Services, and policies; Kube-OVN handles the overlay, IPAM, stable IPs, and VPC.",
+  "rationale": "два CNI работают вместе: Cilium отвечает за обработку пакетов, Services и политики, Kube-OVN — за наложенную сеть, IPAM, постоянные IP и VPC.",
   "multi": false
  },
  {
@@ -2076,27 +2076,27 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "What happens to a `LoadBalancer` Service on a bare-metal cluster **without** MetalLB?",
+  "stem": "Что будет с Service типа `LoadBalancer` в bare-metal кластере **без** MetalLB?",
   "options": [
    {
     "key": "A",
-    "text": "It gets an IP from the pod network"
+    "text": "Он получит IP из сети подов"
    },
    {
     "key": "B",
-    "text": "Its external IP stays pending forever"
+    "text": "Внешний IP навсегда останется в pending"
    },
    {
     "key": "C",
-    "text": "It falls back to NodePort automatically"
+    "text": "Он автоматически откатится к NodePort"
    },
    {
     "key": "D",
-    "text": "It is rejected by the API server"
+    "text": "API-сервер его отклонит"
    }
   ],
   "answer": "B",
-  "rationale": "on bare metal nothing supplies external IPs; without MetalLB the Service's external IP stays pending.",
+  "rationale": "на голом железе внешние IP выдавать некому: без MetalLB внешний адрес Service так и висит в pending.",
   "multi": false
  },
  {
@@ -2104,27 +2104,27 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "Which statement describes MetalLB's BGP mode?",
+  "stem": "Что описывает режим BGP в MetalLB?",
   "options": [
    {
     "key": "A",
-    "text": "One node answers ARP requests for the service IP"
+    "text": "Один узел отвечает на ARP-запросы для IP сервиса"
    },
    {
     "key": "B",
-    "text": "Nodes announce service IPs to physical routers as routes"
+    "text": "Узлы анонсируют IP сервисов физическим маршрутизаторам как маршруты"
    },
    {
     "key": "C",
-    "text": "It works only in public clouds"
+    "text": "Он работает только в публичных облаках"
    },
    {
     "key": "D",
-    "text": "It requires the TenantGateway CRD"
+    "text": "Ему нужен CRD TenantGateway"
    }
   ],
   "answer": "B",
-  "rationale": "in BGP mode nodes peer with physical routers and announce service IPs as routes (FRR-K8s backend since v1.5); ARP answering is L2 mode.",
+  "rationale": "в режиме BGP узлы поднимают пиринг с физическими маршрутизаторами и анонсируют IP сервисов как маршруты (с v1.5 бэкенд — FRR-K8s); ответы на ARP — это режим L2.",
   "multi": false
  },
  {
@@ -2132,27 +2132,27 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "How is ingress deployed in Cozystack?",
+  "stem": "Как в Cozystack развёрнут ingress?",
   "options": [
    {
     "key": "A",
-    "text": "One shared ingress controller for the whole platform"
+    "text": "Один общий ingress-контроллер на всю платформу"
    },
    {
     "key": "B",
-    "text": "One ingress-nginx controller per tenant, enabled by a tenant toggle"
+    "text": "По одному контроллеру ingress-nginx на тенант, включается переключателем тенанта"
    },
    {
     "key": "C",
-    "text": "Ingress runs on a dedicated hardware appliance"
+    "text": "Ingress работает на выделенном железном устройстве"
    },
    {
     "key": "D",
-    "text": "Ingress is not supported; only LoadBalancer Services exist"
+    "text": "Ingress не поддерживается, есть только Services типа LoadBalancer"
    }
   ],
   "answer": "B",
-  "rationale": "ingress-nginx is deployed per tenant via the `ingress` toggle; missing services are inherited from the parent (M2).",
+  "rationale": "ingress-nginx разворачивается для каждого тенанта через переключатель `ingress`; если своего нет, сервис наследуется от родителя (M2).",
   "multi": false
  },
  {
@@ -2160,7 +2160,7 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "What backs the TenantGateway data plane?",
+  "stem": "На чём работает data plane у TenantGateway?",
   "options": [
    {
     "key": "A",
@@ -2180,7 +2180,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "TenantGateway is Gateway API implemented by Cilium — no nginx in that data path.",
+  "rationale": "TenantGateway — это Gateway API в реализации Cilium; никакого nginx в этом пути данных нет.",
   "multi": false
  },
  {
@@ -2188,7 +2188,7 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "A tenant needs a wildcard certificate for `*.apps.example.com`. Which validation mode supports this?",
+  "stem": "Тенанту нужен wildcard-сертификат на `*.apps.example.com`. Какой способ проверки это позволяет?",
   "options": [
    {
     "key": "A",
@@ -2208,7 +2208,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "wildcard certificates require DNS-01 validation; HTTP-01 cannot issue wildcards.",
+  "rationale": "Wildcard-сертификаты выпускаются только через проверку DNS-01. HTTP-01 их не выдаёт.",
   "multi": false
  },
  {
@@ -2216,7 +2216,7 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "The platform domain is `cloud.example.com`. What is the default domain of tenant `alpha` created directly under root?",
+  "stem": "Домен платформы — `cloud.example.com`. Какой домен по умолчанию получит тенант `alpha`, созданный прямо в корне?",
   "options": [
    {
     "key": "A",
@@ -2236,7 +2236,7 @@
    }
   ],
   "answer": "A",
-  "rationale": "the default tenant domain is `<name>.<parent-domain>`, so alpha under root gets `alpha.cloud.example.com`.",
+  "rationale": "Домен тенанта по умолчанию строится как `<имя>.<домен-родителя>`, поэтому alpha в корне получает `alpha.cloud.example.com`.",
   "multi": false
  },
  {
@@ -2244,7 +2244,7 @@
   "domain": "D5",
   "domain_name": "Основы сетей",
   "module": "m5",
-  "stem": "Which component creates DNS records for published applications automatically?",
+  "stem": "Какой компонент сам создаёт DNS-записи для опубликованных приложений?",
   "options": [
    {
     "key": "A",
@@ -2264,7 +2264,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "ExternalDNS watches published services/ingresses and creates DNS records; cert-manager handles certificates, not names.",
+  "rationale": "ExternalDNS следит за опубликованными сервисами и ingress-ами и заводит для них DNS-записи. cert-manager занимается сертификатами, а не именами.",
   "multi": false
  },
  {
@@ -2272,7 +2272,7 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "Which component stores metrics in Cozystack?",
+  "stem": "Какой компонент хранит метрики в Cozystack?",
   "options": [
    {
     "key": "A",
@@ -2292,7 +2292,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "VictoriaMetrics (VMCluster) stores metrics; there is no Prometheus in the stack, only PromQL compatibility.",
+  "rationale": "Метрики хранит VictoriaMetrics (VMCluster). Prometheus в стеке нет — есть только совместимость с PromQL.",
   "multi": false
  },
  {
@@ -2300,27 +2300,27 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "A tenant has no Monitoring application of its own. What happens when its workloads need monitoring?",
+  "stem": "У тенанта нет собственного приложения Monitoring. Что будет с мониторингом его нагрузок?",
   "options": [
    {
     "key": "A",
-    "text": "Monitoring data is lost"
+    "text": "Данные мониторинга теряются"
    },
    {
     "key": "B",
-    "text": "The tenant must install Prometheus manually"
+    "text": "Тенант должен вручную поставить Prometheus"
    },
    {
     "key": "C",
-    "text": "The tenant inherits the monitoring service from its parent tenant"
+    "text": "Тенант пользуется мониторингом родительского тенанта"
    },
    {
     "key": "D",
-    "text": "The platform blocks new workloads in this tenant"
+    "text": "Платформа запретит запускать новые нагрузки"
    }
   ],
   "answer": "C",
-  "rationale": "Monitoring is a per-tenant catalog application; a tenant without its own inherits the nearest ancestor's (M2 inheritance rule).",
+  "rationale": "Monitoring — приложение из каталога, своё у каждого тенанта. Если своего нет, работает мониторинг ближайшего предка — обычное правило наследования из M2.",
   "multi": false
  },
  {
@@ -2328,7 +2328,7 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "Which component groups and deduplicates alerts before sending notifications?",
+  "stem": "Какой компонент группирует алерты и убирает дубли перед отправкой уведомлений?",
   "options": [
    {
     "key": "A",
@@ -2348,7 +2348,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "the pipeline is VMAlert (evaluates rules) -> Alerta (groups, deduplicates, routes) -> Email/SMS/Slack.",
+  "rationale": "Цепочка такая: VMAlert считает правила, Alerta группирует, дедуплицирует и маршрутизирует, дальше — Email/SMS/Slack.",
   "multi": false
  },
  {
@@ -2356,7 +2356,7 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "You want to check the health of LINSTOR volumes. Which standard dashboard group do you open?",
+  "stem": "Нужно проверить состояние томов LINSTOR. Какую группу стандартных дашбордов открыть?",
   "options": [
    {
     "key": "A",
@@ -2376,7 +2376,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "the Storage dashboard group covers LINSTOR and SeaweedFS health.",
+  "rationale": "Группа дашбордов Storage показывает состояние LINSTOR и SeaweedFS.",
   "multi": false
  },
  {
@@ -2384,7 +2384,7 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "A user wants an automatic backup of a managed PostgreSQL database every night. Which object do they create?",
+  "stem": "Пользователь хочет каждую ночь автоматически снимать резервную копию управляемой базы PostgreSQL. Какой объект он создаёт?",
   "options": [
    {
     "key": "A",
@@ -2404,7 +2404,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "a Plan is the scheduled backup (cron); a BackupJob is a one-off run; a Backup is the result object.",
+  "rationale": "Plan — это копирование по расписанию (cron). BackupJob — разовый запуск, Backup — уже готовый результат.",
   "multi": false
  },
  {
@@ -2412,7 +2412,7 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "Which object is cluster-scoped and created by the platform administrator?",
+  "stem": "Какой объект существует на уровне кластера и создаётся администратором платформы?",
   "options": [
    {
     "key": "A",
@@ -2432,7 +2432,7 @@
    }
   ],
   "answer": "A",
-  "rationale": "BackupClass is the single cluster-scoped configuration object created by the platform administrator; the rest are user- or system-created.",
+  "rationale": "BackupClass — единственный объект уровня кластера, его заводит администратор платформы. Остальные создают пользователи или сама система.",
   "multi": false
  },
  {
@@ -2440,27 +2440,27 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "What does the `cozy-default` BackupClass in v1.5 provide?",
+  "stem": "Что даёт BackupClass `cozy-default` в версии v1.5?",
   "options": [
    {
     "key": "A",
-    "text": "Automatic backups of the whole management cluster"
+    "text": "Автоматические копии всего management-кластера"
    },
    {
     "key": "B",
-    "text": "A ready backup configuration with a shared system S3 bucket, so managed-app backups work without admin setup"
+    "text": "Готовую конфигурацию с общим системным S3-бакетом — копии управляемых приложений работают без настройки администратором"
    },
    {
     "key": "C",
-    "text": "Incremental VM backups"
+    "text": "Инкрементальные копии виртуальных машин"
    },
    {
     "key": "D",
-    "text": "A free external S3 account for every tenant"
+    "text": "Бесплатный внешний S3-аккаунт каждому тенанту"
    }
   ],
   "answer": "B",
-  "rationale": "cozy-default ships since v1.5 with a shared system S3 bucket, so managed-app backups work without administrator setup.",
+  "rationale": "cozy-default идёт из коробки начиная с v1.5 и приносит общий системный S3-бакет, так что копии управляемых приложений снимаются без настройки администратором.",
   "multi": false
  },
  {
@@ -2468,7 +2468,7 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "Since which release is Velero a default Cozystack component?",
+  "stem": "С какого релиза Velero входит в Cozystack по умолчанию?",
   "options": [
    {
     "key": "A",
@@ -2484,11 +2484,11 @@
    },
    {
     "key": "D",
-    "text": "It is still optional"
+    "text": "Он до сих пор опционален"
    }
   ],
   "answer": "C",
-  "rationale": "Velero (cozystack.velero) became a default platform component in v1.5.",
+  "rationale": "Velero (cozystack.velero) стал штатным компонентом платформы в v1.5.",
   "multi": false
  },
  {
@@ -2496,7 +2496,7 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "Which Velero object defines *where* backups are stored?",
+  "stem": "Какой объект Velero задаёт, *где* лежат резервные копии?",
   "options": [
    {
     "key": "A",
@@ -2516,7 +2516,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "the BackupStorageLocation defines the S3 target where backups land; Strategies define how, BackupClass binds them to app types.",
+  "rationale": "BackupStorageLocation описывает S3-хранилище, куда попадают копии. Strategy отвечает за то, как копировать, а BackupClass связывает всё это с типами приложений.",
   "multi": false
  },
  {
@@ -2524,27 +2524,27 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "Which items are NOT captured by a managed-app data-only backup? (Choose the best answer.)",
+  "stem": "Что НЕ попадает в резервную копию управляемого приложения, снятую только по данным? (Выберите наиболее точный ответ.)",
   "options": [
    {
     "key": "A",
-    "text": "Database tables and rows"
+    "text": "Таблицы и строки базы данных"
    },
    {
     "key": "B",
-    "text": "Helm release, application CR, and operator secrets"
+    "text": "Helm-релиз, CR приложения и секреты оператора"
    },
    {
     "key": "C",
-    "text": "The S3 bucket contents"
+    "text": "Содержимое S3-бакета"
    },
    {
     "key": "D",
-    "text": "The Backup result object"
+    "text": "Объект Backup с результатом"
    }
   ],
   "answer": "B",
-  "rationale": "data-only backups capture the database content; the Helm release, application CR, and operator secrets are not captured.",
+  "rationale": "Такая копия забирает только содержимое базы. Helm-релиз, CR приложения и секреты оператора в неё не входят.",
   "multi": false
  },
  {
@@ -2552,27 +2552,27 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "What must be true before you restore a managed-app backup?",
+  "stem": "Какое условие должно выполняться до восстановления копии управляемого приложения?",
   "options": [
    {
     "key": "A",
-    "text": "The target application must already be provisioned"
+    "text": "Целевое приложение уже должно быть развёрнуто"
    },
    {
     "key": "B",
-    "text": "The tenant must be deleted first"
+    "text": "Тенант нужно сначала удалить"
    },
    {
     "key": "C",
-    "text": "Velero must be disabled"
+    "text": "Velero нужно отключить"
    },
    {
     "key": "D",
-    "text": "The cluster must run Prometheus"
+    "text": "В кластере должен работать Prometheus"
    }
   ],
   "answer": "A",
-  "rationale": "restore fills an existing database with data; because backups are data-only, the target application must already be provisioned.",
+  "rationale": "Восстановление заливает данные в существующую базу. Копии содержат только данные, поэтому целевое приложение должно быть развёрнуто заранее.",
   "multi": false
  },
  {
@@ -2580,27 +2580,27 @@
   "domain": "D6",
   "domain_name": "Наблюдаемость и резервные копии",
   "module": "m6",
-  "stem": "What kind of VM backups does the platform make?",
+  "stem": "Какие резервные копии виртуальных машин делает платформа?",
   "options": [
    {
     "key": "A",
-    "text": "Incremental, using changed-block tracking"
+    "text": "Инкрементальные, с отслеживанием изменённых блоков"
    },
    {
     "key": "B",
-    "text": "Full backups of configuration and all attached disks"
+    "text": "Полные — конфигурация и все подключённые диски"
    },
    {
     "key": "C",
-    "text": "Configuration only, without disks"
+    "text": "Только конфигурацию, без дисков"
    },
    {
     "key": "D",
-    "text": "Disks only, without configuration"
+    "text": "Только диски, без конфигурации"
    }
   ],
   "answer": "B",
-  "rationale": "a VM backup captures the configuration plus all attached disks, and every backup is full — no CBT/incrementals exist.",
+  "rationale": "В копию попадают конфигурация и все подключённые диски, и каждая копия полная — инкрементальных копий и CBT здесь нет.",
   "multi": false
  },
  {
@@ -2608,27 +2608,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m7",
-  "stem": "What does a Kubernetes controller do?",
+  "stem": "Чем занимается контроллер в Kubernetes?",
   "options": [
    {
     "key": "A",
-    "text": "It runs user commands one by one, in order"
+    "text": "Выполняет команды пользователя по очереди"
    },
    {
     "key": "B",
-    "text": "It continuously compares desired state with actual state and acts on the difference"
+    "text": "Постоянно сравнивает желаемое состояние с фактическим и устраняет расхождение"
    },
    {
     "key": "C",
-    "text": "It stores the cluster configuration on disk"
+    "text": "Хранит конфигурацию кластера на диске"
    },
    {
     "key": "D",
-    "text": "It routes network traffic between pods"
+    "text": "Маршрутизирует трафик между подами"
    }
   ],
   "answer": "B",
-  "rationale": "a controller runs the reconciliation loop: compare desired with actual state and act on the difference, forever.",
+  "rationale": "Контроллер крутит цикл сверки: сравнивает желаемое состояние с фактическим и устраняет разницу — и так бесконечно.",
   "multi": false
  },
  {
@@ -2636,7 +2636,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m7",
-  "stem": "Which object provides a stable network name in front of a set of pods?",
+  "stem": "Какой объект даёт постоянное сетевое имя для набора подов?",
   "options": [
    {
     "key": "A",
@@ -2656,7 +2656,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "a Service gives a stable name and virtual IP in front of a changing set of pods.",
+  "rationale": "Service даёт постоянное имя и виртуальный IP перед набором подов, который всё время меняется.",
   "multi": false
  },
  {
@@ -2664,27 +2664,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m7",
-  "stem": "Why does `kubectl get tenants` work on a Cozystack cluster?",
+  "stem": "Почему `kubectl get tenants` работает в кластере Cozystack?",
   "options": [
    {
     "key": "A",
-    "text": "Tenants are a built-in Kubernetes object type"
+    "text": "Tenant — встроенный тип объектов Kubernetes"
    },
    {
     "key": "B",
-    "text": "Cozystack extends the Kubernetes API, so the API server knows the Tenant type (served by the cozystack-api aggregated server)"
+    "text": "Cozystack расширяет API Kubernetes, и API-серверу известен тип Tenant (его отдаёт агрегированный сервер cozystack-api)"
    },
    {
     "key": "C",
-    "text": "kubectl has a special Cozystack plugin"
+    "text": "У kubectl есть специальный плагин для Cozystack"
    },
    {
     "key": "D",
-    "text": "It only works inside the dashboard terminal"
+    "text": "Это работает только в терминале дашборда"
    }
   ],
   "answer": "B",
-  "rationale": "Cozystack extends the Kubernetes API — apps.cozystack.io kinds are served by the cozystack-api aggregated API server, so standard kubectl verbs work.",
+  "rationale": "Cozystack расширяет API Kubernetes: типы из apps.cozystack.io отдаёт агрегированный API-сервер cozystack-api, поэтому обычные команды kubectl с ними работают.",
   "multi": false
  },
  {
@@ -2692,7 +2692,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m7",
-  "stem": "Which API group contains the Cozystack catalog resources?",
+  "stem": "В какой группе API лежат ресурсы каталога Cozystack?",
   "options": [
    {
     "key": "A",
@@ -2712,7 +2712,7 @@
    }
   ],
   "answer": "C",
-  "rationale": "all catalog resources — Tenant, Postgres, VMInstance, and the rest — live in apps.cozystack.io/v1alpha1.",
+  "rationale": "Все ресурсы каталога — Tenant, Postgres, VMInstance и прочие — живут в apps.cozystack.io/v1alpha1.",
   "multi": false
  },
  {
@@ -2720,7 +2720,7 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m7",
-  "stem": "What is the first diagnostic command to check overall Cozystack platform health?",
+  "stem": "С какой команды начинают проверку общего состояния платформы Cozystack?",
   "options": [
    {
     "key": "A",
@@ -2740,7 +2740,7 @@
    }
   ],
   "answer": "B",
-  "rationale": "every platform component is a HelmRelease, so `kubectl get hr -A` with all READY True is the universal health check.",
+  "rationale": "Каждый компонент платформы — это HelmRelease, поэтому `kubectl get hr -A` со всеми READY True и есть универсальная проверка здоровья.",
   "multi": false
  },
  {
@@ -2748,27 +2748,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m7",
-  "stem": "What does a HelmRelease object declare?",
+  "stem": "Что описывает объект HelmRelease?",
   "options": [
    {
     "key": "A",
-    "text": "A one-time installation command that runs once and disappears"
+    "text": "Разовую команду установки, которая отрабатывает и исчезает"
    },
    {
     "key": "B",
-    "text": "That a specific chart with specific values must be installed and kept installed"
+    "text": "Что конкретный чарт с конкретными значениями должен быть установлен и оставаться установленным"
    },
    {
     "key": "C",
-    "text": "A backup of a Helm chart"
+    "text": "Резервную копию Helm-чарта"
    },
    {
     "key": "D",
-    "text": "The Git repository where application source code lives"
+    "text": "Git-репозиторий с исходным кодом приложения"
    }
   ],
   "answer": "B",
-  "rationale": "a HelmRelease declares desired state — chart, version, values — and FluxCD keeps it installed and reconciled.",
+  "rationale": "HelmRelease описывает желаемое состояние — чарт, версию, значения, — а FluxCD следит, чтобы всё это оставалось установленным и сходилось с описанием.",
   "multi": false
  },
  {
@@ -2776,27 +2776,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m7",
-  "stem": "What is a Helm chart?",
+  "stem": "Что такое Helm-чарт?",
   "options": [
    {
     "key": "A",
-    "text": "A running instance of an application"
+    "text": "Запущенный экземпляр приложения"
    },
    {
     "key": "B",
-    "text": "A package of Kubernetes manifest templates plus metadata"
+    "text": "Пакет из шаблонов манифестов Kubernetes и метаданных"
    },
    {
     "key": "C",
-    "text": "A dashboard for cluster metrics"
+    "text": "Дашборд с метриками кластера"
    },
    {
     "key": "D",
-    "text": "A Kubernetes node type"
+    "text": "Тип узла Kubernetes"
    }
   ],
   "answer": "B",
-  "rationale": "a chart is the package (templates + metadata); a release is that chart installed with specific values.",
+  "rationale": "Чарт — это пакет: шаблоны плюс метаданные. А релиз — тот же чарт, установленный с конкретными значениями.",
   "multi": false
  },
  {
@@ -2804,27 +2804,27 @@
   "domain": "D7",
   "domain_name": "Основы cloud native",
   "module": "m7",
-  "stem": "How is the Cozystack platform itself installed?",
+  "stem": "Как устанавливают саму платформу Cozystack?",
   "options": [
    {
     "key": "A",
-    "text": "With an operating system package manager (apt/yum)"
+    "text": "Пакетным менеджером ОС (apt/yum)"
    },
    {
     "key": "B",
-    "text": "By copying binaries to every node over SSH"
+    "text": "Копированием бинарников на все узлы по SSH"
    },
    {
     "key": "C",
-    "text": "With a Helm command that installs the cozy-installer chart"
+    "text": "Командой Helm, которая ставит чарт cozy-installer"
    },
    {
     "key": "D",
-    "text": "Through the Grafana interface"
+    "text": "Через интерфейс Grafana"
    }
   ],
   "answer": "C",
-  "rationale": "the platform installs with one idempotent Helm command: `helm upgrade --install ... cozy-installer` into cozy-system (M1).",
+  "rationale": "Платформа ставится одной идемпотентной командой Helm: `helm upgrade --install ... cozy-installer` в пространство имён cozy-system (M1).",
   "multi": false
  }
 ]
