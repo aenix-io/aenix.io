@@ -8,7 +8,10 @@
 // becomes a problem.
 
 // Anti-fraud allow-list: only URLs whose host is one of ours may be shortened.
-export const ALLOWED_HOSTS = new Set(['aenix.io', 'k.aenix.io', 'opc.aenix.io']);
+// Exception: calendar.google.com — its /render endpoint only opens an
+// event-creation form and never redirects, so it cannot hide a foreign link
+// behind our domain (unlike www.google.com, which has a /url?q= open redirect).
+export const ALLOWED_HOSTS = new Set(['aenix.io', 'k.aenix.io', 'opc.aenix.io', 'calendar.google.com']);
 
 // Paths that already exist on the site (or are about to) — never hand them out.
 export const RESERVED = new Set(['l', 'go', 'api', 'admin', 'static', 'assets', 'links']);
