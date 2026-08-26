@@ -14,6 +14,8 @@ const ok = (name, cond) => {
 ok('accepts aenix.io', validateTarget('https://aenix.io/pricing/').ok);
 ok('accepts k.aenix.io', validateTarget('https://k.aenix.io/x').ok);
 ok('accepts opc.aenix.io', validateTarget('https://opc.aenix.io/').ok);
+ok('accepts calendar.google.com', validateTarget('https://calendar.google.com/calendar/render?action=TEMPLATE').ok);
+ok('rejects www.google.com (open redirect)', !validateTarget('https://www.google.com/url?q=https://evil.example.com').ok);
 ok('rejects a foreign host', !validateTarget('https://evil.example.com/phish').ok);
 ok('rejects a look-alike host', !validateTarget('https://aenix.io.evil.com/').ok);
 ok('rejects a subdomain not on the list', !validateTarget('https://blog.aenix.io/').ok);
