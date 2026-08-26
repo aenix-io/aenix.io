@@ -46,12 +46,16 @@
     var stem = document.createElement('p'); stem.className = 'q__stem'; stem.textContent = q.stem;
     card.appendChild(stem);
 
+    // Клик по <label> с радио внутри приходит дважды: сам клик и переброшенный
+    // на input, который всплывает обратно. Без замка ответ засчитывался один раз,
+    // но разбор и кнопка «Следующий вопрос» дорисовывались по второму разу.
+    var locked = false;
     item.opts.forEach(function (o) {
       var lab = document.createElement('label');
       lab.className = 'q__opt'; lab.tabIndex = 0;
       lab.innerHTML = '<input type="radio" name="opt">';
       lab.appendChild(document.createTextNode(o.text));
-      function pick() { answer(item, o, card); }
+      function pick() { if (locked) return; locked = true; answer(item, o, card); }
       lab.addEventListener('click', pick);
       lab.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); }
@@ -70,10 +74,16 @@
 
     var labels = card.querySelectorAll('.q__opt');
     item.opts.forEach(function (o, i) {
-      var el = labels[i]; el.style.cursor = 'default';
+      var el = labels[i];
       var clone = el.cloneNode(true); el.parentNode.replaceChild(clone, el); // снимаем обработчики
-      if (o.key === q.answer) clone.className = 'q__opt q__opt--ok';
-      else if (o === chosen) clone.className = 'q__opt q__opt--no';
+      clone.className = 'q__opt q__opt--done';
+      if (o.key === q.answer) clone.className += ' q__opt--ok';
+      else if (o === chosen) clone.className += ' q__opt--no';
+      // Клонирование убирает обработчики, но не сам переключатель: живой radio внутри
+      // подписи продолжал переключаться по клику, будто ответ ещё можно поменять.
+      var radio = clone.querySelector('input');
+      if (radio) { radio.checked = (o === chosen); radio.disabled = true; }
+      clone.removeAttribute('tabindex');   // отвеченное не должно ловить фокус табом
     });
     if (q.rationale) {
       var why = document.createElement('p'); why.className = 'q__why';
