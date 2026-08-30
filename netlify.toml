@@ -15,6 +15,37 @@
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
+# --- Live Demo (cozyportal mock, served under /demo/) ---
+# Canned Keycloak Account API responses for the demo's User Settings screen
+# (mirrors the demo's serve.py). GETs return fixtures; any mutation returns {}.
+# These must precede the /demo/* SPA fallback and the site-wide 404.
+[[redirects]]
+  from = "/demo/kc"
+  to = "/demo/_kc/account.json"
+  status = 200
+
+[[redirects]]
+  from = "/demo/kc/credentials"
+  to = "/demo/_kc/credentials.json"
+  status = 200
+
+[[redirects]]
+  from = "/demo/kc/sessions/devices"
+  to = "/demo/_kc/devices.json"
+  status = 200
+
+[[redirects]]
+  from = "/demo/kc/*"
+  to = "/demo/_kc/empty.json"
+  status = 200
+
+# SPA fallback: deep links / refreshes inside the demo resolve to its index.
+# Existing static assets take precedence, so this only catches client routes.
+[[redirects]]
+  from = "/demo/*"
+  to = "/demo/index.html"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/404.html"

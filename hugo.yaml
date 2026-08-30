@@ -437,6 +437,13 @@ menus:
       params:
         cta: true
 
+    - name: Live Demo
+      url: /demo/
+      weight: 85
+      identifier: live-demo
+      params:
+        cta: true
+        external: true
   # ── German (DE) main menu — rendered on /de/ pages (language: de) ──
   main_de:
     - name: Produkte
@@ -773,6 +780,13 @@ menus:
       params:
         cta: true
 
+    - name: Live Demo
+      url: /demo/
+      weight: 85
+      identifier: live-demo-de
+      params:
+        cta: true
+        external: true
   footer:
     - name: Ænix Platform
       url: /products/aenix-platform/

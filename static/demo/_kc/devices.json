@@ -1,0 +1,1 @@
+[{"os": "macOS", "osVersion": "15.3", "browser": "Chrome/141.0.0", "device": "Other", "lastAccess": 1781478000000, "current": true, "sessions": [{"id": "demo-session-current", "ipAddress": "203.0.113.10", "started": 1781467200000, "lastAccess": 1781478000000, "expires": 1781503200000, "clients": {"cozy-portal": "Cozy Portal"}, "browser": "Chrome/141.0.0", "current": true}]}]
