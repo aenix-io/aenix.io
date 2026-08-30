@@ -49,6 +49,13 @@ faq:
   <a class="cta-secondary" href="/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/">Hosting-Plattform-Modernisierung →</a>
 </div>
 
+**Sehen Sie das Kundenportal selbst.** Die cozyportal-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
+</div>
+
+
 ---
 
 ## Wer in der Zielgruppe ist
