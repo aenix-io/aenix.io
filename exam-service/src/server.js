@@ -18,10 +18,12 @@ const KID = process.env.SIGNING_KID || "ccf-2026a";
 const PLATFORM = process.env.PLATFORM_VERSION || "v1.6";
 const SITE = process.env.SITE_BASE || "https://aenix.io";
 const ADMIN = process.env.ADMIN_TOKEN || "";
+let HTML = "<!doctype html><title>exam</title><p>frontend not mounted</p>";
+try { HTML = fs.readFileSync(process.env.HTML_PATH || "/app/src/index.html", "utf8"); } catch {}
 
 // Хранилище. Одна точка подмены: в бою — Postgres, в проверке — память.
 const STORE = { accounts: new Map(), invites: new Map(), sessions: new Map(),
-                answers: new Map(), certs: new Map() };
+                answers: new Map(), certs: new Map(), creds: new Map() };
 const now = () => Math.floor(Date.now() / 1000);
 
 function send(res, code, obj) {
@@ -35,6 +37,39 @@ const readJson = (req) => new Promise((ok) => {
 });
 
 const routes = {
+  // Фронтенд экзамена: одностраничное приложение отдаётся с того же origin.
+  "GET /": async (req, res) => {
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
+    res.end(HTML);
+  },
+
+  // Выдача доступа админом: возвращает ЛОГИН и ПАРОЛЬ (их Тимур передаёт кандидату лично).
+  // Имя латиницей фиксируется и кандидату не редактируется.
+  "POST /admin/create": async (req, res) => {
+    if (req.headers.authorization !== `Bearer ${ADMIN}`) return send(res, 403, { error: "нет доступа" });
+    const { name, email } = await readJson(req);
+    if (!name || !/^[A-Za-z .'-]{3,60}$/.test(name))
+      return send(res, 400, { error: "имя нужно латиницей, как в загранпаспорте" });
+    const account = crypto.randomUUID();
+    STORE.accounts.set(account, { id: account, name, email: email || null,
+      attempts_used: 0, last_attempt_at: 0, seen_ids: [] });
+    const rnd = (n) => [...crypto.getRandomValues(new Uint8Array(n))]
+      .map((b) => "0123456789abcdefghjkmnpqrstvwxyz"[b % 32]).join("");
+    const login = "ccf-" + rnd(6);
+    const password = rnd(5) + "-" + rnd(5);
+    STORE.creds.set(login, { password, account });
+    send(res, 200, { account, name, login, password });
+  },
+
+  // Вход кандидата по логину и паролю.
+  "POST /login": async (req, res) => {
+    const { login, password } = await readJson(req);
+    const rec = STORE.creds.get((login || "").trim());
+    if (!rec || rec.password !== password) return send(res, 403, { error: "неверный логин или пароль" });
+    const acc = STORE.accounts.get(rec.account);
+    send(res, 200, { account: rec.account, name: acc ? acc.name : null });
+  },
+
   // Выдача приглашения. Имя латиницей фиксируется здесь и кандидату не редактируется:
   // иначе один общий аккаунт выписывал бы сертификаты на весь отдел.
   "POST /admin/invite": async (req, res) => {
@@ -154,6 +189,16 @@ const routes = {
 
 http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
+  // CORS: модалка «Начать экзамен» логинит кросс-origin. Отражаем Origin для
+  // aenix.io (любой поддомен) и Netlify-превью; остальным — без CORS.
+  const origin = req.headers.origin || "";
+  if (/^https:\/\/([a-z0-9-]+\.)*aenix\.io$/.test(origin) || /\.netlify\.app$/.test(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+    res.setHeader("Vary", "Origin");
+  }
+  res.setHeader("Access-Control-Allow-Headers", "content-type");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  if (req.method === "OPTIONS") { res.writeHead(204); return res.end(); }
   const fn = routes[`${req.method} ${url.pathname}`];
   if (!fn) return send(res, 404, { error: "not found" });
   try { await fn(req, res, url); }

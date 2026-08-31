@@ -58,7 +58,7 @@ spec:
             - name: SITE_BASE
               value: "https://aenix.io"
             - name: SERVICE_BASE
-              value: "https://exam.aenix.io"
+              value: "https://exam.cert.workshop.aenix.io"
             - name: BANK_PATH
               value: /bank/bank.json
           volumeMounts:
