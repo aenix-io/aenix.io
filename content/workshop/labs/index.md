@@ -23,7 +23,10 @@ url: "/workshop/labs/"
    пятнадцать, каждая со своим скриптом проверки.
 2. После каждой запустить `./check.sh` — он сохранит результат.
 3. В конце запустить `check/bundle.sh` — он соберёт всё в один файл.
-4. Загрузить этот файл на **<a href="https://exam.aenix.io/labs" target="_blank" rel="noopener">exam.aenix.io/labs</a>**.
+4. Отправить этот файл Тимуру — <a href="https://t.me/tym83" target="_blank" rel="noopener">@tym83 в Telegram</a>
+   или <a href="https://www.linkedin.com/in/timur-tukaev/" target="_blank" rel="noopener">Timur Tukaev в LinkedIn</a>.
+   Мы проверим результаты и выдадим значок. Значок — это не сертификация: он говорит «человек
+   проделал работу руками», отдельного экзамена не заменяет.
 
 ## Про файл
 
