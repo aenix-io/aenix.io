@@ -24,6 +24,33 @@ try { HTML = fs.readFileSync(process.env.HTML_PATH || "/app/src/index.html", "ut
 // Хранилище. Одна точка подмены: в бою — Postgres, в проверке — память.
 const STORE = { accounts: new Map(), invites: new Map(), sessions: new Map(),
                 answers: new Map(), certs: new Map(), creds: new Map() };
+
+// Персистентность: снапшот стора на диск (PVC). Node без внешних зависимостей —
+// поэтому не Postgres, а атомарный JSON-снапшот. Аккаунты, попытки, выданные
+// сертификаты и сессии переживают рестарт пода.
+const DATA_PATH = process.env.DATA_PATH || "/data/store.json";
+const PERSIST_KEYS = ["accounts", "invites", "sessions", "answers", "certs", "creds"];
+function loadStore() {
+  try {
+    const d = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
+    for (const k of PERSIST_KEYS) if (Array.isArray(d[k])) STORE[k] = new Map(d[k]);
+    console.log("стор загружен:", STORE.accounts.size, "аккаунтов,", STORE.certs.size, "сертов");
+  } catch { /* первый запуск — пустой стор */ }
+}
+let saveTimer = null;
+function saveStore() {
+  if (saveTimer) return;
+  saveTimer = setTimeout(() => {
+    saveTimer = null;
+    try {
+      const dump = {};
+      for (const k of PERSIST_KEYS) dump[k] = [...STORE[k]];
+      fs.writeFileSync(DATA_PATH + ".tmp", JSON.stringify(dump));
+      fs.renameSync(DATA_PATH + ".tmp", DATA_PATH);
+    } catch (e) { console.error("save failed:", e && e.message); }
+  }, 400);
+}
+loadStore();
 const now = () => Math.floor(Date.now() / 1000);
 
 function send(res, code, obj) {
@@ -58,6 +85,7 @@ const routes = {
     const login = "ccf-" + rnd(6);
     const password = rnd(5) + "-" + rnd(5);
     STORE.creds.set(login, { password, account });
+    saveStore();
     send(res, 200, { account, name, login, password });
   },
 
@@ -115,6 +143,7 @@ const routes = {
       deadline_at: now() + EXAM_MINUTES * 60, status: "open" });
     acc.attempts_used++; acc.last_attempt_at = now();
     acc.seen_ids = [...new Set([...acc.seen_ids, ...form.map((q) => q.id)])];
+    saveStore();
     send(res, 200, { session: sid, deadline: now() + EXAM_MINUTES * 60, total: form.length });
   },
 
@@ -138,6 +167,7 @@ const routes = {
     if (!s || s.status !== "open") return send(res, 404, { error: "сессия не найдена" });
     if (now() > s.deadline_at + 30) return send(res, 409, { error: "время вышло" });
     STORE.answers.set(`${session}:${idx}`, choice);
+    saveStore();
     send(res, 200, { ok: true });
   },
 
@@ -172,16 +202,35 @@ const routes = {
       const r = v.ok / v.all;
       return [d, r >= 0.8 ? "выше ожидаемого" : r >= 0.6 ? "на уровне" : "ниже ожидаемого"];
     }));
-    if (!passed) return send(res, 200, { passed: false, score: right, total: s.ids.length, topics });
+    if (!passed) { saveStore(); return send(res, 200, { passed: false, score: right, total: s.ids.length, topics }); }
     const acc = STORE.accounts.get(s.account);
     const issued = new Date().toISOString().slice(0, 10);
     const sn = serial();
     const token = await sign(buildPayload({ kid: KID, exam: PROGRAM, level: "Fundamentals (CCF)",
       platform: PLATFORM, serial: sn, name: acc.name, issued,
       expires: expiryFrom(issued), beta: true }), SIGNING_KEY);
-    STORE.certs.set(sn, { account: s.account, name: acc.name, issued, kid: KID, status: "valid" });
+    STORE.certs.set(sn, { account: s.account, name: acc.name, issued, kid: KID, status: "valid", token });
+    saveStore();
     send(res, 200, { passed: true, score: right, total: s.ids.length, topics,
                      serial: sn, url: certUrl(SITE, token) });
+  },
+
+  // Проверка по серийному номеру: реестр отдаёт полную подписанную ссылку.
+  // Позволяет рекрутеру проверить серт, имея только номер (CCF-2026-XXXXX).
+  "GET /cert": async (req, res, url) => {
+    const sn = (url.searchParams.get("serial") || "").trim().toUpperCase();
+    const rec = STORE.certs.get(sn);
+    if (!rec) return send(res, 404, { error: "сертификат с таким номером не найден" });
+    send(res, 200, { serial: sn, name: rec.name, issued: rec.issued,
+      status: rec.status || "valid", token: rec.token || null,
+      url: rec.token ? certUrl(SITE, rec.token) : null });
+  },
+
+  // Реестр выданных (для бэкапа/аудита/отзыва). Только по ADMIN_TOKEN.
+  "GET /admin/registry": async (req, res) => {
+    if (req.headers.authorization !== `Bearer ${ADMIN}`) return send(res, 403, { error: "нет доступа" });
+    send(res, 200, { count: STORE.certs.size,
+      certs: [...STORE.certs].map(([serial, r]) => ({ serial, name: r.name, issued: r.issued, status: r.status || "valid" })) });
   },
 
   "GET /healthz": async (req, res) => send(res, 200, { ok: true, bank: BANK.length }),
