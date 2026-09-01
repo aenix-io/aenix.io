@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ænix Certification for Cozystack — экзамен CCF</title>
+<style>
+  :root { --ink:#0f172a; --muted:#64748b; --line:#e2e8f0; --brand:#2f6fed; --bg:#f8fafc; --ok:#16a34a; --bad:#dc2626; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); }
+  .wrap { max-width:760px; margin:0 auto; padding:24px 20px 64px; }
+  h1 { font-size:22px; margin:0 0 4px; }
+  .eyebrow { color:var(--muted); font-size:13px; text-transform:uppercase; letter-spacing:.04em; margin-bottom:18px; }
+  .card { background:#fff; border:1px solid var(--line); border-radius:14px; padding:22px; margin:16px 0; }
+  label { display:block; font-weight:600; font-size:14px; margin:14px 0 6px; }
+  input[type=text], input[type=password] { width:100%; padding:11px 12px; border:1px solid var(--line); border-radius:9px; font-size:16px; }
+  button { font:inherit; cursor:pointer; border:0; border-radius:10px; padding:12px 18px; background:var(--brand); color:#fff; font-weight:600; }
+  button.ghost { background:#fff; color:var(--ink); border:1px solid var(--line); }
+  button:disabled { opacity:.5; cursor:default; }
+  .btn-lg { width:100%; padding:15px; font-size:17px; }
+  .warn { background:#fff7ed; border:1px solid #fed7aa; color:#9a3412; border-radius:10px; padding:14px 16px; font-size:14px; }
+  .warn a { color:#9a3412; font-weight:700; }
+  .err { color:var(--bad); font-size:14px; margin-top:10px; min-height:20px; }
+  .row { display:flex; gap:10px; align-items:center; }
+  .spacer { flex:1; }
+  .muted { color:var(--muted); font-size:14px; }
+  .timer { font-variant-numeric:tabular-nums; font-weight:700; }
+  .timer.low { color:var(--bad); }
+  .opt { display:flex; gap:12px; align-items:flex-start; border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:8px 0; cursor:pointer; }
+  .opt:hover { border-color:#cbd5e1; }
+  .opt.sel { border-color:var(--brand); background:#eff4fe; }
+  .opt input { margin-top:3px; }
+  .grid { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
+  .pill { width:34px; height:34px; border:1px solid var(--line); border-radius:8px; background:#fff; font-size:13px; padding:0; color:var(--ink); }
+  .pill.done { background:#e0edff; border-color:var(--brand); color:var(--brand); }
+  .pill.cur { outline:2px solid var(--brand); }
+  .result-big { font-size:26px; font-weight:800; margin:6px 0; }
+  .bands li { margin:4px 0; }
+  .hidden { display:none; }
+  code { background:#f1f5f9; padding:2px 6px; border-radius:6px; font-size:13px; word-break:break-all; }
+  .center { text-align:center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Ænix Certification for Cozystack — Fundamentals · бета</div>
+
+  <!-- ЭКРАН 1: ВХОД -->
+  <section id="s-login" class="card">
+    <h1>Экзамен CCF</h1>
+    <p class="muted">60 вопросов, 90 минут. Вход по логину и паролю, которые вам выдали.</p>
+    <div class="warn" style="margin:16px 0">
+      <strong>Нет логина и пароля?</strong> Их выдаёт Тимур лично — напишите
+      <a href="https://t.me/tym83" target="_blank" rel="noopener">@tym83 в Telegram</a> или
+      <a href="https://www.linkedin.com/in/timur-tukaev/" target="_blank" rel="noopener">Timur Tukaev в LinkedIn</a>.
+      Имя латиницей закрепляется при выдаче и попадает в сертификат.
+    </div>
+    <label for="login">Логин</label>
+    <input id="login" type="text" autocomplete="username" placeholder="напр. ccf-ab12cd">
+    <label for="password">Пароль</label>
+    <input id="password" type="password" autocomplete="current-password">
+    <div class="err" id="login-err"></div>
+    <button class="btn-lg" id="btn-login" style="margin-top:8px">Войти</button>
+  </section>
+
+  <!-- ЭКРАН 2: СОГЛАШЕНИЕ -->
+  <section id="s-agree" class="card hidden">
+    <h1>Соглашение кандидата</h1>
+    <p>Здравствуйте, <strong id="cand-name"></strong>. Перед началом подтвердите:</p>
+    <ul class="muted">
+      <li>работаю один; словарь можно, документация и поиск — нет;</li>
+      <li>не выношу и не публикую содержимое экзамена;</li>
+      <li>один человек — один аккаунт; имя на сертификате менять нельзя.</li>
+    </ul>
+    <p class="muted">Полный текст — <a href="https://aenix.io/certification/agreement/" target="_blank" rel="noopener">на странице соглашения</a>.
+      Часы стартуют по кнопке и идут на сервере даже при обрыве связи.</p>
+    <div class="err" id="agree-err"></div>
+    <button class="btn-lg" id="btn-start">Принимаю и начинаю экзамен</button>
+  </section>
+
+  <!-- ЭКРАН 3: ЭКЗАМЕН -->
+  <section id="s-exam" class="card hidden">
+    <div class="row" style="margin-bottom:10px">
+      <div class="muted">Вопрос <strong id="q-idx">1</strong> из <strong id="q-total">60</strong></div>
+      <div class="spacer"></div>
+      <div>Осталось <span class="timer" id="timer">—</span></div>
+    </div>
+    <div id="q-stem" style="font-weight:600; margin:10px 0 4px"></div>
+    <div id="q-multi" class="muted hidden">Выберите несколько вариантов.</div>
+    <div id="q-opts"></div>
+    <div class="row" style="margin-top:16px">
+      <button class="ghost" id="btn-prev">Назад</button>
+      <button class="ghost" id="btn-next">Далее</button>
+      <div class="spacer"></div>
+      <button id="btn-finish">Завершить</button>
+    </div>
+    <div class="grid" id="q-grid"></div>
+    <div class="err" id="exam-err"></div>
+  </section>
+
+  <!-- ЭКРАН 4: РЕЗУЛЬТАТ -->
+  <section id="s-result" class="card hidden">
+    <div id="r-verdict"></div>
+    <div class="muted" id="r-score"></div>
+    <ul class="bands" id="r-bands"></ul>
+    <div id="r-cert" class="hidden">
+      <p><strong>Сертификат.</strong> Сохраните ссылку — она и есть сертификат, проверяется по подписи:</p>
+      <p><a id="r-cert-link" href="#" target="_blank" rel="noopener"></a></p>
+      <p class="muted">Серийный номер: <code id="r-serial"></code></p>
+    </div>
+    <div id="r-fail" class="hidden">
+      <p class="muted">Порог не пройден. Следующая попытка — через неделю. Перечитайте темы с оценкой «ниже ожидаемого».</p>
+    </div>
+  </section>
+
+  <p class="center muted" style="font-size:12px">Ænix Certification for Cozystack · AENIX s.r.o.</p>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const api = async (method, path, body) => {
+  const r = await fetch(path, { method, headers: { "content-type": "application/json" },
+    body: body ? JSON.stringify(body) : undefined });
+  const j = await r.json().catch(() => ({}));
+  return { ok: r.ok, status: r.status, data: j };
+};
+const show = (id) => ["s-login","s-agree","s-exam","s-result"].forEach((s) => $(s).classList.toggle("hidden", s !== id));
+
+let ST = { account:null, name:null, session:null, deadline:0, serverSkew:0, total:60, idx:0,
+           view:null, map:{}, answers:{}, timerH:null };
+
+// --- ВХОД ---
+$("btn-login").onclick = async () => {
+  $("login-err").textContent = "";
+  const login = $("login").value.trim(), password = $("password").value;
+  if (!login || !password) { $("login-err").textContent = "Введите логин и пароль."; return; }
+  $("btn-login").disabled = true;
+  const { ok, data } = await api("POST", "/login", { login, password });
+  $("btn-login").disabled = false;
+  if (!ok) { $("login-err").textContent = data.error || "Неверный логин или пароль."; return; }
+  ST.account = data.account; ST.name = data.name;
+  $("cand-name").textContent = data.name;
+  show("s-agree");
+};
+$("password").addEventListener("keydown", (e) => { if (e.key === "Enter") $("btn-login").click(); });
+
+// --- СТАРТ ---
+$("btn-start").onclick = async () => {
+  $("agree-err").textContent = "";
+  $("btn-start").disabled = true;
+  const { ok, data } = await api("POST", "/exam/start", { account: ST.account });
+  $("btn-start").disabled = false;
+  if (!ok) { $("agree-err").textContent = data.error || "Не удалось начать."; return; }
+  ST.session = data.session; ST.deadline = data.deadline; ST.total = data.total || 60;
+  await loadState(); startTimer(); show("s-exam"); await goto(0);
+};
+
+async function loadState() {
+  const { ok, data } = await api("GET", `/exam/state?s=${ST.session}`);
+  if (!ok) return;
+  ST.deadline = data.deadline; ST.total = data.total;
+  ST.serverSkew = Math.floor(Date.now()/1000) - data.server_now;
+  (data.answers || []).forEach((a) => { ST.answers[a.idx] = a.choice; });
+  renderGrid();
+}
+
+function startTimer() {
+  clearInterval(ST.timerH);
+  ST.timerH = setInterval(() => {
+    const left = ST.deadline - (Math.floor(Date.now()/1000) - ST.serverSkew);
+    if (left <= 0) { $("timer").textContent = "00:00"; clearInterval(ST.timerH); finish(true); return; }
+    const m = String(Math.floor(left/60)).padStart(2,"0"), s = String(left%60).padStart(2,"0");
+    $("timer").textContent = `${m}:${s}`;
+    $("timer").classList.toggle("low", left < 300);
+  }, 1000);
+}
+
+async function goto(idx) {
+  if (idx < 0 || idx >= ST.total) return;
+  ST.idx = idx;
+  const { ok, data } = await api("GET", `/exam/question?s=${ST.session}&idx=${idx}`);
+  if (!ok) { $("exam-err").textContent = data.error || "Ошибка загрузки вопроса."; return; }
+  ST.view = data.question;
+  $("q-idx").textContent = idx + 1; $("q-total").textContent = ST.total;
+  $("q-stem").textContent = data.question.stem;
+  $("q-multi").classList.toggle("hidden", !data.question.multi);
+  renderOpts();
+  renderGrid();
+  $("btn-prev").disabled = idx === 0;
+  $("btn-next").disabled = idx === ST.total - 1;
+}
+
+function renderOpts() {
+  const multi = ST.view.multi;
+  const chosen = new Set(ST.answers[ST.idx] || []);
+  $("q-opts").innerHTML = "";
+  ST.view.options.forEach((o) => {
+    const wrap = document.createElement("label");
+    wrap.className = "opt" + (chosen.has(o.pos) ? " sel" : "");
+    const inp = document.createElement("input");
+    inp.type = multi ? "checkbox" : "radio"; inp.name = "opt"; inp.checked = chosen.has(o.pos);
+    inp.onchange = () => onChoose(o.pos, multi);
+    const span = document.createElement("span"); span.textContent = o.text;
+    wrap.append(inp, span); $("q-opts").append(wrap);
+  });
+}
+
+async function onChoose(pos, multi) {
+  let cur = new Set(ST.answers[ST.idx] || []);
+  if (multi) { cur.has(pos) ? cur.delete(pos) : cur.add(pos); }
+  else { cur = new Set([pos]); }
+  const choice = [...cur];
+  ST.answers[ST.idx] = choice;
+  renderOpts(); renderGrid();
+  await api("POST", "/exam/answer", { session: ST.session, idx: ST.idx, choice });
+}
+
+function renderGrid() {
+  $("q-grid").innerHTML = "";
+  for (let i = 0; i < ST.total; i++) {
+    const b = document.createElement("button");
+    b.className = "pill" + ((ST.answers[i] && ST.answers[i].length) ? " done" : "") + (i === ST.idx ? " cur" : "");
+    b.textContent = i + 1; b.onclick = () => goto(i);
+    $("q-grid").append(b);
+  }
+}
+
+$("btn-prev").onclick = () => goto(ST.idx - 1);
+$("btn-next").onclick = () => goto(ST.idx + 1);
+$("btn-finish").onclick = () => {
+  const answered = Object.values(ST.answers).filter((a) => a && a.length).length;
+  if (confirm(`Отвечено ${answered} из ${ST.total}. Завершить экзамен? Изменить ответы будет нельзя.`)) finish(false);
+};
+
+async function finish(timeout) {
+  clearInterval(ST.timerH);
+  const { ok, data } = await api("POST", "/exam/submit", { session: ST.session });
+  if (!ok) { $("exam-err").textContent = data.error || "Ошибка отправки."; return; }
+  renderResult(data, timeout);
+}
+
+function renderResult(r, timeout) {
+  show("s-result");
+  $("r-verdict").innerHTML = `<div class="result-big" style="color:${r.passed ? "var(--ok)" : "var(--bad)"}">${r.passed ? "Сдано ✓" : "Не сдано"}</div>`;
+  $("r-score").textContent = `Баллы: ${r.score} из ${r.total}.` + (timeout ? " (время вышло)" : "");
+  $("r-bands").innerHTML = Object.entries(r.topics || {}).map(([d,v]) => `<li>${d}: ${v}</li>`).join("");
+  $("r-cert").classList.toggle("hidden", !r.passed);
+  $("r-fail").classList.toggle("hidden", r.passed);
+  if (r.passed && r.url) {
+    $("r-cert-link").href = r.url; $("r-cert-link").textContent = r.url;
+    $("r-serial").textContent = r.serial || "";
+  }
+}
+
+// Приход с сайта после логина в модалке: аккаунт в фрагменте, пароль в URL не попадал.
+const _h = new URLSearchParams(location.hash.slice(1));
+if (_h.get("a")) {
+  ST.account = _h.get("a"); ST.name = _h.get("n") || "";
+  $("cand-name").textContent = ST.name;
+  history.replaceState(null, "", location.pathname);
+  show("s-agree");
+} else {
+  show("s-login");
+}
+</script>
+</body>
+</html>

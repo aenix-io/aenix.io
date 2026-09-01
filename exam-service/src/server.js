@@ -18,10 +18,39 @@ const KID = process.env.SIGNING_KID || "ccf-2026a";
 const PLATFORM = process.env.PLATFORM_VERSION || "v1.6";
 const SITE = process.env.SITE_BASE || "https://aenix.io";
 const ADMIN = process.env.ADMIN_TOKEN || "";
+let HTML = "<!doctype html><title>exam</title><p>frontend not mounted</p>";
+try { HTML = fs.readFileSync(process.env.HTML_PATH || "/app/src/index.html", "utf8"); } catch {}
 
 // Хранилище. Одна точка подмены: в бою — Postgres, в проверке — память.
 const STORE = { accounts: new Map(), invites: new Map(), sessions: new Map(),
-                answers: new Map(), certs: new Map() };
+                answers: new Map(), certs: new Map(), creds: new Map() };
+
+// Персистентность: снапшот стора на диск (PVC). Node без внешних зависимостей —
+// поэтому не Postgres, а атомарный JSON-снапшот. Аккаунты, попытки, выданные
+// сертификаты и сессии переживают рестарт пода.
+const DATA_PATH = process.env.DATA_PATH || "/data/store.json";
+const PERSIST_KEYS = ["accounts", "invites", "sessions", "answers", "certs", "creds"];
+function loadStore() {
+  try {
+    const d = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
+    for (const k of PERSIST_KEYS) if (Array.isArray(d[k])) STORE[k] = new Map(d[k]);
+    console.log("стор загружен:", STORE.accounts.size, "аккаунтов,", STORE.certs.size, "сертов");
+  } catch { /* первый запуск — пустой стор */ }
+}
+let saveTimer = null;
+function saveStore() {
+  if (saveTimer) return;
+  saveTimer = setTimeout(() => {
+    saveTimer = null;
+    try {
+      const dump = {};
+      for (const k of PERSIST_KEYS) dump[k] = [...STORE[k]];
+      fs.writeFileSync(DATA_PATH + ".tmp", JSON.stringify(dump));
+      fs.renameSync(DATA_PATH + ".tmp", DATA_PATH);
+    } catch (e) { console.error("save failed:", e && e.message); }
+  }, 400);
+}
+loadStore();
 const now = () => Math.floor(Date.now() / 1000);
 
 function send(res, code, obj) {
@@ -35,6 +64,40 @@ const readJson = (req) => new Promise((ok) => {
 });
 
 const routes = {
+  // Фронтенд экзамена: одностраничное приложение отдаётся с того же origin.
+  "GET /": async (req, res) => {
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
+    res.end(HTML);
+  },
+
+  // Выдача доступа админом: возвращает ЛОГИН и ПАРОЛЬ (их Тимур передаёт кандидату лично).
+  // Имя латиницей фиксируется и кандидату не редактируется.
+  "POST /admin/create": async (req, res) => {
+    if (req.headers.authorization !== `Bearer ${ADMIN}`) return send(res, 403, { error: "нет доступа" });
+    const { name, email } = await readJson(req);
+    if (!name || !/^[A-Za-z .'-]{3,60}$/.test(name))
+      return send(res, 400, { error: "имя нужно латиницей, как в загранпаспорте" });
+    const account = crypto.randomUUID();
+    STORE.accounts.set(account, { id: account, name, email: email || null,
+      attempts_used: 0, last_attempt_at: 0, seen_ids: [] });
+    const rnd = (n) => [...crypto.getRandomValues(new Uint8Array(n))]
+      .map((b) => "0123456789abcdefghjkmnpqrstvwxyz"[b % 32]).join("");
+    const login = "ccf-" + rnd(6);
+    const password = rnd(5) + "-" + rnd(5);
+    STORE.creds.set(login, { password, account });
+    saveStore();
+    send(res, 200, { account, name, login, password });
+  },
+
+  // Вход кандидата по логину и паролю.
+  "POST /login": async (req, res) => {
+    const { login, password } = await readJson(req);
+    const rec = STORE.creds.get((login || "").trim());
+    if (!rec || rec.password !== password) return send(res, 403, { error: "неверный логин или пароль" });
+    const acc = STORE.accounts.get(rec.account);
+    send(res, 200, { account: rec.account, name: acc ? acc.name : null });
+  },
+
   // Выдача приглашения. Имя латиницей фиксируется здесь и кандидату не редактируется:
   // иначе один общий аккаунт выписывал бы сертификаты на весь отдел.
   "POST /admin/invite": async (req, res) => {
@@ -80,6 +143,7 @@ const routes = {
       deadline_at: now() + EXAM_MINUTES * 60, status: "open" });
     acc.attempts_used++; acc.last_attempt_at = now();
     acc.seen_ids = [...new Set([...acc.seen_ids, ...form.map((q) => q.id)])];
+    saveStore();
     send(res, 200, { session: sid, deadline: now() + EXAM_MINUTES * 60, total: form.length });
   },
 
@@ -103,6 +167,7 @@ const routes = {
     if (!s || s.status !== "open") return send(res, 404, { error: "сессия не найдена" });
     if (now() > s.deadline_at + 30) return send(res, 409, { error: "время вышло" });
     STORE.answers.set(`${session}:${idx}`, choice);
+    saveStore();
     send(res, 200, { ok: true });
   },
 
@@ -137,16 +202,35 @@ const routes = {
       const r = v.ok / v.all;
       return [d, r >= 0.8 ? "выше ожидаемого" : r >= 0.6 ? "на уровне" : "ниже ожидаемого"];
     }));
-    if (!passed) return send(res, 200, { passed: false, score: right, total: s.ids.length, topics });
+    if (!passed) { saveStore(); return send(res, 200, { passed: false, score: right, total: s.ids.length, topics }); }
     const acc = STORE.accounts.get(s.account);
     const issued = new Date().toISOString().slice(0, 10);
     const sn = serial();
     const token = await sign(buildPayload({ kid: KID, exam: PROGRAM, level: "Fundamentals (CCF)",
       platform: PLATFORM, serial: sn, name: acc.name, issued,
       expires: expiryFrom(issued), beta: true }), SIGNING_KEY);
-    STORE.certs.set(sn, { account: s.account, name: acc.name, issued, kid: KID, status: "valid" });
+    STORE.certs.set(sn, { account: s.account, name: acc.name, issued, kid: KID, status: "valid", token });
+    saveStore();
     send(res, 200, { passed: true, score: right, total: s.ids.length, topics,
                      serial: sn, url: certUrl(SITE, token) });
+  },
+
+  // Проверка по серийному номеру: реестр отдаёт полную подписанную ссылку.
+  // Позволяет рекрутеру проверить серт, имея только номер (CCF-2026-XXXXX).
+  "GET /cert": async (req, res, url) => {
+    const sn = (url.searchParams.get("serial") || "").trim().toUpperCase();
+    const rec = STORE.certs.get(sn);
+    if (!rec) return send(res, 404, { error: "сертификат с таким номером не найден" });
+    send(res, 200, { serial: sn, name: rec.name, issued: rec.issued,
+      status: rec.status || "valid", token: rec.token || null,
+      url: rec.token ? certUrl(SITE, rec.token) : null });
+  },
+
+  // Реестр выданных (для бэкапа/аудита/отзыва). Только по ADMIN_TOKEN.
+  "GET /admin/registry": async (req, res) => {
+    if (req.headers.authorization !== `Bearer ${ADMIN}`) return send(res, 403, { error: "нет доступа" });
+    send(res, 200, { count: STORE.certs.size,
+      certs: [...STORE.certs].map(([serial, r]) => ({ serial, name: r.name, issued: r.issued, status: r.status || "valid" })) });
   },
 
   "GET /healthz": async (req, res) => send(res, 200, { ok: true, bank: BANK.length }),
@@ -154,6 +238,16 @@ const routes = {
 
 http.createServer(async (req, res) => {
   const url = new URL(req.url, "http://x");
+  // CORS: модалка «Начать экзамен» логинит кросс-origin. Отражаем Origin для
+  // aenix.io (любой поддомен) и Netlify-превью; остальным — без CORS.
+  const origin = req.headers.origin || "";
+  if (/^https:\/\/([a-z0-9-]+\.)*aenix\.io$/.test(origin) || /\.netlify\.app$/.test(origin)) {
+    res.setHeader("Access-Control-Allow-Origin", origin);
+    res.setHeader("Vary", "Origin");
+  }
+  res.setHeader("Access-Control-Allow-Headers", "content-type");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  if (req.method === "OPTIONS") { res.writeHead(204); return res.end(); }
   const fn = routes[`${req.method} ${url.pathname}`];
   if (!fn) return send(res, 404, { error: "not found" });
   try { await fn(req, res, url); }

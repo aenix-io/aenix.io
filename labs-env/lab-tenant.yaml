@@ -1,0 +1,24 @@
+# Лаб-тенант для значка «Cozystack labs»: провижнится ПО ЗАПРОСУ (не стоит постоянно).
+# Отличается от воркшоп-тенанта (8 CPU) тем, что тянет 16 лаб: свой Kubernetes-кластер
+# (лаб 0), объектное хранилище (лабы 6, 11) и мониторинг (лабы 3, 14).
+#
+#   kubectl --context <admin> -n tenant-root apply -f lab-tenant.yaml
+#   # затем — пользователь в Keycloak + доступ, как для воркшоп-тенантов
+#
+# ВАЖНО (quirk массового создания): тенанты раскатывать ПО ОДНОМУ — иначе helm-controller
+# встаёт в starvation-дедлок. Для одного лаб-тенанта проблемы нет.
+apiVersion: apps.cozystack.io/v1alpha1
+kind: Tenant
+metadata:
+  name: lab01
+  namespace: tenant-root
+spec:
+  host: ""
+  etcd: true          # лаб 0 — Kubernetes-кластер
+  monitoring: true    # лабы 3, 14
+  seaweedfs: true     # лабы 6, 11
+  ingress: false
+  isolated: false
+  resourceQuotas:
+    cpu: 48
+    memory: 56Gi
