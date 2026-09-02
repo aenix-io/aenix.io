@@ -63,6 +63,11 @@ menus:
       url: /certification/
       parent: products
       weight: 3
+    - name: Live Demo
+      url: /demo/
+      weight: 15
+      params:
+        cta: true
     - name: Pricing
       url: /pricing/
       weight: 20
