@@ -73,6 +73,11 @@ menus:
       weight: 16
       params:
         cta: true
+    - name: App Builder
+      url: /builder/
+      weight: 17
+      params:
+        cta: true
     - name: Pricing
       url: /pricing/
       weight: 20

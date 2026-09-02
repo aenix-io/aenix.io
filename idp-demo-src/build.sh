@@ -42,4 +42,8 @@ echo "==> installing + building (base /idp-app/)"
 echo "==> publishing to static/idp-app"
 rm -rf "$SITE/static/idp-app"; mkdir -p "$SITE/static/idp-app"
 cp -R "$SRC/apps/cozyapps/dist/." "$SITE/static/idp-app/"
+# Deep-link file so /idp-app/store/new/ (the App Builder) is a real page on
+# GitHub Pages (no sub-path fallback), lettable the site menu open it directly.
+mkdir -p "$SITE/static/idp-app/store/new"
+cp "$SITE/static/idp-app/index.html" "$SITE/static/idp-app/store/new/index.html"
 echo "==> done: $(find "$SITE/static/idp-app" -type f | wc -l) files in static/idp-app"
