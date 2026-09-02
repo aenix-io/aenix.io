@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Users, Roles, and Groups on Документация Freedom Cloud</title>
+    <link>/docs/en/accounting/users/</link>
+    <description>Recent content in Users, Roles, and Groups on Документация Freedom Cloud</description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <atom:link href="/docs/en/accounting/users/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Role System</title>
+      <link>/docs/en/accounting/users/roles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/en/accounting/users/roles/</guid>
+      <description>&lt;p&gt;Роли определяют, что пользователь может делать на портале и в проектах. Одному пользователю или группе можно назначить несколько ролей одновременно.&lt;/p&gt;&#xA;&lt;p&gt;Роли бывают двух уровней: уровня аккаунта и уровня проекта.&lt;/p&gt;&#xA;&lt;h2 id=&#34;account-roles&#34;&gt;Роли уровня аккаунта&lt;/h2&gt;&#xA;&lt;p&gt;Роли уровня аккаунта назначаются на вкладке &lt;strong&gt;Пользователи&lt;/strong&gt; и действуют на весь аккаунт. Пользователь с такой ролью автоматически имеет соответствующий доступ ко всем проектам в аккаунте.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Администратор&lt;/strong&gt; — полный доступ к аккаунту и всем его проектам.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Инженер&lt;/strong&gt; — доступ к ресурсам всех проектов в аккаунте.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Бухгалтер&lt;/strong&gt; — просмотр инвойсов и транзакций, настройка оплаты. Доступа к проектам нет.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;project-roles&#34;&gt;Роли уровня проекта&lt;/h2&gt;&#xA;&lt;p&gt;Роли уровня проекта дают доступ к конкретному проекту. Они назначаются на странице проекта на вкладке &lt;strong&gt;Участники&lt;/strong&gt; или через группы.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Group Management</title>
+      <link>/docs/en/accounting/users/groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/en/accounting/users/groups/</guid>
+      <description>&lt;p&gt;Группа объединяет нескольких пользователей, чтобы управлять их правами совместно. Это удобно, когда нужно выдать одинаковый доступ сразу нескольким людям — например, всем инженерам или всем бухгалтерам.&lt;/p&gt;&#xA;&lt;p&gt;Список групп находится на вкладке &lt;strong&gt;Группы&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;создание-группы&#34;&gt;Создание группы&lt;/h2&gt;&#xA;&lt;p&gt;Чтобы создать группу:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;На странице &lt;strong&gt;Группы&lt;/strong&gt; в правом нижнем углу нажмите &lt;strong&gt;Добавить&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Введите название группы.&lt;/li&gt;&#xA;&lt;li&gt;Назначьте группе &lt;a href=&#34;/docs/en/accounting/users/roles/&#34;&gt;роли&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Добавьте пользователей в группу.&lt;/li&gt;&#xA;&lt;li&gt;Нажмите &lt;strong&gt;Создать&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Все пользователи группы получат роли и доступ, назначенные группе.&lt;/p&gt;&#xA;&lt;h2 id=&#34;управление-участниками-группы&#34;&gt;Управление участниками группы&lt;/h2&gt;&#xA;&lt;p&gt;Добавлять пользователей в группу и удалять их из неё можно на её странице на вкладке &lt;strong&gt;Участники&lt;/strong&gt;:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Документация Freedom Cloud</title>
+    <link>/docs/en/accounting/projects/</link>
+    <description>Recent content in Projects on Документация Freedom Cloud</description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <atom:link href="/docs/en/accounting/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pricing</title>
+      <link>/docs/en/accounting/projects/tariffs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/en/accounting/projects/tariffs/</guid>
+      <description>&lt;p&gt;Каждый проект тарифицируется отдельно. Тариф проекта можно посмотреть на его странице на вкладке &lt;strong&gt;Тариф&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Тарифы бывают двух типов:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Pay-as-you-go&lt;/strong&gt;. Плата за ресурсы взимается в реальном времени в соответствии с их использованием. Вы можете заказывать сколько угодно ресурсов и ограничены только квотами.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Тарифный план&lt;/strong&gt;. Устанавливает количество включённых ресурсов, которые вы можете использовать в течение месяца. Freedom Cloud предоставляет основные тарифные планы, но вы также можете настроить свой собственный. Оплата за тарифный план взимается раз в месяц.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;pay-as-you-go&#34;&gt;Pay-as-you-go&lt;/h2&gt;&#xA;&lt;p&gt;Тариф Pay-as-you-go снимает оплату с вашего баланса в реальном времени и только за те ресурсы, которые вы заказали. Поэтому перед подключением тарифа, убедитесь, что вы &lt;a href=&#34;/docs/en/accounting/billing/&#34;&gt;пополнили баланс&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
