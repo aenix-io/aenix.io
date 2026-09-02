@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Builds the Ænix IDP (Cozy Apps) demo into ../static/idp-app.
 #
-# Source: kitsunoff/cozystack-ui @ feat/cozyapps-mock-ui — a fully self-contained
+# Source: aenix-org/cozystack-ui @ feat/cozyapps-mock-ui (fork; Railway-styled builder) — a fully self-contained
 # in-memory mock (no backend, no /kc, no service worker). Two small patches make
 # it servable under a sub-path: a Vite base and a router basename. The site page
 # at /idp/ (layout idp-demo) embeds this build in an iframe, so a refresh always
@@ -15,7 +15,7 @@ HERE="$(cd "$(dirname "$0")" && pwd)"; SITE="$(cd "$HERE/.." && pwd)"
 WORK="$(mktemp -d)"; trap 'rm -rf "$WORK"' EXIT; SRC="$WORK/ui"
 
 echo "==> cloning cozystack-ui @ $REF"
-git clone --depth 1 --branch "$REF" https://github.com/kitsunoff/cozystack-ui.git "$SRC"
+git clone --depth 1 --branch "$REF" https://github.com/aenix-org/cozystack-ui.git "$SRC"
 
 echo "==> patching base + router basename for sub-path"
 python3 - "$SRC" <<'PY'
