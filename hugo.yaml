@@ -68,6 +68,11 @@ menus:
       weight: 15
       params:
         cta: true
+    - name: IDP Demo
+      url: /idp/
+      weight: 16
+      params:
+        cta: true
     - name: Pricing
       url: /pricing/
       weight: 20
