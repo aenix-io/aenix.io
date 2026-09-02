@@ -1,0 +1,10 @@
+{{ define "main" }}
+<style>
+  #content { max-width: none; padding: 0; }
+  .idp-demo { width: 100%; height: calc(100vh - 72px); min-height: 560px; border: 0; display: block; }
+  .idp-demo__hint { font-size: .85rem; color: #64748b; padding: .5rem 1rem; text-align: center; background: #f8fafc; }
+  footer { display: none; }
+</style>
+<iframe class="idp-demo" src="/idp-app/" title="Ænix IDP live demo" allow="clipboard-read; clipboard-write"></iframe>
+<div class="idp-demo__hint">Interactive demo of the Ænix Internal Developer Platform — application catalog, topology, and the visual template builder — running entirely in your browser on mock data.</div>
+{{ end }}
