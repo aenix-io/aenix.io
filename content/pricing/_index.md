@@ -12,12 +12,12 @@ images: ["img/og/pricing.png"]
 hreflang_de: /de/preise/
 related_pages: ["/products/", "/tco-calculator/", "/products/cozystack-enterprise-support/", "/contact/"]
 direct_answer: |
-  **Aenix prices two ways. Cozystack itself is free — Apache 2.0, no per-CPU, per-core or per-VM licensing, and you can run it forever without paying Aenix anything. The commercial layer is bought either from a published price list or as a scoped programme. Hosting providers, MSPs and product teams buy support tiers per 10 physical nodes, starting at $1,250/month on an annual commitment for the Basic tier and rising through Standard ($3,000), Plus ($5,500) and a custom Enterprise tier. Private Cloud Platform, AI Platform and multi-region operator builds are quoted per RFP after a discovery call, because the number depends on estate size, regulatory scope, migration volume and how much of the operating model Aenix runs. Two dimensions are chosen independently: which platform surfaces are switched on, and which support tier applies.**
+  **Aenix prices two ways. Cozystack itself is free — Apache 2.0, no per-CPU, per-core or per-VM licensing, and you can run it forever without paying Aenix anything. The commercial layer is bought either from a published price list or as a scoped programme. Hosting providers, MSPs and product teams buy support tiers per 10 physical nodes, starting at $1,250/month on an annual commitment for the Basic tier and rising through Standard ($3,000), Plus ($5,500) and a custom Enterprise tier. Packages multiply with the estate, so a 60-node provider on Basic pays six of them and can work the number out without calling us. Private Cloud Platform, AI Platform and multi-region operator builds are quoted per RFP after a discovery call, because the number depends on estate size, regulatory scope, migration volume and how much of the operating model Aenix runs. Two dimensions are chosen independently: which platform surfaces are switched on, and which support tier applies.**
 quick_facts:
   - label: "Cozystack licence cost"
     value: "Zero. Apache 2.0, no per-CPU, per-core or per-VM fees, and it stays runnable if the commercial relationship ends."
   - label: "Entry price"
-    value: "$1,250/month per 10 physical nodes, annual commitment (Basic support tier)."
+    value: "$1,250/month per 10 physical nodes, annual commitment (Basic support tier). Packages multiply, so a 60-node estate is six of them."
   - label: "Published tiers"
     value: "Basic $1,250 · Standard $3,000 · Plus $5,500 · Enterprise custom — per month, per 10 nodes."
   - label: "Quoted per RFP"
@@ -95,6 +95,21 @@ This is the published price list, and it is the whole of it: it applies to Publi
 Notes on the table: incidents related to installation support do not count towards the incident limit if reported inside the 30-day installation-support period. Business hours are Mon-Fri, 9am-6pm CET, excluding holidays. An emergency is a production system down or unresponsive with no workaround available. Priority engagement time is time we actively dedicate to building features on your roadmap each month.
 
 ---
+
+## What your estate actually costs
+
+The published tiers are priced **per 10 physical nodes**, so the list price is arithmetic rather than a starting point to negotiate from. A worked example, on the Basic tier:
+
+| Physical nodes | Packages | Basic | Standard | Plus |
+|---|---|---|---|---|
+| 10 | 1 | $1,250 / mo | $3,000 / mo | $5,500 / mo |
+| 20 | 2 | $2,500 / mo | $6,000 / mo | $11,000 / mo |
+| 40 | 4 | $5,000 / mo | $12,000 / mo | $22,000 / mo |
+| 60 | 6 | $7,500 / mo | $18,000 / mo | $33,000 / mo |
+
+Two honest caveats. Nodes round up to the next package — 44 nodes is five, not 4.4. And this covers the platform and its support tier only: migration, a Platform Readiness Assessment, a pilot or managed operations are separate and quoted after scoping, because they depend on what you are moving and how much of the running you want us to do.
+
+If your estate is large enough that the table above stops looking sensible, that is the point where the conversation becomes a programme rather than a price list — and we would rather scope it than have you multiply your way to a number neither of us would stand behind.
 
 ## Engagement add-ons (priced separately)
 
