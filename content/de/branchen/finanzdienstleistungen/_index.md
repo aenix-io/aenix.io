@@ -19,7 +19,7 @@ quick_facts:
     value: "Banken, Versicherer, Investmentfirmen und Zahlungsinstitute in der DACH-Region"
   - label: "Regulatorik"
     value: "DORA (in Kraft seit Januar 2025), ICT-Drittanbieter-Konzentrationsrisiko, Datensouveränität"
-  - label: "Passende Editionen"
+  - label: "Passende Plattformen"
     value: "Ænix Private Cloud Platform als regulierte Foundation; AI Platform für Fraud Detection und souveräne KI-Workloads"
   - label: "Technik"
     value: "VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-eBPF-Networking, LINSTOR/DRBD-Storage, Tenant-CRD-Mandantenfähigkeit"
@@ -32,7 +32,7 @@ faq:
     a: "Cozystack ersetzt VMware-Virtualisierung durch KubeVirt, das VMs und Container auf derselben Kubernetes-API betreibt. Es gibt keine CPU- oder Core-basierte Lizenzierung — die Foundation ist Apache 2.0. Aenix begleitet den Migrationspfad als Service."
   - q: "Können sensible Finanzdaten für KI-Workloads souverän verarbeitet werden?"
     a: "Ja. Die AI Platform ist für souveräne KI-Workloads wie Schadenfall-KI und Fraud Detection ausgelegt. Die Plattform läuft in der eigenen Infrastruktur oder im souveränen Rechenzentrum, sodass sensible Finanzdaten unter eigener Kontrolle bleiben."
-  - q: "Welche Ænix-Platform-Edition passt für regulierte Finanzdienstleister?"
+  - q: "Welche Ænix-Plattform passt für regulierte Finanzdienstleister?"
     a: "Die Private Cloud Platform dient als regulierte Cloud-Foundation; die AI Platform ergänzt sie für Fraud Detection und souveräne KI. Aenix kombiniert die produktisierte Ænix Platform mit Beratungs- und Migrationsservices."
   - q: "Was kostet die Ænix Platform?"
     a: "Die Preisstufen sind Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach individuellem Angebot. Die zugrunde liegende Cozystack-Foundation selbst ist Open Source unter Apache 2.0, ohne CPU- oder Core-basierte Lizenzierung."
@@ -42,7 +42,7 @@ faq:
 
 **Banken, Versicherer, Investmentfirmen und Zahlungsinstitute stehen 2026 vor der steilsten Kombination von Belastungen: DORA-Durchsetzung (in Kraft seit Januar 2025), sektorale Aufsicht zur ICT-Drittanbieter-Konzentration, KI-Workload-Ökonomie und dem Post-Broadcom-VMware-Ausstieg. Die architektonische Antwort ist nicht "eine weitere Hyperscaler-Region" — sondern eine kohärente Plattform, in der Souveränität, Audit-Bereitschaft und operative Disziplin strukturell verankert sind statt nachträglich aufgesetzt.**
 
-Aenix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), betreibt Produktions-Workloads unter einer auf DORA ausgerichteten Governance.
+Ænix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), betreibt Produktions-Workloads unter einer auf DORA ausgerichteten Governance.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Foundation; **[AI Platform](/de/produkte/ai-platform/)** für Schadenfall-KI / Fraud Detection / souveräne KI-Workloads. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
@@ -82,7 +82,7 @@ Diese Trends konzentrieren sich zuerst im Finanzsektor; die jetzt getroffenen ar
 
 ---
 
-## Wie Aenix mit Finanzdienstleistern zusammenarbeitet
+## Wie Ænix mit Finanzdienstleistern zusammenarbeitet
 
 Das Standard-Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Workstreams, die für den Finanzdienstleistungs-Kontext betont werden:
 
@@ -99,7 +99,7 @@ Das Ergebnis ist ein schriftlicher Bericht mit Ausrichtung auf Regulator-Bereits
 
 {{< clients >}}
 
-*Kunden-Evidenz-Sektion — wird von Aenix mit namentlichen Kunden befüllt, wo Berechtigungen es erlauben. Anonyme Proof Points:*
+*Kunden-Evidenz-Sektion — wird von Ænix mit namentlichen Kunden befüllt, wo Berechtigungen es erlauben. Anonyme Proof Points:*
 - Eine Tier-1-europäische Bank betreibt eine interne Cloud-Plattform mit Multi-Tenant-Isolation unter DORA-Artikel-28-Lieferanten-Konzentrationskontrollen.
 - Ein regionaler Versicherer mit Souveräne-Cloud-Anforderungen und KI-gestützter Schadenfall-Bearbeitung auf privater LLM-Infrastruktur.
 - Ein Zahlungsinstitut betreibt Critical-Infrastructure-Workloads über zwei EU-Mitgliedstaat-Regionen mit vollständiger Datenresidenz.
@@ -109,7 +109,7 @@ Das Ergebnis ist ein schriftlicher Bericht mit Ausrichtung auf Regulator-Bereits
 
 ---
 
-## Warum Aenix speziell für Finanzdienstleistungen
+## Warum Ænix speziell für Finanzdienstleistungen
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -152,4 +152,4 @@ Oder mehr lesen:
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*

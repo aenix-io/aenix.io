@@ -24,7 +24,7 @@ faq:
     a: "The defaults are realistic mid-market starting points, not your numbers. Replace every field with your own figures — the outputs recompute live and are only as good as the inputs."
 ---
 
-**Interactive calculators for the economics of running your own cloud platform. Compare five-year TCO against thirteen on-prem platforms, price a hyperscaler bill against your own hardware, size the unit economics of a hosting business, or weigh owning GPUs against renting them. Every input is editable, every price carries its source and date, and every result recomputes live — built by Aenix, the team behind Cozystack.**
+**Interactive calculators for the economics of running your own cloud platform. Compare five-year TCO against thirteen on-prem platforms, price a hyperscaler bill against your own hardware, size the unit economics of a hosting business, or weigh owning GPUs against renting them. Every input is editable, every price carries its source and date, and every result recomputes live — built by Ænix, the team behind Cozystack.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -107,4 +107,4 @@ A discovery call turns these estimates into an honest, workload-level TCO — in
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

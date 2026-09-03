@@ -146,13 +146,13 @@ The honest engagement names which of these apply to your situation, and tells yo
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## How Aenix helps
+## How Ænix helps
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>Public-cloud spend</b><div class="diagram__chips"><span>Underutilized commitments</span><span>Idle resources</span><span>Egress charges</span></div></div>
 <div class="diagram__conn">assessed by</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix cost engagement</b><div class="diagram__chips"><span>Honest TCO model</span><span>Cost-leak inventory</span><span>Right-sizing</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix cost engagement</b><div class="diagram__chips"><span>Honest TCO model</span><span>Cost-leak inventory</span><span>Right-sizing</span></div></div>
 <div class="diagram__conn">fix in-cloud or move</div>
 <div class="diagram__node"><b>Optimized estate</b><div class="diagram__chips"><span>Tuned commitments</span><span>Repatriation candidates</span></div></div>
 <div class="diagram__conn">typically cuts</div>
@@ -169,7 +169,7 @@ The cost engagement runs as part of our **[Platform Readiness Assessment](/servi
 - **12-month spend trajectory** — current → optimized → architecturally-changed, with caps and confidence ranges.
 - **FinOps owner / process plan** — who runs the engine after we leave.
 
-Delivered by Aenix engineers who have built and operated production platforms across the EU and Central Asia.
+Delivered by Ænix engineers who have built and operated production platforms across the EU and Central Asia.
 
 </div>
 </div>
@@ -180,7 +180,7 @@ Delivered by Aenix engineers who have built and operated production platforms ac
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **No hyperscaler partnership.** Big-4 cost-optimization engagements are usually sponsored or co-delivered by the hyperscaler whose spend is being optimized. The conflict of interest is real. We don't have one.
 - **Engineers, not accountants.** Cost optimization is a platform-engineering question dressed as a FinOps question. Right-sizing requires understanding how workloads use resources; architecture-level cost decisions require understanding the architecture. Our engineers do both.
@@ -282,7 +282,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-cost engagements and platform-engineering programs for service providers, banks, telecom, and AI operators across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-cost engagements and platform-engineering programs for service providers, banks, telecom, and AI operators across the EU, DACH, and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

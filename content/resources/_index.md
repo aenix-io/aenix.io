@@ -5,7 +5,7 @@ hero_subtitle: "Free checklists, TCO worksheets, and decision guides to self-ass
 language: "en"
 ---
 
-**Free downloadable assets — checklists, decision guides, TCO worksheets, maturity assessments. The same frameworks Aenix uses during paid engagements, available free for your team's self-assessment.**
+**Free downloadable assets — checklists, decision guides, TCO worksheets, maturity assessments. The same frameworks Ænix uses during paid engagements, available free for your team's self-assessment.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -51,7 +51,7 @@ language: "en"
 4. **Identify gaps** — convert findings into a backlog
 5. **Optional next step:** discovery call or Platform Readiness Assessment to convert findings into a paid engagement
 
-The resources stand alone — no Aenix engagement required. They're useful even if you decide not to engage with us.
+The resources stand alone — no Ænix engagement required. They're useful even if you decide not to engage with us.
 
 ---
 

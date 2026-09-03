@@ -47,9 +47,9 @@ faq:
 
 **Most Kubernetes consulting engagements treat Kubernetes as a generic compute platform. The reality is that production Kubernetes is hard for specific reasons: multi-tenancy, observability, identity, networking, storage choice, GitOps discipline, and the operational practices that keep a cluster reliable at scale. Generic consulting that doesn't address these specifics produces a cluster that "works" but doesn't operate well.**
 
-Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a multi-tenant Kubernetes-native platform we run in production with service providers, banks, and AI operators. Our Kubernetes consulting engagements bring the same engineers into your team.
+Ænix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a multi-tenant Kubernetes-native platform we run in production with service providers, banks, and AI operators. Our Kubernetes consulting engagements bring the same engineers into your team.
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/)** when consulting scope expands into a productized cloud platform engagement. Stand-alone consulting also available for organizations not yet evaluating Ænix Platform.
+> **Pairs with:** any **[Ænix platform](/products/)** when consulting scope expands into a productized cloud platform engagement. Stand-alone consulting also available for organizations not yet evaluating Ænix Platform.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -137,7 +137,7 @@ Multiple teams contribute changes without coordination. Drift accumulates. Upgra
 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
-## How Aenix engages
+## How Ænix engages
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -152,7 +152,7 @@ Multiple teams contribute changes without coordination. Drift accumulates. Upgra
 </div>
 
 - **Architecture review (5-10 days)** — focused engagement, written deliverable, target architecture.
-- **Implementation engagement (1-6 months)** — Aenix engineers integrated with your team, building cluster foundation, multi-tenancy, observability, runbooks.
+- **Implementation engagement (1-6 months)** — Ænix engineers integrated with your team, building cluster foundation, multi-tenancy, observability, runbooks.
 - **Managed Kubernetes engagement** — for organizations needing the platform but not operating capacity.
 
 For deeper assessment with broader scope see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
@@ -163,7 +163,7 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **Cozystack contributors and operators.** We built and operate the open-source platform. The Kubernetes recommendations come from systems we run in production.
 - **Senior engineers, not analysts.** No bait-and-switch.
@@ -240,12 +240,12 @@ Time-and-materials or fixed-scope. Phase 2 typically 1-6 months.
 
 <!-- BLOCK 12: FOOTER -->
 
-*Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
 
 <!--
-SEO: title "Kubernetes Consulting — Engineers Who Run Multi-Tenant Platforms | Aenix"
+SEO: title "Kubernetes Consulting — Engineers Who Run Multi-Tenant Platforms | Ænix"
 Description: "Kubernetes consulting from engineers who built and operate the open-source Cozystack platform. Architecture, multi-tenancy, production readiness."
 Word count: ~900.
 -->

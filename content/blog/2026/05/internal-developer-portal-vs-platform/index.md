@@ -148,9 +148,9 @@ The decision is smaller than vendors make it sound. The bigger architectural dec
 
 ## How to start
 
-For platform-first engagement see **[Internal Developer Platform services](/services/internal-developer-platform/)** or the broader **[Platform Engineering services](/services/platform-engineering/)**. Aenix builds the platform; portal decision follows.
+For platform-first engagement see **[Internal Developer Platform services](/services/internal-developer-platform/)** or the broader **[Platform Engineering services](/services/platform-engineering/)**. Ænix builds the platform; portal decision follows.
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 

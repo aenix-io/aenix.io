@@ -43,12 +43,12 @@ quiz:
       explanation: "Phase 1 covers hardware procurement and racking, Talos/Cozystack platform deployment in the first datacentre, storage layer, networking foundation, identity integration, and initial observability — ending with a working single-region internal platform."
 ---
 
-**Long-form companion to the [Public Cloud Platform landing](/products/public-cloud-platform/). For tier-1 telcos, national operators, big banks building their own cloud, and large sovereign cloud initiatives evaluating what a multi-million-euro Aenix engagement actually covers — and how to phase it across the 18-36 months it typically runs.**
+**Long-form companion to the [Public Cloud Platform landing](/products/public-cloud-platform/). For tier-1 telcos, national operators, big banks building their own cloud, and large sovereign cloud initiatives evaluating what a multi-million-euro Ænix engagement actually covers — and how to phase it across the 18-36 months it typically runs.**
 
 The Public Cloud Platform conversation is different from every other
-Aenix engagement. It's not "should we use Cozystack?" — that's already
+Ænix engagement. It's not "should we use Cozystack?" — that's already
 decided. It's "we are launching a cloud product at national or
-tier-1-customer scale; what does the partnership with Aenix look like
+tier-1-customer scale; what does the partnership with Ænix look like
 across the 18-36 months it takes to ship?"
 
 This article walks through what an actual Public Cloud Platform build
@@ -81,7 +81,7 @@ Five buyer profiles dominate Public Cloud Platform engagements:
 All five share the same operational reality: multi-region or
 multi-DC active/active; multi-million-euro infrastructure investment;
 customer-facing SLAs that map to national regulator expectations; and
-a partnership model with Aenix that lasts years, not months.
+a partnership model with Ænix that lasts years, not months.
 
 ## What Public Cloud Platform includes that other editions don't
 
@@ -135,7 +135,7 @@ Before engineering, agreement on:
 - Strategic objectives (what cloud product, what customer base, what
   competitive positioning)
 - Regulatory scope (which frameworks bind the platform)
-- Org structure (who owns what; how Aenix and customer teams interact)
+- Org structure (who owns what; how Ænix and customer teams interact)
 - Commercial structure (engagement model, IP, support model post-go-live)
 - Roadmap (phasing of services, geographic expansion, SLA tiers)
 
@@ -186,7 +186,7 @@ and support workflows proven.
 ### Phase 5 — General availability and scale (ongoing)
 
 Open market launch. Marketing and sales activated. Operations team
-scales to support customer growth. Aenix Tier-3 retainer continues
+scales to support customer growth. Ænix Tier-3 retainer continues
 until customer team is ready to absorb Tier-3 (typically 12-24 months
 post-GA).
 
@@ -254,7 +254,7 @@ Poor fit:
 - **Strategic engagement plan** (4-8 weeks, fixed-price) —
   partnership formation, output is signed engagement plan
 - **Phase 1-5 build** (18-36 months) — phased build per above
-- **Managed Tier-3** (ongoing) — Aenix retainer until customer team
+- **Managed Tier-3** (ongoing) — Ænix retainer until customer team
   is ready to absorb
 
 Engagement size: multi-year programme, quoted per RFP.
@@ -272,8 +272,8 @@ Engagement size: multi-year programme, quoted per RFP.
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. Our Public Cloud Platform engagements with
-tier-1 telcos and sovereign cloud initiatives are NDA-protected. Aenix
+tier-1 telcos and sovereign cloud initiatives are NDA-protected. Ænix
 secured $300K seed investment from Prospective Technologies in April
 2025 to accelerate platform development for these large engagements.*

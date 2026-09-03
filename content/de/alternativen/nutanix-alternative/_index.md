@@ -104,4 +104,4 @@ Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkei
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*

@@ -256,7 +256,7 @@ Article 20 requires management body to follow cybersecurity training. Many compl
 
 ## How to assess where you stand
 
-A structured NIS2 readiness assessment is the cheapest insurance before regulator dialog. Aenix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty/regulator workstream emphasized.
+A structured NIS2 readiness assessment is the cheapest insurance before regulator dialog. Ænix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty/regulator workstream emphasized.
 
 For details see the **[NIS2 compliance services page](/solutions/nis2-compliance/)**.
 
@@ -271,5 +271,5 @@ For details see the **[NIS2 compliance services page](/solutions/nis2-compliance
 
 ---
 
-*Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution.*
 

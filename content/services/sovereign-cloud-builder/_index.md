@@ -46,7 +46,7 @@ faq:
 
 **Sovereign cloud is a procurement-mandated reality in 2026 across EU member states, Kazakhstan, and several APAC jurisdictions. Building one means designing for substantive sovereignty — not just marketing claims — including encryption-key custody, supplier-chain transparency, audit-readiness, and regulator-aligned operational model.**
 
-Aenix builds sovereign cloud products on Cozystack for governments, quasi-public entities, and regional operators serving sovereignty-mandated markets.
+Ænix builds sovereign cloud products on Cozystack for governments, quasi-public entities, and regional operators serving sovereignty-mandated markets.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for sovereign clouds with strict customer-controlled-keys + air-gap support; **[Public Cloud Platform](/products/public-cloud-platform/)** for large sovereign-cloud product launches at hyperscaler-adjacent scale.
 
@@ -90,7 +90,7 @@ These are differentiation features for a sovereign-cloud product. Hyperscaler "s
 <div class="diagram">
 <div class="diagram__node"><b>Discovery + procurement-readiness</b><div class="diagram__chips"><span>BSI C5</span><span>SecNumCloud</span><span>EUCS</span></div></div>
 <div class="diagram__conn">scopes</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix sovereign cloud build</b><div class="diagram__chips"><span>Sovereignty controls</span><span>Procurement-ready docs</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix sovereign cloud build</b><div class="diagram__chips"><span>Sovereignty controls</span><span>Procurement-ready docs</span></div></div>
 <div class="diagram__conn">delivered on</div>
 <div class="diagram__node"><b>Cozystack platform</b><div class="diagram__chips"><span>KubeVirt VMs</span><span>Containers</span><span>One Kubernetes API</span></div></div>
 <div class="diagram__conn">runs on</div>
@@ -111,7 +111,7 @@ For specific sovereign-cloud requirements (BSI C5, SecNumCloud, EUCS) — discus
 
 ## Procurement readiness
 
-Aenix accepts RFI / RFP through:
+Ænix accepts RFI / RFP through:
 - **EU member states** — TED, national e-procurement portals
 - **Kazakhstan** — goszakup.gov.kz, mitwork.kz, zakup.sk.kz, Единая платформа закупок
 - **Other jurisdictions** — discussed per case
@@ -129,7 +129,7 @@ Aenix accepts RFI / RFP through:
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!-- SEO: title "Sovereign Cloud Builder — Design and Ship a Sovereign Cloud Product | Aenix"
+<!-- SEO: title "Sovereign Cloud Builder — Design and Ship a Sovereign Cloud Product | Ænix"
 Word count: ~600. -->

@@ -1,13 +1,13 @@
 ---
-title: "Aenix auf Konferenzen"
+title: "Ænix auf Konferenzen"
 description: "Konferenz-Vorträge des Aenix-Teams zu Cozystack-Architektur, KubeVirt, GitOps, souveräner KI und Platform Engineering — CloudFest, KubeCon und mehr."
 language: "de"
 ---
 
-**Das Aenix-Team spricht auf Kubernetes-, Cloud- und Platform-Engineering-Konferenzen weltweit — wir teilen, wie Cozystack funktioniert, wie Ænix Platform es für produktive Cloud-Operations erweitert und welche Architektur-Entscheidungen hinter souveräner / regulierter Cloud im großen Maßstab stehen.**
+**Das Ænix-Team spricht auf Kubernetes-, Cloud- und Platform-Engineering-Konferenzen weltweit — wir teilen, wie Cozystack funktioniert, wie Ænix Platform es für produktive Cloud-Operations erweitert und welche Architektur-Entscheidungen hinter souveräner / regulierter Cloud im großen Maßstab stehen.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="https://www.linkedin.com/company/aenix/">Aenix auf LinkedIn folgen für kommende Vorträge →</a>
+  <a class="cta-primary" href="https://www.linkedin.com/company/aenix/">Ænix auf LinkedIn folgen für kommende Vorträge →</a>
   <a class="cta-secondary" href="/de/kontakt/">Zum Event einladen</a>
 </div>
 
@@ -15,7 +15,7 @@ language: "de"
 
 ## Wo wir waren
 
-- **CloudFest 2026** (Europa-Park Rust, Deutschland) — Aenix-Stand #Z22, Partner-Programm-Launch, Ænix-Platform-Editions-Übersicht, Kunden-Meetings
+- **CloudFest 2026** (Europa-Park Rust, Deutschland) — Ænix-Stand #Z22, Partner-Programm-Launch, Ænix-Plattforms-Übersicht, Kunden-Meetings
 - **KubeCon + CloudNativeCon** (mehrere) — Cozystack-Plattform-Vorträge, GitOps / KubeVirt / Cluster API Sessions
 - **Kubernetes Community Days** — regionale KCDs in EU, DACH, Zentralasien
 - **Regionale Cloud- und Hosting-Konferenzen** — CloudFest, hosting.tools, regionale MSP-Konferenzen
@@ -42,7 +42,7 @@ language: "de"
 
 ## Vorschlagsthemen
 
-Andrei Kvapil (CEO), Timur Tukaev (COO) und Aenix-Solutions-Engineers sprechen auf:
+Andrei Kvapil (CEO), Timur Tukaev (COO) und Ænix-Solutions-Engineers sprechen auf:
 
 - Industriekonferenzen (KubeCon, CloudFest, regionale KCDs)
 - Kunden-Events und Webinare
@@ -62,4 +62,4 @@ Für Einladungen: [Discovery-Call buchen](/de/kontakt/) und "Speaking-Einladung"
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

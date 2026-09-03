@@ -35,7 +35,7 @@ faq:
     a: "Support tiers start at Basic $1,250/month for 10 nodes, then Standard $3,000 and Plus $5,500, with Enterprise pricing custom. The productized Public Cloud Platform adds white-label portal, reseller model, and billing; partners can earn up to 40% margin on resold engagements."
 ---
 
-**Managed Service Providers (MSPs) in 2026 are asked by enterprise customers for cloud capabilities that combine MSP managed-service relationship with hyperscaler-class capabilities. Cozystack-based platform with white-label branding is the realistic path — and what Aenix delivers.**
+**Managed Service Providers (MSPs) in 2026 are asked by enterprise customers for cloud capabilities that combine MSP managed-service relationship with hyperscaler-class capabilities. Cozystack-based platform with white-label branding is the realistic path — and what Ænix delivers.**
 
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — fully white-labelable cozyportal, multi-tier reseller model, WHMCS-integrated billing, from $1,250/month support tier. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
@@ -59,14 +59,14 @@ faq:
 ## What MSPs come to us for
 
 - **White-label cloud platform** — your brand, your customers
-- **Multi-tier reseller model** — Aenix tenant → MSP tenant → MSP customer tenant
+- **Multi-tier reseller model** — Ænix tenant → MSP tenant → MSP customer tenant
 - **WHMCS-integrated billing** — production-ready, two modes
 - **Operations workflow** — customer support, SLA management, observability
 - **Sovereignty positioning** — for MSPs serving regulated verticals
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Aenix tenant</b></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix tenant</b></div>
 <div class="diagram__conn">nests</div>
 <div class="diagram__node"><b>MSP tenant</b><div class="diagram__chips"><span>Branded cozyportal</span><span>WHMCS billing</span></div></div>
 <div class="diagram__conn">bills directly</div>
@@ -103,6 +103,6 @@ For full engagement see **[white-label cloud services](/services/white-label-clo
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
 <!-- Word count: ~400. -->

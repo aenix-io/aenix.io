@@ -43,7 +43,7 @@ faq:
 
 **Die NIS2-Richtlinie (EU 2022/2555) wird in den EU-Mitgliedstaaten umgesetzt, wobei die Fristen für viele bereits verstrichen sind. Für wesentliche und wichtige Entitäten — Energie, Verkehr, Bankwesen, Finanzmarktinfrastrukturen, Gesundheitswesen, Trinkwasser, digitale Infrastruktur, öffentliche Verwaltung, Postdienste, Abfall, ICT-Dienste und mehrere weitere Sektoren — schreibt NIS2 spezifische Cybersicherheits- und Vorfallsmanagement-Anforderungen vor, die direkt auf die Cloud-Architektur abbilden.**
 
-Aenix führt NIS2-konforme Platform-Readiness-Engagements für betroffene Entitäten und die sie bedienenden ICT-Drittanbieter durch. Ergebnis: eine Kontroll-Level-Landkarte, die zeigt, wo Sie heute stehen, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
+Ænix führt NIS2-konforme Platform-Readiness-Engagements für betroffene Entitäten und die sie bedienenden ICT-Drittanbieter durch. Ergebnis: eine Kontroll-Level-Landkarte, die zeigt, wo Sie heute stehen, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — NIS2-konform by design (Artikel 21 Risikomanagement, Artikel 23 Meldepflichten, Artikel 30 koordinierte Offenlegung von Schwachstellen). Tenant CRD mit NetworkPolicy / Cilium für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
 
@@ -144,7 +144,7 @@ Patch-Zyklen laufen im monatlichen Rhythmus; kritische Schwachstellen erhalten N
 
 <!-- BLOCK 5: HOW WE HELP -->
 
-## Wie Aenix hilft
+## Wie Ænix hilft
 
 Das NIS2-Engagement läuft als Teil unseres **[Platform Readiness Assessments](/de/dienstleistungen/platform-readiness-assessment/)** mit Schwerpunkt auf dem Workstream Souveränität und Regulierungs-Lücken. Das 14- oder 28-tägige Engagement liefert:
 
@@ -162,7 +162,7 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Ingenieure mit Sitz in der EU** mit Erfahrung innerhalb derselben Regulierungsrahmen wie Ihre Kunden.
 - **Keine Hyperscaler-Voreingenommenheit.** Empfehlungen spiegeln technische Eignung und regulatorische Passung wider, nicht die Ökonomie von Partnerschaften.
@@ -236,6 +236,6 @@ Geliefert von Ingenieuren mit Sitz in der EU und Erfahrung im Dialog mit Regulie
 
 <!-- BLOCK 12: FOOTER -->
 
-*Aenix ist das Team hinter Cozystack — einem CNCF-Projekt und einer Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack — einem CNCF-Projekt und einer Kubernetes Certified Distribution.*
 
 <!-- /BLOCK 12 -->

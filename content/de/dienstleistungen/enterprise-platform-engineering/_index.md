@@ -36,7 +36,7 @@ faq:
     a: "Cozystack stellt Multi-Tenancy strukturell über das Tenant CRD bereit. Jeder Mandant erhält isolierte Ressourcen auf einer gemeinsamen Kubernetes-API, mit KubeVirt für VMs und Container, Cilium-eBPF-Networking und LINSTOR/DRBD-Storage — Grundlage für BU-übergreifende Trennung."
   - q: "Welche Lizenz gilt und gibt es Core-basierte Kosten?"
     a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Aenix verkauft die produktisierte Ænix Platform plus Services. Die Service-Stufen beginnen bei 1.250 $/Monat (Basic, 10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise nach Vereinbarung."
-  - q: "Welche Ænix-Platform-Edition passt zu Enterprise Platform Engineering?"
+  - q: "Welche Ænix-Plattform passt zu Enterprise Platform Engineering?"
     a: "Die Private Cloud Platform für regulierte Multi-DC-Plattformen und die Developer Self-Service für produkt-engineering-getriebene Internal Developer Platforms at Enterprise Scale. Beide bauen auf Cozystack auf und werden durch Implementierungs- und Betriebs-Services ergänzt."
   - q: "Wie wird Governance und Compliance bei Enterprise-Scale abgebildet?"
     a: "Über Compliance-by-Design: Governance und Audit sind strukturell verankert, SLO-Disziplin gilt über alle Produkt-Teams hinweg, und Multi-Region-Operations sorgen für Konsistenz über Geografien. Die Plattform wird als Produkt mit Roadmap und internem NPS betrieben."
@@ -91,4 +91,4 @@ Für kleineren Scope siehe **[Platform Engineering Services](/de/dienstleistunge
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

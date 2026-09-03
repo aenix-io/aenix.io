@@ -5,7 +5,7 @@ hero_subtitle: "Regulatorische Trigger und Architekturmuster für Ihre Branche"
 language: "de"
 ---
 
-**Vertikale Proof Points und Engagement-Patterns nach Branche. Finden Sie Ihren Sektor — lesen Sie über regulatorische Trigger, architektonische Patterns und Ænix-Platform-Editions, die passen. Alle großen Engagements NDA-geschützt; erste namentlich genannte Bank-Cases erwartet Mitte 2027.**
+**Vertikale Proof Points und Engagement-Patterns nach Branche. Finden Sie Ihren Sektor — lesen Sie über regulatorische Trigger, architektonische Patterns und Ænix-Plattforms, die passen. Alle großen Engagements NDA-geschützt; erste namentlich genannte Bank-Cases erwartet Mitte 2027.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -18,7 +18,7 @@ language: "de"
 <div class="diagram__conn">unterliegt</div>
 <div class="diagram__node"><b>Regulatorischer Trigger</b><div class="diagram__chips"><span>DORA</span><span>NIS2</span><span>Souveränitätsmandate</span><span>Sektorale Datengesetze</span></div></div>
 <div class="diagram__conn">passt zu</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix-Platform-Edition</b><div class="diagram__chips"><span>Enterprise</span><span>Public Cloud</span><span>AI/ML</span><span>ISP</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Plattform</b><div class="diagram__chips"><span>Enterprise</span><span>Public Cloud</span><span>AI/ML</span><span>ISP</span></div></div>
 </div>
 </div>
 

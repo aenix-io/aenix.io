@@ -136,11 +136,11 @@ Building paths that platform team thinks are needed; turns out the actual top-10
 
 ## How to assess and start
 
-If self-service is on the table, the structured assessment names the top requests, where current paths fail, and what the priority build sequence looks like. Aenix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+If self-service is on the table, the structured assessment names the top requests, where current paths fail, and what the priority build sequence looks like. Ænix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 For details see **[developer self-service services](/solutions/developer-self-service)** and **[internal developer platform services](/services/internal-developer-platform/)**.
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 

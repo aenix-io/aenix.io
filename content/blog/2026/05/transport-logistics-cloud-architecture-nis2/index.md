@@ -76,11 +76,11 @@ Standard Article 21 + 23 mapping; transport-specific:
 
 Most workloads are sustained 24/7 inference where dedicated GPU economics fit.
 
-## How Aenix engages
+## How Ænix engages
 
 Standard **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with transport workstream emphasis.
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

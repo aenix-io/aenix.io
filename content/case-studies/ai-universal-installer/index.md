@@ -95,6 +95,6 @@ Worth noting the engineering depth of support: some of the needed fixes (bucket-
 
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the integrator and end customer are described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Aenix sales](/contact/).*
+*This case study is published in anonymized form (Tier-3 evidence): the integrator and end customer are described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

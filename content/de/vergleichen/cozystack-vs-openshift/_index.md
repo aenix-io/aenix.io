@@ -52,7 +52,7 @@ faq:
 | | OpenShift Virtualization | Cozystack |
 |---|---|---|
 | **Lizenz** | Red-Hat-Subscription | Apache 2.0 (Open Source) |
-| **Vendor-Stack** | Red Hat / IBM | Open Source / Aenix optional |
+| **Vendor-Stack** | Red Hat / IBM | Open Source / Ænix optional |
 | **Foundation** | Kubernetes + KubeVirt | Kubernetes + KubeVirt |
 | **Multi-Tenancy** | Project-basiert | Tenant CRD |
 | **Storage** | OpenShift Data Foundation | LINSTOR / Rook-Ceph |
@@ -79,4 +79,4 @@ faq:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

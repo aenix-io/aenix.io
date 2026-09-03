@@ -43,7 +43,7 @@ aliases:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">Alle Editions →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Plattforms →</a>
 </div>
 
 ---
@@ -102,7 +102,7 @@ H100, H200, L40S, A100, Blackwell (B100/B200) GPU-Klassen unterstützt. Multi-Te
 
 ### Bildung und Training inklusive
 
-Engineering-Team-Training als Teil des Engagements. Aenix's Kubernetes Deep Dive Kurs, der den Cozystack-Stack abdeckt (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux), inklusive für Kunden-Engineers in Private Cloud Platform Deployments.
+Engineering-Team-Training als Teil des Engagements. Ænix's Kubernetes Deep Dive Kurs, der den Cozystack-Stack abdeckt (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux), inklusive für Kunden-Engineers in Private Cloud Platform Deployments.
 
 ### Enterprise-SLA + 24/7 Support + Named TAM
 
@@ -110,7 +110,7 @@ Tiered SLA aligniert mit Regulator-Erwartungen. Named Technical Account Manager.
 
 ### Compliance-Zertifizierungs-Support
 
-Vorvalidiert gegen ISO 27001 / SOC 2. Aenix unterstützt Zertifizierungs-Dokumentation und Audit-Readiness-Arbeit.
+Vorvalidiert gegen ISO 27001 / SOC 2. Ænix unterstützt Zertifizierungs-Dokumentation und Audit-Readiness-Arbeit.
 
 ---
 
@@ -141,7 +141,7 @@ Mehrjähriger Plattform-Build, Angebot nach RFP. Discovery-Call zur Scope-Defini
 - **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — DORA / NIS2 Gap-Analyse + Architektur-Roadmap
 - **Pilot-Engagement** (3-6 Monate) — definierter Slice (eine Workload-Klasse, ein BU, ein Standort)
 - **Vollständiger Private Cloud Platform Build** (9-18 Monate) — Multi-DC-Produktions-Deployment, Compliance-Zertifizierungs-Support, Operations-Team-Training
-- **Managed Operations** (optional, laufend) — Aenix betreibt die Plattform unter SLA
+- **Managed Operations** (optional, laufend) — Ænix betreibt die Plattform unter SLA
 
 [Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)
 
@@ -160,7 +160,7 @@ Anonymisierte Phrasierung: "Tier-1-europäische-Bank-Engagement unter DORA-Scope
 
 ## Architektur-Review buchen
 
-Erzählen Sie uns von Ihrem regulatorischen Kontext (DORA / NIS2 / sektoral), Ihrer aktuellen Architektur und Ihren Souveränitäts-Anforderungen — wir richten ein fokussiertes Architektur-Review mit einem Aenix-Engineer ein und bestätigen den Private Cloud Platform Fit.
+Erzählen Sie uns von Ihrem regulatorischen Kontext (DORA / NIS2 / sektoral), Ihrer aktuellen Architektur und Ihren Souveränitäts-Anforderungen — wir richten ein fokussiertes Architektur-Review mit einem Ænix-Engineer ein und bestätigen den Private Cloud Platform Fit.
 
 {{< pipedrive-form type="demo" >}}
 
@@ -168,4 +168,4 @@ Lieber ein kürzerer erster Schritt? [30-Minuten-Discovery-Call buchen](/de/kont
 
 ---
 
-*Ænix Private Cloud Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*
+*Ænix Private Cloud Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Ænix ist das Open-Core-Unternehmen.*

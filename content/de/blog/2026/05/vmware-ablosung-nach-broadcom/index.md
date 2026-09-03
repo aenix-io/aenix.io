@@ -99,14 +99,14 @@ Lizenzen enden zu ihren eigenen Bedingungen. Hardware in den Cozystack-Cluster u
 
 ## Souveränität-by-Architecture
 
-Cozystack ist Open Source unter Apache 2.0. Ihre Binaries, Ihre Hardware, Ihre Datenebene. Aenix liefert Air-Gap-Installations-Workflows und ein Beratungssupport-Modell, das keinen direkten Kunden-Umgebungszugriff erfordert.
+Cozystack ist Open Source unter Apache 2.0. Ihre Binaries, Ihre Hardware, Ihre Datenebene. Ænix liefert Air-Gap-Installations-Workflows und ein Beratungssupport-Modell, das keinen direkten Kunden-Umgebungszugriff erfordert.
 
 Architektonische Implikationen:
 - **Tenant CRD** — jeder Mandant ist ein Kubernetes-Objekt
 - **Air-Gap-Install** unterstützt
 - **Kein Phone-Home** standardmäßig deaktiviert
 - **DORA/NIS2-konforme Steuerelemente** — operative Resilienz, Lieferantenrisikodokumentation
-- **Aenix-Support-Modell** — Beratung + Runbooks + GitOps-PR-Review (kein kubectl-Zugriff erforderlich)
+- **Ænix-Support-Modell** — Beratung + Runbooks + GitOps-PR-Review (kein kubectl-Zugriff erforderlich)
 
 ## Migrations-Zeitplan
 
@@ -119,5 +119,5 @@ Für eine spezifische Bewertung Ihres VMware-Ausstiegs siehe **[VMware-Alternati
 
 ---
 
-*Aenix ist das Team hinter Cozystack — CNCF-Projekt, Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack — CNCF-Projekt, Kubernetes Certified Distribution.*
 

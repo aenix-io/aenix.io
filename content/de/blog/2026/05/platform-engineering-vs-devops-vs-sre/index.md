@@ -89,5 +89,5 @@ Alle drei kümmern sich um:
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

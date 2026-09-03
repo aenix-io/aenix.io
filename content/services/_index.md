@@ -5,7 +5,7 @@ hero_subtitle: "From readiness assessment to a fully built cloud platform"
 language: "en"
 ---
 
-**Engagement-led entry points to Aenix work. Pick the engagement type that matches what you need to do — assess, build, operate. All paths lead to Ænix Platform deployments matched to your buyer profile.**
+**Engagement-led entry points to Ænix work. Pick the engagement type that matches what you need to do — assess, build, operate. All paths lead to Ænix Platform deployments matched to your buyer profile.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -25,7 +25,7 @@ language: "en"
 
 ### Build engagements
 
-- **[Platform engineering](/services/platform-engineering/)** — Build a production cloud platform; pairs with any Ænix Platform Edition
+- **[Platform engineering](/services/platform-engineering/)** — Build a production cloud platform; pairs with any Ænix platform
 - **[Internal developer platform](/services/internal-developer-platform/)** — IDP build for product / SaaS organizations; pairs with Developer Self-Service
 - **[Build private cloud](/services/build-private-cloud/)** — Private cloud build for enterprises; pairs with Private Cloud Platform
 - **[Public cloud builder](/services/public-cloud-builder/)** — Customer-facing cloud product build; pairs with Public Cloud Platform or Public Cloud Platform
@@ -57,8 +57,8 @@ Render as 5-step horizontal flow. Each step: number, bold heading, 1-line descri
 1. **Discovery call** (30 min, free) — confirm fit, scope, regulatory context, edition match
 2. **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — current-state audit + edition recommendation + roadmap
 3. **Pilot engagement** (3-6 months, quoted per RFP) — defined slice, validated business case
-4. **Full Edition build** — weeks for Public Cloud Platform; 9-18 months for Public Cloud / Enterprise / IDP / AI/ML
-5. **Managed operations** (ongoing retainer) — Aenix runs the platform you operate, or hybrid
+4. **Full platform build** — weeks for Public Cloud Platform; 9-18 months for Public Cloud / Enterprise / IDP / AI/ML
+5. **Managed operations** (ongoing retainer) — Ænix runs the platform you operate, or hybrid
 
 <div class="arch-section__fig">
 <div class="diagram">

@@ -53,7 +53,7 @@ expectations are sharpening with each TLPT cycle. The pre-DORA pattern
 realistic audit scrutiny.
 
 This article walks through what an audit-defensible cloud architecture
-actually looks like, why Aenix Private Cloud Platform is structured the
+actually looks like, why Ænix Private Cloud Platform is structured the
 way it is, and where most regulated organisations still have gaps.
 
 ## Article 21 — ten architectural areas
@@ -97,7 +97,7 @@ hooks for controlled failure injection.
 Article 28's most demanding requirement: ICT third-party arrangements
 inventoried, classified by criticality, with sub-contractor chain
 mapped to the *second hop*. Private Cloud Platform gives you the
-provider relationship Aenix can attest to (we are the platform vendor);
+provider relationship Ænix can attest to (we are the platform vendor);
 the open-source substrate (Cozystack) gives you transparency to the
 upstream-component level. Beyond that, the customer's responsibility.
 
@@ -117,7 +117,7 @@ catalogue, audit-trail completeness.
 ### 7. Cyber hygiene and training
 
 Out of scope for the platform itself; in scope for the customer's
-operations team. Aenix can deliver Kubernetes Deep Dive Course as
+operations team. Ænix can deliver Kubernetes Deep Dive Course as
 part of the engagement (separate product).
 
 ### 8. Cryptography
@@ -139,7 +139,7 @@ drift between policy and running state.
 
 ### 10. MFA / continuous authentication / secured comms
 
-MFA on all privileged accounts at minimum. Enterprise tier of Aenix
+MFA on all privileged accounts at minimum. Enterprise tier of Ænix
 support requires MFA on all customer-side cluster access. Secured
 emergency comms via the support channel itself.
 
@@ -176,7 +176,7 @@ Private Cloud Platform's open-source substrate makes the exit-test
 mechanically simpler: the workloads are standard KubeVirt VMs and
 Kubernetes resources. The exit destination can be "the same
 Kubernetes API, different underlying hardware or provider" rather
-than a wholesale migration. Aenix's engagement model includes a
+than a wholesale migration. Ænix's engagement model includes a
 documented exit-drill playbook customers run annually.
 
 ### Pattern 3 — concentration risk treated as a procurement question
@@ -203,7 +203,7 @@ Several Enterprise-specific layers:
 - **Multi-DC active/passive or active/active** — Enterprise typically
   deploys to two or more datacentres with cross-DC replication tuned
   for RTO/RPO targets. Public Cloud Platform is single-DC by default.
-- **Advisory-only support model** — Aenix engineers do not require
+- **Advisory-only support model** — Ænix engineers do not require
   kubectl access to your production cluster. Reviewers operate via
   GitOps PR review; runbooks remain on the customer side. Critical
   for banks where vendor-side access is a structural risk.
@@ -292,7 +292,7 @@ regulated enterprises with narrower scope.
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution, OpenSSF Best Practices. Our Private Cloud Platform
 engagements with tier-1 European banks are NDA-protected until mid-2027;
 first named bank case studies will be published as NDAs expire.*

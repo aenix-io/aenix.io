@@ -71,5 +71,5 @@ Nach 6-12 Monaten disziplinierter konfigurationeller Arbeit flacht die Einsparku
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

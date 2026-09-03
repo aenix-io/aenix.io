@@ -37,13 +37,13 @@ faq:
 
 **Cozystack is purpose-built for service providers, regulated enterprises, and multi-tenant cloud builders. For SMB and small mid-market organizations (under ~100 employees, single-tenant, simple infrastructure), Cozystack is over-engineering. The honest answer matters more than the sales pitch.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — but **only via an Aenix [Partner](/partners/)** (regional MSP / hosting provider). SMB customers consume cloud as a product from the partner, who runs Ænix Platform underneath. Direct Aenix engagement is rarely fit at SMB scale.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — but **only via an Ænix [Partner](/partners/)** (regional MSP / hosting provider). SMB customers consume cloud as a product from the partner, who runs Ænix Platform underneath. Direct Ænix engagement is rarely fit at SMB scale.
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>SMB customer</b></div>
 <div class="diagram__conn">consumes cloud from</div>
-<div class="diagram__node"><b>Aenix Partner</b><div class="diagram__chips"><span>Regional MSP</span><span>Hosting provider</span></div></div>
+<div class="diagram__node"><b>Ænix Partner</b><div class="diagram__chips"><span>Regional MSP</span><span>Hosting provider</span></div></div>
 <div class="diagram__conn">runs</div>
 <div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b></div>
 <div class="diagram__conn">based on</div>
@@ -105,7 +105,7 @@ For these cases — discovery call confirms whether Cozystack fits or whether so
 
 Cozystack is open source. We don't sell licenses. Building you something you don't need would damage our reputation. Better to be honest upfront and engage on right-fit projects.
 
-Customer-base evidence: most Aenix engagements are 200+ engineering organizations. SMB engagements are rare — and when they happen, they're driven by regulated-data exception cases, not generic "cloud platform" needs.
+Customer-base evidence: most Ænix engagements are 200+ engineering organizations. SMB engagements are rare — and when they happen, they're driven by regulated-data exception cases, not generic "cloud platform" needs.
 
 ---
 
@@ -117,7 +117,7 @@ Customer-base evidence: most Aenix engagements are 200+ engineering organization
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack. We engage on projects where the architecture genuinely fits.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack. We engage on projects where the architecture genuinely fits.*
 
 <!-- Honest positioning page; reduces unqualified leads + builds trust.
 Word count: ~500. -->

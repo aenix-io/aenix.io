@@ -35,9 +35,9 @@ faq:
     a: "Yes. Aenix is the team behind Cozystack, the open-source CNCF platform built on Kubernetes, KubeVirt, Cilium, and LINSTOR. SRE practices are built into the platform foundation, making them a natural fit for Cozystack and Ænix Platform environments."
 ---
 
-**Site Reliability Engineering as a discipline applies software engineering to operations. The Aenix SRE engagement covers SLOs, error budgets, incident response, and the operational practices that keep production reliable at scale — built into the platform foundation, not bolted on.**
+**Site Reliability Engineering as a discipline applies software engineering to operations. The Ænix SRE engagement covers SLOs, error budgets, incident response, and the operational practices that keep production reliable at scale — built into the platform foundation, not bolted on.**
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/)** — SRE practice tied to the production platform you're operating. Stand-alone SRE consulting also available.
+> **Pairs with:** any **[Ænix platform](/products/)** — SRE practice tied to the production platform you're operating. Stand-alone SRE consulting also available.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -55,7 +55,7 @@ faq:
 <div class="diagram">
 <div class="diagram__node"><b>Reliability goals</b><div class="diagram__chips"><span>Production at scale</span><span>Measurable reliability</span></div></div>
 <div class="diagram__conn">addressed by</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix SRE engagement</b><div class="diagram__chips"><span>SLOs</span><span>Observability</span><span>Incident response</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix SRE engagement</b><div class="diagram__chips"><span>SLOs</span><span>Observability</span><span>Incident response</span></div></div>
 <div class="diagram__conn">delivers</div>
 <div class="diagram__node"><b>Reliable operation at scale</b><div class="diagram__chips"><span>Error budgets</span><span>Blameless post-mortems</span></div></div>
 </div>
@@ -79,7 +79,7 @@ For broader DevOps scope see **[DevOps consulting](/services/devops-consulting/)
 
 - Assessment (5-10 days) — current SRE maturity and target state
 - Implementation (3-9 months) — integrated with your team, building practices
-- Managed engagement — Aenix as on-call partner
+- Managed engagement — Ænix as on-call partner
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -87,7 +87,7 @@ For broader DevOps scope see **[DevOps consulting](/services/devops-consulting/)
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "SRE Consulting — Site Reliability Practices for Production at Scale | Aenix"
+<!-- SEO: title "SRE Consulting — Site Reliability Practices for Production at Scale | Ænix"
 Word count: ~350. -->

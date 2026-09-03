@@ -205,7 +205,7 @@ A real-world DORA readiness assessment goes deeper than this checklist on each l
 
 A DORA-aligned cloud architecture does not require a specific product. It requires the architectural attributes above — portability, concentration-risk transparency, testable resilience, sovereignty, audit-readiness.
 
-Several architectural patterns make those attributes structurally easier rather than reliant on heroic operational discipline. Kubernetes-native virtualization platforms are one of them; Cozystack, the open-source CNCF Project Aenix builds, is one example.
+Several architectural patterns make those attributes structurally easier rather than reliant on heroic operational discipline. Kubernetes-native virtualization platforms are one of them; Cozystack, the open-source CNCF Project Ænix builds, is one example.
 
 What that pattern does for DORA:
 
@@ -228,7 +228,7 @@ A focused DORA-aligned platform readiness assessment, run against your existing 
 3. **Concentration and exit-feasibility** — supplier-chain mapping and time-to-exit calibration.
 4. **Resilience-testing readiness** — whether your architecture supports the testing supervisors expect.
 
-Aenix runs this as a 14- or 28-day engagement. The output is a written report that names, per control: where you stand, what's missing, what an architecture-level fix looks like, and what an implementation roadmap would sequence. See the **[Platform Readiness Assessment page](/services/platform-readiness-assessment/)** for the methodology in detail.
+Ænix runs this as a 14- or 28-day engagement. The output is a written report that names, per control: where you stand, what's missing, what an architecture-level fix looks like, and what an implementation roadmap would sequence. See the **[Platform Readiness Assessment page](/services/platform-readiness-assessment/)** for the methodology in detail.
 
 ## Where this sits in the broader compliance picture
 
@@ -257,5 +257,5 @@ For an infrastructure leader in 2026, the practical answer is to treat DORA-alig
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run DORA-aligned platform readiness assessments and platform engineering programs for financial-services organizations across the EU.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run DORA-aligned platform readiness assessments and platform engineering programs for financial-services organizations across the EU.*
 

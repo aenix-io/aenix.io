@@ -166,7 +166,7 @@ Cozystack-based architecture supports this commercially:
 - **Air-gap option** — for defence-adjacent / classified customers
 - **Open-source substrate** — exit-readiness built in; telco doesn't
   lock customers into vendor relationship
-- **EU jurisdiction** — telco's EU presence + Aenix EU contracting
+- **EU jurisdiction** — telco's EU presence + Ænix EU contracting
   entity (AENIX s.r.o.)
 
 For sovereign cloud commercial product lines, the Ænix Platform
@@ -281,6 +281,6 @@ Marginal fit:
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. Engineering teams across the EU and Central
 Asia, with telco-specific engagement experience under NDA.*

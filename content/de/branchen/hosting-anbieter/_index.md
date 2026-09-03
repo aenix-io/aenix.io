@@ -119,4 +119,4 @@ Produktive Referenzen: regionale Hosting-Anbieter betreiben die Ænix Public Clo
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*

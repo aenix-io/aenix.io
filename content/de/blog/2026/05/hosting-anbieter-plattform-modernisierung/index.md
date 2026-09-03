@@ -72,7 +72,7 @@ Gesamtzeit: 9-18 Monate von Projektstart zu GA.
 ## Wirtschaftlichkeit
 
 Mittelgroßer Hosting-Anbieter (1.000-10.000 Kunden):
-- Plattform-Investition: Aenix-Engagement + Cozystack-Build + WHMCS
+- Plattform-Investition: Ænix-Engagement + Cozystack-Build + WHMCS
 - Hardware: bestehende oder neue Compute, Storage, Netzwerk
 - Betriebsteam: 3-7 Engineers post-Launch
 - Kunden-Pricing: typisch 30-50% über Plattform-Rohkosten
@@ -81,5 +81,5 @@ Break-even: erste 50-100 zahlende Kunden.
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

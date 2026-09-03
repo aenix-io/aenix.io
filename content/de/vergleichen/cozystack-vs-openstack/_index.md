@@ -38,7 +38,7 @@ faq:
   - q: "Welche Storage- und Networking-Technologien nutzt Cozystack?"
     a: "Cozystack nutzt LINSTOR/DRBD für replizierten Block-Storage und Cilium (eBPF) für das Networking. VMs und Container laufen über KubeVirt auf derselben Kubernetes-API, statt wie bei OpenStack über getrennte Dienste wie Cinder und Neutron."
   - q: "Was bietet Aenix gegenüber selbst betriebenem Cozystack oder OpenStack?"
-    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und liefert die produktisierte Ænix Platform als turnkey Cloud-in-a-Box in zwei Editions plus Betriebs-Services. Die Preisstufen reichen von Basic (1.250 $/Mon., 10 Nodes) über Standard (3.000 $) und Plus (5.500 $) bis Enterprise nach Vereinbarung."
+    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und liefert die produktisierte Ænix Platform als turnkey Cloud-in-a-Box in zwei Plattforms plus Betriebs-Services. Die Preisstufen reichen von Basic (1.250 $/Mon., 10 Nodes) über Standard (3.000 $) und Plus (5.500 $) bis Enterprise nach Vereinbarung."
 ---
 
 **Beide sind Open-Source-Private-Cloud-Plattformen. Beide Apache 2.0. Beide produktionserprobt. Der Unterschied ist Generation und operativer Footprint.**
@@ -76,4 +76,4 @@ faq:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

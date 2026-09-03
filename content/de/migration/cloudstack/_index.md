@@ -3,7 +3,6 @@ title: "CloudStack zu Cozystack Migration"
 description: "Apache CloudStack bleibt etabliert in einigen Service-Provider-Märkten. Für Organisationen, die zu einer Kubernetes-nativen Foundation modernisieren, führt..."
 related_pages:
   - /de/produkte/public-cloud-platform/
-  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/alternativen/vmware-alternative
@@ -26,8 +25,8 @@ quick_facts:
     value: "VM-Images KVM/XenServer zu KubeVirt; CloudStack-Accounts/Projects zu Tenant CRD; Storage und Network re-architected"
   - label: "Typische Dauer"
     value: "9-15 Monate für mittelgroße Estates (Architektur-Review, Parallel-Deployment, Workload-Migration, Decommission)"
-  - label: "Passende Edition"
-    value: "Ænix Public Cloud Platform (Hosting/regionale Clouds); Public Cloud Platform (große Betreiber)"
+  - label: "Passende Plattform"
+    value: "Ænix Public Cloud Platform — CloudStack-Estates werden fast immer an externe Kunden verkauft, die Mandanten-, Katalog- und Abrechnungsschicht muss den Wechsel überleben"
 
 faq:
   - q: "Was passiert bei einer Migration von CloudStack zu Cozystack?"
@@ -37,16 +36,16 @@ faq:
   - q: "Welche Lizenz hat Cozystack?"
     a: "Cozystack ist unter Apache 2.0 lizenziert. Es gibt kein CPU- oder Core-basiertes Lizenzmodell. Cozystack ist zudem ein CNCF-Projekt (Sandbox seit Februar 2025), was Vendor-Neutralität und offene Governance sicherstellt."
   - q: "Für wen eignet sich die Migration zu Cozystack?"
-    a: "Die Migration richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds mit bestehenden CloudStack-Estates. Für Hosting-Anbieter und regionale Clouds passt die Ænix Public Cloud Platform, für große Betreiber die Public Cloud Platform."
+    a: "Die Migration richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds mit bestehenden CloudStack-Estates. Da diese Betreiber Infrastruktur an externe Kunden verkaufen, ist die Ænix Public Cloud Platform in nahezu allen Fällen das Ziel. Die Ænix Private Cloud Platform passt nur dort, wo CloudStack als interne Private Cloud betrieben wurde."
   - q: "Wie wird das Tenant-Modell von CloudStack übernommen?"
     a: "CloudStack-Accounts und -Projects werden in das Tenant-CRD-Modell von Cozystack überführt. Die Mandantenfähigkeit basiert dabei auf Kubernetes-CRDs, sodass die bestehende Mandantenstruktur auf eine Kubernetes-native Foundation abgebildet wird."
   - q: "Bleibt CloudStack während der Migration in Betrieb?"
     a: "Ja. Der Ansatz sieht ein Parallel-Deployment vor: Die neue Cozystack-Umgebung wird neben der bestehenden CloudStack-Installation aufgebaut, Workloads werden schrittweise migriert, und CloudStack wird erst nach abgeschlossener Migration decommissioned."
 ---
 
-**Apache CloudStack bleibt etabliert in einigen Service-Provider-Märkten. Für Organisationen, die zu einer Kubernetes-nativen Foundation modernisieren, führt Aenix CloudStack-zu-Cozystack-Migrationen durch.**
+**Apache CloudStack bleibt etabliert in einigen Service-Provider-Märkten. Für Organisationen, die zu einer Kubernetes-nativen Foundation modernisieren, führt Ænix CloudStack-zu-Cozystack-Migrationen durch.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter und regionale Clouds; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — Mandanten, Service-Katalog und Abrechnung sind bei CloudStack-Betreibern der geschäftskritische Teil der Migration. Siehe auch **[WHMCS-Integration](/de/produkte/whmcs-integration/)**, wenn CloudStack über WHMCS abgerechnet wurde.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -72,4 +71,4 @@ VM-Image-Migration: KVM/XenServer → KubeVirt. Tenant-Modell: CloudStack-Accoun
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

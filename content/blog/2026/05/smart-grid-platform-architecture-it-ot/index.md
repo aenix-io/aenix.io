@@ -200,7 +200,7 @@ Treating substation tier as "just SCADA" misses that modern smart-grid architect
 ### Pitfall 5: under-engineered DR for grid criticality
 Grid operations have public-safety implications. DR posture must be tested and proven, not documented only.
 
-## Where Aenix engages
+## Where Ænix engages
 
 The standard **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with energy-specific workstream emphasis covers the full picture. For details and engagement structure see **[energy industry page](/industries/energy/)**.
 
@@ -218,5 +218,5 @@ For specific triggers see **[NIS2 compliance](/solutions/nis2-compliance/)**, **
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
 

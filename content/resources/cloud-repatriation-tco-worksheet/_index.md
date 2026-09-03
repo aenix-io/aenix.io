@@ -40,7 +40,7 @@ faq:
     a: "The worksheet gives you the analytical foundation. For full TCO modelling and architecture design, Aenix offers Cloud repatriation services and a Platform Readiness Assessment, where the worksheet feeds the cost workstream."
 ---
 
-**Excel / Google Sheets template that lets you fill in your actual public-cloud spend and get an honest TCO comparison against private cloud. Models hidden costs (egress, idle resources, commitment underutilization, hyperscaler-managed-service premiums) plus realistic destination costs (hardware, datacenter, platform-team capacity, ops). Used by Aenix during cost workstream of Platform Readiness Assessment.**
+**Excel / Google Sheets template that lets you fill in your actual public-cloud spend and get an honest TCO comparison against private cloud. Models hidden costs (egress, idle resources, commitment underutilization, hyperscaler-managed-service premiums) plus realistic destination costs (hardware, datacenter, platform-team capacity, ops). Used by Ænix during cost workstream of Platform Readiness Assessment.**
 
 > **Pairs with:** any **[Ænix Platform Edition](/products/)** — repatriation destination depends on buyer profile. If you sell cloud to customers → Public Cloud Platform. If you run it for your own organisation → Private Cloud Platform. GPU-heavy either way → add the AI Platform.
 
@@ -120,6 +120,6 @@ The worksheet gives you the analytical foundation. For full TCO modelling and ar
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
 <!-- Word count: ~500. -->

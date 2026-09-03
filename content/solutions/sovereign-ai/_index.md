@@ -48,7 +48,7 @@ faq:
 
 **For regulated workloads, AI is no longer a hyperscaler-only conversation. Sensitive data classes, sectoral rules, and the economics of inference at scale are pushing financial services, healthcare, public sector, and AI-platform operators toward sovereign AI infrastructure — GenAI, inference, and analytics on the customer's own hardware, in the customer's chosen jurisdiction, under the customer's encryption keys.**
 
-Aenix builds and operates these platforms end-to-end: an architecture, a deployment, and an operations model your team can actually run.
+Ænix builds and operates these platforms end-to-end: an architecture, a deployment, and an operations model your team can actually run.
 
 > **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — AI platform automation out of the box (multi-tenant GPU scheduling, inference/fine-tuning/RAG blueprints, vector DB + object storage, sovereignty controls); add [Private Cloud Platform](/products/private-cloud-platform/) for a broader sovereign cloud, or the free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
 
@@ -146,19 +146,19 @@ The honest answer is usually a Kubernetes-native AI platform on customer-control
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## How Aenix helps
+## How Ænix helps
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>AI workloads</b><div class="diagram__chips"><span>Inference</span><span>Fine-tuning</span><span>RAG</span></div></div>
 <div class="diagram__conn">scheduled on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack / Aenix</b><div class="diagram__chips"><span>KubeVirt VMs + Kubernetes</span><span>NVIDIA GPU: MIG, vGPU</span><span>Customer keys and hardware</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix</b><div class="diagram__chips"><span>KubeVirt VMs + Kubernetes</span><span>NVIDIA GPU: MIG, vGPU</span><span>Customer keys and hardware</span></div></div>
 <div class="diagram__conn">delivers</div>
 <div class="diagram__node"><b>Sovereign AI</b><div class="diagram__chips"><span>Data never leaves the perimeter</span><span>No model-provider endpoints</span></div></div>
 </div>
 </div>
 
-The sovereign-AI engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + AI-platform workstreams emphasized. Where the engagement leads to implementation, Aenix delivers the platform end-to-end.
+The sovereign-AI engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + AI-platform workstreams emphasized. Where the engagement leads to implementation, Ænix delivers the platform end-to-end.
 
 The assessment phase produces:
 
@@ -166,7 +166,7 @@ The assessment phase produces:
 - **Sovereignty controls** — data-residency, key-custody, and audit-trail design specific to AI workloads.
 - **GPU strategy** — NVIDIA / AMD / alternatives sizing, model-to-hardware fit, scaling assumptions.
 - **Operations model** — who runs the platform, what self-service surface product / data-science teams get, what the on-call model looks like.
-- **Phase 2 implementation roadmap** — Aenix-delivered build, with timeline, effort estimates, and success criteria.
+- **Phase 2 implementation roadmap** — Ænix-delivered build, with timeline, effort estimates, and success criteria.
 
 The implementation phase delivers:
 
@@ -183,7 +183,7 @@ The implementation phase delivers:
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **AI infrastructure is what we run.** Cozystack is in production with AI / GPU operators across the EU and Central Asia. We have shipped GPU platforms supporting inference and fine-tuning workloads end-to-end.
 - **No model-provider bias.** We do not have a commercial relationship with a specific LLM provider. The architecture recommends the open-weight model that fits your data class, regulator, and economics — Llama, Mistral, Qwen, DeepSeek, Phi, or fine-tuned variants — and the serving stack to match.
@@ -202,7 +202,7 @@ The implementation phase delivers:
 | **Day 0** | 30-min discovery call (free) | Confirm fit, narrow AI workload scope, identify sponsor + data-science lead |
 | **Days 1-13 (or 1-27)** | Four parallel workstreams; sovereignty + AI-platform emphasized | Architecture options, GPU strategy, sovereignty controls, daily async updates |
 | **Day 14 (or 28)** | Executive readout (60-90 min) | Written report: architecture, sovereignty controls, GPU strategy, operations model, Phase 2 roadmap |
-| **Phase 2 (3-9 months)** | Implementation — Aenix builds and hands over | Production sovereign AI platform |
+| **Phase 2 (3-9 months)** | Implementation — Ænix builds and hands over | Production sovereign AI platform |
 
 For full assessment methodology see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
@@ -240,7 +240,7 @@ Architecture options, GPU strategy, sovereignty controls, operations model, Phas
 **On request**
 
 ### Phase 2 implementation
-Aenix-delivered build of the sovereign AI platform. Fixed-scope or time-and-materials, depending on workload count and complexity. Typical 3-9 months elapsed.
+Ænix-delivered build of the sovereign AI platform. Fixed-scope or time-and-materials, depending on workload count and complexity. Typical 3-9 months elapsed.
 **On request**
 
 </div>
@@ -284,7 +284,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build sovereign AI platforms for AI / GPU operators, financial services, and public-sector organizations across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build sovereign AI platforms for AI / GPU operators, financial services, and public-sector organizations across the EU, DACH, and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

@@ -50,7 +50,7 @@ Two ways to book a 30-minute discovery call — pick whichever fits your workflo
 **On the call we'll cover:**
 
 - Your buyer profile (hosting provider / regulated enterprise / public-cloud operator / product engineering team / AI-heavy organization)
-- Which Ænix Platform Edition fits — Public Cloud / ISP / Enterprise / IDP / AI/ML — or Pure Cozystack with Ænix Support entry tier
+- Which Ænix platform fits — Public Cloud / Private Cloud / AI — or Pure Cozystack with Ænix Support entry tier
 - Regulatory context (DORA / NIS2 / sectoral / national sovereignty mandates)
 - Current architecture and migration scope
 - Engagement model (Platform Readiness Assessment → Pilot → Full Build → Managed Operations)
@@ -142,7 +142,7 @@ For specific regional engagement questions, mention your jurisdiction in the dis
 
 ### How quickly can we get a discovery call?
 
-Same week typically. Aenix Solutions Engineering team holds discovery calls during EU + Central Asia business hours; US-time availability also offered for US prospects.
+Same week typically. Ænix Solutions Engineering team holds discovery calls during EU + Central Asia business hours; US-time availability also offered for US prospects.
 
 ### What should I prepare for the discovery call?
 
@@ -152,13 +152,13 @@ A 1-line description of your buyer profile (hosting provider / regulated enterpr
 
 Yes — under standard mutual NDA. Sensitive details discussed in the call stay confidential.
 
-### Can we engage Aenix through a partner?
+### Can we engage Ænix through a partner?
 
-Yes — many engagements run through Aenix Partners (system integrators, regional distributors, sovereign-cloud builders). [Partner Program →](/partners/). Mention your preferred partner in the discovery call if you have one.
+Yes — many engagements run through Ænix Partners (system integrators, regional distributors, sovereign-cloud builders). [Partner Program →](/partners/). Mention your preferred partner in the discovery call if you have one.
 
 ### What about public-sector procurement?
 
-Aenix accepts RFI / RFP through standard procurement channels in EU member states and Kazakhstan; the discovery call covers procedural fit. AENIX s.r.o. handles EU procurement; AENIX INC handles US procurement.
+Ænix accepts RFI / RFP through standard procurement channels in EU member states and Kazakhstan; the discovery call covers procedural fit. AENIX s.r.o. handles EU procurement; AENIX INC handles US procurement.
 
 ---
 
@@ -170,4 +170,4 @@ Aenix accepts RFI / RFP through standard procurement channels in EU member state
 
 ---
 
-*Aenix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of [Ænix Platform](/products/) — turnkey commercial cloud-in-a-box in three platforms.*
+*Ænix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of [Ænix Platform](/products/) — turnkey commercial cloud-in-a-box in three platforms.*

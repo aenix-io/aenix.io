@@ -158,7 +158,7 @@ Total elapsed: typically 12-24 months for a 100-VM hybrid estate.
 
 ## How to start
 
-A hybrid platform engagement starts with workload classification. Aenix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**. For details see the **[hybrid cloud platform services page](/solutions/hybrid-cloud-platform/)**.
+A hybrid platform engagement starts with workload classification. Ænix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**. For details see the **[hybrid cloud platform services page](/solutions/hybrid-cloud-platform/)**.
 
 ---
 
@@ -171,5 +171,5 @@ A hybrid platform engagement starts with workload classification. Aenix runs thi
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 

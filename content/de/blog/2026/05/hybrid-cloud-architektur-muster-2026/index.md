@@ -79,5 +79,5 @@ KI-Training und Inferenz auf dediziertem GPU (Private Cloud); Rest des Geschäft
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

@@ -58,7 +58,7 @@ business — not the abstract one.
 ## What Public Cloud Platform actually delivers
 
 Before economics, scope. Public Cloud Platform is the turnkey cloud-in-a-box
-Aenix sells to hosting providers, MSPs, regional clouds, and small-to-
+Ænix sells to hosting providers, MSPs, regional clouds, and small-to-
 mid data centres. It includes:
 
 - **Multi-tenant Cozystack platform** running on customer-controlled
@@ -85,13 +85,13 @@ depth.
 Public Cloud Platform is the only Ænix Platform edition with a published entry
 price: from **$1,250/month** for the Basic support tier covering 10
 nodes. Higher tiers (Standard, Enterprise) add SLA, dedicated TAM,
-24×7 response, with pricing on RFP. Aenix does not charge per VM,
+24×7 response, with pricing on RFP. Ænix does not charge per VM,
 per CPU, or per GB — the Cozystack platform itself is free under
 Apache 2.0; what you pay for is engagement, support, and operational
 assurance.
 
 For a typical mid-size hosting provider running 30-100 customer-facing
-nodes, Aenix support cost lands in the €4-15k/month range depending on
+nodes, Ænix support cost lands in the €4-15k/month range depending on
 tier and SLA. That's a fraction of the recurring license cost most
 providers have been paying VMware or OpenStack distribution vendors.
 
@@ -141,7 +141,7 @@ The fixed cost stack for a mid-size hosting provider on Public Cloud Platform:
 
 | Item | Monthly | Annual |
 |---|---|---|
-| Aenix support (Standard tier) | €6k | €72k |
+| Ænix support (Standard tier) | €6k | €72k |
 | Platform-engineering team (3-5 FTE) | €20-35k | €240-420k |
 | Hardware amortisation (50 nodes) | €5-8k | €60-100k |
 | Colocation / power / bandwidth | €4-7k | €50-85k |
@@ -176,7 +176,7 @@ comes from polish (UX flows that match how *your* customers think about
 ordering, configuring, paying). Providers who treat the portal as
 "good enough" lose conversion to providers who invest in it.
 
-Aenix engagement includes cozyportal brand customization; deeper UX
+Ænix engagement includes cozyportal brand customization; deeper UX
 work is typically a separate Phase 2.
 
 ### 2. Service-catalog mismatch
@@ -275,7 +275,7 @@ For providers where Public Cloud Platform fits:
 - **Limited GA** (2-4 months) — 50-100 customers, operational
   workflows stabilised
 - **General availability** — open market launch
-- **Managed retainer** (optional, ongoing) — Aenix runs Tier-3
+- **Managed retainer** (optional, ongoing) — Ænix runs Tier-3
   operations under SLA
 
 Typical end-to-end timeline from project start to market launch: 9-18
@@ -292,7 +292,7 @@ months depending on estate complexity and team readiness.
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution, OpenSSF Best Practices. We build sovereign
 cloud products with hosting providers across the EU, DACH, and Central
 Asia.*

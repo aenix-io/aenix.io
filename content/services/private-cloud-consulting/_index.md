@@ -51,7 +51,7 @@ faq:
 
 **Private cloud is back — driven by Broadcom-induced VMware exits, sovereignty mandates, AI workload economics, and FinOps pressure on hyperscaler bills. The Broadcom Private Cloud Outlook 2025 found 53% of organizations now prioritize private cloud for new workloads, and 69% are evaluating repatriation. The architecture decisions are bigger than picking a vendor — they shape operations for the next decade.**
 
-Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a Kubernetes-native private cloud platform we run in production with service providers, banks, and regulated enterprises. Our private cloud consulting engagements bring those same engineers to your engagement.
+Ænix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a Kubernetes-native private cloud platform we run in production with service providers, banks, and regulated enterprises. Our private cloud consulting engagements bring those same engineers to your engagement.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises building private/hybrid sovereign cloud; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators running their own public-cloud-class platform.
 
@@ -142,7 +142,7 @@ Private cloud is built; platform team is the same size as the team that operated
 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
-## How Aenix engages
+## How Ænix engages
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -157,7 +157,7 @@ Private cloud is built; platform team is the same size as the team that operated
 </div>
 
 - **Architecture review (5-15 days)** — focused engagement, target architecture, capacity model.
-- **Implementation engagement (3-12 months)** — Aenix engineers integrated with your team, building the foundation, multi-tenancy, operations model. Knowledge transfer throughout.
+- **Implementation engagement (3-12 months)** — Ænix engineers integrated with your team, building the foundation, multi-tenancy, operations model. Knowledge transfer throughout.
 - **Managed private cloud** — for organizations needing the platform but lacking operating capacity.
 
 For broader assessment see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
@@ -168,7 +168,7 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **We operate private clouds in production.** Cozystack is in production with service providers and regulated enterprises.
 - **Open-source platform foundation.** [Cozystack](/products/cozystack/) is open-source CNCF Project. The platform we recommend is one you own — no vendor-roadmap lock-in.
@@ -241,12 +241,12 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 
 <!-- BLOCK 12: FOOTER -->
 
-*Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
 
 <!--
-SEO: title "Private Cloud Consulting — Engineers Who Design, Deploy, and Operate It | Aenix"
+SEO: title "Private Cloud Consulting — Engineers Who Design, Deploy, and Operate It | Ænix"
 Description (≤155): "Private cloud consulting from engineers who built and operate Cozystack open-source platform. Architecture, multi-tenancy, no vendor lock-in."
 Word count: ~900.
 -->

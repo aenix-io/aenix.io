@@ -41,7 +41,7 @@ faq:
     a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack, einem CNCF-Projekt. Aenix verkauft die produktisierte Ænix Platform plus Services; Cozystack bleibt Open Source unter Apache 2.0."
 ---
 
-**Eine 8-Dimensionen-Selbsteinschätzung, die Ihre Platform-Engineering-Praxis auf einer 5-Stufen-Reife-Skala bewertet. Verwendet von Aenix während Platform Readiness Assessment, um Organisationen vor Phase-2-Empfehlung zu baselinen.**
+**Eine 8-Dimensionen-Selbsteinschätzung, die Ihre Platform-Engineering-Praxis auf einer 5-Stufen-Reife-Skala bewertet. Verwendet von Ænix während Platform Readiness Assessment, um Organisationen vor Phase-2-Empfehlung zu baselinen.**
 
 > **Passt zu:** **[the developer self-service layer of Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation. Die meisten Assessment-Outcomes empfehlen Developer Self-Service als strukturierten nächsten Schritt.
 
@@ -77,4 +77,4 @@ Für jede Dimension 5-Stufen-Rubrik (Pre-platform → Mature platform engineerin
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

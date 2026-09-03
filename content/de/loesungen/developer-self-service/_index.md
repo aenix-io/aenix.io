@@ -47,7 +47,7 @@ faq:
 
 **Der teuerste einzelne Vorgang in den meisten Engineering-Organisationen ist die Wartezeit zwischen "Team braucht ein Environment" und "Team hat ein Environment". Wenn diese Lücke Tage oder Wochen beträgt, sinkt die Produkt-Velocity messbar; beträgt sie nur Stunden, verzinst sich die Plattform-Investition über Jahre.**
 
-Aenix baut Developer-self-service in Plattformen ein, die Produktteams auch wirklich nutzen — nicht Backstage als reine Fassade, sondern echte Golden Paths, die Anfragen ohne Ticket in bereitgestellte Realität verwandeln.
+Ænix baut Developer-self-service in Plattformen ein, die Produktteams auch wirklich nutzen — nicht Backstage als reine Fassade, sondern echte Golden Paths, die Anfragen ohne Ticket in bereitgestellte Realität verwandeln.
 
 > **Passt zu:** **[the developer self-service layer of Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer mit GitLab-Automatisierung, Argo CD Workflows, APIs für self-service, Golden-Path-Templates und Dashboards für die Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
@@ -106,13 +106,13 @@ Die ehrliche Variante braucht eine meinungsstarke Plattform darunter, nicht nur 
 
 ---
 
-## Wie Aenix arbeitet
+## Wie Ænix arbeitet
 
 Self-service ist Teil der umfassenderen Platform-Engineering-Arbeit — siehe **[Internal Developer Platform Services](/de/dienstleistungen/internal-developer-platform/)** und **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)** für die Einordnung des Engagements. Das self-service-spezifische Ergebnis ist:
 
 - **Golden-Path-Inventar** — Ist-Zustand vs. Ziel für die 10 häufigsten Anfragen
 - **Entworfene Self-Service-Pfade** — für die priorisierten Anfragen
-- **Umsetzungs-Engagement** — Aenix-Ingenieure bauen die Pfade, integriert in Ihre Plattform
+- **Umsetzungs-Engagement** — Ænix-Ingenieure bauen die Pfade, integriert in Ihre Plattform
 - **Framework für Adoptionsmetriken** — messen, was funktioniert
 
 ---
@@ -154,4 +154,4 @@ Self-service ist Teil der umfassenderen Platform-Engineering-Arbeit — siehe **
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF Project), und wir bieten die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF Project), und wir bieten die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

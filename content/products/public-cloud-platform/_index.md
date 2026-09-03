@@ -114,7 +114,7 @@ Managed PostgreSQL (CloudNativePG), MySQL (MariaDB), Redis, Kafka (Strimzi), Cli
 
 ### Migration tooling and expertise
 
-Modules and runbooks for migration from VMware, OpenStack, Virtuozzo and OpenNebula, including Forklift-based VM migration shipped in the platform. Aenix delivers migration with experience from production engagements. [Migration guides →](/migration/)
+Modules and runbooks for migration from VMware, OpenStack, Virtuozzo and OpenNebula, including Forklift-based VM migration shipped in the platform. Ænix delivers migration with experience from production engagements. [Migration guides →](/migration/)
 
 ### Enterprise support
 
@@ -130,8 +130,8 @@ Modules and runbooks for migration from VMware, OpenStack, Virtuozzo and OpenNeb
 | Customer-facing portal | DIY | cozyportal, branded, included |
 | Billing | DIY integration | WHMCS-native, Stripe and regional providers |
 | Multi-tenancy | Project model — limited | Tenant CRD with quotas, RBAC and observability per tenant |
-| Migration from VMware | Heavy lift | Forklift-based tooling plus Aenix delivery |
-| Vendor support | Community plus add-ons | Aenix enterprise support from $1,250/month |
+| Migration from VMware | Heavy lift | Forklift-based tooling plus Ænix delivery |
+| Vendor support | Community plus add-ons | Ænix enterprise support from $1,250/month |
 | Upgrade cadence | Manual, risky | GitOps-managed, low-risk |
 
 ### And versus the VPS control panels
@@ -180,7 +180,7 @@ Bank and telco deployments are NDA-protected until mid-2027. One commercial publ
 - **Platform Readiness Assessment** (5-10 days, fixed price) — current-state and target architecture, migration roadmap, risk register
 - **Pilot** (3-6 months, operator scale) — one region, one tenant cohort, one product line
 - **Full build** — weeks at provider scale via the productized installer; 9-18 months for multi-region production with customer onboarding workflows and operations training
-- **Managed operations** (optional) — Aenix runs the control plane under SLA
+- **Managed operations** (optional) — Ænix runs the control plane under SLA
 
 [Platform Readiness Assessment →](/services/platform-readiness-assessment/)
 

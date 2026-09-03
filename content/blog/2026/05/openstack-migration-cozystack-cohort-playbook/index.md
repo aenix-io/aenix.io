@@ -205,8 +205,8 @@ Cohorts of 50-200 instances migrating at a time. Per cohort:
 
 ### Phase 4 — Operational handover (2-4 months, parallel to Phase 3)
 
-Aenix engineers reduce direct involvement. Customer operations team
-absorbs Tier-1 / Tier-2 incidents. Aenix retainer continues for
+Ænix engineers reduce direct involvement. Customer operations team
+absorbs Tier-1 / Tier-2 incidents. Ænix retainer continues for
 Tier-3 SLA escalation. Documentation handover. Knowledge transfer
 sessions.
 
@@ -269,7 +269,7 @@ who built OpenStack expertise around imperative workflows need 4-8
 weeks of focused training plus 3-6 months of practice to internalise
 the GitOps discipline.
 
-Aenix engagement includes training as a workstream; customer
+Ænix engagement includes training as a workstream; customer
 investment in the cultural transition is also required.
 
 ## Timeline realities
@@ -334,7 +334,7 @@ Poor fit:
 - **Cohort migration** (6-24 months) — workload migration in cohorts
 - **OpenStack decommission** (parallel to cohort migration) — staged
   as cohorts complete
-- **Managed retainer** (optional, ongoing) — Aenix Tier-3 SLA
+- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
 
 ## Where to dig deeper
 
@@ -351,7 +351,7 @@ Poor fit:
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. We have shipped OpenStack-to-Cozystack
 migrations across hosting providers and telco operators; specific
 named case studies remain NDA-protected.*

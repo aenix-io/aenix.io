@@ -68,7 +68,7 @@ Bei 0-1: Over-Engineering. Bei 2: marginal. Bei 3+: passt.
 - Mittelstand wird Multi-Tenant SaaS
 - Mittelstand mit starker Plattform-Engineering-Investition
 
-## Aenix-Engagement
+## Ænix-Engagement
 
 - 15-min-Fit-Check (kostenlos)
 - Architektur-Review (5-10 Tage) wenn strukturierter
@@ -78,5 +78,5 @@ Bei meisten KMU ist die ehrliche Antwort "bleibt wo ihr seid."
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

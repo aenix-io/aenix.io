@@ -19,7 +19,7 @@ quick_facts:
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Mandantenfähigkeit"
     value: "Tenant-CRD trennt Schulträger-Zentrale von Schul-Ebene und EdTech-Tenants"
-  - label: "Empfohlene Edition"
+  - label: "Empfohlene Plattform"
     value: "Ænix Private Cloud Platform für souveränitätspflichtige Schülerdatenverarbeitung im großen Maßstab"
   - label: "Regulatorik"
     value: "DSGVO plus nationale Schulgesetze und Datenresidenz-Vorgaben"
@@ -99,4 +99,4 @@ Für die meisten K-12-Schulträger sind Hyperscaler-managed-Services + Standard-
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*

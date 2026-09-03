@@ -1,11 +1,11 @@
 ---
-title: "Aenix Partner-Programm"
+title: "Ænix Partner-Programm"
 description: "Aenix Partner-Programm: bis zu 40% Marge auf Ænix-Platform-Verkäufe, Deal-Schutz, Sales-Kit und L3-Support für Reseller, Integratoren und Distributoren."
 hero_subtitle: "Offene Cloud-Plattform wiederverkaufen, bis zu 40% Marge"
 language: "de"
 ---
 
-**Verkaufen Sie Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box — mit bis zu 40% Marge, Deal-Schutz und direktem Zugang zum Aenix-Core-Team. Für Integratoren, Reseller, Distributoren und regionale Cloud- / souveräne-Cloud-Builder.**
+**Verkaufen Sie Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box — mit bis zu 40% Marge, Deal-Schutz und direktem Zugang zum Ænix-Core-Team. Für Integratoren, Reseller, Distributoren und regionale Cloud- / souveräne-Cloud-Builder.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Partner werden</a>
@@ -18,8 +18,8 @@ language: "de"
 
 - **Marge:** bis zu **40%** auf Ænix-Platform-Lizenz + Support-Tier-Verkäufe
 - **Deal-Schutz:** Registrierte Opportunities werden für den Partner reserviert — kein Channel-Konflikt
-- **Zwei Editions zu verkaufen:** Public Cloud / ISP / Enterprise / IDP / AI/ML
-- **L3-Support-Zugang:** direkte Linie zum Aenix-Core-Engineering für Partner-supported Customers
+- **Zwei Plattforms zu verkaufen:** Public Cloud / Private Cloud / AI
+- **L3-Support-Zugang:** direkte Linie zum Ænix-Core-Engineering für Partner-supported Customers
 - **Training inklusive:** Kubernetes Deep Dive Kurs + Ænix-Platform-spezifische Befähigung
 - **Sales-Kit:** Decks, Battle Cards, Demo-Environment, Technical-Pre-Sales-Support
 - **Geografien:** EU + DACH + Zentralasien primär; Expansion via Partner-Netzwerk global
@@ -39,19 +39,19 @@ Wiederkehrende Marge auf mehrjährige Support-Verträge — Partner verdienen am
 | Ressource | Beschreibung |
 |---|---|
 | **Sales-Kit** | Decks, Battle Cards (vs VMware / OpenStack / Nutanix / OpenShift / Proxmox), Produkt-One-Pagers |
-| **Technical Pre-Sales** | Aenix-Solutions-Engineers schließen sich Customer-Calls an |
+| **Technical Pre-Sales** | Ænix-Solutions-Engineers schließen sich Customer-Calls an |
 | **Demo-Environment** | Vor-deployte Ænix-Platform-Demo |
 | **Deal-Registrierung** | Opportunities für Partner sperren |
-| **L3-Support** | Eskalations-Pfad zum Aenix-Core-Engineering |
+| **L3-Support** | Eskalations-Pfad zum Ænix-Core-Engineering |
 | **Training** | Kubernetes Deep Dive Kurs + Ænix-Platform-Zertifizierung |
 | **Co-Marketing** | Joint Webinars, Conference-Auftritte, Case Studies |
 | **Roadmap-Zugang** | Quartalsweise Roadmap-Previews, Early-Access |
-| **Lead-Sharing** | Aenix-generierte Leads in Partner-Geografien |
+| **Lead-Sharing** | Ænix-generierte Leads in Partner-Geografien |
 | **Onboarding** | 4-Wochen strukturiertes Onboarding |
 
 ---
 
-## Aktuelle Aenix-Partner
+## Aktuelle Ænix-Partner
 
 Aktuelle öffentliche Partner:
 
@@ -65,7 +65,7 @@ Aktuelle öffentliche Partner:
 ## Wie Partner werden
 
 1. **Bewerben** — Interesse einreichen via Partner-Programm-Bewerbungs-Formular oder E-Mail sales@aenix.io
-2. **Discovery-Call** (30 min) — Geschäft, Kundenstamm, Ziel-Editions, Geografie, Partner-Level-Fit besprechen
+2. **Discovery-Call** (30 min) — Geschäft, Kundenstamm, Ziel-Plattforms, Geografie, Partner-Level-Fit besprechen
 3. **Onboarding** (4 Wochen) — Sales + Technical + Operational Training; Demo-Environment-Zugang; Deal-Registrierungs-Setup
 4. **Go Live** — erste Deal-Registrierung, Sales-Kit deployt, voller L3-Support-Zugang
 
@@ -83,4 +83,4 @@ Oder E-Mail an [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt — und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt — und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

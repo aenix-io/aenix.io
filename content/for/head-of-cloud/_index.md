@@ -17,7 +17,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Your clients' VMware renewals jumped — and they're asking you what's next. That's your opening: a branded cloud (VMs, Kubernetes, databases, storage) on an open platform, no per-core tax eating your margin. Resell it as a product, or build your own with Aenix as your engineering team. You keep the client and the recurring revenue.**
+**Your clients' VMware renewals jumped — and they're asking you what's next. That's your opening: a branded cloud (VMs, Kubernetes, databases, storage) on an open platform, no per-core tax eating your margin. Resell it as a product, or build your own with Ænix as your engineering team. You keep the client and the recurring revenue.**
 
 > **Pairs with:** **[White-label cloud](/services/white-label-cloud/)** and **[Public cloud builder](/services/public-cloud-builder/)**, **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** (branded portal + billing), and the **[Partner Program](/partners/)** (up to 40% margin). Core: open-source **[Cozystack](/products/cozystack/)**.
 
@@ -49,11 +49,11 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 
 ---
 
-## Two ways Aenix helps you
+## Two ways Ænix helps you
 
 **1. Resell a ready platform.** [Ænix Public Cloud Platform](/products/public-cloud-platform/) is a white-labelable cloud — customer portal, service catalog (VMs, K8s, managed DBs, S3, GPU), WHMCS-integrated billing, multi-tier reseller model. You brand and sell; we provide platform and support. The [Partner Program](/partners/) gives up to 40% margin with deal protection.
 
-**2. Build your own, with our team.** Want your own differentiated cloud? Cozystack is the framework and **Aenix is your outsourced engineering team** — we design and stand up your [public cloud](/services/public-cloud-builder/) or [white-label cloud](/services/white-label-cloud/), fill the K8s/KubeVirt gap, and you own the platform and the client.
+**2. Build your own, with our team.** Want your own differentiated cloud? Cozystack is the framework and **Ænix is your outsourced engineering team** — we design and stand up your [public cloud](/services/public-cloud-builder/) or [white-label cloud](/services/white-label-cloud/), fill the K8s/KubeVirt gap, and you own the platform and the client.
 
 ---
 
@@ -66,14 +66,14 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 - **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026).
 - **Common pitfall:** reselling a hyperscaler and competing on price while owning none of the platform value.
 
-[Source: [Cozystack docs](https://cozystack.io); [Aenix Partner Program](/partners/)]
+[Source: [Cozystack docs](https://cozystack.io); [Ænix Partner Program](/partners/)]
 
 ---
 
-## Why service providers pick Aenix
+## Why service providers pick Ænix
 
 - **You keep the client and the margin.** The platform is branded yours; we stay behind the curtain.
-- **Delivery capacity on tap.** Aenix is your K8s/KubeVirt bench — say yes to builds you'd otherwise decline.
+- **Delivery capacity on tap.** Ænix is your K8s/KubeVirt bench — say yes to builds you'd otherwise decline.
 - **A real VMware-exit story.** Open, sovereign-capable, no per-core tax — exactly what your clients are asking for.
 
 ---
@@ -108,7 +108,7 @@ Free, no prep. We look at your client base and tell you whether reselling the Pu
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:

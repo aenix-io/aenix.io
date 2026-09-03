@@ -59,7 +59,7 @@ Diese Modelle liefen in einer gemieteten öffentlichen GPU-Cloud, stundenweise a
 
 - KI-Inferenz von einer stundenweise gemieteten GPU-Cloud auf einen eigenen Bare-Metal-Server mit 8xH100 zurückholen, um Kosten zu senken und die Kapazitätsgrenze anzuheben.
 - Die cloud-native UX erhalten: API-Gateway, Task-Queues, Autoscaling, Storage für Modellgewichte, vollständiges Monitoring.
-- Verantwortlichkeiten sauber trennen: Der Kunde schreibt und besitzt die ML-Geschäftslogik; Aenix verantwortet Architektur, DevOps und 24x7-Support der GPU-Infrastruktur, Kubernetes und Monitoring.
+- Verantwortlichkeiten sauber trennen: Der Kunde schreibt und besitzt die ML-Geschäftslogik; Ænix verantwortet Architektur, DevOps und 24x7-Support der GPU-Infrastruktur, Kubernetes und Monitoring.
 - Modellgewichte und Nutzerdaten auf einer vom Kunden kontrollierten Infrastruktur halten (Data Locality).
 - Kein Technologie-Lock-in — eine ausdrückliche, nicht verhandelbare Anforderung: ein vollständig quelloffener, CNCF-orientierter Stack ohne proprietäre Control Plane.
 
@@ -110,6 +110,6 @@ Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway 
 
 ---
 
-*Diese Fallstudie ist anonymisiert veröffentlicht (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht namentlich. Eine Kundenreferenz unter NDA ist auf Anfrage verfügbar — [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie ist anonymisiert veröffentlicht (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht namentlich. Eine Kundenreferenz unter NDA ist auf Anfrage verfügbar — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*

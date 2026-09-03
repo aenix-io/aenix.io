@@ -44,7 +44,7 @@ quiz:
 
 **This is the long-form companion to our [Cozystack product page](/products/cozystack/). It walks through what Cozystack is, the architecture, how it differs from OpenStack and OpenShift, and where it fits in the 2026 cloud platform landscape.**
 
-Cozystack is an open-source cloud platform — Apache 2.0 licensed, CNCF Project, built primarily by Aenix with growing community contribution. It started as an internal platform for service-provider customers and was open-sourced in 2023 because the architectural pattern proved generally useful.
+Cozystack is an open-source cloud platform — Apache 2.0 licensed, CNCF Project, built primarily by Ænix with growing community contribution. It started as an internal platform for service-provider customers and was open-sourced in 2023 because the architectural pattern proved generally useful.
 
 ## What Cozystack is, technically
 
@@ -112,7 +112,7 @@ Both KubeVirt-based.
 
 OpenShift Virtualization: Red Hat commercial subscription. Strong enterprise tooling. Tied to Red Hat / IBM relationship.
 
-Cozystack: Apache 2.0 open source. Aenix commercial support optional. Lighter operational footprint without the OpenShift surface area.
+Cozystack: Apache 2.0 open source. Ænix commercial support optional. Lighter operational footprint without the OpenShift surface area.
 
 For Red Hat customers, OpenShift Virtualization fits naturally. For organizations preferring open-source-first, Cozystack.
 
@@ -124,20 +124,20 @@ Proxmox: SMB-friendly, single-tenant, mature. Excellent under ~50 hosts.
 
 Cozystack: Multi-tenant scale, service-provider-friendly. Better above ~50 hosts and where multi-tenancy matters.
 
-## The Aenix relationship
+## The Ænix relationship
 
-Cozystack and Aenix are intentionally separate:
+Cozystack and Ænix are intentionally separate:
 
 - **Cozystack** is community-governed CNCF Project. Apache 2.0. Anyone can deploy, contribute, or fork.
-- **Aenix** is the commercial entity. Builds and maintains Cozystack. Provides paid support tiers and professional services.
+- **Ænix** is the commercial entity. Builds and maintains Cozystack. Provides paid support tiers and professional services.
 
 The separation matters because:
 
-- **Customer choice** — you can deploy Cozystack independently. You don't need Aenix to use the platform.
-- **Project longevity** — Cozystack survives Aenix-business decisions because it's CNCF-governed and Apache-licensed.
-- **Aenix focus** — Aenix sells engagement (assessment, build, support), not licenses.
+- **Customer choice** — you can deploy Cozystack independently. You don't need Ænix to use the platform.
+- **Project longevity** — Cozystack survives Ænix-business decisions because it's CNCF-governed and Apache-licensed.
+- **Ænix focus** — Ænix sells engagement (assessment, build, support), not licenses.
 
-For organizations seeking commercial support, Aenix is one option (the primary one in 2026 because Aenix is the largest contributor). Other commercial support providers may emerge as the project matures.
+For organizations seeking commercial support, Ænix is one option (the primary one in 2026 because Ænix is the largest contributor). Other commercial support providers may emerge as the project matures.
 
 ## When Cozystack is the right answer
 
@@ -160,10 +160,10 @@ A good engagement is honest about these cases.
 ## How to start
 
 - Self-deploy: **[cozystack.io](https://cozystack.io)**
-- Aenix engagement: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
+- Ænix engagement: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
 - Specific use case: see solution / alternatives pages
 
 ---
 
-*Cozystack is a CNCF Project. Aenix is the company that builds and supports it.*
+*Cozystack is a CNCF Project. Ænix is the company that builds and supports it.*
 

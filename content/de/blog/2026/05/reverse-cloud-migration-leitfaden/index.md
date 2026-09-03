@@ -68,5 +68,5 @@ Typischer repatriierter Bestand:
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

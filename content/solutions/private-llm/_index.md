@@ -56,7 +56,7 @@ faq:
 
 # Private LLM: self-hosted GenAI on your own GPUs
 
-**Run your own large language model on hardware you control — open-weight models like Llama, Mistral, and Qwen, served for inference, grounded in your documents with RAG, and fine-tuned on your data when you need it. A private LLM keeps prompts, embeddings, weights, keys, and the audit trail on your side of the boundary, so you get modern GenAI without shipping sensitive text to a third-party API. Aenix builds these platforms on [Cozystack](/products/cozystack/), on your own GPUs.**
+**Run your own large language model on hardware you control — open-weight models like Llama, Mistral, and Qwen, served for inference, grounded in your documents with RAG, and fine-tuned on your data when you need it. A private LLM keeps prompts, embeddings, weights, keys, and the audit trail on your side of the boundary, so you get modern GenAI without shipping sensitive text to a third-party API. Ænix builds these platforms on [Cozystack](/products/cozystack/), on your own GPUs.**
 
 > **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — GPU scheduling, fractional sharing, and blueprints for inference and fine-tuning. For the elastic GPU capacity underneath it, combine with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)**. For the wider strategy, see **[Sovereign AI](/solutions/sovereign-ai/)**.
 
@@ -82,7 +82,7 @@ This is the "private LLM / self-hosted LLM / on-prem GenAI" problem specifically
 
 ## What a private LLM platform is made of
 
-An on-prem GenAI platform is more than a model file. Aenix assembles the full stack on open, [CNCF](https://www.cncf.io/)-aligned building blocks so nothing forces you back to a proprietary AI service.
+An on-prem GenAI platform is more than a model file. Ænix assembles the full stack on open, [CNCF](https://www.cncf.io/)-aligned building blocks so nothing forces you back to a proprietary AI service.
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -135,11 +135,11 @@ Right-sizing the GPU fleet against this mix is exactly what an assessment settle
 
 ---
 
-## How Aenix engages on private LLM
+## How Ænix engages on private LLM
 
 The engagement runs as an **[AI platform build](/services/ai-platform-build/)**: GPU architecture and sizing, the inference stack, a Qdrant vector database for RAG, multi-tenant isolation and SSO, and — where relevant — a fine-tuning pipeline, all deployed on your own hardware. Where GPU demand is spiky, it combines with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)** so you own the baseline and burst peaks; where the driver is jurisdiction and governance rather than a single workload, it rolls up into a **[sovereign AI](/solutions/sovereign-ai/)** programme on the **[AI Platform](/products/ai-platform/)**.
 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build private-LLM and on-prem GenAI platforms for enterprises and public-sector organizations across the EU and DACH.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build private-LLM and on-prem GenAI platforms for enterprises and public-sector organizations across the EU and DACH.*

@@ -252,7 +252,7 @@ It's the wrong fit when:
 
 ## How to start
 
-If your trigger fits, the structured next step is a focused cost engagement. Aenix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with cost-and-cloud-spend workstream emphasized. See the **[cloud cost optimization services page](/solutions/cloud-cost-optimization/)** for engagement details.
+If your trigger fits, the structured next step is a focused cost engagement. Ænix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with cost-and-cloud-spend workstream emphasized. See the **[cloud cost optimization services page](/solutions/cloud-cost-optimization/)** for engagement details.
 
 ---
 
@@ -265,5 +265,5 @@ If your trigger fits, the structured next step is a focused cost engagement. Aen
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-cost engagements and platform-engineering programs across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-cost engagements and platform-engineering programs across the EU, DACH, and Central Asia.*
 

@@ -42,13 +42,13 @@ faq:
 
 **Cozystack ist zweckgebaut für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder. Für KMU und kleinen Mittelstand (unter ~100 Mitarbeitern, single-tenant, einfache Infrastruktur) ist Cozystack Over-Engineering. Die ehrliche Antwort zählt mehr als der Sales-Pitch.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — aber **nur über einen Aenix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden konsumieren Cloud als Produkt vom Partner, der die Ænix Platform darunter betreibt. Ein direktes Aenix-Engagement passt im KMU-Maßstab selten.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — aber **nur über einen Ænix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden konsumieren Cloud als Produkt vom Partner, der die Ænix Platform darunter betreibt. Ein direktes Ænix-Engagement passt im KMU-Maßstab selten.
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>KMU-Kunde</b></div>
 <div class="diagram__conn">konsumiert Cloud von</div>
-<div class="diagram__node"><b>Aenix-Partner</b><div class="diagram__chips"><span>Regionaler MSP</span><span>Hosting-Anbieter</span></div></div>
+<div class="diagram__node"><b>Ænix-Partner</b><div class="diagram__chips"><span>Regionaler MSP</span><span>Hosting-Anbieter</span></div></div>
 <div class="diagram__conn">betreibt</div>
 <div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b></div>
 <div class="diagram__conn">basiert auf</div>
@@ -110,7 +110,7 @@ Für diese Fälle bestätigt ein Discovery-Call, ob Cozystack passt oder ob etwa
 
 Cozystack ist Open Source. Wir verkaufen keine Lizenzen. Ihnen etwas zu bauen, das Sie nicht brauchen, würde unserer Reputation schaden. Besser, von Anfang an ehrlich zu sein und uns auf Right-Fit-Projekte einzulassen.
 
-Evidenz aus dem Kundenstamm: Die meisten Aenix-Engagements betreffen Engineering-Organisationen mit 200+ Mitarbeitern. KMU-Engagements sind selten — und wenn sie vorkommen, werden sie durch Ausnahmefälle mit regulierten Daten getrieben, nicht durch generische "Cloud-Plattform"-Bedürfnisse.
+Evidenz aus dem Kundenstamm: Die meisten Ænix-Engagements betreffen Engineering-Organisationen mit 200+ Mitarbeitern. KMU-Engagements sind selten — und wenn sie vorkommen, werden sie durch Ausnahmefälle mit regulierten Daten getrieben, nicht durch generische "Cloud-Plattform"-Bedürfnisse.
 
 ---
 
@@ -122,4 +122,4 @@ Evidenz aus dem Kundenstamm: Die meisten Aenix-Engagements betreffen Engineering
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack. Wir engagieren uns bei Projekten, bei denen die Architektur wirklich passt.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack. Wir engagieren uns bei Projekten, bei denen die Architektur wirklich passt.*

@@ -72,7 +72,7 @@ faq:
 
 **IBM POWER hardware is capital-heavy, AIX/PowerVM is licensed per socket, and SWMA/HWMA renewals compound every year — while AIX specialists get harder to hire. An IBM exit moves those workloads onto commodity x86 running an open, Kubernetes-native platform your existing team can operate.**
 
-Aenix runs IBM AIX/Power migrations end-to-end. The same engineers who built and operate [Cozystack](/products/cozystack/) — the open-source destination platform — work alongside your team for assessment, sequencing, and execution.
+Ænix runs IBM AIX/Power migrations end-to-end. The same engineers who built and operate [Cozystack](/products/cozystack/) — the open-source destination platform — work alongside your team for assessment, sequencing, and execution.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated banks (air-gap, billing, fully managed migration), or the **[OpenShift alternative](/alternatives/openshift-alternative/)** if you're specifically replacing IBM Cloud Pak / OpenShift.
 
@@ -106,7 +106,7 @@ If two or more apply, a structured exit compounds. If a comfortable POWER refres
 
 <!-- BLOCK 3: WHAT'S COVERED -->
 
-## What an Aenix IBM migration covers
+## What an Ænix IBM migration covers
 
 <div class="grid-2x2">
 
@@ -157,7 +157,7 @@ The model below is an illustrative list-price scenario for a mid-size bank (~500
 | Install + migration + training | — | $0 — install free with subscription; migration & training included in tier |
 | **Total (3 years)** | **$720,000** | **$408,000** |
 
-{{< factoid number="~40%" label="illustrative three-year TCO reduction — driven by commodity x86 over POWER, zero platform licensing, and shrinking the Oracle-on-Power footprint" source="Aenix TCO model, mid-size-bank scenario, list-price order-of-magnitude" >}}
+{{< factoid number="~40%" label="illustrative three-year TCO reduction — driven by commodity x86 over POWER, zero platform licensing, and shrinking the Oracle-on-Power footprint" source="Ænix TCO model, mid-size-bank scenario, list-price order-of-magnitude" >}}
 
 The Ænix subscription is comparable to IBM maintenance alone, yet bundles support, install, training, and migration with no separate one-off fees. Model your own numbers with the **[ROI calculator](/pricing/)** or a **[discovery call](/contact/)**.
 
@@ -224,11 +224,11 @@ The destination architecture is engineered for linear horizontal growth — each
 
 <!-- BLOCK 8: HOW WE ENGAGE -->
 
-## How Aenix engages
+## How Ænix engages
 
 - **Assessment (5-10 days)** — [Platform Readiness Assessment](/services/platform-readiness-assessment/): AIX/Power inventory, destination architecture, workload classification, Oracle plan, cutover sequencing, risk register.
 - **Pilot (4 weeks)** — Cozystack stood up as a working framework against your real requirements; success criteria agreed up front. The pilot counts toward the first year of support.
-- **Migration** — cohort execution with parallel-run validation. On the **Enterprise tier**, migration is fully managed by Aenix; legal/procurement runs on your templates (tenders, forms).
+- **Migration** — cohort execution with parallel-run validation. On the **Enterprise tier**, migration is fully managed by Ænix; legal/procurement runs on your templates (tenders, forms).
 - **Operations (optional)** — managed Cozystack operations, 24×7, after cutover.
 
 A recurring real-world idea: stand the platform up on the POWER servers being freed at end-of-life (POWER supports Linux) as a live demonstration before committing the wider estate.
@@ -239,7 +239,7 @@ A recurring real-world idea: stand the platform up on the POWER servers being fr
 
 <!-- BLOCK 9: WHY AENIX -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **We built the destination.** Estimates are calibrated against work we have shipped, not theory.
 - **Honest about hard parts.** Endianness, Oracle licensing, and legacy re-architecture are surfaced in the assessment, not mid-cutover.
@@ -306,4 +306,4 @@ Estate size and the legacy/microservice mix drive the actual schedule; sequencin
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*

@@ -71,7 +71,7 @@ faq:
 
 **IBM-POWER-Hardware ist kapitalintensiv, AIX/PowerVM wird pro Socket lizenziert, und IBM-SWMA/HWMA-Verlängerungen summieren sich Jahr für Jahr — während AIX-Spezialisten immer schwerer zu finden sind. Ein IBM-Ausstieg verlagert diese Workloads auf Commodity-x86 mit einer offenen, Kubernetes-nativen Plattform, die Ihr bestehendes Team betreiben kann.**
 
-Aenix führt IBM-AIX/Power-Migrationen End-to-End durch. Dieselben Ingenieure, die [Cozystack](/de/produkte/cozystack/) gebaut haben und betreiben — die Open-Source-Zielplattform, Apache 2.0, CNCF-Projekt — arbeiten mit Ihrem Team an Assessment, Sequenzierung und Umsetzung.
+Ænix führt IBM-AIX/Power-Migrationen End-to-End durch. Dieselben Ingenieure, die [Cozystack](/de/produkte/cozystack/) gebaut haben und betreiben — die Open-Source-Zielplattform, Apache 2.0, CNCF-Projekt — arbeiten mit Ihrem Team an Assessment, Sequenzierung und Umsetzung.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Banken und Unternehmen (Air-Gap, Billing, gemanagte Migration). Sie ersetzen speziell IBM Cloud Pak / OpenShift? Siehe die **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**.
 
@@ -105,7 +105,7 @@ Treffen zwei oder mehr zu, verstärkt ein strukturierter Ausstieg den Nutzen. Is
 
 <!-- BLOCK 3: UMFANG -->
 
-## Was eine Aenix-IBM-Migration abdeckt
+## Was eine Ænix-IBM-Migration abdeckt
 
 <div class="grid-2x2">
 
@@ -156,7 +156,7 @@ Für Entscheider außerhalb der IT zählt die Sprache der Kosten. Das folgende M
 | Installation + Migration + Schulung | — | 0 $ — Installation bei Subscription inklusive; Migration & Schulung im Tier enthalten |
 | **Gesamt (3 Jahre)** | **720.000 $** | **408.000 $** |
 
-{{< factoid number="~40%" label="illustrative TCO-Reduktion über drei Jahre — durch Commodity-x86 statt POWER, null Plattform-Lizenzkosten und Verkleinern des Oracle-auf-Power-Footprints" source="Aenix-TCO-Modell, Szenario mittelgroße Bank, List-Price-Größenordnung" >}}
+{{< factoid number="~40%" label="illustrative TCO-Reduktion über drei Jahre — durch Commodity-x86 statt POWER, null Plattform-Lizenzkosten und Verkleinern des Oracle-auf-Power-Footprints" source="Ænix-TCO-Modell, Szenario mittelgroße Bank, List-Price-Größenordnung" >}}
 
 Die Ænix-Subscription ist vergleichbar mit der reinen IBM-Maintenance, enthält aber bereits 24×7-Support, Enterprise-Module, Installation, Schulung und Migration — ohne separate Einmalgebühren. Rechnen Sie Ihre eigenen Zahlen mit dem **[ROI-Rechner](/de/preise/)** oder in einem **[Discovery-Gespräch](/de/kontakt/)**.
 
@@ -223,11 +223,11 @@ Die Zielarchitektur ist für lineares horizontales Wachstum ausgelegt — jeder 
 
 <!-- BLOCK 8: ENGAGEMENT -->
 
-## So arbeitet Aenix
+## So arbeitet Ænix
 
 - **Assessment (5-10 Tage)** — [Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/): AIX/Power-Bestand, Zielarchitektur, Workload-Klassifizierung, Oracle-Plan, Cutover-Sequenzierung, Risiko-Register.
 - **Pilot (4 Wochen)** — Cozystack als funktionierendes Framework gegen Ihre realen Anforderungen aufgesetzt; Erfolgskriterien vorab vereinbart. Der Pilot wird auf das erste Support-Jahr angerechnet.
-- **Migration** — Kohorten-Durchführung mit Parallelbetrieb-Validierung. Im **Enterprise-Tier** wird die Migration vollständig von Aenix gemanagt; Legal/Procurement läuft über Ihre Vorlagen (Ausschreibungen, Formulare).
+- **Migration** — Kohorten-Durchführung mit Parallelbetrieb-Validierung. Im **Enterprise-Tier** wird die Migration vollständig von Ænix gemanagt; Legal/Procurement läuft über Ihre Vorlagen (Ausschreibungen, Formulare).
 - **Betrieb (optional)** — gemanagter Cozystack-Betrieb, 24×7, nach dem Cutover.
 
 Eine wiederkehrende Praxis-Idee: die Plattform auf den am End-of-Life freiwerdenden POWER-Servern aufsetzen (POWER unterstützt Linux) — als Live-Demonstration vor dem Commitment des breiteren Bestands.
@@ -238,7 +238,7 @@ Eine wiederkehrende Praxis-Idee: die Plattform auf den am End-of-Life freiwerden
 
 <!-- BLOCK 9: WARUM AENIX -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Wir haben das Ziel gebaut.** Aufwandsschätzungen sind an ausgelieferter Arbeit kalibriert, nicht an Theorie.
 - **Ehrlich bei den schweren Teilen.** Endianness, Oracle-Lizenzierung und Legacy-Re-Architecture werden im Assessment offengelegt — nicht mitten im Cutover entdeckt.
@@ -305,4 +305,4 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

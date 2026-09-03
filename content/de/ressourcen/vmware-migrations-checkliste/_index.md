@@ -43,7 +43,7 @@ faq:
     a: "Die Checkliste liefert die Discovery, die Ihr Team intern durchführen kann. Für eine tiefere Bewertung mit TCO-Modellierung und Architektur-Design bietet Aenix das kostenpflichtige Platform Readiness Assessment sowie den VMware-Migrations-Hub an."
 ---
 
-**Eine 25-Punkt-Checkliste für Organisationen, die einen VMware-Ausstieg evaluieren. Deckt Inventar, Abhängigkeiten, Networking, Storage, Multi-Tenancy, KI/GPU, Souveränität und operative Bereitschaft ab. Verwendet von Aenix während 14-Tage-Platform-Readiness-Assessments und kostenlos angeboten für Teams in früher Evaluierung.**
+**Eine 25-Punkt-Checkliste für Organisationen, die einen VMware-Ausstieg evaluieren. Deckt Inventar, Abhängigkeiten, Networking, Storage, Multi-Tenancy, KI/GPU, Souveränität und operative Bereitschaft ab. Verwendet von Ænix während 14-Tage-Platform-Readiness-Assessments und kostenlos angeboten für Teams in früher Evaluierung.**
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen.
 
@@ -92,4 +92,4 @@ Die Checkliste gibt Ihnen die strukturierte Discovery, die Ihre Organisation int
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

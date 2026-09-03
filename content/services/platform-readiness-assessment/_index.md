@@ -49,7 +49,7 @@ faq:
 </div>
 
 <div class="trust-badges">
-Aenix engineers, not consultants · Fixed-price · Written deliverables · No vendor lock-in
+Ænix engineers, not consultants · Fixed-price · Written deliverables · No vendor lock-in
 </div>
 
 <!-- /BLOCK 1 -->
@@ -211,16 +211,16 @@ The 4-week variant adds: vendor-shortlisting workshops (where applicable), proof
 
 ## Who actually does the work
 
-The engagement is run by **Aenix platform engineers** — the team that builds and operates Cozystack in production for service providers, banks, and sovereign-cloud projects. Not seconded management consultants. Not a partner network handing the project off after the sale.
+The engagement is run by **Ænix platform engineers** — the team that builds and operates Cozystack in production for service providers, banks, and sovereign-cloud projects. Not seconded management consultants. Not a partner network handing the project off after the sale.
 
 That matters because:
 - We've made these architectural decisions on real production systems, not slides.
 - Our recommendations come with implementation effort estimates we have actually paid.
 - If you decide to engage us for Phase 2 implementation, the same engineers continue.
 
-Aenix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project. The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
+Ænix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project. The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
 
-{{< factoid number="5-20" label="platform readiness assessments Aenix runs per year across the EU and Central Asia" >}}
+{{< factoid number="5-20" label="platform readiness assessments Ænix runs per year across the EU and Central Asia" >}}
 
 <!-- /BLOCK 7 -->
 
@@ -301,7 +301,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run platform readiness assessments and platform engineering programs for service providers, banks, and sovereign-cloud projects across the EU and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run platform readiness assessments and platform engineering programs for service providers, banks, and sovereign-cloud projects across the EU and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

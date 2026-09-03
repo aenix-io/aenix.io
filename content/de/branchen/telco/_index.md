@@ -50,7 +50,7 @@ faq:
 
 **Telekom-Operatoren stehen 2026 an einem architektonischen Wendepunkt: Legacy-NFV-Umgebungen veralten, Edge-Compute-Anforderungen wachsen, souveräne-Cloud-gebrandete Produkte starten branchenweit, KI-Workloads auf Kundendaten und NIS2-Compliance für wesentliche Entitäten. Die architektonische Antwort ist eine kohärente Plattform, die in Core-Rechenzentren, an regionalen Standorten und am Customer-Edge läuft — unter einem einzigen Operations-Modell.**
 
-Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), läuft an Core und Edge.
+Ænix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), läuft an Core und Edge.
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Telcos, die kundenseitige souveräne Cloud-Produkte im Multi-Region-Maßstab launchen; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für NIS2-konforme interne Cloud- und Edge-Plattformen.
 
@@ -100,7 +100,7 @@ Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien.
 
 ---
 
-## Wie Aenix mit Telekom-Operatoren zusammenarbeitet
+## Wie Ænix mit Telekom-Operatoren zusammenarbeitet
 
 Standard-**[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit telekom-spezifischen Workstreams: Multi-Site-Architektur, Edge-Bereitschaft, souveräne-Cloud-Produkt-Paketierung (wo anwendbar), NIS2-Kontrollen, KI-Infrastruktur für Telco-Use-Cases.
 
@@ -112,7 +112,7 @@ Die Phase-2-Implementierung erstreckt sich typischerweise über 6–24 Monate f�
 
 {{< clients >}}
 
-*Kunden-Evidenz-Sektion — von Aenix zu befüllen. Anonyme Proof Points:*
+*Kunden-Evidenz-Sektion — von Ænix zu befüllen. Anonyme Proof Points:*
 - Ein Tier-1-europäischer Telekom-Operator betreibt eine interne Cloud-Plattform über Core-, regionale und Edge-Standorte.
 - Ein regionaler Operator launcht ein kundenseitiges souveränes Cloud-Produkt auf Cozystack-Foundation.
 - Eine Telekom-KI-Initiative für Customer-Care- und Network-Operations-Workloads auf privater LLM-Infrastruktur.
@@ -124,7 +124,7 @@ Die Phase-2-Implementierung erstreckt sich typischerweise über 6–24 Monate f�
 
 ---
 
-## Warum Aenix speziell für die Telekommunikation
+## Warum Ænix speziell für die Telekommunikation
 
 - **Edge-to-Core-Plattform.** Cozystack läuft im großen Maßstab in Core-Rechenzentren, an regionalen Standorten und am Edge — unter einheitlichem Betrieb.
 - **Kundenseitiges Multi-Tenant-Modell** — die Tenant CRD ist für das Service-Provider-Modell konzipiert, geeignet für kundenseitige Telco-Cloud-Produkte.
@@ -148,4 +148,4 @@ Die Phase-2-Implementierung erstreckt sich typischerweise über 6–24 Monate f�
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution.*

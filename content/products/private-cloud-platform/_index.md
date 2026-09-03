@@ -119,7 +119,7 @@ H100, H200, L40S, A100, Blackwell (B100/B200) GPU classes supported. Multi-tenan
 
 ### Education and training included
 
-Engineering team training as part of the engagement. Aenix's Kubernetes Deep Dive Course covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux) included for customer engineers in Private Cloud Platform deployments.
+Engineering team training as part of the engagement. Ænix's Kubernetes Deep Dive Course covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux) included for customer engineers in Private Cloud Platform deployments.
 
 ### Enterprise SLA + 24/7 support + named TAM
 
@@ -127,7 +127,7 @@ Tiered SLA aligned to regulator expectations. Named technical account manager. E
 
 ### Compliance certification support
 
-Pre-validated against ISO 27001 / SOC 2. Aenix supports certification documentation and audit-readiness work.
+Pre-validated against ISO 27001 / SOC 2. Ænix supports certification documentation and audit-readiness work.
 
 ---
 
@@ -190,7 +190,7 @@ Multi-year platform build, quoted per RFP. Discovery call to scope.
 - **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — DORA / NIS2 gap analysis + architecture roadmap
 - **Pilot engagement** (3-6 months) — defined slice (one workload class, one BU, one site)
 - **Full platform build** (9-18 months) — multi-DC production deployment, compliance certification support, operations team training
-- **Managed operations** (optional, ongoing) — Aenix runs the platform under SLA
+- **Managed operations** (optional, ongoing) — Ænix runs the platform under SLA
 
 [Platform Readiness Assessment →](/services/platform-readiness-assessment/)
 
@@ -209,7 +209,7 @@ Anonymized phrasing pattern: "Tier-1 European bank engagement under DORA scope" 
 
 ## Book a review
 
-Tell us your regulatory context (DORA / NIS2 / sectoral), current architecture, and sovereignty requirements — we'll set up a focused architecture review with an Aenix engineer and confirm platform fit.
+Tell us your regulatory context (DORA / NIS2 / sectoral), current architecture, and sovereignty requirements — we'll set up a focused architecture review with an Ænix engineer and confirm platform fit.
 
 {{< pipedrive-form type="demo" >}}
 
@@ -217,4 +217,4 @@ Prefer a shorter first step? [Book a discovery call](/contact/) instead.
 
 ---
 
-*Ænix Private Cloud Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Aenix is the open-core company.*
+*Ænix Private Cloud Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Ænix is the open-core company.*

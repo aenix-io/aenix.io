@@ -47,7 +47,7 @@ faq:
 
 **Platform engineering is no longer a debate; it's an operational layer that mature engineering organizations now treat as core infrastructure. The question is not whether to invest in it, but whether to build the function in-house slowly, hire a consultancy that hands off to junior implementers, or work with engineers who have already operated multi-tenant platforms in production.**
 
-Aenix is the platform engineering team behind [Cozystack](/products/cozystack/), a CNCF project running in production with service providers, banks, and AI operators. We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
+Ænix is the platform engineering team behind [Cozystack](/products/cozystack/), a CNCF project running in production with service providers, banks, and AI operators. We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
 
 > **Pairs with:** **[the developer self-service layer of Ænix Private Cloud Platform](/products/private-cloud-platform/)** for product / SaaS engineering teams; **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises building internal platforms. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
@@ -95,7 +95,7 @@ If three or more apply, structured platform engineering is the leverage. If your
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## What an Aenix platform engineering engagement produces
+## What an Ænix platform engineering engagement produces
 
 <div class="grid-2x2">
 
@@ -109,7 +109,7 @@ Tenant CRD model, per-tenant quotas, RBAC, observability scope, and audit trails
 Documented platform-team responsibilities, on-call patterns, incident response, capacity planning. The platform survives engineer turnover.
 
 **4. Enablement of your team**
-Pair programming, knowledge transfer, runbook authoring with named owners. Aenix engineers leave; your team operates the platform.
+Pair programming, knowledge transfer, runbook authoring with named owners. Ænix engineers leave; your team operates the platform.
 
 </div>
 
@@ -150,13 +150,13 @@ These failure modes are predictable and avoidable — the engagement structure d
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## How Aenix engages
+## How Ænix engages
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>Current state</b><div class="diagram__chips"><span>Multiple product teams</span><span>Weeks to environment</span><span>Maxed DevOps / SRE</span></div></div>
 <div class="diagram__conn">engaged by</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix platform engineering engagement</b><div class="diagram__chips"><span>Readiness Assessment</span><span>Platform build</span><span>Managed service</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix platform engineering engagement</b><div class="diagram__chips"><span>Readiness Assessment</span><span>Platform build</span><span>Managed service</span></div></div>
 <div class="diagram__conn">delivers</div>
 <div class="diagram__node"><b>Internal developer platform</b><div class="diagram__chips"><span>Golden paths</span><span>Multi-tenancy</span><span>Operational model</span></div></div>
 <div class="diagram__conn">runs on</div>
@@ -167,8 +167,8 @@ These failure modes are predictable and avoidable — the engagement structure d
 The engagement runs in three modes, scaled to where you are:
 
 - **Platform Readiness Assessment (14-28 days)** — written assessment of current state and recommended target architecture. Output: a plan you can execute internally or with us. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-- **Platform build engagement (3-12 months)** — Aenix engineers integrated with your platform team, building the foundation, golden paths, and operational model. Knowledge transfer is structured throughout; your team owns operation by the end.
-- **Managed platform service** — for organizations that need the platform but cannot build internal capacity. Aenix operates the platform under a managed-services arrangement, with documented exit path to in-house operation.
+- **Platform build engagement (3-12 months)** — Ænix engineers integrated with your platform team, building the foundation, golden paths, and operational model. Knowledge transfer is structured throughout; your team owns operation by the end.
+- **Managed platform service** — for organizations that need the platform but cannot build internal capacity. Ænix operates the platform under a managed-services arrangement, with documented exit path to in-house operation.
 
 Most engagements start with the assessment. The decision between options 2 and 3 is informed by the assessment's headcount-and-capacity workstream.
 
@@ -178,7 +178,7 @@ Most engagements start with the assessment. The decision between options 2 and 3
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **We operate platforms in production.** Cozystack is in production with service providers and regulated enterprises. The decisions in our engagements are calibrated against running systems, not against tooling reviews.
 - **Open-source platform foundation.** [Cozystack](/products/cozystack/) is an open-source CNCF Project. The platform we recommend is a platform you own. No vendor-roadmap lock-in.
@@ -280,7 +280,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build, operate, and accelerate platform engineering programs across the EU, DACH, and Central Asia.*
+*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build, operate, and accelerate platform engineering programs across the EU, DACH, and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

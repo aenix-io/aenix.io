@@ -40,7 +40,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Sie bauen die Plattform, auf der andere Teams bauen. Die Aufgabe: Golden Paths und Self-Service — mandantenfähiges Kubernetes, Datenbanken, Storage und Umgebungen, die Entwickler selbst bereitstellen — ohne Ticket-Schlange und ohne Bindung an einen geschlossenen Anbieter. Aenix liefert das als schlüsselfertige Internal Developer Platform oder als Team, das Ihre auf offenem Fundament baut.**
+**Sie bauen die Plattform, auf der andere Teams bauen. Die Aufgabe: Golden Paths und Self-Service — mandantenfähiges Kubernetes, Datenbanken, Storage und Umgebungen, die Entwickler selbst bereitstellen — ohne Ticket-Schlange und ohne Bindung an einen geschlossenen Anbieter. Ænix liefert das als schlüsselfertige Internal Developer Platform oder als Team, das Ihre auf offenem Fundament baut.**
 
 > **Passt zu:** **[Ænix Platform IDP](/de/produkte/)** als fertige IDP — oder einem Aufbauprojekt nach Ihrer Organisation. Offener Kern: **[Cozystack](https://cozystack.io)**, Apache 2.0.
 
@@ -72,21 +72,21 @@ Infrastruktur zum Produkt machen: Self-Service für VMs, Managed Kubernetes, Man
 
 ---
 
-## Zwei Wege mit Aenix
+## Zwei Wege mit Ænix
 
 **1. Schlüsselfertige IDP.** Die [Ænix Platform IDP](/de/produkte/) liefert Control Plane, Self-Service-Portal, Service-Katalog und Golden-Path-Bereitstellung auf dem Cozystack-Kern. Ihr Team kuratiert, Entwickler bedienen sich selbst.
 
-**2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Aenix Ihr ausgelagertes Platform-Engineering-Team**: wir entwerfen Mandanten, Golden Paths und Katalog für Ihre Organisation, binden CI/CD und Identity an und übergeben eine Plattform, die Ihr Team besitzt. Siehe [Dienstleistungen](/de/dienstleistungen/).
+**2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Platform-Engineering-Team**: wir entwerfen Mandanten, Golden Paths und Katalog für Ihre Organisation, binden CI/CD und Identity an und übergeben eine Plattform, die Ihr Team besitzt. Siehe [Dienstleistungen](/de/dienstleistungen/).
 
 ---
 
 
 ---
 
-## Warum Platform-Teams Aenix wählen
+## Warum Platform-Teams Ænix wählen
 
 - **Ein echtes Backend, nicht nur ein Portal.** Mandantenfähige Compute-, Storage- und Datenbankschicht unter dem Self-Service — der Teil, den Backstage nicht liefert.
-- **Autoren als Partner.** Aenix pflegt Cozystack; Sie bekommen die Leute, die das Mandantenmodell gebaut haben.
+- **Autoren als Partner.** Ænix pflegt Cozystack; Sie bekommen die Leute, die das Mandantenmodell gebaut haben.
 - **Besitzen statt mieten.** Open Source und Ihre Infrastruktur — keine Verlängerung, die Ihre Developer Experience als Geisel nimmt.
 
 ---
@@ -105,7 +105,7 @@ Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren heutigen Bereitstellungsweg an
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-platform-engineering/ ; hreflang de self, en → /for/head-of-platform-engineering/.

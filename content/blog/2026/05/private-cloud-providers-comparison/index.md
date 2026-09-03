@@ -62,7 +62,7 @@ Both are valid; they answer different questions. This article focuses primarily 
 ### Cozystack
 **License:** Apache 2.0, CNCF Project.
 **Architecture:** Kubernetes-native virtualization (KubeVirt) + Cilium networking + LINSTOR/Ceph storage + Tenant CRD multi-tenancy + cozyportal self-service.
-**Maintainer:** Aenix (open-source, community-governed).
+**Maintainer:** Ænix (open-source, community-governed).
 **Best for:** Service providers, sovereign-cloud builders, regulated multi-tenant, AI/GPU operators with sustained workloads.
 **Strengths:** Single platform for VMs + containers + databases + S3 + GPU. Multi-tenancy structural. Light operational footprint relative to OpenStack. Open-source, no vendor lock-in.
 **Limits:** Newer than OpenStack; smaller community.
@@ -168,7 +168,7 @@ Decision tree:
 5. **SMB / single-tenant?** → Proxmox VE.
 6. **Don't want to operate the platform yourself?** → Regional sovereign cloud provider (Hetzner, OVHcloud, regulated enterprise customers (NDA-protected), etc.).
 7. **AI/GPU at scale, sustained utilization?** → Cozystack or OpenShift on dedicated GPU infrastructure.
-8. **Sovereignty + EU + low operational footprint?** → Cozystack with Aenix support, or OVHcloud.
+8. **Sovereignty + EU + low operational footprint?** → Cozystack with Ænix support, or OVHcloud.
 
 ## Migration paths
 
@@ -181,7 +181,7 @@ Most modern private-cloud deployments are migrations from existing infrastructur
 
 ## How to start
 
-If your situation fits Cozystack — see **[private cloud platform page](/products/private-cloud-platform/)** or visit **[cozystack.io](https://cozystack.io)**. For Aenix engagement see **[private cloud consulting](/services/private-cloud-consulting/)**.
+If your situation fits Cozystack — see **[private cloud platform page](/products/private-cloud-platform/)** or visit **[cozystack.io](https://cozystack.io)**. For Ænix engagement see **[private cloud consulting](/services/private-cloud-consulting/)**.
 
 ---
 
@@ -195,5 +195,5 @@ If your situation fits Cozystack — see **[private cloud platform page](/produc
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

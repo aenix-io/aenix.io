@@ -59,7 +59,7 @@ Those models ran on a rented public GPU cloud, billed by the hour. As usage grew
 
 - Repatriate AI inference from a per-hour rented GPU cloud onto an owned bare-metal 8xH100 server, cutting cost and lifting the capacity ceiling.
 - Preserve the cloud-native UX: API gateway, task queues, autoscaling, model-weight storage, full monitoring.
-- Split responsibilities cleanly: the client writes and owns the ML business logic; Aenix owns architecture, DevOps and 24x7 support of the GPU infrastructure, Kubernetes and monitoring.
+- Split responsibilities cleanly: the client writes and owns the ML business logic; Ænix owns architecture, DevOps and 24x7 support of the GPU infrastructure, Kubernetes and monitoring.
 - Keep model weights and user data on infrastructure the client controls (data locality).
 - No technology lock-in — an explicit, non-negotiable requirement: an all-open-source, CNCF-aligned stack with no proprietary control plane.
 
@@ -110,6 +110,6 @@ Inference runs as two complementary pipelines. Asynchronous: API gateway → Rab
 
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Aenix sales](/contact/).*
+*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

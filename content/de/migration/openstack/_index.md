@@ -4,7 +4,6 @@ description: "OpenStack bleibt valide, wo tiefe Expertise lebt. Wo Engineer-Verf
 related_pages:
   - /de/alternativen/openstack-alternative
   - /de/produkte/public-cloud-platform/
-  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
 language: "de"
@@ -21,7 +20,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Für wen"
-    value: "Hosting-Anbieter und regionale Clouds (Public Cloud Platform); große Betreiber, die OpenStack im großen Maßstab konsolidieren (Public Cloud Platform)"
+    value: "Betreiber, die Cloud an externe Kunden verkaufen (Public Cloud Platform); regulierte Organisationen, die OpenStack für den Eigenbedarf betreiben (Private Cloud Platform)"
   - label: "Migrationsablauf"
     value: "Architektur-Review → Parallel-Deployment → Workload-Migration nach Klasse → Decommission"
   - label: "Dauer"
@@ -44,9 +43,9 @@ faq:
     a: "Cozystack ist Apache-2.0-lizenziert, ohne CPU- oder Core-basierte Lizenzkosten. Aenix bietet die produktisierte Ænix Platform plus Services in Stufen an: Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Vereinbarung."
 ---
 
-**OpenStack bleibt valide, wo tiefe Expertise lebt. Wo Engineer-Verfügbarkeit und operativer Footprint Modernisierung erzwingen, ist Cozystack die realistische nächste Plattform. Aenix führt OpenStack-zu-Cozystack-Migrationen durch.**
+**OpenStack bleibt valide, wo tiefe Expertise lebt. Wo Engineer-Verfügbarkeit und operativer Footprint Modernisierung erzwingen, ist Cozystack die realistische nächste Plattform. Ænix führt OpenStack-zu-Cozystack-Migrationen durch.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter und regionale Clouds; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn die OpenStack-Cloud an externe Kunden verkauft wird (Hoster, MSPs, Telkos, nationale Betreiber); **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn sie interne Verbraucher unter DORA-, NIS2- oder sektorspezifischen Auflagen bedient.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -76,4 +75,4 @@ faq:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

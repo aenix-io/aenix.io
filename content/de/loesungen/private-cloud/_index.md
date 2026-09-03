@@ -44,7 +44,7 @@ aliases:
 
 **Cozystack ist die Open-Source-Private-Cloud-Plattform für Service Provider, regulierte Unternehmen und souveräne Cloud-Builder. KubeVirt-basierte Virtualisierung, Cilium-Networking, LINSTOR-Storage, mandantenfähige Steuerungsebene, verwaltete Datenbanken, S3, GPU as a Service — auf Bare Metal, das Ihnen gehört. CNCF-Projekt, Apache-2.0-Lizenz, Kubernetes Certified Distribution.**
 
-Die Cozystack-Plattform ersetzt den gesamten VMware-Cloud-Foundation-Stack durch ein Kubernetes-natives Äquivalent, das Sie unter Ihrer eigenen Governance betreiben. Aenix ist das Unternehmen hinter Cozystack — wir bauen es, liefern es produktiv bei Banken, Telekommunikationsbetreibern und KI-/GPU-Betreibern in der EU und Zentralasien aus und stützen es mit Engineering-Services.
+Die Cozystack-Plattform ersetzt den gesamten VMware-Cloud-Foundation-Stack durch ein Kubernetes-natives Äquivalent, das Sie unter Ihrer eigenen Governance betreiben. Ænix ist das Unternehmen hinter Cozystack — wir bauen es, liefern es produktiv bei Banken, Telekommunikationsbetreibern und KI-/GPU-Betreibern in der EU und Zentralasien aus und stützen es mit Engineering-Services.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">30-minütigen Architektur-Review buchen</a>
@@ -158,7 +158,7 @@ cozyportal für Service-Provisioning. Produktionsreife WHMCS-Integration mit zwe
 Zwei Pfade:
 
 - **Selbst deployen** — Cozystack ist Open Source. Architektur-, Installations- und Betriebsdokumentation: **[cozystack.io](https://cozystack.io)**. CNCF-Community-Slack und -Telegram für Support.
-- **Aenix-unterstütztes Deployment** — Assessment + Phase-2-Implementierung durch Aenix-Engineers. Siehe **[Private Cloud Consulting](/de/dienstleistungen/private-cloud-consulting/)** für Engagement-Details.
+- **Ænix-unterstütztes Deployment** — Assessment + Phase-2-Implementierung durch Ænix-Engineers. Siehe **[Private Cloud Consulting](/de/dienstleistungen/private-cloud-consulting/)** für Engagement-Details.
 
 Für Souveränitäts-/DORA-/Repatriierungs-/KI-spezifische Motivationen die relevanten Lösungsseiten:
 
@@ -192,7 +192,7 @@ Produktive Deployments in der EU, DACH und Zentralasien. Der Kundenstamm umfasst
 
 Die Cozystack-Plattform ist **Open Source unter Apache 2.0** und kostenlos einsetzbar.
 
-Aenix bietet kommerzielle Support- und Engagement-Tiers:
+Ænix bietet kommerzielle Support- und Engagement-Tiers:
 
 <div class="pricing-cards-3">
 
@@ -212,7 +212,7 @@ Produktions-SLA, dediziertes TAM, GitOps-PR-Review, Incident-Response.
 
 **Professionelle Dienstleistungen** (engagement-basiert): Platform Readiness Assessment, Build-Engagement, Managed-Engagement. Siehe **[platform-readiness-assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
-Kein Per-CPU-, Per-VM- oder Per-Core-Meter. Hardware + gewählter Aenix-Tier.
+Kein Per-CPU-, Per-VM- oder Per-Core-Meter. Hardware + gewählter Ænix-Tier.
 
 <!-- /BLOCK 7 -->
 
@@ -246,4 +246,4 @@ Oder:
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform an — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform an — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*

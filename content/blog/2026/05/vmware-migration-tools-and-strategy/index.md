@@ -94,10 +94,10 @@ Lower-level conversion tool. Operates on individual VM images; converts vSphere 
 **Limits:** Single-VM tool; orchestration is your problem.
 
 ### Cozystack-specific migration tooling
-KubeVirt CDI + dedicated migration scripts that Aenix has built and reused across customer deployments. Covers VM image conversion, multi-tenant placement, network mapping into Cilium policies.
+KubeVirt CDI + dedicated migration scripts that Ænix has built and reused across customer deployments. Covers VM image conversion, multi-tenant placement, network mapping into Cilium policies.
 
-**Strengths:** Aenix-validated for production migrations; Cozystack-tenant-aware.
-**Limits:** Aenix-engagement-specific (open-sourcing in roadmap).
+**Strengths:** Ænix-validated for production migrations; Cozystack-tenant-aware.
+**Limits:** Ænix-engagement-specific (open-sourcing in roadmap).
 
 ### Vendor / commercial tools
 - **Nutanix Move** — for VMware → Nutanix AHV migrations
@@ -176,9 +176,9 @@ Compared to ongoing VCF subscription: most customer engagements show net positiv
 
 ## How to start
 
-If your situation fits, the structured next step is an assessment. Aenix runs **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with VMware emphasis. For details see **[VMware migration hub](/migration/vmware/)**.
+If your situation fits, the structured next step is an assessment. Ænix runs **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with VMware emphasis. For details see **[VMware migration hub](/migration/vmware/)**.
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

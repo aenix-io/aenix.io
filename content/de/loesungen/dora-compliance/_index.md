@@ -49,7 +49,7 @@ faq:
 
 **DORA gilt seit dem 17. Januar 2025. Wenn Ihre Cloud-Architektur nicht unabhängig auf ICT-Drittparteien-Risiko, Konzentrationsrisiko, Exit-Bereitschaft und Tests der operativen Resilienz geprüft wurde, wird der nächste Aufsichtszyklus Lücken aufdecken, die Sie besser selbst zuerst finden.**
 
-Aenix führt ein DORA-konformes Platform-Readiness-Engagement für Finanzunternehmen und die sie beliefernden ICT-Drittanbieter durch. Das Ergebnis: eine Kontroll-Landkarte dessen, was Sie heute nachweisen können, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
+Ænix führt ein DORA-konformes Platform-Readiness-Engagement für Finanzunternehmen und die sie beliefernden ICT-Drittanbieter durch. Das Ergebnis: eine Kontroll-Landkarte dessen, was Sie heute nachweisen können, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — DORA-konform by design (kundenkontrollierte Schlüssel auf jeder Ebene, audit-bereites Logging via VictoriaLogs, mandantenfähiges Tenant CRD abgestimmt auf die ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz bis zur zweiten Stufe). Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
@@ -144,7 +144,7 @@ Diese Lücken sind bei Institutionen verbreitet, die sich für cloud-reif halten
 
 <!-- BLOCK 5: HOW WE HELP (linking to entry offer) -->
 
-## Wie Aenix hilft
+## Wie Ænix hilft
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -164,7 +164,7 @@ Unser DORA-Engagement ist in das **[Platform Readiness Assessment](/de/dienstlei
 - **Bereitschaft für Resilienz-Tests** — ob Ihre Architektur die szenariobasierten Tests unterstützt, die Aufsichtsbehörden erwarten.
 - **Remediationsplan auf Architekturebene** — was in welcher Reihenfolge zu beheben ist, mit Aufwandsschätzungen.
 
-Geliefert von Aenix-Ingenieuren — dem Team hinter Cozystack — nicht von Unternehmensberatern. Wir verkaufen Ihnen keine Hyperscaler-Partnerschaft, und der Bericht ist ehrlich dazu, welche architektonischen Entscheidungen den Aufwand wert sind.
+Geliefert von Ænix-Ingenieuren — dem Team hinter Cozystack — nicht von Unternehmensberatern. Wir verkaufen Ihnen keine Hyperscaler-Partnerschaft, und der Bericht ist ehrlich dazu, welche architektonischen Entscheidungen den Aufwand wert sind.
 
 <!-- /BLOCK 5 -->
 
@@ -172,14 +172,14 @@ Geliefert von Aenix-Ingenieuren — dem Team hinter Cozystack — nicht von Unte
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 Die meiste DORA-Beratung kommt von den Big-Four-Beratungen, die an einen Hyperscaler-Partner übergeben, dessen Anreize die Empfehlung prägen. Die architektonische Antwort ist tendenziell die Architektur, die der Partner verkauft.
 
 Wir sind in drei konkreten Punkten anders:
 
 - **Keine Hyperscaler-Voreingenommenheit.** Unsere Empfehlungen sind kommerziell nicht an AWS, Azure, GCP oder einen einzelnen Anbieter gebunden. Wenn die Antwort Hyperscaler-mit-besseren-Kontrollen lautet, sagen wir das. Wenn die Antwort On-Prem oder Hybrid lautet, sagen wir das.
-- **Ingenieure statt Berater.** Dieselben Aenix-Ingenieure, die das Readiness-Engagement durchführen, bauen anschließend die Produktionsplattformen. Die Aufwandsschätzungen im Bericht sind an Arbeit kalibriert, die wir tatsächlich ausgeliefert haben.
+- **Ingenieure statt Berater.** Dieselben Ænix-Ingenieure, die das Readiness-Engagement durchführen, bauen anschließend die Produktionsplattformen. Die Aufwandsschätzungen im Bericht sind an Arbeit kalibriert, die wir tatsächlich ausgeliefert haben.
 - **Open-Source-Plattformfundament.** Wir sind das Unternehmen hinter **[Cozystack](/de/produkte/cozystack/)** — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF-Best-Practices-Badge. Wo eine Cozystack-basierte Architektur die materiellen Anforderungen von DORA besser erfüllt als die Alternative, erklärt der Bericht das mit benannten Kontrollen.
 
 <!-- /BLOCK 6 -->
@@ -273,6 +273,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir führen DORA-konforme Platform-Readiness-Engagements und Platform-Engineering-Programme für Finanzdienstleister in der gesamten EU und der DACH-Region durch.*
+*Ænix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir führen DORA-konforme Platform-Readiness-Engagements und Platform-Engineering-Programme für Finanzdienstleister in der gesamten EU und der DACH-Region durch.*
 
 <!-- /BLOCK 12 -->

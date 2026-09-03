@@ -210,7 +210,7 @@ Cluster is "owned" by everyone, operated by no one. Drift accumulates; nobody ca
 
 Before building or scaling, an architecture review is the cheapest insurance. The output is a written assessment of where you stand, where the gaps are, and what production-readiness looks like for your scale.
 
-Aenix runs Kubernetes architecture reviews as a focused 5-10 day engagement, or as part of broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+Ænix runs Kubernetes architecture reviews as a focused 5-10 day engagement, or as part of broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 ## How to start
 
@@ -227,5 +227,5 @@ For details and pricing see the **[Kubernetes consulting services page](/service
 
 ---
 
-*Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 

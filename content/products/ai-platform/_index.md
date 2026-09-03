@@ -91,7 +91,7 @@ Customer-controlled encryption keys for model weights at rest, training data, ve
 
 ### GPU sizing reference
 
-Practical sizing tables for common workload profiles (Llama 7B / 13B / 70B / 405B, Mistral, Qwen, DeepSeek, Phi, Gemma — single-card / multi-card / multi-node configurations). Aenix engagement includes capacity planning for sustained workloads.
+Practical sizing tables for common workload profiles (Llama 7B / 13B / 70B / 405B, Mistral, Qwen, DeepSeek, Phi, Gemma — single-card / multi-card / multi-node configurations). Ænix engagement includes capacity planning for sustained workloads.
 
 ### Hosting panel + admin interface
 
@@ -125,7 +125,7 @@ Productized patterns for migration from hyperscaler AI (AWS Bedrock, Azure OpenA
 | **Hyperscaler AI APIs** (Bedrock, Azure OpenAI, Vertex) | Sovereign — customer controls weights, data, operations. Sustained-utilization economics typically beat hyperscaler API pricing. Fine-tuning ownership. Auditability. |
 | **Building AI infra on raw Kubernetes + GPU drivers** | Multi-tenant GPU scheduling, observability, sovereignty controls, ready blueprints, service APIs — all included. Avoid 12-24 months of MLOps engineering. |
 | **Closed-source MLOps platforms** | Open-source foundation (Cozystack Apache 2.0) — no per-engineer / per-model licensing. Customer-controlled. |
-| **Building in-house from open-source components** | Aenix has built this many times. Engagement avoids the multi-year build path. |
+| **Building in-house from open-source components** | Ænix has built this many times. Engagement avoids the multi-year build path. |
 | **Run:ai (NVIDIA)** | Run:ai is a GPU scheduler and quota layer that assumes a Kubernetes platform already exists underneath — cluster lifecycle, storage, networking, tenancy and the VM estate are still yours to build and run. AI Platform brings the platform itself: GPU fractioning and MIG, KubeVirt for the workloads that never containerized, LINSTOR/DRBD storage, Tenant CRD isolation. It is also Apache 2.0 with no per-GPU subscription and no NVIDIA-only hardware assumption. If you already run a mature Kubernetes platform and only need scheduling, Run:ai is a narrower and reasonable purchase. |
 | **Kubeflow** | Kubeflow is an ML toolchain — pipelines, notebooks, training operators, serving — not an infrastructure platform, and running it is itself a platform-engineering project. AI Platform supplies what Kubeflow assumes: multi-tenant GPU scheduling, managed databases and vector stores, object storage, observability, isolation per team. The two are complementary: teams run Kubeflow, or Dynamo, or plain vLLM, as tenant workloads on top. |
 
@@ -142,10 +142,10 @@ Project plus managed retainer, quoted per RFP. Discovery call to scope.
 ## Engagement structure
 
 - **Discovery call** (30 min, free)
-- **Sovereign AI architecture review** (1-2 weeks, fixed-price) — using the [Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/) framework + Aenix expertise
+- **Sovereign AI architecture review** (1-2 weeks, fixed-price) — using the [Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/) framework + Ænix expertise
 - **Pilot engagement** (3-6 months) — defined slice (one workload class, one tenant, one model family)
 - **Full AI Platform build** (6-12 months) — production AI infrastructure with all targeted workload types
-- **Managed retainer** (optional, ongoing) — Aenix runs the AI platform under SLA
+- **Managed retainer** (optional, ongoing) — Ænix runs the AI platform under SLA
 
 <div class="cta-row">
   <a class="cta-secondary" href="/services/ai-platform-build/">AI Platform Build service →</a>
@@ -159,7 +159,7 @@ Project plus managed retainer, quoted per RFP. Discovery call to scope.
 AI Platform customers are NDA-protected. AI-native organizations and regulated AI deployments are in production. Anonymized phrasing pattern: "Sovereign AI infrastructure for regulated organization at scale".
 ### How is AI Platform different from running open-source Cozystack with our own AI stack?
 
-Cozystack provides the multi-tenant Kubernetes + GPU foundation. AI Platform adds: pre-integrated inference (vLLM) + fine-tuning + RAG patterns, multi-tenant GPU scheduling with GPU-class awareness, vector DB + object storage included, ready-to-use models / blueprints, service APIs for AI-specific workflows, sovereignty controls bundled, GPU sizing expertise, and Aenix's AI engagement experience. For organisations not staffed for full MLOps engineering, this saves 12-24 months.
+Cozystack provides the multi-tenant Kubernetes + GPU foundation. AI Platform adds: pre-integrated inference (vLLM) + fine-tuning + RAG patterns, multi-tenant GPU scheduling with GPU-class awareness, vector DB + object storage included, ready-to-use models / blueprints, service APIs for AI-specific workflows, sovereignty controls bundled, GPU sizing expertise, and Ænix's AI engagement experience. For organisations not staffed for full MLOps engineering, this saves 12-24 months.
 
 ### Which open-weight models are supported?
 
@@ -204,4 +204,4 @@ Book a discovery call. Bring your AI workload profile (steady inference / traini
 
 ---
 
-*Ænix AI Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Aenix is the open-core company.*
+*Ænix AI Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Ænix is the open-core company.*

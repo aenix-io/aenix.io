@@ -1,5 +1,5 @@
 ---
-title: "Nach Rolle — Ihr Einstieg zu Aenix nach Aufgabe"
+title: "Nach Rolle — Ihr Einstieg zu Ænix nach Aufgabe"
 description: "Rollenspezifische Einstiegspunkte zu Aenix — Infrastruktur, Platform Engineering, Cloud, Allianzen, Compliance oder Engineering. Starten Sie bei Ihrem Problem."
 hero_subtitle: "Finden Sie Ihren Einstieg nach Rolle"
 type: "page"
@@ -16,7 +16,7 @@ related_pages:
   - /de/fuer/leiter-ai-ml/
 ---
 
-**Wählen Sie die Seite für Ihre Position. Jede startet beim Problem Ihrer Rolle — VMware-Ausstieg, Developer-Self-Service, Cloud-Ökonomie, eine Cloud zum Wiederverkauf, eine Partner-Linie oder regulatorische Souveränität — und führt zum passenden Aenix-Angebot. Jede Rolle kann uns auf zwei Wegen einbinden: eine schlüsselfertige Plattform, die Sie betreiben, oder unser Team, das sie mit Ihnen baut.**
+**Wählen Sie die Seite für Ihre Position. Jede startet beim Problem Ihrer Rolle — VMware-Ausstieg, Developer-Self-Service, Cloud-Ökonomie, eine Cloud zum Wiederverkauf, eine Partner-Linie oder regulatorische Souveränität — und führt zum passenden Ænix-Angebot. Jede Rolle kann uns auf zwei Wegen einbinden: eine schlüsselfertige Plattform, die Sie betreiben, oder unser Team, das sie mit Ihnen baut.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -37,7 +37,7 @@ related_pages:
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: section hub /de/fuer/. canonical https://aenix.io/de/fuer/. hreflang en → /for/.

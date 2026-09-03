@@ -46,7 +46,7 @@ Begleitung zur **[MSP-Page](/de/branchen/msp)**.
 
 ## Architektur-Muster
 
-- Multi-Tier Tenant CRD (Aenix → MSP → MSP-Kunden)
+- Multi-Tier Tenant CRD (Ænix → MSP → MSP-Kunden)
 - Pro-Tier-Isolation
 - Gebrandetes kundenorientiertes Portal
 - WHMCS-integriertes Billing
@@ -72,5 +72,5 @@ Gesamtzeit: 6-12 Monate.
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

@@ -89,5 +89,5 @@ Strukturierte DORA-Bewertung → **[Platform Readiness Assessment](/de/dienstlei
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

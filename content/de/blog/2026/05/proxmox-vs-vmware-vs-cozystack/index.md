@@ -63,5 +63,5 @@ Drei Hauptoptionen für Open-Source-fähige Virtualisierung in 2026: Proxmox VE,
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

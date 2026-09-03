@@ -78,7 +78,7 @@ See **[OpenShift alternative](/alternatives/openshift-alternative)** for migrati
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Cozystack vs OpenShift Virtualization — Head-to-Head | Aenix"
+<!-- SEO: title "Cozystack vs OpenShift Virtualization — Head-to-Head | Ænix"
 Word count: ~250. -->

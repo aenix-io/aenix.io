@@ -67,5 +67,5 @@ Begleitung zur **[VMware-Migration-Page](/de/migration/vmware)**.
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

@@ -41,7 +41,7 @@ faq:
 
 **Public-Cloud-Rechnungen schrumpfen nicht von selbst. Die Kombination aus untergenutzten Commitments, ungenutzten Ressourcen, Egress-Gebühren und Aufschlägen für Hyperscaler-Managed-Services führt dazu, dass die meisten Cloud-Ausgaben 20-40 % höher liegen als nötig — noch vor jeder architektonischen Änderung. Das richtige Engagement zur Cloud-Kostenoptimierung benennt, wo die Ausgaben versickern, was sich innerhalb des Hyperscalers zu beheben lohnt und was sich auf eine Plattform verlagern lässt, die Sie selbst kontrollieren.**
 
-Aenix führt ein strukturiertes Cloud-Kosten-Engagement durch, das mit Zahlen beantwortet: wo Sie heute stehen, wo Sie in 12 Monaten stehen können und was die architektonischen Entscheidungen Sie auf dem Weg dorthin kosten.
+Ænix führt ein strukturiertes Cloud-Kosten-Engagement durch, das mit Zahlen beantwortet: wo Sie heute stehen, wo Sie in 12 Monaten stehen können und was die architektonischen Entscheidungen Sie auf dem Weg dorthin kosten.
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter und regionale Clouds; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber. Die Wirtschaftlichkeit dauerhafter Auslastung auf kundeneigener Hardware senkt die TCO typischerweise um 40-70 % gegenüber Hyperscalern. Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
@@ -138,7 +138,7 @@ Das ehrliche Engagement benennt, welche dieser Punkte auf Ihre Situation zutreff
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## Wie Aenix hilft
+## Wie Ænix hilft
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -161,7 +161,7 @@ Das Kosten-Engagement läuft als Teil unseres **[Platform Readiness Assessment](
 - **12-Monats-Ausgabenverlauf** — aktuell → optimiert → architektonisch verändert, mit Obergrenzen und Konfidenzbereichen.
 - **Plan für FinOps-Verantwortung und -Prozess** — wer die Maschine betreibt, nachdem wir gegangen sind.
 
-Geliefert von Aenix-Ingenieuren, die Produktionsplattformen in der EU und in Zentralasien gebaut und betrieben haben. Wir sind mit keinem Hyperscaler kommerziell verbunden — Empfehlungen werden nicht von Partnerschaftsökonomie geprägt.
+Geliefert von Ænix-Ingenieuren, die Produktionsplattformen in der EU und in Zentralasien gebaut und betrieben haben. Wir sind mit keinem Hyperscaler kommerziell verbunden — Empfehlungen werden nicht von Partnerschaftsökonomie geprägt.
 
 <!-- /BLOCK 5 -->
 
@@ -169,7 +169,7 @@ Geliefert von Aenix-Ingenieuren, die Produktionsplattformen in der EU und in Zen
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Keine Hyperscaler-Partnerschaft.** Kostenoptimierungs-Engagements der Big-4 werden meist von dem Hyperscaler gesponsert oder mitgeliefert, dessen Ausgaben optimiert werden. Der Interessenkonflikt ist real. Wir haben keinen.
 - **Ingenieure, keine Buchhalter.** Kostenoptimierung ist eine Platform-Engineering-Frage im Gewand einer FinOps-Frage. Right-sizing erfordert das Verständnis, wie Workloads Ressourcen nutzen; Kostenentscheidungen auf Architekturebene erfordern das Verständnis der Architektur. Unsere Ingenieure beherrschen beides.
@@ -271,6 +271,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir führen Cloud-Kosten-Engagements und Platform-Engineering-Programme für Service-Provider, Banken, Telekommunikationsunternehmen und AI-Betreiber in der EU, in der DACH-Region und in Zentralasien durch.*
+*Ænix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir führen Cloud-Kosten-Engagements und Platform-Engineering-Programme für Service-Provider, Banken, Telekommunikationsunternehmen und AI-Betreiber in der EU, in der DACH-Region und in Zentralasien durch.*
 
 <!-- /BLOCK 12 -->

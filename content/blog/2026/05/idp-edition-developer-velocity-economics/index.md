@@ -177,7 +177,7 @@ Several things remain yours:
   teams, measuring adoption per path, sunsetting paths that don't get
   used) need to happen.
 
-Aenix's engagement model supports all three but doesn't replace
+Ænix's engagement model supports all three but doesn't replace
 customer ownership. Platforms that customers don't own organisationally
 don't outlast the engagement.
 
@@ -205,7 +205,7 @@ ready" for product teams; ongoing platform-component maintenance
 overhead.
 
 Developer Self-Service delivers the platform substrate in 3-6 months with
-ongoing Aenix support. For organisations not staffed for a 12-24
+ongoing Ænix support. For organisations not staffed for a 12-24
 month build, this is the difference between platform engineering
 happening this year or in 2028.
 
@@ -270,7 +270,7 @@ Poor fit:
   paths + 2-3 pilot product teams onboarded
 - **Full Developer Self-Service build** (6-18 months) — platform expanded to
   full engineering organisation, all targeted golden paths shipped
-- **Managed retainer** (optional, ongoing) — Aenix runs platform
+- **Managed retainer** (optional, ongoing) — Ænix runs platform
   Tier-3 under SLA
 
 Engagement size: Project plus managed retainer, quoted per RFP.
@@ -292,5 +292,5 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution.*

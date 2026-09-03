@@ -40,11 +40,11 @@ faq:
     a: "Ja. Souveränitätsanforderungen sind ein häufiger Migrationstreiber. Eine private oder hybride Cozystack-Plattform gibt Ihnen Kontrolle über Datenstandort und Betrieb — relevant für DORA, NIS2 und sektorale Vorgaben. Details unter Data Sovereignty."
 ---
 
-**Cloud Migration ist 2026 eine Workload-Placement-Entscheidung, kein Wettlauf in die Public Cloud. Aenix führt strukturierte Cloud-Migrationen durch — Public-Cloud-Repatriierung, VMware-Exit und Greenfield-Private-Cloud-Aufbauten — bei denen das Ziel aus dem Workload abgeleitet und nicht vorab angenommen wird.**
+**Cloud Migration ist 2026 eine Workload-Placement-Entscheidung, kein Wettlauf in die Public Cloud. Ænix führt strukturierte Cloud-Migrationen durch — Public-Cloud-Repatriierung, VMware-Exit und Greenfield-Private-Cloud-Aufbauten — bei denen das Ziel aus dem Workload abgeleitet und nicht vorab angenommen wird.**
 
 Das Team, das Ihre Migration ausliefert, ist dasselbe Team hinter [Cozystack](/de/produkte/cozystack/) — der Open-Source-Plattform, auf der die meisten Private-Cloud-Migrationen landen. Wir arbeiten für Assessment, Sequenzierung und Implementierung an der Seite Ihrer Engineers.
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)** — das Ziel hängt vom Buyer-Profil und Migrationsmuster ab. Hosting-Anbieter, die einen geteilten Cloud-Stack verlassen, landen auf der Public Cloud Platform; regulierte Unternehmen auf der Private Cloud Platform; große Betreiber auf der Public Cloud Platform; Produkt-Engineering-Teams auf der Developer Self-Service; KI-lastige Bestände auf der AI Platform.
+> **Passt zu:** einer der **[Ænix Plattformen](/de/produkte/)** — das Ziel folgt dem Buyer-Profil. Wer Cloud an externe Kunden verkauft (Hoster, MSPs, Telkos, nationale Betreiber), landet auf der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)**; regulierte Organisationen, die Cloud für die eigenen Entwickler betreiben, auf der **[Private Cloud Platform](/de/produkte/private-cloud-platform/)**, deren Self-Service-Schicht die interne PaaS ersetzt; GPU- und Inferenz-Bestände auf der **[AI Platform](/de/produkte/ai-platform/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -68,13 +68,13 @@ Wenn zwei oder mehr davon zutreffen, verstärkt eine strukturierte Migration den
 
 ---
 
-## Wie Aenix bei einer Cloud-Migration vorgeht
+## Wie Ænix bei einer Cloud-Migration vorgeht
 
 Das Engagement ist bewusst gestaffelt, sodass Sie inkrementell committen, mit einem Entscheidungs-Gate vor der teuren Phase.
 
 - **Platform Readiness Assessment (14-28 Tage)** — vollständiges Workload-Inventar, Klassifizierung (jetzt migrieren / später migrieren / bleiben / re-platformen), ehrliche TCO-Modellierung und eine schriftliche Zielarchitektur. Dies ist die Methodik hinter jeder Migration; siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 - **Pilot** — eine repräsentative Kohorte wandert auf die Zielplattform und läuft parallel zur Quelle, bis sie validiert ist. Das beweist die Architektur und die Aufwandsschätzungen an realen Workloads, bevor skaliert wird.
-- **Build and Migrate (3-18 Monate)** — Aenix-Engineers integriert mit Ihrem Team, migrieren Workloads Kohorte für Kohorte, mit durchgängigem Wissenstransfer. Der Betrieb kann in-house bleiben oder als verwaltetes Engagement fortgeführt werden.
+- **Build and Migrate (3-18 Monate)** — Ænix-Engineers integriert mit Ihrem Team, migrieren Workloads Kohorte für Kohorte, mit durchgängigem Wissenstransfer. Der Betrieb kann in-house bleiben oder als verwaltetes Engagement fortgeführt werden.
 
 ### Workload-Placement-Framework
 
@@ -82,7 +82,7 @@ Das Assessment sortiert jeden Workload entlang zweier Achsen: wie gut er technis
 
 ### Was am Platz bleibt
 
-Ein ehrlicher Migrationsplan lässt Workloads in Ruhe, wenn ihr Umzug Risiko ohne Ertrag hinzufügt. Bursty, unvorhersehbare Workloads gehören oft in die Public Cloud, wo Elastizität günstig ist. Managed Services ohne On-Premises-Äquivalent sind einen Neubau möglicherweise nicht wert. Anwendungen mitten im Rewrite sollten auf die neue Architektur warten, statt zweimal zu migrieren. Aenix hat keine Hyperscaler-Partner-Ökonomie und keinen Anreiz zur Über-Migration, daher ist "an Ort und Stelle belassen" eine Empfehlung, die wir ohne Zögern aussprechen, wenn die Zahlen sie stützen.
+Ein ehrlicher Migrationsplan lässt Workloads in Ruhe, wenn ihr Umzug Risiko ohne Ertrag hinzufügt. Bursty, unvorhersehbare Workloads gehören oft in die Public Cloud, wo Elastizität günstig ist. Managed Services ohne On-Premises-Äquivalent sind einen Neubau möglicherweise nicht wert. Anwendungen mitten im Rewrite sollten auf die neue Architektur warten, statt zweimal zu migrieren. Ænix hat keine Hyperscaler-Partner-Ökonomie und keinen Anreiz zur Über-Migration, daher ist "an Ort und Stelle belassen" eine Empfehlung, die wir ohne Zögern aussprechen, wenn die Zahlen sie stützen.
 
 ---
 
@@ -134,4 +134,4 @@ Für ein durchgerechnetes Beispiel eines Mixed-Placement-Ergebnisses siehe die *
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform an — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform an — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack.*

@@ -30,7 +30,7 @@ quick_facts:
   - label: "Technologie-Basis"
     value: "Cozystack: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Produkt"
-    value: "Ænix Platform in zwei Editions; passend Private Cloud Platform (regulierte Unternehmen) und Public Cloud Platform (große Betreiber)"
+    value: "Ænix Platform in zwei Plattforms; passend Private Cloud Platform (regulierte Unternehmen) und Public Cloud Platform (große Betreiber)"
 
 faq:
   - q: "Was umfasst ein Private Cloud Consulting bei Aenix?"
@@ -44,14 +44,14 @@ faq:
   - q: "Hilft Aenix beim VMware-Ausstieg nach der Broadcom-Übernahme?"
     a: "Ja. Die VMware-Ausstieg-Strategie ist ein Kernbestandteil. Da KubeVirt VMs und Container auf einer Kubernetes-API betreibt, lassen sich bestehende VM-Workloads auf eine Apache-2.0-lizenzierte Plattform ohne CPU-/Core-basierte Lizenzierung migrieren."
   - q: "Vermeidet die Plattform Vendor-Lock-in und Lizenzkosten?"
-    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Als CNCF-Projekt mit offenem Code vermeidet es proprietären Lock-in. Aenix bietet zusätzlich die produktisierte Ænix Platform mit kommerziellem Support in zwei Editions an."
+    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Als CNCF-Projekt mit offenem Code vermeidet es proprietären Lock-in. Aenix bietet zusätzlich die produktisierte Ænix Platform mit kommerziellem Support in zwei Plattforms an."
 ---
 
 <!-- BLOCK 1 -->
 
 **Private Cloud ist zurück — getrieben durch Broadcom-induzierten VMware-Ausstieg, Souveränitätsmandate, KI-Workload-Ökonomie und FinOps-Druck auf Hyperscaler-Rechnungen. Der Broadcom Private Cloud Outlook 2025 fand heraus, dass 53% der Organisationen jetzt Private Cloud für neue Workloads priorisieren und 69% Repatriation evaluieren. Die Architektur-Entscheidungen sind größer als die Wahl eines Vendors — sie formen den Betrieb für das nächste Jahrzehnt.**
 
-Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Kubernetes-nativen Private-Cloud-Plattform, die wir in Produktion mit Service Providern, Banken und regulierten Unternehmen betreiben. Unsere Private-Cloud-Consulting-Engagements bringen dieselben Engineers in Ihr Engagement.
+Ænix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Kubernetes-nativen Private-Cloud-Plattform, die wir in Produktion mit Service Providern, Banken und regulierten Unternehmen betreiben. Unsere Private-Cloud-Consulting-Engagements bringen dieselben Engineers in Ihr Engagement.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die ihre eigene Public-Cloud-Class-Plattform betreiben.
 
@@ -155,10 +155,10 @@ Die Private Cloud ist gebaut; das Plattform-Team ist so groß wie das Team, das 
 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
-## Wie Aenix arbeitet
+## Wie Ænix arbeitet
 
 - **Architektur-Review (5-15 Tage)** — fokussiertes Engagement, Ziel-Architektur, Capacity-Modell.
-- **Implementations-Engagement (3-12 Monate)** — Aenix-Engineers integriert mit Ihrem Team, Aufbau der Foundation, Multi-Tenancy, Operations-Modell. Knowledge-Transfer durchgängig.
+- **Implementations-Engagement (3-12 Monate)** — Ænix-Engineers integriert mit Ihrem Team, Aufbau der Foundation, Multi-Tenancy, Operations-Modell. Knowledge-Transfer durchgängig.
 - **Managed Private Cloud** — für Organisationen, die die Plattform brauchen, aber keine Betriebskapazität haben.
 
 Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
@@ -169,7 +169,7 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Wir betreiben Private Clouds in Produktion.** Cozystack ist in Produktion mit Service Providern und regulierten Unternehmen.
 - **Open-Source-Plattform-Foundation.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Die Plattform, die wir empfehlen, ist eine, die Sie besitzen — kein Vendor-Roadmap-Lock-in.
@@ -247,6 +247,6 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 
 <!-- BLOCK 12: FOOTER -->
 
-*Aenix ist das Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->

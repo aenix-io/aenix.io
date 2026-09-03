@@ -38,7 +38,7 @@ faq:
 
 **One of the most expensive things in most engineering organizations is the wait time between "team needs an environment" and "team has an environment." When that gap is days or weeks, product velocity decays measurably; when it's hours, the platform investment compounds for years.**
 
-Aenix builds developer self-service capability into platforms that product teams actually adopt — not Backstage as wallpaper, but underlying golden paths that provision what a team asks for without filing a ticket.
+Ænix builds developer self-service capability into platforms that product teams actually adopt — not Backstage as wallpaper, but underlying golden paths that provision what a team asks for without filing a ticket.
 
 > **Pairs with:** **[the developer self-service layer of Ænix Private Cloud Platform](/products/private-cloud-platform/)** — Internal Developer Platform layer with GitLab automation, Argo CD workflows, APIs for self-service, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
@@ -96,13 +96,13 @@ The honest version requires opinionated platform underneath, not just a catalog 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## How Aenix engages
+## How Ænix engages
 
 Self-service is part of broader platform engineering work — see **[Internal Developer Platform services](/services/internal-developer-platform/)** and **[Platform Engineering services](/services/platform-engineering/)** for the engagement framing. The self-service-specific output is:
 
 - **Golden-path inventory** — current state vs target for the 10 most-common requests
 - **Self-service paths designed** — for the priority requests
-- **Implementation engagement** — Aenix engineers build paths integrated with your platform
+- **Implementation engagement** — Ænix engineers build paths integrated with your platform
 - **Adoption metrics framework** — measure what's working
 
 </div>
@@ -147,7 +147,7 @@ Self-service is part of broader platform engineering work — see **[Internal De
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "Developer Self-Service — Environments in Hours, Not Weeks | Aenix"
+<!-- SEO: title "Developer Self-Service — Environments in Hours, Not Weeks | Ænix"
 Word count: ~600. -->

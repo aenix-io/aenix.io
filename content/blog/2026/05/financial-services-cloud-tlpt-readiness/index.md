@@ -59,7 +59,7 @@ live but had never been tested under realistic regulator scrutiny.
 
 This article walks through what TLPT readiness actually looks like
 at the architecture level — what platform engineers should already
-have done, what gaps recur, and what an Aenix engagement closes.
+have done, what gaps recur, and what an Ænix engagement closes.
 
 ## What TLPT means and why it matters now
 
@@ -110,7 +110,7 @@ Fix patterns:
 - 24×7 detection coverage with documented escalation
 - Alert hygiene as a recurring task
 
-Aenix Private Cloud Platform ships VictoriaMetrics + VictoriaLogs
+Ænix Private Cloud Platform ships VictoriaMetrics + VictoriaLogs
 configured for security-grade telemetry by default, plus security-
 focused alert rules. The customer SIEM integration is engagement work.
 
@@ -123,7 +123,7 @@ authorised.
 
 Pattern: SPIFFE/SPIRE for workload identity, External Secrets Operator
 backed by customer HSM, Pod Security Standards enforced as policy.
-Aenix engagement covers the integration; the customer's IdP /
+Ænix engagement covers the integration; the customer's IdP /
 workforce identity remains customer-controlled.
 
 ### 3. Tenant CRD isolation as the structural answer to concentration risk
@@ -158,19 +158,19 @@ within the past 24 months.
 The Cozystack-based architecture makes exit drills mechanically
 simpler: workloads are standard KubeVirt VMs and Kubernetes resources.
 The exit destination can be "the same Kubernetes API on different
-hardware or provider." Aenix's engagement model includes a documented
+hardware or provider." Ænix's engagement model includes a documented
 exit-drill playbook that customers run annually.
 
 ### 6. Supplier-chain transparency to second hop
 
 Article 28 demands visibility into the ICT supply chain at least to
-the second hop. For the platform vendor relationship, Aenix is on the
+the second hop. For the platform vendor relationship, Ænix is on the
 hook — we provide an attested supplier-disclosure document that maps
 upstream open-source components, security disclosure channels, and
 operational dependencies.
 
 Beyond the platform vendor, the customer is responsible for mapping
-their own supplier chain. Aenix engagements include tooling to
+their own supplier chain. Ænix engagements include tooling to
 inventory it but the inventory itself is customer-side work.
 
 ## Where most financial-services cloud architectures still fall short
@@ -202,7 +202,7 @@ it. Time-to-exit estimates are tabletop, not calibrated against a
 drill. When the supervisor asks "when did you last test the exit
 plan?" the answer is silence.
 
-Fix: annual exit-drill rehearsal with documented outcome. Aenix
+Fix: annual exit-drill rehearsal with documented outcome. Ænix
 engagement provides the playbook; the customer runs the rehearsal.
 
 ### Gap 3: concentration risk treated as procurement question
@@ -223,11 +223,11 @@ The contracted hyperscaler is documented. Its data-centre operators,
 network connectivity providers, shared platform services beneath are
 not. Article 30(2)(a) requires visibility to second hop.
 
-For Cozystack-based architecture, the platform vendor (Aenix) discloses
+For Cozystack-based architecture, the platform vendor (Ænix) discloses
 upstream component sourcing. The hardware vendor is the next hop;
 beyond that, customer responsibility.
 
-## The Aenix engagement model for financial services
+## The Ænix engagement model for financial services
 
 We approach the financial-services engagement differently from other
 verticals, because the regulator-driver and audit-readiness drivers
@@ -238,7 +238,7 @@ shape the work.
 Confirm regulatory scope (DORA + national overlays + sectoral rules).
 Confirm criticality classification of workloads. Sponsor and
 supervisor-engagement contacts on customer side. Engagement model
-(typical: Aenix runs advisory + Tier-3 SLA; customer runs production
+(typical: Ænix runs advisory + Tier-3 SLA; customer runs production
 operations).
 
 ### Phase 1 — Platform Readiness Assessment with DORA workstream
@@ -257,12 +257,12 @@ partially built. TLPT-readiness validated against the pilot scope.
 
 12-30 months depending on workload scope, multi-DC structure, TLPT
 cycle. Production-grade deployment with full compliance documentation
-deliverables. Aenix participates in TLPT preparation; the test itself
+deliverables. Ænix participates in TLPT preparation; the test itself
 is run by accredited red-team providers.
 
 ### Phase 4 — Managed retainer
 
-Aenix advisory + Tier-3 under SLA. No kubectl access to customer
+Ænix advisory + Tier-3 under SLA. No kubectl access to customer
 production cluster — operates via GitOps PR review only. Critical for
 bank governance.
 
@@ -285,7 +285,7 @@ Marginal fit:
 Poor fit:
 
 - Banks that have already committed to a multi-year hyperscaler
-  programme and aren't reopening that decision — Aenix can advise on
+  programme and aren't reopening that decision — Ænix can advise on
   specific DORA architecture gaps within the hyperscaler context, but
   the full Private Cloud Platform isn't a fit
 
@@ -308,7 +308,7 @@ Poor fit:
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. Our tier-1 European bank engagements are
 NDA-protected until mid-2027; first named bank case studies will be
 published as NDAs expire.*

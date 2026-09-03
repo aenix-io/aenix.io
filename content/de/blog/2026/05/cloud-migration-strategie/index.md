@@ -83,5 +83,5 @@ Strukturierte Bewertung → **[Platform Readiness Assessment](/de/dienstleistung
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

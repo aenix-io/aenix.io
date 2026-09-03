@@ -46,7 +46,7 @@ faq:
 
 **Manufacturing in 2026 means simultaneous demands: Industry 4.0 transformation, NIS2 compliance (manufacturing of critical products is in scope), edge compute at production sites, AI-driven quality control, and increasing sovereign-cloud requirements for industrial IP. The architectural answer is a coherent platform that runs at HQ, regional sites, and production-floor edge — under one operational model.**
 
-Aenix builds platforms for manufacturing organizations across the EU, DACH, and Central Asia.
+Ænix builds platforms for manufacturing organizations across the EU, DACH, and Central Asia.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC + edge architecture for industrial IT/OT, NIS2 compliance for critical-product manufacturing, air-gap support for OT networks.
 
@@ -114,7 +114,7 @@ The IEC 62443 framing follows from that placement: the platform is one or more z
 
 {{< clients >}}
 
-*Customer evidence — Aenix to populate. Anonymous proof points:*
+*Customer evidence — Ænix to populate. Anonymous proof points:*
 - A multi-site manufacturer running unified platform across HQ + regional production sites
 - An automotive supplier with industrial-IP sovereignty requirements
 - A precision engineering firm with AI-driven quality control on private LLM
@@ -132,6 +132,6 @@ The IEC 62443 framing follows from that placement: the platform is one or more z
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
 <!-- Word count: ~500. -->

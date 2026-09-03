@@ -77,7 +77,7 @@ The alternatives below cover the realistic options.
 
 **Why pick:** Open source (Apache 2.0), no vendor lock-in. Multi-tenancy structural. Single platform for VMs + containers + databases + S3 + GPU. Light operational footprint relative to OpenStack.
 
-**Watch out for:** Newer than OpenStack; smaller community (mitigated by Aenix commercial support).
+**Watch out for:** Newer than OpenStack; smaller community (mitigated by Ænix commercial support).
 
 **[Read more](/alternatives/vmware-alternative/)** · **[cozystack.io](https://cozystack.io)**
 
@@ -205,9 +205,9 @@ If your situation doesn't match the Cozystack profile, the eight options above c
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "VMware Alternatives — 8 Platforms Compared (2026) | Aenix"
+<!-- SEO: title "VMware Alternatives — 8 Platforms Compared (2026) | Ænix"
 Description (≤155): "VMware alternatives 2026: 8 platforms compared (Cozystack, OpenShift, Nutanix, Proxmox, OpenStack, Scale Computing, Azure Stack HCI, KubeVirt vendors)."
 Word count: ~1100.
 -->

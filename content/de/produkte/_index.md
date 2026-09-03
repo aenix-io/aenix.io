@@ -1,6 +1,6 @@
 ---
-title: "Aenix Produkte"
-description: "Aenix-Produkte — Ænix Platform (schlüsselfertige kommerzielle Cloud-in-a-Box, zwei Editions), Cozystack (Open-Source CNCF-Projekt), Kubernetes Deep Dive Kurs."
+title: "Ænix Produkte"
+description: "Aenix-Produkte — Ænix Platform (schlüsselfertige kommerzielle Cloud-in-a-Box, zwei Plattforms), Cozystack (Open-Source CNCF-Projekt), Kubernetes Deep Dive Kurs."
 hero_subtitle: "Schlüsselfertige Plattform, Open-Source-Cozystack und Experten-Training"
 language: "de"
 page_type: "flag-page"
@@ -9,9 +9,9 @@ cascade:
 hreflang_en: /products/
 faq:
   - q: "Was ist der Unterschied zwischen Ænix Platform und Cozystack?"
-    a: "Cozystack ist die Open-Source-Foundation — ein CNCF-Projekt unter Apache 2.0, das jeder herunterladen, modifizieren und betreiben kann. Ænix Platform ist die kommerzielle turnkey-Version, die Aenix verkauft, mit Hosting-Panel, vollständigem Billing, Portalen, Payments, produktisiertem Installer, Enterprise-SLA und Edition-spezifischen Features pro Buyer-Profil (Public Cloud / ISP / Enterprise / IDP / AI/ML)."
+    a: "Cozystack ist die Open-Source-Foundation — ein CNCF-Projekt unter Apache 2.0, das jeder herunterladen, modifizieren und betreiben kann. Ænix Platform ist die kommerzielle turnkey-Version, die Aenix verkauft, mit Hosting-Panel, vollständigem Billing, Portalen, Payments, produktisiertem Installer, Enterprise-SLA und Plattform-spezifischen Features pro Buyer-Profil (Public Cloud / Private Cloud / AI)."
   - q: "Welche drei Produkte bietet Aenix an?"
-    a: "Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in zwei Editions: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen."
+    a: "Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen."
   - q: "Ist Cozystack Open Source?"
     a: "Ja. Cozystack ist eine Open-Source Kubernetes-native Multi-Tenant Cloud-Plattform, ein CNCF-Projekt unter Apache 2.0 — jeder kann es betreiben. Erstellt und gewartet von Aenix."
   - q: "Was ist der Kubernetes Deep Dive Kurs?"
@@ -20,7 +20,7 @@ aliases:
   - /de/produkte/aenix-platform/
 ---
 
-**Drei Produkte, unterschiedliche Zielgruppen. Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in zwei Editions: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen.**
+**Drei Produkte, unterschiedliche Zielgruppen. Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen.**
 
 ---
 
@@ -29,9 +29,9 @@ aliases:
 
 ## Ænix Platform
 
-**Turnkey kommerzielle Cloud-in-a-Box. Basiert auf Open-Source Cozystack. Zwei Editions: eine, wenn Sie Cloud verkaufen, eine, wenn Sie sie selbst betreiben. Hosting-Panel, Billing, Portale, Payments, Support — installieren, Nutzer einbinden, Betrieb starten.**
+**Turnkey kommerzielle Cloud-in-a-Box. Basiert auf Open-Source Cozystack. Zwei Plattforms: eine, wenn Sie Cloud verkaufen, eine, wenn Sie sie selbst betreiben. Hosting-Panel, Billing, Portale, Payments, Support — installieren, Nutzer einbinden, Betrieb starten.**
 
-| Edition | Für | Was unterscheidet |
+| Plattform | Für | Was unterscheidet |
 |---|---|---|
 | **Public Cloud Platform** | Große Public Clouds, große Banken mit eigener Cloud, große Telcos | Multi-Hypervisor-Cloud-Control-Plane, Multi-Region, Drittanbieter-Integration |
 | **Public Cloud Platform** | Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren | WHMCS-Integration, Billing-Modul + Templates, Tenant Lock/Suspension, Migration von VMware/OpenStack/Virtuozzo. Ab 1.250 USD/Monat |
@@ -52,7 +52,7 @@ Plus ein **Entry-Tier** — **Pure Cozystack mit Ænix-Support** — für Produk
 
 ## Cozystack
 
-**Open-Source Kubernetes-native Multi-Tenant Cloud-Plattform. CNCF-Projekt (Apache 2.0). Erstellt und gewartet von Aenix.**
+**Open-Source Kubernetes-native Multi-Tenant Cloud-Plattform. CNCF-Projekt (Apache 2.0). Erstellt und gewartet von Ænix.**
 
 - **Architektur:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal + VictoriaMetrics + VictoriaLogs
 - **Lizenz:** Apache 2.0 — jeder kann es betreiben
@@ -86,7 +86,7 @@ Wenn Sie eine turnkey Cloud (Billing, Portale, Payments, Support, produktisierte
 <div class="diagram">
 <div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Open Source</span><span>CNCF, Apache 2.0</span><span>Jeder kann es betreiben</span></div></div>
 <div class="diagram__conn">produktisiert als</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Kommerziell</span><span>Zwei Editions + zwei Module</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Kommerziell</span><span>Zwei Plattforms + zwei Module</span></div></div>
 <div class="diagram__conn">vermittelt durch</div>
 <div class="diagram__node"><b>Kubernetes Deep Dive Kurs</b><div class="diagram__chips"><span>Bildungsprodukt</span><span>Für Engineers</span></div></div>
 </div>
@@ -106,4 +106,4 @@ Wenn Sie eine turnkey Cloud (Billing, Portale, Payments, Support, produktisierte
 
 ---
 
-*Cozystack ist Open Source unter Apache 2.0. Ænix Platform ist kommerziell, verkauft von Aenix.*
+*Cozystack ist Open Source unter Apache 2.0. Ænix Platform ist kommerziell, verkauft von Ænix.*

@@ -1,6 +1,6 @@
 ---
 title: "Mit uns sprechen"
-description: "Kontaktieren Sie Aenix zu Ænix-Platform-Editions, Discovery-Calls oder Partnerschaften. EU-Büro: AENIX s.r.o. (Tschechien), US-Büro: AENIX INC (Delaware)."
+description: "Kontaktieren Sie Aenix zu Ænix-Plattforms, Discovery-Calls oder Partnerschaften. EU-Büro: AENIX s.r.o. (Tschechien), US-Büro: AENIX INC (Delaware)."
 hero_subtitle: "Discovery-Call buchen oder Partnerschaft besprechen"
 language: "de"
 
@@ -19,7 +19,7 @@ offices:
       - "Registration Number: 10075938"
 ---
 
-**Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Platform-Editions, Ihr Buyer-Profil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**
+**Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Plattforms, Ihr Buyer-Profil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -50,7 +50,7 @@ Zwei Wege, einen 30-Minuten-Discovery-Call zu buchen — wählen Sie, was für I
 **Im Call besprechen wir:**
 
 - Ihr Buyer-Profil (Hosting-Anbieter / regulierte Unternehmen / Public-Cloud-Betreiber / Produkt-Engineering-Team / KI-lastige Organisation)
-- Welche Ænix Platform Edition passt — Public Cloud / ISP / Enterprise / IDP / AI/ML — oder Pure Cozystack mit Ænix-Support Entry-Tier
+- Welche Ænix platform passt — Public Cloud / Private Cloud / AI — oder Pure Cozystack mit Ænix-Support Entry-Tier
 - Regulatorischen Kontext (DORA / NIS2 / sektoral / nationale Souveränitätsmandate)
 - Aktuelle Architektur und Migrations-Scope
 - Engagement-Modell (Platform Readiness Assessment → Pilot → Full Build → Managed Operations)
@@ -136,4 +136,4 @@ Engineering-Teams verteilt in der EU und Zentralasien. Starke Präsenz in:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

@@ -131,5 +131,5 @@ For higher-level evaluation, **[VMware alternative](/alternatives/vmware-alterna
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

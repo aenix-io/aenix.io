@@ -93,7 +93,7 @@ Multi-million-euro Ænix Private Cloud Platform deployments delivering DORA-alig
 
 ### Platform R&D for ecosystem vendors
 
-Aenix has delivered deep platform component R&D for established platform vendors. These engagements demonstrate the technical capability that underpins Ænix Platform delivery.
+Ænix has delivered deep platform component R&D for established platform vendors. These engagements demonstrate the technical capability that underpins Ænix Platform delivery.
 
 **Public case studies:**
 
@@ -115,7 +115,7 @@ Cloud platform research and prototype for hosting provider modernization.
 #### Virtualization platform research for Kubernetes
 Foundational research on KubeVirt-based virtualization at production scale.
 
-These engagements predate Ænix Platform's commercial launch and represent the technical foundation Aenix brings to platform builds.
+These engagements predate Ænix Platform's commercial launch and represent the technical foundation Ænix brings to platform builds.
 
 ---
 
@@ -137,11 +137,11 @@ These engagements predate Ænix Platform's commercial launch and represent the t
 
 For named case studies, the engagement details are public — book a [discovery call](/contact/) and we'll walk through them.
 
-For NDA-protected engagements (banks, sovereign cloud, AI/ML), Aenix sales can arrange direct customer reference calls under NDA for active engagement opportunities.
+For NDA-protected engagements (banks, sovereign cloud, AI/ML), Ænix sales can arrange direct customer reference calls under NDA for active engagement opportunities.
 
-### Are these all Aenix customers?
+### Are these all Ænix customers?
 
-The platform R&D engagements are historical work — Aenix delivered the projects. Some predate the Aenix legal entities in their current form but are credited as Aenix work.
+The platform R&D engagements are historical work — Ænix delivered the projects. Some predate the Ænix legal entities in their current form but are credited as Ænix work.
 
 The hosting providers are current Ænix Public Cloud Platform customers.
 
@@ -153,7 +153,7 @@ First NDA expirations are expected mid-2027. As they land, named case studies wi
 
 ### Can I see Cozystack production deployments separately?
 
-Cozystack is open-source — many organizations run it without commercial Aenix engagement. The CNCF Landscape lists Cozystack production users community-wide. Aenix tracks Cozystack production references as part of community engagement, but Cozystack production users are not necessarily Aenix customers.
+Cozystack is open-source — many organizations run it without commercial Ænix engagement. The CNCF Landscape lists Cozystack production users community-wide. Ænix tracks Cozystack production references as part of community engagement, but Cozystack production users are not necessarily Ænix customers.
 
 ---
 
@@ -167,4 +167,4 @@ Book a discovery call. We'll match your situation against relevant case patterns
 
 ---
 
-*Aenix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of Ænix Platform — a turnkey commercial cloud-in-a-box with three platforms.*
+*Ænix is the open-core company behind [Cozystack](https://cozystack.io) (CNCF project) and the maker of Ænix Platform — a turnkey commercial cloud-in-a-box with three platforms.*

@@ -44,9 +44,9 @@ faq:
     a: "Über das Partner-Programm sind bis zu 40% Marge auf weiterverkaufte Engagements möglich. Das Multi-Tier-Reseller-Modell erlaubt es, eigene Endkunden-Tarife zu setzen, während Aenix die Plattform betreibt und Support nach Reseller-Level staffelt."
 ---
 
-**Managed Service Provider (MSPs) und Reseller stehen 2026 vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren, aber mit den Kundenbeziehungs-Vorteilen, die MSPs bereits haben. White-Label Cloud — gebrandet mit der Identität des MSP, betrieben auf Shared- oder dedizierter Infrastruktur — ist die realistische Antwort. Aenix baut diese end-to-end.**
+**Managed Service Provider (MSPs) und Reseller stehen 2026 vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren, aber mit den Kundenbeziehungs-Vorteilen, die MSPs bereits haben. White-Label Cloud — gebrandet mit der Identität des MSP, betrieben auf Shared- oder dedizierter Infrastruktur — ist die realistische Antwort. Ænix baut diese end-to-end.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden), WHMCS-integriertes Billing. Ab 1.250 USD/Monat Support-Tier. Siehe auch: **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell (Ænix → MSP → MSP-Kunden), WHMCS-integriertes Billing. Ab 1.250 USD/Monat Support-Tier. Siehe auch: **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -78,7 +78,7 @@ faq:
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Aenix</b></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix</b></div>
 <div class="diagram__conn">betreibt für</div>
 <div class="diagram__node"><b>MSP</b></div>
 <div class="diagram__conn">verkauft an</div>
@@ -109,4 +109,4 @@ faq:
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*

@@ -68,7 +68,7 @@ Ein Telekom-Betreiber und Systemintegrator baute eine Unternehmens-KI-Plattform 
 
 ### Regionale Hosting-Anbieter (Ænix Public Cloud Platform)
 
-Produktive Deployments mit unserer hosting-spezifischen Edition. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, Multi-Tier-Reseller-Modell, erweiterter Service-Katalog, Tenant Lock/Suspension.
+Produktive Deployments mit unserer hosting-spezifischen Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, Multi-Tier-Reseller-Modell, erweiterter Service-Katalog, Tenant Lock/Suspension.
 
 **Öffentliche Kunden** (derzeit auf aenix.io gelistet):
 - GoHost.kz
@@ -123,4 +123,4 @@ Erste NDA-Abläufe erwartet Mitte 2027. Sobald sie landen, werden namentliche Ca
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

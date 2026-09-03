@@ -217,13 +217,13 @@ Private LLM is the wrong answer when:
 - Your model needs are at the absolute frontier (current GPT-class capability with all bells and whistles). The largest open-weight models close the gap rapidly, but the very latest frontier capability still trails.
 - Your data is not actually regulated, your spend is not actually growing, and the trigger is more "we want our own thing" than a substantive driver. The work is real and substantial; the trigger has to be real too.
 
-A good engagement is honest about these cases. The Aenix engagement specifically does not push private LLM when the alternative is the right answer.
+A good engagement is honest about these cases. The Ænix engagement specifically does not push private LLM when the alternative is the right answer.
 
 ## How to start
 
 If your trigger profile fits, the structured next step is a sovereign-AI assessment of your specific workload, data class, and economics. The output is a written architecture for your situation — not a generic recommendation.
 
-Aenix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + AI-platform workstreams emphasized. See the **[sovereign AI services page](/solutions/sovereign-ai/)** for engagement details.
+Ænix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + AI-platform workstreams emphasized. See the **[sovereign AI services page](/solutions/sovereign-ai/)** for engagement details.
 
 ---
 
@@ -236,5 +236,5 @@ Aenix runs this as part of the **[Platform Readiness Assessment](/services/platf
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build sovereign AI platforms for AI / GPU operators, financial services, and public-sector organizations across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build sovereign AI platforms for AI / GPU operators, financial services, and public-sector organizations across the EU, DACH, and Central Asia.*
 

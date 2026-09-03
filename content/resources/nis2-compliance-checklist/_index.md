@@ -37,7 +37,7 @@ faq:
     a: "Cozystack is an open-source, Apache 2.0 cloud platform and CNCF Sandbox project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium (eBPF) networking and LINSTOR/DRBD storage. Aenix is the team behind it and sells the productized Ænix Platform on top, the architecture this NIS2 checklist is designed to assess."
 ---
 
-**A 35-point checklist for essential and important entities subject to NIS2. Covers Article 21 risk management measures (10 areas), Article 23 incident reporting timelines, supply-chain transparency, business continuity, MFA, encryption, and architecture-level controls. Used by Aenix during NIS2-aligned readiness engagements.**
+**A 35-point checklist for essential and important entities subject to NIS2. Covers Article 21 risk management measures (10 areas), Article 23 incident reporting timelines, supply-chain transparency, business continuity, MFA, encryption, and architecture-level controls. Used by Ænix during NIS2-aligned readiness engagements.**
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — NIS2-aligned by design (Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging, coordinated vulnerability disclosure aligned with Article 30).
 
@@ -83,6 +83,6 @@ The checklist gives you the working surface to assess your architecture against 
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
 <!-- Word count: ~350. Mirror DORA pattern. -->

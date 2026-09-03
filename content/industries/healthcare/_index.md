@@ -61,7 +61,7 @@ faq:
 
 # Sovereign cloud for healthcare
 
-**Hospitals, health insurers, diagnostics labs, and medical-AI teams handle the most sensitive personal data in the economy under two hard constraints: GDPR special-category obligations and NIS2 essential-entity duties. The architectural answer is not "a healthcare SaaS in someone else's cloud" — it's a sovereign platform where data residency, encryption-key custody, and audit trails are structural. Aenix builds and operates these platforms on [Cozystack](/products/cozystack/), running production healthcare workloads on the provider's own hardware.**
+**Hospitals, health insurers, diagnostics labs, and medical-AI teams handle the most sensitive personal data in the economy under two hard constraints: GDPR special-category obligations and NIS2 essential-entity duties. The architectural answer is not "a healthcare SaaS in someone else's cloud" — it's a sovereign platform where data residency, encryption-key custody, and audit trails are structural. Ænix builds and operates these platforms on [Cozystack](/products/cozystack/), running production healthcare workloads on the provider's own hardware.**
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for the regulated cloud foundation; **[AI Platform](/products/ai-platform/)** for medical imaging, clinical NLP, and decision-support AI on patient data. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
 
@@ -125,7 +125,7 @@ Healthcare infrastructure is not generic infrastructure, and the platform has to
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## How Aenix engages with healthcare organizations
+## How Ænix engages with healthcare organizations
 
 The standard engagement runs as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with workstreams weighted for the healthcare context:
 
@@ -152,4 +152,4 @@ We do not publish named healthcare customers — health engagements are NDA-prot
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes Cozystack as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes Cozystack as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

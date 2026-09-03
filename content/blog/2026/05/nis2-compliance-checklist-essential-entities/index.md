@@ -73,7 +73,7 @@ The architecture must support detection and reporting at these timelines.
 
 ## Most-common findings
 
-In Aenix NIS2 engagements:
+In Ænix NIS2 engagements:
 1. Detection telemetry tuned for performance, not security
 2. BCP plan documented but never tested
 3. Supply-chain visible only to first hop
@@ -87,5 +87,5 @@ For deeper engagement: **[NIS2 compliance services](/solutions/nis2-compliance/)
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

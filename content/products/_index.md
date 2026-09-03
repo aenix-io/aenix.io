@@ -111,7 +111,7 @@ SLA-backed support with direct access to the maintainers, dedicated channels, up
 
 ## WHMCS integration
 
-**For hosters already running WHMCS.** A proprietary Aenix module that adds Cozystack services — Kubernetes clusters, managed databases, VMs, message brokers, object storage and GPU — to the panel you already operate, with usage metering and billing wired through.
+**For hosters already running WHMCS.** A proprietary Ænix module that adds Cozystack services — Kubernetes clusters, managed databases, VMs, message brokers, object storage and GPU — to the panel you already operate, with usage metering and billing wired through.
 
 [WHMCS integration →](/products/whmcs-integration/)
 
@@ -119,7 +119,7 @@ SLA-backed support with direct access to the maintainers, dedicated channels, up
 
 ## The engine underneath
 
-All of the above runs on **[Cozystack](/products/cozystack/)** — the open-source cloud platform Aenix created and maintains, and a CNCF project (Sandbox since February 2025; Incubating expected late summer 2026). Apache 2.0, no per-CPU or per-core fees.
+All of the above runs on **[Cozystack](/products/cozystack/)** — the open-source cloud platform Ænix created and maintains, and a CNCF project (Sandbox since February 2025; Incubating expected late summer 2026). Apache 2.0, no per-CPU or per-core fees.
 
 That matters commercially, not just philosophically: the engine is not ours to withdraw. If the commercial relationship ends you keep running the platform on the same hardware, and the exit path is documented rather than hypothetical.
 

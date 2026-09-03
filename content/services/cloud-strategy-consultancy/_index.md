@@ -35,7 +35,7 @@ faq:
     a: "Cozystack, an Apache 2.0 CNCF project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium (eBPF) networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. There is no per-CPU or per-core licensing."
 ---
 
-**Cloud strategy is a question architects and senior engineers can answer better than management consultants. Aenix runs cloud strategy engagements as part of the same Platform Readiness Assessment that delivers actionable architecture — written report with named workloads, costs, and timelines, not a 200-page transformation plan.**
+**Cloud strategy is a question architects and senior engineers can answer better than management consultants. Ænix runs cloud strategy engagements as part of the same Platform Readiness Assessment that delivers actionable architecture — written report with named workloads, costs, and timelines, not a 200-page transformation plan.**
 
 > **Pairs with:** all **[Ænix Platform editions](/products/)** — strategy outputs which edition fits your buyer profile and engagement scope.
 
@@ -65,7 +65,7 @@ faq:
 - **TCO honest model** — across substrates, with realistic assumptions
 - **Sovereignty / regulator gap** — where compliance shapes architecture
 - **Migration sequencing** — what moves first, what stays, what's hybrid
-- **Phase 2 implementation roadmap** — Aenix-deliverable build plan
+- **Phase 2 implementation roadmap** — Ænix-deliverable build plan
 
 The engagement runs as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with strategy-level emphasis. Output is a written executive report.
 
@@ -88,7 +88,7 @@ For specific triggers see **[cloud cost optimization](/solutions/cloud-cost-opti
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Cloud Strategy Consultancy — Engineers, Not Strategists | Aenix"
+<!-- SEO: title "Cloud Strategy Consultancy — Engineers, Not Strategists | Ænix"
 Word count: ~350. -->

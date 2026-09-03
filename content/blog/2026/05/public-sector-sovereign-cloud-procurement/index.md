@@ -160,7 +160,7 @@ non-optional telemetry channels that fail this criterion.
 ### 8. Operational independence under sovereign jurisdiction
 
 Provider personnel access logged and time-limited. Sovereign
-jurisdiction for the support entity (Aenix has AENIX s.r.o. in
+jurisdiction for the support entity (Ænix has AENIX s.r.o. in
 Czechia for EU contracts and AENIX INC in Delaware for US contracts).
 No cross-jurisdictional support routing for sovereignty-sensitive
 workloads.
@@ -174,13 +174,13 @@ simultaneously:
   vendor-neutral substrate. Customer can audit, modify, or replace
   the platform vendor.
 - **Customer-controlled keys** — External Secrets Operator backed by
-  customer HSM; Aenix never holds keys.
+  customer HSM; Ænix never holds keys.
 - **Air-gap support** — documented and used by classified-data and
   defence-adjacent customers.
 - **Self-hosted observability** — VictoriaMetrics + VictoriaLogs in
   jurisdiction; no SaaS-observability residency leak.
 - **Customer-controlled identity** — Keycloak / Active Directory /
-  national IdP integration; Aenix never holds production credentials.
+  national IdP integration; Ænix never holds production credentials.
 - **Multi-tenant Tenant CRD** — strong isolation per data class /
   business unit / sectoral overlay.
 - **Audit-isolated environments** — separate clusters for production,
@@ -189,7 +189,7 @@ simultaneously:
 
 The architectural pattern is the same; the certification work is
 framework-specific. For SecNumCloud-tier engagements, the customer
-typically engages a certified auditor; Aenix provides the architecture
+typically engages a certified auditor; Ænix provides the architecture
 and documentation deliverables, the customer runs the audit cycle.
 
 ## Procurement realities
@@ -202,22 +202,22 @@ that private-sector engagements are not. A few practical realities:
 Public-sector RFPs typically specify which frameworks must be
 satisfied (SecNumCloud High, BSI C5, EUCS Substantial, etc.). The
 response must demonstrate substantive compliance, not just intent.
-Aenix engagement model includes tender-response support, with named
+Ænix engagement model includes tender-response support, with named
 references from prior public-sector engagements where allowed.
 
 ### Multi-year framework agreements
 
 Many public-sector engagements run through framework agreements with
-specific compliance and exit clauses. Aenix's commercial entity
+specific compliance and exit clauses. Ænix's commercial entity
 (AENIX s.r.o. in Czechia for EU; AENIX INC in Delaware for US) is
 the contracting entity; engagement structure adapts to framework-
 agreement requirements.
 
-### Aenix is not a hyperscaler — that's the point
+### Ænix is not a hyperscaler — that's the point
 
 Several public-sector mandates explicitly require non-hyperscaler
-sovereign provision. Aenix's open-core model — customer hardware,
-customer keys, customer operational control, optional Aenix support
+sovereign provision. Ænix's open-core model — customer hardware,
+customer keys, customer operational control, optional Ænix support
 — fits these mandates structurally rather than via contractual
 workarounds.
 
@@ -244,14 +244,14 @@ identity integration, audit-isolated environments. 6-18 months.
 
 ### Phase 3 — Certification cycle
 
-Customer engages accredited auditor; Aenix provides architecture
-documentation, control mapping, evidence catalogue. Aenix engineers
+Customer engages accredited auditor; Ænix provides architecture
+documentation, control mapping, evidence catalogue. Ænix engineers
 participate in technical interviews with the auditor where allowed.
 Typical certification cycle: 6-12 months parallel to Phase 2.
 
 ### Phase 4 — Production operations
 
-Customer team operates the platform under Aenix advisory + Tier-3
+Customer team operates the platform under Ænix advisory + Tier-3
 SLA. Annual recertification cycle (most frameworks).
 
 Total timeline: 12-36 months from project start to certified
@@ -260,7 +260,7 @@ to certification overhead, but the certification value compounds —
 once certified, the platform retains certification with annual
 recertification rather than per-engagement.
 
-## Aenix's existing public-sector posture
+## Ænix's existing public-sector posture
 
 We currently operate within established EU and Central Asia
 public-sector procurement frameworks. Specific named engagements
@@ -268,7 +268,7 @@ remain confidential under procurement-confidentiality rules; named
 case studies in public sector typically follow a 3-5 year
 publication lag.
 
-What we will say publicly: Aenix has multi-year engagements with
+What we will say publicly: Ænix has multi-year engagements with
 Kazakhstan procurement-portal-listed sovereign cloud products, EU
 member-state regional digitalisation programmes, and tier-1 European
 defence-adjacent infrastructure. Concrete references available
@@ -314,7 +314,7 @@ Poor fit:
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. AENIX s.r.o. (Czechia) is the EU contracting
 entity; AENIX INC (Delaware) is the US contracting entity. Engineering
 teams across the EU and Central Asia.*

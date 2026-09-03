@@ -115,5 +115,5 @@ If a structured assessment helps clarify, see **[Platform Readiness Assessment](
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

@@ -58,7 +58,7 @@ That worked when "cloud strategy" meant "decide how much to put in AWS / Azure /
 - **Cost cliff and repatriation** — Broadcom's 2025 Private Cloud Outlook found 53% of organizations now prioritize private cloud for new workloads and 69% are evaluating repatriation. The LSEG Global Cloud Survey 2025 reported that 84% of financial services firms had adjusted their cloud strategy specifically because of regulatory developments.
 - **Developer self-service breakdown** — environments that take weeks to provision, IAM and networking done by hand, observability fragmented across vendors, multiple Kubernetes distributions nobody owns.
 
-A 2026-relevant cloud readiness assessment has to answer all four — without picking a hyperscaler answer first. The methodology below is what we run at Aenix.
+A 2026-relevant cloud readiness assessment has to answer all four — without picking a hyperscaler answer first. The methodology below is what we run at Ænix.
 
 ## Why we structure it as four parallel workstreams
 
@@ -222,7 +222,7 @@ It's a strong fit when:
 
 ## Want the short version?
 
-If you're evaluating an Aenix Platform Readiness Assessment specifically, the **[services landing page](/services/platform-readiness-assessment/)** has the same structure in a 5-minute read with pricing and a discovery-call form.
+If you're evaluating an Ænix Platform Readiness Assessment specifically, the **[services landing page](/services/platform-readiness-assessment/)** has the same structure in a 5-minute read with pricing and a discovery-call form.
 
 If your trigger is a specific regulator or cost pressure, the dedicated solutions pages go deeper:
 
@@ -234,5 +234,5 @@ If your trigger is a specific regulator or cost pressure, the dedicated solution
 
 ---
 
-*Aenix runs platform readiness assessments and platform engineering programs across the EU and Central Asia. We are the company behind Cozystack, a CNCF Project, Kubernetes Certified Distribution.*
+*Ænix runs platform readiness assessments and platform engineering programs across the EU and Central Asia. We are the company behind Cozystack, a CNCF Project, Kubernetes Certified Distribution.*
 

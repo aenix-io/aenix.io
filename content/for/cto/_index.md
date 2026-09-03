@@ -50,11 +50,11 @@ Take back cost and data-location control for the workloads that don't belong on 
 
 ---
 
-## Two ways Aenix helps you
+## Two ways Ænix helps you
 
 **1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) gives you a production cloud-in-a-box on Cozystack — multi-tenant, with managed databases, storage and observability — that your team operates with our SLA behind it.
 
-**2. Build / migrate with our team.** Cozystack is the framework; **Aenix is your outsourced engineering team** for a [cloud-repatriation](/solutions/cloud-repatriation/) or greenfield build — architecture, migration, and the [cost-optimization](/solutions/cloud-cost-optimization/) model, executed by the people who maintain the platform.
+**2. Build / migrate with our team.** Cozystack is the framework; **Ænix is your outsourced engineering team** for a [cloud-repatriation](/solutions/cloud-repatriation/) or greenfield build — architecture, migration, and the [cost-optimization](/solutions/cloud-cost-optimization/) model, executed by the people who maintain the platform.
 
 ---
 
@@ -70,10 +70,10 @@ Take back cost and data-location control for the workloads that don't belong on 
 
 ---
 
-## Why CTOs pick Aenix
+## Why CTOs pick Ænix
 
 - **Economics you can defend.** We model the TCO honestly, including the workloads that should stay in the cloud.
-- **Authors, not resellers.** Aenix maintains Cozystack; you get senior engineers, not a sales channel.
+- **Authors, not resellers.** Ænix maintains Cozystack; you get senior engineers, not a sales channel.
 - **Velocity preserved.** Developers still get self-service Kubernetes and databases — the platform doesn't slow the roadmap.
 
 ---
@@ -108,7 +108,7 @@ Free, no prep. We pressure-test the economics and tell you whether turnkey or a 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:

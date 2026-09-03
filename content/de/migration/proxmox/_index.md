@@ -35,7 +35,7 @@ faq:
     a: "VM-Images werden von KVM unter Proxmox auf KubeVirt unter Cozystack übertragen. Storage wandert von ZFS oder Ceph auf LINSTOR/DRBD. Das Berechtigungsmodell von Proxmox wird auf das Tenant-CRD-Modell von Cozystack abgebildet. VMs und Container laufen anschließend auf einer gemeinsamen Kubernetes-API."
   - q: "Wie lange dauert eine Proxmox-zu-Cozystack-Migration?"
     a: "Der produktisierte Installer bringt die Public Cloud Platform innerhalb von Wochen live. Die eigentliche Workload-Migration erfolgt in Kohorten über 3 bis 6 Monate für mittelgroße Estates, um Risiko und Ausfallzeiten zu begrenzen."
-  - q: "Welche Cozystack-Edition passt für Hosting-Anbieter, die Proxmox ablösen?"
+  - q: "Welche Ænix Plattform passt für Hosting-Anbieter, die Proxmox ablösen?"
     a: "Die Ænix Public Cloud Platform — eine turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds. Sie bietet WHMCS-integriertes Billing, ist Multi-Tenant by design und kommt mit produktisiertem Installer. Support ab 1.250 USD/Monat."
   - q: "Wie wird Cozystack lizenziert und welche Folgekosten gibt es?"
     a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Es gibt keine pro-Socket- oder pro-Core-Gebühren wie bei proprietären Virtualisierungs-Stacks. Aenix verkauft die produktisierte Ænix Platform plus Services in vier Tiers: Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise Custom."
@@ -43,7 +43,7 @@ faq:
     a: "Ja. Über reine Virtualisierung hinaus bietet Cozystack Managed Databases, S3-kompatiblen Object Storage und GPU-Workloads auf derselben Kubernetes-API. Genau dieser Service-Katalog jenseits von VMs ist häufig der Auslöser für einen Wechsel von Proxmox."
 ---
 
-**Proxmox VE ist exzellent at SMB-Skala. Wenn Deployments zu Multi-Tenant-Cloud-Buildern oder Service-Provider-Modellen wachsen, strapaziert das operative Modell. Aenix führt Proxmox-zu-Cozystack-Migrationen end-to-end durch.**
+**Proxmox VE ist exzellent at SMB-Skala. Wenn Deployments zu Multi-Tenant-Cloud-Buildern oder Service-Provider-Modellen wachsen, strapaziert das operative Modell. Ænix führt Proxmox-zu-Cozystack-Migrationen end-to-end durch.**
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
 
@@ -81,4 +81,4 @@ VM-Image-Migration: KVM (Proxmox) → KubeVirt (Cozystack). Storage: ZFS / Ceph 
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

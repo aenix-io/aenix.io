@@ -16,7 +16,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Ihre Cloud-Rechnung wächst mit dem Geschäft, der Lock-in zieht an, und „souverän" ist inzwischen Kundenanforderung. Als CTO wollen Sie Ökonomie und Kontrolle zurück, ohne die Roadmap zu bremsen. Aenix gibt Ihnen eine offene, Kubernetes-native Plattform für eigene oder gemietete Hardware — schlüsselfertig geliefert oder mit Ihnen gebaut, vom Team dahinter.**
+**Ihre Cloud-Rechnung wächst mit dem Geschäft, der Lock-in zieht an, und „souverän" ist inzwischen Kundenanforderung. Als CTO wollen Sie Ökonomie und Kontrolle zurück, ohne die Roadmap zu bremsen. Ænix gibt Ihnen eine offene, Kubernetes-native Plattform für eigene oder gemietete Hardware — schlüsselfertig geliefert oder mit Ihnen gebaut, vom Team dahinter.**
 
 > **Passt zu:** **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** und **[Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, **[Ænix Platform](/de/produkte/)**, auf Open-Source-**[Cozystack](https://cozystack.io)**.
 
@@ -48,11 +48,11 @@ Kosten und Datenort für die Workloads zurückholen, die nicht auf einen Hypersc
 
 ---
 
-## Zwei Wege mit Aenix
+## Zwei Wege mit Ænix
 
 **1. Schlüsselfertig betreiben.** Die [Ænix Platform](/de/produkte/) ist eine produktive Cloud-in-a-Box auf Cozystack — mandantenfähig, mit Managed Databases, Storage und Observability — die Ihr Team mit unserem SLA betreibt.
 
-**2. Mit unserem Team bauen/migrieren.** Cozystack ist das Framework, **Aenix Ihr ausgelagertes Engineering-Team** für eine [Cloud-Repatriation](/de/loesungen/cloud-repatriation/) oder einen Greenfield-Aufbau — Architektur, Migration und das [Kostenmodell](/de/loesungen/cloud-kostenoptimierung/), umgesetzt von den Leuten, die die Plattform pflegen.
+**2. Mit unserem Team bauen/migrieren.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Engineering-Team** für eine [Cloud-Repatriation](/de/loesungen/cloud-repatriation/) oder einen Greenfield-Aufbau — Architektur, Migration und das [Kostenmodell](/de/loesungen/cloud-kostenoptimierung/), umgesetzt von den Leuten, die die Plattform pflegen.
 
 ---
 
@@ -68,10 +68,10 @@ Kosten und Datenort für die Workloads zurückholen, die nicht auf einen Hypersc
 
 ---
 
-## Warum CTOs Aenix wählen
+## Warum CTOs Ænix wählen
 
 - **Belegbare Ökonomie.** Wir modellieren die TCO ehrlich — inklusive der Workloads, die in der Cloud bleiben sollten.
-- **Autoren, keine Reseller.** Aenix pflegt Cozystack; Sie bekommen Senior-Engineers, keinen Vertriebskanal.
+- **Autoren, keine Reseller.** Ænix pflegt Cozystack; Sie bekommen Senior-Engineers, keinen Vertriebskanal.
 - **Velocity bleibt.** Entwickler behalten Self-Service für Kubernetes und Datenbanken.
 
 ---
@@ -85,7 +85,7 @@ Nein. Selektiv: verlagern, wo Kosten oder Souveränität es rechtfertigen, den R
 Mit dem TCO-Modell auf Ihren realen Workloads im Erstgespräch.
 
 **Wir sind klein — geht das ohne Plattformteam?**
-Ja — schlüsselfertige Edition mit Support, oder wir betreiben sie in der Anlaufphase.
+Ja — schlüsselfertige Plattform mit Support, oder wir betreiben sie in der Anlaufphase.
 
 **Souverän genug für EU-Kunden?**
 Ihre Hardware, Ihre Jurisdiktion, Ihre Schlüssel, Cluster-Zugriff.
@@ -106,7 +106,7 @@ Kostenlos, ohne Vorbereitung. Wir prüfen die Ökonomie und sagen, ob schlüssel
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/cto/ ; hreflang de self, en → /for/cto/.

@@ -83,5 +83,5 @@ Geringerer Overhead als Prometheus + Loki im großen Maßstab.
 
 ---
 
-*Cozystack ist ein CNCF-Projekt. Aenix ist das Unternehmen dahinter.*
+*Cozystack ist ein CNCF-Projekt. Ænix ist das Unternehmen dahinter.*
 

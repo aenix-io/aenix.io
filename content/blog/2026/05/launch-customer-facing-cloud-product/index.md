@@ -89,9 +89,9 @@ Designed at hyperscaler scale; over-engineered for actual customer count. Operat
 ### Stumble 5: undifferentiated commodity offering
 Generic cloud product with no differentiation from hyperscaler. Customers default to AWS / Azure / GCP. Specialty / sovereignty / regional matters as differentiator.
 
-## Aenix engagement
+## Ænix engagement
 
-Aenix has built customer-facing cloud products end-to-end on Cozystack, including for regional telecom operators. The engagement structure:
+Ænix has built customer-facing cloud products end-to-end on Cozystack, including for regional telecom operators. The engagement structure:
 
 - **Discovery + product-readiness assessment** (4-8 weeks)
 - **Phase 2 build** (6-18 months) — platform + portal + billing + operations workflows + first cohort onboarding
@@ -101,5 +101,5 @@ For details see **[public cloud builder services page](/services/public-cloud-bu
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

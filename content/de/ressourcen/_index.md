@@ -5,7 +5,7 @@ hero_subtitle: "Kostenlose Checklisten, TCO-Worksheets und Decision Guides"
 language: "de"
 ---
 
-**Kostenlose herunterladbare Assets — Checklisten, Decision Guides, TCO-Worksheets, Maturity Assessments. Die gleichen Frameworks, die Aenix bei bezahlten Engagements verwendet, kostenlos zur Selbsteinschätzung Ihres Teams.**
+**Kostenlose herunterladbare Assets — Checklisten, Decision Guides, TCO-Worksheets, Maturity Assessments. Die gleichen Frameworks, die Ænix bei bezahlten Engagements verwendet, kostenlos zur Selbsteinschätzung Ihres Teams.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -57,7 +57,7 @@ language: "de"
 4. **Lücken identifizieren** — Findings in ein Backlog konvertieren
 5. **Optionaler nächster Schritt:** Discovery-Call oder Platform Readiness Assessment
 
-Die Ressourcen stehen für sich — keine Aenix-Engagement erforderlich. Sie sind nützlich, auch wenn Sie sich entscheiden, nicht mit uns zu engagieren.
+Die Ressourcen stehen für sich — keine Ænix-Engagement erforderlich. Sie sind nützlich, auch wenn Sie sich entscheiden, nicht mit uns zu engagieren.
 
 ---
 

@@ -38,7 +38,7 @@ faq:
     a: "Die Ænix Public Cloud Platform startet bei einem Support-Tier von rund 1.250 $/Monat für 10 Nodes (Basic). Weitere Stufen: Standard 3.000 $, Plus 5.500 $ und Enterprise nach Vereinbarung."
 ---
 
-**Managed Service Provider (MSPs) werden 2026 von Enterprise-Kunden nach Cloud-Fähigkeiten gefragt, die die MSP-Managed-Service-Beziehung mit Fähigkeiten der Hyperscaler-Klasse kombinieren. Dies von Grund auf zu bauen ist nicht trivial. Eine Cozystack-basierte Plattform mit White-Label-Branding ist der realistische Pfad — und das, was Aenix liefert.**
+**Managed Service Provider (MSPs) werden 2026 von Enterprise-Kunden nach Cloud-Fähigkeiten gefragt, die die MSP-Managed-Service-Beziehung mit Fähigkeiten der Hyperscaler-Klasse kombinieren. Dies von Grund auf zu bauen ist nicht trivial. Eine Cozystack-basierte Plattform mit White-Label-Branding ist der realistische Pfad — und das, was Ænix liefert.**
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell, WHMCS-integriertes Billing, ab 1.250 USD/Monat Support-Tier. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
@@ -62,14 +62,14 @@ faq:
 ## Wofür MSPs zu uns kommen
 
 - **White-Label-Cloud-Plattform** — Ihre Marke, Ihre Kunden
-- **Multi-Tier-Reseller-Modell** — Aenix-Tenant → MSP-Tenant → MSP-Kunden-Tenant
+- **Multi-Tier-Reseller-Modell** — Ænix-Tenant → MSP-Tenant → MSP-Kunden-Tenant
 - **WHMCS-integriertes Billing** — produktionsreif, zwei Modi
 - **Operations-Workflow** — Kundensupport, SLA-Management, Observability
 - **Souveränitäts-Positionierung** — für MSPs, die regulierte Branchen bedienen
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Aenix-Tenant</b></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Tenant</b></div>
 <div class="diagram__conn">verschachtelt</div>
 <div class="diagram__node"><b>MSP-Tenant</b><div class="diagram__chips"><span>Gebrandetes cozyportal</span><span>WHMCS-integriertes Billing</span></div></div>
 <div class="diagram__conn">rechnet ab</div>
@@ -106,4 +106,4 @@ Für das vollständige Engagement siehe **[White-Label-Cloud-Services](/de/diens
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*

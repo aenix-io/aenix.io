@@ -80,7 +80,7 @@ If you're already deeply on Red Hat / OpenShift, the alternative analysis usuall
 | **Operational footprint** | OpenShift (broad) | Cozystack (focused) |
 | **Vendor relationship** | Red Hat / IBM | None (open source) |
 | **Cost model** | Per-CPU subscription | Free + optional support tier |
-| **Support** | Red Hat | Aenix or community |
+| **Support** | Red Hat | Ænix or community |
 
 Both KubeVirt-based, so the underlying VM model is similar. The differences are around licensing, operational footprint, and vendor relationship.
 
@@ -105,7 +105,7 @@ Both KubeVirt-based, so the underlying VM model is similar. The differences are 
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "OpenShift Alternative — Open Source Without Red Hat Subscription | Aenix"
+<!-- SEO: title "OpenShift Alternative — Open Source Without Red Hat Subscription | Ænix"
 Word count: ~500. -->

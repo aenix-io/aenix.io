@@ -120,13 +120,13 @@ A sovereign cloud product takes longer to build than a non-sovereign cloud:
 
 Total elapsed: 12-30 months from project start to first customer GA, depending on certification scope.
 
-## Aenix engagement
+## Ænix engagement
 
-Aenix builds sovereign cloud products end-to-end. EU + Central Asia teams. Open-source foundation. Procurement-ready documentation.
+Ænix builds sovereign cloud products end-to-end. EU + Central Asia teams. Open-source foundation. Procurement-ready documentation.
 
 For details see **[sovereign cloud builder services page](/services/sovereign-cloud-builder)**.
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 

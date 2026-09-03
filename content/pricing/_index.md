@@ -18,8 +18,8 @@ language: "en"
 
 Ænix Platform pricing has two dimensions:
 
-- **Edition** — which feature bundle you buy. Determined by your buyer profile (hosting provider, regulated enterprise, public-cloud operator, product engineering team, or AI-heavy organization).
-- **Support tier** — how Aenix supports you. Four tiers from Basic ($1,250/mo per 10 nodes) to Enterprise (per RFP).
+- **Plattform** — which feature bundle you buy. Determined by your buyer profile (hosting provider, regulated enterprise, public-cloud operator, product engineering team, or AI-heavy organization).
+- **Support tier** — how Ænix supports you. Four tiers from Basic ($1,250/mo per 10 nodes) to Enterprise (per RFP).
 
 Plus engagement add-ons (Platform Readiness Assessment, Pilot, Full Build, Managed Operations) scoped separately.
 
@@ -27,13 +27,13 @@ Plus engagement add-ons (Platform Readiness Assessment, Pilot, Full Build, Manag
 
 ---
 
-## Step 1 — Pick an Edition
+## Step 1 — Pick an Plattform
 
 {{< design-note >}}
 Render as 5-card grid (or carousel on mobile). Each card: edition icon, name, audience one-liner, "Explore →" link to dedicated edition page.
 {{< /design-note >}}
 
-| Edition | For | How it is priced |
+| Plattform | For | How it is priced |
 |---|---|---|
 | **Public Cloud Platform** | Hosting providers, MSPs, regional clouds and data centres selling cloud to customers | Productized — published price list, from $1,250 / month per 10 nodes |
 | **Public Cloud Platform, operator scale** | Telcos, national operators, banks and large public clouds running a commercial cloud | Multi-year programme, quoted per RFP |
@@ -74,7 +74,7 @@ Notes on the table: incidents related to installation support do not count towar
 
 3-6 month project on a defined slice (one workload class, one customer cohort, one site). Quoted per RFP once the slice is defined.
 
-### Full Edition build
+### Full platform build
 
 9-18 months for Public Cloud / Enterprise / IDP / AI/ML deployments. Weeks-to-live for Public Cloud Platform with productized installer. Quoted per RFP; the drivers are estate size, migration volume, regulatory scope and how much of the operating model you want us to run.
 
@@ -101,7 +101,7 @@ Three calculators, each with its own model and its own sources. Every price carr
 
 ## Public sector / government procurement
 
-For governments and sovereign cloud consortia, Aenix engages through public-sector procurement processes (RFI / RFP). AENIX s.r.o. (Czechia) handles EU procurement; AENIX INC (Delaware) handles US procurement. Multi-year programmes are priced through the procurement process itself.
+For governments and sovereign cloud consortia, Ænix engages through public-sector procurement processes (RFI / RFP). AENIX s.r.o. (Czechia) handles EU procurement; AENIX INC (Delaware) handles US procurement. Multi-year programmes are priced through the procurement process itself.
 
 [Sovereign Cloud Builder service →](/services/sovereign-cloud-builder/)
 
@@ -123,11 +123,11 @@ Up to **40% margin** on Ænix Platform sales for resellers, integrators, and dis
 
 ### Is Cozystack free?
 
-Yes. Cozystack is open-source under Apache 2.0. No per-CPU, per-VM, or per-core licensing. Anyone can run it. Aenix is the original maintainer.
+Yes. Cozystack is open-source under Apache 2.0. No per-CPU, per-VM, or per-core licensing. Anyone can run it. Ænix is the original maintainer.
 
-### How does Edition × Support Tier pricing work?
+### How does Plattform × Support Tier pricing work?
 
-Edition determines the feature bundle (which Ænix Platform you buy — ISP, Enterprise, etc.). Support Tier determines the level of Aenix support (Basic, Standard, Plus, Enterprise). Both apply to your engagement. Discovery call clarifies the right combination for your scope.
+Plattform determines the feature bundle (which Ænix Platform you buy — ISP, Enterprise, etc.). Support Tier determines the level of Ænix support (Basic, Standard, Plus, Enterprise). Both apply to your engagement. Discovery call clarifies the right combination for your scope.
 
 ### What's the cheapest way to start with Ænix Platform?
 

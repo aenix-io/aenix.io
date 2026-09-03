@@ -159,9 +159,9 @@ A private cloud at year 2 is a different platform from a private cloud at day 90
 
 ## How to start
 
-If you fit the profile, the structured next step is a focused assessment. Aenix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**. For details see the **[build private cloud services page](/services/build-private-cloud)**.
+If you fit the profile, the structured next step is a focused assessment. Ænix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**. For details see the **[build private cloud services page](/services/build-private-cloud)**.
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 

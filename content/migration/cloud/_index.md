@@ -55,11 +55,11 @@ service:
   audience: "Enterprises and service providers"
 ---
 
-**Cloud migration in 2026 is a workload-placement decision, not a race to public cloud. Aenix runs structured cloud migrations — public-cloud repatriation, VMware exit, and greenfield private-cloud builds — where the destination is chosen from the workload, not assumed up front.**
+**Cloud migration in 2026 is a workload-placement decision, not a race to public cloud. Ænix runs structured cloud migrations — public-cloud repatriation, VMware exit, and greenfield private-cloud builds — where the destination is chosen from the workload, not assumed up front.**
 
 The team that ships your migration is the same team behind [Cozystack](/products/cozystack/) — the open-source platform most private-cloud migrations land on. We work alongside your engineers for assessment, sequencing, and implementation.
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/)** — the destination depends on the buyer profile and migration pattern. Hosting providers exiting a shared cloud stack land on the Public Cloud Platform; regulated enterprises on the Private Cloud Platform; large operators on the Public Cloud Platform; product-engineering teams on the Developer Self-Service; AI-heavy estates on the AI Platform.
+> **Pairs with:** one of the **[Ænix platforms](/products/)** — the destination follows the buyer profile. Organizations that sell cloud to external customers (hosters, MSPs, telcos, national operators) land on the **[Public Cloud Platform](/products/public-cloud-platform/)**; regulated organizations running cloud for their own developers land on the **[Private Cloud Platform](/products/private-cloud-platform/)**, whose developer self-service layer replaces the internal PaaS; GPU and inference estates land on the **[AI Platform](/products/ai-platform/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -85,7 +85,7 @@ If two or more of these apply, a structured migration compounds the benefit. If 
 
 ---
 
-## How Aenix engages on a cloud migration
+## How Ænix engages on a cloud migration
 
 The engagement is deliberately staged so you commit incrementally, with a decision gate before the expensive phase.
 
@@ -106,7 +106,7 @@ The engagement is deliberately staged so you commit incrementally, with a decisi
   <div class="engagement-step">
     <div class="engagement-step__number">3</div>
     <h3 class="engagement-step__title">Build and migrate (3–18 months)</h3>
-    <p class="engagement-step__body">Aenix engineers integrated with your team, migrating workloads cohort by cohort, with knowledge transfer throughout. Operations can stay in-house or continue as a managed engagement.</p>
+    <p class="engagement-step__body">Ænix engineers integrated with your team, migrating workloads cohort by cohort, with knowledge transfer throughout. Operations can stay in-house or continue as a managed engagement.</p>
   </div>
 
 </div>
@@ -117,7 +117,7 @@ The assessment sorts every workload against two axes: how well it fits a private
 
 ### What to keep where it is
 
-An honest migration plan leaves workloads alone when moving them adds risk without return. Bursty, unpredictable workloads often belong in public cloud where elasticity is cheap. Managed services with no on-premises equivalent may not be worth rebuilding. Applications mid-rewrite should wait for the new architecture rather than migrate twice. Aenix has no hyperscaler partner economics and no incentive to over-migrate, so "keep it where it is" is a recommendation we make without hesitation when the numbers support it.
+An honest migration plan leaves workloads alone when moving them adds risk without return. Bursty, unpredictable workloads often belong in public cloud where elasticity is cheap. Managed services with no on-premises equivalent may not be worth rebuilding. Applications mid-rewrite should wait for the new architecture rather than migrate twice. Ænix has no hyperscaler partner economics and no incentive to over-migrate, so "keep it where it is" is a recommendation we make without hesitation when the numbers support it.
 
 ---
 
@@ -180,4 +180,4 @@ For a worked example of a mixed-placement outcome, see the **[multi-cloud academ
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*

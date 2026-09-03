@@ -64,7 +64,7 @@ See **[Proxmox alternative](/alternatives/proxmox-alternative)** for migration g
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Cozystack vs Proxmox VE — Head-to-Head Comparison | Aenix"
+<!-- SEO: title "Cozystack vs Proxmox VE — Head-to-Head Comparison | Ænix"
 Word count: ~250. -->

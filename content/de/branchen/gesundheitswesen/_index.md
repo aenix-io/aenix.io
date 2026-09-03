@@ -61,7 +61,7 @@ faq:
 
 # Souveräne Cloud fürs Gesundheitswesen
 
-**Krankenhäuser, Krankenversicherer, Diagnostiklabore und Medizin-KI-Teams verarbeiten die sensibelsten personenbezogenen Daten der Wirtschaft unter zwei harten Vorgaben: den GDPR-Pflichten für besondere Datenkategorien und den NIS2-Pflichten für wesentliche Einrichtungen. Die architektonische Antwort ist nicht "ein Gesundheits-SaaS in fremder Cloud" — sondern eine souveräne Plattform, in der Datenresidenz, Schlüsselhoheit und Audit-Trails strukturell verankert sind. Aenix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/) und lässt produktive Gesundheits-Workloads auf eigener Hardware des Leistungserbringers laufen.**
+**Krankenhäuser, Krankenversicherer, Diagnostiklabore und Medizin-KI-Teams verarbeiten die sensibelsten personenbezogenen Daten der Wirtschaft unter zwei harten Vorgaben: den GDPR-Pflichten für besondere Datenkategorien und den NIS2-Pflichten für wesentliche Einrichtungen. Die architektonische Antwort ist nicht "ein Gesundheits-SaaS in fremder Cloud" — sondern eine souveräne Plattform, in der Datenresidenz, Schlüsselhoheit und Audit-Trails strukturell verankert sind. Ænix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/) und lässt produktive Gesundheits-Workloads auf eigener Hardware des Leistungserbringers laufen.**
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für das regulierte Cloud-Fundament; **[AI Platform](/de/produkte/ai-platform/)** für medizinische Bildgebung, klinisches NLP und Entscheidungsunterstützung auf Patientendaten. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
 
@@ -115,7 +115,7 @@ Gesundheitsdaten sind die reibungsintensivste Datenklasse im europäischen Recht
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wie Aenix mit Gesundheitsorganisationen arbeitet
+## Wie Ænix mit Gesundheitsorganisationen arbeitet
 
 Das Standardprojekt läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit für den Gesundheitskontext gewichteten Arbeitssträngen:
 
@@ -142,4 +142,4 @@ Wir veröffentlichen keine namentlichen Gesundheitskunden — Gesundheitsprojekt
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet im Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert Cozystack als Ænix Platform, verfügbar in drei Plattformen: Public Cloud, ISP, Enterprise, IDP und AI/ML.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert Cozystack als Ænix Platform, verfügbar in drei Plattformen: Public Cloud, ISP, Enterprise, IDP und AI/ML.*

@@ -47,7 +47,7 @@ quiz:
 
 **Cloud repatriation is no longer a contrarian position. The Broadcom Private Cloud Outlook 2025 reports that 69% of organizations are evaluating repatriation and 53% now prioritize private cloud for new workloads. This is the practical playbook for the reverse cloud migration — what to evaluate, what to build, what to move first, and where most teams get it wrong. It's the long-form companion to our [cloud repatriation services page](/solutions/cloud-repatriation/), where the engagement that runs this work is described.**
 
-Most coverage of cloud repatriation is either ideological ("public cloud was always too expensive") or vendor-led ("buy our private-cloud appliance"). Neither helps the platform engineer or infrastructure lead who has to translate a board-level decision into running systems. The work below is what we actually do during an Aenix repatriation engagement.
+Most coverage of cloud repatriation is either ideological ("public cloud was always too expensive") or vendor-led ("buy our private-cloud appliance"). Neither helps the platform engineer or infrastructure lead who has to translate a board-level decision into running systems. The work below is what we actually do during an Ænix repatriation engagement.
 
 ## Why repatriation is happening now
 
@@ -200,7 +200,7 @@ Repatriation is the wrong answer when:
 - Your platform-engineering capacity is already stretched beyond capacity. Adding repatriation to an under-resourced team makes both worse.
 - Your renewal cycle is at year 1 of a 5-year commitment with steep penalties. Wait for commitment expirations.
 
-A good repatriation engagement is honest about these cases. The Aenix engagement specifically does not push repatriation when staying in cloud is the right answer.
+A good repatriation engagement is honest about these cases. The Ænix engagement specifically does not push repatriation when staying in cloud is the right answer.
 
 ## What about hybrid?
 
@@ -216,7 +216,7 @@ The hybrid pattern that fits depends on the trigger that drove repatriation — 
 
 A typical repatriation, end-to-end:
 
-- **2-4 weeks:** assessment phase (Aenix Platform Readiness Assessment with cost-and-cloud-spend workstream emphasis).
+- **2-4 weeks:** assessment phase (Ænix Platform Readiness Assessment with cost-and-cloud-spend workstream emphasis).
 - **2-4 months:** destination platform build. Greenfield infrastructure, base services, observability, identity, IaC and GitOps tooling, runbooks.
 - **6-18 months:** workload migration in cohorts. Earliest cohorts move quickly; later cohorts respect commitment ladders.
 - **Ongoing:** platform operation and continuous optimization. The post-repatriation platform is a long-term asset that compounds value.
@@ -227,7 +227,7 @@ For an organization with 100 VMs and a moderate cloud bill, total elapsed time f
 
 If repatriation is on the table for your organization, the structured next step is a focused assessment. The output is honest enough to support a board-level decision either way: repatriate (with a plan), don't repatriate (with the reasons), or selective repatriation (with the workload list).
 
-Aenix runs this as a 14- or 28-day **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with the cost-and-cloud-spend workstream emphasized. See the **[cloud repatriation services page](/solutions/cloud-repatriation/)** for the engagement details.
+Ænix runs this as a 14- or 28-day **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with the cost-and-cloud-spend workstream emphasized. See the **[cloud repatriation services page](/solutions/cloud-repatriation/)** for the engagement details.
 
 ---
 
@@ -240,5 +240,5 @@ Aenix runs this as a 14- or 28-day **[Platform Readiness Assessment](/services/p
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-repatriation engagements and platform engineering programs across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-repatriation engagements and platform engineering programs across the EU, DACH, and Central Asia.*
 

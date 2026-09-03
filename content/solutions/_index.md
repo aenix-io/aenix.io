@@ -5,7 +5,7 @@ hero_subtitle: "Start from the problem that brought you here"
 language: "en"
 ---
 
-**Aenix builds and runs cloud platforms on hardware you control — for organisations that need real cloud infrastructure without a hyperscaler underneath it. People arrive here for one of six reasons: a regulator (DORA, NIS2), a sovereignty requirement, an AI workload that cannot leave the building, a cloud bill that stopped making sense, a VMware renewal, or developers waiting weeks for an environment. Pick the one that matches, and the page tells you the architecture, the edition it maps to and what an engagement looks like.**
+**Ænix builds and runs cloud platforms on hardware you control — for organisations that need real cloud infrastructure without a hyperscaler underneath it. People arrive here for one of six reasons: a regulator (DORA, NIS2), a sovereignty requirement, an AI workload that cannot leave the building, a cloud bill that stopped making sense, a VMware renewal, or developers waiting weeks for an environment. Pick the one that matches, and the page tells you the architecture, the edition it maps to and what an engagement looks like.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -48,7 +48,7 @@ language: "en"
 
 1. **Find your trigger** above — the reason your team is looking at platform engagement
 2. **Jump to the solution page** — read what we deliver and how
-3. **Check the matched Edition** — confirm which Ænix Platform Edition fits your scope
+3. **Check the matched platform** — confirm which Ænix platform fits your scope
 4. **Book a discovery call** — 30 min, free, no commitment
 
 <div class="arch-section__fig">
@@ -57,7 +57,7 @@ language: "en"
 <div class="diagram__conn">maps to</div>
 <div class="diagram__node diagram__node--brand"><b>Ænix Platform solution</b><div class="diagram__chips"><span>DORA / NIS2</span><span>Sovereign AI</span><span>Cloud repatriation</span><span>Developer self-service</span></div></div>
 <div class="diagram__conn">scoped as</div>
-<div class="diagram__node"><b>Matched Edition</b><div class="diagram__chips"><span>Enterprise</span><span>AI/ML</span><span>Public Cloud</span><span>IDP</span><span>ISP</span></div></div>
+<div class="diagram__node"><b>Matched platform</b><div class="diagram__chips"><span>Enterprise</span><span>AI/ML</span><span>Public Cloud</span><span>IDP</span><span>ISP</span></div></div>
 </div>
 </div>
 

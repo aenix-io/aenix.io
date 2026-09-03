@@ -154,7 +154,7 @@ paths, plus an embedding model for RAG. Fine-tuning happens for
 domain-specific accuracy needs.
 
 AI Platform pre-deploys curated open-weight models in the cluster
-registry. Customer can add others; Aenix engagement covers compatibility
+registry. Customer can add others; Ænix engagement covers compatibility
 testing.
 
 ### Layer 5 — Application layer
@@ -278,12 +278,12 @@ Poor fit:
 
 - **Discovery call** (30 min, free)
 - **Sovereign AI architecture review** (1-2 weeks, fixed-price) —
-  using the [Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/) framework plus Aenix experience
+  using the [Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/) framework plus Ænix experience
 - **Pilot engagement** (3-6 months) — defined slice: one workload
   class, one tenant, one model family
 - **Full AI Platform build** (6-12 months) — production AI
   infrastructure with all targeted workload types
-- **Managed retainer** (ongoing) — Aenix runs the AI platform under
+- **Managed retainer** (ongoing) — Ænix runs the AI platform under
   SLA
 
 Engagement size: Project plus managed retainer, quoted per RFP.
@@ -305,7 +305,7 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. Cozystack was included in the CNCF CNAI Landscape
 in May 2025. Our AI Platform engagements are NDA-protected; anonymized
 phrasing pattern is "Sovereign AI infrastructure for regulated

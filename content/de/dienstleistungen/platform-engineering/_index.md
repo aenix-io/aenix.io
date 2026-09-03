@@ -34,7 +34,7 @@ faq:
     a: "Wenn mehrere Produkt-Teams überlappende Infrastruktur-Bedürfnisse haben, Time-to-Environment Wochen statt Stunden dauert, die DevOps/SRE-Funktion mit Operations überlastet ist, oder Compliance-, Souveränitäts- und Kostendruck eine Vorstand-Plattform-Entscheidung erzwingt."
   - q: "Wie schnell liefert ein Platform Readiness Assessment Ergebnisse?"
     a: "Das Assessment dauert 14-28 Tage und endet mit einer schriftlichen Bewertung des aktuellen Reifegrads plus einem konkreten Phase-2-Plan. Ein kostenloses Platform Engineering Maturity Assessment steht als Selbsteinschätzung vorab zur Verfügung."
-  - q: "Welche Ænix-Platform-Edition passt zu Platform Engineering?"
+  - q: "Welche Ænix-Plattform passt zu Platform Engineering?"
     a: "Die Developer Self-Service richtet sich an Produkt- und SaaS-Engineering-Teams, die Self-Service-Plattformen brauchen. Die Private Cloud Platform adressiert regulierte Unternehmen, die interne Plattformen unter Compliance- und Souveränitätsanforderungen aufbauen."
 ---
 
@@ -42,7 +42,7 @@ faq:
 
 **Platform Engineering ist keine Diskussion mehr; es ist eine operative Schicht, die reife Engineering-Organisationen heute als Kerninfrastruktur behandeln. Die Frage ist nicht, ob man investiert, sondern ob man die Funktion in-house langsam aufbaut, eine Beratung engagiert, die an Junior-Implementierer übergibt, oder mit Engineers arbeitet, die bereits Multi-Tenant-Plattformen in Produktion betrieben haben.**
 
-Aenix ist das Platform-Engineering-Team hinter [Cozystack](/de/produkte/cozystack/), einem CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Wir erweitern unser Team in Ihres — bauen, betreiben oder beschleunigen die interne Entwickler-Plattform, die Ihre Organisation tatsächlich braucht.
+Ænix ist das Platform-Engineering-Team hinter [Cozystack](/de/produkte/cozystack/), einem CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Wir erweitern unser Team in Ihres — bauen, betreiben oder beschleunigen die interne Entwickler-Plattform, die Ihre Organisation tatsächlich braucht.
 
 > **Passt zu:** **[the developer self-service layer of Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für Produkt- / SaaS-Engineering-Teams; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die interne Plattformen aufbauen. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
@@ -83,7 +83,7 @@ Wenn drei oder mehr zutreffen, ist strukturiertes Platform Engineering der Hebel
 
 <!-- BLOCK 3: WHAT WE BUILD -->
 
-## Was ein Aenix-Platform-Engineering-Engagement produziert
+## Was ein Ænix-Platform-Engineering-Engagement produziert
 
 <div class="grid-2x2">
 
@@ -97,7 +97,7 @@ Tenant-CRD-Modell, per-Tenant-Quotas, RBAC, Observability-Scope und Audit-Trails
 Dokumentierte Platform-Team-Verantwortlichkeiten, On-Call-Patterns, Incident-Response, Capacity-Planning. Die Plattform überlebt Engineer-Fluktuation.
 
 **4. Enablement Ihres Teams**
-Pair Programming, Knowledge-Transfer, Runbook-Erstellung mit benannten Ownern. Die Aenix-Engineers gehen; Ihr Team betreibt die Plattform.
+Pair Programming, Knowledge-Transfer, Runbook-Erstellung mit benannten Ownern. Die Ænix-Engineers gehen; Ihr Team betreibt die Plattform.
 
 </div>
 
@@ -105,7 +105,7 @@ Das Ergebnis ist eine Plattform, die tatsächlich gebaut und in Produktion mit r
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Aenix-Engineers</b></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Engineers</b></div>
 <div class="diagram__conn">bauen</div>
 <div class="diagram__node"><b>Interne Entwickler-Plattform</b></div>
 <div class="diagram__conn">bedient</div>
@@ -151,13 +151,13 @@ Diese Fehlermodi sind vorhersehbar und vermeidbar — die Engagement-Struktur ve
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## Wie Aenix arbeitet
+## Wie Ænix arbeitet
 
 Das Engagement läuft in drei Modi, skaliert auf Ihren Stand:
 
 - **Platform Readiness Assessment (14-28 Tage)** — schriftliche Bewertung des Ist-Zustands und empfohlene Ziel-Architektur. Ergebnis: ein Plan, den Sie intern oder mit uns umsetzen können. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
-- **Platform-Build-Engagement (3-12 Monate)** — Aenix-Engineers integriert mit Ihrem Plattform-Team, Aufbau der Foundation, der Golden Paths und des operativen Modells. Der Knowledge-Transfer ist durchgängig strukturiert; Ihr Team besitzt am Ende den Betrieb.
-- **Managed-Platform-Service** — für Organisationen, die die Plattform brauchen, aber keine interne Kapazität aufbauen können. Aenix betreibt die Plattform unter einer Managed-Services-Vereinbarung, mit dokumentiertem Exit-Pfad zum In-house-Betrieb.
+- **Platform-Build-Engagement (3-12 Monate)** — Ænix-Engineers integriert mit Ihrem Plattform-Team, Aufbau der Foundation, der Golden Paths und des operativen Modells. Der Knowledge-Transfer ist durchgängig strukturiert; Ihr Team besitzt am Ende den Betrieb.
+- **Managed-Platform-Service** — für Organisationen, die die Plattform brauchen, aber keine interne Kapazität aufbauen können. Ænix betreibt die Plattform unter einer Managed-Services-Vereinbarung, mit dokumentiertem Exit-Pfad zum In-house-Betrieb.
 
 Die meisten Engagements beginnen mit dem Assessment. Die Entscheidung zwischen Option 2 und 3 wird durch den Headcount-und-Kapazität-Workstream des Assessments informiert.
 
@@ -167,7 +167,7 @@ Die meisten Engagements beginnen mit dem Assessment. Die Entscheidung zwischen O
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Wir betreiben Plattformen in Produktion.** Cozystack ist in Produktion mit Service Providern und regulierten Unternehmen. Die Entscheidungen in unseren Engagements sind gegen laufende Systeme kalibriert, nicht gegen Tooling-Reviews.
 - **Open-Source-Plattform-Foundation.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Die Plattform, die wir empfehlen, ist eine Plattform, die Sie besitzen. Kein Vendor-Roadmap-Lock-in.
@@ -269,6 +269,6 @@ Oder lesen Sie mehr:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Platform-Engineering-Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen, betreiben und beschleunigen Platform-Engineering-Programme in der EU, DACH und Zentralasien.*
+*Ænix ist das Platform-Engineering-Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen, betreiben und beschleunigen Platform-Engineering-Programme in der EU, DACH und Zentralasien.*
 
 <!-- /BLOCK 12 -->

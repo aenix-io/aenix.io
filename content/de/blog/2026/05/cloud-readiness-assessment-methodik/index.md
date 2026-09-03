@@ -82,5 +82,5 @@ Jeder hat einen benannten Eigentümer auf unserer Seite, ein definiertes Deliver
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

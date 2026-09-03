@@ -194,7 +194,7 @@ production incidents in Phase 3.
 
 CloudStack's billing hooks differ from Cozystack's. Providers running
 WHMCS-integrated CloudStack billing usually need WHMCS-integration
-work on the Cozystack side — Aenix provides this as part of the
+work on the Cozystack side — Ænix provides this as part of the
 engagement but it's specific per provider.
 
 ### 3. Customer self-service-API divergence
@@ -238,7 +238,7 @@ Poor fit:
   5-10 friendly customers migrated, billing workflows validated
 - **Customer-cohort migration** (6-18 months) — workload migration in
   cohorts, decommission of CloudStack in parallel
-- **Managed retainer** (optional, ongoing) — Aenix Tier-3 SLA
+- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
 
 Total elapsed time: 12-24 months from project start to CloudStack
 fully retired.
@@ -256,7 +256,7 @@ fully retired.
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. We have engagement experience with multiple
 hosting providers including CloudStack-based ones; specific named case
 studies remain confidential until customers publicly confirm.*

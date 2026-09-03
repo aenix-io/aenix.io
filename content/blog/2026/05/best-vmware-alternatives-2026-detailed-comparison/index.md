@@ -180,5 +180,5 @@ For migration assessment: **[Platform Readiness Assessment](/services/platform-r
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

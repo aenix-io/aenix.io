@@ -101,7 +101,7 @@ Standard **[Platform Readiness Assessment](/services/platform-readiness-assessme
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Enterprise Platform Engineering — Internal Platforms at Scale | Aenix"
+<!-- SEO: title "Enterprise Platform Engineering — Internal Platforms at Scale | Ænix"
 Word count: ~350. -->

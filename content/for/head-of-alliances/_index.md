@@ -17,9 +17,9 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Broadcom reshaped the VMware partner program — and your clients want what's next. Add an open, sovereign cloud line your team co-sells into every VMware account: up to 40% margin, deal protection. Resell it, or co-deliver with Aenix as the engineering team behind it.**
+**Broadcom reshaped the VMware partner program — and your clients want what's next. Add an open, sovereign cloud line your team co-sells into every VMware account: up to 40% margin, deal protection. Resell it, or co-deliver with Ænix as the engineering team behind it.**
 
-> **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/)** (three platforms plus two modules to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** the **[Ænix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/)** (three platforms plus two modules to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
@@ -51,9 +51,9 @@ Add a portfolio line that your sales team can take into every VMware renewal con
 
 ## Two ways your firm engages
 
-**1. Resell.** Sell [Ænix Platform](/products/) (Public Cloud / ISP / Enterprise / IDP / AI/ML) with up to 40% margin via the [Partner Program](/partners/): deal protection, sales kit, technical pre-sales, L3 support access, training.
+**1. Resell.** Sell [Ænix Platform](/products/) (Public Cloud / Private Cloud / AI) with up to 40% margin via the [Partner Program](/partners/): deal protection, sales kit, technical pre-sales, L3 support access, training.
 
-**2. Co-deliver.** For partners who deliver the build, Cozystack is the framework and **Aenix is the engineering bench** behind your team — [white-label cloud](/services/white-label-cloud/) and platform builds where you own the client and we provide the deep-tech capacity.
+**2. Co-deliver.** For partners who deliver the build, Cozystack is the framework and **Ænix is the engineering bench** behind your team — [white-label cloud](/services/white-label-cloud/) and platform builds where you own the client and we provide the deep-tech capacity.
 
 Either way the per-core license line your clients pay VMware turns into margin and recurring revenue for you.
 
@@ -68,11 +68,11 @@ Either way the per-core license line your clients pay VMware turns into margin a
 - **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026).
 - **Active partners include:** GoHost.kz, Hidora, QOSI, TECH EVOLVERS INC.
 
-[Source: [Aenix Partner Program](/partners/)]
+[Source: [Ænix Partner Program](/partners/)]
 
 ---
 
-## Why alliances leaders pick Aenix
+## Why alliances leaders pick Ænix
 
 - **A timely line.** The VMware-exit and sovereignty waves are live — this is what clients are asking for now.
 - **Protected economics.** Deal registration and up to 40% margin, plus recurring services revenue.
@@ -89,7 +89,7 @@ Up to 40% on Ænix Platform license + support, plus your own services and manage
 Yes — registered opportunities are reserved to the partner; no channel conflict.
 
 **Do we have to deliver the build ourselves?**
-No. Resell only, or co-deliver with Aenix as your engineering bench — your choice per deal.
+No. Resell only, or co-deliver with Ænix as your engineering bench — your choice per deal.
 
 **What do we sell, exactly?**
 Two editions — Provider and Enterprise — plus AI Platform and developer self-service layers, and services. See [Ænix Platform](/products/).
@@ -110,7 +110,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:

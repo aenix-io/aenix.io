@@ -84,5 +84,5 @@ For an assessment of where your organization stands across these disciplines, se
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

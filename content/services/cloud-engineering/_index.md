@@ -30,16 +30,16 @@ faq:
   - q: "What engagement options are available?"
     a: "Three modes: an architecture review (5-10 days), an implementation engagement (1-6 months), and a managed engagement for ongoing operations. Stand-alone engineering augmentation is available even if you are not yet evaluating Ænix Platform."
   - q: "Do I have to adopt Ænix Platform or Cozystack to use these services?"
-    a: "No. Cloud engineering is offered stand-alone across hyperscaler, hybrid, and on-prem stacks. When scope expands into a productized private cloud, the engagement can pair with an Ænix Platform Edition, which is built on the open-source Cozystack project."
+    a: "No. Cloud engineering is offered stand-alone across hyperscaler, hybrid, and on-prem stacks. When scope expands into a productized private cloud, the engagement can pair with an Ænix platform, which is built on the open-source Cozystack project."
   - q: "Can the engineering work address DORA and NIS2 compliance?"
     a: "Yes. Compliance posture for DORA, NIS2, and sectoral regulations is part of the standard scope, covering the architecture, automation, and operational controls these frameworks require."
   - q: "What technologies do the engineers work with?"
     a: "Infrastructure-as-code with Terraform, OpenTofu, Pulumi, and Crossplane; observability with VictoriaMetrics, Grafana, and OpenTelemetry; Kubernetes orchestration; and, where a private cloud is in scope, Cozystack (KubeVirt for VMs and containers, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy)."
 ---
 
-**"Cloud engineering" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Aenix engagement applies senior engineers — not consultants — to the cloud architecture, automation, and operations work your team needs.**
+**"Cloud engineering" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Ænix engagement applies senior engineers — not consultants — to the cloud architecture, automation, and operations work your team needs.**
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/)** when scope expands to a productized cloud platform. Stand-alone engineering augmentation also available for organizations not yet evaluating Ænix Platform.
+> **Pairs with:** any **[Ænix platform](/products/)** when scope expands to a productized cloud platform. Stand-alone engineering augmentation also available for organizations not yet evaluating Ænix Platform.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -93,7 +93,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "Cloud Engineering Services — Practical Engineering Across Stacks | Aenix"
+<!-- SEO: title "Cloud Engineering Services — Practical Engineering Across Stacks | Ænix"
 Word count: ~300. -->

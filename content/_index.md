@@ -74,7 +74,7 @@ If you came here because of one of these — start at the linked page; we can ta
     <div class="card-body">
       <div class="card-tag">Or — building from scratch</div>
       <h3 class="card-title">Stand up a new cloud on bare metal</h3>
-      <p class="card-description">Greenfield cloud-build engagement on hardware you own or lease — Aenix engineers design, deploy, and operate the platform with you, on the open-source Cozystack foundation. For hosting providers, regional clouds, sovereign cloud builders, internal developer platforms.</p>
+      <p class="card-description">Greenfield cloud-build engagement on hardware you own or lease — Ænix engineers design, deploy, and operate the platform with you, on the open-source Cozystack foundation. For hosting providers, regional clouds, sovereign cloud builders, internal developer platforms.</p>
       <span class="card-link">Build private cloud — service →</span>
     </div>
   </a>

@@ -17,7 +17,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Sie verantworten die VMware-Umgebung — und durch Broadcoms Lizenzänderungen ist die Verlängerung zur Vorstandszahl geworden. Der realistische Ausstieg ist eine offene, Kubernetes-native Plattform für VMs, Container, Storage und Netzwerk auf Ihrer eigenen Hardware, ohne Pro-Core-Lizenz. Aenix liefert sie auf zwei Wegen: als schlüsselfertiges Produkt, das Sie betreiben, oder als Engineering-Team, das sie mit Ihnen aufbaut.**
+**Sie verantworten die VMware-Umgebung — und durch Broadcoms Lizenzänderungen ist die Verlängerung zur Vorstandszahl geworden. Der realistische Ausstieg ist eine offene, Kubernetes-native Plattform für VMs, Container, Storage und Netzwerk auf Ihrer eigenen Hardware, ohne Pro-Core-Lizenz. Ænix liefert sie auf zwei Wegen: als schlüsselfertiges Produkt, das Sie betreiben, oder als Engineering-Team, das sie mit Ihnen aufbaut.**
 
 > **Passt zu:** **[Ænix Platform](/de/produkte/)** als schlüsselfertige Private Cloud — oder einem Aufbauprojekt nach Ihren Vorgaben. Offener Kern: **[Cozystack](https://cozystack.io)**, Apache 2.0.
 
@@ -50,11 +50,11 @@ Die Hypervisor-Schicht ablösen, ohne das Geschäft über Nacht neu zu plattform
 
 ---
 
-## Zwei Wege mit Aenix
+## Zwei Wege mit Ænix
 
 **1. Schlüsselfertig betreiben.** Die [Ænix Platform](/de/produkte/) ist Cloud-in-a-Box auf dem Open-Source-Kern Cozystack: VMs, Managed Kubernetes, Managed Databases, Object Storage, Observability, Mandantenfähigkeit — mit Enterprise-SLA. Sie betreiben, wir supporten.
 
-**2. Mit unserem Team aufbauen.** Wenn Sie eine auf Ihre Umgebung zugeschnittene Plattform wollen, ist Cozystack das Framework und **Aenix Ihr ausgelagertes Engineering-Team**: Architektur, [VMware-Migration](/de/migration/) und Aufbau einer Private Cloud, die Ihnen gehört. Das schließt die KubeVirt-/Kubernetes-Lücke ohne Einstellungszyklus.
+**2. Mit unserem Team aufbauen.** Wenn Sie eine auf Ihre Umgebung zugeschnittene Plattform wollen, ist Cozystack das Framework und **Ænix Ihr ausgelagertes Engineering-Team**: Architektur, [VMware-Migration](/de/migration/) und Aufbau einer Private Cloud, die Ihnen gehört. Das schließt die KubeVirt-/Kubernetes-Lücke ohne Einstellungszyklus.
 
 ---
 
@@ -71,9 +71,9 @@ Die Hypervisor-Schicht ablösen, ohne das Geschäft über Nacht neu zu plattform
 
 ---
 
-## Warum Infrastrukturleiter Aenix wählen
+## Warum Infrastrukturleiter Ænix wählen
 
-- **Wir sind das Team hinter der Plattform.** Aenix pflegt Cozystack — Sie bekommen die Autoren als Liefer- und Support-Partner, keinen Reseller.
+- **Wir sind das Team hinter der Plattform.** Ænix pflegt Cozystack — Sie bekommen die Autoren als Liefer- und Support-Partner, keinen Reseller.
 - **Keine Hyperscaler-Bindung.** Wir empfehlen und betreiben die Architektur, die Ihre Anforderung erfüllt — bis hin zu vollständig on-prem.
 - **EU-Engineering.** Souveränität ist strukturell: Ihre Hardware, Ihre Jurisdiktion, Ihr Cluster-Zugriff.
 
@@ -88,7 +88,7 @@ Ja. KubeVirt betreibt Ihre VMs neben Containern auf derselben Plattform — Sie 
 Nein. Cozystack ist ein einziges Kubernetes-natives Framework für VMs, Container, Managed Databases, Storage und Netzwerk — mandantenfähig und für Betreiber gebaut.
 
 **Wir haben kein Kubernetes-Team. Geht das trotzdem?**
-Ja — das ist das Aufbau-Modell: Aenix ist Ihre Engineering-Bank, baut die Plattform und befähigt Ihr Team.
+Ja — das ist das Aufbau-Modell: Ænix ist Ihre Engineering-Bank, baut die Plattform und befähigt Ihr Team.
 
 **Wie schnell sehen wir ein Ergebnis?**
 Das Erstgespräch grenzt einen risikoarmen ersten Workload ab; Piloten laufen meist in Wochen, die volle Migration über 9–18 Monate.
@@ -100,7 +100,7 @@ Die Pro-Core-Lizenz entfällt (Apache 2.0). Sie zahlen Support und/oder das Aufb
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir prüfen die Passung, sehen uns Ihre Umgebung an und sagen, ob die schlüsselfertige Edition oder das Aufbauprojekt passt.
+Kostenlos, ohne Vorbereitung. Wir prüfen die Passung, sehen uns Ihre Umgebung an und sagen, ob die schlüsselfertige Plattform oder das Aufbauprojekt passt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -109,7 +109,7 @@ Kostenlos, ohne Vorbereitung. Wir prüfen die Passung, sehen uns Ihre Umgebung a
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-infrastruktur/ ; hreflang de self, en → /for/head-of-infrastructure/, x-default → EN.

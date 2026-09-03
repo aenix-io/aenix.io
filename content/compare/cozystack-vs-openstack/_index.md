@@ -69,7 +69,7 @@ See **[OpenStack alternative](/alternatives/openstack-alternative)** for migrati
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Cozystack vs OpenStack — Head-to-Head Comparison | Aenix"
+<!-- SEO: title "Cozystack vs OpenStack — Head-to-Head Comparison | Ænix"
 Word count: ~250. -->

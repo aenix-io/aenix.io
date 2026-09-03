@@ -262,7 +262,7 @@ faq:
 <span class="ws-cert__kicker">Certificate of completion</span>
 <span class="ws-cert__title">Cozystack Certified Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">Cozystack · Aenix</span>
+<span class="ws-cert__by">Cozystack · Ænix</span>
 </div>
 </div>
 </div>
@@ -274,8 +274,8 @@ faq:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="ws-speaker-h">Your host</h2>
 <div class="ws-speaker__name">Timur Tukaev</div>
-<div class="ws-speaker__role">Cozystack maintainer · Aenix co-founder</div>
-<p class="ws-speaker__bio">Timur is a maintainer of the open Cozystack platform and a co-founder of Aenix, the company behind it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
+<div class="ws-speaker__role">Cozystack maintainer · Ænix co-founder</div>
+<p class="ws-speaker__bio">Timur is a maintainer of the open Cozystack platform and a co-founder of Ænix, the company behind it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
 </div>
 </div>
 </section>

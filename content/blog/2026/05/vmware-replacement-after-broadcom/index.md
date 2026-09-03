@@ -54,7 +54,7 @@ This article covers the parent topic — *VMware replacement* in the broad sense
 
 Cozystack is the open-source VMware alternative built for organizations that need a real production substitute — not a downgrade to community-grade tooling. It runs virtual machines, containers, managed databases, object storage, and GPU workloads on your own bare metal, under one Kubernetes-native control plane. CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices badge.
 
-Aenix is the company behind Cozystack. We build the platform, run production deployments for service providers and regulated enterprises, and provide the migration, support, and operations model that makes a VMware exit safe.
+Ænix is the company behind Cozystack. We build the platform, run production deployments for service providers and regulated enterprises, and provide the migration, support, and operations model that makes a VMware exit safe.
 
 Available across North America, the EU, the UK, and the DACH region. German-speaking sales and support team for DACH customers.
 
@@ -102,7 +102,7 @@ Cozystack inverts this. Each layer is an independent open-source project (KubeVi
 
 DORA (in force across the EU since January 2025) and NIS2 require demonstrable control over critical ICT third parties. For European banks, telcos, and government workloads, depending on a US-headquartered closed-source hypervisor stack is a documented operational risk.
 
-Cozystack is open source under Apache 2.0. Your binaries, your hardware, your data plane. Aenix ships air-gap install workflows and an advisory support model that does not require direct customer-environment access.
+Cozystack is open source under Apache 2.0. Your binaries, your hardware, your data plane. Ænix ships air-gap install workflows and an advisory support model that does not require direct customer-environment access.
 
 ### 4. Pricing isn't the only cliff — capability is
 
@@ -178,7 +178,7 @@ Each migrated workload runs in parallel on Cozystack until validated by the appl
 
 Licenses end on their own terms. Hardware repurposed into the Cozystack cluster (we run on commodity x86 — your existing servers usually qualify).
 
-For OpenStack, CloudStack, and Proxmox sources we run the same playbook with different image-import and network-mapping steps. Aenix has shipped each path in production.
+For OpenStack, CloudStack, and Proxmox sources we run the same playbook with different image-import and network-mapping steps. Ænix has shipped each path in production.
 
 > **Looking for a checklist?** A detailed migration assessment template is on the roadmap. For now, a structured assessment is part of the engagement — book it through the form below.
 
@@ -193,15 +193,15 @@ Cozystack was built for service providers first. The same model works for any or
 - **Air-gap install** — supported and documented; works behind Harbor / Nexus / proxy patterns.
 - **No phone-home** — telemetry is opt-in and disabled by default.
 - **DORA / NIS2-aligned controls** — operational resilience, incident reporting, supplier-risk documentation. Architecture maps to the controls; certification, where required, is the customer's audit process to run.
-- **Aenix support model** — advisory, runbooks, GitOps PR review. We do not require kubectl access to your production cluster. Critical for banks, telcos, and any regulated buyer who cannot expose infrastructure to a vendor.
+- **Ænix support model** — advisory, runbooks, GitOps PR review. We do not require kubectl access to your production cluster. Critical for banks, telcos, and any regulated buyer who cannot expose infrastructure to a vendor.
 
 ---
 
 ## Cozystack vs VMware — feature comparison
 
-| Capability | VMware (VCF, post-Broadcom) | Cozystack + Aenix |
+| Capability | VMware (VCF, post-Broadcom) | Cozystack + Ænix |
 |---|---|---|
-| **License model** | Subscription only (VCF bundles) | Apache 2.0 open source + optional Aenix support tier |
+| **License model** | Subscription only (VCF bundles) | Apache 2.0 open source + optional Ænix support tier |
 | **Renewal risk** | 2–5× increases observed; bundling forced | Predictable support pricing; OSS code remains usable regardless |
 | **Compute** | vSphere / ESXi | KubeVirt (KVM-based) |
 | **Live migration** | Yes (incl. with GPU under vGPU) | Yes (CPU); GPU live migration not supported (industry-wide limitation, not Cozystack-specific) |
@@ -239,14 +239,14 @@ Cozystack is in production with:
 
 ## Pricing
 
-The Cozystack platform itself is open source and free to run. Aenix offers:
+The Cozystack platform itself is open source and free to run. Ænix offers:
 
 - **Community** — GitHub issues, public Slack, no SLA.
 - **Standard support** — business-hours response, runbooks, advisory.
 - **Enterprise / 24×7** — production SLA, dedicated TAM, GitOps PR review, incident response.
 - **Professional services** — VMware migration assessment, deployment, training, custom integrations.
 
-Open-source means there is no per-CPU, per-VM, or per-core meter. Your spend is hardware + Aenix engagement.
+Open-source means there is no per-CPU, per-VM, or per-core meter. Your spend is hardware + Ænix engagement.
 
 ---
 
@@ -282,7 +282,7 @@ Yes. KubeVirt runs Windows. We have an automated cleanup step that removes VMwar
 
 ### What happens to our existing VMware operational skills?
 
-The hypervisor concepts (VMs, snapshots, templates, networking) carry over. The control-plane shifts from vCenter to Kubernetes — for most teams this is a 4–8 week ramp with the right training and runbooks. Aenix runs the training as part of professional services.
+The hypervisor concepts (VMs, snapshots, templates, networking) carry over. The control-plane shifts from vCenter to Kubernetes — for most teams this is a 4–8 week ramp with the right training and runbooks. Ænix runs the training as part of professional services.
 
 ### Is Cozystack production-ready?
 
@@ -298,7 +298,7 @@ Yes — that's the difference between Cozystack and a pure VM-only alternative. 
 
 ### What about VMware Cloud Foundation specifically — is the migration different?
 
-VCF migrations are larger (more components, more integrations). The discovery phase covers SDDC Manager, Workspace ONE, Aria, NSX-T overlays, and any custom service definitions. Aenix has run VCF migrations end-to-end.
+VCF migrations are larger (more components, more integrations). The discovery phase covers SDDC Manager, Workspace ONE, Aria, NSX-T overlays, and any custom service definitions. Ænix has run VCF migrations end-to-end.
 
 ### What if we use vCloud Director for our customers?
 
@@ -310,7 +310,7 @@ No — industry-wide limitation, not Cozystack-specific. VMware vGPU live migrat
 
 ### Do you charge per VM or per CPU?
 
-No. Aenix charges for support tier and professional services, not per VM, per CPU, or per GB. The Cozystack platform itself is free.
+No. Ænix charges for support tier and professional services, not per VM, per CPU, or per GB. The Cozystack platform itself is free.
 
 ### What about non-Kubernetes admins on the team?
 
@@ -332,7 +332,7 @@ Or read the [VMware migration path](/migration/vmware), see the full [Cozystack 
 
 ---
 
-*Cozystack is a CNCF Project. Kubernetes Certified Distribution. OpenSSF Best Practices badge. Aenix is the company behind Cozystack.*
+*Cozystack is a CNCF Project. Kubernetes Certified Distribution. OpenSSF Best Practices badge. Ænix is the company behind Cozystack.*
 
 ---
 

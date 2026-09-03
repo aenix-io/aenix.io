@@ -55,7 +55,7 @@ operational toil.
 
 This article walks through what the discipline actually requires,
 where it shows up as theatre rather than practice, and what an SRE
-engagement from Aenix delivers when reliability has become a
+engagement from Ænix delivers when reliability has become a
 business-grade problem.
 
 ## What SRE means, precisely
@@ -198,7 +198,7 @@ Fix: post-mortem action items go into the same backlog as feature
 work, with named owners, due dates, and explicit prioritisation.
 The post-mortem hasn't worked if its action items don't ship.
 
-## What Aenix SRE engagement delivers
+## What Ænix SRE engagement delivers
 
 We typically engage with organisations where SRE practice is at
 one of three states:
@@ -224,7 +224,7 @@ For each critical service, define:
 - Burn-down policy — what happens when the budget is being consumed
 - Recovery threshold — what restores feature-work prioritisation
 
-Aenix doesn't define SLOs for you in isolation — we facilitate the
+Ænix doesn't define SLOs for you in isolation — we facilitate the
 workshop where engineering and product leadership co-author them.
 SLOs without joint ownership don't stick.
 
@@ -249,7 +249,7 @@ support if needed.
 
 ### Workstream 4 — Observability stack
 
-Aenix's default observability recommendation: VictoriaMetrics for
+Ænix's default observability recommendation: VictoriaMetrics for
 metrics, VictoriaLogs for logs, OpenTelemetry for tracing where
 applicable. Self-hosted (sovereignty-friendly, lower-overhead than
 Prometheus + Loki at scale, no SaaS vendor data-residency leak).
@@ -301,7 +301,7 @@ Strong fit:
 Marginal fit:
 
 - Smaller organisations (<100 engineers) — usually embedded SRE
-  rather than separate function; Aenix engagement can be lighter
+  rather than separate function; Ænix engagement can be lighter
   (workshop + advisory rather than full multi-month engagement)
 - Organisations with mature SRE in one BU needing expansion —
   scope can be narrower
@@ -326,7 +326,7 @@ Poor fit:
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. Our SRE engagements pair naturally with
 Cozystack-based platform engineering work, but we engage on SRE
 discipline regardless of underlying platform substrate.*

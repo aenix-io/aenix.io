@@ -47,7 +47,7 @@ faq:
 
 **Most internal developer platforms fail not because the architecture is wrong, but because product teams don't use them. The platform that ranks highest on engineering elegance often ranks lowest on internal NPS. The platform that's actually adopted has fewer features, simpler abstractions, and a team that treats product engineers as customers.**
 
-Aenix builds internal developer platforms (IDPs) that get adopted. Not Backstage as wallpaper over chaos; an opinionated platform with golden paths, multi-tenant foundations, and operational handoff your platform team can sustain.
+Ænix builds internal developer platforms (IDPs) that get adopted. Not Backstage as wallpaper over chaos; an opinionated platform with golden paths, multi-tenant foundations, and operational handoff your platform team can sustain.
 
 > **Pairs with:** **[the developer self-service layer of Ænix Private Cloud Platform](/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
@@ -84,7 +84,7 @@ If your situation matches three of these, structured IDP work returns adoption +
 
 <!-- BLOCK 3: WHAT YOU GET -->
 
-## What an Aenix IDP engagement produces
+## What an Ænix IDP engagement produces
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -152,12 +152,12 @@ These failure modes are predictable. Engagement structure deliberately prevents 
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## How Aenix engages
+## How Ænix engages
 
 The IDP engagement runs in three phases:
 
 - **Phase 1: Platform Readiness Assessment (14-28 days)** — current-state platform maturity, target IDP architecture, golden-path priorities, RACI for platform team. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-- **Phase 2: Build engagement (3-9 months)** — Aenix engineers integrated with your platform team, building the foundation, golden paths, and runbooks. Knowledge transfer is a first-class deliverable, not an afterthought.
+- **Phase 2: Build engagement (3-9 months)** — Ænix engineers integrated with your platform team, building the foundation, golden paths, and runbooks. Knowledge transfer is a first-class deliverable, not an afterthought.
 - **Phase 3 (optional): Managed operation** — for organizations that need the IDP but cannot build internal platform-team capacity.
 
 Engagements typically start with Phase 1; Phase 2 sequencing emerges from assessment.
@@ -168,7 +168,7 @@ Engagements typically start with Phase 1; Phase 2 sequencing emerges from assess
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **Multi-tenant platforms are what we run.** Cozystack is in production with service providers and regulated enterprises operating multi-tenant clouds. The platform patterns we recommend are calibrated against running systems.
 - **Backstage is a tool, not a destination.** We use Backstage where it serves the customer; we don't sell it. The decision is calibrated against your team's operational maturity, not against vendor incentives.
@@ -258,12 +258,12 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
 
 <!--
-SEO: title "Internal Developer Platform Services — Built for Adoption | Aenix"
+SEO: title "Internal Developer Platform Services — Built for Adoption | Ænix"
 Description (≤155): "Internal developer platform engagement: opinionated golden paths, multi-tenant foundation, knowledge transfer. Open-source foundation, no Backstage lock-in."
 Word count: ~1080.
 -->

@@ -41,7 +41,7 @@ faq:
     a: "Die [Ænix AI Platform](/de/produkte/ai-platform/) ist das produktisierte, turnkey Angebot mit fertigen Blueprints. AI Platform Build ist der begleitende Service, der die Plattform end-to-end für die spezifische Architektur und Beschaffung des Kunden aufbaut."
 ---
 
-**KI-Startups und KI-lastige Unternehmen in 2026 stehen vor der gleichen architektonischen Wahl: Inferenz mieten zu Hyperscaler-Ökonomie, oder dedizierte Infrastruktur bauen, die im großen Maßstab sich auszahlt. Für nachhaltige Workloads (24/7 Inferenz, Fine-Tuning, Training) gewinnt dedizierte Infrastruktur normalerweise nach einem Jahr Betrieb. Aenix baut diese Plattformen end-to-end.**
+**KI-Startups und KI-lastige Unternehmen in 2026 stehen vor der gleichen architektonischen Wahl: Inferenz mieten zu Hyperscaler-Ökonomie, oder dedizierte Infrastruktur bauen, die im großen Maßstab sich auszahlt. Für nachhaltige Workloads (24/7 Inferenz, Fine-Tuning, Training) gewinnt dedizierte Infrastruktur normalerweise nach einem Jahr Betrieb. Ænix baut diese Plattformen end-to-end.**
 
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), fertige Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen für regulierte KI-Workloads. Kostenloser [Sovereign AI Decision Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
@@ -90,4 +90,4 @@ faq:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

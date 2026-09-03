@@ -56,7 +56,7 @@ faq:
 
 # Private LLM: Self-Hosted GenAI auf Ihren eigenen GPUs
 
-**Betreiben Sie Ihr eigenes großes Sprachmodell auf selbst kontrollierter Hardware — Open-Weight-Modelle wie Llama, Mistral und Qwen, für Inferenz bereitgestellt, mit RAG in Ihren Dokumenten geerdet und bei Bedarf auf Ihren Daten fine-getunt. Ein Private LLM hält Prompts, Embeddings, Weights, Keys und den Audit-Trail auf Ihrer Seite der Grenze, sodass Sie moderne GenAI erhalten, ohne sensiblen Text an eine Drittanbieter-API zu senden. Aenix baut diese Plattformen auf [Cozystack](/de/produkte/cozystack/), auf Ihren eigenen GPUs.**
+**Betreiben Sie Ihr eigenes großes Sprachmodell auf selbst kontrollierter Hardware — Open-Weight-Modelle wie Llama, Mistral und Qwen, für Inferenz bereitgestellt, mit RAG in Ihren Dokumenten geerdet und bei Bedarf auf Ihren Daten fine-getunt. Ein Private LLM hält Prompts, Embeddings, Weights, Keys und den Audit-Trail auf Ihrer Seite der Grenze, sodass Sie moderne GenAI erhalten, ohne sensiblen Text an eine Drittanbieter-API zu senden. Ænix baut diese Plattformen auf [Cozystack](/de/produkte/cozystack/), auf Ihren eigenen GPUs.**
 
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — GPU-Scheduling, fraktionales Sharing und Blueprints für Inferenz und Fine-Tuning. Für die elastische GPU-Kapazität darunter: kombinieren mit **[GPU-Cloud-Bursting](/de/loesungen/gpu-cloud-bursting/)**. Für die umfassendere Strategie: **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
 
@@ -82,7 +82,7 @@ Das ist speziell das Problem „Private LLM / Self-Hosted LLM / On-Prem GenAI". 
 
 ## Woraus eine Private-LLM-Plattform besteht
 
-Eine On-Prem-GenAI-Plattform ist mehr als eine Modelldatei. Aenix setzt den gesamten Stack aus offenen, [CNCF](https://www.cncf.io/)-nahen Bausteinen zusammen, sodass nichts Sie zurück zu einem proprietären KI-Dienst zwingt.
+Eine On-Prem-GenAI-Plattform ist mehr als eine Modelldatei. Ænix setzt den gesamten Stack aus offenen, [CNCF](https://www.cncf.io/)-nahen Bausteinen zusammen, sodass nichts Sie zurück zu einem proprietären KI-Dienst zwingt.
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -135,11 +135,11 @@ Die GPU-Flotte gegen diesen Mix richtig zu dimensionieren, ist genau das, was ei
 
 ---
 
-## Wie Aenix bei Private LLM arbeitet
+## Wie Ænix bei Private LLM arbeitet
 
 Das Engagement läuft als **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)**: GPU-Architektur und Sizing, der Inferenz-Stack, eine Qdrant-Vektordatenbank für RAG, Multi-Tenant-Isolation und SSO und — wo relevant — eine Fine-Tuning-Pipeline, alles auf Ihrer eigenen Hardware bereitgestellt. Wo GPU-Bedarf sprunghaft ist, kombiniert es mit **[GPU-Cloud-Bursting](/de/loesungen/gpu-cloud-bursting/)**, sodass Sie die Grundlast besitzen und Spitzen bursten; wo der Treiber Jurisdiktion und Governance statt eines einzelnen Workloads ist, rollt es in ein **[Sovereign-AI](/de/loesungen/sovereign-ai/)**-Programm auf der **[AI Platform](/de/produkte/ai-platform/)** ein.
 
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen Private-LLM- und On-Prem-GenAI-Plattformen für Unternehmen und öffentliche Organisationen in der EU und DACH.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen Private-LLM- und On-Prem-GenAI-Plattformen für Unternehmen und öffentliche Organisationen in der EU und DACH.*

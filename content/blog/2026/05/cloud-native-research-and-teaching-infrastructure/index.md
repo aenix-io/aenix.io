@@ -163,9 +163,9 @@ Teaching Kubernetes on a single-tenant minikube is teaching a toy. Teaching on p
 ### Pitfall 5: Reproducibility as afterthought
 Building research infrastructure without reproducibility patterns from day 1 means retrofitting later, which is expensive. Containerization and IaC discipline should be the default.
 
-## Aenix engagement specifics for universities
+## Ænix engagement specifics for universities
 
-Aenix has built Cozystack-based platforms for university and research-institute customers across the EU and Central Asia. Engagement specifics:
+Ænix has built Cozystack-based platforms for university and research-institute customers across the EU and Central Asia. Engagement specifics:
 
 - **Public-procurement-aware** — RFI / RFP through standard channels in EU member states and Kazakhstan
 - **Capacity-transfer first-class** — knowledge handover to in-house academic IT is explicit deliverable
@@ -177,9 +177,9 @@ For details see **[universities industry page](/industries/universities)**.
 
 ## How to start
 
-If your university or research institute fits the profile, the structured next step is a focused assessment. Aenix runs **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with academic-context emphasis.
+If your university or research institute fits the profile, the structured next step is a focused assessment. Ænix runs **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with academic-context emphasis.
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia.*
 

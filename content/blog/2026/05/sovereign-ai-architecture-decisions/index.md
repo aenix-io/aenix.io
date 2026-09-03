@@ -79,7 +79,7 @@ Open-weight vs proprietary. Common 2026 open-weight: Llama, Mistral, Qwen, DeepS
 
 ### 7. Operational model
 - Customer-operated (you run it)
-- Vendor-operated (Aenix or similar runs it)
+- Vendor-operated (Ænix or similar runs it)
 - Hybrid (you operate; vendor 2nd-line)
 
 ## How decisions interlock
@@ -89,7 +89,7 @@ The seven aren't independent. Trigger profile shapes regulatory scope; regulator
 ## Common combinations
 
 **Pattern 1: Regulated finance + sustained inference + multi-tenant**
-DORA + Article 28 controls + multi-tenant Tenant CRD + customer-controlled keys + Aenix-managed operations + open-weight (Llama 70B class) on H100/L40S fleet.
+DORA + Article 28 controls + multi-tenant Tenant CRD + customer-controlled keys + Ænix-managed operations + open-weight (Llama 70B class) on H100/L40S fleet.
 
 **Pattern 2: Public sector + air-gapped + classified data**
 Sovereign-cloud mandate + air-gap + customer-operated + open-weight (Llama / Phi) on customer hardware.
@@ -105,5 +105,5 @@ For specific engagement see **[Sovereign AI services](/solutions/sovereign-ai/)*
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

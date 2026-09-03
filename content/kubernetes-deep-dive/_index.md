@@ -5,7 +5,7 @@ hero_subtitle: "Hands-on advanced training on the Cozystack stack"
 language: "en"
 ---
 
-**Advanced Kubernetes course from Aenix. Engineers learn the same stack that powers Ænix Platform deployments — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, production-grade, taught by the engineers who maintain Cozystack.**
+**Advanced Kubernetes course from Ænix. Engineers learn the same stack that powers Ænix Platform deployments — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, production-grade, taught by the engineers who maintain Cozystack.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Enroll in next cohort</a>
@@ -37,7 +37,7 @@ Most Kubernetes courses cover the basics. This course covers what comes after �
 - **Flux** for GitOps
 - **Multi-tenant architecture** with Tenant CRD-style isolation
 
-This is the same stack Aenix engineers use to build Ænix Platform deployments at regulated enterprises and hosting providers.
+This is the same stack Ænix engineers use to build Ænix Platform deployments at regulated enterprises and hosting providers.
 
 ---
 
@@ -71,7 +71,7 @@ The course is independent of Ænix Platform engagements — engineers can take i
 However, organizations buying Ænix Platform often send engineers to this course either before, during, or after platform builds. Course completion accelerates handoff and operational maturity.
 
 If you're considering both:
-- **Course only:** train your engineers; decide later whether to engage Aenix on platform build
+- **Course only:** train your engineers; decide later whether to engage Ænix on platform build
 - **Course + Ænix Platform:** combined training + production platform engagement
 
 ---
@@ -110,4 +110,4 @@ This course is excellent for active contributors who want production-operations 
 
 ---
 
-*Kubernetes Deep Dive Course is from Aenix — the team behind [Cozystack](https://cozystack.io) (CNCF Project).*
+*Kubernetes Deep Dive Course is from Ænix — the team behind [Cozystack](https://cozystack.io) (CNCF Project).*

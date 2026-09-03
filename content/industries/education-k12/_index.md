@@ -101,6 +101,6 @@ For most K-12 districts, hyperscaler-managed services + standard EdTech tools is
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
 <!-- Niche audience. Word count: ~400. -->

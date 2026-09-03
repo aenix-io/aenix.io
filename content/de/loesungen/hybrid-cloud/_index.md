@@ -20,7 +20,7 @@ quick_facts:
     value: "Unternehmen und Telcos, die elastische Workloads in der Public Cloud und stetige, regulierte oder KI-Workloads On-Prem oder am Edge betreiben"
   - label: "Technische Basis"
     value: "Cozystack mit KubeVirt (VMs und Container über eine Kubernetes-API), Cilium (eBPF) Networking und LINSTOR/DRBD Storage; Mandantenfähigkeit über das Tenant-CRD"
-  - label: "Passende Edition"
+  - label: "Passende Plattform"
     value: "Ænix Private Cloud Platform verbindet On-Prem mit VMware, OpenNebula, OpenShift und Public Clouds; für große Betreiber kombinierbar mit der Public Cloud Platform"
   - label: "Engagement"
     value: "Aenix liefert die produktisierte Ænix Platform plus Services; Preisstufen Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell"
@@ -43,7 +43,7 @@ faq:
 
 **Die meisten Unternehmen sind 2026 bereits hybrid — Public Cloud für elastische und kundenorientierte Workloads, Private Cloud oder on-prem für stetige, regulierte oder AI-ökonomisch begründete Workloads. Die Herausforderung ist längst nicht mehr, ob man hybrid sein sollte, sondern ob man Hybrid als kohärente Architektur oder als fragmentierten Flickenteppich betreibt. Letzteres haben die meisten Unternehmen. Ersteres ist der Ort, an dem Hebelwirkung entsteht.**
 
-Aenix baut und betreibt Hybrid-Cloud-Plattformen auf Basis von [Cozystack](/de/produkte/cozystack/) — Kubernetes-nativ, mandantenfähig, mit konsistenten Operations über Kunden-Hardware, Public-Cloud-Regionen und Edge-Standorte hinweg.
+Ænix baut und betreibt Hybrid-Cloud-Plattformen auf Basis von [Cozystack](/de/produkte/cozystack/) — Kubernetes-nativ, mandantenfähig, mit konsistenten Operations über Kunden-Hardware, Public-Cloud-Regionen und Edge-Standorte hinweg.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telkos: kombinieren Sie diese mit der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
 
@@ -144,7 +144,7 @@ Derselbe Workload läuft in der Public Cloud anders als on-prem. Operative Schul
 
 <!-- BLOCK 5: HOW WE HELP -->
 
-## Wie Aenix hilft
+## Wie Ænix hilft
 
 Das Hybrid-Plattform-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**. Ergebnis:
 
@@ -154,7 +154,7 @@ Das Hybrid-Plattform-Engagement läuft als Teil unseres **[Platform Readiness As
 - **Migrations-Reihenfolge** — was zuerst umzieht, was bleibt, was hybrid wird
 - **Umsetzungs-Roadmap für Phase 2**
 
-Umsetzung in Phase 2: Aenix-Ingenieure bauen die Hybrid-Plattform von Anfang bis Ende — typischerweise 6-18 Monate Laufzeit.
+Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis Ende — typischerweise 6-18 Monate Laufzeit.
 
 <!-- /BLOCK 5 -->
 
@@ -162,7 +162,7 @@ Umsetzung in Phase 2: Aenix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Warum ausgerechnet Aenix
+## Warum ausgerechnet Ænix
 
 - **Produktive Hybrid-Erfahrung.** Cozystack läuft produktiv gleichzeitig auf kundenkontrollierter Hardware, in Public-Cloud-Regionen und an Edge-Standorten.
 - **Open-Source-Fundament.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Eine Plattform, mehrere Substrate, kein Vendor-Lock-in.
@@ -237,4 +237,4 @@ Umsetzung in Phase 2: Aenix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*

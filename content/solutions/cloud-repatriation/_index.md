@@ -48,9 +48,9 @@ faq:
 
 **The Broadcom Private Cloud Outlook 2025 found 69% of organizations are evaluating cloud repatriation, and 53% now prioritize private cloud for new workloads. The reasons vary — runaway cost, regulator pressure, AI data residency, predictable performance — but the architectural work is the same: identify the right workloads to move, run the move without breaking the application, and end up with a platform you can actually operate.**
 
-Aenix runs the technical engagement that turns "we need to leave AWS / Azure / GCP" from a board statement into a working plan with workloads ranked, costs modelled, and a destination architecture that won't reinvent the public cloud the wrong way.
+Ænix runs the technical engagement that turns "we need to leave AWS / Azure / GCP" from a board statement into a working plan with workloads ranked, costs modelled, and a destination architecture that won't reinvent the public cloud the wrong way.
 
-> **Pairs with** any **[Ænix Platform Edition](/products/)** by buyer profile: hosting / regional clouds → [ISP](/products/public-cloud-platform/); regulated enterprises → [Enterprise](/products/private-cloud-platform/); large operators → [Public Cloud](/products/public-cloud-platform/); product teams → [IDP](/products/private-cloud-platform/); AI-heavy → [AI/ML](/products/ai-platform/). Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
+> **Pairs with** any **[Ænix platform](/products/)** by buyer profile: hosting / regional clouds → [ISP](/products/public-cloud-platform/); regulated enterprises → [Enterprise](/products/private-cloud-platform/); large operators → [Public Cloud](/products/public-cloud-platform/); product teams → [IDP](/products/private-cloud-platform/); AI-heavy → [AI/ML](/products/ai-platform/). Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -157,7 +157,7 @@ These failure modes are independent of cloud provider, vendor, or destination pl
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## How Aenix helps
+## How Ænix helps
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -177,9 +177,9 @@ The repatriation engagement runs as part of our **[Platform Readiness Assessment
 - **Workload repatriation ranking** — every workload classified as "repatriate now / repatriate later / stay in cloud," ranked by ROI and risk.
 - **Destination architecture** — what the platform looks like that workloads land on, including compute, storage, network, identity, observability, DR, and the platform-engineering function that operates it.
 - **Cutover sequencing** — repatriation cohorts that respect commitment expirations and minimize cross-environment data movement.
-- **Phase 2 implementation roadmap** — what an Aenix-delivered Phase 2 would do, in what sequence, with effort estimates.
+- **Phase 2 implementation roadmap** — what an Ænix-delivered Phase 2 would do, in what sequence, with effort estimates.
 
-Delivered by Aenix engineers who have built and operated production platforms for service providers, banks, and AI operators across the EU and Central Asia. The report's bias is toward what we can stand behind technically.
+Delivered by Ænix engineers who have built and operated production platforms for service providers, banks, and AI operators across the EU and Central Asia. The report's bias is toward what we can stand behind technically.
 
 {{< factoid number="30-60%" label="better unit economics on-prem or in private cloud for steady-state workloads, once egress, idle resources, and underused commitments are counted honestly" >}}
 
@@ -192,7 +192,7 @@ Delivered by Aenix engineers who have built and operated production platforms fo
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 <div class="advantage-panel">
 
@@ -297,7 +297,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-repatriation engagements and platform engineering programs for service providers, banks, telecom, and AI operators across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-repatriation engagements and platform engineering programs for service providers, banks, telecom, and AI operators across the EU, DACH, and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

@@ -17,7 +17,7 @@ quick_facts:
   - label: "Was es ist"
     value: "Engineering-Augmentation mit Senior-Engineers für Cloud-Architektur, Automatisierung und Operations über Public, Hybrid und On-Prem"
   - label: "Zielgruppe"
-    value: "Teams, die Cloud-Architektur-, IaC-, Observability- und GitOps-Reife brauchen — eigenständig oder als Erweiterung jeder Ænix Platform Edition"
+    value: "Teams, die Cloud-Architektur-, IaC-, Observability- und GitOps-Reife brauchen — eigenständig oder als Erweiterung jeder Ænix platform"
   - label: "Abdeckung"
     value: "Cloud-Architektur-Review, IaC (Terraform, OpenTofu, Pulumi, Crossplane), Observability (VictoriaMetrics, Grafana, OpenTelemetry), CI/CD und GitOps, Kubernetes, Network und Identity, FinOps"
   - label: "Regulatorik"
@@ -32,7 +32,7 @@ faq:
   - q: "Sind das Berater oder Engineers?"
     a: "Senior-Engineers, keine Berater. Aenix bringt Praktiker, die direkt an Ihrer Cloud-Architektur, Automatisierung und Operations mitarbeiten — als Engineering-Augmentation für Ihr Team statt reiner Beratungsdokumente."
   - q: "Kann ich Cloud Engineering eigenständig buchen oder nur mit der Ænix Platform?"
-    a: "Beides. Die Engineering-Augmentation ist eigenständig verfügbar und passt zugleich zu jeder Ænix Platform Edition, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert."
+    a: "Beides. Die Engineering-Augmentation ist eigenständig verfügbar und passt zugleich zu jeder Ænix platform, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert."
   - q: "Worin unterscheidet sich Cloud Engineering von Platform Engineering und DevOps Consulting?"
     a: "Cloud Engineering deckt das breite Spektrum von Hyperscaler-nativer Architektur bis Private-Cloud ab. Für breiteren Plattform-Scope gibt es die Platform Engineering Services, für DevOps-spezifischen Scope das DevOps Consulting."
   - q: "Unterstützt das Engagement DORA- und NIS2-Anforderungen?"
@@ -41,9 +41,9 @@ faq:
     a: "Cozystack, das Open-Source-Fundament unter Apache 2.0: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRDs für Mandantenfähigkeit. Cozystack ist ein CNCF-Sandbox-Projekt."
 ---
 
-**"Cloud Engineering" deckt das volle Spektrum ab — von Hyperscaler-nativer Architektur bis Private-Cloud-Plattform-Engineering. Das Aenix-Engagement bringt Senior-Engineers — keine Berater — an die Cloud-Architektur-, Automatisierungs- und Operations-Arbeit, die Ihr Team braucht.**
+**"Cloud Engineering" deckt das volle Spektrum ab — von Hyperscaler-nativer Architektur bis Private-Cloud-Plattform-Engineering. Das Ænix-Engagement bringt Senior-Engineers — keine Berater — an die Cloud-Architektur-, Automatisierungs- und Operations-Arbeit, die Ihr Team braucht.**
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)**, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
+> **Passt zu:** jeder **[Ænix platform](/de/produkte/)**, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -68,7 +68,7 @@ faq:
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Aenix-Engagement</b><div class="diagram__chips"><span>Senior-Engineers, keine Berater</span><span>Cloud-Architektur, Automatisierung, Operations</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Engagement</b><div class="diagram__chips"><span>Senior-Engineers, keine Berater</span><span>Cloud-Architektur, Automatisierung, Operations</span></div></div>
 <div class="diagram__conn">deckt ab</div>
 <div class="diagram__node"><b>Public, Hybrid und On-Prem</b><div class="diagram__chips"><span>IaC (Terraform, OpenTofu, Pulumi, Crossplane)</span><span>Observability (VictoriaMetrics, Grafana, OpenTelemetry)</span><span>CI/CD und GitOps</span></div></div>
 <div class="diagram__conn">erweitert zu</div>
@@ -97,4 +97,4 @@ Für die Methodologie siehe **[Platform Readiness Assessment](/de/dienstleistung
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

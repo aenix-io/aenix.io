@@ -46,7 +46,7 @@ faq:
 
 **Die meisten Internal Developer Platforms scheitern nicht, weil die Architektur falsch ist, sondern weil Produkt-Teams sie nicht nutzen. Die Plattform mit der höchsten Engineering-Eleganz hat oft den niedrigsten internen NPS. Die Plattform, die tatsächlich adoptiert wird, hat weniger Features, einfachere Abstraktionen und ein Team, das Produkt-Engineers als Kunden behandelt.**
 
-Aenix baut Internal Developer Platforms (IDPs), die adoptiert werden. Nicht Backstage als Tapete über dem Chaos; eine opinionated Plattform mit Golden Paths, mandantenfähiger Grundlage und operativem Handover, das Ihr Plattform-Team aufrechterhalten kann.
+Ænix baut Internal Developer Platforms (IDPs), die adoptiert werden. Nicht Backstage als Tapete über dem Chaos; eine opinionated Plattform mit Golden Paths, mandantenfähiger Grundlage und operativem Handover, das Ihr Plattform-Team aufrechterhalten kann.
 
 > **Passt zu:** **[the developer self-service layer of Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer (GitLab-Automation, Argo CD Workflows, APIs, Golden Paths, Productivity-Dashboards) auf der Cozystack-Cloud-Foundation. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
@@ -92,7 +92,7 @@ Wenn Ihre Situation auf drei dieser Punkte passt, liefert strukturierte IDP-Arbe
 
 <!-- BLOCK 3: WHAT YOU GET -->
 
-## Was ein Aenix-IDP-Engagement produziert
+## Was ein Ænix-IDP-Engagement produziert
 
 <div class="grid-2x2">
 
@@ -114,7 +114,7 @@ Das Ergebnis wird in Adoptions-Metriken gemessen — Time-to-Environment, Golden
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Aenix-IDP-Engagement</b><div class="diagram__chips"><span>Opinionated Plattform</span><span>Wissenstransfer und operatives Handover</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-IDP-Engagement</b><div class="diagram__chips"><span>Opinionated Plattform</span><span>Wissenstransfer und operatives Handover</span></div></div>
 <div class="diagram__conn">produziert</div>
 <div class="diagram__node"><b>Opinionated Plattform auf Cozystack</b><div class="diagram__chips"><span>Golden-Path-Templates</span><span>GitLab-Automation, Argo-CD-Workflows</span><span>KubeVirt, Cilium, LINSTOR</span><span>Tenant-CRD-Isolation</span></div></div>
 <div class="diagram__conn">gemessen in</div>
@@ -154,12 +154,12 @@ Diese Failure-Modes sind vorhersehbar. Die Engagement-Struktur verhindert jeden 
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## Wie Aenix engagiert
+## Wie Ænix engagiert
 
 Das IDP-Engagement läuft in drei Phasen:
 
 - **Phase 1: Platform Readiness Assessment (14-28 Tage)** — aktuelle Plattform-Reife, Ziel-IDP-Architektur, Golden-Path-Prioritäten, RACI für das Plattform-Team. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
-- **Phase 2: Build-Engagement (3-9 Monate)** — Aenix-Engineers integriert mit Ihrem Plattform-Team, bauen die Foundation, Golden Paths und Runbooks. Wissenstransfer ist ein First-Class-Deliverable, kein Nachgedanke.
+- **Phase 2: Build-Engagement (3-9 Monate)** — Ænix-Engineers integriert mit Ihrem Plattform-Team, bauen die Foundation, Golden Paths und Runbooks. Wissenstransfer ist ein First-Class-Deliverable, kein Nachgedanke.
 - **Phase 3 (optional): Managed Operation** — für Organisationen, die die IDP brauchen, aber keine interne Plattform-Team-Kapazität aufbauen können.
 
 Engagements starten typischerweise mit Phase 1; die Sequenzierung von Phase 2 ergibt sich aus dem Assessment.
@@ -170,7 +170,7 @@ Engagements starten typischerweise mit Phase 1; die Sequenzierung von Phase 2 er
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Mandantenfähige Plattformen sind das, was wir betreiben.** Cozystack ist in Produktion bei Service-Anbietern und regulierten Unternehmen, die mandantenfähige Clouds betreiben. Die Plattform-Muster, die wir empfehlen, sind an laufenden Systemen kalibriert.
 - **Backstage ist ein Tool, kein Ziel.** Wir nutzen Backstage, wo es dem Kunden dient; wir verkaufen es nicht. Die Entscheidung ist an der operativen Reife Ihres Teams kalibriert, nicht an Vendor-Anreizen.
@@ -265,6 +265,6 @@ Oder lesen Sie mehr:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Platform-Engineering-Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Platform-Engineering-Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->

@@ -3,7 +3,6 @@ title: "CloudStack to Cozystack migration"
 description: "Apache CloudStack remains established in some service-provider markets. For organizations modernizing to a Kubernetes-native foundation, Aenix runs..."
 related_pages:
   - /products/public-cloud-platform/
-  - /products/public-cloud-platform/
   - /products/cozystack
   - /services/platform-readiness-assessment
   - /alternatives/vmware-alternative
@@ -26,7 +25,7 @@ quick_facts:
   - label: "Typical timeline"
     value: "Four to twelve months for a mid-size service-provider deployment."
   - label: "Delivered by"
-    value: "Aenix, the open-core company behind Cozystack, on the Ænix Platform (ISP and Public Cloud editions)."
+    value: "Aenix, the open-core company behind Cozystack, on the Aenix Public Cloud Platform."
 faq:
   - q: "What does a CloudStack to Cozystack migration involve?"
     a: "It converts VM images from KVM or XenServer to KubeVirt, maps CloudStack accounts and projects to the Cozystack Tenant CRD, and re-architects storage and networking on a Kubernetes-native foundation using LINSTOR/DRBD storage and Cilium eBPF networking."
@@ -36,15 +35,15 @@ faq:
     a: "Yes. CloudStack service-provider features such as multi-tenant billing, customer portal, and service catalog map to Cozystack's Tenant CRD plus the cozyportal model, preserving the operator's multi-tenant model on a Kubernetes-native platform."
   - q: "Is Cozystack open source, and is there per-CPU licensing?"
     a: "Cozystack is Apache 2.0 licensed open source and a CNCF project (Sandbox since 2025-02-28). There is no per-CPU or per-core licensing. Aenix sells the productized Ænix Platform and services on top of the open-source stack."
-  - q: "Which Ænix Platform edition fits a CloudStack migration?"
-    a: "Public Cloud Platform suits hosting providers and regional clouds, while Public Cloud Platform fits large operators. Both run the same Cozystack foundation, so the choice depends on scale and the operator's tenant and billing requirements."
+  - q: "Which Aenix platform fits a CloudStack migration?"
+    a: "The Aenix Public Cloud Platform, in almost every case: CloudStack operators sell infrastructure to external customers, so they need the tenant, service-catalog and billing layer. The Aenix Private Cloud Platform is the fit only where CloudStack was deployed as an internal private cloud."
   - q: "How do I start a CloudStack migration with Aenix?"
     a: "Book a discovery call. For broader scoping, the Platform Readiness Assessment service covers engagement methodology, current-state analysis, and a migration plan before any production move begins."
 ---
 
-**Apache CloudStack remains established in some service-provider markets. For organizations modernizing to a Kubernetes-native foundation, Aenix runs CloudStack-to-Cozystack migrations.**
+**Apache CloudStack remains established in some service-provider markets. For organizations modernizing to a Kubernetes-native foundation, Ænix runs CloudStack-to-Cozystack migrations.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers and regional clouds; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — CloudStack estates are almost always sold to external customers, so the tenant, service-catalog and billing layer is the part that has to survive the move. See also **[WHMCS integration](/products/whmcs-integration/)** if CloudStack was billed through WHMCS.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -78,7 +77,7 @@ For broader engagement methodology see **[Platform Readiness Assessment](/servic
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "CloudStack to Cozystack Migration | Aenix"
+<!-- SEO: title "CloudStack to Cozystack Migration | Ænix"
 Word count: ~200. -->

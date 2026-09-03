@@ -29,7 +29,7 @@ faq:
     a: "Für KI-native Startups im Wachstum, regulierte KI-Deployments in Banken, öffentlichem Sektor und Gesundheitswesen, GPU-lastige Produkt-Unternehmen sowie Telcos und Großunternehmen, die eine interne KI-Plattform über mehrere Business Units teilen. Typisch sind Organisationen mit nachhaltigen Inferenz-Workloads, bei denen Hyperscaler-API-Pricing wirtschaftlich nicht mehr passt."
   - q: "Wie funktioniert Multi-Tenant-GPU-Scheduling?"
     a: "Über das Tenant-CRD erhält jeder Tenant eigene GPU-Pools mit GPU-Class-aware-Scheduling (zum Beispiel L40S für Inferenz, H100 für Fine-Tuning) und MIG-Support auf fähigen Karten. Quotas, RBAC und Observability werden pro Tenant durchgesetzt, sodass ein gemeinsamer GPU-Pool mit logischer Isolation geteilt werden kann."
-  - q: "Welche Souveränitätskontrollen bietet die Edition?"
+  - q: "Welche Souveränitätskontrollen bietet die Plattform?"
     a: "Kundenkontrollierte Verschlüsselungsschlüssel für Modell-Gewichte at rest, Trainingsdaten und Vector-Indexe; ein audit-isoliertes Environment; protokollierter und zeitlich begrenzter Zugang für Anbieter-Personal; Lieferantentransparenz zur zweiten Stufe sowie unterstütztes Air-Gap-Deployment für Verteidigung, isolierte Industrie und souveräne-Cloud-Kunden."
   - q: "Welche GPUs und Modelle werden unterstützt?"
     a: "Unterstützt werden H100, H200, L40S, A100 und B100/B200 (Blackwell) sowie CPU-only und alternative Beschleuniger wie AMD MI Series und Intel Gaudi. Vor-deployte Open-Weight-Modelle umfassen die Familien Llama, Mistral, Qwen, DeepSeek, Phi und Gemma; Sizing-Referenzen reichen von 7B bis 405B in Single-Card-, Multi-Card- und Multi-Node-Konfigurationen."
@@ -39,13 +39,13 @@ aliases:
   - /de/produkte/aenix-platform/ai-ml-edition/
 ---
 
-> **Das ist das AI- & GPU-Modul.** Die Ænix Platform hat zwei Editions — [Provider](/de/produkte/public-cloud-platform/) und [Enterprise](/de/produkte/private-cloud-platform/) — und diese Fähigkeit erweitert beide: Ein Anbieter verkauft sie als GPU-as-a-Service, ein Unternehmen betreibt darauf die eigene Inferenz.
+> **Das ist das AI- & GPU-Modul.** Die Ænix Platform hat zwei Plattforms — [Provider](/de/produkte/public-cloud-platform/) und [Enterprise](/de/produkte/private-cloud-platform/) — und diese Fähigkeit erweitert beide: Ein Anbieter verkauft sie als GPU-as-a-Service, ein Unternehmen betreibt darauf die eigene Inferenz.
 
 **KI-Plattform-Automatisierung out-of-the-Box. Standard-KI-Workloads, Service-APIs und fertige Blueprints, Datenbanken, Apps und Modelle — damit Ihr KI-Team von der Idee zu laufenden Jobs schneller kommt. Multi-Tenant-GPU-Scheduling, Vector-DBs, Souveränitätskontrollen inklusive. Gebaut für KI-native Organisationen und regulierte KI-Deployments im großen Maßstab.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">Alle Editions →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Plattforms →</a>
 </div>
 
 ---
@@ -84,7 +84,7 @@ Kundenkontrollierte Verschlüsselungsschlüssel für Modell-Gewichte at rest, Tr
 
 ### GPU-Sizing-Referenz
 
-Praktische Sizing-Tabellen für gängige Workload-Profile (Llama 7B / 13B / 70B / 405B, Mistral, Qwen, DeepSeek, Phi, Gemma — Single-Card / Multi-Card / Multi-Node-Konfigurationen). Aenix-Engagement inkludiert Capacity-Planning für nachhaltige Workloads.
+Praktische Sizing-Tabellen für gängige Workload-Profile (Llama 7B / 13B / 70B / 405B, Mistral, Qwen, DeepSeek, Phi, Gemma — Single-Card / Multi-Card / Multi-Node-Konfigurationen). Ænix-Engagement inkludiert Capacity-Planning für nachhaltige Workloads.
 
 ### Hosting-Panel + Admin-Interface
 
@@ -122,10 +122,10 @@ Projekt plus Managed-Retainer nach dem Deployment, Angebot nach RFP.
 ## Engagement-Struktur
 
 - **Discovery-Call** (30 min, kostenlos)
-- **Sovereign AI Architektur-Review** (1-2 Wochen, Festpreis) — unter Verwendung des [Sovereign AI Decision Guide](/de/ressourcen/sovereign-ai-architektur-leitfaden/) Frameworks + Aenix-Expertise
+- **Sovereign AI Architektur-Review** (1-2 Wochen, Festpreis) — unter Verwendung des [Sovereign AI Decision Guide](/de/ressourcen/sovereign-ai-architektur-leitfaden/) Frameworks + Ænix-Expertise
 - **Pilot-Engagement** (3-6 Monate) — definierter Slice (eine Workload-Klasse, ein Tenant, eine Modell-Familie)
 - **Vollständiger AI Platform Build** (6-12 Monate) — produktive KI-Infrastruktur mit allen Ziel-Workload-Typen
-- **Managed-Retainer** (optional, laufend) — Aenix betreibt die KI-Plattform unter SLA
+- **Managed-Retainer** (optional, laufend) — Ænix betreibt die KI-Plattform unter SLA
 
 [AI Platform Build Service →](/de/dienstleistungen/ai-platform-build/) | [Kostenloser Sovereign AI Decision Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/)
 
@@ -147,4 +147,4 @@ Buchen Sie einen 30-Minuten-Discovery-Call. Bringen Sie Ihr KI-Workload-Profil (
 
 ---
 
-*Ænix AI Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*
+*Ænix AI Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Ænix ist das Open-Core-Unternehmen.*

@@ -115,7 +115,7 @@ Typical migration: 4-12 months for mid-size deployment.
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "OpenStack Alternative — When Operational Complexity Stops Paying | Aenix"
+<!-- SEO: title "OpenStack Alternative — When Operational Complexity Stops Paying | Ænix"
 Word count: ~600. -->

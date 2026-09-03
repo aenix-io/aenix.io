@@ -68,5 +68,5 @@ Begleitung zur **[K-12-Bildung-Page](/de/branchen/k12-bildung)**.
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

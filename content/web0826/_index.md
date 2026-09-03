@@ -52,7 +52,7 @@ build:
 <a class="wm-card" href="/downloads/web0826/cozystack-hosters.pdf" target="_blank" rel="noopener">
 <span class="wm-card__type">PDF</span>
 <h3>Cozystack for hosters</h3>
-<p>One-page overview for hosting providers evaluating Cozystack and the Aenix provider stack.</p>
+<p>One-page overview for hosting providers evaluating Cozystack and the Ænix provider stack.</p>
 <span class="wm-card__link">Download PDF</span>
 </a>
 </div>
@@ -75,7 +75,7 @@ build:
 <aside class="wm-speaker" aria-label="Speaker">
 {{< workshop-photo src="images/webinars/andrei-kvapil.png" alt="Andrei Kvapil" >}}
 <h3>Andrei Kvapil</h3>
-<p>Creator of Cozystack · Founder of Aenix</p>
+<p>Creator of Cozystack · Founder of Ænix</p>
 <p>Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure.</p>
 </aside>
 </div>

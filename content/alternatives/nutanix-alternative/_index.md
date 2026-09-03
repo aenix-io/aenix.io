@@ -99,7 +99,7 @@ If your existing Nutanix deployment is operating well and economics support cont
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Nutanix Alternative — Open Source Without Appliance Lock-in | Aenix"
+<!-- SEO: title "Nutanix Alternative — Open Source Without Appliance Lock-in | Ænix"
 Word count: ~400. -->

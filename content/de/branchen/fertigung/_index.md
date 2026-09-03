@@ -45,7 +45,7 @@ faq:
 
 **Fertigung 2026 bedeutet gleichzeitige Anforderungen: Industrie-4.0-Transformation, NIS2-Compliance (die Fertigung kritischer Produkte ist im Geltungsbereich), Edge-Compute an Produktionsstandorten, KI-getriebene Qualitätskontrolle und zunehmende souveräne-Cloud-Anforderungen für industrielles IP. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, an regionalen Standorten und an der Produktions-Floor-Edge läuft — unter einem Operations-Modell.**
 
-Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentralasien.
+Ænix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentralasien.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Multi-DC- + Edge-Architektur für industrielles IT/OT, NIS2-Compliance für die Fertigung kritischer Produkte, Air-Gap-Support für OT-Netzwerke.
 
@@ -105,7 +105,7 @@ Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentral
 
 {{< clients >}}
 
-*Kunden-Evidenz — von Aenix zu befüllen. Anonyme Proof Points:*
+*Kunden-Evidenz — von Ænix zu befüllen. Anonyme Proof Points:*
 - Ein Multi-Site-Hersteller betreibt eine einheitliche Plattform über Zentrale + regionale Produktionsstandorte
 - Ein Automobilzulieferer mit Souveränitätsanforderungen für industrielles IP
 - Ein Präzisionstechnik-Unternehmen mit KI-getriebener Qualitätskontrolle auf einem privaten LLM
@@ -123,4 +123,4 @@ Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentral
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

@@ -117,5 +117,5 @@ If your OpenStack deployment is hitting modernization triggers, the structured n
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

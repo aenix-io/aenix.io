@@ -6,4 +6,4 @@ language: "en"
 hreflang_ru: "/ru/workshops/"
 ---
 
-**Aenix workshops are hands-on by design: live clusters, personal tenants, roughly 70% of the time in a terminal. Currently open: a hands-on VMware-to-open-source migration workshop in Tashkent, Bishkek, Almaty, and Astana.**
+**Ænix workshops are hands-on by design: live clusters, personal tenants, roughly 70% of the time in a terminal. Currently open: a hands-on VMware-to-open-source migration workshop in Tashkent, Bishkek, Almaty, and Astana.**

@@ -213,7 +213,7 @@ A residency-emphasized engagement covers:
 4. **Gap analysis** — where current architecture fails residency, prioritized.
 5. **Remediation plan** — what to fix, in what order, with effort estimates.
 
-Aenix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**, with the sovereignty-and-regulator-gap workstream emphasized for residency scope. The output is a written report that names, per data class and per layer, what's compliant, what's not, and what an architecture-level remediation looks like.
+Ænix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**, with the sovereignty-and-regulator-gap workstream emphasized for residency scope. The output is a written report that names, per data class and per layer, what's compliant, what's not, and what an architecture-level remediation looks like.
 
 ---
 
@@ -226,5 +226,5 @@ Aenix runs this as part of the **[Platform Readiness Assessment](/services/platf
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run data-sovereignty engagements and platform-engineering programs across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run data-sovereignty engagements and platform-engineering programs across the EU, DACH, and Central Asia.*
 

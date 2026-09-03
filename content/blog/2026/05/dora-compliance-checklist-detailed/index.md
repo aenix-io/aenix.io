@@ -62,7 +62,7 @@ For each Article 6 and Article 28 requirement, you should be able to:
 
 ## Most-common findings
 
-In Aenix DORA engagements, four findings recur:
+In Ænix DORA engagements, four findings recur:
 
 1. Observability data leaving the regulator's perimeter
 2. Exit plans never tested
@@ -77,5 +77,5 @@ For deeper engagement: **[DORA compliance services](/solutions/dora-compliance/)
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

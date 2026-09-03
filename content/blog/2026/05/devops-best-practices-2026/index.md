@@ -220,11 +220,11 @@ Annual external assessment is worth doing if your organization has more than ~50
 - Board / leadership benefits from independent perspective
 - Platform investment decisions need a defensible data point
 
-Aenix runs this as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with DevOps maturity workstream emphasized. The output is a written report that names, per practice, where you stand and where the leverage is.
+Ænix runs this as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with DevOps maturity workstream emphasized. The output is a written report that names, per practice, where you stand and where the leverage is.
 
 ## How to start
 
-If your organization fits the profile, the structured next step is an assessment. Aenix runs DevOps engagements end-to-end — assessment, transformation, optional managed services. See the **[DevOps consulting services page](/services/devops-consulting/)**.
+If your organization fits the profile, the structured next step is an assessment. Ænix runs DevOps engagements end-to-end — assessment, transformation, optional managed services. See the **[DevOps consulting services page](/services/devops-consulting/)**.
 
 ---
 
@@ -237,5 +237,5 @@ If your organization fits the profile, the structured next step is an assessment
 
 ---
 
-*Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 

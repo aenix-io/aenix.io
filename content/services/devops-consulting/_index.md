@@ -49,7 +49,7 @@ faq:
 
 > **Pairs with:** **[the developer self-service layer of Ænix Private Cloud Platform](/products/private-cloud-platform/)** when DevOps work scales into a full Internal Developer Platform. For technical scope on existing infrastructure: stand-alone consulting engagement.
 
-Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF Project running in production with service providers, banks, and AI operators. Our DevOps consulting engagements extend our engineers into yours — for assessment, transformation, or sustained operations.
+Ænix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF Project running in production with service providers, banks, and AI operators. Our DevOps consulting engagements extend our engineers into yours — for assessment, transformation, or sustained operations.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -87,7 +87,7 @@ If three or more apply, structured consulting compounds. If your team is small, 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## What an Aenix DevOps engagement produces
+## What an Ænix DevOps engagement produces
 
 <div class="grid-2x2">
 
@@ -142,13 +142,13 @@ These failure modes are predictable. Engagement structure deliberately prevents 
 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
-## How Aenix engages
+## How Ænix engages
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>Current CI/CD and ops</b><div class="diagram__chips"><span>Working CI/CD</span><span>Reactive ops</span><span>Fragmented tooling</span></div></div>
 <div class="diagram__conn">assessed by</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix DevOps engagement</b><div class="diagram__chips"><span>Assessment</span><span>Transformation</span><span>Managed</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix DevOps engagement</b><div class="diagram__chips"><span>Assessment</span><span>Transformation</span><span>Managed</span></div></div>
 <div class="diagram__conn">installs</div>
 <div class="diagram__node"><b>Production DevOps practices</b><div class="diagram__chips"><span>CI/CD and GitOps</span><span>IaC</span><span>Observability</span><span>SRE</span></div></div>
 </div>
@@ -157,8 +157,8 @@ These failure modes are predictable. Engagement structure deliberately prevents 
 Three modes:
 
 - **DevOps maturity assessment (14-28 days)** — written assessment of current DevOps practices, target state, and remediation plan. Standalone deliverable. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-- **DevOps transformation engagement (3-9 months)** — Aenix engineers integrated with your team, building CI/CD foundation, IaC discipline, observability stack, and operational practices. Knowledge transfer is structured.
-- **DevOps-as-a-service / managed engagement** — for organizations that need DevOps function but cannot build internal capacity. Aenix operates with documented exit path.
+- **DevOps transformation engagement (3-9 months)** — Ænix engineers integrated with your team, building CI/CD foundation, IaC discipline, observability stack, and operational practices. Knowledge transfer is structured.
+- **DevOps-as-a-service / managed engagement** — for organizations that need DevOps function but cannot build internal capacity. Ænix operates with documented exit path.
 
 Most engagements start with assessment.
 
@@ -168,7 +168,7 @@ Most engagements start with assessment.
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **We operate platforms in production.** Cozystack is deployed at customer sites running real workloads. The decisions in our engagements are calibrated against running systems, not against tooling reviews.
 - **Senior engineers, no junior bait-and-switch.** The engineers in your engagement are the same engineers who built and operate Cozystack.
@@ -256,12 +256,12 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
 
 <!--
-SEO: title "DevOps Consulting — Engineers Who Run Platforms in Production | Aenix"
+SEO: title "DevOps Consulting — Engineers Who Run Platforms in Production | Ænix"
 Description: "DevOps consulting that delivers production engineering, not slide decks. Senior engineers, knowledge transfer, open-source foundation."
 Word count: ~1080.
 -->

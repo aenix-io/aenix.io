@@ -212,7 +212,7 @@ Platform team's customers are product teams. Architecture optimized for engineer
 
 ## How to start
 
-If your organization fits the IDP profile, the structured next step is an assessment of current platform maturity and a target architecture. Aenix runs this as **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with IDP-emphasis.
+If your organization fits the IDP profile, the structured next step is an assessment of current platform maturity and a target architecture. Ænix runs this as **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with IDP-emphasis.
 
 For services details see the **[internal developer platform services page](/services/internal-developer-platform/)**.
 
@@ -227,5 +227,5 @@ For services details see the **[internal developer platform services page](/serv
 
 ---
 
-*Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 

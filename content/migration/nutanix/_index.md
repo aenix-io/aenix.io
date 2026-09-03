@@ -56,7 +56,7 @@ faq:
 
 # Nutanix migration: exit HCI lock-in on your own terms
 
-**Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Aenix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor license. The destination is [Cozystack](/products/cozystack/), built and operated by the same engineers who run your migration.**
+**Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Ænix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor license. The destination is [Cozystack](/products/cozystack/), built and operated by the same engineers who run your migration.**
 
 > **Pairs with:** the **[Ænix Platform](/products/)** edition that matches your estate — Enterprise for regulated workloads, ISP for hosting providers, Public Cloud for large operators. Decide the destination on the **[Nutanix alternative](/alternatives/nutanix-alternative/)** comparison, then model the numbers with the **[ROI & TCO calculator](/roi-calculator/)**.
 
@@ -142,11 +142,11 @@ Migration economics look attractive in theory and turn on the details in practic
 
 ---
 
-## How Aenix engages on Nutanix migration
+## How Ænix engages on Nutanix migration
 
-The engagement mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with Nutanix emphasis: AOS/AHV inventory, destination architecture, workload classification, cutover sequencing against renewal dates, and a Phase 2 roadmap — delivered in 14-28 days. Phase 2 is implementation, with Aenix engineers integrated into your team for the migration cohorts and knowledge transfer throughout; an optional Phase 3 covers managed Cozystack operations after the estate has moved. Because we build the destination platform, the effort estimates are calibrated against work we have shipped, not guessed.
+The engagement mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with Nutanix emphasis: AOS/AHV inventory, destination architecture, workload classification, cutover sequencing against renewal dates, and a Phase 2 roadmap — delivered in 14-28 days. Phase 2 is implementation, with Ænix engineers integrated into your team for the migration cohorts and knowledge transfer throughout; an optional Phase 3 covers managed Cozystack operations after the estate has moved. Because we build the destination platform, the effort estimates are calibrated against work we have shipped, not guessed.
 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We run Nutanix and VMware migrations for enterprises, hosting providers, and public-sector operators across the EU and DACH.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We run Nutanix and VMware migrations for enterprises, hosting providers, and public-sector operators across the EU and DACH.*

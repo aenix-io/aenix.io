@@ -45,7 +45,7 @@ aliases:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">Alle Editions →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Plattforms →</a>
 </div>
 
 **Sehen Sie das Kundenportal selbst.** Die cozyportal-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
@@ -84,7 +84,7 @@ Usage-Metering, Invoicing, Payment-Processing. Stripe + regionale Zahlungsanbiet
 
 ### Migrations-Expertise + Tooling
 
-Fertige Module und Runbooks für Migration von VMware, OpenStack, Virtuozzo, OpenNebula. Aenix liefert Migration mit Erfahrung aus Produktions-Engagements.
+Fertige Module und Runbooks für Migration von VMware, OpenStack, Virtuozzo, OpenNebula. Ænix liefert Migration mit Erfahrung aus Produktions-Engagements.
 
 ### Fast Feature Delivery
 
@@ -110,8 +110,8 @@ Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 | Kundenseitiges Portal | DIY | cozyportal, gebrandet, inklusive |
 | Billing | DIY-Integration | WHMCS-nativ + Stripe + regionale Anbieter |
 | Multi-Tenancy | Project-Modell — limitiert | Tenant CRD mit Quotas / RBAC / Observability per Tenant |
-| Migration von VMware | Schwere Aufgabe | Produktisierte Module + Aenix-Expertise |
-| Vendor-Support | Community + Add-ons | Aenix Enterprise-Support ab 1.250 USD/Monat |
+| Migration von VMware | Schwere Aufgabe | Produktisierte Module + Ænix-Expertise |
+| Vendor-Support | Community + Add-ons | Ænix Enterprise-Support ab 1.250 USD/Monat |
 | Upgrade-Kadenz | Manuell / risikoreich | GitOps-managed, low-risk |
 
 ---
@@ -134,7 +134,7 @@ Diese Kunden nutzen Ænix Public Cloud Platform, um Multi-Tenant-Cloud-Produkte 
 
 ## Migrations-Pfade
 
-Aenix liefert Public Cloud Platform Migrationen mit produktisierten Modulen und Engagement-Expertise:
+Ænix liefert Public Cloud Platform Migrationen mit produktisierten Modulen und Engagement-Expertise:
 
 - **Von VMware Cloud Director / vSphere** — häufigster 2026-Trigger (Broadcom-Subscription-Druck)
 - **Von OpenStack** — Reduzierung operativer Komplexität; schnellere Feature-Velocity
@@ -168,7 +168,7 @@ Für Produkt-Teams, die Cozystack auf eigener / gemieteter Hardware (Hetzner, OV
 
 ## Architektur-Review buchen
 
-Erzählen Sie uns von Ihrem Hosting-Geschäft, aktuellen Stack und Kundenmix — wir richten ein fokussiertes Architektur-Review mit einem Aenix-Engineer ein und bestätigen den Public Cloud Platform Fit.
+Erzählen Sie uns von Ihrem Hosting-Geschäft, aktuellen Stack und Kundenmix — wir richten ein fokussiertes Architektur-Review mit einem Ænix-Engineer ein und bestätigen den Public Cloud Platform Fit.
 
 {{< pipedrive-form type="demo" >}}
 
@@ -176,4 +176,4 @@ Lieber ein kürzerer erster Schritt? [30-Minuten-Discovery-Call buchen](/de/kont
 
 ---
 
-*Ænix Public Cloud Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*
+*Ænix Public Cloud Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Ænix ist das Open-Core-Unternehmen.*

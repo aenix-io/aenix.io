@@ -97,7 +97,7 @@ The post-Broadcom virtualization market has three main open-source-friendly opti
 
 **Limits:**
 - Newer than Proxmox or VMware; smaller community.
-- Kubernetes operational expertise required (mitigated by Aenix support tier).
+- Kubernetes operational expertise required (mitigated by Ænix support tier).
 - Not optimized for single-tenant SMB use case (Proxmox better here).
 
 **Best for:** Service providers, regulated enterprises, multi-team platforms, AI/GPU operators, sovereign-cloud builders.
@@ -140,5 +140,5 @@ Rare in 2026; reverse migration usually doesn't make economic sense post-Broadco
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

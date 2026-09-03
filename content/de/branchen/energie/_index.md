@@ -34,7 +34,7 @@ faq:
     a: "Ja. Das Muster unterstützt Air-Gap-Betrieb für Operations Technology, getrennt vom IT-Netz. Das adressiert das Critical-Infrastructure-Sicherheitsmodell mit kinetischen und Cyber-Bedrohungen sowie den Regulator-Triple-Stack aus NIS2, sektoraler Energieregulatorik und cybersecurity-spezifischen Vorgaben."
   - q: "Wie passt die lange Abschreibungszyklus von Netz-Hardware zur Plattform?"
     a: "Netzinfrastruktur wird in Jahrzehnten abgeschrieben. Cozystack steht unter Apache 2.0 ohne Core-basierte Lizenzierung und ist ein CNCF-Projekt — das gibt einen langen Operationshorizont ohne Vendor-Lock-in und ohne Lizenzkosten, die mit Hardware-Refresh-Zyklen kollidieren."
-  - q: "Welche Ænix-Platform-Edition passt für Energieversorger?"
+  - q: "Welche Ænix-Plattform passt für Energieversorger?"
     a: "Die Private Cloud Platform deckt NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT ab. Für KI-getriebene Netzoptimierung, Forecasting und Predictive Maintenance ergänzt die AI Platform die nötige GPU- und KI-Infrastruktur."
   - q: "Eignet sich die Plattform für VMware-Ausstieg oder OpenStack-Modernisierung?"
     a: "Ja. KubeVirt betreibt bestehende VMs und neue Container nebeneinander auf einer Kubernetes-API, was die Migration weg von VMware oder einer alternden OpenStack-Umgebung ohne Komplettumbau ermöglicht. Apache-2.0-Lizenzierung entfernt zudem die Core-basierten Lizenzkosten klassischer Virtualisierungsstacks."
@@ -42,7 +42,7 @@ faq:
 
 **Energieversorger stehen 2026 vor einer spezifischen Kombination von Drücken: NIS2-Klassifikation als wesentliche Entität (Energie ist im Geltungsbereich), souveräne Cloud-Anforderungen für Critical-Infrastructure-Daten, Edge-Compute an Umspannstationen und Erzeugungsstandorten, KI-getriebene Netzoptimierung und Forecasting sowie die operative Realität, dass Hardware-Refresh-Zyklen für Netzinfrastruktur in Jahrzehnten gemessen werden, nicht in Jahren. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, in regionalen Leitstellen und an der Umspannstation-Edge läuft — unter einem Operations-Modell mit NIS2-konformen Kontrollen.**
 
-Aenix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das gleiche Multi-Site-, NIS2-konforme, souveränitätsfreundliche Plattform-Muster an, das bei unseren Kunden aus dem Finanzdienstleistungs- und Telekommunikationssektor läuft. Die energiespezifische Arbeit legt den Schwerpunkt auf IT/OT-Konvergenz, Edge-Resilienz und Air-Gap-Support für OT-Systeme.
+Ænix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das gleiche Multi-Site-, NIS2-konforme, souveränitätsfreundliche Plattform-Muster an, das bei unseren Kunden aus dem Finanzdienstleistungs- und Telekommunikationssektor läuft. Die energiespezifische Arbeit legt den Schwerpunkt auf IT/OT-Konvergenz, Edge-Resilienz und Air-Gap-Support für OT-Systeme.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT; **[AI Platform](/de/produkte/ai-platform/)** für Netzoptimierungs-KI-Workloads.
 
@@ -128,7 +128,7 @@ Anonyme Proof Points:
 
 ---
 
-## Wie Aenix mit Energieversorgern zusammenarbeitet
+## Wie Ænix mit Energieversorgern zusammenarbeitet
 
 Standard-**[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit energiespezifischen Schwerpunkten:
 
@@ -167,4 +167,4 @@ Oder mehr lesen:
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen Cloud-native Infrastruktur für Energieversorger, Telekommunikation, Banken und Critical-Infrastructure-Organisationen in der EU, DACH und Zentralasien.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen Cloud-native Infrastruktur für Energieversorger, Telekommunikation, Banken und Critical-Infrastructure-Organisationen in der EU, DACH und Zentralasien.*

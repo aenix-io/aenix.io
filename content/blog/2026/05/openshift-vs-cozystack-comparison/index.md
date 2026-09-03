@@ -44,7 +44,7 @@ quiz:
 
 **This is the long-form companion to our [OpenShift alternative page](/alternatives/openshift-alternative). It walks through OpenShift Virtualization vs Cozystack — both KubeVirt-based, both production-ready, but with different commercial and operational profiles.**
 
-OpenShift Virtualization (Red Hat) and Cozystack (Aenix / CNCF Project) are the two most-mature KubeVirt-based platforms in 2026. They share architectural foundations but differ in commercial model, operational footprint, and vendor relationship.
+OpenShift Virtualization (Red Hat) and Cozystack (Ænix / CNCF Project) are the two most-mature KubeVirt-based platforms in 2026. They share architectural foundations but differ in commercial model, operational footprint, and vendor relationship.
 
 ## Shared foundations
 
@@ -56,7 +56,7 @@ Both platforms run KubeVirt for VM workloads alongside Kubernetes containers. Bo
 
 **OpenShift Virtualization:** Red Hat commercial subscription. Per-core or per-socket pricing. Includes Red Hat support, certification, and ecosystem access.
 
-**Cozystack:** Apache 2.0 open source. Aenix offers commercial support tiers; you can self-deploy with no commercial relationship.
+**Cozystack:** Apache 2.0 open source. Ænix offers commercial support tiers; you can self-deploy with no commercial relationship.
 
 For organizations standardized on Red Hat procurement, OpenShift is administratively simpler. For organizations seeking open-source-first or service-provider economics, Cozystack fits better.
 
@@ -76,7 +76,7 @@ For organizations standardized on Red Hat procurement, OpenShift is administrati
 
 **OpenShift:** Red Hat / IBM relationship. Roadmap shaped by Red Hat's commercial decisions.
 
-**Cozystack:** open-source community-governed (CNCF Project). Aenix is the largest contributor but not the owner. Roadmap shaped by community + commercial users.
+**Cozystack:** open-source community-governed (CNCF Project). Ænix is the largest contributor but not the owner. Roadmap shaped by community + commercial users.
 
 ### Ecosystem integration
 
@@ -120,5 +120,5 @@ For a specific evaluation, the assessment phase of either engagement helps clari
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

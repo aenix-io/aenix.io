@@ -47,7 +47,7 @@ faq:
 
 **Öffentlicher Sektor und quasi-öffentliche Organisationen stehen 2026 vor einer besonderen Kombination von Beschränkungen: beschaffungspflichtige Souveränität (EU-Mitgliedstaaten, Kasachstan, mehrere APAC-Jurisdiktionen), NIS2-Compliance (Scoping wesentlicher Entitäten), Datenlokalisierungs-Regeln und zunehmender KI-Workload-Druck auf Datenklassen, die das Perimeter nicht verlassen können. Die architektonische Antwort ist strukturell souverän, kundenkontrolliert und audit-bereit — gebaut auf Infrastruktur, die die Organisation tatsächlich besitzt.**
 
-Aenix baut Plattformen für öffentliche und quasi-öffentliche Organisationen in der EU und Zentralasien. Open-Source-Foundation ([Cozystack](/de/produkte/cozystack/)), beschaffungsportal-bereit, regulator-konform.
+Ænix baut Plattformen für öffentliche und quasi-öffentliche Organisationen in der EU und Zentralasien. Open-Source-Foundation ([Cozystack](/de/produkte/cozystack/)), beschaffungsportal-bereit, regulator-konform.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Cloud mit strikt kundenkontrollierten Schlüsseln + Air-Gap-Option; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große öffentliche-Sektor-Cloud-Produkt-Launches im Hyperscaler-nahen Maßstab.
 
@@ -65,7 +65,7 @@ Aenix baut Plattformen für öffentliche und quasi-öffentliche Organisationen i
 - **Souveräne KI-Infrastruktur** — für Abteilungen, die sensible Bürgerdaten mit KI-Use-Cases verarbeiten. Siehe **[Souveräne KI](/de/loesungen/sovereign-ai/)**.
 - **Daten-Lokalisierungs-Plattform** — wo die Datenklasse auf jeder Schicht in der Jurisdiktion bleiben muss.
 
-Die meisten Engagements umfassen formale Beschaffungsprozesse; Aenix akzeptiert RFI / RFP über Standardkanäle in EU-Mitgliedstaaten und Kasachstan.
+Die meisten Engagements umfassen formale Beschaffungsprozesse; Ænix akzeptiert RFI / RFP über Standardkanäle in EU-Mitgliedstaaten und Kasachstan.
 
 ---
 
@@ -85,7 +85,7 @@ Die meisten Engagements umfassen formale Beschaffungsprozesse; Aenix akzeptiert 
 
 ---
 
-## Wie Aenix mit öffentlichen-Sektor-Organisationen zusammenarbeitet
+## Wie Ænix mit öffentlichen-Sektor-Organisationen zusammenarbeitet
 
 Das Standard-Engagement: **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit für den öffentlichen Sektor betonten Workstreams — Souveränität + Regulator-Gap (NIS2 / sektoral) + Beschaffungsprozess-Bereitschaft + Capability-Transfer an interne Teams.
 
@@ -107,7 +107,7 @@ Die Phase-2-Implementierung läuft End-to-End: von Hardware über Plattform bis 
 
 {{< clients >}}
 
-*Kunden-Evidenz-Sektion — wird von Aenix mit namentlichen Referenzen befüllt, wo Berechtigungen es erlauben. Anonyme Proof Points:*
+*Kunden-Evidenz-Sektion — wird von Ænix mit namentlichen Referenzen befüllt, wo Berechtigungen es erlauben. Anonyme Proof Points:*
 - Eine zentralstaatliche IT-Services-Agentur betreibt eine gemeinsame souveräne Cloud für Ministerien auf Cozystack.
 - Eine regionale Regierung mit Anforderungen an die Residenz klassifizierter Daten betreibt ein air-gapped Cozystack-Deployment.
 - Ein quasi-öffentlicher Infrastruktur-Betreiber (Transport, Energie, Wasser) unter NIS2-Klassifizierung als wesentliche Entität.
@@ -129,7 +129,7 @@ Wir antworten mit: Unternehmensprofil, früheren öffentlichen-Sektor-Referenzen
 
 ---
 
-## Warum Aenix speziell für den öffentlichen Sektor
+## Warum Ænix speziell für den öffentlichen Sektor
 
 - **Open-Source-Plattform** — Cozystack ist Apache 2.0, CNCF-Projekt. Kein proprietäres Lock-in. Source-available Architektur für die Bewertung.
 - **EU- + Zentralasien-Teams.** Abgestimmt auf EU-Regulatorik-Frameworks; Erfahrung mit KZ-Beschaffungsprozessen.
@@ -153,4 +153,4 @@ Oder mehr lesen:
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*

@@ -121,4 +121,4 @@ Wenn Sie evaluieren, wo Proxmox für Ihren Use Case aufhört, die richtige Wahl 
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*

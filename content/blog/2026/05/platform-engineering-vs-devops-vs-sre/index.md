@@ -48,7 +48,7 @@ quiz:
 
 The terms platform engineering, DevOps, and SRE have been used interchangeably, in opposition, and as overlapping practices for nearly a decade. By 2026 the industry has roughly converged — but only roughly. Different companies still use the same words for different jobs, and the resulting org-design conversations stall because nobody quite agrees on what they're discussing.
 
-This is the working version we use at Aenix when we engage with a customer's engineering organization.
+This is the working version we use at Ænix when we engage with a customer's engineering organization.
 
 ## The three terms in one paragraph each
 
@@ -224,7 +224,7 @@ It's the wrong call when:
 
 ## How to start
 
-If your organization fits the profile and the pressure is real, the structured next step is an assessment. Aenix runs this as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — written, fixed-price, with named workstream owners. The output is a plan you execute internally or with us.
+If your organization fits the profile and the pressure is real, the structured next step is an assessment. Ænix runs this as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — written, fixed-price, with named workstream owners. The output is a plan you execute internally or with us.
 
 For the engagement details and pricing, see the **[platform engineering services page](/services/platform-engineering/)**.
 
@@ -239,5 +239,5 @@ For the engagement details and pricing, see the **[platform engineering services
 
 ---
 
-*Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build platform engineering programs across the EU, DACH, and Central Asia.*
+*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build platform engineering programs across the EU, DACH, and Central Asia.*
 

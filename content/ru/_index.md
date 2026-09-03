@@ -1,5 +1,5 @@
 ---
-title: "Aenix по-русски"
+title: "Ænix по-русски"
 description: "Русскоязычные страницы aenix.io: воркшопы и события. Основной сайт — на английском."
 language: "ru"
 hreflang_en: "/"

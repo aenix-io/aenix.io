@@ -50,7 +50,7 @@ Enterprise customers increasingly expect cloud capabilities from their MSPs. The
 
 ## Architecture pattern
 
-- **Multi-tier Tenant CRD** — Aenix → MSP → MSP customers
+- **Multi-tier Tenant CRD** — Ænix → MSP → MSP customers
 - **Per-tier isolation** — RBAC, quotas, observability scope, billing
 - **Branded customer-facing portal** — cozyportal customized per MSP
 - **WHMCS-integrated billing** — flows through MSP's customer-management
@@ -59,7 +59,7 @@ Enterprise customers increasingly expect cloud capabilities from their MSPs. The
 ## Reseller economics
 
 For mid-size MSP (50-500 customers):
-- **Platform cost** — Aenix engagement + hardware + ops
+- **Platform cost** — Ænix engagement + hardware + ops
 - **Per-customer cost** — incremental hardware/storage/bandwidth
 - **MSP customer pricing** — typically 30-50% above raw platform cost
 - **Margin** — covers MSP support, sales, operations
@@ -82,5 +82,5 @@ Total elapsed: 6-12 months.
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

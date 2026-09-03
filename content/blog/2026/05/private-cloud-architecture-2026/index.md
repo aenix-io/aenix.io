@@ -161,7 +161,7 @@ Cilium has become the default CNI for new deployments. NSX-equivalent (Cilium L7
 For service-provider model: Tenant CRD (Cozystack) is the default. For internal multi-BU: namespace-based + RBAC is sufficient. For absolute isolation: cluster-per-tenant (operationally expensive).
 
 ### Decision 5: operational model
-Customer-operated (you run it), vendor-operated (Aenix or similar runs it for you), or hybrid (you operate; vendor provides 2nd-line). Decision driven by internal team capacity and risk appetite.
+Customer-operated (you run it), vendor-operated (Ænix or similar runs it for you), or hybrid (you operate; vendor provides 2nd-line). Decision driven by internal team capacity and risk appetite.
 
 ## Capacity sizing
 
@@ -202,7 +202,7 @@ Year 4 hardware refresh ignored in initial economics. The refresh cliff arrives 
 
 ## How to start
 
-A private cloud architecture review is the cheapest insurance before commitment. Aenix runs this as a 5-15 day focused engagement, or as part of a broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+A private cloud architecture review is the cheapest insurance before commitment. Ænix runs this as a 5-15 day focused engagement, or as part of a broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 For details see the **[private cloud consulting services page](/services/private-cloud-consulting/)**.
 
@@ -218,5 +218,5 @@ For details see the **[private cloud consulting services page](/services/private
 
 ---
 
-*Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 

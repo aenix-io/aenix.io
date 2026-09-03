@@ -42,7 +42,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Sie verantworten die AI/ML-Plattform, und die Zwänge häufen sich: GPU-Kosten und -Knappheit, Daten, die die Jurisdiktion nicht verlassen dürfen, und Kunden, die keinen US-Modell-Endpoint akzeptieren. Betreiben Sie Training und Inferenz auf eigenen GPUs, mandantenfähig, ohne Hyperscaler-Lock-in. Aenix liefert das schlüsselfertig oder baut es mit Ihnen.**
+**Sie verantworten die AI/ML-Plattform, und die Zwänge häufen sich: GPU-Kosten und -Knappheit, Daten, die die Jurisdiktion nicht verlassen dürfen, und Kunden, die keinen US-Modell-Endpoint akzeptieren. Betreiben Sie Training und Inferenz auf eigenen GPUs, mandantenfähig, ohne Hyperscaler-Lock-in. Ænix liefert das schlüsselfertig oder baut es mit Ihnen.**
 
 > **Passt zu:** **[Souveräne KI](/de/loesungen/sovereign-ai/)** und **[Ænix Platform AI/ML](/de/produkte/)** für One-Click-GPU-Inferenz — oder einem Aufbauprojekt nach Ihrem Stack. Offener Kern: **[Cozystack](https://cozystack.io)**.
 
@@ -74,18 +74,18 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ---
 
-## Zwei Wege mit Aenix
+## Zwei Wege mit Ænix
 
 **1. Schlüsselfertige KI-Plattform.** Die [Ænix Platform AI/ML](/de/produkte/) ergänzt den mandantenfähigen Cozystack-Kern um GPU-Scheduling und One-Click-LLM/vLLM-Inferenz — Self-Service für Ihre Teams, auf Ihrer Hardware, mit Enterprise-SLA.
 
-**2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Aenix Ihr ausgelagertes Engineering-Team** für ein KI-Plattform-Projekt — GPU-Topologie, Scheduling, Inferenz-Serving und [Souveräne-KI](/de/loesungen/sovereign-ai/)-Kontrollen, entworfen um Ihre Modelle und Daten. Siehe [Dienstleistungen](/de/dienstleistungen/).
+**2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Engineering-Team** für ein KI-Plattform-Projekt — GPU-Topologie, Scheduling, Inferenz-Serving und [Souveräne-KI](/de/loesungen/sovereign-ai/)-Kontrollen, entworfen um Ihre Modelle und Daten. Siehe [Dienstleistungen](/de/dienstleistungen/).
 
 ---
 
 
 ---
 
-## Warum AI/ML-Leiter Aenix wählen
+## Warum AI/ML-Leiter Ænix wählen
 
 - **Souverän by construction.** Sensible Daten und Modelle bleiben auf Ihrer Hardware, in Ihrer Jurisdiktion.
 - **Mandantenfähige GPU statt Silos.** Knappe GPUs über Teams teilen, mit Quotas und Isolation.
@@ -107,7 +107,7 @@ Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-ai-ml/ ; hreflang de self, en → /for/head-of-ai-ml/.

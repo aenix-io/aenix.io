@@ -27,7 +27,7 @@ quick_facts:
     value: "Kundenkontrollierte Verschlüsselungsschlüssel je Datenschicht, Lieferanten-Transparenz, unveränderbares Audit-Logging, protokollierter Anbieter-Zugang, Air-Gap-Option"
   - label: "Engagement"
     value: "Über öffentliche Beschaffung (RFI/RFP); AENIX s.r.o. (Tschechien) für EU, AENIX INC (Delaware) für US; mehrjährige Programme, im Beschaffungsverfahren bepreist"
-  - label: "Passende Edition"
+  - label: "Passende Plattform"
     value: "Ænix Private Cloud Platform (kundenkontrollierte Schlüssel + Air-Gap) oder Public Cloud Platform (großskalige souveräne-Cloud-Produkt-Launches)"
 
 faq:
@@ -41,13 +41,13 @@ faq:
     a: "Für nationale und regionale Regierungs-IT-Services mit geteilter souveräner Cloud, Telcos mit souveräner-Cloud-Produkt-Linie, regionale Operatoren in Jurisdiktionen mit Souveränitätsmandaten und quasi-öffentliche Entitäten aus Transport, Energie und Banking-adjacent-Sektoren."
   - q: "Wie läuft das Engagement mit Aenix ab?"
     a: "Über öffentliche Beschaffung mittels RFI/RFP-Prozessen in EU-Mitgliedstaaten und Kasachstan. AENIX s.r.o. (Tschechien) handhabt die EU-Beschaffung, AENIX INC (Delaware) die US-Beschaffung. Es handelt sich um mehrjährige Programme und werden im Beschaffungsverfahren selbst bepreist."
-  - q: "Welche Ænix-Platform-Edition passt zu einem souveränen Cloud-Produkt?"
+  - q: "Welche Ænix-Plattform passt zu einem souveränen Cloud-Produkt?"
     a: "Die Private Cloud Platform für souveräne Clouds mit strikt kundenkontrollierten Schlüsseln und Air-Gap-Support; die Public Cloud Platform für großskalige souveräne-Cloud-Produkt-Launches in hyperscaler-naher Größenordnung."
 ---
 
 **Souveräne Cloud ist 2026 eine beschaffungspflichtige Realität in EU-Mitgliedstaaten, Kasachstan, mehreren APAC-Jurisdiktionen und einer wachsenden Liste weiterer. Eine zu bauen bedeutet, für substantielle Souveränität zu designen — nicht nur Marketing-Claims — einschließlich Custody der Verschlüsselungsschlüssel, Lieferketten-Transparenz, Audit-Bereitschaft und regulator-ausgerichtetem operativen Modell.**
 
-Aenix baut souveräne Cloud-Produkte auf Cozystack für Regierungen, quasi-öffentliche Entitäten und regionale Operatoren, die souveränitätspflichtige Märkte bedienen.
+Ænix baut souveräne Cloud-Produkte auf Cozystack für Regierungen, quasi-öffentliche Entitäten und regionale Operatoren, die souveränitätspflichtige Märkte bedienen.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Clouds mit strikten kundenkontrollierten Schlüsseln + Air-Gap-Support; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große souveräne-Cloud-Produkt-Launches in hyperscaler-naher Größenordnung.
 
@@ -110,7 +110,7 @@ Für spezifische Sovereign-Cloud-Anforderungen (BSI C5, SecNumCloud, EUCS) — i
 
 ## Beschaffungs-Bereitschaft
 
-Aenix akzeptiert RFI / RFP über:
+Ænix akzeptiert RFI / RFP über:
 - **EU-Mitgliedstaaten** — TED, nationale E-Procurement-Portale
 - **Kasachstan** — goszakup.gov.kz, mitwork.kz, zakup.sk.kz, Unified Procurement Platform
 - **Andere Jurisdiktionen** — pro Fall besprochen
@@ -128,4 +128,4 @@ Aenix akzeptiert RFI / RFP über:
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*

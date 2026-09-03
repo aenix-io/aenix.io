@@ -39,9 +39,9 @@ faq:
     a: "White-label clouds built by Aenix ship with production-ready WHMCS-integrated billing, available in two integration modes, so you can bill your own customers under your brand alongside the white-labelable cozyportal."
 ---
 
-**Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the customer-relationship advantages MSPs already have. White-label cloud — branded with the MSP's identity, run on shared or dedicated infrastructure — is the realistic answer. Aenix builds these end-to-end.**
+**Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the customer-relationship advantages MSPs already have. White-label cloud — branded with the MSP's identity, run on shared or dedicated infrastructure — is the realistic answer. Ænix builds these end-to-end.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — fully white-labelable cozyportal, multi-tier reseller model (Aenix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — fully white-labelable cozyportal, multi-tier reseller model (Ænix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -106,6 +106,6 @@ faq:
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
 <!-- Word count: ~400. -->

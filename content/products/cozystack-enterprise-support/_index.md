@@ -41,7 +41,7 @@ aliases:
 ---
 
 
-**Aenix enterprise support covers self-run Cozystack environments on a standalone retainer, and Ænix platform deployments as part of the engagement. Direct access to the engineers who maintain Cozystack and ship Ænix Platform.**
+**Ænix enterprise support covers self-run Cozystack environments on a standalone retainer, and Ænix platform deployments as part of the engagement. Direct access to the engineers who maintain Cozystack and ship Ænix Platform.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -64,7 +64,7 @@ If you have an Ænix platform engagement (Public Cloud, Private Cloud or AI Plat
 
 ### Path 2 — Cozystack support (self-running organizations)
 
-If your team runs Cozystack itself (without an Ænix platform licence), Aenix can provide support on retainer basis. This is for organizations with platform engineering capacity who want direct access to Cozystack maintainers without the full Ænix platform commitment.
+If your team runs Cozystack itself (without an Ænix platform licence), Ænix can provide support on retainer basis. This is for organizations with platform engineering capacity who want direct access to Cozystack maintainers without the full Ænix platform commitment.
 
 Coverage:
 - Architecture review and best-practice guidance
@@ -85,7 +85,7 @@ Engagement: monthly retainer or pay-per-incident.
 | Architecture review | Quarterly | Monthly | Per-incident-as-needed |
 | Incident response | P1: 4-hour | P1: 1-hour | P1: 30-minute |
 | Upgrade support | Self-service guides | Guided upgrades | Coordinated with regulators |
-| Compliance reporting | Self-reporting | Aenix-provided | Sectoral compliance documentation |
+| Compliance reporting | Self-reporting | Ænix-provided | Sectoral compliance documentation |
 | Dedicated account manager | No | Yes | Yes + sectoral lead |
 | Customer success reviews | Annual | Quarterly | Quarterly + regulatory |
 
@@ -97,27 +97,27 @@ Engagement: monthly retainer or pay-per-incident.
 
 Community support (free) — GitHub issues, Slack channel, Telegram community for Cozystack. Best-effort responses from maintainers and community.
 
-Enterprise support (commercial) — Aenix engineers under SLA contract. Direct access, response time guarantees, named technical account manager, custom-feature consideration, compliance support.
+Enterprise support (commercial) — Ænix engineers under SLA contract. Direct access, response time guarantees, named technical account manager, custom-feature consideration, compliance support.
 
 ### Can I get enterprise support without Ænix Platform?
 
-Yes. Aenix offers Cozystack support on retainer basis for organizations running Cozystack themselves. Discovery call to scope and price.
+Yes. Ænix offers Cozystack support on retainer basis for organizations running Cozystack themselves. Discovery call to scope and price.
 
-### Are Aenix support engineers the same as Cozystack maintainers?
+### Are Ænix support engineers the same as Cozystack maintainers?
 
 Yes. The engineers providing enterprise support are the same engineers who maintain Cozystack and build Ænix Platform features. No outsourced tier-1 / tier-2 escalation chain.
 
 ### What about 24/7 follow-the-sun coverage?
 
-Aenix engineering teams are distributed across the EU and Central Asia. Enterprise+ support tiers include 24/7 coverage; specific time-zone coverage scoped per engagement.
+Ænix engineering teams are distributed across the EU and Central Asia. Enterprise+ support tiers include 24/7 coverage; specific time-zone coverage scoped per engagement.
 
 ### How does this compare to Red Hat OpenShift support?
 
-OpenShift support is bundled with Red Hat subscription per-CPU. Aenix support is bundled with Ænix Platform engagement (project-based, not per-CPU). For self-running Cozystack, Aenix support is retainer-based — different model from OpenShift's licensing.
+OpenShift support is bundled with Red Hat subscription per-CPU. Ænix support is bundled with Ænix Platform engagement (project-based, not per-CPU). For self-running Cozystack, Ænix support is retainer-based — different model from OpenShift's licensing.
 
 ### What if I need engineering capacity beyond support?
 
-Aenix engagement model includes engineering services beyond support: feature development, architecture work, migration projects, managed operations. [See pricing](/pricing/) for full engagement tiers.
+Ænix engagement model includes engineering services beyond support: feature development, architecture work, migration projects, managed operations. [See pricing](/pricing/) for full engagement tiers.
 
 ---
 
@@ -131,4 +131,4 @@ Book a discovery call to scope your support requirements.
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) (CNCF Project) and the maker of Ænix Platform.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) (CNCF Project) and the maker of Ænix Platform.*

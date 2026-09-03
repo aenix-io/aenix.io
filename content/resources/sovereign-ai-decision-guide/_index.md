@@ -36,7 +36,7 @@ faq:
     a: "The decision guide is a free PDF download. The productized infrastructure it maps to, Ænix Platform, starts at Basic $1,250/mo for up to 10 nodes, with Standard $3,000, Plus $5,500, and Enterprise on custom pricing."
 ---
 
-**A 12-page decision guide for organizations evaluating sovereign AI infrastructure. Visual flowchart leads through 7 key decisions: trigger profile, regulatory scope, model selection, hardware sizing, multi-tenancy model, sovereignty controls, operational model. Used by Aenix during sovereign AI engagement scoping.**
+**A 12-page decision guide for organizations evaluating sovereign AI infrastructure. Visual flowchart leads through 7 key decisions: trigger profile, regulatory scope, model selection, hardware sizing, multi-tenancy model, sovereignty controls, operational model. Used by Ænix during sovereign AI engagement scoping.**
 
 > **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — turnkey AI infrastructure with multi-tenant GPU scheduling, ready blueprints for inference + fine-tuning + RAG, sovereignty controls. The decision guide outputs an architecture pattern that maps directly to AI Platform deployment scope.
 
@@ -108,6 +108,6 @@ The guide gives you the architectural framework to make decisions. For specific 
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
 <!-- Word count: ~450. -->

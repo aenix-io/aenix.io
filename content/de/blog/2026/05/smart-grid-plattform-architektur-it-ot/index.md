@@ -82,5 +82,5 @@ Typische Hardware-Größe für mittelgroßen Energieversorger (5-10 GW): 16-64 G
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

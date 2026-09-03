@@ -54,7 +54,7 @@ aliases:
 
 **Verkaufen Sie Kubernetes-Cluster, Managed Datenbanken, virtuelle Maschinen, Message-Broker, Objektspeicher und GPU direkt aus WHMCS. Ihre Kunden bestellen, Sie rechnen ab, Cozystack provisioniert — ohne separate Control Plane, ohne Rip-and-Replace.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — die vollständige Hosting-Anbieter-Edition (gebrandetes Portal, Katalog, Support), zu der diese WHMCS-Integration gehört. Neu bei Cozystack? Starten Sie mit **[Cozystack](/de/produkte/cozystack/)**.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — die vollständige Hosting-Anbieter-Plattform (gebrandetes Portal, Katalog, Support), zu der diese WHMCS-Integration gehört. Neu bei Cozystack? Starten Sie mit **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -65,7 +65,7 @@ aliases:
 <div class="diagram">
 <div class="diagram__node"><b>WHMCS-Panel</b><div class="diagram__chips"><span>Kunden bestellen</span></div></div>
 <div class="diagram__conn">bestellt</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix-WHMCS-Modul</b><div class="diagram__chips"><span>Provisionierung</span><span>Messung</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-WHMCS-Modul</b><div class="diagram__chips"><span>Provisionierung</span><span>Messung</span></div></div>
 <div class="diagram__conn">provisioniert on demand</div>
 <div class="diagram__node"><b>Cozystack-Servicekatalog</b><div class="diagram__chips"><span>Kubernetes</span><span>Datenbanken</span><span>VMs</span><span>Message-Broker</span><span>Objektspeicher</span><span>GPU</span></div></div>
 <div class="diagram__conn">Nutzung gemessen</div>
@@ -120,7 +120,7 @@ Wenn Sie ein Hosting-Geschäft oder eine Cloud auf WHMCS betreiben, können Sie 
 - **Mehr Marge pro Kunde** — moderne Services an die bestehende Basis verkaufen, statt über den Shared-Hosting-Preis zu konkurrieren.
 - **Keine Plattform zu bauen** — Cozystack ist die Cloud-Plattform; Sie bekommen den Katalog ohne ein mehrjähriges Platform-Engineering-Projekt.
 
-Das WHMCS-Integrationsmodul ist ein **proprietäres Aenix-Produkt**, ausgeliefert und unterstützt vom Team hinter Cozystack.
+Das WHMCS-Integrationsmodul ist ein **proprietäres Ænix-Produkt**, ausgeliefert und unterstützt vom Team hinter Cozystack.
 
 ---
 
@@ -135,4 +135,4 @@ Nicht auf WHMCS oder etwas anderes im Einsatz? Wir helfen Hostern und Clouds auc
 Gerade wenn Sie schon auf WHMCS sind, ist das der schnellste Weg, Kubernetes, Datenbanken, VMs und GPU zu verkaufen und mehr aus Ihren bestehenden Kunden zu erlösen. Siehe die **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** und die anonymisierte **[Fallstudie souveräne Public Cloud](/de/case-studies/sovereign-public-cloud/)**.
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*

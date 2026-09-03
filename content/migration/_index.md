@@ -76,7 +76,7 @@ Legacy CloudStack modernization patterns.
 - **Virtuozzo / OpenVZ** → KubeVirt-on-Cozystack
 - **CloudStack** → Kubernetes / KubeVirt
 
-For non-standard environments, Aenix engineering services build custom migration tooling as part of the engagement.
+For non-standard environments, Ænix engineering services build custom migration tooling as part of the engagement.
 
 </div>
 </div>

@@ -48,7 +48,7 @@ faq:
 
 **Energy operators in 2026 face a specific combination of pressures: NIS2 essential-entity classification (energy is in scope), sovereign-cloud requirements for critical-infrastructure data, edge compute at substations and generation sites, AI-driven grid optimization and forecasting, and the operational reality that hardware refresh cycles for grid infrastructure are measured in decades, not years. The architectural answer is a coherent platform that runs at HQ, regional control centres, and substation edge — under one operational model with NIS2-aligned controls.**
 
-Aenix is currently piloting Cozystack with an energy operator and applies the same multi-site, NIS2-aligned, sovereignty-friendly platform pattern that runs at our financial-services and telecom customers. The energy-specific work emphasizes IT/OT convergence, edge resilience, and air-gap support for OT systems.
+Ænix is currently piloting Cozystack with an energy operator and applies the same multi-site, NIS2-aligned, sovereignty-friendly platform pattern that runs at our financial-services and telecom customers. The energy-specific work emphasizes IT/OT convergence, edge resilience, and air-gap support for OT systems.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for NIS2-aligned multi-site architecture with air-gap option for OT; **[AI Platform](/products/ai-platform/)** for grid-optimization AI workloads.
 
@@ -134,7 +134,7 @@ Anonymous proof points:
 
 ---
 
-## How Aenix engages with energy operators
+## How Ænix engages with energy operators
 
 Standard **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with energy-specific workstream emphasis:
 
@@ -173,8 +173,8 @@ Or read more:
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
 
-<!-- SEO: title "Cloud Platform for Energy Operators — NIS2-Aligned, Edge-Ready, Sovereign | Aenix"
+<!-- SEO: title "Cloud Platform for Energy Operators — NIS2-Aligned, Edge-Ready, Sovereign | Ænix"
 Description (≤155): "Cozystack for energy: NIS2-aligned platform, multi-site (central + regional + substation edge), AI for grid forecasting, air-gapped OT boundary."
 Word count: ~1100. -->

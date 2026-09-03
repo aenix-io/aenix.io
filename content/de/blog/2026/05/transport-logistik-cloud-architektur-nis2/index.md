@@ -74,5 +74,5 @@ Standard-Article-21+23-Mapping; transport-spezifisch:
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

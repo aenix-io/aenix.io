@@ -62,7 +62,7 @@ For broader VMware-alternatives evaluation, see **[VMware alternatives listicle]
 | **Backup/DR** | Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
 | **GPU for VMs** | NVIDIA vGPU under Horizon | NVIDIA vGPU + KubeVirt |
 | **Air-gap** | Supported (extra licensing) | Supported (no extra cost) |
-| **Ops model** | Vendor support requires environment access | Aenix advisory + GitOps PR review (no kubectl access needed) |
+| **Ops model** | Vendor support requires environment access | Ænix advisory + GitOps PR review (no kubectl access needed) |
 
 </div>
 
@@ -80,7 +80,7 @@ For broader VMware-alternatives evaluation, see **[VMware alternatives listicle]
 
 ## Where Cozystack is genuinely better
 
-- **Pricing** — no per-CPU / per-socket subscription. Hardware + chosen Aenix tier.
+- **Pricing** — no per-CPU / per-socket subscription. Hardware + chosen Ænix tier.
 - **Multi-tenancy** — Tenant CRD is native; vCD is bolted-on legacy.
 - **Container workloads** — Cozystack is Kubernetes-native, containers and VMs coexist on one platform. Tanzu is OpenShift-style add-on for VMware.
 - **Sovereignty** — open source on customer hardware with customer-controlled keys.
@@ -116,8 +116,8 @@ Cohort-based migration; aligned with VCF subscription expirations.
 For a 200-VM estate at typical VMware VCF pricing:
 
 - **Year 1 VMware VCF subscription:** ~$X (varies; recent pipeline shows 2-5× original deal pricing)
-- **Year 1 migration cost:** assessment + Cozystack platform build + migration labor + Aenix support
-- **Year 2 onwards Cozystack TCO:** hardware refresh / depreciation + Aenix support tier
+- **Year 1 migration cost:** assessment + Cozystack platform build + migration labor + Ænix support
+- **Year 2 onwards Cozystack TCO:** hardware refresh / depreciation + Ænix support tier
 - **Net cumulative position:** typically positive by end of Year 2; substantially positive by end of Year 3
 
 Honest TCO modelling is part of the assessment phase.
@@ -136,7 +136,7 @@ Honest TCO modelling is part of the assessment phase.
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "Cozystack vs VMware — Head-to-Head Comparison | Aenix"
+<!-- SEO: title "Cozystack vs VMware — Head-to-Head Comparison | Ænix"
 Word count: ~600. -->

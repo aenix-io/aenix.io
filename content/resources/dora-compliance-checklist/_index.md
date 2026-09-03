@@ -41,7 +41,7 @@ faq:
     a: "Cozystack is open source under Apache 2.0 with no per-CPU or per-core licensing, and is a CNCF Sandbox project. Aenix offers Ænix Platform, a productized commercial offering, plus services on top, with tiers from Basic at 1,250 USD per month."
 ---
 
-**A 35-point checklist for financial entities and ICT third-party providers evaluating DORA compliance posture for their cloud infrastructure. Covers Article 21 risk management, Article 23 incident reporting, Article 28 supplier risk, encryption, audit-readiness. Used by Aenix during DORA-aligned readiness engagements.**
+**A 35-point checklist for financial entities and ICT third-party providers evaluating DORA compliance posture for their cloud infrastructure. Covers Article 21 risk management, Article 23 incident reporting, Article 28 supplier risk, encryption, audit-readiness. Used by Ænix during DORA-aligned readiness engagements.**
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — DORA-aligned by design (customer-controlled keys, audit-ready logging, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness, supplier transparency).
 
@@ -67,7 +67,7 @@ faq:
 <div class="diagram">
 <div class="diagram__node"><b>35-point self-assessment</b><div class="diagram__chips"><span>Article 21 + 23</span><span>Free PDF</span></div></div>
 <div class="diagram__conn">feeds</div>
-<div class="diagram__node diagram__node--brand"><b>DORA-aligned readiness engagement</b><div class="diagram__chips"><span>Used by Aenix</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>DORA-aligned readiness engagement</b><div class="diagram__chips"><span>Used by Ænix</span></div></div>
 <div class="diagram__conn">prepares</div>
 <div class="diagram__node"><b>Supervisor dialog</b><div class="diagram__chips"><span>Tested exit-readiness</span></div></div>
 </div>
@@ -98,7 +98,7 @@ The checklist gives you the working surface to assess your current cloud archite
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
 <!-- Word count: ~350.
 Lead magnet for financial-services audience. -->

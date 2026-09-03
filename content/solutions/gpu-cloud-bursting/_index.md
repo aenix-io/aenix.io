@@ -60,7 +60,7 @@ faq:
 
 # GPU cloud bursting: multi-cloud GPU-as-a-service on your own platform
 
-**Own the baseline, rent only the peaks. Cloud bursting lets you run steady GPU workloads on hardware you control and spill inference or training spikes into public or sovereign clouds on demand — then tear the extra capacity down. Aenix builds this as GPU-as-a-service on a single Kubernetes platform, so your teams get elastic GPU without hyperscaler lock-in, opaque billing, or a full migration.**
+**Own the baseline, rent only the peaks. Cloud bursting lets you run steady GPU workloads on hardware you control and spill inference or training spikes into public or sovereign clouds on demand — then tear the extra capacity down. Ænix builds this as GPU-as-a-service on a single Kubernetes platform, so your teams get elastic GPU without hyperscaler lock-in, opaque billing, or a full migration.**
 
 > **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — multi-tenant GPU scheduling, fractional sharing and ready blueprints for inference and fine-tuning. For the elastic self-service cloud underneath it, combine with **[Public Cloud Platform](/products/public-cloud-platform/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**.
 
@@ -77,7 +77,7 @@ faq:
 
 ## What you get
 
-GPU cloud bursting on the Aenix platform is one elastic GPU pool spread across the infrastructure you already have and the clouds you want to reach.
+GPU cloud bursting on the Ænix platform is one elastic GPU pool spread across the infrastructure you already have and the clouds you want to reach.
 
 - **Burst to public and sovereign clouds.** Baseline workloads run on owned bare metal. When demand spikes, capacity is added in a public hyperscaler, a sovereign cloud, or both — and released afterwards. A sovereign cloud can be a first-class burst target when a regulator binds GPU processing to a jurisdiction or when its GPUs are simply cheaper.
 - **Fractional GPU sharing.** With HAMi on top of the NVIDIA GPU-operator, several jobs share one physical card. A notebook, a small inference endpoint and a batch job can co-exist on a single GPU instead of each pinning a whole device.
@@ -103,7 +103,7 @@ The pattern is standard Kubernetes primitives, assembled and operated end-to-end
 <div class="diagram">
 <div class="diagram__node"><b>Owned bare-metal GPU</b><div class="diagram__chips"><span>Baseline capacity</span><span>Fractional sharing (HAMi)</span></div></div>
 <div class="diagram__conn">unified by</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack / Aenix</b><div class="diagram__chips"><span>One Cluster API</span><span>Cluster Autoscaler</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix</b><div class="diagram__chips"><span>One Cluster API</span><span>Cluster Autoscaler</span></div></div>
 <div class="diagram__conn">bursts peaks into</div>
 <div class="diagram__node"><b>Public and sovereign cloud</b><div class="diagram__chips"><span>Elastic GPU, no lock-in</span></div></div>
 </div>
@@ -129,4 +129,4 @@ Your mix of baseline, peak and burst target decides the saving. Model it with th
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build multi-cloud GPU platforms for AI/ML, research and platform-operator organizations across the EU and DACH.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build multi-cloud GPU platforms for AI/ML, research and platform-operator organizations across the EU and DACH.*

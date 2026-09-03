@@ -116,6 +116,6 @@ Production references: regional hosting providers running Ænix Public Cloud Pla
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
 <!-- Word count: ~500. -->

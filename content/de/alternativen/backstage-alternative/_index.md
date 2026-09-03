@@ -23,7 +23,7 @@ quick_facts:
     value: "Plattform-Teams und Engineering-Organisationen, die Backstage betreiben, aber langsame Self-Service-Pfade und eine fragmentierte Cloud-Foundation haben"
   - label: "Kernfunktion"
     value: "Kubernetes-native Plattform-Foundation: KubeVirt-Virtualisierung, Tenant-CRD-Mandantenfähigkeit, Managed Services, Cilium-Networking, LINSTOR-Storage, team-scoped Observability"
-  - label: "Passende Edition"
+  - label: "Passende Plattform"
     value: "the developer self-service layer of Ænix Private Cloud Platform — vollständige Internal Developer Platform mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates; Backstage UI optional als Front-End integrierbar"
   - label: "Engagement"
     value: "Architektur-Review als Einstieg; produktisierte Ænix Platform plus Services in den Stufen Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise Custom"
@@ -35,7 +35,7 @@ faq:
     a: "Weil das Engpass-Problem meist unter dem Portal liegt: eine fragmentierte Cloud-Foundation, fehlende Multi-Tenant-Garantien und ein nicht produktisierter Kubernetes-Cluster-Lifecycle. Backstage zeigt Golden Paths an, kann sie aber nicht selbst bereitstellen, wenn die Plattform darunter fehlt."
   - q: "Muss ich Backstage durch Cozystack ersetzen?"
     a: "Nein. Cozystack und Backstage konkurrieren nicht. Cozystack ist die Plattform-Foundation, Backstage die Portal-Schicht darüber. Die the developer self-service layer of Ænix Private Cloud Platform kann Backstage als Front-End integrieren, wenn der Kunde es bevorzugt."
-  - q: "Welche Ænix Platform Edition passt für eine Internal Developer Platform?"
+  - q: "Welche Ænix platform passt für eine Internal Developer Platform?"
     a: "Die Developer Self-Service. Sie kombiniert die Cozystack-Foundation mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates zu einer vollständigen Internal Developer Platform. Eine Backstage-UI lässt sich optional als Front-End anbinden."
   - q: "Ist Cozystack Open Source und wie ist die Lizenzierung?"
     a: "Cozystack steht unter Apache 2.0 und ist ein CNCF-Projekt (Sandbox seit dem 28.02.2025, Incubating erwartet für Spätsommer 2026). Es gibt keine CPU- oder Core-basierte Lizenzierung. Aenix verkauft die produktisierte Ænix Platform plus Services darum herum."
@@ -111,7 +111,7 @@ Die Plattform-Entscheidung (Cozystack vs OpenShift vs Vanilla-Kubernetes) ist un
 
 ## Wie Sie entscheiden, was Sie brauchen
 
-Ein fokussiertes Architektur-Review beantwortet: Brauchen Sie überhaupt ein Portal? Wenn ja, welches passt zu Ihrem operativen Modell? Aenix führt dies im Rahmen des **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** durch.
+Ein fokussiertes Architektur-Review beantwortet: Brauchen Sie überhaupt ein Portal? Wenn ja, welches passt zu Ihrem operativen Modell? Ænix führt dies im Rahmen des **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** durch.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -123,4 +123,4 @@ Ein fokussiertes Architektur-Review beantwortet: Brauchen Sie überhaupt ein Por
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

@@ -95,5 +95,5 @@ For full engagement see **[Cloud repatriation services](/solutions/cloud-repatri
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

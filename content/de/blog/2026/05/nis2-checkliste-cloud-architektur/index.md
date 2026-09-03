@@ -81,5 +81,5 @@ Die Architektur muss Erkennung und Reporting innerhalb dieser Zeitfenster unters
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

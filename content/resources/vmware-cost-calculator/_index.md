@@ -47,7 +47,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**A VMware cost calculator turns Broadcom's renewal into a number you can act on. Enter the CPU cores in your estate and what you pay per core today, and it shows the annual cost, the net saving if you move to an open Apache-2.0 platform, the three-year delta after migration, and how fast the migration pays back. Built by Aenix — the team behind Cozystack.**
+**A VMware cost calculator turns Broadcom's renewal into a number you can act on. Enter the CPU cores in your estate and what you pay per core today, and it shows the annual cost, the net saving if you move to an open Apache-2.0 platform, the three-year delta after migration, and how fast the migration pays back. Built by Ænix — the team behind Cozystack.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -68,8 +68,8 @@ The license line you pay VMware/Broadcom disappears on an open platform (Apache 
 ## How the calculation works
 
 - **VMware cost per year** = cores × VMware cost per core/year.
-- **Aenix support per year** = cores × Aenix support per core/year (the platform itself is Apache 2.0).
-- **Net saving per year** = VMware annual − Aenix annual.
+- **Ænix support per year** = cores × Ænix support per core/year (the platform itself is Apache 2.0).
+- **Net saving per year** = VMware annual − Ænix annual.
 - **3-year net saving** = net annual × 3 − one-time migration cost.
 - **Payback** = migration cost ÷ monthly net saving.
 
@@ -77,7 +77,7 @@ The license line you pay VMware/Broadcom disappears on an open platform (Apache 
 <div class="diagram">
 <div class="diagram__node"><b>VMware cost per year</b><div class="diagram__chips"><span>Cores × cost per core/year</span></div></div>
 <div class="diagram__conn">compared with</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix support per year</b><div class="diagram__chips"><span>Apache 2.0 platform</span><span>No per-core fee</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix support per year</b><div class="diagram__chips"><span>Apache 2.0 platform</span><span>No per-core fee</span></div></div>
 <div class="diagram__conn">yields</div>
 <div class="diagram__node"><b>Net saving</b><div class="diagram__chips"><span>3-year net</span><span>Payback time</span></div></div>
 </div>
@@ -95,7 +95,7 @@ These are deliberately simple inputs so the output is defensible. A full TCO inc
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/resources/vmware-cost-calculator/ ; hreflang de → /de/ressourcen/vmware-kostenrechner/, x-default EN.

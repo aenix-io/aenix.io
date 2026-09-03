@@ -115,7 +115,7 @@ right operational model for tenant-facing Kubernetes-as-a-service.
 
 Proxmox's commercial subscription is competitive but real cost.
 Operators with growing infrastructure footprint sometimes find the
-total subscription cost approaching what Aenix charges for ISP
+total subscription cost approaching what Ænix charges for ISP
 Edition support — at which point the service-catalog and operational
 upside of Cozystack tips the decision.
 
@@ -157,7 +157,7 @@ patterns, WHMCS / customer-management integration.
 
 Honest TCO comparison: current Proxmox + commercial subscription +
 operational team versus Cozystack Public Cloud Platform + hardware refresh +
-Aenix support tier. For operators under ~300 customers, this often
+Ænix support tier. For operators under ~300 customers, this often
 shows Proxmox staying competitive; above ~500, Cozystack typically
 wins on service-catalog and operational depth.
 
@@ -247,7 +247,7 @@ compatibility shim) is engagement work.
 Proxmox operators are comfortable with the Proxmox web UI and the
 imperative `pvecli` command. Cozystack expects GitOps for production
 changes. Operations team needs 4-8 weeks of focused training plus
-3-6 months of practice. Aenix engagement includes training; customer
+3-6 months of practice. Ænix engagement includes training; customer
 investment in the transition is also required.
 
 ### 4. ZFS-specific workloads
@@ -311,7 +311,7 @@ Poor fit:
 - **Cohort migration** (3-12 months) — customer migration in cohorts
 - **Proxmox decommission** (1-3 months, parallel) — as cohorts
   complete
-- **Managed retainer** (optional, ongoing) — Aenix Tier-3 SLA
+- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
 
 ## Where to dig deeper
 
@@ -329,7 +329,7 @@ Poor fit:
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. We have shipped Proxmox-to-Cozystack
 migrations for growing hosting providers; specific named case studies
 remain confidential.*

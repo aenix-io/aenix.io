@@ -18,9 +18,9 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Broadcom turned your clients' VMware renewals into a 2–5× problem — and reshaped your partner margins at the same time. For integrators and MSPs that's an opening: deliver an open, sovereign cloud — VMs, Kubernetes, databases, storage — that you resell or build, with no per-core tax eating the deal. Aenix gives you the platform and, when you need it, the engineering bench. You keep the client and the recurring revenue.**
+**Broadcom turned your clients' VMware renewals into a 2–5× problem — and reshaped your partner margins at the same time. For integrators and MSPs that's an opening: deliver an open, sovereign cloud — VMs, Kubernetes, databases, storage — that you resell or build, with no per-core tax eating the deal. Ænix gives you the platform and, when you need it, the engineering bench. You keep the client and the recurring revenue.**
 
-> **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection), **[white-label cloud](/services/white-label-cloud/)** delivery, and the open **[VMware alternative](/alternatives/vmware-alternative/)**. Core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
+> **Pairs with:** the **[Ænix Partner Program](/partners/)** (up to 40% margin, deal protection), **[white-label cloud](/services/white-label-cloud/)** delivery, and the open **[VMware alternative](/alternatives/vmware-alternative/)**. Core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
@@ -28,7 +28,7 @@ related_pages:
 </div>
 
 <div class="trust-badges">
-Up to 40% margin · Deal protection · No per-CPU licensing · Aenix as your K8s/KubeVirt bench
+Up to 40% margin · Deal protection · No per-CPU licensing · Ænix as your K8s/KubeVirt bench
 </div>
 
 <!-- /BLOCK 1 -->
@@ -51,10 +51,10 @@ If your clients are getting VMware renewal quotes they don't like, this is built
 <div class="grid-2x2">
 
 **1. Resell a ready platform**
-Sell [Ænix Platform](/partners/) (Public Cloud / ISP / Enterprise / IDP / AI/ML) under your brand. Up to **40% margin**, deal protection, sales kit, technical pre-sales, L3 support. The Public Cloud Platform ships a white-label portal and WHMCS billing.
+Sell [Ænix Platform](/partners/) (Public Cloud / Private Cloud / AI) under your brand. Up to **40% margin**, deal protection, sales kit, technical pre-sales, L3 support. The Public Cloud Platform ships a white-label portal and WHMCS billing.
 
 **2. Co-deliver / build with our team**
-Want your own differentiated cloud? Cozystack is the framework and **Aenix is your outsourced engineering team** — we run the [VMware migration](/migration/vmware/) and stand up a [white-label cloud](/services/white-label-cloud/) you own, filling the Kubernetes/KubeVirt gap without a hiring cycle.
+Want your own differentiated cloud? Cozystack is the framework and **Ænix is your outsourced engineering team** — we run the [VMware migration](/migration/vmware/) and stand up a [white-label cloud](/services/white-label-cloud/) you own, filling the Kubernetes/KubeVirt gap without a hiring cycle.
 
 </div>
 
@@ -71,7 +71,7 @@ Either way, the per-core license your client pays VMware becomes margin and recu
 - **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026).
 - **Common pitfall:** competing on price reselling a hyperscaler while owning none of the platform value or the renewal relationship.
 
-[Source: [Aenix Partner Program](/partners/); [Cozystack docs](https://cozystack.io)]
+[Source: [Ænix Partner Program](/partners/); [Cozystack docs](https://cozystack.io)]
 
 ---
 
@@ -88,10 +88,10 @@ Either way, the per-core license your client pays VMware becomes margin and recu
 
 ---
 
-## Why partners pick Aenix
+## Why partners pick Ænix
 
 - **You keep the client and the margin.** The platform is branded yours; we stay behind the curtain.
-- **Capacity on tap.** Aenix is your Kubernetes/KubeVirt bench — say yes to builds you'd otherwise decline.
+- **Capacity on tap.** Ænix is your Kubernetes/KubeVirt bench — say yes to builds you'd otherwise decline.
 - **The authors stand behind it.** Pre-sales and L3 support from the team that maintains Cozystack.
 
 ---
@@ -108,7 +108,7 @@ Up to 40% on Ænix Platform license + support via the [Partner Program](/partner
 Yes — registered opportunities are reserved to the partner; no channel conflict.
 
 **We lack deep Kubernetes staff. Is that a blocker?**
-No — that's the co-deliver model; Aenix engineers the platform and enables your team.
+No — that's the co-deliver model; Ænix engineers the platform and enables your team.
 
 **How do we give clients a VMware-exit business case?**
 Use the [VMware cost calculator](/resources/vmware-cost-calculator/) on the call; we help you build the client TCO.
@@ -126,7 +126,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/partners/vmware-exit/ ; hreflang de → /de/partner/vmware-exit/, x-default EN.

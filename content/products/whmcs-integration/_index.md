@@ -65,7 +65,7 @@ aliases:
 <div class="diagram">
 <div class="diagram__node"><b>WHMCS storefront</b><div class="diagram__chips"><span>Customer orders</span><span>Client area</span></div></div>
 <div class="diagram__conn">order placed</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix WHMCS module</b><div class="diagram__chips"><span>Provisioning</span><span>Metering</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix WHMCS module</b><div class="diagram__chips"><span>Provisioning</span><span>Metering</span></div></div>
 <div class="diagram__conn">provisions on demand</div>
 <div class="diagram__node"><b>Cozystack service catalog</b><div class="diagram__chips"><span>Kubernetes</span><span>Databases</span><span>VMs</span><span>Message brokers</span><span>S3 object storage</span><span>GPU</span></div></div>
 <div class="diagram__conn">usage metered back to</div>
@@ -120,7 +120,7 @@ If you run a hosting business or a cloud on WHMCS, you can add a full catalog of
 - **More margin per customer** — upsell modern services to the base you already have, instead of competing on shared-hosting price.
 - **No platform to build** — Cozystack is the cloud platform; you get the catalog without a multi-year platform-engineering project.
 
-The WHMCS integration module is a **proprietary Aenix product**, delivered and supported by the team behind Cozystack.
+The WHMCS integration module is a **proprietary Ænix product**, delivered and supported by the team behind Cozystack.
 
 ---
 
@@ -135,4 +135,4 @@ Not on WHMCS, or running something else? We also help hosters and clouds:
 Especially if you are already on WHMCS — this is the fastest way to start selling Kubernetes, databases, VMs and GPU, and earn more from the customers you already have. See the **[Ænix Public Cloud Platform economics](/products/public-cloud-platform/)** and the anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**.
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

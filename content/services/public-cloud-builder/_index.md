@@ -44,7 +44,7 @@ faq:
 
 **Hosting providers, telcos, and regional operators in 2026 face the question: how do we offer a credible cloud product to enterprise customers without becoming a hyperscaler? Demand for sovereign, regional, and specialty cloud is rising, but shipping one means solving multi-tenancy, billing, and self-service operations — not just standing up VMs.**
 
-Aenix builds customer-facing public cloud products on Cozystack — the open-source Kubernetes-native platform that powers Ænix Public Cloud Platform deployments at regional hosting providers and several other regional cloud launches.
+Ænix builds customer-facing public cloud products on Cozystack — the open-source Kubernetes-native platform that powers Ænix Public Cloud Platform deployments at regional hosting providers and several other regional cloud launches.
 
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for large public-cloud operators (multi-region, cloud-like UX, multi-hypervisor); **[Public Cloud Platform](/products/public-cloud-platform/)** for small / mid hosting providers and regional clouds (WHMCS-integrated, productized installer, from $1,250/month).
 
@@ -113,7 +113,7 @@ Pricing model design, customer-onboarding workflow, SLA design, regulatory posit
 
 ---
 
-## Why Aenix
+## Why Ænix
 
 - **Cozystack-based deployments in production** at multiple regional cloud operators
 - **WHMCS production integration** ready (two modes)
@@ -122,7 +122,7 @@ Pricing model design, customer-onboarding workflow, SLA design, regulatory posit
 
 ---
 
-## Who's done this with Aenix
+## Who's done this with Ænix
 
 {{< clients >}}
 
@@ -143,8 +143,8 @@ Public references: regional hosting providers running Ænix Public Cloud Platfor
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Public Cloud Builder — Launch a Customer-Facing Cloud Product | Aenix"
+<!-- SEO: title "Public Cloud Builder — Launch a Customer-Facing Cloud Product | Ænix"
 Description: "Build a regional/sovereign/specialty cloud product on Cozystack open-source foundation. Multi-tenant, billing-ready, EU/Central Asia teams."
 Word count: ~700. -->

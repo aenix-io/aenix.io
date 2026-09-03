@@ -89,5 +89,5 @@ For consortia (multi-district shared platform):
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

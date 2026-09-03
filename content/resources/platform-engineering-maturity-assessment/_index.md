@@ -38,7 +38,7 @@ faq:
     a: "A PDF self-assessment you can print and walk through, an interactive online form that calculates your maturity stage from your scores, and a maturity report with benchmark comparison and the dimensions to prioritize for investment."
 ---
 
-**An 8-dimension self-assessment that scores your platform engineering practice on a 5-stage maturity scale. Used by Aenix during Platform Readiness Assessment to baseline organizations before recommending Phase 2 work. Now available free for self-assessment.**
+**An 8-dimension self-assessment that scores your platform engineering practice on a 5-stage maturity scale. Used by Ænix during Platform Readiness Assessment to baseline organizations before recommending Phase 2 work. Now available free for self-assessment.**
 
 > **Pairs with:** **[the developer self-service layer of Ænix Private Cloud Platform](/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab, Argo CD, APIs, golden paths) on top of the Cozystack cloud foundation. Most assessment outcomes recommend Developer Self-Service as the structured next step.
 
@@ -105,6 +105,6 @@ Walk through with engineering leadership. Identify priority dimensions. For deep
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
 <!-- Word count: ~400. -->

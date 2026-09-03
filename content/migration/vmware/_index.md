@@ -42,9 +42,9 @@ faq:
 
 **Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on workloads that move. Done badly, it produces operational debt and a stalled migration that becomes the next year's emergency. The difference is structured assessment, honest TCO modelling, and engineers who have shipped this in production.**
 
-Aenix runs end-to-end VMware migrations for organizations exiting VCF. Same engineers who built and operate [Cozystack](/products/cozystack/) — the destination platform we typically recommend — work alongside your team for assessment, sequencing, and implementation.
+Ænix runs end-to-end VMware migrations for organizations exiting VCF. Same engineers who built and operate [Cozystack](/products/cozystack/) — the destination platform we typically recommend — work alongside your team for assessment, sequencing, and implementation.
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers exiting VMware Cloud Director (most common 2026 pattern); **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises exiting VCF; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for anyone selling cloud — hosters exiting VMware Cloud Director (the most common 2026 pattern), MSPs, telcos, national operators; **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises exiting VCF for their own consumption. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -75,7 +75,7 @@ If two or more apply, structured migration compounds. If renewal is comfortable 
 
 <!-- BLOCK 3: WHAT'S COVERED -->
 
-## What an Aenix VMware migration covers
+## What an Ænix VMware migration covers
 
 <div class="grid-2x2">
 
@@ -153,12 +153,12 @@ Before committing, model the delta. Enter your estate size and current VMware pr
 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
-## How Aenix engages on VMware migration
+## How Ænix engages on VMware migration
 
 The engagement structure mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with VMware-migration emphasis:
 
 - **Assessment (14-28 days)** — VMware estate inventory, destination architecture, workload classification, cutover sequencing, Phase 2 roadmap.
-- **Phase 2 implementation (6-18 months)** — Aenix engineers integrated with your team for migration cohorts. Parallel-run validation. Knowledge transfer throughout.
+- **Phase 2 implementation (6-18 months)** — Ænix engineers integrated with your team for migration cohorts. Parallel-run validation. Knowledge transfer throughout.
 - **Phase 3 (optional)** — managed Cozystack operations after migration completes.
 
 For VMware-specific destination guidance, see **[VMware alternative](/alternatives/vmware-alternative/)** (singular, vendor-focused) or **[VMware alternatives listicle](/alternatives/vmware-alternatives/)** (plural, market scan).
@@ -169,7 +169,7 @@ For VMware-specific destination guidance, see **[VMware alternative](/alternativ
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Why Aenix specifically for VMware migration
+## Why Ænix specifically for VMware migration
 
 - **Cozystack-native experience.** We built the destination platform many migrations end up on. Implementation effort estimates calibrated against work we've shipped.
 - **No hyperscaler bias.** Recommendations reflect technical fit, not partner economics. We say "stay in cloud" when right.
@@ -251,9 +251,9 @@ If Phase 2 follows assessment, assessment fee credited subject to scope.
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "VMware Migration — Exit VCF Without Breaking the Application | Aenix"
+<!-- SEO: title "VMware Migration — Exit VCF Without Breaking the Application | Ænix"
 Description: "VMware migration end-to-end: assessment, destination architecture, cohort-based cutover, decommission. EU engineers, no hyperscaler bias."
 Word count: ~1000.
 -->

@@ -35,7 +35,7 @@ faq:
     a: "Auf Cozystack, der Apache-2.0-lizenzierten Kubernetes-nativen Plattform. Sie führt VMs und Container über KubeVirt auf einer Kubernetes-API zusammen, nutzt Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage und bildet Mandantenfähigkeit über das Tenant-CRD ab."
   - q: "Für wen eignet sich diese Dienstleistung?"
     a: "Für Hosting-Anbieter beim Up-Market-Move von VPS/Dedicated Servers, Telekommunikations-Operatoren mit Enterprise-Cloud-Launch, regionale Betreiber in souveränitätsrelevanten Jurisdiktionen sowie branchenspezifische Clouds für Finanz-, Regierungs- oder KI-Workloads."
-  - q: "Welche Ænix-Platform-Edition passt zu meinem Vorhaben?"
+  - q: "Welche Ænix-Plattform passt zu meinem Vorhaben?"
     a: "Die Public Cloud Platform richtet sich an große Public-Cloud-Betreiber mit Multi-Region, Cloud-like UX und Multi-Hypervisor. Die Public Cloud Platform passt zu kleinen bis mittleren Hosting-Anbietern und regionalen Clouds; sie ist WHMCS-integriert, bringt einen produktisierten Installer mit und startet ab 1.250 USD/Monat."
   - q: "Wie ist das Engagement strukturiert?"
     a: "Es beginnt mit einem kostenlosen Discovery-Call (30 min), gefolgt von einem Architektur- und Produkt-Readiness-Assessment (4-8 Wochen) mit Produkt- und GTM-Schwerpunkt, einer Implementation über 6-18 Monate und optional einem Managed-Services-Arrangement während des frühen Customer-Ramp."
@@ -45,7 +45,7 @@ faq:
 
 **Hosting-Anbieter, Telcos und regionale Operatoren stehen 2026 vor der Frage: Wie bieten wir Enterprise-Kunden ein glaubwürdiges Cloud-Produkt, ohne zum Hyperscaler zu werden? Der Markt für souveräne / regionale / Spezial-Cloud wächst, doch die architektonische und operative Arbeit, um eine auszuliefern, ist nicht-trivial.**
 
-Aenix baut kundenseitige Public-Cloud-Produkte auf Cozystack — der Open-Source-Kubernetes-nativen Plattform, die Ænix Public Cloud Platform Deployments bei regionalen Hosting-Anbietern und mehrere weitere regionale Cloud-Launches antreibt.
+Ænix baut kundenseitige Public-Cloud-Produkte auf Cozystack — der Open-Source-Kubernetes-nativen Plattform, die Ænix Public Cloud Platform Deployments bei regionalen Hosting-Anbietern und mehrere weitere regionale Cloud-Launches antreibt.
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat).
 
@@ -102,7 +102,7 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
 
 ---
 
-## Warum Aenix
+## Warum Ænix
 
 - **Cozystack-basierte Deployments in Produktion** bei mehreren regionalen Cloud-Operatoren
 - **WHMCS-Produktions-Integration** bereit (zwei Modi)
@@ -121,7 +121,7 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
 
 ---
 
-## Wer das mit Aenix umgesetzt hat
+## Wer das mit Ænix umgesetzt hat
 
 {{< clients >}}
 
@@ -142,4 +142,4 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution.*

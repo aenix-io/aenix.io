@@ -48,7 +48,7 @@ faq:
 
 **Replace vSphere, vCenter, vSAN, NSX, and the rest of VCF with one Kubernetes-native platform on your own bare metal — no per-CPU licensing, no Broadcom renewal cliff, no US-vendor lock-in.**
 
-Cozystack is a CNCF project. Aenix builds it, operates it in production with hosting providers and banks, and runs the migration end-to-end.
+Cozystack is a CNCF project. Ænix builds it, operates it in production with hosting providers and banks, and runs the migration end-to-end.
 
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers (VMware Cloud Director exit); **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises (VMware Cloud Foundation exit); **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
@@ -238,7 +238,7 @@ OpenStack, CloudStack, and Proxmox migrations follow the same playbook with diff
 - **Air-gapped install** — supported, documented, no extra licensing
 - **No phone-home telemetry** — opt-in, disabled by default
 - **DORA / NIS2-aligned controls** — operational resilience, supplier-risk transparency
-- **No-kubectl support model** — Aenix advisory + GitOps PR review; we don't need access to your production environment
+- **No-kubectl support model** — Ænix advisory + GitOps PR review; we don't need access to your production environment
 
 <!-- /BLOCK 7 -->
 
@@ -248,9 +248,9 @@ OpenStack, CloudStack, and Proxmox migrations follow the same playbook with diff
 
 ## Cozystack vs VMware — at a glance
 
-| | VMware (VCF, post-Broadcom) | Cozystack + Aenix |
+| | VMware (VCF, post-Broadcom) | Cozystack + Ænix |
 |---|---|---|
-| **License model** | Subscription only (VCF bundles) | Apache 2.0 + optional Aenix support tier |
+| **License model** | Subscription only (VCF bundles) | Apache 2.0 + optional Ænix support tier |
 | **Renewal risk** | 2–5× increases observed | Predictable; OSS code remains usable regardless |
 | **Compute** | vSphere / ESXi | KubeVirt (KVM-based) |
 | **Storage** | vSAN | LINSTOR or Ceph |
@@ -289,14 +289,14 @@ Service providers, telecom operators, regional sovereign clouds, GPU/AI operator
 
 ## Pricing
 
-The Cozystack platform is open source and free to run. Aenix offers:
+The Cozystack platform is open source and free to run. Ænix offers:
 
 - **Community** — GitHub issues, public Slack, no SLA
 - **Standard** — business-hours response, runbooks, advisory
 - **Enterprise / 24×7** — production SLA, dedicated TAM, GitOps PR review
 - **Professional Services** — VMware migration assessment, deployment, training
 
-No per-CPU, per-VM, or per-core meter. Your spend is hardware + Aenix engagement.
+No per-CPU, per-VM, or per-core meter. Your spend is hardware + Ænix engagement.
 
 <!-- /BLOCK 10 -->
 
@@ -336,13 +336,13 @@ Or read the **[full VMware replacement guide on our blog](/blog/2026/05/vmware-r
 
 <!-- BLOCK 13: FOOTER TRUST STRIP -->
 
-*Cozystack is a CNCF Project. Kubernetes Certified Distribution. OpenSSF Best Practices. Aenix is the company behind Cozystack.*
+*Cozystack is a CNCF Project. Kubernetes Certified Distribution. OpenSSF Best Practices. Ænix is the company behind Cozystack.*
 
 <!-- /BLOCK 13 -->
 
 <!--
 SEO meta tags (frontmatter / page header):
-- title: "VMware Alternative — Open-Source, Sovereign, Kubernetes-Native | Aenix"
+- title: "VMware Alternative — Open-Source, Sovereign, Kubernetes-Native | Ænix"
 - description: "Replace vSphere, vCenter, vSAN, NSX, and VCF with Cozystack — the open-source VMware alternative for service providers and regulated enterprises. Architecture review on demand."
 - og:image: 1200×630 PNG, brand mark + claim, replace site default
 - canonical: this URL

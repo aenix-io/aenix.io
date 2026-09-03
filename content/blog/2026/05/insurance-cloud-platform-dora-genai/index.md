@@ -72,5 +72,5 @@ For details see **[insurance industry page](/industries/insurance)**.
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

@@ -16,7 +16,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**DORA, NIS2 und sektorale Datenresidenz machen Cloud zum Kontroll- und Nachweisproblem: belegen, wo Daten liegen, wer die Schlüssel hält und wie weit die Lieferkette reicht. Als CISO oder Compliance-Leiter:in brauchen Sie eine Plattform, bei der die Antworten strukturell sind — Ihre Hardware, Ihre Jurisdiktion, Ihre Schlüssel. Aenix liefert das schlüsselfertig oder baut es mit Ihnen.**
+**DORA, NIS2 und sektorale Datenresidenz machen Cloud zum Kontroll- und Nachweisproblem: belegen, wo Daten liegen, wer die Schlüssel hält und wie weit die Lieferkette reicht. Als CISO oder Compliance-Leiter:in brauchen Sie eine Plattform, bei der die Antworten strukturell sind — Ihre Hardware, Ihre Jurisdiktion, Ihre Schlüssel. Ænix liefert das schlüsselfertig oder baut es mit Ihnen.**
 
 > **Passt zu:** **[DORA](/de/loesungen/dora-compliance/)**, **[NIS2](/de/loesungen/nis2-compliance/)** und **[Datensouveränität](/de/loesungen/data-sovereignty/)**, **[Ænix Platform](/de/produkte/)**, auf Open-Source-**[Cozystack](https://cozystack.io)**.
 
@@ -48,11 +48,11 @@ Regulierte Workloads auf eine Infrastruktur bringen, bei der Souveränität eine
 
 ---
 
-## Zwei Wege mit Aenix
+## Zwei Wege mit Ænix
 
 **1. Schlüsselfertig betreiben.** Die [Ænix Platform](/de/produkte/) läuft auf Ihrer Hardware in Ihrer Jurisdiktion, mit kundenseitigen Schlüsseln auf jeder Datenebene (primär, Replikate, Backups, Observability) und Air-Gap-Option — die regulierte Cloud, die Sie mit unserem SLA betreiben.
 
-**2. Mit unserem Team bewerten und bauen.** Cozystack ist das Framework; **Aenix Ihr Engineering- und Assessment-Team** für [DORA](/de/loesungen/dora-compliance/), [NIS2](/de/loesungen/nis2-compliance/) und [Datensouveränität](/de/loesungen/data-sovereignty/) — eine Kontrollkarte, wo Daten heute liegen, die Lücken und der Remediation-Aufbau.
+**2. Mit unserem Team bewerten und bauen.** Cozystack ist das Framework; **Ænix Ihr Engineering- und Assessment-Team** für [DORA](/de/loesungen/dora-compliance/), [NIS2](/de/loesungen/nis2-compliance/) und [Datensouveränität](/de/loesungen/data-sovereignty/) — eine Kontrollkarte, wo Daten heute liegen, die Lücken und der Remediation-Aufbau.
 
 ---
 
@@ -69,7 +69,7 @@ Regulierte Workloads auf eine Infrastruktur bringen, bei der Souveränität eine
 
 ---
 
-## Warum CISOs Aenix wählen
+## Warum CISOs Ænix wählen
 
 - **Souveränität ist strukturell.** Ihre Hardware, Jurisdiktion und Schlüssel — kein Vertragsversprechen auf einem Hyperscaler.
 - **Keine Anbieter-Bindung.** Wir sind an keine Cloud gebunden; der Bericht ist auf das Nachweisbare ausgerichtet.
@@ -98,7 +98,7 @@ Ja — wir akzeptieren RFI/RFP über EU- und Kasachstan-Standardkanäle.
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir grenzen den Scope auf die bindenden Regulierer und Klauseln ein und sagen, ob Assessment, schlüsselfertige Edition oder Aufbau passt.
+Kostenlos, ohne Vorbereitung. Wir grenzen den Scope auf die bindenden Regulierer und Klauseln ein und sagen, ob Assessment, schlüsselfertige Plattform oder Aufbau passt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -107,7 +107,7 @@ Kostenlos, ohne Vorbereitung. Wir grenzen den Scope auf die bindenden Regulierer
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/ciso/ ; hreflang de self, en → /for/ciso/.

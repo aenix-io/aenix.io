@@ -122,7 +122,7 @@ If you're evaluating where Proxmox stops being right for your use case, start wi
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Proxmox Alternative — When SMB Virtualization Stops Being Enough | Aenix"
+<!-- SEO: title "Proxmox Alternative — When SMB Virtualization Stops Being Enough | Ænix"
 Word count: ~750. -->

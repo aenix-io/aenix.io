@@ -35,8 +35,8 @@ faq:
     a: "Aenix migriert auf Cozystack, ein CNCF-Sandbox-Projekt unter Apache-2.0-Lizenz. Cozystack betreibt VMs (via KubeVirt) und Container über eine einzige Kubernetes-API, mit Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRD-basierter Mandantenfähigkeit. Die produktisierte Variante ist die Ænix Platform."
   - q: "Wie läuft ein Repatriation-Engagement mit Aenix ab?"
     a: "Aenix übersetzt die strategische Entscheidung in einen umsetzbaren Plan: Inventarisierung und Auswahl der zu migrierenden Workloads, Kostenmodellierung gegenüber dem aktuellen Public-Cloud-Setup und Entwurf der Zielarchitektur. Ein kostenloses Cloud-Repatriation-TCO-Worksheet steht für die erste Einschätzung bereit."
-  - q: "Welche Edition der Ænix Platform passt zu Repatriation?"
-    a: "Jede Ænix Platform Edition unterstützt Repatriation; die Wahl folgt dem Buyer-Profil. Hosting-Anbieter und regionale Clouds wählen die Public Cloud Platform, regulierte Unternehmen die Private Cloud Platform, große Betreiber die Public Cloud Platform, Produkt-Engineering-Teams die Developer Self-Service und KI-lastige Umgebungen die AI Platform."
+  - q: "Welche Plattform der Ænix Platform passt zu Repatriation?"
+    a: "Jede Ænix platform unterstützt Repatriation; die Wahl folgt dem Buyer-Profil. Hosting-Anbieter und regionale Clouds wählen die Public Cloud Platform, regulierte Unternehmen die Private Cloud Platform, große Betreiber die Public Cloud Platform, Produkt-Engineering-Teams die Developer Self-Service und KI-lastige Umgebungen die AI Platform."
   - q: "Was kostet die Ænix Platform?"
     a: "Die Ænix Platform kombiniert Produkt und Services in vier Stufen: Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $/Monat, Plus 5.500 $/Monat und Enterprise mit individueller Preisgestaltung. Cozystack selbst ist Open Source unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
 ---
@@ -45,9 +45,9 @@ faq:
 
 **Der Broadcom Private Cloud Outlook 2025 fand heraus, dass 69% der Organisationen Cloud Repatriation evaluieren und 53% inzwischen Private Cloud für neue Workloads priorisieren. Die Gründe variieren — ausufernde Kosten, Regulatordruck, KI-Datenresidenz, vorhersagbare Performance — aber die architektonische Arbeit ist dieselbe: die richtigen Workloads für den Umzug identifizieren, den Umzug durchführen, ohne die Anwendung zu zerbrechen, und am Ende eine Plattform haben, die Sie tatsächlich betreiben können.**
 
-Aenix übernimmt das technische Engagement, das "wir müssen AWS / Azure / GCP verlassen" von einer Vorstandsaussage in einen funktionierenden Plan verwandelt — mit priorisierten Workloads, modellierten Kosten und einer Zielarchitektur, die die Public Cloud nicht auf die falsche Weise neu erfindet.
+Ænix übernimmt das technische Engagement, das "wir müssen AWS / Azure / GCP verlassen" von einer Vorstandsaussage in einen funktionierenden Plan verwandelt — mit priorisierten Workloads, modellierten Kosten und einer Zielarchitektur, die die Public Cloud nicht auf die falsche Weise neu erfindet.
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)** — die richtige Edition folgt Ihrem Buyer-Profil. Hosting-Anbieter / regionale Clouds: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Regulierte Unternehmen: [Private Cloud Platform](/de/produkte/private-cloud-platform/). Große Betreiber: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Produkt-Engineering-Teams: [Developer Self-Service](/de/produkte/private-cloud-platform/). KI-lastig: [AI Platform](/de/produkte/ai-platform/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
+> **Passt zu:** jeder **[Ænix platform](/de/produkte/)** — die richtige Plattform folgt Ihrem Buyer-Profil. Hosting-Anbieter / regionale Clouds: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Regulierte Unternehmen: [Private Cloud Platform](/de/produkte/private-cloud-platform/). Große Betreiber: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Produkt-Engineering-Teams: [Developer Self-Service](/de/produkte/private-cloud-platform/). KI-lastig: [AI Platform](/de/produkte/ai-platform/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -141,7 +141,7 @@ Diese Fehler sind unabhängig von Cloud-Anbieter, Vendor oder Zielplattform. Es 
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## Wie Aenix hilft
+## Wie Ænix hilft
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -159,9 +159,9 @@ Das Repatriation-Engagement läuft als Teil unseres **[Platform Readiness Assess
 - **Workload-Repatriation-Ranking** — jeder Workload klassifiziert als "jetzt repatriieren / später repatriieren / in der Cloud bleiben", geordnet nach ROI und Risiko.
 - **Zielarchitektur** — wie die Plattform aussieht, auf der die Workloads landen, einschließlich Compute, Storage, Netzwerk, Identity, Observability, DR und der Plattform-Engineering-Funktion, die sie betreibt.
 - **Cutover-Sequenzierung** — Repatriation-Kohorten, die den Ablauf von Verpflichtungen respektieren und die Datenbewegung zwischen Umgebungen minimieren.
-- **Implementierungs-Roadmap für Phase 2** — was eine von Aenix gelieferte Phase 2 tun würde, in welcher Reihenfolge, mit Aufwandsschätzungen.
+- **Implementierungs-Roadmap für Phase 2** — was eine von Ænix gelieferte Phase 2 tun würde, in welcher Reihenfolge, mit Aufwandsschätzungen.
 
-Geliefert von Aenix-Ingenieuren, die Produktionsplattformen für Service-Provider, Banken und KI-Betreiber in der EU und Zentralasien gebaut und betrieben haben. Wir sind kommerziell mit keinem Hyperscaler verbunden, und die Ausrichtung des Berichts folgt dem, wofür wir technisch geradestehen können.
+Geliefert von Ænix-Ingenieuren, die Produktionsplattformen für Service-Provider, Banken und KI-Betreiber in der EU und Zentralasien gebaut und betrieben haben. Wir sind kommerziell mit keinem Hyperscaler verbunden, und die Ausrichtung des Berichts folgt dem, wofür wir technisch geradestehen können.
 
 <!-- /BLOCK 5 -->
 
@@ -169,7 +169,7 @@ Geliefert von Aenix-Ingenieuren, die Produktionsplattformen für Service-Provide
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Keine Hyperscaler-Voreingenommenheit.** Repatriation-Beratung von Big-4-Beratungshäusern ist von deren Hyperscaler-Partnerschaften geprägt. Unsere Empfehlungen sind kommerziell nicht an AWS, Azure, GCP oder einen einzelnen Anbieter gebunden — wir sagen "in der Public Cloud bleiben", wenn das die Antwort ist, und wir sagen "vollständig on-prem", wenn das die Antwort ist.
 - **Ingenieure, keine Berater.** Die Ingenieure, die das Repatriation-Engagement durchführen, bauen die Produktionsplattformen anschließend selbst. Die Aufwandsschätzungen für die Implementierung im Bericht sind an Arbeit kalibriert, die wir tatsächlich ausgeliefert haben — nicht an Branchen-Benchmarks.
@@ -270,6 +270,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Unternehmen hinter Cozystack — einem CNCF Project, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir führen Cloud-Repatriation-Engagements und Plattform-Engineering-Programme für Service-Provider, Banken, Telekommunikation und KI-Betreiber in der EU, der DACH-Region und Zentralasien durch.*
+*Ænix ist das Unternehmen hinter Cozystack — einem CNCF Project, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir führen Cloud-Repatriation-Engagements und Plattform-Engineering-Programme für Service-Provider, Banken, Telekommunikation und KI-Betreiber in der EU, der DACH-Region und Zentralasien durch.*
 
 <!-- /BLOCK 12 -->

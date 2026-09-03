@@ -24,7 +24,7 @@ Unter der Haube:
 
 - **Cozystack Workload CRD** — jeder Managed-Service (Postgres Primary, Redis Sentinel, ClickHouse Shard, KubeVirt-VM, Kubernetes-Worker, S3-Bucket) ist ein `Workload`-Objekt.
 - **Billing-Controller** — wandelt `Workload`-State in Prometheus-Metriken um: operative Lebensdauer, Owner-Tenant, Kind/Typ, Ressourcenreservierungen.
-- **VictoriaMetrics** — speichert Metriken mit Stream-Aggregation. (Aenix und Cozystack standardisieren auf VictoriaMetrics + VictoriaLogs, nicht Prometheus/Loki.)
+- **VictoriaMetrics** — speichert Metriken mit Stream-Aggregation. (Ænix und Cozystack standardisieren auf VictoriaMetrics + VictoriaLogs, nicht Prometheus/Loki.)
 - **Billing-API-Server** — bedient die API und berechnet das bestimmte Integral der Reservierungen über das angefragte Zeitfenster.
 
 Die Form: ein schlanker Extension-API-Server, ein kleiner Controller, Ihr bestehender Metrics-Store. Keine neue Abhängigkeit zu betreiben. Ihr Plattform-Team betreibt all diese Komponenten bereits.
@@ -88,7 +88,7 @@ Für Hosting-Provider auf Bare Metal — Hetzner, OVH, regionale Rechenzentren, 
 
 ## Distribution
 
-Ænix Billing ist ein proprietäres Modul und wird als Teil von **Ænix Enterprise** zusammen mit Cozystack ausgeliefert. Die Cozystack-Plattform bleibt Apache-2.0 und CNCF-gesteuert. Die Billing-Schicht erscheint unter einer kommerziellen Lizenz für Aenix-Kunden.
+Ænix Billing ist ein proprietäres Modul und wird als Teil von **Ænix Enterprise** zusammen mit Cozystack ausgeliefert. Die Cozystack-Plattform bleibt Apache-2.0 und CNCF-gesteuert. Die Billing-Schicht erscheint unter einer kommerziellen Lizenz für Ænix-Kunden.
 
 Wenn Sie ein Hosting-Geschäft oder eine Private Cloud auf Cozystack betreiben und Billing out of the box wollen, [vereinbaren Sie einen Discovery-Call](/de/kontakt/) — wir besprechen Scope, Pricing und Rollout.
 

@@ -46,7 +46,7 @@ faq:
 
 **Universitäten und Forschungsinstitute brauchen 2026 Cloud-native Infrastruktur für drei überlappende Missionen: ernsthaftes Research Computing (besonders KI/ML), reproduzierbare Forschungs-Environments für Publikationen und die Curriculum-Auslieferung für Cloud-native-Kurse. Cozystack bietet eine einzige Open-Source-Foundation, die alle drei bedient — Multi-Tenant für Departments, Labore und Studierenden-Kohorten; KubeVirt für Legacy- und moderne Workloads; GPU-as-a-Service für KI-Forschung; Air-Gapped-Support, wo Forschungsdaten-Souveränität zählt.**
 
-Aenix baut Cozystack-basierte Plattformen für Universitäten, Forschungsinstitute und R&D-Organisationen in der EU, DACH und Zentralasien.
+Ænix baut Cozystack-basierte Plattformen für Universitäten, Forschungsinstitute und R&D-Organisationen in der EU, DACH und Zentralasien.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Studierendendaten + Multi-Tenant-Isolation von Forschungsgruppen; **[AI Platform](/de/produkte/ai-platform/)** für KI/ML-Forschungslabore mit GPU-Pools.
 
@@ -140,7 +140,7 @@ Viele Universitäten haben Zugang zu EuroHPC oder nationalem HPC; Cozystack arbe
 
 {{< clients >}}
 
-*Kunden-Evidenz — von Aenix zu befüllen. Beispiele für einzubindende Proof Points:*
+*Kunden-Evidenz — von Ænix zu befüllen. Beispiele für einzubindende Proof Points:*
 - Eine europäische Forschungsuniversität betreibt einen geteilten GPU-Cluster für KI/ML-Forschung über 12 Labore
 - Ein R&D-Institut mit klassifizierten Forschungsdaten auf einem Air-Gapped-Cozystack-Deployment
 - Ein Informatik-Department betreibt ein Cozystack-basiertes Curriculum für einen Cloud-native-Kurs
@@ -167,7 +167,7 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 
 ## Preisgestaltung
 
-Die Cozystack-Plattform ist Open Source (Apache 2.0). Aenix bietet akademiefreundliche Engagement-Strukturen:
+Die Cozystack-Plattform ist Open Source (Apache 2.0). Ænix bietet akademiefreundliche Engagement-Strukturen:
 
 - **Akademischer Rabatt** auf kommerzielle Support-Tiers
 - **Phasenweises Engagement** ausgerichtet an Förderzyklen
@@ -194,4 +194,4 @@ Oder mehr lesen:
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen Cloud-native Infrastruktur für Universitäten, Forschungsinstitute und R&D-Organisationen in der EU, DACH und Zentralasien.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen Cloud-native Infrastruktur für Universitäten, Forschungsinstitute und R&D-Organisationen in der EU, DACH und Zentralasien.*

@@ -56,7 +56,7 @@ faq:
 
 # Disaster recovery as a service on a platform you control
 
-**Business continuity is not a line in a vendor contract — it is an outcome you have to be able to prove. Disaster recovery as a service (DRaaS) on a sovereign, self-operated platform gives you cross-data-centre synchronous replication, immutable backups, and failover that is tested rather than assumed. Aenix builds and operates these platforms on [Cozystack](/products/cozystack/), so your recovery-time and recovery-point objectives are architecture you own and evidence you can hand to a regulator.**
+**Business continuity is not a line in a vendor contract — it is an outcome you have to be able to prove. Disaster recovery as a service (DRaaS) on a sovereign, self-operated platform gives you cross-data-centre synchronous replication, immutable backups, and failover that is tested rather than assumed. Ænix builds and operates these platforms on [Cozystack](/products/cozystack/), so your recovery-time and recovery-point objectives are architecture you own and evidence you can hand to a regulator.**
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for the regulated cloud foundation that DR sits on; **[DORA compliance](/solutions/dora-compliance/)** for the operational-resilience obligations DR helps you meet. Start with a **[Platform Readiness Assessment →](/services/platform-readiness-assessment/)**.
 
@@ -89,7 +89,7 @@ On the reference architecture, Cozystack runs a compute cluster geo-distributed 
 <div class="diagram">
 <div class="diagram__node"><b>Primary data centre</b><div class="diagram__chips"><span>Committed writes</span></div></div>
 <div class="diagram__conn">replicated synchronously by</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack / Aenix</b><div class="diagram__chips"><span>LINSTOR/DRBD</span><span>Geo-distributed etcd</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix</b><div class="diagram__chips"><span>LINSTOR/DRBD</span><span>Geo-distributed etcd</span></div></div>
 <div class="diagram__conn">across three data centres to</div>
 <div class="diagram__node"><b>Secondary data centre</b><div class="diagram__chips"><span>One replica per site</span></div></div>
 <div class="diagram__conn">fails over with</div>
@@ -113,7 +113,7 @@ The distinction matters for regulators: operational-resilience frameworks increa
 
 ## Tested failover, not paper failover
 
-A DR plan that has never been exercised is a hypothesis. The platforms Aenix operates are drilled for real.
+A DR plan that has never been exercised is a hypothesis. The platforms Ænix operates are drilled for real.
 
 On the anchor engagement, the client regularly powers nodes off to test resilience deliberately, which surfaces the non-obvious cascades a tabletop exercise never finds. Upgrades are rehearsed on staging on the record, then repeated on production; non-declarative commands are dropped in favour of GitOps; and each scenario has a ready runbook — DRBD recovery, cluster upgrade, storage failover. This is what converts an RTO from a marketing figure into a number you can defend.
 
@@ -145,11 +145,11 @@ Tiering is the first output of the assessment, because it decides where the expe
 
 ---
 
-## How Aenix engages on disaster recovery
+## How Ænix engages on disaster recovery
 
 The engagement runs as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with DR-weighted workstreams: current RTO/RPO posture per workload tier, replication and geo-topology design, backup immutability and ransomware isolation, and drill-process maturity. Output is a written report plus a Phase 2 implementation roadmap. Where the DR platform doubles as the production platform — the usual case — it pairs naturally with **[data sovereignty](/solutions/data-sovereignty/)** and DORA-alignment work, so continuity, residency, and compliance are engineered together rather than bolted on.
 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build sovereign disaster-recovery and business-continuity platforms for regulated organizations across the EU and DACH.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build sovereign disaster-recovery and business-continuity platforms for regulated organizations across the EU and DACH.*

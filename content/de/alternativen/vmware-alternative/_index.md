@@ -55,7 +55,7 @@ Cozystack ist die Open-Source-Alternative für Organisationen, die einen echten 
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter (häufigster 2026-Trigger — VMware-Cloud-Director-Ausstieg); **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen (VCF-Ausstieg); **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
-Aenix ist das Unternehmen hinter Cozystack. Wir bauen die Plattform, betreiben Produktionsbereitstellungen für Service Provider, Banken und Telekommunikationsbetreiber und stellen das Migrations-, Support- und Betriebsmodell bereit, das einen sicheren VMware-Ausstieg ermöglicht.
+Ænix ist das Unternehmen hinter Cozystack. Wir bauen die Plattform, betreiben Produktionsbereitstellungen für Service Provider, Banken und Telekommunikationsbetreiber und stellen das Migrations-, Support- und Betriebsmodell bereit, das einen sicheren VMware-Ausstieg ermöglicht.
 
 Verfügbar in der gesamten DACH-Region. Deutschsprachiges Vertriebs- und Support-Team.
 
@@ -133,9 +133,9 @@ KubeVirt und der Kubernetes-native Virtualisierungsstack haben eine Community vo
 
 ---
 
-*Cozystack ist ein CNCF Project-Projekt. Aenix ist das Unternehmen dahinter.*
+*Cozystack ist ein CNCF Project-Projekt. Ænix ist das Unternehmen dahinter.*
 
-<!-- SEO: title "VMware Alternative — Open Source, souverän | Aenix"
+<!-- SEO: title "VMware Alternative — Open Source, souverän | Ænix"
 Description (≤155): "Cozystack ist die Open-Source-VMware-Alternative für 2026 — ersetzt vSphere, vCenter, vSAN, NSX und VCF auf Ihrer eigenen Hardware."
 Keyword target: vmware alternative DE 700/KD 0 — самая лёгкая ranking-победа в DACH.
 Word count: ~700. -->

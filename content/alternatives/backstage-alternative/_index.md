@@ -120,7 +120,7 @@ Both leave the same question unanswered: what actually provisions the database, 
 
 ## How to decide what you need
 
-A focused architecture review answers: do you need a portal at all? If yes, which one fits your operational model? Aenix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+A focused architecture review answers: do you need a portal at all? If yes, which one fits your operational model? Ænix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -132,7 +132,7 @@ A focused architecture review answers: do you need a portal at all? If yes, whic
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "Backstage Alternative — When a Developer Portal Isn't the Answer | Aenix"
+<!-- SEO: title "Backstage Alternative — When a Developer Portal Isn't the Answer | Ænix"
 Word count: ~600. -->

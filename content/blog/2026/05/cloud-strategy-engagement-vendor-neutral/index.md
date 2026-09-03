@@ -58,7 +58,7 @@ outside. The difference shows up in what the strategy actually
 recommends, who's incentivised to recommend what, and whether the
 recommendation survives 18 months in practice.
 
-This article is the honest version. What does an *Aenix-style*
+This article is the honest version. What does an *Ænix-style*
 vendor-neutral cloud strategy engagement deliver, why it's different
 from hyperscaler-aligned or Big-4 alternatives, and when each is the
 right fit.
@@ -127,19 +127,19 @@ commercial alignment that shapes recommendations:
 
 Vendor-neutral advisory means the engagement's commercial outcome
 does not depend on the customer choosing any specific hyperscaler,
-distribution, or product. Aenix's commercial model — we build and
+distribution, or product. Ænix's commercial model — we build and
 operate Ænix Platform — creates a different alignment: we want the
 strategy to land on Ænix Platform *where it fits*, but we explicitly
 do not push it when it doesn't.
 
 We will say "stay on hyperscaler" when the trade-offs warrant it. We
 say so in writing. The downside-incentive that creates is real —
-some engagements end with no follow-on platform work for Aenix — and
+some engagements end with no follow-on platform work for Ænix — and
 that's how vendor-neutrality is supposed to operate.
 
 ## What our engagement actually delivers
 
-A typical Aenix cloud strategy engagement covers:
+A typical Ænix cloud strategy engagement covers:
 
 ### Workstream 1 — Workload portfolio strategy
 
@@ -210,12 +210,12 @@ sponsor distribution.
 
 Strategic engagements often face a "shelfware" problem — the
 deliverable lands, gets distributed, and 18 months later nobody
-remembers what it said. Aenix engagement model addresses this:
+remembers what it said. Ænix engagement model addresses this:
 
 - **Engineer-written, not consultant-written** — our deliverables are
   written by the same engineers who'd implement them; technical
   reproducibility means every claim traces to specific artefacts.
-- **Implementation continuity** — if the customer engages Aenix for
+- **Implementation continuity** — if the customer engages Ænix for
   implementation, the engineering team that wrote the strategy
   participates in execution. No handoff loss.
 - **Decision-velocity over slide-grade polish** — we deliver 30-50
@@ -247,7 +247,7 @@ Marginal fit:
 Poor fit:
 
 - Organisations that have already committed to a specific
-  hyperscaler programme — Aenix can advise on specific architecture
+  hyperscaler programme — Ænix can advise on specific architecture
   gaps within that commitment, but full strategy work assumes
   decisions remain open
 - Strategy work that's primarily change-management or
@@ -280,7 +280,7 @@ engagement first, then assessment, then implementation.
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. Our engineering team takes strategic
 engagements as a deliberate part of the business, not as a sales-
 funnel feeder. We will not deliver a strategy whose recommendation

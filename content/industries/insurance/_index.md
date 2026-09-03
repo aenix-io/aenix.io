@@ -46,7 +46,7 @@ faq:
 
 **Insurance carriers and reinsurers in 2026 face overlapping pressures: DORA enforcement (in force January 2025), GenAI-driven claims-processing transformation, sectoral regulator scrutiny on ICT third-party concentration, and increasing data-residency requirements per market. The architectural answer is a coherent platform with sovereignty, audit-readiness, and AI capability built in — not bolted on.**
 
-Aenix builds platforms for insurance organizations across the EU, DACH, and Central Asia.
+Ænix builds platforms for insurance organizations across the EU, DACH, and Central Asia.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for DORA-aligned regulated cloud foundation; **[AI Platform](/products/ai-platform/)** for claims-processing AI and underwriting AI workloads on regulated data. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
@@ -96,7 +96,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 
 {{< clients >}}
 
-*Customer evidence — Aenix to populate. Anonymous proof points:*
+*Customer evidence — Ænix to populate. Anonymous proof points:*
 - A regional reinsurance carrier with multi-jurisdictional sovereignty requirements running internal cloud platform
 - An insurance group with AI-assisted claims processing on private LLM infrastructure
 - A multi-product insurer with multi-BU separation under DORA Article 28 controls
@@ -117,7 +117,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Cloud Platform for Insurance — DORA-Aligned, AI-Ready, Sovereign | Aenix"
+<!-- SEO: title "Cloud Platform for Insurance — DORA-Aligned, AI-Ready, Sovereign | Ænix"
 Word count: ~500. -->

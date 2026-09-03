@@ -47,7 +47,7 @@ faq:
 
 **Versicherer und Rückversicherer stehen 2026 vor überlappenden Belastungen: DORA-Durchsetzung (in Kraft seit Januar 2025), GenAI-getriebene Transformation der Schadenbearbeitung, sektorale Aufsicht zur ICT-Drittanbieter-Konzentration und zunehmende Datenresidenz-Anforderungen pro Markt. Die architektonische Antwort ist eine kohärente Plattform mit eingebauter Souveränität, Audit-Bereitschaft und KI-Fähigkeit — nicht nachträglich aufgesetzt.**
 
-Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zentralasien.
+Ænix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zentralasien.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für die DORA-konforme regulierte Cloud-Foundation; **[AI Platform](/de/produkte/ai-platform/)** für Schadenbearbeitungs-KI und Underwriting-KI-Workloads auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
@@ -97,7 +97,7 @@ Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zen
 
 {{< clients >}}
 
-*Kunden-Evidenz — von Aenix zu befüllen. Anonyme Proof Points:*
+*Kunden-Evidenz — von Ænix zu befüllen. Anonyme Proof Points:*
 - Ein regionaler Rückversicherer mit multi-jurisdiktionalen Souveränitätsanforderungen betreibt eine interne Cloud-Plattform
 - Eine Versicherungsgruppe mit KI-gestützter Schadenbearbeitung auf privater LLM-Infrastruktur
 - Ein Multi-Produkt-Versicherer mit Multi-BU-Trennung unter DORA-Artikel-28-Kontrollen
@@ -118,4 +118,4 @@ Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zen
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution.*

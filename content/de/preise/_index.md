@@ -18,22 +18,22 @@ language: "de"
 
 Ænix Platform Preise haben zwei Dimensionen:
 
-- **Edition** — welches Feature-Bundle Sie kaufen. Bestimmt durch Ihr Buyer-Profil (Hosting-Anbieter, regulierte Unternehmen, Public-Cloud-Betreiber, Produkt-Engineering-Team oder KI-lastige Organisation).
-- **Support-Tier** — wie Aenix Sie unterstützt. Vier Tiers von Basic ($1,250/Monat per 10 Nodes) bis Enterprise (Custom).
+- **Plattform** — welches Feature-Bundle Sie kaufen. Bestimmt durch Ihr Buyer-Profil (Hosting-Anbieter, regulierte Unternehmen, Public-Cloud-Betreiber, Produkt-Engineering-Team oder KI-lastige Organisation).
+- **Support-Tier** — wie Ænix Sie unterstützt. Vier Tiers von Basic ($1,250/Monat per 10 Nodes) bis Enterprise (Custom).
 
 Plus Engagement-Zusätze (Platform Readiness Assessment, Pilot, Full Build, Managed Operations) separat bepreist pro Scope.
 
 ---
 
-## Schritt 1 — Edition wählen
+## Schritt 1 — Plattform wählen
 
-| Edition | Für | Wie bepreist |
+| Plattform | Für | Wie bepreist |
 |---|---|---|
 | **Public Cloud Platform** | Hosting-Anbieter, MSPs, regionale Clouds und Rechenzentren, die Cloud an Kunden verkaufen | Produktisiert — Preisliste, ab 1.250 USD / Monat pro 10 Nodes |
 | **Public Cloud Platform im Betreiber-Maßstab** | Telcos, nationale Betreiber, Banken und große Public Clouds mit kommerzieller Cloud | Mehrjähriges Programm, Angebot nach RFP |
 | **Private Cloud Platform** | Regulierte Unternehmen, die Cloud für die eigenen Nutzer betreiben (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | Mehrjähriges Programm, Angebot nach RFP |
 
-Zwei Module erweitern beide Editions und werden mit dem Engagement kalkuliert:
+Zwei Module erweitern beide Plattforms und werden mit dem Engagement kalkuliert:
 
 | Modul | Was es hinzufügt |
 |---|---|
@@ -42,7 +42,7 @@ Zwei Module erweitern beide Editions und werden mit dem Engagement kalkuliert:
 
 Plus **Entry-Tier — Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
 
-[Alle Editions entdecken →](/de/produkte/)
+[Alle Plattforms entdecken →](/de/produkte/)
 
 ---
 
@@ -86,7 +86,7 @@ Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen
 
 ### Platform Readiness Assessment
 
-5-10 Tage Festpreis-Engagement mit Stakeholder-Interviews, aktuelle-Architektur-Dokumentation, Gap-Analyse vs Ziel-Ænix-Platform-Architektur, Edition-Empfehlung, Migrations-Roadmap, Risiko-Register.
+5-10 Tage Festpreis-Engagement mit Stakeholder-Interviews, aktuelle-Architektur-Dokumentation, Gap-Analyse vs Ziel-Ænix-Platform-Architektur, Plattform-Empfehlung, Migrations-Roadmap, Risiko-Register.
 
 **Kosten:** Festpreis, vor Beginn vereinbart (Scope-abhängig).
 
@@ -98,7 +98,7 @@ Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen
 
 **Kosten:** Angebot nach RFP, sobald der Scope definiert ist.
 
-### Vollständiger Edition-Build
+### Vollständiger Plattform-Build
 
 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML Deployments. Wochen-zu-live für Public Cloud Platform mit produktisiertem Installer.
 
@@ -106,7 +106,7 @@ Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen
 
 ### Managed Operations
 
-Monatlicher Retainer post-Deployment — laufender Plattform-Betrieb, Monitoring, Incident Response, Capacity Planning, Quartalsweise Architektur-Reviews, Edition-spezifisches Compliance-Reporting.
+Monatlicher Retainer post-Deployment — laufender Plattform-Betrieb, Monitoring, Incident Response, Capacity Planning, Quartalsweise Architektur-Reviews, Plattform-spezifisches Compliance-Reporting.
 
 **Kosten:** Scope-abhängige monatliche Gebühr.
 
@@ -124,7 +124,7 @@ Drei Rechner, jeder mit eigenem Modell und eigenen Quellen. Jeder Preis trägt Q
 
 ## Public Sector / Regierungs-Beschaffung
 
-Für Regierungen und souveräne Cloud-Konsortien engagiert Aenix durch öffentliche Beschaffungsprozesse (RFI / RFP). AENIX s.r.o. (Tschechien) wickelt EU-Beschaffung ab; AENIX INC (Delaware) wickelt US-Beschaffung ab. Mehrjährige Programme werden im Beschaffungsverfahren bepreist.
+Für Regierungen und souveräne Cloud-Konsortien engagiert Ænix durch öffentliche Beschaffungsprozesse (RFI / RFP). AENIX s.r.o. (Tschechien) wickelt EU-Beschaffung ab; AENIX INC (Delaware) wickelt US-Beschaffung ab. Mehrjährige Programme werden im Beschaffungsverfahren bepreist.
 
 [Sovereign Cloud Builder Service →](/de/dienstleistungen/sovereign-cloud-builder/)
 
@@ -142,11 +142,11 @@ Bis zu **40% Marge** auf Ænix-Platform-Verkäufe für Reseller, Integratoren un
 
 ### Ist Cozystack kostenlos?
 
-Ja. Cozystack ist Open Source unter Apache 2.0. Keine Per-CPU, Per-VM oder Per-Core-Lizenzierung. Jeder kann es betreiben. Aenix ist der Original-Maintainer.
+Ja. Cozystack ist Open Source unter Apache 2.0. Keine Per-CPU, Per-VM oder Per-Core-Lizenzierung. Jeder kann es betreiben. Ænix ist der Original-Maintainer.
 
-### Wie funktioniert Edition × Support-Tier-Pricing?
+### Wie funktioniert Plattform × Support-Tier-Pricing?
 
-Edition bestimmt das Feature-Bundle (welche Ænix Platform Sie kaufen — ISP, Enterprise, etc.). Support-Tier bestimmt das Aenix-Support-Niveau (Basic, Standard, Plus, Enterprise). Beide gelten für Ihr Engagement. Discovery-Call klärt die richtige Kombination für Ihren Scope.
+Plattform bestimmt das Feature-Bundle (welche Ænix Platform Sie kaufen — ISP, Enterprise, etc.). Support-Tier bestimmt das Ænix-Support-Niveau (Basic, Standard, Plus, Enterprise). Beide gelten für Ihr Engagement. Discovery-Call klärt die richtige Kombination für Ihren Scope.
 
 ### Was ist der günstigste Weg, mit Ænix Platform zu starten?
 

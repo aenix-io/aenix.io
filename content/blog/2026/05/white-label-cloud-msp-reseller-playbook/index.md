@@ -52,7 +52,7 @@ Pattern in 2026: MSP gets branded multi-tenant cloud product on open-source plat
 
 ## Architecture
 
-- **Multi-tier Tenant CRD** — Aenix tenant → MSP tenant → MSP customer tenant. Per-tier isolation.
+- **Multi-tier Tenant CRD** — Ænix tenant → MSP tenant → MSP customer tenant. Per-tier isolation.
 - **Branded cozyportal** — MSP can customize colors, logo, domain, service catalog options
 - **WHMCS integration** — billing flows through MSP's existing customer-management system
 - **Service catalog** — MSP can curate which services to expose to customers (e.g., hide Kafka if MSP doesn't support it)
@@ -61,7 +61,7 @@ Pattern in 2026: MSP gets branded multi-tenant cloud product on open-source plat
 ## Reseller economics
 
 Typical economics for an MSP running white-label cloud:
-- **Platform cost** — Aenix engagement + hardware + colocation
+- **Platform cost** — Ænix engagement + hardware + colocation
 - **Per-customer cost** — incremental hardware/storage/bandwidth
 - **Customer pricing** — typically 30-50% above raw platform cost
 - **Margin** — covers MSP support, sales, operations
@@ -80,5 +80,5 @@ For details see **[white label cloud services](/services/white-label-cloud)**.
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

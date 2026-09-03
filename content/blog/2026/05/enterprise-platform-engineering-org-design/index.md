@@ -54,7 +54,7 @@ graded change management, and the political dynamics of cross-BU
 infrastructure decisions.
 
 This article walks through what we see at the enterprise scale and
-what an Aenix enterprise platform-engineering engagement actually
+what an Ænix enterprise platform-engineering engagement actually
 delivers.
 
 ## What changes at 1,000+ engineers
@@ -222,7 +222,7 @@ the platform substrate produces beautiful catalogs over operational
 chaos. Adoption stalls.
 
 Fix: Backstage as the user-facing layer after the platform
-substrate is real. Aenix's Developer Self-Service can be paired with Backstage
+substrate is real. Ænix's Developer Self-Service can be paired with Backstage
 where the customer prefers; cozyportal also works.
 
 ### 3. Fragmentation without governance
@@ -258,7 +258,7 @@ Fix: product-team interviews as platform team's recurring discipline.
 Measure adoption per golden path. Sunset paths that don't adopt.
 Build paths that match what product teams actually request.
 
-## What Aenix enterprise platform engineering delivers
+## What Ænix enterprise platform engineering delivers
 
 A typical engagement covers:
 
@@ -285,7 +285,7 @@ organisations). Multi-region, multi-DC, audit-isolated environments,
 DORA / NIS2 alignment where applicable.
 
 This workstream isn't always part of the engagement — some
-customers retain existing substrate and engage Aenix for governance
+customers retain existing substrate and engage Ænix for governance
 and discipline work only.
 
 ### Workstream 4 — Golden path roadmap
@@ -296,8 +296,8 @@ metrics.
 
 ### Workstream 5 — Capability transfer and operational handover
 
-Aenix engineers reduce direct involvement over time. Customer
-platform engineering function absorbs ownership. Aenix retainer
+Ænix engineers reduce direct involvement over time. Customer
+platform engineering function absorbs ownership. Ænix retainer
 continues for advisory + Tier-3 SLA escalation.
 
 ## When this engagement fits
@@ -347,7 +347,7 @@ Poor fit:
 
 ---
 
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
+*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
 Certified Distribution. Enterprise platform engineering engagements
 typically run 18-36 months with multi-million-euro budgets; our team
 scales to engagement size.*

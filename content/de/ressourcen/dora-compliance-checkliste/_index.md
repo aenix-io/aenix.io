@@ -39,7 +39,7 @@ faq:
     a: "Ja. DORA verlangt von Finanzinstituten, das Konzentrations-Risiko bei IKT-Drittdienstleistern zu steuern und Exit-Strategien nachzuweisen. Die Checkliste enthält dafür eigene Sektionen; eine Open-Source-Basis wie Cozystack (Apache 2.0) und getestete Exit-Mechanik reduzieren die Abhängigkeit von einem einzelnen Anbieter."
 ---
 
-**Eine 35-Punkt-Checkliste für Finanzinstitute und ICT-Drittanbieter, die DORA-Compliance-Posture für ihre Cloud-Infrastruktur evaluieren. Deckt Artikel 21 Risiko-Management, Artikel 23 Vorfall-Reporting, Artikel 28 Lieferanten-Risiko, Verschlüsselung, Audit-Bereitschaft ab. Verwendet von Aenix während DORA-konformer Readiness-Engagements.**
+**Eine 35-Punkt-Checkliste für Finanzinstitute und ICT-Drittanbieter, die DORA-Compliance-Posture für ihre Cloud-Infrastruktur evaluieren. Deckt Artikel 21 Risiko-Management, Artikel 23 Vorfall-Reporting, Artikel 28 Lieferanten-Risiko, Verschlüsselung, Audit-Bereitschaft ab. Verwendet von Ænix während DORA-konformer Readiness-Engagements.**
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — DORA-konform by design (kundenkontrollierte Schlüssel, audit-bereites Logging, Multi-Tenant Tenant CRD aligned mit ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz).
 
@@ -65,7 +65,7 @@ faq:
 <div class="diagram">
 <div class="diagram__node"><b>35-Punkt-Selbstbewertung</b><div class="diagram__chips"><span>Artikel 21 + 23</span><span>Kostenloses PDF</span></div></div>
 <div class="diagram__conn">führt zu</div>
-<div class="diagram__node diagram__node--brand"><b>DORA-konformes Readiness-Engagement</b><div class="diagram__chips"><span>Verwendet von Aenix</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>DORA-konformes Readiness-Engagement</b><div class="diagram__chips"><span>Verwendet von Ænix</span></div></div>
 <div class="diagram__conn">bereitet vor</div>
 <div class="diagram__node"><b>Aufsichts-Dialog</b><div class="diagram__chips"><span>getestete Exit-Mechanik</span></div></div>
 </div>
@@ -88,4 +88,4 @@ Die Checkliste gibt Ihnen die Arbeits-Oberfläche, um Ihre aktuelle Cloud-Archit
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

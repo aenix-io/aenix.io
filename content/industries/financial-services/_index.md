@@ -50,7 +50,7 @@ faq:
 
 **Banks, insurers, investment firms, and payment institutions face the steepest combination of pressures in 2026: DORA enforcement (in force January 2025), sectoral regulator scrutiny on ICT third-party concentration, AI workload economics, and the post-Broadcom VMware exit. The architectural answer is not "another hyperscaler region" — it's a coherent platform where sovereignty, audit-readiness, and operational discipline are structural rather than bolted on.**
 
-Aenix builds and operates platforms for financial-services organizations across the EU, DACH, and Central Asia. Same platform, [Cozystack](/products/cozystack/), running production workloads under DORA-aligned governance.
+Ænix builds and operates platforms for financial-services organizations across the EU, DACH, and Central Asia. Same platform, [Cozystack](/products/cozystack/), running production workloads under DORA-aligned governance.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for the regulated cloud foundation; **[AI Platform](/products/ai-platform/)** for claims AI / fraud detection / sovereign AI workloads. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
@@ -90,7 +90,7 @@ These trends concentrate in financial services first.
 
 ---
 
-## How Aenix engages with financial-services organizations
+## How Ænix engages with financial-services organizations
 
 The standard engagement runs as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with workstreams emphasized for the financial-services context:
 
@@ -117,7 +117,7 @@ Financial-services references stay anonymous until the NDAs expire; these are li
 
 ---
 
-## Why Aenix specifically for financial services
+## Why Ænix specifically for financial services
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -160,7 +160,7 @@ Or read more:
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!-- SEO: title "Cloud Platform for Financial Services — DORA-Compliant, Sovereign, AI-Ready | Aenix"
+<!-- SEO: title "Cloud Platform for Financial Services — DORA-Compliant, Sovereign, AI-Ready | Ænix"
 Word count: ~900. -->

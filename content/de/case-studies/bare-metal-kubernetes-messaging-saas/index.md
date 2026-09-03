@@ -67,7 +67,7 @@ Vor dem Projekt lief er auf einer Flotte von rund 13 Proxmox-Hypervisor-Hosts �
 ## Vorgeschlagene Lösung
 
 - **Compute** — Cozystack auf Talos Linux (unveränderliches OS), deklarativ mit Talm provisioniert; Knoten-Konfigurationen und SOPS-verschlüsselte Secrets liegen in Git. Ein 8-Knoten-Bare-Metal-Cluster: 3 Control-Plane-Knoten (HA-etcd) plus 5 Worker, durchgängig mit Dual-NVMe. KubeVirt-VMs hosten die bestehenden kundenspezifischen Container unverändert; ein Golden-Image-Cloning-Workflow (CDI DataVolume → VM-Disk → VM) macht aus „eine VM bereitstellen“ eine Zeile in Git.
-- **Verwaltete Daten** — MongoDB unter dem Percona-Operator, PostgreSQL mit nahezu nativer Performance und RabbitMQ per Ein-Klick. Aenix ergänzte Cozystack um MongoDB als erstklassige App und hob den RabbitMQ-Chart auf v4; **beides floss upstream in das CNCF-Projekt ein.**
+- **Verwaltete Daten** — MongoDB unter dem Percona-Operator, PostgreSQL mit nahezu nativer Performance und RabbitMQ per Ein-Klick. Ænix ergänzte Cozystack um MongoDB als erstklassige App und hob den RabbitMQ-Chart auf v4; **beides floss upstream in das CNCF-Projekt ein.**
 - **Storage** — LINSTOR/DRBD-replizierter Block-Storage auf ZFS für zustandsbehaftete Workloads, plus SeaweedFS S3 für Medien und Backups.
 - **Networking** — Kube-OVN + Cilium + Multus + MetalLB; die VMs beziehen Adressen im lokalen Subnetz.
 - **Delivery-Pipeline** — ein verschachteltes verwaltetes Kubernetes („kube-in-kube") für die API-Dienste, angetrieben von ArgoCD und einer GitLab-Image-Pipeline; Cozystack-Ingress plus cert-manager lösen das handgebaute nginx und die manuellen Zertifikatserneuerungen ab.
@@ -108,6 +108,6 @@ Vor dem Projekt lief er auf einer Flotte von rund 13 Proxmox-Hypervisor-Hosts �
 
 ---
 
-*Diese Fallstudie ist anonymisiert veröffentlicht; eine Kundenreferenz unter NDA ist auf Anfrage verfügbar. Der Anbieter wird über sein Profil beschrieben, nicht namentlich. Für ein Referenzgespräch zu einer aktiven Opportunity [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie ist anonymisiert veröffentlicht; eine Kundenreferenz unter NDA ist auf Anfrage verfügbar. Der Anbieter wird über sein Profil beschrieben, nicht namentlich. Für ein Referenzgespräch zu einer aktiven Opportunity [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*

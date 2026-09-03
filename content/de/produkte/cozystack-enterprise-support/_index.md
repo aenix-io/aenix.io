@@ -39,7 +39,7 @@ faq:
 ---
 
 
-**Aenix bietet Enterprise-Support für Organisationen, die Cozystack selbst betreiben, sowie für Ænix-Plattform-Engagements. Vier Support-Tiers — Basic, Standard, Plus, Enterprise — passend zu Ihren SLA-Anforderungen, Compliance-Posture und Ops-Kapazität.**
+**Ænix bietet Enterprise-Support für Organisationen, die Cozystack selbst betreiben, sowie für Ænix-Plattform-Engagements. Vier Support-Tiers — Basic, Standard, Plus, Enterprise — passend zu Ihren SLA-Anforderungen, Compliance-Posture und Ops-Kapazität.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -52,18 +52,18 @@ faq:
 
 ### Pfad 1 — Ænix-Platform-Kunden (Support gebündelt)
 
-Wenn Sie ein Ænix-Platform-Engagement haben (Public Cloud / ISP / Enterprise / IDP / AI Platform), ist Enterprise-Support Teil des Engagement-Bundles. Spezifisches SLA passt zu Ihrem **Support-Tier** (unabhängig von der Edition):
+Wenn Sie ein Ænix-Platform-Engagement haben (Public Cloud / ISP / Enterprise / IDP / AI Platform), ist Enterprise-Support Teil des Engagement-Bundles. Spezifisches SLA passt zu Ihrem **Support-Tier** (unabhängig von der Plattform):
 
 - **Basic** ($1,250/Monat per 10 Nodes annual) — Geschäftszeiten-Support, 8-Stunden-Notfall-Reaktion
 - **Standard** ($3,000/Monat) — Geschäftszeiten-Support, 4-Stunden-Notfall-Reaktion, Prioritäts-Tickets
 - **Plus** ($5,500/Monat) — 24/7-Support, 4-Stunden-Notfall-Reaktion, vollständige Enterprise-Features (White-Labeling, Air-Gap, GPU-Sharing)
 - **Enterprise** (Custom) — 24/7-Support, 1-Stunde-Notfall-Reaktion, Named TAM, personalisierte Roadmap, Customer-Template-MSA erlaubt, Classified-Data-cleared Engineers für souveräne-Cloud-Engagements
 
-[Ænix Platform Editions →](/de/produkte/) | [Detaillierte Pricing & Tiers →](/de/preise/)
+[Ænix platforms →](/de/produkte/) | [Detaillierte Pricing & Tiers →](/de/preise/)
 
 ### Pfad 2 — Cozystack-Support (selbst-betreibende Organisationen)
 
-Wenn Ihr Team Cozystack selbst betreibt (ohne Ænix-Platform-Lizenz), kann Aenix Support auf Retainer-Basis bieten. Für Organisationen mit Plattform-Engineering-Kapazität, die direkten Zugang zu Cozystack-Maintainern wollen.
+Wenn Ihr Team Cozystack selbst betreibt (ohne Ænix-Platform-Lizenz), kann Ænix Support auf Retainer-Basis bieten. Für Organisationen mit Plattform-Engineering-Kapazität, die direkten Zugang zu Cozystack-Maintainern wollen.
 
 Coverage:
 - Architektur-Review und Best-Practice-Guidance
@@ -80,4 +80,4 @@ Coverage:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*

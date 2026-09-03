@@ -5,7 +5,7 @@ hero_subtitle: "Vom Readiness Assessment bis zur fertig gebauten Cloud-Plattform
 language: "de"
 ---
 
-**Engagement-basierte Einstiegspunkte zu Aenix-Arbeit. Wählen Sie den Engagement-Typ, der zu dem passt, was Sie tun müssen — assess, build, betreiben. Alle Pfade führen zu Ænix-Platform-Deployments passend zu Ihrem Buyer-Profil.**
+**Engagement-basierte Einstiegspunkte zu Ænix-Arbeit. Wählen Sie den Engagement-Typ, der zu dem passt, was Sie tun müssen — assess, build, betreiben. Alle Pfade führen zu Ænix-Platform-Deployments passend zu Ihrem Buyer-Profil.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -21,11 +21,11 @@ language: "de"
 
 ### Entry-Offer (hier starten)
 
-- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — 5-10 Tage Festpreis-Engagement (Festpreis vorab vereinbart). Architektur-Audit + Edition-Empfehlung + Migrations-Roadmap. **Häufigster Startpunkt.**
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — 5-10 Tage Festpreis-Engagement (Festpreis vorab vereinbart). Architektur-Audit + Plattform-Empfehlung + Migrations-Roadmap. **Häufigster Startpunkt.**
 
 ### Build-Engagements
 
-- **[Platform Engineering](/de/dienstleistungen/platform-engineering/)** — Bauen Sie eine produktive Cloud-Plattform; passt zu jeder Ænix Platform Edition
+- **[Platform Engineering](/de/dienstleistungen/platform-engineering/)** — Bauen Sie eine produktive Cloud-Plattform; passt zu jeder Ænix platform
 - **[Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/)** — IDP-Build für Produkt- / SaaS-Organisationen; passt zur Developer Self-Service
 - **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** — Kundenseitiger Cloud-Produkt-Build; passt zur Public Cloud Platform oder Public Cloud Platform
 - **[Sovereign Cloud Builder](/de/dienstleistungen/sovereign-cloud-builder/)** — Regierungs- / öffentliche-Sektor-souveräne-Cloud-Builds; passt zur Private Cloud Platform
@@ -45,10 +45,10 @@ language: "de"
 
 ## Engagement-Modell
 
-1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope, regulatorischer Kontext, Edition-Match bestätigen
-2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — aktuelle-Zustand-Audit + Edition-Empfehlung + Roadmap
+1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope, regulatorischer Kontext, Plattform-Match bestätigen
+2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — aktuelle-Zustand-Audit + Plattform-Empfehlung + Roadmap
 3. **Pilot-Engagement** (3-6 Monate, Angebot nach RFP) — definierter Slice, validierter Business Case
-4. **Vollständiger Edition-Build** — Wochen für Public Cloud Platform; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML
+4. **Vollständiger Plattform-Build** — Wochen für Public Cloud Platform; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML
 5. **Managed Operations** (laufender Retainer)
 
 <div class="arch-section__fig">
@@ -65,7 +65,7 @@ language: "de"
 
 ## Pricing
 
-Public Cloud Platform Entry ab 1.250 USD pro Monat (Basic Support-Tier, 10 Nodes). Andere Editions: Pricing on Request via Discovery-Call. [Pricing-Details →](/de/preise/).
+Public Cloud Platform Entry ab 1.250 USD pro Monat (Basic Support-Tier, 10 Nodes). Andere Plattforms: Pricing on Request via Discovery-Call. [Pricing-Details →](/de/preise/).
 
 ---
 

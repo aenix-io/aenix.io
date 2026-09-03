@@ -24,7 +24,7 @@ faq:
     a: "Die Standardwerte sind realistische Ausgangspunkte für den Mittelstand, nicht Ihre Zahlen. Ersetzen Sie jedes Feld durch Ihre eigenen Werte — die Ergebnisse werden live neu berechnet."
 ---
 
-**Vier interaktive Rechner für die Ökonomie einer eigenen Cloud-Plattform. Modellieren Sie einen VMware-Ausstieg, vergleichen Sie die Gesamtkosten für den Eigenbau einer Plattform gegenüber dem Betrieb auf Cozystack mit Ænix-Support, dimensionieren Sie die Unit Economics eines Hosting-Geschäfts oder wägen Sie den Kauf von GPUs gegen deren Miete ab. Jede Eingabe ist editierbar, jedes Ergebnis wird live neu berechnet — von Aenix, dem Team hinter Cozystack.**
+**Vier interaktive Rechner für die Ökonomie einer eigenen Cloud-Plattform. Modellieren Sie einen VMware-Ausstieg, vergleichen Sie die Gesamtkosten für den Eigenbau einer Plattform gegenüber dem Betrieb auf Cozystack mit Ænix-Support, dimensionieren Sie die Unit Economics eines Hosting-Geschäfts oder wägen Sie den Kauf von GPUs gegen deren Miete ab. Jede Eingabe ist editierbar, jedes Ergebnis wird live neu berechnet — von Ænix, dem Team hinter Cozystack.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -83,4 +83,4 @@ Ein Discovery-Call macht aus diesen Schätzungen eine belastbare TCO auf Workloa
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*

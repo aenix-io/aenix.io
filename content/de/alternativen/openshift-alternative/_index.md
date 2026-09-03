@@ -89,7 +89,7 @@ Wenn Sie bereits tief auf Red Hat / OpenShift setzen, lautet das Ergebnis der Al
 | **Operativer Footprint** | OpenShift (breit) | Cozystack (fokussiert) |
 | **Vendor-Beziehung** | Red Hat / IBM | Keine (Open Source) |
 | **Kostenmodell** | Subscription pro CPU | Kostenlos + optionaler Support-Tier |
-| **Support** | Red Hat | Aenix oder Community |
+| **Support** | Red Hat | Ænix oder Community |
 
 Beide sind KubeVirt-basiert, das zugrunde liegende VM-Modell ist also ähnlich. Die Unterschiede liegen bei Lizenzierung, operativem Footprint und Vendor-Beziehung.
 
@@ -109,4 +109,4 @@ Beide sind KubeVirt-basiert, das zugrunde liegende VM-Modell ist also ähnlich. 
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

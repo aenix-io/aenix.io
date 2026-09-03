@@ -56,7 +56,7 @@ faq:
 
 # Disaster Recovery as a Service auf einer Plattform, die Sie kontrollieren
 
-**Geschäftskontinuität ist keine Zeile in einem Anbietervertrag — sie ist ein Ergebnis, das Sie beweisen können müssen. Disaster Recovery as a Service (DRaaS) auf einer souveränen, selbst betriebenen Plattform liefert Ihnen DC-übergreifende synchrone Replikation, unveränderliche Backups und Failover, das getestet statt angenommen ist. Aenix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/), sodass Ihre Recovery-Time- und Recovery-Point-Objectives eine Architektur sind, die Sie besitzen, und Nachweise, die Sie einem Regulator übergeben können.**
+**Geschäftskontinuität ist keine Zeile in einem Anbietervertrag — sie ist ein Ergebnis, das Sie beweisen können müssen. Disaster Recovery as a Service (DRaaS) auf einer souveränen, selbst betriebenen Plattform liefert Ihnen DC-übergreifende synchrone Replikation, unveränderliche Backups und Failover, das getestet statt angenommen ist. Ænix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/), sodass Ihre Recovery-Time- und Recovery-Point-Objectives eine Architektur sind, die Sie besitzen, und Nachweise, die Sie einem Regulator übergeben können.**
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Basis, auf der DR aufsetzt; **[DORA-Compliance](/de/loesungen/dora-compliance/)** für die Betriebsresilienz-Pflichten, die DR erfüllen hilft. Starten Sie mit einem **[Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)**.
 
@@ -111,7 +111,7 @@ Diese Unterscheidung zählt für Regulatoren: Betriebsresilienz-Rahmenwerke erwa
 
 ## Getestetes Failover, kein Papier-Failover
 
-Ein DR-Plan, der nie geübt wurde, ist eine Hypothese. Die Plattformen, die Aenix betreibt, werden real gedrillt.
+Ein DR-Plan, der nie geübt wurde, ist eine Hypothese. Die Plattformen, die Ænix betreibt, werden real gedrillt.
 
 Im Anker-Projekt schaltet der Kunde regelmäßig Nodes ab, um Resilienz bewusst zu testen, was die nicht offensichtlichen Kaskaden aufdeckt, die eine Tabletop-Übung nie findet. Upgrades werden auf Staging nachweislich geprobt und dann auf Produktion wiederholt; nicht-deklarative Kommandos werden zugunsten von GitOps fallen gelassen; und jedes Szenario hat ein fertiges Runbook — DRBD-Recovery, Cluster-Upgrade, Storage-Failover. Das verwandelt ein RTO von einer Marketing-Zahl in eine Zahl, die Sie verteidigen können.
 
@@ -143,11 +143,11 @@ Die Einstufung ist das erste Ergebnis des Assessments, weil sie entscheidet, woh
 
 ---
 
-## Wie Aenix bei Disaster Recovery arbeitet
+## Wie Ænix bei Disaster Recovery arbeitet
 
 Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit DR-gewichteten Workstreams: aktuelle RTO/RPO-Lage pro Workload-Tier, Replikations- und Geo-Topologie-Design, Backup-Unveränderlichkeit und Ransomware-Isolation sowie Reife des Drill-Prozesses. Ergebnis ist ein schriftlicher Bericht plus eine Phase-2-Roadmap. Wo die DR-Plattform zugleich die Produktionsplattform ist — der Regelfall — passt sie natürlich zu **[Data Sovereignty](/de/loesungen/data-sovereignty/)** und DORA-Arbeit, sodass Kontinuität, Residenz und Compliance gemeinsam konstruiert statt nachträglich aufgesetzt werden.
 
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen souveräne Disaster-Recovery- und Business-Continuity-Plattformen für regulierte Organisationen in der EU und DACH.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen souveräne Disaster-Recovery- und Business-Continuity-Plattformen für regulierte Organisationen in der EU und DACH.*

@@ -31,7 +31,7 @@ faq:
     a: "Mehrere Regelwerke konvergieren auf dieselbe Anforderung: DORA für den Finanzsektor, NIS2 für kritische Infrastruktur und Telekommunikation, GDPR für personenbezogene Daten sowie sektorale Datenresidenzregeln und explizite souveräne Cloud-Mandate einzelner EU-Mitgliedstaaten."
   - q: "Wie unterstützt Aenix bei Datensouveränität?"
     a: "Aenix führt strukturierte Engagements durch, die eine Souveränitätsposition von der Behauptung in eine nachweisbare Architektur überführen. Die Ænix Platform ermöglicht kundenkontrollierte Verschlüsselungsschlüssel auf jeder Datenschicht — Primärspeicher, Replikate, Backups und Observability — und unterstützt eine Air-Gap-Option."
-  - q: "Welche Edition der Ænix Platform passt zu Souveränitätsanforderungen?"
+  - q: "Welche Plattform der Ænix Platform passt zu Souveränitätsanforderungen?"
     a: "Die Private Cloud Platform eignet sich für regulierte Unternehmen, die souveräne Cloud intern konsumieren. Die Public Cloud Platform richtet sich an Betreiber, die souveräne Cloud selbst als Produkt anbieten möchten."
   - q: "Worauf baut die Ænix Platform technisch auf?"
     a: "Die Ænix Platform baut auf Cozystack auf, einem CNCF-Projekt unter Apache-2.0-Lizenz. Cozystack vereint VMs und Container über KubeVirt auf einer Kubernetes-API, nutzt Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRDs für Mandantenfähigkeit."
@@ -43,7 +43,7 @@ faq:
 
 **Datensouveränität ist keine Beschaffungsklausel mehr. DORA, NIS2, GDPR, sektorale Datenresidenzregeln und explizite souveräne Cloud-Mandate aus EU-Mitgliedstaaten und Nicht-EU-Jurisdiktionen konvergieren allesamt auf dieselbe operative Anforderung: mit Belegen nachzuweisen, dass Ihre Daten dort liegen, wo der Regulator es vorschreibt — auf jeder Schicht, einschließlich Backups, Observability und CI/CD-Artefakten.**
 
-Aenix führt ein strukturiertes Engagement für Organisationen durch, die eine Souveränitätsposition von der Behauptung zur nachweisbaren Architektur überführen müssen. Ergebnis: eine kontrollebenengenaue Karte, wo Ihre Daten heute tatsächlich liegen, wo die Lücken sind und wie Sovereignty-by-Design für Ihren Stack aussieht.
+Ænix führt ein strukturiertes Engagement für Organisationen durch, die eine Souveränitätsposition von der Behauptung zur nachweisbaren Architektur überführen müssen. Ergebnis: eine kontrollebenengenaue Karte, wo Ihre Daten heute tatsächlich liegen, wo die Lücken sind und wie Sovereignty-by-Design für Ihren Stack aussieht.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die souveräne Cloud intern konsumieren; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Betreiber, die souveräne Cloud als Produkt anbieten. Kundenkontrollierte Schlüssel auf jeder Datenschicht (Primärspeicher, Replikate, Backups, Observability). Air-Gap-Option unterstützt.
 
@@ -140,7 +140,7 @@ Diese Lücken sind bei Institutionen, die sich für souveränitätskonform halte
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## Wie Aenix hilft
+## Wie Ænix hilft
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -160,7 +160,7 @@ Das Datensouveränitäts-Engagement läuft als Teil unseres **[Platform Readines
 - **Audit-Bereitschafts-Assessment** — welche Prozesse für den Aufsichtszugang dokumentiert, welche getestet und welche nicht vorhanden sind.
 - **Remediationsplan auf Architekturebene** — was in welcher Reihenfolge zu beheben ist, mit Aufwandsschätzungen und Abgleich an regulatorischen Fristen.
 
-Geliefert von Aenix-Ingenieuren — dem Team hinter Cozystack — in der gesamten EU, der DACH-Region und Zentralasien. Wir sind mit keinem Hyperscaler kommerziell verbunden, und der Bericht orientiert sich an dem, was wir nachweisen und wofür wir einstehen können.
+Geliefert von Ænix-Ingenieuren — dem Team hinter Cozystack — in der gesamten EU, der DACH-Region und Zentralasien. Wir sind mit keinem Hyperscaler kommerziell verbunden, und der Bericht orientiert sich an dem, was wir nachweisen und wofür wir einstehen können.
 
 <!-- /BLOCK 5 -->
 
@@ -168,7 +168,7 @@ Geliefert von Aenix-Ingenieuren — dem Team hinter Cozystack — in der gesamte
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Warum genau Aenix
+## Warum genau Ænix
 
 - **Ingenieure und Betrieb in der EU.** Unser Team arbeitet in der gesamten EU, der DACH-Region und Zentralasien. Wir verstehen den Unterschied zwischen Souveränität als US-Marketingbegriff und Souveränität, wie sie unter EU-sektoralen Regeln und Beschaffungsklauseln von EU-Mitgliedstaaten durchgesetzt wird.
 - **Kein Hyperscaler-Bias.** Souveränitätsberatung von Big-Four-Firmen ist durch deren Hyperscaler-Partnerschaften geprägt. Unsere Empfehlungen sind an keinen Cloud-Anbieter kommerziell gebunden — wir empfehlen die Architektur, die die Souveränitätsanforderung tatsächlich erfüllt, auch wenn das vollständig On-Prem bedeutet.
@@ -268,7 +268,7 @@ Oder lesen Sie mehr:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution, OpenSSF Best Practices. Wir führen Datensouveränitäts-Engagements und Platform-Engineering-Programme für Banken, Versicherer, Organisationen des öffentlichen Sektors und Betreiber kritischer Infrastruktur in der gesamten EU, der DACH-Region und Zentralasien durch.*
+*Ænix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution, OpenSSF Best Practices. Wir führen Datensouveränitäts-Engagements und Platform-Engineering-Programme für Banken, Versicherer, Organisationen des öffentlichen Sektors und Betreiber kritischer Infrastruktur in der gesamten EU, der DACH-Region und Zentralasien durch.*
 
 <!-- /BLOCK 12 -->
 

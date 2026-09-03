@@ -54,7 +54,7 @@ Wenn Sie früh in der Evaluierung sind und eine einzige Empfehlung fokussiert au
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform](/de/produkte/)** — zwei Editions: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig). Die richtige Edition hängt von Ihrem Buyer-Profil post-VMware ab. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
+> **Passt zu:** **[Ænix Platform](/de/produkte/)** — zwei Plattforms: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig). Die richtige Plattform hängt von Ihrem Buyer-Profil post-VMware ab. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/alternativen/vmware-alternative/">Fokussierte Empfehlung ansehen →</a>
@@ -84,7 +84,7 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 
 **Warum wählen:** Open Source (Apache 2.0), kein Vendor-Lock-in. Multi-Tenancy strukturell. Eine einzige Plattform für VMs + Container + Datenbanken + S3 + GPU. Leichter operativer Footprint im Vergleich zu OpenStack.
 
-**Vorsicht bei:** Neuer als OpenStack; kleinere Community (durch kommerziellen Aenix-Support abgefedert).
+**Vorsicht bei:** Neuer als OpenStack; kleinere Community (durch kommerziellen Ænix-Support abgefedert).
 
 **[Mehr lesen](/de/alternativen/vmware-alternative/)** · **[cozystack.io](https://cozystack.io)**
 
@@ -208,4 +208,4 @@ Wenn Ihre Situation nicht zum Cozystack-Profil passt, decken die acht obigen Opt
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*

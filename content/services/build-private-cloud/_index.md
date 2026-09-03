@@ -45,7 +45,7 @@ faq:
 
 **The phrase "build a private cloud" sounds like it should be straightforward in 2026. The reality: it's an architecture problem, an operational discipline problem, and a team-capacity problem at the same time. Done well, it produces a platform that compounds value for years. Done badly, it produces operational debt and the next emergency.**
 
-Aenix builds private clouds end-to-end based on [Cozystack](/products/cozystack/), an open-source CNCF project we run in production with service providers, banks, telecom, and AI operators.
+Ænix builds private clouds end-to-end based on [Cozystack](/products/cozystack/), an open-source CNCF project we run in production with service providers, banks, telecom, and AI operators.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises building private/hybrid sovereign cloud; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators needing multi-region public-cloud-class platform.
 
@@ -66,7 +66,7 @@ The work fits when:
 - You have or are building a platform engineering function (this is operational commitment, not a one-time project).
 - You have a specific trigger — VMware exit, sovereignty mandate, AI workloads, FinOps cliff.
 - The economics support dedicated infrastructure (sustained workloads, regulated data, or AI/GPU at scale).
-- The customer team can sustain operations after Aenix leaves (or has chosen managed-services).
+- The customer team can sustain operations after Ænix leaves (or has chosen managed-services).
 
 If you're not sure on any of these, the assessment phase clarifies before building begins.
 
@@ -128,7 +128,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ---
 
-## Why Aenix
+## Why Ænix
 
 - **Cozystack contributors.** We built and operate the platform.
 - **No hyperscaler bias.** No partnership economics shape recommendations.
@@ -150,7 +150,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Build a Private Cloud — Engineers Who've Shipped This | Aenix"
+<!-- SEO: title "Build a Private Cloud — Engineers Who've Shipped This | Ænix"
 Word count: ~700. -->

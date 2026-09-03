@@ -93,5 +93,5 @@ For structured assessment with an external lens see **[Platform Readiness Assess
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 

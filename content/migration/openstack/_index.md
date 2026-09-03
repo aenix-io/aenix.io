@@ -4,7 +4,6 @@ description: "OpenStack remains valid where deep expertise lives. Where engineer
 related_pages:
   - /alternatives/openstack-alternative
   - /products/public-cloud-platform/
-  - /products/public-cloud-platform/
   - /products/cozystack
   - /services/platform-readiness-assessment
 language: "en"
@@ -26,7 +25,7 @@ quick_facts:
   - label: "Typical timeline"
     value: "4-12 months for a mid-size deployment."
   - label: "Delivered by"
-    value: "Aenix, the team behind Cozystack, via the Ænix Platform ISP and Public Cloud editions plus migration services."
+    value: "Aenix, the team behind Cozystack, on the Aenix Public Cloud Platform or Aenix Private Cloud Platform, plus migration services."
 faq:
   - q: "How does Cozystack run OpenStack VMs?"
     a: "Cozystack uses KubeVirt to run virtual machines alongside containers on a single Kubernetes API. KVM-based OpenStack images convert to KubeVirt directly, so existing VM workloads keep running without a guest-OS rewrite."
@@ -39,12 +38,12 @@ faq:
   - q: "When should we keep OpenStack instead of migrating?"
     a: "OpenStack remains valid where deep in-house expertise lives and the operational footprint is sustainable. Migration makes sense when engineer availability is shrinking or operational overhead is pressuring modernization toward a Kubernetes-native platform."
   - q: "Who performs the migration?"
-    a: "Aenix, the team behind Cozystack, runs OpenStack-to-Cozystack migrations. Engagements pair with the Ænix Public Cloud Platform for hosting providers and the Public Cloud Platform for large operators consolidating OpenStack at scale."
+    a: "Aenix, the team behind Cozystack, runs OpenStack-to-Cozystack migrations. Engagements pair with the Aenix Public Cloud Platform where the OpenStack cloud is sold to external customers, and with the Aenix Private Cloud Platform where it serves internal consumers under a regulated compliance regime."
 ---
 
-**OpenStack remains valid where deep expertise lives. Where engineer-availability and operational footprint are pressuring modernization, Cozystack is the realistic next platform. Aenix runs OpenStack-to-Cozystack migrations.**
+**OpenStack remains valid where deep expertise lives. Where engineer-availability and operational footprint are pressuring modernization, Cozystack is the realistic next platform. Ænix runs OpenStack-to-Cozystack migrations.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers and regional clouds; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators consolidating OpenStack at scale.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** if the OpenStack cloud is sold to external customers (hosters, MSPs, telcos, national operators); **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** if it serves internal consumers under DORA / NIS2 / sectoral rules.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -77,7 +76,7 @@ For full comparison see **[OpenStack vs Cozystack modernization](/blog/2026/05/o
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "OpenStack to Cozystack Migration — Modernizing Operational Footprint | Aenix"
+<!-- SEO: title "OpenStack to Cozystack Migration — Modernizing Operational Footprint | Ænix"
 Word count: ~250. -->

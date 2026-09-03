@@ -49,7 +49,7 @@ faq:
 
 **Data sovereignty is no longer a procurement clause — it is an operational requirement: prove, with evidence, that your data lives where the regulator says it must, at every layer and not only in production.**
 
-Aenix runs a structured engagement that produces a control-level map of where your data actually lives today, where the gaps are, and what sovereignty-by-design looks like for your stack.
+Ænix runs a structured engagement that produces a control-level map of where your data actually lives today, where the gaps are, and what sovereignty-by-design looks like for your stack.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises consuming sovereign cloud internally, or **[Public Cloud Platform](/products/public-cloud-platform/)** for operators offering it as a product — customer-controlled keys at every layer, air-gap optional.
 
@@ -146,7 +146,7 @@ Surfacing these gaps under structured assessment is cheaper than surfacing them 
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## How Aenix helps
+## How Ænix helps
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -166,7 +166,7 @@ The data-sovereignty engagement runs as part of our **[Platform Readiness Assess
 - **Audit-readiness assessment** — what supervisor access processes are documented, what tested, what missing.
 - **Architecture-level remediation plan** — what to fix, in what sequence, with effort estimates and regulatory deadline alignment.
 
-Delivered by Aenix engineers — the team behind Cozystack — across the EU, DACH, and Central Asia, with no hyperscaler commercial alignment.
+Delivered by Ænix engineers — the team behind Cozystack — across the EU, DACH, and Central Asia, with no hyperscaler commercial alignment.
 
 <!-- /BLOCK 5 -->
 
@@ -174,7 +174,7 @@ Delivered by Aenix engineers — the team behind Cozystack — across the EU, DA
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **EU-based engineers and operations.** Our team works across the EU, DACH, and Central Asia. We understand the difference between sovereignty as a US marketing term and sovereignty as it is enforced under EU sectoral rules and EU member-state procurement clauses.
 - **No hyperscaler bias.** Sovereignty consulting from Big-4 firms is shaped by their hyperscaler partnerships. Our recommendations are not commercially tied to any cloud provider — we recommend the architecture that actually meets the sovereignty requirement, even when that means full on-prem.
@@ -278,7 +278,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
 

@@ -43,7 +43,7 @@ faq:
 
 **Für regulierte Workloads ist KI kein reines Hyperscaler-Thema mehr. Sensible Datenklassen, sektorale Vorgaben und die Ökonomie von Inferenz im großen Maßstab drängen Finanzdienstleister, Gesundheitswesen, öffentlichen Sektor und KI-Plattform-Betreiber zu souveräner KI-Infrastruktur — GenAI, Inferenz und Analytics auf der eigenen Hardware des Kunden, in der vom Kunden gewählten Jurisdiktion, unter den Verschlüsselungsschlüsseln des Kunden.**
 
-Aenix baut und betreibt souveräne KI-Infrastruktur für Organisationen, deren Datenklasse, Regulator oder Wirtschaftlichkeit Hyperscaler-KI-Services unpraktikabel machen. Ergebnis: eine Architektur, ein Deployment und ein Betriebsmodell, das Ihr Team tatsächlich selbst betreiben kann.
+Ænix baut und betreibt souveräne KI-Infrastruktur für Organisationen, deren Datenklasse, Regulator oder Wirtschaftlichkeit Hyperscaler-KI-Services unpraktikabel machen. Ergebnis: eine Architektur, ein Deployment und ein Betriebsmodell, das Ihr Team tatsächlich selbst betreiben kann.
 
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — KI-Plattform-Automatisierung out-of-the-box (Multi-Tenant-GPU-Scheduling für H100/H200/L40S/A100/Blackwell, fertige Blueprints für Inferenz + Fine-Tuning + RAG, Vector DB + Object Storage inkludiert, Souveränitätskontrollen). Für regulierte KI-Workloads auf einer breiteren souveränen Cloud: kombinieren mit [Private Cloud Platform](/de/produkte/private-cloud-platform/). Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
@@ -149,9 +149,9 @@ Die ehrliche Antwort ist meist eine Kubernetes-native KI-Plattform auf kundenkon
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## Wie Aenix hilft
+## Wie Ænix hilft
 
-Das Sovereign-AI-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Schwerpunkt auf den Workstreams Souveränität und KI-Plattform. Führt das Engagement zur Implementierung, liefert Aenix die Plattform End-to-End.
+Das Sovereign-AI-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Schwerpunkt auf den Workstreams Souveränität und KI-Plattform. Führt das Engagement zur Implementierung, liefert Ænix die Plattform End-to-End.
 
 Die Assessment-Phase liefert:
 
@@ -159,7 +159,7 @@ Die Assessment-Phase liefert:
 - **Souveränitätskontrollen** — Design für Datenresidenz, Schlüsselverwahrung und Audit-Trail, spezifisch für KI-Workloads.
 - **GPU-Strategie** — Sizing für NVIDIA / AMD / Alternativen, Modell-zu-Hardware-Eignung, Skalierungsannahmen.
 - **Betriebsmodell** — wer die Plattform betreibt, welche Self-Service-Oberfläche Produkt- / Data-Science-Teams erhalten, wie das On-Call-Modell aussieht.
-- **Phase-2-Implementierungs-Roadmap** — von Aenix gelieferter Aufbau, mit Zeitplan, Aufwandsschätzungen und Erfolgskriterien.
+- **Phase-2-Implementierungs-Roadmap** — von Ænix gelieferter Aufbau, mit Zeitplan, Aufwandsschätzungen und Erfolgskriterien.
 
 Die Implementierungsphase liefert:
 
@@ -176,7 +176,7 @@ Zu den validierten GPU-Modellen zählen NVIDIA A100, H100, H200, L40S und Blackw
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **KI-Infrastruktur ist unser Tagesgeschäft.** Cozystack ist bei KI/GPU-Betreibern in der EU und Zentralasien in Produktion. Wir haben GPU-Plattformen ausgeliefert, die Inferenz- und Fine-Tuning-Workloads End-to-End tragen.
 - **Keine Modellanbieter-Voreingenommenheit.** Wir haben keine kommerzielle Beziehung zu einem bestimmten LLM-Anbieter. Die Architektur empfiehlt das Open-Weight-Modell, das zu Ihrer Datenklasse, Ihrem Regulator und Ihrer Ökonomie passt — Llama, Mistral, Qwen, DeepSeek, Phi oder feinabgestimmte Varianten — und den dazu passenden Serving-Stack.
@@ -195,7 +195,7 @@ Zu den validierten GPU-Modellen zählen NVIDIA A100, H100, H200, L40S und Blackw
 | **Tag 0** | 30-minütiger Discovery-Call (kostenlos) | Eignung bestätigen, KI-Workload-Scope eingrenzen, Sponsor + Data-Science-Lead identifizieren |
 | **Tage 1-13 (oder 1-27)** | Vier parallele Workstreams; Schwerpunkt Souveränität + KI-Plattform | Architekturoptionen, GPU-Strategie, Souveränitätskontrollen, tägliche asynchrone Updates |
 | **Tag 14 (oder 28)** | Executive-Readout (60-90 Min.) | Schriftlicher Bericht: Architektur, Souveränitätskontrollen, GPU-Strategie, Betriebsmodell, Phase-2-Roadmap |
-| **Phase 2 (3-9 Monate)** | Implementierung — Aenix baut und übergibt | Produktive souveräne KI-Plattform |
+| **Phase 2 (3-9 Monate)** | Implementierung — Ænix baut und übergibt | Produktive souveräne KI-Plattform |
 
 Zur vollständigen Assessment-Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
@@ -233,7 +233,7 @@ Architekturoptionen, GPU-Strategie, Souveränitätskontrollen, Betriebsmodell, P
 **Auf Anfrage**
 
 ### Phase-2-Implementierung
-Von Aenix gelieferter Aufbau der souveränen KI-Plattform. Fester Umfang oder Time-and-Materials, je nach Anzahl und Komplexität der Workloads. Typischerweise 3-9 Monate Laufzeit.
+Von Ænix gelieferter Aufbau der souveränen KI-Plattform. Fester Umfang oder Time-and-Materials, je nach Anzahl und Komplexität der Workloads. Typischerweise 3-9 Monate Laufzeit.
 **Auf Anfrage**
 
 </div>
@@ -277,6 +277,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir bauen souveräne KI-Plattformen für KI/GPU-Betreiber, Finanzdienstleister und Organisationen des öffentlichen Sektors in der EU, DACH-Region und Zentralasien.*
+*Ænix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir bauen souveräne KI-Plattformen für KI/GPU-Betreiber, Finanzdienstleister und Organisationen des öffentlichen Sektors in der EU, DACH-Region und Zentralasien.*
 
 <!-- /BLOCK 12 -->
