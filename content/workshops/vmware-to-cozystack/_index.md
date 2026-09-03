@@ -167,7 +167,7 @@ faq:
 </div>
 </div>
 </div>
-<div class="ws-wrap ws-cta-center"><a class="cta-primary cta-accent" href="#register">Register</a></div>
+<div class="ws-wrap ws-cta-center"><a class="cta-primary cta-accent" href="#register">Tell us where to run it next</a></div>
 </section>
 
 <section class="ws-section ws-agenda" id="program" aria-labelledby="ws-agenda-h">
@@ -209,7 +209,7 @@ faq:
 <p class="ws-outcome__text"><strong>Materials and cheat sheets</strong> to work with at home — plus a month of support after the workshop.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Register</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Tell us where to run it next</a></div>
 </div>
 </section>
 
@@ -251,7 +251,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>A chat where Cozystack maintainers answer your questions.</strong></span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The opportunity to earn the Aenix Certification for Cozystack — Fundamentals certificate</strong> — free.</span></li>
 </ul>
-<div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Register</a></div>
+<div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Tell us where to run it next</a></div>
 </div>
 <div class="ws-after__stack" aria-hidden="true">
 <div class="ws-after__tile ws-after__tile--env"><span class="ws-after__ic">{{< ws-icon name="cal30" >}}</span><span class="ws-after__tile-label">30-day test environment</span></div>
@@ -292,8 +292,8 @@ faq:
 <section class="ws-section ws-register" id="register" aria-labelledby="ws-register-h">
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
-<h2 class="ws-h2 ws-h2--light" id="ws-register-h">Registration</h2>
-<p class="ws-register__lead">Attendance is free — with registration.</p>
+<h2 class="ws-h2 ws-h2--light" id="ws-register-h">Where should we run it next?</h2>
+<p class="ws-register__lead">The August 2026 tour has finished. Leave your city and we will tell you when the next date is set — attendance stays free.</p>
 <div class="ws-register__form">
 
 {{< pipedrive-form type="workshop" >}}

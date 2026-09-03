@@ -19,6 +19,7 @@
 {{- $items := .Page.Params.cities -}}
 {{- $isRU := eq (.Page.Params.language | default "en") "ru" -}}
 {{- $cta := cond $isRU "Зарегистрироваться" "Register" -}}
+{{- $ctaDone := cond $isRU "Прошёл" "Took place" -}}
 {{- if $items -}}
 <div class="ws-cities">
   {{- range $i, $c := $items -}}
@@ -30,7 +31,9 @@
     <span class="ws-city__name">{{ $c.city }}</span>
     <span class="ws-city__meta">
       <span class="ws-city__icon" aria-hidden="true">
-        {{- if eq $status "confirmed" -}}
+        {{- if eq $status "completed" -}}
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.6"/><path d="M8.4 12.2l2.5 2.5 4.7-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        {{- else if eq $status "confirmed" -}}
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.4 7-12a7 7 0 1 0-14 0c0 5.6 7 12 7 12Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
         {{- else -}}
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.6V12l3 1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -40,7 +43,7 @@
     </span>
     {{- with $c.venue }}<span class="ws-city__venue">{{ . }}</span>{{ end -}}
     {{- with $c.note }}<span class="ws-city__note">{{ . }}</span>{{ end -}}
-    <span class="ws-city__cta">{{ $cta }} <span aria-hidden="true">{{ if $ext }}↗{{ else }}→{{ end }}</span></span>
+    <span class="ws-city__cta">{{ if eq $status "completed" }}{{ $ctaDone }}{{ else }}{{ $cta }} <span aria-hidden="true">{{ if $ext }}↗{{ else }}→{{ end }}</span>{{ end }}</span>
   </a>
   {{- end -}}
 </div>
