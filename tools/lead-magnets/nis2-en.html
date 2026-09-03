@@ -1,0 +1,216 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">NIS2 Compliance Readiness Checklist</span>
+    <span class="versionline">Aenix · aenix.io · v1.1 — September 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">NIS2 Compliance Readiness Checklist</h1>
+  <p class="cover__subtitle">35 architectural control points to assess whether your cloud platform supports the cybersecurity risk-management measures required by Directive (EU) 2022/2555.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">For CISOs, security &amp; compliance leads · aenix.io</div>
+  <p class="cover__strapline"><b>35 architectural control points for essential and important entities.</b> Aligned to Directive (EU) 2022/2555. Member State transposition deadline 17 October 2024. v1.1 — September 2026.</p>
+</section>
+
+<h1 class="doc-h">How to use this checklist</h1>
+
+<p class="lead">The Network and Information Security 2 Directive (NIS2, Directive (EU) 2022/2555) significantly expands the scope and rigour of EU cybersecurity obligations. Member States transposed it into national law on 17 October 2024 (with some still finalising sectoral implementation). NIS2 covers essential entities (energy, transport, banking, financial market infrastructure, healthcare, drinking water, wastewater, digital infrastructure, ICT-service management, public administration, space) and important entities (postal, waste, manufacture of critical products, food distribution, manufacture of certain digital services, R&amp;D).</p>
+
+<p class="lead">This 35-point checklist gives CISOs, compliance leads, and platform engineering managers a structured way to assess whether their architecture supports the cybersecurity risk-management measures required under <span class="art">Art. 21</span> <span class="art">Art. 23</span> and adjacent provisions.</p>
+
+<p class="lead">Use it in three ways:</p>
+
+<ol class="howto">
+  <li><b>Self-assessment</b> — walk through with security, platform engineering, and compliance teams.</li>
+  <li><b>Authority dialog preparation</b> — section summaries map directly to a control narrative for a national CSIRT or competent authority.</li>
+  <li><b>Supplier scoping</b> — share with ICT third parties (especially ICT-service-management providers) so they answer against the same surface.</li>
+</ol>
+
+<div class="disclaimer">
+  <p>This checklist is an architectural readiness aid, not legal advice. NIS2 conformance must be confirmed by your legal counsel and validated against the national transposition in each Member State where you are in scope. Sectoral lex-specialis (DORA for financial entities, eIDAS for trust services) may take precedence in specific areas.</p>
+</div>
+
+<h3 class="plain">Section coverage:</h3>
+
+<table class="coverage">
+  <thead>
+    <tr><th>Section</th><th>Focus</th><th class="num">Points</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Risk management <span class="art">Art. 21</span></td><td class="num">10</td></tr>
+    <tr><td>2</td><td>Incident handling &amp; reporting <span class="art">Art. 23</span></td><td class="num">6</td></tr>
+    <tr><td>3</td><td>Business continuity &amp; vulnerability management</td><td class="num">7</td></tr>
+    <tr><td>4</td><td>Supply chain &amp; cryptography</td><td class="num">6</td></tr>
+    <tr><td>5</td><td>Access control &amp; audit</td><td class="num">6</td></tr>
+  </tbody>
+</table>
+
+<h2 class="sec newpage"><span class="num">1.</span> Risk management <span class="art">Art. 21</span></h2>
+<p class="lead">Article 21 enumerates the cybersecurity risk-management measures essential and important entities must implement. These are structural controls — designed to be evidenced, not just claimed.</p>
+
+<ul class="cps">
+  <li><b>Risk register documented per critical workload</b> — inventoried, owned, reviewed. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>Annual cybersecurity risk review</b> — conducted and signed by the management body. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>ICT asset register complete and current</b> — all hardware, software, data, and dependencies tracked. <span class="art">Art. 21(2)(i)</span></li>
+  <li><b>Threat model documented per critical workload</b> — updated on material architectural change. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>Cybersecurity policy approved by management body</b> — documented, refreshed annually. <span class="art">Art. 20</span></li>
+  <li><b>Network segmentation / zero-trust enforcement</b> — microsegmentation between trust zones; default-deny posture. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>Pod Security Standards / NetworkPolicies enforced (Kubernetes)</b> — where Kubernetes is in use, or equivalent isolation primitives on other substrates. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>Effectiveness review of controls — quarterly</b> — documented evidence retained. <span class="art">Art. 21(2)(f)</span></li>
+  <li><b>Cybersecurity training mandatory for all staff</b> — including senior management; completion tracked. <span class="art">Art. 21(2)(g)</span> <span class="art">Art. 20</span></li>
+  <li><b>Risk register reviewed by audit annually</b> — internal or external audit; findings tracked to remediation. <span class="art">Art. 21(2)(f)</span></li>
+</ul>
+
+<div class="callout">
+  <p>Article 20 places direct accountability on management bodies for approving cybersecurity measures and overseeing their implementation. "Risk owned by IT" is no longer a defensible posture.</p>
+</div>
+
+<h2 class="sec"><span class="num">2.</span> Incident handling &amp; reporting <span class="art">Art. 23</span></h2>
+<p class="lead">NIS2 introduces tight reporting timelines — early warning within 24 hours, incident notification within 72 hours, and a final report within 1 month.</p>
+
+<ul class="cps">
+  <li><b>24×7 detection capability for critical workloads</b> — aligned to the severity classification used for reporting. <span class="art">Art. 23</span></li>
+  <li><b>Documented incident response with named roles</b> — IR plan with on-call, escalation paths, decision authority, and comms playbook.</li>
+  <li><b>Incident classification process documented</b> — "significant" vs non-significant thresholds explicitly defined.</li>
+  <li><b>Pre-established CSIRT / competent-authority communication channels</b> — named contacts, secure channels, mock exercise completed.</li>
+  <li><b>Reporting templates aligned to 24-hour / 72-hour / 1-month</b> — templates tested, owners assigned. <span class="art">Art. 23(4)</span></li>
+  <li><b>Annual incident-response exercise</b> — tabletop or live; results retained.</li>
+</ul>
+
+<div class="callout">
+  <p>The 24-hour early warning is intentionally short — it requires a process where on-call security can make a "report or not" decision very quickly. Build the decision rubric into the IR plan, not into the incident.</p>
+</div>
+
+<h2 class="sec"><span class="num">3.</span> Business continuity &amp; vulnerability management</h2>
+
+<ul class="cps">
+  <li><b>BCP plan per critical workload</b> — documented, owned, reviewed. <span class="art">Art. 21(2)(c)</span></li>
+  <li><b>RTO / RPO documented and tested annually</b> — with evidence of test, not just a plan. <span class="art">Art. 21(2)(c)</span></li>
+  <li><b>Backup recovery tested in the past 12 months</b> — successful restore from a production backup to a clean environment.</li>
+  <li><b>DR site operational and tested</b> — failover exercised within the last 12 months for critical workloads.</li>
+  <li><b>CVE response SLA documented</b> — triage / patch / verification windows by severity. <span class="art">Art. 21(2)(e)</span></li>
+  <li><b>SAST / DAST in CI; container scanning + SBOM</b> — build-time security gates; dependency provenance tracked.</li>
+  <li><b>Coordinated vulnerability disclosure policy published</b> — receipt channel, triage commitment, recognition. <span class="art">Art. 12</span></li>
+</ul>
+
+<div class="callout">
+  <p>For container workloads, "SBOM" should mean a generated, signed, retained artifact (e.g. SPDX or CycloneDX format) — not a manual spreadsheet. Use Sigstore / Cosign or an equivalent for signatures.</p>
+</div>
+
+<h2 class="sec"><span class="num">4.</span> Supply chain &amp; cryptography</h2>
+<p class="lead">NIS2 places explicit weight on supply-chain risk <span class="art">Art. 21(2)(d)</span> and on cryptography and encryption <span class="art">Art. 21(2)(h)</span>.</p>
+
+<ul class="cps">
+  <li><b>ICT third-party inventory complete</b> — all ICT providers, including indirect (sub-contracted). <span class="art">Art. 21(2)(d)</span></li>
+  <li><b>Critical-function dependencies mapped to the second hop</b> — sub-contractors of suppliers, where they perform critical functions.</li>
+  <li><b>Article 21(2)(d)-aligned contractual content in critical-function agreements</b> — including coordinated vulnerability disclosure provisions and incident communication. <span class="art">Art. 21(2)(d)</span></li>
+  <li><b>Continuous supplier monitoring documented</b> — annual review minimum; ad-hoc on incident or M&amp;A trigger.</li>
+  <li><b>Encryption at-rest, in-transit, and (where applicable) in-use</b> — with documented cipher choices and rotation. <span class="art">Art. 21(2)(h)</span></li>
+  <li><b>Customer-controlled encryption keys where applicable</b> — for tier-1 / sensitive workloads. Key-custody process documented.</li>
+</ul>
+
+<div class="callout">
+  <p>"Supply chain to the second hop" sounds onerous but is largely about knowing, not controlling. The register often surfaces concentration on the same underlying provider via different intermediaries — useful intelligence regardless of the NIS2 framing.</p>
+</div>
+
+<h2 class="sec"><span class="num">5.</span> Access control &amp; audit</h2>
+<p class="lead">NIS2 expects MFA, privileged access management, and audit completeness as baseline controls — not advanced ones.</p>
+
+<ul class="cps">
+  <li><b>MFA for privileged accounts (universal)</b> — all admin / break-glass / IAM accounts; no exceptions. <span class="art">Art. 21(2)(j)</span></li>
+  <li><b>MFA for end-user access where reasonable</b> — risk-based for non-privileged access.</li>
+  <li><b>Privileged access management deployed</b> — just-in-time elevation, session recording, vault for shared credentials.</li>
+  <li><b>Joiner-mover-leaver automated</b> — identity lifecycle from the HR system to all in-scope systems; access removal verified.</li>
+  <li><b>Audit log retention meets the longest applicable requirement</b> — often 5+ years for sectoral or national mandates; tamper-evident storage.</li>
+  <li><b>Authority access process documented and tested</b> — procedure for granting a national CSIRT or competent authority access; mock exercise completed.</li>
+</ul>
+
+<div class="callout">
+  <p>Many organisations have MFA on the SSO surface but missing on cloud-provider root accounts, third-party SaaS admin consoles, or legacy break-glass paths. Audit comprehensively — not just the front door.</p>
+</div>
+
+<h1 class="doc-h newpage">Architecture-level recommendations</h1>
+
+<p class="lead">For most NIS2 controls, architecture is the most leveraged remediation surface. Where the underlying platform structurally supports tenant isolation, customer-controlled encryption, an immutable audit trail, controlled supplier access, and tested exit/restore mechanics, many of the 35 checkpoints become consequences of design rather than separate compliance projects.</p>
+
+<h3 class="plain">When architecture closes NIS2 gaps structurally</h3>
+<ul class="bullets">
+  <li>Tenant CRD multi-tenancy addresses <span class="art">Art. 21(2)(a)</span> network segmentation and isolation between trust zones.</li>
+  <li>Customer-controlled encryption at platform, storage, and observability layers addresses <span class="art">Art. 21(2)(h)</span>.</li>
+  <li>Air-gap support addresses sovereign / regulator-isolated workload requirements where national law goes beyond the NIS2 baseline.</li>
+  <li>Audit-trail completeness (provider-side via VictoriaLogs, customer-side via export) addresses <span class="art">Art. 21(2)(i)</span> and authority-access expectations.</li>
+  <li>Tested exit and restore mechanics address <span class="art">Art. 21(2)(c)</span> BCP and the supplier-exit expectations of <span class="art">Art. 21(2)(d)</span>.</li>
+</ul>
+
+<h3 class="plain">When existing architecture can be retrofitted</h3>
+<ul class="bullets">
+  <li>Many controls (universal MFA, CVE SLA, CVD policy, training, risk-register cadence, JML automation) are organisational and tooling additions that do not require platform replacement.</li>
+  <li>Network segmentation and microsegmentation can usually be retrofitted on Kubernetes-based platforms via NetworkPolicy / Cilium policy without an architectural rebuild.</li>
+  <li>BCP / DR and backup-test cadence is process discipline — no platform change needed.</li>
+</ul>
+
+<h3 class="plain">When a partial retrofit is genuinely insufficient</h3>
+<ul class="bullets">
+  <li>VMware-Cloud-Director-based platforms struggle with portability (<span class="art">Art. 21(2)(d)</span> supplier exit) and customer-controlled keys at every layer.</li>
+  <li>Vendor-managed-only encryption, especially for backups and observability, fails <span class="art">Art. 21(2)(h)</span> where regulator scrutiny is high.</li>
+  <li>Multi-tenant SaaS shared infrastructure struggles with audit-trail completeness expectations under authority scrutiny.</li>
+</ul>
+
+<div class="callout">
+  <p>The most cost-effective gap-closure sequence is usually: (1) universal MFA + JML, (2) backup test + DR test, (3) CVE SLA + SBOM, (4) supplier register + contracting refresh, (5) architectural changes if and where steps 1–4 cannot close the gap.</p>
+</div>
+
+<h1 class="doc-h newpage">NIS2-aligned cloud architecture — reference pattern</h1>
+
+<p class="lead">A platform built around isolation, customer-controlled cryptography, and immutable auditability can close most Article 21 controls at the platform layer rather than as 35 compensating procedures. The reference pattern below stacks three layers.</p>
+
+<div class="layer">
+  <h4>Tenant plane</h4>
+  <p>Isolated tenants side by side — for example a production tenant, an audit-isolated tenant, a sovereign-workloads tenant, and a test tenant. Each carries its own encryption keys, audit-log stream, and MFA-gated access.</p>
+</div>
+<div class="layer">
+  <h4>Platform control plane</h4>
+  <p>A single Kubernetes-native control plane providing the Tenant CRD, identity (OIDC), NetworkPolicy / Cilium segmentation, encryption (BYOK / HYOK), an audit pipeline (VictoriaLogs to an immutable backend), and backup orchestration.</p>
+</div>
+<div class="layer">
+  <h4>Substrate</h4>
+  <p>In-region datacenter, an in-region DR site, and an optional air-gapped enclave for regulator-isolated workloads.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Architecture element</th><th>NIS2 control area</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Per-tenant encryption keys</td><td><span class="art">Art. 21(2)(h)</span> Customer-controlled encryption</td></tr>
+    <tr><td>NetworkPolicy / Cilium</td><td><span class="art">Art. 21(2)(a)</span> Segmentation</td></tr>
+    <tr><td>Audit pipeline</td><td><span class="art">Art. 21(2)(i)</span> <span class="art">Art. 23</span></td></tr>
+    <tr><td>Multi-datacenter + DR site</td><td><span class="art">Art. 21(2)(c)</span> Continuity &amp; DR</td></tr>
+    <tr><td>MFA-gated tenant access</td><td><span class="art">Art. 21(2)(j)</span> Access control</td></tr>
+    <tr><td>Tenant CRD isolation</td><td><span class="art">Art. 21(2)(d)</span> Supplier exit / portability</td></tr>
+  </tbody>
+</table>
+
+<p class="lead">This pattern is not the only valid NIS2-aligned architecture — but it illustrates how isolation, customer-controlled cryptography, and immutable auditability close most Article 21 controls at the platform layer.</p>
+
+<h1 class="doc-h newpage">Next steps</h1>
+
+<div class="option"><b>Option 1 — Self-remediate using this checklist.</b> Walk through it with security, platform, and compliance teams. Convert unchecked boxes into a 90-day remediation plan.</div>
+<div class="option"><b>Option 2 — NIS2-aligned readiness engagement with Aenix (4–6 weeks).</b> We run the checklist with you, review architecture against each control, and produce a remediation plan with effort estimates and authority-narrative drafts. Fixed-fee engagement.</div>
+<div class="option"><b>Option 3 — Joint NIS2 + DORA + GDPR mapping.</b> For entities in scope of multiple frameworks. We map controls to avoid duplicated work and surface where one framework satisfies several.</div>
+
+<div class="cta">Schedule a discovery call: <span>aenix.io/services/platform-readiness-assessment/</span></div>
+
+<h1 class="doc-h" style="margin-top:9mm">Refresh cadence</h1>
+<ul class="bullets">
+  <li><b>Quarterly:</b> review against new national transpositions and supervisory communications.</li>
+  <li><b>Annual:</b> structural review of checklist coverage.</li>
+  <li><b>Ad-hoc:</b> on material amendments to NIS2 itself or to sectoral lex-specialis.</li>
+</ul>
+
+<p class="lead">Aenix is the team behind Cozystack (a CNCF project) and offers the Ænix Platform — our commercial productized offering based on Cozystack. aenix.io</p>
+
+<div class="closing">
+  <b>Aenix · aenix.io · NIS2 Compliance Readiness Checklist · v1.1 — September 2026.</b> Aenix is the team behind Cozystack (CNCF, Apache 2.0).
+</div>

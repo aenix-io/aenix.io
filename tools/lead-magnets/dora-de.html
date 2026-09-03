@@ -1,0 +1,182 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">DORA-Compliance Cloud-Architektur-Checkliste</span>
+    <span class="versionline">Aenix · aenix.io · v1.1 — September 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">DORA-Compliance-Checkliste für die Cloud-Architektur</h1>
+  <p class="cover__subtitle">35 Kontrollpunkte, die zeigen, ob Ihre Cloud-Architektur die DORA-Anforderungen tatsächlich erfüllt.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">Für CISOs, Cloud-Architekten und Compliance-Verantwortliche · aenix.io</div>
+  <p class="cover__strapline"><b>35 Kontrollpunkte für Finanzunternehmen und IKT-Drittdienstleister.</b> Ausgerichtet auf die Verordnung (EU) 2022/2554. Anwendbar ab dem 17. Januar 2025. v1.1 — September 2026.</p>
+</section>
+
+<h1 class="doc-h">So verwenden Sie diese Checkliste</h1>
+
+<p class="lead">Der Digital Operational Resilience Act (DORA, Verordnung (EU) 2022/2554) ist seit dem 17. Januar 2025 in Kraft. Er gilt für die meisten regulierten Finanzunternehmen, die in der EU tätig sind, sowie für die IKT-Drittdienstleister, die sie beliefern — darunter Cloud-Plattformen, Hosting-Anbieter, Managed Services und Softwareanbieter.</p>
+
+<p class="lead">Diese Checkliste mit 35 Punkten gibt CISOs, Cloud-Architekten und Compliance-Teams eine strukturierte Möglichkeit zu beurteilen, ob ihre Cloud-Architektur die DORA-Verpflichtungen unterstützt. Es ist dasselbe Ausgangsframework, das Aenix bei DORA-orientierten Readiness-Projekten mit Finanzunternehmen und IKT-Drittdienstleistern einsetzt.</p>
+
+<p class="lead">Nutzen Sie sie auf drei Arten:</p>
+
+<ol class="howto">
+  <li><b>Selbstbewertung</b> — gehen Sie sie gemeinsam mit den Teams für Sicherheit, Platform Engineering und Compliance durch. Jedes nicht angekreuzte Kästchen wird zu einer Maßnahme im Remediationsplan.</li>
+  <li><b>Vorbereitung des Aufsichtsdialogs</b> — die Abschnittszusammenfassungen lassen sich direkt in ein Kontroll-Narrativ-Dokument überführen.</li>
+  <li><b>Scoping von Drittanbietern</b> — teilen Sie sie mit Cloud- / IKT-Anbietern, damit diese gegen dieselbe Oberfläche antworten (hilfreich für die vertragliche Prüfung nach den Artikeln 28-30).</li>
+</ol>
+
+<div class="disclaimer">
+  <p>Diese Checkliste ist eine Hilfe zur architektonischen Readiness, keine Rechtsberatung. Die DORA-Konformität muss von Ihrer Rechtsabteilung bestätigt und gegen etwaige sektorale oder nationale aufsichtsrechtliche Erwartungen validiert werden. RTS/ITS entwickeln sich weiter — gleichen Sie vor jedem Prüfzyklus mit der konsolidierten Fassung auf EUR-Lex ab.</p>
+</div>
+
+<h3 class="plain">Abschnittsübersicht:</h3>
+
+<table class="coverage">
+  <thead>
+    <tr><th>Abschnitt</th><th class="num">Kontrollpunkte</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1. Workload-Portabilität &amp; Exit-Readiness</td><td class="num">5 Punkte</td></tr>
+    <tr><td>2. Konzentrationsrisiko</td><td class="num">4 Punkte</td></tr>
+    <tr><td>3. Operationelle Resilienz</td><td class="num">5 Punkte</td></tr>
+    <tr><td>4. Souveränität &amp; Aufsichtszugang</td><td class="num">5 Punkte</td></tr>
+    <tr><td>5. Drittanbieterrisiko &amp; Vertragsgestaltung</td><td class="num">4 Punkte</td></tr>
+    <tr><td>6. Risikomanagement &amp; Umgang mit Vorfällen</td><td class="num">12 Punkte</td></tr>
+  </tbody>
+</table>
+
+<h2 class="sec newpage"><span class="num">1.</span> Workload-Portabilität &amp; Exit-Readiness</h2>
+<p class="lead">DORA erwartet von regulierten Unternehmen den Nachweis, dass sie einen IKT-Anbieter wechseln können, ohne den Betrieb zu gefährden. Die Architektur bildet dafür die Grundlage.</p>
+
+<ul class="cps">
+  <li><b>Dokumentierter Exit-Plan je kritischem Workload</b> — mindestens alle 24 Monate getestet. <span class="art">Art. 28(8)</span></li>
+  <li><b>Workload-Portabilität ist strukturell verankert, nicht bloß angestrebt</b> — Workloads als IaC (Kubernetes-Manifeste, Terraform usw.) ausdrückbar und ohne Neuentwicklung auf einer zweiten Umgebung einsetzbar.</li>
+  <li><b>Anbietergebundene Managed Services inventarisiert</b> — jeder Dienst gekennzeichnet als ersetzbar / neu implementierbar / gebunden. Für „gebundene“ Posten existiert ein Plan.</li>
+  <li><b>Datenexport getestet</b> — kundengesteuerter Export aller Datenklassen (Transaktionsdaten, Archiv, Secrets) innerhalb der angegebenen RTO verifiziert. Exit-Kosten modelliert (Egress, Lizenzübertragung, Parallelbetriebsphase).</li>
+  <li><b>Exit-Unterstützungspflichten des Anbieters vertraglich geregelt</b> — der IKT-Anbieter verpflichtet sich vertraglich zu Unterstützung, Datenrückgabe und Zusammenarbeit nach Vertragsende. <span class="art">Art. 30(2)(d) &amp; 30(3)(f)</span></li>
+</ul>
+
+<div class="callout">
+  <p>Ein „dokumentierter Exit-Plan“ ohne regelmäßige Tests ist ein reines Papierartefakt. Aufsichtsbehörden verlangen zunehmend einen Testnachweis, nicht nur die Existenz des Dokuments.</p>
+</div>
+
+<h2 class="sec"><span class="num">2.</span> Konzentrationsrisiko</h2>
+<p class="lead">DORA hebt das IKT-Konzentrationsrisiko besonders hervor — die übermäßige Abhängigkeit von einem einzelnen Anbieter, Rechenzentrum oder einer einzelnen Jurisdiktion.</p>
+
+<ul class="cps">
+  <li><b>Register zur Anbieterkonzentration geführt</b> — je kritischem Workload: welcher IKT-Anbieter, welche Rechenzentrumsregion, welche souveräne Jurisdiktion. Bei Vertragsänderung aktualisiert. <span class="art">Art. 28(3) &amp; 29(1)</span></li>
+  <li><b>Exponierung gegenüber Einzelanbietern quantifiziert</b> — aggregierter Anteil der Ausgaben / des Volumens kritischer Workloads je Anbieter. Schwellenwert für die Prüfung durch das Leitungsorgan definiert.</li>
+  <li><b>Multi-Region-Design für kritische Workloads</b> — mindestens zwei physisch getrennte Standorte mit unabhängigen Fehlerdomänen. Für Tier-1-Workloads mindestens ein Standort innerhalb der regulierten Jurisdiktion.</li>
+  <li><b>Tragfähigkeit mehrerer Lieferanten bewertet</b> — auch wenn heute nicht im Einsatz, wurde ein zweiter Lieferant (kaufmännisch und technisch) bewertet, sodass die Konzentration aufgelöst werden kann. <span class="art">Art. 28(2)</span></li>
+</ul>
+
+<div class="callout">
+  <p>Viele Finanzunternehmen entdecken das Konzentrationsrisiko erst, wenn sie es messen. Eine einzige Hyperscaler-Region für „Produktions“-Workloads ist ein verbreitetes — und zunehmend kritisch geprüftes — Muster.</p>
+</div>
+
+<h2 class="sec"><span class="num">3.</span> Operationelle Resilienz</h2>
+<p class="lead">DORA verlangt nachgewiesene Resilienz, nicht bloß eine auf Resilienz ausgelegte Konzeption. Testfrequenz und Nachweise stehen im Mittelpunkt.</p>
+
+<ul class="cps">
+  <li><b>RTO und RPO je kritischem Workload dokumentiert</b> — mit der Grundlage der Schätzung (Workload-Klasse, regulatorische Anforderung, Abhängigkeitsanalyse). <span class="art">Art. 11</span></li>
+  <li><b>Backup-Wiederherstellung in den letzten 12 Monaten getestet</b> — erfolgreiche Wiederherstellung aus einem Produktions-Backup in eine saubere Umgebung. Testbericht aufbewahrt.</li>
+  <li><b>Disaster-Recovery-Test durchgeführt</b> — Failover auf den sekundären Standort, mit gemessenen RTO-Istwerten, aufbewahrt für die aufsichtsrechtliche Prüfung. <span class="art">Art. 25</span></li>
+  <li><b>TLPT (bedrohungsorientierter Penetrationstest) durchgeführt</b> — für Unternehmen im Anwendungsbereich von TLPT (Artikel 26-27): alle 3 Jahre durchgeführt, Ergebnisse aufbewahrt, Remediation nachverfolgt. <span class="art">Art. 26</span></li>
+  <li><b>Programm für operationelle Resilienz durch das Leitungsorgan gesteuert</b> — jährlicher Bericht an das Leitungsorgan. <span class="art">Art. 5</span></li>
+</ul>
+
+<div class="callout">
+  <p>Das Scoping eines TLPT ist ein umfangreiches Vorhaben. Wenn Ihr Unternehmen im Anwendungsbereich liegt, aber noch keinen durchgeführt hat, planen Sie 12-18 Monate Vorbereitung ein, einschließlich Anbieterbeschaffung, Scope-Abstimmung mit der Aufsicht und Remediationsbudget.</p>
+</div>
+
+<h2 class="sec"><span class="num">4.</span> Souveränität &amp; Aufsichtszugang</h2>
+<p class="lead">DORA setzt voraus, dass Aufsichtsbehörden IKT-Dienste abrufen, prüfen und inspizieren können. Die Architektur entscheidet, ob dies durchführbar ist.</p>
+
+<ul class="cps">
+  <li><b>Kundengesteuerte Verschlüsselungsschlüssel für sensible Daten</b> — einschließlich Bring-Your-Own-Key oder Hold-Your-Own-Key für Tier-1-Workloads. Schlüsselverwahrungsdokument vom CISO genehmigt. <span class="art">Art. 9(4)(d)</span></li>
+  <li><b>Audit-Logs unveränderlich und exportierbar</b> — Wer-hat-was-wann-Protokolle mit einer Aufbewahrungsdauer, die die längste geltende Anforderung erfüllt (oft 5+ Jahre). Manipulationssichere Speicherung. Kundengesteuerter Export. <span class="art">Art. 30(3)(e)</span></li>
+  <li><b>Prozess für den Aufsichtszugang dokumentiert und geübt</b> — ein Verfahren zur Gewährung des Aufsichtszugangs zu Systemen, Protokollen und Personal; getestet mit einer internen Simulation eines Aufsichtsszenarios. <span class="art">Art. 28(6) &amp; 30(3)(e)</span></li>
+  <li><b>Kontrollen zur Datenresidenz je Workload durchsetzbar</b> — Platzierungsbeschränkungen für Workloads (nur EU, ein einzelnes Land usw.) durch die Plattform durchgesetzt, nicht auf Disziplin der Betreiber angewiesen.</li>
+  <li><b>Zugriffe von Anbieterpersonal protokolliert und überprüfbar</b> — einschließlich Admin- / Break-Glass-Zugriffen durch Personal des IKT-Anbieters, Jurisdiktion des Zugriffs, zeitlich begrenzte Freigaben. <span class="art">Art. 9(4)(c) &amp; 30(3)(e)</span></li>
+</ul>
+
+<div class="callout">
+  <p>„Kundengesteuerte Schlüssel“ müssen sich auf Backup-, Replikations- und Observability-Daten erstrecken — nicht nur auf die primäre Datenbank. Eine häufige Lücke sind ruhend verschlüsselte Produktionsdaten, deren Backups durch anbieterverwaltete Schlüssel geschützt sind.</p>
+</div>
+
+<h2 class="sec"><span class="num">5.</span> Drittanbieterrisiko &amp; Vertragsgestaltung</h2>
+<p class="lead">Artikel 28 legt die allgemeinen Grundsätze für das Management des IKT-Drittparteienrisikos fest, Artikel 30 die wesentlichen Vertragsbestimmungen zwischen regulierten Unternehmen und IKT-Anbietern — einschließlich unterbeauftragter IKT-Dienste.</p>
+
+<ul class="cps">
+  <li><b>IKT-Drittanbieterregister vollständig und aktuell</b> — alle IKT-Anbieter, einschließlich indirekter (unterbeauftragter) mindestens bis zur zweiten Stufe. Bei Vertragsänderung aktualisiert. <span class="art">Art. 28(3)</span></li>
+  <li><b>Wesentliche Vertragsbestimmungen nach Artikel 30 in Vereinbarungen zu kritischen Funktionen vorhanden</b> — die Vertragsbedingungen decken ab: Leistungsbeschreibung, Zugangs- / Prüfrechte, Unterbeauftragung, Datenrückgabe, Exit-Unterstützung und Kündigung. <span class="art">Art. 30</span></li>
+  <li><b>Transparenz der Unterbeauftragung vertraglich durchgesetzt</b> — der Anbieter muss wesentliche Änderungen an Unterauftragnehmern, die kritische Funktionen erbringen, vorab anzeigen. <span class="art">Art. 30(2)(a)</span></li>
+  <li><b>Kontinuierliche Überwachung der Anbietersituation</b> — mindestens jährliche Anbieterüberprüfung; Ereignisse, die eine anlassbezogene Überprüfung auslösen (Vorfälle, M&amp;A, aufsichtsrechtliche Maßnahmen). <span class="art">Art. 28(2)</span></li>
+</ul>
+
+<div class="callout">
+  <p>Bestehende IKT-Verträge, die vor dem Anwendungsstichtag von DORA geschlossen wurden, genießen keinen Bestandsschutz — sie müssen in Compliance überführt werden. Prüfen und nachverhandeln.</p>
+</div>
+
+<h2 class="sec"><span class="num">6.</span> Risikomanagement &amp; Umgang mit Vorfällen</h2>
+<p class="lead">Der umfangreichste Abschnitt — er umfasst das IKT-Risikomanagement-Framework (Artikel 5–16, bes. Art. 6) sowie die Klassifizierung, Meldung und Bearbeitung IKT-bezogener Vorfälle (Artikel 17–19).</p>
+
+<h3 class="subsec">6a. Risikomanagement-Framework</h3>
+<ul class="cps">
+  <li><b>IKT-Risikomanagement-Framework dokumentiert</b> — vom Leitungsorgan genehmigt, mindestens jährlich überprüft. <span class="art">Art. 5 &amp; 6</span></li>
+  <li><b>IKT-Asset-Register vollständig und aktuell</b> — Hardware, Software, Daten, Abhängigkeiten; mit dem Risikoregister verknüpft. <span class="art">Art. 8</span></li>
+  <li><b>Risikoregister kontinuierlich aktualisiert</b> — je kritischem Workload; mit Verantwortlichem, Behandlungsstatus, Restrisiko. Jährlich durch die Revision überprüft. <span class="art">Art. 6</span></li>
+  <li><b>Wirksamkeitsprüfung der IKT-Kontrollen — vierteljährlich</b> — dokumentierte Nachweise aufbewahrt.</li>
+  <li><b>Cybersicherheitsrichtlinie vom Leitungsorgan genehmigt</b> — jährlich aktualisiert.</li>
+  <li><b>Cybersicherheitsschulung für alle Mitarbeitenden verpflichtend</b> — einschließlich der Geschäftsleitung; Abschluss nachverfolgt.</li>
+</ul>
+
+<div class="callout">
+  <p>Abschnitt 6 ist der Bereich, in dem die meisten Lücken zutage treten. Aufsichtsbehörden suchen nach kontinuierlichen Nachweisen, nicht nach Momentaufnahmen. Nutzen Sie diesen Abschnitt als Input für Ihren jährlichen IKT-Risikobericht statt als einmalige Prüfung.</p>
+</div>
+
+<h3 class="subsec">6b. Umgang mit Vorfällen</h3>
+<p class="lead">DORA hat die Klassifizierung von Vorfällen, Meldefristen und Ursachenanalyse gegenüber früheren NIS- / sektoralen Regelungen deutlich verschärft.</p>
+<ul class="cps">
+  <li><b>24×7-Erkennungsfähigkeit für IKT-bezogene Vorfälle</b> — insbesondere für kritische Workloads. Ausgerichtet an den Schwellenwerten der RTS zur Klassifizierung von Vorfällen. <span class="art">Art. 10 &amp; 17</span></li>
+  <li><b>Prozess zur Klassifizierung von Vorfällen dokumentiert</b> — Schwellenwerte für „schwerwiegend“ vs. „nicht schwerwiegend“ ausdrücklich definiert und genehmigt. <span class="art">Art. 18</span></li>
+  <li><b>Meldevorlagen an DORA-Fristen ausgerichtet</b> — Erstmeldung innerhalb weniger Stunden, Zwischenbericht innerhalb von 72 Stunden, Abschlussbericht innerhalb eines Monats (gemäß Delegierter Verordnung (EU) 2025/301). <span class="art">Art. 17-19</span> <span class="art art--alt">Delegierte VO (EU) 2025/301</span></li>
+  <li><b>Vorab eingerichtete Kommunikationskanäle mit den zuständigen Behörden</b> — benannte Kontakte beim CSIRT, sektoralen Aufseher und federführenden Überwacher. <span class="art">Art. 19(1)</span></li>
+  <li><b>Dokumentierte Vorfallreaktion mit benannten Rollen</b> — IR-Plan mit Bereitschaftsdienst, Eskalation, Entscheidungsbefugnis und Kommunikations-Playbook.</li>
+  <li><b>Jährliche Übung zur Vorfallreaktion</b> — Tabletop oder live; Ergebnisse aufbewahrt und in die Aktualisierung des Frameworks eingespeist. <span class="art">Art. 11</span></li>
+</ul>
+
+<div class="callout">
+  <p>Kleinere Finanzunternehmen nehmen mitunter an, DORA gelte nur für „die großen Banken“. Er gilt für die meisten regulierten Unternehmen, darunter Wertpapierfirmen, Versicherungsvermittler, Anbieter von Krypto-Dienstleistungen und viele weitere (siehe Anwendungsbereich in Artikel 2).</p>
+</div>
+
+<h1 class="doc-h newpage">Empfehlungen auf Architekturebene</h1>
+
+<p class="lead">Bei den meisten Kontrollpunkten ist die Lücke struktureller, nicht prozeduraler Natur. Eine Plattform, die auf (1) Workload-Portabilität über Kubernetes-native Primitive, (2) kundengesteuerten Verschlüsselungsschlüsseln auf jeder Ebene, (3) unveränderlichen, kundenexportierbaren Audit-Logs, (4) durchsetzbarer, datenresidenzgebundener Workload-Platzierung und (5) getesteten Exit- / Wiederherstellungsmechaniken aufbaut, adressiert den Großteil der architektonischen Oberfläche von DORA in einem einzigen kohärenten Design — statt als 35 separate kompensierende Kontrollen.</p>
+
+<p class="lead">Aenix entwirft Plattformen nach diesem Muster. Cozystack (CNCF Project) liefert die quelloffene Grundlage; die Ænix Platform ergänzt sie um ein Enterprise-SLA, Lieferantentransparenz und DORA-orientierte Betriebsdokumentation, die für die aufsichtsrechtliche Prüfung geeignet ist.</p>
+
+<p class="lead">Bestehende Plattformen (VMware-basiert, OpenStack-basiert, Hyperscaler-basiert) lassen sich meist teilweise nachrüsten — doch die Erwartungen von DORA an Portabilität und Exit-Readiness sind schwer zu erfüllen, wenn die zugrunde liegende Plattform selbst die Quelle des Lock-in ist.</p>
+
+<h1 class="doc-h" style="margin-top:9mm">Nächste Schritte</h1>
+
+<div class="option"><b>Option 1 — Selbstständige Behebung mit dieser Checkliste.</b> Weisen Sie jedes nicht angekreuzte Kästchen einem Workstream-Verantwortlichen zu. Die meisten Finanzunternehmen haben 12-18 nicht angekreuzte Kästchen, die 90 Tage strukturierte Arbeit erfordern.</div>
+<div class="option"><b>Option 2 — DORA-orientiertes Readiness-Projekt mit Aenix (4-6 Wochen).</b> Wir gehen die Checkliste gemeinsam mit Ihnen durch, prüfen die Architektur gegen jede Kontrolle und erstellen einen Remediationsplan mit Aufwandsschätzungen und Entwürfen für das Aufsichts-Narrativ. Festpreis-Projekt.</div>
+<div class="option"><b>Option 3 — Gemeinsames Mapping von DORA + NIS2 + sektoralen Anforderungen.</b> Für Unternehmen im Anwendungsbereich mehrerer Rahmenwerke. Wir bilden Kontrollen über DORA, NIS2 und sektorale Erwartungen hinweg ab, um Doppelarbeit zu vermeiden.</div>
+
+<div class="cta">Vereinbaren Sie ein Erstgespräch: <span>aenix.io/services/platform-readiness-assessment/</span></div>
+
+<h1 class="doc-h" style="margin-top:9mm">Aktualisierungsrhythmus</h1>
+<ul class="bullets">
+  <li><b>Vierteljährlich:</b> Abgleich mit neuen RTS/ITS-Veröffentlichungen und aufsichtsrechtlichen Mitteilungen.</li>
+  <li><b>Jährlich:</b> strukturelle Überprüfung der Abdeckung der Checkliste.</li>
+  <li><b>Anlassbezogen:</b> bei wesentlichen Änderungen an DORA selbst.</li>
+</ul>
+
+<p class="lead">Aenix ist das Team hinter Cozystack (CNCF Project) und bietet die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack. aenix.io</p>
+
+<div class="closing">
+  <b>Aenix · aenix.io · DORA-Compliance Cloud-Architektur-Checkliste · v1.1 — September 2026.</b> Aenix is the team behind Cozystack (CNCF, Apache 2.0).
+</div>
