@@ -18,7 +18,7 @@ hero_chips:
   - "Bring your stack — questions answered live"
 hero_primary: { text: "Save my seat", href: "#register" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
-speaker_photo: "images/webinars/andrei-kvapil.png"
+speaker_photo: "images/webinars/andrei-kvapil-hero.png"
 inshort_title: "About the webinar"
 quick_facts_style: "rows"
 event:
