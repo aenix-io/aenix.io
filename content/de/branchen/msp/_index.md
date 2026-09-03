@@ -44,7 +44,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/msp-cloud-platform-modernization/">MSP-Cloud-Modernisierung →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/msp-cloud-plattform-modernisierung/">MSP-Cloud-Modernisierung →</a>
 </div>
 
 ---
@@ -102,7 +102,7 @@ Für das vollständige Engagement siehe **[White-Label-Cloud-Services](/de/diens
 </div>
 
 - **[White-Label-Cloud-Services](/de/dienstleistungen/white-label-cloud/)** — Engagement
-- **[Artikel: MSP-Cloud-Modernisierung](/blog/2026/05/msp-cloud-platform-modernization/)**
+- **[Artikel: MSP-Cloud-Modernisierung](/de/blog/2026/05/msp-cloud-plattform-modernisierung/)**
 
 ---
 

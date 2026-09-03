@@ -3,6 +3,7 @@ title: "Ihr Download ist bereit — NIS2-Compliance-Readiness-Checkliste"
 description: "Laden Sie Ihre Kopie des NIS2-Compliance-Readiness-Checkliste von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
+hreflang_en: /resources/nis2-compliance-checklist/thank-you/
 page_type: "flag-page"
 hide_closing_cta: true
 ---

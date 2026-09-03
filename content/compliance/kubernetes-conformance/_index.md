@@ -15,7 +15,7 @@ related_pages:
   - /products/private-cloud-platform/
   - /alternatives/openshift-alternative/
 direct_answer: |
-  **Kubernetes clusters created on the Ænix platforms pass the CNCF conformance suite in full. The suite answers one narrow question, and it is the question every evaluation starts with: is this real Kubernetes, or something Kubernetes-shaped? A conformant cluster runs standard manifests, Helm charts and operators without a vendor dialect. The published runs were executed against Cozystack v1.6.1 — the open-source, Apache 2.0, CNCF engine the Ænix platforms are built from — one run per Kubernetes version against its own tenant cluster, with Sonobuoy in certified-conformance mode: 441 of 441 on v1.35.6, and no failures on v1.34, v1.33, v1.32 or v1.31. A hosted platform built on the same engine, Hikube, is listed in the CNCF conformance repository for v1.33, v1.34 and v1.35. A listing certifies a named product at a named version; a conformance run tells you the software behaves as Kubernetes should.**
+  **Kubernetes clusters created on the Ænix platforms pass the CNCF conformance suite in full. The suite answers one narrow question, and it is the question every evaluation starts with: is this real Kubernetes, or something Kubernetes-shaped? A conformant cluster runs standard manifests, Helm charts and operators without a vendor dialect. The published runs were executed against Cozystack v1.6.1 — the open-source, Apache 2.0, CNCF engine the Ænix platforms are built from — one run per Kubernetes version against its own tenant cluster, with Sonobuoy in certified-conformance mode: 441 of 441 on v1.35.6, and no failures on v1.34, v1.33, v1.32 or v1.31. Cozystack v1.6.1 is listed in the CNCF conformance repository as a Certified Kubernetes distribution for v1.34 and v1.35, submitted by Aenix, and a hosted platform built on the same engine, Hikube, is listed for v1.33, v1.34 and v1.35 by Hidora. A listing certifies one named product at one named version — it does not certify your installation; a conformance run tells you the software behaves as Kubernetes should.**
 quick_facts:
   - label: "Suite"
     value: "CNCF Kubernetes conformance, Sonobuoy v0.57.5 in certified-conformance mode with the e2e plugin."
@@ -25,15 +25,15 @@ quick_facts:
     value: "0 failures on every run: 441 passed on v1.35.6, 424 on v1.34.9, 419 on v1.33.13, 411 on v1.32.13, 404 on v1.31.14."
   - label: "CNCF record"
     value: "Hikube, a hosted platform built on the same engine, is listed for v1.33, v1.34 and v1.35 with full test logs."
-  - label: "Submissions"
-    value: "Self-hosted v1.35 and v1.34 runs are filed with the CNCF conformance repository; the programme accepts only the current release and the two before it."
-  - label: "Mark claimed"
-    value: "None. Certified Kubernetes is granted to a named product at a named version, and Aenix claims no grant of the mark here."
+  - label: "CNCF listing for the engine"
+    value: "Cozystack v1.6.1 is listed as a Certified Kubernetes distribution for v1.34 and v1.35, submitted by Aenix; the programme accepts only the current release and the two before it, so the older runs are published here instead."
+  - label: "What the listing covers"
+    value: "One named product at one named version. It is not a certification of your installation, and it says nothing about security or operations."
   - label: "What it does not prove"
     value: "Nothing about security, performance, ingress, CSI drivers, LoadBalancer provisioning, NetworkPolicy enforcement, virtual machines or managed databases."
 faq:
   - q: "Is this certified Kubernetes?"
-    a: "Clusters created on the platform pass the conformance suite in full — across all five Kubernetes releases offered, in the runs published here, and in the CNCF's own record for v1.33, v1.34 and v1.35 through Hikube, a hosted platform built on the same engine. Submissions for the self-hosted v1.35 and v1.34 runs are filed with the CNCF. The Certified Kubernetes mark itself is granted to a named product at a named version, so listings appear under the names of the entities that submitted them. Nothing on this page is a grant of that mark or a claim to hold one."
+    a: "For the engine at the versions the programme accepts, yes, and it is in the CNCF's own record: Cozystack v1.6.1 is listed as a Certified Kubernetes distribution for v1.34 and v1.35, submitted by Aenix, and Hikube — a hosted platform built on the same engine — is listed for v1.33, v1.34 and v1.35 by Hidora. Read the scope precisely. A listing certifies one named product at one named version, so it covers Cozystack v1.6.1 at those Kubernetes releases and not your own installation, which is a separate cluster you can test yourself with the commands below. The runs for v1.33, v1.32 and v1.31 are published here rather than filed, because the programme accepts only the current release and the two before it."
   - q: "Were these runs against Cozystack or against the Aenix platform?"
     a: "Against Cozystack v1.6.1, the Apache 2.0 CNCF engine that Aenix creates and maintains and that all three Aenix platforms are distributions of. There is no separate closed build, so a tenant cluster created on an Aenix platform is the same resource that was tested — created from the catalog with kind Kubernetes, two worker nodes, no special build and no laboratory setup."
   - q: "Which Kubernetes versions can we run?"
@@ -41,7 +41,7 @@ faq:
   - q: "Does a hosted platform's certification transfer to our installation?"
     a: "No. A listing describes one product at one version. Running the same open-source platform yourself is not covered by someone else's certification, which is why the self-hosted runs are published separately with their own artefacts."
   - q: "Can we see the raw results?"
-    a: "Yes. A conformance submission consists of e2e.log and junit_01.xml from the run. Both are preserved for the Hikube entries in the CNCF repository, and both accompany the self-hosted submissions for v1.35 and v1.34. Artifacts for the older runs are available on request."
+    a: "Yes. A conformance submission consists of e2e.log and junit_01.xml from the run, and both are preserved permanently in the CNCF repository — under the Cozystack entries for v1.34 and v1.35, and under the Hikube entries for v1.33, v1.34 and v1.35. Artifacts for the older self-hosted runs, which fall outside the submission window, are available on request."
   - q: "What does conformance not tell us?"
     a: "It checks portable behaviour where that behaviour is generally available: core APIs, scheduling, service routing, namespace isolation. Alpha and beta APIs sit outside the profile, and so do most extension points a real workload leans on — ingress controllers, CSI drivers and storage classes, LoadBalancer provisioning, NetworkPolicy enforcement, performance and hardening. It says nothing about whether a cluster is secure, fast or well operated, and nothing about virtual machines or managed databases, which are custom resources layered on top."
 ---
@@ -73,7 +73,7 @@ Cozystack is the open-source, Apache 2.0, CNCF-hosted engine that Ænix creates 
 | v1.32.13 | **411** | 0 | 6624 |
 | v1.31.14 | **404** | 0 | 6607 |
 
-Results for v1.35 and v1.34 are submitted to the CNCF conformance repository. The programme accepts the current Kubernetes release and the two before it, and with v1.36 current those are the newest releases the platform offers.
+The v1.35 and v1.34 runs are in the CNCF conformance repository as Certified Kubernetes entries for Cozystack v1.6.1, submitted by Ænix, with their full artefacts: [`v1.35/cozystack`](https://github.com/cncf/k8s-conformance/tree/master/v1.35/cozystack) and [`v1.34/cozystack`](https://github.com/cncf/k8s-conformance/tree/master/v1.34/cozystack). The programme accepts the current Kubernetes release and the two before it, and with v1.36 current those are the newest releases the platform offers — which is why the v1.33, v1.32 and v1.31 runs are published here rather than filed.
 
 ### Hikube, a hosted platform built on the same engine
 
@@ -177,6 +177,6 @@ It also says nothing about virtual machines, managed databases or the rest of th
 
 The self-hosted runs were executed on 19 August 2026 against a Cozystack v1.6.1 installation — the engine the Ænix platforms are built from — using Sonobuoy v0.57.5 in `certified-conformance` mode with the `e2e` plugin, one run per Kubernetes version against its own tenant cluster. Passed and failed counts are taken from the Ginkgo summary in `e2e.log`.
 
-Submissions for v1.35 and v1.34 are filed with the CNCF conformance repository. Until they are accepted and published there, this page reports conformance runs rather than a completed certification, and makes no claim to the mark.
+The v1.35 and v1.34 runs are published in the CNCF conformance repository as Certified Kubernetes entries for Cozystack v1.6.1, submitted by Ænix. The v1.33, v1.32 and v1.31 runs are reported here only: the programme accepts the current Kubernetes release and the two before it, so they were never eligible to be filed, and nothing on this page presents them as certified.
 
-"Certified Kubernetes" and the Certified Kubernetes logo are marks of The Linux Foundation, licensed to the vendor of a conformant product for the product and version it certified. Nothing here is a certification, a grant of that mark, or a claim that Aenix or the Cozystack project holds one.
+"Certified Kubernetes" and the Certified Kubernetes logo are marks of The Linux Foundation, licensed to the vendor of a conformant product for the product and version it certified. The listings referenced here cover Cozystack v1.6.1 at Kubernetes v1.34 and v1.35, and Hikube at v1.33 through v1.35 under Hidora's own submission. None of them certifies your installation, and nothing on this page claims that a Kubernetes conformance listing says anything about the security, performance or operation of a cluster.

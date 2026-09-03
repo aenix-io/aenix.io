@@ -2,6 +2,7 @@
 title: "Ænix auf Konferenzen"
 description: "Konferenz-Vorträge des Aenix-Teams zu Cozystack-Architektur, KubeVirt, GitOps, souveräner KI und Platform Engineering — CloudFest, KubeCon und mehr."
 language: "de"
+hreflang_en: /conferences/
 ---
 
 **Das Ænix-Team spricht auf Kubernetes-, Cloud- und Platform-Engineering-Konferenzen weltweit — wir teilen, wie Cozystack funktioniert, wie Ænix Platform es für produktive Cloud-Operations erweitert und welche Architektur-Entscheidungen hinter souveräner / regulierter Cloud im großen Maßstab stehen.**
@@ -15,7 +16,7 @@ language: "de"
 
 ## Wo wir waren
 
-- **CloudFest 2026** (Europa-Park Rust, Deutschland) — Ænix-Stand #Z22, Partner-Programm-Launch, Ænix-Plattforms-Übersicht, Kunden-Meetings
+- **CloudFest 2026** (Europa-Park Rust, Deutschland) — Ænix-Stand #Z22, Partner-Programm-Launch, Ænix-Plattformen-Übersicht, Kunden-Meetings
 - **KubeCon + CloudNativeCon** (mehrere) — Cozystack-Plattform-Vorträge, GitOps / KubeVirt / Cluster API Sessions
 - **Kubernetes Community Days** — regionale KCDs in EU, DACH, Zentralasien
 - **Regionale Cloud- und Hosting-Konferenzen** — CloudFest, hosting.tools, regionale MSP-Konferenzen
@@ -62,4 +63,4 @@ Für Einladungen: [Discovery-Call buchen](/de/kontakt/) und "Speaking-Einladung"
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

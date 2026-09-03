@@ -82,7 +82,7 @@ The case appears when the product has to broaden. A provider selling only VMs in
 | Virtual router (DHCP, source NAT, port forwarding, static NAT, site-to-site VPN, LB) | Cilium plus platform services; no single replacement object | **Redesign.** The largest single work item. |
 | Isolated networks, VPCs, network offerings | Cilium networking with per-tenant policy; LB IPAM with BGP or L2 announcements | Redesign, coupled to the address plan. |
 | Security groups (basic zones) | Kubernetes network policy | Re-model. Same intent, different expression. |
-| Primary storage (NFS / Ceph RBD) | LINSTOR/DRBD, or keep Ceph via Rook | Keep Ceph, or move data. A design choice, not a forced change. |
+| Primary storage (NFS / Ceph RBD) | LINSTOR/DRBD, or keep your existing Ceph cluster via Ceph CSI | Keep Ceph, or move data. A design choice, not a forced change. |
 | Secondary storage | Object storage on the platform | Usually a straight move. |
 | SystemVMs (SSVM, console proxy) | Platform components; console via the tenant dashboard | Replaced, not migrated. |
 | CloudStack API | Kubernetes API and the tenant dashboard | Rewrite for anyone automating against it. |

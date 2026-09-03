@@ -6,7 +6,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **SRE consulting from Aenix applies software engineering discipline to operations so production stays reliable as it scales. The engagement covers SLO design, error-budget frameworks, incident response with blameless post-mortems, reliability-focused observability, capacity planning, and toil reduction. It is aimed at platform, infrastructure, and operations teams running Kubernetes and Cozystack-based environments who need measurable reliability rather than ad-hoc firefighting. Aenix builds these practices into the platform foundation instead of bolting them on, and can pair the work with any Ænix Platform edition or deliver it stand-alone. Engagement modes range from a 5-10 day maturity assessment, to a 3-9 month implementation embedded with your team, to a managed engagement where Aenix acts as an on-call partner.**
+  **SRE consulting from Aenix applies software engineering discipline to operations so production stays reliable as it scales. The engagement covers SLO design, error-budget frameworks, incident response with blameless post-mortems, reliability-focused observability, capacity planning, and toil reduction. It is aimed at platform, infrastructure, and operations teams running Kubernetes and Cozystack-based environments who need measurable reliability rather than ad-hoc firefighting. Aenix builds these practices into the platform foundation instead of bolting them on, and can pair the work with any Ænix platform or deliver it stand-alone. Engagement modes range from a 5-10 day maturity assessment, to a 3-9 month implementation embedded with your team, to a managed engagement where Aenix acts as an on-call partner.**
 quick_facts:
   - label: "What it is"
     value: "An SRE consulting engagement that establishes SLOs, error budgets, incident response, and reliability practices for production Kubernetes and Cozystack environments."
@@ -24,7 +24,7 @@ faq:
   - q: "What is the difference between SRE, DevOps, and platform engineering at Aenix?"
     a: "SRE applies software engineering to operations through SLOs, error budgets, and incident discipline. DevOps consulting covers a broader delivery and culture scope, while platform engineering builds the self-service platform itself. Aenix offers each as a distinct service that can be combined."
   - q: "Do I have to use the Ænix Platform to get SRE consulting?"
-    a: "No. SRE consulting is available stand-alone. It also pairs with any Ænix Platform edition when you want reliability practices tied directly to the production platform you operate, but the platform is not a prerequisite."
+    a: "No. SRE consulting is available stand-alone. It also pairs with any Ænix platform when you want reliability practices tied directly to the production platform you operate, but the platform is not a prerequisite."
   - q: "How long does an SRE engagement take?"
     a: "It depends on the mode. A maturity assessment runs 5-10 days, an embedded implementation runs 3-9 months while the team builds the practices, and a managed engagement is ongoing with Aenix acting as an on-call partner."
   - q: "What does an SRE assessment actually deliver?"
@@ -37,7 +37,7 @@ faq:
 
 **Site Reliability Engineering as a discipline applies software engineering to operations. The Ænix SRE engagement covers SLOs, error budgets, incident response, and the operational practices that keep production reliable at scale — built into the platform foundation, not bolted on.**
 
-> **Pairs with:** any **[Ænix platform](/products/)** — SRE practice tied to the production platform you're operating. Stand-alone SRE consulting also available.
+> **Pairs with:** any of the three **[Ænix platforms](/products/)** when you want the SLOs tied to the platform you actually run. Stand-alone SRE consulting is available without one.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -89,5 +89,3 @@ For broader DevOps scope see **[DevOps consulting](/services/devops-consulting/)
 
 *Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "SRE Consulting — Site Reliability Practices for Production at Scale | Ænix"
-Word count: ~350. -->

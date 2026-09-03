@@ -11,7 +11,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The NIS2 Compliance Cloud Architecture Checklist is a free 35-point self-assessment for essential and important entities subject to the EU NIS2 Directive. It maps cloud and platform architecture against Article 21 risk-management measures across 10 areas, Article 23 incident-reporting timelines (24-hour early warning, 72-hour notification, 1-month final report), supply-chain security, business continuity (RTO/RPO), MFA, encryption, and vulnerability management. It is aimed at security, compliance, and platform teams at NIS2-regulated organizations and the ICT providers serving them. Aenix uses this checklist during NIS2-aligned readiness engagements; its Ænix Private Cloud Platform, built on the CNCF project Cozystack, supports these controls with Tenant CRD network segmentation via Cilium, customer-controlled encryption, and audit-ready logging.**
+  **The NIS2 Compliance Cloud Architecture Checklist is a free 35-point self-assessment for essential and important entities subject to the EU NIS2 Directive. It maps cloud and platform architecture against Article 21 risk-management measures across 10 areas, Article 23 incident-reporting timelines (24-hour early warning, 72-hour notification, 1-month final report), supply-chain security, business continuity (RTO/RPO), MFA, encryption, and vulnerability management. It is aimed at security, compliance, and platform teams at NIS2-regulated organizations and the ICT providers serving them. Aenix uses this checklist during NIS2-aligned readiness engagements; its Ænix Private Cloud Platform, built on the CNCF project Cozystack, supports these controls with Tenant CRD network segmentation enforced by Cilium, opt-in volume encryption under keys you hold, and API audit logging you route and retain yourself. Aenix claims no NIS2 certification: compliance belongs to the regulated entity.**
 quick_facts:
   - label: "What it is"
     value: "A free 35-point checklist to assess cloud and platform architecture against the EU NIS2 Directive."
@@ -20,7 +20,7 @@ quick_facts:
   - label: "What it covers"
     value: "Article 21 risk-management (10 areas), Article 23 incident reporting, supply-chain security, business continuity, MFA, encryption, and vulnerability management."
   - label: "Pairs with"
-    value: "Ænix Private Cloud Platform, NIS2-aligned by design (Cilium segmentation, customer-controlled encryption, audit-ready logging)."
+    value: "Ænix Private Cloud Platform — built to support NIS2 work: Cilium segmentation, opt-in encryption under keys you hold, audit logging you retain. Compliance stays with the regulated entity."
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
@@ -33,14 +33,14 @@ faq:
   - q: "Is the checklist free, and what do I get?"
     a: "Yes. It is a free downloadable PDF with 35 points covering Article 21 risk-management measures across 10 areas, Article 23 reporting timelines, supply-chain security to at least the second hop, business continuity with documented RTO/RPO, MFA, encryption posture, and vulnerability management."
   - q: "How does Aenix help with NIS2 compliance?"
-    a: "Aenix uses this checklist during NIS2-aligned readiness engagements and offers NIS2 compliance services for deeper work. Its Ænix Private Cloud Platform, built on the CNCF project Cozystack, supports relevant controls through Tenant CRD segmentation with Cilium NetworkPolicy, customer-controlled encryption, and audit-ready logging."
+    a: "Aenix uses this checklist during NIS2-aligned readiness engagements and offers NIS2 compliance services for deeper work. The platform supplies controls, not compliance: NIS2 obligations sit with the essential or important entity, and no platform can hold them. Ænix Private Cloud Platform, built on the CNCF project Cozystack, supports relevant controls through Tenant CRD segmentation with Cilium NetworkPolicy, opt-in volume encryption under keys you hold, and API audit logging you route and retain."
   - q: "What is Cozystack and how does it relate to this checklist?"
     a: "Cozystack is an open-source, Apache 2.0 cloud platform and CNCF Sandbox project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium (eBPF) networking and LINSTOR/DRBD storage. Aenix is the team behind it and sells the productized Ænix Platform on top, the architecture this NIS2 checklist is designed to assess."
 ---
 
 **A 35-point checklist for essential and important entities subject to NIS2. Covers Article 21 risk management measures (10 areas), Article 23 incident reporting timelines, supply-chain transparency, business continuity, MFA, encryption, and architecture-level controls. Used by Ænix during NIS2-aligned readiness engagements.**
 
-> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — NIS2-aligned by design (Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging, coordinated vulnerability disclosure aligned with Article 12).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — built to supply the platform-side controls NIS2 work draws on: Tenant CRD with Cilium NetworkPolicy for segmentation, opt-in volume encryption under keys you hold, audit logging you retain, and a published coordinated vulnerability disclosure process of the kind Article 12 describes.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" resource="nis2-compliance-checklist" >}}

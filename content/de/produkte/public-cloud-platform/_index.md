@@ -45,7 +45,7 @@ aliases:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">Alle Plattforms →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Plattformen →</a>
 </div>
 
 **Sehen Sie das Kundenportal selbst.** Die Cozystack Dashboard-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
@@ -128,7 +128,7 @@ Diese Kunden nutzen Ænix Public Cloud Platform, um Multi-Tenant-Cloud-Produkte 
 
 **Entry ab 1.250 USD/Monat Support-Tier.** Höhere Tiers und projektbasierte Migrations- / Build-Engagements auf Anfrage via Discovery-Call.
 
-[Public Cloud Platform Pricing diskutieren →](/de/kontakt/?edition=isp)
+[Public Cloud Platform Pricing diskutieren →](/de/kontakt/?platform=public-cloud)
 
 ---
 
@@ -159,7 +159,7 @@ Für Produkt-Teams, die Cozystack auf eigener / gemieteter Hardware (Hetzner, OV
 
 **Cloud-Erfahrung auf kundenkontrollierter Hardware. Reduzieren Sie AWS-Level-Rechnungen 2-7×. Live-Migration von Public Clouds in 1-2 Wochen.** Vendor-Support, Architektur-Review und Migrations-Expertise — ohne kommerzielle Portal-/Billing-Schicht.
 
-[Pure Cozystack Support diskutieren →](/de/kontakt/?edition=cozystack-support)
+[Pure Cozystack Support diskutieren →](/de/kontakt/?platform=cozystack-support)
 
 ---
 

@@ -50,7 +50,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/white-label-cloud-msp-reseller-playbook/">Das MSP-Playbook lesen →</a>
+  <a class="cta-secondary" href="/blog/2026/05/white-label-cloud-msp-reseller-playbook/">Das MSP-Playbook lesen (englisch) →</a>
 </div>
 
 ---
@@ -103,7 +103,7 @@ faq:
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[White-Label-Cloud-MSP-Playbook](/blog/2026/05/white-label-cloud-msp-reseller-playbook/)**
+- **[White-Label-Cloud-MSP-Playbook (englisch)](/blog/2026/05/white-label-cloud-msp-reseller-playbook/)**
 - **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** — breiterer Scope (Ihre eigene Cloud-Marke)
 - **[Cozystack](/de/produkte/cozystack/)**
 

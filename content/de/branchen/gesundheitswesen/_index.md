@@ -142,4 +142,4 @@ Wir veröffentlichen keine namentlichen Gesundheitskunden — Gesundheitsprojekt
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert Cozystack als Ænix Platform, verfügbar in drei Plattformen: Public Cloud, ISP, Enterprise, IDP und AI/ML.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert Cozystack als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI, kombinierbar statt einander ausschließend.*

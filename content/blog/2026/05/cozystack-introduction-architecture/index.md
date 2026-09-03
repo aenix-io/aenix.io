@@ -1,6 +1,6 @@
 ---
 title: "Cozystack — what it is, architecture, and how it fits in 2026"
-description: "This is the long-form companion to our Cozystack product page. It walks through what Cozystack is, the architecture, how it differs from OpenStack and..."
+description: "What Cozystack is technically, the architectural choices behind it, how it compares to OpenStack and OpenShift, and when it is the wrong answer."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "Cozystack itself is forked from the Cilium codebase", correct: false }
       explanation: "Choice 4: Cilium gives eBPF-based networking with native L4/L7 policies, observability, and service-mesh capabilities — replacing what NSX did in VMware deployments without the NSX licensing."
 ---
-
-**This is the long-form companion to our [Cozystack product page](/products/cozystack/). It walks through what Cozystack is, the architecture, how it differs from OpenStack and OpenShift, and where it fits in the 2026 cloud platform landscape.**
 
 *Component facts below reflect the Cozystack v1.6 release line (current as of September 2026).*
 
@@ -160,14 +158,3 @@ For organizations seeking commercial support, Ænix is one option (the primary o
 - Pure public-cloud-native architecture — hyperscaler-managed services may be the right call
 
 A good engagement is honest about these cases.
-
-## How to start
-
-- Self-deploy: **[cozystack.io](https://cozystack.io)**
-- Ænix engagement: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
-- Specific use case: see solution / alternatives pages
-
----
-
-*Cozystack is a CNCF Project. Ænix is the company that builds and supports it.*
-

@@ -23,7 +23,7 @@ quick_facts:
   - label: "Regulatorik"
     value: "Deckt DORA, NIS2 und GDPR sowie sektorale Anwendbarkeit ab"
   - label: "Nächster Schritt"
-    value: "Discovery-Call → Assessment → Plattform-Empfehlung (Public Cloud / ISP / Enterprise / IDP / AI-ML) → Pilot → Full Build"
+    value: "Discovery-Call → Assessment → Plattform-Empfehlung (Public Cloud, Private Cloud oder AI) → Pilot → Full Build"
 
 faq:
   - q: "Wie lange dauert das Platform Readiness Assessment?"
@@ -273,7 +273,7 @@ Für benannte Case Studies siehe **[Customer Stories](/de/case-studies/)** — f
 <!-- BLOCK 10: FAQ -->
 
 
-**Weitere Fragen?** Siehe den **[Methodologie-Deep-Dive in unserem Blog](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)** oder **[sprechen Sie mit uns](#discovery)**.
+**Weitere Fragen?** Siehe den **[Methodologie-Deep-Dive in unserem Blog](/de/blog/2026/05/cloud-readiness-assessment-methodik/)** oder **[sprechen Sie mit uns](#discovery)**.
 
 <!-- /BLOCK 10 -->
 
@@ -291,7 +291,7 @@ Kostenlos. Keine Vorbereitung nötig. Wir bestätigen den Fit, einigen uns auf e
 </div>
 
 Oder lesen Sie mehr:
-- **[Cloud-Readiness-Assessment — 14-Tage-Methodologie im Detail](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)**
+- **[Cloud-Readiness-Assessment — 14-Tage-Methodologie im Detail](/de/blog/2026/05/cloud-readiness-assessment-methodik/)**
 - **[Lösungsübersicht — nach Auslöser](/de/loesungen/)**
 - **[Cozystack — die Plattform, die wir typischerweise empfehlen](/de/produkte/cozystack/)**
 

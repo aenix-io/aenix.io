@@ -57,7 +57,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/nutanix-vs-cozystack-vs-vmware/">Nutanix vs Cozystack vs VMware →</a>
+  <a class="cta-secondary" href="/blog/2026/05/nutanix-vs-cozystack-vs-vmware/">Nutanix vs Cozystack vs VMware (englisch) →</a>
 </div>
 
 ---
@@ -98,7 +98,7 @@ Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkei
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Nutanix vs Cozystack vs VMware](/blog/2026/05/nutanix-vs-cozystack-vs-vmware/)**
+- **[Nutanix vs Cozystack vs VMware (englisch)](/blog/2026/05/nutanix-vs-cozystack-vs-vmware/)**
 - **[VMware-Alternative](/de/alternativen/vmware-alternative/)**
 - **[Cozystack](/de/produkte/cozystack/)**
 

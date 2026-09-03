@@ -1,8 +1,46 @@
 ---
 title: "Ænix Platform pricing"
-description: "Ænix Platform pricing: published price list for providers from $1,250/month per 10 nodes; enterprise programmes quoted per RFP. Cozystack stays open source."
+description: "Aenix pricing: published price list for providers from $1,250/month per 10 nodes; enterprise and AI programmes quoted per RFP. Cozystack itself stays free."
 hero_subtitle: "Published price list for providers from $1,250/month; enterprise programmes scoped per RFP"
 language: "en"
+page_type: "product"
+quick_facts_style: "rows"
+faq_style: "rows"
+primary_keyword: "aenix pricing"
+secondary_keywords: ["cozystack pricing", "kubernetes cloud platform cost", "private cloud platform pricing", "vmware alternative cost"]
+images: ["img/og/pricing.png"]
+hreflang_de: /de/preise/
+related_pages: ["/products/", "/tco-calculator/", "/products/cozystack-enterprise-support/", "/contact/"]
+direct_answer: |
+  **Aenix prices two ways. Cozystack itself is free — Apache 2.0, no per-CPU, per-core or per-VM licensing, and you can run it forever without paying Aenix anything. The commercial layer is bought either from a published price list or as a scoped programme. Hosting providers, MSPs and product teams buy support tiers per 10 physical nodes, starting at $1,250/month on an annual commitment for the Basic tier and rising through Standard ($3,000), Plus ($5,500) and a custom Enterprise tier. Private Cloud Platform, AI Platform and multi-region operator builds are quoted per RFP after a discovery call, because the number depends on estate size, regulatory scope, migration volume and how much of the operating model Aenix runs. Two dimensions are chosen independently: which platform surfaces are switched on, and which support tier applies.**
+quick_facts:
+  - label: "Cozystack licence cost"
+    value: "Zero. Apache 2.0, no per-CPU, per-core or per-VM fees, and it stays runnable if the commercial relationship ends."
+  - label: "Entry price"
+    value: "$1,250/month per 10 physical nodes, annual commitment (Basic support tier)."
+  - label: "Published tiers"
+    value: "Basic $1,250 · Standard $3,000 · Plus $5,500 · Enterprise custom — per month, per 10 nodes."
+  - label: "Quoted per RFP"
+    value: "Private Cloud Platform, AI Platform and multi-region operator builds — scoped on a discovery call first."
+  - label: "Two independent dimensions"
+    value: "Which platform surfaces you switch on, and which support tier you buy. They are chosen separately."
+  - label: "Support without a platform"
+    value: "Available. Enterprise support for self-run Cozystack is sold on its own retainer."
+  - label: "Procurement timeline"
+    value: "Discovery call same week; assessment contracted in 2-4 weeks; a full enterprise build typically 8-16 weeks through legal and procurement."
+faq:
+  - q: "Is Cozystack free?"
+    a: "Yes. Cozystack is open source under Apache 2.0 — no per-CPU, per-VM or per-core licensing, and anyone can run it. Aenix created it and is its largest contributor, and it is a CNCF project rather than an Aenix-owned codebase, so the engine outlives any commercial relationship with us. What you pay for is the commercial layer around it and the people who maintain it."
+  - q: "How do platform and support tier interact?"
+    a: "They are two independent choices. The platform determines which surfaces are switched on — billing and customer portals for Public Cloud, compliance architecture and customer-managed keys for Private Cloud, GPU tenancy and model serving for AI. The support tier determines response SLA and whether you get a named technical account manager. A small provider on Public Cloud Platform with Basic support and a bank on Private Cloud Platform with Enterprise support are the same product with different things turned on."
+  - q: "What is the cheapest way to start?"
+    a: "Public Cloud Platform on the Basic support tier: $1,250/month for 10 nodes on an annual commitment, including the WHMCS integration, billing, backup and knowledge-base support. If you want the engine without the commercial layer at all, enterprise support for self-run Cozystack is the other entry point."
+  - q: "Why do you not publish per-CPU pricing?"
+    a: "Because what you buy is not a licence. A per-CPU figure would price a bundled engagement — assessment, migration, operating model, support — as though it were a per-socket fee, and it would be wrong in both directions depending on scope. The support-tier price list is published in full; platform programmes are quoted after a discovery call, and the drivers are estate size, regulatory scope, migration volume and how much of the operating model we run."
+  - q: "Can we buy support without buying a platform?"
+    a: "Yes, and it is a deliberate offering rather than a tolerated exception. Teams running Cozystack on their own or leased hardware — Hetzner, OVH, regional bare metal — buy a support retainer that puts the maintainers on call, without the commercial portal and billing layer."
+  - q: "How long does procurement usually take?"
+    a: "Discovery call in the same week. A Platform Readiness Assessment is typically contracted within 2-4 weeks and executed over 14 or 28 days. A pilot is usually signed 4-8 weeks after that. A full enterprise build runs 8-16 weeks through legal review and procurement; a provider-scale support tier is a much smaller commercial scope and moves in weeks."
 ---
 
 **Cozystack is free (Apache 2.0). Ænix Platform — our turnkey commercial cloud-in-a-box — is priced two ways. Hosting providers, MSPs and product teams buy from a published price list: support tiers per 10 physical nodes, from $1,250 / month. Private Cloud and AI Platform programmes, and multi-region operator builds, are scoped and quoted per RFP — the number depends on estate size, regulatory scope, migration volume and operating model, and any figure printed on a web page would be wrong for your case.**
@@ -18,8 +56,8 @@ language: "en"
 
 Ænix Platform pricing has two dimensions:
 
-- **platform** — which feature bundle you buy. Determined by your buyer profile (hosting provider, regulated enterprise, public-cloud operator, product engineering team, or AI-heavy organization).
-- **Support tier** — how Ænix supports you. Four tiers from Basic ($1,250/mo per 10 nodes) to Enterprise (per RFP).
+- **Platform** — which surfaces are switched on, determined by who consumes the capacity: customers who are not you, your own regulated business units, or AI workloads on your own GPUs.
+- **Support tier** — how Ænix supports you. Four tiers, from Basic ($1,250/mo per 10 nodes) to Enterprise (per RFP), chosen independently of the platform.
 
 Plus engagement add-ons (Platform Readiness Assessment, Pilot, Full Build, Managed Operations) scoped separately.
 
@@ -30,25 +68,21 @@ Plus engagement add-ons (Platform Readiness Assessment, Pilot, Full Build, Manag
 ## Step 1 — Pick a platform
 
 {{< design-note >}}
-Render as 5-card grid (or carousel on mobile). Each card: edition icon, name, audience one-liner, "Explore →" link to dedicated edition page.
+Render as a card grid (or carousel on mobile). Each card: platform icon, name, audience one-liner, "Explore →" link to the platform page.
 {{< /design-note >}}
 
 | Platform | For | How it is priced |
 |---|---|---|
 | **Public Cloud Platform** | Hosting providers, MSPs, regional clouds and data centres selling cloud to customers | Productized — published price list, from $1,250 / month per 10 nodes |
 | **Public Cloud Platform, operator scale** | Telcos, national operators, banks and large public clouds running a commercial cloud | Multi-year programme, quoted per RFP |
-| **Private Cloud Platform** | Regulated enterprises running cloud for their own users (banks, insurance, public administration, telco, healthcare) | Multi-year programme, quoted per RFP |
+| **Private Cloud Platform** | Regulated organisations running cloud for their own users (banks, insurance, public administration, telco, healthcare). Developer self-service is part of this platform, not a separate line item | Multi-year programme, quoted per RFP |
+| **AI Platform** | Inference, fine-tuning and RAG on your own GPUs — multi-tenant GPU scheduling, model serving, vector databases, GPU sizing | Project plus managed retainer, quoted per RFP |
 
-Two modules extend either edition and are scoped with the engagement:
+The three are one engine with different surfaces switched on, so a second platform is scoped as a configuration change on the one you already run, not as a second build.
 
-| Module | What it adds |
-|---|---|
-| **AI Platform** | Multi-tenant GPU scheduling, fractioning and MIG, model serving, vector databases, GPU sizing |
-| **Developer Self-Service** | Golden paths, GitLab and Argo CD automation, self-service APIs and environment wizards |
+Alongside them, **Cozystack with Ænix enterprise support** — for product teams running Cozystack on their own or leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal and billing layer — and the **WHMCS integration** for hosters already on that panel.
 
-Plus an **entry tier** — **Cozystack with Ænix enterprise support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
-
-[Explore all editions →](/products/)
+[Explore the platforms →](/products/)
 
 ---
 
@@ -66,7 +100,7 @@ Notes on the table: incidents related to installation support do not count towar
 
 ### Platform Readiness Assessment
 
-5-10 day fixed-price engagement covering stakeholder interviews, current-state architecture documentation, gap analysis vs target Ænix Platform architecture, edition recommendation, migration roadmap, risk register. Fixed price agreed before it starts, from the day count and the number of sites.
+5-10 day fixed-price engagement covering stakeholder interviews, current-state architecture documentation, gap analysis vs target Ænix Platform architecture, platform recommendation, migration roadmap, risk register. Fixed price agreed before it starts, from the day count and the number of sites.
 
 [Platform Readiness Assessment →](/services/platform-readiness-assessment/)
 
@@ -80,7 +114,7 @@ Notes on the table: incidents related to installation support do not count towar
 
 ### Managed operations
 
-Monthly retainer post-deployment — ongoing platform operations, monitoring, incident response, capacity planning, quarterly architecture reviews, edition-specific compliance reporting. Retainer set with the build scope.
+Monthly retainer post-deployment — ongoing platform operations, monitoring, incident response, capacity planning, quarterly architecture reviews, platform-specific compliance reporting. Retainer set with the build scope.
 
 ---
 
@@ -88,7 +122,7 @@ Monthly retainer post-deployment — ongoing platform operations, monitoring, in
 
 Three calculators, each with its own model and its own sources. Every price carries a source, a date and a nature (vendor list, third-party, derived, owner estimate), and each one exports a PDF you can hand to finance.
 
-- **[Platform TCO calculator](/tco-calculator/)** — five-year TCO against thirteen on-prem platforms: VMware, Nutanix, OpenShift, Proxmox, OpenStack, CloudStack, OpenNebula, Harvester, Rancher, Virtuozzo. Software, one-time migration and personnel, with a break-even point and the case where the other platform wins.
+- **[Platform TCO calculator](/tco-calculator/)** — five-year TCO against ten on-prem platforms: VMware, Nutanix, OpenShift, Proxmox, OpenStack, CloudStack, OpenNebula, Harvester, Rancher and Virtuozzo. Software, one-time migration and personnel, with a break-even point and the case where the other platform wins.
 - **[Cloud repatriation calculator](/cloud-calculator/)** — your AWS, Azure or GCP bill against the same workload on owned or rented hardware, including commitment and enterprise discounts on the cloud side.
 - **[ISP unit-economics calculator](/isp-calculator/)** — monthly P&L per node if you resell managed services: revenue, COGS, headcount, payback.
 
@@ -119,49 +153,9 @@ Up to **40% margin** on Ænix Platform sales for resellers, integrators, and dis
 
 ---
 
-## Frequently asked questions
-
-### Is Cozystack free?
-
-Yes. Cozystack is open-source under Apache 2.0. No per-CPU, per-VM, or per-core licensing. Anyone can run it. Ænix is the original maintainer.
-
-### How does Platform × Support Tier pricing work?
-
-The platform determines which surfaces are switched on (Public Cloud, Private Cloud or AI). The support tier determines the level of Ænix support (Basic, Standard, Plus, Enterprise), and is chosen independently. Both apply to your engagement. Discovery call clarifies the right combination for your scope.
-
-### What's the cheapest way to start with Ænix Platform?
-
-Public Cloud Platform + Basic support tier, $1,250/month annual (10 nodes). Includes WHMCS integration, billing system, backup system, knowledge-base PoC support. Suitable for small hosting providers and startups validating the platform.
-
-### What's included in the Enterprise tier (per RFP)?
-
-Custom-scoped tier for large-scale platforms — multi-DC, named TAM, full enterprise features (white-labeling, air-gap, GPU sharing, certification + compliance support, fully managed migration), customer-template MSA permitted, 1-hour emergency response, personalized roadmap. Tied to engagement scope; quoted per RFP.
-
-### Why don't you publish per-CPU pricing?
-
-Ænix Platform value depends on scope (engagement size, edition features, regulatory requirements, support tier). Per-CPU pricing would over-simplify a bundled engagement. We're transparent about the support-tier pricing (above); edition-specific quotes happen after discovery call.
-
-### Can I buy Cozystack support without a full Ænix Platform engagement?
-
-Yes — that's the **Cozystack with Ænix enterprise support** entry tier. Subscription support for organizations running Cozystack on their own infrastructure (e.g., Hetzner) without the commercial portal/billing layer. [Discovery call](/contact/) to scope.
-
-### How does pricing work for the Kubernetes Deep Dive Course?
-
-The course is per-seat priced and separate from Ænix Platform engagements. Plus / Enterprise tiers include 1 full course/year free + 30% discount on additional seats. Standalone enrollment also available.
-
-### What's the typical procurement timeline?
-
-Discovery call: same week. Platform Readiness Assessment: contracted in 2-4 weeks, executed over 5-10 days. Pilot: typically signed 4-8 weeks after assessment. Full Public Cloud / Enterprise build: 8-16 weeks signing process (legal review, procurement). Public Cloud Platform support tier: weeks (smaller commercial scope).
-
-### Do you offer reseller / partner pricing?
-
-Yes — up to 40% margin on Ænix Platform sales for resellers, integrators, and distributors. [Partner Program →](/partners/).
-
----
-
 ## Ready to discuss?
 
-Book a discovery call. We'll discuss your edition fit, support tier match, and engagement scope.
+Book a discovery call. We'll confirm platform fit, support tier and engagement scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

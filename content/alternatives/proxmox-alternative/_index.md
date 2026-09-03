@@ -26,13 +26,13 @@ faq:
   - q: "When should I move from Proxmox to Cozystack?"
     a: "When production grows past Proxmox VE's design center — hard multi-tenancy under audit, a service catalog beyond VMs (managed databases, S3, GPU), service-provider scale with per-tenant billing, or heavier-than-Kubernetes multi-cluster federation. For single-tenant, VM-mostly deployments under roughly 50 hosts, Proxmox usually remains a strong choice."
   - q: "Can I migrate Proxmox VMs to Cozystack?"
-    a: "Yes. Proxmox qcow2 images import directly into KubeVirt's storage, so VM migration is straightforward. The multi-tenant model needs to be designed (Proxmox has none to migrate), and the networking and storage layers are re-architected. A typical engagement runs 2-4 weeks assessment plus 3-9 months implementation depending on scope."
+    a: "Yes. Proxmox qcow2 images import directly into KubeVirt's storage, so VM migration is straightforward. The multi-tenant model is designed rather than converted, because pools and ACLs do not map onto tenants, and the networking and storage layers are re-architected. A typical engagement runs 2-4 weeks assessment plus 3-9 months implementation depending on scope."
   - q: "How does Cozystack licensing compare to Proxmox?"
     a: "Both are open source, but the licenses differ. Proxmox VE is AGPLv3; Cozystack is Apache 2.0, a more permissive license with no per-CPU or per-core fees. Aenix charges for the productized Ænix Platform and support, not for the core platform."
   - q: "Does Cozystack support multi-tenancy the way Proxmox does not?"
-    a: "Yes. Cozystack uses a Tenant CRD with nested tenants and per-tenant scoped audit, giving hard isolation suitable for multi-customer cloud under regulatory audit. Proxmox relies on namespace-based isolation and permissions, which suits trust-each-other tenants rather than untrusted multi-customer environments."
+    a: "Yes. Cozystack uses a Tenant CRD with nested tenants and per-tenant scoped audit, giving isolation suitable for multi-customer cloud under regulatory audit. Proxmox uses resource pools with role-based ACLs and pluggable auth realms, which delegates well inside one organisation but is not designed for untrusted multi-customer environments."
   - q: "What does Cozystack add beyond running virtual machines?"
-    a: "Beyond KubeVirt VMs and Kubernetes containers, Cozystack provides first-class managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ), S3-compatible object storage, GPU as a service (NVIDIA vGPU, MIG, time-slicing), a multi-tenant self-service portal, and Velero-based backup with per-app point-in-time recovery."
+    a: "Beyond KubeVirt VMs and Kubernetes containers, Cozystack provides first-class managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ), S3-compatible object storage, GPU as a service (NVIDIA vGPU for VMs, and the NVIDIA GPU Operator with HAMi to share a card across container workloads; MIG partitioning is roadmap), a multi-tenant self-service portal, and Velero-based backup with per-app point-in-time recovery."
   - q: "Is Cozystack just a better Proxmox?"
     a: "No. It targets a different architectural problem. For SMB-scale, single-tenant virtualization, Proxmox VE remains a strong, simpler choice. Cozystack is the upgrade path when you need a multi-tenant cloud, service-provider operations, or regulated-enterprise isolation while keeping an open-source operational model."
 ---
@@ -52,12 +52,24 @@ Cozystack is the open-source platform built for that next stage. Kubernetes-nati
 
 ## When Proxmox stops being the right answer
 
-- **Multi-tenancy is required** — Proxmox's namespace-based isolation works for trust-each-other tenants; less so for hard isolation under regulatory audit.
+- **Multi-tenancy is required** — Proxmox resource pools and ACLs delegate well inside one organisation; they are not built for untrusted customers under regulatory audit.
 - **Service catalog beyond VMs** — managed databases, S3, K8s tenancy, GPU workloads. Proxmox is VM-focused; integrating these on top is doable but operationally heavy.
 - **Service-provider scale** — multi-customer cloud with billing integration, self-service portal, audit per tenant.
 - **Production multi-cluster federation** — Proxmox clusters federate; the operational model is heavier than Kubernetes.
 
-If your deployment is single-tenant, VM-mostly, under ~50 hosts — Proxmox is likely fine. If you've outgrown that, Cozystack is the most-direct upgrade path that preserves the open-source operational model.
+---
+
+## Where Proxmox VE is genuinely better
+
+Simplicity is a feature, and none of the tables above price it:
+
+- **One ISO, one afternoon.** A working cluster with HA and a web UI, stood up by one person. Cozystack asks the team to understand Kubernetes before it understands the platform, and that is a real cost.
+- **Proxmox Backup Server.** Incremental, deduplicated, verified backups with single-file restore, from the same vendor, in the same UI. Velero plus per-application PITR covers the same ground with more moving parts and more design.
+- **ZFS and Ceph built in.** First-class, installable from the UI, vendor-supported. No storage architecture decision on day one.
+- **Subscription cost.** Proxmox support is priced per socket per year in low three figures — a different order of magnitude from any platform engagement, ours included.
+- **LXC.** A container that behaves like a machine is genuinely useful and Kubernetes does not offer it.
+
+If your deployment is single-tenant, VM-mostly, and run by a small team, Proxmox is the right answer and migrating costs more than it returns. Cozystack is the upgrade path once hard multi-tenancy, a catalogue beyond VMs, or per-tenant billing enter the requirements.
 
 ---
 
@@ -71,10 +83,10 @@ If your deployment is single-tenant, VM-mostly, under ~50 hosts — Proxmox is l
 | **Compute** | KVM/LXC | KubeVirt (KVM) + Kubernetes containers |
 | **Storage** | ZFS, Ceph (community), shared storage | LINSTOR (DRBD) or SeaweedFS |
 | **Network** | Linux bridge, SDN | Cilium (eBPF) |
-| **Multi-tenancy** | Namespace + permissions | Tenant CRD, nested tenants, scoped audit |
+| **Multi-tenancy** | Resource pools + role-based ACLs + auth realms | Tenant CRD, nested tenants, scoped audit |
 | **Managed databases** | Manual install or community LXC templates | First-class: PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ |
 | **Object storage** | Manual install | First-class S3-compatible |
-| **GPU** | Passthrough | NVIDIA vGPU + MIG + time-slicing |
+| **GPU** | Passthrough | NVIDIA vGPU for VMs; GPU Operator + HAMi sharing for containers |
 | **Self-service portal** | Web UI for VM ops | Cozystack Dashboard — full multi-tenant catalog |
 | **Backup/DR** | PBS (Proxmox Backup Server) | Velero + per-app PITR |
 | **License** | AGPLv3 (open source) | Apache 2.0 (open source, more permissive) |
@@ -89,13 +101,13 @@ Cozystack is not "Proxmox but better" — it's a different architectural target.
 
 ## Migration path from Proxmox to Cozystack
 
-VM image migration is straightforward — Proxmox's qcow2 images import directly into KubeVirt's storage. Multi-tenant model needs design (Proxmox didn't have one to migrate). Networking and storage layers re-architect.
+VM image migration is straightforward — Proxmox's qcow2 images import directly into KubeVirt's storage. Multi-tenant model is designed rather than converted — pools and ACLs do not map onto tenants. Networking and storage layers re-architect.
 
 Typical migration: 2-4 weeks assessment + 3-9 months implementation depending on scope.
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>Proxmox VE</b><div class="diagram__chips"><span>VM-focused</span><span>Namespace isolation</span><span>AGPLv3</span></div></div>
+<div class="diagram__node"><b>Proxmox VE</b><div class="diagram__chips"><span>VM-focused</span><span>Pools + ACLs</span><span>AGPLv3</span></div></div>
 <div class="diagram__conn">migrates via</div>
 <div class="diagram__node"><b>Migration path</b><div class="diagram__chips"><span>qcow2 → KubeVirt</span><span>2-4 weeks assessment</span><span>3-9 months implementation</span></div></div>
 <div class="diagram__conn">lands on</div>
@@ -125,4 +137,4 @@ If you're evaluating where Proxmox stops being right for your use case, start wi
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
 <!-- SEO: title "Proxmox Alternative — When SMB Virtualization Stops Being Enough | Ænix"
-Word count: ~750. -->
+-->

@@ -162,5 +162,3 @@ Or read more:
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!-- SEO: title "Cloud Platform for Financial Services — DORA-Compliant, Sovereign, AI-Ready | Ænix"
-Word count: ~900. -->

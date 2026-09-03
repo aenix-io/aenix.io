@@ -4,7 +4,6 @@ description: "OpenShift is a strong commercial Kubernetes distribution with matu
 related_pages:
   - /alternatives/vmware-alternative
   - /products/private-cloud-platform/
-  - /products/private-cloud-platform/
   - /products/cozystack
   - /services/platform-engineering
   - /migration/ibm/
@@ -45,7 +44,7 @@ faq:
 
 **OpenShift is a strong commercial Kubernetes distribution with mature enterprise tooling. The trade-off is the Red Hat subscription model and tight coupling to the Red Hat / IBM ecosystem. For organizations seeking an open-source-first foundation with comparable capabilities — including KubeVirt-based virtualization and multi-tenancy — Cozystack is the realistic alternative.**
 
-> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises; **[Developer Self-Service](/products/private-cloud-platform/)** for product engineering teams replacing OpenShift's developer experience layer.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — regulated enterprises, including the developer self-service layer that replaces the OpenShift developer experience.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
@@ -59,7 +58,7 @@ faq:
 ## When OpenShift may not be the right answer
 
 - **Subscription cost concerns** — Red Hat OpenShift commercial subscription scales with deployment size.
-- **Open-source-first procurement** — organizations preferring Apache 2.0 to Red Hat licensing.
+- **Open-source-first procurement** — organizations preferring Apache 2.0 to Red Hat licensing, and not bound by a certified-image requirement.
 - **Lighter operational footprint desired** — OpenShift surface area is broader than necessary for some use cases.
 - **Service-provider model** — multi-customer cloud where Red Hat licensing economics don't fit.
 - **No existing Red Hat relationship** — OpenShift's value compounds with broader Red Hat ecosystem.
@@ -76,13 +75,21 @@ If you're already deeply on Red Hat / OpenShift, the alternative analysis usuall
 |---|---|---|
 | **License** | Red Hat commercial subscription | Apache 2.0 |
 | **Foundation** | Kubernetes + KubeVirt + Red Hat ecosystem | Kubernetes + KubeVirt + Cilium + LINSTOR |
-| **Multi-tenancy** | Namespaces + Operators | Tenant CRD |
+| **Multi-tenancy** | Projects, namespaces and RBAC | Tenant CRD (nested, per-tenant quota) |
 | **Operational footprint** | OpenShift (broad) | Cozystack (focused) |
-| **Vendor relationship** | Red Hat / IBM | None (open source) |
-| **Cost model** | Per-CPU subscription | Free + optional support tier |
+| **Vendor relationship** | Red Hat / IBM | Optional: Ænix, or none — the code is Apache 2.0 either way |
+| **Cost model** | Red Hat subscription per core pair or socket pair; VM-only OpenShift Virtualization Engine SKU is cheaper | Free + optional support tier |
 | **Support** | Red Hat | Ænix or community |
 
-Both KubeVirt-based, so the underlying VM model is similar. The differences are around licensing, operational footprint, and vendor relationship.
+### Where OpenShift is genuinely better
+
+The table understates what OpenShift customers actually buy. OperatorHub with Red Hat-certified operators, UBI base images on a supported lifecycle, and a vendor who will take a support call about a third-party operator running on their platform. For an organisation whose procurement requires a certified, supported image for every component, that ecosystem settles the question, and Cozystack has no equivalent certification programme and does not claim one. Add to it: a compliance operator and published FIPS-validated cryptographic modules, an installer that handles day-2 cluster upgrades end to end, and Red Hat's own security response process.
+
+What Cozystack offers instead is a smaller set of managed services maintained as part of the platform — PostgreSQL, MariaDB, ClickHouse, Kafka, RabbitMQ, Redis, S3, managed Kubernetes — rather than a marketplace of operators you assemble and then own. Upstream operators run on it normally; they are simply your responsibility, as on any Kubernetes.
+
+One correction in Red Hat's favour on cost: price a VM-heavy estate against the OpenShift Virtualization Engine SKU rather than the full OpenShift subscription. A cost case built on the wrong SKU will not survive contact with a Red Hat account team.
+
+Both platforms are KubeVirt-based, so the underlying VM model is similar. What differs is licensing, operational footprint, and whether a certified ecosystem is a requirement or an overhead.
 
 <div class="arch-section__fig"><div class="diagram">
 <div class="diagram__node"><b>OpenShift Virtualization</b><div class="diagram__chips"><span>Red Hat commercial subscription</span><span>Per-CPU subscription</span><span>Red Hat / IBM ecosystem</span></div></div>
@@ -108,4 +115,4 @@ Both KubeVirt-based, so the underlying VM model is similar. The differences are 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
 <!-- SEO: title "OpenShift Alternative — Open Source Without Red Hat Subscription | Ænix"
-Word count: ~500. -->
+-->

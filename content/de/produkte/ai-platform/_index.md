@@ -3,6 +3,7 @@ title: "Ænix AI Platform"
 description: "Schlüsselfertige, souveräne KI-Infrastruktur auf Cozystack: Multi-Tenant-GPU-Scheduling, Service-APIs und Blueprints für Inferenz, Fine-Tuning und RAG."
 type: "page"
 language: "de"
+hreflang_en: /products/ai-platform/
 direct_answer: |
   **Die Ænix AI Platform ist eine schlüsselfertige, souveräne KI-Infrastruktur auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Sie richtet sich an KI-native Organisationen im großen Maßstab, regulierte KI-Deployments und GPU-lastige Produkt-Unternehmen, die Inferenz-, Fine-Tuning- und RAG-Workloads selbst betreiben statt über Hyperscaler-APIs. Aenix liefert vor-integriertes Multi-Tenant-GPU-Scheduling (Tenant-CRD), Service-APIs für Model-Serving und Fine-Tuning, fertige Blueprints, Vector-Datenbanken, Object Storage und Souveränitätskontrollen mit kundenkontrollierten Verschlüsselungsschlüsseln. So kommen KI-Teams schneller von der Idee zu laufenden Jobs, behalten die Datenhoheit und gewinnen Kostenkontrolle bei nachhaltigen Inferenz-Lasten.**
 quick_facts:
@@ -39,13 +40,13 @@ aliases:
   - /de/produkte/aenix-platform/ai-ml-edition/
 ---
 
-> **Das ist das AI- & GPU-Modul.** Die Ænix Platform hat zwei Plattforms — [Provider](/de/produkte/public-cloud-platform/) und [Enterprise](/de/produkte/private-cloud-platform/) — und diese Fähigkeit erweitert beide: Ein Anbieter verkauft sie als GPU-as-a-Service, ein Unternehmen betreibt darauf die eigene Inferenz.
+> **Das ist das AI- & GPU-Modul.** Die Ænix Platform hat drei Plattformen — [Provider](/de/produkte/public-cloud-platform/) und [Enterprise](/de/produkte/private-cloud-platform/) — und diese Fähigkeit erweitert beide: Ein Anbieter verkauft sie als GPU-as-a-Service, ein Unternehmen betreibt darauf die eigene Inferenz.
 
 **KI-Plattform-Automatisierung out-of-the-Box. Standard-KI-Workloads, Service-APIs und fertige Blueprints, Datenbanken, Apps und Modelle — damit Ihr KI-Team von der Idee zu laufenden Jobs schneller kommt. Multi-Tenant-GPU-Scheduling, Vector-DBs, Souveränitätskontrollen inklusive. Gebaut für KI-native Organisationen und regulierte KI-Deployments im großen Maßstab.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">Alle Plattforms →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Plattformen →</a>
 </div>
 
 ---
@@ -115,7 +116,7 @@ Produktisierte Patterns für Migration von Hyperscaler-KI (AWS Bedrock, Azure Op
 
 Projekt plus Managed-Retainer nach dem Deployment, Angebot nach RFP.
 
-[AI Platform diskutieren →](/de/kontakt/?edition=ai-ml)
+[AI Platform diskutieren →](/de/kontakt/?platform=ai)
 
 ---
 

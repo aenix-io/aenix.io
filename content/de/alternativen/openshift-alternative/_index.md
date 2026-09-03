@@ -38,7 +38,7 @@ faq:
   - q: "Ist Cozystack für regulierte Unternehmen und Souveränitätsanforderungen geeignet?"
     a: "Ja. Als Open-Source-First-Plattform ohne Abhängigkeit vom US-Vendor Red Hat/IBM adressiert Cozystack Souveränitäts-Anforderungen. Für regulierte Unternehmen bietet Aenix die Ænix Private Cloud Platform mit den dafür passenden Engineering-Services."
   - q: "Kann Cozystack den Developer-Experience-Layer von OpenShift ersetzen?"
-    a: "Die the developer self-service layer of Ænix Private Cloud Platform richtet sich an Produkt-Engineering-Teams, die den OpenShift-Developer-Experience-Layer durch eine Open-Source-First-Internal-Developer-Platform ersetzen möchten — auf Standard-Kubernetes und ohne proprietäres Vendor-Ökosystem."
+    a: "Die Developer-Self-Service-Schicht der Ænix Private Cloud Platform richtet sich an Produkt-Engineering-Teams, die den OpenShift-Developer-Experience-Layer durch eine Open-Source-First-Internal-Developer-Platform ersetzen möchten — auf Standard-Kubernetes und ohne proprietäres Vendor-Ökosystem."
   - q: "Wie viel kostet die Ænix Platform als OpenShift-Alternative?"
     a: "Die Ænix Platform wird in Service-Stufen angeboten: Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach individuellem Angebot. Die Software Cozystack selbst ist Apache-2.0-lizenziert und ohne Core-basierte Gebühren."
 ---
@@ -59,7 +59,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/openshift-vs-cozystack-comparison/">OpenShift vs Cozystack →</a>
+  <a class="cta-secondary" href="/blog/2026/05/openshift-vs-cozystack-comparison/">OpenShift vs Cozystack (englisch) →</a>
 </div>
 
 ---
@@ -102,7 +102,7 @@ Beide sind KubeVirt-basiert, das zugrunde liegende VM-Modell ist also ähnlich. 
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[OpenShift vs Cozystack Vergleich](/blog/2026/05/openshift-vs-cozystack-comparison/)**
+- **[OpenShift vs Cozystack Vergleich (englisch)](/blog/2026/05/openshift-vs-cozystack-comparison/)**
 - **[VMware-Alternative](/de/alternativen/vmware-alternative/)**
 - **[Platform-Engineering-Services](/de/dienstleistungen/platform-engineering/)**
 - **[Cozystack](/de/produkte/cozystack/)**

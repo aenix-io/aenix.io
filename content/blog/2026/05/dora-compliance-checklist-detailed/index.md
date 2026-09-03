@@ -1,6 +1,6 @@
 ---
 title: "DORA compliance checklist for financial services — what to demonstrate to supervisors"
-description: "Companion to DORA compliance checklist resource."
+description: "What DORA means by demonstrable operational resilience, the findings that recur in audits, and how to work through the architecture checklist."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -19,11 +19,10 @@ quiz:
     - q: "Which is NOT named as one of the four most-common DORA findings?"
       options:
         - { text: "Observability data leaving the regulator perimeter", correct: false }
-        - { text: "Wrong colour scheme on the customer portal", correct: true }
+        - { text: "Encryption keys held by the provider rather than the entity", correct: true }
         - { text: "Exit plans documented but never actually tested", correct: false }
         - { text: "Concentration risk treated as procurement, not architecture", correct: false }
-        - { text: "Sub-contractor chain invisible past the first hop", correct: false }
-      explanation: "Four recurring findings in Aenix DORA engagements: (1) observability data leaves the regulator perimeter, (2) exit plans never tested, (3) concentration risk treated as procurement question not architecture, (4) sub-contractor chain invisible past first hop. UI colour schemes are not on the list."
+      explanation: "Four recurring findings in Aenix DORA engagements: (1) observability data leaves the regulator perimeter, (2) exit plans never tested, (3) concentration risk treated as procurement question not architecture, (4) sub-contractor chain invisible past first hop. Provider-held encryption keys are a real sovereignty problem, but it is not one of the four findings this article names — the fourth is the sub-contractor chain being invisible past the first hop."
     - q: "What does the article say about supervisor expectations as of 2026?"
       options:
         - { text: "They are loosening as DORA matures and stabilises", correct: false }
@@ -43,8 +42,6 @@ quiz:
         - { text: "17 January 2025", correct: true }
       explanation: "DORA has been in force since 17 January 2025. NIS2 transposition (a separate regulation) was due 17 October 2024 — easy to confuse."
 ---
-
-Companion to **[DORA compliance checklist resource](/resources/dora-compliance-checklist)**.
 
 ## Why DORA timing matters
 
@@ -74,8 +71,3 @@ In Ænix DORA engagements, four findings recur:
 Download, walk through with your platform engineering and compliance teams. Identify gaps. Prioritize remediation.
 
 For deeper engagement: **[DORA compliance services](/solutions/dora-compliance/)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

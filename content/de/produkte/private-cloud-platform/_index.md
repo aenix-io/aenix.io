@@ -43,7 +43,7 @@ aliases:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">Alle Plattforms →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Plattformen →</a>
 </div>
 
 ---
@@ -131,7 +131,7 @@ Vorvalidiert gegen ISO 27001 / SOC 2. Ænix unterstützt Zertifizierungs-Dokumen
 
 Mehrjähriger Plattform-Build, Angebot nach RFP. Discovery-Call zur Scope-Definition.
 
-[Private Cloud Platform diskutieren →](/de/kontakt/?edition=enterprise)
+[Private Cloud Platform diskutieren →](/de/kontakt/?platform=private-cloud)
 
 ---
 

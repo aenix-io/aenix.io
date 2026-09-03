@@ -76,7 +76,7 @@ You can opt out of the nurture sequence at any time.
 |---|---|
 | DORA Checklist | DORA-aligned readiness engagement (4-6 weeks); Private Cloud Platform build |
 | NIS2 Checklist | NIS2-aligned readiness engagement (4-6 weeks); Private Cloud Platform build |
-| VMware Migration Checklist | Platform Readiness Assessment (5-10 days) → cohort migration |
+| VMware Migration Checklist | Platform Readiness Assessment (14 days, or 28 for the full variant) → cohort migration |
 | Cloud Repatriation TCO Worksheet | Platform Readiness Assessment with cost workstream emphasis |
 | Sovereign AI Decision Guide | Sovereign AI architecture review (1-2 weeks); AI Platform build |
 | Platform Engineering Maturity Assessment | Platform Readiness Assessment with IDP focus; Private Cloud Platform build with the developer self-service layer |

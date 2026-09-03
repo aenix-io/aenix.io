@@ -54,8 +54,6 @@ faq:
     a: "It runs as an AI platform build: GPU architecture, an inference stack, a Qdrant vector database for RAG, multi-tenant isolation, and single sign-on, deployed on your own hardware. In a live engagement the same platform packaged NVIDIA Dynamo inference and a Qdrant RAG stack and was shipped into a state-owned customer's boundary."
 ---
 
-# Private LLM: self-hosted GenAI on your own GPUs
-
 **Run your own large language model on hardware you control — open-weight models like Llama, Mistral, and Qwen, served for inference, grounded in your documents with RAG, and fine-tuned on your data when you need it. A private LLM keeps prompts, embeddings, weights, keys, and the audit trail on your side of the boundary, so you get modern GenAI without shipping sensitive text to a third-party API. Ænix builds these platforms on [Cozystack](/products/cozystack/), on your own GPUs.**
 
 > **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — GPU scheduling, fractional sharing, and blueprints for inference and fine-tuning. For the elastic GPU capacity underneath it, combine with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)**. For the wider strategy, see **[Sovereign AI](/solutions/sovereign-ai/)**.

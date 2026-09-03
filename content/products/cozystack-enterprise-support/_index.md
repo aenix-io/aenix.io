@@ -34,12 +34,15 @@ faq:
     a: "Response, not resolution, and the distinction is stated in the contract rather than buried in it. A P1 acknowledgement lands within the tier's window with an engineer who can read the stack traces; resolution time depends on the fault. Architecture review cadence, incident triage, root-cause analysis and upgrade planning are the substance of the retainer, and most of the value shows up before an incident rather than during one."
   - q: "Can you support a version we have pinned or forked?"
     a: "Pinned versions, yes, within the supported release window, and upgrade planning off an old version is one of the more common reasons teams start a retainer. A local fork is a scoping conversation: we can support divergence we have reviewed, and we will say plainly when a change has moved a deployment outside what we can reason about."
+  - q: "How does this differ from the free community support?"
+    a: "Community support is GitHub issues, the CNCF Slack channel and the Telegram group — best-effort answers from maintainers and other operators, and often good ones. What it cannot give you is a response time you can put in a risk register, a named engineer who knows your topology, or an upgrade you can schedule. That is what the retainer buys."
+  - q: "How does it compare to a Red Hat OpenShift subscription?"
+    a: "OpenShift support is bundled into a per-CPU subscription, so support cost scales with the size of your estate. Ænix support is priced per 10 nodes for self-run Cozystack, or bundled into a platform engagement that is scoped as a project. The engine itself stays Apache 2.0 either way, so you are buying people rather than the right to run software."
   - q: "Does support include compliance work?"
     a: "Gap analysis against DORA, NIS2 and sovereignty requirements is in scope, as is the architecture work that follows from it. Formal certification is not something a support contract delivers — ISO 27001 and SOC 2 alignment support is part of a platform engagement or a separate services scope."
 aliases:
   - /enterprise-support/
 ---
-
 
 **Ænix enterprise support covers self-run Cozystack environments on a standalone retainer, and Ænix platform deployments as part of the engagement. Direct access to the engineers who maintain Cozystack and ship Ænix Platform.**
 
@@ -64,60 +67,11 @@ If you have an Ænix platform engagement (Public Cloud, Private Cloud or AI Plat
 
 ### Path 2 — Cozystack support (self-running organizations)
 
-If your team runs Cozystack itself (without an Ænix platform licence), Ænix can provide support on retainer basis. This is for organizations with platform engineering capacity who want direct access to Cozystack maintainers without the full Ænix platform commitment.
+If your team runs Cozystack itself, without an Ænix platform licence, support is available on a standalone retainer: architecture review and best-practice guidance, incident triage and root-cause analysis, upgrade planning and execution, custom feature development against Cozystack, and compliance gap analysis for DORA, NIS2 and sovereignty. Monthly retainer or pay-per-incident.
 
-Coverage:
-- Architecture review and best-practice guidance
-- Incident triage and root-cause analysis
-- Upgrade planning and execution support
-- Custom feature development against Cozystack
-- Compliance gap analysis (DORA, NIS2, sovereignty)
+Response windows, review cadence, named TAM and 24/7 coverage vary by tier. The feature-by-feature comparison lives in one table on the pricing page rather than a summary here.
 
-Engagement: monthly retainer or pay-per-incident.
-
----
-
-## What enterprise support includes
-
-| Coverage | Standard | Enterprise | Sovereign |
-|---|---|---|---|
-| Response SLA | Business hours | 24/7 | 24/7 + cleared engineers |
-| Architecture review | Quarterly | Monthly | Per-incident-as-needed |
-| Incident response | P1: 4-hour | P1: 1-hour | P1: 30-minute |
-| Upgrade support | Self-service guides | Guided upgrades | Coordinated with regulators |
-| Compliance reporting | Self-reporting | Ænix-provided | Sectoral compliance documentation |
-| Dedicated account manager | No | Yes | Yes + sectoral lead |
-| Customer success reviews | Annual | Quarterly | Quarterly + regulatory |
-
----
-
-## Frequently asked questions
-
-### What's the difference between community support and enterprise support?
-
-Community support (free) — GitHub issues, Slack channel, Telegram community for Cozystack. Best-effort responses from maintainers and community.
-
-Enterprise support (commercial) — Ænix engineers under SLA contract. Direct access, response time guarantees, named technical account manager, custom-feature consideration, compliance support.
-
-### Can I get enterprise support without Ænix Platform?
-
-Yes. Ænix offers Cozystack support on retainer basis for organizations running Cozystack themselves. Discovery call to scope and price.
-
-### Are Ænix support engineers the same as Cozystack maintainers?
-
-Yes. The engineers providing enterprise support are the same engineers who maintain Cozystack and build Ænix Platform features. No outsourced tier-1 / tier-2 escalation chain.
-
-### What about 24/7 follow-the-sun coverage?
-
-Ænix engineering teams are distributed across the EU and Central Asia. Enterprise+ support tiers include 24/7 coverage; specific time-zone coverage scoped per engagement.
-
-### How does this compare to Red Hat OpenShift support?
-
-OpenShift support is bundled with Red Hat subscription per-CPU. Ænix support is bundled with Ænix Platform engagement (project-based, not per-CPU). For self-running Cozystack, Ænix support is retainer-based — different model from OpenShift's licensing.
-
-### What if I need engineering capacity beyond support?
-
-Ænix engagement model includes engineering services beyond support: feature development, architecture work, migration projects, managed operations. [See pricing](/pricing/) for full engagement tiers.
+[Support tiers and pricing →](/pricing/#support)
 
 ---
 

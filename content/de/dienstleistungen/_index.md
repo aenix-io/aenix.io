@@ -3,6 +3,7 @@ title: "Dienstleistungen"
 description: "Aenix-Dienstleistungen: Platform Readiness Assessment, Platform Engineering, Internal Developer Platform und Cloud-Consulting — engagement-basiert."
 hero_subtitle: "Vom Readiness Assessment bis zur fertig gebauten Cloud-Plattform"
 language: "de"
+hreflang_en: /services/
 ---
 
 **Engagement-basierte Einstiegspunkte zu Ænix-Arbeit. Wählen Sie den Engagement-Typ, der zu dem passt, was Sie tun müssen — assess, build, betreiben. Alle Pfade führen zu Ænix-Platform-Deployments passend zu Ihrem Buyer-Profil.**
@@ -48,7 +49,7 @@ language: "de"
 1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope, regulatorischer Kontext, Plattform-Match bestätigen
 2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — aktuelle-Zustand-Audit + Plattform-Empfehlung + Roadmap
 3. **Pilot-Engagement** (3-6 Monate, Angebot nach RFP) — definierter Slice, validierter Business Case
-4. **Vollständiger Plattform-Build** — Wochen für Public Cloud Platform; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML
+4. **Vollständiger Plattform-Build** — Wochen für Public Cloud Platform; 9-18 Monate für Private-Cloud- und AI-Platform-Programme sowie Multi-Region-Builds
 5. **Managed Operations** (laufender Retainer)
 
 <div class="arch-section__fig">
@@ -65,7 +66,7 @@ language: "de"
 
 ## Pricing
 
-Public Cloud Platform Entry ab 1.250 USD pro Monat (Basic Support-Tier, 10 Nodes). Andere Plattforms: Pricing on Request via Discovery-Call. [Pricing-Details →](/de/preise/).
+Public Cloud Platform Entry ab 1.250 USD pro Monat (Basic Support-Tier, 10 Nodes). Andere Plattformen: Pricing on Request via Discovery-Call. [Pricing-Details →](/de/preise/).
 
 ---
 

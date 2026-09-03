@@ -25,7 +25,7 @@ quick_facts:
   - label: "Engagement timeline"
     value: "14-day focused NIS2 variant, or 28-day variant mapping NIS2 + DORA + GDPR in one engagement."
   - label: "Standard covered"
-    value: "NIS2 Directive (EU) 2022/2555 — Articles 21 (risk management), 23 (incident reporting), 30 (coordinated vulnerability disclosure)."
+    value: "NIS2 Directive (EU) 2022/2555 — Articles 20 (management-body accountability), 21 (risk-management measures, incl. supply-chain security at 21(2)(d)), 23 (incident reporting), and 12 (coordinated vulnerability disclosure)."
   - label: "Key capability"
     value: "Cozystack delivers Tenant CRD multi-tenancy, Cilium/NetworkPolicy segmentation, customer-controlled keys, air-gap support, and full audit trails — sovereignty by architecture."
 faq:
@@ -38,7 +38,7 @@ faq:
   - q: "What does the Aenix NIS2 engagement produce?"
     a: "A NIS2 control-level map, supply-chain mapping to the second hop for critical-function ICT third parties, an incident detection and reporting capability assessment against the 24/72-hour and one-month timelines, a business continuity and vulnerability management posture review, and an architecture-level remediation plan."
   - q: "How does Cozystack support NIS2 requirements?"
-    a: "Cozystack provides Tenant CRD multi-tenancy with Cilium (eBPF) and NetworkPolicy segmentation, customer-controlled encryption keys, air-gap deployment, and full audit logging. These map to NIS2 Article 21 risk management and incident-detection needs, giving sovereignty by architecture rather than by add-on."
+    a: "Cozystack provides Tenant CRD multi-tenancy with Cilium (eBPF) and NetworkPolicy segmentation, customer-controlled encryption keys, air-gap deployment, and full audit logging. These map to the risk-management measures listed in Article 21(2) — access control, network security, business continuity, and the telemetry that makes Article 23 reporting windows achievable — giving sovereignty by architecture rather than by add-on."
   - q: "Who delivers the engagement?"
     a: "EU-based engineers with experience inside the same regulatory frameworks as your customers and with regulator-dialog experience. Recommendations reflect technical fit and regulatory alignment, with no hyperscaler partnership bias."
 ---
@@ -50,7 +50,7 @@ faq:
 
 Ænix runs NIS2-aligned platform readiness engagements for in-scope entities and the ICT third parties serving them. Output: a control-level map of where you stand today, where the gaps are, and what an architecture-level remediation plan looks like.
 
-> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — NIS2-aligned by design (Articles 21 risk management, 23 incident reporting, 30 coordinated vulnerability disclosure). Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — NIS2-aligned by design (Art. 21 risk-management measures, Art. 23 incident reporting, Art. 12 coordinated vulnerability disclosure). Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -95,11 +95,11 @@ Documented cybersecurity risk-management practices covering policies on risk ana
 **2. Incident reporting (Article 23)**
 Incidents reported to CSIRT/competent authority within 24 hours (early warning), 72 hours (incident notification), and one month (final report). Architecture must support detection and reporting at these timelines.
 
-**3. Supply chain and ICT third-party risk**
-Specific obligations on managing risk from ICT supply chain, including direct suppliers and (where applicable) sub-suppliers. Concentration risk, exit readiness, and supplier-monitoring obligations.
+**3. Supply-chain security (Article 21(2)(d))**
+Risk-management measures must cover the security of the supply chain, including the relationships between the entity and its direct suppliers and service providers. In practice that means supplier mapping, exit readiness, and supplier monitoring — not a questionnaire on file.
 
-**4. Management body responsibility**
-Top management is responsible and trained on cybersecurity risk-management. Compliance is not delegated entirely to technical teams.
+**4. Management-body accountability (Article 20)**
+Management bodies must approve the risk-management measures, oversee their implementation, and follow cybersecurity training — and can be held liable for failure to do so. Compliance is not delegated entirely to technical teams.
 
 </div>
 
@@ -142,7 +142,7 @@ Patch cycles run on monthly cadence; critical vulnerabilities get emergency patc
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>NIS2 obligations</b><div class="diagram__chips"><span>Article 21 risk management</span><span>Article 23 incident reporting</span><span>ICT supply-chain risk</span></div></div>
+<div class="diagram__node"><b>NIS2 obligations</b><div class="diagram__chips"><span>Art. 21 risk-management measures</span><span>Art. 23 incident reporting</span><span>Art. 21(2)(d) supply-chain security</span></div></div>
 <div class="diagram__conn">mapped control-by-control by</div>
 <div class="diagram__node diagram__node--brand"><b>Ænix engagement on Cozystack</b><div class="diagram__chips"><span>Tenant CRD multi-tenancy</span><span>Cilium/NetworkPolicy segmentation</span><span>Customer-controlled keys</span><span>Audit-ready logging</span></div></div>
 <div class="diagram__conn">produces</div>

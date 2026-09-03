@@ -1,6 +1,6 @@
 ---
 title: "A DORA compliance checklist for cloud infrastructure — framework, controls, and what to demonstrate in 2026"
-description: "The Digital Operational Resilience Act (DORA) has been in force since 17 January 2025. This is a working DORA compliance checklist and architectural..."
+description: "A working DORA checklist for cloud architecture: what Articles 21 and 28 require, where current setups fall short, and how to assess where you stand."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -46,9 +46,7 @@ quiz:
       explanation: "For significant entities, TLPT is required every three years. Other in-scope entities run scenario-based resilience testing at least annually."
 ---
 
-**The Digital Operational Resilience Act (DORA) has been in force since 17 January 2025. This is a working DORA compliance checklist and architectural framework for the platform engineers, cloud architects, and infrastructure leads who now have to translate DORA's expectations into running cloud systems. If you're looking for a partner to run a DORA-aligned readiness engagement, the [DORA compliance services page](/solutions/dora-compliance/) covers our offer; this article is the practical detail behind it.**
-
-Across the EU's financial sector — banks, insurers, investment firms, payment institutions, crypto-asset service providers, and the third-party ICT providers serving them — DORA replaced a fragmented patchwork of supervisory expectations with a single, directly applicable regulation.
+The Digital Operational Resilience Act (DORA) has been in force since 17 January 2025. Across the EU's financial sector — banks, insurers, investment firms, payment institutions, crypto-asset service providers, and the third-party ICT providers serving them — DORA replaced a fragmented patchwork of supervisory expectations with a single, directly applicable regulation.
 
 Most coverage of DORA so far has concentrated on policy and procedural requirements: incident reporting timelines, governance, risk management process. That work matters, and your CISO and legal team have been doing it for two years.
 
@@ -228,8 +226,6 @@ A focused DORA-aligned platform readiness assessment, run against your existing 
 3. **Concentration and exit-feasibility** — supplier-chain mapping and time-to-exit calibration.
 4. **Resilience-testing readiness** — whether your architecture supports the testing supervisors expect.
 
-Ænix runs this as a 14- or 28-day engagement. The output is a written report that names, per control: where you stand, what's missing, what an architecture-level fix looks like, and what an implementation roadmap would sequence. See the **[Platform Readiness Assessment page](/services/platform-readiness-assessment/)** for the methodology in detail.
-
 ## Where this sits in the broader compliance picture
 
 DORA does not stand alone. In practice, financial entities operating in the EU are addressing DORA in parallel with:
@@ -254,8 +250,3 @@ For an infrastructure leader in 2026, the practical answer is to treat DORA-alig
 - **[Platform Readiness Assessment — the engagement that includes a DORA workstream](/services/platform-readiness-assessment/)**
 - **[Data sovereignty in 2026 — what European and APAC enterprises actually need](/solutions/data-sovereignty/)**
 - **[Cozystack — the open-source platform we typically recommend for sovereign architectures](/products/cozystack/)**
-
----
-
-*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run DORA-aligned platform readiness assessments and platform engineering programs for financial-services organizations across the EU.*
-

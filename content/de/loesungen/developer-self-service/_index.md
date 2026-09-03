@@ -12,7 +12,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/developer-self-service/
 direct_answer: |
-  **Developer Self-Service bedeutet, dass Produkt-Teams die häufigsten Plattform-Bedürfnisse — neue Environments, Services, Datenbanken, Object Storage, Observability oder CI/CD — eigenständig provisionieren, ohne ein Ticket zu öffnen, abgeschlossen in unter einer Stunde von Anfrage bis Lauf. Aenix baut diese Fähigkeit auf Cozystack (CNCF-Projekt, Apache 2.0) auf: KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) Networking und LINSTOR/DRBD Storage, mit Tenant-CRD-Mandantenfähigkeit. Statt Backstage nur als Oberfläche zu liefern, implementiert Aenix die zugrunde liegenden Golden Paths, die Anfragen in provisionierte Realität verwandeln — produktisiert in der the developer self-service layer of Ænix Private Cloud Platform plus Services.**
+  **Developer Self-Service bedeutet, dass Produkt-Teams die häufigsten Plattform-Bedürfnisse — neue Environments, Services, Datenbanken, Object Storage, Observability oder CI/CD — eigenständig provisionieren, ohne ein Ticket zu öffnen, abgeschlossen in unter einer Stunde von Anfrage bis Lauf. Aenix baut diese Fähigkeit auf Cozystack (CNCF-Projekt, Apache 2.0) auf: KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) Networking und LINSTOR/DRBD Storage, mit Tenant-CRD-Mandantenfähigkeit. Statt Backstage nur als Oberfläche zu liefern, implementiert Aenix die zugrunde liegenden Golden Paths, die Anfragen in provisionierte Realität verwandeln — produktisiert in der Developer-Self-Service-Schicht der Ænix Private Cloud Platform plus Services.**
 
 quick_facts:
   - label: "Was es ist"
@@ -28,7 +28,7 @@ quick_facts:
   - label: "Technische Basis"
     value: "Cozystack — KubeVirt (VMs + Container), Cilium (eBPF), LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Engagement"
-    value: "Produktisiert als the developer self-service layer of Ænix Private Cloud Platform plus Services; kostenloses Platform Engineering Maturity Assessment verfügbar"
+    value: "Produktisiert als Developer-Self-Service-Schicht der Ænix Private Cloud Platform plus Services; kostenloses Platform Engineering Maturity Assessment verfügbar"
 
 faq:
   - q: "Was ist Developer Self-Service?"
@@ -49,7 +49,7 @@ faq:
 
 Ænix baut Developer-self-service in Plattformen ein, die Produktteams auch wirklich nutzen — nicht Backstage als reine Fassade, sondern echte Golden Paths, die Anfragen ohne Ticket in bereitgestellte Realität verwandeln.
 
-> **Passt zu:** **[the developer self-service layer of Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer mit GitLab-Automatisierung, Argo CD Workflows, APIs für self-service, Golden-Path-Templates und Dashboards für die Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
+> **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer mit GitLab-Automatisierung, Argo CD Workflows, APIs für self-service, Golden-Path-Templates und Dashboards für die Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

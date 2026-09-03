@@ -1,6 +1,6 @@
 ---
 title: "Cloud Readiness Assessment — what 14 days actually cover (2026 methodology)"
-description: "This is the long-form companion to our Platform Readiness Assessment landing page. It walks through the methodology in detail — workstreams, deliverables,..."
+description: "A 14-day platform readiness assessment run as four parallel workstreams: how the days sequence, what the report contains, and pitfalls we learned to avoid."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -46,8 +46,6 @@ quiz:
         - { text: "Uncertainty about whether sovereignty is a real concern", correct: false }
       explanation: "Strong fits include a regulator deadline (DORA Article 28, NIS2, sectoral audit), an upcoming board-level cost decision, a new platform engineering function being stood up, or an AI / data-residency project blocked at architecture review. The other options are explicitly listed as poor fits."
 ---
-
-**This is the long-form companion to our [Platform Readiness Assessment landing page](/services/platform-readiness-assessment/). It walks through the methodology in detail — workstreams, deliverables, examples of findings, common pitfalls — for technical leaders evaluating whether a 14-day or 28-day cloud readiness assessment is the right next step.**
 
 Most cloud readiness assessments on the market still come from the early-2010s mold: a hyperscaler-aligned consultancy maps your workloads against a reference architecture and produces a migration plan to that hyperscaler. The output reads like a template because it is one.
 
@@ -231,8 +229,3 @@ If your trigger is a specific regulator or cost pressure, the dedicated solution
 - **[Cloud repatriation](/solutions/cloud-repatriation/)** — exit strategy from public cloud
 - **[Sovereign AI](/solutions/sovereign-ai/)** — GenAI on sensitive data
 - **[Cloud cost optimization](/solutions/cloud-cost-optimization/)** — predictable spend
-
----
-
-*Ænix runs platform readiness assessments and platform engineering programs across the EU and Central Asia. We are the company behind Cozystack, a CNCF Project, Kubernetes Certified Distribution.*
-

@@ -24,9 +24,9 @@ quick_facts:
   - label: "What was tested"
     value: "Cozystack v1.6 / v1.6.1 on Talos Linux — the same engine the three Ænix platforms ship, not a separate build."
   - label: "Certifications held"
-    value: "None claimed. Aenix holds no ISO 27001 or SOC 2 certificate, and no platform can hold a PCI DSS or GDPR certification."
+    value: "No security certification. Aenix holds no ISO 27001 or SOC 2 certificate, and no platform can hold a PCI DSS or GDPR certification. The one certification that does exist is CNCF Certified Kubernetes for Cozystack, which is a conformance mark and says nothing about security."
   - label: "Conformance"
-    value: "Tenant Kubernetes clusters pass the CNCF conformance suite in full on Kubernetes v1.31 through v1.35."
+    value: "Tenant Kubernetes clusters pass the CNCF conformance suite in full on Kubernetes v1.31 through v1.35; Cozystack v1.6.1 is listed as a Certified Kubernetes distribution for v1.34 and v1.35."
   - label: "CIS Benchmark"
     value: "54 pass, 24 fail, 53 warn on the management cluster — with every failure sorted into deviation, control met otherwise, or not applicable."
   - label: "Licence of the engine"
@@ -79,7 +79,7 @@ The alternative framing — publishing these as results for a proprietary produc
 - **[GDPR](/compliance/gdpr/)** — the Article 32 technical measures the platform supplies, where personal data physically sits, and the parts of the right to erasure that infrastructure cannot settle.
 - **[CIS Kubernetes Benchmark](/compliance/cis-benchmark/)** — the full kube-bench run: 54 pass, 24 fail, 53 warn, with every failure sorted into a real deviation, a control met another way, or a check that does not apply on an immutable node.
 - **[DORA](/compliance/dora/)** — the platform-side evidence for resilience, backup and restore, incident records and the ICT third-party risk chapter, where self-hosted open source changes the answer.
-- **[Kubernetes conformance](/compliance/kubernetes-conformance/)** — CNCF conformance results for both shapes the platform is used in: self-hosted tenant clusters passing in full across five Kubernetes releases, and a hosted platform in the CNCF record.
+- **[Kubernetes conformance](/compliance/kubernetes-conformance/)** — CNCF conformance results for both shapes the platform is used in: self-hosted tenant clusters passing in full across five Kubernetes releases, two of them listed in the CNCF's own record, and a hosted platform listed there as well. What a listing covers, and what it does not, is spelled out.
 
 </div>
 </div>

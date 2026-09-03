@@ -4,14 +4,14 @@ description: "Hosting providers, telcos, and regional operators in 2026 face the
 related_pages:
   - /services/private-cloud-consulting
   - /products/public-cloud-platform/
-  - /products/public-cloud-platform/
+  - /products/whmcs-integration/
   - /products/cozystack
   - /alternatives/vmware-alternatives
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Public cloud building is the engineering and go-to-market work of launching a customer-facing cloud product — VMs, Kubernetes, managed databases, object storage, and GPU — that external customers buy on a self-service, multi-tenant basis. It is for regional hosting providers, telecom operators, and specialty or sovereign cloud operators who want to move up-market without depending on a hyperscaler. Aenix builds these products on Cozystack, an open-source, Kubernetes-native platform (Apache 2.0) that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Aenix delivers architecture, WHMCS billing integration, a self-service customer portal, and pricing and go-to-market design through its productized Ænix Platform editions and consulting services.**
+  **Public cloud building is the engineering and go-to-market work of launching a customer-facing cloud product — VMs, Kubernetes, managed databases, object storage, and GPU — that external customers buy on a self-service, multi-tenant basis. It is for regional hosting providers, telecom operators, and specialty or sovereign cloud operators who want to move up-market without depending on a hyperscaler. Aenix builds these products on Cozystack, an open-source, Kubernetes-native platform (Apache 2.0) that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Aenix delivers architecture, WHMCS billing integration, a self-service customer portal, and pricing and go-to-market design on top of the productized Ænix Public Cloud Platform.**
 quick_facts:
   - label: "What it is"
     value: "Consulting and delivery to launch a customer-facing, multi-tenant public cloud product on the open-source Cozystack platform"
@@ -26,7 +26,7 @@ quick_facts:
   - label: "Engagement timeline"
     value: "Free 30-minute discovery call, 4-8 week architecture and product-readiness assessment, then 6-18 month implementation"
   - label: "Productized option"
-    value: "Ænix Public Cloud Platform (from $1,250/month) for small / mid providers; Public Cloud Platform for multi-region operators"
+    value: "Ænix Public Cloud Platform — published price list from $1,250/month per 10 nodes at provider scale; multi-region operator builds quoted per RFP"
 faq:
   - q: "What does it take to launch a public cloud product on Cozystack?"
     a: "A multi-tenant architecture using the Tenant CRD, a self-service customer portal, a service catalog (VMs, Kubernetes, managed databases, S3, GPU), billing integration via WHMCS, and go-to-market design covering pricing, onboarding, and SLAs. Aenix delivers this through a discovery call, a 4-8 week readiness assessment, and a 6-18 month implementation."
@@ -36,8 +36,8 @@ faq:
     a: "Aenix provides a production-ready WHMCS integration supporting two modes, and can implement custom billing where needed. This lets operators meter and invoice multi-tenant consumption of VMs, Kubernetes, databases, storage, and GPU."
   - q: "Is Cozystack open source and free of per-core licensing?"
     a: "Yes. Cozystack is licensed under Apache 2.0 with no per-CPU or per-core licensing. It runs VMs and containers on a single Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage. Aenix sells the productized Ænix Platform and services on top."
-  - q: "What is the difference between the consulting service and Ænix Platform editions?"
-    a: "The public cloud builder service covers architecture, product-readiness, and go-to-market work for launching a cloud product. Ænix Platform editions are the productized software foundation: Public Cloud Platform (from $1,250/month, WHMCS-integrated) for small and mid providers, and Public Cloud Platform for multi-region operators."
+  - q: "What is the difference between this service and the Ænix Public Cloud Platform product?"
+    a: "The Public Cloud Platform is the productized software foundation — multi-tenancy, the Cozystack Dashboard, WHMCS billing, the installer — bought from a published price list from $1,250/month per 10 nodes. The public cloud builder service is the engineering and go-to-market work around it: architecture for your estate, product-readiness, pricing and onboarding design. Multi-region operator builds are quoted per RFP."
   - q: "How long until first customers are onboarded?"
     a: "After a free 30-minute discovery call, the architecture and product-readiness assessment runs 4-8 weeks, followed by a 6-18 month implementation that builds the platform, onboarding workflows, and the first customer cohort. An optional managed-services phase can cover the early ramp."
 ---
@@ -46,7 +46,7 @@ faq:
 
 Ænix builds customer-facing public cloud products on Cozystack — the open-source Kubernetes-native platform that powers Ænix Public Cloud Platform deployments at regional hosting providers and several other regional cloud launches.
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for large public-cloud operators (multi-region, cloud-like UX, multi-hypervisor); **[Public Cloud Platform](/products/public-cloud-platform/)** for small / mid hosting providers and regional clouds (WHMCS-integrated, productized installer, from $1,250/month).
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — WHMCS-integrated, productized installer, from $1,250/month per 10 nodes for regional providers; the same platform at multi-region operator scale is a programme quoted per RFP.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -145,6 +145,3 @@ Public references: regional hosting providers running Ænix Public Cloud Platfor
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Public Cloud Builder — Launch a Customer-Facing Cloud Product | Ænix"
-Description: "Build a regional/sovereign/specialty cloud product on Cozystack open-source foundation. Multi-tenant, billing-ready, EU/Central Asia teams."
-Word count: ~700. -->

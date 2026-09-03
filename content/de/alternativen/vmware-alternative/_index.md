@@ -3,6 +3,7 @@ title: "VMware Alternative — Open Source, souverän, Kubernetes-nativ"
 description: "Cozystack ist die moderne Open-Source-Alternative zu VMware in 2026 — eine einzige Plattform, die vSphere, ESXi, vCenter, vSAN, NSX, vCloud Director und den..."
 related_pages: ["/de/alternativen/proxmox-alternative", "/de/produkte/private-cloud", "/de/migration/vmware"]
 language: "de"
+hreflang_en: /alternatives/vmware-alternative/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
@@ -129,7 +130,7 @@ KubeVirt und der Kubernetes-native Virtualisierungsstack haben eine Community vo
 
 - **[Vollständiger VMware-Ablösungs-Leitfaden](/de/blog/2026/05/vmware-ablosung-nach-broadcom/)**
 - **[VMware-Migrationspfad](/de/migration/vmware/)**
-- **[Cozystack](/products/cozystack/)**
+- **[Cozystack](/de/produkte/cozystack/)**
 
 ---
 

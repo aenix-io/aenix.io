@@ -58,8 +58,6 @@ faq:
     a: "No. Cloud bursting is additive. Owned bare metal stays the baseline, existing storage (for example external Ceph) stays in place, and public or sovereign clouds are attached as burst targets. Nothing forces a full migration — you extend capacity where and when you need it."
 ---
 
-# GPU cloud bursting: multi-cloud GPU-as-a-service on your own platform
-
 **Own the baseline, rent only the peaks. Cloud bursting lets you run steady GPU workloads on hardware you control and spill inference or training spikes into public or sovereign clouds on demand — then tear the extra capacity down. Ænix builds this as GPU-as-a-service on a single Kubernetes platform, so your teams get elastic GPU without hyperscaler lock-in, opaque billing, or a full migration.**
 
 > **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — multi-tenant GPU scheduling, fractional sharing and ready blueprints for inference and fine-tuning. For the elastic self-service cloud underneath it, combine with **[Public Cloud Platform](/products/public-cloud-platform/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**.

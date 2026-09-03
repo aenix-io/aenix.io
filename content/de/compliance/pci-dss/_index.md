@@ -178,7 +178,7 @@ Anonymer API-Zugriff ist deaktiviert, der Profiling-Endpunkt ist aus. Beides sta
 
 Zwei Ebenen zählen hier, und sie verhalten sich unterschiedlich.
 
-**Kubernetes-Secrets** sind in etcd verschlüsselt, wenn der API-Server mit `--encryption-provider-config` läuft. Dieses Flag stammt aus der zum Installationszeitpunkt gelieferten Talos-Maschinenkonfiguration und nicht aus der Plattformsoftware — prüfen Sie es also auf Ihrem eigenen Cluster. Beachten Sie auch die Grenzen der Kontrolle: Sie schützt etcd-Daten auf der Platte und in etcd-Backups, hilft nichts gegen ein Prinzipal, das das Secret über die API lesen darf, und bringt wenig, wenn der Schlüssel auf demselben Control-Plane-Knoten liegt wie etcd.
+**Kubernetes-Secrets** sind in etcd verschlüsselt, wenn der API-Server mit `--encryption-provider-config` läuft. Dieses Flag stammt aus der zum Installationszeitpunkt gelieferten Talos-Maschinenkonfiguration und nicht aus der Plattformenoftware — prüfen Sie es also auf Ihrem eigenen Cluster. Beachten Sie auch die Grenzen der Kontrolle: Sie schützt etcd-Daten auf der Platte und in etcd-Backups, hilft nichts gegen ein Prinzipal, das das Secret über die API lesen darf, und bringt wenig, wenn der Schlüssel auf demselben Control-Plane-Knoten liegt wie etcd.
 
 **Volumes** — die Platten hinter virtuellen Maschinen und Datenbanken — sind nicht verschlüsselt, solange Sie es nicht verlangen. LINSTOR unterstützt Verschlüsselung im Ruhezustand mit LUKS: Passphrase setzen, dann eine StorageClass mit LUKS-Layer anlegen:
 

@@ -43,8 +43,6 @@ quiz:
       explanation: "The article explicitly says 'for providers below ~300 customers, Public Cloud Platform is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
 ---
 
-**Long-form companion to the [Public Cloud Platform landing](/products/public-cloud-platform/). Walks through the unit economics, infrastructure cost, platform-team capacity, and payback profile for hosting providers evaluating Ænix Public Cloud Platform — versus continuing on VMware, OpenStack, or per-customer-built infrastructure.**
-
 Most "should we build our own cloud product?" conversations at hosting
 providers stop at the technology question. The harder question is the
 unit economics: what does it cost per tenant, what's a realistic ARPU,
@@ -289,10 +287,3 @@ months depending on estate complexity and team readiness.
   hosting-provider-specific positioning
 - **[White-label cloud services](/services/white-label-cloud/)** —
   for MSP / channel-partner extensions of the model
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution, OpenSSF Best Practices. We build sovereign
-cloud products with hosting providers across the EU, DACH, and Central
-Asia.*

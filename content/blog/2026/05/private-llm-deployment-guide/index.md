@@ -1,6 +1,6 @@
 ---
 title: "Private LLM deployment — a practical guide to on-premise AI infrastructure in 2026"
-description: "This is the long-form companion to our sovereign AI services page. It walks through what a real private LLM deployment looks like — model selection,..."
+description: "The six layers of a real private LLM deployment — hardware, platform, serving, model, application, operations — with the pitfalls at each one."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
@@ -45,11 +45,7 @@ quiz:
       explanation: "A model that \"fits\" by parameter count may not fit at the operational batch size because of KV cache memory growth with context length and batch size. Right-sizing requires actual benchmark with realistic context lengths."
 ---
 
-**This is the long-form companion to our [sovereign AI services page](/solutions/sovereign-ai/). It walks through what a real private LLM deployment looks like — model selection, hardware sizing, the serving stack, the platform underneath, and the operational model your team has to run afterwards. Written for the engineers and architects who have to translate "we need our own LLM" into a system that actually works.**
-
 The decision to deploy a private LLM is increasingly easy to make and surprisingly hard to execute well. The decision is easy because the trigger is usually clear: regulated data, sectoral rules, or the economics of inference at scale make a hyperscaler model API the wrong answer. Execution is hard because the supporting infrastructure — GPU scheduling, model serving, observability, multi-tenancy, audit-readiness — is more work than the LLM itself.
-
-This article covers the actual scope.
 
 ## When a private LLM is the right answer
 
@@ -218,23 +214,9 @@ Private LLM is the wrong answer when:
 - Your data is not actually regulated, your spend is not actually growing, and the trigger is more "we want our own thing" than a substantive driver. The work is real and substantial; the trigger has to be real too.
 
 A good engagement is honest about these cases. The Ænix engagement specifically does not push private LLM when the alternative is the right answer.
-
-## How to start
-
-If your trigger profile fits, the structured next step is a sovereign-AI assessment of your specific workload, data class, and economics. The output is a written architecture for your situation — not a generic recommendation.
-
-Ænix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + AI-platform workstreams emphasized. See the **[sovereign AI services page](/solutions/sovereign-ai/)** for engagement details.
-
----
-
 ## Want to dig deeper?
 
 - **[Sovereign AI services page](/solutions/sovereign-ai/)** — engagement details
 - **[Data sovereignty](/solutions/data-sovereignty/)** — regulator-side trigger
 - **[DORA compliance](/solutions/dora-compliance/)** — financial-services trigger
 - **[Cozystack](/products/cozystack/)** — the platform we run AI workloads on
-
----
-
-*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build sovereign AI platforms for AI / GPU operators, financial services, and public-sector organizations across the EU, DACH, and Central Asia.*
-

@@ -2,6 +2,7 @@
 title: "Enterprise-Support für Cozystack"
 description: "Enterprise-Support für Cozystack von den Entwicklern, die das Projekt pflegen: SLA-Tiers ab $1.250/Monat, Named TAM, Upgrade-Planung und Compliance-Unterstützung."
 language: "de"
+hreflang_en: /products/cozystack-enterprise-support/
 quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "cozystack enterprise support"
@@ -80,4 +81,4 @@ Coverage:
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

@@ -30,7 +30,7 @@ faq:
   - q: "How does Cozystack compare to OpenShift Virtualization?"
     a: "Both are KubeVirt-based and run VMs and containers on Kubernetes. OpenShift Virtualization suits organizations standardized on Red Hat procurement and ties to Red Hat / IBM subscription economics. Cozystack is fully open source (Apache 2.0), with structural multi-tenancy via the Tenant CRD and a lighter operational footprint."
   - q: "Why are so many teams leaving VMware in 2026?"
-    a: "After Broadcom's acquisition, VCF subscription pricing has driven renewal cost increases of roughly 2-5x. Combined with sovereignty pressure from DORA and NIS2 and the economics of private AI infrastructure, most VMware teams are now choosing where to migrate rather than whether to leave."
+    a: "After Broadcom's acquisition, renewal quotes in the engagements Aenix runs have come in at roughly 2-5x the prior deal, alongside perpetual-licence retirement and mandatory VCF bundling. VCF pricing is not published, so that multiplier is an observation from our own pipeline rather than an industry benchmark. Combined with sovereignty pressure from DORA and NIS2 and the economics of private AI infrastructure, most VMware teams are now choosing where to migrate rather than whether to leave."
   - q: "Which VMware alternative is best for multi-tenancy?"
     a: "Cozystack provides structural multi-tenancy through its Tenant CRD, making it well suited to service providers and regulated enterprises. Most appliance-based options (Nutanix, Scale Computing, Azure Stack HCI) and Proxmox offer limited tenancy, while OpenStack uses Keystone for tenant isolation at telco scale."
   - q: "Does Aenix provide commercial support for a VMware migration?"
@@ -41,7 +41,7 @@ faq:
 
 If you're early in the evaluation and want a single recommendation focused on multi-tenant + sovereign + AI-ready cloud — see our **[VMware alternative landing](/alternatives/vmware-alternative/)** which goes deep on Cozystack as our recommendation. This page is the broader market scan.
 
-> **Pairs with:** **[Ænix Platform](/products/)** — Two editions: Provider, if you sell cloud to customers, and Enterprise, if you run it for your own organisation. The right one depends on which side of that line you are on post-VMware. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** if you sell cloud to customers, or **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** if you run it for your own organisation. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/alternatives/vmware-alternative/">See recommendation →</a>
@@ -55,8 +55,8 @@ If you're early in the evaluation and want a single recommendation focused on mu
 
 ## Why VMware alternatives matter in 2026
 
-- **Broadcom Private Cloud Outlook 2025:** 53% of organizations now prioritize private cloud for new workloads; 69% are evaluating repatriation.
-- **VCF subscription pricing** has driven 2-5× renewal cost increases across the industry.
+- **Private cloud is where new workloads are going.** Broadcom's own Private Cloud Outlook 2025 reports 53% of organizations prioritizing private cloud for new workloads and 69% evaluating repatriation. Note the source: it is published by VMware's owner and should be read with that in mind.
+- **VCF subscription pricing** — renewal quotes at 2-5× the prior deal are what we see in Ænix migration engagements. Broadcom does not publish list pricing, so treat any industry-wide multiplier, including ours, as observation rather than benchmark.
 - **Sovereignty pressure** — DORA, NIS2, sectoral rules pushing critical workloads to customer-controlled infrastructure.
 - **AI economics** — sustained inference workloads at scale where hyperscaler economics don't fit; private cloud + GPU is the answer for many.
 
@@ -77,7 +77,7 @@ The alternatives below cover the realistic options.
 
 **Why pick:** Open source (Apache 2.0), no vendor lock-in. Multi-tenancy structural. Single platform for VMs + containers + databases + S3 + GPU. Light operational footprint relative to OpenStack.
 
-**Watch out for:** Newer than OpenStack; smaller community (mitigated by Ænix commercial support).
+**Watch out for:** We build it, so weigh this section hardest. Cozystack is younger and its community is a fraction of OpenStack's or Red Hat's. There is no certified-hardware list and no certified-ISV programme, so qualification is yours. Ironic-class bare-metal provisioning has no equivalent. Hard multi-tenant GPU partitioning with MIG is roadmap, not shipping. And it asks the team to understand Kubernetes before it understands the platform.
 
 **[Read more](/alternatives/vmware-alternative/)** · **[cozystack.io](https://cozystack.io)**
 
@@ -85,11 +85,11 @@ The alternatives below cover the realistic options.
 
 **Architecture:** Proprietary KVM-based hypervisor inside Nutanix HCI appliance.
 
-**Best for:** Existing Nutanix HCI customers; VM-only enterprise estates; teams that prefer integrated appliance model.
+**Best for:** Existing Nutanix HCI customers; VM-centric enterprise estates; teams that want one vendor accountable for the whole stack.
 
-**Why pick:** Operationally simple, integrated stack, mature commercial support.
+**Why pick:** Genuinely the best operational experience on this list — Prism, one-click LCM upgrades, built-in dedup, compression and erasure coding, and a support organisation with a reputation it earned. Nutanix Kubernetes Platform (NKP, from the D2iQ acquisition) now covers containers; the old "Nutanix cannot do Kubernetes" line is out of date.
 
-**Watch out for:** Closed source; appliance lock-in; less flexible than open alternatives; cost trajectory.
+**Watch out for:** Closed source; certified-node list constrains hardware choice; per-node subscription economics; container story is a separate product rather than the same control plane.
 
 ### 3. OpenShift Virtualization (Red Hat)
 
@@ -121,7 +121,7 @@ The alternatives below cover the realistic options.
 
 **Why pick:** Mature, broad community, many commercial distros (Red Hat, Canonical, Mirantis).
 
-**Watch out for:** Operationally complex; harder to find OpenStack engineers in 2026; less Kubernetes-native than newer options.
+**Watch out for:** Operationally complex; OpenStack engineers are specialists and hard to hire; less Kubernetes-native than newer options. Against that, nothing else here matches its breadth — Ironic bare metal, Octavia, Manila, Barbican, and NFV-certified SR-IOV/DPDK placement.
 
 ### 6. Scale Computing HC3
 
@@ -133,9 +133,9 @@ The alternatives below cover the realistic options.
 
 **Watch out for:** Smaller scale ceiling; appliance lock-in.
 
-### 7. Microsoft Azure Stack HCI
+### 7. Microsoft Azure Local (formerly Azure Stack HCI)
 
-**Architecture:** Hyper-V + Storage Spaces Direct + Azure Arc integration.
+**Architecture:** Hyper-V + Storage Spaces Direct + Azure Arc integration. Renamed from Azure Stack HCI in late 2024; both names are still in circulation.
 
 **Best for:** Microsoft-aligned organizations with existing Azure relationships.
 
@@ -162,9 +162,9 @@ The alternatives below cover the realistic options.
 | **License** | Apache 2.0 | Subscription | Red Hat sub | AGPLv3 | Apache 2.0 | Subscription | Microsoft sub + per-core |
 | **Open source** | Full | No | Mostly | Full | Full | No | No |
 | **Foundation** | KubeVirt | AHV (KVM) | KubeVirt | KVM/LXC | KVM | KVM | Hyper-V |
-| **Multi-tenancy** | Tenant CRD | Limited | Namespaces | Limited | Keystone | Limited | Limited |
-| **Managed DBs** | First-class | Era addon | Available | Manual | Optional | No | Azure-tied |
-| **GPU** | vGPU + MIG | vGPU | vGPU + MIG | Passthrough | vGPU | Limited | vGPU |
+| **Multi-tenancy** | Tenant CRD (nested) | Projects + RBAC | Namespaces + Projects | Pools + ACLs | Keystone | Limited | Arc RBAC |
+| **Managed DBs** | First-class | NDB (ex-Era) | Available | Manual | Trove (optional) | No | Azure Arc-tied |
+| **GPU** | vGPU for VMs; GPU Operator + HAMi sharing (MIG roadmap) | vGPU | vGPU + MIG | Passthrough | vGPU + passthrough | Limited | vGPU |
 | **Air-gap** | Yes | Yes | Yes | Yes | Yes | Limited | Yes |
 | **Best scale** | Multi-tenant | Mid-large | Mid-large | <50 hosts | Telco-large | ROBO/edge | Medium-large |
 
@@ -174,7 +174,7 @@ The alternatives below cover the realistic options.
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>VMware exit (post-Broadcom)</b><div class="diagram__chips"><span>2-5× renewal increases</span><span>Sovereignty pressure</span><span>AI economics</span></div></div>
+<div class="diagram__node"><b>VMware exit (post-Broadcom)</b><div class="diagram__chips"><span>2-5× renewal quotes seen in engagements</span><span>Sovereignty pressure</span><span>AI economics</span></div></div>
 <div class="diagram__conn">evaluate by profile</div>
 <div class="diagram__node"><b>Eight production alternatives</b><div class="diagram__chips"><span>Open source & commercial</span><span>By scale & relationships</span></div></div>
 <div class="diagram__conn">for multi-tenant + sovereign</div>

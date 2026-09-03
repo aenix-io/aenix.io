@@ -16,7 +16,7 @@ quiz:
         - { text: "More than 20", correct: true }
         - { text: "About 5 core managed services", correct: false }
         - { text: "Hundreds, including community add-ons", correct: false }
-      explanation: "20+ managed services: databases (PostgreSQL, MariaDB, MongoDB), message queues (Kafka, RabbitMQ), caching (Redis), S3 storage, virtual machines, Kubernetes clusters, networking, load balancers. Everything runs on hardware with no extra virtualization layers."
+      explanation: "20+ managed services: databases (PostgreSQL, MariaDB, MongoDB), message queues (Kafka, RabbitMQ), caching (Valkey — Cozystack renamed the managed Redis service to Valkey in v1.0), S3 storage, virtual machines, Kubernetes clusters, networking, load balancers. Everything runs on hardware with no extra virtualization layers."
     - q: "Why does the article argue game servers are a particularly demanding workload?"
       options:
         - { text: "They require constant GPU acceleration on every node", correct: false }

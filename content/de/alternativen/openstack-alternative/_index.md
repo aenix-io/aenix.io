@@ -63,7 +63,7 @@ Cozystack ist die Open-Source-Alternative für Organisationen, die die Open-Sour
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/openstack-vs-cozystack-modernization/">OpenStack → Cozystack Leitfaden →</a>
+  <a class="cta-secondary" href="/blog/2026/05/openstack-vs-cozystack-modernization/">OpenStack → Cozystack: Leitfaden (englisch) →</a>
 </div>
 
 ---
@@ -113,7 +113,7 @@ Typische Migration: 4-12 Monate für eine mittelgroße Bereitstellung.
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[OpenStack vs Cozystack Leitfaden](/blog/2026/05/openstack-vs-cozystack-modernization/)**
+- **[OpenStack vs Cozystack Leitfaden (englisch)](/blog/2026/05/openstack-vs-cozystack-modernization/)**
 - **[VMware-Alternative](/de/alternativen/vmware-alternative/)**
 - **[Cozystack](/de/produkte/cozystack/)**
 - **[Private-Cloud-Consulting](/de/dienstleistungen/private-cloud-consulting/)**

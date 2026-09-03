@@ -7,17 +7,17 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": {{ .Title | jsonify }},
+  "name": {{ .Title }},
   "url": "{{ .Permalink }}",
   "provider": { "@id": "{{ "/#org" | absURL }}" },
-  "serviceType": {{ $serviceType | jsonify }},
-  "areaServed": {{ $areaServed | jsonify }},
+  "serviceType": {{ $serviceType }},
+  "areaServed": {{ $areaServed }},
   {{- if $audienceType }}
   "audience": {
     "@type": "Audience",
-    "audienceType": {{ $audienceType | jsonify }}
+    "audienceType": {{ $audienceType }}
   },
   {{- end }}
-  "description": {{ .Description | jsonify }}
+  "description": {{ .Description }}
 }
 </script>

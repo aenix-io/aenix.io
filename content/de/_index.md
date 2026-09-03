@@ -1,11 +1,12 @@
 ---
-title: "Turnkey Cloud-Plattform — zwei Plattforms, eine Foundation"
-description: "Ænix Platform — turnkey Cloud-in-a-Box auf Basis des CNCF-Projekts Cozystack. Zwei Plattforms für Hosting, Enterprise und Public Cloud. DORA / NIS2 by Design."
+title: "Turnkey Cloud-Plattform — drei Plattformen, eine Foundation"
+description: "Ænix Platform — turnkey Cloud-in-a-Box auf Basis des CNCF-Projekts Cozystack. Drei Plattformen für Hosting, Enterprise und Public Cloud. DORA / NIS2 by Design."
 type: "page"
 language: "de"
+hreflang_en: /
 ---
 
-**Ænix Platform ist eine turnkey Cloud-in-a-Box. Sie basiert auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen (CNCF-Projekt, Apache 2.0), und ergänzt alles, was ein Betreiber braucht, um ein echtes Cloud-Geschäft zu führen: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing, Payment-Integrationen, WHMCS-Integration, Enterprise-SLA. Zwei Plattforms decken beide Fälle ab. Installieren. Nutzer einbinden. Betrieb starten.**
+**Ænix Platform ist eine turnkey Cloud-in-a-Box. Sie basiert auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen (CNCF-Projekt, Apache 2.0), und ergänzt alles, was ein Betreiber braucht, um ein echtes Cloud-Geschäft zu führen: Hosting-Panel, User- / Admin- / Support-Portale, Service-Erstellungs-Wizards, vollständiges Billing, Payment-Integrationen, WHMCS-Integration, Enterprise-SLA. Drei Plattformen decken beide Fälle ab. Installieren. Nutzer einbinden. Betrieb starten.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -17,7 +18,7 @@ language: "de"
 ## Quick facts
 
 - **Open-Core-Unternehmen.** Wir erstellen und pflegen Cozystack — ein CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026) — und kommerzialisieren es als Ænix Platform.
-- **Zwei Plattforms:** Provider, wenn Sie Cloud verkaufen; Enterprise, wenn Sie sie selbst betreiben. Dazu die Module AI Platform und Developer Self-Service sowie der Entry-Tier Pure Cozystack mit Ænix-Support.
+- **Drei Plattformen:** Provider, wenn Sie Cloud verkaufen; Enterprise, wenn Sie sie selbst betreiben. Dazu die Module AI Platform und Developer Self-Service sowie der Entry-Tier Pure Cozystack mit Ænix-Support.
 - **Engagement-Größe:** Public Cloud Platform ab 1.250 USD/Monat Support-Tier; Betreiber- und Enterprise-Builds nach RFP.
 - **Regulatorischer Fokus:** DORA (in Kraft seit 2025-01-17), NIS2 (Umsetzungsfrist 2024-10-17), nationale Souveränitäts-Mandate.
 - **Architektur:** Kubernetes-nativ, Multi-Tenant Tenant CRD, kundenkontrollierte Hardware. Aufgebaut auf Talos + Kubernetes + KubeVirt + Cilium + LINSTOR + Cozystack Dashboard + VictoriaMetrics + VictoriaLogs.
@@ -26,7 +27,7 @@ language: "de"
 
 ---
 
-## Zwei Plattforms
+## Drei Plattformen
 
 Eine Frage entscheidet: Verkaufen Sie Cloud an andere, oder betreiben Sie sie für die eigene Organisation? Derselbe Cozystack-Kern, unterschiedliche kommerzielle Oberfläche.
 
@@ -50,7 +51,7 @@ Private und hybride souveräne Cloud über mehrere Rechenzentren. DORA- und NIS2
 
 [Private Cloud Platform →](/de/produkte/private-cloud-platform/)
 
-### Zwei Module, für beide Plattforms
+### Zwei Module, für beide Plattformen
 
 **[AI Platform](/de/produkte/ai-platform/)** — mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken. **[Developer Self-Service](/de/produkte/private-cloud-platform/)** — Golden Paths, GitLab- und Argo-CD-Automatisierung, Self-Service-APIs.
 
@@ -128,7 +129,7 @@ CSI-Driver-Entwicklung, Virtualisierungs-Plattform-Forschung, Public-Cloud / VPS
 1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope und Timeline bestätigen
 2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — Aktuelle Architektur-Audit, Gap-Analyse, Migrations-Roadmap
 3. **Pilot-Engagement** (3-6 Monate) — definierter Slice, validierter Business Case
-4. **Vollständiger Plattform-Build** — Wochen für Public Cloud Platform; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML — Produktions-Deployment
+4. **Vollständiger Plattform-Build** — Wochen für Public Cloud Platform; 9-18 Monate für Private-Cloud- und AI-Platform-Programme sowie Multi-Region-Builds — Produktions-Deployment
 5. **Managed Operations** (laufender Retainer) — Ænix betreibt die Plattform, die Sie operieren, oder hybrid
 
 [Detaillierte Preise und Engagement-Modell →](/de/preise/)
@@ -147,11 +148,11 @@ Bis zu **40% Marge** auf Ænix-Platform-Verkäufe für Reseller, Integratoren un
 
 ### Was ist Ænix Platform?
 
-Eine turnkey kommerzielle Cloud-in-a-Box von Ænix, basierend auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen. Sie ergänzt die Schichten, die ein echter Cloud-Betreiber braucht — Hosting-Panel, Billing, Portale, Payments, Support — und liefert in zwei Plattforms passend zum Buyer-Profil.
+Eine turnkey kommerzielle Cloud-in-a-Box von Ænix, basierend auf dem Open-Source-Projekt Cozystack, das wir erstellt haben und pflegen. Sie ergänzt die Schichten, die ein echter Cloud-Betreiber braucht — Hosting-Panel, Billing, Portale, Payments, Support — und liefert in drei Plattformen passend zum Buyer-Profil.
 
 ### Wie ist die Beziehung zwischen Ænix, Ænix Platform und Cozystack?
 
-Ænix = das Open-Core-Unternehmen. Ænix Platform = unser kommerzielles produktisiertes Cloud-in-a-Box (5 Plattforms). Cozystack = das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen (Apache 2.0).
+Ænix = das Open-Core-Unternehmen. Ænix Platform = unser kommerzielles produktisiertes Cloud-in-a-Box (drei Plattformen). Cozystack = das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen (Apache 2.0).
 
 ### Ist Cozystack kostenlos?
 
@@ -161,7 +162,7 @@ Ja. Cozystack ist Apache 2.0. Jeder kann es ausführen. Ænix ist der Original-M
 
 Öffentliche Produktivkunden mit Ænix Public Cloud Platform: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Wir arbeiten auch mit Tier-1-europäischen-Banken unter NDA an Mehr-Millionen-Euro Private Cloud Platform-Engagements; erste namentlich genannte Bank-Case-Studies erwartet Mitte 2027.
 
-### Warum zwei Plattforms?
+### Warum drei Plattformen?
 
 Derselbe Cozystack-Kern, zwei kommerzielle Pakete. Public Cloud Platform, wenn Sie Kapazität an Kunden verkaufen — Billing, Payments, Kundenportal, Tenant-Suspendierung. Private Cloud Platform, wenn Sie Cloud unter Aufsicht für die eigene Organisation betreiben — Schlüsselhoheit, auditfähiges Logging, Air-Gap, Kontroll-Mapping. GPU und Developer Self-Service sind Module, weil beide Seiten danach fragen.
 

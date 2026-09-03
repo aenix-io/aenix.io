@@ -28,7 +28,7 @@ quick_facts:
   - label: "Engagement"
     value: "Multi-year platform builds; 3-6 month pilot, 9-18 months to full multi-DC production"
   - label: "Architecture"
-    value: "Kubernetes-native, multi-DC, KubeVirt VMs and containers on one API, Cilium (eBPF) networking, replicated block storage, Tenant CRD multi-tenancy, customer-controlled keys"
+    value: "Kubernetes-native, multi-DC, KubeVirt VMs and containers on one API, Cilium (eBPF) networking, LINSTOR/DRBD replicated block storage, Tenant CRD multi-tenancy, customer-controlled keys"
 faq:
   - q: "How is this different from running open-source Cozystack ourselves?"
     a: "Cozystack provides the Kubernetes-native multi-tenant foundation. Private Cloud Platform adds pre-validated DORA and NIS2 architecture bundles, multi-DC operations runbooks, customer-managed encryption at every layer, an audit-ready logging stack, hybrid integration with VMware, OpenNebula and OpenShift, ISO 27001 and SOC 2 alignment support, enterprise SLA with 24/7 support, and engineering training. The engine is the same and stays Apache 2.0; what you buy is the regulated-operations layer and the people who have done it before."
@@ -48,7 +48,7 @@ aliases:
 ---
 
 
-**Private and hybrid sovereign cloud for regulated organizations that run cloud for themselves. Built for multi-DC setups, DORA / NIS2 compliance, and enterprise integrations. One control plane that connects to VMware, OpenNebula, OpenShift, and more — turnkey cloud-in-a-box on customer-controlled hardware. Includes education and training.**
+**Private and hybrid sovereign cloud for regulated organizations that run cloud for themselves. Multi-DC by design, DORA / NIS2 architecture pre-validated, one control plane that connects to VMware, OpenNebula and OpenShift rather than replacing them — on hardware you control. Developer self-service and engineering training are part of the platform, not a second purchase.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -67,11 +67,11 @@ The platform is built for **coexistence**, not rip-and-replace. Existing VMware 
 
 ### DORA architecture controls
 
-- Customer-controlled encryption keys (Article 21(2)(h)) at every data layer
-- Audit-ready logging via VictoriaLogs with immutable backend (Article 21(2)(i) + Articles 17–19)
-- Multi-tenant Tenant CRD aligned with ICT risk classification (Article 21(2)(a))
-- Tested exit-readiness mechanics (Article 28(7)(c))
-- Supplier transparency to second hop (Article 28(3))
+- Customer-controlled encryption keys at every data layer (Article 9)
+- Audit-ready logging via VictoriaLogs with immutable backend, sized for incident classification and reporting (Articles 17–19)
+- Multi-tenant Tenant CRD aligned with ICT asset and risk classification (Article 8)
+- Tested exit-readiness mechanics (Article 28(8))
+- Supplier transparency to the second hop, feeding the register of information (Article 28(3))
 
 <div class="cta-row">
   <a class="cta-secondary" href="/solutions/dora-compliance/">DORA compliance services →</a>

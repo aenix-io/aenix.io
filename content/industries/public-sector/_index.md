@@ -120,7 +120,7 @@ Public-sector references are anonymous by procurement convention rather than by 
 
 We accept RFI / RFP through standard government procurement channels including:
 
-- **Kazakhstan** — goszakup.gov.kz, mitwork.kz, zakup.sk.kz, Единая платформа закупок (Unified Procurement Platform)
+- **Kazakhstan** — goszakup.gov.kz, mitwork.kz, zakup.sk.kz, Unified Procurement Platform
 - **EU member states** — TED (Tenders Electronic Daily), national e-procurement portals
 - **Other jurisdictions** — discussed during discovery call
 
@@ -154,5 +154,3 @@ Or read more:
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!-- SEO: title "Sovereign Cloud Platform for the Public Sector — Procurement to Production | Ænix"
-Word count: ~750. -->

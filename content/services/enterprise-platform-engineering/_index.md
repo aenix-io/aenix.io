@@ -5,7 +5,6 @@ related_pages:
   - /services/platform-engineering
   - /services/internal-developer-platform
   - /products/private-cloud-platform/
-  - /products/private-cloud-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -42,7 +41,7 @@ faq:
 
 **Enterprise platform engineering is the discipline of building and operating internal platforms for organizations with multiple product teams, cross-BU isolation, and sustained scale. It's a different scope from "platform engineering for a single team" — multi-tenancy, governance, and ops-at-scale are non-negotiable.**
 
-> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated multi-DC platforms; **[Developer Self-Service](/products/private-cloud-platform/)** for product-engineering-led IDP at enterprise scale.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — regulated multi-DC operation plus the developer self-service layer that an enterprise IDP needs.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -103,5 +102,3 @@ Standard **[Platform Readiness Assessment](/services/platform-readiness-assessme
 
 *Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Enterprise Platform Engineering — Internal Platforms at Scale | Ænix"
-Word count: ~350. -->

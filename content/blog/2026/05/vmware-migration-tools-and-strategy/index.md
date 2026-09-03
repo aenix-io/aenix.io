@@ -1,6 +1,6 @@
 ---
 title: "VMware migration tools and strategy in 2026 — what works, what fails"
-description: "This is the long-form companion to our VMware migration hub. It walks through VMware migration tooling and strategy in 2026 — what's available, how to..."
+description: "Three VMware migration paths, the tooling for KubeVirt-based migration, where migrations stumble, and realistic cost ranges."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "12 months of platform build", correct: false }
       explanation: "1-3 months destination-build before migration cohort 1. Most migrations fail when workloads move to a destination that's been engineered as a PoC, not as a production platform. Engineer the destination first."
 ---
-
-**This is the long-form companion to our [VMware migration hub](/migration/vmware/). It walks through VMware migration tooling and strategy in 2026 — what's available, how to choose between paths, where most migrations stumble.**
 
 The VMware migration market in 2026 is a different conversation than in 2022. Broadcom-induced exits have produced enough customer experience that the patterns that work and the patterns that fail are documented. This article covers the working version.
 
@@ -173,12 +171,3 @@ For planning:
 - **Total elapsed:** 8-12 months for 100 VMs; 18-24 months for 1000 VMs.
 
 Compared to ongoing VCF subscription: most customer engagements show net positive after Year 2 even accounting for migration cost.
-
-## How to start
-
-If your situation fits, the structured next step is an assessment. Ænix runs **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with VMware emphasis. For details see **[VMware migration hub](/migration/vmware/)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

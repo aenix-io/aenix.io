@@ -28,7 +28,7 @@ quick_facts:
   - label: "Not provided"
     value: "Automated VM failover after unplanned node loss. Node health handling and restart policies exist; combining them into a failover procedure is configuration and rehearsal work."
   - label: "Backups"
-    value: "Velero with encryption by default — but the default bucket lives inside the cluster it protects, which meets neither Article 12(2) nor 12(3)."
+    value: "Velero with encryption by default — but the default bucket lives inside the cluster it protects, which is hard to reconcile with the segregation Article 12(3) expects."
   - label: "Certification"
     value: "None exists. DORA defines obligations for financial entities; there is no DORA certificate for a platform, and Aenix does not claim one."
 faq:
@@ -109,7 +109,7 @@ Be precise about what is **not** provided. There is no automated virtual machine
 
 Velero ships with the platform for scheduled backups, volume snapshots, virtual machine backups and cluster state, and backup data is encrypted in object storage by default through the kopia uploader.
 
-**Where those backups land needs a decision before an assessment, not after.** Platform-managed backups default to a shared `cozy-backups` bucket in `tenant-root`, separated between tenants by object path. Article 12(2) expects restoration to run on systems physically and logically segregated from the source, and Article 12(3) expects backup systems not to be directly connected to the primary one — a bucket inside the cluster being protected meets neither. Point the BackupClass at storage outside the cluster, with its own credentials and its own key, and say so in the backup policy Article 12(1) asks you to write.
+**Where those backups land needs a decision before an assessment, not after.** Platform-managed backups default to a shared `cozy-backups` bucket in `tenant-root`, separated between tenants by object path. Article 12(3) requires that, when restoring backup data using its own systems, a financial entity uses ICT systems physically and logically segregated from the source system — and a bucket inside the cluster being protected is hard to argue as segregated from it. Article 12(2) adds that activating a backup system must not itself jeopardise the security, availability, authenticity, integrity or confidentiality of the data, and that the procedures be tested periodically. Point the BackupClass at storage outside the cluster, with its own credentials and its own key, and say so in the backup policy Article 12(1) asks you to write.
 
 The regulation's emphasis is not on having backups but on being able to restore. Rehearse the restore against a defined recovery time and recovery point objective, record what you actually achieved, and keep that record. A restore time you measured is evidence; an estimate is not.
 

@@ -1,6 +1,6 @@
 ---
 title: "Cloud engineering disciplines in 2026 — the seven disciplines that compound"
-description: "This is the long-form companion to our cloud engineering services page. It walks through the seven cloud engineering disciplines that mature organizations..."
+description: "The seven disciplines a mature cloud engineering function runs — architecture, IaC, GitOps, observability, security, FinOps, compliance — and how they fit."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,8 +42,6 @@ quiz:
       explanation: "A mature cloud-engineering organization practices all seven, not as separate functions but as overlapping disciplines integrated through platform engineering. The platform team is the integrator."
 ---
 
-**This is the long-form companion to our [cloud engineering services page](/services/cloud-engineering/). It walks through the seven cloud engineering disciplines that mature organizations practice in 2026 — what each is, where they overlap, what tools matter.**
-
 "Cloud engineering" as a job title and discipline has matured beyond "DevOps engineer with cloud experience." In 2026, the core disciplines are well-defined.
 
 ## Discipline 1: Architecture
@@ -77,12 +75,3 @@ Architecture-aligned with applicable regulators (DORA / NIS2 / GDPR / sectoral).
 ## How they fit together
 
 A mature cloud-engineering organization practices all seven, not as separate functions but as overlapping disciplines integrated through platform engineering. See **[platform engineering services](/services/platform-engineering/)** for how this integrates.
-
-## How to start
-
-For an assessment of where your organization stands across these disciplines, see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

@@ -20,7 +20,7 @@ language: "en"
 <div class="diagram__conn">compare &amp; migrate</div>
 <div class="diagram__node"><b>Migration hubs</b><div class="diagram__chips"><span>VMware</span><span>OpenStack</span><span>Proxmox</span><span>CloudStack</span></div></div>
 <div class="diagram__conn">land on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Public Cloud Platform</span><span>Private Cloud Platform</span><span>Developer Self-Service</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Public Cloud Platform</span><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
 </div>
 </div>
 
@@ -33,7 +33,7 @@ Post-Broadcom, VMware customers face subscription pressure + license model uncer
 - **[Cozystack vs VMware](/compare/cozystack-vs-vmware/)** — direct head-to-head architectural comparison
 - **[VMware migration hub](/migration/vmware/)** — strategy + architecture + cohort migration patterns
 
-**Pairs with:** Public Cloud Platform (hosting providers exiting VMware Cloud Director); Private Cloud Platform (regulated enterprises exiting VMware Cloud Foundation); Public Cloud Platform (large operators).
+**Pairs with:** Public Cloud Platform (hosting providers exiting VMware Cloud Director, and large operators); Private Cloud Platform (regulated enterprises exiting VMware Cloud Foundation).
 
 ## OpenStack
 
@@ -43,7 +43,7 @@ OpenStack runs at scale but operationally heavy. Common modernization trigger �
 - **[Cozystack vs OpenStack](/compare/cozystack-vs-openstack/)** — direct comparison
 - **[OpenStack migration hub](/migration/openstack/)** — modernization patterns
 
-**Pairs with:** Public Cloud Platform or Public Cloud Platform.
+**Pairs with:** Public Cloud Platform.
 
 ## Proxmox
 
@@ -62,11 +62,11 @@ OpenShift is enterprise-grade but Red Hat subscription model + opinionated appro
 - **[OpenShift alternative](/alternatives/openshift-alternative/)** — when to look beyond OpenShift
 - **[Cozystack vs OpenShift](/compare/cozystack-vs-openshift/)** — direct comparison
 
-**Pairs with:** Private Cloud Platform or Developer Self-Service.
+**Pairs with:** Private Cloud Platform, including its developer self-service layer.
 
 ## Nutanix
 
-Nutanix HCI strong; cloud platform layer (Era, etc.) competitive but proprietary. Sovereign / cost-conscious enterprises evaluate alternatives.
+Nutanix HCI is the strongest day-2 experience in this list, and proprietary. Sovereign and cost-conscious enterprises evaluate alternatives when hardware freedom or a multi-tenant service-provider model matters more than that.
 
 - **[Nutanix alternative](/alternatives/nutanix-alternative/)** — when to look beyond Nutanix
 
@@ -74,11 +74,11 @@ Nutanix HCI strong; cloud platform layer (Era, etc.) competitive but proprietary
 
 ## Backstage
 
-Backstage is a UI framework for IDPs. Useful but not a complete IDP — needs a cloud foundation underneath. Developer Self-Service includes both layers.
+Backstage is a UI framework for IDPs. Useful but not a complete IDP — it needs a cloud foundation underneath. Private Cloud Platform ships both layers.
 
 - **[Backstage alternative](/alternatives/backstage-alternative/)** — when Backstage isn't enough
 
-**Pairs with:** Developer Self-Service.
+**Pairs with:** Private Cloud Platform (developer self-service layer).
 
 ## CloudStack
 
@@ -86,7 +86,7 @@ CloudStack legacy environments — modernization patterns to Cozystack-based sta
 
 - **[CloudStack migration hub](/migration/cloudstack/)** — migration patterns
 
-**Pairs with:** Public Cloud Platform or Public Cloud Platform.
+**Pairs with:** Public Cloud Platform.
 
 ---
 

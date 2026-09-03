@@ -42,7 +42,7 @@ faq:
 
 **Sie bauen die Plattform, auf der andere Teams bauen. Die Aufgabe: Golden Paths und Self-Service — mandantenfähiges Kubernetes, Datenbanken, Storage und Umgebungen, die Entwickler selbst bereitstellen — ohne Ticket-Schlange und ohne Bindung an einen geschlossenen Anbieter. Ænix liefert das als schlüsselfertige Internal Developer Platform oder als Team, das Ihre auf offenem Fundament baut.**
 
-> **Passt zu:** **[Ænix Platform IDP](/de/produkte/)** als fertige IDP — oder einem Aufbauprojekt nach Ihrer Organisation. Offener Kern: **[Cozystack](https://cozystack.io)**, Apache 2.0.
+> **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als fertige IDP — oder einem Aufbauprojekt nach Ihrer Organisation. Offener Kern: **[Cozystack](https://cozystack.io)**, Apache 2.0.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -74,7 +74,7 @@ Infrastruktur zum Produkt machen: Self-Service für VMs, Managed Kubernetes, Man
 
 ## Zwei Wege mit Ænix
 
-**1. Schlüsselfertige IDP.** Die [Ænix Platform IDP](/de/produkte/) liefert Control Plane, Self-Service-Portal, Service-Katalog und Golden-Path-Bereitstellung auf dem Cozystack-Kern. Ihr Team kuratiert, Entwickler bedienen sich selbst.
+**1. Schlüsselfertige IDP.** Die [Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/) liefert Control Plane, Self-Service-Portal, Service-Katalog und Golden-Path-Bereitstellung auf dem Cozystack-Kern. Ihr Team kuratiert, Entwickler bedienen sich selbst.
 
 **2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Platform-Engineering-Team**: wir entwerfen Mandanten, Golden Paths und Katalog für Ihre Organisation, binden CI/CD und Identity an und übergeben eine Plattform, die Ihr Team besitzt. Siehe [Dienstleistungen](/de/dienstleistungen/).
 

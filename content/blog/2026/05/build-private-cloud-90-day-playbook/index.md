@@ -1,6 +1,6 @@
 ---
 title: "Build your own private cloud — a 90-day playbook for the platform-team-led approach"
-description: "This is the long-form companion to our build private cloud services page. It walks through what it actually takes to build a private cloud in 90 days — what..."
+description: "A day-0 to day-90 plan for standing up a private cloud: what gets built each month, what you deliberately skip, and where teams routinely stumble."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "Identity provider integration and observability stack", correct: true }
       explanation: "Week 4 closes the foundation: Keycloak (or chosen IdP) integrated; VictoriaMetrics + VictoriaLogs deployed; initial dashboards and alerts; audit logging configured. Multi-tenancy comes only in week 5-6."
 ---
-
-**This is the long-form companion to our [build private cloud services page](/services/build-private-cloud). It walks through what it actually takes to build a private cloud in 90 days — what to build first, what to skip, where most teams stumble. Written for platform leads, infrastructure architects, and engineering managers about to take this on.**
 
 The phrase "build your own cloud" was niche in 2018. By 2026, it's mainstream — Broadcom's pricing changes plus sovereignty pressures plus AI workload economics have pushed thousands of organizations from "we'll just rent cloud" to "we need a platform we control."
 
@@ -156,12 +154,3 @@ The 90-day playbook delivers a foundation. Maturity continues:
 - **Year 2:** maturity, optimization, scaling
 
 A private cloud at year 2 is a different platform from a private cloud at day 90.
-
-## How to start
-
-If you fit the profile, the structured next step is a focused assessment. Ænix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**. For details see the **[build private cloud services page](/services/build-private-cloud)**.
-
----
-
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
-

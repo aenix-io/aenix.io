@@ -1,6 +1,6 @@
 ---
 title: "Cloud cost optimization strategies in 2026 — a practical guide for engineering and finance"
-description: "This is the long-form companion to our cloud cost optimization services page. It walks through cloud cost optimization strategies that actually work — what..."
+description: "Eight cloud cost optimization strategies, from commitment-realization gaps to Kubernetes right-sizing — and the point where configurational tuning stops paying."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
@@ -43,8 +43,6 @@ quiz:
         - { text: "After the first internal cost audit finishes", correct: false }
       explanation: "Configurational first, captures those savings, then evaluate architectural moves. Skipping configurational leaves money on the table; skipping architectural means optimisation hits a structural ceiling and the operator is stuck."
 ---
-
-**This is the long-form companion to our [cloud cost optimization services page](/solutions/cloud-cost-optimization/). It walks through cloud cost optimization strategies that actually work — what to fix first, where the structural limits sit, and how to tell the difference between a configurational savings and a strategic decision. Written for the platform engineers, finance partners, and infrastructure leads who own cloud-cost trajectories.**
 
 Most cloud-cost articles are vendor-shaped. Either they're written by FinOps tool vendors (so the answer is always "buy our tool") or by hyperscaler partners (so the answer is always "tune within the hyperscaler"). The neutral version of this conversation looks different.
 
@@ -249,21 +247,9 @@ It's the wrong fit when:
 - The team hasn't done basic configurational optimization yet (do that first)
 - The "cost problem" is actually a 5% blip on a healthy bill (not worth structural engagement)
 - The decision is already made and the engagement is meant to validate it (we won't deliver that)
-
-## How to start
-
-If your trigger fits, the structured next step is a focused cost engagement. Ænix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with cost-and-cloud-spend workstream emphasized. See the **[cloud cost optimization services page](/solutions/cloud-cost-optimization/)** for engagement details.
-
----
-
 ## Want to dig deeper?
 
 - **[Cloud cost optimization services page](/solutions/cloud-cost-optimization/)** — engagement details
 - **[Cloud repatriation](/solutions/cloud-repatriation/)** — when configurational ceiling has been hit
 - **[Reverse cloud migration playbook](/blog/2026/05/reverse-cloud-migration-playbook/)** — repatriation details
 - **[Cozystack](/products/cozystack/)** — destination platform we recommend
-
----
-
-*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-cost engagements and platform-engineering programs across the EU, DACH, and Central Asia.*
-

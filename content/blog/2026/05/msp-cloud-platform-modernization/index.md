@@ -1,6 +1,6 @@
 ---
 title: "MSP cloud platform modernization — branded cloud as managed-service offering"
-description: "Companion to MSP industry page."
+description: "Architecture pattern, reseller economics, and engagement sequencing for MSPs adding a multi-tenant cloud platform to a managed-services business."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -32,7 +32,7 @@ quiz:
       options:
         - { text: "Three-tier isolation: Aenix → MSP → MSP customers", correct: true }
         - { text: "Performance — flat tenants would saturate API server", correct: false }
-        - { text: "Required by Helm — charts cannot deploy without nesting", correct: false }
+        - { text: "Each MSP customer needs a dedicated Kubernetes cluster", correct: false }
       explanation: "Multi-tier Tenant CRD: Aenix → MSP → MSP customers. Per-tier isolation: RBAC, quotas, observability scope, billing. Nesting is what makes the reseller model clean — each layer can't see into others without explicit permission."
     - q: "What customization does the article say MSPs can do to the service catalog?"
       options:
@@ -41,8 +41,6 @@ quiz:
         - { text: "Only cosmetic (colours and logo, not the catalog contents)", correct: false }
       explanation: "Service catalog curation: MSP can expose only PostgreSQL and hide Kafka (or any other service) if the MSP doesn't support it operationally. The catalog matches what the MSP can actually back with support, not what Cozystack technically can run."
 ---
-
-Companion to **[MSP industry page](/industries/msp)**.
 
 ## Why MSPs need cloud now
 
@@ -75,12 +73,3 @@ Break even: 30-50 paying customers. Positive economics scaling from there.
 5. **Scale** — open to broader MSP customer base
 
 Total elapsed: 6-12 months.
-
-## How to start
-
-**[White-label cloud services](/services/white-label-cloud/)** for full engagement.
-
----
-
-*Ænix is the team behind Cozystack.*
-

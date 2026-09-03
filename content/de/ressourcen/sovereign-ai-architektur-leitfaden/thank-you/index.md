@@ -3,6 +3,7 @@ title: "Ihr Download ist bereit — Sovereign-AI-Entscheidungsleitfaden"
 description: "Laden Sie Ihre Kopie des Sovereign-AI-Entscheidungsleitfaden von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
+hreflang_en: /resources/sovereign-ai-decision-guide/thank-you/
 page_type: "flag-page"
 hide_closing_cta: true
 ---

@@ -108,4 +108,3 @@ faq:
 
 *Ænix is the team behind Cozystack.*
 
-<!-- Word count: ~400. -->

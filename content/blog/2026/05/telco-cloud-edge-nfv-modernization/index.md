@@ -43,8 +43,6 @@ quiz:
       explanation: "The article states tier-1 telco modernization runs 18-36+ months, phased across strategic engagement, IT cloud, AI/data lake, edge, and NFV modernization tracks."
 ---
 
-**Long-form companion to the [telco industry page](/industries/telco/). For network architects, cloud-platform leads, and CTOs at tier-1 and tier-2 telecom operators planning modernization of legacy NFV environments to Kubernetes-native sovereign cloud platforms — covering the architectural drivers, what to keep from the NFV era, where Kubernetes-native breaks the legacy mould, and how to phase a multi-year programme.**
-
 The telco cloud conversation in 2026 sits at an unusual intersection
 of pressures that no other vertical faces simultaneously. NFV
 deployments from 2015-2020 are aging out. NIS2 obligations apply
@@ -278,9 +276,3 @@ Marginal fit:
   multi-year build phasing
 - **[Sovereign AI architecture decisions](/blog/2026/05/sovereign-ai-architecture-decisions/)** —
   seven decisions for sovereign AI
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Engineering teams across the EU and Central
-Asia, with telco-specific engagement experience under NDA.*

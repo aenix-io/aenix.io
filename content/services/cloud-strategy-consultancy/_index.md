@@ -37,7 +37,7 @@ faq:
 
 **Cloud strategy is a question architects and senior engineers can answer better than management consultants. Ænix runs cloud strategy engagements as part of the same Platform Readiness Assessment that delivers actionable architecture — written report with named workloads, costs, and timelines, not a 200-page transformation plan.**
 
-> **Pairs with:** all **[Ænix Platform editions](/products/)** — strategy outputs which edition fits your buyer profile and engagement scope.
+> **Pairs with:** all three **[Ænix platforms](/products/)** — the strategy output names which one fits your buyer profile and engagement scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -90,5 +90,3 @@ For specific triggers see **[cloud cost optimization](/solutions/cloud-cost-opti
 
 *Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Cloud Strategy Consultancy — Engineers, Not Strategists | Ænix"
-Word count: ~350. -->

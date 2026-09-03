@@ -74,21 +74,14 @@ faq:
 </div>
 </div>
 
-- **DORA-aligned platform readiness** — insurance is in DORA scope; Article 28 applies
-- **Sovereign AI for sensitive insurance data** — claims, underwriting, fraud-detection AI on regulated data
-- **Cloud repatriation** — sustained workloads where public-cloud economics no longer fit
-- **VMware exit** — VCF subscription pressure across insurance sector
+- **DORA Article 28 with a group structure** — insurance and reinsurance undertakings are financial entities under DORA, and the ICT third-party and separation controls have to hold across carriers, MGAs and shared service companies inside one group.
+- **AI on claims and underwriting data** — claims triage, underwriting and fraud detection are the workloads insurers want on GPUs and cannot send to a public model endpoint.
+- **Per-market residency for a multi-market book** — a carrier writing in several member states inherits several residency rules for the same policy administration stack.
+
+The cost and VMware-exit triggers are common to the whole sector; those are covered on **[financial services](/industries/financial-services/)**.
 
 </div>
 </div>
-
----
-
-## Industry context
-
-- **LSEG Global Cloud Survey 2025:** 82% of financial services (incl. insurance) in hybrid/multi-cloud; 84% adjusted strategy due to regulatory developments
-- **Nutanix FS ECI 2025:** 92% rate infrastructure as not-ready for cloud-native; 62% hiring GenAI specialists
-- **DORA enforcement:** in force across EU since January 2025
 
 ---
 
@@ -96,10 +89,7 @@ faq:
 
 {{< clients >}}
 
-*Customer evidence — Ænix to populate. Anonymous proof points:*
-- A regional reinsurance carrier with multi-jurisdictional sovereignty requirements running internal cloud platform
-- An insurance group with AI-assisted claims processing on private LLM infrastructure
-- A multi-product insurer with multi-BU separation under DORA Article 28 controls
+Insurance engagements sit in the same NDA cohort as the bank work, with naming permitted from mid-2027. [Nine deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
 
 {{< quote-carousel >}}
 
@@ -119,5 +109,3 @@ faq:
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Cloud Platform for Insurance — DORA-Aligned, AI-Ready, Sovereign | Ænix"
-Word count: ~500. -->

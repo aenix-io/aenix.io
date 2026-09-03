@@ -43,8 +43,6 @@ quiz:
       explanation: "Pattern B fits organisations with strong BU autonomy — most established financial services and large industrial conglomerates. Pattern A fits clear engineering-domain boundaries (fintech, consumer-tech); Pattern C balances consistency with domain specialisation."
 ---
 
-**Long-form companion to the [enterprise platform engineering services page](/services/enterprise-platform-engineering/). For Engineering VPs, Heads of Platform, and Chief Architects designing platform-engineering function at 1,000+-engineer organisations — covering org design, headcount math, governance models, and the failure modes that recur at this scale.**
-
 Platform engineering at 200-500 engineers is mostly a question of
 "do it well" — define golden paths, build the IDP capability stack,
 hire a platform team, ship. Platform engineering at 1,000+ engineers
@@ -52,10 +50,6 @@ is a different problem: governance across business units, consistency
 without rigidity, multi-region operational coordination, regulator-
 graded change management, and the political dynamics of cross-BU
 infrastructure decisions.
-
-This article walks through what we see at the enterprise scale and
-what an Ænix enterprise platform-engineering engagement actually
-delivers.
 
 ## What changes at 1,000+ engineers
 
@@ -344,10 +338,3 @@ Poor fit:
   the IDP economic case
 - **[Build private cloud — 90-day playbook](/blog/2026/05/build-private-cloud-90-day-playbook/)** —
   for the substrate-build workstream
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Enterprise platform engineering engagements
-typically run 18-36 months with multi-million-euro budgets; our team
-scales to engagement size.*

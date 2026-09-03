@@ -1,17 +1,19 @@
 ---
-title: "Private cloud platform — open source, Kubernetes-native, multi-tenant"
-description: "Cozystack is the open-source private cloud platform built for service providers, regulated enterprises, and sovereign-cloud builders. KubeVirt-based..."
-related_pages: ["/services/private-cloud-consulting", "/solutions/data-sovereignty", "/solutions/cloud-repatriation", "/alternatives/vmware-alternative", "/products/cozystack"]
+title: "What is a private cloud platform — open source, Kubernetes-native, multi-tenant"
+description: "What a private cloud platform is, what it has to provide, and how the open-source Kubernetes-native option compares with VMware VCF, OpenStack and OpenShift."
+primary_keyword: "private cloud platform"
+secondary_keywords: ["open source private cloud", "kubernetes private cloud", "vmware cloud foundation alternative"]
+related_pages: ["/products/private-cloud-platform/", "/services/private-cloud-consulting/", "/solutions/data-sovereignty/", "/solutions/cloud-repatriation/", "/alternatives/vmware-alternative/", "/products/cozystack/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Cozystack private-cloud console — self-service marketplace"
 direct_answer: |
-  **A private cloud platform is infrastructure an organization runs on hardware it owns or controls, replacing the VMware Cloud Foundation stack with software it governs end to end. Cozystack is an open-source, Kubernetes-native private cloud platform built for service providers, regulated enterprises, telecom operators, and sovereign-cloud builders. It combines KubeVirt virtualization for VMs and containers, Cilium (eBPF) networking, LINSTOR/DRBD replicated storage, a Tenant CRD multi-tenant control plane, managed databases, S3 object storage, and GPU as a service on bare metal. Cozystack is a CNCF project under Apache 2.0 with no per-CPU or per-core licensing. Aenix, the company behind Cozystack, builds and maintains it and offers the productized Ænix Platform plus commercial support and engineering services on top.**
+  **A private cloud platform is the software layer that turns hardware an organization owns or controls into self-service cloud: compute, storage, networking, multi-tenancy, managed data services and a provisioning surface, all governed by the organization itself rather than by a hyperscaler. It is what replaces a VMware Cloud Foundation stack for teams that want the cloud operating model without the cloud landlord. The open-source, Kubernetes-native option in this category is Cozystack — a CNCF project under Apache 2.0, with no per-CPU or per-core licensing, combining KubeVirt virtualization for VMs and containers, Cilium (eBPF) networking, LINSTOR/DRBD replicated storage, a Tenant CRD multi-tenant control plane, managed databases, SeaweedFS S3 object storage and GPU as a service on bare metal. Aenix created and maintains Cozystack, and productizes it as Aenix Private Cloud Platform for regulated organizations that need the supported, compliance-ready version.**
 quick_facts:
   - label: "What it is"
-    value: "An open-source, Kubernetes-native private cloud platform that runs VMs and containers on bare metal you own, replacing the VMware Cloud Foundation stack."
+    value: "The software layer that turns hardware you own into self-service cloud — compute, storage, networking, multi-tenancy and managed data services under your own governance."
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
@@ -21,7 +23,7 @@ quick_facts:
   - label: "Core stack"
     value: "KubeVirt for VMs and containers, Cilium (eBPF) networking, LINSTOR/DRBD replicated storage, Tenant CRD multi-tenancy."
   - label: "Commercial offering"
-    value: "Aenix sells the productized Ænix Platform plus support tiers: Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise Custom."
+    value: "Aenix Private Cloud Platform — the supported, compliance-ready product built on Cozystack. Quoted per RFP after scoping; see the pricing page."
   - label: "Deployment options"
     value: "Self-deploy from open source (docs at cozystack.io), or Aenix-supported assessment and implementation; air-gapped installs supported."
 faq:
@@ -33,8 +35,8 @@ faq:
     a: "Both are open-source private cloud platforms. OpenStack is older, broader in scope, and more operationally complex; Cozystack is Kubernetes-native, more focused, and has a lighter operational footprint. OpenStack remains strong where deep OpenStack expertise already exists."
   - q: "Does Cozystack support air-gapped deployments?"
     a: "Yes. Cozystack has a documented air-gapped install workflow, making it suitable for classified, defence, healthcare, and other highly restricted environments where outbound connectivity is not permitted."
-  - q: "What does it cost to run Cozystack?"
-    a: "The Cozystack platform is open source under Apache 2.0 and free to run on your own hardware, with no per-CPU, per-VM, or per-core meter. Aenix support tiers start at Basic $1,250/mo (10 nodes), then Standard $3,000, Plus $5,500, and Enterprise Custom, plus engagement-based professional services."
+  - q: "What does it cost to run a private cloud platform on Cozystack?"
+    a: "Cozystack itself is open source under Apache 2.0 and free to run on your own hardware, with no per-CPU, per-VM or per-core meter — the cost is hardware plus the platform team. Aenix support tiers for organizations running Cozystack themselves start from $1,250/month per 10 nodes on a published price list; Aenix Private Cloud Platform programmes for regulated estates are quoted per RFP after scoping."
   - q: "Can Cozystack run both virtual machines and containers?"
     a: "Yes. Cozystack uses KubeVirt to run KVM-based VMs (with live migration, snapshots, and templates) alongside Kubernetes containers on a single Kubernetes API, so you do not need separate VM and container platforms."
 ---
@@ -42,12 +44,12 @@ faq:
 <!-- BLOCK 1: HERO -->
 
 
-**Cozystack is the open-source private cloud platform built for service providers, regulated enterprises, and sovereign-cloud builders. KubeVirt-based virtualization, Cilium networking, LINSTOR storage, multi-tenant control plane, managed databases, S3, GPU as a service — on bare metal you own. CNCF Project, Apache 2.0 license, Kubernetes Certified Distribution.**
+**A private cloud platform is the software that turns hardware you own into self-service cloud — compute, storage, networking, multi-tenancy, managed data services and a provisioning surface, under your own governance. This page explains what the category has to provide, and how the open-source Kubernetes-native option compares with VMware Cloud Foundation, OpenStack and OpenShift Virtualization.**
 
-The Cozystack platform replaces the entire VMware Cloud Foundation stack with a Kubernetes-native equivalent that you operate under your own governance. Ænix is the company behind Cozystack — we build it, ship it in production with banks, telecom operators, and AI/GPU operators across the EU and Central Asia, and back it with engineering services.
+The open-source reference implementation here is [Cozystack](/products/cozystack/) — a CNCF project under Apache 2.0, created and maintained by Ænix, running in production with banks, telecom operators and AI/GPU operators across the EU and Central Asia. If you are evaluating the supported commercial version for a regulated estate, that is **[Ænix Private Cloud Platform](/products/private-cloud-platform/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
+  <a class="cta-primary" href="/products/private-cloud-platform/">See Ænix Private Cloud Platform →</a>
   <a class="cta-secondary" href="https://cozystack.io">cozystack.io →</a>
 </div>
 
@@ -61,7 +63,7 @@ CNCF Project · Kubernetes Certified Distribution · OpenSSF Best Practices · A
 
 <!-- BLOCK 2: WHO -->
 
-## Who runs Cozystack as their private cloud platform
+## Who runs a private cloud platform
 
 - **Service providers** — operating multi-tenant cloud products for enterprise customers
 - **Banks and insurers** — regulated workloads under DORA / sectoral compliance
@@ -76,7 +78,7 @@ CNCF Project · Kubernetes Certified Distribution · OpenSSF Best Practices · A
 
 <!-- BLOCK 3: WHAT'S IN THE PLATFORM -->
 
-## What Cozystack provides as a private cloud platform
+## What a private cloud platform has to provide
 
 <div class="grid-2x2">
 
@@ -84,7 +86,7 @@ CNCF Project · Kubernetes Certified Distribution · OpenSSF Best Practices · A
 KubeVirt for VMs (KVM-based with live migration, snapshots, templates) plus Kubernetes containers, side by side. No separate VM platform; no separate container platform.
 
 **2. Storage — replicated block + S3 object storage**
-LINSTOR (DRBD) for replicated block storage at scale. SeaweedFS for S3-compatible object storage. S3-compatible (SeaweedFS) for application + backup storage.
+LINSTOR (DRBD) for replicated block storage at scale; SeaweedFS for S3-compatible object storage used by applications and backups.
 
 **3. Networking — eBPF-native**
 Cilium as the CNI: L4/L7 policies, observability, MetalLB integration, BGP fabric support. NSX-equivalent functionality without NSX licensing.
@@ -92,11 +94,11 @@ Cilium as the CNI: L4/L7 policies, observability, MetalLB integration, BGP fabri
 **4. Multi-tenant control plane**
 Tenant CRD model with nested tenants, per-tenant quotas, RBAC, audit. Suitable for service-provider model (multi-customer) or enterprise multi-BU.
 
-**5. Managed services**
-PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB — first-class managed-service offerings.
+**5. Managed data services**
+PostgreSQL (CloudNativePG), MariaDB, MongoDB, ClickHouse, Valkey, OpenSearch, Kafka, NATS, RabbitMQ and Qdrant — provisioned as first-class platform services, not bolted-on Helm charts.
 
 **6. GPU as a service**
-NVIDIA vGPU for VMs, MIG / time-slicing / passthrough for containers. Validated on A100, H100, H200, L40S, Blackwell.
+NVIDIA GPU Operator with HAMi fractional sharing and PCI passthrough for containers, NVIDIA vGPU for VMs. Validated on A100, H100, H200, L40S and Blackwell.
 
 **7. Observability**
 VictoriaMetrics + VictoriaLogs included — low-overhead, sovereignty-friendly. Optional Grafana on top.
@@ -104,8 +106,8 @@ VictoriaMetrics + VictoriaLogs included — low-overhead, sovereignty-friendly. 
 **8. Backup and DR**
 Velero + S3 + per-database PITR for managed services.
 
-**9. Self-service portal & WHMCS billing**
-Cozystack Dashboard for service provisioning. Production-ready WHMCS integration with two modes (native UI + frontend Cozystack).
+**9. Self-service portal and billing**
+Cozystack Dashboard for service provisioning, plus a production-ready [WHMCS integration](/products/whmcs-integration/) for operators that bill their tenants.
 
 </div>
 
@@ -115,7 +117,7 @@ Cozystack Dashboard for service provisioning. Production-ready WHMCS integration
 
 <!-- BLOCK 4: HOW IT'S DIFFERENT -->
 
-## How Cozystack is different from other private cloud platforms
+## How the options compare
 
 | | VMware (VCF) | OpenStack | OpenShift Virtualization | **Cozystack** |
 |---|---|---|---|---|
@@ -134,12 +136,12 @@ Cozystack Dashboard for service provisioning. Production-ready WHMCS integration
 
 <!-- BLOCK 5: HOW TO START -->
 
-## How to start with Cozystack
+## How to start
 
 Two paths:
 
-- **Self-deploy** — Cozystack is open source. Architecture, install, and operations documentation: **[cozystack.io](https://cozystack.io)**. CNCF community Slack and Telegram for support.
-- **Ænix-supported deployment** — assessment + Phase 2 implementation by Ænix engineers. See **[Private cloud consulting](/services/private-cloud-consulting/)** for engagement details.
+- **Self-deploy** — Cozystack is open source. Architecture, install and operations documentation: **[cozystack.io](https://cozystack.io)**. CNCF community Slack and Telegram for support.
+- **Buy the supported product** — **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** adds pre-validated DORA and NIS2 architecture, multi-DC runbooks, customer-managed keys, audit-ready logging, an enterprise SLA and the optional developer self-service layer. Delivery runs through **[private cloud consulting](/services/private-cloud-consulting/)**.
 
 For sovereignty / DORA / repatriation / AI-specific motivations, the relevant solution pages:
 
@@ -167,33 +169,13 @@ Production deployments across the EU, DACH, and Central Asia. Customer base span
 
 ---
 
-<!-- BLOCK 7: PRICING -->
+<!-- BLOCK 7: COST -->
 
-## Pricing
+## What it costs
 
-The Cozystack platform is **open source under Apache 2.0** and free to run.
+Cozystack itself is **open source under Apache 2.0** and free to run: no per-CPU, per-VM or per-core meter. The real cost of a private cloud platform is hardware plus the platform team that operates it — which is what an assessment sizes.
 
-Ænix offers commercial support and engagement tiers:
-
-<div class="pricing-cards-3">
-
-### Community
-GitHub issues, public Slack, no SLA.
-**Free**
-
-### Standard support
-Business-hours response, runbooks, advisory.
-**On request**
-
-### Enterprise / 24×7
-Production SLA, dedicated TAM, GitOps PR review, incident response.
-**On request**
-
-</div>
-
-**Professional services** (engagement-based): Platform Readiness Assessment, build engagement, managed engagement. See **[platform-readiness-assessment](/services/platform-readiness-assessment/)**.
-
-No per-CPU, per-VM, or per-core meter. Hardware + chosen Ænix tier.
+Ænix sells two things on top: subscription support for organizations running Cozystack themselves, from a published price list, and **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** as a scoped programme for regulated estates. Both are on the **[pricing page](/pricing/)**.
 
 <!-- /BLOCK 7 -->
 
@@ -213,6 +195,7 @@ No per-CPU, per-VM, or per-core meter. Hardware + chosen Ænix tier.
 </div>
 
 Or:
+- **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — the supported product for regulated estates
 - **[cozystack.io](https://cozystack.io)** — install and documentation
 - **[Private cloud consulting](/services/private-cloud-consulting/)** — engineering services
 - **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — assessment methodology
@@ -222,9 +205,6 @@ Or:
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack (CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices) and productizes it as Ænix Platform — Public Cloud Platform, Private Cloud Platform and AI Platform on one engine.*
 
-<!-- SEO: title "Cozystack — Open-Source Private Cloud Platform on Kubernetes | Ænix"
-Description (≤155): "Cozystack — open-source private cloud platform: KubeVirt VMs, managed databases, S3, GPU, multi-tenant. CNCF Project. Built by Ænix."
-Word count: ~1100.
--->
+

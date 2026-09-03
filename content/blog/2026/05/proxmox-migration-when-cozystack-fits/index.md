@@ -43,8 +43,6 @@ quiz:
       explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — Cozystack Public Cloud Platform is over-engineered for that scope. Managed services and multi-DC active/active are pressures that justify migration."
 ---
 
-**Long-form companion to the [Proxmox migration hub](/migration/proxmox/). For service providers, MSPs, and growing enterprises whose Proxmox VE deployment is hitting multi-tenancy, service-catalog, or scale ceilings — what a Proxmox-to-Cozystack migration looks like, and when staying on Proxmox is still the right call.**
-
 Proxmox VE is one of the most successful open-source virtualisation
 platforms of the last decade. Mature, easy to install, strong
 community, AGPLv3 with commercial subscription. We talk to a lot of
@@ -326,10 +324,3 @@ Poor fit:
   unit-economics walkthrough
 - **[Hosting provider platform modernization](/blog/2026/05/hosting-provider-platform-modernization/)** —
   modernisation pattern
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. We have shipped Proxmox-to-Cozystack
-migrations for growing hosting providers; specific named case studies
-remain confidential.*

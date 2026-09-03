@@ -44,7 +44,7 @@ faq:
 
 **Sie verantworten die AI/ML-Plattform, und die Zwänge häufen sich: GPU-Kosten und -Knappheit, Daten, die die Jurisdiktion nicht verlassen dürfen, und Kunden, die keinen US-Modell-Endpoint akzeptieren. Betreiben Sie Training und Inferenz auf eigenen GPUs, mandantenfähig, ohne Hyperscaler-Lock-in. Ænix liefert das schlüsselfertig oder baut es mit Ihnen.**
 
-> **Passt zu:** **[Souveräne KI](/de/loesungen/sovereign-ai/)** und **[Ænix Platform AI/ML](/de/produkte/)** für One-Click-GPU-Inferenz — oder einem Aufbauprojekt nach Ihrem Stack. Offener Kern: **[Cozystack](https://cozystack.io)**.
+> **Passt zu:** **[Souveräne KI](/de/loesungen/sovereign-ai/)** und **[Ænix AI Platform](/de/produkte/ai-platform/)** für One-Click-GPU-Inferenz — oder einem Aufbauprojekt nach Ihrem Stack. Offener Kern: **[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -76,7 +76,7 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ## Zwei Wege mit Ænix
 
-**1. Schlüsselfertige KI-Plattform.** Die [Ænix Platform AI/ML](/de/produkte/) ergänzt den mandantenfähigen Cozystack-Kern um GPU-Scheduling und One-Click-LLM/vLLM-Inferenz — Self-Service für Ihre Teams, auf Ihrer Hardware, mit Enterprise-SLA.
+**1. Schlüsselfertige KI-Plattform.** Die [Ænix AI Platform](/de/produkte/ai-platform/) ergänzt den mandantenfähigen Cozystack-Kern um GPU-Scheduling und One-Click-LLM/vLLM-Inferenz — Self-Service für Ihre Teams, auf Ihrer Hardware, mit Enterprise-SLA.
 
 **2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Engineering-Team** für ein KI-Plattform-Projekt — GPU-Topologie, Scheduling, Inferenz-Serving und [Souveräne-KI](/de/loesungen/sovereign-ai/)-Kontrollen, entworfen um Ihre Modelle und Daten. Siehe [Dienstleistungen](/de/dienstleistungen/).
 

@@ -1,6 +1,6 @@
 ---
 title: "Developer Self-Service — the cost of developer drag, and what an internal developer platform actually pays back"
-description: "Long-form companion to the Developer Self-Service page: time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
+description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
@@ -42,8 +42,6 @@ quiz:
         - { text: "Under 50 engineers in a single product team", correct: true }
       explanation: "The 'Poor fit' section lists under 50 engineers with a single product team (DevOps-only is the right fit) and hyperscaler-managed-meets-needs with no sovereignty pressure as the two poor-fit cases."
 ---
-
-**Long-form companion to the [Developer Self-Service landing](/products/private-cloud-platform/). For engineering leaders at 200-2,000-engineer organisations evaluating whether an Internal Developer Platform pays back — versus continuing on DevOps-only, ticket-driven infrastructure, or a half-built in-house platform.**
 
 The "should we invest in a platform team?" conversation tends to stall
 at one of two places: either the CFO can't see the economic case ("we
@@ -289,8 +287,3 @@ Engagement size: Project plus managed retainer, quoted per RFP.
   the six production IDP patterns
 - **[Internal developer portal vs platform](/blog/2026/05/internal-developer-portal-vs-platform/)** —
   Backstage's place in 2026
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution.*

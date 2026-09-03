@@ -1,6 +1,6 @@
 ---
 title: "How to build a sovereign cloud — playbook for EU and Central Asia in 2026"
-description: "Long-form companion to sovereign cloud builder services page. What it takes to build a sovereign cloud product that actually satisfies sovereignty mandates..."
+description: "What sovereignty actually means in practice, the frameworks that define it, and the architectural patterns for a sovereign cloud in the EU and Central Asia."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
@@ -42,8 +42,6 @@ quiz:
         - { text: "No real sovereignty guarantees, just marketing", correct: false }
       explanation: "Pattern 2: cloud-provider hardware + sovereign jurisdiction + customer-controlled keys + transparent supply chain. Operational simplification with substantive sovereignty. Right for most regulated enterprise workloads. Pattern 1 (full on-prem) is for the most sensitive workloads."
 ---
-
-**Long-form companion to [sovereign cloud builder services page](/services/sovereign-cloud-builder). What it takes to build a sovereign cloud product that actually satisfies sovereignty mandates — architecturally, operationally, and procurementally.**
 
 Sovereign cloud is no longer a niche topic. EU member-state mandates, Kazakhstan procurement-portal sovereignty clauses, and several APAC initiatives have made sovereignty a market category. Hyperscaler "sovereign" regions try to address this but face structural limitations (US-vendor relationship, control-plane dependencies).
 
@@ -125,8 +123,3 @@ Total elapsed: 12-30 months from project start to first customer GA, depending o
 Ænix builds sovereign cloud products end-to-end. EU + Central Asia teams. Open-source foundation. Procurement-ready documentation.
 
 For details see **[sovereign cloud builder services page](/services/sovereign-cloud-builder)**.
-
----
-
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
-

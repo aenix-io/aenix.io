@@ -39,35 +39,35 @@
 {
   "@context": "https://schema.org",
   "@type": "EducationEvent",
-  "name": {{ $name | jsonify }},
-  "description": {{ .Description | jsonify }},
+  "name": {{ $name }},
+  "description": {{ .Description }},
   "url": "{{ .Permalink }}",
-  "startDate": {{ $startISO | jsonify }},
-  "endDate": {{ $end | jsonify }},
+  "startDate": {{ $startISO }},
+  "endDate": {{ $end }},
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
   {{- with index $e "language" }}
-  "inLanguage": {{ . | jsonify }},
+  "inLanguage": {{ . }},
   {{- end }}
   {{- if $capacity }}
   "maximumAttendeeCapacity": {{ $capacity }},
   {{- end }}
   "location": {
     "@type": "Place",
-    "name": {{ or $venue $city | jsonify }},
+    "name": {{ or $venue $city }},
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": {{ $city | jsonify }},
-      "addressCountry": {{ $country | jsonify }}
+      "addressLocality": {{ $city }},
+      "addressCountry": {{ $country }}
     }
   },
   {{- if ne $price nil }}
   "offers": {
     "@type": "Offer",
-    "price": {{ $price | jsonify }},
+    "price": {{ $price }},
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
-    "url": {{ $reg | jsonify }}
+    "url": {{ $reg }}
   },
   {{- end }}
   "performer": {

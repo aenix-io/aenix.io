@@ -43,8 +43,6 @@ quiz:
       explanation: "PRA = tactical, used when strategic direction is settled, produces a 14-28 day remediation plan. Cloud Strategy = strategic, used when the direction is still in question, defines target architecture and substrate position. Most customers engage strategy first, then assessment, then implementation."
 ---
 
-**Long-form companion to the [cloud strategy consultancy services page](/services/cloud-strategy-consultancy/). For CIOs, CTOs, heads of cloud, and strategy directors evaluating what a vendor-neutral cloud advisory engagement actually delivers — versus Big-4 cloud advisory, hyperscaler-aligned consultancies, and in-house strategy teams.**
-
 "Cloud strategy" is a saturated term. Hyperscalers offer it (Azure
 Cloud Adoption Framework, AWS Migration Acceleration Programme, Google
 Cloud Adoption Framework). The Big-4 offer it (Deloitte, KPMG, EY,
@@ -277,11 +275,3 @@ engagement first, then assessment, then implementation.
   methodology detail for the tactical engagement
 - **[Cloud engineering disciplines in 2026](/blog/2026/05/cloud-engineering-disciplines-2026/)** —
   the seven cloud-engineering disciplines
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Our engineering team takes strategic
-engagements as a deliberate part of the business, not as a sales-
-funnel feeder. We will not deliver a strategy whose recommendation
-we wouldn't stand behind technically.*

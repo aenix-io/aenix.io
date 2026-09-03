@@ -56,7 +56,7 @@ Cozystack ist die Open-Source-Plattform, die für diese nächste Stufe gebaut wu
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/">Vergleich ansehen →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/proxmox-vs-vmware-vs-cozystack/">Vergleich ansehen →</a>
 </div>
 
 ---
@@ -114,7 +114,7 @@ Wenn Sie evaluieren, wo Proxmox für Ihren Use Case aufhört, die richtige Wahl 
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Proxmox vs VMware vs Cozystack — Vergleichs-Leitfaden](/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/)**
+- **[Proxmox vs VMware vs Cozystack — Vergleichs-Leitfaden](/de/blog/2026/05/proxmox-vs-vmware-vs-cozystack/)**
 - **[VMware-Alternative](/de/alternativen/vmware-alternative/)** — für Teams, die von VMware kommen
 - **[Private-Cloud-Consulting](/de/dienstleistungen/private-cloud-consulting/)** — breiterer Umfang
 - **[Cozystack](/de/produkte/cozystack/)** — die Plattform

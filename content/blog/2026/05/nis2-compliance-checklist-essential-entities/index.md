@@ -1,6 +1,6 @@
 ---
 title: "NIS2 cybersecurity requirements — checklist for essential and important entities"
-description: "Companion to NIS2 compliance checklist resource."
+description: "NIS2 Article 21 risk-management areas and Article 23 reporting deadlines mapped to architecture, with the findings that recur in essential-entity reviews."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -24,10 +24,10 @@ quiz:
       explanation: "Three-stage process: 24-hour early warning to CSIRT → 72-hour incident notification with severity assessment → 1-month final report with root cause and mitigation. Architecture must support detection and reporting at these timelines."
     - q: "Which finding does Aenix engagements identify as most-common in NIS2 readiness reviews?"
       options:
-        - { text: "Wrong CPU architecture (x86 vs ARM mismatch in workloads)", correct: false }
+        - { text: "MFA missing on privileged administrator accounts", correct: false }
         - { text: "Telemetry tuned for performance not security; BCP untested", correct: true }
-        - { text: "Lack of GPU compute (insufficient AI/ML inference capacity)", correct: false }
-      explanation: "Most-common findings: (1) detection telemetry tuned for performance not security (alert fatigue masks signals), (2) BCP plan documented but never tested, (3) supply-chain visible only to first hop, (4) incident-reporting process undocumented for the 24h timeline."
+        - { text: "Encryption at rest absent on production volumes", correct: false }
+      explanation: "Most-common findings: (1) detection telemetry tuned for performance not security (alert fatigue masks signals), (2) BCP plan documented but never tested, (3) supply-chain visible only to first hop, (4) incident-reporting process undocumented for the 24h timeline. Missing MFA and missing encryption at rest are genuine Article 21 control gaps, but they are the ones organisations usually have already closed — they are not what the readiness reviews keep turning up."
     - q: "When was the NIS2 transposition deadline?"
       options:
         - { text: "17 January 2025 (postponed Q1 deadline per Council)", correct: false }
@@ -41,8 +41,6 @@ quiz:
         - { text: "Joint walk-through: platform engineering + security + compliance", correct: true }
       explanation: "Walk through with platform engineering + security + compliance jointly. Identify gaps. Prioritize remediation. Joint review surfaces architecture-level decisions that pure compliance reviews miss."
 ---
-
-Companion to **[NIS2 compliance checklist resource](/resources/nis2-compliance-checklist)**.
 
 ## Why NIS2 timing matters
 
@@ -84,8 +82,3 @@ In Ænix NIS2 engagements:
 Walk through with platform engineering + security + compliance. Identify gaps. Prioritize remediation.
 
 For deeper engagement: **[NIS2 compliance services](/solutions/nis2-compliance/)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

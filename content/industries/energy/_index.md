@@ -114,12 +114,7 @@ faq:
 
 {{< clients >}}
 
-*Customer evidence — pilot in progress; named reference pending customer permissions.*
-
-Anonymous proof points:
-- A regional energy operator running pilot Cozystack deployment for grid-data analytics and AI-driven forecasting workloads
-- Architecture pattern: central control + regional aggregation + substation edge tier; air-gapped OT boundary; AI/ML cluster for forecasting
-- Adjacent energy-sector platform engagements scoped through procurement processes
+A pilot with a regional energy operator is running now — grid-data analytics and AI-driven forecasting — with the named reference pending customer permission. Adjacent energy-sector engagements are scoped through procurement processes.
 
 {{< quote-carousel >}}
 
@@ -175,6 +170,3 @@ Or read more:
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
 
-<!-- SEO: title "Cloud Platform for Energy Operators — NIS2-Aligned, Edge-Ready, Sovereign | Ænix"
-Description (≤155): "Cozystack for energy: NIS2-aligned platform, multi-site (central + regional + substation edge), AI for grid forecasting, air-gapped OT boundary."
-Word count: ~1100. -->

@@ -1,6 +1,6 @@
 ---
 title: "Case studies"
-description: "Five Aenix deployments written up with numbers: GPU repatriation, Proxmox consolidation, a sovereign public cloud, GPU bursting, an AI platform as installer."
+description: "Nine Aenix deployments written up with numbers: GPU repatriation, Proxmox consolidation, a sovereign public cloud, a bank private cloud, GPU bursting, an AI platform as installer."
 hero_subtitle: "Real Aenix Platform deployments across hosting, AI, and academia"
 language: "en"
 ---
@@ -85,7 +85,7 @@ These customers use Ænix Public Cloud Platform to deliver multi-tenant cloud pr
 
 ### Tier-1 European bank engagements (NDA until mid-2027)
 
-Multi-million-euro Ænix Private Cloud Platform deployments delivering DORA-aligned sovereign cloud workloads. Customer-controlled hardware, customer-managed keys, audit-ready logging, multi-tenant isolation aligned with risk classification.
+Multi-million-euro Ænix Private Cloud Platform deployments supporting sovereign cloud workloads inside DORA scope. Customer-owned hardware, encryption keys held by the customer, API audit logging routed and retained by the customer, multi-tenant isolation aligned with risk classification. The DORA obligations remain the bank's; the platform supplies controls it can evidence.
 
 **Status:** Multiple engagements active. **First named case studies expected mid-2027** as NDAs expire.
 

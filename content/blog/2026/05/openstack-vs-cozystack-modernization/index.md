@@ -1,6 +1,6 @@
 ---
 title: "OpenStack vs Cozystack — modernization options for OpenStack operators in 2026"
-description: "This is the long-form companion to our OpenStack alternative page. It walks through OpenStack's current state, the architectural shift toward..."
+description: "Where OpenStack still wins, where the operational pressure comes from, and the modernization paths available to OpenStack-trained teams."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -43,8 +43,6 @@ quiz:
         - { text: "5+ years elapsed (long-tail parallel-platform operation)", correct: false }
       explanation: "For mid-size (50-500 hosts): 14-28 day assessment + 1-3 months Cozystack foundation + 4-12 months migration cohorts + OpenStack decommission. Total: 6-15 months depending on scale."
 ---
-
-**This is the long-form companion to our [OpenStack alternative page](/alternatives/openstack-alternative). It walks through OpenStack's current state, the architectural shift toward Kubernetes-native platforms, and the realistic modernization paths for OpenStack operators in 2026.**
 
 OpenStack remains widely deployed in telecom and government infrastructure. It also faces structural pressure: shrinking pool of OpenStack engineers, operational complexity that grows with deployment age, and competition from Kubernetes-native alternatives that didn't exist when OpenStack was designed.
 
@@ -110,12 +108,3 @@ For mid-size (50-500 hosts) OpenStack to Cozystack:
 4. **OpenStack decommission** — staged as cohorts complete.
 
 Total elapsed: 6-15 months depending on scale.
-
-## How to start
-
-If your OpenStack deployment is hitting modernization triggers, the structured next step is an assessment. See **[OpenStack alternative page](/alternatives/openstack-alternative)** for engagement details and **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** for methodology.
-
----
-
-*Ænix is the team behind Cozystack.*
-

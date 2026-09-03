@@ -1,6 +1,6 @@
 ---
 title: "Ænix Produkte"
-description: "Aenix-Produkte — Ænix Platform (schlüsselfertige kommerzielle Cloud-in-a-Box, zwei Plattforms), Cozystack (Open-Source CNCF-Projekt), Kubernetes Deep Dive Kurs."
+description: "Aenix-Produkte — Ænix Platform (schlüsselfertige kommerzielle Cloud-in-a-Box, drei Plattformen), Cozystack (Open-Source CNCF-Projekt), Kubernetes Deep Dive Kurs."
 hero_subtitle: "Schlüsselfertige Plattform, Open-Source-Cozystack und Experten-Training"
 language: "de"
 page_type: "flag-page"
@@ -11,7 +11,7 @@ faq:
   - q: "Was ist der Unterschied zwischen Ænix Platform und Cozystack?"
     a: "Cozystack ist die Open-Source-Foundation — ein CNCF-Projekt unter Apache 2.0, das jeder herunterladen, modifizieren und betreiben kann. Ænix Platform ist die kommerzielle turnkey-Version, die Aenix verkauft, mit Hosting-Panel, vollständigem Billing, Portalen, Payments, produktisiertem Installer, Enterprise-SLA und Plattform-spezifischen Features pro Buyer-Profil (Public Cloud / Private Cloud / AI)."
   - q: "Welche drei Produkte bietet Aenix an?"
-    a: "Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen."
+    a: "Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in drei Plattformen: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen."
   - q: "Ist Cozystack Open Source?"
     a: "Ja. Cozystack ist eine Open-Source Kubernetes-native Multi-Tenant Cloud-Plattform, ein CNCF-Projekt unter Apache 2.0 — jeder kann es betreiben. Erstellt und gewartet von Aenix."
   - q: "Was ist der Kubernetes Deep Dive Kurs?"
@@ -20,7 +20,7 @@ aliases:
   - /de/produkte/aenix-platform/
 ---
 
-**Drei Produkte, unterschiedliche Zielgruppen. Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen.**
+**Drei Produkte, unterschiedliche Zielgruppen. Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in drei Plattformen: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen.**
 
 ---
 
@@ -29,7 +29,7 @@ aliases:
 
 ## Ænix Platform
 
-**Turnkey kommerzielle Cloud-in-a-Box. Basiert auf Open-Source Cozystack. Zwei Plattforms: eine, wenn Sie Cloud verkaufen, eine, wenn Sie sie selbst betreiben. Hosting-Panel, Billing, Portale, Payments, Support — installieren, Nutzer einbinden, Betrieb starten.**
+**Turnkey kommerzielle Cloud-in-a-Box. Basiert auf Open-Source Cozystack. Drei Plattformen: eine, wenn Sie Cloud verkaufen, eine, wenn Sie sie selbst betreiben. Hosting-Panel, Billing, Portale, Payments, Support — installieren, Nutzer einbinden, Betrieb starten.**
 
 | Plattform | Für | Was unterscheidet |
 |---|---|---|
@@ -86,7 +86,7 @@ Wenn Sie eine turnkey Cloud (Billing, Portale, Payments, Support, produktisierte
 <div class="diagram">
 <div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Open Source</span><span>CNCF, Apache 2.0</span><span>Jeder kann es betreiben</span></div></div>
 <div class="diagram__conn">produktisiert als</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Kommerziell</span><span>Zwei Plattforms + zwei Module</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Kommerziell</span><span>Drei Plattformen + zwei Module</span></div></div>
 <div class="diagram__conn">vermittelt durch</div>
 <div class="diagram__node"><b>Kubernetes Deep Dive Kurs</b><div class="diagram__chips"><span>Bildungsprodukt</span><span>Für Engineers</span></div></div>
 </div>
@@ -99,7 +99,7 @@ Wenn Sie eine turnkey Cloud (Billing, Portale, Payments, Support, produktisierte
 - **Public-Cloud-Betreiber / große Bank / großer Telco:** [Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)
 - **Hosting-Anbieter / MSP / regionale Cloud:** [Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)
 - **Regulierte Bank / Versicherung / öffentlicher Sektor:** [Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)
-- **Produkt- / SaaS-Team:** [the developer self-service layer of Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)
+- **Produkt- / SaaS-Team:** [Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)
 - **KI-lastig / GPU-lastig:** [Ænix AI Platform](/de/produkte/ai-platform/)
 - **Engineer, der die Tech evaluiert:** [Cozystack](https://cozystack.io)
 - **Engineer, der den Stack lernen möchte:** [Kubernetes Deep Dive Kurs](/de/kubernetes-deep-dive/)

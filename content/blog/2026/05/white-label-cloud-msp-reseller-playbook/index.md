@@ -1,6 +1,6 @@
 ---
 title: "White-label cloud playbook — for MSPs and resellers in 2026"
-description: "Companion to white label cloud services page."
+description: "Architecture and reseller economics for launching a white-label cloud under your own brand, and how the engagement is structured."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,8 +42,6 @@ quiz:
       explanation: "Branded Cozystack Dashboard: MSP can customize colors, logo, domain, and service catalog options. MSPs can also curate which services to expose to customers (e.g., hide Kafka if MSP doesn't support it)."
 ---
 
-Companion to **[white label cloud services page](/services/white-label-cloud)**.
-
 ## Why white-label cloud matters for MSPs
 
 MSPs have customer relationships hyperscalers can't easily replicate. They lack the cloud product to monetize those relationships at scale. White-label cloud — branded as MSP's product, running on shared or dedicated infrastructure — bridges this.
@@ -73,12 +71,3 @@ Realistic to break even on first 50-100 customers; positive economics after that
 - **4-8 week discovery + product-readiness**
 - **4-12 month build**
 - **Optional managed-services**
-
-## How to start
-
-For details see **[white label cloud services](/services/white-label-cloud)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

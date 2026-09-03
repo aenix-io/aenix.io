@@ -25,7 +25,7 @@ quick_facts:
   - label: "Engagement timeline"
     value: "Free 30-minute discovery, 14-28 day assessment, then a 3-12 month build, with optional ongoing managed operations."
   - label: "Technology stack"
-    value: "Cozystack on Talos by default; KubeVirt for VMs and containers on one Kubernetes API; Cilium (eBPF) networking; LINSTOR/DRBD (or Ceph) storage; Tenant CRD multi-tenancy."
+    value: "Cozystack on Talos by default; KubeVirt for VMs and containers on one Kubernetes API; Cilium (eBPF) networking; LINSTOR/DRBD (Piraeus) storage; Tenant CRD multi-tenancy."
   - label: "Ownership"
     value: "The platform is built on open source and operated by the customer's own team after knowledge transfer — the cloud is theirs, not Aenix's."
 
@@ -37,7 +37,7 @@ faq:
   - q: "Is the private cloud locked to Aenix?"
     a: "No. It is built on Cozystack, an open-source CNCF project under Apache 2.0 with no per-CPU or per-core licensing. After knowledge transfer your own platform team operates the cloud. Aenix has no hyperscaler partnership economics shaping the architecture."
   - q: "What technology does Aenix use to build a private cloud?"
-    a: "Cozystack on Talos by default, with KubeVirt running virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, and LINSTOR/DRBD (or Ceph) for storage. Multi-tenancy, RBAC, quotas, and audit are handled through the Tenant CRD."
+    a: "Cozystack on Talos by default, with KubeVirt running virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, and LINSTOR/DRBD via Piraeus for storage. Multi-tenancy, RBAC, quotas, and audit are handled through the Tenant CRD."
   - q: "When does building a private cloud make sense versus staying on public cloud?"
     a: "It fits when you have or are building a platform engineering function, a specific trigger like a VMware exit or sovereignty mandate, sustained workloads or AI/GPU at scale where the economics favor dedicated infrastructure, and a team that can operate it after handover. The assessment phase clarifies fit before any build begins."
 
@@ -91,7 +91,7 @@ If you're not sure on any of these, the assessment phase clarifies before buildi
 
 - **Hardware** — sizing, vendor selection, datacenter / colocation arrangements.
 - **Platform layer** — Cozystack on Talos (default), or extension of existing Kubernetes.
-- **Storage** — LINSTOR (default) or Ceph; capacity planning; backup architecture.
+- **Storage** — LINSTOR/DRBD via Piraeus; capacity planning; backup architecture.
 - **Network** — Cilium, BGP fabric, MetalLB, ingress.
 - **Multi-tenancy** — Tenant CRD, RBAC, quotas, audit.
 - **Operations** — observability stack, runbooks, on-call, incident response.
@@ -114,26 +114,10 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ---
 
-## Pricing
-
-<div class="pricing-cards-2">
-
-### Assessment (14-28 days)
-**On request**
-
-### Build engagement (3-12 months)
-**On request**
-
-</div>
-
----
-
 ## Why Ænix
 
-- **Cozystack contributors.** We built and operate the platform.
-- **No hyperscaler bias.** No partnership economics shape recommendations.
-- **EU + Central Asia teams.** Time-zone friendly.
-- **Open-source platform foundation** — the cloud is yours, not ours.
+- **The cloud is yours, not ours.** The foundation is Apache 2.0 with no per-core licensing, and the handover is a deliverable with named in-house owners, not a hope.
+- **We built the foundation.** Cozystack is our code, running in production with service providers, banks, telecom and AI operators.
 
 ---
 
@@ -152,5 +136,3 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Build a Private Cloud — Engineers Who've Shipped This | Ænix"
-Word count: ~700. -->

@@ -3,6 +3,7 @@ title: "Cozystack vs … — direkte Vergleiche"
 description: "Architektonische Vergleiche von Cozystack mit VMware, OpenStack, OpenShift Virtualization und Proxmox VE — für Plattform-Engineers, die 2026 entscheiden."
 hero_subtitle: "Cozystack gegen die Plattformen, die es ersetzt"
 language: "de"
+hreflang_en: /compare/
 ---
 
 Direkte Side-by-Side-Vergleiche von Cozystack mit den Plattformen,

@@ -39,7 +39,7 @@ faq:
   - q: "How long does a sovereign cloud build take?"
     a: "Engagements start with a discovery and procurement-readiness assessment over 4-8 weeks, followed by a Phase 2 build of 8-24 months covering the platform, sovereignty controls, and procurement-ready documentation. An optional Phase 3 provides managed operation under regulator-aligned governance."
   - q: "Which sovereignty frameworks and procurement channels are supported?"
-    a: "Specific requirements such as BSI C5, SecNumCloud, and EUCS are addressed during discovery. Aenix accepts RFI/RFP through EU TED and national e-procurement portals, and through Kazakhstan platforms including goszakup.gov.kz, mitwork.kz, zakup.sk.kz, and the Единая платформа закупок; other jurisdictions are handled per case."
+    a: "Specific requirements such as BSI C5, SecNumCloud, and EUCS are addressed during discovery. Aenix accepts RFI/RFP through EU TED and national e-procurement portals, and through Kazakhstan platforms including goszakup.gov.kz, mitwork.kz, zakup.sk.kz, and the Unified Procurement Platform; other jurisdictions are handled per case."
   - q: "What is the technical foundation of the platform?"
     a: "The product is built on Cozystack, which runs virtual machines via KubeVirt and containers on a single Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. The Private Cloud Platform adds strict customer-controlled-keys and air-gap support for the most sensitive workloads."
 ---
@@ -113,7 +113,7 @@ For specific sovereign-cloud requirements (BSI C5, SecNumCloud, EUCS) — discus
 
 Ænix accepts RFI / RFP through:
 - **EU member states** — TED, national e-procurement portals
-- **Kazakhstan** — goszakup.gov.kz, mitwork.kz, zakup.sk.kz, Единая платформа закупок
+- **Kazakhstan** — goszakup.gov.kz, mitwork.kz, zakup.sk.kz, Unified Procurement Platform
 - **Other jurisdictions** — discussed per case
 
 ---
@@ -131,5 +131,3 @@ For specific sovereign-cloud requirements (BSI C5, SecNumCloud, EUCS) — discus
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!-- SEO: title "Sovereign Cloud Builder — Design and Ship a Sovereign Cloud Product | Ænix"
-Word count: ~600. -->

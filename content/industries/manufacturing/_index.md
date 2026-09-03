@@ -11,7 +11,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **A cloud platform for manufacturing is a unified compute foundation that runs Industry 4.0 and IT/OT workloads consistently across HQ, regional sites, and production-floor edge under one operational model. It serves manufacturers in the EU, DACH, and Central Asia that must meet NIS2 compliance (manufacturing of critical products is in scope), protect industrial IP such as design data and formulations, and run AI for quality control and predictive maintenance. Aenix builds these platforms on Cozystack, an open-source CNCF project licensed under Apache 2.0 that runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-based multi-tenancy. Aenix also offers Ænix Platform, a productized commercial edition, plus implementation and support services.**
+  **A cloud platform for manufacturing is a unified compute foundation that runs Industry 4.0 and IT/OT workloads consistently across HQ, regional sites, and production-floor edge under one operational model. It serves manufacturers in the EU, DACH, and Central Asia that must meet NIS2 compliance (manufacturing of critical products is in scope), protect industrial IP such as design data and formulations, and run AI for quality control and predictive maintenance. Aenix builds these platforms on Cozystack, an open-source CNCF project licensed under Apache 2.0 that runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-based multi-tenancy. Aenix also offers the Ænix Private Cloud Platform, the productized commercial form of that stack, plus implementation and support services.**
 
 quick_facts:
   - label: "What it is"
@@ -26,7 +26,7 @@ quick_facts:
     value: "NIS2 — manufacturing of critical products falls within scope"
   - label: "Key capabilities"
     value: "Air-gapped deployment for sensitive OT workloads, multi-site edge architecture, multi-tenancy for cross-BU and joint-venture separation, AI infrastructure for quality control and predictive maintenance"
-  - label: "Recommended edition"
+  - label: "Recommended platform"
     value: "Ænix Private Cloud Platform for multi-DC and edge industrial IT/OT"
 
 faq:
@@ -114,10 +114,7 @@ The IEC 62443 framing follows from that placement: the platform is one or more z
 
 {{< clients >}}
 
-*Customer evidence — Ænix to populate. Anonymous proof points:*
-- A multi-site manufacturer running unified platform across HQ + regional production sites
-- An automotive supplier with industrial-IP sovereignty requirements
-- A precision engineering firm with AI-driven quality control on private LLM
+Manufacturing engagements are NDA-protected; no named industrial reference is public yet. The closest written-up deployment with the same structural pattern — multi-site, tenant-isolated, operated by the customer — is the [sovereign public cloud case study](/case-studies/sovereign-public-cloud/).
 
 ---
 
@@ -134,4 +131,3 @@ The IEC 62443 framing follows from that placement: the platform is one or more z
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- Word count: ~500. -->

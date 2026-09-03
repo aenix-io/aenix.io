@@ -4,7 +4,6 @@ description: "OpenStack is mature, broad, and proven at telco / government scale
 related_pages:
   - /alternatives/vmware-alternative
   - /products/public-cloud-platform/
-  - /products/public-cloud-platform/
   - /products/cozystack
   - /services/private-cloud-consulting
 language: "en"
@@ -22,7 +21,7 @@ quick_facts:
   - label: "Best for"
     value: "Service providers, regulated multi-tenant environments, and modern greenfield projects; not large-telco teams with deep OpenStack expertise."
   - label: "Operational footprint"
-    value: "5-15 Kubernetes operators versus OpenStack's 50-100+ services; VMs via KubeVirt, networking via Cilium (eBPF), storage via LINSTOR or Ceph, multi-tenancy via Tenant CRD."
+    value: "5-15 Kubernetes operators versus OpenStack's 50-100+ service processes; VMs via KubeVirt, networking via Cilium (eBPF), storage via LINSTOR/DRBD (an existing Ceph cluster can stay in place), multi-tenancy via Tenant CRD."
   - label: "Migration timeline"
     value: "Typically 4-12 months for a mid-size deployment (Keystone to Tenant CRD, Neutron to Cilium, Cinder to LINSTOR (DRBD))."
   - label: "Commercial offering"
@@ -46,7 +45,7 @@ faq:
 
 Cozystack is the open-source alternative for organizations that want OpenStack's open-source-and-multi-tenant guarantees with a lighter operational footprint. Same-license (Apache 2.0), Kubernetes-native foundation, fewer moving parts.
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers and regional clouds modernizing from OpenStack; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators consolidating OpenStack at scale.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — hosting providers and regional clouds modernizing from OpenStack, and large operators consolidating OpenStack onto a multi-region control plane.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
@@ -57,13 +56,22 @@ Cozystack is the open-source alternative for organizations that want OpenStack's
 
 ## When OpenStack stops being the right answer
 
-- **Engineer hiring is hard** — OpenStack expertise is shrinking; Kubernetes expertise is plentiful.
+- **Engineer hiring is hard** — OpenStack operators are specialists and scarce on the market; Kubernetes expertise is plentiful.
 - **Operational footprint exceeds value** — you're running 30+ OpenStack components when 5-10 Kubernetes operators would do.
 - **Workload portfolio is mostly modern** — most workloads are Kubernetes-friendly; legacy VMs are minority.
 - **You're maintaining your own forks / patches** — vendor-distro version is too far behind upstream.
 - **Greenfield project** — new deployment doesn't need OpenStack's specific telco-scale features.
 
-If your scale or use case genuinely requires OpenStack (large-telco, deep OpenStack expertise, telco-scale features) — keep OpenStack. The honest engagement says so.
+### Where OpenStack is genuinely better
+
+Breadth, and it is not a small thing:
+
+- **Ironic.** Bare-metal provisioning as a first-class cloud service, with inspection, cleaning and RAID configuration. Cozystack has no equivalent. If bare metal is a product you sell, this alone can end the conversation.
+- **Octavia, Manila, Barbican, Designate, Swift.** Load balancing, shared filesystems, key management, DNS and object storage as tenant APIs. Cozystack reaches some of those outcomes with different primitives and does not reach others at all.
+- **Telco and NFV.** SR-IOV, DPDK, huge pages, CPU pinning and NUMA-aware placement are production-hardened in Nova, and VNF vendors certify against OpenStack. Certification outweighs technology here.
+- **Fifteen years of scale evidence** and a genuine choice of commercially supported distributions. Cozystack is younger; weigh that honestly.
+
+If you have a staffed operations team, an exercised upgrade path, and real use of that wider surface — keep OpenStack. The honest engagement says so, and this one does.
 
 ---
 
@@ -76,10 +84,10 @@ If your scale or use case genuinely requires OpenStack (large-telco, deep OpenSt
 | **License** | Apache 2.0 | Apache 2.0 |
 | **Foundation** | Multiple Python projects (Nova, Neutron, etc.) | Kubernetes + KubeVirt + Cilium |
 | **Multi-tenancy** | Keystone projects | Tenant CRD |
-| **Operational footprint** | Heavy (50-100+ services) | Light (5-15 operators) |
-| **Engineer availability** | Shrinking | Kubernetes-large |
+| **Operational footprint** | 50-100+ service processes across a dozen projects | 5-15 Kubernetes operators |
+| **Engineer availability** | Specialist, hard to hire in most markets | Kubernetes-large |
 | **VM workloads** | Nova + KVM | KubeVirt |
-| **Container workloads** | Magnum (separate) | Native |
+| **Container workloads** | Magnum or Kubernetes on Nova VMs | Native, same control plane |
 | **Best for** | Large telco / government / OpenStack-fluent teams | Service providers, regulated multi-tenant, modern greenfield |
 
 </div></div>
@@ -88,7 +96,7 @@ If your scale or use case genuinely requires OpenStack (large-telco, deep OpenSt
 
 ## Migration from OpenStack to Cozystack
 
-VM image migration: straightforward (KVM → KubeVirt). Tenant model: re-architect from Keystone projects to Tenant CRD. Network: Neutron → Cilium. Storage: Cinder → LINSTOR or Ceph (often Ceph stays). 
+VM image migration: straightforward (KVM → KubeVirt). Tenant model: re-architect from Keystone projects to Tenant CRD. Network: Neutron → Cilium. Storage: Cinder → LINSTOR/DRBD, or an existing Ceph cluster stays where it is and the platform consumes it. 
 
 Typical migration: 4-12 months for mid-size deployment.
 
@@ -118,4 +126,4 @@ Typical migration: 4-12 months for mid-size deployment.
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
 <!-- SEO: title "OpenStack Alternative — When Operational Complexity Stops Paying | Ænix"
-Word count: ~600. -->
+-->

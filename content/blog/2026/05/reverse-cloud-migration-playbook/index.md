@@ -1,6 +1,6 @@
 ---
 title: "Reverse cloud migration — a practical playbook for leaving public cloud in 2026"
-description: "Cloud repatriation is no longer a contrarian position. The Broadcom Private Cloud Outlook 2025 reports that 69% of organizations are evaluating repatriation..."
+description: "A five-step cloud repatriation playbook, the pitfalls that recur, when not to repatriate, and how long a realistic move actually takes."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -44,8 +44,6 @@ quiz:
         - { text: "Choosing the wrong cutover season", correct: false }
       explanation: "A repatriation measured purely on cost reduction tends to under-invest in the platform work that makes the cost reduction sustainable. Two years in, the team has saved money but lost velocity — and that triggers a partial reverse-repatriation back into the hyperscaler."
 ---
-
-**Cloud repatriation is no longer a contrarian position. The Broadcom Private Cloud Outlook 2025 reports that 69% of organizations are evaluating repatriation and 53% now prioritize private cloud for new workloads. This is the practical playbook for the reverse cloud migration — what to evaluate, what to build, what to move first, and where most teams get it wrong. It's the long-form companion to our [cloud repatriation services page](/solutions/cloud-repatriation/), where the engagement that runs this work is described.**
 
 Most coverage of cloud repatriation is either ideological ("public cloud was always too expensive") or vendor-led ("buy our private-cloud appliance"). Neither helps the platform engineer or infrastructure lead who has to translate a board-level decision into running systems. The work below is what we actually do during an Ænix repatriation engagement.
 
@@ -237,8 +235,3 @@ If repatriation is on the table for your organization, the structured next step 
 - **[Cloud cost optimization](/solutions/cloud-cost-optimization/)** — adjacent FinOps trigger
 - **[Data sovereignty](/solutions/data-sovereignty/)** — regulatory side of the same shift
 - **[Cozystack](/products/cozystack/)** — the platform we typically recommend as repatriation destination
-
----
-
-*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-repatriation engagements and platform engineering programs across the EU, DACH, and Central Asia.*
-

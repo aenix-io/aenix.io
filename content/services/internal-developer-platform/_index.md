@@ -141,7 +141,6 @@ Without explicit headcount and protected golden-path work time, the platform tea
 
 </div>
 
-These failure modes are predictable. Engagement structure deliberately prevents each.
 
 </div>
 </div>
@@ -170,10 +169,8 @@ Engagements typically start with Phase 1; Phase 2 sequencing emerges from assess
 
 ## Why Ænix specifically
 
-- **Multi-tenant platforms are what we run.** Cozystack is in production with service providers and regulated enterprises operating multi-tenant clouds. The platform patterns we recommend are calibrated against running systems.
-- **Backstage is a tool, not a destination.** We use Backstage where it serves the customer; we don't sell it. The decision is calibrated against your team's operational maturity, not against vendor incentives.
-- **Open-source foundation.** [Cozystack](/products/cozystack/) is an open-source CNCF Project. The IDP we build is one you own — no vendor-roadmap lock-in.
-- **EU + Central Asia teams.** Time-zone-friendly for European customers; aligned with regulatory frameworks.
+- **Backstage is a tool, not a destination.** We don't sell it, so we can tell you when a catalog is the wrong first move and a documented golden path is the right one.
+- **Multi-tenancy is the part that is hard, and it is what we run.** [Cozystack](/products/cozystack/) is in production with service providers and regulated enterprises operating multi-tenant clouds; the tenancy model we propose is one we operate.
 
 <!-- /BLOCK 6 -->
 
@@ -205,7 +202,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 We've built internal developer platforms for service providers running multi-tenant clouds, regulated enterprises with strong sovereignty requirements, AI/GPU operators with multi-team data-science access, and telecom operators consolidating multiple legacy environments.
 
 {{< quote-carousel >}}
-Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
+The logos above are production Ænix Public Cloud Platform deployments. Named references for the NDA-covered engagements are shared on the discovery call.
 <!-- /BLOCK 8 -->
 
 ---
@@ -214,19 +211,7 @@ Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby 
 
 ## Pricing
 
-<div class="pricing-cards-2">
-
-### Assessment (14-28 days)
-Fixed-price. Written deliverable, target IDP architecture, Phase 2 roadmap.
-**On request**
-
-### Build / Managed engagement
-Time-and-materials or fixed-scope. Phase 2 build typically 3-9 months elapsed.
-**On request**
-
-</div>
-
-If Phase 2 follows assessment, assessment cost credited against implementation subject to scope.
+The assessment is fixed-price, quoted before it starts, and delivers a written target IDP architecture and a Phase 2 roadmap. The build is time-and-materials or fixed-scope. If Phase 2 follows, the assessment cost is credited against it, subject to scope.
 
 <!-- /BLOCK 9 -->
 
@@ -261,8 +246,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO: title "Internal Developer Platform Services — Built for Adoption | Ænix"
-Description (≤155): "Internal developer platform engagement: opinionated golden paths, multi-tenant foundation, knowledge transfer. Open-source foundation, no Backstage lock-in."
-Word count: ~1080.
--->

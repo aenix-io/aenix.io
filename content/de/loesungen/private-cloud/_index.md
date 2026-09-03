@@ -5,7 +5,7 @@ related_pages: ["/de/alternativen/vmware-alternative", "/de/loesungen/data-sover
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
-hreflang_en: /products/private-cloud-platform/
+hreflang_en: /solutions/private-cloud-platform/
 direct_answer: |
   **Eine Private Cloud auf Basis von Cozystack ist eine Kubernetes-native Plattform, die VMs und Container über eine einzige API auf eigener Hardware betreibt — gedacht für Service Provider, regulierte Unternehmen und souveräne Cloud-Builder im DACH-Raum. Cozystack bündelt KubeVirt-Virtualisierung, Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, eine mandantenfähige Steuerungsebene über das Tenant-CRD sowie verwaltete Datenbanken, S3 und GPU-as-a-Service. Es ist ein CNCF-Sandbox-Projekt unter Apache-2.0-Lizenz und ersetzt den VMware-Cloud-Foundation-Stack ohne CPU- oder Core-basierte Lizenzierung und ohne Vendor-Lock-in. Aenix, das Team hinter Cozystack, liefert die produktisierte Ænix Platform plus Support und professionelle Dienstleistungen.**
 quick_facts:
@@ -221,7 +221,7 @@ Kein Per-CPU-, Per-VM- oder Per-Core-Meter. Hardware + gewählter Ænix-Tier.
 <!-- BLOCK 8: FAQ -->
 
 
-**Weitere Fragen?** Siehe den **[Private-Cloud-Anbieter-Vergleich](/blog/2026/05/private-cloud-providers-comparison/)** oder besuchen Sie **[cozystack.io](https://cozystack.io)**.
+**Weitere Fragen?** Siehe den **[Private-Cloud-Anbieter-Vergleich](/de/blog/2026/05/private-cloud-anbieter-vergleich/)** oder besuchen Sie **[cozystack.io](https://cozystack.io)**.
 
 <!-- /BLOCK 8 -->
 
@@ -240,7 +240,7 @@ Oder:
 - **[cozystack.io](https://cozystack.io)** — Installation und Dokumentation
 - **[Private Cloud Consulting](/de/dienstleistungen/private-cloud-consulting/)** — Engineering-Services
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Assessment-Methodik
-- **[Private-Cloud-Anbieter-Vergleich](/blog/2026/05/private-cloud-providers-comparison/)** — vollständiger Leitfaden
+- **[Private-Cloud-Anbieter-Vergleich](/de/blog/2026/05/private-cloud-anbieter-vergleich/)** — vollständiger Leitfaden
 
 <!-- /BLOCK 9 -->
 

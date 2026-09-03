@@ -8,6 +8,7 @@ related_pages:
   - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
+hreflang_en: /services/enterprise-platform-engineering/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
@@ -26,7 +27,7 @@ quick_facts:
   - label: "Abgrenzung"
     value: "Anderer Scope als Platform Engineering für ein einzelnes Team — Governance, Audit und Operations-at-Scale stehen im Zentrum"
   - label: "Engagement"
-    value: "Ænix Platform Enterprise/Developer Self-Service plus Implementierungs- und Betriebs-Services; Service-Stufen ab 1.250 $/Monat (Basic, 10 Nodes)"
+    value: "Ænix Private Cloud Platform samt Developer-Self-Service-Schicht plus Implementierungs- und Betriebs-Services; Service-Stufen ab 1.250 $/Monat (Basic, 10 Nodes)"
 faq:
   - q: "Worin unterscheidet sich Enterprise Platform Engineering von normalem Platform Engineering?"
     a: "Der Scope ist breiter: Statt einer Plattform für ein Team geht es um geteilte Plattformen für mehrere Produkt-Teams. Multi-Tenancy, Governance, Audit und Multi-Region-Operations sind nicht verhandelbar. Für kleineren Scope eignen sich die Platform Engineering Services."
@@ -91,4 +92,4 @@ Für kleineren Scope siehe **[Platform Engineering Services](/de/dienstleistunge
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

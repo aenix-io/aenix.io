@@ -3,6 +3,7 @@ title: "Ihr Download ist bereit — DORA-Compliance Cloud-Architektur-Checkliste
 description: "Laden Sie Ihre Kopie des DORA-Compliance Cloud-Architektur-Checkliste von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
+hreflang_en: /resources/dora-compliance-checklist/thank-you/
 page_type: "flag-page"
 hide_closing_cta: true
 ---

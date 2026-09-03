@@ -1,6 +1,6 @@
 ---
 title: "Cloud-native research and teaching infrastructure — what universities actually need in 2026"
-description: "This is the long-form companion to our universities industry page. It walks through what cloud-native research and teaching infrastructure actually looks..."
+description: "Architecture patterns for university research and teaching infrastructure: the three missions, GPU scheduling for labs, and the pitfalls that recur."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -44,11 +44,7 @@ quiz:
       explanation: "University IT budgets don't scale with compute demand. Open-source platforms with optional commercial support are sustainable economically; per-CPU subscription pricing typical of commercial alternatives doesn't fit university economics."
 ---
 
-**This is the long-form companion to our [universities industry page](/industries/universities). It walks through what cloud-native research and teaching infrastructure actually looks like in 2026 — for the IT directors, research-computing leads, principal investigators, and faculty curriculum committees making decisions.**
-
 University and research-institute IT in 2026 sits at a difficult intersection: rising research computing demand (especially AI/ML), reproducibility mandates (Plan S, FAIR, Horizon Europe), curriculum needs for cloud-native technologies, multi-stakeholder governance, and budgets that don't grow at the rate of compute demand. Cloud-native platforms — open-source, Kubernetes-native, multi-tenant — increasingly answer all of these simultaneously, where pre-cloud infrastructure had to be specialized per use case.
-
-This article covers what's actually being deployed and why.
 
 ## The three missions revisited
 
@@ -174,12 +170,3 @@ Building research infrastructure without reproducibility patterns from day 1 mea
 - **Academic-friendly support tiers** — discounted commercial support for academic deployments
 
 For details see **[universities industry page](/industries/universities)**.
-
-## How to start
-
-If your university or research institute fits the profile, the structured next step is a focused assessment. Ænix runs **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with academic-context emphasis.
-
----
-
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia.*
-

@@ -134,7 +134,6 @@ Engagement ends, consultants leave, customer team can't operate what was built. 
 
 </div>
 
-These failure modes are predictable. Engagement structure deliberately prevents each.
 
 <!-- /BLOCK 4 -->
 
@@ -170,10 +169,8 @@ Most engagements start with assessment.
 
 ## Why Ænix specifically
 
-- **We operate platforms in production.** Cozystack is deployed at customer sites running real workloads. The decisions in our engagements are calibrated against running systems, not against tooling reviews.
-- **Senior engineers, no junior bait-and-switch.** The engineers in your engagement are the same engineers who built and operate Cozystack.
-- **Open-source foundation.** [Cozystack](/products/cozystack/) is an open-source CNCF Project. The DevOps practices we install are sustainable independently of our involvement.
-- **No partner-channel bias.** We don't have hyperscaler partnerships shaping our recommendations. We don't sell licensed tooling.
+- **The engineers who sell it do it.** The people in your engagement are the ones who build and operate [Cozystack](/products/cozystack/). There is no partner tier below them to hand the work to.
+- **We sell no licensed tooling and hold no hyperscaler partnership.** So "keep Jenkins" and "your observability stack is fine" are answers we can afford to give.
 
 <!-- /BLOCK 6 -->
 
@@ -203,7 +200,7 @@ Most engagements start with assessment.
 We've run DevOps consulting and transformation engagements for service providers, regulated enterprises, AI/GPU operators, and telecom operators across the EU, DACH, and Central Asia.
 
 {{< quote-carousel >}}
-Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
+The logos above are production Ænix Public Cloud Platform deployments. Named references for the NDA-covered engagements are shared on the discovery call.
 <!-- /BLOCK 8 -->
 
 ---
@@ -212,19 +209,7 @@ Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby 
 
 ## Pricing
 
-<div class="pricing-cards-2">
-
-### Assessment (14-28 days)
-Fixed-price.
-**On request**
-
-### Transformation / Managed
-Time-and-materials or fixed-scope. Phase 2 typically 3-9 months.
-**On request**
-
-</div>
-
-Phase 2 implementation: assessment cost credited subject to scope.
+The assessment is fixed-price, quoted before it starts. Transformation is time-and-materials or fixed-scope depending on scope clarity. If Phase 2 follows the assessment, the assessment cost is credited against it, subject to scope.
 
 <!-- /BLOCK 9 -->
 
@@ -259,8 +244,3 @@ Or read more:
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO: title "DevOps Consulting — Engineers Who Run Platforms in Production | Ænix"
-Description: "DevOps consulting that delivers production engineering, not slide decks. Senior engineers, knowledge transfer, open-source foundation."
-Word count: ~1080.
--->

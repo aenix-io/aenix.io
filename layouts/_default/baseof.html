@@ -8,6 +8,11 @@
 
   {{/* Open Graph / Twitter meta are emitted once by seo/head.html (partial invoked below) — do not duplicate here. */}}
 
+  {{/* First-party UTM/gclid capture. Must run in <head>, before the Pipedrive
+       loader in the body, so pipedrive-form's restoreForForm() has the stored
+       campaign to replay. Sets cookies only — no network, no consent surface. */}}
+  {{ partial "utm-capture.html" . }}
+
   {{/* Favicon */}}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.png" type="image/png">

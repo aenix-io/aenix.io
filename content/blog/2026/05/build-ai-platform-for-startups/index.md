@@ -1,6 +1,6 @@
 ---
 title: "Build an AI platform for startups — when dedicated infrastructure pays back"
-description: "Companion to AI platform build services page."
+description: "When dedicated GPU pays back against hyperscaler on-demand, what an AI platform actually contains, and the architectural decisions startups hit first."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,8 +42,6 @@ quiz:
       explanation: "Cozystack supports both: KubeVirt with VFIO passthrough or NVIDIA vGPU for VMs (data-science teams that need notebook-heavy environments), and the NVIDIA GPU Operator plus HAMi fractional sharing for containers (production inference). Same platform; different consumption patterns."
 ---
 
-Companion to **[AI platform build services page](/services/ai-platform-build)**.
-
 ## When dedicated GPU pays back
 
 Hyperscaler GPU is competitive for sporadic workloads. For sustained workloads, the math shifts. Crossover point varies by GPU class:
@@ -78,12 +76,3 @@ Open-weight (Llama, Mistral, Qwen, DeepSeek) for sovereignty + cost; proprietary
 
 ### Decision 4: Inference-only vs fine-tuning vs training
 Most AI startups: inference + occasional fine-tuning. Training at scale is rare in startup context.
-
-## How to start
-
-**[AI platform build services](/services/ai-platform-build)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

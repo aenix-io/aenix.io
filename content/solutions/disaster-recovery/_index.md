@@ -54,8 +54,6 @@ faq:
     a: "The entry point is a Platform Readiness Assessment covering current RTO/RPO posture, replication topology, backup immutability, and drill process, delivered in 14-28 days. It produces a written report and a Phase 2 implementation roadmap. Full-estate DR build-out and migration typically runs 9-18 months depending on scope."
 ---
 
-# Disaster recovery as a service on a platform you control
-
 **Business continuity is not a line in a vendor contract — it is an outcome you have to be able to prove. Disaster recovery as a service (DRaaS) on a sovereign, self-operated platform gives you cross-data-centre synchronous replication, immutable backups, and failover that is tested rather than assumed. Ænix builds and operates these platforms on [Cozystack](/products/cozystack/), so your recovery-time and recovery-point objectives are architecture you own and evidence you can hand to a regulator.**
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for the regulated cloud foundation that DR sits on; **[DORA compliance](/solutions/dora-compliance/)** for the operational-resilience obligations DR helps you meet. Start with a **[Platform Readiness Assessment →](/services/platform-readiness-assessment/)**.

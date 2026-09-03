@@ -120,15 +120,9 @@ Phase 2 implementation typically spans 6-24 months for a multi-site telecom plat
 
 {{< clients >}}
 
-*Customer evidence section — Ænix to populate. Anonymous proof points:*
-- A Tier-1 European telecom operating internal cloud platform across core + regional + edge sites.
-- A regional operator launching customer-facing sovereign cloud product on Cozystack foundation.
-- A telecom AI initiative for customer-care and network-operations workloads on private LLM infrastructure.
-- A 5G MEC deployment with Kubernetes + KubeVirt for VNFs at edge sites.
-
 {{< quote-carousel >}}
 
-Public references: NDA-protected — telco engagements sit in the same NDA cohort as the bank work, with naming permitted from mid-2027. The closest written-up case is [a telecom operator that built a corporate AI platform on Cozystack and shipped the same distribution into a state-owned end customer](/case-studies/ai-universal-installer/).
+Telco engagements sit in the same NDA cohort as the bank work; naming is permitted from mid-2027. The closest written-up case is [a telecom operator that built a corporate AI platform on Cozystack and shipped the same distribution into a state-owned end customer](/case-studies/ai-universal-installer/).
 
 ---
 
@@ -158,5 +152,3 @@ Public references: NDA-protected — telco engagements sit in the same NDA cohor
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Cloud Platform for Telecom — Sovereign, Edge-Ready, AI-Aware | Ænix"
-Word count: ~750. -->

@@ -1,6 +1,6 @@
 ---
 title: "Private cloud architecture in 2026 — design, components, and implementation patterns"
-description: "This is the long-form companion to our private cloud consulting services page. It walks through what private cloud architecture actually looks like in 2026..."
+description: "What private cloud means in 2026: the architectural layers, three patterns that work, capacity sizing, and the mistakes that recur in design reviews."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -22,7 +22,7 @@ quiz:
         - { text: "LINSTOR (DRBD-based, operationally simpler default)", correct: true }
         - { text: "Vendor SAN (Fibre Channel / iSCSI external array)", correct: false }
         - { text: "Longhorn (Rancher-origin lightweight block storage)", correct: false }
-      explanation: "LINSTOR is the Cozystack default — operationally simpler than Ceph. Ceph is more flexible but heavier. The choice between them is mostly a question of operational team capacity vs feature breadth."
+      explanation: "LINSTOR (DRBD, via the Piraeus operator) is what Cozystack actually ships — Rook-Ceph is not part of the distribution. Ceph and Longhorn are the alternatives you would weigh when assembling a private cloud yourself; Ceph is more flexible but heavier to operate, which is why the Cozystack default went the other way."
     - q: "Capacity sizing rubric for ~100-VM-equivalent workload — how many compute servers does the article suggest as a starting point?"
       options:
         - { text: "2-3 dense servers (high core density, single chassis)", correct: false }
@@ -43,13 +43,9 @@ quiz:
       explanation: "Pattern 3 is VCF — the explicitly \"legacy\" option. Subscription-only post-Broadcom with 2-5× price increases and lock-in to a single vendor's roadmap. The article points VMware-exit readers to /alternatives/vmware-alternative/."
 ---
 
-**This is the long-form companion to our [private cloud consulting services page](/services/private-cloud-consulting/). It walks through what private cloud architecture actually looks like in 2026 — the components, the decisions that matter, the patterns that work, and where teams routinely stumble. Written for architects, platform leads, and infrastructure decision-makers.**
-
 Private cloud has moved from "yesterday's architecture" to "tomorrow's default for regulated and cost-sensitive workloads" within ~3 years. The Broadcom Private Cloud Outlook 2025 found 53% of organizations now prioritize private cloud for new workloads. The LSEG Global Cloud Survey reports 84% of financial-services firms have adjusted cloud strategy due to regulatory pressure. The shift is real.
 
 But the architecture decisions in 2026 are different from 2018-era OpenStack-centric private clouds. The default stack has moved to Kubernetes-native virtualization (KubeVirt) plus open-source storage and networking. The operational model has matured. The trade-offs are clearer.
-
-This article covers the working architecture.
 
 ## What "private cloud" means in 2026
 
@@ -199,15 +195,6 @@ Single-tenant cluster scaled to multi-tenant later. Bolted-on multi-tenancy fail
 
 ### Mistake 5: hardware refresh skipped in budget
 Year 4 hardware refresh ignored in initial economics. The refresh cliff arrives unexpectedly.
-
-## How to start
-
-A private cloud architecture review is the cheapest insurance before commitment. Ænix runs this as a 5-15 day focused engagement, or as part of a broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-
-For details see the **[private cloud consulting services page](/services/private-cloud-consulting/)**.
-
----
-
 ## Want to dig deeper?
 
 - **[Private cloud consulting services](/services/private-cloud-consulting/)** — engagement details
@@ -215,8 +202,3 @@ For details see the **[private cloud consulting services page](/services/private
 - **[Cloud repatriation](/solutions/cloud-repatriation/)** — when coming from public cloud
 - **[VMware alternative](/alternatives/vmware-alternative/)** — when coming from VMware
 - **[Cozystack](/products/cozystack/)** — open-source platform foundation
-
----
-
-*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
-

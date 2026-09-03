@@ -1,6 +1,6 @@
 ---
 title: "Private cloud providers and platforms — a 2026 comparison"
-description: "This is the long-form companion to our private cloud platform page. It walks through private cloud providers and platforms in 2026 — what's available, who..."
+description: "Open-source platforms, commercial stacks, sovereign hyperscaler regions and regional providers compared — plus the migration paths between them."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,11 +42,7 @@ quiz:
       explanation: "Nutanix (AHV proprietary KVM-based + Files + Volumes + Era for databases): operationally simple, integrated stack. Limits: closed source, appliance lock-in, less flexibility than open alternatives."
 ---
 
-**This is the long-form companion to our [private cloud platform page](/products/private-cloud-platform/). It walks through private cloud providers and platforms in 2026 — what's available, who they fit, what the architectural trade-offs are. Written for architects and platform leads evaluating where to land.**
-
 The private cloud landscape has shifted significantly in the last 3 years. Broadcom-induced VMware migrations, sovereignty mandates, AI workload economics, and FinOps pressure have all reshaped what "private cloud" means and what providers serve it.
-
-This article covers the platforms and providers actually being deployed in 2026.
 
 ## Two distinct things called "private cloud"
 
@@ -178,13 +174,6 @@ Most modern private-cloud deployments are migrations from existing infrastructur
 - **Public cloud → private cloud** (repatriation) — workload classification, cost honesty, destination architecture; see **[Cloud repatriation](/solutions/cloud-repatriation/)**
 - **OpenStack → Cozystack** — for teams seeking Kubernetes-native foundation; image migration is straightforward
 - **Hyperscaler region → sovereign region** — for sovereignty-driven migrations within hyperscaler model
-
-## How to start
-
-If your situation fits Cozystack — see **[private cloud platform page](/products/private-cloud-platform/)** or visit **[cozystack.io](https://cozystack.io)**. For Ænix engagement see **[private cloud consulting](/services/private-cloud-consulting/)**.
-
----
-
 ## Want to dig deeper?
 
 - **[Private cloud platform — Cozystack](/products/private-cloud-platform/)**
@@ -192,8 +181,3 @@ If your situation fits Cozystack — see **[private cloud platform page](/produc
 - **[VMware alternative](/alternatives/vmware-alternative/)** — VMware exit
 - **[Cloud repatriation](/solutions/cloud-repatriation/)** — public cloud exit
 - **[cozystack.io](https://cozystack.io)** — open-source project
-
----
-
-*Ænix is the team behind Cozystack.*
-

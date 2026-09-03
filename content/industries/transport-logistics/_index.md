@@ -43,7 +43,7 @@ faq:
     a: "Yes. Cozystack is Apache 2.0 with no per-CPU or per-core licensing and runs VMs via KubeVirt, making it a common target for transport operators migrating off VMware or modernizing OpenStack-based infrastructure."
 ---
 
-**Transport and logistics operators in 2026 face: NIS2 essential-entity classification (transport sector is in scope under Annex I), AI-driven optimization (route, demand, predictive maintenance), edge compute requirements (vehicles, depots, ports, terminals), and increasing data-sovereignty pressure for cross-border logistics data. The architectural answer is a coherent platform that runs at HQ, regional sites, and edge — under one operational model.**
+**Transport and logistics is in NIS2 scope as an essential-entity sector (Annex I, covering air, rail, water and road), and it is the sector where the compute follows the freight: a terminal, a depot, a marshalling yard and a vehicle each need to keep working when the link to headquarters does not. The architectural consequence is that site autonomy, not central elegance, is the property the platform is judged on.**
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC + edge architecture, NIS2 compliance, sovereign-cloud option for cross-border logistics data.
 
@@ -54,51 +54,46 @@ faq:
 
 ---
 
-## Who in transport / logistics
-
-- Air, rail, water, road freight operators (NIS2 essential entities)
-- Logistics service providers (LSPs) with multi-modal operations
-- Last-mile delivery operators
-- Port and terminal operators
-- Fleet management organizations
-- Supply-chain integration platforms
-
----
-
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## What transport teams come to us for
+## Who comes to us, and why
 
-- **NIS2 compliance** for cloud + OT infrastructure (transport is essential-entity Annex I)
-- **AI for routing, demand forecasting, predictive maintenance**
-- **Edge compute** at depots, ports, terminals, vehicles
-- **Multi-tenant** for cross-BU (freight + passenger + intermodal)
-- **Sovereignty** for cross-border logistics data
-- **VMware exit / OpenStack modernization**
+Air, rail, water and road freight operators, multi-modal logistics service providers, port and terminal operators, last-mile and fleet organizations. Four triggers dominate:
+
+- **NIS2 as an essential entity** — transport is named in Annex I, so risk management, supply-chain security and incident reporting are binding, and the evidence has to come from somewhere.
+- **A VMware exit that cannot break the TOS or WMS** — the vendor-supported VM appliance is the constraint, not the containerized services around it.
+- **Edge compute that has to survive a bad link** — depots, ports, terminals and vehicles, where autonomy beats central consistency.
+- **Cross-border logistics data** — freight data crosses jurisdictions on every consignment; residency has to be a property of where a workload is pinned, not a clause.
 
 </div>
 </div>
 
 ---
 
-## Cozystack pattern for transport
+## What actually runs at a site, and what happens when the link drops
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>HQ + regional sites</b></div>
+<div class="diagram__node"><b>HQ + regional sites</b><div class="diagram__chips"><span>TMS</span><span>Planning</span><span>Cross-site aggregation</span></div></div>
 <div class="diagram__conn">run on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix Platform</b><div class="diagram__chips"><span>One Kubernetes API</span><span>KubeVirt VMs + containers</span><span>Air-gap for OT</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix Platform</b><div class="diagram__chips"><span>One Kubernetes API</span><span>KubeVirt VMs + containers</span><span>Tenant CRD</span></div></div>
 <div class="diagram__conn">extends to</div>
-<div class="diagram__node"><b>Edge</b><div class="diagram__chips"><span>Depots</span><span>Ports</span><span>Terminals</span><span>Vehicles</span></div></div>
+<div class="diagram__node"><b>Site clusters</b><div class="diagram__chips"><span>TOS / WMS</span><span>Gate and OCR</span><span>Telematics ingest</span></div></div>
+<div class="diagram__conn">bounded from</div>
+<div class="diagram__node"><b>OT</b><div class="diagram__chips"><span>Signalling</span><span>Crane and AGV control</span></div></div>
 </div>
 </div>
 
-- Multi-site: HQ + regional + depot/port/terminal edge under one Kubernetes API
-- Air-gap support for OT systems (rail signalling, port automation)
-- Multi-tenant for cross-BU separation
-- AI infrastructure for routing / forecasting / predictive maintenance
-- NIS2-aligned controls structurally
+**The terminal operating system is the hard case.** A TOS or a WMS is a stateful, latency-sensitive application that a vendor supports on a named OS and often ships as a VM appliance. It is what stops a container-only platform at the gate. On Cozystack it runs as a KubeVirt VM on the site cluster, next to the containerized services, on one network and one backup class — the vendor keeps its support matrix and you stop operating a second hypervisor to humour it.
+
+**Gate, OCR and telematics are edge ingest, not analytics.** Gate automation, licence-plate and container-number OCR, weighbridge integration and vehicle telematics all produce a high-rate local stream that is useless if it has to round-trip to headquarters. It is processed on the site cluster and forwarded upward as summarised events, which is also what keeps the WAN bill sane across a few hundred depots.
+
+**The OT boundary is a boundary, not a merge.** Rail signalling, crane and AGV control, and interlocking stay on their own network under their own change control and safety case. The platform sits above them, taking data across defined conduits enforced by Cilium network policy, and runs air-gapped where the site security concept requires it. Nothing about the platform is in the path of a safety function.
+
+**When the uplink dies, the site keeps working.** Site workloads serve from local storage with state replicated inside the site rather than to headquarters. What stops is replication upward, central dashboards and cross-network planning; when the link returns, buffered data drains and the site resynchronizes. Trucks do not wait on a WAN circuit — which is the reason a hyperscaler edge service is a poor fit for a terminal.
+
+**Multi-tenancy is how freight, passenger and intermodal share it.** One Tenant CRD boundary per business unit, per site or per joint-venture partner, with quotas and audit that survive a NIS2 supervisor asking who could reach what.
 
 ---
 
@@ -114,4 +109,3 @@ faq:
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- Word count: ~500. -->

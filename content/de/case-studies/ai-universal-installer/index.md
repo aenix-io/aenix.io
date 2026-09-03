@@ -57,7 +57,7 @@ Cozystack ist hier keine „Box", sondern ein Framework, das bereits Storage, Ne
 
 Wir schlugen einen phasenweisen Rollout vor: zuerst die Basisinfrastruktur und den Katalog, dann verteiltes Training und Model Serving, anschließend vollständige MLOps und einen Data Lake.
 
-{{< placeholder-image width="1200" height="640" label="Architektur: eine Distribution, Plattformschichten und Geo-GPU — Hardware → Cozystack-Framework → Mandantenfähigkeit → Produkte des Kunden, mit einem geografisch verteilten GPU-Cluster, verbunden über ein verschlüsseltes Mesh" >}}
+{{< placeholder-image width="1200" height="640" label="Architektur: eine Distribution, Plattformenchichten und Geo-GPU — Hardware → Cozystack-Framework → Mandantenfähigkeit → Produkte des Kunden, mit einem geografisch verteilten GPU-Cluster, verbunden über ein verschlüsseltes Mesh" >}}
 
 ## Umsetzung: neue Anforderungen und wie wir sie gelöst haben
 

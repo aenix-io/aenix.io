@@ -1,6 +1,6 @@
 ---
 title: "Seven decisions when designing sovereign AI architecture"
-description: "Companion to Sovereign AI Decision Guide."
+description: "Seven architecture decisions behind a sovereign AI stack, how they interlock, and the combinations that recur in real deployments."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "They interlock — earlier ones shape later", correct: true }
       explanation: "The seven aren't independent. Trigger profile shapes regulatory scope; regulatory scope shapes sovereignty controls; sovereignty controls shape operational model; operational model affects model selection feasibility. The decision guide walks through them in that order."
 ---
-
-Companion to **[Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide)**.
 
 ## The seven decisions
 
@@ -102,8 +100,3 @@ No specific regulator + cost economics trigger + multi-tenant + customer-operate
 Walk through the flowchart. Note your answers. Architecture options narrow naturally.
 
 For specific engagement see **[Sovereign AI services](/solutions/sovereign-ai/)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

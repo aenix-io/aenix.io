@@ -1,6 +1,6 @@
 ---
 title: "AI Platform — when sustained-inference economics beat hyperscaler GPU"
-description: "Long-form companion to the AI Platform page: GPU economics for sustained inference, multi-tenant GPU scheduling, and when dedicated AI infra pays back."
+description: "GPU economics for sustained inference, multi-tenant GPU scheduling, and when dedicated AI infra pays back."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
@@ -43,14 +43,10 @@ quiz:
       explanation: "Pitfall 2 (model-API-as-private-LLM) says the data still leaves the customer perimeter even when the privacy clause is strong, and for regulated-data workloads this fails the substantive requirement."
 ---
 
-**Long-form companion to the [AI Platform landing](/products/ai-platform/). Walks through GPU economics for sustained inference, multi-tenant GPU scheduling, model selection trade-offs, and the architectural decisions that make dedicated AI infrastructure pay back over Year 2 — versus continuing on hyperscaler GPU or proprietary model APIs.**
-
 The "should we run our own AI infrastructure?" conversation has shifted
 in 2026. For sporadic experimentation, hyperscaler GPU on demand is
 still right. For sustained 24/7 inference, the math has moved
-substantially. This article walks through where the crossover sits,
-what an AI platform actually costs to operate, and what AI Platform
-ships that you'd otherwise have to build.
+substantially.
 
 ## The crossover point — sustained inference
 
@@ -67,7 +63,7 @@ For dedicated GPU instances, the crossover varies by class:
 - **L40S:** crossover around 40% utilisation. Lower hyperscaler pricing
   per hour (~€1.5/hr) but lower acquisition cost on-prem too
   (€12-15k). For multi-tenant inference fleets where workloads share
-  GPU via MIG / time-slicing, L40S typically dominates.
+  a GPU via HAMi, L40S typically dominates.
 - **A100 (second-hand market):** crossover around 25% utilisation.
   Lower upfront capital makes the break-even lower; A100 remains
   cost-effective for inference workloads through 2026.
@@ -99,7 +95,7 @@ A typical multi-tenant inference fleet runs a mix:
 - **8-32 H100 / H200** for high-throughput large-model inference and
   fine-tuning workloads
 - **16-64 L40S** for tenant-facing inference of mid-sized models, with
-  MIG / time-slicing for sharing across multiple smaller workloads
+  HAMi splitting each card across several smaller workloads
 - **CPU-only nodes** for RAG retrieval, embedding generation,
   preprocessing pipelines that don't need GPU
 
@@ -302,11 +298,3 @@ Engagement size: Project plus managed retainer, quoted per RFP.
   the seven decisions that define a sovereign AI architecture
 - **[Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/)** —
   downloadable decision-framework PDF
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Cozystack was included in the CNCF CNAI Landscape
-in May 2025. Our AI Platform engagements are NDA-protected; anonymized
-phrasing pattern is "Sovereign AI infrastructure for regulated
-organisation at scale."*

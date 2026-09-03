@@ -1,6 +1,6 @@
 ---
 title: "Internal developer platform examples — 6 architectural patterns without Backstage lock-in"
-description: "This is the long-form companion to our internal developer platform services page. It walks through real internal developer platform examples — what to..."
+description: "Six internal developer platform patterns from production, the tools that show up across them, and how to pick one without defaulting to Backstage."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "Kubernetes (distribution per op model)", correct: true }
       explanation: "Kubernetes is named as the de facto orchestration layer. Distribution choice (Cozystack for multi-tenant plus virtualization, OpenShift for enterprise commercial, vanilla for simplicity, Talos as the OS underneath) depends on operational model."
 ---
-
-**This is the long-form companion to our [internal developer platform services page](/services/internal-developer-platform/). It walks through real internal developer platform examples — what to build, what to skip, what tools matter, and how to do it without making Backstage the centerpiece of your architecture.**
 
 Most articles about internal developer platforms in 2026 are still framed as "how to use Backstage." That framing is wrong. Backstage is a useful tool when the catalog discipline is mature; it is not the platform. The platform sits underneath, and the architecture decisions that matter are made there.
 
@@ -209,23 +207,9 @@ Buying a "complete IDP solution" rebuilds the lock-in problem with a different v
 
 ### Mistake 5: building for engineering elegance, not adoption
 Platform team's customers are product teams. Architecture optimized for engineering elegance often produces a platform nobody adopts.
-
-## How to start
-
-If your organization fits the IDP profile, the structured next step is an assessment of current platform maturity and a target architecture. Ænix runs this as **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with IDP-emphasis.
-
-For services details see the **[internal developer platform services page](/services/internal-developer-platform/)**.
-
----
-
 ## Want to dig deeper?
 
 - **[Internal developer platform services](/services/internal-developer-platform/)** — engagement details
 - **[Platform engineering services](/services/platform-engineering/)** — broader scope
 - **[Platform engineering vs DevOps vs SRE](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** — terminology
 - **[Cozystack](/products/cozystack/)** — multi-tenant Kubernetes-native foundation
-
----
-
-*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
-

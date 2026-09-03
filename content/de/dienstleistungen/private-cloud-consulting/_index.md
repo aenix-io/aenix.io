@@ -30,7 +30,7 @@ quick_facts:
   - label: "Technologie-Basis"
     value: "Cozystack: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Produkt"
-    value: "Ænix Platform in zwei Plattforms; passend Private Cloud Platform (regulierte Unternehmen) und Public Cloud Platform (große Betreiber)"
+    value: "Ænix Platform in drei Plattformen; passend Private Cloud Platform (regulierte Unternehmen) und Public Cloud Platform (große Betreiber)"
 
 faq:
   - q: "Was umfasst ein Private Cloud Consulting bei Aenix?"
@@ -44,7 +44,7 @@ faq:
   - q: "Hilft Aenix beim VMware-Ausstieg nach der Broadcom-Übernahme?"
     a: "Ja. Die VMware-Ausstieg-Strategie ist ein Kernbestandteil. Da KubeVirt VMs und Container auf einer Kubernetes-API betreibt, lassen sich bestehende VM-Workloads auf eine Apache-2.0-lizenzierte Plattform ohne CPU-/Core-basierte Lizenzierung migrieren."
   - q: "Vermeidet die Plattform Vendor-Lock-in und Lizenzkosten?"
-    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Als CNCF-Projekt mit offenem Code vermeidet es proprietären Lock-in. Aenix bietet zusätzlich die produktisierte Ænix Platform mit kommerziellem Support in zwei Plattforms an."
+    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Als CNCF-Projekt mit offenem Code vermeidet es proprietären Lock-in. Aenix bietet zusätzlich die produktisierte Ænix Platform mit kommerziellem Support in drei Plattformen an."
 ---
 
 <!-- BLOCK 1 -->
@@ -57,7 +57,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/private-cloud-architecture-2026/">Architektur-Leitfaden lesen →</a>
+  <a class="cta-secondary" href="/blog/2026/05/private-cloud-architecture-2026/">Architektur-Leitfaden lesen (englisch) →</a>
 </div>
 
 <div class="trust-badges">
@@ -222,7 +222,7 @@ Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDR
 <!-- BLOCK 10: FAQ -->
 
 
-**Weitere Fragen?** Siehe den **[Private-Cloud-Architektur-Artikel](/blog/2026/05/private-cloud-architecture-2026/)** oder **[sprechen Sie mit uns](#discovery)**.
+**Weitere Fragen?** Siehe den **[Private-Cloud-Architektur-Artikel (englisch)](/blog/2026/05/private-cloud-architecture-2026/)** oder **[sprechen Sie mit uns](#discovery)**.
 
 <!-- /BLOCK 10 -->
 
@@ -235,7 +235,7 @@ Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDR
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Private Cloud Architecture 2026](/blog/2026/05/private-cloud-architecture-2026/)** — vollständiger Leitfaden
+- **[Private Cloud Architecture 2026 (englisch)](/blog/2026/05/private-cloud-architecture-2026/)** — vollständiger Leitfaden
 - **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** — wenn Sie die Public Cloud verlassen
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Souveränitäts-Auslöser
 - **[Cozystack](/de/produkte/cozystack/)** — Open-Source-Plattform-Foundation

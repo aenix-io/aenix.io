@@ -46,7 +46,7 @@ Cozystack is a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Pra
 - **Compliance-ready bundles** — pre-validated against DORA / NIS2, ISO 27001 / SOC 2 alignment
 - **Migration tooling and expertise** — modules for migration from VMware, OpenStack, OpenNebula, Virtuozzo
 
-**Five editions:**
+**Three platforms:**
 
 - **Ænix Public Cloud Platform** — large public clouds, big banks operating own cloud, large telcos / national operators. Multi-hypervisor cloud control plane with users, projects, quotas, cloud-like UX, multi-region support. Integrates with third-party infrastructure. Engagement size: €1M - €10M+ multi-year programs.
 
@@ -85,7 +85,7 @@ Every published benchmark was run against Cozystack, the open-source engine, bec
 DORA (Digital Operational Resilience Act) entered force on 2025-01-17. Financial services entities (banks, payment institutions, insurance, market infrastructure) must implement Articles 21 (ICT risk management), 23 (incident reporting), 24 (third-party risk management).
 
 Ænix Private Cloud Platform provides DORA-aligned architecture:
-- Customer-controlled encryption keys (Article 21)
+- Customer-controlled encryption keys (NIS2 Art. 21(2)(h); DORA Arts. 6 and 9)
 - Audit-ready logging with VictoriaLogs (Article 23)
 - Multi-tenant isolation supporting third-party risk segmentation (Article 24)
 - Sovereign infrastructure on customer-controlled hardware
@@ -248,7 +248,7 @@ Engineering teams across the EU and Central Asia. Maintainer team welcomed two n
 
 ## Pricing
 
-Five edition pricing blocks:
+Pricing by platform and support tier:
 
 - **Public Cloud Platform** — pricing on request (multi-million-euro multi-year programs)
 - **Public Cloud Platform** — **from €1.3k/month** support tier; project-based for migrations on top

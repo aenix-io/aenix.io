@@ -3,6 +3,7 @@ title: "Ihr Download ist bereit — VMware-Migrations-Checkliste"
 description: "Laden Sie Ihre Kopie des VMware-Migrations-Checkliste von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
+hreflang_en: /resources/vmware-migration-checklist/thank-you/
 page_type: "flag-page"
 hide_closing_cta: true
 ---

@@ -25,7 +25,7 @@ related_pages:
 </div>
 
 <div class="trust-badges">
-Bis 40% Marge · Deal-Schutz · Co-Sell + Pre-Sales · Fünf Plattformen
+Bis 40% Marge · Deal-Schutz · Co-Sell + Pre-Sales · Drei Plattformen
 </div>
 
 <!-- /BLOCK 1 -->
@@ -90,7 +90,7 @@ Ja — registrierte Opportunities sind dem Partner vorbehalten; kein Kanalkonfli
 Nein. Nur wiederverkaufen oder mit Ænix co-delivern — pro Deal Ihre Wahl.
 
 **Was genau verkaufen wir?**
-Fünf Plattformen nach Käuferprofil, plus Services. Siehe [Ænix Platform](/de/produkte/).
+Drei Plattformen nach Käuferprofil, plus Services. Siehe [Ænix Platform](/de/produkte/).
 
 **Wie starten wir?**
 [Zum Partnerprogramm](/de/partner/) oder ein Gespräch buchen; wir befähigen Ihren Vertrieb.

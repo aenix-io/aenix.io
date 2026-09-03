@@ -7,6 +7,7 @@ related_pages:
   - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
+hreflang_en: /compare/cozystack-vs-openshift/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
@@ -79,4 +80,4 @@ faq:
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

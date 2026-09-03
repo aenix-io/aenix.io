@@ -15,15 +15,13 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026). CNCF-Certified Kubernetes Distribution; OpenSSF Best Practices badge. Current release: v1.6.2."
   - label: "Core technology"
     value: "KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD and SeaweedFS storage, Tenant CRD multi-tenancy, VictoriaMetrics + VictoriaLogs observability."
   - label: "Who it is for"
     value: "Service providers, regulated enterprises (DORA/NIS2), telecom operators, AI/GPU operators, and enterprise platform teams running self-hosted private cloud."
   - label: "Commercial offering"
     value: "Aenix sells Ænix Platform (turnkey cloud-in-a-box) and services; support tiers Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise Custom."
-  - label: "Certifications"
-    value: "CNCF-Certified Kubernetes Distribution and OpenSSF Best Practices badge."
 faq:
   - q: "Is Cozystack free to use?"
     a: "Yes. Cozystack is open source under Apache 2.0 with no per-CPU or per-core licensing, so anyone can deploy it on their own or leased servers. Aenix's commercial Ænix Platform and support engagements on top are optional."
@@ -41,9 +39,6 @@ aliases:
   - /cozystack/
 ---
 
-<!-- BLOCK 1: HERO -->
-
-
 **Cozystack is the open-source cloud platform Ænix created and maintains, and a CNCF project. It runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own — under one Kubernetes-native control plane with multi-tenant isolation. Apache 2.0 license, currently CNCF Sandbox (CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices badge.**
 
 This page describes Cozystack as Ænix's open-source product. The open-source project itself lives at **[cozystack.io](https://cozystack.io)** with documentation, install guides, and the community. For the turnkey commercial cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/)** with its three platforms.
@@ -57,11 +52,7 @@ This page describes Cozystack as Ænix's open-source product. The open-source pr
 CNCF Project · CNCF-Certified Kubernetes Distribution · OpenSSF Best Practices · Apache 2.0
 </div>
 
-<!-- /BLOCK 1 -->
-
 ---
-
-<!-- BLOCK 2: WHAT'S IN COZYSTACK -->
 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
@@ -77,19 +68,19 @@ KVM-based VMs with live migration, snapshots, templates. Side-by-side with conta
 Tenant CRD, nested tenants, per-tenant quotas, RBAC, audit. Built for service-provider model.
 
 **Managed databases**
-PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB.
+PostgreSQL (CloudNativePG), MariaDB, MongoDB, ClickHouse, Valkey, OpenSearch, Kafka, NATS, RabbitMQ, Qdrant, FoundationDB.
 
 **S3 object storage**
 SeaweedFS-based S3-compatible storage for backups, applications, AI training data.
 
 **GPU as a service**
-NVIDIA vGPU for VMs, MIG / time-slicing / passthrough for containers. A100, H100, H200, L40S, Blackwell validated.
+NVIDIA GPU Operator with passthrough for VMs and containers, HAMi for fractional sharing across tenants. A100, H100, H200, L40S, Blackwell validated. MIG-partitioned multi-tenancy is roadmap.
 
 **Cilium networking**
 eBPF-native, network policies, MetalLB, BGP. Replaces NSX-equivalent functionality.
 
 **LINSTOR storage**
-Replicated block storage at scale. SeaweedFS also supported.
+Replicated block storage via LINSTOR/DRBD (Piraeus operator). SeaweedFS for S3.
 
 **Observability**
 VictoriaMetrics + VictoriaLogs included.
@@ -114,11 +105,7 @@ Cozystack Dashboard for self-service. Production-ready WHMCS billing integration
 </div>
 </div>
 
-<!-- /BLOCK 2 -->
-
 ---
-
-<!-- BLOCK 3: PROJECT VS PRODUCT -->
 
 ## Cozystack the project vs Ænix the company vs Ænix Platform the product
 
@@ -134,11 +121,7 @@ Cozystack Dashboard for self-service. Production-ready WHMCS billing integration
 
 You can use Cozystack open-source without Ænix; Ænix's commercial offering (Ænix Platform + engagement services) is optional. Many customers choose Ænix Platform for the turnkey package — billing, portals, payments, support — without building those layers themselves.
 
-<!-- /BLOCK 3 -->
-
 ---
-
-<!-- BLOCK 4: WHO USES COZYSTACK -->
 
 ## Who runs Cozystack in production
 
@@ -157,11 +140,7 @@ Cozystack is also listed in the [CNCF Landscape](https://landscape.cncf.io) — 
 
 {{< quote-carousel >}}
 
-<!-- /BLOCK 4 -->
-
 ---
-
-<!-- BLOCK 5: HOW TO USE COZYSTACK -->
 
 ## How to use Cozystack
 
@@ -200,17 +179,13 @@ For specific use cases see:
 - **[Sovereign AI](/solutions/sovereign-ai/)** — AI workload focus
 - **[DORA compliance](/solutions/dora-compliance/)** — financial services
 
-<!-- /BLOCK 5 -->
-
 ---
-
-<!-- BLOCK 6: PRICING -->
 
 ## Pricing
 
 Cozystack the platform is **free** (Apache 2.0). Anyone can run it.
 
-For commercial Ænix support and the turnkey cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/)** — three platforms plus two modules, with four support tiers (Basic from $1,250/month per 10 nodes; Standard $3,000; Plus $5,500; Enterprise Custom).
+For commercial Ænix support and the turnkey cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/)** — three platforms plus two supporting products, with four support tiers (Basic from $1,250/month per 10 nodes; Standard $3,000; Plus $5,500; Enterprise Custom).
 
 Entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
@@ -219,15 +194,7 @@ Entry tier — **Pure Cozystack with Ænix Support** — for product teams runni
   <a class="cta-secondary" href="/products/">Compare platforms →</a>
 </div>
 
-<!-- /BLOCK 6 -->
-
 ---
-
-<!-- BLOCK 7: FAQ -->
-
----
-
-<!-- BLOCK 8: BOTTOM CTA -->
 
 <a id="discovery"></a>
 <div class="cta-row">
@@ -237,20 +204,12 @@ Entry tier — **Pure Cozystack with Ænix Support** — for product teams runni
 - **[cozystack.io](https://cozystack.io)** — install, documentation, community
 - **[Cozystack architecture article](/blog/2026/05/cozystack-introduction-architecture/)**
 - **[Ænix Platform](/products/)** — turnkey commercial cloud-in-a-box on top of Cozystack
-  - [Public Cloud Platform](/products/public-cloud-platform/) — for hosting providers
-  - [Private Cloud Platform](/products/private-cloud-platform/) — for regulated enterprises
-  - [Public Cloud Platform](/products/public-cloud-platform/) — for large operators
-  - [Developer Self-Service](/products/private-cloud-platform/) — for product engineering teams
-  - [AI Platform](/products/ai-platform/) — for AI-heavy organizations
+  - [Public Cloud Platform](/products/public-cloud-platform/) — for organisations selling cloud, from regional hosters to national operators
+  - [Private Cloud Platform](/products/private-cloud-platform/) — for regulated organisations running cloud for themselves, developer self-service included
+  - [AI Platform](/products/ai-platform/) — for inference, fine-tuning and RAG on your own GPUs
 - **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — engagement methodology
-
-<!-- /BLOCK 8 -->
 
 ---
 
 *Cozystack is a CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), Apache 2.0. Ænix is the open-core company that created and maintains it, and the maker of Ænix Platform — the turnkey commercial cloud-in-a-box.*
 
-<!-- SEO: title "Cozystack — Open-Source Cloud Platform on Kubernetes | Ænix"
-Description (≤155): "Cozystack — open-source cloud platform: KubeVirt VMs, managed databases, S3, GPU, multi-tenant. Apache 2.0, CNCF Project. Built and supported by Ænix."
-Word count: ~900.
--->

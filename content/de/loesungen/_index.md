@@ -3,6 +3,7 @@ title: "Lösungen"
 description: "Aenix-Lösungen für Cloud-Plattform-Engagements: DORA, NIS2, Datensouveränität, souveräne KI, Cloud-Repatriation, Kostenoptimierung, Hybrid Cloud."
 hero_subtitle: "Beginnen Sie bei dem Problem, das Sie hergeführt hat"
 language: "de"
+hreflang_en: /solutions/
 ---
 
 **Ænix baut und betreibt Cloud-Plattformen auf Hardware, die Sie kontrollieren — für Organisationen, die echte Cloud-Infrastruktur brauchen, aber keinen Hyperscaler darunter. Die meisten kommen aus einem von sechs Gründen hierher: eine Aufsichtsbehörde (DORA, NIS2), eine Souveränitätsanforderung, ein KI-Workload, der das Haus nicht verlassen darf, eine Cloud-Rechnung, die nicht mehr aufgeht, eine VMware-Verlängerung, oder Entwickler, die wochenlang auf eine Umgebung warten. Wählen Sie den passenden Grund — die jeweilige Seite beschreibt Architektur, passende Plattform und den Ablauf eines Engagements.**
@@ -32,7 +33,7 @@ language: "de"
 ### Kosten- / Konsolidierungs-Trigger
 
 - **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** — Migrieren Sie Workloads von AWS / Azure / GCP auf souveräne oder On-Prem-Ænix-Platform. Passt zu: jeder Plattform. Kostenloses [TCO-Worksheet](/de/ressourcen/cloud-repatriation-tco-worksheet/).
-- **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)** — TCO-Optimierung durch Ænix-Platform-basierte Architektur. Passt zu: ISP / Enterprise / Public Cloud Platforms.
+- **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)** — TCO-Optimierung durch Ænix-Platform-basierte Architektur. Passt zu Public Cloud Platform und Private Cloud Platform.
 - **[Hybrid-Cloud-Plattform](/de/loesungen/hybrid-cloud/)** — Eine Ænix Platform spannend über On-Prem + Cloud. Passt zu: Private Cloud Platform oder Public Cloud Platform.
 
 ### Engineering-Trigger

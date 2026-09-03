@@ -1,6 +1,6 @@
 ---
 title: "Launch a customer-facing cloud product — playbook for hosting providers, telcos, and regional operators"
-description: "This is the long-form companion to our public cloud builder services page. It walks through what it actually takes to launch a customer-facing cloud product..."
+description: "The six layers of a customer-facing cloud product, the architectural decisions specific to public cloud, and where launches stumble commercially."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "announcement"
@@ -9,11 +9,7 @@ language: "en"
 companion_landing: "/services/public-cloud-builder/"
 ---
 
-**This is the long-form companion to our [public cloud builder services page](/services/public-cloud-builder/). It walks through what it actually takes to launch a customer-facing cloud product in 2026 — architecturally, operationally, and as a go-to-market motion.**
-
 Regional and specialty cloud is having a moment in 2026. Hyperscaler economics, sovereignty pressure, and post-Broadcom market dynamics have all opened space for non-hyperscaler cloud products that didn't make sense to launch 5 years ago. Regional telco sovereign cloud product launches (Central Asia, MENA, EU member states), QazCloud + Clever Cloud's sovereign AI ecosystem, and various EU-member-state-specific sovereign cloud products are visible examples. Many more are in stealth or early stages.
-
-This article covers the working playbook.
 
 ## Why now
 
@@ -98,8 +94,3 @@ Generic cloud product with no differentiation from hyperscaler. Customers defaul
 - **Phase 3 (optional)** — managed-services during ramp
 
 For details see **[public cloud builder services page](/services/public-cloud-builder)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

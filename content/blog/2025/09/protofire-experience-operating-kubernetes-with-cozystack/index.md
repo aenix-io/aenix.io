@@ -23,12 +23,12 @@ quiz:
         - { text: "Around 100× reduction once fully migrated", correct: false }
         - { text: "Between 7× and 10× reduction vs AWS", correct: true }
       explanation: "Based on their infrastructure modeling and cost tracking, Protofire expects a 7× to 10× reduction in spend compared to the previous AWS setup. They run two K8s clusters with three control-plane and three worker nodes each."
-    - q: "What was the time-to-environment improvement they achieved?"
+    - q: "How long does provisioning and configuring a standard environment take Protofire today?"
       options:
-        - { text: "Down from over a day to roughly a day per standard environment", correct: true }
-        - { text: "No measurable change in environment provisioning time", correct: false }
-        - { text: "From hours up to several weeks as complexity grew", correct: false }
-      explanation: "During the initial phase, migrating and tuning each environment (including Helm-chart adaptation) took more than a day. Through iteration and process improvements, today standard environments can be provisioned and configured in roughly one day."
+        - { text: "Roughly one day", correct: true }
+        - { text: "Under an hour, fully automated end to end", correct: false }
+        - { text: "Two to three weeks per environment", correct: false }
+      explanation: "In the initial phase, migrating and tuning each environment — including adapting the Helm charts — took more than a day. After iterating on the process, Protofire now provisions and configures a standard environment in roughly one day. The gain came from process work, not from a new tool."
     - q: "Why did Protofire choose Cozystack specifically?"
       options:
         - { text: "It carried the cheapest commercial licence on the shortlist", correct: false }

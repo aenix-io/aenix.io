@@ -7,6 +7,7 @@ related_pages:
   - /de/produkte/cozystack
   - /de/branchen/finanzdienstleistungen
 language: "de"
+hreflang_en: /services/ai-platform-build/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
@@ -90,4 +91,4 @@ faq:
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

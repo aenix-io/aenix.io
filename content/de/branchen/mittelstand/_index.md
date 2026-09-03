@@ -118,7 +118,7 @@ Evidenz aus dem Kundenstamm: Die meisten Ænix-Engagements betreffen Engineering
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Wann Cozystack für KMU und Mittelstand passt — ehrliche Antwort](/blog/2026/05/when-cozystack-fits-smb-and-mid-market/)**
+- **[Wann Cozystack für KMU und Mittelstand passt — ehrliche Antwort](/de/blog/2026/05/wann-cozystack-fuer-mittelstand-passt/)**
 
 ---
 

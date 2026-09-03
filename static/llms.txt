@@ -36,13 +36,17 @@ Every published benchmark was run against Cozystack, the open-source engine, bec
 
 ## Solutions (buyer-trigger-led)
 
-- [DORA compliance](https://aenix.io/solutions/dora-compliance/): Ænix Private Cloud Platform with DORA Article 21/23/24 architecture controls for financial services
+- [DORA compliance](https://aenix.io/solutions/dora-compliance/): Ænix Private Cloud Platform with DORA architecture controls for financial services: ICT risk management (Arts. 5-16), incident reporting (Arts. 17-19), resilience testing (Arts. 24-27), third-party risk and exit (Arts. 28-30)
 - [NIS2 compliance](https://aenix.io/solutions/nis2-compliance/): NIS2-aligned multi-tenant cloud platform for essential entity sectors (energy, telco, transport, banking, healthcare, public sector)
 - [Data sovereignty](https://aenix.io/solutions/data-sovereignty/): Customer-controlled keys, customer-controlled hardware, jurisdictional data residency
 - [Sovereign AI](https://aenix.io/solutions/sovereign-ai/): GPU infrastructure for AI workloads on customer-controlled hardware (no hyperscaler endpoint dependency)
 - [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): Migrate workloads off AWS/Azure/GCP onto a sovereign or on-premise Ænix platform
 - [Cloud cost optimization](https://aenix.io/solutions/cloud-cost-optimization/): TCO optimization through Ænix platform architecture
 - [Hybrid cloud platform](https://aenix.io/solutions/hybrid-cloud-platform/): A single Ænix platform spanning on-premise and cloud
+- [Disaster recovery](https://aenix.io/solutions/disaster-recovery/): sovereign DR and business continuity across sites
+- [Private LLM](https://aenix.io/solutions/private-llm/): self-hosted inference on open-weight models, keys and weights in your custody
+- [GPU cloud bursting](https://aenix.io/solutions/gpu-cloud-bursting/): owned bare metal as baseline, public or sovereign clouds attached as burst targets
+- [Private cloud platform](https://aenix.io/solutions/private-cloud-platform/): what a Kubernetes-native private cloud is and when it fits
 - [Developer self-service](https://aenix.io/solutions/developer-self-service/): Internal developer platform on Ænix Private Cloud Platform with multi-tenant developer workflows
 
 ## By role (job-title entry points)
@@ -100,7 +104,7 @@ AI:
 
 ## Products
 
-- **Ænix Platform** — Turnkey commercial cloud-in-a-box. Two editions (Provider, Enterprise), two modules (AI Platform, Developer Self-Service), plus Pure Cozystack with Ænix Support entry tier.
+- **Ænix platforms** — Turnkey commercial cloud on one engine: Public Cloud Platform, Private Cloud Platform (developer self-service included) and AI Platform, plus enterprise support for self-run Cozystack and the WHMCS integration. The platforms combine; they are not tiers.
   - [Ænix Platform overview](https://aenix.io/products/)
   - [Public Cloud Platform](https://aenix.io/products/public-cloud-platform/)
   - [Public Cloud Platform](https://aenix.io/products/public-cloud-platform/)
@@ -177,7 +181,7 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 
 ## Trust + commerce
 
-- [Pricing](https://aenix.io/pricing/): Five edition pricing blocks (Public Cloud Platform from €1.3k/month; others on request)
+- [Pricing](https://aenix.io/pricing/): Pricing by platform and support tier (Public Cloud Platform from $1,250/month per 10 nodes; programmes quoted per RFP)
 - [Partner Program](https://aenix.io/partners/): Up to 40% margin for resellers, integrators, distributors
 - [Case studies](https://aenix.io/case-studies/): Production deployments at regional hosting providers (Ænix Public Cloud Platform); platform R&D for ecosystem vendors; tier-1 European bank engagements (NDA until mid-2027)
 - [Case: bare-metal GPU inference](https://aenix.io/case-studies/bare-metal-gpu-inference/): A mass-market mobile app moved ML inference off a rented GPU cloud onto its own 8×H100 bare-metal server on Cozystack — KubeVirt GPU passthrough, KEDA autoscaling, ~2 months to production, 2-3× GPU efficiency (anonymized)
@@ -198,7 +202,7 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 
 ## German (DACH locale)
 
-A subset of pages is mirrored in German for the DACH market under `/de/`. Includes the editions, key solutions (DORA / NIS2 / Datensouveränität / cloud repatriation / sovereign AI), services, industries, and a German blog at `/de/blog/`. Hreflang annotations link EN ↔ DE versions where both exist.
+A subset of pages is mirrored in German for the DACH market under `/de/`. Includes the platforms, key solutions (DORA / NIS2 / Datensouveränität / cloud repatriation / sovereign AI), services, industries, and a German blog at `/de/blog/`. Hreflang annotations link EN ↔ DE versions where both exist.
 
 Sample DE entries:
 - [Ænix Platform / Cozystack Übersicht](https://aenix.io/de/produkte/)
@@ -225,9 +229,9 @@ Sample DE entries:
 
 ## DORA / NIS2 / sovereignty quick reference
 
-DORA (Regulation EU 2022/2554) — in force since **17 January 2025**. Article 21 (10 risk-management areas), Article 23 (24h/72h/1-month incident reporting), Article 28 (third-party ICT risk, supply-chain transparency to second hop, exit-readiness with tested exit drills).
+DORA (Regulation EU 2022/2554) — in force since **17 January 2025**. ICT risk management (Arts. 5-16, esp. Art. 6), major-incident reporting (Arts. 17-19, with deadlines set by Delegated Regulation (EU) 2025/301), digital operational resilience testing (Arts. 24-27, TLPT at 26-27), ICT third-party risk (Arts. 28-30), concentration risk (Art. 29), and tested exit strategies (Art. 28(8), contractual clause at Art. 30(3)(f)).
 
-NIS2 (Directive EU 2022/2555) — transposition deadline **17 October 2024**. Cloud providers, datacenter providers, MSPs, MSSPs are essential entities (Annex I, Digital Infrastructure). Same Article 21 + Article 23 + supply-chain transparency obligations.
+NIS2 (Directive EU 2022/2555) — transposition deadline **17 October 2024**. Cloud providers, datacenter providers, MSPs, MSSPs are essential entities (Annex I, Digital Infrastructure). Article 21 risk-management measures, Article 23 incident reporting, Article 20 management-body accountability, Article 12 coordinated vulnerability disclosure, and Article 21(2)(d) supply-chain security.
 
 Sovereign-cloud frameworks: EUCS (EU Cybersecurity Certification Scheme — emerging), SecNumCloud (France), BSI C5 (Germany), Kazakhstan procurement-mandated sovereignty, APAC variants (Singapore IM8, India MeitY, Australia IRAP).
 

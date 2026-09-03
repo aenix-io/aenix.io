@@ -52,7 +52,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/cloud-native-research-and-teaching-infrastructure/">Cloud-native Forschungs-Infrastruktur →</a>
+  <a class="cta-secondary" href="/blog/2026/05/cloud-native-research-and-teaching-infrastructure/">Cloud-native Forschungs-Infrastruktur (englisch) →</a>
 </div>
 
 ---
@@ -185,7 +185,7 @@ Für konkrete Konditionen siehe Discovery-Call.
 </div>
 
 Oder mehr lesen:
-- **[Artikel zu Cloud-native Forschungs- und Lehr-Infrastruktur](/blog/2026/05/cloud-native-research-and-teaching-infrastructure/)** — Langform
+- **[Artikel zu Cloud-native Forschungs- und Lehr-Infrastruktur (englisch)](/blog/2026/05/cloud-native-research-and-teaching-infrastructure/)** — Langform
 - **[Souveräne KI](/de/loesungen/sovereign-ai/)** — KI/ML-Forschung mit sensiblen Daten
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Souveränität von Forschungsdaten
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Engagement-Methodik

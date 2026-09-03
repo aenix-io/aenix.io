@@ -1,6 +1,6 @@
 ---
 title: "Industry 4.0 platform — cloud + edge architecture for manufacturing in 2026"
-description: "Companion to manufacturing industry page."
+description: "Industry 4.0 architecture in 2026: edge-to-core patterns, sovereignty for industrial IP, and the NIS2 controls manufacturers are now in scope for."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "Real-time control, IoT ingestion, local AI inference, OT/IT bridge", correct: true }
       explanation: "Production-floor edge: real-time control + IoT data ingestion (sensors, smart meters) + local AI inference + OT/IT interface. Core principle: keep latency-critical and OT-zone work close to the machinery; let regional and HQ tiers handle aggregation/training."
 ---
-
-Companion to **[manufacturing industry page](/industries/manufacturing)**.
 
 ## What Industry 4.0 actually means in 2026
 
@@ -87,12 +85,3 @@ Industrial IP — design data, formulations, process specifications — has high
 ## NIS2 compliance
 
 Manufacturing of critical products (medical devices, computers, electronic equipment, machinery, motor vehicles) is in NIS2 scope. Architectural implications same as broader NIS2 — see **[NIS2 compliance](/solutions/nis2-compliance/)**.
-
-## How to start
-
-**[Manufacturing industry page](/industries/manufacturing)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

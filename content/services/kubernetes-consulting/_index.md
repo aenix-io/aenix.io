@@ -49,7 +49,7 @@ faq:
 
 Ænix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a multi-tenant Kubernetes-native platform we run in production with service providers, banks, and AI operators. Our Kubernetes consulting engagements bring the same engineers into your team.
 
-> **Pairs with:** any **[Ænix platform](/products/)** when consulting scope expands into a productized cloud platform engagement. Stand-alone consulting also available for organizations not yet evaluating Ænix Platform.
+> **Pairs with:** any of the three **[Ænix platforms](/products/)** once scope expands into a productized cloud platform. Stand-alone consulting is available without one.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -165,10 +165,8 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 
 ## Why Ænix specifically
 
-- **Cozystack contributors and operators.** We built and operate the open-source platform. The Kubernetes recommendations come from systems we run in production.
-- **Senior engineers, not analysts.** No bait-and-switch.
-- **Open-source bias.** We don't sell licensed distributions. The recommendation is the right Kubernetes stack for your case.
-- **EU + Central Asia teams.** Time-zone-friendly for European customers.
+- **We sell no licensed distribution.** That is the whole reason to ask us which one you should run. A consultancy with an OpenShift or a Tanzu practice has an answer before the question.
+- **We wrote one.** Cozystack is our code, in production with service providers, banks and AI operators. The multi-tenancy and storage recommendations come from operating it, not from reading about it.
 
 <!-- /BLOCK 6 -->
 
@@ -193,26 +191,12 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 {{< clients >}}
 
 {{< quote-carousel >}}
-Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
+The logos above are production Ænix Public Cloud Platform deployments. Named references for the NDA-covered engagements are shared on the discovery call.
 <!-- /BLOCK 8 -->
 
 ---
 
-<!-- BLOCK 9: PRICING -->
-
-<div class="pricing-cards-2">
-
-### Architecture review (5-10 days)
-Fixed-price.
-**On request**
-
-### Implementation engagement
-Time-and-materials or fixed-scope. Phase 2 typically 1-6 months.
-**On request**
-
-</div>
-
-<!-- /BLOCK 9 -->
+The architecture review is fixed-price; implementation is time-and-materials or fixed-scope depending on how clear the scope is at signature. Both quoted after the discovery call.
 
 ---
 
@@ -243,8 +227,3 @@ Time-and-materials or fixed-scope. Phase 2 typically 1-6 months.
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO: title "Kubernetes Consulting — Engineers Who Run Multi-Tenant Platforms | Ænix"
-Description: "Kubernetes consulting from engineers who built and operate the open-source Cozystack platform. Architecture, multi-tenancy, production readiness."
-Word count: ~900.
--->

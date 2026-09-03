@@ -119,5 +119,3 @@ Customer-base evidence: most Ænix engagements are 200+ engineering organization
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack. We engage on projects where the architecture genuinely fits.*
 
-<!-- Honest positioning page; reduces unqualified leads + builds trust.
-Word count: ~500. -->

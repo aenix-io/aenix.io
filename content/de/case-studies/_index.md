@@ -3,6 +3,7 @@ title: "Case Studies"
 description: "Fünf Aenix-Deployments mit Zahlen: GPU-Repatriation, Proxmox-Konsolidierung, souveräne Public Cloud, GPU-Bursting, KI-Plattform als Installer."
 hero_subtitle: "Echte Ænix-Platform-Deployments aus Hosting, KI und Forschung"
 language: "de"
+hreflang_en: /case-studies/
 ---
 
 **Neun Deployments, unten ausführlich dokumentiert: wie das Estate vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der Public Cloud Platform, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
@@ -123,4 +124,4 @@ Erste NDA-Abläufe erwartet Mitte 2027. Sobald sie landen, werden namentliche Ca
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

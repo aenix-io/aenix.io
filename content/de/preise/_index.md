@@ -3,6 +3,7 @@ title: "Ænix Platform Preise"
 description: "Ænix Platform Preise: Preisliste für Anbieter ab 1.250 USD/Monat pro 10 Nodes; Enterprise-Programme nach RFP. Cozystack bleibt kostenlos."
 hero_subtitle: "Veröffentlichte Preisliste für Anbieter ab 1.250 USD/Monat; Enterprise-Programme nach RFP"
 language: "de"
+hreflang_en: /pricing/
 ---
 
 **Cozystack ist kostenlos (Apache 2.0). Für die Ænix Platform — unsere schlüsselfertige kommerzielle Cloud-in-a-Box — gibt es zwei Wege. Hosting-Anbieter, MSPs und Produktteams kaufen aus einer veröffentlichten Preisliste: Support-Tiers pro 10 physische Nodes, ab 1.250 USD / Monat. Enterprise-, Public-Cloud-, IDP- und AI/ML-Programme werden nach RFP kalkuliert — die Zahl hängt von Estate-Größe, regulatorischem Scope, Migrationsvolumen und Betriebsmodell ab, und jede auf einer Webseite gedruckte Zahl wäre für Ihren Fall falsch.**
@@ -33,7 +34,7 @@ Plus Engagement-Zusätze (Platform Readiness Assessment, Pilot, Full Build, Mana
 | **Public Cloud Platform im Betreiber-Maßstab** | Telcos, nationale Betreiber, Banken und große Public Clouds mit kommerzieller Cloud | Mehrjähriges Programm, Angebot nach RFP |
 | **Private Cloud Platform** | Regulierte Unternehmen, die Cloud für die eigenen Nutzer betreiben (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | Mehrjähriges Programm, Angebot nach RFP |
 
-Zwei Module erweitern beide Plattforms und werden mit dem Engagement kalkuliert:
+Zwei Module erweitern beide Plattformen und werden mit dem Engagement kalkuliert:
 
 | Modul | Was es hinzufügt |
 |---|---|
@@ -42,7 +43,7 @@ Zwei Module erweitern beide Plattforms und werden mit dem Engagement kalkuliert:
 
 Plus **Entry-Tier — Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
 
-[Alle Plattforms entdecken →](/de/produkte/)
+[Alle Plattformen entdecken →](/de/produkte/)
 
 ---
 
@@ -100,9 +101,9 @@ Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen
 
 ### Vollständiger Plattform-Build
 
-9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML Deployments. Wochen-zu-live für Public Cloud Platform mit produktisiertem Installer.
+9-18 Monate für Private-Cloud- und AI-Platform-Programme sowie Multi-Region-Builds. Wochen-zu-live für Public Cloud Platform mit produktisiertem Installer.
 
-**Kosten:** Public Cloud Platform projektbasiert auf monatlichem Support; Public Cloud / Enterprise / IDP / AI/ML nach RFP.
+**Kosten:** Public Cloud Platform projektbasiert auf monatlichem Support; Private-Cloud- und AI-Platform-Programme sowie Multi-Region-Builds nach RFP.
 
 ### Managed Operations
 
@@ -146,7 +147,7 @@ Ja. Cozystack ist Open Source unter Apache 2.0. Keine Per-CPU, Per-VM oder Per-C
 
 ### Wie funktioniert Plattform × Support-Tier-Pricing?
 
-Plattform bestimmt das Feature-Bundle (welche Ænix Platform Sie kaufen — ISP, Enterprise, etc.). Support-Tier bestimmt das Ænix-Support-Niveau (Basic, Standard, Plus, Enterprise). Beide gelten für Ihr Engagement. Discovery-Call klärt die richtige Kombination für Ihren Scope.
+Plattform bestimmt das Feature-Bundle (welche der drei Ænix-Plattformen Sie kaufen — Public Cloud, Private Cloud oder AI). Support-Tier bestimmt das Ænix-Support-Niveau (Basic, Standard, Plus, Enterprise). Beide gelten für Ihr Engagement. Discovery-Call klärt die richtige Kombination für Ihren Scope.
 
 ### Was ist der günstigste Weg, mit Ænix Platform zu starten?
 

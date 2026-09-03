@@ -1,6 +1,6 @@
 ---
-title: "DORA-Nachweise aus der Ænix-Plattformschicht"
-description: "Plattformseitige DORA-Nachweise: Resilienz, Backup und Wiederherstellung, Vorfallsaufzeichnungen und IKT-Drittparteienrisiko bei selbst betriebener Open Source."
+title: "DORA-Nachweise aus der Ænix-Plattformenchicht"
+description: "Plattformeneitige DORA-Nachweise: Resilienz, Backup und Wiederherstellung, Vorfallsaufzeichnungen und IKT-Drittparteienrisiko bei selbst betriebener Open Source."
 page_type: "solution-landing"
 language: "de"
 quick_facts_style: "rows"
@@ -18,7 +18,7 @@ direct_answer: |
   **Diese Seite ist die plattformseitige Hälfte einer DORA-Diskussion: was die Ænix-Plattformen gegenüber der Verordnung (EU) 2022/2554 tatsächlich leisten und was keine Infrastruktur für Sie halten kann. Für das Kapitel, das die meisten Plattformgespräche entscheidet — die Abhängigkeit von einem einzelnen IKT-Anbieter — fällt die Antwort ungewöhnlich stark aus. Die Engine ist quelloffene Software unter Apache 2.0, sie läuft auf Ihrer eigenen Hardware, und ein Wechsel bedeutet, standardisierte Kubernetes-Objekte und virtuelle Maschinen zu bewegen, statt ein proprietäres Format aufzulösen; die Exit-Strategie nach Art. 28 Abs. 8 lässt sich also proben statt vertraglich zusichern. Auf der Resilienzseite bringt die Plattform replizierten Speicher, Live-Migration, kontinuierlich abgeglichenen deklarierten Zustand, standortübergreifende Topologien und verschlüsselte Backups mit. DORA selbst bindet Finanzunternehmen, nicht Plattformen; Aenix behauptet weder DORA-Konformität noch eine DORA-Zertifizierung. Für das Prüfprogramm siehe das DORA-Compliance-Engagement.**
 quick_facts:
   - label: "Was diese Seite ist"
-    value: "Plattformseitiger Kontroll-Nachweis. Das aufsichtsgerichtete Engagement liegt auf der DORA-Compliance-Lösungsseite."
+    value: "Plattformeneitiger Kontroll-Nachweis. Das aufsichtsgerichtete Engagement liegt auf der DORA-Compliance-Lösungsseite."
   - label: "Regulierung"
     value: "Verordnung (EU) 2022/2554, anwendbar seit 17. Januar 2025 auf die in Art. 2 genannten Finanzunternehmen."
   - label: "Drittparteienrisiko"

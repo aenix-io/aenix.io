@@ -1,0 +1,41 @@
+{{/*
+  utm-capture — first-party UTM capture so Pipedrive Web Forms attribute leads to
+  the campaign that brought the visitor, even after internal navigation.
+
+  - Captures utm_* + gclid on ANY page into first-party cookies (first-touch kept
+    forever, last-touch overwritten). Shared across *.aenix.io.
+  - Does NOT touch the URL globally (so it never self-tags GA4 on normal pages).
+  - Exposes window.aenixUTM.restoreForForm(): form pages call it right before the
+    Pipedrive loader so the loader (which reads UTM from the page URL) can capture
+    the stored campaign. GA4 here is consent-gated (loads later via consent.js),
+    which keeps the self-tag risk low.
+*/}}
+<script>
+(function(){
+  var P=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','utm_id','gclid'];
+  function gc(n){var m=document.cookie.match('(^|;)\\s*'+n+'=([^;]*)');return m?decodeURIComponent(m[2]):'';}
+  function sc(n,v){var d=new Date();d.setTime(d.getTime()+90*864e5);
+    var base=n+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';
+    /* Share across *.aenix.io in production; fall back to a host-only cookie on
+       deploy previews and localhost, where the .aenix.io domain write is dropped. */
+    document.cookie=base+';domain=.aenix.io';
+    if(!gc(n)){document.cookie=base;}}
+  var q=new URLSearchParams(location.search),cur={},has=false;
+  P.forEach(function(k){var v=q.get(k);if(v){cur[k]=v;has=true;}});
+  if(has){
+    sc('aenix_utm_last',JSON.stringify(cur));
+    if(!gc('aenix_utm_first')){ cur._ts=Date.now(); sc('aenix_utm_first',JSON.stringify(cur)); }
+  }
+  window.aenixUTM={
+    last:function(){try{return JSON.parse(gc('aenix_utm_last')||'{}');}catch(e){return{};}},
+    first:function(){try{return JSON.parse(gc('aenix_utm_first')||'{}');}catch(e){return{};}},
+    restoreForForm:function(){
+      var l=this.last(); var keys=Object.keys(l).filter(function(k){return k.charAt(0)!=='_';});
+      if(!keys.length) return;
+      var u=new URL(location.href),changed=false;
+      keys.forEach(function(k){ if(!u.searchParams.get(k)){ u.searchParams.set(k,l[k]); changed=true; } });
+      if(changed){ try{ history.replaceState(null,'',u.toString()); }catch(e){} }
+    }
+  };
+})();
+</script>

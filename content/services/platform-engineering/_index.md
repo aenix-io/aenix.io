@@ -6,7 +6,6 @@ related_pages:
   - /services/kubernetes-consulting/
   - /services/platform-readiness-assessment/
   - /products/private-cloud-platform/
-  - /products/private-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -49,7 +48,7 @@ faq:
 
 Ænix is the platform engineering team behind [Cozystack](/products/cozystack/), a CNCF project running in production with service providers, banks, and AI operators. We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
 
-> **Pairs with:** **[the developer self-service layer of Ænix Private Cloud Platform](/products/private-cloud-platform/)** for product / SaaS engineering teams; **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises building internal platforms. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — its developer self-service layer is the product form of this engagement. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -61,9 +60,6 @@ Production-grade platform team · Apache 2.0 foundation · Engineers, not archit
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -142,7 +138,6 @@ Engineering excellence without a product orientation produces an internally-cons
 
 </div>
 
-These failure modes are predictable and avoidable — the engagement structure deliberately prevents each.
 
 <!-- /BLOCK 4 -->
 
@@ -215,8 +210,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 We've built or operated platforms for service providers running multi-tenant clouds, regulated enterprises building internal developer platforms, AI/GPU operators, telecom operators, and sovereign-cloud initiatives across the EU, DACH, and Central Asia. Workloads include VMs, containers, managed databases, S3, and GPU.
 
 {{< quote-carousel >}}
-Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
-Named case studies available on the discovery call where customer permissions allow.
+The logos above are production Ænix Public Cloud Platform deployments. Named references for the NDA-covered engagements are shared on the discovery call.
 
 <!-- /BLOCK 8 -->
 
@@ -226,34 +220,14 @@ Named case studies available on the discovery call where customer permissions al
 
 ## Pricing and engagement scope
 
-<div class="pricing-cards-2">
-
-### Assessment (14-28 days)
-Fixed-price. Written deliverable, target architecture, Phase 2 roadmap.
-**On request**
-
-### Build / Managed engagement
-Time-and-materials or fixed-scope, depending on scope clarity. Phase 2 implementation typically 3-12 months elapsed; managed-services typically annual.
-**On request**
-
-</div>
-
-If Phase 2 follows assessment, the assessment cost is credited against the implementation engagement subject to scope.
-
-We accept RFI / RFP through standard procurement channels.
+The assessment is fixed-price, quoted before it starts. Build is time-and-materials or fixed-scope depending on scope clarity; managed operations are an annual retainer. If Phase 2 follows the assessment, the assessment cost is credited against it, subject to scope. We accept RFI / RFP through standard procurement channels.
 
 <!-- /BLOCK 9 -->
 
 ---
 
-<!-- BLOCK 10: FAQ -->
-
-
 **More questions?** See the **[platform engineering vs DevOps guide](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** or **[talk to us](#discovery)**.
 
-<!-- /BLOCK 10 -->
-
----
 
 <!-- BLOCK 11: BOTTOM CTA -->
 

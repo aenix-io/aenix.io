@@ -39,7 +39,7 @@ faq:
 
 **"Cloud engineering" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Ænix engagement applies senior engineers — not consultants — to the cloud architecture, automation, and operations work your team needs.**
 
-> **Pairs with:** any **[Ænix platform](/products/)** when scope expands to a productized cloud platform. Stand-alone engineering augmentation also available for organizations not yet evaluating Ænix Platform.
+> **Pairs with:** any of the three **[Ænix platforms](/products/)** once scope expands into a productized cloud platform. Stand-alone engineering augmentation is available without one.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -81,10 +81,6 @@ For broader scope see **[Platform Engineering services](/services/platform-engin
 </div>
 </div>
 
-- Architecture review (5-10 days)
-- Implementation engagement (1-6 months)
-- Managed engagement
-
 For methodology see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 <div class="cta-row">
@@ -95,5 +91,3 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "Cloud Engineering Services — Practical Engineering Across Stacks | Ænix"
-Word count: ~300. -->

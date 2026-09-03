@@ -22,7 +22,7 @@ quick_facts:
   - label: "Technologiebasis"
     value: "Cozystack: KubeVirt (VMs + Container über eine Kubernetes-API), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Produkt-Optionen"
-    value: "the developer self-service layer of Ænix Private Cloud Platform für Produkt-/SaaS-Teams; Private Cloud Platform für regulierte Unternehmen"
+    value: "Developer-Self-Service-Schicht der Ænix Private Cloud Platform für Produkt-/SaaS-Teams; Private Cloud Platform für regulierte Unternehmen"
 faq:
   - q: "Was ist der Unterschied zwischen Platform Engineering, DevOps und SRE?"
     a: "Platform Engineering baut eine interne Plattform als Produkt für Entwickler-Teams, statt einzelne Pipelines oder Services manuell zu betreiben. DevOps und SRE bleiben relevant, werden aber von operativer Last entlastet, sobald die Plattform Self-Service-Umgebungen und standardisierte Workflows bereitstellt."
@@ -44,7 +44,7 @@ faq:
 
 Ænix ist das Platform-Engineering-Team hinter [Cozystack](/de/produkte/cozystack/), einem CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Wir erweitern unser Team in Ihres — bauen, betreiben oder beschleunigen die interne Entwickler-Plattform, die Ihre Organisation tatsächlich braucht.
 
-> **Passt zu:** **[the developer self-service layer of Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für Produkt- / SaaS-Engineering-Teams; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die interne Plattformen aufbauen. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
+> **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für Produkt- / SaaS-Engineering-Teams; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die interne Plattformen aufbauen. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

@@ -43,18 +43,12 @@ quiz:
       explanation: "OpenStack operators are used to imperative APIs. Cozystack expects GitOps for production changes — a culture shift, not just a tool shift. Engineers need 4-8 weeks focused training plus 3-6 months practice to internalise GitOps discipline."
 ---
 
-**Long-form companion to the [OpenStack migration hub](/migration/openstack/). A cohort-based migration playbook from production OpenStack to Cozystack — covering component mapping, image conversion, networking redesign, operational handover, and the realistic timeline for tier-1 telco-scale and mid-size enterprise estates.**
-
 OpenStack remains widely deployed in telecom and large-enterprise
 infrastructure. Modernization is not a one-size-fits-all conversation:
 mature telco-scale OpenStack with deep vendor distro support is a
 different migration than a mid-size enterprise running upstream
 OpenStack with a small ops team. Both can move to Cozystack; the
 phasing and risk profile differ substantially.
-
-This article walks through what an OpenStack-to-Cozystack migration
-actually looks like in 2026 — phase by phase, with the architectural
-decisions that matter and the gotchas that recur.
 
 ## Where OpenStack still works (and we'll say so)
 
@@ -348,10 +342,3 @@ Poor fit:
   common target product for hosting-provider OpenStack migrations
 - **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
   common target product for tier-1 telco OpenStack migrations
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. We have shipped OpenStack-to-Cozystack
-migrations across hosting providers and telco operators; specific
-named case studies remain NDA-protected.*

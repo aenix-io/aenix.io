@@ -43,8 +43,6 @@ quiz:
       explanation: "Phase 4 explicitly states: 'No kubectl access to customer production cluster — operates via GitOps PR review only. Critical for bank governance.'"
 ---
 
-**Long-form companion to the [financial-services industry page](/industries/financial-services/). For platform engineers and infrastructure leads at banks, insurers, payment institutions, and market-infrastructure providers translating DORA's TLPT, supplier-chain transparency, and exit-readiness obligations into architecture that survives a real supervisor cycle — not a policy review.**
-
 The DORA conversation at most financial-services organisations split
 into two halves in 2024-2025. The first half — governance, policy,
 ICT risk management documentation — went to legal, compliance, and
@@ -56,10 +54,6 @@ DORA-compliant when a real TLPT cycle hits — has been quieter. That
 silence is starting to break in 2026. Supervisor TLPT exercises are
 reaching architectures that were assumed compliant when DORA went
 live but had never been tested under realistic regulator scrutiny.
-
-This article walks through what TLPT readiness actually looks like
-at the architecture level — what platform engineers should already
-have done, what gaps recur, and what an Ænix engagement closes.
 
 ## What TLPT means and why it matters now
 
@@ -305,10 +299,3 @@ Poor fit:
   product-level architectural detail
 - **[DORA compliance checklist resource](/resources/dora-compliance-checklist/)** —
   downloadable controls checklist
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Our tier-1 European bank engagements are
-NDA-protected until mid-2027; first named bank case studies will be
-published as NDAs expire.*

@@ -13,33 +13,33 @@ quiz:
     - q: "Wie viele parallele Workstreams strukturieren das 14-Tage-Assessment?"
       options:
         - { text: "Zwei", correct: false }
-        - { text: "Vier — Inventar, Souveränität/Regulator, Kosten, Developer-Self-Service", correct: true }
+        - { text: "Vier", correct: true }
         - { text: "Acht", correct: false }
-      explanation: "Vier Workstreams parallel: (1) Inventar und Plattform-Reife, (2) Souveränität und Regulator-Lücke, (3) Kosten und Cloud-Spend-Posture, (4) Developer-Self-Service und Platform Engineering. Jeder mappt zu einem Buyer-Druck."
-    - q: "Welcher Anteil von Public-Cloud-Spend ist in 6-12 Monaten typischerweise repatriierbar (ohne Performance-Regression)?"
+      explanation: "Vier Workstreams laufen parallel: (1) Inventar und Plattformreife, (2) Souveränität und Aufsichtslücke, (3) Kosten und Cloud-Ausgabenlage, (4) Developer-Self-Service und Platform Engineering. Jeder Workstream adressiert genau einen der vier Beschaffungsdrücke auf Kundenseite."
+    - q: "Welcher Anteil der Public-Cloud-Ausgaben ist in 6–12 Monaten typischerweise repatriierbar, ohne dass die Performance leidet?"
       options:
-        - { text: "5-10%", correct: false }
-        - { text: "15-35%", correct: true }
-        - { text: "70-90%", correct: false }
-      explanation: "Häufige Workstream-3-Findings: 15-35% von Public-Cloud-Spend strukturell in 6-12 Monaten repatriierbar ohne Performance-Regression; Egress-Kosten konzentriert in Flows die nie architektonisch entschieden wurden; Reservation-Realisierungsrate unter 60%."
-    - q: "Was passiert am Tag 10 des Assessments?"
+        - { text: "5–10 Prozent", correct: false }
+        - { text: "15–35 Prozent", correct: true }
+        - { text: "70–90 Prozent", correct: false }
+      explanation: "Häufige Befunde aus Workstream 3: 15–35 Prozent der Public-Cloud-Ausgaben lassen sich in sechs bis zwölf Monaten strukturell zurückholen, ohne Performance einzubüßen; Egress-Kosten konzentrieren sich in Datenflüssen, die nie bewusst entworfen wurden; die Einlösequote der Reservierungen liegt unter 60 Prozent."
+    - q: "Was passiert an Tag 10 des Assessments?"
       options:
-        - { text: "Final Executive Readout", correct: false }
-        - { text: "Findings Checkpoint — vorläufige Findings mit Kunde geteilt zum Korrigieren oder Bestreiten vor finaler Berichterstellung", correct: true }
-        - { text: "Vendor-Auswahl-Workshop", correct: false }
-      explanation: "Tag 10 ist der Findings-Checkpoint (60 min). Kunde korrigiert, schärft oder bestreitet vorläufige Findings, bevor der finale Bericht in Tagen 11-13 erstellt wird. Final Executive Readout ist Tag 14."
-    - q: "Warum verzichtet Aenix auf vorab-festgelegte Antworten am Tag 0?"
+        - { text: "Das abschließende Executive Readout", correct: false }
+        - { text: "Der Zwischenstand mit den vorläufigen Befunden", correct: true }
+        - { text: "Der Workshop zur Anbieterauswahl", correct: false }
+      explanation: "Tag 10 ist der Zwischenstand (60 Minuten). Der Kunde korrigiert, schärft oder widerspricht den vorläufigen Befunden, bevor der Bericht an den Tagen 11 bis 13 geschrieben wird. Das abschließende Executive Readout findet an Tag 14 statt; die Anbieterauswahl gehört nur in die 28-Tage-Variante."
+    - q: "Warum lehnt Aenix eine bereits feststehende Antwort an Tag 0 ab?"
       options:
-        - { text: "Weil parallele Workstreams sonst nicht möglich sind", correct: false }
-        - { text: "Ein Bericht aligned mit einer vorab-festgelegten Antwort wird intern als Confirmation Bias abgewertet", correct: true }
-        - { text: "Weil das Engagement-Pricing wechselt", correct: false }
-      explanation: "Wenn der Sponsor mit \"wir migrieren alles zu Azure\" oder \"wir gehen on-prem mit Cozystack\" als bereits getroffene Entscheidung kommt, wird der Bericht intern als Confirmation Bias abgewertet. Vor-festgelegte Antworten kontaminieren das Assessment."
-    - q: "Welche Situation ist eine STARKE Passform für das Assessment?"
+        - { text: "Weil sich die parallelen Workstreams sonst nicht planen lassen", correct: false }
+        - { text: "Weil der Bericht dann intern als Bestätigungsfehler abgewertet wird", correct: true }
+        - { text: "Weil sich dadurch die Preisstufe des Auftrags ändert", correct: false }
+      explanation: "Wenn der Auftraggeber bereits mit „wir gehen komplett zu Azure“ oder „wir gehen on premises mit Cozystack“ in das Assessment startet, wird der Bericht intern als Bestätigungsfehler abgewertet und entfaltet keine Wirkung. Vorab feststehende Antworten verfälschen die Bewertung."
+    - q: "Welche Situation passt besonders gut zu einem Assessment?"
       options:
-        - { text: "Ein 5-Personen-IT-Team mit ein oder zwei Systemen", correct: false }
-        - { text: "Sie haben gerade einen mehrjährigen Hyperscaler-Commitment unterschrieben", correct: false }
-        - { text: "Ein spezifischer Regulator-Termin (DORA Article 28, NIS2-Transposition, sektoraler Audit)", correct: true }
-      explanation: "Starke Passform: spezifischer Regulator-Termin, anstehende vorstandsrelevante Kostenentscheidung, neue Plattform-Engineering-Funktion die einen externen Baseline benötigt, KI/Datenresidenz-Projekt das im Architektur-Review blockiert ist."
+        - { text: "Ein Fünf-Personen-IT-Team mit ein oder zwei Systemen", correct: false }
+        - { text: "Ein gerade unterschriebenes mehrjähriges Hyperscaler-Commitment", correct: false }
+        - { text: "Ein konkreter aufsichtsrechtlicher Termin, etwa DORA oder NIS2", correct: true }
+      explanation: "Gute Passform: ein konkreter aufsichtsrechtlicher Termin (DORA Artikel 28, NIS2-Umsetzung, ein sektorales Audit), eine anstehende Kostenentscheidung auf Vorstandsebene, eine neu aufgebaute Platform-Engineering-Funktion, die eine externe Ausgangsbasis braucht, oder ein KI- beziehungsweise Datenresidenz-Projekt, das im Architektur-Review feststeckt."
 ---
 
 Begleitung zur **[Platform-Readiness-Assessment-Page](/de/dienstleistungen/platform-readiness-assessment)**.

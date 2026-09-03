@@ -1,8 +1,9 @@
 ---
 title: "Mit uns sprechen"
-description: "Kontaktieren Sie Aenix zu Ænix-Plattforms, Discovery-Calls oder Partnerschaften. EU-Büro: AENIX s.r.o. (Tschechien), US-Büro: AENIX INC (Delaware)."
+description: "Kontaktieren Sie Aenix zu Ænix-Plattformen, Discovery-Calls oder Partnerschaften. EU-Büro: AENIX s.r.o. (Tschechien), US-Büro: AENIX INC (Delaware)."
 hero_subtitle: "Discovery-Call buchen oder Partnerschaft besprechen"
 language: "de"
+hreflang_en: /contact/
 
 offices:
   - name: "EU Office"
@@ -19,7 +20,7 @@ offices:
       - "Registration Number: 10075938"
 ---
 
-**Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Plattforms, Ihr Buyer-Profil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**
+**Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Plattformen, Ihr Buyer-Profil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -136,4 +137,4 @@ Engineering-Teams verteilt in der EU und Zentralasien. Starke Präsenz in:
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

@@ -96,7 +96,7 @@ If two or more apply, structured private cloud consulting compounds. If you have
 <div class="grid-2x2">
 
 **1. Architecture design**
-Compute layer (KubeVirt-based virtualization, container orchestration), storage (LINSTOR / Ceph), networking (Cilium / NSX-equivalent), identity, observability, backup/DR. Decisions documented with named trade-offs.
+Compute layer (KubeVirt-based virtualization, container orchestration), storage (LINSTOR/DRBD via Piraeus), networking (Cilium / NSX-equivalent), identity, observability, backup/DR. Decisions documented with named trade-offs.
 
 **2. Multi-tenancy and operations model**
 Tenant CRD, per-tenant quotas, RBAC, audit. For service-provider model, customer-facing portal and billing integration.
@@ -170,10 +170,8 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 
 ## Why Ænix specifically
 
-- **We operate private clouds in production.** Cozystack is in production with service providers and regulated enterprises.
-- **Open-source platform foundation.** [Cozystack](/products/cozystack/) is open-source CNCF Project. The platform we recommend is one you own — no vendor-roadmap lock-in.
-- **No hyperscaler bias.** Recommendations reflect technical fit, not partnership economics.
-- **EU + Central Asia teams** — time-zone friendly, sovereignty-aligned.
+- **No hyperscaler partnership.** On a private-cloud decision that is the material fact: nothing in our margin moves when the answer is "keep this in the public cloud", so we can say it.
+- **We operate the destination.** [Cozystack](/products/cozystack/) is in production with service providers and regulated enterprises, so the capacity model and the operational headcount in our recommendations come from bills we have paid.
 
 <!-- /BLOCK 6 -->
 
@@ -197,24 +195,8 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 {{< clients >}}
 
 {{< quote-carousel >}}
-Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
+The logos above are production Ænix Public Cloud Platform deployments. Named references for the NDA-covered engagements are shared on the discovery call.
 <!-- /BLOCK 8 -->
-
----
-
-<!-- BLOCK 9: PRICING -->
-
-<div class="pricing-cards-2">
-
-### Architecture review (5-15 days)
-**On request**
-
-### Implementation / Managed
-**On request**
-
-</div>
-
-<!-- /BLOCK 9 -->
 
 ---
 
@@ -244,8 +226,3 @@ Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby 
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO: title "Private Cloud Consulting — Engineers Who Design, Deploy, and Operate It | Ænix"
-Description (≤155): "Private cloud consulting from engineers who built and operate Cozystack open-source platform. Architecture, multi-tenancy, no vendor lock-in."
-Word count: ~900.
--->

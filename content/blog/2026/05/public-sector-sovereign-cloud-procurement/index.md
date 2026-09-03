@@ -1,6 +1,6 @@
 ---
 title: "Public-sector sovereign cloud — from procurement framework to running platform"
-description: "Long-form companion to the public-sector industry page: how procurement leads and IT directors turn sovereignty mandates into a running cloud platform."
+description: "How procurement leads and IT directors turn sovereignty mandates into a running cloud platform."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
@@ -43,8 +43,6 @@ quiz:
       explanation: "The post specifies a 12-36 month total timeline from project start to certified production — substantially longer than private-sector engagements because of certification overhead, but compounding into annual recertification afterwards."
 ---
 
-**Long-form companion to the [public-sector industry page](/industries/public-sector/). For procurement leads, IT directors, and platform engineers at government and quasi-public organisations translating sovereignty mandates and procurement frameworks into a running cloud platform — covering SecNumCloud, BSI C5, EUCS, Kazakhstan procurement-portal sovereignty, APAC variants, and what it takes to satisfy them substantively, not just contractually.**
-
 The public-sector sovereign-cloud conversation in 2026 is more
 fragmented than in financial services. There's no single regulation
 like DORA driving alignment. Instead, each jurisdiction has its own
@@ -52,10 +50,6 @@ framework, often layered on top of GDPR, NIS2, and sectoral overlays.
 A multinational public-sector engagement — or even a national one
 crossing regions — usually maps against three or more frameworks
 simultaneously.
-
-This article walks through what the major frameworks actually require,
-where they overlap, where they diverge, and what an architecturally-
-sovereign cloud platform delivers across all of them.
 
 ## The framework landscape
 
@@ -311,10 +305,3 @@ Poor fit:
   EU + KZ sovereign cloud playbook
 - **[Data residency requirements in 2026](/blog/2026/05/data-residency-requirements-2026/)** —
   per-layer residency walkthrough
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. AENIX s.r.o. (Czechia) is the EU contracting
-entity; AENIX INC (Delaware) is the US contracting entity. Engineering
-teams across the EU and Central Asia.*

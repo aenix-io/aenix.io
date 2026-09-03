@@ -1,6 +1,6 @@
 ---
 title: "Public Cloud Platform — what it actually takes to launch a sovereign cloud product at scale"
-description: "Long-form companion to the Public Cloud Platform page: what a multi-year, multi-million-euro sovereign cloud build covers for telcos, banks, and operators."
+description: "What a multi-year, multi-million-euro sovereign cloud build covers for telcos, banks, and operators."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
@@ -13,7 +13,7 @@ quiz:
   questions:
     - q: "How many managed services does an operator-scale build typically target compared to a provider-scale one?"
       options:
-        - { text: "30-50+ versus ~20 for ISP", correct: true }
+        - { text: "30-50+ versus ~20 at provider scale", correct: true }
         - { text: "Same ~20 at higher scale", correct: false }
         - { text: "100+ to match hyperscalers", correct: false }
       explanation: "The article states a provider-scale build exposes ~20 managed services while an operator-scale build typically targets 30-50+ across compute, storage, databases, AI/GPU, and more."
@@ -43,18 +43,11 @@ quiz:
       explanation: "Phase 1 covers hardware procurement and racking, Talos/Cozystack platform deployment in the first datacentre, storage layer, networking foundation, identity integration, and initial observability — ending with a working single-region internal platform."
 ---
 
-**Long-form companion to the [Public Cloud Platform landing](/products/public-cloud-platform/). For tier-1 telcos, national operators, big banks building their own cloud, and large sovereign cloud initiatives evaluating what a multi-million-euro Ænix engagement actually covers — and how to phase it across the 18-36 months it typically runs.**
-
 The Public Cloud Platform conversation is different from every other
 Ænix engagement. It's not "should we use Cozystack?" — that's already
 decided. It's "we are launching a cloud product at national or
 tier-1-customer scale; what does the partnership with Ænix look like
 across the 18-36 months it takes to ship?"
-
-This article walks through what an actual Public Cloud Platform build
-covers, how it phases, where most large cloud projects fail, and what
-makes the difference between a cloud product that customers will pay
-for and a cloud project that runs over budget.
 
 ## What Public Cloud Platform is built for
 
@@ -269,11 +262,3 @@ Engagement size: multi-year programme, quoted per RFP.
   for the sovereignty-specific variant
 - **[Build sovereign cloud — playbook for EU and Central Asia](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)** —
   sovereign cloud architectural patterns
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Our Public Cloud Platform engagements with
-tier-1 telcos and sovereign cloud initiatives are NDA-protected. Ænix
-secured $300K seed investment from Prospective Technologies in April
-2025 to accelerate platform development for these large engagements.*

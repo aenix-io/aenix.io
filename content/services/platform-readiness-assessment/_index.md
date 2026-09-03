@@ -41,7 +41,7 @@ faq:
 
 **If you're evaluating data sovereignty, DORA / NIS2 compliance, cloud repatriation, sovereign AI, or a self-service platform for your developers — this is the engagement that turns the question into a written plan with numbers, owners, and a timeline.**
 
-> **Pairs with:** all **[Ænix Platform editions](/products/)** — the assessment recommends which edition fits your scope.
+> **Pairs with:** all three **[Ænix platforms](/products/)** — the assessment names which one fits your scope, or says none of them does.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -53,9 +53,6 @@ faq:
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -220,8 +217,6 @@ That matters because:
 
 Ænix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project. The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
 
-{{< factoid number="5-20" label="platform readiness assessments Ænix runs per year across the EU and Central Asia" >}}
-
 <!-- /BLOCK 7 -->
 
 ---
@@ -259,23 +254,15 @@ If a Phase 2 engagement follows, the assessment cost is credited against the imp
 We've run platform readiness assessments for service providers, regional cloud providers, financial-services organizations, telecom operators, and sovereign-cloud initiatives across the EU and Central Asia.
 
 {{< quote-carousel >}}
-Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
-{{< quote-carousel >}}
 
-For named case studies see **[Customer stories](/case-studies/)** — request the protected versions on the discovery call where applicable.
+Named references and the protected versions of NDA-covered engagements are shared on the discovery call. [Customer stories →](/case-studies/)
 
 <!-- /BLOCK 9 -->
 
 ---
 
-<!-- BLOCK 10: FAQ -->
-
-
 **More questions?** See the **[methodology deep-dive on our blog](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)** or **[talk to us](#discovery)**.
 
-<!-- /BLOCK 10 -->
-
----
 
 <!-- BLOCK 11: BOTTOM CTA -->
 

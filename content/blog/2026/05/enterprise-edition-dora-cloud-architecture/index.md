@@ -29,13 +29,13 @@ quiz:
         - { text: "A second backup hyperscaler signed under contract", correct: false }
         - { text: "Tested feasibility — a rehearsal in the past 24 months", correct: true }
       explanation: "Pattern 2 in the Article 28 section explains that most entities have an exit plan on paper but few have rehearsed it, and supervisors are now asking for rehearsal within the last 24 months."
-    - q: "What does 'advisory-only support model' mean in Private Cloud Platform?"
+    - q: "What does the 'advisory-only support model' mean in a Private Cloud Platform engagement?"
       options:
         - { text: "Aenix engineers operate via GitOps PR review, not kubectl", correct: true }
         - { text: "Aenix only provides written advice and no engineering work", correct: false }
         - { text: "The customer must hire its own consultancy for cluster changes", correct: false }
       explanation: "Advisory-only means Aenix engineers don't need kubectl access to production; reviewers operate via GitOps PR review and runbooks remain customer-side — critical for banks where vendor-side access is a structural risk."
-    - q: "What total elapsed time does the article cite for an Private Cloud Platform production deployment at a tier-1 bank with full TLPT readiness?"
+    - q: "What total elapsed time does the article cite for a Private Cloud Platform production deployment at a tier-1 bank with full TLPT readiness?"
       options:
         - { text: "6 to 12 months", correct: false }
         - { text: "18 to 36 months", correct: true }
@@ -43,18 +43,12 @@ quiz:
       explanation: "The engagement structure section states 18–36 months for tier-1 banks with full TLPT readiness, and 12–18 months for mid-size regulated enterprises with narrower scope."
 ---
 
-**Long-form companion to the [Private Cloud Platform landing](/products/private-cloud-platform/). For regulated enterprises — banks, insurers, public-sector entities, energy operators, healthcare — translating DORA Article 21 and Article 28 obligations into a running cloud architecture that survives a supervisory audit.**
-
 Regulated-enterprise cloud architecture in 2026 is a different
 conversation than it was in 2022. DORA went into force on 17 January
 2025. NIS2 transposition deadline passed in October 2024. Supervisory
 expectations are sharpening with each TLPT cycle. The pre-DORA pattern
 — hyperscaler region with a few contractual clauses — does not survive
 realistic audit scrutiny.
-
-This article walks through what an audit-defensible cloud architecture
-actually looks like, why Ænix Private Cloud Platform is structured the
-way it is, and where most regulated organisations still have gaps.
 
 ## Article 21 — ten architectural areas
 
@@ -289,10 +283,3 @@ regulated enterprises with narrower scope.
   free downloadable controls checklist
 - **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   longer architecture-level DORA walkthrough
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution, OpenSSF Best Practices. Our Private Cloud Platform
-engagements with tier-1 European banks are NDA-protected until mid-2027;
-first named bank case studies will be published as NDAs expire.*

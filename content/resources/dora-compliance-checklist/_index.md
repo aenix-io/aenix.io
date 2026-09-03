@@ -11,7 +11,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The DORA Compliance Cloud Architecture Checklist is a free 35-point assessment that financial entities and ICT third-party providers use to evaluate whether their cloud infrastructure meets the EU Digital Operational Resilience Act (Regulation EU 2022/2554). It maps across six sections — workload portability and exit-readiness, concentration risk, operational resilience, sovereignty and supervisory access, third-party risk and contracting, and risk management and incident handling (the ICT risk-management framework of Articles 5-16 and incident classification and reporting under Articles 17-19). Aenix uses it during DORA-aligned readiness engagements. It pairs with Ænix Private Cloud Platform, built on Cozystack (CNCF Sandbox project, Apache 2.0), which delivers customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy aligned with ICT risk classification, and tested exit-readiness.**
+  **The DORA Compliance Cloud Architecture Checklist is a free 35-point assessment that financial entities and ICT third-party providers use to evaluate whether their cloud infrastructure meets the EU Digital Operational Resilience Act (Regulation EU 2022/2554). It maps across six sections — workload portability and exit-readiness, concentration risk, operational resilience, sovereignty and supervisory access, third-party risk and contracting, and risk management and incident handling (the ICT risk-management framework of Articles 5-16 and incident classification and reporting under Articles 17-19). Aenix uses it during DORA-aligned readiness engagements. It pairs with Ænix Private Cloud Platform, built on Cozystack (CNCF Sandbox project, Apache 2.0), which supplies opt-in volume encryption under keys you hold, API audit logging you route and retain yourself, Tenant CRD multi-tenancy you can align with ICT risk classification, and an exit you can rehearse because workloads stay standard Kubernetes objects and virtual machines. Aenix claims no DORA certification: none exists for a platform.**
 
 quick_facts:
   - label: "What it is"
@@ -25,7 +25,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
   - label: "Pairs with"
-    value: "Ænix Private Cloud Platform — DORA-aligned by design (customer-controlled keys, audit-ready logging, tested exit-readiness)"
+    value: "Ænix Private Cloud Platform — built to support DORA work: keys you hold, audit logging you retain, an exit you can rehearse. Not a DORA certification, which does not exist for a platform."
 
 faq:
   - q: "What is DORA and who must comply?"
@@ -35,7 +35,7 @@ faq:
   - q: "Is the checklist free to download?"
     a: "Yes. The checklist is a free PDF lead magnet. You request it through the form on this page and receive a download link. Aenix also uses the same checklist during paid DORA-aligned readiness engagements."
   - q: "How does Ænix Platform help with DORA compliance?"
-    a: "Ænix Private Cloud Platform is built on Cozystack and is DORA-aligned by design: customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy mapped to ICT risk classification, supplier transparency, and tested exit-readiness to reduce concentration and lock-in risk."
+    a: "It supplies platform-side controls a DORA programme leans on, not compliance itself — DORA binds financial entities, not platforms, and there is no DORA certificate to hold. Ænix Private Cloud Platform is built on Cozystack and gives you opt-in volume encryption under keys you hold, API audit logging you route and retain, Tenant CRD multi-tenancy you can map to ICT risk classification, an open supplier record, and an exit you can rehearse rather than one promised in a clause. The control-by-control detail, including what the platform does not provide, is on the DORA evidence page."
   - q: "Does the checklist replace a formal DORA audit?"
     a: "No. It is a self-assessment working surface to evaluate your current cloud architecture and prepare for supervisor dialog. For a full engagement, see the DORA compliance services page on aenix.io."
   - q: "Is Cozystack open source and what is its licensing model?"
@@ -44,7 +44,7 @@ faq:
 
 **A 35-point checklist for financial entities and ICT third-party providers evaluating DORA compliance posture for their cloud infrastructure. Covers the ICT risk-management framework (Articles 5-16), incident classification and reporting (Articles 17-19), resilience testing and TLPT (Articles 24-27), ICT third-party risk, exit strategies and key contractual provisions (Articles 28-30), encryption and audit-readiness. Used by Ænix during DORA-aligned readiness engagements.**
 
-> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — DORA-aligned by design (customer-controlled keys, audit-ready logging, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness, supplier transparency).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — built to supply the platform-side controls a DORA programme draws on: keys you hold, audit logging you retain, Tenant CRD multi-tenancy you can align with ICT risk classification, an open supplier record, and an exit you can rehearse. See the [DORA evidence page](/compliance/dora/) for what it does and does not cover.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" resource="dora-compliance-checklist" >}}
@@ -70,7 +70,7 @@ faq:
 <div class="diagram__conn">feeds</div>
 <div class="diagram__node diagram__node--brand"><b>DORA-aligned readiness engagement</b><div class="diagram__chips"><span>Used by Ænix</span></div></div>
 <div class="diagram__conn">prepares</div>
-<div class="diagram__node"><b>Supervisor dialog</b><div class="diagram__chips"><span>Tested exit-readiness</span></div></div>
+<div class="diagram__node"><b>Supervisor dialog</b><div class="diagram__chips"><span>Exit-readiness you can evidence</span></div></div>
 </div>
 </div>
 

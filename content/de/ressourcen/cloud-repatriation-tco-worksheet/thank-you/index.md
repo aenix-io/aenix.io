@@ -3,6 +3,7 @@ title: "Ihr Download ist bereit — Cloud-Repatriation-TCO-Worksheet"
 description: "Laden Sie Ihre Kopie des Cloud-Repatriation-TCO-Worksheet von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
+hreflang_en: /resources/cloud-repatriation-tco-worksheet/thank-you/
 page_type: "flag-page"
 hide_closing_cta: true
 ---

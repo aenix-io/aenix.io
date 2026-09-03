@@ -37,13 +37,13 @@ quick_facts:
     value: "Staffed operations team, exercised upgrade path, and heavy use of Ironic, Octavia, Manila or Designate — stay on OpenStack."
 faq:
   - q: "Which OpenStack services map cleanly to Cozystack, and which do not?"
-    a: "Nova maps to KubeVirt and Glance to CDI DataVolumes with no guest changes, because both platforms run libvirt/KVM. Cinder either keeps Ceph RBD or moves to LINSTOR/DRBD. Keystone projects are re-modelled onto the Tenant CRD. Neutron is a redesign onto Cilium rather than a conversion. Heat templates, Horizon customisations and Ceilometer-based billing integrations are rebuilt. Ironic bare-metal provisioning has no direct equivalent."
+    a: "Nova maps to KubeVirt and Glance to CDI DataVolumes with no guest changes, because both platforms run libvirt/KVM. Cinder either keeps an existing Ceph cluster, consumed over Ceph CSI, or moves to LINSTOR/DRBD. Keystone projects are re-modelled onto the Tenant CRD. Neutron is a redesign onto Cilium rather than a conversion. Heat templates, Horizon customisations and Ceilometer-based billing integrations are rebuilt. Ironic bare-metal provisioning has no direct equivalent."
   - q: "What is the hardest part of an OpenStack migration?"
     a: "Networking. Tenant networks, routers, floating IPs, security groups and provider VLANs are an addressing and policy model, not just plumbing. Cilium reaches the same outcomes through different primitives — network policy instead of security groups, LB IPAM with BGP or L2 announcements instead of floating IPs. Customer-visible addresses must either survive the move or be renumbered on an agreed schedule. Under-scoping this is the most common cause of a stalled OpenStack migration."
   - q: "How long does an OpenStack to Cozystack migration take?"
     a: "Four to twelve months for a mid-size deployment. It extends to twelve to eighteen months where the estate carries complex provider-network topology, or where tenants consume the OpenStack API directly and need a deprecation timeline for their own automation."
   - q: "Do we have to abandon Ceph?"
-    a: "No. Ceph RBD can stay in place via Rook and is often the right call when the investment is already made and the performance profile works. LINSTOR/DRBD is the alternative where you want replicated local NVMe rather than a distributed storage cluster. This is a design choice made in the assessment, not a forced rip-and-replace."
+    a: "No. An existing Ceph cluster can stay where it is, consumed through the Ceph CSI driver, and that is often the right call when the investment is already made and the performance profile works. LINSTOR/DRBD is the alternative where you want replicated local NVMe rather than a distributed storage cluster. This is a design choice made in the assessment, not a forced rip-and-replace."
   - q: "What happens to Heat templates and Terraform against the OpenStack API?"
     a: "They are rewritten against the Kubernetes API. Heat stacks do not convert; the equivalent is Helm plus GitOps reconciliation. For an internal cloud this is a training and refactoring cost. For a public cloud whose customers automate against your OpenStack endpoints, it is a product decision that needs a published deprecation timeline from day one of the plan."
   - q: "When should we stay on OpenStack instead of migrating?"
@@ -96,7 +96,7 @@ This is the part that decides scope. Each OpenStack project has a destination, a
 | Keystone (identity, domains, projects) | Tenant CRD plus Kubernetes RBAC, OIDC to your existing IdP | Redesign. Project trees do not map one-to-one; tenant hierarchy is modelled during the assessment. |
 | Nova (compute) | KubeVirt VMs on the same cluster as containers | Mechanical. Both sides are libvirt/KVM underneath. |
 | Glance (images) | Container Data Importer (CDI) DataVolumes, backed by object storage | Mechanical. QCOW2 and raw carry over. |
-| Cinder (block) | LINSTOR/DRBD, or keep Ceph RBD via Rook | Mechanical if Ceph stays; a data move if you consolidate onto LINSTOR. |
+| Cinder (block) | LINSTOR/DRBD, or keep your existing Ceph cluster via Ceph CSI | Mechanical if Ceph stays; a data move if you consolidate onto LINSTOR. |
 | Neutron (networking) | Cilium (eBPF) with L2 announcements or BGP; MetalLB where already standardised | Redesign. This is the hard part — see below. |
 | Swift / Ceph RGW (object) | S3-compatible object storage on the platform, or keep RGW | Usually keep. Object endpoints are long-lived and customer-facing. |
 | Octavia (load balancing) | Kubernetes Service type LoadBalancer plus an ingress layer | Redesign. Per-tenant LB semantics differ. |

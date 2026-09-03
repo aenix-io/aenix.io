@@ -1,6 +1,6 @@
 ---
 title: "When Cozystack fits SMB and mid-market — and when it doesn't"
-description: "Honest companion to SMB / mid-market industry page. Most SMB organizations don't need Cozystack. This article explains when they do, and what alternatives..."
+description: "Most SMB organizations do not need Cozystack. An honest test for when they do, and what to run instead when they do not."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "A bigger multi-region Cozystack", correct: false }
       explanation: "For container-only mid-market: vanilla Kubernetes is lighter than Cozystack (no KubeVirt overhead). Other \"doesn't fit\" alternatives include staying on existing managed cloud (don't fix what isn't broken) or Hetzner cloud + VPS for small operationally-simple teams."
 ---
-
-**Honest companion to [SMB / mid-market industry page](/industries/smb-mid-market). Most SMB organizations don't need Cozystack. This article explains when they do, and what alternatives fit when they don't.**
 
 ## The honest test
 
@@ -92,8 +90,3 @@ If you have 0-1 of these, Cozystack is over-engineering. If 2, marginal. If 3+, 
 - **Phase 2 implementation** — only if it actually fits
 
 For most SMB outreach, the honest answer is "stay where you are." We're explicit about this.
-
----
-
-*Ænix is the team behind Cozystack.*
-

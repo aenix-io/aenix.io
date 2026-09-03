@@ -44,7 +44,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/k12-school-district-cloud-infrastructure/">K-12-Cloud-Architektur →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/k12-schultraeger-cloud-infrastruktur/">K-12-Cloud-Architektur →</a>
 </div>
 
 ---
@@ -93,7 +93,7 @@ Für die meisten K-12-Schulträger sind Hyperscaler-managed-Services + Standard-
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Artikel zur Cloud-Infrastruktur für K-12-Schulträger](/blog/2026/05/k12-school-district-cloud-infrastructure/)**
+- **[Artikel zur Cloud-Infrastruktur für K-12-Schulträger](/de/blog/2026/05/k12-schultraeger-cloud-infrastruktur/)**
 - **[Branchenseite Universitäten](/de/branchen/universitaeten/)** — angrenzend
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Schülerdatenschutz
 

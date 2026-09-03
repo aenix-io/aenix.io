@@ -38,7 +38,7 @@
       {
         "@type": "ListItem",
         "position": {{ add $i 1 }},
-        "name": {{ index $crumb "name" | jsonify }},
+        "name": {{ index $crumb "name" }},
         "item": "{{ index $crumb "url" | absURL }}"
       }
     {{- end }}

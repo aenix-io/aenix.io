@@ -3,6 +3,7 @@ title: "Über Ænix"
 description: "Aenix ist ein Open-Core-Unternehmen aus Tschechien und den USA. Wir haben Cozystack (CNCF-Projekt) erstellt und kommerzialisieren es als Ænix Platform."
 hero_subtitle: "Das Open-Core-Unternehmen hinter Cozystack"
 language: "de"
+hreflang_en: /about/
 
 team:
   - name: "Andrei Kvapil"
@@ -71,7 +72,7 @@ community_champions:
       linkedin: "mattia-eleuteri"
 ---
 
-**Ænix ist ein Open-Core-Unternehmen mit Hauptsitz in Tschechien (AENIX s.r.o.) und den USA (AENIX INC, Delaware), mit Engineering-Teams in der EU und Zentralasien. Wir haben Cozystack erstellt und pflegen es — ein CNCF-Projekt (Apache 2.0) — und kommerzialisieren es als Ænix Platform, eine turnkey Cloud-in-a-Box produktisiert in zwei Plattforms.**
+**Ænix ist ein Open-Core-Unternehmen mit Hauptsitz in Tschechien (AENIX s.r.o.) und den USA (AENIX INC, Delaware), mit Engineering-Teams in der EU und Zentralasien. Wir haben Cozystack erstellt und pflegen es — ein CNCF-Projekt (Apache 2.0) — und kommerzialisieren es als Ænix Platform, eine turnkey Cloud-in-a-Box produktisiert in drei Plattformen.**
 
 ---
 
@@ -84,7 +85,7 @@ community_champions:
 - **CEO:** Andrei Kvapil
 - **COO:** Timur Tukaev
 - **Open-Source-Pedigree:** Wir haben Cozystack erstellt — CNCF-Projekt, Apache 2.0, derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026
-- **Kommerzielles Produkt:** Ænix Platform — zwei Plattforms (Public Cloud / Private Cloud / AI), plus Pure Cozystack mit Ænix-Support Entry-Tier
+- **Kommerzielles Produkt:** Ænix Platform — drei Plattformen (Public Cloud / Private Cloud / AI), plus Pure Cozystack mit Ænix-Support Entry-Tier
 - **Engagement-Skala:** Public Cloud Platform Entry ab 1.250 USD/Monat Support-Tier; Public Cloud / Enterprise Full Builds nach RFP
 - **Phase:** Frühe kommerzielle Reise — produktionsreife Technologie, wachsende Sales-Motion
 
@@ -143,7 +144,7 @@ Per CNCF-Community-Normen bleibt **cozystack.io vendor-neutral** — keine komme
 {{< two-cols image="/images/uploads/2023/12/1-edited.png" alt="Unsere Geschichte" >}}
 Wir starteten als Team von Plattform-Engineers, die Cloud-Infrastruktur für Service-Anbieter und regulierte Unternehmen aufbauten. Das Muster, das wir immer wieder sahen: Kunden wollten eine echte Cloud (Multi-Tenant, Billing, Portale, GPU, Managed Services), aber wollten weder Hyperscaler-Abhängigkeit noch VMware-Lock-in. Die existierenden Open-Source-Optionen (rohes Kubernetes, OpenStack im großen Maßstab) erforderten jahrelange Plattform-Engineering-Investitionen, die die meisten Kunden nicht leisten konnten.
 
-Also bauten wir Cozystack — eine Kubernetes-native Multi-Tenant-Cloud-Plattform — als die Foundation, die wir uns Jahre früher gewünscht hatten. Es wurde ein CNCF-Projekt. Dann produktisierten wir es als Ænix Platform: die turnkey Cloud-in-a-Box-Schicht obendrauf, in zwei Plattforms: eine zum Verkaufen von Cloud, eine für die eigene.
+Also bauten wir Cozystack — eine Kubernetes-native Multi-Tenant-Cloud-Plattform — als die Foundation, die wir uns Jahre früher gewünscht hatten. Es wurde ein CNCF-Projekt. Dann produktisierten wir es als Ænix Platform: die turnkey Cloud-in-a-Box-Schicht obendrauf, in drei Plattformen: eine zum Verkaufen von Cloud, eine für die eigene.
 {{< /two-cols >}}
 
 Kommerziell stehen wir am Anfang. Die Technologie ist produktionsreif — Cozystack läuft in Produktion bei regionalen Hosting-Anbietern, und wir haben Mehr-Millionen-Euro-Engagements mit Tier-1-europäischen-Banken unter NDA. Der Vertrieb ist noch im Aufbau.
@@ -201,7 +202,7 @@ Bis zu **40% Marge** auf Ænix-Platform-Verkäufe für Reseller, Integratoren un
 
 ### Was macht Ænix?
 
-Wir bauen turnkey Cloud-Plattformen für Hosting-Anbieter, regulierte Unternehmen, Public Clouds, Produkt-Engineering-Teams und KI-lastige Organisationen. Wir sind das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und kommerzialisieren es als Ænix Platform in zwei Plattforms.
+Wir bauen turnkey Cloud-Plattformen für Hosting-Anbieter, regulierte Unternehmen, Public Clouds, Produkt-Engineering-Teams und KI-lastige Organisationen. Wir sind das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und kommerzialisieren es als Ænix Platform in drei Plattformen.
 
 ### Wo seid ihr ansässig?
 
@@ -225,9 +226,9 @@ Open-Core-Unternehmen pflegen ein Open-Source-Projekt (hier: Cozystack) und komm
 
 ### Sind Sie eine Cozystack-Beratung?
 
-Nein. Wir sind ein Open-Core-Plattform-Vendor. Wir verkaufen Ænix Platform (die kommerzielle produktisierte Cloud-in-a-Box, zwei Plattforms) und Engineering-Services darum. Wir sind auch die Wartenden von Cozystack (der Open-Source-Foundation unter Ænix Platform) — aber Beratung zu Cozystack ist eine Nebenaktivität, nicht das primäre Geschäft.
+Nein. Wir sind ein Open-Core-Plattform-Vendor. Wir verkaufen Ænix Platform (die kommerzielle produktisierte Cloud-in-a-Box, drei Plattformen) und Engineering-Services darum. Wir sind auch die Wartenden von Cozystack (der Open-Source-Foundation unter Ænix Platform) — aber Beratung zu Cozystack ist eine Nebenaktivität, nicht das primäre Geschäft.
 
-### Warum zwei Plattforms?
+### Warum drei Plattformen?
 
 Derselbe Cozystack-Kern, zwei kommerzielle Pakete. Public Cloud Platform, wenn Sie Kapazität an Kunden verkaufen — Billing, Payments, Kundenportal, Tenant-Suspendierung. Private Cloud Platform, wenn Sie Cloud unter Aufsicht für die eigene Organisation betreiben — Schlüsselhoheit, auditfähiges Logging, Air-Gap. GPU und Developer Self-Service sind Module, weil beide Seiten danach fragen.
 
@@ -258,4 +259,4 @@ Buchen Sie einen 30-Minuten-Discovery-Call.
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

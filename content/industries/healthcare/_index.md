@@ -72,9 +72,6 @@ faq:
 
 ---
 
-
----
-
 ## What healthcare teams come to us for
 
 The four most-common entry points:
@@ -146,9 +143,6 @@ Output is a written report aligned with regulator dialog plus a Phase 2 implemen
 We do not publish named healthcare customers — health engagements are NDA-protected until permissions land. As an architectural evidence pattern, see our anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**: a multi-tenant platform running regulated workloads with full data residency and provider-held keys — the same structural pattern a hospital group or health insurer would deploy.
 
 {{< clients >}}
-
----
-
 
 ---
 

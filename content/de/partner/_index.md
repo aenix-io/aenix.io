@@ -3,6 +3,7 @@ title: "Ænix Partner-Programm"
 description: "Aenix Partner-Programm: bis zu 40% Marge auf Ænix-Platform-Verkäufe, Deal-Schutz, Sales-Kit und L3-Support für Reseller, Integratoren und Distributoren."
 hero_subtitle: "Offene Cloud-Plattform wiederverkaufen, bis zu 40% Marge"
 language: "de"
+hreflang_en: /partners/
 ---
 
 **Verkaufen Sie Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box — mit bis zu 40% Marge, Deal-Schutz und direktem Zugang zum Ænix-Core-Team. Für Integratoren, Reseller, Distributoren und regionale Cloud- / souveräne-Cloud-Builder.**
@@ -18,7 +19,7 @@ language: "de"
 
 - **Marge:** bis zu **40%** auf Ænix-Platform-Lizenz + Support-Tier-Verkäufe
 - **Deal-Schutz:** Registrierte Opportunities werden für den Partner reserviert — kein Channel-Konflikt
-- **Zwei Plattforms zu verkaufen:** Public Cloud / Private Cloud / AI
+- **Drei Plattformen zu verkaufen:** Public Cloud / Private Cloud / AI
 - **L3-Support-Zugang:** direkte Linie zum Ænix-Core-Engineering für Partner-supported Customers
 - **Training inklusive:** Kubernetes Deep Dive Kurs + Ænix-Platform-spezifische Befähigung
 - **Sales-Kit:** Decks, Battle Cards, Demo-Environment, Technical-Pre-Sales-Support
@@ -65,7 +66,7 @@ Aktuelle öffentliche Partner:
 ## Wie Partner werden
 
 1. **Bewerben** — Interesse einreichen via Partner-Programm-Bewerbungs-Formular oder E-Mail sales@aenix.io
-2. **Discovery-Call** (30 min) — Geschäft, Kundenstamm, Ziel-Plattforms, Geografie, Partner-Level-Fit besprechen
+2. **Discovery-Call** (30 min) — Geschäft, Kundenstamm, Ziel-Plattformen, Geografie, Partner-Level-Fit besprechen
 3. **Onboarding** (4 Wochen) — Sales + Technical + Operational Training; Demo-Environment-Zugang; Deal-Registrierungs-Setup
 4. **Go Live** — erste Deal-Registrierung, Sales-Kit deployt, voller L3-Support-Zugang
 
@@ -83,4 +84,4 @@ Oder E-Mail an [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt — und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt — und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

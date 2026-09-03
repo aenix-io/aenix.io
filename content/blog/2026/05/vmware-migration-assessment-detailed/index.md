@@ -1,6 +1,6 @@
 ---
 title: "VMware migration assessment — what to inspect before committing to an exit"
-description: "Companion to VMware migration checklist lead magnet. This article walks through what a structured VMware migration assessment actually inspects."
+description: "What a structured VMware migration assessment actually inspects."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,8 +42,6 @@ quiz:
       explanation: "Full methodology: Platform Readiness Assessment service (with VMware-migration-specific scope on the migration hub). The assessment uses the same four-workstream methodology with VMware-specific instrumentation."
 ---
 
-Companion to **[VMware migration checklist](/resources/vmware-migration-checklist)** lead magnet. This article walks through what a structured VMware migration assessment actually inspects.
-
 ## Why a structured assessment matters
 
 VMware migration is a 6-24 month project depending on scale. Committing without structured assessment often produces:
@@ -75,8 +73,3 @@ A 30-50 page written report covering all four workstreams plus three outcomes: t
 For full methodology: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 For VMware-specific scope: **[VMware migration hub](/migration/vmware/)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

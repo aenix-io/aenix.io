@@ -1,6 +1,6 @@
 ---
 title: "Insurance cloud infrastructure in 2026 — DORA, GenAI, and the architectural shift"
-description: "Companion to insurance industry page."
+description: "DORA, GenAI workloads, and legacy core systems converge on insurance IT. The architectural implications and a Cozystack-based platform pattern."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,8 +42,6 @@ quiz:
       explanation: "\"Sovereign AI required, not optional\" — the data classes (health, financial, personal) can't legally or contractually go to external model providers. The architecture must run AI on customer-controlled infrastructure to make GenAI usable on these data types at all."
 ---
 
-Companion to **[insurance industry page](/industries/insurance)**.
-
 ## Three pressures converging
 
 Insurance organizations in 2026 face overlapping architectural pressures:
@@ -69,8 +67,3 @@ Insurance organizations in 2026 face overlapping architectural pressures:
 - DORA-aligned operations model
 
 For details see **[insurance industry page](/industries/insurance)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

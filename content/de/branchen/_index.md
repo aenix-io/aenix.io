@@ -3,9 +3,10 @@ title: "Branchen"
 description: "Aenix Branchen-Landings — vertikaler Proof und Use Cases für Finanzdienstleistungen, öffentlicher Sektor, Telco, Hosting, Energie und weitere Branchen."
 hero_subtitle: "Regulatorische Trigger und Architekturmuster für Ihre Branche"
 language: "de"
+hreflang_en: /industries/
 ---
 
-**Vertikale Proof Points und Engagement-Patterns nach Branche. Finden Sie Ihren Sektor — lesen Sie über regulatorische Trigger, architektonische Patterns und Ænix-Plattforms, die passen. Alle großen Engagements NDA-geschützt; erste namentlich genannte Bank-Cases erwartet Mitte 2027.**
+**Vertikale Proof Points und Engagement-Patterns nach Branche. Finden Sie Ihren Sektor — lesen Sie über regulatorische Trigger, architektonische Patterns und Ænix-Plattformen, die passen. Alle großen Engagements NDA-geschützt; erste namentlich genannte Bank-Cases erwartet Mitte 2027.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

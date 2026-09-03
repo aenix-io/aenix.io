@@ -18,7 +18,7 @@ related_pages:
 
 **Die VMware-Verlängerungen Ihrer Kunden sind gerade gestiegen, und sie fragen Sie nach einer Alternative. Das ist Ihre Chance: eine gebrandete Cloud — VMs, Kubernetes, Datenbanken, Storage — auf offener Plattform, ohne Pro-Core-Lizenz, die Ihre Marge frisst. Ænix lässt Sie sie als Produkt wiederverkaufen oder mit uns als Engineering-Team selbst bauen. Kunde und wiederkehrender Umsatz bleiben bei Ihnen.**
 
-> **Passt zu:** **[White-Label-Cloud-Aufbau](/de/dienstleistungen/)**, **[Ænix Platform ISP](/de/produkte/)** (gebrandetes Portal + Billing) und dem **[Partnerprogramm](/de/partner/)** (bis 40% Marge). Kern: Open-Source-**[Cozystack](https://cozystack.io)**.
+> **Passt zu:** **[White-Label-Cloud-Aufbau](/de/dienstleistungen/)**, **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** (gebrandetes Portal + Billing) und dem **[Partnerprogramm](/de/partner/)** (bis 40% Marge). Kern: Open-Source-**[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -50,7 +50,7 @@ Eine Cloud-Linie ins Portfolio holen, die Sie kontrollieren: gebrandet, mandante
 
 ## Zwei Wege mit Ænix
 
-**1. Fertige Plattform wiederverkaufen.** Die [Ænix Platform ISP](/de/produkte/) ist eine White-Label-fähige Cloud — Kundenportal, Service-Katalog (VMs, K8s, Managed DBs, S3, GPU), WHMCS-Billing, mehrstufiges Reseller-Modell. Sie branden und verkaufen; wir liefern Plattform und Support. Das [Partnerprogramm](/de/partner/) gibt bis 40% Marge mit Deal-Schutz.
+**1. Fertige Plattform wiederverkaufen.** Die [Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/) ist eine White-Label-fähige Cloud — Kundenportal, Service-Katalog (VMs, K8s, Managed DBs, S3, GPU), WHMCS-Billing, mehrstufiges Reseller-Modell. Sie branden und verkaufen; wir liefern Plattform und Support. Das [Partnerprogramm](/de/partner/) gibt bis 40% Marge mit Deal-Schutz.
 
 **2. Eigene Cloud mit unserem Team bauen.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Engineering-Team** — wir entwerfen und stellen Ihre [Cloud auf](/de/dienstleistungen/), schließen die K8s-/KubeVirt-Lücke, und Plattform wie Kunde gehören Ihnen.
 

@@ -1,11 +1,11 @@
 ---
 title: "Industries"
-description: "Aenix industry landings: regulatory triggers, architecture patterns and use cases for finance, public sector, telco and hosting, mapped to Platform editions."
+description: "Aenix industry pages: regulatory triggers, architecture patterns and use cases for finance, public sector, telco and hosting, mapped to the three Aenix platforms."
 hero_subtitle: "Regulatory triggers and architecture patterns, mapped to your sector"
 language: "en"
 ---
 
-**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix Platform edition that fits. Bank engagements stay anonymous until mid-2027, but [five deployments are written up in full](/case-studies/) with their architecture and numbers.**
+**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix platform that fits. Bank engagements stay anonymous until mid-2027, but [nine deployments are written up in full](/case-studies/) with their architecture and numbers.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -18,7 +18,7 @@ language: "en"
 <div class="diagram__conn">carries</div>
 <div class="diagram__node"><b>Regulatory trigger</b><div class="diagram__chips"><span>DORA</span><span>NIS2</span><span>Sovereignty mandates</span><span>Sectoral data laws</span></div></div>
 <div class="diagram__conn">mapped to</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform edition</b><div class="diagram__chips"><span>Enterprise</span><span>Public Cloud</span><span>AI/ML</span><span>ISP</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix platform</b><div class="diagram__chips"><span>Private Cloud Platform</span><span>Public Cloud Platform</span><span>AI Platform</span></div></div>
 </div>
 </div>
 
@@ -52,7 +52,7 @@ language: "en"
 
 ### SMB / mid-market
 
-- **[SMB / mid-market](/industries/smb-mid-market/)** — Smaller organizations consuming cloud as a product. Pairs with: Public Cloud Platform (via service-provider partner) or Pure Cozystack with Ænix Support.
+- **[SMB / mid-market](/industries/smb-mid-market/)** — Smaller organizations consuming cloud as a product. Pairs with: Public Cloud Platform via a service-provider partner, or [Cozystack with Ænix enterprise support](/products/cozystack-enterprise-support/).
 
 </div>
 </div>
@@ -63,7 +63,7 @@ language: "en"
 
 **Public production customers** (Ænix Public Cloud Platform, currently listed on aenix.io): GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**NDA-protected engagements** (banks, sovereign cloud, AI/ML, telco): multi-million-euro Private Cloud Platform and Public Cloud Platform deployments; naming permitted from mid-2027. [Five deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
+**NDA-protected engagements** (banks, sovereign cloud, AI/ML, telco): multi-million-euro Private Cloud Platform and Public Cloud Platform deployments; naming permitted from mid-2027. [Nine deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
 
 **Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud / VPS hosting platforms, lightweight VDI, backup systems reducing storage cost up to 75%. [See case studies →](/case-studies/)
 

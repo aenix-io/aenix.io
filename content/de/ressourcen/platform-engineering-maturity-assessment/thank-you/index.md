@@ -3,6 +3,7 @@ title: "Ihr Download ist bereit — Platform Engineering Maturity Assessment"
 description: "Laden Sie Ihre Kopie des Platform Engineering Maturity Assessment von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
+hreflang_en: /resources/platform-engineering-maturity-assessment/thank-you/
 page_type: "flag-page"
 hide_closing_cta: true
 ---

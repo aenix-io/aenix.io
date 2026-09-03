@@ -1,6 +1,6 @@
 ---
 title: "NIS2 requirements for cloud infrastructure — a checklist for in-scope entities in 2026"
-description: "This is the long-form companion to our NIS2 compliance services page. It walks through what NIS2 actually requires of your cloud architecture — by Article,..."
+description: "NIS2 Articles 21, 23, 28 and 12 mapped to concrete cloud architecture controls, with a working checklist and the architectural failures that recur."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "In scope regardless of size (DNS, TLD registries, MSPs)", correct: true }
       explanation: "Entity classification depends on size thresholds AND sector-specific criteria. Some entities are in scope regardless of size — explicitly DNS service providers, TLD registries, MSPs."
 ---
-
-**This is the long-form companion to our [NIS2 compliance services page](/solutions/nis2-compliance/). It walks through what NIS2 actually requires of your cloud architecture — by Article, by control, with a working checklist for the engineers and architects implementing it.**
 
 The Network and Information Security Directive 2 (Directive (EU) 2022/2555 — NIS2) replaced the original NIS Directive in 2023. Transposition into national law was due by 17 October 2024. Some EU member states completed transposition on time; others ran late. Either way, by mid-2025 NIS2 is operational across the EU, with competent authorities in each member state and the European Cybersecurity Agency (ENISA) playing a coordination role.
 
@@ -268,8 +266,3 @@ For details see the **[NIS2 compliance services page](/solutions/nis2-compliance
 - **[DORA compliance](/solutions/dora-compliance/)** — financial-services regulator
 - **[Data sovereignty](/solutions/data-sovereignty/)** — adjacent trigger
 - **[Cozystack](/products/cozystack/)** — sovereign-by-architecture platform
-
----
-
-*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution.*
-

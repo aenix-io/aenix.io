@@ -53,7 +53,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/">Das Sovereign-Cloud-Playbook lesen →</a>
+  <a class="cta-secondary" href="/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/">Das Sovereign-Cloud-Playbook lesen (englisch) →</a>
 </div>
 
 ---
@@ -121,7 +121,7 @@ Für spezifische Sovereign-Cloud-Anforderungen (BSI C5, SecNumCloud, EUCS) — i
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Sovereign-Cloud-Playbook](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)**
+- **[Sovereign-Cloud-Playbook (englisch)](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)**
 - **[Data Sovereignty](/de/loesungen/data-sovereignty/)** — angrenzende Lösung
 - **[Branche Öffentlicher Sektor](/de/branchen/oeffentlicher-sektor/)**
 - **[Cozystack](/de/produkte/cozystack/)**

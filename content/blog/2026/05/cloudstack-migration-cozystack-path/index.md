@@ -43,8 +43,6 @@ quiz:
       explanation: "The article calls out customer self-service-API divergence as a stumble point and recommends either a CloudStack-API-compatible shim (for a subset of operations) or planned customer-facing API migration to Cozystack-native patterns."
 ---
 
-**Long-form companion to the [CloudStack migration hub](/migration/cloudstack/). For service providers running Apache CloudStack who are evaluating Cozystack as a Kubernetes-native modernization target — covering architectural mapping, migration phases, and where the trade-offs differ from VMware or OpenStack migrations.**
-
 Apache CloudStack remains established with service providers in
 several EU, MENA, and APAC markets. It has a mature multi-tenancy
 model, broad community support, and well-understood operational
@@ -63,9 +61,6 @@ Three pressures stand out:
    want tenant Kubernetes clusters, container workloads, and
    Kubernetes-native networking. CloudStack handles this via
    integration; Cozystack handles it natively.
-
-This article walks through what a CloudStack-to-Cozystack migration
-looks like — what carries over, what redesigns, and how it phases.
 
 ## Where CloudStack still wins
 
@@ -253,10 +248,3 @@ fully retired.
   hosting-provider-specific positioning
 - **[Hosting provider platform modernization](/blog/2026/05/hosting-provider-platform-modernization/)** —
   related modernization pattern article
-
----
-
-*Ænix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. We have engagement experience with multiple
-hosting providers including CloudStack-based ones; specific named case
-studies remain confidential until customers publicly confirm.*

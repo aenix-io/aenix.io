@@ -1,6 +1,6 @@
 ---
 title: "VMware replacement after Broadcom: a guide for service providers, banks, and sovereign clouds in 2026"
-description: "This is the long-form companion to our VMware alternative landing page. It walks through what changed under Broadcom, what a credible VMware replacement..."
+description: "What changed under Broadcom, a component-by-component VMware-to-Cozystack mapping, how the migration actually runs, and the FAQ engineers ask first."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
@@ -46,22 +46,7 @@ quiz:
       explanation: "Smaller estates take 6–12 weeks; larger or complex ones (vCD, NSX-heavy, regulated workloads) run 3–9 months. The driver is rarely raw migration speed — it is regression testing and parallel-run windows."
 ---
 
-**This is the long-form companion to our [VMware alternative landing page](/alternatives/vmware-alternative). It walks through what changed under Broadcom, what a credible VMware replacement actually looks like in production, and how a real migration runs end-to-end.**
-
 After Broadcom, the VMware bill stopped being predictable. Subscription-only licensing, mandatory VCF bundling, two-to-five-times price increases on renewal, and the end of perpetual licenses changed the math for every infrastructure team running VMware at scale. The result has been a documented wave of VMware replacement projects across service providers, banks, government, telecom, and AI/GPU operators evaluating how to exit VMware safely.
-
-This article covers the parent topic — *VMware replacement* in the broad sense, including all the credible Broadcom VMware alternative paths on the market — and goes deep on Cozystack as one of those paths.
-
-Cozystack is the open-source VMware alternative built for organizations that need a real production substitute — not a downgrade to community-grade tooling. It runs virtual machines, containers, managed databases, object storage, and GPU workloads on your own bare metal, under one Kubernetes-native control plane. CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices badge.
-
-Ænix is the company behind Cozystack. We build the platform, run production deployments for service providers and regulated enterprises, and provide the migration, support, and operations model that makes a VMware exit safe.
-
-Available across North America, the EU, the UK, and the DACH region. German-speaking sales and support team for DACH customers.
-
-<div class="cta-row">
-  <a class="cta-primary" href="{{PIPEDRIVE_FORM_DEMO}}">Book a review</a>
-  <a class="cta-secondary" href="/migration/vmware">VMware migration →</a>
-</div>
 
 ---
 
@@ -221,52 +206,7 @@ Cozystack was built for service providers first. The same model works for any or
 
 ---
 
-## Who runs Cozystack in production
-
-{{< clients >}}
-
-Cozystack is in production with:
-
-- **Hidora / Hikube** — European hosting and managed services provider, multi-tenant Kubernetes platform.
-- **A Tier-1 European telecom** — internal cloud platform, replacing legacy virtualization.
-- **A Belgian regional cloud provider** — sovereign cloud product line on Cozystack.
-- **A Czech enterprise hosting provider** — VMware migration in progress, Cozystack as the new foundation.
-- **A Polish AI/GPU operator** — Blackwell-class GPU platform for inference customers.
-
-{{< quote-carousel >}}
-
----
-
-## Pricing
-
-The Cozystack platform itself is open source and free to run. Ænix offers:
-
-- **Community** — GitHub issues, public Slack, no SLA.
-- **Standard support** — business-hours response, runbooks, advisory.
-- **Enterprise / 24×7** — production SLA, dedicated TAM, GitOps PR review, incident response.
-- **Professional services** — VMware migration assessment, deployment, training, custom integrations.
-
-Open-source means there is no per-CPU, per-VM, or per-core meter. Your spend is hardware + Ænix engagement.
-
----
-
 ## FAQ
-
-### What is the best alternative for VMware?
-
-For enterprise on-prem virtualization, Cozystack is a full open-source alternative — it replaces the whole VCF stack (vSphere, vCenter, vSAN, NSX, vCloud Director) with one Kubernetes-native platform on your own hardware. Other commonly cited VMware alternatives are Nutanix AHV (proprietary HCI), Proxmox VE (KVM-based, SMB-friendly), Scale Computing HC3 (appliance HCI), Verge.io, OpenStack, Red Hat OpenShift Virtualization, and Microsoft Azure Stack HCI. The right choice depends on workload mix (VMs only vs. VMs + containers + databases), tenancy needs, sovereignty requirements, and operating model.
-
-### Why is VMware going away?
-
-VMware itself isn't going away — it's becoming economically unviable for many customers after Broadcom's 2023 acquisition. Broadcom replaced perpetual licensing with subscription-only VCF bundles, drove price increases of 2× to 5× on renewal across our pipeline, broke many ELAs, and forced bundling of components most customers don't use. The combination has triggered a documented wave of VMware migrations across service providers, banks, government, and AI/GPU operators evaluating alternatives.
-
-### Who is VMware's biggest competitor?
-
-There is no single biggest — different competitors win different segments. In on-prem hyperconverged: Nutanix. In cloud-native virtualization: Cozystack, Red Hat OpenShift Virtualization, Platform9, and other KubeVirt-based platforms. In appliance HCI: Scale Computing, Verge.io. In SMB and labs: Proxmox VE. In hyperscaler-adjacent on-prem: Microsoft Azure Stack HCI. For service providers and sovereign-cloud buyers — the segment Cozystack targets — the realistic shortlist is Cozystack, OpenStack, and Nutanix.
-
-### What is replacing ESXi?
-
-For VMs running on bare metal, the most common ESXi replacements in 2026 are: **KubeVirt** (used by Cozystack, Platform9, OpenShift Virtualization), **KVM with libvirt directly** (Proxmox VE, OpenStack), **Nutanix AHV** (proprietary KVM), and **Microsoft Hyper-V** (Azure Stack HCI). Among open-source options, KubeVirt has the largest active community and the broadest production footprint. Cozystack uses KubeVirt as the ESXi alternative inside a complete VCF-equivalent platform.
 
 ### Can we keep our existing hardware?
 
@@ -284,18 +224,6 @@ Yes. KubeVirt runs Windows. We have an automated cleanup step that removes VMwar
 
 The hypervisor concepts (VMs, snapshots, templates, networking) carry over. The control-plane shifts from vCenter to Kubernetes — for most teams this is a 4–8 week ramp with the right training and runbooks. Ænix runs the training as part of professional services.
 
-### Is Cozystack production-ready?
-
-Yes. CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices badge. In production with hosting providers, telcos, banks, and AI operators. Reference architectures and case material on cozystack.io and on this site.
-
-### Can we run side-by-side during migration?
-
-That is the standard pattern. VMware and Cozystack run in parallel for the duration of the migration. Tenants and workloads move cohort by cohort.
-
-### Does Cozystack support Kubernetes for our tenants too?
-
-Yes — that's the difference between Cozystack and a pure VM-only alternative. Each tenant can spin up a fully isolated Kubernetes cluster in addition to (or instead of) VMs.
-
 ### What about VMware Cloud Foundation specifically — is the migration different?
 
 VCF migrations are larger (more components, more integrations). The discovery phase covers SDDC Manager, Workspace ONE, Aria, NSX-T overlays, and any custom service definitions. Ænix has run VCF migrations end-to-end.
@@ -307,54 +235,3 @@ vCD migration is the most common path for service providers. Tenant model maps t
 ### Is GPU live migration supported?
 
 No — industry-wide limitation, not Cozystack-specific. VMware vGPU live migration has known caveats too. For inference workloads we recommend designing for stateless restart rather than relying on GPU live migration.
-
-### Do you charge per VM or per CPU?
-
-No. Ænix charges for support tier and professional services, not per VM, per CPU, or per GB. The Cozystack platform itself is free.
-
-### What about non-Kubernetes admins on the team?
-
-The Cozystack Dashboard is the day-to-day surface for tenant admins — VM provisioning, database creation, backups, observability. Most operators rarely touch kubectl after the platform is running.
-
----
-
-## Next steps
-
-If you're evaluating a VMware exit, the fastest way to know whether Cozystack fits is a structured architecture review.
-
-- **Architecture review** — 60–90 minutes, your stack against Cozystack mapping, output is a written assessment with workload buckets and risk flags.
-- **Migration assessment** — paid engagement, deeper inventory and migration plan with timeline.
-- **Production pilot** — run a workload cohort on Cozystack hardware we provision, parallel to your VMware estate.
-
-{{PIPEDRIVE_FORM}}
-
-Or read the [VMware migration path](/migration/vmware), see the full [Cozystack overview](/products/cozystack), or compare against the broader market in [VMware alternatives](/alternatives/vmware-alternatives).
-
----
-
-*Cozystack is a CNCF Project. Kubernetes Certified Distribution. OpenSSF Best Practices badge. Ænix is the company behind Cozystack.*
-
----
-
-## Want the short version?
-
-If you're evaluating Cozystack specifically as a VMware replacement, the **[VMware alternative landing page](/alternatives/vmware-alternative)** has the same architecture mapping, comparison table, and CTA flow in a 5-minute read.
-
-<!--
-SEO meta description (≤155 chars, for frontmatter / page header):
-"VMware replacement after Broadcom — full guide to a credible exit. Architecture, migration steps, comparison vs Nutanix/Proxmox/OpenStack, pricing, FAQ."
-
-OG image TODO: 1200×630 PNG "VMware replacement after Broadcom" with brand mark + claim. Reuse landing OG image where possible.
-
-Slug suggestion: /blog/2026/05/vmware-replacement-after-broadcom/
-
-Hreflang setup (when DE locale launches):
-- en: /blog/2026/05/vmware-replacement-after-broadcom/
-- de: /de/blog/2026/05/vmware-ablosung-nach-broadcom/  (or similar — translator picks idiomatic slug)
-- x-default: en
-
-Internal-link strategy:
-- Landing → article: "Read the full guide" (footer of landing.md)
-- Article → landing: "Want the short version? VMware alternative landing page" (footer of this article, above)
-- No <link rel="canonical"> between them — they target different parent topics.
--->

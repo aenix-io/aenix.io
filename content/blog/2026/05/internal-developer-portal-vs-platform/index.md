@@ -1,6 +1,6 @@
 ---
 title: "Internal developer portal vs internal developer platform — and Backstage's place in 2026"
-description: "This is the long-form companion to our Backstage alternative page. It clarifies the terminology, walks through where Backstage fits, and compares Backstage..."
+description: "Portal and platform are not the same thing. Where Backstage actually fits, what the alternatives are, and how to decide whether you need a portal at all."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "Both layers are equal and interchangeable", correct: false }
       explanation: "The article's memorable framing: \"A platform without a portal still works. A portal without a platform is wallpaper.\" Capability stack vs UI/catalog layer — confusing them is why so many Backstage-first projects stall."
 ---
-
-**This is the long-form companion to our [Backstage alternative page](/alternatives/backstage-alternative). It clarifies the terminology, walks through where Backstage fits, and compares Backstage with Port, Cortex, custom builds, and "no portal" — for engineering leaders making the decision.**
 
 The "IDP" acronym is overloaded. It means both:
 
@@ -145,12 +143,3 @@ A practical decision tree:
 5. **Will you actually customize?** If yes, Backstage. If no, Port.
 
 The decision is smaller than vendors make it sound. The bigger architectural decision is the platform underneath.
-
-## How to start
-
-For platform-first engagement see **[Internal Developer Platform services](/services/internal-developer-platform/)** or the broader **[Platform Engineering services](/services/platform-engineering/)**. Ænix builds the platform; portal decision follows.
-
----
-
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
-

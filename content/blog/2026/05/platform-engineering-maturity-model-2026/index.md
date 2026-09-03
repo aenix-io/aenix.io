@@ -1,6 +1,6 @@
 ---
 title: "Platform engineering maturity model — five stages, eight dimensions"
-description: "Companion to Platform Engineering Maturity Assessment."
+description: "Five maturity stages and eight dimensions to score a platform organization against, plus what good looks like at each stage."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "Golden paths covering ~80% of common developer requests", correct: true }
       explanation: "Self-service depth = golden paths covering 80% of common requests. The other 20% need escape hatches (real conversation with platform team), but a mature platform absorbs the bulk of the volume through opinionated paths."
 ---
-
-Companion to **[Platform Engineering Maturity Assessment](/resources/platform-engineering-maturity-assessment)**.
 
 ## Why a maturity model
 
@@ -90,8 +88,3 @@ Smaller organizations (under 100 engineers): stage 3 may be sufficient; stage 4-
 ## Engagement
 
 For structured assessment with an external lens see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

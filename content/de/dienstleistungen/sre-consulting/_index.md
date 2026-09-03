@@ -7,6 +7,7 @@ related_pages:
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/produkte/
 language: "de"
+hreflang_en: /services/sre-consulting/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
@@ -78,4 +79,4 @@ faq:
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Plattforms.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

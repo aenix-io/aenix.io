@@ -1,6 +1,6 @@
 ---
 title: "Nutanix vs Cozystack vs VMware — choosing your virtualization platform in 2026"
-description: "This is the long-form companion to our Nutanix alternative page. It compares Nutanix HCI (with AHV), VMware (post-Broadcom), and Cozystack — three different..."
+description: "Nutanix HCI with AHV, VMware after Broadcom, and Cozystack compared on architecture, where each wins, and the migration economics between them."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "Nutanix on Nutanix appliances; Cozystack on commodity x86", correct: true }
       explanation: "Nutanix = Nutanix appliance hardware (HCI model). VMware VCF = x86 (general). Cozystack = commodity x86. Cozystack's commodity-x86 fit means existing VMware hardware usually qualifies for repurpose during migration."
 ---
-
-**This is the long-form companion to our [Nutanix alternative page](/alternatives/nutanix-alternative). It compares Nutanix HCI (with AHV), VMware (post-Broadcom), and Cozystack — three different architectural choices for organizations evaluating their virtualization platform in 2026.**
 
 In 2026 the realistic shortlist for production virtualization platforms includes (among others) Nutanix AHV, VMware Cloud Foundation, and Cozystack. Each represents a different architectural philosophy.
 
@@ -108,12 +106,3 @@ The decision tree:
 4. **HCI appliance preference + Nutanix relationship?** → Nutanix.
 5. **VMware estate, no triggers to leave?** → VMware (with eye on next renewal).
 6. **Greenfield + Kubernetes-fluent team?** → Cozystack.
-
-## How to start
-
-If a structured assessment helps clarify, see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-
----
-
-*Ænix is the team behind Cozystack.*
-

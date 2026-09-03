@@ -30,20 +30,20 @@ faq:
   - q: "How long does a VMware to Cozystack migration take?"
     a: "It depends on estate size and is cohort-based, aligned with VCF subscription expirations. Estates under 100 VMs typically take 7-10 months total, 100-500 VMs take 10-16 months, and 500-2000 VMs take 16-25 months, including assessment and implementation."
   - q: "When does the cost case turn positive after leaving VMware?"
-    a: "For a typical 200-VM estate, the net cumulative position is usually positive by the end of Year 2 and substantially positive by the end of Year 3. Ongoing cost is hardware refresh plus an Aenix support tier rather than a per-CPU subscription. Honest TCO modelling is part of the assessment phase."
+    a: "In the engagements we have modelled for a 200-VM estate, the net cumulative position is typically positive by the end of Year 2 and clearly positive by Year 3, because ongoing cost becomes hardware refresh plus a support tier rather than a per-CPU subscription. VCF pricing is quote-driven and non-public, so the real answer depends on your renewal quote and hardware age and is computed during assessment."
   - q: "Can Cozystack run both virtual machines and containers?"
     a: "Yes. Cozystack uses KubeVirt so VMs and containers coexist on one Kubernetes API. This contrasts with VMware, where Tanzu is an OpenShift-style container add-on layered onto a VM-first platform."
   - q: "When is VMware still the better choice?"
-    a: "If your team has deep existing vSphere expertise, you rely on specific VMware-only networking or storage features, your enterprise procurement and tooling integrations (ServiceNow, Ansible Tower) are established, and renewal economics remain tolerable, 'stay and tune' can be a valid answer."
+    a: "When the gaps matter more than the licence. VMware has two decades of operational depth (DRS, Storage DRS, Fault Tolerance, vVols), a certified hardware compatibility list a vendor will support you on, and a backup and DR ecosystem — Veeam, Commvault, Rubrik, Zerto, Site Recovery Manager — that speaks VADP natively. Some application vendors certify only against ESXi. If your team is deep on vSphere, renewal economics are tolerable, and nothing else is pushing, stay and tune."
   - q: "Does Aenix need access to our environment to support Cozystack?"
-    a: "No. Aenix works through an advisory and GitOps PR-review model — no direct kubectl access to your cluster is required, unlike VMware vendor support that typically requires environment access. Cozystack runs on your hardware with customer-controlled keys."
+    a: "No. Aenix works through an advisory and GitOps PR-review model: we review manifests and runbooks in your repository and never need direct kubectl access to your cluster. Cozystack runs on your hardware with customer-controlled keys."
 ---
 
 **You're considering a VMware exit. The destination shortlist includes Cozystack. This page compares the two head-to-head — what's the same, what's different, what migration costs, what runs better on each.**
 
 For broader VMware-alternatives evaluation, see **[VMware alternatives listicle](/alternatives/vmware-alternatives/)**. For the focused vendor recommendation, see **[VMware alternative](/alternatives/vmware-alternative/)**. This page assumes you're already considering Cozystack specifically.
 
-> **Pairs with:** **[Ænix Platform](/products/)** — turnkey commercial cloud-in-a-box on top of Cozystack. Two editions: Provider, if you sell cloud to customers, and Enterprise, if you run it for your own organisation. The right one depends on which side of that line you are on post-VMware.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** if you sell cloud to customers, or **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** if you run it for your own organisation. Which side of that line you are on post-VMware decides it.
 
 ---
 
@@ -60,9 +60,9 @@ For broader VMware-alternatives evaluation, see **[VMware alternatives listicle]
 | **Multi-tenancy** | vCloud Director | Tenant CRD |
 | **Service catalog** | vRealize / Aria | ApplicationDefinition + Cozystack Dashboard |
 | **Backup/DR** | Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
-| **GPU for VMs** | NVIDIA vGPU under Horizon | NVIDIA vGPU + KubeVirt |
+| **GPU for VMs** | NVIDIA vGPU on vSphere | NVIDIA vGPU + KubeVirt |
 | **Air-gap** | Supported (extra licensing) | Supported (no extra cost) |
-| **Ops model** | Vendor support requires environment access | Ænix advisory + GitOps PR review (no kubectl access needed) |
+| **Ops model** | Broadcom support plus a large partner and ISV channel | Ænix advisory + GitOps PR review; no cluster access required |
 
 </div>
 
@@ -88,14 +88,17 @@ For broader VMware-alternatives evaluation, see **[VMware alternatives listicle]
 
 ---
 
-## Where VMware may still be better
+## Where VMware is genuinely better
 
-- **Existing VMware expertise** — your team has 10 years of vSphere knowledge that doesn't transfer instantly.
-- **Specific VMware-only features** — some niche advanced networking / storage features don't have direct equivalents.
-- **Enterprise procurement** — VMware procurement is established in many enterprises.
-- **Existing tooling integration** — VMware integrates with broader enterprise tooling (Ansible Tower, ServiceNow, etc.).
+Not a courtesy paragraph. These are real gaps, and an architect will find them in week one.
 
-If you're already deep on VMware and renewal economics are tolerable, "stay and tune" is a valid answer.
+- **Two decades of operational maturity.** DRS, Storage DRS, Fault Tolerance, Enhanced vMotion Compatibility, Storage vMotion between arrays, vVols. KubeVirt has live migration and a working scheduler; it does not have the same depth of automated placement and rebalancing, and it has not been beaten on by as many people for as long.
+- **The hardware compatibility list.** VMware certifies servers, HBAs, NICs and firmware combinations, and a vendor will support you on a listed configuration. Cozystack runs on commodity hardware, which means you own that qualification.
+- **The backup and DR ecosystem.** Veeam, Commvault, Rubrik, Zerto and Site Recovery Manager all speak VADP natively. Velero plus per-database PITR covers the same ground with different tools, and any runbook, retention policy or audit evidence built on the VMware ecosystem is rewritten.
+- **Third-party and ISV certification.** Application vendors certify against ESXi. Some will not answer a support call about a workload running on KubeVirt, whatever the technical merits.
+- **Established procurement and integration.** ServiceNow, Ansible, and the internal tooling built around vCenter over ten years is real, working investment.
+
+If your team is deep on vSphere, renewal economics are tolerable, and no sovereignty or multi-tenancy requirement is pushing, "stay and tune" is the correct answer and we will say so.
 
 ---
 
@@ -113,14 +116,13 @@ Cohort-based migration; aligned with VCF subscription expirations.
 
 ## Cost trajectory
 
-For a 200-VM estate at typical VMware VCF pricing:
+VCF pricing is quote-driven and non-public, so there is no honest single number to print here. What the shape of the model looks like for a 200-VM estate:
 
-- **Year 1 VMware VCF subscription:** ~$X (varies; recent pipeline shows 2-5× original deal pricing)
-- **Year 1 migration cost:** assessment + Cozystack platform build + migration labor + Ænix support
-- **Year 2 onwards Cozystack TCO:** hardware refresh / depreciation + Ænix support tier
-- **Net cumulative position:** typically positive by end of Year 2; substantially positive by end of Year 3
+- **Year 1** — the remaining VCF subscription runs in parallel with assessment, platform build, migration labour and an Ænix support tier. Cost goes up before it goes down.
+- **Year 2 onward** — hardware refresh and depreciation plus an Ænix support tier, with no per-CPU meter.
+- **Net cumulative position** — in the engagements we have modelled, typically positive by the end of Year 2 and clearly positive by Year 3. Your renewal quote, hardware age and staffing decide it, which is why the number is computed in assessment rather than claimed here.
 
-Honest TCO modelling is part of the assessment phase.
+Model your own inputs with the **[VMware TCO comparison](/tco-calculator/vs-vmware/)**, where every price carries a source and a date.
 
 ---
 

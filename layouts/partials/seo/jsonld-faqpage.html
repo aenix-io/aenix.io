@@ -17,10 +17,10 @@
       {{- if $i }},{{ end }}
       {
         "@type": "Question",
-        "name": {{ index $item "q" | jsonify }},
+        "name": {{ index $item "q" }},
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": {{ index $item "a" | jsonify }}
+          "text": {{ index $item "a" }}
         }
       }
     {{- end }}
