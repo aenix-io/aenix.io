@@ -14,10 +14,15 @@
 {{- with .Params.faq -}}
 <section class="seo-faq{{ if eq ($.Params.faq_style | default "") "rows" }} faq-rows{{ end }}" aria-label="{{ $faqTitle }}">
   <h2>{{ $faqTitle }}</h2>
-  {{- range . }}
-  <details class="faq-item">
-    <summary><h3>{{ index . "q" }}</h3></summary>
-    <div class="faq-answer">{{ index . "a" | markdownify }}</div>
+  {{- range $i, $qa := . }}
+  {{/* First answer renders expanded: a collapsed-by-default FAQ gave readers
+       no signal that real content sits behind the headings, and the FAQ block
+       is already the lowest thing on the page. Opening one shows the pattern
+       (specific question, substantive answer) while keeping the rest as a
+       scannable question index. All answers are in the DOM either way. */}}
+  <details class="faq-item"{{ if eq $i 0 }} open{{ end }}>
+    <summary><h3>{{ index $qa "q" }}</h3></summary>
+    <div class="faq-answer">{{ index $qa "a" | markdownify }}</div>
   </details>
   {{- end }}
 </section>

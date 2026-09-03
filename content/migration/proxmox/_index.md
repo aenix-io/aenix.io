@@ -1,8 +1,9 @@
 ---
 title: "Proxmox to Cozystack migration — when SMB virtualization stops fitting"
 description: "Proxmox VE is excellent at SMB scale. When deployments grow into multi-tenant cloud builders or service-provider models, the operational model strains...."
-related_pages: ["/alternatives/proxmox-alternative", "/products/aenix-platform/provider-edition/", "/products/cozystack", "/services/platform-readiness-assessment"]
+related_pages: ["/alternatives/proxmox-alternative", "/products/public-cloud-platform/", "/products/cozystack", "/services/platform-readiness-assessment"]
 language: "en"
+hreflang_de: /de/migration/proxmox/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
@@ -39,9 +40,9 @@ faq:
     a: "Aenix, the open-core company behind Cozystack, runs the migration end-to-end, from assessment through implementation. Cozystack is a CNCF Sandbox project, so the underlying platform is open source and not tied to a single vendor."
 ---
 
-**Proxmox VE is excellent at SMB scale. When deployments grow into multi-tenant cloud builders or service-provider models, the operational model strains. Aenix runs Proxmox-to-Cozystack migrations end-to-end.**
+**Proxmox VE is excellent at SMB scale. When deployments grow into multi-tenant cloud builders or service-provider models, the operational model strains. Ænix runs Proxmox-to-Cozystack migrations end-to-end.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant Tenant CRD, productized installer. From $1,250/month support tier.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant Tenant CRD, productized installer. From $1,250/month support tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -86,7 +87,7 @@ For full comparison see **[Proxmox vs VMware vs Cozystack](/blog/2026/05/proxmox
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Proxmox to Cozystack Migration — When SMB Virtualization Stops Fitting | Aenix"
+<!-- SEO: title "Proxmox to Cozystack Migration — When SMB Virtualization Stops Fitting | Ænix"
 Word count: ~300. -->

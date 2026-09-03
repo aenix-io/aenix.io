@@ -5,14 +5,14 @@ type: "page"
 related_pages:
   - /de/dienstleistungen/internal-developer-platform
   - /de/dienstleistungen/platform-engineering
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/developer-self-service/
 direct_answer: |
-  **Developer Self-Service bedeutet, dass Produkt-Teams die häufigsten Plattform-Bedürfnisse — neue Environments, Services, Datenbanken, Object Storage, Observability oder CI/CD — eigenständig provisionieren, ohne ein Ticket zu öffnen, abgeschlossen in unter einer Stunde von Anfrage bis Lauf. Aenix baut diese Fähigkeit auf Cozystack (CNCF-Projekt, Apache 2.0) auf: KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) Networking und LINSTOR/DRBD Storage, mit Tenant-CRD-Mandantenfähigkeit. Statt Backstage nur als Oberfläche zu liefern, implementiert Aenix die zugrunde liegenden Golden Paths, die Anfragen in provisionierte Realität verwandeln — produktisiert in der the Developer Self-Service module of Ænix Platform plus Services.**
+  **Developer Self-Service bedeutet, dass Produkt-Teams die häufigsten Plattform-Anforderungen — neue Environments, Services, Datenbanken, Object Storage, Observability oder CI/CD — eigenständig provisionieren, ohne ein Ticket zu öffnen, abgeschlossen in unter einer Stunde von Anfrage bis Lauf. Aenix baut diese Fähigkeit auf Cozystack (CNCF-Projekt, Apache 2.0) auf: KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) Networking und LINSTOR/DRBD Storage, mit Tenant-CRD-Mandantenfähigkeit. Statt Backstage nur als Oberfläche zu liefern, implementiert Aenix die zugrunde liegenden Golden Paths, die Anfragen in provisionierte Realität verwandeln — produktisiert in der Developer-Self-Service-Schicht der Ænix Private Cloud Platform plus Services.**
 
 quick_facts:
   - label: "Was es ist"
@@ -22,19 +22,19 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Engineering-Organisationen, in denen die häufigsten Produkt-Team-Bedürfnisse heute Tickets erfordern und Wartezeiten Velocity bremsen"
+    value: "Engineering-Organisationen, in denen die häufigsten Produkt-Team-Anforderungen heute Tickets erfordern und Wartezeiten Entwicklungsgeschwindigkeit bremsen"
   - label: "Schlüsselfunktion"
     value: "Golden-Path-Templates, GitLab-Automation und Argo CD Workflows statt Backstage als reine Oberfläche"
   - label: "Technische Basis"
     value: "Cozystack — KubeVirt (VMs + Container), Cilium (eBPF), LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Engagement"
-    value: "Produktisiert als the Developer Self-Service module of Ænix Platform plus Services; kostenloses Platform Engineering Maturity Assessment verfügbar"
+    value: "Produktisiert als Developer-Self-Service-Schicht der Ænix Private Cloud Platform plus Services; kostenloses Platform Engineering Maturity Assessment verfügbar"
 
 faq:
   - q: "Was ist Developer Self-Service?"
-    a: "Developer Self-Service ist erreicht, wenn die häufigsten zehn Produkt-Team-Bedürfnisse — Environments, Services, Datenbanken, Object Storage, Observability, Secrets, CI/CD und mehr — ohne Ticket befriedigt werden können, abgeschlossen in unter einer Stunde von Anfrage bis Lauf."
+    a: "Developer Self-Service ist erreicht, wenn die häufigsten zehn Produkt-Team-Anforderungen — Environments, Services, Datenbanken, Object Storage, Observability, Secrets, CI/CD und mehr — ohne Ticket befriedigt werden können, abgeschlossen in unter einer Stunde von Anfrage bis Lauf."
   - q: "Ist das nur Backstage?"
-    a: "Nein. Backstage als Oberfläche ohne Substanz ist Tapete. Aenix implementiert die zugrunde liegenden Golden Paths — GitLab-Automation, Argo CD Workflows und APIs — die eine Anfrage tatsächlich in provisionierte Realität verwandeln, statt nur einen Katalog anzuzeigen."
+    a: "Nein. Backstage als Oberfläche ohne Substanz ist nur Fassade. Aenix implementiert die zugrunde liegenden Golden Paths — GitLab-Automation, Argo CD Workflows und APIs — die eine Anfrage tatsächlich in provisionierte Realität verwandeln, statt nur einen Katalog anzuzeigen."
   - q: "Auf welcher Technologie basiert die Plattform?"
     a: "Auf Cozystack, einem CNCF-Projekt unter Apache 2.0. Es nutzt KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und das Tenant-CRD für Mandantenfähigkeit."
   - q: "Fällt eine CPU- oder Core-basierte Lizenzgebühr an?"
@@ -42,14 +42,14 @@ faq:
   - q: "Woran erkenne ich, dass dieses Engagement zu uns passt?"
     a: "Wenn sieben der zehn häufigsten Anfragen — Environment-Provisionierung, Service-Bereitstellung, Datenbanken, Object Storage, Observability, Secrets, CI/CD — in Ihrer Organisation heute ein Ticket erfordern, lebt dort das Engagement."
   - q: "Wie schnell sollen Environments verfügbar sein?"
-    a: "Das Ziel ist die Lücke zwischen \"Team braucht Environment\" und \"Team hat Environment\" von Tagen oder Wochen auf Stunden zu verkürzen. Wird sie klein, kompoundiert die Plattform-Investition über Jahre statt Velocity zu verfallen."
+    a: "Das Ziel ist die Lücke zwischen \"Team braucht Environment\" und \"Team hat Environment\" von Tagen oder Wochen auf Stunden zu verkürzen. Wird sie klein, verzinst sich die Plattform-Investition über Jahre, statt in verlorener Entwicklungsgeschwindigkeit zu versickern."
 ---
 
-**Der teuerste einzelne Vorgang in den meisten Engineering-Organisationen ist die Wartezeit zwischen "Team braucht ein Environment" und "Team hat ein Environment". Wenn diese Lücke Tage oder Wochen beträgt, sinkt die Produkt-Velocity messbar; beträgt sie nur Stunden, verzinst sich die Plattform-Investition über Jahre.**
+**Der teuerste einzelne Vorgang in den meisten Engineering-Organisationen ist die Wartezeit zwischen „Team braucht ein Environment“ und „Team hat ein Environment“. Wenn diese Lücke Tage oder Wochen beträgt, sinkt die Produktgeschwindigkeit messbar; beträgt sie nur Stunden, verzinst sich die Plattform-Investition über Jahre.**
 
-Aenix baut Developer-self-service in Plattformen ein, die Produktteams auch wirklich nutzen — nicht Backstage als reine Fassade, sondern echte Golden Paths, die Anfragen ohne Ticket in bereitgestellte Realität verwandeln.
+Ænix baut Developer-Self-Service in Plattformen ein, die Produktteams auch wirklich nutzen — nicht Backstage als reine Fassade, sondern echte Golden Paths, die Anfragen ohne Ticket in bereitgestellte Realität verwandeln.
 
-> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)** — Internal Developer Platform Layer mit GitLab-Automatisierung, Argo CD Workflows, APIs für self-service, Golden-Path-Templates und Dashboards für die Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
+> **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer mit GitLab-Automatisierung, Argo CD Workflows, Self-Service-APIs, Golden-Path-Templates und Dashboards für die Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -58,7 +58,7 @@ Aenix baut Developer-self-service in Plattformen ein, die Produktteams auch wirk
 
 ---
 
-## Wie Developer-self-service tatsächlich aussieht
+## Wie Developer-Self-Service tatsächlich aussieht
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -70,13 +70,13 @@ Aenix baut Developer-self-service in Plattformen ein, die Produktteams auch wirk
 </div>
 </div>
 
-Eine praktikable Arbeitsdefinition: Developer-self-service liegt dann vor, wenn die zehn häufigsten Bedürfnisse eines Produktteams ohne Ticket erfüllt werden können — von der Anfrage bis zum laufenden Betrieb in unter einer Stunde.
+Eine praktikable Arbeitsdefinition: Developer-Self-Service liegt dann vor, wenn die zehn häufigsten Anforderungen eines Produktteams ohne Ticket erfüllt werden können — von der Anfrage bis zum laufenden Betrieb in unter einer Stunde.
 
 Häufige Anfragen:
 
 1. Provisionierung neuer Environments (dev / staging / preview)
 2. Bereitstellung neuer Services (HTTP API, Batch-Job, geplanter Job)
-3. Datenbank-Provisionierung (managed Postgres / MySQL / Redis)
+3. Datenbank-Provisionierung (Managed PostgreSQL / MariaDB / Valkey)
 4. Object-Storage-Bucket
 5. Observability-Onboarding (Metriken + Logs + Traces)
 6. Secrets-Management
@@ -92,27 +92,27 @@ Wenn 7 dieser 10 Punkte in Ihrer Organisation ein Ticket erfordern — genau dor
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wo die meisten "Self-Service"-Ansätze aufhören
+## Wo die meisten „Self-Service“-Ansätze aufhören
 
 - **Backstage nur als Katalog** — die Registry existiert, aber die eigentliche Provisionierung erfordert weiterhin ein Eingreifen des Plattform-Teams.
-- **Halber Self-Service** — drei der zehn Anfragen laufen im self-service, sieben nicht.
-- **Self-Service, der zerbricht** — funktioniert auf dem Golden Path, scheitert bei jeder Abweichung; die Produktteams verlieren das Vertrauen.
-- **Dokumentation als Self-Service** — ein "Sie können das selbst erledigen", das auf ein Runbook verweist, das die Teams manuell interpretieren müssen.
+- **Halber Self-Service** — drei der zehn Anfragen laufen im Self-Service, sieben nicht.
+- **Self-Service, der reißt** — funktioniert auf dem Golden Path, scheitert bei jeder Abweichung; die Produktteams verlieren das Vertrauen.
+- **Dokumentation als Self-Service** — ein „Sie können das selbst erledigen“, das auf ein Runbook verweist, das die Teams manuell interpretieren müssen.
 
-Die ehrliche Variante braucht eine meinungsstarke Plattform darunter, nicht nur eine Katalog-Oberfläche.
+Die ehrliche Variante braucht eine Plattform mit klaren Vorgaben darunter, nicht nur eine Katalog-Oberfläche.
 
 </div>
 </div>
 
 ---
 
-## Wie Aenix arbeitet
+## Wie Ænix arbeitet
 
-Self-service ist Teil der umfassenderen Platform-Engineering-Arbeit — siehe **[Internal Developer Platform Services](/de/dienstleistungen/internal-developer-platform/)** und **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)** für die Einordnung des Engagements. Das self-service-spezifische Ergebnis ist:
+Self-service ist Teil der umfassenderen Platform-Engineering-Arbeit — siehe **[Internal Developer Platform Services](/de/dienstleistungen/internal-developer-platform/)** und **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)** für die Einordnung des Engagements. Das Self-Service-spezifische Ergebnis ist:
 
 - **Golden-Path-Inventar** — Ist-Zustand vs. Ziel für die 10 häufigsten Anfragen
 - **Entworfene Self-Service-Pfade** — für die priorisierten Anfragen
-- **Umsetzungs-Engagement** — Aenix-Ingenieure bauen die Pfade, integriert in Ihre Plattform
+- **Umsetzungs-Engagement** — Ænix-Ingenieure bauen die Pfade, integriert in Ihre Plattform
 - **Framework für Adoptionsmetriken** — messen, was funktioniert
 
 ---
@@ -154,4 +154,4 @@ Self-service ist Teil der umfassenderen Platform-Engineering-Arbeit — siehe **
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF Project), und wir bieten die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF Project), und wir bieten die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

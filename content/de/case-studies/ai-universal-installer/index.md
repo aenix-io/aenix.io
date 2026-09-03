@@ -10,7 +10,7 @@ hreflang_en: "/case-studies/ai-universal-installer/"
 images: ["img/og/og-case-ai-universal-installer.png"]
 related_pages:
   - /de/loesungen/sovereign-ai/
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/ai-platform/
   - /de/dienstleistungen/ai-platform-build/
   - /de/branchen/telco/
 ---
@@ -23,10 +23,10 @@ related_pages:
   <span class="cs-tag">Geo-GPU</span>
 </div>
 
-**Ein großer Telekommunikationsanbieter und Systemintegrator baute auf Cozystack eine Unternehmens-KI-Plattform und nutzte dieselbe Distribution als universellen Installer — er lieferte seine eigenen KI-Dienste in das Umfeld eines staatlichen Endkunden aus, wobei die Daten innerhalb der Kundengrenze verblieben. Das Projekt führte den Integrator von einem CapEx-Modell aus „Hardware und Lizenzen" zu einem langfristigen OpEx-Servicevertrag.**
+**Ein großer Telekommunikationsanbieter und Systemintegrator baute auf Cozystack eine Unternehmens-KI-Plattform und nutzte dieselbe Distribution als universellen Installer — er lieferte seine eigenen KI-Dienste in das Umfeld eines staatlichen Endkunden aus, wobei die Daten innerhalb der Kundengrenze verblieben. Das Projekt führte den Integrator von einem CapEx-Modell aus „Hardware und Lizenzen“ zu einem langfristigen OpEx-Servicevertrag.**
 
 <div class="cs-stats">
-  <div class="cs-stat"><div class="cs-stat__num">141 / 141</div><div class="cs-stat__label">Managed Releases im Zustand „Ready" auf dem Produktionscluster</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">141 / 141</div><div class="cs-stat__label">Managed Releases im Zustand „Ready“ auf dem Produktionscluster</div></div>
   <div class="cs-stat"><div class="cs-stat__num">12–20 ms</div><div class="cs-stat__label">zwischen den Rechenzentren — Geo-GPU über ein verschlüsseltes Mesh verbunden</div></div>
   <div class="cs-stat"><div class="cs-stat__num">1 → 2</div><div class="cs-stat__label">eine Distribution, zwei Auslieferungsmodelle (SaaS + innerhalb der Kundengrenze)</div></div>
 </div>
@@ -48,7 +48,7 @@ Der Kunde entwickelt die KI-Dienste selbst — Unternehmens-LLM-Assistenten, RAG
 
 ## Vorgeschlagene Lösung
 
-Cozystack ist hier keine „Box", sondern ein Framework, das bereits Storage, Networking, Virtualisierung, Monitoring und GPU sowie einen Katalog an Managed Services mitbringt. Der Kunde baut seine Produkte darauf auf. Die Architektur ist geschichtet:
+Cozystack ist hier keine „Box“, sondern ein Framework, das bereits Storage, Networking, Virtualisierung, Monitoring und GPU sowie einen Katalog an Managed Services mitbringt. Der Kunde baut seine Produkte darauf auf. Die Architektur ist geschichtet:
 
 1. **Hardware** — Bare Metal und die bestehende Virtualisierung des Kunden.
 2. **Cozystack-Framework** — IaaS (LINSTOR, Cilium/Kube-OVN, KubeVirt, GPU-Passthrough) und ein PaaS-Servicekatalog.
@@ -71,11 +71,11 @@ Bemerkenswert ist die technische Tiefe des Supports: einige der benötigten Fixe
 
 ## Ergebnisse und aktueller Stand
 
-- Ein funktionierender Cluster auf Cozystack/Talos: **141 von 141 Managed Releases im Zustand „Ready"**, alle Diensttypen des Katalogs verfügbar.
+- Ein funktionierender Cluster auf Cozystack/Talos: **141 von 141 Managed Releases im Zustand „Ready“**, alle Diensttypen des Katalogs verfügbar.
 - Die Mandantenhierarchie ist per GitOps umgesetzt: `root → Umbrella-Mandant → drei Umgebungen`; jede mit Guest-Kubernetes-Clustern und Managed-Datenbanken; gemeinsam genutzte Dienste (Secrets, Image-Registry, Backup-Buckets) auf der Umbrella-Ebene.
 - Ein geografisch verteilter GPU-Cluster läuft mit einem KI/ML-Dienstset (der NVIDIA-Dynamo-Inferenz-Stack, LLM-Gateway, Qdrant-Vektordatenbank, Spracherkennung und weitere Dienste des RAG-Stacks), über den Multi-Cluster-Proxy mit dem Hauptcluster verbunden, der alle 5 Minuten synchronisiert.
 - Eine Demo für das Top-Management wurde vorbereitet und gezeigt: Dienstbereitstellung und GPU-Passthrough über die Web-UI, Single Sign-on, Mandantenfähigkeit — ohne YAML oder direkten Clusterzugriff.
-- Der Übergang in die Produktion auf der Infrastruktur des Kunden hat begonnen — genau das „eine Distribution → deployt beim Endkunden".
+- Der Übergang in die Produktion auf der Infrastruktur des Kunden hat begonnen — genau das „eine Distribution → deployt beim Endkunden“.
 
 ## Roadmap
 
@@ -90,11 +90,11 @@ Bemerkenswert ist die technische Tiefe des Supports: einige der benötigten Fixe
   <div class="card"><div class="card-body"><h3 class="card-title">Cozystack als universeller Installer</h3><p class="card-description">Der Kunde baut das Produkt; die Plattform liefert eine Distribution — für internes SaaS und für die isolierte Grenze des Endkunden.</p></div></div>
   <div class="card"><div class="card-body"><h3 class="card-title">Echte KI/ML-GPU-Workloads</h3><p class="card-description">Ein RAG-Stack und LLM-Inferenz mit einer über NVIDIA Dynamo gesteigerten GPU-Auslastung, für den Kunden in die Plattform verpackt.</p></div></div>
   <div class="card"><div class="card-body"><h3 class="card-title">Geo-Verteilung</h3><p class="card-description">Zwei Cluster in verschiedenen Rechenzentren über ein verschlüsseltes Mesh verbunden; die Modelle stehen allen Mandanten als gewöhnliche Services zur Verfügung.</p></div></div>
-  <div class="card"><div class="card-body"><h3 class="card-title">Geschwindigkeit und Anpassung</h3><p class="card-description">Nicht standardisierte Anforderungen „in einem Tag bis einer Woche" gelöst, wobei einige Verbesserungen upstream in Cozystack einflossen.</p></div></div>
+  <div class="card"><div class="card-body"><h3 class="card-title">Geschwindigkeit und Anpassung</h3><p class="card-description">Nicht standardisierte Anforderungen „in einem Tag bis einer Woche“ gelöst, wobei einige Verbesserungen upstream in Cozystack einflossen.</p></div></div>
 </div>
 
 ---
 
-*Diese Fallstudie wird in anonymisierter Form veröffentlicht (Tier-3-Evidenz): der Integrator und der Endkunde werden über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einer aktiven Opportunity [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie wird in anonymisierter Form veröffentlicht (Tier-3-Evidenz): der Integrator und der Endkunde werden über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einer aktiven Opportunity [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, verfügbar in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*

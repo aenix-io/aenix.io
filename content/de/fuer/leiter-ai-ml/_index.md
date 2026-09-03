@@ -35,16 +35,16 @@ faq:
   - q: "Wie teilen Teams knappe GPUs?"
     a: "Mandantenfähiges Scheduling mit Quotas und Isolation — Self-Service ohne dediziertes Cluster je Team."
   - q: "Build oder Buy?"
-    a: "AI & GPU für Tempo; das Aufbau-Modell, wenn GPU-Topologie und Serving zu Ihrem Stack passen müssen."
+    a: "AI Platform für Tempo; das Aufbau-Modell, wenn GPU-Topologie und Serving zu Ihrem Stack passen müssen."
   - q: "Bezug zu Souveräne-KI-Regeln?"
     a: "Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) — Betrieb auf kundenkontrollierter Hardware ist die strukturelle Antwort."
 ---
 
 <!-- BLOCK 1: HERO -->
 
-**Sie verantworten die AI/ML-Plattform, und die Zwänge häufen sich: GPU-Kosten und -Knappheit, Daten, die die Jurisdiktion nicht verlassen dürfen, und Kunden, die keinen US-Modell-Endpoint akzeptieren. Betreiben Sie Training und Inferenz auf eigenen GPUs, mandantenfähig, ohne Hyperscaler-Lock-in. Aenix liefert das schlüsselfertig oder baut es mit Ihnen.**
+**Sie verantworten die AI/ML-Plattform, und die Zwänge häufen sich: GPU-Kosten und -Knappheit, Daten, die die Jurisdiktion nicht verlassen dürfen, und Kunden, die keinen US-Modell-Endpoint akzeptieren. Betreiben Sie Training und Inferenz auf eigenen GPUs, mandantenfähig, ohne Hyperscaler-Lock-in. Ænix liefert das schlüsselfertig oder baut es mit Ihnen.**
 
-> **Passt zu:** **[Souveräne KI](/de/loesungen/sovereign-ai/)** und **[Ænix Platform AI/ML](/de/produkte/)** für One-Click-GPU-Inferenz — oder einem Aufbauprojekt nach Ihrem Stack. Offener Kern: **[Cozystack](https://cozystack.io)**.
+> **Passt zu:** **[Souveräne KI](/de/loesungen/sovereign-ai/)** und **[Ænix AI Platform](/de/produkte/ai-platform/)** für One-Click-GPU-Inferenz — oder einem Aufbauprojekt nach Ihrem Stack. Offener Kern: **[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -64,7 +64,7 @@ Engineering in der EU · Ihre GPUs, Ihre Jurisdiktion · Kein Endpoint-Lock-in �
 - **GPU-Kosten und -Knappheit** machen Hyperscaler-Instanzen teuer und schwer verfügbar.
 - Trainingsdaten sind **sensibel oder reguliert** und dürfen nicht zu einem Drittanbieter-Endpoint.
 - Sie brauchen **mandantenfähiges GPU-Sharing** über Teams hinweg, kein Cluster pro Projekt.
-- Sie wollen produktive **Inferenz (vLLM/LLM-Serving)** ohne ständiges Neu-Plattformieren.
+- Sie wollen produktive **Inferenz (vLLM/LLM-Serving)** ohne ständiges Neuaufsetzen der Plattform.
 
 ---
 
@@ -74,18 +74,15 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ---
 
-## Zwei Wege mit Aenix
+## Zwei Wege mit Ænix
 
-**1. Schlüsselfertige KI-Plattform.** Die [Ænix Platform AI/ML](/de/produkte/) ergänzt den mandantenfähigen Cozystack-Kern um GPU-Scheduling und One-Click-LLM/vLLM-Inferenz — Self-Service für Ihre Teams, auf Ihrer Hardware, mit Enterprise-SLA.
+**1. Schlüsselfertige KI-Plattform.** Die [Ænix AI Platform](/de/produkte/ai-platform/) ergänzt den mandantenfähigen Cozystack-Kern um GPU-Scheduling und One-Click-LLM/vLLM-Inferenz — Self-Service für Ihre Teams, auf Ihrer Hardware, mit Enterprise-SLA.
 
-**2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Aenix Ihr ausgelagertes Engineering-Team** für ein KI-Plattform-Projekt — GPU-Topologie, Scheduling, Inferenz-Serving und [Souveräne-KI](/de/loesungen/sovereign-ai/)-Kontrollen, entworfen um Ihre Modelle und Daten. Siehe [Dienstleistungen](/de/dienstleistungen/).
-
----
-
+**2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Engineering-Team** für ein KI-Plattform-Projekt — GPU-Topologie, Scheduling, Inferenz-Serving und [Souveräne-KI](/de/loesungen/sovereign-ai/)-Kontrollen, entworfen um Ihre Modelle und Daten. Siehe [Dienstleistungen](/de/dienstleistungen/).
 
 ---
 
-## Warum AI/ML-Leiter Aenix wählen
+## Warum AI/ML-Leiter Ænix wählen
 
 - **Souverän by construction.** Sensible Daten und Modelle bleiben auf Ihrer Hardware, in Ihrer Jurisdiktion.
 - **Mandantenfähige GPU statt Silos.** Knappe GPUs über Teams teilen, mit Quotas und Isolation.
@@ -93,21 +90,18 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ---
 
-
----
-
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-/Daten-Zwänge an und sagen, ob AI & GPU oder Aufbauprojekt passt.
+Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-/Daten-Zwänge an und sagen, ob AI Platform oder Aufbauprojekt passt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">AI & GPU →</a>
+  <a class="cta-secondary" href="/de/produkte/">AI Platform →</a>
 </div>
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-ai-ml/ ; hreflang de self, en → /for/head-of-ai-ml/.

@@ -1,6 +1,6 @@
 ---
 title: "Cloud-native research and teaching infrastructure — what universities actually need in 2026"
-description: "This is the long-form companion to our universities industry page. It walks through what cloud-native research and teaching infrastructure actually looks..."
+description: "Architecture patterns for university research and teaching infrastructure: the three missions, GPU scheduling for labs, and the pitfalls that recur."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -33,9 +33,9 @@ quiz:
       options:
         - { text: "KubeVirt live VM migration", correct: false }
         - { text: "Tenant CRD scoped per cohort", correct: true }
-        - { text: "cozyportal self-service UI", correct: false }
+        - { text: "Cozystack Dashboard self-service UI", correct: false }
         - { text: "Velero backup and restore", correct: false }
-      explanation: "Tenant CRD per cohort isolates students; quota and RBAC contain misconfiguration; instructor self-service via cozyportal lets instructors create/destroy student environments without an IT ticket."
+      explanation: "Tenant CRD per cohort isolates students; quota and RBAC contain misconfiguration; instructor self-service via Cozystack Dashboard lets instructors create/destroy student environments without an IT ticket."
     - q: "Why does the article argue that per-CPU subscription pricing fits university economics poorly?"
       options:
         - { text: "Per-CPU pricing is illegal under EU procurement rules", correct: false }
@@ -44,11 +44,7 @@ quiz:
       explanation: "University IT budgets don't scale with compute demand. Open-source platforms with optional commercial support are sustainable economically; per-CPU subscription pricing typical of commercial alternatives doesn't fit university economics."
 ---
 
-**This is the long-form companion to our [universities industry page](/industries/universities). It walks through what cloud-native research and teaching infrastructure actually looks like in 2026 — for the IT directors, research-computing leads, principal investigators, and faculty curriculum committees making decisions.**
-
 University and research-institute IT in 2026 sits at a difficult intersection: rising research computing demand (especially AI/ML), reproducibility mandates (Plan S, FAIR, Horizon Europe), curriculum needs for cloud-native technologies, multi-stakeholder governance, and budgets that don't grow at the rate of compute demand. Cloud-native platforms — open-source, Kubernetes-native, multi-tenant — increasingly answer all of these simultaneously, where pre-cloud infrastructure had to be specialized per use case.
-
-This article covers what's actually being deployed and why.
 
 ## The three missions revisited
 
@@ -72,7 +68,7 @@ Each has limits:
 
 What modern research computing increasingly wants: **shared GPU pool with strong isolation, self-service for PIs, IaC-managed for reproducibility, integrated with national/European research infrastructure where applicable.**
 
-A Kubernetes-native platform like Cozystack delivers this. KubeVirt handles legacy VM-based research workflows; native containers handle modern ML pipelines. NVIDIA vGPU + MIG + time-slicing share GPU across labs. Tenant CRD provides per-lab isolation. Cozyportal gives PIs self-service. The same infrastructure can integrate with EuroHPC for largest workloads (many universities have hybrid arrangements).
+A Kubernetes-native platform like Cozystack delivers this. KubeVirt handles legacy VM-based research workflows; native containers handle modern ML pipelines. The NVIDIA GPU Operator hands whole GPUs to workloads and HAMi shares a single GPU across labs by memory and compute cores; VMs get VFIO passthrough or NVIDIA vGPU. Tenant CRD provides per-lab isolation. The Cozystack Dashboard gives PIs self-service. The same infrastructure can integrate with EuroHPC for largest workloads (many universities have hybrid arrangements).
 
 ### Mission 2 — reproducible research infrastructure
 
@@ -163,9 +159,9 @@ Teaching Kubernetes on a single-tenant minikube is teaching a toy. Teaching on p
 ### Pitfall 5: Reproducibility as afterthought
 Building research infrastructure without reproducibility patterns from day 1 means retrofitting later, which is expensive. Containerization and IaC discipline should be the default.
 
-## Aenix engagement specifics for universities
+## Ænix engagement specifics for universities
 
-Aenix has built Cozystack-based platforms for university and research-institute customers across the EU and Central Asia. Engagement specifics:
+Ænix has built Cozystack-based platforms for university and research-institute customers across the EU and Central Asia. Engagement specifics:
 
 - **Public-procurement-aware** — RFI / RFP through standard channels in EU member states and Kazakhstan
 - **Capacity-transfer first-class** — knowledge handover to in-house academic IT is explicit deliverable
@@ -174,12 +170,3 @@ Aenix has built Cozystack-based platforms for university and research-institute 
 - **Academic-friendly support tiers** — discounted commercial support for academic deployments
 
 For details see **[universities industry page](/industries/universities)**.
-
-## How to start
-
-If your university or research institute fits the profile, the structured next step is a focused assessment. Aenix runs **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with academic-context emphasis.
-
----
-
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia.*
-

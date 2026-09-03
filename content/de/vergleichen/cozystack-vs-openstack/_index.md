@@ -3,10 +3,11 @@ title: "Cozystack vs OpenStack — Head-to-Head für OpenStack-erfahrene Teams"
 description: "Beide sind Open-Source-Private-Cloud-Plattformen. Beide Apache 2.0. Beide produktionserprobt. Der Unterschied ist Generation und operativer Footprint."
 related_pages:
   - /de/alternativen/openstack-alternative
-  - /de/produkte/aenix-platform/provider-edition/
-  - /de/produkte/aenix-platform/public-cloud-edition/
+  - /de/produkte/public-cloud-platform/
+  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
+hreflang_en: /compare/cozystack-vs-openstack/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
@@ -32,18 +33,18 @@ faq:
   - q: "Wann sollte ein Team bei OpenStack bleiben statt zu Cozystack zu wechseln?"
     a: "OpenStack bleibt sinnvoll bei tiefer OpenStack-Expertise im Team, bei Hyperscale-Anforderungen (Telco oder sehr großer Cloud-Anbieter) sowie wenn spezifische OpenStack-Features wie Heat oder Trove zwingend erforderlich sind."
   - q: "Ist die Migration von OpenStack zu Cozystack wirtschaftlich sinnvoll?"
-    a: "Cozystack lohnt sich, wenn OpenStack-Engineers schwer zu finden oder zu halten sind, der operative Footprint für die Workload-Größe zu schwer ist, der Workload-Mix sich Richtung Kubernetes-First verschiebt oder schnellere Feature-Velocity gewünscht ist. Aenix liefert dafür einen produktisierten Migrationspfad."
+    a: "Cozystack lohnt sich, wenn OpenStack-Engineers schwer zu finden oder zu halten sind, der operative Footprint für die Workload-Größe zu schwer ist, der Workload-Mix sich Richtung Kubernetes-First verschiebt oder schnellere Feature-Entwicklungsgeschwindigkeit gewünscht ist. Aenix liefert dafür einen produktisierten Migrationspfad."
   - q: "Wie unterscheidet sich der Upgrade-Pfad zwischen beiden Plattformen?"
     a: "OpenStack-Upgrades sind durch die Vielzahl der Dienste komplex und koordinationsintensiv. Cozystack-Upgrades sind GitOps-gesteuert und folgen der Kubernetes-Operatoren-Logik, was den operativen Aufwand deutlich reduziert."
   - q: "Welche Storage- und Networking-Technologien nutzt Cozystack?"
     a: "Cozystack nutzt LINSTOR/DRBD für replizierten Block-Storage und Cilium (eBPF) für das Networking. VMs und Container laufen über KubeVirt auf derselben Kubernetes-API, statt wie bei OpenStack über getrennte Dienste wie Cinder und Neutron."
   - q: "Was bietet Aenix gegenüber selbst betriebenem Cozystack oder OpenStack?"
-    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und liefert die produktisierte Ænix Platform als turnkey Cloud-in-a-Box in zwei Editions plus Betriebs-Services. Die Preisstufen reichen von Basic (1.250 $/Mon., 10 Nodes) über Standard (3.000 $) und Plus (5.500 $) bis Enterprise nach Vereinbarung."
+    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und liefert die produktisierte Ænix Platform als turnkey Cloud-in-a-Box in drei Plattformen plus Betriebs-Services. Die Preisstufen reichen von Basic (1.250 $/Mon., 10 Nodes) über Standard (3.000 $) und Plus (5.500 $) bis Enterprise nach Vereinbarung."
 ---
 
 **Beide sind Open-Source-Private-Cloud-Plattformen. Beide Apache 2.0. Beide produktionserprobt. Der Unterschied ist Generation und operativer Footprint.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für Hosting-Anbieter, die von OpenStack modernisieren; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die von OpenStack modernisieren — und, mit zugeschalteter Multi-Region-Fähigkeit, für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="compare-elevated compare-elevated--col3">
 
@@ -51,10 +52,10 @@ faq:
 |---|---|---|
 | **Lizenz** | Apache 2.0 | Apache 2.0 |
 | **Foundation** | Multi-Project (Nova, Neutron, Cinder, etc.) | Kubernetes + KubeVirt + Cilium |
-| **Operativer Footprint** | Schwer (50-100+ Services) | Leicht (5-15 Operatoren) |
+| **Operativer Footprint** | Schwer (50-100+ Services) | Leicht (5-15 Kubernetes-Operators) |
 | **Engineer-Verfügbarkeit** | Schrumpfender Pool | Kubernetes-groß |
 | **Multi-Tenancy** | Keystone Projects | Tenant CRD |
-| **Container** | Add-on | Native |
+| **Container** | Add-on | Nativ |
 | **Upgrade-Pfad** | Komplex | GitOps-managed |
 
 </div>
@@ -67,7 +68,7 @@ faq:
 - OpenStack-Engineers schwer zu finden / zu halten
 - Operativer Footprint zu schwer für Workload-Größe
 - Workload-Mix zu Kubernetes-First verschoben
-- Schnellere Feature-Velocity gewünscht
+- Schnellere Feature-Entwicklungsgeschwindigkeit gewünscht
 
 **OpenStack passt wenn:**
 - Tiefe OpenStack-Expertise im Team
@@ -76,4 +77,4 @@ faq:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

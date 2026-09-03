@@ -1467,7 +1467,8 @@
   box-shadow: var(--glow-btn);
 }
 .cta-primary:hover {
-  background: var(--brand-primary);
+  /* darker than the resting fill — white on --brand-primary is 2.68:1 (fails AA) */
+  background: var(--brand-primary-hover, #0856B0);
   color: #fff;
   box-shadow: 0 0 32px rgba(1,165,255,0.4), 0 6px 20px rgba(0,0,0,0.3);
   transform: translateY(-1px);
@@ -1598,7 +1599,14 @@
   background: rgba(0,0,0,0.25); color: var(--text-primary);
   font-size: 1rem; font-weight: 500;
 }
-.roicalc-grid input:focus { outline: none; border-color: var(--brand-primary); }
+.roicalc-grid input:focus { border-color: var(--brand-primary); }
+/* Keyboard focus must stay visible: the bare `outline:none` here outranked the
+   global :focus-visible rule below (0,2,1 vs 0,1,1), leaving keyboard users on
+   /roi-calculator/ with only a 1px border tint. */
+.roicalc-grid input:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+}
 .roicalc-out {
   margin-top: 1.15rem; border-top: 1px solid var(--glass-border, rgba(255,255,255,0.1));
   padding-top: 0.85rem;
@@ -2319,7 +2327,7 @@ summary:focus-visible,
   font-size: 0.9375rem;
 }
 .footer-nav-group { gap: 0.375rem; }
-.footer-nav-group h4 {
+.footer-nav-group h2, .footer-nav-group h4 {
   color: var(--text-muted, #8493A8);
   font-size: 0.6875rem;
 }
@@ -3001,7 +3009,7 @@ body { overflow-x: clip; }
 .footer-logo img { width: 128px; height: auto; }
 .footer-tagline { font-size: 1.0625rem; margin-top: 0.875rem; }
 .footer-top { margin-bottom: 3.5rem; }
-.footer-nav-group h4 { font-size: 0.75rem; margin-bottom: 0.75rem; }
+.footer-nav-group h2, .footer-nav-group h4 { font-size: 0.75rem; margin-bottom: 0.75rem; }
 .footer-nav-group a { font-size: 0.875rem; padding: 0.125rem 0; }
 
 /* --- Empty data grids (partners / offices / videos / team):

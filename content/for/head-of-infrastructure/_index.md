@@ -11,16 +11,16 @@ related_pages:
   - /alternatives/vmware-alternative/
   - /migration/vmware/
   - /services/build-private-cloud/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /solutions/data-sovereignty/
   - /products/cozystack/
 ---
 
 <!-- BLOCK 1: HERO -->
 
-**Broadcom turned your VMware renewal into a board-level line item. The exit: an open, Kubernetes-native platform that runs your VMs, containers, storage and networking on hardware you own — no per-core tax. Aenix delivers it two ways — a turnkey product you run, or our engineers building it with you.**
+**Broadcom turned your VMware renewal into a board-level line item. The exit: an open, Kubernetes-native platform that runs your VMs, containers, storage and networking on hardware you own — no per-core tax. Ænix delivers it two ways — a turnkey product you run, or our engineers building it with you.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for a turnkey private cloud, or **[Build a Private Cloud](/services/build-private-cloud/)** when you want us to design and stand it up to your spec. Both run on **[Cozystack](/products/cozystack/)** — open source, Apache 2.0.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for a turnkey private cloud, or **[Build a Private Cloud](/services/build-private-cloud/)** when you want us to design and stand it up to your spec. Both run on **[Cozystack](/products/cozystack/)** — open source, Apache 2.0.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -51,11 +51,11 @@ Replace the hypervisor layer without re-platforming the business overnight: one 
 
 ---
 
-## Two ways Aenix helps you
+## Two ways Ænix helps you
 
-**1. Run a turnkey platform.** [Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/) is cloud-in-a-box on the open-source Cozystack core: VMs, managed Kubernetes, managed databases, object storage, observability, multi-tenancy — with enterprise SLA. You operate it; we support it.
+**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) is cloud-in-a-box on the open-source Cozystack core: VMs, managed Kubernetes, managed databases, object storage, observability, multi-tenancy — with enterprise SLA. You operate it; we support it.
 
-**2. Build your own, with our team.** When you want a platform tuned to your estate and processes, Cozystack is the framework and **Aenix is your outsourced engineering team**: we design the architecture, run the [VMware migration](/migration/vmware/), and stand up a [private cloud](/services/build-private-cloud/) you own. This fills the KubeVirt/Kubernetes gap without a hiring cycle.
+**2. Build your own, with our team.** When you want a platform tuned to your estate and processes, Cozystack is the framework and **Ænix is your outsourced engineering team**: we design the architecture, run the [VMware migration](/migration/vmware/), and stand up a [private cloud](/services/build-private-cloud/) you own. This fills the KubeVirt/Kubernetes gap without a hiring cycle.
 
 Either path ends with the platform — and the skills — in your hands.
 
@@ -66,7 +66,7 @@ Either path ends with the platform — and the skills — in your hands.
 - **What it is:** an open, Kubernetes-native platform (VMs via KubeVirt + containers + storage + networking) that replaces vSphere/Nutanix.
 - **Who it's for:** Heads / VPs / Directors of Infrastructure running a VMware or Nutanix estate.
 - **License:** Apache 2.0 — no per-core/per-socket licensing.
-- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox since 2024-09-26; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026).
 - **Typical timeline:** 9–18 months for a full estate; first workloads in weeks.
 - **Common pitfall:** treating the exit as VM-only and discovering backup, observability and CI/CD still depend on the old stack.
 
@@ -74,9 +74,9 @@ Either path ends with the platform — and the skills — in your hands.
 
 ---
 
-## Why infrastructure leaders pick Aenix
+## Why infrastructure leaders pick Ænix
 
-- **We are the team behind the platform.** Aenix maintains Cozystack — you get the authors as your delivery and support partner, not a reseller.
+- **We are the team behind the platform.** Ænix maintains Cozystack — you get the authors as your delivery and support partner, not a reseller.
 - **No hyperscaler bias.** We recommend (and operate) the architecture that meets your constraint, including fully on-prem.
 - **EU engineering.** Sovereignty is structural — your hardware, your jurisdiction, your cluster-level access — not a contract clause.
 
@@ -91,7 +91,7 @@ Yes. KubeVirt runs your VMs alongside containers on the same platform, so you mi
 No. Cozystack is a single Kubernetes-native framework for VMs, containers, managed databases, storage and networking — multi-tenant and built for operators. See the honest [VMware alternative](/alternatives/vmware-alternative/) comparison.
 
 **We don't have a Kubernetes team. Can we still do this?**
-That's the build-with model — Aenix acts as your engineering bench, builds the platform, and trains your team to operate it.
+That's the build-with model — Ænix acts as your engineering bench, builds the platform, and trains your team to operate it.
 
 **How fast can we show a result?**
 A discovery call scopes a low-risk first workload; pilots typically run in weeks, full-estate migration over 9–18 months.
@@ -112,11 +112,11 @@ Free, no prep. We confirm fit, look at your current estate, and tell you whether
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:
-- title: "For Heads of Infrastructure — Exit VMware on Your Terms | Aenix"
+- title: "For Heads of Infrastructure — Exit VMware on Your Terms | Ænix"
 - description: see frontmatter (≤160)
 - canonical: https://aenix.io/for/head-of-infrastructure/
 - hreflang: en (self, x-default), de → /de/fuer/leiter-infrastruktur/

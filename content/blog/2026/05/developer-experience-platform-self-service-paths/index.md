@@ -1,6 +1,6 @@
 ---
 title: "Developer experience platforms — building self-service paths that actually get used"
-description: "This is the long-form companion to our developer self-service solutions page. It walks through what self-service paths actually look like in production, how..."
+description: "The ten golden paths most worth building, the five characteristics that make them work, and the architectural decisions that shape self-service."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -41,8 +41,6 @@ quiz:
         - { text: "80% of cases; the rest goes through escape hatches", correct: true }
       explanation: "Pitfall 2 (too rigid): golden paths must serve 80% of cases; the remaining 20% need escape hatches. Without them, teams that have specialised needs route around the platform entirely."
 ---
-
-**This is the long-form companion to our [developer self-service solutions page](/solutions/developer-self-service). It walks through what self-service paths actually look like in production, how to design them so product teams adopt them, and the operational practices that keep them maintained.**
 
 Most "developer experience" articles in 2026 stop at "use Backstage." That's not the answer; that's a tooling decision that comes after the architectural decisions. The architectural decisions determine whether self-service paths actually work.
 
@@ -136,11 +134,6 @@ Building paths that platform team thinks are needed; turns out the actual top-10
 
 ## How to assess and start
 
-If self-service is on the table, the structured assessment names the top requests, where current paths fail, and what the priority build sequence looks like. Aenix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+If self-service is on the table, the structured assessment names the top requests, where current paths fail, and what the priority build sequence looks like. Ænix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 For details see **[developer self-service services](/solutions/developer-self-service)** and **[internal developer platform services](/services/internal-developer-platform/)**.
-
----
-
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
-

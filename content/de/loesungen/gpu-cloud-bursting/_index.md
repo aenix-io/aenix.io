@@ -1,6 +1,6 @@
 ---
 title: "GPU-Cloud-Bursting und Multi-Cloud-GPU-as-a-Service"
-description: "Cloud Bursting für GPU-Workloads: von eigener Bare-Metal-Basis in Public- und Souveräne Clouds bursten, unter einer Cluster API, mit fraktionalem GPU-Sharing."
+description: "Cloud Bursting für GPU-Workloads: von eigener Bare-Metal-Basis in Public- und souveräne Clouds bursten, unter einer Cluster API, mit fraktionalem GPU-Sharing."
 date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
@@ -14,7 +14,7 @@ hreflang_en: "/solutions/gpu-cloud-bursting/"
 related_pages:
   - /de/loesungen/sovereign-ai/
   - /de/loesungen/hybrid-cloud/
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/ai-platform/
   - /de/dienstleistungen/ai-platform-build/
   - /de/branchen/universitaeten/
   - /de/roi-rechner/
@@ -58,9 +58,9 @@ faq:
 
 # GPU-Cloud-Bursting: Multi-Cloud-GPU-as-a-Service auf Ihrer eigenen Plattform
 
-**Die Basis besitzen, nur die Spitzen mieten. Cloud Bursting lässt Sie stetige GPU-Workloads auf selbst kontrollierter Hardware betreiben und Inferenz- oder Training-Spitzen bei Bedarf in Public- oder souveräne Clouds auslagern — und die Zusatzkapazität danach wieder abbauen. Aenix baut das als GPU-as-a-Service auf einer einzigen Kubernetes-Plattform, damit Ihre Teams elastische GPU erhalten — ohne Hyperscaler-Lock-in, ohne intransparente Abrechnung, ohne komplette Migration.**
+**Die Basis besitzen, nur die Spitzen mieten. Cloud Bursting lässt Sie stetige GPU-Workloads auf selbst kontrollierter Hardware betreiben und Inferenz- oder Training-Spitzen bei Bedarf in Public- oder souveräne Clouds auslagern — und die Zusatzkapazität danach wieder abbauen. Ænix baut das als GPU-as-a-Service auf einer einzigen Kubernetes-Plattform, damit Ihre Teams elastische GPU erhalten — ohne Hyperscaler-Lock-in, ohne intransparente Abrechnung, ohne komplette Migration.**
 
-> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/aenix-platform/ai-ml-edition/)** — Multi-Tenant-GPU-Scheduling, fraktionales Sharing und fertige Blueprints für Inferenz und Fine-Tuning. Für die elastische Self-Service-Cloud darunter: kombinieren mit **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)**. Rechnen Sie die Zahlen mit den **[ROI- & TCO-Rechnern](/de/roi-rechner/)** durch.
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — Multi-Tenant-GPU-Scheduling, fraktionales Sharing und fertige Blueprints für Inferenz und Fine-Tuning. Für die elastische Self-Service-Cloud darunter: kombinieren mit **[Public Cloud Platform](/de/produkte/public-cloud-platform/)**. Rechnen Sie die Zahlen mit den **[ROI- & TCO-Rechnern](/de/roi-rechner/)** durch.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -75,7 +75,7 @@ faq:
 
 ## Was Sie bekommen
 
-GPU-Cloud-Bursting auf der Aenix-Plattform ist ein elastischer GPU-Pool, verteilt über die Infrastruktur, die Sie bereits haben, und die Clouds, die Sie erreichen wollen.
+GPU-Cloud-Bursting auf der Ænix-Plattform ist ein elastischer GPU-Pool, verteilt über die Infrastruktur, die Sie bereits haben, und die Clouds, die Sie erreichen wollen.
 
 - **Bursten in Public- und souveräne Clouds.** Basis-Workloads laufen auf eigenem Bare Metal. Bei Lastspitzen wird Kapazität in einem Public-Hyperscaler, einer souveränen Cloud oder beiden ergänzt — und danach freigegeben. Eine souveräne Cloud kann ein vollwertiges Burst-Target sein, wenn ein Regulator GPU-Verarbeitung an eine Jurisdiktion bindet oder ihre GPUs schlicht günstiger sind.
 - **Fraktionales GPU-Sharing.** Mit HAMi über dem NVIDIA-GPU-Operator teilen sich mehrere Jobs eine physische Karte. Ein Notebook, ein kleiner Inferenz-Endpoint und ein Batch-Job koexistieren auf einer GPU, statt jeweils ein ganzes Gerät zu belegen.
@@ -86,7 +86,7 @@ GPU-Cloud-Bursting auf der Aenix-Plattform ist ein elastischer GPU-Pool, verteil
 
 ### Für wen ist das?
 
-AI/ML-Teams mit sprunghaftem Training- und Inferenz-Bedarf, Forschungseinrichtungen und Universitäten mit geteilten GPU für Kurse und Experimente sowie Plattform-Betreiber, die GPU-as-a-Service anbieten wollen, ohne einen Hyperscaler weiterzuverkaufen. Ist Ihr GPU-Bedarf flach und planbar, brauchen Sie womöglich kein Bursting — kaufen Sie für die Grundlast und gut. Springt er, liegt in Bursting die Ökonomie.
+AI/ML-Teams mit sprunghaftem Training- und Inferenz-Bedarf, Forschungseinrichtungen und Universitäten mit geteilten GPU für Kurse und Experimente sowie Plattform-Betreiber, die GPU-as-a-Service anbieten wollen, ohne einen Hyperscaler weiterzuverkaufen. Ist Ihr GPU-Bedarf flach und planbar, brauchen Sie womöglich kein Bursting — kaufen Sie für die Grundlast — mehr braucht es nicht. Springt er, liegt in Bursting die Ökonomie.
 
 </div>
 </div>
@@ -107,7 +107,7 @@ Das Muster besteht aus Standard-Kubernetes-Primitiven, zusammengesetzt und durch
 </div>
 </div>
 
-- **Cluster Autoscaler** erkennt GPU-Pods, die nicht geplant werden können, und provisioniert Nodes auf dem richtigen Ziel — Bare Metal, Hyperscaler oder souveräne Cloud — über die [Cluster API](https://cluster-api.sigs.k8s.io/), Kubernetes' deklarativen Standard für den Lebenszyklus von Clustern und Maschinen. Leert sich die Queue, werden die Nodes entfernt.
+- **Cluster Autoscaler** erkennt GPU-Pods, die nicht geplant werden können, und provisioniert Nodes auf dem richtigen Ziel — Bare Metal, Hyperscaler oder souveräne Cloud — über die [Cluster API](https://cluster-api.sigs.k8s.io/), Kubernetes' deklarativen Standard für den Lebenszyklus von Clustern und Maschinen. Leert sich die Warteschlange, werden die Nodes wieder abgebaut.
 - **Cilium plus WireGuard-Mesh (Kilo)** liefern die CNI und ein verschlüsseltes Overlay über Clouds hinweg. Frisch autoskalierte Nodes melden sich ins Mesh und erreichen geteilten Storage ohne manuelle Schritte — das [Kubernetes-Netzwerkmodell](https://kubernetes.io/docs/concepts/services-networking/) behandelt sie, als wären sie lokal.
 - **NVIDIA-GPU-Operator** übernimmt Treiber-Installation, Device-Discovery und Passthrough auf jedem Node, und HAMi ergänzt fraktionales Sharing, sodass eine Karte mehrere Pods bedient.
 - **Talos Linux und Kamaji** bilden die Basis: ein immutables, API-verwaltetes OS für die Nodes und Hosted Control Planes für Tenant-Cluster, sodass jeder Tenant von Grund auf isoliert ist.
@@ -127,4 +127,4 @@ Ihr Mix aus Grundlast, Spitze und Burst-Target entscheidet über die Ersparnis. 
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, verfügbar in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML. Wir bauen Multi-Cloud-GPU-Plattformen für AI/ML-, Forschungs- und Plattform-Betreiber-Organisationen in der EU und DACH.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen Multi-Cloud-GPU-Plattformen für AI/ML-, Forschungs- und Plattform-Betreiber-Organisationen in der EU und DACH.*

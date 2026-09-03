@@ -1,7 +1,7 @@
 ---
 title: "Platform Readiness Assessment — for cloud sovereignty, migration, and cost posture in 14 days"
-description: "A structured cloud readiness assessment that gives you three concrete outcomes: time-to-environment metric, compliance-by-design map, and cost-and-control..."
-related_pages: ["/solutions/data-sovereignty/", "/solutions/dora-compliance/", "/solutions/cloud-repatriation/", "/solutions/sovereign-ai/", "/services/platform-engineering/", "/products/aenix-platform/", "/products/cozystack/", "/pricing"]
+description: "Fixed-price 14 or 28-day assessment: time-to-environment metric, compliance-by-design map across DORA, NIS2 and GDPR, and a 12-month cost trajectory."
+related_pages: ["/solutions/data-sovereignty/", "/solutions/dora-compliance/", "/solutions/cloud-repatriation/", "/solutions/sovereign-ai/", "/services/platform-engineering/", "/products/", "/products/cozystack/", "/pricing"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -35,13 +35,14 @@ faq:
     a: "Three written, dated outputs handed to the executive sponsor: a time-to-environment metric (current vs target with a delivery plan), a compliance-by-design map across DORA / NIS2 / GDPR and sectoral controls, and a 12-month cost-and-control trajectory with caps and ranked repatriation candidates."
   - q: "Does it work for an organization that has already chosen a stack?"
     a: "Yes. The workstreams shift emphasis toward operational readiness, multi-tenancy model, regulator gap, and developer self-service rather than vendor selection — for example if you have already committed to KubeVirt, Cilium, LINSTOR, and Talos."
+hreflang_de: /de/dienstleistungen/platform-readiness-assessment/
 ---
 
 <!-- BLOCK 1: HERO -->
 
 **If you're evaluating data sovereignty, DORA / NIS2 compliance, cloud repatriation, sovereign AI, or a self-service platform for your developers — this is the engagement that turns the question into a written plan with numbers, owners, and a timeline.**
 
-> **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — the assessment recommends which edition fits your scope.
+> **Pairs with:** all three **[Ænix platforms](/products/)** — the assessment names which one fits your scope, or says none of them does.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -49,13 +50,10 @@ faq:
 </div>
 
 <div class="trust-badges">
-Aenix engineers, not consultants · Fixed-price · Written deliverables · No vendor lock-in
+Ænix engineers, not consultants · Fixed-price · Written deliverables · No vendor lock-in
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -211,16 +209,14 @@ The 4-week variant adds: vendor-shortlisting workshops (where applicable), proof
 
 ## Who actually does the work
 
-The engagement is run by **Aenix platform engineers** — the team that builds and operates Cozystack in production for service providers, banks, and sovereign-cloud projects. Not seconded management consultants. Not a partner network handing the project off after the sale.
+The engagement is run by **Ænix platform engineers** — the team that builds and operates Cozystack in production for service providers, banks, and sovereign-cloud projects. Not seconded management consultants. Not a partner network handing the project off after the sale.
 
 That matters because:
 - We've made these architectural decisions on real production systems, not slides.
 - Our recommendations come with implementation effort estimates we have actually paid.
 - If you decide to engage us for Phase 2 implementation, the same engineers continue.
 
-Aenix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project. The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
-
-{{< factoid number="5-20" label="platform readiness assessments Aenix runs per year across the EU and Central Asia" >}}
+Ænix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project. The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
 
 <!-- /BLOCK 7 -->
 
@@ -259,25 +255,15 @@ If a Phase 2 engagement follows, the assessment cost is credited against the imp
 We've run platform readiness assessments for service providers, regional cloud providers, financial-services organizations, telecom operators, and sovereign-cloud initiatives across the EU and Central Asia.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
 
-{{< quote-carousel >}}
-> *— {{NAME_2}}, {{TITLE_2}}*
-
-For named case studies see **[Customer stories](/case-studies/)** — request the protected versions on the discovery call where applicable.
+Named references and the protected versions of NDA-covered engagements are shared on the discovery call. [Customer stories →](/case-studies/)
 
 <!-- /BLOCK 9 -->
 
 ---
 
-<!-- BLOCK 10: FAQ -->
-
-
 **More questions?** See the **[methodology deep-dive on our blog](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)** or **[talk to us](#discovery)**.
 
-<!-- /BLOCK 10 -->
-
----
 
 <!-- BLOCK 11: BOTTOM CTA -->
 
@@ -301,7 +287,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run platform readiness assessments and platform engineering programs for service providers, banks, and sovereign-cloud projects across the EU and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run platform readiness assessments and platform engineering programs for service providers, banks, and sovereign-cloud projects across the EU and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

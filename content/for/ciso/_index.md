@@ -11,15 +11,15 @@ related_pages:
   - /solutions/dora-compliance/
   - /solutions/nis2-compliance/
   - /solutions/data-sovereignty/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack/
 ---
 
 <!-- BLOCK 1: HERO -->
 
-**DORA, NIS2 and data-residency turned cloud into a control-and-evidence problem: prove where data lives, who holds the keys, how far the supplier chain reaches. You need a platform where the answers are structural — your hardware, your jurisdiction, your keys. Aenix delivers it turnkey, or builds it with you.**
+**DORA, NIS2 and data-residency turned cloud into a control-and-evidence problem: prove where data lives, who holds the keys, how far the supplier chain reaches. You need a platform where the answers are structural — your hardware, your jurisdiction, your keys. Ænix delivers it turnkey, or builds it with you.**
 
-> **Pairs with:** **[DORA](/solutions/dora-compliance/)**, **[NIS2](/solutions/nis2-compliance/)** and **[data-sovereignty](/solutions/data-sovereignty/)** engagements, **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)**, on open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[DORA](/solutions/dora-compliance/)**, **[NIS2](/solutions/nis2-compliance/)** and **[data-sovereignty](/solutions/data-sovereignty/)** engagements, **[Ænix Private Cloud Platform](/products/private-cloud-platform/)**, on open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -49,11 +49,11 @@ Move regulated workloads onto infrastructure where sovereignty is a property of 
 
 ---
 
-## Two ways Aenix helps you
+## Two ways Ænix helps you
 
-**1. Run a turnkey platform.** [Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/) runs on your hardware in your jurisdiction, with customer-controlled keys at every data layer (primary, replicas, backups, observability) and an air-gap option — the regulated cloud you operate with our SLA.
+**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) runs on your hardware in your jurisdiction, with customer-controlled keys at every data layer (primary, replicas, backups, observability) and an air-gap option — the regulated cloud you operate with our SLA.
 
-**2. Assess and build with our team.** Cozystack is the framework; **Aenix is your engineering and assessment team** for [DORA](/solutions/dora-compliance/), [NIS2](/solutions/nis2-compliance/) and [data-sovereignty](/solutions/data-sovereignty/) work — a control-level map of where data lives today, the gaps, and the remediation build.
+**2. Assess and build with our team.** Cozystack is the framework; **Ænix is your engineering and assessment team** for [DORA](/solutions/dora-compliance/), [NIS2](/solutions/nis2-compliance/) and [data-sovereignty](/solutions/data-sovereignty/) work — a control-level map of where data lives today, the gaps, and the remediation build.
 
 ---
 
@@ -63,14 +63,14 @@ Move regulated workloads onto infrastructure where sovereignty is a property of 
 - **Who it's for:** CISOs, Heads of Compliance / Risk, DORA/NIS2 programme owners.
 - **Key dates:** DORA in force **2025-01-17**; NIS2 covers **18 sectors** in Annex I/II.
 - **Control:** customer-held encryption keys; cluster-level access; air-gap supported.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026), Apache 2.0.
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026), Apache 2.0.
 - **Common pitfall:** production data is in-region but observability/backups leave the perimeter unnoticed.
 
 [Source: [EUR-Lex DORA](https://eur-lex.europa.eu/eli/reg/2022/2554/oj), [ENISA NIS2](https://www.enisa.europa.eu/)]
 
 ---
 
-## Why CISOs pick Aenix
+## Why CISOs pick Ænix
 
 - **Sovereignty is structural.** Your hardware, jurisdiction and keys — not a contractual promise on a hyperscaler.
 - **No provider bias.** We aren't tied to any cloud; the report's bias is toward what we can demonstrate.
@@ -108,7 +108,7 @@ Free, no prep. We narrow the scope to the regulators and clauses that bind you, 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:

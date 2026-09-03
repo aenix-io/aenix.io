@@ -1,6 +1,6 @@
 ---
 title: "Production Kubernetes cluster setup — architecture decisions, sizing, and operations in 2026"
-description: "This is the long-form companion to our Kubernetes consulting services page. It walks through the architecture decisions that matter when setting up..."
+description: "Ten architecture decisions behind a production Kubernetes cluster — distribution, tenancy, CNI, storage, GitOps, DR — and the readiness failures that recur."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,11 +42,7 @@ quiz:
       explanation: "Bare-metal deployments default to MetalLB (layer-2 load balancing) plus Cilium (layer-7). Service mesh (Istio/Linkerd) is for advanced traffic management on top."
 ---
 
-**This is the long-form companion to our [Kubernetes consulting services page](/services/kubernetes-consulting/). It walks through the architecture decisions that matter when setting up Kubernetes for production — distribution choice, networking, storage, identity, observability — and the operational practices that keep a cluster reliable. Written for the platform engineers and architects making these decisions.**
-
 Most Kubernetes-setup tutorials get you a cluster. They don't get you a production-ready cluster. The difference is the dozen architectural decisions that don't show up in a "kubectl apply" workflow but that determine whether your cluster operates well at scale or becomes a permanent maintenance burden.
-
-This article covers what those decisions actually are.
 
 ## Decision 1: distribution choice
 
@@ -102,7 +98,7 @@ Storage in Kubernetes is a separate operational discipline. Options:
 - **Vendor SAN / hyperconverged** — VMware vSAN, NetApp, Pure Storage. Operational handoff to vendor; cost ceiling.
 - **Cloud-provider storage** — EBS, Azure Disks, GCP PD — when cloud-managed.
 
-For production stateful workloads on bare metal, LINSTOR or Ceph are the realistic choices. Cozystack ships LINSTOR; it's been validated in production.
+For production stateful workloads on bare metal, LINSTOR/DRBD are the realistic choices. Cozystack ships LINSTOR; it's been validated in production.
 
 ## Decision 5: identity and secrets
 
@@ -210,13 +206,7 @@ Cluster is "owned" by everyone, operated by no one. Drift accumulates; nobody ca
 
 Before building or scaling, an architecture review is the cheapest insurance. The output is a written assessment of where you stand, where the gaps are, and what production-readiness looks like for your scale.
 
-Aenix runs Kubernetes architecture reviews as a focused 5-10 day engagement, or as part of broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-
-## How to start
-
-For details and pricing see the **[Kubernetes consulting services page](/services/kubernetes-consulting/)**.
-
----
+Ænix runs Kubernetes architecture reviews as a focused 5-10 day engagement, or as part of broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 ## Want to dig deeper?
 
@@ -224,8 +214,3 @@ For details and pricing see the **[Kubernetes consulting services page](/service
 - **[Platform engineering services](/services/platform-engineering/)** — broader scope
 - **[Internal developer platform](/services/internal-developer-platform/)** — IDP layer
 - **[Cozystack](/products/cozystack/)** — open-source platform foundation
-
----
-
-*Aenix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
-

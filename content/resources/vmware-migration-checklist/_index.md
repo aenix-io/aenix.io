@@ -6,8 +6,9 @@ related_pages:
   - /migration/vmware
   - /alternatives/vmware-alternative
   - /services/platform-readiness-assessment
-  - /products/aenix-platform/provider-edition/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/public-cloud-platform/
+  - /products/private-cloud-platform/
+hreflang_de: /de/ressourcen/vmware-migrations-checkliste/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -43,12 +44,12 @@ faq:
     a: "Yes. It compares VMware vGPU to KubeVirt vGPU so teams running GPU-backed AI/ML workloads can plan how those map onto a Kubernetes-based platform after a VMware exit."
 ---
 
-**A 25-point checklist for organizations evaluating a VMware exit. Covers inventory, dependencies, networking, storage, multi-tenancy, AI/GPU, sovereignty, and operational readiness. Used by Aenix during 14-day Platform Readiness Assessments and offered free to teams in early evaluation.**
+**A 25-point checklist for organizations evaluating a VMware exit. Covers inventory, dependencies, networking, storage, multi-tenancy, AI/GPU, sovereignty, and operational readiness. Used by Ænix during 14-day Platform Readiness Assessments and offered free to teams in early evaluation.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers exiting VMware Cloud Director; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises exiting VCF.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers exiting VMware Cloud Director; **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises exiting VCF.
 
 <div class="lead-magnet-form">
-{{< pipedrive-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" resource="vmware-migration-checklist" >}}
 <p class="lead-magnet-form__note">Download the checklist (PDF)</p>
 </div>
 
@@ -100,9 +101,9 @@ The checklist gives you the structured discovery your organization can do intern
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- SEO: title "VMware Migration Assessment Checklist (Free Download) | Aenix"
+<!-- SEO: title "VMware Migration Assessment Checklist (Free Download) | Ænix"
 Description: "25-point checklist for VMware exit evaluation: inventory, dependencies, networking, storage, sovereignty, cost. Free PDF download."
 Word count: ~400.
 Lead magnet — primary metric: email captures, not direct conversions. -->

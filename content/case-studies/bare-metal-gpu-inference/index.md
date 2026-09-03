@@ -16,7 +16,7 @@ secondary_keywords:
   - "self-hosted H100 inference"
   - "GPU cloud repatriation"
 related_pages:
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /solutions/sovereign-ai/
   - /solutions/gpu-cloud-bursting/
   - /solutions/cloud-repatriation/
@@ -59,7 +59,7 @@ Those models ran on a rented public GPU cloud, billed by the hour. As usage grew
 
 - Repatriate AI inference from a per-hour rented GPU cloud onto an owned bare-metal 8xH100 server, cutting cost and lifting the capacity ceiling.
 - Preserve the cloud-native UX: API gateway, task queues, autoscaling, model-weight storage, full monitoring.
-- Split responsibilities cleanly: the client writes and owns the ML business logic; Aenix owns architecture, DevOps and 24x7 support of the GPU infrastructure, Kubernetes and monitoring.
+- Split responsibilities cleanly: the client writes and owns the ML business logic; Ænix owns architecture, DevOps and 24x7 support of the GPU infrastructure, Kubernetes and monitoring.
 - Keep model weights and user data on infrastructure the client controls (data locality).
 - No technology lock-in — an explicit, non-negotiable requirement: an all-open-source, CNCF-aligned stack with no proprietary control plane.
 
@@ -83,7 +83,7 @@ Inference runs as two complementary pipelines. Asynchronous: API gateway → Rab
 - **GPU passthrough of all eight H100s.** Every H100 is handed to the KubeVirt tenant VM via vfio-pci. The classic "nvidia driver vs vfio-pci" race at boot — where the host driver claims a card before vfio can — was solved with an initramfs `driver_override`, so the devices land in the VM deterministically.
 - **RWX storage for shared model weights.** Many worker pods need the same model weights concurrently. We provided shared read-write-many storage via a CSI wrapper plus NFS-Ganesha; the fix was contributed upstream to Cozystack.
 - **Traffic-based autoscaling.** Synchronous inference workers scale with live demand using KEDA driven by nginx-ingress RPS metrics from VictoriaMetrics. The metrics-path fix that made this reliable also went upstream.
-- **GPU density.** To pack more inference onto each card, we enabled GPU sharing via HAMi / MIG / time-slicing, so several jobs can share one physical H100.
+- **GPU density.** To pack more inference onto each card, we enabled GPU sharing via HAMi / HAMi fractional sharing, so several jobs can share one physical H100.
 
 ## Results and current state
 
@@ -110,6 +110,6 @@ Inference runs as two complementary pipelines. Asynchronous: API gateway → Rab
 
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Aenix sales](/contact/).*
+*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

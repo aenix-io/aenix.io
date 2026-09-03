@@ -15,7 +15,7 @@ dataset_version: "0.2.0"
 related_pages:
   - /alternatives/vmware-alternative/
   - /migration/vmware/
-  - /products/aenix-platform/
+  - /products/
   - /pricing/
   - /roi-calculator/
 ---

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+{{- $lang := .Site.LanguageCode | default "en" -}}
+{{- if or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}{{- $lang = "de" -}}
+{{- else if or (eq .Params.language "ru") (hasPrefix .RelPermalink "/ru/") -}}{{- $lang = "ru" -}}{{- end -}}
+<html lang="{{ $lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,6 +10,11 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 
   {{/* Open Graph / Twitter meta are emitted once by seo/head.html (partial invoked below) — do not duplicate here. */}}
+
+  {{/* First-party UTM/gclid capture. Must run in <head>, before the Pipedrive
+       loader in the body, so pipedrive-form's restoreForForm() has the stored
+       campaign to replay. Sets cookies only — no network, no consent surface. */}}
+  {{ partial "utm-capture.html" . }}
 
   {{/* Favicon */}}
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">

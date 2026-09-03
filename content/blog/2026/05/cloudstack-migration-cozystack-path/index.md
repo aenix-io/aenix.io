@@ -34,7 +34,7 @@ quiz:
         - { text: "Operators with growing managed-database demand", correct: false }
         - { text: "Very small operators below roughly 200 customers", correct: true }
         - { text: "Operators running KVM-based CloudStack today", correct: false }
-      explanation: "Cozystack Provider Edition fixed-cost economics don't pay back for very small operators (<200 customers), and operators with declining customer counts can't justify the modernization cost. Growing managed-service demand and KVM-based CloudStack are strong-fit signals."
+      explanation: "Cozystack Public Cloud Platform fixed-cost economics don't pay back for very small operators (<200 customers), and operators with declining customer counts can't justify the modernization cost. Growing managed-service demand and KVM-based CloudStack are strong-fit signals."
     - q: "How does the article suggest handling customers who built tooling against the CloudStack API?"
       options:
         - { text: "Force all customers to rewrite at cutover", correct: false }
@@ -42,8 +42,6 @@ quiz:
         - { text: "Offer a compatibility shim or planned API migration", correct: true }
       explanation: "The article calls out customer self-service-API divergence as a stumble point and recommends either a CloudStack-API-compatible shim (for a subset of operations) or planned customer-facing API migration to Cozystack-native patterns."
 ---
-
-**Long-form companion to the [CloudStack migration hub](/migration/cloudstack/). For service providers running Apache CloudStack who are evaluating Cozystack as a Kubernetes-native modernization target — covering architectural mapping, migration phases, and where the trade-offs differ from VMware or OpenStack migrations.**
 
 Apache CloudStack remains established with service providers in
 several EU, MENA, and APAC markets. It has a mature multi-tenancy
@@ -63,9 +61,6 @@ Three pressures stand out:
    want tenant Kubernetes clusters, container workloads, and
    Kubernetes-native networking. CloudStack handles this via
    integration; Cozystack handles it natively.
-
-This article walks through what a CloudStack-to-Cozystack migration
-looks like — what carries over, what redesigns, and how it phases.
 
 ## Where CloudStack still wins
 
@@ -96,12 +91,12 @@ CloudStack natively.
 | **Management server** | Cozystack control plane (Kubernetes API + cozystack-controller) | Different operational model — declarative GitOps vs imperative CloudStack API |
 | **System VMs (SSVM, CPVM, VR)** | Built into Cozystack platform — no per-tenant system VMs needed | Substantial operational simplification |
 | **Hypervisor (KVM, XenServer, VMware)** | KubeVirt on Talos | KVM-only path is most common; VMware-on-CloudStack typically becomes VMware-to-Cozystack migration first |
-| **Primary storage** | LINSTOR (DRBD) or Ceph | Different replication model; capacity sizing recalculation |
-| **Secondary storage** | SeaweedFS or Ceph RGW (S3-compatible) | Better for snapshots, backups, ISOs; native S3 API customers can consume |
+| **Primary storage** | LINSTOR (DRBD) | Different replication model; capacity sizing recalculation |
+| **Secondary storage** | SeaweedFS (S3-compatible) | Better for snapshots, backups, ISOs; native S3 API customers can consume |
 | **Networking (Advanced / Basic / Isolated)** | Cilium (eBPF) | Architectural rethink — Cilium is L4/L7 with eBPF; CloudStack network model is L2/L3-anchored |
 | **Virtual router (VR)** | Cilium + MetalLB or BGP | Different concept; routing happens at Cilium level |
 | **Accounts and domains (multi-tenancy)** | Tenant CRD with nested tenants | Conceptually closer to CloudStack than other Kubernetes platforms |
-| **API and UI** | Kubernetes API + cozyportal | Customer-facing surface differs |
+| **API and UI** | Kubernetes API + Cozystack Dashboard | Customer-facing surface differs |
 | **Volumes, snapshots, templates** | KubeVirt CDI + DataVolume + VirtualMachineImage | Image migration via image-conversion |
 | **Service offering / disk offering** | Cozystack package definitions | Different model; product team curates catalog |
 | **Network offering** | Cilium NetworkPolicy + ingress | Different abstraction |
@@ -133,7 +128,7 @@ migrate-later / stay / re-architect), risk flags, timing.
 
 Hardware procurement (or repurpose). Cozystack platform deployed on
 new infrastructure alongside the existing CloudStack estate. Cilium
-networking validated. LINSTOR or Ceph storage operationalised.
+networking validated. LINSTOR storage operationalised.
 Identity integration (Keycloak or whatever IdP the provider operates).
 
 Tenant CRD model designed to map cleanly from CloudStack's account /
@@ -145,7 +140,7 @@ not yet customer-facing.
 
 ### Phase 2 — Service catalog and customer-facing portal (2-4 months)
 
-cozyportal customisation to match the provider's brand. WHMCS integration
+Cozystack Dashboard customisation to match the provider's brand. WHMCS integration
 if the provider uses WHMCS (most CloudStack-on-WHMCS providers do).
 Service-catalog rollout — start with foundational services (VMs,
 volumes, S3 buckets, basic networking), layer in managed services
@@ -165,7 +160,7 @@ cohort:
    group rules to NetworkPolicies, VPC routing to ClusterPool +
    Cilium L3.
 3. **Storage migration** — volume data migrated from CloudStack
-   primary storage to LINSTOR/Ceph. Snapshot history preserved or
+   primary storage to LINSTOR. Snapshot history preserved or
    pruned per retention policy.
 4. **Cutover** — workload runs in parallel on Cozystack for a
    validation window (typically 7-14 days). Customer notified of
@@ -194,7 +189,7 @@ production incidents in Phase 3.
 
 CloudStack's billing hooks differ from Cozystack's. Providers running
 WHMCS-integrated CloudStack billing usually need WHMCS-integration
-work on the Cozystack side — Aenix provides this as part of the
+work on the Cozystack side — Ænix provides this as part of the
 engagement but it's specific per provider.
 
 ### 3. Customer self-service-API divergence
@@ -226,7 +221,7 @@ Poor fit:
 
 - Operators in declining-customer-count territory — modernisation
   cost is hard to justify
-- Very small operators (<200 customers) — Cozystack Provider Edition fixed
+- Very small operators (<200 customers) — Cozystack Public Cloud Platform fixed
   cost overshoots the savings
 
 ## Engagement structure
@@ -238,7 +233,7 @@ Poor fit:
   5-10 friendly customers migrated, billing workflows validated
 - **Customer-cohort migration** (6-18 months) — workload migration in
   cohorts, decommission of CloudStack in parallel
-- **Managed retainer** (optional, ongoing) — Aenix Tier-3 SLA
+- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
 
 Total elapsed time: 12-24 months from project start to CloudStack
 fully retired.
@@ -247,16 +242,9 @@ fully retired.
 
 - **[CloudStack migration hub](/migration/cloudstack/)** — high-level
   migration entry point
-- **[Provider Edition product page](/products/aenix-platform/provider-edition/)** —
-  the most common target edition for CloudStack migrations
+- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
+  the most common target product for CloudStack migrations
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   hosting-provider-specific positioning
 - **[Hosting provider platform modernization](/blog/2026/05/hosting-provider-platform-modernization/)** —
   related modernization pattern article
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. We have engagement experience with multiple
-hosting providers including CloudStack-based ones; specific named case
-studies remain confidential until customers publicly confirm.*

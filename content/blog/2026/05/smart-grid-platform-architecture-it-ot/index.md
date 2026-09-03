@@ -1,6 +1,6 @@
 ---
 title: "Smart grid platform architecture — IT/OT convergence, edge, and AI on customer-controlled infrastructure"
-description: "This is the long-form companion to our energy industry page. It walks through smart grid platform architecture in 2026 — what's actually being built at..."
+description: "A smart-grid architectural reference for energy operators: IT/OT boundaries that work, NIS2 controls, AI on grid-operational data, and legacy migration."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,11 +42,7 @@ quiz:
       explanation: "The long horizon argument: Apache 2.0 license + CNCF Project community governance fits decade-plus operational planning. Grid hardware refresh cycles are decade-scale, so vendor roadmap risk — the dominant failure mode over 10–20 years — is minimised because the community can outlive any single vendor."
 ---
 
-**This is the long-form companion to our [energy industry page](/industries/energy/). It walks through smart grid platform architecture in 2026 — what's actually being built at energy operators consolidating legacy SCADA/DCS, adding AI for grid optimization, and aligning with NIS2 essential-entity requirements. Written for grid IT leads, OT engineers, and infrastructure architects at energy operators.**
-
 The energy sector's infrastructure-modernization conversation in 2026 sits at an unusual intersection: NIS2 compliance pressure, AI-driven grid-optimization demand, IT/OT convergence reality, edge compute requirements at substation density, and the irreducible operational fact that grid hardware refresh cycles are measured in decades. Few other sectors face this combination simultaneously.
-
-This article covers the working architecture at the platform layer.
 
 ## Three pressures converging on energy infrastructure
 
@@ -126,7 +122,7 @@ Cozystack platforms federate across central + regional + substation tiers. Singl
 Documented air-gap install workflow. Suitable for OT zones that cannot have internet egress. Updates via Harbor mirror or controlled channels.
 
 ### 3. AI infrastructure native
-KubeVirt for legacy AI workloads, native Kubernetes for modern ML pipelines. NVIDIA vGPU + MIG + time-slicing for GPU sharing across forecasting models. Validated on A100, H100, H200, L40S, Blackwell.
+KubeVirt for legacy AI workloads, native Kubernetes for modern ML pipelines. VFIO passthrough or NVIDIA vGPU for VM-bound workloads, and HAMi fractional sharing (GPU memory and compute cores) for containers sharing GPUs across forecasting models. Validated on A100, H100, H200, L40S, Blackwell.
 
 ### 4. Multi-tenant for cross-BU
 Tenant CRD model accommodates generation / transmission / distribution / retail BUs with separate isolation. For unbundled markets, this is non-optional.
@@ -200,7 +196,7 @@ Treating substation tier as "just SCADA" misses that modern smart-grid architect
 ### Pitfall 5: under-engineered DR for grid criticality
 Grid operations have public-safety implications. DR posture must be tested and proven, not documented only.
 
-## Where Aenix engages
+## Where Ænix engages
 
 The standard **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with energy-specific workstream emphasis covers the full picture. For details and engagement structure see **[energy industry page](/industries/energy/)**.
 
@@ -215,8 +211,3 @@ For specific triggers see **[NIS2 compliance](/solutions/nis2-compliance/)**, **
 - **[Sovereign AI](/solutions/sovereign-ai/)** — AI on grid data
 - **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — methodology
 - **[Cozystack](/products/cozystack/)** — open-source platform foundation
-
----
-
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
-

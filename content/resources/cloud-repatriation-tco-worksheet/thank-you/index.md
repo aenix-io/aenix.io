@@ -5,6 +5,7 @@ robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
 hide_closing_cta: true
+hreflang_de: /de/ressourcen/cloud-repatriation-tco-worksheet/thank-you/
 ---
 
 **Thank you — your download is ready.** The Cloud Repatriation TCO Worksheet is below. We've also sent a copy to the email you provided.
@@ -24,4 +25,4 @@ hide_closing_cta: true
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0.*

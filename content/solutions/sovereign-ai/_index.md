@@ -7,13 +7,13 @@ related_pages:
   - /solutions/dora-compliance/
   - /services/platform-readiness-assessment/
   - /services/ai-platform-build/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Sovereign AI infrastructure runs GenAI, inference, fine-tuning, and RAG on hardware the customer owns or controls, in the customer's chosen jurisdiction, under the customer's encryption keys — with model weights, prompts, completions, and embeddings never leaving the perimeter. It is built for regulated organizations (financial services, healthcare, public sector) and AI/GPU operators whose data class, regulator, or inference economics make hyperscaler AI services unviable. Aenix designs, builds, and operates these platforms on Cozystack, an Apache 2.0 CNCF project that combines KubeVirt VMs and Kubernetes inference workloads on one API, with NVIDIA GPU scheduling (MIG, time-slicing, passthrough, vGPU). Aenix has no model-provider bias and recommends the open-weight model — Llama, Mistral, Qwen, DeepSeek, Phi — that fits the data class and economics.**
+  **Sovereign AI infrastructure runs GenAI, inference, fine-tuning, and RAG on hardware the customer owns or controls, in the customer's chosen jurisdiction, under the customer's encryption keys — with model weights, prompts, completions, and embeddings never leaving the perimeter. It is built for regulated organizations (financial services, healthcare, public sector) and AI/GPU operators whose data class, regulator, or inference economics make hyperscaler AI services unviable. Aenix designs, builds, and operates these platforms on Cozystack, an Apache 2.0 CNCF project that combines KubeVirt VMs and Kubernetes inference workloads on one API, with GPU scheduling through the NVIDIA GPU Operator: HAMi fractional sharing and PCI passthrough for containers, NVIDIA vGPU for VMs. Aenix has no model-provider bias and recommends the open-weight model — Llama, Mistral, Qwen, DeepSeek, Phi — that fits the data class and economics.**
 quick_facts:
   - label: "What it is"
     value: "AI inference, fine-tuning, and RAG running on customer-controlled hardware, in the customer's jurisdiction, under the customer's keys, with data never leaving the perimeter"
@@ -24,7 +24,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
   - label: "Platform"
-    value: "Cozystack — KubeVirt for VMs and Kubernetes for inference on one API; NVIDIA GPU scheduling via MIG, time-slicing, passthrough, and vGPU"
+    value: "Cozystack — KubeVirt for VMs and Kubernetes for inference on one API; NVIDIA GPU Operator with HAMi fractional sharing and PCI passthrough for containers, NVIDIA vGPU for VMs"
   - label: "Validated GPUs"
     value: "NVIDIA A100, H100, H200, L40S, and Blackwell; specific model-to-hardware fit established during the assessment"
   - label: "Engagement"
@@ -37,20 +37,21 @@ faq:
   - q: "Does sovereign AI cover training, or only inference?"
     a: "Both. Inference is the more common entry point; most regulated organizations start there and add fine-tuning of open-weight models later. Full pre-training of frontier models is rare in this segment."
   - q: "Which GPUs are validated for the platform?"
-    a: "NVIDIA A100, H100, H200, L40S, and Blackwell. Container GPU workloads use MIG, time-slicing, or passthrough; VM-based GPU workloads use NVIDIA vGPU. Specific model-to-hardware fit is established during the assessment."
+    a: "NVIDIA A100, H100, H200, L40S, and Blackwell. Container GPU workloads use the NVIDIA GPU Operator with HAMi fractional sharing or PCI passthrough; VM-based GPU workloads use NVIDIA vGPU. Specific model-to-hardware fit is established during the assessment."
   - q: "Can the platform run air-gapped?"
     a: "Yes. Air-gapped, restricted-egress deployment is supported for public-sector classified, defence-adjacent, and critical-infrastructure workloads where the regulator requires it."
   - q: "Does Aenix have a model-provider bias?"
     a: "No. Aenix has no commercial relationship with any LLM provider. The architecture recommends the open-weight model and serving stack — vLLM, Triton, or alternatives — that fit the customer's data class, regulator, and inference economics."
+hreflang_de: /de/loesungen/sovereign-ai/
 ---
 
 <!-- BLOCK 1: HERO -->
 
 **For regulated workloads, AI is no longer a hyperscaler-only conversation. Sensitive data classes, sectoral rules, and the economics of inference at scale are pushing financial services, healthcare, public sector, and AI-platform operators toward sovereign AI infrastructure — GenAI, inference, and analytics on the customer's own hardware, in the customer's chosen jurisdiction, under the customer's encryption keys.**
 
-Aenix builds and operates these platforms end-to-end: an architecture, a deployment, and an operations model your team can actually run.
+Ænix builds and operates these platforms end-to-end: an architecture, a deployment, and an operations model your team can actually run.
 
-> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)** — AI platform automation out of the box (multi-tenant GPU scheduling, inference/fine-tuning/RAG blueprints, vector DB + object storage, sovereignty controls); add [Enterprise Edition](/products/aenix-platform/enterprise-edition/) for a broader sovereign cloud, or the free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
+> **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — AI platform automation out of the box (multi-tenant GPU scheduling, inference/fine-tuning/RAG blueprints, vector DB + object storage, sovereignty controls); add [Private Cloud Platform](/products/private-cloud-platform/) for a broader sovereign cloud, or the free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -96,7 +97,7 @@ If you have none of these, sovereign AI is over-engineering. If you have three o
 <div class="grid-2x2">
 
 **1. The model runs on your hardware**
-Inference (and training, where applicable) on GPUs you own or operate, not on a hyperscaler's GPU instances or model API. NVIDIA H100 / H200 / L40S / Blackwell, AMD MI-series, or appropriate alternatives.
+Inference (and training, where applicable) on GPUs you own or operate, not on a hyperscaler's GPU instances or model API. NVIDIA H100 / H200 / L40S / Blackwell for the mainstream path; AMD MI-series and Intel Gaudi where supply continuity or sovereignty argues for them.
 
 **2. The data never leaves the perimeter**
 Training data, prompts, completions, embeddings, and any derivative artifacts stay within the customer-controlled environment. No traffic to model-provider endpoints; no observability data to SaaS vendors that process outside the perimeter.
@@ -146,19 +147,19 @@ The honest answer is usually a Kubernetes-native AI platform on customer-control
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## How Aenix helps
+## How Ænix helps
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>AI workloads</b><div class="diagram__chips"><span>Inference</span><span>Fine-tuning</span><span>RAG</span></div></div>
 <div class="diagram__conn">scheduled on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack / Aenix</b><div class="diagram__chips"><span>KubeVirt VMs + Kubernetes</span><span>NVIDIA GPU: MIG, vGPU</span><span>Customer keys and hardware</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix</b><div class="diagram__chips"><span>KubeVirt VMs + Kubernetes</span><span>GPU Operator: HAMi, passthrough, vGPU</span><span>Customer keys and hardware</span></div></div>
 <div class="diagram__conn">delivers</div>
 <div class="diagram__node"><b>Sovereign AI</b><div class="diagram__chips"><span>Data never leaves the perimeter</span><span>No model-provider endpoints</span></div></div>
 </div>
 </div>
 
-The sovereign-AI engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + AI-platform workstreams emphasized. Where the engagement leads to implementation, Aenix delivers the platform end-to-end.
+The sovereign-AI engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with sovereignty + AI-platform workstreams emphasized. Where the engagement leads to implementation, Ænix delivers the platform end-to-end.
 
 The assessment phase produces:
 
@@ -166,11 +167,11 @@ The assessment phase produces:
 - **Sovereignty controls** — data-residency, key-custody, and audit-trail design specific to AI workloads.
 - **GPU strategy** — NVIDIA / AMD / alternatives sizing, model-to-hardware fit, scaling assumptions.
 - **Operations model** — who runs the platform, what self-service surface product / data-science teams get, what the on-call model looks like.
-- **Phase 2 implementation roadmap** — Aenix-delivered build, with timeline, effort estimates, and success criteria.
+- **Phase 2 implementation roadmap** — Ænix-delivered build, with timeline, effort estimates, and success criteria.
 
 The implementation phase delivers:
 
-- **Cozystack-based AI platform** with KubeVirt for VMs, Kubernetes for inference workloads, NVIDIA vGPU for VM-based GPU workloads, MIG / time-slicing / passthrough for container-based GPU workloads.
+- **Cozystack-based AI platform** with KubeVirt for VMs, Kubernetes for inference workloads, NVIDIA vGPU for VM-based GPU workloads, and the NVIDIA GPU Operator with HAMi fractional sharing or PCI passthrough for container-based GPU workloads.
 - **Validated model serving** — vLLM, Triton, or alternatives matched to model architecture.
 - **Self-service for data-science teams** — provisioning paths, observability, audit trails.
 - **Air-gapped deployment** where the regulator requires it.
@@ -183,7 +184,7 @@ The implementation phase delivers:
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **AI infrastructure is what we run.** Cozystack is in production with AI / GPU operators across the EU and Central Asia. We have shipped GPU platforms supporting inference and fine-tuning workloads end-to-end.
 - **No model-provider bias.** We do not have a commercial relationship with a specific LLM provider. The architecture recommends the open-weight model that fits your data class, regulator, and economics — Llama, Mistral, Qwen, DeepSeek, Phi, or fine-tuned variants — and the serving stack to match.
@@ -197,14 +198,7 @@ The implementation phase delivers:
 
 ## What the engagement looks like
 
-| When | What | Output |
-|---|---|---|
-| **Day 0** | 30-min discovery call (free) | Confirm fit, narrow AI workload scope, identify sponsor + data-science lead |
-| **Days 1-13 (or 1-27)** | Four parallel workstreams; sovereignty + AI-platform emphasized | Architecture options, GPU strategy, sovereignty controls, daily async updates |
-| **Day 14 (or 28)** | Executive readout (60-90 min) | Written report: architecture, sovereignty controls, GPU strategy, operations model, Phase 2 roadmap |
-| **Phase 2 (3-9 months)** | Implementation — Aenix builds and hands over | Production sovereign AI platform |
-
-For full assessment methodology see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+Day 0 is a free 30-minute discovery call that fixes the scope. Days 1-13 (or 1-27) run four parallel workstreams with sovereignty and AI-platform emphasized. Day 14 (or 28) is a 60-90 minute executive readout against the written report — architecture options, sovereignty controls, GPU strategy, operations model and Phase 2 roadmap. Phase 2 is the Ænix-delivered build, typically 3-9 months to a production platform and handover. Full day-by-day methodology: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 <!-- /BLOCK 7 -->
 
@@ -219,9 +213,6 @@ For full assessment methodology see **[Platform Readiness Assessment](/services/
 We have built and operated AI platforms for AI / GPU operators, financial-services organizations, and public-sector initiatives across the EU and Central Asia. Workload patterns include inference-at-scale (24/7), fine-tuning, RAG pipelines, and multi-tenant model serving.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
-Named case studies available on the discovery call where customer permissions allow.
 
 <!-- /BLOCK 8 -->
 
@@ -240,7 +231,7 @@ Architecture options, GPU strategy, sovereignty controls, operations model, Phas
 **On request**
 
 ### Phase 2 implementation
-Aenix-delivered build of the sovereign AI platform. Fixed-scope or time-and-materials, depending on workload count and complexity. Typical 3-9 months elapsed.
+Ænix-delivered build of the sovereign AI platform. Fixed-scope or time-and-materials, depending on workload count and complexity. Typical 3-9 months elapsed.
 **On request**
 
 </div>
@@ -265,7 +256,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 <a id="discovery"></a>
 ## Start with a 30-minute discovery call
 
-Free. No prep needed. We confirm fit, narrow the AI workload scope to your data class and regulator, and tell you whether the 14-day or the 28-day assessment matches your situation.
+We confirm fit, narrow the scope to your data class and regulator, and name the 14-day or 28-day variant.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -284,7 +275,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build sovereign AI platforms for AI / GPU operators, financial services, and public-sector organizations across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build sovereign AI platforms for AI / GPU operators, financial services, and public-sector organizations across the EU, DACH, and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

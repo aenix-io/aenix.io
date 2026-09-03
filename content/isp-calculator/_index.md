@@ -18,7 +18,7 @@ secondary_keywords:
   - "cloud provider P&L per node"
   - "hosting provider payback"
 related_pages:
-  - /products/aenix-platform/provider-edition/
+  - /products/public-cloud-platform/
   - /industries/hosting-providers/
   - /tco-calculator/
   - /pricing/

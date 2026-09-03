@@ -1,13 +1,13 @@
 ---
 title: "Cloud platform for energy operators — NIS2-aligned, edge-ready, sovereign by architecture"
-description: "Energy operators in 2026 face a specific combination of pressures: NIS2 essential-entity classification (energy is in scope), sovereign-cloud requirements..."
+description: "NIS2-aligned cloud for electricity, gas, oil and heating operators: central control, regional sites and substation edge under one Kubernetes operational model."
 related_pages:
   - /solutions/data-sovereignty
   - /solutions/nis2-compliance
   - /solutions/sovereign-ai
   - /services/platform-readiness-assessment
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/private-cloud-platform/
+  - /products/ai-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -44,13 +44,14 @@ faq:
     a: "Cozystack is the open-source CNCF platform foundation. Aenix sells Ænix Platform, a productized commercial offering based on Cozystack, plus platform-engineering services. Platform pricing tiers are Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, and Enterprise (custom)."
   - q: "How does an engagement start?"
     a: "It starts with a Platform Readiness Assessment that maps NIS2 and sectoral compliance gaps, multi-site architecture, OT/IT boundary design, smart-grid consolidation, and AI infrastructure for grid use cases. Phase 2 implementation typically spans 12-30 months for a multi-site energy platform."
+hreflang_de: /de/branchen/energie/
 ---
 
 **Energy operators in 2026 face a specific combination of pressures: NIS2 essential-entity classification (energy is in scope), sovereign-cloud requirements for critical-infrastructure data, edge compute at substations and generation sites, AI-driven grid optimization and forecasting, and the operational reality that hardware refresh cycles for grid infrastructure are measured in decades, not years. The architectural answer is a coherent platform that runs at HQ, regional control centres, and substation edge — under one operational model with NIS2-aligned controls.**
 
-Aenix is currently piloting Cozystack with an energy operator and applies the same multi-site, NIS2-aligned, sovereignty-friendly platform pattern that runs at our financial-services and telecom customers. The energy-specific work emphasizes IT/OT convergence, edge resilience, and air-gap support for OT systems.
+Ænix is currently piloting Cozystack with an energy operator and applies the same multi-site, NIS2-aligned, sovereignty-friendly platform pattern that runs at our financial-services and telecom customers. The energy-specific work emphasizes IT/OT convergence, edge resilience, and air-gap support for OT systems.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for NIS2-aligned multi-site architecture with air-gap option for OT; **[AI & GPU](/products/aenix-platform/ai-ml-edition/)** for grid-optimization AI workloads.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for NIS2-aligned multi-site architecture with air-gap option for OT; **[AI Platform](/products/ai-platform/)** for grid-optimization AI workloads.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -114,12 +115,7 @@ Aenix is currently piloting Cozystack with an energy operator and applies the sa
 
 {{< clients >}}
 
-*Customer evidence — pilot in progress; named reference pending customer permissions.*
-
-Anonymous proof points:
-- A regional energy operator running pilot Cozystack deployment for grid-data analytics and AI-driven forecasting workloads
-- Architecture pattern: central control + regional aggregation + substation edge tier; air-gapped OT boundary; AI/ML cluster for forecasting
-- Adjacent energy-sector platform engagements scoped through procurement processes
+A pilot with a regional energy operator is running now — grid-data analytics and AI-driven forecasting — with the named reference pending customer permission. Adjacent energy-sector engagements are scoped through procurement processes.
 
 {{< quote-carousel >}}
 
@@ -134,7 +130,7 @@ Anonymous proof points:
 
 ---
 
-## How Aenix engages with energy operators
+## How Ænix engages with energy operators
 
 Standard **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with energy-specific workstream emphasis:
 
@@ -173,8 +169,5 @@ Or read more:
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices. We build cloud-native infrastructure for energy operators, telecom, banks, and critical-infrastructure organizations across the EU, DACH, and Central Asia.*
 
-<!-- SEO: title "Cloud Platform for Energy Operators — NIS2-Aligned, Edge-Ready, Sovereign | Aenix"
-Description (≤155): "Cozystack for energy: NIS2-aligned platform, multi-site (central + regional + substation edge), AI for grid forecasting, air-gapped OT boundary."
-Word count: ~1100. -->

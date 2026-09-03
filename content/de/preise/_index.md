@@ -3,9 +3,10 @@ title: "Ænix Platform Preise"
 description: "Ænix Platform Preise: Preisliste für Anbieter ab 1.250 USD/Monat pro 10 Nodes; Enterprise-Programme nach RFP. Cozystack bleibt kostenlos."
 hero_subtitle: "Veröffentlichte Preisliste für Anbieter ab 1.250 USD/Monat; Enterprise-Programme nach RFP"
 language: "de"
+hreflang_en: /pricing/
 ---
 
-**Cozystack ist kostenlos (Apache 2.0). Für die Ænix Platform — unsere schlüsselfertige kommerzielle Cloud-in-a-Box — gibt es zwei Wege. Hosting-Anbieter, MSPs und Produktteams kaufen aus einer veröffentlichten Preisliste: Support-Tiers pro 10 physische Nodes, ab 1.250 USD / Monat. Enterprise-, Public-Cloud-, IDP- und AI/ML-Programme werden nach RFP kalkuliert — die Zahl hängt von Estate-Größe, regulatorischem Scope, Migrationsvolumen und Betriebsmodell ab, und jede auf einer Webseite gedruckte Zahl wäre für Ihren Fall falsch.**
+**Cozystack ist kostenlos (Apache 2.0). Für die Ænix Platform — unsere schlüsselfertige kommerzielle Cloud-in-a-Box — gibt es zwei Wege. Hosting-Anbieter, MSPs und Produktteams kaufen aus einer veröffentlichten Preisliste: Support-Tiers pro 10 physische Nodes, ab 1.250 USD / Monat. Enterprise-, Public-Cloud-, IDP- und AI/ML-Programme werden nach RFP kalkuliert — die Zahl hängt von Bestandsgröße, regulatorischem Scope, Migrationsvolumen und Betriebsmodell ab, und jede auf einer Webseite gedruckte Zahl wäre für Ihren Fall falsch.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -14,48 +15,48 @@ language: "de"
 
 ---
 
-## Wie Pricing funktioniert
+## Wie sich der Preis zusammensetzt
 
 Ænix Platform Preise haben zwei Dimensionen:
 
-- **Edition** — welches Feature-Bundle Sie kaufen. Bestimmt durch Ihr Buyer-Profil (Hosting-Anbieter, regulierte Unternehmen, Public-Cloud-Betreiber, Produkt-Engineering-Team oder KI-lastige Organisation).
-- **Support-Tier** — wie Aenix Sie unterstützt. Vier Tiers von Basic ($1,250/Monat per 10 Nodes) bis Enterprise (Custom).
+- **Plattform** — welches Feature-Bundle Sie kaufen. Bestimmt durch Ihr Käuferprofil (Hosting-Anbieter, regulierte Unternehmen, Public-Cloud-Betreiber, Produkt-Engineering-Team oder KI-lastige Organisation).
+- **Support-Tier** — wie Ænix Sie unterstützt. Vier Support-Tiers, von Basic (1.250 USD/Monat pro 10 Nodes) bis Enterprise (nach Vereinbarung).
 
-Plus Engagement-Zusätze (Platform Readiness Assessment, Pilot, Full Build, Managed Operations) separat bepreist pro Scope.
+Plus Engagement-Zusätze (Platform Readiness Assessment, Pilot, Full Build, Managed Operations) je nach Umfang separat kalkuliert.
 
 ---
 
-## Schritt 1 — Edition wählen
+## Schritt 1 — Plattform wählen
 
-| Edition | Für | Wie bepreist |
+| Plattform | Für | Wie bepreist |
 |---|---|---|
-| **Provider Edition** | Hosting-Anbieter, MSPs, regionale Clouds und Rechenzentren, die Cloud an Kunden verkaufen | Produktisiert — Preisliste, ab 1.250 USD / Monat pro 10 Nodes |
-| **Provider Edition im Betreiber-Maßstab** | Telcos, nationale Betreiber, Banken und große Public Clouds mit kommerzieller Cloud | Mehrjähriges Programm, Angebot nach RFP |
-| **Enterprise Edition** | Regulierte Unternehmen, die Cloud für die eigenen Nutzer betreiben (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | Mehrjähriges Programm, Angebot nach RFP |
+| **Public Cloud Platform** | Hosting-Anbieter, MSPs, regionale Clouds und Rechenzentren, die Cloud an Kunden verkaufen | Produktisiert — Preisliste, ab 1.250 USD / Monat pro 10 Nodes |
+| **Public Cloud Platform im Betreiber-Maßstab** | Telcos, nationale Betreiber, Banken und große Public Clouds mit kommerzieller Cloud | Mehrjähriges Programm, Angebot nach RFP |
+| **Private Cloud Platform** | Regulierte Unternehmen, die Cloud für die eigenen Nutzer betreiben (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | Mehrjähriges Programm, Angebot nach RFP |
 
-Zwei Module erweitern beide Editions und werden mit dem Engagement kalkuliert:
+Zwei ergänzende Produkte stehen neben den drei Plattformen und werden mit dem Engagement kalkuliert:
 
 | Modul | Was es hinzufügt |
 |---|---|
-| **AI & GPU** | Mandantenfähiges GPU-Scheduling, Fractioning und MIG, Model Serving, Vektordatenbanken, GPU-Sizing |
+| **AI Platform** | Mandantenfähiges GPU-Scheduling, fraktionales GPU-Sharing (HAMi), Model Serving, Vektordatenbanken, GPU-Sizing |
 | **Developer Self-Service** | Golden Paths, GitLab- und Argo-CD-Automatisierung, Self-Service-APIs und Umgebungs-Wizards |
 
-Plus **Entry-Tier — Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
+Plus **Entry-Tier — Enterprise-Support für Cozystack** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
 
-[Alle Editions entdecken →](/de/produkte/aenix-platform/)
+[Alle Plattformen entdecken →](/de/produkte/)
 
 ---
 
 ## Schritt 2 — Support-Tier wählen {#support}
 
-Das ist die veröffentlichte Preisliste, und mehr gibt es nicht: Sie gilt für die Provider Edition und für Pure Cozystack mit Ænix Support. Preise pro 10 physische Nodes / Monat in USD; Jahresverträge 20% Rabatt. Jahresverträge 20% Rabatt.
+Das ist die veröffentlichte Preisliste, und mehr gibt es nicht: Sie gilt für die Public Cloud Platform und für Enterprise-Support für Cozystack. Preise pro 10 physische Nodes / Monat in USD; Jahresverträge 20 % Rabatt.
 
 | Tier | Jahrespreis (pro Monat) | Monatspreis | Für wen |
 |---|---|---|---|
 | **Basic** | **1.250 USD** | 1.500 USD | Kleine Anbieter, Startups, interne Teams mit begrenzten Workloads |
 | **Standard** | **3.000 USD** | 3.600 USD | Mittelgroße Anbieter / Rechenzentren, wachsende Teams mit Produktions-SLAs |
 | **Plus** | **5.500 USD** | 6.600 USD | Regulierte Organisationen, SPs/DCs mit geschäftskritischen Clustern |
-| **Enterprise** | **Nach RFP** | (nach RFP) | Großflächige Plattformen, Partner mit Roadmap-Einfluss |
+| **Enterprise** | **Nach RFP** | (nach RFP) | Plattformen im großen Maßstab, Partner mit Roadmap-Einfluss |
 
 ### SLA-garantierter Support
 
@@ -78,7 +79,7 @@ Das ist die veröffentlichte Preisliste, und mehr gibt es nicht: Sie gilt für d
 | Backup-System | ✓ | ✓ | ✓ | ✓ |
 | GPU-Sharing | ✗ | ✓ | ✓ | ✓ |
 
-Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen nicht gegen das Incident-Limit, wenn sie innerhalb der 30-tägigen Installationsphase gemeldet werden. Geschäftszeiten sind Mo-Fr, 9-18 Uhr MEZ, ohne Feiertage. Ein Notfall ist ein Produktivsystem, das ausgefallen oder nicht erreichbar ist und für das kein Workaround existiert. Priority Engagement Time ist die Zeit, die wir aktiv für Features auf Ihrer Roadmap aufwenden.
+Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung werden nicht auf das Incident-Limit angerechnet, wenn sie innerhalb der 30-tägigen Installationsphase gemeldet werden. Geschäftszeiten sind Mo-Fr, 9-18 Uhr MEZ, ohne Feiertage. Ein Notfall ist ein Produktivsystem, das ausgefallen oder nicht erreichbar ist und für das kein Workaround existiert. Priority Engagement Time bezeichnet die Zeit, die wir aktiv für Features auf Ihrer Roadmap aufwenden.
 
 ---
 
@@ -86,7 +87,7 @@ Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen
 
 ### Platform Readiness Assessment
 
-5-10 Tage Festpreis-Engagement mit Stakeholder-Interviews, aktuelle-Architektur-Dokumentation, Gap-Analyse vs Ziel-Ænix-Platform-Architektur, Edition-Empfehlung, Migrations-Roadmap, Risiko-Register.
+5-10 Tage Festpreis-Engagement mit Stakeholder-Interviews, Dokumentation der aktuellen Architektur, Gap-Analyse gegenüber der Ziel-Architektur auf der Ænix Platform, Plattform-Empfehlung, Migrations-Roadmap, Risiko-Register.
 
 **Kosten:** Festpreis, vor Beginn vereinbart (Scope-abhängig).
 
@@ -94,19 +95,19 @@ Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen
 
 ### Pilot-Engagement
 
-3-6 Monate Projekt auf definiertem Slice (eine Workload-Klasse, eine Kundenkohorte, ein Standort).
+3-6 Monate Projekt auf einem klar abgegrenzten Ausschnitt (eine Workload-Klasse, eine Kundenkohorte, ein Standort).
 
 **Kosten:** Angebot nach RFP, sobald der Scope definiert ist.
 
-### Vollständiger Edition-Build
+### Vollständiger Plattform-Build
 
-9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML Deployments. Wochen-zu-live für Provider Edition mit produktisiertem Installer.
+9-18 Monate für Private-Cloud- und AI-Platform-Programme sowie Multi-Region-Builds. Wochen bis zum Produktivbetrieb für Public Cloud Platform mit produktisiertem Installer.
 
-**Kosten:** Provider Edition projektbasiert auf monatlichem Support; Public Cloud / Enterprise / IDP / AI/ML nach RFP.
+**Kosten:** Public Cloud Platform projektbasiert auf monatlichem Support; Private-Cloud- und AI-Platform-Programme sowie Multi-Region-Builds nach RFP.
 
 ### Managed Operations
 
-Monatlicher Retainer post-Deployment — laufender Plattform-Betrieb, Monitoring, Incident Response, Capacity Planning, Quartalsweise Architektur-Reviews, Edition-spezifisches Compliance-Reporting.
+Monatlicher Retainer nach dem Rollout — laufender Plattform-Betrieb, Monitoring, Incident Response, Capacity Planning, Quartalsweise Architektur-Reviews, Plattform-spezifisches Compliance-Reporting.
 
 **Kosten:** Scope-abhängige monatliche Gebühr.
 
@@ -118,13 +119,13 @@ Drei Rechner, jeder mit eigenem Modell und eigenen Quellen. Jeder Preis trägt Q
 
 - **[Platform-TCO-Rechner](/tco-calculator/)** — Fünf-Jahres-TCO gegen dreizehn On-Prem-Plattformen: VMware, Nutanix, OpenShift, Proxmox, OpenStack, CloudStack, OpenNebula, Harvester, Rancher, Virtuozzo. Software, einmalige Migration und Personal, mit Break-even und dem Fall, in dem die andere Plattform gewinnt.
 - **[Cloud-Repatriation-Rechner](/cloud-calculator/)** — Ihre AWS-, Azure- oder GCP-Rechnung gegen denselben Workload auf eigener oder gemieteter Hardware, inklusive Commitment- und Enterprise-Rabatten auf der Cloud-Seite.
-- **[ISP-Unit-Economics-Rechner](/isp-calculator/)** — monatliche GuV pro Node, wenn Sie Managed Services weiterverkaufen: Umsatz, COGS, Personal, Amortisation.
+- **[Unit-Economics-Rechner für Anbieter (englisch)](/isp-calculator/)** — monatliche GuV pro Node, wenn Sie Managed Services weiterverkaufen: Umsatz, COGS, Personal, Amortisation.
 
 ---
 
 ## Public Sector / Regierungs-Beschaffung
 
-Für Regierungen und souveräne Cloud-Konsortien engagiert Aenix durch öffentliche Beschaffungsprozesse (RFI / RFP). AENIX s.r.o. (Tschechien) wickelt EU-Beschaffung ab; AENIX INC (Delaware) wickelt US-Beschaffung ab. Mehrjährige Programme werden im Beschaffungsverfahren bepreist.
+Für Regierungen und souveräne Cloud-Konsortien engagiert Ænix durch öffentliche Beschaffungsprozesse (RFI / RFP). AENIX s.r.o. (Tschechien) wickelt EU-Beschaffung ab; AENIX INC (Delaware) wickelt US-Beschaffung ab. Mehrjährige Programme werden im Beschaffungsverfahren bepreist.
 
 [Sovereign Cloud Builder Service →](/de/dienstleistungen/sovereign-cloud-builder/)
 
@@ -142,15 +143,15 @@ Bis zu **40% Marge** auf Ænix-Platform-Verkäufe für Reseller, Integratoren un
 
 ### Ist Cozystack kostenlos?
 
-Ja. Cozystack ist Open Source unter Apache 2.0. Keine Per-CPU, Per-VM oder Per-Core-Lizenzierung. Jeder kann es betreiben. Aenix ist der Original-Maintainer.
+Ja. Cozystack ist Open Source unter Apache 2.0. Keine Per-CPU, Per-VM oder Per-Core-Lizenzierung. Jeder kann es betreiben. Ænix ist der Original-Maintainer.
 
-### Wie funktioniert Edition × Support-Tier-Pricing?
+### Wie funktioniert Plattform × Support-Tier-Pricing?
 
-Edition bestimmt das Feature-Bundle (welche Ænix Platform Sie kaufen — ISP, Enterprise, etc.). Support-Tier bestimmt das Aenix-Support-Niveau (Basic, Standard, Plus, Enterprise). Beide gelten für Ihr Engagement. Discovery-Call klärt die richtige Kombination für Ihren Scope.
+Plattform bestimmt das Feature-Bundle (welche der drei Ænix-Plattformen Sie kaufen — Public Cloud, Private Cloud oder AI). Support-Tier bestimmt das Ænix-Support-Niveau (Basic, Standard, Plus, Enterprise). Beide gelten für Ihr Engagement. Discovery-Call klärt die richtige Kombination für Ihren Scope.
 
 ### Was ist der günstigste Weg, mit Ænix Platform zu starten?
 
-Provider Edition + Basic Support-Tier, $1,250/Monat jährlich (10 Nodes). Inkludiert WHMCS-Integration, Billing-System, Backup-System, Knowledge-Base-PoC-Support. Geeignet für kleine Hosting-Anbieter und Startups, die die Plattform validieren.
+Public Cloud Platform plus Basic-Support-Tier, 1.250 USD/Monat im Jahresvertrag (10 Nodes). Enthält WHMCS-Integration, Billing-System, Backup-System, Knowledge-Base-PoC-Support. Geeignet für kleine Hosting-Anbieter und Startups, die die Plattform validieren.
 
 ### Bieten Sie Reseller- / Partner-Pricing an?
 
@@ -158,7 +159,7 @@ Ja — bis zu 40% Marge auf Ænix-Platform-Verkäufe für Reseller, Integratoren
 
 ---
 
-## Bereit zu diskutieren?
+## Sprechen wir darüber?
 
 Buchen Sie einen 30-Minuten-Discovery-Call.
 

@@ -3,9 +3,10 @@ title: "Case Studies"
 description: "Fünf Aenix-Deployments mit Zahlen: GPU-Repatriation, Proxmox-Konsolidierung, souveräne Public Cloud, GPU-Bursting, KI-Plattform als Installer."
 hero_subtitle: "Echte Ænix-Platform-Deployments aus Hosting, KI und Forschung"
 language: "de"
+hreflang_en: /case-studies/
 ---
 
-**Neun Deployments, unten ausführlich dokumentiert: wie das Estate vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der Provider Edition, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
+**Neun Deployments, unten ausführlich dokumentiert: wie das Bestand vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der Public Cloud Platform, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
 
 ---
 
@@ -37,7 +38,7 @@ Interne Teams bekommen Umgebungen und Managed Services auf Abruf, im Haus, mit R
 
 ### [Eine interne Daten- und KI-Plattform, GPUs inklusive](/de/case-studies/internal-data-and-ai-platform/)
 
-Eine Plattform für Analytik, Data Lakes und Modelltraining ebenso wie für KI/ML-Services: GPU-Pools mit Time-Slicing und Quotas je Tenant, ein Scheduler für Pods und VMs, Verbrauchsmetriken fein genug für interne Verrechnung. In Einführung, die GPU-Schicht ist fertig.
+Eine Plattform für Analytik, Data Lakes und Modelltraining ebenso wie für KI/ML-Services: GPU-Pools mit fraktionalem Sharing und Quotas je Tenant, ein Scheduler für Pods und VMs, Verbrauchsmetriken fein genug für interne Verrechnung. In Einführung, die GPU-Schicht ist fertig.
 
 ### [Wenn das Antwortpaket die falsche Tür nimmt](/de/case-studies/metallb-evpn-address-mobility/)
 
@@ -54,21 +55,21 @@ Ein Telekom-Betreiber und Systemintegrator baute eine Unternehmens-KI-Plattform 
 
 ---
 
-## Quick facts
+## Kurzüberblick
 
-- **Öffentliche Produktivkunden:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Platform Provider Edition)
+- **Öffentliche Produktivkunden:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Public Cloud Platform)
 - **Plattform-R&D-Engagements:** CSI-Driver-Entwicklung, Block-Storage-Forschung, Virtualisierungs-Plattform-Prototypen
 - **Ausführlich dokumentierte Deployments:** neun, vertraglich anonymisiert, mit vollständiger Architektur und Zahlen (oben)
-- **Tier-1-europäische-Banken:** Mehr-Millionen-Euro Ænix Platform Enterprise Edition Engagements (NDA-geschützt; Namensnennung ab Mitte 2027)
-- **Engagement-Größen:** 1.250 USD/Monat (Provider Edition Support-Tier) bis zu mehrjährigen Programmen nach RFP
+- **Tier-1-europäische-Banken:** Mehr-Millionen-Euro Ænix Private Cloud Platform Engagements (NDA-geschützt; Namensnennung ab Mitte 2027)
+- **Engagement-Größen:** 1.250 USD/Monat (Public Cloud Platform Support-Tier) bis zu mehrjährigen Programmen nach RFP
 
 ---
 
 ## Case-Kategorien
 
-### Regionale Hosting-Anbieter (Ænix Platform Provider Edition)
+### Regionale Hosting-Anbieter (Ænix Public Cloud Platform)
 
-Produktive Deployments mit unserer hosting-spezifischen Edition. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, Multi-Tier-Reseller-Modell, erweiterter Service-Katalog, Tenant Lock/Suspension.
+Produktive Deployments mit unserer hosting-spezifischen Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, Multi-Tier-Reseller-Modell, erweiterter Service-Katalog, Sperren und Stilllegen von Mandanten.
 
 **Öffentliche Kunden** (derzeit auf aenix.io gelistet):
 - GoHost.kz
@@ -79,11 +80,11 @@ Produktive Deployments mit unserer hosting-spezifischen Edition. WHMCS-integrier
 - Cloupard
 - Cloudsy
 
-[Ænix Platform Provider Edition →](/de/produkte/aenix-platform/provider-edition/)
+[Ænix Public Cloud Platform →](/de/produkte/public-cloud-platform/)
 
 ### Tier-1-europäische-Banken-Engagements (NDA bis Mitte 2027)
 
-Mehr-Millionen-Euro Ænix Platform Enterprise Edition Deployments mit DORA-konformen souveränen Cloud-Workloads.
+Mehr-Millionen-Euro Ænix Private Cloud Platform Deployments mit DORA-konformen souveränen Cloud-Workloads.
 
 **Status:** Mehrere Engagements aktiv. **Erste namentlich genannte Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
 
@@ -99,9 +100,9 @@ CSI-Driver-Entwicklung für Shared-SAN-Umgebungen, Backup-System mit bis zu 75% 
 
 | Kundentyp | Was wir sagen können |
 |---|---|
-| Regionale Hosting-Anbieter | Namentlich (derzeit auf aenix.io gelistet); Deployment-Scope; Ænix Platform Provider Edition Nutzung |
+| Regionale Hosting-Anbieter | Namentlich (derzeit auf aenix.io gelistet); Deployment-Scope; Ænix Public Cloud Platform Nutzung |
 | Plattform-R&D für Ecosystem-Vendors | Projektname und -outcomes |
-| Tier-1-europäische-Banken | Anonymisiert nur ("Tier-1-europäische-Bank unter DORA-Scope") bis Mitte 2027 NDA-Abläufe |
+| Tier-1-europäische-Banken | Anonymisiert nur („Tier-1-europäische-Bank unter DORA-Scope“) bis die NDAs Mitte 2027 auslaufen |
 | Souveräne Cloud-Initiativen | Anonymisiert nur |
 | AI/ML-Deployments | Anonymisiert nur; unter NDA |
 
@@ -123,4 +124,4 @@ Erste NDA-Abläufe erwartet Mitte 2027. Sobald sie landen, werden namentliche Ca
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

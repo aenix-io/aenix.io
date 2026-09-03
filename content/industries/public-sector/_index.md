@@ -1,13 +1,13 @@
 ---
 title: "Sovereign cloud platform for the public sector — from procurement to production"
-description: "Public-sector and quasi-public organizations face a particular combination of constraints in 2026: procurement-mandated sovereignty (EU member states,..."
+description: "Sovereign cloud for government and quasi-public bodies: air-gap, customer-held keys, NIS2 gap work, and RFI/RFP through EU and Kazakhstan procurement portals."
 related_pages:
   - /solutions/data-sovereignty/
   - /solutions/dora-compliance/
   - /solutions/nis2-compliance/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/private-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -33,7 +33,7 @@ faq:
   - q: "Does Aenix respond to public-sector RFI and RFP through official procurement portals?"
     a: "Yes. Aenix accepts RFI and RFP through standard government channels, including goszakup.gov.kz, mitwork.kz, zakup.sk.kz and the Unified Procurement Platform in Kazakhstan, and TED plus national e-procurement portals in EU member states. Responses cover company profile, references where permissions allow, technical compliance, and pricing."
   - q: "Can the platform run fully air-gapped for classified or sensitive data?"
-    a: "Yes. Cozystack supports air-gapped deployments for the most sensitive workloads, and the Ænix Platform Enterprise Edition adds strict customer-controlled encryption keys, so data classes that cannot leave the perimeter remain in jurisdiction at every layer."
+    a: "Yes. Cozystack supports air-gapped deployments for the most sensitive workloads, and the Ænix Private Cloud Platform adds strict customer-controlled encryption keys, so data classes that cannot leave the perimeter remain in jurisdiction at every layer."
   - q: "How does this help with NIS2 compliance?"
     a: "Public administration and quasi-public infrastructure operators in transport, energy, and water are commonly in scope as NIS2 essential entities. Aenix engagements include a regulator-gap workstream against NIS2 and sectoral requirements, and the platform is designed to be audit-ready for supervisor inspection."
   - q: "Is there proprietary lock-in?"
@@ -42,13 +42,14 @@ faq:
     a: "Yes. Capability transfer is a primary deliverable. Phase 2 implementation runs hardware-to-platform-to-operations with a documented exit path, including knowledge handover and runbooks, so the customer team operates the platform independently."
   - q: "What does Aenix sell on top of the open-source project?"
     a: "Aenix sells the Ænix Platform, a productized commercial offering based on Cozystack, plus services such as the Platform Readiness Assessment and implementation. Platform pricing tiers are Basic at $1,250/mo (10 nodes), Standard at $3,000, Plus at $5,500, and Enterprise Custom."
+hreflang_de: /de/branchen/oeffentlicher-sektor/
 ---
 
 **Public-sector and quasi-public organizations face a particular combination of constraints in 2026: procurement-mandated sovereignty (EU member states, Kazakhstan, several APAC jurisdictions), NIS2 compliance (essential entity scoping), data-localization rules, and increasing AI workload pressure on data classes that cannot leave the perimeter. The architectural answer is structurally sovereign, customer-controlled, and audit-ready — built on infrastructure the organization actually owns.**
 
-Aenix builds platforms for public-sector and quasi-public organizations across the EU and Central Asia. Open-source foundation ([Cozystack](/products/cozystack/)), procurement-portal-ready, regulator-aligned.
+Ænix builds platforms for public-sector and quasi-public organizations across the EU and Central Asia. Open-source foundation ([Cozystack](/products/cozystack/)), procurement-portal-ready, regulator-aligned.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereign cloud with strict customer-controlled keys + air-gap option; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large public-sector cloud product launches at hyperscaler-adjacent scale.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for sovereign cloud with strict customer-controlled keys + air-gap option; **[Public Cloud Platform](/products/public-cloud-platform/)** for large public-sector cloud product launches at hyperscaler-adjacent scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -64,7 +65,7 @@ Aenix builds platforms for public-sector and quasi-public organizations across t
 - **Sovereign AI infrastructure** — for departments handling sensitive citizen data with AI use cases. See **[Sovereign AI](/solutions/sovereign-ai/)**.
 - **Data-localization platform** — where data class must remain in jurisdiction at every layer.
 
-Most engagements involve formal procurement processes; Aenix accepts RFI / RFP through standard channels in EU member states and Kazakhstan.
+Most engagements involve formal procurement processes; Ænix accepts RFI / RFP through standard channels in EU member states and Kazakhstan.
 
 ---
 
@@ -84,7 +85,7 @@ Most engagements involve formal procurement processes; Aenix accepts RFI / RFP t
 
 ---
 
-## How Aenix engages with public-sector organizations
+## How Ænix engages with public-sector organizations
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -120,7 +121,7 @@ Public-sector references are anonymous by procurement convention rather than by 
 
 We accept RFI / RFP through standard government procurement channels including:
 
-- **Kazakhstan** — goszakup.gov.kz, mitwork.kz, zakup.sk.kz, Единая платформа закупок (Unified Procurement Platform)
+- **Kazakhstan** — goszakup.gov.kz, mitwork.kz, zakup.sk.kz, Unified Procurement Platform
 - **EU member states** — TED (Tenders Electronic Daily), national e-procurement portals
 - **Other jurisdictions** — discussed during discovery call
 
@@ -128,7 +129,7 @@ We respond with: company profile, prior public-sector references (where permissi
 
 ---
 
-## Why Aenix specifically for public sector
+## Why Ænix specifically for public sector
 
 - **Open-source platform** — Cozystack is Apache 2.0, CNCF Project. No proprietary lock-in. Source-available architecture for evaluation.
 - **EU + Central Asia teams.** Aligned with EU regulatory frameworks; experience with KZ procurement processes.
@@ -152,7 +153,5 @@ Or read more:
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
-<!-- SEO: title "Sovereign Cloud Platform for the Public Sector — Procurement to Production | Aenix"
-Word count: ~750. -->

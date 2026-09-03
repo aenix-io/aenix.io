@@ -1,6 +1,6 @@
 ---
 title: "SRE as a product discipline — what an SRE engagement actually changes"
-description: "Companion to the SRE consulting page: embed SRE in product teams, centralize it as a function, or buy an engagement — what each delivers and how to measure it."
+description: "Embed SRE in product teams, centralize it as a function, or buy an engagement — what each delivers and how to measure it."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
@@ -43,8 +43,6 @@ quiz:
       explanation: "Without executive backing for the discipline shift, SRE engagement degrades to incident response training — helpful but not what Aenix sells. Platform engineering existing is actually a strong-fit signal."
 ---
 
-**Long-form companion to the [SRE consulting services page](/services/sre-consulting/). For engineering leaders deciding whether to embed SRE inside product teams, centralize SRE as a function, or buy SRE engineering as an engagement — what each option actually delivers, and how to measure whether SRE practice is real or theatre.**
-
 SRE — Site Reliability Engineering — is one of the most-adopted and
 most-misunderstood engineering disciplines of the past decade. Most
 mid-to-large engineering organisations claim to "do SRE." Far fewer
@@ -52,11 +50,6 @@ actually run the discipline as Google's original SRE book describes
 it: software engineering applied to operations, with explicit error
 budgets, SLOs that affect prioritisation, and a hard ceiling on
 operational toil.
-
-This article walks through what the discipline actually requires,
-where it shows up as theatre rather than practice, and what an SRE
-engagement from Aenix delivers when reliability has become a
-business-grade problem.
 
 ## What SRE means, precisely
 
@@ -198,7 +191,7 @@ Fix: post-mortem action items go into the same backlog as feature
 work, with named owners, due dates, and explicit prioritisation.
 The post-mortem hasn't worked if its action items don't ship.
 
-## What Aenix SRE engagement delivers
+## What Ænix SRE engagement delivers
 
 We typically engage with organisations where SRE practice is at
 one of three states:
@@ -224,7 +217,7 @@ For each critical service, define:
 - Burn-down policy — what happens when the budget is being consumed
 - Recovery threshold — what restores feature-work prioritisation
 
-Aenix doesn't define SLOs for you in isolation — we facilitate the
+Ænix doesn't define SLOs for you in isolation — we facilitate the
 workshop where engineering and product leadership co-author them.
 SLOs without joint ownership don't stick.
 
@@ -249,7 +242,7 @@ support if needed.
 
 ### Workstream 4 — Observability stack
 
-Aenix's default observability recommendation: VictoriaMetrics for
+Ænix's default observability recommendation: VictoriaMetrics for
 metrics, VictoriaLogs for logs, OpenTelemetry for tracing where
 applicable. Self-hosted (sovereignty-friendly, lower-overhead than
 Prometheus + Loki at scale, no SaaS vendor data-residency leak).
@@ -267,7 +260,7 @@ priorities. Reporting line. Interface with platform engineering
 
 ## The Cozystack reliability defaults
 
-For organisations running Ænix Platform editions, SRE practice
+For organisations running an Ænix platform product, SRE practice
 gets a head start because the platform ships with SRE-aligned
 defaults:
 
@@ -293,7 +286,8 @@ Strong fit:
 - Engineering organisation 200+ engineers with reliability
   becoming a board-level concern
 - Recent incident pattern that exposed reliability gaps
-- Regulator-driven RTO/RPO obligations (DORA Article 21, NIS2)
+- Regulator-driven RTO/RPO obligations (DORA Articles 11-12, NIS2
+  Article 21(2)(c))
 - Existing observability investment but no clear SRE discipline
 - Platform engineering function exists or is being built (SRE pairs
   naturally with platform engineering)
@@ -301,7 +295,7 @@ Strong fit:
 Marginal fit:
 
 - Smaller organisations (<100 engineers) — usually embedded SRE
-  rather than separate function; Aenix engagement can be lighter
+  rather than separate function; Ænix engagement can be lighter
   (workshop + advisory rather than full multi-month engagement)
 - Organisations with mature SRE in one BU needing expansion —
   scope can be narrower
@@ -323,10 +317,3 @@ Poor fit:
   terminology and function design
 - **[Cloud engineering disciplines](/blog/2026/05/cloud-engineering-disciplines-2026/)** —
   the seven disciplines that compound
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Our SRE engagements pair naturally with
-Cozystack-based platform engineering work, but we engage on SRE
-discipline regardless of underlying platform substrate.*

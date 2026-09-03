@@ -74,6 +74,7 @@
 {{- end -}}
 {{- if $url -}}
 <div class="pipedrive-form pipedrive-form--{{ $type }}">
+  <script>window.aenixUTM&&window.aenixUTM.restoreForForm();</script>
   <div class="pipedriveWebForms" data-pd-webforms="{{ $url }}"></div>
   <script src="https://webforms.pipedrive.com/f/loader"></script>
 </div>

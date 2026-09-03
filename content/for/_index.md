@@ -1,5 +1,5 @@
 ---
-title: "By role — find the Aenix entry point for your job"
+title: "By role — find the Ænix entry point for your job"
 description: "Role-specific entry points to Aenix — infrastructure, platform engineering, cloud, alliances, compliance or engineering. Start where your problem lives."
 hero_subtitle: "Find your Aenix entry point by role"
 type: "page"
@@ -16,11 +16,11 @@ related_pages:
   - /for/head-of-ai-ml/
 ---
 
-**Pick the page written for your seat. Each one starts from the problem your role owns — VMware exit, developer self-service, cloud economics, a cloud to resell, a partner line, or regulatory sovereignty — and routes you to the right Aenix offer. Every role can engage us two ways: a turnkey platform you run, or our engineering team that builds it with you.**
+**Pick the page written for your seat. Each one starts from the problem your role owns — VMware exit, developer self-service, cloud economics, a cloud to resell, a partner line, or regulatory sovereignty — and routes you to the right Ænix offer. Every role can engage us two ways: a turnkey platform you run, or our engineering team that builds it with you.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
+  <a class="cta-secondary" href="/products/">Explore platform →</a>
 </div>
 
 ---
@@ -37,7 +37,7 @@ related_pages:
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO: section hub for /for/. canonical https://aenix.io/for/. hreflang de → /de/fuer/.

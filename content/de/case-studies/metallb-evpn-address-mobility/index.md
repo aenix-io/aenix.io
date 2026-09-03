@@ -16,7 +16,7 @@ secondary_keywords:
   - "EVPN Type-2 Route Kubernetes"
   - "LoadBalancer IP-Mobilität"
 related_pages:
-  - /de/produkte/aenix-platform/provider-edition/
+  - /de/produkte/public-cloud-platform/
   - /de/branchen/hosting-anbieter/
   - /de/produkte/cozystack/
   - /de/dienstleistungen/kubernetes-consulting/
@@ -143,6 +143,6 @@ Der größte Teil solcher Migrationen besteht darin, Annahmen wie diese zu finde
 
 ---
 
-*Diese Case Study erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
+*Diese Case Study erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in zwei Editions — Provider und Enterprise — mit den Modulen AI & GPU und Developer Self-Service.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform in drei Plattformen — Provider und Enterprise — mit den Modulen AI Platform und Developer Self-Service.*

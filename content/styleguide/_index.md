@@ -542,31 +542,31 @@ From ten to ten thousand instances with the same SLA and security posture.
 
 ---
 
-## Block 27 — Edition cards
+## Block 27 — platform cards
 
 `.edition-cards` — h3-led product sections wrapped into cards (insert-only wrappers); the first card is the flagship and spans the full row.
 
 <div class="edition-cards">
 <div class="edition-card">
-<h3>Sample Flagship Edition</h3>
+<h3>Sample Flagship platform</h3>
 <p>For large operators, banks running their own cloud, and national telcos.</p>
 <p>Multi-hypervisor control plane with users, projects, quotas, and multi-region support.</p>
 <p><strong>Engagement size:</strong> Multi-year programs.</p>
-<a href="#">Flagship Edition details →</a>
+<a href="#">Flagship platform details →</a>
 </div>
 <div class="edition-card">
-<h3>Sample Second Edition</h3>
+<h3>Sample Second platform</h3>
 <p>For hosting providers, MSPs, and regional clouds.</p>
 <p>Modern alternative to legacy stacks with billing and migration tooling.</p>
 <p><strong>Engagement size:</strong> Entry from a monthly support tier.</p>
-<a href="#">Second Edition details →</a>
+<a href="#">Second platform details →</a>
 </div>
 <div class="edition-card">
-<h3>Sample Third Edition</h3>
+<h3>Sample Third platform</h3>
 <p>For regulated enterprises facing compliance pressure.</p>
 <p>Private and hybrid sovereign cloud with multi-DC setups.</p>
 <p><strong>Engagement size:</strong> Multi-year platform builds.</p>
-<a href="#">Third Edition details →</a>
+<a href="#">Third platform details →</a>
 </div>
 </div>
 
@@ -604,7 +604,7 @@ Long-text and documentation-page patterns from the final Figma frame. Compositio
 <p class="longform__lead">Elastic cloud compute refers to the ability to provision, scale, and deprovision virtual computing resources in response to real-time demand. Unlike fixed-capacity infrastructure, elastic compute removes the need to predict peak load in advance — your platform scales up during traffic spikes and scales down automatically when demand subsides, so you pay only for what you use.</p>
 <details class="longform__more">
 <summary>Read more</summary>
-<p>On the Aenix platform, elastic compute is built on a multi-region, bare-metal substrate that provides consistent performance guarantees regardless of workload type. Compute instances are provisioned in under 90 seconds, with workload-aware scheduling that optimizes placement across availability zones to maximize fault tolerance and minimize latency.</p>
+<p>On the Ænix platform, elastic compute is built on a multi-region, bare-metal substrate that provides consistent performance guarantees regardless of workload type. Compute instances are provisioned in under 90 seconds, with workload-aware scheduling that optimizes placement across availability zones to maximize fault tolerance and minimize latency.</p>
 <p>Auto-scaling policies can target any platform metric — CPU, memory, request rate, queue depth, or custom telemetry signals — and capacity is billed per second with no minimum commitment.</p>
 </details>
 </div>
@@ -619,7 +619,7 @@ Long-text and documentation-page patterns from the final Figma frame. Compositio
 <div class="editorial-split__text">
 <span class="kicker">How it works</span>
 <h3>Every request flows through a unified platform layer.</h3>
-<p>Aenix routes all traffic through a global edge network before it reaches your application layer. Security checks, authentication, rate limiting, and routing happen at the edge — before a single packet reaches your compute resources.</p>
+<p>Ænix routes all traffic through a global edge network before it reaches your application layer. Security checks, authentication, rate limiting, and routing happen at the edge — before a single packet reaches your compute resources.</p>
 <p>The control plane manages all components — compute, network, security, and storage — through a single API surface. No separate consoles, no patchwork of third-party tools.</p>
 <div class="cta-row"><a class="cta-primary" href="#">View architecture →</a><a class="cta-secondary" href="#">Read the docs</a></div>
 </div>
@@ -627,7 +627,7 @@ Long-text and documentation-page patterns from the final Figma frame. Compositio
 <div class="diagram">
 <div class="diagram__node"><b>Your Application</b><div class="diagram__chips"><span>Web</span><span>Mobile</span><span>API Clients</span></div></div>
 <div class="diagram__conn">HTTPS / gRPC</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix Edge Network · 140+ PoPs</b><div class="diagram__chips"><span>DDoS Protection</span><span>TLS Termination</span><span>Rate Limiting</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Edge Network · 140+ PoPs</b><div class="diagram__chips"><span>DDoS Protection</span><span>TLS Termination</span><span>Rate Limiting</span></div></div>
 <div class="diagram__row"><div class="diagram__node"><b>Compute</b><div class="diagram__chips"><span>Auto-scale</span></div></div><div class="diagram__node"><b>Security</b><div class="diagram__chips"><span>Zero-Trust</span></div></div><div class="diagram__node"><b>Observ.</b><div class="diagram__chips"><span>OTel</span></div></div></div>
 <div class="diagram__node"><b>Distributed Data Layer</b><div class="diagram__chips"><span>Object Store</span><span>Relational</span><span>Time-series</span></div></div>
 </div>
@@ -643,7 +643,7 @@ Long-text and documentation-page patterns from the final Figma frame. Compositio
 <div class="arch-section">
 <span class="kicker">Platform architecture</span>
 <h3>One platform. Every layer. Zero stitching.</h3>
-<p class="arch-section__lead">Aenix was designed as a vertically integrated infrastructure stack — not a collection of loosely coupled services. Every layer from edge to storage was built to interoperate natively.</p>
+<p class="arch-section__lead">Ænix was designed as a vertically integrated infrastructure stack — not a collection of loosely coupled services. Every layer from edge to storage was built to interoperate natively.</p>
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__row"><div class="diagram__node"><b>Web Applications</b></div><div class="diagram__node"><b>Mobile Clients</b></div><div class="diagram__node"><b>API Integrations</b></div></div>
@@ -668,15 +668,15 @@ Long-text and documentation-page patterns from the final Figma frame. Compositio
 
 <div class="screenshot-section">
 <div class="block-intro">
-<span class="kicker">Aenix console</span>
+<span class="kicker">Ænix console</span>
 <h3>One dashboard for your entire infrastructure footprint.</h3>
-<p>The Aenix console provides real-time visibility into compute, networking, security, and cost — without switching between multiple tools or cloud providers.</p>
+<p>The Ænix console provides real-time visibility into compute, networking, security, and cost — without switching between multiple tools or cloud providers.</p>
 </div>
 <div class="browser-frame">
 <div class="browser-frame__bar"><span class="browser-frame__dots"><span></span><span></span><span></span></span><span class="browser-frame__url">console.aenix.io / marketplace</span></div>
 <img src="/images/cozystack-screenshot.png" alt="Aenix Console — service marketplace">
 </div>
-<p class="screenshot-section__caption">Aenix Console · Service marketplace · Production environment</p>
+<p class="screenshot-section__caption">Ænix Console · Service marketplace · Production environment</p>
 </div>
 
 ---
@@ -748,7 +748,7 @@ Cluster ready in 84 seconds.
 <span class="doc-highlight__note-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>
 <div>
 <strong>IAM permissions required</strong>
-<p>The deploying user must have the <code>cluster:create</code> and <code>iam:passRole</code> permissions in their Aenix organization policy.</p>
+<p>The deploying user must have the <code>cluster:create</code> and <code>iam:passRole</code> permissions in their Ænix organization policy.</p>
 </div>
 </div>
 </div>
@@ -762,38 +762,38 @@ Cluster ready in 84 seconds.
 <div class="resource-cards">
 <div class="resource-card">
 <div class="resource-card__top"><span class="kicker">Architecture guide</span><span class="card-ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span></div>
-<h3>Aenix Platform Architecture</h3>
+<h3>Ænix Platform Architecture</h3>
 <p>A technical deep-dive into the platform layers, data flows, and availability model.</p>
 <a class="resource-card__link" href="#">Read more →</a>
 </div>
 <div class="resource-card">
 <div class="resource-card__top"><span class="kicker">Migration guide</span><span class="card-ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></div>
-<h3>Migrating from AWS to Aenix</h3>
+<h3>Migrating from AWS to Ænix</h3>
 <p>Step-by-step guidance for moving production workloads with zero downtime.</p>
 <a class="resource-card__link" href="#">Read more →</a>
 </div>
 <div class="resource-card">
 <div class="resource-card__top"><span class="kicker">Whitepaper</span><span class="card-ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span></div>
-<h3>Zero-Trust Security on Aenix</h3>
-<p>How Aenix implements identity-based access across compute, network, and storage layers.</p>
+<h3>Zero-Trust Security on Ænix</h3>
+<p>How Ænix implements identity-based access across compute, network, and storage layers.</p>
 <a class="resource-card__link" href="#">Read more →</a>
 </div>
 <div class="resource-card">
 <div class="resource-card__top"><span class="kicker">Video</span><span class="card-ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg></span></div>
 <h3>Getting Started in 15 Minutes</h3>
-<p>A walkthrough of the Aenix Console — from signup to first deployed cluster.</p>
+<p>A walkthrough of the Ænix Console — from signup to first deployed cluster.</p>
 <a class="resource-card__link" href="#">Read more →</a>
 </div>
 <div class="resource-card">
 <div class="resource-card__top"><span class="kicker">Checklist</span><span class="card-ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span></div>
 <h3>Production Readiness Checklist</h3>
-<p>Verify your Aenix deployment meets security, reliability, and compliance requirements.</p>
+<p>Verify your Ænix deployment meets security, reliability, and compliance requirements.</p>
 <a class="resource-card__link" href="#">Read more →</a>
 </div>
 <div class="resource-card">
 <div class="resource-card__top"><span class="kicker">Reference</span><span class="card-ico-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span></div>
-<h3>Aenix API Reference</h3>
-<p>Complete reference documentation for the Aenix REST and gRPC APIs.</p>
+<h3>Ænix API Reference</h3>
+<p>Complete reference documentation for the Ænix REST and gRPC APIs.</p>
 <a class="resource-card__link" href="#">Read more →</a>
 </div>
 </div>
@@ -806,14 +806,14 @@ Cluster ready in 84 seconds.
 
 <p class="kicker">Pre-production checklist</p>
 
-### Before you go live on Aenix
+### Before you go live on Ænix
 
 - [x] **Enable multi-region replication** Configure at least two regions for all production workloads to meet 99.99% SLA requirements.
-- [x] **Configure IAM policies** Apply least-privilege access to all service accounts. Use Aenix policy templates as a baseline.
+- [x] **Configure IAM policies** Apply least-privilege access to all service accounts. Use Ænix policy templates as a baseline.
 - [x] **Enable audit logging** Turn on platform-level audit logs and configure export to your SIEM or long-term storage bucket.
 - [ ] **Set up alerting** Create alerts for SLA breach thresholds, anomalous spend, and security policy violations.
 - [ ] **Review compliance posture** Run the compliance scanner and resolve any open findings before moving production traffic.
-- [ ] **Test failover procedures** Simulate a regional failure using Aenix fault injection to verify your runbooks and recovery time.
+- [ ] **Test failover procedures** Simulate a regional failure using Ænix fault injection to verify your runbooks and recovery time.
 
 **Explicit `<ul class="checklist">` variant** (manual `.is-done`):
 
@@ -842,7 +842,7 @@ Cluster ready in 84 seconds.
 `.quote-person` — a framed testimonial with an avatar, distinct from the frameless pull-quote (Block 9 / 21). No decorative quote mark.
 
 <div class="quote-person">
-<p class="quote-person__body">"We evaluated five enterprise cloud platforms over three months. Aenix was the only one where the compliance story held up under scrutiny — SOC 2, HIPAA, and ISO from a single vendor, with audit artifacts we could actually give to our legal team."</p>
+<p class="quote-person__body">"We evaluated five enterprise cloud platforms over three months. Ænix was the only one where the compliance story held up under scrutiny — SOC 2, HIPAA, and ISO from a single vendor, with audit artifacts we could actually give to our legal team."</p>
 <div class="quote-person__cite">
 <span class="quote-person__avatar">JM</span>
 <span><span class="quote-person__name">James Monroe</span><span class="quote-person__role">Chief Infrastructure Officer, Veridian Health Systems</span></span>
@@ -864,9 +864,9 @@ Cluster ready in 84 seconds.
 `.faq-rows` accordion (Block 23) followed by a `.faq-summary` CTA panel: bold title + muted line left, `.cta-row` actions right. Collapses to one column below 760px.
 
 <div class="faq-rows">
-<details class="faq-item"><summary><h3>How does Aenix handle compliance across multiple jurisdictions?</h3></summary><div class="faq-answer">A unified control framework maps each requirement to platform-level controls, and data-residency policies are enforced per region so workloads never leave their declared boundary.</div></details>
+<details class="faq-item"><summary><h3>How does Ænix handle compliance across multiple jurisdictions?</h3></summary><div class="faq-answer">A unified control framework maps each requirement to platform-level controls, and data-residency policies are enforced per region so workloads never leave their declared boundary.</div></details>
 <details class="faq-item"><summary><h3>What is the migration path from AWS or Azure?</h3></summary><div class="faq-answer">Cohort-based migration with automated image conversion and a dual-run window, so production traffic shifts over only after parity checks pass.</div></details>
-<details class="faq-item"><summary><h3>Can Aenix operate in air-gapped or private cloud environments?</h3></summary><div class="faq-answer">Yes — a documented offline install ships the full control plane into disconnected or sovereign environments with no outbound calls.</div></details>
+<details class="faq-item"><summary><h3>Can Ænix operate in air-gapped or private cloud environments?</h3></summary><div class="faq-answer">Yes — a documented offline install ships the full control plane into disconnected or sovereign environments with no outbound calls.</div></details>
 </div>
 
 <div class="faq-summary">
@@ -901,14 +901,11 @@ Cluster ready in 84 seconds.
 
 ---
 
-## Block 40 — Answer clamp (Show more)
+## Block 40 — Answer clamp (retired)
 
-`.answer-clamp` — long GEO answers show about seven lines, then a "Show more" toggle. Progressive enhancement: the full answer stays in the DOM, so crawlers and no-JS visitors always read all of it; JS clamps the text visually and reveals the toggle only when it actually overflows. The GEO answer partial wraps every direct answer in this automatically.
+`.answer-clamp` used to truncate long GEO answers to about seven lines behind a "Show more" toggle. It was removed from `seo/geo-intro.html` in the information-architecture pass: `direct_answer` is spec'd at 75-150 words, so the clamp fired on 157 of 164 pages and cut a median 30% off the paragraph — always the tail, which is the "how Aenix helps" sentence. Direct answers now render in full.
 
-<div class="seo-direct-answer answer-clamp">
-<div class="answer-clamp__body"><strong>Sample platform is a turnkey cloud-in-a-box from a company that maintains the open-source engine underneath it. It packages that engine and adds the commercial layer an operator needs to run a real cloud business: a hosting panel, user and admin and support portals, service-creation wizards, full billing on both the backend and the frontend, payment and reseller integrations, a branded customer console, an enterprise SLA, and dedicated support. It ships in editions matching distinct buyer profiles, from regional hosting providers to regulated enterprises and AI-native companies, so each buyer gets the feature bundle that fits their operation rather than a one-size-fits-all product.</strong></div>
-<button type="button" class="answer-clamp__toggle" aria-expanded="false"><span class="answer-clamp__label">Show more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
-</div>
+The `.answer-clamp` / `.answer-clamp__body` class names survive only because the stylesheet hangs paragraph margins off them. `.answer-clamp__toggle` and the `is-clampable` rules in `aenix-seo-extensions.css`, plus the clamp handler in `main.js`, are now dead code and can be deleted.
 
 ---
 
@@ -1005,11 +1002,11 @@ Not a numbered block — how a full documentation page is assembled from the blo
 
 <div class="longform">
 <span class="kicker">Platform documentation</span>
-<h3 class="longform__title">Elastic Cloud Compute on Aenix</h3>
-<p class="longform__lead">Aenix elastic compute provides on-demand virtual machines, container orchestration, and bare-metal instances across 23 global regions — all managed through a unified control plane.</p>
+<h3 class="longform__title">Elastic Cloud Compute on Ænix</h3>
+<p class="longform__lead">Ænix elastic compute provides on-demand virtual machines, container orchestration, and bare-metal instances across 23 global regions — all managed through a unified control plane.</p>
 <details class="longform__more">
 <summary>Read more</summary>
-<p>Unlike traditional cloud platforms that require over-provisioning to handle peak demand, Aenix elastic compute scales in response to real workload signals. Capacity is provisioned in under 90 seconds, and auto-scaling policies can target any platform metric — CPU, memory, request rate, queue depth, or custom telemetry signals.</p>
+<p>Unlike traditional cloud platforms that require over-provisioning to handle peak demand, Ænix elastic compute scales in response to real workload signals. Capacity is provisioned in under 90 seconds, and auto-scaling policies can target any platform metric — CPU, memory, request rate, queue depth, or custom telemetry signals.</p>
 </details>
 </div>
 

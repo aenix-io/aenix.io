@@ -1,17 +1,17 @@
 ---
-title: "Provider Edition economics — when a turnkey cloud-in-a-box pays back for hosting providers"
-description: "Unit economics of Ænix Platform Provider Edition for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
+title: "Public Cloud Platform economics — when a turnkey cloud-in-a-box pays back for hosting providers"
+description: "Unit economics of Aenix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]
 language: "en"
-companion_landing: "/products/aenix-platform/provider-edition/"
-companion_label: "See Provider Edition product details →"
+companion_landing: "/products/public-cloud-platform/"
+companion_label: "See Public Cloud Platform product details →"
 quiz:
-  title: "Test yourself: Provider Edition unit economics"
+  title: "Test yourself: Public Cloud Platform unit economics"
   questions:
-    - q: "What is the published entry price for Provider Edition Basic support tier?"
+    - q: "What is the published entry price for Public Cloud Platform Basic support tier?"
       options:
         - { text: "From $1,250 per month covering 10 nodes", correct: true }
         - { text: "€500 per month for unlimited nodes and tenants", correct: false }
@@ -23,27 +23,25 @@ quiz:
         - { text: "Around €80 to €100 per tenant per month", correct: false }
         - { text: "Around €20 to €40 per tenant per month", correct: true }
       explanation: "The unit economics section calculates €15-30/month direct infra cost plus €5-10 platform-team allocation across 500 tenants, landing at €20-40/month all-in per typical tenant at the lower end of resource consumption."
-    - q: "Around what break-even tenant count does the article say Provider Edition starts to make economic sense?"
+    - q: "Around what break-even tenant count does the article say Public Cloud Platform starts to make economic sense?"
       options:
         - { text: "Roughly 100 to 200 paying tenants", correct: false }
         - { text: "Roughly 1,000 to 2,000 paying tenants", correct: true }
         - { text: "Roughly 10,000 or more paying tenants", correct: false }
       explanation: "The break-even math section computes total monthly fixed cost of €50-90k and with €40-80/month margin per tenant, break-even sits at roughly 1,000-2,000 paying tenants depending on ARPU mix."
-    - q: "Which of these is identified as the biggest single failure mode for Provider Edition providers in the pipeline?"
+    - q: "Which of these is identified as the biggest single failure mode for Public Cloud Platform providers in the pipeline?"
       options:
         - { text: "Customer-facing portal getting under-invested", correct: false }
         - { text: "Operations team undersized for 18-month-out volume", correct: true }
         - { text: "Service catalog exposing services ops can't operate", correct: false }
       explanation: "The article calls the operations under-staffing 'the biggest single failure mode in our pipeline': 4-person ops teams that worked at 50 customers can't scale at 200+, SLA breaches multiply, churn picks up."
-    - q: "Why does the article say providers below ~300 customers are usually NOT a fit for Provider Edition?"
+    - q: "Why does the article say providers below ~300 customers are usually NOT a fit for Public Cloud Platform?"
       options:
         - { text: "Cozystack technically cannot scale to that small a tenant count", correct: false }
         - { text: "EU regulators forbid commercial clouds with under 300 tenants", correct: false }
         - { text: "The fixed-cost stack overwhelms the margin contribution at that scale", correct: true }
-      explanation: "The article explicitly says 'for providers below ~300 customers, Provider Edition is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
+      explanation: "The article explicitly says 'for providers below ~300 customers, Public Cloud Platform is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
 ---
-
-**Long-form companion to the [Provider Edition landing](/products/aenix-platform/provider-edition/). Walks through the unit economics, infrastructure cost, platform-team capacity, and payback profile for hosting providers evaluating Ænix Platform Provider Edition — versus continuing on VMware, OpenStack, or per-customer-built infrastructure.**
 
 Most "should we build our own cloud product?" conversations at hosting
 providers stop at the technology question. The harder question is the
@@ -51,24 +49,24 @@ unit economics: what does it cost per tenant, what's a realistic ARPU,
 how many tenants until break-even, and where does the model fail.
 
 This article is the working version of that conversation. It assumes
-the technology decision is settled (Cozystack-based Ænix Platform ISP
-Edition) and focuses on whether the economics fit *your* hosting
+the technology decision is settled (the Cozystack-based Ænix Public
+Cloud Platform) and focuses on whether the economics fit *your* hosting
 business — not the abstract one.
 
-## What Provider Edition actually delivers
+## What Public Cloud Platform actually delivers
 
-Before economics, scope. Provider Edition is the turnkey cloud-in-a-box
-Aenix sells to hosting providers, MSPs, regional clouds, and small-to-
+Before economics, scope. Public Cloud Platform is the turnkey cloud-in-a-box
+Ænix sells to hosting providers, MSPs, regional clouds, and small-to-
 mid data centres. It includes:
 
 - **Multi-tenant Cozystack platform** running on customer-controlled
-  bare metal (KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD).
-- **cozyportal** — customer-facing self-service portal, brandable to
+  bare metal (KubeVirt + Cilium + Kube-OVN + LINSTOR + Tenant CRD).
+- **Cozystack Dashboard** — customer-facing self-service portal, brandable to
   your hosting brand.
 - **WHMCS integration** — billing flows through the customer-management
   system most hosting providers already operate.
 - **Service catalog** — VMs, tenant Kubernetes clusters, managed
-  databases (PostgreSQL, MySQL, Redis, Kafka, etc.), S3-compatible
+  databases (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, etc.), S3-compatible
   object storage, GPU services. Curatable per provider.
 - **Tenant lock / suspension** — operational hooks for non-payment
   and policy enforcement.
@@ -82,16 +80,16 @@ depth.
 
 ## Pricing model
 
-Provider Edition is the only Ænix Platform edition with a published entry
+The Public Cloud Platform is the only Ænix product with a published entry
 price: from **$1,250/month** for the Basic support tier covering 10
 nodes. Higher tiers (Standard, Enterprise) add SLA, dedicated TAM,
-24×7 response, with pricing on RFP. Aenix does not charge per VM,
+24×7 response, with pricing on RFP. Ænix does not charge per VM,
 per CPU, or per GB — the Cozystack platform itself is free under
 Apache 2.0; what you pay for is engagement, support, and operational
 assurance.
 
 For a typical mid-size hosting provider running 30-100 customer-facing
-nodes, Aenix support cost lands in the €4-15k/month range depending on
+nodes, Ænix support cost lands in the €4-15k/month range depending on
 tier and SLA. That's a fraction of the recurring license cost most
 providers have been paying VMware or OpenStack distribution vendors.
 
@@ -137,11 +135,11 @@ post-Broadcom 2026 reality.
 
 The other CFO question: *how many customers until we make money?*
 
-The fixed cost stack for a mid-size hosting provider on Provider Edition:
+The fixed cost stack for a mid-size hosting provider on Public Cloud Platform:
 
 | Item | Monthly | Annual |
 |---|---|---|
-| Aenix support (Standard tier) | €6k | €72k |
+| Ænix support (Standard tier) | €6k | €72k |
 | Platform-engineering team (3-5 FTE) | €20-35k | €240-420k |
 | Hardware amortisation (50 nodes) | €5-8k | €60-100k |
 | Colocation / power / bandwidth | €4-7k | €50-85k |
@@ -157,10 +155,10 @@ mix and where you are in the salary band.
 For providers currently running ~500 customers on legacy infrastructure
 who are evaluating the move, this matters: you need a credible path to
 double tenant count within 18-24 months for the economics to actually
-work. Without growth, Provider Edition is a cost reduction (modest) but not
+work. Without growth, Public Cloud Platform is a cost reduction (modest) but not
 a transformation.
 
-For providers below ~300 customers, Provider Edition is often *premature* —
+For providers below ~300 customers, Public Cloud Platform is often *premature* —
 the fixed-cost stack overwhelms the margin contribution. We'll say so
 in a discovery call rather than push the engagement.
 
@@ -171,12 +169,12 @@ Three failure patterns recur:
 ### 1. Customer-facing portal under-investment
 
 Hosting providers historically compete on price and reliability.
-Cozyportal out of the box is functional but generic; differentiation
+The Cozystack Dashboard out of the box is functional but generic; differentiation
 comes from polish (UX flows that match how *your* customers think about
 ordering, configuring, paying). Providers who treat the portal as
 "good enough" lose conversion to providers who invest in it.
 
-Aenix engagement includes cozyportal brand customization; deeper UX
+Ænix engagement includes Cozystack Dashboard brand customization; deeper UX
 work is typically a separate Phase 2.
 
 ### 2. Service-catalog mismatch
@@ -190,7 +188,7 @@ cohorts is the standard playbook.
 
 ### 3. Operations team under-staffed for growth
 
-The biggest single failure mode in our pipeline: Provider Edition deployed,
+The biggest single failure mode in our pipeline: Public Cloud Platform deployed,
 launches successfully, signs 200 customers in the first quarter — and
 then the 4-person operations team that worked at 50 customers can't
 scale. Customer support response time degrades, SLA breaches multiply,
@@ -199,7 +197,7 @@ churn picks up.
 Plan operations team size for 18-month-out customer count, not current.
 Hire ahead.
 
-## How Provider Edition compares to alternatives for hosting providers
+## How Public Cloud Platform compares to alternatives for hosting providers
 
 **Versus VMware Cloud Director (vCD):**
 
@@ -207,7 +205,7 @@ vCD is the historical incumbent for hosting providers. Post-Broadcom,
 subscription pricing has reshaped the math — 2-5× increases on
 renewal, mandatory VCF bundling, end of perpetual licensing. For most
 providers running vCD today, the renewal cycle is the trigger.
-Cozystack Provider Edition migration path is documented; we've shipped it
+Cozystack Public Cloud Platform migration path is documented; we've shipped it
 for several providers. Engagement scope: 6-18 months depending on
 estate size.
 
@@ -217,7 +215,7 @@ OpenStack remains valid for providers with deep OpenStack expertise
 and large-scale (>500 nodes) deployments where operational complexity
 is amortised. For mid-size providers, OpenStack's operational footprint
 (50+ services, distinct upgrade lifecycles per component) overshoots
-what the team can sustain. Provider Edition substantially smaller surface.
+what the team can sustain. Public Cloud Platform substantially smaller surface.
 
 **Versus building it yourself on vanilla Kubernetes + KubeVirt + Helm:**
 
@@ -227,7 +225,7 @@ maintenance versus a turnkey deployment. We've seen both work; the
 build-it-yourself path is the right choice when you have a 10+ engineer
 platform team and the components match your specific operational
 preferences. For the typical mid-size provider with a 3-5 engineer
-platform team, Provider Edition wins on time-to-market and operational
+platform team, Public Cloud Platform wins on time-to-market and operational
 predictability.
 
 **Versus a hyperscaler-managed cloud product (white-label):**
@@ -239,7 +237,7 @@ typically lower, and sovereignty positioning is weaker (the provider
 still depends on the hyperscaler, which European customers
 increasingly view as a structural risk).
 
-## When Provider Edition is the right answer
+## When Public Cloud Platform is the right answer
 
 It fits when at least three of the following hold:
 
@@ -255,7 +253,7 @@ It fits when at least three of the following hold:
 5. **Your customer count is 300+ today or you have credible growth
    path to 1,000+** — for fixed-cost amortisation.
 6. **You're willing to invest in customer-facing portal polish** —
-   not just treat cozyportal as "good enough."
+   not just treat Cozystack Dashboard as "good enough."
 
 Fewer than three: usually a different answer is better — staying on
 existing infrastructure with cost optimisation, partnering with a
@@ -264,7 +262,7 @@ managed-cloud-product as a smaller-margin route.
 
 ## Engagement structure
 
-For providers where Provider Edition fits:
+For providers where Public Cloud Platform fits:
 
 - **Discovery call** (30 min, free)
 - **Architecture assessment** (1-2 weeks, fixed-price) — current
@@ -275,7 +273,7 @@ For providers where Provider Edition fits:
 - **Limited GA** (2-4 months) — 50-100 customers, operational
   workflows stabilised
 - **General availability** — open market launch
-- **Managed retainer** (optional, ongoing) — Aenix runs Tier-3
+- **Managed retainer** (optional, ongoing) — Ænix runs Tier-3
   operations under SLA
 
 Typical end-to-end timeline from project start to market launch: 9-18
@@ -283,16 +281,9 @@ months depending on estate complexity and team readiness.
 
 ## Where to dig deeper
 
-- **[Provider Edition landing page](/products/aenix-platform/provider-edition/)** —
+- **[Public Cloud Platform landing page](/products/public-cloud-platform/)** —
   feature list, pricing block, FAQ
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   hosting-provider-specific positioning
 - **[White-label cloud services](/services/white-label-cloud/)** —
   for MSP / channel-partner extensions of the model
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution, OpenSSF Best Practices. We build sovereign
-cloud products with hosting providers across the EU, DACH, and Central
-Asia.*

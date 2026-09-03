@@ -1,11 +1,10 @@
 ---
 title: "Enterprise platform engineering — internal platforms for organizations at scale"
-description: "Enterprise platform engineering is the discipline of building and operating internal platforms for organizations with multiple product teams, cross-BU..."
+description: "Internal platforms at enterprise scope, where multi-tenancy, cross-BU isolation, governance and multi-region fleet operations stop being optional."
 related_pages:
   - /services/platform-engineering
   - /services/internal-developer-platform
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/idp-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -38,11 +37,12 @@ faq:
     a: "RBAC integrates with workforce identity, and the platform is built for audit-readiness to support compliance requirements. Multi-tenancy is structural rather than convention-based, so business units and teams are isolated at the platform layer instead of relying on manual process."
   - q: "Is there per-core or per-CPU licensing?"
     a: "No. Cozystack is Apache 2.0 with no per-CPU or per-core licensing. Aenix monetizes the productized Ænix Platform and services on top, with subscription tiers rather than core-based license fees."
+hreflang_de: /de/dienstleistungen/enterprise-platform-engineering/
 ---
 
 **Enterprise platform engineering is the discipline of building and operating internal platforms for organizations with multiple product teams, cross-BU isolation, and sustained scale. It's a different scope from "platform engineering for a single team" — multi-tenancy, governance, and ops-at-scale are non-negotiable.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated multi-DC platforms; **[Developer Self-Service](/products/aenix-platform/idp-edition/)** for product-engineering-led IDP at enterprise scale.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — regulated multi-DC operation plus the developer self-service layer that an enterprise IDP needs.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -101,7 +101,5 @@ Standard **[Platform Readiness Assessment](/services/platform-readiness-assessme
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Enterprise Platform Engineering — Internal Platforms at Scale | Aenix"
-Word count: ~350. -->

@@ -1,0 +1,16 @@
+{{ define "head" }}
+{{ $css := resources.Get "css/cert.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ end }}
+{{ define "main" }}
+<article class="cert" data-tpl="cert-page">
+  <section class="cert__hero">
+    <div class="container">
+      {{ with .Params.eyebrow }}<p class="cert__eyebrow">{{ . }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="cert__lead">{{ . }}</p>{{ end }}
+    </div>
+  </section>
+  <div class="container">{{ .Content }}</div>
+</article>
+{{ end }}

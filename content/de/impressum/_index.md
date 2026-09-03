@@ -31,7 +31,7 @@ Kontaktformular: [aenix.io/de/kontakt/](/de/kontakt/)
 
 ## Registereintrag
 
-Handelsregister: Handelsregister des Stadtgerichts Prag
+Handelsregister: Registergericht des Stadtgerichts Prag
 Identifikationsnummer (IČO): 21493871
 Datenbox-ID (datová schránka): 2rvcmud
 
@@ -67,4 +67,4 @@ Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf die
 
 ## Datenschutz
 
-Informationen zur Verarbeitung personenbezogener Daten finden Sie in unserer [Datenschutzerklärung](/privacy-policy/).
+Informationen zur Verarbeitung personenbezogener Daten finden Sie in unserer [Datenschutzerklärung (englisch)](/privacy-policy/).

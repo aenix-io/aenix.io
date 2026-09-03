@@ -16,9 +16,9 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Die VMware-Verlängerungen Ihrer Kunden sind gerade gestiegen, und sie fragen Sie nach einer Alternative. Das ist Ihre Chance: eine gebrandete Cloud — VMs, Kubernetes, Datenbanken, Storage — auf offener Plattform, ohne Pro-Core-Lizenz, die Ihre Marge frisst. Aenix lässt Sie sie als Produkt wiederverkaufen oder mit uns als Engineering-Team selbst bauen. Kunde und wiederkehrender Umsatz bleiben bei Ihnen.**
+**Die VMware-Verlängerungen Ihrer Kunden sind gerade gestiegen, und sie fragen Sie nach einer Alternative. Das ist Ihre Chance: eine gebrandete Cloud — VMs, Kubernetes, Datenbanken, Storage — auf offener Plattform, ohne Pro-Core-Lizenz, die Ihre Marge frisst. Ænix lässt Sie sie als Produkt wiederverkaufen oder mit uns als Engineering-Team selbst bauen. Kunde und wiederkehrender Umsatz bleiben bei Ihnen.**
 
-> **Passt zu:** **[White-Label-Cloud-Aufbau](/de/dienstleistungen/)**, **[Ænix Platform ISP](/de/produkte/)** (gebrandetes Portal + Billing) und dem **[Partnerprogramm](/de/partner/)** (bis 40% Marge). Kern: Open-Source-**[Cozystack](https://cozystack.io)**.
+> **Passt zu:** **[White-Label-Cloud-Aufbau](/de/dienstleistungen/)**, **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** (gebrandetes Portal + Billing) und dem **[Partnerprogramm](/de/partner/)** (bis 40% Marge). Kern: Open-Source-**[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -48,11 +48,11 @@ Eine Cloud-Linie ins Portfolio holen, die Sie kontrollieren: gebrandet, mandante
 
 ---
 
-## Zwei Wege mit Aenix
+## Zwei Wege mit Ænix
 
-**1. Fertige Plattform wiederverkaufen.** Die [Ænix Platform ISP](/de/produkte/) ist eine White-Label-fähige Cloud — Kundenportal, Service-Katalog (VMs, K8s, Managed DBs, S3, GPU), WHMCS-Billing, mehrstufiges Reseller-Modell. Sie branden und verkaufen; wir liefern Plattform und Support. Das [Partnerprogramm](/de/partner/) gibt bis 40% Marge mit Deal-Schutz.
+**1. Fertige Plattform wiederverkaufen.** Die [Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/) ist eine White-Label-fähige Cloud — Kundenportal, Service-Katalog (VMs, K8s, Managed DBs, S3, GPU), WHMCS-Billing, mehrstufiges Reseller-Modell. Sie branden und verkaufen; wir liefern Plattform und Support. Das [Partnerprogramm](/de/partner/) gibt bis 40% Marge mit Deal-Schutz.
 
-**2. Eigene Cloud mit unserem Team bauen.** Cozystack ist das Framework, **Aenix Ihr ausgelagertes Engineering-Team** — wir entwerfen und stellen Ihre [Cloud auf](/de/dienstleistungen/), schließen die K8s-/KubeVirt-Lücke, und Plattform wie Kunde gehören Ihnen.
+**2. Eigene Cloud mit unserem Team bauen.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Engineering-Team** — wir entwerfen und stellen Ihre [Cloud auf](/de/dienstleistungen/), schließen die K8s-/KubeVirt-Lücke, und Plattform wie Kunde gehören Ihnen.
 
 ---
 
@@ -68,10 +68,10 @@ Eine Cloud-Linie ins Portfolio holen, die Sie kontrollieren: gebrandet, mandante
 
 ---
 
-## Warum Service-Provider Aenix wählen
+## Warum Service-Provider Ænix wählen
 
 - **Kunde und Marge bleiben bei Ihnen.** Die Plattform trägt Ihre Marke; wir bleiben hinter den Kulissen.
-- **Lieferkapazität auf Abruf.** Aenix ist Ihre K8s-/KubeVirt-Bank — sagen Sie zu Projekten Ja, die Sie sonst ablehnen.
+- **Lieferkapazität auf Abruf.** Ænix ist Ihre K8s-/KubeVirt-Bank — sagen Sie zu Projekten Ja, die Sie sonst ablehnen.
 - **Eine echte VMware-Ausstiegsstory.** Offen, souveränitätsfähig, ohne Pro-Core-Lizenz.
 
 ---
@@ -79,7 +79,7 @@ Eine Cloud-Linie ins Portfolio holen, die Sie kontrollieren: gebrandet, mandante
 ## FAQ
 
 **Wiederverkaufen oder selbst bauen?**
-Beides. Provider Edition für Tempo; eigene Plattform mit uns für eigenes IP. Das Gespräch grenzt es ab.
+Beides. Public Cloud Platform für Tempo; eigene Plattform mit uns für eigenes IP. Das Gespräch grenzt es ab.
 
 **Wie sieht das Margenmodell aus?**
 Bis 40% auf Lizenz + Support über das [Partnerprogramm](/de/partner/), plus Ihr eigener wiederkehrender Managed-Services-Umsatz.
@@ -91,13 +91,13 @@ Ja — Kundenportal und Service-Katalog sind White-Label-fähig.
 Nein — das ist das Aufbau-Modell. Wir engineeren und befähigen Ihr Team.
 
 **Ist Billing dabei?**
-WHMCS-integriertes Billing kommt mit der Provider Edition.
+WHMCS-integriertes Billing kommt mit der Public Cloud Platform.
 
 ---
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren Kundenstamm an und sagen, ob Wiederverkauf der Provider Edition oder eigener Aufbau der schnellere Weg zur Marge ist.
+Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren Kundenstamm an und sagen, ob Wiederverkauf der Public Cloud Platform oder eigener Aufbau der schnellere Weg zur Marge ist.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -106,7 +106,7 @@ Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren Kundenstamm an und sagen, ob W
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-cloud/ ; hreflang de self, en → /for/head-of-cloud/.

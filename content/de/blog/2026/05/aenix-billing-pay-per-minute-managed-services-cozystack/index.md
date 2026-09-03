@@ -7,14 +7,14 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "Multi-tenancy", "Platform Engineering", "Billing"]
 language: "de"
-companion_landing: "/de/produkte/aenix-platform/provider-edition/"
-companion_label: "Provider Edition ansehen →"
+companion_landing: "/de/produkte/public-cloud-platform/"
+companion_label: "Public Cloud Platform ansehen →"
 cover_image: ""
 ---
 
 {{< placeholder-image width="1200" height="630" label="Ænix Billing — Cover-Bild (1200×630)" >}}
 
-**Sie liefern einem Tenant einen Managed-Postgres- oder ClickHouse-Cluster in zwei Minuten aus. Jetzt müssen Sie abrechnen — minutengenau, aufgeschlüsselt nach CPU, Memory und Speicher, cent-genau abstimmbar. AWS RDS kann das. GCP kann das. Auf eigener Hardware? Bisher: ein eigenes Prometheus-Skript, ein monatlicher Tabellen-Export und ein Vertriebsgespräch, das erklärt, "warum die Zahl so groß ist". Ænix Billing schließt diese Lücke.**
+**Sie liefern einem Tenant einen Managed-Postgres- oder ClickHouse-Cluster in zwei Minuten aus. Jetzt müssen Sie abrechnen — minutengenau, aufgeschlüsselt nach CPU, Memory und Speicher, cent-genau abstimmbar. AWS RDS kann das. GCP kann das. Auf eigener Hardware? Bisher: ein eigenes Prometheus-Skript, ein monatlicher Tabellen-Export und ein Vertriebsgespräch, das erklärt, „warum die Zahl so groß ist“. Ænix Billing schließt diese Lücke.**
 
 ## Was Ænix Billing ist
 
@@ -24,7 +24,7 @@ Unter der Haube:
 
 - **Cozystack Workload CRD** — jeder Managed-Service (Postgres Primary, Redis Sentinel, ClickHouse Shard, KubeVirt-VM, Kubernetes-Worker, S3-Bucket) ist ein `Workload`-Objekt.
 - **Billing-Controller** — wandelt `Workload`-State in Prometheus-Metriken um: operative Lebensdauer, Owner-Tenant, Kind/Typ, Ressourcenreservierungen.
-- **VictoriaMetrics** — speichert Metriken mit Stream-Aggregation. (Aenix und Cozystack standardisieren auf VictoriaMetrics + VictoriaLogs, nicht Prometheus/Loki.)
+- **VictoriaMetrics** — speichert Metriken mit Stream-Aggregation. (Ænix und Cozystack standardisieren auf VictoriaMetrics + VictoriaLogs, nicht Prometheus/Loki.)
 - **Billing-API-Server** — bedient die API und berechnet das bestimmte Integral der Reservierungen über das angefragte Zeitfenster.
 
 Die Form: ein schlanker Extension-API-Server, ein kleiner Controller, Ihr bestehender Metrics-Store. Keine neue Abhängigkeit zu betreiben. Ihr Plattform-Team betreibt all diese Komponenten bereits.
@@ -72,7 +72,7 @@ Derselbe `kubectl get`-Mechanismus, der eine Pod-Liste zieht, zieht jetzt Tenant
 
 ## Warum das für Hosting-Provider relevant ist
 
-Sie hosten bereits Managed Postgres, Redis, Kafka, ClickHouse, S3 und Kubernetes über Cozystack. Mit Ænix Billing bekommen Sie das fehlende Stück — präzise Buchhaltung pro Tenant, pro Workload, pro Ressource, die direkt in Ihre Rechnungsstellung einfließt. Keine Tabellen. Keine quartalsweise Abstimmung. Keine "warum ist meine Rechnung so hoch"-Diskussionen mit Kunden.
+Sie hosten bereits Managed Postgres, Redis, Kafka, ClickHouse, S3 und Kubernetes über Cozystack. Mit Ænix Billing bekommen Sie das fehlende Stück — präzise Buchhaltung pro Tenant, pro Workload, pro Ressource, die direkt in Ihre Rechnungsstellung einfließt. Keine Tabellen. Keine quartalsweise Abstimmung. Keine „warum ist meine Rechnung so hoch“-Diskussionen mit Kunden.
 
 Drei Dinge ändern sich für das Operations-Team:
 
@@ -84,11 +84,11 @@ Drei Dinge ändern sich für das Operations-Team:
 
 AWS RDS und Cloud SQL rechnen minutengenau gegen eine Managed-Service-Preisliste ab — der Provider besitzt die Preisliste und der Kunde akzeptiert die Rechnungspositionen als verbindlich. **Sie sind dieser Provider** auf Cozystack. Ænix Billing liefert dieselbe Minutengenauigkeit, mit Preismodell und Ressourcen-Taxonomie unter Ihrer Kontrolle. Die Daten liegen offen, die Policy gehört Ihnen.
 
-Für Hosting-Provider auf Bare Metal — Hetzner, OVH, regionale Rechenzentren, Sovereign-Cloud-Betreiber — ist das der Unterschied zwischen "mit Hyperscalern auf Funktion konkurrieren" und "mit Hyperscalern nur auf Preis konkurrieren". Die Funktion war bisher die Lücke.
+Für Hosting-Provider auf Bare Metal — Hetzner, OVH, regionale Rechenzentren, Sovereign-Cloud-Betreiber — ist das der Unterschied zwischen „mit Hyperscalern auf Funktion konkurrieren“ und „mit Hyperscalern nur auf Preis konkurrieren“. Die Funktion war bisher die Lücke.
 
 ## Distribution
 
-Ænix Billing ist ein proprietäres Modul und wird als Teil von **Ænix Enterprise** zusammen mit Cozystack ausgeliefert. Die Cozystack-Plattform bleibt Apache-2.0 und CNCF-gesteuert. Die Billing-Schicht erscheint unter einer kommerziellen Lizenz für Aenix-Kunden.
+Ænix Billing ist ein proprietäres Modul und wird als Teil von **Ænix Enterprise** zusammen mit Cozystack ausgeliefert. Die Cozystack-Plattform bleibt Apache-2.0 und CNCF-gesteuert. Die Billing-Schicht erscheint unter einer kommerziellen Lizenz für Ænix-Kunden.
 
 Wenn Sie ein Hosting-Geschäft oder eine Private Cloud auf Cozystack betreiben und Billing out of the box wollen, [vereinbaren Sie einen Discovery-Call](/de/kontakt/) — wir besprechen Scope, Pricing und Rollout.
 

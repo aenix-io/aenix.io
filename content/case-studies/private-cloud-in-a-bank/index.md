@@ -16,10 +16,10 @@ secondary_keywords:
   - "internal cloud portal bank"
   - "on-premise cloud financial services"
 related_pages:
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /industries/financial-services/
   - /solutions/dora-compliance/
-  - /products/aenix-platform/idp-edition/
+  - /products/private-cloud-platform/
 faq:
   - q: "Did the bank have to adopt a new identity system?"
     a: "No. The bank's existing Keycloak stayed the source of truth and the platform integrated with it, mapping the bank's groups and roles onto platform roles. Nobody got a second set of credentials, and joiner-mover-leaver processes kept working the way audit already understood them."
@@ -99,6 +99,6 @@ A self-service cloud platform, delivered as a product and integrated into the ba
 
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Aenix sales](/contact/).*
+*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

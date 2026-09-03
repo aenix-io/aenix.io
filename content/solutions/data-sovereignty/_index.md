@@ -7,8 +7,8 @@ related_pages:
   - /solutions/cloud-repatriation/
   - /solutions/sovereign-ai/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/private-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -43,15 +43,16 @@ faq:
     a: "Cozystack is an Apache 2.0 CNCF project that runs KubeVirt VMs and containers on one Kubernetes API on the customer's chosen hardware in the chosen jurisdiction, with the customer holding cluster-level access and customer-controlled keys at every data layer. There is no per-core licensing and no provider lock-in, so sovereignty is structural rather than contractual."
   - q: "Can we run this under a public-sector procurement process?"
     a: "Yes. Aenix accepts RFI / RFP through standard procurement channels in EU member states and Kazakhstan. The 30-minute discovery call covers procedural fit and confirms which 14-day or 28-day variant matches your situation."
+hreflang_de: /de/loesungen/data-sovereignty/
 ---
 
 <!-- BLOCK 1: HERO -->
 
 **Data sovereignty is no longer a procurement clause — it is an operational requirement: prove, with evidence, that your data lives where the regulator says it must, at every layer and not only in production.**
 
-Aenix runs a structured engagement that produces a control-level map of where your data actually lives today, where the gaps are, and what sovereignty-by-design looks like for your stack.
+Ænix runs a structured engagement that produces a control-level map of where your data actually lives today, where the gaps are, and what sovereignty-by-design looks like for your stack.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises consuming sovereign cloud internally, or **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for operators offering it as a product — customer-controlled keys at every layer, air-gap optional.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises consuming sovereign cloud internally, or **[Public Cloud Platform](/products/public-cloud-platform/)** for operators offering it as a product — customer-controlled keys at every layer, air-gap optional.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -99,7 +100,7 @@ If you can name a specific regulator, sectoral rule, or procurement clause that 
 Production storage is the easy part. Backups, observability data, CI/CD artifacts, and managed-service telemetry frequently leave the regulator's perimeter without anyone noticing. Sovereignty applies to *all* layers, not just the production database.
 
 **2. Encryption and key custody under your control**
-Encryption alone is not sovereignty. The encryption keys must be held by the financial entity (or the customer) — not the cloud provider — with documented rotation, emergency access, and audit-trail.
+Encryption alone is not sovereignty. The keys must be held by the data owner — not the cloud provider — with documented rotation, emergency access, and an audit trail.
 
 **3. Supplier transparency to the second hop**
 Hyperscalers run on data centres and connectivity providers; SaaS providers run on hyperscalers; managed services depend on shared infrastructure. Sovereignty requires knowing the chain past the first hop.
@@ -134,11 +135,9 @@ Backup storage tier is in the right region. The DR test pulls backups across reg
 Default encryption looks compliant on paper. Until the regulator asks who controls the keys — and the answer is the same vendor that holds the data.
 
 **Supplier chain is a black box past hop 1**
-The hyperscaler is named in the contract. The hyperscaler's data-centre operator, networking sub-contractors, and shared platform services are not. Article 30(2)(a) of DORA, NIS2 supplier-risk rules, and similar sectoral rules require this transparency.
+The hyperscaler is named in the contract. The hyperscaler's data-centre operator, networking sub-contractors, and shared platform services are not. DORA Article 30(2)(a) requires the subcontracting chain to be described in the contract; NIS2 Article 21(2)(d) requires supply-chain security to cover direct suppliers and service providers.
 
 </div>
-
-Surfacing these gaps under structured assessment is cheaper than surfacing them under regulator audit.
 
 <!-- /BLOCK 4 -->
 
@@ -146,7 +145,7 @@ Surfacing these gaps under structured assessment is cheaper than surfacing them 
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## How Aenix helps
+## How Ænix helps
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -166,7 +165,7 @@ The data-sovereignty engagement runs as part of our **[Platform Readiness Assess
 - **Audit-readiness assessment** — what supervisor access processes are documented, what tested, what missing.
 - **Architecture-level remediation plan** — what to fix, in what sequence, with effort estimates and regulatory deadline alignment.
 
-Delivered by Aenix engineers — the team behind Cozystack — across the EU, DACH, and Central Asia, with no hyperscaler commercial alignment.
+Delivered by Ænix engineers — the team behind Cozystack — across the EU, DACH, and Central Asia, with no hyperscaler commercial alignment.
 
 <!-- /BLOCK 5 -->
 
@@ -174,11 +173,11 @@ Delivered by Aenix engineers — the team behind Cozystack — across the EU, DA
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **EU-based engineers and operations.** Our team works across the EU, DACH, and Central Asia. We understand the difference between sovereignty as a US marketing term and sovereignty as it is enforced under EU sectoral rules and EU member-state procurement clauses.
 - **No hyperscaler bias.** Sovereignty consulting from Big-4 firms is shaped by their hyperscaler partnerships. Our recommendations are not commercially tied to any cloud provider — we recommend the architecture that actually meets the sovereignty requirement, even when that means full on-prem.
-- **Open-source platform foundation.** We are the company behind **[Cozystack](/products/cozystack/)** — a CNCF Project running on the financial entity's chosen hardware in the chosen jurisdiction, with the entity holding cluster-level access. Sovereignty is structural, not contractual.
+- **Open-source platform foundation.** We are the company behind **[Cozystack](/products/cozystack/)** — a CNCF Project running on your chosen hardware in your chosen jurisdiction, with cluster-level access held by you. Sovereignty is structural, not contractual.
 
 <!-- /BLOCK 6 -->
 
@@ -192,13 +191,7 @@ Delivered by Aenix engineers — the team behind Cozystack — across the EU, DA
 
 ## What the engagement looks like
 
-| When | What | Output |
-|---|---|---|
-| **Day 0** | 30-min discovery call (free) | Confirm fit, narrow sovereignty scope (which regulators / clauses bind you), identify sponsor |
-| **Days 1-13 (or 1-27)** | Four parallel workstreams; sovereignty-and-regulator-gap workstream emphasized | Daily async updates, three checkpoints with sponsor |
-| **Day 14 (or 28)** | Executive readout (60-90 min) | Written report: data-residency map, key-custody review, supplier-chain map, audit-readiness, remediation plan |
-
-For the full methodology see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+Day 0 is a free 30-minute discovery call that fixes the scope. Days 1-13 (or 1-27) run four parallel workstreams with the sovereignty-and-regulator-gap workstream emphasized, on daily async updates and three sponsor checkpoints. Day 14 (or 28) is a 60-90 minute executive readout against the written report — data-residency map, key-custody review, supplier-chain map, audit-readiness and remediation plan. Full day-by-day methodology: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 <!-- /BLOCK 7 -->
 
@@ -213,9 +206,6 @@ For the full methodology see **[Platform Readiness Assessment](/services/platfor
 We have run data-sovereignty assessments and platform-engineering programs for banks, insurers, public-sector organizations, and ICT third-party providers across the EU, DACH, and Central Asia. Outcomes range from full on-prem sovereign-cloud builds to selective repatriation of regulated workloads.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
-Named case studies available on the discovery call where customer permissions allow.
 
 <!-- /BLOCK 8 -->
 
@@ -259,7 +249,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 <a id="discovery"></a>
 ## Start with a 30-minute discovery call
 
-Free. No prep needed. We confirm fit, narrow the sovereignty scope to your binding regulators or clauses, and tell you whether the 14-day or the 28-day variant matches your situation.
+We confirm fit, narrow the scope to the regulators or procurement clauses that bind you, and name the 14-day or 28-day variant.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -278,7 +268,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
 

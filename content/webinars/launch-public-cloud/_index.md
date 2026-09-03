@@ -109,7 +109,7 @@ final_cta:
 <div class="ws-story__text">
 <h3 class="wb-story__h3">From platform to sellable product</h3>
 <p>Andrei will show how to get there with Cozystack, an open-source cloud platform and CNCF Sandbox project that turns your infrastructure into a foundation for virtual machines, managed Kubernetes, databases, and S3-compatible storage.</p>
-<p>He will also show how Aenix's add-on modules turn that platform into a sellable product: <strong>billing and usage metering, a hosting panel, WHMCS and custom integrations, and a realistic migration plan.</strong></p>
+<p>He will also show how Ænix's add-on modules turn that platform into a sellable product: <strong>billing and usage metering, a hosting panel, WHMCS and custom integrations, and a realistic migration plan.</strong></p>
 </div>
 <div class="ws-story__visual ws-story__visual--platform">
 <div class="ws-platform wb-platform">
@@ -167,7 +167,7 @@ final_cta:
 <li class="wb-cover__item">
 <span class="wb-cover__num">05</span>
 <span class="wb-cover__icon">{{< ws-icon name="billing" >}}</span>
-<p class="wb-cover__text"><strong>Turning it into a business.</strong> How Aenix modules add billing and usage metering, a hosting panel, and WHMCS or custom integrations with your existing systems.</p>
+<p class="wb-cover__text"><strong>Turning it into a business.</strong> How Ænix modules add billing and usage metering, a hosting panel, and WHMCS or custom integrations with your existing systems.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">06</span>
@@ -236,8 +236,8 @@ final_cta:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
-<div class="ws-speaker__role">Creator of Cozystack · Founder of Aenix</div>
-<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium, and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers turn their infrastructure into commercial cloud services.</p>
+<div class="ws-speaker__role">Creator of Cozystack · Founder of Ænix</div>
+<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium, and LINSTOR, and speaks at KubeCon and other industry events. At Ænix, he helps providers turn their infrastructure into commercial cloud services.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
 <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>

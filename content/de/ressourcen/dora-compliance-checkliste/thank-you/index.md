@@ -1,13 +1,14 @@
 ---
-title: "Ihr Download ist bereit — DORA-Compliance Cloud-Architektur-Checkliste"
-description: "Laden Sie Ihre Kopie des DORA-Compliance Cloud-Architektur-Checkliste von Aenix herunter."
+title: "Ihr Download ist bereit — DORA-Compliance-Checkliste für Cloud-Architektur"
+description: "Laden Sie Ihre Kopie der DORA-Compliance-Checkliste für Cloud-Architektur von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
+hreflang_en: /resources/dora-compliance-checklist/thank-you/
 page_type: "flag-page"
 hide_closing_cta: true
 ---
 
-**Vielen Dank — Ihr Download ist bereit.** Das DORA-Compliance Cloud-Architektur-Checkliste finden Sie unten. Eine Kopie haben wir zusätzlich an Ihre angegebene E-Mail-Adresse gesendet.
+**Vielen Dank — Ihr Download ist bereit.** Die DORA-Compliance-Checkliste für Cloud-Architektur finden Sie unten. Eine Kopie haben wir zusätzlich an Ihre angegebene E-Mail-Adresse gesendet.
 
 <div class="cta-row">
   <a class="cta-primary" href="/downloads/aenix-dora-compliance-checklist-de.pdf" download>PDF herunterladen ↓</a>
@@ -23,4 +24,4 @@ hide_closing_cta: true
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0.*

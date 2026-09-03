@@ -262,7 +262,7 @@ faq:
 <span class="ws-cert__kicker">Certificate of completion</span>
 <span class="ws-cert__title">Cozystack Certified Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">Cozystack · Aenix</span>
+<span class="ws-cert__by">Cozystack · Ænix</span>
 </div>
 </div>
 </div>
@@ -274,8 +274,8 @@ faq:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="ws-speaker-h">Ведущий</h2>
 <div class="ws-speaker__name">Тимур Тукаев</div>
-<div class="ws-speaker__role">Мейнтейнер Cozystack · сооснователь Aenix</div>
-<p class="ws-speaker__bio">Тимур — мейнтейнер открытой платформы Cozystack и сооснователь компании Aenix, которая её разрабатывает. Формат воркшопа — его: без маркетинговых слайдов, большая часть времени за терминалом, а слабые места платформы называются раньше сильных.</p>
+<div class="ws-speaker__role">Мейнтейнер Cozystack · сооснователь Ænix</div>
+<p class="ws-speaker__bio">Тимур — мейнтейнер открытой платформы Cozystack и сооснователь компании Ænix, которая её разрабатывает. Формат воркшопа — его: без маркетинговых слайдов, большая часть времени за терминалом, а слабые места платформы называются раньше сильных.</p>
 </div>
 </div>
 </section>
@@ -303,7 +303,7 @@ faq:
 
 <!-- TODO(legal/pipedrive): The RU registration form's consent text is
      configured inside Pipedrive, not in this repo, and currently shows the
-     English line "I agree to be contacted by Aenix about its services".
+     English line "I agree to be contacted by Ænix about its services".
      Update the consent copy to approved Russian wording inside the Pipedrive
      form (form id in layouts/shortcodes/pipedrive-form.html → $workshopFormRu).
      Do not hardcode consent wording here. -->

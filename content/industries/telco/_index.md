@@ -1,14 +1,14 @@
 ---
 title: "Cloud platform for telecom operators — sovereign, edge-ready, AI-aware"
-description: "Telecom operators in 2026 face an architectural inflection point: legacy NFV environments aging out, edge-compute demands growing, sovereign-cloud branded..."
+description: "Sovereign edge-to-core cloud for telecom operators: SR-IOV and DPDK where the dataplane demands it, KubeVirt for VNFs, Cilium for everything else."
 related_pages:
   - /solutions/sovereign-ai/
   - /solutions/data-sovereignty/
   - /solutions/cloud-repatriation/
   - /services/private-cloud-consulting/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/public-cloud-edition/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/public-cloud-platform/
+  - /products/private-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -43,13 +43,14 @@ faq:
     a: "No. Cozystack is Apache 2.0 with no per-CPU or per-core licensing, which avoids vendor lock-in across the long hardware refresh cycles typical in telecom. Aenix sells the productized Ænix Platform and services on top."
   - q: "How long does a telecom platform engagement take?"
     a: "Aenix starts with a Platform Readiness Assessment covering multi-site architecture, edge readiness, sovereign-cloud packaging, NIS2 controls, and telco AI use cases. Phase 2 implementation typically spans 6-24 months for a multi-site telecom platform."
+hreflang_de: /de/branchen/telco/
 ---
 
 **Telecom operators in 2026 face an architectural inflection point: legacy NFV environments aging out, edge-compute demands growing, sovereign-cloud branded products launching across the sector, AI workloads on customer data, and NIS2 essential-entity compliance. The architectural answer is a coherent platform that runs at core data centres, regional sites, and customer edge — under one operations model.**
 
-Aenix builds platforms for telecom operators across the EU, DACH, and Central Asia. Same platform, [Cozystack](/products/cozystack/), running at core and edge.
+Ænix builds platforms for telecom operators across the EU, DACH, and Central Asia. Same platform, [Cozystack](/products/cozystack/), running at core and edge.
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/public-cloud-edition/)** for telcos launching customer-facing sovereign cloud products at multi-region scale; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for NIS2-aligned internal cloud and edge platforms.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for telcos launching customer-facing sovereign cloud products at multi-region scale; **[Private Cloud Platform](/products/private-cloud-platform/)** for NIS2-aligned internal cloud and edge platforms.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -108,7 +109,7 @@ The honest boundary: this is a platform for the estate around the network — ME
 
 ---
 
-## How Aenix engages with telecom operators
+## How Ænix engages with telecom operators
 
 Standard **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with telecom-specific workstreams: multi-site architecture, edge readiness, sovereign-cloud product packaging (where applicable), NIS2 controls, AI infrastructure for telco use cases.
 
@@ -120,19 +121,13 @@ Phase 2 implementation typically spans 6-24 months for a multi-site telecom plat
 
 {{< clients >}}
 
-*Customer evidence section — Aenix to populate. Anonymous proof points:*
-- A Tier-1 European telecom operating internal cloud platform across core + regional + edge sites.
-- A regional operator launching customer-facing sovereign cloud product on Cozystack foundation.
-- A telecom AI initiative for customer-care and network-operations workloads on private LLM infrastructure.
-- A 5G MEC deployment with Kubernetes + KubeVirt for VNFs at edge sites.
-
 {{< quote-carousel >}}
 
-Public references: NDA-protected — telco engagements sit in the same NDA cohort as the bank work, with naming permitted from mid-2027. The closest written-up case is [a telecom operator that built a corporate AI platform on Cozystack and shipped the same distribution into a state-owned end customer](/case-studies/ai-universal-installer/).
+Telco engagements sit in the same NDA cohort as the bank work; naming is permitted from mid-2027. The closest written-up case is [a telecom operator that built a corporate AI platform on Cozystack and shipped the same distribution into a state-owned end customer](/case-studies/ai-universal-installer/).
 
 ---
 
-## Why Aenix specifically for telecom
+## Why Ænix specifically for telecom
 
 - **Edge-to-core platform.** Cozystack runs at scale at core data centres, regional sites, and edge — under unified operations.
 - **Multi-tenant customer-facing model** — Tenant CRD designed for service-provider model, suitable for telco customer-facing cloud products.
@@ -156,7 +151,5 @@ Public references: NDA-protected — telco engagements sit in the same NDA cohor
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Cloud Platform for Telecom — Sovereign, Edge-Ready, AI-Aware | Aenix"
-Word count: ~750. -->

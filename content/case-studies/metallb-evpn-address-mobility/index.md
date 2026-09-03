@@ -16,7 +16,7 @@ secondary_keywords:
   - "evpn type-2 route kubernetes"
   - "loadbalancer ip mobility"
 related_pages:
-  - /products/aenix-platform/provider-edition/
+  - /products/public-cloud-platform/
   - /industries/hosting-providers/
   - /products/cozystack/
   - /services/kubernetes-consulting/
@@ -143,6 +143,6 @@ Most of this kind of migration is finding assumptions like that one — made rea
 
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Aenix sales](/contact/).*
+*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

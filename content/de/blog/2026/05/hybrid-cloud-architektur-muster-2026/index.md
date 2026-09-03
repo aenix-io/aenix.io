@@ -10,36 +10,36 @@ companion_landing: "/de/loesungen/hybrid-cloud/"
 quiz:
   title: "Wissens-Check: Hybrid-Cloud-Muster"
   questions:
-    - q: "Welche Definition von \"Hybrid Cloud\" hält der Artikel für architektonisch am nützlichsten?"
+    - q: "Welche Definition von Hybrid Cloud hält der Artikel architektonisch für die nützlichste?"
       options:
-        - { text: "Workload-Verteilung ohne Integration", correct: false }
-        - { text: "Datenfluss-orientiert mit expliziten Cross-Substrate-Datenflüssen", correct: false }
-        - { text: "Vereinheitlichte Plattform — Single-Plattform-Abstraktion über mehrere Substrate mit konsistenten Operations", correct: true }
-      explanation: "Drei Definitionen in steigender Nützlichkeit: Workload-Verteilung (operational fragmentiert), Datenfluss (architektonisch ehrlich aber halbfertig), vereinheitlichte Plattform (wo der Hebel liegt — Single-Plattform-Abstraktion über mehrere Substrate mit konsistenten Operations)."
+        - { text: "Workload-Verteilung ohne gemeinsame Integrationsebene", correct: false }
+        - { text: "Datenflussorientiert, mit explizit entworfenen Übergängen", correct: false }
+        - { text: "Vereinheitlichte Plattform: eine Abstraktion über mehreren Substraten", correct: true }
+      explanation: "Drei Definitionen in steigender Nützlichkeit: Workload-Verteilung (betrieblich fragmentiert), Datenfluss (architektonisch ehrlich, aber nur die halbe Arbeit) und die vereinheitlichte Plattform — dort liegt der Hebel, weil eine einzige Plattformabstraktion über mehrere Substrate hinweg konsistenten Betrieb erlaubt."
     - q: "Welches Hybrid-Muster ist 2026 am häufigsten?"
       options:
-        - { text: "Steady-state on-prem + elastisch in Public Cloud", correct: true }
-        - { text: "Edge + Core", correct: false }
-        - { text: "Geografische Aufteilung", correct: false }
-      explanation: "Muster 1 — vorhersagbare steady-state Workloads on-prem, elastische Spike-Workloads in Public Cloud — ist das häufigste 2026-Hybrid-Muster, besonders für SaaS-Unternehmen mit stabilen Kunden plus spike-haften Customer-facing-Mustern."
-    - q: "Welche drei architektonischen Prinzipien trennen funktionierendes Hybrid von \"fragmentiertem Multi-Cloud\"?"
+        - { text: "Steady State on premises, elastische Spitzen in der Public Cloud", correct: true }
+        - { text: "Edge und Core als zusammenhängende Topologie", correct: false }
+        - { text: "Rein geografische Aufteilung nach Landesgesellschaften", correct: false }
+      explanation: "Muster 1 — planbare Dauerlast on premises, elastische Spitzenlast in der Public Cloud — ist das häufigste Hybrid-Muster 2026, besonders bei SaaS-Unternehmen mit stabiler Kundenzahl und schwankenden kundenseitigen Lastspitzen."
+    - q: "Welche drei Prinzipien trennen funktionierendes Hybrid von fragmentiertem Multi-Cloud?"
       options:
-        - { text: "Eine Plattform-Abstraktion + Workload-Portabilität wo wichtig + explizite Datenfluss-Kontrolle", correct: true }
-        - { text: "Ein Hyperscaler + GitOps + CDN", correct: false }
-        - { text: "Zwei Hypervisoren + ein Identity-Provider", correct: false }
-      explanation: "Drei Prinzipien: (1) eine Plattform-Abstraktion (Kubernetes API als Lingua Franca), (2) Workload-Portabilität wo wichtig (kritische Workloads nutzen Plattform-Abstraktionen die auf mehreren Substraten funktionieren), (3) explizite Datenfluss-Kontrolle (Cross-Cloud-Flows designt, kostiert, überwacht)."
-    - q: "Welcher Versagenmodus heißt \"Cloud-Bursting, das niemand nutzt\"?"
+        - { text: "Eine Plattformabstraktion, gezielte Portabilität, kontrollierte Datenflüsse", correct: true }
+        - { text: "Ein Hyperscaler, GitOps und ein globales CDN", correct: false }
+        - { text: "Zwei Hypervisoren, ein Identitätsanbieter und eine offene API", correct: false }
+      explanation: "Drei Prinzipien: (1) eine Plattformabstraktion, in der Regel die Kubernetes-API als gemeinsame Sprache, (2) Workload-Portabilität dort, wo sie zählt — kritische Workloads nutzen Abstraktionen, die auf mehreren Substraten laufen, (3) explizite Kontrolle der Datenflüsse, die entworfen, kalkuliert und überwacht werden."
+    - q: "Welcher Fehlermodus trägt den Namen „Cloud-Bursting, das niemand nutzt“?"
       options:
-        - { text: "Versagen 1", correct: false }
-        - { text: "Versagen 2 — Bursting-Fähigkeit ist theoretisch, weil Cross-Substrate-Datenbewegung zu langsam ist", correct: true }
-        - { text: "Versagen 5", correct: false }
-      explanation: "Versagen 2: Architektur unterstützt Bursting von on-prem in Public Cloud für Capacity-Overflow, aber in Produktion ist die Bursting-Fähigkeit theoretisch (Cross-Substrate-Datenbewegung zu langsam). Architektur ist überengineered für ungenutzte Fähigkeit."
-    - q: "Was treibt die Aufteilung in Muster 2 (kritisch on-prem + nicht-kritisch in Public Cloud)?"
+        - { text: "Fehlermodus 1", correct: false }
+        - { text: "Fehlermodus 2", correct: true }
+        - { text: "Fehlermodus 5", correct: false }
+      explanation: "Fehlermodus 2: Die Architektur unterstützt das Bursting von on premises in die Public Cloud, doch im Betrieb bleibt die Fähigkeit theoretisch, weil die Datenbewegung zwischen den Substraten zu langsam ist. Die Architektur ist für eine ungenutzte Fähigkeit überkonstruiert."
+    - q: "Was treibt die Aufteilung in Muster 2, also kritisch on premises und unkritisch in der Public Cloud?"
       options:
-        - { text: "Nur Kosten", correct: false }
-        - { text: "Souveränität / Regulator-Druck (DORA, sektorale Regeln, Datenresidenz-Mandate)", correct: true }
-        - { text: "KI-Workload-Ökonomie", correct: false }
-      explanation: "Muster 2 platziert regulierte Workloads (Banking, Gesundheit, öffentlicher Sektor) auf Private Cloud und Hilfs-Workloads (Analytics, Internal Tooling, Dev/Test) in Public Cloud. Treiber ist Souveränität — DORA, sektorale Regeln, Datenresidenz-Mandate — nicht reine Kosten."
+        - { text: "Ausschließlich die Kostenbetrachtung", correct: false }
+        - { text: "Souveränität und aufsichtsrechtlicher Druck", correct: true }
+        - { text: "Die Wirtschaftlichkeit von KI-Workloads", correct: false }
+      explanation: "Muster 2 legt regulierte Workloads aus Banking, Gesundheit und öffentlichem Sektor in die Private Cloud und Hilfs-Workloads wie Analytics, interne Werkzeuge sowie Dev und Test in die Public Cloud. Treiber ist die Souveränität — DORA, sektorale Regeln, Datenresidenzvorgaben — nicht die reine Kostenfrage."
 ---
 
 Begleitung zur **[Hybrid-Cloud-Page](/de/loesungen/hybrid-cloud)**.
@@ -79,5 +79,5 @@ KI-Training und Inferenz auf dediziertem GPU (Private Cloud); Rest des Geschäft
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

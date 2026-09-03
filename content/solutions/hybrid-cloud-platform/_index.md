@@ -7,8 +7,8 @@ related_pages:
   - /solutions/data-sovereignty/
   - /services/private-cloud-consulting/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/private-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -28,7 +28,7 @@ quick_facts:
   - label: "Delivered as"
     value: "Platform Readiness Assessment (14-28 days) followed by Phase 2 implementation, typically 6-18 months"
   - label: "Key capability"
-    value: "One control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds via Ænix Platform Enterprise Edition"
+    value: "One control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds via Ænix Private Cloud Platform"
   - label: "Foundation"
     value: "KubeVirt for VMs and containers on one API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy"
 
@@ -44,7 +44,8 @@ faq:
   - q: "How does Aenix deliver a hybrid cloud platform?"
     a: "Engagement starts with a Platform Readiness Assessment (14-28 days) producing workload classification, a hybrid architecture target, a cross-substrate operations model, and migration sequencing. Phase 2 implementation has Aenix engineers build the platform end-to-end, typically over 6-18 months."
   - q: "What technology underpins the platform?"
-    a: "Cozystack uses KubeVirt to run virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, LINSTOR/DRBD for replicated storage, and a Tenant CRD for multi-tenancy. Aenix sells Ænix Platform, a productized offering, plus services on top."
+    a: "Cozystack uses KubeVirt to run virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, LINSTOR/DRBD for replicated storage, SeaweedFS for S3-compatible object storage, and a Tenant CRD for multi-tenancy. Aenix productizes it as three platforms on the same engine — Public Cloud Platform, Private Cloud Platform and AI Platform — plus engineering services."
+hreflang_de: /de/loesungen/hybrid-cloud/
 ---
 
 <!-- BLOCK 1 -->
@@ -52,9 +53,9 @@ faq:
 
 **Most enterprises in 2026 are already hybrid — public cloud for elastic and customer-facing, private cloud or on-prem for steady-state, regulated, or AI-economics workloads. The challenge is no longer whether to be hybrid; it's whether to operate hybrid as a coherent architecture or as a fragmented patchwork. The latter is what most enterprises have. The former is where leverage is.**
 
-Aenix builds and operates hybrid cloud platforms based on [Cozystack](/products/cozystack/) — Kubernetes-native, multi-tenant, with consistent operations across customer hardware, public cloud regions, and edge sites.
+Ænix builds and operates hybrid cloud platforms based on [Cozystack](/products/cozystack/) — Kubernetes-native, multi-tenant, with consistent operations across customer hardware, public cloud regions, and edge sites.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — one control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds. For large operators or telcos: combine with **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for multi-region public-cloud-class control plane.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — one control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds. For large operators or telcos: combine with **[Public Cloud Platform](/products/public-cloud-platform/)** for multi-region public-cloud-class control plane.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -149,7 +150,7 @@ Same workload runs differently on public cloud vs on-prem. Operational debt buil
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## How Aenix helps
+## How Ænix helps
 
 The hybrid-platform engagement runs as part of our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**. Output:
 
@@ -159,7 +160,7 @@ The hybrid-platform engagement runs as part of our **[Platform Readiness Assessm
 - **Migration sequencing** — what moves first, what stays, what's hybrid
 - **Phase 2 implementation roadmap**
 
-Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end — typically 6-18 months elapsed.
+Phase 2 implementation: Ænix engineers build the hybrid platform end-to-end — typically 6-18 months elapsed.
 
 </div>
 </div>
@@ -170,7 +171,7 @@ Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end —
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **Production hybrid experience.** Cozystack runs in production across customer-controlled hardware, public-cloud-region deployments, and edge sites simultaneously.
 - **Open-source foundation.** [Cozystack](/products/cozystack/) is open-source CNCF Project. Same platform, multiple substrates, no vendor lock-in.
@@ -240,10 +241,10 @@ Phase 2 implementation: Aenix engineers build the hybrid platform end-to-end —
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project, Kubernetes Certified Distribution) and productizes it as Ænix Platform — Public Cloud Platform, Private Cloud Platform and AI Platform on one engine.*
 
 <!--
-SEO: title "Hybrid Cloud Platform — One Platform, Multiple Substrates | Aenix"
+SEO: title "Hybrid Cloud Platform — One Platform, Multiple Substrates | Ænix"
 Description: "Hybrid cloud platform built on Kubernetes-native foundation. Single operations model across customer hardware, public cloud, and edge."
 Word count: ~900.
 -->

@@ -3,9 +3,10 @@ title: "Services"
 description: "Aenix services: Platform Readiness Assessment entry offer, platform engineering, internal developer platform, and public, sovereign, and AI cloud builds."
 hero_subtitle: "From readiness assessment to a fully built cloud platform"
 language: "en"
+hreflang_de: /de/dienstleistungen/
 ---
 
-**Engagement-led entry points to Aenix work. Pick the engagement type that matches what you need to do — assess, build, operate. All paths lead to Ænix Platform deployments matched to your buyer profile.**
+**Engagement-led entry points to Ænix work. Pick the engagement type that matches what you need to do — assess, build, operate. All paths lead to Ænix Platform deployments matched to your buyer profile.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -21,17 +22,17 @@ language: "en"
 
 ### Entry offer (start here)
 
-- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — 5-10 day fixed-price engagement, price agreed before it starts. Architecture audit + edition recommendation + migration roadmap. **Single most common starting point.**
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — 14-28 day fixed-price engagement, price agreed before it starts. Architecture audit, platform recommendation, migration roadmap. **The single most common starting point.**
 
 ### Build engagements
 
-- **[Platform engineering](/services/platform-engineering/)** — Build a production cloud platform; pairs with any Ænix Platform Edition
+- **[Platform engineering](/services/platform-engineering/)** — Build a production cloud platform; pairs with any Ænix platform
 - **[Internal developer platform](/services/internal-developer-platform/)** — IDP build for product / SaaS organizations; pairs with Developer Self-Service
-- **[Build private cloud](/services/build-private-cloud/)** — Private cloud build for enterprises; pairs with Enterprise Edition
-- **[Public cloud builder](/services/public-cloud-builder/)** — Customer-facing cloud product build; pairs with Provider Edition or Provider Edition
-- **[Sovereign cloud builder](/services/sovereign-cloud-builder/)** — Government / public-sector sovereign cloud builds; pairs with Enterprise Edition
-- **[White-label cloud](/services/white-label-cloud/)** — Branded cloud platform for MSP / channel partners; pairs with Provider Edition
-- **[AI platform build](/services/ai-platform-build/)** — AI/GPU infrastructure build; pairs with AI & GPU
+- **[Build private cloud](/services/build-private-cloud/)** — Private cloud build for enterprises; pairs with Private Cloud Platform
+- **[Public cloud builder](/services/public-cloud-builder/)** — Customer-facing cloud product build; pairs with Public Cloud Platform
+- **[Sovereign cloud builder](/services/sovereign-cloud-builder/)** — Government / public-sector sovereign cloud builds; pairs with Private Cloud Platform
+- **[White-label cloud](/services/white-label-cloud/)** — Branded cloud platform for MSP / channel partners; pairs with Public Cloud Platform
+- **[AI platform build](/services/ai-platform-build/)** — AI/GPU infrastructure build; pairs with AI Platform
 
 ### Consulting engagements
 
@@ -54,11 +55,11 @@ language: "en"
 Render as 5-step horizontal flow. Each step: number, bold heading, 1-line description, icon.
 {{< /design-note >}}
 
-1. **Discovery call** (30 min, free) — confirm fit, scope, regulatory context, edition match
-2. **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — current-state audit + edition recommendation + roadmap
+1. **Discovery call** (30 min, free) — confirm fit, scope, regulatory context, platform match
+2. **Platform Readiness Assessment** (14-28 days, fixed price agreed up front) — current-state audit, platform recommendation, roadmap
 3. **Pilot engagement** (3-6 months, quoted per RFP) — defined slice, validated business case
-4. **Full Edition build** — weeks for Provider Edition; 9-18 months for Public Cloud / Enterprise / IDP / AI/ML
-5. **Managed operations** (ongoing retainer) — Aenix runs the platform you operate, or hybrid
+4. **Full platform build** — weeks to live for Public Cloud Platform at provider scale via the productized installer; 9-18 months for a multi-region operator build or a regulated multi-DC Private Cloud Platform
+5. **Managed operations** (ongoing retainer) — Ænix runs the platform you operate, or hybrid
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -74,7 +75,7 @@ Render as 5-step horizontal flow. Each step: number, bold heading, 1-line descri
 
 ## Pricing
 
-Provider Edition entry from $1,250 per month (Basic support tier, 10 nodes). Other editions: pricing on request via discovery call. Engagement add-ons (assessment, pilot, build, managed ops) priced separately per scope. [Pricing details →](/pricing/).
+Public Cloud Platform entry from $1,250 per month (Basic support tier, 10 nodes). Private Cloud Platform and AI Platform are programmes, not SKUs — quoted per RFP after scoping. Engagement add-ons (assessment, pilot, build, managed operations) are priced separately per scope. [Pricing details →](/pricing/).
 
 ---
 

@@ -1,12 +1,11 @@
 ---
 title: "Platform engineering services — build the internal platform your developers actually use"
-description: "Platform engineering is no longer a debate; it's an operational layer that mature engineering organizations now treat as core infrastructure. The question..."
+description: "Platform engineering from the team that builds Cozystack: golden paths, multi-tenancy and an operational model your team owns. Assess, build or managed."
 related_pages:
   - /services/internal-developer-platform/
   - /services/kubernetes-consulting/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/idp-edition/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -41,15 +40,16 @@ faq:
     a: "Engagements include structured knowledge transfer throughout, named in-house owners, and runbook authoring. By the end of the build phase your team operates the platform without Aenix. An optional managed-services arrangement extends support if needed."
   - q: "How does an engagement typically start?"
     a: "Most engagements begin with a free 30-minute discovery call to confirm fit and stage, followed by a 14-28 day Platform Readiness Assessment that produces a written target architecture and roadmap. The build-versus-managed decision is informed by the assessment's capacity workstream."
+hreflang_de: /de/dienstleistungen/platform-engineering/
 ---
 
 <!-- BLOCK 1: HERO -->
 
 **Platform engineering is no longer a debate; it's an operational layer that mature engineering organizations now treat as core infrastructure. The question is not whether to invest in it, but whether to build the function in-house slowly, hire a consultancy that hands off to junior implementers, or work with engineers who have already operated multi-tenant platforms in production.**
 
-Aenix is the platform engineering team behind [Cozystack](/products/cozystack/), a CNCF project running in production with service providers, banks, and AI operators. We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
+Ænix is the platform engineering team behind [Cozystack](/products/cozystack/), a CNCF project running in production with service providers, banks, and AI operators. We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
 
-> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** for product / SaaS engineering teams; **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building internal platforms. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — its developer self-service layer is the product form of this engagement. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -61,9 +61,6 @@ Production-grade platform team · Apache 2.0 foundation · Engineers, not archit
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -95,7 +92,7 @@ If three or more apply, structured platform engineering is the leverage. If your
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## What an Aenix platform engineering engagement produces
+## What an Ænix platform engineering engagement produces
 
 <div class="grid-2x2">
 
@@ -109,7 +106,7 @@ Tenant CRD model, per-tenant quotas, RBAC, observability scope, and audit trails
 Documented platform-team responsibilities, on-call patterns, incident response, capacity planning. The platform survives engineer turnover.
 
 **4. Enablement of your team**
-Pair programming, knowledge transfer, runbook authoring with named owners. Aenix engineers leave; your team operates the platform.
+Pair programming, knowledge transfer, runbook authoring with named owners. Ænix engineers leave; your team operates the platform.
 
 </div>
 
@@ -142,7 +139,6 @@ Engineering excellence without a product orientation produces an internally-cons
 
 </div>
 
-These failure modes are predictable and avoidable — the engagement structure deliberately prevents each.
 
 <!-- /BLOCK 4 -->
 
@@ -150,13 +146,13 @@ These failure modes are predictable and avoidable — the engagement structure d
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## How Aenix engages
+## How Ænix engages
 
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>Current state</b><div class="diagram__chips"><span>Multiple product teams</span><span>Weeks to environment</span><span>Maxed DevOps / SRE</span></div></div>
 <div class="diagram__conn">engaged by</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix platform engineering engagement</b><div class="diagram__chips"><span>Readiness Assessment</span><span>Platform build</span><span>Managed service</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix platform engineering engagement</b><div class="diagram__chips"><span>Readiness Assessment</span><span>Platform build</span><span>Managed service</span></div></div>
 <div class="diagram__conn">delivers</div>
 <div class="diagram__node"><b>Internal developer platform</b><div class="diagram__chips"><span>Golden paths</span><span>Multi-tenancy</span><span>Operational model</span></div></div>
 <div class="diagram__conn">runs on</div>
@@ -167,8 +163,8 @@ These failure modes are predictable and avoidable — the engagement structure d
 The engagement runs in three modes, scaled to where you are:
 
 - **Platform Readiness Assessment (14-28 days)** — written assessment of current state and recommended target architecture. Output: a plan you can execute internally or with us. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-- **Platform build engagement (3-12 months)** — Aenix engineers integrated with your platform team, building the foundation, golden paths, and operational model. Knowledge transfer is structured throughout; your team owns operation by the end.
-- **Managed platform service** — for organizations that need the platform but cannot build internal capacity. Aenix operates the platform under a managed-services arrangement, with documented exit path to in-house operation.
+- **Platform build engagement (3-12 months)** — Ænix engineers integrated with your platform team, building the foundation, golden paths, and operational model. Knowledge transfer is structured throughout; your team owns operation by the end.
+- **Managed platform service** — for organizations that need the platform but cannot build internal capacity. Ænix operates the platform under a managed-services arrangement, with documented exit path to in-house operation.
 
 Most engagements start with the assessment. The decision between options 2 and 3 is informed by the assessment's headcount-and-capacity workstream.
 
@@ -178,7 +174,7 @@ Most engagements start with the assessment. The decision between options 2 and 3
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 - **We operate platforms in production.** Cozystack is in production with service providers and regulated enterprises. The decisions in our engagements are calibrated against running systems, not against tooling reviews.
 - **Open-source platform foundation.** [Cozystack](/products/cozystack/) is an open-source CNCF Project. The platform we recommend is a platform you own. No vendor-roadmap lock-in.
@@ -215,9 +211,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 We've built or operated platforms for service providers running multi-tenant clouds, regulated enterprises building internal developer platforms, AI/GPU operators, telecom operators, and sovereign-cloud initiatives across the EU, DACH, and Central Asia. Workloads include VMs, containers, managed databases, S3, and GPU.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
-Named case studies available on the discovery call where customer permissions allow.
+The logos above are production Ænix Public Cloud Platform deployments. Named references for the NDA-covered engagements are shared on the discovery call.
 
 <!-- /BLOCK 8 -->
 
@@ -227,34 +221,14 @@ Named case studies available on the discovery call where customer permissions al
 
 ## Pricing and engagement scope
 
-<div class="pricing-cards-2">
-
-### Assessment (14-28 days)
-Fixed-price. Written deliverable, target architecture, Phase 2 roadmap.
-**On request**
-
-### Build / Managed engagement
-Time-and-materials or fixed-scope, depending on scope clarity. Phase 2 implementation typically 3-12 months elapsed; managed-services typically annual.
-**On request**
-
-</div>
-
-If Phase 2 follows assessment, the assessment cost is credited against the implementation engagement subject to scope.
-
-We accept RFI / RFP through standard procurement channels.
+The assessment is fixed-price, quoted before it starts. Build is time-and-materials or fixed-scope depending on scope clarity; managed operations are an annual retainer. If Phase 2 follows the assessment, the assessment cost is credited against it, subject to scope. We accept RFI / RFP through standard procurement channels.
 
 <!-- /BLOCK 9 -->
 
 ---
 
-<!-- BLOCK 10: FAQ -->
-
-
 **More questions?** See the **[platform engineering vs DevOps guide](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** or **[talk to us](#discovery)**.
 
-<!-- /BLOCK 10 -->
-
----
 
 <!-- BLOCK 11: BOTTOM CTA -->
 
@@ -280,7 +254,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build, operate, and accelerate platform engineering programs across the EU, DACH, and Central Asia.*
+*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build, operate, and accelerate platform engineering programs across the EU, DACH, and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

@@ -1,7 +1,7 @@
 ---
 title: "VMware-Alternativen — 8 Plattformen verglichen (2026)"
 description: "Post-Broadcom ist die Frage für die meisten Teams, die VMware nutzen, nicht mehr \"sollen wir gehen?\" sondern \"wohin gehen wir?\" Dies ist der praktische..."
-related_pages: ["/de/alternativen/vmware-alternative", "/de/alternativen/proxmox-alternative", "/de/produkte/aenix-platform/", "/de/produkte/cozystack", "/de/alternativen/backstage-alternative"]
+related_pages: ["/de/alternativen/vmware-alternative", "/de/alternativen/proxmox-alternative", "/de/produkte/", "/de/produkte/cozystack", "/de/alternativen/backstage-alternative"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -17,7 +17,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Infrastruktur-Teams, die VMware nach der Broadcom-Übernahme ersetzen — von ISP/Hosting über regulierte Unternehmen bis zu Public-Cloud-Betreibern"
+    value: "Infrastruktur-Teams, die VMware nach der Broadcom-Übernahme ersetzen — von Hosting-Anbietern über regulierte Unternehmen bis zu Public-Cloud-Betreibern"
   - label: "Empfehlung"
     value: "Cozystack + Ænix Platform für Multi-Tenant-, souveräne und KI-bereite Cloud; andere Optionen je nach Use Case (Proxmox für SMB, OpenStack für etablierte Betreiber)"
   - label: "Technologie"
@@ -42,7 +42,7 @@ faq:
 
 **Post-Broadcom lautet die Frage für die meisten Teams, die VMware betreiben, nicht mehr, ob sie gehen sollten, sondern wohin. Dies ist der praktische Vergleich der acht VMware-Alternativen, die 2026 tatsächlich Produktions-Traction haben — Open Source und kommerziell, gelistet nach Use Case, nicht nach Alphabet.**
 
-Wenn Sie früh in der Evaluierung sind und eine einzige Empfehlung fokussiert auf Multi-Tenant + souveräne + KI-bereite Cloud wollen — siehe unser **[VMware-Alternative-Landing](/de/alternativen/vmware-alternative/)**, das tief auf Cozystack als unsere Empfehlung eingeht. Diese Seite ist der breitere Markt-Scan.
+Wenn Sie früh in der Evaluierung sind und eine einzige Empfehlung fokussiert auf Multi-Tenant + souveräne + KI-bereite Cloud wollen — siehe unser **[fokussierte Seite zur VMware-Alternative](/de/alternativen/vmware-alternative/)**, das tief auf Cozystack als unsere Empfehlung eingeht. Diese Seite ist der breitere Markt-Scan.
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -54,7 +54,7 @@ Wenn Sie früh in der Evaluierung sind und eine einzige Empfehlung fokussiert au
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform](/de/produkte/aenix-platform/)** — zwei Editions: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig). Die richtige Edition hängt von Ihrem Buyer-Profil post-VMware ab. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
+> **Passt zu:** **[Ænix Platform](/de/produkte/)** — drei Plattformen: Public Cloud (wer Cloud verkauft), Private Cloud (regulierte Unternehmen, die selbst betreiben) und AI (GPU- und KI-Workloads). Die richtige Plattform hängt von Ihrem Käuferprofil post-VMware ab. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/alternativen/vmware-alternative/">Fokussierte Empfehlung ansehen →</a>
@@ -78,13 +78,13 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 
 ### 1. Cozystack (Open Source, Kubernetes-native)
 
-**Architektur:** KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal. CNCF-Projekt.
+**Architektur:** KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard. CNCF-Projekt.
 
 **Am besten für:** Service-Provider, regulierte Unternehmen, Sovereign-Cloud-Builder, KI-/GPU-Betreiber.
 
 **Warum wählen:** Open Source (Apache 2.0), kein Vendor-Lock-in. Multi-Tenancy strukturell. Eine einzige Plattform für VMs + Container + Datenbanken + S3 + GPU. Leichter operativer Footprint im Vergleich zu OpenStack.
 
-**Vorsicht bei:** Neuer als OpenStack; kleinere Community (durch kommerziellen Aenix-Support abgefedert).
+**Vorsicht bei:** Neuer als OpenStack; kleinere Community (durch kommerziellen Ænix-Support abgefedert).
 
 **[Mehr lesen](/de/alternativen/vmware-alternative/)** · **[cozystack.io](https://cozystack.io)**
 
@@ -92,7 +92,7 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 
 **Architektur:** Proprietärer KVM-basierter Hypervisor innerhalb der Nutanix-HCI-Appliance.
 
-**Am besten für:** Bestehende Nutanix-HCI-Kunden; VM-only-Enterprise-Estates; Teams, die das integrierte Appliance-Modell bevorzugen.
+**Am besten für:** Bestehende Nutanix-HCI-Kunden; VM-only-Enterprise-Bestände; Teams, die das integrierte Appliance-Modell bevorzugen.
 
 **Warum wählen:** Operativ einfach, integrierter Stack, ausgereifter kommerzieller Support.
 
@@ -174,7 +174,7 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 | **Foundation** | KubeVirt | AHV (KVM) | KubeVirt | KVM/LXC | KVM | KVM | Hyper-V |
 | **Multi-Tenancy** | Tenant CRD | Limitiert | Namespaces | Limitiert | Keystone | Limitiert | Limitiert |
 | **Managed DBs** | First-Class | Era-Addon | Verfügbar | Manuell | Optional | Nein | Azure-gebunden |
-| **GPU** | vGPU + MIG | vGPU | vGPU + MIG | Passthrough | vGPU | Limitiert | vGPU |
+| **GPU** | vGPU + HAMi-Sharing | vGPU | vGPU + MIG | Passthrough | vGPU | Limitiert | vGPU |
 | **Air-Gap** | Ja | Ja | Ja | Ja | Ja | Limitiert | Ja |
 | **Beste Skala** | Multi-Tenant | Mid-Large | Mid-Large | <50 Hosts | Telco-Large | ROBO/Edge | Medium-Large |
 
@@ -208,4 +208,4 @@ Wenn Ihre Situation nicht zum Cozystack-Profil passt, decken die acht obigen Opt
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack, einer Kubernetes Certified Distribution.*

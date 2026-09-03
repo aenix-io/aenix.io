@@ -3,13 +3,13 @@ title: "DevOps Consulting — Engineers, die Plattformen in Produktion betreiben
 description: "Die meisten \"DevOps-Consulting\"-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im..."
 related_pages:
   - /de/dienstleistungen/platform-engineering
-  - /products/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/devops-consulting/
 direct_answer: |
-  **DevOps Consulting von Aenix bedeutet, dass Senior-Engineers, die Plattformen tatsächlich in Produktion bauen und betreiben, Ihre Bereitstellungs-, Automatisierungs- und Betriebsprozesse verbessern — keine Slide-Deck-Berater. Aenix bietet drei Engagement-Modi: eine DevOps-Reifegrad-Bewertung (14-28 Tage), ein DevOps-Transformation-Engagement (3-9 Monate) und ein DevOps-as-a-Service-/Managed-Modell. Die Arbeit basiert auf Cozystack, einer Open-Source-Cloud-Plattform unter Apache 2.0, die VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-Netzwerk (eBPF) und LINSTOR-Storage vereint. Wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert, passt die the Developer Self-Service module of Ænix Platform; für technischen Scope auf bestehender Infrastruktur gibt es das eigenständige Consulting-Engagement.**
+  **DevOps Consulting von Aenix bedeutet, dass Senior-Engineers, die Plattformen tatsächlich in Produktion bauen und betreiben, Ihre Bereitstellungs-, Automatisierungs- und Betriebsprozesse verbessern — keine Slide-Deck-Berater. Aenix bietet drei Engagement-Modi: eine DevOps-Reifegrad-Bewertung (14-28 Tage), ein DevOps-Transformation-Engagement (3-9 Monate) und ein DevOps-as-a-Service-/Managed-Modell. Die Arbeit basiert auf Cozystack, einer Open-Source-Cloud-Plattform unter Apache 2.0, die VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-Netzwerk (eBPF) und LINSTOR-Storage vereint. Wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert, passt die Developer-Self-Service-Schicht der Ænix Private Cloud Platform; für technischen Scope auf bestehender Infrastruktur gibt es das eigenständige Consulting-Engagement.**
 quick_facts:
   - label: "Was es ist"
     value: "Consulting-Service, bei dem Senior-Engineers DevOps-Praktiken (Automatisierung, Bereitstellung, Betrieb) auf bestehender oder neuer Infrastruktur verbessern"
@@ -24,7 +24,7 @@ quick_facts:
   - label: "Technische Basis"
     value: "Cozystack: VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-Netzwerk (eBPF), LINSTOR/DRBD-Storage, Mandantenfähigkeit per Tenant-CRD"
   - label: "Abgrenzung"
-    value: "Skaliert die Arbeit zu einer Internal Developer Platform, passt die the Developer Self-Service module of Ænix Platform"
+    value: "Skaliert die Arbeit zu einer Internal Developer Platform, passt die Developer-Self-Service-Schicht der Ænix Private Cloud Platform"
 faq:
   - q: "Was unterscheidet das DevOps Consulting von Aenix von klassischen Beratungsfirmen?"
     a: "Aenix liefert mit Senior-Engineers, die Plattformen selbst in Produktion bauen und betreiben — nicht mit Management-Beratern, die Slide-Decks erstellen. Die Empfehlungen stammen aus echtem Betriebswissen, etwa aus der Entwicklung von Cozystack."
@@ -32,8 +32,8 @@ faq:
     a: "Drei Modi: eine DevOps-Reifegrad-Bewertung (14-28 Tage), ein DevOps-Transformation-Engagement (3-9 Monate) und ein DevOps-as-a-Service- bzw. Managed-Engagement. Die Wahl hängt von Umfang und gewünschter Eigenständigkeit Ihres Teams ab."
   - q: "Brauche ich Cozystack, um das Consulting zu nutzen?"
     a: "Nein. Das eigenständige Consulting-Engagement arbeitet auf Ihrer bestehenden Infrastruktur. Cozystack ist die Open-Source-Plattform unter Apache 2.0, auf der Aenix aufbaut; sie kommt zum Einsatz, wenn die Arbeit zu einer Internal Developer Platform skaliert."
-  - q: "Wann sollte ich stattdessen die the Developer Self-Service module of Ænix Platform wählen?"
-    a: "Wenn die DevOps-Arbeit über einzelne Verbesserungen hinaus zu einer vollständigen, produktisierten Internal Developer Platform für Self-Service-Bereitstellung skaliert, passt die the Developer Self-Service module of Ænix Platform besser als ein reines Consulting-Engagement."
+  - q: "Wann sollte ich stattdessen die Developer-Self-Service-Schicht der Ænix Private Cloud Platform wählen?"
+    a: "Wenn die DevOps-Arbeit über einzelne Verbesserungen hinaus zu einer vollständigen, produktisierten Internal Developer Platform für Self-Service-Bereitstellung skaliert, passt die Developer-Self-Service-Schicht der Ænix Private Cloud Platform besser als ein reines Consulting-Engagement."
   - q: "Auf welcher Technologie baut Aenix auf?"
     a: "Auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0. Es vereint VMs und Container über eine Kubernetes-API (KubeVirt), nutzt Cilium (eBPF) für Netzwerk, LINSTOR/DRBD für Storage und Tenant-CRDs für Mandantenfähigkeit."
   - q: "Was kostet die produktisierte Ænix Platform?"
@@ -42,11 +42,11 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Die meisten "DevOps-Consulting"-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im Lesen von Gartner-Berichten besteht. Das Deliverable ist meist eine Transformations-Roadmap, die im Regal verstaubt. Wir machen das Gegenteil: Senior-Engineers, die Plattformen in Produktion bauen und betreiben, an der Seite Ihres Teams, mit schriftlichen Runbooks, die Ihr Team danach besitzt.**
+**Die meisten „DevOps-Consulting“-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im Lesen von Gartner-Berichten besteht. Das Ergebnis ist meist eine Transformations-Roadmap, die im Regal verstaubt. Wir machen das Gegenteil: Senior-Engineers, die Plattformen in Produktion bauen und betreiben, an der Seite Ihres Teams, mit schriftlichen Runbooks, die Ihr Team danach besitzt.**
 
-> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)**, wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert. Für technischen Scope auf bestehender Infrastruktur: eigenständiges Consulting-Engagement.
+> **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert. Für technischen Scope auf bestehender Infrastruktur: eigenständiges Consulting-Engagement.
 
-Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Unsere DevOps-Consulting-Engagements erweitern unsere Engineers in Ihre — für Assessment, Transformation oder nachhaltigen Betrieb.
+Ænix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Unsere DevOps-Consulting-Engagements erweitern unsere Engineers in Ihre — für Assessment, Transformation oder nachhaltigen Betrieb.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -58,9 +58,6 @@ Senior-Engineers, keine Analysten · Produktionserfahrung · Open-Source-Foundat
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -90,7 +87,7 @@ Wenn drei oder mehr zutreffen, verzinst sich strukturiertes Consulting. Ist Ihr 
 
 <!-- BLOCK 3: WHAT WE DO -->
 
-## Was ein Aenix-DevOps-Engagement produziert
+## Was ein Ænix-DevOps-Engagement produziert
 
 <div class="grid-2x2">
 
@@ -112,7 +109,7 @@ Das Ergebnis wird in operativen Metriken gemessen — DORA-Metriken (Deployment-
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Aenix-DevOps-Engagement</b><div class="diagram__chips"><span>Senior-Engineers, keine Analysten</span><span>Produktionserfahrung</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-DevOps-Engagement</b><div class="diagram__chips"><span>Senior-Engineers, keine Analysten</span><span>Produktionserfahrung</span></div></div>
 <div class="diagram__conn">produziert</div>
 <div class="diagram__node"><b>DevOps-Praktiken auf Plattform-Ebene</b><div class="diagram__chips"><span>CI/CD und GitOps</span><span>Infrastructure-as-Code</span><span>Observability</span><span>Incident-Response und SRE-Praktiken</span></div></div>
 <div class="diagram__conn">gemessen in</div>
@@ -133,7 +130,7 @@ Das Ergebnis wird in operativen Metriken gemessen — DORA-Metriken (Deployment-
 **Slide-Deck-Transformations-Roadmap**
 Das Big-4-Engagement liefert einen 200-seitigen Transformationsplan. Der Plan ist technisch korrekt und operativ träge. Fehler: nichts wird gebaut; die Zeit des Teams ging in Workshops.
 
-**Tool-getriebenes "DevOps" ohne Plattform-Denken**
+**Tool-getriebenes „DevOps“ ohne Plattform-Denken**
 Consulting, das eigentlich Tool-Implementierung ist — Jenkins / Argo / Datadog installieren. Tools sind deployt, aber die Architektur bleibt gleich. Fehler: Tools ohne kohärente Plattform erzeugen mehr operative Komplexität, nicht weniger.
 
 **Junior-Berater in einem Senior-Engagement**
@@ -152,13 +149,13 @@ Diese Fehlermodi sind vorhersehbar. Die Engagement-Struktur verhindert jeden bew
 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
-## Wie Aenix arbeitet
+## Wie Ænix arbeitet
 
 Drei Modi:
 
-- **DevOps-Reifegrad-Bewertung (14-28 Tage)** — schriftliche Bewertung der aktuellen DevOps-Praktiken, des Zielzustands und ein Remediation-Plan. Eigenständiges Deliverable. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
-- **DevOps-Transformations-Engagement (3-9 Monate)** — Aenix-Engineers integriert mit Ihrem Team, Aufbau von CI/CD-Foundation, IaC-Disziplin, Observability-Stack und operativen Praktiken. Der Knowledge-Transfer ist strukturiert.
-- **DevOps-as-a-Service / Managed-Engagement** — für Organisationen, die eine DevOps-Funktion brauchen, aber keine interne Kapazität aufbauen können. Aenix betreibt mit dokumentiertem Exit-Pfad.
+- **DevOps-Reifegrad-Bewertung (14-28 Tage)** — schriftliche Bewertung der aktuellen DevOps-Praktiken, des Zielzustands und ein Remediation-Plan. Eigenständiges Ergebnis. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+- **DevOps-Transformations-Engagement (3-9 Monate)** — Ænix-Engineers integriert mit Ihrem Team, Aufbau von CI/CD-Foundation, IaC-Disziplin, Observability-Stack und operativen Praktiken. Der Knowledge-Transfer ist strukturiert.
+- **DevOps-as-a-Service / Managed-Engagement** — für Organisationen, die eine DevOps-Funktion brauchen, aber keine interne Kapazität aufbauen können. Ænix betreibt mit dokumentiertem Exit-Pfad.
 
 Die meisten Engagements beginnen mit dem Assessment.
 
@@ -168,7 +165,7 @@ Die meisten Engagements beginnen mit dem Assessment.
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Wir betreiben Plattformen in Produktion.** Cozystack ist an Kundenstandorten mit echten Workloads deployt. Die Entscheidungen in unseren Engagements sind gegen laufende Systeme kalibriert, nicht gegen Tooling-Reviews.
 - **Senior-Engineers, kein Junior-Bait-and-Switch.** Die Engineers in Ihrem Engagement sind dieselben, die Cozystack gebaut haben und betreiben.
@@ -203,15 +200,14 @@ Die meisten Engagements beginnen mit dem Assessment.
 Wir haben DevOps-Consulting- und Transformations-Engagements für Service Provider, regulierte Unternehmen, KI/GPU-Operatoren und Telekom-Betreiber in der EU, DACH und Zentralasien durchgeführt.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 <!-- /BLOCK 8 -->
 
 ---
 
 <!-- BLOCK 9: PRICING -->
 
-## Pricing
+## Preise
 
 <div class="pricing-cards-2">
 
@@ -220,7 +216,7 @@ Festpreis.
 **Auf Anfrage**
 
 ### Transformation / Managed
-Time-and-Materials oder Fixed-Scope. Phase 2 typischerweise 3-9 Monate.
+nach Aufwand oder zum Festpreis. Phase 2 typischerweise 3-9 Monate.
 **Auf Anfrage**
 
 </div>
@@ -261,6 +257,6 @@ Oder lesen Sie mehr:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->

@@ -1,6 +1,6 @@
 ---
 title: "Transport and logistics cloud architecture — NIS2, AI, edge in 2026"
-description: "Companion to transport / logistics industry page."
+description: "A three-tier architecture for transport and logistics, the NIS2 controls that apply to the sector, and where AI workloads fit."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,8 +42,6 @@ quiz:
       explanation: "Logistics chains often have 5+ levels of sub-contracting (carrier → forwarder → broker → handler → terminal operator). NIS2 (and DORA) expect supplier transparency to second hop — for logistics, even that is unusually hard, and beyond second hop is often impossible without dedicated traceability tooling."
 ---
 
-Companion to **[transport / logistics industry page](/industries/transport-logistics)**.
-
 ## Three pressures
 
 1. **NIS2 essential entity** — transport is Annex I; Article 21/23 apply to ICT
@@ -76,11 +74,6 @@ Standard Article 21 + 23 mapping; transport-specific:
 
 Most workloads are sustained 24/7 inference where dedicated GPU economics fit.
 
-## How Aenix engages
+## How Ænix engages
 
 Standard **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with transport workstream emphasis.
-
----
-
-*Aenix is the team behind Cozystack.*
-

@@ -1,6 +1,6 @@
 ---
 title: "Platform engineering vs DevOps vs SRE — a 2026 terminology guide"
-description: "This is the long-form companion to our platform engineering services page. It walks through where the three terms overlap, where they don't, what each..."
+description: "Where platform engineering, DevOps and SRE overlap and where they do not, what each actually builds, and the metrics that separate them."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
@@ -44,11 +44,9 @@ quiz:
       explanation: "Both Argo CD and Flux are production-grade. The article notes Cozystack uses Flux as the default — Flux is closer to the upstream Kubernetes way; Argo CD has stronger UI ergonomics."
 ---
 
-**This is the long-form companion to our [platform engineering services page](/services/platform-engineering/). It walks through where the three terms overlap, where they don't, what each function actually owns, what tools and metrics matter for each, and how to organize teams around them. Written for engineering leaders, platform owners, and technical decision-makers who keep getting these conversations wrong because the terminology is muddy.**
-
 The terms platform engineering, DevOps, and SRE have been used interchangeably, in opposition, and as overlapping practices for nearly a decade. By 2026 the industry has roughly converged — but only roughly. Different companies still use the same words for different jobs, and the resulting org-design conversations stall because nobody quite agrees on what they're discussing.
 
-This is the working version we use at Aenix when we engage with a customer's engineering organization.
+This is the working version we use at Ænix when we engage with a customer's engineering organization.
 
 ## The three terms in one paragraph each
 
@@ -222,22 +220,9 @@ It's the wrong call when:
 - The engineering organization isn't ready (no platform-team headcount, no internal customer, no problem clearly named).
 - The decision is already made and the engagement is meant to validate it.
 
-## How to start
-
-If your organization fits the profile and the pressure is real, the structured next step is an assessment. Aenix runs this as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — written, fixed-price, with named workstream owners. The output is a plan you execute internally or with us.
-
-For the engagement details and pricing, see the **[platform engineering services page](/services/platform-engineering/)**.
-
----
-
 ## Want to dig deeper?
 
 - **[Platform engineering services page](/services/platform-engineering/)** — engagement details
 - **[Internal developer platform](/services/internal-developer-platform/)** — IDP-specific engagement
 - **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — assessment methodology
 - **[Cozystack](/products/cozystack/)** — the platform we typically build on
-
----
-
-*Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build platform engineering programs across the EU, DACH, and Central Asia.*
-

@@ -1,6 +1,6 @@
 ---
 title: "Build an AI platform for startups — when dedicated infrastructure pays back"
-description: "Companion to AI platform build services page."
+description: "When dedicated GPU pays back against hyperscaler on-demand, what an AI platform actually contains, and the architectural decisions startups hit first."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -38,11 +38,9 @@ quiz:
       options:
         - { text: "Through bare-metal scheduling only, with no VM layer", correct: false }
         - { text: "Only one mode is supported at a time per cluster", correct: false }
-        - { text: "KubeVirt+vGPU for VMs and MIG / passthrough for containers", correct: true }
-      explanation: "Cozystack supports both: KubeVirt + NVIDIA vGPU for VMs (data-science teams that need notebook-heavy environments), and MIG / time-slicing / passthrough for containers (production inference). Same platform; different consumption patterns."
+        - { text: "KubeVirt + vGPU/passthrough for VMs, GPU Operator + HAMi for containers", correct: true }
+      explanation: "Cozystack supports both: KubeVirt with VFIO passthrough or NVIDIA vGPU for VMs (data-science teams that need notebook-heavy environments), and the NVIDIA GPU Operator plus HAMi fractional sharing for containers (production inference). Same platform; different consumption patterns."
 ---
-
-Companion to **[AI platform build services page](/services/ai-platform-build)**.
 
 ## When dedicated GPU pays back
 
@@ -68,7 +66,7 @@ For inference serving 24/7 at sustained traffic, owning the GPUs is usually 30-6
 ## Common architectural decisions
 
 ### Decision 1: VM-based vs container-based GPU
-KubeVirt + NVIDIA vGPU for VMs (data-science teams that need full VMs); MIG / passthrough for containers (production inference). Cozystack supports both.
+KubeVirt with VFIO passthrough or NVIDIA vGPU for VMs (data-science teams that need full VMs); the NVIDIA GPU Operator plus HAMi fractional sharing for containers (production inference). Cozystack supports both.
 
 ### Decision 2: Self-hosted vs cloud GPU
 Self-hosted for sustained; cloud for sporadic. Hybrid for elastic.
@@ -78,12 +76,3 @@ Open-weight (Llama, Mistral, Qwen, DeepSeek) for sovereignty + cost; proprietary
 
 ### Decision 4: Inference-only vs fine-tuning vs training
 Most AI startups: inference + occasional fine-tuning. Training at scale is rare in startup context.
-
-## How to start
-
-**[AI platform build services](/services/ai-platform-build)**.
-
----
-
-*Aenix is the team behind Cozystack.*
-

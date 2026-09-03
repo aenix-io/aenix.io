@@ -10,7 +10,7 @@ primary_keyword: "cloud repatriation platform for CTOs"
 related_pages:
   - /solutions/cloud-repatriation/
   - /solutions/cloud-cost-optimization/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /resources/cloud-repatriation-tco-worksheet/
   - /products/cozystack/
 hide_closing_cta: true
@@ -20,7 +20,7 @@ hide_closing_cta: true
 
 **Your cloud bill scales with growth, lock-in tightens, and "sovereign" is now a customer requirement. Take back the economics and the control without slowing the roadmap: an open, Kubernetes-native platform on your own or leased hardware — delivered turnkey, or built with you by the team behind it.**
 
-> **Pairs with:** **[Cloud repatriation](/solutions/cloud-repatriation/)** and **[cost optimization](/solutions/cloud-cost-optimization/)** engagements, **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)**, all on open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[Cloud repatriation](/solutions/cloud-repatriation/)** and **[cost optimization](/solutions/cloud-cost-optimization/)** engagements, **[Ænix Private Cloud Platform](/products/private-cloud-platform/)**, all on open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -50,11 +50,11 @@ Take back cost and data-location control for the workloads that don't belong on 
 
 ---
 
-## Two ways Aenix helps you
+## Two ways Ænix helps you
 
-**1. Run a turnkey platform.** [Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/) gives you a production cloud-in-a-box on Cozystack — multi-tenant, with managed databases, storage and observability — that your team operates with our SLA behind it.
+**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) gives you a production cloud-in-a-box on Cozystack — multi-tenant, with managed databases, storage and observability — that your team operates with our SLA behind it.
 
-**2. Build / migrate with our team.** Cozystack is the framework; **Aenix is your outsourced engineering team** for a [cloud-repatriation](/solutions/cloud-repatriation/) or greenfield build — architecture, migration, and the [cost-optimization](/solutions/cloud-cost-optimization/) model, executed by the people who maintain the platform.
+**2. Build / migrate with our team.** Cozystack is the framework; **Ænix is your outsourced engineering team** for a [cloud-repatriation](/solutions/cloud-repatriation/) or greenfield build — architecture, migration, and the [cost-optimization](/solutions/cloud-cost-optimization/) model, executed by the people who maintain the platform.
 
 ---
 
@@ -63,17 +63,17 @@ Take back cost and data-location control for the workloads that don't belong on 
 - **What it is:** an open, Kubernetes-native platform you run on owned or leased hardware (no per-core tax).
 - **Who it's for:** CTOs and VPs of Engineering at scale-ups, SaaS and product companies.
 - **License:** Apache 2.0.
-- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
 - **Common pitfall:** repatriating compute but leaving data, backups and observability on the hyperscaler, so the savings and the sovereignty both leak.
 
 [Source: [CNCF Landscape](https://landscape.cncf.io); see also the [TCO worksheet](/resources/cloud-repatriation-tco-worksheet/)]
 
 ---
 
-## Why CTOs pick Aenix
+## Why CTOs pick Ænix
 
 - **Economics you can defend.** We model the TCO honestly, including the workloads that should stay in the cloud.
-- **Authors, not resellers.** Aenix maintains Cozystack; you get senior engineers, not a sales channel.
+- **Authors, not resellers.** Ænix maintains Cozystack; you get senior engineers, not a sales channel.
 - **Velocity preserved.** Developers still get self-service Kubernetes and databases — the platform doesn't slow the roadmap.
 
 ---
@@ -108,7 +108,7 @@ Free, no prep. We pressure-test the economics and tell you whether turnkey or a 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:

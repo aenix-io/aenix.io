@@ -1,11 +1,11 @@
 ---
 title: "Internal developer platform — built for adoption, not just architecture"
-description: "Most internal developer platforms fail not because the architecture is wrong, but because product teams don't use them. The platform that ranks highest on..."
+description: "IDP engagements measured in adoption, not architecture: 5-10 golden paths on a multi-tenant Kubernetes foundation, with handover. Backstage only where it fits."
 related_pages:
   - /services/platform-engineering/
   - /services/kubernetes-consulting/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/idp-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -40,6 +40,7 @@ faq:
     a: "Backstage is a tool, not a destination. Aenix uses it where it serves the customer's operational maturity and recommends alternatives (Port, Cortex, custom) or no portal at all when they fit better. The decision is calibrated against the team's needs, not vendor incentives."
   - q: "Is the platform open source, and do we own it?"
     a: "Yes. The foundation is Cozystack, an Apache 2.0 CNCF project with no per-core licensing. The IDP Aenix builds is one the customer owns and operates, with no vendor-roadmap lock-in. Aenix sells the productized Ænix Platform and services on top."
+hreflang_de: /de/dienstleistungen/internal-developer-platform/
 ---
 
 <!-- BLOCK 1: HERO -->
@@ -47,9 +48,9 @@ faq:
 
 **Most internal developer platforms fail not because the architecture is wrong, but because product teams don't use them. The platform that ranks highest on engineering elegance often ranks lowest on internal NPS. The platform that's actually adopted has fewer features, simpler abstractions, and a team that treats product engineers as customers.**
 
-Aenix builds internal developer platforms (IDPs) that get adopted. Not Backstage as wallpaper over chaos; an opinionated platform with golden paths, multi-tenant foundations, and operational handoff your platform team can sustain.
+Ænix builds internal developer platforms (IDPs) that get adopted. Not Backstage as wallpaper over chaos; an opinionated platform with golden paths, multi-tenant foundations, and operational handoff your platform team can sustain.
 
-> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[Developer self-service](/products/private-cloud-platform/)(/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -84,7 +85,7 @@ If your situation matches three of these, structured IDP work returns adoption +
 
 <!-- BLOCK 3: WHAT YOU GET -->
 
-## What an Aenix IDP engagement produces
+## What an Ænix IDP engagement produces
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -141,7 +142,6 @@ Without explicit headcount and protected golden-path work time, the platform tea
 
 </div>
 
-These failure modes are predictable. Engagement structure deliberately prevents each.
 
 </div>
 </div>
@@ -152,12 +152,12 @@ These failure modes are predictable. Engagement structure deliberately prevents 
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## How Aenix engages
+## How Ænix engages
 
 The IDP engagement runs in three phases:
 
 - **Phase 1: Platform Readiness Assessment (14-28 days)** — current-state platform maturity, target IDP architecture, golden-path priorities, RACI for platform team. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
-- **Phase 2: Build engagement (3-9 months)** — Aenix engineers integrated with your platform team, building the foundation, golden paths, and runbooks. Knowledge transfer is a first-class deliverable, not an afterthought.
+- **Phase 2: Build engagement (3-9 months)** — Ænix engineers integrated with your platform team, building the foundation, golden paths, and runbooks. Knowledge transfer is a first-class deliverable, not an afterthought.
 - **Phase 3 (optional): Managed operation** — for organizations that need the IDP but cannot build internal platform-team capacity.
 
 Engagements typically start with Phase 1; Phase 2 sequencing emerges from assessment.
@@ -168,12 +168,10 @@ Engagements typically start with Phase 1; Phase 2 sequencing emerges from assess
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
-- **Multi-tenant platforms are what we run.** Cozystack is in production with service providers and regulated enterprises operating multi-tenant clouds. The platform patterns we recommend are calibrated against running systems.
-- **Backstage is a tool, not a destination.** We use Backstage where it serves the customer; we don't sell it. The decision is calibrated against your team's operational maturity, not against vendor incentives.
-- **Open-source foundation.** [Cozystack](/products/cozystack/) is an open-source CNCF Project. The IDP we build is one you own — no vendor-roadmap lock-in.
-- **EU + Central Asia teams.** Time-zone-friendly for European customers; aligned with regulatory frameworks.
+- **Backstage is a tool, not a destination.** We don't sell it, so we can tell you when a catalog is the wrong first move and a documented golden path is the right one.
+- **Multi-tenancy is the part that is hard, and it is what we run.** [Cozystack](/products/cozystack/) is in production with service providers and regulated enterprises operating multi-tenant clouds; the tenancy model we propose is one we operate.
 
 <!-- /BLOCK 6 -->
 
@@ -205,8 +203,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 We've built internal developer platforms for service providers running multi-tenant clouds, regulated enterprises with strong sovereignty requirements, AI/GPU operators with multi-team data-science access, and telecom operators consolidating multiple legacy environments.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+The logos above are production Ænix Public Cloud Platform deployments. Named references for the NDA-covered engagements are shared on the discovery call.
 <!-- /BLOCK 8 -->
 
 ---
@@ -215,19 +212,7 @@ We've built internal developer platforms for service providers running multi-ten
 
 ## Pricing
 
-<div class="pricing-cards-2">
-
-### Assessment (14-28 days)
-Fixed-price. Written deliverable, target IDP architecture, Phase 2 roadmap.
-**On request**
-
-### Build / Managed engagement
-Time-and-materials or fixed-scope. Phase 2 build typically 3-9 months elapsed.
-**On request**
-
-</div>
-
-If Phase 2 follows assessment, assessment cost credited against implementation subject to scope.
+The assessment is fixed-price, quoted before it starts, and delivers a written target IDP architecture and a Phase 2 roadmap. The build is time-and-materials or fixed-scope. If Phase 2 follows, the assessment cost is credited against it, subject to scope.
 
 <!-- /BLOCK 9 -->
 
@@ -258,12 +243,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
 
-<!--
-SEO: title "Internal Developer Platform Services — Built for Adoption | Aenix"
-Description (≤155): "Internal developer platform engagement: opinionated golden paths, multi-tenant foundation, knowledge transfer. Open-source foundation, no Backstage lock-in."
-Word count: ~1080.
--->

@@ -16,10 +16,10 @@ secondary_keywords:
   - "internes Cloud-Portal Bank"
   - "On-Premise-Cloud Finanzdienstleistungen"
 related_pages:
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/branchen/finanzdienstleistungen/
   - /de/loesungen/dora-compliance/
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
 faq:
   - q: "Musste die Bank ein neues Identity-System einführen?"
     a: "Nein. Das bestehende Keycloak der Bank blieb die maßgebliche Quelle, die Plattform integriert sich damit und bildet Gruppen und Rollen der Bank auf Plattformrollen ab. Niemand bekam einen zweiten Satz Zugangsdaten, und die Joiner-Mover-Leaver-Prozesse funktionieren weiter so, wie die Revision sie bereits kennt."
@@ -99,6 +99,6 @@ Eine Self-Service-Cloud-Plattform, als Produkt geliefert und in die bestehenden 
 
 ---
 
-*Diese Case Study erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
+*Diese Case Study erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in zwei Editions — Provider und Enterprise — mit den Modulen AI & GPU und Developer Self-Service.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform in drei Plattformen — Provider und Enterprise — mit den Modulen AI Platform und Developer Self-Service.*

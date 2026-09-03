@@ -1,60 +1,60 @@
 ---
 title: "Private-Cloud-Anbieter und -Plattformen — Vergleich 2026 für die DACH-Region"
-description: "Begleitung zur Private-Cloud-Plattform-Page. Überblick über Private-Cloud-Anbieter und -Plattformen in 2026 — was verfügbar ist, wer was bietet, welche..."
+description: "Begleitung zur Private-Cloud-Plattform-Page. Überblick über Private-Cloud-Anbieter und -Plattformen im Jahr 2026 — was verfügbar ist, wer was bietet, welche..."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Cozystack", "KubeVirt"]
 language: "de"
-companion_landing: "/de/produkte/private-cloud/"
+companion_landing: "/de/loesungen/private-cloud/"
 quiz:
   title: "Wissens-Check: Private-Cloud-Anbieter im Vergleich"
   questions:
-    - q: "Welche zwei Bedeutungen unterscheidet der Artikel bei \"Private Cloud\"?"
+    - q: "Welche zwei Bedeutungen von „Private Cloud“ unterscheidet der Artikel?"
       options:
-        - { text: "Frei vs kostenpflichtig", correct: false }
-        - { text: "Plattform (Software, die Sie deployieren) vs Anbieter (Vendor, der dedizierte Infrastruktur bereitstellt)", correct: true }
-        - { text: "On-Prem vs Colocation", correct: false }
-      explanation: "Private-Cloud-Plattform = Software (VMware VCF, Cozystack, OpenStack, OpenShift Virtualization, Proxmox VE). Private-Cloud-Anbieter = Vendor mit dedizierter Single-Tenant-Infrastruktur (IBM Cloud Private, Oracle, Hyperscaler souveräne Regionen, regionale Provider)."
-    - q: "Welcher regionale Anbieter wird für die DACH-Region speziell genannt?"
+        - { text: "Kostenlos gegenüber kostenpflichtig", correct: false }
+        - { text: "Plattform als Software gegenüber Anbieter als Infrastrukturdienst", correct: true }
+        - { text: "Eigenes Rechenzentrum gegenüber Colocation", correct: false }
+      explanation: "Private-Cloud-Plattformen sind Software, die Sie selbst betreiben: VMware VCF, Cozystack, OpenStack, OpenShift Virtualization, Proxmox VE. Private-Cloud-Anbieter sind Dienstleister mit dedizierter Single-Tenant-Infrastruktur: IBM Cloud Private, Oracle, die souveränen Regionen der Hyperscaler und regionale Anbieter."
+    - q: "Welcher regionale Anbieter wird für die DACH-Region ausdrücklich genannt?"
       options:
-        - { text: "Hetzner (Deutschland) — Bare Metal + Cloud, beliebt in DACH", correct: true }
+        - { text: "Hetzner", correct: true }
         - { text: "AWS Frankfurt", correct: false }
         - { text: "DigitalOcean", correct: false }
-      explanation: "Genannte regionale souveräne Anbieter: Hetzner (Deutschland), OVHcloud (Frankreich, starke EU-Positionierung), QazCloud (Kasachstan). AWS Sovereign Cloud / Azure Sovereign / GCP sind die Hyperscaler-souveränen Angebote."
-    - q: "Was ist im Vergleich die \"beste Wahl\" für Service Provider mit Multi-Mandanten- und AI/GPU-Bedarf?"
+      explanation: "Genannte regionale souveräne Anbieter: Hetzner in Deutschland, OVHcloud in Frankreich mit starker EU-Positionierung und QazCloud in Kasachstan. AWS Sovereign Cloud, Azure Sovereign und GCP sind demgegenüber die souveränen Angebote der Hyperscaler."
+    - q: "Welche Plattform empfiehlt der Vergleich für Service-Provider mit Mandanten- und GPU-Bedarf?"
       options:
         - { text: "VMware VCF", correct: false }
-        - { text: "Cozystack (Apache 2.0, KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal)", correct: true }
+        - { text: "Cozystack", correct: true }
         - { text: "Proxmox VE", correct: false }
-      explanation: "Cozystack ist die beste Wahl für Service Provider, regulierte Mandantenfähigkeit und AI/GPU-Betreiber. Stärken: Single-Stack für VMs + Container + Datenbanken + S3 + GPU. Multi-Mandant strukturell, nicht nachträglich aufgesetzt."
-    - q: "Für welche Zielgruppe wird Proxmox VE empfohlen?"
+      explanation: "Cozystack ist die beste Wahl für Service-Provider, regulierte Mandantenfähigkeit und KI- beziehungsweise GPU-Betreiber: Apache 2.0, KubeVirt, Cilium, Kube-OVN, LINSTOR auf DRBD, Tenant CRD und das Cozystack Dashboard. Stärke ist der eine Stack für VMs, Container, Datenbanken, S3 und GPU; die Mandantenfähigkeit ist strukturell und nicht nachträglich aufgesetzt."
+    - q: "Für welche Zielgruppe empfiehlt der Artikel Proxmox VE?"
       options:
-        - { text: "Hyperscaler-Konkurrenten", correct: false }
-        - { text: "SMB-Virtualisierung, Labs, Single-Tenant-Deployments unter ~50 Hosts", correct: true }
-        - { text: "Service Provider mit 1000+ Kunden", correct: false }
-      explanation: "Proxmox VE: AGPLv3 + kommerzielle Subscription, KVM + LXC + ZFS + Ceph (Community). Beste Wahl für SMB-Virtualisierung, Labs, Single-Tenant. Reif, einfach zu installieren, starke Community."
-    - q: "Welche Lizenzform hat VMware Cloud Foundation nach der Broadcom-Übernahme?"
+        - { text: "Für direkte Wettbewerber der Hyperscaler", correct: false }
+        - { text: "Für Mittelstand, Labs und Single-Tenant-Umgebungen unter etwa 50 Hosts", correct: true }
+        - { text: "Für Service-Provider mit mehr als 1.000 Kunden", correct: false }
+      explanation: "Proxmox VE steht unter AGPLv3 mit kommerzieller Subscription und kombiniert KVM, LXC, ZFS und Ceph aus der Community. Beste Wahl für Virtualisierung im Mittelstand, für Labs und für Single-Tenant-Umgebungen: ausgereift, einfach zu installieren, mit starker Community."
+    - q: "Welche Lizenzform hat VMware Cloud Foundation nach der Übernahme durch Broadcom?"
       options:
-        - { text: "Apache 2.0 Open Source", correct: false }
-        - { text: "Subscription-only (mit beobachteten 2–5× Preiserhöhungen)", correct: true }
-        - { text: "Ewige Lizenzen verfügbar", correct: false }
-      explanation: "VMware Cloud Foundation ist nach Broadcom Subscription-only. Beobachtete Preiserhöhungen 2–5× bei Verlängerung. Limits: Subscription-Druck, Vendor-Lock-in, Souveränitätsbedenken (US-Anbieter)."
+        - { text: "Open Source unter Apache 2.0", correct: false }
+        - { text: "Ausschließlich Subscription", correct: true }
+        - { text: "Weiterhin auch als Dauerlizenz erhältlich", correct: false }
+      explanation: "VMware Cloud Foundation gibt es nach Broadcom nur noch im Abonnement. Bei Verlängerungen wurden Preissteigerungen um den Faktor 2 bis 5 beobachtet. Als Grenzen nennt der Artikel den Subscription-Druck, den Vendor-Lock-in und Souveränitätsbedenken gegenüber einem US-Anbieter."
 ---
 
-**Begleitung zur [Private-Cloud-Plattform-Page](/de/produkte/private-cloud). Überblick über Private-Cloud-Anbieter und -Plattformen in 2026 — was verfügbar ist, wer was bietet, welche architektonischen Trade-offs.**
+**Begleitung zur [Private-Cloud-Plattform-Page](/de/produkte/private-cloud). Überblick über Private-Cloud-Anbieter und -Plattformen im Jahr 2026 — was verfügbar ist, wer was bietet, welche architektonischen Trade-offs.**
 
-Die Private-Cloud-Landschaft hat sich in den letzten 3 Jahren erheblich verändert. Broadcom-induzierte VMware-Migrationen, Souveränitätsmandate, KI-Workload-Ökonomie und FinOps-Druck haben alle die Bedeutung von "Private Cloud" und ihre Anbieter neu geformt.
+Die Private-Cloud-Landschaft hat sich in den letzten 3 Jahren erheblich verändert. Broadcom-induzierte VMware-Migrationen, Souveränitätsmandate, KI-Workload-Ökonomie und FinOps-Druck haben alle die Bedeutung von „Private Cloud“ und ihre Anbieter neu geformt.
 
-## Zwei verschiedene Begriffe für "Private Cloud"
+## Zwei verschiedene Begriffe für „Private Cloud“
 
 - **Private-Cloud-Plattform** — Software, die Sie auf Ihrer eigenen Infrastruktur deployieren. Beispiele: VMware VCF, Cozystack, OpenStack, OpenShift Virtualization, Proxmox VE.
-- **Private-Cloud-Anbieter** — ein Anbieter, der dedizierte Infrastruktur (single-tenant) bereitstellt, die Sie konsumieren. Beispiele: IBM Cloud Private, Oracle dedizierte Regionen, Hyperscaler "souveräne" Regionen, regionale Cloud-Anbieter.
+- **Private-Cloud-Anbieter** — ein Anbieter, der dedizierte Infrastruktur (single-tenant) bereitstellt, die Sie konsumieren. Beispiele: IBM Cloud Private, Oracle dedizierte Regionen, Hyperscaler „souveräne“ Regionen, regionale Cloud-Anbieter.
 
 ## Open-Source-Plattformen
 
 ### Cozystack
-Apache-2.0-Lizenz, CNCF-Projekt. KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. **Beste Wahl für** Service Provider, regulierte Mandantenfähigkeit, AI/GPU-Betreiber. **Stärken:** Single-Stack für VMs + Container + DBs + S3 + GPU. Mandantenfähigkeit strukturell.
+Apache-2.0-Lizenz, CNCF-Projekt. KubeVirt + Cilium + Kube-OVN + LINSTOR/DRBD + Tenant CRD + Cozystack Dashboard. **Beste Wahl für** Service Provider, regulierte Mandantenfähigkeit, AI/GPU-Betreiber. **Stärken:** Single-Stack für VMs + Container + DBs + S3 + GPU. Mandantenfähigkeit strukturell.
 
 ### OpenStack
 Apache-2.0-Lizenz, OpenInfra Foundation. Nova + Neutron + Cinder + Swift + Keystone. **Beste Wahl für** große Telekommunikations-Cluster, behördliche Clouds, OpenStack-erfahrene Teams. **Stärken:** Reif, breite Community, viele Vendor-Distributionen.
@@ -78,10 +78,10 @@ Red Hat kommerzielle Subscription. **Wann sinnvoll:** bestehende Red Hat / OpenS
 - **AWS Sovereign Cloud, Azure Sovereign, GCP** — Hyperscaler-souveräne Angebote
 - **Hetzner** (Deutschland) — Bare Metal + Cloud, beliebt in DACH
 - **OVHcloud** (Frankreich) — starke EU-souveräne Positionierung
-- **Ænix Platform Provider Edition deployments at regional hosting providers (currently listed on aenix.io); tier-1 European bank engagements under NDA until mid-2027** — regionales souveränes Cloud-Produkt
+- **Ænix Public Cloud Platform** — im Einsatz bei regionalen Hosting-Anbietern; Engagements mit europäischen Tier-1-Banken sind bis Mitte 2027 NDA-geschützt. Regionales souveränes Cloud-Produkt.
 - **QazCloud** (Kasachstan) — souveränes KI-Ökosystem
 
-**Trade-off:** Anbieter-managed Convenience vs. direkte Hardware-Kontrolle.
+**Trade-off:** vom Anbieter verwalteter Komfort gegen direkte Kontrolle über die Hardware.
 
 ## Wie wählen
 
@@ -92,7 +92,7 @@ Red Hat kommerzielle Subscription. **Wann sinnvoll:** bestehende Red Hat / OpenS
 5. **SMB / single-tenant?** → Proxmox VE
 6. **Plattform nicht selbst betreiben wollen?** → Regionaler souveräner Cloud-Anbieter (Hetzner, OVHcloud, regulated enterprise customers (NDA-protected))
 7. **KI/GPU im großen Maßstab, sustained utilization?** → Cozystack oder OpenShift auf dediziertem GPU
-8. **Souveränität + EU + niedriger operativer Footprint?** → Cozystack mit Aenix-Support
+8. **Souveränität + EU + niedriger operativer Footprint?** → Cozystack mit Ænix-Support
 
 ## Migrationspfade
 
@@ -105,5 +105,5 @@ Wenn Cozystack zu Ihrer Situation passt — siehe **[Private-Cloud-Plattform-Pag
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

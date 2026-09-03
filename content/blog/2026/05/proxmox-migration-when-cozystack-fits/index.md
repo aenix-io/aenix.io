@@ -40,10 +40,8 @@ quiz:
         - { text: "Stable base under ~200 customers, mostly-VM workloads", correct: true }
         - { text: "When customers demand managed PostgreSQL as a service", correct: false }
         - { text: "When the operator needs multi-DC active/active topology", correct: false }
-      explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — Cozystack Provider Edition is over-engineered for that scope. Managed services and multi-DC active/active are pressures that justify migration."
+      explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — Cozystack Public Cloud Platform is over-engineered for that scope. Managed services and multi-DC active/active are pressures that justify migration."
 ---
-
-**Long-form companion to the [Proxmox migration hub](/migration/proxmox/). For service providers, MSPs, and growing enterprises whose Proxmox VE deployment is hitting multi-tenancy, service-catalog, or scale ceilings — what a Proxmox-to-Cozystack migration looks like, and when staying on Proxmox is still the right call.**
 
 Proxmox VE is one of the most successful open-source virtualisation
 platforms of the last decade. Mature, easy to install, strong
@@ -70,8 +68,8 @@ Proxmox VE remains the right answer for:
 - **Existing operators with deep Proxmox expertise and stable team** —
   switching cost includes team retraining
 
-If your situation matches these, *don't migrate*. Cozystack ISP
-Edition is over-engineered for SMB single-tenant operation. We say
+If your situation matches these, *don't migrate*. The Ænix Public Cloud
+Platform is over-engineered for SMB single-tenant operation. We say
 this in discovery calls rather than push the engagement.
 
 ## When Proxmox is being outgrown
@@ -88,7 +86,7 @@ become operational pain.
 
 ### 2. Customers asking for services beyond VMs
 
-Managed PostgreSQL, MySQL, Redis, Kafka, S3-compatible object
+Managed PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, S3-compatible object
 storage, tenant Kubernetes clusters, GPU services. Proxmox's scope is
 VMs + LXC; everything else is bolted on with manual integration or
 external systems.
@@ -96,7 +94,7 @@ external systems.
 ### 3. WHMCS or similar customer-management integration
 
 Proxmox has WHMCS integration, but the service catalog beyond VMs is
-manual integration work. Cozystack Provider Edition ships with WHMCS
+manual integration work. Cozystack Public Cloud Platform ships with WHMCS
 integration for the full service catalog.
 
 ### 4. Multi-DC active/active
@@ -115,8 +113,8 @@ right operational model for tenant-facing Kubernetes-as-a-service.
 
 Proxmox's commercial subscription is competitive but real cost.
 Operators with growing infrastructure footprint sometimes find the
-total subscription cost approaching what Aenix charges for ISP
-Edition support — at which point the service-catalog and operational
+total subscription cost approaching what Ænix charges for Public Cloud
+Platform support — at which point the service-catalog and operational
 upside of Cozystack tips the decision.
 
 ## Architectural mapping: Proxmox → Cozystack
@@ -125,10 +123,10 @@ upside of Cozystack tips the decision.
 |---|---|
 | **KVM hypervisor** | KubeVirt (KVM-based) |
 | **LXC containers** | Native Kubernetes containers (different model — LXC system-style vs Kubernetes application-style) |
-| **ZFS storage** | LINSTOR (DRBD) or Ceph |
-| **Ceph (Proxmox-managed)** | Ceph (Rook-managed) or LINSTOR |
+| **ZFS storage** | LINSTOR (DRBD) |
+| **Ceph (Proxmox-managed)** | LINSTOR (DRBD); Cozystack does not ship Ceph |
 | **Linux SDN / bridges** | Cilium (eBPF) |
-| **Proxmox web UI** | cozyportal |
+| **Proxmox web UI** | Cozystack Dashboard |
 | **Proxmox Backup Server (PBS)** | Velero + S3-compatible target + per-app PITR |
 | **PVE-Storage replication** | LINSTOR DRBD replication |
 | **Proxmox API / pvecli** | Kubernetes API |
@@ -156,8 +154,8 @@ count, OS mix, LXC usage, storage tiers, network topology, backup
 patterns, WHMCS / customer-management integration.
 
 Honest TCO comparison: current Proxmox + commercial subscription +
-operational team versus Cozystack Provider Edition + hardware refresh +
-Aenix support tier. For operators under ~300 customers, this often
+operational team versus Cozystack Public Cloud Platform + hardware refresh +
+Ænix support tier. For operators under ~300 customers, this often
 shows Proxmox staying competitive; above ~500, Cozystack typically
 wins on service-catalog and operational depth.
 
@@ -168,7 +166,7 @@ Output: go/no-go decision with quantified justification.
 Cozystack platform deployed on new hardware or repurposed Proxmox
 hardware (commodity x86 servers move easily). Cilium networking
 configured. LINSTOR storage operationalised. Identity integration
-(typically Keycloak + customer IdP). cozyportal brand customisation
+(typically Keycloak + customer IdP). Cozystack Dashboard brand customisation
 matching the operator's existing brand.
 
 WHMCS integration validated end-to-end. Service catalog populated
@@ -184,7 +182,7 @@ Pattern per customer:
    format
 2. Network configuration translated (Proxmox bridges → Cilium
    ClusterPool + NetworkPolicies)
-3. Storage migrated (ZFS / Ceph volumes → LINSTOR or Ceph in
+3. Storage migrated (ZFS / Ceph volumes → LINSTOR in
    Cozystack)
 4. Customer-side validation window (7-14 days)
 5. DNS / load balancer cutover
@@ -238,7 +236,7 @@ Phase 0.
 ### 2. Customer-facing API divergence
 
 Some customers built tooling against the Proxmox API. Cozystack
-exposes Kubernetes API + cozyportal API; the contracts differ.
+exposes Kubernetes API + Cozystack Dashboard API; the contracts differ.
 Customer-facing migration support (documentation, sometimes API
 compatibility shim) is engagement work.
 
@@ -247,7 +245,7 @@ compatibility shim) is engagement work.
 Proxmox operators are comfortable with the Proxmox web UI and the
 imperative `pvecli` command. Cozystack expects GitOps for production
 changes. Operations team needs 4-8 weeks of focused training plus
-3-6 months of practice. Aenix engagement includes training; customer
+3-6 months of practice. Ænix engagement includes training; customer
 investment in the transition is also required.
 
 ### 4. ZFS-specific workloads
@@ -311,7 +309,7 @@ Poor fit:
 - **Cohort migration** (3-12 months) — customer migration in cohorts
 - **Proxmox decommission** (1-3 months, parallel) — as cohorts
   complete
-- **Managed retainer** (optional, ongoing) — Aenix Tier-3 SLA
+- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
 
 ## Where to dig deeper
 
@@ -322,14 +320,7 @@ Poor fit:
   alternative-focused commercial landing
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   industry-specific positioning
-- **[Provider Edition economics for hosting providers](/blog/2026/05/isp-edition-economics-hosting-providers/)** —
+- **[Public Cloud Platform economics for hosting providers](/blog/2026/05/isp-edition-economics-hosting-providers/)** —
   unit-economics walkthrough
 - **[Hosting provider platform modernization](/blog/2026/05/hosting-provider-platform-modernization/)** —
   modernisation pattern
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. We have shipped Proxmox-to-Cozystack
-migrations for growing hosting providers; specific named case studies
-remain confidential.*

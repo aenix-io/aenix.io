@@ -1,0 +1,216 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">NIS2-Compliance-Readiness-Checkliste</span>
+    <span class="versionline">Aenix · aenix.io · v1.1 — September 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">NIS2-Compliance-Readiness-Checkliste</h1>
+  <p class="cover__subtitle">35 architektonische Kontrollpunkte, um zu prüfen, ob Ihre Cloud-Plattform die von der Richtlinie (EU) 2022/2555 geforderten Risikomanagementmaßnahmen für Cybersicherheit trägt.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">Für CISOs, Security- &amp; Compliance-Verantwortliche · aenix.io</div>
+  <p class="cover__strapline"><b>35 architektonische Kontrollpunkte für wesentliche und wichtige Einrichtungen.</b> Ausgerichtet auf die Richtlinie (EU) 2022/2555. Umsetzungsfrist der Mitgliedstaaten: 17. Oktober 2024. v1.1 — September 2026.</p>
+</section>
+
+<h1 class="doc-h">So verwenden Sie diese Checkliste</h1>
+
+<p class="lead">Die Richtlinie über Netz- und Informationssicherheit 2 (NIS2, Richtlinie (EU) 2022/2555) erweitert Geltungsbereich und Strenge der EU-Cybersicherheitspflichten erheblich. Die Mitgliedstaaten haben sie zum 17. Oktober 2024 in nationales Recht umgesetzt (einige finalisieren die sektorspezifische Umsetzung noch). NIS2 erfasst wesentliche Einrichtungen (Energie, Verkehr, Bankwesen, Finanzmarktinfrastruktur, Gesundheit, Trinkwasser, Abwasser, digitale Infrastruktur, Verwaltung von IKT-Diensten, öffentliche Verwaltung, Weltraum) und wichtige Einrichtungen (Post- und Kurierdienste, Abfallwirtschaft, Herstellung kritischer Produkte, Lebensmittelvertrieb, Herstellung bestimmter digitaler Dienste, Forschung).</p>
+
+<p class="lead">Diese 35-Punkte-Checkliste bietet CISOs, Compliance-Verantwortlichen und Platform-Engineering-Managern eine strukturierte Möglichkeit zu beurteilen, ob ihre Architektur die geforderten Risikomanagementmaßnahmen für Cybersicherheit trägt, wie sie in <span class="art">Art. 21</span> <span class="art">Art. 23</span> und angrenzenden Bestimmungen verankert sind.</p>
+
+<p class="lead">Nutzen Sie sie auf drei Arten:</p>
+
+<ol class="howto">
+  <li><b>Selbstbewertung</b> — gemeinsam mit Security-, Platform-Engineering- und Compliance-Teams durchgehen.</li>
+  <li><b>Vorbereitung des Behördendialogs</b> — die Abschnittszusammenfassungen lassen sich direkt in eine Kontrollnarrative für ein nationales CSIRT oder die zuständige Behörde überführen.</li>
+  <li><b>Lieferanten-Scoping</b> — an IKT-Drittanbieter (insbesondere Anbieter von IKT-Dienstverwaltung) weitergeben, damit diese anhand derselben Angriffsfläche antworten.</li>
+</ol>
+
+<div class="disclaimer">
+  <p>Diese Checkliste ist eine Hilfe zur architektonischen Bereitschaft, keine Rechtsberatung. Die NIS2-Konformität ist durch Ihre Rechtsberatung zu bestätigen und gegen die nationale Umsetzung in jedem Mitgliedstaat zu validieren, in dem Sie in den Anwendungsbereich fallen. Sektorale Lex specialis (DORA für Finanzunternehmen, eIDAS für Vertrauensdienste) kann in bestimmten Bereichen Vorrang haben.</p>
+</div>
+
+<h3 class="plain">Abschnittsübersicht:</h3>
+
+<table class="coverage">
+  <thead>
+    <tr><th>Abschnitt</th><th>Schwerpunkt</th><th class="num">Punkte</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Risikomanagement <span class="art">Art. 21</span></td><td class="num">10</td></tr>
+    <tr><td>2</td><td>Incident-Handling &amp; Meldung <span class="art">Art. 23</span></td><td class="num">6</td></tr>
+    <tr><td>3</td><td>Geschäftskontinuität &amp; Schwachstellenmanagement</td><td class="num">7</td></tr>
+    <tr><td>4</td><td>Lieferkette &amp; Kryptografie</td><td class="num">6</td></tr>
+    <tr><td>5</td><td>Zugriffskontrolle &amp; Audit</td><td class="num">6</td></tr>
+  </tbody>
+</table>
+
+<h2 class="sec newpage"><span class="num">1.</span> Risikomanagement <span class="art">Art. 21</span></h2>
+<p class="lead">Artikel 21 zählt die Risikomanagementmaßnahmen für Cybersicherheit auf, die wesentliche und wichtige Einrichtungen umsetzen müssen. Es handelt sich um strukturelle Kontrollen — sie müssen nachgewiesen und nicht nur behauptet werden.</p>
+
+<ul class="cps">
+  <li><b>Risikoregister je kritischem Workload dokumentiert</b> — inventarisiert, mit Verantwortlichkeit, regelmäßig geprüft. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>Jährliche Cybersicherheits-Risikoprüfung</b> — durchgeführt und vom Leitungsorgan gezeichnet. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>IKT-Asset-Register vollständig und aktuell</b> — sämtliche Hardware, Software, Daten und Abhängigkeiten erfasst. <span class="art">Art. 21(2)(i)</span></li>
+  <li><b>Bedrohungsmodell je kritischem Workload dokumentiert</b> — bei wesentlichen architektonischen Änderungen aktualisiert. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>Cybersicherheitsrichtlinie vom Leitungsorgan genehmigt</b> — dokumentiert, jährlich aktualisiert. <span class="art">Art. 20</span></li>
+  <li><b>Netzwerksegmentierung / Zero-Trust-Durchsetzung</b> — Mikrosegmentierung zwischen Vertrauenszonen; Default-Deny-Haltung. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>Pod Security Standards / NetworkPolicies durchgesetzt (Kubernetes)</b> — sofern Kubernetes im Einsatz ist, oder gleichwertige Isolationsprimitive auf anderen Substraten. <span class="art">Art. 21(2)(a)</span></li>
+  <li><b>Wirksamkeitsprüfung der Kontrollen — vierteljährlich</b> — dokumentierte Nachweise aufbewahrt. <span class="art">Art. 21(2)(f)</span></li>
+  <li><b>Verpflichtende Cybersicherheitsschulung für alle Mitarbeitenden</b> — einschließlich der oberen Leitungsebene; Abschluss nachverfolgt. <span class="art">Art. 21(2)(g)</span> <span class="art">Art. 20</span></li>
+  <li><b>Risikoregister jährlich durch Audit geprüft</b> — interne oder externe Prüfung; Feststellungen bis zur Behebung nachverfolgt. <span class="art">Art. 21(2)(f)</span></li>
+</ul>
+
+<div class="callout">
+  <p>Artikel 20 begründet eine unmittelbare Verantwortlichkeit der Leitungsorgane für die Genehmigung der Cybersicherheitsmaßnahmen und die Überwachung ihrer Umsetzung. „Das Risiko liegt bei der IT“ ist keine haltbare Position mehr.</p>
+</div>
+
+<h2 class="sec"><span class="num">2.</span> Incident-Handling &amp; Meldung <span class="art">Art. 23</span></h2>
+<p class="lead">NIS2 führt enge Meldefristen ein — Frühwarnung innerhalb von 24 Stunden, Meldung des Vorfalls innerhalb von 72 Stunden, Abschlussbericht innerhalb eines Monats.</p>
+
+<ul class="cps">
+  <li><b>24×7-Erkennungsfähigkeit für kritische Workloads</b> — abgestimmt auf die für die Meldung verwendete Schweregradklassifizierung. <span class="art">Art. 23</span></li>
+  <li><b>Dokumentierte Incident Response mit benannten Rollen</b> — IR-Plan mit Rufbereitschaft, Eskalationspfaden, Entscheidungsbefugnis und Kommunikations-Playbook.</li>
+  <li><b>Prozess zur Vorfallklassifizierung dokumentiert</b> — Schwellenwerte für „erheblich“ vs. nicht erheblich explizit definiert.</li>
+  <li><b>Vorab eingerichtete Kommunikationskanäle zu CSIRT / zuständiger Behörde</b> — benannte Ansprechpartner, sichere Kanäle, Probeübung durchgeführt.</li>
+  <li><b>Meldevorlagen für 24-Stunden / 72-Stunden / 1-Monat</b> — Vorlagen getestet, Verantwortliche zugewiesen. <span class="art">Art. 23(4)</span></li>
+  <li><b>Jährliche Incident-Response-Übung</b> — Tabletop oder live; Ergebnisse aufbewahrt.</li>
+</ul>
+
+<div class="callout">
+  <p>Die Frühwarnung binnen 24 Stunden ist bewusst kurz — sie erfordert einen Prozess, in dem die Rufbereitschaft der Security sehr schnell die Entscheidung „melden oder nicht“ treffen kann. Verankern Sie das Entscheidungsraster im IR-Plan, nicht erst im Vorfall.</p>
+</div>
+
+<h2 class="sec"><span class="num">3.</span> Geschäftskontinuität &amp; Schwachstellenmanagement</h2>
+
+<ul class="cps">
+  <li><b>BCP-Plan je kritischem Workload</b> — dokumentiert, mit Verantwortlichkeit, geprüft. <span class="art">Art. 21(2)(c)</span></li>
+  <li><b>RTO / RPO dokumentiert und jährlich getestet</b> — mit Testnachweis, nicht nur einem Plan. <span class="art">Art. 21(2)(c)</span></li>
+  <li><b>Backup-Wiederherstellung in den letzten 12 Monaten getestet</b> — erfolgreiche Wiederherstellung aus einem Produktions-Backup in eine saubere Umgebung.</li>
+  <li><b>DR-Standort betriebsbereit und getestet</b> — Failover in den letzten 12 Monaten für kritische Workloads geübt.</li>
+  <li><b>SLA für CVE-Reaktion dokumentiert</b> — Triage- / Patch- / Verifikationsfenster nach Schweregrad. <span class="art">Art. 21(2)(e)</span></li>
+  <li><b>SAST / DAST in der CI; Container-Scanning + SBOM</b> — Sicherheits-Gates zur Build-Zeit; Provenienz der Abhängigkeiten nachverfolgt.</li>
+  <li><b>Richtlinie zur koordinierten Offenlegung von Schwachstellen veröffentlicht</b> — Eingangskanal, Triage-Zusage, Anerkennung. <span class="art">Art. 12</span></li>
+</ul>
+
+<div class="callout">
+  <p>Für Container-Workloads sollte „SBOM“ ein generiertes, signiertes und aufbewahrtes Artefakt bedeuten (z. B. im Format SPDX oder CycloneDX) — keine manuelle Tabelle. Verwenden Sie Sigstore / Cosign oder Gleichwertiges für die Signatur.</p>
+</div>
+
+<h2 class="sec"><span class="num">4.</span> Lieferkette &amp; Kryptografie</h2>
+<p class="lead">NIS2 legt ausdrückliches Gewicht auf das Lieferkettenrisiko <span class="art">Art. 21(2)(d)</span> und auf Kryptografie und Verschlüsselung <span class="art">Art. 21(2)(h)</span>.</p>
+
+<ul class="cps">
+  <li><b>Inventar der IKT-Drittanbieter vollständig</b> — alle IKT-Anbieter, einschließlich mittelbarer (unterbeauftragter). <span class="art">Art. 21(2)(d)</span></li>
+  <li><b>Abhängigkeiten kritischer Funktionen bis zur zweiten Ebene abgebildet</b> — Unterauftragnehmer der Lieferanten, sofern sie kritische Funktionen erbringen.</li>
+  <li><b>Vertragsinhalte gemäß Artikel 21(2)(d) in Verträgen zu kritischen Funktionen</b> — einschließlich Bestimmungen zur koordinierten Offenlegung von Schwachstellen und zur Vorfallkommunikation. <span class="art">Art. 21(2)(d)</span></li>
+  <li><b>Laufende Lieferantenüberwachung dokumentiert</b> — mindestens jährliche Prüfung; anlassbezogen bei Vorfall oder M&amp;A-Auslöser.</li>
+  <li><b>Verschlüsselung im Ruhezustand, bei der Übertragung und (soweit anwendbar) in Verwendung</b> — mit dokumentierter Chiffrenwahl und Rotation. <span class="art">Art. 21(2)(h)</span></li>
+  <li><b>Kundenkontrollierte Verschlüsselungsschlüssel, soweit anwendbar</b> — für Tier-1- / sensible Workloads. Schlüsselverwahrungsprozess dokumentiert.</li>
+</ul>
+
+<div class="callout">
+  <p>„Lieferkette bis zur zweiten Ebene“ klingt aufwendig, geht aber vor allem um Kennen, nicht um Kontrollieren. Das Register offenbart häufig eine Konzentration auf denselben zugrunde liegenden Anbieter über verschiedene Zwischenhändler — eine wertvolle Erkenntnis, unabhängig vom NIS2-Bezug.</p>
+</div>
+
+<h2 class="sec"><span class="num">5.</span> Zugriffskontrolle &amp; Audit</h2>
+<p class="lead">NIS2 erwartet MFA, Privileged-Access-Management und Audit-Vollständigkeit als Basiskontrollen — nicht als fortgeschrittene.</p>
+
+<ul class="cps">
+  <li><b>MFA für privilegierte Konten (durchgängig)</b> — alle Admin- / Break-Glass- / IAM-Konten; ohne Ausnahmen. <span class="art">Art. 21(2)(j)</span></li>
+  <li><b>MFA für Endnutzerzugriff, wo angemessen</b> — risikobasiert für nicht privilegierten Zugriff.</li>
+  <li><b>Privileged-Access-Management eingeführt</b> — Just-in-Time-Erhöhung, Sitzungsaufzeichnung, Tresor für geteilte Zugangsdaten.</li>
+  <li><b>Joiner-Mover-Leaver automatisiert</b> — Identitätslebenszyklus vom HR-System bis zu allen betroffenen Systemen; Entzug des Zugriffs verifiziert.</li>
+  <li><b>Aufbewahrung der Audit-Logs erfüllt die längste anwendbare Anforderung</b> — oft 5+ Jahre bei sektoralen oder nationalen Vorgaben; manipulationssichere Speicherung.</li>
+  <li><b>Prozess für Behördenzugriff dokumentiert und getestet</b> — Verfahren zur Gewährung des Zugriffs für ein nationales CSIRT oder die zuständige Behörde; Probeübung durchgeführt.</li>
+</ul>
+
+<div class="callout">
+  <p>Viele Organisationen haben MFA an der SSO-Oberfläche, aber nicht bei Root-Konten der Cloud-Anbieter, bei Admin-Konsolen von SaaS-Drittanbietern oder bei alten Break-Glass-Pfaden. Prüfen Sie umfassend — nicht nur die Haustür.</p>
+</div>
+
+<h1 class="doc-h newpage">Empfehlungen auf Architekturebene</h1>
+
+<p class="lead">Für die meisten NIS2-Kontrollen ist die Architektur die wirkungsvollste Abhilfefläche. Trägt die zugrunde liegende Plattform strukturell Mandantenisolierung, kundenkontrollierte Verschlüsselung, einen unveränderlichen Audit-Trail, kontrollierten Lieferantenzugriff sowie getestete Exit-/Restore-Mechaniken, so werden viele der 35 Kontrollpunkte zur Folge des Designs statt zu separaten Compliance-Projekten.</p>
+
+<h3 class="plain">Wenn die Architektur NIS2-Lücken strukturell schließt</h3>
+<ul class="bullets">
+  <li>Tenant-CRD-Mandantenfähigkeit adressiert <span class="art">Art. 21(2)(a)</span> Netzwerksegmentierung und Isolierung zwischen Vertrauenszonen.</li>
+  <li>Kundenkontrollierte Verschlüsselung auf Plattform-, Speicher- und Observability-Ebene adressiert <span class="art">Art. 21(2)(h)</span>.</li>
+  <li>Air-Gap-Unterstützung adressiert Anforderungen an souveräne / regulatorisch isolierte Workloads, wenn nationales Recht über die NIS2-Grundlinie hinausgeht.</li>
+  <li>Vollständigkeit des Audit-Trails (anbieterseitig über VictoriaLogs, kundenseitig per Export) adressiert <span class="art">Art. 21(2)(i)</span> und die Erwartungen an den Behördenzugriff.</li>
+  <li>Getestete Exit- und Restore-Mechaniken adressieren <span class="art">Art. 21(2)(c)</span> BCP und die Lieferanten-Exit-Erwartungen aus <span class="art">Art. 21(2)(d)</span>.</li>
+</ul>
+
+<h3 class="plain">Wenn die bestehende Architektur nachgerüstet werden kann</h3>
+<ul class="bullets">
+  <li>Viele Kontrollen (durchgängige MFA, CVE-SLA, CVD-Richtlinie, Schulung, Kadenz des Risikoregisters, JML-Automatisierung) sind organisatorische und werkzeugseitige Ergänzungen, die keinen Plattformwechsel erfordern.</li>
+  <li>Netzwerksegmentierung und Mikrosegmentierung lassen sich auf Kubernetes-basierten Plattformen meist über NetworkPolicy / Cilium-Policy ohne architektonischen Umbau nachrüsten.</li>
+  <li>BCP / DR und die Kadenz der Backup-Tests sind Prozessdisziplin — keine Plattformänderung nötig.</li>
+</ul>
+
+<h3 class="plain">Wenn eine Teil-Nachrüstung wirklich nicht ausreicht</h3>
+<ul class="bullets">
+  <li>Auf VMware Cloud Director basierende Plattformen tun sich mit Portabilität (<span class="art">Art. 21(2)(d)</span> Lieferanten-Exit) und kundenkontrollierten Schlüsseln auf jeder Ebene schwer.</li>
+  <li>Ausschließlich anbieterverwaltete Verschlüsselung, insbesondere für Backups und Observability, scheitert an <span class="art">Art. 21(2)(h)</span>, wo die Prüfung durch die Regulierungsbehörde hoch ist.</li>
+  <li>Geteilte Multi-Tenant-SaaS-Infrastruktur tut sich mit den Erwartungen an die Vollständigkeit des Audit-Trails unter behördlicher Prüfung schwer.</li>
+</ul>
+
+<div class="callout">
+  <p>Die kosteneffizienteste Reihenfolge zur Lückenschließung ist meist: (1) durchgängige MFA + JML, (2) Backup-Test + DR-Test, (3) CVE-SLA + SBOM, (4) Lieferantenregister + Vertragsaktualisierung, (5) architektonische Änderungen dort, wo die Schritte 1–4 die Lücke nicht schließen können.</p>
+</div>
+
+<h1 class="doc-h newpage">NIS2-konforme Cloud-Architektur — Referenzmuster</h1>
+
+<p class="lead">Eine Plattform, die um Isolierung, kundenkontrollierte Kryptografie und unveränderliche Nachvollziehbarkeit herum gebaut ist, kann die meisten Artikel-21-Kontrollen auf Plattformebene schließen, statt als 35 kompensierende Verfahren. Das folgende Referenzmuster stapelt drei Ebenen.</p>
+
+<div class="layer">
+  <h4>Mandantenebene</h4>
+  <p>Voneinander isolierte Mandanten nebeneinander — zum Beispiel ein Produktionsmandant, ein audit-isolierter Mandant, ein Mandant für souveräne Workloads und ein Testmandant. Jeder trägt eigene Verschlüsselungsschlüssel, einen eigenen Audit-Log-Stream und MFA-geschützten Zugriff.</p>
+</div>
+<div class="layer">
+  <h4>Plattform-Steuerungsebene</h4>
+  <p>Eine einzige Kubernetes-native Steuerungsebene mit Tenant-CRD, Identität (OIDC), NetworkPolicy- / Cilium-Segmentierung, Verschlüsselung (BYOK / HYOK), einer Audit-Pipeline (VictoriaLogs in ein unveränderliches Backend) und Backup-Orchestrierung.</p>
+</div>
+<div class="layer">
+  <h4>Substrat</h4>
+  <p>Rechenzentrum in der Region, ein DR-Standort in der Region und ein optionales Air-Gap-Enklave für regulatorisch isolierte Workloads.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Architekturelement</th><th>NIS2-Kontrollbereich</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Verschlüsselungsschlüssel je Mandant</td><td><span class="art">Art. 21(2)(h)</span> Kundenkontrollierte Verschlüsselung</td></tr>
+    <tr><td>NetworkPolicy / Cilium</td><td><span class="art">Art. 21(2)(a)</span> Segmentierung</td></tr>
+    <tr><td>Audit-Pipeline</td><td><span class="art">Art. 21(2)(i)</span> <span class="art">Art. 23</span></td></tr>
+    <tr><td>Mehrere Rechenzentren + DR-Standort</td><td><span class="art">Art. 21(2)(c)</span> Kontinuität &amp; DR</td></tr>
+    <tr><td>MFA-geschützter Mandantenzugriff</td><td><span class="art">Art. 21(2)(j)</span> Zugriffskontrolle</td></tr>
+    <tr><td>Tenant-CRD-Isolierung</td><td><span class="art">Art. 21(2)(d)</span> Lieferanten-Exit / Portabilität</td></tr>
+  </tbody>
+</table>
+
+<p class="lead">Dieses Muster ist nicht die einzige gültige NIS2-konforme Architektur — es zeigt jedoch, wie Isolierung, kundenkontrollierte Kryptografie und unveränderliche Nachvollziehbarkeit die meisten Artikel-21-Kontrollen auf Plattformebene schließen.</p>
+
+<h1 class="doc-h newpage">Nächste Schritte</h1>
+
+<div class="option"><b>Option 1 — Selbst beheben mit dieser Checkliste.</b> Gehen Sie sie mit Security-, Platform- und Compliance-Teams durch. Überführen Sie nicht abgehakte Punkte in einen 90-Tage-Behebungsplan.</div>
+<div class="option"><b>Option 2 — NIS2-konformes Readiness-Engagement mit Aenix (4–6 Wochen).</b> Wir arbeiten die Checkliste mit Ihnen durch, prüfen die Architektur gegen jede Kontrolle und erstellen einen Behebungsplan mit Aufwandsschätzungen und Entwürfen der Behördennarrative. Festpreis-Engagement.</div>
+<div class="option"><b>Option 3 — Gemeinsames Mapping von NIS2 + DORA + DSGVO.</b> Für Einrichtungen, die in den Anwendungsbereich mehrerer Rahmenwerke fallen. Wir bilden die Kontrollen ab, um Doppelarbeit zu vermeiden, und zeigen auf, wo ein Rahmenwerk mehrere zugleich erfüllt.</div>
+
+<div class="cta">Vereinbaren Sie ein Erstgespräch: <span>aenix.io/services/platform-readiness-assessment/</span></div>
+
+<h1 class="doc-h" style="margin-top:9mm">Aktualisierungsrhythmus</h1>
+<ul class="bullets">
+  <li><b>Vierteljährlich:</b> Abgleich mit neuen nationalen Umsetzungen und aufsichtsbehördlichen Mitteilungen.</li>
+  <li><b>Jährlich:</b> strukturelle Prüfung des Checklisten-Umfangs.</li>
+  <li><b>Anlassbezogen:</b> bei wesentlichen Änderungen an NIS2 selbst oder an sektoraler Lex specialis.</li>
+</ul>
+
+<p class="lead">Aenix ist das Team hinter Cozystack (einem CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack. aenix.io</p>
+
+<div class="closing">
+  <b>Aenix · aenix.io · NIS2-Compliance-Readiness-Checkliste · v1.1 — September 2026.</b> Aenix is the team behind Cozystack (CNCF, Apache 2.0).
+</div>

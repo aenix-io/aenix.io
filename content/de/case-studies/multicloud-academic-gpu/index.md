@@ -12,7 +12,7 @@ related_pages:
   - /de/loesungen/gpu-cloud-bursting/
   - /de/branchen/universitaeten/
   - /de/loesungen/cloud-repatriation/
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/ai-platform/
 ---
 
 <div class="cs-tags">
@@ -95,6 +95,6 @@ GPUs auf der souveränen Cloud kosten rund **fünfmal weniger** als im vorherige
 
 ---
 
-*Diese Fallstudie wird in anonymisierter Form veröffentlicht (Tier-3-Evidenz): die Plattform wird über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einer aktiven Opportunity [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie wird in anonymisierter Form veröffentlicht (Tier-3-Evidenz): die Plattform wird über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einer aktiven Opportunity [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, verfügbar in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*

@@ -52,6 +52,9 @@ quiz:
 
 ### **Installing a Kubernetes Cluster Managed by Cozystack: A Detailed Guide by Gohost and Ænix**
 
+> **Historical guide — written against Cozystack v0.7.0 (August 2024). The installation commands below no longer apply.**
+> Cozystack v1.0 replaced the `cozystack-installer.yaml` manifest and the `cozystack` ConfigMap with a Helm-installed operator plus a `Package` custom resource, and replaced bundles (`paas-full`, `distro-full`) with variants (`isp-full`, `isp-full-generic`, `isp-hosted`, `default`). The current procedure is in the [Cozystack getting-started guide](https://cozystack.io/docs/v1.6/getting-started/). The hardware, network and Talos topology design below is still representative.
+
 This article was written by Vladislav Karabasov from Kazakhstani hosting company [gohost](https://gohost.kz), therefore the narrative will be conducted in the first person.
 
 ![image](https://cdn-images-1.medium.com/max/800/1*ZLyJcdvbsPSJnErGKwlJ0g.png)
@@ -470,6 +473,8 @@ Fig. 25. Nodes in our cluster
 After installing the remaining nodes, we have completed the initial setup of the cluster. At this point, it contains only a few system components, and the nodes are in a `NotReady` state because we disabled the installation of CNI and kube-proxy in the Talos configuration. These components will be provided and managed by Cozystack.
 
 ### Installing Cozystack
+
+> **Superseded from Cozystack v1.0.** The current step is `helm upgrade --install cozystack oci://ghcr.io/cozystack/cozystack/cozy-installer --version X.Y.Z --namespace cozy-system --create-namespace`, followed by a `cozystack.io/v1alpha1` `Package` resource named `cozystack.cozystack-platform` carrying `spec.variant` plus the `publishing` and `networking` values. See [Install Cozystack](https://cozystack.io/docs/v1.6/getting-started/install-cozystack/). The v0.7.0 flow below is kept for the historical record.
 
 Create a directory named `manifests` and place a file named `cozystack-config.yaml` inside it:
 

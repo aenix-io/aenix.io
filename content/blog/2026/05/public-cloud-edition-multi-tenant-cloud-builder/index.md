@@ -1,23 +1,23 @@
 ---
-title: "Provider Edition — what it actually takes to launch a sovereign cloud product at scale"
-description: "Long-form companion to the Provider Edition page: what a multi-year, multi-million-euro sovereign cloud build covers for telcos, banks, and operators."
+title: "Public Cloud Platform — what it actually takes to launch a sovereign cloud product at scale"
+description: "What a multi-year, multi-million-euro sovereign cloud build covers for telcos, banks, and operators."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Sovereignty", "Cloud", "Platform Engineering"]
 language: "en"
-companion_landing: "/products/aenix-platform/public-cloud-edition/"
-companion_label: "See Provider Edition product details →"
+companion_landing: "/products/public-cloud-platform/"
+companion_label: "See Public Cloud Platform product details →"
 quiz:
-  title: "Test yourself: Provider Edition"
+  title: "Test yourself: Public Cloud Platform"
   questions:
     - q: "How many managed services does an operator-scale build typically target compared to a provider-scale one?"
       options:
-        - { text: "30-50+ versus ~20 for ISP", correct: true }
+        - { text: "30-50+ versus ~20 at provider scale", correct: true }
         - { text: "Same ~20 at higher scale", correct: false }
         - { text: "100+ to match hyperscalers", correct: false }
       explanation: "The article states a provider-scale build exposes ~20 managed services while an operator-scale build typically targets 30-50+ across compute, storage, databases, AI/GPU, and more."
-    - q: "What is the typical engagement size and duration for a Provider Edition build?"
+    - q: "What is the typical engagement size and duration for a Public Cloud Platform build?"
       options:
         - { text: "€100k-€500k over 6-12 months", correct: false }
         - { text: "Fixed €500k annual subscription", correct: false }
@@ -29,13 +29,13 @@ quiz:
         - { text: "Phase 4 is legally too late for licences", correct: false }
         - { text: "Late engagement forces architecture rebuilds", correct: true }
       explanation: "The failure pattern 'Regulator dialog deferred' explains that projects which defer the conversation end up rebuilding architecture to satisfy expectations they could have designed for at the start."
-    - q: "Which buyer profile is described as a POOR fit for Provider Edition?"
+    - q: "Which buyer profile is described as a POOR fit for Public Cloud Platform?"
       options:
         - { text: "Tier-1 telcos launching a sovereign cloud", correct: false }
         - { text: "Smaller hosting providers under ~50 racks", correct: true }
         - { text: "Large banks running their own private cloud", correct: false }
       explanation: "The article lists smaller hosting providers as a poor fit for an operator-scale programme: provider scale fits their economics and operating model better."
-    - q: "What happens in Phase 1 (Foundation) of a Provider Edition engagement?"
+    - q: "What happens in Phase 1 (Foundation) of a Public Cloud Platform engagement?"
       options:
         - { text: "Hardware, first DC, storage and identity", correct: true }
         - { text: "Open-market launch and marketing activation", correct: false }
@@ -43,22 +43,15 @@ quiz:
       explanation: "Phase 1 covers hardware procurement and racking, Talos/Cozystack platform deployment in the first datacentre, storage layer, networking foundation, identity integration, and initial observability — ending with a working single-region internal platform."
 ---
 
-**Long-form companion to the [Provider Edition landing](/products/aenix-platform/public-cloud-edition/). For tier-1 telcos, national operators, big banks building their own cloud, and large sovereign cloud initiatives evaluating what a multi-million-euro Aenix engagement actually covers — and how to phase it across the 18-36 months it typically runs.**
-
-The Provider Edition conversation is different from every other
-Aenix engagement. It's not "should we use Cozystack?" — that's already
+The Public Cloud Platform conversation is different from every other
+Ænix engagement. It's not "should we use Cozystack?" — that's already
 decided. It's "we are launching a cloud product at national or
-tier-1-customer scale; what does the partnership with Aenix look like
+tier-1-customer scale; what does the partnership with Ænix look like
 across the 18-36 months it takes to ship?"
 
-This article walks through what an actual Provider Edition build
-covers, how it phases, where most large cloud projects fail, and what
-makes the difference between a cloud product that customers will pay
-for and a cloud project that runs over budget.
+## What Public Cloud Platform is built for
 
-## What Provider Edition is built for
-
-Five buyer profiles dominate Provider Edition engagements:
+Five buyer profiles dominate Public Cloud Platform engagements:
 
 1. **Tier-1 telcos / national operators** — incumbent telecom
    operators launching or scaling a public cloud as part of their
@@ -71,7 +64,7 @@ Five buyer profiles dominate Provider Edition engagements:
    products, sometimes with public-private-partnership structure,
    with explicit sovereignty requirements and regulator alignment.
 4. **Hosting providers at large scale** — providers above ~5,000
-   customers where the Provider Edition operational model needs scaling
+   customers where the Public Cloud Platform operational model needs scaling
    into multi-region with multi-DC active/active.
 5. **National AI/GPU operators** — sustained inference + training
    capacity for sectoral customers (banks, healthcare, public
@@ -81,14 +74,14 @@ Five buyer profiles dominate Provider Edition engagements:
 All five share the same operational reality: multi-region or
 multi-DC active/active; multi-million-euro infrastructure investment;
 customer-facing SLAs that map to national regulator expectations; and
-a partnership model with Aenix that lasts years, not months.
+a partnership model with Ænix that lasts years, not months.
 
-## What Provider Edition includes that other editions don't
+## What Public Cloud Platform includes that the other products don't
 
 ### Multi-region / multi-DC active/active
 
-Single-DC deployments are Provider Edition or Enterprise Edition territory.
-Provider Edition assumes from day one that the customer needs
+Single-DC deployments are Public Cloud Platform or Private Cloud Platform territory.
+Public Cloud Platform assumes from day one that the customer needs
 active/active across regions or datacentres with cross-DC replication
 tuned for RTO/RPO targets. The platform's control plane, observability,
 identity, and storage layers all design for multi-region from the
@@ -106,7 +99,7 @@ v1.x) supports the catalog expansion.
 ### Operations team at scale
 
 10-30+ engineers running the platform, depending on customer count
-and SLA. Provider Edition engagement includes operations team
+and SLA. Public Cloud Platform engagement includes operations team
 hiring and training as a substantial workstream — not "you find
 people, we'll train them" but "we design the org structure with you,
 participate in interviews, do hands-on training, and run Tier-3 for
@@ -121,7 +114,7 @@ not just contractually. Compliance evidence catalogue is a deliverable.
 
 ### Customer-facing brand engineering
 
-Beyond cozyportal customisation, Provider Edition includes
+Beyond Cozystack Dashboard customisation, Public Cloud Platform includes
 brand-engineering work: customer portal that looks like a top-tier
 cloud product, not a customised Cozystack instance. UX flows tuned
 to how customer's customers think about ordering, configuring,
@@ -135,7 +128,7 @@ Before engineering, agreement on:
 - Strategic objectives (what cloud product, what customer base, what
   competitive positioning)
 - Regulatory scope (which frameworks bind the platform)
-- Org structure (who owns what; how Aenix and customer teams interact)
+- Org structure (who owns what; how Ænix and customer teams interact)
 - Commercial structure (engagement model, IP, support model post-go-live)
 - Roadmap (phasing of services, geographic expansion, SLA tiers)
 
@@ -145,7 +138,7 @@ sides.
 ### Phase 1 — Foundation (3-6 months)
 
 Hardware procurement and racking. Talos / Cozystack platform deployment
-in the first datacentre. Storage layer (LINSTOR or Ceph at scale).
+in the first datacentre. Storage layer (LINSTOR/DRBD at scale).
 Networking foundation. Identity integration with customer's existing
 workforce identity (Keycloak / Okta / Active Directory / sovereign IdP).
 Initial observability stack.
@@ -168,7 +161,7 @@ against targets.
 Service-by-service rollout. Start with foundational services (compute,
 storage, basic networking, managed PostgreSQL). Layer in managed
 service families (databases, queues, caches, search, observability).
-Add edition-specific services (GPU, AI inference, sectoral compliance
+Add product-specific services (GPU, AI inference, sectoral compliance
 tooling).
 
 Each service goes through: deployment → internal testing → friendly-
@@ -186,7 +179,7 @@ and support workflows proven.
 ### Phase 5 — General availability and scale (ongoing)
 
 Open market launch. Marketing and sales activated. Operations team
-scales to support customer growth. Aenix Tier-3 retainer continues
+scales to support customer growth. Ænix Tier-3 retainer continues
 until customer team is ready to absorb Tier-3 (typically 12-24 months
 post-GA).
 
@@ -201,7 +194,7 @@ Three failure patterns we've seen across the industry:
 
 Engineering-led platform with engineering-grade UX. Customers click
 around, find it functional but unappealing, sign up for hyperscaler
-instead. Provider Edition engagement includes design partnership
+instead. Public Cloud Platform engagement includes design partnership
 explicitly to avoid this.
 
 ### 2. Operations team sized for go-live, not 18-month-out volume
@@ -219,7 +212,7 @@ late-phase find themselves rebuilding architecture to satisfy
 expectations they could have designed for at the start. Engage
 regulators in Phase 0-1, not Phase 4.
 
-## When Provider Edition is the right answer
+## When Public Cloud Platform is the right answer
 
 Strong fit:
 
@@ -233,19 +226,19 @@ Strong fit:
 
 Marginal fit:
 
-- Large hosting providers above the Provider Edition ceiling but below
-  tier-1 telco scale — may fit Provider Edition or extended ISP
-  Edition depending on growth profile
-- AI/GPU-focused operators where the AI workload dominates — AI/ML
-  Edition may fit better with selective Provider Edition
+- Large hosting providers above the Public Cloud Platform ceiling but below
+  tier-1 telco scale — may fit the Public Cloud Platform or an extended
+  engagement depending on growth profile
+- AI/GPU-focused operators where the AI workload dominates — the Ænix AI
+  Platform may fit better, with selective Public Cloud Platform
   components
 
 Poor fit:
 
-- Smaller hosting providers — Provider Edition fits substantially better
+- Smaller hosting providers — Public Cloud Platform fits substantially better
   on economics and operational model
 - Regulated enterprises consuming cloud rather than producing it —
-  Enterprise Edition is the right answer
+  Private Cloud Platform is the right answer
 
 ## Engagement structure
 
@@ -254,26 +247,18 @@ Poor fit:
 - **Strategic engagement plan** (4-8 weeks, fixed-price) —
   partnership formation, output is signed engagement plan
 - **Phase 1-5 build** (18-36 months) — phased build per above
-- **Managed Tier-3** (ongoing) — Aenix retainer until customer team
+- **Managed Tier-3** (ongoing) — Ænix retainer until customer team
   is ready to absorb
 
 Engagement size: multi-year programme, quoted per RFP.
 
 ## Where to dig deeper
 
-- **[Provider Edition landing](/products/aenix-platform/public-cloud-edition/)** —
-  feature list, edition-specific FAQ
+- **[Public Cloud Platform landing](/products/public-cloud-platform/)** —
+  feature list, product-specific FAQ
 - **[Public Cloud Builder services](/services/public-cloud-builder/)** —
   engagement details
 - **[Sovereign Cloud Builder services](/services/sovereign-cloud-builder/)** —
   for the sovereignty-specific variant
 - **[Build sovereign cloud — playbook for EU and Central Asia](/blog/2026/05/build-sovereign-cloud-eu-and-central-asia/)** —
   sovereign cloud architectural patterns
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Our Provider Edition engagements with
-tier-1 telcos and sovereign cloud initiatives are NDA-protected. Aenix
-secured $300K seed investment from Prospective Technologies in April
-2025 to accelerate platform development for these large engagements.*

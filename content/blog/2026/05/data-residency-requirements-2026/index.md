@@ -1,6 +1,6 @@
 ---
 title: "Data residency requirements in 2026 — a practical guide for cloud architecture"
-description: "This is the long-form companion to our data sovereignty services page. It walks through what data-residency rules actually require, where typical cloud..."
+description: "What data residency actually requires at control level, why most cloud setups fail on inspection, and the architectural patterns that hold up."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
@@ -45,8 +45,6 @@ quiz:
         - { text: "Outsourcing residency to a managed-service provider", correct: false }
       explanation: "The architecture answer is per-jurisdiction tenant boundaries with explicit cross-border controls — the residency landscape is a matrix of jurisdictions with overlapping and sometimes contradictory requirements, not a single rule."
 ---
-
-**This is the long-form companion to our [data sovereignty services page](/solutions/data-sovereignty/). It walks through what data-residency rules actually require, where typical cloud setups quietly fail, and what an architecture that can demonstrate residency at every layer looks like — for the platform engineers, cloud architects, and compliance leads who have to translate "data must stay in jurisdiction X" into running systems.**
 
 Most coverage of data residency stops at "production storage is in the right region." That's the easy part. The hard part is everywhere else — backups, observability data, CI/CD artifacts, managed-service telemetry, cross-border replication, sub-contractor processing — and it's where regulator audits increasingly land.
 
@@ -213,7 +211,7 @@ A residency-emphasized engagement covers:
 4. **Gap analysis** — where current architecture fails residency, prioritized.
 5. **Remediation plan** — what to fix, in what order, with effort estimates.
 
-Aenix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**, with the sovereignty-and-regulator-gap workstream emphasized for residency scope. The output is a written report that names, per data class and per layer, what's compliant, what's not, and what an architecture-level remediation looks like.
+Ænix runs this as part of the **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**, with the sovereignty-and-regulator-gap workstream emphasized for residency scope. The output is a written report that names, per data class and per layer, what's compliant, what's not, and what an architecture-level remediation looks like.
 
 ---
 
@@ -223,8 +221,3 @@ Aenix runs this as part of the **[Platform Readiness Assessment](/services/platf
 - **[DORA compliance for cloud infrastructure](/solutions/dora-compliance/)** — regulatory-adjacent trigger
 - **[Cloud repatriation](/solutions/cloud-repatriation/)** — when sovereignty + cost align
 - **[Cozystack](/products/cozystack/)** — sovereign-by-architecture platform we typically recommend
-
----
-
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run data-sovereignty engagements and platform-engineering programs across the EU, DACH, and Central Asia.*
-

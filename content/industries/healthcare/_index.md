@@ -14,8 +14,8 @@ related_pages:
   - /solutions/nis2-compliance/
   - /solutions/sovereign-ai/
   - /industries/public-sector/
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/private-cloud-platform/
+  - /products/ai-platform/
   - /services/platform-readiness-assessment/
   - /resources/nis2-compliance-checklist/
   - /case-studies/sovereign-public-cloud/
@@ -50,7 +50,7 @@ faq:
   - q: "How does a sovereign cloud handle GDPR special-category health data?"
     a: "Health data is special-category personal data under GDPR Article 9, so it needs a specific legal basis and stronger safeguards. A sovereign platform pins storage to a named EU region, encrypts data with customer-held keys, and produces provider-owned audit logs, so residency and access controls are demonstrable to a regulator or data-protection authority."
   - q: "Can we run medical AI on patient data without sending it to a hyperscaler?"
-    a: "Yes. The AI & GPU runs GPU inference and training inside the same sovereign perimeter as the data, so imaging models, clinical NLP, and decision-support workloads process patient data without it leaving the provider's jurisdiction or control."
+    a: "Yes. The AI Platform runs GPU inference and training inside the same sovereign perimeter as the data, so imaging models, clinical NLP, and decision-support workloads process patient data without it leaving the provider's jurisdiction or control."
   - q: "Do you provide named healthcare customer references?"
     a: "Named healthcare references are not yet public — health engagements are NDA-protected. We share an anonymized sovereign public-cloud case study as an architectural evidence pattern, and healthcare logos will be added as permissions land."
   - q: "What does an engagement look like and how long does it take?"
@@ -61,17 +61,14 @@ faq:
 
 # Sovereign cloud for healthcare
 
-**Hospitals, health insurers, diagnostics labs, and medical-AI teams handle the most sensitive personal data in the economy under two hard constraints: GDPR special-category obligations and NIS2 essential-entity duties. The architectural answer is not "a healthcare SaaS in someone else's cloud" — it's a sovereign platform where data residency, encryption-key custody, and audit trails are structural. Aenix builds and operates these platforms on [Cozystack](/products/cozystack/), running production healthcare workloads on the provider's own hardware.**
+**Hospitals, health insurers, diagnostics labs, and medical-AI teams handle the most sensitive personal data in the economy under two hard constraints: GDPR special-category obligations and NIS2 essential-entity duties. The architectural answer is not "a healthcare SaaS in someone else's cloud" — it's a sovereign platform where data residency, encryption-key custody, and audit trails are structural. Ænix builds and operates these platforms on [Cozystack](/products/cozystack/), running production healthcare workloads on the provider's own hardware.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for the regulated cloud foundation; **[AI & GPU](/products/aenix-platform/ai-ml-edition/)** for medical imaging, clinical NLP, and decision-support AI on patient data. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for the regulated cloud foundation; **[AI Platform](/products/ai-platform/)** for medical imaging, clinical NLP, and decision-support AI on patient data. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
   <a class="cta-secondary" href="/solutions/data-sovereignty/">Data sovereignty →</a>
 </div>
-
----
-
 
 ---
 
@@ -125,7 +122,7 @@ Healthcare infrastructure is not generic infrastructure, and the platform has to
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## How Aenix engages with healthcare organizations
+## How Ænix engages with healthcare organizations
 
 The standard engagement runs as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with workstreams weighted for the healthcare context:
 
@@ -149,7 +146,4 @@ We do not publish named healthcare customers — health engagements are NDA-prot
 
 ---
 
-
----
-
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes Cozystack as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes Cozystack as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

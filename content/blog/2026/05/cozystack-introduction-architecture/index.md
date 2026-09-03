@@ -1,6 +1,6 @@
 ---
 title: "Cozystack — what it is, architecture, and how it fits in 2026"
-description: "This is the long-form companion to our Cozystack product page. It walks through what Cozystack is, the architecture, how it differs from OpenStack and..."
+description: "What Cozystack is technically, the architectural choices behind it, how it compares to OpenStack and OpenShift, and when it is the wrong answer."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,9 +42,9 @@ quiz:
       explanation: "Choice 4: Cilium gives eBPF-based networking with native L4/L7 policies, observability, and service-mesh capabilities — replacing what NSX did in VMware deployments without the NSX licensing."
 ---
 
-**This is the long-form companion to our [Cozystack product page](/products/cozystack/). It walks through what Cozystack is, the architecture, how it differs from OpenStack and OpenShift, and where it fits in the 2026 cloud platform landscape.**
+*Component facts below reflect the Cozystack v1.6 release line (current as of September 2026).*
 
-Cozystack is an open-source cloud platform — Apache 2.0 licensed, CNCF Project, built primarily by Aenix with growing community contribution. It started as an internal platform for service-provider customers and was open-sourced in 2023 because the architectural pattern proved generally useful.
+Cozystack is an open-source cloud platform — Apache 2.0 licensed, CNCF Project, built primarily by Ænix with growing community contribution. It started as an internal platform for service-provider customers and was open-sourced in 2023 because the architectural pattern proved generally useful.
 
 ## What Cozystack is, technically
 
@@ -54,11 +54,11 @@ A single Kubernetes-based platform that runs on bare metal and provides:
 - Multi-tenant control plane via Tenant CRD
 - Managed database, queue, cache services
 - S3-compatible object storage
-- GPU as a service (NVIDIA vGPU for VMs; MIG / time-slicing / passthrough for containers)
-- Self-service portal (cozyportal)
+- GPU as a service (VFIO passthrough or NVIDIA vGPU for VMs; HAMi fractional sharing for containers in tenant Kubernetes clusters)
+- Self-service portal (Cozystack Dashboard)
 - Observability (VictoriaMetrics + VictoriaLogs)
 - Backup and DR (Velero + per-app PITR)
-- WHMCS billing integration for service-provider model
+- WHMCS billing integration for the service-provider model (an Ænix [product](/products/whmcs-integration/) on top of Cozystack, not an upstream component)
 
 All controlled by a cohesive operational model — single platform team running one stack rather than integrating ten.
 
@@ -74,9 +74,11 @@ The alternative would be a parallel virtualization stack (libvirt directly, Open
 
 Talos is a minimal, immutable Linux designed for Kubernetes. No SSH; configuration via API; no package manager; no shell. Operationally simpler and more secure than general-purpose Linux for Kubernetes hosts.
 
+Talos is the default, not a requirement. Since Cozystack v1.0 the platform also installs onto an existing Kubernetes cluster running a general-purpose distribution (Ubuntu, Debian, RHEL-family, openSUSE) via the `isp-full-generic` variant or the `cozystack.installer` Ansible collection.
+
 ### Choice 3: LINSTOR as default storage
 
-LINSTOR (DRBD-based) provides replicated block storage with good operational characteristics for Kubernetes. Rook-Ceph is also supported for object/file or for teams preferring Ceph.
+LINSTOR (DRBD-based, deployed through the Piraeus operator) provides replicated block storage with good operational characteristics for Kubernetes. It remains the shipped default through the v1.6 release line. Object storage is a separate layer — SeaweedFS, exposed as the managed Bucket service. Cozystack does not ship Rook or Ceph. Ænix is building [Blockstor](https://github.com/cozystack/blockstor), a Kubernetes-native, LINSTOR-API-compatible control plane for LVM/ZFS with DRBD replication; it is not yet part of a Cozystack release.
 
 ### Choice 4: Cilium for networking
 
@@ -88,7 +90,7 @@ Native Kubernetes resource defining tenant boundaries. Nested tenants for resell
 
 ### Choice 6: Flux for GitOps
 
-Lightweight, upstream-Kubernetes-aligned GitOps engine. Argo CD also works; Flux is the default.
+Lightweight, upstream-Kubernetes-aligned GitOps engine. Flux is the platform's own reconciliation engine (v2.8 as of Cozystack v1.6). You can point Argo CD at your Cozystack manifests like any other Kubernetes resources, but Argo CD as an alternative *platform* engine is still a roadmap item, not a supported install path.
 
 ### Choice 7: VictoriaMetrics + VictoriaLogs for observability
 
@@ -112,7 +114,7 @@ Both KubeVirt-based.
 
 OpenShift Virtualization: Red Hat commercial subscription. Strong enterprise tooling. Tied to Red Hat / IBM relationship.
 
-Cozystack: Apache 2.0 open source. Aenix commercial support optional. Lighter operational footprint without the OpenShift surface area.
+Cozystack: Apache 2.0 open source. Ænix commercial support optional. Lighter operational footprint without the OpenShift surface area.
 
 For Red Hat customers, OpenShift Virtualization fits naturally. For organizations preferring open-source-first, Cozystack.
 
@@ -124,20 +126,20 @@ Proxmox: SMB-friendly, single-tenant, mature. Excellent under ~50 hosts.
 
 Cozystack: Multi-tenant scale, service-provider-friendly. Better above ~50 hosts and where multi-tenancy matters.
 
-## The Aenix relationship
+## The Ænix relationship
 
-Cozystack and Aenix are intentionally separate:
+Cozystack and Ænix are intentionally separate:
 
 - **Cozystack** is community-governed CNCF Project. Apache 2.0. Anyone can deploy, contribute, or fork.
-- **Aenix** is the commercial entity. Builds and maintains Cozystack. Provides paid support tiers and professional services.
+- **Ænix** is the commercial entity. Builds and maintains Cozystack. Provides paid support tiers and professional services.
 
 The separation matters because:
 
-- **Customer choice** — you can deploy Cozystack independently. You don't need Aenix to use the platform.
-- **Project longevity** — Cozystack survives Aenix-business decisions because it's CNCF-governed and Apache-licensed.
-- **Aenix focus** — Aenix sells engagement (assessment, build, support), not licenses.
+- **Customer choice** — you can deploy Cozystack independently. You don't need Ænix to use the platform.
+- **Project longevity** — Cozystack survives Ænix-business decisions because it's CNCF-governed and Apache-licensed.
+- **Ænix focus** — Ænix sells engagement (assessment, build, support), not licenses.
 
-For organizations seeking commercial support, Aenix is one option (the primary one in 2026 because Aenix is the largest contributor). Other commercial support providers may emerge as the project matures.
+For organizations seeking commercial support, Ænix is one option (the primary one in 2026 because Ænix is the largest contributor). Other commercial support providers may emerge as the project matures.
 
 ## When Cozystack is the right answer
 
@@ -156,14 +158,3 @@ For organizations seeking commercial support, Aenix is one option (the primary o
 - Pure public-cloud-native architecture — hyperscaler-managed services may be the right call
 
 A good engagement is honest about these cases.
-
-## How to start
-
-- Self-deploy: **[cozystack.io](https://cozystack.io)**
-- Aenix engagement: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
-- Specific use case: see solution / alternatives pages
-
----
-
-*Cozystack is a CNCF Project. Aenix is the company that builds and supports it.*
-

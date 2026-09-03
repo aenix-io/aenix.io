@@ -1,6 +1,6 @@
 ---
 title: "Proxmox vs VMware vs Cozystack — a 2026 comparison for the post-Broadcom era"
-description: "This is the long-form companion to our Proxmox alternative page. It walks through where Proxmox VE, VMware (post-Broadcom), and Cozystack each fit — by use..."
+description: "Proxmox VE, VMware after Broadcom, and Cozystack compared by architecture and use case, with a feature matrix and the realistic migration paths."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -27,7 +27,7 @@ quiz:
         - { text: "First-class via operators", correct: false }
         - { text: "Limited via vCD plugins", correct: false }
         - { text: "Manual / community", correct: true }
-      explanation: "Proxmox managed databases = manual / community integration. VMware = limited (via vCD plugins). Cozystack = first-class via operators: PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ."
+      explanation: "Proxmox managed databases = manual / community integration. VMware = limited (via vCD plugins). Cozystack = first-class via operators: PostgreSQL, MariaDB, MongoDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, OpenSearch, Qdrant, FoundationDB."
     - q: "For Proxmox → Cozystack migration, what does the article say is the typical timeline?"
       options:
         - { text: "2-4 weeks plus 3-9 months", correct: true }
@@ -41,8 +41,6 @@ quiz:
         - { text: "The Proxmox community forbids it", correct: false }
       explanation: "Proxmox → VMware migration is rare in 2026 because the economics rarely justify the reverse move post-Broadcom — VMware's subscription pricing makes the move uneconomical for most organizations."
 ---
-
-**This is the long-form companion to our [Proxmox alternative page](/alternatives/proxmox-alternative). It walks through where Proxmox VE, VMware (post-Broadcom), and Cozystack each fit — by use case, scale, and operational model.**
 
 The post-Broadcom virtualization market has three main open-source-friendly options: Proxmox VE, Cozystack, and (less common) XCP-ng. Each has a different architectural target. Picking the right one is mostly a function of scale and use case.
 
@@ -86,7 +84,7 @@ The post-Broadcom virtualization market has three main open-source-friendly opti
 
 ## Cozystack — open-source, Kubernetes-native, multi-tenant
 
-**Architecture:** KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. Open-source CNCF Project.
+**Architecture:** KubeVirt + Cilium + Kube-OVN + LINSTOR (DRBD) + Tenant CRD + Cozystack Dashboard. Open-source CNCF Project.
 
 **Strengths:**
 - Kubernetes-native virtualization — same platform for VMs, containers, databases.
@@ -97,7 +95,7 @@ The post-Broadcom virtualization market has three main open-source-friendly opti
 
 **Limits:**
 - Newer than Proxmox or VMware; smaller community.
-- Kubernetes operational expertise required (mitigated by Aenix support tier).
+- Kubernetes operational expertise required (mitigated by Ænix support tier).
 - Not optimized for single-tenant SMB use case (Proxmox better here).
 
 **Best for:** Service providers, regulated enterprises, multi-team platforms, AI/GPU operators, sovereign-cloud builders.
@@ -108,13 +106,13 @@ The post-Broadcom virtualization market has three main open-source-friendly opti
 |---|---|---|---|
 | **License** | AGPLv3 + commercial subscription | Subscription-only | Apache 2.0 |
 | **Compute** | KVM + LXC | vSphere | KubeVirt (KVM) + K8s |
-| **Storage** | ZFS, Ceph | vSAN | LINSTOR or Ceph |
+| **Storage** | ZFS, Ceph | vSAN | LINSTOR (DRBD) |
 | **Network** | Linux SDN | NSX | Cilium |
 | **Multi-tenancy** | Namespace + permissions | vCloud Director | Tenant CRD |
-| **Managed databases** | Manual / community | Limited | First-class (PG, MySQL, Redis, Kafka, etc.) |
+| **Managed databases** | Manual / community | Limited | First-class (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, OpenSearch, etc.) |
 | **S3 object storage** | Manual | Limited | First-class |
-| **GPU** | Passthrough | vGPU under Horizon | vGPU + MIG + time-slicing |
-| **Self-service** | Web UI for ops | vCD | cozyportal |
+| **GPU** | Passthrough | vGPU under Horizon | VFIO passthrough or vGPU for VMs; HAMi fractional sharing for containers |
+| **Self-service** | Web UI for ops | vCD | Cozystack Dashboard |
 | **Backup/DR** | PBS | SRM | Velero + PG PITR |
 | **Best scale** | <50 hosts | Enterprise | Multi-tenant scale |
 | **Best for** | SMB, labs | Existing VMware | Cloud builders, regulated multi-tenant |
@@ -137,8 +135,3 @@ Rare in 2026; reverse migration usually doesn't make economic sense post-Broadco
 3. **You're already on VMware and the budget supports staying:** stay (but plan an exit). If renewal pressures bite: see VMware alternative.
 4. **AI/GPU workloads at scale:** Cozystack (KubeVirt + GPU operators).
 5. **Pure container workloads, no VMs:** vanilla Kubernetes (Cozystack still works but is over-spec).
-
----
-
-*Aenix is the team behind Cozystack.*
-

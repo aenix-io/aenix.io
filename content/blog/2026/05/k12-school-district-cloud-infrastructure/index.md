@@ -1,6 +1,6 @@
 ---
 title: "K-12 school district cloud infrastructure — when sovereignty matters more than convenience"
-description: "Companion to K-12 education industry page."
+description: "Why K-12 infrastructure differs from universities, when a district actually needs sovereign infrastructure, and the architecture pattern that fits."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,8 +42,6 @@ quiz:
       explanation: "For consortia: federated multi-district platform with shared core, per-district isolation, joint procurement, distributed operations. This pools investment without sacrificing district-level data control."
 ---
 
-Companion to **[K-12 education industry page](/industries/education-k12)**.
-
 ## Why K-12 is different from universities
 
 Universities have research computing, AI/ML labs, and curriculum-driven cloud-native education needs. K-12 districts:
@@ -82,12 +80,3 @@ For consortia (multi-district shared platform):
 - Skipping FERPA / GDPR audit-readiness
 - Vendor-led "education cloud" with lock-in
 - Mid-cycle re-architecture due to budget cycle mismatch
-
-## How to start
-
-**[Discovery call](/industries/education-k12/)** for fit-check.
-
----
-
-*Aenix is the team behind Cozystack.*
-

@@ -1,11 +1,12 @@
 ---
 title: "Industries"
-description: "Aenix industry landings: regulatory triggers, architecture patterns and use cases for finance, public sector, telco and hosting, mapped to Platform editions."
+description: "Aenix industry pages: the regulatory trigger, the architecture pattern and the Aenix platform that fits finance, public sector, telco, industry and hosting."
 hero_subtitle: "Regulatory triggers and architecture patterns, mapped to your sector"
 language: "en"
+hreflang_de: /de/branchen/
 ---
 
-**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix Platform edition that fits. Bank engagements stay anonymous until mid-2027, but [five deployments are written up in full](/case-studies/) with their architecture and numbers.**
+**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix platform that fits. Bank engagements stay anonymous until mid-2027, but [nine deployments are written up in full](/case-studies/) with their architecture and numbers.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -18,7 +19,7 @@ language: "en"
 <div class="diagram__conn">carries</div>
 <div class="diagram__node"><b>Regulatory trigger</b><div class="diagram__chips"><span>DORA</span><span>NIS2</span><span>Sovereignty mandates</span><span>Sectoral data laws</span></div></div>
 <div class="diagram__conn">mapped to</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform edition</b><div class="diagram__chips"><span>Enterprise</span><span>Public Cloud</span><span>AI/ML</span><span>ISP</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix platform</b><div class="diagram__chips"><span>Private Cloud Platform</span><span>Public Cloud Platform</span><span>AI Platform</span></div></div>
 </div>
 </div>
 
@@ -31,28 +32,28 @@ language: "en"
 
 ### Highly regulated
 
-- **[Financial services](/industries/financial-services/)** — Banks, insurers, market infrastructure under DORA scope. Pairs with: Enterprise Edition.
-- **[Insurance](/industries/insurance/)** — DORA scope + sectoral data laws + claims AI. Pairs with: Enterprise Edition + AI & GPU.
-- **[Public sector](/industries/public-sector/)** — Government cloud aligned with national sovereignty mandates. Pairs with: Enterprise Edition or Provider Edition.
-- **[Healthcare](/industries/healthcare/)** — Sectoral data laws (national equivalents to HIPAA), AI on regulated medical data. Pairs with: Enterprise Edition + AI & GPU.
-- **[Energy](/industries/energy/)** — NIS2 essential entity, edge cloud, AI optimization. Pairs with: Enterprise Edition.
-- **[Transport / logistics](/industries/transport-logistics/)** — NIS2 essential entity, multi-modal logistics infrastructure. Pairs with: Enterprise Edition.
+- **[Financial services](/industries/financial-services/)** — Banks, insurers, market infrastructure under DORA scope. Pairs with: Private Cloud Platform.
+- **[Insurance](/industries/insurance/)** — DORA scope + sectoral data laws + claims AI. Pairs with: Private Cloud Platform + AI Platform.
+- **[Public sector](/industries/public-sector/)** — Government cloud aligned with national sovereignty mandates. Pairs with: Private Cloud Platform or Public Cloud Platform.
+- **[Healthcare](/industries/healthcare/)** — Sectoral data laws (national equivalents to HIPAA), AI on regulated medical data. Pairs with: Private Cloud Platform + AI Platform.
+- **[Energy](/industries/energy/)** — NIS2 essential entity, edge cloud, AI optimization. Pairs with: Private Cloud Platform.
+- **[Transport / logistics](/industries/transport-logistics/)** — NIS2 essential entity, multi-modal logistics infrastructure. Pairs with: Private Cloud Platform.
 
 ### Cloud / hosting / MSP
 
-- **[Hosting providers](/industries/hosting-providers/)** — Regional hosting providers building cloud products. Pairs with: Provider Edition. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
-- **[MSP](/industries/msp/)** — Managed service providers offering branded cloud to enterprise customers. Pairs with: Provider Edition (white-label).
-- **[Telco](/industries/telco/)** — Tier-1 / tier-2 telco operators, NIS2 essential entity + customer-cloud product. Pairs with: Provider Edition or Enterprise Edition.
+- **[Hosting providers](/industries/hosting-providers/)** — Regional hosting providers building cloud products. Pairs with: Public Cloud Platform. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
+- **[MSP](/industries/msp/)** — Managed service providers offering branded cloud to enterprise customers. Pairs with: Public Cloud Platform (white-label).
+- **[Telco](/industries/telco/)** — Tier-1 / tier-2 telco operators, NIS2 essential entity + customer-cloud product. Pairs with: Public Cloud Platform or Private Cloud Platform.
 
 ### Industrial / education
 
-- **[Manufacturing](/industries/manufacturing/)** — Edge + IT/OT cloud platform for industrial operators. Pairs with: Enterprise Edition.
-- **[Universities](/industries/universities/)** — Research computing + sovereign student-data + AI/ML labs. Pairs with: Enterprise Edition + AI & GPU.
-- **[Education K-12](/industries/education-k12/)** — Sovereign cloud for school districts and ministries of education. Pairs with: Enterprise Edition.
+- **[Manufacturing](/industries/manufacturing/)** — Edge + IT/OT cloud platform for industrial operators. Pairs with: Private Cloud Platform.
+- **[Universities](/industries/universities/)** — Research computing + sovereign student-data + AI/ML labs. Pairs with: Private Cloud Platform + AI Platform.
+- **[Education K-12](/industries/education-k12/)** — Sovereign cloud for school districts and ministries of education. Pairs with: Private Cloud Platform.
 
 ### SMB / mid-market
 
-- **[SMB / mid-market](/industries/smb-mid-market/)** — Smaller organizations consuming cloud as a product. Pairs with: Provider Edition (via service-provider partner) or Pure Cozystack with Ænix Support.
+- **[SMB / mid-market](/industries/smb-mid-market/)** — Smaller organizations consuming cloud as a product. Pairs with: Public Cloud Platform via a service-provider partner, or [Cozystack with Ænix enterprise support](/products/cozystack-enterprise-support/).
 
 </div>
 </div>
@@ -61,9 +62,9 @@ language: "en"
 
 ## Customer evidence
 
-**Public production customers** (Ænix Platform Provider Edition, currently listed on aenix.io): GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
+**Public production customers** (Ænix Public Cloud Platform, currently listed on aenix.io): GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**NDA-protected engagements** (banks, sovereign cloud, AI/ML, telco): multi-million-euro Enterprise Edition and Provider Edition deployments; naming permitted from mid-2027. [Five deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
+**NDA-protected engagements** (banks, sovereign cloud, AI/ML, telco): multi-million-euro Private Cloud Platform and Public Cloud Platform deployments; naming permitted from mid-2027. [Nine deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
 
 **Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud / VPS hosting platforms, lightweight VDI, backup systems reducing storage cost up to 75%. [See case studies →](/case-studies/)
 

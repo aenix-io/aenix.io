@@ -10,49 +10,49 @@ companion_landing: "/de/loesungen/data-sovereignty/"
 quiz:
   title: "Wissens-Check: Datenresidenz 2026"
   questions:
-    - q: "Welcher ist der häufigste Fehlerpunkt bei der Datenresidenz, der bei Inspektionen aufgedeckt wird?"
+    - q: "Welcher Fehler bei der Datenresidenz wird in Prüfungen am häufigsten aufgedeckt?"
       options:
-        - { text: "Falsche Region für Produktionsspeicherung", correct: false }
-        - { text: "Produktion ist korrekt, aber SaaS-Observability prozessiert Logs in den USA", correct: true }
-        - { text: "Backup-Aufbewahrungsdauer falsch konfiguriert", correct: false }
-      explanation: "Versagenmodus 1: Produktion ist korrekt, Observability ist falsch. Compliance-Teams erfassen die Produktionsspeicherung, übersehen aber die Telemetrie-Ebene, die Logs/Metriken an US-Default-Regionen schickt."
-    - q: "Aus welchen Regulierungen ergeben sich Datenresidenz-Anforderungen?"
+        - { text: "Der Produktionsspeicher liegt in der falschen Region", correct: false }
+        - { text: "Die Produktion stimmt, aber SaaS-Observability verarbeitet Logs in den USA", correct: true }
+        - { text: "Die Aufbewahrungsdauer der Backups ist falsch konfiguriert", correct: false }
+      explanation: "Fehlermodus 1: die Produktion stimmt, die Observability nicht. Compliance-Teams prüfen den Produktionsspeicher, übersehen aber die Telemetrie-Ebene, die Logs und Metriken an US-Standardregionen schickt."
+    - q: "Aus welchen Regelwerken ergeben sich Anforderungen an die Datenresidenz?"
       options:
-        - { text: "Nur GDPR", correct: false }
-        - { text: "GDPR + DORA + NIS2 + sektorale Regeln + nationale Datenlokalisierungsgesetze (D, F, AT, CH)", correct: true }
-        - { text: "Nur DORA", correct: false }
-      explanation: "Quellen der Residenzanforderungen: GDPR (personenbezogene Daten), DORA (Finanz-Cloud), NIS2 (wesentliche/wichtige Entitäten), sektorale Regeln (Bankgeheimnis, Versicherung, Gesundheit) und nationale Datenlokalisierungsgesetze in DACH und darüber hinaus."
-    - q: "Welche vier Versagenmodi werden im Artikel als wiederkehrend beschrieben?"
+        - { text: "Ausschließlich aus der DSGVO", correct: false }
+        - { text: "DSGVO, DORA, NIS2, sektorale Regeln und nationale Gesetze", correct: true }
+        - { text: "Ausschließlich aus DORA für den Finanzsektor", correct: false }
+      explanation: "Quellen der Residenzanforderungen: DSGVO (personenbezogene Daten), DORA (Cloud im Finanzsektor), NIS2 (wesentliche und wichtige Einrichtungen), sektorale Regeln (Bankgeheimnis, Versicherung, Gesundheit) sowie nationale Datenlokalisierungsgesetze in der DACH-Region und darüber hinaus."
+    - q: "Welche vier Fehlermodi beschreibt der Artikel als wiederkehrend?"
       options:
         - { text: "Falsche Region, fehlende Backups, kein Monitoring, kein Audit-Log", correct: false }
-        - { text: "Produktion korrekt aber Observability falsch, Backups stimmen nicht mit Produktionsresidenz überein, CI/CD verarbeitet regulierte Daten, Sub-Lieferantenkette unsichtbar", correct: true }
+        - { text: "Observability, Backup-Region, CI/CD-Daten und unsichtbare Sublieferanten", correct: true }
         - { text: "Falsche Hardware, falsche Software, falsche Verträge, falsche Schulung", correct: false }
-      explanation: "Vier wiederkehrende Versagenmodi: (1) Observability verlässt den Aufsichtsbereich, (2) Backups replizieren nicht in zugelassene Region, (3) CI/CD-Pipeline verarbeitet regulierte Daten in falscher Region, (4) Sub-Lieferantenkette nach erstem Hop unsichtbar."
-    - q: "Was muss laut Checkliste für Verschlüsselungsschlüssel sichergestellt sein?"
+      explanation: "Vier wiederkehrende Fehlermodi: (1) Observability verlässt den Aufsichtsbereich, (2) Backups replizieren nicht in die zugelassene Region, (3) die CI/CD-Pipeline verarbeitet regulierte Daten in der falschen Region, (4) die Sublieferantenkette ist nach dem ersten Glied nicht mehr einsehbar."
+    - q: "Was verlangt die Checkliste für Verschlüsselungsschlüssel?"
       options:
-        - { text: "Schlüssel bei Cloud-Provider", correct: false }
-        - { text: "Schlüssel unter Kundenkontrolle (wo Regulatoren es fordern), mit dokumentierter Rotation und Notfallzugriff", correct: true }
-        - { text: "Keine Verschlüsselung notwendig", correct: false }
-      explanation: "Schlüsselkontrolle: Verschlüsselung at rest für alle Datenklassen, Schlüssel unter Kundenkontrolle wo Regulatoren es fordern (HSM-basiert für sensitivste Daten), Schlüsselrotation und Notfallzugriff dokumentiert, in-transit + in-use für sensible Datenklassen."
-    - q: "Was muss bei der Source-Code-Management-Region beachtet werden?"
+        - { text: "Die Schlüssel liegen beim Cloud-Anbieter", correct: false }
+        - { text: "Die Schlüssel liegen beim Kunden, mit dokumentierter Rotation", correct: true }
+        - { text: "Eine Verschlüsselung ist nicht erforderlich", correct: false }
+      explanation: "Schlüsselkontrolle: Verschlüsselung im Ruhezustand für alle Datenklassen, Schlüssel unter Kundenkontrolle überall dort, wo die Aufsicht es fordert (HSM-basiert für die sensibelsten Daten), dokumentierte Schlüsselrotation und dokumentierter Notfallzugriff, Verschlüsselung im Transport und in Benutzung für sensible Datenklassen."
+    - q: "Was ist bei der Region des Quellcode-Managements zu beachten?"
       options:
-        - { text: "Region ist irrelevant", correct: false }
-        - { text: "Region dokumentieren — besonders für sektorale Regeln, die auch Source Code in den Geltungsbereich nehmen", correct: true }
-        - { text: "Source Code immer in den USA", correct: false }
-      explanation: "CI/CD-Checkliste: Build- und Test-Infrastruktur in zugelassener Region; Testdaten anonymisiert; Dev/Staging keine ungemaskten Produktionsdaten; Source-Code-Management-Region dokumentiert (besonders für sektorale Regeln, die SCM in den Geltungsbereich nehmen)."
+        - { text: "Die Region ist für die Residenzbetrachtung nicht relevant", correct: false }
+        - { text: "Die Region ist zu dokumentieren, weil sektorale Regeln sie erfassen", correct: true }
+        - { text: "Quellcode gehört grundsätzlich in die USA", correct: false }
+      explanation: "CI/CD-Checkliste: Build- und Testinfrastruktur in der zugelassenen Region, anonymisierte Testdaten, keine unmaskierten Produktionsdaten in Dev und Staging und eine dokumentierte Region für das Quellcode-Management — besonders wichtig, weil manche sektoralen Regeln auch den Quellcode in den Geltungsbereich nehmen."
 ---
 
 Begleitung zur **[Datensouveränitäts-Page](/de/loesungen/data-sovereignty)**. Was Datenresidenzregeln tatsächlich erfordern, wo typische Cloud-Setups versagen, wie eine Architektur aussieht, die Residenz auf jeder Schicht nachweisen kann.
 
-## Was "Datenresidenz" bedeutet
+## Was „Datenresidenz“ bedeutet
 
 Datenresidenz ist die Anforderung, dass spezifizierte Daten in einer definierten Jurisdiktion gespeichert und verarbeitet werden. Sie ist eine Komponente der breiteren Datensouveränität.
 
 ## Quellen der Residenzanforderungen
 
-- **GDPR** — personenbezogene Daten, Cross-Border-Transfer-Regeln
+- **DSGVO** — personenbezogene Daten, Cross-Border-Transfer-Regeln
 - **DORA** — Finanz-Cloud-Architektur
-- **NIS2** — wesentliche und wichtige Entitäten
+- **NIS2** — wesentliche und wichtige Einrichtungen
 - **Sektorale Regeln** — Bankgeheimnis, Versicherungsregulierung, Gesundheitsgesetze
 - **Nationale Datenlokalisierungsgesetze** — Deutschland, Frankreich, Österreich, Schweiz mit unterschiedlichen Schwerpunkten
 
@@ -104,5 +104,5 @@ Strukturierte Bewertung → **[Platform Readiness Assessment](/de/dienstleistung
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

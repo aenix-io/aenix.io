@@ -48,7 +48,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Ein VMware-Kostenrechner macht aus Broadcoms Verlängerung eine Zahl, mit der Sie handeln können. Geben Sie die CPU-Kerne Ihres Bestands und Ihren Preis pro Kern ein — und sehen Sie Jahreskosten, die Netto-Ersparnis beim Wechsel auf eine offene Apache-2.0-Plattform, das Drei-Jahres-Delta nach Migration und die Amortisation. Gebaut von Aenix — dem Team hinter Cozystack.**
+**Ein VMware-Kostenrechner macht aus Broadcoms Verlängerung eine Zahl, mit der Sie handeln können. Geben Sie die CPU-Kerne Ihres Bestands und Ihren Preis pro Kern ein — und sehen Sie Jahreskosten, die Netto-Ersparnis beim Wechsel auf eine offene Apache-2.0-Plattform, das Drei-Jahres-Delta nach Migration und die Amortisation. Gebaut von Ænix — dem Team hinter Cozystack.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
@@ -64,13 +64,14 @@ faq:
 {{< vmware-calculator lang="de" currency="€" >}}
 
 Die Lizenzkosten, die Sie an VMware/Broadcom zahlen, entfallen auf einer offenen Plattform (Apache 2.0, keine Pro-Core-Gebühr). Es bleiben Support und die einmalige Migration — beides oben modelliert. Für ein tieferes, Workload-genaues Modell nutzen Sie die **[Cloud-Repatriation-Lösung](/de/loesungen/cloud-repatriation/)**.
+
 ---
 
 ## Wie gerechnet wird
 
 - **VMware-Kosten pro Jahr** = Kerne × VMware-Kosten pro Kern/Jahr.
-- **Aenix-Support pro Jahr** = Kerne × Aenix-Support pro Kern/Jahr (die Plattform selbst ist Apache 2.0).
-- **Netto-Ersparnis pro Jahr** = VMware-Jahr − Aenix-Jahr.
+- **Ænix-Support pro Jahr** = Kerne × Ænix-Support pro Kern/Jahr (die Plattform selbst ist Apache 2.0).
+- **Netto-Ersparnis pro Jahr** = VMware-Jahr − Ænix-Jahr.
 - **3-Jahres-Netto** = Netto-Jahr × 3 − einmalige Migrationskosten.
 - **Amortisation** = Migrationskosten ÷ monatliche Netto-Ersparnis.
 
@@ -78,13 +79,14 @@ Die Lizenzkosten, die Sie an VMware/Broadcom zahlen, entfallen auf einer offenen
 <div class="diagram">
 <div class="diagram__node"><b>VMware-Kosten pro Jahr</b><div class="diagram__chips"><span>Kerne × Kosten pro Kern/Jahr</span></div></div>
 <div class="diagram__conn">verglichen mit</div>
-<div class="diagram__node diagram__node--brand"><b>Aenix-Support pro Jahr</b><div class="diagram__chips"><span>Apache 2.0</span><span>keine Pro-Core-Gebühr</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Support pro Jahr</b><div class="diagram__chips"><span>Apache 2.0</span><span>keine Pro-Core-Gebühr</span></div></div>
 <div class="diagram__conn">ergibt</div>
 <div class="diagram__node"><b>Netto-Ersparnis</b><div class="diagram__chips"><span>3-Jahres-Netto</span><span>Amortisation</span></div></div>
 </div>
 </div>
 
 Bewusst einfache Eingaben für ein belegbares Ergebnis. Eine volle TCO umfasst Strom, Hardware-Refresh, Personal und die Workloads, die in der Cloud bleiben — das modellieren wir mit Ihnen im Gespräch.
+
 ---
 
 ## Aus der Zahl einen Plan machen
@@ -96,7 +98,7 @@ Bewusst einfache Eingaben für ein belegbares Ergebnis. Eine volle TCO umfasst S
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/ressourcen/vmware-kostenrechner/ ; hreflang de self, en → /resources/vmware-cost-calculator/.

@@ -1,7 +1,7 @@
 ---
 title: "Cloud strategy consultancy — engineers who run platforms, not slide-deck strategists"
-description: "Cloud strategy is a question architects and senior engineers can answer better than management consultants. Aenix runs cloud strategy engagements as part of..."
-related_pages: ["/services/platform-readiness-assessment", "/solutions/cloud-cost-optimization", "/solutions/cloud-repatriation", "/products/aenix-platform/", "/products/cozystack"]
+description: "Cloud strategy from architects who run production platforms: workload classification, an honest TCO model and migration sequencing in a written report."
+related_pages: ["/services/platform-readiness-assessment", "/solutions/cloud-cost-optimization", "/solutions/cloud-repatriation", "/products/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -33,11 +33,12 @@ faq:
     a: "Yes. The Phase 2 implementation roadmap is an Aenix-deliverable build plan. Aenix sells the productized Ænix Platform plus services on top, with pricing tiers Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, and Enterprise Custom."
   - q: "What platform does the recommended open-source path use?"
     a: "Cozystack, an Apache 2.0 CNCF project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium (eBPF) networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. There is no per-CPU or per-core licensing."
+hreflang_de: /de/dienstleistungen/cloud-strategy-consultancy/
 ---
 
-**Cloud strategy is a question architects and senior engineers can answer better than management consultants. Aenix runs cloud strategy engagements as part of the same Platform Readiness Assessment that delivers actionable architecture — written report with named workloads, costs, and timelines, not a 200-page transformation plan.**
+**Cloud strategy is a question architects and senior engineers can answer better than management consultants. Ænix runs cloud strategy engagements as part of the same Platform Readiness Assessment that delivers actionable architecture — written report with named workloads, costs, and timelines, not a 200-page transformation plan.**
 
-> **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — strategy outputs which edition fits your buyer profile and engagement scope.
+> **Pairs with:** all three **[Ænix platforms](/products/)** — the strategy output names which one fits your buyer profile and engagement scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -65,7 +66,7 @@ faq:
 - **TCO honest model** — across substrates, with realistic assumptions
 - **Sovereignty / regulator gap** — where compliance shapes architecture
 - **Migration sequencing** — what moves first, what stays, what's hybrid
-- **Phase 2 implementation roadmap** — Aenix-deliverable build plan
+- **Phase 2 implementation roadmap** — Ænix-deliverable build plan
 
 The engagement runs as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with strategy-level emphasis. Output is a written executive report.
 
@@ -88,7 +89,5 @@ For specific triggers see **[cloud cost optimization](/solutions/cloud-cost-opti
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- SEO: title "Cloud Strategy Consultancy — Engineers, Not Strategists | Aenix"
-Word count: ~350. -->

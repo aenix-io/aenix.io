@@ -14,7 +14,7 @@ hreflang_en: "/migration/nutanix/"
 related_pages:
   - /alternatives/nutanix-alternative/
   - /migration/vmware/
-  - /products/aenix-platform/
+  - /products/
   - /services/platform-readiness-assessment/
   - /roi-calculator/
 service:
@@ -54,11 +54,9 @@ faq:
     a: "Yes. Use the ROI and TCO calculator to model the delta between the current Nutanix renewal path and an owned Cozystack platform, including hardware, platform-team capacity, and the operational learning curve, before you commit to hardware or a migration timeline."
 ---
 
-# Nutanix migration: exit HCI lock-in on your own terms
+**Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Ænix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor license. The destination is [Cozystack](/products/cozystack/), built and operated by the same engineers who run your migration.**
 
-**Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Aenix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor license. The destination is [Cozystack](/products/cozystack/), built and operated by the same engineers who run your migration.**
-
-> **Pairs with:** the **[Ænix Platform](/products/aenix-platform/)** edition that matches your estate — Enterprise for regulated workloads, ISP for hosting providers, Public Cloud for large operators. Decide the destination on the **[Nutanix alternative](/alternatives/nutanix-alternative/)** comparison, then model the numbers with the **[ROI & TCO calculator](/roi-calculator/)**.
+> **Pairs with:** the Ænix platform that matches your estate — **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated organisations running cloud for themselves, **[Public Cloud Platform](/products/public-cloud-platform/)** if you sell cloud to customers. Decide the destination on the **[Nutanix alternative](/alternatives/nutanix-alternative/)** comparison, then model the numbers with the **[ROI & TCO calculator](/roi-calculator/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -76,7 +74,7 @@ The triggers cluster into three, and they compound.
 - **Hyperconverged lock-in.** HCI ties the storage fabric, the hypervisor, and the management plane to one vendor's stack. That is convenient until you want to change one layer, add a workload type the platform does not favour, or run on hardware the vendor does not bless.
 - **One platform for VMs and containers.** Many teams already run Kubernetes next to their Nutanix VMs. Consolidating both onto a single Kubernetes-native platform removes a parallel stack, a parallel operations model, and a parallel bill.
 
-If two or more of these apply, a structured migration usually compounds in your favour. If your renewal is comfortable and nothing else pushes, "stay and tune" is the honest recommendation — we will tell you so.
+If two or more of these apply, a structured migration usually compounds in your favour. If your renewal is comfortable and nothing else pushes, "stay and tune" is the honest recommendation — we will tell you so, and it is the recommendation more often here than on the VMware side. Nutanix has the best day-2 operational experience of any platform we migrate away from: one-click LCM upgrades, storage efficiency you never tune, one vendor accountable for the whole stack. You give that up. The **[Nutanix alternative](/alternatives/nutanix-alternative/)** page sets out both sides before you commit.
 
 ---
 
@@ -142,11 +140,11 @@ Migration economics look attractive in theory and turn on the details in practic
 
 ---
 
-## How Aenix engages on Nutanix migration
+## How Ænix engages on Nutanix migration
 
-The engagement mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with Nutanix emphasis: AOS/AHV inventory, destination architecture, workload classification, cutover sequencing against renewal dates, and a Phase 2 roadmap — delivered in 14-28 days. Phase 2 is implementation, with Aenix engineers integrated into your team for the migration cohorts and knowledge transfer throughout; an optional Phase 3 covers managed Cozystack operations after the estate has moved. Because we build the destination platform, the effort estimates are calibrated against work we have shipped, not guessed.
+The engagement mirrors our **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with Nutanix emphasis: AOS/AHV inventory, destination architecture, workload classification, cutover sequencing against renewal dates, and a Phase 2 roadmap — delivered in 14-28 days. Phase 2 is implementation, with Ænix engineers integrated into your team for the migration cohorts and knowledge transfer throughout; an optional Phase 3 covers managed Cozystack operations after the estate has moved. Because we build the destination platform, the effort estimates are calibrated against work we have shipped, not guessed.
 
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top. We run Nutanix and VMware migrations for enterprises, hosting providers, and public-sector operators across the EU and DACH.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We run Nutanix and VMware migrations for enterprises, hosting providers, and public-sector operators across the EU and DACH.*

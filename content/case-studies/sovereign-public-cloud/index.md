@@ -9,7 +9,7 @@ language: "en"
 hreflang_de: "/de/case-studies/sovereign-public-cloud/"
 images: ["img/og/og-case-sovereign-public-cloud.png"]
 related_pages:
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/public-cloud-platform/
   - /solutions/data-sovereignty/
   - /industries/hosting-providers/
   - /services/sovereign-cloud-builder/
@@ -91,6 +91,6 @@ The engagement grew into ongoing support and co-development: the client's engine
 
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the provider is described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Aenix sales](/contact/).*
+*This case study is published in anonymized form (Tier-3 evidence): the provider is described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

@@ -1,0 +1,34 @@
+{{/*
+  Short links: one page per entry in the effective registry, at /l/<slug>/.
+
+  The registry is data/links.yaml with data/linkpatches/ applied on top — see
+  layouts/partials/links.html. Hugo reads the patches directly, so a merged
+  pull request publishes on the next build with no apply step in between.
+
+  Entries whose status is not "active" stay in the registry as history but
+  produce no page, so a disabled link 404s instead of redirecting.
+
+  No `content` is set on the generated page: the "redirect" layout renders a
+  complete standalone document and never reads .Content. Declaring a text/html
+  body would require a `security.allowContent` exemption in hugo.yaml on Hugo
+  >= 0.16x, which this build deliberately avoids.
+*/}}
+{{ range partial "links.html" . }}
+  {{ if and .target_url (eq .status "active") }}
+    {{ $.AddPage (dict
+      "path"    .slug
+      "title"   (printf "Redirecting to %s" .target_url)
+      "kind"    "page"
+      "layout"  "redirect"
+      "build"   (dict "render" "always" "list" "never" "publishResources" false)
+      "sitemap" (dict "disable" true)
+      "params"  (dict
+        "target"     .target_url
+        "slug"       .slug
+        "created_at" .created_at
+        "created_by" .created_by
+        "note"       .note
+      )
+    ) }}
+  {{ end }}
+{{ end }}

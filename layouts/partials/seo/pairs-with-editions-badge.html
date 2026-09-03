@@ -16,15 +16,15 @@
 {{- $editions := .Params.pairs_with_editions -}}
 {{- if $editions -}}
 {{- $isDE := eq .Params.language "de" -}}
-{{- $basePath := cond $isDE "/de/produkte/aenix-platform/" "/products/aenix-platform/" -}}
+{{- $basePath := cond $isDE "/de/produkte/" "/products/" -}}
 {{- $labelPrefix := cond $isDE "Passt zu" "Pairs with" -}}
 
 {{- $editionLabels := dict
-  "public-cloud" "Provider Edition at operator scale"
-  "isp" "Provider Edition"
-  "enterprise" "Enterprise Edition"
+  "public-cloud" "Public Cloud Platform at operator scale"
+  "isp" "Public Cloud Platform"
+  "enterprise" "Private Cloud Platform"
   "idp" "Developer Self-Service"
-  "ai-ml" "AI & GPU"
+  "ai-ml" "AI Platform"
   "cozystack-support" "Pure Cozystack with Ænix Support"
 -}}
 {{- $editionSlugs := dict

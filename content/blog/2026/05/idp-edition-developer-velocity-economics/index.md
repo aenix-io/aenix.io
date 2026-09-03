@@ -1,12 +1,12 @@
 ---
 title: "Developer Self-Service — the cost of developer drag, and what an internal developer platform actually pays back"
-description: "Long-form companion to the Developer Self-Service page: time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
+description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
 language: "en"
-companion_landing: "/products/aenix-platform/idp-edition/"
+companion_landing: "/products/private-cloud-platform/"
 companion_label: "See Developer Self-Service product details →"
 quiz:
   title: "Test yourself: Developer Self-Service economics"
@@ -43,8 +43,6 @@ quiz:
       explanation: "The 'Poor fit' section lists under 50 engineers with a single product team (DevOps-only is the right fit) and hyperscaler-managed-meets-needs with no sovereignty pressure as the two poor-fit cases."
 ---
 
-**Long-form companion to the [Developer Self-Service landing](/products/aenix-platform/idp-edition/). For engineering leaders at 200-2,000-engineer organisations evaluating whether an Internal Developer Platform pays back — versus continuing on DevOps-only, ticket-driven infrastructure, or a half-built in-house platform.**
-
 The "should we invest in a platform team?" conversation tends to stall
 at one of two places: either the CFO can't see the economic case ("we
 already pay DevOps engineers, why add more headcount?"), or the
@@ -53,7 +51,7 @@ shallow, and has lost trust in the category.
 
 This article walks through both. What does the cost of developer drag
 actually look like in numbers? What does an IDP that *works* deliver?
-And what does the Developer Self-Service module of Ænix Platform do that you'd otherwise have
+And what does the developer self-service layer of Ænix Private Cloud Platform do that you'd otherwise have
 to build?
 
 ## The cost of developer drag
@@ -119,7 +117,7 @@ fail."
 
 ## What Developer Self-Service ships
 
-the Developer Self-Service module of Ænix Platform is the productisation of these characteristics
+the developer self-service layer of Ænix Private Cloud Platform is the productisation of these characteristics
 on top of the Cozystack foundation. Specifically:
 
 ### A multi-tenant Cozystack platform with Tenant CRD
@@ -132,9 +130,9 @@ business-unit hierarchies.
 This solves the "soft multi-tenancy is too leaky, cluster-per-team is
 operationally expensive" trilemma without compromise.
 
-### Golden-path-first cozyportal
+### Golden-path-first Cozystack Dashboard
 
-The cozyportal in Developer Self-Service exposes opinionated paths for the 5-10
+The Cozystack Dashboard in Developer Self-Service exposes opinionated paths for the 5-10
 most common product-team needs: environment provisioning, application
 deployment, managed-database provisioning, observability onboarding,
 secrets management. Each path completes in minutes.
@@ -177,7 +175,7 @@ Several things remain yours:
   teams, measuring adoption per path, sunsetting paths that don't get
   used) need to happen.
 
-Aenix's engagement model supports all three but doesn't replace
+Ænix's engagement model supports all three but doesn't replace
 customer ownership. Platforms that customers don't own organisationally
 don't outlast the engagement.
 
@@ -205,7 +203,7 @@ ready" for product teams; ongoing platform-component maintenance
 overhead.
 
 Developer Self-Service delivers the platform substrate in 3-6 months with
-ongoing Aenix support. For organisations not staffed for a 12-24
+ongoing Ænix support. For organisations not staffed for a 12-24
 month build, this is the difference between platform engineering
 happening this year or in 2028.
 
@@ -215,7 +213,7 @@ Backstage is a portal, not a platform. Buying Backstage before the
 underlying capabilities are self-service produces a beautiful catalog
 over the same operational chaos. Adoption stalls.
 
-Developer Self-Service's cozyportal can be replaced or augmented by Backstage if
+Developer Self-Service's Cozystack Dashboard can be replaced or augmented by Backstage if
 the customer prefers — but the underlying capabilities (environment
 provisioning, observability, secrets, identity) are self-service
 because the platform is, not because the portal pretends they are.
@@ -249,8 +247,8 @@ Strong fit:
 Marginal fit:
 
 - 100-200 engineers with growing platform pain but limited budget;
-  start with Pure Cozystack with Ænix Support and scale into IDP
-  Edition as the team grows
+  start with Cozystack Enterprise Support and scale into the Ænix
+  Private Cloud Platform as the team grows
 - Strong existing in-house platform with specific gaps — partial
   engagement may fit better than full Developer Self-Service
 
@@ -270,15 +268,15 @@ Poor fit:
   paths + 2-3 pilot product teams onboarded
 - **Full Developer Self-Service build** (6-18 months) — platform expanded to
   full engineering organisation, all targeted golden paths shipped
-- **Managed retainer** (optional, ongoing) — Aenix runs platform
+- **Managed retainer** (optional, ongoing) — Ænix runs platform
   Tier-3 under SLA
 
 Engagement size: Project plus managed retainer, quoted per RFP.
 
 ## Where to dig deeper
 
-- **[Developer Self-Service landing](/products/aenix-platform/idp-edition/)** —
-  feature list, edition-specific FAQ
+- **[Developer Self-Service landing](/products/private-cloud-platform/)** —
+  feature list, product-specific FAQ
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   engagement details
 - **[Platform Engineering services](/services/platform-engineering/)** —
@@ -289,8 +287,3 @@ Engagement size: Project plus managed retainer, quoted per RFP.
   the six production IDP patterns
 - **[Internal developer portal vs platform](/blog/2026/05/internal-developer-portal-vs-platform/)** —
   Backstage's place in 2026
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution.*

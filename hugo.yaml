@@ -34,7 +34,7 @@ cascade:
     page_type: event-landing
 
 params:
-  description: "Aenix builds Ænix Platform — a turnkey commercial cloud-in-a-box based on Cozystack (CNCF). Two editions: Provider, for organisations selling cloud, and Enterprise, for organisations running their own."
+  description: "Aenix builds turnkey cloud platforms on Cozystack (CNCF): Public Cloud Platform for organisations selling cloud, Private Cloud Platform for regulated organisations running their own, and AI Platform for GPU workloads."
   author: Ænix
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
@@ -71,44 +71,31 @@ params:
 
 menus:
   main:
-    # ── Products (Ænix Platform + 5 editions) ──
+    # ── Products (3 platforms + support + WHMCS) ──
     - name: Products
-      url: /products/aenix-platform/
+      url: /products/
       weight: 10
       identifier: products
-    - name: Ænix Platform overview
-      url: /products/aenix-platform/
+    - name: Ænix Public Cloud Platform
+      url: /products/public-cloud-platform/
       parent: products
       weight: 1
-    - name: Provider Edition
-      url: /products/aenix-platform/provider-edition/
+    - name: Ænix Private Cloud Platform
+      url: /products/private-cloud-platform/
       parent: products
       weight: 2
-    - name: Enterprise Edition
-      url: /products/aenix-platform/enterprise-edition/
+    - name: Ænix AI Platform
+      url: /products/ai-platform/
       parent: products
       weight: 3
-    - name: "AI & GPU module"
-      url: /products/aenix-platform/ai-ml-edition/
+    - name: Enterprise support for Cozystack
+      url: /products/cozystack-enterprise-support/
       parent: products
       weight: 4
-    - name: Developer Self-Service module
-      url: /products/aenix-platform/idp-edition/
+    - name: WHMCS integration
+      url: /products/whmcs-integration/
       parent: products
       weight: 5
-    - name: Cloud at operator scale
-      url: /products/aenix-platform/public-cloud-edition/
-      parent: products
-      weight: 6
-    - name: Cozystack (open source)
-      url: /products/cozystack/
-      parent: products
-      weight: 7
-
-    - name: WHMCS × Cozystack integration
-      url: /products/whmcs-cozystack-integration/
-      parent: products
-      weight: 8
 
     # ── Solutions ──
     - name: Solutions
@@ -269,10 +256,14 @@ menus:
       url: /alternatives/
       parent: solutions-migrate
       weight: 5
+    - name: All comparisons
+      url: /compare/
+      parent: solutions-migrate
+      weight: 6
     - name: Migration overview
       url: /migration/
       parent: solutions-migrate
-      weight: 6
+      weight: 7
 
     # ── Services ──
     - name: Services
@@ -400,6 +391,11 @@ menus:
       parent: resources
       weight: 6
 
+    - name: Compliance evidence
+      url: /compliance/
+      parent: resources
+      weight: 7
+
     # ── Company ──
     - name: Company
       url: /about/
@@ -422,7 +418,7 @@ menus:
       parent: company
       weight: 4
     - name: Enterprise Support
-      url: /enterprise-support/
+      url: /products/cozystack-enterprise-support/
       parent: company
       weight: 5
     - name: VMware Exit for Partners
@@ -443,46 +439,40 @@ menus:
       identifier: live-demo
       params:
         cta: true
-        external: true
+    - name: Cloud console demo
+      url: /demo/
+      parent: live-demo
+      weight: 1
+    - name: Developer platform demo
+      url: /idp/
+      parent: live-demo
+      weight: 2
   # ── German (DE) main menu — rendered on /de/ pages (language: de) ──
   main_de:
     - name: Produkte
-      url: /de/produkte/aenix-platform/
+      url: /de/produkte/
       identifier: products-de
       weight: 10
-    - name: Ænix Platform Überblick
-      url: /de/produkte/aenix-platform/
+    - name: Ænix Public Cloud Platform
+      url: /de/produkte/public-cloud-platform/
       parent: products-de
       weight: 1
-    - name: Provider Edition
-      url: /de/produkte/aenix-platform/provider-edition/
+    - name: Ænix Private Cloud Platform
+      url: /de/produkte/private-cloud-platform/
       parent: products-de
       weight: 2
-    - name: Enterprise Edition
-      url: /de/produkte/aenix-platform/enterprise-edition/
+    - name: Ænix AI Platform
+      url: /de/produkte/ai-platform/
       parent: products-de
       weight: 3
-    - name: "AI- & GPU-Modul"
-      url: /de/produkte/aenix-platform/ai-ml-edition/
+    - name: Enterprise-Support für Cozystack
+      url: /de/produkte/cozystack-enterprise-support/
       parent: products-de
       weight: 4
-    - name: Developer-Self-Service-Modul
-      url: /de/produkte/aenix-platform/idp-edition/
+    - name: WHMCS-Integration
+      url: /de/produkte/whmcs-integration/
       parent: products-de
       weight: 5
-    - name: Cloud im Betreiber-Maßstab
-      url: /de/produkte/aenix-platform/public-cloud-edition/
-      parent: products-de
-      weight: 6
-    - name: Cozystack (Open Source)
-      url: /de/produkte/cozystack/
-      parent: products-de
-      weight: 7
-
-    - name: WHMCS × Cozystack Integration
-      url: /de/produkte/whmcs-cozystack-integration/
-      parent: products-de
-      weight: 8
     - name: Lösungen
       url: /de/loesungen/
       identifier: solutions-de
@@ -635,10 +625,14 @@ menus:
       url: /de/alternativen/
       parent: solutions-de-migration
       weight: 5
+    - name: Alle Vergleiche
+      url: /de/vergleichen/
+      parent: solutions-de-migration
+      weight: 6
     - name: Migrationsübersicht
       url: /de/migration/
       parent: solutions-de-migration
-      weight: 6
+      weight: 7
     - name: Dienstleistungen
       url: /de/dienstleistungen/
       identifier: services-de
@@ -746,6 +740,10 @@ menus:
       url: /de/ressourcen/vmware-kostenrechner/
       parent: resources-de
       weight: 4
+    - name: Compliance-Nachweise
+      url: /de/compliance/
+      parent: resources-de
+      weight: 5
     - name: Unternehmen
       url: /de/ueber-uns/
       identifier: company-de
@@ -767,7 +765,7 @@ menus:
       parent: company-de
       weight: 4
     - name: Enterprise Support
-      url: /de/enterprise-support/
+      url: /de/produkte/cozystack-enterprise-support/
       parent: company-de
       weight: 5
     - name: VMware-Ausstieg für Partner
@@ -786,10 +784,19 @@ menus:
       identifier: live-demo-de
       params:
         cta: true
-        external: true
+    - name: Cloud-Konsole-Demo
+      url: /demo/
+      parent: live-demo-de
+      weight: 1
+    - name: Developer-Platform-Demo
+      url: /idp/
+      parent: live-demo-de
+      weight: 2
+  # NOTE: this `footer` menu is not rendered — layouts/partials/footer.html
+  # builds its own locale-aware link map. Kept in sync so it does not rot.
   footer:
-    - name: Ænix Platform
-      url: /products/aenix-platform/
+    - name: Products
+      url: /products/
       weight: 1
     - name: Solutions
       url: /solutions/

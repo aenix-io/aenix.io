@@ -1,6 +1,6 @@
 ---
 title: "Cozystack vs VMware — deep-dive comparison for platform engineers"
-description: "This is the long-form companion to our Cozystack vs VMware comparison page. It walks through the architectural details, operational implications, and..."
+description: "Cozystack against VMware layer by layer — compute, storage, network, multi-tenancy — with the operational implications and migration patterns for each."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,15 +42,13 @@ quiz:
       explanation: "Typical 100-VM VMware → Cozystack migration: 7-10 months elapsed (discovery, parallel deployment, image migration cohorts, network/storage cutover, DR cutover, decommission). The driver is regression testing and parallel-run windows, not raw migration speed."
 ---
 
-**This is the long-form companion to our [Cozystack vs VMware comparison page](/compare/cozystack-vs-vmware). It walks through the architectural details, operational implications, and migration patterns at a level useful for platform engineers and architects.**
-
 This article assumes familiarity with both platforms. For broader VMware exit guidance see **[VMware alternative](/alternatives/vmware-alternative/)** or **[VMware migration](/migration/vmware/)**.
 
 ## Compute layer
 
 **VMware vSphere/ESXi:** mature type-1 hypervisor. Strong VM lifecycle, live migration with shared storage, vMotion. Tight VMware Tools integration with guests.
 
-**Cozystack KubeVirt:** type-2 conceptually (KVM running as Pods), but operationally type-1-like. Live migration (CPU; GPU live migration is industry-wide limitation). Standard QEMU/KVM under the hood; broad guest OS support.
+**Cozystack KubeVirt:** qemu/KVM wrapped in Pods. KVM itself is a kernel-mode hypervisor, so the guest still runs on hardware virtualization extensions — the Pod is a scheduling and lifecycle wrapper, not an extra emulation layer. Live migration (CPU; GPU live migration is industry-wide limitation). Standard QEMU/KVM under the hood; broad guest OS support.
 
 In practice both deliver production-grade VM workloads. The KubeVirt model adds Kubernetes operational integration (declarative VM config, GitOps lifecycle, native ingress, observability).
 
@@ -58,9 +56,9 @@ In practice both deliver production-grade VM workloads. The KubeVirt model adds 
 
 **VMware vSAN:** software-defined storage built into vSphere. Operationally smooth; tight integration. Tied to VMware licensing.
 
-**Cozystack LINSTOR (or Ceph):** open-source replicated block storage. LINSTOR uses DRBD for sync replication; Ceph for distributed object/block. More operational responsibility; more architectural flexibility.
+**Cozystack LINSTOR:** open-source replicated block storage, deployed through the Piraeus operator. LINSTOR uses DRBD for synchronous replication; object storage is a separate layer (SeaweedFS). More operational responsibility; more architectural flexibility.
 
-For most workloads, LINSTOR matches vSAN in operational characteristics. Ceph is appropriate where object/file storage is also needed.
+For most workloads, LINSTOR matches vSAN in operational characteristics. Where S3-style object storage is also needed, Cozystack ships SeaweedFS as the managed Bucket service.
 
 ## Network layer
 
@@ -84,7 +82,7 @@ Tenant model is conceptually different — vCD organizations vs Tenant CRD insta
 
 **VMware:** vCenter UI for ad-hoc operations; PowerCLI / Ansible for automation. SSH not the default model.
 
-**Cozystack:** kubectl + GitOps as the default model. cozyportal UI for tenant operations. GitOps PR review for change-management.
+**Cozystack:** kubectl + GitOps as the default model. Cozystack Dashboard UI for tenant operations. GitOps PR review for change-management.
 
 The shift from vCenter-centric to kubectl-centric is a real operational learning curve for VMware-trained teams. Most engineers ramp in 4-8 weeks with focused training.
 
@@ -112,11 +110,11 @@ VMware → Cozystack migration in production:
 2. **Cozystack foundation** — parallel deployment; not a tenant of VMware.
 3. **Image migration** — KubeVirt CDI imports VMDK or qcow2 images. Windows VMs get VMware Tools cleanup before first KubeVirt boot.
 4. **Network cutover** — VLAN mapping into Cilium; policy parity validated against NSX rules.
-5. **Storage cutover** — vSAN → LINSTOR / Ceph; data migration during cohort cutover.
+5. **Storage cutover** — vSAN → LINSTOR (DRBD); data migration during cohort cutover.
 6. **DR cutover** — Velero replaces SRM; tested per cohort.
 7. **VMware decommission** — staged as cohorts complete.
 
-Typical 100-VM migration: 7-10 months elapsed.
+Typical elapsed time for a 100-1000 VM estate: 8-18 months, assessment through decommission. The driver is rarely raw copy speed — it is regression testing and the parallel-run windows application owners will agree to.
 
 ## When the comparison matters
 
@@ -128,8 +126,3 @@ This level of detail is useful when:
 - Team training planning
 
 For higher-level evaluation, **[VMware alternative](/alternatives/vmware-alternative/)** is more appropriate starting point.
-
----
-
-*Aenix is the team behind Cozystack.*
-

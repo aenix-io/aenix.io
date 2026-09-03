@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="robots" content="noindex, nofollow">
+<title>{{ .Title }} · Ænix</title>
+{{/* Эта страница НАМЕРЕННО собирается без общего шаблона сайта.
+     В адресе после # лежит имя держателя сертификата, а общий шаблон безусловно
+     подключает аналитику, счётчики и шрифты со стороны — имя уехало бы третьим лицам.
+     Здесь нет ни одной внешней ссылки, и это проверяется при сборке. */}}
+<style>
+:root{--bg:#f8fafc;--card:#fff;--line:#e2e8f0;--ink:#0f172a;--mut:#64748b;--acc:#2563eb}
+@media(prefers-color-scheme:dark){:root{--bg:#0f172a;--card:#1e293b;--line:#334155;--ink:#e2e8f0;--mut:#94a3b8}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.container{max-width:720px;margin:0 auto;padding:0 20px}
+header{padding:28px 0;border-bottom:1px solid var(--line)}
+header a{color:var(--ink);text-decoration:none;font-weight:700;letter-spacing:.02em}
+h1{font-size:1.7rem;margin:36px 0 8px}
+.lead{color:var(--mut);margin:0 0 28px}
+.q{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--card);margin:18px 0}
+.q h2{font-size:1.25rem}
+.cert__facts{width:100%;border-collapse:collapse;margin:16px 0}
+.cert__facts td{padding:9px 0;border-bottom:1px solid var(--line);vertical-align:top;word-break:break-word}
+.cert__facts td:first-child{color:var(--mut);width:42%}
+.q__why{margin:14px 0 0;padding:12px 14px;background:var(--bg);border-radius:9px;color:var(--mut);font-size:.95rem}
+footer{color:var(--mut);font-size:.9rem;padding:32px 0 48px;border-top:1px solid var(--line);margin-top:40px}
+</style>
+</head>
+<body>
+<header><div class="container"><a href="/">Ænix</a></div></header>
+<main class="container" data-tpl="cert-verify">
+  <h1>{{ .Title }}</h1>
+  <p class="lead">{{ .Description }}</p>
+  <div id="verify"><div class="q"><h2 style="margin-top:0">Проверяем…</h2></div></div>
+  <p class="q__why">Проверка идёт прямо в этом браузере: данные сертификата и подпись под
+  ними лежат в самой ссылке. Ни к нам, ни к какой-либо базе страница не обращается — кроме
+  списка отозванных сертификатов.</p>
+
+  <div id="by-serial" style="max-width:520px;margin:22px auto 0;padding:16px 18px;border:1px solid #e2e8f0;border-radius:12px">
+    <div style="font-weight:600;margin-bottom:4px">Есть только номер сертификата?</div>
+    <div style="color:#64748b;font-size:14px;margin-bottom:10px">Введите номер вида <code>CCF-2026-XXXXX</code> — найдём сертификат и проверим подпись.</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <input id="serial-in" type="text" placeholder="CCF-2026-XXXXX" style="flex:1;min-width:180px;padding:10px 12px;border:1px solid #e2e8f0;border-radius:9px;font-size:15px">
+      <button id="serial-go" style="padding:10px 18px;font-weight:600;color:#fff;background:#2f6fed;border:0;border-radius:9px;cursor:pointer">Проверить</button>
+    </div>
+    <div id="serial-err" style="color:#dc2626;font-size:14px;margin-top:8px;min-height:18px"></div>
+  </div>
+</main>
+<footer><div class="container">
+  Сертификаты выдаёт AENIX s.r.o. в рамках своей программы сертификации по Cozystack.
+  Cozystack — товарный знак The Linux Foundation. Сертификация проводится компанией
+  AENIX s.r.o. и не выдаётся ни проектом Cozystack, ни Linux Foundation.
+</div></footer>
+<script>window.__CERT_KEYS__ = {{ site.Data.cert_keys | jsonify | safeJS }};</script>
+<script>
+(function () {
+  var EXAM = "https://exam.cert.workshop.aenix.io";
+  var inp = document.getElementById("serial-in"), btn = document.getElementById("serial-go"), err = document.getElementById("serial-err");
+  if (!btn) return;
+  async function go() {
+    err.textContent = "";
+    var s = (inp.value || "").trim().toUpperCase();
+    if (!s) { err.textContent = "Введите номер сертификата."; return; }
+    btn.disabled = true;
+    try {
+      var r = await fetch(EXAM + "/cert?serial=" + encodeURIComponent(s));
+      var d = await r.json().catch(function () { return {}; });
+      if (!r.ok || !d.token) { err.textContent = (d && d.error) || "Сертификат с таким номером не найден."; btn.disabled = false; return; }
+      location.hash = d.token; location.reload();
+    } catch (e) { err.textContent = "Служба проверки недоступна. Попробуйте позже."; btn.disabled = false; }
+  }
+  btn.addEventListener("click", go);
+  inp.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
+})();
+</script>
+{{ $js := resources.Get "js/cert-verify.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" type="module"></script>
+</body>
+</html>

@@ -22,7 +22,7 @@ related_pages:
   - /de/alternativen/openshift-alternative
   - /de/vergleichen/cozystack-vs-openshift
   - /de/vergleichen/cozystack-vs-openstack
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/branchen/finanzdienstleistungen/
   - /de/loesungen/data-sovereignty/
   - /de/dienstleistungen/platform-readiness-assessment
@@ -71,9 +71,9 @@ faq:
 
 **IBM-POWER-Hardware ist kapitalintensiv, AIX/PowerVM wird pro Socket lizenziert, und IBM-SWMA/HWMA-Verlängerungen summieren sich Jahr für Jahr — während AIX-Spezialisten immer schwerer zu finden sind. Ein IBM-Ausstieg verlagert diese Workloads auf Commodity-x86 mit einer offenen, Kubernetes-nativen Plattform, die Ihr bestehendes Team betreiben kann.**
 
-Aenix führt IBM-AIX/Power-Migrationen End-to-End durch. Dieselben Ingenieure, die [Cozystack](/de/produkte/cozystack/) gebaut haben und betreiben — die Open-Source-Zielplattform, Apache 2.0, CNCF-Projekt — arbeiten mit Ihrem Team an Assessment, Sequenzierung und Umsetzung.
+Ænix führt IBM-AIX/Power-Migrationen End-to-End durch. Dieselben Ingenieure, die [Cozystack](/de/produkte/cozystack/) gebaut haben und betreiben — die Open-Source-Zielplattform, Apache 2.0, CNCF-Projekt — arbeiten mit Ihrem Team an Assessment, Sequenzierung und Umsetzung.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Banken und Unternehmen (Air-Gap, Billing, gemanagte Migration). Sie ersetzen speziell IBM Cloud Pak / OpenShift? Siehe die **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Banken und Unternehmen (Air-Gap, Billing, gemanagte Migration). Sie ersetzen speziell IBM Cloud Pak / OpenShift? Siehe die **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -97,7 +97,7 @@ Ausgelöst durch:
 - **Souveränität und Sanktionsrisiko** — ein proprietärer Single-Vendor-Stack hat ein anderes Risikoprofil als eine offene, CNCF-geführte Plattform für staatliche und regulierte Institute.
 - **Modernisierung** — ein Legacy-Bestand, bei dem der Upgrade-Pfad zugleich der Ausstiegspfad ist, oft begleitet vom Umstieg auf Microservices.
 
-Treffen zwei oder mehr zu, verstärkt ein strukturierter Ausstieg den Nutzen. Ist ein POWER-Refresh bereits budgetiert und nichts anderes drückt, ist "bleiben und optimieren" die ehrliche Antwort.
+Treffen zwei oder mehr zu, verstärkt ein strukturierter Ausstieg den Nutzen. Ist ein POWER-Refresh bereits budgetiert und nichts anderes drückt, ist „bleiben und optimieren“ die ehrliche Antwort.
 
 <!-- /BLOCK 2 -->
 
@@ -105,7 +105,7 @@ Treffen zwei oder mehr zu, verstärkt ein strukturierter Ausstieg den Nutzen. Is
 
 <!-- BLOCK 3: UMFANG -->
 
-## Was eine Aenix-IBM-Migration abdeckt
+## Was eine Ænix-IBM-Migration abdeckt
 
 <div class="grid-2x2">
 
@@ -156,7 +156,7 @@ Für Entscheider außerhalb der IT zählt die Sprache der Kosten. Das folgende M
 | Installation + Migration + Schulung | — | 0 $ — Installation bei Subscription inklusive; Migration & Schulung im Tier enthalten |
 | **Gesamt (3 Jahre)** | **720.000 $** | **408.000 $** |
 
-{{< factoid number="~40%" label="illustrative TCO-Reduktion über drei Jahre — durch Commodity-x86 statt POWER, null Plattform-Lizenzkosten und Verkleinern des Oracle-auf-Power-Footprints" source="Aenix-TCO-Modell, Szenario mittelgroße Bank, List-Price-Größenordnung" >}}
+{{< factoid number="~40%" label="illustrative TCO-Reduktion über drei Jahre — durch Commodity-x86 statt POWER, null Plattform-Lizenzkosten und Verkleinern des Oracle-auf-Power-Footprints" source="Ænix-TCO-Modell, Szenario mittelgroße Bank, List-Price-Größenordnung" >}}
 
 Die Ænix-Subscription ist vergleichbar mit der reinen IBM-Maintenance, enthält aber bereits 24×7-Support, Enterprise-Module, Installation, Schulung und Migration — ohne separate Einmalgebühren. Rechnen Sie Ihre eigenen Zahlen mit dem **[ROI-Rechner](/de/preise/)** oder in einem **[Discovery-Gespräch](/de/kontakt/)**.
 
@@ -173,11 +173,11 @@ Die Ænix-Subscription ist vergleichbar mit der reinen IBM-Maintenance, enthält
 
 Der teuerste Fehler bei einem Power-zu-Kubernetes-Umzug ist, produktives Oracle im Cluster zu betreiben.
 
-- **Oracle wertet Kubernetes und KubeVirt als Soft Partitioning.** CPU-Limits und Pinning verengen den Lizenzumfang nicht — "die Prozessoren aller Cluster-Nodes unterliegen der Oracle-Lizenzierung".
+- **Oracle wertet Kubernetes und KubeVirt als Soft Partitioning.** CPU-Limits und Pinning verengen den Lizenzumfang nicht — „die Prozessoren aller Cluster-Nodes unterliegen der Oracle-Lizenzierung“.
 - **Lizenziert wird der Node, nicht der Pod.** Ein ganzer Worker-Node zählt, selbst wenn Oracle nur einen Bruchteil seiner Cores nutzt; eine KubeVirt-VM gilt nicht als von Oracle anerkanntes Hard Partitioning.
 - **Der saubere Weg:** produktives Oracle auf dedizierter, separat lizenzierter Bare-Metal-Hardware halten und als **externe Anwendung** (Helm-Chart / Operator mit Verbindungspunkten und Credentials via External Secret Reference) über ein privates Netz anbinden. Tenant-Workloads erreichen es wie jeden Managed-Endpoint; die Datenbank wird nie in den Cluster gezogen.
 
-Das entspricht der Praxis der meisten Banken und verdichtet den lizenzierbaren Footprint, sobald Nicht-Oracle-Workloads POWER verlassen. (Oracles Partitioning Policy ist "educational, not contractual" — das endgültige Modell mit Oracle und Ihrer Rechtsabteilung abstimmen.)
+Das entspricht der Praxis der meisten Banken und verdichtet den lizenzierbaren Footprint, sobald Nicht-Oracle-Workloads POWER verlassen. (Oracles Partitioning Policy ist „educational, not contractual“ — das endgültige Modell mit Oracle und Ihrer Rechtsabteilung abstimmen.)
 
 </div>
 </div>
@@ -199,7 +199,7 @@ Das entspricht der Praxis der meisten Banken und verdichtet den lizenzierbaren F
 | Mandantenfähigkeit | Nativ (Tenant-Modell, eBPF-Isolation, Billing-Integration) | Nativ (Keystone, Projekte, Quotas) | Unterstützt (OpenShift-Namespaces + Zen) |
 | On-Prem / Air-Gap | Ja | Ja | Ja (Operator-Catalog-Mirroring) |
 
-Cozystack ist ein [CNCF-Sandbox-Projekt](https://landscape.cncf.io) — seine Lizenz bleibt garantiert Apache 2.0 und entfernt das Risiko "Vendor ändert die Lizenz", das bei proprietären und quasi-offenen Produkten besteht. Für eine staatliche Bank unter einem Digitale-Souveränität-Mandat ist das ein grundlegend anderes Risikoprofil.
+Cozystack ist ein [CNCF-Sandbox-Projekt](https://landscape.cncf.io) — seine Lizenz bleibt garantiert Apache 2.0 und entfernt das Risiko „Vendor ändert die Lizenz“, das bei proprietären und quasi-offenen Produkten besteht. Für eine staatliche Bank unter einem Digitale-Souveränität-Mandat ist das ein grundlegend anderes Risikoprofil.
 
 <!-- /BLOCK 6 -->
 
@@ -223,11 +223,11 @@ Die Zielarchitektur ist für lineares horizontales Wachstum ausgelegt — jeder 
 
 <!-- BLOCK 8: ENGAGEMENT -->
 
-## So arbeitet Aenix
+## So arbeitet Ænix
 
 - **Assessment (5-10 Tage)** — [Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/): AIX/Power-Bestand, Zielarchitektur, Workload-Klassifizierung, Oracle-Plan, Cutover-Sequenzierung, Risiko-Register.
 - **Pilot (4 Wochen)** — Cozystack als funktionierendes Framework gegen Ihre realen Anforderungen aufgesetzt; Erfolgskriterien vorab vereinbart. Der Pilot wird auf das erste Support-Jahr angerechnet.
-- **Migration** — Kohorten-Durchführung mit Parallelbetrieb-Validierung. Im **Enterprise-Tier** wird die Migration vollständig von Aenix gemanagt; Legal/Procurement läuft über Ihre Vorlagen (Ausschreibungen, Formulare).
+- **Migration** — Kohorten-Durchführung mit Parallelbetrieb-Validierung. Im **Enterprise-Tier** wird die Migration vollständig von Ænix gemanagt; Legal/Procurement läuft über Ihre Vorlagen (Ausschreibungen, Formulare).
 - **Betrieb (optional)** — gemanagter Cozystack-Betrieb, 24×7, nach dem Cutover.
 
 Eine wiederkehrende Praxis-Idee: die Plattform auf den am End-of-Life freiwerdenden POWER-Servern aufsetzen (POWER unterstützt Linux) — als Live-Demonstration vor dem Commitment des breiteren Bestands.
@@ -238,7 +238,7 @@ Eine wiederkehrende Praxis-Idee: die Plattform auf den am End-of-Life freiwerden
 
 <!-- BLOCK 9: WARUM AENIX -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Wir haben das Ziel gebaut.** Aufwandsschätzungen sind an ausgelieferter Arbeit kalibriert, nicht an Theorie.
 - **Ehrlich bei den schweren Teilen.** Endianness, Oracle-Lizenzierung und Legacy-Re-Architecture werden im Assessment offengelegt — nicht mitten im Cutover entdeckt.
@@ -281,10 +281,6 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 
 ---
 
-<!-- BLOCK 12: FAQ — automatisch aus `faq:` Frontmatter gerendert -->
-
----
-
 <!-- BLOCK 13: CTA -->
 
 <a id="discovery"></a>
@@ -296,7 +292,7 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 
 - **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)** — Cloud Pak / OpenShift ersetzen
 - **[Cozystack vs OpenShift](/de/vergleichen/cozystack-vs-openshift/)** — direkter Vergleich
-- **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — schlüsselfertig für regulierte Banken
+- **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** — schlüsselfertig für regulierte Banken
 - **[Finanzdienstleistungen](/de/branchen/finanzdienstleistungen/)** — Branchenkontext
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — offene, kundenkontrollierte Infrastruktur
 - **[Cozystack](/de/produkte/cozystack/)** — die Open-Source-Zielplattform
@@ -305,4 +301,4 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 
 ---
 
-*Aenix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*
+*Ænix ist das Team hinter Cozystack (CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack.*

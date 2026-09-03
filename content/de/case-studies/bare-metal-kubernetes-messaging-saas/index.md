@@ -17,7 +17,7 @@ secondary_keywords:
   - "Proxmox Alternative"
 related_pages:
   - /de/alternativen/proxmox-alternative/
-  - /de/produkte/aenix-platform/provider-edition/
+  - /de/produkte/public-cloud-platform/
   - /de/loesungen/data-sovereignty/
   - /de/dienstleistungen/build-private-cloud/
 faq:
@@ -51,7 +51,7 @@ faq:
 
 ## Über das Projekt
 
-Der Kunde ist ein schnell wachsendes Messaging-API-SaaS — ein WhatsApp- und Telegram-Business-Gateway. Jeder Kunde erhält eine isolierte Messenger-„Instanz" (einen leichtgewichtigen Container) plus eine HTTP-API, CRM-Integrationen und KI-Assistenten obendrauf. Der Dienst war auf rund 25.000 kundenspezifische Instanzen angewachsen und kam täglich um Hunderte hinzu — alles betrieben von einem faktisch Ein-Personen-Infrastrukturteam.
+Der Kunde ist ein schnell wachsendes Messaging-API-SaaS — ein WhatsApp- und Telegram-Business-Gateway. Jeder Kunde erhält eine isolierte Messenger-„Instanz“ (einen leichtgewichtigen Container) plus eine HTTP-API, CRM-Integrationen und KI-Assistenten obendrauf. Der Dienst war auf rund 25.000 kundenspezifische Instanzen angewachsen und kam täglich um Hunderte hinzu — alles betrieben von einem faktisch Ein-Personen-Infrastrukturteam.
 
 Vor dem Projekt lief er auf einer Flotte von rund 13 Proxmox-Hypervisor-Hosts — etwa 200 VMs und rund 100 Container-Host-Knoten, jeder mit 200–300 Containern bestückt. Ein regulatorisches Netzwerksperr-Ereignis hatte bereits eine überstürzte Rückführung von einem ausländischen Hosting-Anbieter erzwungen, weshalb eine Präsenz im eigenen Land und Datenresidenz von Anfang an nicht verhandelbar waren. Einen Hypervisor-Host hinzuzufügen war eine manuelle, cluster-gefährdende Fleißarbeit, und ein früherer Versuch mit selbstverwaltetem Kubernetes war an abgelaufenen Zertifikaten gescheitert. Der Kunde wollte die Hebelwirkung von Kubernetes **ohne die Anwendung neu zu schreiben** — plus ein Experten-Sicherheitsnetz dahinter.
 
@@ -67,10 +67,10 @@ Vor dem Projekt lief er auf einer Flotte von rund 13 Proxmox-Hypervisor-Hosts �
 ## Vorgeschlagene Lösung
 
 - **Compute** — Cozystack auf Talos Linux (unveränderliches OS), deklarativ mit Talm provisioniert; Knoten-Konfigurationen und SOPS-verschlüsselte Secrets liegen in Git. Ein 8-Knoten-Bare-Metal-Cluster: 3 Control-Plane-Knoten (HA-etcd) plus 5 Worker, durchgängig mit Dual-NVMe. KubeVirt-VMs hosten die bestehenden kundenspezifischen Container unverändert; ein Golden-Image-Cloning-Workflow (CDI DataVolume → VM-Disk → VM) macht aus „eine VM bereitstellen“ eine Zeile in Git.
-- **Verwaltete Daten** — MongoDB unter dem Percona-Operator, PostgreSQL mit nahezu nativer Performance und RabbitMQ per Ein-Klick. Aenix ergänzte Cozystack um MongoDB als erstklassige App und hob den RabbitMQ-Chart auf v4; **beides floss upstream in das CNCF-Projekt ein.**
+- **Verwaltete Daten** — MongoDB unter dem Percona-Operator, PostgreSQL mit nahezu nativer Performance und RabbitMQ per Ein-Klick. Ænix ergänzte Cozystack um MongoDB als erstklassige App und hob den RabbitMQ-Chart auf v4; **beides floss upstream in das CNCF-Projekt ein.**
 - **Storage** — LINSTOR/DRBD-replizierter Block-Storage auf ZFS für zustandsbehaftete Workloads, plus SeaweedFS S3 für Medien und Backups.
 - **Networking** — Kube-OVN + Cilium + Multus + MetalLB; die VMs beziehen Adressen im lokalen Subnetz.
-- **Delivery-Pipeline** — ein verschachteltes verwaltetes Kubernetes („kube-in-kube") für die API-Dienste, angetrieben von ArgoCD und einer GitLab-Image-Pipeline; Cozystack-Ingress plus cert-manager lösen das handgebaute nginx und die manuellen Zertifikatserneuerungen ab.
+- **Delivery-Pipeline** — ein verschachteltes verwaltetes Kubernetes („kube-in-kube“) für die API-Dienste, angetrieben von ArgoCD und einer GitLab-Image-Pipeline; Cozystack-Ingress plus cert-manager lösen das handgebaute nginx und die manuellen Zertifikatserneuerungen ab.
 - **Observability** — VictoriaMetrics + VictoriaLogs + Grafana von Tag eins an.
 
 {{< placeholder-image width="1200" height="640" label="Konsolidierungsarchitektur: 13 Proxmox-Hosts kollabieren auf einen 8-Knoten-Cozystack-Cluster auf Talos (3 Control-Plane HA-etcd + 5 Dual-NVMe-Worker); ~25.000 kundenspezifische Container laufen unverändert in KubeVirt-VMs im lokalen Subnetz; verwaltetes MongoDB / PostgreSQL / RabbitMQ auf LINSTOR/DRBD über ZFS; API-Dienste in einem verschachtelten Kubernetes, angetrieben von ArgoCD; SeaweedFS S3 für Medien und Backups" >}}
@@ -108,6 +108,6 @@ Vor dem Projekt lief er auf einer Flotte von rund 13 Proxmox-Hypervisor-Hosts �
 
 ---
 
-*Diese Fallstudie ist anonymisiert veröffentlicht; eine Kundenreferenz unter NDA ist auf Anfrage verfügbar. Der Anbieter wird über sein Profil beschrieben, nicht namentlich. Für ein Referenzgespräch zu einer aktiven Opportunity [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie ist anonymisiert veröffentlicht; eine Kundenreferenz unter NDA ist auf Anfrage verfügbar. Der Anbieter wird über sein Profil beschrieben, nicht namentlich. Für ein Referenzgespräch zu einer aktiven Opportunity [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, verfügbar in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*

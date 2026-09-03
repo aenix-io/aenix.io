@@ -16,10 +16,10 @@ secondary_keywords:
   - "GPU-Lifecycle-Management"
   - "Datenplattform und KI-Infrastruktur"
 related_pages:
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/ai-platform/
   - /de/loesungen/sovereign-ai/
   - /de/loesungen/private-llm/
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
 faq:
   - q: "Warum eine Plattform für Daten und KI zugleich?"
     a: "Weil es zweimal dasselbe Infrastrukturproblem ist. Analytik, Data Lakes und Marts, Modelltraining und Model Serving brauchen alle Objektspeicher, Datenbanken, Scheduling, Quotas und Pipelines. Sie zu trennen bedeutet zwei Betriebsmodelle, zwei Kapazitätsplanungen und eine Kopie jedes Datensatzes dazwischen."
@@ -107,6 +107,6 @@ Beides wird üblicherweise als getrennte Programme geführt — und verbringt da
 
 ---
 
-*Diese Case Study beschreibt ein laufendes Projekt und erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
+*Diese Case Study beschreibt ein laufendes Projekt und erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in zwei Editions — Provider und Enterprise — mit den Modulen AI & GPU und Developer Self-Service.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform in drei Plattformen — Provider und Enterprise — mit den Modulen AI Platform und Developer Self-Service.*

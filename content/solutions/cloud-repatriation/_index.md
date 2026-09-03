@@ -6,9 +6,9 @@ related_pages:
   - /solutions/cloud-cost-optimization/
   - /solutions/data-sovereignty/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/
+  - /products/
   - /products/cozystack/
-  - /pricing
+  - /pricing/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -37,20 +37,21 @@ faq:
   - q: "Will Aenix just recommend Cozystack at the end?"
     a: "Only where it fits. Where Cozystack suits the destination architecture better than the alternative, the report explains why with named architectural attributes. Where a different stack fits — hyperscaler with better controls, OpenShift, or vanilla Kubernetes on commodity hardware — Aenix says so. There is no hyperscaler commercial bias."
   - q: "What does the repatriation destination platform cost?"
-    a: "Cozystack itself is Apache 2.0 with no per-CPU or per-core licensing. The productized Ænix Platform and support are priced in tiers: Basic at $1,250/mo (10 nodes), Standard at $3,000/mo, Plus at $5,500/mo, and Enterprise on custom terms."
+    a: "Cozystack itself is Apache 2.0 with no per-CPU or per-core licensing. The productized Ænix Platform is priced two ways: Public Cloud Platform and Cozystack with Ænix enterprise support run off a published support-tier price list from $1,250/month per 10 nodes; Private Cloud Platform and AI Platform programmes are quoted per RFP after scoping. See the [pricing page](/pricing/)."
   - q: "What if our public cloud reserved commitments lock us in?"
     a: "The cutover sequencing plan respects commitment expiration ladders. Repatriation cadence is aligned with AWS Reserved Instances, Azure RI, and Savings Plan expirations rather than fighting them, so workloads move as commitments lapse."
   - q: "What if our team cannot operate a private cloud platform afterwards?"
     a: "Two paths are scoped during the assessment: Aenix runs the platform under a managed-services arrangement, or Aenix builds your platform team's capacity through a structured platform-engineering engagement."
+hreflang_de: /de/loesungen/cloud-repatriation/
 ---
 
 <!-- BLOCK 1: HERO -->
 
 **The Broadcom Private Cloud Outlook 2025 found 69% of organizations are evaluating cloud repatriation, and 53% now prioritize private cloud for new workloads. The reasons vary — runaway cost, regulator pressure, AI data residency, predictable performance — but the architectural work is the same: identify the right workloads to move, run the move without breaking the application, and end up with a platform you can actually operate.**
 
-Aenix runs the technical engagement that turns "we need to leave AWS / Azure / GCP" from a board statement into a working plan with workloads ranked, costs modelled, and a destination architecture that won't reinvent the public cloud the wrong way.
+Ænix runs the technical engagement that turns "we need to leave AWS / Azure / GCP" from a board statement into a working plan with workloads ranked, costs modelled, and a destination architecture that won't reinvent the public cloud the wrong way.
 
-> **Pairs with** any **[Ænix Platform Edition](/products/aenix-platform/)** by buyer profile: hosting / regional clouds → [ISP](/products/aenix-platform/provider-edition/); regulated enterprises → [Enterprise](/products/aenix-platform/enterprise-edition/); large operators → [Public Cloud](/products/aenix-platform/public-cloud-edition/); product teams → [IDP](/products/aenix-platform/idp-edition/); AI-heavy → [AI/ML](/products/aenix-platform/ai-ml-edition/). Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
+> **Pairs with** the **[Ænix platform](/products/)** that matches the destination: **[Private Cloud Platform](/products/private-cloud-platform/)** if you run the capacity for your own business units, **[Public Cloud Platform](/products/public-cloud-platform/)** if you sell it on, **[AI Platform](/products/ai-platform/)** if the repatriated workloads are GPU-bound. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -62,9 +63,6 @@ No hyperscaler bias · Honest TCO modelling · Engineers, not consultants · Apa
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -99,11 +97,11 @@ If your situation matches at least three of those, repatriation deserves a struc
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></span>
 **1. Predictable cost on steady-state workloads**
-Hyperscaler economics favor elasticity. For workloads that run 24/7 at predictable utilization, the unit economics on-prem or in private cloud are routinely 30-60% better — once egress, idle resources, and underutilized commitments are accounted for honestly.
+Hyperscaler economics favor elasticity. For workloads that run 24/7 at predictable utilization, the unit economics on-prem or in private cloud are routinely 30-60% better once egress, idle resources, and underutilized commitments are counted honestly.
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
 **2. Regulatory and sovereignty pressure**
-DORA (in force January 2025), NIS2, GDPR, sectoral data-residency rules, and procurement-led sovereignty mandates (EU member states, Kazakhstan, others) increasingly force critical workloads into the financial entity's own environment.
+DORA (in force January 2025), NIS2, GDPR, sectoral data-residency rules, and procurement-led sovereignty mandates (EU member states, Kazakhstan, others) increasingly force critical workloads into an environment the organization controls itself.
 
 <span class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg></span>
 **3. AI and analytics on sensitive data**
@@ -157,7 +155,7 @@ These failure modes are independent of cloud provider, vendor, or destination pl
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## How Aenix helps
+## How Ænix helps
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -177,11 +175,9 @@ The repatriation engagement runs as part of our **[Platform Readiness Assessment
 - **Workload repatriation ranking** — every workload classified as "repatriate now / repatriate later / stay in cloud," ranked by ROI and risk.
 - **Destination architecture** — what the platform looks like that workloads land on, including compute, storage, network, identity, observability, DR, and the platform-engineering function that operates it.
 - **Cutover sequencing** — repatriation cohorts that respect commitment expirations and minimize cross-environment data movement.
-- **Phase 2 implementation roadmap** — what an Aenix-delivered Phase 2 would do, in what sequence, with effort estimates.
+- **Phase 2 implementation roadmap** — what an Ænix-delivered Phase 2 would do, in what sequence, with effort estimates.
 
-Delivered by Aenix engineers who have built and operated production platforms for service providers, banks, and AI operators across the EU and Central Asia. The report's bias is toward what we can stand behind technically.
-
-{{< factoid number="30-60%" label="better unit economics on-prem or in private cloud for steady-state workloads, once egress, idle resources, and underused commitments are counted honestly" >}}
+Delivered by Ænix engineers who have built and operated production platforms for service providers, banks, and AI operators across the EU and Central Asia. The report's bias is toward what we can stand behind technically.
 
 </div>
 </div>
@@ -192,7 +188,7 @@ Delivered by Aenix engineers who have built and operated production platforms fo
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Why Aenix specifically
+## Why Ænix specifically
 
 <div class="advantage-panel">
 
@@ -210,13 +206,7 @@ Delivered by Aenix engineers who have built and operated production platforms fo
 
 ## What the engagement looks like
 
-| When | What | Output |
-|---|---|---|
-| **Day 0** | 30-min discovery call (free) | Confirm fit, identify cost concerns + workload portfolio + sponsor |
-| **Days 1-13 (or 1-27)** | Four parallel workstreams; cost-and-cloud-spend workstream emphasized | TCO modelling, workload classification, destination architecture, daily async updates |
-| **Day 14 (or 28)** | Executive readout (60-90 min) | Written report: workload ranking, TCO model, destination architecture, cutover sequencing, Phase 2 roadmap |
-
-For the full methodology see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+Day 0 is a free 30-minute discovery call that fixes the scope. Days 1-13 (or 1-27) run four parallel workstreams with the cost-and-cloud-spend workstream emphasized, on daily async updates and three sponsor checkpoints. Day 14 (or 28) is a 60-90 minute executive readout against the written report — workload ranking, TCO model, destination architecture, cutover sequencing and Phase 2 roadmap. Full day-by-day methodology: **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
 <!-- /BLOCK 7 -->
 
@@ -231,9 +221,6 @@ For the full methodology see **[Platform Readiness Assessment](/services/platfor
 We have run cloud-repatriation engagements for service providers, financial-services organizations, telecom operators, and AI/GPU platforms across the EU, DACH, and Central Asia. Workloads moved have ranged from steady-state production databases to AI inference clusters; outcomes have ranged from full on-prem to selective hybrid.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
-Named case studies available on the discovery call where customer permissions allow.
 
 <!-- /BLOCK 8 -->
 
@@ -268,8 +255,6 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 <!-- BLOCK 10: FAQ -->
 
 
-**More questions?** See the **[reverse cloud migration playbook](/blog/2026/05/reverse-cloud-migration-playbook/)** or **[talk to us](#discovery)**.
-
 <!-- /BLOCK 10 -->
 
 ---
@@ -279,7 +264,7 @@ We accept RFI / RFP through standard procurement channels in EU member states an
 <a id="discovery"></a>
 ## Start with a 30-minute discovery call
 
-Free. No prep needed. We confirm fit, identify your top cost concerns, and tell you whether the 14-day or 28-day variant matches your situation.
+We confirm fit, identify the workloads worth moving, and name the 14-day or 28-day variant.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -297,7 +282,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-repatriation engagements and platform engineering programs for service providers, banks, telecom, and AI operators across the EU, DACH, and Central Asia.*
+*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run cloud-repatriation engagements and platform engineering programs for service providers, banks, telecom, and AI operators across the EU, DACH, and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

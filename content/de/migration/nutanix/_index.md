@@ -14,7 +14,7 @@ hreflang_en: "/migration/nutanix/"
 related_pages:
   - /de/alternativen/nutanix-alternative/
   - /de/migration/vmware/
-  - /de/produkte/aenix-platform/
+  - /de/produkte/
   - /de/dienstleistungen/platform-readiness-assessment/
   - /de/roi-rechner/
 service:
@@ -56,9 +56,9 @@ faq:
 
 # Nutanix Migration: HCI-Lock-in zu Ihren eigenen Bedingungen verlassen
 
-**Nutanix zu verlassen ist ein geplantes Projekt, kein Notfall — und gut umgesetzt entsteht eine Virtualisierungsplattform, die Sie besitzen, statt einer, die Sie unter einem stetig steigenden Renewal mieten. Aenix migriert Nutanix-AOS/AHV-Bestände auf eine Kubernetes-native Plattform, auf der VMs und Container einen Cluster teilen, Storage mit LINSTOR repliziert wird und es keine Hypervisor-Lizenz pro Node gibt. Das Ziel ist [Cozystack](/de/produkte/cozystack/), gebaut und betrieben von denselben Ingenieuren, die Ihre Migration durchführen.**
+**Nutanix zu verlassen ist ein geplantes Projekt, kein Notfall — und gut umgesetzt entsteht eine Virtualisierungsplattform, die Sie besitzen, statt einer, die Sie unter einem stetig steigenden Renewal mieten. Ænix migriert Nutanix-AOS/AHV-Bestände auf eine Kubernetes-native Plattform, auf der VMs und Container einen Cluster teilen, Storage mit LINSTOR repliziert wird und es keine Hypervisor-Lizenz pro Node gibt. Das Ziel ist [Cozystack](/de/produkte/cozystack/), gebaut und betrieben von denselben Ingenieuren, die Ihre Migration durchführen.**
 
-> **Passt zu:** der **[Ænix Platform](/de/produkte/aenix-platform/)**-Edition, die zu Ihrem Bestand passt — Enterprise für regulierte Workloads, ISP für Hosting-Anbieter, Public Cloud für große Betreiber. Entscheiden Sie das Ziel über den **[Nutanix-Alternative](/de/alternativen/nutanix-alternative/)**-Vergleich und modellieren Sie dann die Zahlen mit dem **[ROI- & TCO-Rechner](/de/roi-rechner/)**.
+> **Passt zu:** der **[Ænix Plattform](/de/produkte/)**, die zu Ihrem Bestand passt — **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Workloads im Eigenbetrieb, **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Betreiber, die Cloud an externe Kunden verkaufen. Entscheiden Sie das Ziel über den **[Nutanix-Alternative](/de/alternativen/nutanix-alternative/)**-Vergleich und modellieren Sie dann die Zahlen mit dem **[ROI- & TCO-Rechner](/de/roi-rechner/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -76,7 +76,7 @@ Die Auslöser gruppieren sich zu dreien, und sie verstärken sich gegenseitig.
 - **Hyperkonvergenter Lock-in.** HCI bindet die Storage-Fabric, den Hypervisor und die Management-Ebene an den Stack eines Anbieters. Das ist bequem, bis Sie eine Schicht ändern, einen von der Plattform nicht bevorzugten Workload-Typ ergänzen oder auf Hardware betreiben wollen, die der Anbieter nicht freigibt.
 - **Eine Plattform für VMs und Container.** Viele Teams betreiben bereits Kubernetes neben ihren Nutanix-VMs. Beides auf eine einzige Kubernetes-native Plattform zu konsolidieren, entfernt einen parallelen Stack, ein paralleles Betriebsmodell und eine parallele Rechnung.
 
-Treffen zwei oder mehr davon zu, verstärkt sich eine strukturierte Migration meist zu Ihren Gunsten. Ist Ihr Renewal komfortabel und drängt sonst nichts, ist „bleiben und optimieren" die ehrliche Empfehlung — wir sagen Ihnen das.
+Treffen zwei oder mehr davon zu, verstärkt sich eine strukturierte Migration meist zu Ihren Gunsten. Ist Ihr Renewal komfortabel und drängt sonst nichts, ist „bleiben und optimieren“ die ehrliche Empfehlung — wir sagen Ihnen das.
 
 ---
 
@@ -101,7 +101,7 @@ Für den plattformweiten Vergleich — Feature für Feature, Cozystack gegen Nut
 
 ## Wie eine AHV-Migration tatsächlich abläuft
 
-Migration ist kohortenbasiert, nicht Big-Bang. Ein „alles an einem Wochenende"-Umzug übersteht selten den Kontakt mit einem Unternehmensbestand.
+Migration ist kohortenbasiert, nicht Big-Bang. Ein „alles an einem Wochenende“-Umzug übersteht selten den Kontakt mit einem Unternehmensbestand.
 
 1. **Inventarisierung und Klassifizierung.** Vollständiges AOS/AHV-Inventar — VM-Anzahl, OS-Mix, Storage-Abhängigkeiten, Netzwerk-Integrationen, Multi-Site-Topologie — dann jeden Workload als migrate-now, migrate-later, stay oder re-platform-to-containers klassifizieren.
 2. **Zielarchitektur.** Das Cozystack-Ziel auf Ihrer Hardware dimensionieren und designen: Kapazitätsmodell, Storage-Klassen, Networking, Tenancy und Betriebsdesign.
@@ -142,11 +142,11 @@ Migrationsökonomie sieht in der Theorie attraktiv aus und entscheidet sich in d
 
 ---
 
-## Wie Aenix bei der Nutanix Migration arbeitet
+## Wie Ænix bei der Nutanix Migration arbeitet
 
-Das Engagement spiegelt unser **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Nutanix-Schwerpunkt: AOS/AHV-Inventar, Zielarchitektur, Workload-Klassifizierung, Cutover-Sequenzierung gegen Renewal-Termine und eine Phase-2-Roadmap — geliefert in 14-28 Tagen. Phase 2 ist die Implementierung, mit Aenix-Ingenieuren, die für die Migrationskohorten in Ihr Team integriert sind, und Wissenstransfer durchgängig; eine optionale Phase 3 deckt den Managed-Cozystack-Betrieb ab, nachdem der Bestand umgezogen ist. Weil wir die Zielplattform bauen, sind die Aufwandsschätzungen an gelieferter Arbeit kalibriert, nicht geraten.
+Das Engagement spiegelt unser **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Nutanix-Schwerpunkt: AOS/AHV-Inventar, Zielarchitektur, Workload-Klassifizierung, Cutover-Sequenzierung gegen Renewal-Termine und eine Phase-2-Roadmap — geliefert in 14-28 Tagen. Phase 2 ist die Implementierung, mit Ænix-Ingenieuren, die für die Migrationskohorten in Ihr Team integriert sind, und Wissenstransfer durchgängig; eine optionale Phase 3 deckt den Managed-Cozystack-Betrieb ab, nachdem der Bestand umgezogen ist. Weil wir die Zielplattform bauen, sind die Aufwandsschätzungen an gelieferter Arbeit kalibriert, nicht geraten.
 
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, verfügbar in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML. Wir führen Nutanix- und VMware-Migrationen für Unternehmen, Hosting-Anbieter und den öffentlichen Sektor in der EU und DACH durch.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir führen Nutanix- und VMware-Migrationen für Unternehmen, Hosting-Anbieter und den öffentlichen Sektor in der EU und DACH durch.*

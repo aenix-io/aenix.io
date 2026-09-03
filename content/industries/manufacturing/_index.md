@@ -1,17 +1,17 @@
 ---
 title: "Cloud platform for manufacturing — Industry 4.0, edge-ready, sovereign"
-description: "Manufacturing in 2026 means simultaneous demands: Industry 4.0 transformation, NIS2 compliance (manufacturing of critical products is in scope), edge..."
+description: "Industry 4.0 cloud at Purdue levels 3 and 3.5: MES, historians, OPC-UA and quality inference across HQ, sites and the floor. Sites survive a dead uplink."
 related_pages:
   - /solutions/data-sovereignty
   - /solutions/nis2-compliance
   - /services/platform-readiness-assessment
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **A cloud platform for manufacturing is a unified compute foundation that runs Industry 4.0 and IT/OT workloads consistently across HQ, regional sites, and production-floor edge under one operational model. It serves manufacturers in the EU, DACH, and Central Asia that must meet NIS2 compliance (manufacturing of critical products is in scope), protect industrial IP such as design data and formulations, and run AI for quality control and predictive maintenance. Aenix builds these platforms on Cozystack, an open-source CNCF project licensed under Apache 2.0 that runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-based multi-tenancy. Aenix also offers Ænix Platform, a productized commercial edition, plus implementation and support services.**
+  **A cloud platform for manufacturing is a unified compute foundation that runs Industry 4.0 and IT/OT workloads consistently across HQ, regional sites, and production-floor edge under one operational model. It serves manufacturers in the EU, DACH, and Central Asia that must meet NIS2 compliance (manufacturing of critical products is in scope), protect industrial IP such as design data and formulations, and run AI for quality control and predictive maintenance. Aenix builds these platforms on Cozystack, an open-source CNCF project licensed under Apache 2.0 that runs virtual machines and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-based multi-tenancy. Aenix also offers the Ænix Private Cloud Platform, the productized commercial form of that stack, plus implementation and support services.**
 
 quick_facts:
   - label: "What it is"
@@ -26,8 +26,8 @@ quick_facts:
     value: "NIS2 — manufacturing of critical products falls within scope"
   - label: "Key capabilities"
     value: "Air-gapped deployment for sensitive OT workloads, multi-site edge architecture, multi-tenancy for cross-BU and joint-venture separation, AI infrastructure for quality control and predictive maintenance"
-  - label: "Recommended edition"
-    value: "Ænix Platform Enterprise Edition for multi-DC and edge industrial IT/OT"
+  - label: "Recommended platform"
+    value: "Ænix Private Cloud Platform for multi-DC and edge industrial IT/OT"
 
 faq:
   - q: "Does a cloud platform for manufacturing help with NIS2 compliance?"
@@ -42,13 +42,14 @@ faq:
     a: "Cozystack is open source under Apache 2.0 with no per-CPU or per-core licensing. Aenix sells Ænix Platform tiers: Basic at $1,250/mo (10 nodes), Standard at $3,000, Plus at $5,500, and Enterprise on custom pricing for multi-DC and edge deployments."
   - q: "How does Cozystack run both VMs and containers for OT/IT convergence?"
     a: "Cozystack uses KubeVirt to run virtual machines and containers side by side on a single Kubernetes API, with Cilium eBPF networking and LINSTOR/DRBD storage. This lets legacy OT virtual machines and modern containerized IT workloads share one platform."
+hreflang_de: /de/branchen/fertigung/
 ---
 
 **Manufacturing in 2026 means simultaneous demands: Industry 4.0 transformation, NIS2 compliance (manufacturing of critical products is in scope), edge compute at production sites, AI-driven quality control, and increasing sovereign-cloud requirements for industrial IP. The architectural answer is a coherent platform that runs at HQ, regional sites, and production-floor edge — under one operational model.**
 
-Aenix builds platforms for manufacturing organizations across the EU, DACH, and Central Asia.
+Ænix builds platforms for manufacturing organizations across the EU, DACH, and Central Asia.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — multi-DC + edge architecture for industrial IT/OT, NIS2 compliance for critical-product manufacturing, air-gap support for OT networks.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC + edge architecture for industrial IT/OT, NIS2 compliance for critical-product manufacturing, air-gap support for OT networks.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -114,10 +115,7 @@ The IEC 62443 framing follows from that placement: the platform is one or more z
 
 {{< clients >}}
 
-*Customer evidence — Aenix to populate. Anonymous proof points:*
-- A multi-site manufacturer running unified platform across HQ + regional production sites
-- An automotive supplier with industrial-IP sovereignty requirements
-- A precision engineering firm with AI-driven quality control on private LLM
+Manufacturing engagements are NDA-protected; no named industrial reference is public yet. The closest written-up deployment with the same structural pattern — multi-site, tenant-isolated, operated by the customer — is the [sovereign public cloud case study](/case-studies/sovereign-public-cloud/).
 
 ---
 
@@ -132,6 +130,5 @@ The IEC 62443 framing follows from that placement: the platform is one or more z
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
 
-<!-- Word count: ~500. -->

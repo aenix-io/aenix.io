@@ -10,36 +10,37 @@ companion_landing: "/de/loesungen/cloud-kostenoptimierung/"
 quiz:
   title: "Wissens-Check: Cloud-Kostenoptimierung 2026"
   questions:
-    - q: "Welche zwei Optimierungs-Ebenen unterscheidet der Artikel?"
+    - q: "Welche zwei Optimierungsebenen unterscheidet der Artikel?"
       options:
-        - { text: "FinOps und DevOps", correct: false }
-        - { text: "Konfigurationelle (15-25% ohne Architektur-Änderung) und architekturelle (30-60% mit Architektur-Änderung)", correct: true }
-        - { text: "Tooling und Kultur", correct: false }
-      explanation: "Konfigurationelle Optimierung = ohne Architektur-Änderung (Right-Sizing, Reservation-Tuning, Waste-Eliminierung), 15-25%. Architekturelle Optimierung = mit Architektur-Änderung (Repatriation, Managed-Service-Ersatz, Hyperscaler-Diversifizierung), 30-60% auf Workloads die wechseln."
-    - q: "Wie viele Strategien für Kostenoptimierung werden im Artikel beschrieben?"
+        - { text: "FinOps-Ebene und DevOps-Ebene", correct: false }
+        - { text: "Konfigurative Ebene und architektonische Ebene", correct: true }
+        - { text: "Werkzeugebene und Kulturebene", correct: false }
+        - { text: "Rechenlast-Ebene und Speicher-Ebene", correct: false }
+      explanation: "Konfigurative Optimierung arbeitet ohne Architekturänderung (Right-Sizing, Reservierungs-Tuning, Beseitigung von Verschwendung) und bringt typischerweise 15–25 Prozent. Architektonische Optimierung ändert, worauf Sie laufen (Repatriierung, Ersatz von Managed Services, Anbieterwechsel), und bringt 30–60 Prozent auf den Workloads, die tatsächlich umziehen."
+    - q: "Wie viele Strategien zur Kostenoptimierung beschreibt der Artikel?"
       options:
-        - { text: "3", correct: false }
-        - { text: "8", correct: true }
-        - { text: "12", correct: false }
-      explanation: "8 Strategien: Commitment-Realisierung erfassen, Verschwendung systematisch eliminieren, Compute Right-Sizing/Modernisierung, Egress und Cross-Region-Verkehr, Managed-Service-Aufschläge, Storage-Tiering, Kubernetes-Kostenoptimierung, Organisatorisches FinOps."
-    - q: "Wann lohnt sich der Übergang zu architektureller Optimierung?"
+        - { text: "Drei", correct: false }
+        - { text: "Acht", correct: true }
+        - { text: "Zwölf", correct: false }
+      explanation: "Acht Strategien: Commitment-Realisierung erfassen, Verschwendung systematisch beseitigen, Compute richtig dimensionieren, Egress- und Cross-Region-Verkehr, Aufschläge auf Managed Services prüfen, Storage-Tiering, Kubernetes-Kostenoptimierung, organisatorisches FinOps."
+    - q: "Wann lohnt sich der Übergang zur architektonischen Optimierung?"
       options:
-        - { text: "Sofort", correct: false }
-        - { text: "Nach 6-12 Monaten disziplinierter konfigurationeller Arbeit, wenn die Einsparkurve abflacht", correct: true }
-        - { text: "Nie", correct: false }
-      explanation: "Konfigurationell zuerst, captures der Einsparungen, dann architekturelle Bewertung. Nach 6-12 Monaten disziplinierter konfigurationeller Arbeit flacht die Einsparkurve ab — dann wird die architektonische Frage relevant."
-    - q: "Welche Aenix-Page wird für architekturelle Veränderung empfohlen?"
+        - { text: "Sofort, noch vor der konfigurativen Arbeit", correct: false }
+        - { text: "Wenn die Einsparkurve nach 6–12 Monaten abflacht", correct: true }
+        - { text: "Erst nach dem nächsten Hardware-Refresh", correct: false }
+      explanation: "Zuerst konfigurativ arbeiten und diese Einsparungen sichern, dann architektonisch bewerten. Nach sechs bis zwölf Monaten disziplinierter konfigurativer Arbeit flacht die Einsparkurve ab — erst dann wird die architektonische Frage relevant. Wer sie überspringt, stößt an eine strukturelle Decke."
+    - q: "Auf welche Aenix-Seite verweist der Artikel für die architektonische Veränderung?"
       options:
-        - { text: "Cloud Repatriation Page", correct: true }
-        - { text: "Nur Kubernetes-Consulting", correct: false }
-        - { text: "Nur Hardware-Auswahl", correct: false }
-      explanation: "Für architekturelle Veränderung: Cloud Repatriation Page. Für strukturierte Bewertung mit Cost-Schwerpunkt: Platform Readiness Assessment."
-    - q: "Was beinhaltet \"Strategie 7: Kubernetes-Kostenoptimierung\"?"
+        - { text: "Auf die Seite zur Cloud-Repatriierung", correct: true }
+        - { text: "Auf die Seite zum Kubernetes-Consulting", correct: false }
+        - { text: "Auf die Seite zur Hardware-Auswahl", correct: false }
+      explanation: "Für die architektonische Veränderung verweist der Artikel auf die Seite zur Cloud-Repatriierung. Für eine strukturierte Bewertung mit Kostenschwerpunkt auf das Platform Readiness Assessment."
+    - q: "Was umfasst Strategie 7, die Kubernetes-Kostenoptimierung?"
       options:
-        - { text: "Pure Lizenzgebühren", correct: false }
-        - { text: "Pod-Right-Sizing, Cluster-Autoscaler-Tuning, Spot/Preemptible-Adoption, Multi-Tenant-Konsolidierung, OpenCost/Kubecost", correct: true }
-        - { text: "Wechsel zu Docker Swarm", correct: false }
-      explanation: "Kubernetes-spezifische Optimierung: Pod-Requests/Limits gegen historische Auslastung dimensionieren, Cluster-Autoscaler/Karpenter-Tuning, Spot/Preemptible nutzen, Single-Team-Cluster konsolidieren, OpenCost/Kubecost auf Namespace/Workload-Level. Typische Einsparung: 20-50% auf Kubernetes-Spend."
+        - { text: "Ausschließlich die Verhandlung von Lizenzgebühren", correct: false }
+        - { text: "Pod-Right-Sizing, Autoscaler-Tuning, Spot-Nutzung, Konsolidierung", correct: true }
+        - { text: "Den Wechsel von Kubernetes zu Docker Swarm", correct: false }
+      explanation: "Kubernetes-spezifische Optimierung: Pod-Requests und -Limits an der historischen Auslastung ausrichten, Cluster-Autoscaler beziehungsweise Karpenter tunen, Spot- und Preemptible-Kapazität nutzen, Single-Team-Cluster konsolidieren und die Kosten mit OpenCost oder Kubecost auf Namespace- und Workload-Ebene sichtbar machen. Typische Einsparung: 20–50 Prozent des Kubernetes-Spends."
 ---
 
 Begleitung zur **[Cloud-Kostenoptimierungs-Page](/de/loesungen/cloud-kostenoptimierung)**.
@@ -67,9 +68,9 @@ Nach 6-12 Monaten disziplinierter konfigurationeller Arbeit flacht die Einsparku
 
 ## Wie geht es weiter?
 
-**[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Cost-Schwerpunkt oder **[Cloud Repatriation](/solutions/cloud-repatriation/)** für architektonische Änderung.
+**[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Cost-Schwerpunkt oder **[Cloud Repatriation](/de/loesungen/cloud-repatriation/)** für architektonische Änderung.
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

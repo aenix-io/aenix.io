@@ -46,7 +46,7 @@ Cilium CNI was upgraded to v1.18.6 to incorporate the latest security and perfor
 
 ### Documentation
 
-The documentation has been updated and made clearer as well! We added a [comprehensive guide](https://cozystack.io/docs/virtualization/cloneable-vms/) for cloning and managing virtual machines, simplified the NFS driver setup instructions, updated the installation steps for [Hetzner](https://cozystack.io/docs/install/providers/hetzner/#11-install-boot-to-talos-in-rescue-mode) and [Servers.com](https://cozystack.io/docs/install/providers/servers-com/), and [included details](https://cozystack.io/docs/install/providers/hetzner/#32-create-a-load-balancer-with-robotlb) on setting up public IPs with Hetzner RobotLB.
+The documentation has been updated and made clearer as well! We added a [comprehensive guide](https://cozystack.io/docs/v0/virtualization/cloneable-vms/) for cloning and managing virtual machines, simplified the NFS driver setup instructions, updated the installation steps for [Hetzner](https://cozystack.io/docs/v0/install/providers/hetzner/#11-install-boot-to-talos-in-rescue-mode) and [Servers.com](https://cozystack.io/docs/v0/install/providers/servers-com/), and [included details](https://cozystack.io/docs/v0/install/providers/hetzner/#32-create-a-load-balancer-with-robotlb) on setting up public IPs with Hetzner RobotLB.
 
 **All changes and improvements: **[0.41.0](https://github.com/cozystack/cozystack/releases/tag/v0.41.0), [0.41.1](https://github.com/cozystack/cozystack/releases/tag/v0.41.1), [0.41.2](https://github.com/cozystack/cozystack/releases/tag/v0.41.2)
 

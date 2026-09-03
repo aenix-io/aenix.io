@@ -19,8 +19,8 @@ quick_facts:
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Mandantenfähigkeit"
     value: "Tenant-CRD trennt Schulträger-Zentrale von Schul-Ebene und EdTech-Tenants"
-  - label: "Empfohlene Edition"
-    value: "Ænix Platform Enterprise Edition für souveränitätspflichtige Schülerdatenverarbeitung im großen Maßstab"
+  - label: "Empfohlene Plattform"
+    value: "Ænix Private Cloud Platform für souveränitätspflichtige Schülerdatenverarbeitung im großen Maßstab"
   - label: "Regulatorik"
     value: "DSGVO plus nationale Schulgesetze und Datenresidenz-Vorgaben"
 faq:
@@ -40,11 +40,11 @@ faq:
 
 **K-12-Bildung hat andere Infrastrukturanforderungen als Universitäten. Schulträger handhaben Schülerdaten unter strengen Residenz- / Datenschutzregelungen (FERPA in den USA, DSGVO + nationale Regeln in der EU), bedienen oft 10.000-100.000+ Schüler über viele Schulen hinweg und arbeiten in langen Budgetzyklen. Die meisten Schulträger sind durch Hyperscaler-managed-Services gut bedient. Die Ausnahmefälle — große Schulträger mit Souveränitäts-Mandaten, KI-/EdTech-Plattformen, die Schülerdaten on-premise verarbeiten, Schulträger-Konsortien, die geteilte Infrastruktur aufbauen — sind dort, wo Cozystack passen kann.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveränitätspflichtige Schülerdatenverarbeitung im Maßstab großer Schulträger / Bildungsministerien.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveränitätspflichtige Schülerdatenverarbeitung im Maßstab großer Schulträger / Bildungsministerien.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/k12-school-district-cloud-infrastructure/">K-12-Cloud-Architektur →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/k12-schultraeger-cloud-infrastruktur/">K-12-Cloud-Architektur →</a>
 </div>
 
 ---
@@ -93,10 +93,10 @@ Für die meisten K-12-Schulträger sind Hyperscaler-managed-Services + Standard-
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Artikel zur Cloud-Infrastruktur für K-12-Schulträger](/blog/2026/05/k12-school-district-cloud-infrastructure/)**
+- **[Artikel zur Cloud-Infrastruktur für K-12-Schulträger](/de/blog/2026/05/k12-schultraeger-cloud-infrastruktur/)**
 - **[Branchenseite Universitäten](/de/branchen/universitaeten/)** — angrenzend
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Schülerdatenschutz
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*

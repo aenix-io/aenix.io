@@ -1,13 +1,13 @@
 ---
 title: "Cloud platform for insurance — DORA-aligned, AI-ready, sovereign"
-description: "Insurance carriers and reinsurers in 2026 face overlapping pressures: DORA enforcement (in force January 2025), GenAI-driven claims-processing..."
+description: "Cloud for carriers and reinsurers under DORA: Article 28 separation across a group, per-market residency, claims and underwriting AI on your own GPUs."
 related_pages:
   - /solutions/dora-compliance
   - /solutions/data-sovereignty
   - /solutions/sovereign-ai
   - /services/platform-readiness-assessment
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/private-cloud-platform/
+  - /products/ai-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -33,7 +33,7 @@ faq:
   - q: "Is insurance in scope for DORA, and how does this platform help?"
     a: "Yes. Insurance and reinsurance undertakings are financial entities under DORA, which has been in force across the EU since January 2025. The platform provides a regulated cloud foundation with audit-readiness and Tenant-CRD separation that maps to DORA Article 28 ICT third-party and business-unit controls."
   - q: "Can we run GenAI on sensitive claims and underwriting data without sending it to a public cloud?"
-    a: "Yes. The AI & GPU runs claims-processing, underwriting, and fraud-detection AI on private LLM infrastructure inside your own sovereign environment, keeping regulated insurance data on infrastructure you control rather than a public-cloud AI service."
+    a: "Yes. The AI Platform runs claims-processing, underwriting, and fraud-detection AI on private LLM infrastructure inside your own sovereign environment, keeping regulated insurance data on infrastructure you control rather than a public-cloud AI service."
   - q: "What is the platform built on?"
     a: "Cozystack, an Apache 2.0 CNCF project created by Aenix. It runs VMs and containers on one Kubernetes API using KubeVirt, Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Aenix sells the productized Ænix Platform and services on top."
   - q: "How does this help insurers exit VMware?"
@@ -42,13 +42,14 @@ faq:
     a: "Aenix builds platforms for insurance organizations across the EU, DACH, and Central Asia, supporting per-market data-residency requirements for multi-jurisdictional carriers and reinsurers."
   - q: "What does it cost?"
     a: "The Ænix Platform is offered in tiers: Basic at $1,250/mo for 10 nodes, Standard at $3,000, Plus at $5,500, and Enterprise on a custom basis. Cozystack itself is open source under Apache 2.0 with no licensing fees."
+hreflang_de: /de/branchen/versicherung/
 ---
 
 **Insurance carriers and reinsurers in 2026 face overlapping pressures: DORA enforcement (in force January 2025), GenAI-driven claims-processing transformation, sectoral regulator scrutiny on ICT third-party concentration, and increasing data-residency requirements per market. The architectural answer is a coherent platform with sovereignty, audit-readiness, and AI capability built in — not bolted on.**
 
-Aenix builds platforms for insurance organizations across the EU, DACH, and Central Asia.
+Ænix builds platforms for insurance organizations across the EU, DACH, and Central Asia.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for DORA-aligned regulated cloud foundation; **[AI & GPU](/products/aenix-platform/ai-ml-edition/)** for claims-processing AI and underwriting AI workloads on regulated data. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for DORA-aligned regulated cloud foundation; **[AI Platform](/products/ai-platform/)** for claims-processing AI and underwriting AI workloads on regulated data. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -66,7 +67,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 <div class="diagram">
 <div class="diagram__node"><b>Insurance workloads</b><div class="diagram__chips"><span>VMs and containers</span><span>Claims, underwriting, fraud-detection AI</span></div></div>
 <div class="diagram__conn">run on</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Enterprise Edition</span><span>AI & GPU</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
 <div class="diagram__conn">built on</div>
 <div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>One Kubernetes API (KubeVirt)</span><span>Cilium eBPF</span><span>LINSTOR/DRBD</span><span>Apache 2.0, CNCF</span></div></div>
 <div class="diagram__conn">separates business units via</div>
@@ -74,21 +75,14 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 </div>
 </div>
 
-- **DORA-aligned platform readiness** — insurance is in DORA scope; Article 28 applies
-- **Sovereign AI for sensitive insurance data** — claims, underwriting, fraud-detection AI on regulated data
-- **Cloud repatriation** — sustained workloads where public-cloud economics no longer fit
-- **VMware exit** — VCF subscription pressure across insurance sector
+- **DORA Article 28 with a group structure** — insurance and reinsurance undertakings are financial entities under DORA, and the ICT third-party and separation controls have to hold across carriers, MGAs and shared service companies inside one group.
+- **AI on claims and underwriting data** — claims triage, underwriting and fraud detection are the workloads insurers want on GPUs and cannot send to a public model endpoint.
+- **Per-market residency for a multi-market book** — a carrier writing in several member states inherits several residency rules for the same policy administration stack.
+
+The cost and VMware-exit triggers are common to the whole sector; those are covered on **[financial services](/industries/financial-services/)**.
 
 </div>
 </div>
-
----
-
-## Industry context
-
-- **LSEG Global Cloud Survey 2025:** 82% of financial services (incl. insurance) in hybrid/multi-cloud; 84% adjusted strategy due to regulatory developments
-- **Nutanix FS ECI 2025:** 92% rate infrastructure as not-ready for cloud-native; 62% hiring GenAI specialists
-- **DORA enforcement:** in force across EU since January 2025
 
 ---
 
@@ -96,10 +90,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 
 {{< clients >}}
 
-*Customer evidence — Aenix to populate. Anonymous proof points:*
-- A regional reinsurance carrier with multi-jurisdictional sovereignty requirements running internal cloud platform
-- An insurance group with AI-assisted claims processing on private LLM infrastructure
-- A multi-product insurer with multi-BU separation under DORA Article 28 controls
+Insurance engagements sit in the same NDA cohort as the bank work, with naming permitted from mid-2027. [Nine deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
 
 {{< quote-carousel >}}
 
@@ -117,7 +108,5 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 
 ---
 
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
+*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
-<!-- SEO: title "Cloud Platform for Insurance — DORA-Aligned, AI-Ready, Sovereign | Aenix"
-Word count: ~500. -->

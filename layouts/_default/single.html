@@ -15,7 +15,8 @@
   everything else (landings, about, contact, conferences, etc.)
   gets the theme-equivalent default behavior.
 */}}
-{{ if eq .Section "blog" }}
+{{ $isBlog := or (eq .Section "blog") (hasPrefix .RelPermalink "/de/blog/") (hasPrefix .RelPermalink "/ru/blog/") }}
+{{ if $isBlog }}
   {{ partial "blog-single-body.html" . }}
 {{ else }}
   {{/* Match theme's _default/single.html behaviour for non-blog pages */}}
@@ -54,7 +55,8 @@
 {{ end }}
 
 {{ define "scripts" }}
-{{ if eq .Section "blog" }}
+{{ $isBlog := or (eq .Section "blog") (hasPrefix .RelPermalink "/de/blog/") (hasPrefix .RelPermalink "/ru/blog/") }}
+{{ if $isBlog }}
 {{ if .Params.quiz }}<script src="/js/blog-quiz.js" defer></script>{{ end }}
 <script src="/js/blog-share.js" defer></script>
 {{ end }}

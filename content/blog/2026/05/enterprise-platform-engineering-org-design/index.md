@@ -43,8 +43,6 @@ quiz:
       explanation: "Pattern B fits organisations with strong BU autonomy — most established financial services and large industrial conglomerates. Pattern A fits clear engineering-domain boundaries (fintech, consumer-tech); Pattern C balances consistency with domain specialisation."
 ---
 
-**Long-form companion to the [enterprise platform engineering services page](/services/enterprise-platform-engineering/). For Engineering VPs, Heads of Platform, and Chief Architects designing platform-engineering function at 1,000+-engineer organisations — covering org design, headcount math, governance models, and the failure modes that recur at this scale.**
-
 Platform engineering at 200-500 engineers is mostly a question of
 "do it well" — define golden paths, build the IDP capability stack,
 hire a platform team, ship. Platform engineering at 1,000+ engineers
@@ -52,10 +50,6 @@ is a different problem: governance across business units, consistency
 without rigidity, multi-region operational coordination, regulator-
 graded change management, and the political dynamics of cross-BU
 infrastructure decisions.
-
-This article walks through what we see at the enterprise scale and
-what an Aenix enterprise platform-engineering engagement actually
-delivers.
 
 ## What changes at 1,000+ engineers
 
@@ -96,7 +90,7 @@ documented approval, are reproducible from artefacts, generate
 evidence supervisors can consume.
 
 The platform itself becomes a regulator-relevant object —
-DORA Article 21 controls live in platform code.
+DORA Article 6 controls live in platform code.
 
 ## Org-design patterns
 
@@ -222,8 +216,8 @@ the platform substrate produces beautiful catalogs over operational
 chaos. Adoption stalls.
 
 Fix: Backstage as the user-facing layer after the platform
-substrate is real. Aenix's Developer Self-Service can be paired with Backstage
-where the customer prefers; cozyportal also works.
+substrate is real. Ænix's Developer Self-Service can be paired with Backstage
+where the customer prefers; Cozystack Dashboard also works.
 
 ### 3. Fragmentation without governance
 
@@ -258,7 +252,7 @@ Fix: product-team interviews as platform team's recurring discipline.
 Measure adoption per golden path. Sunset paths that don't adopt.
 Build paths that match what product teams actually request.
 
-## What Aenix enterprise platform engineering delivers
+## What Ænix enterprise platform engineering delivers
 
 A typical engagement covers:
 
@@ -279,13 +273,13 @@ initial setup.
 
 ### Workstream 3 — Cozystack-based platform substrate (where applicable)
 
-Foundational substrate built on Ænix Platform Enterprise Edition
+Foundational substrate built on Ænix Private Cloud Platform
 (for regulated organisations) or Developer Self-Service (for product-focused
 organisations). Multi-region, multi-DC, audit-isolated environments,
 DORA / NIS2 alignment where applicable.
 
 This workstream isn't always part of the engagement — some
-customers retain existing substrate and engage Aenix for governance
+customers retain existing substrate and engage Ænix for governance
 and discipline work only.
 
 ### Workstream 4 — Golden path roadmap
@@ -296,8 +290,8 @@ metrics.
 
 ### Workstream 5 — Capability transfer and operational handover
 
-Aenix engineers reduce direct involvement over time. Customer
-platform engineering function absorbs ownership. Aenix retainer
+Ænix engineers reduce direct involvement over time. Customer
+platform engineering function absorbs ownership. Ænix retainer
 continues for advisory + Tier-3 SLA escalation.
 
 ## When this engagement fits
@@ -332,9 +326,9 @@ Poor fit:
   smaller-scope scope
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   the IDP-layer engagement
-- **[Developer Self-Service product page](/products/aenix-platform/idp-edition/)** —
+- **[Developer Self-Service product page](/products/private-cloud-platform/)** —
   for product-engineering-focused organisations
-- **[Enterprise Edition product page](/products/aenix-platform/enterprise-edition/)** —
+- **[Private Cloud Platform product page](/products/private-cloud-platform/)** —
   for regulated organisations
 - **[Internal developer platform — 6 patterns without Backstage lock-in](/blog/2026/05/internal-developer-platform-examples-without-backstage/)** —
   six production patterns
@@ -344,10 +338,3 @@ Poor fit:
   the IDP economic case
 - **[Build private cloud — 90-day playbook](/blog/2026/05/build-private-cloud-90-day-playbook/)** —
   for the substrate-build workstream
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Enterprise platform engineering engagements
-typically run 18-36 months with multi-million-euro budgets; our team
-scales to engagement size.*

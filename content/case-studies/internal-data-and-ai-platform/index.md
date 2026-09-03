@@ -16,10 +16,10 @@ secondary_keywords:
   - "GPU lifecycle management"
   - "data platform and AI infrastructure"
 related_pages:
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /solutions/sovereign-ai/
   - /solutions/private-llm/
-  - /products/aenix-platform/idp-edition/
+  - /products/private-cloud-platform/
 faq:
   - q: "Why one platform for both data and AI workloads?"
     a: "Because they are the same infrastructure problem seen twice. Analytics, data lakes and marts, model training and model serving all want object storage, databases, scheduling, quotas and pipelines. Splitting them into two platforms means two operating models, two capacity plans and a copy of every dataset between them."
@@ -107,6 +107,6 @@ The two are usually treated as separate programmes and then spend years copying 
 
 ---
 
-*This case study describes an engagement in rollout and is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Aenix sales](/contact/).*
+*This case study describes an engagement in rollout and is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

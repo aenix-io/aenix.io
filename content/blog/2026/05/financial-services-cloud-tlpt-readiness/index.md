@@ -43,8 +43,6 @@ quiz:
       explanation: "Phase 4 explicitly states: 'No kubectl access to customer production cluster — operates via GitOps PR review only. Critical for bank governance.'"
 ---
 
-**Long-form companion to the [financial-services industry page](/industries/financial-services/). For platform engineers and infrastructure leads at banks, insurers, payment institutions, and market-infrastructure providers translating DORA's TLPT, supplier-chain transparency, and exit-readiness obligations into architecture that survives a real supervisor cycle — not a policy review.**
-
 The DORA conversation at most financial-services organisations split
 into two halves in 2024-2025. The first half — governance, policy,
 ICT risk management documentation — went to legal, compliance, and
@@ -56,10 +54,6 @@ DORA-compliant when a real TLPT cycle hits — has been quieter. That
 silence is starting to break in 2026. Supervisor TLPT exercises are
 reaching architectures that were assumed compliant when DORA went
 live but had never been tested under realistic regulator scrutiny.
-
-This article walks through what TLPT readiness actually looks like
-at the architecture level — what platform engineers should already
-have done, what gaps recur, and what an Aenix engagement closes.
 
 ## What TLPT means and why it matters now
 
@@ -77,14 +71,16 @@ expected windows.
 
 For platform engineers, three TLPT-readiness questions matter:
 
-1. **Detection at 24-hour timeline.** Article 23 requires an early
-   warning within 24 hours of becoming aware of a significant
-   incident. If your detection telemetry is tuned for performance
-   and not security, the 24-hour window is fictional.
-2. **Audit-trail completeness.** Article 21 requires that you can
-   demonstrate to a supervisor *with evidence* what controls were in
-   place at the time of the incident. Documentation isn't enough;
-   running-system evidence is the bar.
+1. **Detection on the reporting clock.** DORA Articles 17-19 put an
+   initial notification of a major ICT-related incident on a short
+   fuse, and NIS2 Article 23 fixes a 24-hour early warning for
+   entities in scope for both. If your detection telemetry is tuned
+   for performance and not security, either window is fictional.
+2. **Audit-trail completeness.** DORA Article 6 requires a documented
+   ICT risk management framework you can demonstrate to a supervisor
+   *with evidence* — what controls were in place at the time of the
+   incident. Documentation isn't enough; running-system evidence is
+   the bar.
 3. **Containment and recovery.** TLPT exercises injection of real-
    world attack patterns. The platform's network policies, identity
    model, and isolation boundaries must survive realistic lateral
@@ -100,7 +96,8 @@ properties supervisors care about:
 Most banks we engage with have rich performance telemetry and
 alert-fatigued security telemetry. The alert ratio is wrong: too many
 performance noise alerts, not enough signal-to-noise on the security
-events that map to Article 23 triggers.
+events that map to a reportable-incident trigger under DORA
+Articles 18-19 (and NIS2 Article 23 where both apply).
 
 Fix patterns:
 - Curated alert rules tuned to MITRE ATT&CK techniques relevant to
@@ -110,7 +107,7 @@ Fix patterns:
 - 24×7 detection coverage with documented escalation
 - Alert hygiene as a recurring task
 
-Aenix Enterprise Edition ships VictoriaMetrics + VictoriaLogs
+Ænix Private Cloud Platform ships VictoriaMetrics + VictoriaLogs
 configured for security-grade telemetry by default, plus security-
 focused alert rules. The customer SIEM integration is engagement work.
 
@@ -123,13 +120,13 @@ authorised.
 
 Pattern: SPIFFE/SPIRE for workload identity, External Secrets Operator
 backed by customer HSM, Pod Security Standards enforced as policy.
-Aenix engagement covers the integration; the customer's IdP /
+Ænix engagement covers the integration; the customer's IdP /
 workforce identity remains customer-controlled.
 
 ### 3. Tenant CRD isolation as the structural answer to concentration risk
 
-Article 28 demands the substantive condition of resilience, not
-contractual diversity. The Tenant CRD model provides namespace-level
+Article 29 assesses concentration risk on the substantive condition
+of resilience, not on contractual diversity. The Tenant CRD model provides namespace-level
 isolation per business function, per data class, per criticality
 tier — with per-tenant quotas, RBAC scope, observability scope,
 audit-trail scope.
@@ -158,19 +155,19 @@ within the past 24 months.
 The Cozystack-based architecture makes exit drills mechanically
 simpler: workloads are standard KubeVirt VMs and Kubernetes resources.
 The exit destination can be "the same Kubernetes API on different
-hardware or provider." Aenix's engagement model includes a documented
+hardware or provider." Ænix's engagement model includes a documented
 exit-drill playbook that customers run annually.
 
 ### 6. Supplier-chain transparency to second hop
 
-Article 28 demands visibility into the ICT supply chain at least to
-the second hop. For the platform vendor relationship, Aenix is on the
+Article 30(2)(a) demands visibility into the ICT supply chain at
+least to the second hop. For the platform vendor relationship, Ænix is on the
 hook — we provide an attested supplier-disclosure document that maps
 upstream open-source components, security disclosure channels, and
 operational dependencies.
 
 Beyond the platform vendor, the customer is responsible for mapping
-their own supplier chain. Aenix engagements include tooling to
+their own supplier chain. Ænix engagements include tooling to
 inventory it but the inventory itself is customer-side work.
 
 ## Where most financial-services cloud architectures still fall short
@@ -202,15 +199,15 @@ it. Time-to-exit estimates are tabletop, not calibrated against a
 drill. When the supervisor asks "when did you last test the exit
 plan?" the answer is silence.
 
-Fix: annual exit-drill rehearsal with documented outcome. Aenix
+Fix: annual exit-drill rehearsal with documented outcome. Ænix
 engagement provides the playbook; the customer runs the rehearsal.
 
 ### Gap 3: concentration risk treated as procurement question
 
 "We use AWS in two regions; we have a contract clause requiring
 geographic diversification of our backup." Both true. Neither
-addresses what Article 28 actually demands — substantive architectural
-resilience against single-provider failure.
+addresses what Article 29 actually assesses — substantive
+architectural resilience against single-provider failure.
 
 Substantive answer: workloads use platform abstractions (Kubernetes,
 KubeVirt, S3-compatible storage, standard relational databases) that
@@ -223,11 +220,11 @@ The contracted hyperscaler is documented. Its data-centre operators,
 network connectivity providers, shared platform services beneath are
 not. Article 30(2)(a) requires visibility to second hop.
 
-For Cozystack-based architecture, the platform vendor (Aenix) discloses
+For Cozystack-based architecture, the platform vendor (Ænix) discloses
 upstream component sourcing. The hardware vendor is the next hop;
 beyond that, customer responsibility.
 
-## The Aenix engagement model for financial services
+## The Ænix engagement model for financial services
 
 We approach the financial-services engagement differently from other
 verticals, because the regulator-driver and audit-readiness drivers
@@ -238,31 +235,31 @@ shape the work.
 Confirm regulatory scope (DORA + national overlays + sectoral rules).
 Confirm criticality classification of workloads. Sponsor and
 supervisor-engagement contacts on customer side. Engagement model
-(typical: Aenix runs advisory + Tier-3 SLA; customer runs production
+(typical: Ænix runs advisory + Tier-3 SLA; customer runs production
 operations).
 
 ### Phase 1 — Platform Readiness Assessment with DORA workstream
 
 14- or 28-day fixed-price assessment. Control-by-control architecture
-review against DORA Article 21 + Article 28 expectations. Output: 30-50
+review against DORA Article 6 and Articles 28-30 expectations. Output: 30-50
 page report with gap analysis, prioritised remediation, timing.
 
-### Phase 2 — Pilot deployment of Enterprise Edition
+### Phase 2 — Pilot deployment of Private Cloud Platform
 
 3-6 months. Defined slice of critical-function workloads migrated to
-Cozystack-based Enterprise Edition. Supervisor evidence catalogue
+Cozystack-based Private Cloud Platform. Supervisor evidence catalogue
 partially built. TLPT-readiness validated against the pilot scope.
 
-### Phase 3 — Full Enterprise Edition build
+### Phase 3 — Full Private Cloud Platform build
 
 12-30 months depending on workload scope, multi-DC structure, TLPT
 cycle. Production-grade deployment with full compliance documentation
-deliverables. Aenix participates in TLPT preparation; the test itself
+deliverables. Ænix participates in TLPT preparation; the test itself
 is run by accredited red-team providers.
 
 ### Phase 4 — Managed retainer
 
-Aenix advisory + Tier-3 under SLA. No kubectl access to customer
+Ænix advisory + Tier-3 under SLA. No kubectl access to customer
 production cluster — operates via GitOps PR review only. Critical for
 bank governance.
 
@@ -279,15 +276,15 @@ Strong fit:
 Marginal fit:
 
 - Smaller banks where the budget envelope for a multi-year programme
-  isn't yet sized for it; Provider Edition with sovereignty-focused
+  isn't yet sized for it; Public Cloud Platform with sovereignty-focused
   architecture may bridge
 
 Poor fit:
 
 - Banks that have already committed to a multi-year hyperscaler
-  programme and aren't reopening that decision — Aenix can advise on
+  programme and aren't reopening that decision — Ænix can advise on
   specific DORA architecture gaps within the hyperscaler context, but
-  the full Enterprise Edition isn't a fit
+  the full Private Cloud Platform isn't a fit
 
 ## Where to dig deeper
 
@@ -295,20 +292,13 @@ Poor fit:
   the trigger-led commercial landing
 - **[DORA compliance services](/solutions/dora-compliance/)** —
   buyer-trigger DORA landing
-- **[Enterprise Edition product page](/products/aenix-platform/enterprise-edition/)** —
-  the edition for regulated enterprises
+- **[Private Cloud Platform product page](/products/private-cloud-platform/)** —
+  the product for regulated enterprises
 - **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   architecture-level DORA walkthrough
 - **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-detailed/)** —
   what demonstrable means in practice
-- **[Enterprise Edition — DORA Article 21 + 28 mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
-  edition-level architectural detail
+- **[Private Cloud Platform — DORA and NIS2 obligations mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
+  product-level architectural detail
 - **[DORA compliance checklist resource](/resources/dora-compliance-checklist/)** —
   downloadable controls checklist
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Our tier-1 European bank engagements are
-NDA-protected until mid-2027; first named bank case studies will be
-published as NDAs expire.*

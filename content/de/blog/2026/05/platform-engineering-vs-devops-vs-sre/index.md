@@ -10,36 +10,36 @@ companion_landing: "/de/dienstleistungen/platform-engineering/"
 quiz:
   title: "Wissens-Check: Platform Engineering vs DevOps vs SRE"
   questions:
-    - q: "Wie charakterisiert der Artikel die drei Begriffe in einer Zeile?"
+    - q: "Wie charakterisiert der Artikel die drei Begriffe in einem Satz?"
       options:
-        - { text: "Alle drei sind Synonyme", correct: false }
-        - { text: "DevOps ist eine Praxis, SRE ist eine Disziplin, Platform Engineering ist eine Funktion", correct: true }
-        - { text: "Alle drei sind Rollen", correct: false }
-      explanation: "Sauberste Zusammenfassung: DevOps ist eine Praxis (lebt in Produkt-Teams), SRE ist eine Disziplin (Software-Engineering auf Operations angewendet), Platform Engineering ist eine Funktion (separate Team, dessen Kunden andere Engineering-Teams sind)."
+        - { text: "Alle drei sind Synonyme für dieselbe Aufgabe", correct: false }
+        - { text: "DevOps ist Praxis, SRE ist Disziplin, Platform Engineering ist Funktion", correct: true }
+        - { text: "Alle drei sind Rollenbezeichnungen für einzelne Engineers", correct: false }
+      explanation: "Die knappste Zusammenfassung: DevOps ist eine Praxis, die in den Produktteams selbst gelebt wird. SRE ist eine Disziplin, nämlich Software-Engineering angewandt auf den Betrieb. Platform Engineering ist eine Funktion, also ein eigenes Team, dessen Kunden andere Engineering-Teams sind."
     - q: "Wer ist der Kunde des Platform-Engineering-Teams?"
       options:
-        - { text: "Endbenutzer des Produkts", correct: false }
-        - { text: "Andere Engineering-Teams (Produkt-Teams)", correct: true }
-        - { text: "Kein Kunde — internes Team", correct: false }
-      explanation: "Platform Engineering ist eine Funktion mit Produkt-Team-Kunden — andere Engineering-Teams. DevOps-Kunde ist das Team selbst. SRE-Kunde sind Produkt-Teams, die den Service betreiben."
+        - { text: "Die Endnutzerinnen und Endnutzer des Produkts", correct: false }
+        - { text: "Die anderen Engineering-Teams im Unternehmen", correct: true }
+        - { text: "Niemand, es handelt sich um ein reines Innenteam", correct: false }
+      explanation: "Platform Engineering ist eine Funktion mit den Produktteams als Kunden. Bei DevOps ist das Team selbst der Kunde, bei SRE sind es die Produktteams, die den Dienst betreiben."
     - q: "Was baut das Platform-Engineering-Team konkret?"
       options:
-        - { text: "Nur Dokumentation", correct: false }
-        - { text: "Internal Developer Platform (IDP), Golden Paths, Operatives Modell, Internes Produktmanagement", correct: true }
-        - { text: "Nur Backstage", correct: false }
-      explanation: "Vier Outputs: (1) Internal Developer Platform — Self-Service-Surface ohne Tickets; (2) Golden Paths — opinionated Pfade für übliche Bedürfnisse; (3) Operatives Modell — SLOs, On-Call, Runbooks; (4) Internes Produktmanagement — Roadmap, Priorisierung, Customer Interviews."
-    - q: "Wann ist \"DevOps allein\" ohne SRE oder Platform Engineering ausreichend?"
+        - { text: "Ausschließlich Dokumentation und Architekturvorgaben", correct: false }
+        - { text: "Eine IDP, Golden Paths, ein Betriebsmodell und internes Produktmanagement", correct: true }
+        - { text: "Ausschließlich eine Backstage-Instanz mit Servicekatalog", correct: false }
+      explanation: "Vier Ergebnisse: (1) eine Internal Developer Platform als Self-Service-Oberfläche ohne Tickets, (2) Golden Paths als vorgegebene Wege für die üblichen Bedürfnisse, (3) ein Betriebsmodell mit SLOs, Rufbereitschaft und Runbooks, (4) internes Produktmanagement mit Roadmap, Priorisierung und Gesprächen mit den Nutzerteams."
+    - q: "Wann genügt DevOps allein, ohne SRE oder Platform Engineering?"
       options:
-        - { text: "Immer, in jeder Organisation", correct: false }
-        - { text: "Kleine Organisationen mit 1–3 Produkt-Teams", correct: true }
-        - { text: "Nur in regulierten Industrien", correct: false }
-      explanation: "DevOps allein passt für kleine bis mittelgroße Organisationen mit 1–3 Produkt-Teams. Jedes Team betreibt seine eigenen Services mit gemeinsamen Tools, aber ohne dedizierte Reliability- oder Plattform-Funktion."
-    - q: "Was ist der typische Verhältnis-Wert von Plattform-Engineer zu Produkt-Engineer in reifen Organisationen?"
+        - { text: "Immer, unabhängig von der Größe der Organisation", correct: false }
+        - { text: "In kleinen Organisationen mit ein bis drei Produktteams", correct: true }
+        - { text: "Ausschließlich in stark regulierten Branchen", correct: false }
+      explanation: "DevOps allein passt für kleine bis mittelgroße Organisationen mit ein bis drei Produktteams. Jedes Team betreibt seine eigenen Dienste mit gemeinsamen Werkzeugen, ohne dedizierte Reliability- oder Plattformfunktion."
+    - q: "Wie ist das typische Verhältnis von Plattform- zu Produkt-Engineers in reifen Organisationen?"
       options:
         - { text: "1:2 bis 1:5", correct: false }
         - { text: "1:10 bis 1:20", correct: true }
         - { text: "1:50 bis 1:100", correct: false }
-      explanation: "In reifen Organisationen: 1:10 bis 1:20 Plattform-Engineer-zu-Produkt-Engineer-Verhältnis. Niedriger als 1:10 = Plattform überdotiert; höher als 1:20 = Plattform-Team wird vom Produkt-Wachstum überholt."
+      explanation: "In reifen Organisationen liegt das Verhältnis bei 1:10 bis 1:20. Unter 1:10 ist die Plattformfunktion überbesetzt; über 1:20 wird das Plattformteam in der Regel vom Wachstum der Produktteams überholt."
 ---
 
 Begleitung zur **[Platform-Engineering-Services-Page](/de/dienstleistungen/platform-engineering)**. Wo überlappen sich die drei Begriffe, wo nicht, was tut jede Funktion tatsächlich.
@@ -89,5 +89,5 @@ Alle drei kümmern sich um:
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

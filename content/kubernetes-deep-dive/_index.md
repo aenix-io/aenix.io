@@ -3,13 +3,16 @@ title: "Kubernetes Deep Dive Course"
 description: "Kubernetes Deep Dive Course from Aenix — advanced, hands-on training for engineers on the Cozystack stack: Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux."
 hero_subtitle: "Hands-on advanced training on the Cozystack stack"
 language: "en"
+aliases:
+  - /kubernetes-deep-dive-course/
+hreflang_de: /de/kubernetes-deep-dive/
 ---
 
-**Advanced Kubernetes course from Aenix. Engineers learn the same stack that powers Ænix Platform deployments — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, production-grade, taught by the engineers who maintain Cozystack.**
+**Advanced Kubernetes course from Ænix. Engineers learn the same stack that powers Ænix Platform deployments — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, production-grade, taught by the engineers who maintain Cozystack.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Enroll in next cohort</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Ænix Platform engagement →</a>
+  <a class="cta-secondary" href="/products/">Ænix Platform engagement →</a>
 </div>
 
 ---
@@ -29,15 +32,15 @@ language: "en"
 
 Most Kubernetes courses cover the basics. This course covers what comes after — the stack that runs production multi-tenant cloud platforms:
 
-- **Talos Linux** as the base OS — minimal, immutable, API-driven
+- **Talos Linux** as the base OS — minimal, immutable, API-driven (Cozystack also runs on general-purpose Linux distributions via the generic-Kubernetes install path)
 - **KubeVirt** for VM workloads on Kubernetes
 - **Cilium** for eBPF-based networking, security, observability
-- **LINSTOR** for distributed block storage
+- **LINSTOR / DRBD** for distributed replicated block storage
 - **Cluster API** for multi-cluster lifecycle
 - **Flux** for GitOps
 - **Multi-tenant architecture** with Tenant CRD-style isolation
 
-This is the same stack Aenix engineers use to build Ænix Platform deployments at regulated enterprises and hosting providers.
+This is the same stack Ænix engineers use to build Ænix Platform deployments at regulated enterprises and hosting providers.
 
 ---
 
@@ -71,7 +74,7 @@ The course is independent of Ænix Platform engagements — engineers can take i
 However, organizations buying Ænix Platform often send engineers to this course either before, during, or after platform builds. Course completion accelerates handoff and operational maturity.
 
 If you're considering both:
-- **Course only:** train your engineers; decide later whether to engage Aenix on platform build
+- **Course only:** train your engineers; decide later whether to engage Ænix on platform build
 - **Course + Ænix Platform:** combined training + production platform engagement
 
 ---
@@ -96,7 +99,7 @@ The course teaches the Cozystack stack technologies, but engineers learn each co
 
 ### Will I learn Ænix Platform specifically?
 
-The course covers the open-source Cozystack stack, which is the foundation of Ænix Platform. Ænix Platform-specific operational details (productized installer, edition-specific features, support workflows) are covered separately during Ænix Platform engagements with customer teams.
+The course covers the open-source Cozystack stack, which is the foundation of Ænix Platform. Ænix Platform-specific operational details (productized installer, product-specific features, support workflows) are covered separately during Ænix Platform engagements with customer teams.
 
 ### What if I'm already a Cozystack contributor?
 
@@ -110,4 +113,4 @@ This course is excellent for active contributors who want production-operations 
 
 ---
 
-*Kubernetes Deep Dive Course is from Aenix — the team behind [Cozystack](https://cozystack.io) (CNCF Project).*
+*Kubernetes Deep Dive Course is from Ænix — the team behind [Cozystack](https://cozystack.io) (CNCF Project).*

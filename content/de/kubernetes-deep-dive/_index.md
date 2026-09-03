@@ -2,18 +2,19 @@
 title: "Kubernetes Deep Dive Kurs"
 description: "Kubernetes Deep Dive Kurs von Aenix: fortgeschrittenes Hands-on-Training für Engineers zum Cozystack-Stack — Talos, LINSTOR, Cilium, KubeVirt, Flux."
 language: "de"
+hreflang_en: /kubernetes-deep-dive/
 ---
 
-**Fortgeschrittener Kubernetes-Kurs von Aenix. Engineers lernen den gleichen Stack, der Ænix-Platform-Deployments antreibt — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, produktionsreif, unterrichtet von den Engineers, die Cozystack pflegen.**
+**Fortgeschrittener Kubernetes-Kurs von Ænix. Engineers lernen den gleichen Stack, der Ænix-Platform-Deployments antreibt — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, produktionsreif, unterrichtet von den Engineers, die Cozystack pflegen.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Jetzt anmelden</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Ænix-Platform-Engagement →</a>
+  <a class="cta-primary" href="/de/kubernetes-deep-dive/#enroll">Jetzt anmelden</a>
+  <a class="cta-secondary" href="/de/produkte/">Ænix-Platform-Engagement →</a>
 </div>
 
 ---
 
-## Quick facts
+## Kurzüberblick
 
 - **Format:** Mehrwöchiger Intensivkurs (Online- oder Hybrid-Optionen)
 - **Zielgruppe:** Plattform-Engineers, Kubernetes-Operatoren, DevOps-Engineers, OSS-Beitragende
@@ -55,4 +56,4 @@ Für Team-Training bitte zusätzlich [Discovery-Call buchen →](/de/kontakt/).
 
 ---
 
-*Der Kubernetes Deep Dive Kurs lehrt den Stack hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Aenix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/aenix-platform/).*
+*Der Kubernetes Deep Dive Kurs lehrt den Stack hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Ænix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/).*

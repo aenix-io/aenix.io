@@ -10,36 +10,36 @@ companion_landing: "/de/dienstleistungen/kubernetes-consulting/"
 quiz:
   title: "Wissens-Check: Produktions-Kubernetes-Cluster"
   questions:
-    - q: "Wie viele Architekturentscheidungen werden im Artikel als \"die zählen\" identifiziert?"
+    - q: "Wie viele Architekturentscheidungen benennt der Artikel als die entscheidenden?"
       options:
         - { text: "Drei", correct: false }
-        - { text: "Zehn — Distribution, Multi-Tenancy, CNI, Storage, Identity, GitOps, Observability, Backup, Ingress, Lifecycle", correct: true }
+        - { text: "Zehn", correct: true }
         - { text: "Fünfzehn", correct: false }
-      explanation: "10 Entscheidungen: (1) Distribution, (2) Multi-Tenancy, (3) Networking/CNI, (4) Storage, (5) Identity + Secrets, (6) GitOps-Engine, (7) Observability-Stack, (8) Backup + DR, (9) Ingress + Load Balancing, (10) Lifecycle-Management."
-    - q: "Welche CNI ist 2026 der Standard für neue Bereitstellungen?"
+      explanation: "Zehn Entscheidungen: (1) Distribution, (2) Mandantenfähigkeit, (3) Networking und CNI, (4) Storage, (5) Identität und Secrets, (6) GitOps-Engine, (7) Observability-Stack, (8) Backup und Disaster Recovery, (9) Ingress und Lastverteilung, (10) Lifecycle-Management."
+    - q: "Welches CNI ist 2026 der Standard für neue Umgebungen?"
       options:
         - { text: "Flannel", correct: false }
         - { text: "Cilium", correct: true }
         - { text: "Calico", correct: false }
-      explanation: "Cilium hat sich als 2026-Standard durchgesetzt — eBPF-basiert, native L4/L7-Policies, Observability, Service-Mesh in einem. Calico ist langjährig BGP-stark; Flannel einfacher aber feature-arm."
-    - q: "Was ist der häufigste Fehler bei Cluster-Lifecycle?"
+      explanation: "Cilium hat sich als Standard für 2026 durchgesetzt: eBPF-basiert, mit nativen L4/L7-Policies, eingebauter Observability und Service-Mesh-Funktionen in einem. Calico ist seit Langem stark bei BGP, Flannel ist einfacher, aber funktionsarm. In Cozystack steht Cilium neben Kube-OVN, das die VM-nahen Netzwerkfunktionen übernimmt."
+    - q: "Was ist der häufigste Fehler beim Cluster-Lifecycle?"
       options:
-        - { text: "Zu schnelle Upgrades", correct: false }
-        - { text: "Upgrade-Schulden — Cluster auf alten Kubernetes-Versionen weil Upgrade-Disziplin fehlt", correct: true }
-        - { text: "Zu viele Tests", correct: false }
-      explanation: "Häufige Fehler: Dev-Cluster auf Prod skaliert, kein Observability-Budget, Sicherheit als Nachgedanke, Upgrade-Schulden (Cluster auf zu alten Versionen weil Upgrade-Praxis fehlt), kein Plattform-Team."
-    - q: "Welche operativen Praktiken werden für Produktions-Cluster empfohlen?"
+        - { text: "Zu häufige und zu schnell ausgerollte Upgrades", correct: false }
+        - { text: "Upgrade-Schulden durch fehlende Upgrade-Disziplin", correct: true }
+        - { text: "Ein zu umfangreicher Testaufwand vor jedem Release", correct: false }
+      explanation: "Häufige Fehler: ein Dev-Cluster wird zum Produktivsystem hochskaliert, für Observability ist kein Budget eingeplant, Sicherheit kommt als Nachgedanke, Upgrade-Schulden häufen sich, weil die Upgrade-Praxis fehlt, und es gibt kein verantwortliches Plattformteam."
+    - q: "Welche Betriebspraktiken empfiehlt der Artikel für Produktionscluster?"
       options:
-        - { text: "SLOs + Error Budgets, dokumentierte Runbooks, Capacity Planning, Upgrade-Disziplin (Kubernetes minor jedes Quartal), Incident Response, Sicherheitsposture", correct: true }
-        - { text: "Nur Backups", correct: false }
-        - { text: "Nur Monitoring", correct: false }
-      explanation: "Operative Praktiken: SLOs und Error Budgets, dokumentierte Runbooks, Capacity Planning, Upgrade-Disziplin (Kubernetes minor jedes Quartal), Incident Response, Sicherheitsposture (Pod Security Standards, Network Policies)."
-    - q: "Welche GitOps-Engines sind production-grade Optionen?"
+        - { text: "Regelmäßige Backups genügen als Betriebsdisziplin", correct: false }
+        - { text: "SLOs, Runbooks, Kapazitätsplanung, Upgrade-Disziplin, Incident Response", correct: true }
+        - { text: "Monitoring genügt, solange die Dashboards grün sind", correct: false }
+      explanation: "Betriebspraktiken: SLOs und Fehlerbudgets, dokumentierte Runbooks, Kapazitätsplanung, Upgrade-Disziplin mit einem Kubernetes-Minor-Release je Quartal, geübte Incident Response und eine gepflegte Sicherheitslage mit Pod Security Standards und Network Policies."
+    - q: "Welche GitOps-Engines sind produktionsreife Optionen?"
       options:
-        - { text: "Argo CD oder Flux — beide CNCF Graduated, Cozystack default ist Flux", correct: true }
-        - { text: "Nur Spinnaker", correct: false }
-        - { text: "Nur Argo CD", correct: false }
-      explanation: "Beide Argo CD und Flux sind production-grade und CNCF Graduated. Argo CD: UI-reich, Plugin-Ökosystem, Multi-Tenancy via Projects. Flux: näher am Upstream-Kubernetes, Helm-Controller-nativ, leichteres operatives Footprint. Cozystack default ist Flux."
+        - { text: "Ausschließlich Spinnaker", correct: false }
+        - { text: "Sowohl Argo CD als auch Flux", correct: true }
+        - { text: "Ausschließlich Argo CD", correct: false }
+      explanation: "Sowohl Argo CD als auch Flux sind produktionsreif und CNCF-graduiert. Argo CD bietet eine reichhaltige Oberfläche, ein großes Plugin-Ökosystem und Mandantenfähigkeit über Projects. Flux liegt näher am Upstream-Kubernetes, ist eng mit dem Helm-Controller verzahnt und hat einen leichteren Betriebsaufwand. In Cozystack ist Flux der Standard."
 ---
 
 Begleitung zur **[Kubernetes-Consulting-Page](/de/dienstleistungen/kubernetes-consulting)**.
@@ -76,5 +76,5 @@ Begleitung zur **[Kubernetes-Consulting-Page](/de/dienstleistungen/kubernetes-co
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

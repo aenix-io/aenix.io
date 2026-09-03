@@ -1,6 +1,6 @@
 ---
 title: "Public-sector sovereign cloud — from procurement framework to running platform"
-description: "Long-form companion to the public-sector industry page: how procurement leads and IT directors turn sovereignty mandates into a running cloud platform."
+description: "How procurement leads and IT directors turn sovereignty mandates into a running cloud platform."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
@@ -43,8 +43,6 @@ quiz:
       explanation: "The post specifies a 12-36 month total timeline from project start to certified production — substantially longer than private-sector engagements because of certification overhead, but compounding into annual recertification afterwards."
 ---
 
-**Long-form companion to the [public-sector industry page](/industries/public-sector/). For procurement leads, IT directors, and platform engineers at government and quasi-public organisations translating sovereignty mandates and procurement frameworks into a running cloud platform — covering SecNumCloud, BSI C5, EUCS, Kazakhstan procurement-portal sovereignty, APAC variants, and what it takes to satisfy them substantively, not just contractually.**
-
 The public-sector sovereign-cloud conversation in 2026 is more
 fragmented than in financial services. There's no single regulation
 like DORA driving alignment. Instead, each jurisdiction has its own
@@ -52,10 +50,6 @@ framework, often layered on top of GDPR, NIS2, and sectoral overlays.
 A multinational public-sector engagement — or even a national one
 crossing regions — usually maps against three or more frameworks
 simultaneously.
-
-This article walks through what the major frameworks actually require,
-where they overlap, where they diverge, and what an architecturally-
-sovereign cloud platform delivers across all of them.
 
 ## The framework landscape
 
@@ -160,7 +154,7 @@ non-optional telemetry channels that fail this criterion.
 ### 8. Operational independence under sovereign jurisdiction
 
 Provider personnel access logged and time-limited. Sovereign
-jurisdiction for the support entity (Aenix has AENIX s.r.o. in
+jurisdiction for the support entity (Ænix has AENIX s.r.o. in
 Czechia for EU contracts and AENIX INC in Delaware for US contracts).
 No cross-jurisdictional support routing for sovereignty-sensitive
 workloads.
@@ -174,13 +168,13 @@ simultaneously:
   vendor-neutral substrate. Customer can audit, modify, or replace
   the platform vendor.
 - **Customer-controlled keys** — External Secrets Operator backed by
-  customer HSM; Aenix never holds keys.
+  customer HSM; Ænix never holds keys.
 - **Air-gap support** — documented and used by classified-data and
   defence-adjacent customers.
 - **Self-hosted observability** — VictoriaMetrics + VictoriaLogs in
   jurisdiction; no SaaS-observability residency leak.
 - **Customer-controlled identity** — Keycloak / Active Directory /
-  national IdP integration; Aenix never holds production credentials.
+  national IdP integration; Ænix never holds production credentials.
 - **Multi-tenant Tenant CRD** — strong isolation per data class /
   business unit / sectoral overlay.
 - **Audit-isolated environments** — separate clusters for production,
@@ -189,7 +183,7 @@ simultaneously:
 
 The architectural pattern is the same; the certification work is
 framework-specific. For SecNumCloud-tier engagements, the customer
-typically engages a certified auditor; Aenix provides the architecture
+typically engages a certified auditor; Ænix provides the architecture
 and documentation deliverables, the customer runs the audit cycle.
 
 ## Procurement realities
@@ -202,22 +196,22 @@ that private-sector engagements are not. A few practical realities:
 Public-sector RFPs typically specify which frameworks must be
 satisfied (SecNumCloud High, BSI C5, EUCS Substantial, etc.). The
 response must demonstrate substantive compliance, not just intent.
-Aenix engagement model includes tender-response support, with named
+Ænix engagement model includes tender-response support, with named
 references from prior public-sector engagements where allowed.
 
 ### Multi-year framework agreements
 
 Many public-sector engagements run through framework agreements with
-specific compliance and exit clauses. Aenix's commercial entity
+specific compliance and exit clauses. Ænix's commercial entity
 (AENIX s.r.o. in Czechia for EU; AENIX INC in Delaware for US) is
 the contracting entity; engagement structure adapts to framework-
 agreement requirements.
 
-### Aenix is not a hyperscaler — that's the point
+### Ænix is not a hyperscaler — that's the point
 
 Several public-sector mandates explicitly require non-hyperscaler
-sovereign provision. Aenix's open-core model — customer hardware,
-customer keys, customer operational control, optional Aenix support
+sovereign provision. Ænix's open-core model — customer hardware,
+customer keys, customer operational control, optional Ænix support
 — fits these mandates structurally rather than via contractual
 workarounds.
 
@@ -236,22 +230,22 @@ Produce procurement-response artefacts: technical proposal, framework
 compliance mapping, reference architecture, sample evidence catalogue.
 Typical duration: 2-4 months.
 
-### Phase 2 — Phase-1 platform build (per Public Cloud / Enterprise
-Edition models)
+### Phase 2 — Phase-1 platform build (per Public Cloud Platform /
+Private Cloud Platform models)
 
 Multi-DC deployment, air-gap option enabled if applicable, sovereign
 identity integration, audit-isolated environments. 6-18 months.
 
 ### Phase 3 — Certification cycle
 
-Customer engages accredited auditor; Aenix provides architecture
-documentation, control mapping, evidence catalogue. Aenix engineers
+Customer engages accredited auditor; Ænix provides architecture
+documentation, control mapping, evidence catalogue. Ænix engineers
 participate in technical interviews with the auditor where allowed.
 Typical certification cycle: 6-12 months parallel to Phase 2.
 
 ### Phase 4 — Production operations
 
-Customer team operates the platform under Aenix advisory + Tier-3
+Customer team operates the platform under Ænix advisory + Tier-3
 SLA. Annual recertification cycle (most frameworks).
 
 Total timeline: 12-36 months from project start to certified
@@ -260,7 +254,7 @@ to certification overhead, but the certification value compounds —
 once certified, the platform retains certification with annual
 recertification rather than per-engagement.
 
-## Aenix's existing public-sector posture
+## Ænix's existing public-sector posture
 
 We currently operate within established EU and Central Asia
 public-sector procurement frameworks. Specific named engagements
@@ -268,7 +262,7 @@ remain confidential under procurement-confidentiality rules; named
 case studies in public sector typically follow a 3-5 year
 publication lag.
 
-What we will say publicly: Aenix has multi-year engagements with
+What we will say publicly: Ænix has multi-year engagements with
 Kazakhstan procurement-portal-listed sovereign cloud products, EU
 member-state regional digitalisation programmes, and tier-1 European
 defence-adjacent infrastructure. Concrete references available
@@ -288,14 +282,14 @@ Strong fit:
 Marginal fit:
 
 - Single ministry / agency procurement with smaller scope — may fit
-  Enterprise Edition rather than Provider Edition
+  Private Cloud Platform rather than Public Cloud Platform
 
 Poor fit:
 
 - Workloads where hyperscaler-managed cloud is already framework-
   compliant (some specific procurement frameworks)
-- Organisations without sovereignty pressure (use private-sector
-  edition matching workload profile)
+- Organisations without sovereignty pressure (use the private-sector
+  product matching the workload profile)
 
 ## Where to dig deeper
 
@@ -311,10 +305,3 @@ Poor fit:
   EU + KZ sovereign cloud playbook
 - **[Data residency requirements in 2026](/blog/2026/05/data-residency-requirements-2026/)** —
   per-layer residency walkthrough
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. AENIX s.r.o. (Czechia) is the EU contracting
-entity; AENIX INC (Delaware) is the US contracting entity. Engineering
-teams across the EU and Central Asia.*

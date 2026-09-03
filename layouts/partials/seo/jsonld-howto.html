@@ -16,15 +16,15 @@
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": {{ printf "How %s works" .Title | jsonify }},
+  "name": {{ printf "How %s works" .Title }},
   {{- if $totalTime }}
-  "totalTime": {{ $totalTime | jsonify }},
+  "totalTime": {{ $totalTime }},
   {{- end }}
   {{- if $cost }}
   "estimatedCost": {
     "@type": "MonetaryAmount",
-    "currency": {{ index $cost "currency" | jsonify }},
-    "value": {{ index $cost "value" | jsonify }}
+    "currency": {{ index $cost "currency" }},
+    "value": {{ index $cost "value" }}
   },
   {{- end }}
   "step": [
@@ -33,8 +33,8 @@
       {
         "@type": "HowToStep",
         "position": {{ add $i 1 }},
-        "name": {{ index $s "name" | jsonify }},
-        "text": {{ index $s "text" | jsonify }}
+        "name": {{ index $s "name" }},
+        "text": {{ index $s "text" }}
       }
     {{- end }}
   ]

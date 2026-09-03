@@ -1,6 +1,6 @@
 ---
 title: "Private cloud providers and platforms — a 2026 comparison"
-description: "This is the long-form companion to our private cloud platform page. It walks through private cloud providers and platforms in 2026 — what's available, who..."
+description: "Open-source platforms, commercial stacks, sovereign hyperscaler regions and regional providers compared — plus the migration paths between them."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -21,7 +21,7 @@ quiz:
         - { text: "Apache CloudStack (mature OSS, service-provider origin)", correct: false }
         - { text: "Cozystack (CNCF Sandbox, KubeVirt-native cloud platform)", correct: true }
         - { text: "Proxmox VE (Debian-based, KVM + LXC virtualization)", correct: false }
-      explanation: "Cozystack — Apache 2.0, CNCF Project, KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. Strengths: single platform for VMs+containers+databases+S3+GPU, structural multi-tenancy. Limits: newer than OpenStack; smaller community than Kubernetes-only stacks."
+      explanation: "Cozystack — Apache 2.0, CNCF Project, KubeVirt + Cilium + Kube-OVN + LINSTOR (DRBD) + Tenant CRD + Cozystack Dashboard. Strengths: single platform for VMs+containers+databases+S3+GPU, structural multi-tenancy. Limits: newer than OpenStack; smaller community than Kubernetes-only stacks."
     - q: "What pricing trajectory does the article observe for VMware VCF after the Broadcom acquisition?"
       options:
         - { text: "10-20% increases (mild inflation, modest re-pricing)", correct: false }
@@ -42,11 +42,7 @@ quiz:
       explanation: "Nutanix (AHV proprietary KVM-based + Files + Volumes + Era for databases): operationally simple, integrated stack. Limits: closed source, appliance lock-in, less flexibility than open alternatives."
 ---
 
-**This is the long-form companion to our [private cloud platform page](/products/private-cloud-platform/). It walks through private cloud providers and platforms in 2026 — what's available, who they fit, what the architectural trade-offs are. Written for architects and platform leads evaluating where to land.**
-
 The private cloud landscape has shifted significantly in the last 3 years. Broadcom-induced VMware migrations, sovereignty mandates, AI workload economics, and FinOps pressure have all reshaped what "private cloud" means and what providers serve it.
-
-This article covers the platforms and providers actually being deployed in 2026.
 
 ## Two distinct things called "private cloud"
 
@@ -61,8 +57,8 @@ Both are valid; they answer different questions. This article focuses primarily 
 
 ### Cozystack
 **License:** Apache 2.0, CNCF Project.
-**Architecture:** Kubernetes-native virtualization (KubeVirt) + Cilium networking + LINSTOR/Ceph storage + Tenant CRD multi-tenancy + cozyportal self-service.
-**Maintainer:** Aenix (open-source, community-governed).
+**Architecture:** Kubernetes-native virtualization (KubeVirt) + Cilium and Kube-OVN networking + LINSTOR (DRBD) block storage + SeaweedFS object storage + Tenant CRD multi-tenancy + Cozystack Dashboard self-service.
+**Maintainer:** Ænix (open-source, community-governed).
 **Best for:** Service providers, sovereign-cloud builders, regulated multi-tenant, AI/GPU operators with sustained workloads.
 **Strengths:** Single platform for VMs + containers + databases + S3 + GPU. Multi-tenancy structural. Light operational footprint relative to OpenStack. Open-source, no vendor lock-in.
 **Limits:** Newer than OpenStack; smaller community.
@@ -151,7 +147,7 @@ A growing market in 2026:
 
 - **Hetzner** (Germany) — bare metal + cloud, popular in DACH
 - **OVHcloud** (France) — strong EU sovereign positioning
-- **Ænix Platform Provider Edition deployments at regional hosting providers (currently listed on aenix.io); tier-1 European bank engagements under NDA until mid-2027** — regional sovereign cloud product
+- **Ænix Public Cloud Platform deployments at regional hosting providers (currently listed on aenix.io); tier-1 European bank engagements under NDA until mid-2027** — regional sovereign cloud product
 - **QazCloud** (Kazakhstan) — partnered with Clever Cloud for sovereign AI
 - Various regional providers per jurisdiction
 
@@ -168,7 +164,7 @@ Decision tree:
 5. **SMB / single-tenant?** → Proxmox VE.
 6. **Don't want to operate the platform yourself?** → Regional sovereign cloud provider (Hetzner, OVHcloud, regulated enterprise customers (NDA-protected), etc.).
 7. **AI/GPU at scale, sustained utilization?** → Cozystack or OpenShift on dedicated GPU infrastructure.
-8. **Sovereignty + EU + low operational footprint?** → Cozystack with Aenix support, or OVHcloud.
+8. **Sovereignty + EU + low operational footprint?** → Cozystack with Ænix support, or OVHcloud.
 
 ## Migration paths
 
@@ -179,12 +175,6 @@ Most modern private-cloud deployments are migrations from existing infrastructur
 - **OpenStack → Cozystack** — for teams seeking Kubernetes-native foundation; image migration is straightforward
 - **Hyperscaler region → sovereign region** — for sovereignty-driven migrations within hyperscaler model
 
-## How to start
-
-If your situation fits Cozystack — see **[private cloud platform page](/products/private-cloud-platform/)** or visit **[cozystack.io](https://cozystack.io)**. For Aenix engagement see **[private cloud consulting](/services/private-cloud-consulting/)**.
-
----
-
 ## Want to dig deeper?
 
 - **[Private cloud platform — Cozystack](/products/private-cloud-platform/)**
@@ -192,8 +182,3 @@ If your situation fits Cozystack — see **[private cloud platform page](/produc
 - **[VMware alternative](/alternatives/vmware-alternative/)** — VMware exit
 - **[Cloud repatriation](/solutions/cloud-repatriation/)** — public cloud exit
 - **[cozystack.io](https://cozystack.io)** — open-source project
-
----
-
-*Aenix is the team behind Cozystack.*
-

@@ -1,7 +1,7 @@
 ---
 title: "Platform Engineering Services — interne Plattform für Ihre Entwickler-Teams"
 description: "Platform Engineering ist 2026 keine Diskussion mehr — es ist eine operative Schicht, die reife Engineering-Organisationen als Kerninfrastruktur behandeln...."
-related_pages: ["/de/produkte/private-cloud", "/services/platform-readiness-assessment"]
+related_pages: ["/de/produkte/private-cloud-platform/", "/de/dienstleistungen/platform-readiness-assessment/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -22,7 +22,7 @@ quick_facts:
   - label: "Technologiebasis"
     value: "Cozystack: KubeVirt (VMs + Container über eine Kubernetes-API), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Produkt-Optionen"
-    value: "the Developer Self-Service module of Ænix Platform für Produkt-/SaaS-Teams; Enterprise Edition für regulierte Unternehmen"
+    value: "Developer-Self-Service-Schicht der Ænix Private Cloud Platform für Produkt-/SaaS-Teams; Private Cloud Platform für regulierte Unternehmen"
 faq:
   - q: "Was ist der Unterschied zwischen Platform Engineering, DevOps und SRE?"
     a: "Platform Engineering baut eine interne Plattform als Produkt für Entwickler-Teams, statt einzelne Pipelines oder Services manuell zu betreiben. DevOps und SRE bleiben relevant, werden aber von operativer Last entlastet, sobald die Plattform Self-Service-Umgebungen und standardisierte Workflows bereitstellt."
@@ -34,17 +34,17 @@ faq:
     a: "Wenn mehrere Produkt-Teams überlappende Infrastruktur-Bedürfnisse haben, Time-to-Environment Wochen statt Stunden dauert, die DevOps/SRE-Funktion mit Operations überlastet ist, oder Compliance-, Souveränitäts- und Kostendruck eine Vorstand-Plattform-Entscheidung erzwingt."
   - q: "Wie schnell liefert ein Platform Readiness Assessment Ergebnisse?"
     a: "Das Assessment dauert 14-28 Tage und endet mit einer schriftlichen Bewertung des aktuellen Reifegrads plus einem konkreten Phase-2-Plan. Ein kostenloses Platform Engineering Maturity Assessment steht als Selbsteinschätzung vorab zur Verfügung."
-  - q: "Welche Ænix-Platform-Edition passt zu Platform Engineering?"
-    a: "Die Developer Self-Service richtet sich an Produkt- und SaaS-Engineering-Teams, die Self-Service-Plattformen brauchen. Die Enterprise Edition adressiert regulierte Unternehmen, die interne Plattformen unter Compliance- und Souveränitätsanforderungen aufbauen."
+  - q: "Welche Ænix-Plattform passt zu Platform Engineering?"
+    a: "Die Developer-Self-Service-Schicht der Private Cloud Platform richtet sich an Produkt- und SaaS-Engineering-Teams, die Self-Service-Plattformen brauchen. Die Private Cloud Platform adressiert regulierte Unternehmen, die interne Plattformen unter Compliance- und Souveränitätsanforderungen aufbauen."
 ---
 
 <!-- BLOCK 1: HERO -->
 
 **Platform Engineering ist keine Diskussion mehr; es ist eine operative Schicht, die reife Engineering-Organisationen heute als Kerninfrastruktur behandeln. Die Frage ist nicht, ob man investiert, sondern ob man die Funktion in-house langsam aufbaut, eine Beratung engagiert, die an Junior-Implementierer übergibt, oder mit Engineers arbeitet, die bereits Multi-Tenant-Plattformen in Produktion betrieben haben.**
 
-Aenix ist das Platform-Engineering-Team hinter [Cozystack](/de/produkte/cozystack/), einem CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Wir erweitern unser Team in Ihres — bauen, betreiben oder beschleunigen die interne Entwickler-Plattform, die Ihre Organisation tatsächlich braucht.
+Ænix ist das Platform-Engineering-Team hinter [Cozystack](/de/produkte/cozystack/), einem CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Wir erweitern unser Team in Ihres — bauen, betreiben oder beschleunigen die interne Entwickler-Plattform, die Ihre Organisation tatsächlich braucht.
 
-> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)** für Produkt- / SaaS-Engineering-Teams; **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die interne Plattformen aufbauen. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
+> **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für Produkt- / SaaS-Engineering-Teams; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die interne Plattformen aufbauen. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -59,9 +59,6 @@ Produktionsreifes Plattform-Team · Apache-2.0-Foundation · Engineers, keine Ar
 
 ---
 
-
----
-
 <!-- BLOCK 2: WHO THIS IS FOR -->
 
 ## Wer strukturiertes Platform Engineering braucht
@@ -69,7 +66,7 @@ Produktionsreifes Plattform-Team · Apache-2.0-Foundation · Engineers, keine Ar
 Platform Engineering als Funktion passt, wenn mindestens drei der folgenden Punkte zutreffen:
 
 - **Mehrere Produkt-Teams** mit überlappenden Infrastruktur-Bedürfnissen und divergierenden Provisionierungs-Pfaden.
-- **Time-to-Environment in Wochen, nicht Stunden** — und das schadet der Produkt-Velocity.
+- **Time-to-Environment in Wochen, nicht Stunden** — und das schadet der Produktgeschwindigkeit.
 - **Bestehendes DevOps-/SRE-Team ist mit Operations ausgelastet** — keine Kapazität für Golden-Path-Arbeit.
 - **Mehrere Kubernetes-Distributionen / Cloud-Provider / IaC-Patterns** gleichzeitig in Produktion.
 - **Compliance-, Souveränitäts- oder Kostendruck**, der eine architektonische Änderung erfordert statt einer Tooling-Änderung.
@@ -83,7 +80,7 @@ Wenn drei oder mehr zutreffen, ist strukturiertes Platform Engineering der Hebel
 
 <!-- BLOCK 3: WHAT WE BUILD -->
 
-## Was ein Aenix-Platform-Engineering-Engagement produziert
+## Was ein Ænix-Platform-Engineering-Engagement produziert
 
 <div class="grid-2x2">
 
@@ -97,7 +94,7 @@ Tenant-CRD-Modell, per-Tenant-Quotas, RBAC, Observability-Scope und Audit-Trails
 Dokumentierte Platform-Team-Verantwortlichkeiten, On-Call-Patterns, Incident-Response, Capacity-Planning. Die Plattform überlebt Engineer-Fluktuation.
 
 **4. Enablement Ihres Teams**
-Pair Programming, Knowledge-Transfer, Runbook-Erstellung mit benannten Ownern. Die Aenix-Engineers gehen; Ihr Team betreibt die Plattform.
+Pair Programming, Knowledge-Transfer, Runbook-Erstellung mit benannten Ownern. Die Ænix-Engineers gehen; Ihr Team betreibt die Plattform.
 
 </div>
 
@@ -105,7 +102,7 @@ Das Ergebnis ist eine Plattform, die tatsächlich gebaut und in Produktion mit r
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Aenix-Engineers</b></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Engineers</b></div>
 <div class="diagram__conn">bauen</div>
 <div class="diagram__node"><b>Interne Entwickler-Plattform</b></div>
 <div class="diagram__conn">bedient</div>
@@ -130,10 +127,10 @@ Das Ergebnis ist eine Plattform, die tatsächlich gebaut und in Produktion mit r
 Schöne interne Architektur, geringe Adoption der Produkt-Teams. Self-Service ist technisch vorhanden, aber operativ umständlich; Produkt-Teams reichen weiter Tickets ein. Fehler: der Wert der Plattform misst sich an der Nutzung, nicht an der Eleganz.
 
 **Backstage als Ziel, nicht als Plattform**
-Viele Teams verwechseln "Internal Developer Portal" (Backstage-UI) mit "Internal Developer Platform". Backstage ohne eine darunterliegende opinionated Plattform ist Tapete über demselben operativen Chaos. Fehler: der Katalog ist reich, die Pfade dauern weiterhin Wochen.
+Viele Teams verwechseln „Internal Developer Portal“ (Backstage-UI) mit „Internal Developer Platform“. Backstage ohne eine darunterliegende opinionated Plattform ist nur eine Fassade vor demselben operativen Chaos. Fehler: der Katalog ist reich, die Pfade dauern weiterhin Wochen.
 
 **Vendor-geführte Plattform mit einer Roadmap, die nicht Ihre ist**
-Der Kauf einer "kompletten Platform-Engineering-Lösung" sperrt die Architektur in die Roadmap des Vendors. Fehler: die Autorität des Plattform-Teams reduziert sich auf das Eskalieren von Tickets an ein Vendor-Support-Team.
+Der Kauf einer „kompletten Platform-Engineering-Lösung“ sperrt die Architektur in die Roadmap des Vendors. Fehler: die Autorität des Plattform-Teams reduziert sich auf das Eskalieren von Tickets an ein Vendor-Support-Team.
 
 **Plattform-Team ohne Produkt-Mindset**
 Engineering-Exzellenz ohne Produkt-Orientierung erzeugt ein intern konsumiertes Produkt, das niemand angefragt hat. Fehler: die Plattform existiert, niemand nutzt sie so, wie sie designt wurde.
@@ -151,13 +148,13 @@ Diese Fehlermodi sind vorhersehbar und vermeidbar — die Engagement-Struktur ve
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## Wie Aenix arbeitet
+## Wie Ænix arbeitet
 
 Das Engagement läuft in drei Modi, skaliert auf Ihren Stand:
 
 - **Platform Readiness Assessment (14-28 Tage)** — schriftliche Bewertung des Ist-Zustands und empfohlene Ziel-Architektur. Ergebnis: ein Plan, den Sie intern oder mit uns umsetzen können. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
-- **Platform-Build-Engagement (3-12 Monate)** — Aenix-Engineers integriert mit Ihrem Plattform-Team, Aufbau der Foundation, der Golden Paths und des operativen Modells. Der Knowledge-Transfer ist durchgängig strukturiert; Ihr Team besitzt am Ende den Betrieb.
-- **Managed-Platform-Service** — für Organisationen, die die Plattform brauchen, aber keine interne Kapazität aufbauen können. Aenix betreibt die Plattform unter einer Managed-Services-Vereinbarung, mit dokumentiertem Exit-Pfad zum In-house-Betrieb.
+- **Platform-Build-Engagement (3-12 Monate)** — Ænix-Engineers integriert mit Ihrem Plattform-Team, Aufbau der Foundation, der Golden Paths und des operativen Modells. Der Knowledge-Transfer ist durchgängig strukturiert; Ihr Team besitzt am Ende den Betrieb.
+- **Managed-Platform-Service** — für Organisationen, die die Plattform brauchen, aber keine interne Kapazität aufbauen können. Ænix betreibt die Plattform unter einer Managed-Services-Vereinbarung, mit dokumentiertem Exit-Pfad zum In-house-Betrieb.
 
 Die meisten Engagements beginnen mit dem Assessment. Die Entscheidung zwischen Option 2 und 3 wird durch den Headcount-und-Kapazität-Workstream des Assessments informiert.
 
@@ -167,12 +164,12 @@ Die meisten Engagements beginnen mit dem Assessment. Die Entscheidung zwischen O
 
 <!-- BLOCK 6: WHY AENIX SPECIFICALLY -->
 
-## Warum gerade Aenix
+## Warum gerade Ænix
 
 - **Wir betreiben Plattformen in Produktion.** Cozystack ist in Produktion mit Service Providern und regulierten Unternehmen. Die Entscheidungen in unseren Engagements sind gegen laufende Systeme kalibriert, nicht gegen Tooling-Reviews.
 - **Open-Source-Plattform-Foundation.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Die Plattform, die wir empfehlen, ist eine Plattform, die Sie besitzen. Kein Vendor-Roadmap-Lock-in.
-- **Kein Hyperscaler-Bias.** Unsere Empfehlungen spiegeln technische Eignung und operative Realität wider, nicht Partnerschafts-Ökonomie. Wir sagen "in der Cloud bleiben", wenn das richtig ist, und "on-prem gehen", wenn das richtig ist.
-- **EU-basierte Engineers in CEE und Zentralasien.** Zeitzonen-freundlich für europäische Kunden; abgestimmt auf EU-Datensouveränitäts-Anforderungen; Verständnis des Regulator-Dialogs aus denselben Jurisdiktionen heraus.
+- **Kein Hyperscaler-Bias.** Unsere Empfehlungen spiegeln technische Eignung und operative Realität wider, nicht Partnerschafts-Ökonomie. Wir sagen „in der Cloud bleiben“, wenn das richtig ist, und „on-prem gehen“, wenn das richtig ist.
+- **EU-basierte Engineers in CEE und Zentralasien.** Zeitzonen-freundlich für europäische Kunden; abgestimmt auf EU-Datensouveränitäts-Anforderungen; Verständnis des Aufsichtsdialogs aus denselben Jurisdiktionen heraus.
 
 <!-- /BLOCK 6 -->
 
@@ -204,8 +201,7 @@ Für die Methodologie siehe **[Platform Readiness Assessment](/de/dienstleistung
 Wir haben Plattformen für Service Provider mit Multi-Tenant-Clouds, regulierte Unternehmen mit internen Entwickler-Plattformen, KI/GPU-Operatoren, Telekom-Betreiber und Souveräne-Cloud-Initiativen in der EU, DACH und Zentralasien gebaut oder betrieben. Workloads umfassen VMs, Container, Managed Databases, S3 und GPU.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 Benannte Case Studies verfügbar im Discovery-Call, sofern Kunden-Berechtigungen es erlauben.
 
 <!-- /BLOCK 8 -->
@@ -214,16 +210,16 @@ Benannte Case Studies verfügbar im Discovery-Call, sofern Kunden-Berechtigungen
 
 <!-- BLOCK 9: PRICING -->
 
-## Pricing und Engagement-Scope
+## Preise und Engagement-Umfang
 
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 Tage)
-Festpreis. Schriftliches Deliverable, Ziel-Architektur, Phase-2-Roadmap.
+Festpreis. Schriftliches Ergebnis, Ziel-Architektur, Phase-2-Roadmap.
 **Auf Anfrage**
 
 ### Build- / Managed-Engagement
-Time-and-Materials oder Fixed-Scope, abhängig von der Scope-Klarheit. Phase-2-Implementation typischerweise 3-12 Monate; Managed-Services typischerweise jährlich.
+nach Aufwand oder zum Festpreis, abhängig von der Scope-Klarheit. Phase-2-Implementation typischerweise 3-12 Monate; Managed-Services typischerweise jährlich.
 **Auf Anfrage**
 
 </div>
@@ -269,6 +265,6 @@ Oder lesen Sie mehr:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Aenix ist das Platform-Engineering-Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen, betreiben und beschleunigen Platform-Engineering-Programme in der EU, DACH und Zentralasien.*
+*Ænix ist das Platform-Engineering-Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir bauen, betreiben und beschleunigen Platform-Engineering-Programme in der EU, DACH und Zentralasien.*
 
 <!-- /BLOCK 12 -->

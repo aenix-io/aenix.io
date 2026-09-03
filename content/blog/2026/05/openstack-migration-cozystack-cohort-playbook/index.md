@@ -15,8 +15,8 @@ quiz:
       options:
         - { text: "KubeVirt on Talos (compute layer)", correct: true }
         - { text: "Cilium on Talos (networking layer)", correct: false }
-        - { text: "LINSTOR + Ceph (block-storage layer)", correct: false }
-      explanation: "Per the component mapping: Nova (compute) → KubeVirt on Talos. Neutron maps to Cilium (eBPF); Cinder maps to LINSTOR or Ceph (Rook-managed)."
+        - { text: "LINSTOR (block-storage layer)", correct: false }
+      explanation: "Per the component mapping: Nova (compute) → KubeVirt on Talos. Neutron maps to Cilium (eBPF); Cinder maps to LINSTOR, the DRBD-replicated block storage Cozystack ships."
     - q: "Which of the three migration pressures is structurally tied to Red Hat OSP transitioning toward OpenShift Virtualization?"
       options:
         - { text: "Engineer scarcity (shrinking OpenStack talent pool)", correct: false }
@@ -43,18 +43,12 @@ quiz:
       explanation: "OpenStack operators are used to imperative APIs. Cozystack expects GitOps for production changes — a culture shift, not just a tool shift. Engineers need 4-8 weeks focused training plus 3-6 months practice to internalise GitOps discipline."
 ---
 
-**Long-form companion to the [OpenStack migration hub](/migration/openstack/). A cohort-based migration playbook from production OpenStack to Cozystack — covering component mapping, image conversion, networking redesign, operational handover, and the realistic timeline for tier-1 telco-scale and mid-size enterprise estates.**
-
 OpenStack remains widely deployed in telecom and large-enterprise
 infrastructure. Modernization is not a one-size-fits-all conversation:
 mature telco-scale OpenStack with deep vendor distro support is a
 different migration than a mid-size enterprise running upstream
 OpenStack with a small ops team. Both can move to Cozystack; the
 phasing and risk profile differ substantially.
-
-This article walks through what an OpenStack-to-Cozystack migration
-actually looks like in 2026 — phase by phase, with the architectural
-decisions that matter and the gotchas that recur.
 
 ## Where OpenStack still works (and we'll say so)
 
@@ -112,18 +106,18 @@ For OpenStack operators evaluating Cozystack, the canonical translation:
 |---|---|
 | **Nova** (compute) | KubeVirt on Talos |
 | **Neutron** (networking) | Cilium (eBPF) |
-| **Cinder** (block storage) | LINSTOR or Ceph (Rook-managed) |
-| **Swift** (object storage) | SeaweedFS or Ceph RGW (S3-compatible) |
+| **Cinder** (block storage) | LINSTOR (DRBD-replicated block, via the Piraeus operator) |
+| **Swift** (object storage) | SeaweedFS (S3-compatible, managed Bucket service) |
 | **Keystone** (identity) | Kubernetes RBAC + workforce IdP federation (Keycloak / Okta / AD) |
 | **Glance** (image registry) | KubeVirt CDI + container image registry |
 | **Magnum** (managed Kubernetes) | Native — Kubernetes IS the platform |
 | **Heat** (orchestration) | Kubernetes operators + GitOps (Flux / Argo CD) |
-| **Horizon** (UI) | cozyportal |
+| **Horizon** (UI) | Cozystack Dashboard |
 | **Ceilometer / Telemetry** | VictoriaMetrics + VictoriaLogs |
-| **Trove** (DBaaS) | Cozystack managed databases (PostgreSQL, MySQL, Redis, Kafka, RabbitMQ, ClickHouse) |
+| **Trove** (DBaaS) | Cozystack managed databases (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, NATS, RabbitMQ, ClickHouse, OpenSearch, Qdrant, FoundationDB) |
 | **Designate** (DNS) | external-dns operator + customer DNS provider |
 | **Octavia** (load balancing) | MetalLB + Cilium L7 + ingress controllers |
-| **Manila** (file share) | LINSTOR + NFS-Ganesha (RWX volumes, Cozystack v1.0+) |
+| **Manila** (file share) | RWX volumes on DRBD-backed LINSTOR storage classes (Cozystack v1.0+); optional `nfs-driver` package for external NFS exports |
 | **Project / Domain / Role** (tenancy) | Tenant CRD + nested tenants |
 
 Most OpenStack engineers find Cozystack's operational model simpler
@@ -160,7 +154,7 @@ migrate-later / stay / re-architect), risk flags, phasing options.
 Hardware procurement (or repurpose of OpenStack-freed capacity in
 later phases). Cozystack platform deployed on new hardware in parallel
 to existing OpenStack. Cilium networking validated against OpenStack
-network configurations expected to translate. LINSTOR / Ceph storage
+network configurations expected to translate. LINSTOR storage
 operationalised at scale. Federated identity (Keycloak + customer
 IdP).
 
@@ -192,10 +186,10 @@ Cohorts of 50-200 instances migrating at a time. Per cohort:
 2. **Network mapping** — OpenStack subnets to Cilium ClusterPool +
    NetworkPolicies, security groups to NetworkPolicies, Octavia load
    balancers to MetalLB + ingress controllers.
-3. **Storage migration** — Cinder volume data migrated to LINSTOR or
-   Ceph. Snapshot history preserved or pruned per retention policy.
+3. **Storage migration** — Cinder volume data migrated to LINSTOR.
+   Snapshot history preserved or pruned per retention policy.
    For Swift-stored data, S3 API compatibility allows direct
-   migration to SeaweedFS / Ceph RGW.
+   migration to SeaweedFS.
 4. **Validation window** — workload runs in parallel on Cozystack
    for typically 7-14 days. Application owner sign-off required
    before final cutover.
@@ -205,8 +199,8 @@ Cohorts of 50-200 instances migrating at a time. Per cohort:
 
 ### Phase 4 — Operational handover (2-4 months, parallel to Phase 3)
 
-Aenix engineers reduce direct involvement. Customer operations team
-absorbs Tier-1 / Tier-2 incidents. Aenix retainer continues for
+Ænix engineers reduce direct involvement. Customer operations team
+absorbs Tier-1 / Tier-2 incidents. Ænix retainer continues for
 Tier-3 SLA escalation. Documentation handover. Knowledge transfer
 sessions.
 
@@ -269,7 +263,7 @@ who built OpenStack expertise around imperative workflows need 4-8
 weeks of focused training plus 3-6 months of practice to internalise
 the GitOps discipline.
 
-Aenix engagement includes training as a workstream; customer
+Ænix engagement includes training as a workstream; customer
 investment in the cultural transition is also required.
 
 ## Timeline realities
@@ -334,7 +328,7 @@ Poor fit:
 - **Cohort migration** (6-24 months) — workload migration in cohorts
 - **OpenStack decommission** (parallel to cohort migration) — staged
   as cohorts complete
-- **Managed retainer** (optional, ongoing) — Aenix Tier-3 SLA
+- **Managed retainer** (optional, ongoing) — Ænix Tier-3 SLA
 
 ## Where to dig deeper
 
@@ -344,14 +338,7 @@ Poor fit:
   the modernization path analysis
 - **[OpenStack alternative](/alternatives/openstack-alternative/)** —
   alternative-focused commercial landing
-- **[Provider Edition product page](/products/aenix-platform/provider-edition/)** —
-  common target edition for hosting-provider OpenStack migrations
-- **[Provider Edition product page](/products/aenix-platform/public-cloud-edition/)** —
-  common target edition for tier-1 telco OpenStack migrations
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. We have shipped OpenStack-to-Cozystack
-migrations across hosting providers and telco operators; specific
-named case studies remain NDA-protected.*
+- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
+  common target product for hosting-provider OpenStack migrations
+- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
+  common target product for tier-1 telco OpenStack migrations

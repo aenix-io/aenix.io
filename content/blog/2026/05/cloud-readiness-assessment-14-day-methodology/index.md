@@ -1,6 +1,6 @@
 ---
 title: "Cloud Readiness Assessment — what 14 days actually cover (2026 methodology)"
-description: "This is the long-form companion to our Platform Readiness Assessment landing page. It walks through the methodology in detail — workstreams, deliverables,..."
+description: "A 14-day platform readiness assessment run as four parallel workstreams: how the days sequence, what the report contains, and pitfalls we learned to avoid."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -47,8 +47,6 @@ quiz:
       explanation: "Strong fits include a regulator deadline (DORA Article 28, NIS2, sectoral audit), an upcoming board-level cost decision, a new platform engineering function being stood up, or an AI / data-residency project blocked at architecture review. The other options are explicitly listed as poor fits."
 ---
 
-**This is the long-form companion to our [Platform Readiness Assessment landing page](/services/platform-readiness-assessment/). It walks through the methodology in detail — workstreams, deliverables, examples of findings, common pitfalls — for technical leaders evaluating whether a 14-day or 28-day cloud readiness assessment is the right next step.**
-
 Most cloud readiness assessments on the market still come from the early-2010s mold: a hyperscaler-aligned consultancy maps your workloads against a reference architecture and produces a migration plan to that hyperscaler. The output reads like a template because it is one.
 
 That worked when "cloud strategy" meant "decide how much to put in AWS / Azure / GCP." In 2026 the question is different. The triggers that bring teams to an assessment now look like this:
@@ -58,7 +56,7 @@ That worked when "cloud strategy" meant "decide how much to put in AWS / Azure /
 - **Cost cliff and repatriation** — Broadcom's 2025 Private Cloud Outlook found 53% of organizations now prioritize private cloud for new workloads and 69% are evaluating repatriation. The LSEG Global Cloud Survey 2025 reported that 84% of financial services firms had adjusted their cloud strategy specifically because of regulatory developments.
 - **Developer self-service breakdown** — environments that take weeks to provision, IAM and networking done by hand, observability fragmented across vendors, multiple Kubernetes distributions nobody owns.
 
-A 2026-relevant cloud readiness assessment has to answer all four — without picking a hyperscaler answer first. The methodology below is what we run at Aenix.
+A 2026-relevant cloud readiness assessment has to answer all four — without picking a hyperscaler answer first. The methodology below is what we run at Ænix.
 
 ## Why we structure it as four parallel workstreams
 
@@ -222,7 +220,7 @@ It's a strong fit when:
 
 ## Want the short version?
 
-If you're evaluating an Aenix Platform Readiness Assessment specifically, the **[services landing page](/services/platform-readiness-assessment/)** has the same structure in a 5-minute read with pricing and a discovery-call form.
+If you're evaluating an Ænix Platform Readiness Assessment specifically, the **[services landing page](/services/platform-readiness-assessment/)** has the same structure in a 5-minute read with pricing and a discovery-call form.
 
 If your trigger is a specific regulator or cost pressure, the dedicated solutions pages go deeper:
 
@@ -231,8 +229,3 @@ If your trigger is a specific regulator or cost pressure, the dedicated solution
 - **[Cloud repatriation](/solutions/cloud-repatriation/)** — exit strategy from public cloud
 - **[Sovereign AI](/solutions/sovereign-ai/)** — GenAI on sensitive data
 - **[Cloud cost optimization](/solutions/cloud-cost-optimization/)** — predictable spend
-
----
-
-*Aenix runs platform readiness assessments and platform engineering programs across the EU and Central Asia. We are the company behind Cozystack, a CNCF Project, Kubernetes Certified Distribution.*
-

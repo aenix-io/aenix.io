@@ -10,43 +10,43 @@ companion_landing: "/de/loesungen/nis2-compliance/"
 quiz:
   title: "Wissens-Check: NIS2 für Cloud-Architektur"
   questions:
-    - q: "Wie viele erforderliche Bereiche umfasst NIS2 Artikel 21?"
+    - q: "Wie viele Maßnahmenbereiche verlangt NIS2 Artikel 21?"
       options:
-        - { text: "5", correct: false }
-        - { text: "10 — Risikoanalyse, Vorfallhandhabung, Geschäftskontinuität, Lieferkette, Sicherer Lebenszyklus, Effektivitäts-Bewertung, Hygiene/Training, Kryptographie, HR/Zugriff, MFA/sichere Komms", correct: true }
-        - { text: "15", correct: false }
-      explanation: "Artikel 21 erfordert Maßnahmen in 10 Bereichen: (1) Risikoanalyse + Infosec-Policy, (2) Vorfallhandhabung, (3) Geschäftskontinuität, (4) Lieferkette-Sicherheit, (5) Sicheres Acquisition/Development/Maintenance, (6) Effektivitätsbewertung, (7) Cyberhygiene + Training, (8) Kryptographie, (9) HR/Zugriff/Asset, (10) MFA/sichere Notfall-Komms."
-    - q: "Wie ist die Reporting-Zeitfenster-Struktur unter Artikel 23?"
+        - { text: "Fünf", correct: false }
+        - { text: "Zehn", correct: true }
+        - { text: "Fünfzehn", correct: false }
+      explanation: "Artikel 21 verlangt Maßnahmen in zehn Bereichen: (1) Risikoanalyse und Sicherheitsleitlinie, (2) Behandlung von Vorfällen, (3) Geschäftskontinuität, (4) Sicherheit der Lieferkette, (5) sichere Beschaffung, Entwicklung und Wartung, (6) Bewertung der Wirksamkeit, (7) Cyberhygiene und Schulung, (8) Kryptographie, (9) Personal, Zugriff und Assets, (10) Mehr-Faktor-Authentifizierung und sichere Notfallkommunikation."
+    - q: "Wie sind die Meldefristen nach Artikel 23 gestaffelt?"
       options:
-        - { text: "24h Frühwarnung an CSIRT + 72h vollständige Meldung + 1 Monat Abschlussbericht", correct: true }
-        - { text: "Nur ein jährlicher Sammelreport", correct: false }
-        - { text: "Nur 7 Tage", correct: false }
-      explanation: "Drei-Stufen-Prozess: 24-Stunden-Frühwarnung an CSIRT → 72-Stunden-Vorfall-Meldung mit Schweregrad-Bewertung → 1-Monat-Abschlussbericht mit Ursache und Mitigation. Architektur muss Erkennung und Reporting in diesen Zeitfenstern unterstützen."
+        - { text: "24 Stunden Frühwarnung, 72 Stunden Meldung, ein Monat Abschluss", correct: true }
+        - { text: "Ein einziger jährlicher Sammelbericht an das CSIRT", correct: false }
+        - { text: "Eine einzelne Meldung innerhalb von sieben Tagen", correct: false }
+      explanation: "Dreistufiger Prozess: Frühwarnung an das CSIRT binnen 24 Stunden, Vorfallmeldung mit Schweregradbewertung binnen 72 Stunden, Abschlussbericht mit Ursache und Gegenmaßnahmen binnen eines Monats. Die Architektur muss Erkennung und Meldung in diesen Fenstern tragen."
     - q: "Bis wohin müssen Lieferantenketten unter NIS2 dokumentiert sein?"
       options:
-        - { text: "Nur direkter Lieferant", correct: false }
-        - { text: "Bis zur zweiten Hop (Sub-Lieferanten des direkten Lieferanten)", correct: true }
-        - { text: "Komplette Tiefe", correct: false }
-      explanation: "Lieferantenketten-Transparenz bis zum zweiten Hop. Architektonische Anforderung: Multi-Schicht-Datenresidenz, kundenkontrollierte Verschlüsselung, Lieferantenketten-Transparenz bis zum zweiten Hop, Audit-Logs in Standardformaten."
-    - q: "Welche kryptographische Schlüsselkontrolle ist in der NIS2-Architektur erforderlich?"
+        - { text: "Nur bis zum direkten Lieferanten", correct: false }
+        - { text: "Bis zur zweiten Ebene, also den Sublieferanten", correct: true }
+        - { text: "Über die gesamte Tiefe der Kette", correct: false }
+      explanation: "Lieferantentransparenz bis zur zweiten Ebene. Die architektonischen Anforderungen daneben: mehrschichtige Datenresidenz, kundenkontrollierte Verschlüsselung, Audit-Logs in Standardformaten und ein dokumentierter Zugang für die Aufsicht."
+    - q: "Welche Kontrolle über kryptographische Schlüssel verlangt die NIS2-Architektur?"
       options:
-        - { text: "Schlüssel beim Cloud-Provider", correct: false }
-        - { text: "Customer-controlled Verschlüsselungsschlüssel", correct: true }
-        - { text: "Keine Verschlüsselung notwendig", correct: false }
-      explanation: "Architektonische Anforderungen: Multi-Schicht-Datenresidenz; customer-controlled Verschlüsselungsschlüssel (für sensitive Daten); Lieferanten-Transparenz bis zum zweiten Hop; Audit-Logs exportierbar in Standardformaten; Aufsichtszugang dokumentiert und getestet."
-    - q: "Welche Rolle spielt das Aenix Platform Readiness Assessment in NIS2-Kontext?"
+        - { text: "Die Schlüssel liegen beim Cloud-Anbieter", correct: false }
+        - { text: "Die Schlüssel liegen beim Kunden", correct: true }
+        - { text: "Eine Verschlüsselung ist nicht erforderlich", correct: false }
+      explanation: "Architektonische Anforderungen: mehrschichtige Datenresidenz, kundenkontrollierte Verschlüsselungsschlüssel für sensible Daten, Lieferantentransparenz bis zur zweiten Ebene, in Standardformaten exportierbare Audit-Logs sowie ein dokumentierter und getesteter Zugang für die Aufsicht."
+    - q: "Welche Rolle spielt das Aenix Platform Readiness Assessment im NIS2-Kontext?"
       options:
-        - { text: "Strukturierte NIS2-Bewertung mit NIS2-Schwerpunkt — gegen Architektur-Lücken vor Audit-Zyklen", correct: true }
-        - { text: "Nicht relevant für NIS2", correct: false }
-        - { text: "Nur für DORA", correct: false }
-      explanation: "Das Platform Readiness Assessment kann mit NIS2-Schwerpunkt durchgeführt werden — strukturierte Architektur-Bewertung gegen Article-21- und Article-23-Anforderungen vor Audit-Zyklen."
+        - { text: "Eine strukturierte Architekturbewertung mit NIS2-Schwerpunkt", correct: true }
+        - { text: "Es ist für NIS2 nicht einschlägig, sondern rein technisch", correct: false }
+        - { text: "Es deckt ausschließlich DORA-Anforderungen ab", correct: false }
+      explanation: "Das Platform Readiness Assessment lässt sich mit NIS2-Schwerpunkt durchführen: eine strukturierte Architekturbewertung gegen die Anforderungen aus Artikel 21 und Artikel 23, bevor die Auditzyklen anlaufen."
 ---
 
 Begleitung zur **[NIS2-Compliance-Page](/de/loesungen/nis2-compliance)**.
 
 ## Artikel 21 — Risikomanagement-Maßnahmen
 
-10 erforderliche Bereiche, die jede betroffene Entität abdecken muss:
+10 erforderliche Bereiche, die jede betroffene Einrichtung abdecken muss:
 
 1. Risikoanalyse und Informationssystem-Sicherheit
 2. Vorfall-Handhabung
@@ -81,5 +81,5 @@ Die Architektur muss Erkennung und Reporting innerhalb dieser Zeitfenster unters
 
 ---
 
-*Aenix ist das Team hinter Cozystack.*
+*Ænix ist das Team hinter Cozystack.*
 

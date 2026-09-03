@@ -1,6 +1,6 @@
 ---
 title: "Launch a customer-facing cloud product — playbook for hosting providers, telcos, and regional operators"
-description: "This is the long-form companion to our public cloud builder services page. It walks through what it actually takes to launch a customer-facing cloud product..."
+description: "The six layers of a customer-facing cloud product, the architectural decisions specific to public cloud, and where launches stumble commercially."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "announcement"
@@ -9,11 +9,7 @@ language: "en"
 companion_landing: "/services/public-cloud-builder/"
 ---
 
-**This is the long-form companion to our [public cloud builder services page](/services/public-cloud-builder/). It walks through what it actually takes to launch a customer-facing cloud product in 2026 — architecturally, operationally, and as a go-to-market motion.**
-
 Regional and specialty cloud is having a moment in 2026. Hyperscaler economics, sovereignty pressure, and post-Broadcom market dynamics have all opened space for non-hyperscaler cloud products that didn't make sense to launch 5 years ago. Regional telco sovereign cloud product launches (Central Asia, MENA, EU member states), QazCloud + Clever Cloud's sovereign AI ecosystem, and various EU-member-state-specific sovereign cloud products are visible examples. Many more are in stealth or early stages.
-
-This article covers the working playbook.
 
 ## Why now
 
@@ -33,16 +29,16 @@ A working customer-facing cloud product has six layers, all of which need engine
 Compute servers, storage, network fabric, datacenter / colocation. Sized for initial customer cohort plus growth headroom.
 
 ### 2. Platform
-Multi-tenant Kubernetes-native platform with KubeVirt for VMs, Cilium for networking, LINSTOR/Ceph for storage. Cozystack is the open-source default for this pattern.
+Multi-tenant Kubernetes-native platform with KubeVirt for VMs, Cilium and Kube-OVN for networking, LINSTOR (DRBD-replicated block) for storage. Cozystack is the open-source default for this pattern.
 
 ### 3. Service catalog
-What customers can self-provision: VMs, K8s clusters, managed databases (PG, MySQL, Redis, Kafka, etc.), S3 buckets, GPU instances, networking primitives.
+What customers can self-provision: VMs, K8s clusters, managed databases (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, OpenSearch, etc.), S3 buckets, GPU instances, networking primitives.
 
 ### 4. Customer-facing portal
-Self-service UI (cozyportal or custom). Catalog browsing, provisioning, monitoring, billing visibility.
+Self-service UI (Cozystack Dashboard or custom). Catalog browsing, provisioning, monitoring, billing visibility.
 
 ### 5. Billing
-WHMCS production-ready integration (two modes available in Cozystack). Custom billing for specific markets.
+WHMCS production-ready integration in two modes — shipped by Ænix as the [WHMCS integration](/products/whmcs-integration/) rather than as part of open-source Cozystack. Custom billing for specific markets.
 
 ### 6. Operations
 24×7 NOC, customer support, SLA management, observability per tenant, incident response.
@@ -89,17 +85,12 @@ Designed at hyperscaler scale; over-engineered for actual customer count. Operat
 ### Stumble 5: undifferentiated commodity offering
 Generic cloud product with no differentiation from hyperscaler. Customers default to AWS / Azure / GCP. Specialty / sovereignty / regional matters as differentiator.
 
-## Aenix engagement
+## Ænix engagement
 
-Aenix has built customer-facing cloud products end-to-end on Cozystack, including for regional telecom operators. The engagement structure:
+Ænix has built customer-facing cloud products end-to-end on Cozystack, including for regional telecom operators. The engagement structure:
 
 - **Discovery + product-readiness assessment** (4-8 weeks)
 - **Phase 2 build** (6-18 months) — platform + portal + billing + operations workflows + first cohort onboarding
 - **Phase 3 (optional)** — managed-services during ramp
 
 For details see **[public cloud builder services page](/services/public-cloud-builder)**.
-
----
-
-*Aenix is the team behind Cozystack.*
-

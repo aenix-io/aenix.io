@@ -10,36 +10,37 @@ companion_landing: "/de/produkte/cozystack/"
 quiz:
   title: "Wissens-Check: Cozystack-Architektur"
   questions:
-    - q: "Wie viele architektonische Hauptentscheidungen werden für Cozystack im Artikel beschrieben?"
+    - q: "Wie viele architektonische Hauptentscheidungen beschreibt der Artikel für Cozystack?"
       options:
         - { text: "Drei", correct: false }
         - { text: "Sieben", correct: true }
         - { text: "Zwölf", correct: false }
-      explanation: "Sieben Wahlen: KubeVirt für Virtualisierung, Talos Linux als OS, LINSTOR als Standard-Storage, Cilium für Networking, Tenant CRD für Multi-Tenancy, Flux für GitOps, VictoriaMetrics + VictoriaLogs für Observability."
-    - q: "Warum ist Talos Linux das Standard-OS für Cozystack?"
+      explanation: "Sieben Entscheidungen: KubeVirt für Virtualisierung, Talos Linux als Betriebssystem, LINSTOR als Standard-Storage, Cilium für Networking, das Tenant CRD für Mandantenfähigkeit, Flux für GitOps sowie VictoriaMetrics und VictoriaLogs für Observability."
+    - q: "Warum ist Talos Linux das Standard-Betriebssystem für Cozystack?"
       options:
-        - { text: "Talos ist der einzige Linux mit KubeVirt-Unterstützung", correct: false }
-        - { text: "Minimal und immutable Linux für Kubernetes — kein SSH, Konfiguration über API, operativ einfacher und sicherer", correct: true }
-        - { text: "Talos ist die günstigste kommerzielle Lizenz", correct: false }
-      explanation: "Talos ist minimal und immutable — kein SSH, Konfiguration über API, kein Paketmanager, keine Shell. Operativ einfacher und sicherer als allgemeines Linux für Kubernetes-Hosts."
+        - { text: "Weil Talos das einzige Linux mit KubeVirt-Unterstützung ist", correct: false }
+        - { text: "Weil es minimal und unveränderlich ist und über eine API konfiguriert wird", correct: true }
+        - { text: "Weil Talos die günstigste kommerzielle Lizenz mitbringt", correct: false }
+      explanation: "Talos ist minimal und unveränderlich: kein SSH, kein Paketmanager, keine Shell, Konfiguration ausschließlich über die API. Damit entfallen ganze Fehlerklassen wie Konfigurationsdrift, manuelle Hotfixes und Einzelstück-Knoten. Talos ist der Standard, aber nicht zwingend — mit der Variante isp-full-generic und der Ansible-Collection läuft Cozystack auch auf gewöhnlichem Linux."
     - q: "Wann ist Cozystack die richtige Antwort?"
       options:
-        - { text: "Service-Provider-Modell, regulierte Multi-Tenant, KI/GPU im großen Maßstab, Greenfield Private Cloud, VMware-Ausstieg", correct: true }
-        - { text: "Nur SMB-Single-Tenant", correct: false }
-        - { text: "Nur ROBO/Edge", correct: false }
-      explanation: "Cozystack passt für: Service-Provider-Modell, regulierte Multi-Tenant, KI/GPU im großen Maßstab, Greenfield Private Cloud, VMware-Ausstieg. Für SMB-Single-Tenant ist Proxmox VE besser geeignet."
-    - q: "Was ersetzt Cilium im Vergleich zu VMware-Bereitstellungen?"
+        - { text: "Service-Provider, regulierte Mandantenfähigkeit, KI/GPU, VMware-Ausstieg", correct: true }
+        - { text: "Ausschließlich Single-Tenant-Umgebungen im Mittelstand", correct: false }
+        - { text: "Ausschließlich ROBO- und Edge-Standorte ohne eigenes IT-Team", correct: false }
+      explanation: "Cozystack passt für das Service-Provider-Modell, regulierte Mandantenfähigkeit, KI und GPU im großen Maßstab, Greenfield-Private-Cloud und den VMware-Ausstieg. Für Single-Tenant-Umgebungen im Mittelstand ist Proxmox VE die bessere Wahl."
+    - q: "Was ersetzt Cilium im Vergleich zu VMware-Umgebungen?"
       options:
         - { text: "vCenter", correct: false }
-        - { text: "NSX (Networking) — eBPF-basiert mit nativen L4/L7-Policies und Observability", correct: true }
+        - { text: "NSX", correct: true }
         - { text: "vSphere", correct: false }
-      explanation: "Cilium ersetzt NSX-Funktionalität in Cozystack-Bereitstellungen. eBPF-basiert mit nativen L4/L7-Policies und Observability — ohne NSX-Lizenzkosten."
-    - q: "Wie verhält sich Cozystack zu OpenStack architektonisch?"
+        - { text: "vSAN", correct: false }
+      explanation: "Cilium übernimmt in Cozystack-Umgebungen die Rolle von NSX: eBPF-basiertes Networking mit nativen L4/L7-Policies und eingebauter Observability, ohne NSX-Lizenzkosten. vCenter entspricht der Kubernetes-API mit dem Cozystack Dashboard, vSphere/ESXi entspricht KubeVirt und vSAN entspricht LINSTOR."
+    - q: "Wie verhält sich Cozystack architektonisch zu OpenStack?"
       options:
-        - { text: "Beide sind 2010er-Architektur", correct: false }
-        - { text: "Kubernetes-nativ, leichteres operatives Footprint", correct: true }
-        - { text: "Cozystack ist ein OpenStack-Fork", correct: false }
-      explanation: "Cozystack ist Kubernetes-nativ mit leichterem operativen Footprint vs OpenStack (operativ schwer, 50+ Komponenten). vs OpenShift: Apache 2.0 ohne Vendor-Lock-in. vs Proxmox: für Multi-Tenant-Skala."
+        - { text: "Beide sind Architekturen aus den 2010er-Jahren mit gleichem Zuschnitt", correct: false }
+        - { text: "Kubernetes-nativ und mit deutlich leichterem Betriebsaufwand", correct: true }
+        - { text: "Cozystack ist ein Fork der OpenStack-Codebasis", correct: false }
+      explanation: "Cozystack ist Kubernetes-nativ und hat einen leichteren Betriebsaufwand als OpenStack, das mit 50 und mehr Komponenten betrieblich schwer ist. Gegenüber OpenShift steht Apache 2.0 ohne Vendor-Lock-in, gegenüber Proxmox die Auslegung auf Mandantenfähigkeit im großen Maßstab."
 ---
 
 Begleitung zur **[Cozystack-Page](/de/produkte/cozystack)**.
@@ -83,5 +84,5 @@ Geringerer Overhead als Prometheus + Loki im großen Maßstab.
 
 ---
 
-*Cozystack ist ein CNCF-Projekt. Aenix ist das Unternehmen dahinter.*
+*Cozystack ist ein CNCF-Projekt. Ænix ist das Unternehmen dahinter.*
 

@@ -1,0 +1,11 @@
+{{ define "main" }}
+<style>
+  #content { max-width: none; padding: 0; }
+  .platform-demo { width: 100%; height: calc(100vh - 72px); min-height: 560px; border: 0; display: block; }
+  .platform-demo__hint { font-size: .85rem; color: #64748b; padding: .5rem 1rem; text-align: center; background: #f8fafc; }
+  footer { display: none; }
+</style>
+<iframe class="platform-demo" src="/demo-app/" title="Ænix Platform live demo"
+  allow="clipboard-read; clipboard-write"></iframe>
+<div class="platform-demo__hint">Interactive demo of the Ænix Platform customer portal — runs entirely in your browser on mock data. Nothing here touches a real cloud. Looking for the developer-facing side? <a href="/idp/">Try the Ænix IDP demo</a>.</div>
+{{ end }}

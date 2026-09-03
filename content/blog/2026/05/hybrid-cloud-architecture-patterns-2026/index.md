@@ -1,6 +1,6 @@
 ---
 title: "Hybrid cloud architecture patterns 2026 — what works, what fails, and how to choose"
-description: "This is the long-form companion to our hybrid cloud platform services page. It walks through hybrid cloud architecture patterns that work in production, the..."
+description: "Five hybrid cloud patterns that work in production, what makes them work, the failure modes to avoid, and when hybrid is the wrong answer."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "tutorial"
@@ -41,8 +41,6 @@ quiz:
         - { text: "Sovereignty — DORA, sectoral rules, data residency", correct: true }
       explanation: "Pattern 2 puts regulated workloads (banking, healthcare, public-sector) on private cloud and auxiliary workloads (analytics, internal tooling, dev/test) in public cloud. The driver is sovereignty — DORA, sectoral rules, data-residency mandates — not pure cost."
 ---
-
-**This is the long-form companion to our [hybrid cloud platform services page](/solutions/hybrid-cloud-platform/). It walks through hybrid cloud architecture patterns that work in production, the patterns that look good but fail in practice, and how to pick the right architecture for your workload portfolio.**
 
 Hybrid cloud as a term has accumulated marketing weight. Vendors describe almost any non-pure-public-cloud architecture as "hybrid." The architecturally-relevant question is more specific: what coherent integration pattern connects your private and public substrates, and does it actually work for your workload portfolio?
 
@@ -156,20 +154,9 @@ A practical sequence for moving from fragmented multi-cloud to coherent hybrid:
 
 Total elapsed: typically 12-24 months for a 100-VM hybrid estate.
 
-## How to start
-
-A hybrid platform engagement starts with workload classification. Aenix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**. For details see the **[hybrid cloud platform services page](/solutions/hybrid-cloud-platform/)**.
-
----
-
 ## Want to dig deeper?
 
 - **[Hybrid cloud platform services](/solutions/hybrid-cloud-platform/)** — engagement details
 - **[Cloud repatriation](/solutions/cloud-repatriation/)** — when leaving public cloud
 - **[Private cloud consulting](/services/private-cloud-consulting/)** — private side
 - **[Cozystack](/products/cozystack/)** — the platform
-
----
-
-*Aenix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
-

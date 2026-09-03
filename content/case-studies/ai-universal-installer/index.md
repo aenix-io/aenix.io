@@ -10,7 +10,7 @@ hreflang_de: "/de/case-studies/ai-universal-installer/"
 images: ["img/og/og-case-ai-universal-installer.png"]
 related_pages:
   - /solutions/sovereign-ai/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /services/ai-platform-build/
   - /industries/telco/
 ---
@@ -95,6 +95,6 @@ Worth noting the engineering depth of support: some of the needed fixes (bucket-
 
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the integrator and end customer are described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Aenix sales](/contact/).*
+*This case study is published in anonymized form (Tier-3 evidence): the integrator and end customer are described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Ænix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

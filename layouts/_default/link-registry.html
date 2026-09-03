@@ -1,0 +1,211 @@
+{{ define "head" }}
+  <meta name="robots" content="noindex,nofollow">
+{{ end }}
+
+{{ define "main" }}
+<section class="lr-wrap">
+  <div class="lr-container">
+    <div class="lr-head">
+      <div>
+        <h1 class="lr-title">Link registry</h1>
+        <p class="lr-sub">Every short link. Edits made here are kept in this browser until you commit them — they become a pull request, and the site rebuilds once it merges.</p>
+      </div>
+      <div class="lr-headright">
+        <a href="/go/" class="lr-btn lr-btn-ghost">← Link tools</a>
+      </div>
+    </div>
+
+    <div id="lr-pending" class="lr-pending" hidden>
+      <span id="lr-pending-text"></span>
+      <a href="/go/#commit" class="lr-btn lr-btn-sm">Review &amp; commit →</a>
+    </div>
+
+    <div class="lr-stats" id="lr-stats"></div>
+
+    <div class="lr-toolbar">
+      <input id="lr-search" type="search" placeholder="Filter by slug, target, campaign…" autocomplete="off">
+      <div class="lr-tabs">
+        <button class="lr-tab is-active" data-f="all" type="button">All</button>
+        <button class="lr-tab" data-f="active" type="button">Active</button>
+        <button class="lr-tab" data-f="disabled" type="button">Disabled</button>
+      </div>
+    </div>
+
+    <noscript><p class="lr-state">The registry needs JavaScript — it shows edits you have not committed yet.</p></noscript>
+    <div id="lr-state" class="lr-state">Loading…</div>
+    <div class="lr-tablewrap" id="lr-tablewrap" hidden>
+      <table class="lr-table">
+        <thead>
+          <tr><th>Status</th><th>Short link / target</th><th>Campaign</th><th>By</th><th></th></tr>
+        </thead>
+        <tbody id="lr-body"></tbody>
+      </table>
+    </div>
+    <div id="lr-qrbox" class="lr-qrbox" hidden></div>
+  </div>
+</section>
+
+<style>
+  .lr-wrap{padding:5rem 20px;background:var(--bg-main,#0B0F1A);min-height:70vh}
+  .lr-container{max-width:1120px;margin:0 auto;font-family:var(--font-body,'Inter',system-ui,sans-serif)}
+  .lr-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:22px}
+  .lr-title{font-size:2rem;margin:0 0 6px;color:var(--text-primary,#F1F5F9);font-weight:700}
+  .lr-sub{color:var(--text-secondary,#94A3B8);margin:0;font-size:.95rem;max-width:640px;line-height:1.6}
+  .lr-btn{background:var(--brand-primary,#01A5FF);color:#001018;border:none;border-radius:11px;padding:10px 18px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit;text-decoration:none;display:inline-block;white-space:nowrap}
+  .lr-btn-ghost{background:transparent;color:var(--brand-primary,#01A5FF);border:1px solid var(--border-hover,rgba(255,255,255,.15))}
+  .lr-btn-sm{padding:7px 13px;font-size:.82rem}
+  .lr-pending{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;background:rgba(251,191,36,.09);border:1px solid rgba(251,191,36,.35);color:#fcd34d;border-radius:12px;padding:12px 16px;margin-bottom:20px;font-size:.9rem}
+  .lr-stats{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+  .lr-stat{background:var(--glass-bg,rgba(255,255,255,.04));border:1px solid var(--glass-border,rgba(255,255,255,.08));border-radius:14px;padding:14px 20px;min-width:112px}
+  .lr-stat b{display:block;font-size:1.6rem;color:var(--text-primary,#F1F5F9);font-weight:700;line-height:1.1}
+  .lr-stat span{font-size:.76rem;color:var(--text-secondary,#94A3B8);text-transform:uppercase;letter-spacing:.04em}
+  .lr-toolbar{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+  #lr-search{flex:1;min-width:240px;padding:11px 14px;border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:11px;background:rgba(255,255,255,.03);color:var(--text-primary,#F1F5F9);font-size:.92rem;font-family:inherit}
+  #lr-search:focus{outline:none;border-color:var(--brand-primary,#01A5FF);box-shadow:0 0 0 3px rgba(1,165,255,.2)}
+  .lr-tabs{display:flex;gap:6px}
+  .lr-tab{background:transparent;border:1px solid var(--border-default,rgba(255,255,255,.1));color:var(--text-secondary,#94A3B8);border-radius:9px;padding:9px 14px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:inherit}
+  .lr-tab.is-active{background:rgba(1,165,255,.14);border-color:var(--brand-primary,#01A5FF);color:var(--brand-primary,#01A5FF)}
+  .lr-state{color:var(--text-secondary,#94A3B8);padding:26px 0;font-size:.95rem}
+  .lr-tablewrap{overflow-x:auto;border:1px solid var(--glass-border,rgba(255,255,255,.08));border-radius:14px;background:var(--glass-bg,rgba(255,255,255,.04))}
+  .lr-table{width:100%;border-collapse:collapse;font-size:.86rem}
+  .lr-table th{text-align:left;padding:12px 14px;color:var(--text-secondary,#94A3B8);font-weight:600;font-size:.76rem;text-transform:uppercase;letter-spacing:.04em;border-bottom:1px solid var(--border-default,rgba(255,255,255,.1));white-space:nowrap}
+  .lr-table td{padding:12px 14px;border-bottom:1px solid var(--border-subtle,rgba(255,255,255,.06));color:var(--text-primary,#F1F5F9);vertical-align:top}
+  .lr-table tr:last-child td{border-bottom:none}
+  .lr-badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.72rem;font-weight:700;white-space:nowrap}
+  .lr-badge.on{background:rgba(1,165,255,.14);color:var(--brand-primary,#01A5FF)}
+  .lr-badge.off{background:rgba(148,163,184,.14);color:var(--text-secondary,#94A3B8)}
+  .lr-mark{display:inline-block;margin-left:6px;padding:2px 7px;border-radius:20px;font-size:.68rem;font-weight:700;background:rgba(251,191,36,.16);color:#fcd34d}
+  .lr-link{color:var(--brand-primary,#01A5FF);text-decoration:none;font-family:var(--font-mono,monospace);font-size:.82rem}
+  .lr-target{display:block;color:var(--text-secondary,#94A3B8);font-size:.78rem;word-break:break-all;margin-top:3px;max-width:400px}
+  .lr-muted{color:rgba(148,163,184,.5)}
+  .lr-off{opacity:.5}
+  .lr-del{opacity:.4}
+  .lr-del .lr-link{text-decoration:line-through}
+  .lr-acts{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+  .lr-act{background:transparent;border:1px solid var(--border-default,rgba(255,255,255,.1));color:var(--text-secondary,#94A3B8);border-radius:8px;padding:5px 10px;font-size:.76rem;font-weight:600;cursor:pointer;font-family:inherit;white-space:nowrap}
+  .lr-act:hover{border-color:var(--brand-primary,#01A5FF);color:var(--brand-primary,#01A5FF)}
+  .lr-act.danger:hover{border-color:#f87171;color:#fca5a5}
+  .lr-qrbox{position:fixed;inset:auto 24px 24px auto;padding:16px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.5);z-index:50;text-align:center}
+  .lr-qrbox .lr-qrcap{display:block;margin-top:8px;color:#0B0F1A;font-size:.76rem;font-family:var(--font-mono,monospace);max-width:200px;word-break:break-all}
+  .lr-qrbox .lr-qrclose{margin-top:10px;background:#0B0F1A;color:#fff;border:0;border-radius:8px;padding:6px 14px;font-size:.78rem;font-weight:700;cursor:pointer}
+</style>
+{{ end }}
+
+{{ define "scripts" }}
+{{ partial "link-state.html" . }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var filter = 'all', q = '';
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+  function campaign(url) {
+    try { return new URL(url).searchParams.get('utm_campaign') || ''; } catch (e) { return ''; }
+  }
+
+  function render() {
+    var all = window.LinkState.working();
+    var pending = window.LinkState.count();
+
+    $('lr-pending').hidden = pending === 0;
+    $('lr-pending-text').textContent = pending === 1
+      ? '1 uncommitted change in this browser'
+      : pending + ' uncommitted changes in this browser';
+
+    var live = all.filter(function (r) { return r._state !== 'deleted'; });
+    var active = live.filter(function (r) { return (r.status || 'active') === 'active'; });
+    $('lr-stats').innerHTML =
+      '<div class="lr-stat"><b>' + live.length + '</b><span>links</span></div>' +
+      '<div class="lr-stat"><b>' + active.length + '</b><span>active</span></div>' +
+      '<div class="lr-stat"><b>' + (live.length - active.length) + '</b><span>disabled</span></div>';
+
+    var rows = all.filter(function (r) {
+      var st = (r.status || 'active') === 'active' ? 'active' : 'disabled';
+      if (filter !== 'all' && st !== filter) return false;
+      if (!q) return true;
+      return [r.slug, r.target_url, r.note, r.created_by].join(' ').toLowerCase().indexOf(q) !== -1;
+    });
+
+    if (!rows.length) {
+      $('lr-state').textContent = all.length ? 'No links match the filter.' : 'No links yet — create one in the link tools.';
+      $('lr-state').hidden = false; $('lr-tablewrap').hidden = true; return;
+    }
+    $('lr-state').hidden = true; $('lr-tablewrap').hidden = false;
+
+    $('lr-body').innerHTML = rows.map(function (r) {
+      var isActive = (r.status || 'active') === 'active';
+      var mark = r._state === 'added' ? '<span class="lr-mark">new</span>'
+        : r._state === 'edited' ? '<span class="lr-mark">edited</span>'
+        : r._state === 'deleted' ? '<span class="lr-mark">removed</span>' : '';
+      var cls = r._state === 'deleted' ? 'lr-del' : (isActive ? '' : 'lr-off');
+      var camp = campaign(r.target_url);
+      return '<tr class="' + cls + '">'
+        + '<td><span class="lr-badge ' + (isActive ? 'on' : 'off') + '">' + esc(r.status || 'active') + '</span>' + mark + '</td>'
+        + '<td><a class="lr-link" href="/l/' + esc(r.slug) + '/" target="_blank" rel="noopener">/l/' + esc(r.slug) + '/</a>'
+        + '<span class="lr-target">' + esc(r.target_url) + '</span>'
+        + (r.note ? '<span class="lr-target lr-muted">' + esc(r.note) + '</span>' : '') + '</td>'
+        + '<td>' + (camp ? esc(camp) : '<span class="lr-muted">—</span>') + '</td>'
+        + '<td>' + (r.created_by ? esc(r.created_by) : '<span class="lr-muted">—</span>') + '</td>'
+        + '<td><div class="lr-acts">'
+        + '<button class="lr-act" data-a="copy" data-s="' + esc(r.slug) + '">Copy</button>'
+        + '<button class="lr-act" data-a="qr" data-s="' + esc(r.slug) + '">QR</button>'
+        + (r._state === 'deleted' || r._state === 'edited' || r._state === 'added'
+            ? '<button class="lr-act" data-a="revert" data-s="' + esc(r.slug) + '">Undo</button>' : '')
+        + (r._state === 'deleted' ? ''
+            : '<button class="lr-act" data-a="edit" data-s="' + esc(r.slug) + '">Edit</button>'
+              + '<button class="lr-act" data-a="toggle" data-s="' + esc(r.slug) + '">'
+              + (isActive ? 'Disable' : 'Enable') + '</button>'
+              + '<button class="lr-act danger" data-a="del" data-s="' + esc(r.slug) + '">Delete</button>')
+        + '</div></td></tr>';
+    }).join('');
+  }
+
+  function find(slug) {
+    return window.LinkState.working().filter(function (r) { return r.slug === slug; })[0];
+  }
+
+  function showQR(slug) {
+    var box = $('lr-qrbox'); var url = 'https://aenix.io/l/' + slug;
+    box.innerHTML = ''; box.hidden = false;
+    if (window.QRCode) { new QRCode(box, { text: url, width: 168, height: 168, colorDark: '#0B0F1A', colorLight: '#ffffff' }); }
+    else { box.innerHTML = '<span class="lr-qrcap">QR library did not load.</span>'; }
+    var cap = document.createElement('span'); cap.className = 'lr-qrcap'; cap.textContent = url;
+    var close = document.createElement('button'); close.className = 'lr-qrclose'; close.textContent = 'Close';
+    close.addEventListener('click', function () { box.hidden = true; box.innerHTML = ''; });
+    box.appendChild(cap); box.appendChild(close);
+  }
+
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('.lr-act'); if (!b) return;
+    var slug = b.getAttribute('data-s'), a = b.getAttribute('data-a'), r = find(slug);
+    if (a === 'copy') {
+      navigator.clipboard.writeText('https://aenix.io/l/' + slug);
+      var o = b.textContent; b.textContent = 'Copied'; setTimeout(function () { b.textContent = o; }, 1200);
+    } else if (a === 'qr') { showQR(slug); }
+    else if (a === 'revert') { window.LinkState.revert(slug); }
+    else if (a === 'del') { window.LinkState.remove(slug); }
+    else if (a === 'toggle') {
+      window.LinkState.upsert({ slug: slug, target_url: r.target_url, note: r.note,
+        status: (r.status || 'active') === 'active' ? 'disabled' : 'active' });
+    } else if (a === 'edit') {
+      location.href = '/go/?edit=' + encodeURIComponent(slug);
+    }
+  });
+
+  $('lr-search').addEventListener('input', function () { q = this.value.trim().toLowerCase(); render(); });
+  Array.prototype.forEach.call(document.querySelectorAll('.lr-tab[data-f]'), function (t) {
+    t.addEventListener('click', function () {
+      Array.prototype.forEach.call(document.querySelectorAll('.lr-tab[data-f]'), function (x) { x.classList.remove('is-active'); });
+      t.classList.add('is-active'); filter = t.getAttribute('data-f'); render();
+    });
+  });
+  document.addEventListener('linkstate:change', render);
+  render();
+})();
+</script>
+{{ end }}

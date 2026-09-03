@@ -24,7 +24,7 @@ Cozystack now includes a custom Kubernetes scheduler extender to help Kubernetes
 
 The scheduler features an admission webhook that automatically routes pods that require LINSTOR CSI volumes to the custom scheduler, ensuring seamless integration with no manual config required. This feature significantly improves performance for workloads using LINSTOR storage by reducing network latency and improving data locality.
 
-Learn more about LINSTOR in the [documentation](https://cozystack.io/docs/operations/storage/linstor/).
+Learn more about LINSTOR in the [documentation](https://cozystack.io/docs/v0/storage/).
 
 ### SeaweedFS Traffic Locality
 

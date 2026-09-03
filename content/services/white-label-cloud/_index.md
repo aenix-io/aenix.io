@@ -1,12 +1,12 @@
 ---
 title: "White label cloud — branded cloud product for MSPs and resellers"
-description: "Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the..."
-related_pages: ["/services/public-cloud-builder", "/products/aenix-platform/provider-edition/", "/partners/", "/products/cozystack"]
+description: "Branded cloud for MSPs and resellers on Cozystack: nested tenancy, a Cozystack Dashboard in your colours, WHMCS billing and a catalog you curate."
+related_pages: ["/services/public-cloud-builder", "/products/public-cloud-platform/", "/partners/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **White-label cloud is a branded cloud product that a Managed Service Provider (MSP), hosting reseller, or system integrator sells under its own identity while running on infrastructure built and operated for it. Aenix builds these end-to-end on Cozystack, the open-source CNCF platform that runs virtual machines and containers on one Kubernetes API. A typical engagement delivers a multi-tenant platform with a nested Tenant CRD reseller-customer hierarchy, a customer-facing portal (cozyportal) branded per reseller, WHMCS-integrated billing, and a service catalog of VMs, Kubernetes, managed databases, S3, and GPU. It suits MSPs, hosting resellers, integrators, and regulated-vertical consultancies that want hyperscaler-competitive economics without per-CPU software licensing or vendor lock-in.**
+  **White-label cloud is a branded cloud product that a Managed Service Provider (MSP), hosting reseller, or system integrator sells under its own identity while running on infrastructure built and operated for it. Aenix builds these end-to-end on Cozystack, the open-source CNCF platform that runs virtual machines and containers on one Kubernetes API. A typical engagement delivers a multi-tenant platform with a nested Tenant CRD reseller-customer hierarchy, a customer-facing portal (Cozystack Dashboard) branded per reseller, WHMCS-integrated billing, and a service catalog of VMs, Kubernetes, managed databases, S3, and GPU. It suits MSPs, hosting resellers, integrators, and regulated-vertical consultancies that want hyperscaler-competitive economics without per-CPU software licensing or vendor lock-in.**
 
 quick_facts:
   - label: "What it is"
@@ -22,11 +22,11 @@ quick_facts:
   - label: "Engagement timeline"
     value: "Discovery + product-readiness assessment (4-8 weeks), Phase 2 build (4-12 months), optional Phase 3 managed-services during ramp."
   - label: "Productized path"
-    value: "Pairs with Ænix Platform Provider Edition (white-labelable cozyportal, WHMCS-integrated billing); support tiers from $1,250/mo (Basic, 10 nodes)."
+    value: "Pairs with Ænix Public Cloud Platform (white-labelable Cozystack Dashboard, WHMCS-integrated billing); support tiers from $1,250/mo (Basic, 10 nodes)."
 
 faq:
   - q: "What does a white-label cloud engagement with Aenix include?"
-    a: "A multi-tenant Cozystack platform with a reseller-customer hierarchy, a cozyportal branded per reseller, WHMCS-integrated billing, a service catalog (VMs, Kubernetes, managed databases, S3, GPU), a reseller / sub-reseller model, and an operations workflow covering support, SLA management, and per-tenant observability."
+    a: "A multi-tenant Cozystack platform with a reseller-customer hierarchy, a Cozystack Dashboard branded per reseller, WHMCS-integrated billing, a service catalog (VMs, Kubernetes, managed databases, S3, GPU), a reseller / sub-reseller model, and an operations workflow covering support, SLA management, and per-tenant observability."
   - q: "How long does it take to launch?"
     a: "Engagements run in phases: a discovery and product-readiness assessment of 4-8 weeks, a Phase 2 build of 4-12 months covering platform, branding, billing, and operations, and an optional Phase 3 of managed services during ramp-up."
   - q: "Can I run a multi-tier reseller model?"
@@ -36,12 +36,13 @@ faq:
   - q: "What underlying technology powers the platform?"
     a: "Cozystack runs virtual machines and containers on one Kubernetes API using KubeVirt for VMs, Cilium (eBPF) for networking, and LINSTOR/DRBD for storage. Multi-tenancy is handled through the Tenant CRD, which underpins the reseller hierarchy."
   - q: "How is billing handled for my customers?"
-    a: "White-label clouds built by Aenix ship with production-ready WHMCS-integrated billing, available in two integration modes, so you can bill your own customers under your brand alongside the white-labelable cozyportal."
+    a: "White-label clouds built by Aenix ship with production-ready WHMCS-integrated billing, available in two integration modes, so you can bill your own customers under your brand alongside the white-labelable Cozystack Dashboard."
+hreflang_de: /de/dienstleistungen/white-label-cloud/
 ---
 
-**Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the customer-relationship advantages MSPs already have. White-label cloud — branded with the MSP's identity, run on shared or dedicated infrastructure — is the realistic answer. Aenix builds these end-to-end.**
+**Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the customer-relationship advantages MSPs already have. White-label cloud — branded with the MSP's identity, run on shared or dedicated infrastructure — is the realistic answer. Ænix builds these end-to-end.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — fully white-labelable cozyportal, multi-tier reseller model (Aenix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — fully white-labelable Cozystack Dashboard, multi-tier reseller model (Ænix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -68,7 +69,7 @@ faq:
 <div class="diagram">
 <div class="diagram__node"><b>You: MSP / reseller</b><div class="diagram__chips"><span>MSPs</span><span>Hosting resellers</span><span>System integrators</span></div></div>
 <div class="diagram__conn">get a platform built on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Branded cozyportal</span><span>WHMCS billing</span><span>Tenant CRD hierarchy</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Branded Cozystack Dashboard</span><span>WHMCS billing</span><span>Tenant CRD hierarchy</span></div></div>
 <div class="diagram__conn">branded as</div>
 <div class="diagram__node"><b>Your cloud offering</b><div class="diagram__chips"><span>VMs</span><span>Kubernetes</span><span>Managed databases</span><span>S3</span><span>GPU</span></div></div>
 <div class="diagram__conn">sold to</div>
@@ -77,7 +78,7 @@ faq:
 </div>
 
 - **Multi-tenant Cozystack platform** with reseller-customer hierarchy (nested Tenant CRD)
-- **Branded customer-facing portal** — cozyportal customizable per reseller
+- **Branded customer-facing portal** — Cozystack Dashboard customizable per reseller
 - **WHMCS-integrated billing** — production-ready, two integration modes
 - **Service catalog** — VMs, K8s, managed databases, S3, GPU
 - **Reseller / sub-reseller model** — for multi-tier partner channels
@@ -106,6 +107,5 @@ faq:
 
 ---
 
-*Aenix is the team behind Cozystack.*
+*Ænix is the team behind Cozystack.*
 
-<!-- Word count: ~400. -->

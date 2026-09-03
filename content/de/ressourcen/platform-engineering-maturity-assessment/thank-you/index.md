@@ -1,8 +1,9 @@
 ---
 title: "Ihr Download ist bereit — Platform Engineering Maturity Assessment"
-description: "Laden Sie Ihre Kopie des Platform Engineering Maturity Assessment von Aenix herunter."
+description: "Laden Sie Ihre Kopie des Platform Engineering Maturity Assessments von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
+hreflang_en: /resources/platform-engineering-maturity-assessment/thank-you/
 page_type: "flag-page"
 hide_closing_cta: true
 ---
@@ -23,4 +24,4 @@ hide_closing_cta: true
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0.*

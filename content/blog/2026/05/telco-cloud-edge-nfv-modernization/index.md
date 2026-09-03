@@ -29,7 +29,7 @@ quiz:
         - { text: "12-node minimum per MEC location", correct: false }
         - { text: "Single-node-only, no federation path", correct: false }
       explanation: "The post specifies that Cozystack supports edge deployment with reduced footprint, with ~3-node clusters at edge sites typical, federating to regional and core platforms under the same operational model."
-    - q: "Why are sustained-utilisation AI workloads at telcos a good fit for Cozystack AI & GPU rather than hyperscaler?"
+    - q: "Why are sustained-utilisation AI workloads at telcos a good fit for Cozystack AI Platform rather than hyperscaler?"
       options:
         - { text: "Hyperscalers cannot run inference at all", correct: false }
         - { text: "Dedicated GPU economics beat hyperscaler", correct: true }
@@ -42,8 +42,6 @@ quiz:
         - { text: "6-12 months phased programme", correct: false }
       explanation: "The article states tier-1 telco modernization runs 18-36+ months, phased across strategic engagement, IT cloud, AI/data lake, edge, and NFV modernization tracks."
 ---
-
-**Long-form companion to the [telco industry page](/industries/telco/). For network architects, cloud-platform leads, and CTOs at tier-1 and tier-2 telecom operators planning modernization of legacy NFV environments to Kubernetes-native sovereign cloud platforms — covering the architectural drivers, what to keep from the NFV era, where Kubernetes-native breaks the legacy mould, and how to phase a multi-year programme.**
 
 The telco cloud conversation in 2026 sits at an unusual intersection
 of pressures that no other vertical faces simultaneously. NFV
@@ -111,7 +109,7 @@ Where this works:
 
 - **IT cloud workloads** — straightforward Cozystack-based deployment.
   Most tier-1 telco IT cloud modernizations follow this pattern.
-- **AI / data lake / analytics** — Cozystack AI & GPU workload
+- **AI / data lake / analytics** — Cozystack AI Platform workload
   patterns; sovereign by default; multi-tenant for cross-BU access.
 - **Edge compute** — Cozystack supports small-footprint edge
   deployments with federation to core. Standardised across sites.
@@ -166,11 +164,11 @@ Cozystack-based architecture supports this commercially:
 - **Air-gap option** — for defence-adjacent / classified customers
 - **Open-source substrate** — exit-readiness built in; telco doesn't
   lock customers into vendor relationship
-- **EU jurisdiction** — telco's EU presence + Aenix EU contracting
+- **EU jurisdiction** — telco's EU presence + Ænix EU contracting
   entity (AENIX s.r.o.)
 
-For sovereign cloud commercial product lines, the Ænix Platform
-Provider Edition is the typical pairing — multi-region, multi-DC,
+For sovereign cloud commercial product lines, the Ænix Public Cloud
+Platform is the typical pairing — multi-region, multi-DC,
 service-catalog depth, brand-engineered customer portal.
 
 ## Edge compute realities
@@ -210,8 +208,8 @@ The AI workload patterns at tier-1 telcos:
   customers (banking AI, healthcare AI, public-sector AI)
 
 Sustained-utilisation workload profiles dominate; this is exactly the
-case where dedicated GPU economics beat hyperscaler. Cozystack AI/ML
-Edition fits.
+case where dedicated GPU economics beat hyperscaler. The Ænix AI
+Platform fits.
 
 ## Phasing a tier-1 telco modernization
 
@@ -225,13 +223,13 @@ sequencing. Sponsor and workstream-lead identification.
 
 ### Phase 1 — IT cloud modernization (6-12 months)
 
-Cozystack-based Enterprise / Provider Edition deployed. Internal
+Cozystack-based Enterprise / Public Cloud Platform deployed. Internal
 workloads migrated. Customer-facing portal launched for sovereign
 cloud product.
 
 ### Phase 2 — AI / data lake (6-9 months, parallel)
 
-Cozystack AI & GPU deployed. Network analytics workloads moved
+Cozystack AI Platform deployed. Network analytics workloads moved
 on-prem. Customer-facing AI services launched.
 
 ### Phase 3 — Edge expansion (6-18 months, ongoing)
@@ -260,27 +258,21 @@ Strong fit:
 
 Marginal fit:
 
-- Smaller operators (regional, MVNO-style) — may fit Enterprise
-  Edition rather than full Provider Edition
+- Smaller operators (regional, MVNO-style) — may fit the Ænix Private
+  Cloud Platform rather than the full Public Cloud Platform
 - Operators with deep OpenStack-based NFV investment that still
   works — modernization can wait for vendor lifecycle to force it
 
 ## Where to dig deeper
 
 - **[Telco industry page](/industries/telco/)** — commercial landing
-- **[Provider Edition product page](/products/aenix-platform/public-cloud-edition/)** —
-  the typical edition for tier-1 telco engagements
+- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
+  the typical product for tier-1 telco engagements
 - **[Sovereign cloud builder services](/services/sovereign-cloud-builder/)** —
   for sovereign cloud product line builds
 - **[Sovereign AI services](/solutions/sovereign-ai/)** — for AI
   workload patterns
-- **[Provider Edition build phasing](/blog/2026/05/public-cloud-edition-multi-tenant-cloud-builder/)** —
+- **[Public Cloud Platform build phasing](/blog/2026/05/public-cloud-edition-multi-tenant-cloud-builder/)** —
   multi-year build phasing
 - **[Sovereign AI architecture decisions](/blog/2026/05/sovereign-ai-architecture-decisions/)** —
   seven decisions for sovereign AI
-
----
-
-*Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution. Engineering teams across the EU and Central
-Asia, with telco-specific engagement experience under NDA.*
