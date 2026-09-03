@@ -3,6 +3,7 @@ title: "VMware migration — exit VCF without breaking the application"
 description: "Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on..."
 related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/", "/products/cozystack", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
 language: "en"
+hreflang_de: /de/migration/vmware/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |

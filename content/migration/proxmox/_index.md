@@ -3,6 +3,7 @@ title: "Proxmox to Cozystack migration — when SMB virtualization stops fitting
 description: "Proxmox VE is excellent at SMB scale. When deployments grow into multi-tenant cloud builders or service-provider models, the operational model strains...."
 related_pages: ["/alternatives/proxmox-alternative", "/products/public-cloud-platform/", "/products/cozystack", "/services/platform-readiness-assessment"]
 language: "en"
+hreflang_de: /de/migration/proxmox/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |

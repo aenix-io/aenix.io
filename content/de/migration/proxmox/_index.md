@@ -7,6 +7,7 @@ related_pages:
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
 language: "de"
+hreflang_en: /migration/proxmox/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |

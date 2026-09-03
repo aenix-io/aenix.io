@@ -58,7 +58,7 @@ Cozystack is a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Pra
 
 - **Ænix AI Platform** — AI-heavy organizations, regulated AI deployments, GPU-heavy product companies. AI platform automation out of the box: standard AI workloads, service APIs, ready-to-use blueprints, databases, apps and models. Engagement size: €500k - €3M+ project; managed retainer.
 
-Plus an entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal). The cloud experience on customer-controlled hardware. Reduce AWS-level bills 2-7x. Go live in 1-2 weeks.
+Plus **enterprise support for Cozystack** (https://aenix.io/products/cozystack-enterprise-support/) — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal). The cloud experience on customer-controlled hardware. Reduce AWS-level bills 2-7x. Go live in 1-2 weeks.
 
 Cozystack itself remains open-source under Apache 2.0. Customers can run Cozystack themselves; Ænix Platform adds turnkey deployment with billing, portals, payments, support.
 

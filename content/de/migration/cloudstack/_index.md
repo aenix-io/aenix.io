@@ -7,6 +7,7 @@ related_pages:
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/alternativen/vmware-alternative
 language: "de"
+hreflang_en: /migration/cloudstack/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |

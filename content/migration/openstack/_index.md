@@ -7,6 +7,7 @@ related_pages:
   - /products/cozystack
   - /services/platform-readiness-assessment
 language: "en"
+hreflang_de: /de/migration/openstack/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |

@@ -3,6 +3,7 @@ title: "Migration hubs"
 description: "Aenix migration hubs: strategy, architecture, and cohort patterns for migrating to Ænix Platform from VMware, OpenStack, Proxmox, and CloudStack."
 hero_subtitle: "Strategy and architecture to migrate off legacy virtualization"
 language: "en"
+hreflang_de: /de/migration/
 ---
 
 **Practical migration patterns for moving onto Ænix Platform from existing platforms. Productized migration tooling for Public Cloud Platform; engineering-led migration for Enterprise + Public Cloud Platform deployments. Cohort-based; parallel-run-validated.**

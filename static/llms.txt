@@ -1,24 +1,22 @@
 # Aenix
 
-> Aenix is an open-core company. We are the team behind Cozystack — a CNCF project for Kubernetes-native, multi-tenant cloud platforms (currently CNCF Sandbox; CNCF Incubating expected late summer 2026) — and commercialize it as Ænix Platform: a turnkey cloud-in-a-box in three platforms (Provider, Enterprise) with AI Platform and developer self-service layers. DORA / NIS2 / sovereignty-aligned by design. Multi-million-euro engagements with regulated enterprises, hosting providers, and sovereign cloud initiatives.
+> Aenix is an open-core company. We are the team behind Cozystack — a CNCF project for Kubernetes-native, multi-tenant cloud platforms (currently CNCF Sandbox; CNCF Incubating expected late summer 2026) — and commercialize it as three platforms on one engine: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform. DORA / NIS2 / sovereignty-aligned by design. Multi-million-euro engagements with regulated enterprises, hosting providers, and sovereign cloud initiatives.
 
 ## What Aenix is
 
-Aenix is an open-core cloud-platform company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We are the original maintainers and primary contributors to Cozystack — an open-source CNCF project, Apache 2.0 — and we commercialize it as **Ænix Platform**, a turnkey cloud-in-a-box that adds hosting panel, user / admin / support portals, service-creation wizards, full billing (backend + frontend), payment integrations, WHMCS integration, enterprise SLA, and edition-specific features on top of the open-source Cozystack foundation.
+Aenix is an open-core cloud-platform company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We are the original maintainers and primary contributors to Cozystack — an open-source CNCF project, Apache 2.0 — and we commercialize it as the **Ænix platforms**, turnkey cloud products that add a hosting panel, user / admin / support portals, service-creation wizards, full billing (backend and frontend), payment integrations, WHMCS integration, compliance architecture and enterprise SLA on top of the open-source Cozystack foundation. The three platforms are the same engine with different surfaces switched on, so they combine rather than exclude each other.
 
-Ænix Platform comes in **three platforms**, split by whether you sell cloud or run it for yourself:
+There are **three platforms**, chosen by who consumes the capacity — and they are not mutually exclusive:
 
 - **Public Cloud Platform** — anyone selling cloud capacity: hosting providers, MSPs, regional clouds and data centres at the small end (published price list, from $1,250/month per 10 nodes); telcos, national operators and banks running a commercial cloud at operator scale (multi-region, quoted per RFP)
 - **Private Cloud Platform** — organizations running cloud for their own users under a regulator: banks, insurance, public administration, telco, healthcare, energy (quoted per RFP)
+- **AI Platform** — multi-tenant GPU scheduling, fractioning and MIG, model serving, vector databases, for teams running inference and fine-tuning on their own GPUs
 
-Two modules extend either edition:
+Combining them is a configuration decision on one control plane, not a second procurement — an AI platform with Private Cloud key custody, or GPU-as-a-Service sold through the Public Cloud billing surface, are ordinary configurations rather than separate installations. Developer self-service (golden paths, GitLab and Argo CD automation, self-service APIs) is part of Ænix Private Cloud Platform rather than a separate product.
 
-- **AI Platform** — multi-tenant GPU scheduling, fractioning and MIG, model serving, vector databases
-- **Developer Self-Service** — golden paths, GitLab and Argo CD automation, self-service APIs (the internal-developer-platform layer)
+Plus **enterprise support for Cozystack** (https://aenix.io/products/cozystack-enterprise-support/) — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
-Plus an entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
-
-Aenix does not sell Cozystack licenses (it is open source under Apache 2.0). Ænix Platform is the commercial product.
+Aenix does not sell Cozystack licences (it is open source under Apache 2.0). The commercial products are the three Ænix platforms, enterprise support, and the WHMCS integration.
 
 ## Solutions (buyer-trigger-led)
 
@@ -26,14 +24,14 @@ Aenix does not sell Cozystack licenses (it is open source under Apache 2.0). Æn
 - [NIS2 compliance](https://aenix.io/solutions/nis2-compliance/): NIS2-aligned multi-tenant cloud platform for essential entity sectors (energy, telco, transport, banking, healthcare, public sector)
 - [Data sovereignty](https://aenix.io/solutions/data-sovereignty/): Customer-controlled keys, customer-controlled hardware, jurisdictional data residency
 - [Sovereign AI](https://aenix.io/solutions/sovereign-ai/): GPU infrastructure for AI workloads on customer-controlled hardware (no hyperscaler endpoint dependency)
-- [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): Migrate workloads off AWS/Azure/GCP onto sovereign or on-prem Ænix Platform
-- [Cloud cost optimization](https://aenix.io/solutions/cloud-cost-optimization/): TCO optimization through Ænix Platform-based architecture
-- [Hybrid cloud platform](https://aenix.io/solutions/hybrid-cloud-platform/): Single Ænix Platform spanning on-prem + cloud
-- [Developer self-service](https://aenix.io/solutions/developer-self-service/): Internal Developer Platform on Ænix Platform with multi-tenant developer workflows
+- [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): Migrate workloads off AWS/Azure/GCP onto a sovereign or on-premise Ænix platform
+- [Cloud cost optimization](https://aenix.io/solutions/cloud-cost-optimization/): TCO optimization through Ænix platform architecture
+- [Hybrid cloud platform](https://aenix.io/solutions/hybrid-cloud-platform/): A single Ænix platform spanning on-premise and cloud
+- [Developer self-service](https://aenix.io/solutions/developer-self-service/): Internal developer platform on Ænix Private Cloud Platform with multi-tenant developer workflows
 
 ## By role (job-title entry points)
 
-- [By role overview](https://aenix.io/for/): Role-specific entry points; each role can engage Aenix two ways — turnkey Ænix Platform, or Aenix as the engineering team that builds a custom platform on Cozystack.
+- [By role overview](https://aenix.io/for/): Role-specific entry points; each role can engage Aenix two ways — a turnkey Ænix platform, or Aenix as the engineering team that builds a custom platform on Cozystack.
 - [For Heads of Infrastructure](https://aenix.io/for/head-of-infrastructure/): Exit VMware/Nutanix on an open, Kubernetes-native platform (KubeVirt VMs + containers), no per-core licensing.
 - [For Heads of Platform Engineering](https://aenix.io/for/head-of-platform-engineering/): Multi-tenant internal developer platform with real self-service — a backend, not just a portal.
 - [For CTOs & VPs of Engineering](https://aenix.io/for/cto/): Cloud repatriation and cost/control on a sovereign, open platform run on owned or leased hardware.
