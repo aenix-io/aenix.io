@@ -38,12 +38,12 @@ quiz:
         - { text: "DR cutover validation testing", correct: false }
         - { text: "Cozystack deployed in parallel", correct: true }
       explanation: "The migration runs: discovery & assessment → Cozystack deployed in parallel on new or repurposed hardware → VM-by-VM image migration → network and storage cutover → validation and DR cutover → VMware decommission. No big-bang cutover."
-    - q: "What is the typical timeline for a smaller VMware estate (under 200 VMs, simple networking) according to the article?"
+    - q: "According to the article, how long does a VMware migration take for an estate under 100 VMs?"
       options:
-        - { text: "1–2 weeks end-to-end", correct: false }
-        - { text: "6–12 weeks end-to-end", correct: true }
-        - { text: "12–18 months end-to-end", correct: false }
-      explanation: "Smaller estates take 6–12 weeks; larger or complex ones (vCD, NSX-heavy, regulated workloads) run 3–9 months. The driver is rarely raw migration speed — it is regression testing and parallel-run windows."
+        - { text: "6-12 weeks end-to-end, the whole estate decommissioned", correct: false }
+        - { text: "First production cohort in 6-12 weeks; whole estate 7-10 months", correct: true }
+        - { text: "16-25 months regardless of estate size", correct: false }
+      explanation: "The article separates two numbers deliberately. The first production cohort runs 6-12 weeks after kickoff, which is when the platform stops being a proof of concept; decommissioning the whole estate takes 7-10 months under 100 VMs and longer above that. Quoting the cohort figure as the estate figure is how migration plans slip."
 ---
 
 After Broadcom, the VMware bill stopped being predictable. Subscription-only licensing, mandatory VCF bundling, two-to-five-times price increases on renewal, and the end of perpetual licenses changed the math for every infrastructure team running VMware at scale. The result has been a documented wave of VMware replacement projects across service providers, banks, government, telecom, and AI/GPU operators evaluating how to exit VMware safely.
@@ -214,7 +214,7 @@ Yes — in most cases. Cozystack runs on commodity x86. The standard scenario is
 
 ### How long is a typical migration?
 
-For a 100-1000 VM estate, 8–18 months elapsed from assessment to decommission. Small, simple estates (well under 100 VMs, flat networking, no vCD) land at the short end; vCD- or NSX-heavy regulated estates at the long end, run in cohorts. The driver is rarely raw migration speed — it's regression testing and parallel-run windows agreed with application owners.
+Two numbers matter, and conflating them is how migration plans go wrong. The **first production cohort** typically runs in a live environment 6-12 weeks after kickoff — that is when the platform stops being a proof of concept. The **whole estate** takes 7-10 months under 100 VMs, 10-16 months for 100-500, and 16-25 months for 500-2000, assessment through VMware decommission. Small, flat estates land at the short end; vCD- or NSX-heavy regulated ones at the long end, run in cohorts. The driver is rarely raw migration speed — it's regression testing and the parallel-run windows application owners will agree to.
 
 ### Do you support Windows VMs?
 

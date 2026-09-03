@@ -64,7 +64,7 @@ Typical economics for an MSP running white-label cloud:
 - **Customer pricing** — typically 30-50% above raw platform cost
 - **Margin** — covers MSP support, sales, operations
 
-Realistic to break even on first 50-100 customers; positive economics after that depending on customer mix.
+Break even at 30-50 paying customers when you are covering the platform and tooling; 50-100 when a dedicated on-call rota is funded alongside it. Positive economics after that, depending on customer mix.
 
 ## Engagement structure
 

@@ -8,14 +8,14 @@ primary_keyword: "vmware migration workshop"
 secondary_keywords: ["vmware alternative", "vmware exit training", "open source virtualization workshop", "cozystack training"]
 images: ["img/og/og-workshop-en.png?v=2"]
 hide_child_cards: true
-hero_eyebrow: "Tashkent · Bishkek · Almaty · Astana"
+hero_eyebrow: "Ran in Almaty · Bishkek · Astana · Tashkent, August 2026"
 hero_title: "Migrating off VMware to open source: a hands-on workshop"
-hero_tagline: "No theory for theory's sake: at the workshop you migrate a real virtual machine off VMware with your own hands, in a live environment — and leave with a step-by-step migration plan."
+hero_tagline: "No theory for theory's sake: attendees migrated a real virtual machine off VMware with their own hands, in a live environment, and left with a step-by-step migration plan. The August 2026 tour is over; the lab material stays open, and the next wave is being scheduled."
 hero_chips:
   - "Free with registration"
   - "Seats are limited"
   - "Held in Russian"
-hero_primary: { text: "Register", href: "#register" }
+hero_primary: { text: "Tell us where to run it next", href: "#register" }
 hero_secondary: { text: "See the program", href: "#program" }
 speaker_photo: "images/workshops/timur-tukaev.png"
 inshort_title: "About the workshop"
@@ -63,19 +63,19 @@ agenda:
 cities:
   - city: "Tashkent"
     country: "Uzbekistan"
-    status: "confirmed"
+    status: "completed"
     date: "26 Aug 2026, 15:00–19:00"
     venue: "Impact.t Hub, Bogibuston St. 186, 5th floor"
     href: "#register"
   - city: "Bishkek"
     country: "Kyrgyzstan"
-    status: "confirmed"
+    status: "completed"
     date: "17 Aug 2026, 14:00–18:00"
     venue: "Technopark, Gorkogo St. 1a, event hall “GO”"
     href: "#register"
   - city: "Almaty"
     country: "Kazakhstan"
-    status: "confirmed"
+    status: "completed"
     date: "13 Aug 2026, 10:00–14:00"
     venue: "Almaty Hub, Zenkov St. 24, 4th floor"
     href: "https://forms.qosi.kz/s/cmqunqfix0039mw011sc3e8bn"
@@ -83,15 +83,15 @@ cities:
     note: "Local partner in Almaty — QOSI, Qazaq Open Source Initiative; registration is on their form."
   - city: "Astana"
     country: "Kazakhstan"
-    status: "confirmed"
+    status: "completed"
     date: "24 Aug 2026, 14:00–18:30"
     venue: "Astana Hub, 55/1 Mangilik El Ave., Block C3.5, Franklin Herbert hall"
     href: "#register"
     note: "Local partner in Astana — GoHost.kz."
 final_cta:
   heading: "Migrating off VMware to open source: a hands-on workshop"
-  text: "Attendance is free — with registration."
-  button: "Register"
+  text: "The August 2026 tour has finished. Tell us which city should be next and we will let you know when a date is set."
+  button: "Tell us where to run it next"
   href: "#register"
 direct_answer: |
   **This is a free hands-on workshop for people who run VMware and are deciding what to do next. It takes place in Tashkent, Bishkek, Almaty, and Astana. In one day, participants migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform developed within the CNCF — with their own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. The workshop is led by Timur Tukaev, Cozystack maintainer and Aenix co-founder. Afterwards, every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Aenix Certification for Cozystack — Fundamentals certificate. Attendance is free with registration; seats are limited.**
@@ -114,7 +114,7 @@ quick_facts:
 
 faq:
   - q: "How much does it cost?"
-    a: "Attendance is free; you only need to register. Seats are limited — we want everyone to get real time at the terminal and an assistant's attention when needed."
+    a: "Attendance was free. The August 2026 tour has finished, so there is nothing to register for right now — leave your city and we will tell you when the next wave is scheduled. Seats are deliberately limited: everyone gets real time at the terminal and an assistant's attention when needed."
   - q: "I run VMware but don't know Kubernetes. Will I keep up?"
     a: "Yes. The workshop is built for exactly your profile: everything is explained through VMware concepts you already know, and assistants are there whenever something doesn't work. Your experience is the foundation we build on."
   - q: "What language is the workshop in?"

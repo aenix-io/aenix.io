@@ -172,7 +172,7 @@ Multi-year platform build, quoted per RFP. Discovery call to scope.
 ## Engagement structure
 
 - **Discovery call** (30 min, free)
-- **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — DORA / NIS2 gap analysis + architecture roadmap
+- **Platform Readiness Assessment** (14 or 28 days, fixed price agreed up front) — DORA / NIS2 gap analysis + architecture roadmap
 - **Pilot engagement** (3-6 months) — defined slice (one workload class, one BU, one site)
 - **Full platform build** (9-18 months) — multi-DC production deployment, compliance certification support, operations team training
 - **Managed operations** (optional, ongoing) — Ænix runs the platform under SLA

@@ -124,7 +124,7 @@ Use the **[TCO calculator](/tco-calculator/)** to model five-year cost against y
 ## How we engage on migrations
 
 1. **Discovery call** — confirm fit, scope, timeline
-2. **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — current-state audit, target architecture, cohort plan, risk register. This is also where a no-go decision is still cheap.
+2. **Platform Readiness Assessment** (14 or 28 days, fixed price agreed up front) — current-state audit, target architecture, cohort plan, risk register. This is also where a no-go decision is still cheap.
 3. **Pilot cohort** (3-6 months) — first cohort migrated with Ænix engineers inside your team, producing the runbooks for the rest
 4. **Rolling migration** — cohort by cohort with parallel-run validation, source hardware recycled forward as it frees up
 5. **Decommission** — source platform shutdown after final validation

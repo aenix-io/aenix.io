@@ -81,7 +81,7 @@ Sie können die Nurture-Sequenz jederzeit abbestellen.
 |---|---|
 | DORA-Checkliste | DORA-konformes Readiness-Engagement (4-6 Wochen); Private-Cloud-Platform-Aufbau |
 | NIS2-Checkliste | NIS2-konformes Readiness-Engagement (4-6 Wochen); Private-Cloud-Platform-Aufbau |
-| VMware-Migrations-Checkliste | Platform Readiness Assessment (5-10 Tage) → Kohorten-Migration |
+| VMware-Migrations-Checkliste | Platform Readiness Assessment** (14 oder 28 Tage) → Kohorten-Migration |
 | Cloud-Repatriation-TCO-Worksheet | Platform Readiness Assessment mit Schwerpunkt Kosten |
 | Sovereign-AI-Architektur-Leitfaden | Souveräne-KI-Architektur-Review (1-2 Wochen); AI-Platform-Aufbau |
 | Platform Engineering Maturity Assessment | Platform Readiness Assessment mit IDP-Fokus; Private-Cloud-Platform-Aufbau mit Developer-Self-Service-Ebene |

@@ -19,9 +19,9 @@ quiz:
     - q: "For mid-size MSP (50-500 customers), what is the break-even point?"
       options:
         - { text: "5-10 paying customers (low-volume pilot stage)", correct: false }
-        - { text: "30-50 paying customers, then positive economics", correct: true }
+        - { text: "30-50 paying customers for platform and tooling; 50-100 if a dedicated on-call rota is funded too", correct: true }
         - { text: "500+ paying customers (enterprise-scale tipping point)", correct: false }
-      explanation: "For 50-500 customer MSPs: break-even at 30-50 paying customers. Customer pricing typically 30-50% above raw platform cost; margin covers MSP support/sales/operations."
+      explanation: "For 50-500 customer MSPs: break-even at 30-50 paying customers when the platform and tooling are what you cover, 50-100 when a dedicated on-call rota is funded alongside it. Customer pricing typically 30-50% above raw platform cost; margin covers MSP support/sales/operations."
     - q: "What is the typical end-to-end engagement timeline?"
       options:
         - { text: "1-2 weeks (rapid pilot-to-production sprint)", correct: false }
@@ -62,7 +62,7 @@ For mid-size MSP (50-500 customers):
 - **MSP customer pricing** — typically 30-50% above raw platform cost
 - **Margin** — covers MSP support, sales, operations
 
-Break even: 30-50 paying customers. Positive economics scaling from there.
+Break even at 30-50 paying customers if the platform and its tooling are what you are covering. Budget 50-100 if you are also funding a dedicated on-call rota from day one — that is the same business with a different cost base, not a different answer.
 
 ## Engagement sequencing
 
