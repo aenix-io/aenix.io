@@ -89,16 +89,17 @@ If you came here because of one of these — start at the linked page; we can ta
 
 <div class="band">
 
-## Pick your edition
+## Pick your platform
 
-Two editions, split by one question: are you selling cloud to other people, or running it for your own organisation? Same Cozystack core underneath, different commercial surface on top.
+One question settles it: who consumes the capacity? Same Cozystack engine underneath all three — different surface on top. They are not tiers, and picking one does not rule out the others.
 
 <div class="edition-selector" data-edition-tabs>
 
-<div class="edition-selector__tabs" role="tablist" aria-label="Editions" aria-orientation="vertical">
-<button class="edition-tab" id="edition-tab-0" role="tab" aria-selected="true" aria-controls="edition-panel-0" type="button">Provider</button>
-<button class="edition-tab" id="edition-tab-1" role="tab" aria-selected="false" aria-controls="edition-panel-1" type="button" tabindex="-1">Enterprise</button>
-<button class="edition-tab" id="edition-tab-2" role="tab" aria-selected="false" aria-controls="edition-panel-2" type="button" tabindex="-1">Pure Cozystack + Support</button>
+<div class="edition-selector__tabs" role="tablist" aria-label="Platforms" aria-orientation="vertical">
+<button class="edition-tab" id="edition-tab-0" role="tab" aria-selected="true" aria-controls="edition-panel-0" type="button">You sell cloud</button>
+<button class="edition-tab" id="edition-tab-1" role="tab" aria-selected="false" aria-controls="edition-panel-1" type="button" tabindex="-1">You run your own</button>
+<button class="edition-tab" id="edition-tab-2" role="tab" aria-selected="false" aria-controls="edition-panel-2" type="button" tabindex="-1">You run AI on GPUs</button>
+<button class="edition-tab" id="edition-tab-3" role="tab" aria-selected="false" aria-controls="edition-panel-3" type="button" tabindex="-1">You self-host Cozystack</button>
 </div>
 
 <div class="edition-selector__panels">
@@ -106,8 +107,8 @@ Two editions, split by one question: are you selling cloud to other people, or r
 <div class="edition-panel" id="edition-panel-0" role="tabpanel" aria-labelledby="edition-tab-0">
   <a href="/products/public-cloud-platform/" class="card card--edition">
     <div class="card-body">
-      <div class="card-tag">You sell cloud</div>
-      <h3 class="card-title">Public Cloud Platform</h3>
+      <div class="card-tag">Capacity goes to your customers</div>
+      <h3 class="card-title">Ænix Public Cloud Platform</h3>
       <p class="card-description"><strong>You're a:</strong> hosting provider, MSP, regional cloud or data centre — or a telco, national operator or bank running a commercial cloud. Billing, payments, white-label portal, tenant isolation, multi-region when you need it.</p>
       <p class="card-meta">From $1,250 / month; operator scale per RFP</p>
       <span class="card-link">Explore →</span>
@@ -118,9 +119,9 @@ Two editions, split by one question: are you selling cloud to other people, or r
 <div class="edition-panel" id="edition-panel-1" role="tabpanel" aria-labelledby="edition-tab-1">
   <a href="/products/private-cloud-platform/" class="card card--edition">
     <div class="card-body">
-      <div class="card-tag">You run your own cloud</div>
-      <h3 class="card-title">Private Cloud Platform</h3>
-      <p class="card-description"><strong>You're a:</strong> regulated enterprise — bank, insurer, public sector, energy, healthcare, telco. DORA- and NIS2-aligned controls, customer-held keys, audit-ready logging, air-gap, multi-DC.</p>
+      <div class="card-tag">Capacity goes to your own business units</div>
+      <h3 class="card-title">Ænix Private Cloud Platform</h3>
+      <p class="card-description"><strong>You're a:</strong> regulated enterprise — bank, insurer, public sector, energy, healthcare, telco. DORA- and NIS2-aligned controls, customer-held keys, audit-ready logging, air-gap, multi-DC. Developer self-service included, switched on when you want it.</p>
       <p class="card-meta">Multi-year programme, per RFP</p>
       <span class="card-link">Explore →</span>
     </div>
@@ -128,13 +129,25 @@ Two editions, split by one question: are you selling cloud to other people, or r
 </div>
 
 <div class="edition-panel" id="edition-panel-2" role="tabpanel" aria-labelledby="edition-tab-2">
-  <a href="/products/cozystack/" class="card card--edition card--neutral">
+  <a href="/products/ai-platform/" class="card card--edition">
     <div class="card-body">
-      <div class="card-tag">Open source</div>
-      <h3 class="card-title">Pure Cozystack + Ænix Support</h3>
-      <p class="card-description"><strong>You're a:</strong> product team running on Hetzner / OVH / leased bare-metal who wants the OSS upstream with us on call. Entry tier into the Aenix support ladder.</p>
+      <div class="card-tag">Capacity goes to inference and training</div>
+      <h3 class="card-title">Ænix AI Platform</h3>
+      <p class="card-description"><strong>You're a:</strong> AI-native company, a regulated organisation keeping model weights in-house, or a provider selling GPU-as-a-Service. Multi-tenant GPU scheduling with MIG and fractioning, model serving, vector databases, keys you hold yourself.</p>
+      <p class="card-meta">3-6 months to a production inference fleet</p>
+      <span class="card-link">Explore →</span>
+    </div>
+  </a>
+</div>
+
+<div class="edition-panel" id="edition-panel-3" role="tabpanel" aria-labelledby="edition-tab-3">
+  <a href="/products/cozystack-enterprise-support/" class="card card--edition card--neutral">
+    <div class="card-body">
+      <div class="card-tag">Open source, with us on call</div>
+      <h3 class="card-title">Cozystack + Ænix support</h3>
+      <p class="card-description"><strong>You're a:</strong> product team running on Hetzner, OVH or leased bare metal that wants the upstream project and the maintainers reachable — without the commercial portal and billing layer.</p>
       <p class="card-meta">Apache 2.0 + retainer</p>
-      <span class="card-link">Cozystack →</span>
+      <span class="card-link">Enterprise support →</span>
     </div>
   </a>
 </div>
@@ -143,7 +156,7 @@ Two editions, split by one question: are you selling cloud to other people, or r
 
 </div>
 
-Two modules extend either edition: **[AI &amp; GPU](/products/ai-platform/)** — multi-tenant GPU scheduling, model serving, vector databases — and **[Developer Self-Service](/products/private-cloud-platform/)** — golden paths, GitLab and Argo CD automation, self-service APIs.
+**They combine.** A provider adds GPU-as-a-Service on hardware it already runs. A bank takes AI Platform under the same key custody and tenancy boundary its auditor already accepted. A telco sells a sovereign cloud product while running its regulated internal estate — one platform, one team. Adding a second surface is a configuration decision, not a second procurement. [How the platforms fit together →](/products/)
 
 </div>
 
