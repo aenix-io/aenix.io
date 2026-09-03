@@ -35,6 +35,7 @@ faq:
     a: "Three written, dated outputs handed to the executive sponsor: a time-to-environment metric (current vs target with a delivery plan), a compliance-by-design map across DORA / NIS2 / GDPR and sectoral controls, and a 12-month cost-and-control trajectory with caps and ranked repatriation candidates."
   - q: "Does it work for an organization that has already chosen a stack?"
     a: "Yes. The workstreams shift emphasis toward operational readiness, multi-tenancy model, regulator gap, and developer self-service rather than vendor selection — for example if you have already committed to KubeVirt, Cilium, LINSTOR, and Talos."
+hreflang_de: /de/dienstleistungen/platform-readiness-assessment/
 ---
 
 <!-- BLOCK 1: HERO -->

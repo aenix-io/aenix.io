@@ -35,6 +35,7 @@ faq:
     a: "The platform is built on Cozystack, an Apache 2.0 CNCF Sandbox project. It runs both VM and container GPU workloads on a single Kubernetes API via KubeVirt, with Cilium (eBPF) networking and LINSTOR/DRBD storage. There is no per-CPU or per-core licensing."
   - q: "What is the difference between this service and Ænix AI Platform?"
     a: "The AI Platform is the productized, turnkey platform with multi-tenant GPU scheduling and ready blueprints for inference, fine-tuning, and RAG. The AI platform build is the services engagement that designs and delivers a custom platform end-to-end, usually on top of that product."
+hreflang_de: /de/dienstleistungen/ai-platform-build/
 ---
 
 **AI startups and AI-heavy enterprises in 2026 face the same architectural choice: rent inference at hyperscaler economics, or build dedicated infrastructure that pays back at scale. For sustained workloads (24/7 inference, fine-tuning, training), dedicated infrastructure usually wins after a year of operation. Ænix builds these platforms end-to-end.**

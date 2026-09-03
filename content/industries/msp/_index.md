@@ -33,6 +33,7 @@ faq:
     a: "Yes. Because the platform is self-hosted on infrastructure the MSP controls, it supports data-sovereignty and residency positioning for finance, healthcare, and government customers. The MSP decides where data lives and which services to expose."
   - q: "What does an engagement cost?"
     a: "Support tiers start at Basic $1,250/month for 10 nodes, then Standard $3,000 and Plus $5,500, with Enterprise pricing custom. The productized Public Cloud Platform adds white-label portal, reseller model, and billing; partners can earn up to 40% margin on resold engagements."
+hreflang_de: /de/branchen/msp/
 ---
 
 **Managed Service Providers (MSPs) in 2026 are asked by enterprise customers for cloud capabilities that combine MSP managed-service relationship with hyperscaler-class capabilities. Cozystack-based platform with white-label branding is the realistic path — and what Ænix delivers.**

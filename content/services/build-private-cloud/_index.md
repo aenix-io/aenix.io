@@ -40,7 +40,7 @@ faq:
     a: "Cozystack on Talos by default, with KubeVirt running virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, and LINSTOR/DRBD via Piraeus for storage. Multi-tenancy, RBAC, quotas, and audit are handled through the Tenant CRD."
   - q: "When does building a private cloud make sense versus staying on public cloud?"
     a: "It fits when you have or are building a platform engineering function, a specific trigger like a VMware exit or sovereignty mandate, sustained workloads or AI/GPU at scale where the economics favor dedicated infrastructure, and a team that can operate it after handover. The assessment phase clarifies fit before any build begins."
-
+hreflang_de: /de/dienstleistungen/build-private-cloud/
 ---
 
 **The phrase "build a private cloud" sounds like it should be straightforward in 2026. The reality: it's an architecture problem, an operational discipline problem, and a team-capacity problem at the same time. Done well, it produces a platform that compounds value for years. Done badly, it produces operational debt and the next emergency.**

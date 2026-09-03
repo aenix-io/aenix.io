@@ -43,6 +43,7 @@ faq:
     a: "The platform foundation, Cozystack, is Apache 2.0 open source with no per-CPU or per-core licensing. It runs on customer hardware with customer-controlled keys and audit trails, so sovereignty and exit-readiness are structural. Aenix sells the productized Ænix Platform and services on top."
   - q: "Which regions and regulatory frameworks does Aenix cover?"
     a: "Aenix operates teams in the EU and Central Asia and engages with financial-services organizations across the EU, DACH, and Central Asia, aligned with DORA, NIS2, GDPR, and Kazakhstan frameworks. RFI/RFP is accepted through standard procurement channels in EU member states and Kazakhstan."
+hreflang_de: /de/branchen/finanzdienstleistungen/
 ---
 
 <!-- BLOCK 1: HERO -->

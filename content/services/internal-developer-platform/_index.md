@@ -40,6 +40,7 @@ faq:
     a: "Backstage is a tool, not a destination. Aenix uses it where it serves the customer's operational maturity and recommends alternatives (Port, Cortex, custom) or no portal at all when they fit better. The decision is calibrated against the team's needs, not vendor incentives."
   - q: "Is the platform open source, and do we own it?"
     a: "Yes. The foundation is Cozystack, an Apache 2.0 CNCF project with no per-core licensing. The IDP Aenix builds is one the customer owns and operates, with no vendor-roadmap lock-in. Aenix sells the productized Ænix Platform and services on top."
+hreflang_de: /de/dienstleistungen/internal-developer-platform/
 ---
 
 <!-- BLOCK 1: HERO -->

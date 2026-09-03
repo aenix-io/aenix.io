@@ -40,6 +40,7 @@ faq:
     a: "Most engagements start with a 14-28 day DevOps maturity assessment, followed by a 3-9 month transformation phase, with an optional ongoing operate phase. It begins with a free 30-minute discovery call to confirm fit and scope."
   - q: "Why is an open-source foundation relevant to DevOps consulting?"
     a: "Cozystack is an Apache 2.0 CNCF project, so the CI/CD, IaC, and observability practices Aenix installs run on open standards and tooling with no per-core licensing. That means the resulting DevOps function is sustainable without continued dependence on Aenix."
+hreflang_de: /de/dienstleistungen/devops-consulting/
 ---
 
 <!-- BLOCK 1: HERO -->

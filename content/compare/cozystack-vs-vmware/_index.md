@@ -37,6 +37,7 @@ faq:
     a: "When the gaps matter more than the licence. VMware has two decades of operational depth (DRS, Storage DRS, Fault Tolerance, vVols), a certified hardware compatibility list a vendor will support you on, and a backup and DR ecosystem — Veeam, Commvault, Rubrik, Zerto, Site Recovery Manager — that speaks VADP natively. Some application vendors certify only against ESXi. If your team is deep on vSphere, renewal economics are tolerable, and nothing else is pushing, stay and tune."
   - q: "Does Aenix need access to our environment to support Cozystack?"
     a: "No. Aenix works through an advisory and GitOps PR-review model: we review manifests and runbooks in your repository and never need direct kubectl access to your cluster. Cozystack runs on your hardware with customer-controlled keys."
+hreflang_de: /de/vergleichen/cozystack-vs-vmware/
 ---
 
 **You're considering a VMware exit. The destination shortlist includes Cozystack. This page compares the two head-to-head — what's the same, what's different, what migration costs, what runs better on each.**

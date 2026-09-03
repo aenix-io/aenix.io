@@ -40,6 +40,7 @@ faq:
     a: "Aenix is the team behind Cozystack, an open-source CNCF Kubernetes-native platform run in production. Recommendations come from systems Aenix builds and operates, delivered by senior engineers rather than analysts, with no licensed-distribution sales incentive."
   - q: "Can consulting expand into a productized platform engagement?"
     a: "Yes. Stand-alone consulting is available, and scope can expand into an Ænix Platform engagement (tiers from Basic $1,250/mo for 10 nodes up to Enterprise Custom) when the work moves toward a productized cloud platform."
+hreflang_de: /de/dienstleistungen/kubernetes-consulting/
 ---
 
 <!-- BLOCK 1 -->

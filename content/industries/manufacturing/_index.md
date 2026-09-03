@@ -42,6 +42,7 @@ faq:
     a: "Cozystack is open source under Apache 2.0 with no per-CPU or per-core licensing. Aenix sells Ænix Platform tiers: Basic at $1,250/mo (10 nodes), Standard at $3,000, Plus at $5,500, and Enterprise on custom pricing for multi-DC and edge deployments."
   - q: "How does Cozystack run both VMs and containers for OT/IT convergence?"
     a: "Cozystack uses KubeVirt to run virtual machines and containers side by side on a single Kubernetes API, with Cilium eBPF networking and LINSTOR/DRBD storage. This lets legacy OT virtual machines and modern containerized IT workloads share one platform."
+hreflang_de: /de/branchen/fertigung/
 ---
 
 **Manufacturing in 2026 means simultaneous demands: Industry 4.0 transformation, NIS2 compliance (manufacturing of critical products is in scope), edge compute at production sites, AI-driven quality control, and increasing sovereign-cloud requirements for industrial IP. The architectural answer is a coherent platform that runs at HQ, regional sites, and production-floor edge — under one operational model.**

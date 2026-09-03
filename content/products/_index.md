@@ -36,6 +36,7 @@ faq:
     a: "The core is Apache 2.0 with no per-CPU or per-core licensing, and it is a CNCF project rather than an Aenix-owned codebase, so the engine outlives any commercial relationship with us. The commercial layer — portals, billing, proprietary modules — is what you stop receiving if you leave. The exit is documented rather than theoretical: you keep running the open-source platform on the same hardware."
 aliases:
   - /products/aenix-platform/
+hreflang_de: /de/produkte/
 ---
 
 **Three platforms on one engine, plus two products around it. The platforms are not tiers and not alternatives — they are different surfaces on the same Cozystack foundation, and they combine.**

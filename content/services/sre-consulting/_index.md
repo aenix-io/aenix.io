@@ -33,6 +33,7 @@ faq:
     a: "SLOs are designed collaboratively with product teams, set per service and aligned to user impact. Error-budget consumption then drives prioritization, so reliability work and feature work are balanced against an agreed, measurable budget rather than opinion."
   - q: "Does SRE consulting work with Cozystack?"
     a: "Yes. Aenix is the team behind Cozystack, the open-source CNCF platform built on Kubernetes, KubeVirt, Cilium, and LINSTOR. SRE practices are built into the platform foundation, making them a natural fit for Cozystack and Ænix Platform environments."
+hreflang_de: /de/dienstleistungen/sre-consulting/
 ---
 
 **Site Reliability Engineering as a discipline applies software engineering to operations. The Ænix SRE engagement covers SLOs, error budgets, incident response, and the operational practices that keep production reliable at scale — built into the platform foundation, not bolted on.**

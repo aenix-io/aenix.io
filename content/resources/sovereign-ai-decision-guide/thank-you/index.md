@@ -5,6 +5,7 @@ robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
 hide_closing_cta: true
+hreflang_de: /de/ressourcen/sovereign-ai-architektur-leitfaden/thank-you/
 ---
 
 **Thank you — your download is ready.** The Sovereign AI Decision Guide is below. We've also sent a copy to the email you provided.

@@ -3,6 +3,7 @@ title: "Services"
 description: "Aenix services: Platform Readiness Assessment entry offer, platform engineering, internal developer platform, and public, sovereign, and AI cloud builds."
 hero_subtitle: "From readiness assessment to a fully built cloud platform"
 language: "en"
+hreflang_de: /de/dienstleistungen/
 ---
 
 **Engagement-led entry points to Ænix work. Pick the engagement type that matches what you need to do — assess, build, operate. All paths lead to Ænix Platform deployments matched to your buyer profile.**

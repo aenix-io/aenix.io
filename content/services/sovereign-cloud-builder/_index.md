@@ -42,6 +42,7 @@ faq:
     a: "Specific requirements such as BSI C5, SecNumCloud, and EUCS are addressed during discovery. Aenix accepts RFI/RFP through EU TED and national e-procurement portals, and through Kazakhstan platforms including goszakup.gov.kz, mitwork.kz, zakup.sk.kz, and the Unified Procurement Platform; other jurisdictions are handled per case."
   - q: "What is the technical foundation of the platform?"
     a: "The product is built on Cozystack, which runs virtual machines via KubeVirt and containers on a single Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. The Private Cloud Platform adds strict customer-controlled-keys and air-gap support for the most sensitive workloads."
+hreflang_de: /de/dienstleistungen/sovereign-cloud-builder/
 ---
 
 **Sovereign cloud is a procurement-mandated reality in 2026 across EU member states, Kazakhstan, and several APAC jurisdictions. Building one means designing for substantive sovereignty — not just marketing claims — including encryption-key custody, supplier-chain transparency, audit-readiness, and regulator-aligned operational model.**

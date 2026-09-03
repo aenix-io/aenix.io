@@ -35,6 +35,7 @@ faq:
     a: "Yes. Compliance posture for DORA, NIS2, and sectoral regulations is part of the standard scope, covering the architecture, automation, and operational controls these frameworks require."
   - q: "What technologies do the engineers work with?"
     a: "Infrastructure-as-code with Terraform, OpenTofu, Pulumi, and Crossplane; observability with VictoriaMetrics, Grafana, and OpenTelemetry; Kubernetes orchestration; and, where a private cloud is in scope, Cozystack (KubeVirt for VMs and containers, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy)."
+hreflang_de: /de/dienstleistungen/cloud-engineering/
 ---
 
 **"Cloud engineering" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Ænix engagement applies senior engineers — not consultants — to the cloud architecture, automation, and operations work your team needs.**

@@ -44,6 +44,7 @@ faq:
     a: "Cozystack is the open-source CNCF platform foundation. Aenix sells Ænix Platform, a productized commercial offering based on Cozystack, plus platform-engineering services. Platform pricing tiers are Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, and Enterprise (custom)."
   - q: "How does an engagement start?"
     a: "It starts with a Platform Readiness Assessment that maps NIS2 and sectoral compliance gaps, multi-site architecture, OT/IT boundary design, smart-grid consolidation, and AI infrastructure for grid use cases. Phase 2 implementation typically spans 12-30 months for a multi-site energy platform."
+hreflang_de: /de/branchen/energie/
 ---
 
 **Energy operators in 2026 face a specific combination of pressures: NIS2 essential-entity classification (energy is in scope), sovereign-cloud requirements for critical-infrastructure data, edge compute at substations and generation sites, AI-driven grid optimization and forecasting, and the operational reality that hardware refresh cycles for grid infrastructure are measured in decades, not years. The architectural answer is a coherent platform that runs at HQ, regional control centres, and substation edge — under one operational model with NIS2-aligned controls.**

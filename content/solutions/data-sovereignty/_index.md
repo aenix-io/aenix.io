@@ -43,6 +43,7 @@ faq:
     a: "Cozystack is an Apache 2.0 CNCF project that runs KubeVirt VMs and containers on one Kubernetes API on the customer's chosen hardware in the chosen jurisdiction, with the customer holding cluster-level access and customer-controlled keys at every data layer. There is no per-core licensing and no provider lock-in, so sovereignty is structural rather than contractual."
   - q: "Can we run this under a public-sector procurement process?"
     a: "Yes. Aenix accepts RFI / RFP through standard procurement channels in EU member states and Kazakhstan. The 30-minute discovery call covers procedural fit and confirms which 14-day or 28-day variant matches your situation."
+hreflang_de: /de/loesungen/data-sovereignty/
 ---
 
 <!-- BLOCK 1: HERO -->

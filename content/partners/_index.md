@@ -5,6 +5,7 @@ hero_subtitle: "Resell an open cloud platform, up to 40% margin"
 language: "en"
 aliases:
   - /our-partners/
+hreflang_de: /de/partner/
 ---
 
 **Sell Ænix Platform — our turnkey commercial cloud-in-a-box — with up to 40% margin, deal protection, and direct access to the Ænix core team. For integrators, resellers, distributors, and regional cloud / sovereign-cloud builders.**

@@ -42,6 +42,7 @@ faq:
     a: "The cutover sequencing plan respects commitment expiration ladders. Repatriation cadence is aligned with AWS Reserved Instances, Azure RI, and Savings Plan expirations rather than fighting them, so workloads move as commitments lapse."
   - q: "What if our team cannot operate a private cloud platform afterwards?"
     a: "Two paths are scoped during the assessment: Aenix runs the platform under a managed-services arrangement, or Aenix builds your platform team's capacity through a structured platform-engineering engagement."
+hreflang_de: /de/loesungen/cloud-repatriation/
 ---
 
 <!-- BLOCK 1: HERO -->

@@ -42,6 +42,7 @@ faq:
     a: "Yes. Air-gapped, restricted-egress deployment is supported for public-sector classified, defence-adjacent, and critical-infrastructure workloads where the regulator requires it."
   - q: "Does Aenix have a model-provider bias?"
     a: "No. Aenix has no commercial relationship with any LLM provider. The architecture recommends the open-weight model and serving stack — vLLM, Triton, or alternatives — that fit the customer's data class, regulator, and inference economics."
+hreflang_de: /de/loesungen/sovereign-ai/
 ---
 
 <!-- BLOCK 1: HERO -->

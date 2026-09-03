@@ -5,6 +5,7 @@ hero_subtitle: "Hands-on advanced training on the Cozystack stack"
 language: "en"
 aliases:
   - /kubernetes-deep-dive-course/
+hreflang_de: /de/kubernetes-deep-dive/
 ---
 
 **Advanced Kubernetes course from Ænix. Engineers learn the same stack that powers Ænix Platform deployments — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, production-grade, taught by the engineers who maintain Cozystack.**

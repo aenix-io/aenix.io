@@ -3,6 +3,7 @@ title: "Ænix at conferences"
 description: "Conference talks by the Aenix team on Cozystack architecture, KubeVirt, GitOps, sovereign AI, and platform engineering — CloudFest, KubeCon, and KCDs."
 hero_subtitle: "Meet the Aenix team at CloudFest and KubeCon"
 language: "en"
+hreflang_de: /de/konferenzen/
 ---
 
 **The Ænix team speaks at Kubernetes, cloud, and platform-engineering conferences globally — sharing how Cozystack works, how Ænix Platform extends it for production cloud operations, and the architecture decisions behind sovereign / regulated cloud at scale.**

@@ -41,6 +41,7 @@ faq:
     a: "The Cozystack platform is free and open source. Aenix sells the productized Ænix Platform with support tiers starting at Basic $1,250/mo for 10 nodes, then Standard $3,000, Plus $5,500, and Enterprise custom, plus professional services for migration. VMware VCF pricing is quote-driven and non-public."
   - q: "Does Cozystack support GPUs for AI and VDI workloads?"
     a: "Yes, with the boundary stated plainly. NVIDIA vGPU is available for VMs where you hold the NVIDIA licence, and container workloads schedule through the NVIDIA GPU Operator with HAMi to share a card. Hard multi-tenant partitioning with MIG is on the roadmap rather than shipping, so an untrusted-tenant GPU product should not be planned around it yet."
+hreflang_de: /de/alternativen/vmware-alternative/
 ---
 
 <!-- BLOCK 1: HERO -->

@@ -3,6 +3,9 @@ title: "Case studies"
 description: "Nine Aenix deployments written up with numbers: GPU repatriation, Proxmox consolidation, a sovereign public cloud, a bank private cloud, GPU bursting, an AI platform as installer."
 hero_subtitle: "Real Aenix Platform deployments across hosting, AI, and academia"
 language: "en"
+hreflang_de: /de/case-studies/
+aliases:
+  - /kubefarm/
 ---
 
 **Nine deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, public references include regional hosting providers running Ænix Public Cloud Platform, platform R&D for ecosystem vendors, and tier-1 European bank engagements still under NDA.**

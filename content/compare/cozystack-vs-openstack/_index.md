@@ -40,6 +40,7 @@ faq:
     a: "Yes. Cozystack runs VMs through KubeVirt and containers through Kubernetes on a single API, so virtual machines and containers share the same control plane, networking (Cilium/eBPF), and storage (LINSTOR/DRBD)."
   - q: "Who supports a Cozystack migration from OpenStack?"
     a: "Aenix, the team behind the CNCF project Cozystack, offers the Ænix Platform plus migration services. Public Cloud Platform covers both cases: hosting providers modernizing off OpenStack, and large operators consolidating OpenStack at scale with a multi-region control plane."
+hreflang_de: /de/vergleichen/cozystack-vs-openstack/
 ---
 
 **Both are open-source private cloud platforms. Both Apache 2.0. Both production-proven. The difference is generation and operational footprint.**

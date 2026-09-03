@@ -41,6 +41,7 @@ faq:
     a: "Cozystack provides Tenant CRD multi-tenancy with Cilium (eBPF) and NetworkPolicy segmentation, customer-controlled encryption keys, air-gap deployment, and full audit logging. These map to the risk-management measures listed in Article 21(2) — access control, network security, business continuity, and the telemetry that makes Article 23 reporting windows achievable — giving sovereignty by architecture rather than by add-on."
   - q: "Who delivers the engagement?"
     a: "EU-based engineers with experience inside the same regulatory frameworks as your customers and with regulator-dialog experience. Recommendations reflect technical fit and regulatory alignment, with no hyperscaler partnership bias."
+hreflang_de: /de/loesungen/nis2-compliance/
 ---
 
 <!-- BLOCK 1 -->

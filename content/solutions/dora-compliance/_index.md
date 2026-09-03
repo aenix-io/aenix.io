@@ -42,6 +42,7 @@ faq:
     a: "The report names the recommended architecture with reasoning. Where a Cozystack-based architecture fits DORA's substantive requirements better than the alternative, the report explains why with named controls. Where it does not, Aenix says so. Cozystack is Apache 2.0 with no per-core licensing."
   - q: "How does this relate to NIS2 and GDPR work?"
     a: "The 28-day variant maps the same controls back to NIS2 where applicable to your sectoral scope and to GDPR. The architecture surface that satisfies DORA's substantive requirements largely also satisfies NIS2's, so the report does that mapping rather than asking you to repeat the work."
+hreflang_de: /de/loesungen/dora-compliance/
 ---
 
 <!-- BLOCK 1: HERO -->

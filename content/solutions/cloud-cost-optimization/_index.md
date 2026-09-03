@@ -42,6 +42,7 @@ faq:
     a: "An honest TCO model by account, service, and team; a quantified cost-leak inventory with named commitments and instance IDs; per-workload right-sizing recommendations; architectural cost decisions; a 12-month spend trajectory with confidence ranges; and a FinOps owner and process plan."
   - q: "Can we run this under a procurement process?"
     a: "Yes. Aenix accepts RFI and RFP through standard procurement channels in EU member states and Kazakhstan. The engagement is fixed-price with a single invoice; the assessment fee is credited toward Phase 2 implementation subject to scope."
+hreflang_de: /de/loesungen/cloud-kostenoptimierung/
 ---
 
 <!-- BLOCK 1: HERO -->

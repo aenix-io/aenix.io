@@ -19,6 +19,7 @@ offices:
       - "Registration Number: 10075938"
 aliases:
   - /contact-us/
+hreflang_de: /de/kontakt/
 ---
 
 **Book a discovery call to discuss Ænix Platform editions, your buyer profile, and engagement scope. Or write to us for partnership, press, or general inquiries.**

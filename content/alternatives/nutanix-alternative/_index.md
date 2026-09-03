@@ -38,6 +38,7 @@ faq:
     a: "Yes. Aenix is the team behind Cozystack and sells the productized Ænix Platform with enterprise support. Plans start at Basic $1,250/mo for up to 10 nodes, then Standard $3,000 and Plus $5,500, with an Enterprise Custom tier."
   - q: "What networking and storage does Cozystack use?"
     a: "Cozystack uses Cilium (eBPF) for networking and LINSTOR with DRBD for replicated block storage, both running on commodity hardware. This contrasts with Nutanix's integrated proprietary stack tied to its appliance model."
+hreflang_de: /de/alternativen/nutanix-alternative/
 ---
 
 **Nutanix HCI is operationally simple, mature, and integrated. The trade-offs: closed source, appliance-led lock-in, and a subscription model that follows similar pressure dynamics to VMware. For organizations seeking comparable VM-platform capabilities with open-source foundations and multi-tenant cloud-builder features — Cozystack is the realistic alternative.**

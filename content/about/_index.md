@@ -71,6 +71,7 @@ community_champions:
       linkedin: "mattia-eleuteri"
 aliases:
   - /about-us/
+hreflang_de: /de/ueber-uns/
 ---
 
 **Ænix is an open-core company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We created and maintain Cozystack — a CNCF project (Apache 2.0) — and commercialize it as three platforms on one engine: Ænix Public Cloud Platform for organisations selling cloud, Ænix Private Cloud Platform for regulated organisations running it for themselves, and Ænix AI Platform for GPU workloads.**

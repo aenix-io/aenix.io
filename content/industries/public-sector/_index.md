@@ -42,6 +42,7 @@ faq:
     a: "Yes. Capability transfer is a primary deliverable. Phase 2 implementation runs hardware-to-platform-to-operations with a documented exit path, including knowledge handover and runbooks, so the customer team operates the platform independently."
   - q: "What does Aenix sell on top of the open-source project?"
     a: "Aenix sells the Ænix Platform, a productized commercial offering based on Cozystack, plus services such as the Platform Readiness Assessment and implementation. Platform pricing tiers are Basic at $1,250/mo (10 nodes), Standard at $3,000, Plus at $5,500, and Enterprise Custom."
+hreflang_de: /de/branchen/oeffentlicher-sektor/
 ---
 
 **Public-sector and quasi-public organizations face a particular combination of constraints in 2026: procurement-mandated sovereignty (EU member states, Kazakhstan, several APAC jurisdictions), NIS2 compliance (essential entity scoping), data-localization rules, and increasing AI workload pressure on data classes that cannot leave the perimeter. The architectural answer is structurally sovereign, customer-controlled, and audit-ready — built on infrastructure the organization actually owns.**

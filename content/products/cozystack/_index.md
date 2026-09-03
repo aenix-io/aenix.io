@@ -37,6 +37,7 @@ faq:
     a: "Yes. Aenix offers Platform Readiness Assessments, build engagements, and managed engagements, with support tiers from Basic ($1,250/month per 10 nodes) up to Enterprise Custom. Direct support covers EU, DACH, and Central Asia time zones, with other regions via partners."
 aliases:
   - /cozystack/
+hreflang_de: /de/produkte/cozystack/
 ---
 
 **Cozystack is the open-source cloud platform Ænix created and maintains, and a CNCF project. It runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own — under one Kubernetes-native control plane with multi-tenant isolation. Apache 2.0 license, currently CNCF Sandbox (CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices badge.**

@@ -44,6 +44,7 @@ faq:
     a: "No. The recommended foundation, Cozystack, is open source under Apache 2.0 with no per-CPU or per-core licensing, so the platform is one you own without vendor-roadmap lock-in. Aenix productizes it as the Ænix Platform and sells services on top, but the underlying project stays open."
   - q: "Private cloud or hybrid cloud — which should we choose?"
     a: "Most modern deployments end up hybrid, with selected workloads on private infrastructure and others remaining in public cloud. Pure private cloud is a specific choice driven by sovereignty or cost economics. The engagement assesses which model fits your workloads, regulations, and budget."
+hreflang_de: /de/dienstleistungen/private-cloud-consulting/
 ---
 
 <!-- BLOCK 1 -->

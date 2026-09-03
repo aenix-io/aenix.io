@@ -4,6 +4,7 @@ description: "Articles, deep dives, news, and field notes from the Aenix team â€
 hero_subtitle: "Deep dives on sovereign cloud, Kubernetes, and platform engineering"
 bodyClass: "page-blog"
 language: "en"
+hreflang_de: /de/blog/
 ---
 
 Field notes from the team building Cozystack and the Ã†nix cloud platform products.

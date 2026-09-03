@@ -41,6 +41,7 @@ faq:
     a: "Yes. The platform provides AI infrastructure for routing optimization, demand forecasting, and predictive maintenance, running those workloads alongside VMs and containers on the same Kubernetes API."
   - q: "Is it a good fit for a VMware exit or OpenStack modernization?"
     a: "Yes. Cozystack is Apache 2.0 with no per-CPU or per-core licensing and runs VMs via KubeVirt, making it a common target for transport operators migrating off VMware or modernizing OpenStack-based infrastructure."
+hreflang_de: /de/branchen/transport-logistik/
 ---
 
 **Transport and logistics is in NIS2 scope as an essential-entity sector (Annex I, covering air, rail, water and road), and it is the sector where the compute follows the freight: a terminal, a depot, a marshalling yard and a vehicle each need to keep working when the link to headquarters does not. The architectural consequence is that site autonomy, not central elegance, is the property the platform is judged on.**

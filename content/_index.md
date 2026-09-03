@@ -4,6 +4,7 @@ description: "Aenix Platform — turnkey cloud-in-a-box on Cozystack (CNCF). Thr
 language: "en"
 hero_h1: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering."
 hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-source Cozystack project we created and maintain (CNCF). Three platforms on one engine: for providers selling cloud, for regulated organisations running their own, and for teams running AI on their own GPUs."
+hreflang_de: /de/
 ---
 
 <div class="band band--tint">

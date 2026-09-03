@@ -33,6 +33,7 @@ faq:
     a: "It goes further, but be precise about how far. Proxmox VE offers GPU passthrough, one card to one guest. Cozystack schedules GPUs through the NVIDIA GPU Operator and uses HAMi to share a card across container workloads, and NVIDIA vGPU is available for VMs where you hold the NVIDIA licence. Hard multi-tenant partitioning with MIG is on the roadmap, not shipping today, so do not plan an untrusted-tenant GPU product around it yet."
   - q: "What does Aenix offer on top of Cozystack?"
     a: "Aenix is the team behind Cozystack and sells the productized Ænix Platform plus services. The Public Cloud Platform is a turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox, with support tiers starting around $1,250/month."
+hreflang_de: /de/vergleichen/cozystack-vs-proxmox/
 ---
 
 **Different scales. Different design centers. Both open source.**

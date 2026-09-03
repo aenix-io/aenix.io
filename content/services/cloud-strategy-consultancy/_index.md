@@ -33,6 +33,7 @@ faq:
     a: "Yes. The Phase 2 implementation roadmap is an Aenix-deliverable build plan. Aenix sells the productized Ænix Platform plus services on top, with pricing tiers Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, and Enterprise Custom."
   - q: "What platform does the recommended open-source path use?"
     a: "Cozystack, an Apache 2.0 CNCF project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium (eBPF) networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. There is no per-CPU or per-core licensing."
+hreflang_de: /de/dienstleistungen/cloud-strategy-consultancy/
 ---
 
 **Cloud strategy is a question architects and senior engineers can answer better than management consultants. Ænix runs cloud strategy engagements as part of the same Platform Readiness Assessment that delivers actionable architecture — written report with named workloads, costs, and timelines, not a 200-page transformation plan.**

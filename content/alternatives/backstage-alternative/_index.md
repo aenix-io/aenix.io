@@ -35,6 +35,7 @@ faq:
     a: "Yes. The platform decision (Cozystack vs OpenShift vs vanilla Kubernetes) is independent of the portal decision (Backstage vs Cozystack Dashboard vs Port vs none). Backstage runs as a tenant Kubernetes workload pointing at the capabilities Cozystack provides, and the developer self-service layer of Ænix Private Cloud Platform can integrate the Backstage UI as its front-end."
   - q: "How do I decide whether I need a portal?"
     a: "Through a focused architecture review. Aenix runs this as part of its Platform Readiness Assessment, which answers whether you need a portal at all and, if so, which one fits your operational model and team size."
+hreflang_de: /de/alternativen/backstage-alternative/
 ---
 
 **Backstage (CNCF Incubating) is excellent at what it is: a service catalog and developer portal with a strong plugin ecosystem. The misuse is treating it as the platform itself, when it's the UI/discoverability layer on top of a platform. If you've adopted Backstage and self-service paths still take weeks — Backstage isn't the problem; the platform underneath is.**

@@ -41,6 +41,7 @@ faq:
     a: "Yes. Computer-science and engineering departments use it to teach Kubernetes, KubeVirt, GitOps, and observability. Because it is open source (Apache 2.0) and a CNCF project, students can run it on personal hardware and gain CNCF-ecosystem familiarity that matches production reality."
   - q: "How does Aenix structure university engagements?"
     a: "Aenix offers academic discounts on commercial support tiers, phased engagement aligned to research-grant cycles, and explicit capacity transfer so academic IT teams operate the platform after build. Engagements can run through EU TED and member-state public-procurement portals and serve multi-institution consortia."
+hreflang_de: /de/branchen/universitaeten/
 ---
 
 **Universities and research institutions in 2026 need cloud-native infrastructure for three overlapping missions: serious research computing (especially AI/ML), reproducible research environments for publication, and curriculum delivery for cloud-native courses. Cozystack provides a single open-source foundation that serves all three — multi-tenant for departments, labs, and student cohorts; KubeVirt for legacy and modern workloads; GPU-as-a-service for AI research; air-gapped support where research data sovereignty matters.**

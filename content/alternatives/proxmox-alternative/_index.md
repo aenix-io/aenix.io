@@ -35,6 +35,7 @@ faq:
     a: "Beyond KubeVirt VMs and Kubernetes containers, Cozystack provides first-class managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ), S3-compatible object storage, GPU as a service (NVIDIA vGPU for VMs, and the NVIDIA GPU Operator with HAMi to share a card across container workloads; MIG partitioning is roadmap), a multi-tenant self-service portal, and Velero-based backup with per-app point-in-time recovery."
   - q: "Is Cozystack just a better Proxmox?"
     a: "No. It targets a different architectural problem. For SMB-scale, single-tenant virtualization, Proxmox VE remains a strong, simpler choice. Cozystack is the upgrade path when you need a multi-tenant cloud, service-provider operations, or regulated-enterprise isolation while keeping an open-source operational model."
+hreflang_de: /de/alternativen/proxmox-alternative/
 ---
 
 **Proxmox VE is excellent for what it is: an open-source KVM-based virtualization platform optimized for small-to-mid-size deployments. The architectural moment many teams reach is when production grows past Proxmox's design center — multi-tenancy at scale, managed databases, AI/GPU workloads, regulated multi-customer cloud — and the operational cost of running Proxmox at that scale exceeds the licensing savings.**

@@ -43,6 +43,7 @@ faq:
     a: "No. Cozystack is Apache 2.0 with no per-CPU or per-core licensing, which avoids vendor lock-in across the long hardware refresh cycles typical in telecom. Aenix sells the productized Ænix Platform and services on top."
   - q: "How long does a telecom platform engagement take?"
     a: "Aenix starts with a Platform Readiness Assessment covering multi-site architecture, edge readiness, sovereign-cloud packaging, NIS2 controls, and telco AI use cases. Phase 2 implementation typically spans 6-24 months for a multi-site telecom platform."
+hreflang_de: /de/branchen/telco/
 ---
 
 **Telecom operators in 2026 face an architectural inflection point: legacy NFV environments aging out, edge-compute demands growing, sovereign-cloud branded products launching across the sector, AI workloads on customer data, and NIS2 essential-entity compliance. The architectural answer is a coherent platform that runs at core data centres, regional sites, and customer edge — under one operations model.**

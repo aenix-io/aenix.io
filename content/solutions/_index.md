@@ -3,6 +3,7 @@ title: "Solutions"
 description: "Aenix solutions — trigger-led entry points for cloud platform engagements: DORA, NIS2, sovereignty, sovereign AI, private LLM, repatriation, DR, hybrid cloud."
 hero_subtitle: "Start from the problem that brought you here"
 language: "en"
+hreflang_de: /de/loesungen/
 ---
 
 **Ænix builds and runs cloud platforms on hardware you control — for organisations that need real cloud infrastructure without a hyperscaler underneath it. People arrive here for one of a handful of reasons: a regulator (DORA, NIS2), a sovereignty requirement, an AI workload that cannot leave the building, a cloud bill that stopped making sense, a VMware renewal, a continuity obligation, or developers waiting weeks for an environment. Pick the one that matches; the page gives you the architecture, the Ænix platform it maps to and what an engagement looks like.**

@@ -3,6 +3,7 @@ title: "Industries"
 description: "Aenix industry pages: the regulatory trigger, the architecture pattern and the Aenix platform that fits finance, public sector, telco, industry and hosting."
 hero_subtitle: "Regulatory triggers and architecture patterns, mapped to your sector"
 language: "en"
+hreflang_de: /de/branchen/
 ---
 
 **Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix platform that fits. Bank engagements stay anonymous until mid-2027, but [nine deployments are written up in full](/case-studies/) with their architecture and numbers.**

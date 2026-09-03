@@ -38,6 +38,7 @@ faq:
     a: "Yes. Cozystack provides AI infrastructure for analytics and learning-pattern models that run on local, district-controlled data, which is the relevant option when hyperscaler AI endpoints are not acceptable for student-data handling."
   - q: "How is the K-12 case different from universities?"
     a: "K-12 districts handle student data under FERPA or GDPR plus national rules, serve tens of thousands of students across many schools, and operate on long budget cycles, so the multi-tenant district/school model and residency requirements differ from a university's research and departmental computing needs."
+hreflang_de: /de/branchen/k12-bildung/
 ---
 
 **K-12 education has different infrastructure needs than universities. School districts handle student data with strict residency / privacy regulations (FERPA in US, GDPR + national rules in EU), often serve 10,000-100,000+ students across many schools, and operate on long budget cycles. Most K-12 districts are well-served by hyperscaler-managed services. The exception cases — large districts with sovereignty mandates, AI/EdTech platforms processing student data on-premise, district consortia building shared infrastructure — are where Cozystack can fit.**

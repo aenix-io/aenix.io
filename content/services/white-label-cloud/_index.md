@@ -37,6 +37,7 @@ faq:
     a: "Cozystack runs virtual machines and containers on one Kubernetes API using KubeVirt for VMs, Cilium (eBPF) for networking, and LINSTOR/DRBD for storage. Multi-tenancy is handled through the Tenant CRD, which underpins the reseller hierarchy."
   - q: "How is billing handled for my customers?"
     a: "White-label clouds built by Aenix ship with production-ready WHMCS-integrated billing, available in two integration modes, so you can bill your own customers under your brand alongside the white-labelable Cozystack Dashboard."
+hreflang_de: /de/dienstleistungen/white-label-cloud/
 ---
 
 **Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the customer-relationship advantages MSPs already have. White-label cloud — branded with the MSP's identity, run on shared or dedicated infrastructure — is the realistic answer. Ænix builds these end-to-end.**

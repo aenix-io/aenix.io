@@ -40,6 +40,7 @@ faq:
     a: "Aenix sells Ænix Platform, a productized distribution with support tiers: Basic at $1,250/mo for 10 nodes, Standard at $3,000, Plus at $5,500, and a custom Enterprise tier. Cozystack itself remains free and open source under Apache 2.0."
   - q: "Who is the OpenShift alternative aimed at?"
     a: "Organizations pursuing open-source-first procurement, service providers running multi-customer clouds where per-CPU subscription economics don't fit, and regulated enterprises that want enterprise capabilities without lock-in to the Red Hat / IBM ecosystem."
+hreflang_de: /de/alternativen/openshift-alternative/
 ---
 
 **OpenShift is a strong commercial Kubernetes distribution with mature enterprise tooling. The trade-off is the Red Hat subscription model and tight coupling to the Red Hat / IBM ecosystem. For organizations seeking an open-source-first foundation with comparable capabilities — including KubeVirt-based virtualization and multi-tenancy — Cozystack is the realistic alternative.**

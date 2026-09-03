@@ -33,6 +33,7 @@ faq:
     a: "Cozystack is open source and Aenix does not sell licenses, so building something a customer does not need would damage trust. Being honest upfront and engaging only on right-fit projects protects both the customer and Aenix's reputation."
   - q: "What does the free fit-check call cover?"
     a: "A 15-minute, no-pressure conversation where Aenix gives an honest answer on whether Cozystack fits your situation. If it does not, you get a recommendation for a simpler alternative; if it might, the next step is an optional fixed-price architecture review."
+hreflang_de: /de/branchen/mittelstand/
 ---
 
 **Cozystack is purpose-built for service providers, regulated enterprises, and multi-tenant cloud builders. For SMB and small mid-market organizations (under ~100 employees, single-tenant, simple infrastructure), Cozystack is over-engineering. The honest answer matters more than the sales pitch.**

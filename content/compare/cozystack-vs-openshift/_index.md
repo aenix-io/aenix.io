@@ -39,6 +39,7 @@ faq:
     a: "Yes. Cozystack has been a CNCF Sandbox project since 28 February 2025, with CNCF Incubating status expected in late summer 2026. It is released under Apache 2.0."
   - q: "When should we choose OpenShift Virtualization over Cozystack?"
     a: "If you already run Red Hat OpenShift and value the existing Red Hat support relationship and broad platform footprint, OpenShift Virtualization fits naturally. Cozystack is the stronger fit when you want open-source licensing, a focused operational footprint, or a service-provider model."
+hreflang_de: /de/vergleichen/cozystack-vs-openshift/
 ---
 
 **Both KubeVirt-based. Different commercial models, different operational footprints.**

@@ -39,6 +39,7 @@ faq:
     a: "Cozystack itself is open source under Apache 2.0 and free to run on your own hardware, with no per-CPU, per-VM or per-core meter — the cost is hardware plus the platform team. Aenix support tiers for organizations running Cozystack themselves start from $1,250/month per 10 nodes on a published price list; Aenix Private Cloud Platform programmes for regulated estates are quoted per RFP after scoping."
   - q: "Can Cozystack run both virtual machines and containers?"
     a: "Yes. Cozystack uses KubeVirt to run KVM-based VMs (with live migration, snapshots, and templates) alongside Kubernetes containers on a single Kubernetes API, so you do not need separate VM and container platforms."
+hreflang_de: /de/loesungen/private-cloud/
 ---
 
 <!-- BLOCK 1: HERO -->

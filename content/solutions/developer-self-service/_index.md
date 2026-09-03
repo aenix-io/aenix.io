@@ -34,6 +34,7 @@ faq:
     a: "Discovery is a free 30-minute call. Assessment runs 14-28 days within a Platform Readiness Assessment. The build engagement spans 1-6 months depending on how many golden paths are in scope and the maturity of the existing platform."
   - q: "Is there vendor lock-in?"
     a: "No. The capability is built on Cozystack, an open-source CNCF project licensed under Apache 2.0 with no per-CPU or per-core licensing. The golden paths and platform layer use standard Kubernetes APIs, so the foundation remains portable."
+hreflang_de: /de/loesungen/developer-self-service/
 ---
 
 **One of the most expensive things in most engineering organizations is the wait time between "team needs an environment" and "team has an environment." When that gap is days or weeks, product velocity decays measurably; when it's hours, the platform investment compounds for years.**

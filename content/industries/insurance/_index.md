@@ -42,6 +42,7 @@ faq:
     a: "Aenix builds platforms for insurance organizations across the EU, DACH, and Central Asia, supporting per-market data-residency requirements for multi-jurisdictional carriers and reinsurers."
   - q: "What does it cost?"
     a: "The Ænix Platform is offered in tiers: Basic at $1,250/mo for 10 nodes, Standard at $3,000, Plus at $5,500, and Enterprise on a custom basis. Cozystack itself is open source under Apache 2.0 with no licensing fees."
+hreflang_de: /de/branchen/versicherung/
 ---
 
 **Insurance carriers and reinsurers in 2026 face overlapping pressures: DORA enforcement (in force January 2025), GenAI-driven claims-processing transformation, sectoral regulator scrutiny on ICT third-party concentration, and increasing data-residency requirements per market. The architectural answer is a coherent platform with sovereignty, audit-readiness, and AI capability built in — not bolted on.**

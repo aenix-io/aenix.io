@@ -40,6 +40,7 @@ faq:
     a: "Engagements include structured knowledge transfer throughout, named in-house owners, and runbook authoring. By the end of the build phase your team operates the platform without Aenix. An optional managed-services arrangement extends support if needed."
   - q: "How does an engagement typically start?"
     a: "Most engagements begin with a free 30-minute discovery call to confirm fit and stage, followed by a 14-28 day Platform Readiness Assessment that produces a written target architecture and roadmap. The build-versus-managed decision is informed by the assessment's capacity workstream."
+hreflang_de: /de/dienstleistungen/platform-engineering/
 ---
 
 <!-- BLOCK 1: HERO -->

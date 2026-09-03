@@ -5,6 +5,7 @@ robots: "noindex, nofollow"
 language: "en"
 page_type: "flag-page"
 hide_closing_cta: true
+hreflang_de: /de/ressourcen/dora-compliance-checkliste/thank-you/
 ---
 
 **Thank you — your download is ready.** The DORA Compliance Cloud Architecture Checklist is below. We've also sent a copy to the email you provided.

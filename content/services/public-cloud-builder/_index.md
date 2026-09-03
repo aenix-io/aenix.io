@@ -40,6 +40,7 @@ faq:
     a: "The Public Cloud Platform is the productized software foundation — multi-tenancy, the Cozystack Dashboard, WHMCS billing, the installer — bought from a published price list from $1,250/month per 10 nodes. The public cloud builder service is the engineering and go-to-market work around it: architecture for your estate, product-readiness, pricing and onboarding design. Multi-region operator builds are quoted per RFP."
   - q: "How long until first customers are onboarded?"
     a: "After a free 30-minute discovery call, the architecture and product-readiness assessment runs 4-8 weeks, followed by a 6-18 month implementation that builds the platform, onboarding workflows, and the first customer cohort. An optional managed-services phase can cover the early ramp."
+hreflang_de: /de/dienstleistungen/public-cloud-builder/
 ---
 
 **Hosting providers, telcos, and regional operators in 2026 face the question: how do we offer a credible cloud product to enterprise customers without becoming a hyperscaler? Demand for sovereign, regional, and specialty cloud is rising, but shipping one means solving multi-tenancy, billing, and self-service operations — not just standing up VMs.**

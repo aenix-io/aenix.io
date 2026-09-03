@@ -35,6 +35,7 @@ faq:
     a: "Yes. The Ænix Public Cloud Platform ships with migration tooling from VMware, OpenStack, and Virtuozzo, allowing providers to move existing customer workloads onto the new platform."
   - q: "How is multi-tenant customer isolation handled?"
     a: "Cozystack provides production-grade isolation through a Tenant CRD, giving each customer a bounded, isolated environment on shared infrastructure — the foundation for selling cloud products to many customers safely."
+hreflang_de: /de/branchen/hosting-anbieter/
 ---
 
 **Hosting providers in 2026 face customer demand for cloud capabilities competitive with hyperscalers but with the customer-relationship advantages and pricing flexibility that hosting providers already have. The architectural answer is a Kubernetes-native platform with multi-tenant customer isolation, billing integration, and a service catalog beyond VMs — Cozystack's design center.**

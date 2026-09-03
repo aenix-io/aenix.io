@@ -45,6 +45,7 @@ faq:
     a: "Engagement starts with a Platform Readiness Assessment (14-28 days) producing workload classification, a hybrid architecture target, a cross-substrate operations model, and migration sequencing. Phase 2 implementation has Aenix engineers build the platform end-to-end, typically over 6-18 months."
   - q: "What technology underpins the platform?"
     a: "Cozystack uses KubeVirt to run virtual machines and containers on one Kubernetes API, Cilium (eBPF) for networking, LINSTOR/DRBD for replicated storage, SeaweedFS for S3-compatible object storage, and a Tenant CRD for multi-tenancy. Aenix productizes it as three platforms on the same engine — Public Cloud Platform, Private Cloud Platform and AI Platform — plus engineering services."
+hreflang_de: /de/loesungen/hybrid-cloud/
 ---
 
 <!-- BLOCK 1 -->
