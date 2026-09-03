@@ -167,7 +167,7 @@ faq:
 </div>
 </div>
 </div>
-<div class="ws-wrap ws-cta-center"><a class="cta-primary cta-accent" href="#register">Зарегистрироваться</a></div>
+<div class="ws-wrap ws-cta-center"><a class="cta-primary cta-accent" href="#register">Подсказать город</a></div>
 </section>
 
 <section class="ws-section ws-agenda" id="program" aria-labelledby="ws-agenda-h">
@@ -209,7 +209,7 @@ faq:
 <p class="ws-outcome__text"><strong>Материалы и шпаргалки</strong> для работы дома — и месяц поддержки после воркшопа.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Зарегистрироваться</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Подсказать город</a></div>
 </div>
 </section>
 
@@ -251,7 +251,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Чат, где на вопросы отвечают мейнтейнеры Cozystack.</strong></span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Возможность получить сертификат Aenix Certification for Cozystack — Fundamentals</strong> — бесплатно.</span></li>
 </ul>
-<div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Зарегистрироваться</a></div>
+<div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Подсказать город</a></div>
 </div>
 <div class="ws-after__stack" aria-hidden="true">
 <div class="ws-after__tile ws-after__tile--env"><span class="ws-after__ic">{{< ws-icon name="cal30" >}}</span><span class="ws-after__tile-label">Тестовая среда на 30 дней</span></div>
@@ -292,8 +292,8 @@ faq:
 <section class="ws-section ws-register" id="register" aria-labelledby="ws-register-h">
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
-<h2 class="ws-h2 ws-h2--light" id="ws-register-h">Регистрация</h2>
-<p class="ws-register__lead">Участие бесплатное — при условии регистрации.</p>
+<h2 class="ws-h2 ws-h2--light" id="ws-register-h">В каком городе провести следующий?</h2>
+<p class="ws-register__lead">Августовский тур 2026 года завершён. Напишите свой город — сообщим, когда назначим дату. Участие останется бесплатным.</p>
 <div class="ws-register__form">
 
 {{< pipedrive-form type="workshop" >}}

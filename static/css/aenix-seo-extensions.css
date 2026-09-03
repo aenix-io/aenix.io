@@ -5585,6 +5585,9 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 /* Confirmed cities: brighter treatment (status also carried by icon + text) */
 .ws-city--confirmed { border-color: rgba(1, 165, 255, 0.4); background: linear-gradient(180deg, rgba(1, 165, 255, 0.06), var(--ws-panel)); }
 .ws-city--confirmed .ws-city__icon { color: var(--ws-cyan); }
+.ws-city--completed { border-color: rgba(148, 163, 184, 0.35); opacity: 0.82; }
+.ws-city--completed .ws-city__icon,
+.ws-city--completed .ws-city__cta { color: var(--aenix-text-muted); }
 .ws-city--pending .ws-city__date { color: var(--aenix-text-muted); }
 
 /* ==========================================================================
