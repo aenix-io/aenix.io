@@ -127,7 +127,7 @@ Modellieren Sie die Fünf-Jahres-Kosten gegen Ihre aktuelle Plattform mit dem **
 ## Wie wir Migrationen begleiten
 
 1. **Discovery-Call** — Passung, Umfang und Zeitrahmen klären
-2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — Bestandsaufnahme, Zielarchitektur, Kohortenplan, Risikoregister. Auch der Punkt, an dem ein Nein noch günstig ist.
+2. **Platform Readiness Assessment** (14 oder 28 Tage, Festpreis vorab vereinbart) — Bestandsaufnahme, Zielarchitektur, Kohortenplan, Risikoregister. Auch der Punkt, an dem ein Nein noch günstig ist.
 3. **Pilot-Kohorte** (3-6 Monate) — erste Kohorte mit Ænix-Ingenieuren im Team migriert; daraus entstehen die Runbooks für den Rest
 4. **Rollende Migration** — Kohorte für Kohorte mit Parallel-Run-Validierung, Quell-Hardware wandert nach, sobald sie frei wird
 5. **Decommission** — Abschaltung der Quellplattform nach Final-Validierung

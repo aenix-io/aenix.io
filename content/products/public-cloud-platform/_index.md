@@ -173,7 +173,7 @@ Bank and telco deployments are NDA-protected until mid-2027. One commercial publ
 ## Engagement structure
 
 - **Discovery call** (30 minutes, free) — confirm fit
-- **Platform Readiness Assessment** (5-10 days, fixed price) — current-state and target architecture, migration roadmap, risk register
+- **Platform Readiness Assessment** (14 or 28 days, fixed price) — current-state and target architecture, migration roadmap, risk register
 - **Pilot** (3-6 months, operator scale) — one region, one tenant cohort, one product line
 - **Full build** — weeks at provider scale via the productized installer; 9-18 months for multi-region production with customer onboarding workflows and operations training
 - **Managed operations** (optional) — Ænix runs the control plane under SLA

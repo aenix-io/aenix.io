@@ -48,7 +48,7 @@ quick_facts:
   - label: "Skalierungsreferenz"
     value: "Cozystack-Architektur in Produktion bis 800 Nodes / ~3,2 PB validiert"
   - label: "Engagement"
-    value: "Assessment (5-10 Tage) → 4-wöchiger Pilot → Migration (Enterprise-Tier: vollständig von Aenix gemanagt)"
+    value: "Assessment (14 oder 28 Tage) → 4-wöchiger Pilot → Migration (Enterprise-Tier: vollständig von Aenix gemanagt)"
 quick_facts_source: "[Cozystack-Doku](https://cozystack.io), [CNCF Landscape](https://landscape.cncf.io), [Oracle Partitioning Policy](https://www.oracle.com/assets/partitioning-070609.pdf)"
 faq:
   - q: "Können wir AIX-Binaries per Lift-and-Shift auf x86 übernehmen?"
@@ -62,7 +62,7 @@ faq:
   - q: "Kann unser bestehendes Team die Plattform betreiben, obwohl uns AIX-Spezialisten fehlen?"
     a: "Genau das ist der Sinn des Ziels. Die Plattform wird mit Kubernetes-/DevOps-Kompetenzen betrieben — dem Talentpool, den man tatsächlich einstellen kann — statt mit knappen AIX/PowerVM-Spezialisten. Aenix bietet Schulungen (Kubernetes Deep Dive) und im Enterprise-Tier vollständig gemanagte Migration und 24×7-Betrieb."
   - q: "Was kostet die Migration und wie läuft sie ab?"
-    a: "Sie beginnt mit einem festpreisbasierten Platform Readiness Assessment (5-10 Tage) und einem optionalen 4-wöchigen Piloten, der auf das erste Support-Jahr angerechnet wird. Der Migrations-Support skaliert nach Tier: Dokumentation (Basic), begleitet (Plus) oder vollständig von Aenix gemanagt (Enterprise) — der Tier, den Banken üblicherweise wählen. Siehe die [Preisseite](/de/preise/)."
+    a: "Sie beginnt mit einem festpreisbasierten Platform Readiness Assessment** (14 oder 28 Tage) und einem optionalen 4-wöchigen Piloten, der auf das erste Support-Jahr angerechnet wird. Der Migrations-Support skaliert nach Tier: Dokumentation (Basic), begleitet (Plus) oder vollständig von Aenix gemanagt (Enterprise) — der Tier, den Banken üblicherweise wählen. Siehe die [Preisseite](/de/preise/)."
   - q: "Läuft das air-gapped für einen regulierten Bankbetrieb?"
     a: "Ja. Air-Gap-Installation, White-Labeling, das Billing-/Chargeback-Modul, Backup und GPU-Sharing sind Teil des Enterprise-Angebots. Die Plattform ist on-prem-first und für souveräne, kundenkontrollierte Infrastruktur gebaut — siehe [Datensouveränität](/de/loesungen/data-sovereignty/) und [Finanzdienstleistungen](/de/branchen/finanzdienstleistungen/)."
 ---
@@ -225,7 +225,7 @@ Die Zielarchitektur ist für lineares horizontales Wachstum ausgelegt — jeder 
 
 ## So arbeitet Ænix
 
-- **Assessment (5-10 Tage)** — [Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/): AIX/Power-Bestand, Zielarchitektur, Workload-Klassifizierung, Oracle-Plan, Cutover-Sequenzierung, Risiko-Register.
+- **Assessment (14 oder 28 Tage)** — [Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/): AIX/Power-Bestand, Zielarchitektur, Workload-Klassifizierung, Oracle-Plan, Cutover-Sequenzierung, Risiko-Register.
 - **Pilot (4 Wochen)** — Cozystack als funktionierendes Framework gegen Ihre realen Anforderungen aufgesetzt; Erfolgskriterien vorab vereinbart. Der Pilot wird auf das erste Support-Jahr angerechnet.
 - **Migration** — Kohorten-Durchführung mit Parallelbetrieb-Validierung. Im **Enterprise-Tier** wird die Migration vollständig von Ænix gemanagt; Legal/Procurement läuft über Ihre Vorlagen (Ausschreibungen, Formulare).
 - **Betrieb (optional)** — gemanagter Cozystack-Betrieb, 24×7, nach dem Cutover.

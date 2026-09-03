@@ -19,9 +19,9 @@ quiz:
     - q: "For VMware→Cozystack migration of a 100–1000 VM estate, what timeline is given?"
       options:
         - { text: "1-2 weeks elapsed (rapid in-place replatform)", correct: false }
-        - { text: "8-18 months elapsed; positive economics after Year 2", correct: true }
+        - { text: "7-25 months depending on estate size; positive economics after Year 2", correct: true }
         - { text: "36+ months elapsed (long-tail decommission)", correct: false }
-      explanation: "VMware → Cozystack: 8-18 months elapsed for 100-1000 VM estate (assessment + destination build + cohort migration). Net positive economically after Year 2 typically, accounting for migration cost vs avoided licensing."
+      explanation: "VMware → Cozystack: 7-10 months under 100 VMs, 10-16 months for 100-500, 16-25 months for 500-2000 VM estate (assessment + destination build + cohort migration). Net positive economically after Year 2 typically, accounting for migration cost vs avoided licensing."
     - q: "In the decision tree, who should choose Nutanix over Cozystack?"
       options:
         - { text: "HCI appliance preference + existing Nutanix relationship", correct: true }
@@ -91,7 +91,7 @@ In 2026 the realistic shortlist for production virtualization platforms includes
 
 Migrating between these platforms is not free. Realistic cost estimates:
 
-- **VMware → Cozystack:** 8-18 months elapsed for 100-1000 VM estate; assessment + destination build + cohort migration. Net positive after Year 2 typically.
+- **VMware → Cozystack:** 7-10 months for an estate under 100 VMs, 10-16 months for 100-500, 16-25 months for 500-2000; assessment + destination build + cohort migration. Net positive after Year 2 typically.
 - **VMware → Nutanix:** Similar timeline; uses Nutanix Move tooling.
 - **Nutanix → Cozystack:** 6-12 months; KVM image compatibility helps.
 - **Cozystack → VMware/Nutanix:** Rare in 2026 (reverse migration).

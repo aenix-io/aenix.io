@@ -160,7 +160,7 @@ This is a deliberate sequence: **technology first, community second, commercial 
 Ænix engagements typically follow this sequence:
 
 1. **Discovery call** (free, 30 min) — confirm fit, scope, regulatory context, edition match
-2. **Platform Readiness Assessment** (5-10 days, fixed price agreed up front) — current-state audit, gap analysis, edition recommendation, migration roadmap
+2. **Platform Readiness Assessment** (14 or 28 days, fixed price agreed up front) — current-state audit, gap analysis, edition recommendation, migration roadmap
 3. **Pilot engagement** (3-6 months, quoted per RFP) — defined slice, validated business case, customer-side learning
 4. **Full platform build** — weeks for Public Cloud Platform with productized installer; 9-18 months for Public Cloud / Enterprise full deployments, quoted per RFP
 5. **Managed operations** (ongoing retainer) — optional post-deployment

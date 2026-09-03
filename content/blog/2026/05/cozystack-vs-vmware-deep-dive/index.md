@@ -114,7 +114,7 @@ VMware → Cozystack migration in production:
 6. **DR cutover** — Velero replaces SRM; tested per cohort.
 7. **VMware decommission** — staged as cohorts complete.
 
-Typical elapsed time for a 100-1000 VM estate: 8-18 months, assessment through decommission. The driver is rarely raw copy speed — it is regression testing and the parallel-run windows application owners will agree to.
+Typical elapsed time: 7-10 months under 100 VMs, 10-16 months for 100-500 and 16-25 months for 500-2000, assessment through decommission. The driver is rarely raw copy speed — it is regression testing and the parallel-run windows application owners will agree to.
 
 ## When the comparison matters
 

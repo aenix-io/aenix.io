@@ -49,7 +49,7 @@ quick_facts:
   - label: "Scale reference"
     value: "Cozystack architecture validated in production to 800 nodes / ~3.2 PB"
   - label: "Engagement"
-    value: "Assessment (5-10 days) → 4-week pilot → migration (Enterprise tier: fully managed by Aenix)"
+    value: "Assessment (14 or 28 days) → 4-week pilot → migration (Enterprise tier: fully managed by Aenix)"
 quick_facts_source: "[Cozystack docs](https://cozystack.io), [CNCF Landscape](https://landscape.cncf.io), [Oracle Partitioning Policy](https://www.oracle.com/assets/partitioning-070609.pdf)"
 faq:
   - q: "Can we lift-and-shift AIX binaries to x86?"
@@ -63,7 +63,7 @@ faq:
   - q: "Can our existing team operate it, given we lack AIX specialists?"
     a: "That is the point of the destination. The platform is operated with Kubernetes/DevOps skills — the talent pool you can actually hire — instead of scarce AIX/PowerVM specialists. Aenix provides training (Kubernetes Deep Dive) and, on the Enterprise tier, fully managed migration and 24×7 operations."
   - q: "What does the migration cost, and how is it engaged?"
-    a: "It starts with a fixed-price Platform Readiness Assessment (5-10 days) and an optional 4-week pilot that counts toward the first year of support. Migration support scales by tier: documentation (Basic), guided (Plus), or fully managed by Aenix (Enterprise) — the tier banks typically take. See the [pricing page](/pricing/)."
+    a: "It starts with a fixed-price Platform Readiness Assessment (14 or 28 days) and an optional 4-week pilot that counts toward the first year of support. Migration support scales by tier: documentation (Basic), guided (Plus), or fully managed by Aenix (Enterprise) — the tier banks typically take. See the [pricing page](/pricing/)."
   - q: "Will this run air-gapped for a regulated banking estate?"
     a: "Yes. Air-gap installation, white-labeling, the billing/chargeback module, backup, and GPU sharing are part of the Enterprise offering. The platform is on-prem-first and built for sovereign, customer-controlled infrastructure — see [Data sovereignty](/solutions/data-sovereignty/) and [Financial services](/industries/financial-services/)."
 ---
@@ -226,7 +226,7 @@ The destination architecture is engineered for linear horizontal growth — each
 
 ## How Ænix engages
 
-- **Assessment (5-10 days)** — [Platform Readiness Assessment](/services/platform-readiness-assessment/): AIX/Power inventory, destination architecture, workload classification, Oracle plan, cutover sequencing, risk register.
+- **Assessment (14 or 28 days)** — [Platform Readiness Assessment](/services/platform-readiness-assessment/): AIX/Power inventory, destination architecture, workload classification, Oracle plan, cutover sequencing, risk register.
 - **Pilot (4 weeks)** — Cozystack stood up as a working framework against your real requirements; success criteria agreed up front. The pilot counts toward the first year of support.
 - **Migration** — cohort execution with parallel-run validation. On the **Enterprise tier**, migration is fully managed by Ænix; legal/procurement runs on your templates (tenders, forms).
 - **Operations (optional)** — managed Cozystack operations, 24×7, after cutover.

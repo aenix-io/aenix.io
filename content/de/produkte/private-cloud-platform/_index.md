@@ -33,7 +33,7 @@ faq:
   - q: "Wer kontrolliert die Verschlüsselungsschlüssel?"
     a: "Der Kunde. Schlüssel liegen auf jeder Schicht beim Kunden — Primary Store, Replikate, Backups, Observability-Daten und Modellgewichte im Ruhezustand. BYOK / HYOK mit HSM-Integration wird unterstützt; reine Vendor-managed-Schlüssel werden explizit vermieden."
   - q: "Was kostet die Private Cloud Platform?"
-    a: "Angebot nach RFP für mehrjährige Plattform-Builds. Ein Platform Readiness Assessment (5-10 Tage, Festpreis vorab vereinbart) liefert DORA-/NIS2-Gap-Analyse und Architektur-Roadmap. Scope wird im Discovery-Call definiert."
+    a: "Angebot nach RFP für mehrjährige Plattform-Builds. Ein Platform Readiness Assessment** (14 oder 28 Tage, Festpreis vorab vereinbart) liefert DORA-/NIS2-Gap-Analyse und Architektur-Roadmap. Scope wird im Discovery-Call definiert."
 aliases:
   - /de/produkte/aenix-platform/enterprise-edition/
   - /de/produkte/aenix-platform/idp-edition/
@@ -135,7 +135,7 @@ Mehrjähriger Plattform-Build, Angebot nach RFP. Discovery-Call zur Scope-Defini
 ## Engagement-Struktur
 
 - **Discovery-Call** (30 min, kostenlos)
-- **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — DORA / NIS2 Gap-Analyse + Architektur-Roadmap
+- **Platform Readiness Assessment** (14 oder 28 Tage, Festpreis vorab vereinbart) — DORA / NIS2 Gap-Analyse + Architektur-Roadmap
 - **Pilot-Engagement** (3-6 Monate) — definierter Slice (eine Workload-Klasse, ein BU, ein Standort)
 - **Vollständiger Aufbau der Private Cloud Platform** (9-18 Monate) — Multi-DC-Produktions-Deployment, Compliance-Zertifizierungs-Support, Operations-Team-Training
 - **Managed Operations** (optional, laufend) — Ænix betreibt die Plattform unter SLA

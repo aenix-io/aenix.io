@@ -158,7 +158,7 @@ Das ist eine bewusste Sequenz: **zuerst die Technologie, dann die Community, dan
 Ænix-Engagements folgen typischerweise diesem Ablauf:
 
 1. **Discovery-Call** (kostenlos, 30 min) — Fit, Scope, regulatorischer Kontext, Plattform-Match bestätigen
-2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — Audit des Ist-Zustands, Gap-Analyse, Plattform-Empfehlung, Migrations-Roadmap
+2. **Platform Readiness Assessment** (14 oder 28 Tage, Festpreis vorab vereinbart) — Audit des Ist-Zustands, Gap-Analyse, Plattform-Empfehlung, Migrations-Roadmap
 3. **Pilot-Engagement** (3-6 Monate, Angebot nach RFP) — ein klar abgegrenzter Ausschnitt, ein validierter Business Case, Wissensaufbau auf Kundenseite
 4. **Vollständiger Plattform-Build** — Wochen für die Public Cloud Platform mit produktisiertem Installer; 9-18 Monate für vollständige Public-Cloud- und Private-Cloud-Deployments, Angebot nach RFP
 5. **Managed Operations** (laufender Retainer) — optional post-Deployment
