@@ -1,0 +1,1 @@
+{"username": "john.smith", "firstName": "John", "lastName": "Smith", "email": "john.smith@acme.com", "emailVerified": true, "attributes": {"locale": ["en"]}, "userProfileMetadata": {"attributes": [{"name": "username", "readOnly": true}, {"name": "email", "readOnly": false}, {"name": "firstName", "readOnly": false}, {"name": "lastName", "readOnly": false}]}}

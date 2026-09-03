@@ -1,11 +1,19 @@
-# Netlify builds deploy previews only. Production is GitHub Pages (see CNAME and
-# .github/workflows/hugo.yaml), so nothing here runs on the live site.
+# NOTE ON PRODUCTION
+#
+# Production deploys to GitHub Pages via .github/workflows/hugo.yaml, and
+# GitHub Pages supports NO redirects or rewrites of any kind — it ignores this
+# file and static/_redirects entirely. Everything below applies to Netlify
+# deploy previews only. Legacy path redirects that must work in production are
+# implemented as Hugo `aliases:` in page frontmatter instead.
 
 [build]
   publish = "public"
   command = "hugo --gc --minify"
 
 [build.environment]
+  # Keep in step with HUGO_VERSION in .github/workflows/hugo.yaml, the version
+  # in .github/workflows/seo-validation.yml, and themes/aenix/theme.toml's
+  # min_version. These have drifted apart before.
   HUGO_VERSION = "0.151.1"
   HUGO_EXTENDED = "true"
 
@@ -17,6 +25,47 @@
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+# --- Live demos ---
+# The two demo SPAs are served from /demo-app/ and /idp-app/ and embedded in
+# iframes by the Hugo pages /demo/ and /idp/. These fallbacks previously
+# targeted /demo/*, which is the Hugo wrapper page, not the app — so deep links
+# and refreshes inside the app never resolved.
+
+# Canned Keycloak Account API responses for the demo's User Settings screen
+# (mirrors the demo's serve.py). GETs return fixtures; any mutation returns {}.
+# These must precede the SPA fallbacks and the site-wide 404.
+[[redirects]]
+  from = "/demo/kc"
+  to = "/demo/_kc/account.json"
+  status = 200
+
+[[redirects]]
+  from = "/demo/kc/credentials"
+  to = "/demo/_kc/credentials.json"
+  status = 200
+
+[[redirects]]
+  from = "/demo/kc/sessions/devices"
+  to = "/demo/_kc/devices.json"
+  status = 200
+
+[[redirects]]
+  from = "/demo/kc/*"
+  to = "/demo/_kc/empty.json"
+  status = 200
+
+# SPA fallbacks: deep links / refreshes inside each app resolve to its index.
+# Existing static assets take precedence, so this only catches client routes.
+[[redirects]]
+  from = "/demo-app/*"
+  to = "/demo-app/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/idp-app/*"
+  to = "/idp-app/index.html"
+  status = 200
 
 [[redirects]]
   from = "/*"

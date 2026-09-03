@@ -1,0 +1,10 @@
+{{/* seo-faq — manual FAQ section + (paired) FAQPage JSON-LD source.
+
+  Thin wrapper over partials/seo/geo-faq.html (single source of truth).
+  NOTE: _default/single.html and _default/list.html now AUTO-INJECT the FAQ
+  from frontmatter. Use this shortcode only on pages rendered by a template
+  that does not auto-inject; otherwise the FAQ renders twice.
+
+      {{< seo-faq >}}
+*/}}
+{{ partial "seo/geo-faq.html" .Page }}

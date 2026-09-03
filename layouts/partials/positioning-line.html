@@ -1,0 +1,24 @@
+{{/*
+  positioning-line.html — one consistent line, high on every commercial
+  landing, clarifying the open-core model so a CIO instantly knows what
+  they are looking at and what they would buy:
+
+    open-source Cozystack (CNCF)  →  Ænix Platform (commercial distro)  →  Aenix (builds/operates/migrates)
+
+  Self-guards: renders only for commercial landing page_types, and skips
+  if the page sets `hide_positioning_line: true`. EN/DE localized.
+*/}}
+{{- $type := .Params.page_type | default "" -}}
+{{- $show := in (slice "solution-landing" "services-landing" "industry-landing" "alternative" "migration-hub" "product" "compare") $type -}}
+{{- if and $show (not .Params.hide_positioning_line) -}}
+{{- $de := eq .Params.language "de" -}}
+<div class="positioning-line" role="note">
+  <div class="container">
+    {{- if $de -}}
+    <p><strong>Open-Source Cozystack</strong> (CNCF-Projekt, von uns entwickelt und gepflegt) <span class="positioning-line__arrow">→</span> <strong>Ænix Platform</strong>, die unterstützte kommerzielle Distribution <span class="positioning-line__arrow">→</span> <strong>Aenix</strong> baut, betreibt und migriert sie.</p>
+    {{- else -}}
+    <p><strong>Open-source Cozystack</strong> (a CNCF project we create and maintain) <span class="positioning-line__arrow">→</span> <strong>Ænix Platform</strong>, the supported commercial distribution <span class="positioning-line__arrow">→</span> <strong>Aenix</strong> builds, operates and migrates it.</p>
+    {{- end -}}
+  </div>
+</div>
+{{- end -}}

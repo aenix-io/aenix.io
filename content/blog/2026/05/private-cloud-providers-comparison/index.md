@@ -1,0 +1,184 @@
+---
+title: "Private cloud providers and platforms — a 2026 comparison"
+description: "Open-source platforms, commercial stacks, sovereign hyperscaler regions and regional providers compared — plus the migration paths between them."
+date: "2026-05-01"
+author: "Aenix Team"
+type: "article"
+topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Kubernetes", "Cozystack"]
+language: "en"
+companion_landing: "/products/private-cloud-platform/"
+quiz:
+  title: "Test yourself: private cloud providers and platforms"
+  questions:
+    - q: "The article distinguishes which two senses of \"private cloud\"?"
+      options:
+        - { text: "Platform (software) vs provider (dedicated infrastructure)", correct: true }
+        - { text: "Free (open source) vs paid (commercial subscription)", correct: false }
+        - { text: "On-prem (owned racks) vs colocation (rented data center)", correct: false }
+      explanation: "Private cloud platforms = software (VMware VCF, Cozystack, OpenStack, OpenShift Virtualization, Proxmox VE). Private cloud providers = vendors delivering dedicated infrastructure (IBM Cloud Private, Oracle dedicated regions, hyperscaler \"sovereign\" regions, regional providers). The article focuses primarily on platforms."
+    - q: "Which open-source platform is described as \"newer than OpenStack; smaller community than Kubernetes-only deployments\"?"
+      options:
+        - { text: "Apache CloudStack (mature OSS, service-provider origin)", correct: false }
+        - { text: "Cozystack (CNCF Sandbox, KubeVirt-native cloud platform)", correct: true }
+        - { text: "Proxmox VE (Debian-based, KVM + LXC virtualization)", correct: false }
+      explanation: "Cozystack — Apache 2.0, CNCF Project, KubeVirt + Cilium + Kube-OVN + LINSTOR (DRBD) + Tenant CRD + Cozystack Dashboard. Strengths: single platform for VMs+containers+databases+S3+GPU, structural multi-tenancy. Limits: newer than OpenStack; smaller community than Kubernetes-only stacks."
+    - q: "What pricing trajectory does the article observe for VMware VCF after the Broadcom acquisition?"
+      options:
+        - { text: "10-20% increases (mild inflation, modest re-pricing)", correct: false }
+        - { text: "50-80% reductions (aggressive cuts to retain customers)", correct: false }
+        - { text: "2-5× price increases observed across the pipeline", correct: true }
+      explanation: "Subscription-only post-Broadcom; 2-5× price increases observed across the article's pipeline. Vendor lock-in plus sovereignty concerns are the listed limits, alongside pricing."
+    - q: "For which segment is Apache CloudStack named as still established?"
+      options:
+        - { text: "Service providers in EU, MENA, and APAC markets", correct: true }
+        - { text: "Hyperscaler-managed Kubernetes (EKS / GKE / AKS shops)", correct: false }
+        - { text: "AI/GPU operators only (model-serving infrastructure)", correct: false }
+      explanation: "Apache CloudStack remains established with service providers in some EU, MENA, and APAC markets. Strengths: mature service-provider features and native multi-tenancy. Limits: smaller community than alternatives; less Kubernetes-native."
+    - q: "What is named as the architectural strength of Nutanix among commercial closed-source platforms?"
+      options:
+        - { text: "Multi-cloud bursting (workload mobility across hyperscalers)", correct: false }
+        - { text: "Open-source code (Apache-licensed core distribution)", correct: false }
+        - { text: "Operationally simple, integrated stack (HCI appliance)", correct: true }
+      explanation: "Nutanix (AHV proprietary KVM-based + Files + Volumes + Era for databases): operationally simple, integrated stack. Limits: closed source, appliance lock-in, less flexibility than open alternatives."
+---
+
+The private cloud landscape has shifted significantly in the last 3 years. Broadcom-induced VMware migrations, sovereignty mandates, AI workload economics, and FinOps pressure have all reshaped what "private cloud" means and what providers serve it.
+
+## Two distinct things called "private cloud"
+
+The terminology is overloaded. "Private cloud" means either:
+
+- **Private cloud platform** — software you deploy on infrastructure you control. Examples: VMware VCF, Cozystack, OpenStack, OpenShift Virtualization, Proxmox VE.
+- **Private cloud provider** — a vendor that provides dedicated infrastructure (single-tenant) which you consume. Examples: IBM Cloud Private, Oracle dedicated regions, hyperscaler "sovereign" regions, regional cloud providers (regulated enterprise customers (NDA-protected), OVHcloud, Hetzner, etc.).
+
+Both are valid; they answer different questions. This article focuses primarily on platforms (the software layer); providers come up where relevant.
+
+## Open-source platforms
+
+### Cozystack
+**License:** Apache 2.0, CNCF Project.
+**Architecture:** Kubernetes-native virtualization (KubeVirt) + Cilium and Kube-OVN networking + LINSTOR (DRBD) block storage + SeaweedFS object storage + Tenant CRD multi-tenancy + Cozystack Dashboard self-service.
+**Maintainer:** Ænix (open-source, community-governed).
+**Best for:** Service providers, sovereign-cloud builders, regulated multi-tenant, AI/GPU operators with sustained workloads.
+**Strengths:** Single platform for VMs + containers + databases + S3 + GPU. Multi-tenancy structural. Light operational footprint relative to OpenStack. Open-source, no vendor lock-in.
+**Limits:** Newer than OpenStack; smaller community.
+
+### OpenStack
+**License:** Apache 2.0, OpenInfra Foundation.
+**Architecture:** Nova compute + Neutron network + Cinder block + Swift object + Keystone identity + Horizon UI + many other components.
+**Maintainer:** OpenInfra Foundation; commercial distros from Red Hat, Canonical, Mirantis.
+**Best for:** Large telecom operators, government clouds, OpenStack-fluent teams.
+**Strengths:** Mature, broad community, many vendor options.
+**Limits:** Operationally complex; harder to find OpenStack engineers in 2026; less Kubernetes-native.
+
+### OpenShift Virtualization (Red Hat)
+**License:** Red Hat commercial subscription.
+**Architecture:** OpenShift Kubernetes + KubeVirt + Red Hat ecosystem.
+**Maintainer:** Red Hat / IBM.
+**Best for:** Existing Red Hat customers, enterprises with Red Hat procurement.
+**Strengths:** Strong commercial support, mature.
+**Limits:** Subscription pricing; tied to Red Hat / IBM relationship.
+
+### Proxmox VE
+**License:** AGPLv3 + commercial subscription.
+**Architecture:** KVM + LXC + ZFS + Ceph (community).
+**Maintainer:** Proxmox Server Solutions GmbH.
+**Best for:** SMB virtualization, single-tenant, labs.
+**Strengths:** Mature, easy to install, strong community.
+**Limits:** Limited multi-tenancy; service catalog beyond VMs requires manual integration.
+
+### Apache CloudStack
+**License:** Apache 2.0.
+**Architecture:** Hypervisor-agnostic (XenServer / KVM / VMware), service-provider-oriented.
+**Best for:** Service providers in markets where CloudStack remains established (some EU, MENA, APAC).
+**Strengths:** Service-provider features mature; multi-tenancy native.
+**Limits:** Smaller community than alternatives; less Kubernetes-native.
+
+## Commercial / closed-source platforms
+
+### VMware (VMware Cloud Foundation)
+**License:** Subscription-only post-Broadcom.
+**Architecture:** vSphere + vSAN + NSX + vCD + vRealize.
+**Best for:** Existing VMware estates that haven't yet been triggered out by economics.
+**Strengths:** Mature, well-known, extensive ecosystem.
+**Limits:** Subscription pricing increases (2-5× observed); vendor lock-in; sovereignty concerns.
+
+### Nutanix
+**License:** Subscription, multiple tiers.
+**Architecture:** AHV (proprietary KVM-based) + Files + Volumes + Era (databases).
+**Best for:** Existing Nutanix HCI customers, enterprises preferring appliance model.
+**Strengths:** Operationally simple, integrated stack.
+**Limits:** Closed source; appliance lock-in; less flexible than open alternatives.
+
+### Scale Computing HC3
+**License:** Subscription.
+**Architecture:** KVM-based hyperconverged appliance.
+**Best for:** ROBO / edge / SMB.
+**Strengths:** Operationally simple.
+**Limits:** Smaller scale ceiling; appliance lock-in.
+
+### Microsoft Azure Stack HCI
+**License:** Microsoft subscription + per-core fee.
+**Architecture:** Hyper-V + Storage Spaces Direct + Azure Arc.
+**Best for:** Microsoft-aligned shops with Azure relationship.
+**Strengths:** Strong Microsoft ecosystem integration.
+**Limits:** Locks into Microsoft licensing economics.
+
+### Oracle Cloud Native Environment / Oracle Linux Virtualization Manager
+**License:** Subscription / commercial.
+**Best for:** Oracle-aligned organizations.
+
+## Sovereign hyperscaler regions
+
+### AWS Sovereign Cloud (EU / US Gov)
+Dedicated regions with sovereignty controls. Some satisfy member-state mandates; others don't, depending on jurisdiction.
+
+### Azure Sovereign Cloud (Azure Government, Azure Germany historically)
+Similar pattern.
+
+### GCP Sovereign Cloud
+GCP's sovereign offerings, Workspace partnerships in some EU markets.
+
+**Trade-off:** these provide cloud-managed convenience but leave the service plane under hyperscaler control. For substantive sovereignty (encryption keys customer-controlled, supplier transparency, exit-readiness), customer-owned infrastructure typically wins.
+
+## Regional cloud providers (private cloud as-a-service)
+
+A growing market in 2026:
+
+- **Hetzner** (Germany) — bare metal + cloud, popular in DACH
+- **OVHcloud** (France) — strong EU sovereign positioning
+- **Ænix Public Cloud Platform deployments at regional hosting providers (currently listed on aenix.io); tier-1 European bank engagements under NDA until mid-2027** — regional sovereign cloud product
+- **QazCloud** (Kazakhstan) — partnered with Clever Cloud for sovereign AI
+- Various regional providers per jurisdiction
+
+These offer private-cloud-style isolation without you operating the platform. Trade-off: provider relationship vs. direct hardware control.
+
+## How to choose
+
+Decision tree:
+
+1. **Need multi-tenant + open-source + Kubernetes-native + sovereignty?** → Cozystack.
+2. **Existing VMware estate, financial-services renewal pressure?** → Plan VMware exit. Destination: typically Cozystack or OpenShift.
+3. **OpenStack expertise + large telco / government scale?** → OpenStack remains valid.
+4. **Existing Red Hat / OpenShift commitments?** → OpenShift Virtualization.
+5. **SMB / single-tenant?** → Proxmox VE.
+6. **Don't want to operate the platform yourself?** → Regional sovereign cloud provider (Hetzner, OVHcloud, regulated enterprise customers (NDA-protected), etc.).
+7. **AI/GPU at scale, sustained utilization?** → Cozystack or OpenShift on dedicated GPU infrastructure.
+8. **Sovereignty + EU + low operational footprint?** → Cozystack with Ænix support, or OVHcloud.
+
+## Migration paths
+
+Most modern private-cloud deployments are migrations from existing infrastructure:
+
+- **VMware → Cozystack/OpenStack/OpenShift** — KubeVirt-based migration, image conversion, multi-tenancy redesign
+- **Public cloud → private cloud** (repatriation) — workload classification, cost honesty, destination architecture; see **[Cloud repatriation](/solutions/cloud-repatriation/)**
+- **OpenStack → Cozystack** — for teams seeking Kubernetes-native foundation; image migration is straightforward
+- **Hyperscaler region → sovereign region** — for sovereignty-driven migrations within hyperscaler model
+
+## Want to dig deeper?
+
+- **[Private cloud platform — Cozystack](/products/private-cloud-platform/)**
+- **[Private cloud consulting](/services/private-cloud-consulting/)** — engineering services
+- **[VMware alternative](/alternatives/vmware-alternative/)** — VMware exit
+- **[Cloud repatriation](/solutions/cloud-repatriation/)** — public cloud exit
+- **[cozystack.io](https://cozystack.io)** — open-source project

@@ -1,0 +1,151 @@
+---
+title: "Ænix AI Platform"
+description: "Schlüsselfertige, souveräne KI-Infrastruktur auf Cozystack: Multi-Tenant-GPU-Scheduling, Service-APIs und Blueprints für Inferenz, Fine-Tuning und RAG."
+type: "page"
+language: "de"
+hreflang_en: /products/ai-platform/
+direct_answer: |
+  **Die Ænix AI Platform ist eine schlüsselfertige, souveräne KI-Infrastruktur auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Sie richtet sich an KI-native Organisationen im großen Maßstab, regulierte KI-Deployments und GPU-lastige Produkt-Unternehmen, die Inferenz-, Fine-Tuning- und RAG-Workloads selbst betreiben statt über Hyperscaler-APIs. Aenix liefert vor-integriertes Multi-Tenant-GPU-Scheduling (Tenant-CRD), Service-APIs für Model-Serving und Fine-Tuning, fertige Blueprints, Vector-Datenbanken, Object Storage und Souveränitätskontrollen mit kundenkontrollierten Verschlüsselungsschlüsseln. So kommen KI-Teams schneller von der Idee zu laufenden Jobs, behalten die Datenhoheit und gewinnen Kostenkontrolle bei dauerhaft ausgelasteten Inferenz-Lasten.**
+quick_facts:
+  - label: "Was es ist"
+    value: "Schlüsselfertige, souveräne KI-Infrastruktur auf Basis von Cozystack mit Multi-Tenant-GPU-Scheduling, Service-APIs und fertigen Blueprints für Inferenz, Fine-Tuning und RAG"
+  - label: "Lizenz"
+    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+  - label: "Status"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+  - label: "Für wen"
+    value: "KI-native Startups im Wachstum, regulierte KI-Deployments (Bank / öffentlicher Sektor / Gesundheitswesen), GPU-lastige Produkt-Unternehmen, Telcos und Großunternehmen mit interner KI-Plattform"
+  - label: "GPU-Support"
+    value: "H100, H200, L40S, A100, B100/B200 (Blackwell); CPU-only und alternative Beschleuniger (AMD MI Series, Intel Gaudi) unterstützt; fraktionales GPU-Sharing über HAMi auf dem NVIDIA GPU Operator"
+  - label: "Architektur"
+    value: "Kubernetes-nativ; KubeVirt für VM-gebundene Workloads; Per-Tenant-GPU-Pools mit Tenant-CRD; Vector DB (pgvector / Qdrant) und S3-kompatibler Object Storage inklusive"
+  - label: "Souveränität"
+    value: "Kundenkontrollierte Verschlüsselungsschlüssel für Modell-Gewichte, Trainingsdaten und Vector-Indexe; Air-Gap-Deployment unterstützt; Anbieter-Personal-Zugang protokolliert und zeitlich begrenzt"
+  - label: "Engagement"
+    value: "Projekt, Angebot nach RFP; 3-6 Monate für typische Inferenz-Flotte, 6-12 Monate für Full-Stack; optionaler Managed-Retainer post-Deployment"
+faq:
+  - q: "Worauf basiert die Ænix AI Platform?"
+    a: "Sie basiert auf Cozystack, einem Open-Source-CNCF-Projekt unter Apache 2.0, das Aenix erstellt hat und pflegt. Cozystack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage. Die AI Platform ergänzt dies um Multi-Tenant-GPU-Scheduling, Service-APIs und KI-Blueprints."
+  - q: "Für wen ist die AI Platform gedacht?"
+    a: "Für KI-native Startups im Wachstum, regulierte KI-Deployments in Banken, öffentlichem Sektor und Gesundheitswesen, GPU-lastige Produkt-Unternehmen sowie Telcos und Großunternehmen, die eine interne KI-Plattform über mehrere Business Units teilen. Typisch sind Organisationen mit dauerhaft ausgelasteten Inferenz-Workloads, bei denen Hyperscaler-API-Pricing wirtschaftlich nicht mehr passt."
+  - q: "Wie funktioniert Multi-Tenant-GPU-Scheduling?"
+    a: "Über das Tenant-CRD erhält jeder Tenant eigene GPU-Pools mit GPU-Class-aware-Scheduling (zum Beispiel L40S für Inferenz, H100 für Fine-Tuning) sowie fraktionalem GPU-Sharing über HAMi auf dem NVIDIA GPU Operator. Quotas, RBAC und Observability werden pro Tenant durchgesetzt, sodass ein gemeinsamer GPU-Pool mit logischer Isolation geteilt werden kann."
+  - q: "Welche Souveränitätskontrollen bietet die Plattform?"
+    a: "Kundenkontrollierte Verschlüsselungsschlüssel für Modellgewichte im Ruhezustand, Trainingsdaten und Vector-Indexe; ein audit-isoliertes Environment; protokollierter und zeitlich begrenzter Zugang für Anbieter-Personal; Lieferantentransparenz zur zweiten Stufe sowie unterstütztes Air-Gap-Deployment für Verteidigung, isolierte Industrie und souveräne-Cloud-Kunden."
+  - q: "Welche GPUs und Modelle werden unterstützt?"
+    a: "Unterstützt werden H100, H200, L40S, A100 und B100/B200 (Blackwell) sowie CPU-only und alternative Beschleuniger wie AMD MI Series und Intel Gaudi. Vorinstallierte Open-Weight-Modelle umfassen die Familien Llama, Mistral, Qwen, DeepSeek, Phi und Gemma; Sizing-Referenzen reichen von 7B bis 405B in Single-Card-, Multi-Card- und Multi-Node-Konfigurationen."
+  - q: "Was kostet die AI Platform und wie läuft ein Engagement ab?"
+    a: "Das Engagement liegt bei einem nach RFP angebotenen Projekt mit optionalem Managed-Retainer nach dem Deployment. Es startet mit einem kostenlosen 30-Minuten-Discovery-Call, gefolgt von einem Architektur-Review, einem Pilot-Engagement (3-6 Monate) und dem vollständigen Build (6-12 Monate je nach Workload-Umfang)."
+aliases:
+  - /de/produkte/aenix-platform/ai-ml-edition/
+---
+
+> **Das ist das AI- & GPU-Modul.** Die Ænix Platform hat drei Plattformen — [Provider](/de/produkte/public-cloud-platform/) und [Enterprise](/de/produkte/private-cloud-platform/) — und diese Fähigkeit erweitert beide: Ein Anbieter verkauft sie als GPU-as-a-Service, ein Unternehmen betreibt darauf die eigene Inferenz.
+
+**KI-Plattform-Automatisierung out-of-the-Box. Standard-KI-Workloads, Service-APIs und fertige Blueprints, Datenbanken, Apps und Modelle — damit Ihr KI-Team von der Idee zu laufenden Jobs schneller kommt. Multi-Tenant-GPU-Scheduling, Vector-DBs, Souveränitätskontrollen inklusive. Gebaut für KI-native Organisationen und regulierte KI-Deployments im großen Maßstab.**
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Plattformen →</a>
+</div>
+
+---
+
+## Was in der AI Platform enthalten ist
+
+### KI-Plattform-Automatisierung out-of-the-Box
+
+Vor-integrierter Stack für Inferenz-, Fine-Tuning- und RAG-Workloads. Service-APIs zum Hochfahren von Model-Serving-Endpoints, Fine-Tuning-Jobs, Vector-Indexen, Evaluation-Harnesses — ohne dass Sie für jedes davon eigenes MLOps-Engineering aufbauen müssen.
+
+### Fertige Blueprints
+
+Vorvalidierte Patterns für gängige KI-Workload-Typen:
+- **Single-Tenant Inferenz-Cluster** — für einen Kunden, eine Workload-Klasse
+- **mandantenfähige Inferenz-Flotte** — Gemeinsamer GPU-Pool mit logischer Mandantentrennung
+- **Inferenz + Fine-Tuning + RAG** — Full-Stack-Pattern mit heterogenen GPU-Pools
+- **Air-Gapped souveränes Deployment** — für Verteidigung, isolierte Industrie, souveräne-Cloud-Kunden
+
+(Siehe [Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/) für Blueprint-Details.)
+
+### Multi-Tenant-GPU-Scheduling
+
+Per-Tenant-GPU-Pools, GPU-Class-aware-Scheduling (z.B. L40S für Inferenz, H100 für Fine-Tuning), fraktionales GPU-Sharing über HAMi auf dem NVIDIA GPU Operator. Quotas + RBAC + Observability per Tenant für KI-Workloads.
+
+### Modelle, Datenbanken, Apps inklusive
+
+Vorinstallierte Open-Weight-Modelle (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma Familien). Vector DB (pgvector via PostgreSQL-Operator, oder Qdrant). Managed Databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ). Object Storage (S3-kompatibel) für Trainingsdaten + Modell-Checkpoints.
+
+### Service-APIs
+
+Inferenz-API (standardmäßig vLLM-kompatibel; Triton unterstützt). Fine-Tuning-Job-API. Embedding-Generations-API. RAG-Retrieval-API. Alle Multi-Tenant-aware.
+
+### Souveränitätskontrollen
+
+Kundenkontrollierte Verschlüsselungsschlüssel für Modellgewichte im Ruhezustand, Trainingsdaten, Vector-Indexe. Lieferantentransparenz zur zweiten Stufe. Audit-isoliertes Environment. Anbieter-Personal-Zugang protokolliert + zeitlich begrenzt. Air-Gap-Deployment unterstützt.
+
+### GPU-Sizing-Referenz
+
+Praktische Sizing-Tabellen für gängige Workload-Profile (Llama 7B / 13B / 70B / 405B, Mistral, Qwen, DeepSeek, Phi, Gemma — Single-Card / Multi-Card / Multi-Node-Konfigurationen). Ænix-Engagement inkludiert Capacity-Planning für dauerhaft ausgelastete Workloads.
+
+### Hosting-Panel + Admin-Interface
+
+Gebrandetes Admin-Dashboard für den KI-Plattform-Betreiber. Service-Erstellungs-Wizards für Endnutzer (ML-Engineers, Data Scientists, App-Teams).
+
+### Observability für KI-Workloads
+
+Metriken zu Inferenz-Latenz und Durchsatz. GPU-Auslastung per Tenant. Model-Serving SLOs. Kostenverfolgung je Token. Anomalie-Erkennung für Qualitätsdrift der Inferenz.
+
+### Migrations-Tooling und -Expertise
+
+Produktisierte Patterns für Migration von Hyperscaler-KI (AWS Bedrock, Azure OpenAI Service, GCP Vertex AI) zu souveräner KI-Infrastruktur. Besonders für Organisationen mit dauerhaft ausgelasteten Inferenz-Workloads, bei denen sich Hyperscaler-API-Preise wirtschaftlich nicht mehr rechnen.
+
+---
+
+## Wer kauft AI Platform
+
+| Käuferprofil | Typisches Engagement |
+|---|---|
+| KI-natives Startup im Wachstum | Souveräne Inferenz-Fleet, ersetzt Ausgaben für Hyperscaler-APIs |
+| Reguliertes KI-Deployment (Bank / öffentlicher Sektor / Gesundheitswesen) | KI-Infrastruktur mit Souveränitätsauflagen mit kundenkontrollierten Schlüsseln |
+| GPU-lastiges Produkt-Unternehmen | Multi-Tenant-GPU-Plattform mit strikter Kosten-Disziplin |
+| Telco / großes Unternehmen mit KI | Interne KI-Plattform, die über Geschäftsbereiche hinweg genutzt wird |
+
+---
+
+## Preise
+
+Projekt plus Managed-Retainer nach dem Deployment, Angebot nach RFP.
+
+[AI Platform diskutieren →](/de/kontakt/?platform=ai)
+
+---
+
+## Engagement-Struktur
+
+- **Discovery-Call** (30 min, kostenlos)
+- **Sovereign-AI-Architektur-Review** (1-2 Wochen, Festpreis) — unter Verwendung des [Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/) Frameworks + Ænix-Expertise
+- **Pilot-Engagement** (3-6 Monate) — definierter Slice (eine Workload-Klasse, ein Tenant, eine Modell-Familie)
+- **Vollständiger AI Platform Build** (6-12 Monate) — produktive KI-Infrastruktur mit allen Ziel-Workload-Typen
+- **Managed-Retainer** (optional, laufend) — Ænix betreibt die KI-Plattform unter SLA
+
+[AI Platform Build Service →](/de/dienstleistungen/ai-platform-build/) | [Kostenloser Sovereign AI Decision Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/)
+
+---
+
+## Referenzen
+
+Die Kunden der AI Platform sind NDA-geschützt. KI-native Organisationen und regulierte KI-Deployments laufen in Produktion; für eine konkrete Opportunity lassen sich Referenzgespräche unter NDA arrangieren.
+
+---
+
+## Wie starten
+
+Buchen Sie einen 30-Minuten-Discovery-Call. Bringen Sie Ihr KI-Workload-Profil (durchgängige Inferenz, Training, Fine-Tuning, RAG oder eine Mischung), regulatorischen Scope und Ziel-Deployment-Modell mit.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+</div>
+
+---
+
+*Ænix AI Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Ænix ist das Open-Core-Unternehmen.*

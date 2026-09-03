@@ -1,0 +1,321 @@
+/* Ænix compliance checklist — print stylesheet (WeasyPrint) */
+
+@page {
+  size: A4;
+  margin: 20mm 17mm 16mm 17mm;
+
+  @top-left {
+    content: string(brandline);
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 7.5pt;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    vertical-align: bottom;
+    padding-bottom: 4mm;
+  }
+  @top-right {
+    content: string(doctitle);
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 7.5pt;
+    color: #94a3b8;
+    vertical-align: bottom;
+    padding-bottom: 4mm;
+  }
+  @bottom-left {
+    content: string(versionline);
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 7pt;
+    color: #b0bccb;
+    vertical-align: top;
+    padding-top: 3mm;
+  }
+  @bottom-right {
+    content: counter(page);
+    font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8pt;
+    font-weight: 700;
+    color: #64748b;
+    vertical-align: top;
+    padding-top: 3mm;
+  }
+}
+
+@page :first {
+  margin: 0;
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-left { content: none; }
+  @bottom-right { content: none; }
+}
+
+html {
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 9.6pt;
+  line-height: 1.45;
+  color: #1e293b;
+  -weasy-hyphens: none;
+}
+
+body { margin: 0; }
+
+/* ---------- strings that feed the running header / footer ---------- */
+/* in-flow but zero-size: WeasyPrint ignores string-set on out-of-flow
+   or visibility:hidden boxes, so the strings must stay in normal flow. */
+.meta { font-size: 0; line-height: 0; height: 0; color: transparent; overflow: hidden; }
+.meta .brandline  { string-set: brandline content(); }
+.meta .doctitle   { string-set: doctitle content(); }
+.meta .versionline{ string-set: versionline content(); }
+
+/* ---------- cover ---------- */
+.cover {
+  page: cover;
+  height: 294mm;
+  box-sizing: border-box;
+  padding: 26mm 20mm 18mm 20mm;
+  display: flex;
+  flex-direction: column;
+  border-top: 6mm solid #01A5FF;
+}
+.cover__mark {
+  font-size: 20pt;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: #0f172a;
+}
+.cover__rule {
+  width: 26mm;
+  height: 2.2pt;
+  background: #661BE1;
+  margin: 42mm 0 8mm 0;
+}
+.cover__title {
+  font-size: 30pt;
+  line-height: 1.12;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: #0f172a;
+  margin: 0 0 7mm 0;
+  max-width: 145mm;
+}
+.cover__subtitle {
+  font-size: 13pt;
+  line-height: 1.42;
+  font-weight: 400;
+  color: #475569;
+  margin: 0;
+  max-width: 140mm;
+}
+.cover__spacer { flex: 1; }
+.cover__audience {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #0856B0;
+  padding-bottom: 5mm;
+  border-bottom: 0.6pt solid #d8e2ec;
+  margin-bottom: 5mm;
+}
+.cover__strapline {
+  font-size: 9pt;
+  line-height: 1.55;
+  color: #475569;
+  max-width: 150mm;
+}
+.cover__strapline b { color: #0f172a; }
+
+/* ---------- headings ---------- */
+h1.doc-h {
+  font-size: 17pt;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+  margin: 0 0 4mm 0;
+  padding-bottom: 2.5mm;
+  border-bottom: 1.6pt solid #01A5FF;
+  break-after: avoid;
+}
+h2.sec {
+  font-size: 14.5pt;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+  margin: 9mm 0 3mm 0;
+  padding-bottom: 2.5mm;
+  border-bottom: 1.6pt solid #01A5FF;
+  break-after: avoid;
+  break-inside: avoid;
+}
+h2.sec .num { color: #01A5FF; }
+h2.sec .art { vertical-align: 2pt; }
+h3.subsec {
+  font-size: 11pt;
+  font-weight: 700;
+  color: #0856B0;
+  margin: 6mm 0 2.5mm 0;
+  break-after: avoid;
+}
+h3.plain {
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 5mm 0 1.5mm 0;
+  break-after: avoid;
+}
+.newpage { break-before: page; }
+
+p { margin: 0 0 2.8mm 0; }
+p.lead { color: #334155; }
+
+/* ---------- article citation pill ---------- */
+.art {
+  display: inline-block;
+  font-size: 7.6pt;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.01em;
+  color: #0856B0;
+  background: #e8f4ff;
+  border: 0.5pt solid #b9dcf7;
+  border-radius: 2pt;
+  padding: 0.3mm 1.4mm;
+  white-space: nowrap;
+}
+.art--alt { color: #4c1d95; background: #f1ebfe; border-color: #d7c7f8; }
+
+/* ---------- checkpoint list ---------- */
+ul.cps {
+  list-style: none;
+  margin: 0 0 3mm 0;
+  padding: 0;
+}
+ul.cps > li {
+  position: relative;
+  padding: 1.7mm 0 1.7mm 7.5mm;
+  border-bottom: 0.4pt solid #eef2f7;
+  break-inside: avoid;
+}
+ul.cps > li:last-child { border-bottom: none; }
+ul.cps > li::before {
+  content: "";
+  position: absolute;
+  left: 0.4mm;
+  top: 2.4mm;
+  width: 3.2mm;
+  height: 3.2mm;
+  border: 0.7pt solid #64748b;
+  border-radius: 0.6pt;
+  background: #fff;
+}
+ul.cps > li b { color: #0f172a; }
+
+/* ---------- callout ---------- */
+.callout {
+  background: #f6f9fc;
+  border-left: 2.2pt solid #661BE1;
+  padding: 3mm 4mm;
+  margin: 4mm 0 0 0;
+  font-size: 8.8pt;
+  line-height: 1.45;
+  color: #475569;
+  break-inside: avoid;
+}
+.callout p:last-child { margin-bottom: 0; }
+
+.disclaimer {
+  background: #fffaf0;
+  border: 0.6pt solid #f0d9a8;
+  border-left: 2.2pt solid #d99a1c;
+  padding: 3.2mm 4mm;
+  margin: 4mm 0 5mm 0;
+  font-size: 8.8pt;
+  line-height: 1.45;
+  color: #614a1c;
+  break-inside: avoid;
+}
+.disclaimer p:last-child { margin-bottom: 0; }
+
+/* ---------- tables ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.2pt;
+  margin: 2mm 0 4mm 0;
+  break-inside: avoid;
+}
+th {
+  text-align: left;
+  font-size: 7.6pt;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+  border-bottom: 1pt solid #cbd5e1;
+  padding: 1.8mm 2mm;
+}
+td {
+  padding: 2mm;
+  border-bottom: 0.4pt solid #e8edf3;
+  vertical-align: top;
+}
+td.num, th.num { text-align: right; white-space: nowrap; font-weight: 700; color: #0856B0; }
+tr:last-child td { border-bottom: none; }
+table.coverage tbody tr:nth-child(odd) td { background: #f8fafc; }
+
+/* ---------- ordered list (how to use / next steps) ---------- */
+ol.howto { margin: 0 0 3mm 0; padding-left: 5mm; }
+ol.howto > li { padding: 0.8mm 0; break-inside: avoid; }
+ol.howto > li::marker { font-weight: 700; color: #0856B0; }
+
+ul.bullets { margin: 0 0 3mm 0; padding-left: 4.5mm; }
+ul.bullets > li { padding: 0.7mm 0; break-inside: avoid; }
+ul.bullets > li::marker { color: #01A5FF; }
+
+/* ---------- next steps / cta ---------- */
+.option {
+  padding: 2.4mm 0;
+  border-bottom: 0.4pt solid #eef2f7;
+  break-inside: avoid;
+}
+.option:last-of-type { border-bottom: none; }
+.option b { color: #0f172a; }
+
+.cta {
+  background: #0f172a;
+  color: #fff;
+  padding: 4mm 5mm;
+  border-radius: 1.5mm;
+  margin: 4mm 0 0 0;
+  font-size: 10pt;
+  font-weight: 700;
+  break-inside: avoid;
+}
+.cta span { color: #7cc9ff; }
+
+/* ---------- reference pattern layers ---------- */
+.layer {
+  border: 0.6pt solid #dde5ee;
+  border-left: 2.2pt solid #01A5FF;
+  border-radius: 1.2mm;
+  padding: 3mm 4mm;
+  margin: 0 0 2.5mm 0;
+  break-inside: avoid;
+}
+.layer h4 {
+  font-size: 9.6pt;
+  font-weight: 700;
+  color: #0856B0;
+  margin: 0 0 1.2mm 0;
+}
+.layer p { margin: 0; font-size: 9pt; color: #475569; }
+
+/* ---------- closing ---------- */
+.closing {
+  margin-top: 8mm;
+  padding-top: 3mm;
+  border-top: 0.6pt solid #dde5ee;
+  font-size: 8.4pt;
+  line-height: 1.5;
+  color: #64748b;
+  break-inside: avoid;
+}
+.closing b { color: #334155; }

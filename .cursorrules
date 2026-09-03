@@ -1,0 +1,27 @@
+# .cursorrules — Cursor AI rules for aenix.io
+
+The complete rules for this project are in `CLAUDE.md` at repo root. Read it before any action.
+
+Critical hard rules (summary):
+
+1. Every landing page (page_type: solution-landing | services-landing | industry-landing | compare | alternative | migration-hub | lead-magnet | product) requires frontmatter fields: page_type, description, direct_answer, quick_facts (5-7 bullets), faq (≥4 entries). Hugo build will fail without these — do not work around the failure by removing the partial.
+
+2. Visible content + JSON-LD share frontmatter via shortcodes {{< seo-blocks >}} and {{< seo-faq >}}. Single source of truth — do not duplicate FAQ in markdown body.
+
+3. layouts/partials/hooks/head-end.html must contain {{ partial "seo/head.html" . }}. Do not remove or bypass.
+
+4. static/llms.txt and static/llms-full.txt are required at site root. Update llms.txt when top-30 priority pages change.
+
+5. Customer evidence (logos, quotes) requires written permission. Public Tier-1 evidence: Beeline Kazakhstan Hyper Cloud only.
+
+6. DE locale uses DE keywords in slugs (/de/loesungen/, not /de/solutions/). Don't auto-translate.
+
+7. CNCF vendor neutrality applies to sister site cozystack.io — never add aenix.io funnel-links there.
+
+8. No emoji in headlines or body. Enterprise B2B audience.
+
+9. English only in commits, PRs, code. Site is bilingual (EN/DE) but git history is English.
+
+10. No "🤖 Generated with Claude" or similar AI-attribution headers in PRs / commits.
+
+When uncertain: read CLAUDE.md, FRONTMATTER_SCHEMA.md, PAGE_CREATION_PLAYBOOK.md. When still uncertain: ask Timur.

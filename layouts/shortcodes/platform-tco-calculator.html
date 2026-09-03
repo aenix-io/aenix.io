@@ -1,0 +1,74 @@
+{{- /*
+  platform-tco-calculator.html — build-and-run TCO: DIY platform (own platform
+  engineering team + proprietary stack licenses) vs running on Cozystack with
+  Ænix support. Self-contained, no dependencies, recomputes live.
+  Usage: {{< platform-tco-calculator >}}  or  {{< platform-tco-calculator lang="de" currency="€" >}}
+*/ -}}
+{{- $lang := .Get "lang" | default "en" -}}
+{{- $cur := .Get "currency" | default "€" -}}
+{{- $id := .Ordinal -}}
+{{- $de := eq $lang "de" -}}
+{{- $t := dict
+  "title"     (cond $de "Platform-TCO: Eigenbau vs. Ænix" "Platform TCO: DIY vs. Ænix")
+  "intro"     (cond $de "Vergleichen Sie die jährlichen Betriebskosten einer selbst gebauten Plattform mit dem Betrieb auf Cozystack mit Ænix-Support. Werte editierbar." "Compare the annual cost of running a platform yourself against running on Cozystack with Ænix support. Every input is editable.")
+  "diyfte"    (cond $de "Platform-Engineers (Eigenbau, VZÄ)" "Platform engineers, DIY (FTE)")
+  "fteCost"   (cond $de "Vollkosten je Engineer / Jahr" "Loaded cost per engineer / year")
+  "diyLic"    (cond $de "Lizenzen Eigenbau / Jahr (VMware, OpenShift …)" "DIY stack licenses / year (VMware, OpenShift …)")
+  "aefte"     (cond $de "Platform-Engineers mit Ænix (VZÄ)" "Platform engineers with Ænix (FTE)")
+  "aesub"     (cond $de "Ænix-Abo / Support pro Jahr" "Ænix subscription / support per year")
+  "mig"       (cond $de "Einmalige Migration / Aufbau" "One-time migration / build")
+  "years"     (cond $de "Betrachtungszeitraum (Jahre)" "Horizon (years)")
+  "diyRun"    (cond $de "Betriebskosten Eigenbau / Jahr" "DIY run-cost / year")
+  "aeRun"     (cond $de "Betriebskosten mit Ænix / Jahr" "Ænix run-cost / year")
+  "save"      (cond $de "Netto-Ersparnis / Jahr" "Net saving / year")
+  "netN"      (cond $de "Netto-Ersparnis über den Zeitraum" "Net saving over the horizon")
+  "payback"   (cond $de "Amortisation der Migration" "Migration payback")
+  "months"    (cond $de "Monate" "months")
+  "note"      (cond $de "Illustrativ. Vollkosten = Gehalt inkl. Lohnnebenkosten, Tooling, Recruiting. Cozystack ist Apache 2.0 (keine Plattform-Lizenz); Sie zahlen Support und/oder den Aufbau." "Illustrative. Loaded cost = salary plus employer overhead, tooling, recruiting. Cozystack is Apache 2.0 (no platform license); you pay for support and/or the build.")
+-}}
+<div class="roicalc" id="ptco-{{ $id }}" data-cur="{{ $cur }}">
+  <h3 class="roicalc-title">{{ index $t "title" }}</h3>
+  <p class="roicalc-intro">{{ index $t "intro" }}</p>
+  <div class="roicalc-grid">
+    <label>{{ index $t "diyfte" }}<input type="number" min="0" step="0.5" data-k="diyfte" value="5"></label>
+    <label>{{ index $t "fteCost" }} ({{ $cur }})<input type="number" min="0" step="5000" data-k="ftecost" value="130000"></label>
+    <label>{{ index $t "diyLic" }} ({{ $cur }})<input type="number" min="0" step="10000" data-k="diylic" value="150000"></label>
+    <label>{{ index $t "aefte" }}<input type="number" min="0" step="0.5" data-k="aefte" value="2"></label>
+    <label>{{ index $t "aesub" }} ({{ $cur }})<input type="number" min="0" step="10000" data-k="aesub" value="180000"></label>
+    <label>{{ index $t "mig" }} ({{ $cur }})<input type="number" min="0" step="10000" data-k="mig" value="200000"></label>
+    <label>{{ index $t "years" }}<input type="number" min="1" max="10" step="1" data-k="years" value="3"></label>
+  </div>
+  <div class="roicalc-out">
+    <div class="roicalc-row"><span>{{ index $t "diyRun" }}</span><b data-o="diyrun">—</b></div>
+    <div class="roicalc-row"><span>{{ index $t "aeRun" }}</span><b data-o="aerun">—</b></div>
+    <div class="roicalc-row roicalc-hl"><span>{{ index $t "save" }}</span><b data-o="save">—</b></div>
+    <div class="roicalc-row roicalc-hl"><span>{{ index $t "netN" }}</span><b data-o="netn">—</b></div>
+    <div class="roicalc-row"><span>{{ index $t "payback" }}</span><b data-o="payback">—</b></div>
+  </div>
+  <p class="roicalc-note">{{ index $t "note" }}</p>
+</div>
+<script>
+(function(){
+  var root=document.getElementById("ptco-{{ $id }}");
+  if(!root)return;
+  var cur=root.getAttribute("data-cur")||"€";
+  var MON={{ if $de }}" {{ index $t "months" }}"{{ else }}" months"{{ end }};
+  function num(k){var el=root.querySelector('[data-k="'+k+'"]');var v=parseFloat(el&&el.value);return isFinite(v)&&v>=0?v:0;}
+  function fmt(v){return cur+Math.round(v).toLocaleString("en-US");}
+  function set(o,t,neg){var el=root.querySelector('[data-o="'+o+'"]');if(!el)return;el.textContent=t;var row=el.closest(".roicalc-row");if(row){row.classList.toggle("roicalc-neg",!!neg);}}
+  function calc(){
+    var diyRun=num("diyfte")*num("ftecost")+num("diylic");
+    var aeRun=num("aefte")*num("ftecost")+num("aesub");
+    var save=diyRun-aeRun;
+    var years=Math.max(1,num("years"));
+    var netN=save*years-num("mig");
+    set("diyrun",fmt(diyRun));
+    set("aerun",fmt(aeRun));
+    set("save",fmt(save),save<0);
+    set("netn",fmt(netN),netN<0);
+    if(save>0){var m=Math.ceil(num("mig")/(save/12));set("payback",m+MON);}
+    else{set("payback","—");}
+  }
+  root.addEventListener("input",calc);calc();
+})();
+</script>

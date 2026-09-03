@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{{- $lang := .Site.LanguageCode | default "en" -}}
+{{- if or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}{{- $lang = "de" -}}
+{{- else if or (eq .Params.language "ru") (hasPrefix .RelPermalink "/ru/") -}}{{- $lang = "ru" -}}{{- end -}}
+<html lang="{{ $lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} – Ænix{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+  {{/* Open Graph / Twitter meta are emitted once by seo/head.html (partial invoked below) — do not duplicate here. */}}
+
+  {{/* First-party UTM/gclid capture. Must run in <head>, before the Pipedrive
+       loader in the body, so pipedrive-form's restoreForForm() has the stored
+       campaign to replay. Sets cookies only — no network, no consent surface. */}}
+  {{ partial "utm-capture.html" . }}
+
+  {{/* Favicon */}}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  {{/* DNS prefetch for third-party services we expect to load on consent */}}
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://analytics.ahrefs.com">
+  <link rel="dns-prefetch" href="https://webforms.pipedrive.com">
+
+  {{/* Self-hosted fonts (Inter + JetBrains Mono, latin + latin-ext subsets).
+       Replaces fonts.googleapis.com CDN — faster (no Google DNS+TLS),
+       GDPR-clean (no IP leakage to Google's servers). */}}
+  <link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css">
+
+  {{/* CSS — theme base */}}
+  {{ $style := resources.Get "css/main.css" | fingerprint }}
+  {{ if $style }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+  {{ end }}
+
+  {{/* Project-level SEO/GEO emission — canonical, JSON-LD, hreflang, OG extras, aenix-seo-extensions.css */}}
+  {{ partial "seo/head.html" . }}
+
+  {{ block "head" . }}{{ end }}
+</head>
+<body class="{{ with .Params.bodyClass }}{{ . }}{{ end }}">
+  {{/* GTM <noscript> fallback (only renders when GTM container is configured AND consent granted; here we emit it always so GTM works for no-JS visitors after consent decision is reflected in a cookie, but since cookie-gating happens client-side this is best-effort) */}}
+  {{ with .Site.Params.gtmContainer }}
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ . }}"
+    height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+  {{ end }}
+
+  {{ partial "header.html" . }}
+
+  <main id="content">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+
+  {{/* Cookie consent + tracker activator
+       Always rendered. Reads data-* attributes to know which trackers to
+       activate on consent. Defaults consent to "denied" before user choice
+       per Google Consent Mode v2. */}}
+  <div id="aenix-consent-root"
+       data-lang="{{ .Site.Language.Lang | default "en" }}"
+       {{ with .Site.Params.googleAnalytics }}data-ga-id="{{ . }}"{{ end }}
+       {{ with .Site.Params.gtmContainer }}data-gtm-container="{{ . }}"{{ end }}
+       {{ with .Site.Params.ahrefsAnalytics }}data-ahrefs-key="{{ . }}"{{ end }}
+       {{ with .Site.Params.hotjarId }}data-hotjar-id="{{ . }}"{{ end }}
+       hidden></div>
+  <script src="/js/consent.js" defer></script>
+
+  {{ $js := resources.Get "js/main.js" | fingerprint }}
+  {{ if $js }}
+    <script src="{{ $js.RelPermalink }}"></script>
+  {{ end }}
+
+  {{/* orb.js — particle field for the home hero. Only loads if a
+       #flow-canvas element is present on the page (the script itself
+       bails out otherwise). Deferred so it doesn't block interactive. */}}
+  {{ if .IsHome }}
+  {{ $orb := resources.Get "js/orb.js" | fingerprint }}
+  {{ if $orb }}
+    <script src="{{ $orb.RelPermalink }}" defer></script>
+  {{ end }}
+  {{ end }}
+
+  {{ block "scripts" . }}{{ end }}
+</body>
+</html>

@@ -1,0 +1,110 @@
+---
+title: "Alternatives"
+description: "Cozystack and Ænix Platform compared with VMware, OpenStack, OpenShift, Proxmox, Nutanix and Backstage — honest comparisons and migration paths."
+hero_subtitle: "Honest comparisons and real migration paths off legacy platforms"
+language: "en"
+hreflang_de: /de/alternativen/
+---
+
+**Cozystack and Ænix Platform compared with the most common alternatives. Honest assessments — when each fits, when it doesn't, what migration looks like. Not marketing battle cards.**
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/products/">Explore platform →</a>
+</div>
+
+---
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Legacy platforms</b><div class="diagram__chips"><span>VMware</span><span>OpenStack</span><span>Proxmox</span><span>OpenShift</span></div></div>
+<div class="diagram__conn">compare &amp; migrate</div>
+<div class="diagram__node"><b>Migration hubs</b><div class="diagram__chips"><span>VMware</span><span>OpenStack</span><span>Proxmox</span><span>CloudStack</span></div></div>
+<div class="diagram__conn">land on</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Public Cloud Platform</span><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
+</div>
+</div>
+
+## VMware
+
+Post-Broadcom, VMware customers face subscription pressure + license model uncertainty. The largest single migration trigger we see in 2026.
+
+- **[VMware alternative](/alternatives/vmware-alternative/)** — singular, BOFU intent; for organizations close to migration decision
+- **[VMware alternatives (listicle)](/alternatives/vmware-alternatives/)** — plural, MOFU intent; market-shortlist comparison
+- **[Cozystack vs VMware](/compare/cozystack-vs-vmware/)** — direct head-to-head architectural comparison
+- **[VMware migration hub](/migration/vmware/)** — strategy + architecture + cohort migration patterns
+
+**Pairs with:** Public Cloud Platform (hosting providers exiting VMware Cloud Director, and large operators); Private Cloud Platform (regulated enterprises exiting VMware Cloud Foundation).
+
+## OpenStack
+
+OpenStack runs at scale but operationally heavy. Common modernization trigger — replace OpenStack with Cozystack-based foundation, faster feature velocity, smaller ops team.
+
+- **[OpenStack alternative](/alternatives/openstack-alternative/)** — when to replace OpenStack
+- **[Cozystack vs OpenStack](/compare/cozystack-vs-openstack/)** — direct comparison
+- **[OpenStack migration hub](/migration/openstack/)** — modernization patterns
+
+**Pairs with:** Public Cloud Platform.
+
+## Proxmox
+
+Proxmox is excellent for small environments. Beyond a certain scale, multi-tenancy + service catalog + billing become limiting. Public Cloud Platform fills that gap.
+
+- **[Proxmox alternative](/alternatives/proxmox-alternative/)** — when Proxmox isn't enough
+- **[Cozystack vs Proxmox](/compare/cozystack-vs-proxmox/)** — direct comparison
+- **[Proxmox migration hub](/migration/proxmox/)** — migration patterns
+
+**Pairs with:** Public Cloud Platform.
+
+## OpenShift
+
+OpenShift is enterprise-grade but Red Hat subscription model + opinionated approach don't fit every organization. Sovereign and cost-conscious enterprises evaluate alternatives.
+
+- **[OpenShift alternative](/alternatives/openshift-alternative/)** — when to look beyond OpenShift
+- **[Cozystack vs OpenShift](/compare/cozystack-vs-openshift/)** — direct comparison
+
+**Pairs with:** Private Cloud Platform, including its developer self-service layer.
+
+## Nutanix
+
+Nutanix HCI is the strongest day-2 experience in this list, and proprietary. Sovereign and cost-conscious enterprises evaluate alternatives when hardware freedom or a multi-tenant service-provider model matters more than that.
+
+- **[Nutanix alternative](/alternatives/nutanix-alternative/)** — when to look beyond Nutanix
+
+**Pairs with:** Private Cloud Platform.
+
+## Backstage
+
+Backstage is a UI framework for IDPs. Useful but not a complete IDP — it needs a cloud foundation underneath. Private Cloud Platform ships both layers.
+
+- **[Backstage alternative](/alternatives/backstage-alternative/)** — when Backstage isn't enough
+
+**Pairs with:** Private Cloud Platform (developer self-service layer).
+
+## CloudStack
+
+CloudStack legacy environments — modernization patterns to Cozystack-based stack.
+
+- **[CloudStack migration hub](/migration/cloudstack/)** — migration patterns
+
+**Pairs with:** Public Cloud Platform.
+
+---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
+## How to use this page
+
+1. **Identify what you're moving away from** — VMware / OpenStack / Proxmox / OpenShift / Nutanix / Backstage / CloudStack
+2. **Read the alternative or compare page** — honest assessment of fit
+3. **Read the migration hub** if available — practical patterns
+4. **Identify the matching platform** — what you'd run instead
+5. **Book a discovery call** — discuss your specific scope
+
+</div>
+</div>
+
+---
+
+*See also: [Solutions →](/solutions/) for trigger-led entry; [Migration hubs →](/migration/) for practical patterns; [Products →](/products/) for what you buy.*

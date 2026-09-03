@@ -1,0 +1,10 @@
+{{/* seo-blocks — manual GEO answer-first blocks (direct_answer + quick_facts).
+
+  Thin wrapper over partials/seo/geo-intro.html (single source of truth).
+  NOTE: _default/single.html and _default/list.html now AUTO-INJECT these
+  blocks from frontmatter. Use this shortcode only on pages rendered by a
+  template that does not auto-inject; otherwise the blocks render twice.
+
+      {{< seo-blocks >}}
+*/}}
+{{ partial "seo/geo-intro.html" .Page }}

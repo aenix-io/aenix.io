@@ -1,275 +1,264 @@
 ---
-title: "OSS Contribution Report"
-description: "Ænix open source contribution report — PRs, hours, and value across Cozystack ecosystem and external upstream projects."
-url: "/oss-contribution/"
-layout: "oss-contribution"
+title: OSS Contribution Report
+description: Ænix open source contribution report — PRs, hours, and value across Cozystack ecosystem and external upstream projects.
+url: /oss-contribution/
+layout: oss-contribution
 aliases:
-  - "/oss-contribution.html"
-last_updated: "2026-04-20"
-
-eyebrow: "Open Source · Jan 2025 – Apr 2026"
+- /oss-contribution.html
+last_updated: '2026-06-01'
+eyebrow: Open Source · Jan 2025 – Jun 2026
 hero:
-  title_pre: "Our Contribution to"
-  title: "Open Source"
-  subtitle: "The Aenix engineering team's full open source footprint — from Cozystack itself to upstream dependencies and personal projects."
-
+  title_pre: Our Contribution to
+  title: Open Source
+  subtitle: The Aenix engineering team's full open source footprint — from Cozystack itself to upstream dependencies and personal projects.
 hero_stats:
-  - value: "1,557"
-    label: "Total OSS PRs<br>all categories"
-    variant: "c"
-  - value: "1,225"
-    label: "Cozystack org<br>PRs merged"
-    variant: "default"
-  - value: "58"
-    label: "External upstream<br>OSS PRs"
-    variant: "g"
-  - value: "274"
-    label: "Personal OSS<br>PRs (lexfrei)"
-    variant: "a"
-  - value: "12"
-    label: "Engineers<br>tracked"
-    variant: "default"
-
-categories_lead: "Every merged pull request by an Aenix engineer to any open source repository, grouped into three categories and measured from each engineer's first commit to the organization (no earlier than January 2025)."
+- value: 1,896
+  label: Total OSS PRs<br>all categories
+  variant: c
+- value: 1,476
+  label: Cozystack org<br>PRs merged
+  variant: default
+- value: '64'
+  label: External upstream<br>OSS PRs
+  variant: g
+- value: '356'
+  label: Personal OSS<br>PRs (lexfrei)
+  variant: a
+- value: '12'
+  label: Engineers<br>tracked
+  variant: default
+categories_lead: Every merged pull request by an Aenix engineer to any open source repository, grouped into three categories and measured from each engineer's first commit to the organization (no earlier than January 2025).
 categories:
-  - label: "Cozystack ecosystem"
-    value: "1,225"
-    sub: "PRs across cozystack/* repos — the main product: cozystack/cozystack, talm, website, cozyhr, boot-to-talos, and more."
-    val: "$262,493"
-    hrs: "~4,900 hours · avg 4h/PR"
-    color: "var(--brand-primary)"
-  - label: "External OSS upstream"
-    value: "58"
-    sub: "PRs to third-party projects the team depends on or builds with: seaweedfs, kilo, etcd-operator, kamaji, kubernetes-sigs, and more."
-    val: "$26,410"
-    hrs: "~493 hours · varies 4–14h/PR"
-    color: "var(--brand-green)"
-  - label: "Personal OSS (lexfrei)"
-    value: "274"
-    sub: "PRs across lexfrei's personal open source repositories: Helm charts, Cloudflare tunnel controller, Minecraft operator, and others."
-    val: "$73,390"
-    hrs: "~1,370 hours · avg 5h/PR"
-    color: "var(--brand-accent)"
-
-projects_lead: "Pull requests to third-party open source projects — direct dependencies and adjacent ecosystem projects."
+- label: Cozystack ecosystem
+  value: 1,476
+  sub: 'PRs across cozystack/* repos — the main product: cozystack/cozystack, talm, website, cozyhr, boot-to-talos, and more.'
+  val: $316,277
+  hrs: ~5,904 hours · avg 4h/PR
+  color: var(--brand-primary)
+- label: External OSS upstream
+  value: '64'
+  sub: 'PRs to third-party projects the team depends on or builds with: seaweedfs, kilo, etcd-operator, kamaji, kubernetes-sigs, and more.'
+  val: $29,142
+  hrs: ~544 hours · varies 4–14h/PR
+  color: var(--brand-green)
+- label: Personal OSS (lexfrei)
+  value: '356'
+  sub: 'PRs across lexfrei''s personal open source repositories: Helm charts, Cloudflare tunnel controller, Minecraft operator, and others.'
+  val: $95,354
+  hrs: ~1,780 hours · avg 5h/PR
+  color: var(--brand-accent)
+projects_lead: Pull requests to third-party open source projects — direct dependencies and adjacent ecosystem projects.
 projects:
-  - icon: "🗄"
-    name: "seaweedfs / seaweedfs"
-    desc: "Object Lock CLI, named volumes, COSI sidecar, trafficDistribution, BucketClass params. Contributed by 5 engineers."
-    prs: 10
-    tag: "Storage"
-    tag_kind: "s"
-    authors: "kvaps · IvanHunters · klinch0 · nbykov0 · sircthulhu"
-  - icon: "⚙️"
-    name: "aenix-io / etcd-operator"
-    desc: "Metrics port, TLS client certs, VPA support, kube-rbac-proxy replacement. Aenix's own open source etcd operator."
-    prs: 6
-    tag: "Operator"
-    tag_kind: "o"
-    authors: "lllamnyp(4) · kvaps · klinch0"
-  - icon: "🗄"
-    name: "seaweedfs / seaweedfs-cosi-driver"
-    desc: "Object Lock WORM, IAM accessPolicy, disk/replication BucketClass params, concurrency safety, Go 1.24 CI."
-    prs: 5
-    tag: "Storage"
-    tag_kind: "s"
-    authors: "IvanHunters"
-  - icon: "🌐"
-    name: "squat / kilo"
-    desc: "Cilium encapsulation, WireGuard MTU auto-detect, --internal-cidr flag, topology handling improvements."
-    prs: 5
-    tag: "Networking"
-    tag_kind: "n"
-    authors: "kvaps"
-  - icon: "🗄"
-    name: "piraeusdatastore / helm-charts + linstor"
-    desc: "Scheduler template, KubeSchedulerConfig v1, k8s version suffix handling, RWX block volume validation."
-    prs: 4
-    tag: "Storage"
-    tag_kind: "s"
-    authors: "kvaps · lexfrei"
-  - icon: "⚙️"
-    name: "clastix / kamaji"
-    desc: "Configurable startup probe threshold; fix label preservation to avoid overwriting third-party metadata."
-    prs: 2
-    tag: "Operator"
-    tag_kind: "o"
-    authors: "lexfrei · lllamnyp"
-  - icon: "☸️"
-    name: "kubernetes-sigs / COSI"
-    desc: "Container Object Storage Interface. Reconciliation logic fix and bucket naming improvements."
-    prs: 2
-    tag: "CNCF SIG"
-    tag_kind: "cn"
-    authors: "kvaps"
-  - icon: "📦"
-    name: "Homebrew + NixOS / nixpkgs"
-    desc: "talm shell completions in Homebrew; talm 0.22.1 init in NixOS; cozyhr 1.6.1 Homebrew formula."
-    prs: 3
-    tag: "Packaging"
-    tag_kind: "p"
-    authors: "kitsunoff · lexfrei"
-  - icon: "🌍"
-    name: "CNCF landscape, foundation, gitdm"
-    desc: "Cozystack listed in CNCF landscape; maintainers in foundation; affiliation mapping in gitdm."
-    prs: 3
-    tag: "CNCF"
-    tag_kind: "cn"
-    authors: "kvaps · tym83 · lexfrei"
-  - icon: "⚙️"
-    name: "kubernetes-sigs / external-dns"
-    desc: "Re-enqueue failed events in the controller work queue for better DNS sync reliability."
-    prs: 1
-    tag: "Networking"
-    tag_kind: "n"
-    authors: "lexfrei"
-  - icon: "📊"
-    name: "VictoriaMetrics / operator"
-    desc: "Conserve custom labels on services — prevents unexpected label loss during reconciliation."
-    prs: 1
-    tag: "Operator"
-    tag_kind: "o"
-    authors: "lllamnyp"
-  - icon: "☸️"
-    name: "kubevirt, kubeovn, keycloak & others"
-    desc: "kubevirt/csi-driver deadlock fix; kubeovn/kube-ovn Helm fix; epam/edp-keycloak-operator; grafana/grafana-operator; meshtastic/python; gethomepage/homepage."
-    prs: 6
-    tag: "Various"
-    tag_kind: "o"
-    authors: "kvaps · lexfrei · lllamnyp · klinch0"
-
-cncf_lead: "Beyond merged pull requests: issues opened, code reviews, and discussion participation across all public repositories, Jan 2025 – Apr 2026."
+- icon: 🗄
+  name: seaweedfs / seaweedfs
+  desc: Object Lock CLI, named volumes, COSI sidecar, trafficDistribution, BucketClass params. Contributed by 5 engineers.
+  prs: 10
+  tag: Storage
+  tag_kind: s
+  authors: kvaps · IvanHunters · klinch0 · nbykov0 · sircthulhu
+- icon: ⚙️
+  name: aenix-io / etcd-operator
+  desc: Metrics port, TLS client certs, VPA support, kube-rbac-proxy replacement. Aenix's own open source etcd operator.
+  prs: 6
+  tag: Operator
+  tag_kind: o
+  authors: lllamnyp(4) · kvaps · klinch0
+- icon: 🗄
+  name: seaweedfs / seaweedfs-cosi-driver
+  desc: Object Lock WORM, IAM accessPolicy, disk/replication BucketClass params, concurrency safety, Go 1.24 CI.
+  prs: 5
+  tag: Storage
+  tag_kind: s
+  authors: IvanHunters
+- icon: 🌐
+  name: squat / kilo
+  desc: Cilium encapsulation, WireGuard MTU auto-detect, --internal-cidr flag, topology handling improvements.
+  prs: 5
+  tag: Networking
+  tag_kind: n
+  authors: kvaps
+- icon: 🗄
+  name: piraeusdatastore / helm-charts + linstor
+  desc: Scheduler template, KubeSchedulerConfig v1, k8s version suffix handling, RWX block volume validation.
+  prs: 4
+  tag: Storage
+  tag_kind: s
+  authors: kvaps · lexfrei
+- icon: ⚙️
+  name: clastix / kamaji
+  desc: Configurable startup probe threshold; fix label preservation to avoid overwriting third-party metadata.
+  prs: 2
+  tag: Operator
+  tag_kind: o
+  authors: lexfrei · lllamnyp
+- icon: ☸️
+  name: kubernetes-sigs / COSI
+  desc: Container Object Storage Interface. Reconciliation logic fix and bucket naming improvements.
+  prs: 2
+  tag: CNCF SIG
+  tag_kind: cn
+  authors: kvaps
+- icon: 📦
+  name: Homebrew + NixOS / nixpkgs
+  desc: talm shell completions in Homebrew; talm 0.22.1 init in NixOS; cozyhr 1.6.1 Homebrew formula.
+  prs: 3
+  tag: Packaging
+  tag_kind: p
+  authors: kitsunoff · lexfrei
+- icon: 🌍
+  name: CNCF landscape, foundation, gitdm
+  desc: Cozystack listed in CNCF landscape; maintainers in foundation; affiliation mapping in gitdm.
+  prs: 3
+  tag: CNCF
+  tag_kind: cn
+  authors: kvaps · tym83 · lexfrei
+- icon: ⚙️
+  name: kubernetes-sigs / external-dns
+  desc: Re-enqueue failed events in the controller work queue for better DNS sync reliability.
+  prs: 1
+  tag: Networking
+  tag_kind: n
+  authors: lexfrei
+- icon: 📊
+  name: VictoriaMetrics / operator
+  desc: Conserve custom labels on services — prevents unexpected label loss during reconciliation.
+  prs: 1
+  tag: Operator
+  tag_kind: o
+  authors: lllamnyp
+- icon: ☸️
+  name: kubevirt, kubeovn, keycloak & others
+  desc: kubevirt/csi-driver deadlock fix; kubeovn/kube-ovn Helm fix; epam/edp-keycloak-operator; grafana/grafana-operator; meshtastic/python; gethomepage/homepage.
+  prs: 6
+  tag: Various
+  tag_kind: o
+  authors: kvaps · lexfrei · lllamnyp · klinch0
+cncf_lead: 'Beyond merged pull requests: issues opened, code reviews, and discussion participation across all public repositories, Jan 2025 – Apr 2026.'
 cncf_stats:
-  - label: "Issues opened"
-    value: "456+"
-    sub: "Bugs, feature requests, and questions filed across all public repos"
-    color: "#e07b39"
-  - label: "PR reviews"
-    value: "1,309+"
-    sub: "Pull requests reviewed — code quality, correctness, and architecture"
-    color: "var(--brand-green)"
-  - label: "Comments"
-    value: "1,855+"
-    sub: "Issue + PR discussion threads participated in"
-    color: "var(--brand-primary)"
-  - label: "Non-PR total"
-    value: "3,620+"
-    sub: "Issues + reviews + comments combined (excl. BROngineer)"
-    color: "var(--text-primary)"
-
+- label: Issues opened
+  value: 677+
+  sub: Bugs, feature requests, and questions filed across all public repos
+  color: '#e07b39'
+- label: PR reviews
+  value: 1,654+
+  sub: Pull requests reviewed — code quality, correctness, and architecture
+  color: var(--brand-green)
+- label: Comments
+  value: 2,366+
+  sub: Issue + PR discussion threads participated in
+  color: var(--brand-primary)
+- label: Non-PR total
+  value: 4,697+
+  sub: Issues + reviews + comments combined (excl. BROngineer)
+  color: var(--text-primary)
 contrib_table:
-  - group: "Cozystack ecosystem"
-    issues: "124"
-    reviews: "1,105"
-    comments: "1,372"
-    rows:
-      - name: "cozystack/cozystack"
-        prs: "878"
-        bold: true
-      - name: "cozystack/website"
-        prs: "169"
-      - name: "cozystack/talm"
-        prs: "85"
-      - name: "cozystack/cozyhr"
-        prs: "12"
-      - name: "cozystack/boot-to-talos"
-        prs: "8"
-      - name: "cozystack/talos-preboot-iso"
-        prs: "6"
-      - name: "cozystack/ansible-cozystack"
-        prs: "5"
-      - name: "+ cozystack-scheduler, kubeovn-chart, cozyvalues-gen, homebrew-tap, kubeapps…"
-        prs: "~8"
-        muted: true
-    subtotal:
-      name: "Cozystack subtotal"
-      prs: "1,225"
-      issues: "124"
-      reviews: "1,105"
-      comments: "1,372"
-  - group: "External OSS upstream"
-    issues: "282"
-    reviews: "83"
-    comments: "332"
-    rows:
-      - name: "seaweedfs/seaweedfs + cosi-driver"
-        prs: "15"
-      - name: "aenix-io/etcd-operator"
-        prs: "6"
-      - name: "squat/kilo"
-        prs: "5"
-      - name: "piraeusdatastore/helm-charts + linstor"
-        prs: "4"
-      - name: "CNCF landscape, foundation, gitdm"
-        prs: "3"
-      - name: "Homebrew + NixOS/nixpkgs"
-        prs: "3"
-      - name: "clastix/kamaji"
-        prs: "2"
-      - name: "kubernetes-sigs/COSI"
-        prs: "2"
-      - name: "kubernetes-sigs/external-dns"
-        prs: "1"
-      - name: "VictoriaMetrics/operator"
-        prs: "1"
-      - name: "kubevirt, kubeovn, keycloak, grafana, meshtastic, gethomepage"
-        prs: "6"
-        muted: true
-    subtotal:
-      name: "External subtotal"
-      prs: "58"
-      issues: "282"
-      reviews: "83"
-      comments: "332"
-  - group: "Personal OSS (lexfrei)"
-    issues_placeholder: "included in external totals"
-    rows:
-      - name: "charts, cloudflare-tunnel-gw, extractedprism, minecraft-operator, k8s, kuberture, terraform-provider-namedotcom, claudeline, mcp-tg"
-        prs: "274"
-        muted: true
-
+- group: Cozystack ecosystem
+  issues: '124'
+  reviews: 1,105
+  comments: 1,372
+  rows:
+  - name: cozystack/cozystack
+    prs: '878'
+    bold: true
+  - name: cozystack/website
+    prs: '169'
+  - name: cozystack/talm
+    prs: '85'
+  - name: cozystack/cozyhr
+    prs: '12'
+  - name: cozystack/boot-to-talos
+    prs: '8'
+  - name: cozystack/talos-preboot-iso
+    prs: '6'
+  - name: cozystack/ansible-cozystack
+    prs: '5'
+  - name: + cozystack-scheduler, kubeovn-chart, cozyvalues-gen, homebrew-tap, kubeapps…
+    prs: ~8
+    muted: true
+  subtotal:
+    name: Cozystack subtotal
+    prs: 1,476
+    issues: '124'
+    reviews: 1,105
+    comments: 1,372
+- group: External OSS upstream
+  issues: '282'
+  reviews: '83'
+  comments: '332'
+  rows:
+  - name: seaweedfs/seaweedfs + cosi-driver
+    prs: '15'
+  - name: aenix-io/etcd-operator
+    prs: '6'
+  - name: squat/kilo
+    prs: '5'
+  - name: piraeusdatastore/helm-charts + linstor
+    prs: '4'
+  - name: CNCF landscape, foundation, gitdm
+    prs: '3'
+  - name: Homebrew + NixOS/nixpkgs
+    prs: '3'
+  - name: clastix/kamaji
+    prs: '2'
+  - name: kubernetes-sigs/COSI
+    prs: '2'
+  - name: kubernetes-sigs/external-dns
+    prs: '1'
+  - name: VictoriaMetrics/operator
+    prs: '1'
+  - name: kubevirt, kubeovn, keycloak, grafana, meshtastic, gethomepage
+    prs: '6'
+    muted: true
+  subtotal:
+    name: External subtotal
+    prs: '64'
+    issues: '282'
+    reviews: '83'
+    comments: '332'
+- group: Personal OSS (lexfrei)
+  issues_placeholder: included in external totals
+  rows:
+  - name: charts, cloudflare-tunnel-gw, extractedprism, minecraft-operator, k8s, kuberture, terraform-provider-namedotcom, claudeline, mcp-tg
+    prs: '356'
+    muted: true
 contrib_total:
-  name: "Grand total"
-  prs: "1,557"
-  issues: "456+"
-  reviews: "1,309+"
-  comments: "1,855+"
-
-contrib_note: "\"Comments\" = unique issues/PRs where the engineer commented (issue + PR comments). Non-PR data via GitHub Search API; per-project breakdown not available — shown at category level. BROngineer profile is search-API restricted; numbers are lower bounds."
-
-cost_methodology: "<b>Methodology:</b> Engineer cost $9,000/month all-in → $53.57/hr (168 working hours/month). <b>PR effort estimates:</b> minor/doc 4h · bug fix 6h · feature 10h · complex 12–14h · Cozystack avg 4h (high-velocity project) · Personal OSS avg 5h. All estimates are conservative."
-
+  name: Grand total
+  prs: 1,896
+  issues: 677+
+  reviews: 1,654+
+  comments: 2,366+
+contrib_note: '"Comments" = unique issues/PRs where the engineer commented (issue + PR comments). Non-PR data via GitHub Search API; per-project breakdown not available — shown at category level. BROngineer profile is search-API restricted; numbers are lower bounds.'
+cost_methodology: <b>Methodology:</b> Engineer cost $9,000/month all-in → $53.57/hr (168 working hours/month). <b>PR effort estimates:</b> minor/doc 4h · bug fix 6h · feature 10h · complex 12–14h · Cozystack avg 4h (high-velocity project) · Personal OSS avg 5h. All estimates are conservative.
 cost_summary:
-  - label: "Total PRs"
-    value: "1,557"
-    sub: "all three categories combined"
-  - label: "Total hours"
-    value: "6,763"
-    unit: "h"
-    sub: "40.3 engineer-months"
-  - label: "Total value"
-    value: "$362"
-    unit: "k"
-    sub: "$362,293 equivalent"
-  - label: "Cost per PR"
-    value: "$232"
-    unit: "avg"
-    sub: "weighted across all categories"
-
+- label: Total PRs
+  value: 1,896
+  sub: all three categories combined
+- label: Total hours
+  value: 8,228
+  unit: h
+  sub: 49.0 engineer-months
+- label: Total value
+  value: $441
+  unit: k
+  sub: $440,773 equivalent
+- label: Cost per PR
+  value: $232
+  unit: avg
+  sub: weighted across all categories
 cost_breakdown:
-  - cat: "Cozystack ecosystem"
-    prs: "1,225 PRs · avg 4h/PR"
-    hours: "4,900 hours"
-    value: "$262,493"
-    color: "var(--brand-primary)"
-  - cat: "External OSS upstream"
-    prs: "58 PRs · avg 8.5h/PR"
-    hours: "493 hours"
-    value: "$26,410"
-    color: "var(--brand-green)"
-  - cat: "Personal OSS (lexfrei)"
-    prs: "274 PRs · avg 5h/PR"
-    hours: "1,370 hours"
-    value: "$73,390"
-    color: "var(--brand-accent)"
+- cat: Cozystack ecosystem
+  prs: 1,476 PRs · avg 4h/PR
+  hours: 5,904 hours
+  value: $316,277
+  color: var(--brand-primary)
+- cat: External OSS upstream
+  prs: 64 PRs · avg 8.5h/PR
+  hours: 544 hours
+  value: $29,142
+  color: var(--brand-green)
+- cat: Personal OSS (lexfrei)
+  prs: 356 PRs · avg 5h/PR
+  hours: 1,780 hours
+  value: $95,354
+  color: var(--brand-accent)
 ---

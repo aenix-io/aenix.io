@@ -1,0 +1,42 @@
+{{/*
+  quote-carousel — rotating customer testimonials from data/testimonials.yaml.
+  Every slide is in the DOM (SEO/GEO-safe); JS shows one at a time and
+  auto-rotates (pauses on hover/focus, disabled under prefers-reduced-motion).
+  Uses the .quote-person framed card. German pages get quote_de / role_de
+  when present, otherwise fall back to the English text. Avatar shows the
+  photo when set, otherwise the person's initials.
+
+  Usage: {{< quote-carousel >}}
+*/}}
+{{- $items := $.Site.Data.testimonials -}}
+{{- if $items -}}
+{{- $de := eq $.Page.Params.language "de" -}}
+<div class="quote-carousel" data-quote-carousel data-autoplay="6500">
+  <div class="quote-carousel__viewport">
+    {{- range $i, $t := $items -}}
+      {{- $q := $t.quote -}}{{- if and $de $t.quote_de -}}{{- $q = $t.quote_de -}}{{- end -}}
+      {{- $r := $t.role -}}{{- if and $de $t.role_de -}}{{- $r = $t.role_de -}}{{- end -}}
+      <figure class="quote-carousel__slide quote-person{{ if eq $i 0 }} is-active{{ end }}" data-index="{{ $i }}"{{ if ne $i 0 }} aria-hidden="true"{{ end }}>
+        <p class="quote-person__body">"{{ $q }}"</p>
+        <figcaption class="quote-person__cite">
+          <span class="quote-person__avatar">
+            {{- with $t.photo -}}
+              <img src="{{ . }}" alt="{{ $t.name }}" width="56" height="56" loading="eager" decoding="async">
+            {{- else -}}
+              {{- $ini := "" -}}{{- range first 2 (split $t.name " ") -}}{{- $ini = printf "%s%s" $ini (substr . 0 1) -}}{{- end -}}{{- upper $ini -}}
+            {{- end -}}
+          </span>
+          <span><span class="quote-person__name">{{ $t.name }}</span>{{ with $r }}<span class="quote-person__role">{{ . }}</span>{{ end }}</span>
+        </figcaption>
+      </figure>
+    {{- end -}}
+  </div>
+  {{- if gt (len $items) 1 -}}
+  <div class="quote-carousel__dots" role="tablist" aria-label="{{ if $de }}Kundenstimmen{{ else }}Customer testimonials{{ end }}">
+    {{- range $i, $t := $items -}}
+      <button type="button" class="quote-carousel__dot{{ if eq $i 0 }} is-active{{ end }}" data-goto="{{ $i }}" aria-label="{{ if $de }}Stimme{{ else }}Testimonial{{ end }} {{ add $i 1 }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"></button>
+    {{- end -}}
+  </div>
+  {{- end -}}
+</div>
+{{- end -}}

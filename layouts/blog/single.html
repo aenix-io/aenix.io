@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{/*
+  Backup-path layout for blog posts where Hugo template lookup
+  reaches /layouts/<section>/single.html (i.e. when frontmatter
+  `type:` is unset and section "blog" is used as the type).
+
+  For posts with type: "article" / "tutorial" / "news" /
+  "announcement" / etc. in frontmatter, Hugo skips this file and
+  lands on /layouts/_default/single.html — which we also override
+  at project level (see layouts/_default/single.html). Both call
+  the same partial below, so the rendering is identical regardless
+  of which lookup path Hugo follows.
+*/}}
+{{ partial "blog-single-body.html" . }}
+{{ end }}
+
+{{ define "scripts" }}
+{{ if .Params.quiz }}<script src="/js/blog-quiz.js" defer></script>{{ end }}
+<script src="/js/blog-share.js" defer></script>
+{{ end }}

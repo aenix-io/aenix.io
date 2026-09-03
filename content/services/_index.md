@@ -1,0 +1,82 @@
+---
+title: "Services"
+description: "Aenix services: Platform Readiness Assessment entry offer, platform engineering, internal developer platform, and public, sovereign, and AI cloud builds."
+hero_subtitle: "From readiness assessment to a fully built cloud platform"
+language: "en"
+hreflang_de: /de/dienstleistungen/
+---
+
+**Engagement-led entry points to Ænix work. Pick the engagement type that matches what you need to do — assess, build, operate. All paths lead to Ænix Platform deployments matched to your buyer profile.**
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/services/platform-readiness-assessment/">Get readiness assessment →</a>
+</div>
+
+---
+
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
+## Browse services
+
+### Entry offer (start here)
+
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — 14-28 day fixed-price engagement, price agreed before it starts. Architecture audit, platform recommendation, migration roadmap. **The single most common starting point.**
+
+### Build engagements
+
+- **[Platform engineering](/services/platform-engineering/)** — Build a production cloud platform; pairs with any Ænix platform
+- **[Internal developer platform](/services/internal-developer-platform/)** — IDP build for product / SaaS organizations; pairs with Developer Self-Service
+- **[Build private cloud](/services/build-private-cloud/)** — Private cloud build for enterprises; pairs with Private Cloud Platform
+- **[Public cloud builder](/services/public-cloud-builder/)** — Customer-facing cloud product build; pairs with Public Cloud Platform
+- **[Sovereign cloud builder](/services/sovereign-cloud-builder/)** — Government / public-sector sovereign cloud builds; pairs with Private Cloud Platform
+- **[White-label cloud](/services/white-label-cloud/)** — Branded cloud platform for MSP / channel partners; pairs with Public Cloud Platform
+- **[AI platform build](/services/ai-platform-build/)** — AI/GPU infrastructure build; pairs with AI Platform
+
+### Consulting engagements
+
+- **[Private cloud consulting](/services/private-cloud-consulting/)** — Architecture review, decision support, scoping work for private-cloud initiatives
+- **[Kubernetes consulting](/services/kubernetes-consulting/)** — Targeted Kubernetes engagements (architecture, troubleshooting, scaling)
+- **[Devops consulting](/services/devops-consulting/)** — DevOps process + tooling work
+- **[Cloud engineering](/services/cloud-engineering/)** — Cloud-native engineering augmentation
+- **[Enterprise platform engineering](/services/enterprise-platform-engineering/)** — Platform engineering for large enterprises with established teams
+- **[Cloud strategy consultancy](/services/cloud-strategy-consultancy/)** — CIO / CTO strategy work; multi-quarter engagements
+- **[SRE consulting](/services/sre-consulting/)** — SRE practice setup, on-call, runbook work
+
+</div>
+</div>
+
+---
+
+## Engagement model
+
+{{< design-note >}}
+Render as 5-step horizontal flow. Each step: number, bold heading, 1-line description, icon.
+{{< /design-note >}}
+
+1. **Discovery call** (30 min, free) — confirm fit, scope, regulatory context, platform match
+2. **Platform Readiness Assessment** (14-28 days, fixed price agreed up front) — current-state audit, platform recommendation, roadmap
+3. **Pilot engagement** (3-6 months, quoted per RFP) — defined slice, validated business case
+4. **Full platform build** — weeks to live for Public Cloud Platform at provider scale via the productized installer; 9-18 months for a multi-region operator build or a regulated multi-DC Private Cloud Platform
+5. **Managed operations** (ongoing retainer) — Ænix runs the platform you operate, or hybrid
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Assess</b><div class="diagram__chips"><span>Platform Readiness Assessment</span><span>Audit + roadmap</span></div></div>
+<div class="diagram__conn">leads to</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform build</b><div class="diagram__chips"><span>Platform engineering</span><span>IDP</span><span>Private / public / sovereign cloud</span><span>AI platform</span></div></div>
+<div class="diagram__conn">handed to</div>
+<div class="diagram__node"><b>Operate</b><div class="diagram__chips"><span>Managed operations</span><span>SRE / DevOps consulting</span></div></div>
+</div>
+</div>
+
+---
+
+## Pricing
+
+Public Cloud Platform entry from $1,250 per month (Basic support tier, 10 nodes). Private Cloud Platform and AI Platform are programmes, not SKUs — quoted per RFP after scoping. Engagement add-ons (assessment, pilot, build, managed operations) are priced separately per scope. [Pricing details →](/pricing/).
+
+---
+
+*See also: [Solutions →](/solutions/) for trigger-led entry; [Industries →](/industries/) for vertical proof; [Products →](/products/) for what you buy.*

@@ -1,0 +1,25 @@
+{{/*
+  spoiler — collapsible <details> block, used for term definitions,
+  optional context, code-heavy explanations.
+
+  Usage:
+    {{< spoiler title="What is a Tenant CRD?" >}}
+    The `Tenant` CRD in Cozystack carves a multi-tenant cloud into
+    isolated buyer-namespaces with their own quotas, RBAC, and storage.
+    Each tenant gets a Kubernetes namespace + a budgeted slice of the
+    underlying GPU / CPU / storage pool.
+    {{< /spoiler >}}
+
+  kind: default | term | code (controls icon/style)
+*/}}
+{{- $title := .Get "title" | default "More" -}}
+{{- $kind := .Get "kind" | default "default" -}}
+<details class="spoiler spoiler--{{ $kind }}">
+  <summary class="spoiler__summary">
+    <span class="spoiler__icon" aria-hidden="true">▸</span>
+    <span class="spoiler__title">{{ $title }}</span>
+  </summary>
+  <div class="spoiler__body">
+    {{ .Inner | markdownify }}
+  </div>
+</details>

@@ -1,12 +1,40 @@
 baseURL: https://aenix.io/
 languageCode: en-us
-title: "Ænix — Amplify your data center with cloud transformation"
+title: "Ænix — Turnkey cloud platform on Cozystack (CNCF)"
 theme: aenix
 enableRobotsTXT: true
 canonicalizeURLs: false
 
+# Sitewide page_type assignment (GEO). Cascades into every landing page by
+# section so authors don't repeat it. Page-level `page_type` in frontmatter
+# overrides the cascade. EN + DE slugs both covered; non-matching globs are
+# harmless. /for/ and /fuer/ are flag-page (no GEO requirement).
+cascade:
+  - _target: { path: '/{,de/}{solutions,loesungen}/**' }
+    page_type: solution-landing
+  - _target: { path: '/{,de/}{services,dienstleistungen}/**' }
+    page_type: services-landing
+  - _target: { path: '/{,de/}{industries,branchen}/**' }
+    page_type: industry-landing
+  - _target: { path: '/{,de/}{alternatives,alternativen}/**' }
+    page_type: alternative
+  - _target: { path: '/{,de/}{compare,vergleichen}/**' }
+    page_type: compare
+  - _target: { path: '/{,de/}migration/**' }
+    page_type: migration-hub
+  - _target: { path: '/{,de/}{resources,ressourcen}/**' }
+    page_type: lead-magnet
+  - _target: { path: '/{,de/}{products,produkte}/**' }
+    page_type: product
+  - _target: { path: '/{,de/}{for,fuer}/**' }
+    page_type: flag-page
+  - _target: { path: '/{,de/}blog/**' }
+    page_type: blog-article
+  - _target: { path: '/{,ru/}workshops/**' }
+    page_type: event-landing
+
 params:
-  description: "We build clouds! End-to-end solutions for data centers, designed to meet the evolving demands of modern business."
+  description: "Aenix builds turnkey cloud platforms on Cozystack (CNCF): Public Cloud Platform for organisations selling cloud, Private Cloud Platform for regulated organisations running their own, and AI Platform for GPU workloads."
   author: Ænix
   email: info@aenix.io
 
@@ -20,6 +48,11 @@ params:
     url: "https://u.to/v3_mIg"
   googleAnalytics: GT-NMCJ23L
   ahrefsAnalytics: GQGQZe4HnT/wYo45t5cUEw
+  # gtmContainer: GTM-XXXXXXX  # uncomment + set when GTM container is provisioned
+  # hotjarId: 0000000           # uncomment + set when Hotjar site ID is provisioned
+  # Hide design-notes by default. Enable per-build with HUGO_PARAMS_SHOW_DESIGN_NOTES=true
+  # for design hand-off previews (notes are visible source-of-record for designers).
+  hide_design_notes: true
   social:
     linkedin: https://www.linkedin.com/company/aenix/
     telegram: https://t.me/cozystack
@@ -47,102 +80,769 @@ params:
 
 menus:
   main:
+    # ── Products (3 platforms + support + WHMCS) ──
     - name: Products
       url: /products/
       weight: 10
       identifier: products
-    - name: Cozystack
-      url: /cozystack/
+    - name: Ænix Public Cloud Platform
+      url: /products/public-cloud-platform/
       parent: products
       weight: 1
-    - name: Kubernetes Deep Dive Course
-      url: /kubernetes-deep-dive-course/
+    - name: Ænix Private Cloud Platform
+      url: /products/private-cloud-platform/
       parent: products
       weight: 2
-    - name: Certification
-      url: /certification/
+    - name: Ænix AI Platform
+      url: /products/ai-platform/
       parent: products
       weight: 3
-    - name: Live Demo
-      url: /demo/
-      weight: 15
-      params:
-        cta: true
-    - name: IDP Demo
-      url: /idp/
-      weight: 16
-      params:
-        cta: true
-    - name: Pricing
-      url: /pricing/
+    - name: Enterprise support for Cozystack
+      url: /products/cozystack-enterprise-support/
+      parent: products
+      weight: 4
+    - name: WHMCS integration
+      url: /products/whmcs-integration/
+      parent: products
+      weight: 5
+
+    # ── Solutions ──
+    - name: Solutions
+      url: /solutions/
+      identifier: solutions
       weight: 20
-      identifier: pricing
-    - name: Enterprise Support
-      url: "/pricing/#support"
-      parent: pricing
+    # group: Regulatory
+    - name: Regulatory
+      identifier: solutions-regulatory
+      parent: solutions
+      weight: 10
+      params: { heading: true }
+    - name: DORA Compliance
+      url: /solutions/dora-compliance/
+      parent: solutions-regulatory
       weight: 1
-    - name: ROI Calculator
-      url: "/pricing/#roi"
-      parent: pricing
+    - name: NIS2 Compliance
+      url: /solutions/nis2-compliance/
+      parent: solutions-regulatory
+      weight: 2
+    - name: Data Sovereignty
+      url: /solutions/data-sovereignty/
+      parent: solutions-regulatory
+      weight: 3
+    # group: Cost & Architecture
+    - name: Cost & Architecture
+      identifier: solutions-cost
+      parent: solutions
+      weight: 20
+      params: { heading: true }
+    - name: Cloud Repatriation
+      url: /solutions/cloud-repatriation/
+      parent: solutions-cost
+      weight: 1
+    - name: Cloud Cost Optimization
+      url: /solutions/cloud-cost-optimization/
+      parent: solutions-cost
+      weight: 2
+    - name: Hybrid Cloud Platform
+      url: /solutions/hybrid-cloud-platform/
+      parent: solutions-cost
+      weight: 3
+
+    - name: Disaster Recovery
+      url: /solutions/disaster-recovery/
+      parent: solutions-cost
+      weight: 4
+    # group: Developer & AI
+    - name: Developer & AI
+      identifier: solutions-devai
+      parent: solutions
+      weight: 30
+      params: { heading: true }
+    - name: Developer Self-Service
+      url: /solutions/developer-self-service/
+      parent: solutions-devai
+      weight: 1
+    - name: Sovereign AI
+      url: /solutions/sovereign-ai/
+      parent: solutions-devai
       weight: 2
 
-    - name: Case Studies
-      url: /case-studies/
-      weight: 30
+    - name: GPU Cloud Bursting
+      url: /solutions/gpu-cloud-bursting/
+      parent: solutions-devai
+      weight: 3
 
+    - name: Private LLM
+      url: /solutions/private-llm/
+      parent: solutions-devai
+      weight: 4
+
+    # group: Industries
+    - name: Industries
+      identifier: solutions-industries
+      parent: solutions
+      weight: 40
+      params: { heading: true, wide: true }
+    - name: Financial Services
+      url: /industries/financial-services/
+      parent: solutions-industries
+      weight: 1
+    - name: Insurance
+      url: /industries/insurance/
+      parent: solutions-industries
+      weight: 2
+    - name: Public Sector
+      url: /industries/public-sector/
+      parent: solutions-industries
+      weight: 3
+    - name: Healthcare
+      url: /industries/healthcare/
+      parent: solutions-industries
+      weight: 4
+    - name: Telco
+      url: /industries/telco/
+      parent: solutions-industries
+      weight: 5
+    - name: Hosting Providers
+      url: /industries/hosting-providers/
+      parent: solutions-industries
+      weight: 6
+    - name: MSP
+      url: /industries/msp/
+      parent: solutions-industries
+      weight: 7
+    - name: Energy
+      url: /industries/energy/
+      parent: solutions-industries
+      weight: 8
+    - name: Manufacturing
+      url: /industries/manufacturing/
+      parent: solutions-industries
+      weight: 9
+    - name: Transport & Logistics
+      url: /industries/transport-logistics/
+      parent: solutions-industries
+      weight: 10
+    - name: Universities
+      url: /industries/universities/
+      parent: solutions-industries
+      weight: 11
+    - name: Education K-12
+      url: /industries/education-k12/
+      parent: solutions-industries
+      weight: 12
+    - name: SMB / Mid-Market
+      url: /industries/smb-mid-market/
+      parent: solutions-industries
+      weight: 13
+    - name: All industries
+      url: /industries/
+      parent: solutions-industries
+      weight: 14
+    # group: Migrate
+    - name: Migrate
+      identifier: solutions-migrate
+      parent: solutions
+      weight: 50
+      params: { heading: true }
+    - name: VMware Alternative
+      url: /alternatives/vmware-alternative/
+      parent: solutions-migrate
+      weight: 1
+    - name: VMware Migration
+      url: /migration/vmware/
+      parent: solutions-migrate
+      weight: 2
+    - name: Cozystack vs VMware
+      url: /compare/cozystack-vs-vmware/
+      parent: solutions-migrate
+      weight: 3
+    - name: Nutanix Migration
+      url: /migration/nutanix/
+      parent: solutions-migrate
+      weight: 4
+    - name: All alternatives
+      url: /alternatives/
+      parent: solutions-migrate
+      weight: 5
+    - name: All comparisons
+      url: /compare/
+      parent: solutions-migrate
+      weight: 6
+    - name: Migration overview
+      url: /migration/
+      parent: solutions-migrate
+      weight: 7
+
+    # ── Services ──
+    - name: Services
+      url: /services/
+      identifier: services
+      weight: 30
+    # group: Cloud Building
+    - name: Cloud Building
+      identifier: services-cloud-building
+      parent: services
+      weight: 10
+      params: { heading: true }
+    - name: Build Private Cloud
+      url: /services/build-private-cloud/
+      parent: services-cloud-building
+      weight: 1
+    - name: Sovereign Cloud Builder
+      url: /services/sovereign-cloud-builder/
+      parent: services-cloud-building
+      weight: 2
+    - name: Public Cloud Builder
+      url: /services/public-cloud-builder/
+      parent: services-cloud-building
+      weight: 3
+    - name: White-Label Cloud
+      url: /services/white-label-cloud/
+      parent: services-cloud-building
+      weight: 4
+    # group: Platform Engineering
+    - name: Platform Engineering
+      identifier: services-platform
+      parent: services
+      weight: 20
+      params: { heading: true }
+    - name: Platform Engineering service
+      url: /services/platform-engineering/
+      parent: services-platform
+      weight: 1
+    - name: Platform Readiness Assessment
+      url: /services/platform-readiness-assessment/
+      parent: services-platform
+      weight: 2
+    - name: Internal Developer Platform
+      url: /services/internal-developer-platform/
+      parent: services-platform
+      weight: 3
+    - name: Enterprise Platform Engineering
+      url: /services/enterprise-platform-engineering/
+      parent: services-platform
+      weight: 4
+    # group: Consulting
+    - name: Consulting
+      identifier: services-consulting
+      parent: services
+      weight: 30
+      params: { heading: true }
+    - name: Cloud Strategy Consultancy
+      url: /services/cloud-strategy-consultancy/
+      parent: services-consulting
+      weight: 1
+    - name: Cloud Engineering
+      url: /services/cloud-engineering/
+      parent: services-consulting
+      weight: 2
+    - name: Kubernetes Consulting
+      url: /services/kubernetes-consulting/
+      parent: services-consulting
+      weight: 3
+    - name: DevOps Consulting
+      url: /services/devops-consulting/
+      parent: services-consulting
+      weight: 4
+    - name: Private Cloud Consulting
+      url: /services/private-cloud-consulting/
+      parent: services-consulting
+      weight: 5
+    - name: SRE Consulting
+      url: /services/sre-consulting/
+      parent: services-consulting
+      weight: 6
+    # group: AI
+    - name: AI
+      identifier: services-ai
+      parent: services
+      weight: 40
+      params: { heading: true }
+    - name: AI Platform Build
+      url: /services/ai-platform-build/
+      parent: services-ai
+      weight: 1
+
+    # ── Pricing ──
+    - name: Pricing
+      url: /pricing/
+      weight: 50
+
+    # ── Resources ──
+    - name: Resources
+      url: /resources/
+      weight: 60
+      identifier: resources
+    - name: Lead magnets
+      url: /resources/
+      parent: resources
+      weight: 1
     - name: Blog
       url: /blog/
-      weight: 35
-
-    - name: About Us
-      url: /about-us/
-      weight: 40
-      identifier: about
+      parent: resources
+      weight: 2
+    - name: Kubernetes Deep Dive Course
+      url: /kubernetes-deep-dive/
+      parent: resources
+      weight: 3
     - name: OSS Contribution Report
       url: /oss-contribution/
-      parent: about
-      weight: 1
-    - name: Our Partners
-      url: /our-partners/
-      parent: about
-      weight: 2
-    - name: Our Team
-      url: "/about-us/#team"
-      parent: about
-      weight: 3
-    - name: Conferences
-      url: /conferences/
-      parent: about
+      parent: resources
       weight: 4
-    - name: Company Details
-      url: "/contact/#details"
-      parent: about
+    - name: VMware Cost Calculator
+      url: /resources/vmware-cost-calculator/
+      parent: resources
       weight: 5
 
+    - name: ROI & TCO Calculators
+      url: /roi-calculator/
+      parent: resources
+      weight: 6
+
+    - name: Compliance evidence
+      url: /compliance/
+      parent: resources
+      weight: 7
+
+    # ── Company ──
+    - name: Company
+      url: /about/
+      weight: 70
+      identifier: company
+    - name: About
+      url: /about/
+      parent: company
+      weight: 1
+    - name: Partners
+      url: /partners/
+      parent: company
+      weight: 2
+    - name: Conferences
+      url: /conferences/
+      parent: company
+      weight: 3
+    - name: Case Studies
+      url: /case-studies/
+      parent: company
+      weight: 4
+    - name: Enterprise Support
+      url: /products/cozystack-enterprise-support/
+      parent: company
+      weight: 5
+    - name: VMware Exit for Partners
+      url: /partners/vmware-exit/
+      parent: company
+      weight: 6
+
+    # ── Contact (CTA) ──
     - name: Contact
       url: /contact/
-      weight: 50
+      weight: 80
       params:
         cta: true
 
-  footer:
-    - name: Cozystack
-      url: /cozystack/
+    - name: Live Demo
+      url: /demo/
+      weight: 85
+      identifier: live-demo
+      params:
+        cta: true
+    - name: Cloud console demo
+      url: /demo/
+      parent: live-demo
       weight: 1
+    - name: Developer platform demo
+      url: /idp/
+      parent: live-demo
+      weight: 2
+  # ── German (DE) main menu — rendered on /de/ pages (language: de) ──
+  main_de:
+    - name: Produkte
+      url: /de/produkte/
+      identifier: products-de
+      weight: 10
+    - name: Ænix Public Cloud Platform
+      url: /de/produkte/public-cloud-platform/
+      parent: products-de
+      weight: 1
+    - name: Ænix Private Cloud Platform
+      url: /de/produkte/private-cloud-platform/
+      parent: products-de
+      weight: 2
+    - name: Ænix AI Platform
+      url: /de/produkte/ai-platform/
+      parent: products-de
+      weight: 3
+    - name: Enterprise-Support für Cozystack
+      url: /de/produkte/cozystack-enterprise-support/
+      parent: products-de
+      weight: 4
+    - name: WHMCS-Integration
+      url: /de/produkte/whmcs-integration/
+      parent: products-de
+      weight: 5
+    - name: Lösungen
+      url: /de/loesungen/
+      identifier: solutions-de
+      weight: 20
+    - name: Regulatorik
+      identifier: solutions-de-reg
+      parent: solutions-de
+      weight: 10
+      params: { heading: true }
+    - name: DORA-Compliance
+      url: /de/loesungen/dora-compliance/
+      parent: solutions-de-reg
+      weight: 1
+    - name: NIS2-Compliance
+      url: /de/loesungen/nis2-compliance/
+      parent: solutions-de-reg
+      weight: 2
+    - name: Datensouveränität
+      url: /de/loesungen/data-sovereignty/
+      parent: solutions-de-reg
+      weight: 3
+    - name: Kosten & Architektur
+      identifier: solutions-de-cost
+      parent: solutions-de
+      weight: 20
+      params: { heading: true }
+    - name: Cloud-Repatriation
+      url: /de/loesungen/cloud-repatriation/
+      parent: solutions-de-cost
+      weight: 1
+    - name: Cloud-Kostenoptimierung
+      url: /de/loesungen/cloud-kostenoptimierung/
+      parent: solutions-de-cost
+      weight: 2
+    - name: Hybrid Cloud
+      url: /de/loesungen/hybrid-cloud/
+      parent: solutions-de-cost
+      weight: 3
+    - name: Disaster Recovery
+      url: /de/loesungen/disaster-recovery/
+      parent: solutions-de-cost
+      weight: 4
+    - name: Developer & KI
+      identifier: solutions-de-devai
+      parent: solutions-de
+      weight: 30
+      params: { heading: true }
+    - name: Developer-Self-Service
+      url: /de/loesungen/developer-self-service/
+      parent: solutions-de-devai
+      weight: 1
+    - name: Souveräne KI
+      url: /de/loesungen/sovereign-ai/
+      parent: solutions-de-devai
+      weight: 2
+
+    - name: GPU Cloud Bursting
+      url: /de/loesungen/gpu-cloud-bursting/
+      parent: solutions-de-devai
+      weight: 3
+    - name: Private LLM
+      url: /de/loesungen/private-llm/
+      parent: solutions-de-devai
+      weight: 4
+    # group: Branchen
+    - name: Branchen
+      identifier: solutions-de-branchen
+      parent: solutions-de
+      weight: 40
+      params: { heading: true, wide: true }
+    - name: Finanzdienstleistungen
+      url: /de/branchen/finanzdienstleistungen/
+      parent: solutions-de-branchen
+      weight: 1
+    - name: Versicherung
+      url: /de/branchen/versicherung/
+      parent: solutions-de-branchen
+      weight: 2
+    - name: Öffentlicher Sektor
+      url: /de/branchen/oeffentlicher-sektor/
+      parent: solutions-de-branchen
+      weight: 3
+    - name: Gesundheitswesen
+      url: /de/branchen/gesundheitswesen/
+      parent: solutions-de-branchen
+      weight: 4
+    - name: Telco
+      url: /de/branchen/telco/
+      parent: solutions-de-branchen
+      weight: 5
+    - name: Hosting-Anbieter
+      url: /de/branchen/hosting-anbieter/
+      parent: solutions-de-branchen
+      weight: 6
+    - name: MSP
+      url: /de/branchen/msp/
+      parent: solutions-de-branchen
+      weight: 7
+    - name: Energie
+      url: /de/branchen/energie/
+      parent: solutions-de-branchen
+      weight: 8
+    - name: Fertigung
+      url: /de/branchen/fertigung/
+      parent: solutions-de-branchen
+      weight: 9
+    - name: Transport & Logistik
+      url: /de/branchen/transport-logistik/
+      parent: solutions-de-branchen
+      weight: 10
+    - name: Universitäten
+      url: /de/branchen/universitaeten/
+      parent: solutions-de-branchen
+      weight: 11
+    - name: K-12-Bildung
+      url: /de/branchen/k12-bildung/
+      parent: solutions-de-branchen
+      weight: 12
+    - name: Mittelstand
+      url: /de/branchen/mittelstand/
+      parent: solutions-de-branchen
+      weight: 13
+    - name: Alle Branchen
+      url: /de/branchen/
+      parent: solutions-de-branchen
+      weight: 14
+    # group: Migration
+    - name: Migration
+      identifier: solutions-de-migration
+      parent: solutions-de
+      weight: 50
+      params: { heading: true }
+    - name: VMware-Alternative
+      url: /de/alternativen/vmware-alternative/
+      parent: solutions-de-migration
+      weight: 1
+    - name: VMware-Migration
+      url: /de/migration/vmware/
+      parent: solutions-de-migration
+      weight: 2
+    - name: Cozystack vs VMware
+      url: /de/vergleichen/cozystack-vs-vmware/
+      parent: solutions-de-migration
+      weight: 3
+    - name: Nutanix-Migration
+      url: /de/migration/nutanix/
+      parent: solutions-de-migration
+      weight: 4
+    - name: Alle Alternativen
+      url: /de/alternativen/
+      parent: solutions-de-migration
+      weight: 5
+    - name: Alle Vergleiche
+      url: /de/vergleichen/
+      parent: solutions-de-migration
+      weight: 6
+    - name: Migrationsübersicht
+      url: /de/migration/
+      parent: solutions-de-migration
+      weight: 7
+    - name: Dienstleistungen
+      url: /de/dienstleistungen/
+      identifier: services-de
+      weight: 30
+    - name: Cloud-Aufbau
+      identifier: services-de-build
+      parent: services-de
+      weight: 10
+      params: { heading: true }
+    - name: Private Cloud aufbauen
+      url: /de/dienstleistungen/build-private-cloud/
+      parent: services-de-build
+      weight: 1
+    - name: Sovereign Cloud Builder
+      url: /de/dienstleistungen/sovereign-cloud-builder/
+      parent: services-de-build
+      weight: 2
+    - name: Public Cloud Builder
+      url: /de/dienstleistungen/public-cloud-builder/
+      parent: services-de-build
+      weight: 3
+    - name: White-Label-Cloud
+      url: /de/dienstleistungen/white-label-cloud/
+      parent: services-de-build
+      weight: 4
+    - name: Platform Engineering
+      identifier: services-de-pe
+      parent: services-de
+      weight: 20
+      params: { heading: true }
+    - name: Platform-Engineering-Service
+      url: /de/dienstleistungen/platform-engineering/
+      parent: services-de-pe
+      weight: 1
+    - name: Platform Readiness Assessment
+      url: /de/dienstleistungen/platform-readiness-assessment/
+      parent: services-de-pe
+      weight: 2
+    - name: Internal Developer Platform
+      url: /de/dienstleistungen/internal-developer-platform/
+      parent: services-de-pe
+      weight: 3
+    - name: Enterprise Platform Engineering
+      url: /de/dienstleistungen/enterprise-platform-engineering/
+      parent: services-de-pe
+      weight: 4
+    - name: Beratung
+      identifier: services-de-consult
+      parent: services-de
+      weight: 30
+      params: { heading: true }
+    - name: Cloud-Strategieberatung
+      url: /de/dienstleistungen/cloud-strategy-consultancy/
+      parent: services-de-consult
+      weight: 1
+    - name: Cloud Engineering
+      url: /de/dienstleistungen/cloud-engineering/
+      parent: services-de-consult
+      weight: 2
+    - name: Kubernetes-Beratung
+      url: /de/dienstleistungen/kubernetes-consulting/
+      parent: services-de-consult
+      weight: 3
+    - name: DevOps-Beratung
+      url: /de/dienstleistungen/devops-consulting/
+      parent: services-de-consult
+      weight: 4
+    - name: Private-Cloud-Beratung
+      url: /de/dienstleistungen/private-cloud-consulting/
+      parent: services-de-consult
+      weight: 5
+    - name: SRE-Beratung
+      url: /de/dienstleistungen/sre-consulting/
+      parent: services-de-consult
+      weight: 6
+    - name: KI
+      identifier: services-de-ai
+      parent: services-de
+      weight: 40
+      params: { heading: true }
+    - name: AI Platform Build
+      url: /de/dienstleistungen/ai-platform-build/
+      parent: services-de-ai
+      weight: 1
+    - name: Preise
+      url: /de/preise/
+      weight: 50
+    - name: Ressourcen
+      url: /de/ressourcen/
+      identifier: resources-de
+      weight: 60
+    - name: Lead-Magnets
+      url: /de/ressourcen/
+      parent: resources-de
+      weight: 1
+    - name: Blog
+      url: /de/blog/
+      parent: resources-de
+      weight: 2
+    - name: Kubernetes Deep Dive
+      url: /de/kubernetes-deep-dive/
+      parent: resources-de
+      weight: 3
+    - name: VMware-Kostenrechner
+      url: /de/ressourcen/vmware-kostenrechner/
+      parent: resources-de
+      weight: 4
+    - name: Compliance-Nachweise
+      url: /de/compliance/
+      parent: resources-de
+      weight: 5
+    - name: Unternehmen
+      url: /de/ueber-uns/
+      identifier: company-de
+      weight: 70
+    - name: Über uns
+      url: /de/ueber-uns/
+      parent: company-de
+      weight: 1
+    - name: Partner
+      url: /de/partner/
+      parent: company-de
+      weight: 2
+    - name: Konferenzen
+      url: /de/konferenzen/
+      parent: company-de
+      weight: 3
+    - name: Case Studies
+      url: /de/case-studies/
+      parent: company-de
+      weight: 4
+    - name: Enterprise Support
+      url: /de/produkte/cozystack-enterprise-support/
+      parent: company-de
+      weight: 5
+    - name: VMware-Ausstieg für Partner
+      url: /de/partner/vmware-exit/
+      parent: company-de
+      weight: 6
+    - name: Kontakt
+      url: /de/kontakt/
+      weight: 80
+      params:
+        cta: true
+
+    - name: Live Demo
+      url: /demo/
+      weight: 85
+      identifier: live-demo-de
+      params:
+        cta: true
+    - name: Cloud-Konsole-Demo
+      url: /demo/
+      parent: live-demo-de
+      weight: 1
+    - name: Developer-Platform-Demo
+      url: /idp/
+      parent: live-demo-de
+      weight: 2
+  # NOTE: this `footer` menu is not rendered — layouts/partials/footer.html
+  # builds its own locale-aware link map. Kept in sync so it does not rot.
+  footer:
+    - name: Products
+      url: /products/
+      weight: 1
+    - name: Solutions
+      url: /solutions/
+      weight: 2
+    - name: Services
+      url: /services/
+      weight: 3
     - name: Pricing
       url: /pricing/
-      weight: 2
-    - name: Case Studies
-      url: /case-studies/
-      weight: 3
-    - name: About Us
-      url: /about-us/
       weight: 4
+    - name: Resources
+      url: /resources/
+      weight: 5
+    - name: Blog
+      url: /blog/
+      weight: 6
+    - name: About
+      url: /about/
+      weight: 7
+    - name: Partners
+      url: /partners/
+      weight: 8
     - name: Contact
       url: /contact/
-      weight: 5
+      weight: 9
 
-taxonomies: {}
+taxonomies:
+  type: types
+  topic: topics
+  author: authors
+
+permalinks:
+  blog: /blog/:year/:month/:contentbasename/
+
+# Disable auto taxonomy term lists outside /blog/ — we still want them
+# to exist as Hugo metadata for filter chips, but not as top-level pages.
+disableKinds: []
 
 outputs:
   home:
@@ -157,3 +857,14 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+  highlight:
+    style: github-dark
+    lineNos: false
+    codeFences: true
+    guessSyntax: true
+    noClasses: false   # use CSS classes (we ship them in main.css)
+    tabWidth: 2
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/demo/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/demo/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/demo/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/demo/favicons/apple-touch-icon-180x180.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Empty on purpose: the inline script below sets the runtime brand
+         (or the built-in default) before first paint, so a re-branded
+         deploy never flashes the default identity while the app bundle
+         loads. -->
+    <title></title>
+    <!-- Runtime configuration. In production nginx SSI-includes the
+         ConfigMap-mounted env.js inline (first <script> below), so
+         window.__ENV__ ships inside this no-store document — there is no
+         separate /env.js request that can fail, cache-stale, or race the
+         first paint. The <script src="/env.js"> line is the dev / no-SSI
+         fallback (it loads the public/env.js placeholder); in production
+         it harmlessly re-asserts the same values. Both run synchronously
+         before the applier below and before the app bundle. -->
+    <script><!--# include file="env.js" --></script>
+    <script src="/demo/env.js"></script>
+    <script>
+      // Head-time brand applier. Mirrors getBrandTitle()/applyBrandFavicon()
+      // in src/env.ts, which re-assert the same values at bundle start.
+      // The fallback is a neutral product name, never a specific vendor
+      // brand — an unconfigured deploy must not leak someone else's identity.
+      ;(function () {
+        var env = window.__ENV__ || {}
+        document.title = env.BRAND_TITLE || "Portal"
+        if (env.BRAND_FAVICON) {
+          var links = document.querySelectorAll('link[rel~="icon"], link[rel="apple-touch-icon"]')
+          for (var i = 0; i < links.length; i++) links[i].href = env.BRAND_FAVICON
+        }
+      })()
+    </script>
+    <script type="module" crossorigin src="/demo/assets/index-Bt3UUMlb.js"></script>
+    <link rel="modulepreload" crossorigin href="/demo/assets/preload-helper-Dyd2na3K.js">
+    <link rel="stylesheet" crossorigin href="/demo/assets/index-tUcExml2.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

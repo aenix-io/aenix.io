@@ -1,15 +1,12 @@
 ---
 title: "Are You Ready to Build a Modern Cloud?"
-description: "Conference quiz — test your knowledge about modern cloud infrastructure."
+description: "Conference quiz — ten questions on modern cloud infrastructure, scored as you go."
 url: "/quiz/modern-cloud/"
 layout: "quiz"
+quiz_app: "/quiz-app/modern-cloud/"
+bodyClass: "quiz-page"
+page_type: "flag-page"
+language: "en"
+sitemap:
+  disable: true
 ---
-
-## Conference Quiz
-
-Test your knowledge! Answer a few questions and see how you score. Results are shown after each question.
-
-We'd love to see you in our community! Join us and stay connected.
-
-- [Cozystack Community](https://aenix.io/links/cozystack/)
-- [GitHub](https://github.com/cozystack/cozystack)

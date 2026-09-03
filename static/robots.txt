@@ -1,3 +1,11 @@
 User-agent: *
 Disallow: /web0826/
 Disallow: /downloads/web0826/
+
+# Live-demo SPAs ship a bundled mock documentation site (including ru/ and kz/
+# trees) for a fictional cloud portal. It is demo furniture, not product
+# documentation, and must not rank for aenix.io.
+Disallow: /demo-app/docs/
+Disallow: /idp-app/docs/
+
+Sitemap: https://aenix.io/sitemap.xml

@@ -1,0 +1,137 @@
+---
+title: "Proxmox vs VMware vs Cozystack — a 2026 comparison for the post-Broadcom era"
+description: "Proxmox VE, VMware after Broadcom, and Cozystack compared by architecture and use case, with a feature matrix and the realistic migration paths."
+date: "2026-05-01"
+author: "Aenix Team"
+type: "article"
+topics: ["VMware", "Proxmox", "Kubernetes", "Cozystack", "Sovereignty", "Multi-tenancy"]
+language: "en"
+companion_landing: "/alternatives/proxmox-alternative/"
+quiz:
+  title: "Test yourself: Proxmox vs VMware vs Cozystack"
+  questions:
+    - q: "For SMB IT departments, labs, single-tenant deployments under ~50 hosts, which platform does the article recommend?"
+      options:
+        - { text: "Proxmox VE", correct: true }
+        - { text: "VMware VCF", correct: false }
+        - { text: "Cozystack", correct: false }
+      explanation: "Proxmox VE is mature, easy to install, has a strong community, and uses AGPLv3 plus commercial subscription. Excellent for single-team or single-tenant deployments under ~50 hosts. Multi-tenancy is namespace-based; not designed for hard isolation."
+    - q: "Which architectural property gives Cozystack its edge for service providers and regulated multi-tenant?"
+      options:
+        - { text: "Per-VM licensing model", correct: false }
+        - { text: "Closed-source codebase", correct: false }
+        - { text: "Kubernetes-native Tenant CRD", correct: true }
+      explanation: "Cozystack's Tenant CRD provides structural, Kubernetes-native multi-tenancy that is production-grade for service providers and regulated multi-tenant. Plus first-class managed databases, S3 object storage, and GPU services."
+    - q: "In the comparison matrix, what does Proxmox VE list for \"managed databases\"?"
+      options:
+        - { text: "First-class via operators", correct: false }
+        - { text: "Limited via vCD plugins", correct: false }
+        - { text: "Manual / community", correct: true }
+      explanation: "Proxmox managed databases = manual / community integration. VMware = limited (via vCD plugins). Cozystack = first-class via operators: PostgreSQL, MariaDB, MongoDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, OpenSearch, Qdrant, FoundationDB."
+    - q: "For Proxmox → Cozystack migration, what does the article say is the typical timeline?"
+      options:
+        - { text: "2-4 weeks plus 3-9 months", correct: true }
+        - { text: "1 weekend cutover", correct: false }
+        - { text: "24+ months program", correct: false }
+      explanation: "Proxmox → Cozystack migration: VM images (qcow2) import directly into KubeVirt CDI; multi-tenant model is designed during migration (Proxmox didn't have one); storage and network are re-architected. Typical timeline: 2-4 weeks assessment plus 3-9 months implementation."
+    - q: "Why does the article note that Proxmox → VMware is rare in 2026?"
+      options:
+        - { text: "It is technically impossible", correct: false }
+        - { text: "Economics rarely justify the reverse move", correct: true }
+        - { text: "The Proxmox community forbids it", correct: false }
+      explanation: "Proxmox → VMware migration is rare in 2026 because the economics rarely justify the reverse move post-Broadcom — VMware's subscription pricing makes the move uneconomical for most organizations."
+---
+
+The post-Broadcom virtualization market has three main open-source-friendly options: Proxmox VE, Cozystack, and (less common) XCP-ng. Each has a different architectural target. Picking the right one is mostly a function of scale and use case.
+
+## Proxmox VE — SMB-friendly, VM-focused
+
+**Architecture:** KVM + LXC + ZFS + Ceph (community), single-cluster Proxmox VE, no native multi-tenancy.
+
+**Strengths:**
+- Mature, stable, easy to install.
+- Strong community.
+- AGPLv3 license, commercial subscription available.
+- Excellent for single-team or single-tenant deployments.
+- Proxmox Backup Server is good.
+
+**Limits:**
+- Multi-tenancy through namespaces and permissions; not designed for hard isolation.
+- Service catalog beyond VMs (managed databases, S3, etc.) requires manual integration.
+- Service-provider use cases (billing per tenant, self-service portal) require external software.
+- Federation across clusters is heavier than Kubernetes.
+
+**Best for:** SMB IT departments, labs, dev environments, single-tenant private virtualization, teams under ~50 hosts.
+
+## VMware (post-Broadcom) — enterprise legacy
+
+**Architecture:** vSphere + vSAN + NSX + vCloud Director + vRealize/Aria. Closed source, subscription-licensed.
+
+**Strengths:**
+- Mature, well-known, extensive ecosystem.
+- Strong enterprise tooling integration.
+- Broad operational expertise in market.
+
+**Limits:**
+- Subscription-only licensing (post-Broadcom 2023).
+- 2-5× price increases on renewal observed across our pipeline.
+- Vendor lock-in across the stack.
+- Sovereignty concerns (US-headquartered vendor).
+
+**Best for:** Existing VMware estates that haven't yet been triggered out by economics. New deployments rarely choose VMware in 2026.
+
+(See **[VMware alternative](/alternatives/vmware-alternative)** for migration guidance.)
+
+## Cozystack — open-source, Kubernetes-native, multi-tenant
+
+**Architecture:** KubeVirt + Cilium + Kube-OVN + LINSTOR (DRBD) + Tenant CRD + Cozystack Dashboard. Open-source CNCF Project.
+
+**Strengths:**
+- Kubernetes-native virtualization — same platform for VMs, containers, databases.
+- Multi-tenancy structural (Tenant CRD) — production-grade for service providers and regulated multi-tenant.
+- First-class managed database, S3 object storage, GPU services.
+- Apache 2.0 license, no per-CPU pricing.
+- Air-gapped deployment supported.
+
+**Limits:**
+- Newer than Proxmox or VMware; smaller community.
+- Kubernetes operational expertise required (mitigated by Ænix support tier).
+- Not optimized for single-tenant SMB use case (Proxmox better here).
+
+**Best for:** Service providers, regulated enterprises, multi-team platforms, AI/GPU operators, sovereign-cloud builders.
+
+## Comparison matrix
+
+| | Proxmox VE | VMware (VCF) | Cozystack |
+|---|---|---|---|
+| **License** | AGPLv3 + commercial subscription | Subscription-only | Apache 2.0 |
+| **Compute** | KVM + LXC | vSphere | KubeVirt (KVM) + K8s |
+| **Storage** | ZFS, Ceph | vSAN | LINSTOR (DRBD) |
+| **Network** | Linux SDN | NSX | Cilium |
+| **Multi-tenancy** | Namespace + permissions | vCloud Director | Tenant CRD |
+| **Managed databases** | Manual / community | Limited | First-class (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, OpenSearch, etc.) |
+| **S3 object storage** | Manual | Limited | First-class |
+| **GPU** | Passthrough | vGPU under Horizon | VFIO passthrough or vGPU for VMs; HAMi fractional sharing for containers |
+| **Self-service** | Web UI for ops | vCD | Cozystack Dashboard |
+| **Backup/DR** | PBS | SRM | Velero + PG PITR |
+| **Best scale** | <50 hosts | Enterprise | Multi-tenant scale |
+| **Best for** | SMB, labs | Existing VMware | Cloud builders, regulated multi-tenant |
+
+## Migration paths
+
+### Proxmox → Cozystack
+VM images (qcow2) import directly into KubeVirt CDI. Multi-tenant model designed during migration (Proxmox didn't have one to migrate). Storage and network re-architecture. Typical: 2-4 weeks assessment + 3-9 months implementation.
+
+### VMware → Cozystack
+KubeVirt-based migration with image conversion. Windows VMs supported; specific tooling for VMware Tools cleanup. Multi-tenant model maps from vCloud Director to Tenant CRD. (Full guidance: **[VMware alternative landing](/alternatives/vmware-alternative)**.)
+
+### Proxmox → VMware
+Rare in 2026; reverse migration usually doesn't make economic sense post-Broadcom.
+
+## How to choose
+
+1. **You're under 50 hosts, single-tenant, mostly VMs:** Proxmox VE.
+2. **You're a service provider, multi-tenant cloud, regulated multi-tenant:** Cozystack.
+3. **You're already on VMware and the budget supports staying:** stay (but plan an exit). If renewal pressures bite: see VMware alternative.
+4. **AI/GPU workloads at scale:** Cozystack (KubeVirt + GPU operators).
+5. **Pure container workloads, no VMs:** vanilla Kubernetes (Cozystack still works but is over-spec).

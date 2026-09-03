@@ -1,0 +1,61 @@
+name: SEO/GEO frontmatter validation
+
+# Runs on every PR and push to main. Fails the build if any page is missing
+# required SEO/GEO frontmatter. This is the CI gate — engineers cannot merge
+# pages that bypass the GEO requirements set in CLAUDE.md.
+
+on:
+  pull_request:
+    paths:
+      - 'content/**/*.md'
+      - 'layouts/partials/seo/**'
+      - 'layouts/shortcodes/seo-*'
+      - 'static/llms.txt'
+      - 'static/llms-full.txt'
+      - 'scripts/validate-frontmatter.sh'
+  push:
+    branches: [main]
+
+jobs:
+  validate-frontmatter:
+    name: Validate page frontmatter
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run validation script
+        run: |
+          chmod +x ./scripts/validate-frontmatter.sh
+          ./scripts/validate-frontmatter.sh
+
+      - name: Hugo build (catches partial-level errors)
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.160.1'
+          extended: true
+
+      - name: Run Hugo build
+        run: hugo --gc --minify --logLevel info
+
+      - name: Verify llms.txt is present
+        run: |
+          if [ ! -f static/llms.txt ]; then
+            echo "::error::static/llms.txt is missing — required per CLAUDE.md Rule 4"
+            exit 1
+          fi
+          if [ ! -f static/llms-full.txt ]; then
+            echo "::error::static/llms-full.txt is missing — required per CLAUDE.md Rule 4"
+            exit 1
+          fi
+
+      - name: Verify head-end.html invokes seo/head.html
+        run: |
+          HOOK_FILE="layouts/partials/hooks/head-end.html"
+          if [ ! -f "$HOOK_FILE" ]; then
+            echo "::error::$HOOK_FILE missing — required per CLAUDE.md Rule 3"
+            exit 1
+          fi
+          if ! grep -q 'partial "seo/head.html"' "$HOOK_FILE"; then
+            echo "::error::$HOOK_FILE does not invoke seo/head.html partial — required per CLAUDE.md Rule 3"
+            exit 1
+          fi

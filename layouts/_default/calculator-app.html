@@ -1,0 +1,46 @@
+{{ define "head" }}
+{{/*
+  Full-bleed host page for an embedded calculator SPA.
+
+  The apps are dense dashboards, far wider than the 800px content column, so
+  each is embedded as a full-viewport iframe from its own vendored build under
+  /static/. Builds come from the private aenix-org/calculators monorepo.
+
+  Frontmatter:
+    layout: calculator-app
+    calculator_app: /cloud-calculator-app/     # path to the vendored build
+    bodyClass: calc-app-page
+    indexable: true                            # opt in; thin app pages stay out
+*/}}
+{{/* An iframe host page is thin content by nature — indexable only where the
+     page carries its own copy and answers a real query on its own. */}}
+{{ if not .Params.indexable }}<meta name="robots" content="noindex,follow">{{ end }}
+<style>
+  body.calc-app-page,
+  body.calc-app-page main#content { background: #0B0F1A; }
+  body.calc-app-page main#content { padding: 0; margin: 0; }
+  .calc-app-intro { padding: 1.25rem 0 .9rem; }
+  .calc-app-frame {
+    display: block;
+    width: 100%;
+    min-height: 92vh;
+    border: 0;
+    background: #0B0F1A;
+  }
+</style>
+{{ end }}
+
+{{ define "main" }}
+{{ $app := .Params.calculator_app | default "/isp-calculator-app/" }}
+<div class="container calc-app-intro">
+  <h1 class="page-hero-title" style="font-size:1.6rem;margin:0 0 .35rem">{{ .Title }}</h1>
+  {{ with .Description }}<p class="page-hero-subtitle" style="margin:0 0 .75rem">{{ . }}</p>{{ end }}
+  {{ with .Content }}<div class="calc-app-copy">{{ . }}</div>{{ end }}
+  <p style="margin:0">
+    <a class="cta-secondary" href="/roi-calculator/">All ROI &amp; TCO calculators</a>
+    <a class="cta-primary" href="{{ $app }}" target="_blank" rel="noopener" style="margin-left:.5rem">Open full-screen</a>
+  </p>
+</div>
+<iframe class="calc-app-frame" src="{{ $app }}" title="{{ .Title }}"
+        loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{ end }}

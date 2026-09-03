@@ -7,14 +7,20 @@
   Pass the page as context: {{ partial "seo/geo-intro.html" . }}
 */}}
 {{- $daImg := .Params.direct_answer_image -}}
-{{- $chev := `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>` -}}
-{{- $toggle := printf `<button type="button" class="answer-clamp__toggle" aria-expanded="false"><span class="answer-clamp__label">Show more</span>%s</button>` $chev -}}
+{{/* The "Show more" clamp that used to sit here has been removed. It was meant
+     to fire only on answers overflowing ~7 lines, but direct_answer is spec'd at
+     75-150 words (Rule 10), so it clamped 157 of 164 pages — cutting a median
+     30% off the paragraph, always from the tail, which is exactly the
+     "how Aenix helps" sentence the paragraph exists to deliver. The full
+     paragraph now renders. The `.answer-clamp` / `.answer-clamp__body` class
+     names are kept because the stylesheet hangs paragraph margins off them;
+     with no toggle button present, main.js's clamp handler early-returns and
+     the `is-clampable` class is never applied. */}}
 {{- with .Params.direct_answer -}}
 {{- if $daImg }}
 <div class="seo-direct-answer answer-split">
   <div class="answer-split__text answer-clamp">
     <div class="answer-clamp__body">{{ . | markdownify }}</div>
-    {{ $toggle | safeHTML }}
   </div>
   <figure class="answer-split__media">
     <div class="browser-frame">
@@ -32,7 +38,6 @@
 {{- else }}
 <div class="seo-direct-answer answer-clamp">
   <div class="answer-clamp__body">{{ . | markdownify }}</div>
-  {{ $toggle | safeHTML }}
 </div>
 {{- end }}
 {{- end -}}

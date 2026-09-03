@@ -1,0 +1,71 @@
+{{- /*
+  Sitemap override — excludes pages that render <meta name="robots" content="noindex">.
+
+  Hugo's built-in sitemap template lists every renderable page and knows nothing
+  about the robots meta tag, so noindex pages were being submitted to Google
+  (including /404.html). Submitting a noindex URL is a Search Console error:
+  Google fetches it, finds noindex, and reports "Submitted URL marked noindex".
+
+  Two sources of noindex, both handled here:
+    1. frontmatter  robots: "noindex, ..."         (404, /ru/, thank-you pages)
+    2. hardcoded in the layout                     (quiz, cert-verify, cert-all,
+                                                    link-registry, link-tool,
+                                                    redirect, non-indexable
+                                                    calculator app shells)
+
+  Pages that set `sitemap: disable: true` in frontmatter are already dropped by
+  Hugo before reaching this template, so they need no handling.
+
+  Keep the $noindexLayouts list in sync with:
+    grep -rn "noindex" layouts --include='*.html' | grep -v partials/seo
+*/ -}}
+{{- $noindexLayouts := slice "quiz" "cert-verify" "cert-all" "link-registry" "link-tool" "redirect" -}}
+{{- /*
+  Russian-language trees stay published but out of the sitemap.
+
+  aenix.io's sitemap is the EN/DE commercial site. The certification tree and
+  /ru/workshops/ are Russian-language pages that sit on English URL paths
+  (/certification/… renders <html lang="ru">), so they were being submitted as
+  part of the English site — a certification page was the first <loc>. For a
+  vendor selling data sovereignty to EU regulated buyers, a crawl-visible
+  Russian section is a procurement question nobody wants to answer.
+
+  Excluding them here removes them from the sitemap only: the pages stay live,
+  linked, and indexable if Google finds them another way. Do NOT add a noindex
+  or a robots Disallow instead — the certification service is in active use.
+*/ -}}
+{{- $excludedPrefixes := slice "/certification/" "/ru/" -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- range .Data.Pages }}
+    {{- $p := . -}}
+    {{- $robots := lower (string (or $p.Params.robots "")) -}}
+    {{- $layout := string (or $p.Params.layout $p.Layout "") -}}
+    {{- $noindex := false -}}
+    {{- if in $robots "noindex" }}{{ $noindex = true }}{{ end -}}
+    {{- if in $noindexLayouts $layout }}{{ $noindex = true }}{{ end -}}
+    {{- /* calculator-app shells are noindex unless explicitly marked indexable */ -}}
+    {{- if and (eq $layout "calculator-app") (not $p.Params.indexable) }}{{ $noindex = true }}{{ end -}}
+    {{- /* Hugo's 404 is a regular page in .Data.Pages but must never be submitted */ -}}
+    {{- if eq $p.RelPermalink "/404.html" }}{{ $noindex = true }}{{ end -}}
+    {{- /* Russian trees: excluded by path prefix and by declared language */ -}}
+    {{- range $excludedPrefixes }}
+      {{- if hasPrefix $p.RelPermalink . }}{{ $noindex = true }}{{ end -}}
+    {{- end -}}
+    {{- if eq (lower (string (or $p.Params.language ""))) "ru" }}{{ $noindex = true }}{{ end -}}
+    {{- if and $p.Permalink (not $noindex) }}
+  <url>
+    <loc>{{ $p.Permalink }}</loc>
+    {{- if not $p.Lastmod.IsZero }}
+    <lastmod>{{ safeHTML ($p.Lastmod.Format "2006-01-02T15:04:05-07:00") }}</lastmod>
+    {{- end }}
+    {{- with $p.Sitemap.ChangeFreq }}
+    <changefreq>{{ . }}</changefreq>
+    {{- end }}
+    {{- if ge $p.Sitemap.Priority 0.0 }}
+    <priority>{{ $p.Sitemap.Priority }}</priority>
+    {{- end }}
+  </url>
+    {{- end }}
+  {{- end }}
+</urlset>

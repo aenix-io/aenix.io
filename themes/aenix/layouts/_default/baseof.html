@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}">
+{{- $lang := .Site.LanguageCode | default "en" -}}
+{{- if or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}{{- $lang = "de" -}}
+{{- else if or (eq .Params.language "ru") (hasPrefix .RelPermalink "/ru/") -}}{{- $lang = "ru" -}}{{- end -}}
+<html lang="{{ $lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,10 +21,9 @@
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  {{/* Fonts */}}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  {{/* Self-hosted fonts (Inter + JetBrains Mono).
+       Replaces Google Fonts CDN — faster, GDPR-clean. */}}
+  <link rel="stylesheet" href="/css/fonts.css">
 
   {{/* CSS */}}
   {{ $style := resources.Get "css/main.css" | fingerprint }}
@@ -29,25 +31,11 @@
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
   {{ end }}
 
-  {{/* Analytics config — IDs only, no scripts loaded here.
-       Actual script loading happens in consent.js after user consent. */}}
-  <script>
-    {{ with .Site.Params.googleAnalytics }}window.AENIX_GA_ID      = '{{ . }}';{{ end }}
-    {{ with .Site.Params.ahrefsAnalytics }}window.AENIX_AHREFS_KEY = '{{ . }}';{{ end }}
-    window.AENIX_APOLLO_ID  = '66b1e05b9f632a02d2ea4fad';
-  </script>
-
-  {{/* three.js import map — home page only (used by hero-3d.mjs) */}}
-  {{ if .IsHome }}
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
-      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
-    }
-  }
-  </script>
-  {{ end }}
+  {{/* NOTE: trackers (Google Analytics, Apollo, Ahrefs, GTM, Hotjar) are
+       NOT loaded here. They are gated by cookie consent and injected by
+       /js/consent.js after the user accepts the relevant category.
+       See project-level layouts/_default/baseof.html for the wired-up
+       version with consent root + dns-prefetch hints. */}}
 
   {{ partial "utm-capture.html" . }}
 
@@ -63,77 +51,26 @@
 
   {{ partial "footer.html" . }}
 
-  {{/* ── Cookie consent banner ──────────────────────────────────── */}}
-  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-label="Cookie consent" hidden>
-    <div class="cookie-banner__inner">
-      <div class="cookie-banner__text">
-        <p class="cookie-banner__title">We use cookies and tracking technologies</p>
-        <p class="cookie-banner__body">We use essential cookies to make this website work. With your consent, we also use analytics, visitor identification, enrichment, and sales/marketing automation tools to understand how visitors use our site, identify company-level interest, improve our content, and support relevant B2B communications. You can accept all cookies, reject non-essential cookies, or manage your preferences at any time.</p>
-      </div>
-      <div class="cookie-banner__actions">
-        <button id="cookie-accept-all" class="btn btn-primary">Accept all</button>
-        <button id="cookie-reject"     class="btn btn-secondary">Reject non-essential</button>
-        <button id="cookie-manage"     class="btn btn-ghost">Manage preferences</button>
-      </div>
-    </div>
-  </div>
-
-  {{/* ── Cookie preferences modal ───────────────────────────────── */}}
-  <div id="cookie-modal" class="cookie-modal" role="dialog" aria-modal="true" aria-label="Cookie preferences" hidden>
-    <div id="cookie-modal-backdrop" class="cookie-modal__backdrop"></div>
-    <div class="cookie-modal__dialog">
-      <div class="cookie-modal__header">
-        <h2 class="cookie-modal__title">Cookie preferences</h2>
-        <button id="cookie-modal-close" class="cookie-modal__close" aria-label="Close">&times;</button>
-      </div>
-
-      <div class="cookie-modal__body">
-        <div class="cookie-pref-row">
-          <div class="cookie-pref-info">
-            <strong>Essential cookies</strong>
-            <p>Required for the website to function correctly. Cannot be disabled.</p>
-          </div>
-          <span class="cookie-always-on">Always active</span>
-        </div>
-
-        <div class="cookie-pref-row">
-          <div class="cookie-pref-info">
-            <strong>Analytics</strong>
-            <p>Help us understand how visitors use our site and improve our content (Google Analytics, Ahrefs Analytics).</p>
-          </div>
-          <label class="cookie-toggle">
-            <input type="checkbox" id="pref-analytics">
-            <span class="cookie-toggle__track"><span class="cookie-toggle__thumb"></span></span>
-          </label>
-        </div>
-
-        <div class="cookie-pref-row">
-          <div class="cookie-pref-info">
-            <strong>Visitor identification &amp; sales tools</strong>
-            <p>Identify company-level interest, enrich business contact data, and support relevant B2B outreach (Apollo.io).</p>
-          </div>
-          <label class="cookie-toggle">
-            <input type="checkbox" id="pref-marketing">
-            <span class="cookie-toggle__track"><span class="cookie-toggle__thumb"></span></span>
-          </label>
-        </div>
-      </div>
-
-      <div class="cookie-modal__footer">
-        <button id="cookie-accept-all-modal" class="btn btn-ghost">Accept all</button>
-        <button id="cookie-save-prefs"       class="btn btn-primary">Save preferences</button>
-      </div>
-    </div>
-  </div>
+  <div id="aenix-consent-root"
+       data-lang="{{ .Site.Language.Lang | default "en" }}"
+       {{ with .Site.Params.googleAnalytics }}data-ga-id="{{ . }}"{{ end }}
+       {{ with .Site.Params.gtmContainer }}data-gtm-container="{{ . }}"{{ end }}
+       {{ with .Site.Params.ahrefsAnalytics }}data-ahrefs-key="{{ . }}"{{ end }}
+       {{ with .Site.Params.apolloAppId }}data-apollo-app-id="{{ . }}"{{ end }}
+       {{ with .Site.Params.hotjarId }}data-hotjar-id="{{ . }}"{{ end }}
+       hidden></div>
+  <script src="/js/consent.js" defer></script>
 
   {{ $js := resources.Get "js/main.js" | fingerprint }}
   {{ if $js }}
     <script src="{{ $js.RelPermalink }}"></script>
   {{ end }}
 
-  {{ $consent := resources.Get "js/consent.js" | fingerprint }}
-  {{ if $consent }}
-    <script src="{{ $consent.RelPermalink }}"></script>
+  {{ if .IsHome }}
+  {{ $orb := resources.Get "js/orb.js" | fingerprint }}
+  {{ if $orb }}
+    <script src="{{ $orb.RelPermalink }}" defer></script>
+  {{ end }}
   {{ end }}
 
   {{ block "scripts" . }}{{ end }}

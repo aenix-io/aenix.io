@@ -2,6 +2,16 @@
 public/
 resources/_gen/
 
+# Claude Code ephemeral worktrees (not part of the site)
+.claude/worktrees/
+
 # Hugo environment file
 .hugo_build.lock
+SESSION_LOG.md
+HANDOFF.md
+FORMS_SPEC_RU.md
+PIPEDRIVE_FORMS_PROMPT.md
+PIPEDRIVE_FORMS_DE_PROMPT.md
+PIPEDRIVE_DE_CORE_FORMS_PROMPT.md
+PIPEDRIVE_DE_SINGLE_OPTION_FIELDS_PROMPT.md
 package-lock.json

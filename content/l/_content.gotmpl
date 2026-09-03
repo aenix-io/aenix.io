@@ -7,6 +7,11 @@
 
   Entries whose status is not "active" stay in the registry as history but
   produce no page, so a disabled link 404s instead of redirecting.
+
+  No `content` is set on the generated page: the "redirect" layout renders a
+  complete standalone document and never reads .Content. Declaring a text/html
+  body would require a `security.allowContent` exemption in hugo.yaml on Hugo
+  >= 0.16x, which this build deliberately avoids.
 */}}
 {{ range partial "links.html" . }}
   {{ if and .target_url (eq .status "active") }}
@@ -24,7 +29,6 @@
         "created_by" .created_by
         "note"       .note
       )
-      "content" (dict "mediaType" "text/html" "value" "")
     ) }}
   {{ end }}
 {{ end }}
