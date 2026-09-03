@@ -68,6 +68,8 @@ EU-based engineers · Mutual NDA · No hyperscaler bias · Written deliverables<
 
 ## Who has NIS2 in scope
 
+> **The measured evidence behind these controls** — full CIS Kubernetes Benchmark results, Kubernetes conformance listings, and a plain statement of what Aenix does and does not claim — lives on the [compliance evidence pages](/compliance/). Nothing there is a certification; it is the run output and the reasoning, published so an assessor can check it.
+
 NIS2 applies broadly to:
 
 - **Essential entities** — energy, transport, banking, financial market infrastructures, healthcare, drinking water, wastewater, digital infrastructure (IXPs, DNS, TLD, cloud providers, datacenter providers, CDN, MSPs, MSSPs, public electronic comms), public administration, space.

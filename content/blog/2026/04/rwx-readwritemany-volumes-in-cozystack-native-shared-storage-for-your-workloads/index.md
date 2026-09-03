@@ -19,9 +19,9 @@ quiz:
       explanation: "Starting with Cozystack v1.0, you can use ReadWriteMany (RWX) persistent volumes out of the box. Multiple pods and VMs can mount the same volume simultaneously."
     - q: "What technology stack powers RWX under the hood?"
       options:
-        - { text: "Plain Linux NFSv4 server running on a control-plane node", correct: false }
-        - { text: "iSCSI exports with multipath and a shared LVM pool", correct: false }
-        - { text: "An NFS server provisioned automatically per RWX PVC on top of replicated block storage, with CiliumNetworkPolicy isolation", correct: true }
+        - { text: "One shared NFSv4 server per cluster, run on a control-plane node and exported to every tenant namespace", correct: false }
+        - { text: "iSCSI exports with multipath over a shared LVM pool, with volumes fenced per tenant at the target", correct: false }
+        - { text: "One NFS server provisioned per RWX PVC on replicated block storage, isolated by CiliumNetworkPolicy", correct: true }
       explanation: "The kubevirt-csi-driver provisions a dedicated NFS server for each RWX PVC, backed by DRBD-replicated (LINSTOR) block storage. CiliumNetworkPolicy handles traffic isolation between tenants."
     - q: "How does a tenant request an RWX volume?"
       options:

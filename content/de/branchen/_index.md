@@ -33,7 +33,7 @@ hreflang_en: /industries/
 ### Hochreguliert
 
 - **[Finanzdienstleistungen](/de/branchen/finanzdienstleistungen/)** — Banken, Versicherer, Marktinfrastruktur unter DORA-Scope. Passt zu: Private Cloud Platform.
-- **[Öffentlicher Sektor](/de/branchen/oeffentlicher-sektor/)** — Regierungs-Cloud aligniert mit nationalen Souveränitätsmandaten. Passt zu: Private Cloud Platform oder Public Cloud Platform.
+- **[Öffentlicher Sektor](/de/branchen/oeffentlicher-sektor/)** — Regierungs-Cloud, abgestimmt auf nationale Souveränitätsvorgabenen. Passt zu: Private Cloud Platform oder Public Cloud Platform.
 - **[Telco](/de/branchen/telco/)** — Tier-1 / Tier-2 Telco-Operatoren, NIS2 wesentliche Einrichtung + Kunden-Cloud-Produkt. Passt zu: Public Cloud Platform oder Private Cloud Platform.
 - **[Energie](/de/branchen/energie/)** — NIS2 wesentliche Einrichtung, Edge-Cloud, KI-Optimierung. Passt zu: Private Cloud Platform.
 - **[Versicherung](/de/branchen/versicherung/)** — DORA-Scope + sektorale Datengesetze + Schadenfall-KI. Passt zu: Private Cloud Platform + AI Platform.

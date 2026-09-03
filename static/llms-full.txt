@@ -43,7 +43,7 @@ Cozystack is a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Pra
 - **WHMCS integration** — turnkey for hosting providers already on WHMCS
 - **Enterprise SLA + dedicated support channels** — 24/7 for higher tiers
 - **Productized installer** — accelerated deployment vs manual / GitOps Cozystack setup
-- **Compliance-ready bundles** — pre-validated against DORA / NIS2, ISO 27001 / SOC 2 alignment
+- **Compliance architecture bundles** — built against DORA and NIS2 control requirements; supports ISO 27001 and SOC 2 certification work. Aenix holds no certification of its own and claims none.
 - **Migration tooling and expertise** — modules for migration from VMware, OpenStack, OpenNebula, Virtuozzo
 
 **Three platforms:**

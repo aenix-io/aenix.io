@@ -17,9 +17,9 @@ quiz:
       explanation: "Drei Pfade: (1) die von VMware selbst begleitete Migration mit Herstellerwerkzeugen wie HCX, MTV und Nutanix Move, (2) die KubeVirt-basierte Migration auf offene Ziele wie Cozystack oder OpenShift Virtualization, (3) Lift-and-Shift auf VMware-on-Cloud, was die architektonische Frage lediglich vertagt."
     - q: "Welche Werkzeuge nennt der Artikel für die KubeVirt-basierte Migration?"
       options:
-        - { text: "Ausschließlich VMware HCX", correct: false }
+        - { text: "Ausschließlich VMware HCX, ergänzt um vMotion über Standorte", correct: false }
         - { text: "virt-v2v, Forklift beziehungsweise MTV und KubeVirt CDI", correct: true }
-        - { text: "Ausschließlich Carbonite", correct: false }
+        - { text: "Ausschließlich Carbonite als blockweise Replikationslösung", correct: false }
       explanation: "Für die KubeVirt-basierte Migration: virt-v2v als tiefliegendes Konvertierungswerkzeug von Red Hat, Forklift beziehungsweise das Migration Toolkit for Virtualization für die Migration in großer Zahl, KubeVirt CDI für den Import der Festplatten-Images sowie Cozystack-spezifische Skripte für die Platzierung der Mandanten und die Abbildung des Cilium-Netzwerks."
     - q: "Woran scheitern VMware-Migrationen am häufigsten?"
       options:

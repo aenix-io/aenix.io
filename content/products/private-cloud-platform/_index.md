@@ -13,7 +13,7 @@ images: ["img/og/private-cloud-platform.png"]
 hreflang_de: /de/produkte/private-cloud-platform/
 related_pages: ["/products/public-cloud-platform/", "/products/ai-platform/", "/solutions/dora-compliance/", "/solutions/nis2-compliance/", "/migration/vmware/"]
 direct_answer: |
-  **Aenix Private Cloud Platform is a private and hybrid sovereign cloud for regulated organizations that run cloud for themselves rather than sell it — banks, insurance carriers, public administration, telco and healthcare operators. It runs on Cozystack, the CNCF project Aenix created and maintains, and gives one Kubernetes-native control plane that coexists with existing VMware, OpenNebula and OpenShift estates instead of forcing a rip-and-replace. It adds pre-validated DORA and NIS2 architecture controls, customer-controlled encryption keys at every data layer, audit-ready immutable logging, multi-datacenter operations with tested failover, ISO 27001 and SOC 2 alignment support, and a developer self-service layer with GitLab CI/CD and Argo CD golden paths that ships with the platform rather than as a second product. Enterprise SLA, 24/7 support and engineering training are included. No per-CPU or per-core licensing.**
+  **Aenix Private Cloud Platform is a private and hybrid sovereign cloud for regulated organizations that run cloud for themselves rather than sell it — banks, insurance carriers, public administration, telco and healthcare operators. It runs on Cozystack, the CNCF project Aenix created and maintains, and gives one Kubernetes-native control plane that coexists with existing VMware, OpenNebula and OpenShift estates instead of forcing a rip-and-replace. It adds DORA and NIS2 architecture controls built in, customer-controlled encryption keys at every data layer, audit-ready immutable logging, multi-datacenter operations with tested failover, ISO 27001 and SOC 2 alignment support, and a developer self-service layer with GitLab CI/CD and Argo CD golden paths that ships with the platform rather than as a second product. Enterprise SLA, 24/7 support and engineering training are included. No per-CPU or per-core licensing.**
 quick_facts:
   - label: "What it is"
     value: "Private and hybrid sovereign cloud for regulated enterprises, built on Cozystack, with one control plane that coexists with VMware, OpenNebula and OpenShift."
@@ -31,7 +31,7 @@ quick_facts:
     value: "Kubernetes-native, multi-DC, KubeVirt VMs and containers on one API, Cilium (eBPF) networking, LINSTOR/DRBD replicated block storage, Tenant CRD multi-tenancy, customer-controlled keys"
 faq:
   - q: "How is this different from running open-source Cozystack ourselves?"
-    a: "Cozystack provides the Kubernetes-native multi-tenant foundation. Private Cloud Platform adds pre-validated DORA and NIS2 architecture bundles, multi-DC operations runbooks, customer-managed encryption at every layer, an audit-ready logging stack, hybrid integration with VMware, OpenNebula and OpenShift, ISO 27001 and SOC 2 alignment support, enterprise SLA with 24/7 support, and engineering training. The engine is the same and stays Apache 2.0; what you buy is the regulated-operations layer and the people who have done it before."
+    a: "Cozystack provides the Kubernetes-native multi-tenant foundation. Private Cloud Platform adds built DORA and NIS2 architecture bundles, multi-DC operations runbooks, customer-managed encryption at every layer, an audit-ready logging stack, hybrid integration with VMware, OpenNebula and OpenShift, ISO 27001 and SOC 2 alignment support, enterprise SLA with 24/7 support, and engineering training. The engine is the same and stays Apache 2.0; what you buy is the regulated-operations layer and the people who have done it before."
   - q: "How is it different from Ænix Public Cloud Platform?"
     a: "Who consumes the capacity. Private Cloud Platform is for organizations running cloud for their own business units, so it carries compliance architecture, customer-controlled keys and audit-ready logging. Public Cloud Platform is for operators selling cloud to external customers, so it carries billing, payments and customer-facing portals instead. Same foundation and same APIs — and a telco or bank that does both runs both on one platform rather than two."
   - q: "Can it coexist with our existing VMware estate?"
@@ -48,7 +48,7 @@ aliases:
 ---
 
 
-**Private and hybrid sovereign cloud for regulated organizations that run cloud for themselves. Multi-DC by design, DORA / NIS2 architecture pre-validated, one control plane that connects to VMware, OpenNebula and OpenShift rather than replacing them — on hardware you control. Developer self-service and engineering training are part of the platform, not a second purchase.**
+**Private and hybrid sovereign cloud for regulated organizations that run cloud for themselves. Multi-DC by design, DORA / NIS2 architecture built, one control plane that connects to VMware, OpenNebula and OpenShift rather than replacing them — on hardware you control. Developer self-service and engineering training are part of the platform, not a second purchase.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -112,7 +112,7 @@ Engineering team training as part of the engagement. Ænix's Kubernetes Deep Div
 
 ### Enterprise SLA and certification support
 
-Tiered SLA aligned to regulator expectations, named technical account manager, defined escalation procedures. Architecture pre-validated against ISO 27001 and SOC 2; Ænix supplies the certification documentation and audit-readiness work.
+Tiered SLA aligned to regulator expectations, named technical account manager, defined escalation procedures. Architecture designed to support ISO 27001 and SOC 2 certification work; Ænix supplies the certification documentation and audit-readiness work.
 
 ---
 
@@ -123,7 +123,7 @@ Included in the platform rather than sold as a second product, and switched off 
 - **Golden paths and service-creation wizards** — engineers describe the outcome (workload, SLO, tenancy) and the platform realises it. Customizable to your organization's patterns.
 - **GitLab CI/CD integration** — pre-built patterns for environments, secrets and deployment promotion, with templates for web services, workers, batch jobs and ML pipelines. GitHub and Bitbucket supported as alternatives.
 - **Argo CD GitOps** — multi-cluster, multi-environment app-of-apps setup, PR-driven change for application and infrastructure, drift detection and remediation.
-- **Self-service APIs** — environments, managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse), object storage, Kubernetes clusters, observability scopes and identity bindings, without ticket queues.
+- **Self-service APIs** — environments, managed databases (PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse), object storage, Kubernetes clusters, observability scopes and identity bindings, without ticket queues.
 - **Engineering productivity dashboards** — time-to-environment, deployment frequency, lead time, drift events.
 
 The Tenant CRD that carries the compliance boundary is the same object that carries the team or squad model, so a self-service environment is isolated by the control the auditor already accepted. Against building this on Backstage: Backstage is a UI framework and you still supply the cloud underneath — here the foundation and the layer above it arrive together.

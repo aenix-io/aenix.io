@@ -151,7 +151,7 @@ Up to 40% on Ænix Platform license + support tier sales. Margin tier depends on
 
 ### Which Plattforms can I sell?
 
-Both — Provider and Enterprise — plus the AI Platform and developer self-service layers and the Pure Cozystack with Ænix Support entry tier. Most regional partners start with Public Cloud Platform (the productized one; entry from $1,250/month) and add Private Cloud Platform as their team builds up.
+Both — Provider and Enterprise — plus the AI Platform and developer self-service layers and the enterprise support for Cozystack. Most regional partners start with Public Cloud Platform (the productized one; entry from $1,250/month) and add Private Cloud Platform as their team builds up.
 
 ### Is there exclusivity?
 

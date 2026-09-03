@@ -70,6 +70,8 @@ EU-based engineers · Mutual NDA at kickoff · Written deliverables · No hypers
 
 ## Who this is for
 
+> **The measured evidence behind these controls** — full CIS Kubernetes Benchmark results, Kubernetes conformance listings, and a plain statement of what Aenix does and does not claim — lives on the [compliance evidence pages](/compliance/). Nothing there is a certification; it is the run output and the reasoning, published so an assessor can check it.
+
 DORA applies, directly or indirectly, to almost every organization in the EU's financial supply chain. We work most often with:
 
 - **Banks and credit institutions** facing supervisor-level scrutiny on Article 28 ICT third-party arrangements.

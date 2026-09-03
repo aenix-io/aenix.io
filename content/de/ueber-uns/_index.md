@@ -131,7 +131,7 @@ Cozystack ist derzeit ein **CNCF Sandbox**-Projekt. Wir erwarten **CNCF Incubati
 - **Architektur:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard + VictoriaMetrics + VictoriaLogs
 - **Lizenz:** Apache 2.0 — jeder kann es betreiben
 - **GitHub:** [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack)
-- **Dokumentation:** [cozystack.io/docs](https://cozystack.io/docs) — vendor-neutrale CNCF-alignierte Projekt-Dokumentation
+- **Dokumentation:** [cozystack.io/docs](https://cozystack.io/docs) — herstellerneutrale Projektdokumentation nach CNCF-Regeln
 - **Community:** Slack (#cozystack auf Kubernetes Slack), Telegram, GitHub
 - **Pflege:** Ænix-Engineers + Community-Beitragende; wir sind der größte Einzel-Beitragende
 

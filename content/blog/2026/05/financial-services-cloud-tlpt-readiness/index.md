@@ -71,14 +71,16 @@ expected windows.
 
 For platform engineers, three TLPT-readiness questions matter:
 
-1. **Detection at 24-hour timeline.** Article 23 requires an early
-   warning within 24 hours of becoming aware of a significant
-   incident. If your detection telemetry is tuned for performance
-   and not security, the 24-hour window is fictional.
-2. **Audit-trail completeness.** Article 21 requires that you can
-   demonstrate to a supervisor *with evidence* what controls were in
-   place at the time of the incident. Documentation isn't enough;
-   running-system evidence is the bar.
+1. **Detection on the reporting clock.** DORA Articles 17-19 put an
+   initial notification of a major ICT-related incident on a short
+   fuse, and NIS2 Article 23 fixes a 24-hour early warning for
+   entities in scope for both. If your detection telemetry is tuned
+   for performance and not security, either window is fictional.
+2. **Audit-trail completeness.** DORA Article 6 requires a documented
+   ICT risk management framework you can demonstrate to a supervisor
+   *with evidence* — what controls were in place at the time of the
+   incident. Documentation isn't enough; running-system evidence is
+   the bar.
 3. **Containment and recovery.** TLPT exercises injection of real-
    world attack patterns. The platform's network policies, identity
    model, and isolation boundaries must survive realistic lateral
@@ -238,7 +240,7 @@ operations).
 ### Phase 1 — Platform Readiness Assessment with DORA workstream
 
 14- or 28-day fixed-price assessment. Control-by-control architecture
-review against DORA Article 21 + Article 28 expectations. Output: 30-50
+review against DORA Article 6 and Articles 28-30 expectations. Output: 30-50
 page report with gap analysis, prioritised remediation, timing.
 
 ### Phase 2 — Pilot deployment of Private Cloud Platform
@@ -295,7 +297,7 @@ Poor fit:
   architecture-level DORA walkthrough
 - **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-detailed/)** —
   what demonstrable means in practice
-- **[Private Cloud Platform — DORA Article 21 + 28 mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
+- **[Private Cloud Platform — DORA and NIS2 obligations mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
   product-level architectural detail
 - **[DORA compliance checklist resource](/resources/dora-compliance-checklist/)** —
   downloadable controls checklist

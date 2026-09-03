@@ -52,7 +52,7 @@ Two ways to book a 30-minute discovery call — pick whichever fits your workflo
 **On the call we'll cover:**
 
 - Your buyer profile (hosting provider / regulated enterprise / public-cloud operator / product engineering team / AI-heavy organization)
-- Which Ænix platform fits — Public Cloud / Private Cloud / AI — or Pure Cozystack with Ænix Support entry tier
+- Which Ænix platform fits — Public Cloud / Private Cloud / AI — or enterprise support for Cozystack
 - Regulatory context (DORA / NIS2 / sectoral / national sovereignty mandates)
 - Current architecture and migration scope
 - Engagement model (Platform Readiness Assessment → Pilot → Full Build → Managed Operations)

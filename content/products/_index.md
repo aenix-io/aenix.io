@@ -79,7 +79,7 @@ From $1,250/month at provider scale; multi-region operator programmes quoted per
 
 **For regulated organizations running cloud for themselves** — banks, insurance carriers, public administration, telco, healthcare and regulated industry.
 
-One Kubernetes-native control plane that coexists with VMware, OpenNebula and OpenShift rather than forcing a rip-and-replace. Pre-validated DORA and NIS2 architecture, customer-controlled encryption at every layer, immutable audit logging, multi-DC operations with tested failover, ISO 27001 and SOC 2 alignment support. The developer self-service layer — golden paths, GitLab CI/CD, Argo CD GitOps, self-service APIs — is part of this platform rather than a separate product.
+One Kubernetes-native control plane that coexists with VMware, OpenNebula and OpenShift rather than forcing a rip-and-replace. DORA and NIS2 architecture, customer-controlled encryption at every layer, immutable audit logging, multi-DC operations with tested failover, ISO 27001 and SOC 2 alignment support. The developer self-service layer — golden paths, GitLab CI/CD, Argo CD GitOps, self-service APIs — is part of this platform rather than a separate product.
 
 Multi-year builds: 3-6 month pilot, 9-18 months to full multi-DC production.
 

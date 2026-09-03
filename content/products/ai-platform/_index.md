@@ -63,7 +63,7 @@ aliases:
 
 ### Ready-to-use blueprints
 
-Pre-validated patterns for common AI workload types:
+Built patterns for common AI workload types:
 - **Single-tenant inference cluster** — for one customer, one workload class
 - **Multi-tenant inference fleet** — shared GPU pool with logical tenant isolation
 - **Inference + fine-tuning + RAG** — full-stack pattern with heterogeneous GPU pools

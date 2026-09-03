@@ -286,7 +286,8 @@ Strong fit:
 - Engineering organisation 200+ engineers with reliability
   becoming a board-level concern
 - Recent incident pattern that exposed reliability gaps
-- Regulator-driven RTO/RPO obligations (DORA Article 21, NIS2)
+- Regulator-driven RTO/RPO obligations (DORA Articles 11-12, NIS2
+  Article 21(2)(c))
 - Existing observability investment but no clear SRE discipline
 - Platform engineering function exists or is being built (SRE pairs
   naturally with platform engineering)

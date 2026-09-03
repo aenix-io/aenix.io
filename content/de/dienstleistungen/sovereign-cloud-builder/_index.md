@@ -32,7 +32,7 @@ quick_facts:
 
 faq:
   - q: "Was macht ein Sovereign Cloud Builder?"
-    a: "Er gestaltet und liefert ein souveränes Cloud-Produkt für regulierte Märkte: Architektur für substantielle Souveränität, kundenkontrollierte Verschlüsselungsschlüssel, Lieferketten-Transparenz, audit-bereites Logging und ein regulator-aligniertes operatives Modell. Aenix baut diese Produkte auf Cozystack für Regierungen, Telcos und regionale Operatoren."
+    a: "Er gestaltet und liefert ein souveränes Cloud-Produkt für regulierte Märkte: Architektur für substantielle Souveränität, kundenkontrollierte Verschlüsselungsschlüssel, Lieferketten-Transparenz, audit-bereites Logging und ein regulator-abgestimmtes operatives Modell. Aenix baut diese Produkte auf Cozystack für Regierungen, Telcos und regionale Operatoren."
   - q: "Worauf baut Aenix das souveräne Cloud-Produkt auf?"
     a: "Auf Cozystack, einem CNCF-Projekt unter Apache-2.0-Lizenz ohne CPU- oder Core-basierte Lizenzierung. Cozystack vereint VMs und Container über KubeVirt, eBPF-Networking via Cilium, repliziertes Storage über LINSTOR/DRBD und CRD-basierte Mandantenfähigkeit auf einer einzigen Kubernetes-API."
   - q: "Was erfordert echte Cloud-Souveränität konkret?"

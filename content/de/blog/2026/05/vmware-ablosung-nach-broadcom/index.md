@@ -18,10 +18,10 @@ quiz:
       explanation: "Verlängerungsangebote kamen mit dem Zwei- bis Fünffachen der bisherigen Ausgaben zurück, nachdem Broadcom die Dauerlizenzierung durch VCF-Abonnementpakete ersetzt hat."
     - q: "Welche Cozystack-Komponente entspricht im Mapping dem vCenter?"
       options:
-        - { text: "KubeVirt auf Talos", correct: false }
+        - { text: "KubeVirt, das die virtuellen Maschinen ausführt", correct: false }
         - { text: "Die Cozystack Control Plane mit Kubernetes-API und Dashboard", correct: true }
-        - { text: "Cilium", correct: false }
-        - { text: "LINSTOR", correct: false }
+        - { text: "Cilium, das den Netzwerk-Datenpfad und die Policies trägt", correct: false }
+        - { text: "LINSTOR, das den replizierten Blockspeicher bereitstellt", correct: false }
       explanation: "Im Architektur-Mapping entspricht die Cozystack Control Plane, also die Kubernetes-API zusammen mit dem Cozystack Dashboard, dem vCenter. KubeVirt ersetzt vSphere und ESXi, Cilium ersetzt NSX, LINSTOR ersetzt vSAN."
     - q: "Welche zwei Bereiche brauchen beim Wechsel zu Cozystack ein Redesign statt einer 1:1-Abbildung?"
       options:

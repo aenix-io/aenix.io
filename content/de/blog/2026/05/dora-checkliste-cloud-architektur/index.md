@@ -30,9 +30,9 @@ quiz:
       explanation: "Lücke 1: Observability verlässt unbemerkt den Aufsichtsbereich. Die Produktionsdatenbank kann konform sein, der SaaS-Observability-Stack, der ihre Logs einsammelt, ist es in der Regel nicht. Die Residenzerwartungen aus DORA Artikel 28 gelten für die gesamte Vereinbarung mit dem IKT-Drittanbieter."
     - q: "Was ist für operative Resilienz im Cloud-Kontext sicherzustellen?"
       options:
-        - { text: "Ein dokumentierter Backup-Plan genügt", correct: false }
+        - { text: "Ein dokumentierter Backup-Plan mit geprüfter Aufbewahrungsfrist", correct: false }
         - { text: "RTO und RPO dokumentiert und jährlich getestet, DR über zwei Regionen", correct: true }
-        - { text: "Eine ausgewiesene DR-Site genügt", correct: false }
+        - { text: "Ein ausgewiesener DR-Standort mit vertraglich zugesagter Kapazität", correct: false }
       explanation: "Operative Resilienz verlangt RTO und RPO dokumentiert und jährlich getestet, nicht bloß dokumentiert; eine Architektur, die kontrollierte Fehlerinjektion (Chaos Engineering) ohne unzumutbare Kundenwirkung verträgt; sowie Backup und Disaster Recovery über mindestens zwei Regionen."
     - q: "Was meint der Artikel mit „Konzentrationsrisiko als Beschaffungsfrage behandelt“?"
       options:

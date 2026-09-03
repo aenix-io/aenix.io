@@ -141,7 +141,7 @@ Cozystack Dashboard for service provisioning, plus a production-ready [WHMCS int
 Two paths:
 
 - **Self-deploy** — Cozystack is open source. Architecture, install and operations documentation: **[cozystack.io](https://cozystack.io)**. CNCF community Slack and Telegram for support.
-- **Buy the supported product** — **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** adds pre-validated DORA and NIS2 architecture, multi-DC runbooks, customer-managed keys, audit-ready logging, an enterprise SLA and the optional developer self-service layer. Delivery runs through **[private cloud consulting](/services/private-cloud-consulting/)**.
+- **Buy the supported product** — **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** adds built DORA and NIS2 architecture, multi-DC runbooks, customer-managed keys, audit-ready logging, an enterprise SLA and the optional developer self-service layer. Delivery runs through **[private cloud consulting](/services/private-cloud-consulting/)**.
 
 For sovereignty / DORA / repatriation / AI-specific motivations, the relevant solution pages:
 

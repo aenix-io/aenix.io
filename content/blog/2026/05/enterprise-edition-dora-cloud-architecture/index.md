@@ -1,6 +1,6 @@
 ---
-title: "Private Cloud Platform for regulated cloud — DORA Articles 21 and 28 mapped to running architecture"
-description: "Mapping DORA Article 21 and Article 28 obligations to a defensible cloud architecture for regulated enterprises — banks, insurers, public sector, energy."
+title: "Private Cloud Platform for regulated cloud — DORA and NIS2 obligations mapped to running architecture"
+description: "Mapping DORA ICT-risk and third-party obligations and the NIS2 Article 21(2) measures onto a defensible cloud architecture for regulated enterprises."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
@@ -50,13 +50,17 @@ expectations are sharpening with each TLPT cycle. The pre-DORA pattern
 — hyperscaler region with a few contractual clauses — does not survive
 realistic audit scrutiny.
 
-## Article 21 — ten architectural areas
+## The ten measure areas — NIS2 Article 21(2), and where DORA meets them
 
-DORA Article 21 requires "appropriate technical, operational, and
-organisational measures" across ten enumerated areas. NIS2 Article 21
-covers similar ground for essential and important entities. Both treat
-cloud infrastructure as a first-class object of the regulation, not
-an afterthought.
+NIS2 Article 21(2) requires "appropriate and proportionate technical,
+operational and organisational measures" across ten enumerated areas.
+DORA reaches most of the same ground by a different route: its ICT risk
+management framework (Articles 5-16, and Article 6 in particular),
+incident management and reporting (Articles 17-19), and ICT third-party
+risk (Articles 28-30). A regulated enterprise in scope for both is not
+running two architectures — it is running one, evidenced twice. The ten
+areas below are the NIS2 enumeration, with the DORA article that governs
+the same control named where it differs.
 
 For platform engineers, the ten areas map to concrete architecture
 decisions:
@@ -71,8 +75,13 @@ enforce the technical controls the risk register names.
 
 ### 2. Incident handling
 
-Detection must operate within the Article 23 reporting windows: 24-hour
-early warning, 72-hour incident notification, one-month final report.
+Detection must operate within the NIS2 Article 23 reporting windows:
+24-hour early warning, 72-hour incident notification, one-month final
+report. DORA sets its own regime in Articles 17-19 — classification
+under Article 18, reporting of major ICT-related incidents to the
+competent authority under Article 19 — on deadlines fixed by the
+implementing standards rather than by the article text. Build detection
+to the tighter of the two; the architecture is the same either way.
 The bottleneck in practice is detection telemetry — alert fatigue
 masks signal. Private Cloud Platform ships with VictoriaMetrics +
 VictoriaLogs and curated alert rules tuned for security, not just
@@ -88,9 +97,10 @@ hooks for controlled failure injection.
 
 ### 4. Supply chain security
 
-Article 28's most demanding requirement: ICT third-party arrangements
-inventoried, classified by criticality, with sub-contractor chain
-mapped to the *second hop*. Private Cloud Platform gives you the
+The most demanding requirement in DORA's third-party chapter
+(Articles 28-30): ICT third-party arrangements inventoried, classified
+by criticality, with the sub-contracting chain mapped to the *second
+hop* under Article 30(2)(a). Private Cloud Platform gives you the
 provider relationship Ænix can attest to (we are the platform vendor);
 the open-source substrate (Cozystack) gives you transparency to the
 upstream-component level. Beyond that, the customer's responsibility.
@@ -137,9 +147,9 @@ MFA on all privileged accounts at minimum. Enterprise tier of Ænix
 support requires MFA on all customer-side cluster access. Secured
 emergency comms via the support channel itself.
 
-## Article 28 — the supplier-risk dimension that breaks most setups
+## DORA Articles 28-30 — the supplier-risk dimension that breaks most setups
 
-Article 28 is where most banks and insurers we engage with have the
+DORA's third-party chapter is where most banks and insurers we engage with have the
 biggest gaps. Three patterns recur:
 
 ### Pattern 1 — observability data quietly leaving the regulator perimeter
@@ -152,7 +162,7 @@ containing transaction details, customer identifiers, and protected
 data move to non-compliant jurisdiction every minute the application
 runs.
 
-Article 28's data-residency expectations apply to the *entire ICT
+DORA's third-party requirements apply to the *entire ICT
 third-party arrangement* — observability tools included. Supervisor
 audits increasingly catch this; legacy "data classification policies"
 do not. Private Cloud Platform replaces SaaS observability with self-hosted
@@ -177,8 +187,9 @@ documented exit-drill playbook customers run annually.
 
 Concentration risk often gets flagged then "mitigated" by contractual
 diversity clauses. The substantive condition — workloads architecturally
-diversified across multiple providers — typically isn't met. Article 28
-demands the substantive condition, not just the procurement formality.
+diversified across multiple providers — typically isn't met. Article 29
+assesses concentration risk on the substantive condition, not on the
+procurement formality.
 
 Private Cloud Platform's architecture inherently breaks the concentration:
 the cloud provider relationship becomes hardware and bandwidth, not

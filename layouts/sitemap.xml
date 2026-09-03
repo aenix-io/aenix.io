@@ -20,6 +20,21 @@
     grep -rn "noindex" layouts --include='*.html' | grep -v partials/seo
 */ -}}
 {{- $noindexLayouts := slice "quiz" "cert-verify" "cert-all" "link-registry" "link-tool" "redirect" -}}
+{{- /*
+  Russian-language trees stay published but out of the sitemap.
+
+  aenix.io's sitemap is the EN/DE commercial site. The certification tree and
+  /ru/workshops/ are Russian-language pages that sit on English URL paths
+  (/certification/… renders <html lang="ru">), so they were being submitted as
+  part of the English site — a certification page was the first <loc>. For a
+  vendor selling data sovereignty to EU regulated buyers, a crawl-visible
+  Russian section is a procurement question nobody wants to answer.
+
+  Excluding them here removes them from the sitemap only: the pages stay live,
+  linked, and indexable if Google finds them another way. Do NOT add a noindex
+  or a robots Disallow instead — the certification service is in active use.
+*/ -}}
+{{- $excludedPrefixes := slice "/certification/" "/ru/" -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   {{- range .Data.Pages }}
@@ -33,6 +48,11 @@
     {{- if and (eq $layout "calculator-app") (not $p.Params.indexable) }}{{ $noindex = true }}{{ end -}}
     {{- /* Hugo's 404 is a regular page in .Data.Pages but must never be submitted */ -}}
     {{- if eq $p.RelPermalink "/404.html" }}{{ $noindex = true }}{{ end -}}
+    {{- /* Russian trees: excluded by path prefix and by declared language */ -}}
+    {{- range $excludedPrefixes }}
+      {{- if hasPrefix $p.RelPermalink . }}{{ $noindex = true }}{{ end -}}
+    {{- end -}}
+    {{- if eq (lower (string (or $p.Params.language ""))) "ru" }}{{ $noindex = true }}{{ end -}}
     {{- if and $p.Permalink (not $noindex) }}
   <url>
     <loc>{{ $p.Permalink }}</loc>

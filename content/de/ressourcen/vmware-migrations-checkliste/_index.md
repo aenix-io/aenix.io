@@ -26,12 +26,12 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Regulatorik"
-    value: "Checkliste deckt DORA/NIS2-Alignment und Schlüssel-Custody für Souveränitäts-Anforderungen ab"
+    value: "Checkliste deckt DORA/NIS2-Alignment und Schlüsselverwahrung für Souveränitäts-Anforderungen ab"
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
 faq:
   - q: "Was deckt die VMware-Migrations-Checkliste ab?"
-    a: "Acht Bereiche über 25 Punkte: Inventar (Workload-Anzahl, OS-Mix, Kritikalität), Abhängigkeiten (vSAN, NSX, vCD, vRealize), Network- und Storage-Redesign, Multi-Tenancy-Modell, KI/GPU-Workloads, Souveränität und Compliance (DORA/NIS2), operative Bereitschaft sowie Kosten-Trajektorie mit TCO-Inputs und Commitment-Ablaufen."
+    a: "Acht Bereiche über 25 Punkte: Inventar (Workload-Anzahl, OS-Mix, Kritikalität), Abhängigkeiten (vSAN, NSX, vCD, vRealize), Network- und Storage-Redesign, Multi-Tenancy-Modell, KI/GPU-Workloads, Souveränität und Compliance (DORA/NIS2), operative Bereitschaft sowie Kosten-Trajektorie mit TCO-Inputs und Commitment-Abläufe."
   - q: "Was kostet die Checkliste?"
     a: "Die Checkliste ist kostenlos. Sie wird als PDF über das Formular auf dieser Seite bereitgestellt und ist dieselbe strukturierte Discovery, die Aenix während seiner 14-Tage-Platform-Readiness-Assessments verwendet."
   - q: "Für wen ist die Checkliste gedacht?"
@@ -59,12 +59,12 @@ faq:
 
 - **Inventar** — Workload-Anzahl, OS-Mix, Kritikalitäts-Stufen
 - **Abhängigkeiten** — vSAN, NSX, vCD, vRealize, Custom-Integrationen
-- **Network und Storage Redesign** — was direkt mappt, was neue Architektur braucht
+- **Netzwerk- und Storage-Redesign** — was direkt mappt, was neue Architektur braucht
 - **Multi-Tenancy-Modell** — vCD-Organisationen zu Cozystack Tenant CRD
 - **KI/GPU-Workloads** — VMware vGPU vs KubeVirt vGPU
-- **Souveränität und Compliance** — DORA/NIS2-Alignment, Schlüssel-Custody
-- **Operative Bereitschaft** — Runbooks, On-Call, Knowledge Transfer
-- **Kosten-Trajektorie** — TCO-Inputs, Commitment-Ablaufe, Repatriation-Kandidaten
+- **Souveränität und Compliance** — DORA/NIS2-Alignment, Schlüsselverwahrung
+- **Operative Bereitschaft** — Runbooks, Rufbereitschaft, Wissenstransfer
+- **Kosten-Trajektorie** — TCO-Inputs, Commitment-Abläufe, Repatriation-Kandidaten
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -89,7 +89,7 @@ faq:
 
 ## Nach dem Download
 
-Die Checkliste gibt Ihnen die strukturierte Discovery, die Ihre Organisation intern machen kann. Für tiefere Bewertung mit TCO-Modellierung und Architektur-Design siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** oder **[VMware-Migrations-Hub](/de/migration/vmware/)**.
+Die Checkliste gibt Ihnen die strukturierte Discovery, die Ihre Organisation intern durchführen kann. Für eine tiefere Bewertung mit TCO-Modellierung und Architektur-Design siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** oder **[VMware-Migrations-Hub](/de/migration/vmware/)**.
 
 ---
 

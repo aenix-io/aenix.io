@@ -30,9 +30,9 @@ quiz:
       explanation: "Erster Fallstrick: mit dem Portal anfangen. Wer Backstage kauft, bevor die darunterliegenden Fähigkeiten wirklich self-service sind, bekommt einen schönen Katalog über demselben betrieblichen Chaos. Die Nutzung bleibt aus."
     - q: "Welches Muster empfiehlt der Artikel für Service-Provider und Multi-Mandanten-Cloud-Anbieter?"
       options:
-        - { text: "PaaS-Lite auf Kubernetes", correct: false }
+        - { text: "Muster 4, PaaS-Lite als schlanke Schicht auf Kubernetes", correct: false }
         - { text: "Muster 1, die Kubernetes-native Multi-Mandanten-Plattform", correct: true }
-        - { text: "External Services as Platform", correct: false }
+        - { text: "Muster 6, External Services as Platform über fremde Dienste", correct: false }
       explanation: "Muster 1 auf Cozystack-Basis: ein Kubernetes-Cluster mit harter Mandantentrennung über das Tenant CRD, KubeVirt für virtuelle Maschinen, Container-Workloads und verwaltete Datenbanken. Die beste Wahl für Service-Provider und Multi-Mandanten-Umgebungen."
     - q: "Was passiert, wenn das Plattformteam unterbesetzt ist?"
       options:

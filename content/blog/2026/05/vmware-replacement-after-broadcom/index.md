@@ -19,9 +19,9 @@ quiz:
       explanation: "The piece states that renewal quotes \"have come back at 2× to 5× prior spend across our pipeline\" after Broadcom replaced perpetual licensing with VCF subscription bundles."
     - q: "Which Cozystack component is positioned as the direct vCenter alternative?"
       options:
-        - { text: "KubeVirt (used for VM scheduling)", correct: false }
-        - { text: "Cilium (used for network policy)", correct: false }
-        - { text: "Cozystack control plane, exposed via K8s API and Cozystack Dashboard", correct: true }
+        - { text: "KubeVirt, which schedules and runs the virtual machines", correct: false }
+        - { text: "Cilium, which carries the network policy and datapath", correct: false }
+        - { text: "The Cozystack control plane, via the Kubernetes API and Dashboard", correct: true }
         - { text: "Tenant CRD (used as the unified plane)", correct: false }
       explanation: "The architecture-mapping table maps the Kubernetes API + Cozystack Dashboard as the vCenter alternative, with Cluster API providing multi-cluster federation. KubeVirt replaces ESXi; Cilium replaces NSX."
     - q: "Which of these limitations is described as industry-wide rather than Cozystack-specific?"

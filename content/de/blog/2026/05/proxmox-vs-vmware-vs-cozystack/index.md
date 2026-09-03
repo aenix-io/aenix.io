@@ -12,9 +12,9 @@ quiz:
   questions:
     - q: "Für welche Zielgruppe empfiehlt der Artikel Proxmox VE?"
       options:
-        - { text: "Für Service-Provider mit mehr als 1.000 Kunden", correct: false }
-        - { text: "Für Mittelstands-IT, Labs und Single-Tenant-Umgebungen unter etwa 50 Hosts", correct: true }
-        - { text: "Für KI- und GPU-Betrieb im großen Maßstab", correct: false }
+        - { text: "Für Service-Provider mit mehr als 1.000 mandantengetrennten Kunden", correct: false }
+        - { text: "Für Mittelstands-IT, Labs und Single-Tenant-Umgebungen unter 50 Hosts", correct: true }
+        - { text: "Für KI- und GPU-Betrieb im großen Maßstab über mehrere Standorte", correct: false }
       explanation: "Proxmox VE kombiniert KVM, LXC, ZFS und Ceph aus der Community. Beste Wahl für Mittelstands-IT, Labs und Single-Tenant-Umgebungen unter rund 50 Hosts mit überwiegend virtuellen Maschinen."
     - q: "Welche architektonische Eigenschaft verschafft Cozystack den Vorsprung bei Service-Providern?"
       options:

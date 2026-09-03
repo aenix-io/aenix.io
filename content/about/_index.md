@@ -104,7 +104,7 @@ We build turnkey cloud platforms for organizations that need real cloud infrastr
 4. **Product / SaaS engineering teams** (Developer Self-Service) — organizations investing in developer experience and internal platform engineering
 5. **AI-heavy organizations** (AI Platform) — AI-native companies, regulated AI deployments, GPU-heavy product companies
 
-Plus an entry tier — **Pure Cozystack with Ænix Support** — for product teams running on Hetzner / OVH / leased bare-metal who want vendor support without the commercial portal/billing layer.
+Plus an entry tier — **enterprise support for Cozystack** — for product teams running on Hetzner / OVH / leased bare-metal who want vendor support without the commercial portal/billing layer.
 
 We engage at both ends of the range: a $1,250/month productized support tier for a small provider, and multi-year platform builds for banks and public clouds.
 

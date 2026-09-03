@@ -23,7 +23,7 @@ quick_facts:
     value: "Enterprise-Support ab 1.250 USD/Monat; höhere Tiers und Migrations-/Build-Engagements auf Anfrage"
 faq:
   - q: "Wie unterscheidet sich die Public Cloud Platform vom Selbstbetrieb von Open-Source-Cozystack?"
-    a: "Cozystack liefert den Motor, die Public Cloud Platform das fertige Auto: WHMCS-Integration, Billing, Kunden-Portal, Payment-Processing, Tenant-Suspension und Enterprise-Support — alle Surfaces, die ein echtes Cloud-Geschäft braucht. Cozystack bleibt Apache-2.0-Open-Source; die Public Cloud Platform ergänzt produktisierte Module und einen Support-Tier."
+    a: "Cozystack liefert den Motor, die Public Cloud Platform das fertige Auto: WHMCS-Integration, Billing, Kunden-Portal, Payment-Processing, Tenant-Suspension und Enterprise-Support — alle Oberflächen, die ein echtes Cloud-Geschäft braucht. Cozystack bleibt Apache-2.0-Open-Source; die Public Cloud Platform ergänzt produktisierte Module und einen Support-Tier."
   - q: "Was kostet die Public Cloud Platform?"
     a: "Der Entry-Support-Tier startet ab 1.250 USD/Monat und umfasst direkten Support-Kanal, Zugang zu Provider-spezifischen Modulen und Migrations-Expertise. Höhere Tiers bringen einen Named Technical Account Manager. Migrations- und Build-Engagements werden projektbasiert im Discovery-Call kalkuliert."
   - q: "Können wir unser eigenes Billing statt WHMCS nutzen?"
@@ -31,7 +31,7 @@ faq:
   - q: "Von welchen Plattformen migriert die Public Cloud Platform?"
     a: "Aenix liefert produktisierte Module und Runbooks für die Migration von VMware Cloud Director / vSphere, OpenStack, Virtuozzo, OpenNebula und eigenen Panels. Häufigster Trigger 2026 ist der Broadcom-Subscription-Druck bei VMware. Migrationen erfolgen mit Erfahrung aus Produktions-Engagements."
   - q: "Wie lange dauert eine Migration von VMware?"
-    a: "Der produktisierte Installer bringt die Public Cloud Platform in Wochen live. Die eigentliche Kundenmigration ist workload-abhängig — typisch ist ein Parallel-Run mit kohorten-basierter Migration über 3-6 Monate für mittelgroße Hosting-Estates."
+    a: "Der produktisierte Installer bringt die Public Cloud Platform in Wochen live. Die eigentliche Kundenmigration ist workload-abhängig — typisch ist ein Parallel-Run mit kohorten-basierter Migration über 3-6 Monate für mittelgroße Hosting-Bestände."
   - q: "Unterstützt die Public Cloud Platform White-Label und Reseller-Modelle?"
     a: "Ja. Cozystack Dashboard ist vollständig white-label-fähig pro Anbieter (Farben, Logo, Domain) und unterstützt ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden). Das Partner-Programm bietet bis zu 40% Marge inklusive Deal-Registrierung, Sales-Kit und Technical-Pre-Sales-Support."
   - q: "Welche Services bietet der Katalog jenseits von VMs?"
@@ -48,7 +48,7 @@ aliases:
   <a class="cta-secondary" href="/de/produkte/">Alle Plattformen →</a>
 </div>
 
-**Sehen Sie das Kundenportal selbst.** Die Cozystack Dashboard-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
+**Sehen Sie sich das Kundenportal selbst an.** Die Cozystack Dashboard-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
@@ -61,7 +61,7 @@ aliases:
 
 ### WHMCS-Integration
 
-Produktionsreifes WHMCS-Modul mit Billing-Templates für Ihr existierendes Hosting-Panel. Zwei Integrationsmodi — WHMCS als kundenseitiges Frontend oder Cozystack Dashboard-Frontend mit WHMCS als Billing-Backend. Erfasst und speichert vollständige Nutzungsdaten mit klarer API.
+Produktionsreifes WHMCS-Modul mit Billing-Templates für Ihr existierendes Hosting-Panel. Zwei Integrationsmodi — WHMCS als kundenseitiges Frontend oder Cozystack Dashboard-Frontend mit WHMCS als Billing-Backend. Erfasst und speichert vollständige Nutzungsdaten und stellt sie über eine dokumentierte API bereit.
 
 ### Hosting-Panel + kundenseitiges Portal
 
@@ -69,15 +69,15 @@ Gebrandetes Admin-Dashboard für den Betreiber + kundenseitiges Console-Portal (
 
 ### Service-Erstellungs-Wizards
 
-Einfache geführte UX zum Hochfahren von VMs, Kubernetes-Clustern, Managed Databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), S3-kompatiblem Object Storage, GPU-Workloads. Kein YAML von Endkunden erforderlich.
+Ein geführter Ablauf, mit dem sich VMs ohne Vorwissen starten lassen, Kubernetes-Clustern, Managed Databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), S3-kompatiblem Object Storage, GPU-Workloads. Kein YAML von Endkunden erforderlich.
 
 ### Mandanten sperren und stilllegen
 
-Eingebaute Tenant-Lifecycle-Kontrollen — automatische Suspension überfälliger Tenants, Ressourcen-Blocking, Lock für Security-Review. Kein Engineering-Ticket erforderlich.
+Eingebaute Tenant-Lifecycle-Kontrollen — automatische Suspension überfälliger Tenants, Ressourcen sperren, für ein Security-Review stilllegen. Kein Engineering-Ticket erforderlich.
 
 ### Vollständiges Billing — Backend + Frontend
 
-Usage-Metering, Invoicing, Payment-Processing. Stripe + regionale Zahlungsanbieter + B2B-Invoicing. Nicht nur API-Hooks — tatsächliche Produktions-Billing-Surface.
+Usage-Metering, Invoicing, Payment-Processing. Stripe + regionale Zahlungsanbieter + B2B-Invoicing. Nicht nur API-Hooks, sondern eine echte Abrechnungsoberfläche für den Produktivbetrieb.
 
 ### Migrations-Expertise + Tooling
 
@@ -85,13 +85,13 @@ Fertige Module und Runbooks für Migration von VMware, OpenStack, Virtuozzo, Ope
 
 ### Schnelle Feature-Auslieferung
 
-Proprietäre Module (über Open-Source-Cozystack hinaus) ausgeliefert ohne die langen Wartezeiten typisch für Community-only-Plattformen.
+Proprietäre Module (über Open-Source-Cozystack hinaus) ausgeliefert ohne die langen Wartezeiten, die für reine Community-Plattformen typisch sind.
 
 ### Enterprise-Support
 
 24/7-Support mit Named Technical Account Manager (höhere Tiers). Entry-Tier ab 1.250 USD/Monat.
 
-### Service-Katalog jenseits VMs
+### Service-Katalog jenseits von VMs
 
 Managed Databases (PostgreSQL via Cloud Native PG, MariaDB, Redis, Kafka via Strimzi, ClickHouse via Altinity, RabbitMQ, NATS Messaging), S3 Storage (SeaweedFS), HTTP-Cache (Nginx-basiert), VPN-Service (Outline), GPU-Workloads.
 
@@ -101,15 +101,15 @@ Managed Databases (PostgreSQL via Cloud Native PG, MariaDB, Redis, Kafka via Str
 
 | Dimension | OpenStack | Ænix Public Cloud Platform |
 |---|---|---|
-| Time-to-Production | Typisch 6+ Monate | Wochen |
+| Zeit bis zum Produktivbetrieb | Typisch 6+ Monate | Wochen |
 | Operations-Team-Größe | 8-15+ Engineers | 3-7 Engineers |
-| Service-Katalog | DIY jenseits Core Compute / Storage / Network | Eingebaut: K8s, DBs, S3, GPU, Cache, VPN |
+| Service-Katalog | Eigenbau jenseits von Compute, Storage und Netzwerk | Eingebaut: K8s, DBs, S3, GPU, Cache, VPN |
 | Kundenseitiges Portal | DIY | Cozystack Dashboard, gebrandet, inklusive |
 | Billing | DIY-Integration | WHMCS-nativ + Stripe + regionale Anbieter |
 | Multi-Tenancy | Project-Modell — limitiert | Tenant CRD mit Quotas / RBAC / Observability per Tenant |
-| Migration von VMware | Schwere Aufgabe | Produktisierte Module + Ænix-Expertise |
+| Migration von VMware | Aufwendiges Projekt | Produktisierte Module + Ænix-Expertise |
 | Vendor-Support | Community + Add-ons | Ænix Enterprise-Support ab 1.250 USD/Monat |
-| Upgrade-Kadenz | Manuell / risikoreich | GitOps-managed, low-risk |
+| Upgrade-Kadenz | Manuell / risikoreich | GitOps-verwaltet, risikoarm |
 
 ---
 
@@ -123,7 +123,7 @@ Diese Kunden nutzen Ænix Public Cloud Platform, um Multi-Tenant-Cloud-Produkte 
 
 ## Preise
 
-**Entry ab 1.250 USD/Monat Support-Tier.** Höhere Tiers und projektbasierte Migrations- / Build-Engagements auf Anfrage via Discovery-Call.
+**Einstieg ab 1.250 USD/Monat im Basic-Support-Tier.** Höhere Tiers und projektbasierte Migrations- / Build-Engagements auf Anfrage via Discovery-Call.
 
 [Public Cloud Platform Pricing diskutieren →](/de/kontakt/?platform=public-cloud)
 
@@ -131,7 +131,7 @@ Diese Kunden nutzen Ænix Public Cloud Platform, um Multi-Tenant-Cloud-Produkte 
 
 ## Migrations-Pfade
 
-Ænix liefert Public Cloud Platform Migrationen mit produktisierten Modulen und Engagement-Expertise:
+Ænix liefert Migrationen auf die Public Cloud Platform mit produktisierten Modulen und Engagement-Expertise:
 
 - **Von VMware Cloud Director / vSphere** — häufigster 2026-Trigger (Broadcom-Subscription-Druck)
 - **Von OpenStack** — Reduzierung operativer Komplexität; schnellere Feature-Velocity
@@ -154,7 +154,7 @@ Bis zu 40% Marge auf Ænix-Platform-Verkäufe für Reseller, Integratoren und Di
 
 Für Produkt-Teams, die Cozystack auf eigener / gemieteter Hardware (Hetzner, OVH, regionale Bare-Metal) laufen lassen ohne kommerzielle Portal-/Billing-Schicht:
 
-**Cloud-Erfahrung auf kundenkontrollierter Hardware. Reduzieren Sie AWS-Level-Rechnungen 2-7×. Live-Migration von Public Clouds in 1-2 Wochen.** Vendor-Support, Architektur-Review und Migrations-Expertise — ohne kommerzielle Portal-/Billing-Schicht.
+**Cloud-Erfahrung auf kundenkontrollierter Hardware. Senken Sie Ihre Cloud-Rechnung um den Faktor 2 bis 7 gegenüber AWS-Niveau. Live-Migration von Public Clouds in 1-2 Wochen.** Vendor-Support, Architektur-Review und Migrations-Expertise — ohne kommerzielle Portal-/Billing-Schicht.
 
 [Enterprise-Support für Cozystack diskutieren →](/de/kontakt/?platform=cozystack-support)
 

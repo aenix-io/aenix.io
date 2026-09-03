@@ -187,7 +187,7 @@ Cozystack the platform is **free** (Apache 2.0). Anyone can run it.
 
 For commercial Ænix support and the turnkey cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/)** — three platforms plus two supporting products, with four support tiers (Basic from $1,250/month per 10 nodes; Standard $3,000; Plus $5,500; Enterprise Custom).
 
-Entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
+Entry tier — **enterprise support for Cozystack** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
 <div class="cta-row">
   <a class="cta-secondary" href="/pricing/">Pricing details →</a>

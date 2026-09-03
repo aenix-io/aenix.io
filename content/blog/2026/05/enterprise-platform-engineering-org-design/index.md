@@ -90,7 +90,7 @@ documented approval, are reproducible from artefacts, generate
 evidence supervisors can consume.
 
 The platform itself becomes a regulator-relevant object —
-DORA Article 21 controls live in platform code.
+DORA Article 6 controls live in platform code.
 
 ## Org-design patterns
 

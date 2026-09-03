@@ -100,7 +100,7 @@ Tenant-CRD-Modell, Namespace-Strategie, RBAC, Resource-Quotas, Netzwerk-Isolatio
 Cluster-Lifecycle (Upgrades, Skalierung, Recovery), Backup und DR (Velero), Observability-Stack, Incident-Response, Capacity-Planning.
 
 **4. Produktionsbereitschafts-Checkliste**
-Sicherheits-Posture (PSPs / Pod Security Standards, Network Policies, Secrets-Management), Compliance-Posture (Audit-Logging, Zertifizierungen), operative Posture (Runbooks, On-Call, SLOs).
+Sicherheitslage (Pod Security Standards, Network Policies, Secrets-Management), Compliance-Lage (Audit-Logging, Zertifizierungen) und Betriebslage (Runbooks, Rufbereitschaft, SLOs).
 
 </div>
 
