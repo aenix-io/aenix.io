@@ -315,5 +315,5 @@ Poor fit:
   the eight DevOps practices including SRE
 - **[Platform engineering vs DevOps vs SRE](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** —
   terminology and function design
-- **[Cloud engineering disciplines](/blog/2026/05/cloud-engineering-disciplines-2026/)** —
+- **[Cloud engineering disciplines](/services/cloud-engineering/)** —
   the seven disciplines that compound

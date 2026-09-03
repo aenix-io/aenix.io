@@ -44,7 +44,7 @@ hreflang_de: /de/dienstleistungen/cloud-engineering/
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/blog/2026/05/cloud-engineering-disciplines-2026/">Cloud engineering disciplines →</a>
+  <a class="cta-secondary" href="/services/cloud-engineering/">Cloud engineering disciplines →</a>
 </div>
 
 ---

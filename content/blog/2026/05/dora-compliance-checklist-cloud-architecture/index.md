@@ -44,6 +44,8 @@ quiz:
         - { text: "Every three years", correct: true }
         - { text: "Every five years", correct: false }
       explanation: "For significant entities, TLPT is required every three years. Other in-scope entities run scenario-based resilience testing at least annually."
+aliases:
+  - /blog/2026/05/dora-compliance-checklist-cloud-architecture/
 ---
 
 The Digital Operational Resilience Act (DORA) has been in force since 17 January 2025. Across the EU's financial sector — banks, insurers, investment firms, payment institutions, crypto-asset service providers, and the third-party ICT providers serving them — DORA replaced a fragmented patchwork of supervisory expectations with a single, directly applicable regulation.

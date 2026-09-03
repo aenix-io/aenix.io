@@ -44,7 +44,7 @@ hreflang_de: /de/dienstleistungen/ai-platform-build/
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/blog/2026/05/build-ai-platform-for-startups/">Read playbook →</a>
+  <a class="cta-secondary" href="/blog/2026/05/ai-ml-edition-sustained-gpu-economics/">Read playbook →</a>
 </div>
 
 ---
@@ -100,7 +100,7 @@ For sovereignty-emphasized workloads see **[Sovereign AI](/solutions/sovereign-a
   <a class="cta-primary" href="/contact/">Book a call</a>
 </div>
 
-- **[AI platform startup playbook](/blog/2026/05/build-ai-platform-for-startups/)**
+- **[AI platform startup playbook](/blog/2026/05/ai-ml-edition-sustained-gpu-economics/)**
 - **[Sovereign AI](/solutions/sovereign-ai/)** — sovereignty-led AI infrastructure
 - **[Cozystack](/products/cozystack/)** — open-source platform foundation
 

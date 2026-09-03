@@ -47,7 +47,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/cloud-engineering-disciplines-2026/">Cloud-Engineering-Disziplinen (englisch) →</a>
+  <a class="cta-secondary" href="/services/cloud-engineering/">Cloud-Engineering-Disziplinen (englisch) →</a>
 </div>
 
 ---
