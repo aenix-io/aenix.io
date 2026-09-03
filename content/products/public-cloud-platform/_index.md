@@ -13,7 +13,7 @@ images: ["img/og/public-cloud-platform.png"]
 hreflang_de: /de/produkte/public-cloud-platform/
 related_pages: ["/products/private-cloud-platform/", "/products/ai-platform/", "/products/whmcs-integration/", "/migration/vmware/", "/alternatives/openstack-alternative/"]
 direct_answer: |
-  **Aenix Public Cloud Platform is a turnkey, Kubernetes-native cloud platform for organizations that sell cloud capacity to someone else — hosting providers, MSPs, regional clouds and data centres at one end, telcos, national operators and banks running a commercial cloud at the other. It is the productized, supported distribution of Cozystack (Apache 2.0, a CNCF project created and maintained by Aenix) and adds the commercial surfaces a cloud business needs: full billing back-end and front-end, WHMCS integration, a white-label customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage and GPU workloads. It runs multi-region and multi-hypervisor, so it extends an existing VMware or OpenStack estate rather than forcing a rip-and-replace. Entry tier starts at $1,250/month; national multi-region programmes are quoted per RFP.**
+  **Aenix Public Cloud Platform is a turnkey, Kubernetes-native cloud platform for organizations that sell cloud capacity to someone else — hosting providers, MSPs and regional clouds at one end, telcos, national operators and banks running a commercial cloud at the other. It is the productized, supported distribution of Cozystack (Apache 2.0, a CNCF project created and maintained by Aenix), adding the commercial surfaces a cloud business needs: full billing back-end and front-end, WHMCS integration, a white-label customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage and GPU workloads. It runs multi-region and multi-hypervisor, so it extends an existing VMware or OpenStack estate rather than forcing a rip-and-replace. From $1,250/month; national multi-region programmes are quoted per RFP.**
 quick_facts:
   - label: "What it is"
     value: "Turnkey, supported cloud-in-a-box for anyone selling cloud — built on Cozystack, with billing, payments and a white-label portal included."
@@ -26,11 +26,9 @@ quick_facts:
   - label: "Replaces"
     value: "OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, Virtualizor / SolusVM-class panels, and in-house hosting panels."
   - label: "Architecture"
-    value: "Kubernetes-native: KubeVirt (VMs and containers on one API), Cilium (eBPF) networking, replicated block storage, Tenant CRD multi-tenancy, plus Cozystack Dashboard, VictoriaMetrics and VictoriaLogs."
-  - label: "Time to live"
-    value: "Weeks at provider scale via the productized installer; 3-6 month pilot then 9-18 months for a multi-region national build."
+    value: "Kubernetes-native: KubeVirt (VMs and containers on one API), Cilium (eBPF) networking, LINSTOR/DRBD replicated block storage, SeaweedFS object storage, Tenant CRD multi-tenancy, Cozystack Dashboard, VictoriaMetrics and VictoriaLogs."
   - label: "Engagement"
-    value: "From $1,250/month at provider scale; multi-region operator programmes quoted per RFP."
+    value: "From $1,250/month at provider scale — weeks to live via the productized installer. Multi-region operator builds are quoted per RFP: 3-6 month pilot, then 9-18 months."
 faq:
   - q: "How is this different from running open-source Cozystack ourselves?"
     a: "Cozystack is the engine, and it stops where the cloud business begins. Public Cloud Platform adds the operator surface: billing back-end and front-end, payment integrations, WHMCS modules, a brandable customer portal, service-creation wizards, tenant lock and suspension, a productized installer, multi-region control plane, enterprise SLA and dedicated support. Building those yourself is years of engineering, and none of it differentiates you from another provider."
@@ -53,15 +51,12 @@ aliases:
 
 **A modern alternative to OpenStack for everyone who sells cloud — from a regional hoster with forty nodes to a national operator with several data centres. Turnkey cloud-in-a-box: hosting panel, billing, customer portal, payments, support. Install, plug in users, start operating.**
 
-<div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/products/">Compare platforms →</a>
-</div>
-
-**See the customer portal for yourself.** The Cozystack Dashboard console is the actual Ænix Platform customer frontend, running entirely in your browser with demo data — no signup, no cluster, no setup.
+The live demo is the actual customer frontend — Cozystack Dashboard, running in your browser on demo data. No signup, no cluster.
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
+  <a class="cta-secondary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/products/">Compare platforms →</a>
 </div>
 
 ## One platform, two ends of the same scale
@@ -95,7 +90,7 @@ A branded admin dashboard for the operator, plus a customer-facing console (Cozy
 
 ### Service-creation wizards
 
-Guided flows for VMs, Kubernetes clusters, managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), S3-compatible object storage and GPU workloads. No YAML required from end customers.
+Guided flows for VMs, Kubernetes clusters, managed databases (PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS), S3-compatible object storage and GPU workloads. No YAML required from end customers.
 
 ### Tenant lock and suspension
 
@@ -111,7 +106,7 @@ Native multi-region orchestration: workload placement, identity, network and sto
 
 ### Service catalogue beyond VMs
 
-Managed PostgreSQL (CloudNativePG), MySQL (MariaDB), Redis, Kafka (Strimzi), ClickHouse (Altinity), RabbitMQ and NATS; S3 storage (SeaweedFS); HTTP cache; VPN service; GPU workloads.
+Managed PostgreSQL (CloudNativePG), MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, MongoDB, OpenSearch and Qdrant; S3 storage (SeaweedFS); HTTP cache; VPN service; GPU workloads.
 
 ### Migration tooling and expertise
 
@@ -141,7 +136,7 @@ Most small and mid-size providers are not running OpenStack at all. They run Vir
 
 | Dimension | Virtualizor / SolusVM class | Ænix Public Cloud Platform |
 |---|---|---|
-| Product catalogue | VPS, and variations on VPS | VMs plus managed Kubernetes, PostgreSQL, MariaDB, ClickHouse, Kafka, RabbitMQ, Redis, S3, GPU |
+| Product catalogue | VPS, and variations on VPS | VMs plus managed Kubernetes, PostgreSQL, MariaDB, ClickHouse, Kafka, RabbitMQ, Valkey, S3, GPU |
 | Where the margin is | Reselling capacity, competing on price per vCPU | Managed services on the same hardware, priced per service |
 | Tenancy model | An account owning VMs | Tenant CRD — quotas, RBAC, network isolation, per-tenant observability and billing |
 | Kubernetes for customers | Not offered, or a separate product to operate | Native, with a managed control plane per tenant |
@@ -154,7 +149,7 @@ The honest read: if VPS resale is your whole business and the margin satisfies y
 
 The three Ænix platforms are the same engine with different surfaces switched on, so they compose rather than compete. Nothing here is a separate installation.
 
-- **[AI Platform](/products/ai-platform/)** — multi-tenant GPU scheduling, MIG and fractioning, model serving, vector databases. Providers sell this as GPU-as-a-Service on the hardware they already have.
+- **[AI Platform](/products/ai-platform/)** — multi-tenant GPU scheduling, fractional GPU sharing, model serving, vector databases. Providers sell this as GPU-as-a-Service on the hardware they already have.
 - **[Private Cloud Platform](/products/private-cloud-platform/)** — DORA / NIS2 architecture, customer-controlled keys, audit-ready logging. Relevant when you are a regulated entity yourself, or when you run internal workloads next to the ones you sell.
 
 A telco selling a sovereign cloud product while running its own regulated internal estate takes both, on one platform, under one operations team.

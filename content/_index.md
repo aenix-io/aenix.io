@@ -1,16 +1,16 @@
 ---
 title: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering"
-description: "Ænix Platform — turnkey cloud-in-a-box on Cozystack (CNCF). Two editions: one for selling cloud, one for running your own. Open core."
+description: "Aenix Platform — turnkey cloud-in-a-box on Cozystack (CNCF). Three platforms on one engine: sell cloud, run your own, or run AI on your own GPUs."
 language: "en"
 hero_h1: "Run your own cloud — without VMware lock-in, hyperscaler bill, or two years of platform engineering."
-hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-source Cozystack project we created and maintain (CNCF). Two editions, one foundation. For hosting providers, telcos and operators selling cloud; and for regulated enterprises running their own."
+hero_subtitle: "Ænix Platform is a turnkey cloud-in-a-box built on the open-source Cozystack project we created and maintain (CNCF). Three platforms on one engine: for providers selling cloud, for regulated organisations running their own, and for teams running AI on their own GPUs."
 ---
 
 <div class="band band--tint">
 
 ## What we replace
 
-If you came here because of one of these — start at the linked page; we can take it from there in a 30-minute discovery call.
+If you came here for one of these, start at the linked page.
 
 <div class="replace-groups">
 
@@ -133,7 +133,7 @@ One question settles it: who consumes the capacity? Same Cozystack engine undern
     <div class="card-body">
       <div class="card-tag">Capacity goes to inference and training</div>
       <h3 class="card-title">Ænix AI Platform</h3>
-      <p class="card-description"><strong>You're a:</strong> AI-native company, a regulated organisation keeping model weights in-house, or a provider selling GPU-as-a-Service. Multi-tenant GPU scheduling with MIG and fractioning, model serving, vector databases, keys you hold yourself.</p>
+      <p class="card-description"><strong>You're a:</strong> AI-native company, a regulated organisation keeping model weights in-house, or a provider selling GPU-as-a-Service. Multi-tenant GPU scheduling with fractional sharing, model serving, vector databases, keys you hold yourself.</p>
       <p class="card-meta">3-6 months to a production inference fleet</p>
       <span class="card-link">Explore →</span>
     </div>
@@ -157,9 +157,6 @@ One question settles it: who consumes the capacity? Same Cozystack engine undern
 </div>
 
 **They combine.** A provider adds GPU-as-a-Service on hardware it already runs. A bank takes AI Platform under the same key custody and tenancy boundary its auditor already accepted. A telco sells a sovereign cloud product while running its regulated internal estate — one platform, one team. Adding a second surface is a configuration decision, not a second procurement. [How the platforms fit together →](/products/)
-
-</div>
-
 
 </div>
 
@@ -219,7 +216,7 @@ What that buys you in practice:
   <div class="engagement-step">
     <div class="engagement-step__number">1</div>
     <h3 class="engagement-step__title">Discovery call</h3>
-    <p class="engagement-step__body">30 minutes, no commitment. We confirm buyer profile, edition fit, regulatory context, and whether we should keep talking.</p>
+    <p class="engagement-step__body">30 minutes, no commitment. We confirm buyer profile, platform fit, regulatory context, and whether we should keep talking.</p>
   </div>
 
   <div class="engagement-step">
@@ -231,7 +228,7 @@ What that buys you in practice:
   <div class="engagement-step">
     <div class="engagement-step__number">3</div>
     <h3 class="engagement-step__title">Pilot, then full build</h3>
-    <p class="engagement-step__body">Pilot on a defined slice (3–6 months). Then production build (6–24 months depending on edition). Optional managed retainer post-deployment.</p>
+    <p class="engagement-step__body">Pilot on a defined slice (3–6 months). Then production build (6–24 months depending on scope). Optional managed retainer post-deployment.</p>
   </div>
 
 </div>
@@ -270,8 +267,6 @@ What that buys you in practice:
 <div class="cta-final__copy">
 
 ## Ready to talk?
-
-Pick the entry that fits — we'll route from there.
 
 </div>
 

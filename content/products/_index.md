@@ -5,11 +5,11 @@ hero_subtitle: "One engine. Three platforms. Pick by who consumes the capacity."
 language: "en"
 page_type: "product"
 primary_keyword: "aenix products"
-secondary_keywords: ["cozystack commercial platform", "kubernetes cloud platform editions", "sovereign cloud products"]
+secondary_keywords: ["cozystack commercial platform", "kubernetes cloud platform products", "sovereign cloud products"]
 images: ["img/og/products.png"]
 related_pages: ["/products/public-cloud-platform/", "/products/private-cloud-platform/", "/products/ai-platform/", "/products/cozystack-enterprise-support/", "/products/whmcs-integration/"]
 direct_answer: |
-  **Aenix sells three cloud platforms plus two supporting products, all built on Cozystack — the open-source, Apache 2.0 CNCF project Aenix created and maintains. Ænix Public Cloud Platform is for organizations that sell cloud capacity to customers: hosting providers, MSPs, telcos and national operators, with billing, payments and a white-label portal included. Ænix Private Cloud Platform is for regulated organizations that run cloud for themselves, with DORA and NIS2 architecture, customer-controlled keys, audit-ready logging and an optional developer self-service layer. Ænix AI Platform adds multi-tenant GPU scheduling, model serving and vector databases for teams running inference and fine-tuning on their own hardware. Alongside them, Aenix offers enterprise support for self-run Cozystack and a proprietary WHMCS integration for hosters. All three platforms are the same engine with different surfaces switched on, so they combine without a second procurement.**
+  **Aenix sells three cloud platforms plus two supporting products, all built on Cozystack — the Apache 2.0 CNCF project Aenix created and maintains. Ænix Public Cloud Platform is for organizations that sell cloud capacity: hosting providers, MSPs, telcos and national operators, with billing, payments and a white-label portal included. Ænix Private Cloud Platform is for regulated organizations that run cloud for themselves, with DORA and NIS2 architecture, customer-controlled keys, audit-ready logging and a developer self-service layer. Ænix AI Platform adds multi-tenant GPU scheduling, model serving and vector databases for inference and fine-tuning on owned hardware. Alongside them, Aenix offers enterprise support for self-run Cozystack and a WHMCS integration for hosters. The three platforms are one engine with different surfaces switched on, so combining them is a configuration decision rather than a second procurement.**
 quick_facts:
   - label: "How to choose"
     value: "By who consumes the capacity: customers who are not you (Public Cloud), your own business units (Private Cloud), or AI and GPU workloads (AI Platform)."
@@ -33,7 +33,7 @@ faq:
   - q: "Can we start small and grow?"
     a: "Yes, and the growth path is deliberately not a replatform. A provider that starts on the price list at provider scale and grows into a multi-region national operator switches multi-region on and keeps its portal, its billing and its tenants. An enterprise that starts with a regulated private cloud and later wants GPU tenancy adds it on the same substrate, inheriting the key custody and tenancy boundary the auditor already accepted."
   - q: "Is there vendor lock-in?"
-    a: "The core is Apache 2.0 with no per-CPU or per-core licensing, and it is a CNCF project rather than a Aenix-owned codebase, so the engine outlives any commercial relationship with us. The commercial layer — portals, billing, proprietary modules — is what you stop receiving if you leave. The exit is documented rather than theoretical: you keep running the open-source platform on the same hardware."
+    a: "The core is Apache 2.0 with no per-CPU or per-core licensing, and it is a CNCF project rather than an Aenix-owned codebase, so the engine outlives any commercial relationship with us. The commercial layer — portals, billing, proprietary modules — is what you stop receiving if you leave. The exit is documented rather than theoretical: you keep running the open-source platform on the same hardware."
 aliases:
   - /products/aenix-platform/
 ---
@@ -42,19 +42,15 @@ aliases:
 
 ## Choose by who consumes the capacity
 
-That single question settles the choice in most conversations. Everything else follows from it.
-
 | If the capacity goes to… | You need | Platform |
 |---|---|---|
 | Customers who are not you | Billing, payments, customer portal, tenant suspension, resale | **[Public Cloud Platform](/products/public-cloud-platform/)** |
 | Your own business units, under regulation | DORA / NIS2 architecture, customer-managed keys, audit-ready logging | **[Private Cloud Platform](/products/private-cloud-platform/)** |
-| Inference, fine-tuning, RAG on your own GPUs | GPU tenancy, MIG and fractioning, model serving, vector databases | **[AI Platform](/products/ai-platform/)** |
+| Inference, fine-tuning, RAG on your own GPUs | GPU tenancy, fractional GPU sharing, model serving, vector databases | **[AI Platform](/products/ai-platform/)** |
 
 ## They combine — that is the design, not a concession
 
-The three platforms are the same engine with different surfaces switched on. There is one control plane, one API, one operations team and one upgrade path underneath all of them. So the honest answer to "which one, though?" is often "two of them, and that costs you a configuration change rather than a second programme."
-
-What that looks like in practice:
+One control plane, one API, one operations team, one upgrade path underneath all three. So the honest answer to "which one, though?" is often "two of them, and that costs you a configuration change rather than a second programme." In practice:
 
 - **AI Platform with Private Cloud controls.** The usual regulated pairing. Customer-managed keys extend to model weights at rest; GPU workloads sit inside the same Tenant CRD boundary the auditor already reviewed. You do not build a second compliance story for the AI estate.
 - **Public Cloud with GPU-as-a-Service.** A provider running VMs and managed databases switches on GPU tenancy and sells it, metered and billed through the surface it already has, on hardware it already owns.
