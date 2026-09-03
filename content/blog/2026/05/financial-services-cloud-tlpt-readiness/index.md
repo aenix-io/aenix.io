@@ -296,7 +296,7 @@ Poor fit:
   the product for regulated enterprises
 - **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   architecture-level DORA walkthrough
-- **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-detailed/)** —
+- **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   what demonstrable means in practice
 - **[Private Cloud Platform — DORA and NIS2 obligations mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
   product-level architectural detail

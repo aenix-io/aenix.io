@@ -273,5 +273,5 @@ engagement first, then assessment, then implementation.
   the tactical assessment engagement
 - **[Cloud Readiness Assessment — 14-day methodology](/blog/2026/05/cloud-readiness-assessment-14-day-methodology/)** —
   methodology detail for the tactical engagement
-- **[Cloud engineering disciplines in 2026](/blog/2026/05/cloud-engineering-disciplines-2026/)** —
+- **[Cloud engineering disciplines in 2026](/services/cloud-engineering/)** —
   the seven cloud-engineering disciplines

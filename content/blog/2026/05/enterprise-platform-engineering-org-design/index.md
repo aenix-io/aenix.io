@@ -332,7 +332,7 @@ Poor fit:
   for regulated organisations
 - **[Internal developer platform — 6 patterns without Backstage lock-in](/blog/2026/05/internal-developer-platform-examples-without-backstage/)** —
   six production patterns
-- **[Platform engineering maturity model](/blog/2026/05/platform-engineering-maturity-model-2026/)** —
+- **[Platform engineering maturity model](/blog/2026/05/platform-engineering-vs-devops-vs-sre/)** —
   five-stage, eight-dimension maturity model
 - **[Developer Self-Service — developer velocity economics](/blog/2026/05/idp-edition-developer-velocity-economics/)** —
   the IDP economic case
