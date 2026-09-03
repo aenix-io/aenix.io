@@ -42,7 +42,7 @@ quiz:
         - { text: "SaaS endpoints lack OpenAI-compatible APIs for drop-in migration", correct: false }
       explanation: "Pitfall 2 (model-API-as-private-LLM) says the data still leaves the customer perimeter even when the privacy clause is strong, and for regulated-data workloads this fails the substantive requirement."
 aliases:
-  - /blog/2026/05/ai-ml-edition-sustained-gpu-economics/
+  - /blog/2026/05/build-ai-platform-for-startups/
 ---
 
 The "should we run our own AI infrastructure?" conversation has shifted

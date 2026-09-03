@@ -41,7 +41,7 @@ quiz:
         - { text: "In scope regardless of size (DNS, TLD registries, MSPs)", correct: true }
       explanation: "Entity classification depends on size thresholds AND sector-specific criteria. Some entities are in scope regardless of size — explicitly DNS service providers, TLD registries, MSPs."
 aliases:
-  - /blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/
+  - /blog/2026/05/nis2-compliance-checklist-essential-entities/
 ---
 
 The Network and Information Security Directive 2 (Directive (EU) 2022/2555 — NIS2) replaced the original NIS Directive in 2023. Transposition into national law was due by 17 October 2024. Some EU member states completed transposition on time; others ran late. Either way, by mid-2025 NIS2 is operational across the EU, with competent authorities in each member state and the European Cybersecurity Agency (ENISA) playing a coordination role.
