@@ -17,6 +17,8 @@ offices:
     address: "131 Continental Drive, Suite 301\nNewark, County of New Castle\nDelaware, United States\nZIP Code: 19713"
     details:
       - "Registration Number: 10075938"
+aliases:
+  - /contact-us/
 ---
 
 **Book a discovery call to discuss Ænix Platform editions, your buyer profile, and engagement scope. Or write to us for partnership, press, or general inquiries.**

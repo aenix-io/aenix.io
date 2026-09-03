@@ -3,6 +3,8 @@ title: "Ænix Partner Program"
 description: "Aenix Partner Program — up to 40% margin on Ænix Platform for resellers, integrators, and distributors. Deal protection, sales kit, training, L3 support."
 hero_subtitle: "Resell an open cloud platform, up to 40% margin"
 language: "en"
+aliases:
+  - /our-partners/
 ---
 
 **Sell Ænix Platform — our turnkey commercial cloud-in-a-box — with up to 40% margin, deal protection, and direct access to the Ænix core team. For integrators, resellers, distributors, and regional cloud / sovereign-cloud builders.**

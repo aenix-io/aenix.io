@@ -1,4 +1,8 @@
 # Aenix.io — Netlify redirects
+#
+# NOTE: production deploys to GitHub Pages, which ignores this file.
+# Legacy path redirects are implemented as Hugo `aliases:` in page frontmatter.
+# This file is kept for Netlify deploy previews only.
 # Format: from-path  to-path  status-code
 # https://docs.netlify.com/routing/redirects/redirect-options/
 #
@@ -14,7 +18,7 @@
 /kubernetes-deep-dive-course/       /kubernetes-deep-dive/                301
 
 # ─── Legacy product / service stubs (folded into editions / case studies) ─────
-/managed-kubernetes/                /products/aenix-platform/isp-edition/ 301
+/managed-kubernetes/                /products/public-cloud-platform/   301
 /kubefarm/                          /case-studies/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/  301
 
 # ─── External app redirect (existing — preserved) ────────────────────────────

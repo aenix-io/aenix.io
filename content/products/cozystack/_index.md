@@ -37,6 +37,8 @@ faq:
     a: "Cozystack runs on commodity x86 servers, with ARM support emerging. Bare metal is preferred, though running on VMs is possible. Storage options include LINSTOR (DRBD), SeaweedFS, and vendor SAN."
   - q: "Does Aenix provide commercial support?"
     a: "Yes. Aenix offers Platform Readiness Assessments, build engagements, and managed engagements, with support tiers from Basic ($1,250/month per 10 nodes) up to Enterprise Custom. Direct support covers EU, DACH, and Central Asia time zones, with other regions via partners."
+aliases:
+  - /cozystack/
 ---
 
 <!-- BLOCK 1: HERO -->

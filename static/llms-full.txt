@@ -62,6 +62,22 @@ Plus **enterprise support for Cozystack** (https://aenix.io/products/cozystack-e
 
 Cozystack itself remains open-source under Apache 2.0. Customers can run Cozystack themselves; Ænix Platform adds turnkey deployment with billing, portals, payments, support.
 
+## Compliance evidence
+
+- [Compliance hub](https://aenix.io/compliance/): what Aenix measures, what it claims, and what it does not claim
+- [CIS Kubernetes Benchmark results](https://aenix.io/compliance/cis-benchmark/): full kube-bench run with the architectural failures sorted from the real ones
+- [PCI DSS](https://aenix.io/compliance/pci-dss/): requirement-by-requirement platform coverage
+- [GDPR](https://aenix.io/compliance/gdpr/): Article 32 measures, erasure from backups, audit logs as personal data
+- [DORA platform evidence](https://aenix.io/compliance/dora/): register of information, backup location, ICT third-party risk
+- [Kubernetes conformance](https://aenix.io/compliance/kubernetes-conformance/): CNCF conformance and how to reproduce the run
+
+Every published benchmark was run against Cozystack, the open-source engine, because the Aenix platforms are distributions of it rather than a separate forked product. A control that passes on Cozystack passes on the platform.
+
+## Live demos
+
+- [Cloud console demo](https://aenix.io/demo/): the customer-facing portal running in the browser with demo data, no signup
+- [Developer platform demo](https://aenix.io/idp/): the internal developer platform — catalog, topology, template builder
+
 ## Solutions (buyer-trigger-led)
 
 ### DORA compliance

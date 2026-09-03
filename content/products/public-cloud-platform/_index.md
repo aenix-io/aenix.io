@@ -48,6 +48,7 @@ aliases:
   - /products/aenix-platform/provider-edition/
   - /products/aenix-platform/isp-edition/
   - /products/aenix-platform/public-cloud-edition/
+  - /managed-kubernetes/
 ---
 
 **A modern alternative to OpenStack for everyone who sells cloud — from a regional hoster with forty nodes to a national operator with several data centres. Turnkey cloud-in-a-box: hosting panel, billing, customer portal, payments, support. Install, plug in users, start operating.**
@@ -186,7 +187,11 @@ Bank and telco deployments are NDA-protected until mid-2027. One commercial publ
 
 ## How to start
 
-Book a discovery call. We will discuss your cloud product strategy, scale, regulatory context and fit.
+Tell us your scale, your current stack and what you sell today, and we will set up a focused call with an Ænix engineer to confirm fit.
+
+{{< pipedrive-form type="demo" >}}
+
+Prefer a shorter first step? [Book a discovery call](/contact/) instead.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

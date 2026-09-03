@@ -53,7 +53,7 @@ page_type: "flag-page"
 ## Имена, которые надо знать дословно
 
 **Варианты установки:** `isp-full`, `isp-full-generic`, `isp-hosted`, `default`.
-Старые имена `paas-full` и `distro-full` заменены в версии 1.5 — в вариантах ответа это ловушка.
+Старые имена `paas-full` и `distro-full` заменены в версии 1.0 — в вариантах ответа это ловушка.
 
 **Переключатели тенанта:** `etcd`, `monitoring`, `ingress`, `seaweedfs`.
 
