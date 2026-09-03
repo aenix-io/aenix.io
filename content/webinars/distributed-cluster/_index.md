@@ -12,7 +12,7 @@ images: ["img/og/og-webinar-en.png"]
 hide_child_cards: true
 hero_eyebrow: "Webinar · Took place online on Wednesday 30 September 2026"
 hero_title: "The cluster that survives a datacenter outage"
-hero_tagline: "One hour with Andrei Kvapil, the creator of Cozystack: build real geo-resilience on your own hardware — metro-stretch, two datacenters plus a witness, and remote-DC DR — from iron and network to storage, GPU and databases that fail over on their own. Shown on a real production cluster across three datacenters."
+hero_tagline: "One hour with Andrei Kvapil, the creator of Cozystack: build real geo-resilience on your own hardware — metro-stretch, two datacenters plus a witness, and remote-DC DR — from hardware and network to storage, GPU and databases that fail over on their own. Shown on a real production cluster across three datacenters."
 hero_chips:
   - "Took place on 30 September 2026"
   - "60 minutes, with a live Q&A"
@@ -30,7 +30,7 @@ event:
   performer_role: "Creator and maintainer of Cozystack, co-founder and CEO of Ænix"
   price: 0
 direct_answer: |
-  **This was a free live webinar, held on 30 September 2026, for enterprise infrastructure teams and for clouds, hosters and data centre operators that need geo-resilience they can prove. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — built a distributed Kubernetes cluster live: the three topologies for three levels of latency (metro-stretch with RPO=0, two datacenters plus a witness, and remote-DC DR), the quorum math for surviving a lost site, synchronous storage across datacenters, live migration of VMs and databases, GPU across sites, and the real DR drills where a whole datacenter was powered off on purpose. Shown on a real production cluster stretched across three datacenters. The recording is not published yet.**
+  **This was a free live webinar, held on 30 September 2026, for enterprise infrastructure teams and for clouds, hosting providers and datacenter operators that need geo-resilience they can prove. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — built a distributed Kubernetes cluster live: the three topologies for three levels of latency (metro-stretch with RPO=0, two datacenters plus a witness, and remote-DC DR), the quorum math for surviving a lost site, synchronous storage across datacenters, live migration of VMs and databases, GPU across sites, and the real DR drills where a whole datacenter was powered off on purpose. Shown on a real production cluster stretched across three datacenters. The recording is not published yet.**
 
 quick_facts:
   - label: "Format"
@@ -133,7 +133,7 @@ final_cta:
 <div class="ws-wrap">
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">RPO 0</div><div class="cs-stat__label">lose a whole datacenter and lose no data, on synchronous metro-stretch</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">3 datacenters</div><div class="cs-stat__label">one Kubernetes API, quorum that survives losing any one site</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">60+ tenants</div><div class="cs-stat__label">in production on one cluster stretched across three datacenters</div></div>
   <div class="cs-stat"><div class="cs-stat__num">€0</div><div class="cs-stat__label">per-socket licensing — Apache 2.0, CNCF Sandbox project</div></div>
 </div>
 </div>
@@ -157,11 +157,11 @@ final_cta:
 <span class="wb-cover__icon">{{< ws-icon name="cloud" >}}</span>
 <div class="cs-stat__num" style="font-size:1.9rem;margin:.2rem 0 .1rem">One API, three clouds</div>
 <div class="cs-stat__label" style="margin-bottom:1rem">~11,000 active users · bare metal, hyperscaler and sovereign cloud</div>
-<p class="wb-cover__text"><strong>A European academic-computing platform</strong> keeps a single Cluster API spanning owned bare metal, a public hyperscaler and a sovereign Swiss cloud — bursting workloads, including GPU, across sites on demand and pulling them back when the spike passes.</p>
+<p class="wb-cover__text"><strong>A European academic-computing platform</strong> keeps a single Kubernetes API spanning owned bare metal, a public hyperscaler and a sovereign cloud — bursting workloads, including GPU, across sites on demand and pulling them back when the spike passes.</p>
 </article>
 </div>
 
-<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>Both are anonymised at the customer's request. Andrei walks through what each of them actually did — and what he would do differently on your stack.</span></p>
+<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>Both are anonymized at the customer's request. Andrei walks through what each of them actually did — and what he would do differently on your stack.</span></p>
 </div>
 </section>
 
@@ -169,6 +169,106 @@ final_cta:
 <div class="ws-wrap">
 <h2 class="ws-h2" id="wb-cover-h">What the session covered</h2>
 <p class="ws-lead">Live demos, not slides — then your questions.</p>
+
+<ul class="wb-topo">
+<li class="wb-topo__item">
+<div class="wb-topo__viz">
+<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<g stroke="var(--ws-cyan, #91dbeb)" stroke-width="2" stroke-linecap="round" opacity=".75">
+<line x1="84" y1="28" x2="176" y2="28"/>
+<line x1="60" y1="48" x2="112" y2="70"/>
+<line x1="200" y1="48" x2="148" y2="70"/>
+</g>
+<g fill="rgba(1,165,255,.08)" stroke="rgba(1,165,255,.38)" stroke-width="1.5">
+<rect x="12" y="8" width="72" height="40" rx="8"/>
+<rect x="176" y="8" width="72" height="40" rx="8"/>
+<rect x="94" y="70" width="72" height="40" rx="8"/>
+</g>
+<g fill="var(--ws-blue, #01a5ff)">
+<g opacity=".7"><rect x="24" y="17" width="48" height="4" rx="2"/><rect x="188" y="17" width="48" height="4" rx="2"/><rect x="106" y="79" width="48" height="4" rx="2"/></g>
+<g opacity=".5"><rect x="24" y="26" width="48" height="4" rx="2"/><rect x="188" y="26" width="48" height="4" rx="2"/><rect x="106" y="88" width="48" height="4" rx="2"/></g>
+<g opacity=".3"><rect x="24" y="35" width="48" height="4" rx="2"/><rect x="188" y="35" width="48" height="4" rx="2"/><rect x="106" y="97" width="48" height="4" rx="2"/></g>
+</g>
+</svg>
+</div>
+<h3 class="wb-topo__name">Metro-stretch</h3>
+<p class="wb-topo__desc">Three sites close enough to replicate synchronously, running as one cluster.</p>
+<dl class="wb-topo__specs">
+<div class="wb-topo__spec"><dt>Distance</dt><dd>metro, roughly 1–2&nbsp;ms round-trip</dd></div>
+<div class="wb-topo__spec"><dt>Quorum</dt><dd>three voting sites — any one can be lost</dd></div>
+<div class="wb-topo__spec"><dt>Data loss</dt><dd><strong>RPO&nbsp;0</strong>, failover without a decision</dd></div>
+</dl>
+</li>
+<li class="wb-topo__item">
+<div class="wb-topo__viz">
+<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<g stroke="var(--ws-violet, #a78bfa)" stroke-width="1.75" stroke-linecap="round" stroke-dasharray="4 5" opacity=".7">
+<line x1="52" y1="62" x2="114" y2="36"/>
+<line x1="208" y1="62" x2="146" y2="36"/>
+</g>
+<line x1="84" y1="82" x2="176" y2="82" stroke="var(--ws-cyan, #91dbeb)" stroke-width="2" stroke-linecap="round" opacity=".75"/>
+<circle cx="130" cy="26" r="15" fill="rgba(167,139,250,.1)" stroke="rgba(167,139,250,.45)" stroke-width="1.5"/>
+<circle cx="130" cy="26" r="4.5" fill="var(--ws-violet, #a78bfa)" opacity=".85"/>
+<g fill="rgba(1,165,255,.08)" stroke="rgba(1,165,255,.38)" stroke-width="1.5">
+<rect x="12" y="62" width="72" height="40" rx="8"/>
+<rect x="176" y="62" width="72" height="40" rx="8"/>
+</g>
+<g fill="var(--ws-blue, #01a5ff)">
+<g opacity=".7"><rect x="24" y="71" width="48" height="4" rx="2"/><rect x="188" y="71" width="48" height="4" rx="2"/></g>
+<g opacity=".5"><rect x="24" y="80" width="48" height="4" rx="2"/><rect x="188" y="80" width="48" height="4" rx="2"/></g>
+<g opacity=".3"><rect x="24" y="89" width="48" height="4" rx="2"/><rect x="188" y="89" width="48" height="4" rx="2"/></g>
+</g>
+</svg>
+</div>
+<h3 class="wb-topo__name">Two datacenters + witness</h3>
+<p class="wb-topo__desc">Two full sites plus a third tiny location that does nothing but hold a vote.</p>
+<dl class="wb-topo__specs">
+<div class="wb-topo__spec"><dt>Distance</dt><dd>metro or remote — the witness is what changes</dd></div>
+<div class="wb-topo__spec"><dt>Quorum</dt><dd><strong>the witness breaks the tie</strong> when a site drops</dd></div>
+<div class="wb-topo__spec"><dt>Data loss</dt><dd>RPO&nbsp;0 while replication stays synchronous</dd></div>
+</dl>
+</li>
+<li class="wb-topo__item">
+<div class="wb-topo__viz">
+<svg viewBox="0 0 260 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+<defs>
+<marker id="wb-topo-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M0 1 L9 5 L0 9 z" fill="var(--ws-violet, #a78bfa)" opacity=".8"/>
+</marker>
+</defs>
+<g stroke="var(--ws-violet, #a78bfa)" stroke-width="2" stroke-linecap="round" stroke-dasharray="5 6" opacity=".7">
+<line x1="84" y1="60" x2="112" y2="60"/>
+<line x1="148" y1="60" x2="170" y2="60" marker-end="url(#wb-topo-arrow)"/>
+</g>
+<g stroke="rgba(255,255,255,.24)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M120 50 l7 10 -7 10"/>
+<path d="M132 50 l7 10 -7 10"/>
+</g>
+<g fill="rgba(1,165,255,.08)" stroke="rgba(1,165,255,.38)" stroke-width="1.5">
+<rect x="12" y="40" width="72" height="40" rx="8"/>
+</g>
+<rect x="176" y="40" width="72" height="40" rx="8" fill="rgba(167,139,250,.07)" stroke="rgba(167,139,250,.35)" stroke-width="1.5"/>
+<g fill="var(--ws-blue, #01a5ff)">
+<g opacity=".7"><rect x="24" y="49" width="48" height="4" rx="2"/></g>
+<g opacity=".5"><rect x="24" y="58" width="48" height="4" rx="2"/></g>
+<g opacity=".3"><rect x="24" y="67" width="48" height="4" rx="2"/></g>
+</g>
+<g fill="var(--ws-violet, #a78bfa)">
+<g opacity=".55"><rect x="188" y="49" width="48" height="4" rx="2"/></g>
+<g opacity=".4"><rect x="188" y="58" width="48" height="4" rx="2"/></g>
+<g opacity=".25"><rect x="188" y="67" width="48" height="4" rx="2"/></g>
+</g>
+</svg>
+</div>
+<h3 class="wb-topo__name">Remote-DC DR</h3>
+<p class="wb-topo__desc">One site replicates to a distant one, too far away for synchronous writes.</p>
+<dl class="wb-topo__specs">
+<div class="wb-topo__spec"><dt>Distance</dt><dd>beyond the synchronous range — tens of ms</dd></div>
+<div class="wb-topo__spec"><dt>Quorum</dt><dd>each site keeps its own; no stretched vote</dd></div>
+<div class="wb-topo__spec"><dt>Data loss</dt><dd><strong>RPO&nbsp;&gt;&nbsp;0</strong>, failover is a decision you make</dd></div>
+</dl>
+</li>
+</ul>
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
 <span class="wb-cover__num">01</span>
@@ -213,7 +313,7 @@ final_cta:
 <article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">01</span>
 <span class="ws-outcome__icon">{{< ws-icon name="map" >}}</span>
-<p class="ws-outcome__text"><strong>A map of the three topologies</strong> — and when each one fits, including when stretching is forbidden.</p>
+<p class="ws-outcome__text"><strong>A map of the three topologies</strong> — and when each one fits, including when stretching is an anti-pattern.</p>
 </article>
 <article class="ws-outcome">
 <span class="ws-outcome__num">02</span>
@@ -238,11 +338,11 @@ final_cta:
 <section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="wb-audience-h">Who it was for</h2>
-<p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosters and data centre operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session was built around your situation.</p>
+<p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosting providers and datacenter operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session was built around your situation.</p>
 <ul class="wb-audience__tiles">
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Enterprise infrastructure teams</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud providers</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Data centre operators</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Datacenter operators</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="msp" >}}</span>MSPs</li>
 </ul>

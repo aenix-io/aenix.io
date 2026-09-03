@@ -17,7 +17,8 @@
     hero_primary     — {text, href} main CTA (lime)
     hero_secondary   — {text, href} quiet CTA
     speaker_photo    — assets path to the composited portrait
-    speaker_alt      — alt text for that portrait (defaults to Timur as host)
+    speaker_alt      — alt text for that portrait (defaults to
+                       "<event.performer> — <webinar|workshop> host")
     translation      — list of {from, to} term pairs (optional signature strip)
     stats            — list of {number, label} pain stats (optional)
     inshort_title    — heading for the direct_answer/quick_facts section
@@ -28,7 +29,10 @@
 {{- $isDE := or (eq (.Params.language | default "en") "de") (hasPrefix .RelPermalink "/de/") -}}
 {{- $registerLabel := cond $isRU "Зарегистрироваться" (cond $isFR "Je m'inscris" (cond $isDE "Jetzt anmelden" "Register")) -}}
 {{- $photo := .Params.speaker_photo | default "images/workshops/timur-tukaev.png" -}}
-{{- $portraitAlt := cond $isRU "Тимур Тукаев — ведущий воркшопа" (cond $isFR "Timur Tukaev, animateur de l'atelier" (cond $isDE "Timur Tukaev – Leiter des Workshops" "Timur Tukaev — workshop host")) -}}
+{{- $event := .Params.event | default dict -}}
+{{- $performer := $event.performer | default (cond $isRU "Тимур Тукаев" "Timur Tukaev") -}}
+{{- $isWebinar := eq .Section "webinars" -}}
+{{- $portraitAlt := cond $isRU (printf "%s — %s" $performer (cond $isWebinar "ведущий вебинара" "ведущий воркшопа")) (cond $isFR (printf "%s, %s" $performer (cond $isWebinar "animateur du webinaire" "animateur de l'atelier")) (cond $isDE (printf "%s – %s" $performer (cond $isWebinar "Leiter des Webinars" "Leiter des Workshops")) (printf "%s — %s" $performer (cond $isWebinar "webinar host" "workshop host")))) -}}
 {{- with .Params.speaker_alt }}{{ $portraitAlt = . }}{{ end -}}
 
 <section class="event-hero ws-hero">
