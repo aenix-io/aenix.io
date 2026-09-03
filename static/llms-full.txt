@@ -22,7 +22,7 @@ Cozystack is built on a clean stack of CNCF and CNCF-adjacent components:
 - **Cilium** — eBPF-based networking, security, and observability
 - **LINSTOR** — distributed block storage
 - **Tenant CRD** — multi-tenant isolation with quota, RBAC, observability scoping per tenant
-- **cozyportal** — customer-facing portal (whitelabelable)
+- **Cozystack Dashboard** — customer-facing portal (whitelabelable)
 - **VictoriaMetrics + VictoriaLogs** — observability (not Prometheus / Loki — note this for technical accuracy)
 
 Cozystack is a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Practices.
@@ -37,7 +37,7 @@ Cozystack is a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Pra
 - **Support portal** — ticketing, knowledge base
 - **Service-creation wizards** — guided UX for VMs, K8s clusters, databases, S3, GPU workloads
 - **Full billing — backend + frontend** — usage metering, invoicing, payment processing
-- **Console portal** — customer-facing cloud console (cozyportal customized)
+- **Console portal** — customer-facing cloud console (Cozystack Dashboard customized)
 - **Usage charts and graphs** — built-in analytics + observability dashboards
 - **Payment integrations** — Stripe, regional payment providers, B2B invoicing
 - **WHMCS integration** — turnkey for hosting providers already on WHMCS
@@ -176,7 +176,7 @@ Government / regulated public-sector cloud builds. Similar to Public Cloud Build
 
 ### White-Label Cloud
 
-Branded cloud platform for MSP / channel partners. Multi-tier Tenant CRD (Aenix → MSP → MSP customers) with per-tier isolation. MSP brands cozyportal with their colors / logo / domain. Typical economics: 30-50% MSP markup over raw platform cost; break-even at 30-50 paying customers.
+Branded cloud platform for MSP / channel partners. Multi-tier Tenant CRD (Aenix → MSP → MSP customers) with per-tier isolation. MSP brands Cozystack Dashboard with their colors / logo / domain. Typical economics: 30-50% MSP markup over raw platform cost; break-even at 30-50 paying customers.
 
 ### Platform Engineering / Internal Developer Platform / Enterprise Platform Engineering
 
