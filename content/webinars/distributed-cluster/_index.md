@@ -132,7 +132,7 @@ final_cta:
 <div class="ws-wrap">
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">RPO 0</div><div class="cs-stat__label">lose a whole datacenter and lose no data, on synchronous metro-stretch</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">60+ tenants</div><div class="cs-stat__label">in production on one cluster stretched across three datacenters</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">~11,000 users</div><div class="cs-stat__label">served across bare metal, a hyperscaler and a sovereign cloud under one API</div></div>
   <div class="cs-stat"><div class="cs-stat__num">€0</div><div class="cs-stat__label">per-socket licensing — Apache 2.0, CNCF Sandbox project</div></div>
 </div>
 </div>
