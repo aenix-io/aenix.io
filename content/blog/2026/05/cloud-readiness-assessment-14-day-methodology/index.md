@@ -46,7 +46,7 @@ quiz:
         - { text: "Uncertainty about whether sovereignty is a real concern", correct: false }
       explanation: "Strong fits include a regulator deadline (DORA Article 28, NIS2, sectoral audit), an upcoming board-level cost decision, a new platform engineering function being stood up, or an AI / data-residency project blocked at architecture review. The other options are explicitly listed as poor fits."
 aliases:
-  - /blog/2026/05/cloud-readiness-assessment-14-day-methodology/
+  - /blog/2026/05/vmware-migration-assessment-detailed/
 ---
 
 Most cloud readiness assessments on the market still come from the early-2010s mold: a hyperscaler-aligned consultancy maps your workloads against a reference architecture and produces a migration plan to that hyperscaler. The output reads like a template because it is one.

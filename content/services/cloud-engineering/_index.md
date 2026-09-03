@@ -36,6 +36,8 @@ faq:
   - q: "What technologies do the engineers work with?"
     a: "Infrastructure-as-code with Terraform, OpenTofu, Pulumi, and Crossplane; observability with VictoriaMetrics, Grafana, and OpenTelemetry; Kubernetes orchestration; and, where a private cloud is in scope, Cozystack (KubeVirt for VMs and containers, Cilium eBPF networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy)."
 hreflang_de: /de/dienstleistungen/cloud-engineering/
+aliases:
+  - /blog/2026/05/cloud-engineering-disciplines-2026/
 ---
 
 **"Cloud engineering" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Ænix engagement applies senior engineers — not consultants — to the cloud architecture, automation, and operations work your team needs.**
