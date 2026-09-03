@@ -46,7 +46,7 @@ faq:
 
 **Cozystack ist die von Aenix erstellte und gepflegte Open-Source-Cloud-Plattform und ein CNCF-Projekt. Sie betreibt virtuelle Maschinen, Container, verwaltete Datenbanken, S3-Object-Storage und GPU-Workloads auf Bare Metal, das Ihnen gehört — unter einer Kubernetes-nativen Steuerungsebene mit Multi-Mandanten-Isolation. Apache-2.0-Lizenz, derzeit CNCF Sandbox (CNCF Incubating erwartet Spätsommer 2026), CNCF-zertifizierte Kubernetes-Distribution, OpenSSF-Best-Practices-Badge.**
 
-Diese Seite beschreibt Cozystack als Aenix' Open-Source-Produkt. Das Open-Source-Projekt selbst liegt unter **[cozystack.io](https://cozystack.io)** mit Dokumentation, Installationsanleitungen und der Community. Für die turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/aenix-platform/)** mit ihren zwei Editions.
+Diese Seite beschreibt Cozystack als Aenix' Open-Source-Produkt. Das Open-Source-Projekt selbst liegt unter **[cozystack.io](https://cozystack.io)** mit Dokumentation, Installationsanleitungen und der Community. Für die turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/)** mit ihren zwei Editions.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
@@ -128,7 +128,7 @@ cozyportal für Self-Service. Produktionsreife WHMCS-Billing-Integration mit zwe
 
 - **Cozystack** — Open-Source-Plattform. CNCF-Projekt (derzeit Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Community-verwaltet. Jeder kann deployen, beitragen, forken.
 - **Aenix** — das Open-Core-Unternehmen, das Cozystack erstellt und pflegt. Größter Einzel-Contributor. Hersteller von Ænix Platform.
-- **Ænix Platform** — Aenix' turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Zwei Editions (Public Cloud / ISP / Enterprise / IDP / AI/ML), abgestimmt auf das Buyer-Profil. Ergänzt Hosting-Panel, Billing, Portale, Payments, Support, produktisierten Installer, Enterprise-SLA. **[Ænix Platform erkunden →](/de/produkte/aenix-platform/)**.
+- **Ænix Platform** — Aenix' turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Zwei Editions (Public Cloud / ISP / Enterprise / IDP / AI/ML), abgestimmt auf das Buyer-Profil. Ergänzt Hosting-Panel, Billing, Portale, Payments, Support, produktisierten Installer, Enterprise-SLA. **[Ænix Platform erkunden →](/de/produkte/)**.
 - **cozystack.io** — offizielle Projektseite. Dokumentation, Installation, Releases, Community. Hersteller-neutral, CNCF-ausgerichtet.
 - **aenix.io** (diese Seite) — Aenix' kommerzielles Angebot und Produktoberfläche.
 
@@ -202,11 +202,11 @@ Für konkrete Use Cases siehe:
 
 Cozystack als Plattform ist **kostenlos** (Apache 2.0). Jeder kann es betreiben.
 
-Für kommerziellen Aenix-Support und die turnkey Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/aenix-platform/)** — zwei Editions, abgestimmt auf das Buyer-Profil, mit vier Support-Tiers (Basic ab 1.250 $/Monat pro 10 Nodes; Standard 3.000 $; Plus 5.500 $; Enterprise Custom).
+Für kommerziellen Aenix-Support und die turnkey Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/)** — zwei Editions, abgestimmt auf das Buyer-Profil, mit vier Support-Tiers (Basic ab 1.250 $/Monat pro 10 Nodes; Standard 3.000 $; Plus 5.500 $; Enterprise Custom).
 
 Einstiegs-Tier — **Pure Cozystack mit Ænix Support** — für Produkt-Teams, die Cozystack auf eigenen / gemieteten Servern (Hetzner, OVH, regionales Bare-Metal) ohne die kommerzielle Portal-/Billing-Schicht betreiben.
 
-[Preisdetails →](/de/preise/) | [Alle Editions →](/de/produkte/aenix-platform/)
+[Preisdetails →](/de/preise/) | [Alle Editions →](/de/produkte/)
 
 <!-- /BLOCK 6 -->
 
@@ -230,12 +230,12 @@ Einstiegs-Tier — **Pure Cozystack mit Ænix Support** — für Produkt-Teams, 
 
 - **[cozystack.io](https://cozystack.io)** — Installation, Dokumentation, Community
 - **[Cozystack-Architektur-Artikel](/blog/2026/05/cozystack-introduction-architecture/)**
-- **[Ænix Platform](/de/produkte/aenix-platform/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack
-  - [Provider Edition](/de/produkte/aenix-platform/provider-edition/) — für Hosting-Anbieter
-  - [Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/) — für regulierte Unternehmen
-  - [Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/) — für große Betreiber
-  - [Developer Self-Service](/de/produkte/aenix-platform/idp-edition/) — für Produkt-Engineering-Teams
-  - [AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/) — für KI-lastige Organisationen
+- **[Ænix Platform](/de/produkte/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack
+  - [Provider Edition](/de/produkte/public-cloud-platform/) — für Hosting-Anbieter
+  - [Enterprise Edition](/de/produkte/private-cloud-platform/) — für regulierte Unternehmen
+  - [Provider Edition](/de/produkte/public-cloud-platform/) — für große Betreiber
+  - [Developer Self-Service](/de/produkte/private-cloud-platform/) — für Produkt-Engineering-Teams
+  - [AI & GPU](/de/produkte/ai-platform/) — für KI-lastige Organisationen
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Engagement-Methodik
 
 <!-- /BLOCK 8 -->

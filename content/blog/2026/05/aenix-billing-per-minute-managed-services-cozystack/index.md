@@ -7,7 +7,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "Multi-tenancy", "Platform Engineering", "Billing"]
 language: "en"
-companion_landing: "/products/aenix-platform/provider-edition/"
+companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Provider Edition →"
 cover_image: ""
 ---

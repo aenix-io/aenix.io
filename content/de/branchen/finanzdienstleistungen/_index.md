@@ -44,7 +44,7 @@ faq:
 
 Aenix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), betreibt Produktions-Workloads unter einer auf DORA ausgerichteten Governance.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** als regulierte Cloud-Foundation; **[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** für Schadenfall-KI / Fraud Detection / souveräne KI-Workloads. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Foundation; **[AI & GPU](/de/produkte/ai-platform/)** für Schadenfall-KI / Fraud Detection / souveräne KI-Workloads. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

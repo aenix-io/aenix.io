@@ -6,7 +6,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Cozystack", "KubeVirt"]
 language: "de"
-companion_landing: "/de/produkte/private-cloud/"
+companion_landing: "/de/loesungen/private-cloud/"
 quiz:
   title: "Wissens-Check: Private-Cloud-Anbieter im Vergleich"
   questions:

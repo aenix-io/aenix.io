@@ -9,7 +9,7 @@ language: "de"
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Platform entdecken →</a>
+  <a class="cta-secondary" href="/de/produkte/">Platform entdecken →</a>
 </div>
 
 ---
@@ -38,7 +38,7 @@ Billing-Backend und -Frontend, WHMCS-Integration, Payment-Processing, White-Labe
 
 **Wie gekauft:** Preisliste ab **1.250 USD/Monat** pro 10 Nodes; Multi-Region-Programme nach RFP
 
-[Provider Edition →](/de/produkte/aenix-platform/provider-edition/) · [Im Betreiber-Maßstab →](/de/produkte/aenix-platform/public-cloud-edition/)
+[Provider Edition →](/de/produkte/public-cloud-platform/) · [Im Betreiber-Maßstab →](/de/produkte/public-cloud-platform/)
 
 ### Ænix Platform Enterprise Edition
 
@@ -48,11 +48,11 @@ Private und hybride souveräne Cloud über mehrere Rechenzentren. DORA- und NIS2
 
 **Wie gekauft:** mehrjähriger Plattform-Build, Angebot nach RFP
 
-[Enterprise Edition →](/de/produkte/aenix-platform/enterprise-edition/)
+[Enterprise Edition →](/de/produkte/private-cloud-platform/)
 
 ### Zwei Module, für beide Editions
 
-**[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** — mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken. **[Developer Self-Service](/de/produkte/aenix-platform/idp-edition/)** — Golden Paths, GitLab- und Argo-CD-Automatisierung, Self-Service-APIs.
+**[AI & GPU](/de/produkte/ai-platform/)** — mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken. **[Developer Self-Service](/de/produkte/private-cloud-platform/)** — Golden Paths, GitLab- und Argo-CD-Automatisierung, Self-Service-APIs.
 
 Dazu der Entry-Tier **Pure Cozystack mit Ænix-Support** für Produkt-Teams auf eigener oder gemieteter Hardware.
 
@@ -89,13 +89,13 @@ Unsere Enterprise Edition ist DORA / NIS2-konform by Design. Kundenkontrollierte
 
 Provider Edition ersetzt OpenStack / VMware Cloud Director / Virtuozzo durch eine turnkey Cloud-Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, erweiterter Service-Katalog. Migration in Kohorten. Produktionsreif in Wochen. Ab 1.250 USD/Monat.
 
-[Provider Edition →](/de/produkte/aenix-platform/provider-edition/) | [VMware-Migrations-Hub →](/de/migration/vmware/)
+[Provider Edition →](/de/produkte/public-cloud-platform/) | [VMware-Migrations-Hub →](/de/migration/vmware/)
 
 ### "Wir bauen souveräne KI-Infrastruktur"
 
 AI & GPU für KI-lastige Organisationen. Multi-Tenant-GPU-Scheduling (H100, H200, L40S, A100, Blackwell). Fertige Inferenz + Fine-Tuning + RAG-Patterns. Kundenkontrollierte Schlüssel. Souveränitätskontrollen.
 
-[AI & GPU →](/de/produkte/aenix-platform/ai-ml-edition/) | [Souveräne KI →](/de/loesungen/sovereign-ai/) | [Kostenloser Sovereign-AI-Decision-Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/)
+[AI & GPU →](/de/produkte/ai-platform/) | [Souveräne KI →](/de/loesungen/sovereign-ai/) | [Kostenloser Sovereign-AI-Decision-Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/)
 
 ### "Wir verlassen die Hyperscaler-Cloud"
 

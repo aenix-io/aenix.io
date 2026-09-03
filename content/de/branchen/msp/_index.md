@@ -40,7 +40,7 @@ faq:
 
 **Managed Service Provider (MSPs) werden 2026 von Enterprise-Kunden nach Cloud-Fähigkeiten gefragt, die die MSP-Managed-Service-Beziehung mit Fähigkeiten der Hyperscaler-Klasse kombinieren. Dies von Grund auf zu bauen ist nicht trivial. Eine Cozystack-basierte Plattform mit White-Label-Branding ist der realistische Pfad — und das, was Aenix liefert.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell, WHMCS-integriertes Billing, ab 1.250 USD/Monat Support-Tier. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** — vollständig white-label-fähiges cozyportal, Multi-Tier-Reseller-Modell, WHMCS-integriertes Billing, ab 1.250 USD/Monat Support-Tier. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

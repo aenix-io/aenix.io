@@ -6,8 +6,8 @@ related_pages:
   - /de/loesungen/dora-compliance/
   - /de/loesungen/nis2-compliance/
   - /de/dienstleistungen/platform-readiness-assessment/
-  - /de/produkte/aenix-platform/enterprise-edition/
-  - /de/produkte/aenix-platform/public-cloud-edition/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
@@ -49,7 +49,7 @@ faq:
 
 Aenix baut Plattformen für öffentliche und quasi-öffentliche Organisationen in der EU und Zentralasien. Open-Source-Foundation ([Cozystack](/de/produkte/cozystack/)), beschaffungsportal-bereit, regulator-konform.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveräne Cloud mit strikt kundenkontrollierten Schlüsseln + Air-Gap-Option; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große öffentliche-Sektor-Cloud-Produkt-Launches im Hyperscaler-nahen Maßstab.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für souveräne Cloud mit strikt kundenkontrollierten Schlüsseln + Air-Gap-Option; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große öffentliche-Sektor-Cloud-Produkt-Launches im Hyperscaler-nahen Maßstab.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

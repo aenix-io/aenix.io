@@ -3,7 +3,7 @@ title: "Nutanix-Alternative — Open Source ohne Appliance-Lock-in"
 description: "Nutanix HCI ist operativ einfach, ausgereift und integriert. Die Trade-offs: Closed Source, Appliance-led-Lock-in und ein Subscription-Modell, das ähnlichen..."
 related_pages:
   - /de/alternativen/vmware-alternative
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -53,7 +53,7 @@ faq:
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — souveräne Multi-DC-Private-/Hybrid-Cloud, kundenkontrollierte Hardware (kein Nutanix-Appliance-Lock-in), DORA-/NIS2-Alignment.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — souveräne Multi-DC-Private-/Hybrid-Cloud, kundenkontrollierte Hardware (kein Nutanix-Appliance-Lock-in), DORA-/NIS2-Alignment.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

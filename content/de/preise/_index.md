@@ -42,7 +42,7 @@ Zwei Module erweitern beide Editions und werden mit dem Engagement kalkuliert:
 
 Plus **Entry-Tier — Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
 
-[Alle Editions entdecken →](/de/produkte/aenix-platform/)
+[Alle Editions entdecken →](/de/produkte/)
 
 ---
 

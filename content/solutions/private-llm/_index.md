@@ -14,7 +14,7 @@ hreflang_en: "/solutions/private-llm/"
 related_pages:
   - /solutions/sovereign-ai/
   - /solutions/gpu-cloud-bursting/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /services/ai-platform-build/
   - /case-studies/ai-universal-installer/
 service:
@@ -58,7 +58,7 @@ faq:
 
 **Run your own large language model on hardware you control — open-weight models like Llama, Mistral, and Qwen, served for inference, grounded in your documents with RAG, and fine-tuned on your data when you need it. A private LLM keeps prompts, embeddings, weights, keys, and the audit trail on your side of the boundary, so you get modern GenAI without shipping sensitive text to a third-party API. Aenix builds these platforms on [Cozystack](/products/cozystack/), on your own GPUs.**
 
-> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)** — GPU scheduling, fractional sharing, and blueprints for inference and fine-tuning. For the elastic GPU capacity underneath it, combine with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)**. For the wider strategy, see **[Sovereign AI](/solutions/sovereign-ai/)**.
+> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/ai-platform/)** — GPU scheduling, fractional sharing, and blueprints for inference and fine-tuning. For the elastic GPU capacity underneath it, combine with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)**. For the wider strategy, see **[Sovereign AI](/solutions/sovereign-ai/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -137,7 +137,7 @@ Right-sizing the GPU fleet against this mix is exactly what an assessment settle
 
 ## How Aenix engages on private LLM
 
-The engagement runs as an **[AI platform build](/services/ai-platform-build/)**: GPU architecture and sizing, the inference stack, a Qdrant vector database for RAG, multi-tenant isolation and SSO, and — where relevant — a fine-tuning pipeline, all deployed on your own hardware. Where GPU demand is spiky, it combines with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)** so you own the baseline and burst peaks; where the driver is jurisdiction and governance rather than a single workload, it rolls up into a **[sovereign AI](/solutions/sovereign-ai/)** programme on the **[AI & GPU](/products/aenix-platform/ai-ml-edition/)**.
+The engagement runs as an **[AI platform build](/services/ai-platform-build/)**: GPU architecture and sizing, the inference stack, a Qdrant vector database for RAG, multi-tenant isolation and SSO, and — where relevant — a fine-tuning pipeline, all deployed on your own hardware. Where GPU demand is spiky, it combines with **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)** so you own the baseline and burst peaks; where the driver is jurisdiction and governance rather than a single workload, it rolls up into a **[sovereign AI](/solutions/sovereign-ai/)** programme on the **[AI & GPU](/products/ai-platform/)**.
 
 
 ---

@@ -9,7 +9,7 @@ language: "de"
 hreflang_en: "/case-studies/sovereign-public-cloud/"
 images: ["img/og/og-case-sovereign-public-cloud.png"]
 related_pages:
-  - /de/produkte/aenix-platform/public-cloud-edition/
+  - /de/produkte/public-cloud-platform/
   - /de/loesungen/data-sovereignty/
   - /de/branchen/hosting-anbieter/
   - /de/dienstleistungen/sovereign-cloud-builder/

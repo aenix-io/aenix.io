@@ -16,6 +16,8 @@ faq:
     a: "Ja. Cozystack ist eine Open-Source Kubernetes-native Multi-Tenant Cloud-Plattform, ein CNCF-Projekt unter Apache 2.0 — jeder kann es betreiben. Erstellt und gewartet von Aenix."
   - q: "Was ist der Kubernetes Deep Dive Kurs?"
     a: "Ein fortgeschrittener Kurs für Engineers, der den Cozystack-Stack abdeckt — Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux und weitere Kubernetes-Tools. Zielgruppe sind Plattform-Engineers, Kubernetes-Operatoren und OSS-Beitragende, die den Stack lernen."
+aliases:
+  - /de/produkte/aenix-platform/
 ---
 
 **Drei Produkte, unterschiedliche Zielgruppen. Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box in zwei Editions: eine zum Verkaufen von Cloud, eine für die eigene. Cozystack — das Open-Source CNCF-Projekt, das wir erstellt haben und pflegen. Kubernetes Deep Dive Kurs — für Engineers, die den Stack lernen.**
@@ -41,7 +43,7 @@ Plus ein **Entry-Tier** — **Pure Cozystack mit Ænix-Support** — für Produk
 
 **Engagement-Größe:** Provider Edition Entry ab 1.250 USD/Monat Support; Public Cloud / Enterprise / IDP / AI/ML Full Builds nach RFP.
 
-[Platform entdecken →](/de/produkte/aenix-platform/)
+[Platform entdecken →](/de/produkte/)
 
 </div>
 </div>
@@ -94,11 +96,11 @@ Wenn Sie eine turnkey Cloud (Billing, Portale, Payments, Support, produktisierte
 
 ## Welches Produkt sollte ich zuerst ansehen?
 
-- **Public-Cloud-Betreiber / große Bank / großer Telco:** [Ænix Platform Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)
-- **Hosting-Anbieter / MSP / regionale Cloud:** [Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)
-- **Regulierte Bank / Versicherung / öffentlicher Sektor:** [Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)
-- **Produkt- / SaaS-Team:** [the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)
-- **KI-lastig / GPU-lastig:** [the AI & GPU module of Ænix Platform](/de/produkte/aenix-platform/ai-ml-edition/)
+- **Public-Cloud-Betreiber / große Bank / großer Telco:** [Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)
+- **Hosting-Anbieter / MSP / regionale Cloud:** [Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)
+- **Regulierte Bank / Versicherung / öffentlicher Sektor:** [Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)
+- **Produkt- / SaaS-Team:** [the Developer Self-Service module of Ænix Platform](/de/produkte/private-cloud-platform/)
+- **KI-lastig / GPU-lastig:** [the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/)
 - **Engineer, der die Tech evaluiert:** [Cozystack](https://cozystack.io)
 - **Engineer, der den Stack lernen möchte:** [Kubernetes Deep Dive Kurs](/de/kubernetes-deep-dive/)
 

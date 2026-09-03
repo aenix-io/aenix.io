@@ -16,7 +16,7 @@
 {{- $editions := .Params.pairs_with_editions -}}
 {{- if $editions -}}
 {{- $isDE := eq .Params.language "de" -}}
-{{- $basePath := cond $isDE "/de/produkte/aenix-platform/" "/products/aenix-platform/" -}}
+{{- $basePath := cond $isDE "/de/produkte/" "/products/" -}}
 {{- $labelPrefix := cond $isDE "Passt zu" "Pairs with" -}}
 
 {{- $editionLabels := dict

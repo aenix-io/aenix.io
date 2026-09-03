@@ -4,8 +4,8 @@ description: "Sovereign cloud is a procurement-mandated reality in 2026 across E
 related_pages:
   - /solutions/data-sovereignty
   - /industries/public-sector
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/private-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -48,7 +48,7 @@ faq:
 
 Aenix builds sovereign cloud products on Cozystack for governments, quasi-public entities, and regional operators serving sovereignty-mandated markets.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereign clouds with strict customer-controlled-keys + air-gap support; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large sovereign-cloud product launches at hyperscaler-adjacent scale.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for sovereign clouds with strict customer-controlled-keys + air-gap support; **[Provider Edition](/products/public-cloud-platform/)** for large sovereign-cloud product launches at hyperscaler-adjacent scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

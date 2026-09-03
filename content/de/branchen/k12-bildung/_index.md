@@ -40,7 +40,7 @@ faq:
 
 **K-12-Bildung hat andere Infrastrukturanforderungen als Universitäten. Schulträger handhaben Schülerdaten unter strengen Residenz- / Datenschutzregelungen (FERPA in den USA, DSGVO + nationale Regeln in der EU), bedienen oft 10.000-100.000+ Schüler über viele Schulen hinweg und arbeiten in langen Budgetzyklen. Die meisten Schulträger sind durch Hyperscaler-managed-Services gut bedient. Die Ausnahmefälle — große Schulträger mit Souveränitäts-Mandaten, KI-/EdTech-Plattformen, die Schülerdaten on-premise verarbeiten, Schulträger-Konsortien, die geteilte Infrastruktur aufbauen — sind dort, wo Cozystack passen kann.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveränitätspflichtige Schülerdatenverarbeitung im Maßstab großer Schulträger / Bildungsministerien.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für souveränitätspflichtige Schülerdatenverarbeitung im Maßstab großer Schulträger / Bildungsministerien.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

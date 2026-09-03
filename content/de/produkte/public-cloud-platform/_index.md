@@ -3,7 +3,7 @@ title: "Ænix Platform Provider Edition"
 description: "Ænix Platform Provider Edition: schlüsselfertige Cloud-Plattform für Hosting-Anbieter und MSPs. WHMCS-Billing, Tenant-Suspension, Migration von VMware/OpenStack."
 type: "page"
 language: "de"
-hreflang_en: /products/aenix-platform/provider-edition/
+hreflang_en: /products/public-cloud-platform/
 direct_answer: |
   **Die Ænix Platform Provider Edition ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Sie bündelt Hosting-Panel, kundenseitiges Portal (cozyportal), Billing, Payment-Processing, Tenant-Suspension und Support in einem produktisierten Stack auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Die Plattform ersetzt OpenStack, VMware Cloud Director, Virtuozzo und eigene In-House-Panels, ist WHMCS-integriert und in Wochen produktionsreif. Aenix liefert Enterprise-Support ab 1.250 USD/Monat sowie produktisierte Migrations-Module und Engagement-Expertise für den Umstieg von VMware, OpenStack, Virtuozzo und OpenNebula.**
 quick_facts:
@@ -36,13 +36,16 @@ faq:
     a: "Ja. cozyportal ist vollständig white-label-fähig pro Anbieter (Farben, Logo, Domain) und unterstützt ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden). Das Partner-Programm bietet bis zu 40% Marge inklusive Deal-Registrierung, Sales-Kit und Technical-Pre-Sales-Support."
   - q: "Welche Services bietet der Katalog jenseits von VMs?"
     a: "Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kafka via Strimzi, ClickHouse via Altinity, RabbitMQ, NATS), S3-kompatibler Object Storage (SeaweedFS), HTTP-Cache, VPN-Service (Outline), Kubernetes-Cluster und GPU-Workloads — bereitstellbar per geführtem Wizard ohne YAML für Endkunden."
+aliases:
+  - /de/produkte/aenix-platform/provider-edition/
+  - /de/produkte/aenix-platform/public-cloud-edition/
 ---
 
 **Eine moderne Alternative zu OpenStack, gebaut für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Turnkey Cloud-in-a-Box: Hosting-Panel, Billing, Kunden-Portal, Payments, Support — installieren, Nutzer einbinden, Betrieb starten. WHMCS-integriert. Produktionsreif in Wochen.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Editions →</a>
 </div>
 
 **Sehen Sie das Kundenportal selbst.** Die cozyportal-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.

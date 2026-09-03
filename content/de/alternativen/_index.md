@@ -9,7 +9,7 @@ language: "de"
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Platform entdecken →</a>
+  <a class="cta-secondary" href="/de/produkte/">Platform entdecken →</a>
 </div>
 
 ---

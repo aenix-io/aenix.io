@@ -10,7 +10,7 @@ hreflang_de: "/de/case-studies/ai-universal-installer/"
 images: ["img/og/og-case-ai-universal-installer.png"]
 related_pages:
   - /solutions/sovereign-ai/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /services/ai-platform-build/
   - /industries/telco/
 ---

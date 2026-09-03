@@ -3,7 +3,7 @@ title: "Ænix Platform Enterprise Edition"
 description: "Ænix Platform Enterprise Edition: souveräne Cloud für regulierte Unternehmen. DORA-/NIS2-konform, Multi-DC, eine Control Plane über VMware und OpenShift."
 type: "page"
 language: "de"
-hreflang_en: /products/aenix-platform/enterprise-edition/
+hreflang_en: /products/private-cloud-platform/
 direct_answer: |
   **Die Ænix Platform Enterprise Edition ist eine private und hybride souveräne Cloud für regulierte Unternehmen — Banken, Versicherungen, öffentliche Verwaltung, Telco und Gesundheitswesen. Sie basiert auf dem Open-Source-Projekt Cozystack (CNCF, Apache 2.0) und bringt VMware, OpenNebula und OpenShift unter eine einzige Kubernetes-native Control Plane, statt sie zu ersetzen. Aenix liefert vorvalidierte DORA- und NIS2-Architekturkontrollen, kundenkontrollierte Verschlüsselungsschlüssel auf jeder Datenschicht, audit-bereites Logging via VictoriaLogs, Multi-DC-Failover sowie Air-Gap-Betrieb. Engagements umfassen Discovery, Readiness Assessment, Pilot und vollständigen Multi-DC-Build samt Enterprise-SLA, 24/7-Support und Engineering-Training.**
 quick_facts:
@@ -34,13 +34,16 @@ faq:
     a: "Der Kunde. Schlüssel liegen auf jeder Schicht beim Kunden — Primary Store, Replikate, Backups, Observability-Daten und Modell-Gewichte at rest. BYOK / HYOK mit HSM-Integration wird unterstützt; reine Vendor-managed-Schlüssel werden explizit vermieden."
   - q: "Was kostet die Enterprise Edition?"
     a: "Angebot nach RFP für mehrjährige Plattform-Builds. Ein Platform Readiness Assessment (5-10 Tage, Festpreis vorab vereinbart) liefert DORA-/NIS2-Gap-Analyse und Architektur-Roadmap. Scope wird im Discovery-Call definiert."
+aliases:
+  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/aenix-platform/idp-edition/
 ---
 
 **Private und hybride souveräne Cloud für regulierte Unternehmen. Sicher, automatisiert und einfach erweiterbar. Gebaut für Multi-DC-Setups, DORA / NIS2-Compliance und Enterprise-Integrationen. Eine Control Plane, die VMware, OpenNebula, OpenShift und mehr verbindet — turnkey Cloud-in-a-Box auf kundenkontrollierter Hardware. Inklusive Bildung und Training.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Editions →</a>
 </div>
 
 ---
@@ -95,7 +98,7 @@ Tenant CRD mit Quotas / RBAC / Observability per Workload. Tenant-Grenze erzwung
 
 ### Souveräne KI-Infrastruktur
 
-H100, H200, L40S, A100, Blackwell (B100/B200) GPU-Klassen unterstützt. Multi-Tenant-GPU-Scheduling. Kundenkontrollierte Schlüssel für KI-Workloads. Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) und [AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/) für KI-spezifisches Feature-Bundle.
+H100, H200, L40S, A100, Blackwell (B100/B200) GPU-Klassen unterstützt. Multi-Tenant-GPU-Scheduling. Kundenkontrollierte Schlüssel für KI-Workloads. Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) und [AI & GPU](/de/produkte/ai-platform/) für KI-spezifisches Feature-Bundle.
 
 ### Bildung und Training inklusive
 

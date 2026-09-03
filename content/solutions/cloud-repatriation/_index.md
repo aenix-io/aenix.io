@@ -6,7 +6,7 @@ related_pages:
   - /solutions/cloud-cost-optimization/
   - /solutions/data-sovereignty/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/
+  - /products/
   - /products/cozystack/
   - /pricing
 language: "en"
@@ -50,7 +50,7 @@ faq:
 
 Aenix runs the technical engagement that turns "we need to leave AWS / Azure / GCP" from a board statement into a working plan with workloads ranked, costs modelled, and a destination architecture that won't reinvent the public cloud the wrong way.
 
-> **Pairs with** any **[Ænix Platform Edition](/products/aenix-platform/)** by buyer profile: hosting / regional clouds → [ISP](/products/aenix-platform/provider-edition/); regulated enterprises → [Enterprise](/products/aenix-platform/enterprise-edition/); large operators → [Public Cloud](/products/aenix-platform/public-cloud-edition/); product teams → [IDP](/products/aenix-platform/idp-edition/); AI-heavy → [AI/ML](/products/aenix-platform/ai-ml-edition/). Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
+> **Pairs with** any **[Ænix Platform Edition](/products/)** by buyer profile: hosting / regional clouds → [ISP](/products/public-cloud-platform/); regulated enterprises → [Enterprise](/products/private-cloud-platform/); large operators → [Public Cloud](/products/public-cloud-platform/); product teams → [IDP](/products/private-cloud-platform/); AI-heavy → [AI/ML](/products/ai-platform/). Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

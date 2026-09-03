@@ -12,7 +12,7 @@ related_pages:
   - /de/loesungen/gpu-cloud-bursting/
   - /de/branchen/universitaeten/
   - /de/loesungen/cloud-repatriation/
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/ai-platform/
 ---
 
 <div class="cs-tags">

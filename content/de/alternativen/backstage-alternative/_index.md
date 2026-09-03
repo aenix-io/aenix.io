@@ -3,7 +3,7 @@ title: "Backstage-Alternative — wenn ein Internal Developer Portal nicht die r
 description: "Backstage (CNCF Incubating) ist exzellent in dem, was es ist: ein Service-Katalog und Developer-Portal mit starkem Plugin-Ökosystem. Der Missbrauch ist, es..."
 related_pages:
   - /de/dienstleistungen/internal-developer-platform
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -57,7 +57,7 @@ Cozystack liefert die zugrunde liegende Plattform, auf der Backstage (oder jedes
 </div>
 </div>
 
-> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)** — vollständige Internal Developer Platform mit Cloud-Foundation darunter. GitLab-Automation, Argo-CD-Workflows, Golden-Path-Templates. Die Backstage-UI kann als Front-End integriert werden, wenn der Kunde das bevorzugt; die Foundation darunter ist es, die die IDP funktionieren lässt.
+> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/private-cloud-platform/)** — vollständige Internal Developer Platform mit Cloud-Foundation darunter. GitLab-Automation, Argo-CD-Workflows, Golden-Path-Templates. Die Backstage-UI kann als Front-End integriert werden, wenn der Kunde das bevorzugt; die Foundation darunter ist es, die die IDP funktionieren lässt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

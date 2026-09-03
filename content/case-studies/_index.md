@@ -81,7 +81,7 @@ Production deployments running our hosting-specific edition. WHMCS-integrated bi
 
 These customers use Ænix Platform Provider Edition to deliver multi-tenant cloud products to their end customers.
 
-[Ænix Platform Provider Edition →](/products/aenix-platform/provider-edition/)
+[Ænix Platform Provider Edition →](/products/public-cloud-platform/)
 
 ### Tier-1 European bank engagements (NDA until mid-2027)
 

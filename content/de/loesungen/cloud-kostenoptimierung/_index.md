@@ -43,7 +43,7 @@ faq:
 
 Aenix führt ein strukturiertes Cloud-Kosten-Engagement durch, das mit Zahlen beantwortet: wo Sie heute stehen, wo Sie in 12 Monaten stehen können und was die architektonischen Entscheidungen Sie auf dem Weg dorthin kosten.
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für Hosting-Anbieter und regionale Clouds; **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber. Die Wirtschaftlichkeit dauerhafter Auslastung auf kundeneigener Hardware senkt die TCO typischerweise um 40-70 % gegenüber Hyperscalern. Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter und regionale Clouds; **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber. Die Wirtschaftlichkeit dauerhafter Auslastung auf kundeneigener Hardware senkt die TCO typischerweise um 40-70 % gegenüber Hyperscalern. Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

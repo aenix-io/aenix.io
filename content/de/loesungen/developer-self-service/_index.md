@@ -5,7 +5,7 @@ type: "page"
 related_pages:
   - /de/dienstleistungen/internal-developer-platform
   - /de/dienstleistungen/platform-engineering
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -49,7 +49,7 @@ faq:
 
 Aenix baut Developer-self-service in Plattformen ein, die Produktteams auch wirklich nutzen — nicht Backstage als reine Fassade, sondern echte Golden Paths, die Anfragen ohne Ticket in bereitgestellte Realität verwandeln.
 
-> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)** — Internal Developer Platform Layer mit GitLab-Automatisierung, Argo CD Workflows, APIs für self-service, Golden-Path-Templates und Dashboards für die Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
+> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer mit GitLab-Automatisierung, Argo CD Workflows, APIs für self-service, Golden-Path-Templates und Dashboards für die Engineering-Produktivität. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

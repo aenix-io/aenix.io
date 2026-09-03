@@ -5,7 +5,7 @@ type: "page"
 related_pages:
   - /de/dienstleistungen/platform-engineering
   - /de/dienstleistungen/internal-developer-platform
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -43,7 +43,7 @@ faq:
 
 **Eine 8-Dimensionen-Selbsteinschätzung, die Ihre Platform-Engineering-Praxis auf einer 5-Stufen-Reife-Skala bewertet. Verwendet von Aenix während Platform Readiness Assessment, um Organisationen vor Phase-2-Empfehlung zu baselinen.**
 
-> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)** — Internal Developer Platform Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation. Die meisten Assessment-Outcomes empfehlen Developer Self-Service als strukturierten nächsten Schritt.
+> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation. Die meisten Assessment-Outcomes empfehlen Developer Self-Service als strukturierten nächsten Schritt.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

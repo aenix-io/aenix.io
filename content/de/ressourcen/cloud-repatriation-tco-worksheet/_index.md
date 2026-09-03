@@ -2,7 +2,7 @@
 title: "Cloud-Repatriation-TCO-Worksheet — modellieren Sie Ihren Ausstiegs-Case (kostenlose Tabelle)"
 description: "Excel / Google Sheets Template, das Ihnen erlaubt, Ihren tatsächlichen Public-Cloud-Spend einzugeben und einen ehrlichen TCO-Vergleich gegen Private Cloud..."
 type: "page"
-related_pages: ["/de/loesungen/cloud-repatriation", "/de/loesungen/cloud-kostenoptimierung", "/de/produkte/aenix-platform/"]
+related_pages: ["/de/loesungen/cloud-repatriation", "/de/loesungen/cloud-kostenoptimierung", "/de/produkte/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -40,7 +40,7 @@ faq:
 
 **Excel / Google Sheets Template, das Ihnen erlaubt, Ihren tatsächlichen Public-Cloud-Spend einzugeben und einen ehrlichen TCO-Vergleich gegen Private Cloud zu erhalten. Modelliert versteckte Kosten (Egress, ungenutzte Ressourcen, Commitment-Underutilisation, Hyperscaler-Managed-Service-Premiums) plus realistische Destination-Kosten.**
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — Repatriation-Destination hängt vom Buyer-Profil ab. Hosting-Anbieter / regionale Clouds → Provider Edition. Regulierte Unternehmen → Enterprise Edition. Große Betreiber → Provider Edition.
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)** — Repatriation-Destination hängt vom Buyer-Profil ab. Hosting-Anbieter / regionale Clouds → Provider Edition. Regulierte Unternehmen → Enterprise Edition. Große Betreiber → Provider Edition.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

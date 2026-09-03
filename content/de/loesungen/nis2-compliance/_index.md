@@ -45,7 +45,7 @@ faq:
 
 Aenix führt NIS2-konforme Platform-Readiness-Engagements für betroffene Entitäten und die sie bedienenden ICT-Drittanbieter durch. Ergebnis: eine Kontroll-Level-Landkarte, die zeigt, wo Sie heute stehen, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — NIS2-konform by design (Artikel 21 Risikomanagement, Artikel 23 Meldepflichten, Artikel 30 koordinierte Offenlegung von Schwachstellen). Tenant CRD mit NetworkPolicy / Cilium für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — NIS2-konform by design (Artikel 21 Risikomanagement, Artikel 23 Meldepflichten, Artikel 30 koordinierte Offenlegung von Schwachstellen). Tenant CRD mit NetworkPolicy / Cilium für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging. Kostenlose [NIS2-Compliance-Checkliste →](/de/ressourcen/nis2-compliance-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

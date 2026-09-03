@@ -44,7 +44,7 @@ faq:
 
 Aenix führt End-to-End-VMware-Migrationen für Organisationen durch, die VCF verlassen. Dieselben Engineers, die [Cozystack](/products/cozystack/) gebaut haben und betreiben — die Zielplattform, die wir typischerweise empfehlen — arbeiten für Assessment, Sequenzierung und Implementierung mit Ihrem Team zusammen.
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für Hosting-Anbieter, die VMware Cloud Director verlassen (häufigstes Muster 2026); **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die VCF verlassen; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen (häufigstes Muster 2026); **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

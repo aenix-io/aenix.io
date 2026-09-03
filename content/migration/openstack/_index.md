@@ -3,8 +3,8 @@ title: "OpenStack to Cozystack migration — modernizing the operational footpri
 description: "OpenStack remains valid where deep expertise lives. Where engineer-availability and operational footprint are pressuring modernization, Cozystack is the..."
 related_pages:
   - /alternatives/openstack-alternative
-  - /products/aenix-platform/provider-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/public-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack
   - /services/platform-readiness-assessment
 language: "en"
@@ -44,7 +44,7 @@ faq:
 
 **OpenStack remains valid where deep expertise lives. Where engineer-availability and operational footprint are pressuring modernization, Cozystack is the realistic next platform. Aenix runs OpenStack-to-Cozystack migrations.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers and regional clouds; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators consolidating OpenStack at scale.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers and regional clouds; **[Provider Edition](/products/public-cloud-platform/)** for large operators consolidating OpenStack at scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

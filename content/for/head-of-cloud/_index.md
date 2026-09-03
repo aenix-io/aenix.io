@@ -10,7 +10,7 @@ primary_keyword: "white-label cloud platform for service providers"
 related_pages:
   - /services/white-label-cloud/
   - /services/public-cloud-builder/
-  - /products/aenix-platform/provider-edition/
+  - /products/public-cloud-platform/
   - /partners/
   - /products/cozystack/
 ---
@@ -19,7 +19,7 @@ related_pages:
 
 **Your clients' VMware renewals jumped — and they're asking you what's next. That's your opening: a branded cloud (VMs, Kubernetes, databases, storage) on an open platform, no per-core tax eating your margin. Resell it as a product, or build your own with Aenix as your engineering team. You keep the client and the recurring revenue.**
 
-> **Pairs with:** **[White-label cloud](/services/white-label-cloud/)** and **[Public cloud builder](/services/public-cloud-builder/)**, **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** (branded portal + billing), and the **[Partner Program](/partners/)** (up to 40% margin). Core: open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[White-label cloud](/services/white-label-cloud/)** and **[Public cloud builder](/services/public-cloud-builder/)**, **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** (branded portal + billing), and the **[Partner Program](/partners/)** (up to 40% margin). Core: open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -51,7 +51,7 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 
 ## Two ways Aenix helps you
 
-**1. Resell a ready platform.** [Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/) is a white-labelable cloud — customer portal, service catalog (VMs, K8s, managed DBs, S3, GPU), WHMCS-integrated billing, multi-tier reseller model. You brand and sell; we provide platform and support. The [Partner Program](/partners/) gives up to 40% margin with deal protection.
+**1. Resell a ready platform.** [Ænix Platform Provider Edition](/products/public-cloud-platform/) is a white-labelable cloud — customer portal, service catalog (VMs, K8s, managed DBs, S3, GPU), WHMCS-integrated billing, multi-tier reseller model. You brand and sell; we provide platform and support. The [Partner Program](/partners/) gives up to 40% margin with deal protection.
 
 **2. Build your own, with our team.** Want your own differentiated cloud? Cozystack is the framework and **Aenix is your outsourced engineering team** — we design and stand up your [public cloud](/services/public-cloud-builder/) or [white-label cloud](/services/white-label-cloud/), fill the K8s/KubeVirt gap, and you own the platform and the client.
 

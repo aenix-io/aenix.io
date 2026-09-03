@@ -6,8 +6,8 @@ related_pages:
   - /de/loesungen/data-sovereignty
   - /de/loesungen/sovereign-ai
   - /de/dienstleistungen/platform-readiness-assessment
-  - /de/produkte/aenix-platform/enterprise-edition/
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/ai-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -49,7 +49,7 @@ faq:
 
 Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zentralasien.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für die DORA-konforme regulierte Cloud-Foundation; **[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** für Schadenbearbeitungs-KI und Underwriting-KI-Workloads auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für die DORA-konforme regulierte Cloud-Foundation; **[AI & GPU](/de/produkte/ai-platform/)** für Schadenbearbeitungs-KI und Underwriting-KI-Workloads auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

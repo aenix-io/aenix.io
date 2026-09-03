@@ -104,7 +104,7 @@ Two editions, split by one question: are you selling cloud to other people, or r
 <div class="edition-selector__panels">
 
 <div class="edition-panel" id="edition-panel-0" role="tabpanel" aria-labelledby="edition-tab-0">
-  <a href="/products/aenix-platform/provider-edition/" class="card card--edition">
+  <a href="/products/public-cloud-platform/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">You sell cloud</div>
       <h3 class="card-title">Provider Edition</h3>
@@ -116,7 +116,7 @@ Two editions, split by one question: are you selling cloud to other people, or r
 </div>
 
 <div class="edition-panel" id="edition-panel-1" role="tabpanel" aria-labelledby="edition-tab-1">
-  <a href="/products/aenix-platform/enterprise-edition/" class="card card--edition">
+  <a href="/products/private-cloud-platform/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">You run your own cloud</div>
       <h3 class="card-title">Enterprise Edition</h3>
@@ -143,7 +143,7 @@ Two editions, split by one question: are you selling cloud to other people, or r
 
 </div>
 
-Two modules extend either edition: **[AI &amp; GPU](/products/aenix-platform/ai-ml-edition/)** — multi-tenant GPU scheduling, model serving, vector databases — and **[Developer Self-Service](/products/aenix-platform/idp-edition/)** — golden paths, GitLab and Argo CD automation, self-service APIs.
+Two modules extend either edition: **[AI &amp; GPU](/products/ai-platform/)** — multi-tenant GPU scheduling, model serving, vector databases — and **[Developer Self-Service](/products/private-cloud-platform/)** — golden paths, GitLab and Argo CD automation, self-service APIs.
 
 </div>
 
@@ -264,7 +264,7 @@ Pick the entry that fits — we'll route from there.
 
 <div class="cta-row cta-final__actions">
   <a class="cta-primary" href="/contact/">Book a call →</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
+  <a class="cta-secondary" href="/products/">Explore platform →</a>
   <a class="cta-secondary" href="/pricing/">See pricing</a>
 </div>
 

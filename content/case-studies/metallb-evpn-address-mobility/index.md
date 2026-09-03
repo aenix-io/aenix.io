@@ -16,7 +16,7 @@ secondary_keywords:
   - "evpn type-2 route kubernetes"
   - "loadbalancer ip mobility"
 related_pages:
-  - /products/aenix-platform/provider-edition/
+  - /products/public-cloud-platform/
   - /industries/hosting-providers/
   - /products/cozystack/
   - /services/kubernetes-consulting/

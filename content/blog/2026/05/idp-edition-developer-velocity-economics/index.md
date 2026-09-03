@@ -6,7 +6,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
 language: "en"
-companion_landing: "/products/aenix-platform/idp-edition/"
+companion_landing: "/products/private-cloud-platform/"
 companion_label: "See Developer Self-Service product details →"
 quiz:
   title: "Test yourself: Developer Self-Service economics"
@@ -43,7 +43,7 @@ quiz:
       explanation: "The 'Poor fit' section lists under 50 engineers with a single product team (DevOps-only is the right fit) and hyperscaler-managed-meets-needs with no sovereignty pressure as the two poor-fit cases."
 ---
 
-**Long-form companion to the [Developer Self-Service landing](/products/aenix-platform/idp-edition/). For engineering leaders at 200-2,000-engineer organisations evaluating whether an Internal Developer Platform pays back — versus continuing on DevOps-only, ticket-driven infrastructure, or a half-built in-house platform.**
+**Long-form companion to the [Developer Self-Service landing](/products/private-cloud-platform/). For engineering leaders at 200-2,000-engineer organisations evaluating whether an Internal Developer Platform pays back — versus continuing on DevOps-only, ticket-driven infrastructure, or a half-built in-house platform.**
 
 The "should we invest in a platform team?" conversation tends to stall
 at one of two places: either the CFO can't see the economic case ("we
@@ -277,7 +277,7 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 
 ## Where to dig deeper
 
-- **[Developer Self-Service landing](/products/aenix-platform/idp-edition/)** —
+- **[Developer Self-Service landing](/products/private-cloud-platform/)** —
   feature list, edition-specific FAQ
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   engagement details

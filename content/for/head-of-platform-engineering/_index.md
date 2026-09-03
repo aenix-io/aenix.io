@@ -10,7 +10,7 @@ primary_keyword: "internal developer platform for platform teams"
 related_pages:
   - /solutions/developer-self-service/
   - /services/internal-developer-platform/
-  - /products/aenix-platform/idp-edition/
+  - /products/private-cloud-platform/
   - /services/platform-engineering/
   - /products/cozystack/
 hide_closing_cta: true
@@ -20,7 +20,7 @@ hide_closing_cta: true
 
 **You build the platform every other team builds on. The win is golden paths and real self-service — multi-tenant Kubernetes, databases and environments developers spin up themselves — with no ticket queue and no closed vendor. Aenix delivers that as a turnkey internal developer platform, or builds yours on open foundations.**
 
-> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** for a ready internal developer platform, or **[Internal Developer Platform build](/services/internal-developer-platform/)** to design one to your org. Open-source core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
+> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/private-cloud-platform/)** for a ready internal developer platform, or **[Internal Developer Platform build](/services/internal-developer-platform/)** to design one to your org. Open-source core: **[Cozystack](/products/cozystack/)**, Apache 2.0.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -52,7 +52,7 @@ Turn infrastructure into a product: self-service provisioning of VMs, managed Ku
 
 ## Two ways Aenix helps you
 
-**1. Run a turnkey IDP.** [the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/) ships the multi-tenant control plane, self-service portal, service catalog and golden-path provisioning on the open-source Cozystack core. Your platform team curates; developers self-serve.
+**1. Run a turnkey IDP.** [the Developer Self-Service module of Ænix Platform](/products/private-cloud-platform/) ships the multi-tenant control plane, self-service portal, service catalog and golden-path provisioning on the open-source Cozystack core. Your platform team curates; developers self-serve.
 
 **2. Build your own, with our team.** Cozystack is the framework; **Aenix is your outsourced platform-engineering team**. We design tenancy, golden paths and the catalog around your org, integrate your CI/CD and identity, and hand over a platform your team owns. See [platform engineering](/services/platform-engineering/) and [IDP build](/services/internal-developer-platform/).
 

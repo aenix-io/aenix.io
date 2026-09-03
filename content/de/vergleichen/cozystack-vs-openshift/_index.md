@@ -3,8 +3,8 @@ title: "Cozystack vs OpenShift Virtualization — Head-to-Head für KubeVirt-Pla
 description: "Beide KubeVirt-basiert. Unterschiedliche kommerzielle Modelle, unterschiedliche operative Footprints."
 related_pages:
   - /de/alternativen/openshift-alternative
-  - /de/produkte/aenix-platform/enterprise-edition/
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -45,7 +45,7 @@ faq:
 
 **Beide KubeVirt-basiert. Unterschiedliche kommerzielle Modelle, unterschiedliche operative Footprints.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die OpenShift-Alternative evaluieren; **[Developer Self-Service](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die OpenShift-Alternative evaluieren; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für Produkt-Engineering-Teams.
 
 <div class="compare-elevated compare-elevated--col3">
 

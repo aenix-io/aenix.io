@@ -11,7 +11,7 @@ secondary_keywords: ["plattform tco rechner", "kubernetes kostenrechner", "gpu k
 related_pages:
   - /de/ressourcen/vmware-kostenrechner/
   - /de/loesungen/cloud-repatriation/
-  - /de/produkte/aenix-platform/
+  - /de/produkte/
   - /de/preise/
 faq:
   - q: "Sind diese Rechner offizielle Preise?"
@@ -59,7 +59,7 @@ Wenn Sie Managed Cloud an Ihre eigenen Kunden verkaufen, modelliert unser vollst
   <a class="cta-primary" href="/isp-calculator/">ISP-Unit-Economics-Rechner öffnen →</a>
 </div>
 
-Siehe die **[Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für das Produkt hinter diesem Modell.
+Siehe die **[Provider Edition](/de/produkte/public-cloud-platform/)** für das Produkt hinter diesem Modell.
 
 ---
 
@@ -69,7 +69,7 @@ Eigene GPUs auf der eigenen Plattform gegenüber der Miete gleichwertiger GPU-Ka
 
 {{< gpu-roi-calculator lang="de" currency="€" >}}
 
-Siehe die **[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** und **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
+Siehe die **[AI & GPU](/de/produkte/ai-platform/)** und **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
 ---
 
 ## Aus den Zahlen einen Plan machen
@@ -78,7 +78,7 @@ Ein Discovery-Call macht aus diesen Schätzungen eine belastbare TCO auf Workloa
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Platform entdecken →</a>
+  <a class="cta-secondary" href="/de/produkte/">Platform entdecken →</a>
 </div>
 
 ---

@@ -8,7 +8,7 @@ language: "de"
 
 <div class="cta-row">
   <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Jetzt anmelden</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Ænix-Platform-Engagement →</a>
+  <a class="cta-secondary" href="/de/produkte/">Ænix-Platform-Engagement →</a>
 </div>
 
 ---
@@ -55,4 +55,4 @@ Für Team-Training bitte zusätzlich [Discovery-Call buchen →](/de/kontakt/).
 
 ---
 
-*Der Kubernetes Deep Dive Kurs lehrt den Stack hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Aenix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/aenix-platform/).*
+*Der Kubernetes Deep Dive Kurs lehrt den Stack hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt, Apache 2.0. Aenix kommerzialisiert Cozystack als [Ænix Platform](/de/produkte/).*

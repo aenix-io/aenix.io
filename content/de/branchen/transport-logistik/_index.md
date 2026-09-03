@@ -40,7 +40,7 @@ faq:
 
 **Transport- und Logistikbetreiber stehen 2026 vor: NIS2-Klassifikation als wesentliche Entität (der Transportsektor ist im Geltungsbereich unter Annex I), KI-getriebener Optimierung (Routen, Nachfrage, Predictive Maintenance), Edge-Compute-Anforderungen (Fahrzeuge, Depots, Häfen, Terminals) und zunehmendem Datensouveränitäts-Druck für grenzüberschreitende Logistikdaten. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, an regionalen Standorten und an der Edge läuft — unter einem Operations-Modell.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — Multi-DC- + Edge-Architektur, NIS2-Compliance, Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — Multi-DC- + Edge-Architektur, NIS2-Compliance, Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

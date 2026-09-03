@@ -4,8 +4,8 @@ description: "The phrase \"build a private cloud\" sounds like it should be stra
 related_pages:
   - /services/private-cloud-consulting
   - /solutions/cloud-repatriation
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/private-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -47,7 +47,7 @@ faq:
 
 Aenix builds private clouds end-to-end based on [Cozystack](/products/cozystack/), an open-source CNCF project we run in production with service providers, banks, telecom, and AI operators.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises building private/hybrid sovereign cloud; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators needing multi-region public-cloud-class platform.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for regulated enterprises building private/hybrid sovereign cloud; **[Provider Edition](/products/public-cloud-platform/)** for large operators needing multi-region public-cloud-class platform.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

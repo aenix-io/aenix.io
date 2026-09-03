@@ -16,10 +16,10 @@ secondary_keywords:
   - "internes Cloud-Portal Bank"
   - "On-Premise-Cloud Finanzdienstleistungen"
 related_pages:
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/branchen/finanzdienstleistungen/
   - /de/loesungen/dora-compliance/
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
 faq:
   - q: "Musste die Bank ein neues Identity-System einführen?"
     a: "Nein. Das bestehende Keycloak der Bank blieb die maßgebliche Quelle, die Plattform integriert sich damit und bildet Gruppen und Rollen der Bank auf Plattformrollen ab. Niemand bekam einen zweiten Satz Zugangsdaten, und die Joiner-Mover-Leaver-Prozesse funktionieren weiter so, wie die Revision sie bereits kennt."

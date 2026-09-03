@@ -1,7 +1,7 @@
 ---
 title: "Cozystack vs VMware — Head-to-Head-Vergleich für die Post-Broadcom-Ära"
 description: "Sie erwägen einen VMware-Ausstieg. Die Destination-Shortlist umfasst Cozystack. Diese Seite vergleicht die beiden Head-to-Head — was ist gleich, was ist..."
-related_pages: ["/de/alternativen/vmware-alternative", "/de/produkte/aenix-platform/", "/de/produkte/cozystack", "/de/migration/vmware"]
+related_pages: ["/de/alternativen/vmware-alternative", "/de/produkte/", "/de/produkte/cozystack", "/de/migration/vmware"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -44,7 +44,7 @@ faq:
 
 Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternativen-Listicle](/de/alternativen/vmware-alternativen/)**. Für die fokussierte Vendor-Empfehlung siehe **[VMware-Alternative](/de/alternativen/vmware-alternative/)**. Diese Seite nimmt an, dass Sie Cozystack bereits spezifisch erwägen.
 
-> **Passt zu:** **[Ænix Platform](/de/produkte/aenix-platform/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Zwei Editions: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig). Die richtige Edition hängt von Ihrem Buyer-Profil post-VMware ab.
+> **Passt zu:** **[Ænix Platform](/de/produkte/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Zwei Editions: ISP (Hosting-Anbieter), Enterprise (reguliert), Public Cloud (große Betreiber), IDP (Produkt-Engineering), AI/ML (KI-lastig). Die richtige Edition hängt von Ihrem Buyer-Profil post-VMware ab.
 
 ---
 

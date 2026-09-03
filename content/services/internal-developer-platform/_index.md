@@ -5,7 +5,7 @@ related_pages:
   - /services/platform-engineering/
   - /services/kubernetes-consulting/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/idp-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -49,7 +49,7 @@ faq:
 
 Aenix builds internal developer platforms (IDPs) that get adopted. Not Backstage as wallpaper over chaos; an opinionated platform with golden paths, multi-tenant foundations, and operational handoff your platform team can sustain.
 
-> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

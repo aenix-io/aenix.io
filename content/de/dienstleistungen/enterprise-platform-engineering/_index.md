@@ -4,8 +4,8 @@ description: "Enterprise Platform Engineering ist die Disziplin des Aufbauens un
 related_pages:
   - /de/dienstleistungen/platform-engineering
   - /de/dienstleistungen/internal-developer-platform
-  - /de/produkte/aenix-platform/enterprise-edition/
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -44,7 +44,7 @@ faq:
 
 **Enterprise Platform Engineering ist die Disziplin des Aufbauens und Betreibens interner Plattformen für Organisationen mit mehreren Produkt-Teams, Cross-BU-Isolation und nachhaltigem Scale. Es ist anderer Scope als "Platform Engineering für ein einzelnes Team" — Multi-Tenancy, Governance und Ops-at-Scale sind nicht verhandelbar.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Multi-DC-Plattformen; **[Developer Self-Service](/de/produkte/aenix-platform/idp-edition/)** für produkt-engineering-led IDP at enterprise scale.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Multi-DC-Plattformen; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für produkt-engineering-led IDP at enterprise scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

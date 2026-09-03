@@ -16,10 +16,10 @@ secondary_keywords:
   - "GPU-Lifecycle-Management"
   - "Datenplattform und KI-Infrastruktur"
 related_pages:
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/ai-platform/
   - /de/loesungen/sovereign-ai/
   - /de/loesungen/private-llm/
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
 faq:
   - q: "Warum eine Plattform für Daten und KI zugleich?"
     a: "Weil es zweimal dasselbe Infrastrukturproblem ist. Analytik, Data Lakes und Marts, Modelltraining und Model Serving brauchen alle Objektspeicher, Datenbanken, Scheduling, Quotas und Pipelines. Sie zu trennen bedeutet zwei Betriebsmodelle, zwei Kapazitätsplanungen und eine Kopie jedes Datensatzes dazwischen."

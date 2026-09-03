@@ -44,7 +44,7 @@ faq:
 
 **Die meisten "DevOps-Consulting"-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im Lesen von Gartner-Berichten besteht. Das Deliverable ist meist eine Transformations-Roadmap, die im Regal verstaubt. Wir machen das Gegenteil: Senior-Engineers, die Plattformen in Produktion bauen und betreiben, an der Seite Ihres Teams, mit schriftlichen Runbooks, die Ihr Team danach besitzt.**
 
-> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/aenix-platform/idp-edition/)**, wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert. Für technischen Scope auf bestehender Infrastruktur: eigenständiges Consulting-Engagement.
+> **Passt zu:** **[the Developer Self-Service module of Ænix Platform](/de/produkte/private-cloud-platform/)**, wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert. Für technischen Scope auf bestehender Infrastruktur: eigenständiges Consulting-Engagement.
 
 Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das in Produktion mit Service Providern, Banken und KI-Operatoren läuft. Unsere DevOps-Consulting-Engagements erweitern unsere Engineers in Ihre — für Assessment, Transformation oder nachhaltigen Betrieb.
 

@@ -3,8 +3,8 @@ title: "OpenShift-Alternative — Open Source ohne Red-Hat-Subscription"
 description: "OpenShift ist eine starke kommerzielle Kubernetes-Distribution mit ausgereiften Enterprise-Tools. Der Trade-off: das Red-Hat-Subscription-Modell und die..."
 related_pages:
   - /de/alternativen/vmware-alternative
-  - /de/produkte/aenix-platform/enterprise-edition/
-  - /de/produkte/aenix-platform/idp-edition/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-engineering
 language: "de"
@@ -55,7 +55,7 @@ faq:
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen; **[Developer Self-Service](/de/produkte/aenix-platform/idp-edition/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

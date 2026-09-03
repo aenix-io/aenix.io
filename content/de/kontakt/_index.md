@@ -136,4 +136,4 @@ Engineering-Teams verteilt in der EU und Zentralasien. Starke Präsenz in:
 
 ---
 
-*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von [Ænix Platform](/de/produkte/aenix-platform/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Aenix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und Hersteller von [Ænix Platform](/de/produkte/) — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*

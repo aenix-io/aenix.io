@@ -44,7 +44,7 @@ faq:
 
 Aenix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das gleiche Multi-Site-, NIS2-konforme, souveränitätsfreundliche Plattform-Muster an, das bei unseren Kunden aus dem Finanzdienstleistungs- und Telekommunikationssektor läuft. Die energiespezifische Arbeit legt den Schwerpunkt auf IT/OT-Konvergenz, Edge-Resilienz und Air-Gap-Support für OT-Systeme.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT; **[AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/)** für Netzoptimierungs-KI-Workloads.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT; **[AI & GPU](/de/produkte/ai-platform/)** für Netzoptimierungs-KI-Workloads.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

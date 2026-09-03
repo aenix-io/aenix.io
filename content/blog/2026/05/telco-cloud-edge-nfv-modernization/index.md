@@ -268,7 +268,7 @@ Marginal fit:
 ## Where to dig deeper
 
 - **[Telco industry page](/industries/telco/)** — commercial landing
-- **[Provider Edition product page](/products/aenix-platform/public-cloud-edition/)** —
+- **[Provider Edition product page](/products/public-cloud-platform/)** —
   the typical edition for tier-1 telco engagements
 - **[Sovereign cloud builder services](/services/sovereign-cloud-builder/)** —
   for sovereign cloud product line builds

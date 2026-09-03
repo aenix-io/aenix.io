@@ -1,7 +1,7 @@
 ---
 title: "Cloud platform for hosting providers — modernize beyond VPS, launch cloud products"
 description: "Hosting providers in 2026 face customer demand for cloud capabilities competitive with hyperscalers but with the customer-relationship advantages and..."
-related_pages: ["/services/public-cloud-builder", "/services/white-label-cloud", "/products/aenix-platform/provider-edition/", "/partners/", "/products/cozystack"]
+related_pages: ["/services/public-cloud-builder", "/services/white-label-cloud", "/products/public-cloud-platform/", "/partners/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -39,7 +39,7 @@ faq:
 
 **Hosting providers in 2026 face customer demand for cloud capabilities competitive with hyperscalers but with the customer-relationship advantages and pricing flexibility that hosting providers already have. The architectural answer is a Kubernetes-native platform with multi-tenant customer isolation, billing integration, and a service catalog beyond VMs — Cozystack's design center.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — modern alternative to OpenStack for hosting providers. WHMCS-integrated billing, tenant lock/suspension, fast feature delivery, productized installer, migration tooling from VMware/OpenStack/Virtuozzo. Entry from $1,250/month support tier. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** — modern alternative to OpenStack for hosting providers. WHMCS-integrated billing, tenant lock/suspension, fast feature delivery, productized installer, migration tooling from VMware/OpenStack/Virtuozzo. Entry from $1,250/month support tier. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

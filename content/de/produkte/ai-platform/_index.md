@@ -35,15 +35,17 @@ faq:
     a: "Unterstützt werden H100, H200, L40S, A100 und B100/B200 (Blackwell) sowie CPU-only und alternative Beschleuniger wie AMD MI Series und Intel Gaudi. Vor-deployte Open-Weight-Modelle umfassen die Familien Llama, Mistral, Qwen, DeepSeek, Phi und Gemma; Sizing-Referenzen reichen von 7B bis 405B in Single-Card-, Multi-Card- und Multi-Node-Konfigurationen."
   - q: "Was kostet die AI & GPU und wie läuft ein Engagement ab?"
     a: "Das Engagement liegt bei einem nach RFP angebotenen Projekt mit optionalem Managed-Retainer nach dem Deployment. Es startet mit einem kostenlosen 30-Minuten-Discovery-Call, gefolgt von einem Architektur-Review, einem Pilot-Engagement (3-6 Monate) und dem vollständigen Build (6-12 Monate je nach Workload-Umfang)."
+aliases:
+  - /de/produkte/aenix-platform/ai-ml-edition/
 ---
 
-> **Das ist das AI- & GPU-Modul.** Die Ænix Platform hat zwei Editions — [Provider](/de/produkte/aenix-platform/provider-edition/) und [Enterprise](/de/produkte/aenix-platform/enterprise-edition/) — und diese Fähigkeit erweitert beide: Ein Anbieter verkauft sie als GPU-as-a-Service, ein Unternehmen betreibt darauf die eigene Inferenz.
+> **Das ist das AI- & GPU-Modul.** Die Ænix Platform hat zwei Editions — [Provider](/de/produkte/public-cloud-platform/) und [Enterprise](/de/produkte/private-cloud-platform/) — und diese Fähigkeit erweitert beide: Ein Anbieter verkauft sie als GPU-as-a-Service, ein Unternehmen betreibt darauf die eigene Inferenz.
 
 **KI-Plattform-Automatisierung out-of-the-Box. Standard-KI-Workloads, Service-APIs und fertige Blueprints, Datenbanken, Apps und Modelle — damit Ihr KI-Team von der Idee zu laufenden Jobs schneller kommt. Multi-Tenant-GPU-Scheduling, Vector-DBs, Souveränitätskontrollen inklusive. Gebaut für KI-native Organisationen und regulierte KI-Deployments im großen Maßstab.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/produkte/aenix-platform/">Alle Editions →</a>
+  <a class="cta-secondary" href="/de/produkte/">Alle Editions →</a>
 </div>
 
 ---

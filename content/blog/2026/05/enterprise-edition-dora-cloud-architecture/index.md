@@ -6,7 +6,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance", "Sovereignty", "Multi-tenancy", "Cozystack"]
 language: "en"
-companion_landing: "/products/aenix-platform/enterprise-edition/"
+companion_landing: "/products/private-cloud-platform/"
 companion_label: "See Enterprise Edition product details →"
 quiz:
   title: "Test yourself: DORA Article 21 & 28 architecture"
@@ -43,7 +43,7 @@ quiz:
       explanation: "The engagement structure section states 18–36 months for tier-1 banks with full TLPT readiness, and 12–18 months for mid-size regulated enterprises with narrower scope."
 ---
 
-**Long-form companion to the [Enterprise Edition landing](/products/aenix-platform/enterprise-edition/). For regulated enterprises — banks, insurers, public-sector entities, energy operators, healthcare — translating DORA Article 21 and Article 28 obligations into a running cloud architecture that survives a supervisory audit.**
+**Long-form companion to the [Enterprise Edition landing](/products/private-cloud-platform/). For regulated enterprises — banks, insurers, public-sector entities, energy operators, healthcare — translating DORA Article 21 and Article 28 obligations into a running cloud architecture that survives a supervisory audit.**
 
 Regulated-enterprise cloud architecture in 2026 is a different
 conversation than it was in 2022. DORA went into force on 17 January
@@ -279,7 +279,7 @@ regulated enterprises with narrower scope.
 
 ## Where to dig deeper
 
-- **[Enterprise Edition landing](/products/aenix-platform/enterprise-edition/)** —
+- **[Enterprise Edition landing](/products/private-cloud-platform/)** —
   feature list, edition-specific FAQ, customer evidence
 - **[DORA compliance services](/solutions/dora-compliance/)** —
   DORA-aligned engagement details

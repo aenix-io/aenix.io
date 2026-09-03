@@ -45,7 +45,7 @@ faq:
 
 Aenix baut und betreibt Hybrid-Cloud-Plattformen auf Basis von [Cozystack](/de/produkte/cozystack/) — Kubernetes-nativ, mandantenfähig, mit konsistenten Operations über Kunden-Hardware, Public-Cloud-Regionen und Edge-Standorte hinweg.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telkos: kombinieren Sie diese mit der **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telkos: kombinieren Sie diese mit der **[Provider Edition](/de/produkte/public-cloud-platform/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

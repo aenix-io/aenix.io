@@ -6,7 +6,7 @@ related_pages:
   - /solutions/dora-compliance/
   - /solutions/data-sovereignty/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -50,7 +50,7 @@ faq:
 
 Aenix runs NIS2-aligned platform readiness engagements for in-scope entities and the ICT third parties serving them. Output: a control-level map of where you stand today, where the gaps are, and what an architecture-level remediation plan looks like.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — NIS2-aligned by design (Articles 21 risk management, 23 incident reporting, 30 coordinated vulnerability disclosure). Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — NIS2-aligned by design (Articles 21 risk management, 23 incident reporting, 30 coordinated vulnerability disclosure). Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

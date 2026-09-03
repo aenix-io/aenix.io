@@ -2,7 +2,7 @@
 title: "Sovereign AI Architecture Decision Guide — visual flowchart + Q&A (free PDF)"
 description: "A 12-page decision guide for organizations evaluating sovereign AI infrastructure. Visual flowchart leads through 7 key decisions: trigger profile,..."
 type: "page"
-related_pages: ["/solutions/sovereign-ai", "/services/ai-platform-build", "/products/aenix-platform/ai-ml-edition/"]
+related_pages: ["/solutions/sovereign-ai", "/services/ai-platform-build", "/products/ai-platform/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -38,7 +38,7 @@ faq:
 
 **A 12-page decision guide for organizations evaluating sovereign AI infrastructure. Visual flowchart leads through 7 key decisions: trigger profile, regulatory scope, model selection, hardware sizing, multi-tenancy model, sovereignty controls, operational model. Used by Aenix during sovereign AI engagement scoping.**
 
-> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)** — turnkey AI infrastructure with multi-tenant GPU scheduling, ready blueprints for inference + fine-tuning + RAG, sovereignty controls. The decision guide outputs an architecture pattern that maps directly to AI & GPU deployment scope.
+> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/ai-platform/)** — turnkey AI infrastructure with multi-tenant GPU scheduling, ready blueprints for inference + fine-tuning + RAG, sovereignty controls. The decision guide outputs an architecture pattern that maps directly to AI & GPU deployment scope.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

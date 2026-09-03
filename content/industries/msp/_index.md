@@ -1,7 +1,7 @@
 ---
 title: "Cloud platform for MSPs — branded cloud product for managed-service providers"
 description: "Managed Service Providers (MSPs) in 2026 are asked by enterprise customers for cloud capabilities that combine MSP managed-service relationship with..."
-related_pages: ["/services/white-label-cloud", "/services/public-cloud-builder", "/products/aenix-platform/provider-edition/", "/partners/", "/products/cozystack"]
+related_pages: ["/services/white-label-cloud", "/services/public-cloud-builder", "/products/public-cloud-platform/", "/partners/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -37,7 +37,7 @@ faq:
 
 **Managed Service Providers (MSPs) in 2026 are asked by enterprise customers for cloud capabilities that combine MSP managed-service relationship with hyperscaler-class capabilities. Cozystack-based platform with white-label branding is the realistic path — and what Aenix delivers.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — fully white-labelable cozyportal, multi-tier reseller model, WHMCS-integrated billing, from $1,250/month support tier. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** — fully white-labelable cozyportal, multi-tier reseller model, WHMCS-integrated billing, from $1,250/month support tier. See **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

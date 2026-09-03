@@ -5,7 +5,7 @@ related_pages:
   - /de/dienstleistungen/devops-consulting
   - /de/dienstleistungen/platform-engineering
   - /de/dienstleistungen/platform-readiness-assessment
-  - /de/produkte/aenix-platform/
+  - /de/produkte/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -43,7 +43,7 @@ faq:
 
 **Site Reliability Engineering als Disziplin wendet Software-Engineering auf Operations an. Das Aenix-SRE-Engagement deckt SLOs, Error-Budgets, Incident-Response und die operativen Praktiken ab, die Produktion zuverlässig im großen Maßstab halten — eingebaut in die Plattform-Foundation, nicht aufgesetzt.**
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — SRE-Praxis verbunden mit der produktiven Plattform, die Sie betreiben. Eigenständiges SRE-Consulting auch verfügbar.
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)** — SRE-Praxis verbunden mit der produktiven Plattform, die Sie betreiben. Eigenständiges SRE-Consulting auch verfügbar.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

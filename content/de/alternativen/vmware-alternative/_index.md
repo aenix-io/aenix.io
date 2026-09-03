@@ -53,7 +53,7 @@ Cozystack ist die Open-Source-Alternative für Organisationen, die einen echten 
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für Hosting-Anbieter (häufigster 2026-Trigger — VMware-Cloud-Director-Ausstieg); **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen (VCF-Ausstieg); **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter (häufigster 2026-Trigger — VMware-Cloud-Director-Ausstieg); **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen (VCF-Ausstieg); **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 Aenix ist das Unternehmen hinter Cozystack. Wir bauen die Plattform, betreiben Produktionsbereitstellungen für Service Provider, Banken und Telekommunikationsbetreiber und stellen das Migrations-, Support- und Betriebsmodell bereit, das einen sicheren VMware-Ausstieg ermöglicht.
 

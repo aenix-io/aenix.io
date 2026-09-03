@@ -3,7 +3,7 @@ title: "Cozystack vs Proxmox VE — Head-to-Head für SMB- und Multi-Tenant-Scal
 description: "Unterschiedliche Skalen. Unterschiedliche Designziele. Beide Open Source."
 related_pages:
   - /de/alternativen/proxmox-alternative
-  - /de/produkte/aenix-platform/provider-edition/
+  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -42,7 +42,7 @@ faq:
 
 **Unterschiedliche Skalen. Unterschiedliche Designziele. Beide Open Source.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. Ab 1.250 USD/Monat Support-Tier.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="compare-elevated compare-elevated--col3">
 

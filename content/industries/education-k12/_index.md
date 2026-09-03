@@ -3,7 +3,7 @@ title: "Cloud platform for K-12 education — when sovereign infrastructure fits
 description: "K-12 education has different infrastructure needs than universities. School districts handle student data with strict residency / privacy regulations (FERPA..."
 related_pages:
   - /industries/universities
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -42,7 +42,7 @@ faq:
 
 **K-12 education has different infrastructure needs than universities. School districts handle student data with strict residency / privacy regulations (FERPA in US, GDPR + national rules in EU), often serve 10,000-100,000+ students across many schools, and operate on long budget cycles. Most K-12 districts are well-served by hyperscaler-managed services. The exception cases — large districts with sovereignty mandates, AI/EdTech platforms processing student data on-premise, district consortia building shared infrastructure — are where Cozystack can fit.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereignty-mandated student-data handling at large district / ministry-of-education scale.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for sovereignty-mandated student-data handling at large district / ministry-of-education scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

@@ -14,7 +14,7 @@ hreflang_en: "/migration/nutanix/"
 related_pages:
   - /alternatives/nutanix-alternative/
   - /migration/vmware/
-  - /products/aenix-platform/
+  - /products/
   - /services/platform-readiness-assessment/
   - /roi-calculator/
 service:
@@ -58,7 +58,7 @@ faq:
 
 **Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Aenix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor license. The destination is [Cozystack](/products/cozystack/), built and operated by the same engineers who run your migration.**
 
-> **Pairs with:** the **[Ænix Platform](/products/aenix-platform/)** edition that matches your estate — Enterprise for regulated workloads, ISP for hosting providers, Public Cloud for large operators. Decide the destination on the **[Nutanix alternative](/alternatives/nutanix-alternative/)** comparison, then model the numbers with the **[ROI & TCO calculator](/roi-calculator/)**.
+> **Pairs with:** the **[Ænix Platform](/products/)** edition that matches your estate — Enterprise for regulated workloads, ISP for hosting providers, Public Cloud for large operators. Decide the destination on the **[Nutanix alternative](/alternatives/nutanix-alternative/)** comparison, then model the numbers with the **[ROI & TCO calculator](/roi-calculator/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

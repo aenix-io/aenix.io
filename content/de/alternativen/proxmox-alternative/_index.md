@@ -52,7 +52,7 @@ Cozystack ist die Open-Source-Plattform, die für diese nächste Stufe gebaut wu
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, multi-tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, multi-tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

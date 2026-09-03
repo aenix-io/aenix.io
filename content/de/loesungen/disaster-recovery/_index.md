@@ -14,7 +14,7 @@ hreflang_en: "/solutions/disaster-recovery/"
 related_pages:
   - /de/loesungen/data-sovereignty/
   - /de/loesungen/dora-compliance/
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/dienstleistungen/platform-readiness-assessment/
   - /de/case-studies/sovereign-public-cloud/
 service:
@@ -58,7 +58,7 @@ faq:
 
 **Geschäftskontinuität ist keine Zeile in einem Anbietervertrag — sie ist ein Ergebnis, das Sie beweisen können müssen. Disaster Recovery as a Service (DRaaS) auf einer souveränen, selbst betriebenen Plattform liefert Ihnen DC-übergreifende synchrone Replikation, unveränderliche Backups und Failover, das getestet statt angenommen ist. Aenix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/), sodass Ihre Recovery-Time- und Recovery-Point-Objectives eine Architektur sind, die Sie besitzen, und Nachweise, die Sie einem Regulator übergeben können.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** als regulierte Cloud-Basis, auf der DR aufsetzt; **[DORA-Compliance](/de/loesungen/dora-compliance/)** für die Betriebsresilienz-Pflichten, die DR erfüllen hilft. Starten Sie mit einem **[Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)**.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Basis, auf der DR aufsetzt; **[DORA-Compliance](/de/loesungen/dora-compliance/)** für die Betriebsresilienz-Pflichten, die DR erfüllen hilft. Starten Sie mit einem **[Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

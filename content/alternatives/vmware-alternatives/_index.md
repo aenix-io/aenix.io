@@ -1,7 +1,7 @@
 ---
 title: "VMware alternatives — 8 platforms compared (2026)"
 description: "Post-Broadcom, the question for most teams running VMware is no longer \"should we leave?\" but \"where do we go?\" This is the practical comparison of the..."
-related_pages: ["/alternatives/vmware-alternative", "/alternatives/proxmox-alternative", "/products/aenix-platform/", "/products/cozystack", "/alternatives/backstage-alternative"]
+related_pages: ["/alternatives/vmware-alternative", "/alternatives/proxmox-alternative", "/products/", "/products/cozystack", "/alternatives/backstage-alternative"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -41,7 +41,7 @@ faq:
 
 If you're early in the evaluation and want a single recommendation focused on multi-tenant + sovereign + AI-ready cloud — see our **[VMware alternative landing](/alternatives/vmware-alternative/)** which goes deep on Cozystack as our recommendation. This page is the broader market scan.
 
-> **Pairs with:** **[Ænix Platform](/products/aenix-platform/)** — Two editions: Provider, if you sell cloud to customers, and Enterprise, if you run it for your own organisation. The right one depends on which side of that line you are on post-VMware. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Platform](/products/)** — Two editions: Provider, if you sell cloud to customers, and Enterprise, if you run it for your own organisation. The right one depends on which side of that line you are on post-VMware. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/alternatives/vmware-alternative/">See recommendation →</a>

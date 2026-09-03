@@ -1,7 +1,7 @@
 ---
 title: "SRE consulting — site reliability practices for production at scale"
 description: "Site Reliability Engineering as a discipline applies software engineering to operations. The Aenix SRE engagement covers SLOs, error budgets, incident..."
-related_pages: ["/services/devops-consulting", "/services/platform-engineering", "/services/platform-readiness-assessment", "/products/aenix-platform/"]
+related_pages: ["/services/devops-consulting", "/services/platform-engineering", "/services/platform-readiness-assessment", "/products/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -37,7 +37,7 @@ faq:
 
 **Site Reliability Engineering as a discipline applies software engineering to operations. The Aenix SRE engagement covers SLOs, error budgets, incident response, and the operational practices that keep production reliable at scale — built into the platform foundation, not bolted on.**
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** — SRE practice tied to the production platform you're operating. Stand-alone SRE consulting also available.
+> **Pairs with:** any **[Ænix Platform Edition](/products/)** — SRE practice tied to the production platform you're operating. Stand-alone SRE consulting also available.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

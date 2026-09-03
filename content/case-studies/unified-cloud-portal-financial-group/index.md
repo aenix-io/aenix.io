@@ -16,8 +16,8 @@ secondary_keywords:
   - "cloud service catalog"
   - "private cloud billing portal"
 related_pages:
-  - /products/aenix-platform/provider-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/public-cloud-platform/
+  - /products/public-cloud-platform/
   - /industries/financial-services/
   - /services/public-cloud-builder/
 faq:

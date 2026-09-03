@@ -1,7 +1,7 @@
 ---
 title: "Platform Readiness Assessment — for cloud sovereignty, migration, and cost posture in 14 days"
 description: "A structured cloud readiness assessment that gives you three concrete outcomes: time-to-environment metric, compliance-by-design map, and cost-and-control..."
-related_pages: ["/solutions/data-sovereignty/", "/solutions/dora-compliance/", "/solutions/cloud-repatriation/", "/solutions/sovereign-ai/", "/services/platform-engineering/", "/products/aenix-platform/", "/products/cozystack/", "/pricing"]
+related_pages: ["/solutions/data-sovereignty/", "/solutions/dora-compliance/", "/solutions/cloud-repatriation/", "/solutions/sovereign-ai/", "/services/platform-engineering/", "/products/", "/products/cozystack/", "/pricing"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -41,7 +41,7 @@ faq:
 
 **If you're evaluating data sovereignty, DORA / NIS2 compliance, cloud repatriation, sovereign AI, or a self-service platform for your developers — this is the engagement that turns the question into a written plan with numbers, owners, and a timeline.**
 
-> **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — the assessment recommends which edition fits your scope.
+> **Pairs with:** all **[Ænix Platform editions](/products/)** — the assessment recommends which edition fits your scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

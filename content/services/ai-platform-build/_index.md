@@ -1,7 +1,7 @@
 ---
 title: "AI platform build — custom AI infrastructure for startups and enterprises"
 description: "AI startups and AI-heavy enterprises in 2026 face the same architectural choice: rent inference at hyperscaler economics, or build dedicated infrastructure..."
-related_pages: ["/solutions/sovereign-ai", "/products/aenix-platform/ai-ml-edition/", "/products/cozystack", "/industries/financial-services"]
+related_pages: ["/solutions/sovereign-ai", "/products/ai-platform/", "/products/cozystack", "/industries/financial-services"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -39,7 +39,7 @@ faq:
 
 **AI startups and AI-heavy enterprises in 2026 face the same architectural choice: rent inference at hyperscaler economics, or build dedicated infrastructure that pays back at scale. For sustained workloads (24/7 inference, fine-tuning, training), dedicated infrastructure usually wins after a year of operation. Aenix builds these platforms end-to-end.**
 
-> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)** — turnkey AI infrastructure with multi-tenant GPU scheduling (H100/H200/L40S/A100/Blackwell), ready blueprints for inference + fine-tuning + RAG, sovereignty controls for regulated AI workloads. Free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
+> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/ai-platform/)** — turnkey AI infrastructure with multi-tenant GPU scheduling (H100/H200/L40S/A100/Blackwell), ready blueprints for inference + fine-tuning + RAG, sovereignty controls for regulated AI workloads. Free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

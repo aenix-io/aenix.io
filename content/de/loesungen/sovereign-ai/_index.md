@@ -45,7 +45,7 @@ faq:
 
 Aenix baut und betreibt souveräne KI-Infrastruktur für Organisationen, deren Datenklasse, Regulator oder Wirtschaftlichkeit Hyperscaler-KI-Services unpraktikabel machen. Ergebnis: eine Architektur, ein Deployment und ein Betriebsmodell, das Ihr Team tatsächlich selbst betreiben kann.
 
-> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/aenix-platform/ai-ml-edition/)** — KI-Plattform-Automatisierung out-of-the-box (Multi-Tenant-GPU-Scheduling für H100/H200/L40S/A100/Blackwell, fertige Blueprints für Inferenz + Fine-Tuning + RAG, Vector DB + Object Storage inkludiert, Souveränitätskontrollen). Für regulierte KI-Workloads auf einer breiteren souveränen Cloud: kombinieren mit [Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/). Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
+> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/)** — KI-Plattform-Automatisierung out-of-the-box (Multi-Tenant-GPU-Scheduling für H100/H200/L40S/A100/Blackwell, fertige Blueprints für Inferenz + Fine-Tuning + RAG, Vector DB + Object Storage inkludiert, Souveränitätskontrollen). Für regulierte KI-Workloads auf einer breiteren souveränen Cloud: kombinieren mit [Enterprise Edition](/de/produkte/private-cloud-platform/). Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

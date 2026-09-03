@@ -247,7 +247,7 @@ fully retired.
 
 - **[CloudStack migration hub](/migration/cloudstack/)** — high-level
   migration entry point
-- **[Provider Edition product page](/products/aenix-platform/provider-edition/)** —
+- **[Provider Edition product page](/products/public-cloud-platform/)** —
   the most common target edition for CloudStack migrations
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   hosting-provider-specific positioning

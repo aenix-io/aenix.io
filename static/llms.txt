@@ -87,12 +87,12 @@ AI:
 ## Products
 
 - **Ænix Platform** — Turnkey commercial cloud-in-a-box. Two editions (Provider, Enterprise), two modules (AI & GPU, Developer Self-Service), plus Pure Cozystack with Ænix Support entry tier.
-  - [Ænix Platform overview](https://aenix.io/products/aenix-platform/)
-  - [Provider Edition](https://aenix.io/products/aenix-platform/public-cloud-edition/)
-  - [Provider Edition](https://aenix.io/products/aenix-platform/provider-edition/)
-  - [Enterprise Edition](https://aenix.io/products/aenix-platform/enterprise-edition/)
-  - [Developer Self-Service](https://aenix.io/products/aenix-platform/idp-edition/)
-  - [AI & GPU](https://aenix.io/products/aenix-platform/ai-ml-edition/)
+  - [Ænix Platform overview](https://aenix.io/products/)
+  - [Provider Edition](https://aenix.io/products/public-cloud-platform/)
+  - [Provider Edition](https://aenix.io/products/public-cloud-platform/)
+  - [Enterprise Edition](https://aenix.io/products/private-cloud-platform/)
+  - [Developer Self-Service](https://aenix.io/products/private-cloud-platform/)
+  - [AI & GPU](https://aenix.io/products/ai-platform/)
 - **Cozystack** — Open-source CNCF project. Apache 2.0. Maintained by Aenix and community contributors. [cozystack.io](https://cozystack.io)
 - **Kubernetes Deep Dive Course** — Education product. Advanced course covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux). [kubernetes-deep-dive course](https://aenix.io/kubernetes-deep-dive/)
 
@@ -186,7 +186,7 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 A subset of pages is mirrored in German for the DACH market under `/de/`. Includes the editions, key solutions (DORA / NIS2 / Datensouveränität / cloud repatriation / sovereign AI), services, industries, and a German blog at `/de/blog/`. Hreflang annotations link EN ↔ DE versions where both exist.
 
 Sample DE entries:
-- [Ænix Platform / Cozystack Übersicht](https://aenix.io/de/produkte/aenix-platform/)
+- [Ænix Platform / Cozystack Übersicht](https://aenix.io/de/produkte/)
 - [DORA Compliance](https://aenix.io/de/loesungen/dora-compliance/)
 - [VMware-Alternative](https://aenix.io/de/alternativen/vmware-alternative/)
 - [IBM AIX / Power Migration](https://aenix.io/de/migration/ibm/)

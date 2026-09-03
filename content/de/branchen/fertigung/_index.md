@@ -5,7 +5,7 @@ related_pages:
   - /de/loesungen/data-sovereignty
   - /de/loesungen/nis2-compliance
   - /de/dienstleistungen/platform-readiness-assessment
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -47,7 +47,7 @@ faq:
 
 Aenix baut Plattformen für Fertigungsorganisationen in der EU, DACH und Zentralasien.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — Multi-DC- + Edge-Architektur für industrielles IT/OT, NIS2-Compliance für die Fertigung kritischer Produkte, Air-Gap-Support für OT-Netzwerke.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — Multi-DC- + Edge-Architektur für industrielles IT/OT, NIS2-Compliance für die Fertigung kritischer Produkte, Air-Gap-Support für OT-Netzwerke.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

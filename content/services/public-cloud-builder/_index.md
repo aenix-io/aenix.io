@@ -3,8 +3,8 @@ title: "Public cloud builder — launch a customer-facing cloud product on open-
 description: "Hosting providers, telcos, and regional operators in 2026 face the question: how do we offer a credible cloud product to enterprise customers without..."
 related_pages:
   - /services/private-cloud-consulting
-  - /products/aenix-platform/public-cloud-edition/
-  - /products/aenix-platform/provider-edition/
+  - /products/public-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack
   - /alternatives/vmware-alternatives
 language: "en"
@@ -46,7 +46,7 @@ faq:
 
 Aenix builds customer-facing public cloud products on Cozystack — the open-source Kubernetes-native platform that powers Ænix Platform Provider Edition deployments at regional hosting providers and several other regional cloud launches.
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large public-cloud operators (multi-region, cloud-like UX, multi-hypervisor); **[Provider Edition](/products/aenix-platform/provider-edition/)** for small / mid hosting providers and regional clouds (WHMCS-integrated, productized installer, from $1,250/month).
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for large public-cloud operators (multi-region, cloud-like UX, multi-hypervisor); **[Provider Edition](/products/public-cloud-platform/)** for small / mid hosting providers and regional clouds (WHMCS-integrated, productized installer, from $1,250/month).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

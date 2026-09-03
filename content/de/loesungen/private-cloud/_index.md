@@ -36,6 +36,8 @@ faq:
     a: "Ja. Cozystack bietet GPU as a Service mit NVIDIA vGPU und MIG, validiert auf A100, H100, H200, L40S und Blackwell. Damit lassen sich KI- und GPU-Workloads auf derselben mandantenfähigen Plattform wie VMs und Container betreiben."
   - q: "Was bietet Aenix kommerziell zusätzlich zu Cozystack?"
     a: "Aenix ist das Team hinter Cozystack und liefert die produktisierte Ænix Platform sowie Support-Tiers (Community kostenlos, Standard mit Geschäftszeiten-Support, Enterprise mit 24×7-SLA und dediziertem TAM) und professionelle Dienstleistungen für Architektur und Plattformeinführung."
+aliases:
+  - /de/produkte/private-cloud/
 ---
 
 <!-- BLOCK 1: HERO -->

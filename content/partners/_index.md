@@ -9,7 +9,7 @@ language: "en"
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Explore platform →</a>
+  <a class="cta-secondary" href="/products/">Explore platform →</a>
 </div>
 
 ---
@@ -199,4 +199,4 @@ Or email [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
-*Aenix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project — and the maker of [Ænix Platform](/products/aenix-platform/) — turnkey commercial cloud-in-a-box in two editions. AENIX s.r.o. (Czechia) and AENIX INC (Delaware).*
+*Aenix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project — and the maker of [Ænix Platform](/products/) — turnkey commercial cloud-in-a-box in two editions. AENIX s.r.o. (Czechia) and AENIX INC (Delaware).*

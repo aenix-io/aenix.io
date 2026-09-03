@@ -3,8 +3,8 @@ title: "Cozystack vs OpenStack — head-to-head for OpenStack-fluent teams"
 description: "Both are open-source private cloud platforms. Both Apache 2.0. Both production-proven. The difference is generation and operational footprint."
 related_pages:
   - /alternatives/openstack-alternative
-  - /products/aenix-platform/provider-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/public-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -43,7 +43,7 @@ faq:
 
 **Both are open-source private cloud platforms. Both Apache 2.0. Both production-proven. The difference is generation and operational footprint.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers modernizing from OpenStack, and [at operator scale](/products/aenix-platform/public-cloud-edition/) for large operators consolidating OpenStack.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers modernizing from OpenStack, and [at operator scale](/products/public-cloud-platform/) for large operators consolidating OpenStack.
 
 <div class="compare-elevated compare-elevated--col3">
 

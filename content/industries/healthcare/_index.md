@@ -14,8 +14,8 @@ related_pages:
   - /solutions/nis2-compliance/
   - /solutions/sovereign-ai/
   - /industries/public-sector/
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/private-cloud-platform/
+  - /products/ai-platform/
   - /services/platform-readiness-assessment/
   - /resources/nis2-compliance-checklist/
   - /case-studies/sovereign-public-cloud/
@@ -63,7 +63,7 @@ faq:
 
 **Hospitals, health insurers, diagnostics labs, and medical-AI teams handle the most sensitive personal data in the economy under two hard constraints: GDPR special-category obligations and NIS2 essential-entity duties. The architectural answer is not "a healthcare SaaS in someone else's cloud" — it's a sovereign platform where data residency, encryption-key custody, and audit trails are structural. Aenix builds and operates these platforms on [Cozystack](/products/cozystack/), running production healthcare workloads on the provider's own hardware.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for the regulated cloud foundation; **[AI & GPU](/products/aenix-platform/ai-ml-edition/)** for medical imaging, clinical NLP, and decision-support AI on patient data. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for the regulated cloud foundation; **[AI & GPU](/products/ai-platform/)** for medical imaging, clinical NLP, and decision-support AI on patient data. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

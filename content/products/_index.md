@@ -1,112 +1,129 @@
 ---
-title: "Aenix products"
-description: "Aenix products — Ænix Platform (turnkey cloud-in-a-box, two editions), Cozystack (open-source CNCF project we maintain) and the Kubernetes Deep Dive course."
-hero_subtitle: "Turnkey platform, open-source Cozystack, and expert training"
+title: "Ænix products"
+description: "Aenix products: Public Cloud Platform, Private Cloud Platform, AI Platform, enterprise support for Cozystack, and the WHMCS integration for hosters."
+hero_subtitle: "One engine. Three platforms. Pick by who consumes the capacity."
 language: "en"
+page_type: "product"
+primary_keyword: "aenix products"
+secondary_keywords: ["cozystack commercial platform", "kubernetes cloud platform editions", "sovereign cloud products"]
+images: ["img/og/products.png"]
+related_pages: ["/products/public-cloud-platform/", "/products/private-cloud-platform/", "/products/ai-platform/", "/products/cozystack-enterprise-support/", "/products/whmcs-integration/"]
+direct_answer: |
+  **Aenix sells three cloud platforms plus two supporting products, all built on Cozystack — the open-source, Apache 2.0 CNCF project Aenix created and maintains. Ænix Public Cloud Platform is for organizations that sell cloud capacity to customers: hosting providers, MSPs, telcos and national operators, with billing, payments and a white-label portal included. Ænix Private Cloud Platform is for regulated organizations that run cloud for themselves, with DORA and NIS2 architecture, customer-controlled keys, audit-ready logging and an optional developer self-service layer. Ænix AI Platform adds multi-tenant GPU scheduling, model serving and vector databases for teams running inference and fine-tuning on their own hardware. Alongside them, Aenix offers enterprise support for self-run Cozystack and a proprietary WHMCS integration for hosters. All three platforms are the same engine with different surfaces switched on, so they combine without a second procurement.**
+quick_facts:
+  - label: "How to choose"
+    value: "By who consumes the capacity: customers who are not you (Public Cloud), your own business units (Private Cloud), or AI and GPU workloads (AI Platform)."
+  - label: "Do they exclude each other?"
+    value: "No. One engine, one control plane, one operations team — combining them is a configuration decision, not a second contract."
+  - label: "Foundation"
+    value: "Cozystack — Apache 2.0, CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026). No per-CPU or per-core licensing."
+  - label: "Entry price"
+    value: "From $1,250/month at provider scale. Enterprise and multi-region operator programmes are quoted per RFP."
+  - label: "Also available"
+    value: "Enterprise support for self-run Cozystack, and a WHMCS integration that adds Cozystack services and billing to the panel you already run."
+  - label: "Try before you buy"
+    value: "The customer portal runs live in the browser with demo data — no signup, no cluster."
+faq:
+  - q: "Which platform do we need?"
+    a: "Start from who consumes the capacity. If you sell it to customers who are not you, you need billing, payments and a customer-facing portal, so Public Cloud Platform. If your own business units consume it under regulatory scope, you need compliance architecture, customer-managed keys and audit-ready logging, so Private Cloud Platform. If the workload is inference, fine-tuning or RAG on your own GPUs, that is AI Platform. Many organizations answer yes to more than one, which is fine — see the next question."
+  - q: "Does choosing one exclude the others?"
+    a: "No, and this is the most common misreading of the product line. The three platforms are the same Cozystack engine with different surfaces enabled, running under one control plane. Taking AI Platform with Private Cloud features, or adding a commercial billing layer to an internal estate later, is a configuration decision on the platform you already run — not a migration, not a second installation, not a second procurement."
+  - q: "What is the difference between Cozystack and the Ænix platforms?"
+    a: "Cozystack is the open-source engine: Kubernetes-native multi-tenancy, KubeVirt VMs and containers on one API, Cilium networking, replicated storage, managed databases. It is Apache 2.0 and you can run it yourself, forever, without paying us. The Ænix platforms add the surfaces a business needs around that engine — billing, portals, compliance architecture, migration tooling, SLA and the engineers who maintain the project. If you want the engine and a support contract but none of the commercial layer, that is enterprise support for Cozystack."
+  - q: "Can we start small and grow?"
+    a: "Yes, and the growth path is deliberately not a replatform. A provider that starts on the price list at provider scale and grows into a multi-region national operator switches multi-region on and keeps its portal, its billing and its tenants. An enterprise that starts with a regulated private cloud and later wants GPU tenancy adds it on the same substrate, inheriting the key custody and tenancy boundary the auditor already accepted."
+  - q: "Is there vendor lock-in?"
+    a: "The core is Apache 2.0 with no per-CPU or per-core licensing, and it is a CNCF project rather than a Aenix-owned codebase, so the engine outlives any commercial relationship with us. The commercial layer — portals, billing, proprietary modules — is what you stop receiving if you leave. The exit is documented rather than theoretical: you keep running the open-source platform on the same hardware."
+aliases:
+  - /products/aenix-platform/
 ---
 
-**Three products, distinct audiences. Ænix Platform — our turnkey commercial cloud-in-a-box with two editions plus two modules. Cozystack — the open-source CNCF project we created and maintain. Kubernetes Deep Dive Course — for engineers learning the stack.**
+**Three platforms on one engine, plus two products around it. The platforms are not tiers and not alternatives — they are different surfaces on the same Cozystack foundation, and they combine.**
 
----
+## Choose by who consumes the capacity
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
+That single question settles the choice in most conversations. Everything else follows from it.
 
-## Ænix Platform
-
-**Turnkey commercial cloud-in-a-box. Built on open-source Cozystack. Two editions: one for selling cloud, one for running your own. Hosting panel, billing, portals, payments, support — install, plug in users, start operating.**
-
-| Edition | For | What's distinct |
+| If the capacity goes to… | You need | Platform |
 |---|---|---|
-| **Provider Edition** | Large public clouds, big banks operating own cloud, large telcos | Multi-hypervisor cloud control plane, multi-region, third-party integration |
-| **Provider Edition** | Small / mid hosting providers, MSPs, regional clouds, data centres | WHMCS integration, billing module + templates, tenant lock/suspension, migration from VMware/OpenStack/Virtuozzo. From $1,250/month |
-| **Enterprise Edition** | Regulated enterprises (banks, insurance, public administration, telco, healthcare) | DORA / NIS2 architecture, multi-DC, hybrid sovereign, integrates with VMware/OpenNebula/OpenShift |
-| **Developer Self-Service** | Product / SaaS organizations with strong engineering teams | Internal Developer Platform layer — GitLab, Argo CD workflows, APIs |
-| **AI & GPU** | AI-heavy organizations, regulated AI deployments, GPU-heavy product companies | AI platform automation out of the box, ready blueprints, models, DBs |
+| Customers who are not you | Billing, payments, customer portal, tenant suspension, resale | **[Public Cloud Platform](/products/public-cloud-platform/)** |
+| Your own business units, under regulation | DORA / NIS2 architecture, customer-managed keys, audit-ready logging | **[Private Cloud Platform](/products/private-cloud-platform/)** |
+| Inference, fine-tuning, RAG on your own GPUs | GPU tenancy, MIG and fractioning, model serving, vector databases | **[AI Platform](/products/ai-platform/)** |
 
-Plus an entry tier — **Pure Cozystack with Ænix Support** — for product teams running on Hetzner / OVH / leased bare-metal who want vendor support without the commercial portal/billing layer.
+## They combine — that is the design, not a concession
 
-**Engagement size:** Provider Edition entry from $1,250/month support; Public Cloud / Enterprise / IDP / AI/ML full builds are quoted per RFP.
+The three platforms are the same engine with different surfaces switched on. There is one control plane, one API, one operations team and one upgrade path underneath all of them. So the honest answer to "which one, though?" is often "two of them, and that costs you a configuration change rather than a second programme."
 
-[Explore platform →](/products/aenix-platform/)
+What that looks like in practice:
 
-</div>
-</div>
+- **AI Platform with Private Cloud controls.** The usual regulated pairing. Customer-managed keys extend to model weights at rest; GPU workloads sit inside the same Tenant CRD boundary the auditor already reviewed. You do not build a second compliance story for the AI estate.
+- **Public Cloud with GPU-as-a-Service.** A provider running VMs and managed databases switches on GPU tenancy and sells it, metered and billed through the surface it already has, on hardware it already owns.
+- **Public and Private together.** A telco or bank selling a sovereign cloud product while running its own regulated internal estate operates both on one platform, with one team, rather than maintaining two stacks that happen to look similar.
 
----
+Nothing in the line is a dead end. Starting on the price list at provider scale and growing into a multi-region national build is a switch, not a replatform.
 
-## Cozystack
-
-**Open-source Kubernetes-native multi-tenant cloud platform. CNCF project (Apache 2.0). Created and maintained by Aenix.**
-
-- **Architecture:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal + VictoriaMetrics + VictoriaLogs
-- **License:** Apache 2.0 — anyone can run it
-- **Status:** CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026); CNCF-Certified Kubernetes Distribution; OpenSSF Best Practices
-- **Documentation:** [cozystack.io/docs](https://cozystack.io/docs)
-- **Source:** [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack)
-- **Community:** Slack (#cozystack on Kubernetes Slack), Telegram, GitHub
-
-If your organization has platform engineering capacity and wants full control: run Cozystack yourself, free.
-
-If you need a turnkey cloud (billing, portals, payments, support, productized installer): **Ænix Platform** is the commercial path.
-
-[Visit cozystack.io →](https://cozystack.io)
-
----
-
-## Kubernetes Deep Dive Course
-
-**Education product. Advanced course for engineers covering the Cozystack stack — Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux, and other Kubernetes tools.**
-
-- **Audience:** Platform engineers, Kubernetes operators, OSS contributors learning the stack
-- **Format:** Multi-week intensive course (online or hybrid)
-- **Topics:** Containerization, networking, storage, security, GitOps with the Cozystack stack
-- **Outcome:** Engineers ready to operate the same architecture that powers Ænix Platform deployments
-
-The course also serves as a secondary funnel — engineers who learn the stack often bring it to their organization and discuss platform engagement with us.
-
-[Kubernetes Deep Dive Course details →](/kubernetes-deep-dive/)
-
----
-
-## How they relate
-
-<div class="arch-section__fig">
-<div class="diagram">
-<div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Open source</span><span>CNCF, Apache 2.0</span><span>Anyone can run it</span></div></div>
-<div class="diagram__conn">productized as</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Commercial</span><span>5 editions + entry tier</span><span>Sold for production</span></div></div>
-<div class="diagram__conn">taught via</div>
-<div class="diagram__node"><b>Kubernetes Deep Dive Course</b><div class="diagram__chips"><span>Education</span><span>For engineers</span></div></div>
-</div>
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
 </div>
 
 ---
 
-## Frequently asked questions
+## Ænix Public Cloud Platform
 
-### What's the difference between Ænix Platform and Cozystack?
+**For everyone who sells cloud** — hosting providers, MSPs and regional clouds at one end; telcos, national operators and banks running a commercial cloud at the other.
 
-Cozystack is the open-source foundation — a CNCF project under Apache 2.0 that anyone can download, modify, and run. Ænix Platform is the commercial turnkey version Aenix sells, with hosting panel, full billing, portals, payments, productized installer, enterprise SLA, and edition-specific features per buyer profile (Public Cloud / ISP / Enterprise / IDP / AI/ML).
+Turnkey cloud-in-a-box: full billing back-end and front-end, WHMCS integration, white-label customer portal, payment processing, tenant lock and suspension, and service-creation wizards for VMs, Kubernetes, managed databases, S3 and GPU. Multi-region and multi-hypervisor, so it extends an existing VMware or OpenStack estate instead of replacing it.
 
-### Do I need Ænix Platform if I just want Cozystack?
+From $1,250/month at provider scale; multi-region operator programmes quoted per RFP.
 
-No. Cozystack is free and self-deployable. If your team has platform engineering capacity, run Cozystack directly. Ænix Platform exists for organizations that need turnkey deployment with billing, portals, support, and edition-specific features without building it in-house.
+[Ænix Public Cloud Platform →](/products/public-cloud-platform/)
 
-### Is the Kubernetes Deep Dive Course required?
+## Ænix Private Cloud Platform
 
-No. The course is for engineers who want to learn the stack. It's separate from Ænix Platform engagement. Aenix Platform engagements include engineering team training as part of the build phase.
+**For regulated organizations running cloud for themselves** — banks, insurance carriers, public administration, telco, healthcare and regulated industry.
 
-### Which product should I look at first?
+One Kubernetes-native control plane that coexists with VMware, OpenNebula and OpenShift rather than forcing a rip-and-replace. Pre-validated DORA and NIS2 architecture, customer-controlled encryption at every layer, immutable audit logging, multi-DC operations with tested failover, ISO 27001 and SOC 2 alignment support. The developer self-service layer — golden paths, GitLab CI/CD, Argo CD GitOps, self-service APIs — is part of this platform rather than a separate product.
 
-- **Public-cloud operator / big bank / large telco:** [Ænix Platform Provider Edition](/products/aenix-platform/public-cloud-edition/)
-- **Hosting provider / MSP / regional cloud:** [Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)
-- **Regulated bank / insurance / public sector:** [Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)
-- **Product / SaaS team:** [the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)
-- **AI-heavy / GPU-heavy:** [the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)
-- **Engineer evaluating the tech:** [Cozystack](https://cozystack.io)
-- **Engineer learning the stack:** [Kubernetes Deep Dive Course](/kubernetes-deep-dive/)
+Multi-year builds: 3-6 month pilot, 9-18 months to full multi-DC production.
+
+[Ænix Private Cloud Platform →](/products/private-cloud-platform/)
+
+## Ænix AI Platform
+
+**For teams running AI on their own hardware** — AI-native organizations at scale, regulated AI deployments, GPU-heavy product companies, and providers selling GPU-as-a-Service.
+
+Multi-tenant GPU scheduling with GPU-class awareness, pre-integrated model serving, vector databases, object storage, ready-to-use open-weight models and service APIs. Sovereignty controls included: customer-controlled keys covering model weights, and air-gapped deployment. NVIDIA H100, H200, A100, L40S and Blackwell classes, with AMD and Intel accelerators supported.
+
+3-6 months for a typical inference fleet; 6-12 months for inference plus fine-tuning plus RAG.
+
+[Ænix AI Platform →](/products/ai-platform/)
 
 ---
 
-*Cozystack is open source under Apache 2.0. Ænix Platform is commercial, sold by Aenix.*
+## Enterprise support for Cozystack
+
+**For teams running open-source Cozystack themselves** and wanting the engineers who maintain it on call — without the commercial portal and billing layer.
+
+SLA-backed support with direct access to the maintainers, dedicated channels, upgrade guidance and compliance support. The common entry point for product teams on Hetzner, OVH or leased bare metal.
+
+[Enterprise support for Cozystack →](/products/cozystack-enterprise-support/)
+
+## WHMCS integration
+
+**For hosters already running WHMCS.** A proprietary Aenix module that adds Cozystack services — Kubernetes clusters, managed databases, VMs, message brokers, object storage and GPU — to the panel you already operate, with usage metering and billing wired through.
+
+[WHMCS integration →](/products/whmcs-integration/)
+
+---
+
+## The engine underneath
+
+All of the above runs on **[Cozystack](/products/cozystack/)** — the open-source cloud platform Aenix created and maintains, and a CNCF project (Sandbox since February 2025; Incubating expected late summer 2026). Apache 2.0, no per-CPU or per-core fees.
+
+That matters commercially, not just philosophically: the engine is not ours to withdraw. If the commercial relationship ends you keep running the platform on the same hardware, and the exit path is documented rather than hypothetical.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/pricing/">Pricing →</a>
+</div>

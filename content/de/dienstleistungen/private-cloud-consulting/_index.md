@@ -6,8 +6,8 @@ related_pages:
   - /de/loesungen/cloud-repatriation
   - /de/dienstleistungen/platform-engineering
   - /de/dienstleistungen/platform-readiness-assessment
-  - /de/produkte/aenix-platform/enterprise-edition/
-  - /de/produkte/aenix-platform/public-cloud-edition/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -53,7 +53,7 @@ faq:
 
 Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Kubernetes-nativen Private-Cloud-Plattform, die wir in Produktion mit Service Providern, Banken und regulierten Unternehmen betreiben. Unsere Private-Cloud-Consulting-Engagements bringen dieselben Engineers in Ihr Engagement.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die ihre eigene Public-Cloud-Class-Plattform betreiben.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber, die ihre eigene Public-Cloud-Class-Plattform betreiben.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

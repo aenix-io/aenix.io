@@ -16,10 +16,10 @@ secondary_keywords:
   - "internal cloud portal bank"
   - "on-premise cloud financial services"
 related_pages:
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /industries/financial-services/
   - /solutions/dora-compliance/
-  - /products/aenix-platform/idp-edition/
+  - /products/private-cloud-platform/
 faq:
   - q: "Did the bank have to adopt a new identity system?"
     a: "No. The bank's existing Keycloak stayed the source of truth and the platform integrated with it, mapping the bank's groups and roles onto platform roles. Nobody got a second set of credentials, and joiner-mover-leaver processes kept working the way audit already understood them."

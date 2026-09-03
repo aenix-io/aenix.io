@@ -6,8 +6,8 @@ related_pages:
   - /solutions/nis2-compliance
   - /solutions/sovereign-ai
   - /services/platform-readiness-assessment
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/private-cloud-platform/
+  - /products/ai-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -50,7 +50,7 @@ faq:
 
 Aenix is currently piloting Cozystack with an energy operator and applies the same multi-site, NIS2-aligned, sovereignty-friendly platform pattern that runs at our financial-services and telecom customers. The energy-specific work emphasizes IT/OT convergence, edge resilience, and air-gap support for OT systems.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for NIS2-aligned multi-site architecture with air-gap option for OT; **[AI & GPU](/products/aenix-platform/ai-ml-edition/)** for grid-optimization AI workloads.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for NIS2-aligned multi-site architecture with air-gap option for OT; **[AI & GPU](/products/ai-platform/)** for grid-optimization AI workloads.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

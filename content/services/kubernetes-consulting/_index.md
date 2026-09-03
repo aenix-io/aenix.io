@@ -5,7 +5,7 @@ related_pages:
   - /services/platform-engineering/
   - /services/internal-developer-platform/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/
+  - /products/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -49,7 +49,7 @@ faq:
 
 Aenix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a multi-tenant Kubernetes-native platform we run in production with service providers, banks, and AI operators. Our Kubernetes consulting engagements bring the same engineers into your team.
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** when consulting scope expands into a productized cloud platform engagement. Stand-alone consulting also available for organizations not yet evaluating Ænix Platform.
+> **Pairs with:** any **[Ænix Platform Edition](/products/)** when consulting scope expands into a productized cloud platform engagement. Stand-alone consulting also available for organizations not yet evaluating Ænix Platform.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

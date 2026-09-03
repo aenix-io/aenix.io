@@ -6,8 +6,8 @@ related_pages:
   - /solutions/data-sovereignty
   - /solutions/sovereign-ai
   - /services/platform-readiness-assessment
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/private-cloud-platform/
+  - /products/ai-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -48,7 +48,7 @@ faq:
 
 Aenix builds platforms for insurance organizations across the EU, DACH, and Central Asia.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for DORA-aligned regulated cloud foundation; **[AI & GPU](/products/aenix-platform/ai-ml-edition/)** for claims-processing AI and underwriting AI workloads on regulated data. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for DORA-aligned regulated cloud foundation; **[AI & GPU](/products/ai-platform/)** for claims-processing AI and underwriting AI workloads on regulated data. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

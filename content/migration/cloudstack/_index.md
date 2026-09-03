@@ -2,8 +2,8 @@
 title: "CloudStack to Cozystack migration"
 description: "Apache CloudStack remains established in some service-provider markets. For organizations modernizing to a Kubernetes-native foundation, Aenix runs..."
 related_pages:
-  - /products/aenix-platform/provider-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/public-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack
   - /services/platform-readiness-assessment
   - /alternatives/vmware-alternative
@@ -44,7 +44,7 @@ faq:
 
 **Apache CloudStack remains established in some service-provider markets. For organizations modernizing to a Kubernetes-native foundation, Aenix runs CloudStack-to-Cozystack migrations.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers and regional clouds; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers and regional clouds; **[Provider Edition](/products/public-cloud-platform/)** for large operators.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

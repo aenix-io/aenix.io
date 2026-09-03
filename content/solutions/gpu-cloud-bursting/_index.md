@@ -15,7 +15,7 @@ related_pages:
   - /solutions/private-llm/
   - /solutions/sovereign-ai/
   - /solutions/hybrid-cloud-platform/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /services/ai-platform-build/
   - /industries/universities/
   - /case-studies/bare-metal-gpu-inference/
@@ -62,7 +62,7 @@ faq:
 
 **Own the baseline, rent only the peaks. Cloud bursting lets you run steady GPU workloads on hardware you control and spill inference or training spikes into public or sovereign clouds on demand — then tear the extra capacity down. Aenix builds this as GPU-as-a-service on a single Kubernetes platform, so your teams get elastic GPU without hyperscaler lock-in, opaque billing, or a full migration.**
 
-> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)** — multi-tenant GPU scheduling, fractional sharing and ready blueprints for inference and fine-tuning. For the elastic self-service cloud underneath it, combine with **[Provider Edition](/products/aenix-platform/public-cloud-edition/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**.
+> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/ai-platform/)** — multi-tenant GPU scheduling, fractional sharing and ready blueprints for inference and fine-tuning. For the elastic self-service cloud underneath it, combine with **[Provider Edition](/products/public-cloud-platform/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

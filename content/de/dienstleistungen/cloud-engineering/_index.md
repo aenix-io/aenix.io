@@ -5,7 +5,7 @@ related_pages:
   - /de/dienstleistungen/platform-engineering
   - /de/dienstleistungen/devops-consulting
   - /de/dienstleistungen/platform-readiness-assessment
-  - /de/produkte/aenix-platform/
+  - /de/produkte/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -43,7 +43,7 @@ faq:
 
 **"Cloud Engineering" deckt das volle Spektrum ab — von Hyperscaler-nativer Architektur bis Private-Cloud-Plattform-Engineering. Das Aenix-Engagement bringt Senior-Engineers — keine Berater — an die Cloud-Architektur-, Automatisierungs- und Operations-Arbeit, die Ihr Team braucht.**
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)**, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)**, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

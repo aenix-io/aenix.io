@@ -4,8 +4,8 @@ description: "Die Phrase \"Private Cloud aufbauen\" klingt 2026 simpel. Die Real
 related_pages:
   - /de/dienstleistungen/private-cloud-consulting
   - /de/loesungen/cloud-repatriation
-  - /de/produkte/aenix-platform/enterprise-edition/
-  - /de/produkte/aenix-platform/public-cloud-edition/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -47,7 +47,7 @@ faq:
 
 Aenix baut Private Clouds end-to-end auf Basis von [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das wir in Produktion mit Service-Anbietern, Banken, Telcos und KI-Operatoren betreiben.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Betreiber, die eine Multi-Region-Plattform in Public-Cloud-Qualität brauchen.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber, die eine Multi-Region-Plattform in Public-Cloud-Qualität brauchen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

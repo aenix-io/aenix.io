@@ -10,7 +10,7 @@ primary_keyword: "cloud repatriation platform for CTOs"
 related_pages:
   - /solutions/cloud-repatriation/
   - /solutions/cloud-cost-optimization/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /resources/cloud-repatriation-tco-worksheet/
   - /products/cozystack/
 hide_closing_cta: true
@@ -20,7 +20,7 @@ hide_closing_cta: true
 
 **Your cloud bill scales with growth, lock-in tightens, and "sovereign" is now a customer requirement. Take back the economics and the control without slowing the roadmap: an open, Kubernetes-native platform on your own or leased hardware — delivered turnkey, or built with you by the team behind it.**
 
-> **Pairs with:** **[Cloud repatriation](/solutions/cloud-repatriation/)** and **[cost optimization](/solutions/cloud-cost-optimization/)** engagements, **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)**, all on open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[Cloud repatriation](/solutions/cloud-repatriation/)** and **[cost optimization](/solutions/cloud-cost-optimization/)** engagements, **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)**, all on open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -52,7 +52,7 @@ Take back cost and data-location control for the workloads that don't belong on 
 
 ## Two ways Aenix helps you
 
-**1. Run a turnkey platform.** [Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/) gives you a production cloud-in-a-box on Cozystack — multi-tenant, with managed databases, storage and observability — that your team operates with our SLA behind it.
+**1. Run a turnkey platform.** [Ænix Platform Enterprise Edition](/products/private-cloud-platform/) gives you a production cloud-in-a-box on Cozystack — multi-tenant, with managed databases, storage and observability — that your team operates with our SLA behind it.
 
 **2. Build / migrate with our team.** Cozystack is the framework; **Aenix is your outsourced engineering team** for a [cloud-repatriation](/solutions/cloud-repatriation/) or greenfield build — architecture, migration, and the [cost-optimization](/solutions/cloud-cost-optimization/) model, executed by the people who maintain the platform.
 

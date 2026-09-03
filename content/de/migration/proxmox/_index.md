@@ -3,7 +3,7 @@ title: "Proxmox zu Cozystack Migration — wenn SMB-Virtualisierung nicht mehr p
 description: "Proxmox VE ist exzellent at SMB-Skala. Wenn Deployments zu Multi-Tenant-Cloud-Buildern oder Service-Provider-Modellen wachsen, strapaziert das operative..."
 related_pages:
   - /de/alternativen/proxmox-alternative
-  - /de/produkte/aenix-platform/provider-edition/
+  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
   - /de/dienstleistungen/platform-readiness-assessment
 language: "de"
@@ -45,7 +45,7 @@ faq:
 
 **Proxmox VE ist exzellent at SMB-Skala. Wenn Deployments zu Multi-Tenant-Cloud-Buildern oder Service-Provider-Modellen wachsen, strapaziert das operative Modell. Aenix führt Proxmox-zu-Cozystack-Migrationen end-to-end durch.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

@@ -46,7 +46,7 @@ faq:
 
 Aenix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Multi-Tenant-Kubernetes-nativen Plattform, die wir in Produktion mit Service Providern, Banken und KI-Operatoren betreiben. Unsere Kubernetes-Consulting-Engagements bringen dieselben Engineers in Ihr Team.
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)**, wenn der Consulting-Scope sich zu einem produktisierten Cloud-Plattform-Engagement erweitert. Eigenständiges Consulting ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)**, wenn der Consulting-Scope sich zu einem produktisierten Cloud-Plattform-Engagement erweitert. Eigenständiges Consulting ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

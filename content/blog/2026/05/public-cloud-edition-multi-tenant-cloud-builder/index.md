@@ -6,7 +6,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Sovereignty", "Cloud", "Platform Engineering"]
 language: "en"
-companion_landing: "/products/aenix-platform/public-cloud-edition/"
+companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Provider Edition product details →"
 quiz:
   title: "Test yourself: Provider Edition"
@@ -43,7 +43,7 @@ quiz:
       explanation: "Phase 1 covers hardware procurement and racking, Talos/Cozystack platform deployment in the first datacentre, storage layer, networking foundation, identity integration, and initial observability — ending with a working single-region internal platform."
 ---
 
-**Long-form companion to the [Provider Edition landing](/products/aenix-platform/public-cloud-edition/). For tier-1 telcos, national operators, big banks building their own cloud, and large sovereign cloud initiatives evaluating what a multi-million-euro Aenix engagement actually covers — and how to phase it across the 18-36 months it typically runs.**
+**Long-form companion to the [Provider Edition landing](/products/public-cloud-platform/). For tier-1 telcos, national operators, big banks building their own cloud, and large sovereign cloud initiatives evaluating what a multi-million-euro Aenix engagement actually covers — and how to phase it across the 18-36 months it typically runs.**
 
 The Provider Edition conversation is different from every other
 Aenix engagement. It's not "should we use Cozystack?" — that's already
@@ -261,7 +261,7 @@ Engagement size: multi-year programme, quoted per RFP.
 
 ## Where to dig deeper
 
-- **[Provider Edition landing](/products/aenix-platform/public-cloud-edition/)** —
+- **[Provider Edition landing](/products/public-cloud-platform/)** —
   feature list, edition-specific FAQ
 - **[Public Cloud Builder services](/services/public-cloud-builder/)** —
   engagement details

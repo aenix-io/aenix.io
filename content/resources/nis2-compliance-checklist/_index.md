@@ -5,7 +5,7 @@ type: "page"
 related_pages:
   - /solutions/nis2-compliance
   - /resources/dora-compliance-checklist
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -39,7 +39,7 @@ faq:
 
 **A 35-point checklist for essential and important entities subject to NIS2. Covers Article 21 risk management measures (10 areas), Article 23 incident reporting timelines, supply-chain transparency, business continuity, MFA, encryption, and architecture-level controls. Used by Aenix during NIS2-aligned readiness engagements.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — NIS2-aligned by design (Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging, coordinated vulnerability disclosure aligned with Article 30).
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — NIS2-aligned by design (Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging, coordinated vulnerability disclosure aligned with Article 30).
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

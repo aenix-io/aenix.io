@@ -7,8 +7,8 @@ related_pages:
   - /solutions/data-sovereignty/
   - /services/private-cloud-consulting/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/private-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -54,7 +54,7 @@ faq:
 
 Aenix builds and operates hybrid cloud platforms based on [Cozystack](/products/cozystack/) — Kubernetes-native, multi-tenant, with consistent operations across customer hardware, public cloud regions, and edge sites.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — one control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds. For large operators or telcos: combine with **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for multi-region public-cloud-class control plane.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — one control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds. For large operators or telcos: combine with **[Provider Edition](/products/public-cloud-platform/)** for multi-region public-cloud-class control plane.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

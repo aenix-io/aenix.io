@@ -47,7 +47,7 @@ faq:
 
 Aenix übernimmt das technische Engagement, das "wir müssen AWS / Azure / GCP verlassen" von einer Vorstandsaussage in einen funktionierenden Plan verwandelt — mit priorisierten Workloads, modellierten Kosten und einer Zielarchitektur, die die Public Cloud nicht auf die falsche Weise neu erfindet.
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — die richtige Edition folgt Ihrem Buyer-Profil. Hosting-Anbieter / regionale Clouds: [Provider Edition](/de/produkte/aenix-platform/provider-edition/). Regulierte Unternehmen: [Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/). Große Betreiber: [Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/). Produkt-Engineering-Teams: [Developer Self-Service](/de/produkte/aenix-platform/idp-edition/). KI-lastig: [AI & GPU](/de/produkte/aenix-platform/ai-ml-edition/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)** — die richtige Edition folgt Ihrem Buyer-Profil. Hosting-Anbieter / regionale Clouds: [Provider Edition](/de/produkte/public-cloud-platform/). Regulierte Unternehmen: [Enterprise Edition](/de/produkte/private-cloud-platform/). Große Betreiber: [Provider Edition](/de/produkte/public-cloud-platform/). Produkt-Engineering-Teams: [Developer Self-Service](/de/produkte/private-cloud-platform/). KI-lastig: [AI & GPU](/de/produkte/ai-platform/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

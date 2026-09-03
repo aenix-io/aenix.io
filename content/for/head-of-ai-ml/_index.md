@@ -10,7 +10,7 @@ primary_keyword: "sovereign ai gpu platform for ml leaders"
 secondary_keywords: ["sovereign ai", "private gpu cloud", "ai inference platform"]
 related_pages:
   - /solutions/sovereign-ai/
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /services/ai-platform-build/
   - /products/cozystack/
 ---
@@ -19,7 +19,7 @@ related_pages:
 
 **You own the AI/ML platform, and the constraints are stacking up: GPU cost and scarcity, data that can't leave the jurisdiction, and customers who won't accept a US model endpoint. Run training and inference on your own GPUs, multi-tenant, with no hyperscaler lock-in. Aenix delivers that as a turnkey AI platform, or builds it with you.**
 
-> **Pairs with:** **[Sovereign AI](/solutions/sovereign-ai/)** and **[the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/)** for one-click GPU inference, or **[AI Platform Build](/services/ai-platform-build/)** to design it to your stack. Open core: **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[Sovereign AI](/solutions/sovereign-ai/)** and **[the AI & GPU module of Ænix Platform](/products/ai-platform/)** for one-click GPU inference, or **[AI Platform Build](/services/ai-platform-build/)** to design it to your stack. Open core: **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -51,7 +51,7 @@ Give data scientists and product teams self-service GPU — for training and for
 
 ## Two ways Aenix helps you
 
-**1. Run a turnkey AI platform.** [the AI & GPU module of Ænix Platform](/products/aenix-platform/ai-ml-edition/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with enterprise SLA.
+**1. Run a turnkey AI platform.** [the AI & GPU module of Ænix Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with enterprise SLA.
 
 **2. Build your own, with our team.** Cozystack is the framework; **Aenix is your outsourced engineering team** for an [AI platform build](/services/ai-platform-build/) — GPU topology, scheduling, inference serving and [sovereign-AI](/solutions/sovereign-ai/) controls designed around your models and data.
 
@@ -103,7 +103,7 @@ Free, no prep. We look at your GPU footprint and model/data constraints and tell
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/products/aenix-platform/ai-ml-edition/">AI & GPU →</a>
+  <a class="cta-secondary" href="/products/ai-platform/">AI & GPU →</a>
 </div>
 
 ---

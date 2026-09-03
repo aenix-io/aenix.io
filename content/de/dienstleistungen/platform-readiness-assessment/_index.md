@@ -46,7 +46,7 @@ faq:
 
 Wenn Sie Datensouveränität, DORA- / NIS2-Compliance, Cloud-Repatriation, souveräne KI oder eine Self-Service-Plattform für Ihre Entwickler evaluieren — dies ist das Engagement, das die Frage in einen schriftlichen Plan mit Zahlen, Verantwortlichen und Zeitplan verwandelt.
 
-> **Passt zu:** allen **[Ænix Platform Editions](/de/produkte/aenix-platform/)** — das Assessment ergibt, welche Edition zu Ihrem Scope passt. Public Cloud / ISP / Enterprise / IDP / AI/ML. Discovery-Call → Assessment → Edition-Empfehlung → Pilot → Full Build.
+> **Passt zu:** allen **[Ænix Platform Editions](/de/produkte/)** — das Assessment ergibt, welche Edition zu Ihrem Scope passt. Public Cloud / ISP / Enterprise / IDP / AI/ML. Discovery-Call → Assessment → Edition-Empfehlung → Pilot → Full Build.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

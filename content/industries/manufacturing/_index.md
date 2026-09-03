@@ -5,7 +5,7 @@ related_pages:
   - /solutions/data-sovereignty
   - /solutions/nis2-compliance
   - /services/platform-readiness-assessment
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack
 language: "en"
 quick_facts_style: "rows"
@@ -48,7 +48,7 @@ faq:
 
 Aenix builds platforms for manufacturing organizations across the EU, DACH, and Central Asia.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — multi-DC + edge architecture for industrial IT/OT, NIS2 compliance for critical-product manufacturing, air-gap support for OT networks.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — multi-DC + edge architecture for industrial IT/OT, NIS2 compliance for critical-product manufacturing, air-gap support for OT networks.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

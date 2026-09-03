@@ -45,7 +45,7 @@ faq:
 
 Aenix führt ein strukturiertes Engagement für Organisationen durch, die eine Souveränitätsposition von der Behauptung zur nachweisbaren Architektur überführen müssen. Ergebnis: eine kontrollebenengenaue Karte, wo Ihre Daten heute tatsächlich liegen, wo die Lücken sind und wie Sovereignty-by-Design für Ihren Stack aussieht.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die souveräne Cloud intern konsumieren; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für Betreiber, die souveräne Cloud als Produkt anbieten. Kundenkontrollierte Schlüssel auf jeder Datenschicht (Primärspeicher, Replikate, Backups, Observability). Air-Gap-Option unterstützt.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die souveräne Cloud intern konsumieren; **[Provider Edition](/de/produkte/public-cloud-platform/)** für Betreiber, die souveräne Cloud als Produkt anbieten. Kundenkontrollierte Schlüssel auf jeder Datenschicht (Primärspeicher, Replikate, Backups, Observability). Air-Gap-Option unterstützt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

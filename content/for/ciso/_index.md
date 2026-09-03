@@ -11,7 +11,7 @@ related_pages:
   - /solutions/dora-compliance/
   - /solutions/nis2-compliance/
   - /solutions/data-sovereignty/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack/
 ---
 
@@ -19,7 +19,7 @@ related_pages:
 
 **DORA, NIS2 and data-residency turned cloud into a control-and-evidence problem: prove where data lives, who holds the keys, how far the supplier chain reaches. You need a platform where the answers are structural — your hardware, your jurisdiction, your keys. Aenix delivers it turnkey, or builds it with you.**
 
-> **Pairs with:** **[DORA](/solutions/dora-compliance/)**, **[NIS2](/solutions/nis2-compliance/)** and **[data-sovereignty](/solutions/data-sovereignty/)** engagements, **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)**, on open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[DORA](/solutions/dora-compliance/)**, **[NIS2](/solutions/nis2-compliance/)** and **[data-sovereignty](/solutions/data-sovereignty/)** engagements, **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)**, on open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -51,7 +51,7 @@ Move regulated workloads onto infrastructure where sovereignty is a property of 
 
 ## Two ways Aenix helps you
 
-**1. Run a turnkey platform.** [Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/) runs on your hardware in your jurisdiction, with customer-controlled keys at every data layer (primary, replicas, backups, observability) and an air-gap option — the regulated cloud you operate with our SLA.
+**1. Run a turnkey platform.** [Ænix Platform Enterprise Edition](/products/private-cloud-platform/) runs on your hardware in your jurisdiction, with customer-controlled keys at every data layer (primary, replicas, backups, observability) and an air-gap option — the regulated cloud you operate with our SLA.
 
 **2. Assess and build with our team.** Cozystack is the framework; **Aenix is your engineering and assessment team** for [DORA](/solutions/dora-compliance/), [NIS2](/solutions/nis2-compliance/) and [data-sovereignty](/solutions/data-sovereignty/) work — a control-level map of where data lives today, the gaps, and the remediation build.
 

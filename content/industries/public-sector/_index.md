@@ -6,8 +6,8 @@ related_pages:
   - /solutions/dora-compliance/
   - /solutions/nis2-compliance/
   - /services/platform-readiness-assessment/
-  - /products/aenix-platform/enterprise-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/private-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -48,7 +48,7 @@ faq:
 
 Aenix builds platforms for public-sector and quasi-public organizations across the EU and Central Asia. Open-source foundation ([Cozystack](/products/cozystack/)), procurement-portal-ready, regulator-aligned.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for sovereign cloud with strict customer-controlled keys + air-gap option; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large public-sector cloud product launches at hyperscaler-adjacent scale.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for sovereign cloud with strict customer-controlled keys + air-gap option; **[Provider Edition](/products/public-cloud-platform/)** for large public-sector cloud product launches at hyperscaler-adjacent scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

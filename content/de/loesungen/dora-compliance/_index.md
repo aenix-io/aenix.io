@@ -6,7 +6,7 @@ related_pages:
   - /de/loesungen/data-sovereignty
   - /de/loesungen/nis2-compliance
   - /de/dienstleistungen/platform-readiness-assessment
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -51,7 +51,7 @@ faq:
 
 Aenix führt ein DORA-konformes Platform-Readiness-Engagement für Finanzunternehmen und die sie beliefernden ICT-Drittanbieter durch. Das Ergebnis: eine Kontroll-Landkarte dessen, was Sie heute nachweisen können, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — DORA-konform by design (kundenkontrollierte Schlüssel auf jeder Ebene, audit-bereites Logging via VictoriaLogs, mandantenfähiges Tenant CRD abgestimmt auf die ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz bis zur zweiten Stufe). Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — DORA-konform by design (kundenkontrollierte Schlüssel auf jeder Ebene, audit-bereites Logging via VictoriaLogs, mandantenfähiges Tenant CRD abgestimmt auf die ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz bis zur zweiten Stufe). Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

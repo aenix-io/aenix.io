@@ -5,7 +5,7 @@ related_pages:
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/loesungen/cloud-kostenoptimierung
   - /de/loesungen/cloud-repatriation
-  - /de/produkte/aenix-platform/
+  - /de/produkte/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -47,7 +47,7 @@ faq:
 
 **Cloud-Strategie ist eine Frage, die Architekten und Senior-Engineers besser beantworten können als Management-Berater. Aenix führt Cloud-Strategie-Engagements als Teil desselben Platform Readiness Assessments durch, das umsetzbare Architektur liefert — ein schriftlicher Bericht mit benannten Workloads, Kosten und Timelines, kein 200-seitiger Transformationsplan.**
 
-> **Passt zu:** allen **[Ænix Platform Editions](/de/produkte/aenix-platform/)** — die Strategie ergibt, welche Edition zu Ihrem Buyer-Profil und Engagement-Scope passt.
+> **Passt zu:** allen **[Ænix Platform Editions](/de/produkte/)** — die Strategie ergibt, welche Edition zu Ihrem Buyer-Profil und Engagement-Scope passt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

@@ -16,7 +16,7 @@ secondary_keywords:
   - "self-hosted H100 inference"
   - "GPU cloud repatriation"
 related_pages:
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /solutions/sovereign-ai/
   - /solutions/gpu-cloud-bursting/
   - /solutions/cloud-repatriation/

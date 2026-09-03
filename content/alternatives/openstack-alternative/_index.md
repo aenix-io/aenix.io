@@ -3,8 +3,8 @@ title: "OpenStack alternative — when operational complexity stops paying"
 description: "OpenStack is mature, broad, and proven at telco / government scale. It also requires significant operational expertise to run well, and finding OpenStack..."
 related_pages:
   - /alternatives/vmware-alternative
-  - /products/aenix-platform/provider-edition/
-  - /products/aenix-platform/public-cloud-edition/
+  - /products/public-cloud-platform/
+  - /products/public-cloud-platform/
   - /products/cozystack
   - /services/private-cloud-consulting
 language: "en"
@@ -46,7 +46,7 @@ faq:
 
 Cozystack is the open-source alternative for organizations that want OpenStack's open-source-and-multi-tenant guarantees with a lighter operational footprint. Same-license (Apache 2.0), Kubernetes-native foundation, fewer moving parts.
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers and regional clouds modernizing from OpenStack; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators consolidating OpenStack at scale.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers and regional clouds modernizing from OpenStack; **[Provider Edition](/products/public-cloud-platform/)** for large operators consolidating OpenStack at scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

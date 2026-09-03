@@ -6,8 +6,8 @@ related_pages:
   - /de/migration/vmware
   - /de/alternativen/vmware-alternative
   - /de/dienstleistungen/platform-readiness-assessment
-  - /de/produkte/aenix-platform/provider-edition/
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/public-cloud-platform/
+  - /de/produkte/private-cloud-platform/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -45,7 +45,7 @@ faq:
 
 **Eine 25-Punkt-Checkliste für Organisationen, die einen VMware-Ausstieg evaluieren. Deckt Inventar, Abhängigkeiten, Networking, Storage, Multi-Tenancy, KI/GPU, Souveränität und operative Bereitschaft ab. Verwendet von Aenix während 14-Tage-Platform-Readiness-Assessments und kostenlos angeboten für Teams in früher Evaluierung.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für Hosting-Anbieter, die VMware Cloud Director verlassen; **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Unternehmen, die VCF verlassen.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen; **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

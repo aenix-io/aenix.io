@@ -16,8 +16,8 @@ secondary_keywords:
   - "Cloud-Servicekatalog"
   - "Private-Cloud-Billing-Portal"
 related_pages:
-  - /de/produkte/aenix-platform/provider-edition/
-  - /de/produkte/aenix-platform/public-cloud-edition/
+  - /de/produkte/public-cloud-platform/
+  - /de/produkte/public-cloud-platform/
   - /de/branchen/finanzdienstleistungen/
   - /de/dienstleistungen/public-cloud-builder/
 faq:

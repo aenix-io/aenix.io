@@ -5,7 +5,7 @@ type: "page"
 related_pages:
   - /de/loesungen/dora-compliance
   - /de/ressourcen/vmware-migrations-checkliste
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -41,7 +41,7 @@ faq:
 
 **Eine 35-Punkt-Checkliste für Finanzinstitute und ICT-Drittanbieter, die DORA-Compliance-Posture für ihre Cloud-Infrastruktur evaluieren. Deckt Artikel 21 Risiko-Management, Artikel 23 Vorfall-Reporting, Artikel 28 Lieferanten-Risiko, Verschlüsselung, Audit-Bereitschaft ab. Verwendet von Aenix während DORA-konformer Readiness-Engagements.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — DORA-konform by design (kundenkontrollierte Schlüssel, audit-bereites Logging, Multi-Tenant Tenant CRD aligned mit ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz).
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — DORA-konform by design (kundenkontrollierte Schlüssel, audit-bereites Logging, Multi-Tenant Tenant CRD aligned mit ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz).
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

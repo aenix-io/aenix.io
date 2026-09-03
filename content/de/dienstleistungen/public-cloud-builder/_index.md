@@ -3,8 +3,8 @@ title: "Public Cloud Builder — kundenseitiges Cloud-Produkt auf Open-Source-Fo
 description: "Hosting-Anbieter, Telcos und regionale Operatoren in 2026 stehen vor der Frage: Wie bieten wir Enterprise-Kunden ein glaubwürdiges Cloud-Produkt, ohne ein..."
 related_pages:
   - /de/dienstleistungen/private-cloud-consulting
-  - /de/produkte/aenix-platform/public-cloud-edition/
-  - /de/produkte/aenix-platform/provider-edition/
+  - /de/produkte/public-cloud-platform/
+  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
   - /de/alternativen/vmware-alternativen
 language: "de"
@@ -47,7 +47,7 @@ faq:
 
 Aenix baut kundenseitige Public-Cloud-Produkte auf Cozystack — der Open-Source-Kubernetes-nativen Plattform, die Ænix Platform Provider Edition Deployments bei regionalen Hosting-Anbietern und mehrere weitere regionale Cloud-Launches antreibt.
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[Provider Edition](/de/produkte/aenix-platform/provider-edition/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat).
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[Provider Edition](/de/produkte/public-cloud-platform/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

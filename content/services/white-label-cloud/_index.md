@@ -1,7 +1,7 @@
 ---
 title: "White label cloud — branded cloud product for MSPs and resellers"
 description: "Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the..."
-related_pages: ["/services/public-cloud-builder", "/products/aenix-platform/provider-edition/", "/partners/", "/products/cozystack"]
+related_pages: ["/services/public-cloud-builder", "/products/public-cloud-platform/", "/partners/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -41,7 +41,7 @@ faq:
 
 **Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the customer-relationship advantages MSPs already have. White-label cloud — branded with the MSP's identity, run on shared or dedicated infrastructure — is the realistic answer. Aenix builds these end-to-end.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — fully white-labelable cozyportal, multi-tier reseller model (Aenix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** — fully white-labelable cozyportal, multi-tier reseller model (Aenix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

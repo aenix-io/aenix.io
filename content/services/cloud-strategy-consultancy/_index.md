@@ -1,7 +1,7 @@
 ---
 title: "Cloud strategy consultancy — engineers who run platforms, not slide-deck strategists"
 description: "Cloud strategy is a question architects and senior engineers can answer better than management consultants. Aenix runs cloud strategy engagements as part of..."
-related_pages: ["/services/platform-readiness-assessment", "/solutions/cloud-cost-optimization", "/solutions/cloud-repatriation", "/products/aenix-platform/", "/products/cozystack"]
+related_pages: ["/services/platform-readiness-assessment", "/solutions/cloud-cost-optimization", "/solutions/cloud-repatriation", "/products/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -37,7 +37,7 @@ faq:
 
 **Cloud strategy is a question architects and senior engineers can answer better than management consultants. Aenix runs cloud strategy engagements as part of the same Platform Readiness Assessment that delivers actionable architecture — written report with named workloads, costs, and timelines, not a 200-page transformation plan.**
 
-> **Pairs with:** all **[Ænix Platform editions](/products/aenix-platform/)** — strategy outputs which edition fits your buyer profile and engagement scope.
+> **Pairs with:** all **[Ænix Platform editions](/products/)** — strategy outputs which edition fits your buyer profile and engagement scope.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

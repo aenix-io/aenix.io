@@ -16,10 +16,10 @@ secondary_keywords:
   - "GPU lifecycle management"
   - "data platform and AI infrastructure"
 related_pages:
-  - /products/aenix-platform/ai-ml-edition/
+  - /products/ai-platform/
   - /solutions/sovereign-ai/
   - /solutions/private-llm/
-  - /products/aenix-platform/idp-edition/
+  - /products/private-cloud-platform/
 faq:
   - q: "Why one platform for both data and AI workloads?"
     a: "Because they are the same infrastructure problem seen twice. Analytics, data lakes and marts, model training and model serving all want object storage, databases, scheduling, quotas and pipelines. Splitting them into two platforms means two operating models, two capacity plans and a copy of every dataset between them."

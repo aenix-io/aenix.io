@@ -295,7 +295,7 @@ Poor fit:
   the trigger-led commercial landing
 - **[DORA compliance services](/solutions/dora-compliance/)** —
   buyer-trigger DORA landing
-- **[Enterprise Edition product page](/products/aenix-platform/enterprise-edition/)** —
+- **[Enterprise Edition product page](/products/private-cloud-platform/)** —
   the edition for regulated enterprises
 - **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   architecture-level DORA walkthrough

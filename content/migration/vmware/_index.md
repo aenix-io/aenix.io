@@ -1,7 +1,7 @@
 ---
 title: "VMware migration — exit VCF without breaking the application"
 description: "Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on..."
-related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/aenix-platform/", "/products/cozystack", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
+related_pages: ["/alternatives/vmware-alternative", "/alternatives/vmware-alternatives", "/solutions/cloud-repatriation", "/services/platform-readiness-assessment", "/products/", "/products/cozystack", "/resources/vmware-cost-calculator/", "/partners/vmware-exit/", "/for/head-of-infrastructure/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -44,7 +44,7 @@ faq:
 
 Aenix runs end-to-end VMware migrations for organizations exiting VCF. Same engineers who built and operate [Cozystack](/products/cozystack/) — the destination platform we typically recommend — work alongside your team for assessment, sequencing, and implementation.
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** for hosting providers exiting VMware Cloud Director (most common 2026 pattern); **[Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for regulated enterprises exiting VCF; **[Provider Edition](/products/aenix-platform/public-cloud-edition/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers exiting VMware Cloud Director (most common 2026 pattern); **[Enterprise Edition](/products/private-cloud-platform/)** for regulated enterprises exiting VCF; **[Provider Edition](/products/public-cloud-platform/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

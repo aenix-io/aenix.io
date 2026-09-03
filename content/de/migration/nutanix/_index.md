@@ -14,7 +14,7 @@ hreflang_en: "/migration/nutanix/"
 related_pages:
   - /de/alternativen/nutanix-alternative/
   - /de/migration/vmware/
-  - /de/produkte/aenix-platform/
+  - /de/produkte/
   - /de/dienstleistungen/platform-readiness-assessment/
   - /de/roi-rechner/
 service:
@@ -58,7 +58,7 @@ faq:
 
 **Nutanix zu verlassen ist ein geplantes Projekt, kein Notfall — und gut umgesetzt entsteht eine Virtualisierungsplattform, die Sie besitzen, statt einer, die Sie unter einem stetig steigenden Renewal mieten. Aenix migriert Nutanix-AOS/AHV-Bestände auf eine Kubernetes-native Plattform, auf der VMs und Container einen Cluster teilen, Storage mit LINSTOR repliziert wird und es keine Hypervisor-Lizenz pro Node gibt. Das Ziel ist [Cozystack](/de/produkte/cozystack/), gebaut und betrieben von denselben Ingenieuren, die Ihre Migration durchführen.**
 
-> **Passt zu:** der **[Ænix Platform](/de/produkte/aenix-platform/)**-Edition, die zu Ihrem Bestand passt — Enterprise für regulierte Workloads, ISP für Hosting-Anbieter, Public Cloud für große Betreiber. Entscheiden Sie das Ziel über den **[Nutanix-Alternative](/de/alternativen/nutanix-alternative/)**-Vergleich und modellieren Sie dann die Zahlen mit dem **[ROI- & TCO-Rechner](/de/roi-rechner/)**.
+> **Passt zu:** der **[Ænix Platform](/de/produkte/)**-Edition, die zu Ihrem Bestand passt — Enterprise für regulierte Workloads, ISP für Hosting-Anbieter, Public Cloud für große Betreiber. Entscheiden Sie das Ziel über den **[Nutanix-Alternative](/de/alternativen/nutanix-alternative/)**-Vergleich und modellieren Sie dann die Zahlen mit dem **[ROI- & TCO-Rechner](/de/roi-rechner/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

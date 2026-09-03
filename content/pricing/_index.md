@@ -48,7 +48,7 @@ Two modules extend either edition and are scoped with the engagement:
 
 Plus an **entry tier** — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
-[Explore all editions →](/products/aenix-platform/)
+[Explore all editions →](/products/)
 
 ---
 

@@ -7,7 +7,7 @@ related_pages:
   - /solutions/sovereign-ai/
   - /services/platform-readiness-assessment/
   - /industries/financial-services/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /products/cozystack/
 language: "en"
 quick_facts_style: "rows"
@@ -50,7 +50,7 @@ faq:
 
 Aenix runs a DORA-aligned platform readiness engagement for financial entities and the ICT third parties serving them.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** — DORA-aligned by design (customer-controlled keys at every layer, audit-ready logging via VictoriaLogs, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness mechanics, supplier transparency to second hop). Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — DORA-aligned by design (customer-controlled keys at every layer, audit-ready logging via VictoriaLogs, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness mechanics, supplier transparency to second hop). Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

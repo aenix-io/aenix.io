@@ -22,7 +22,7 @@ related_pages:
   - /de/alternativen/openshift-alternative
   - /de/vergleichen/cozystack-vs-openshift
   - /de/vergleichen/cozystack-vs-openstack
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/private-cloud-platform/
   - /de/branchen/finanzdienstleistungen/
   - /de/loesungen/data-sovereignty/
   - /de/dienstleistungen/platform-readiness-assessment
@@ -73,7 +73,7 @@ faq:
 
 Aenix führt IBM-AIX/Power-Migrationen End-to-End durch. Dieselben Ingenieure, die [Cozystack](/de/produkte/cozystack/) gebaut haben und betreiben — die Open-Source-Zielplattform, Apache 2.0, CNCF-Projekt — arbeiten mit Ihrem Team an Assessment, Sequenzierung und Umsetzung.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für regulierte Banken und Unternehmen (Air-Gap, Billing, gemanagte Migration). Sie ersetzen speziell IBM Cloud Pak / OpenShift? Siehe die **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Banken und Unternehmen (Air-Gap, Billing, gemanagte Migration). Sie ersetzen speziell IBM Cloud Pak / OpenShift? Siehe die **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -296,7 +296,7 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 
 - **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)** — Cloud Pak / OpenShift ersetzen
 - **[Cozystack vs OpenShift](/de/vergleichen/cozystack-vs-openshift/)** — direkter Vergleich
-- **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** — schlüsselfertig für regulierte Banken
+- **[Enterprise Edition](/de/produkte/private-cloud-platform/)** — schlüsselfertig für regulierte Banken
 - **[Finanzdienstleistungen](/de/branchen/finanzdienstleistungen/)** — Branchenkontext
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — offene, kundenkontrollierte Infrastruktur
 - **[Cozystack](/de/produkte/cozystack/)** — die Open-Source-Zielplattform

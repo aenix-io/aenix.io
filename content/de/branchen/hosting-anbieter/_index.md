@@ -42,7 +42,7 @@ faq:
 
 **Hosting-Anbieter stehen 2026 vor Kundennachfrage nach Cloud-Fähigkeiten, die preislich mit Hyperscalern konkurrieren, aber mit den Kundenbeziehungs-Vorteilen und der Preisflexibilität, die Hosting-Anbieter bereits haben. Die architektonische Antwort ist eine Kubernetes-native Plattform mit Multi-Tenant-Kunden-Isolation, Billing-Integration und einem Service-Katalog jenseits von VMs — Cozystacks Designziel.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Tenant Lock/Suspension, Fast Feature Delivery, produktisierter Installer, Migrations-Tooling von VMware/OpenStack/Virtuozzo. Einstieg ab 1.250 USD/Monat Support-Tier. Öffentliche Produktionskunden: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** — moderne Alternative zu OpenStack für Hosting-Anbieter. WHMCS-integriertes Billing, Tenant Lock/Suspension, Fast Feature Delivery, produktisierter Installer, Migrations-Tooling von VMware/OpenStack/Virtuozzo. Einstieg ab 1.250 USD/Monat Support-Tier. Öffentliche Produktionskunden: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Siehe **[Partner-Programm](/de/partner/)** für bis zu 40% Marge auf weiterverkaufte Engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

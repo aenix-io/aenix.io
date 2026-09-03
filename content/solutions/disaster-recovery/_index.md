@@ -14,7 +14,7 @@ hreflang_en: "/solutions/disaster-recovery/"
 related_pages:
   - /solutions/data-sovereignty/
   - /solutions/dora-compliance/
-  - /products/aenix-platform/enterprise-edition/
+  - /products/private-cloud-platform/
   - /services/platform-readiness-assessment/
   - /case-studies/sovereign-public-cloud/
 service:
@@ -58,7 +58,7 @@ faq:
 
 **Business continuity is not a line in a vendor contract — it is an outcome you have to be able to prove. Disaster recovery as a service (DRaaS) on a sovereign, self-operated platform gives you cross-data-centre synchronous replication, immutable backups, and failover that is tested rather than assumed. Aenix builds and operates these platforms on [Cozystack](/products/cozystack/), so your recovery-time and recovery-point objectives are architecture you own and evidence you can hand to a regulator.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/aenix-platform/enterprise-edition/)** for the regulated cloud foundation that DR sits on; **[DORA compliance](/solutions/dora-compliance/)** for the operational-resilience obligations DR helps you meet. Start with a **[Platform Readiness Assessment →](/services/platform-readiness-assessment/)**.
+> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for the regulated cloud foundation that DR sits on; **[DORA compliance](/solutions/dora-compliance/)** for the operational-resilience obligations DR helps you meet. Start with a **[Platform Readiness Assessment →](/services/platform-readiness-assessment/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

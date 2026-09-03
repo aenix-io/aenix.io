@@ -9,7 +9,7 @@ language: "en"
 
 <div class="cta-row">
   <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Enroll in next cohort</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Ænix Platform engagement →</a>
+  <a class="cta-secondary" href="/products/">Ænix Platform engagement →</a>
 </div>
 
 ---

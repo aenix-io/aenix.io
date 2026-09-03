@@ -42,7 +42,7 @@ faq:
 
 **Cozystack ist zweckgebaut für Service Provider, regulierte Unternehmen und Multi-Tenant-Cloud-Builder. Für KMU und kleinen Mittelstand (unter ~100 Mitarbeitern, single-tenant, einfache Infrastruktur) ist Cozystack Over-Engineering. Die ehrliche Antwort zählt mehr als der Sales-Pitch.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/provider-edition/)** — aber **nur über einen Aenix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden konsumieren Cloud als Produkt vom Partner, der die Ænix Platform darunter betreibt. Ein direktes Aenix-Engagement passt im KMU-Maßstab selten.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** — aber **nur über einen Aenix-[Partner](/de/partner/)** (regionaler MSP / Hosting-Anbieter). KMU-Kunden konsumieren Cloud als Produkt vom Partner, der die Ænix Platform darunter betreibt. Ein direktes Aenix-Engagement passt im KMU-Maßstab selten.
 
 <div class="arch-section__fig">
 <div class="diagram">

@@ -44,7 +44,7 @@ faq:
 
 Das Team, das Ihre Migration ausliefert, ist dasselbe Team hinter [Cozystack](/de/produkte/cozystack/) — der Open-Source-Plattform, auf der die meisten Private-Cloud-Migrationen landen. Wir arbeiten für Assessment, Sequenzierung und Implementierung an der Seite Ihrer Engineers.
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/aenix-platform/)** — das Ziel hängt vom Buyer-Profil und Migrationsmuster ab. Hosting-Anbieter, die einen geteilten Cloud-Stack verlassen, landen auf der Provider Edition; regulierte Unternehmen auf der Enterprise Edition; große Betreiber auf der Provider Edition; Produkt-Engineering-Teams auf der Developer Self-Service; KI-lastige Bestände auf der AI & GPU.
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)** — das Ziel hängt vom Buyer-Profil und Migrationsmuster ab. Hosting-Anbieter, die einen geteilten Cloud-Stack verlassen, landen auf der Provider Edition; regulierte Unternehmen auf der Enterprise Edition; große Betreiber auf der Provider Edition; Produkt-Engineering-Teams auf der Developer Self-Service; KI-lastige Bestände auf der AI & GPU.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -62,7 +62,7 @@ Eine Migration lohnt die Störung, wenn ein konkreter Auslöser sie treibt. Die 
 - **Public-Cloud-Repatriierung**, getrieben von Kosten oder Souveränität — Steady-State-Workloads, die im Hyperscaler günstig zu starten waren, werden im Maßstab teuer, und Data-Residency-Regeln erfordern zunehmend kundenkontrollierte Infrastruktur. Siehe **[Cloud Repatriation](/de/loesungen/cloud-repatriation/)**.
 - **Souveränitätsanforderungen** — DORA, NIS2 und sektorale Regeln zwingen kritische Workloads auf Infrastruktur mit klarer Jurisdiktion und Audit-Trail. Siehe **[Data Sovereignty](/de/loesungen/data-sovereignty/)**.
 - **KI- und GPU-Ökonomie** — nachhaltige Inferenz- und Trainings-Workloads sind auf eigenen GPUs bei angemessener Auslastung deutlich günstiger als auf gemieteter Hyperscaler-Kapazität. Siehe **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
-- **Greenfield-Projekte** — eine neue Plattform ohne Legacy-Bestand, bei der moderne Architektur ab Tag eins auf einer **[Private-Cloud-Plattform](/de/produkte/private-cloud/)** übernommen werden kann.
+- **Greenfield-Projekte** — eine neue Plattform ohne Legacy-Bestand, bei der moderne Architektur ab Tag eins auf einer **[Private-Cloud-Plattform](/de/loesungen/private-cloud/)** übernommen werden kann.
 
 Wenn zwei oder mehr davon zutreffen, verstärkt eine strukturierte Migration den Nutzen. Wenn keines zutrifft und Ihr aktuelles Setup komfortabel ist, ist "bleiben und optimieren" die ehrliche Empfehlung — und eine, die wir regelmäßig aussprechen.
 

@@ -4,8 +4,8 @@ description: "Souveräne Cloud ist 2026 eine beschaffungspflichtige Realität in
 related_pages:
   - /de/loesungen/data-sovereignty
   - /de/branchen/oeffentlicher-sektor
-  - /de/produkte/aenix-platform/enterprise-edition/
-  - /de/produkte/aenix-platform/public-cloud-edition/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/public-cloud-platform/
   - /de/produkte/cozystack
 language: "de"
 quick_facts_style: "rows"
@@ -49,7 +49,7 @@ faq:
 
 Aenix baut souveräne Cloud-Produkte auf Cozystack für Regierungen, quasi-öffentliche Entitäten und regionale Operatoren, die souveränitätspflichtige Märkte bedienen.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für souveräne Clouds mit strikten kundenkontrollierten Schlüsseln + Air-Gap-Support; **[Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für große souveräne-Cloud-Produkt-Launches in hyperscaler-naher Größenordnung.
+> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für souveräne Clouds mit strikten kundenkontrollierten Schlüsseln + Air-Gap-Support; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große souveräne-Cloud-Produkt-Launches in hyperscaler-naher Größenordnung.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

@@ -6,7 +6,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["AI/ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
 language: "en"
-companion_landing: "/products/aenix-platform/ai-ml-edition/"
+companion_landing: "/products/ai-platform/"
 companion_label: "See AI & GPU product details →"
 quiz:
   title: "Test yourself: sustained GPU economics"
@@ -43,7 +43,7 @@ quiz:
       explanation: "Pitfall 2 (model-API-as-private-LLM) says the data still leaves the customer perimeter even when the privacy clause is strong, and for regulated-data workloads this fails the substantive requirement."
 ---
 
-**Long-form companion to the [AI & GPU landing](/products/aenix-platform/ai-ml-edition/). Walks through GPU economics for sustained inference, multi-tenant GPU scheduling, model selection trade-offs, and the architectural decisions that make dedicated AI infrastructure pay back over Year 2 — versus continuing on hyperscaler GPU or proprietary model APIs.**
+**Long-form companion to the [AI & GPU landing](/products/ai-platform/). Walks through GPU economics for sustained inference, multi-tenant GPU scheduling, model selection trade-offs, and the architectural decisions that make dedicated AI infrastructure pay back over Year 2 — versus continuing on hyperscaler GPU or proprietary model APIs.**
 
 The "should we run our own AI infrastructure?" conversation has shifted
 in 2026. For sporadic experimentation, hyperscaler GPU on demand is
@@ -290,7 +290,7 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 
 ## Where to dig deeper
 
-- **[AI & GPU landing](/products/aenix-platform/ai-ml-edition/)** —
+- **[AI & GPU landing](/products/ai-platform/)** —
   feature list, GPU sizing tables, edition-specific FAQ
 - **[Sovereign AI services](/solutions/sovereign-ai/)** — buyer-trigger
   landing for sovereign AI

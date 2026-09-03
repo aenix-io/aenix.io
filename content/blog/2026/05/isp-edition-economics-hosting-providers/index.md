@@ -6,7 +6,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]
 language: "en"
-companion_landing: "/products/aenix-platform/provider-edition/"
+companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Provider Edition product details →"
 quiz:
   title: "Test yourself: Provider Edition unit economics"
@@ -43,7 +43,7 @@ quiz:
       explanation: "The article explicitly says 'for providers below ~300 customers, Provider Edition is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
 ---
 
-**Long-form companion to the [Provider Edition landing](/products/aenix-platform/provider-edition/). Walks through the unit economics, infrastructure cost, platform-team capacity, and payback profile for hosting providers evaluating Ænix Platform Provider Edition — versus continuing on VMware, OpenStack, or per-customer-built infrastructure.**
+**Long-form companion to the [Provider Edition landing](/products/public-cloud-platform/). Walks through the unit economics, infrastructure cost, platform-team capacity, and payback profile for hosting providers evaluating Ænix Platform Provider Edition — versus continuing on VMware, OpenStack, or per-customer-built infrastructure.**
 
 Most "should we build our own cloud product?" conversations at hosting
 providers stop at the technology question. The harder question is the
@@ -283,7 +283,7 @@ months depending on estate complexity and team readiness.
 
 ## Where to dig deeper
 
-- **[Provider Edition landing page](/products/aenix-platform/provider-edition/)** —
+- **[Provider Edition landing page](/products/public-cloud-platform/)** —
   feature list, pricing block, FAQ
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   hosting-provider-specific positioning

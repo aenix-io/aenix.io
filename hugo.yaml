@@ -34,7 +34,7 @@ cascade:
     page_type: event-landing
 
 params:
-  description: "Aenix builds Ænix Platform — a turnkey commercial cloud-in-a-box based on Cozystack (CNCF). Two editions: Provider, for organisations selling cloud, and Enterprise, for organisations running their own."
+  description: "Aenix builds turnkey cloud platforms on Cozystack (CNCF): Public Cloud Platform for organisations selling cloud, Private Cloud Platform for regulated organisations running their own, and AI Platform for GPU workloads."
   author: Ænix
   email: info@aenix.io
   googleAnalytics: GT-NMCJ23L
@@ -71,44 +71,31 @@ params:
 
 menus:
   main:
-    # ── Products (Ænix Platform + 5 editions) ──
+    # ── Products (3 platforms + support + WHMCS) ──
     - name: Products
-      url: /products/aenix-platform/
+      url: /products/
       weight: 10
       identifier: products
-    - name: Ænix Platform overview
-      url: /products/aenix-platform/
+    - name: Ænix Public Cloud Platform
+      url: /products/public-cloud-platform/
       parent: products
       weight: 1
-    - name: Provider Edition
-      url: /products/aenix-platform/provider-edition/
+    - name: Ænix Private Cloud Platform
+      url: /products/private-cloud-platform/
       parent: products
       weight: 2
-    - name: Enterprise Edition
-      url: /products/aenix-platform/enterprise-edition/
+    - name: Ænix AI Platform
+      url: /products/ai-platform/
       parent: products
       weight: 3
-    - name: "AI & GPU module"
-      url: /products/aenix-platform/ai-ml-edition/
+    - name: Enterprise support for Cozystack
+      url: /products/cozystack-enterprise-support/
       parent: products
       weight: 4
-    - name: Developer Self-Service module
-      url: /products/aenix-platform/idp-edition/
+    - name: WHMCS integration
+      url: /products/whmcs-integration/
       parent: products
       weight: 5
-    - name: Cloud at operator scale
-      url: /products/aenix-platform/public-cloud-edition/
-      parent: products
-      weight: 6
-    - name: Cozystack (open source)
-      url: /products/cozystack/
-      parent: products
-      weight: 7
-
-    - name: WHMCS × Cozystack integration
-      url: /products/whmcs-cozystack-integration/
-      parent: products
-      weight: 8
 
     # ── Solutions ──
     - name: Solutions

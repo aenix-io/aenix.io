@@ -1,7 +1,7 @@
 ---
 title: "Proxmox alternative — when SMB-grade virtualization stops being enough"
 description: "Proxmox VE is excellent for what it is: an open-source KVM-based virtualization platform optimized for small-to-mid-size deployments. The architectural..."
-related_pages: ["/alternatives/vmware-alternative", "/products/aenix-platform/provider-edition/", "/products/cozystack", "/services/private-cloud-consulting", "/case-studies/bare-metal-kubernetes-messaging-saas/"]
+related_pages: ["/alternatives/vmware-alternative", "/products/public-cloud-platform/", "/products/cozystack", "/services/private-cloud-consulting", "/case-studies/bare-metal-kubernetes-messaging-saas/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -41,7 +41,7 @@ faq:
 
 Cozystack is the open-source platform built for that next stage. Kubernetes-native virtualization (KubeVirt), multi-tenant control plane, managed database services, S3 object storage, GPU as a service — on the same hardware Proxmox runs on, with a different operational model.
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant by design, productized installer. From $1,250/month support tier.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant by design, productized installer. From $1,250/month support tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

@@ -79,7 +79,7 @@ Produktive Deployments mit unserer hosting-spezifischen Edition. WHMCS-integrier
 - Cloupard
 - Cloudsy
 
-[Ænix Platform Provider Edition →](/de/produkte/aenix-platform/provider-edition/)
+[Ænix Platform Provider Edition →](/de/produkte/public-cloud-platform/)
 
 ### Tier-1-europäische-Banken-Engagements (NDA bis Mitte 2027)
 

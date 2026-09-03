@@ -5,7 +5,7 @@ type: "page"
 related_pages:
   - /de/loesungen/sovereign-ai
   - /de/dienstleistungen/ai-platform-build
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/ai-platform/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -43,7 +43,7 @@ faq:
 
 **Ein 12-seitiger Decision-Guide für Organisationen, die souveräne KI-Infrastruktur evaluieren. Visueller Flowchart führt durch 7 Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope, Modell-Auswahl, Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen, operatives Modell.**
 
-> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/aenix-platform/ai-ml-edition/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling, fertigen Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen. Der Decision-Guide outputs eine Architektur-Pattern, die direkt auf AI & GPU Deployment-Scope mappt.
+> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling, fertigen Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen. Der Decision-Guide outputs eine Architektur-Pattern, die direkt auf AI & GPU Deployment-Scope mappt.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

@@ -1,7 +1,7 @@
 ---
 title: "Cloud platform for SMB and mid-market — honest answer when Cozystack fits"
 description: "Cozystack is purpose-built for service providers, regulated enterprises, and multi-tenant cloud builders. For SMB and small mid-market organizations (under..."
-related_pages: ["/products/cozystack", "/products/aenix-platform/provider-edition/", "/partners/", "/services/platform-readiness-assessment"]
+related_pages: ["/products/cozystack", "/products/public-cloud-platform/", "/partners/", "/services/platform-readiness-assessment"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -37,7 +37,7 @@ faq:
 
 **Cozystack is purpose-built for service providers, regulated enterprises, and multi-tenant cloud builders. For SMB and small mid-market organizations (under ~100 employees, single-tenant, simple infrastructure), Cozystack is over-engineering. The honest answer matters more than the sales pitch.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/aenix-platform/provider-edition/)** — but **only via an Aenix [Partner](/partners/)** (regional MSP / hosting provider). SMB customers consume cloud as a product from the partner, who runs Ænix Platform underneath. Direct Aenix engagement is rarely fit at SMB scale.
+> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** — but **only via an Aenix [Partner](/partners/)** (regional MSP / hosting provider). SMB customers consume cloud as a product from the partner, who runs Ænix Platform underneath. Direct Aenix engagement is rarely fit at SMB scale.
 
 <div class="arch-section__fig">
 <div class="diagram">

@@ -1,7 +1,7 @@
 ---
 title: "Cloud engineering services — practical engineering across hyperscaler, hybrid, and on-prem"
 description: "\"Cloud engineering\" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Aenix engagement applies senior..."
-related_pages: ["/services/platform-engineering", "/services/devops-consulting", "/services/platform-readiness-assessment", "/products/aenix-platform/", "/products/cozystack"]
+related_pages: ["/services/platform-engineering", "/services/devops-consulting", "/services/platform-readiness-assessment", "/products/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -39,7 +39,7 @@ faq:
 
 **"Cloud engineering" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Aenix engagement applies senior engineers — not consultants — to the cloud architecture, automation, and operations work your team needs.**
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/aenix-platform/)** when scope expands to a productized cloud platform. Stand-alone engineering augmentation also available for organizations not yet evaluating Ænix Platform.
+> **Pairs with:** any **[Ænix Platform Edition](/products/)** when scope expands to a productized cloud platform. Stand-alone engineering augmentation also available for organizations not yet evaluating Ænix Platform.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

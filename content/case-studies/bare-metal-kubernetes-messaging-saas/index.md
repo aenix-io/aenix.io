@@ -17,7 +17,7 @@ secondary_keywords:
   - "GitOps kubernetes"
 related_pages:
   - /alternatives/proxmox-alternative/
-  - /products/aenix-platform/provider-edition/
+  - /products/public-cloud-platform/
   - /solutions/data-sovereignty/
   - /services/build-private-cloud/
 faq:

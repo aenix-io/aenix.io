@@ -2,7 +2,7 @@
 title: "Developer self-service — environments in hours, not weeks"
 description: "One of the most expensive things in most engineering organizations is the wait time between \"team needs an environment\" and \"team has an..."
 type: "page"
-related_pages: ["/services/internal-developer-platform", "/services/platform-engineering", "/products/aenix-platform/idp-edition/", "/products/cozystack"]
+related_pages: ["/services/internal-developer-platform", "/services/platform-engineering", "/products/private-cloud-platform/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -40,7 +40,7 @@ faq:
 
 Aenix builds developer self-service capability into platforms that product teams actually adopt — not Backstage as wallpaper, but underlying golden paths that provision what a team asks for without filing a ticket.
 
-> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** — Internal Developer Platform layer with GitLab automation, Argo CD workflows, APIs for self-service, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/private-cloud-platform/)** — Internal Developer Platform layer with GitLab automation, Argo CD workflows, APIs for self-service, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

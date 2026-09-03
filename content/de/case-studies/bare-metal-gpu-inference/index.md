@@ -16,7 +16,7 @@ secondary_keywords:
   - "KubeVirt GPU-Passthrough"
   - "GPU-Cloud-Kosten senken"
 related_pages:
-  - /de/produkte/aenix-platform/ai-ml-edition/
+  - /de/produkte/ai-platform/
   - /de/loesungen/sovereign-ai/
   - /de/loesungen/gpu-cloud-bursting/
   - /de/loesungen/cloud-repatriation/

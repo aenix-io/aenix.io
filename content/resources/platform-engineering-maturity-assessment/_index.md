@@ -2,7 +2,7 @@
 title: "Platform Engineering Maturity Assessment — score your organization (free PDF + interactive form)"
 description: "An 8-dimension self-assessment that scores your platform engineering practice on a 5-stage maturity scale. Used by Aenix during Platform Readiness..."
 type: "page"
-related_pages: ["/services/platform-engineering", "/services/internal-developer-platform", "/products/aenix-platform/idp-edition/"]
+related_pages: ["/services/platform-engineering", "/services/internal-developer-platform", "/products/private-cloud-platform/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -40,7 +40,7 @@ faq:
 
 **An 8-dimension self-assessment that scores your platform engineering practice on a 5-stage maturity scale. Used by Aenix during Platform Readiness Assessment to baseline organizations before recommending Phase 2 work. Now available free for self-assessment.**
 
-> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/aenix-platform/idp-edition/)** — Internal Developer Platform layer (GitLab, Argo CD, APIs, golden paths) on top of the Cozystack cloud foundation. Most assessment outcomes recommend Developer Self-Service as the structured next step.
+> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab, Argo CD, APIs, golden paths) on top of the Cozystack cloud foundation. Most assessment outcomes recommend Developer Self-Service as the structured next step.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

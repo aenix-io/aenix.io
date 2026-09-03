@@ -332,9 +332,9 @@ Poor fit:
   smaller-scope scope
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   the IDP-layer engagement
-- **[Developer Self-Service product page](/products/aenix-platform/idp-edition/)** —
+- **[Developer Self-Service product page](/products/private-cloud-platform/)** —
   for product-engineering-focused organisations
-- **[Enterprise Edition product page](/products/aenix-platform/enterprise-edition/)** —
+- **[Enterprise Edition product page](/products/private-cloud-platform/)** —
   for regulated organisations
 - **[Internal developer platform — 6 patterns without Backstage lock-in](/blog/2026/05/internal-developer-platform-examples-without-backstage/)** —
   six production patterns

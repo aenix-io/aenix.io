@@ -9,9 +9,9 @@ hreflang_de: /de/fuer/leiter-allianzen/
 primary_keyword: "cloud partner program for alliances leaders"
 related_pages:
   - /partners/
-  - /products/aenix-platform/
+  - /products/
   - /services/white-label-cloud/
-  - /products/aenix-platform/provider-edition/
+  - /products/public-cloud-platform/
   - /products/cozystack/
 ---
 
@@ -19,11 +19,11 @@ related_pages:
 
 **Broadcom reshaped the VMware partner program — and your clients want what's next. Add an open, sovereign cloud line your team co-sells into every VMware account: up to 40% margin, deal protection. Resell it, or co-deliver with Aenix as the engineering team behind it.**
 
-> **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/aenix-platform/)** (two editions plus two modules to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** the **[Aenix Partner Program](/partners/)** (up to 40% margin, deal protection, sales kit, L3 access), **[Ænix Platform](/products/)** (two editions plus two modules to sell), and **[white-label cloud](/services/white-label-cloud/)** delivery. Core: open-source **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/partners/#apply">Become a partner</a>
-  <a class="cta-secondary" href="/products/aenix-platform/">Explore editions →</a>
+  <a class="cta-secondary" href="/products/">Explore editions →</a>
 </div>
 
 <div class="trust-badges">
@@ -51,7 +51,7 @@ Add a portfolio line that your sales team can take into every VMware renewal con
 
 ## Two ways your firm engages
 
-**1. Resell.** Sell [Ænix Platform](/products/aenix-platform/) (Public Cloud / ISP / Enterprise / IDP / AI/ML) with up to 40% margin via the [Partner Program](/partners/): deal protection, sales kit, technical pre-sales, L3 support access, training.
+**1. Resell.** Sell [Ænix Platform](/products/) (Public Cloud / ISP / Enterprise / IDP / AI/ML) with up to 40% margin via the [Partner Program](/partners/): deal protection, sales kit, technical pre-sales, L3 support access, training.
 
 **2. Co-deliver.** For partners who deliver the build, Cozystack is the framework and **Aenix is the engineering bench** behind your team — [white-label cloud](/services/white-label-cloud/) and platform builds where you own the client and we provide the deep-tech capacity.
 
@@ -92,7 +92,7 @@ Yes — registered opportunities are reserved to the partner; no channel conflic
 No. Resell only, or co-deliver with Aenix as your engineering bench — your choice per deal.
 
 **What do we sell, exactly?**
-Two editions — Provider and Enterprise — plus AI & GPU and Developer Self-Service modules, and services. See [Ænix Platform](/products/aenix-platform/).
+Two editions — Provider and Enterprise — plus AI & GPU and Developer Self-Service modules, and services. See [Ænix Platform](/products/).
 
 **How do we start?**
 [Become a partner](/partners/#apply) or book a call; we enable your sales team with the kit and pre-sales support.
@@ -116,7 +116,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 SEO/GEO:
 - canonical: https://aenix.io/for/head-of-alliances/
 - hreflang: en self/x-default, de → /de/fuer/leiter-allianzen/
-- partner-channel page; routes to /partners/, /products/aenix-platform/, white-label-cloud
+- partner-channel page; routes to /partners/, /products/, white-label-cloud
 - LinkedIn targeting: Head/VP/Director of Alliances, Partnerships, Channel, Business Development (SI/MSP/distributor)
 JSON-LD: BreadcrumbList; Service (Partner Program); FAQPage
 -->

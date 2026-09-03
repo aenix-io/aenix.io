@@ -7,8 +7,8 @@ related_pages:
   - /de/loesungen/cloud-repatriation/
   - /de/dienstleistungen/private-cloud-consulting/
   - /de/dienstleistungen/platform-readiness-assessment/
-  - /de/produkte/aenix-platform/public-cloud-edition/
-  - /de/produkte/aenix-platform/enterprise-edition/
+  - /de/produkte/public-cloud-platform/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
@@ -52,7 +52,7 @@ faq:
 
 Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), läuft an Core und Edge.
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/aenix-platform/public-cloud-edition/)** für Telcos, die kundenseitige souveräne Cloud-Produkte im Multi-Region-Maßstab launchen; **[Enterprise Edition](/de/produkte/aenix-platform/enterprise-edition/)** für NIS2-konforme interne Cloud- und Edge-Plattformen.
+> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Telcos, die kundenseitige souveräne Cloud-Produkte im Multi-Region-Maßstab launchen; **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für NIS2-konforme interne Cloud- und Edge-Plattformen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
