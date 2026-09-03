@@ -6214,6 +6214,53 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 .wb-cover__note-ic { display: inline-flex; flex: none; margin-top: 1px; color: var(--ws-violet); }
 .wb-cover__note-ic .ws-icon { width: 22px; height: 22px; }
 
+/* --- Three topologies (schematic cards above the cover grid) --- */
+.wb-topo {
+  list-style: none;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.wb-topo__item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.375rem 1.5rem 1.5rem;
+  border: 1px solid var(--ws-border);
+  border-radius: 13px;
+  background: linear-gradient(180deg, rgba(1, 165, 255, 0.05), var(--ws-panel));
+}
+.wb-topo__viz {
+  margin: 0 0 1.125rem;
+  padding: 0.625rem 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.18);
+}
+.wb-topo__viz svg { display: block; width: 100%; max-width: 320px; height: auto; margin: 0 auto; }
+.wb-topo__name {
+  margin: 0 0 0.5rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--aenix-text);
+}
+.wb-topo__desc { margin: 0 0 1.125rem; font-size: 0.9375rem; line-height: 1.55; color: var(--aenix-text-muted); }
+.wb-topo__specs { margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.wb-topo__spec { display: flex; align-items: baseline; gap: 0.75rem; }
+.wb-topo__spec dt {
+  flex: none;
+  width: 4.75rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ws-cyan);
+}
+.wb-topo__spec dd { margin: 0; font-size: 0.8125rem; line-height: 1.45; color: var(--aenix-text-muted); }
+.wb-topo__spec dd strong { color: var(--aenix-text); font-weight: 700; }
+
 /* --- Who should attend (company tiles + role pills) — centered --- */
 .wb-audience .ws-h2 { text-align: center; }
 .wb-audience .ws-lead { text-align: center; margin-left: auto; margin-right: auto; }
@@ -6319,10 +6366,21 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 /* --- Webinar responsive --- */
 @media (max-width: 960px) {
   .wb-cover__grid { grid-template-columns: 1fr; }
+  /* one card per row, but keep the schematic beside its text */
+  .wb-topo { grid-template-columns: minmax(0, 1fr); }
+  .wb-topo__item {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    column-gap: 1.75rem;
+    align-items: start;
+  }
+  .wb-topo__viz { grid-row: 1 / span 3; margin-bottom: 0; }
   .wb-audience__tiles { grid-template-columns: repeat(3, 1fr); }
   .webinar-landing .ws-speaker__grid { grid-template-columns: 240px 1fr; }
 }
 @media (max-width: 640px) {
+  .wb-topo__item { display: flex; flex-direction: column; }
+  .wb-topo__viz { grid-row: auto; margin-bottom: 1.125rem; }
   .wb-audience__tiles { grid-template-columns: repeat(2, 1fr); }
   .wb-factoid { grid-template-columns: 1fr; gap: 0.75rem; }
   .webinar-landing .ws-speaker__grid { grid-template-columns: 1fr; }
