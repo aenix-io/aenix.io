@@ -1,0 +1,25 @@
+# Служба экзамена на Cozystack — на той самой платформе, по которой выдаём сертификаты.
+# Перед применением замените tenant-aenix на свой namespace.
+---
+apiVersion: apps.cozystack.io/v1alpha1
+kind: Postgres
+metadata:
+  name: exam-db
+  namespace: tenant-aenix
+spec:
+  # Две копии, а не одна: журнал выдачи восстановить неоткуда. Без него нельзя ни
+  # отозвать сертификат, ни ответить на запрос об удалении данных, ни посчитать
+  # настоящий проходной балл по итогам беты.
+  replicas: 2
+  size: 10Gi
+  storageClass: replicated
+  resourcesPreset: t1.small
+  users:
+    exam:
+      password: ЗАМЕНИТЕ_ПАРОЛЬ
+  databases:
+    exam:
+      roles:
+        admin: [ exam ]
+  backup:
+    enabled: true

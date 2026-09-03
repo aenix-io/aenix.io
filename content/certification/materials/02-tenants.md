@@ -6,7 +6,6 @@ weight: 2
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/tenants/"
-page_type: "flag-page"
 ---
 
 Вторая по весу тема экзамена — и, пожалуй, самая полезная на практике. Если первый урок

@@ -5,7 +5,6 @@ eyebrow: "Воркшоп по миграции"
 layout: "cert-page"
 language: "ru"
 url: "/workshop/labs/"
-page_type: "flag-page"
 ---
 
 > **Где выполнять лабы.** Лабам нужна отдельная площадка помощнее, чем тенант миграционного

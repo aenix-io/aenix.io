@@ -5,7 +5,6 @@ eyebrow: "Подготовка к экзамену"
 layout: "cert-practice"
 language: "ru"
 url: "/certification/practice/"
-page_type: "flag-page"
 ---
 
 Вопросы взяты из модулей курса — из тех блоков самопроверки, что стоят в конце каждого

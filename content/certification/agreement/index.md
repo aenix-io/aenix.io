@@ -5,7 +5,6 @@ eyebrow: "Экзамен CCF · версия 1.0"
 layout: "cert-page"
 language: "ru"
 url: "/certification/agreement/"
-page_type: "flag-page"
 ---
 
 Документ короткий, и написан он не чтобы напугать. Экзамен бесплатный и без наблюдения —

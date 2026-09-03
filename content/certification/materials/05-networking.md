@@ -6,7 +6,6 @@ weight: 5
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/networking/"
-page_type: "flag-page"
 ---
 
 Сетевая часть выглядит сложной, пока не разложить её по задачам. Компонентов четыре, и у

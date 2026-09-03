@@ -19,8 +19,8 @@ build:
 <h2 id="materials-h">Launch or upgrade a public cloud your customers can buy</h2>
 <p class="wm-lead">Thank you for joining Andrei Kvapil's session on turning hosting, colocation, or data center infrastructure into commercial cloud services. The recording is available in closed access for two weeks, together with the supporting materials below.</p>
 <div class="wm-actions">
-<a class="cta-primary cta-accent" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Open video on YouTube</a>
-<a class="cta-secondary" href="#audit">Book free infrastructure audit</a>
+<a class="btn btn-primary" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Open video on YouTube</a>
+<a class="btn btn-secondary" href="#audit">Book free infrastructure audit</a>
 </div>
 </div>
 </section>
@@ -35,6 +35,7 @@ build:
 <div class="wm-video" aria-label="Webinar video player">
 <iframe src="https://www.youtube-nocookie.com/embed/eRFap6FzNj0" title="Turnkey Public Cloud webinar recording" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
+<p class="wm-video-link">Direct video link: <a href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">https://youtu.be/eRFap6FzNj0</a></p>
 </div>
 </section>
 
@@ -52,7 +53,7 @@ build:
 <a class="wm-card" href="/downloads/web0826/cozystack-hosters.pdf" target="_blank" rel="noopener">
 <span class="wm-card__type">PDF</span>
 <h3>Cozystack for hosters</h3>
-<p>One-page overview for hosting providers evaluating Cozystack and the Ænix provider stack.</p>
+<p>One-page overview for hosting providers evaluating Cozystack and the Aenix provider stack.</p>
 <span class="wm-card__link">Download PDF</span>
 </a>
 </div>
@@ -70,12 +71,12 @@ build:
 <li>Discussion of what can become managed Kubernetes, databases, S3-compatible storage, GPU, and VM services.</li>
 <li>A practical next-step plan for launch, migration, or modernization.</li>
 </ul>
-<a class="cta-primary cta-accent cta-lg" href="https://zcal.co/t/aenix/60mindemo" target="_blank" rel="noopener">Book a meeting with Andrei</a>
+<a class="btn btn-primary btn-lg" href="https://zcal.co/t/aenix/60mindemo" target="_blank" rel="noopener">Book a meeting with Andrei</a>
 </div>
 <aside class="wm-speaker" aria-label="Speaker">
 {{< workshop-photo src="images/webinars/andrei-kvapil.png" alt="Andrei Kvapil" >}}
 <h3>Andrei Kvapil</h3>
-<p>Creator of Cozystack · Founder of Ænix</p>
+<p>Creator of Cozystack · Founder of Aenix</p>
 <p>Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure.</p>
 </aside>
 </div>

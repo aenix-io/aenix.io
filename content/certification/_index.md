@@ -5,7 +5,6 @@ eyebrow: "Программа сертификации · первая ступе
 layout: "cert-page"
 language: "ru"
 url: "/certification/"
-page_type: "flag-page"
 ---
 
 Сертификация подтверждает, что человек понимает, как устроен Cozystack и как в нём

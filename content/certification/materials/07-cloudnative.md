@@ -6,7 +6,6 @@ weight: 7
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/cloud-native/"
-page_type: "flag-page"
 ---
 
 Последний урок — про идеи, а не про компоненты. Они лежат в основании всего, о чём шла речь

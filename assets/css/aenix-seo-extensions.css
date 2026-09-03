@@ -6289,16 +6289,28 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   border: none;
   box-shadow: none;
 }
-.cm-embed { width: 100%; }
+.cm-embed {
+  width: 100%;
+  max-width: 812px;
+  margin: 0 auto;
+  padding: 22px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
 .cm-embed iframe {
   display: block !important;
   width: 100% !important;
   max-width: 768px;
   height: 1040px;
   margin: 0 auto;
-  border: 1px solid var(--ws-border);
-  border-radius: 8px;
+  border: 0;
+  border-radius: 10px;
   background: #fff;
+}
+@media (max-width: 640px) {
+  .cm-embed { padding: 12px; border-radius: 14px; }
 }
 
 /* --- Webinar responsive --- */

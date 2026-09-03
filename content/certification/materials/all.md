@@ -5,5 +5,4 @@ layout: "cert-all"
 weight: 99
 language: "ru"
 url: "/certification/materials/all/"
-page_type: "flag-page"
 ---

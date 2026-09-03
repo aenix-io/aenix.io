@@ -5,7 +5,6 @@ eyebrow: "Ænix Certification for Cozystack — Fundamentals · бета"
 layout: "cert-page"
 language: "ru"
 url: "/certification/exam/"
-page_type: "flag-page"
 ---
 
 Экзамен — 60 вопросов, 90 минут. Вход по логину и паролю: их выдаём лично, один человек — один аккаунт.

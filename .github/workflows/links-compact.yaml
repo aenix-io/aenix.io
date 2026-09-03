@@ -1,0 +1,59 @@
+name: Compact link patches
+
+# Housekeeping only. Hugo applies data/linkpatches/ at build time, so links are
+# already live — this just folds the accumulated patches back into
+# data/links.yaml so the directory does not grow without bound and the registry
+# stays readable as one file. Running late, or not at all, changes nothing about
+# what the site serves.
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: links-compact
+  cancel-in-progress: false
+
+jobs:
+  compact:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # A PAT, not GITHUB_TOKEN: a push made with GITHUB_TOKEN starts no
+          # further workflow, so the site would not rebuild from this commit.
+          token: ${{ secrets.LINKS_SYNC_TOKEN }}
+
+      - name: Compact
+        run: |
+          set -o pipefail
+          pip install --quiet pyyaml
+          python3 scripts/compact-links.py 2>&1 | tee compact.log
+
+      - name: Report
+        if: always()
+        run: |
+          {
+            echo '## Link patch compaction'
+            echo
+            echo '```'
+            cat compact.log 2>/dev/null || echo 'no output'
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit
+        run: |
+          git add -A data/links.yaml data/linkpatches
+          if git diff --cached --quiet; then
+            echo 'No patches to compact.'
+            exit 0
+          fi
+          git config user.name 'aenix-bot'
+          git config user.email 'info@aenix.io'
+          git commit --signoff --message 'chore(links): compact link patches into the registry'
+          git push

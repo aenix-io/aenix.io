@@ -56,51 +56,51 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/demo-app/docs/en/categories/"
+                href="/docs/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="kk"
-                href="/demo-app/docs/kz/categories/"
+                href="/docs/kz/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/demo-app/docs/en/categories/"
+                href="/docs/en/categories/"
                 />
   </url><url>
     <loc>/docs/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/demo-app/docs/en/tags/"
+                href="/docs/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="kk"
-                href="/demo-app/docs/kz/tags/"
+                href="/docs/kz/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/demo-app/docs/en/tags/"
+                href="/docs/en/tags/"
                 />
   </url><url>
     <loc>/docs/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/demo-app/docs/en/"
+                href="/docs/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="kk"
-                href="/demo-app/docs/kz/"
+                href="/docs/kz/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/demo-app/docs/en/"
+                href="/docs/en/"
                 />
   </url>
 </urlset>

@@ -80,20 +80,21 @@ cities:
     venue: "Almaty Hub, улица Зенкова, 24, 4 этаж"
     href: "https://forms.qosi.kz/s/cmqunqfix0039mw011sc3e8bn"
     external: true
-    note: "Регистрация — на форме организатора в Казахстане."
+    note: "Партнёр в Алматы — QOSI (Qazaq Open Source Initiative); регистрация — на его форме."
   - city: "Астана"
     country: "Казахстан"
     status: "confirmed"
     date: "24 августа 2026, 14:00–18:30"
-    venue: "Astana Hub, зал Franklin Herbert"
+    venue: "Astana Hub, пр. Мангилик Ел, 55/1, блок С3.5, зал Franklin Herbert"
     href: "#register"
+    note: "Партнёр в Астане — GoHost.kz."
 final_cta:
   heading: "Миграция с VMware на open source: практический воркшоп"
   text: "Участие бесплатное — при условии регистрации."
   button: "Зарегистрироваться"
   href: "#register"
 direct_answer: |
-  **Это бесплатный практический воркшоп для тех, кто работает с VMware и решает, что делать дальше. Он пройдёт в Ташкенте, Бишкеке, Алматы и Астане. За один день участники своими руками переносят настоящую виртуальную машину с работающего сервера VMware на Cozystack — открытую платформу виртуализации, которая развивается в фонде CNCF. Большая часть времени — практика в личном рабочем окружении: перенос машины, база данных, мониторинг, резервное копирование. Ведёт Тимур Тукаев — мейнтейнер Cozystack и сооснователь Aenix. После воркшопа у каждого участника остаются тестовая среда на 30 дней, чат с мейнтейнерами платформы, домашние лабораторные работы и возможность получить сертификат Cozystack Certified Fundamentals. Участие бесплатное при условии регистрации; количество мест ограничено.**
+  **Это бесплатный практический воркшоп для тех, кто работает с VMware и решает, что делать дальше. Он пройдёт в Ташкенте, Бишкеке, Алматы и Астане. За один день участники своими руками переносят настоящую виртуальную машину с работающего сервера VMware на Cozystack — открытую платформу виртуализации, которая развивается в фонде CNCF. Большая часть времени — практика в личном рабочем окружении: перенос машины, база данных, мониторинг, резервное копирование. Ведёт Тимур Тукаев — мейнтейнер Cozystack и сооснователь Aenix. После воркшопа у каждого участника остаются тестовая среда на 30 дней, чат с мейнтейнерами платформы, домашние лабораторные работы и возможность получить сертификат Aenix Certification for Cozystack — Fundamentals. Участие бесплатное при условии регистрации; количество мест ограничено.**
 
 quick_facts:
   - label: "Формат"
@@ -107,7 +108,7 @@ quick_facts:
   - label: "Для кого"
     value: "Администраторы VMware, системные администраторы, руководители инфраструктуры, технические директора, инженеры DevOps"
   - label: "После воркшопа"
-    value: "Тестовая среда на 30 дней, чат с мейнтейнерами Cozystack, домашние лабораторные работы и возможность получить сертификат Cozystack Certified Fundamentals"
+    value: "Тестовая среда на 30 дней, чат с мейнтейнерами Cozystack, домашние лабораторные работы и возможность получить сертификат Aenix Certification for Cozystack — Fundamentals"
   - label: "Ведущий"
     value: "Тимур Тукаев — мейнтейнер Cozystack, сооснователь Aenix"
 
@@ -125,7 +126,7 @@ faq:
   - q: "Что именно я сделаю своими руками?"
     a: "Перенесёте виртуальную машину с работающего сервера VMware, развернёте базу данных, опубликуете сервис в сеть, посмотрите, как устроены мониторинг и резервное копирование, — а в финале поднимете всю собранную инфраструктуру заново из одного файла."
   - q: "Что происходит после воркшопа?"
-    a: "Тестовая среда остаётся с вами ещё на 30 дней, вы получаете домашние лабораторные работы и доступ в чат, где на вопросы отвечают мейнтейнеры Cozystack. Выполнив лабораторные, можно получить сертификат Cozystack Certified Fundamentals — тоже бесплатно."
+    a: "Тестовая среда остаётся с вами ещё на 30 дней, вы получаете домашние лабораторные работы и доступ в чат, где на вопросы отвечают мейнтейнеры Cozystack. Выполнив лабораторные, можно получить сертификат Aenix Certification for Cozystack — Fundamentals — тоже бесплатно."
   - q: "У нас Oracle, SAP или Windows с особыми лицензиями. Это переедет?"
     a: "Возможно, нет — и мы скажем об этом прямо. Лицензионные ограничения некоторых вендоров — одна из тем честного разговора в программе. Приходите со своим самым сложным случаем и получите прямой ответ."
   - q: "Можно прийти с руководителем или коллегой?"
@@ -248,7 +249,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Ваша тестовая среда останется с вами ещё на 30 дней</strong> — для экспериментов и подготовки к сертификации.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Лабораторные работы для выполнения дома</strong> — с поддержкой мейнтейнеров Cozystack.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Чат, где на вопросы отвечают мейнтейнеры Cozystack.</strong></span></li>
-<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Возможность получить сертификат Cozystack Certified Fundamentals</strong> — бесплатно.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Возможность получить сертификат Aenix Certification for Cozystack — Fundamentals</strong> — бесплатно.</span></li>
 </ul>
 <div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Зарегистрироваться</a></div>
 </div>
@@ -260,9 +261,9 @@ faq:
 <span class="ws-cert__tag">образец</span>
 <span class="ws-cert__seal">{{< ws-icon name="cert" >}}</span>
 <span class="ws-cert__kicker">Certificate of completion</span>
-<span class="ws-cert__title">Cozystack Certified Fundamentals</span>
+<span class="ws-cert__title">Aenix Certification for Cozystack — Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">Cozystack · Ænix</span>
+<span class="ws-cert__by">Cozystack · Aenix</span>
 </div>
 </div>
 </div>
@@ -274,8 +275,8 @@ faq:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="ws-speaker-h">Ведущий</h2>
 <div class="ws-speaker__name">Тимур Тукаев</div>
-<div class="ws-speaker__role">Мейнтейнер Cozystack · сооснователь Ænix</div>
-<p class="ws-speaker__bio">Тимур — мейнтейнер открытой платформы Cozystack и сооснователь компании Ænix, которая её разрабатывает. Формат воркшопа — его: без маркетинговых слайдов, большая часть времени за терминалом, а слабые места платформы называются раньше сильных.</p>
+<div class="ws-speaker__role">Мейнтейнер Cozystack · сооснователь Aenix</div>
+<p class="ws-speaker__bio">Тимур — мейнтейнер открытой платформы Cozystack и сооснователь компании Aenix, которая её разрабатывает. Формат воркшопа — его: без маркетинговых слайдов, большая часть времени за терминалом, а слабые места платформы называются раньше сильных.</p>
 </div>
 </div>
 </section>
@@ -303,7 +304,7 @@ faq:
 
 <!-- TODO(legal/pipedrive): The RU registration form's consent text is
      configured inside Pipedrive, not in this repo, and currently shows the
-     English line "I agree to be contacted by Ænix about its services".
+     English line "I agree to be contacted by Aenix about its services".
      Update the consent copy to approved Russian wording inside the Pipedrive
      form (form id in layouts/shortcodes/pipedrive-form.html → $workshopFormRu).
      Do not hardcode consent wording here. -->

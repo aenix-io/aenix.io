@@ -4,5 +4,4 @@ description: "Откройте ссылку из сертификата — ст
 layout: "cert-verify"
 language: "ru"
 url: "/certification/verify/"
-page_type: "flag-page"
 ---

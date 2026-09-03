@@ -80,20 +80,21 @@ cities:
     venue: "Almaty Hub, Zenkov St. 24, 4th floor"
     href: "https://forms.qosi.kz/s/cmqunqfix0039mw011sc3e8bn"
     external: true
-    note: "Registration is on the organizer's form in Kazakhstan."
+    note: "Local partner in Almaty — QOSI, Qazaq Open Source Initiative; registration is on their form."
   - city: "Astana"
     country: "Kazakhstan"
     status: "confirmed"
     date: "24 Aug 2026, 14:00–18:30"
-    venue: "Astana Hub, Franklin Herbert hall"
+    venue: "Astana Hub, 55/1 Mangilik El Ave., Block C3.5, Franklin Herbert hall"
     href: "#register"
+    note: "Local partner in Astana — GoHost.kz."
 final_cta:
   heading: "Migrating off VMware to open source: a hands-on workshop"
   text: "Attendance is free — with registration."
   button: "Register"
   href: "#register"
 direct_answer: |
-  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. It takes place in Tashkent, Bishkek, Almaty, and Astana. In one day, participants migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform developed within the CNCF — with their own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. The workshop is led by Timur Tukaev, Cozystack maintainer and Aenix co-founder. Afterwards, every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Cozystack Certified Fundamentals certificate. Attendance is free with registration; seats are limited.**
+  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. It takes place in Tashkent, Bishkek, Almaty, and Astana. In one day, participants migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform developed within the CNCF — with their own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. The workshop is led by Timur Tukaev, Cozystack maintainer and Aenix co-founder. Afterwards, every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Aenix Certification for Cozystack — Fundamentals certificate. Attendance is free with registration; seats are limited.**
 
 quick_facts:
   - label: "Format"
@@ -107,7 +108,7 @@ quick_facts:
   - label: "Who it's for"
     value: "VMware administrators, sysadmins, infrastructure leads, technology executives, DevOps engineers"
   - label: "After the workshop"
-    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the opportunity to earn the Cozystack Certified Fundamentals certificate"
+    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the opportunity to earn the Aenix Certification for Cozystack — Fundamentals certificate"
   - label: "Host"
     value: "Timur Tukaev — Cozystack maintainer, Aenix co-founder"
 
@@ -125,7 +126,7 @@ faq:
   - q: "What exactly will I do with my own hands?"
     a: "Move a virtual machine off a running VMware server, deploy a database, publish a service to the network, see how monitoring and backups work — and, at the end, bring the whole setup back up from a single file."
   - q: "What happens after the workshop?"
-    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. Completing the labs earns you the Cozystack Certified Fundamentals certificate — also free."
+    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. Completing the labs earns you the Aenix Certification for Cozystack — Fundamentals certificate — also free."
   - q: "We run Oracle, SAP, or specially licensed Windows. Will it migrate?"
     a: "Maybe not — and we will say so directly. Vendor licensing restrictions are one of the topics of the honest-limitations conversation. Bring your hardest case and get a straight answer."
   - q: "Can I bring my manager or a colleague?"
@@ -248,7 +249,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Your test environment stays with you for another 30 days</strong> — for experiments and certification prep.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Take-home lab exercises</strong> — with support from the Cozystack maintainers.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>A chat where Cozystack maintainers answer your questions.</strong></span></li>
-<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The opportunity to earn the Cozystack Certified Fundamentals certificate</strong> — free.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The opportunity to earn the Aenix Certification for Cozystack — Fundamentals certificate</strong> — free.</span></li>
 </ul>
 <div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Register</a></div>
 </div>
@@ -260,9 +261,9 @@ faq:
 <span class="ws-cert__tag">sample</span>
 <span class="ws-cert__seal">{{< ws-icon name="cert" >}}</span>
 <span class="ws-cert__kicker">Certificate of completion</span>
-<span class="ws-cert__title">Cozystack Certified Fundamentals</span>
+<span class="ws-cert__title">Aenix Certification for Cozystack — Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">Cozystack · Ænix</span>
+<span class="ws-cert__by">Cozystack · Aenix</span>
 </div>
 </div>
 </div>
@@ -274,8 +275,8 @@ faq:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="ws-speaker-h">Your host</h2>
 <div class="ws-speaker__name">Timur Tukaev</div>
-<div class="ws-speaker__role">Cozystack maintainer · Ænix co-founder</div>
-<p class="ws-speaker__bio">Timur is a maintainer of the open Cozystack platform and a co-founder of Ænix, the company behind it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
+<div class="ws-speaker__role">Cozystack maintainer · Aenix co-founder</div>
+<p class="ws-speaker__bio">Timur is a maintainer of the open Cozystack platform and a co-founder of Aenix, the company behind it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
 </div>
 </div>
 </section>

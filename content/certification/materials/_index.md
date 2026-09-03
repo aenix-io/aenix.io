@@ -5,7 +5,6 @@ eyebrow: "Ænix Certification for Cozystack · подготовка"
 layout: "cert-materials"
 language: "ru"
 url: "/certification/materials/"
-page_type: "flag-page"
 ---
 
 Это не учебник по Kubernetes и не пересказ документации. Это семь уроков ровно по тем

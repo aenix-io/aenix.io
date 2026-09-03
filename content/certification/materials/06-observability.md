@@ -6,7 +6,6 @@ weight: 6
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/observability/"
-page_type: "flag-page"
 ---
 
 Две темы в одном уроке, потому что обе про одно: что делать, когда что-то пошло не так, —

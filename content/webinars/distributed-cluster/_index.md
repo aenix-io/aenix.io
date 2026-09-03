@@ -1,6 +1,6 @@
 ---
 title: "Webinar: the cluster that survives a datacenter outage"
-description: "A free live webinar with Andrei Kvapil, creator of Cozystack: build a Kubernetes cluster on your own hardware that survives losing a datacenter."
+description: "A free live webinar with Andrei Kvapil, creator of Cozystack: build a distributed Kubernetes cluster on your own hardware that survives losing a whole datacenter — metro-stretch, two-DC + witness, storage, GPU and live migration."
 language: "en"
 layout: "event-landing"
 bodyClass: "webinar-landing"
@@ -148,7 +148,7 @@ final_cta:
 <span class="wb-cover__num">01</span>
 <span class="wb-cover__icon">{{< ws-icon name="shield" >}}</span>
 <div class="cs-stat__num" style="font-size:1.9rem;margin:.2rem 0 .1rem">3 datacenters</div>
-<div class="cs-stat__label" style="margin-bottom:1rem">Switzerland · synchronous replication · paying tenants in production</div>
+<div class="cs-stat__label" style="margin-bottom:1rem">Switzerland · synchronous replication · 60+ tenants in production</div>
 <p class="wb-cover__text"><strong>A Swiss cloud provider</strong> runs one Cozystack cluster stretched across three datacenters, with topology-aware placement and synchronous storage. Together we ran real DR drills — powering off a whole datacenter on purpose — and turned what broke into platform defaults.</p>
 </article>
 <article class="wb-cover__item">

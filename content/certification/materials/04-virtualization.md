@@ -6,7 +6,6 @@ weight: 4
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/virtualization/"
-page_type: "flag-page"
 ---
 
 Тема, на которой администратору VMware проще всего — и на которой он же чаще всего

@@ -190,6 +190,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  /* ---- Announcement bar ---- */
+  const ann = document.getElementById('announcement-bar');
+  if (ann && !ann.hidden) {
+    const annId = ann.dataset.annId || 'announcement';
+    const closeBtn = ann.querySelector('.announcement-bar__close');
+    const toggleEl = document.querySelector('.mobile-menu-toggle');
+    const BASE_TOP = 18; // matches .mobile-menu-toggle top in CSS
+
+    // Keep the fixed mobile hamburger clear of the bar while the bar is on screen.
+    const syncToggleOffset = () => {
+      if (!toggleEl) return;
+      const h = ann.hidden ? 0 : ann.getBoundingClientRect().height;
+      const visible = Math.max(0, h - window.scrollY);
+      toggleEl.style.top = (BASE_TOP + visible) + 'px';
+    };
+    syncToggleOffset();
+    window.addEventListener('scroll', syncToggleOffset, { passive: true });
+    window.addEventListener('resize', syncToggleOffset);
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        ann.hidden = true;
+        try { localStorage.setItem('aenix-ann-dismissed', annId); } catch (e) {}
+        syncToggleOffset();
+      });
+    }
+  }
+
   /* ---- Hero blueprint cloud ---- */
   const heroCloud = document.querySelector('.hero-cloud');
   const heroCloudSvg = heroCloud && heroCloud.querySelector('.hero-cloud-svg');
