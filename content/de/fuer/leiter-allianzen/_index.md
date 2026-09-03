@@ -17,7 +17,7 @@ related_pages:
 
 **Broadcom hat das VMware-Partnerprogramm umgebaut, und Ihre Kunden fragen, was als Nächstes kommt. Als Verantwortliche:r für Partnerschaften können Sie eine offene, souveräne Cloud-Linie hinzufügen, die Ihr Team in jeden VMware-Account co-selled — mit bis zu 40% Marge und Deal-Schutz. Als Produkt wiederverkaufen oder mit Aenix als Engineering-Team co-delivern.**
 
-> **Passt zu:** dem **[Aenix-Partnerprogramm](/de/partner/)** (bis 40% Marge, Deal-Schutz, Sales-Kit, L3-Zugang), **[Ænix Platform](/de/produkte/)** (fünf Editionen) und **[Cloud-Aufbau](/de/dienstleistungen/)**. Kern: Open-Source-**[Cozystack](https://cozystack.io)**.
+> **Passt zu:** dem **[Aenix-Partnerprogramm](/de/partner/)** (bis 40% Marge, Deal-Schutz, Sales-Kit, L3-Zugang), **[Ænix Platform](/de/produkte/)** (drei Plattformen) und **[Cloud-Aufbau](/de/dienstleistungen/)**. Kern: Open-Source-**[Cozystack](https://cozystack.io)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/partner/">Zum Partnerprogramm</a>
@@ -108,7 +108,7 @@ Kostenlos, ohne Vorbereitung. Wir ordnen Ihren Kundenstamm den Editionen zu, geh
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-allianzen/ ; hreflang de self, en → /for/head-of-alliances/.

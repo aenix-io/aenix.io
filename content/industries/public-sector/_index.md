@@ -33,7 +33,7 @@ faq:
   - q: "Does Aenix respond to public-sector RFI and RFP through official procurement portals?"
     a: "Yes. Aenix accepts RFI and RFP through standard government channels, including goszakup.gov.kz, mitwork.kz, zakup.sk.kz and the Unified Procurement Platform in Kazakhstan, and TED plus national e-procurement portals in EU member states. Responses cover company profile, references where permissions allow, technical compliance, and pricing."
   - q: "Can the platform run fully air-gapped for classified or sensitive data?"
-    a: "Yes. Cozystack supports air-gapped deployments for the most sensitive workloads, and the Ænix Platform Enterprise Edition adds strict customer-controlled encryption keys, so data classes that cannot leave the perimeter remain in jurisdiction at every layer."
+    a: "Yes. Cozystack supports air-gapped deployments for the most sensitive workloads, and the Ænix Private Cloud Platform adds strict customer-controlled encryption keys, so data classes that cannot leave the perimeter remain in jurisdiction at every layer."
   - q: "How does this help with NIS2 compliance?"
     a: "Public administration and quasi-public infrastructure operators in transport, energy, and water are commonly in scope as NIS2 essential entities. Aenix engagements include a regulator-gap workstream against NIS2 and sectoral requirements, and the platform is designed to be audit-ready for supervisor inspection."
   - q: "Is there proprietary lock-in?"
@@ -48,7 +48,7 @@ faq:
 
 Aenix builds platforms for public-sector and quasi-public organizations across the EU and Central Asia. Open-source foundation ([Cozystack](/products/cozystack/)), procurement-portal-ready, regulator-aligned.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for sovereign cloud with strict customer-controlled keys + air-gap option; **[Provider Edition](/products/public-cloud-platform/)** for large public-sector cloud product launches at hyperscaler-adjacent scale.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for sovereign cloud with strict customer-controlled keys + air-gap option; **[Public Cloud Platform](/products/public-cloud-platform/)** for large public-sector cloud product launches at hyperscaler-adjacent scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

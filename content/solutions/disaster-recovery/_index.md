@@ -58,7 +58,7 @@ faq:
 
 **Business continuity is not a line in a vendor contract — it is an outcome you have to be able to prove. Disaster recovery as a service (DRaaS) on a sovereign, self-operated platform gives you cross-data-centre synchronous replication, immutable backups, and failover that is tested rather than assumed. Aenix builds and operates these platforms on [Cozystack](/products/cozystack/), so your recovery-time and recovery-point objectives are architecture you own and evidence you can hand to a regulator.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for the regulated cloud foundation that DR sits on; **[DORA compliance](/solutions/dora-compliance/)** for the operational-resilience obligations DR helps you meet. Start with a **[Platform Readiness Assessment →](/services/platform-readiness-assessment/)**.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for the regulated cloud foundation that DR sits on; **[DORA compliance](/solutions/dora-compliance/)** for the operational-resilience obligations DR helps you meet. Start with a **[Platform Readiness Assessment →](/services/platform-readiness-assessment/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -152,4 +152,4 @@ The engagement runs as a **[Platform Readiness Assessment](/services/platform-re
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top. We build sovereign disaster-recovery and business-continuity platforms for regulated organizations across the EU and DACH.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build sovereign disaster-recovery and business-continuity platforms for regulated organizations across the EU and DACH.*

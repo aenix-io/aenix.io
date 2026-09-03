@@ -45,7 +45,7 @@ faq:
 
 **A 25-point checklist for organizations evaluating a VMware exit. Covers inventory, dependencies, networking, storage, multi-tenancy, AI/GPU, sovereignty, and operational readiness. Used by Aenix during 14-day Platform Readiness Assessments and offered free to teams in early evaluation.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers exiting VMware Cloud Director; **[Enterprise Edition](/products/private-cloud-platform/)** for regulated enterprises exiting VCF.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers exiting VMware Cloud Director; **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises exiting VCF.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

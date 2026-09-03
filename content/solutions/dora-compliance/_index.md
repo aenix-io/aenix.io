@@ -50,7 +50,7 @@ faq:
 
 Aenix runs a DORA-aligned platform readiness engagement for financial entities and the ICT third parties serving them.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — DORA-aligned by design (customer-controlled keys at every layer, audit-ready logging via VictoriaLogs, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness mechanics, supplier transparency to second hop). Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — DORA-aligned by design (customer-controlled keys at every layer, audit-ready logging via VictoriaLogs, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness mechanics, supplier transparency to second hop). Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

@@ -20,7 +20,7 @@ quick_facts:
   - label: "Regulatorik"
     value: "DORA (in Kraft seit Januar 2025), ICT-Drittanbieter-Konzentrationsrisiko, Datensouveränität"
   - label: "Passende Editionen"
-    value: "Ænix Platform Enterprise Edition als regulierte Foundation; AI & GPU für Fraud Detection und souveräne KI-Workloads"
+    value: "Ænix Private Cloud Platform als regulierte Foundation; AI Platform für Fraud Detection und souveräne KI-Workloads"
   - label: "Technik"
     value: "VMs und Container über eine Kubernetes-API (KubeVirt), Cilium-eBPF-Networking, LINSTOR/DRBD-Storage, Tenant-CRD-Mandantenfähigkeit"
 faq:
@@ -31,9 +31,9 @@ faq:
   - q: "Wie unterstützt die Plattform den VMware-Ausstieg nach der Broadcom-Übernahme?"
     a: "Cozystack ersetzt VMware-Virtualisierung durch KubeVirt, das VMs und Container auf derselben Kubernetes-API betreibt. Es gibt keine CPU- oder Core-basierte Lizenzierung — die Foundation ist Apache 2.0. Aenix begleitet den Migrationspfad als Service."
   - q: "Können sensible Finanzdaten für KI-Workloads souverän verarbeitet werden?"
-    a: "Ja. Die AI & GPU ist für souveräne KI-Workloads wie Schadenfall-KI und Fraud Detection ausgelegt. Die Plattform läuft in der eigenen Infrastruktur oder im souveränen Rechenzentrum, sodass sensible Finanzdaten unter eigener Kontrolle bleiben."
+    a: "Ja. Die AI Platform ist für souveräne KI-Workloads wie Schadenfall-KI und Fraud Detection ausgelegt. Die Plattform läuft in der eigenen Infrastruktur oder im souveränen Rechenzentrum, sodass sensible Finanzdaten unter eigener Kontrolle bleiben."
   - q: "Welche Ænix-Platform-Edition passt für regulierte Finanzdienstleister?"
-    a: "Die Enterprise Edition dient als regulierte Cloud-Foundation; die AI & GPU ergänzt sie für Fraud Detection und souveräne KI. Aenix kombiniert die produktisierte Ænix Platform mit Beratungs- und Migrationsservices."
+    a: "Die Private Cloud Platform dient als regulierte Cloud-Foundation; die AI Platform ergänzt sie für Fraud Detection und souveräne KI. Aenix kombiniert die produktisierte Ænix Platform mit Beratungs- und Migrationsservices."
   - q: "Was kostet die Ænix Platform?"
     a: "Die Preisstufen sind Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach individuellem Angebot. Die zugrunde liegende Cozystack-Foundation selbst ist Open Source unter Apache 2.0, ohne CPU- oder Core-basierte Lizenzierung."
 ---
@@ -44,7 +44,7 @@ faq:
 
 Aenix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), betreibt Produktions-Workloads unter einer auf DORA ausgerichteten Governance.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Foundation; **[AI & GPU](/de/produkte/ai-platform/)** für Schadenfall-KI / Fraud Detection / souveräne KI-Workloads. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Foundation; **[AI Platform](/de/produkte/ai-platform/)** für Schadenfall-KI / Fraud Detection / souveräne KI-Workloads. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

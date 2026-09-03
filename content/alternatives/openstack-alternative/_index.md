@@ -46,7 +46,7 @@ faq:
 
 Cozystack is the open-source alternative for organizations that want OpenStack's open-source-and-multi-tenant guarantees with a lighter operational footprint. Same-license (Apache 2.0), Kubernetes-native foundation, fewer moving parts.
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers and regional clouds modernizing from OpenStack; **[Provider Edition](/products/public-cloud-platform/)** for large operators consolidating OpenStack at scale.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers and regional clouds modernizing from OpenStack; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators consolidating OpenStack at scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

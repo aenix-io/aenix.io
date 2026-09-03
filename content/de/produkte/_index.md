@@ -33,15 +33,15 @@ aliases:
 
 | Edition | Für | Was unterscheidet |
 |---|---|---|
-| **Provider Edition** | Große Public Clouds, große Banken mit eigener Cloud, große Telcos | Multi-Hypervisor-Cloud-Control-Plane, Multi-Region, Drittanbieter-Integration |
-| **Provider Edition** | Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren | WHMCS-Integration, Billing-Modul + Templates, Tenant Lock/Suspension, Migration von VMware/OpenStack/Virtuozzo. Ab 1.250 USD/Monat |
-| **Enterprise Edition** | Regulierte Unternehmen (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | DORA / NIS2-Architektur, Multi-DC, hybrid souverän, Integration mit VMware/OpenNebula/OpenShift |
+| **Public Cloud Platform** | Große Public Clouds, große Banken mit eigener Cloud, große Telcos | Multi-Hypervisor-Cloud-Control-Plane, Multi-Region, Drittanbieter-Integration |
+| **Public Cloud Platform** | Kleine / mittlere Hosting-Anbieter, MSPs, regionale Clouds, Rechenzentren | WHMCS-Integration, Billing-Modul + Templates, Tenant Lock/Suspension, Migration von VMware/OpenStack/Virtuozzo. Ab 1.250 USD/Monat |
+| **Private Cloud Platform** | Regulierte Unternehmen (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | DORA / NIS2-Architektur, Multi-DC, hybrid souverän, Integration mit VMware/OpenNebula/OpenShift |
 | **Developer Self-Service** | Produkt- / SaaS-Organisationen mit starken Engineering-Teams | Internal Developer Platform Layer — GitLab, Argo CD Workflows, APIs |
-| **AI & GPU** | KI-lastige Organisationen, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen | KI-Plattform-Automatisierung out-of-the-box, fertige Blueprints, Modelle, DBs |
+| **AI Platform** | KI-lastige Organisationen, regulierte KI-Deployments, GPU-lastige Produkt-Unternehmen | KI-Plattform-Automatisierung out-of-the-box, fertige Blueprints, Modelle, DBs |
 
 Plus ein **Entry-Tier** — **Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware ohne kommerzielle Portal-/Billing-Schicht.
 
-**Engagement-Größe:** Provider Edition Entry ab 1.250 USD/Monat Support; Public Cloud / Enterprise / IDP / AI/ML Full Builds nach RFP.
+**Engagement-Größe:** Public Cloud Platform Entry ab 1.250 USD/Monat Support; Public Cloud / Enterprise / IDP / AI/ML Full Builds nach RFP.
 
 [Platform entdecken →](/de/produkte/)
 
@@ -96,11 +96,11 @@ Wenn Sie eine turnkey Cloud (Billing, Portale, Payments, Support, produktisierte
 
 ## Welches Produkt sollte ich zuerst ansehen?
 
-- **Public-Cloud-Betreiber / große Bank / großer Telco:** [Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)
-- **Hosting-Anbieter / MSP / regionale Cloud:** [Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)
-- **Regulierte Bank / Versicherung / öffentlicher Sektor:** [Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)
-- **Produkt- / SaaS-Team:** [the Developer Self-Service module of Ænix Platform](/de/produkte/private-cloud-platform/)
-- **KI-lastig / GPU-lastig:** [the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/)
+- **Public-Cloud-Betreiber / große Bank / großer Telco:** [Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)
+- **Hosting-Anbieter / MSP / regionale Cloud:** [Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)
+- **Regulierte Bank / Versicherung / öffentlicher Sektor:** [Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)
+- **Produkt- / SaaS-Team:** [the developer self-service layer of Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)
+- **KI-lastig / GPU-lastig:** [Ænix AI Platform](/de/produkte/ai-platform/)
 - **Engineer, der die Tech evaluiert:** [Cozystack](https://cozystack.io)
 - **Engineer, der den Stack lernen möchte:** [Kubernetes Deep Dive Kurs](/de/kubernetes-deep-dive/)
 

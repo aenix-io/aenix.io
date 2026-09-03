@@ -19,7 +19,7 @@ related_pages:
 
 **You own the AI/ML platform, and the constraints are stacking up: GPU cost and scarcity, data that can't leave the jurisdiction, and customers who won't accept a US model endpoint. Run training and inference on your own GPUs, multi-tenant, with no hyperscaler lock-in. Aenix delivers that as a turnkey AI platform, or builds it with you.**
 
-> **Pairs with:** **[Sovereign AI](/solutions/sovereign-ai/)** and **[the AI & GPU module of Ænix Platform](/products/ai-platform/)** for one-click GPU inference, or **[AI Platform Build](/services/ai-platform-build/)** to design it to your stack. Open core: **[Cozystack](/products/cozystack/)**.
+> **Pairs with:** **[Sovereign AI](/solutions/sovereign-ai/)** and **[Ænix AI Platform](/products/ai-platform/)** for one-click GPU inference, or **[AI Platform Build](/services/ai-platform-build/)** to design it to your stack. Open core: **[Cozystack](/products/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -51,7 +51,7 @@ Give data scientists and product teams self-service GPU — for training and for
 
 ## Two ways Aenix helps you
 
-**1. Run a turnkey AI platform.** [the AI & GPU module of Ænix Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with enterprise SLA.
+**1. Run a turnkey AI platform.** [Ænix AI Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with enterprise SLA.
 
 **2. Build your own, with our team.** Cozystack is the framework; **Aenix is your outsourced engineering team** for an [AI platform build](/services/ai-platform-build/) — GPU topology, scheduling, inference serving and [sovereign-AI](/solutions/sovereign-ai/) controls designed around your models and data.
 
@@ -90,7 +90,7 @@ No. Models and data stay on your GPUs in your jurisdiction; you choose open or s
 Multi-tenant scheduling with quotas and isolation, so teams self-serve without a dedicated cluster each.
 
 **Build or buy?**
-The AI & GPU for speed; the build-with engagement when GPU topology and serving need to fit your stack. The call scopes it.
+The AI Platform for speed; the build-with engagement when GPU topology and serving need to fit your stack. The call scopes it.
 
 **How does this relate to sovereign AI rules?**
 See [sovereign AI](/solutions/sovereign-ai/) — running on customer-controlled hardware is the structural answer to data-class and endpoint restrictions.
@@ -99,16 +99,16 @@ See [sovereign AI](/solutions/sovereign-ai/) — running on customer-controlled 
 
 ## Start with a 30-minute discovery call
 
-Free, no prep. We look at your GPU footprint and model/data constraints and tell you whether the AI & GPU or a build-with engagement fits.
+Free, no prep. We look at your GPU footprint and model/data constraints and tell you whether the AI Platform or a build-with engagement fits.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/products/ai-platform/">AI & GPU →</a>
+  <a class="cta-secondary" href="/products/ai-platform/">AI Platform →</a>
 </div>
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/for/head-of-ai-ml/ ; hreflang de → /de/fuer/leiter-ai-ml/, x-default EN.

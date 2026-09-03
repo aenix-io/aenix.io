@@ -146,7 +146,7 @@ Sie können Cozystack Open Source ohne Aenix nutzen; Aenix' kommerzielles Angebo
 
 Produktive Deployments in der EU, DACH und Zentralasien. Der Kundenstamm umfasst:
 
-- Service Provider, die mandantenfähige Cloud-Produkte betreiben (öffentlich: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy auf der Ænix Platform Provider Edition)
+- Service Provider, die mandantenfähige Cloud-Produkte betreiben (öffentlich: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy auf der Ænix Public Cloud Platform)
 - Banken und Versicherer unter DORA / sektoraler Regulierung (NDA bis Mitte 2027)
 - Telekommunikationsbetreiber mit Souveräne-Cloud-Produktstarts (NDA)
 - KI-/GPU-Betreiber mit nachhaltigen Inferenz-Workloads (NDA)
@@ -231,11 +231,11 @@ Einstiegs-Tier — **Pure Cozystack mit Ænix Support** — für Produkt-Teams, 
 - **[cozystack.io](https://cozystack.io)** — Installation, Dokumentation, Community
 - **[Cozystack-Architektur-Artikel](/blog/2026/05/cozystack-introduction-architecture/)**
 - **[Ænix Platform](/de/produkte/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack
-  - [Provider Edition](/de/produkte/public-cloud-platform/) — für Hosting-Anbieter
-  - [Enterprise Edition](/de/produkte/private-cloud-platform/) — für regulierte Unternehmen
-  - [Provider Edition](/de/produkte/public-cloud-platform/) — für große Betreiber
+  - [Public Cloud Platform](/de/produkte/public-cloud-platform/) — für Hosting-Anbieter
+  - [Private Cloud Platform](/de/produkte/private-cloud-platform/) — für regulierte Unternehmen
+  - [Public Cloud Platform](/de/produkte/public-cloud-platform/) — für große Betreiber
   - [Developer Self-Service](/de/produkte/private-cloud-platform/) — für Produkt-Engineering-Teams
-  - [AI & GPU](/de/produkte/ai-platform/) — für KI-lastige Organisationen
+  - [AI Platform](/de/produkte/ai-platform/) — für KI-lastige Organisationen
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Engagement-Methodik
 
 <!-- /BLOCK 8 -->

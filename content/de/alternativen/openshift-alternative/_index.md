@@ -21,7 +21,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Regulierte Unternehmen (Enterprise Edition) und Produkt-Engineering-Teams, die den OpenShift-Developer-Layer ersetzen (Developer Self-Service)"
+    value: "Regulierte Unternehmen (Private Cloud Platform) und Produkt-Engineering-Teams, die den OpenShift-Developer-Layer ersetzen (Developer Self-Service)"
   - label: "Kernfunktionen"
     value: "KubeVirt-Virtualisierung (VMs + Container auf einer Kubernetes-API), Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Souveränität"
@@ -36,9 +36,9 @@ faq:
   - q: "Wie unterscheidet sich das Lizenzmodell von OpenShift?"
     a: "OpenShift basiert auf einem Red-Hat-Subscription-Modell, dessen Kosten mit der Cluster-Größe disproportional skalieren. Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzgebühren. Aenix berechnet stattdessen produktisierte Service-Stufen für die Ænix Platform, nicht die Plattform-Nutzung selbst."
   - q: "Ist Cozystack für regulierte Unternehmen und Souveränitätsanforderungen geeignet?"
-    a: "Ja. Als Open-Source-First-Plattform ohne Abhängigkeit vom US-Vendor Red Hat/IBM adressiert Cozystack Souveränitäts-Anforderungen. Für regulierte Unternehmen bietet Aenix die Ænix Platform Enterprise Edition mit den dafür passenden Engineering-Services."
+    a: "Ja. Als Open-Source-First-Plattform ohne Abhängigkeit vom US-Vendor Red Hat/IBM adressiert Cozystack Souveränitäts-Anforderungen. Für regulierte Unternehmen bietet Aenix die Ænix Private Cloud Platform mit den dafür passenden Engineering-Services."
   - q: "Kann Cozystack den Developer-Experience-Layer von OpenShift ersetzen?"
-    a: "Die the Developer Self-Service module of Ænix Platform richtet sich an Produkt-Engineering-Teams, die den OpenShift-Developer-Experience-Layer durch eine Open-Source-First-Internal-Developer-Platform ersetzen möchten — auf Standard-Kubernetes und ohne proprietäres Vendor-Ökosystem."
+    a: "Die the developer self-service layer of Ænix Private Cloud Platform richtet sich an Produkt-Engineering-Teams, die den OpenShift-Developer-Experience-Layer durch eine Open-Source-First-Internal-Developer-Platform ersetzen möchten — auf Standard-Kubernetes und ohne proprietäres Vendor-Ökosystem."
   - q: "Wie viel kostet die Ænix Platform als OpenShift-Alternative?"
     a: "Die Ænix Platform wird in Service-Stufen angeboten: Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach individuellem Angebot. Die Software Cozystack selbst ist Apache-2.0-lizenziert und ohne Core-basierte Gebühren."
 ---
@@ -49,13 +49,13 @@ faq:
 <div class="diagram">
 <div class="diagram__node"><b>Red Hat OpenShift</b><div class="diagram__chips"><span>Red-Hat-Subscription-Modell</span><span>Red-Hat-/IBM-Ökosystem</span></div></div>
 <div class="diagram__conn">Migration</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform Enterprise Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>Apache 2.0</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Private Cloud Platform</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>Apache 2.0</span></div></div>
 <div class="diagram__conn">liefert</div>
 <div class="diagram__node"><b>Open-Source-First-Foundation</b><div class="diagram__chips"><span>Tenant-CRD-Mandantenfähigkeit</span><span>Souveränität</span></div></div>
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

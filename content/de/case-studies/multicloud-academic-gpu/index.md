@@ -97,4 +97,4 @@ GPUs auf der souveränen Cloud kosten rund **fünfmal weniger** als im vorherige
 
 *Diese Fallstudie wird in anonymisierter Form veröffentlicht (Tier-3-Evidenz): die Plattform wird über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einer aktiven Opportunity [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, verfügbar in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*

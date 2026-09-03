@@ -37,14 +37,14 @@ faq:
   - q: "Is Cozystack open source, and is there per-CPU licensing?"
     a: "Cozystack is Apache 2.0 licensed open source and a CNCF project (Sandbox since 2025-02-28). There is no per-CPU or per-core licensing. Aenix sells the productized Ænix Platform and services on top of the open-source stack."
   - q: "Which Ænix Platform edition fits a CloudStack migration?"
-    a: "Provider Edition suits hosting providers and regional clouds, while Provider Edition fits large operators. Both run the same Cozystack foundation, so the choice depends on scale and the operator's tenant and billing requirements."
+    a: "Public Cloud Platform suits hosting providers and regional clouds, while Public Cloud Platform fits large operators. Both run the same Cozystack foundation, so the choice depends on scale and the operator's tenant and billing requirements."
   - q: "How do I start a CloudStack migration with Aenix?"
     a: "Book a discovery call. For broader scoping, the Platform Readiness Assessment service covers engagement methodology, current-state analysis, and a migration plan before any production move begins."
 ---
 
 **Apache CloudStack remains established in some service-provider markets. For organizations modernizing to a Kubernetes-native foundation, Aenix runs CloudStack-to-Cozystack migrations.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers and regional clouds; **[Provider Edition](/products/public-cloud-platform/)** for large operators.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers and regional clouds; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

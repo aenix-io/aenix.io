@@ -32,7 +32,7 @@ faq:
   - q: "Wie unterstützt Aenix bei Datensouveränität?"
     a: "Aenix führt strukturierte Engagements durch, die eine Souveränitätsposition von der Behauptung in eine nachweisbare Architektur überführen. Die Ænix Platform ermöglicht kundenkontrollierte Verschlüsselungsschlüssel auf jeder Datenschicht — Primärspeicher, Replikate, Backups und Observability — und unterstützt eine Air-Gap-Option."
   - q: "Welche Edition der Ænix Platform passt zu Souveränitätsanforderungen?"
-    a: "Die Enterprise Edition eignet sich für regulierte Unternehmen, die souveräne Cloud intern konsumieren. Die Provider Edition richtet sich an Betreiber, die souveräne Cloud selbst als Produkt anbieten möchten."
+    a: "Die Private Cloud Platform eignet sich für regulierte Unternehmen, die souveräne Cloud intern konsumieren. Die Public Cloud Platform richtet sich an Betreiber, die souveräne Cloud selbst als Produkt anbieten möchten."
   - q: "Worauf baut die Ænix Platform technisch auf?"
     a: "Die Ænix Platform baut auf Cozystack auf, einem CNCF-Projekt unter Apache-2.0-Lizenz. Cozystack vereint VMs und Container über KubeVirt auf einer Kubernetes-API, nutzt Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRDs für Mandantenfähigkeit."
   - q: "Bedeutet Datensouveränität nur den Speicherort der Produktionsdaten?"
@@ -45,7 +45,7 @@ faq:
 
 Aenix führt ein strukturiertes Engagement für Organisationen durch, die eine Souveränitätsposition von der Behauptung zur nachweisbaren Architektur überführen müssen. Ergebnis: eine kontrollebenengenaue Karte, wo Ihre Daten heute tatsächlich liegen, wo die Lücken sind und wie Sovereignty-by-Design für Ihren Stack aussieht.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die souveräne Cloud intern konsumieren; **[Provider Edition](/de/produkte/public-cloud-platform/)** für Betreiber, die souveräne Cloud als Produkt anbieten. Kundenkontrollierte Schlüssel auf jeder Datenschicht (Primärspeicher, Replikate, Backups, Observability). Air-Gap-Option unterstützt.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die souveräne Cloud intern konsumieren; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Betreiber, die souveräne Cloud als Produkt anbieten. Kundenkontrollierte Schlüssel auf jeder Datenschicht (Primärspeicher, Replikate, Backups, Observability). Air-Gap-Option unterstützt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

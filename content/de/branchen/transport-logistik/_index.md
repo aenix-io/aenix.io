@@ -7,7 +7,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/transport-logistics/
 direct_answer: |
-  **Eine Cloud-Plattform für Transport und Logistik ist eine Infrastruktur, die Fracht-, Fleet- und Terminalbetreiber für NIS2-konforme, edge-fähige und KI-getriebene Workloads nutzen. Der Transport-Sektor fällt unter NIS2 Annex I als wesentliche Entität. Aenix liefert dies über die Ænix Platform Enterprise Edition auf Basis von Cozystack (CNCF-Projekt, Apache 2.0): KubeVirt führt VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD den Storage. Eine Multi-DC- und Edge-Architektur betreibt Workloads an Depots, Häfen und Terminals, mit Mandantenfähigkeit über das Tenant-CRD für Cross-Business-Unit-Trennung und einer Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.**
+  **Eine Cloud-Plattform für Transport und Logistik ist eine Infrastruktur, die Fracht-, Fleet- und Terminalbetreiber für NIS2-konforme, edge-fähige und KI-getriebene Workloads nutzen. Der Transport-Sektor fällt unter NIS2 Annex I als wesentliche Entität. Aenix liefert dies über die Ænix Private Cloud Platform auf Basis von Cozystack (CNCF-Projekt, Apache 2.0): KubeVirt führt VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD den Storage. Eine Multi-DC- und Edge-Architektur betreibt Workloads an Depots, Häfen und Terminals, mit Mandantenfähigkeit über das Tenant-CRD für Cross-Business-Unit-Trennung und einer Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.**
 quick_facts:
   - label: "Was es ist"
     value: "NIS2-konforme, edge-fähige und KI-fähige Cloud-Plattform für Transport- und Logistikbetreiber auf Basis von Cozystack"
@@ -22,25 +22,25 @@ quick_facts:
   - label: "Schlüsselfunktion"
     value: "Multi-DC- und Edge-Compute-Architektur an Depots, Häfen und Terminals; KI für Routing, Nachfrage-Forecasting und Predictive Maintenance"
   - label: "Produkt"
-    value: "Ænix Platform Enterprise Edition (produktisiertes Cozystack) plus Services von Aenix, dem Team hinter Cozystack"
+    value: "Ænix Private Cloud Platform (produktisiertes Cozystack) plus Services von Aenix, dem Team hinter Cozystack"
 faq:
   - q: "Fällt der Transport-Sektor unter NIS2?"
-    a: "Ja. Der Transport-Sektor (Luft, Schiene, Wasser, Straße) ist unter NIS2 Annex I als wesentliche Entität im Geltungsbereich. Betreiber müssen NIS2-Compliance sowohl für Cloud-Infrastruktur als auch für OT-Systeme nachweisen. Die Ænix Platform Enterprise Edition unterstützt diese Anforderungen über eine souveräne, selbstbetriebene Architektur."
+    a: "Ja. Der Transport-Sektor (Luft, Schiene, Wasser, Straße) ist unter NIS2 Annex I als wesentliche Entität im Geltungsbereich. Betreiber müssen NIS2-Compliance sowohl für Cloud-Infrastruktur als auch für OT-Systeme nachweisen. Die Ænix Private Cloud Platform unterstützt diese Anforderungen über eine souveräne, selbstbetriebene Architektur."
   - q: "Wie unterstützt die Plattform Edge-Compute an Depots, Häfen und Terminals?"
-    a: "Die Ænix Platform Enterprise Edition nutzt eine Multi-DC- und Edge-Architektur auf Basis von Cozystack. Workloads laufen verteilt an Depots, Häfen und Terminals über eine einzige Kubernetes-API, wobei KubeVirt VMs und Container gemeinsam orchestriert und Cilium (eBPF) das Networking über die Standorte hinweg übernimmt."
+    a: "Die Ænix Private Cloud Platform nutzt eine Multi-DC- und Edge-Architektur auf Basis von Cozystack. Workloads laufen verteilt an Depots, Häfen und Terminals über eine einzige Kubernetes-API, wobei KubeVirt VMs und Container gemeinsam orchestriert und Cilium (eBPF) das Networking über die Standorte hinweg übernimmt."
   - q: "Welche KI-Anwendungsfälle deckt die Plattform für Logistik ab?"
     a: "Die Plattform ist für KI-getriebene Workloads ausgelegt: Routenoptimierung, Nachfrage-Forecasting und Predictive Maintenance für Fahrzeugflotten. Da sie auf Kubernetes basiert, lassen sich GPU-Workloads und ML-Pipelines neben bestehenden VMs und Containern auf derselben Infrastruktur betreiben."
   - q: "Wie wird Datensouveränität für grenzüberschreitende Logistikdaten gewährleistet?"
-    a: "Cozystack wird selbst betrieben und ist Apache-2.0-lizenziert, ohne Bindung an einen Hyperscaler. Die Ænix Platform Enterprise Edition bietet eine Souveräne-Cloud-Option, sodass grenzüberschreitende Logistikdaten in kontrollierten Regionen und unter eigener Hoheit verbleiben."
+    a: "Cozystack wird selbst betrieben und ist Apache-2.0-lizenziert, ohne Bindung an einen Hyperscaler. Die Ænix Private Cloud Platform bietet eine Souveräne-Cloud-Option, sodass grenzüberschreitende Logistikdaten in kontrollierten Regionen und unter eigener Hoheit verbleiben."
   - q: "Wie trennt die Plattform mehrere Business Units?"
     a: "Cozystack stellt Mandantenfähigkeit über das Tenant-CRD bereit. Damit lassen sich verschiedene Business Units, Tochtergesellschaften oder Frachtsparten isoliert auf gemeinsamer Infrastruktur betreiben, jeweils mit eigenen Ressourcengrenzen und Zugriffsregeln."
   - q: "Was kostet die Ænix Platform?"
-    a: "Die Preisstufen sind: Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $/Monat, Plus 5.500 $/Monat und Enterprise mit individueller Preisgestaltung. Für Transport- und Logistik-Szenarien mit Multi-DC- und Edge-Architektur ist in der Regel die Enterprise Edition relevant."
+    a: "Die Preisstufen sind: Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $/Monat, Plus 5.500 $/Monat und Enterprise mit individueller Preisgestaltung. Für Transport- und Logistik-Szenarien mit Multi-DC- und Edge-Architektur ist in der Regel die Private Cloud Platform relevant."
 ---
 
 **Transport- und Logistikbetreiber stehen 2026 vor: NIS2-Klassifikation als wesentliche Entität (der Transportsektor ist im Geltungsbereich unter Annex I), KI-getriebener Optimierung (Routen, Nachfrage, Predictive Maintenance), Edge-Compute-Anforderungen (Fahrzeuge, Depots, Häfen, Terminals) und zunehmendem Datensouveränitäts-Druck für grenzüberschreitende Logistikdaten. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, an regionalen Standorten und an der Edge läuft — unter einem Operations-Modell.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — Multi-DC- + Edge-Architektur, NIS2-Compliance, Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Multi-DC- + Edge-Architektur, NIS2-Compliance, Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

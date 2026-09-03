@@ -145,4 +145,4 @@ Der größte Teil solcher Migrationen besteht darin, Annahmen wie diese zu finde
 
 *Diese Case Study erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Aenix-Vertrieb](/de/kontakt/).*
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in zwei Editions — Provider und Enterprise — mit den Modulen AI & GPU und Developer Self-Service.*
+*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating erwartet im Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in zwei Editions — Provider und Enterprise — mit den Modulen AI Platform und Developer Self-Service.*

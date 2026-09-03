@@ -10,7 +10,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The DORA Compliance Cloud Architecture Checklist is a free 35-point assessment that financial entities and ICT third-party providers use to evaluate whether their cloud infrastructure meets the EU Digital Operational Resilience Act (Regulation EU 2022/2554). It maps across five sections — workload portability and exit-readiness, concentration risk, operational resilience, sovereignty and supervisory access, and third-party risk and contracting — plus Article 21 risk management and Article 23 incident reporting. Aenix uses it during DORA-aligned readiness engagements. It pairs with Ænix Platform Enterprise Edition, built on Cozystack (CNCF Sandbox project, Apache 2.0), which delivers customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy aligned with ICT risk classification, and tested exit-readiness.**
+  **The DORA Compliance Cloud Architecture Checklist is a free 35-point assessment that financial entities and ICT third-party providers use to evaluate whether their cloud infrastructure meets the EU Digital Operational Resilience Act (Regulation EU 2022/2554). It maps across five sections — workload portability and exit-readiness, concentration risk, operational resilience, sovereignty and supervisory access, and third-party risk and contracting — plus Article 21 risk management and Article 23 incident reporting. Aenix uses it during DORA-aligned readiness engagements. It pairs with Ænix Private Cloud Platform, built on Cozystack (CNCF Sandbox project, Apache 2.0), which delivers customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy aligned with ICT risk classification, and tested exit-readiness.**
 
 quick_facts:
   - label: "What it is"
@@ -24,7 +24,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
   - label: "Pairs with"
-    value: "Ænix Platform Enterprise Edition — DORA-aligned by design (customer-controlled keys, audit-ready logging, tested exit-readiness)"
+    value: "Ænix Private Cloud Platform — DORA-aligned by design (customer-controlled keys, audit-ready logging, tested exit-readiness)"
 
 faq:
   - q: "What is DORA and who must comply?"
@@ -34,7 +34,7 @@ faq:
   - q: "Is the checklist free to download?"
     a: "Yes. The checklist is a free PDF lead magnet. You request it through the form on this page and receive a download link. Aenix also uses the same checklist during paid DORA-aligned readiness engagements."
   - q: "How does Ænix Platform help with DORA compliance?"
-    a: "Ænix Platform Enterprise Edition is built on Cozystack and is DORA-aligned by design: customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy mapped to ICT risk classification, supplier transparency, and tested exit-readiness to reduce concentration and lock-in risk."
+    a: "Ænix Private Cloud Platform is built on Cozystack and is DORA-aligned by design: customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy mapped to ICT risk classification, supplier transparency, and tested exit-readiness to reduce concentration and lock-in risk."
   - q: "Does the checklist replace a formal DORA audit?"
     a: "No. It is a self-assessment working surface to evaluate your current cloud architecture and prepare for supervisor dialog. For a full engagement, see the DORA compliance services page on aenix.io."
   - q: "Is Cozystack open source and what is its licensing model?"
@@ -43,7 +43,7 @@ faq:
 
 **A 35-point checklist for financial entities and ICT third-party providers evaluating DORA compliance posture for their cloud infrastructure. Covers Article 21 risk management, Article 23 incident reporting, Article 28 supplier risk, encryption, audit-readiness. Used by Aenix during DORA-aligned readiness engagements.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — DORA-aligned by design (customer-controlled keys, audit-ready logging, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness, supplier transparency).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — DORA-aligned by design (customer-controlled keys, audit-ready logging, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness, supplier transparency).
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

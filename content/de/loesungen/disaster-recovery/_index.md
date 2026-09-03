@@ -58,7 +58,7 @@ faq:
 
 **Geschäftskontinuität ist keine Zeile in einem Anbietervertrag — sie ist ein Ergebnis, das Sie beweisen können müssen. Disaster Recovery as a Service (DRaaS) auf einer souveränen, selbst betriebenen Plattform liefert Ihnen DC-übergreifende synchrone Replikation, unveränderliche Backups und Failover, das getestet statt angenommen ist. Aenix baut und betreibt diese Plattformen auf [Cozystack](/de/produkte/cozystack/), sodass Ihre Recovery-Time- und Recovery-Point-Objectives eine Architektur sind, die Sie besitzen, und Nachweise, die Sie einem Regulator übergeben können.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Basis, auf der DR aufsetzt; **[DORA-Compliance](/de/loesungen/dora-compliance/)** für die Betriebsresilienz-Pflichten, die DR erfüllen hilft. Starten Sie mit einem **[Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)**.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als regulierte Cloud-Basis, auf der DR aufsetzt; **[DORA-Compliance](/de/loesungen/dora-compliance/)** für die Betriebsresilienz-Pflichten, die DR erfüllen hilft. Starten Sie mit einem **[Platform Readiness Assessment →](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -150,4 +150,4 @@ Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, verfügbar in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML. Wir bauen souveräne Disaster-Recovery- und Business-Continuity-Plattformen für regulierte Organisationen in der EU und DACH.*
+*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen souveräne Disaster-Recovery- und Business-Continuity-Plattformen für regulierte Organisationen in der EU und DACH.*

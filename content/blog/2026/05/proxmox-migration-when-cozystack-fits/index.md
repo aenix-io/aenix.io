@@ -40,7 +40,7 @@ quiz:
         - { text: "Stable base under ~200 customers, mostly-VM workloads", correct: true }
         - { text: "When customers demand managed PostgreSQL as a service", correct: false }
         - { text: "When the operator needs multi-DC active/active topology", correct: false }
-      explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — Cozystack Provider Edition is over-engineered for that scope. Managed services and multi-DC active/active are pressures that justify migration."
+      explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — Cozystack Public Cloud Platform is over-engineered for that scope. Managed services and multi-DC active/active are pressures that justify migration."
 ---
 
 **Long-form companion to the [Proxmox migration hub](/migration/proxmox/). For service providers, MSPs, and growing enterprises whose Proxmox VE deployment is hitting multi-tenancy, service-catalog, or scale ceilings — what a Proxmox-to-Cozystack migration looks like, and when staying on Proxmox is still the right call.**
@@ -96,7 +96,7 @@ external systems.
 ### 3. WHMCS or similar customer-management integration
 
 Proxmox has WHMCS integration, but the service catalog beyond VMs is
-manual integration work. Cozystack Provider Edition ships with WHMCS
+manual integration work. Cozystack Public Cloud Platform ships with WHMCS
 integration for the full service catalog.
 
 ### 4. Multi-DC active/active
@@ -156,7 +156,7 @@ count, OS mix, LXC usage, storage tiers, network topology, backup
 patterns, WHMCS / customer-management integration.
 
 Honest TCO comparison: current Proxmox + commercial subscription +
-operational team versus Cozystack Provider Edition + hardware refresh +
+operational team versus Cozystack Public Cloud Platform + hardware refresh +
 Aenix support tier. For operators under ~300 customers, this often
 shows Proxmox staying competitive; above ~500, Cozystack typically
 wins on service-catalog and operational depth.
@@ -322,7 +322,7 @@ Poor fit:
   alternative-focused commercial landing
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   industry-specific positioning
-- **[Provider Edition economics for hosting providers](/blog/2026/05/isp-edition-economics-hosting-providers/)** —
+- **[Public Cloud Platform economics for hosting providers](/blog/2026/05/isp-edition-economics-hosting-providers/)** —
   unit-economics walkthrough
 - **[Hosting provider platform modernization](/blog/2026/05/hosting-provider-platform-modernization/)** —
   modernisation pattern

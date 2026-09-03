@@ -37,7 +37,7 @@ related_pages:
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO: section hub for /for/. canonical https://aenix.io/for/. hreflang de → /de/fuer/.

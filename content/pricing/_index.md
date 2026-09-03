@@ -23,7 +23,7 @@ language: "en"
 
 Plus engagement add-ons (Platform Readiness Assessment, Pilot, Full Build, Managed Operations) scoped separately.
 
-**Which side you land on:** Provider Edition and Pure Cozystack with Ænix Support are productized — the price list below is the price. Public Cloud, Enterprise, IDP and AI & GPUs are programmes, not SKUs: they always include an assessment, a migration plan and an operating model, so they are quoted per RFP after scoping.
+**Which side you land on:** Public Cloud Platform and Pure Cozystack with Ænix Support are productized — the price list below is the price. Public Cloud, Enterprise, IDP and AI Platforms are programmes, not SKUs: they always include an assessment, a migration plan and an operating model, so they are quoted per RFP after scoping.
 
 ---
 
@@ -35,15 +35,15 @@ Render as 5-card grid (or carousel on mobile). Each card: edition icon, name, au
 
 | Edition | For | How it is priced |
 |---|---|---|
-| **Provider Edition** | Hosting providers, MSPs, regional clouds and data centres selling cloud to customers | Productized — published price list, from $1,250 / month per 10 nodes |
-| **Provider Edition, operator scale** | Telcos, national operators, banks and large public clouds running a commercial cloud | Multi-year programme, quoted per RFP |
-| **Enterprise Edition** | Regulated enterprises running cloud for their own users (banks, insurance, public administration, telco, healthcare) | Multi-year programme, quoted per RFP |
+| **Public Cloud Platform** | Hosting providers, MSPs, regional clouds and data centres selling cloud to customers | Productized — published price list, from $1,250 / month per 10 nodes |
+| **Public Cloud Platform, operator scale** | Telcos, national operators, banks and large public clouds running a commercial cloud | Multi-year programme, quoted per RFP |
+| **Private Cloud Platform** | Regulated enterprises running cloud for their own users (banks, insurance, public administration, telco, healthcare) | Multi-year programme, quoted per RFP |
 
 Two modules extend either edition and are scoped with the engagement:
 
 | Module | What it adds |
 |---|---|
-| **AI & GPU** | Multi-tenant GPU scheduling, fractioning and MIG, model serving, vector databases, GPU sizing |
+| **AI Platform** | Multi-tenant GPU scheduling, fractioning and MIG, model serving, vector databases, GPU sizing |
 | **Developer Self-Service** | Golden paths, GitLab and Argo CD automation, self-service APIs and environment wizards |
 
 Plus an **entry tier** — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
@@ -54,7 +54,7 @@ Plus an **entry tier** — **Pure Cozystack with Ænix Support** — for product
 
 ## Step 2 — Pick a Support Tier {#support}
 
-This is the published price list, and it is the whole of it: it applies to Provider Edition and to Pure Cozystack with Ænix Support. Pricing is per 10 physical nodes / month, in USD; annual contracts take 20% off. Toggle annual and monthly, and scroll the table for the full feature-by-feature comparison — SLA, enterprise features, PoC, training, security, consulting, procurement terms and team engagement.
+This is the published price list, and it is the whole of it: it applies to Public Cloud Platform and to Pure Cozystack with Ænix Support. Pricing is per 10 physical nodes / month, in USD; annual contracts take 20% off. Toggle annual and monthly, and scroll the table for the full feature-by-feature comparison — SLA, enterprise features, PoC, training, security, consulting, procurement terms and team engagement.
 
 {{< pricing-table >}}
 
@@ -76,7 +76,7 @@ Notes on the table: incidents related to installation support do not count towar
 
 ### Full Edition build
 
-9-18 months for Public Cloud / Enterprise / IDP / AI/ML deployments. Weeks-to-live for Provider Edition with productized installer. Quoted per RFP; the drivers are estate size, migration volume, regulatory scope and how much of the operating model you want us to run.
+9-18 months for Public Cloud / Enterprise / IDP / AI/ML deployments. Weeks-to-live for Public Cloud Platform with productized installer. Quoted per RFP; the drivers are estate size, migration volume, regulatory scope and how much of the operating model you want us to run.
 
 ### Managed operations
 
@@ -131,7 +131,7 @@ Edition determines the feature bundle (which Ænix Platform you buy — ISP, Ent
 
 ### What's the cheapest way to start with Ænix Platform?
 
-Provider Edition + Basic support tier, $1,250/month annual (10 nodes). Includes WHMCS integration, billing system, backup system, knowledge-base PoC support. Suitable for small hosting providers and startups validating the platform.
+Public Cloud Platform + Basic support tier, $1,250/month annual (10 nodes). Includes WHMCS integration, billing system, backup system, knowledge-base PoC support. Suitable for small hosting providers and startups validating the platform.
 
 ### What's included in the Enterprise tier (per RFP)?
 
@@ -151,7 +151,7 @@ The course is per-seat priced and separate from Ænix Platform engagements. Plus
 
 ### What's the typical procurement timeline?
 
-Discovery call: same week. Platform Readiness Assessment: contracted in 2-4 weeks, executed over 5-10 days. Pilot: typically signed 4-8 weeks after assessment. Full Public Cloud / Enterprise build: 8-16 weeks signing process (legal review, procurement). Provider Edition support tier: weeks (smaller commercial scope).
+Discovery call: same week. Platform Readiness Assessment: contracted in 2-4 weeks, executed over 5-10 days. Pilot: typically signed 4-8 weeks after assessment. Full Public Cloud / Enterprise build: 8-16 weeks signing process (legal review, procurement). Public Cloud Platform support tier: weeks (smaller commercial scope).
 
 ### Do you offer reseller / partner pricing?
 

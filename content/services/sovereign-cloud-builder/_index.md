@@ -41,14 +41,14 @@ faq:
   - q: "Which sovereignty frameworks and procurement channels are supported?"
     a: "Specific requirements such as BSI C5, SecNumCloud, and EUCS are addressed during discovery. Aenix accepts RFI/RFP through EU TED and national e-procurement portals, and through Kazakhstan platforms including goszakup.gov.kz, mitwork.kz, zakup.sk.kz, and the Единая платформа закупок; other jurisdictions are handled per case."
   - q: "What is the technical foundation of the platform?"
-    a: "The product is built on Cozystack, which runs virtual machines via KubeVirt and containers on a single Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. The Enterprise Edition adds strict customer-controlled-keys and air-gap support for the most sensitive workloads."
+    a: "The product is built on Cozystack, which runs virtual machines via KubeVirt and containers on a single Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant CRD multi-tenancy. The Private Cloud Platform adds strict customer-controlled-keys and air-gap support for the most sensitive workloads."
 ---
 
 **Sovereign cloud is a procurement-mandated reality in 2026 across EU member states, Kazakhstan, and several APAC jurisdictions. Building one means designing for substantive sovereignty — not just marketing claims — including encryption-key custody, supplier-chain transparency, audit-readiness, and regulator-aligned operational model.**
 
 Aenix builds sovereign cloud products on Cozystack for governments, quasi-public entities, and regional operators serving sovereignty-mandated markets.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for sovereign clouds with strict customer-controlled-keys + air-gap support; **[Provider Edition](/products/public-cloud-platform/)** for large sovereign-cloud product launches at hyperscaler-adjacent scale.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for sovereign clouds with strict customer-controlled-keys + air-gap support; **[Public Cloud Platform](/products/public-cloud-platform/)** for large sovereign-cloud product launches at hyperscaler-adjacent scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

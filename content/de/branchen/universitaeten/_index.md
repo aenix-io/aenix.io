@@ -35,7 +35,7 @@ faq:
   - q: "Wie werden Departments, Labore und Studierenden-Kohorten voneinander isoliert?"
     a: "Über das Tenant CRD von Cozystack. Jedes Department, Labor oder jede Studierenden-Kohorte erhält einen isolierten Mandanten mit eigenen Ressourcen-Grenzen auf gemeinsamer Infrastruktur. So lassen sich Forschungsgruppen sauber trennen, ohne separate Cluster pro Gruppe zu betreiben."
   - q: "Eignet sich die Plattform für KI/ML-Forschung mit GPUs?"
-    a: "Ja. Cozystack bietet GPU-as-a-Service für KI/ML-Forschungs-Labore mit GPU-Pools. Die **[AI & GPU](/de/produkte/ai-platform/)** der Ænix Platform ist für genau diese Forschungs-Labore ausgelegt, während die Enterprise Edition souveräne Studierendendaten und Multi-Tenant-Isolation adressiert."
+    a: "Ja. Cozystack bietet GPU-as-a-Service für KI/ML-Forschungs-Labore mit GPU-Pools. Die **[AI Platform](/de/produkte/ai-platform/)** der Ænix Platform ist für genau diese Forschungs-Labore ausgelegt, während die Private Cloud Platform souveräne Studierendendaten und Multi-Tenant-Isolation adressiert."
   - q: "Können Forschungsdaten souverän und air-gapped betrieben werden?"
     a: "Ja. Cozystack unterstützt Air-Gapped-Betrieb für Umgebungen, in denen Forschungs-IP-Schutz und Daten-Souveränität zählen. Studierendendaten lassen sich konform zu DSGVO und nationalen Bildungsgesetzen halten, da die gesamte Plattform auf eigener Infrastruktur läuft."
   - q: "Worauf basiert die Plattform technisch und ist sie quelloffen?"
@@ -48,7 +48,7 @@ faq:
 
 Aenix baut Cozystack-basierte Plattformen für Universitäten, Forschungsinstitute und R&D-Organisationen in der EU, DACH und Zentralasien.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für souveräne Studierendendaten + Multi-Tenant-Isolation von Forschungsgruppen; **[AI & GPU](/de/produkte/ai-platform/)** für KI/ML-Forschungslabore mit GPU-Pools.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Studierendendaten + Multi-Tenant-Isolation von Forschungsgruppen; **[AI Platform](/de/produkte/ai-platform/)** für KI/ML-Forschungslabore mit GPU-Pools.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

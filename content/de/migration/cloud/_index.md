@@ -44,7 +44,7 @@ faq:
 
 Das Team, das Ihre Migration ausliefert, ist dasselbe Team hinter [Cozystack](/de/produkte/cozystack/) — der Open-Source-Plattform, auf der die meisten Private-Cloud-Migrationen landen. Wir arbeiten für Assessment, Sequenzierung und Implementierung an der Seite Ihrer Engineers.
 
-> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)** — das Ziel hängt vom Buyer-Profil und Migrationsmuster ab. Hosting-Anbieter, die einen geteilten Cloud-Stack verlassen, landen auf der Provider Edition; regulierte Unternehmen auf der Enterprise Edition; große Betreiber auf der Provider Edition; Produkt-Engineering-Teams auf der Developer Self-Service; KI-lastige Bestände auf der AI & GPU.
+> **Passt zu:** jeder **[Ænix Platform Edition](/de/produkte/)** — das Ziel hängt vom Buyer-Profil und Migrationsmuster ab. Hosting-Anbieter, die einen geteilten Cloud-Stack verlassen, landen auf der Public Cloud Platform; regulierte Unternehmen auf der Private Cloud Platform; große Betreiber auf der Public Cloud Platform; Produkt-Engineering-Teams auf der Developer Self-Service; KI-lastige Bestände auf der AI Platform.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

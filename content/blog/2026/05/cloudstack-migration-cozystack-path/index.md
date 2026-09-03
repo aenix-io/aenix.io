@@ -34,7 +34,7 @@ quiz:
         - { text: "Operators with growing managed-database demand", correct: false }
         - { text: "Very small operators below roughly 200 customers", correct: true }
         - { text: "Operators running KVM-based CloudStack today", correct: false }
-      explanation: "Cozystack Provider Edition fixed-cost economics don't pay back for very small operators (<200 customers), and operators with declining customer counts can't justify the modernization cost. Growing managed-service demand and KVM-based CloudStack are strong-fit signals."
+      explanation: "Cozystack Public Cloud Platform fixed-cost economics don't pay back for very small operators (<200 customers), and operators with declining customer counts can't justify the modernization cost. Growing managed-service demand and KVM-based CloudStack are strong-fit signals."
     - q: "How does the article suggest handling customers who built tooling against the CloudStack API?"
       options:
         - { text: "Force all customers to rewrite at cutover", correct: false }
@@ -226,7 +226,7 @@ Poor fit:
 
 - Operators in declining-customer-count territory — modernisation
   cost is hard to justify
-- Very small operators (<200 customers) — Cozystack Provider Edition fixed
+- Very small operators (<200 customers) — Cozystack Public Cloud Platform fixed
   cost overshoots the savings
 
 ## Engagement structure
@@ -247,7 +247,7 @@ fully retired.
 
 - **[CloudStack migration hub](/migration/cloudstack/)** — high-level
   migration entry point
-- **[Provider Edition product page](/products/public-cloud-platform/)** —
+- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
   the most common target edition for CloudStack migrations
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   hosting-provider-specific positioning

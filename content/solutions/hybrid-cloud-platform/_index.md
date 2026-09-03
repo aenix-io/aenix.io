@@ -28,7 +28,7 @@ quick_facts:
   - label: "Delivered as"
     value: "Platform Readiness Assessment (14-28 days) followed by Phase 2 implementation, typically 6-18 months"
   - label: "Key capability"
-    value: "One control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds via Ænix Platform Enterprise Edition"
+    value: "One control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds via Ænix Private Cloud Platform"
   - label: "Foundation"
     value: "KubeVirt for VMs and containers on one API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy"
 
@@ -54,7 +54,7 @@ faq:
 
 Aenix builds and operates hybrid cloud platforms based on [Cozystack](/products/cozystack/) — Kubernetes-native, multi-tenant, with consistent operations across customer hardware, public cloud regions, and edge sites.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — one control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds. For large operators or telcos: combine with **[Provider Edition](/products/public-cloud-platform/)** for multi-region public-cloud-class control plane.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — one control plane connecting on-prem to VMware, OpenNebula, OpenShift, and public clouds. For large operators or telcos: combine with **[Public Cloud Platform](/products/public-cloud-platform/)** for multi-region public-cloud-class control plane.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

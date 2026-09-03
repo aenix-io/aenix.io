@@ -41,7 +41,7 @@ faq:
 
 **Proxmox VE is excellent at SMB scale. When deployments grow into multi-tenant cloud builders or service-provider models, the operational model strains. Aenix runs Proxmox-to-Cozystack migrations end-to-end.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant Tenant CRD, productized installer. From $1,250/month support tier.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant Tenant CRD, productized installer. From $1,250/month support tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

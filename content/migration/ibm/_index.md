@@ -74,7 +74,7 @@ faq:
 
 Aenix runs IBM AIX/Power migrations end-to-end. The same engineers who built and operate [Cozystack](/products/cozystack/) — the open-source destination platform — work alongside your team for assessment, sequencing, and execution.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for regulated banks (air-gap, billing, fully managed migration), or the **[OpenShift alternative](/alternatives/openshift-alternative/)** if you're specifically replacing IBM Cloud Pak / OpenShift.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated banks (air-gap, billing, fully managed migration), or the **[OpenShift alternative](/alternatives/openshift-alternative/)** if you're specifically replacing IBM Cloud Pak / OpenShift.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -297,7 +297,7 @@ Estate size and the legacy/microservice mix drive the actual schedule; sequencin
 
 - **[OpenShift alternative](/alternatives/openshift-alternative/)** — replacing Cloud Pak / OpenShift
 - **[Cozystack vs OpenShift](/compare/cozystack-vs-openshift/)** — direct comparison
-- **[Enterprise Edition](/products/private-cloud-platform/)** — turnkey for regulated banks
+- **[Private Cloud Platform](/products/private-cloud-platform/)** — turnkey for regulated banks
 - **[Financial services](/industries/financial-services/)** — sector context
 - **[Data sovereignty](/solutions/data-sovereignty/)** — open, customer-controlled infrastructure
 - **[Cozystack](/products/cozystack/)** — the open-source destination platform

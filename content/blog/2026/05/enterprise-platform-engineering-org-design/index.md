@@ -279,7 +279,7 @@ initial setup.
 
 ### Workstream 3 — Cozystack-based platform substrate (where applicable)
 
-Foundational substrate built on Ænix Platform Enterprise Edition
+Foundational substrate built on Ænix Private Cloud Platform
 (for regulated organisations) or Developer Self-Service (for product-focused
 organisations). Multi-region, multi-DC, audit-isolated environments,
 DORA / NIS2 alignment where applicable.
@@ -334,7 +334,7 @@ Poor fit:
   the IDP-layer engagement
 - **[Developer Self-Service product page](/products/private-cloud-platform/)** —
   for product-engineering-focused organisations
-- **[Enterprise Edition product page](/products/private-cloud-platform/)** —
+- **[Private Cloud Platform product page](/products/private-cloud-platform/)** —
   for regulated organisations
 - **[Internal developer platform — 6 patterns without Backstage lock-in](/blog/2026/05/internal-developer-platform-examples-without-backstage/)** —
   six production patterns

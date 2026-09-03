@@ -8,7 +8,7 @@ type: "announcement"
 topics: ["Cozystack", "Kubernetes", "Multi-tenancy", "Platform Engineering", "Billing"]
 language: "en"
 companion_landing: "/products/public-cloud-platform/"
-companion_label: "See Provider Edition →"
+companion_label: "See Public Cloud Platform →"
 cover_image: ""
 ---
 

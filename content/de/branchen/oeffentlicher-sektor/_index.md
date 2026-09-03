@@ -32,7 +32,7 @@ quick_facts:
     value: "RFI/RFP über Standard-Kanäle (eVergabe, EU eTendering, goszakup.gov.kz); EU-Beschaffung über AENIX s.r.o. (Tschechien); mehrjährige Engagements, im Beschaffungsverfahren bepreist"
 faq:
   - q: "Ist die Plattform für den öffentlichen Sektor souverän und kundenkontrolliert?"
-    a: "Ja. Die Architektur ist strukturell souverän, kundenkontrolliert und audit-bereit. Sie läuft auf Infrastruktur, die die Organisation selbst besitzt. Die Ænix Platform Enterprise Edition bietet strikt kundenkontrollierte Schlüssel und eine Air-Gap-Option für Datenklassen, die das Perimeter nicht verlassen dürfen."
+    a: "Ja. Die Architektur ist strukturell souverän, kundenkontrolliert und audit-bereit. Sie läuft auf Infrastruktur, die die Organisation selbst besitzt. Die Ænix Private Cloud Platform bietet strikt kundenkontrollierte Schlüssel und eine Air-Gap-Option für Datenklassen, die das Perimeter nicht verlassen dürfen."
   - q: "Erfüllt die Plattform NIS2 für den öffentlichen Sektor?"
     a: "Öffentliche Verwaltung fällt als wesentliche Entität in den NIS2-Geltungsbereich. Aenix baut Plattformen mit NIS2-Compliance für wesentliche Entitäten, kombiniert mit beschaffungspflichtiger Souveränität und Datenlokalisierung auf jeder Schicht."
   - q: "Kann die Plattform souveräne KI-Workloads mit Bürgerdaten ausführen?"
@@ -49,7 +49,7 @@ faq:
 
 Aenix baut Plattformen für öffentliche und quasi-öffentliche Organisationen in der EU und Zentralasien. Open-Source-Foundation ([Cozystack](/de/produkte/cozystack/)), beschaffungsportal-bereit, regulator-konform.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für souveräne Cloud mit strikt kundenkontrollierten Schlüsseln + Air-Gap-Option; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große öffentliche-Sektor-Cloud-Produkt-Launches im Hyperscaler-nahen Maßstab.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für souveräne Cloud mit strikt kundenkontrollierten Schlüsseln + Air-Gap-Option; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große öffentliche-Sektor-Cloud-Produkt-Launches im Hyperscaler-nahen Maßstab.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

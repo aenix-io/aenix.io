@@ -50,7 +50,7 @@ faq:
 
 Cozystack is a CNCF project. Aenix builds it, operates it in production with hosting providers and banks, and runs the migration end-to-end.
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers (VMware Cloud Director exit); **[Enterprise Edition](/products/private-cloud-platform/)** for regulated enterprises (VMware Cloud Foundation exit); **[Provider Edition](/products/public-cloud-platform/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers (VMware Cloud Director exit); **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises (VMware Cloud Foundation exit); **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

@@ -49,7 +49,7 @@ faq:
 
 Aenix builds internal developer platforms (IDPs) that get adopted. Not Backstage as wallpaper over chaos; an opinionated platform with golden paths, multi-tenant foundations, and operational handoff your platform team can sustain.
 
-> **Pairs with:** **[the Developer Self-Service module of Ænix Platform](/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[the developer self-service layer of Ænix Private Cloud Platform](/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

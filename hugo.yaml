@@ -434,42 +434,29 @@ menus:
   # ── German (DE) main menu — rendered on /de/ pages (language: de) ──
   main_de:
     - name: Produkte
-      url: /de/produkte/aenix-platform/
+      url: /de/produkte/
       identifier: products-de
       weight: 10
-    - name: Ænix Platform Überblick
-      url: /de/produkte/aenix-platform/
+    - name: Ænix Public Cloud Platform
+      url: /de/produkte/public-cloud-platform/
       parent: products-de
       weight: 1
-    - name: Provider Edition
-      url: /de/produkte/aenix-platform/provider-edition/
+    - name: Ænix Private Cloud Platform
+      url: /de/produkte/private-cloud-platform/
       parent: products-de
       weight: 2
-    - name: Enterprise Edition
-      url: /de/produkte/aenix-platform/enterprise-edition/
+    - name: Ænix AI Platform
+      url: /de/produkte/ai-platform/
       parent: products-de
       weight: 3
-    - name: "AI- & GPU-Modul"
-      url: /de/produkte/aenix-platform/ai-ml-edition/
+    - name: Enterprise-Support für Cozystack
+      url: /de/produkte/cozystack-enterprise-support/
       parent: products-de
       weight: 4
-    - name: Developer-Self-Service-Modul
-      url: /de/produkte/aenix-platform/idp-edition/
+    - name: WHMCS-Integration
+      url: /de/produkte/whmcs-integration/
       parent: products-de
       weight: 5
-    - name: Cloud im Betreiber-Maßstab
-      url: /de/produkte/aenix-platform/public-cloud-edition/
-      parent: products-de
-      weight: 6
-    - name: Cozystack (Open Source)
-      url: /de/produkte/cozystack/
-      parent: products-de
-      weight: 7
-
-    - name: WHMCS × Cozystack Integration
-      url: /de/produkte/whmcs-cozystack-integration/
-      parent: products-de
-      weight: 8
     - name: Lösungen
       url: /de/loesungen/
       identifier: solutions-de

@@ -47,13 +47,13 @@ Cozystack ist die Open-Source-Alternative für Organisationen, die einen echten 
 <div class="diagram">
 <div class="diagram__node"><b>VMware VCF-Stack</b><div class="diagram__chips"><span>Broadcom-Übernahme</span><span>Subscription-only</span><span>2-5× Verlängerung</span></div></div>
 <div class="diagram__conn">Migration</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform Provider Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>Apache 2.0</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>Apache 2.0</span></div></div>
 <div class="diagram__conn">ermöglicht</div>
 <div class="diagram__node"><b>sicherer VMware-Ausstieg</b><div class="diagram__chips"><span>eigene Hardware</span><span>DORA</span><span>NIS2</span></div></div>
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter (häufigster 2026-Trigger — VMware-Cloud-Director-Ausstieg); **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen (VCF-Ausstieg); **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter (häufigster 2026-Trigger — VMware-Cloud-Director-Ausstieg); **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen (VCF-Ausstieg); **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 Aenix ist das Unternehmen hinter Cozystack. Wir bauen die Plattform, betreiben Produktionsbereitstellungen für Service Provider, Banken und Telekommunikationsbetreiber und stellen das Migrations-, Support- und Betriebsmodell bereit, das einen sicheren VMware-Ausstieg ermöglicht.
 

@@ -73,7 +73,7 @@ If you sell managed cloud to your own customers, our full **[ISP unit-economics 
   <a class="cta-primary" href="/isp-calculator/">Open calculator →</a>
 </div>
 
-See the **[Provider Edition](/products/public-cloud-platform/)** for the product behind this model.
+See the **[Public Cloud Platform](/products/public-cloud-platform/)** for the product behind this model.
 
 ---
 
@@ -83,7 +83,7 @@ Owning GPUs on your own platform versus renting equivalent GPU capacity in the c
 
 {{< gpu-roi-calculator >}}
 
-See the **[AI & GPU](/products/ai-platform/)** and **[Sovereign AI](/solutions/sovereign-ai/)**.
+See the **[AI Platform](/products/ai-platform/)** and **[Sovereign AI](/solutions/sovereign-ai/)**.
 
 ---
 
@@ -107,4 +107,4 @@ A discovery call turns these estimates into an honest, workload-level TCO — in
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

@@ -344,9 +344,9 @@ Poor fit:
   the modernization path analysis
 - **[OpenStack alternative](/alternatives/openstack-alternative/)** —
   alternative-focused commercial landing
-- **[Provider Edition product page](/products/public-cloud-platform/)** —
+- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
   common target edition for hosting-provider OpenStack migrations
-- **[Provider Edition product page](/products/public-cloud-platform/)** —
+- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
   common target edition for tier-1 telco OpenStack migrations
 
 ---

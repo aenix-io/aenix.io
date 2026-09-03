@@ -135,4 +135,4 @@ Not on WHMCS, or running something else? We also help hosters and clouds:
 Especially if you are already on WHMCS — this is the fastest way to start selling Kubernetes, databases, VMs and GPU, and earn more from the customers you already have. See the **[Ænix Public Cloud Platform economics](/products/public-cloud-platform/)** and the anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**.
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

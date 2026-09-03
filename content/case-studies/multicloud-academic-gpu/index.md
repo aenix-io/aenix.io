@@ -97,4 +97,4 @@ GPUs on the sovereign cloud cost roughly **5× less** than the previous hypersca
 
 *This case study is published in anonymized form (Tier-3 evidence): the platform is described by profile, not by name. For a reference call under NDA on an active opportunity, [talk to Aenix sales](/contact/).*
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, in two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

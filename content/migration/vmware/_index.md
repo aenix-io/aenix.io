@@ -44,7 +44,7 @@ faq:
 
 Aenix runs end-to-end VMware migrations for organizations exiting VCF. Same engineers who built and operate [Cozystack](/products/cozystack/) — the destination platform we typically recommend — work alongside your team for assessment, sequencing, and implementation.
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** for hosting providers exiting VMware Cloud Director (most common 2026 pattern); **[Enterprise Edition](/products/private-cloud-platform/)** for regulated enterprises exiting VCF; **[Provider Edition](/products/public-cloud-platform/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers exiting VMware Cloud Director (most common 2026 pattern); **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises exiting VCF; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators. Free [VMware Migration Checklist →](/resources/vmware-migration-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

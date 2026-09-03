@@ -42,7 +42,7 @@ faq:
 
 **Nutanix HCI is operationally simple, mature, and integrated. The trade-offs: closed source, appliance-led lock-in, and a subscription model that follows similar pressure dynamics to VMware. For organizations seeking comparable VM-platform capabilities with open-source foundations and multi-tenant cloud-builder features — Cozystack is the realistic alternative.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — multi-DC private/hybrid sovereign cloud, customer-controlled hardware (no Nutanix appliance lock-in), DORA / NIS2 alignment.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC private/hybrid sovereign cloud, customer-controlled hardware (no Nutanix appliance lock-in), DORA / NIS2 alignment.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

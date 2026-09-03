@@ -27,7 +27,7 @@ quick_facts:
   - label: "Key capabilities"
     value: "Air-gapped deployment for sensitive OT workloads, multi-site edge architecture, multi-tenancy for cross-BU and joint-venture separation, AI infrastructure for quality control and predictive maintenance"
   - label: "Recommended edition"
-    value: "Ænix Platform Enterprise Edition for multi-DC and edge industrial IT/OT"
+    value: "Ænix Private Cloud Platform for multi-DC and edge industrial IT/OT"
 
 faq:
   - q: "Does a cloud platform for manufacturing help with NIS2 compliance?"
@@ -48,7 +48,7 @@ faq:
 
 Aenix builds platforms for manufacturing organizations across the EU, DACH, and Central Asia.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — multi-DC + edge architecture for industrial IT/OT, NIS2 compliance for critical-product manufacturing, air-gap support for OT networks.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC + edge architecture for industrial IT/OT, NIS2 compliance for critical-product manufacturing, air-gap support for OT networks.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

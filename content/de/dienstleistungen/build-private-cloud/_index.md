@@ -47,7 +47,7 @@ faq:
 
 Aenix baut Private Clouds end-to-end auf Basis von [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das wir in Produktion mit Service-Anbietern, Banken, Telcos und KI-Operatoren betreiben.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber, die eine Multi-Region-Plattform in Public-Cloud-Qualität brauchen.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die eine Multi-Region-Plattform in Public-Cloud-Qualität brauchen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

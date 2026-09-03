@@ -45,7 +45,7 @@ faq:
 
 **Beide KubeVirt-basiert. Unterschiedliche kommerzielle Modelle, unterschiedliche operative Footprints.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die OpenShift-Alternative evaluieren; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für Produkt-Engineering-Teams.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die OpenShift-Alternative evaluieren; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für Produkt-Engineering-Teams.
 
 <div class="compare-elevated compare-elevated--col3">
 

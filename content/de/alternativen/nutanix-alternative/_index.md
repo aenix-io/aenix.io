@@ -10,7 +10,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /alternatives/nutanix-alternative/
 direct_answer: |
-  **Eine Nutanix-Alternative ist eine Plattform, die vergleichbare HCI- und VM-Fähigkeiten ohne Appliance-Lock-in und proprietäres Subscription-Modell liefert. Cozystack ist die Open-Source-Antwort: ein CNCF-Projekt unter Apache-2.0-Lizenz, das KubeVirt für VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für replizierten Storage kombiniert. Anders als Nutanix läuft Cozystack auf kundenkontrollierter Standard-Hardware mehrerer Hersteller, ohne CPU- oder Core-basierte Lizenzierung. Aenix, das Open-Core-Unternehmen hinter Cozystack, bietet mit der Ænix Platform Enterprise Edition eine produktisierte, turnkey Multi-DC-Private/Hybrid-Cloud mit DORA- und NIS2-Alignment für Organisationen, die Open-Source-First und Souveränität verlangen.**
+  **Eine Nutanix-Alternative ist eine Plattform, die vergleichbare HCI- und VM-Fähigkeiten ohne Appliance-Lock-in und proprietäres Subscription-Modell liefert. Cozystack ist die Open-Source-Antwort: ein CNCF-Projekt unter Apache-2.0-Lizenz, das KubeVirt für VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für replizierten Storage kombiniert. Anders als Nutanix läuft Cozystack auf kundenkontrollierter Standard-Hardware mehrerer Hersteller, ohne CPU- oder Core-basierte Lizenzierung. Aenix, das Open-Core-Unternehmen hinter Cozystack, bietet mit der Ænix Private Cloud Platform eine produktisierte, turnkey Multi-DC-Private/Hybrid-Cloud mit DORA- und NIS2-Alignment für Organisationen, die Open-Source-First und Souveränität verlangen.**
 quick_facts:
   - label: "Was es ist"
     value: "Open-Source-Alternative zu Nutanix HCI ohne Appliance-Lock-in, gebaut auf Cozystack (Kubernetes, KubeVirt, Cilium, LINSTOR)"
@@ -36,7 +36,7 @@ faq:
   - q: "Wie unterscheidet sich das Lizenzmodell von Nutanix?"
     a: "Cozystack ist unter Apache 2.0 lizenziert — Open Source, ohne CPU- oder Core-basierte Subscription-Gebühren. Damit entfällt die Subscription-Modell-Druck-Dynamik, die Nutanix-Kunden ähnlich wie bei VMware erleben."
   - q: "Eignet sich die Lösung für DORA- und NIS2-regulierte Organisationen?"
-    a: "Ja. Die Ænix Platform Enterprise Edition ist auf DORA- und NIS2-Alignment ausgelegt und unterstützt Multi-DC-Private/Hybrid-Cloud-Architekturen mit kundenkontrollierter Hardware — relevant für regulierte Branchen im DACH-Raum."
+    a: "Ja. Die Ænix Private Cloud Platform ist auf DORA- und NIS2-Alignment ausgelegt und unterstützt Multi-DC-Private/Hybrid-Cloud-Architekturen mit kundenkontrollierter Hardware — relevant für regulierte Branchen im DACH-Raum."
   - q: "Was kostet die kommerzielle Ænix Platform?"
     a: "Die Ænix Platform startet bei 1.250 $/Monat (Basic, bis 10 Nodes), Standard liegt bei 3.000 $, Plus bei 5.500 $. Für größere oder souveräne Multi-DC-Umgebungen gibt es eine individuelle Enterprise-Stufe."
 ---
@@ -47,13 +47,13 @@ faq:
 <div class="diagram">
 <div class="diagram__node"><b>Nutanix HCI</b><div class="diagram__chips"><span>Closed Source</span><span>Appliance-Lock-in</span><span>Subscription-Modell</span></div></div>
 <div class="diagram__conn">Migration</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform Enterprise Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Apache 2.0</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Private Cloud Platform</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Apache 2.0</span></div></div>
 <div class="diagram__conn">liefert</div>
 <div class="diagram__node"><b>souveräne Multi-DC-Private-/Hybrid-Cloud</b><div class="diagram__chips"><span>kundenkontrollierte Hardware</span><span>DORA</span><span>NIS2</span></div></div>
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — souveräne Multi-DC-Private-/Hybrid-Cloud, kundenkontrollierte Hardware (kein Nutanix-Appliance-Lock-in), DORA-/NIS2-Alignment.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — souveräne Multi-DC-Private-/Hybrid-Cloud, kundenkontrollierte Hardware (kein Nutanix-Appliance-Lock-in), DORA-/NIS2-Alignment.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

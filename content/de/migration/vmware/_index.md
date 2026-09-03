@@ -31,7 +31,7 @@ faq:
   - q: "Wie viel kann eine VMware-Migration einsparen?"
     a: "Bei migrierten Workloads sind 30-60% Kostenreduktion realistisch. Ein wesentlicher Faktor ist die Apache-2.0-Lizenzierung ohne CPU- oder Core-basierte Gebühren. Das genaue Delta lässt sich vorab mit dem VMware-Kostenrechner modellieren — inklusive Jahresersparnis, 3-Jahres-Netto und Amortisation."
   - q: "Welche Aenix Platform Edition passt zu meiner Migration?"
-    a: "Die Provider Edition passt zu Hosting-Anbietern, die VMware Cloud Director verlassen (häufigster 2026-Pattern). Die Enterprise Edition adressiert regulierte Unternehmen, die VCF ablösen. Die Provider Edition richtet sich an große Betreiber."
+    a: "Die Public Cloud Platform passt zu Hosting-Anbietern, die VMware Cloud Director verlassen (häufigster 2026-Pattern). Die Private Cloud Platform adressiert regulierte Unternehmen, die VCF ablösen. Die Public Cloud Platform richtet sich an große Betreiber."
   - q: "Was umfasst der Migrationsprozess konkret?"
     a: "Vier Schritte: Inventarisierung und Bewertung des vSphere/VCF/vCD-Bestands, Definition der Zielarchitektur (Cozystack als Standard), Migrations-Ausführung in Kohorten mit Parallel-Run und abschließendes VMware-Decommission."
   - q: "Bleibt die Plattform nach der Migration in meiner Kontrolle?"
@@ -44,7 +44,7 @@ faq:
 
 Aenix führt End-to-End-VMware-Migrationen für Organisationen durch, die VCF verlassen. Dieselben Engineers, die [Cozystack](/products/cozystack/) gebaut haben und betreiben — die Zielplattform, die wir typischerweise empfehlen — arbeiten für Assessment, Sequenzierung und Implementierung mit Ihrem Team zusammen.
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen (häufigstes Muster 2026); **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen (häufigstes Muster 2026); **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

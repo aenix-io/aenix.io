@@ -12,7 +12,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/dora-compliance/
 direct_answer: |
-  **DORA-Compliance für Cloud-Infrastruktur bedeutet, die Cloud- und Plattform-Architektur eines Finanzunternehmens auditbereit an die Digital Operational Resilience Act (seit 17. Januar 2025 in Kraft) anzupassen. Betroffen sind Banken, Versicherer, Investmentfirmen, Zahlungsinstitute, Krypto-Asset-Anbieter und ihre kritischen ICT-Drittanbieter. Aenix — das Team hinter Cozystack (CNCF-Projekt) — führt DORA-fokussierte Plattform-Readiness-Assessments durch und liefert mit der Ænix Platform Enterprise Edition eine DORA-konforme Architektur: kundenkontrollierte Schlüssel, audit-bereites Logging via VictoriaLogs, Mandantenfähigkeit über das Tenant CRD nach ICT-Risikoklassifizierung, getestete Exit-Mechanik und Transparenz über ICT-Drittparteien-Risiken.**
+  **DORA-Compliance für Cloud-Infrastruktur bedeutet, die Cloud- und Plattform-Architektur eines Finanzunternehmens auditbereit an die Digital Operational Resilience Act (seit 17. Januar 2025 in Kraft) anzupassen. Betroffen sind Banken, Versicherer, Investmentfirmen, Zahlungsinstitute, Krypto-Asset-Anbieter und ihre kritischen ICT-Drittanbieter. Aenix — das Team hinter Cozystack (CNCF-Projekt) — führt DORA-fokussierte Plattform-Readiness-Assessments durch und liefert mit der Ænix Private Cloud Platform eine DORA-konforme Architektur: kundenkontrollierte Schlüssel, audit-bereites Logging via VictoriaLogs, Mandantenfähigkeit über das Tenant CRD nach ICT-Risikoklassifizierung, getestete Exit-Mechanik und Transparenz über ICT-Drittparteien-Risiken.**
 
 quick_facts:
   - label: "Was es ist"
@@ -38,7 +38,7 @@ faq:
   - q: "Was fordert DORA von meiner Cloud-Architektur?"
     a: "Vier Kernbereiche: Transparenz über ICT-Drittparteien-Risiken (Art. 28-30), nachweisbare Exit-Bereitschaft für kritische Funktionen (Art. 28(8)), operative Resilienz-Tests (Titel IV) sowie Souveränität und Aufsichtszugang zu Ihrer Plattform."
   - q: "Wie hilft die Ænix Platform bei der DORA-Compliance?"
-    a: "Die Enterprise Edition ist DORA-konform by design: kundenkontrollierte Schlüssel, audit-bereites Logging via VictoriaLogs, Multi-Tenant-Isolierung über das Tenant CRD nach ICT-Risikoklassifizierung, getestete Exit-Mechanik und Lieferantentransparenz. Sie basiert auf Cozystack (Apache 2.0, KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium-Networking, LINSTOR-Storage)."
+    a: "Die Private Cloud Platform ist DORA-konform by design: kundenkontrollierte Schlüssel, audit-bereites Logging via VictoriaLogs, Multi-Tenant-Isolierung über das Tenant CRD nach ICT-Risikoklassifizierung, getestete Exit-Mechanik und Lieferantentransparenz. Sie basiert auf Cozystack (Apache 2.0, KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium-Networking, LINSTOR-Storage)."
   - q: "Reduziert Open Source das Lock-in- und Exit-Risiko unter DORA?"
     a: "Ja. Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Da die Plattform auf der Kubernetes-API und CNCF-Komponenten (KubeVirt, Cilium, LINSTOR) aufbaut, lässt sich die für Art. 28(8) geforderte Exit-Mechanik real testen, statt nur vertraglich zugesichert zu werden."
   - q: "Wie läuft ein DORA-Assessment bei Aenix ab?"
@@ -51,7 +51,7 @@ faq:
 
 Aenix führt ein DORA-konformes Platform-Readiness-Engagement für Finanzunternehmen und die sie beliefernden ICT-Drittanbieter durch. Das Ergebnis: eine Kontroll-Landkarte dessen, was Sie heute nachweisen können, wo die Lücken liegen und wie ein Remediationsplan auf Architekturebene aussieht.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** — DORA-konform by design (kundenkontrollierte Schlüssel auf jeder Ebene, audit-bereites Logging via VictoriaLogs, mandantenfähiges Tenant CRD abgestimmt auf die ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz bis zur zweiten Stufe). Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — DORA-konform by design (kundenkontrollierte Schlüssel auf jeder Ebene, audit-bereites Logging via VictoriaLogs, mandantenfähiges Tenant CRD abgestimmt auf die ICT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz bis zur zweiten Stufe). Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -150,7 +150,7 @@ Diese Lücken sind bei Institutionen verbreitet, die sich für cloud-reif halten
 <div class="diagram">
 <div class="diagram__node"><b>DORA (seit 17. Januar 2025)</b><div class="diagram__chips"><span>ICT-Drittparteien-Risiko · Exit-Bereitschaft · Resilienz-Tests</span></div></div>
 <div class="diagram__conn">erfüllt durch</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform Enterprise Edition</b><div class="diagram__chips"><span>kundenkontrollierte Schlüssel · VictoriaLogs · Tenant CRD</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Private Cloud Platform</b><div class="diagram__chips"><span>kundenkontrollierte Schlüssel · VictoriaLogs · Tenant CRD</span></div></div>
 <div class="diagram__conn">liefert</div>
 <div class="diagram__node"><b>Auditbereite Architektur</b></div>
 </div>

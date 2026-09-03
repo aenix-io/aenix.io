@@ -110,7 +110,7 @@ Fix patterns:
 - 24×7 detection coverage with documented escalation
 - Alert hygiene as a recurring task
 
-Aenix Enterprise Edition ships VictoriaMetrics + VictoriaLogs
+Aenix Private Cloud Platform ships VictoriaMetrics + VictoriaLogs
 configured for security-grade telemetry by default, plus security-
 focused alert rules. The customer SIEM integration is engagement work.
 
@@ -247,13 +247,13 @@ operations).
 review against DORA Article 21 + Article 28 expectations. Output: 30-50
 page report with gap analysis, prioritised remediation, timing.
 
-### Phase 2 — Pilot deployment of Enterprise Edition
+### Phase 2 — Pilot deployment of Private Cloud Platform
 
 3-6 months. Defined slice of critical-function workloads migrated to
-Cozystack-based Enterprise Edition. Supervisor evidence catalogue
+Cozystack-based Private Cloud Platform. Supervisor evidence catalogue
 partially built. TLPT-readiness validated against the pilot scope.
 
-### Phase 3 — Full Enterprise Edition build
+### Phase 3 — Full Private Cloud Platform build
 
 12-30 months depending on workload scope, multi-DC structure, TLPT
 cycle. Production-grade deployment with full compliance documentation
@@ -279,7 +279,7 @@ Strong fit:
 Marginal fit:
 
 - Smaller banks where the budget envelope for a multi-year programme
-  isn't yet sized for it; Provider Edition with sovereignty-focused
+  isn't yet sized for it; Public Cloud Platform with sovereignty-focused
   architecture may bridge
 
 Poor fit:
@@ -287,7 +287,7 @@ Poor fit:
 - Banks that have already committed to a multi-year hyperscaler
   programme and aren't reopening that decision — Aenix can advise on
   specific DORA architecture gaps within the hyperscaler context, but
-  the full Enterprise Edition isn't a fit
+  the full Private Cloud Platform isn't a fit
 
 ## Where to dig deeper
 
@@ -295,13 +295,13 @@ Poor fit:
   the trigger-led commercial landing
 - **[DORA compliance services](/solutions/dora-compliance/)** —
   buyer-trigger DORA landing
-- **[Enterprise Edition product page](/products/private-cloud-platform/)** —
+- **[Private Cloud Platform product page](/products/private-cloud-platform/)** —
   the edition for regulated enterprises
 - **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   architecture-level DORA walkthrough
 - **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-detailed/)** —
   what demonstrable means in practice
-- **[Enterprise Edition — DORA Article 21 + 28 mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
+- **[Private Cloud Platform — DORA Article 21 + 28 mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
   edition-level architectural detail
 - **[DORA compliance checklist resource](/resources/dora-compliance-checklist/)** —
   downloadable controls checklist

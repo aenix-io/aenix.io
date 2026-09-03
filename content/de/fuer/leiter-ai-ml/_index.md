@@ -35,7 +35,7 @@ faq:
   - q: "Wie teilen Teams knappe GPUs?"
     a: "Mandantenfähiges Scheduling mit Quotas und Isolation — Self-Service ohne dediziertes Cluster je Team."
   - q: "Build oder Buy?"
-    a: "AI & GPU für Tempo; das Aufbau-Modell, wenn GPU-Topologie und Serving zu Ihrem Stack passen müssen."
+    a: "AI Platform für Tempo; das Aufbau-Modell, wenn GPU-Topologie und Serving zu Ihrem Stack passen müssen."
   - q: "Bezug zu Souveräne-KI-Regeln?"
     a: "Siehe [Souveräne KI](/de/loesungen/sovereign-ai/) — Betrieb auf kundenkontrollierter Hardware ist die strukturelle Antwort."
 ---
@@ -98,16 +98,16 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-/Daten-Zwänge an und sagen, ob AI & GPU oder Aufbauprojekt passt.
+Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-/Daten-Zwänge an und sagen, ob AI Platform oder Aufbauprojekt passt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
-  <a class="cta-secondary" href="/de/produkte/">AI & GPU →</a>
+  <a class="cta-secondary" href="/de/produkte/">AI Platform →</a>
 </div>
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-ai-ml/ ; hreflang de self, en → /for/head-of-ai-ml/.

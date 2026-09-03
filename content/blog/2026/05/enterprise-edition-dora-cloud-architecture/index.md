@@ -1,5 +1,5 @@
 ---
-title: "Enterprise Edition for regulated cloud — DORA Articles 21 and 28 mapped to running architecture"
+title: "Private Cloud Platform for regulated cloud — DORA Articles 21 and 28 mapped to running architecture"
 description: "Mapping DORA Article 21 and Article 28 obligations to a defensible cloud architecture for regulated enterprises — banks, insurers, public sector, energy."
 date: 2026-05-11
 author: "Aenix Team"
@@ -7,7 +7,7 @@ type: "article"
 topics: ["DORA", "Financial Services", "Compliance", "Sovereignty", "Multi-tenancy", "Cozystack"]
 language: "en"
 companion_landing: "/products/private-cloud-platform/"
-companion_label: "See Enterprise Edition product details →"
+companion_label: "See Private Cloud Platform product details →"
 quiz:
   title: "Test yourself: DORA Article 21 & 28 architecture"
   questions:
@@ -29,13 +29,13 @@ quiz:
         - { text: "A second backup hyperscaler signed under contract", correct: false }
         - { text: "Tested feasibility — a rehearsal in the past 24 months", correct: true }
       explanation: "Pattern 2 in the Article 28 section explains that most entities have an exit plan on paper but few have rehearsed it, and supervisors are now asking for rehearsal within the last 24 months."
-    - q: "What does 'advisory-only support model' mean in Enterprise Edition?"
+    - q: "What does 'advisory-only support model' mean in Private Cloud Platform?"
       options:
         - { text: "Aenix engineers operate via GitOps PR review, not kubectl", correct: true }
         - { text: "Aenix only provides written advice and no engineering work", correct: false }
         - { text: "The customer must hire its own consultancy for cluster changes", correct: false }
       explanation: "Advisory-only means Aenix engineers don't need kubectl access to production; reviewers operate via GitOps PR review and runbooks remain customer-side — critical for banks where vendor-side access is a structural risk."
-    - q: "What total elapsed time does the article cite for an Enterprise Edition production deployment at a tier-1 bank with full TLPT readiness?"
+    - q: "What total elapsed time does the article cite for an Private Cloud Platform production deployment at a tier-1 bank with full TLPT readiness?"
       options:
         - { text: "6 to 12 months", correct: false }
         - { text: "18 to 36 months", correct: true }
@@ -43,7 +43,7 @@ quiz:
       explanation: "The engagement structure section states 18–36 months for tier-1 banks with full TLPT readiness, and 12–18 months for mid-size regulated enterprises with narrower scope."
 ---
 
-**Long-form companion to the [Enterprise Edition landing](/products/private-cloud-platform/). For regulated enterprises — banks, insurers, public-sector entities, energy operators, healthcare — translating DORA Article 21 and Article 28 obligations into a running cloud architecture that survives a supervisory audit.**
+**Long-form companion to the [Private Cloud Platform landing](/products/private-cloud-platform/). For regulated enterprises — banks, insurers, public-sector entities, energy operators, healthcare — translating DORA Article 21 and Article 28 obligations into a running cloud architecture that survives a supervisory audit.**
 
 Regulated-enterprise cloud architecture in 2026 is a different
 conversation than it was in 2022. DORA went into force on 17 January
@@ -53,7 +53,7 @@ expectations are sharpening with each TLPT cycle. The pre-DORA pattern
 realistic audit scrutiny.
 
 This article walks through what an audit-defensible cloud architecture
-actually looks like, why Aenix Enterprise Edition is structured the
+actually looks like, why Aenix Private Cloud Platform is structured the
 way it is, and where most regulated organisations still have gaps.
 
 ## Article 21 — ten architectural areas
@@ -80,7 +80,7 @@ enforce the technical controls the risk register names.
 Detection must operate within the Article 23 reporting windows: 24-hour
 early warning, 72-hour incident notification, one-month final report.
 The bottleneck in practice is detection telemetry — alert fatigue
-masks signal. Enterprise Edition ships with VictoriaMetrics +
+masks signal. Private Cloud Platform ships with VictoriaMetrics +
 VictoriaLogs and curated alert rules tuned for security, not just
 performance.
 
@@ -88,7 +88,7 @@ performance.
 
 RTO and RPO are documented per critical workload, *and tested annually*
 with telemetry that proves the test outcome. Backup-only is
-insufficient. Enterprise Edition includes Velero + per-application
+insufficient. Private Cloud Platform includes Velero + per-application
 patterns (PostgreSQL PITR, Kafka snapshots, etc.) plus chaos-engineering
 hooks for controlled failure injection.
 
@@ -96,7 +96,7 @@ hooks for controlled failure injection.
 
 Article 28's most demanding requirement: ICT third-party arrangements
 inventoried, classified by criticality, with sub-contractor chain
-mapped to the *second hop*. Enterprise Edition gives you the
+mapped to the *second hop*. Private Cloud Platform gives you the
 provider relationship Aenix can attest to (we are the platform vendor);
 the open-source substrate (Cozystack) gives you transparency to the
 upstream-component level. Beyond that, the customer's responsibility.
@@ -104,13 +104,13 @@ upstream-component level. Beyond that, the customer's responsibility.
 ### 5. Security in acquisition, development, maintenance
 
 SAST/DAST in CI, container scanning + SBOM, vulnerability handling
-with documented SLA, disclosure policy published. Enterprise Edition
+with documented SLA, disclosure policy published. Private Cloud Platform
 provides the operator-side discipline; customer pipelines integrate.
 
 ### 6. Effectiveness assessment
 
 Annual external assessment is the supervisor expectation for essential
-entities. Enterprise Edition documentation aligns with the working
+entities. Private Cloud Platform documentation aligns with the working
 formats supervisors consume — control-level mapping, evidence
 catalogue, audit-trail completeness.
 
@@ -125,7 +125,7 @@ part of the engagement (separate product).
 Customer-controlled encryption keys at every layer — production
 storage, backups, observability data, audit logs. HSM-backed for
 sensitive data classes. Key rotation and emergency-access procedures
-documented. Enterprise Edition supports External Secrets Operator
+documented. Private Cloud Platform supports External Secrets Operator
 backed by customer HSM (CloudHSM, Azure Key Vault HSM-mode, on-prem
 HSM appliance).
 
@@ -133,7 +133,7 @@ HSM appliance).
 
 Workload identity via SPIFFE/SPIRE or equivalent. Privileged access
 management. Joiner-mover-leaver process automated. Asset register
-complete and current. Enterprise Edition ships with cozystack-controller
+complete and current. Private Cloud Platform ships with cozystack-controller
 that maintains the asset register as a Kubernetes-native object — no
 drift between policy and running state.
 
@@ -161,7 +161,7 @@ runs.
 Article 28's data-residency expectations apply to the *entire ICT
 third-party arrangement* — observability tools included. Supervisor
 audits increasingly catch this; legacy "data classification policies"
-do not. Enterprise Edition replaces SaaS observability with self-hosted
+do not. Private Cloud Platform replaces SaaS observability with self-hosted
 VictoriaMetrics + VictoriaLogs running on the same customer
 infrastructure. Eliminates the most common residency leak.
 
@@ -172,7 +172,7 @@ arrangements with *tested feasibility*. Most entities have a plan;
 fewer have rehearsed it. Supervisors are now asking for the rehearsal
 within the last 24 months.
 
-Enterprise Edition's open-source substrate makes the exit-test
+Private Cloud Platform's open-source substrate makes the exit-test
 mechanically simpler: the workloads are standard KubeVirt VMs and
 Kubernetes resources. The exit destination can be "the same
 Kubernetes API, different underlying hardware or provider" rather
@@ -186,12 +186,12 @@ diversity clauses. The substantive condition — workloads architecturally
 diversified across multiple providers — typically isn't met. Article 28
 demands the substantive condition, not just the procurement formality.
 
-Enterprise Edition's architecture inherently breaks the concentration:
+Private Cloud Platform's architecture inherently breaks the concentration:
 the cloud provider relationship becomes hardware and bandwidth, not
 platform services. Sub-contractor mapping shortens dramatically. The
 sovereignty story becomes architectural rather than contractual.
 
-## What Enterprise Edition includes that ISP / Public Cloud doesn't
+## What Private Cloud Platform includes that ISP / Public Cloud doesn't
 
 Several Enterprise-specific layers:
 
@@ -202,7 +202,7 @@ Several Enterprise-specific layers:
   workloads.
 - **Multi-DC active/passive or active/active** — Enterprise typically
   deploys to two or more datacentres with cross-DC replication tuned
-  for RTO/RPO targets. Provider Edition is single-DC by default.
+  for RTO/RPO targets. Public Cloud Platform is single-DC by default.
 - **Advisory-only support model** — Aenix engineers do not require
   kubectl access to your production cluster. Reviewers operate via
   GitOps PR review; runbooks remain on the customer side. Critical
@@ -218,7 +218,7 @@ Several Enterprise-specific layers:
 
 ## What stays the customer's responsibility
 
-Enterprise Edition is *architecture-aligned with DORA / NIS2*. It is
+Private Cloud Platform is *architecture-aligned with DORA / NIS2*. It is
 not a certification. Several obligations remain on the customer:
 
 - **Internal governance** — board reporting, RM committee, ICT risk
@@ -226,14 +226,14 @@ not a certification. Several obligations remain on the customer:
 - **Sectoral overlays** — banking secrecy, insurance regulation,
   healthcare data laws. Customer's responsibility to interpret
   alongside DORA.
-- **The audit itself** — Enterprise Edition gives you defensible
+- **The audit itself** — Private Cloud Platform gives you defensible
   architecture and evidence; running the audit cycle is your audit
   team's work.
-- **Workload-specific risk decisions** — Enterprise Edition supplies
+- **Workload-specific risk decisions** — Private Cloud Platform supplies
   the substrate; which workloads are critical, how they're classified,
   and what residual risk you accept is your call.
 
-## When Enterprise Edition is the right answer
+## When Private Cloud Platform is the right answer
 
 Strong fit:
 
@@ -251,13 +251,13 @@ Strong fit:
 Marginal fit:
 
 - Mid-size organisations where the regulatory pressure is real but
-  the budget for a multi-year programme isn't yet there. Provider Edition
+  the budget for a multi-year programme isn't yet there. Public Cloud Platform
   with sovereignty-focused architecture may bridge.
 
 Poor fit:
 
 - Organisations without regulatory pressure. Use a different edition
-  (Developer Self-Service or Pure Cozystack Support) — Enterprise Edition's
+  (Developer Self-Service or Pure Cozystack Support) — Private Cloud Platform's
   compliance overhead doesn't pay back without the regulator driver.
 
 ## Engagement structure
@@ -268,7 +268,7 @@ Poor fit:
   architecture
 - **Pilot** (3-6 months) — defined slice migrated to Enterprise
   Edition, supervisor evidence catalogue partially built
-- **Full Enterprise Edition build** (12-30 months) — production-grade
+- **Full Private Cloud Platform build** (12-30 months) — production-grade
   multi-DC deployment with full compliance documentation
 - **Managed retainer** (ongoing) — advisory, runbooks, GitOps PR
   review, incident response under SLA
@@ -279,7 +279,7 @@ regulated enterprises with narrower scope.
 
 ## Where to dig deeper
 
-- **[Enterprise Edition landing](/products/private-cloud-platform/)** —
+- **[Private Cloud Platform landing](/products/private-cloud-platform/)** —
   feature list, edition-specific FAQ, customer evidence
 - **[DORA compliance services](/solutions/dora-compliance/)** —
   DORA-aligned engagement details
@@ -293,6 +293,6 @@ regulated enterprises with narrower scope.
 ---
 
 *Aenix is the company behind Cozystack — a CNCF project, Kubernetes
-Certified Distribution, OpenSSF Best Practices. Our Enterprise Edition
+Certified Distribution, OpenSSF Best Practices. Our Private Cloud Platform
 engagements with tier-1 European banks are NDA-protected until mid-2027;
 first named bank case studies will be published as NDAs expire.*

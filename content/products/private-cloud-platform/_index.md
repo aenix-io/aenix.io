@@ -119,7 +119,7 @@ H100, H200, L40S, A100, Blackwell (B100/B200) GPU classes supported. Multi-tenan
 
 ### Education and training included
 
-Engineering team training as part of the engagement. Aenix's Kubernetes Deep Dive Course covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux) included for customer engineers in Enterprise Edition deployments.
+Engineering team training as part of the engagement. Aenix's Kubernetes Deep Dive Course covering the Cozystack stack (Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux) included for customer engineers in Private Cloud Platform deployments.
 
 ### Enterprise SLA + 24/7 support + named TAM
 

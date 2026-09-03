@@ -45,7 +45,7 @@ faq:
 
 **OpenShift is a strong commercial Kubernetes distribution with mature enterprise tooling. The trade-off is the Red Hat subscription model and tight coupling to the Red Hat / IBM ecosystem. For organizations seeking an open-source-first foundation with comparable capabilities — including KubeVirt-based virtualization and multi-tenancy — Cozystack is the realistic alternative.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for regulated enterprises; **[Developer Self-Service](/products/private-cloud-platform/)** for product engineering teams replacing OpenShift's developer experience layer.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises; **[Developer Self-Service](/products/private-cloud-platform/)** for product engineering teams replacing OpenShift's developer experience layer.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

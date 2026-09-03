@@ -38,14 +38,14 @@ faq:
   - q: "Auf welche Zielplattform migriere ich aus VMware?"
     a: "Auf Cozystack, die Open-Source-Plattform hinter Aenix. Sie betreibt VMs und Container auf einer Kubernetes-API via KubeVirt, mit Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und dem Tenant CRD für Mandantenfähigkeit — als direkter Ersatz für vSphere, NSX, vSAN und vCloud Director."
   - q: "Wie werden vCloud-Director-Organisationen abgebildet?"
-    a: "Die Checkliste mappt vCD-Organisationen auf das Cozystack Tenant CRD. Dieses Multi-Tenancy-Modell ist besonders für Hosting-Anbieter relevant, die VMware Cloud Director verlassen — passend zur Ænix Platform Provider Edition."
+    a: "Die Checkliste mappt vCD-Organisationen auf das Cozystack Tenant CRD. Dieses Multi-Tenancy-Modell ist besonders für Hosting-Anbieter relevant, die VMware Cloud Director verlassen — passend zur Ænix Public Cloud Platform."
   - q: "Was passiert nach dem Download?"
     a: "Die Checkliste liefert die Discovery, die Ihr Team intern durchführen kann. Für eine tiefere Bewertung mit TCO-Modellierung und Architektur-Design bietet Aenix das kostenpflichtige Platform Readiness Assessment sowie den VMware-Migrations-Hub an."
 ---
 
 **Eine 25-Punkt-Checkliste für Organisationen, die einen VMware-Ausstieg evaluieren. Deckt Inventar, Abhängigkeiten, Networking, Storage, Multi-Tenancy, KI/GPU, Souveränität und operative Bereitschaft ab. Verwendet von Aenix während 14-Tage-Platform-Readiness-Assessments und kostenlos angeboten für Teams in früher Evaluierung.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen; **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

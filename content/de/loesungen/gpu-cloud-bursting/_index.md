@@ -60,7 +60,7 @@ faq:
 
 **Die Basis besitzen, nur die Spitzen mieten. Cloud Bursting lässt Sie stetige GPU-Workloads auf selbst kontrollierter Hardware betreiben und Inferenz- oder Training-Spitzen bei Bedarf in Public- oder souveräne Clouds auslagern — und die Zusatzkapazität danach wieder abbauen. Aenix baut das als GPU-as-a-Service auf einer einzigen Kubernetes-Plattform, damit Ihre Teams elastische GPU erhalten — ohne Hyperscaler-Lock-in, ohne intransparente Abrechnung, ohne komplette Migration.**
 
-> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/)** — Multi-Tenant-GPU-Scheduling, fraktionales Sharing und fertige Blueprints für Inferenz und Fine-Tuning. Für die elastische Self-Service-Cloud darunter: kombinieren mit **[Provider Edition](/de/produkte/public-cloud-platform/)**. Rechnen Sie die Zahlen mit den **[ROI- & TCO-Rechnern](/de/roi-rechner/)** durch.
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — Multi-Tenant-GPU-Scheduling, fraktionales Sharing und fertige Blueprints für Inferenz und Fine-Tuning. Für die elastische Self-Service-Cloud darunter: kombinieren mit **[Public Cloud Platform](/de/produkte/public-cloud-platform/)**. Rechnen Sie die Zahlen mit den **[ROI- & TCO-Rechnern](/de/roi-rechner/)** durch.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -127,4 +127,4 @@ Ihr Mix aus Grundlast, Spitze und Burst-Target entscheidet über die Ersparnis. 
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, verfügbar in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML. Wir bauen Multi-Cloud-GPU-Plattformen für AI/ML-, Forschungs- und Plattform-Betreiber-Organisationen in der EU und DACH.*
+*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen Multi-Cloud-GPU-Plattformen für AI/ML-, Forschungs- und Plattform-Betreiber-Organisationen in der EU und DACH.*

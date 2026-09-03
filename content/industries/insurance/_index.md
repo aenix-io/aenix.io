@@ -33,7 +33,7 @@ faq:
   - q: "Is insurance in scope for DORA, and how does this platform help?"
     a: "Yes. Insurance and reinsurance undertakings are financial entities under DORA, which has been in force across the EU since January 2025. The platform provides a regulated cloud foundation with audit-readiness and Tenant-CRD separation that maps to DORA Article 28 ICT third-party and business-unit controls."
   - q: "Can we run GenAI on sensitive claims and underwriting data without sending it to a public cloud?"
-    a: "Yes. The AI & GPU runs claims-processing, underwriting, and fraud-detection AI on private LLM infrastructure inside your own sovereign environment, keeping regulated insurance data on infrastructure you control rather than a public-cloud AI service."
+    a: "Yes. The AI Platform runs claims-processing, underwriting, and fraud-detection AI on private LLM infrastructure inside your own sovereign environment, keeping regulated insurance data on infrastructure you control rather than a public-cloud AI service."
   - q: "What is the platform built on?"
     a: "Cozystack, an Apache 2.0 CNCF project created by Aenix. It runs VMs and containers on one Kubernetes API using KubeVirt, Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Aenix sells the productized Ænix Platform and services on top."
   - q: "How does this help insurers exit VMware?"
@@ -48,7 +48,7 @@ faq:
 
 Aenix builds platforms for insurance organizations across the EU, DACH, and Central Asia.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for DORA-aligned regulated cloud foundation; **[AI & GPU](/products/ai-platform/)** for claims-processing AI and underwriting AI workloads on regulated data. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for DORA-aligned regulated cloud foundation; **[AI Platform](/products/ai-platform/)** for claims-processing AI and underwriting AI workloads on regulated data. Free [DORA Compliance Checklist →](/resources/dora-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -66,7 +66,7 @@ Aenix builds platforms for insurance organizations across the EU, DACH, and Cent
 <div class="diagram">
 <div class="diagram__node"><b>Insurance workloads</b><div class="diagram__chips"><span>VMs and containers</span><span>Claims, underwriting, fraud-detection AI</span></div></div>
 <div class="diagram__conn">run on</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Enterprise Edition</span><span>AI & GPU</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
 <div class="diagram__conn">built on</div>
 <div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>One Kubernetes API (KubeVirt)</span><span>Cilium eBPF</span><span>LINSTOR/DRBD</span><span>Apache 2.0, CNCF</span></div></div>
 <div class="diagram__conn">separates business units via</div>

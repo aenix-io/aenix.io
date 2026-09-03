@@ -22,7 +22,7 @@ quick_facts:
   - label: "Engagement timeline"
     value: "Discovery + product-readiness assessment (4-8 weeks), Phase 2 build (4-12 months), optional Phase 3 managed-services during ramp."
   - label: "Productized path"
-    value: "Pairs with Ænix Platform Provider Edition (white-labelable cozyportal, WHMCS-integrated billing); support tiers from $1,250/mo (Basic, 10 nodes)."
+    value: "Pairs with Ænix Public Cloud Platform (white-labelable cozyportal, WHMCS-integrated billing); support tiers from $1,250/mo (Basic, 10 nodes)."
 
 faq:
   - q: "What does a white-label cloud engagement with Aenix include?"
@@ -41,7 +41,7 @@ faq:
 
 **Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the customer-relationship advantages MSPs already have. White-label cloud — branded with the MSP's identity, run on shared or dedicated infrastructure — is the realistic answer. Aenix builds these end-to-end.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** — fully white-labelable cozyportal, multi-tier reseller model (Aenix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — fully white-labelable cozyportal, multi-tier reseller model (Aenix → MSP → MSP customers), WHMCS-integrated billing. From $1,250/month support tier. See also: **[Partner Program](/partners/)** for up to 40% margin on resold engagements.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

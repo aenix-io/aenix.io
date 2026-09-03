@@ -37,13 +37,13 @@ faq:
     a: "Auf Cozystack, einem CNCF-Projekt unter Apache 2.0, das KubeVirt für VMs und Container, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage auf einer Kubernetes-API vereint. Mandantenfähigkeit erfolgt über das Tenant-CRD."
   - q: "Was ist im AI-Platform-Build-Service enthalten?"
     a: "Architektur-Design, GPU-Sizing und -Beschaffung, Multi-Tenant-GPU-Scheduling, Modell-Deployment-Workflows (vLLM, Triton), Vector-DB- und Object-Storage-Integration, Souveränitätskontrollen, Observability für KI-Workloads und Training des Operations-Teams."
-  - q: "Wie unterscheidet sich dieser Service von der the AI & GPU module of Ænix Platform?"
-    a: "Die [the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/) ist das produktisierte, turnkey Angebot mit fertigen Blueprints. AI Platform Build ist der begleitende Service, der die Plattform end-to-end für die spezifische Architektur und Beschaffung des Kunden aufbaut."
+  - q: "Wie unterscheidet sich dieser Service von der Ænix AI Platform?"
+    a: "Die [Ænix AI Platform](/de/produkte/ai-platform/) ist das produktisierte, turnkey Angebot mit fertigen Blueprints. AI Platform Build ist der begleitende Service, der die Plattform end-to-end für die spezifische Architektur und Beschaffung des Kunden aufbaut."
 ---
 
 **KI-Startups und KI-lastige Unternehmen in 2026 stehen vor der gleichen architektonischen Wahl: Inferenz mieten zu Hyperscaler-Ökonomie, oder dedizierte Infrastruktur bauen, die im großen Maßstab sich auszahlt. Für nachhaltige Workloads (24/7 Inferenz, Fine-Tuning, Training) gewinnt dedizierte Infrastruktur normalerweise nach einem Jahr Betrieb. Aenix baut diese Plattformen end-to-end.**
 
-> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), fertige Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen für regulierte KI-Workloads. Kostenloser [Sovereign AI Decision Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), fertige Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen für regulierte KI-Workloads. Kostenloser [Sovereign AI Decision Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

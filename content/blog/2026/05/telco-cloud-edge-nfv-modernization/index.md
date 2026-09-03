@@ -29,7 +29,7 @@ quiz:
         - { text: "12-node minimum per MEC location", correct: false }
         - { text: "Single-node-only, no federation path", correct: false }
       explanation: "The post specifies that Cozystack supports edge deployment with reduced footprint, with ~3-node clusters at edge sites typical, federating to regional and core platforms under the same operational model."
-    - q: "Why are sustained-utilisation AI workloads at telcos a good fit for Cozystack AI & GPU rather than hyperscaler?"
+    - q: "Why are sustained-utilisation AI workloads at telcos a good fit for Cozystack AI Platform rather than hyperscaler?"
       options:
         - { text: "Hyperscalers cannot run inference at all", correct: false }
         - { text: "Dedicated GPU economics beat hyperscaler", correct: true }
@@ -111,7 +111,7 @@ Where this works:
 
 - **IT cloud workloads** — straightforward Cozystack-based deployment.
   Most tier-1 telco IT cloud modernizations follow this pattern.
-- **AI / data lake / analytics** — Cozystack AI & GPU workload
+- **AI / data lake / analytics** — Cozystack AI Platform workload
   patterns; sovereign by default; multi-tenant for cross-BU access.
 - **Edge compute** — Cozystack supports small-footprint edge
   deployments with federation to core. Standardised across sites.
@@ -170,7 +170,7 @@ Cozystack-based architecture supports this commercially:
   entity (AENIX s.r.o.)
 
 For sovereign cloud commercial product lines, the Ænix Platform
-Provider Edition is the typical pairing — multi-region, multi-DC,
+Public Cloud Platform is the typical pairing — multi-region, multi-DC,
 service-catalog depth, brand-engineered customer portal.
 
 ## Edge compute realities
@@ -225,13 +225,13 @@ sequencing. Sponsor and workstream-lead identification.
 
 ### Phase 1 — IT cloud modernization (6-12 months)
 
-Cozystack-based Enterprise / Provider Edition deployed. Internal
+Cozystack-based Enterprise / Public Cloud Platform deployed. Internal
 workloads migrated. Customer-facing portal launched for sovereign
 cloud product.
 
 ### Phase 2 — AI / data lake (6-9 months, parallel)
 
-Cozystack AI & GPU deployed. Network analytics workloads moved
+Cozystack AI Platform deployed. Network analytics workloads moved
 on-prem. Customer-facing AI services launched.
 
 ### Phase 3 — Edge expansion (6-18 months, ongoing)
@@ -261,20 +261,20 @@ Strong fit:
 Marginal fit:
 
 - Smaller operators (regional, MVNO-style) — may fit Enterprise
-  Edition rather than full Provider Edition
+  Edition rather than full Public Cloud Platform
 - Operators with deep OpenStack-based NFV investment that still
   works — modernization can wait for vendor lifecycle to force it
 
 ## Where to dig deeper
 
 - **[Telco industry page](/industries/telco/)** — commercial landing
-- **[Provider Edition product page](/products/public-cloud-platform/)** —
+- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
   the typical edition for tier-1 telco engagements
 - **[Sovereign cloud builder services](/services/sovereign-cloud-builder/)** —
   for sovereign cloud product line builds
 - **[Sovereign AI services](/solutions/sovereign-ai/)** — for AI
   workload patterns
-- **[Provider Edition build phasing](/blog/2026/05/public-cloud-edition-multi-tenant-cloud-builder/)** —
+- **[Public Cloud Platform build phasing](/blog/2026/05/public-cloud-edition-multi-tenant-cloud-builder/)** —
   multi-year build phasing
 - **[Sovereign AI architecture decisions](/blog/2026/05/sovereign-ai-architecture-decisions/)** —
   seven decisions for sovereign AI

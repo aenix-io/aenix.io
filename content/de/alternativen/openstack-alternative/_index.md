@@ -53,13 +53,13 @@ Cozystack ist die Open-Source-Alternative für Organisationen, die die Open-Sour
 <div class="diagram">
 <div class="diagram__node"><b>OpenStack</b><div class="diagram__chips"><span>knappe OpenStack-Expertise</span><span>riskante Upgrade-Zyklen</span></div></div>
 <div class="diagram__conn">Migration</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform Provider Edition</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
 <div class="diagram__conn">liefert</div>
 <div class="diagram__node"><b>leichterer operativer Footprint</b><div class="diagram__chips"><span>echte Mandantenfähigkeit</span><span>5-15 Operatoren</span></div></div>
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter und regionale Clouds, die von OpenStack modernisieren; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter und regionale Clouds, die von OpenStack modernisieren; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>

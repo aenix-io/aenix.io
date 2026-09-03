@@ -10,7 +10,7 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloser 12-seitiger Decision-Guide für IT- und Compliance-Verantwortliche, die souveräne KI-Infrastruktur evaluieren. Ein visueller Flowchart führt durch sieben Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope (DORA, NIS2, souveränes-Cloud-Mandat), Modell-Auswahl (Open-Weight wie Llama, Mistral, Qwen), Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen und operatives Modell. Der Guide liefert vier annotierte Architektur-Patterns und Sizing-Referenztabellen. Das Ergebnis mappt direkt auf die the AI & GPU module of Ænix Platform — eine turnkey, selbst-gehostete KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0) mit Multi-Tenant-GPU-Scheduling und Souveränitätskontrollen.**
+  **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloser 12-seitiger Decision-Guide für IT- und Compliance-Verantwortliche, die souveräne KI-Infrastruktur evaluieren. Ein visueller Flowchart führt durch sieben Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope (DORA, NIS2, souveränes-Cloud-Mandat), Modell-Auswahl (Open-Weight wie Llama, Mistral, Qwen), Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen und operatives Modell. Der Guide liefert vier annotierte Architektur-Patterns und Sizing-Referenztabellen. Das Ergebnis mappt direkt auf die Ænix AI Platform — eine turnkey, selbst-gehostete KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0) mit Multi-Tenant-GPU-Scheduling und Souveränitätskontrollen.**
 quick_facts:
   - label: "Was es ist"
     value: "Kostenloser 12-seitiger Decision-Guide (PDF) mit visuellem Flowchart zur Planung souveräner KI-Infrastruktur"
@@ -25,16 +25,16 @@ quick_facts:
   - label: "Regulatorik"
     value: "Deckt DORA, NIS2 und souveräne-Cloud-Mandate als regulatorische Trigger ab"
   - label: "Verwandtes Produkt"
-    value: "the AI & GPU module of Ænix Platform — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling auf Cozystack"
+    value: "Ænix AI Platform — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling auf Cozystack"
 faq:
   - q: "Was ist souveräne KI-Infrastruktur?"
     a: "Souveräne KI-Infrastruktur bedeutet, KI-Modelle und -Daten auf eigener oder selbst-kontrollierter Infrastruktur zu betreiben, statt auf einer Public-Cloud-API. So bleiben Daten, Verschlüsselungsschlüssel und Audit-Trails unter eigener Kontrolle — eine Voraussetzung für Organisationen unter DORA, NIS2 oder einem souveränen-Cloud-Mandat."
   - q: "Für wen ist der Sovereign-AI-Architektur-Leitfaden gedacht?"
     a: "Für IT-Leiter, Plattform-Architekten und Compliance-Teams in regulierten Branchen, die selbst-gehostete oder air-gapped KI evaluieren. Der visuelle Flowchart hilft, in sieben Schritten von Trigger-Profil und regulatorischem Scope bis zum operativen Modell eine passende Architektur zu bestimmen."
   - q: "Welche Architektur-Patterns deckt der Leitfaden ab?"
-    a: "Vier gängige Patterns mit annotierten Diagrammen: Single-Tenant Inferenz-Cluster, Multi-Tenant Inferenz-Fleet, kombiniertes Inferenz + Fine-Tuning + RAG sowie Air-Gapped souveränes Deployment. Jedes Pattern mappt auf einen Deployment-Scope der the AI & GPU module of Ænix Platform."
+    a: "Vier gängige Patterns mit annotierten Diagrammen: Single-Tenant Inferenz-Cluster, Multi-Tenant Inferenz-Fleet, kombiniertes Inferenz + Fine-Tuning + RAG sowie Air-Gapped souveränes Deployment. Jedes Pattern mappt auf einen Deployment-Scope der Ænix AI Platform."
   - q: "Wie hängt der Leitfaden mit Cozystack und der Ænix Platform zusammen?"
-    a: "Das Decision-Ergebnis mappt direkt auf die the AI & GPU module of Ænix Platform — eine turnkey KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0). Cozystack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und das Tenant-CRD für Mandantenfähigkeit."
+    a: "Das Decision-Ergebnis mappt direkt auf die Ænix AI Platform — eine turnkey KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0). Cozystack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und das Tenant-CRD für Mandantenfähigkeit."
   - q: "Welche KI-Modelle und GPU-Hardware werden behandelt?"
     a: "Bei der Modell-Auswahl werden Open-Weight-Modelle wie Llama, Mistral, Qwen, DeepSeek, Phi und Gemma gegen proprietäre abgewogen. Beim Hardware-Sizing werden NVIDIA A100, H100, H200, L40S und Blackwell sowie CPU-, Memory- und Network-Anforderungen pro Workload-Profil behandelt."
   - q: "Was kostet die Ænix Platform für KI-Workloads?"
@@ -43,7 +43,7 @@ faq:
 
 **Ein 12-seitiger Decision-Guide für Organisationen, die souveräne KI-Infrastruktur evaluieren. Visueller Flowchart führt durch 7 Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope, Modell-Auswahl, Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen, operatives Modell.**
 
-> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling, fertigen Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen. Der Decision-Guide outputs eine Architektur-Pattern, die direkt auf AI & GPU Deployment-Scope mappt.
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling, fertigen Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen. Der Decision-Guide outputs eine Architektur-Pattern, die direkt auf AI Platform Deployment-Scope mappt.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}
@@ -81,7 +81,7 @@ Praktische Sizing-Tabellen für gängige Workload-Profile.
 <div class="diagram__conn">mappt auf</div>
 <div class="diagram__node"><b>Architektur-Pattern</b><div class="diagram__chips"><span>eines von vier Patterns</span></div></div>
 <div class="diagram__conn">Deployment-Scope</div>
-<div class="diagram__node diagram__node--brand"><b>the AI & GPU module of Ænix Platform</b><div class="diagram__chips"><span>Multi-Tenant-GPU-Scheduling</span><span>Inferenz + Fine-Tuning + RAG</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix AI Platform</b><div class="diagram__chips"><span>Multi-Tenant-GPU-Scheduling</span><span>Inferenz + Fine-Tuning + RAG</span></div></div>
 </div>
 </div>
 

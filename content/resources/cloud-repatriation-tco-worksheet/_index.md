@@ -42,7 +42,7 @@ faq:
 
 **Excel / Google Sheets template that lets you fill in your actual public-cloud spend and get an honest TCO comparison against private cloud. Models hidden costs (egress, idle resources, commitment underutilization, hyperscaler-managed-service premiums) plus realistic destination costs (hardware, datacenter, platform-team capacity, ops). Used by Aenix during cost workstream of Platform Readiness Assessment.**
 
-> **Pairs with:** any **[Ænix Platform Edition](/products/)** — repatriation destination depends on buyer profile. If you sell cloud to customers → Provider Edition. If you run it for your own organisation → Enterprise Edition. GPU-heavy either way → add the AI & GPU module.
+> **Pairs with:** any **[Ænix Platform Edition](/products/)** — repatriation destination depends on buyer profile. If you sell cloud to customers → Public Cloud Platform. If you run it for your own organisation → Private Cloud Platform. GPU-heavy either way → add the AI Platform.
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" >}}

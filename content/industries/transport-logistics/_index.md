@@ -45,7 +45,7 @@ faq:
 
 **Transport and logistics operators in 2026 face: NIS2 essential-entity classification (transport sector is in scope under Annex I), AI-driven optimization (route, demand, predictive maintenance), edge compute requirements (vehicles, depots, ports, terminals), and increasing data-sovereignty pressure for cross-border logistics data. The architectural answer is a coherent platform that runs at HQ, regional sites, and edge — under one operational model.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — multi-DC + edge architecture, NIS2 compliance, sovereign-cloud option for cross-border logistics data.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — multi-DC + edge architecture, NIS2 compliance, sovereign-cloud option for cross-border logistics data.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

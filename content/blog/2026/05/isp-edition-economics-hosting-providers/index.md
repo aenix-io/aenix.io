@@ -1,17 +1,17 @@
 ---
-title: "Provider Edition economics — when a turnkey cloud-in-a-box pays back for hosting providers"
-description: "Unit economics of Ænix Platform Provider Edition for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
+title: "Public Cloud Platform economics — when a turnkey cloud-in-a-box pays back for hosting providers"
+description: "Unit economics of Ænix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]
 language: "en"
 companion_landing: "/products/public-cloud-platform/"
-companion_label: "See Provider Edition product details →"
+companion_label: "See Public Cloud Platform product details →"
 quiz:
-  title: "Test yourself: Provider Edition unit economics"
+  title: "Test yourself: Public Cloud Platform unit economics"
   questions:
-    - q: "What is the published entry price for Provider Edition Basic support tier?"
+    - q: "What is the published entry price for Public Cloud Platform Basic support tier?"
       options:
         - { text: "From $1,250 per month covering 10 nodes", correct: true }
         - { text: "€500 per month for unlimited nodes and tenants", correct: false }
@@ -23,27 +23,27 @@ quiz:
         - { text: "Around €80 to €100 per tenant per month", correct: false }
         - { text: "Around €20 to €40 per tenant per month", correct: true }
       explanation: "The unit economics section calculates €15-30/month direct infra cost plus €5-10 platform-team allocation across 500 tenants, landing at €20-40/month all-in per typical tenant at the lower end of resource consumption."
-    - q: "Around what break-even tenant count does the article say Provider Edition starts to make economic sense?"
+    - q: "Around what break-even tenant count does the article say Public Cloud Platform starts to make economic sense?"
       options:
         - { text: "Roughly 100 to 200 paying tenants", correct: false }
         - { text: "Roughly 1,000 to 2,000 paying tenants", correct: true }
         - { text: "Roughly 10,000 or more paying tenants", correct: false }
       explanation: "The break-even math section computes total monthly fixed cost of €50-90k and with €40-80/month margin per tenant, break-even sits at roughly 1,000-2,000 paying tenants depending on ARPU mix."
-    - q: "Which of these is identified as the biggest single failure mode for Provider Edition providers in the pipeline?"
+    - q: "Which of these is identified as the biggest single failure mode for Public Cloud Platform providers in the pipeline?"
       options:
         - { text: "Customer-facing portal getting under-invested", correct: false }
         - { text: "Operations team undersized for 18-month-out volume", correct: true }
         - { text: "Service catalog exposing services ops can't operate", correct: false }
       explanation: "The article calls the operations under-staffing 'the biggest single failure mode in our pipeline': 4-person ops teams that worked at 50 customers can't scale at 200+, SLA breaches multiply, churn picks up."
-    - q: "Why does the article say providers below ~300 customers are usually NOT a fit for Provider Edition?"
+    - q: "Why does the article say providers below ~300 customers are usually NOT a fit for Public Cloud Platform?"
       options:
         - { text: "Cozystack technically cannot scale to that small a tenant count", correct: false }
         - { text: "EU regulators forbid commercial clouds with under 300 tenants", correct: false }
         - { text: "The fixed-cost stack overwhelms the margin contribution at that scale", correct: true }
-      explanation: "The article explicitly says 'for providers below ~300 customers, Provider Edition is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
+      explanation: "The article explicitly says 'for providers below ~300 customers, Public Cloud Platform is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
 ---
 
-**Long-form companion to the [Provider Edition landing](/products/public-cloud-platform/). Walks through the unit economics, infrastructure cost, platform-team capacity, and payback profile for hosting providers evaluating Ænix Platform Provider Edition — versus continuing on VMware, OpenStack, or per-customer-built infrastructure.**
+**Long-form companion to the [Public Cloud Platform landing](/products/public-cloud-platform/). Walks through the unit economics, infrastructure cost, platform-team capacity, and payback profile for hosting providers evaluating Ænix Public Cloud Platform — versus continuing on VMware, OpenStack, or per-customer-built infrastructure.**
 
 Most "should we build our own cloud product?" conversations at hosting
 providers stop at the technology question. The harder question is the
@@ -55,9 +55,9 @@ the technology decision is settled (Cozystack-based Ænix Platform ISP
 Edition) and focuses on whether the economics fit *your* hosting
 business — not the abstract one.
 
-## What Provider Edition actually delivers
+## What Public Cloud Platform actually delivers
 
-Before economics, scope. Provider Edition is the turnkey cloud-in-a-box
+Before economics, scope. Public Cloud Platform is the turnkey cloud-in-a-box
 Aenix sells to hosting providers, MSPs, regional clouds, and small-to-
 mid data centres. It includes:
 
@@ -82,7 +82,7 @@ depth.
 
 ## Pricing model
 
-Provider Edition is the only Ænix Platform edition with a published entry
+Public Cloud Platform is the only Ænix Platform edition with a published entry
 price: from **$1,250/month** for the Basic support tier covering 10
 nodes. Higher tiers (Standard, Enterprise) add SLA, dedicated TAM,
 24×7 response, with pricing on RFP. Aenix does not charge per VM,
@@ -137,7 +137,7 @@ post-Broadcom 2026 reality.
 
 The other CFO question: *how many customers until we make money?*
 
-The fixed cost stack for a mid-size hosting provider on Provider Edition:
+The fixed cost stack for a mid-size hosting provider on Public Cloud Platform:
 
 | Item | Monthly | Annual |
 |---|---|---|
@@ -157,10 +157,10 @@ mix and where you are in the salary band.
 For providers currently running ~500 customers on legacy infrastructure
 who are evaluating the move, this matters: you need a credible path to
 double tenant count within 18-24 months for the economics to actually
-work. Without growth, Provider Edition is a cost reduction (modest) but not
+work. Without growth, Public Cloud Platform is a cost reduction (modest) but not
 a transformation.
 
-For providers below ~300 customers, Provider Edition is often *premature* —
+For providers below ~300 customers, Public Cloud Platform is often *premature* —
 the fixed-cost stack overwhelms the margin contribution. We'll say so
 in a discovery call rather than push the engagement.
 
@@ -190,7 +190,7 @@ cohorts is the standard playbook.
 
 ### 3. Operations team under-staffed for growth
 
-The biggest single failure mode in our pipeline: Provider Edition deployed,
+The biggest single failure mode in our pipeline: Public Cloud Platform deployed,
 launches successfully, signs 200 customers in the first quarter — and
 then the 4-person operations team that worked at 50 customers can't
 scale. Customer support response time degrades, SLA breaches multiply,
@@ -199,7 +199,7 @@ churn picks up.
 Plan operations team size for 18-month-out customer count, not current.
 Hire ahead.
 
-## How Provider Edition compares to alternatives for hosting providers
+## How Public Cloud Platform compares to alternatives for hosting providers
 
 **Versus VMware Cloud Director (vCD):**
 
@@ -207,7 +207,7 @@ vCD is the historical incumbent for hosting providers. Post-Broadcom,
 subscription pricing has reshaped the math — 2-5× increases on
 renewal, mandatory VCF bundling, end of perpetual licensing. For most
 providers running vCD today, the renewal cycle is the trigger.
-Cozystack Provider Edition migration path is documented; we've shipped it
+Cozystack Public Cloud Platform migration path is documented; we've shipped it
 for several providers. Engagement scope: 6-18 months depending on
 estate size.
 
@@ -217,7 +217,7 @@ OpenStack remains valid for providers with deep OpenStack expertise
 and large-scale (>500 nodes) deployments where operational complexity
 is amortised. For mid-size providers, OpenStack's operational footprint
 (50+ services, distinct upgrade lifecycles per component) overshoots
-what the team can sustain. Provider Edition substantially smaller surface.
+what the team can sustain. Public Cloud Platform substantially smaller surface.
 
 **Versus building it yourself on vanilla Kubernetes + KubeVirt + Helm:**
 
@@ -227,7 +227,7 @@ maintenance versus a turnkey deployment. We've seen both work; the
 build-it-yourself path is the right choice when you have a 10+ engineer
 platform team and the components match your specific operational
 preferences. For the typical mid-size provider with a 3-5 engineer
-platform team, Provider Edition wins on time-to-market and operational
+platform team, Public Cloud Platform wins on time-to-market and operational
 predictability.
 
 **Versus a hyperscaler-managed cloud product (white-label):**
@@ -239,7 +239,7 @@ typically lower, and sovereignty positioning is weaker (the provider
 still depends on the hyperscaler, which European customers
 increasingly view as a structural risk).
 
-## When Provider Edition is the right answer
+## When Public Cloud Platform is the right answer
 
 It fits when at least three of the following hold:
 
@@ -264,7 +264,7 @@ managed-cloud-product as a smaller-margin route.
 
 ## Engagement structure
 
-For providers where Provider Edition fits:
+For providers where Public Cloud Platform fits:
 
 - **Discovery call** (30 min, free)
 - **Architecture assessment** (1-2 weeks, fixed-price) — current
@@ -283,7 +283,7 @@ months depending on estate complexity and team readiness.
 
 ## Where to dig deeper
 
-- **[Provider Edition landing page](/products/public-cloud-platform/)** —
+- **[Public Cloud Platform landing page](/products/public-cloud-platform/)** —
   feature list, pricing block, FAQ
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   hosting-provider-specific positioning

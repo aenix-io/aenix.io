@@ -23,7 +23,7 @@ quick_facts:
   - label: "Regulatorik"
     value: "Unterstützt DORA, NIS2, sektorale Vorgaben und souveräne Cloud-Mandate durch Jurisdiktions- und Schlüsselkontrolle"
   - label: "Engagement"
-    value: "the AI & GPU module of Ænix Platform (produktisiert) plus Aenix-Aufbau und -Betrieb; für breitere souveräne Cloud kombinierbar mit Enterprise Edition"
+    value: "Ænix AI Platform (produktisiert) plus Aenix-Aufbau und -Betrieb; für breitere souveräne Cloud kombinierbar mit Private Cloud Platform"
 faq:
   - q: "Was unterscheidet souveräne KI von Hyperscaler-KI-Services?"
     a: "Bei souveräner KI läuft das Modell auf Ihrer Hardware in Ihrer Jurisdiktion, die Modellgewichte stehen unter Ihrer Kontrolle und Daten — Prompts, Completions, Embeddings, Trainingsdaten — verlassen Ihren Perimeter nie. Hyperscaler-Services verarbeiten Daten in fremder Infrastruktur und Jurisdiktion, was bei regulierten Datenklassen oder Air-gap-Anforderungen nicht praktikabel ist."
@@ -32,9 +32,9 @@ faq:
   - q: "Hilft souveräne KI bei DORA- und NIS2-Compliance?"
     a: "Ja. Indem KI-Verarbeitung an die gewählte Jurisdiktion gebunden, unter kundenkontrollierten Schlüsseln betrieben und reproduzierbar sowie auditbereit gehalten wird, unterstützt souveräne KI-Infrastruktur DORA, NIS2, sektorale Vorgaben und souveräne Cloud-Mandate. Kombinierbar mit der Datensouveränitäts- und DORA-Compliance-Lösung."
   - q: "Auf welcher Technologie basiert die Plattform?"
-    a: "Auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0. Es nutzt KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRD-basierte Mandantenfähigkeit. Vector DB und Object Storage sind in der AI & GPU inkludiert."
+    a: "Auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0. Es nutzt KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRD-basierte Mandantenfähigkeit. Vector DB und Object Storage sind in der AI Platform inkludiert."
   - q: "Was kostet die Ænix Platform?"
-    a: "Die Preisstufen sind Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise (Custom). Aenix bietet die produktisierte the AI & GPU module of Ænix Platform plus Aufbau- und Betriebs-Services."
+    a: "Die Preisstufen sind Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise (Custom). Aenix bietet die produktisierte Ænix AI Platform plus Aufbau- und Betriebs-Services."
   - q: "Ist Air-gap- oder Restricted-egress-Betrieb möglich?"
     a: "Ja. Souveräne KI ist explizit für Air-gap- und Restricted-egress-Anforderungen ausgelegt: Inferenz läuft auf eigenen GPUs, Modelle und Daten bleiben innerhalb der kundenkontrollierten Umgebung, und das Modellverhalten lässt sich reproduzierbar und auditbereit halten."
 ---
@@ -45,7 +45,7 @@ faq:
 
 Aenix baut und betreibt souveräne KI-Infrastruktur für Organisationen, deren Datenklasse, Regulator oder Wirtschaftlichkeit Hyperscaler-KI-Services unpraktikabel machen. Ergebnis: eine Architektur, ein Deployment und ein Betriebsmodell, das Ihr Team tatsächlich selbst betreiben kann.
 
-> **Passt zu:** **[the AI & GPU module of Ænix Platform](/de/produkte/ai-platform/)** — KI-Plattform-Automatisierung out-of-the-box (Multi-Tenant-GPU-Scheduling für H100/H200/L40S/A100/Blackwell, fertige Blueprints für Inferenz + Fine-Tuning + RAG, Vector DB + Object Storage inkludiert, Souveränitätskontrollen). Für regulierte KI-Workloads auf einer breiteren souveränen Cloud: kombinieren mit [Enterprise Edition](/de/produkte/private-cloud-platform/). Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — KI-Plattform-Automatisierung out-of-the-box (Multi-Tenant-GPU-Scheduling für H100/H200/L40S/A100/Blackwell, fertige Blueprints für Inferenz + Fine-Tuning + RAG, Vector DB + Object Storage inkludiert, Souveränitätskontrollen). Für regulierte KI-Workloads auf einer breiteren souveränen Cloud: kombinieren mit [Private Cloud Platform](/de/produkte/private-cloud-platform/). Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -87,7 +87,7 @@ Trifft keiner dieser Punkte zu, ist souveräne KI Over-Engineering. Treffen drei
 <div class="diagram">
 <div class="diagram__node"><b>GenAI, Inferenz, Fine-Tuning</b><div class="diagram__chips"><span>Open-Weight-Modelle</span><span>Llama, Mistral, Qwen</span></div></div>
 <div class="diagram__conn">laufen auf</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack auf kundeneigener Hardware</b><div class="diagram__chips"><span>AI & GPU</span><span>A100 / H100 / H200 / L40S / Blackwell</span><span>kundenkontrollierte Schlüssel</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack auf kundeneigener Hardware</b><div class="diagram__chips"><span>AI Platform</span><span>A100 / H100 / H200 / L40S / Blackwell</span><span>kundenkontrollierte Schlüssel</span></div></div>
 <div class="diagram__conn">halten</div>
 <div class="diagram__node"><b>Daten im eigenen Perimeter</b><div class="diagram__chips"><span>verlassen den Perimeter nie</span><span>gewählte Jurisdiktion</span></div></div>
 </div>

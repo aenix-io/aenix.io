@@ -20,7 +20,7 @@ language: "en"
 <div class="diagram__conn">compare &amp; migrate</div>
 <div class="diagram__node"><b>Migration hubs</b><div class="diagram__chips"><span>VMware</span><span>OpenStack</span><span>Proxmox</span><span>CloudStack</span></div></div>
 <div class="diagram__conn">land on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Provider Edition</span><span>Enterprise Edition</span><span>Developer Self-Service</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Public Cloud Platform</span><span>Private Cloud Platform</span><span>Developer Self-Service</span></div></div>
 </div>
 </div>
 
@@ -33,7 +33,7 @@ Post-Broadcom, VMware customers face subscription pressure + license model uncer
 - **[Cozystack vs VMware](/compare/cozystack-vs-vmware/)** — direct head-to-head architectural comparison
 - **[VMware migration hub](/migration/vmware/)** — strategy + architecture + cohort migration patterns
 
-**Pairs with:** Provider Edition (hosting providers exiting VMware Cloud Director); Enterprise Edition (regulated enterprises exiting VMware Cloud Foundation); Provider Edition (large operators).
+**Pairs with:** Public Cloud Platform (hosting providers exiting VMware Cloud Director); Private Cloud Platform (regulated enterprises exiting VMware Cloud Foundation); Public Cloud Platform (large operators).
 
 ## OpenStack
 
@@ -43,17 +43,17 @@ OpenStack runs at scale but operationally heavy. Common modernization trigger �
 - **[Cozystack vs OpenStack](/compare/cozystack-vs-openstack/)** — direct comparison
 - **[OpenStack migration hub](/migration/openstack/)** — modernization patterns
 
-**Pairs with:** Provider Edition or Provider Edition.
+**Pairs with:** Public Cloud Platform or Public Cloud Platform.
 
 ## Proxmox
 
-Proxmox is excellent for small environments. Beyond a certain scale, multi-tenancy + service catalog + billing become limiting. Provider Edition fills that gap.
+Proxmox is excellent for small environments. Beyond a certain scale, multi-tenancy + service catalog + billing become limiting. Public Cloud Platform fills that gap.
 
 - **[Proxmox alternative](/alternatives/proxmox-alternative/)** — when Proxmox isn't enough
 - **[Cozystack vs Proxmox](/compare/cozystack-vs-proxmox/)** — direct comparison
 - **[Proxmox migration hub](/migration/proxmox/)** — migration patterns
 
-**Pairs with:** Provider Edition.
+**Pairs with:** Public Cloud Platform.
 
 ## OpenShift
 
@@ -62,7 +62,7 @@ OpenShift is enterprise-grade but Red Hat subscription model + opinionated appro
 - **[OpenShift alternative](/alternatives/openshift-alternative/)** — when to look beyond OpenShift
 - **[Cozystack vs OpenShift](/compare/cozystack-vs-openshift/)** — direct comparison
 
-**Pairs with:** Enterprise Edition or Developer Self-Service.
+**Pairs with:** Private Cloud Platform or Developer Self-Service.
 
 ## Nutanix
 
@@ -70,7 +70,7 @@ Nutanix HCI strong; cloud platform layer (Era, etc.) competitive but proprietary
 
 - **[Nutanix alternative](/alternatives/nutanix-alternative/)** — when to look beyond Nutanix
 
-**Pairs with:** Enterprise Edition.
+**Pairs with:** Private Cloud Platform.
 
 ## Backstage
 
@@ -86,7 +86,7 @@ CloudStack legacy environments — modernization patterns to Cozystack-based sta
 
 - **[CloudStack migration hub](/migration/cloudstack/)** — migration patterns
 
-**Pairs with:** Provider Edition or Provider Edition.
+**Pairs with:** Public Cloud Platform or Public Cloud Platform.
 
 ---
 

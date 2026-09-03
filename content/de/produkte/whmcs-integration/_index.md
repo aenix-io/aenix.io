@@ -54,7 +54,7 @@ aliases:
 
 **Verkaufen Sie Kubernetes-Cluster, Managed Datenbanken, virtuelle Maschinen, Message-Broker, Objektspeicher und GPU direkt aus WHMCS. Ihre Kunden bestellen, Sie rechnen ab, Cozystack provisioniert — ohne separate Control Plane, ohne Rip-and-Replace.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** — die vollständige Hosting-Anbieter-Edition (gebrandetes Portal, Katalog, Support), zu der diese WHMCS-Integration gehört. Neu bei Cozystack? Starten Sie mit **[Cozystack](/de/produkte/cozystack/)**.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — die vollständige Hosting-Anbieter-Edition (gebrandetes Portal, Katalog, Support), zu der diese WHMCS-Integration gehört. Neu bei Cozystack? Starten Sie mit **[Cozystack](/de/produkte/cozystack/)**.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -132,7 +132,7 @@ Nicht auf WHMCS oder etwas anderes im Einsatz? Wir helfen Hostern und Clouds auc
 - **zu integrieren** — Cozystack und Abrechnung mit anderen Control-Panels.
 - **zu paketieren** — die konkreten Apps und Services, die Ihre Kunden nachfragen.
 
-Gerade wenn Sie schon auf WHMCS sind, ist das der schnellste Weg, Kubernetes, Datenbanken, VMs und GPU zu verkaufen und mehr aus Ihren bestehenden Kunden zu erlösen. Siehe die **[Provider Edition](/de/produkte/public-cloud-platform/)** und die anonymisierte **[Fallstudie souveräne Public Cloud](/de/case-studies/sovereign-public-cloud/)**.
+Gerade wenn Sie schon auf WHMCS sind, ist das der schnellste Weg, Kubernetes, Datenbanken, VMs und GPU zu verkaufen und mehr aus Ihren bestehenden Kunden zu erlösen. Siehe die **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** und die anonymisierte **[Fallstudie souveräne Public Cloud](/de/case-studies/sovereign-public-cloud/)**.
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*

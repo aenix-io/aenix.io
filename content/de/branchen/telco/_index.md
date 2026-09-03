@@ -39,9 +39,9 @@ faq:
   - q: "Kann dieselbe Plattform an Core und Edge laufen?"
     a: "Ja. Cozystack läuft mit identischem Stack im Core-Rechenzentrum, an Regionalstandorten und am Customer-Edge. Operatoren betreiben Central-Core, Regional und Customer-Edge unter einem einheitlichen Operations-Modell statt getrennter Werkzeugketten je Standort."
   - q: "Eignet sich die Plattform für souveräne Cloud-Produkte gegenüber Endkunden?"
-    a: "Ja. Die Mandantenfähigkeit über das Tenant-CRD erlaubt Operatoren, kundenseitige souveräne Cloud-Produkte zu starten. Die Ænix Platform Provider Edition ist auf souveräne Cloud-Launches im Multi-Region-Scale ausgelegt."
+    a: "Ja. Die Mandantenfähigkeit über das Tenant-CRD erlaubt Operatoren, kundenseitige souveräne Cloud-Produkte zu starten. Die Ænix Public Cloud Platform ist auf souveräne Cloud-Launches im Multi-Region-Scale ausgelegt."
   - q: "Erfüllt die Plattform NIS2 für Telekommunikations-Operatoren?"
-    a: "Telekommunikation gilt unter NIS2 als wesentliche Entität. Die Plattform unterstützt NIS2-konforme interne Cloud- und Edge-Architekturen; die Ænix Platform Enterprise Edition adressiert genau diese Compliance-Anforderungen."
+    a: "Telekommunikation gilt unter NIS2 als wesentliche Entität. Die Plattform unterstützt NIS2-konforme interne Cloud- und Edge-Architekturen; die Ænix Private Cloud Platform adressiert genau diese Compliance-Anforderungen."
   - q: "Welche Lizenzkosten entstehen für die Plattform-Software?"
     a: "Cozystack steht unter Apache 2.0 — keine CPU- oder Core-basierte Lizenzierung. Kommerziell bietet Aenix die produktisierte Ænix Platform plus Services in Stufen ab Basic 1.250 $/Monat (10 Nodes) bis Enterprise (individuell)."
   - q: "Gibt es namentliche Telco-Referenzen?"
@@ -52,7 +52,7 @@ faq:
 
 Aenix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), läuft an Core und Edge.
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Telcos, die kundenseitige souveräne Cloud-Produkte im Multi-Region-Maßstab launchen; **[Enterprise Edition](/de/produkte/private-cloud-platform/)** für NIS2-konforme interne Cloud- und Edge-Plattformen.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Telcos, die kundenseitige souveräne Cloud-Produkte im Multi-Region-Maßstab launchen; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für NIS2-konforme interne Cloud- und Edge-Plattformen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

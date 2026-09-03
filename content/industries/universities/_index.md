@@ -47,7 +47,7 @@ faq:
 
 Aenix builds Cozystack-based platforms for universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for sovereign student-data + multi-tenant research-group isolation; **[AI & GPU](/products/ai-platform/)** for AI/ML research labs with GPU pools.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for sovereign student-data + multi-tenant research-group isolation; **[AI Platform](/products/ai-platform/)** for AI/ML research labs with GPU pools.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

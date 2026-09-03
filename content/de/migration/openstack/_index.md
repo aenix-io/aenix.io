@@ -21,7 +21,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Für wen"
-    value: "Hosting-Anbieter und regionale Clouds (Provider Edition); große Betreiber, die OpenStack im großen Maßstab konsolidieren (Provider Edition)"
+    value: "Hosting-Anbieter und regionale Clouds (Public Cloud Platform); große Betreiber, die OpenStack im großen Maßstab konsolidieren (Public Cloud Platform)"
   - label: "Migrationsablauf"
     value: "Architektur-Review → Parallel-Deployment → Workload-Migration nach Klasse → Decommission"
   - label: "Dauer"
@@ -46,7 +46,7 @@ faq:
 
 **OpenStack bleibt valide, wo tiefe Expertise lebt. Wo Engineer-Verfügbarkeit und operativer Footprint Modernisierung erzwingen, ist Cozystack die realistische nächste Plattform. Aenix führt OpenStack-zu-Cozystack-Migrationen durch.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter und regionale Clouds; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter und regionale Clouds; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

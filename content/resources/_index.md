@@ -20,7 +20,7 @@ language: "en"
 <div class="diagram__conn">download &amp; self-assess</div>
 <div class="diagram__node"><b>Engagement</b><div class="diagram__chips"><span>Discovery call</span><span>Platform Readiness Assessment</span></div></div>
 <div class="diagram__conn">leads to</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Enterprise Edition</span><span>AI & GPU</span><span>Developer Self-Service</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Private Cloud Platform</span><span>AI Platform</span><span>Developer Self-Service</span></div></div>
 </div>
 </div>
 
@@ -28,8 +28,8 @@ language: "en"
 
 ### Compliance checklists
 
-- **[DORA Compliance Cloud Architecture Checklist](/resources/dora-compliance-checklist/)** — 35-point PDF checklist covering DORA Articles 21, 23, 28, 29, 30. For CISOs and cloud architects in financial services and ICT third-party providers. Pairs with: Enterprise Edition / [DORA solution](/solutions/dora-compliance/).
-- **[NIS2 Compliance Cloud Architecture Checklist](/resources/nis2-compliance-checklist/)** — 35-point PDF checklist covering NIS2 Articles 21, 23, 30. For essential and important entities. Pairs with: Enterprise Edition / [NIS2 solution](/solutions/nis2-compliance/).
+- **[DORA Compliance Cloud Architecture Checklist](/resources/dora-compliance-checklist/)** — 35-point PDF checklist covering DORA Articles 21, 23, 28, 29, 30. For CISOs and cloud architects in financial services and ICT third-party providers. Pairs with: Private Cloud Platform / [DORA solution](/solutions/dora-compliance/).
+- **[NIS2 Compliance Cloud Architecture Checklist](/resources/nis2-compliance-checklist/)** — 35-point PDF checklist covering NIS2 Articles 21, 23, 30. For essential and important entities. Pairs with: Private Cloud Platform / [NIS2 solution](/solutions/nis2-compliance/).
 
 ### Migration & cost worksheets
 
@@ -38,7 +38,7 @@ language: "en"
 
 ### Decision guides + maturity models
 
-- **[Sovereign AI Architecture Decision Guide](/resources/sovereign-ai-decision-guide/)** — 14-page PDF with foldout master decision tree. 7 decisions, 4 reference architectures, GPU sizing tables. Pairs with: AI & GPU / [Sovereign AI solution](/solutions/sovereign-ai/).
+- **[Sovereign AI Architecture Decision Guide](/resources/sovereign-ai-decision-guide/)** — 14-page PDF with foldout master decision tree. 7 decisions, 4 reference architectures, GPU sizing tables. Pairs with: AI Platform / [Sovereign AI solution](/solutions/sovereign-ai/).
 - **[Platform Engineering Maturity Assessment](/resources/platform-engineering-maturity-assessment/)** — 8-dimension × 5-stage rubric (PDF + optional interactive web form). Scores your platform engineering practice + recommends priority investment. Pairs with: Developer Self-Service / [Internal developer platform service](/services/internal-developer-platform/).
 
 ---
@@ -73,11 +73,11 @@ You can opt out of the nurture sequence at any time.
 
 | Resource | Pairs with engagement |
 |---|---|
-| DORA Checklist | DORA-aligned readiness engagement (4-6 weeks); Enterprise Edition build |
-| NIS2 Checklist | NIS2-aligned readiness engagement (4-6 weeks); Enterprise Edition build |
+| DORA Checklist | DORA-aligned readiness engagement (4-6 weeks); Private Cloud Platform build |
+| NIS2 Checklist | NIS2-aligned readiness engagement (4-6 weeks); Private Cloud Platform build |
 | VMware Migration Checklist | Platform Readiness Assessment (5-10 days) → cohort migration |
 | Cloud Repatriation TCO Worksheet | Platform Readiness Assessment with cost workstream emphasis |
-| Sovereign AI Decision Guide | Sovereign AI architecture review (1-2 weeks); AI & GPU build |
+| Sovereign AI Decision Guide | Sovereign AI architecture review (1-2 weeks); AI Platform build |
 | Platform Engineering Maturity Assessment | Platform Readiness Assessment with IDP focus; Developer Self-Service build |
 
 </div>

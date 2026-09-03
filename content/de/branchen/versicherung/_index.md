@@ -29,12 +29,12 @@ quick_facts:
   - label: "Technologie-Basis"
     value: "Cozystack: KubeVirt (VMs + Container), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Engagement"
-    value: "Ænix Platform Enterprise Edition für die regulierte Cloud-Foundation, AI & GPU für Schadenfall- und Underwriting-KI"
+    value: "Ænix Private Cloud Platform für die regulierte Cloud-Foundation, AI Platform für Schadenfall- und Underwriting-KI"
 faq:
   - q: "Wie hilft die Plattform bei der DORA-Compliance?"
-    a: "Die Ænix Platform Enterprise Edition liefert eine regulierte Cloud-Foundation mit Kontrollen nach DORA Artikel 21/23/24. Mandantentrennung über Tenant-CRDs, Audit-Bereitschaft und Datenresidenz pro Markt adressieren ICT-Drittanbieter-Konzentrationsrisiken. Eine kostenlose DORA-Compliance-Checkliste steht auf der Ressourcen-Seite bereit."
+    a: "Die Ænix Private Cloud Platform liefert eine regulierte Cloud-Foundation mit Kontrollen nach DORA Artikel 21/23/24. Mandantentrennung über Tenant-CRDs, Audit-Bereitschaft und Datenresidenz pro Markt adressieren ICT-Drittanbieter-Konzentrationsrisiken. Eine kostenlose DORA-Compliance-Checkliste steht auf der Ressourcen-Seite bereit."
   - q: "Kann KI auf regulierten Versicherungsdaten betrieben werden?"
-    a: "Ja. Die AI & GPU betreibt Schadenfall-KI und Underwriting-Modelle auf historischen, regulierten Daten unter Souveränitätskontrollen. Die Daten verlassen die selbstbestimmte Plattform nicht, was Datenresidenz- und Compliance-Anforderungen erfüllt."
+    a: "Ja. Die AI Platform betreibt Schadenfall-KI und Underwriting-Modelle auf historischen, regulierten Daten unter Souveränitätskontrollen. Die Daten verlassen die selbstbestimmte Plattform nicht, was Datenresidenz- und Compliance-Anforderungen erfüllt."
   - q: "Eignet sich die Plattform für grenzüberschreitende Versicherer?"
     a: "Ja. Multi-Jurisdiktions-Souveränität ist ein Kernanwendungsfall: Datenresidenz wird pro Markt durchgesetzt, sodass grenzüberschreitende Versicherer und Rückversicherer unterschiedliche regulatorische Anforderungen auf einer kohärenten Plattform abbilden können."
   - q: "Warum von Hyperscalern auf eine souveräne Plattform wechseln?"
@@ -49,7 +49,7 @@ faq:
 
 Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zentralasien.
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für die DORA-konforme regulierte Cloud-Foundation; **[AI & GPU](/de/produkte/ai-platform/)** für Schadenbearbeitungs-KI und Underwriting-KI-Workloads auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für die DORA-konforme regulierte Cloud-Foundation; **[AI Platform](/de/produkte/ai-platform/)** für Schadenbearbeitungs-KI und Underwriting-KI-Workloads auf regulierten Daten. Kostenlose [DORA-Compliance-Checkliste →](/de/ressourcen/dora-compliance-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -72,7 +72,7 @@ Aenix baut Plattformen für Versicherungs-Organisationen in der EU, DACH und Zen
 <div class="diagram">
 <div class="diagram__node"><b>Versicherungs-Workloads</b><div class="diagram__chips"><span>VMs und Container</span><span>Schaden-, Underwriting-, Fraud-Detection-KI</span></div></div>
 <div class="diagram__conn">laufen auf</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Enterprise Edition</span><span>AI & GPU</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
 <div class="diagram__conn">basiert auf</div>
 <div class="diagram__node"><b>Cozystack</b><div class="diagram__chips"><span>Eine Kubernetes-API (KubeVirt)</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Apache 2.0, CNCF</span></div></div>
 <div class="diagram__conn">trennt Business Units über</div>

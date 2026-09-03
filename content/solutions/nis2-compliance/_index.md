@@ -12,7 +12,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **NIS2 compliance for cloud infrastructure means aligning your platform architecture with the EU NIS2 Directive (EU 2022/2555), which imposes cybersecurity risk-management (Article 21), incident reporting at 24-hour, 72-hour, and one-month timelines (Article 23), and ICT supply-chain risk obligations on essential and important entities and the ICT third parties serving them. Aenix runs NIS2-aligned platform readiness engagements that produce a control-level map, supply-chain mapping to the second hop, an incident-detection capability assessment, and an architecture-level remediation plan, delivered by EU-based engineers. The Aenix Platform Enterprise Edition is NIS2-aligned by design, built on Cozystack — an Apache 2.0, CNCF project providing Tenant CRD multi-tenancy, Cilium (eBPF) segmentation, customer-controlled encryption, and audit-ready logging.**
+  **NIS2 compliance for cloud infrastructure means aligning your platform architecture with the EU NIS2 Directive (EU 2022/2555), which imposes cybersecurity risk-management (Article 21), incident reporting at 24-hour, 72-hour, and one-month timelines (Article 23), and ICT supply-chain risk obligations on essential and important entities and the ICT third parties serving them. Aenix runs NIS2-aligned platform readiness engagements that produce a control-level map, supply-chain mapping to the second hop, an incident-detection capability assessment, and an architecture-level remediation plan, delivered by EU-based engineers. The Aenix Private Cloud Platform is NIS2-aligned by design, built on Cozystack — an Apache 2.0, CNCF project providing Tenant CRD multi-tenancy, Cilium (eBPF) segmentation, customer-controlled encryption, and audit-ready logging.**
 quick_facts:
   - label: "What it is"
     value: "A NIS2-aligned platform readiness engagement that maps your cloud architecture against the EU NIS2 Directive (EU 2022/2555) and produces an architecture-level remediation plan."
@@ -50,7 +50,7 @@ faq:
 
 Aenix runs NIS2-aligned platform readiness engagements for in-scope entities and the ICT third parties serving them. Output: a control-level map of where you stand today, where the gaps are, and what an architecture-level remediation plan looks like.
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** — NIS2-aligned by design (Articles 21 risk management, 23 incident reporting, 30 coordinated vulnerability disclosure). Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — NIS2-aligned by design (Articles 21 risk management, 23 incident reporting, 30 coordinated vulnerability disclosure). Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging. Free [NIS2 Compliance Checklist →](/resources/nis2-compliance-checklist/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

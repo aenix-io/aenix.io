@@ -107,7 +107,7 @@ Two editions, split by one question: are you selling cloud to other people, or r
   <a href="/products/public-cloud-platform/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">You sell cloud</div>
-      <h3 class="card-title">Provider Edition</h3>
+      <h3 class="card-title">Public Cloud Platform</h3>
       <p class="card-description"><strong>You're a:</strong> hosting provider, MSP, regional cloud or data centre — or a telco, national operator or bank running a commercial cloud. Billing, payments, white-label portal, tenant isolation, multi-region when you need it.</p>
       <p class="card-meta">From $1,250 / month; operator scale per RFP</p>
       <span class="card-link">Explore →</span>
@@ -119,7 +119,7 @@ Two editions, split by one question: are you selling cloud to other people, or r
   <a href="/products/private-cloud-platform/" class="card card--edition">
     <div class="card-body">
       <div class="card-tag">You run your own cloud</div>
-      <h3 class="card-title">Enterprise Edition</h3>
+      <h3 class="card-title">Private Cloud Platform</h3>
       <p class="card-description"><strong>You're a:</strong> regulated enterprise — bank, insurer, public sector, energy, healthcare, telco. DORA- and NIS2-aligned controls, customer-held keys, audit-ready logging, air-gap, multi-DC.</p>
       <p class="card-meta">Multi-year programme, per RFP</p>
       <span class="card-link">Explore →</span>

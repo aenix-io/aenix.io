@@ -33,7 +33,7 @@ faq:
   - q: "How does the cost model differ?"
     a: "OpenShift Virtualization uses a Red Hat per-CPU subscription. Cozystack is Apache 2.0 with no per-CPU or per-core licensing; you can run it free or buy the productized Ænix Platform with support, starting at Basic $1,250/mo for 10 nodes."
   - q: "Is Cozystack a viable OpenShift alternative for enterprises?"
-    a: "Yes, particularly for open-source-first organizations and service providers, and for teams planning a Red Hat or IBM exit. Aenix offers the Enterprise Edition and migration guidance. See the OpenShift alternative page for migration specifics."
+    a: "Yes, particularly for open-source-first organizations and service providers, and for teams planning a Red Hat or IBM exit. Aenix offers the Private Cloud Platform and migration guidance. See the OpenShift alternative page for migration specifics."
   - q: "How does multi-tenancy compare?"
     a: "OpenShift uses Project CRDs and namespaces. Cozystack uses a nested Tenant CRD, which lets you carve out isolated, self-service tenants within a single cluster, a model suited to service providers and internal developer platforms."
   - q: "Is Cozystack a CNCF project?"
@@ -44,7 +44,7 @@ faq:
 
 **Both KubeVirt-based. Different commercial models, different operational footprints.**
 
-> **Pairs with:** **[Ænix Platform Enterprise Edition](/products/private-cloud-platform/)** for regulated enterprises evaluating OpenShift alternative; **[Developer Self-Service](/products/private-cloud-platform/)** for product engineering teams.
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises evaluating OpenShift alternative; **[Developer Self-Service](/products/private-cloud-platform/)** for product engineering teams.
 
 <div class="compare-elevated compare-elevated--col3">
 

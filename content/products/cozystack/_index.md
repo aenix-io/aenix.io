@@ -28,7 +28,7 @@ faq:
   - q: "Is Cozystack free to use?"
     a: "Yes. Cozystack is open source under Apache 2.0 with no per-CPU or per-core licensing, so anyone can deploy it on their own or leased servers. Aenix's commercial Ænix Platform and support engagements on top are optional."
   - q: "What is the difference between Cozystack and Ænix Platform?"
-    a: "Cozystack is the open-source, community-governed CNCF project. Ænix Platform is Aenix's turnkey commercial cloud-in-a-box built on top of Cozystack, adding a hosting panel, billing, portals, payments, support, a productized installer, and enterprise SLA across two editions."
+    a: "Cozystack is the open-source, community-governed CNCF project. Ænix Platform is Aenix's turnkey commercial cloud-in-a-box built on top of Cozystack, adding a hosting panel, billing, portals, payments, support, a productized installer, and enterprise SLA across three platforms."
   - q: "How does Cozystack run both virtual machines and containers?"
     a: "Cozystack uses KubeVirt to run KVM-based virtual machines side by side with containers on the same Kubernetes API. VMs support live migration, snapshots, and templates, so legacy VM workloads and cloud-native containers share one control plane."
   - q: "Can Cozystack be deployed air-gapped?"
@@ -44,7 +44,7 @@ faq:
 
 **Cozystack is the open-source cloud platform Aenix created and maintains, and a CNCF project. It runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own — under one Kubernetes-native control plane with multi-tenant isolation. Apache 2.0 license, currently CNCF Sandbox (CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices badge.**
 
-This page describes Cozystack as Aenix's open-source product. The open-source project itself lives at **[cozystack.io](https://cozystack.io)** with documentation, install guides, and the community. For the turnkey commercial cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/)** with its two editions.
+This page describes Cozystack as Aenix's open-source product. The open-source project itself lives at **[cozystack.io](https://cozystack.io)** with documentation, install guides, and the community. For the turnkey commercial cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/)** with its three platforms.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>
@@ -124,7 +124,7 @@ cozyportal for self-service. Production-ready WHMCS billing integration with two
 
 - **Cozystack** — open-source platform. CNCF project (currently Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Community-governed. Anyone can deploy, contribute, fork.
 - **Aenix** — the open-core company that created and maintains Cozystack. Largest single contributor. Maker of Ænix Platform.
-- **Ænix Platform** — Aenix's turnkey commercial cloud-in-a-box on top of Cozystack. Two editions — Provider and Enterprise — with AI & GPU and Developer Self-Service modules on top. Adds hosting panel, billing, portals, payments, support, productized installer, enterprise SLA. **[Explore platform →](/products/)**.
+- **Ænix Platform** — Aenix's turnkey commercial cloud-in-a-box on top of Cozystack. Three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. Adds hosting panel, billing, portals, payments, support, productized installer, enterprise SLA. **[Explore platform →](/products/)**.
 - **cozystack.io** — official project site. Documentation, install, releases, community. Vendor-neutral, CNCF-aligned.
 - **aenix.io** (this site) — Aenix's commercial offering and product surface.
 
@@ -144,7 +144,7 @@ You can use Cozystack open-source without Aenix; Aenix's commercial offering (Æ
 
 Production deployments across the EU, DACH, and Central Asia. Customer base spans:
 
-- Service providers running multi-tenant cloud products (publicly: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy on Ænix Platform Provider Edition)
+- Service providers running multi-tenant cloud products (publicly: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy on Ænix Public Cloud Platform)
 - Banks and insurers under DORA / sectoral regulation (NDA until mid-2027)
 - Telecom operators with sovereign-cloud product launches (NDA)
 - AI / GPU operators with sustained inference workloads (NDA)
@@ -208,13 +208,13 @@ For specific use cases see:
 
 Cozystack the platform is **free** (Apache 2.0). Anyone can run it.
 
-For commercial Aenix support and the turnkey cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/)** — two editions plus two modules, with four support tiers (Basic from $1,250/month per 10 nodes; Standard $3,000; Plus $5,500; Enterprise Custom).
+For commercial Aenix support and the turnkey cloud-in-a-box on top of Cozystack, see **[Ænix Platform](/products/)** — three platforms plus two modules, with four support tiers (Basic from $1,250/month per 10 nodes; Standard $3,000; Plus $5,500; Enterprise Custom).
 
 Entry tier — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
 <div class="cta-row">
   <a class="cta-secondary" href="/pricing/">Pricing details →</a>
-  <a class="cta-secondary" href="/products/">All editions →</a>
+  <a class="cta-secondary" href="/products/">Compare platforms →</a>
 </div>
 
 <!-- /BLOCK 6 -->
@@ -235,11 +235,11 @@ Entry tier — **Pure Cozystack with Ænix Support** — for product teams runni
 - **[cozystack.io](https://cozystack.io)** — install, documentation, community
 - **[Cozystack architecture article](/blog/2026/05/cozystack-introduction-architecture/)**
 - **[Ænix Platform](/products/)** — turnkey commercial cloud-in-a-box on top of Cozystack
-  - [Provider Edition](/products/public-cloud-platform/) — for hosting providers
-  - [Enterprise Edition](/products/private-cloud-platform/) — for regulated enterprises
-  - [Provider Edition](/products/public-cloud-platform/) — for large operators
+  - [Public Cloud Platform](/products/public-cloud-platform/) — for hosting providers
+  - [Private Cloud Platform](/products/private-cloud-platform/) — for regulated enterprises
+  - [Public Cloud Platform](/products/public-cloud-platform/) — for large operators
   - [Developer Self-Service](/products/private-cloud-platform/) — for product engineering teams
-  - [AI & GPU](/products/ai-platform/) — for AI-heavy organizations
+  - [AI Platform](/products/ai-platform/) — for AI-heavy organizations
 - **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** — engagement methodology
 
 <!-- /BLOCK 8 -->

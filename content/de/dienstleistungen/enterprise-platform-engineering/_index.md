@@ -37,14 +37,14 @@ faq:
   - q: "Welche Lizenz gilt und gibt es Core-basierte Kosten?"
     a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Aenix verkauft die produktisierte Ænix Platform plus Services. Die Service-Stufen beginnen bei 1.250 $/Monat (Basic, 10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise nach Vereinbarung."
   - q: "Welche Ænix-Platform-Edition passt zu Enterprise Platform Engineering?"
-    a: "Die Enterprise Edition für regulierte Multi-DC-Plattformen und die Developer Self-Service für produkt-engineering-getriebene Internal Developer Platforms at Enterprise Scale. Beide bauen auf Cozystack auf und werden durch Implementierungs- und Betriebs-Services ergänzt."
+    a: "Die Private Cloud Platform für regulierte Multi-DC-Plattformen und die Developer Self-Service für produkt-engineering-getriebene Internal Developer Platforms at Enterprise Scale. Beide bauen auf Cozystack auf und werden durch Implementierungs- und Betriebs-Services ergänzt."
   - q: "Wie wird Governance und Compliance bei Enterprise-Scale abgebildet?"
     a: "Über Compliance-by-Design: Governance und Audit sind strukturell verankert, SLO-Disziplin gilt über alle Produkt-Teams hinweg, und Multi-Region-Operations sorgen für Konsistenz über Geografien. Die Plattform wird als Produkt mit Roadmap und internem NPS betrieben."
 ---
 
 **Enterprise Platform Engineering ist die Disziplin des Aufbauens und Betreibens interner Plattformen für Organisationen mit mehreren Produkt-Teams, Cross-BU-Isolation und nachhaltigem Scale. Es ist anderer Scope als "Platform Engineering für ein einzelnes Team" — Multi-Tenancy, Governance und Ops-at-Scale sind nicht verhandelbar.**
 
-> **Passt zu:** **[Ænix Platform Enterprise Edition](/de/produkte/private-cloud-platform/)** für regulierte Multi-DC-Plattformen; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für produkt-engineering-led IDP at enterprise scale.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Multi-DC-Plattformen; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für produkt-engineering-led IDP at enterprise scale.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

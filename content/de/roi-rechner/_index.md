@@ -59,7 +59,7 @@ Wenn Sie Managed Cloud an Ihre eigenen Kunden verkaufen, modelliert unser vollst
   <a class="cta-primary" href="/isp-calculator/">ISP-Unit-Economics-Rechner öffnen →</a>
 </div>
 
-Siehe die **[Provider Edition](/de/produkte/public-cloud-platform/)** für das Produkt hinter diesem Modell.
+Siehe die **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für das Produkt hinter diesem Modell.
 
 ---
 
@@ -69,7 +69,7 @@ Eigene GPUs auf der eigenen Plattform gegenüber der Miete gleichwertiger GPU-Ka
 
 {{< gpu-roi-calculator lang="de" currency="€" >}}
 
-Siehe die **[AI & GPU](/de/produkte/ai-platform/)** und **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
+Siehe die **[AI Platform](/de/produkte/ai-platform/)** und **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
 ---
 
 ## Aus den Zahlen einen Plan machen
@@ -83,4 +83,4 @@ Ein Discovery-Call macht aus diesen Schätzungen eine belastbare TCO auf Workloa
 
 ---
 
-*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform in fünf Editionen: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Aenix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*

@@ -48,7 +48,7 @@ faq:
 
 **Public-cloud bills don't shrink by themselves. The combination of underutilized commitments, idle resources, egress charges, and hyperscaler-managed-service premiums means most cloud spend is 20-40% higher than it needs to be — before any architectural change. The right cloud cost optimization engagement names where the spend leaks, what's worth fixing inside the hyperscaler, and what's worth moving to a platform you control.**
 
-> **Pairs with:** **[Ænix Platform Provider Edition](/products/public-cloud-platform/)** if you sell cloud to customers, at [provider or operator scale](/products/public-cloud-platform/); **[Enterprise Edition](/products/private-cloud-platform/)** if you run it for your own organisation. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** if you sell cloud to customers, at [provider or operator scale](/products/public-cloud-platform/); **[Private Cloud Platform](/products/private-cloud-platform/)** if you run it for your own organisation. Free [Cloud Repatriation TCO Worksheet →](/resources/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

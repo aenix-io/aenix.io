@@ -43,7 +43,7 @@ faq:
 
 **Beide sind Open-Source-Private-Cloud-Plattformen. Beide Apache 2.0. Beide produktionserprobt. Der Unterschied ist Generation und operativer Footprint.**
 
-> **Passt zu:** **[Ænix Platform Provider Edition](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die von OpenStack modernisieren; **[Provider Edition](/de/produkte/public-cloud-platform/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die von OpenStack modernisieren; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="compare-elevated compare-elevated--col3">
 

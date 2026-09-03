@@ -53,7 +53,7 @@ shallow, and has lost trust in the category.
 
 This article walks through both. What does the cost of developer drag
 actually look like in numbers? What does an IDP that *works* deliver?
-And what does the Developer Self-Service module of Ænix Platform do that you'd otherwise have
+And what does the developer self-service layer of Ænix Private Cloud Platform do that you'd otherwise have
 to build?
 
 ## The cost of developer drag
@@ -119,7 +119,7 @@ fail."
 
 ## What Developer Self-Service ships
 
-the Developer Self-Service module of Ænix Platform is the productisation of these characteristics
+the developer self-service layer of Ænix Private Cloud Platform is the productisation of these characteristics
 on top of the Cozystack foundation. Specifically:
 
 ### A multi-tenant Cozystack platform with Tenant CRD

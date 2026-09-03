@@ -17,8 +17,8 @@ language: "de"
 ## Quick facts
 
 - **Open-Core-Unternehmen.** Wir erstellen und pflegen Cozystack — ein CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026) — und kommerzialisieren es als Ænix Platform.
-- **Zwei Editions:** Provider, wenn Sie Cloud verkaufen; Enterprise, wenn Sie sie selbst betreiben. Dazu die Module AI & GPU und Developer Self-Service sowie der Entry-Tier Pure Cozystack mit Ænix-Support.
-- **Engagement-Größe:** Provider Edition ab 1.250 USD/Monat Support-Tier; Betreiber- und Enterprise-Builds nach RFP.
+- **Zwei Editions:** Provider, wenn Sie Cloud verkaufen; Enterprise, wenn Sie sie selbst betreiben. Dazu die Module AI Platform und Developer Self-Service sowie der Entry-Tier Pure Cozystack mit Ænix-Support.
+- **Engagement-Größe:** Public Cloud Platform ab 1.250 USD/Monat Support-Tier; Betreiber- und Enterprise-Builds nach RFP.
 - **Regulatorischer Fokus:** DORA (in Kraft seit 2025-01-17), NIS2 (Umsetzungsfrist 2024-10-17), nationale Souveränitäts-Mandate.
 - **Architektur:** Kubernetes-nativ, Multi-Tenant Tenant CRD, kundenkontrollierte Hardware. Aufgebaut auf Talos + Kubernetes + KubeVirt + Cilium + LINSTOR + cozyportal + VictoriaMetrics + VictoriaLogs.
 - **Geografie:** AENIX s.r.o. (Tschechien) + AENIX INC (Delaware), mit Engineering-Teams in der EU und Zentralasien.
@@ -30,7 +30,7 @@ language: "de"
 
 Eine Frage entscheidet: Verkaufen Sie Cloud an andere, oder betreiben Sie sie für die eigene Organisation? Derselbe Cozystack-Kern, unterschiedliche kommerzielle Oberfläche.
 
-### Ænix Platform Provider Edition
+### Ænix Public Cloud Platform
 
 **Für:** alle, die Cloud-Kapazität verkaufen — Hosting-Anbieter, MSPs, regionale Clouds und Rechenzentren am einen Ende; Telcos, nationale Betreiber und Banken mit kommerzieller Cloud am anderen.
 
@@ -38,9 +38,9 @@ Billing-Backend und -Frontend, WHMCS-Integration, Payment-Processing, White-Labe
 
 **Wie gekauft:** Preisliste ab **1.250 USD/Monat** pro 10 Nodes; Multi-Region-Programme nach RFP
 
-[Provider Edition →](/de/produkte/public-cloud-platform/) · [Im Betreiber-Maßstab →](/de/produkte/public-cloud-platform/)
+[Public Cloud Platform →](/de/produkte/public-cloud-platform/) · [Im Betreiber-Maßstab →](/de/produkte/public-cloud-platform/)
 
-### Ænix Platform Enterprise Edition
+### Ænix Private Cloud Platform
 
 **Für:** regulierte Organisationen, die Cloud für sich selbst betreiben — Banken, Versicherer, öffentliche Verwaltung, Telco, Gesundheitswesen, Energie.
 
@@ -48,11 +48,11 @@ Private und hybride souveräne Cloud über mehrere Rechenzentren. DORA- und NIS2
 
 **Wie gekauft:** mehrjähriger Plattform-Build, Angebot nach RFP
 
-[Enterprise Edition →](/de/produkte/private-cloud-platform/)
+[Private Cloud Platform →](/de/produkte/private-cloud-platform/)
 
 ### Zwei Module, für beide Editions
 
-**[AI & GPU](/de/produkte/ai-platform/)** — mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken. **[Developer Self-Service](/de/produkte/private-cloud-platform/)** — Golden Paths, GitLab- und Argo-CD-Automatisierung, Self-Service-APIs.
+**[AI Platform](/de/produkte/ai-platform/)** — mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken. **[Developer Self-Service](/de/produkte/private-cloud-platform/)** — Golden Paths, GitLab- und Argo-CD-Automatisierung, Self-Service-APIs.
 
 Dazu der Entry-Tier **Pure Cozystack mit Ænix-Support** für Produkt-Teams auf eigener oder gemieteter Hardware.
 
@@ -81,21 +81,21 @@ Cozystack ist der Motor. Ænix Platform ist das Auto — eine turnkey Cloud mit 
 
 ### "Wir brauchen DORA / NIS2-Compliance"
 
-Unsere Enterprise Edition ist DORA / NIS2-konform by Design. Kundenkontrollierte Schlüssel auf jeder Schicht, audit-bereites Logging, Multi-Tenant-Isolation nach Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz.
+Unsere Private Cloud Platform ist DORA / NIS2-konform by Design. Kundenkontrollierte Schlüssel auf jeder Schicht, audit-bereites Logging, Multi-Tenant-Isolation nach Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz.
 
 [DORA-Compliance →](/de/loesungen/dora-compliance/) | [NIS2-Compliance →](/de/loesungen/nis2-compliance/) | [Kostenlose DORA-Checkliste →](/de/ressourcen/dora-compliance-checkliste/)
 
 ### "Wir modernisieren unser Hosting-Geschäft"
 
-Provider Edition ersetzt OpenStack / VMware Cloud Director / Virtuozzo durch eine turnkey Cloud-Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, erweiterter Service-Katalog. Migration in Kohorten. Produktionsreif in Wochen. Ab 1.250 USD/Monat.
+Public Cloud Platform ersetzt OpenStack / VMware Cloud Director / Virtuozzo durch eine turnkey Cloud-Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, erweiterter Service-Katalog. Migration in Kohorten. Produktionsreif in Wochen. Ab 1.250 USD/Monat.
 
-[Provider Edition →](/de/produkte/public-cloud-platform/) | [VMware-Migrations-Hub →](/de/migration/vmware/)
+[Public Cloud Platform →](/de/produkte/public-cloud-platform/) | [VMware-Migrations-Hub →](/de/migration/vmware/)
 
 ### "Wir bauen souveräne KI-Infrastruktur"
 
-AI & GPU für KI-lastige Organisationen. Multi-Tenant-GPU-Scheduling (H100, H200, L40S, A100, Blackwell). Fertige Inferenz + Fine-Tuning + RAG-Patterns. Kundenkontrollierte Schlüssel. Souveränitätskontrollen.
+AI Platform für KI-lastige Organisationen. Multi-Tenant-GPU-Scheduling (H100, H200, L40S, A100, Blackwell). Fertige Inferenz + Fine-Tuning + RAG-Patterns. Kundenkontrollierte Schlüssel. Souveränitätskontrollen.
 
-[AI & GPU →](/de/produkte/ai-platform/) | [Souveräne KI →](/de/loesungen/sovereign-ai/) | [Kostenloser Sovereign-AI-Decision-Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/)
+[AI Platform →](/de/produkte/ai-platform/) | [Souveräne KI →](/de/loesungen/sovereign-ai/) | [Kostenloser Sovereign-AI-Decision-Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/)
 
 ### "Wir verlassen die Hyperscaler-Cloud"
 
@@ -107,13 +107,13 @@ Cloud-Repatriation auf souveräne oder On-Prem-Ænix-Platform. 40-70% TCO-Redukt
 
 ## Kunden-Evidenz
 
-### Regionale Hosting-Anbieter mit Ænix Platform Provider Edition
+### Regionale Hosting-Anbieter mit Ænix Public Cloud Platform
 
 {{< clients >}}
 
 ### Tier-1-europäische-Banken (NDA-geschützt)
 
-> Mehr-Millionen-Euro Ænix Platform Enterprise Edition Engagements. **Erste namentlich genannte Bank-Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
+> Mehr-Millionen-Euro Ænix Private Cloud Platform Engagements. **Erste namentlich genannte Bank-Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
 
 ### Plattform-R&D für Ecosystem-Vendors
 
@@ -128,7 +128,7 @@ CSI-Driver-Entwicklung, Virtualisierungs-Plattform-Forschung, Public-Cloud / VPS
 1. **Discovery-Call** (30 min, kostenlos) — Fit, Scope und Timeline bestätigen
 2. **Platform Readiness Assessment** (5-10 Tage, Festpreis vorab vereinbart) — Aktuelle Architektur-Audit, Gap-Analyse, Migrations-Roadmap
 3. **Pilot-Engagement** (3-6 Monate) — definierter Slice, validierter Business Case
-4. **Vollständiger Edition-Build** — Wochen für Provider Edition; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML — Produktions-Deployment
+4. **Vollständiger Edition-Build** — Wochen für Public Cloud Platform; 9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML — Produktions-Deployment
 5. **Managed Operations** (laufender Retainer) — Aenix betreibt die Plattform, die Sie operieren, oder hybrid
 
 [Detaillierte Preise und Engagement-Modell →](/de/preise/)
@@ -159,11 +159,11 @@ Ja. Cozystack ist Apache 2.0. Jeder kann es ausführen. Aenix ist der Original-M
 
 ### Wer sind Aenix-Kunden?
 
-Öffentliche Produktivkunden mit Ænix Platform Provider Edition: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Wir arbeiten auch mit Tier-1-europäischen-Banken unter NDA an Mehr-Millionen-Euro Enterprise-Edition-Engagements; erste namentlich genannte Bank-Case-Studies erwartet Mitte 2027.
+Öffentliche Produktivkunden mit Ænix Public Cloud Platform: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy. Wir arbeiten auch mit Tier-1-europäischen-Banken unter NDA an Mehr-Millionen-Euro Private Cloud Platform-Engagements; erste namentlich genannte Bank-Case-Studies erwartet Mitte 2027.
 
 ### Warum zwei Editions?
 
-Derselbe Cozystack-Kern, zwei kommerzielle Pakete. Provider Edition, wenn Sie Kapazität an Kunden verkaufen — Billing, Payments, Kundenportal, Tenant-Suspendierung. Enterprise Edition, wenn Sie Cloud unter Aufsicht für die eigene Organisation betreiben — Schlüsselhoheit, auditfähiges Logging, Air-Gap, Kontroll-Mapping. GPU und Developer Self-Service sind Module, weil beide Seiten danach fragen.
+Derselbe Cozystack-Kern, zwei kommerzielle Pakete. Public Cloud Platform, wenn Sie Kapazität an Kunden verkaufen — Billing, Payments, Kundenportal, Tenant-Suspendierung. Private Cloud Platform, wenn Sie Cloud unter Aufsicht für die eigene Organisation betreiben — Schlüsselhoheit, auditfähiges Logging, Air-Gap, Kontroll-Mapping. GPU und Developer Self-Service sind Module, weil beide Seiten danach fragen.
 
 ---
 

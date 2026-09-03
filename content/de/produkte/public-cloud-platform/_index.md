@@ -1,11 +1,11 @@
 ---
-title: "Ænix Platform Provider Edition"
-description: "Ænix Platform Provider Edition: schlüsselfertige Cloud-Plattform für Hosting-Anbieter und MSPs. WHMCS-Billing, Tenant-Suspension, Migration von VMware/OpenStack."
+title: "Ænix Public Cloud Platform"
+description: "Ænix Public Cloud Platform: schlüsselfertige Cloud-Plattform für Hosting-Anbieter und MSPs. WHMCS-Billing, Tenant-Suspension, Migration von VMware/OpenStack."
 type: "page"
 language: "de"
 hreflang_en: /products/public-cloud-platform/
 direct_answer: |
-  **Die Ænix Platform Provider Edition ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Sie bündelt Hosting-Panel, kundenseitiges Portal (cozyportal), Billing, Payment-Processing, Tenant-Suspension und Support in einem produktisierten Stack auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Die Plattform ersetzt OpenStack, VMware Cloud Director, Virtuozzo und eigene In-House-Panels, ist WHMCS-integriert und in Wochen produktionsreif. Aenix liefert Enterprise-Support ab 1.250 USD/Monat sowie produktisierte Migrations-Module und Engagement-Expertise für den Umstieg von VMware, OpenStack, Virtuozzo und OpenNebula.**
+  **Die Ænix Public Cloud Platform ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Sie bündelt Hosting-Panel, kundenseitiges Portal (cozyportal), Billing, Payment-Processing, Tenant-Suspension und Support in einem produktisierten Stack auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Die Plattform ersetzt OpenStack, VMware Cloud Director, Virtuozzo und eigene In-House-Panels, ist WHMCS-integriert und in Wochen produktionsreif. Aenix liefert Enterprise-Support ab 1.250 USD/Monat sowie produktisierte Migrations-Module und Engagement-Expertise für den Umstieg von VMware, OpenStack, Virtuozzo und OpenNebula.**
 quick_facts:
   - label: "Was es ist"
     value: "Schlüsselfertige Cloud-in-a-Box für Hosting-Anbieter und MSPs: Panel, Billing, Portal, Payments und Support auf Kubernetes-nativer Basis (Cozystack)"
@@ -22,17 +22,17 @@ quick_facts:
   - label: "Pricing"
     value: "Enterprise-Support ab 1.250 USD/Monat; höhere Tiers und Migrations-/Build-Engagements auf Anfrage"
 faq:
-  - q: "Wie unterscheidet sich die Provider Edition vom Selbstbetrieb von Open-Source-Cozystack?"
-    a: "Cozystack liefert den Motor, die Provider Edition das fertige Auto: WHMCS-Integration, Billing, Kunden-Portal, Payment-Processing, Tenant-Suspension und Enterprise-Support — alle Surfaces, die ein echtes Cloud-Geschäft braucht. Cozystack bleibt Apache-2.0-Open-Source; die Provider Edition ergänzt produktisierte Module und einen Support-Tier."
-  - q: "Was kostet die Provider Edition?"
+  - q: "Wie unterscheidet sich die Public Cloud Platform vom Selbstbetrieb von Open-Source-Cozystack?"
+    a: "Cozystack liefert den Motor, die Public Cloud Platform das fertige Auto: WHMCS-Integration, Billing, Kunden-Portal, Payment-Processing, Tenant-Suspension und Enterprise-Support — alle Surfaces, die ein echtes Cloud-Geschäft braucht. Cozystack bleibt Apache-2.0-Open-Source; die Public Cloud Platform ergänzt produktisierte Module und einen Support-Tier."
+  - q: "Was kostet die Public Cloud Platform?"
     a: "Der Entry-Support-Tier startet ab 1.250 USD/Monat und umfasst direkten Support-Kanal, Zugang zu ISP-spezifischen Modulen und Migrations-Expertise. Höhere Tiers bringen einen Named Technical Account Manager. Migrations- und Build-Engagements werden projektbasiert im Discovery-Call kalkuliert."
   - q: "Können wir unser eigenes Billing statt WHMCS nutzen?"
     a: "Ja. Es gibt zwei Integrationsmodi: WHMCS als kundenseitiges Frontend mit Cozystack als Backend, oder cozyportal als Frontend mit WHMCS als Billing-Backend. Custom-Billing wird bei Bedarf unterstützt, da die Plattform vollständige Nutzungsdaten über eine klare API bereitstellt."
-  - q: "Von welchen Plattformen migriert die Provider Edition?"
+  - q: "Von welchen Plattformen migriert die Public Cloud Platform?"
     a: "Aenix liefert produktisierte Module und Runbooks für die Migration von VMware Cloud Director / vSphere, OpenStack, Virtuozzo, OpenNebula und eigenen Panels. Häufigster Trigger 2026 ist der Broadcom-Subscription-Druck bei VMware. Migrationen erfolgen mit Erfahrung aus Produktions-Engagements."
   - q: "Wie lange dauert eine Migration von VMware?"
-    a: "Der produktisierte Installer bringt die Provider Edition in Wochen live. Die eigentliche Kundenmigration ist workload-abhängig — typisch ist ein Parallel-Run mit kohorten-basierter Migration über 3-6 Monate für mittelgroße Hosting-Estates."
-  - q: "Unterstützt die Provider Edition White-Label und Reseller-Modelle?"
+    a: "Der produktisierte Installer bringt die Public Cloud Platform in Wochen live. Die eigentliche Kundenmigration ist workload-abhängig — typisch ist ein Parallel-Run mit kohorten-basierter Migration über 3-6 Monate für mittelgroße Hosting-Estates."
+  - q: "Unterstützt die Public Cloud Platform White-Label und Reseller-Modelle?"
     a: "Ja. cozyportal ist vollständig white-label-fähig pro Anbieter (Farben, Logo, Domain) und unterstützt ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden). Das Partner-Programm bietet bis zu 40% Marge inklusive Deal-Registrierung, Sales-Kit und Technical-Pre-Sales-Support."
   - q: "Welche Services bietet der Katalog jenseits von VMs?"
     a: "Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kafka via Strimzi, ClickHouse via Altinity, RabbitMQ, NATS), S3-kompatibler Object Storage (SeaweedFS), HTTP-Cache, VPN-Service (Outline), Kubernetes-Cluster und GPU-Workloads — bereitstellbar per geführtem Wizard ohne YAML für Endkunden."
@@ -60,7 +60,7 @@ aliases:
 
 ---
 
-## Was in der Provider Edition enthalten ist
+## Was in der Public Cloud Platform enthalten ist
 
 ### WHMCS-Integration
 
@@ -100,9 +100,9 @@ Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 
 ---
 
-## Warum Hosting-Anbieter / MSPs Provider Edition statt OpenStack wählen
+## Warum Hosting-Anbieter / MSPs Public Cloud Platform statt OpenStack wählen
 
-| Dimension | OpenStack | Ænix Platform Provider Edition |
+| Dimension | OpenStack | Ænix Public Cloud Platform |
 |---|---|---|
 | Time-to-Production | Typisch 6+ Monate | Wochen |
 | Operations-Team-Größe | 8-15+ Engineers | 3-7 Engineers |
@@ -118,9 +118,9 @@ Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 
 ## Produktivkunden (derzeit auf aenix.io gelistet)
 
-Regionale Hosting-Anbieter mit Ænix Platform Provider Edition: **GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy**.
+Regionale Hosting-Anbieter mit Ænix Public Cloud Platform: **GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy**.
 
-Diese Kunden nutzen Ænix Platform Provider Edition, um Multi-Tenant-Cloud-Produkte an ihre Endkunden in der EU, DACH, Zentralasien und anderen Regionen zu liefern.
+Diese Kunden nutzen Ænix Public Cloud Platform, um Multi-Tenant-Cloud-Produkte an ihre Endkunden in der EU, DACH, Zentralasien und anderen Regionen zu liefern.
 
 ---
 
@@ -128,13 +128,13 @@ Diese Kunden nutzen Ænix Platform Provider Edition, um Multi-Tenant-Cloud-Produ
 
 **Entry ab 1.250 USD/Monat Support-Tier.** Höhere Tiers und projektbasierte Migrations- / Build-Engagements auf Anfrage via Discovery-Call.
 
-[Provider Edition Pricing diskutieren →](/de/kontakt/?edition=isp)
+[Public Cloud Platform Pricing diskutieren →](/de/kontakt/?edition=isp)
 
 ---
 
 ## Migrations-Pfade
 
-Aenix liefert Provider Edition Migrationen mit produktisierten Modulen und Engagement-Expertise:
+Aenix liefert Public Cloud Platform Migrationen mit produktisierten Modulen und Engagement-Expertise:
 
 - **Von VMware Cloud Director / vSphere** — häufigster 2026-Trigger (Broadcom-Subscription-Druck)
 - **Von OpenStack** — Reduzierung operativer Komplexität; schnellere Feature-Velocity
@@ -168,7 +168,7 @@ Für Produkt-Teams, die Cozystack auf eigener / gemieteter Hardware (Hetzner, OV
 
 ## Architektur-Review buchen
 
-Erzählen Sie uns von Ihrem Hosting-Geschäft, aktuellen Stack und Kundenmix — wir richten ein fokussiertes Architektur-Review mit einem Aenix-Engineer ein und bestätigen den Provider Edition Fit.
+Erzählen Sie uns von Ihrem Hosting-Geschäft, aktuellen Stack und Kundenmix — wir richten ein fokussiertes Architektur-Review mit einem Aenix-Engineer ein und bestätigen den Public Cloud Platform Fit.
 
 {{< pipedrive-form type="demo" >}}
 
@@ -176,4 +176,4 @@ Lieber ein kürzerer erster Schritt? [30-Minuten-Discovery-Call buchen](/de/kont
 
 ---
 
-*Ænix Platform Provider Edition basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*
+*Ænix Public Cloud Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das wir erstellt haben und pflegen (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Aenix ist das Open-Core-Unternehmen.*

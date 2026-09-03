@@ -50,7 +50,7 @@ faq:
 
 Aenix builds and operates these platforms end-to-end: an architecture, a deployment, and an operations model your team can actually run.
 
-> **Pairs with:** **[the AI & GPU module of Ænix Platform](/products/ai-platform/)** — AI platform automation out of the box (multi-tenant GPU scheduling, inference/fine-tuning/RAG blueprints, vector DB + object storage, sovereignty controls); add [Enterprise Edition](/products/private-cloud-platform/) for a broader sovereign cloud, or the free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
+> **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — AI platform automation out of the box (multi-tenant GPU scheduling, inference/fine-tuning/RAG blueprints, vector DB + object storage, sovereignty controls); add [Private Cloud Platform](/products/private-cloud-platform/) for a broader sovereign cloud, or the free [Sovereign AI Decision Guide →](/resources/sovereign-ai-decision-guide/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

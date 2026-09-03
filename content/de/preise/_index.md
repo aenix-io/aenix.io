@@ -29,15 +29,15 @@ Plus Engagement-Zusätze (Platform Readiness Assessment, Pilot, Full Build, Mana
 
 | Edition | Für | Wie bepreist |
 |---|---|---|
-| **Provider Edition** | Hosting-Anbieter, MSPs, regionale Clouds und Rechenzentren, die Cloud an Kunden verkaufen | Produktisiert — Preisliste, ab 1.250 USD / Monat pro 10 Nodes |
-| **Provider Edition im Betreiber-Maßstab** | Telcos, nationale Betreiber, Banken und große Public Clouds mit kommerzieller Cloud | Mehrjähriges Programm, Angebot nach RFP |
-| **Enterprise Edition** | Regulierte Unternehmen, die Cloud für die eigenen Nutzer betreiben (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | Mehrjähriges Programm, Angebot nach RFP |
+| **Public Cloud Platform** | Hosting-Anbieter, MSPs, regionale Clouds und Rechenzentren, die Cloud an Kunden verkaufen | Produktisiert — Preisliste, ab 1.250 USD / Monat pro 10 Nodes |
+| **Public Cloud Platform im Betreiber-Maßstab** | Telcos, nationale Betreiber, Banken und große Public Clouds mit kommerzieller Cloud | Mehrjähriges Programm, Angebot nach RFP |
+| **Private Cloud Platform** | Regulierte Unternehmen, die Cloud für die eigenen Nutzer betreiben (Banken, Versicherungen, öffentliche Verwaltung, Telco, Gesundheitswesen) | Mehrjähriges Programm, Angebot nach RFP |
 
 Zwei Module erweitern beide Editions und werden mit dem Engagement kalkuliert:
 
 | Modul | Was es hinzufügt |
 |---|---|
-| **AI & GPU** | Mandantenfähiges GPU-Scheduling, Fractioning und MIG, Model Serving, Vektordatenbanken, GPU-Sizing |
+| **AI Platform** | Mandantenfähiges GPU-Scheduling, Fractioning und MIG, Model Serving, Vektordatenbanken, GPU-Sizing |
 | **Developer Self-Service** | Golden Paths, GitLab- und Argo-CD-Automatisierung, Self-Service-APIs und Umgebungs-Wizards |
 
 Plus **Entry-Tier — Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware.
@@ -48,7 +48,7 @@ Plus **Entry-Tier — Pure Cozystack mit Ænix-Support** — für Produkt-Teams 
 
 ## Schritt 2 — Support-Tier wählen {#support}
 
-Das ist die veröffentlichte Preisliste, und mehr gibt es nicht: Sie gilt für die Provider Edition und für Pure Cozystack mit Ænix Support. Preise pro 10 physische Nodes / Monat in USD; Jahresverträge 20% Rabatt. Jahresverträge 20% Rabatt.
+Das ist die veröffentlichte Preisliste, und mehr gibt es nicht: Sie gilt für die Public Cloud Platform und für Pure Cozystack mit Ænix Support. Preise pro 10 physische Nodes / Monat in USD; Jahresverträge 20% Rabatt. Jahresverträge 20% Rabatt.
 
 | Tier | Jahrespreis (pro Monat) | Monatspreis | Für wen |
 |---|---|---|---|
@@ -100,9 +100,9 @@ Hinweise zur Tabelle: Incidents rund um die Installations-Unterstützung zählen
 
 ### Vollständiger Edition-Build
 
-9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML Deployments. Wochen-zu-live für Provider Edition mit produktisiertem Installer.
+9-18 Monate für Public Cloud / Enterprise / IDP / AI/ML Deployments. Wochen-zu-live für Public Cloud Platform mit produktisiertem Installer.
 
-**Kosten:** Provider Edition projektbasiert auf monatlichem Support; Public Cloud / Enterprise / IDP / AI/ML nach RFP.
+**Kosten:** Public Cloud Platform projektbasiert auf monatlichem Support; Public Cloud / Enterprise / IDP / AI/ML nach RFP.
 
 ### Managed Operations
 
@@ -150,7 +150,7 @@ Edition bestimmt das Feature-Bundle (welche Ænix Platform Sie kaufen — ISP, E
 
 ### Was ist der günstigste Weg, mit Ænix Platform zu starten?
 
-Provider Edition + Basic Support-Tier, $1,250/Monat jährlich (10 Nodes). Inkludiert WHMCS-Integration, Billing-System, Backup-System, Knowledge-Base-PoC-Support. Geeignet für kleine Hosting-Anbieter und Startups, die die Plattform validieren.
+Public Cloud Platform + Basic Support-Tier, $1,250/Monat jährlich (10 Nodes). Inkludiert WHMCS-Integration, Billing-System, Backup-System, Knowledge-Base-PoC-Support. Geeignet für kleine Hosting-Anbieter und Startups, die die Plattform validieren.
 
 ### Bieten Sie Reseller- / Partner-Pricing an?
 
