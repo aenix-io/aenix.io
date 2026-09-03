@@ -46,7 +46,7 @@ Begleitung zur **[Platform-Readiness-Assessment-Page](/de/dienstleistungen/platf
 
 ## Vier parallele Workstreams in 14 Tagen
 
-Jeder hat einen benannten Eigentümer auf unserer Seite, ein definiertes Deliverable und ein festes Fenster.
+Jeder hat einen benannten Eigentümer auf unserer Seite, ein definiertes Ergebnis und ein festes Fenster.
 
 ### Workstream 1: Inventar und Plattform-Reife
 - Workloads (VMs / Container / Datenbanken), Umgebungen, Provisionierungsgeschwindigkeit

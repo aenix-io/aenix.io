@@ -36,7 +36,7 @@ faq:
   - q: "Wie läuft ein Repatriation-Engagement mit Aenix ab?"
     a: "Aenix übersetzt die strategische Entscheidung in einen umsetzbaren Plan: Inventarisierung und Auswahl der zu migrierenden Workloads, Kostenmodellierung gegenüber dem aktuellen Public-Cloud-Setup und Entwurf der Zielarchitektur. Ein kostenloses Cloud-Repatriation-TCO-Worksheet steht für die erste Einschätzung bereit."
   - q: "Welche Plattform der Ænix Platform passt zu Repatriation?"
-    a: "Jede Ænix-Plattform unterstützt Repatriation; die Wahl folgt dem Buyer-Profil. Wer Cloud an eigene Kunden verkauft — Hosting-Anbieter, regionale Clouds, große Betreiber —, wählt die Public Cloud Platform. Regulierte Unternehmen, die für sich selbst betreiben, wählen die Private Cloud Platform, deren Developer-Self-Service-Schicht auch Produkt-Engineering-Teams abdeckt. KI- und GPU-lastige Umgebungen wählen die AI Platform."
+    a: "Jede Ænix-Plattform unterstützt Repatriation; die Wahl folgt dem Käuferprofil. Wer Cloud an eigene Kunden verkauft — Hosting-Anbieter, regionale Clouds, große Betreiber —, wählt die Public Cloud Platform. Regulierte Unternehmen, die für sich selbst betreiben, wählen die Private Cloud Platform, deren Developer-Self-Service-Schicht auch Produkt-Engineering-Teams abdeckt. KI- und GPU-lastige Umgebungen wählen die AI Platform."
   - q: "Was kostet die Ænix Platform?"
     a: "Die Ænix Platform kombiniert Produkt und Services in vier Stufen: Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $/Monat, Plus 5.500 $/Monat und Enterprise mit individueller Preisgestaltung. Cozystack selbst ist Open Source unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
 ---
@@ -47,7 +47,7 @@ faq:
 
 Ænix übernimmt das technische Engagement, das „wir müssen AWS / Azure / GCP verlassen“ von einer Vorstandsaussage in einen funktionierenden Plan verwandelt — mit priorisierten Workloads, modellierten Kosten und einer Zielarchitektur, die die Public Cloud nicht auf die falsche Weise neu erfindet.
 
-> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)** — die richtige Plattform folgt Ihrem Buyer-Profil. Hosting-Anbieter, regionale Clouds und große Betreiber: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Regulierte Unternehmen und Produkt-Engineering-Teams: [Private Cloud Platform](/de/produkte/private-cloud-platform/). KI- und GPU-lastig: [AI Platform](/de/produkte/ai-platform/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
+> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)** — die richtige Plattform folgt Ihrem Käuferprofil. Hosting-Anbieter, regionale Clouds und große Betreiber: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Regulierte Unternehmen und Produkt-Engineering-Teams: [Private Cloud Platform](/de/produkte/private-cloud-platform/). KI- und GPU-lastig: [AI Platform](/de/produkte/ai-platform/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -229,7 +229,7 @@ Ergänzt um Anbieter-Vorauswahl (Compute / Storage / Netzwerk / Observability), 
 
 </div>
 
-Festpreis. Eine Rechnung. Gegenseitiges NDA zum Kickoff. Kosten der Phase-2-Implementierung: Assessment-Gebühr wird abhängig vom Umfang angerechnet.
+Festpreis. Eine Rechnung. Gegenseitige NDA zum Kickoff. Kosten der Phase-2-Implementierung: Assessment-Gebühr wird abhängig vom Umfang angerechnet.
 
 Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitgliedstaaten und Kasachstan.
 

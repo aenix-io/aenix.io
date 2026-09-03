@@ -901,14 +901,11 @@ Cluster ready in 84 seconds.
 
 ---
 
-## Block 40 — Answer clamp (Show more)
+## Block 40 — Answer clamp (retired)
 
-`.answer-clamp` — long GEO answers show about seven lines, then a "Show more" toggle. Progressive enhancement: the full answer stays in the DOM, so crawlers and no-JS visitors always read all of it; JS clamps the text visually and reveals the toggle only when it actually overflows. The GEO answer partial wraps every direct answer in this automatically.
+`.answer-clamp` used to truncate long GEO answers to about seven lines behind a "Show more" toggle. It was removed from `seo/geo-intro.html` in the information-architecture pass: `direct_answer` is spec'd at 75-150 words, so the clamp fired on 157 of 164 pages and cut a median 30% off the paragraph — always the tail, which is the "how Aenix helps" sentence. Direct answers now render in full.
 
-<div class="seo-direct-answer answer-clamp">
-<div class="answer-clamp__body"><strong>Sample platform is a turnkey cloud-in-a-box from a company that maintains the open-source engine underneath it. It packages that engine and adds the commercial layer an operator needs to run a real cloud business: a hosting panel, user and admin and support portals, service-creation wizards, full billing on both the backend and the frontend, payment and reseller integrations, a branded customer console, an enterprise SLA, and dedicated support. It ships in editions matching distinct buyer profiles, from regional hosting providers to regulated enterprises and AI-native companies, so each buyer gets the feature bundle that fits their operation rather than a one-size-fits-all product.</strong></div>
-<button type="button" class="answer-clamp__toggle" aria-expanded="false"><span class="answer-clamp__label">Show more</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
-</div>
+The `.answer-clamp` / `.answer-clamp__body` class names survive only because the stylesheet hangs paragraph margins off them. `.answer-clamp__toggle` and the `is-clampable` rules in `aenix-seo-extensions.css`, plus the clamp handler in `main.js`, are now dead code and can be deleted.
 
 ---
 

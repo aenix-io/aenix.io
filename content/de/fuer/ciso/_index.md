@@ -98,7 +98,7 @@ Ja — wir akzeptieren RFI/RFP über EU- und Kasachstan-Standardkanäle.
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir grenzen den Scope auf die bindenden Regulierer und Klauseln ein und sagen, ob Assessment, schlüsselfertige Plattform oder Aufbau passt.
+Kostenlos, ohne Vorbereitung. Wir grenzen den Scope auf die bindenden Aufsichtsvorgaben und Klauseln ein und sagen, ob Assessment, schlüsselfertige Plattform oder Aufbau passt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>

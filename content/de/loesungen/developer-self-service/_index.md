@@ -22,7 +22,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Engineering-Organisationen, in denen die häufigsten Produkt-Team-Anforderungen heute Tickets erfordern und Wartezeiten Velocity bremsen"
+    value: "Engineering-Organisationen, in denen die häufigsten Produkt-Team-Anforderungen heute Tickets erfordern und Wartezeiten Entwicklungsgeschwindigkeit bremsen"
   - label: "Schlüsselfunktion"
     value: "Golden-Path-Templates, GitLab-Automation und Argo CD Workflows statt Backstage als reine Oberfläche"
   - label: "Technische Basis"
@@ -34,7 +34,7 @@ faq:
   - q: "Was ist Developer Self-Service?"
     a: "Developer Self-Service ist erreicht, wenn die häufigsten zehn Produkt-Team-Anforderungen — Environments, Services, Datenbanken, Object Storage, Observability, Secrets, CI/CD und mehr — ohne Ticket befriedigt werden können, abgeschlossen in unter einer Stunde von Anfrage bis Lauf."
   - q: "Ist das nur Backstage?"
-    a: "Nein. Backstage als Oberfläche ohne Substanz ist Tapete. Aenix implementiert die zugrunde liegenden Golden Paths — GitLab-Automation, Argo CD Workflows und APIs — die eine Anfrage tatsächlich in provisionierte Realität verwandeln, statt nur einen Katalog anzuzeigen."
+    a: "Nein. Backstage als Oberfläche ohne Substanz ist nur Fassade. Aenix implementiert die zugrunde liegenden Golden Paths — GitLab-Automation, Argo CD Workflows und APIs — die eine Anfrage tatsächlich in provisionierte Realität verwandeln, statt nur einen Katalog anzuzeigen."
   - q: "Auf welcher Technologie basiert die Plattform?"
     a: "Auf Cozystack, einem CNCF-Projekt unter Apache 2.0. Es nutzt KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und das Tenant-CRD für Mandantenfähigkeit."
   - q: "Fällt eine CPU- oder Core-basierte Lizenzgebühr an?"
@@ -45,7 +45,7 @@ faq:
     a: "Das Ziel ist die Lücke zwischen \"Team braucht Environment\" und \"Team hat Environment\" von Tagen oder Wochen auf Stunden zu verkürzen. Wird sie klein, verzinst sich die Plattform-Investition über Jahre, statt in verlorener Entwicklungsgeschwindigkeit zu versickern."
 ---
 
-**Der teuerste einzelne Vorgang in den meisten Engineering-Organisationen ist die Wartezeit zwischen „Team braucht ein Environment“ und „Team hat ein Environment“. Wenn diese Lücke Tage oder Wochen beträgt, sinkt die Produkt-Velocity messbar; beträgt sie nur Stunden, verzinst sich die Plattform-Investition über Jahre.**
+**Der teuerste einzelne Vorgang in den meisten Engineering-Organisationen ist die Wartezeit zwischen „Team braucht ein Environment“ und „Team hat ein Environment“. Wenn diese Lücke Tage oder Wochen beträgt, sinkt die Produktgeschwindigkeit messbar; beträgt sie nur Stunden, verzinst sich die Plattform-Investition über Jahre.**
 
 Ænix baut Developer-Self-Service in Plattformen ein, die Produktteams auch wirklich nutzen — nicht Backstage als reine Fassade, sondern echte Golden Paths, die Anfragen ohne Ticket in bereitgestellte Realität verwandeln.
 

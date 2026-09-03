@@ -36,7 +36,7 @@ Engineering in der EU · Apache 2.0 · Auf Ihrer Hardware · Kein Hyperscaler-Lo
 ## Ihre Ausgangslage
 
 - Cloud-Ausgaben wachsen schneller als der Umsatz; die **Unit Economics** stehen auf dem Prüfstand.
-- Kunden oder Regulierer verlangen **Datenresidenz / Souveränität**.
+- Kunden oder Aufsichtsbehörden verlangen **Datenresidenz / Souveränität**.
 - Sie wollen die Option, für bestimmte Workloads einen **Hyperscaler zu verlassen** — ohne Rewrite.
 - Sie wollen dafür keine große interne Plattform-Org finanzieren.
 
@@ -44,7 +44,7 @@ Engineering in der EU · Apache 2.0 · Auf Ihrer Hardware · Kein Hyperscaler-Lo
 
 ## Worum es eigentlich geht
 
-Kosten und Datenort für die Workloads zurückholen, die nicht auf einen Hyperscaler gehören — bei gleicher Developer-Velocity. Das heißt: eine offene Plattform (VMs + Kubernetes + Managed Databases + Storage) auf Bare Metal oder gemieteten Servern, mit glaubwürdigem Migrationsweg und einer TCO, die Sie dem Vorstand vorlegen können.
+Kosten und Datenort für die Workloads zurückholen, die nicht auf einen Hyperscaler gehören — bei gleicher Developer-Entwicklungsgeschwindigkeit. Das heißt: eine offene Plattform (VMs + Kubernetes + Managed Databases + Storage) auf Bare Metal oder gemieteten Servern, mit glaubwürdigem Migrationsweg und einer TCO, die Sie dem Vorstand vorlegen können.
 
 ---
 
@@ -72,7 +72,7 @@ Kosten und Datenort für die Workloads zurückholen, die nicht auf einen Hypersc
 
 - **Belegbare Ökonomie.** Wir modellieren die TCO ehrlich — inklusive der Workloads, die in der Cloud bleiben sollten.
 - **Autoren, keine Reseller.** Ænix pflegt Cozystack; Sie bekommen Senior-Engineers, keinen Vertriebskanal.
-- **Velocity bleibt.** Entwickler behalten Self-Service für Kubernetes und Datenbanken.
+- **Entwicklungsgeschwindigkeit bleibt.** Entwickler behalten Self-Service für Kubernetes und Datenbanken.
 
 ---
 

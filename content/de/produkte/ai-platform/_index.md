@@ -65,7 +65,7 @@ Vorvalidierte Patterns für gängige KI-Workload-Typen:
 - **Inferenz + Fine-Tuning + RAG** — Full-Stack-Pattern mit heterogenen GPU-Pools
 - **Air-Gapped souveränes Deployment** — für Verteidigung, isolierte Industrie, souveräne-Cloud-Kunden
 
-(Siehe [Sovereign AI Decision Guide](/de/ressourcen/sovereign-ai-architektur-leitfaden/) für Blueprint-Details.)
+(Siehe [Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/) für Blueprint-Details.)
 
 ### Multi-Tenant-GPU-Scheduling
 
@@ -123,7 +123,7 @@ Projekt plus Managed-Retainer nach dem Deployment, Angebot nach RFP.
 ## Engagement-Struktur
 
 - **Discovery-Call** (30 min, kostenlos)
-- **Sovereign-AI-Architektur-Review** (1-2 Wochen, Festpreis) — unter Verwendung des [Sovereign AI Decision Guide](/de/ressourcen/sovereign-ai-architektur-leitfaden/) Frameworks + Ænix-Expertise
+- **Sovereign-AI-Architektur-Review** (1-2 Wochen, Festpreis) — unter Verwendung des [Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/) Frameworks + Ænix-Expertise
 - **Pilot-Engagement** (3-6 Monate) — definierter Slice (eine Workload-Klasse, ein Tenant, eine Modell-Familie)
 - **Vollständiger AI Platform Build** (6-12 Monate) — produktive KI-Infrastruktur mit allen Ziel-Workload-Typen
 - **Managed-Retainer** (optional, laufend) — Ænix betreibt die KI-Plattform unter SLA

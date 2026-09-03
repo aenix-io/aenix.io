@@ -62,7 +62,7 @@ Engineering in der EU · Apache 2.0 · Mandantenfähig by design · Auf KubeVirt
 - Teams warten auf Tickets für Umgebungen, Datenbanken und Cluster.
 - Sie wägen **Build vs. Buy** für eine IDP ab und scheuen reine Backstage-Glue-Arbeit.
 - Jedes Team will Isolation; Sie brauchen **Mandantenfähigkeit** ohne Cluster pro Team.
-- Die Leitung will **Developer-Velocity**, nicht noch eine Plattform, die selbst eine Plattform braucht.
+- Die Leitung will **Developer-Entwicklungsgeschwindigkeit**, nicht noch eine Plattform, die selbst eine Plattform braucht.
 
 ---
 

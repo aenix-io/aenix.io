@@ -70,7 +70,7 @@ Cozystack liefert die zugrunde liegende Plattform, auf der Backstage (oder jedes
 
 Die ehrlichen Fälle:
 
-- **Sie haben noch keine zugrunde liegende Plattform** — ein Portal ohne Plattform darunter ist Tapete. Bauen Sie zuerst die Plattform; ein Portal kommt später hinzu, falls nötig.
+- **Sie haben noch keine zugrunde liegende Plattform** — ein Portal ohne Plattform darunter ist nur Fassade. Bauen Sie zuerst die Plattform; ein Portal kommt später hinzu, falls nötig.
 - **Die operativen Kosten von Backstage sind für Ihre Teamgröße zu hoch** — das Plugin-Ökosystem erfordert Engineering-Kapazität zur Pflege. Kleinere Organisationen (unter 100 Engineers) finden leichtgewichtigere Alternativen oft nachhaltiger.
 - **Sie wollen ein SaaS-Portal, nicht selbst gehostet** — Port, Cortex, Compass.
 - **Sie wollen andere eingebaute Meinungen** — das Portal ist meinungsstark; wenn Sie mit den Ansichten von Backstage nicht übereinstimmen, gibt es Alternativen.

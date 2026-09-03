@@ -33,7 +33,7 @@ faq:
   - q: "Warum scheitern die meisten IDPs?"
     a: "Nicht an der Architektur, sondern an der Adoption. Die elegantesten Plattformen haben oft den niedrigsten internen NPS, weil Produkt-Teams sie nicht nutzen. Aenix baut opinionated Plattformen mit Golden Paths und operativem Handover, sodass die IDP tatsächlich adoptiert und vom Plattform-Team aufrechterhalten wird."
   - q: "Brauche ich Backstage für eine IDP?"
-    a: "Nein. Backstage als Tapete über chaotischer Infrastruktur löst das Adoptionsproblem nicht. Aenix setzt auf eine opinionated Plattform mit Golden Paths, GitLab-Automation und Argo-CD-Workflows auf einer mandantenfähigen Cozystack-Foundation statt auf einen reinen Service-Katalog."
+    a: "Nein. Backstage als Fassade vor chaotischer Infrastruktur löst das Adoptionsproblem nicht. Aenix setzt auf eine opinionated Plattform mit Golden Paths, GitLab-Automation und Argo-CD-Workflows auf einer mandantenfähigen Cozystack-Foundation statt auf einen reinen Service-Katalog."
   - q: "Wer braucht eine Internal Developer Platform?"
     a: "Organisationen mit drei oder mehr Produkt-Teams mit überlappenden Bedürfnissen, einer Time-to-Environment im Wochenbereich, mehreren inkonsistenten Infrastruktur-Mustern und einer bestehenden Plattform- oder DevOps-Funktion, die mit Tickets überlastet ist."
   - q: "Worauf baut die Aenix-IDP technisch auf?"
@@ -46,7 +46,7 @@ faq:
 
 **Die meisten Internal Developer Platforms scheitern nicht, weil die Architektur falsch ist, sondern weil Produkt-Teams sie nicht nutzen. Die Plattform mit der höchsten Engineering-Eleganz hat oft den niedrigsten internen NPS. Die Plattform, die tatsächlich adoptiert wird, hat weniger Features, einfachere Abstraktionen und ein Team, das Produkt-Engineers als Kunden behandelt.**
 
-Ænix baut Internal Developer Platforms (IDPs), die adoptiert werden. Nicht Backstage als Tapete über dem Chaos; eine opinionated Plattform mit Golden Paths, mandantenfähiger Grundlage und operativem Handover, das Ihr Plattform-Team aufrechterhalten kann.
+Ænix baut Internal Developer Platforms (IDPs), die adoptiert werden. Nicht Backstage als Fassade vor dem Chaos; eine opinionated Plattform mit Golden Paths, mandantenfähiger Grundlage und operativem Handover, das Ihr Plattform-Team aufrechterhalten kann.
 
 > **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer (GitLab-Automation, Argo CD Workflows, APIs, Golden Paths, Productivity-Dashboards) auf der Cozystack-Cloud-Foundation. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
@@ -78,7 +78,7 @@ Die Investition in eine Internal Developer Platform passt, wenn:
 - **Bestehende Plattform-/DevOps-Funktion mit Tickets überlastet** — keine Kapazität für Self-Service-Arbeit
 - **Spezifischer Druck** (Regulator, Kosten, Souveränität, Skalierung) macht strukturierte Plattform-Investition jetzt relevant
 
-Wenn Ihre Situation auf drei dieser Punkte passt, liefert strukturierte IDP-Arbeit Adoption + Velocity innerhalb weniger Monate. Wenn Sie ein Produkt-Team und eine kleine Infrastruktur-Oberfläche haben, liefern einfachere Shared-Tooling-Praktiken ein besseres Kosten-Nutzen-Verhältnis.
+Wenn Ihre Situation auf drei dieser Punkte passt, liefert strukturierte IDP-Arbeit Adoption + Entwicklungsgeschwindigkeit innerhalb weniger Monate. Wenn Sie ein Produkt-Team und eine kleine Infrastruktur-Oberfläche haben, liefern einfachere Shared-Tooling-Praktiken ein besseres Kosten-Nutzen-Verhältnis.
 
 </div>
 </div>
@@ -143,7 +143,7 @@ Ohne explizite Headcount und geschützte Golden-Path-Arbeitszeit wird das Plattf
 
 </div>
 
-Diese Failure-Modes sind vorhersehbar. Die Engagement-Struktur verhindert jeden bewusst.
+Diese Fehlermodi sind vorhersehbar. Die Engagement-Struktur verhindert jeden bewusst.
 
 <!-- /BLOCK 4 -->
 
@@ -156,7 +156,7 @@ Diese Failure-Modes sind vorhersehbar. Die Engagement-Struktur verhindert jeden 
 Das IDP-Engagement läuft in drei Phasen:
 
 - **Phase 1: Platform Readiness Assessment (14-28 Tage)** — aktuelle Plattform-Reife, Ziel-IDP-Architektur, Golden-Path-Prioritäten, RACI für das Plattform-Team. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
-- **Phase 2: Build-Engagement (3-9 Monate)** — Ænix-Engineers integriert mit Ihrem Plattform-Team, bauen die Foundation, Golden Paths und Runbooks. Wissenstransfer ist ein First-Class-Deliverable, kein Nachgedanke.
+- **Phase 2: Build-Engagement (3-9 Monate)** — Ænix-Engineers integriert mit Ihrem Plattform-Team, bauen die Foundation, Golden Paths und Runbooks. Wissenstransfer ist ein First-Class-Ergebnis, kein Nachgedanke.
 - **Phase 3 (optional): Managed Operation** — für Organisationen, die die IDP brauchen, aber keine interne Plattform-Team-Kapazität aufbauen können.
 
 Engagements starten typischerweise mit Phase 1; die Sequenzierung von Phase 2 ergibt sich aus dem Assessment.
@@ -216,11 +216,11 @@ Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Fre
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 Tage)
-Festpreis. Schriftliches Deliverable, Ziel-IDP-Architektur, Phase-2-Roadmap.
+Festpreis. Schriftliches Ergebnis, Ziel-IDP-Architektur, Phase-2-Roadmap.
 **Auf Anfrage**
 
 ### Build- / Managed-Engagement
-Time-and-Materials oder Fixed-Scope. Phase-2-Build typischerweise 3-9 Monate Laufzeit.
+nach Aufwand oder zum Festpreis. Phase-2-Build typischerweise 3-9 Monate Laufzeit.
 **Auf Anfrage**
 
 </div>

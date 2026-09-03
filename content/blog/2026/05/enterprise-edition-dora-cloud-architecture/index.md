@@ -9,7 +9,7 @@ language: "en"
 companion_landing: "/products/private-cloud-platform/"
 companion_label: "See Private Cloud Platform product details →"
 quiz:
-  title: "Test yourself: DORA Article 21 & 28 architecture"
+  title: "Test yourself: DORA architecture and third-party risk"
   questions:
     - q: "What are the DORA Article 23 incident reporting windows that detection telemetry must support?"
       options:

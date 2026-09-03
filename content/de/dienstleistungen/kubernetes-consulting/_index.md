@@ -146,7 +146,7 @@ Mehrere Teams tragen Änderungen ohne Koordination bei. Drift akkumuliert. Upgra
 
 ## Wie Ænix arbeitet
 
-- **Architektur-Review (5-10 Tage)** — fokussiertes Engagement, schriftliches Deliverable, Ziel-Architektur.
+- **Architektur-Review (5-10 Tage)** — fokussiertes Engagement, schriftliches Ergebnis, Ziel-Architektur.
 - **Implementations-Engagement (1-6 Monate)** — Ænix-Engineers integriert mit Ihrem Team, Aufbau von Cluster-Foundation, Multi-Tenancy, Observability, Runbooks.
 - **Managed-Kubernetes-Engagement** — für Organisationen, die die Plattform brauchen, aber keine Betriebskapazität haben.
 
@@ -202,7 +202,7 @@ Festpreis.
 **Auf Anfrage**
 
 ### Implementations-Engagement
-Time-and-Materials oder Fixed-Scope. Phase 2 typischerweise 1-6 Monate.
+nach Aufwand oder zum Festpreis. Phase 2 typischerweise 1-6 Monate.
 **Auf Anfrage**
 
 </div>

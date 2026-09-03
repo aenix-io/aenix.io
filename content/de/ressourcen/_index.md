@@ -1,12 +1,12 @@
 ---
 title: "Ressourcen"
-description: "Kostenlose Aenix-Ressourcen — Checklisten, Decision Guides, TCO-Worksheets und Maturity Assessments. Die gleichen Frameworks zur Selbsteinschätzung."
-hero_subtitle: "Kostenlose Checklisten, TCO-Worksheets und Decision Guides"
+description: "Kostenlose Aenix-Ressourcen — Checklisten, Entscheidungsleitfäden, TCO-Worksheets und Maturity Assessments. Die gleichen Frameworks zur Selbsteinschätzung."
+hero_subtitle: "Kostenlose Checklisten, TCO-Worksheets und Entscheidungsleitfäden"
 language: "de"
 hreflang_en: /resources/
 ---
 
-**Kostenlose herunterladbare Assets — Checklisten, Decision Guides, TCO-Worksheets, Maturity Assessments. Die gleichen Frameworks, die Ænix bei bezahlten Engagements verwendet, kostenlos zur Selbsteinschätzung Ihres Teams.**
+**Kostenlose herunterladbare Assets — Checklisten, Entscheidungsleitfäden, TCO-Worksheets, Maturity Assessments. Die gleichen Frameworks, die Ænix bei bezahlten Engagements verwendet, kostenlos zur Selbsteinschätzung Ihres Teams.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -17,7 +17,7 @@ hreflang_en: /resources/
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>Kostenlose Ressourcen</b><div class="diagram__chips"><span>Compliance-Checklisten</span><span>Migrations- &amp; Kosten-Worksheets</span><span>Decision Guides + Maturity Models</span></div></div>
+<div class="diagram__node"><b>Kostenlose Ressourcen</b><div class="diagram__chips"><span>Compliance-Checklisten</span><span>Migrations- &amp; Kosten-Worksheets</span><span>Entscheidungsleitfäden und Reifegradmodelle</span></div></div>
 <div class="diagram__conn">herunterladen &amp; selbst einschätzen</div>
 <div class="diagram__node"><b>Engagement</b><div class="diagram__chips"><span>Discovery-Call</span><span>Platform Readiness Assessment</span></div></div>
 <div class="diagram__conn">führt zu</div>
@@ -41,7 +41,7 @@ hreflang_en: /resources/
 - **[Cloud-Repatriation-TCO-Worksheet](/de/ressourcen/cloud-repatriation-tco-worksheet/)** — zehnseitiges PDF-Arbeitsblatt plus editierbare CSV für Excel oder Google Sheets. Modelliert versteckte Kosten und realistische Destination-Kosten über fünf Jahre. Passt zu: [Cloud-Repatriation-Lösung](/de/loesungen/cloud-repatriation/) / [Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/).
 - **[VMware-Kostenrechner](/de/ressourcen/vmware-kostenrechner/)** — interaktiver Rechner direkt auf der Seite (kein Download, keine E-Mail). Cores, Kosten pro Core und Migrationskosten eingeben; Ergebnis: jährliche Ersparnis, Drei-Jahres-Netto und Amortisationsdauer. Passt zu: [VMware-Alternative](/de/alternativen/vmware-alternative/) / [VMware-Migrations-Hub](/de/migration/vmware/).
 
-### Decision Guides + Maturity Models
+### Entscheidungsleitfäden und Reifegradmodelle
 
 - **[Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/)** — 11-seitiges PDF mit Master-Decision-Tree. Sieben Entscheidungen, vier Referenzarchitekturen, GPU-Sizing-Tabellen. Passt zu: AI Platform / [Souveräne-KI-Lösung](/de/loesungen/sovereign-ai/).
 - **[Platform Engineering Maturity Assessment](/de/ressourcen/platform-engineering-maturity-assessment/)** — neunseitiges PDF mit 8-Dimensionen-×-5-Stufen-Rubrik und Bewertungsbogen. Passt zu: der Developer-Self-Service-Ebene der [Private Cloud Platform](/de/produkte/private-cloud-platform/) / [Internal Developer Platform Service](/de/dienstleistungen/internal-developer-platform/).
@@ -54,10 +54,10 @@ hreflang_en: /resources/
 ## So nutzen Sie diese Ressourcen
 
 1. **Finden Sie die relevante Ressource** für Ihre Situation (regulatorisch / Migration / Kosten / KI / IDP)
-2. **Download** — E-Mail-gated; einmaliger E-Mail-Opt-in für Lieferung
+2. **Download** — gegen Angabe Ihrer E-Mail-Adresse; einmalige Einwilligung zur Zusendung
 3. **Durchgehen** mit Ihrem Team — typisch 1-3 Stunden pro Ressource
-4. **Lücken identifizieren** — Findings in ein Backlog konvertieren
-5. **Optionaler nächster Schritt:** Discovery-Call oder Platform Readiness Assessment, um die Findings in ein bezahltes Engagement zu überführen
+4. **Lücken identifizieren** — Ergebnisse in ein Backlog überführen
+5. **Optionaler nächster Schritt:** Discovery-Call oder Platform Readiness Assessment, um die Ergebnisse in ein bezahltes Engagement zu überführen
 
 ---
 

@@ -42,7 +42,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Die meisten „DevOps-Consulting“-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im Lesen von Gartner-Berichten besteht. Das Deliverable ist meist eine Transformations-Roadmap, die im Regal verstaubt. Wir machen das Gegenteil: Senior-Engineers, die Plattformen in Produktion bauen und betreiben, an der Seite Ihres Teams, mit schriftlichen Runbooks, die Ihr Team danach besitzt.**
+**Die meisten „DevOps-Consulting“-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im Lesen von Gartner-Berichten besteht. Das Ergebnis ist meist eine Transformations-Roadmap, die im Regal verstaubt. Wir machen das Gegenteil: Senior-Engineers, die Plattformen in Produktion bauen und betreiben, an der Seite Ihres Teams, mit schriftlichen Runbooks, die Ihr Team danach besitzt.**
 
 > **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert. Für technischen Scope auf bestehender Infrastruktur: eigenständiges Consulting-Engagement.
 
@@ -153,7 +153,7 @@ Diese Fehlermodi sind vorhersehbar. Die Engagement-Struktur verhindert jeden bew
 
 Drei Modi:
 
-- **DevOps-Reifegrad-Bewertung (14-28 Tage)** — schriftliche Bewertung der aktuellen DevOps-Praktiken, des Zielzustands und ein Remediation-Plan. Eigenständiges Deliverable. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+- **DevOps-Reifegrad-Bewertung (14-28 Tage)** — schriftliche Bewertung der aktuellen DevOps-Praktiken, des Zielzustands und ein Remediation-Plan. Eigenständiges Ergebnis. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 - **DevOps-Transformations-Engagement (3-9 Monate)** — Ænix-Engineers integriert mit Ihrem Team, Aufbau von CI/CD-Foundation, IaC-Disziplin, Observability-Stack und operativen Praktiken. Der Knowledge-Transfer ist strukturiert.
 - **DevOps-as-a-Service / Managed-Engagement** — für Organisationen, die eine DevOps-Funktion brauchen, aber keine interne Kapazität aufbauen können. Ænix betreibt mit dokumentiertem Exit-Pfad.
 
@@ -216,7 +216,7 @@ Festpreis.
 **Auf Anfrage**
 
 ### Transformation / Managed
-Time-and-Materials oder Fixed-Scope. Phase 2 typischerweise 3-9 Monate.
+nach Aufwand oder zum Festpreis. Phase 2 typischerweise 3-9 Monate.
 **Auf Anfrage**
 
 </div>

@@ -44,7 +44,7 @@ faq:
 
 Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternativen-Listicle](/de/alternativen/vmware-alternativen/)**. Für die fokussierte Vendor-Empfehlung siehe **[VMware-Alternative](/de/alternativen/vmware-alternative/)**. Diese Seite nimmt an, dass Sie Cozystack bereits spezifisch erwägen.
 
-> **Passt zu:** **[Ænix Platform](/de/produkte/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Drei Plattformen: Public Cloud (für Anbieter, die Cloud verkaufen), Private Cloud (regulierte Unternehmen, die selbst betreiben) und AI (GPU- und KI-Workloads). Die richtige Plattform hängt von Ihrem Buyer-Profil post-VMware ab.
+> **Passt zu:** **[Ænix Platform](/de/produkte/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Drei Plattformen: Public Cloud (für Anbieter, die Cloud verkaufen), Private Cloud (regulierte Unternehmen, die selbst betreiben) und AI (GPU- und KI-Workloads). Die richtige Plattform hängt von Ihrem Käuferprofil post-VMware ab.
 
 ---
 
@@ -102,7 +102,7 @@ Wenn Sie bereits tief auf VMware setzen und die Renewal-Ökonomie tragbar ist, i
 
 ## Migrations-Timing
 
-| Estate-Größe | Assessment | Umsetzung | Gesamt |
+| Bestandsgröße | Assessment | Umsetzung | Gesamt |
 |---|---|---|---|
 | <100 VMs | 14 Tage | 6-9 Monate | 7-10 Monate |
 | 100-500 VMs | 28 Tage | 9-15 Monate | 10-16 Monate |
@@ -114,7 +114,7 @@ Kohorten-basierte Migration; ausgerichtet an den VCF-Subscription-Abläufen.
 
 ## Kosten-Trajektorie
 
-Für ein Estate mit 200 VMs zu typischer VMware-VCF-Preisgestaltung:
+Für ein Bestand mit 200 VMs zu typischer VMware-VCF-Preisgestaltung:
 
 - **Jahr 1 VMware-VCF-Subscription:** ~$X (variiert; jüngste Pipeline zeigt 2-5× des ursprünglichen Deal-Preises)
 - **Jahr 1 Migrationskosten:** Assessment + Cozystack-Plattform-Aufbau + Migrations-Aufwand + Ænix-Support

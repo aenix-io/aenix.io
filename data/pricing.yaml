@@ -1,0 +1,131 @@
+# Enterprise support tiers — single source of truth for the pricing table.
+#
+# Rendered server-side by layouts/shortcodes/pricing-table.html so the prices and
+# the SLA matrix are in the HTML for Google, AI search engines and no-JS clients.
+# /js/pricing-table.js only switches the displayed price between the annual and
+# monthly figures already present in the markup — it no longer owns any data.
+#
+# Monthly is annual + 20% (the "-20%" annual discount shown on the toggle).
+# Keep monthly_ consistent with that if you change a price.
+
+plans:
+  - id: basic
+    name: Basic
+    price_annual: 1250
+    price_monthly: 1500
+    who: "Small providers, startups, and internal teams running limited workloads"
+    value: "Reliable incident support, guided upgrades and basic enterprise features. Low risk at low cost"
+  - id: standard
+    name: Standard
+    price_annual: 3000
+    price_monthly: 3600
+    who: "Middle-size providers and data centers, growing teams with production SLAs who need faster responses and hands-on guidance"
+    value: "Priority tickets, onboarding assistance, enterprise features and stable releases for daily ops"
+  - id: plus
+    name: Plus
+    price_annual: 5500
+    price_monthly: 6600
+    who: "Regulated and privacy-conscious organizations, SPs/DCs with mission-critical clusters"
+    value: "24×7 support, full enterprise features package, hardened security practices and help with migration/audits"
+  - id: enterprise
+    name: Enterprise
+    price_annual: null
+    price_monthly: null
+    contact_url: "https://aenix.io/contact/"
+    who: "Large-scale platforms and partners needing roadmap influence and custom integrations"
+    value: "Co-engineering on features, architectural reviews, and tailored SLAs across multi-DC and air-gapped setups"
+
+sections:
+  - title: Information
+    long: true
+    items:
+      - k: "Who is it for"
+        from: who
+      - k: "Value"
+        from: value
+
+  - title: SLA-guaranteed Support
+    items:
+      - k: "Package Includes"
+        v: { basic: "10 Physical Nodes", standard: "10 Physical Nodes", plus: "10 Physical Nodes", enterprise: "10 Physical Nodes" }
+      - k: "Incidents covered¹"
+        v: { basic: "5", standard: "Unlimited", plus: "Unlimited", enterprise: "Unlimited" }
+      - k: "Service Desk Hours²"
+        v: { basic: "Business Hours", standard: "Business Hours", plus: "24×7 Support", enterprise: "24×7 Support" }
+      - k: "Emergency Response Time³"
+        v: { basic: "In 8 Hours", standard: "In 4 Hours", plus: "In 4 Hours", enterprise: "In 1 Hour" }
+      - k: "Standard Response Time"
+        v: { basic: "In 2 Business Days", standard: "In 2 Business Days", plus: "In 8 Hours", enterprise: "In 4 Hours" }
+
+  - title: Enterprise features
+    items:
+      - k: "Billing System"
+        v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "White-labeling"
+        v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "Air-gap"
+        v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
+      - k: "WHMCS Integration"
+        v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "Backup System"
+        v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "GPU sharing"
+        v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
+
+  - title: PoC
+    items:
+      - k: "PoC Support Level"
+        v: { basic: "Knowledge base and answering questions", standard: "Basic PoC", plus: "Full PoC Package", enterprise: "Full PoC Package" }
+
+  - title: Learning and trainings
+    items:
+      - k: "K8s Deep Dive Course"
+        v: { basic: "As per pricing", standard: "As per pricing", plus: "1 full course/year free; additional at 30% off", enterprise: "1 full course/year free; additional at 30% off" }
+      - k: "Training"
+        v: { basic: "1 hour/month", standard: "2 hour/month", plus: "3 hour/month", enterprise: "5 hour/month" }
+
+  - title: Security Features
+    items:
+      - k: "Fast-track security bug fixing"
+        v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "CVE Vulnerabilities"
+        v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "User Authentication Support"
+        v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
+
+  - title: Consulting/Managed Assistance
+    items:
+      - k: "Migration"
+        v: { basic: "Documentation only", standard: "Documentation only", plus: "Guided by Ænix", enterprise: "Managed by Ænix" }
+      - k: "Architecture Advisory"
+        v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
+      - k: "Best-Practice Audit"
+        v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
+      - k: "Platform Installation"
+        v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "Certification and Compliance Support"
+        v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
+      - k: "Supervised Upgrade Assistance"
+        v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "Extra Consultation Rate"
+        v: { basic: "$150 / hour", standard: "", plus: "", enterprise: "" }
+
+  - title: Procurement
+    items:
+      - k: "MSA and SLA terms"
+        v: { basic: "Standard, no amendments", standard: "Standard, no amendments", plus: "Standard, amendable", enterprise: "Customer templates permitted" }
+
+  - title: Ænix Team Engagement
+    items:
+      - k: "Dedicated support channel"
+        v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "Remote Access (ssh)"
+        v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "External Monitoring"
+        v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
+      - k: "Personalized Roadmap"
+        v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
+      - k: "Priority Engagement Time⁴"
+        v: { basic: "2 Hours", standard: "4 Hours", plus: "15 Hours", enterprise: "40 Hours" }
+      - k: "Exclusive Update Channel"
+        v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }

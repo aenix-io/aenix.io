@@ -6,7 +6,7 @@ language: "de"
 hreflang_en: /pricing/
 ---
 
-**Cozystack ist kostenlos (Apache 2.0). Für die Ænix Platform — unsere schlüsselfertige kommerzielle Cloud-in-a-Box — gibt es zwei Wege. Hosting-Anbieter, MSPs und Produktteams kaufen aus einer veröffentlichten Preisliste: Support-Tiers pro 10 physische Nodes, ab 1.250 USD / Monat. Enterprise-, Public-Cloud-, IDP- und AI/ML-Programme werden nach RFP kalkuliert — die Zahl hängt von Estate-Größe, regulatorischem Scope, Migrationsvolumen und Betriebsmodell ab, und jede auf einer Webseite gedruckte Zahl wäre für Ihren Fall falsch.**
+**Cozystack ist kostenlos (Apache 2.0). Für die Ænix Platform — unsere schlüsselfertige kommerzielle Cloud-in-a-Box — gibt es zwei Wege. Hosting-Anbieter, MSPs und Produktteams kaufen aus einer veröffentlichten Preisliste: Support-Tiers pro 10 physische Nodes, ab 1.250 USD / Monat. Enterprise-, Public-Cloud-, IDP- und AI/ML-Programme werden nach RFP kalkuliert — die Zahl hängt von Bestandsgröße, regulatorischem Scope, Migrationsvolumen und Betriebsmodell ab, und jede auf einer Webseite gedruckte Zahl wäre für Ihren Fall falsch.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -19,8 +19,8 @@ hreflang_en: /pricing/
 
 Ænix Platform Preise haben zwei Dimensionen:
 
-- **Plattform** — welches Feature-Bundle Sie kaufen. Bestimmt durch Ihr Buyer-Profil (Hosting-Anbieter, regulierte Unternehmen, Public-Cloud-Betreiber, Produkt-Engineering-Team oder KI-lastige Organisation).
-- **Support-Tier** — wie Ænix Sie unterstützt. Vier Tiers, von Basic (1.250 USD/Monat pro 10 Nodes) bis Enterprise (nach Vereinbarung).
+- **Plattform** — welches Feature-Bundle Sie kaufen. Bestimmt durch Ihr Käuferprofil (Hosting-Anbieter, regulierte Unternehmen, Public-Cloud-Betreiber, Produkt-Engineering-Team oder KI-lastige Organisation).
+- **Support-Tier** — wie Ænix Sie unterstützt. Vier Support-Tiers, von Basic (1.250 USD/Monat pro 10 Nodes) bis Enterprise (nach Vereinbarung).
 
 Plus Engagement-Zusätze (Platform Readiness Assessment, Pilot, Full Build, Managed Operations) je nach Umfang separat kalkuliert.
 

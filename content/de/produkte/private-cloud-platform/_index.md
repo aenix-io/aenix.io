@@ -20,12 +20,12 @@ quick_facts:
   - label: "Architektur"
     value: "Kubernetes-nativ mit KubeVirt (VMs + Container), Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Tenant-CRD-Mandantenfähigkeit; Multi-DC und Air-Gap-fähig"
   - label: "Engagement"
-    value: "Mehrjährige Plattform-Builds, Angebot nach RFP; Time-to-Production 9-18 Monate Full Estate, 3-6 Monate Pilot"
+    value: "Mehrjährige Plattform-Builds, Angebot nach RFP; Time-to-Production 9-18 Monate Full Bestand, 3-6 Monate Pilot"
 faq:
   - q: "Wie unterscheidet sich die Private Cloud Platform vom Selbstbetrieb von Open-Source-Cozystack?"
     a: "Cozystack liefert die Kubernetes-native Multi-Tenant-Foundation. Die Private Cloud Platform ergänzt DORA-/NIS2-Architektur-Bundles, Multi-DC-Operations-Runbooks, kundenverwaltete Verschlüsselung auf jeder Schicht inklusive Backups und Observability, audit-bereites Logging, Hybrid-Integration mit VMware / OpenNebula / OpenShift, ISO 27001 / SOC 2 Alignment-Support, Enterprise-SLA mit 24/7-Support sowie inkludiertes Engineering-Training."
   - q: "Kann die Private Cloud Platform mit bestehendem VMware, OpenStack oder OpenShift koexistieren?"
-    a: "Ja. Sie ist auf Koexistenz statt auf einen Komplettaustausch ausgelegt. Die Control Plane integriert bestehende VMware Cloud Foundation, OpenStack, OpenNebula und OpenShift Estates; die Konsolidierung erfolgt graduell im Workload-Tempo. Viele Deployments laufen über Jahre hybrid."
+    a: "Ja. Sie ist auf Koexistenz statt auf einen Komplettaustausch ausgelegt. Die Control Plane integriert bestehende VMware Cloud Foundation, OpenStack, OpenNebula und OpenShift Bestände; die Konsolidierung erfolgt graduell im Workload-Tempo. Viele Deployments laufen über Jahre hybrid."
   - q: "Wie unterstützt die Private Cloud Platform DORA- und NIS2-Compliance?"
     a: "Über Architekturkontrollen, die auf die jeweilige Norm zugeschnitten sind: kundenkontrollierte Verschlüsselungsschlüssel (DORA Art. 9), Tenant-CRD-Segmentierung entlang der IKT-Asset- und Risikoklassifizierung mit Cilium-NetworkPolicy (DORA Art. 8), unveränderbares Audit-Logging via VictoriaLogs, dimensioniert für Klassifizierung und Meldung schwerwiegender Vorfälle (DORA Art. 17-19), getestete Exit-Mechanik (DORA Art. 28(8), vertraglich Art. 30(3)(f)) und Lieferantentransparenz für das Informationsregister (Art. 28(3)). NIS2 deckt die Risikomanagement-Maßnahmen (Art. 21) und die Meldepflichten (Art. 23) ab."
   - q: "Wird Air-Gap-Betrieb unterstützt?"
@@ -56,7 +56,7 @@ Ausgelegt auf Deployments über zwei oder mehr Rechenzentren mit Active-Warm- od
 
 ### Eine Control Plane verbindet VMware / OpenNebula / OpenShift
 
-Die Private Cloud Platform ist auf **Koexistenz** ausgelegt, nicht auf einen Komplettaustausch. Existierende VMware Cloud Foundation, OpenStack, OpenNebula, OpenShift Estates können unter eine Cozystack-basierte Control Plane gebracht werden, während graduelle Konsolidierung im Workload-Tempo geschieht.
+Die Private Cloud Platform ist auf **Koexistenz** ausgelegt, nicht auf einen Komplettaustausch. Existierende VMware Cloud Foundation, OpenStack, OpenNebula, OpenShift Bestände können unter eine Cozystack-basierte Control Plane gebracht werden, während graduelle Konsolidierung im Workload-Tempo geschieht.
 
 ### DORA-Architekturkontrollen
 

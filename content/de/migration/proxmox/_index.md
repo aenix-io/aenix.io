@@ -25,7 +25,7 @@ quick_facts:
   - label: "Technologie-Stack"
     value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Migrations-Zeitrahmen"
-    value: "Public Cloud Platform über produktisierten Installer in Wochen live; Workload-Migration in Kohorten über 3 bis 6 Monate für mittelgroße Estates"
+    value: "Public Cloud Platform über produktisierten Installer in Wochen live; Workload-Migration in Kohorten über 3 bis 6 Monate für mittelgroße Bestände"
   - label: "Engagement"
     value: "Ænix Public Cloud Platform ab 1.250 USD/Monat Support-Tier, mit WHMCS-integriertem Billing und White-Label-Customer-Portal"
 
@@ -35,7 +35,7 @@ faq:
   - q: "Wie werden bestehende Proxmox-VMs nach Cozystack migriert?"
     a: "VM-Images werden von KVM unter Proxmox auf KubeVirt unter Cozystack übertragen. Storage wandert von ZFS oder Ceph auf LINSTOR/DRBD. Das Berechtigungsmodell von Proxmox wird auf das Tenant-CRD-Modell von Cozystack abgebildet. VMs und Container laufen anschließend auf einer gemeinsamen Kubernetes-API."
   - q: "Wie lange dauert eine Proxmox-zu-Cozystack-Migration?"
-    a: "Der produktisierte Installer bringt die Public Cloud Platform innerhalb von Wochen live. Die eigentliche Workload-Migration erfolgt in Kohorten über 3 bis 6 Monate für mittelgroße Estates, um Risiko und Ausfallzeiten zu begrenzen."
+    a: "Der produktisierte Installer bringt die Public Cloud Platform innerhalb von Wochen live. Die eigentliche Workload-Migration erfolgt in Kohorten über 3 bis 6 Monate für mittelgroße Bestände, um Risiko und Ausfallzeiten zu begrenzen."
   - q: "Welche Ænix Plattform passt für Hosting-Anbieter, die Proxmox ablösen?"
     a: "Die Ænix Public Cloud Platform — eine turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds. Sie bietet WHMCS-integriertes Billing, ist Multi-Tenant by design und kommt mit produktisiertem Installer. Support ab 1.250 USD/Monat."
   - q: "Wie wird Cozystack lizenziert und welche Folgekosten gibt es?"
@@ -68,7 +68,7 @@ faq:
 
 ## Migrations-Pattern
 
-VM-Image-Migration: KVM (Proxmox) → KubeVirt (Cozystack). Storage: ZFS / Ceph → LINSTOR. Tenant-Modell: Proxmox-Permissions → Tenant CRD. Produktisierter Installer bringt Public Cloud Platform in Wochen live; Workload-Migration in Kohorten über 3-6 Monate für mittelgroße Estates.
+VM-Image-Migration: KVM (Proxmox) → KubeVirt (Cozystack). Storage: ZFS / Ceph → LINSTOR. Tenant-Modell: Proxmox-Permissions → Tenant CRD. Produktisierter Installer bringt Public Cloud Platform in Wochen live; Workload-Migration in Kohorten über 3-6 Monate für mittelgroße Bestände.
 
 <div class="arch-section__fig">
 <div class="diagram">

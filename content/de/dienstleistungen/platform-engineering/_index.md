@@ -66,7 +66,7 @@ Produktionsreifes Plattform-Team · Apache-2.0-Foundation · Engineers, keine Ar
 Platform Engineering als Funktion passt, wenn mindestens drei der folgenden Punkte zutreffen:
 
 - **Mehrere Produkt-Teams** mit überlappenden Infrastruktur-Bedürfnissen und divergierenden Provisionierungs-Pfaden.
-- **Time-to-Environment in Wochen, nicht Stunden** — und das schadet der Produkt-Velocity.
+- **Time-to-Environment in Wochen, nicht Stunden** — und das schadet der Produktgeschwindigkeit.
 - **Bestehendes DevOps-/SRE-Team ist mit Operations ausgelastet** — keine Kapazität für Golden-Path-Arbeit.
 - **Mehrere Kubernetes-Distributionen / Cloud-Provider / IaC-Patterns** gleichzeitig in Produktion.
 - **Compliance-, Souveränitäts- oder Kostendruck**, der eine architektonische Änderung erfordert statt einer Tooling-Änderung.
@@ -127,7 +127,7 @@ Das Ergebnis ist eine Plattform, die tatsächlich gebaut und in Produktion mit r
 Schöne interne Architektur, geringe Adoption der Produkt-Teams. Self-Service ist technisch vorhanden, aber operativ umständlich; Produkt-Teams reichen weiter Tickets ein. Fehler: der Wert der Plattform misst sich an der Nutzung, nicht an der Eleganz.
 
 **Backstage als Ziel, nicht als Plattform**
-Viele Teams verwechseln „Internal Developer Portal“ (Backstage-UI) mit „Internal Developer Platform“. Backstage ohne eine darunterliegende opinionated Plattform ist Tapete über demselben operativen Chaos. Fehler: der Katalog ist reich, die Pfade dauern weiterhin Wochen.
+Viele Teams verwechseln „Internal Developer Portal“ (Backstage-UI) mit „Internal Developer Platform“. Backstage ohne eine darunterliegende opinionated Plattform ist nur eine Fassade vor demselben operativen Chaos. Fehler: der Katalog ist reich, die Pfade dauern weiterhin Wochen.
 
 **Vendor-geführte Plattform mit einer Roadmap, die nicht Ihre ist**
 Der Kauf einer „kompletten Platform-Engineering-Lösung“ sperrt die Architektur in die Roadmap des Vendors. Fehler: die Autorität des Plattform-Teams reduziert sich auf das Eskalieren von Tickets an ein Vendor-Support-Team.
@@ -215,11 +215,11 @@ Benannte Case Studies verfügbar im Discovery-Call, sofern Kunden-Berechtigungen
 <div class="pricing-cards-2">
 
 ### Assessment (14-28 Tage)
-Festpreis. Schriftliches Deliverable, Ziel-Architektur, Phase-2-Roadmap.
+Festpreis. Schriftliches Ergebnis, Ziel-Architektur, Phase-2-Roadmap.
 **Auf Anfrage**
 
 ### Build- / Managed-Engagement
-Time-and-Materials oder Fixed-Scope, abhängig von der Scope-Klarheit. Phase-2-Implementation typischerweise 3-12 Monate; Managed-Services typischerweise jährlich.
+nach Aufwand oder zum Festpreis, abhängig von der Scope-Klarheit. Phase-2-Implementation typischerweise 3-12 Monate; Managed-Services typischerweise jährlich.
 **Auf Anfrage**
 
 </div>

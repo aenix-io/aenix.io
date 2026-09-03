@@ -134,7 +134,7 @@ Diese Kunden nutzen Ænix Public Cloud Platform, um Multi-Tenant-Cloud-Produkte 
 Ænix liefert Migrationen auf die Public Cloud Platform mit produktisierten Modulen und Engagement-Expertise:
 
 - **Von VMware Cloud Director / vSphere** — häufigster 2026-Trigger (Broadcom-Subscription-Druck)
-- **Von OpenStack** — Reduzierung operativer Komplexität; schnellere Feature-Velocity
+- **Von OpenStack** — Reduzierung operativer Komplexität; schnellere Feature-Entwicklungsgeschwindigkeit
 - **Von Virtuozzo / OpenNebula** — Modernisierung von Legacy-Hosting-Stacks
 - **Von eigenen Panels** — Konsolidierung von Multi-Vendor-Stacks unter einer Plattform
 

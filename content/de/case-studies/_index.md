@@ -6,7 +6,7 @@ language: "de"
 hreflang_en: /case-studies/
 ---
 
-**Neun Deployments, unten ausführlich dokumentiert: wie das Estate vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der Public Cloud Platform, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
+**Neun Deployments, unten ausführlich dokumentiert: wie das Bestand vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Daneben gibt es öffentliche Referenzen bei regionalen Hosting-Anbietern mit der Public Cloud Platform, Plattform-R&D für Ecosystem-Vendors und Tier-1-Bank-Engagements, die bis Mitte 2027 unter NDA stehen.**
 
 ---
 

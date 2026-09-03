@@ -109,7 +109,7 @@ Kubernetes-native KI-Plattform mit klarer Verantwortlichkeit für GPU-Scheduling
 
 </div>
 
-Das ist keine „private KI“ als Marketing-Tapete für einen SaaS-Endpunkt mit einer Datenschutzklausel. Es ist ein architektonisch souveräner Stack mit benannten Komponenten und nachweisbaren Kontrollen.
+Das ist keine „private KI“ als Marketing-Fassade vor einem SaaS-Endpunkt mit einer Datenschutzklausel. Es ist ein architektonisch souveräner Stack mit benannten Komponenten und nachweisbaren Kontrollen.
 
 <!-- /BLOCK 3 -->
 
@@ -232,7 +232,7 @@ Architekturoptionen, GPU-Strategie, Souveränitätskontrollen, Betriebsmodell, P
 **Auf Anfrage**
 
 ### Phase-2-Implementierung
-Von Ænix gelieferter Aufbau der souveränen KI-Plattform. Fester Umfang oder Time-and-Materials, je nach Anzahl und Komplexität der Workloads. Typischerweise 3-9 Monate Laufzeit.
+Von Ænix gelieferter Aufbau der souveränen KI-Plattform. Fester Umfang oder nach Aufwand, je nach Anzahl und Komplexität der Workloads. Typischerweise 3-9 Monate Laufzeit.
 **Auf Anfrage**
 
 </div>

@@ -19,7 +19,7 @@ quick_facts:
   - label: "Versteckte Kosten"
     value: "Modelliert Egress, Idle/Over-sized Ressourcen, RI/Savings-Plans-Underutilisation und Hyperscaler-Managed-Service-Premiums"
   - label: "Ziel-Plattform"
-    value: "Anbieterneutral. Wenn eine Ænix-Plattform das Ziel ist, richtet sich die Wahl nach dem Buyer-Profil: Public Cloud Platform, Private Cloud Platform oder ergänzend die AI Platform"
+    value: "Anbieterneutral. Wenn eine Ænix-Plattform das Ziel ist, richtet sich die Wahl nach dem Käuferprofil: Public Cloud Platform, Private Cloud Platform oder ergänzend die AI Platform"
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
@@ -32,7 +32,7 @@ faq:
   - q: "Brauche ich Cozystack oder die Ænix Platform, um das Worksheet zu nutzen?"
     a: "Nein. Das Template ist anbieterneutral und funktioniert für jede Repatriation-Destination. Wenn Sie eine Ziel-Plattform suchen, modelliert es die Kosten einer Ænix-Platform-Umgebung (Cozystack-basiert: KubeVirt, Cilium, LINSTOR) realistisch mit, aber das Worksheet selbst setzt kein bestimmtes Produkt voraus."
   - q: "Welche Ænix-Plattform passt zu meinem Repatriation-Case?"
-    a: "Die Destination hängt vom Buyer-Profil ab: Hosting-Anbieter, regionale Clouds und große Betreiber, die Cloud an Kunden verkaufen, passen zur Ænix Public Cloud Platform; regulierte Unternehmen, die Cloud für die eigene Organisation betreiben, zur Ænix Private Cloud Platform. GPU-lastige Umgebungen ergänzen in beiden Fällen die Ænix AI Platform. Alle drei basieren auf demselben Open-Source-Kern Cozystack."
+    a: "Die Destination hängt vom Käuferprofil ab: Hosting-Anbieter, regionale Clouds und große Betreiber, die Cloud an Kunden verkaufen, passen zur Ænix Public Cloud Platform; regulierte Unternehmen, die Cloud für die eigene Organisation betreiben, zur Ænix Private Cloud Platform. GPU-lastige Umgebungen ergänzen in beiden Fällen die Ænix AI Platform. Alle drei basieren auf demselben Open-Source-Kern Cozystack."
   - q: "Was kostet die Ænix Platform als Repatriation-Ziel?"
     a: "Die Ænix Platform wird in Stufen angeboten: Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise als individuelles Angebot. Der Open-Source-Kern Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
   - q: "Über welchen Zeitraum vergleicht das Worksheet die Kosten?"
@@ -41,7 +41,7 @@ faq:
 
 **Ein zehnseitiges Arbeitsblatt — PDF plus editierbare CSV für Excel oder Google Sheets — das Ihre tatsächlichen Public-Cloud-Kosten in einen ehrlichen Fünf-Jahres-TCO-Vergleich gegen Private Cloud überführt. Modelliert versteckte Kosten (Egress, ungenutzte Ressourcen, Commitment-Underutilisation, Hyperscaler-Managed-Service-Premiums) plus realistische Destination-Kosten.**
 
-> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)** — die Repatriation-Destination hängt vom Buyer-Profil ab. Wenn Sie Cloud an Kunden verkaufen → [Public Cloud Platform](/de/produkte/public-cloud-platform/). Wenn Sie sie für die eigene Organisation betreiben → [Private Cloud Platform](/de/produkte/private-cloud-platform/). GPU-lastig in beiden Fällen → ergänzend die [AI Platform](/de/produkte/ai-platform/).
+> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)** — die Repatriation-Destination hängt vom Käuferprofil ab. Wenn Sie Cloud an Kunden verkaufen → [Public Cloud Platform](/de/produkte/public-cloud-platform/). Wenn Sie sie für die eigene Organisation betreiben → [Private Cloud Platform](/de/produkte/private-cloud-platform/). GPU-lastig in beiden Fällen → ergänzend die [AI Platform](/de/produkte/ai-platform/).
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" resource="cloud-repatriation-tco-worksheet" >}}

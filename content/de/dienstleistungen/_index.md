@@ -6,7 +6,7 @@ language: "de"
 hreflang_en: /services/
 ---
 
-**Engagement-basierte Einstiegspunkte zu Ænix-Arbeit. Wählen Sie den Engagement-Typ, der zu Ihrem Vorhaben passt — bewerten, aufbauen, betreiben. Alle Pfade führen zu Ænix-Platform-Deployments passend zu Ihrem Buyer-Profil.**
+**Engagement-basierte Einstiegspunkte zu Ænix-Arbeit. Wählen Sie den Engagement-Typ, der zu Ihrem Vorhaben passt — bewerten, aufbauen, betreiben. Alle Pfade führen zu Ænix-Platform-Deployments passend zu Ihrem Käuferprofil.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

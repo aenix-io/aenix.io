@@ -33,7 +33,7 @@ faq:
   - q: "Wann sollte ein Team bei OpenStack bleiben statt zu Cozystack zu wechseln?"
     a: "OpenStack bleibt sinnvoll bei tiefer OpenStack-Expertise im Team, bei Hyperscale-Anforderungen (Telco oder sehr großer Cloud-Anbieter) sowie wenn spezifische OpenStack-Features wie Heat oder Trove zwingend erforderlich sind."
   - q: "Ist die Migration von OpenStack zu Cozystack wirtschaftlich sinnvoll?"
-    a: "Cozystack lohnt sich, wenn OpenStack-Engineers schwer zu finden oder zu halten sind, der operative Footprint für die Workload-Größe zu schwer ist, der Workload-Mix sich Richtung Kubernetes-First verschiebt oder schnellere Feature-Velocity gewünscht ist. Aenix liefert dafür einen produktisierten Migrationspfad."
+    a: "Cozystack lohnt sich, wenn OpenStack-Engineers schwer zu finden oder zu halten sind, der operative Footprint für die Workload-Größe zu schwer ist, der Workload-Mix sich Richtung Kubernetes-First verschiebt oder schnellere Feature-Entwicklungsgeschwindigkeit gewünscht ist. Aenix liefert dafür einen produktisierten Migrationspfad."
   - q: "Wie unterscheidet sich der Upgrade-Pfad zwischen beiden Plattformen?"
     a: "OpenStack-Upgrades sind durch die Vielzahl der Dienste komplex und koordinationsintensiv. Cozystack-Upgrades sind GitOps-gesteuert und folgen der Kubernetes-Operatoren-Logik, was den operativen Aufwand deutlich reduziert."
   - q: "Welche Storage- und Networking-Technologien nutzt Cozystack?"
@@ -68,7 +68,7 @@ faq:
 - OpenStack-Engineers schwer zu finden / zu halten
 - Operativer Footprint zu schwer für Workload-Größe
 - Workload-Mix zu Kubernetes-First verschoben
-- Schnellere Feature-Velocity gewünscht
+- Schnellere Feature-Entwicklungsgeschwindigkeit gewünscht
 
 **OpenStack passt wenn:**
 - Tiefe OpenStack-Expertise im Team

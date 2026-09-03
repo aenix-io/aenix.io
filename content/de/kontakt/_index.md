@@ -20,7 +20,7 @@ offices:
       - "Registration Number: 10075938"
 ---
 
-**Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Plattformen, Ihr Buyer-Profil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**
+**Buchen Sie einen 30-Minuten-Discovery-Call, um Ænix-Plattformen, Ihr Käuferprofil und Engagement-Scope zu besprechen. Oder schreiben Sie uns für Partnerschaften, Presse oder allgemeine Anfragen.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -50,7 +50,7 @@ Zwei Wege, einen 30-Minuten-Discovery-Call zu buchen — wählen Sie, was für I
 
 **Im Call besprechen wir:**
 
-- Ihr Buyer-Profil (Hosting-Anbieter / regulierte Unternehmen / Public-Cloud-Betreiber / Produkt-Engineering-Team / KI-lastige Organisation)
+- Ihr Käuferprofil (Hosting-Anbieter / regulierte Unternehmen / Public-Cloud-Betreiber / Produkt-Engineering-Team / KI-lastige Organisation)
 - Welche Ænix-Plattform passt — Public Cloud / Private Cloud / AI — oder Enterprise-Support für Cozystack
 - Regulatorischen Kontext (DORA / NIS2 / sektoral / nationale Souveränitätsmandate)
 - Aktuelle Architektur und Migrations-Scope

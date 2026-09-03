@@ -15,7 +15,7 @@ quiz:
         - { text: "Die Plattform ist die Oberfläche, das Portal ist das Backend", correct: false }
         - { text: "Die Plattform ist die Fähigkeitsschicht, das Portal die Oberfläche", correct: true }
         - { text: "Beide bezeichnen dasselbe, nur in unterschiedlichen Märkten", correct: false }
-      explanation: "Das Kürzel IDP ist überladen: Die Internal Developer Platform ist die Fähigkeitsschicht mit Compute, Storage, Networking, Identität, Observability und Deployment-Automatisierung. Das Internal Developer Portal ist die Oberflächen- und Katalogschicht (Backstage, Port, Cortex). Eine Plattform ohne Portal funktioniert; ein Portal ohne Plattform ist Tapete."
+      explanation: "Das Kürzel IDP ist überladen: Die Internal Developer Platform ist die Fähigkeitsschicht mit Compute, Storage, Networking, Identität, Observability und Deployment-Automatisierung. Das Internal Developer Portal ist die Oberflächen- und Katalogschicht (Backstage, Port, Cortex). Eine Plattform ohne Portal funktioniert; ein Portal ohne Plattform ist nur Fassade."
     - q: "Wie viele Produktionsmuster für IDPs beschreibt der Artikel?"
       options:
         - { text: "Drei", correct: false }
@@ -49,7 +49,7 @@ Begleitung zur **[IDP-Page](/de/dienstleistungen/internal-developer-platform)**.
 - **Internal Developer Platform** — die Capability-Schicht (Compute, Storage, Networking, Identity, Observability, Deployment-Automatisierung)
 - **Internal Developer Portal** — die UI/Catalog-Schicht (Backstage, Port, Cortex)
 
-Plattform ohne Portal funktioniert. Portal ohne Plattform ist Tapete.
+Plattform ohne Portal funktioniert. Portal ohne Plattform ist nur Fassade.
 
 ## Sechs IDP-Muster aus der Produktion
 

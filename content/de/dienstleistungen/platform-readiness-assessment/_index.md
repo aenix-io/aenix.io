@@ -54,7 +54,7 @@ Wenn Sie Datensouveränität, DORA- / NIS2-Compliance, Cloud-Repatriation, souve
 </div>
 
 <div class="trust-badges">
-Ænix-Engineers, keine Berater · Festpreis · Schriftliche Deliverables · Kein Vendor-Lock-in</div>
+Ænix-Engineers, keine Berater · Festpreis · Schriftliche Ergebnisse · Kein Vendor-Lock-in</div>
 
 <!-- /BLOCK 1 -->
 
@@ -97,11 +97,11 @@ Umgebungen, deren Provisionierung Wochen dauert, IAM/Network/Monitoring von Hand
 <a id="what-we-look-at"></a>
 ## Was 14 Tage abdecken — vier Workstreams, ein Bericht
 
-Das Assessment läuft parallel über vier Workstreams. Jeder hat auf unserer Seite einen benannten Owner, ein definiertes Deliverable und ein festes Fenster.
+Das Assessment läuft parallel über vier Workstreams. Jeder hat auf unserer Seite einen benannten Owner, ein definiertes Ergebnis und ein festes Fenster.
 
-| # | Workstream | Was wir inspizieren | Deliverable |
+| # | Workstream | Was wir inspizieren | Ergebnis |
 |---|---|---|---|
-| 1 | **Inventar und Plattform-Reife** | Workloads (VMs / Container / Datenbanken), Umgebungen (dev / staging / prod), Provisionierungs-Velocity, IaC-Abdeckung, GitOps-Reife, CI/CD-Ownership | Ist-Zustand-Architektur-Karte + Reifegrad-Score über 8 Dimensionen |
+| 1 | **Inventar und Plattform-Reife** | Workloads (VMs / Container / Datenbanken), Umgebungen (dev / staging / prod), Provisionierungs-Entwicklungsgeschwindigkeit, IaC-Abdeckung, GitOps-Reife, CI/CD-Ownership | Ist-Zustand-Architektur-Karte + Reifegrad-Score über 8 Dimensionen |
 | 2 | **Souveränität und Regulator-Lücke** | DORA- / NIS2- / DSGVO- / sektorale Anwendbarkeit, Data-Residency-Mapping, Verschlüsselungs-Posture, Supplier-Risk-Konzentration, Audit-Trail | Compliance-by-Design-Karte: erfüllte Controls, Lücken, priorisierte Remediation |
 | 3 | **Kosten und Cloud-Spend-Posture** | Public-Cloud-Rechnung (letzte 12 Monate), Commitment-/Reservation-Auslastung, Egress-Kosten, Repatriations-Machbarkeit pro Workload, FinOps-Reife | Kosten-Trajektorie: aktuelle Ausgaben → 12-Monats-Ziel mit Caps, Repatriations-Kandidaten gerankt |
 | 4 | **Developer-Self-Service und Platform Engineering** | Time-to-Environment (aktuelle SLA), Provisionierungs-Reibungspunkte, Golden-Path-Abdeckung, interne Dokumentation, Platform-Team-Kapazität | Time-to-Environment-Baseline + Ziel-Metrik, Golden-Path-Vorschlag, Platform-Team-RACI |
@@ -241,7 +241,7 @@ Alle vier Workstreams in der Tiefe. Multi-BU-Stakeholder-Interviews. Anbieter-Vo
 
 </div>
 
-Festpreis. Einzige Rechnung. Gegenseitiges NDA beim Kickoff. Keine zusätzlichen Reise- oder Spesen, sofern nicht ausdrücklich im Scope.
+Festpreis. Einzige Rechnung. Gegenseitige NDA beim Kickoff. Keine zusätzlichen Reise- oder Spesen, sofern nicht ausdrücklich im Scope.
 
 Folgt ein Phase-2-Engagement, werden die Assessment-Kosten gegen das Implementations-Engagement angerechnet (je nach Scope).
 

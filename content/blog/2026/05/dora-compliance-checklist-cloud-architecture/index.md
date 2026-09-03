@@ -85,7 +85,7 @@ Article 28 sets the general principles for ICT third-party risk management. Seve
 - **Exit strategies** — for arrangements supporting *critical or important functions*, a documented exit plan with feasibility tests.
 - **Contractual content** — Article 30 specifies clauses that must be present, including SLAs, audit rights, sub-contracting rules, security and resilience requirements, and termination grounds.
 
-Then Article 28(7), and the related RTS, target **concentration risk** specifically. A financial entity may not concentrate critical-function ICT supply on a single third party, or on multiple third parties that share underlying infrastructure dependencies, where this concentration would impair the entity's resilience.
+Then Article 29, and the related RTS, target **concentration risk** specifically. A financial entity may not concentrate critical-function ICT supply on a single third party, or on multiple third parties that share underlying infrastructure dependencies, where this concentration would impair the entity's resilience.
 
 For most banks and insurers operating in 2026, that wording maps directly onto a familiar question: *we run our critical workloads in one hyperscaler region — does that satisfy DORA?* The honest answer is "depends" — but the work to demonstrate it didn't exist before DORA, and is non-trivial.
 

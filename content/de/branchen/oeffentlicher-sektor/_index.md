@@ -133,7 +133,7 @@ Wir antworten mit: Unternehmensprofil, früheren öffentlichen-Sektor-Referenzen
 
 - **Open-Source-Plattform** — Cozystack ist Apache 2.0, CNCF-Projekt. Kein proprietäres Lock-in. Source-available Architektur für die Bewertung.
 - **EU- + Zentralasien-Teams.** Abgestimmt auf EU-Regulatorik-Frameworks; Erfahrung mit KZ-Beschaffungsprozessen.
-- **Kompetenztransfer als Erstklassleistung** — die Wissensübergabe ist ein primäres Deliverable, nicht optional.
+- **Kompetenztransfer als Erstklassleistung** — die Wissensübergabe ist ein primäres Ergebnis, nicht optional.
 - **Cozystack unterstützt air-gapped Deployments** für die sensibelsten Workloads.
 
 ---

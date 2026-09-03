@@ -128,7 +128,7 @@ Cozystack Dashboard für Self-Service. Produktionsreife WHMCS-Billing-Integratio
 
 - **Cozystack** — Open-Source-Plattform. CNCF-Projekt (derzeit Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Community-verwaltet. Jeder kann deployen, beitragen, forken.
 - **Ænix** — das Open-Core-Unternehmen, das Cozystack erstellt und pflegt. Der größte einzelne Beitragende des Projekts. Hersteller von Ænix Platform.
-- **Ænix Platform** — Ænix' turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Drei Plattformen (Public Cloud / Private Cloud / AI), abgestimmt auf das Buyer-Profil. Ergänzt Hosting-Panel, Billing, Portale, Payments, Support, produktisierten Installer, Enterprise-SLA. **[Ænix Platform erkunden →](/de/produkte/)**.
+- **Ænix Platform** — Ænix' turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Drei Plattformen (Public Cloud / Private Cloud / AI), abgestimmt auf das Käuferprofil. Ergänzt Hosting-Panel, Billing, Portale, Payments, Support, produktisierten Installer, Enterprise-SLA. **[Ænix Platform erkunden →](/de/produkte/)**.
 - **cozystack.io** — offizielle Projektseite. Dokumentation, Installation, Releases, Community. Hersteller-neutral, CNCF-ausgerichtet.
 - **aenix.io** (diese Seite) — Ænix' kommerzielles Angebot und Produktoberfläche.
 
@@ -202,7 +202,7 @@ Für konkrete Use Cases siehe:
 
 Cozystack als Plattform ist **kostenlos** (Apache 2.0). Jeder kann es betreiben.
 
-Für kommerziellen Ænix-Support und die turnkey Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/)** — drei Plattformen, abgestimmt auf das Buyer-Profil, mit vier Support-Tiers (Basic ab 1.250 $/Monat pro 10 Nodes; Standard 3.000 $; Plus 5.500 $; Enterprise Custom).
+Für kommerziellen Ænix-Support und die turnkey Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/)** — drei Plattformen, abgestimmt auf das Käuferprofil, mit vier Support-Tiers (Basic ab 1.250 $/Monat pro 10 Nodes; Standard 3.000 $; Plus 5.500 $; Enterprise Custom).
 
 Einstiegs-Tier — **Enterprise-Support für Cozystack** — für Produkt-Teams, die Cozystack auf eigenen / gemieteten Servern (Hetzner, OVH, regionales Bare-Metal) ohne die kommerzielle Portal-/Billing-Schicht betreiben.
 

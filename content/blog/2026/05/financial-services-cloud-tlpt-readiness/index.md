@@ -96,7 +96,8 @@ properties supervisors care about:
 Most banks we engage with have rich performance telemetry and
 alert-fatigued security telemetry. The alert ratio is wrong: too many
 performance noise alerts, not enough signal-to-noise on the security
-events that map to Article 23 triggers.
+events that map to a reportable-incident trigger under DORA
+Articles 18-19 (and NIS2 Article 23 where both apply).
 
 Fix patterns:
 - Curated alert rules tuned to MITRE ATT&CK techniques relevant to
@@ -124,8 +125,8 @@ workforce identity remains customer-controlled.
 
 ### 3. Tenant CRD isolation as the structural answer to concentration risk
 
-Article 28 demands the substantive condition of resilience, not
-contractual diversity. The Tenant CRD model provides namespace-level
+Article 29 assesses concentration risk on the substantive condition
+of resilience, not on contractual diversity. The Tenant CRD model provides namespace-level
 isolation per business function, per data class, per criticality
 tier — with per-tenant quotas, RBAC scope, observability scope,
 audit-trail scope.
@@ -159,8 +160,8 @@ exit-drill playbook that customers run annually.
 
 ### 6. Supplier-chain transparency to second hop
 
-Article 28 demands visibility into the ICT supply chain at least to
-the second hop. For the platform vendor relationship, Ænix is on the
+Article 30(2)(a) demands visibility into the ICT supply chain at
+least to the second hop. For the platform vendor relationship, Ænix is on the
 hook — we provide an attested supplier-disclosure document that maps
 upstream open-source components, security disclosure channels, and
 operational dependencies.
@@ -205,8 +206,8 @@ engagement provides the playbook; the customer runs the rehearsal.
 
 "We use AWS in two regions; we have a contract clause requiring
 geographic diversification of our backup." Both true. Neither
-addresses what Article 28 actually demands — substantive architectural
-resilience against single-provider failure.
+addresses what Article 29 actually assesses — substantive
+architectural resilience against single-provider failure.
 
 Substantive answer: workloads use platform abstractions (Kubernetes,
 KubeVirt, S3-compatible storage, standard relational databases) that

@@ -80,7 +80,7 @@ Das Engagement passt, wenn:
 - **Service-Provider-Modell** — Aufbau eines kundenorientierten Private-Cloud-Produkts
 - **Greenfield** — neue Infrastruktur mit Private Cloud als Architektur
 
-Wenn zwei oder mehr zutreffen, verzinst sich strukturiertes Private-Cloud-Consulting. Haben Sie einen Auslöser und ein kleines Estate, kann ein leichteres Engagement (nur Architektur-Review) ausreichen.
+Wenn zwei oder mehr zutreffen, verzinst sich strukturiertes Private-Cloud-Consulting. Haben Sie einen Auslöser und ein kleines Bestand, kann ein leichteres Engagement (nur Architektur-Review) ausreichen.
 
 <!-- /BLOCK 2 -->
 
