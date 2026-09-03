@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for MSPs — branded cloud product for managed-service providers"
-description: "Managed Service Providers (MSPs) in 2026 are asked by enterprise customers for cloud capabilities that combine MSP managed-service relationship with..."
+description: "White-label cloud for MSPs where nested tenancy is the product: your brand, your billing, your customer relationship, margin that does not compress."
 related_pages: ["/services/white-label-cloud", "/services/public-cloud-builder", "/products/public-cloud-platform/", "/partners/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"

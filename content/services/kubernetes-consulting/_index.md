@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes consulting — engineers who run multi-tenant platforms in production"
-description: "Most Kubernetes consulting engagements treat Kubernetes as a generic compute platform. The reality is that production Kubernetes is hard for specific..."
+description: "Kubernetes consulting from engineers who operate multi-tenant clusters in production. Aenix sells no licensed distribution, so the recommendation stays neutral."
 related_pages:
   - /services/platform-engineering/
   - /services/internal-developer-platform/

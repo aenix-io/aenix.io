@@ -6,14 +6,14 @@ language: "de"
 hreflang_en: /contact/
 
 offices:
-  - name: "EU Office"
+  - name: "EU-Büro"
     company: "AENIX s.r.o."
     address: "Sladkovského 546/8\n273 43 Buštěhrad\nCzech Republic"
     details:
       - "CIN: 21493871"
       - "VAT Number: CZ21493871"
       - "CZ Databox ID: 2rvcmud"
-  - name: "US Office"
+  - name: "US-Büro"
     company: "AENIX INC"
     address: "131 Continental Drive, Suite 301\nNewark, County of New Castle\nDelaware, United States\nZIP Code: 19713"
     details:
@@ -51,7 +51,7 @@ Zwei Wege, einen 30-Minuten-Discovery-Call zu buchen — wählen Sie, was für I
 **Im Call besprechen wir:**
 
 - Ihr Buyer-Profil (Hosting-Anbieter / regulierte Unternehmen / Public-Cloud-Betreiber / Produkt-Engineering-Team / KI-lastige Organisation)
-- Welche Ænix platform passt — Public Cloud / Private Cloud / AI — oder Pure Cozystack mit Ænix-Support Entry-Tier
+- Welche Ænix-Plattform passt — Public Cloud / Private Cloud / AI — oder Enterprise-Support für Cozystack
 - Regulatorischen Kontext (DORA / NIS2 / sektoral / nationale Souveränitätsmandate)
 - Aktuelle Architektur und Migrations-Scope
 - Engagement-Modell (Platform Readiness Assessment → Pilot → Full Build → Managed Operations)
@@ -61,7 +61,7 @@ Zwei Wege, einen 30-Minuten-Discovery-Call zu buchen — wählen Sie, was für I
 Keine Verpflichtung. Wenn Ænix Platform nicht der richtige Fit ist, sagen wir das direkt.
 
 Für ein ausführliches Architecture Review statt eines Discovery-Calls,
-erwähnen Sie "Architecture Review" im Nachrichtenfeld — wir leiten
+erwähnen Sie „Architecture Review“ im Nachrichtenfeld — wir leiten
 Sie an Solutions Engineering weiter.
 
 ---
@@ -73,8 +73,8 @@ Sie an Solutions Engineering weiter.
 | **Vertrieb / Discovery-Call** | Nutzen Sie das [Discovery-Formular](#discovery-call-planen) oben (30 min, keine Verpflichtung) |
 | **Pre-Sales technische Fragen** | Pipedrive-Formular oben |
 | **Partner-Programm** | [/de/partner/](/de/partner/) → Bewerbungsformular, oder E-Mail sales@aenix.io |
-| **Bestehender Kunden-Support** | Per Ihrem Support-Tier — direkter Support-Kanal |
-| **Presse / Medien** | E-Mail info@aenix.io mit "Presse:" im Betreff |
+| **Bestehender Kunden-Support** | Gemäß Ihrem Support-Tier — direkter Support-Kanal |
+| **Presse / Medien** | E-Mail info@aenix.io mit „Presse:“ im Betreff |
 | **Allgemeine Anfrage** | E-Mail [info@aenix.io](mailto:info@aenix.io) |
 | **Cozystack Open-Source / Community** | [cozystack.io](https://cozystack.io), CNCF Slack #cozystack, Telegram |
 
@@ -100,7 +100,7 @@ Tschechische Republik
 - USt-ID-Nr.: CZ21493871
 - CZ Databox ID: 2rvcmud
 
-Wickelt EU-Verträge (DORA / NIS2 sind EU-Regulierungen) und EU-öffentliche-Beschaffung ab.
+Wickelt EU-Verträge (DORA / NIS2 sind EU-Regulierungen) und Vergabeverfahren in der EU ab.
 
 ### US-Büro
 

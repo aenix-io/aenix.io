@@ -1,6 +1,6 @@
 ---
 title: "Public Cloud Platform economics — when a turnkey cloud-in-a-box pays back for hosting providers"
-description: "Unit economics of Ænix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
+description: "Unit economics of Aenix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
 date: 2026-05-11
 author: "Aenix Team"
 type: "article"

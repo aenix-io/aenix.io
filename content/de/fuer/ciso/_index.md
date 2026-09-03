@@ -37,7 +37,7 @@ Engineering in der EU · Kundenseitige Schlüssel · Keine Hyperscaler-Bindung �
 
 - **DORA** (in Kraft seit 17.01.2025) und **NIS2** legen Konzentrationsrisiko und Lieferketten-Transparenz auf Sie.
 - Prüfer fragen, **wo jede Datenklasse liegt** — inklusive Backups, Logs und CI/CD-Artefakten.
-- „Wir verschlüsseln" reicht nicht, wenn der **Anbieter die Schlüssel hält**.
+- „Wir verschlüsseln“ reicht nicht, wenn der **Anbieter die Schlüssel hält**.
 - Sie brauchen eine Architektur, die Sie **nachweisen** können, nicht eine Compliance-Folie.
 
 ---
@@ -107,7 +107,7 @@ Kostenlos, ohne Vorbereitung. Wir grenzen den Scope auf die bindenden Regulierer
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/ciso/ ; hreflang de self, en → /for/ciso/.

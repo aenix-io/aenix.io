@@ -214,6 +214,7 @@ Private LLM is the wrong answer when:
 - Your data is not actually regulated, your spend is not actually growing, and the trigger is more "we want our own thing" than a substantive driver. The work is real and substantial; the trigger has to be real too.
 
 A good engagement is honest about these cases. The Ænix engagement specifically does not push private LLM when the alternative is the right answer.
+
 ## Want to dig deeper?
 
 - **[Sovereign AI services page](/solutions/sovereign-ai/)** — engagement details

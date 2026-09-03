@@ -27,7 +27,7 @@ quick_facts:
   - label: "Was es ist"
     value: "Eine Recovery-Fähigkeit, die Workloads und Daten an einen zweiten Standort repliziert, für schnelles Umschalten nach Ausfall oder Datenverlust."
   - label: "RTO / RPO"
-    value: "Ziele werden architektonisch festgelegt, in Drills getestet und belegt; synchrone Replikation zielt auf nahezu null RPO für den geschützten Tier."
+    value: "Ziele werden architektonisch festgelegt, in echten Notfallübungen getestet und belegt; synchrone Replikation zielt auf nahezu null RPO für die geschützte Stufe."
   - label: "Replikation"
     value: "Synchrone rechenzentrumsübergreifende Volume-Replikation (LINSTOR/DRBD) plus geo-verteiltes etcd über drei Standorte."
   - label: "Backups"
@@ -43,15 +43,15 @@ faq:
   - q: "Was ist Disaster Recovery as a Service (DRaaS)?"
     a: "DRaaS ist eine verwaltete Disaster-Recovery-Fähigkeit, die Ihre Workloads und Daten laufend an einen zweiten Standort repliziert, damit Sie nach einem Ausfall, einem Ransomware-Angriff oder dem Verlust eines Rechenzentrums schnell umschalten können. Auf einer souveränen Plattform ist die Recovery-Infrastruktur eine, die Sie selbst betreiben und auditieren, statt eines undurchsichtigen Hyperscaler-Dienstes, den Sie nicht einsehen können."
   - q: "Was ist der Unterschied zwischen RTO und RPO?"
-    a: "Das Recovery-Time-Objective (RTO) ist, wie lange die Wiederherstellung nach einem Vorfall dauern darf; das Recovery-Point-Objective (RPO) ist, wie viel Daten Sie verlieren dürfen, gemessen in Zeit. Synchrone DC-übergreifende Replikation zielt auf ein nahezu null RPO für den geschützten Tier, während unveränderliche Backups und getestete Runbooks das RTO auf eine verteidigbare Zahl senken."
+    a: "Das Recovery-Time-Objective (RTO) ist, wie lange die Wiederherstellung nach einem Vorfall dauern darf; das Recovery-Point-Objective (RPO) ist, wie viel Daten Sie verlieren dürfen, gemessen in Zeit. Synchrone DC-übergreifende Replikation zielt auf ein nahezu null RPO für die geschützte Stufe, während unveränderliche Backups und getestete Runbooks das RTO auf eine verteidigbare Zahl senken."
   - q: "Wie schützt eine souveräne Plattform vor Ransomware?"
     a: "Backups werden in unveränderlichen Object Storage mit S3 Object Lock und Versionierung geschrieben, sodass ein Angreifer, der die Primärumgebung kompromittiert, die Recovery-Kopien nicht verändern oder löschen kann. Ein Deletion-Protection-Webhook verhindert zusätzlich, dass kritische Objekte — Volumes, Namespaces, Load Balancer — versehentlich oder böswillig entfernt werden."
   - q: "Hilft DRaaS bei DORA- und NIS2-Compliance?"
-    a: "Ja. DORA (Verordnung (EU) 2022/2554) verlangt von Finanzunternehmen, ICT-Betriebsresilienz-Ziele festzulegen, zu testen und zu belegen, und NIS2 legt wesentlichen und wichtigen Einrichtungen Geschäftskontinuitätspflichten auf. Eine selbst betriebene DR-Plattform erzeugt selbst gehaltene Drill-Protokolle, Incident-Post-Mortems und Residenz-Nachweise, die ein Regulator direkt einsehen kann."
+    a: "Ja. DORA (Verordnung (EU) 2022/2554) verlangt von Finanzunternehmen, IKT-Betriebsresilienz-Ziele festzulegen, zu testen und zu belegen, und NIS2 legt wesentlichen und wichtigen Einrichtungen Geschäftskontinuitätspflichten auf. Eine selbst betriebene DR-Plattform erzeugt eigene Übungsprotokolle, Incident-Post-Mortems und Residenz-Nachweise, die ein Regulator direkt einsehen kann."
   - q: "Wie beweisen Sie, dass das Recovery-Ziel wirklich funktioniert?"
-    a: "Durch echte Drills, nicht durch Papierpläne. Im Anker-Projekt schaltet das Team regelmäßig Nodes ab, um Resilienz real zu testen, und ein schwerer 20-stündiger Storage-Vorfall während eines Upgrades wurde mit null Datenverlust wiederhergestellt. Failover wird auf Staging nachweislich geprobt und dann auf Produktion wiederholt, mit fertigen Runbooks für jedes Szenario."
+    a: "Durch echte Notfallübungen statt durch Papierpläne. Im Referenzprojekt schaltet das Team regelmäßig Nodes ab, um Resilienz real zu testen, und ein schwerer 20-stündiger Storage-Vorfall während eines Upgrades wurde mit null Datenverlust wiederhergestellt. Failover wird auf Staging nachweislich geprobt und dann auf Produktion wiederholt, mit fertigen Runbooks für jedes Szenario."
   - q: "Wie sieht ein DR-Engagement mit Aenix aus?"
-    a: "Einstieg ist ein Platform Readiness Assessment zu aktueller RTO/RPO-Lage, Replikationstopologie, Backup-Unveränderlichkeit und Drill-Prozess, geliefert in 14-28 Tagen. Es erzeugt einen schriftlichen Bericht und eine Phase-2-Roadmap. Vollständiger DR-Aufbau und Migration dauern typischerweise 9-18 Monate, je nach Umfang."
+    a: "Einstieg ist ein Platform Readiness Assessment zu aktueller RTO/RPO-Lage, Replikationstopologie, Backup-Unveränderlichkeit und Übungsprozess, geliefert in 14-28 Tagen. Es erzeugt einen schriftlichen Bericht und eine Phase-2-Roadmap. Vollständiger DR-Aufbau und Migration dauern typischerweise 9-18 Monate, je nach Umfang."
 ---
 
 # Disaster Recovery as a Service auf einer Plattform, die Sie kontrollieren
@@ -73,9 +73,9 @@ faq:
 Jedes Disaster-Recovery-Gespräch reduziert sich auf zwei Zahlen, und die meisten Anbieter-Pitches umgehen sie stillschweigend.
 
 - **Recovery-Time-Objective (RTO)** — wie lange Sie ausfallen dürfen. Das hängt davon ab, wie schnell Sie den zweiten Standort in Betrieb nehmen, nicht davon, wie groß Ihr Backup ist.
-- **Recovery-Point-Objective (RPO)** — wie viel Daten Sie verlieren dürfen, ausgedrückt in Zeit. Nächtliche Backups bedeuten ein RPO von bis zu 24 Stunden; synchrone Replikation zielt auf ein RPO nahe null für den geschützten Tier.
+- **Recovery-Point-Objective (RPO)** — wie viel Daten Sie verlieren dürfen, ausgedrückt in Zeit. Nächtliche Backups bedeuten ein RPO von bis zu 24 Stunden; synchrone Replikation zielt auf ein RPO nahe null für die geschützte Stufe.
 
-Eine glaubwürdige DR-Fähigkeit verpflichtet sich auf beide Zahlen pro Workload-Tier und *demonstriert* sie dann in einem Drill. Auf einer souveränen Plattform sind Replikationstopologie, Backup-Unveränderlichkeit und Drill-Protokolle Dinge, die Sie halten und einsehen können — Sie vertrauen nicht dem undurchsichtigen SLA eines Hyperscalers, um einen Fehlerfall zu beschreiben, den Sie nie dokumentiert sehen werden.
+Eine glaubwürdige DR-Fähigkeit verpflichtet sich auf beide Zahlen je Workload-Stufe und *demonstriert* sie dann in einer echten Notfallübung. Auf einer souveränen Plattform sind Replikationstopologie, Backup-Unveränderlichkeit und Drill-Protokolle Dinge, die Sie halten und einsehen können — Sie vertrauen nicht dem undurchsichtigen SLA eines Hyperscalers, um einen Fehlerfall zu beschreiben, den Sie nie dokumentiert sehen werden.
 
 ---
 
@@ -91,7 +91,7 @@ Eine glaubwürdige DR-Fähigkeit verpflichtet sich auf beide Zahlen pro Workload
 </div>
 </div>
 
-Der geschützte Tier einer souveränen DR-Plattform basiert auf synchroner Block-Replikation, sodass ein committeter Write in mehr als einem Rechenzentrum existiert, bevor der Anwendung der Erfolg gemeldet wird.
+Die geschützte Stufe einer souveränen DR-Plattform basiert auf synchroner Block-Replikation, sodass ein committeter Write in mehr als einem Rechenzentrum existiert, bevor der Anwendung der Erfolg gemeldet wird.
 
 In der Referenzarchitektur betreibt Cozystack einen Compute-Cluster, geo-verteilt über drei Rechenzentren. Volumes werden synchron mit **LINSTOR/DRBD** bei Replikationsfaktor drei repliziert — eine Replik pro Standort — und **etcd**, der Zustandsspeicher des Kubernetes-Clusters, ist über dieselben drei Standorte geo-verteilt. Das Ergebnis ist eine Architektur, die ausgelegt ist, den Verlust eines ganzen Rechenzentrums ohne Datenverlust zu überstehen, weil sowohl die persistenten Daten als auch der Control-Plane-Zustand bereits anderswo liegen.
 
@@ -111,9 +111,9 @@ Diese Unterscheidung zählt für Regulatoren: Betriebsresilienz-Rahmenwerke erwa
 
 ## Getestetes Failover, kein Papier-Failover
 
-Ein DR-Plan, der nie geübt wurde, ist eine Hypothese. Die Plattformen, die Ænix betreibt, werden real gedrillt.
+Ein DR-Plan, der nie geübt wurde, ist eine Hypothese. Die Plattformen, die Ænix betreibt, werden unter realen Ausfallbedingungen geprobt.
 
-Im Anker-Projekt schaltet der Kunde regelmäßig Nodes ab, um Resilienz bewusst zu testen, was die nicht offensichtlichen Kaskaden aufdeckt, die eine Tabletop-Übung nie findet. Upgrades werden auf Staging nachweislich geprobt und dann auf Produktion wiederholt; nicht-deklarative Kommandos werden zugunsten von GitOps fallen gelassen; und jedes Szenario hat ein fertiges Runbook — DRBD-Recovery, Cluster-Upgrade, Storage-Failover. Das verwandelt ein RTO von einer Marketing-Zahl in eine Zahl, die Sie verteidigen können.
+Im Referenzprojekt schaltet der Kunde regelmäßig Nodes ab, um Resilienz bewusst zu testen, was die nicht offensichtlichen Kaskaden aufdeckt, die eine Tabletop-Übung nie findet. Upgrades werden auf Staging nachweislich geprobt und dann auf Produktion wiederholt; nicht-deklarative Kommandos werden zugunsten von GitOps fallen gelassen; und jedes Szenario hat ein fertiges Runbook — DRBD-Recovery, Cluster-Upgrade, Storage-Failover. Das verwandelt ein RTO von einer Marketing-Zahl in eine Zahl, die Sie verteidigen können.
 
 ---
 
@@ -128,13 +128,13 @@ Für DORA-regulierte Einrichtungen ist genau das die Form von Nachweis, die [DOR
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Nicht jeder Workload braucht denselben Recovery-Tier
+## Nicht jeder Workload braucht dieselbe Recovery-Stufe
 
-Jedes System als geschäftskritisch zu behandeln, ist der Weg, auf dem DR-Budgets explodieren und Drills unbeherrschbar werden. Eine funktionierende DR-Aufstellung stuft den Bestand zuerst.
+Jedes System als geschäftskritisch zu behandeln, ist der Weg, auf dem DR-Budgets explodieren und Notfallübungen unbeherrschbar werden. Eine funktionierende DR-Aufstellung stuft den Bestand zuerst.
 
-- **Tier 0 — synchron.** Systeme, bei denen ein RPO über nahezu null inakzeptabel ist — Kern-Banking-Ledger, Orderbücher, Patientenakten. Diese liegen auf synchroner DC-übergreifender Replikation und sind der Grund, warum die Drei-DC-Topologie existiert.
-- **Tier 1 — asynchron plus häufige Backups.** Wichtig, aber tolerant gegenüber Minuten von Datenverlust. Häufige unveränderliche Backups und asynchrone Replikation halten die Kosten im Verhältnis zum Risiko.
-- **Tier 2 — Backup und Rebuild.** Zustandslose oder leicht rekonstruierbare Dienste, wiederhergestellt aus unveränderlichen Backups und Infrastructure-as-Code, mit einem RTO in Stunden statt Sekunden.
+- **Stufe 0 — synchron.** Systeme, bei denen ein RPO über nahezu null inakzeptabel ist — Kern-Banking-Ledger, Orderbücher, Patientenakten. Diese liegen auf synchroner DC-übergreifender Replikation und sind der Grund, warum die Drei-DC-Topologie existiert.
+- **Stufe 1 — asynchron plus häufige Backups.** Wichtig, aber tolerant gegenüber Minuten von Datenverlust. Häufige unveränderliche Backups und asynchrone Replikation halten die Kosten im Verhältnis zum Risiko.
+- **Stufe 2 — Backup und Rebuild.** Zustandslose oder leicht rekonstruierbare Dienste, wiederhergestellt aus unveränderlichen Backups und Infrastructure-as-Code, mit einem RTO in Stunden statt Sekunden.
 
 Die Einstufung ist das erste Ergebnis des Assessments, weil sie entscheidet, wohin die teure synchrone Kapazität geht und wo ein günstigerer Recovery-Pfad ehrlich ausreicht.
 
@@ -145,9 +145,9 @@ Die Einstufung ist das erste Ergebnis des Assessments, weil sie entscheidet, woh
 
 ## Wie Ænix bei Disaster Recovery arbeitet
 
-Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit DR-gewichteten Workstreams: aktuelle RTO/RPO-Lage pro Workload-Tier, Replikations- und Geo-Topologie-Design, Backup-Unveränderlichkeit und Ransomware-Isolation sowie Reife des Drill-Prozesses. Ergebnis ist ein schriftlicher Bericht plus eine Phase-2-Roadmap. Wo die DR-Plattform zugleich die Produktionsplattform ist — der Regelfall — passt sie natürlich zu **[Data Sovereignty](/de/loesungen/data-sovereignty/)** und DORA-Arbeit, sodass Kontinuität, Residenz und Compliance gemeinsam konstruiert statt nachträglich aufgesetzt werden.
+Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit DR-gewichteten Workstreams: aktuelle RTO/RPO-Lage je Workload-Stufe, Replikations- und Geo-Topologie-Design, Backup-Unveränderlichkeit und Ransomware-Isolation sowie Reife des Drill-Prozesses. Ergebnis ist ein schriftlicher Bericht plus eine Phase-2-Roadmap. Wo die DR-Plattform zugleich die Produktionsplattform ist — der Regelfall — passt sie natürlich zu **[Data Sovereignty](/de/loesungen/data-sovereignty/)** und DORA-Arbeit, sodass Kontinuität, Residenz und Compliance gemeinsam konstruiert statt nachträglich aufgesetzt werden.
 
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen souveräne Disaster-Recovery- und Business-Continuity-Plattformen für regulierte Organisationen in der EU und DACH.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen souveräne Disaster-Recovery- und Business-Continuity-Plattformen für regulierte Organisationen in der EU und DACH.*

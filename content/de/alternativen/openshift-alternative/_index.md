@@ -55,7 +55,7 @@ faq:
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen; **[Developer Self-Service](/de/produkte/private-cloud-platform/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen; **[Developer-Self-Service-Schicht](/de/produkte/private-cloud-platform/)** für Produkt-Engineering-Teams, die den Developer-Experience-Layer von OpenShift ersetzen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
@@ -68,11 +68,11 @@ faq:
 
 - **Bedenken bei den Subscription-Kosten** — die kommerzielle Red-Hat-OpenShift-Subscription skaliert mit der Größe der Bereitstellung.
 - **Open-Source-First-Beschaffung** — Organisationen, die Apache 2.0 der Red-Hat-Lizenzierung vorziehen.
-- **Leichterer operativer Footprint gewünscht** — die Oberfläche von OpenShift ist breiter als für manche Use Cases nötig.
+- **Leichterer operativer Footprint gewünscht** — der Funktionsumfang von OpenShift ist breiter, als es manche Anwendungsfälle brauchen.
 - **Service-Provider-Modell** — Multi-Customer-Cloud, in der die Red-Hat-Lizenz-Ökonomie nicht passt.
 - **Keine bestehende Red-Hat-Beziehung** — der Wert von OpenShift verstärkt sich im breiteren Red-Hat-Ökosystem.
 
-Wenn Sie bereits tief auf Red Hat / OpenShift setzen, lautet das Ergebnis der Alternativen-Analyse meist "bleiben". Für Greenfield- oder Exit-Entscheidungen lohnt sich der Vergleich mit Cozystack.
+Wenn Sie bereits tief auf Red Hat / OpenShift setzen, lautet die Empfehlung der Alternativen-Analyse meist: bleiben. Für Greenfield- oder Exit-Entscheidungen lohnt sich der Vergleich mit Cozystack.
 
 ---
 

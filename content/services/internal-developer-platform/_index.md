@@ -1,6 +1,6 @@
 ---
 title: "Internal developer platform — built for adoption, not just architecture"
-description: "Most internal developer platforms fail not because the architecture is wrong, but because product teams don't use them. The platform that ranks highest on..."
+description: "IDP engagements measured in adoption, not architecture: 5-10 golden paths on a multi-tenant Kubernetes foundation, with handover. Backstage only where it fits."
 related_pages:
   - /services/platform-engineering/
   - /services/kubernetes-consulting/

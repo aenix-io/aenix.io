@@ -6,7 +6,7 @@ language: "de"
 hreflang_en: /industries/
 ---
 
-**Vertikale Proof Points und Engagement-Patterns nach Branche. Finden Sie Ihren Sektor — lesen Sie über regulatorische Trigger, architektonische Patterns und Ænix-Plattformen, die passen. Alle großen Engagements NDA-geschützt; erste namentlich genannte Bank-Cases erwartet Mitte 2027.**
+**Vertikale Proof Points und Engagement-Patterns nach Branche. Finden Sie Ihren Sektor — lesen Sie über regulatorische Trigger, architektonische Patterns und Ænix-Plattformen, die passen. Alle großen Engagements NDA-geschützt; erste namentlich genannte Bank-Referenzen werden Mitte 2027 erwartet.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -19,7 +19,7 @@ hreflang_en: /industries/
 <div class="diagram__conn">unterliegt</div>
 <div class="diagram__node"><b>Regulatorischer Trigger</b><div class="diagram__chips"><span>DORA</span><span>NIS2</span><span>Souveränitätsmandate</span><span>Sektorale Datengesetze</span></div></div>
 <div class="diagram__conn">passt zu</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix-Plattform</b><div class="diagram__chips"><span>Enterprise</span><span>Public Cloud</span><span>AI/ML</span><span>ISP</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Plattform</b><div class="diagram__chips"><span>Public Cloud Platform</span><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
 </div>
 </div>
 
@@ -34,10 +34,11 @@ hreflang_en: /industries/
 
 - **[Finanzdienstleistungen](/de/branchen/finanzdienstleistungen/)** — Banken, Versicherer, Marktinfrastruktur unter DORA-Scope. Passt zu: Private Cloud Platform.
 - **[Öffentlicher Sektor](/de/branchen/oeffentlicher-sektor/)** — Regierungs-Cloud aligniert mit nationalen Souveränitätsmandaten. Passt zu: Private Cloud Platform oder Public Cloud Platform.
-- **[Telco](/de/branchen/telco/)** — Tier-1 / Tier-2 Telco-Operatoren, NIS2 wesentliche Entität + Kunden-Cloud-Produkt. Passt zu: Public Cloud Platform oder Private Cloud Platform.
-- **[Energie](/de/branchen/energie/)** — NIS2 wesentliche Entität, Edge-Cloud, KI-Optimierung. Passt zu: Private Cloud Platform.
+- **[Telco](/de/branchen/telco/)** — Tier-1 / Tier-2 Telco-Operatoren, NIS2 wesentliche Einrichtung + Kunden-Cloud-Produkt. Passt zu: Public Cloud Platform oder Private Cloud Platform.
+- **[Energie](/de/branchen/energie/)** — NIS2 wesentliche Einrichtung, Edge-Cloud, KI-Optimierung. Passt zu: Private Cloud Platform.
 - **[Versicherung](/de/branchen/versicherung/)** — DORA-Scope + sektorale Datengesetze + Schadenfall-KI. Passt zu: Private Cloud Platform + AI Platform.
-- **[Transport / Logistik](/de/branchen/transport-logistik/)** — NIS2 wesentliche Entität, Multi-Modal-Logistik-Infrastruktur. Passt zu: Private Cloud Platform.
+- **[Gesundheitswesen](/de/branchen/gesundheitswesen/)** — Sektorale Datenschutzgesetze (die nationalen Entsprechungen zu HIPAA), KI auf regulierten medizinischen Daten. Passt zu: Private Cloud Platform + AI Platform.
+- **[Transport / Logistik](/de/branchen/transport-logistik/)** — NIS2 wesentliche Einrichtung, Multi-Modal-Logistik-Infrastruktur. Passt zu: Private Cloud Platform.
 
 ### Cloud / Hosting / MSP
 
@@ -52,14 +53,14 @@ hreflang_en: /industries/
 
 ### KMU / Mittelstand
 
-- **[Mittelstand](/de/branchen/mittelstand/)** — Kleinere Organisationen, die Cloud als Produkt konsumieren. Passt zu: Public Cloud Platform (über Service-Provider-Partner) oder Pure Cozystack mit Ænix-Support.
+- **[Mittelstand](/de/branchen/mittelstand/)** — Kleinere Organisationen, die Cloud als Produkt konsumieren. Passt zu: Public Cloud Platform (über Service-Provider-Partner) oder Enterprise-Support für Cozystack.
 
 </div>
 </div>
 
 ---
 
-## Kunden-Evidenz
+## Referenzen
 
 **Öffentliche Produktivkunden** (Ænix Public Cloud Platform, derzeit auf aenix.io gelistet): GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
@@ -70,8 +71,8 @@ hreflang_en: /industries/
 ## Branchen-Daten, die wir zitieren
 
 - **Broadcom Private Cloud Outlook 2025:** 53% priorisieren Private Cloud für neue Workloads; 69% erwägen Hyperscaler-Repatriation
-- **LSEG Global Cloud Survey 2025 (Finanzdienstleistungen):** 84% passten Cloud-Strategie aufgrund Regulierung an
-- **Nutanix Financial Services ECI 2025:** 92% halten ihre Infrastruktur nicht bereit für Cloud-native; 62% stellen GenAI-Spezialisten ein
+- **LSEG Global Cloud Survey 2025 (Finanzdienstleistungen):** 84 % passten ihre Cloud-Strategie aufgrund der Regulierung an
+- **Nutanix Financial Services ECI 2025:** 92 % halten ihre Infrastruktur für nicht cloud-native-tauglich; 62% stellen GenAI-Spezialisten ein
 
 ---
 

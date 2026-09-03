@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for SMB and mid-market — honest answer when Cozystack fits"
-description: "Cozystack is purpose-built for service providers, regulated enterprises, and multi-tenant cloud builders. For SMB and small mid-market organizations (under..."
+description: "Cozystack is usually over-engineering below about 100 people. This page says when it is, what to use instead, and the narrow cases where it genuinely fits."
 related_pages: ["/products/cozystack", "/products/public-cloud-platform/", "/partners/", "/services/platform-readiness-assessment"]
 language: "en"
 quick_facts_style: "rows"

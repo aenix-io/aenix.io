@@ -3,7 +3,7 @@ title: "Internal Developer Platform — gebaut für Adoption, nicht nur Architek
 description: "Die meisten Internal Developer Platforms scheitern nicht, weil die Architektur falsch ist, sondern weil Produkt-Teams sie nicht nutzen. Die Plattform mit..."
 related_pages:
   - /de/dienstleistungen/platform-engineering
-  - /products/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -60,9 +60,6 @@ Production-grade · Adoption-getrieben · Open-Source-Foundation · Ergebnis im 
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -138,7 +135,7 @@ Backstage zu kaufen ohne eine darunterliegende opinionated Plattform produziert 
 **Für Engineers bauen, nicht für Produkt-Teams**
 Die Kunden des Plattform-Teams sind Produkt-Engineers. Eine auf Engineering-Eleganz optimierte Architektur produziert oft eine Plattform, die niemand so nutzen will, wie sie entworfen wurde.
 
-**Vendor-getriebener "Complete IDP"-Lock-in**
+**Vendor-getriebener „Complete IDP“-Lock-in**
 Mehrere Anbieter verkaufen vorgefertigte IDPs. Sie funktionieren für schmale Kundenprofile, bauen aber Lock-in mit einem anderen Anbieter neu auf. Die Roadmap des Anbieters wird zu Ihrer Roadmap.
 
 **Plattform-Team von Tickets absorbiert**
@@ -207,7 +204,7 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 Wir haben Internal Developer Platforms gebaut für Service-Anbieter, die mandantenfähige Clouds betreiben, regulierte Unternehmen mit starken Souveränitätsanforderungen, KI/GPU-Operatoren mit Multi-Team-Data-Science-Zugang und Telekom-Operatoren, die mehrere Legacy-Umgebungen konsolidieren.
 
 {{< quote-carousel >}}
-Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 <!-- /BLOCK 8 -->
 
 ---

@@ -1,13 +1,13 @@
 ---
 title: "Proxmox-Alternative — wenn SMB-Virtualisierung nicht mehr ausreicht"
 description: "Proxmox VE ist exzellent für seinen Einsatzbereich: Open-Source-KVM-basierte Virtualisierung für kleine bis mittlere Bereitstellungen. Wenn die Produktion..."
-related_pages: ["/de/alternativen/vmware-alternative", "/de/produkte/private-cloud"]
+related_pages: ["/de/alternativen/vmware-alternative", "/de/produkte/private-cloud-platform/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /alternatives/proxmox-alternative/
 direct_answer: |
-  **Eine Proxmox-Alternative wird relevant, wenn Workloads über die Designziele von Proxmox VE hinauswachsen — also wenn Mandantenfähigkeit im großen Maßstab, verwaltete Datenbanken, KI/GPU-Workloads oder eine regulierte Multi-Customer-Cloud gefordert sind. Proxmox VE bleibt exzellent für Single-Tenant, VM-fokussierte Bereitstellungen unter etwa 50 Hosts. Cozystack ist die Open-Source-Plattform (Apache 2.0) für die nächste Stufe: Kubernetes-native Virtualisierung über KubeVirt, eine mandantenfähige Steuerungsebene per Tenant-CRD, verwaltete Datenbanken, S3 und GPU-as-a-Service. Aenix produktisiert Cozystack als Ænix Platform mit WHMCS-integriertem Billing, turnkey Installer und kommerziellem Support — passend für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen.**
+  **Eine Proxmox-Alternative wird relevant, wenn Workloads über die Designziele von Proxmox VE hinauswachsen — also wenn Mandantenfähigkeit im großen Maßstab, verwaltete Datenbanken, KI/GPU-Workloads oder eine regulierte Multi-Customer-Cloud gefordert sind. Proxmox VE bleibt exzellent für Single-Tenant, VM-fokussierte Bereitstellungen unter etwa 50 Hosts. Cozystack ist die Open-Source-Plattform (Apache 2.0) für die nächste Stufe: Kubernetes-native Virtualisierung über KubeVirt, eine mandantenfähige Steuerungsebene per Tenant-CRD, verwaltete Datenbanken, S3 und GPU-as-a-Service. Aenix produktisiert Cozystack als Ænix Platform mit WHMCS-integriertem Billing, turnkey Installer und kommerziellem Support — passend für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen.**
 quick_facts:
   - label: "Was es ist"
     value: "Cozystack als Open-Source-Alternative zu Proxmox VE für mandantenfähige Cloud-Plattformen jenseits der SMB-Virtualisierung"
@@ -33,7 +33,7 @@ faq:
   - q: "Unterstützt Cozystack Mandantenfähigkeit besser als Proxmox?"
     a: "Proxmox bildet Mandanten über Namespaces und Berechtigungen ab. Cozystack nutzt ein dediziertes Tenant-CRD als First-Class-Konzept, das für Service-Provider-Skala mit Abrechnung pro Mandant und Multi-Cluster-Föderation ausgelegt ist."
   - q: "Wie behandelt Cozystack GPU-Workloads?"
-    a: "Während Proxmox primär GPU-Passthrough bietet, unterstützt Cozystack vGPU, MIG und Time-Slicing. Damit lässt sich GPU-as-a-Service über mehrere Mandanten hinweg bereitstellen, was für KI/ML-Workloads in einer Multi-Customer-Cloud relevant ist."
+    a: "Während Proxmox primär GPU-Passthrough bietet, unterstützt Cozystack NVIDIA vGPU für VMs und fraktionales GPU-Sharing über HAMi auf dem NVIDIA GPU Operator für Container. Damit lässt sich GPU-as-a-Service über mehrere Mandanten hinweg bereitstellen, was für KI/ML-Workloads in einer Multi-Customer-Cloud relevant ist."
   - q: "Wann sollte man bei Proxmox bleiben?"
     a: "Bei Single-Tenant- und VM-fokussierten Bereitstellungen unter etwa 50 Hosts. In diesem Einsatzbereich ist Proxmox VE exzellent, und der operative Aufwand einer Kubernetes-nativen Plattform würde die Lizenzeinsparungen übersteigen."
 ---
@@ -52,7 +52,7 @@ Cozystack ist die Open-Source-Plattform, die für diese nächste Stufe gebaut wu
 </div>
 </div>
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, multi-tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen. WHMCS-integriertes Billing, multi-tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
@@ -68,7 +68,7 @@ Cozystack ist die Open-Source-Plattform, die für diese nächste Stufe gebaut wu
 - **Service-Provider-Skala** — Multi-Customer-Cloud mit Billing-Integration, Self-Service-Portal, Audit pro Tenant.
 - **Produktive Multi-Cluster-Föderation** — Proxmox-Cluster föderieren; das operative Modell ist schwerer als bei Kubernetes.
 
-Wenn Ihre Bereitstellung Single-Tenant, überwiegend VM-basiert und unter ~50 Hosts ist — dann ist Proxmox wahrscheinlich in Ordnung. Wenn Sie das überwachsen haben, ist Cozystack der direkteste Upgrade-Pfad, der das operative Open-Source-Modell bewahrt.
+Wenn Ihre Bereitstellung Single-Tenant, überwiegend VM-basiert und unter ~50 Hosts ist — dann ist Proxmox wahrscheinlich in Ordnung. Wenn Sie das entwachsen haben, ist Cozystack der direkteste Upgrade-Pfad, der das operative Open-Source-Modell bewahrt.
 
 ---
 
@@ -85,13 +85,13 @@ Wenn Ihre Bereitstellung Single-Tenant, überwiegend VM-basiert und unter ~50 Ho
 | **Multi-Tenancy** | Namespace + Berechtigungen | Tenant CRD, verschachtelte Tenants, scoped Audit |
 | **Managed Databases** | Manuelle Installation oder Community-LXC-Templates | First-Class: PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ |
 | **Objektspeicher** | Manuelle Installation | First-Class S3-kompatibel |
-| **GPU** | Passthrough | NVIDIA vGPU + MIG + Time-Slicing |
+| **GPU** | Passthrough | NVIDIA vGPU + fraktionales Sharing (HAMi) |
 | **Self-Service-Portal** | Web-UI für VM-Operationen | Cozystack Dashboard — vollständiger Multi-Tenant-Katalog |
 | **Backup/DR** | PBS (Proxmox Backup Server) | Velero + PITR pro App |
 | **Lizenz** | AGPLv3 (Open Source) | Apache 2.0 (Open Source, permissiver) |
 | **Am besten für** | SMB-Virtualisierung, Labore | Multi-Tenant-Cloud, Service-Provider, reguliertes Enterprise |
 
-Cozystack ist nicht "Proxmox, aber besser" — es ist ein anderes architektonisches Ziel. Für SMB-skalige Single-Tenant-Virtualisierung bleibt Proxmox eine starke Wahl.
+Cozystack ist nicht „Proxmox, aber besser“ — es verfolgt ein anderes Architekturziel. Für SMB-skalige Single-Tenant-Virtualisierung bleibt Proxmox eine starke Wahl.
 
 </div>
 </div>

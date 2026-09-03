@@ -219,6 +219,7 @@ It's the wrong call when:
 
 - The engineering organization isn't ready (no platform-team headcount, no internal customer, no problem clearly named).
 - The decision is already made and the engagement is meant to validate it.
+
 ## Want to dig deeper?
 
 - **[Platform engineering services page](/services/platform-engineering/)** — engagement details

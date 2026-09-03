@@ -15,7 +15,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Broadcom hat das VMware-Partnerprogramm umgebaut, und Ihre Kunden fragen, was als Nächstes kommt. Als Verantwortliche:r für Partnerschaften können Sie eine offene, souveräne Cloud-Linie hinzufügen, die Ihr Team in jeden VMware-Account co-selled — mit bis zu 40% Marge und Deal-Schutz. Als Produkt wiederverkaufen oder mit Ænix als Engineering-Team co-delivern.**
+**Broadcom hat das VMware-Partnerprogramm umgebaut, und Ihre Kunden fragen, was als Nächstes kommt. Als Verantwortliche:r für Partnerschaften können Sie eine offene, souveräne Cloud-Linie hinzufügen, die Ihr Team in jeden VMware-Account mitverkauft — mit bis zu 40% Marge und Deal-Schutz. Als Produkt wiederverkaufen oder mit Ænix als Engineering-Team gemeinsam liefern.**
 
 > **Passt zu:** dem **[Ænix-Partnerprogramm](/de/partner/)** (bis 40% Marge, Deal-Schutz, Sales-Kit, L3-Zugang), **[Ænix Platform](/de/produkte/)** (drei Plattformen) und **[Cloud-Aufbau](/de/dienstleistungen/)**. Kern: Open-Source-**[Cozystack](https://cozystack.io)**.
 
@@ -72,7 +72,7 @@ So oder so: Die Pro-Core-Lizenz, die Ihre Kunden an VMware zahlen, wird zu Marge
 
 ## Warum Allianz-Leiter Ænix wählen
 
-- **Eine zeitgemäße Linie.** VMware-Ausstieg und Souveränität sind jetzt aktuell — genau das fragen Kunden nach.
+- **Eine zeitgemäße Linie.** VMware-Ausstieg und Souveränität sind jetzt aktuell — genau danach fragen Kunden.
 - **Geschützte Ökonomie.** Deal-Registrierung und bis 40% Marge, plus wiederkehrender Service-Umsatz.
 - **Direkter Core-Team-Zugang.** Pre-Sales und L3 vom Team, das die Plattform baut.
 
@@ -87,7 +87,7 @@ Bis 40% auf Lizenz + Support, plus Ihre eigene Service- und Managed-Services-Mar
 Ja — registrierte Opportunities sind dem Partner vorbehalten; kein Kanalkonflikt.
 
 **Müssen wir selbst liefern?**
-Nein. Nur wiederverkaufen oder mit Ænix co-delivern — pro Deal Ihre Wahl.
+Nein. Nur wiederverkaufen oder mit Ænix gemeinsam liefern — pro Deal Ihre Wahl.
 
 **Was genau verkaufen wir?**
 Drei Plattformen nach Käuferprofil, plus Services. Siehe [Ænix Platform](/de/produkte/).
@@ -108,7 +108,7 @@ Kostenlos, ohne Vorbereitung. Wir ordnen Ihren Kundenstamm den Plattformen zu, g
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-allianzen/ ; hreflang de self, en → /for/head-of-alliances/.

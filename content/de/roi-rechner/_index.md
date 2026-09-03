@@ -22,6 +22,7 @@ faq:
     a: "Nein. Einsparungen gelten für die Workloads, die tatsächlich umziehen oder die Sie tatsächlich auf der Plattform aufbauen. Manche Workloads sollten bleiben, wo sie sind — der Discovery-Call klärt, welche."
   - q: "Wie genau sind die Standardwerte?"
     a: "Die Standardwerte sind realistische Ausgangspunkte für den Mittelstand, nicht Ihre Zahlen. Ersetzen Sie jedes Feld durch Ihre eigenen Werte — die Ergebnisse werden live neu berechnet."
+
 ---
 
 **Vier interaktive Rechner für die Ökonomie einer eigenen Cloud-Plattform. Modellieren Sie einen VMware-Ausstieg, vergleichen Sie die Gesamtkosten für den Eigenbau einer Plattform gegenüber dem Betrieb auf Cozystack mit Ænix-Support, dimensionieren Sie die Unit Economics eines Hosting-Geschäfts oder wägen Sie den Kauf von GPUs gegen deren Miete ab. Jede Eingabe ist editierbar, jedes Ergebnis wird live neu berechnet — von Ænix, dem Team hinter Cozystack.**
@@ -53,10 +54,10 @@ Eine Plattform selbst zu bauen und zu betreiben bedeutet ein Platform-Engineerin
 
 ## Unit Economics für Hosting-Anbieter
 
-Wenn Sie Managed Cloud an Ihre eigenen Kunden verkaufen, modelliert unser vollständiger **[ISP-Unit-Economics-Rechner](/isp-calculator/)** die monatliche Deckungsrechnung — Infrastruktur, Service-Portfolio (Managed Kubernetes, VMs, Datenbanken, GPU, Objektspeicher), Auslastung, Personal und ein Vorher/Nachher-Vergleich mit Cozystack — mit Mehrwährungsunterstützung und PDF-Report.
+Wenn Sie Managed Cloud an Ihre eigenen Kunden verkaufen, modelliert unser vollständiger **[Unit-Economics-Rechner für Anbieter (englisch)](/isp-calculator/)** die monatliche Deckungsrechnung — Infrastruktur, Service-Portfolio (Managed Kubernetes, VMs, Datenbanken, GPU, Objektspeicher), Auslastung, Personal und ein Vorher/Nachher-Vergleich mit Cozystack — mit Mehrwährungsunterstützung und PDF-Report.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/isp-calculator/">ISP-Unit-Economics-Rechner öffnen →</a>
+  <a class="cta-primary" href="/isp-calculator/">Unit-Economics-Rechner für Anbieter öffnen (englisch) →</a>
 </div>
 
 Siehe die **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für das Produkt hinter diesem Modell.
@@ -70,6 +71,7 @@ Eigene GPUs auf der eigenen Plattform gegenüber der Miete gleichwertiger GPU-Ka
 {{< gpu-roi-calculator lang="de" currency="€" >}}
 
 Siehe die **[AI Platform](/de/produkte/ai-platform/)** und **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
+
 ---
 
 ## Aus den Zahlen einen Plan machen
@@ -83,4 +85,4 @@ Ein Discovery-Call macht aus diesen Schätzungen eine belastbare TCO auf Workloa
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*

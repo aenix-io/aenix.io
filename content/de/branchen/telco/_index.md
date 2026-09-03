@@ -1,6 +1,6 @@
 ---
 title: "Cloud-Plattform für Telekommunikations-Operatoren — souverän, edge-bereit, KI-fähig"
-description: "Telekommunikations-Operatoren in 2026 stehen vor einem architektonischen Wendepunkt: Legacy-NFV-Umgebungen veralten, Edge-Compute-Anforderungen wachsen,..."
+description: "Telekommunikations-Operatoren im Jahr 2026 stehen vor einem architektonischen Wendepunkt: Legacy-NFV-Umgebungen veralten, Edge-Compute-Anforderungen wachsen,..."
 related_pages:
   - /de/loesungen/sovereign-ai/
   - /de/loesungen/data-sovereignty/
@@ -15,7 +15,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/telco/
 direct_answer: |
-  **Eine Cloud-Plattform für Telekommunikations-Operatoren vereint Core-Rechenzentrum, Regionalstandorte und Customer-Edge unter einem Operations-Modell. Sie löst NFV-Legacy ab, trägt souveräne Cloud-Produkte für Endkunden, betreibt KI-Workloads auf Telco-Daten und erfüllt NIS2 (Telekommunikation als wesentliche Entität). Aenix baut diese Plattformen für Operatoren in EU, DACH und Zentralasien auf Basis von Cozystack — einem CNCF-Projekt unter Apache-2.0-Lizenz. Cozystack vereint virtuelle Maschinen (KubeVirt) und Container auf einer Kubernetes-API, Cilium-eBPF-Networking und LINSTOR/DRBD-Storage, und läuft mit identischem Stack an Core und Edge. Aenix liefert die produktisierte Ænix Platform plus Implementierungs- und Betriebs-Services.**
+  **Eine Cloud-Plattform für Telekommunikations-Operatoren vereint Core-Rechenzentrum, Regionalstandorte und Customer-Edge unter einem Operations-Modell. Sie löst NFV-Legacy ab, trägt souveräne Cloud-Produkte für Endkunden, betreibt KI-Workloads auf Telco-Daten und erfüllt NIS2 (Telekommunikation als wesentliche Einrichtung). Aenix baut diese Plattformen für Operatoren in EU, DACH und Zentralasien auf Basis von Cozystack — einem CNCF-Projekt unter Apache-2.0-Lizenz. Cozystack vereint virtuelle Maschinen (KubeVirt) und Container auf einer Kubernetes-API, Cilium-eBPF-Networking und LINSTOR/DRBD-Storage, und läuft mit identischem Stack an Core und Edge. Aenix liefert die produktisierte Ænix Platform plus Implementierungs- und Betriebs-Services.**
 
 quick_facts:
   - label: "Was es ist"
@@ -29,7 +29,7 @@ quick_facts:
   - label: "Technologie"
     value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Regulatorik"
-    value: "Telekommunikation ist wesentliche Entität unter NIS2; Plattform unterstützt souveräne und NIS2-konforme Architekturen"
+    value: "Telekommunikation ist wesentliche Einrichtung unter NIS2; Plattform unterstützt souveräne und NIS2-konforme Architekturen"
   - label: "Kommerzielles Modell"
     value: "Ænix Platform (produktisiert) plus Services; Stufen Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell"
 
@@ -41,14 +41,14 @@ faq:
   - q: "Eignet sich die Plattform für souveräne Cloud-Produkte gegenüber Endkunden?"
     a: "Ja. Die Mandantenfähigkeit über das Tenant-CRD erlaubt Operatoren, kundenseitige souveräne Cloud-Produkte zu starten. Die Ænix Public Cloud Platform ist auf souveräne Cloud-Launches im Multi-Region-Scale ausgelegt."
   - q: "Erfüllt die Plattform NIS2 für Telekommunikations-Operatoren?"
-    a: "Telekommunikation gilt unter NIS2 als wesentliche Entität. Die Plattform unterstützt NIS2-konforme interne Cloud- und Edge-Architekturen; die Ænix Private Cloud Platform adressiert genau diese Compliance-Anforderungen."
+    a: "Telekommunikation gilt unter NIS2 als wesentliche Einrichtung. Die Plattform unterstützt NIS2-konforme interne Cloud- und Edge-Architekturen; die Ænix Private Cloud Platform adressiert genau diese Compliance-Anforderungen."
   - q: "Welche Lizenzkosten entstehen für die Plattform-Software?"
     a: "Cozystack steht unter Apache 2.0 — keine CPU- oder Core-basierte Lizenzierung. Kommerziell bietet Aenix die produktisierte Ænix Platform plus Services in Stufen ab Basic 1.250 $/Monat (10 Nodes) bis Enterprise (individuell)."
   - q: "Gibt es namentliche Telco-Referenzen?"
     a: "Öffentliche Telco-Referenzen sind derzeit NDA-geschützt und liegen in derselben Kohorte wie Bank-Engagements. Erste namentliche Telco-Case-Studies werden Mitte 2027 erwartet."
 ---
 
-**Telekom-Operatoren stehen 2026 an einem architektonischen Wendepunkt: Legacy-NFV-Umgebungen veralten, Edge-Compute-Anforderungen wachsen, souveräne-Cloud-gebrandete Produkte starten branchenweit, KI-Workloads auf Kundendaten und NIS2-Compliance für wesentliche Entitäten. Die architektonische Antwort ist eine kohärente Plattform, die in Core-Rechenzentren, an regionalen Standorten und am Customer-Edge läuft — unter einem einzigen Operations-Modell.**
+**Telekom-Operatoren stehen 2026 an einem architektonischen Wendepunkt: Legacy-NFV-Umgebungen veralten, Edge-Compute-Anforderungen wachsen, souveräne-Cloud-gebrandete Produkte starten branchenweit, KI-Workloads auf Kundendaten und NIS2-Compliance für wesentliche Einrichtungen. Die architektonische Antwort ist eine kohärente Plattform, die in Core-Rechenzentren, an regionalen Standorten und am Customer-Edge läuft — unter einem einzigen Operations-Modell.**
 
 Ænix baut Plattformen für Telekom-Operatoren in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), läuft an Core und Edge.
 
@@ -70,8 +70,8 @@ faq:
 - **NFV → Kubernetes-Plattform-Übergänge** — Legacy-NFV-Umgebungen werden durch Kubernetes-native Äquivalente ersetzt.
 - **Edge-Cloud im großen Maßstab** — zentraler Core + regionale + Customer-Edge-Standorte unter einheitlichem Betrieb.
 - **Souveräne KI-Infrastruktur** — Telco-Daten-Analytics, Customer-Care-KI, Network-Ops-KI.
-- **NIS2-Compliance** — Telekommunikation ist eine wesentliche Entität unter NIS2.
-- **Hyperscaler-Ausstieg** — nachhaltige Workloads, bei denen die Ökonomie nicht mehr passt.
+- **NIS2-Compliance** — Telekommunikation ist eine wesentliche Einrichtung unter NIS2.
+- **Hyperscaler-Ausstieg** — dauerhaft ausgelastete Workloads, bei denen die Ökonomie nicht mehr passt.
 
 </div>
 </div>
@@ -82,7 +82,7 @@ faq:
 
 - **Multi-Site-Betrieb** — Core-DC + regionale Standorte + Edge-Standorte + Customer-Premises-Equipment, unter einer Plattform-Abstraktion.
 - **5G- + KI-Konvergenz** — Network Slicing, MEC und KI-Inference am Edge.
-- **Regulatorische Komplexität** — NIS2-wesentliche-Entität, sektorale Telco-Regulatoren, Souveränitäts-Mandate pro Jurisdiktion.
+- **Regulatorische Komplexität** — NIS2-wesentliche-Einrichtung, sektorale Telco-Regulatoren, Souveränitäts-Mandate pro Jurisdiktion.
 - **Kundenseitige Angebote** — viele Telcos verkaufen Plattform-Fähigkeit an Enterprise-Kunden weiter; das kundenseitige Multi-Tenant-Modell ist strukturell.
 - **Lange Abschreibungszyklen** — Hardware-Refresh-Zyklen länger als im typischen Enterprise; die Plattform muss auf mehreren Hardware-Generationen laufen.
 

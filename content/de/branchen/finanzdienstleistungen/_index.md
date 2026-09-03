@@ -7,7 +7,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/financial-services/
 direct_answer: |
-  **Eine Cloud-Plattform für Finanzdienstleistungen ist eine regulierungskonforme Infrastruktur-Foundation für Banken, Versicherer, Investmentfirmen und Zahlungsinstitute in der DACH-Region, die DORA-Vorgaben, ICT-Drittanbieter-Konzentrationsrisiken und souveräne KI-Anforderungen adressiert. Aenix baut diese Plattformen auf Cozystack — einer Open-Source-Foundation unter Apache 2.0, die VMs und Container über eine einzige Kubernetes-API mit KubeVirt bereitstellt, Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Tenant-CRD-Mandantenfähigkeit. Finanzdienstleister nutzen sie für DORA-konformes Plattform-Readiness, Hyperscaler-Repatriation, VMware-Ausstieg nach Broadcom und souveräne KI für sensible Finanzdaten — ohne CPU- oder Core-basierte Lizenzierung.**
+  **Eine Cloud-Plattform für Finanzdienstleistungen ist eine regulierungskonforme Infrastruktur-Foundation für Banken, Versicherer, Investmentfirmen und Zahlungsinstitute in der DACH-Region, die DORA-Vorgaben, IKT-Drittanbieter-Konzentrationsrisiken und souveräne KI-Anforderungen adressiert. Aenix baut diese Plattformen auf Cozystack — einer Open-Source-Foundation unter Apache 2.0, die VMs und Container über eine einzige Kubernetes-API mit KubeVirt bereitstellt, Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Tenant-CRD-Mandantenfähigkeit. Finanzdienstleister nutzen sie für DORA-konformes Plattform-Readiness, Hyperscaler-Repatriation, VMware-Ausstieg nach Broadcom und souveräne KI für sensible Finanzdaten — ohne CPU- oder Core-basierte Lizenzierung.**
 quick_facts:
   - label: "Was es ist"
     value: "Regulierungskonforme, souveräne Cloud-Plattform-Foundation für DACH-Finanzdienstleister, gebaut von Aenix auf Cozystack"
@@ -18,7 +18,7 @@ quick_facts:
   - label: "Zielgruppe"
     value: "Banken, Versicherer, Investmentfirmen und Zahlungsinstitute in der DACH-Region"
   - label: "Regulatorik"
-    value: "DORA (in Kraft seit Januar 2025), ICT-Drittanbieter-Konzentrationsrisiko, Datensouveränität"
+    value: "DORA (in Kraft seit Januar 2025), IKT-Drittanbieter-Konzentrationsrisiko, Datensouveränität"
   - label: "Passende Plattformen"
     value: "Ænix Private Cloud Platform als regulierte Foundation; AI Platform für Fraud Detection und souveräne KI-Workloads"
   - label: "Technik"
@@ -26,7 +26,7 @@ quick_facts:
 faq:
   - q: "Hilft die Plattform bei der DORA-Compliance?"
     a: "Ja. Aenix bietet ein DORA-konformes Plattform-Readiness-Assessment und baut die regulierte Cloud-Foundation, die DORA-Anforderungen seit Inkrafttreten im Januar 2025 adressiert. Eine kostenlose DORA-Compliance-Checkliste steht unter /de/ressourcen/dora-compliance-checkliste/ bereit."
-  - q: "Reduziert die Plattform das ICT-Drittanbieter-Konzentrationsrisiko?"
+  - q: "Reduziert die Plattform das IKT-Drittanbieter-Konzentrationsrisiko?"
     a: "Ja. Da die Foundation Open Source unter Apache 2.0 ist und VMs sowie Container über eine eigene Kubernetes-API bereitstellt, lassen sich Workloads vom Hyperscaler zurückholen (Repatriation). Das verringert die Abhängigkeit von einzelnen Drittanbietern, ein zentrales Aufsichtsthema im DACH-Finanzsektor."
   - q: "Wie unterstützt die Plattform den VMware-Ausstieg nach der Broadcom-Übernahme?"
     a: "Cozystack ersetzt VMware-Virtualisierung durch KubeVirt, das VMs und Container auf derselben Kubernetes-API betreibt. Es gibt keine CPU- oder Core-basierte Lizenzierung — die Foundation ist Apache 2.0. Aenix begleitet den Migrationspfad als Service."
@@ -40,7 +40,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Banken, Versicherer, Investmentfirmen und Zahlungsinstitute stehen 2026 vor der steilsten Kombination von Belastungen: DORA-Durchsetzung (in Kraft seit Januar 2025), sektorale Aufsicht zur ICT-Drittanbieter-Konzentration, KI-Workload-Ökonomie und dem Post-Broadcom-VMware-Ausstieg. Die architektonische Antwort ist nicht "eine weitere Hyperscaler-Region" — sondern eine kohärente Plattform, in der Souveränität, Audit-Bereitschaft und operative Disziplin strukturell verankert sind statt nachträglich aufgesetzt.**
+**Banken, Versicherer, Investmentfirmen und Zahlungsinstitute stehen 2026 vor der steilsten Kombination von Belastungen: DORA-Durchsetzung (in Kraft seit Januar 2025), sektorale Aufsicht zur IKT-Drittanbieter-Konzentration, KI-Workload-Ökonomie und dem Post-Broadcom-VMware-Ausstieg. Die architektonische Antwort ist nicht „eine weitere Hyperscaler-Region“ — sondern eine kohärente Plattform, in der Souveränität, Audit-Bereitschaft und operative Disziplin strukturell verankert sind statt nachträglich aufgesetzt.**
 
 Ænix baut und betreibt Plattformen für Finanzdienstleister in der EU, DACH und Zentralasien. Dieselbe Plattform, [Cozystack](/de/produkte/cozystack/), betreibt Produktions-Workloads unter einer auf DORA ausgerichteten Governance.
 
@@ -61,7 +61,7 @@ faq:
 Die vier häufigsten Einstiegspunkte:
 
 - **DORA-konforme Plattform-Readiness** — Artikel-28-Lieferantenrisiko, Exit-Bereitschaft, Tests der operativen Resilienz. Siehe **[DORA-Compliance](/de/loesungen/dora-compliance/)**.
-- **Hyperscaler-Ausstieg / Repatriation** — nachhaltige Workloads, bei denen die Public-Cloud-Ökonomie nicht mehr passt. Siehe **[Cloud Repatriation](/de/loesungen/cloud-repatriation/)**.
+- **Hyperscaler-Ausstieg / Repatriation** — dauerhaft ausgelastete Workloads, bei denen die Public-Cloud-Ökonomie nicht mehr passt. Siehe **[Cloud Repatriation](/de/loesungen/cloud-repatriation/)**.
 - **Souveräne KI für sensible Daten** — GenAI / Inference / Analytics auf Kunden- oder Finanzdaten, die das Perimeter nicht verlassen dürfen. Siehe **[Souveräne KI](/de/loesungen/sovereign-ai/)**.
 - **VMware-Ausstieg** — VCF-Subscription-Druck im gesamten Finanzsektor. Siehe **[VMware-Alternative](/de/alternativen/vmware-alternative/)**.
 
@@ -88,7 +88,7 @@ Das Standard-Engagement läuft als **[Platform Readiness Assessment](/de/dienstl
 
 - **Souveränitäts- + DORA-Workstream** — Artikel-28-Lieferantenrisiko, Konzentrationsanalyse, Exit-Feasibility, Audit-Bereitschaft, Verschlüsselungs-Posture.
 - **Kosten-Workstream** — ehrliches TCO-Modell, FinOps-Reife, Repatriation-Kandidaten abgestimmt auf Commitment-Ladders.
-- **Platform-Engineering-Workstream** — Multi-Tenant-Kubernetes-native Foundation, Golden Paths für Finanz-Produktteams, Observability für den Regulator-Dialog geeignet.
+- **Platform-Engineering-Workstream** — Multi-Tenant-Kubernetes-native Foundation, Golden Paths für Finanz-Produktteams, Observability für den Aufsichtsdialog geeignet.
 - **KI-Infrastruktur-Workstream** (wo anwendbar) — souveräne KI-Architektur für Datenklassen, die das Perimeter nicht verlassen können.
 
 Das Ergebnis ist ein schriftlicher Bericht mit Ausrichtung auf Regulator-Bereitschaft und eine Phase-2-Implementierungs-Roadmap.
@@ -113,7 +113,7 @@ Das Ergebnis ist ein schriftlicher Bericht mit Ausrichtung auf Regulator-Bereits
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>Druck im Finanzsektor</b><div class="diagram__chips"><span>DORA-Durchsetzung</span><span>ICT-Drittanbieter-Konzentration</span><span>VMware-/VCF-Ausstieg</span></div></div>
+<div class="diagram__node"><b>Druck im Finanzsektor</b><div class="diagram__chips"><span>DORA-Durchsetzung</span><span>IKT-Drittanbieter-Konzentration</span><span>VMware-/VCF-Ausstieg</span></div></div>
 <div class="diagram__conn">adressiert durch</div>
 <div class="diagram__node diagram__node--brand"><b>Cozystack auf Kunden-Hardware</b><div class="diagram__chips"><span>VMs + Container</span><span>Eine Kubernetes-API</span><span>Apache 2.0</span></div></div>
 <div class="diagram__conn">liefert</div>
@@ -121,14 +121,14 @@ Das Ergebnis ist ein schriftlicher Bericht mit Ausrichtung auf Regulator-Bereits
 </div>
 </div>
 
-- **Regulator-bewusstes Engineering.** Unser Team hat direkte Erfahrung mit DORA / NIS2 / GDPR / sektoralem Regulator-Dialog. Wir liefern kein Consulting, das die regulatorische Ebene ignoriert.
+- **Regulator-bewusstes Engineering.** Unser Team hat direkte Erfahrung mit DORA / NIS2 / DSGVO / sektoralem Aufsichtsdialog. Wir liefern kein Consulting, das die regulatorische Ebene ignoriert.
 - **Kein Hyperscaler-Bias.** Wir sind kommerziell nicht mit AWS / Azure / GCP verbunden. Empfehlungen spiegeln substanzielle Souveränität wider, nicht Partner-Ökonomie.
 - **Open-Source-Plattform-Foundation.** [Cozystack](/de/produkte/cozystack/) auf Kunden-Hardware, kundenkontrollierten Schlüsseln, kundeneigenen Audit-Trails. Souveränität ist strukturell.
 - **EU- + Zentralasien-Teams.** Zeitzonenfreundlich; abgestimmt auf EU- + KZ-Regulatorik-Frameworks.
 
 ---
 
-## Pricing
+## Preise
 
 Standard-Engagement-Struktur (Assessment + Phase 2) — siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** für Methodik und Preisdetails. Finanzdienstleistungs-Engagements nutzen aufgrund des breiteren Scopes häufig die 28-Tage-Variante.
 

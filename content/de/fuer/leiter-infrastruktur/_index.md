@@ -109,7 +109,7 @@ Kostenlos, ohne Vorbereitung. Wir prüfen die Passung, sehen uns Ihre Umgebung a
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-infrastruktur/ ; hreflang de self, en → /for/head-of-infrastructure/, x-default → EN.

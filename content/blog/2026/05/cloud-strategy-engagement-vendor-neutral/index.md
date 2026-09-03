@@ -126,9 +126,9 @@ commercial alignment that shapes recommendations:
 Vendor-neutral advisory means the engagement's commercial outcome
 does not depend on the customer choosing any specific hyperscaler,
 distribution, or product. Ænix's commercial model — we build and
-operate Ænix Platform — creates a different alignment: we want the
-strategy to land on Ænix Platform *where it fits*, but we explicitly
-do not push it when it doesn't.
+operate the Ænix cloud platform products — creates a different
+alignment: we want the strategy to land on one of them *where it
+fits*, but we explicitly do not push it when it doesn't.
 
 We will say "stay on hyperscaler" when the trade-offs warrant it. We
 say so in writing. The downside-incentive that creates is real —

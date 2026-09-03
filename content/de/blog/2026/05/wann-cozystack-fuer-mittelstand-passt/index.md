@@ -10,36 +10,36 @@ companion_landing: "/de/branchen/mittelstand/"
 quiz:
   title: "Wissens-Check: Cozystack für KMU/Mittelstand"
   questions:
-    - q: "Wie viele der 6 Kriterien müssen mindestens zutreffen, damit Cozystack passt?"
+    - q: "Wie viele der sechs Kriterien müssen mindestens zutreffen, damit Cozystack passt?"
       options:
-        - { text: "1", correct: false }
-        - { text: "Mindestens 3", correct: true }
-        - { text: "Alle 6", correct: false }
-      explanation: "Der ehrliche Test: 0-1 Kriterien = Over-Engineering, 2 = marginal, 3+ = passt. Kriterien sind: regulierte Daten, Multi-Tenant-Modell, stetig-state-Workloads, internes Plattform-Team, KI/GPU im großen Maßstab, spezifischer Exit-Trigger."
-    - q: "Welche Alternative wird für KMU ohne regulierte Daten empfohlen?"
+        - { text: "Eines", correct: false }
+        - { text: "Mindestens drei", correct: true }
+        - { text: "Alle sechs", correct: false }
+      explanation: "Der ehrliche Test: null bis ein Kriterium bedeutet Over-Engineering, zwei ist grenzwertig, ab drei passt es. Die Kriterien sind regulierte Daten, ein Multi-Mandanten-Modell, dauerhaft ausgelastete Workloads, ein internes Plattformteam, KI und GPU im großen Maßstab sowie ein konkreter Ausstiegsauslöser."
+    - q: "Welche Alternative empfiehlt der Artikel dem Mittelstand ohne regulierte Daten?"
       options:
-        - { text: "Cozystack — immer", correct: false }
-        - { text: "Hyperscaler-managed (AWS/Azure/GCP), Hetzner/OVHcloud, oder Proxmox VE für on-prem", correct: true }
-        - { text: "Custom-Build", correct: false }
-      explanation: "Für KMU ohne regulierte Daten: Hyperscaler-managed (AWS/Azure/GCP) für operative Einfachheit, Hetzner/OVHcloud für managed-Cloud-adjacent, oder Proxmox VE für on-prem. Cozystack ist Over-Engineering für diese Fälle."
-    - q: "Welcher kostenlose Start-Schritt wird angeboten?"
+        - { text: "In jedem Fall Cozystack, schon der Einheitlichkeit wegen", correct: false }
+        - { text: "Hyperscaler-Managed-Dienste, Hetzner oder OVHcloud, oder Proxmox VE", correct: true }
+        - { text: "Eine im Haus entwickelte Eigenbau-Plattform", correct: false }
+      explanation: "Für den Mittelstand ohne regulierte Daten: verwaltete Hyperscaler-Dienste bei AWS, Azure oder GCP für betriebliche Einfachheit, Hetzner oder OVHcloud als cloud-nahe Alternative, oder Proxmox VE für die Virtualisierung im eigenen Rechenzentrum. Cozystack wäre in diesen Fällen Over-Engineering."
+    - q: "Welchen kostenlosen ersten Schritt bietet der Artikel an?"
       options:
-        - { text: "Zwei-Wochen-bezahltes-PoC", correct: false }
-        - { text: "15-Minuten-Fit-Check (kostenlos, kein Sales-Druck)", correct: true }
-        - { text: "Voller Architektur-Audit", correct: false }
-      explanation: "Mittelstand-Engagement-Modell startet mit 15-Minuten-Fit-Check (kostenlos, kein Sales-Druck), dann optional Architektur-Review (5-10 Tage), dann Phase-2-Implementation nur wenn passt. \"Bei meisten KMU ist die ehrliche Antwort 'bleibt wo ihr seid'.\""
-    - q: "Wann passt Cozystack für Mittelstand \"becoming Multi-Tenant\"?"
+        - { text: "Einen zweiwöchigen, kostenpflichtigen Proof of Concept", correct: false }
+        - { text: "Ein 15-minütiges Gespräch zur Einordnung, ohne Vertriebsdruck", correct: true }
+        - { text: "Ein vollständiges, kostenpflichtiges Architektur-Audit", correct: false }
+      explanation: "Das Engagement-Modell für den Mittelstand beginnt mit einem 15-minütigen Gespräch zur Einordnung — kostenlos und ohne Vertriebsdruck —, danach optional ein Architektur-Review über fünf bis zehn Tage und erst dann eine Umsetzung, wenn es tatsächlich passt."
+    - q: "In welchem Fall passt Cozystack für einen Mittelständler, der mandantenfähig wird?"
       options:
-        - { text: "Persönliches Blog", correct: false }
-        - { text: "Mittelstand wird Multi-Tenant SaaS — z.B. SaaS mit 100+ Kunden die hard-Isolation brauchen", correct: true }
-        - { text: "Single-Team-Dev-Umgebung", correct: false }
-      explanation: "Mittelstand-Beispiele die passen: Mittelstand mit DORA-relevanter Tochter, Mittelstand wird Multi-Tenant SaaS (100+ Kunden, hard-Isolation), Mittelstand mit starker Plattform-Engineering-Investition."
-    - q: "Was ist die ehrliche Antwort für die meisten KMU-Outreach laut Artikel?"
+        - { text: "Beim Betrieb eines persönlichen Blogs", correct: false }
+        - { text: "Bei einem SaaS-Angebot mit über 100 Kunden und harter Isolation", correct: true }
+        - { text: "Bei einer Entwicklungsumgebung für ein einzelnes Team", correct: false }
+      explanation: "Passende Beispiele aus dem Mittelstand: ein Unternehmen mit einer DORA-relevanten Tochtergesellschaft, ein Mittelständler, der zum mandantenfähigen SaaS-Anbieter mit über 100 Kunden und harter Isolation wird, sowie ein Unternehmen mit erheblicher Investition in Platform Engineering."
+    - q: "Was ist laut Artikel die ehrliche Antwort für die meisten KMU-Anfragen?"
       options:
-        - { text: "Sofort kaufen", correct: false }
-        - { text: "\"Bleibt wo ihr seid\" — Cozystack ist nicht für jede Organisation richtig", correct: true }
-        - { text: "Zur Konkurrenz wechseln", correct: false }
-      explanation: "Bei den meisten KMU-Outreach ist die ehrliche Antwort \"bleibt wo ihr seid\". Aenix ist explizit dazu — wenn Cozystack nicht passt, sagen wir das direkt."
+        - { text: "Sofort kaufen, bevor die Preise steigen", correct: false }
+        - { text: "Bleiben Sie, wo Sie sind", correct: true }
+        - { text: "Zum nächstgrößeren Wettbewerber wechseln", correct: false }
+      explanation: "Bei den meisten Anfragen aus dem KMU-Segment lautet die ehrliche Antwort: bleiben Sie, wo Sie sind. Aenix sagt das ausdrücklich — wenn Cozystack nicht passt, wird das direkt so benannt und nicht in ein Angebot umgedeutet."
 ---
 
 Begleitung zur **[Mittelstand-Page](/de/branchen/mittelstand)**.
@@ -74,7 +74,7 @@ Bei 0-1: Over-Engineering. Bei 2: marginal. Bei 3+: passt.
 - Architektur-Review (5-10 Tage) wenn strukturierter
 - Phase-2-Implementation nur wenn passt
 
-Bei meisten KMU ist die ehrliche Antwort "bleibt wo ihr seid."
+Bei meisten KMU ist die ehrliche Antwort „bleibt wo ihr seid.“
 
 ---
 

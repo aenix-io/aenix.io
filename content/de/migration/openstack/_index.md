@@ -41,7 +41,7 @@ faq:
   - q: "Wie lange dauert eine OpenStack-zu-Cozystack-Migration?"
     a: "Vier bis zwölf Monate für mittelgroße Umgebungen. Auf zwölf bis achtzehn Monate wächst sie dort, wo eine komplexe Provider-Netz-Topologie im Spiel ist oder Mandanten die OpenStack-API direkt nutzen und für ihre eigene Automatisierung eine Abkündigungsfrist brauchen."
   - q: "Müssen wir Ceph aufgeben?"
-    a: "Nein. Ceph RBD kann über Rook bestehen bleiben und ist oft die richtige Wahl, wenn die Investition getätigt ist und das Leistungsprofil passt. LINSTOR/DRBD ist die Alternative, wenn Sie repliziertes lokales NVMe statt eines verteilten Storage-Clusters wollen. Das ist eine Architekturentscheidung im Assessment, kein erzwungener Austausch."
+    a: "Nein. Ein bestehendes Ceph-Cluster kann über den Ceph-CSI-Treiber weiter genutzt werden und ist oft die richtige Wahl, wenn die Investition getätigt ist und das Leistungsprofil passt. LINSTOR/DRBD ist die Alternative, wenn Sie repliziertes lokales NVMe statt eines verteilten Storage-Clusters wollen. Das ist eine Architekturentscheidung im Assessment, kein erzwungener Austausch."
   - q: "Was passiert mit Heat-Templates und Terraform gegen die OpenStack-API?"
     a: "Sie werden gegen die Kubernetes-API neu geschrieben. Heat-Stacks lassen sich nicht konvertieren; das Äquivalent ist Helm plus GitOps-Reconciliation. Für eine interne Cloud ist das Schulungs- und Refactoring-Aufwand. Für eine öffentliche Cloud, deren Kunden gegen Ihre OpenStack-Endpunkte automatisieren, ist es eine Produktentscheidung, die ab Tag eins eine veröffentlichte Abkündigungsfrist braucht."
   - q: "Wann sollten wir auf OpenStack bleiben?"
@@ -51,12 +51,12 @@ faq:
 service:
   type: "OpenStack Migration"
   areaServed: ["EU", "DACH", "Zentralasien"]
-  audience: "Hosting-Anbieter, Telkos, nationale Betreiber, regulierte Unternehmen"
+  audience: "Hosting-Anbieter, Telcos, nationale Betreiber, regulierte Unternehmen"
 ---
 
 **OpenStack ist keine gescheiterte Plattform. Es ist eine Plattform, deren Betriebskosten in knappen Fachkräften bezahlt werden. Diese Seite beschreibt, wann dieser Tausch nicht mehr aufgeht, was der Wechsel auf eine Kubernetes-native Steuerebene Dienst für Dienst bedeutet — und welche Teile wirklich schwierig sind.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn die OpenStack-Cloud an externe Kunden verkauft wird (Hoster, MSPs, Telkos, nationale Betreiber); **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn sie interne Verbraucher unter DORA-, NIS2- oder sektorspezifischen Auflagen bedient.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn die OpenStack-Cloud an externe Kunden verkauft wird (Hoster, MSPs, Telcos, nationale Betreiber); **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn sie interne Verbraucher unter DORA-, NIS2- oder sektorspezifischen Auflagen bedient.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -92,7 +92,7 @@ Hier entscheidet sich der Umfang. Jedes OpenStack-Projekt hat ein Ziel, kein Zie
 | Keystone (Identität, Domains, Projekte) | Tenant-CRD plus Kubernetes-RBAC, OIDC gegen Ihren bestehenden IdP | Neumodellierung. Projektbäume bilden sich nicht eins zu eins ab; die Mandantenhierarchie wird im Assessment entworfen. |
 | Nova (Compute) | KubeVirt-VMs im selben Cluster wie Container | Mechanisch. Beide Seiten sind libvirt/KVM. |
 | Glance (Images) | CDI-DataVolumes mit Object Storage als Quelle | Mechanisch. QCOW2 und raw kommen mit. |
-| Cinder (Block) | LINSTOR/DRBD oder Ceph RBD über Rook behalten | Mechanisch, wenn Ceph bleibt; Datenumzug bei Konsolidierung auf LINSTOR. |
+| Cinder (Block) | LINSTOR/DRBD, oder das bestehende Ceph-Cluster über den Ceph-CSI-Treiber weiter nutzen | Mechanisch, wenn Ceph bleibt; Datenumzug bei Konsolidierung auf LINSTOR. |
 | Neutron (Netzwerk) | Cilium (eBPF) mit L2-Announcements oder BGP; MetalLB, wo bereits Standard | Neuentwurf. Der schwierige Teil — siehe unten. |
 | Swift / Ceph RGW (Object) | S3-kompatibler Object Storage auf der Plattform, oder RGW behalten | Meist behalten. Object-Endpunkte sind langlebig und kundensichtbar. |
 | Octavia (Load Balancing) | Kubernetes-Services vom Typ LoadBalancer plus Ingress-Schicht | Neuentwurf. Die Semantik pro Mandant unterscheidet sich. |

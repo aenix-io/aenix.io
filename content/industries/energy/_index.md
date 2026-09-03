@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for energy operators — NIS2-aligned, edge-ready, sovereign by architecture"
-description: "Energy operators in 2026 face a specific combination of pressures: NIS2 essential-entity classification (energy is in scope), sovereign-cloud requirements..."
+description: "NIS2-aligned cloud for electricity, gas, oil and heating operators: central control, regional sites and substation edge under one Kubernetes operational model."
 related_pages:
   - /solutions/data-sovereignty
   - /solutions/nis2-compliance

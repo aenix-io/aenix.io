@@ -41,7 +41,7 @@ faq:
     a: "Die Ænix Platform startet bei 1.250 $/Monat (Basic, bis 10 Nodes), Standard liegt bei 3.000 $, Plus bei 5.500 $. Für größere oder souveräne Multi-DC-Umgebungen gibt es eine individuelle Enterprise-Stufe."
 ---
 
-**Nutanix HCI ist operativ einfach, ausgereift und integriert. Die Trade-offs: Closed Source, Appliance-getriebener Lock-in und ein Subscription-Modell, das ähnlichen Druck-Dynamiken wie VMware folgt. Für Organisationen, die vergleichbare VM-Plattform-Fähigkeiten mit Open-Source-Foundations und Multi-Tenant-Cloud-Builder-Features suchen, ist Cozystack die realistische Alternative.**
+**Nutanix HCI ist operativ einfach, ausgereift und integriert. Die Trade-offs: Closed Source, Appliance-getriebener Lock-in und ein Subscription-Modell, das ähnlichen Preisdruck wie bei VMware folgt. Für Organisationen, die vergleichbare VM-Plattform-Fähigkeiten mit Open-Source-Foundations und Multi-Tenant-Cloud-Builder-Features suchen, ist Cozystack die realistische Alternative.**
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -64,13 +64,13 @@ faq:
 
 ## Wann Nutanix nicht die richtige Antwort sein könnte
 
-- **Closed-Source-Bedenken** — Souveränität, Audit-Fähigkeit und Lieferketten-Transparenz sprechen für Open Source.
+- **Closed-Source-Bedenken** — Souveränität, Auditierbarkeit und Lieferketten-Transparenz sprechen für Open Source.
 - **Appliance-Lock-in** — der Hardware-Refresh bindet Sie an das Appliance-Modell von Nutanix.
 - **Trajektorie der Subscription-Preise** — ähnliche Dynamiken wie bei anderen kommerziellen HCI-Anbietern.
 - **Multi-Tenant-Service-Provider-Modell** — Nutanix ist auf VM-Mandantenfähigkeit fokussiert; ein kundenorientiertes Service-Provider-Modell braucht mehr.
 - **Vereinheitlichte Container- und VM-Workloads** — Nutanix ist VM-zentriert; das native Container-Handling ist schwächer.
 
-Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkeit für eine Fortsetzung spricht, bleiben Sie. Die Alternativen-Analyse richtet sich an Organisationen, die durch einen der obigen Punkte ausgelöst werden.
+Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkeit für eine Fortsetzung spricht, bleiben Sie. Die Alternativen-Analyse richtet sich an Organisationen, bei denen einer der obigen Punkte den Anstoß gibt.
 
 ---
 
@@ -85,7 +85,7 @@ Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkei
 | **Foundation** | Proprietäres KVM (AHV) | KubeVirt (KVM) auf Kubernetes |
 | **Open Source** | Nein | Vollständig |
 | **Multi-Tenancy** | Limitiert | Tenant CRD (produktive Multi-Tenancy) |
-| **Container** | Limitiert (Karbon-Plattform-Erweiterung) | Nativ |
+| **Container** | Limitiert (Nutanix Kubernetes Engine als Erweiterung) | Nativ |
 | **Hardware** | Appliance + zertifizierte Hardware | Commodity |
 | **Am besten für** | Bestehende Nutanix-HCI-Kunden | Service-Provider, regulierte Multi-Tenancy, modernes Greenfield |
 

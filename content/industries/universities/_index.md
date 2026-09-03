@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for universities — research computing, AI/ML labs, and cloud-native teaching"
-description: "Universities and research institutions in 2026 need cloud-native infrastructure for three overlapping missions: serious research computing (especially..."
+description: "One platform for research computing, reproducible research and teaching: shared GPUs, per-lab tenancy, air-gap for sensitive data, Slurm left in place."
 related_pages:
   - /solutions/sovereign-ai
   - /solutions/data-sovereignty

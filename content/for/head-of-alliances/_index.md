@@ -27,7 +27,7 @@ related_pages:
 </div>
 
 <div class="trust-badges">
-Up to 40% margin · Deal protection · Co-sell + pre-sales support · Two editions plus two modules to sell
+Up to 40% margin · Deal protection · Co-sell and pre-sales support · Three platforms to sell, plus support and the WHMCS integration
 </div>
 
 <!-- /BLOCK 1 -->
@@ -92,7 +92,7 @@ Yes — registered opportunities are reserved to the partner; no channel conflic
 No. Resell only, or co-deliver with Ænix as your engineering bench — your choice per deal.
 
 **What do we sell, exactly?**
-Two editions — Provider and Enterprise — plus AI Platform and developer self-service layers, and services. See [Ænix Platform](/products/).
+Three platforms on one engine — Public Cloud, Private Cloud and AI — plus enterprise support for Cozystack, the WHMCS integration and services. Because they share an engine, a customer who starts on one can add another without a second procurement, which is where the expansion revenue is. See [the platforms](/products/).
 
 **How do we start?**
 [Become a partner](/partners/#apply) or book a call; we enable your sales team with the kit and pre-sales support.

@@ -1,6 +1,6 @@
 ---
 title: "SRE consulting — site reliability practices for production at scale"
-description: "Site Reliability Engineering as a discipline applies software engineering to operations. The Aenix SRE engagement covers SLOs, error budgets, incident..."
+description: "SRE consulting that installs SLOs, error budgets, incident command and toil reduction as a system rather than a habit. Assessment, embedded build or on-call."
 related_pages: ["/services/devops-consulting", "/services/platform-engineering", "/services/platform-readiness-assessment", "/products/"]
 language: "en"
 quick_facts_style: "rows"

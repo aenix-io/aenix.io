@@ -11,14 +11,14 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Das Platform Engineering Maturity Assessment ist eine kostenlose Selbsteinschätzung, die Ihre Platform-Engineering-Praxis über acht Dimensionen auf einer 5-Stufen-Reife-Skala (Pre-platform bis Mature platform engineering) bewertet. Es richtet sich an Plattform-Teams, CTOs und VP Engineering, die ihren Reifegrad baselinen und Lücken vor der nächsten Investition identifizieren wollen. Aenix nutzt dasselbe Assessment während seiner Platform Readiness Assessments. Bewertet werden Workload-Portabilität, GitOps-Adoption, Observability, Secrets-Handhabung, Identity-Modell, Multi-Tenancy, Disaster-Recovery und Self-Service-Tiefe. Die meisten Ergebnisse verweisen auf die Developer-Self-Service-Ebene der Ænix Private Cloud Platform auf der Cozystack-Cloud-Foundation als strukturierten nächsten Schritt.**
+  **Das Platform Engineering Maturity Assessment ist eine kostenlose Selbsteinschätzung, die Ihre Platform-Engineering-Praxis über acht Dimensionen auf einer 5-Stufen-Reife-Skala (Pre-platform bis Mature platform engineering) bewertet. Es richtet sich an Plattform-Teams, CTOs und VP Engineering, die ihren Reifegrad als Ausgangswert zu erfassen und Lücken vor der nächsten Investition identifizieren wollen. Aenix nutzt dasselbe Assessment während seiner Platform Readiness Assessments. Bewertet werden Workload-Portabilität, GitOps-Adoption, Observability, Secrets-Handhabung, Identity-Modell, Multi-Tenancy, Disaster-Recovery und Self-Service-Tiefe. Die meisten Ergebnisse verweisen auf die Developer-Self-Service-Ebene der Ænix Private Cloud Platform auf der Cozystack-Cloud-Foundation als strukturierten nächsten Schritt.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine 8-Dimensionen-Selbsteinschätzung, die die Platform-Engineering-Reife einer Organisation auf einer 5-Stufen-Skala bewertet."
   - label: "Format"
     value: "Kostenloses PDF mit der vollständigen 8x5-Rubrik und einem Bewertungsbogen"
   - label: "Zielgruppe"
-    value: "Plattform-Teams, CTOs und VP Engineering, die ihren Reifegrad baselinen und Lücken identifizieren wollen"
+    value: "Plattform-Teams, CTOs und VP Engineering, die ihren Reifegrad als Ausgangswert zu erfassen und Lücken identifizieren wollen"
   - label: "Bewertete Dimensionen"
     value: "Workload-Portabilität, GitOps, Observability, Secrets, Identity, Multi-Tenancy, Disaster Recovery, Self-Service-Tiefe"
   - label: "Empfohlener nächster Schritt"
@@ -29,11 +29,11 @@ quick_facts:
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
 faq:
   - q: "Was ist das Platform Engineering Maturity Assessment?"
-    a: "Eine kostenlose Selbsteinschätzung, die Ihre Platform-Engineering-Praxis über acht Dimensionen auf einer 5-Stufen-Reife-Skala bewertet — von Pre-platform bis Mature platform engineering. Aenix nutzt dasselbe Assessment, um Organisationen vor einer Phase-2-Empfehlung zu baselinen."
+    a: "Eine kostenlose Selbsteinschätzung, die Ihre Platform-Engineering-Praxis über acht Dimensionen auf einer 5-Stufen-Reife-Skala bewertet — von Pre-platform bis Mature platform engineering. Aenix nutzt dasselbe Assessment, um Organisationen vor einer Phase-2-Empfehlung zu als Ausgangswert zu erfassen."
   - q: "Welche Dimensionen werden bewertet?"
     a: "Acht: Workload-Portabilität, GitOps-Adoption, Observability-Vereinheitlichung, Secrets-Handhabung, Identity-Modell, Multi-Tenancy, Disaster-Recovery-Reifegrad und Self-Service-Tiefe. Jede Dimension hat eine eigene 5-Stufen-Rubrik."
   - q: "Für wen ist das Assessment gedacht?"
-    a: "Für Plattform-Teams, CTOs, VP Engineering und Engineering-Leiter, die ihren aktuellen Reifegrad objektiv baselinen, Lücken priorisieren und die nächste Investition in ihre Internal Developer Platform begründen wollen."
+    a: "Für Plattform-Teams, CTOs, VP Engineering und Engineering-Leiter, die ihren aktuellen Reifegrad objektiv als Ausgangswert zu erfassen, Lücken priorisieren und die nächste Investition in ihre Internal Developer Platform begründen wollen."
   - q: "Was kostet das Assessment?"
     a: "Das Assessment ist kostenlos und steht als PDF-Download mit der vollständigen Rubrik und einem Bewertungsbogen bereit. Cozystack selbst steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
   - q: "Was wird nach dem Assessment empfohlen?"
@@ -42,7 +42,7 @@ faq:
     a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack, einem CNCF-Projekt. Aenix verkauft die produktisierte Ænix Platform plus Services; Cozystack bleibt Open Source unter Apache 2.0."
 ---
 
-**Eine 8-Dimensionen-Selbsteinschätzung, die Ihre Platform-Engineering-Praxis auf einer 5-Stufen-Reife-Skala bewertet. Verwendet von Ænix während Platform Readiness Assessment, um Organisationen vor Phase-2-Empfehlung zu baselinen.**
+**Eine 8-Dimensionen-Selbsteinschätzung, die Ihre Platform-Engineering-Praxis auf einer 5-Stufen-Reife-Skala bewertet. Verwendet von Ænix während Platform Readiness Assessment, um Organisationen vor Phase-2-Empfehlung zu als Ausgangswert zu erfassen.**
 
 > **Passt zu:** der Developer-Self-Service-Ebene der **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — dem Internal-Developer-Platform-Layer (GitLab, Argo CD, APIs, Golden Paths) auf der Cozystack-Cloud-Foundation. Die meisten Assessment-Ergebnisse verweisen auf genau diese Ebene als strukturierten nächsten Schritt.
 

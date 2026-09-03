@@ -27,7 +27,7 @@ hreflang_en: /conferences/
 
 {{< videos >}}
 
-### Featured Vorträge
+### Ausgewählte Vorträge
 
 - **Platformize It! Building a Unified and Extensible Platform Framework**
 - **GPU-powered AI on VMs, Kubernetes & Bare Metal with Cozystack**
@@ -51,7 +51,7 @@ Andrei Kvapil (CEO), Timur Tukaev (COO) und Ænix-Solutions-Engineers sprechen a
 - Souveräne-Cloud / regulierte-Industrie-Events
 - Partner-organisierte Events
 
-Für Einladungen: [Discovery-Call buchen](/de/kontakt/) und "Speaking-Einladung" erwähnen, oder E-Mail info@aenix.io mit Event-Details.
+Für Einladungen: [Discovery-Call buchen](/de/kontakt/) und „Speaking-Einladung“ erwähnen, oder E-Mail info@aenix.io mit Event-Details.
 
 ---
 

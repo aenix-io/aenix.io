@@ -207,6 +207,7 @@ Cluster is "owned" by everyone, operated by no one. Drift accumulates; nobody ca
 Before building or scaling, an architecture review is the cheapest insurance. The output is a written assessment of where you stand, where the gaps are, and what production-readiness looks like for your scale.
 
 Ænix runs Kubernetes architecture reviews as a focused 5-10 day engagement, or as part of broader **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+
 ## Want to dig deeper?
 
 - **[Kubernetes consulting services](/services/kubernetes-consulting/)** — engagement details

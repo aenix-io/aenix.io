@@ -174,6 +174,7 @@ Most modern private-cloud deployments are migrations from existing infrastructur
 - **Public cloud → private cloud** (repatriation) — workload classification, cost honesty, destination architecture; see **[Cloud repatriation](/solutions/cloud-repatriation/)**
 - **OpenStack → Cozystack** — for teams seeking Kubernetes-native foundation; image migration is straightforward
 - **Hyperscaler region → sovereign region** — for sovereignty-driven migrations within hyperscaler model
+
 ## Want to dig deeper?
 
 - **[Private cloud platform — Cozystack](/products/private-cloud-platform/)**

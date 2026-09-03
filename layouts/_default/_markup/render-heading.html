@@ -23,7 +23,7 @@
     {{- if $soft -}}
       {{- $u := cond $de "/de/preise/" "/pricing/" -}}
       {{- $t := cond $de "Vergleichen Sie noch?" "Still comparing?" -}}
-      {{- $l := cond $de "Preise & Editionen ansehen" "See pricing & editions" -}}
+      {{- $l := cond $de "Preise & Plattformen ansehen" "See pricing & platforms" -}}
       <div class="inline-cta inline-cta--soft"><span class="inline-cta__lead">{{ $t }}</span> <a class="inline-cta__link" href="{{ $u }}">{{ $l }} →</a></div>
     {{- else -}}
       {{- $u := cond $de "/de/kontakt/" "/contact/" -}}

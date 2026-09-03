@@ -38,7 +38,7 @@ Interne Teams bekommen Umgebungen und Managed Services auf Abruf, im Haus, mit R
 
 ### [Eine interne Daten- und KI-Plattform, GPUs inklusive](/de/case-studies/internal-data-and-ai-platform/)
 
-Eine Plattform für Analytik, Data Lakes und Modelltraining ebenso wie für KI/ML-Services: GPU-Pools mit Time-Slicing und Quotas je Tenant, ein Scheduler für Pods und VMs, Verbrauchsmetriken fein genug für interne Verrechnung. In Einführung, die GPU-Schicht ist fertig.
+Eine Plattform für Analytik, Data Lakes und Modelltraining ebenso wie für KI/ML-Services: GPU-Pools mit fraktionalem Sharing und Quotas je Tenant, ein Scheduler für Pods und VMs, Verbrauchsmetriken fein genug für interne Verrechnung. In Einführung, die GPU-Schicht ist fertig.
 
 ### [Wenn das Antwortpaket die falsche Tür nimmt](/de/case-studies/metallb-evpn-address-mobility/)
 
@@ -55,7 +55,7 @@ Ein Telekom-Betreiber und Systemintegrator baute eine Unternehmens-KI-Plattform 
 
 ---
 
-## Quick facts
+## Kurzüberblick
 
 - **Öffentliche Produktivkunden:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy (Ænix Public Cloud Platform)
 - **Plattform-R&D-Engagements:** CSI-Driver-Entwicklung, Block-Storage-Forschung, Virtualisierungs-Plattform-Prototypen
@@ -69,7 +69,7 @@ Ein Telekom-Betreiber und Systemintegrator baute eine Unternehmens-KI-Plattform 
 
 ### Regionale Hosting-Anbieter (Ænix Public Cloud Platform)
 
-Produktive Deployments mit unserer hosting-spezifischen Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, Multi-Tier-Reseller-Modell, erweiterter Service-Katalog, Tenant Lock/Suspension.
+Produktive Deployments mit unserer hosting-spezifischen Plattform. WHMCS-integriertes Billing, gebrandetes Kunden-Portal, Multi-Tier-Reseller-Modell, erweiterter Service-Katalog, Sperren und Stilllegen von Mandanten.
 
 **Öffentliche Kunden** (derzeit auf aenix.io gelistet):
 - GoHost.kz
@@ -102,7 +102,7 @@ CSI-Driver-Entwicklung für Shared-SAN-Umgebungen, Backup-System mit bis zu 75% 
 |---|---|
 | Regionale Hosting-Anbieter | Namentlich (derzeit auf aenix.io gelistet); Deployment-Scope; Ænix Public Cloud Platform Nutzung |
 | Plattform-R&D für Ecosystem-Vendors | Projektname und -outcomes |
-| Tier-1-europäische-Banken | Anonymisiert nur ("Tier-1-europäische-Bank unter DORA-Scope") bis Mitte 2027 NDA-Abläufe |
+| Tier-1-europäische-Banken | Anonymisiert nur („Tier-1-europäische-Bank unter DORA-Scope“) bis die NDAs Mitte 2027 auslaufen |
 | Souveräne Cloud-Initiativen | Anonymisiert nur |
 | AI/ML-Deployments | Anonymisiert nur; unter NDA |
 

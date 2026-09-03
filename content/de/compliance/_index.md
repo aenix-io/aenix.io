@@ -41,10 +41,10 @@ faq:
   - q: "Wie verhält sich dieser Bereich zu den DORA- und NIS2-Lösungsseiten?"
     a: "Zwei verschiedene Fragen. Die DORA- und NIS2-Lösungsseiten beschreiben das Engagement: ein Readiness-Assessment zum Festpreis, das Ihre Architektur gegen die Regulierung abbildet und einen Remediationsplan erzeugt. Dieser Bereich ist der plattformseitige Nachweis, auf den ein solches Assessment zugreift: welche Kontrollen existieren, wie sie gemessen wurden und was die Messung nicht abdeckt. Die Lösungsseite für das Programm, diese Seiten für die Artefakte."
   - q: "Überträgt sich die Kubernetes-Zertifizierung einer gehosteten Plattform auf unsere Installation?"
-    a: "Nein. Ein CNCF-Eintrag beschreibt ein benanntes Produkt in einer benannten Version, eingereicht von einer bestimmten Entität. Wenn Sie dieselbe quelloffene Plattform selbst betreiben, deckt die Zertifizierung eines anderen das nicht ab. Genau deshalb werden die selbst betriebenen Konformitätsläufe separat und mit eigenen Artefakten veröffentlicht."
+    a: "Nein. Ein CNCF-Eintrag beschreibt ein benanntes Produkt in einer benannten Version, eingereicht von einer bestimmten Einrichtung. Wenn Sie dieselbe quelloffene Plattform selbst betreiben, deckt die Zertifizierung eines anderen das nicht ab. Genau deshalb werden die selbst betriebenen Konformitätsläufe separat und mit eigenen Artefakten veröffentlicht."
 ---
 
-**Prüfer zertifizieren keine Plattform. Sie zertifizieren die Umgebung, die Sie darauf betreiben — Ihre Systeme, Ihre Prozesse, Ihre Nachweise. Die brauchbare Frage lautet deshalb nie „ist die Plattform compliant", sondern: welche Kontrollen bekomme ich, welche muss ich einschalten, und welche bleiben meine.**
+**Prüfer zertifizieren keine Plattform. Sie zertifizieren die Umgebung, die Sie darauf betreiben — Ihre Systeme, Ihre Prozesse, Ihre Nachweise. Die brauchbare Frage lautet deshalb nie „ist die Plattform compliant“, sondern: welche Kontrollen bekomme ich, welche muss ich einschalten, und welche bleiben meine.**
 
 Diese Seiten beantworten das Rahmenwerk für Rahmenwerk — für die drei Ænix-Plattformen und für Cozystack darunter. Jede trennt sauber, was bei einer frischen Installation greift, was mitgeliefert, aber deaktiviert ist, und was kein Infrastrukturprodukt für Sie erledigen kann.
 
@@ -92,12 +92,12 @@ Präzision ist hier mehr wert als Beruhigung, weil ein Prüfer jeden Satz nachfa
 
 | Aussage, die wir **nicht** treffen | Was stattdessen zutrifft |
 |---|---|
-| „Ænix ist ISO-27001-zertifiziert" | Aenix hält kein ISO-27001-Zertifikat. Die Plattformen sind so gebaut, dass sie ein ISMS tragen — Audit-Logging, Zugriffskontrolle, Änderungskontrolle über deklarative Konfiguration — und Ænix unterstützt die Zertifizierungsarbeit von Kunden. Das ist eine andere Aussage. |
-| „Ænix ist SOC-2-testiert" | Es gibt keinen SOC-2-Bericht. Wo ein Kunde einen für seinen eigenen, auf der Plattform betriebenen Dienst braucht, liefert die Plattform Kontroll-Nachweise; der Bericht bleibt seiner. |
-| „Die Plattform ist PCI-DSS-zertifiziert" | Keine Plattform ist das. Ein Qualified Security Assessor zertifiziert eine abgegrenzte Karteninhaberdaten-Umgebung. Die Plattform liefert die technischen Kontrollen, auf die die Prüfung aufsetzt. |
-| „Die Plattform ist DSGVO-konform" | Compliance liegt beim Verantwortlichen. Die Plattform liefert Maßnahmen nach Art. 32 und macht sie nachweisbar. |
-| „Die Plattform ist CIS-zertifiziert" | Der CIS-Benchmark vergibt kein Urteil. Er ist eine Liste von Kontrollen; Compliance ist eine Beurteilung eines konkreten Clusters. |
-| „Die Plattform ist DORA-konform" | DORA bindet Finanzunternehmen, nicht Plattformen. Die Plattform ist Teil des IKT-Bestands, den diese Unternehmen verwalten. |
+| „Ænix ist ISO-27001-zertifiziert“ | Aenix hält kein ISO-27001-Zertifikat. Die Plattformen sind so gebaut, dass sie ein ISMS tragen — Audit-Logging, Zugriffskontrolle, Änderungskontrolle über deklarative Konfiguration — und Ænix unterstützt die Zertifizierungsarbeit von Kunden. Das ist eine andere Aussage. |
+| „Ænix ist SOC-2-testiert“ | Es gibt keinen SOC-2-Bericht. Wo ein Kunde einen für seinen eigenen, auf der Plattform betriebenen Dienst braucht, liefert die Plattform Kontroll-Nachweise; der Bericht bleibt seiner. |
+| „Die Plattform ist PCI-DSS-zertifiziert“ | Keine Plattform ist das. Ein Qualified Security Assessor zertifiziert eine abgegrenzte Karteninhaberdaten-Umgebung. Die Plattform liefert die technischen Kontrollen, auf die die Prüfung aufsetzt. |
+| „Die Plattform ist DSGVO-konform“ | Compliance liegt beim Verantwortlichen. Die Plattform liefert Maßnahmen nach Art. 32 und macht sie nachweisbar. |
+| „Die Plattform ist CIS-zertifiziert“ | Der CIS-Benchmark vergibt kein Urteil. Er ist eine Liste von Kontrollen; Compliance ist eine Beurteilung eines konkreten Clusters. |
+| „Die Plattform ist DORA-konform“ | DORA bindet Finanzunternehmen, nicht Plattformen. Die Plattform ist Teil des IKT-Bestands, den diese Unternehmen verwalten. |
 
 ---
 
@@ -109,7 +109,7 @@ Die Seiten oben sind Nachweise. Wenn Sie das Programm darum herum brauchen — G
 - **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — das Gegenstück für wesentliche und wichtige Einrichtungen unter NIS2. Kostenlose [NIS2-Compliance-Checkliste](/de/ressourcen/nis2-compliance-checkliste/).
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — kundenkontrollierte Schlüssel, kundenkontrollierte Hardware, jurisdiktionsgebundene Datenhaltung.
 
-Die Trennung ist gewollt: Die Lösungsseiten beantworten „was verlangt die Regulierung von uns und wo stehen wir kurz", diese Seiten beantworten „was tut die Infrastruktur tatsächlich, und wie wurde das gemessen".
+Die Trennung ist gewollt: Die Lösungsseiten beantworten „was verlangt die Regulierung von uns und wo stehen wir kurz“, diese Seiten beantworten „was tut die Infrastruktur tatsächlich, und wie wurde das gemessen“.
 
 ---
 

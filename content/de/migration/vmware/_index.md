@@ -29,13 +29,13 @@ quick_facts:
     value: "Aenix Public Cloud Platform oder Aenix Private Cloud Platform plus Migrationsservices; Preisstufen ab Basic 1.250 $/Mon. (10 Nodes)"
 faq:
   - q: "Ist die VMware-Migration ein Notfall nach der Broadcom-Übernahme?"
-    a: "Nein. Eine VMware-Migration sollte als geplantes Projekt behandelt werden, nicht als Notfall. Schlecht umgesetzt produziert sie operative Schulden und eine stockende Migration. Aenix sequenziert die Migration in Kohorten mit Parallel-Run, sodass Anwendungen während des Übergangs verfügbar bleiben."
+    a: "Nein. Eine VMware-Migration sollte als geplantes Projekt behandelt werden, nicht als Notfall. Schlecht umgesetzt produziert sie operative Altlasten und eine stockende Migration. Aenix sequenziert die Migration in Kohorten mit Parallel-Run, sodass Anwendungen während des Übergangs verfügbar bleiben."
   - q: "Worauf migriert Aenix VMware-Workloads?"
     a: "Standard-Empfehlung ist Cozystack, eine offene CNCF-Plattform unter Apache 2.0. Sie betreibt virtuelle Maschinen und Container über eine gemeinsame Kubernetes-API mit KubeVirt, nutzt Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage. So laufen bestehende VMs weiter, während neue Workloads cloud-nativ entstehen."
   - q: "Wie viel kann eine VMware-Migration einsparen?"
     a: "Bei migrierten Workloads sind 30-60% Kostenreduktion realistisch. Ein wesentlicher Faktor ist die Apache-2.0-Lizenzierung ohne CPU- oder Core-basierte Gebühren. Das genaue Delta lässt sich vorab mit dem VMware-Kostenrechner modellieren — inklusive Jahresersparnis, 3-Jahres-Netto und Amortisation."
   - q: "Welche Aenix Plattform passt zu meiner Migration?"
-    a: "Die Public Cloud Platform passt zu allen, die Cloud an externe Kunden verkaufen — Hoster, die VMware Cloud Director verlassen, MSPs, Telkos, nationale Betreiber. Die Private Cloud Platform adressiert regulierte Unternehmen, die VCF für den Eigenbedarf ablösen; ihre Self-Service-Schicht ersetzt dabei die interne PaaS."
+    a: "Die Public Cloud Platform passt zu allen, die Cloud an externe Kunden verkaufen — Hoster, die VMware Cloud Director verlassen, MSPs, Telcos, nationale Betreiber. Die Private Cloud Platform adressiert regulierte Unternehmen, die VCF für den Eigenbedarf ablösen; ihre Self-Service-Schicht ersetzt dabei die interne PaaS."
   - q: "Welches Migrationswerkzeug ist in der Plattform enthalten?"
     a: "Konveyor Forklift, das Kubernetes-Migrationstoolkit für Virtualisierung. Konfiguriert wird über Kubernetes-Objekte: ein Provider für die vCenter- oder ESXi-Verbindung, eine NetworkMap von Quell-Portgruppen auf Zielnetze, eine StorageMap von Datastores auf StorageClasses und ein Plan, den eine Migration ausführt. Als Quellen kommen außerdem oVirt/RHV, OpenStack, OVA-Dateien und entfernte KubeVirt-Cluster in Frage."
   - q: "Was ist der Unterschied zwischen warmer und kalter Migration?"
@@ -52,11 +52,11 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Post-Broadcom-VMware-Migration ist ein geplantes Projekt, kein Notfall. Gut umgesetzt liefert sie eine Plattform, die Sie kontrollieren, und eine Kostenreduktion von 30-60% bei den migrierten Workloads. Schlecht umgesetzt produziert sie operative Schulden und eine stockende Migration, die zum Notfall des nächsten Jahres wird. Der Unterschied liegt in strukturiertem Assessment, ehrlicher TCO-Modellierung und Engineers, die das bereits produktiv geliefert haben.**
+**Post-Broadcom-VMware-Migration ist ein geplantes Projekt, kein Notfall. Gut umgesetzt liefert sie eine Plattform, die Sie kontrollieren, und eine Kostenreduktion von 30-60% bei den migrierten Workloads. Schlecht umgesetzt produziert sie operative Altlasten und eine stockende Migration, die zum Notfall des nächsten Jahres wird. Der Unterschied liegt in strukturiertem Assessment, ehrlicher TCO-Modellierung und Engineers, die das bereits produktiv geliefert haben.**
 
 Ænix führt End-to-End-VMware-Migrationen für Organisationen durch, die VCF verlassen. Dieselben Engineers, die [Cozystack](/de/produkte/cozystack/) gebaut haben und betreiben — die Zielplattform, die wir typischerweise empfehlen — arbeiten für Assessment, Sequenzierung und Implementierung mit Ihrem Team zusammen.
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für alle, die Cloud verkaufen — Hoster, die VMware Cloud Director verlassen (häufigstes Muster 2026), MSPs, Telkos, nationale Betreiber; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF für den Eigenbedarf ablösen. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für alle, die Cloud verkaufen — Hoster, die VMware Cloud Director verlassen (häufigstes Muster 2026), MSPs, Telcos, nationale Betreiber; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF für den Eigenbedarf ablösen. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -64,9 +64,6 @@ faq:
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -78,11 +75,11 @@ Organisationen mit folgenden Auslösern:
 
 - **Broadcom-Subscription-Verlängerung** — beobachtete Preiserhöhungen um das 2-5-Fache; Bruch von ELAs; verpflichtendes VCF-Bundling
 - **Souveränitätsdruck** — DORA, NIS2 und sektorale Regeln zwingen kritische Workloads auf kundenkontrollierte Infrastruktur
-- **KI-/GPU-Ökonomie** — nachhaltige Workloads, bei denen das VMware-GPU-Modell Lizenzkomplexität hinzufügt
+- **KI-/GPU-Ökonomie** — dauerhaft ausgelastete Workloads, bei denen das VMware-GPU-Modell Lizenzkomplexität hinzufügt
 - **Repatriierungs-Strategie** — VMware-on-Cloud-Workloads, die auf private Infrastruktur wandern
 - **Modernisierung** — alter VCF-Bestand, bei dem der Upgrade-Pfad zugleich der Ausstiegspfad ist
 
-Wenn zwei oder mehr davon zutreffen, verstärkt eine strukturierte Migration den Nutzen. Wenn die Verlängerung komfortabel ist und kein weiterer Auslöser besteht, ist "bleiben und optimieren" die ehrliche Empfehlung.
+Wenn zwei oder mehr davon zutreffen, verstärkt eine strukturierte Migration den Nutzen. Wenn die Verlängerung komfortabel ist und kein weiterer Auslöser besteht, ist „bleiben und optimieren“ die ehrliche Empfehlung.
 
 <!-- /BLOCK 2 -->
 
@@ -95,7 +92,7 @@ Wenn zwei oder mehr davon zutreffen, verstärkt eine strukturierte Migration den
 <div class="grid-2x2">
 
 **1. Inventarisierung und Assessment**
-vSphere-/VCF-/vCD-Inventar: Workload-Anzahl, OS-Mix, vSAN-Abhängigkeiten, NSX-Integrationen, Custom-Services, Multi-Site-Topologie. Workload-Klassifizierung: jetzt migrieren / später migrieren / bleiben / re-platformen.
+vSphere-/VCF-/vCD-Inventar: Workload-Anzahl, OS-Mix, vSAN-Abhängigkeiten, NSX-Integrationen, Custom-Services, Multi-Site-Topologie. Workload-Klassifizierung: jetzt migrieren / später migrieren / bleiben / die Plattform neu aufzusetzen.
 
 **2. Zielarchitektur**
 Zielplattform auf Kunden-Hardware. Cozystack als Standard (KubeVirt + Cilium + LINSTOR + Tenant CRD); andere Optionen, wo sinnvoll. Sizing, Kapazitätsmodell, Betriebsdesign.
@@ -140,7 +137,7 @@ VMware-Decommission, sobald Kohorten abgeschlossen sind. Hardware wird wo mögli
 **Kalt und warm.** Beides wird von vSphere aus unterstützt, und der Unterschied ist planungsrelevant:
 
 - **Kalt** — die Quell-VM wird ausgeschaltet, konvertiert und dann übertragen. Weil die Konvertierung vor dem Datentransfer läuft, scheitert eine nicht konvertierbare VM sofort statt nach Stunden des Kopierens. Das ist der Standard und die richtige Wahl für alles mit Wartungsfenster.
-- **Warm** — die VM läuft weiter, während ihre Disks inkrementell über VMware Changed Block Tracking (CBT) kopiert werden, standardmäßig mit stündlichen Snapshots. Beim Cutover wird die VM heruntergefahren und nur das verbleibende Delta übertragen. **Warme Migration ist keine Live-Migration**: Der RAM-Zustand wird nicht mitgenommen, es gibt also weiterhin einen Neustart. Sie verkürzt die Auszeit von „Dauer einer vollständigen Disk-Kopie" auf „Dauer des letzten Deltas" — worauf es bei einer großen Datenbank-VM ankommt.
+- **Warm** — die VM läuft weiter, während ihre Disks inkrementell über VMware Changed Block Tracking (CBT) kopiert werden, standardmäßig mit stündlichen Snapshots. Beim Cutover wird die VM heruntergefahren und nur das verbleibende Delta übertragen. **Warme Migration ist keine Live-Migration**: Der RAM-Zustand wird nicht mitgenommen, es gibt also weiterhin einen Neustart. Sie verkürzt die Auszeit von „Dauer einer vollständigen Disk-Kopie“ auf „Dauer des letzten Deltas“ — worauf es bei einer großen Datenbank-VM ankommt.
 - Warm setzt **CBT auf jeder Quell-VM und jeder ihrer Disks** vor Beginn voraus, und eine VM verträgt maximal 28 CBT-Snapshots. Windows-Gäste brauchen zusätzlich installierte VMware Tools mit Volume Shadow Copy Service und dem VMware Snapshot Provider auf Manuell oder Automatisch, sonst scheitert der Snapshot-Schritt.
 
 **Was virt-v2v am Gastsystem macht.** VirtIO-Treiber werden injiziert, VMware Tools und VMware-spezifische NIC-Konfiguration werden entfernt, die Boot-Konfiguration wird angepasst, und der QEMU Guest Agent wird installiert. Statische IP-Adressen aus vSphere bleiben erhalten, Windows-Laufwerksbuchstaben ebenfalls. Das ist die automatisierte Fassung jener manuellen Nacharbeit, die handgestrickte VMware-Migrationen mühsam macht.
@@ -183,10 +180,10 @@ Forklift deckt die Disk- und Gast-Ebene ab. Es entscheidet nicht über Ihr Manda
 Die Migrations-Ökonomie sieht in der Theorie attraktiv aus; in der Praxis werden Hardware-Refresh, Kapazität des Plattform-Teams und die operative Lernkurve nicht eingerechnet. Das Projekt stockt, wenn sich die Ökonomie anders als angenommen entwickelt.
 
 **Versuchter Big-Bang-Cutover**
-Ein einzelnes Wochenende nach dem Motto "wir verschieben alles" funktioniert im Enterprise-Maßstab selten. Kohorten-basierte Migration mit validiertem Parallelbetrieb ist das funktionierende Muster.
+Ein einzelnes Wochenende nach dem Motto „wir verschieben alles“ funktioniert im Enterprise-Maßstab selten. Kohorten-basierte Migration mit validiertem Parallelbetrieb ist das funktionierende Muster.
 
 **Unzureichende Zielarchitektur**
-Workloads landen auf einer Private Cloud, die nicht für die Produktion konstruiert wurde. Operative Schulden häufen sich; das Team gibt der Migration die Schuld, obwohl das Problem die Reife der Zielplattform ist.
+Workloads landen auf einer Private Cloud, die nicht für die Produktion konstruiert wurde. Operative Altlasten häufen sich; das Team gibt der Migration die Schuld, obwohl das Problem die Reife der Zielplattform ist.
 
 **Übersprungenes Network- und Storage-Redesign**
 Networking und Storage auf Cozystack (oder einer Alternative) unterscheiden sich von NSX/vSAN. Das Redesign zu überspringen produziert operative Fragilität.
@@ -233,7 +230,7 @@ Für VMware-spezifische Zielführung siehe **[VMware Alternative](/de/alternativ
 ## Warum Ænix speziell für die VMware-Migration
 
 - **Cozystack-native Erfahrung.** Wir haben die Zielplattform gebaut, auf der viele Migrationen landen. Aufwandsschätzungen für die Implementierung sind an ausgelieferter Arbeit kalibriert.
-- **Keine Hyperscaler-Voreingenommenheit.** Empfehlungen spiegeln technische Eignung wider, nicht Partner-Ökonomie. Wir sagen "in der Cloud bleiben", wenn es richtig ist.
+- **Keine Hyperscaler-Voreingenommenheit.** Empfehlungen spiegeln technische Eignung wider, nicht Partner-Ökonomie. Wir sagen „in der Cloud bleiben“, wenn es richtig ist.
 - **Teams in der EU + Zentralasien.** Zeitzonenfreundlich; ausgerichtet an DACH-/EU-Regulierungsrahmen.
 - **Open-Source-Ziel.** Cozystack ist Apache 2.0; die Plattform, auf die Sie migrieren, gehört Ihnen.
 

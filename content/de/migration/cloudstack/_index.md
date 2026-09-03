@@ -67,7 +67,7 @@ service:
 
 Wenn Ihr Produkt virtuelle Maschinen sind, Ihre Umgebung stabil auf KVM läuft, Ihre Kunden weder Container noch Managed Data Services nachfragen und Ihr Team die Codebasis kennt, gibt es keinen Migrationsgrund. CloudStack wird gepflegt, das Modell aus Zonen, Pods und Clustern skaliert, und ein funktionierendes IaaS durch ein gleichwertiges IaaS zu ersetzen bringt nichts.
 
-Der Grund entsteht, wenn das Produkt breiter werden muss. Wer 2026 ausschließlich VMs verkauft, konkurriert über den Preis mit allen anderen, die ausschließlich VMs verkaufen. Sobald Managed Kubernetes, Managed PostgreSQL, S3-kompatibler Storage oder GPU-Kapazität auf der Roadmap stehen, lautet die Frage nicht mehr „welches IaaS", sondern „wie viele Steuerebenen will ich betreiben".
+Der Grund entsteht, wenn das Produkt breiter werden muss. Wer 2026 ausschließlich VMs verkauft, konkurriert über den Preis mit allen anderen, die ausschließlich VMs verkaufen. Sobald Managed Kubernetes, Managed PostgreSQL, S3-kompatibler Storage oder GPU-Kapazität auf der Roadmap stehen, lautet die Frage nicht mehr „welches IaaS“, sondern „wie viele Steuerebenen will ich betreiben“.
 
 ---
 
@@ -82,7 +82,7 @@ Der Grund entsteht, wenn das Produkt breiter werden muss. Wer 2026 ausschließli
 | Virtual Router (DHCP, Source NAT, Port Forwarding, Static NAT, Site-to-Site-VPN, LB) | Cilium plus Plattformdienste; kein einzelnes Ersatzobjekt | **Neuentwurf.** Der größte Einzelposten. |
 | Isolated Networks, VPCs, Network Offerings | Cilium-Networking mit Policy pro Mandant; LB-IPAM mit BGP oder L2-Announcements | Neuentwurf, gekoppelt an den Adressplan. |
 | Security Groups (Basic Zones) | Kubernetes Network Policy | Neumodellierung. Gleiche Absicht, andere Ausdrucksform. |
-| Primary Storage (NFS / Ceph RBD) | LINSTOR/DRBD oder Ceph über Rook behalten | Ceph behalten oder Daten umziehen. Eine Entwurfsentscheidung, kein erzwungener Wechsel. |
+| Primary Storage (NFS / Ceph RBD) | LINSTOR/DRBD, oder das bestehende Ceph-Cluster über den Ceph-CSI-Treiber weiter nutzen | Ceph behalten oder Daten umziehen. Eine Entwurfsentscheidung, kein erzwungener Wechsel. |
 | Secondary Storage | Object Storage auf der Plattform | Meist ein direkter Umzug. |
 | SystemVMs (SSVM, Console Proxy) | Plattformkomponenten; Konsole über das Mandanten-Dashboard | Ersetzt, nicht migriert. |
 | CloudStack-API | Kubernetes-API und Mandanten-Dashboard | Neubau für alle, die dagegen automatisieren. |

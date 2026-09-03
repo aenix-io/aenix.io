@@ -1,6 +1,6 @@
 ---
 title: "White-Label Cloud — gebrandetes Cloud-Produkt für MSPs und Reseller"
-description: "Managed Service Provider (MSPs) und Reseller in 2026 stehen vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren — aber..."
+description: "Managed Service Provider (MSPs) und Reseller im Jahr 2026 stehen vor Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren — aber..."
 related_pages:
   - /de/dienstleistungen/public-cloud-builder
   - /de/produkte/public-cloud-platform/
@@ -35,7 +35,7 @@ faq:
   - q: "Für wen ist White-Label Cloud gedacht?"
     a: "Für Managed Service Provider, Reseller mit etabliertem Kundenstamm, regionale System-Integratoren mit Cloud-Produkt-Angebot und Channel-Partner mit Branchen-Spezialisierung. Gemeinsam haben sie Kundennachfrage nach Cloud-Fähigkeiten, die mit Hyperscalern preislich konkurrieren."
   - q: "Was ist im White-Label-Cloud-Angebot enthalten?"
-    a: "Ein vollständig white-label-fähiges Cozystack Dashboard (Farben, Logo, Domain), ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden), WHMCS-integriertes Billing mit MSP-Branding, ein Service-Katalog jenseits von VMs (managed Datenbanken, S3, GPU), Tenant Lock / Suspension Tools sowie Support-Tier-Stufung pro Reseller-Level."
+    a: "Ein vollständig white-label-fähiges Cozystack Dashboard (Farben, Logo, Domain), ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden), WHMCS-integriertes Billing mit MSP-Branding, ein Service-Katalog jenseits von VMs (managed Datenbanken, S3, GPU), Sperren und Stilllegen von Mandanten Tools sowie Support-Tier-Stufung pro Reseller-Level."
   - q: "Auf welcher Technologie basiert die White-Label Cloud?"
     a: "Auf Cozystack, dem Open-Source-Cloud-Stack unter Apache 2.0. Cozystack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) fürs Networking, LINSTOR/DRBD für Storage und das Tenant-CRD für Mandantenfähigkeit. Es ist ein CNCF-Sandbox-Projekt."
   - q: "Gibt es Lizenzkosten pro CPU oder Core?"

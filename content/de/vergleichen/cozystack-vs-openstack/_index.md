@@ -44,7 +44,7 @@ faq:
 
 **Beide sind Open-Source-Private-Cloud-Plattformen. Beide Apache 2.0. Beide produktionserprobt. Der Unterschied ist Generation und operativer Footprint.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die von OpenStack modernisieren; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die von OpenStack modernisieren — und, mit zugeschalteter Multi-Region-Fähigkeit, für große Betreiber, die OpenStack im großen Maßstab konsolidieren.
 
 <div class="compare-elevated compare-elevated--col3">
 
@@ -52,10 +52,10 @@ faq:
 |---|---|---|
 | **Lizenz** | Apache 2.0 | Apache 2.0 |
 | **Foundation** | Multi-Project (Nova, Neutron, Cinder, etc.) | Kubernetes + KubeVirt + Cilium |
-| **Operativer Footprint** | Schwer (50-100+ Services) | Leicht (5-15 Operatoren) |
+| **Operativer Footprint** | Schwer (50-100+ Services) | Leicht (5-15 Kubernetes-Operators) |
 | **Engineer-Verfügbarkeit** | Schrumpfender Pool | Kubernetes-groß |
 | **Multi-Tenancy** | Keystone Projects | Tenant CRD |
-| **Container** | Add-on | Native |
+| **Container** | Add-on | Nativ |
 | **Upgrade-Pfad** | Komplex | GitOps-managed |
 
 </div>

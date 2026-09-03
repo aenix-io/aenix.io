@@ -35,8 +35,8 @@ faq:
     a: "Weil das Engpass-Problem meist unter dem Portal liegt: eine fragmentierte Cloud-Foundation, fehlende Multi-Tenant-Garantien und ein nicht produktisierter Kubernetes-Cluster-Lifecycle. Backstage zeigt Golden Paths an, kann sie aber nicht selbst bereitstellen, wenn die Plattform darunter fehlt."
   - q: "Muss ich Backstage durch Cozystack ersetzen?"
     a: "Nein. Cozystack und Backstage konkurrieren nicht. Cozystack ist die Plattform-Foundation, Backstage die Portal-Schicht darüber. Die Developer-Self-Service-Schicht der Ænix Private Cloud Platform kann Backstage als Front-End integrieren, wenn der Kunde es bevorzugt."
-  - q: "Welche Ænix platform passt für eine Internal Developer Platform?"
-    a: "Die Developer Self-Service. Sie kombiniert die Cozystack-Foundation mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates zu einer vollständigen Internal Developer Platform. Eine Backstage-UI lässt sich optional als Front-End anbinden."
+  - q: "Welche Ænix-Plattform passt für eine Internal Developer Platform?"
+    a: "Die Developer-Self-Service-Schicht der Ænix Private Cloud Platform. Sie kombiniert die Cozystack-Foundation mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates zu einer vollständigen Internal Developer Platform. Eine Backstage-UI lässt sich optional als Front-End anbinden."
   - q: "Ist Cozystack Open Source und wie ist die Lizenzierung?"
     a: "Cozystack steht unter Apache 2.0 und ist ein CNCF-Projekt (Sandbox seit dem 28.02.2025, Incubating erwartet für Spätsommer 2026). Es gibt keine CPU- oder Core-basierte Lizenzierung. Aenix verkauft die produktisierte Ænix Platform plus Services darum herum."
   - q: "Wie steige ich am besten ein, wenn Backstage bereits läuft?"
@@ -82,7 +82,7 @@ Wenn keiner dieser Punkte zutrifft und Backstage für Sie funktioniert — bleib
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wie eine "Alternative" für verschiedene Fälle aussieht
+## Wie eine „Alternative“ für verschiedene Fälle aussieht
 
 | Fall | Empfehlung |
 |---|---|

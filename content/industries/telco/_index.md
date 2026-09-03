@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for telecom operators — sovereign, edge-ready, AI-aware"
-description: "Telecom operators in 2026 face an architectural inflection point: legacy NFV environments aging out, edge-compute demands growing, sovereign-cloud branded..."
+description: "Sovereign edge-to-core cloud for telecom operators: SR-IOV and DPDK where the dataplane demands it, KubeVirt for VNFs, Cilium for everything else."
 related_pages:
   - /solutions/sovereign-ai/
   - /solutions/data-sovereignty/

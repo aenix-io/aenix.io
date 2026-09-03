@@ -17,7 +17,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Infrastruktur-Teams, die VMware nach der Broadcom-Übernahme ersetzen — von ISP/Hosting über regulierte Unternehmen bis zu Public-Cloud-Betreibern"
+    value: "Infrastruktur-Teams, die VMware nach der Broadcom-Übernahme ersetzen — von Hosting-Anbietern über regulierte Unternehmen bis zu Public-Cloud-Betreibern"
   - label: "Empfehlung"
     value: "Cozystack + Ænix Platform für Multi-Tenant-, souveräne und KI-bereite Cloud; andere Optionen je nach Use Case (Proxmox für SMB, OpenStack für etablierte Betreiber)"
   - label: "Technologie"
@@ -174,7 +174,7 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 | **Foundation** | KubeVirt | AHV (KVM) | KubeVirt | KVM/LXC | KVM | KVM | Hyper-V |
 | **Multi-Tenancy** | Tenant CRD | Limitiert | Namespaces | Limitiert | Keystone | Limitiert | Limitiert |
 | **Managed DBs** | First-Class | Era-Addon | Verfügbar | Manuell | Optional | Nein | Azure-gebunden |
-| **GPU** | vGPU + MIG | vGPU | vGPU + MIG | Passthrough | vGPU | Limitiert | vGPU |
+| **GPU** | vGPU + HAMi-Sharing | vGPU | vGPU + MIG | Passthrough | vGPU | Limitiert | vGPU |
 | **Air-Gap** | Ja | Ja | Ja | Ja | Ja | Limitiert | Ja |
 | **Beste Skala** | Multi-Tenant | Mid-Large | Mid-Large | <50 Hosts | Telco-Large | ROBO/Edge | Medium-Large |
 

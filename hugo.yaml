@@ -256,10 +256,14 @@ menus:
       url: /alternatives/
       parent: solutions-migrate
       weight: 5
+    - name: All comparisons
+      url: /compare/
+      parent: solutions-migrate
+      weight: 6
     - name: Migration overview
       url: /migration/
       parent: solutions-migrate
-      weight: 6
+      weight: 7
 
     # ── Services ──
     - name: Services
@@ -414,7 +418,7 @@ menus:
       parent: company
       weight: 4
     - name: Enterprise Support
-      url: /enterprise-support/
+      url: /products/cozystack-enterprise-support/
       parent: company
       weight: 5
     - name: VMware Exit for Partners
@@ -435,6 +439,14 @@ menus:
       identifier: live-demo
       params:
         cta: true
+    - name: Cloud console demo
+      url: /demo/
+      parent: live-demo
+      weight: 1
+    - name: Developer platform demo
+      url: /idp/
+      parent: live-demo
+      weight: 2
   # ── German (DE) main menu — rendered on /de/ pages (language: de) ──
   main_de:
     - name: Produkte
@@ -613,10 +625,14 @@ menus:
       url: /de/alternativen/
       parent: solutions-de-migration
       weight: 5
+    - name: Alle Vergleiche
+      url: /de/vergleichen/
+      parent: solutions-de-migration
+      weight: 6
     - name: Migrationsübersicht
       url: /de/migration/
       parent: solutions-de-migration
-      weight: 6
+      weight: 7
     - name: Dienstleistungen
       url: /de/dienstleistungen/
       identifier: services-de
@@ -749,7 +765,7 @@ menus:
       parent: company-de
       weight: 4
     - name: Enterprise Support
-      url: /de/enterprise-support/
+      url: /de/produkte/cozystack-enterprise-support/
       parent: company-de
       weight: 5
     - name: VMware-Ausstieg für Partner
@@ -768,9 +784,19 @@ menus:
       identifier: live-demo-de
       params:
         cta: true
+    - name: Cloud-Konsole-Demo
+      url: /demo/
+      parent: live-demo-de
+      weight: 1
+    - name: Developer-Platform-Demo
+      url: /idp/
+      parent: live-demo-de
+      weight: 2
+  # NOTE: this `footer` menu is not rendered — layouts/partials/footer.html
+  # builds its own locale-aware link map. Kept in sync so it does not rot.
   footer:
-    - name: Ænix Platform
-      url: /products/aenix-platform/
+    - name: Products
+      url: /products/
       weight: 1
     - name: Solutions
       url: /solutions/

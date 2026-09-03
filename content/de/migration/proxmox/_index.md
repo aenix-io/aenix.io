@@ -11,7 +11,7 @@ hreflang_en: /migration/proxmox/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Eine Proxmox-zu-Cozystack-Migration verlagert Workloads von Proxmox VE auf Cozystack, eine offene Cloud-Plattform auf Kubernetes-Basis. Sie richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds, die das operative Modell von Proxmox bei 50+ Hosts, Multi-Tenancy für externe Kunden oder einem Service-Katalog jenseits reiner VMs überwachsen haben. VM-Images werden von KVM auf KubeVirt übertragen, Storage von ZFS oder Ceph auf LINSTOR, und Proxmox-Berechtigungen auf das Tenant-CRD-Modell. Aenix, das Open-Core-Unternehmen hinter Cozystack, führt diese Migrationen end-to-end durch: produktisierter Installer für die Public Cloud Platform in Wochen, Workload-Migration in Kohorten über 3 bis 6 Monate.**
+  **Eine Proxmox-zu-Cozystack-Migration verlagert Workloads von Proxmox VE auf Cozystack, eine offene Cloud-Plattform auf Kubernetes-Basis. Sie richtet sich an Hosting-Anbieter, Service-Provider und regionale Clouds, die das operative Modell von Proxmox bei 50+ Hosts, Multi-Tenancy für externe Kunden oder einem Service-Katalog jenseits reiner VMs entwachsen haben. VM-Images werden von KVM auf KubeVirt übertragen, Storage von ZFS oder Ceph auf LINSTOR, und Proxmox-Berechtigungen auf das Tenant-CRD-Modell. Aenix, das Open-Core-Unternehmen hinter Cozystack, führt diese Migrationen end-to-end durch: produktisierter Installer für die Public Cloud Platform in Wochen, Workload-Migration in Kohorten über 3 bis 6 Monate.**
 
 quick_facts:
   - label: "Was es ist"
@@ -21,7 +21,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Hosting-Anbieter, Service-Provider und regionale Clouds, die Proxmox bei 50+ Hosts oder Multi-Tenant-Anforderungen überwachsen"
+    value: "Hosting-Anbieter, Service-Provider und regionale Clouds, die Proxmox bei 50+ Hosts oder Multi-Tenant-Anforderungen entwachsen"
   - label: "Technologie-Stack"
     value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Migrations-Zeitrahmen"
@@ -46,7 +46,7 @@ faq:
 
 **Proxmox VE ist exzellent at SMB-Skala. Wenn Deployments zu Multi-Tenant-Cloud-Buildern oder Service-Provider-Modellen wachsen, strapaziert das operative Modell. Ænix führt Proxmox-zu-Cozystack-Migrationen end-to-end durch.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen. WHMCS-integriertes Billing, Multi-Tenant by design, produktisierter Installer. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

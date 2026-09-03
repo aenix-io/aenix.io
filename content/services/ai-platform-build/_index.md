@@ -1,6 +1,6 @@
 ---
 title: "AI platform build — custom AI infrastructure for startups and enterprises"
-description: "AI startups and AI-heavy enterprises in 2026 face the same architectural choice: rent inference at hyperscaler economics, or build dedicated infrastructure..."
+description: "Dedicated GPU infrastructure for sustained inference, fine-tuning and training, on validated A100, H100, H200, L40S and Blackwell with vLLM or Triton serving."
 related_pages: ["/solutions/sovereign-ai", "/products/ai-platform/", "/products/cozystack", "/industries/financial-services"]
 language: "en"
 quick_facts_style: "rows"

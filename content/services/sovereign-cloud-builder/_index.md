@@ -1,6 +1,6 @@
 ---
 title: "Sovereign cloud builder — design and ship a sovereign cloud product for regulated markets"
-description: "Sovereign cloud is a procurement-mandated reality in 2026 across EU member states, Kazakhstan, and several APAC jurisdictions...."
+description: "Build a substantively sovereign cloud product: customer-held HSM keys, supplier-chain transparency, air-gap and audit trails regulators can consume."
 related_pages:
   - /solutions/data-sovereignty
   - /industries/public-sector

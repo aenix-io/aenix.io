@@ -207,6 +207,7 @@ Buying a "complete IDP solution" rebuilds the lock-in problem with a different v
 
 ### Mistake 5: building for engineering elegance, not adoption
 Platform team's customers are product teams. Architecture optimized for engineering elegance often produces a platform nobody adopts.
+
 ## Want to dig deeper?
 
 - **[Internal developer platform services](/services/internal-developer-platform/)** — engagement details

@@ -53,7 +53,7 @@ faq:
 
 Der Kunde ist ein schnell wachsender Anbieter einer Massenmarkt-Mobile-App für die kreative Foto- und Video-Bearbeitung. Mehrere seiner zentralen Funktionen — Hintergrund entfernen und ersetzen, Beautification, visuelle Effekte — laufen über die eigenen KI-Modelle des Unternehmens statt über Drittanbieter-APIs.
 
-Diese Modelle liefen in einer gemieteten öffentlichen GPU-Cloud, stundenweise abgerechnet. Mit wachsender Nutzung wurde die Miete teuer und kapazitätsbegrenzt: Die Kosten skalierten linear mit der Last, und der Spitzendurchsatz war durch das begrenzt, was der Anbieter bereitstellte. Der Kunde entschied sich, die Inferenz auf einen eigenen Bare-Metal-GPU-Server zu verlagern — bei gleichzeitigem Erhalt der gewohnten „Cloud"-Developer-Experience seines Teams: einer API, Task-Queues, Autoscaling, Modell-Storage und Monitoring.
+Diese Modelle liefen in einer gemieteten öffentlichen GPU-Cloud, stundenweise abgerechnet. Mit wachsender Nutzung wurde die Miete teuer und kapazitätsbegrenzt: Die Kosten skalierten linear mit der Last, und der Spitzendurchsatz war durch das begrenzt, was der Anbieter bereitstellte. Der Kunde entschied sich, die Inferenz auf einen eigenen Bare-Metal-GPU-Server zu verlagern — bei gleichzeitigem Erhalt der gewohnten „Cloud“-Developer-Experience seines Teams: einer API, Task-Queues, Autoscaling, Modell-Storage und Monitoring.
 
 ## Ziele und Anforderungen
 
@@ -68,7 +68,7 @@ Diese Modelle liefen in einer gemieteten öffentlichen GPU-Cloud, stundenweise a
 Ein einzelner Server mit 8xH100, von oben nach unten geschichtet, verwandelt eigenes Bare Metal in eine private GPU-Cloud mit einer isolierten Mandantengrenze:
 
 - **ML-Worker des Kunden** — die Inferenzmodelle des Kunden, Queue-Consumer sowie synchrone/asynchrone Handler, betrieben als Pods innerhalb des Mandanten.
-- **Verschachteltes Kubernetes („main")** — die GPUs werden an die Mandanten-VM durchgereicht; der NVIDIA GPU Operator läuft innerhalb der VM für Treiber- und Geräteverwaltung, mit Ingress davor.
+- **Verschachteltes Kubernetes („main“)** — die GPUs werden an die Mandanten-VM durchgereicht; der NVIDIA GPU Operator läuft innerhalb der VM für Treiber- und Geräteverwaltung, mit Ingress davor.
 - **Isolierter Mandant** — ein eigenes etcd, eigene Secrets, eine eigene Container-Registry und eigenes Monitoring, sodass sich der Workload niemals eine Control Plane mit fremden Workloads teilt.
 - **Cozystack auf k3s / generischem Linux** — LINSTOR für Storage, Cilium + Kube-OVN für Networking, KubeVirt für Virtualisierung, GPU-Passthrough über vfio-pci, MetalLB für die Service-Veröffentlichung.
 - **Bare Metal** — 8x NVIDIA H100 80GB mit NVLink und 2 TB RAM.
@@ -80,7 +80,7 @@ Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway 
 ## Umsetzung: neue Anforderungen und wie wir sie gelöst haben
 
 - **Von Talos zu k3s, ohne Verwaltbarkeit einzubüßen.** Der Anbieter stellte nur SSH-Zugang bereit — keine Konsole, kein IPMI — womit eine Installation des immutable Talos Linux unmöglich ist. Stattdessen bauten wir ein generisches Cozystack auf k3s über Ubuntu. Die vollständige Plattform (LINSTOR, Cilium/Kube-OVN, KubeVirt, GPU-Passthrough, Monitoring) funktioniert identisch; nichts wurde aufgegeben.
-- **GPU-Passthrough aller acht H100.** Jede H100 wird über vfio-pci an die KubeVirt-Mandanten-VM durchgereicht. Das klassische Wettrennen „nvidia-Treiber vs. vfio-pci" beim Booten — bei dem der Host-Treiber eine Karte belegt, bevor vfio zugreifen kann — lösten wir mit einem initramfs-`driver_override`, sodass die Geräte deterministisch in der VM landen.
+- **GPU-Passthrough aller acht H100.** Jede H100 wird über vfio-pci an die KubeVirt-Mandanten-VM durchgereicht. Das klassische Wettrennen „nvidia-Treiber vs. vfio-pci“ beim Booten — bei dem der Host-Treiber eine Karte belegt, bevor vfio zugreifen kann — lösten wir mit einem initramfs-`driver_override`, sodass die Geräte deterministisch in der VM landen.
 - **RWX-Storage für gemeinsame Modellgewichte.** Viele Worker-Pods benötigen dieselben Modellgewichte gleichzeitig. Wir stellten geteilten Read-Write-Many-Storage über einen CSI-Wrapper plus NFS-Ganesha bereit; der Fix wurde upstream zu Cozystack beigesteuert.
 - **Traffic-basiertes Autoscaling.** Synchrone Inferenz-Worker skalieren mit der Live-Nachfrage über KEDA, gesteuert durch nginx-ingress-RPS-Metriken aus VictoriaMetrics. Der Metrics-Path-Fix, der dies zuverlässig machte, ging ebenfalls upstream.
 - **GPU-Dichte.** Um mehr Inferenz auf jede Karte zu packen, aktivierten wir GPU-Sharing über HAMi / MIG / Time-Slicing, sodass sich mehrere Jobs eine physische H100 teilen können.
@@ -112,4 +112,4 @@ Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway 
 
 *Diese Fallstudie ist anonymisiert veröffentlicht (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht namentlich. Eine Kundenreferenz unter NDA ist auf Anfrage verfügbar — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform, als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*

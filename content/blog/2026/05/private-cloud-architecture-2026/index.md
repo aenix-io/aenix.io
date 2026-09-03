@@ -195,6 +195,7 @@ Single-tenant cluster scaled to multi-tenant later. Bolted-on multi-tenancy fail
 
 ### Mistake 5: hardware refresh skipped in budget
 Year 4 hardware refresh ignored in initial economics. The refresh cliff arrives unexpectedly.
+
 ## Want to dig deeper?
 
 - **[Private cloud consulting services](/services/private-cloud-consulting/)** — engagement details

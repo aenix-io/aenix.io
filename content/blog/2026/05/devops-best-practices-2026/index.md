@@ -217,6 +217,7 @@ Annual external assessment is worth doing if your organization has more than ~50
 - Platform investment decisions need a defensible data point
 
 Ænix runs this as a **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** with DevOps maturity workstream emphasized. The output is a written report that names, per practice, where you stand and where the leverage is.
+
 ## Want to dig deeper?
 
 - **[DevOps consulting services](/services/devops-consulting/)** — engagement details

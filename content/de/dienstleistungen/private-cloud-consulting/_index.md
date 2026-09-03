@@ -67,9 +67,6 @@ Produktions-Private-Cloud-Erfahrung · Open-Source-Foundation · Kein Hyperscale
 
 ---
 
-
----
-
 <!-- BLOCK 2: WHO -->
 
 ## Wer Private-Cloud-Consulting braucht
@@ -79,7 +76,7 @@ Das Engagement passt, wenn:
 - **VMware-Ausstieg durch Broadcom ausgelöst** — Re-Architektur auf einer neuen Foundation statt VCF-Subscription
 - **Souveränitäts-/Regulator-Druck** — Daten müssen in kundenkontrollierter Infrastruktur liegen
 - **Kosten-Trajektorie** — Public-Cloud-Rechnung übersteigt die Vorhersehbarkeit
-- **KI-Workload-Ökonomie** — nachhaltige Inferenz / Training, wo Hyperscaler-Ökonomie nicht passt
+- **KI-Workload-Ökonomie** — dauerhaft ausgelastete Inferenz und Training, wo Hyperscaler-Ökonomie nicht passt
 - **Service-Provider-Modell** — Aufbau eines kundenorientierten Private-Cloud-Produkts
 - **Greenfield** — neue Infrastruktur mit Private Cloud als Architektur
 
@@ -96,7 +93,7 @@ Wenn zwei oder mehr zutreffen, verzinst sich strukturiertes Private-Cloud-Consul
 <div class="grid-2x2">
 
 **1. Architektur-Design**
-Compute-Layer (KubeVirt-basierte Virtualisierung, Container-Orchestrierung), Storage (LINSTOR / Ceph), Networking (Cilium / NSX-Äquivalent), Identity, Observability, Backup/DR. Entscheidungen dokumentiert mit benannten Trade-offs.
+Compute-Layer (KubeVirt-basierte Virtualisierung, Container-Orchestrierung), Storage (LINSTOR/DRBD über Piraeus, SeaweedFS für Objektspeicher, oder ein bestehendes Ceph-Cluster über Ceph CSI), Networking (Cilium / NSX-Äquivalent), Identity, Observability, Backup/DR. Entscheidungen dokumentiert mit benannten Trade-offs.
 
 **2. Multi-Tenancy- und Operations-Modell**
 Tenant-CRD, per-Tenant-Quotas, RBAC, Audit. Für das Service-Provider-Modell: kundenorientiertes Portal und Billing-Integration.
@@ -132,17 +129,17 @@ Runbooks, On-Call-Patterns, Capacity-Planning, Sicherheits- und Compliance-Postu
 
 <div class="gap-cards-2">
 
-**Vendor-geführte "Private Cloud in a Box"**
+**Vendor-geführte „Private Cloud in a Box“**
 Der Vendor verkauft eine Turnkey-Private-Cloud-Appliance. Der Lock-in ist strukturell; die Roadmap des Vendors wird zu Ihrer Roadmap. Das Schlechteste aus beiden Welten: Hardware-Refresh-Kosten + Vendor-Lizenzierung.
 
 **Cloud-Rebuild auf Commodity-Hardware**
-Das Team baut Private Cloud aus Open-Source-Komponenten ohne die operative Disziplin, die Hyperscaler ein Jahrzehnt lang engineert haben. Self-Service bricht; operative Schulden akkumulieren.
+Das Team baut Private Cloud aus Open-Source-Komponenten ohne die operative Disziplin, die Hyperscaler ein Jahrzehnt lang engineert haben. Self-Service bricht; operative Altlasten akkumulieren.
 
 **Architektur für einen Auslöser optimiert**
 Für den VMware-Ausstieg gebaut, aber die KI-Workloads des nächsten Jahres nicht berücksichtigt. Für Souveränität gebaut, aber Kosten nicht bedacht. Für Kosten gebaut, aber Souveränität nicht adressiert. Spätere Re-Architektur ist teuer.
 
 **Unterinvestierte Platform-Team-Kapazität**
-Die Private Cloud ist gebaut; das Plattform-Team ist so groß wie das Team, das VMware betrieben hat. Operative Schulden bauen sich auf; das Team brennt aus; die Private Cloud wird zum nächsten Notfall.
+Die Private Cloud ist gebaut; das Plattform-Team ist so groß wie das Team, das VMware betrieben hat. Operative Altlasten bauen sich auf; das Team brennt aus; die Private Cloud wird zum nächsten Notfall.
 
 </div>
 
@@ -198,7 +195,7 @@ Für breitere Bewertung siehe **[Platform Readiness Assessment](/de/dienstleistu
 {{< clients >}}
 
 {{< quote-carousel >}}
-Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 <!-- /BLOCK 8 -->
 
 ---

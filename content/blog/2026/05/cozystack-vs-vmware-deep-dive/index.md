@@ -48,7 +48,7 @@ This article assumes familiarity with both platforms. For broader VMware exit gu
 
 **VMware vSphere/ESXi:** mature type-1 hypervisor. Strong VM lifecycle, live migration with shared storage, vMotion. Tight VMware Tools integration with guests.
 
-**Cozystack KubeVirt:** type-2 conceptually (KVM running as Pods), but operationally type-1-like. Live migration (CPU; GPU live migration is industry-wide limitation). Standard QEMU/KVM under the hood; broad guest OS support.
+**Cozystack KubeVirt:** qemu/KVM wrapped in Pods. KVM itself is a kernel-mode hypervisor, so the guest still runs on hardware virtualization extensions — the Pod is a scheduling and lifecycle wrapper, not an extra emulation layer. Live migration (CPU; GPU live migration is industry-wide limitation). Standard QEMU/KVM under the hood; broad guest OS support.
 
 In practice both deliver production-grade VM workloads. The KubeVirt model adds Kubernetes operational integration (declarative VM config, GitOps lifecycle, native ingress, observability).
 
@@ -114,7 +114,7 @@ VMware → Cozystack migration in production:
 6. **DR cutover** — Velero replaces SRM; tested per cohort.
 7. **VMware decommission** — staged as cohorts complete.
 
-Typical 100-VM migration: 7-10 months elapsed.
+Typical elapsed time for a 100-1000 VM estate: 8-18 months, assessment through decommission. The driver is rarely raw copy speed — it is regression testing and the parallel-run windows application owners will agree to.
 
 ## When the comparison matters
 

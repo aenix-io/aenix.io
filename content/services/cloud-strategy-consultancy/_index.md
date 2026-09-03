@@ -1,6 +1,6 @@
 ---
 title: "Cloud strategy consultancy — engineers who run platforms, not slide-deck strategists"
-description: "Cloud strategy is a question architects and senior engineers can answer better than management consultants. Aenix runs cloud strategy engagements as part of..."
+description: "Cloud strategy from architects who run production platforms: workload classification, an honest TCO model and migration sequencing in a written report."
 related_pages: ["/services/platform-readiness-assessment", "/solutions/cloud-cost-optimization", "/solutions/cloud-repatriation", "/products/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"

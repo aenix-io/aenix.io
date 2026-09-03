@@ -52,7 +52,7 @@ Wenn Ihre Kunden VMware-Angebote bekommen, die ihnen nicht gefallen — dafür i
 **1. Fertige Plattform wiederverkaufen**
 Verkaufen Sie [Ænix Platform](/de/partner/) (Public Cloud / Private Cloud / AI) unter Ihrer Marke. Bis **40% Marge**, Deal-Schutz, Sales-Kit, technisches Pre-Sales, L3-Support. Die Public Cloud Platform bringt White-Label-Portal und WHMCS-Billing.
 
-**2. Mit unserem Team co-delivern / bauen**
+**2. Mit unserem Team gemeinsam liefern / bauen**
 Eigene differenzierte Cloud? Cozystack ist das Framework, **Ænix Ihr ausgelagertes Engineering-Team** — wir führen die [VMware-Migration](/de/migration/) durch und stellen eine [White-Label-Cloud](/de/dienstleistungen/) auf, die Ihnen gehört, und schließen die K8s/KubeVirt-Lücke.
 
 </div>
@@ -63,7 +63,7 @@ So oder so: Die Pro-Core-Lizenz, die Ihr Kunde an VMware zahlt, wird zu Marge un
 
 ## Auf einen Blick
 
-- **Was es ist:** ein VMware-Ausstiegsangebot, das SIs und MSPs wiederverkaufen oder co-delivern.
+- **Was es ist:** ein VMware-Ausstiegsangebot, das SIs und MSPs wiederverkaufen oder gemeinsam liefern.
 - **Für wen:** Leiter Cloud, Cloud-Practice-Leads, Leiter Allianzen bei SIs / MSPs / Resellern.
 - **Marge:** bis **40%** auf Lizenz + Support; plus Ihr eigener Managed-Services-Umsatz.
 - **Lizenz:** Apache 2.0 (Cozystack) — keine Pro-Core-/Pro-Socket-Kosten im Stack.
@@ -125,7 +125,7 @@ Kostenlos, ohne Vorbereitung. Wir ordnen Ihren Kundenstamm den Plattformen zu, g
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/partner/vmware-exit/ ; hreflang de self, en → /partners/vmware-exit/.

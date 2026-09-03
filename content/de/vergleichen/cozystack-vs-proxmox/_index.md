@@ -10,7 +10,7 @@ hreflang_en: /compare/cozystack-vs-proxmox/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cozystack und Proxmox VE sind beide Open Source, verfolgen aber unterschiedliche Designziele. Proxmox VE ist eine SMB-Virtualisierungsplattform für internes IT mit VMs und LXC-Containern, typisch 5-50 Hosts. Cozystack ist ein Multi-Tenant-Cloud-Builder auf Kubernetes-Basis für Hosting-Anbieter und regionale Clouds, die strukturelle Mandantenfähigkeit (Tenant CRD), einen Service-Katalog jenseits von VMs (Kubernetes, Datenbanken, S3, GPU) und Billing-Integration benötigen. Cozystack ist unter Apache 2.0 lizenziert (kein Subscription-Zwang für Updates) und ein CNCF-Sandbox-Projekt. Aenix ist das Open-Core-Unternehmen hinter Cozystack und bietet die produktisierte Ænix Platform (Public Cloud Platform für Hosting-Anbieter) plus kommerziellen Support für Teams, die Proxmox überwachsen.**
+  **Cozystack und Proxmox VE sind beide Open Source, verfolgen aber unterschiedliche Designziele. Proxmox VE ist eine SMB-Virtualisierungsplattform für internes IT mit VMs und LXC-Containern, typisch 5-50 Hosts. Cozystack ist ein Multi-Tenant-Cloud-Builder auf Kubernetes-Basis für Hosting-Anbieter und regionale Clouds, die strukturelle Mandantenfähigkeit (Tenant CRD), einen Service-Katalog jenseits von VMs (Kubernetes, Datenbanken, S3, GPU) und Billing-Integration benötigen. Cozystack ist unter Apache 2.0 lizenziert (kein Subscription-Zwang für Updates) und ein CNCF-Sandbox-Projekt. Aenix ist das Open-Core-Unternehmen hinter Cozystack und bietet die produktisierte Ænix Platform (Public Cloud Platform für Hosting-Anbieter) plus kommerziellen Support für Teams, die Proxmox entwachsen.**
 quick_facts:
   - label: "Was es ist"
     value: "Vergleich zwischen Proxmox VE (SMB-Virtualisierung) und Cozystack (Multi-Tenant-Cloud-Builder auf Kubernetes)"
@@ -38,12 +38,12 @@ faq:
   - q: "Wie löst Cozystack Mandantenfähigkeit besser als Proxmox?"
     a: "Cozystack nutzt eine strukturelle Mandantentrennung über das Tenant CRD, sodass jeder Mandant isolierte Ressourcen erhält. Proxmox bietet nur permissions-basierte Trennung, die für echte Multi-Tenant-Clouds mit externen Kunden limitiert ist."
   - q: "Was bietet Aenix zusätzlich zum Open-Source-Cozystack?"
-    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und bietet die produktisierte Ænix Platform — etwa die Public Cloud Platform mit WHMCS-Billing-Integration und dem white-label Cozystack Dashboard — plus kommerziellen Support ab 1.250 USD/Monat für Anbieter, die Proxmox überwachsen."
+    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und bietet die produktisierte Ænix Platform — etwa die Public Cloud Platform mit WHMCS-Billing-Integration und dem white-label Cozystack Dashboard — plus kommerziellen Support ab 1.250 USD/Monat für Anbieter, die Proxmox entwachsen."
 ---
 
 **Unterschiedliche Skalen. Unterschiedliche Designziele. Beide Open Source.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox überwachsen. Ab 1.250 USD/Monat Support-Tier.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — turnkey Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen. Ab 1.250 USD/Monat Support-Tier.
 
 <div class="compare-elevated compare-elevated--col3">
 

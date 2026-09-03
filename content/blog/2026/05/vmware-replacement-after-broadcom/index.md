@@ -214,7 +214,7 @@ Yes — in most cases. Cozystack runs on commodity x86. The standard scenario is
 
 ### How long is a typical migration?
 
-Smaller estates (under 200 VMs, simple networking): 6–12 weeks from discovery to decommission. Larger or more complex estates (vCD, NSX-heavy, regulated workloads): 3–9 months, run in cohorts. The driver is rarely raw migration speed — it's regression testing and parallel-run windows agreed with application owners.
+For a 100-1000 VM estate, 8–18 months elapsed from assessment to decommission. Small, simple estates (well under 100 VMs, flat networking, no vCD) land at the short end; vCD- or NSX-heavy regulated estates at the long end, run in cohorts. The driver is rarely raw migration speed — it's regression testing and parallel-run windows agreed with application owners.
 
 ### Do you support Windows VMs?
 

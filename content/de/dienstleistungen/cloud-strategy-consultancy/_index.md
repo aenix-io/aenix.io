@@ -12,7 +12,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/cloud-strategy-consultancy/
 direct_answer: |
-  **Cloud-Strategie-Beratung beantwortet, welche Workloads in welche Umgebung gehören (Public, Private, Hybrid), was sie über alle Substrate hinweg wirklich kosten und in welcher Reihenfolge migriert wird. Aenix führt Cloud-Strategie als Teil seines Platform Readiness Assessments durch — geleitet von Architekten und Senior-Engineers, die Plattformen tatsächlich betreiben, nicht von Management-Beratern. Das Ergebnis ist ein umsetzbarer schriftlicher Bericht mit benannten Workloads, ehrlichem TCO-Modell, Souveränitäts-/Regulator-Lücken und einer Implementations-Roadmap, kein 200-seitiger Transformations-Plan. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und kann die empfohlene Architektur anschließend selbst umsetzen.**
+  **Cloud-Strategie-Beratung beantwortet, welche Workloads in welche Umgebung gehören (Public, Private, Hybrid), was sie über alle Substrate hinweg wirklich kosten und in welcher Reihenfolge migriert wird. Aenix führt Cloud-Strategie als Teil seines Platform Readiness Assessments durch — geleitet von Architekten und Senior-Engineers, die Plattformen tatsächlich betreiben, nicht von Management-Beratern. Das Ergebnis ist ein umsetzbarer schriftlicher Bericht mit benannten Workloads, ehrlichem TCO-Modell, Souveränitäts-/Lücken gegenüber der Aufsicht und einer Implementations-Roadmap, kein 200-seitiger Transformations-Plan. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und kann die empfohlene Architektur anschließend selbst umsetzen.**
 
 quick_facts:
   - label: "Was es ist"
@@ -34,9 +34,9 @@ faq:
   - q: "Wer führt das Cloud-Strategie-Engagement durch?"
     a: "Architekten und Senior-Engineers, die Cozystack-basierte Plattformen tatsächlich bauen und betreiben — keine Management-Berater mit Slide-Decks. Die Empfehlungen sind dadurch direkt umsetzbar, weil dasselbe Team die Phase-2-Implementierung liefern kann."
   - q: "Was unterscheidet das von klassischer Cloud-Strategie-Beratung?"
-    a: "Statt eines 200-seitigen Transformations-Plans erhalten Sie einen kompakten, umsetzbaren Bericht: benannte Workloads, ehrliches TCO-Modell über alle Substrate, konkrete Souveränitäts-/Regulator-Lücken und eine Migrations-Sequenzierung. Das Engagement läuft als Teil des Platform Readiness Assessments."
+    a: "Statt eines 200-seitigen Transformations-Plans erhalten Sie einen kompakten, umsetzbaren Bericht: benannte Workloads, ehrliches TCO-Modell über alle Substrate, konkrete Souveränitäts-/Lücken gegenüber der Aufsicht und eine Migrations-Sequenzierung. Das Engagement läuft als Teil des Platform Readiness Assessments."
   - q: "Welche Themen deckt das Engagement ab?"
-    a: "Workload-Klassifizierung (Public, Private, Hybrid), ein ehrliches TCO-Modell über Substrate hinweg, die Souveränitäts- und Regulator-Lücke (wo Compliance die Architektur formt), die Migrations-Sequenzierung sowie eine Phase-2-Implementations-Roadmap."
+    a: "Workload-Klassifizierung (Public, Private, Hybrid), ein ehrliches TCO-Modell über Substrate hinweg, die Lücken bei Souveränität und Aufsicht (wo Compliance die Architektur formt), die Migrations-Sequenzierung sowie eine Phase-2-Implementations-Roadmap."
   - q: "Berücksichtigt die Strategie Souveränität und Compliance?"
     a: "Ja. Ein eigener Teil des Engagements identifiziert, wo regulatorische Anforderungen und Datensouveränität die Architektur formen, sodass die empfohlene Verteilung von Workloads auf Public, Private und Hybrid von Anfang an compliance-konform ist."
   - q: "Welche Technologie steht hinter der empfohlenen Plattform?"
@@ -47,7 +47,7 @@ faq:
 
 **Cloud-Strategie ist eine Frage, die Architekten und Senior-Engineers besser beantworten können als Management-Berater. Ænix führt Cloud-Strategie-Engagements als Teil desselben Platform Readiness Assessments durch, das umsetzbare Architektur liefert — ein schriftlicher Bericht mit benannten Workloads, Kosten und Timelines, kein 200-seitiger Transformationsplan.**
 
-> **Passt zu:** allen **[Ænix platforms](/de/produkte/)** — die Strategie ergibt, welche Plattform zu Ihrem Buyer-Profil und Engagement-Scope passt.
+> **Passt zu:** allen **[Ænix-Plattformen](/de/produkte/)** — die Strategie ergibt, welche Plattform zu Ihrem Buyer-Profil und Engagement-Scope passt.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -73,7 +73,7 @@ faq:
 <div class="diagram__conn">liefert</div>
 <div class="diagram__node"><b>Umsetzbarer schriftlicher Bericht</b><div class="diagram__chips"><span>Benannte Workloads (Public, Private, Hybrid)</span><span>Ehrliches TCO-Modell</span><span>Souveränitäts-/Regulator-Lücke</span></div></div>
 <div class="diagram__conn">mündet in</div>
-<div class="diagram__node"><b>Phase-2-Implementations-Roadmap</b><div class="diagram__chips"><span>Von Ænix lieferbares Build-Engagement</span><span>Passende Ænix platform</span></div></div>
+<div class="diagram__node"><b>Phase-2-Implementations-Roadmap</b><div class="diagram__chips"><span>Von Ænix lieferbares Build-Engagement</span><span>Passende Ænix-Plattform</span></div></div>
 </div>
 </div>
 

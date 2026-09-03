@@ -11,7 +11,7 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloser 11-seitiger Decision-Guide für IT- und Compliance-Verantwortliche, die souveräne KI-Infrastruktur evaluieren. Ein visueller Flowchart führt durch sieben Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope (DORA, NIS2, souveränes-Cloud-Mandat), Modell-Auswahl (Open-Weight wie Llama, Mistral, Qwen), Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen und operatives Modell. Der Guide liefert vier annotierte Architektur-Patterns und Sizing-Referenztabellen. Das Ergebnis mappt direkt auf die Ænix AI Platform — eine turnkey, selbst-gehostete KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0) mit Multi-Tenant-GPU-Scheduling und Souveränitätskontrollen.**
+  **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloser 11-seitiger Decision-Guide für IT- und Compliance-Verantwortliche, die souveräne KI-Infrastruktur evaluieren. Ein visueller Flowchart führt durch sieben Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope (DORA, NIS2, souveränes-Cloud-Mandat), Modell-Auswahl (Open-Weight wie Llama, Mistral, Qwen), Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen und operatives Modell. Der Guide liefert vier annotierte Architektur-Patterns und Sizing-Referenztabellen. Das Ergebnis lässt sich unmittelbar auf die Ænix AI Platform — eine turnkey, selbst-gehostete KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0) mit Multi-Tenant-GPU-Scheduling und Souveränitätskontrollen.**
 quick_facts:
   - label: "Was es ist"
     value: "Kostenloser 11-seitiger Decision-Guide (PDF) mit Master-Decision-Tree zur Planung souveräner KI-Infrastruktur"
@@ -56,7 +56,7 @@ faq:
 ## Was im Leitfaden enthalten ist
 
 ### Decision-Tree
-Visueller Flowchart, der Sie durchführt:
+Ein Flussdiagramm, das Sie durch folgende Schritte führt:
 
 1. **Trigger-Profil** — regulierte Daten, Inferenz-Ökonomie, Auditierbarkeit, Air-Gap
 2. **Regulatorischer Scope** — DORA, NIS2, sektoral, souveränes-Cloud-Mandat
@@ -85,8 +85,6 @@ Praktische Sizing-Tabellen für gängige Workload-Profile.
 <div class="diagram__node diagram__node--brand"><b>Ænix AI Platform</b><div class="diagram__chips"><span>Multi-Tenant-GPU-Scheduling</span><span>Inferenz + Fine-Tuning + RAG</span></div></div>
 </div>
 </div>
-
----
 
 ---
 

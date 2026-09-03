@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for financial services — DORA-aligned, sovereign, AI-ready"
-description: "Banks, insurers, investment firms, and payment institutions face the steepest combination of pressures in 2026: DORA enforcement (in force January 2025),..."
+description: "DORA-aligned sovereign cloud for banks, insurers and payment institutions: customer-held keys, customer-owned audit trails, VMs and containers on one API."
 related_pages:
   - /solutions/dora-compliance/
   - /solutions/data-sovereignty/

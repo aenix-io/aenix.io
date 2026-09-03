@@ -1,6 +1,6 @@
 ---
 title: "Public cloud builder — launch a customer-facing cloud product on open-source foundation"
-description: "Hosting providers, telcos, and regional operators in 2026 face the question: how do we offer a credible cloud product to enterprise customers without..."
+description: "Launch a customer-facing cloud product on Cozystack: multi-tenancy, self-service portal, WHMCS billing and the pricing and go-to-market design around it."
 related_pages:
   - /services/private-cloud-consulting
   - /products/public-cloud-platform/

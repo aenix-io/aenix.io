@@ -1,6 +1,6 @@
 ---
 title: "Cloud-Migrations-Strategie 2026 — Leitfaden für DACH-Unternehmen"
-description: "Begleitung zur Cloud-Migration-Hub-Page. Praktischer Leitfaden für die strategische Cloud-Migration in 2026 — welche Workloads wohin gehen, wie man es..."
+description: "Begleitung zur Cloud-Migration-Hub-Page. Praktischer Leitfaden für die strategische Cloud-Migration im Jahr 2026 — welche Workloads wohin gehen, wie man es..."
 date: "2026-05-01"
 author: "Aenix Team"
 type: "article"
@@ -42,16 +42,16 @@ quiz:
       explanation: "Der Reassess-Bucket existiert, weil einige Workloads erst einen PoC oder zusätzliche Instrumentierung brauchen, bevor eine glaubwürdige Entscheidung zwischen Migration und Verbleib möglich ist. Das ist kein Aufschub, sondern das ehrliche Eingeständnis einer Wissenslücke."
 ---
 
-**Begleitung zur [Cloud-Migration-Hub-Page](/de/migration/cloud). Praktischer Leitfaden für die strategische Cloud-Migration in 2026 — welche Workloads wohin gehen, wie man es umsetzt, wo die meisten Projekte scheitern.**
+**Begleitung zur [Cloud-Migration-Hub-Page](/de/migration/cloud). Praktischer Leitfaden für die strategische Cloud-Migration im Jahr 2026 — welche Workloads wohin gehen, wie man es umsetzt, wo die meisten Projekte scheitern.**
 
-Cloud-Migration in 2026 ist eine differenziertere Entscheidung als noch vor 5 Jahren. "Lift-and-shift in die Public Cloud" ist nicht mehr automatisch die Antwort. Die strategische Frage ist: welche Workloads gehören wohin, und wie kommen sie dorthin.
+Cloud-Migration im Jahr 2026 ist eine differenziertere Entscheidung als noch vor 5 Jahren. „Lift-and-shift in die Public Cloud“ ist nicht mehr automatisch die Antwort. Die strategische Frage ist: welche Workloads gehören wohin, und wie kommen sie dorthin.
 
 ## Vier Cloud-Migrations-Trigger
 
 1. **VMware-Ausstieg** — Broadcom-Subscription-Druck
 2. **Public-Cloud-Repatriierung** — Kosten oder Souveränität
 3. **Regulatorischer Druck** — DORA, NIS2, sektorale Regeln
-4. **KI/GPU-Ökonomie** — nachhaltige Workloads, die Hyperscaler-Ökonomie nicht passt
+4. **KI/GPU-Ökonomie** — dauerhaft ausgelastete Workloads, die Hyperscaler-Ökonomie nicht passt
 
 ## Workload-Klassifikation
 

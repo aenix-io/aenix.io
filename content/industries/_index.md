@@ -1,6 +1,6 @@
 ---
 title: "Industries"
-description: "Aenix industry pages: regulatory triggers, architecture patterns and use cases for finance, public sector, telco and hosting, mapped to the three Aenix platforms."
+description: "Aenix industry pages: the regulatory trigger, the architecture pattern and the Aenix platform that fits finance, public sector, telco, industry and hosting."
 hero_subtitle: "Regulatory triggers and architecture patterns, mapped to your sector"
 language: "en"
 ---

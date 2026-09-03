@@ -5,7 +5,7 @@ type: "page"
 language: "de"
 hreflang_en: /products/ai-platform/
 direct_answer: |
-  **Die Ænix AI Platform ist eine schlüsselfertige, souveräne KI-Infrastruktur auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Sie richtet sich an KI-native Organisationen im großen Maßstab, regulierte KI-Deployments und GPU-lastige Produkt-Unternehmen, die Inferenz-, Fine-Tuning- und RAG-Workloads selbst betreiben statt über Hyperscaler-APIs. Aenix liefert vor-integriertes Multi-Tenant-GPU-Scheduling (Tenant-CRD), Service-APIs für Model-Serving und Fine-Tuning, fertige Blueprints, Vector-Datenbanken, Object Storage und Souveränitätskontrollen mit kundenkontrollierten Verschlüsselungsschlüsseln. So kommen KI-Teams schneller von der Idee zu laufenden Jobs, behalten die Datenhoheit und gewinnen Kostenkontrolle bei nachhaltigen Inferenz-Lasten.**
+  **Die Ænix AI Platform ist eine schlüsselfertige, souveräne KI-Infrastruktur auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Sie richtet sich an KI-native Organisationen im großen Maßstab, regulierte KI-Deployments und GPU-lastige Produkt-Unternehmen, die Inferenz-, Fine-Tuning- und RAG-Workloads selbst betreiben statt über Hyperscaler-APIs. Aenix liefert vor-integriertes Multi-Tenant-GPU-Scheduling (Tenant-CRD), Service-APIs für Model-Serving und Fine-Tuning, fertige Blueprints, Vector-Datenbanken, Object Storage und Souveränitätskontrollen mit kundenkontrollierten Verschlüsselungsschlüsseln. So kommen KI-Teams schneller von der Idee zu laufenden Jobs, behalten die Datenhoheit und gewinnen Kostenkontrolle bei dauerhaft ausgelasteten Inferenz-Lasten.**
 quick_facts:
   - label: "Was es ist"
     value: "Schlüsselfertige, souveräne KI-Infrastruktur auf Basis von Cozystack mit Multi-Tenant-GPU-Scheduling, Service-APIs und fertigen Blueprints für Inferenz, Fine-Tuning und RAG"
@@ -16,7 +16,7 @@ quick_facts:
   - label: "Für wen"
     value: "KI-native Startups im Wachstum, regulierte KI-Deployments (Bank / öffentlicher Sektor / Gesundheitswesen), GPU-lastige Produkt-Unternehmen, Telcos und Großunternehmen mit interner KI-Plattform"
   - label: "GPU-Support"
-    value: "H100, H200, L40S, A100, B100/B200 (Blackwell); CPU-only und alternative Beschleuniger (AMD MI Series, Intel Gaudi) unterstützt; MIG auf fähigen Karten"
+    value: "H100, H200, L40S, A100, B100/B200 (Blackwell); CPU-only und alternative Beschleuniger (AMD MI Series, Intel Gaudi) unterstützt; fraktionales GPU-Sharing über HAMi auf dem NVIDIA GPU Operator"
   - label: "Architektur"
     value: "Kubernetes-nativ; KubeVirt für VM-gebundene Workloads; Per-Tenant-GPU-Pools mit Tenant-CRD; Vector DB (pgvector / Qdrant) und S3-kompatibler Object Storage inklusive"
   - label: "Souveränität"
@@ -27,9 +27,9 @@ faq:
   - q: "Worauf basiert die Ænix AI Platform?"
     a: "Sie basiert auf Cozystack, einem Open-Source-CNCF-Projekt unter Apache 2.0, das Aenix erstellt hat und pflegt. Cozystack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage. Die AI Platform ergänzt dies um Multi-Tenant-GPU-Scheduling, Service-APIs und KI-Blueprints."
   - q: "Für wen ist die AI Platform gedacht?"
-    a: "Für KI-native Startups im Wachstum, regulierte KI-Deployments in Banken, öffentlichem Sektor und Gesundheitswesen, GPU-lastige Produkt-Unternehmen sowie Telcos und Großunternehmen, die eine interne KI-Plattform über mehrere Business Units teilen. Typisch sind Organisationen mit nachhaltigen Inferenz-Workloads, bei denen Hyperscaler-API-Pricing wirtschaftlich nicht mehr passt."
+    a: "Für KI-native Startups im Wachstum, regulierte KI-Deployments in Banken, öffentlichem Sektor und Gesundheitswesen, GPU-lastige Produkt-Unternehmen sowie Telcos und Großunternehmen, die eine interne KI-Plattform über mehrere Business Units teilen. Typisch sind Organisationen mit dauerhaft ausgelasteten Inferenz-Workloads, bei denen Hyperscaler-API-Pricing wirtschaftlich nicht mehr passt."
   - q: "Wie funktioniert Multi-Tenant-GPU-Scheduling?"
-    a: "Über das Tenant-CRD erhält jeder Tenant eigene GPU-Pools mit GPU-Class-aware-Scheduling (zum Beispiel L40S für Inferenz, H100 für Fine-Tuning) und MIG-Support auf fähigen Karten. Quotas, RBAC und Observability werden pro Tenant durchgesetzt, sodass ein gemeinsamer GPU-Pool mit logischer Isolation geteilt werden kann."
+    a: "Über das Tenant-CRD erhält jeder Tenant eigene GPU-Pools mit GPU-Class-aware-Scheduling (zum Beispiel L40S für Inferenz, H100 für Fine-Tuning) sowie fraktionalem GPU-Sharing über HAMi auf dem NVIDIA GPU Operator. Quotas, RBAC und Observability werden pro Tenant durchgesetzt, sodass ein gemeinsamer GPU-Pool mit logischer Isolation geteilt werden kann."
   - q: "Welche Souveränitätskontrollen bietet die Plattform?"
     a: "Kundenkontrollierte Verschlüsselungsschlüssel für Modell-Gewichte at rest, Trainingsdaten und Vector-Indexe; ein audit-isoliertes Environment; protokollierter und zeitlich begrenzter Zugang für Anbieter-Personal; Lieferantentransparenz zur zweiten Stufe sowie unterstütztes Air-Gap-Deployment für Verteidigung, isolierte Industrie und souveräne-Cloud-Kunden."
   - q: "Welche GPUs und Modelle werden unterstützt?"
@@ -69,7 +69,7 @@ Vorvalidierte Patterns für gängige KI-Workload-Typen:
 
 ### Multi-Tenant-GPU-Scheduling
 
-Per-Tenant-GPU-Pools, GPU-Class-aware-Scheduling (z.B. L40S für Inferenz, H100 für Fine-Tuning), MIG-Support auf fähigen Karten. Quotas + RBAC + Observability per Tenant für KI-Workloads.
+Per-Tenant-GPU-Pools, GPU-Class-aware-Scheduling (z.B. L40S für Inferenz, H100 für Fine-Tuning), fraktionales GPU-Sharing über HAMi auf dem NVIDIA GPU Operator. Quotas + RBAC + Observability per Tenant für KI-Workloads.
 
 ### Modelle, Datenbanken, Apps inklusive
 
@@ -85,7 +85,7 @@ Kundenkontrollierte Verschlüsselungsschlüssel für Modell-Gewichte at rest, Tr
 
 ### GPU-Sizing-Referenz
 
-Praktische Sizing-Tabellen für gängige Workload-Profile (Llama 7B / 13B / 70B / 405B, Mistral, Qwen, DeepSeek, Phi, Gemma — Single-Card / Multi-Card / Multi-Node-Konfigurationen). Ænix-Engagement inkludiert Capacity-Planning für nachhaltige Workloads.
+Praktische Sizing-Tabellen für gängige Workload-Profile (Llama 7B / 13B / 70B / 405B, Mistral, Qwen, DeepSeek, Phi, Gemma — Single-Card / Multi-Card / Multi-Node-Konfigurationen). Ænix-Engagement inkludiert Capacity-Planning für dauerhaft ausgelastete Workloads.
 
 ### Hosting-Panel + Admin-Interface
 
@@ -97,13 +97,13 @@ Inferenz-Latenz / Throughput-Metriken. GPU-Auslastung per Tenant. Model-Serving 
 
 ### Migrations-Tooling und -Expertise
 
-Produktisierte Patterns für Migration von Hyperscaler-KI (AWS Bedrock, Azure OpenAI Service, GCP Vertex AI) zu souveräner KI-Infrastruktur. Besonders für Organisationen mit nachhaltigen Inferenz-Workloads, wo die Ökonomie nicht mehr zu Hyperscaler-API-Pricing passt.
+Produktisierte Patterns für Migration von Hyperscaler-KI (AWS Bedrock, Azure OpenAI Service, GCP Vertex AI) zu souveräner KI-Infrastruktur. Besonders für Organisationen mit dauerhaft ausgelasteten Inferenz-Workloads, wo die Ökonomie nicht mehr zu Hyperscaler-API-Pricing passt.
 
 ---
 
 ## Wer kauft AI Platform
 
-| Buyer | Typisches Engagement |
+| Käuferprofil | Typisches Engagement |
 |---|---|
 | KI-natives Startup im Wachstum | Souveräne Inferenz-Fleet, ersetzt Hyperscaler-API-Spend |
 | Reguliertes KI-Deployment (Bank / öffentlicher Sektor / Gesundheitswesen) | Souveränitätspflichtige KI-Infrastruktur mit kundenkontrollierten Schlüsseln |
@@ -112,7 +112,7 @@ Produktisierte Patterns für Migration von Hyperscaler-KI (AWS Bedrock, Azure Op
 
 ---
 
-## Pricing
+## Preise
 
 Projekt plus Managed-Retainer nach dem Deployment, Angebot nach RFP.
 
@@ -132,9 +132,9 @@ Projekt plus Managed-Retainer nach dem Deployment, Angebot nach RFP.
 
 ---
 
-## Kunden-Evidenz
+## Referenzen
 
-AI Platform Kunden sind NDA-geschützt. KI-native Organisationen und regulierte KI-Deployments sind in Produktion. Anonymisierte Phrasierung: "Souveräne KI-Infrastruktur für regulierte Organisation im großen Maßstab".
+Die Kunden der AI Platform sind NDA-geschützt. KI-native Organisationen und regulierte KI-Deployments laufen in Produktion; für eine konkrete Opportunity lassen sich Referenzgespräche unter NDA arrangieren.
 
 ---
 

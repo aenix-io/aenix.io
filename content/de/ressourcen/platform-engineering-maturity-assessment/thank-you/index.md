@@ -1,6 +1,6 @@
 ---
 title: "Ihr Download ist bereit — Platform Engineering Maturity Assessment"
-description: "Laden Sie Ihre Kopie des Platform Engineering Maturity Assessment von Aenix herunter."
+description: "Laden Sie Ihre Kopie des Platform Engineering Maturity Assessments von Aenix herunter."
 robots: "noindex, nofollow"
 language: "de"
 hreflang_en: /resources/platform-engineering-maturity-assessment/thank-you/

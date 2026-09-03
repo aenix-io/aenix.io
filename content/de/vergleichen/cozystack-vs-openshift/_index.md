@@ -59,7 +59,7 @@ faq:
 | **Storage** | OpenShift Data Foundation | LINSTOR / SeaweedFS |
 | **Networking** | OpenShift SDN / OVN-Kubernetes | Cilium |
 | **Service-Katalog** | Operator Hub | Cozystack-Operatoren |
-| **Souveränität** | US-Vendor-Abhängigkeit | Customer-controlled, Open Source |
+| **Souveränität** | US-Vendor-Abhängigkeit | Kundenkontrolliert, Open Source |
 
 </div>
 
@@ -75,8 +75,8 @@ faq:
 
 **OpenShift passt wenn:**
 - Tiefe Red-Hat-Investition + Skill-Set
-- Enterprise-Support-Wahrnehmung (Marken-Wert)
-- Spezifische OpenShift-Operatoren / Marketplace-Integrations erforderlich
+- wahrgenommene Enterprise-Sicherheit (Markenvertrauen)
+- Spezifische OpenShift-Operatoren / Marketplace-Integrationen erforderlich
 
 ---
 

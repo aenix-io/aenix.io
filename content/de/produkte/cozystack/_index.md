@@ -1,15 +1,15 @@
 ---
 title: "Cozystack — Open-Source-Cloud-Plattform auf Kubernetes"
-description: "Cozystack ist die von Aenix gebaute Open-Source-Cloud-Plattform und CNCF Project-Projekt. Sie betreibt virtuelle Maschinen, Container, verwaltete..."
+description: "Cozystack ist die von Aenix gebaute Open-Source-Cloud-Plattform und CNCF-Projekt. Sie betreibt virtuelle Maschinen, Container, verwaltete..."
 related_pages:
-  - /de/produkte/private-cloud
+  - /de/produkte/private-cloud-platform/
   - /de/dienstleistungen/platform-engineering
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /products/cozystack/
 direct_answer: |
-  **Cozystack ist die von Aenix entwickelte Open-Source-Cloud-Plattform und ein CNCF-Projekt, mit der Unternehmen auf eigener Hardware eine private Cloud betreiben. Auf einer Kubernetes-nativen Steuerungsebene laufen virtuelle Maschinen (KubeVirt), Container, verwaltete Datenbanken, S3-kompatibler Object-Storage und GPU-Workloads — mit echter Mandantenfähigkeit über das Tenant-CRD. Cozystack steht unter Apache-2.0-Lizenz, ist eine Kubernetes Certified Distribution und folgt den OpenSSF Best Practices. Die Plattform richtet sich an Hosting-Provider, ISPs und Unternehmen, die VMware ablösen oder Cloud-Repatriierung umsetzen. Aenix selbst verkauft keine Lizenzen, sondern die produktisierte Ænix Platform plus Engineering- und Support-Engagement.**
+  **Cozystack ist die von Aenix entwickelte Open-Source-Cloud-Plattform und ein CNCF-Projekt, mit der Unternehmen auf eigener Hardware eine private Cloud betreiben. Auf einer Kubernetes-nativen Steuerungsebene laufen virtuelle Maschinen (KubeVirt), Container, verwaltete Datenbanken, S3-kompatibler Object-Storage und GPU-Workloads — mit echter Mandantenfähigkeit über das Tenant-CRD. Cozystack steht unter Apache-2.0-Lizenz, ist eine CNCF-zertifizierte Kubernetes-Distribution und folgt den OpenSSF Best Practices. Die Plattform richtet sich an Hosting-Provider, ISPs und Unternehmen, die VMware ablösen oder Cloud-Repatriierung umsetzen. Aenix selbst verkauft keine Lizenzen, sondern die produktisierte Ænix Platform plus Engineering- und Support-Engagement.**
 
 quick_facts:
   - label: "Was es ist"
@@ -25,7 +25,7 @@ quick_facts:
   - label: "Hersteller"
     value: "Aenix — Open-Core-Unternehmen hinter Cozystack; verkauft die Ænix Platform plus Services, keine Lizenzen"
   - label: "Engagement"
-    value: "Support-Tiers Community (kostenlos), Standard (Geschäftszeiten) und Enterprise (24×7 SLA)"
+    value: "Vier Support-Tiers: Basic (Geschäftszeiten), Standard, Plus (rund um die Uhr) und Enterprise (nach Vereinbarung). Die Community-Kanäle bleiben kostenlos."
 
 faq:
   - q: "Ist Cozystack wirklich kostenlos?"
@@ -84,13 +84,13 @@ PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB.
 SeaweedFS-basierter S3-kompatibler Storage für Backups, Anwendungen, KI-Trainingsdaten.
 
 **GPU as a Service**
-NVIDIA vGPU für VMs, MIG / Time-Slicing / Passthrough für Container. A100, H100, H200, L40S, Blackwell validiert.
+NVIDIA vGPU für VMs; für Container der NVIDIA GPU Operator mit HAMi für fraktionales GPU-Sharing sowie PCI-Passthrough. A100, H100, H200, L40S, Blackwell validiert.
 
 **Cilium-Networking**
 eBPF-nativ, Network Policies, MetalLB, BGP. Ersetzt NSX-äquivalente Funktionalität.
 
 **LINSTOR-Storage**
-Repliziertes Block-Storage im Maßstab. SeaweedFS wird ebenfalls unterstützt.
+Replizierter Blockspeicher, der auch in großen Umgebungen trägt. SeaweedFS wird ebenfalls unterstützt.
 
 **Observability**
 VictoriaMetrics + VictoriaLogs enthalten.
@@ -112,7 +112,7 @@ Cozystack Dashboard für Self-Service. Produktionsreife WHMCS-Billing-Integratio
 </div>
 </div>
 
-![Cozystack dashboard — self-service catalog of managed services](/images/uploads/2026/04/cozystack-managed-services.png)
+![Cozystack Dashboard — Self-Service-Katalog der Managed Services](/images/uploads/2026/04/cozystack-managed-services.png)
 
 </div>
 </div>
@@ -124,10 +124,10 @@ Cozystack Dashboard für Self-Service. Produktionsreife WHMCS-Billing-Integratio
 
 <!-- BLOCK 3: PROJECT VS PRODUCT -->
 
-## Cozystack das Projekt vs Ænix das Unternehmen vs Ænix Platform das Produkt
+## Cozystack, das Projekt — Ænix, das Unternehmen — Ænix Platform, das Produkt
 
 - **Cozystack** — Open-Source-Plattform. CNCF-Projekt (derzeit Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Community-verwaltet. Jeder kann deployen, beitragen, forken.
-- **Ænix** — das Open-Core-Unternehmen, das Cozystack erstellt und pflegt. Größter Einzel-Contributor. Hersteller von Ænix Platform.
+- **Ænix** — das Open-Core-Unternehmen, das Cozystack erstellt und pflegt. Der größte einzelne Beitragende des Projekts. Hersteller von Ænix Platform.
 - **Ænix Platform** — Ænix' turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Drei Plattformen (Public Cloud / Private Cloud / AI), abgestimmt auf das Buyer-Profil. Ergänzt Hosting-Panel, Billing, Portale, Payments, Support, produktisierten Installer, Enterprise-SLA. **[Ænix Platform erkunden →](/de/produkte/)**.
 - **cozystack.io** — offizielle Projektseite. Dokumentation, Installation, Releases, Community. Hersteller-neutral, CNCF-ausgerichtet.
 - **aenix.io** (diese Seite) — Ænix' kommerzielles Angebot und Produktoberfläche.
@@ -149,7 +149,7 @@ Produktive Deployments in der EU, DACH und Zentralasien. Der Kundenstamm umfasst
 - Service Provider, die mandantenfähige Cloud-Produkte betreiben (öffentlich: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy auf der Ænix Public Cloud Platform)
 - Banken und Versicherer unter DORA / sektoraler Regulierung (NDA bis Mitte 2027)
 - Telekommunikationsbetreiber mit Souveräne-Cloud-Produktstarts (NDA)
-- KI-/GPU-Betreiber mit nachhaltigen Inferenz-Workloads (NDA)
+- KI-/GPU-Betreiber mit dauerhaft ausgelasteten Inferenz-Workloads (NDA)
 - Organisationen des öffentlichen und quasi-öffentlichen Sektors (NDA)
 - Enterprise-Plattform-Teams, die interne Developer-Plattformen bauen
 
@@ -204,7 +204,7 @@ Cozystack als Plattform ist **kostenlos** (Apache 2.0). Jeder kann es betreiben.
 
 Für kommerziellen Ænix-Support und die turnkey Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/)** — drei Plattformen, abgestimmt auf das Buyer-Profil, mit vier Support-Tiers (Basic ab 1.250 $/Monat pro 10 Nodes; Standard 3.000 $; Plus 5.500 $; Enterprise Custom).
 
-Einstiegs-Tier — **Pure Cozystack mit Ænix Support** — für Produkt-Teams, die Cozystack auf eigenen / gemieteten Servern (Hetzner, OVH, regionales Bare-Metal) ohne die kommerzielle Portal-/Billing-Schicht betreiben.
+Einstiegs-Tier — **Enterprise-Support für Cozystack** — für Produkt-Teams, die Cozystack auf eigenen / gemieteten Servern (Hetzner, OVH, regionales Bare-Metal) ohne die kommerzielle Portal-/Billing-Schicht betreiben.
 
 [Preisdetails →](/de/preise/) | [Alle Plattformen →](/de/produkte/)
 
@@ -215,7 +215,7 @@ Einstiegs-Tier — **Pure Cozystack mit Ænix Support** — für Produkt-Teams, 
 <!-- BLOCK 7: FAQ -->
 
 
-**Weitere Fragen?** Siehe **[cozystack.io](https://cozystack.io)** für Dokumentation oder **[sprechen Sie mit uns](#discovery)**.
+**Weitere Fragen?** Die Dokumentation finden Sie auf **[cozystack.io](https://cozystack.io)**, oder **[sprechen Sie mit uns](#discovery)**.
 
 <!-- /BLOCK 7 -->
 
@@ -231,10 +231,9 @@ Einstiegs-Tier — **Pure Cozystack mit Ænix Support** — für Produkt-Teams, 
 - **[cozystack.io](https://cozystack.io)** — Installation, Dokumentation, Community
 - **[Cozystack-Architektur-Artikel](/de/blog/2026/05/cozystack-einfuehrung-architektur/)**
 - **[Ænix Platform](/de/produkte/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack
-  - [Public Cloud Platform](/de/produkte/public-cloud-platform/) — für Hosting-Anbieter
+  - [Public Cloud Platform](/de/produkte/public-cloud-platform/) — für Hosting-Anbieter und große Betreiber
   - [Private Cloud Platform](/de/produkte/private-cloud-platform/) — für regulierte Unternehmen
-  - [Public Cloud Platform](/de/produkte/public-cloud-platform/) — für große Betreiber
-  - [Developer Self-Service](/de/produkte/private-cloud-platform/) — für Produkt-Engineering-Teams
+  - [Developer-Self-Service-Schicht der Private Cloud Platform](/de/produkte/private-cloud-platform/) — für Produkt-Engineering-Teams
   - [AI Platform](/de/produkte/ai-platform/) — für KI-lastige Organisationen
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Engagement-Methodik
 

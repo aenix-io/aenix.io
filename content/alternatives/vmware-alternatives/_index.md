@@ -6,7 +6,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The leading VMware alternatives in 2026 are Cozystack, Nutanix AHV, Red Hat OpenShift Virtualization, Proxmox VE, OpenStack, Scale Computing HC3, Azure Stack HCI, and vendor-led KubeVirt platforms. The right choice depends on scale, multi-tenancy needs, sovereignty requirements, and existing vendor relationships rather than feature checklists alone. For service providers, regulated enterprises, and sovereign-cloud builders, Aenix recommends Cozystack: an open-source (Apache 2.0), CNCF project that runs VMs and containers on one Kubernetes API using KubeVirt, with Cilium eBPF networking, LINSTOR storage, and structural multi-tenancy via the Tenant CRD. Aenix sells Aenix Platform and commercial support on top of Cozystack for teams leaving VMware after Broadcom's pricing changes.**
+  **The leading VMware alternatives in 2026 are Cozystack, Nutanix AHV, Red Hat OpenShift Virtualization, Proxmox VE, OpenStack, Scale Computing HC3, Microsoft Azure Local (formerly Azure Stack HCI), and vendor-led KubeVirt platforms. The right choice depends on scale, multi-tenancy needs, sovereignty requirements, and existing vendor relationships rather than feature checklists alone. For service providers, regulated enterprises, and sovereign-cloud builders, Aenix recommends Cozystack: an open-source (Apache 2.0), CNCF project that runs VMs and containers on one Kubernetes API using KubeVirt, with Cilium eBPF networking, LINSTOR storage, and structural multi-tenancy via the Tenant CRD. Aenix sells Aenix Platform and commercial support on top of Cozystack for teams leaving VMware after Broadcom's pricing changes.**
 quick_facts:
   - label: "What it is"
     value: "A practical 2026 comparison of eight production-grade VMware alternatives, open source and commercial, organized by use case."
@@ -32,7 +32,7 @@ faq:
   - q: "Why are so many teams leaving VMware in 2026?"
     a: "After Broadcom's acquisition, renewal quotes in the engagements Aenix runs have come in at roughly 2-5x the prior deal, alongside perpetual-licence retirement and mandatory VCF bundling. VCF pricing is not published, so that multiplier is an observation from our own pipeline rather than an industry benchmark. Combined with sovereignty pressure from DORA and NIS2 and the economics of private AI infrastructure, most VMware teams are now choosing where to migrate rather than whether to leave."
   - q: "Which VMware alternative is best for multi-tenancy?"
-    a: "Cozystack provides structural multi-tenancy through its Tenant CRD, making it well suited to service providers and regulated enterprises. Most appliance-based options (Nutanix, Scale Computing, Azure Stack HCI) and Proxmox offer limited tenancy, while OpenStack uses Keystone for tenant isolation at telco scale."
+    a: "Cozystack provides structural multi-tenancy through its Tenant CRD, making it well suited to service providers and regulated enterprises. Appliance-based options (Nutanix, Scale Computing, Azure Local) and Proxmox delegate well inside one organisation but are not built for untrusted customers, while OpenStack uses Keystone for tenant isolation at telco scale."
   - q: "Does Aenix provide commercial support for a VMware migration?"
     a: "Yes. Aenix is the team behind Cozystack and offers Aenix Platform plus migration and support services. Pricing tiers start at Basic $1,250/mo for 10 nodes, with Standard, Plus, and Enterprise options. A free VMware Migration Checklist is available on the site."
 ---
@@ -157,7 +157,7 @@ The alternatives below cover the realistic options.
 
 ## Comparison matrix
 
-| | Cozystack | Nutanix | OpenShift Virt | Proxmox | OpenStack | Scale | Azure Stack HCI |
+| | Cozystack | Nutanix | OpenShift Virt | Proxmox | OpenStack | Scale | Azure Local |
 |---|---|---|---|---|---|---|---|
 | **License** | Apache 2.0 | Subscription | Red Hat sub | AGPLv3 | Apache 2.0 | Subscription | Microsoft sub + per-core |
 | **Open source** | Full | No | Mostly | Full | Full | No | No |
@@ -188,7 +188,7 @@ The alternatives below cover the realistic options.
 - **OpenStack expertise + telco scale:** OpenStack
 - **SMB / single-tenant:** Proxmox VE
 - **ROBO / edge:** Scale Computing
-- **Microsoft shop:** Azure Stack HCI
+- **Microsoft shop:** Azure Local
 - **AI/GPU at scale:** Cozystack or OpenShift on dedicated GPU infrastructure
 
 ---
@@ -208,6 +208,6 @@ If your situation doesn't match the Cozystack profile, the eight options above c
 *Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack, Kubernetes Certified Distribution.*
 
 <!-- SEO: title "VMware Alternatives — 8 Platforms Compared (2026) | Ænix"
-Description (≤155): "VMware alternatives 2026: 8 platforms compared (Cozystack, OpenShift, Nutanix, Proxmox, OpenStack, Scale Computing, Azure Stack HCI, KubeVirt vendors)."
+Description (≤155): "VMware alternatives 2026: 8 platforms compared (Cozystack, OpenShift, Nutanix, Proxmox, OpenStack, Scale Computing, Azure Local, KubeVirt vendors)."
 Word count: ~1100.
 -->

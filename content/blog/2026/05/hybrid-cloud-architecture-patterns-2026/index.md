@@ -153,6 +153,7 @@ A practical sequence for moving from fragmented multi-cloud to coherent hybrid:
 6. **Steady state** — single platform team, single operations model, multiple substrates.
 
 Total elapsed: typically 12-24 months for a 100-VM hybrid estate.
+
 ## Want to dig deeper?
 
 - **[Hybrid cloud platform services](/solutions/hybrid-cloud-platform/)** — engagement details

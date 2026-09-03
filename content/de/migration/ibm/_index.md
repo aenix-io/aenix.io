@@ -97,7 +97,7 @@ Ausgelöst durch:
 - **Souveränität und Sanktionsrisiko** — ein proprietärer Single-Vendor-Stack hat ein anderes Risikoprofil als eine offene, CNCF-geführte Plattform für staatliche und regulierte Institute.
 - **Modernisierung** — ein Legacy-Bestand, bei dem der Upgrade-Pfad zugleich der Ausstiegspfad ist, oft begleitet vom Umstieg auf Microservices.
 
-Treffen zwei oder mehr zu, verstärkt ein strukturierter Ausstieg den Nutzen. Ist ein POWER-Refresh bereits budgetiert und nichts anderes drückt, ist "bleiben und optimieren" die ehrliche Antwort.
+Treffen zwei oder mehr zu, verstärkt ein strukturierter Ausstieg den Nutzen. Ist ein POWER-Refresh bereits budgetiert und nichts anderes drückt, ist „bleiben und optimieren“ die ehrliche Antwort.
 
 <!-- /BLOCK 2 -->
 
@@ -173,11 +173,11 @@ Die Ænix-Subscription ist vergleichbar mit der reinen IBM-Maintenance, enthält
 
 Der teuerste Fehler bei einem Power-zu-Kubernetes-Umzug ist, produktives Oracle im Cluster zu betreiben.
 
-- **Oracle wertet Kubernetes und KubeVirt als Soft Partitioning.** CPU-Limits und Pinning verengen den Lizenzumfang nicht — "die Prozessoren aller Cluster-Nodes unterliegen der Oracle-Lizenzierung".
+- **Oracle wertet Kubernetes und KubeVirt als Soft Partitioning.** CPU-Limits und Pinning verengen den Lizenzumfang nicht — „die Prozessoren aller Cluster-Nodes unterliegen der Oracle-Lizenzierung“.
 - **Lizenziert wird der Node, nicht der Pod.** Ein ganzer Worker-Node zählt, selbst wenn Oracle nur einen Bruchteil seiner Cores nutzt; eine KubeVirt-VM gilt nicht als von Oracle anerkanntes Hard Partitioning.
 - **Der saubere Weg:** produktives Oracle auf dedizierter, separat lizenzierter Bare-Metal-Hardware halten und als **externe Anwendung** (Helm-Chart / Operator mit Verbindungspunkten und Credentials via External Secret Reference) über ein privates Netz anbinden. Tenant-Workloads erreichen es wie jeden Managed-Endpoint; die Datenbank wird nie in den Cluster gezogen.
 
-Das entspricht der Praxis der meisten Banken und verdichtet den lizenzierbaren Footprint, sobald Nicht-Oracle-Workloads POWER verlassen. (Oracles Partitioning Policy ist "educational, not contractual" — das endgültige Modell mit Oracle und Ihrer Rechtsabteilung abstimmen.)
+Das entspricht der Praxis der meisten Banken und verdichtet den lizenzierbaren Footprint, sobald Nicht-Oracle-Workloads POWER verlassen. (Oracles Partitioning Policy ist „educational, not contractual“ — das endgültige Modell mit Oracle und Ihrer Rechtsabteilung abstimmen.)
 
 </div>
 </div>
@@ -199,7 +199,7 @@ Das entspricht der Praxis der meisten Banken und verdichtet den lizenzierbaren F
 | Mandantenfähigkeit | Nativ (Tenant-Modell, eBPF-Isolation, Billing-Integration) | Nativ (Keystone, Projekte, Quotas) | Unterstützt (OpenShift-Namespaces + Zen) |
 | On-Prem / Air-Gap | Ja | Ja | Ja (Operator-Catalog-Mirroring) |
 
-Cozystack ist ein [CNCF-Sandbox-Projekt](https://landscape.cncf.io) — seine Lizenz bleibt garantiert Apache 2.0 und entfernt das Risiko "Vendor ändert die Lizenz", das bei proprietären und quasi-offenen Produkten besteht. Für eine staatliche Bank unter einem Digitale-Souveränität-Mandat ist das ein grundlegend anderes Risikoprofil.
+Cozystack ist ein [CNCF-Sandbox-Projekt](https://landscape.cncf.io) — seine Lizenz bleibt garantiert Apache 2.0 und entfernt das Risiko „Vendor ändert die Lizenz“, das bei proprietären und quasi-offenen Produkten besteht. Für eine staatliche Bank unter einem Digitale-Souveränität-Mandat ist das ein grundlegend anderes Risikoprofil.
 
 <!-- /BLOCK 6 -->
 
@@ -278,10 +278,6 @@ Bestandsgröße und der Legacy-/Microservice-Mix bestimmen den tatsächlichen Ze
 {{< quote-carousel >}}
 
 <!-- /BLOCK 11 -->
-
----
-
-<!-- BLOCK 12: FAQ — automatisch aus `faq:` Frontmatter gerendert -->
 
 ---
 

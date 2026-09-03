@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for transport and logistics — NIS2-aligned, edge-aware, AI-ready"
-description: "Transport and logistics operators in 2026 face: NIS2 essential-entity classification (transport sector is in scope under Annex I), AI-driven optimization..."
+description: "NIS2-scope cloud for freight, ports and depots: the TOS keeps its VM, gate and telematics ingest stays local, and a site keeps running when the link drops."
 related_pages:
   - /solutions/nis2-compliance
   - /solutions/data-sovereignty

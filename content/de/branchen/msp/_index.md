@@ -1,7 +1,7 @@
 ---
 title: "Cloud-Plattform für MSPs — gebrandeter Cloud-Produkt für Managed Service Provider"
-description: "Managed Service Provider in 2026 werden von Enterprise-Kunden nach Cloud-Fähigkeiten gefragt, die MSP-Managed-Service-Beziehung mit..."
-related_pages: ["/de/dienstleistungen/white-label-cloud", "/products/cozystack"]
+description: "Managed Service Provider im Jahr 2026 werden von Enterprise-Kunden nach Cloud-Fähigkeiten gefragt, die MSP-Managed-Service-Beziehung mit..."
+related_pages: ["/de/dienstleistungen/white-label-cloud", "/de/produkte/cozystack/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"

@@ -247,6 +247,7 @@ It's the wrong fit when:
 - The team hasn't done basic configurational optimization yet (do that first)
 - The "cost problem" is actually a 5% blip on a healthy bill (not worth structural engagement)
 - The decision is already made and the engagement is meant to validate it (we won't deliver that)
+
 ## Want to dig deeper?
 
 - **[Cloud cost optimization services page](/solutions/cloud-cost-optimization/)** — engagement details

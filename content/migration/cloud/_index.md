@@ -34,7 +34,7 @@ quick_facts:
   - label: "Areas served"
     value: "EU, DACH, Central Asia — time-zone-aligned engineering"
   - label: "Production reference"
-    value: "A European academic-computing SaaS moved off a hyperscaler onto owned bare metal with no user downtime and cut GPU cost about fivefold; tier-1 European bank engagements remain NDA-protected until mid-2027"
+    value: "A European academic-computing SaaS moved off a hyperscaler onto owned bare metal with no user downtime and cut GPU cost about fivefold (see the multi-cloud academic GPU case study); tier-1 European bank engagements remain NDA-protected until mid-2027"
 quick_facts_source: "[Cozystack docs](https://cozystack.io), [CNCF Landscape](https://landscape.cncf.io)"
 faq:
   - q: "What are cloud migration services?"
@@ -81,7 +81,7 @@ Migration is worth the disruption when a concrete trigger is driving it. The com
 
 If two or more of these apply, a structured migration compounds the benefit. If none applies and your current setup is comfortable, "stay and tune" is the honest recommendation — and one we make regularly.
 
-{{< factoid number="2–5×" label="renewal increases driving VMware exits under Broadcom subscription pricing" >}}
+{{< factoid number="2–5×" label="renewal increases driving VMware exits under Broadcom subscription pricing" source="Ænix migration engagements, 2024–2026. VCF pricing is quote-driven and non-public, so this is observation rather than a published benchmark." >}}
 
 ---
 

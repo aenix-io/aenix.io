@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for K-12 education — when sovereign infrastructure fits school districts"
-description: "K-12 education has different infrastructure needs than universities. School districts handle student data with strict residency / privacy regulations (FERPA..."
+description: "Most K-12 districts should use managed services. The exceptions are sovereignty mandates, district consortia and student-data AI. This page says which."
 related_pages:
   - /industries/universities
   - /products/private-cloud-platform/

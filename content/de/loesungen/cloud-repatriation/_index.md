@@ -2,7 +2,7 @@
 title: "Cloud Repatriation — Public Cloud verlassen, ohne die Anwendung zu zerbrechen"
 description: "Der Broadcom Private Cloud Outlook 2025 fand heraus, dass 69% der Organisationen Cloud Repatriation evaluieren und 53% Private Cloud für neue Workloads..."
 type: "page"
-related_pages: ["/de/loesungen/cloud-kostenoptimierung", "/de/produkte/private-cloud"]
+related_pages: ["/de/loesungen/cloud-kostenoptimierung", "/de/produkte/private-cloud-platform/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -36,7 +36,7 @@ faq:
   - q: "Wie läuft ein Repatriation-Engagement mit Aenix ab?"
     a: "Aenix übersetzt die strategische Entscheidung in einen umsetzbaren Plan: Inventarisierung und Auswahl der zu migrierenden Workloads, Kostenmodellierung gegenüber dem aktuellen Public-Cloud-Setup und Entwurf der Zielarchitektur. Ein kostenloses Cloud-Repatriation-TCO-Worksheet steht für die erste Einschätzung bereit."
   - q: "Welche Plattform der Ænix Platform passt zu Repatriation?"
-    a: "Jede Ænix platform unterstützt Repatriation; die Wahl folgt dem Buyer-Profil. Hosting-Anbieter und regionale Clouds wählen die Public Cloud Platform, regulierte Unternehmen die Private Cloud Platform, große Betreiber die Public Cloud Platform, Produkt-Engineering-Teams die Developer Self-Service und KI-lastige Umgebungen die AI Platform."
+    a: "Jede Ænix-Plattform unterstützt Repatriation; die Wahl folgt dem Buyer-Profil. Wer Cloud an eigene Kunden verkauft — Hosting-Anbieter, regionale Clouds, große Betreiber —, wählt die Public Cloud Platform. Regulierte Unternehmen, die für sich selbst betreiben, wählen die Private Cloud Platform, deren Developer-Self-Service-Schicht auch Produkt-Engineering-Teams abdeckt. KI- und GPU-lastige Umgebungen wählen die AI Platform."
   - q: "Was kostet die Ænix Platform?"
     a: "Die Ænix Platform kombiniert Produkt und Services in vier Stufen: Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $/Monat, Plus 5.500 $/Monat und Enterprise mit individueller Preisgestaltung. Cozystack selbst ist Open Source unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
 ---
@@ -45,9 +45,9 @@ faq:
 
 **Der Broadcom Private Cloud Outlook 2025 fand heraus, dass 69% der Organisationen Cloud Repatriation evaluieren und 53% inzwischen Private Cloud für neue Workloads priorisieren. Die Gründe variieren — ausufernde Kosten, Regulatordruck, KI-Datenresidenz, vorhersagbare Performance — aber die architektonische Arbeit ist dieselbe: die richtigen Workloads für den Umzug identifizieren, den Umzug durchführen, ohne die Anwendung zu zerbrechen, und am Ende eine Plattform haben, die Sie tatsächlich betreiben können.**
 
-Ænix übernimmt das technische Engagement, das "wir müssen AWS / Azure / GCP verlassen" von einer Vorstandsaussage in einen funktionierenden Plan verwandelt — mit priorisierten Workloads, modellierten Kosten und einer Zielarchitektur, die die Public Cloud nicht auf die falsche Weise neu erfindet.
+Ænix übernimmt das technische Engagement, das „wir müssen AWS / Azure / GCP verlassen“ von einer Vorstandsaussage in einen funktionierenden Plan verwandelt — mit priorisierten Workloads, modellierten Kosten und einer Zielarchitektur, die die Public Cloud nicht auf die falsche Weise neu erfindet.
 
-> **Passt zu:** jeder **[Ænix platform](/de/produkte/)** — die richtige Plattform folgt Ihrem Buyer-Profil. Hosting-Anbieter / regionale Clouds: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Regulierte Unternehmen: [Private Cloud Platform](/de/produkte/private-cloud-platform/). Große Betreiber: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Produkt-Engineering-Teams: [Developer Self-Service](/de/produkte/private-cloud-platform/). KI-lastig: [AI Platform](/de/produkte/ai-platform/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
+> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)** — die richtige Plattform folgt Ihrem Buyer-Profil. Hosting-Anbieter, regionale Clouds und große Betreiber: [Public Cloud Platform](/de/produkte/public-cloud-platform/). Regulierte Unternehmen und Produkt-Engineering-Teams: [Private Cloud Platform](/de/produkte/private-cloud-platform/). KI- und GPU-lastig: [AI Platform](/de/produkte/ai-platform/). Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -75,7 +75,7 @@ Repatriation ist nicht für jeden. Die Teams, die am meisten von einem strukturi
 - **KI-/ML-Workloads mit Egress- und Inferenz-Kostenbedenken** — Model-Serving und Training, bei denen die Hyperscaler-Ökonomie im großen Maßstab nicht mehr aufgeht.
 - **Eine interne Plattform-Engineering-Funktion** (oder eine im Aufbau befindliche) — Repatriation erfordert jemanden, der die Zielplattform danach betreibt.
 
-Wenn Ihre Situation mindestens drei dieser Punkte erfüllt, verdient Repatriation einen strukturierten Blick. Wenn Sie ein kleines IT-Team haben, das eine Handvoll Services betreibt, lautet die Antwort fast immer "in der Public Cloud bleiben und die Ausgaben optimieren".
+Wenn Ihre Situation mindestens drei dieser Punkte erfüllt, verdient Repatriation einen strukturierten Blick. Wenn Sie ein kleines IT-Team haben, das eine Handvoll Services betreibt, lautet die Antwort fast immer „in der Public Cloud bleiben und die Ausgaben optimieren“.
 
 <!-- /BLOCK 2 -->
 
@@ -94,7 +94,7 @@ Wenn Ihre Situation mindestens drei dieser Punkte erfüllt, verdient Repatriatio
 Die Hyperscaler-Ökonomie belohnt Elastizität. Für Workloads, die rund um die Uhr bei vorhersagbarer Auslastung laufen, ist die Stückkostenrechnung on-prem oder in der Private Cloud regelmäßig 30-60% besser — sobald Egress, ungenutzte Ressourcen und unterausgelastete Verpflichtungen ehrlich einkalkuliert werden.
 
 **2. Regulatorischer und Souveränitäts-Druck**
-DORA (in Kraft seit Januar 2025), NIS2, DSGVO, sektorale Datenresidenz-Regeln und beschaffungsgetriebene Souveränitätsvorgaben (EU-Mitgliedstaaten, Kasachstan und andere) zwingen kritische Workloads zunehmend in die eigene Umgebung des Finanzunternehmens.
+DORA (in Kraft seit Januar 2025), NIS2, DSGVO, sektorale Datenresidenz-Regeln und beschaffungsgetriebene Souveränitätsvorgaben (EU-Mitgliedstaaten, Kasachstan und andere) zwingen kritische Workloads zunehmend in die eigene Umgebung des Unternehmens.
 
 **3. KI und Analytics auf sensiblen Daten**
 GenAI-, Inferenz- und Analytics-Workloads gegen regulierte Datenklassen stehen unter Druck an zwei Fronten: Die Datenverarbeitungsbedingungen der Model-Anbieter sind nicht akzeptabel, und die Egress-Kosten der Inferenz machen die Hyperscaler-Ökonomie im großen Maßstab unbrauchbar.
@@ -123,10 +123,10 @@ Der Broadcom Private Cloud Outlook 2025 hat die Verschiebung quantifiziert: **69
 Hardwarekosten sind einfach. Netzwerk, Rechenzentrum, Storage-Tiering, Observability, Identity, Backup, DR, laufende Plattform-Engineering-Kapazität — meist fehlend oder unterschätzt. Das Ergebnis: Repatriation wirkt günstiger, als sie ist, und enttäuscht dann nach 18 Monaten den CFO.
 
 **Die Zielarchitektur wird auf später verschoben**
-Workloads werden auf "einen On-Prem-Cluster" verschoben, ohne eine echte Plattform darunter. Das Team baut in schlechterer Form nach, was Hyperscaler ein Jahrzehnt lang entwickelt haben. Self-Service bricht. Die Geschwindigkeit sinkt. Repatriation bekommt die Schuld.
+Workloads werden auf „einen On-Prem-Cluster“ verschoben, ohne eine echte Plattform darunter. Das Team baut in schlechterer Form nach, was Hyperscaler ein Jahrzehnt lang entwickelt haben. Self-Service bricht. Die Geschwindigkeit sinkt. Repatriation bekommt die Schuld.
 
 **Datengravitation wird als Häkchen behandelt**
-"Die Datenbank zuletzt verschieben" — ohne einen echten Plan dafür, wie 50 TB Produktionsdaten das Netzwerk überqueren, wie das Cutover-Fenster aussieht, wie der Rollback-Pfad funktioniert und wo während des Umzugs die Backups liegen.
+„Die Datenbank zuletzt verschieben“ — ohne einen echten Plan dafür, wie 50 TB Produktionsdaten das Netzwerk überqueren, wie das Cutover-Fenster aussieht, wie der Rollback-Pfad funktioniert und wo während des Umzugs die Backups liegen.
 
 **Der Exit ist vollumfänglich, wenn selektiv die richtige Antwort ist**
 Die meisten Repatriationen sind nicht alles-oder-nichts. Das richtige Ergebnis sind meist 30-60% der Workloads on-prem (die Steady-State-, regulierten oder teuren) und 40-70% verbleiben in der Public Cloud (die elastischen, latenzsensitiven oder Hyperscaler-exklusiven). Repatriation als binäre Entscheidung zu behandeln, zerstört den ökonomischen Business Case.
@@ -156,7 +156,7 @@ Diese Fehler sind unabhängig von Cloud-Anbieter, Vendor oder Zielplattform. Es 
 Das Repatriation-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**, mit dem Kosten- und Cloud-Ausgaben-Workstream als primärem Fokus. Das 14- oder 28-tägige Engagement liefert:
 
 - **Ehrliches TCO-Modell** — aktuelle Public-Cloud-Ausgaben (inkl. Egress, Unterauslastung von Verpflichtungen, versteckte Kosten) gegenüber realistischen Zielkosten in Private Cloud oder Hybrid.
-- **Workload-Repatriation-Ranking** — jeder Workload klassifiziert als "jetzt repatriieren / später repatriieren / in der Cloud bleiben", geordnet nach ROI und Risiko.
+- **Workload-Repatriation-Ranking** — jeder Workload klassifiziert als „jetzt repatriieren / später repatriieren / in der Cloud bleiben“, geordnet nach ROI und Risiko.
 - **Zielarchitektur** — wie die Plattform aussieht, auf der die Workloads landen, einschließlich Compute, Storage, Netzwerk, Identity, Observability, DR und der Plattform-Engineering-Funktion, die sie betreibt.
 - **Cutover-Sequenzierung** — Repatriation-Kohorten, die den Ablauf von Verpflichtungen respektieren und die Datenbewegung zwischen Umgebungen minimieren.
 - **Implementierungs-Roadmap für Phase 2** — was eine von Ænix gelieferte Phase 2 tun würde, in welcher Reihenfolge, mit Aufwandsschätzungen.
@@ -171,7 +171,7 @@ Geliefert von Ænix-Ingenieuren, die Produktionsplattformen für Service-Provide
 
 ## Warum gerade Ænix
 
-- **Keine Hyperscaler-Voreingenommenheit.** Repatriation-Beratung von Big-4-Beratungshäusern ist von deren Hyperscaler-Partnerschaften geprägt. Unsere Empfehlungen sind kommerziell nicht an AWS, Azure, GCP oder einen einzelnen Anbieter gebunden — wir sagen "in der Public Cloud bleiben", wenn das die Antwort ist, und wir sagen "vollständig on-prem", wenn das die Antwort ist.
+- **Keine Hyperscaler-Voreingenommenheit.** Repatriation-Beratung von Big-4-Beratungshäusern ist von deren Hyperscaler-Partnerschaften geprägt. Unsere Empfehlungen sind kommerziell nicht an AWS, Azure, GCP oder einen einzelnen Anbieter gebunden — wir sagen „in der Public Cloud bleiben“, wenn das die Antwort ist, und wir sagen „vollständig on-prem“, wenn das die Antwort ist.
 - **Ingenieure, keine Berater.** Die Ingenieure, die das Repatriation-Engagement durchführen, bauen die Produktionsplattformen anschließend selbst. Die Aufwandsschätzungen für die Implementierung im Bericht sind an Arbeit kalibriert, die wir tatsächlich ausgeliefert haben — nicht an Branchen-Benchmarks.
 - **Open-Source-Zielplattform.** Wir sind das Unternehmen hinter **[Cozystack](/de/produkte/cozystack/)** — einer Open-Source-, Kubernetes-nativen Cloud-Plattform (CNCF Project, Kubernetes Certified Distribution). Wo Cozystack die Zielarchitektur besser trifft als die Alternative, erklärt der Bericht warum, mit benannten architektonischen Eigenschaften. Wo nicht, sagen wir es.
 
@@ -204,7 +204,7 @@ Zur vollständigen Methodik siehe **[Platform Readiness Assessment](/de/dienstle
 Wir haben Cloud-Repatriation-Engagements für Service-Provider, Finanzdienstleister, Telekommunikationsbetreiber und KI-/GPU-Plattformen in der EU, der DACH-Region und Zentralasien durchgeführt. Die verschobenen Workloads reichten von Steady-State-Produktionsdatenbanken bis zu KI-Inferenz-Clustern; die Ergebnisse reichten von vollständig on-prem bis zu selektivem Hybrid.
 
 {{< quote-carousel >}}
-Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 Benannte Case Studies sind im Discovery-Call verfügbar, sofern die Kundenfreigaben es erlauben.
 
 <!-- /BLOCK 8 -->
@@ -224,7 +224,7 @@ Tiefe der TCO-Modellierung, Ranking des Workload-Portfolios, Optionen für die Z
 **Auf Anfrage**
 
 ### 28 Tage (vollständiges Repatriation-Programm)
-Ergänzt um Vendor-Shortlisting (Compute / Storage / Netzwerk / Observability), Proof-of-Concept-Scoping für 1-2 Prioritäts-Workloads, Stakeholder-Interviews über mehrere Geschäftsbereiche, vollständige Implementierungs-Roadmap für Phase 2.
+Ergänzt um Anbieter-Vorauswahl (Compute / Storage / Netzwerk / Observability), Proof-of-Concept-Scoping für 1-2 Prioritäts-Workloads, Stakeholder-Interviews über mehrere Geschäftsbereiche, vollständige Implementierungs-Roadmap für Phase 2.
 **Auf Anfrage**
 
 </div>

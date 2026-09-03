@@ -1,6 +1,6 @@
 ---
 title: "Platform Readiness Assessment — for cloud sovereignty, migration, and cost posture in 14 days"
-description: "A structured cloud readiness assessment that gives you three concrete outcomes: time-to-environment metric, compliance-by-design map, and cost-and-control..."
+description: "Fixed-price 14 or 28-day assessment: time-to-environment metric, compliance-by-design map across DORA, NIS2 and GDPR, and a 12-month cost trajectory."
 related_pages: ["/solutions/data-sovereignty/", "/solutions/dora-compliance/", "/solutions/cloud-repatriation/", "/solutions/sovereign-ai/", "/services/platform-engineering/", "/products/", "/products/cozystack/", "/pricing"]
 language: "en"
 quick_facts_style: "rows"

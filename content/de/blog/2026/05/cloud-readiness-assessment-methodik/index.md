@@ -53,7 +53,7 @@ Jeder hat einen benannten Eigentümer auf unserer Seite, ein definiertes Deliver
 - IaC-Abdeckung, GitOps-Reife, CI/CD-Eigentum
 
 ### Workstream 2: Souveränität und Regulator-Lücke
-- DORA / NIS2 / GDPR / sektorale Anwendbarkeit
+- DORA / NIS2 / DSGVO / sektorale Anwendbarkeit
 - Datenresidenz-Mapping, Verschlüsselungsposture, Lieferanten-Risikokonzentration
 - Audit-Trail
 

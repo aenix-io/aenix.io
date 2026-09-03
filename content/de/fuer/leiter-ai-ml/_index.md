@@ -64,7 +64,7 @@ Engineering in der EU · Ihre GPUs, Ihre Jurisdiktion · Kein Endpoint-Lock-in �
 - **GPU-Kosten und -Knappheit** machen Hyperscaler-Instanzen teuer und schwer verfügbar.
 - Trainingsdaten sind **sensibel oder reguliert** und dürfen nicht zu einem Drittanbieter-Endpoint.
 - Sie brauchen **mandantenfähiges GPU-Sharing** über Teams hinweg, kein Cluster pro Projekt.
-- Sie wollen produktive **Inferenz (vLLM/LLM-Serving)** ohne ständiges Neu-Plattformieren.
+- Sie wollen produktive **Inferenz (vLLM/LLM-Serving)** ohne ständiges Neuaufsetzen der Plattform.
 
 ---
 
@@ -82,17 +82,11 @@ Data-Science- und Produktteams Self-Service-GPU geben — für Training und Serv
 
 ---
 
-
----
-
 ## Warum AI/ML-Leiter Ænix wählen
 
 - **Souverän by construction.** Sensible Daten und Modelle bleiben auf Ihrer Hardware, in Ihrer Jurisdiktion.
 - **Mandantenfähige GPU statt Silos.** Knappe GPUs über Teams teilen, mit Quotas und Isolation.
 - **Autoren, keine Reseller.** Das Team hinter Cozystack entwirft und supportet die Plattform.
-
----
-
 
 ---
 
@@ -107,7 +101,7 @@ Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-ai-ml/ ; hreflang de self, en → /for/head-of-ai-ml/.

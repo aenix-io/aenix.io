@@ -106,7 +106,7 @@ Prüfen Sie es auf Ihrem eigenen Knoten, statt es zu glauben:
 talosctl -n <control-plane-ip> list -l /etc/kubernetes /etc/kubernetes/manifests
 ```
 
-Die ehrliche Lesart lautet nicht „fünfzehn Kontrollen sind fehlgeschlagen", sondern „fünfzehn Kontrollen sind nicht anwendbar, und das Risiko, das sie steuern sollen, wird durch Unveränderlichkeit statt durch Dateirechte behandelt".
+Die ehrliche Lesart lautet nicht „fünfzehn Kontrollen sind fehlgeschlagen“, sondern „fünfzehn Kontrollen sind nicht anwendbar, und das Risiko, das sie steuern sollen, wird durch Unveränderlichkeit statt durch Dateirechte behandelt“.
 
 Eine Prüfung derselben Gruppe, 1.1.12, schlägt aus einem anderen Grund fehl. Das etcd-Datenverzeichnis existiert und ist lesbar — Prüfung 1.1.11 bestätigt Modus 0700 —, aber etcd läuft als root, auf einem Talos-Knoten gibt es kein System-Konto `etcd`, und der scannende Container kann den numerischen Eigentümer keinem Namen zuordnen. Die Absicht der Kontrolle, den Lesezugriff auf das etcd-Datenverzeichnis einzuschränken, ist erfüllt; die wörtlich geforderte Eigentümerschaft `etcd:etcd` kann auf einem System ohne Benutzerkonten nicht existieren.
 
@@ -170,7 +170,7 @@ talosctl -n <control-plane-ip> get authorizationconfig -o yaml
 
 ## Die Audit-Policy: die Prüfung, die kube-bench Ihnen überlässt
 
-Prüfung 3.2.2 — „sicherstellen, dass die Audit-Policy zentrale Sicherheitsbelange abdeckt" — ist eine manuelle Prüfung; kube-bench meldet eine Warnung und geht weiter. Sie lohnt sich von Hand.
+Prüfung 3.2.2 — „sicherstellen, dass die Audit-Policy zentrale Sicherheitsbelange abdeckt“ — ist eine manuelle Prüfung; kube-bench meldet eine Warnung und geht weiter. Sie lohnt sich von Hand.
 
 Auf dem hier untersuchten Cluster steht die Audit-Policy auf `level: Metadata`. Das hält fest, wer wann was aufgerufen hat, aber nicht die Request- oder Response-Bodies. Für den laufenden Betrieb ein vernünftiger Default; für ein Regime, das die Rekonstruktion tatsächlicher Änderungen erwartet — PCI DSS Anforderung 10.2.1 etwa — für sich genommen zu wenig.
 

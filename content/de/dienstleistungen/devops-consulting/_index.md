@@ -3,7 +3,7 @@ title: "DevOps Consulting — Engineers, die Plattformen in Produktion betreiben
 description: "Die meisten \"DevOps-Consulting\"-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im..."
 related_pages:
   - /de/dienstleistungen/platform-engineering
-  - /products/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -42,7 +42,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Die meisten "DevOps-Consulting"-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im Lesen von Gartner-Berichten besteht. Das Deliverable ist meist eine Transformations-Roadmap, die im Regal verstaubt. Wir machen das Gegenteil: Senior-Engineers, die Plattformen in Produktion bauen und betreiben, an der Seite Ihres Teams, mit schriftlichen Runbooks, die Ihr Team danach besitzt.**
+**Die meisten „DevOps-Consulting“-Engagements werden von Big-4-Firmen verkauft und von Management-Beratern geliefert, deren tiefste Produktionserfahrung im Lesen von Gartner-Berichten besteht. Das Deliverable ist meist eine Transformations-Roadmap, die im Regal verstaubt. Wir machen das Gegenteil: Senior-Engineers, die Plattformen in Produktion bauen und betreiben, an der Seite Ihres Teams, mit schriftlichen Runbooks, die Ihr Team danach besitzt.**
 
 > **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn DevOps-Arbeit zu einer vollständigen Internal Developer Platform skaliert. Für technischen Scope auf bestehender Infrastruktur: eigenständiges Consulting-Engagement.
 
@@ -58,9 +58,6 @@ Senior-Engineers, keine Analysten · Produktionserfahrung · Open-Source-Foundat
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -133,7 +130,7 @@ Das Ergebnis wird in operativen Metriken gemessen — DORA-Metriken (Deployment-
 **Slide-Deck-Transformations-Roadmap**
 Das Big-4-Engagement liefert einen 200-seitigen Transformationsplan. Der Plan ist technisch korrekt und operativ träge. Fehler: nichts wird gebaut; die Zeit des Teams ging in Workshops.
 
-**Tool-getriebenes "DevOps" ohne Plattform-Denken**
+**Tool-getriebenes „DevOps“ ohne Plattform-Denken**
 Consulting, das eigentlich Tool-Implementierung ist — Jenkins / Argo / Datadog installieren. Tools sind deployt, aber die Architektur bleibt gleich. Fehler: Tools ohne kohärente Plattform erzeugen mehr operative Komplexität, nicht weniger.
 
 **Junior-Berater in einem Senior-Engagement**
@@ -203,14 +200,14 @@ Die meisten Engagements beginnen mit dem Assessment.
 Wir haben DevOps-Consulting- und Transformations-Engagements für Service Provider, regulierte Unternehmen, KI/GPU-Operatoren und Telekom-Betreiber in der EU, DACH und Zentralasien durchgeführt.
 
 {{< quote-carousel >}}
-Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 <!-- /BLOCK 8 -->
 
 ---
 
 <!-- BLOCK 9: PRICING -->
 
-## Pricing
+## Preise
 
 <div class="pricing-cards-2">
 

@@ -1,6 +1,6 @@
 ---
 title: "Cloud engineering services — practical engineering across hyperscaler, hybrid, and on-prem"
-description: "\"Cloud engineering\" covers the full spectrum from hyperscaler-native architecture to private-cloud platform engineering. The Aenix engagement applies senior..."
+description: "Senior cloud engineers who do the work: architecture, IaC, observability, CI/CD and FinOps across hyperscaler, hybrid and on-prem. Review, build or managed."
 related_pages: ["/services/platform-engineering", "/services/devops-consulting", "/services/platform-readiness-assessment", "/products/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"

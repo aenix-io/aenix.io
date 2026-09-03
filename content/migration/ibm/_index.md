@@ -212,7 +212,7 @@ Cozystack is a [CNCF Sandbox project](https://landscape.cncf.io) — its license
 
 The destination architecture is engineered for linear horizontal growth — each x86 node adds both compute and a share of distributed storage, no re-architecture:
 
-- **Storage in the kernel.** LINSTOR orchestrates per-volume DRBD devices on ZFS; DRBD runs in the Linux kernel — minimal overhead, faster than userspace solutions like Longhorn. After a node returns, DRBD resyncs only the changed chunks by bitmap, not the whole disk — critical at large volume sizes.
+- **Storage in the kernel.** LINSTOR orchestrates per-volume DRBD devices on ZFS; DRBD replicates in the Linux kernel rather than in a userspace daemon, so the write path does not cross into user space on every I/O. After a node returns, DRBD resyncs only the changed chunks by bitmap, not the whole disk — critical at large volume sizes.
 - **No bottleneck at scale.** Each PVC is an independent DRBD device spread across the cluster — 100 volumes means 100 independent devices, not one fat shared device.
 - **Network.** Cilium eBPF replaces kube-proxy with O(1) in-kernel service lookup; latency does not degrade as service count grows.
 - **Geo-stretch.** Clusters can span up to three data centers; replication goes synchronous only for a migrating VM, governed by a hard RTT budget (~15 ms).

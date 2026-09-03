@@ -1,6 +1,6 @@
 ---
 title: "Cloud-Plattform für Universitäten — Research Computing, KI/ML-Labore und Cloud-native-Lehre"
-description: "Universitäten und Forschungsinstitute in 2026 brauchen Cloud-native Infrastruktur für drei überlappende Missionen: ernsthaftes Research Computing (besonders..."
+description: "Universitäten und Forschungsinstitute im Jahr 2026 brauchen Cloud-native Infrastruktur für drei überlappende Missionen: ernsthaftes Research Computing (besonders..."
 related_pages:
   - /de/loesungen/sovereign-ai
   - /de/loesungen/data-sovereignty
@@ -69,14 +69,14 @@ Moderne Forschung verlangt zunehmend GPU-Cluster, großskaliges Data Processing 
 <div class="diagram__conn">isoliert durch</div>
 <div class="diagram__node diagram__node--brand"><b>Cozystack Tenant CRD</b><div class="diagram__chips"><span>Multi-Tenant</span><span>Self-Service</span></div></div>
 <div class="diagram__conn">provisioniert</div>
-<div class="diagram__node"><b>GPU-as-a-Service</b><div class="diagram__chips"><span>vGPU</span><span>MIG</span><span>Time-Slicing</span></div></div>
+<div class="diagram__node"><b>GPU-as-a-Service</b><div class="diagram__chips"><span>vGPU</span><span>GPU Operator</span><span>HAMi-Sharing</span></div></div>
 <div class="diagram__conn">läuft neben</div>
 <div class="diagram__node"><b>VMs + Container</b><div class="diagram__chips"><span>KubeVirt</span><span>Eine Kubernetes-API</span></div></div>
 </div>
 </div>
 
 Cozystack liefert:
-- **GPU-Cluster** mit NVIDIA vGPU + MIG + Time-Slicing für geteilte Auslastung (validiert für A100, H100, H200, L40S, Blackwell)
+- **GPU-Cluster** mit NVIDIA vGPU für VMs und fraktionalem GPU-Sharing über HAMi auf dem NVIDIA GPU Operator für geteilte Auslastung (validiert für A100, H100, H200, L40S, Blackwell)
 - **Multi-Tenant-Isolation pro Labor** — Tenant-CRD-Modell mit Quotas, RBAC und Audit-Trails pro Labor
 - **VM und Container Seite an Seite** — bildet Legacy-Forschungs-Workflows neben modernen containerisierten Pipelines ab
 - **Self-Service für Principal Investigators** — Labore können ihre eigenen Environments ohne Ticket-Warteschlangen provisionieren
@@ -157,7 +157,7 @@ Universitäts-Engagements haben oft spezifische Merkmale:
 
 - **Beschaffung über öffentliche Vergabeportale** — EU-TED, Portale der Mitgliedstaaten, KZ goszakup.gov.kz wo zutreffend
 - **Konsortien mehrerer Institutionen** — Engagements können mehrere Universitäten gleichzeitig bedienen
-- **Capacity-Transfer an die interne IT** — akademische IT-Teams betreiben die Plattform nach dem Aufbau; Wissenstransfer ist erstklassig
+- **Kompetenztransfer an die interne IT** — akademische IT-Teams betreiben die Plattform nach dem Aufbau; Wissenstransfer ist erstklassig
 - **Ausrichtung an Forschungsförderung** — der Engagement-Zeitplan ist oft an Förderzyklen ausgerichtet
 - **Kollaborations-Scope mit Industriepartnern** — Universitäten kooperieren zunehmend mit der Industrie; die Plattform unterstützt Multi-Stakeholder-Zugriff
 
@@ -171,7 +171,7 @@ Die Cozystack-Plattform ist Open Source (Apache 2.0). Ænix bietet akademiefreun
 
 - **Akademischer Rabatt** auf kommerzielle Support-Tiers
 - **Phasenweises Engagement** ausgerichtet an Förderzyklen
-- **Fokus auf Capacity-Transfer** — das Engagement investiert explizit in langfristige institutionelle Fähigkeiten
+- **Fokus auf Kompetenztransfer** — das Engagement investiert explizit in langfristige institutionelle Fähigkeiten
 - **CNCF-Projekt-Status** — Cozystack ist Teil des akademischen Open-Source-Ökosystems; einige Universitäten können CNCF- / Open-Source-Beschaffungsrahmen anwenden
 
 Für konkrete Konditionen siehe Discovery-Call.

@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for manufacturing — Industry 4.0, edge-ready, sovereign"
-description: "Manufacturing in 2026 means simultaneous demands: Industry 4.0 transformation, NIS2 compliance (manufacturing of critical products is in scope), edge..."
+description: "Industry 4.0 cloud at Purdue levels 3 and 3.5: MES, historians, OPC-UA and quality inference across HQ, sites and the floor. Sites survive a dead uplink."
 related_pages:
   - /solutions/data-sovereignty
   - /solutions/nis2-compliance

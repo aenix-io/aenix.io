@@ -1,7 +1,7 @@
 ---
 title: "Private Cloud — Open Source, Kubernetes-nativ, mandantenfähig"
 description: "Cozystack ist die Open-Source-Private-Cloud-Plattform für Service Provider, regulierte Unternehmen und souveräne Cloud-Builder. KubeVirt-basierte..."
-related_pages: ["/de/alternativen/vmware-alternative", "/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/products/cozystack"]
+related_pages: ["/de/alternativen/vmware-alternative", "/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/de/produkte/cozystack/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -33,7 +33,7 @@ faq:
   - q: "Eignet sich die Plattform für DORA- und NIS2-regulierte Unternehmen?"
     a: "Ja. Banken, Versicherungen und der öffentliche Sektor betreiben Cozystack auf eigener Hardware unter eigener Governance, was Datensouveränität sowie DORA- und NIS2-Anforderungen unterstützt. Backup und DR erfolgen über Velero, S3 und per-DB PITR."
   - q: "Unterstützt Cozystack GPU-Workloads für KI?"
-    a: "Ja. Cozystack bietet GPU as a Service mit NVIDIA vGPU und MIG, validiert auf A100, H100, H200, L40S und Blackwell. Damit lassen sich KI- und GPU-Workloads auf derselben mandantenfähigen Plattform wie VMs und Container betreiben."
+    a: "Ja. Cozystack bietet GPU as a Service mit NVIDIA vGPU für VMs und fraktionalem GPU-Sharing über HAMi auf dem NVIDIA GPU Operator für Container, validiert auf A100, H100, H200, L40S und Blackwell. Damit lassen sich KI- und GPU-Workloads auf derselben mandantenfähigen Plattform wie VMs und Container betreiben."
   - q: "Was bietet Aenix kommerziell zusätzlich zu Cozystack?"
     a: "Aenix ist das Team hinter Cozystack und liefert die produktisierte Ænix Platform sowie Support-Tiers (Community kostenlos, Standard mit Geschäftszeiten-Support, Enterprise mit 24×7-SLA und dediziertem TAM) und professionelle Dienstleistungen für Architektur und Plattformeinführung."
 aliases:
@@ -67,7 +67,7 @@ CNCF-Projekt · Kubernetes Certified Distribution · OpenSSF Best Practices · A
 - **Service Provider** — betreiben mandantenfähige Cloud-Produkte für Enterprise-Kunden
 - **Banken und Versicherer** — regulierte Workloads unter DORA / sektoraler Compliance
 - **Telekommunikationsbetreiber** — Souveräne-Cloud-Produktstarts
-- **KI-/GPU-Betreiber** — GPU-Workloads mit nachhaltiger Auslastung, bei denen die Hyperscaler-Ökonomie nicht passt
+- **KI-/GPU-Betreiber** — GPU-Workloads mit dauerhaft hoher Auslastung, bei denen die Hyperscaler-Ökonomie nicht passt
 - **Öffentlicher und quasi-öffentlicher Sektor** — souveränitäts-mandatierte Infrastruktur unter Beschaffungsregeln
 - **Enterprise-Plattform-Teams** — interne Developer-Plattformen mit Multi-BU-Isolation
 
@@ -100,7 +100,7 @@ Tenant-CRD-Modell mit verschachtelten Tenants, Per-Tenant-Quotas, RBAC, Audit. G
 PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB — erstklassige Managed-Service-Angebote.
 
 **6. GPU as a Service**
-NVIDIA vGPU für VMs, MIG / Time-Slicing / Passthrough für Container. Validiert auf A100, H100, H200, L40S, Blackwell.
+NVIDIA vGPU für VMs; für Container der NVIDIA GPU Operator mit HAMi für fraktionales GPU-Sharing sowie PCI-Passthrough. Validiert auf A100, H100, H200, L40S, Blackwell.
 
 **7. Observability**
 VictoriaMetrics + VictoriaLogs enthalten — geringer Overhead, souveränitätsfreundlich. Optional Grafana obenauf.

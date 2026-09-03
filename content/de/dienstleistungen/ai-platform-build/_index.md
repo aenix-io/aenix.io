@@ -1,6 +1,6 @@
 ---
 title: "AI Platform Build — Custom-KI-Infrastruktur für Startups und Unternehmen"
-description: "KI-Startups und KI-lastige Unternehmen in 2026 stehen vor der gleichen architektonischen Wahl: Inferenz mieten zu Hyperscaler-Ökonomie, oder dedizierte..."
+description: "KI-Startups und KI-lastige Unternehmen im Jahr 2026 stehen vor der gleichen architektonischen Wahl: Inferenz zu Hyperscaler-Konditionen mieten, oder dedizierte..."
 related_pages:
   - /de/loesungen/sovereign-ai
   - /de/produkte/ai-platform/
@@ -11,7 +11,7 @@ hreflang_en: /services/ai-platform-build/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **AI Platform Build ist der End-to-End-Service von Aenix für den Aufbau dedizierter KI-Infrastruktur für KI-Startups und KI-lastige Unternehmen. Statt Inferenz dauerhaft zu Hyperscaler-Preisen zu mieten, baut Aenix on-premises- oder colocation-basierte Plattformen mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), Modell-Deployment-Workflows (vLLM, Triton), Vector-DB- und Object-Storage-Integration sowie Souveränitätskontrollen. Für nachhaltige Workloads wie 24/7-Inferenz, Fine-Tuning und Training amortisiert sich dedizierte Infrastruktur typischerweise nach rund einem Jahr Betrieb. Die Plattform basiert auf Cozystack (CNCF-Projekt, Apache 2.0), das KubeVirt, Cilium und LINSTOR auf einer Kubernetes-API vereint.**
+  **AI Platform Build ist der End-to-End-Service von Aenix für den Aufbau dedizierter KI-Infrastruktur für KI-Startups und KI-lastige Unternehmen. Statt Inferenz dauerhaft zu Hyperscaler-Preisen zu mieten, baut Aenix on-premises- oder colocation-basierte Plattformen mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), Modell-Deployment-Workflows (vLLM, Triton), Vector-DB- und Object-Storage-Integration sowie Souveränitätskontrollen. Für dauerhaft ausgelastete Workloads wie 24/7-Inferenz, Fine-Tuning und Training amortisiert sich dedizierte Infrastruktur typischerweise nach rund einem Jahr Betrieb. Die Plattform basiert auf Cozystack (CNCF-Projekt, Apache 2.0), das KubeVirt, Cilium und LINSTOR auf einer Kubernetes-API vereint.**
 quick_facts:
   - label: "Was es ist"
     value: "End-to-End-Service zum Aufbau dedizierter KI-Infrastruktur (Inferenz, Fine-Tuning, RAG, Air-Gapped) auf Basis von Cozystack."
@@ -20,7 +20,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "KI-Startups mit nachhaltigen Inferenz-Workloads, Banken und Versicherer mit regulierten KI-Workloads, öffentlicher Sektor und Gesundheitswesen mit KI auf sensiblen Daten."
+    value: "KI-Startups mit dauerhaft ausgelasteten Inferenz-Workloads, Banken und Versicherer mit regulierten KI-Workloads, öffentlicher Sektor und Gesundheitswesen mit KI auf sensiblen Daten."
   - label: "Schlüsselfunktion"
     value: "Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), Modell-Deployment (vLLM, Triton), Vector-DB- und Object-Storage-Integration."
   - label: "Souveränität"
@@ -29,7 +29,7 @@ quick_facts:
     value: "Architektur-Design, GPU-Sizing und -Beschaffung, Observability für KI-Workloads und Training des Operations-Teams."
 faq:
   - q: "Wann lohnt sich dedizierte KI-Infrastruktur gegenüber gemieteter Hyperscaler-GPU?"
-    a: "Für nachhaltige Workloads wie 24/7-Inferenz, Fine-Tuning und Training gewinnt dedizierte Infrastruktur in der Regel nach rund einem Jahr Betrieb. Bei kurzlebigen oder stark schwankenden Workloads kann gemietete GPU weiterhin günstiger sein. Aenix bewertet das Lastprofil im Discovery-Call."
+    a: "Für dauerhaft ausgelastete Workloads wie 24/7-Inferenz, Fine-Tuning und Training gewinnt dedizierte Infrastruktur in der Regel nach rund einem Jahr Betrieb. Bei kurzlebigen oder stark schwankenden Workloads kann gemietete GPU weiterhin günstiger sein. Aenix bewertet das Lastprofil im Discovery-Call."
   - q: "Welche GPUs unterstützt die Plattform?"
     a: "Die Plattform unterstützt Multi-Tenant-GPU-Scheduling für NVIDIA H100, H200, L40S, A100 und Blackwell. Aenix übernimmt auf Wunsch auch GPU-Sizing und -Beschaffung als Teil des Services."
   - q: "Ist die Plattform für regulierte KI-Workloads in Banken oder im Gesundheitswesen geeignet?"
@@ -42,7 +42,7 @@ faq:
     a: "Die [Ænix AI Platform](/de/produkte/ai-platform/) ist das produktisierte, turnkey Angebot mit fertigen Blueprints. AI Platform Build ist der begleitende Service, der die Plattform end-to-end für die spezifische Architektur und Beschaffung des Kunden aufbaut."
 ---
 
-**KI-Startups und KI-lastige Unternehmen in 2026 stehen vor der gleichen architektonischen Wahl: Inferenz mieten zu Hyperscaler-Ökonomie, oder dedizierte Infrastruktur bauen, die im großen Maßstab sich auszahlt. Für nachhaltige Workloads (24/7 Inferenz, Fine-Tuning, Training) gewinnt dedizierte Infrastruktur normalerweise nach einem Jahr Betrieb. Ænix baut diese Plattformen end-to-end.**
+**KI-Startups und KI-lastige Unternehmen im Jahr 2026 stehen vor der gleichen architektonischen Wahl: Inferenz zu Hyperscaler-Konditionen mieten, oder dedizierte Infrastruktur bauen, die sich im großen Maßstab auszahlt. Für dauerhaft ausgelastete Workloads (24/7 Inferenz, Fine-Tuning, Training) gewinnt dedizierte Infrastruktur normalerweise nach einem Jahr Betrieb. Ænix baut diese Plattformen end-to-end.**
 
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling (H100/H200/L40S/A100/Blackwell), fertige Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen für regulierte KI-Workloads. Kostenloser [Sovereign AI Decision Guide →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
@@ -57,7 +57,7 @@ faq:
 
 ## Wer baut dedizierte KI-Plattformen
 
-- **KI-Startups** mit nachhaltigen Inferenz-Workloads, wo Hyperscaler-GPU zu teuer ist
+- **KI-Startups** mit dauerhaft ausgelasteten Inferenz-Workloads, wo Hyperscaler-GPU zu teuer ist
 - **Banken und Versicherer** mit regulierten KI-Workloads (Fraud-Detection, Schadenfall-KI)
 - **Öffentlicher Sektor** mit KI auf Bürgerdaten
 - **Gesundheitswesen** mit KI auf medizinischen Daten
@@ -68,7 +68,7 @@ faq:
 
 ---
 
-## Was inkludiert ist
+## Leistungsumfang
 
 - Architektur-Design (Inferenz / Fine-Tuning / RAG / Air-Gapped)
 - GPU-Sizing und -Beschaffung

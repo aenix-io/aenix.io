@@ -105,7 +105,7 @@ Die Ænix Plattformen liefern [Konveyor Forklift](https://github.com/kubev2v/for
 | oVirt / RHV | kalt und warm | Warm mit demselben Precopy- und Cutover-Modell. |
 | OpenStack | nur kalt | Jede Instanz braucht ein echtes Abschaltfenster. |
 | OVA-Dateien | nur kalt | Brauchbar für alles, was eine OVA exportieren kann. Hersteller-Appliances fallen nach der Konvertierung womöglich aus dem Support. |
-| Entfernte KubeVirt-/OpenShift-Cluster | kalt | Cluster zu Cluster. |
+| Externe KubeVirt-/OpenShift-Cluster | kalt | Cluster zu Cluster. |
 
 Warme Migration ist keine Live-Migration: Der RAM-Zustand wandert nicht mit, ein Neustart bleibt. Was sie bringt, ist eine Auszeit in der Größe des letzten Deltas statt in der Größe einer vollständigen Disk-Kopie.
 

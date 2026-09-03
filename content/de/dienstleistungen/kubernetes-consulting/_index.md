@@ -3,7 +3,7 @@ title: "Kubernetes Consulting — Engineers, die multi-tenant Plattformen in Pro
 description: "Die meisten Kubernetes-Consulting-Engagements behandeln Kubernetes als generische Compute-Plattform. Die Realität ist, dass Produktions-Kubernetes aus..."
 related_pages:
   - /de/dienstleistungen/platform-engineering
-  - /products/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -42,11 +42,11 @@ faq:
 
 <!-- BLOCK 1 -->
 
-**Die meisten Kubernetes-Consulting-Engagements behandeln Kubernetes als generische Compute-Plattform. Die Realität ist, dass Produktions-Kubernetes aus spezifischen Gründen schwierig ist: Multi-Tenancy, Observability, Identität, Networking, Storage-Auswahl, GitOps-Disziplin und die operativen Praktiken, die einen Cluster zuverlässig im großen Maßstab halten. Generisches Consulting, das diese Spezifika nicht adressiert, erzeugt einen Cluster, der "funktioniert", aber nicht gut läuft.**
+**Die meisten Kubernetes-Consulting-Engagements behandeln Kubernetes als generische Compute-Plattform. Die Realität ist, dass Produktions-Kubernetes aus spezifischen Gründen schwierig ist: Multi-Tenancy, Observability, Identität, Networking, Storage-Auswahl, GitOps-Disziplin und die operativen Praktiken, die einen Cluster zuverlässig im großen Maßstab halten. Generisches Consulting, das diese Spezifika nicht adressiert, erzeugt einen Cluster, der „funktioniert“, aber nicht gut läuft.**
 
 Ænix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Multi-Tenant-Kubernetes-nativen Plattform, die wir in Produktion mit Service Providern, Banken und KI-Operatoren betreiben. Unsere Kubernetes-Consulting-Engagements bringen dieselben Engineers in Ihr Team.
 
-> **Passt zu:** jeder **[Ænix platform](/de/produkte/)**, wenn der Consulting-Scope sich zu einem produktisierten Cloud-Plattform-Engagement erweitert. Eigenständiges Consulting ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
+> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)**, wenn der Consulting-Scope sich zu einem produktisierten Cloud-Plattform-Engagement erweitert. Eigenständiges Consulting ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -57,9 +57,6 @@ faq:
 Produktions-Multi-Tenancy · Open-Source-Foundation · CNCF-Contributor · Senior-Engineers</div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -128,7 +125,7 @@ Sicherheits-Posture (PSPs / Pod Security Standards, Network Policies, Secrets-Ma
 <div class="gap-cards-2">
 
 **Distribution nach Vertrautheit gewählt, nicht nach Eignung**
-"Wir sind ein OpenShift-Shop" — selbst wenn OpenShift für einen Multi-Tenant-Cloud-Use-Case Komplexität hinzufügt, in dem Cozystack besser passen würde. Die Distributions-Auswahl ist strukturell.
+„Wir sind ein OpenShift-Shop“ — selbst wenn OpenShift für einen Multi-Tenant-Cloud-Use-Case Komplexität hinzufügt, in dem Cozystack besser passen würde. Die Distributions-Auswahl ist strukturell.
 
 **Multi-Tenancy aufgesetzt statt eingebaut**
 Cluster startete als Single-Team; Multi-Tenancy später über Namespaces und Konvention hinzugefügt. Kippt im großen Maßstab oder unter Regulator-Audit.
@@ -191,7 +188,7 @@ Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessmen
 {{< clients >}}
 
 {{< quote-carousel >}}
-Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 <!-- /BLOCK 8 -->
 
 ---

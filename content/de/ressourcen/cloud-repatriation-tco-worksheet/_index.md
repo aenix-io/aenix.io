@@ -36,7 +36,7 @@ faq:
   - q: "Was kostet die Ænix Platform als Repatriation-Ziel?"
     a: "Die Ænix Platform wird in Stufen angeboten: Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise als individuelles Angebot. Der Open-Source-Kern Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
   - q: "Über welchen Zeitraum vergleicht das Worksheet die Kosten?"
-    a: "Das Worksheet enthält eine 5-Jahres-Cost-Trajektorie. Auf der Destination-Seite werden Hardware-Akquisition plus Refresh, Colocation, Netzwerk-Bandbreite, Storage-Tiering, Backup/DR sowie Plattform-Engineering-Kapazität berücksichtigt, um den vollen Lebenszyklus abzubilden."
+    a: "Das Worksheet enthält eine 5-Jahres-Kostenverlauf. Auf der Destination-Seite werden Hardware-Beschaffung plus Refresh, Colocation, Netzwerk-Bandbreite, Storage-Tiering, Backup/DR sowie Plattform-Engineering-Kapazität berücksichtigt, um den vollen Lebenszyklus abzubilden."
 ---
 
 **Ein zehnseitiges Arbeitsblatt — PDF plus editierbare CSV für Excel oder Google Sheets — das Ihre tatsächlichen Public-Cloud-Kosten in einen ehrlichen Fünf-Jahres-TCO-Vergleich gegen Private Cloud überführt. Modelliert versteckte Kosten (Egress, ungenutzte Ressourcen, Commitment-Underutilisation, Hyperscaler-Managed-Service-Premiums) plus realistische Destination-Kosten.**
@@ -58,13 +58,13 @@ Fünf Abschnitte, rund zwei bis vier Stunden gemeinsamer Arbeit von Finance und 
 - Monthly-Bill-Aufschlüsselung nach Account / Service / Team
 - RI / Savings Plans Utilisation
 - Egress-Kosten (oft übersehen)
-- Idle / Over-sized Ressourcen
+- Ungenutzte und überdimensionierte Ressourcen
 - Hyperscaler-Managed-Service-Premium-Analyse
 
 ### Abschnitt 2: Destination-Architektur
-- Hardware-Akquisition + 5-Jahres-Refresh
+- Hardware-Beschaffung + 5-Jahres-Refresh
 - Datacenter / Colocation
-- Network-Bandwidth + Egress
+- Netzwerkbandbreite + Egress
 - Storage-Tiering und Wachstum
 - Backup und DR-Infrastruktur
 - Plattform-Engineering-Kapazität
@@ -95,12 +95,10 @@ Fünf Abschnitte, rund zwei bis vier Stunden gemeinsamer Arbeit von Finance und 
 
 ---
 
----
-
 ## Wer das nutzt
 
-- CFOs und Finance-Business-Partner, die Cloud-Kosten bewerten
-- Platform-Engineering-Leads, die eine Repatriation scopen
+- CFOs und Finanz-Business-Partner, die Cloud-Kosten bewerten
+- Platform-Engineering-Leads, die den Umfang einer Repatriation abstecken
 - CIOs, die eine Vorstands-Empfehlung vorbereiten
 - FinOps-Praktiker
 

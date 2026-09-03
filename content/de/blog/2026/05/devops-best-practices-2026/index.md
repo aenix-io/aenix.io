@@ -10,36 +10,37 @@ companion_landing: "/de/dienstleistungen/devops-consulting/"
 quiz:
   title: "Wissens-Check: DevOps Best Practices 2026"
   questions:
-    - q: "Wie viele DevOps-Disziplinen \"die Returns kombinieren\" werden identifiziert?"
+    - q: "Wie viele sich gegenseitig verstärkende DevOps-Disziplinen nennt der Artikel?"
       options:
         - { text: "Drei", correct: false }
         - { text: "Acht", correct: true }
         - { text: "Zwölf", correct: false }
-      explanation: "Acht Disziplinen: (1) Everything-as-Code, (2) Trunk-basierte Entwicklung mit kontinuierlicher Bereitstellung, (3) Observability über Monitoring, (4) SRE-Praktiken, (5) Sicherheit als parallele Disziplin, (6) Plattform-Engineering als Substrat, (7) FinOps integriert, (8) Kontinuierliche Verbesserung als Funktion."
-    - q: "Wie viele Reifegrad-Stufen werden definiert?"
+      explanation: "Acht Disziplinen: (1) Everything as Code, (2) Trunk-basierte Entwicklung mit Continuous Deployment, (3) Observability statt reinem Monitoring, (4) SRE-Praktiken, (5) Sicherheit als parallele Disziplin, (6) Platform Engineering als Substrat, (7) integriertes FinOps, (8) kontinuierliche Verbesserung als eigene Funktion."
+    - q: "Wie viele Reifegrade definiert der Artikel?"
       options:
         - { text: "Drei", correct: false }
-        - { text: "Fünf — Pre-DevOps → Tool-getriebenes DevOps → Praktiziertes DevOps → Plattform-unterstütztes DevOps → Reifes Platform Engineering", correct: true }
+        - { text: "Fünf", correct: true }
         - { text: "Zehn", correct: false }
-      explanation: "Fünf Reifegrad-Stufen: (1) Pre-DevOps, (2) Tool-getriebenes DevOps, (3) Praktiziertes DevOps, (4) Plattform-unterstütztes DevOps, (5) Reifes Platform Engineering. Die meisten Organisationen sitzen bei Stufe 2-3."
-    - q: "Was ist Disziplin 1 — die fundamentalste?"
+      explanation: "Fünf Reifegrade: (1) Pre-DevOps, (2) werkzeuggetriebenes DevOps, (3) gelebtes DevOps, (4) plattformgestütztes DevOps, (5) reifes Platform Engineering. Die meisten Organisationen stehen auf Stufe 2 oder 3."
+    - q: "Welche Disziplin ist die grundlegendste, also Disziplin 1?"
       options:
         - { text: "Trunk-basierte Entwicklung", correct: false }
-        - { text: "Everything-as-Code (IaC, GitOps, Config-as-Code, Policy-as-Code, Drift-Detection)", correct: true }
-        - { text: "SRE Error Budgets", correct: false }
-      explanation: "Disziplin 1 ist Everything-as-Code. Ohne sie skalieren die anderen Disziplinen entweder nicht oder sind nicht auditierbar. Die Disziplin spell-out: IaC, GitOps, Config-as-Code, Policy-as-Code (OPA/Kyverno), Drift-Detection."
-    - q: "Wann ist externe Hilfe sinnvoll?"
+        - { text: "Everything as Code", correct: true }
+        - { text: "SRE-Fehlerbudgets", correct: false }
+        - { text: "In CI/CD integrierte Kostenkontrollen", correct: false }
+      explanation: "Disziplin 1 ist Everything as Code. Ohne sie skalieren die übrigen Disziplinen entweder nicht oder sind nicht prüfbar. Die Disziplin umfasst Infrastructure as Code, GitOps, Config as Code, Policy as Code (OPA, Kyverno) und Drift-Erkennung."
+    - q: "Wann ist externe Unterstützung sinnvoll?"
       options:
-        - { text: "Spezifischer Termin, Lange-Hand-Kapazität existiert aber spezifische Senior-Erfahrung fehlt, strukturierte externe Bewertung gewünscht, Migrations-Programm braucht Geschwindigkeit", correct: true }
-        - { text: "Niemals", correct: false }
-        - { text: "Immer", correct: false }
-      explanation: "Externe Hilfe ist sinnvoll bei: spezifischem Termin, Lange-Hand-Kapazität die existiert aber spezifische Senior-Erfahrung fehlt, gewünschter strukturierter externer Bewertung, Migrations-Programm das Geschwindigkeit braucht."
-    - q: "Welche Disziplin behandelt Sicherheit?"
+        - { text: "Bei festem Termin, fehlender Senior-Erfahrung oder Migrationsdruck", correct: true }
+        - { text: "Grundsätzlich nie, weil Wissen im Haus bleiben muss", correct: false }
+        - { text: "Grundsätzlich immer, unabhängig vom Reifegrad", correct: false }
+      explanation: "Externe Unterstützung lohnt sich bei einem festen Termin, bei vorhandener operativer Kapazität ohne die nötige Senior-Erfahrung, bei gewünschter strukturierter externer Bewertung und bei einem Migrationsprogramm, das Tempo braucht."
+    - q: "Wie behandelt der Artikel das Thema Sicherheit?"
       options:
-        - { text: "Disziplin 5 — Sicherheit als parallele Disziplin (nicht ein Gate am Ende; integriert durch den Lebenszyklus)", correct: true }
-        - { text: "Disziplin 1 nur", correct: false }
-        - { text: "Sicherheit nicht im Artikel", correct: false }
-      explanation: "Disziplin 5: Sicherheit als parallele Disziplin. Nicht ein separates Gate am Ende oder nur am Design-Time; integriert durch den Lebenszyklus (SAST/DAST in CI, Container-Scanning + SBOM, Workload-Identity SPIFFE/SPIRE, Supply-Chain-Sicherheit)."
+        - { text: "Als Disziplin 5 — parallel und über den gesamten Lebenszyklus", correct: true }
+        - { text: "Als Teilaspekt von Disziplin 1, ohne eigenen Abschnitt", correct: false }
+        - { text: "Sicherheit kommt im Artikel bewusst nicht vor", correct: false }
+      explanation: "Disziplin 5: Sicherheit als parallele Disziplin, nicht als Gate am Ende und nicht nur zur Entwurfszeit. Integriert über den gesamten Lebenszyklus — SAST und DAST in der CI, Container-Scanning mit SBOM, Workload-Identität über SPIFFE/SPIRE und Absicherung der Lieferkette."
 ---
 
 Begleitung zur **[DevOps-Consulting-Page](/de/dienstleistungen/devops-consulting)**.

@@ -1,6 +1,6 @@
 ---
 title: "Build a private cloud — engineers who've shipped this in production"
-description: "The phrase \"build a private cloud\" sounds like it should be straightforward in 2026. The reality: it's an architecture problem, an operational discipline..."
+description: "End-to-end private cloud build on hardware you control: sizing, platform, storage, networking, multi-tenancy and handover so your own team operates it."
 related_pages:
   - /services/private-cloud-consulting
   - /solutions/cloud-repatriation

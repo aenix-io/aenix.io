@@ -1,6 +1,6 @@
 ---
 title: "White label cloud — branded cloud product for MSPs and resellers"
-description: "Managed Service Providers (MSPs) and resellers in 2026 face customer demand for cloud capabilities that are price-competitive with hyperscalers but with the..."
+description: "Branded cloud for MSPs and resellers on Cozystack: nested tenancy, a Cozystack Dashboard in your colours, WHMCS billing and a catalog you curate."
 related_pages: ["/services/public-cloud-builder", "/products/public-cloud-platform/", "/partners/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"

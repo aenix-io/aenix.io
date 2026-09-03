@@ -59,7 +59,7 @@ Das ist eine starke Ausgangslage, und diese Seite geht sie Maßnahme für Maßna
 
 ## Eine Einordnung vorweg
 
-Compliance liegt bei der Organisation, die die Daten hält — warum sie sie hält, auf welcher Rechtsgrundlage, wie lange. Eine Plattform liefert Maßnahmen und macht sie nachweisbar. Die brauchbare Antwort auf „ist diese Plattform DSGVO-konform" ist das, was unten steht, und kein Ja, das der ersten Nachfrage nicht standhält.
+Compliance liegt bei der Organisation, die die Daten hält — warum sie sie hält, auf welcher Rechtsgrundlage, wie lange. Eine Plattform liefert Maßnahmen und macht sie nachweisbar. Die brauchbare Antwort auf „ist diese Plattform DSGVO-konform“ ist das, was unten steht, und kein Ja, das der ersten Nachfrage nicht standhält.
 
 **Und eine Anmerkung zur Herkunft.** Die Beobachtungen hier stammen von **Cozystack v1.6**, der quelloffenen, Apache-2.0-lizenzierten, bei der CNCF gehosteten Engine, die Ænix entwickelt und pflegt und von der alle drei Ænix-Plattformen Distributionen sind. Es gibt keinen separaten geschlossenen Build mit abweichendem Verhalten — deshalb übertragen sich die Maßnahmen unmittelbar. Was Ænix um die Engine herum ergänzt — die Talos-Maschinenkonfiguration, die Referenzarchitektur, den Betrieb —, ist der Ort, aus dem mehrere der folgenden Einstellungen tatsächlich stammen; jede davon ist gekennzeichnet.
 

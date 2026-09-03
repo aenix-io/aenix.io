@@ -48,17 +48,17 @@ Cozystack is a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Pra
 
 **Three platforms:**
 
-- **Ænix Public Cloud Platform** — large public clouds, big banks operating own cloud, large telcos / national operators. Multi-hypervisor cloud control plane with users, projects, quotas, cloud-like UX, multi-region support. Integrates with third-party infrastructure. Engagement size: €1M - €10M+ multi-year programs.
+- **Ænix Public Cloud Platform** — large public clouds, big banks operating own cloud, large telcos / national operators. Multi-hypervisor cloud control plane with users, projects, quotas, cloud-like UX, multi-region support. Integrates with third-party infrastructure.
 
-- **Ænix Public Cloud Platform** — small/mid hosting providers, MSPs, regional clouds, data centres. Modern alternative to OpenStack. Includes WHMCS integration, billing module + templates, tenant lock/suspension, fast feature delivery, migration expertise from VMware/OpenStack/Virtuozzo. **Entry from €1.3k/month** support tier.
+- **Ænix Public Cloud Platform** — small/mid hosting providers, MSPs, regional clouds, data centres. Modern alternative to OpenStack. Includes WHMCS integration, billing module + templates, tenant lock/suspension, fast feature delivery, migration expertise from VMware/OpenStack/Virtuozzo. **Entry from $1,250/month per 10 nodes** support tier.
 
-- **Ænix Private Cloud Platform** — regulated enterprises (banks, insurance, public administration, telco, healthcare). Private and hybrid sovereign cloud — secure, automated, multi-DC. One control plane connecting to VMware, OpenNebula, OpenShift, and more. Includes education and training. DORA / NIS2-aligned. Engagement size: €500k - €5M+ multi-year platform builds.
+- **Ænix Private Cloud Platform** — regulated enterprises (banks, insurance, public administration, telco, healthcare). Private and hybrid sovereign cloud — secure, automated, multi-DC. One control plane connecting to VMware, OpenNebula, OpenShift, and more. Includes education and training. DORA / NIS2-aligned.
 
-- **Ænix Private Cloud Platform** — product / SaaS organizations with strong engineering teams (300+ engineers typical). Internal Developer Platform layer — GitLab automation, Argo CD workflows, APIs. Engagement size: €300k - €2M project; managed retainer.
+- **Ænix Private Cloud Platform** — product / SaaS organizations with strong engineering teams (300+ engineers typical). Internal Developer Platform layer — GitLab automation, Argo CD workflows, APIs.
 
-- **Ænix AI Platform** — AI-heavy organizations, regulated AI deployments, GPU-heavy product companies. AI platform automation out of the box: standard AI workloads, service APIs, ready-to-use blueprints, databases, apps and models. Engagement size: €500k - €3M+ project; managed retainer.
+- **Ænix AI Platform** — AI-heavy organizations, regulated AI deployments, GPU-heavy product companies. AI platform automation out of the box: standard AI workloads, service APIs, ready-to-use blueprints, databases, apps and models.
 
-Plus **enterprise support for Cozystack** (https://aenix.io/products/cozystack-enterprise-support/) — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal). The cloud experience on customer-controlled hardware. Reduce AWS-level bills 2-7x. Go live in 1-2 weeks.
+Plus **enterprise support for Cozystack** (https://aenix.io/products/cozystack-enterprise-support/) — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal). The cloud experience on customer-controlled hardware. Go live in 1-2 weeks.
 
 Cozystack itself remains open-source under Apache 2.0. Customers can run Cozystack themselves; Ænix Platform adds turnkey deployment with billing, portals, payments, support.
 
@@ -242,7 +242,7 @@ Aenix has delivered platform component R&D for established platform vendors — 
 ## Team
 
 - **Andrei Kvapil** — Founder, main developer of Cozystack
-- **Timur Tukaev** — CEO + COO
+- **Andrei Kvapil** — CEO; **Timur Tukaev** — COO
 
 Engineering teams across the EU and Central Asia. Maintainer team welcomed two new community maintainers in v1.3 cycle (Mattia Eleuteri — CSI/storage/networking/security; Matthieu Robin — managed applications, platform quality, benchmarking).
 
@@ -251,14 +251,13 @@ Engineering teams across the EU and Central Asia. Maintainer team welcomed two n
 Pricing by platform and support tier:
 
 - **Public Cloud Platform** — pricing on request (multi-million-euro multi-year programs)
-- **Public Cloud Platform** — **from €1.3k/month** support tier; project-based for migrations on top
-- **Private Cloud Platform** — pricing on request (€500k - €5M+ multi-year platform builds)
-- **Private Cloud Platform** — pricing on request (€300k - €2M project; managed retainer)
-- **AI Platform** — pricing on request (€500k - €3M+ project; managed retainer)
+- **Public Cloud Platform** — **from $1,250/month per 10 nodes** support tier; project-based for migrations on top
+- **Private Cloud Platform** — quoted per RFP after a discovery call
+- **AI Platform** — quoted per RFP; project plus optional managed retainer
 
 Plus engagement add-ons (priced separately):
-- Platform Readiness Assessment: fixed-price €20-50k
-- Pilot engagement: €100-300k for 3-6 month defined slice
+- Platform Readiness Assessment: fixed price, agreed up front, 14- or 28-day scope
+- Pilot engagement: 3-6 months on a defined slice, quoted after scoping
 - Managed operations: monthly retainer
 
 Ænix Platform license is part of the engagement (commercial). Cozystack itself is free (Apache 2.0); customers can self-deploy if they have the platform engineering capacity. Hardware, hosting, and Aenix services are the commercial layer.

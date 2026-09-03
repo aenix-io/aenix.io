@@ -1,7 +1,0 @@
-[
-{{- $first := true -}}
-{{- range where .Site.Pages "Kind" "!=" "" -}}
-{{- if not $first }},{{ end }}{{ $first = false }}
-{"url": {{ .RelPermalink | jsonify }}, "kind": {{ .Kind | jsonify }}, "type": {{ .Type | jsonify }}, "page_type": {{ (or .Params.page_type "") | jsonify }}, "words": {{ .WordCount }}, "title": {{ .Title | jsonify }}, "file": {{ with .File }}{{ .Path | jsonify }}{{ else }}""{{ end }}, "draft": {{ .Draft }}, "section": {{ .Section | jsonify }}, "lang": {{ (or .Params.language "") | jsonify }}}
-{{- end -}}
-]

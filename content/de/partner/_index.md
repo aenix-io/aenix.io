@@ -9,13 +9,13 @@ hreflang_en: /partners/
 **Verkaufen Sie Ænix Platform — unsere turnkey kommerzielle Cloud-in-a-Box — mit bis zu 40% Marge, Deal-Schutz und direktem Zugang zum Ænix-Core-Team. Für Integratoren, Reseller, Distributoren und regionale Cloud- / souveräne-Cloud-Builder.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/partners/#apply">Partner werden</a>
+  <a class="cta-primary" href="/de/partner/#apply">Partner werden</a>
   <a class="cta-secondary" href="/de/produkte/">Platform entdecken →</a>
 </div>
 
 ---
 
-## Quick facts
+## Kurzüberblick
 
 - **Marge:** bis zu **40%** auf Ænix-Platform-Lizenz + Support-Tier-Verkäufe
 - **Deal-Schutz:** Registrierte Opportunities werden für den Partner reserviert — kein Channel-Konflikt
@@ -29,7 +29,7 @@ hreflang_en: /partners/
 
 ## Was Sie verdienen
 
-**Bis zu 40% Marge** auf Ænix-Platform-Lizenz + Support-Tier-Verkäufe. Margen-Tier hängt von Engagement-Größe, Partner-Level und Renewal-Performance ab.
+**Bis zu 40% Marge** auf Ænix-Platform-Lizenz + Support-Tier-Verkäufe. Die Margenstufe hängt von der Engagement-Größe, dem Partner-Level und der Verlängerungsquote ab.
 
 Wiederkehrende Marge auf mehrjährige Support-Verträge — Partner verdienen am initialen Verkauf + jeder Verlängerung.
 
@@ -40,7 +40,7 @@ Wiederkehrende Marge auf mehrjährige Support-Verträge — Partner verdienen am
 | Ressource | Beschreibung |
 |---|---|
 | **Sales-Kit** | Decks, Battle Cards (vs VMware / OpenStack / Nutanix / OpenShift / Proxmox), Produkt-One-Pagers |
-| **Technical Pre-Sales** | Ænix-Solutions-Engineers schließen sich Customer-Calls an |
+| **Technical Pre-Sales** | Ænix-Solutions-Engineers nehmen an Kundengesprächen teil |
 | **Demo-Environment** | Vor-deployte Ænix-Platform-Demo |
 | **Deal-Registrierung** | Opportunities für Partner sperren |
 | **L3-Support** | Eskalations-Pfad zum Ænix-Core-Engineering |
@@ -68,7 +68,7 @@ Aktuelle öffentliche Partner:
 1. **Bewerben** — Interesse einreichen via Partner-Programm-Bewerbungs-Formular oder E-Mail sales@aenix.io
 2. **Discovery-Call** (30 min) — Geschäft, Kundenstamm, Ziel-Plattformen, Geografie, Partner-Level-Fit besprechen
 3. **Onboarding** (4 Wochen) — Sales + Technical + Operational Training; Demo-Environment-Zugang; Deal-Registrierungs-Setup
-4. **Go Live** — erste Deal-Registrierung, Sales-Kit deployt, voller L3-Support-Zugang
+4. **Go Live** — erste Deal-Registrierung, Sales-Kit bereitgestellt, voller L3-Support-Zugang
 
 Typische Zeit von Bewerbung bis erster Deal-Registrierung: 4-6 Wochen.
 
@@ -76,7 +76,7 @@ Typische Zeit von Bewerbung bis erster Deal-Registrierung: 4-6 Wochen.
 
 ## Bewerben {#apply}
 
-Bewerben Sie sich zum Partner-Programm. Wir prüfen Ihr Geschäft und melden uns innerhalb 5 Werktagen.
+Bewerben Sie sich zum Partner-Programm. Wir prüfen Ihr Geschäft und melden uns innerhalb von 5 Werktagen.
 
 {{< pipedrive-form type="partner" >}}
 

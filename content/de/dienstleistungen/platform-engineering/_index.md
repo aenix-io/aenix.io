@@ -1,7 +1,7 @@
 ---
 title: "Platform Engineering Services — interne Plattform für Ihre Entwickler-Teams"
 description: "Platform Engineering ist 2026 keine Diskussion mehr — es ist eine operative Schicht, die reife Engineering-Organisationen als Kerninfrastruktur behandeln...."
-related_pages: ["/de/produkte/private-cloud", "/services/platform-readiness-assessment"]
+related_pages: ["/de/produkte/private-cloud-platform/", "/de/dienstleistungen/platform-readiness-assessment/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -35,7 +35,7 @@ faq:
   - q: "Wie schnell liefert ein Platform Readiness Assessment Ergebnisse?"
     a: "Das Assessment dauert 14-28 Tage und endet mit einer schriftlichen Bewertung des aktuellen Reifegrads plus einem konkreten Phase-2-Plan. Ein kostenloses Platform Engineering Maturity Assessment steht als Selbsteinschätzung vorab zur Verfügung."
   - q: "Welche Ænix-Plattform passt zu Platform Engineering?"
-    a: "Die Developer Self-Service richtet sich an Produkt- und SaaS-Engineering-Teams, die Self-Service-Plattformen brauchen. Die Private Cloud Platform adressiert regulierte Unternehmen, die interne Plattformen unter Compliance- und Souveränitätsanforderungen aufbauen."
+    a: "Die Developer-Self-Service-Schicht der Private Cloud Platform richtet sich an Produkt- und SaaS-Engineering-Teams, die Self-Service-Plattformen brauchen. Die Private Cloud Platform adressiert regulierte Unternehmen, die interne Plattformen unter Compliance- und Souveränitätsanforderungen aufbauen."
 ---
 
 <!-- BLOCK 1: HERO -->
@@ -56,9 +56,6 @@ Produktionsreifes Plattform-Team · Apache-2.0-Foundation · Engineers, keine Ar
 </div>
 
 <!-- /BLOCK 1 -->
-
----
-
 
 ---
 
@@ -130,10 +127,10 @@ Das Ergebnis ist eine Plattform, die tatsächlich gebaut und in Produktion mit r
 Schöne interne Architektur, geringe Adoption der Produkt-Teams. Self-Service ist technisch vorhanden, aber operativ umständlich; Produkt-Teams reichen weiter Tickets ein. Fehler: der Wert der Plattform misst sich an der Nutzung, nicht an der Eleganz.
 
 **Backstage als Ziel, nicht als Plattform**
-Viele Teams verwechseln "Internal Developer Portal" (Backstage-UI) mit "Internal Developer Platform". Backstage ohne eine darunterliegende opinionated Plattform ist Tapete über demselben operativen Chaos. Fehler: der Katalog ist reich, die Pfade dauern weiterhin Wochen.
+Viele Teams verwechseln „Internal Developer Portal“ (Backstage-UI) mit „Internal Developer Platform“. Backstage ohne eine darunterliegende opinionated Plattform ist Tapete über demselben operativen Chaos. Fehler: der Katalog ist reich, die Pfade dauern weiterhin Wochen.
 
 **Vendor-geführte Plattform mit einer Roadmap, die nicht Ihre ist**
-Der Kauf einer "kompletten Platform-Engineering-Lösung" sperrt die Architektur in die Roadmap des Vendors. Fehler: die Autorität des Plattform-Teams reduziert sich auf das Eskalieren von Tickets an ein Vendor-Support-Team.
+Der Kauf einer „kompletten Platform-Engineering-Lösung“ sperrt die Architektur in die Roadmap des Vendors. Fehler: die Autorität des Plattform-Teams reduziert sich auf das Eskalieren von Tickets an ein Vendor-Support-Team.
 
 **Plattform-Team ohne Produkt-Mindset**
 Engineering-Exzellenz ohne Produkt-Orientierung erzeugt ein intern konsumiertes Produkt, das niemand angefragt hat. Fehler: die Plattform existiert, niemand nutzt sie so, wie sie designt wurde.
@@ -171,8 +168,8 @@ Die meisten Engagements beginnen mit dem Assessment. Die Entscheidung zwischen O
 
 - **Wir betreiben Plattformen in Produktion.** Cozystack ist in Produktion mit Service Providern und regulierten Unternehmen. Die Entscheidungen in unseren Engagements sind gegen laufende Systeme kalibriert, nicht gegen Tooling-Reviews.
 - **Open-Source-Plattform-Foundation.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Die Plattform, die wir empfehlen, ist eine Plattform, die Sie besitzen. Kein Vendor-Roadmap-Lock-in.
-- **Kein Hyperscaler-Bias.** Unsere Empfehlungen spiegeln technische Eignung und operative Realität wider, nicht Partnerschafts-Ökonomie. Wir sagen "in der Cloud bleiben", wenn das richtig ist, und "on-prem gehen", wenn das richtig ist.
-- **EU-basierte Engineers in CEE und Zentralasien.** Zeitzonen-freundlich für europäische Kunden; abgestimmt auf EU-Datensouveränitäts-Anforderungen; Verständnis des Regulator-Dialogs aus denselben Jurisdiktionen heraus.
+- **Kein Hyperscaler-Bias.** Unsere Empfehlungen spiegeln technische Eignung und operative Realität wider, nicht Partnerschafts-Ökonomie. Wir sagen „in der Cloud bleiben“, wenn das richtig ist, und „on-prem gehen“, wenn das richtig ist.
+- **EU-basierte Engineers in CEE und Zentralasien.** Zeitzonen-freundlich für europäische Kunden; abgestimmt auf EU-Datensouveränitäts-Anforderungen; Verständnis des Aufsichtsdialogs aus denselben Jurisdiktionen heraus.
 
 <!-- /BLOCK 6 -->
 
@@ -204,7 +201,7 @@ Für die Methodologie siehe **[Platform Readiness Assessment](/de/dienstleistung
 Wir haben Plattformen für Service Provider mit Multi-Tenant-Clouds, regulierte Unternehmen mit internen Entwickler-Plattformen, KI/GPU-Operatoren, Telekom-Betreiber und Souveräne-Cloud-Initiativen in der EU, DACH und Zentralasien gebaut oder betrieben. Workloads umfassen VMs, Container, Managed Databases, S3 und GPU.
 
 {{< quote-carousel >}}
-Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 Benannte Case Studies verfügbar im Discovery-Call, sofern Kunden-Berechtigungen es erlauben.
 
 <!-- /BLOCK 8 -->
@@ -213,7 +210,7 @@ Benannte Case Studies verfügbar im Discovery-Call, sofern Kunden-Berechtigungen
 
 <!-- BLOCK 9: PRICING -->
 
-## Pricing und Engagement-Scope
+## Preise und Engagement-Umfang
 
 <div class="pricing-cards-2">
 

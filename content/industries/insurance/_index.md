@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for insurance — DORA-aligned, AI-ready, sovereign"
-description: "Insurance carriers and reinsurers in 2026 face overlapping pressures: DORA enforcement (in force January 2025), GenAI-driven claims-processing..."
+description: "Cloud for carriers and reinsurers under DORA: Article 28 separation across a group, per-market residency, claims and underwriting AI on your own GPUs."
 related_pages:
   - /solutions/dora-compliance
   - /solutions/data-sovereignty

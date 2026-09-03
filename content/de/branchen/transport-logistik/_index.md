@@ -1,13 +1,13 @@
 ---
 title: "Cloud-Plattform für Transport und Logistik — NIS2-konform, edge-bereit, KI-fähig"
-description: "Transport- und Logistikbetreiber stehen 2026 vor: NIS2-Klassifikation als wesentliche Entität (Transport-Sektor ist im Geltungsbereich unter Annex I),..."
+description: "Transport- und Logistikbetreiber stehen 2026 vor: NIS2-Klassifikation als wesentliche Einrichtung (Transport-Sektor ist im Geltungsbereich unter Anhang I),..."
 related_pages: ["/de/loesungen/nis2-compliance", "/de/loesungen/data-sovereignty"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/transport-logistics/
 direct_answer: |
-  **Eine Cloud-Plattform für Transport und Logistik ist eine Infrastruktur, die Fracht-, Fleet- und Terminalbetreiber für NIS2-konforme, edge-fähige und KI-getriebene Workloads nutzen. Der Transport-Sektor fällt unter NIS2 Annex I als wesentliche Entität. Aenix liefert dies über die Ænix Private Cloud Platform auf Basis von Cozystack (CNCF-Projekt, Apache 2.0): KubeVirt führt VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD den Storage. Eine Multi-DC- und Edge-Architektur betreibt Workloads an Depots, Häfen und Terminals, mit Mandantenfähigkeit über das Tenant-CRD für Cross-Business-Unit-Trennung und einer Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.**
+  **Eine Cloud-Plattform für Transport und Logistik ist eine Infrastruktur, die Fracht-, Fleet- und Terminalbetreiber für NIS2-konforme, edge-fähige und KI-getriebene Workloads nutzen. Der Transport-Sektor fällt unter NIS2 Anhang I als wesentliche Einrichtung. Aenix liefert dies über die Ænix Private Cloud Platform auf Basis von Cozystack (CNCF-Projekt, Apache 2.0): KubeVirt führt VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD den Storage. Eine Multi-DC- und Edge-Architektur betreibt Workloads an Depots, Häfen und Terminals, mit Mandantenfähigkeit über das Tenant-CRD für Cross-Business-Unit-Trennung und einer Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.**
 quick_facts:
   - label: "Was es ist"
     value: "NIS2-konforme, edge-fähige und KI-fähige Cloud-Plattform für Transport- und Logistikbetreiber auf Basis von Cozystack"
@@ -18,14 +18,14 @@ quick_facts:
   - label: "Zielgruppe"
     value: "Luft-, Schiene-, Wasser-, Straßenfracht-Operatoren, Logistikdienstleister (LSPs), Last-Mile-Delivery, Hafen- und Terminalbetreiber, Fleet-Management"
   - label: "Regulatorik"
-    value: "Transport-Sektor ist unter NIS2 Annex I als wesentliche Entität im Geltungsbereich; Compliance für Cloud und OT erforderlich"
+    value: "Transport-Sektor ist unter NIS2 Anhang I als wesentliche Einrichtung im Geltungsbereich; Compliance für Cloud und OT erforderlich"
   - label: "Schlüsselfunktion"
     value: "Multi-DC- und Edge-Compute-Architektur an Depots, Häfen und Terminals; KI für Routing, Nachfrage-Forecasting und Predictive Maintenance"
   - label: "Produkt"
     value: "Ænix Private Cloud Platform (produktisiertes Cozystack) plus Services von Aenix, dem Team hinter Cozystack"
 faq:
   - q: "Fällt der Transport-Sektor unter NIS2?"
-    a: "Ja. Der Transport-Sektor (Luft, Schiene, Wasser, Straße) ist unter NIS2 Annex I als wesentliche Entität im Geltungsbereich. Betreiber müssen NIS2-Compliance sowohl für Cloud-Infrastruktur als auch für OT-Systeme nachweisen. Die Ænix Private Cloud Platform unterstützt diese Anforderungen über eine souveräne, selbstbetriebene Architektur."
+    a: "Ja. Der Transport-Sektor (Luft, Schiene, Wasser, Straße) ist unter NIS2 Anhang I als wesentliche Einrichtung im Geltungsbereich. Betreiber müssen NIS2-Compliance sowohl für Cloud-Infrastruktur als auch für OT-Systeme nachweisen. Die Ænix Private Cloud Platform unterstützt diese Anforderungen über eine souveräne, selbstbetriebene Architektur."
   - q: "Wie unterstützt die Plattform Edge-Compute an Depots, Häfen und Terminals?"
     a: "Die Ænix Private Cloud Platform nutzt eine Multi-DC- und Edge-Architektur auf Basis von Cozystack. Workloads laufen verteilt an Depots, Häfen und Terminals über eine einzige Kubernetes-API, wobei KubeVirt VMs und Container gemeinsam orchestriert und Cilium (eBPF) das Networking über die Standorte hinweg übernimmt."
   - q: "Welche KI-Anwendungsfälle deckt die Plattform für Logistik ab?"
@@ -38,7 +38,7 @@ faq:
     a: "Die Preisstufen sind: Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $/Monat, Plus 5.500 $/Monat und Enterprise mit individueller Preisgestaltung. Für Transport- und Logistik-Szenarien mit Multi-DC- und Edge-Architektur ist in der Regel die Private Cloud Platform relevant."
 ---
 
-**Transport- und Logistikbetreiber stehen 2026 vor: NIS2-Klassifikation als wesentliche Entität (der Transportsektor ist im Geltungsbereich unter Annex I), KI-getriebener Optimierung (Routen, Nachfrage, Predictive Maintenance), Edge-Compute-Anforderungen (Fahrzeuge, Depots, Häfen, Terminals) und zunehmendem Datensouveränitäts-Druck für grenzüberschreitende Logistikdaten. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, an regionalen Standorten und an der Edge läuft — unter einem Operations-Modell.**
+**Transport- und Logistikbetreiber stehen 2026 vor: NIS2-Klassifikation als wesentliche Einrichtung (der Transportsektor ist im Geltungsbereich unter Anhang I), KI-getriebener Optimierung (Routen, Nachfrage, Predictive Maintenance), Edge-Compute-Anforderungen (Fahrzeuge, Depots, Häfen, Terminals) und zunehmendem Datensouveränitäts-Druck für grenzüberschreitende Logistikdaten. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, an regionalen Standorten und an der Edge läuft — unter einem Operations-Modell.**
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Multi-DC- + Edge-Architektur, NIS2-Compliance, Souveräne-Cloud-Option für grenzüberschreitende Logistikdaten.
 
@@ -51,7 +51,7 @@ faq:
 
 ## Wer im Transport / in der Logistik
 
-- Luft-, Schiene-, Wasser- und Straßenfracht-Betreiber (NIS2-wesentliche Entitäten)
+- Luft-, Schiene-, Wasser- und Straßenfracht-Betreiber (NIS2-wesentliche Einrichtungen)
 - Logistikdienstleister (LSPs) mit multimodalem Betrieb
 - Last-Mile-Delivery-Betreiber
 - Hafen- und Terminalbetreiber
@@ -65,7 +65,7 @@ faq:
 
 ## Wofür Transport-Teams zu uns kommen
 
-- **NIS2-Compliance** für Cloud- + OT-Infrastruktur (Transport ist wesentliche Entität nach Annex I)
+- **NIS2-Compliance** für Cloud- + OT-Infrastruktur (Transport ist wesentliche Einrichtung nach Anhang I)
 - **KI für Routing, Nachfrage-Forecasting, Predictive Maintenance**
 - **Edge-Compute** an Depots, Häfen, Terminals, Fahrzeugen
 - **Multi-Tenant** für Cross-BU (Fracht + Passagiere + Intermodal)

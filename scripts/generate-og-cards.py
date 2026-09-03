@@ -133,6 +133,36 @@ def make(fn, eyebrow, title):
     return fn
 
 
+def make_default():
+    """Site-wide fallback OG card: static/img/aenix-social-card.png.
+
+    layouts/partials/seo/head.html falls back to img/aenix-social-card.png for
+    every page without an `images:` entry — the large majority of the site — and
+    jsonld-blogposting.html uses the same path for schema.org `image`. The file
+    must therefore exist, or those pages advertise a 404 to every social
+    scraper. Copy is the site title + params.description from hugo.yaml; keep
+    them in sync.
+    """
+    img = Image.new("RGB", (W, H), BG)
+    d = ImageDraw.Draw(img)
+    margin = 80
+    d.rectangle([margin, 96, margin + 64, 104], fill=ACCENT)
+    d.text((margin, 120), "ÆNIX", font=ImageFont.truetype(FONT, 40), fill=CREAM)
+    d.text((margin, 250), "TURNKEY CLOUD PLATFORM ON COZYSTACK (CNCF)",
+           font=ImageFont.truetype(FONT, 28), fill=ACCENT)
+    tf = ImageFont.truetype(FONT, 64)
+    y = 300
+    for ln in wrap(d, "Sell cloud, run your own, or run AI on your own GPUs", tf, W - 2 * margin):
+        d.text((margin, y), ln, font=tf, fill=CREAM)
+        y += int(64 * 1.18)
+    d.text((margin, H - 80), "aenix.io   ·   built on Cozystack (CNCF)",
+           font=ImageFont.truetype(FONT_R, 26), fill=MUTED)
+    path = os.path.join(os.path.dirname(__file__), "..", "static", "img", "aenix-social-card.png")
+    img.save(path, "PNG")
+    return os.path.normpath(path)
+
+
 for c in CARDS:
     print("wrote", make(*c) + ".png")
+print("wrote", make_default())
 print("done:", len(CARDS), "cards ->", os.path.normpath(OUT))

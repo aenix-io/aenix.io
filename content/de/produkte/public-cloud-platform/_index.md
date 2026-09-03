@@ -57,9 +57,6 @@ aliases:
 
 ---
 
-
----
-
 ## Was in der Public Cloud Platform enthalten ist
 
 ### WHMCS-Integration
@@ -74,7 +71,7 @@ Gebrandetes Admin-Dashboard für den Betreiber + kundenseitiges Console-Portal (
 
 Einfache geführte UX zum Hochfahren von VMs, Kubernetes-Clustern, Managed Databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), S3-kompatiblem Object Storage, GPU-Workloads. Kein YAML von Endkunden erforderlich.
 
-### Tenant Lock / Suspension
+### Mandanten sperren und stilllegen
 
 Eingebaute Tenant-Lifecycle-Kontrollen — automatische Suspension überfälliger Tenants, Ressourcen-Blocking, Lock für Security-Review. Kein Engineering-Ticket erforderlich.
 
@@ -86,7 +83,7 @@ Usage-Metering, Invoicing, Payment-Processing. Stripe + regionale Zahlungsanbiet
 
 Fertige Module und Runbooks für Migration von VMware, OpenStack, Virtuozzo, OpenNebula. Ænix liefert Migration mit Erfahrung aus Produktions-Engagements.
 
-### Fast Feature Delivery
+### Schnelle Feature-Auslieferung
 
 Proprietäre Module (über Open-Source-Cozystack hinaus) ausgeliefert ohne die langen Wartezeiten typisch für Community-only-Plattformen.
 
@@ -116,7 +113,7 @@ Managed Databases (PostgreSQL via Cloud Native PG, MariaDB, Redis, Kafka via Str
 
 ---
 
-## Produktivkunden (derzeit auf aenix.io gelistet)
+## Kunden im Produktivbetrieb
 
 Regionale Hosting-Anbieter mit Ænix Public Cloud Platform: **GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy**.
 
@@ -124,7 +121,7 @@ Diese Kunden nutzen Ænix Public Cloud Platform, um Multi-Tenant-Cloud-Produkte 
 
 ---
 
-## Pricing
+## Preise
 
 **Entry ab 1.250 USD/Monat Support-Tier.** Höhere Tiers und projektbasierte Migrations- / Build-Engagements auf Anfrage via Discovery-Call.
 
@@ -153,16 +150,13 @@ Bis zu 40% Marge auf Ænix-Platform-Verkäufe für Reseller, Integratoren und Di
 
 ---
 
-## Pure Cozystack mit Ænix-Support (Entry-Tier)
+## Enterprise-Support für Cozystack (Entry-Tier)
 
 Für Produkt-Teams, die Cozystack auf eigener / gemieteter Hardware (Hetzner, OVH, regionale Bare-Metal) laufen lassen ohne kommerzielle Portal-/Billing-Schicht:
 
 **Cloud-Erfahrung auf kundenkontrollierter Hardware. Reduzieren Sie AWS-Level-Rechnungen 2-7×. Live-Migration von Public Clouds in 1-2 Wochen.** Vendor-Support, Architektur-Review und Migrations-Expertise — ohne kommerzielle Portal-/Billing-Schicht.
 
-[Pure Cozystack Support diskutieren →](/de/kontakt/?platform=cozystack-support)
-
----
-
+[Enterprise-Support für Cozystack diskutieren →](/de/kontakt/?platform=cozystack-support)
 
 ---
 

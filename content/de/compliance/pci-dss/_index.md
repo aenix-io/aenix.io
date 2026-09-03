@@ -33,7 +33,7 @@ quick_facts:
     value: "Teams, die VMware vSphere ablösen und deren CDE bisher über Cluster, VLANs und vCenter-Rollen abgegrenzt war."
 faq:
   - q: "Ist die Aenix-Plattform PCI-DSS-zertifiziert?"
-    a: "Nein, und keine Infrastrukturplattform ist es. Eine PCI-DSS-Zertifizierung gilt einer Karteninhaberdaten-Umgebung, wird von der Entität abgegrenzt, die sie betreibt, und von einem Qualified Security Assessor testiert. Ein Anbieter, der mit einer PCI-DSS-zertifizierten Plattform wirbt, beschreibt etwas, das es nicht gibt. Aenix sagt etwas Engeres und Nachprüfbares: Die Infrastruktur-Kontrollen, auf die eine Prüfung aufsetzt — Segmentierung, gehärtete Konfiguration, Verschlüsselung, zentrale Identität, Audit-Logging —, sind vorhanden, die meisten sind aktiv, bevor Sie irgendetwas anfassen, und jede lässt sich mit den Kommandos auf dieser Seite gegen Ihr eigenes Cluster prüfen."
+    a: "Nein, und keine Infrastrukturplattform ist es. Eine PCI-DSS-Zertifizierung gilt einer Karteninhaberdaten-Umgebung, wird von der Einrichtung abgegrenzt, die sie betreibt, und von einem Qualified Security Assessor testiert. Ein Anbieter, der mit einer PCI-DSS-zertifizierten Plattform wirbt, beschreibt etwas, das es nicht gibt. Aenix sagt etwas Engeres und Nachprüfbares: Die Infrastruktur-Kontrollen, auf die eine Prüfung aufsetzt — Segmentierung, gehärtete Konfiguration, Verschlüsselung, zentrale Identität, Audit-Logging —, sind vorhanden, die meisten sind aktiv, bevor Sie irgendetwas anfassen, und jede lässt sich mit den Kommandos auf dieser Seite gegen Ihr eigenes Cluster prüfen."
   - q: "Wurden diese Kontrollen auf der Aenix-Plattform oder auf Cozystack getestet?"
     a: "Auf Cozystack, der Apache-2.0-lizenzierten CNCF-Engine, die Aenix entwickelt und pflegt und von der alle drei Aenix-Plattformen Distributionen sind. Es gibt keinen separaten geschlossenen Build zum Testen. Entscheidend ist eher die Konfiguration: Einstellungen wie --encryption-provider-config, die Audit-Policy und die Zeitquelle stammen aus der zum Installationszeitpunkt angewendeten Talos-Maschinenkonfiguration, die Teil dessen ist, was Aenix liefert und betreibt — prüfen Sie sie also auf Ihrem eigenen Cluster, statt sie vorauszusetzen."
   - q: "Wie wirkt sich die Plattform auf den PCI-DSS-Prüfungsumfang aus?"
@@ -57,7 +57,7 @@ Andere werden mitgeliefert, sind aber nicht eingeschaltet, weil die meisten Clus
 
 ---
 
-## „Besteht das unsere Prüfung?"
+## „Besteht das unsere Prüfung?“
 
 Die Frage kommt im ersten Termin, jedes Mal, wenn eine Karteninhaberdaten-Umgebung auf eine neue Plattform zieht. **Keine Plattform besteht eine Prüfung.** Ein Qualified Security Assessor testiert eine abgegrenzte Umgebung — Ihre Systeme, Ihre Prozesse, Ihre Nachweise. Was eine Plattform leisten kann: die technischen Kontrollen bereitstellen, auf die die Prüfung aufsetzt, und ihren Nachweis einfach machen.
 
@@ -76,7 +76,7 @@ Der Vorbehalt, der gilt, betrifft die Konfiguration. Mehrere Einstellungen, nach
 
 ## Die zwölf Anforderungen, abgebildet
 
-„Standard" heißt: Die Kontrolle ist bei einer frischen Installation aktiv. „Eingebaut, standardmäßig aus" heißt: Die Plattform liefert sie mit, Sie schalten sie ein — Konfiguration, keine Entwicklung.
+„Standard“ heißt: Die Kontrolle ist bei einer frischen Installation aktiv. „Eingebaut, standardmäßig aus“ heißt: Die Plattform liefert sie mit, Sie schalten sie ein — Konfiguration, keine Entwicklung.
 
 | Anforderung PCI DSS v4.0.1 | Abdeckung | Anmerkung |
 |---|---|---|
@@ -178,7 +178,7 @@ Anonymer API-Zugriff ist deaktiviert, der Profiling-Endpunkt ist aus. Beides sta
 
 Zwei Ebenen zählen hier, und sie verhalten sich unterschiedlich.
 
-**Kubernetes-Secrets** sind in etcd verschlüsselt, wenn der API-Server mit `--encryption-provider-config` läuft. Dieses Flag stammt aus der zum Installationszeitpunkt gelieferten Talos-Maschinenkonfiguration und nicht aus der Plattformenoftware — prüfen Sie es also auf Ihrem eigenen Cluster. Beachten Sie auch die Grenzen der Kontrolle: Sie schützt etcd-Daten auf der Platte und in etcd-Backups, hilft nichts gegen ein Prinzipal, das das Secret über die API lesen darf, und bringt wenig, wenn der Schlüssel auf demselben Control-Plane-Knoten liegt wie etcd.
+**Kubernetes-Secrets** sind in etcd verschlüsselt, wenn der API-Server mit `--encryption-provider-config` läuft. Dieses Flag stammt aus der zum Installationszeitpunkt gelieferten Talos-Maschinenkonfiguration und nicht aus der Plattformsoftware — prüfen Sie es also auf Ihrem eigenen Cluster. Beachten Sie auch die Grenzen der Kontrolle: Sie schützt etcd-Daten auf der Platte und in etcd-Backups, hilft nichts gegen ein Prinzipal, das das Secret über die API lesen darf, und bringt wenig, wenn der Schlüssel auf demselben Control-Plane-Knoten liegt wie etcd.
 
 **Volumes** — die Platten hinter virtuellen Maschinen und Datenbanken — sind nicht verschlüsselt, solange Sie es nicht verlangen. LINSTOR unterstützt Verschlüsselung im Ruhezustand mit LUKS: Passphrase setzen, dann eine StorageClass mit LUKS-Layer anlegen:
 

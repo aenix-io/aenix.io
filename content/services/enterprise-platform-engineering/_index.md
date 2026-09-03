@@ -1,6 +1,6 @@
 ---
 title: "Enterprise platform engineering — internal platforms for organizations at scale"
-description: "Enterprise platform engineering is the discipline of building and operating internal platforms for organizations with multiple product teams, cross-BU..."
+description: "Internal platforms at enterprise scope, where multi-tenancy, cross-BU isolation, governance and multi-region fleet operations stop being optional."
 related_pages:
   - /services/platform-engineering
   - /services/internal-developer-platform

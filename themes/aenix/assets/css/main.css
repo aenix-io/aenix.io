@@ -9,6 +9,11 @@
   /* Brand */
   --brand-primary: #01A5FF;
   --brand-secondary: #0971EB;
+  /* Hover fill for primary buttons. Must stay DARKER than --brand-secondary:
+     white-on-#01A5FF (--brand-primary) is only 2.68:1 and fails WCAG AA, which
+     made every primary CTA unreadable exactly while the pointer was on it.
+     White on #0856B0 is 7.07:1. */
+  --brand-primary-hover: #0856B0;
   --brand-accent: #661BE1;
   --brand-green: #D4F6B2;
   --brand-cyan: #94DEE0;
@@ -222,7 +227,7 @@ img { max-width: 100%; height: auto; display: block; }
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), var(--glow-btn);
 }
 .btn-primary:hover {
-  background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0) 45%), var(--brand-primary);
+  background: linear-gradient(180deg, rgba(255,255,255,0.14), rgba(255,255,255,0) 45%), var(--brand-primary-hover);
   color: #fff;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.25), 0 0 32px rgba(1,165,255,0.4), 0 6px 20px rgba(0,0,0,0.3);
   transform: translateY(-1px);
@@ -2224,7 +2229,7 @@ img { max-width: 100%; height: auto; display: block; }
   flex-direction: column;
   gap: 0.5rem;
 }
-.footer-nav-group h4 {
+.footer-nav-group h2, .footer-nav-group h4 {
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;

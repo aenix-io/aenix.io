@@ -27,7 +27,7 @@ faq:
   - q: "Kann die Private Cloud Platform mit bestehendem VMware, OpenStack oder OpenShift koexistieren?"
     a: "Ja. Sie ist für Koexistenz statt Rip-and-Replace ausgelegt. Die Control Plane integriert bestehende VMware Cloud Foundation, OpenStack, OpenNebula und OpenShift Estates; die Konsolidierung erfolgt graduell im Workload-Tempo. Viele Deployments laufen über Jahre hybrid."
   - q: "Wie unterstützt die Private Cloud Platform DORA- und NIS2-Compliance?"
-    a: "Über vorvalidierte Architekturkontrollen: kundenkontrollierte Schlüssel (DORA Art. 21(2)(h)), unveränderbares Audit-Logging via VictoriaLogs (Art. 21(2)(i), Art. 23), Tenant-CRD-Segmentierung nach ICT-Risikoklasse mit Cilium-NetworkPolicy, getestete Exit-Mechanik (Art. 28(7)(c)) und Lieferantentransparenz. NIS2 deckt Risikomanagement-Maßnahmen (Art. 21) und Reporting-Templates (Art. 23) ab."
+    a: "Über vorvalidierte Architekturkontrollen: kundenkontrollierte Schlüssel (DORA Art. 21(2)(h)), unveränderbares Audit-Logging via VictoriaLogs (Art. 21(2)(i), Art. 23), Tenant-CRD-Segmentierung nach IKT-Risikoklasse mit Cilium-NetworkPolicy, getestete Exit-Mechanik (Art. 28(7)(c)) und Lieferantentransparenz. NIS2 deckt Risikomanagement-Maßnahmen (Art. 21) und Reporting-Templates (Art. 23) ab."
   - q: "Wird Air-Gap-Betrieb unterstützt?"
     a: "Ja. Die Private Cloud Platform läuft in vollständig air-gapped Umgebungen ohne Internet-Egress, mit Offline-Updates über signierte Bundles. Genutzt in Verteidigung, souveräner Cloud und isolierten Industrie-Umgebungen."
   - q: "Wer kontrolliert die Verschlüsselungsschlüssel?"
@@ -48,14 +48,11 @@ aliases:
 
 ---
 
-
----
-
 ## Was in der Private Cloud Platform enthalten ist
 
 ### Multi-DC private und hybride souveräne Cloud
 
-Designed für Zwei-oder-mehr-Rechenzentrum-Deployments mit Active-Warm- oder Active-Active-Failover. Getestete DR + Backup-Restore-Kadenz für Regulator-Review. Hybrid-Pattern (On-Prem + Cloud) unterstützt mit einer Control Plane.
+Designed für Zwei-oder-mehr-Rechenzentrum-Deployments mit Active-Warm- oder Active-Active-Failover. Getestete DR + Backup-Restore-Kadenz für Prüfung durch die Aufsicht. Hybrid-Pattern (On-Prem + Cloud) unterstützt mit einer Control Plane.
 
 ### Eine Control Plane verbindet VMware / OpenNebula / OpenShift
 
@@ -65,7 +62,7 @@ Private Cloud Platform ist gebaut für **Koexistenz**, nicht Rip-and-Replace. Ex
 
 - Kundenkontrollierte Verschlüsselungsschlüssel (Artikel 21(2)(h)) auf jeder Datenschicht
 - Audit-bereites Logging via VictoriaLogs mit unveränderbarem Backend (Artikel 21(2)(i) + Artikel 17–19)
-- Multi-Tenant CRD nach ICT-Risikoklassifizierung (Artikel 21(2)(a))
+- Multi-Tenant CRD nach IKT-Risikoklassifizierung (Artikel 21(2)(a))
 - Getestete Exit-Mechanik (Artikel 28(7)(c))
 - Lieferantentransparenz zur zweiten Stufe (Artikel 28(3))
 
@@ -106,7 +103,7 @@ Engineering-Team-Training als Teil des Engagements. Ænix's Kubernetes Deep Dive
 
 ### Enterprise-SLA + 24/7 Support + Named TAM
 
-Tiered SLA aligniert mit Regulator-Erwartungen. Named Technical Account Manager. Eskalations-Prozeduren.
+Tiered SLA aligniert mit Erwartungen der Aufsicht. Named Technical Account Manager. Eskalations-Prozeduren.
 
 ### Compliance-Zertifizierungs-Support
 
@@ -116,18 +113,18 @@ Vorvalidiert gegen ISO 27001 / SOC 2. Ænix unterstützt Zertifizierungs-Dokumen
 
 ## Wer kauft Private Cloud Platform
 
-| Buyer | Typisches Engagement |
+| Käuferprofil | Typisches Engagement |
 |---|---|
 | Tier-1 / Tier-2 europäische Bank | DORA-konforme Multi-DC-souveräne Cloud — mehrjähriges Programm nach RFP |
-| Versicherer | DORA-Scope + GDPR + sektoral; Souveränität für regulierte Workloads |
+| Versicherer | DORA-Scope + DSGVO + sektoral; Souveränität für regulierte Workloads |
 | Große öffentliche Verwaltung | Souveräne Cloud aligniert mit nationalen Beschaffungs-Mandaten |
-| Telco-Operator | NIS2 wesentliche-Entität-Compliance + Kunden-Cloud-Produkt-Möglichkeit |
+| Telco-Operator | NIS2 Compliance als wesentliche Einrichtung + Kunden-Cloud-Produkt-Möglichkeit |
 | Gesundheits-Operator | Sektorale Datengesetze + KI-Workloads auf regulierten Daten |
-| Regulierte Industrie / Energie | NIS2 wesentliche Entität + KI-Optimierung + Edge |
+| Regulierte Industrie / Energie | NIS2 wesentliche Einrichtung + KI-Optimierung + Edge |
 
 ---
 
-## Pricing
+## Preise
 
 Mehrjähriger Plattform-Build, Angebot nach RFP. Discovery-Call zur Scope-Definition.
 
@@ -147,14 +144,9 @@ Mehrjähriger Plattform-Build, Angebot nach RFP. Discovery-Call zur Scope-Defini
 
 ---
 
-## Kunden-Evidenz
+## Referenzen
 
-Tier-1- / Tier-2-europäische-Banken-Engagements sind in Produktion. **Alle derzeit NDA-geschützt; erste namentlich genannte Bank-Case-Studies erwartet Mitte 2027** mit NDA-Ablauf.
-
-Anonymisierte Phrasierung: "Tier-1-europäische-Bank-Engagement unter DORA-Scope" / "Mehr-Millionen-Euro Ænix Private Cloud Platform Deployment mit reguliertem Finanzinstitut".
-
----
-
+Engagements mit europäischen Banken der Tier-1- und Tier-2-Klasse laufen in Produktion und sind NDA-geschützt; namentlich nennen dürfen wir sie ab Mitte 2027, wenn die NDAs auslaufen. [Fünf Deployments sind vollständig dokumentiert](/de/case-studies/) — vertraglich anonymisiert, aber mit unveränderter Architektur und unveränderten Zahlen. Für eine konkrete Opportunity lassen sich Referenzgespräche mit Bestandskunden unter NDA arrangieren.
 
 ---
 

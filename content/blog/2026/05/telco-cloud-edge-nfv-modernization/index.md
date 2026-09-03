@@ -167,8 +167,8 @@ Cozystack-based architecture supports this commercially:
 - **EU jurisdiction** — telco's EU presence + Ænix EU contracting
   entity (AENIX s.r.o.)
 
-For sovereign cloud commercial product lines, the Ænix Platform
-Public Cloud Platform is the typical pairing — multi-region, multi-DC,
+For sovereign cloud commercial product lines, the Ænix Public Cloud
+Platform is the typical pairing — multi-region, multi-DC,
 service-catalog depth, brand-engineered customer portal.
 
 ## Edge compute realities

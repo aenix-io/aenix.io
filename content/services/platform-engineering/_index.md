@@ -1,6 +1,6 @@
 ---
 title: "Platform engineering services — build the internal platform your developers actually use"
-description: "Platform engineering is no longer a debate; it's an operational layer that mature engineering organizations now treat as core infrastructure. The question..."
+description: "Platform engineering from the team that builds Cozystack: golden paths, multi-tenancy and an operational model your team owns. Assess, build or managed."
 related_pages:
   - /services/internal-developer-platform/
   - /services/kubernetes-consulting/

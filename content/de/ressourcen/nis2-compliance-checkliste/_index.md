@@ -11,15 +11,15 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Die NIS2-Compliance Cloud-Architektur-Checkliste von Aenix ist eine kostenlose 35-Punkt-Checkliste für wesentliche und wichtige Entitäten, die ihre Cloud-Infrastruktur auf die NIS2-Richtlinie ausrichten müssen. Sie deckt die zehn Risiko-Management-Maßnahmen aus Artikel 21, die Vorfall-Reporting-Timelines aus Artikel 23 (24 Stunden, 72 Stunden, 1 Monat), Lieferketten-Sicherheit, Geschäftskontinuität (RTO/RPO), MFA, Verschlüsselung und Vulnerability-Management ab. Sie richtet sich an CISOs, IT-Leiter und Compliance-Teams in Energie, Banking, Gesundheitswesen, öffentlicher Verwaltung und bei MSPs. Die Ænix Private Cloud Platform auf Basis von Cozystack setzt diese Kontrollen technisch um: Tenant-CRD-Mandantenfähigkeit mit Cilium-NetworkPolicy-Segmentierung, kundenkontrollierte Verschlüsselung und audit-bereites Logging.**
+  **Die NIS2-Compliance Cloud-Architektur-Checkliste von Aenix ist eine kostenlose 35-Punkt-Checkliste für wesentliche und wichtige Einrichtungen, die ihre Cloud-Infrastruktur auf die NIS2-Richtlinie ausrichten müssen. Sie deckt die zehn Risiko-Management-Maßnahmen aus Artikel 21, die Meldefristen für Vorfälle aus Artikel 23 (24 Stunden, 72 Stunden, 1 Monat), Lieferketten-Sicherheit, Geschäftskontinuität (RTO/RPO), MFA, Verschlüsselung und Schwachstellenmanagement ab. Sie richtet sich an CISOs, IT-Leiter und Compliance-Teams in Energie, Banking, Gesundheitswesen, öffentlicher Verwaltung und bei MSPs. Die Ænix Private Cloud Platform auf Basis von Cozystack setzt diese Kontrollen technisch um: Tenant-CRD-Mandantenfähigkeit mit Cilium-NetworkPolicy-Segmentierung, kundenkontrollierte Verschlüsselung und audit-bereites Logging.**
 
 quick_facts:
   - label: "Was es ist"
     value: "Kostenlose 35-Punkt-Cloud-Architektur-Checkliste zur Ausrichtung an der NIS2-Richtlinie (EU 2022/2555)"
   - label: "Zielgruppe"
-    value: "CISOs, IT-Leiter und Compliance-Teams wesentlicher und wichtiger Entitäten sowie ICT-Drittanbieter"
+    value: "CISOs, IT-Leiter und Compliance-Teams wesentlicher und wichtiger Einrichtungen sowie IKT-Drittanbieter"
   - label: "Abgedeckte Bereiche"
-    value: "Artikel 21 Risiko-Management (10 Bereiche), Artikel 23 Vorfall-Reporting, Lieferkette, Geschäftskontinuität, MFA, Verschlüsselung, Vulnerability-Management"
+    value: "Artikel 21 Risiko-Management (10 Bereiche), Artikel 23 Vorfall-Reporting, Lieferkette, Geschäftskontinuität, MFA, Verschlüsselung, Schwachstellenmanagement"
   - label: "Passendes Produkt"
     value: "Ænix Private Cloud Platform — NIS2-konform by design (Tenant CRD, Cilium-Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging)"
   - label: "Lizenz"
@@ -29,8 +29,8 @@ quick_facts:
 
 faq:
   - q: "Für wen gilt die NIS2-Richtlinie?"
-    a: "NIS2 gilt für wesentliche Entitäten (u. a. Energie, Transport, Banking, Gesundheitswesen, öffentliche Verwaltung, digitale Infrastruktur, MSPs) und wichtige Entitäten (u. a. Post, Fertigung kritischer Produkte, digitale Service-Anbieter, R&D). Auch ICT-Drittanbieter, die wesentliche Entitäten bedienen, sind über die Lieferketten-Anforderungen betroffen."
-  - q: "Welche Vorfall-Reporting-Timelines verlangt NIS2?"
+    a: "NIS2 gilt für wesentliche Einrichtungen (u. a. Energie, Transport, Banking, Gesundheitswesen, öffentliche Verwaltung, digitale Infrastruktur, MSPs) und wichtige Einrichtungen (u. a. Post, Fertigung kritischer Produkte, digitale Service-Anbieter, R&D). Auch IKT-Drittanbieter, die wesentliche Einrichtungen bedienen, sind über die Lieferketten-Anforderungen betroffen."
+  - q: "Welche Meldefristen für Vorfälle verlangt NIS2?"
     a: "Artikel 23 verlangt eine gestufte Meldung: eine Frühwarnung innerhalb von 24 Stunden nach Kenntnis eines erheblichen Vorfalls, eine Vorfallsmeldung innerhalb von 72 Stunden und einen Abschlussbericht innerhalb eines Monats. Die Checkliste prüft, ob Ihre Architektur und Prozesse diese Fristen einhalten können."
   - q: "Was kostet die NIS2-Checkliste?"
     a: "Die Checkliste ist kostenlos. Sie laden das PDF über das Formular auf dieser Seite herunter. Es ist keine Zahlung erforderlich."
@@ -42,7 +42,7 @@ faq:
     a: "Die kommerziellen Stufen sind Basic ab 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $/Monat, Plus 5.500 $/Monat und Enterprise nach Vereinbarung. Die zugrunde liegende Cozystack-Software bleibt Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
 ---
 
-**Eine 35-Punkt-Checkliste für wesentliche und wichtige Entitäten unter NIS2. Deckt Artikel 21 Risiko-Management-Maßnahmen (10 Bereiche), Artikel 23 Vorfall-Reporting-Timelines, Lieferketten-Transparenz, Geschäftskontinuität, MFA, Verschlüsselung und Architektur-Level-Kontrollen ab.**
+**Eine 35-Punkt-Checkliste für wesentliche und wichtige Einrichtungen unter NIS2. Deckt Artikel 21 Risiko-Management-Maßnahmen (10 Bereiche), Artikel 23 Meldefristen für Vorfälle, Lieferketten-Transparenz, Geschäftskontinuität, MFA, Verschlüsselung und Kontrollen auf Architekturebene ab.**
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — NIS2-konform by design (Tenant CRD mit NetworkPolicy / Cilium für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging, Coordinated Vulnerability Disclosure nach Artikel 12).
 
@@ -67,9 +67,9 @@ Fünf Sektionen, 35 architektonische Kontrollpunkte:
 
 ## Wer das nutzt
 
-- Wesentliche Entitäten (Energie, Transport, Banking, Gesundheitswesen, öffentliche Verwaltung, digitale Infrastruktur, MSPs)
-- Wichtige Entitäten (Post, Fertigung kritischer Produkte, digitale Service-Anbieter, R&D)
-- ICT-Drittanbieter, die wesentliche Entitäten bedienen
+- Wesentliche Einrichtungen (Energie, Transport, Banking, Gesundheitswesen, öffentliche Verwaltung, digitale Infrastruktur, MSPs)
+- Wichtige Einrichtungen (Post, Fertigung kritischer Produkte, digitale Service-Anbieter, R&D)
+- IKT-Drittanbieter, die wesentliche Einrichtungen bedienen
 
 ---
 

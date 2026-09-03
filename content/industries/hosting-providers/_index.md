@@ -1,6 +1,6 @@
 ---
 title: "Cloud platform for hosting providers — modernize beyond VPS, launch cloud products"
-description: "Hosting providers in 2026 face customer demand for cloud capabilities competitive with hyperscalers but with the customer-relationship advantages and..."
+description: "Move beyond VPS to a cloud product: multi-tenant isolation, WHMCS billing in two modes, managed databases, S3 and GPU, with no per-CPU licensing on the margin."
 related_pages: ["/services/public-cloud-builder", "/services/white-label-cloud", "/products/public-cloud-platform/", "/partners/", "/products/cozystack"]
 language: "en"
 quick_facts_style: "rows"

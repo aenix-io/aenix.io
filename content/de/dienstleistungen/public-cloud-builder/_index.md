@@ -1,6 +1,6 @@
 ---
 title: "Public Cloud Builder — kundenseitiges Cloud-Produkt auf Open-Source-Foundation starten"
-description: "Hosting-Anbieter, Telcos und regionale Operatoren in 2026 stehen vor der Frage: Wie bieten wir Enterprise-Kunden ein glaubwürdiges Cloud-Produkt, ohne ein..."
+description: "Hosting-Anbieter, Telcos und regionale Operatoren im Jahr 2026 stehen vor der Frage: Wie bieten wir Enterprise-Kunden ein glaubwürdiges Cloud-Produkt, ohne ein..."
 related_pages:
   - /de/dienstleistungen/private-cloud-consulting
   - /de/produkte/public-cloud-platform/
@@ -23,7 +23,7 @@ quick_facts:
   - label: "Zielgruppe"
     value: "Hosting-Anbieter, Telekommunikations-Operatoren, regionale Betreiber und branchenspezifische Clouds (Finanz, Regierung, KI)"
   - label: "Produkt"
-    value: "Ænix Public Cloud Platform (Multi-Region, Cloud-like UX, Multi-Hypervisor) und Public Cloud Platform (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat)"
+    value: "Ænix Public Cloud Platform — WHMCS-Integration und produktisierter Installer ab 1.250 USD/Monat auf Provider-Größe, Multi-Region und Multi-Hypervisor für große Betreiber"
   - label: "Technologie"
     value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Engagement"
@@ -36,7 +36,7 @@ faq:
   - q: "Für wen eignet sich diese Dienstleistung?"
     a: "Für Hosting-Anbieter beim Up-Market-Move von VPS/Dedicated Servers, Telekommunikations-Operatoren mit Enterprise-Cloud-Launch, regionale Betreiber in souveränitätsrelevanten Jurisdiktionen sowie branchenspezifische Clouds für Finanz-, Regierungs- oder KI-Workloads."
   - q: "Welche Ænix-Plattform passt zu meinem Vorhaben?"
-    a: "Die Public Cloud Platform richtet sich an große Public-Cloud-Betreiber mit Multi-Region, Cloud-like UX und Multi-Hypervisor. Die Public Cloud Platform passt zu kleinen bis mittleren Hosting-Anbietern und regionalen Clouds; sie ist WHMCS-integriert, bringt einen produktisierten Installer mit und startet ab 1.250 USD/Monat."
+    a: "Es ist dieselbe Plattform an beiden Enden derselben Skala. Für kleine und mittlere Hosting-Anbieter und regionale Clouds ist sie WHMCS-integriert, bringt einen produktisierten Installer mit und startet ab 1.250 USD/Monat. Für große Public-Cloud-Betreiber kommen Multi-Region, ein cloud-typisches Bedienerlebnis und Multi-Hypervisor-Betrieb hinzu — zugeschaltet, nicht neu beschafft."
   - q: "Wie ist das Engagement strukturiert?"
     a: "Es beginnt mit einem kostenlosen Discovery-Call (30 min), gefolgt von einem Architektur- und Produkt-Readiness-Assessment (4-8 Wochen) mit Produkt- und GTM-Schwerpunkt, einer Implementation über 6-18 Monate und optional einem Managed-Services-Arrangement während des frühen Customer-Ramp."
   - q: "Entsteht durch die Open-Source-Foundation ein Vendor-Lock-in?"
@@ -47,7 +47,7 @@ faq:
 
 Ænix baut kundenseitige Public-Cloud-Produkte auf Cozystack — der Open-Source-Kubernetes-nativen Plattform, die Ænix Public Cloud Platform Deployments bei regionalen Hosting-Anbietern und mehrere weitere regionale Cloud-Launches antreibt.
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Public-Cloud-Operatoren (Multi-Region, Cloud-like UX, Multi-Hypervisor); **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für kleine / mittlere Hosting-Anbieter und regionale Clouds (WHMCS-integriert, produktisierter Installer, ab 1.250 USD/Monat).
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** an beiden Enden derselben Skala: für kleine und mittlere Hosting-Anbieter und regionale Clouds WHMCS-integriert mit produktisiertem Installer ab 1.250 USD/Monat, für große Betreiber zusätzlich Multi-Region, cloud-typisches Bedienerlebnis und Multi-Hypervisor-Betrieb.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>

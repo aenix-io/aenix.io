@@ -20,7 +20,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "CISOs bei Finanzinstituten, Cloud-Architekten bei ICT-Drittanbietern, Compliance- und Beschaffungs-Teams"
+    value: "CISOs bei Finanzinstituten, Cloud-Architekten bei IKT-Drittanbietern, Compliance- und Beschaffungs-Teams"
   - label: "Regulatorik"
     value: "Deckt DORA Artikel 5-16 (IKT-Risikomanagement-Rahmen), Artikel 17-19 (Klassifizierung und Meldung IKT-bezogener Vorfälle), Artikel 24-27 (Resilienztests, TLPT) und Artikel 28-30 (IKT-Drittparteienrisiko, Ausstiegsstrategien, Vertragsinhalte) ab"
   - label: "Passendes Produkt"
@@ -31,7 +31,7 @@ faq:
   - q: "Welche DORA-Artikel deckt die Checkliste ab?"
     a: "Sie adressiert den IKT-Risikomanagement-Rahmen (Artikel 5-16, insbesondere Artikel 6), die Klassifizierung und Meldung IKT-bezogener Vorfälle (Artikel 17-19), Resilienztests und bedrohungsgeleitete Penetrationstests (Artikel 24-27) sowie IKT-Drittparteienrisiko, Ausstiegsstrategien und Vertragsinhalte (Artikel 28-30), dazu Verschlüsselung und Audit-Bereitschaft."
   - q: "Für wen ist die Checkliste gedacht?"
-    a: "Für CISOs bei Finanzinstituten in Vorbereitung auf den Aufsichts-Dialog, Cloud-Architekten bei ICT-Drittanbietern mit Finanz-Sektor-Kunden, Compliance-Teams beim Scoping von DORA-Readiness-Engagements und Beschaffung bei der Vorbereitung von RFIs für DORA-aligned Services."
+    a: "Für CISOs bei Finanzinstituten in Vorbereitung auf den Aufsichtsdialog, Cloud-Architekten bei IKT-Drittanbietern mit Finanz-Sektor-Kunden, Compliance-Teams beim Scoping von DORA-Readiness-Engagements und Beschaffung bei der Vorbereitung von RFIs für DORA-aligned Services."
   - q: "Kostet die Checkliste etwas?"
     a: "Nein. Die Checkliste ist als kostenloser PDF-Download verfügbar. Für ein vollständiges DORA-aligned Engagement verweist die Seite auf die DORA-Compliance-Services-Seite von Aenix."
   - q: "Wie unterstützt die Ænix Platform DORA-Compliance?"
@@ -68,7 +68,7 @@ faq:
 <div class="diagram__conn">führt zu</div>
 <div class="diagram__node diagram__node--brand"><b>DORA-konformes Readiness-Engagement</b><div class="diagram__chips"><span>Verwendet von Ænix</span></div></div>
 <div class="diagram__conn">bereitet vor</div>
-<div class="diagram__node"><b>Aufsichts-Dialog</b><div class="diagram__chips"><span>getestete Exit-Mechanik</span></div></div>
+<div class="diagram__node"><b>Aufsichtsdialog</b><div class="diagram__chips"><span>getestete Exit-Mechanik</span></div></div>
 </div>
 </div>
 
@@ -76,8 +76,8 @@ faq:
 
 ## Wer das nutzt
 
-- CISOs bei Finanzinstituten in Vorbereitung auf Aufsichts-Dialog
-- Cloud-Architekten bei ICT-Drittanbietern, die Finanz-Sektor bedienen
+- CISOs bei Finanzinstituten in Vorbereitung auf Aufsichtsdialog
+- Cloud-Architekten bei IKT-Drittanbietern, die Finanz-Sektor bedienen
 - Compliance-Teams in Scoping von DORA-Readiness-Engagements
 - Beschaffung in Vorbereitung auf RFI für DORA-aligned Services
 

@@ -16,7 +16,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**Ihre Cloud-Rechnung wächst mit dem Geschäft, der Lock-in zieht an, und „souverän" ist inzwischen Kundenanforderung. Als CTO wollen Sie Ökonomie und Kontrolle zurück, ohne die Roadmap zu bremsen. Ænix gibt Ihnen eine offene, Kubernetes-native Plattform für eigene oder gemietete Hardware — schlüsselfertig geliefert oder mit Ihnen gebaut, vom Team dahinter.**
+**Ihre Cloud-Rechnung wächst mit dem Geschäft, der Lock-in zieht an, und „souverän“ ist inzwischen Kundenanforderung. Als CTO wollen Sie Ökonomie und Kontrolle zurück, ohne die Roadmap zu bremsen. Ænix gibt Ihnen eine offene, Kubernetes-native Plattform für eigene oder gemietete Hardware — schlüsselfertig geliefert oder mit Ihnen gebaut, vom Team dahinter.**
 
 > **Passt zu:** **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** und **[Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, **[Ænix Platform](/de/produkte/)**, auf Open-Source-**[Cozystack](https://cozystack.io)**.
 
@@ -106,7 +106,7 @@ Kostenlos, ohne Vorbereitung. Wir prüfen die Ökonomie und sagen, ob schlüssel
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/cto/ ; hreflang de self, en → /for/cto/.

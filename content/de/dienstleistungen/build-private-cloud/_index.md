@@ -32,18 +32,18 @@ faq:
   - q: "Was bedeutet es, eine Private Cloud aufzubauen?"
     a: "Eine eigene Cloud-Plattform für VMs und Container auf eigener oder gemieteter Hardware zu betreiben — mit Self-Service, Mandantenfähigkeit und Automatisierung wie bei einer Public Cloud, aber unter voller Daten- und Kostenkontrolle. Aenix realisiert das auf Cozystack, einem CNCF-Open-Source-Projekt."
   - q: "Für wen lohnt sich der Aufbau einer Private Cloud?"
-    a: "Für Teams, die eine Plattform-Engineering-Funktion haben oder aufbauen und einen konkreten Trigger besitzen: VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads im großen Maßstab oder eine FinOps-Klippe. Die Ökonomie muss dedizierte Infrastruktur tragen — nachhaltige Workloads, regulierte Daten oder GPU-Lasten."
+    a: "Für Teams, die eine Plattform-Engineering-Funktion haben oder aufbauen und einen konkreten Trigger besitzen: VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads im großen Maßstab oder eine FinOps-Klippe. Die Ökonomie muss dedizierte Infrastruktur tragen — dauerhaft ausgelastete Workloads, regulierte Daten oder GPU-Lasten."
   - q: "Welche Technologie steckt hinter der Aenix Private Cloud?"
     a: "Cozystack (Apache 2.0). KubeVirt vereint VMs und Container auf einer Kubernetes-API, Cilium (eBPF) liefert das Netzwerk, LINSTOR/DRBD den replizierten Storage und das Tenant-CRD die Mandantenfähigkeit. Alles auf Standard-Kubernetes, ohne proprietären Lock-in."
   - q: "Wie läuft ein Engagement mit Aenix ab?"
     a: "In Phasen: kostenloser Discovery-Call (30 min), Platform Readiness Assessment (5-10 Tage, Festpreis vorab vereinbart), Pilot-Engagement (3-6 Monate), vollständiger Build (9-18 Monate) und optional laufende Managed Operations als Retainer."
   - q: "Was kostet die Ænix Platform?"
-    a: "Die produktisierte Ænix Platform gibt es in Plattformen mit gestaffelten Preisen: Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Aufwand. Der projektbasierte Build wird separat als Assessment, Pilot und Vollausbau kalkuliert."
+    a: "Die produktisierte Ænix Platform gibt es in drei Plattformen mit gestaffelten Support-Preisen: Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Aufwand. Der projektbasierte Build wird separat als Assessment, Pilot und Vollausbau kalkuliert."
   - q: "Entsteht durch Cozystack ein Vendor-Lock-in?"
     a: "Nein. Cozystack ist Apache-2.0-lizenziert und ein CNCF-Projekt ohne CPU- oder Core-basierte Lizenzierung. Es baut auf Standard-Kubernetes-APIs und etablierten Upstream-Komponenten (KubeVirt, Cilium, LINSTOR) auf, sodass Sie die Plattform auch ohne Aenix weiterbetreiben können."
 ---
 
-**Die Phrase "Private Cloud aufbauen" klingt so, als sollte sie 2026 unkompliziert sein. Die Realität: es ist gleichzeitig ein Architektur-Problem, ein Problem operativer Disziplin und ein Team-Kapazitäts-Problem. Gut gemacht produziert es eine Plattform, die über Jahre Wert kompoundiert. Schlecht gemacht produziert es operative Schulden und den nächsten Notfall.**
+**Die Phrase „Private Cloud aufbauen“ klingt so, als sollte sie 2026 unkompliziert sein. Die Realität: es ist gleichzeitig ein Architektur-Problem, ein Problem operativer Disziplin und ein Team-Kapazitäts-Problem. Richtig umgesetzt entsteht eine Plattform, die über Jahre an Wert gewinnt. Schlecht umgesetzt entstehen operative Altlasten und den nächsten Notfall.**
 
 Ænix baut Private Clouds end-to-end auf Basis von [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das wir in Produktion mit Service-Anbietern, Banken, Telcos und KI-Operatoren betreiben.
 
@@ -60,20 +60,20 @@ faq:
 
 Die Arbeit passt, wenn:
 
-- Sie haben oder bauen eine Plattform-Engineering-Funktion (das ist eine operative Verpflichtung, kein einmaliges Projekt).
+- Sie haben eine Plattform-Engineering-Funktion oder bauen eine auf (das ist eine operative Verpflichtung, kein einmaliges Projekt).
 - Sie haben einen spezifischen Trigger — VMware-Ausstieg, Souveränitätsmandat, KI-Workloads, FinOps-Klippe.
-- Die Ökonomie unterstützt dedizierte Infrastruktur (nachhaltige Workloads, regulierte Daten oder KI/GPU im großen Maßstab).
+- Die Ökonomie unterstützt dedizierte Infrastruktur (dauerhaft ausgelastete Workloads, regulierte Daten oder KI/GPU im großen Maßstab).
 - Das Kunden-Team kann den Betrieb aufrechterhalten, nachdem Ænix geht (oder hat sich für Managed-Services entschieden).
 
 Wenn Sie bei einem dieser Punkte unsicher sind, klärt die Assessment-Phase dies, bevor der Aufbau beginnt.
 
 ---
 
-## Was ein "Private Cloud aufbauen"-Engagement tatsächlich abdeckt
+## Was ein „Private Cloud aufbauen“-Engagement tatsächlich abdeckt
 
 - **Hardware** — Sizing, Vendor-Auswahl, Datacenter- / Colocation-Arrangements.
 - **Plattform-Layer** — Cozystack auf Talos (Standard), oder Erweiterung des bestehenden Kubernetes.
-- **Storage** — LINSTOR (Standard) oder Ceph; Kapazitätsplanung; Backup-Architektur.
+- **Storage** — LINSTOR/DRBD über den Piraeus-Operator (Standard in Cozystack), SeaweedFS für Objektspeicher, optional ein bestehendes Ceph-Cluster über Ceph CSI; Kapazitätsplanung; Backup-Architektur.
 - **Netzwerk** — Cilium, BGP-Fabric, MetalLB, Ingress.
 - **Multi-Tenancy** — Tenant CRD, RBAC, Quotas, Audit.
 - **Operations** — Observability-Stack, Runbooks, On-Call, Incident-Response.
@@ -100,7 +100,7 @@ Wenn Sie bei einem dieser Punkte unsicher sind, klärt die Assessment-Phase dies
 | Discovery | 30 min, kostenlos | Fit bestätigen |
 | Assessment | 14-28 Tage | Architektur, Sizing, Phase-2-Plan |
 | Build | 3-12 Monate | Produktive Private Cloud |
-| Operate (optional) | Laufend | Managed Service oder in-house |
+| Betrieb (optional) | Laufend | Managed Service oder in-house |
 
 Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 

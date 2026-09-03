@@ -55,7 +55,7 @@ service:
   audience: "Hosting-Anbieter, MSPs, Service-Provider mit Virtuozzo-Bestand"
 ---
 
-**„Weg von Virtuozzo" sind drei verschiedene Projekte unter einem Namen. Klären Sie das Produkt, bevor irgendjemand schätzt — und beachten Sie, dass Virtuozzo 2026 alle drei umbenannt hat, Ihre eigene Dokumentation und jedes Suchergebnis also alte und neue Namen mischen.**
+**„Weg von Virtuozzo“ sind drei verschiedene Projekte unter einem Namen. Klären Sie das Produkt, bevor irgendjemand schätzt — und beachten Sie, dass Virtuozzo 2026 alle drei umbenannt hat, Ihre eigene Dokumentation und jedes Suchergebnis also alte und neue Namen mischen.**
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn Sie Virtuozzo-Kapazität an Kunden weiterverkaufen — der Mehrheitsfall, denn das Produkt wird überwiegend über regionale Hosting-Anbieter vertrieben, die es unter eigener Marke anbieten; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn dort interne Workloads laufen. Rechnen Sie zuerst mit dem **[Fünf-Jahres-TCO-Vergleich Virtuozzo vs Cozystack](/tco-calculator/vs-virtuozzo/)**.
 
@@ -142,7 +142,7 @@ Drei konkrete Grenzen, die man einplant statt entdeckt:
 
 Damit taugt der Export als **Inventar**, nicht als Migration. Echte Daten kommen über die gewöhnlichen Kanäle heraus: SSH und rsync über das SSH-Gate der Plattform, FTP wo der Knotentyp es unterstützt, und native Datenbank-Dumps. Es gibt eine REST-API und ein Platform-CLI für den Umgebungs-Lebenszyklus — damit automatisiert man die Extraktion.
 
-Die Architektur gehört klar benannt, weil sie die Einschränkung erklärt. Die Workloads laufen in **System-Containern** — der Virtuozzo-Implementierung, derselben Linie wie Virtuozzo Server. Docker ist **darin geschachtelt**: Das Dateisystem eines eigenen Images wird in die System-Container-Laufzeit entpackt, statt als OCI-Container zu laufen, und nur eine Positivliste von Basis-Betriebssystemen wird unterstützt. „Wir nutzen hier schon Docker" macht den Neubau also einfacher, weil ein Image als Ausgangspunkt existiert — es bedeutet aber nicht, dass der Workload bereits portabel ist.
+Die Architektur gehört klar benannt, weil sie die Einschränkung erklärt. Die Workloads laufen in **System-Containern** — der Virtuozzo-Implementierung, derselben Linie wie Virtuozzo Server. Docker ist **darin geschachtelt**: Das Dateisystem eines eigenen Images wird in die System-Container-Laufzeit entpackt, statt als OCI-Container zu laufen, und nur eine Positivliste von Basis-Betriebssystemen wird unterstützt. „Wir nutzen hier schon Docker“ macht den Neubau also einfacher, weil ein Image als Ausgangspunkt existiert — es bedeutet aber nicht, dass der Workload bereits portabel ist.
 
 Die Zuordnung nach Kubernetes:
 
@@ -188,7 +188,7 @@ Die Zuordnung nach Kubernetes:
 </div>
 </div>
 
-1. **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Inventar getrennt nach Produkt; Triage Container für Container in „kapseln oder neu bauen"; der OpenStack-Provider von Forklift gegen Ihre tatsächliche Virtuozzo-Infrastructure-Version getestet und der qcow2-Rückfallweg daneben nachgewiesen; Mandanten- und Adressentwurf; bei Application Management ein Preismodell neben dem technischen Plan.
+1. **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Inventar getrennt nach Produkt; Triage Container für Container in „kapseln oder neu bauen“; der OpenStack-Provider von Forklift gegen Ihre tatsächliche Virtuozzo-Infrastructure-Version getestet und der qcow2-Rückfallweg daneben nachgewiesen; Mandanten- und Adressentwurf; bei Application Management ein Preismodell neben dem technischen Plan.
 2. **Pilot-Kohorte** — der einfachste echte Workload zuerst. Bei Application-Management-Beständen sind das die Docker- und Kubernetes-Umgebungen, wo bereits Images existieren.
 3. **Rollende Migration** — Kohorte für Kohorte mit Parallel-Run-Validierung, Virtuozzo-Hosts wandern in den Zielcluster, sobald sie frei werden.
 4. **Betrieb** — Ihr Team mit **[Cozystack Enterprise Support](/de/produkte/cozystack-enterprise-support/)** im Rücken, oder Betrieb durch Ænix.

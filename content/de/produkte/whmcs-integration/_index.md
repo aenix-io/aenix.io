@@ -1,6 +1,6 @@
 ---
 title: "WHMCS Kubernetes & Cloud — die Cozystack-Integration für Hoster"
-description: "Verkaufen Sie Kubernetes-Cluster, Managed Datenbanken, VMs, Message-Broker, Objektspeicher und GPU direkt aus WHMCS. Die proprietäre Aenix-Integration bringt Cozystack-Services und Abrechnung in Ihr bestehendes Panel."
+description: "Verkaufen Sie Kubernetes-Cluster, Managed Databases, VMs, Message-Broker, Objektspeicher und GPU direkt aus WHMCS — mit Verbrauchsmessung und Abrechnung im bestehenden Panel."
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -48,6 +48,7 @@ service:
   audience: "Hosting Providers"
 aliases:
   - /de/produkte/whmcs-cozystack-integration/
+
 ---
 
 # WHMCS × Cozystack — machen Sie aus Ihrem Hosting-Panel eine moderne Cloud
@@ -133,6 +134,7 @@ Nicht auf WHMCS oder etwas anderes im Einsatz? Wir helfen Hostern und Clouds auc
 - **zu paketieren** — die konkreten Apps und Services, die Ihre Kunden nachfragen.
 
 Gerade wenn Sie schon auf WHMCS sind, ist das der schnellste Weg, Kubernetes, Datenbanken, VMs und GPU zu verkaufen und mehr aus Ihren bestehenden Kunden zu erlösen. Siehe die **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** und die anonymisierte **[Fallstudie souveräne Public Cloud](/de/case-studies/sovereign-public-cloud/)**.
+
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform als drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*

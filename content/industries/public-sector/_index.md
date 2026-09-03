@@ -1,6 +1,6 @@
 ---
 title: "Sovereign cloud platform for the public sector — from procurement to production"
-description: "Public-sector and quasi-public organizations face a particular combination of constraints in 2026: procurement-mandated sovereignty (EU member states,..."
+description: "Sovereign cloud for government and quasi-public bodies: air-gap, customer-held keys, NIS2 gap work, and RFI/RFP through EU and Kazakhstan procurement portals."
 related_pages:
   - /solutions/data-sovereignty/
   - /solutions/dora-compliance/

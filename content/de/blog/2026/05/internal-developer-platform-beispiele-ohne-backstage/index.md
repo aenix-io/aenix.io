@@ -10,36 +10,36 @@ companion_landing: "/de/dienstleistungen/internal-developer-platform/"
 quiz:
   title: "Wissens-Check: IDP ohne Backstage-Lock-in"
   questions:
-    - q: "Was ist die kritische Unterscheidung zwischen Plattform und Portal?"
+    - q: "Worin besteht der entscheidende Unterschied zwischen Plattform und Portal?"
       options:
-        - { text: "Plattform ist UI, Portal ist Backend", correct: false }
-        - { text: "Plattform = Capability-Schicht (Compute/Storage/Identity); Portal = UI/Catalog-Schicht. Plattform ohne Portal funktioniert. Portal ohne Plattform ist Tapete", correct: true }
-        - { text: "Beide sind dasselbe", correct: false }
-      explanation: "IDP ist überladen: Internal Developer Platform = die Capability-Schicht (Compute, Storage, Networking, Identity, Observability, Deployment-Automatisierung). Internal Developer Portal = die UI/Catalog-Schicht (Backstage, Port, Cortex). Plattform ohne Portal funktioniert; Portal ohne Plattform ist Tapete."
-    - q: "Wie viele Produktions-IDP-Muster werden beschrieben?"
+        - { text: "Die Plattform ist die Oberfläche, das Portal ist das Backend", correct: false }
+        - { text: "Die Plattform ist die Fähigkeitsschicht, das Portal die Oberfläche", correct: true }
+        - { text: "Beide bezeichnen dasselbe, nur in unterschiedlichen Märkten", correct: false }
+      explanation: "Das Kürzel IDP ist überladen: Die Internal Developer Platform ist die Fähigkeitsschicht mit Compute, Storage, Networking, Identität, Observability und Deployment-Automatisierung. Das Internal Developer Portal ist die Oberflächen- und Katalogschicht (Backstage, Port, Cortex). Eine Plattform ohne Portal funktioniert; ein Portal ohne Plattform ist Tapete."
+    - q: "Wie viele Produktionsmuster für IDPs beschreibt der Artikel?"
       options:
         - { text: "Drei", correct: false }
         - { text: "Sechs", correct: true }
         - { text: "Zehn", correct: false }
-      explanation: "Sechs Muster: (1) Multi-Tenant Kubernetes-native Cloud-Plattform (Cozystack), (2) GitOps-First per-Team Kubernetes, (3) Service-Template + Golden-Path-Plattform, (4) PaaS-Lite auf Kubernetes, (5) Backstage-First mit Capability-Operatoren, (6) External-Services-as-Platform."
-    - q: "Welcher häufige Fehler steht an erster Stelle der Pitfalls?"
+      explanation: "Sechs Muster: (1) Multi-Mandanten-Cloud-Plattform auf Kubernetes-Basis (Cozystack), (2) GitOps-First mit Kubernetes je Team, (3) Service-Templates plus Golden Paths, (4) PaaS-Lite auf Kubernetes, (5) Backstage-First mit Capability-Operatoren, (6) External Services as Platform."
+    - q: "Welcher Fehler steht an erster Stelle der Fallstricke?"
       options:
-        - { text: "Mit dem Portal anfangen (Backstage-First ohne Plattform)", correct: true }
-        - { text: "Argo CD statt Flux verwenden", correct: false }
-        - { text: "Zu viele SREs einstellen", correct: false }
-      explanation: "Erster Pitfall: mit dem Portal anfangen. Backstage zu kaufen bevor die underlying Capabilities self-service sind, produziert einen schönen Katalog über demselben operativen Chaos. Adoption blockiert."
-    - q: "Welches Muster wird für Service-Provider und Multi-Tenant Cloud-Builder empfohlen?"
+        - { text: "Mit dem Portal anfangen, bevor die Plattform trägt", correct: true }
+        - { text: "Argo CD statt Flux als GitOps-Engine wählen", correct: false }
+        - { text: "Zu viele SREs für das Plattformteam einstellen", correct: false }
+      explanation: "Erster Fallstrick: mit dem Portal anfangen. Wer Backstage kauft, bevor die darunterliegenden Fähigkeiten wirklich self-service sind, bekommt einen schönen Katalog über demselben betrieblichen Chaos. Die Nutzung bleibt aus."
+    - q: "Welches Muster empfiehlt der Artikel für Service-Provider und Multi-Mandanten-Cloud-Anbieter?"
       options:
-        - { text: "PaaS-Lite", correct: false }
-        - { text: "Muster 1 — Multi-Tenant Kubernetes-native Cloud-Plattform (Cozystack)", correct: true }
-        - { text: "External-Services-as-Platform", correct: false }
-      explanation: "Muster 1 (Cozystack): Single Kubernetes-Cluster mit hard-multi-tenancy, Tenant CRD, KubeVirt für VMs, Container-Workloads, verwaltete Datenbanken. Beste Wahl für Service-Provider und Multi-Tenant."
-    - q: "Was passiert, wenn das Plattform-Team unterbesetzt ist?"
+        - { text: "PaaS-Lite auf Kubernetes", correct: false }
+        - { text: "Muster 1, die Kubernetes-native Multi-Mandanten-Plattform", correct: true }
+        - { text: "External Services as Platform", correct: false }
+      explanation: "Muster 1 auf Cozystack-Basis: ein Kubernetes-Cluster mit harter Mandantentrennung über das Tenant CRD, KubeVirt für virtuelle Maschinen, Container-Workloads und verwaltete Datenbanken. Die beste Wahl für Service-Provider und Multi-Mandanten-Umgebungen."
+    - q: "Was passiert, wenn das Plattformteam unterbesetzt ist?"
       options:
-        - { text: "Nichts", correct: false }
-        - { text: "Plattform-Team absorbiert sowohl Plattform-Build als auch On-Call für gemeinsame Services; Capacity für Golden-Path-Arbeit verschwindet; Funktion blockiert", correct: true }
-        - { text: "Schnellere Velocity", correct: false }
-      explanation: "Pitfall 4: Plattform-Teams die sowohl Plattform-Build als auch On-Call für gemeinsame Services absorbieren, verbringen ihre Zeit mit Tickets. Capacity für Golden-Path-Arbeit verschwindet. Die Funktion blockiert."
+        - { text: "Es passiert nichts Nennenswertes, die Arbeit verteilt sich", correct: false }
+        - { text: "Die Kapazität für Golden Paths verschwindet im Ticketbetrieb", correct: true }
+        - { text: "Die Liefergeschwindigkeit der Produktteams steigt", correct: false }
+      explanation: "Fallstrick 4: Plattformteams, die zugleich die Plattform bauen und die Rufbereitschaft für gemeinsame Dienste tragen, verbringen ihre Zeit mit Tickets. Die Kapazität für die Arbeit an den Golden Paths verschwindet, und die Funktion kommt zum Stillstand."
 ---
 
 Begleitung zur **[IDP-Page](/de/dienstleistungen/internal-developer-platform)**.
@@ -69,7 +69,7 @@ Je nach Multi-Tenancy-Bedarf, Produkt-Team-Autonomie, Service-Erstellungsrate, K
 - Mit dem Portal anfangen
 - Zu viele Meinungen, zu rigide
 - Plattform-Team unterbesetzt
-- Vendor-led "Plattform-in-a-Box"
+- Vendor-led „Plattform-in-a-Box“
 - Für Engineering-Eleganz statt Adoption optimieren
 
 ---

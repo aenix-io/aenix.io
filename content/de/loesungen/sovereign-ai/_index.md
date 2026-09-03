@@ -2,7 +2,7 @@
 title: "Souveräne KI-Infrastruktur — GenAI auf Daten, die das Unternehmen nicht verlassen dürfen"
 description: "Für regulierte Workloads ist KI nicht mehr nur ein Hyperscaler-Thema. Sensible Datenklassen, sektorale Vorgaben und die Ökonomie von Inferenz im großen..."
 type: "page"
-related_pages: ["/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/products/cozystack"]
+related_pages: ["/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/de/produkte/cozystack/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -70,7 +70,7 @@ Souveräne KI ist nicht für jeden Workload sinnvoll. Sie ist die richtige Antwo
 - **Die Datenklasse ist sensibel** — regulierte personenbezogene Daten, Finanzdatensätze, Gesundheitsakten, klassifizierte Informationen, internes geistiges Eigentum, das Modellanbietern nicht offengelegt werden darf.
 - **Der Regulator bindet die KI-Verarbeitung an eine Jurisdiktion** — DORA, NIS2, sektorale Regeln, Souveräne-Cloud-Mandate (EU-Mitgliedstaaten, Kasachstan, mehrere APAC-Länder).
 - **Inferenz im Maßstab ist beim Hyperscaler wirtschaftlich schmerzhaft** — GPU-Preise, Egress-Kosten und unvorhersehbare Ausgaben machen dedizierte Infrastruktur für 24/7-Inferenz-Workloads besser geeignet.
-- **Das Modellverhalten muss reproduzierbar und auditierbar sein** — der Dialog mit dem Regulator verlangt "genau welches Modell diese Ausgabe erzeugt hat, mit welchen Gewichten, mit welchen Eingabedaten."
+- **Das Modellverhalten muss reproduzierbar und auditierbar sein** — der Dialog mit dem Regulator verlangt „genau welches Modell diese Ausgabe erzeugt hat, mit welchen Gewichten, mit welchen Eingabedaten.“
 - **Air-gap oder eingeschränkter Egress ist erforderlich** — klassifizierte Workloads des öffentlichen Sektors, verteidigungsnahe oder kritische Infrastruktur.
 
 Trifft keiner dieser Punkte zu, ist souveräne KI Over-Engineering. Treffen drei oder mehr zu, lautet die Frage nicht ob — sondern wie, bis wann und zu welchen Kosten.
@@ -109,7 +109,7 @@ Kubernetes-native KI-Plattform mit klarer Verantwortlichkeit für GPU-Scheduling
 
 </div>
 
-Das ist keine "private KI" als Marketing-Tapete für einen SaaS-Endpunkt mit einer Datenschutzklausel. Es ist ein architektonisch souveräner Stack mit benannten Komponenten und nachweisbaren Kontrollen.
+Das ist keine „private KI“ als Marketing-Tapete für einen SaaS-Endpunkt mit einer Datenschutzklausel. Es ist ein architektonisch souveräner Stack mit benannten Komponenten und nachweisbaren Kontrollen.
 
 <!-- /BLOCK 3 -->
 
@@ -124,13 +124,13 @@ Das ist keine "private KI" als Marketing-Tapete für einen SaaS-Endpunkt mit ein
 
 <div class="gap-cards-2">
 
-**"Private Bereitstellung" einer SaaS-Modell-API**
+**„Private Bereitstellung“ einer SaaS-Modell-API**
 Der Modellanbieter führt die Inferenz aus; die Daten fließen zum Endpunkt des Anbieters. Datenschutzklausel hin oder her — die Daten haben den Perimeter verlassen. Souveränität gescheitert.
 
 **Hyperscaler-verwaltete GPU mit proprietären Diensten**
 Die GPU steht in der richtigen Region, aber Modell-Orchestrierung, Observability und Storage-Anbindung binden den Workload an proprietäre Dienste. Die Exit-Kosten steigen; das Konzentrationsrisiko steigt.
 
-**Single-Tenant-SaaS in einer "souveränen" Hyperscaler-Region**
+**Single-Tenant-SaaS in einer „souveränen“ Hyperscaler-Region**
 Die Region ist souverän, aber die Service-Ebene wird vom Hyperscaler betrieben. Verschlüsselungsschlüssel, Control-Plane-Zugriff und Software-Update-Kanäle verbleiben bei einem nicht-souveränen Anbieter.
 
 **Selbst gehostetes LLM ohne Plattform darunter**
@@ -163,7 +163,7 @@ Die Assessment-Phase liefert:
 
 Die Implementierungsphase liefert:
 
-- **Cozystack-basierte KI-Plattform** mit KubeVirt für VMs, Kubernetes für Inferenz-Workloads, NVIDIA vGPU für VM-basierte GPU-Workloads, MIG / Time-Slicing / Passthrough für container-basierte GPU-Workloads.
+- **Cozystack-basierte KI-Plattform** mit KubeVirt für VMs, Kubernetes für Inferenz-Workloads, NVIDIA vGPU für VM-basierte GPU-Workloads sowie dem NVIDIA GPU Operator mit HAMi für fraktionales GPU-Sharing und PCI-Passthrough bei container-basierten GPU-Workloads.
 - **Validiertes Model Serving** — vLLM, Triton oder Alternativen, passend zur Modellarchitektur.
 - **Self-Service für Data-Science-Teams** — Provisionierungspfade, Observability, Audit-Trails.
 - **Air-gapped-Deployment**, wo der Regulator es verlangt.
@@ -212,7 +212,7 @@ Zur vollständigen Assessment-Methodik siehe **[Platform Readiness Assessment](/
 Wir haben KI-Plattformen für KI/GPU-Betreiber, Finanzdienstleister und Initiativen des öffentlichen Sektors in der EU und Zentralasien gebaut und betrieben. Zu den Workload-Mustern zählen Inferenz im Maßstab (24/7), Fine-Tuning, RAG-Pipelines und Multi-Tenant-Model-Serving.
 
 {{< quote-carousel >}}
-Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 Benannte Fallstudien sind auf dem Discovery-Call verfügbar, sofern die Kundengenehmigungen es zulassen.
 
 <!-- /BLOCK 8 -->
@@ -242,13 +242,6 @@ Folgt Phase 2 auf das Assessment, werden die Assessment-Kosten je nach Umfang au
 Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitgliedstaaten und Kasachstan.
 
 <!-- /BLOCK 9 -->
-
----
-
-<!-- BLOCK 10: FAQ -->
-
-
-<!-- /BLOCK 10 -->
 
 ---
 

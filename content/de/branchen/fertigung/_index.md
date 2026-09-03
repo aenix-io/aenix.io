@@ -1,6 +1,6 @@
 ---
 title: "Cloud-Plattform für Fertigung — Industrie 4.0, edge-bereit, souverän"
-description: "Fertigung in 2026 bedeutet gleichzeitige Anforderungen: Industrie-4.0-Transformation, NIS2-Compliance (Fertigung kritischer Produkte ist im..."
+description: "Fertigung im Jahr 2026 bedeutet gleichzeitige Anforderungen: Industrie-4.0-Transformation, NIS2-Compliance (Fertigung kritischer Produkte ist im..."
 related_pages:
   - /de/loesungen/data-sovereignty
   - /de/loesungen/nis2-compliance

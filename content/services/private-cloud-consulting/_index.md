@@ -1,6 +1,6 @@
 ---
 title: "Private cloud consulting — engineers who design, deploy, and operate it in production"
-description: "Private cloud is back — driven by Broadcom-induced VMware exits, sovereignty mandates, AI workload economics, and FinOps pressure on hyperscaler bills. The..."
+description: "Private cloud consulting for VMware exits, sovereignty mandates and repatriation. Architecture review in 5-15 days, then build. No hyperscaler bias."
 related_pages:
   - /solutions/data-sovereignty/
   - /solutions/cloud-repatriation/

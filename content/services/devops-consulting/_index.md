@@ -1,6 +1,6 @@
 ---
 title: "DevOps consulting — engineers who run platforms in production, not slide-deck consultants"
-description: "Most \"DevOps consulting\" engagements are sold by Big-4 firms and delivered by management consultants whose deepest production experience is reading Gartner..."
+description: "DevOps consulting delivered by engineers, not analysts: CI/CD and GitOps, IaC, observability and SRE practice, with runbooks your team owns afterwards."
 related_pages:
   - /services/platform-engineering/
   - /services/kubernetes-consulting/

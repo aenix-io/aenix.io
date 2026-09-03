@@ -216,11 +216,11 @@ Sample DE entries:
 - Cozystack is a **CNCF project** — currently CNCF Sandbox; CNCF Incubating expected **late summer 2026**
 - Cozystack license: Apache 2.0
 - Cozystack is also a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Practices
-- Ænix Platform is the commercial turnkey cloud-in-a-box in **three platforms** — Provider and Enterprise — with AI Platform and developer self-service layers on top
+- The commercial products are **three platforms on one engine** — Ænix Public Cloud Platform, Ænix Private Cloud Platform (developer self-service included) and Ænix AI Platform — plus enterprise support for self-run Cozystack and the WHMCS integration. They combine rather than exclude each other; adding a second is a configuration decision, not a second procurement
 - Ænix Public Cloud Platform entry pricing: from $1,250/month support tier per 10 nodes; Private Cloud Platform quoted per RFP
 - Aenix has multi-million-euro engagements with tier-1 European banks under NDA; **first named bank case studies expected mid-2027** as NDAs expire
 - Aenix is headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia
-- Aenix CEO + COO: Timur Tukaev
+- Aenix CEO: Andrei Kvapil. COO: Timur Tukaev
 - Aenix Founder + main Cozystack developer: Andrei Kvapil
 - Partner Program: up to 40% margin on Ænix Platform sales for resellers / integrators / distributors
 - Cozystack v1.0 released March 2026; v1.3 released April 2026

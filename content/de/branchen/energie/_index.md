@@ -1,13 +1,13 @@
 ---
 title: "Cloud-Plattform für Energieversorger — NIS2-konform, edge-bereit, souverän nach Architektur"
-description: "Energieversorger in der DACH-Region stehen 2026 vor einer spezifischen Kombination von Drücken: NIS2-Klassifikation als wesentliche Entität (Energie ist im..."
+description: "Energieversorger in der DACH-Region stehen 2026 vor einer spezifischen Kombination von Drücken: NIS2-Klassifikation als wesentliche Einrichtung (Energie ist im..."
 related_pages: ["/de/loesungen/nis2-compliance", "/de/loesungen/data-sovereignty", "/de/loesungen/sovereign-ai"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/energy/
 direct_answer: |
-  **Eine Cloud-Plattform für Energieversorger vereint OT-nahes Edge-Compute, NIS2-Compliance und souveräne Datenhaltung auf einer Kubernetes-API. Sie richtet sich an Netzbetreiber, Erzeuger und Stadtwerke in der DACH-Region, die als wesentliche Entitäten unter NIS2 fallen und Netz-, Kunden- und OT-Daten in eigener Kontrolle halten müssen. Aenix liefert dieses Muster mit Cozystack (CNCF-Projekt, Apache 2.0): KubeVirt betreibt VMs und Container nebeneinander, Cilium (eBPF) das Netzwerk, LINSTOR/DRBD den Storage, und das Tenant-CRD trennt Geschäftsbereiche mandantenfähig. Die Architektur unterstützt Multi-Site (Zentrale, Region, Umspannstation) mit Air-Gap-Option für OT und langen Operationshorizont ohne Core-basierte Lizenzkosten.**
+  **Eine Cloud-Plattform für Energieversorger vereint OT-nahes Edge-Compute, NIS2-Compliance und souveräne Datenhaltung auf einer Kubernetes-API. Sie richtet sich an Netzbetreiber, Erzeuger und Stadtwerke in der DACH-Region, die als wesentliche Einrichtungen unter NIS2 fallen und Netz-, Kunden- und OT-Daten in eigener Kontrolle halten müssen. Aenix liefert dieses Muster mit Cozystack (CNCF-Projekt, Apache 2.0): KubeVirt betreibt VMs und Container nebeneinander, Cilium (eBPF) das Netzwerk, LINSTOR/DRBD den Storage, und das Tenant-CRD trennt Geschäftsbereiche mandantenfähig. Die Architektur unterstützt Multi-Site (Zentrale, Region, Umspannstation) mit Air-Gap-Option für OT und langen Operationshorizont ohne Core-basierte Lizenzkosten.**
 
 quick_facts:
   - label: "Was es ist"
@@ -17,7 +17,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Zielgruppe"
-    value: "Netzbetreiber, Erzeuger und Stadtwerke in der DACH-Region, NIS2-klassifiziert als wesentliche Entität (Sektor Energie)"
+    value: "Netzbetreiber, Erzeuger und Stadtwerke in der DACH-Region, NIS2-klassifiziert als wesentliche Einrichtung (Sektor Energie)"
   - label: "Schlüsselfunktion"
     value: "Multi-Site-Architektur (Zentrale + Regional + Substation Edge) mit Air-Gap-Option für OT, Multi-Tenancy für Geschäftsbereiche und KI-Infrastruktur für Netzoptimierung und Predictive Maintenance"
   - label: "Technologie"
@@ -32,7 +32,7 @@ faq:
     a: "Ja. Das Cozystack-Muster für Energie ist explizit Multi-Site: Zentrale, regionale Standorte und Substation Edge. Dieselbe Kubernetes-API läuft an verteilten Erzeugungs- und Umspannstandorten, sodass Workloads für Netzoptimierung und Microgrids nah an der OT betrieben werden."
   - q: "Kann OT-Infrastruktur air-gapped betrieben werden?"
     a: "Ja. Das Muster unterstützt Air-Gap-Betrieb für Operations Technology, getrennt vom IT-Netz. Das adressiert das Critical-Infrastructure-Sicherheitsmodell mit kinetischen und Cyber-Bedrohungen sowie den Regulator-Triple-Stack aus NIS2, sektoraler Energieregulatorik und cybersecurity-spezifischen Vorgaben."
-  - q: "Wie passt die lange Abschreibungszyklus von Netz-Hardware zur Plattform?"
+  - q: "Wie passt der lange Abschreibungszyklus von Netz-Hardware zur Plattform?"
     a: "Netzinfrastruktur wird in Jahrzehnten abgeschrieben. Cozystack steht unter Apache 2.0 ohne Core-basierte Lizenzierung und ist ein CNCF-Projekt — das gibt einen langen Operationshorizont ohne Vendor-Lock-in und ohne Lizenzkosten, die mit Hardware-Refresh-Zyklen kollidieren."
   - q: "Welche Ænix-Plattform passt für Energieversorger?"
     a: "Die Private Cloud Platform deckt NIS2-konforme Multi-Site-Architektur mit Air-Gap-Option für OT ab. Für KI-getriebene Netzoptimierung, Forecasting und Predictive Maintenance ergänzt die AI Platform die nötige GPU- und KI-Infrastruktur."
@@ -40,7 +40,7 @@ faq:
     a: "Ja. KubeVirt betreibt bestehende VMs und neue Container nebeneinander auf einer Kubernetes-API, was die Migration weg von VMware oder einer alternden OpenStack-Umgebung ohne Komplettumbau ermöglicht. Apache-2.0-Lizenzierung entfernt zudem die Core-basierten Lizenzkosten klassischer Virtualisierungsstacks."
 ---
 
-**Energieversorger stehen 2026 vor einer spezifischen Kombination von Drücken: NIS2-Klassifikation als wesentliche Entität (Energie ist im Geltungsbereich), souveräne Cloud-Anforderungen für Critical-Infrastructure-Daten, Edge-Compute an Umspannstationen und Erzeugungsstandorten, KI-getriebene Netzoptimierung und Forecasting sowie die operative Realität, dass Hardware-Refresh-Zyklen für Netzinfrastruktur in Jahrzehnten gemessen werden, nicht in Jahren. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, in regionalen Leitstellen und an der Umspannstation-Edge läuft — unter einem Operations-Modell mit NIS2-konformen Kontrollen.**
+**Energieversorger stehen 2026 vor einer spezifischen Kombination von Drücken: NIS2-Klassifikation als wesentliche Einrichtung (Energie ist im Geltungsbereich), souveräne Cloud-Anforderungen für Critical-Infrastructure-Daten, Edge-Compute an Umspannstationen und Erzeugungsstandorten, KI-getriebene Netzoptimierung und Forecasting sowie die operative Realität, dass Hardware-Refresh-Zyklen für Netzinfrastruktur in Jahrzehnten gemessen werden, nicht in Jahren. Die architektonische Antwort ist eine kohärente Plattform, die in der Zentrale, in regionalen Leitstellen und an der Umspannstation-Edge läuft — unter einem Operations-Modell mit NIS2-konformen Kontrollen.**
 
 Ænix pilotiert derzeit Cozystack mit einem Energieversorger und wendet das gleiche Multi-Site-, NIS2-konforme, souveränitätsfreundliche Plattform-Muster an, das bei unseren Kunden aus dem Finanzdienstleistungs- und Telekommunikationssektor läuft. Die energiespezifische Arbeit legt den Schwerpunkt auf IT/OT-Konvergenz, Edge-Resilienz und Air-Gap-Support für OT-Systeme.
 
@@ -55,7 +55,7 @@ faq:
 
 ## Wofür Energieversorger zu uns kommen
 
-- **NIS2-Compliance für Cloud- und OT-Infrastruktur** — Energie ist wesentliche Entität nach Annex I; Artikel 21 Risikomanagement und Artikel 23 Meldepflichten für Vorfälle gelten
+- **NIS2-Compliance für Cloud- und OT-Infrastruktur** — Energie ist wesentliche Einrichtung nach Anhang I; Artikel 21 Risikomanagement und Artikel 23 Meldepflichten für Vorfälle gelten
 - **Souveräne Cloud für Netz- und Kundendaten** — Critical-Infrastructure-Daten mit sektoralen Residenz-Anforderungen
 - **Smart-Grid-Plattform-Konsolidierung** — mehrere Legacy-Systeme integriert unter einer Kubernetes-nativen Control Plane
 - **KI für Netzoptimierung, Forecasting, Predictive Maintenance** — anhaltende Workloads auf Kunden-Hardware
@@ -113,7 +113,7 @@ faq:
 Anonyme Proof Points:
 - Ein regionaler Energieversorger betreibt ein Pilot-Cozystack-Deployment für Netzdaten-Analytics und KI-getriebene Forecasting-Workloads
 - Architektur-Muster: zentrale Steuerung + regionale Aggregation + Umspannstation-Edge-Tier; Air-Gapped-OT-Boundary; KI/ML-Cluster für Forecasting
-- Angrenzende Plattform-Engagements im Energiesektor über Beschaffungsprozesse skopiert
+- Angrenzende Plattform-Engagements im Energiesektor über Beschaffungsprozesse abgesteckt
 
 {{< quote-carousel >}}
 
@@ -121,7 +121,7 @@ Anonyme Proof Points:
 
 ## Branchenkontext
 
-- **NIS2-Geltungsbereich als wesentliche Entität** — Annex I umfasst Strom (Erzeugung, Übertragung, Verteilung), Gas, Öl, Fernwärme/-kälte, Wasserstoff
+- **NIS2-Geltungsbereich als wesentliche Einrichtung** — Anhang I umfasst Strom (Erzeugung, Übertragung, Verteilung), Gas, Öl, Fernwärme/-kälte, Wasserstoff
 - **Sektorale Überlagerungen der Mitgliedstaaten** — BSI-Anforderungen für den Energiesektor in Deutschland; ANSSI-souveräne-Cloud für kritische Betreiber in Frankreich; NCSC-Leitlinien in Großbritannien; Äquivalente in anderen Märkten
 - **EU-Initiativen zur Netzdigitalisierung** — ENTSO-E- und ENTSO-G-Datenaustauschplattformen; Smart Grid Architecture Model (SGAM) als Referenzarchitektur
 - **KI in der Energie** — Netz-Forecasting, Demand Response, Predictive Maintenance nutzen zunehmend ML auf netzbetrieblichen Daten; Datenresidenz und IP-Schutz sind reale Beschränkungen
@@ -159,7 +159,7 @@ Wir akzeptieren RFI / RFP über:
 
 Oder mehr lesen:
 - **[Smart-Grid-Plattform-Architektur für IT/OT-Konvergenz](/de/blog/2026/05/smart-grid-plattform-architektur-it-ot/)** — Langform
-- **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — Regulierung für wesentliche Entitäten
+- **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — Regulierung für wesentliche Einrichtungen
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Critical-Infrastructure-Daten
 - **[Souveräne KI](/de/loesungen/sovereign-ai/)** — KI auf netzbetrieblichen Daten
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Methodik

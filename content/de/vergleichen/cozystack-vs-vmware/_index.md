@@ -44,7 +44,7 @@ faq:
 
 Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternativen-Listicle](/de/alternativen/vmware-alternativen/)**. Für die fokussierte Vendor-Empfehlung siehe **[VMware-Alternative](/de/alternativen/vmware-alternative/)**. Diese Seite nimmt an, dass Sie Cozystack bereits spezifisch erwägen.
 
-> **Passt zu:** **[Ænix Platform](/de/produkte/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Drei Plattformen: Public Cloud (wer Cloud verkauft), Private Cloud (regulierte Unternehmen, die selbst betreiben) und AI (GPU- und KI-Workloads). Die richtige Plattform hängt von Ihrem Buyer-Profil post-VMware ab.
+> **Passt zu:** **[Ænix Platform](/de/produkte/)** — turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Drei Plattformen: Public Cloud (für Anbieter, die Cloud verkaufen), Private Cloud (regulierte Unternehmen, die selbst betreiben) und AI (GPU- und KI-Workloads). Die richtige Plattform hängt von Ihrem Buyer-Profil post-VMware ab.
 
 ---
 
@@ -82,7 +82,7 @@ Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternati
 ## Wo Cozystack tatsächlich besser ist
 
 - **Preisgestaltung** — keine Subscription pro CPU / pro Socket. Hardware + gewählter Ænix-Tier.
-- **Multi-Tenancy** — Tenant CRD ist nativ; vCD ist angeklebtes Legacy.
+- **Multi-Tenancy** — Tenant CRD ist nativ; vCD ist nachträglich aufgesetzte Legacy-Technik.
 - **Container-Workloads** — Cozystack ist Kubernetes-native, Container und VMs koexistieren auf einer Plattform. Tanzu ist ein OpenShift-artiges Add-on für VMware.
 - **Souveränität** — Open Source auf Kundenhardware mit kundenkontrollierten Schlüsseln.
 - **Vendor-Neutralität** — kein Broadcom-artiger Preisdruck auf die Roadmap.
@@ -96,7 +96,7 @@ Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternati
 - **Enterprise-Beschaffung** — die VMware-Beschaffung ist in vielen Unternehmen etabliert.
 - **Bestehende Tooling-Integration** — VMware integriert sich mit breiterem Enterprise-Tooling (Ansible Tower, ServiceNow, etc.).
 
-Wenn Sie bereits tief auf VMware setzen und die Renewal-Ökonomie tragbar ist, ist "bleiben und optimieren" eine valide Antwort.
+Wenn Sie bereits tief auf VMware setzen und die Renewal-Ökonomie tragbar ist, ist „bleiben und optimieren“ eine valide Antwort.
 
 ---
 

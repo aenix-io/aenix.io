@@ -17,7 +17,7 @@ quick_facts:
   - label: "Was es ist"
     value: "Engineering-Augmentation mit Senior-Engineers für Cloud-Architektur, Automatisierung und Operations über Public, Hybrid und On-Prem"
   - label: "Zielgruppe"
-    value: "Teams, die Cloud-Architektur-, IaC-, Observability- und GitOps-Reife brauchen — eigenständig oder als Erweiterung jeder Ænix platform"
+    value: "Teams, die Cloud-Architektur-, IaC-, Observability- und GitOps-Reife brauchen — eigenständig oder als Erweiterung jeder Ænix-Plattform"
   - label: "Abdeckung"
     value: "Cloud-Architektur-Review, IaC (Terraform, OpenTofu, Pulumi, Crossplane), Observability (VictoriaMetrics, Grafana, OpenTelemetry), CI/CD und GitOps, Kubernetes, Network und Identity, FinOps"
   - label: "Regulatorik"
@@ -32,7 +32,7 @@ faq:
   - q: "Sind das Berater oder Engineers?"
     a: "Senior-Engineers, keine Berater. Aenix bringt Praktiker, die direkt an Ihrer Cloud-Architektur, Automatisierung und Operations mitarbeiten — als Engineering-Augmentation für Ihr Team statt reiner Beratungsdokumente."
   - q: "Kann ich Cloud Engineering eigenständig buchen oder nur mit der Ænix Platform?"
-    a: "Beides. Die Engineering-Augmentation ist eigenständig verfügbar und passt zugleich zu jeder Ænix platform, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert."
+    a: "Beides. Die Engineering-Augmentation ist eigenständig verfügbar und passt zugleich zu jeder Ænix-Plattform, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert."
   - q: "Worin unterscheidet sich Cloud Engineering von Platform Engineering und DevOps Consulting?"
     a: "Cloud Engineering deckt das breite Spektrum von Hyperscaler-nativer Architektur bis Private-Cloud ab. Für breiteren Plattform-Scope gibt es die Platform Engineering Services, für DevOps-spezifischen Scope das DevOps Consulting."
   - q: "Unterstützt das Engagement DORA- und NIS2-Anforderungen?"
@@ -41,9 +41,9 @@ faq:
     a: "Cozystack, das Open-Source-Fundament unter Apache 2.0: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRDs für Mandantenfähigkeit. Cozystack ist ein CNCF-Sandbox-Projekt."
 ---
 
-**"Cloud Engineering" deckt das volle Spektrum ab — von Hyperscaler-nativer Architektur bis Private-Cloud-Plattform-Engineering. Das Ænix-Engagement bringt Senior-Engineers — keine Berater — an die Cloud-Architektur-, Automatisierungs- und Operations-Arbeit, die Ihr Team braucht.**
+**„Cloud Engineering“ deckt das volle Spektrum ab — von Hyperscaler-nativer Architektur bis Private-Cloud-Plattform-Engineering. Das Ænix-Engagement setzt Senior-Engineers — keine Berater — direkt für die Architektur-, Automatisierungs- und Betriebsarbeit ein, die Ihr Team braucht.**
 
-> **Passt zu:** jeder **[Ænix platform](/de/produkte/)**, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
+> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)**, wenn der Scope sich zu einer produktisierten Cloud-Plattform erweitert. Eigenständige Engineering-Augmentation ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -55,7 +55,7 @@ faq:
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Was abgedeckt ist
+## Leistungsumfang
 
 - Cloud-Architektur-Review und Ziel-Design (public, private, hybrid)
 - Infrastructure-as-Code-Reife (Terraform, OpenTofu, Pulumi, Crossplane)

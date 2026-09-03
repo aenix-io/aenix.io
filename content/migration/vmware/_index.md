@@ -7,7 +7,7 @@ hreflang_de: /de/migration/vmware/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **A VMware migration in the post-Broadcom era is a planned project to move workloads off VMware Cloud Foundation (VCF), vSphere, and vCloud Director onto infrastructure the organization controls. It suits enterprises, hosting providers, and regulated operators facing Broadcom subscription increases, sovereignty rules (DORA, NIS2), or repatriation goals. Aenix runs these migrations end to end — inventory and workload classification, destination architecture, cohort-based cutover with parallel-run validation, and VMware decommission. Konveyor Forklift, the Kubernetes migration toolkit for virtualization, ships in the Aenix platform and performs the transfer itself: cold or warm migration from vSphere, network and storage mapping as Kubernetes objects, and virt-v2v guest conversion that injects VirtIO drivers and strips VMware Tools. The destination Aenix typically recommends is Cozystack, an Apache 2.0 CNCF project running VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking and LINSTOR storage. Done well, a structured migration produces a platform the customer owns and a 30-60% cost reduction on workloads that move.**
+  **A VMware migration in the post-Broadcom era is a planned project to move workloads off VMware Cloud Foundation (VCF), vSphere, and vCloud Director onto infrastructure the organization controls. It suits enterprises, hosting providers, and regulated operators facing Broadcom subscription increases, sovereignty rules (DORA, NIS2), or repatriation goals. Aenix runs these migrations end to end — inventory and workload classification, destination architecture, cohort-based cutover with parallel-run validation, and VMware decommission. Konveyor Forklift, the Kubernetes migration toolkit for virtualization, ships in the Aenix platform and performs the transfer itself: cold or warm migration from vSphere, network and storage mapping as Kubernetes objects, and virt-v2v guest conversion that injects VirtIO drivers and strips VMware Tools. The destination Aenix typically recommends is Cozystack, an Apache 2.0 CNCF project running VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking and LINSTOR storage. Done well, a structured migration produces a platform the customer owns and, in the engagements Aenix has modelled, a 30-60% cost reduction on the workloads that move, driven by removing per-core VMware licensing. That range is Aenix engagement modelling, not a published benchmark, and it is recomputed on real estate data during assessment.**
 quick_facts:
   - label: "What it is"
     value: "An end-to-end project to move workloads off VMware VCF / vSphere / vCloud Director onto customer-controlled infrastructure, typically Cozystack."
@@ -43,7 +43,7 @@ faq:
   - q: "What platform do you migrate to?"
     a: "Cozystack by default — an Apache 2.0 CNCF project that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium networking, LINSTOR storage, and Tenant CRD multi-tenancy. Other destinations are used where technically appropriate."
   - q: "How much can a VMware migration save?"
-    a: "Done well, a structured migration produces a 30-60% cost reduction on workloads that move, driven by removing per-core VMware licensing. Aenix models the delta with honest TCO before committing, using the VMware cost calculator."
+    a: "In the engagements Aenix has modelled, a structured migration produces a 30-60% cost reduction on the workloads that move, driven by removing per-core VMware licensing. That is our own engagement data rather than a published industry benchmark, and VCF pricing is quote-driven and non-public, so the number is recomputed on your estate with the VMware cost calculator before anything is committed."
   - q: "How does Aenix engage on a VMware migration?"
     a: "It starts with a 14-28 day assessment (estate inventory, destination architecture, workload classification, cutover sequencing), followed by a 6-18 month implementation phase with Aenix engineers integrated into your team, and optional managed Cozystack operations afterward."
 ---
@@ -51,7 +51,7 @@ faq:
 <!-- BLOCK 1: HERO -->
 
 
-**Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and a 30-60% cost reduction on workloads that move. Done badly, it produces operational debt and a stalled migration that becomes the next year's emergency. The difference is structured assessment, honest TCO modelling, and engineers who have shipped this in production.**
+**Post-Broadcom VMware migration is a planned project, not an emergency. Done well, it produces a platform you control and, on the engagements we have modelled, a 30-60% cost reduction on the workloads that move. Done badly, it produces operational debt and a stalled migration that becomes the next year's emergency. The difference is structured assessment, honest TCO modelling, and engineers who have shipped this in production.**
 
 Ænix runs end-to-end VMware migrations for organizations exiting VCF. Same engineers who built and operate [Cozystack](/products/cozystack/) — the destination platform we typically recommend — work alongside your team for assessment, sequencing, and implementation.
 
@@ -72,7 +72,7 @@ faq:
 
 Organizations triggered by:
 
-- **Broadcom subscription renewal** — 2-5× pricing increases observed; ELA breakage; mandatory VCF bundling
+- **Broadcom subscription renewal** — renewal quotes at 2-5× the prior deal in the engagements we run; ELA breakage; mandatory VCF bundling. VCF pricing is not published, so read that multiplier as our observation, not an industry figure
 - **Sovereignty pressure** — DORA, NIS2, sectoral rules forcing critical workloads to customer-controlled infrastructure
 - **AI / GPU economics** — sustained workloads where VMware GPU model adds licensing complexity
 - **Repatriation strategy** — VMware-on-cloud workloads moving to private infrastructure
@@ -97,7 +97,7 @@ vSphere / VCF / vCD inventory: workload count, OS mix, vSAN dependencies, NSX in
 Target platform on customer hardware. Cozystack default (KubeVirt + Cilium + LINSTOR + Tenant CRD); other options where appropriate. Sizing, capacity model, operations design.
 
 **3. Migration execution**
-Cohort-based migration. KubeVirt CDI for image conversion. Windows VM cleanup automated. Network and storage cutover. Parallel-run with VMware until validation. Cutover sequencing aligned with VCF subscription expirations.
+Cohort-based migration. Konveyor Forklift drives virt-v2v and KubeVirt CDI; Windows guest cleanup is automated. Network and storage cutover. Parallel-run with VMware until validation. Cutover sequencing aligned with VCF subscription expirations.
 
 **4. Decommission**
 VMware decommission as cohorts complete. Hardware repurposed where applicable. Final renewal avoided.
@@ -108,11 +108,11 @@ VMware decommission as cohorts complete. Hardware repurposed where applicable. F
 <div class="diagram">
 <div class="diagram__node"><b>VMware VCF / vSphere / vCD</b><div class="diagram__chips"><span>vSAN</span><span>NSX</span><span>Windows VMs</span></div></div>
 <div class="diagram__conn">moves through</div>
-<div class="diagram__node"><b>Cohort-based cutover</b><div class="diagram__chips"><span>KubeVirt CDI conversion</span><span>Parallel-run validation</span></div></div>
+<div class="diagram__node"><b>Cohort-based cutover</b><div class="diagram__chips"><span>Forklift: virt-v2v + CDI</span><span>Parallel-run validation</span></div></div>
 <div class="diagram__conn">lands on</div>
 <div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium</span><span>LINSTOR</span></div></div>
 <div class="diagram__conn">completes with</div>
-<div class="diagram__node"><b>VMware decommission</b><div class="diagram__chips"><span>Final renewal avoided</span><span>30-60% cost reduction</span></div></div>
+<div class="diagram__node"><b>VMware decommission</b><div class="diagram__chips"><span>Final renewal avoided</span><span>Per-core licensing removed</span></div></div>
 </div>
 </div>
 

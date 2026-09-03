@@ -1,8 +1,8 @@
 ---
 title: "Hybrid Cloud — eine Plattform, mehrere Substrate"
-description: "Die meisten Unternehmen in 2026 sind bereits Hybrid — Public Cloud für elastische und kundenorientierte Workloads, Private Cloud oder On-Prem für stetige,..."
+description: "Die meisten Unternehmen im Jahr 2026 sind bereits Hybrid — Public Cloud für elastische und kundenorientierte Workloads, Private Cloud oder On-Prem für stetige,..."
 type: "page"
-related_pages: ["/de/loesungen/cloud-repatriation", "/de/produkte/private-cloud", "/products/cozystack"]
+related_pages: ["/de/loesungen/cloud-repatriation", "/de/produkte/private-cloud-platform/", "/de/produkte/cozystack/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -45,7 +45,7 @@ faq:
 
 Ænix baut und betreibt Hybrid-Cloud-Plattformen auf Basis von [Cozystack](/de/produkte/cozystack/) — Kubernetes-nativ, mandantenfähig, mit konsistenten Operations über Kunden-Hardware, Public-Cloud-Regionen und Edge-Standorte hinweg.
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telkos: kombinieren Sie diese mit der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — eine Control Plane, die on-prem mit VMware, OpenNebula, OpenShift und Public Clouds verbindet. Für große Betreiber oder Telcos: kombinieren Sie diese mit der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für eine Control Plane in Public-Cloud-Qualität über mehrere Regionen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
@@ -54,7 +54,7 @@ faq:
 
 
 <div class="trust-badges">
-Open-Source-Fundament · Kubernetes-nativ · Produktives Multi-Cluster · Kein Vendor-Lock-in</div>
+Open-Source-Fundament · Kubernetes-nativ · Multi-Cluster im Produktivbetrieb · Kein Vendor-Lock-in</div>
 
 <!-- /BLOCK 1 -->
 
@@ -67,7 +67,7 @@ Open-Source-Fundament · Kubernetes-nativ · Produktives Multi-Cluster · Kein V
 Das Engagement passt, wenn:
 
 - **Das Workload-Portfolio wirklich heterogen ist** — manche elastisch, manche stetig, manche reguliert.
-- **Die Kostenentwicklung nicht zusammenpasst** — eine Public-Cloud-Rechnung auf einem Wachstumspfad, der sich aufschaukelt; manche Workloads lassen sich wirtschaftlich sinnvoll repatriieren.
+- **Die Kostenentwicklung nicht zusammenpasst** — eine Public-Cloud-Rechnung, deren Wachstum sich selbst verstärkt; manche Workloads lassen sich wirtschaftlich sinnvoll repatriieren.
 - **Souveränität für einige Workloads, Public-Cloud-Fähigkeiten für andere** — eine vollständige Repatriierung ist nicht gerechtfertigt, der Status quo aber auch nicht.
 - **AI-/Inferenz-Ökonomie dedizierte GPU verlangt** — Ihre Business-Anwendungen aber in der Cloud sinnvoll aufgehoben sind.
 - **Mehrere Infrastruktur-Teams** eine fragmentierte Infrastruktur zu einer kohärenten Plattform konsolidieren.
@@ -95,7 +95,7 @@ Wenn die meisten Workloads an einen Ort gehören — komplett Public Cloud oder 
 <div class="grid-2x2">
 
 **1. Eine Plattform, mehrere Substrate**
-Dieselbe Kubernetes-API, dieselbe Observability, dieselben Deployment-Muster — egal ob der Workload auf Kunden-Hardware, in AWS/Azure/GCP oder am Edge läuft. Cozystack liefert dieses Erlebnis einer einzigen Plattform.
+Dieselbe Kubernetes-API, dieselbe Observability, dieselben Deployment-Muster — egal ob der Workload auf Kunden-Hardware, in AWS/Azure/GCP oder am Edge läuft. Cozystack sorgt dafür, dass sich das Ganze wie eine einzige Plattform verhält.
 
 **2. Workload-Portabilität**
 Workloads nutzen Plattform-Abstraktionen, die über alle Substrate hinweg konsistent funktionieren. KubeVirt für VMs, Kubernetes für Container, S3-kompatibel für Object Storage — alles auf jedem Substrat verfügbar.
@@ -117,7 +117,7 @@ Ein einziges Plattform-Team, einheitliche Runbooks, konsistente Observability, e
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Woran die meisten "hybriden" Architekturen tatsächlich scheitern
+## Woran die meisten „hybriden“ Architekturen tatsächlich scheitern
 
 <div class="gap-cards-2">
 
@@ -127,11 +127,11 @@ Public-Cloud-Team und On-Prem-Team arbeiten getrennt, mit getrennten Tools. Hybr
 **Cloud-Bursting, das niemand nutzt**
 Die Architektur unterstützt das Bursting von on-prem in die Public Cloud; im Produktivbetrieb bleibt diese Fähigkeit theoretisch, weil die Datenbewegung zwischen den Clouds nicht schnell genug ist.
 
-**Vendor-getriebene "Hybrid-Lösung"**
+**Vendor-getriebene „Hybrid-Lösung“**
 Ein einzelner Anbieter verkauft eine einheitliche Hybrid-Plattform, die auf seiner Software in Ihrem und in seinem Rechenzentrum läuft. Das Lock-in ist strukturell; die Roadmap des Anbieters wird zu Ihrer Roadmap.
 
 **Operative Divergenz**
-Derselbe Workload läuft in der Public Cloud anders als on-prem. Operative Schulden häufen sich an; die Portabilität verschlechtert sich mit der Zeit.
+Derselbe Workload läuft in der Public Cloud anders als on-prem. Operative Altlasten häufen sich an; die Portabilität verschlechtert sich mit der Zeit.
 
 </div>
 
@@ -162,7 +162,7 @@ Umsetzung in Phase 2: Ænix-Ingenieure bauen die Hybrid-Plattform von Anfang bis
 
 <!-- BLOCK 6: WHY AENIX -->
 
-## Warum ausgerechnet Ænix
+## Warum gerade Ænix
 
 - **Produktive Hybrid-Erfahrung.** Cozystack läuft produktiv gleichzeitig auf kundenkontrollierter Hardware, in Public-Cloud-Regionen und an Edge-Standorten.
 - **Open-Source-Fundament.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Eine Plattform, mehrere Substrate, kein Vendor-Lock-in.
