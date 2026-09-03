@@ -17,6 +17,8 @@
     hero_primary     — {text, href} main CTA (lime)
     hero_secondary   — {text, href} quiet CTA
     speaker_photo    — assets path to the composited portrait
+    speaker_alt      — alt text for that portrait (defaults to
+                       "<event.performer> — <webinar|workshop> host")
     translation      — list of {from, to} term pairs (optional signature strip)
     stats            — list of {number, label} pain stats (optional)
     inshort_title    — heading for the direct_answer/quick_facts section
@@ -24,7 +26,10 @@
 */}}
 {{- $isRU := eq (.Params.language | default "en") "ru" -}}
 {{- $photo := .Params.speaker_photo | default "images/workshops/timur-tukaev.png" -}}
-{{- $portraitAlt := cond $isRU "Тимур Тукаев — ведущий воркшопа" "Timur Tukaev — workshop host" -}}
+{{- $event := .Params.event | default dict -}}
+{{- $performer := $event.performer | default (cond $isRU "Тимур Тукаев" "Timur Tukaev") -}}
+{{- $hostRole := cond (eq .Section "webinars") (cond $isRU "ведущий вебинара" "webinar host") (cond $isRU "ведущий воркшопа" "workshop host") -}}
+{{- $portraitAlt := .Params.speaker_alt | default (printf "%s — %s" $performer $hostRole) -}}
 
 <section class="event-hero ws-hero">
   <div class="ws-hero__bg" aria-hidden="true">
