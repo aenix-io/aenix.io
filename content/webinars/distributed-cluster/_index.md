@@ -19,7 +19,7 @@ hero_chips:
   - "Recording not published yet"
 hero_primary: { text: "Talk to the team", href: "/contact/" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
-speaker_photo: "images/webinars/andrei-kvapil.png"
+speaker_photo: "images/webinars/andrei-kvapil-hero.png"
 inshort_title: "About the webinar"
 quick_facts_style: "rows"
 event:
