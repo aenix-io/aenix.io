@@ -63,7 +63,7 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 - **Who it's for:** Heads of Cloud / Cloud Practice Leads at SIs, MSPs and resellers.
 - **Margin:** up to **40%** via the Partner Program; the VMware license line becomes your margin.
 - **License:** Apache 2.0 — no per-core cost dragging your unit economics.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
 - **Common pitfall:** reselling a hyperscaler and competing on price while owning none of the platform value.
 
 [Source: [Cozystack docs](https://cozystack.io); [Ænix Partner Program](/partners/)]

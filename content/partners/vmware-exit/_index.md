@@ -68,7 +68,7 @@ Either way, the per-core license your client pays VMware becomes margin and recu
 - **Who it's for:** Heads of Cloud, Cloud Practice Leads, Heads of Alliances at SIs / MSPs / resellers.
 - **Margin:** up to **40%** on license + support; plus your own managed-services revenue.
 - **License:** Apache 2.0 (Cozystack) — no per-core/per-socket cost in the stack.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
 - **Common pitfall:** competing on price reselling a hyperscaler while owning none of the platform value or the renewal relationship.
 
 [Source: [Ænix Partner Program](/partners/); [Cozystack docs](https://cozystack.io)]

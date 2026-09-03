@@ -148,7 +148,7 @@ Five decisions with the highest long-term impact:
 KubeVirt or traditional hypervisor? KubeVirt is the 2026 default for greenfield; traditional hypervisor (KVM/libvirt directly) is appropriate for very-large-scale OpenStack deployments where KubeVirt's overhead matters.
 
 ### Decision 2: storage architecture
-LINSTOR or Ceph for replicated block? LINSTOR is operationally simpler and Cozystack-default. Ceph is more flexible but operationally heavier. Vendor SAN is an option but contracts limit your scaling pattern.
+LINSTOR/DRBD for replicated block? LINSTOR is operationally simpler and Cozystack-default. Ceph is more flexible but operationally heavier. Vendor SAN is an option but contracts limit your scaling pattern.
 
 ### Decision 3: networking
 Cilium has become the default CNI for new deployments. NSX-equivalent (Cilium L7, service mesh) replaces VMware NSX functionality. The decision is more about your team's eBPF familiarity than about technical fit.

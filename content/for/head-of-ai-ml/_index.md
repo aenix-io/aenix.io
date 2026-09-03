@@ -63,7 +63,7 @@ Give data scientists and product teams self-service GPU — for training and for
 - **Who it's for:** Heads of AI/ML, MLOps leads, AI platform owners.
 - **Control:** your GPUs, your jurisdiction, your model choice — no hyperscaler endpoint dependency.
 - **License:** Apache 2.0 core (Cozystack) — no per-GPU platform tax.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
 - **Common pitfall:** prototyping on a hyperscaler endpoint, then discovering the data class can't legally go there in production.
 
 [Source: [CNCF Landscape](https://landscape.cncf.io), [Cozystack docs](https://cozystack.io)]

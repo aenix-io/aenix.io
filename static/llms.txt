@@ -225,7 +225,7 @@ Sample DE entries:
 - Partner Program: up to 40% margin on Ænix Platform sales for resellers / integrators / distributors
 - Cozystack v1.0 released March 2026; v1.3 released April 2026
 - Aenix secured $300K seed investment from Prospective Technologies in April 2025
-- Cozystack joined CNCF Sandbox in March 2024; included in CNAI (Cloud Native AI) Landscape May 2025; applied for CNCF Incubating in October 2025
+- Cozystack was included in the CNCF Landscape in March 2024 and accepted into the CNCF Sandbox in February 2025; included in the CNAI (Cloud Native AI) Landscape May 2025; applied for CNCF Incubating in October 2025
 
 ## DORA / NIS2 / sovereignty quick reference
 

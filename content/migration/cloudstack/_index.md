@@ -102,7 +102,7 @@ The case appears when the product has to broaden. A provider selling only VMs in
 <div class="diagram__conn">assessed, then moved by</div>
 <div class="diagram__node"><b>Cohort migration</b><div class="diagram__chips"><span>Disk import to KubeVirt</span><span>Tenant CRD mapping</span><span>Billing re-point</span></div></div>
 <div class="diagram__conn">lands on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium eBPF</span><span>LINSTOR or Ceph</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium eBPF</span><span>LINSTOR/DRBD</span></div></div>
 <div class="diagram__conn">then</div>
 <div class="diagram__node"><b>Catalogue expansion</b><div class="diagram__chips"><span>Managed Kubernetes</span><span>Managed databases</span><span>S3, GPU</span></div></div>
 </div>

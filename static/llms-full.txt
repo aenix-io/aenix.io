@@ -227,7 +227,8 @@ Aenix has delivered platform component R&D for established platform vendors — 
 
 ## Project milestones (citation-ready)
 
-- **March 2024** — Cozystack joined CNCF Sandbox
+- **March 2024** — Cozystack included in the CNCF Landscape
+- **February 2025** — Cozystack accepted into the CNCF Sandbox
 - **August 2024** — first hosting-provider production deployment (GoHost)
 - **December 2024** — Aenix CEO public position on Kubernetes as Linux-kernel analog (response to Tim Hockin's "complexity budget" KubeCon talk)
 - **April 2025** — Aenix secured **$300K seed investment from Prospective Technologies** (portfolio includes imgproxy, Qase, DBeaver)

@@ -63,7 +63,7 @@ Take back cost and data-location control for the workloads that don't belong on 
 - **What it is:** an open, Kubernetes-native platform you run on owned or leased hardware (no per-core tax).
 - **Who it's for:** CTOs and VPs of Engineering at scale-ups, SaaS and product companies.
 - **License:** Apache 2.0.
-- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
 - **Common pitfall:** repatriating compute but leaving data, backups and observability on the hyperscaler, so the savings and the sovereignty both leak.
 
 [Source: [CNCF Landscape](https://landscape.cncf.io); see also the [TCO worksheet](/resources/cloud-repatriation-tco-worksheet/)]

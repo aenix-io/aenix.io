@@ -66,7 +66,7 @@ Either path ends with the platform — and the skills — in your hands.
 - **What it is:** an open, Kubernetes-native platform (VMs via KubeVirt + containers + storage + networking) that replaces vSphere/Nutanix.
 - **Who it's for:** Heads / VPs / Directors of Infrastructure running a VMware or Nutanix estate.
 - **License:** Apache 2.0 — no per-core/per-socket licensing.
-- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox since 2024-09-26; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026).
 - **Typical timeline:** 9–18 months for a full estate; first workloads in weeks.
 - **Common pitfall:** treating the exit as VM-only and discovering backup, observability and CI/CD still depend on the old stack.
 

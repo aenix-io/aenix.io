@@ -83,7 +83,7 @@ Inference runs as two complementary pipelines. Asynchronous: API gateway → Rab
 - **GPU passthrough of all eight H100s.** Every H100 is handed to the KubeVirt tenant VM via vfio-pci. The classic "nvidia driver vs vfio-pci" race at boot — where the host driver claims a card before vfio can — was solved with an initramfs `driver_override`, so the devices land in the VM deterministically.
 - **RWX storage for shared model weights.** Many worker pods need the same model weights concurrently. We provided shared read-write-many storage via a CSI wrapper plus NFS-Ganesha; the fix was contributed upstream to Cozystack.
 - **Traffic-based autoscaling.** Synchronous inference workers scale with live demand using KEDA driven by nginx-ingress RPS metrics from VictoriaMetrics. The metrics-path fix that made this reliable also went upstream.
-- **GPU density.** To pack more inference onto each card, we enabled GPU sharing via HAMi / MIG / time-slicing, so several jobs can share one physical H100.
+- **GPU density.** To pack more inference onto each card, we enabled GPU sharing via HAMi / HAMi fractional sharing, so several jobs can share one physical H100.
 
 ## Results and current state
 

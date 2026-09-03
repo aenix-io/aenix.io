@@ -41,7 +41,7 @@ faq:
 
 Cozystack provides the underlying platform that Backstage (or any developer portal) sits on top of — Kubernetes-native virtualization, multi-tenancy, managed services, observability — open-source and operationally coherent.
 
-> **Pairs with:** **[the developer self-service layer of Ænix Private Cloud Platform](/products/private-cloud-platform/)** — full Internal Developer Platform with cloud foundation underneath. GitLab automation, Argo CD workflows, golden-path templates. Backstage UI can be integrated as the front-end if customer prefers; the foundation underneath is what makes the IDP work.
+> **Pairs with:** **[Developer self-service](/products/private-cloud-platform/)(/products/private-cloud-platform/)** — full Internal Developer Platform with cloud foundation underneath. GitLab automation, Argo CD workflows, golden-path templates. Backstage UI can be integrated as the front-end if customer prefers; the foundation underneath is what makes the IDP work.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book a review</a>

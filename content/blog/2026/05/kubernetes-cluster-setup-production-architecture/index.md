@@ -98,7 +98,7 @@ Storage in Kubernetes is a separate operational discipline. Options:
 - **Vendor SAN / hyperconverged** — VMware vSAN, NetApp, Pure Storage. Operational handoff to vendor; cost ceiling.
 - **Cloud-provider storage** — EBS, Azure Disks, GCP PD — when cloud-managed.
 
-For production stateful workloads on bare metal, LINSTOR or Ceph are the realistic choices. Cozystack ships LINSTOR; it's been validated in production.
+For production stateful workloads on bare metal, LINSTOR/DRBD are the realistic choices. Cozystack ships LINSTOR; it's been validated in production.
 
 ## Decision 5: identity and secrets
 

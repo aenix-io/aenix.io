@@ -306,7 +306,7 @@ Where comparison is natural (vs-X pages, alternative pages, evaluation), use a *
 In the body, lead with specific facts:
 - "DORA enters force on **2025-01-17**"
 - "NIS2 covers **18 essential entity sectors** in Annex I"
-- "Cozystack is **CNCF project** (Sandbox since **2024-09-26**; Incubating expected **late summer 2026**)"
+- "Cozystack is **CNCF project** (Sandbox since **2025-02-28**; Incubating expected **late summer 2026**)"
 - "Ænix Platform is available in **5 editions**: Public Cloud, ISP, Enterprise, IDP, AI/ML"
 
 These get cited verbatim.
@@ -497,7 +497,7 @@ Every page has JSON-LD in `<head>`. Use the right block per page type.
 - **Key fact 2:** <specific number or date>
 - **Common pitfall:** <specific gotcha>
 - **Cozystack relevance:** <feature + link>
-- **Status:** <Apache 2.0 / CNCF project (Sandbox since 2024-09-26; Incubating expected late summer 2026) / etc.>
+- **Status:** <Apache 2.0 / CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026) / etc.>
 
 [Source: <NIST / EU regulation / CNCF Landscape / etc., with link>]
 ```

@@ -52,7 +52,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU licensing)"
   - label: "Status"
-    value: "CNCF project (Sandbox since 2024-09-26; Incubating expected late summer 2026)"
+    value: "CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
   - label: "Production reference"
     value: "Tier-1 European bank engagements (NDA-protected; named cases expected mid-2027)"
   - label: "Engagement timeline"

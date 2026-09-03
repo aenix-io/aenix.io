@@ -123,7 +123,7 @@ Two entries deserve emphasis because they are where migrations overrun.
 <div class="diagram__conn">assessed, then moved by</div>
 <div class="diagram__node"><b>Cohort migration</b><div class="diagram__chips"><span>Disk import to KubeVirt</span><span>Tenant CRD mapping</span><span>Address plan</span></div></div>
 <div class="diagram__conn">lands on</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium eBPF</span><span>LINSTOR or Ceph</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt</span><span>Cilium eBPF</span><span>LINSTOR/DRBD</span></div></div>
 <div class="diagram__conn">ends with</div>
 <div class="diagram__node"><b>OpenStack decommission</b><div class="diagram__chips"><span>Per-cohort, after validation</span></div></div>
 </div>

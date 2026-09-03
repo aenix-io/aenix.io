@@ -28,7 +28,7 @@ quick_facts:
     value: "Ænix Platform tiers: Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise custom."
 faq:
   - q: "Is Cozystack a drop-in replacement for OpenStack?"
-    a: "No. Cozystack is a Kubernetes-native platform with a different architecture. VM image migration (KVM to KubeVirt) is straightforward, but the tenant model is re-architected from Keystone projects to the Tenant CRD, networking moves from Neutron to Cilium, and storage from Cinder to LINSTOR or Ceph (Ceph often stays). Plan a migration rather than a swap."
+    a: "No. Cozystack is a Kubernetes-native platform with a different architecture. VM image migration (KVM to KubeVirt) is straightforward, but the tenant model is re-architected from Keystone projects to the Tenant CRD, networking moves from Neutron to Cilium, and storage from Cinder to LINSTOR/DRBD (Ceph often stays). Plan a migration rather than a swap."
   - q: "When should we keep OpenStack instead of migrating?"
     a: "Keep OpenStack if your scale or use case genuinely requires it: large-telco deployments, deep in-house OpenStack expertise, or telco-scale features. Cozystack is the better fit when engineer hiring is hard, the operational footprint exceeds the value delivered, or most workloads are already Kubernetes-friendly."
   - q: "How does the operational footprint compare?"

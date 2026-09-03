@@ -63,7 +63,7 @@ Move regulated workloads onto infrastructure where sovereignty is a property of 
 - **Who it's for:** CISOs, Heads of Compliance / Risk, DORA/NIS2 programme owners.
 - **Key dates:** DORA in force **2025-01-17**; NIS2 covers **18 sectors** in Annex I/II.
 - **Control:** customer-held encryption keys; cluster-level access; air-gap supported.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2024-09-26; Incubating expected late summer 2026), Apache 2.0.
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026), Apache 2.0.
 - **Common pitfall:** production data is in-region but observability/backups leave the perimeter unnoticed.
 
 [Source: [EUR-Lex DORA](https://eur-lex.europa.eu/eli/reg/2022/2554/oj), [ENISA NIS2](https://www.enisa.europa.eu/)]
