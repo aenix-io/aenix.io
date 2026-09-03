@@ -22,7 +22,7 @@ This cycle pushes the platform forward in five clear directions: smarter storage
 
 > ***What is Cozystack***
 
-> *Cozystack is a comprehensive open-source platform for building bare-metal clouds to quickly deploy managed Kubernetes, database-as-a-service (DBaaS), application-as-a-service (AaaS), and virtual machines based on KubeVirt. With it, you can deploy Kafka, FerretDB, PostgreSQL, Cilium, Grafana, Victoria Metrics, and other services with a single click. It also handles GPU workloads in both virtual machines and K8s clusters. Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license.*
+> *Cozystack is a comprehensive open-source platform for building bare-metal clouds to quickly deploy managed Kubernetes, database-as-a-service (DBaaS), application-as-a-service (AaaS), and virtual machines based on KubeVirt. With it, you can deploy Kafka, MongoDB, PostgreSQL, Cilium, Grafana, VictoriaMetrics, and other services with a single click. It also handles GPU workloads in both virtual machines and K8s clusters. Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license.*
 
 ### Main highlights
 
@@ -80,7 +80,7 @@ We also welcomed two new maintainers in this cycle: Mattia Eleuteri (@mattia-ele
 
 ### Release link
 
-- Cozystack v1.3.0 on GitHub: [https://github.com/aenix-io/cozystack/releases/tag/v1.3.0](https://github.com/aenix-io/cozystack/releases/tag/v1.3.0)
+- Cozystack v1.3.0 on GitHub: [https://github.com/cozystack/cozystack/releases/tag/v1.3.0](https://github.com/cozystack/cozystack/releases/tag/v1.3.0)
 
 ### Join the community
 

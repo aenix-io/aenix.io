@@ -21,9 +21,9 @@ quiz:
       options:
         - { text: "KubeVirt (used for VM scheduling)", correct: false }
         - { text: "Cilium (used for network policy)", correct: false }
-        - { text: "Cozystack control plane, exposed via K8s API and cozyportal", correct: true }
+        - { text: "Cozystack control plane, exposed via K8s API and Cozystack Dashboard", correct: true }
         - { text: "Tenant CRD (used as the unified plane)", correct: false }
-      explanation: "The architecture-mapping table maps the Kubernetes API + cozyportal as the vCenter alternative, with Cluster API providing multi-cluster federation. KubeVirt replaces ESXi; Cilium replaces NSX."
+      explanation: "The architecture-mapping table maps the Kubernetes API + Cozystack Dashboard as the vCenter alternative, with Cluster API providing multi-cluster federation. KubeVirt replaces ESXi; Cilium replaces NSX."
     - q: "Which of these limitations is described as industry-wide rather than Cozystack-specific?"
       options:
         - { text: "Windows VMs are not supported", correct: false }
@@ -96,7 +96,7 @@ For service providers, this collapses margin: end-customer prices are sticky, li
 
 VMware's strength was integration: vSphere, vSAN, NSX, vRealize, Horizon, vCD, all assumed each other. That same integration is now the lock-in surface. Replacing one component meant rebuilding adjacent ones, so most teams stayed.
 
-Cozystack inverts this. Each layer is an independent open-source project (KubeVirt, LINSTOR, Cilium, Velero, KubeVirt-CDI, Rook, etc.), composed by a Kubernetes operator. You can replace any layer without rewriting the rest, and you can audit every line.
+Cozystack inverts this. Each layer is an independent open-source project (KubeVirt, LINSTOR/DRBD, Cilium, Kube-OVN, KubeVirt CDI, SeaweedFS, Velero, Flux, etc.), composed by a Kubernetes operator. You can replace any layer without rewriting the rest, and you can audit every line.
 
 ### 3. Sovereignty, regulator pressure, and US-vendor risk
 
@@ -116,13 +116,13 @@ Cozystack is a single platform you install on bare metal. Once it's up, you have
 
 - **Virtual machines** through KubeVirt — full KVM-based VMs with live migration (CPU only), block-storage attach, snapshots, and templates.
 - **Tenant Kubernetes clusters** for customers who want containers — every tenant gets their own K8s, isolated.
-- **Managed databases** — PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse, NATS — exposed as cloud services your tenants self-provision.
+- **Managed databases** — PostgreSQL, MariaDB, MongoDB, Redis, Valkey, RabbitMQ, Kafka, NATS, ClickHouse, OpenSearch, Qdrant, FoundationDB — exposed as cloud services your tenants self-provision.
 - **S3-compatible object storage** — for backups, application data, and AI training sets.
-- **GPU as a service** — for both VMs (NVIDIA vGPU) and Kubernetes pods (MIG, time-slicing, passthrough). Validated on A100, H100, H200, L40S, and Blackwell.
+- **GPU as a service** — for VMs (VFIO passthrough, or NVIDIA vGPU with an NVIDIA licence) and for Kubernetes pods (whole-GPU through the NVIDIA GPU Operator, fractional sharing through HAMi). Validated on A100, H100, H200, L40S, and Blackwell.
 - **Multi-tenant control plane** — `Tenant` Kubernetes CRD, nested tenants, per-tenant quotas and presets.
 - **Observability built in** — VictoriaMetrics + VictoriaLogs, no Prometheus/Loki licensing trap.
 - **Backup and DR** — Velero + S3 + per-database point-in-time recovery for managed services.
-- **Self-service portal and billing** — through cozyportal or via WHMCS integration (production-ready, two integration modes — see below).
+- **Self-service portal and billing** — through Cozystack Dashboard or via WHMCS integration (production-ready, two integration modes — see below).
 
 It runs on your bare metal. No public cloud dependency. No phone-home telemetry by default.
 
@@ -135,10 +135,10 @@ The questions every VMware admin asks first: *"What replaces vSphere? What's a r
 | VMware / VCF component | Cozystack equivalent | Acts as |
 |---|---|---|
 | **vSphere / ESXi** | KubeVirt on Talos | vSphere alternative, ESXi alternative — KVM-based VMs with live migration, snapshots, templates |
-| **vCenter** | Cozystack control plane (Kubernetes API + cozyportal) | vCenter alternative — multi-cluster federation through Cluster API |
-| **vSAN** | LINSTOR (DRBD) or Rook-Ceph | vSAN alternative — hyperconverged or external replicated block storage |
+| **vCenter** | Cozystack control plane (Kubernetes API + Cozystack Dashboard) | vCenter alternative — multi-cluster federation through Cluster API |
+| **vSAN** | LINSTOR (DRBD, via the Piraeus operator) | vSAN alternative — hyperconverged synchronous replicated block storage |
 | **NSX** | Cilium (eBPF) | NSX alternative — native L4/L7, network policies, observability, no NSX licensing |
-| **vCloud Director (vCD)** | Tenant CRD + cozyportal | vCloud Director alternative — multi-tenancy, self-service, quotas, RBAC |
+| **vCloud Director (vCD)** | Tenant CRD + Cozystack Dashboard | vCloud Director alternative — multi-tenancy, self-service, quotas, RBAC |
 | **vRealize / Aria Operations** | VictoriaMetrics + VictoriaLogs + Grafana | Aria Operations alternative — open-source observability stack |
 | **Site Recovery Manager (SRM)** | Velero + S3 + PostgreSQL PITR | SRM alternative — backup-based DR; replication for stateful services |
 | **Horizon (VDI)** | Not in scope of Cozystack | Pair with KasmWorkspaces or similar; talk to us about reference designs |
@@ -168,7 +168,7 @@ For most VMs, migration is a disk-image copy. We use KubeVirt CDI plus a set of 
 
 ### 4. Network and storage cutover
 
-Networking: VLAN mapping into Cilium, with policy parity checked against the source NSX rules. Storage: import disks into LINSTOR or Ceph, validate IOPS and replication.
+Networking: VLAN mapping into Cilium, with policy parity checked against the source NSX rules. Storage: import disks into LINSTOR, validate IOPS and replication.
 
 ### 5. Validation and DR cutover
 
@@ -205,13 +205,13 @@ Cozystack was built for service providers first. The same model works for any or
 | **Renewal risk** | 2–5× increases observed; bundling forced | Predictable support pricing; OSS code remains usable regardless |
 | **Compute** | vSphere / ESXi | KubeVirt (KVM-based) |
 | **Live migration** | Yes (incl. with GPU under vGPU) | Yes (CPU); GPU live migration not supported (industry-wide limitation, not Cozystack-specific) |
-| **Storage** | vSAN | LINSTOR (DRBD) or Ceph; both production-grade |
+| **Storage** | vSAN | LINSTOR (DRBD); synchronous replication, production-grade |
 | **Network** | NSX (proprietary) | Cilium (CNCF Graduated, eBPF) |
 | **Multi-tenancy** | vCloud Director | Tenant CRD; native to Kubernetes |
-| **Service catalog** | vRealize Automation / Aria | ApplicationDefinition + cozyportal |
+| **Service catalog** | vRealize Automation / Aria | ApplicationDefinition + Cozystack Dashboard |
 | **Backup / DR** | Site Recovery Manager (SRM) | Velero + S3 + PostgreSQL PITR |
 | **GPU for VMs** | NVIDIA vGPU under Horizon | NVIDIA vGPU + KubeVirt (NVIDIA Enterprise license required) |
-| **GPU for containers** | Tanzu (limited) | MIG, time-slicing, passthrough — Kubernetes-native |
+| **GPU for containers** | Tanzu (limited) | Whole-GPU via NVIDIA GPU Operator; fractional sharing (GPU memory + cores) via HAMi — Kubernetes-native |
 | **Observability** | vRealize / Aria (licensed separately) | VictoriaMetrics + VictoriaLogs (OSS, included) |
 | **Ops model** | Vendor support requires environment access | Advisory + runbooks + GitOps PR review (no kubectl access needed) |
 | **Sovereignty** | Closed source, US vendor | Open source, hosted on your hardware, EU-based support team |
@@ -302,7 +302,7 @@ VCF migrations are larger (more components, more integrations). The discovery ph
 
 ### What if we use vCloud Director for our customers?
 
-vCD migration is the most common path for service providers. Tenant model maps to Cozystack Tenant CRD, service catalog maps to ApplicationDefinition, billing maps to the WHMCS integration or cozyportal. We've shipped this for several providers — happy to share architecture in an NDA call.
+vCD migration is the most common path for service providers. Tenant model maps to Cozystack Tenant CRD, service catalog maps to ApplicationDefinition, billing maps to the WHMCS integration or Cozystack Dashboard. We've shipped this for several providers — happy to share architecture in an NDA call.
 
 ### Is GPU live migration supported?
 
@@ -314,7 +314,7 @@ No. Ænix charges for support tier and professional services, not per VM, per CP
 
 ### What about non-Kubernetes admins on the team?
 
-Cozyportal is the day-to-day surface for tenant admins — VM provisioning, database creation, backups, observability. Most operators rarely touch kubectl after the platform is running.
+The Cozystack Dashboard is the day-to-day surface for tenant admins — VM provisioning, database creation, backups, observability. Most operators rarely touch kubectl after the platform is running.
 
 ---
 

@@ -215,8 +215,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 We've built or operated platforms for service providers running multi-tenant clouds, regulated enterprises building internal developer platforms, AI/GPU operators, telecom operators, and sovereign-cloud initiatives across the EU, DACH, and Central Asia. Workloads include VMs, containers, managed databases, S3, and GPU.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
 Named case studies available on the discovery call where customer permissions allow.
 
 <!-- /BLOCK 8 -->

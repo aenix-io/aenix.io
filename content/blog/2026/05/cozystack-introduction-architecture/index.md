@@ -44,6 +44,8 @@ quiz:
 
 **This is the long-form companion to our [Cozystack product page](/products/cozystack/). It walks through what Cozystack is, the architecture, how it differs from OpenStack and OpenShift, and where it fits in the 2026 cloud platform landscape.**
 
+*Component facts below reflect the Cozystack v1.6 release line (current as of September 2026).*
+
 Cozystack is an open-source cloud platform — Apache 2.0 licensed, CNCF Project, built primarily by Ænix with growing community contribution. It started as an internal platform for service-provider customers and was open-sourced in 2023 because the architectural pattern proved generally useful.
 
 ## What Cozystack is, technically
@@ -54,11 +56,11 @@ A single Kubernetes-based platform that runs on bare metal and provides:
 - Multi-tenant control plane via Tenant CRD
 - Managed database, queue, cache services
 - S3-compatible object storage
-- GPU as a service (NVIDIA vGPU for VMs; MIG / time-slicing / passthrough for containers)
-- Self-service portal (cozyportal)
+- GPU as a service (VFIO passthrough or NVIDIA vGPU for VMs; HAMi fractional sharing for containers in tenant Kubernetes clusters)
+- Self-service portal (Cozystack Dashboard)
 - Observability (VictoriaMetrics + VictoriaLogs)
 - Backup and DR (Velero + per-app PITR)
-- WHMCS billing integration for service-provider model
+- WHMCS billing integration for the service-provider model (an Ænix [product](/products/whmcs-integration/) on top of Cozystack, not an upstream component)
 
 All controlled by a cohesive operational model — single platform team running one stack rather than integrating ten.
 
@@ -74,9 +76,11 @@ The alternative would be a parallel virtualization stack (libvirt directly, Open
 
 Talos is a minimal, immutable Linux designed for Kubernetes. No SSH; configuration via API; no package manager; no shell. Operationally simpler and more secure than general-purpose Linux for Kubernetes hosts.
 
+Talos is the default, not a requirement. Since Cozystack v1.0 the platform also installs onto an existing Kubernetes cluster running a general-purpose distribution (Ubuntu, Debian, RHEL-family, openSUSE) via the `isp-full-generic` variant or the `cozystack.installer` Ansible collection.
+
 ### Choice 3: LINSTOR as default storage
 
-LINSTOR (DRBD-based) provides replicated block storage with good operational characteristics for Kubernetes. Rook-Ceph is also supported for object/file or for teams preferring Ceph.
+LINSTOR (DRBD-based, deployed through the Piraeus operator) provides replicated block storage with good operational characteristics for Kubernetes. It remains the shipped default through the v1.6 release line. Object storage is a separate layer — SeaweedFS, exposed as the managed Bucket service. Cozystack does not ship Rook or Ceph. Ænix is building [Blockstor](https://github.com/cozystack/blockstor), a Kubernetes-native, LINSTOR-API-compatible control plane for LVM/ZFS with DRBD replication; it is not yet part of a Cozystack release.
 
 ### Choice 4: Cilium for networking
 
@@ -88,7 +92,7 @@ Native Kubernetes resource defining tenant boundaries. Nested tenants for resell
 
 ### Choice 6: Flux for GitOps
 
-Lightweight, upstream-Kubernetes-aligned GitOps engine. Argo CD also works; Flux is the default.
+Lightweight, upstream-Kubernetes-aligned GitOps engine. Flux is the platform's own reconciliation engine (v2.8 as of Cozystack v1.6). You can point Argo CD at your Cozystack manifests like any other Kubernetes resources, but Argo CD as an alternative *platform* engine is still a roadmap item, not a supported install path.
 
 ### Choice 7: VictoriaMetrics + VictoriaLogs for observability
 

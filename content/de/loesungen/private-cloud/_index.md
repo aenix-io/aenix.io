@@ -88,7 +88,7 @@ CNCF-Projekt · Kubernetes Certified Distribution · OpenSSF Best Practices · A
 KubeVirt für VMs (KVM-basiert mit Live-Migration, Snapshots, Templates) plus Kubernetes-Container, Seite an Seite. Keine separate VM-Plattform; keine separate Container-Plattform.
 
 **2. Storage — repliziertes Block- + S3-Object-Storage**
-LINSTOR (DRBD) für repliziertes Block-Storage im Maßstab. Rook-Ceph-Integration für Object/File. S3-kompatibel (SeaweedFS) für Anwendungs- + Backup-Storage.
+LINSTOR (DRBD) für repliziertes Block-Storage im Maßstab. SeaweedFS-Integration für Object/File. S3-kompatibel (SeaweedFS) für Anwendungs- + Backup-Storage.
 
 **3. Networking — eBPF-nativ**
 Cilium als CNI: L4/L7-Policies, Observability, MetalLB-Integration, BGP-Fabric-Support. NSX-äquivalente Funktionalität ohne NSX-Lizenzierung.
@@ -97,7 +97,7 @@ Cilium als CNI: L4/L7-Policies, Observability, MetalLB-Integration, BGP-Fabric-S
 Tenant-CRD-Modell mit verschachtelten Tenants, Per-Tenant-Quotas, RBAC, Audit. Geeignet für das Service-Provider-Modell (Multi-Customer) oder Enterprise-Multi-BU.
 
 **5. Verwaltete Services**
-PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB — erstklassige Managed-Service-Angebote.
+PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB — erstklassige Managed-Service-Angebote.
 
 **6. GPU as a Service**
 NVIDIA vGPU für VMs, MIG / Time-Slicing / Passthrough für Container. Validiert auf A100, H100, H200, L40S, Blackwell.
@@ -109,13 +109,13 @@ VictoriaMetrics + VictoriaLogs enthalten — geringer Overhead, souveränitätsf
 Velero + S3 + Per-Database-PITR für verwaltete Services.
 
 **9. Self-Service-Portal & WHMCS-Billing**
-cozyportal für Service-Provisioning. Produktionsreife WHMCS-Integration mit zwei Modi (native UI + Frontend Cozystack).
+Cozystack Dashboard für Service-Provisioning. Produktionsreife WHMCS-Integration mit zwei Modi (native UI + Frontend Cozystack).
 
 </div>
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant-CRD (Mandantenfähigkeit)</span><span>cozyportal</span><span>WHMCS-Integration</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant-CRD (Mandantenfähigkeit)</span><span>Cozystack Dashboard</span><span>WHMCS-Integration</span></div></div>
 <div class="diagram__conn">betreibt</div>
 <div class="diagram__node"><b>VMs und Container</b><div class="diagram__chips"><span>KubeVirt (Compute)</span><span>Verwaltete Services</span><span>S3</span><span>GPU as a Service</span></div></div>
 <div class="diagram__conn">laufen auf</div>
@@ -142,7 +142,7 @@ cozyportal für Service-Provisioning. Produktionsreife WHMCS-Integration mit zwe
 | **Compute** | vSphere + ESXi | Nova + KVM | KubeVirt | **KubeVirt** |
 | **Mandantenfähigkeit** | vCloud Director | Keystone-Projekte | Namespaces | **Tenant CRD (Kubernetes-nativ)** |
 | **Verwaltete Datenbanken** | Begrenzt | DBaaS optional | Verfügbar | **Erstklassig** |
-| **Self-Service-Portal** | vCD | Horizon | Console | **cozyportal** |
+| **Self-Service-Portal** | vCD | Horizon | Console | **Cozystack Dashboard** |
 | **Operativer Footprint** | Schwer (VCF) | Schwer (OpenStack) | Mittel (OpenShift) | **Leicht (Kubernetes-nativ, eine Plattform)** |
 | **Vendor-Beziehung** | Closed-Source-US-Anbieter | Foundation, Vendor-Distros | Red Hat | **Open Source, kein Vendor-Lock-in** |
 | **Am besten für** | Bestehendes VMware | Große Telco / OpenStack-versierte Teams | Bestehende Red-Hat-Kunden | **Service Provider, regulierte Mandantenfähigkeit, souveräne Cloud** |

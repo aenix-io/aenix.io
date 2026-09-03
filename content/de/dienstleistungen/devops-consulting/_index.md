@@ -203,8 +203,7 @@ Die meisten Engagements beginnen mit dem Assessment.
 Wir haben DevOps-Consulting- und Transformations-Engagements für Service Provider, regulierte Unternehmen, KI/GPU-Operatoren und Telekom-Betreiber in der EU, DACH und Zentralasien durchgeführt.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 <!-- /BLOCK 8 -->
 
 ---

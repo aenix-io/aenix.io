@@ -7,7 +7,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /compare/cozystack-vs-vmware/
 direct_answer: |
-  **Cozystack vs VMware ist ein Head-to-Head-Vergleich für Organisationen, die in der Post-Broadcom-Ära einen VMware-Ausstieg planen und Cozystack bereits auf der Shortlist haben. VMware Cloud Foundation ist ein proprietärer, subscription-pflichtiger Stack aus ESXi, vSAN und NSX. Cozystack ist eine quelloffene Cloud-Plattform unter Apache 2.0, die auf Kubernetes und KubeVirt aufsetzt, VMs und Container über eine gemeinsame API betreibt, Cilium (eBPF) für Networking sowie LINSTOR oder Rook-Ceph für Storage nutzt und Mandantenfähigkeit über das Tenant-CRD bietet. Aenix, das Open-Core-Unternehmen hinter Cozystack, liefert die produktisierte Ænix Platform und Migrationsservices für den Wechsel von VMware.**
+  **Cozystack vs VMware ist ein Head-to-Head-Vergleich für Organisationen, die in der Post-Broadcom-Ära einen VMware-Ausstieg planen und Cozystack bereits auf der Shortlist haben. VMware Cloud Foundation ist ein proprietärer, subscription-pflichtiger Stack aus ESXi, vSAN und NSX. Cozystack ist eine quelloffene Cloud-Plattform unter Apache 2.0, die auf Kubernetes und KubeVirt aufsetzt, VMs und Container über eine gemeinsame API betreibt, Cilium (eBPF) für Networking sowie LINSTOR oder SeaweedFS für Storage nutzt und Mandantenfähigkeit über das Tenant-CRD bietet. Aenix, das Open-Core-Unternehmen hinter Cozystack, liefert die produktisierte Ænix Platform und Migrationsservices für den Wechsel von VMware.**
 
 quick_facts:
   - label: "Was es ist"
@@ -17,7 +17,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Architektur"
-    value: "Cozystack: Kubernetes + KubeVirt (VMs und Container), Cilium (eBPF), LINSTOR/Rook-Ceph; VMware: ESXi, vSAN, NSX"
+    value: "Cozystack: Kubernetes + KubeVirt (VMs und Container), Cilium (eBPF), LINSTOR/SeaweedFS; VMware: ESXi, vSAN, NSX"
   - label: "Zielgruppe"
     value: "Organisationen mit VMware-Ausstieg, Souveränitäts- oder Open-Source-Anforderung und Multi-Tenant-Cloud-Builder-Use-Cases"
   - label: "Produkt von Aenix"
@@ -56,10 +56,10 @@ Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternati
 |---|---|---|
 | **Lizenz** | Nur Subscription | Apache 2.0 (Open Source) |
 | **Compute** | vSphere / ESXi | KubeVirt auf Talos |
-| **Storage** | vSAN | LINSTOR oder Rook-Ceph |
+| **Storage** | vSAN | LINSTOR oder SeaweedFS |
 | **Netzwerk** | NSX | Cilium (eBPF) |
 | **Multi-Tenancy** | vCloud Director | Tenant CRD |
-| **Service-Katalog** | vRealize / Aria | ApplicationDefinition + cozyportal |
+| **Service-Katalog** | vRealize / Aria | ApplicationDefinition + Cozystack Dashboard |
 | **Backup/DR** | Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
 | **GPU für VMs** | NVIDIA vGPU unter Horizon | NVIDIA vGPU + KubeVirt |
 | **Air-Gap** | Unterstützt (zusätzliche Lizenzierung) | Unterstützt (keine Zusatzkosten) |
@@ -73,7 +73,7 @@ Für eine breitere VMware-Alternativen-Evaluierung siehe das **[VMware-Alternati
 <div class="diagram__conn">eine gemeinsame Kubernetes-API</div>
 <div class="diagram__node"><b>VMs und Container</b><div class="diagram__chips"><span>KubeVirt auf Talos</span></div></div>
 <div class="diagram__conn">Netzwerk und Storage</div>
-<div class="diagram__node"><b>Plattform-Services</b><div class="diagram__chips"><span>Cilium (eBPF)</span><span>LINSTOR oder Rook-Ceph</span></div></div>
+<div class="diagram__node"><b>Plattform-Services</b><div class="diagram__chips"><span>Cilium (eBPF)</span><span>LINSTOR oder SeaweedFS</span></div></div>
 </div>
 </div>
 

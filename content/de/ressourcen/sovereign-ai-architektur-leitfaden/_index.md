@@ -1,19 +1,20 @@
 ---
 title: "Sovereign-AI-Architektur-Leitfaden — visueller Flowchart + Q&A (kostenloses PDF)"
-description: "Ein 12-seitiger Decision-Guide für Organisationen, die souveräne KI-Infrastruktur evaluieren. Visueller Flowchart führt durch 7 Schlüssel-Entscheidungen:..."
+description: "Kostenloser 11-seitiger Decision-Guide für souveräne KI-Infrastruktur: sieben Entscheidungen, vier Referenzarchitekturen, GPU-Sizing-Tabellen."
 type: "page"
 related_pages:
   - /de/loesungen/sovereign-ai
   - /de/dienstleistungen/ai-platform-build
   - /de/produkte/ai-platform/
+hreflang_en: /resources/sovereign-ai-decision-guide/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloser 12-seitiger Decision-Guide für IT- und Compliance-Verantwortliche, die souveräne KI-Infrastruktur evaluieren. Ein visueller Flowchart führt durch sieben Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope (DORA, NIS2, souveränes-Cloud-Mandat), Modell-Auswahl (Open-Weight wie Llama, Mistral, Qwen), Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen und operatives Modell. Der Guide liefert vier annotierte Architektur-Patterns und Sizing-Referenztabellen. Das Ergebnis mappt direkt auf die Ænix AI Platform — eine turnkey, selbst-gehostete KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0) mit Multi-Tenant-GPU-Scheduling und Souveränitätskontrollen.**
+  **Der Sovereign-AI-Architektur-Leitfaden ist ein kostenloser 11-seitiger Decision-Guide für IT- und Compliance-Verantwortliche, die souveräne KI-Infrastruktur evaluieren. Ein visueller Flowchart führt durch sieben Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope (DORA, NIS2, souveränes-Cloud-Mandat), Modell-Auswahl (Open-Weight wie Llama, Mistral, Qwen), Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen und operatives Modell. Der Guide liefert vier annotierte Architektur-Patterns und Sizing-Referenztabellen. Das Ergebnis mappt direkt auf die Ænix AI Platform — eine turnkey, selbst-gehostete KI-Plattform auf Cozystack (CNCF-Projekt, Apache 2.0) mit Multi-Tenant-GPU-Scheduling und Souveränitätskontrollen.**
 quick_facts:
   - label: "Was es ist"
-    value: "Kostenloser 12-seitiger Decision-Guide (PDF) mit visuellem Flowchart zur Planung souveräner KI-Infrastruktur"
+    value: "Kostenloser 11-seitiger Decision-Guide (PDF) mit Master-Decision-Tree zur Planung souveräner KI-Infrastruktur"
   - label: "Zielgruppe"
     value: "IT-Leiter, Architekten und Compliance-Teams in regulierten Branchen, die selbst-gehostete KI evaluieren"
   - label: "Lizenz"
@@ -41,12 +42,12 @@ faq:
     a: "Die Ænix Platform wird in vier Stufen angeboten: Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Aufwand. Cozystack selbst ist Open Source unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung."
 ---
 
-**Ein 12-seitiger Decision-Guide für Organisationen, die souveräne KI-Infrastruktur evaluieren. Visueller Flowchart führt durch 7 Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope, Modell-Auswahl, Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen, operatives Modell.**
+**Ein 11-seitiger Decision-Guide für Organisationen, die souveräne KI-Infrastruktur evaluieren. Visueller Flowchart führt durch 7 Schlüssel-Entscheidungen: Trigger-Profil, regulatorischer Scope, Modell-Auswahl, Hardware-Sizing, Multi-Tenancy-Modell, Souveränitätskontrollen, operatives Modell.**
 
-> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling, fertigen Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen. Der Decision-Guide outputs eine Architektur-Pattern, die direkt auf AI Platform Deployment-Scope mappt.
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — turnkey KI-Infrastruktur mit Multi-Tenant-GPU-Scheduling, fertigen Blueprints für Inferenz + Fine-Tuning + RAG, Souveränitätskontrollen. Der Decision-Guide liefert ein Architektur-Pattern, das direkt auf den Deployment-Scope der AI Platform abgebildet wird.
 
 <div class="lead-magnet-form">
-{{< pipedrive-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" resource="sovereign-ai-decision-guide" >}}
 <p class="lead-magnet-form__note">Sovereign-AI-Decision-Guide herunterladen (PDF)</p>
 </div>
 
@@ -87,4 +88,20 @@ Praktische Sizing-Tabellen für gängige Workload-Profile.
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+---
+
+## Wer das nutzt
+
+- KI-Infrastruktur-Leads und CTOs in KI-lastigen Organisationen
+- Architekten, die souveräne KI gegen Hyperscaler-KI abwägen
+- Platform-Engineering-Leads, die KI-Infrastruktur scopen
+
+---
+
+## Nach dem Download
+
+Der Leitfaden liefert das architektonische Rahmenwerk für die Entscheidung. Für ein konkretes Engagement siehe **[Souveräne-KI-Lösung](/de/loesungen/sovereign-ai/)** oder **[AI Platform Build](/de/dienstleistungen/ai-platform-build/)**.
+
+---
+
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und bietet die Ænix Platform an — eine schlüsselfertige kommerzielle Cloud-in-a-Box.*

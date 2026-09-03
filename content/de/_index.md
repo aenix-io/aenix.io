@@ -20,7 +20,7 @@ language: "de"
 - **Zwei Plattforms:** Provider, wenn Sie Cloud verkaufen; Enterprise, wenn Sie sie selbst betreiben. Dazu die Module AI Platform und Developer Self-Service sowie der Entry-Tier Pure Cozystack mit Ænix-Support.
 - **Engagement-Größe:** Public Cloud Platform ab 1.250 USD/Monat Support-Tier; Betreiber- und Enterprise-Builds nach RFP.
 - **Regulatorischer Fokus:** DORA (in Kraft seit 2025-01-17), NIS2 (Umsetzungsfrist 2024-10-17), nationale Souveränitäts-Mandate.
-- **Architektur:** Kubernetes-nativ, Multi-Tenant Tenant CRD, kundenkontrollierte Hardware. Aufgebaut auf Talos + Kubernetes + KubeVirt + Cilium + LINSTOR + cozyportal + VictoriaMetrics + VictoriaLogs.
+- **Architektur:** Kubernetes-nativ, Multi-Tenant Tenant CRD, kundenkontrollierte Hardware. Aufgebaut auf Talos + Kubernetes + KubeVirt + Cilium + LINSTOR + Cozystack Dashboard + VictoriaMetrics + VictoriaLogs.
 - **Geografie:** AENIX s.r.o. (Tschechien) + AENIX INC (Delaware), mit Engineering-Teams in der EU und Zentralasien.
 - **Phase:** Frühe kommerzielle Reise; produktionsreife Technologie und Team.
 
@@ -66,7 +66,7 @@ Cozystack ist der Motor. Ænix Platform ist das Auto — eine turnkey Cloud mit 
 - **User-Management** mit Self-Service-Registrierung, Profilen, Team-Management
 - **Service-Erstellungs-Wizards** — geführte UX für VMs, K8s, Datenbanken, S3, GPU (kein YAML erforderlich)
 - **Vollständiges Billing — Backend + Frontend** mit Usage-Metering, Invoicing, Payment-Processing
-- **Console-Portal** — kundenseitige Cloud-Console (cozyportal mit Ihrem Branding)
+- **Console-Portal** — kundenseitige Cloud-Console (Cozystack Dashboard mit Ihrem Branding)
 - **Usage-Charts und -Graphen** — eingebaute Analytics + Observability-Dashboards
 - **Payment-Integrationen** — Stripe, regionale Anbieter, B2B-Invoicing
 - **WHMCS-Integration** — turnkey für Hosting-Anbieter, die bereits WHMCS nutzen

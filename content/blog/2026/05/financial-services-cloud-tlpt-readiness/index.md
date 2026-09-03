@@ -296,13 +296,13 @@ Poor fit:
 - **[DORA compliance services](/solutions/dora-compliance/)** —
   buyer-trigger DORA landing
 - **[Private Cloud Platform product page](/products/private-cloud-platform/)** —
-  the edition for regulated enterprises
+  the product for regulated enterprises
 - **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   architecture-level DORA walkthrough
 - **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-detailed/)** —
   what demonstrable means in practice
 - **[Private Cloud Platform — DORA Article 21 + 28 mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
-  edition-level architectural detail
+  product-level architectural detail
 - **[DORA compliance checklist resource](/resources/dora-compliance-checklist/)** —
   downloadable controls checklist
 

@@ -115,9 +115,9 @@ own. Cozystack provides:
 
 - **KubeVirt** for VM-bound AI workloads (legacy notebook environments,
   data-science teams that need full VMs).
-- **Container-based GPU** via NVIDIA GPU operator with MIG support,
-  time-slicing for fractional GPU allocation, full passthrough for
-  exclusive workloads.
+- **Container-based GPU** via the NVIDIA GPU Operator for whole-GPU
+  allocation, plus HAMi for fractional allocation by GPU memory and
+  compute cores in tenant Kubernetes clusters.
 - **Multi-tenant Tenant CRD** with per-tenant GPU quotas, GPU-class-
   aware scheduling (e.g., L40S for inference tenants, H100 for
   fine-tuning tenants).
@@ -291,7 +291,7 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 ## Where to dig deeper
 
 - **[AI Platform landing](/products/ai-platform/)** —
-  feature list, GPU sizing tables, edition-specific FAQ
+  feature list, GPU sizing tables, product-specific FAQ
 - **[Sovereign AI services](/solutions/sovereign-ai/)** — buyer-trigger
   landing for sovereign AI
 - **[AI platform build services](/services/ai-platform-build/)** —

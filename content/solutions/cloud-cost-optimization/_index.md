@@ -215,8 +215,7 @@ For full methodology see **[Platform Readiness Assessment](/services/platform-re
 We've run cost-emphasized engagements for service providers, financial-services organizations, telecom operators, and AI/GPU platforms across the EU, DACH, and Central Asia. Identified savings have ranged from 15% (well-managed cloud estate, mostly tactical optimization) to 50%+ (mismanaged spend with strong repatriation case).
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
 Named case studies available on the discovery call where customer permissions allow.
 
 <!-- /BLOCK 8 -->

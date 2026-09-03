@@ -111,7 +111,7 @@ The platform sits between hardware and applications. For private LLM, the right 
 Kubernetes-native virtualization platforms (Cozystack, OpenShift Virtualization, vendor-led variants) are increasingly the default because they answer all of these in one stack.
 
 [Cozystack](/products/cozystack/) supports:
-- Container-based AI workloads with Kubernetes GPU scheduling: MIG, time-slicing, passthrough
+- Container-based AI workloads with Kubernetes GPU scheduling: whole-GPU allocation through the NVIDIA GPU Operator, fractional sharing (GPU memory and compute cores) through HAMi
 - VM-based AI workloads through KubeVirt with NVIDIA vGPU (NVIDIA Enterprise license required)
 - Multi-tenant isolation through Tenant CRD with per-tenant GPU quotas
 

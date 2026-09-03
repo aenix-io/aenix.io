@@ -126,7 +126,7 @@ Cozystack platforms federate across central + regional + substation tiers. Singl
 Documented air-gap install workflow. Suitable for OT zones that cannot have internet egress. Updates via Harbor mirror or controlled channels.
 
 ### 3. AI infrastructure native
-KubeVirt for legacy AI workloads, native Kubernetes for modern ML pipelines. NVIDIA vGPU + MIG + time-slicing for GPU sharing across forecasting models. Validated on A100, H100, H200, L40S, Blackwell.
+KubeVirt for legacy AI workloads, native Kubernetes for modern ML pipelines. VFIO passthrough or NVIDIA vGPU for VM-bound workloads, and HAMi fractional sharing (GPU memory and compute cores) for containers sharing GPUs across forecasting models. Validated on A100, H100, H200, L40S, Blackwell.
 
 ### 4. Multi-tenant for cross-BU
 Tenant CRD model accommodates generation / transmission / distribution / retail BUs with separate isolation. For unbundled markets, this is non-optional.

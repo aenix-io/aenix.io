@@ -22,7 +22,7 @@ quick_facts:
   - label: "Gemeinsames Fundament"
     value: "Beide basieren auf Kubernetes + KubeVirt für virtuelle Maschinen und Container"
   - label: "Technischer Stack (Cozystack)"
-    value: "Cilium (eBPF) Networking, LINSTOR/DRBD oder Rook-Ceph Storage, Tenant-CRD-Mandantenfähigkeit"
+    value: "Cilium (eBPF) Networking, LINSTOR/DRBD oder SeaweedFS Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Zielgruppe"
     value: "Plattform- und Infrastruktur-Teams in regulierten Unternehmen, die eine OpenShift-Alternative ohne US-Vendor-Abhängigkeit evaluieren"
   - label: "Kommerzielles Angebot"
@@ -40,7 +40,7 @@ faq:
   - q: "Bietet Aenix kommerziellen Support für Cozystack an?"
     a: "Ja. Aenix ist das Open-Core-Unternehmen hinter Cozystack und liefert die produktisierte Ænix Platform plus Support. Preisstufen: Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell. So gibt es kommerziellen Support ohne Subscription-basierte Lizenzierung."
   - q: "Nutzen Cozystack und OpenShift dieselbe Virtualisierungstechnologie?"
-    a: "Beide verwenden KubeVirt, um virtuelle Maschinen und Container über eine einheitliche Kubernetes-API zu betreiben. Der Unterschied liegt im umgebenden Stack: OpenShift nutzt OVN-Kubernetes und OpenShift Data Foundation, Cozystack nutzt Cilium-Networking und LINSTOR/DRBD oder Rook-Ceph-Storage."
+    a: "Beide verwenden KubeVirt, um virtuelle Maschinen und Container über eine einheitliche Kubernetes-API zu betreiben. Der Unterschied liegt im umgebenden Stack: OpenShift nutzt OVN-Kubernetes und OpenShift Data Foundation, Cozystack nutzt Cilium-Networking und LINSTOR/DRBD oder SeaweedFS-Storage."
 ---
 
 **Beide KubeVirt-basiert. Unterschiedliche kommerzielle Modelle, unterschiedliche operative Footprints.**
@@ -55,7 +55,7 @@ faq:
 | **Vendor-Stack** | Red Hat / IBM | Open Source / Ænix optional |
 | **Foundation** | Kubernetes + KubeVirt | Kubernetes + KubeVirt |
 | **Multi-Tenancy** | Project-basiert | Tenant CRD |
-| **Storage** | OpenShift Data Foundation | LINSTOR / Rook-Ceph |
+| **Storage** | OpenShift Data Foundation | LINSTOR / SeaweedFS |
 | **Networking** | OpenShift SDN / OVN-Kubernetes | Cilium |
 | **Service-Katalog** | Operator Hub | Cozystack-Operatoren |
 | **Souveränität** | US-Vendor-Abhängigkeit | Customer-controlled, Open Source |

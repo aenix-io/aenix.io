@@ -542,31 +542,31 @@ From ten to ten thousand instances with the same SLA and security posture.
 
 ---
 
-## Block 27 — Plattform cards
+## Block 27 — platform cards
 
 `.edition-cards` — h3-led product sections wrapped into cards (insert-only wrappers); the first card is the flagship and spans the full row.
 
 <div class="edition-cards">
 <div class="edition-card">
-<h3>Sample Flagship Plattform</h3>
+<h3>Sample Flagship platform</h3>
 <p>For large operators, banks running their own cloud, and national telcos.</p>
 <p>Multi-hypervisor control plane with users, projects, quotas, and multi-region support.</p>
 <p><strong>Engagement size:</strong> Multi-year programs.</p>
-<a href="#">Flagship Plattform details →</a>
+<a href="#">Flagship platform details →</a>
 </div>
 <div class="edition-card">
-<h3>Sample Second Plattform</h3>
+<h3>Sample Second platform</h3>
 <p>For hosting providers, MSPs, and regional clouds.</p>
 <p>Modern alternative to legacy stacks with billing and migration tooling.</p>
 <p><strong>Engagement size:</strong> Entry from a monthly support tier.</p>
-<a href="#">Second Plattform details →</a>
+<a href="#">Second platform details →</a>
 </div>
 <div class="edition-card">
-<h3>Sample Third Plattform</h3>
+<h3>Sample Third platform</h3>
 <p>For regulated enterprises facing compliance pressure.</p>
 <p>Private and hybrid sovereign cloud with multi-DC setups.</p>
 <p><strong>Engagement size:</strong> Multi-year platform builds.</p>
-<a href="#">Third Plattform details →</a>
+<a href="#">Third platform details →</a>
 </div>
 </div>
 

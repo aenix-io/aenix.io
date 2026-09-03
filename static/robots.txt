@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /web0826/
+Disallow: /downloads/web0826/

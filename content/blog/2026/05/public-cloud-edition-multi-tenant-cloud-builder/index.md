@@ -83,7 +83,7 @@ multi-DC active/active; multi-million-euro infrastructure investment;
 customer-facing SLAs that map to national regulator expectations; and
 a partnership model with Ænix that lasts years, not months.
 
-## What Public Cloud Platform includes that other editions don't
+## What Public Cloud Platform includes that the other products don't
 
 ### Multi-region / multi-DC active/active
 
@@ -121,7 +121,7 @@ not just contractually. Compliance evidence catalogue is a deliverable.
 
 ### Customer-facing brand engineering
 
-Beyond cozyportal customisation, Public Cloud Platform includes
+Beyond Cozystack Dashboard customisation, Public Cloud Platform includes
 brand-engineering work: customer portal that looks like a top-tier
 cloud product, not a customised Cozystack instance. UX flows tuned
 to how customer's customers think about ordering, configuring,
@@ -145,7 +145,7 @@ sides.
 ### Phase 1 — Foundation (3-6 months)
 
 Hardware procurement and racking. Talos / Cozystack platform deployment
-in the first datacentre. Storage layer (LINSTOR or Ceph at scale).
+in the first datacentre. Storage layer (LINSTOR/DRBD at scale).
 Networking foundation. Identity integration with customer's existing
 workforce identity (Keycloak / Okta / Active Directory / sovereign IdP).
 Initial observability stack.
@@ -168,7 +168,7 @@ against targets.
 Service-by-service rollout. Start with foundational services (compute,
 storage, basic networking, managed PostgreSQL). Layer in managed
 service families (databases, queues, caches, search, observability).
-Add edition-specific services (GPU, AI inference, sectoral compliance
+Add product-specific services (GPU, AI inference, sectoral compliance
 tooling).
 
 Each service goes through: deployment → internal testing → friendly-
@@ -234,10 +234,10 @@ Strong fit:
 Marginal fit:
 
 - Large hosting providers above the Public Cloud Platform ceiling but below
-  tier-1 telco scale — may fit Public Cloud Platform or extended ISP
-  Edition depending on growth profile
-- AI/GPU-focused operators where the AI workload dominates — AI/ML
-  Edition may fit better with selective Public Cloud Platform
+  tier-1 telco scale — may fit the Public Cloud Platform or an extended
+  engagement depending on growth profile
+- AI/GPU-focused operators where the AI workload dominates — the Ænix AI
+  Platform may fit better, with selective Public Cloud Platform
   components
 
 Poor fit:
@@ -262,7 +262,7 @@ Engagement size: multi-year programme, quoted per RFP.
 ## Where to dig deeper
 
 - **[Public Cloud Platform landing](/products/public-cloud-platform/)** —
-  feature list, edition-specific FAQ
+  feature list, product-specific FAQ
 - **[Public Cloud Builder services](/services/public-cloud-builder/)** —
   engagement details
 - **[Sovereign Cloud Builder services](/services/sovereign-cloud-builder/)** —

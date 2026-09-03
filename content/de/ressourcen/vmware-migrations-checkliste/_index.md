@@ -8,6 +8,7 @@ related_pages:
   - /de/dienstleistungen/platform-readiness-assessment
   - /de/produkte/public-cloud-platform/
   - /de/produkte/private-cloud-platform/
+hreflang_en: /resources/vmware-migration-checklist/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -48,7 +49,7 @@ faq:
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, die VMware Cloud Director verlassen; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF verlassen.
 
 <div class="lead-magnet-form">
-{{< pipedrive-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" resource="vmware-migration-checklist" >}}
 <p class="lead-magnet-form__note">Checkliste herunterladen (PDF)</p>
 </div>
 
@@ -92,4 +93,4 @@ Die Checkliste gibt Ihnen die strukturierte Discovery, die Ihre Organisation int
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und bietet die Ænix Platform an — eine schlüsselfertige kommerzielle Cloud-in-a-Box.*

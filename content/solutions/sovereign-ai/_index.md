@@ -219,8 +219,7 @@ For full assessment methodology see **[Platform Readiness Assessment](/services/
 We have built and operated AI platforms for AI / GPU operators, financial-services organizations, and public-sector initiatives across the EU and Central Asia. Workload patterns include inference-at-scale (24/7), fine-tuning, RAG pipelines, and multi-tenant model serving.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
 Named case studies available on the discovery call where customer permissions allow.
 
 <!-- /BLOCK 8 -->

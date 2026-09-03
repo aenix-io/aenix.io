@@ -42,7 +42,7 @@ Aggregate Ænix Platform across regional sub-channels. Deal-protect downstream r
 
 ### Sovereign cloud / regional cloud builders
 
-Build and operate sovereign cloud products on Ænix Platform with branded customer-facing layer (white-label cozyportal, WHMCS-integrated billing, multi-tier reseller model). Ideal for regional cloud / sovereign-cloud product companies.
+Build and operate sovereign cloud products on Ænix Platform with branded customer-facing layer (white-label Cozystack Dashboard, WHMCS-integrated billing, multi-tier reseller model). Ideal for regional cloud / sovereign-cloud product companies.
 
 ---
 

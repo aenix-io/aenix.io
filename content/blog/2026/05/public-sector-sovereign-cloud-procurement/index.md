@@ -236,8 +236,8 @@ Produce procurement-response artefacts: technical proposal, framework
 compliance mapping, reference architecture, sample evidence catalogue.
 Typical duration: 2-4 months.
 
-### Phase 2 — Phase-1 platform build (per Public Cloud / Enterprise
-Edition models)
+### Phase 2 — Phase-1 platform build (per Public Cloud Platform /
+Private Cloud Platform models)
 
 Multi-DC deployment, air-gap option enabled if applicable, sovereign
 identity integration, audit-isolated environments. 6-18 months.
@@ -294,8 +294,8 @@ Poor fit:
 
 - Workloads where hyperscaler-managed cloud is already framework-
   compliant (some specific procurement frameworks)
-- Organisations without sovereignty pressure (use private-sector
-  edition matching workload profile)
+- Organisations without sovereignty pressure (use the private-sector
+  product matching the workload profile)
 
 ## Where to dig deeper
 

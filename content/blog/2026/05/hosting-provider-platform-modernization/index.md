@@ -60,7 +60,7 @@ Most hosting providers in 2026 have:
 
 The modernization target:
 - Kubernetes-native multi-tenant platform (Cozystack)
-- Self-service customer-facing portal (cozyportal or custom)
+- Self-service customer-facing portal (Cozystack Dashboard or custom)
 - Expanded service catalog (VMs, K8s, managed DBs, S3, GPU)
 - WHMCS-integrated billing
 - Per-customer observability and audit

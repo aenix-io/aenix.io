@@ -41,7 +41,7 @@ aliases:
 
 Plus ein **Entry-Tier** — **Pure Cozystack mit Ænix-Support** — für Produkt-Teams auf Hetzner / OVH / gemieteter Bare-Metal-Hardware ohne kommerzielle Portal-/Billing-Schicht.
 
-**Engagement-Größe:** Public Cloud Platform Entry ab 1.250 USD/Monat Support; Public Cloud / Enterprise / IDP / AI/ML Full Builds nach RFP.
+**Engagement-Größe:** Public Cloud Platform Entry ab 1.250 USD/Monat Support; Private-Cloud- und AI-Platform-Programme sowie Multi-Region-Builds nach RFP.
 
 [Platform entdecken →](/de/produkte/)
 
@@ -54,7 +54,7 @@ Plus ein **Entry-Tier** — **Pure Cozystack mit Ænix-Support** — für Produk
 
 **Open-Source Kubernetes-native Multi-Tenant Cloud-Plattform. CNCF-Projekt (Apache 2.0). Erstellt und gewartet von Ænix.**
 
-- **Architektur:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal + VictoriaMetrics + VictoriaLogs
+- **Architektur:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard + VictoriaMetrics + VictoriaLogs
 - **Lizenz:** Apache 2.0 — jeder kann es betreiben
 - **Status:** CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026); CNCF-Certified Kubernetes Distribution; OpenSSF Best Practices
 - **Dokumentation:** [cozystack.io/docs](https://cozystack.io/docs)

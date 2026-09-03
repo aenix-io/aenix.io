@@ -19,10 +19,10 @@ quiz:
     - q: "Welche Cozystack-Komponente ist im Mapping das vCenter-Äquivalent?"
       options:
         - { text: "KubeVirt auf Talos", correct: false }
-        - { text: "Cozystack Control Plane (Kubernetes API + cozyportal)", correct: true }
+        - { text: "Cozystack Control Plane (Kubernetes API + Cozystack Dashboard)", correct: true }
         - { text: "Cilium", correct: false }
         - { text: "LINSTOR", correct: false }
-      explanation: "Im Architektur-Mapping ist die Cozystack Control Plane (Kubernetes API + cozyportal) das vCenter-Äquivalent. KubeVirt ersetzt vSphere/ESXi; Cilium ersetzt NSX; LINSTOR ersetzt vSAN."
+      explanation: "Im Architektur-Mapping ist die Cozystack Control Plane (Kubernetes API + Cozystack Dashboard) das vCenter-Äquivalent. KubeVirt ersetzt vSphere/ESXi; Cilium ersetzt NSX; LINSTOR ersetzt vSAN."
     - q: "Welche zwei Bereiche erfordern Redesign anstelle eines 1:1-Mappings beim VMware-→-Cozystack-Wechsel?"
       options:
         - { text: "Storage und CPU-Architektur", correct: false }
@@ -64,10 +64,10 @@ Drei unabhängige Druckpunkte treffen die gleiche Architektur gleichzeitig:
 | VMware/VCF-Komponente | Cozystack-Äquivalent |
 |---|---|
 | vSphere/ESXi | KubeVirt auf Talos |
-| vCenter | Cozystack Control Plane (Kubernetes API + cozyportal) |
-| vSAN | LINSTOR (DRBD) oder Rook-Ceph |
+| vCenter | Cozystack Control Plane (Kubernetes API + Cozystack Dashboard) |
+| vSAN | LINSTOR (DRBD) |
 | NSX | Cilium (eBPF) |
-| vCloud Director | Tenant CRD + cozyportal |
+| vCloud Director | Tenant CRD + Cozystack Dashboard |
 | vRealize/Aria Operations | VictoriaMetrics + VictoriaLogs + Grafana |
 | Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
 | Tanzu Kubernetes Grid | Tenant Kubernetes (nativ) |
@@ -89,7 +89,7 @@ Cozystack wird auf neuer oder umgewidmeter Hardware neben dem bestehenden VMware
 Für die meisten VMs ist die Migration eine Disk-Image-Kopie. KubeVirt CDI plus ein Set spezieller Migrations-Skripte. Für Windows-VMs läuft ein automatischer Cleanup-Pass vor dem Boot auf KubeVirt.
 
 ### 4. Netzwerk- und Speicher-Cutover
-Networking: VLAN-Mapping in Cilium mit Policy-Parität gegen NSX-Regeln. Storage: Disks in LINSTOR oder Ceph importieren.
+Networking: VLAN-Mapping in Cilium mit Policy-Parität gegen NSX-Regeln. Storage: Disks in LINSTOR importieren.
 
 ### 5. Validierung und DR-Cutover
 Jede migrierte Workload läuft parallel auf Cozystack bis zur Validierung. DR-Pläne (Velero, PostgreSQL PITR) ersetzen SRM-Playbooks vor dem finalen Cutover.

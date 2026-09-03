@@ -28,7 +28,7 @@ faq:
   - q: "Does Cozystack support both virtual machines and containers?"
     a: "Yes. Cozystack uses KubeVirt to run VMs and containers on one Kubernetes API, so a provider can serve traditional VM customers and modern container workloads from the same platform and operations team."
   - q: "How does billing integration work for hosting providers?"
-    a: "The Ænix Public Cloud Platform includes WHMCS integration in two modes: the native Cozystack UI and a cozyportal customer-facing frontend. It also supports tenant lock and suspension tied to billing status."
+    a: "The Ænix Public Cloud Platform includes WHMCS integration in two modes: the native Cozystack UI and a Cozystack Dashboard customer-facing frontend. It also supports tenant lock and suspension tied to billing status."
   - q: "Is there per-CPU or per-core licensing?"
     a: "No. Cozystack is Apache 2.0 licensed, so there is no per-CPU or per-core fee. This preserves hosting margin compared with proprietary virtualization platforms that license by socket or core."
   - q: "Can a provider migrate existing workloads from VMware, OpenStack, or Virtuozzo?"
@@ -46,7 +46,7 @@ faq:
   <a class="cta-secondary" href="/blog/2026/05/hosting-provider-platform-modernization/">Hosting platform modernization →</a>
 </div>
 
-**See the customer portal for yourself.** The cozyportal console is the actual Ænix Platform customer frontend, running entirely in your browser with demo data — no signup, no cluster, no setup.
+**See the customer portal for yourself.** The Cozystack Dashboard console is the actual Ænix Platform customer frontend, running entirely in your browser with demo data — no signup, no cluster, no setup.
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
@@ -72,7 +72,7 @@ faq:
 - **Modernization from VPS to cloud product** — multi-tenant Kubernetes-native platform
 - **Service catalog expansion** — VMs + containers + managed databases + S3 + GPU on one platform
 - **WHMCS integration** — production-ready, two integration modes
-- **Customer-facing portal** — cozyportal customizable per provider
+- **Customer-facing portal** — Cozystack Dashboard customizable per provider
 - **Sovereign cloud product launches** — for regional markets
 
 For sales-led engagement see **[public cloud builder](/services/public-cloud-builder/)** and **[white-label cloud](/services/white-label-cloud/)**.
@@ -85,7 +85,7 @@ For sales-led engagement see **[public cloud builder](/services/public-cloud-bui
 ## Why Cozystack fits hosting providers
 
 - **Multi-tenant Tenant CRD** — production-grade customer isolation
-- **WHMCS integration** — two modes (native UI + cozyportal frontend)
+- **WHMCS integration** — two modes (native UI + Cozystack Dashboard frontend)
 - **Open-source platform** — no per-CPU licensing, hosting margin preserved
 - **Service catalog** — far beyond VMs (managed DBs, S3, GPU)
 - **Operational simplicity** — single platform, single team
@@ -94,7 +94,7 @@ For sales-led engagement see **[public cloud builder](/services/public-cloud-bui
 <div class="diagram">
 <div class="diagram__node"><b>WHMCS billing</b><div class="diagram__chips"><span>Two integration modes</span><span>Tenant lock/suspension</span></div></div>
 <div class="diagram__conn">provisions through</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b><div class="diagram__chips"><span>cozyportal</span><span>Migration tooling</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b><div class="diagram__chips"><span>Cozystack Dashboard</span><span>Migration tooling</span></div></div>
 <div class="diagram__conn">exposes</div>
 <div class="diagram__node"><b>Cozystack service catalog</b><div class="diagram__chips"><span>VMs</span><span>Managed databases</span><span>S3</span><span>GPU</span></div></div>
 <div class="diagram__conn">isolates customers via</div>

@@ -1,22 +1,23 @@
 ---
 title: "DORA Compliance Cloud Architecture Checklist — download free"
-description: "A 35-point checklist for financial entities and ICT third-party providers evaluating DORA compliance posture for their cloud infrastructure. Covers Article..."
+description: "A free 35-point checklist for financial entities and ICT third-party providers evaluating the DORA compliance posture of their cloud infrastructure."
 type: "page"
 related_pages:
   - /solutions/dora-compliance
   - /resources/vmware-migration-checklist
   - /products/private-cloud-platform/
+hreflang_de: /de/ressourcen/dora-compliance-checkliste/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The DORA Compliance Cloud Architecture Checklist is a free 35-point assessment that financial entities and ICT third-party providers use to evaluate whether their cloud infrastructure meets the EU Digital Operational Resilience Act (Regulation EU 2022/2554). It maps across five sections — workload portability and exit-readiness, concentration risk, operational resilience, sovereignty and supervisory access, and third-party risk and contracting — plus Article 21 risk management and Article 23 incident reporting. Aenix uses it during DORA-aligned readiness engagements. It pairs with Ænix Private Cloud Platform, built on Cozystack (CNCF Sandbox project, Apache 2.0), which delivers customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy aligned with ICT risk classification, and tested exit-readiness.**
+  **The DORA Compliance Cloud Architecture Checklist is a free 35-point assessment that financial entities and ICT third-party providers use to evaluate whether their cloud infrastructure meets the EU Digital Operational Resilience Act (Regulation EU 2022/2554). It maps across six sections — workload portability and exit-readiness, concentration risk, operational resilience, sovereignty and supervisory access, third-party risk and contracting, and risk management and incident handling (the ICT risk-management framework of Articles 5-16 and incident classification and reporting under Articles 17-19). Aenix uses it during DORA-aligned readiness engagements. It pairs with Ænix Private Cloud Platform, built on Cozystack (CNCF Sandbox project, Apache 2.0), which delivers customer-controlled encryption keys, audit-ready logging, Tenant CRD multi-tenancy aligned with ICT risk classification, and tested exit-readiness.**
 
 quick_facts:
   - label: "What it is"
     value: "A free 35-point checklist for assessing cloud infrastructure against EU DORA (Regulation EU 2022/2554) requirements"
   - label: "Coverage"
-    value: "Six checkpoint groups across Article 21 risk management, Article 23 incident reporting, Article 28 supplier risk, encryption, and audit-readiness"
+    value: "Six checkpoint groups across the ICT risk-management framework (Articles 5-16), incident classification and reporting (Articles 17-19), resilience testing and TLPT (Articles 24-27), ICT third-party risk, exit strategies and key contractual provisions (Articles 28-30), encryption, and audit-readiness"
   - label: "Who it is for"
     value: "CISOs and cloud architects at financial entities and ICT third parties, plus compliance and procurement teams scoping DORA readiness"
   - label: "License"
@@ -30,7 +31,7 @@ faq:
   - q: "What is DORA and who must comply?"
     a: "DORA (the Digital Operational Resilience Act, Regulation EU 2022/2554) is EU legislation on ICT risk for the financial sector. It applies to financial entities such as banks, insurers, and payment firms, and to their critical ICT third-party providers, including cloud and infrastructure vendors."
   - q: "What does the checklist cover?"
-    a: "It contains 35 control checkpoints across six groups: workload portability and exit-readiness, concentration risk, operational resilience, sovereignty and supervisory access, third-party risk and contracting, and Article 21 risk management plus Article 23 incident handling."
+    a: "It contains 35 control checkpoints across six groups: workload portability and exit-readiness (5), concentration risk (4), operational resilience (5), sovereignty and supervisory access (5), third-party risk and contracting (4), and risk management plus incident handling (12). Checkpoints carry the DORA article they map to - Articles 28(8) and 30(3)(f) for exit strategies, Article 29 for concentration risk, Articles 5-16 for the ICT risk-management framework, Articles 17-19 for incident classification and reporting, and Articles 26-27 for threat-led penetration testing."
   - q: "Is the checklist free to download?"
     a: "Yes. The checklist is a free PDF lead magnet. You request it through the form on this page and receive a download link. Aenix also uses the same checklist during paid DORA-aligned readiness engagements."
   - q: "How does Ænix Platform help with DORA compliance?"
@@ -41,12 +42,12 @@ faq:
     a: "Cozystack is open source under Apache 2.0 with no per-CPU or per-core licensing, and is a CNCF Sandbox project. Aenix offers Ænix Platform, a productized commercial offering, plus services on top, with tiers from Basic at 1,250 USD per month."
 ---
 
-**A 35-point checklist for financial entities and ICT third-party providers evaluating DORA compliance posture for their cloud infrastructure. Covers Article 21 risk management, Article 23 incident reporting, Article 28 supplier risk, encryption, audit-readiness. Used by Ænix during DORA-aligned readiness engagements.**
+**A 35-point checklist for financial entities and ICT third-party providers evaluating DORA compliance posture for their cloud infrastructure. Covers the ICT risk-management framework (Articles 5-16), incident classification and reporting (Articles 17-19), resilience testing and TLPT (Articles 24-27), ICT third-party risk, exit strategies and key contractual provisions (Articles 28-30), encryption and audit-readiness. Used by Ænix during DORA-aligned readiness engagements.**
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — DORA-aligned by design (customer-controlled keys, audit-ready logging, multi-tenant Tenant CRD aligned with ICT risk classification, tested exit-readiness, supplier transparency).
 
 <div class="lead-magnet-form">
-{{< pipedrive-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" resource="dora-compliance-checklist" >}}
 <p class="lead-magnet-form__note">Download the DORA checklist (PDF)</p>
 </div>
 
@@ -54,18 +55,18 @@ faq:
 
 ## What's in the checklist
 
-5 sections covering 35 specific control checkpoints:
+6 sections covering 35 specific control checkpoints:
 
-1. **Workload portability and exit-readiness** (5 checkpoints)
-2. **Concentration risk** (4 checkpoints)
-3. **Operational resilience** (5 checkpoints)
+1. **Workload portability and exit-readiness** (5 checkpoints) — exit strategies under Articles 28(8) and 30(3)(f)
+2. **Concentration risk** (4 checkpoints) — Articles 28 and 29
+3. **Operational resilience** (5 checkpoints) — resilience testing under Articles 24-27, including threat-led penetration testing
 4. **Sovereignty and supervisory access** (5 checkpoints)
-5. **Third-party risk and contracting** (4 checkpoints)
-6. **Risk management and incident handling** (Article 21 + 23 specific) (12 checkpoints)
+5. **Third-party risk and contracting** (4 checkpoints) — Articles 28-30
+6. **Risk management and incident handling** (12 checkpoints) — the ICT risk-management framework of Articles 5-16 (Article 6 in particular) and incident classification, reporting and handling under Articles 17-19
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>35-point self-assessment</b><div class="diagram__chips"><span>Article 21 + 23</span><span>Free PDF</span></div></div>
+<div class="diagram__node"><b>35-point self-assessment</b><div class="diagram__chips"><span>Articles 5-16 + 17-19</span><span>Free PDF</span></div></div>
 <div class="diagram__conn">feeds</div>
 <div class="diagram__node diagram__node--brand"><b>DORA-aligned readiness engagement</b><div class="diagram__chips"><span>Used by Ænix</span></div></div>
 <div class="diagram__conn">prepares</div>

@@ -89,7 +89,7 @@ If you're a hyperscaler — this isn't relevant. If you're regional / vertical /
 <div class="grid-2x2">
 
 **1. Multi-tenant architecture**
-Tenant CRD with per-customer isolation. Customer-facing portal (cozyportal). Service catalog: VMs, K8s, managed databases, S3, GPU.
+Tenant CRD with per-customer isolation. Customer-facing portal (Cozystack Dashboard). Service catalog: VMs, K8s, managed databases, S3, GPU.
 
 **2. Billing integration**
 WHMCS production-ready integration (two modes). Custom billing if needed.

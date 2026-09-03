@@ -1,13 +1,13 @@
 ---
 title: "VMware Migration — VCF verlassen, ohne die Anwendung zu zerbrechen"
-description: "Post-Broadcom-VMware-Migration ist ein geplantes Projekt, kein Notfall. Gut umgesetzt produziert es eine Plattform, die Sie kontrollieren, und 30-60%..."
+description: "VMware-Migration End-to-End: Forklift für kalte und warme Transfers, VDDK- und virt-v2v-Realitäten, Kohorten-Cutover mit Parallel-Run, VCF-Decommission."
 related_pages: ["/de/alternativen/vmware-alternative", "/de/loesungen/cloud-repatriation", "/de/produkte/cozystack", "/de/produkte/public-cloud-platform/", "/de/produkte/private-cloud-platform/", "/de/dienstleistungen/platform-readiness-assessment/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /migration/vmware/
 direct_answer: |
-  **Eine VMware-Migration nach Broadcom ist ein geplantes Projekt, kein Notfall: Inventarisierung des vSphere/VCF/vCD-Bestands, Zielarchitektur, Migration in Kohorten mit Parallel-Run und VMware-Decommission. Aenix führt diese End-to-End-Migration durch und empfiehlt als Standard Cozystack, eine offene CNCF-Plattform (Apache 2.0), die VMs und Container über eine Kubernetes-API mit KubeVirt betreibt. Sie richtet sich an Hosting-Anbieter, die VMware Cloud Director verlassen, sowie an regulierte Unternehmen, die VCF ablösen. Gut umgesetzt liefert sie eine selbst kontrollierte Plattform und 30-60% Kostenreduktion bei migrierten Workloads ohne CPU- oder Core-basierte Lizenzierung.**
+  **Eine VMware-Migration nach Broadcom ist ein geplantes Projekt, kein Notfall: Inventarisierung des vSphere/VCF/vCD-Bestands, Zielarchitektur, Migration in Kohorten mit Parallel-Run und VMware-Decommission. Aenix führt diese End-to-End-Migration durch und empfiehlt als Standard Cozystack, eine offene CNCF-Plattform (Apache 2.0), die VMs und Container über eine Kubernetes-API mit KubeVirt betreibt. Den Transfer selbst erledigt Konveyor Forklift, das Kubernetes-Migrationstoolkit für Virtualisierung, das in der Aenix-Plattform enthalten ist: kalte oder warme Migration von vSphere, Netzwerk- und Storage-Zuordnung als Kubernetes-Objekte und virt-v2v-Gastkonvertierung mit VirtIO-Injektion und Entfernung der VMware Tools. Sie richtet sich an Hosting-Anbieter, die VMware Cloud Director verlassen, sowie an regulierte Unternehmen, die VCF ablösen. Gut umgesetzt liefert sie eine selbst kontrollierte Plattform und 30-60% Kostenreduktion bei migrierten Workloads ohne CPU- oder Core-basierte Lizenzierung.**
 quick_facts:
   - label: "Was es ist"
     value: "End-to-End-VMware-Migration (vSphere/VCF/vCD) auf Cozystack — Bewertung, Sequenzierung, Implementierung, Decommission"
@@ -19,6 +19,10 @@ quick_facts:
     value: "Hosting-Anbieter, die VMware Cloud Director verlassen, und regulierte Unternehmen, die VCF ablösen"
   - label: "Technologie"
     value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
+  - label: "Migrationswerkzeug"
+    value: "Konveyor Forklift ist Bestandteil der Aenix-Plattform. Warme Migration nutzt VMware Changed Block Tracking und verkürzt die Auszeit auf das letzte Delta; sie ist keine Live-Migration, ein Neustart bleibt."
+  - label: "Was Sie beistellen müssen"
+    value: "Ein VDDK-Image aus Ihrem eigenen Broadcom-Download. Es darf nicht weitergegeben werden, ist für vSAN-gestützte VMs zwingend, und ohne es ist der Transfer deutlich langsamer."
   - label: "Erwartetes Ergebnis"
     value: "30-60% Kostenreduktion bei migrierten Workloads und eine selbst kontrollierte Plattform"
   - label: "Engagement"
@@ -32,6 +36,14 @@ faq:
     a: "Bei migrierten Workloads sind 30-60% Kostenreduktion realistisch. Ein wesentlicher Faktor ist die Apache-2.0-Lizenzierung ohne CPU- oder Core-basierte Gebühren. Das genaue Delta lässt sich vorab mit dem VMware-Kostenrechner modellieren — inklusive Jahresersparnis, 3-Jahres-Netto und Amortisation."
   - q: "Welche Aenix Plattform passt zu meiner Migration?"
     a: "Die Public Cloud Platform passt zu allen, die Cloud an externe Kunden verkaufen — Hoster, die VMware Cloud Director verlassen, MSPs, Telkos, nationale Betreiber. Die Private Cloud Platform adressiert regulierte Unternehmen, die VCF für den Eigenbedarf ablösen; ihre Self-Service-Schicht ersetzt dabei die interne PaaS."
+  - q: "Welches Migrationswerkzeug ist in der Plattform enthalten?"
+    a: "Konveyor Forklift, das Kubernetes-Migrationstoolkit für Virtualisierung. Konfiguriert wird über Kubernetes-Objekte: ein Provider für die vCenter- oder ESXi-Verbindung, eine NetworkMap von Quell-Portgruppen auf Zielnetze, eine StorageMap von Datastores auf StorageClasses und ein Plan, den eine Migration ausführt. Als Quellen kommen außerdem oVirt/RHV, OpenStack, OVA-Dateien und entfernte KubeVirt-Cluster in Frage."
+  - q: "Was ist der Unterschied zwischen warmer und kalter Migration?"
+    a: "Bei der Kaltmigration wird die VM ausgeschaltet, konvertiert und dann übertragen — weil die Konvertierung zuerst läuft, scheitert eine nicht konvertierbare VM sofort statt nach Stunden des Kopierens. Bei der Warmmigration läuft die VM weiter, während die Disks inkrementell über VMware Changed Block Tracking kopiert werden, sodass im Cutover-Fenster nur das letzte Delta bewegt wird. Warm ist keine Live-Migration: Der RAM-Zustand wandert nicht mit, die VM startet neu. Voraussetzung ist Changed Block Tracking auf jeder Quell-VM und jeder Disk."
+  - q: "Brauchen wir ein VDDK-Image, und können Sie eines stellen?"
+    a: "Sie brauchen eines, und wir können es nicht stellen. Das VMware Virtual Disk Development Kit ist proprietär und darf weder von Aenix noch vom Forklift-Projekt weitergegeben werden. Sie laden es unter Ihrer eigenen Broadcom-Berechtigung herunter und bauen daraus ein Container-Image in Ihrer eigenen Registry. Für VMs auf vSAN ist es zwingend, und ohne es fällt der Disk-Transfer auf einen deutlich langsameren Pfad zurück. Das gehört auf die Pre-Flight-Checkliste, nicht mitten in die Migration."
+  - q: "Funktionieren Windows-VMs?"
+    a: "Ja. KubeVirt betreibt Windows-VMs, und virt-v2v injiziert vor dem ersten Start VirtIO-Treiber, entfernt die VMware Tools und erhält statische IP-Adressen sowie Laufwerksbuchstaben. Zwei Ausnahmen gehören in die Planung: Windows-VMs mit Measured Boot lassen sich nicht konvertieren und werden auf der Zielseite neu aufgebaut, und Windows Server 2012 sowie 2012 R2 booten nach der Konvertierung nicht, weil virtio-win keine Treiber dafür enthält."
   - q: "Was umfasst der Migrationsprozess konkret?"
     a: "Vier Schritte: Inventarisierung und Bewertung des vSphere/VCF/vCD-Bestands, Definition der Zielarchitektur (Cozystack als Standard), Migrations-Ausführung in Kohorten mit Parallel-Run und abschließendes VMware-Decommission."
   - q: "Bleibt die Plattform nach der Migration in meiner Kontrolle?"
@@ -42,7 +54,7 @@ faq:
 
 **Post-Broadcom-VMware-Migration ist ein geplantes Projekt, kein Notfall. Gut umgesetzt liefert sie eine Plattform, die Sie kontrollieren, und eine Kostenreduktion von 30-60% bei den migrierten Workloads. Schlecht umgesetzt produziert sie operative Schulden und eine stockende Migration, die zum Notfall des nächsten Jahres wird. Der Unterschied liegt in strukturiertem Assessment, ehrlicher TCO-Modellierung und Engineers, die das bereits produktiv geliefert haben.**
 
-Ænix führt End-to-End-VMware-Migrationen für Organisationen durch, die VCF verlassen. Dieselben Engineers, die [Cozystack](/products/cozystack/) gebaut haben und betreiben — die Zielplattform, die wir typischerweise empfehlen — arbeiten für Assessment, Sequenzierung und Implementierung mit Ihrem Team zusammen.
+Ænix führt End-to-End-VMware-Migrationen für Organisationen durch, die VCF verlassen. Dieselben Engineers, die [Cozystack](/de/produkte/cozystack/) gebaut haben und betreiben — die Zielplattform, die wir typischerweise empfehlen — arbeiten für Assessment, Sequenzierung und Implementierung mit Ihrem Team zusammen.
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für alle, die Cloud verkaufen — Hoster, die VMware Cloud Director verlassen (häufigstes Muster 2026), MSPs, Telkos, nationale Betreiber; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF für den Eigenbedarf ablösen. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
@@ -109,6 +121,52 @@ VMware-Decommission, sobald Kohorten abgeschlossen sind. Hardware wird wo mögli
 </div>
 
 <!-- /BLOCK 3 -->
+
+---
+
+<!-- BLOCK 3b: FORKLIFT -->
+
+## Forklift: die VM-Transfer-Engine in der Plattform
+
+Ænix liefert [Konveyor Forklift](https://github.com/kubev2v/forklift) — das Kubernetes-Migrationstoolkit für Virtualisierung — als Bestandteil der Plattform aus. Eine Kohorte von vSphere zu holen braucht damit kein separates Werkzeug, keine separate Lizenz und kein separates Projekt. Forklift ist dieselbe Open-Source-Engine, die Red Hat als Migration Toolkit for Virtualization vertreibt; darunter arbeiten `virt-v2v` und KubeVirt CDI, und konfiguriert wird über Kubernetes-Objekte statt über eine reine GUI.
+
+**Wie es konfiguriert wird.** Vier Objekttypen decken eine Migration ab:
+
+- `Provider` — die Verbindung zu vCenter (oder direkt zu ESXi) und zum Zielcluster.
+- `NetworkMap` — jede Quell-Portgruppe wird auf ein Zielnetz abgebildet: das Pod-Netz, ein bestimmter Multus-Anschluss oder `ignored`. Der `networkIPMode` pro Netz entscheidet, ob eine statische Adresse erhalten bleibt, durch DHCP ersetzt oder unverändert gelassen wird.
+- `StorageMap` — jeder Quell-Datastore wird auf eine StorageClass abgebildet, mit Volume Mode (`Block` oder `Filesystem`) und Access Mode je Zuordnung.
+- `Plan` und `Migration` — ein Plan ist eine Menge von VMs mit gleichen Parametern und Zuordnungen, eine Migration führt ihn aus. Pro Plan läuft jeweils eine Migration, und der Power-State jeder Quell-VM bleibt über den Umzug hinweg erhalten.
+
+**Kalt und warm.** Beides wird von vSphere aus unterstützt, und der Unterschied ist planungsrelevant:
+
+- **Kalt** — die Quell-VM wird ausgeschaltet, konvertiert und dann übertragen. Weil die Konvertierung vor dem Datentransfer läuft, scheitert eine nicht konvertierbare VM sofort statt nach Stunden des Kopierens. Das ist der Standard und die richtige Wahl für alles mit Wartungsfenster.
+- **Warm** — die VM läuft weiter, während ihre Disks inkrementell über VMware Changed Block Tracking (CBT) kopiert werden, standardmäßig mit stündlichen Snapshots. Beim Cutover wird die VM heruntergefahren und nur das verbleibende Delta übertragen. **Warme Migration ist keine Live-Migration**: Der RAM-Zustand wird nicht mitgenommen, es gibt also weiterhin einen Neustart. Sie verkürzt die Auszeit von „Dauer einer vollständigen Disk-Kopie" auf „Dauer des letzten Deltas" — worauf es bei einer großen Datenbank-VM ankommt.
+- Warm setzt **CBT auf jeder Quell-VM und jeder ihrer Disks** vor Beginn voraus, und eine VM verträgt maximal 28 CBT-Snapshots. Windows-Gäste brauchen zusätzlich installierte VMware Tools mit Volume Shadow Copy Service und dem VMware Snapshot Provider auf Manuell oder Automatisch, sonst scheitert der Snapshot-Schritt.
+
+**Was virt-v2v am Gastsystem macht.** VirtIO-Treiber werden injiziert, VMware Tools und VMware-spezifische NIC-Konfiguration werden entfernt, die Boot-Konfiguration wird angepasst, und der QEMU Guest Agent wird installiert. Statische IP-Adressen aus vSphere bleiben erhalten, Windows-Laufwerksbuchstaben ebenfalls. Das ist die automatisierte Fassung jener manuellen Nacharbeit, die handgestrickte VMware-Migrationen mühsam macht.
+
+**VDDK — und das Lizenzproblem, das Sie erben.** Das VMware Virtual Disk Development Kit ist der schnelle Lesepfad für Disks und praktisch nicht optional:
+
+- Ohne VDDK fällt der Transfer auf einen deutlich langsameren Pfad zurück.
+- Bei VMs auf **vSAN ist VDDK zwingend** — solche Migrationen funktionieren ohne es nicht.
+- Das VDDK darf nicht weitergegeben werden. Weder Ænix noch das Forklift-Projekt dürfen es ausliefern. Sie laden es unter Ihrer eigenen Broadcom-Berechtigung herunter, bauen daraus ein Container-Image und legen dieses in Ihrer eigenen Registry ab. Es in einer öffentlichen Registry zu speichern, kann die VMware-Lizenzbedingungen verletzen. Die Plattform nimmt die Image-Referenz als Konfiguration entgegen; das Bereitstellen ist Ihr Schritt und steht genau deshalb auf der Pre-Flight-Checkliste.
+
+**Andere Quellen als vSphere.** Dieselbe Engine deckt oVirt/RHV, OpenStack, OVA-Dateien und entfernte KubeVirt-Cluster als Kaltmigration ab; warme Migration gibt es nur von vSphere und RHV. Unterstützt wird vSphere ab Version 6.5.
+
+**Was Forklift nicht leistet.** Diese Punkte sind real und gehören ins Assessment, nicht in den Cutover:
+
+- Windows-VMs mit **Measured Boot** lassen sich nicht migrieren — sie werden auf der Zielseite neu aufgebaut. Bei Secure-Boot-VMs muss Secure Boot auf der Zielseite unter Umständen deaktiviert werden.
+- **Windows Server 2012 und 2012 R2** booten nach der Konvertierung nicht; `virtio-win` enthält keine Treiber dafür und es gibt derzeit keinen Workaround. Planen Sie diese als Neuaufbau oder lassen Sie sie stehen, bis das Gast-Betriebssystem aktualisiert ist.
+- VMs im Ruhezustand werden nicht unterstützt; der Ruhezustand wird zuvor auf der Quelle deaktiviert.
+- ISOs und CD-ROMs müssen ausgehängt sein, jede NIC braucht eine Adresse, und VM-Namen müssen DNS-konform und eindeutig sein.
+- Hersteller-Appliances, die als OVA ausgeliefert werden, fallen nach der Konvertierung womöglich aus den Supportbedingungen des Herstellers. Das klärt man vorher, nicht hinterher.
+- Gast-Betriebssysteme, die `virt-v2v` nicht unterstützt, lassen sich im Raw-Copy-Modus bewegen — sie landen dann aber auf emulierten Geräten statt VirtIO und booten oder laufen möglicherweise schlechter. Das ist ein Rückfallweg, kein Plan.
+
+Forklift deckt die Disk- und Gast-Ebene ab. Es entscheidet nicht über Ihr Mandantenmodell, Ihren Adressplan oder Ihre Cutover-Reihenfolge — dafür sind Assessment und Kohortenfolge da.
+
+**Zum Upstream-Stand, klar gesagt:** Forklift ist heute Bestandteil der Ænix-Plattform. Die Arbeit, es im Open-Source-Cozystack als Self-Service-VM-Import für Mandanten verfügbar zu machen, befindet sich im Review und steckt noch in keiner veröffentlichten Cozystack-Version. Wer Cozystack selbst betreibt statt der Ænix-Plattform, stellt Forklift derzeit daneben bereit.
+
+<!-- /BLOCK 3b -->
 
 ---
 

@@ -8,6 +8,7 @@ related_pages:
   - /services/platform-readiness-assessment
   - /products/public-cloud-platform/
   - /products/private-cloud-platform/
+hreflang_de: /de/ressourcen/vmware-migrations-checkliste/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -48,7 +49,7 @@ faq:
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** for hosting providers exiting VMware Cloud Director; **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises exiting VCF.
 
 <div class="lead-magnet-form">
-{{< pipedrive-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" resource="vmware-migration-checklist" >}}
 <p class="lead-magnet-form__note">Download the checklist (PDF)</p>
 </div>
 

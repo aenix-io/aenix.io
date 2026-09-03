@@ -15,7 +15,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Technologie-Stack"
-    value: "KubeVirt für VMs und Container, Cilium (eBPF) Networking, LINSTOR/DRBD oder Rook-Ceph Storage, Tenant-CRD-Mandantenfähigkeit"
+    value: "KubeVirt für VMs und Container, Cilium (eBPF) Networking, LINSTOR/DRBD oder SeaweedFS Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Zielgruppe"
     value: "Hosting-Anbieter (vCloud-Director-Ausstieg), regulierte Unternehmen und Banken (VCF-Ausstieg), große Cloud-Betreiber"
   - label: "Regulatorik"
@@ -26,7 +26,7 @@ faq:
   - q: "Ist Cozystack ein vollwertiger Ersatz für VMware oder nur für einfache Workloads?"
     a: "Cozystack ist als produktionsreifer Ersatz konzipiert, nicht als Downgrade. Es betreibt vollständige KVM-basierte VMs über KubeVirt mit Live-Migration, Block-Storage und Snapshots, dazu Container, verwaltete Datenbanken, S3-Object-Storage und GPU-Workloads unter einer Kubernetes-nativen Steuerungsebene."
   - q: "Was ersetzt die einzelnen VMware-Komponenten in Cozystack?"
-    a: "vSphere/ESXi wird zu KubeVirt auf Talos, vCenter zur Cozystack Control Plane, vSAN zu LINSTOR oder Rook-Ceph, NSX zu Cilium (eBPF), vCloud Director zu Tenant CRD plus cozyportal, und Site Recovery Manager zu Velero, S3 und PostgreSQL PITR."
+    a: "vSphere/ESXi wird zu KubeVirt auf Talos, vCenter zur Cozystack Control Plane, vSAN zu LINSTOR oder SeaweedFS, NSX zu Cilium (eBPF), vCloud Director zu Tenant CRD plus Cozystack Dashboard, und Site Recovery Manager zu Velero, S3 und PostgreSQL PITR."
   - q: "Wie funktioniert die Lizenzierung im Vergleich zu Broadcom/VMware?"
     a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung und ohne verpflichtende VCF-Bündelung. Es gibt keine Subscription-only-Falle und keine 2-5× Verlängerungssprünge. Aenix bietet kommerzielle Support- und Betriebsstufen für die produktisierte Ænix Platform an."
   - q: "Hilft Cozystack bei DORA- und NIS2-Anforderungen?"
@@ -86,7 +86,7 @@ KubeVirt und der Kubernetes-native Virtualisierungsstack haben eine Community vo
 
 - **Virtual Machines** über KubeVirt — vollständige KVM-basierte VMs mit Live-Migration, Block-Storage, Snapshots
 - **Tenant-Kubernetes-Cluster** — jeder Mandant erhält sein eigenes K8s
-- **Verwaltete Datenbanken** — PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse
+- **Verwaltete Datenbanken** — PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse
 - **S3-kompatibler Object Storage**
 - **GPU as a Service** — A100, H100, H200, L40S, Blackwell validiert
 - **Multi-Mandanten-Steuerungsebene** mit Tenant CRD
@@ -104,9 +104,9 @@ KubeVirt und der Kubernetes-native Virtualisierungsstack haben eine Community vo
 |---|---|
 | vSphere / ESXi | KubeVirt auf Talos |
 | vCenter | Cozystack Control Plane |
-| vSAN | LINSTOR oder Rook-Ceph |
+| vSAN | LINSTOR oder SeaweedFS |
 | NSX | Cilium (eBPF) |
-| vCloud Director | Tenant CRD + cozyportal |
+| vCloud Director | Tenant CRD + Cozystack Dashboard |
 | Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
 | VMware Cloud Foundation | Cozystack |
 

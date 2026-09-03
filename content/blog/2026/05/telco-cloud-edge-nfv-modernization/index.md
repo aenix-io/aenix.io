@@ -210,8 +210,8 @@ The AI workload patterns at tier-1 telcos:
   customers (banking AI, healthcare AI, public-sector AI)
 
 Sustained-utilisation workload profiles dominate; this is exactly the
-case where dedicated GPU economics beat hyperscaler. Cozystack AI/ML
-Edition fits.
+case where dedicated GPU economics beat hyperscaler. The Ænix AI
+Platform fits.
 
 ## Phasing a tier-1 telco modernization
 
@@ -260,8 +260,8 @@ Strong fit:
 
 Marginal fit:
 
-- Smaller operators (regional, MVNO-style) — may fit Enterprise
-  Edition rather than full Public Cloud Platform
+- Smaller operators (regional, MVNO-style) — may fit the Ænix Private
+  Cloud Platform rather than the full Public Cloud Platform
 - Operators with deep OpenStack-based NFV investment that still
   works — modernization can wait for vendor lifecycle to force it
 
@@ -269,7 +269,7 @@ Marginal fit:
 
 - **[Telco industry page](/industries/telco/)** — commercial landing
 - **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
-  the typical edition for tier-1 telco engagements
+  the typical product for tier-1 telco engagements
 - **[Sovereign cloud builder services](/services/sovereign-cloud-builder/)** —
   for sovereign cloud product line builds
 - **[Sovereign AI services](/solutions/sovereign-ai/)** — for AI

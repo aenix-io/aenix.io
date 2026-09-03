@@ -34,12 +34,12 @@ quiz:
         - { text: "Compute orchestration for tenant VMs", correct: false }
         - { text: "Cross-site storage replication layer", correct: false }
       explanation: "WHMCS integration: billing flows through MSP's existing customer-management system. The MSP doesn't need to bolt on a new billing platform — the cloud product slots into the system the MSP already runs."
-    - q: "What customization can MSPs do to the cozyportal?"
+    - q: "What customization can MSPs do to the Cozystack Dashboard?"
       options:
         - { text: "No branding customisation supported", correct: false }
         - { text: "Brand, domain, and service catalog", correct: true }
         - { text: "Only the header logo image swap", correct: false }
-      explanation: "Branded cozyportal: MSP can customize colors, logo, domain, and service catalog options. MSPs can also curate which services to expose to customers (e.g., hide Kafka if MSP doesn't support it)."
+      explanation: "Branded Cozystack Dashboard: MSP can customize colors, logo, domain, and service catalog options. MSPs can also curate which services to expose to customers (e.g., hide Kafka if MSP doesn't support it)."
 ---
 
 Companion to **[white label cloud services page](/services/white-label-cloud)**.
@@ -53,7 +53,7 @@ Pattern in 2026: MSP gets branded multi-tenant cloud product on open-source plat
 ## Architecture
 
 - **Multi-tier Tenant CRD** — Ænix tenant → MSP tenant → MSP customer tenant. Per-tier isolation.
-- **Branded cozyportal** — MSP can customize colors, logo, domain, service catalog options
+- **Branded Cozystack Dashboard** — MSP can customize colors, logo, domain, service catalog options
 - **WHMCS integration** — billing flows through MSP's existing customer-management system
 - **Service catalog** — MSP can curate which services to expose to customers (e.g., hide Kafka if MSP doesn't support it)
 - **SLA management** — per-customer SLA tracking through Cozystack observability

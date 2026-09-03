@@ -211,8 +211,7 @@ Zur vollständigen Engagement-Methodik siehe **[Platform Readiness Assessment](/
 Wir haben DORA-konforme Readiness-Engagements für Banken, Versicherer, Telekommunikationsbetreiber und ICT-Drittdienstleister in der gesamten EU und der DACH-Region durchgeführt. Gegenseitige NDA zum Auftakt; benannte Fallstudien auf Anfrage im Discovery-Call, sofern die Kundengenehmigungen dies erlauben.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 <!-- /BLOCK 8 -->
 
 ---

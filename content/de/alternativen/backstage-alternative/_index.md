@@ -102,10 +102,10 @@ Wenn keiner dieser Punkte zutrifft und Backstage für Sie funktioniert — bleib
 Cozystack ist **keine** Alternative zu Backstage — es ist die Plattform darunter.
 
 - **Sie können Backstage auf Cozystack betreiben** — Backstage als Tenant-Kubernetes-Workload, wobei Cozystack die zugrunde liegenden Fähigkeiten bereitstellt, auf die Backstage verweist.
-- **Oder cozyportal statt Backstage betreiben** — cozyportal ist das Cozystack-native Portal, einfacher und enger mit der Plattform verzahnt; mit weniger Plugin-Ökosystem.
+- **Oder Cozystack Dashboard statt Backstage betreiben** — Cozystack Dashboard ist das Cozystack-native Portal, einfacher und enger mit der Plattform verzahnt; mit weniger Plugin-Ökosystem.
 - **Oder gar kein Portal betreiben** — viele Cozystack-Bereitstellungen haben kein separates Portal; die IaC- + GitOps-Oberfläche reicht aus.
 
-Die Plattform-Entscheidung (Cozystack vs OpenShift vs Vanilla-Kubernetes) ist unabhängig von der Portal-Entscheidung (Backstage vs cozyportal vs Port vs keins).
+Die Plattform-Entscheidung (Cozystack vs OpenShift vs Vanilla-Kubernetes) ist unabhängig von der Portal-Entscheidung (Backstage vs Cozystack Dashboard vs Port vs keins).
 
 ---
 

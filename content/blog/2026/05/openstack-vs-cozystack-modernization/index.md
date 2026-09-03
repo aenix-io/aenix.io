@@ -15,8 +15,8 @@ quiz:
         - { text: "KubeVirt (Cozystack compute, VM-on-Kubernetes path)", correct: false }
         - { text: "Cilium (eBPF datapath, replaces Neutron networking)", correct: true }
         - { text: "LINSTOR (block storage operator, Cinder-equivalent)", correct: false }
-        - { text: "cozyportal (self-service tenant UI, Horizon-equivalent)", correct: false }
-      explanation: "In the OpenStack→Cozystack translation table: Nova→KubeVirt, Neutron→Cilium, Cinder→LINSTOR (or Ceph), Swift→SeaweedFS, Keystone→K8s RBAC + IdP, Glance→KubeVirt CDI image registry, Magnum→native (K8s is the platform), Heat→K8s operators + GitOps, Horizon→cozyportal."
+        - { text: "Cozystack Dashboard (self-service tenant UI, Horizon-equivalent)", correct: false }
+      explanation: "In the OpenStack→Cozystack translation table: Nova→KubeVirt, Neutron→Cilium, Cinder→LINSTOR (DRBD-replicated block), Swift→SeaweedFS, Keystone→K8s RBAC + IdP, Glance→KubeVirt CDI image registry, Magnum→native (K8s is the platform), Heat→K8s operators + GitOps, Horizon→Cozystack Dashboard."
     - q: "Why does the article say OpenStack engineer expertise is shrinking?"
       options:
         - { text: "New engineers train on Kubernetes, not OpenStack", correct: true }
@@ -86,13 +86,13 @@ Some helpful translations:
 |---|---|
 | Nova | KubeVirt |
 | Neutron | Cilium |
-| Cinder | LINSTOR (or Ceph) |
+| Cinder | LINSTOR (DRBD-replicated block) |
 | Swift | SeaweedFS (S3-compatible) |
 | Keystone | Kubernetes RBAC + workforce-IdP integration |
 | Glance | KubeVirt CDI image registry |
 | Magnum | Native — Kubernetes is the platform |
 | Heat | Kubernetes operators + GitOps |
-| Horizon | cozyportal |
+| Horizon | Cozystack Dashboard |
 | Ceilometer | VictoriaMetrics + VictoriaLogs |
 | Trove | Cozystack managed databases |
 | Designate | External-DNS operator |

@@ -70,8 +70,8 @@ Proxmox VE remains the right answer for:
 - **Existing operators with deep Proxmox expertise and stable team** —
   switching cost includes team retraining
 
-If your situation matches these, *don't migrate*. Cozystack ISP
-Edition is over-engineered for SMB single-tenant operation. We say
+If your situation matches these, *don't migrate*. The Ænix Public Cloud
+Platform is over-engineered for SMB single-tenant operation. We say
 this in discovery calls rather than push the engagement.
 
 ## When Proxmox is being outgrown
@@ -88,7 +88,7 @@ become operational pain.
 
 ### 2. Customers asking for services beyond VMs
 
-Managed PostgreSQL, MySQL, Redis, Kafka, S3-compatible object
+Managed PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, S3-compatible object
 storage, tenant Kubernetes clusters, GPU services. Proxmox's scope is
 VMs + LXC; everything else is bolted on with manual integration or
 external systems.
@@ -115,8 +115,8 @@ right operational model for tenant-facing Kubernetes-as-a-service.
 
 Proxmox's commercial subscription is competitive but real cost.
 Operators with growing infrastructure footprint sometimes find the
-total subscription cost approaching what Ænix charges for ISP
-Edition support — at which point the service-catalog and operational
+total subscription cost approaching what Ænix charges for Public Cloud
+Platform support — at which point the service-catalog and operational
 upside of Cozystack tips the decision.
 
 ## Architectural mapping: Proxmox → Cozystack
@@ -125,10 +125,10 @@ upside of Cozystack tips the decision.
 |---|---|
 | **KVM hypervisor** | KubeVirt (KVM-based) |
 | **LXC containers** | Native Kubernetes containers (different model — LXC system-style vs Kubernetes application-style) |
-| **ZFS storage** | LINSTOR (DRBD) or Ceph |
-| **Ceph (Proxmox-managed)** | Ceph (Rook-managed) or LINSTOR |
+| **ZFS storage** | LINSTOR (DRBD) |
+| **Ceph (Proxmox-managed)** | LINSTOR (DRBD); Cozystack does not ship Ceph |
 | **Linux SDN / bridges** | Cilium (eBPF) |
-| **Proxmox web UI** | cozyportal |
+| **Proxmox web UI** | Cozystack Dashboard |
 | **Proxmox Backup Server (PBS)** | Velero + S3-compatible target + per-app PITR |
 | **PVE-Storage replication** | LINSTOR DRBD replication |
 | **Proxmox API / pvecli** | Kubernetes API |
@@ -168,7 +168,7 @@ Output: go/no-go decision with quantified justification.
 Cozystack platform deployed on new hardware or repurposed Proxmox
 hardware (commodity x86 servers move easily). Cilium networking
 configured. LINSTOR storage operationalised. Identity integration
-(typically Keycloak + customer IdP). cozyportal brand customisation
+(typically Keycloak + customer IdP). Cozystack Dashboard brand customisation
 matching the operator's existing brand.
 
 WHMCS integration validated end-to-end. Service catalog populated
@@ -184,7 +184,7 @@ Pattern per customer:
    format
 2. Network configuration translated (Proxmox bridges → Cilium
    ClusterPool + NetworkPolicies)
-3. Storage migrated (ZFS / Ceph volumes → LINSTOR or Ceph in
+3. Storage migrated (ZFS / Ceph volumes → LINSTOR in
    Cozystack)
 4. Customer-side validation window (7-14 days)
 5. DNS / load balancer cutover
@@ -238,7 +238,7 @@ Phase 0.
 ### 2. Customer-facing API divergence
 
 Some customers built tooling against the Proxmox API. Cozystack
-exposes Kubernetes API + cozyportal API; the contracts differ.
+exposes Kubernetes API + Cozystack Dashboard API; the contracts differ.
 Customer-facing migration support (documentation, sometimes API
 compatibility shim) is engagement work.
 

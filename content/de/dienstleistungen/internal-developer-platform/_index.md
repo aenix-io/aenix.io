@@ -207,8 +207,7 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 Wir haben Internal Developer Platforms gebaut für Service-Anbieter, die mandantenfähige Clouds betreiben, regulierte Unternehmen mit starken Souveränitätsanforderungen, KI/GPU-Operatoren mit Multi-Team-Data-Science-Zugang und Telekom-Operatoren, die mehrere Legacy-Umgebungen konsolidieren.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 <!-- /BLOCK 8 -->
 
 ---

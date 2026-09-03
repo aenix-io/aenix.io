@@ -223,7 +223,7 @@ chaos. Adoption stalls.
 
 Fix: Backstage as the user-facing layer after the platform
 substrate is real. Ænix's Developer Self-Service can be paired with Backstage
-where the customer prefers; cozyportal also works.
+where the customer prefers; Cozystack Dashboard also works.
 
 ### 3. Fragmentation without governance
 

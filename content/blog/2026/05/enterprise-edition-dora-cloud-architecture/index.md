@@ -256,8 +256,8 @@ Marginal fit:
 
 Poor fit:
 
-- Organisations without regulatory pressure. Use a different edition
-  (Developer Self-Service or Pure Cozystack Support) — Private Cloud Platform's
+- Organisations without regulatory pressure. Use a different product
+  (Developer Self-Service or Cozystack Enterprise Support) — Private Cloud Platform's
   compliance overhead doesn't pay back without the regulator driver.
 
 ## Engagement structure
@@ -266,8 +266,8 @@ Poor fit:
 - **Platform Readiness Assessment** (14- or 28-day, DORA / NIS2
   workstream emphasised) — control-level gap analysis against current
   architecture
-- **Pilot** (3-6 months) — defined slice migrated to Enterprise
-  Edition, supervisor evidence catalogue partially built
+- **Pilot** (3-6 months) — defined slice migrated to the Ænix Private
+  Cloud Platform, supervisor evidence catalogue partially built
 - **Full Private Cloud Platform build** (12-30 months) — production-grade
   multi-DC deployment with full compliance documentation
 - **Managed retainer** (ongoing) — advisory, runbooks, GitOps PR
@@ -280,7 +280,7 @@ regulated enterprises with narrower scope.
 ## Where to dig deeper
 
 - **[Private Cloud Platform landing](/products/private-cloud-platform/)** —
-  feature list, edition-specific FAQ, customer evidence
+  feature list, product-specific FAQ, customer evidence
 - **[DORA compliance services](/solutions/dora-compliance/)** —
   DORA-aligned engagement details
 - **[NIS2 compliance services](/solutions/nis2-compliance/)** —

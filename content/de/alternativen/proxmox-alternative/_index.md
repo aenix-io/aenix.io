@@ -80,13 +80,13 @@ Wenn Ihre Bereitstellung Single-Tenant, überwiegend VM-basiert und unter ~50 Ho
 | Fähigkeit | Proxmox VE | Cozystack |
 |---|---|---|
 | **Compute** | KVM/LXC | KubeVirt (KVM) + Kubernetes-Container |
-| **Storage** | ZFS, Ceph (Community), Shared Storage | LINSTOR (DRBD) oder Rook-Ceph |
+| **Storage** | ZFS, Ceph (Community), Shared Storage | LINSTOR (DRBD) oder SeaweedFS |
 | **Netzwerk** | Linux-Bridge, SDN | Cilium (eBPF) |
 | **Multi-Tenancy** | Namespace + Berechtigungen | Tenant CRD, verschachtelte Tenants, scoped Audit |
-| **Managed Databases** | Manuelle Installation oder Community-LXC-Templates | First-Class: PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ |
+| **Managed Databases** | Manuelle Installation oder Community-LXC-Templates | First-Class: PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ |
 | **Objektspeicher** | Manuelle Installation | First-Class S3-kompatibel |
 | **GPU** | Passthrough | NVIDIA vGPU + MIG + Time-Slicing |
-| **Self-Service-Portal** | Web-UI für VM-Operationen | cozyportal — vollständiger Multi-Tenant-Katalog |
+| **Self-Service-Portal** | Web-UI für VM-Operationen | Cozystack Dashboard — vollständiger Multi-Tenant-Katalog |
 | **Backup/DR** | PBS (Proxmox Backup Server) | Velero + PITR pro App |
 | **Lizenz** | AGPLv3 (Open Source) | Apache 2.0 (Open Source, permissiver) |
 | **Am besten für** | SMB-Virtualisierung, Labore | Multi-Tenant-Cloud, Service-Provider, reguliertes Enterprise |

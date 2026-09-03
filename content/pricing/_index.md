@@ -5,7 +5,7 @@ hero_subtitle: "Published price list for providers from $1,250/month; enterprise
 language: "en"
 ---
 
-**Cozystack is free (Apache 2.0). Ænix Platform — our turnkey commercial cloud-in-a-box — is priced two ways. Hosting providers, MSPs and product teams buy from a published price list: support tiers per 10 physical nodes, from $1,250 / month. Enterprise, Public Cloud, IDP and AI/ML programmes are scoped and quoted per RFP — the number depends on estate size, regulatory scope, migration volume and operating model, and any figure printed on a web page would be wrong for your case.**
+**Cozystack is free (Apache 2.0). Ænix Platform — our turnkey commercial cloud-in-a-box — is priced two ways. Hosting providers, MSPs and product teams buy from a published price list: support tiers per 10 physical nodes, from $1,250 / month. Private Cloud and AI Platform programmes, and multi-region operator builds, are scoped and quoted per RFP — the number depends on estate size, regulatory scope, migration volume and operating model, and any figure printed on a web page would be wrong for your case.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -18,22 +18,22 @@ language: "en"
 
 Ænix Platform pricing has two dimensions:
 
-- **Plattform** — which feature bundle you buy. Determined by your buyer profile (hosting provider, regulated enterprise, public-cloud operator, product engineering team, or AI-heavy organization).
+- **platform** — which feature bundle you buy. Determined by your buyer profile (hosting provider, regulated enterprise, public-cloud operator, product engineering team, or AI-heavy organization).
 - **Support tier** — how Ænix supports you. Four tiers from Basic ($1,250/mo per 10 nodes) to Enterprise (per RFP).
 
 Plus engagement add-ons (Platform Readiness Assessment, Pilot, Full Build, Managed Operations) scoped separately.
 
-**Which side you land on:** Public Cloud Platform and Pure Cozystack with Ænix Support are productized — the price list below is the price. Public Cloud, Enterprise, IDP and AI Platforms are programmes, not SKUs: they always include an assessment, a migration plan and an operating model, so they are quoted per RFP after scoping.
+**Which side you land on:** Ænix Public Cloud Platform at provider scale, and Cozystack with Ænix enterprise support, are productized — the price list below is the price. Private Cloud Platform, AI Platform and multi-region operator builds are programmes, not SKUs: they always include an assessment, a migration plan and an operating model, so they are quoted per RFP after scoping.
 
 ---
 
-## Step 1 — Pick an Plattform
+## Step 1 — Pick a platform
 
 {{< design-note >}}
 Render as 5-card grid (or carousel on mobile). Each card: edition icon, name, audience one-liner, "Explore →" link to dedicated edition page.
 {{< /design-note >}}
 
-| Plattform | For | How it is priced |
+| Platform | For | How it is priced |
 |---|---|---|
 | **Public Cloud Platform** | Hosting providers, MSPs, regional clouds and data centres selling cloud to customers | Productized — published price list, from $1,250 / month per 10 nodes |
 | **Public Cloud Platform, operator scale** | Telcos, national operators, banks and large public clouds running a commercial cloud | Multi-year programme, quoted per RFP |
@@ -46,7 +46,7 @@ Two modules extend either edition and are scoped with the engagement:
 | **AI Platform** | Multi-tenant GPU scheduling, fractioning and MIG, model serving, vector databases, GPU sizing |
 | **Developer Self-Service** | Golden paths, GitLab and Argo CD automation, self-service APIs and environment wizards |
 
-Plus an **entry tier** — **Pure Cozystack with Ænix Support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
+Plus an **entry tier** — **Cozystack with Ænix enterprise support** — for product teams running Cozystack on their own / leased servers (Hetzner, OVH, regional bare-metal) without the commercial portal/billing layer.
 
 [Explore all editions →](/products/)
 
@@ -54,7 +54,7 @@ Plus an **entry tier** — **Pure Cozystack with Ænix Support** — for product
 
 ## Step 2 — Pick a Support Tier {#support}
 
-This is the published price list, and it is the whole of it: it applies to Public Cloud Platform and to Pure Cozystack with Ænix Support. Pricing is per 10 physical nodes / month, in USD; annual contracts take 20% off. Toggle annual and monthly, and scroll the table for the full feature-by-feature comparison — SLA, enterprise features, PoC, training, security, consulting, procurement terms and team engagement.
+This is the published price list, and it is the whole of it: it applies to Public Cloud Platform and to Cozystack with Ænix enterprise support. Pricing is per 10 physical nodes / month, in USD; annual contracts take 20% off. Toggle annual and monthly, and scroll the table for the full feature-by-feature comparison — SLA, enterprise features, PoC, training, security, consulting, procurement terms and team engagement.
 
 {{< pricing-table >}}
 
@@ -76,7 +76,7 @@ Notes on the table: incidents related to installation support do not count towar
 
 ### Full platform build
 
-9-18 months for Public Cloud / Enterprise / IDP / AI/ML deployments. Weeks-to-live for Public Cloud Platform with productized installer. Quoted per RFP; the drivers are estate size, migration volume, regulatory scope and how much of the operating model you want us to run.
+9-18 months for a multi-region operator build or a regulated multi-DC private cloud. Weeks to live for Ænix Public Cloud Platform at provider scale, via the productized installer. Quoted per RFP; the drivers are estate size, migration volume, regulatory scope and how much of the operating model you want us to run.
 
 ### Managed operations
 
@@ -125,9 +125,9 @@ Up to **40% margin** on Ænix Platform sales for resellers, integrators, and dis
 
 Yes. Cozystack is open-source under Apache 2.0. No per-CPU, per-VM, or per-core licensing. Anyone can run it. Ænix is the original maintainer.
 
-### How does Plattform × Support Tier pricing work?
+### How does Platform × Support Tier pricing work?
 
-Plattform determines the feature bundle (which Ænix Platform you buy — ISP, Enterprise, etc.). Support Tier determines the level of Ænix support (Basic, Standard, Plus, Enterprise). Both apply to your engagement. Discovery call clarifies the right combination for your scope.
+The platform determines which surfaces are switched on (Public Cloud, Private Cloud or AI). The support tier determines the level of Ænix support (Basic, Standard, Plus, Enterprise), and is chosen independently. Both apply to your engagement. Discovery call clarifies the right combination for your scope.
 
 ### What's the cheapest way to start with Ænix Platform?
 
@@ -143,7 +143,7 @@ Custom-scoped tier for large-scale platforms — multi-DC, named TAM, full enter
 
 ### Can I buy Cozystack support without a full Ænix Platform engagement?
 
-Yes — that's the **Pure Cozystack with Ænix Support** entry tier. Subscription support for organizations running Cozystack on their own infrastructure (e.g., Hetzner) without the commercial portal/billing layer. [Discovery call](/contact/) to scope.
+Yes — that's the **Cozystack with Ænix enterprise support** entry tier. Subscription support for organizations running Cozystack on their own infrastructure (e.g., Hetzner) without the commercial portal/billing layer. [Discovery call](/contact/) to scope.
 
 ### How does pricing work for the Kubernetes Deep Dive Course?
 

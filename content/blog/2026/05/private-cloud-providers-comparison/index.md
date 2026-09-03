@@ -21,7 +21,7 @@ quiz:
         - { text: "Apache CloudStack (mature OSS, service-provider origin)", correct: false }
         - { text: "Cozystack (CNCF Sandbox, KubeVirt-native cloud platform)", correct: true }
         - { text: "Proxmox VE (Debian-based, KVM + LXC virtualization)", correct: false }
-      explanation: "Cozystack — Apache 2.0, CNCF Project, KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. Strengths: single platform for VMs+containers+databases+S3+GPU, structural multi-tenancy. Limits: newer than OpenStack; smaller community than Kubernetes-only stacks."
+      explanation: "Cozystack — Apache 2.0, CNCF Project, KubeVirt + Cilium + Kube-OVN + LINSTOR (DRBD) + Tenant CRD + Cozystack Dashboard. Strengths: single platform for VMs+containers+databases+S3+GPU, structural multi-tenancy. Limits: newer than OpenStack; smaller community than Kubernetes-only stacks."
     - q: "What pricing trajectory does the article observe for VMware VCF after the Broadcom acquisition?"
       options:
         - { text: "10-20% increases (mild inflation, modest re-pricing)", correct: false }
@@ -61,7 +61,7 @@ Both are valid; they answer different questions. This article focuses primarily 
 
 ### Cozystack
 **License:** Apache 2.0, CNCF Project.
-**Architecture:** Kubernetes-native virtualization (KubeVirt) + Cilium networking + LINSTOR/Ceph storage + Tenant CRD multi-tenancy + cozyportal self-service.
+**Architecture:** Kubernetes-native virtualization (KubeVirt) + Cilium and Kube-OVN networking + LINSTOR (DRBD) block storage + SeaweedFS object storage + Tenant CRD multi-tenancy + Cozystack Dashboard self-service.
 **Maintainer:** Ænix (open-source, community-governed).
 **Best for:** Service providers, sovereign-cloud builders, regulated multi-tenant, AI/GPU operators with sustained workloads.
 **Strengths:** Single platform for VMs + containers + databases + S3 + GPU. Multi-tenancy structural. Light operational footprint relative to OpenStack. Open-source, no vendor lock-in.

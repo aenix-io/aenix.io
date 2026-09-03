@@ -261,10 +261,8 @@ Folgt ein Phase-2-Engagement, werden die Assessment-Kosten gegen das Implementat
 Wir haben Platform-Readiness-Assessments für Service Provider, regionale Cloud-Provider, Financial-Services-Organisationen, Telekom-Betreiber und Souveräne-Cloud-Initiativen in der EU und Zentralasien durchgeführt. Fünf bis zwanzig Assessments pro Jahr.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 {{< quote-carousel >}}
-> *— {{NAME_2}}, {{TITLE_2}}*
 
 Für benannte Case Studies siehe **[Customer Stories](/de/case-studies/)** — fordern Sie die geschützten Versionen im Discovery-Call an, wo anwendbar.
 

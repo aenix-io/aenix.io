@@ -22,11 +22,11 @@ With the release of v1.0.0, Cozystack is undergoing a fundamental architectural 
 
 > **What is Cozystack**
 
-> Cozystack is a comprehensive open-source platform for building bare-metal clouds to quickly deploy managed Kubernetes, database-as-a-service (DBaaS), application-as-a-service (AaaS), and virtual machines based on KubeVirt. With it, you can deploy Kafka, FerretDB, PostgreSQL, Cilium, Grafana, Victoria Metrics, and other services with a single click. It also handles GPU workloads in both virtual machines and K8s clusters. Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license.
+> Cozystack is a comprehensive open-source platform for building bare-metal clouds to quickly deploy managed Kubernetes, database-as-a-service (DBaaS), application-as-a-service (AaaS), and virtual machines based on KubeVirt. With it, you can deploy Kafka, MongoDB, PostgreSQL, Cilium, Grafana, VictoriaMetrics, and other services with a single click. It also handles GPU workloads in both virtual machines and K8s clusters. Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license.
 
 We’ve finally ditched the old bash scripts that used to handle platform logic, and replaced them with a fully-fledged operator. This operator now installs all system components of the platform.
 
-The entire platform logic now revolves [around two CRDs](https://cozystack.io/docs/v1/guides/concepts/#packagesource-and-package): Package and PackageSource.
+The entire platform logic now revolves [around two CRDs](https://cozystack.io/docs/v1.0/guides/concepts/#packagesource-and-package): Package and PackageSource.
 
 - **PackageSource** defines the source of a package by directly referencing a Git or OCI repository.
 - **Package** reflects the user’s wish to install a particular package.
@@ -37,7 +37,7 @@ This new approach provides a more reliable way to install, customize, and manage
 
 ![image](https://cdn-images-1.medium.com/max/800/1*mQxC0EVDH8xq5_GHuY6Gzw.png)
 
-Now you’ve got [two options](https://cozystack.io/docs/v1/install/cozystack/):
+Now you’ve got [two options](https://cozystack.io/docs/v1.0/install/cozystack/):
 
 1. Use Cozystack as a **ready-made platform** with everything preinstalled (just like before). In this case, the platform chart installs all required Packages automatically.
 2. **Build your own Cozystack**. In this case, the platform chart only installs PackageSources for the current component versions, and you use cozypkg to pick and install the Packages you actually want.
@@ -52,9 +52,9 @@ You can also create your own repository, plug it to Cozystack, and install packa
 
 The package system now features Flux’s new Source Watcher mechanism. Essentially, Cozystack has become one of the early adopters of the new FluxCD API, enabling users to define and host custom repositories without the need to build their own charts. We’ve also eliminated the classic [“chicken-and-egg” problem](https://cozystack.io/blog/2025/12/flux-aio-kubernetes-mtls-and-the-chicken-and-egg-problem/) (Cozystack installs everything via Flux — including CNI and kube-proxy — while Flux itself requires a working network to fetch charts). Cozystack now relies on source-watcher (a part of the self-sufficient flux-aio tool), which automatically pulls chart sources from Git or OCI repositories, builds them into installation-ready artifacts, and then deploys them.
 
-Ultimately, this brings us one step closer to what Cozystack has always aimed to be: a *cozy*, *flexible* tech stack you can make *entirely your own* (refer to the [documentation](https://cozystack.io/docs/v1/install/) for more details).
+Ultimately, this brings us one step closer to what Cozystack has always aimed to be: a *cozy*, *flexible* tech stack you can make *entirely your own* (refer to the [documentation](https://cozystack.io/docs/v1.0/install/) for more details).
 
-In addition to this core shift, this version debuts a comprehensive backup system, including a highly extensible API and a backup implementation for virtual machines [based on Velero](https://cozystack.io/docs/v1/operations/services/velero-backup-configuration/), as well as **Flux sharding** for improved tenant resource distribution. Users will also find expanded monitoring capabilities alongside various performance and workflow improvements for virtual machines, tenant management, and build processes. On top of that, you can now deploy a fully featured MongoDB database with autoscaling, backups, and fault tolerance out of the box.
+In addition to this core shift, this version debuts a comprehensive backup system, including a highly extensible API and a backup implementation for virtual machines [based on Velero](https://cozystack.io/docs/v1.0/operations/services/velero-backup-configuration/), as well as **Flux sharding** for improved tenant resource distribution. Users will also find expanded monitoring capabilities alongside various performance and workflow improvements for virtual machines, tenant management, and build processes. On top of that, you can now deploy a fully featured MongoDB database with autoscaling, backups, and fault tolerance out of the box.
 
 ### Breaking Changes
 
@@ -115,7 +115,7 @@ We’ve added ReadWriteMany (RWX) volume support to tenant Kubernetes clusters. 
 
 #### Multi-distribution and flexible install options
 
-While Talos Linux remains our recommended distribution, Cozystack now officially supports various Kubernetes distributions such as **K3s**, **Kubeadm**, and **RKE**. We also made the setup simpler with a full set of [Ansible playbooks](https://cozystack.io/docs/v1/install/ansible/). Tools like **boot-to-talos**, **cozyhr**, and **talm** got major updates. Boot-to-talos and talm now support bonding, VLANs, auto-discovery and configuration. Boot-to-talos works seamlessly with the latest Ubuntu releases and updated kernels and can automatically convert an existing system with pre-configured networking to Talos.
+While Talos Linux remains our recommended distribution, Cozystack now officially supports various Kubernetes distributions such as **K3s**, **Kubeadm**, and **RKE**. We also made the setup simpler with a full set of [Ansible playbooks](https://cozystack.io/docs/v1.0/install/ansible/). Tools like **boot-to-talos**, **cozyhr**, and **talm** got major updates. Boot-to-talos and talm now support bonding, VLANs, auto-discovery and configuration. Boot-to-talos works seamlessly with the latest Ubuntu releases and updated kernels and can automatically convert an existing system with pre-configured networking to Talos.
 
 All our tools — cozypkg, boot-to-talos, talm — can be installed with a single command from [the Brew repo](https://github.com/cozystack/homebrew-tap).
 
@@ -170,13 +170,13 @@ You can now specify which RabbitMQ version to run — v4.2 (default), v4.1, 
 
 #### Documentation
 
-The website documentation has been updated: a [comprehensive guide](https://cozystack.io/docs/virtualization/cloneable-vms/) for virtual machine cloning and management is now available, and we’ve made the NFS driver setup [much easier to follow](https://cozystack.io/docs/storage/nfs/#enable-nfs-driver). We also polished Talos Linux installation guides for [Hetzner](https://cozystack.io/docs/install/providers/hetzner/) and [Servers.com](https://cozystack.io/docs/install/providers/servers-com/), added a [section](https://cozystack.io/docs/install/providers/hetzner/#32-create-a-load-balancer-with-robotlb) on Hetzner RobotLB public IP configuration.
+The website documentation has been updated: a [comprehensive guide](https://cozystack.io/docs/v1.0/virtualization/cloneable-vms/) for virtual machine cloning and management is now available, and we’ve made the NFS driver setup [much easier to follow](https://cozystack.io/docs/v1.0/storage/nfs/#enable-nfs-driver). We also polished Talos Linux installation guides for [Hetzner](https://cozystack.io/docs/v1.0/install/providers/hetzner/) and [Servers.com](https://cozystack.io/docs/v1.0/install/providers/servers-com/), added a [section](https://cozystack.io/docs/v1.0/install/providers/hetzner/#32-create-a-load-balancer-with-robotlb) on Hetzner RobotLB public IP configuration.
 
 Beyond the major architectural shifts, versions 1.0.0 & 1.1.0 bring a wide range of incremental updates to monitoring, tenant management, and core system components, as well as streamlined development and build processes and various stability fixes.
 
 ### Migration Guide
 
-A [detailed guide](https://cozystack.io/docs/v1/operations/upgrades/) for migrating from v0.41 to v1.0 is available. ⚠️ Please note the ****[mandatory steps](https://cozystack.io/docs/v1/operations/upgrades/#step-1-protect-critical-resources). Huge thanks to everyone who contributed to the bottom line.
+A [detailed guide](https://cozystack.io/docs/v1.0/operations/upgrades/) for migrating from v0.41 to v1.0 is available. ⚠️ Please note the ****[mandatory steps](https://cozystack.io/docs/v1.0/operations/upgrades/#step-1-protect-critical-resources). Huge thanks to everyone who contributed to the bottom line.
 
 ### Join our community
 

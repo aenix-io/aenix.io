@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accounting on Документация Freedom Cloud</title>
+    <link>/docs/en/accounting/</link>
+    <description>Recent content in Accounting on Документация Freedom Cloud</description>
+    <generator>Hugo</generator>
+    <language>ru</language>
+    <atom:link href="/docs/en/accounting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Key Concepts</title>
+      <link>/docs/en/accounting/concepts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/en/accounting/concepts/</guid>
+      <description>&lt;h2 id=&#34;общие-понятия&#34;&gt;Общие понятия&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Аккаунт&lt;/strong&gt; — учётная запись, принадлежащая физическому или юридическому лицу. В рамках аккаунта создаются проекты, ведётся биллинг и действуют пользователи.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Проект&lt;/strong&gt; — основная сущность портала Freedom Cloud. Все вычислительные мощности на портале арендуются внутри проекта и изолированы от других проектов. Каждый проект тарифицируется отдельно, и вы можете отдельно управлять доступами к каждому проекту.&lt;/p&gt;&#xA;&lt;h2 id=&#34;понятия-ролевой-системы&#34;&gt;Понятия ролевой системы&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Пользователь&lt;/strong&gt; — учётная запись человека на портале, привязанная к email. Один пользователь может иметь доступ к нескольким аккаунтам с разными правами в каждом.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Billing and Payments</title>
+      <link>/docs/en/accounting/billing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/en/accounting/billing/</guid>
+      <description>&lt;p&gt;Биллинг доступен в меню слева в разделе &lt;strong&gt;Счета&lt;/strong&gt;. Здесь вы можете пополнять баланс, следить за прогнозом расходов, скачивать счета и управлять платёжными реквизитами.&lt;/p&gt;&#xA;&lt;h2 id=&#34;replenish&#34;&gt;Пополнить баланс&lt;/h2&gt;&#xA;&lt;p&gt;Текущий баланс аккаунта отображается в верхней части страницы &lt;strong&gt;Обзор&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Чтобы пополнить баланс, в правом верхнем углу нажмите &lt;strong&gt;Пополнить баланс&lt;/strong&gt; — откроется страница платёжного провайдера.&lt;/p&gt;&#xA;&lt;div class=&#34;my-4 rounded-lg border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-800&#34;&gt;&#xA;  При нулевом балансе ресурсы в проектах с тарифом Pay-as-you-go будут остановлены. Портал отправит вам уведомление при низком балансе, чтобы вы успели его пополнить.&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;forecast&#34;&gt;Посмотреть прогноз расходов&lt;/h2&gt;&#xA;&lt;p&gt;Откройте страницу &lt;strong&gt;Обзор&lt;/strong&gt; и перейдите на вкладку &lt;strong&gt;Прогноз расходов&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Editing and Deleting an Account</title>
+      <link>/docs/en/accounting/profile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/docs/en/accounting/profile/</guid>
+      <description>&lt;h2 id=&#34;edit&#34;&gt;Редактировать данные аккаунта&lt;/h2&gt;&#xA;&lt;p&gt;Чтобы обновить данные аккаунта:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Откройте страницу &lt;strong&gt;Контактные данные&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;В правом нижнем углу нажмите &lt;strong&gt;Редактировать&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;li&gt;Внесите изменения.&lt;/li&gt;&#xA;&lt;li&gt;Нажмите &lt;strong&gt;Сохранить&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;my-4 rounded-lg border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-800&#34;&gt;&#xA;  Для аккаунтов организаций также доступна загрузка документов. Новый документ заменяет ранее загруженный и автоматически отправляется на верификацию со стороны Freedom Cloud.&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;delete&#34;&gt;Удалить аккаунт&lt;/h2&gt;&#xA;&lt;div class=&#34;my-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800&#34;&gt;&#xA;  Удаление аккаунта необратимо и приведёт к удалению всех ваших данных.&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Перед удалением убедитесь, что выполнены следующие условия:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

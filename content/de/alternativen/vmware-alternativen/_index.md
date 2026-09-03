@@ -78,7 +78,7 @@ Die folgenden Alternativen decken die realistischen Optionen ab.
 
 ### 1. Cozystack (Open Source, Kubernetes-native)
 
-**Architektur:** KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal. CNCF-Projekt.
+**Architektur:** KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard. CNCF-Projekt.
 
 **Am besten für:** Service-Provider, regulierte Unternehmen, Sovereign-Cloud-Builder, KI-/GPU-Betreiber.
 

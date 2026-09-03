@@ -84,7 +84,7 @@ CNCF Project · Kubernetes Certified Distribution · OpenSSF Best Practices · A
 KubeVirt for VMs (KVM-based with live migration, snapshots, templates) plus Kubernetes containers, side by side. No separate VM platform; no separate container platform.
 
 **2. Storage — replicated block + S3 object storage**
-LINSTOR (DRBD) for replicated block storage at scale. Rook-Ceph integration for object/file. S3-compatible (SeaweedFS) for application + backup storage.
+LINSTOR (DRBD) for replicated block storage at scale. SeaweedFS for S3-compatible object storage. S3-compatible (SeaweedFS) for application + backup storage.
 
 **3. Networking — eBPF-native**
 Cilium as the CNI: L4/L7 policies, observability, MetalLB integration, BGP fabric support. NSX-equivalent functionality without NSX licensing.
@@ -93,7 +93,7 @@ Cilium as the CNI: L4/L7 policies, observability, MetalLB integration, BGP fabri
 Tenant CRD model with nested tenants, per-tenant quotas, RBAC, audit. Suitable for service-provider model (multi-customer) or enterprise multi-BU.
 
 **5. Managed services**
-PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB — first-class managed-service offerings.
+PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB — first-class managed-service offerings.
 
 **6. GPU as a service**
 NVIDIA vGPU for VMs, MIG / time-slicing / passthrough for containers. Validated on A100, H100, H200, L40S, Blackwell.
@@ -105,7 +105,7 @@ VictoriaMetrics + VictoriaLogs included — low-overhead, sovereignty-friendly. 
 Velero + S3 + per-database PITR for managed services.
 
 **9. Self-service portal & WHMCS billing**
-cozyportal for service provisioning. Production-ready WHMCS integration with two modes (native UI + frontend Cozystack).
+Cozystack Dashboard for service provisioning. Production-ready WHMCS integration with two modes (native UI + frontend Cozystack).
 
 </div>
 
@@ -123,7 +123,7 @@ cozyportal for service provisioning. Production-ready WHMCS integration with two
 | **Compute** | vSphere + ESXi | Nova + KVM | KubeVirt | **KubeVirt** |
 | **Multi-tenancy** | vCloud Director | Keystone projects | Namespaces | **Tenant CRD (Kubernetes-native)** |
 | **Managed databases** | Limited | DBaaS optional | Available | **First-class** |
-| **Self-service portal** | vCD | Horizon | Console | **cozyportal** |
+| **Self-service portal** | vCD | Horizon | Console | **Cozystack Dashboard** |
 | **Operational footprint** | Heavy (VCF) | Heavy (OpenStack) | Medium (OpenShift) | **Light (Kubernetes-native, single platform)** |
 | **Vendor relationship** | Closed source US vendor | Foundation, vendor distros | Red Hat | **Open source, no vendor lock-in** |
 | **Best for** | Existing VMware | Large telco / OpenStack-fluent teams | Existing Red Hat customers | **Service providers, regulated multi-tenant, sovereign cloud** |

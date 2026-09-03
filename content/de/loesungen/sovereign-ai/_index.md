@@ -212,8 +212,7 @@ Zur vollständigen Assessment-Methodik siehe **[Platform Readiness Assessment](/
 Wir haben KI-Plattformen für KI/GPU-Betreiber, Finanzdienstleister und Initiativen des öffentlichen Sektors in der EU und Zentralasien gebaut und betrieben. Zu den Workload-Mustern zählen Inferenz im Maßstab (24/7), Fine-Tuning, RAG-Pipelines und Multi-Tenant-Model-Serving.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 Benannte Fallstudien sind auf dem Discovery-Call verfügbar, sofern die Kundengenehmigungen es zulassen.
 
 <!-- /BLOCK 8 -->

@@ -1,0 +1,629 @@
+{{ define "head" }}
+  <meta name="robots" content="noindex,nofollow">
+{{ end }}
+
+{{ define "main" }}
+<section class="lt-wrap">
+  <div class="lt-container">
+    <div class="lt-head">
+      <div>
+        <h1 class="lt-title">Link tools</h1>
+        <p class="lt-sub">Build UTM-tagged campaign URLs and shorten <code>aenix.io</code> / <code>k.aenix.io</code> / <code>opc.aenix.io</code> links. Short links are recorded in the <a href="/go/links/">registry</a>; a UTM URL you only copy is not stored anywhere.</p>
+      </div>
+      <div class="lt-headright">
+        <a href="/go/links/" class="lt-btn lt-btn-ghost lt-reg-link">📋 All links →</a>
+      </div>
+    </div>
+
+    <!-- ── 1. UTM builder ─────────────────────────────────────────── -->
+    <div class="lt-card">
+      <h2 class="lt-h2"><span class="lt-step">1</span> UTM builder</h2>
+
+      <label class="lt-field lt-preset-field"><span>Quick preset <small>(fills Platform + Channel — you can tweak after)</small></span>
+        <select id="lt-preset">
+          <option value="">— none —</option>
+          <option value="linkedin|social">LinkedIn — organic post</option>
+          <option value="linkedin|paid_social">LinkedIn — paid ad</option>
+          <option value="x|social">X — organic post</option>
+          <option value="telegram|social">Telegram — channel post</option>
+          <option value="google|cpc">Google Ads — search (CPC)</option>
+          <option value="newsletter|email">Own newsletter — email</option>
+          <option value="g2|referral">G2 — listing/referral</option>
+          <option value="hackernews|social">Hacker News — post</option>
+          <option value="event|referral">Event — QR / offline</option>
+          <option value="sponsorship|display">Sponsorship — banner</option>
+        </select>
+      </label>
+
+      <label class="lt-field">
+        <span>Base URL <em>*</em>{{ "" }}
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">The page the link points to. Tag only external links that lead to our site — never internal navigation.<br><b>e.g.</b> https://aenix.io/pricing/</i></b></span>
+        <input id="utm-base" type="url" placeholder="https://aenix.io/pricing/" autocomplete="off">
+      </label>
+
+      <div class="lt-grid">
+        <label class="lt-field"><span>Platform / resource <em>*</em> <small>(utm_source)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Where the link is physically published. Each Telegram channel or ad network is its own source.<br><b>e.g.</b> linkedin, g2, tg-cozystack</i></b></span>
+          <select id="utm-source">
+            <option value="" disabled selected>— choose —</option>
+            <optgroup label="Social">
+              <option value="linkedin">LinkedIn</option>
+              <option value="x">X (Twitter)</option>
+              <option value="facebook">Facebook</option>
+              <option value="instagram">Instagram</option>
+              <option value="telegram">Telegram</option>
+              <option value="youtube">YouTube</option>
+              <option value="reddit">Reddit</option>
+              <option value="tiktok">TikTok</option>
+            </optgroup>
+            <optgroup label="Dev &amp; community">
+              <option value="hackernews">Hacker News</option>
+              <option value="github">GitHub</option>
+              <option value="devto">dev.to</option>
+              <option value="medium">Medium</option>
+              <option value="producthunt">Product Hunt</option>
+              <option value="stackoverflow">Stack Overflow</option>
+              <option value="discord">Discord</option>
+              <option value="slack">Slack</option>
+            </optgroup>
+            <optgroup label="CNCF ecosystem">
+              <option value="cncf">CNCF (landscape/blog)</option>
+              <option value="kubernetes-slack">Kubernetes Slack</option>
+              <option value="artifacthub">Artifact Hub</option>
+              <option value="thenewstack">The New Stack</option>
+              <option value="infoq">InfoQ</option>
+            </optgroup>
+            <optgroup label="Review &amp; intent">
+              <option value="g2">G2</option>
+              <option value="capterra">Capterra</option>
+              <option value="trustradius">TrustRadius</option>
+              <option value="stackshare">StackShare</option>
+            </optgroup>
+            <optgroup label="Search">
+              <option value="google">Google</option>
+              <option value="bing">Bing</option>
+            </optgroup>
+            <optgroup label="Email (owned)">
+              <option value="newsletter">Own newsletter</option>
+              <option value="email">Email (transactional)</option>
+            </optgroup>
+            <optgroup label="Media &amp; sponsorship">
+              <option value="podcast">Podcast</option>
+              <option value="sponsorship">Sponsorship</option>
+              <option value="newsletter-sponsor">Sponsored newsletter</option>
+            </optgroup>
+            <optgroup label="Own sites (cross-site banner)">
+              <option value="aenix.io">aenix.io</option>
+              <option value="cozystack.io">cozystack.io</option>
+            </optgroup>
+            <optgroup label="Other">
+              <option value="event">Event / offline</option>
+              <option value="partner">Partner site</option>
+              <option value="__custom">Custom…</option>
+            </optgroup>
+          </select>
+          <input id="utm-source-custom" class="lt-custom" placeholder="custom source (lowercase, no spaces)" autocomplete="off" hidden>
+        </label>
+
+        <label class="lt-field"><span>Channel <em>*</em> <small>(utm_medium)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">The GA4 traffic channel — <b>how</b> the visit is earned. These exact values make GA4 sort traffic correctly. Format/creative goes in Content, not here.<br><b>e.g.</b> Organic post → social; Paid ad → paid_social; Search ad → cpc</i></b></span>
+          <select id="utm-medium">
+            <option value="" disabled selected>— choose —</option>
+            <option value="social">Organic post (social)</option>
+            <option value="paid_social">Paid ad (paid_social)</option>
+            <option value="cpc">Search ad (cpc)</option>
+            <option value="display">Banner / display</option>
+            <option value="video">Video</option>
+            <option value="email">Email</option>
+            <option value="referral">Referral / partner</option>
+            <option value="affiliate">Affiliate</option>
+            <option value="__custom">Custom…</option>
+          </select>
+          <input id="utm-medium-custom" class="lt-custom" placeholder="custom medium (GA4-valid)" autocomplete="off" hidden>
+        </label>
+
+        <label class="lt-field"><span>Campaign name <em>*</em> <small>(utm_campaign)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">The initiative — one stable name across ALL its links (don't put dates here, that fragments reports). Lowercase, no spaces.<br><b>e.g.</b> cloudfest2026, vmware-migration</i></b></span>
+          <input id="utm-campaign" list="campaign-list" placeholder="cloudfest2026" autocomplete="off">
+          <datalist id="campaign-list"></datalist>
+        </label>
+
+        <label class="lt-field"><span>Region <small>(optional)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Target region — prefixed into the campaign so you can filter by geo.<br><b>e.g.</b> emea, amer, apac, cis, global</i></b></span>
+          <select id="utm-region">
+            <option value="">—</option>
+            <option value="global">global</option>
+            <option value="emea">emea</option>
+            <option value="amer">amer</option>
+            <option value="apac">apac</option>
+            <option value="cis">cis</option>
+          </select>
+        </label>
+
+        <label class="lt-field"><span>Funnel stage <small>(optional)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Where in the funnel: awareness / consideration / decision.<br><b>tofu</b> = top (awareness), <b>mofu</b> = middle, <b>bofu</b> = bottom (decision)</i></b></span>
+          <select id="utm-funnel">
+            <option value="">—</option>
+            <option value="tofu">tofu (awareness)</option>
+            <option value="mofu">mofu (consideration)</option>
+            <option value="bofu">bofu (decision)</option>
+          </select>
+        </label>
+
+        <label class="lt-field"><span>Type <small>(optional)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Campaign type — folded into the campaign name.<br><b>e.g.</b> event, webinar, launch, nurture, content, ad</i></b></span>
+          <select id="utm-type">
+            <option value="">—</option>
+            <option value="event">event</option>
+            <option value="webinar">webinar</option>
+            <option value="launch">launch</option>
+            <option value="nurture">nurture</option>
+            <option value="content">content</option>
+            <option value="ad">ad</option>
+          </select>
+        </label>
+
+        <label class="lt-field"><span>Format / content <small>(utm_content)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Which creative or variant — for A/B tests and telling placements apart. This is where format lives (banner, story, video…).<br><b>e.g.</b> hero-cta, banner-a, post-1, story-swipeup</i></b></span>
+          <input id="utm-content" list="content-list" placeholder="hero-cta" autocomplete="off">
+          <datalist id="content-list"><option value="hero-cta"><option value="cta-footer"><option value="banner-a"><option value="banner-b"><option value="post-1"><option value="story-swipeup"><option value="carousel"><option value="signature"></datalist>
+        </label>
+
+        <label class="lt-field"><span>Launch date <small>(optional → utm_id)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Optional cohort date. Goes to <b>utm_id</b> (GA4 "Campaign ID") — a separate dimension, so the campaign name stays clean and reports still roll up.<br><b>e.g.</b> 2026-08-10</i></b></span>
+          <input id="utm-date" type="date" autocomplete="off">
+        </label>
+
+        <label class="lt-field" id="utm-term-field" hidden><span>Term <small>(utm_term — paid search keyword)</small>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Paid-search keyword only (shown for CPC). Don't put creative info here — that goes in Content.<br><b>e.g.</b> kubernetes-vmware</i></b></span>
+          <input id="utm-term" placeholder="kubernetes-vmware" autocomplete="off">
+        </label>
+      </div>
+
+      <div class="lt-preview">
+        <span class="lt-preview-label">Result URL</span>
+        <code id="utm-out" class="lt-out">—</code>
+      </div>
+      <p id="utm-warn" class="lt-warn" hidden></p>
+      <div class="lt-actions">
+        <button id="utm-copy" type="button" class="lt-btn lt-btn-ghost">Copy URL</button>
+        <button id="utm-send" type="button" class="lt-btn">Shorten this link ↓</button>
+      </div>
+    </div>
+
+    <!-- ── 2. Shortener ───────────────────────────────────────────── -->
+    <div class="lt-card">
+      <h2 class="lt-h2"><span class="lt-step">2</span> Shortener</h2>
+
+      <p class="lt-note">Links you add are kept <b>in this browser</b> until you commit them. Add as many as you need, then commit once — that opens a pull request, and the site rebuilds when it merges.</p>
+
+      <label class="lt-field">
+        <span>URL to shorten <em>*</em>
+          <b class="lt-tip">ⓘ<i class="lt-tip-box">Only aenix.io / k.aenix.io / opc.aenix.io targets are allowed (anti-fraud — nobody can hide a foreign link behind our domain). UTM params on the target are preserved.</i></b></span>
+        <input id="sh-url" type="url" placeholder="https://aenix.io/..." autocomplete="off">
+        <small id="sh-url-hint" class="lt-hint"></small>
+      </label>
+
+      <label class="lt-field"><span>Custom slug <small>(optional — leave blank for a random code)</small>
+        <b class="lt-tip">ⓘ<i class="lt-tip-box">The tail of the short link. Readable is better for print/QR.<br><b>e.g.</b> aenix.io/l/cloudfest</i></b></span>
+        <div class="lt-slug"><span class="lt-slug-prefix">aenix.io/l/</span><input id="sh-slug" placeholder="cloudfest" autocomplete="off"><button id="sh-reroll" type="button" class="lt-slug-btn" title="Generate another handle">↻</button></div>
+      </label>
+
+      <label class="lt-field"><span>Note <small>(optional — what this link is for)</small></span>
+        <input id="sh-note" placeholder="CloudFest QR on the booth banner" autocomplete="off">
+      </label>
+
+      <div class="lt-actions">
+        <button id="sh-submit" type="button" class="lt-btn">Add to batch</button>
+        <button id="sh-cancel" type="button" class="lt-btn lt-btn-ghost" hidden>Cancel edit</button>
+      </div>
+      <p id="sh-error" class="lt-error" hidden></p>
+    </div>
+
+    <!-- ── 3. Pending changes ─────────────────────────────────────── -->
+    <div class="lt-card" id="commit">
+      <h2 class="lt-h2"><span class="lt-step">3</span> Uncommitted changes <span id="pc-count" class="lt-count">0</span></h2>
+
+      <p id="pc-empty" class="lt-note">Nothing pending. Links you add, edit or delete show up here before they reach the site.</p>
+
+      <ul id="pc-list" class="lt-pending-list" hidden></ul>
+
+      <div id="pc-actions" class="lt-actions" hidden>
+        <button id="pc-commit" type="button" class="lt-btn">Commit on GitHub →</button>
+        <button id="pc-discard" type="button" class="lt-btn lt-btn-ghost">Discard all</button>
+      </div>
+
+      <p id="pc-help" class="lt-note" hidden>Commit opens GitHub with the changeset already filled in. Press <b>Commit changes</b> there, choose <b>Create a new branch and start a pull request</b>, and open it — a links-only pull request is validated and merged automatically. Your pending list clears itself once the change is live.</p>
+    </div>
+
+    <!-- ── How to use (bottom) ────────────────────────────────────── -->
+    <details class="lt-help">
+      <summary>How this works — read once</summary>
+      <div class="lt-help-body">
+        <p><strong>What UTM tags are for.</strong> They tell GA4 where a visitor came from. Add them to a link and publish it <em>outside</em> the site — a post, an ad, an email, a Telegram channel.</p>
+        <p><strong>Rule #0 — tag external links only.</strong> Never tag a link that lives on our site and points to the same site (menus, internal banners). A UTM on an internal link <em>resets</em> the real source in GA4 and you lose the true origin. The tool warns you when it detects this.</p>
+        <ul>
+          <li><strong>Platform / resource</strong> (utm_source) = where the link sits — a network, a community, an event. Each Telegram channel is its own source.</li>
+          <li><strong>Channel</strong> (utm_medium) = the GA4 traffic type. Only GA4-valid values are offered (<code>social</code>, <code>paid_social</code>, <code>cpc</code>, <code>display</code>, <code>video</code>, <code>email</code>, <code>referral</code>, <code>affiliate</code>) so nothing falls into “Unassigned”. <strong>Format/creative does NOT go here</strong> — it goes in Content.</li>
+          <li><strong>Campaign</strong> = one stable name for the whole initiative. Region / funnel / type are folded in as a prefix so you can filter (e.g. <code>emea_tofu_event_cloudfest2026</code>). <strong>No dates in the campaign</strong> — the launch date goes to <code>utm_id</code> instead, keeping reports rolled-up.</li>
+          <li><strong>Content</strong> (utm_content) = the creative/variant for A/B and placements (<code>banner-a</code>, <code>story-swipeup</code>). <strong>Term</strong> = paid-search keyword only (appears when Channel = cpc).</li>
+        </ul>
+        <p><strong>⚠ Paid search (Google/Bing Ads).</strong> Those platforms auto-tag with GCLID/MSCLKID. <strong>Do NOT hand-tag paid-search final URLs</strong> — it breaks the Ads↔GA4 cost/attribution join. Use auto-tagging + GA4 linking. The tool warns on <code>google/bing + cpc</code>.</li>
+        <p><strong>Two sites.</strong> aenix.io and cozystack.io have separate GA4 properties. Attribution happens on the destination site from the UTM tags the short link carries, so a link landing on cozystack.io is attributed in cozystack’s property. For cross-site banners set <em>Platform</em> to the site the banner sits on.</p>
+        <p><strong>Shortening.</strong> <em>Copy URL</em> works for any site; <em>Shorten</em> is for aenix.io / k.aenix.io / opc.aenix.io links only (anti-fraud allow-list). A short link is <code>aenix.io/l/&lt;slug&gt;</code> and is listed in the <a href="/go/links/">registry</a>.</p>
+        <p><strong>How a short link works, precisely.</strong> The site is a set of static files on GitHub Pages — there is no server to run code on. <code>/l/&lt;slug&gt;/</code> is a real HTML page that bounces the browser to the target with a <code>meta refresh</code> plus a JavaScript fallback. Consequences worth knowing:</p>
+        <ul>
+          <li><strong>There is no click counter, and there will not be one.</strong> Nothing counts a visit to <code>/l/…</code>. Measure campaigns in GA4 on the destination page via the UTM tags — that is what they are for.</li>
+          <li>The hop is a page load, not an HTTP 302. It is a beat slower than a real redirect and shows up in browser history.</li>
+          <li>Links are created in a spreadsheet and published by a build, so a new link is live within minutes, not instantly. Do not print a QR code before checking the link resolves.</li>
+          <li>To retire a link, set its <code>status</code> in the sheet to something other than <code>active</code>: the page stops being generated and the URL 404s, while the record stays as history.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
+
+<style>
+  .lt-wrap{padding:6rem 20px;background:var(--bg-main,#0B0F1A)}
+  .lt-container{max-width:840px;margin:0 auto;font-family:var(--font-body,'Inter',system-ui,sans-serif)}
+  .lt-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:30px}
+  .lt-title{font-size:2.1rem;margin:0 0 8px;color:var(--text-primary,#F1F5F9);font-weight:700}
+  .lt-sub{color:var(--text-secondary,#94A3B8);margin:0;font-size:.98rem;line-height:1.6;max-width:560px}
+  .lt-sub code,.lt-help-body code{background:rgba(255,255,255,.06);border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:5px;padding:1px 6px;font-family:var(--font-mono,monospace);font-size:.82em;color:var(--brand-cyan,#94DEE0)}
+  .lt-reg-link{white-space:nowrap;text-decoration:none}
+  .lt-card{background:var(--glass-bg,rgba(255,255,255,.04));border:1px solid var(--glass-border,rgba(255,255,255,.08));border-radius:18px;padding:26px;margin-bottom:22px;backdrop-filter:var(--glass-blur,blur(16px) saturate(120%));-webkit-backdrop-filter:var(--glass-blur,blur(16px) saturate(120%))}
+  .lt-h2{font-size:1.2rem;margin:0 0 20px;display:flex;align-items:center;gap:11px;color:var(--text-primary,#F1F5F9);font-weight:600}
+  .lt-step{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--brand-primary,#01A5FF);color:#001018;font-size:.9rem;font-weight:700}
+  .lt-field{display:block;margin-bottom:15px}
+  .lt-field>span{display:block;font-size:.82rem;font-weight:600;color:var(--text-secondary,#94A3B8);margin-bottom:7px}
+  .lt-field em{color:var(--brand-primary,#01A5FF);font-style:normal}
+  .lt-field small{font-weight:400;color:rgba(148,163,184,.7)}
+  .lt-field input,.lt-field select{width:100%;padding:11px 13px;border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:11px;font-size:.95rem;color:var(--text-primary,#F1F5F9);background:rgba(255,255,255,.03);font-family:inherit;transition:border-color .2s,box-shadow .2s}
+  .lt-field input::placeholder{color:rgba(148,163,184,.55)}
+  .lt-field select option,.lt-field select optgroup{background:var(--bg-secondary,#111827);color:var(--text-primary,#F1F5F9)}
+  .lt-field input:focus,.lt-field select:focus{outline:none;border-color:var(--brand-primary,#01A5FF);box-shadow:0 0 0 3px rgba(1,165,255,.2)}
+  .lt-field input[type=date]{color-scheme:dark}
+  .lt-custom{margin-top:8px}
+  .lt-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+  @media(max-width:560px){.lt-grid{grid-template-columns:1fr}}
+  /* tooltips */
+  .lt-tip{display:inline-grid;place-items:center;width:15px;height:15px;margin-left:5px;border-radius:50%;background:rgba(1,165,255,.15);color:var(--brand-primary,#01A5FF);font-size:.62rem;font-weight:700;font-style:normal;cursor:help;position:relative;vertical-align:middle}
+  .lt-tip .lt-tip-box{display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);width:250px;background:#0b1220;border:1px solid var(--brand-primary,#01A5FF);border-radius:10px;padding:10px 12px;font-size:.78rem;font-weight:400;font-style:normal;line-height:1.5;color:var(--text-primary,#F1F5F9);box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:20;text-transform:none;letter-spacing:normal}
+  .lt-tip .lt-tip-box b{color:var(--brand-cyan,#94DEE0)}
+  .lt-tip:hover .lt-tip-box{display:block}
+  @media(max-width:560px){.lt-tip .lt-tip-box{width:210px;left:auto;right:0;transform:none}}
+  .lt-slug{display:flex;align-items:stretch;border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:11px;overflow:hidden}
+  .lt-slug:focus-within{border-color:var(--brand-primary,#01A5FF);box-shadow:0 0 0 3px rgba(1,165,255,.2)}
+  .lt-slug-prefix{background:rgba(255,255,255,.05);color:var(--text-secondary,#94A3B8);padding:11px 11px;font-size:.9rem;white-space:nowrap;border-right:1px solid var(--border-default,rgba(255,255,255,.1));font-family:var(--font-mono,monospace)}
+  .lt-slug input{border:none;border-radius:0;background:transparent}
+  .lt-slug input:focus{box-shadow:none}
+  .lt-slug-btn{background:rgba(255,255,255,.05);border:0;border-left:1px solid var(--border-default,rgba(255,255,255,.1));color:var(--text-secondary,#94A3B8);padding:0 14px;cursor:pointer;font-size:1rem;font-family:inherit}
+  .lt-slug-btn:hover{color:var(--brand-primary,#01A5FF)}
+  .lt-preview{background:rgba(255,255,255,.02);border:1px dashed var(--border-hover,rgba(255,255,255,.15));border-radius:11px;padding:13px 15px;margin:8px 0 14px}
+  .lt-preview-label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.06em;color:var(--text-secondary,#94A3B8);margin-bottom:5px}
+  .lt-out{font-family:var(--font-mono,'JetBrains Mono',monospace);font-size:.88rem;color:var(--text-primary,#F1F5F9);word-break:break-all}
+  a.lt-out{color:var(--brand-primary,#01A5FF);text-decoration:none}
+  a.lt-out:hover{text-decoration:underline}
+  .lt-actions{display:flex;gap:11px;flex-wrap:wrap}
+  .lt-btn{background:var(--brand-primary,#01A5FF);color:#001018;border:none;border-radius:11px;padding:11px 20px;font-size:.92rem;font-weight:700;cursor:pointer;font-family:inherit;transition:background .2s,opacity .2s}
+  .lt-btn:hover{background:var(--brand-secondary,#0971EB)}
+  .lt-btn:disabled{opacity:.4;cursor:not-allowed}
+  .lt-btn-ghost{background:transparent;color:var(--brand-primary,#01A5FF);border:1px solid var(--border-hover,rgba(255,255,255,.15))}
+  .lt-btn-ghost:hover{background:rgba(1,165,255,.08)}
+  .lt-hint{display:block;margin-top:6px;font-size:.8rem}
+  .lt-hint.ok{color:var(--brand-green,#D4F6B2)}.lt-hint.bad{color:#f87171}
+  .lt-result{margin-top:16px;background:rgba(212,246,178,.06);border:1px solid rgba(212,246,178,.25);border-radius:11px;padding:13px 15px}
+  .lt-result-row{display:flex;align-items:center;gap:11px;flex-wrap:wrap}
+  .lt-error{margin-top:14px;background:rgba(248,113,113,.08);border:1px solid rgba(248,113,113,.3);color:#fca5a5;border-radius:11px;padding:11px 15px;font-size:.9rem}
+  .lt-warn{margin:0 0 12px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);color:#fcd34d;border-radius:11px;padding:10px 14px;font-size:.85rem}
+  .lt-preset-field select{border-color:rgba(1,165,255,.35)}
+  .lt-tip.is-open .lt-tip-box{display:block}
+  .lt-qrbox{margin-top:14px;padding:14px;background:#fff;border-radius:11px;display:inline-block}
+  .lt-qrfail{color:#0B0F1A;font-size:.82rem;display:block;max-width:220px}
+  .lt-qrbox img,.lt-qrbox canvas{display:block}
+  .lt-headright{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .lt-count{display:inline-grid;place-items:center;min-width:26px;height:24px;padding:0 8px;border-radius:20px;background:rgba(148,163,184,.14);color:var(--text-secondary,#94A3B8);font-size:.8rem;font-weight:700}
+  .lt-count.is-on{background:rgba(251,191,36,.16);color:#fcd34d}
+  .lt-pending-list{list-style:none;margin:0 0 18px;padding:0;display:flex;flex-direction:column;gap:8px}
+  .lt-pending-item{display:flex;align-items:center;gap:11px;flex-wrap:wrap;background:rgba(255,255,255,.03);border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:11px;padding:10px 13px}
+  .lt-pending-item code{font-family:var(--font-mono,monospace);font-size:.84rem;color:var(--brand-cyan,#94DEE0)}
+  .lt-pending-op{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em}
+  .lt-pending-item.add .lt-pending-op{background:rgba(212,246,178,.14);color:var(--brand-green,#D4F6B2)}
+  .lt-pending-item.edit .lt-pending-op{background:rgba(1,165,255,.16);color:var(--brand-primary,#01A5FF)}
+  .lt-pending-item.delete .lt-pending-op{background:rgba(248,113,113,.14);color:#fca5a5}
+  .lt-pending-item.disable .lt-pending-op{background:rgba(148,163,184,.16);color:#cbd5e1}
+  .lt-pending-item.enable .lt-pending-op{background:rgba(212,246,178,.14);color:var(--brand-green,#D4F6B2)}
+  .lt-pending-item.delete code{text-decoration:line-through;opacity:.7}
+  .lt-pending-target{flex:1;min-width:160px;color:var(--text-secondary,#94A3B8);font-size:.78rem;word-break:break-all}
+  .lt-act{margin-left:auto;background:transparent;border:1px solid var(--border-default,rgba(255,255,255,.1));color:var(--text-secondary,#94A3B8);border-radius:8px;padding:5px 11px;font-size:.76rem;font-weight:600;cursor:pointer;font-family:inherit}
+  .lt-act:hover{border-color:var(--brand-primary,#01A5FF);color:var(--brand-primary,#01A5FF)}
+  #pc-help{margin-top:16px}
+  .lt-note{margin:-6px 0 18px;color:var(--text-secondary,#94A3B8);font-size:.86rem;line-height:1.6}
+  .lt-note code{background:rgba(255,255,255,.06);border:1px solid var(--border-default,rgba(255,255,255,.1));border-radius:5px;padding:1px 6px;font-family:var(--font-mono,monospace);font-size:.82em;color:var(--brand-cyan,#94DEE0)}
+  .lt-note b{color:var(--text-primary,#F1F5F9)}
+  .lt-result-msg{margin:6px 0 12px;color:var(--text-secondary,#94A3B8);font-size:.87rem;line-height:1.6}
+  .lt-help{background:var(--glass-bg,rgba(255,255,255,.04));border:1px solid var(--glass-border,rgba(255,255,255,.08));border-radius:18px;padding:4px 26px}
+  .lt-help summary{cursor:pointer;font-weight:600;color:var(--text-primary,#F1F5F9);padding:18px 0;font-size:1.05rem;list-style:none}
+  .lt-help summary::-webkit-details-marker{display:none}
+  .lt-help summary::before{content:'▸ ';color:var(--brand-primary,#01A5FF)}
+  .lt-help[open] summary::before{content:'▾ '}
+  .lt-help-body{padding-bottom:20px;color:var(--text-secondary,#94A3B8);font-size:.9rem;line-height:1.65}
+  .lt-help-body p{margin:0 0 11px}
+  .lt-help-body strong{color:var(--text-primary,#F1F5F9)}
+  .lt-help-body ul{margin:0 0 11px;padding-left:20px}
+  .lt-help-body li{margin-bottom:7px}
+</style>
+{{ end }}
+
+{{ define "scripts" }}
+{{ partial "link-state.html" . }}
+<script>
+(function(){
+  var ALLOWED = ['aenix.io','k.aenix.io','opc.aenix.io','calendar.google.com'];
+  var OWN = ['aenix.io','cozystack.io'];
+  // Same rules as scripts/lib/link-validate.mjs — enforced again server-side.
+  var SLUG_RE = /^[a-z0-9](?:[a-z0-9-]{0,62}[a-z0-9])?$/;
+  var RESERVED = ['l','go','api','admin','static','assets','links'];
+  var $ = function(id){ return document.getElementById(id); };
+
+  function hostAllowed(raw){
+    try{ var u=new URL(raw); return ALLOWED.indexOf(u.hostname.toLowerCase())!==-1 && (u.protocol==='https:'||u.protocol==='http:'); }
+    catch(e){ return false; }
+  }
+  function clean(v){ return String(v||'').trim().toLowerCase().replace(/\s+/g,'-').replace(/[^a-z0-9._-]/g,'').replace(/_/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,''); }
+  function selectVal(selId, customId){
+    var sel=$(selId), custom=$(customId);
+    if(sel.value==='__custom'){ custom.hidden=false; return clean(custom.value); }
+    custom.hidden=true; return sel.value;
+  }
+
+  // reveal/hide a custom text input when "__custom" is picked (independent of anything else)
+  function toggleCustom(selId, customId){
+    var sel=$(selId), custom=$(customId), on=(sel.value==='__custom');
+    custom.hidden=!on; if(on){ custom.focus(); }
+  }
+  $('utm-source').addEventListener('change', function(){ toggleCustom('utm-source','utm-source-custom'); });
+  $('utm-medium').addEventListener('change', function(){ toggleCustom('utm-medium','utm-medium-custom'); });
+
+  // ── Tilda-style click tooltips (work on touch, not only hover) ──
+  Array.prototype.forEach.call(document.querySelectorAll('.lt-tip'), function(t){
+    t.addEventListener('click', function(e){
+      e.preventDefault();
+      var open = t.classList.contains('is-open');
+      Array.prototype.forEach.call(document.querySelectorAll('.lt-tip.is-open'), function(x){ x.classList.remove('is-open'); });
+      if(!open) t.classList.add('is-open');
+    });
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.lt-tip')) Array.prototype.forEach.call(document.querySelectorAll('.lt-tip.is-open'), function(x){ x.classList.remove('is-open'); });
+  });
+
+  // ── Preset: fills Platform + Channel in one pick ──
+  var DEFAULT_MEDIUM = { linkedin:'social', x:'social', facebook:'social', instagram:'social', telegram:'social',
+    youtube:'video', reddit:'social', tiktok:'social', hackernews:'social', github:'referral', devto:'social',
+    medium:'social', producthunt:'referral', stackoverflow:'referral', discord:'social', slack:'social',
+    cncf:'referral', 'kubernetes-slack':'social', artifacthub:'referral', thenewstack:'referral', infoq:'referral',
+    g2:'referral', capterra:'referral', trustradius:'referral', stackshare:'referral',
+    google:'cpc', bing:'cpc', newsletter:'email', email:'email', podcast:'referral', sponsorship:'display',
+    'newsletter-sponsor':'email', 'aenix.io':'referral', 'cozystack.io':'referral', event:'referral', partner:'referral' };
+  function setSelect(id, val){ var s=$(id); if([].some.call(s.options,function(o){return o.value===val;})){ s.value=val; } }
+  $('lt-preset').addEventListener('change', function(){
+    if(!this.value) return;
+    var parts=this.value.split('|');
+    setSelect('utm-source', parts[0]); toggleCustom('utm-source','utm-source-custom');
+    setSelect('utm-medium', parts[1]); toggleCustom('utm-medium','utm-medium-custom');
+    buildUtm();
+  });
+  // auto-suggest medium from source (only if medium still empty)
+  $('utm-source').addEventListener('change', function(){
+    if(!$('utm-medium').value && DEFAULT_MEDIUM[$('utm-source').value]){ setSelect('utm-medium', DEFAULT_MEDIUM[$('utm-source').value]); }
+  });
+
+  // ── saved campaigns (localStorage → datalist) ──
+  function loadCampaigns(){
+    var list=[]; try{ list=JSON.parse(localStorage.getItem('lt_campaigns')||'[]'); }catch(e){}
+    $('campaign-list').innerHTML = list.slice(0,20).map(function(c){ return '<option value="'+c.replace(/"/g,'')+'">'; }).join('');
+  }
+  function saveCampaign(name){
+    if(!name) return; var list=[]; try{ list=JSON.parse(localStorage.getItem('lt_campaigns')||'[]'); }catch(e){}
+    list = [name].concat(list.filter(function(c){ return c!==name; })).slice(0,20);
+    try{ localStorage.setItem('lt_campaigns', JSON.stringify(list)); }catch(e){}
+    loadCampaigns();
+  }
+  loadCampaigns();
+
+  // ── UTM builder ──
+  function buildUtm(){
+    // keep custom fields visible regardless of whether Base URL is filled yet
+    $('utm-source-custom').hidden = ($('utm-source').value!=='__custom');
+    $('utm-medium-custom').hidden = ($('utm-medium').value!=='__custom');
+
+    var source=selectVal('utm-source','utm-source-custom');
+    var medium=selectVal('utm-medium','utm-medium-custom');
+
+    // term field only for cpc
+    $('utm-term-field').hidden = (medium!=='cpc');
+    if(medium!=='cpc') $('utm-term').value='';
+
+    var base=$('utm-base').value.trim();
+    if(!base){ $('utm-out').textContent='—'; $('utm-warn').hidden=true; return ''; }
+
+    var region=$('utm-region').value, funnel=$('utm-funnel').value, type=$('utm-type').value;
+    var name=clean($('utm-campaign').value);
+    var campaign=[region,funnel,type,name].filter(Boolean).join('_');
+    var id=$('utm-date').value;              // YYYY-MM-DD → utm_id (GA4 Campaign ID)
+    var content=clean($('utm-content').value);
+    var term=clean($('utm-term').value);
+
+    var params=[
+      ['utm_source',source],['utm_medium',medium],['utm_campaign',campaign],
+      ['utm_id',id],['utm_content',content],['utm_term',term]
+    ].filter(function(p){ return p[1]!=='' && p[1]!=null; });
+
+    var url;
+    try{ url=new URL(base); } catch(e){ $('utm-out').textContent='Invalid base URL'; return ''; }
+    params.forEach(function(p){ url.searchParams.set(p[0],p[1]); });
+    var out=url.toString();
+    $('utm-out').textContent=out;
+
+    // warnings
+    var targetHost=url.hostname.toLowerCase(), warn=$('utm-warn'), msg='';
+    if(OWN.indexOf(source)!==-1 && source===targetHost){
+      msg='⚠ Source is the same site as the target — that is an internal link. Don’t tag internal links (it resets the real source in GA4).';
+    } else if((source==='google'||source==='bing') && medium==='cpc'){
+      msg='⚠ Google/Bing Ads auto-tag with GCLID/MSCLKID. Do NOT hand-tag paid-search final URLs — use auto-tagging + GA4 linking, or you’ll break the Ads↔GA4 cost/attribution join.';
+    }
+    if(msg){ warn.textContent=msg; warn.hidden=false; } else { warn.hidden=true; }
+
+    var send=$('utm-send');
+    if(hostAllowed(out)){ send.disabled=false; send.title=''; }
+    else { send.disabled=true; send.title='Shortening is only for aenix.io / k.aenix.io / opc.aenix.io. Use Copy URL instead.'; }
+
+    return out;
+  }
+
+  ['utm-base','utm-source','utm-source-custom','utm-medium','utm-medium-custom','utm-campaign',
+   'utm-region','utm-funnel','utm-type','utm-content','utm-date','utm-term'].forEach(function(id){
+    var el=$(id); el.addEventListener('input',buildUtm); el.addEventListener('change',buildUtm);
+  });
+
+  $('utm-copy').addEventListener('click', function(){ var v=buildUtm(); if(v){ copy(v,$('utm-copy')); saveCampaign(clean($('utm-campaign').value)); } });
+  $('utm-send').addEventListener('click', function(){
+    var v=buildUtm(); if(!v || $('utm-send').disabled) return;
+    saveCampaign(clean($('utm-campaign').value));
+    $('sh-url').value=v; checkUrl();
+    $('sh-url').scrollIntoView({behavior:'smooth',block:'center'}); $('sh-url').focus();
+  });
+
+  // ── Shortener ──
+  function checkUrl(){
+    var v=$('sh-url').value.trim(), hint=$('sh-url-hint');
+    if(!v){ hint.textContent=''; hint.className='lt-hint'; return; }
+    if(hostAllowed(v)){ hint.textContent='✓ allowed domain'; hint.className='lt-hint ok'; }
+    else{ hint.textContent='✗ only aenix.io, k.aenix.io, opc.aenix.io can be shortened'; hint.className='lt-hint bad'; }
+  }
+  $('sh-url').addEventListener('input', checkUrl);
+
+  // Adding a link only touches this browser. Nothing reaches the repository
+  // until the batch is committed, and committing is a plain navigation to
+  // GitHub — this page holds no credential, and GitHub decides who may write.
+  var ALPHABET='abcdefghijkmnpqrstuvwxyz23456789';   // no look-alikes: no l/1, no o/0
+  var editing=null;
+
+  function randomSlug(){
+    var s='', b=new Uint8Array(6); crypto.getRandomValues(b);
+    for(var i=0;i<6;i++) s+=ALPHABET[b[i]%ALPHABET.length];
+    return s;
+  }
+  // Offer a handle up front rather than leaving the field blank: seeing the slug
+  // before committing beats discovering it afterwards, and it stays editable.
+  function suggestSlug(){
+    if(!$('sh-slug').value) $('sh-slug').value=freeSlug()||'';
+  }
+  function freeSlug(){
+    for(var i=0;i<12;i++){ var s=randomSlug(); if(!window.LinkState.taken(s)) return s; }
+    return null;
+  }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function showErr(m){ var e=$('sh-error'); e.textContent=m; e.hidden=false; }
+
+  $('sh-submit').addEventListener('click', function(){
+    var url=$('sh-url').value.trim(), slug=$('sh-slug').value.trim().toLowerCase();
+    var note=$('sh-note').value.trim();
+    $('sh-error').hidden=true;
+
+    if(!url){ showErr('Enter a URL to shorten.'); return; }
+    if(!hostAllowed(url)){ showErr('Only aenix.io, k.aenix.io and opc.aenix.io links can be shortened.'); return; }
+
+    if(slug){
+      if(!SLUG_RE.test(slug)){ showErr('Slug must be 1-64 chars: a-z, 0-9, hyphens (not at the ends).'); return; }
+      if(RESERVED.indexOf(slug)!==-1){ showErr('"'+slug+'" is reserved — pick another slug.'); return; }
+      if(slug!==editing && window.LinkState.taken(slug)){ showErr('"'+slug+'" is already taken.'); return; }
+    } else {
+      slug=freeSlug();
+      if(!slug){ showErr('Could not generate a free slug — try again.'); return; }
+    }
+
+    window.LinkState.upsert({ slug:slug, target_url:url, status:'active', note:note });
+    saveCampaign(clean($('utm-campaign').value));
+    editing=null; $('sh-cancel').hidden=true; $('sh-submit').textContent='Add to batch';
+    $('sh-url').value=''; $('sh-slug').value=''; $('sh-note').value=''; checkUrl();
+    suggestSlug();
+    document.getElementById('commit').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+  $('sh-cancel').addEventListener('click', function(){
+    editing=null; $('sh-cancel').hidden=true; $('sh-submit').textContent='Add to batch';
+    $('sh-url').value=''; $('sh-slug').value=''; $('sh-note').value=''; checkUrl(); $('sh-error').hidden=true;
+  });
+
+  function loadForEdit(slug){
+    var rec=window.LinkState.working().filter(function(r){ return r.slug===slug; })[0];
+    if(!rec) return;
+    editing=slug;
+    $('sh-url').value=rec.target_url||''; $('sh-slug').value=slug; $('sh-note').value=rec.note||'';
+    $('sh-submit').textContent='Save change'; $('sh-cancel').hidden=false; checkUrl();
+    $('sh-url').scrollIntoView({behavior:'smooth',block:'center'});
+  }
+
+  // ── pending changes ──
+  function renderPending(){
+    var changes=window.LinkState.changes();
+    var slugs=Object.keys(changes).sort();
+    var baseline=window.LinkState.baseline();
+    var has=slugs.length>0;
+    $('pc-count').textContent=slugs.length;
+    // nothing to commit is not a state worth drawing the eye to
+    $('pc-count').className='lt-count'+(has?' is-on':'');
+    $('pc-empty').hidden=has; $('pc-list').hidden=!has;
+    $('pc-actions').hidden=!has; $('pc-help').hidden=!has;
+    if(!has){ $('pc-list').innerHTML=''; return; }
+
+    $('pc-list').innerHTML=slugs.map(function(s){
+      var c=changes[s];
+      var was=baseline.filter(function(b){ return b.slug===s; })[0];
+      var kind;
+      if(c.op==='delete'){ kind='delete'; }
+      else if(!was){ kind='add'; }
+      else if(c.target_url===was.target_url && (c.note||'')===(was.note||'')){
+        // only the status moved — say which way, "edit" hides the one thing that changed
+        kind=(c.status||'active')==='active' ? 'enable' : 'disable';
+      } else { kind='edit'; }
+      return '<li class="lt-pending-item '+kind+'">'
+        +'<span class="lt-pending-op">'+kind+'</span>'
+        +'<code>/l/'+esc(s)+'/</code>'
+        +(c.op==='delete' ? '' : '<span class="lt-pending-target">'+esc(c.target_url)+'</span>')
+        +'<button class="lt-act" data-undo="'+esc(s)+'" type="button">Undo</button></li>';
+    }).join('');
+  }
+
+  $('pc-list').addEventListener('click', function(e){
+    var b=e.target.closest('[data-undo]'); if(!b) return;
+    window.LinkState.revert(b.getAttribute('data-undo'));
+  });
+
+  $('pc-discard').addEventListener('click', function(){
+    if(!confirm('Discard every uncommitted change?')) return;
+    window.LinkState.clear();
+  });
+
+  $('pc-commit').addEventListener('click', function(){
+    var name=prompt('Name this batch (it becomes the file name):', window.LinkState.suggestName());
+    if(!name) return;
+    name=clean(name) || window.LinkState.suggestName();
+    var a=document.createElement('a');
+    a.href=window.LinkState.commitUrl(name);
+    a.target='_blank'; a.rel='noopener noreferrer';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  });
+
+  document.addEventListener('linkstate:change', renderPending);
+  renderPending();
+  suggestSlug();
+  $('sh-reroll').addEventListener('click', function(){ $('sh-slug').value=''; suggestSlug(); });
+
+  var editParam=new URLSearchParams(location.search).get('edit');
+  if(editParam){ loadForEdit(editParam); history.replaceState(null,'',location.pathname+location.hash); }
+})();
+</script>
+{{ end }}

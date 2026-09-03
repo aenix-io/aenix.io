@@ -64,6 +64,7 @@ faq:
 {{< vmware-calculator lang="de" currency="€" >}}
 
 Die Lizenzkosten, die Sie an VMware/Broadcom zahlen, entfallen auf einer offenen Plattform (Apache 2.0, keine Pro-Core-Gebühr). Es bleiben Support und die einmalige Migration — beides oben modelliert. Für ein tieferes, Workload-genaues Modell nutzen Sie die **[Cloud-Repatriation-Lösung](/de/loesungen/cloud-repatriation/)**.
+
 ---
 
 ## Wie gerechnet wird
@@ -85,6 +86,7 @@ Die Lizenzkosten, die Sie an VMware/Broadcom zahlen, entfallen auf einer offenen
 </div>
 
 Bewusst einfache Eingaben für ein belegbares Ergebnis. Eine volle TCO umfasst Strom, Hardware-Refresh, Personal und die Workloads, die in der Cloud bleiben — das modellieren wir mit Ihnen im Gespräch.
+
 ---
 
 ## Aus der Zahl einen Plan machen

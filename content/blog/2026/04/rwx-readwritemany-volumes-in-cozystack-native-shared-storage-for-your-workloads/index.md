@@ -21,8 +21,8 @@ quiz:
       options:
         - { text: "Plain Linux NFSv4 server running on a control-plane node", correct: false }
         - { text: "iSCSI exports with multipath and a shared LVM pool", correct: false }
-        - { text: "LINSTOR with NFS-Ganesha and CiliumNetworkPolicy isolation", correct: true }
-      explanation: "RWX is powered by LINSTOR + NFS-Ganesha. Each RWX PVC automatically provisions a dedicated NFS server backed by replicated block storage. CiliumNetworkPolicy handles traffic isolation between tenants."
+        - { text: "An NFS server provisioned automatically per RWX PVC on top of replicated block storage, with CiliumNetworkPolicy isolation", correct: true }
+      explanation: "The kubevirt-csi-driver provisions a dedicated NFS server for each RWX PVC, backed by DRBD-replicated (LINSTOR) block storage. CiliumNetworkPolicy handles traffic isolation between tenants."
     - q: "How does a tenant request an RWX volume?"
       options:
         - { text: "Create a standard PVC with ReadWriteMany and storageClassName nfs", correct: true }
@@ -48,7 +48,9 @@ Starting with Cozystack v1.0, you can use ReadWriteMany (RWX) persistent volumes
 
 ![image](https://cdn-images-1.medium.com/max/1024/1*StrJHMn6Ie1s_vkNrX_-UQ.png)
 
-Under the hood, RWX is powered by LINSTOR + NFS-Ganesha: each RWX PVC automatically provisions a dedicated NFS server backed by replicated block storage, with CiliumNetworkPolicy handling traffic isolation. For tenants, it’s as simple as creating a standard PVC with accessModes: [ReadWriteMany] and storageClassName: nfs.
+Under the hood, the kubevirt-csi-driver provisions a dedicated NFS server for each RWX PVC, backed by DRBD-replicated (LINSTOR) block storage, with CiliumNetworkPolicy handling traffic isolation. For tenants, it’s as simple as creating a standard PVC with accessModes: [ReadWriteMany] and storageClassName: nfs.
+
+*Update (September 2026, Cozystack v1.6):* on the management cluster, RWX volumes must sit on a DRBD-backed LINSTOR StorageClass — linstor-csi rejects RWX on non-DRBD classes. Mounting an existing external NFS export instead is handled by the optional `cozystack.nfs-driver` package (csi-driver-nfs). See the current [storage documentation](https://cozystack.io/docs/v1.6/storage/).
 
 What this unlocks:
 → Multi-replica deployments sharing persistent state
@@ -58,7 +60,7 @@ What this unlocks:
 
 What is Cozystack? Cozystack is a free and open-source PaaS platform and framework for building clouds. It enables you to run a full-featured cloud platform on bare metal with managed Kubernetes, VMs, databases, and storage — all powered by proven CNCF technologies like Talos Linux, KubeVirt, Flux CD, and LINSTOR.
 
-📖 Documentation: [https://cozystack.io/docs/v1/storage/nfs/](https://cozystack.io/docs/v1/storage/nfs/)
+📖 Documentation: [https://cozystack.io/docs/v1.6/storage/nfs/](https://cozystack.io/docs/v1.6/storage/nfs/)
 🔧 Feature PR: [https://github.com/cozystack/cozystack/pull/2042](https://github.com/cozystack/cozystack/pull/2042)
 
 — -

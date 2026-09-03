@@ -387,6 +387,11 @@ menus:
       parent: resources
       weight: 6
 
+    - name: Compliance evidence
+      url: /compliance/
+      parent: resources
+      weight: 7
+
     # ── Company ──
     - name: Company
       url: /about/
@@ -720,6 +725,10 @@ menus:
       url: /de/ressourcen/vmware-kostenrechner/
       parent: resources-de
       weight: 4
+    - name: Compliance-Nachweise
+      url: /de/compliance/
+      parent: resources-de
+      weight: 5
     - name: Unternehmen
       url: /de/ueber-uns/
       identifier: company-de

@@ -37,7 +37,7 @@ faq:
   - q: "How does private cloud consulting differ from VMware migration consulting?"
     a: "VMware migration is one path that can lead to private cloud when the destination is private. A private cloud engagement covers all paths to a customer-controlled platform: VMware exit, OpenStack rebuild, hyperscaler repatriation, and greenfield builds."
   - q: "What does an engagement cover?"
-    a: "Four areas: architecture design (compute via KubeVirt, LINSTOR/Ceph storage, Cilium networking, identity, observability, backup/DR); multi-tenancy and operations model using the Tenant CRD, quotas, RBAC, and audit; migration and integration; and operational handover with runbooks and knowledge transfer to your platform team."
+    a: "Four areas: architecture design (compute via KubeVirt, LINSTOR (DRBD) storage, Cilium networking, identity, observability, backup/DR); multi-tenancy and operations model using the Tenant CRD, quotas, RBAC, and audit; migration and integration; and operational handover with runbooks and knowledge transfer to your platform team."
   - q: "How long does it take and how is it structured?"
     a: "It starts with a free 30-minute discovery call, then an architecture review of 5-15 days producing a target architecture and capacity model, followed by an optional implementation engagement of 3-12 months with Aenix engineers integrated into your team, and optional managed operation afterward."
   - q: "Is the private cloud platform vendor-locked or licensed per CPU?"
@@ -197,8 +197,7 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 {{< clients >}}
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
 <!-- /BLOCK 8 -->
 
 ---

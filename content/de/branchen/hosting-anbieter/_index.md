@@ -49,7 +49,7 @@ faq:
   <a class="cta-secondary" href="/de/blog/2026/05/hosting-anbieter-plattform-modernisierung/">Hosting-Plattform-Modernisierung →</a>
 </div>
 
-**Sehen Sie das Kundenportal selbst.** Die cozyportal-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
+**Sehen Sie das Kundenportal selbst.** Die Cozystack Dashboard-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
@@ -75,7 +75,7 @@ faq:
 - **Modernisierung von VPS zum Cloud-Produkt** — Multi-Tenant-Kubernetes-native Plattform
 - **Service-Katalog-Erweiterung** — VMs + Container + Managed Databases + S3 + GPU auf einer Plattform
 - **WHMCS-Integration** — produktionsreif, zwei Integrationsmodi
-- **Kundenseitiges Portal** — cozyportal, anpassbar pro Anbieter
+- **Kundenseitiges Portal** — Cozystack Dashboard, anpassbar pro Anbieter
 - **Souveräne-Cloud-Produkt-Launches** — für regionale Märkte
 
 Für ein sales-geführtes Engagement siehe **[Public Cloud Builder](/de/dienstleistungen/public-cloud-builder/)** und **[White-Label-Cloud](/de/dienstleistungen/white-label-cloud/)**.
@@ -88,7 +88,7 @@ Für ein sales-geführtes Engagement siehe **[Public Cloud Builder](/de/dienstle
 ## Warum Cozystack zu Hosting-Anbietern passt
 
 - **Multi-Tenant Tenant CRD** — Kunden-Isolation auf Produktionsniveau
-- **WHMCS-Integration** — zwei Modi (native UI + cozyportal-Frontend)
+- **WHMCS-Integration** — zwei Modi (native UI + Cozystack Dashboard-Frontend)
 - **Open-Source-Plattform** — keine Per-CPU-Lizenzierung, Hosting-Marge bleibt erhalten
 - **Service-Katalog** — weit über VMs hinaus (Managed DBs, S3, GPU)
 - **Operative Einfachheit** — eine Plattform, ein Team
@@ -97,7 +97,7 @@ Für ein sales-geführtes Engagement siehe **[Public Cloud Builder](/de/dienstle
 <div class="diagram">
 <div class="diagram__node"><b>WHMCS-Billing</b><div class="diagram__chips"><span>Zwei Integrationsmodi</span><span>Tenant Lock/Suspension</span></div></div>
 <div class="diagram__conn">provisioniert über</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b><div class="diagram__chips"><span>cozyportal</span><span>Migrations-Tooling</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix Public Cloud Platform</b><div class="diagram__chips"><span>Cozystack Dashboard</span><span>Migrations-Tooling</span></div></div>
 <div class="diagram__conn">stellt bereit</div>
 <div class="diagram__node"><b>Cozystack Service-Katalog</b><div class="diagram__chips"><span>VMs</span><span>Managed Databases</span><span>S3</span><span>GPU</span></div></div>
 <div class="diagram__conn">isoliert Kunden über</div>

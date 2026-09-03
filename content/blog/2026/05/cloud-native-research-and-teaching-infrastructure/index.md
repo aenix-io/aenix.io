@@ -33,9 +33,9 @@ quiz:
       options:
         - { text: "KubeVirt live VM migration", correct: false }
         - { text: "Tenant CRD scoped per cohort", correct: true }
-        - { text: "cozyportal self-service UI", correct: false }
+        - { text: "Cozystack Dashboard self-service UI", correct: false }
         - { text: "Velero backup and restore", correct: false }
-      explanation: "Tenant CRD per cohort isolates students; quota and RBAC contain misconfiguration; instructor self-service via cozyportal lets instructors create/destroy student environments without an IT ticket."
+      explanation: "Tenant CRD per cohort isolates students; quota and RBAC contain misconfiguration; instructor self-service via Cozystack Dashboard lets instructors create/destroy student environments without an IT ticket."
     - q: "Why does the article argue that per-CPU subscription pricing fits university economics poorly?"
       options:
         - { text: "Per-CPU pricing is illegal under EU procurement rules", correct: false }
@@ -72,7 +72,7 @@ Each has limits:
 
 What modern research computing increasingly wants: **shared GPU pool with strong isolation, self-service for PIs, IaC-managed for reproducibility, integrated with national/European research infrastructure where applicable.**
 
-A Kubernetes-native platform like Cozystack delivers this. KubeVirt handles legacy VM-based research workflows; native containers handle modern ML pipelines. NVIDIA vGPU + MIG + time-slicing share GPU across labs. Tenant CRD provides per-lab isolation. Cozyportal gives PIs self-service. The same infrastructure can integrate with EuroHPC for largest workloads (many universities have hybrid arrangements).
+A Kubernetes-native platform like Cozystack delivers this. KubeVirt handles legacy VM-based research workflows; native containers handle modern ML pipelines. The NVIDIA GPU Operator hands whole GPUs to workloads and HAMi shares a single GPU across labs by memory and compute cores; VMs get VFIO passthrough or NVIDIA vGPU. Tenant CRD provides per-lab isolation. The Cozystack Dashboard gives PIs self-service. The same infrastructure can integrate with EuroHPC for largest workloads (many universities have hybrid arrangements).
 
 ### Mission 2 — reproducible research infrastructure
 

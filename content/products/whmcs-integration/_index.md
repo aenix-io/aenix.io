@@ -23,7 +23,7 @@ quick_facts:
   - label: "Who it's for"
     value: "Hosting providers, ISPs, MSPs and regional clouds already running WHMCS (or planning to)."
   - label: "Services exposed"
-    value: "Managed Kubernetes, databases (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ, NATS), VMs, message brokers, S3-compatible object storage, GPU workloads."
+    value: "Managed Kubernetes, databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), VMs, message brokers, S3-compatible object storage, GPU workloads."
   - label: "Billing"
     value: "Provisioning, metering and invoicing flow through your existing WHMCS billing."
   - label: "Foundation"
@@ -35,7 +35,7 @@ faq:
   - q: "What does the WHMCS integration actually add?"
     a: "It lets your WHMCS customers self-serve modern cloud services — managed Kubernetes, databases, VMs, message brokers, object storage and GPU — while provisioning, metering and invoicing run through your existing WHMCS billing. Cozystack is the platform underneath; WHMCS stays your commercial front."
   - q: "Which services can I sell through it?"
-    a: "Managed Kubernetes clusters, managed databases (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ, NATS), virtual machines (KubeVirt-based, Linux and Windows), message brokers and queues, S3-compatible object storage, and GPU workloads for AI/ML and rendering."
+    a: "Managed Kubernetes clusters, managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), virtual machines (KubeVirt-based, Linux and Windows), message brokers and queues, S3-compatible object storage, and GPU workloads for AI/ML and rendering."
   - q: "Do I have to replace my current setup?"
     a: "No. The integration adds services on top of the WHMCS panel you already run — no separate control plane and no rip-and-replace. Cozystack runs on your own or leased bare metal."
   - q: "Is the plugin open source?"
@@ -89,7 +89,7 @@ The integration exposes the Cozystack service catalog as WHMCS products your cus
 Multi-tenant Kubernetes clusters with isolation, quotas and RBAC per customer — sold and billed as a WHMCS product.
 
 **Managed databases**
-PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ, NATS — provisioned on demand, metered and invoiced.
+PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS — provisioned on demand, metered and invoiced.
 
 **Virtual machines**
 KubeVirt-based VMs, Linux and Windows, with custom image/template upload.

@@ -62,7 +62,7 @@ In 2026 the realistic shortlist for production virtualization platforms includes
 | **Open source** | No | No | Full |
 | **Foundation** | Proprietary KVM (AHV) | vSphere/ESXi | KubeVirt on Kubernetes |
 | **Multi-tenancy** | Limited | vCloud Director | Tenant CRD |
-| **Storage** | Distributed (proprietary) | vSAN | LINSTOR or Ceph |
+| **Storage** | Distributed (proprietary) | vSAN | LINSTOR (DRBD) |
 | **Network** | AHV networking | NSX | Cilium |
 | **Containers** | Karbon (separate) | Tanzu (separate) | Native |
 | **Hardware** | Nutanix appliance | x86 | Commodity x86 |

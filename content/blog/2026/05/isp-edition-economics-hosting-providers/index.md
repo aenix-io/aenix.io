@@ -51,8 +51,8 @@ unit economics: what does it cost per tenant, what's a realistic ARPU,
 how many tenants until break-even, and where does the model fail.
 
 This article is the working version of that conversation. It assumes
-the technology decision is settled (Cozystack-based Ænix Platform ISP
-Edition) and focuses on whether the economics fit *your* hosting
+the technology decision is settled (the Cozystack-based Ænix Public
+Cloud Platform) and focuses on whether the economics fit *your* hosting
 business — not the abstract one.
 
 ## What Public Cloud Platform actually delivers
@@ -62,13 +62,13 @@ Before economics, scope. Public Cloud Platform is the turnkey cloud-in-a-box
 mid data centres. It includes:
 
 - **Multi-tenant Cozystack platform** running on customer-controlled
-  bare metal (KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD).
-- **cozyportal** — customer-facing self-service portal, brandable to
+  bare metal (KubeVirt + Cilium + Kube-OVN + LINSTOR + Tenant CRD).
+- **Cozystack Dashboard** — customer-facing self-service portal, brandable to
   your hosting brand.
 - **WHMCS integration** — billing flows through the customer-management
   system most hosting providers already operate.
 - **Service catalog** — VMs, tenant Kubernetes clusters, managed
-  databases (PostgreSQL, MySQL, Redis, Kafka, etc.), S3-compatible
+  databases (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, etc.), S3-compatible
   object storage, GPU services. Curatable per provider.
 - **Tenant lock / suspension** — operational hooks for non-payment
   and policy enforcement.
@@ -82,7 +82,7 @@ depth.
 
 ## Pricing model
 
-Public Cloud Platform is the only Ænix Platform edition with a published entry
+The Public Cloud Platform is the only Ænix product with a published entry
 price: from **$1,250/month** for the Basic support tier covering 10
 nodes. Higher tiers (Standard, Enterprise) add SLA, dedicated TAM,
 24×7 response, with pricing on RFP. Ænix does not charge per VM,
@@ -171,12 +171,12 @@ Three failure patterns recur:
 ### 1. Customer-facing portal under-investment
 
 Hosting providers historically compete on price and reliability.
-Cozyportal out of the box is functional but generic; differentiation
+The Cozystack Dashboard out of the box is functional but generic; differentiation
 comes from polish (UX flows that match how *your* customers think about
 ordering, configuring, paying). Providers who treat the portal as
 "good enough" lose conversion to providers who invest in it.
 
-Ænix engagement includes cozyportal brand customization; deeper UX
+Ænix engagement includes Cozystack Dashboard brand customization; deeper UX
 work is typically a separate Phase 2.
 
 ### 2. Service-catalog mismatch
@@ -255,7 +255,7 @@ It fits when at least three of the following hold:
 5. **Your customer count is 300+ today or you have credible growth
    path to 1,000+** — for fixed-cost amortisation.
 6. **You're willing to invest in customer-facing portal polish** —
-   not just treat cozyportal as "good enough."
+   not just treat Cozystack Dashboard as "good enough."
 
 Fewer than three: usually a different answer is better — staying on
 existing infrastructure with cost optimisation, partnering with a

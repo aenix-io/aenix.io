@@ -1,11 +1,12 @@
 ---
 title: "NIS2 Compliance Cloud Architecture Checklist — download free"
-description: "A 35-point checklist for essential and important entities subject to NIS2. Covers Article 21 risk management measures (10 areas), Article 23 incident..."
+description: "A free 35-point checklist for essential and important entities subject to NIS2. Covers Article 21 risk-management measures, Article 23 reporting, and more."
 type: "page"
 related_pages:
   - /solutions/nis2-compliance
   - /resources/dora-compliance-checklist
   - /products/private-cloud-platform/
+hreflang_de: /de/ressourcen/nis2-compliance-checkliste/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -39,10 +40,10 @@ faq:
 
 **A 35-point checklist for essential and important entities subject to NIS2. Covers Article 21 risk management measures (10 areas), Article 23 incident reporting timelines, supply-chain transparency, business continuity, MFA, encryption, and architecture-level controls. Used by Ænix during NIS2-aligned readiness engagements.**
 
-> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — NIS2-aligned by design (Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging, coordinated vulnerability disclosure aligned with Article 30).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — NIS2-aligned by design (Tenant CRD with NetworkPolicy / Cilium for segmentation, customer-controlled encryption, audit-ready logging, coordinated vulnerability disclosure aligned with Article 12).
 
 <div class="lead-magnet-form">
-{{< pipedrive-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" resource="nis2-compliance-checklist" >}}
 <p class="lead-magnet-form__note">Download the NIS2 checklist (PDF)</p>
 </div>
 
@@ -50,14 +51,13 @@ faq:
 
 ## What's in the checklist
 
-- **Risk management** (Article 21) — 10-point coverage of cybersecurity risk-management measures
-- **Incident reporting** — 24-hour / 72-hour / 1-month timeline readiness
-- **Supply-chain security** — to second hop minimum
-- **Business continuity** — RTO/RPO documented and tested
-- **MFA and access control**
-- **Encryption posture**
-- **Vulnerability management** — patch SLA, SAST/DAST in CI
-- **Audit and effectiveness assessment**
+Five sections, 35 architectural control points:
+
+1. **Risk management** (10 points) — the Article 21(2)(a)-(j) cybersecurity risk-management measures, plus the management-body accountability of Article 20
+2. **Incident handling and reporting** (6 points) — Article 23(4) readiness: 24-hour early warning, 72-hour incident notification, one-month final report
+3. **Business continuity and vulnerability management** (7 points) — documented and tested RTO/RPO, patch SLA, SAST/DAST in CI, coordinated vulnerability disclosure (Article 12)
+4. **Supply chain and cryptography** (6 points) — Article 21(2)(d) supplier security to the second hop, Article 21(2)(h) cryptography and encryption posture
+5. **Access control and audit** (6 points) — Article 21(2)(i)-(j) access control and MFA, plus Article 21(2)(f) effectiveness assessment
 
 ---
 

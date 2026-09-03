@@ -1,0 +1,25 @@
+{{ define "head" }}
+{{ $css := resources.Get "css/cert.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ end }}
+{{ define "main" }}
+<article class="cert" data-tpl="cert-lesson">
+  <section class="cert__hero">
+    <div class="container">
+      <p class="cert__eyebrow">
+        <a href="/certification/materials/" style="color:inherit">Материалы к экзамену</a>
+        {{ with .Params.lesson }} · Урок {{ . }}{{ end }}
+      </p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="cert__lead">{{ . }}</p>{{ end }}
+    </div>
+  </section>
+  <div class="container">
+    <div class="lesson">{{ .Content }}</div>
+    <nav class="lnav">
+      {{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><span>Назад</span>{{ .Title }}</a>{{ else }}<span></span>{{ end }}
+      {{ with .NextInSection }}<a href="{{ .RelPermalink }}" style="text-align:right"><span>Дальше</span>{{ .Title }}</a>{{ end }}
+    </nav>
+  </div>
+</article>
+{{ end }}

@@ -203,8 +203,7 @@ Most engagements start with assessment.
 We've run DevOps consulting and transformation engagements for service providers, regulated enterprises, AI/GPU operators, and telecom operators across the EU, DACH, and Central Asia.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
 <!-- /BLOCK 8 -->
 
 ---

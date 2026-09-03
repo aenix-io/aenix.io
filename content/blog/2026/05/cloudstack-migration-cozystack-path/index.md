@@ -96,12 +96,12 @@ CloudStack natively.
 | **Management server** | Cozystack control plane (Kubernetes API + cozystack-controller) | Different operational model — declarative GitOps vs imperative CloudStack API |
 | **System VMs (SSVM, CPVM, VR)** | Built into Cozystack platform — no per-tenant system VMs needed | Substantial operational simplification |
 | **Hypervisor (KVM, XenServer, VMware)** | KubeVirt on Talos | KVM-only path is most common; VMware-on-CloudStack typically becomes VMware-to-Cozystack migration first |
-| **Primary storage** | LINSTOR (DRBD) or Ceph | Different replication model; capacity sizing recalculation |
-| **Secondary storage** | SeaweedFS or Ceph RGW (S3-compatible) | Better for snapshots, backups, ISOs; native S3 API customers can consume |
+| **Primary storage** | LINSTOR (DRBD) | Different replication model; capacity sizing recalculation |
+| **Secondary storage** | SeaweedFS (S3-compatible) | Better for snapshots, backups, ISOs; native S3 API customers can consume |
 | **Networking (Advanced / Basic / Isolated)** | Cilium (eBPF) | Architectural rethink — Cilium is L4/L7 with eBPF; CloudStack network model is L2/L3-anchored |
 | **Virtual router (VR)** | Cilium + MetalLB or BGP | Different concept; routing happens at Cilium level |
 | **Accounts and domains (multi-tenancy)** | Tenant CRD with nested tenants | Conceptually closer to CloudStack than other Kubernetes platforms |
-| **API and UI** | Kubernetes API + cozyportal | Customer-facing surface differs |
+| **API and UI** | Kubernetes API + Cozystack Dashboard | Customer-facing surface differs |
 | **Volumes, snapshots, templates** | KubeVirt CDI + DataVolume + VirtualMachineImage | Image migration via image-conversion |
 | **Service offering / disk offering** | Cozystack package definitions | Different model; product team curates catalog |
 | **Network offering** | Cilium NetworkPolicy + ingress | Different abstraction |
@@ -133,7 +133,7 @@ migrate-later / stay / re-architect), risk flags, timing.
 
 Hardware procurement (or repurpose). Cozystack platform deployed on
 new infrastructure alongside the existing CloudStack estate. Cilium
-networking validated. LINSTOR or Ceph storage operationalised.
+networking validated. LINSTOR storage operationalised.
 Identity integration (Keycloak or whatever IdP the provider operates).
 
 Tenant CRD model designed to map cleanly from CloudStack's account /
@@ -145,7 +145,7 @@ not yet customer-facing.
 
 ### Phase 2 — Service catalog and customer-facing portal (2-4 months)
 
-cozyportal customisation to match the provider's brand. WHMCS integration
+Cozystack Dashboard customisation to match the provider's brand. WHMCS integration
 if the provider uses WHMCS (most CloudStack-on-WHMCS providers do).
 Service-catalog rollout — start with foundational services (VMs,
 volumes, S3 buckets, basic networking), layer in managed services
@@ -165,7 +165,7 @@ cohort:
    group rules to NetworkPolicies, VPC routing to ClusterPool +
    Cilium L3.
 3. **Storage migration** — volume data migrated from CloudStack
-   primary storage to LINSTOR/Ceph. Snapshot history preserved or
+   primary storage to LINSTOR. Snapshot history preserved or
    pruned per retention policy.
 4. **Cutover** — workload runs in parallel on Cozystack for a
    validation window (typically 7-14 days). Customer notified of
@@ -248,7 +248,7 @@ fully retired.
 - **[CloudStack migration hub](/migration/cloudstack/)** — high-level
   migration entry point
 - **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
-  the most common target edition for CloudStack migrations
+  the most common target product for CloudStack migrations
 - **[Hosting providers industry page](/industries/hosting-providers/)** —
   hosting-provider-specific positioning
 - **[Hosting provider platform modernization](/blog/2026/05/hosting-provider-platform-modernization/)** —

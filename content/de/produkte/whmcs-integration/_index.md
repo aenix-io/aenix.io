@@ -23,7 +23,7 @@ quick_facts:
   - label: "Für wen"
     value: "Hosting-Anbieter, ISPs, MSPs und regionale Clouds, die bereits WHMCS nutzen (oder es planen)."
   - label: "Verfügbare Services"
-    value: "Managed Kubernetes, Datenbanken (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ, NATS), VMs, Message-Broker, S3-kompatibler Objektspeicher, GPU-Workloads."
+    value: "Managed Kubernetes, Datenbanken (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), VMs, Message-Broker, S3-kompatibler Objektspeicher, GPU-Workloads."
   - label: "Abrechnung"
     value: "Provisionierung, Messung und Rechnungsstellung laufen über Ihre bestehende WHMCS-Abrechnung."
   - label: "Grundlage"
@@ -35,7 +35,7 @@ faq:
   - q: "Was fügt die WHMCS-Integration konkret hinzu?"
     a: "Ihre WHMCS-Kunden können moderne Cloud-Services selbst bestellen — Managed Kubernetes, Datenbanken, VMs, Message-Broker, Objektspeicher und GPU — während Provisionierung, Messung und Rechnungsstellung über Ihre bestehende WHMCS-Abrechnung laufen. Cozystack ist die Plattform darunter; WHMCS bleibt Ihre kommerzielle Oberfläche."
   - q: "Welche Services kann ich darüber verkaufen?"
-    a: "Managed-Kubernetes-Cluster, Managed Datenbanken (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ, NATS), virtuelle Maschinen (KubeVirt-basiert, Linux und Windows), Message-Broker und Queues, S3-kompatiblen Objektspeicher und GPU-Workloads für KI/ML und Rendering."
+    a: "Managed-Kubernetes-Cluster, Managed Datenbanken (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), virtuelle Maschinen (KubeVirt-basiert, Linux und Windows), Message-Broker und Queues, S3-kompatiblen Objektspeicher und GPU-Workloads für KI/ML und Rendering."
   - q: "Muss ich mein aktuelles Setup ersetzen?"
     a: "Nein. Die Integration ergänzt das WHMCS-Panel, das Sie bereits betreiben — ohne separate Control Plane und ohne Rip-and-Replace. Cozystack läuft auf Ihrer eigenen oder gemieteten Bare-Metal-Hardware."
   - q: "Ist das Plugin Open Source?"
@@ -89,7 +89,7 @@ Die Integration stellt den Cozystack-Servicekatalog als WHMCS-Produkte bereit, d
 Mandantenfähige Kubernetes-Cluster mit Isolation, Quotas und RBAC je Kunde — als WHMCS-Produkt verkauft und abgerechnet.
 
 **Managed Datenbanken**
-PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ, NATS — on demand provisioniert, gemessen und in Rechnung gestellt.
+PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS — on demand provisioniert, gemessen und in Rechnung gestellt.
 
 **Virtuelle Maschinen**
 KubeVirt-basierte VMs, Linux und Windows, mit Upload eigener Images/Templates.

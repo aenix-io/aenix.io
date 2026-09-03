@@ -31,9 +31,9 @@ quiz:
     - q: "Welche Pro-Kunde-Funktionalität wird gebrandet bereitgestellt?"
       options:
         - { text: "Nur Logo-Änderung", correct: false }
-        - { text: "Gebrandetes kundenorientiertes Portal (cozyportal customizable: Farben, Logo, Domain, Service-Katalog-Optionen)", correct: true }
+        - { text: "Gebrandetes kundenorientiertes Portal (Cozystack Dashboard customizable: Farben, Logo, Domain, Service-Katalog-Optionen)", correct: true }
         - { text: "Nichts gebrandet", correct: false }
-      explanation: "Gebrandetes cozyportal: MSP kann Farben, Logo, Domain, Service-Katalog-Optionen anpassen. MSP kann auch Service-Katalog kuratieren — z.B. nur PostgreSQL exposen, Kafka verstecken wenn der MSP es nicht supportet."
+      explanation: "Gebrandetes Cozystack Dashboard: MSP kann Farben, Logo, Domain, Service-Katalog-Optionen anpassen. MSP kann auch Service-Katalog kuratieren — z.B. nur PostgreSQL exposen, Kafka verstecken wenn der MSP es nicht supportet."
     - q: "Was ermöglicht WHMCS-Integration?"
       options:
         - { text: "Compute-Orchestration", correct: false }

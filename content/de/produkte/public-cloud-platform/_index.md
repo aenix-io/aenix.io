@@ -5,7 +5,7 @@ type: "page"
 language: "de"
 hreflang_en: /products/public-cloud-platform/
 direct_answer: |
-  **Die Ænix Public Cloud Platform ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Sie bündelt Hosting-Panel, kundenseitiges Portal (cozyportal), Billing, Payment-Processing, Tenant-Suspension und Support in einem produktisierten Stack auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Die Plattform ersetzt OpenStack, VMware Cloud Director, Virtuozzo und eigene In-House-Panels, ist WHMCS-integriert und in Wochen produktionsreif. Aenix liefert Enterprise-Support ab 1.250 USD/Monat sowie produktisierte Migrations-Module und Engagement-Expertise für den Umstieg von VMware, OpenStack, Virtuozzo und OpenNebula.**
+  **Die Ænix Public Cloud Platform ist eine schlüsselfertige, Kubernetes-native Cloud-Plattform für kleine und mittlere Hosting-Anbieter, MSPs, regionale Cloud-Anbieter und Rechenzentren. Sie bündelt Hosting-Panel, kundenseitiges Portal (Cozystack Dashboard), Billing, Payment-Processing, Tenant-Suspension und Support in einem produktisierten Stack auf Basis des Open-Source-Projekts Cozystack (CNCF, Apache 2.0). Die Plattform ersetzt OpenStack, VMware Cloud Director, Virtuozzo und eigene In-House-Panels, ist WHMCS-integriert und in Wochen produktionsreif. Aenix liefert Enterprise-Support ab 1.250 USD/Monat sowie produktisierte Migrations-Module und Engagement-Expertise für den Umstieg von VMware, OpenStack, Virtuozzo und OpenNebula.**
 quick_facts:
   - label: "Was es ist"
     value: "Schlüsselfertige Cloud-in-a-Box für Hosting-Anbieter und MSPs: Panel, Billing, Portal, Payments und Support auf Kubernetes-nativer Basis (Cozystack)"
@@ -16,7 +16,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
   - label: "Architektur"
-    value: "Talos + KubeVirt (VMs und Container über eine Kubernetes-API), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit, cozyportal, VictoriaMetrics + VictoriaLogs"
+    value: "Talos + KubeVirt (VMs und Container über eine Kubernetes-API), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit, Cozystack Dashboard, VictoriaMetrics + VictoriaLogs"
   - label: "Ersetzt"
     value: "OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, eigene In-House-Panels"
   - label: "Pricing"
@@ -25,17 +25,17 @@ faq:
   - q: "Wie unterscheidet sich die Public Cloud Platform vom Selbstbetrieb von Open-Source-Cozystack?"
     a: "Cozystack liefert den Motor, die Public Cloud Platform das fertige Auto: WHMCS-Integration, Billing, Kunden-Portal, Payment-Processing, Tenant-Suspension und Enterprise-Support — alle Surfaces, die ein echtes Cloud-Geschäft braucht. Cozystack bleibt Apache-2.0-Open-Source; die Public Cloud Platform ergänzt produktisierte Module und einen Support-Tier."
   - q: "Was kostet die Public Cloud Platform?"
-    a: "Der Entry-Support-Tier startet ab 1.250 USD/Monat und umfasst direkten Support-Kanal, Zugang zu ISP-spezifischen Modulen und Migrations-Expertise. Höhere Tiers bringen einen Named Technical Account Manager. Migrations- und Build-Engagements werden projektbasiert im Discovery-Call kalkuliert."
+    a: "Der Entry-Support-Tier startet ab 1.250 USD/Monat und umfasst direkten Support-Kanal, Zugang zu Provider-spezifischen Modulen und Migrations-Expertise. Höhere Tiers bringen einen Named Technical Account Manager. Migrations- und Build-Engagements werden projektbasiert im Discovery-Call kalkuliert."
   - q: "Können wir unser eigenes Billing statt WHMCS nutzen?"
-    a: "Ja. Es gibt zwei Integrationsmodi: WHMCS als kundenseitiges Frontend mit Cozystack als Backend, oder cozyportal als Frontend mit WHMCS als Billing-Backend. Custom-Billing wird bei Bedarf unterstützt, da die Plattform vollständige Nutzungsdaten über eine klare API bereitstellt."
+    a: "Ja. Es gibt zwei Integrationsmodi: WHMCS als kundenseitiges Frontend mit Cozystack als Backend, oder Cozystack Dashboard als Frontend mit WHMCS als Billing-Backend. Custom-Billing wird bei Bedarf unterstützt, da die Plattform vollständige Nutzungsdaten über eine klare API bereitstellt."
   - q: "Von welchen Plattformen migriert die Public Cloud Platform?"
     a: "Aenix liefert produktisierte Module und Runbooks für die Migration von VMware Cloud Director / vSphere, OpenStack, Virtuozzo, OpenNebula und eigenen Panels. Häufigster Trigger 2026 ist der Broadcom-Subscription-Druck bei VMware. Migrationen erfolgen mit Erfahrung aus Produktions-Engagements."
   - q: "Wie lange dauert eine Migration von VMware?"
     a: "Der produktisierte Installer bringt die Public Cloud Platform in Wochen live. Die eigentliche Kundenmigration ist workload-abhängig — typisch ist ein Parallel-Run mit kohorten-basierter Migration über 3-6 Monate für mittelgroße Hosting-Estates."
   - q: "Unterstützt die Public Cloud Platform White-Label und Reseller-Modelle?"
-    a: "Ja. cozyportal ist vollständig white-label-fähig pro Anbieter (Farben, Logo, Domain) und unterstützt ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden). Das Partner-Programm bietet bis zu 40% Marge inklusive Deal-Registrierung, Sales-Kit und Technical-Pre-Sales-Support."
+    a: "Ja. Cozystack Dashboard ist vollständig white-label-fähig pro Anbieter (Farben, Logo, Domain) und unterstützt ein Multi-Tier-Reseller-Modell (Aenix → MSP → MSP-Kunden). Das Partner-Programm bietet bis zu 40% Marge inklusive Deal-Registrierung, Sales-Kit und Technical-Pre-Sales-Support."
   - q: "Welche Services bietet der Katalog jenseits von VMs?"
-    a: "Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kafka via Strimzi, ClickHouse via Altinity, RabbitMQ, NATS), S3-kompatibler Object Storage (SeaweedFS), HTTP-Cache, VPN-Service (Outline), Kubernetes-Cluster und GPU-Workloads — bereitstellbar per geführtem Wizard ohne YAML für Endkunden."
+    a: "Managed Databases (PostgreSQL via Cloud Native PG, MariaDB, Redis, Kafka via Strimzi, ClickHouse via Altinity, RabbitMQ, NATS), S3-kompatibler Object Storage (SeaweedFS), HTTP-Cache, VPN-Service (Outline), Kubernetes-Cluster und GPU-Workloads — bereitstellbar per geführtem Wizard ohne YAML für Endkunden."
 aliases:
   - /de/produkte/aenix-platform/provider-edition/
   - /de/produkte/aenix-platform/public-cloud-edition/
@@ -48,7 +48,7 @@ aliases:
   <a class="cta-secondary" href="/de/produkte/">Alle Plattforms →</a>
 </div>
 
-**Sehen Sie das Kundenportal selbst.** Die cozyportal-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
+**Sehen Sie das Kundenportal selbst.** Die Cozystack Dashboard-Konsole ist das echte Kundenfrontend der Ænix Platform — sie läuft vollständig in Ihrem Browser mit Demodaten, ohne Anmeldung, ohne Cluster, ohne Setup.
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Live-Demo öffnen →</a>
@@ -64,15 +64,15 @@ aliases:
 
 ### WHMCS-Integration
 
-Produktionsreifes WHMCS-Modul mit Billing-Templates für Ihr existierendes Hosting-Panel. Zwei Integrationsmodi — WHMCS als kundenseitiges Frontend oder cozyportal-Frontend mit WHMCS als Billing-Backend. Erfasst und speichert vollständige Nutzungsdaten mit klarer API.
+Produktionsreifes WHMCS-Modul mit Billing-Templates für Ihr existierendes Hosting-Panel. Zwei Integrationsmodi — WHMCS als kundenseitiges Frontend oder Cozystack Dashboard-Frontend mit WHMCS als Billing-Backend. Erfasst und speichert vollständige Nutzungsdaten mit klarer API.
 
 ### Hosting-Panel + kundenseitiges Portal
 
-Gebrandetes Admin-Dashboard für den Betreiber + kundenseitiges Console-Portal (cozyportal mit Ihrem Branding). Self-Service-Registrierung, Profile, Team-Management, Support-Ticketing.
+Gebrandetes Admin-Dashboard für den Betreiber + kundenseitiges Console-Portal (Cozystack Dashboard mit Ihrem Branding). Self-Service-Registrierung, Profile, Team-Management, Support-Ticketing.
 
 ### Service-Erstellungs-Wizards
 
-Einfache geführte UX zum Hochfahren von VMs, Kubernetes-Clustern, Managed Databases (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ, NATS), S3-kompatiblem Object Storage, GPU-Workloads. Kein YAML von Endkunden erforderlich.
+Einfache geführte UX zum Hochfahren von VMs, Kubernetes-Clustern, Managed Databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), S3-kompatiblem Object Storage, GPU-Workloads. Kein YAML von Endkunden erforderlich.
 
 ### Tenant Lock / Suspension
 
@@ -96,7 +96,7 @@ Proprietäre Module (über Open-Source-Cozystack hinaus) ausgeliefert ohne die l
 
 ### Service-Katalog jenseits VMs
 
-Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kafka via Strimzi, ClickHouse via Altinity, RabbitMQ, NATS Messaging), S3 Storage (SeaweedFS), HTTP-Cache (Nginx-basiert), VPN-Service (Outline), GPU-Workloads.
+Managed Databases (PostgreSQL via Cloud Native PG, MariaDB, Redis, Kafka via Strimzi, ClickHouse via Altinity, RabbitMQ, NATS Messaging), S3 Storage (SeaweedFS), HTTP-Cache (Nginx-basiert), VPN-Service (Outline), GPU-Workloads.
 
 ---
 
@@ -107,7 +107,7 @@ Managed Databases (PostgreSQL via Cloud Native PG, MySQL via MariaDB, Redis, Kaf
 | Time-to-Production | Typisch 6+ Monate | Wochen |
 | Operations-Team-Größe | 8-15+ Engineers | 3-7 Engineers |
 | Service-Katalog | DIY jenseits Core Compute / Storage / Network | Eingebaut: K8s, DBs, S3, GPU, Cache, VPN |
-| Kundenseitiges Portal | DIY | cozyportal, gebrandet, inklusive |
+| Kundenseitiges Portal | DIY | Cozystack Dashboard, gebrandet, inklusive |
 | Billing | DIY-Integration | WHMCS-nativ + Stripe + regionale Anbieter |
 | Multi-Tenancy | Project-Modell — limitiert | Tenant CRD mit Quotas / RBAC / Observability per Tenant |
 | Migration von VMware | Schwere Aufgabe | Produktisierte Module + Ænix-Expertise |

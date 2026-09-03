@@ -52,7 +52,7 @@ Enterprise customers increasingly expect cloud capabilities from their MSPs. The
 
 - **Multi-tier Tenant CRD** — Ænix → MSP → MSP customers
 - **Per-tier isolation** — RBAC, quotas, observability scope, billing
-- **Branded customer-facing portal** — cozyportal customized per MSP
+- **Branded customer-facing portal** — Cozystack Dashboard customized per MSP
 - **WHMCS-integrated billing** — flows through MSP's customer-management
 - **Service catalog** — MSP can curate (e.g., expose only PostgreSQL, hide Kafka if not supported)
 

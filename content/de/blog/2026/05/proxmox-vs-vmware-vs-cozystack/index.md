@@ -33,7 +33,7 @@ quiz:
         - { text: "Nie", correct: false }
         - { text: "KI/GPU im großen Maßstab (sustained inference, multi-tenant data-science teams)", correct: true }
         - { text: "Nur für AGI", correct: false }
-      explanation: "KI/GPU im großen Maßstab → Cozystack. Multi-Tenant-GPU-Scheduling, vGPU + MIG + time-slicing, validierte H100/H200/L40S/Blackwell-Hardware, Tenant CRD für mehrere data-science-Teams."
+      explanation: "KI/GPU im großen Maßstab → Cozystack. Multi-Tenant-GPU-Scheduling, VFIO-Passthrough bzw. vGPU für VMs und HAMi-Fractional-Sharing für Container, validierte H100/H200/L40S/Blackwell-Hardware, Tenant CRD für mehrere data-science-Teams."
     - q: "Was treibt die Wahl zwischen Proxmox und Cozystack hauptsächlich?"
       options:
         - { text: "Skala und Use Case (single-tenant SMB → Proxmox; Multi-Tenant Cloud → Cozystack)", correct: true }
@@ -53,7 +53,7 @@ Drei Hauptoptionen für Open-Source-fähige Virtualisierung in 2026: Proxmox VE,
 **Architektur:** vSphere + vSAN + NSX + vCD. **Beste Wahl für** bestehende VMware-Bestände bis zur Renewal-Krise.
 
 ## Cozystack — Open Source, Kubernetes-nativ
-**Architektur:** KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal. **Beste Wahl für** Service Provider, regulierte Mandanten, KI/GPU.
+**Architektur:** KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard. **Beste Wahl für** Service Provider, regulierte Mandanten, KI/GPU.
 
 ## Wie wählen
 1. <50 Hosts, single-tenant, mostly VMs → Proxmox VE

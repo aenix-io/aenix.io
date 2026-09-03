@@ -26,7 +26,7 @@ quick_facts:
   - label: "Replaces"
     value: "OpenStack, VMware Cloud Director, Virtuozzo, OpenNebula, Virtualizor / SolusVM-class panels, and in-house hosting panels."
   - label: "Architecture"
-    value: "Kubernetes-native: KubeVirt (VMs and containers on one API), Cilium (eBPF) networking, replicated block storage, Tenant CRD multi-tenancy, plus cozyportal, VictoriaMetrics and VictoriaLogs."
+    value: "Kubernetes-native: KubeVirt (VMs and containers on one API), Cilium (eBPF) networking, replicated block storage, Tenant CRD multi-tenancy, plus Cozystack Dashboard, VictoriaMetrics and VictoriaLogs."
   - label: "Time to live"
     value: "Weeks at provider scale via the productized installer; 3-6 month pilot then 9-18 months for a multi-region national build."
   - label: "Engagement"
@@ -37,7 +37,7 @@ faq:
   - q: "How is it different from Ænix Private Cloud Platform?"
     a: "Who consumes the capacity. Public Cloud Platform is for operators selling cloud to customers who are not them, so it carries billing, payments, resale and customer-facing portals. Private Cloud Platform is for organizations running cloud for their own business units, so it carries DORA / NIS2 architecture, customer-controlled keys and audit-ready logging instead. Same Cozystack foundation, same APIs — you can run both, and organizations that sell cloud and also run regulated internal workloads frequently do."
   - q: "Can it coexist with our existing VMware or OpenStack estate?"
-    a: "Yes, and that is the normal path. The platform is multi-hypervisor: it orchestrates native KubeVirt VMs while integrating with existing VMware, OpenStack, OpenNebula and OpenShift footprints, so you consolidate one cohort at a time instead of running a big-bang migration. Aenix ships Forklift-based migration tooling and has done cohort-based VMware exits in production."
+    a: "Yes, and that is the normal path. The platform is multi-hypervisor: it orchestrates native KubeVirt VMs while integrating with existing VMware, OpenStack, OpenNebula and OpenShift footprints, so you consolidate one cohort at a time instead of running a big-bang migration. Ænix ships Forklift-based migration tooling in the platform and has done cohort-based VMware exits in production. Upstream Cozystack self-service VM import is still in review, so a self-run cluster deploys Forklift alongside it."
   - q: "Do we need our own 24/7 operations team?"
     a: "Not necessarily. Both customer-operated and Aenix-managed operating models are supported, and the hybrid one — you own the data plane, Aenix operates the control plane under SLA — is common in regulated deployments. At provider scale a typical team is three to seven engineers, against eight to fifteen for a comparable OpenStack estate."
   - q: "What does the multi-region pattern look like?"
@@ -57,7 +57,7 @@ aliases:
   <a class="cta-secondary" href="/products/">Compare platforms →</a>
 </div>
 
-**See the customer portal for yourself.** The cozyportal console is the actual Ænix Platform customer frontend, running entirely in your browser with demo data — no signup, no cluster, no setup.
+**See the customer portal for yourself.** The Cozystack Dashboard console is the actual Ænix Platform customer frontend, running entirely in your browser with demo data — no signup, no cluster, no setup.
 
 <div class="cta-row">
   <a class="cta-primary" href="/demo/" target="_blank" rel="noopener">Open the live demo →</a>
@@ -86,15 +86,15 @@ Usage metering, invoicing, payment processing. Stripe, regional payment provider
 
 ### WHMCS integration
 
-A production-ready module with billing templates for the panel you already run. Two integration modes: WHMCS as the customer-facing front, or cozyportal as the front with WHMCS as the billing back-end. Full usage data tracked and stored behind a documented API. [More on the WHMCS integration →](/products/whmcs-integration/)
+A production-ready module with billing templates for the panel you already run. Two integration modes: WHMCS as the customer-facing front, or Cozystack Dashboard as the front with WHMCS as the billing back-end. Full usage data tracked and stored behind a documented API. [More on the WHMCS integration →](/products/whmcs-integration/)
 
 ### Hosting panel and customer portal
 
-A branded admin dashboard for the operator, plus a customer-facing console (cozyportal, customized to your brand) with self-service registration, profiles, team management and support ticketing.
+A branded admin dashboard for the operator, plus a customer-facing console (Cozystack Dashboard, customized to your brand) with self-service registration, profiles, team management and support ticketing.
 
 ### Service-creation wizards
 
-Guided flows for VMs, Kubernetes clusters, managed databases (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ, NATS), S3-compatible object storage and GPU workloads. No YAML required from end customers.
+Guided flows for VMs, Kubernetes clusters, managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ, NATS), S3-compatible object storage and GPU workloads. No YAML required from end customers.
 
 ### Tenant lock and suspension
 
@@ -114,7 +114,7 @@ Managed PostgreSQL (CloudNativePG), MySQL (MariaDB), Redis, Kafka (Strimzi), Cli
 
 ### Migration tooling and expertise
 
-Modules and runbooks for migration from VMware, OpenStack, Virtuozzo and OpenNebula, including Forklift-based VM migration shipped in the platform. Ænix delivers migration with experience from production engagements. [Migration guides →](/migration/)
+Modules and runbooks for migration from VMware, OpenStack, Virtuozzo and OpenNebula, including Forklift-based VM migration, which ships in the Ænix platform (upstream Cozystack self-service import is still in review, so a self-run Cozystack cluster deploys Forklift alongside it). Ænix delivers migration with experience from production engagements. [Migration guides →](/migration/)
 
 ### Enterprise support
 
@@ -127,7 +127,7 @@ Modules and runbooks for migration from VMware, OpenStack, Virtuozzo and OpenNeb
 | Time to production | 6+ months typical | Weeks |
 | Operations team size | 8-15+ engineers | 3-7 engineers |
 | Service catalogue | DIY beyond core compute / storage / network | Built-in: Kubernetes, databases, S3, GPU, cache, VPN |
-| Customer-facing portal | DIY | cozyportal, branded, included |
+| Customer-facing portal | DIY | Cozystack Dashboard, branded, included |
 | Billing | DIY integration | WHMCS-native, Stripe and regional providers |
 | Multi-tenancy | Project model — limited | Tenant CRD with quotas, RBAC and observability per tenant |
 | Migration from VMware | Heavy lift | Forklift-based tooling plus Ænix delivery |
@@ -140,7 +140,7 @@ Most small and mid-size providers are not running OpenStack at all. They run Vir
 
 | Dimension | Virtualizor / SolusVM class | Ænix Public Cloud Platform |
 |---|---|---|
-| Product catalogue | VPS, and variations on VPS | VMs plus managed Kubernetes, PostgreSQL, MySQL, ClickHouse, Kafka, RabbitMQ, Redis, S3, GPU |
+| Product catalogue | VPS, and variations on VPS | VMs plus managed Kubernetes, PostgreSQL, MariaDB, ClickHouse, Kafka, RabbitMQ, Redis, S3, GPU |
 | Where the margin is | Reselling capacity, competing on price per vCPU | Managed services on the same hardware, priced per service |
 | Tenancy model | An account owning VMs | Tenant CRD — quotas, RBAC, network isolation, per-tenant observability and billing |
 | Kubernetes for customers | Not offered, or a separate product to operate | Native, with a managed control plane per tenant |

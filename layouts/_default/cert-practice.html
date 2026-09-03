@@ -1,0 +1,26 @@
+{{ define "head" }}
+{{ $css := resources.Get "css/cert.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<meta name="robots" content="index, follow">
+{{ end }}
+{{ define "main" }}
+<article class="cert" data-tpl="cert-practice">
+  <section class="cert__hero">
+    <div class="container">
+      <p class="cert__eyebrow">{{ .Params.eyebrow }}</p>
+      <h1>{{ .Title }}</h1>
+      <p class="cert__lead">{{ .Description }}</p>
+    </div>
+  </section>
+  <div class="container">
+    {{ .Content }}
+    <div id="practice"></div>
+  </div>
+</article>
+{{ end }}
+{{ define "scripts" }}
+{{ $pool := site.Data.ccf_practice }}
+<script>window.__CCF_POOL__ = {{ $pool | jsonify | safeJS }};</script>
+{{ $js := resources.Get "js/cert-practice.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

@@ -24,7 +24,7 @@ quick_facts:
   - label: "Operational footprint"
     value: "5-15 Kubernetes operators versus OpenStack's 50-100+ services; VMs via KubeVirt, networking via Cilium (eBPF), storage via LINSTOR or Ceph, multi-tenancy via Tenant CRD."
   - label: "Migration timeline"
-    value: "Typically 4-12 months for a mid-size deployment (Keystone to Tenant CRD, Neutron to Cilium, Cinder to LINSTOR/Ceph)."
+    value: "Typically 4-12 months for a mid-size deployment (Keystone to Tenant CRD, Neutron to Cilium, Cinder to LINSTOR (DRBD))."
   - label: "Commercial offering"
     value: "Ænix Platform tiers: Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise custom."
 faq:
@@ -95,7 +95,7 @@ Typical migration: 4-12 months for mid-size deployment.
 <div class="arch-section__fig"><div class="diagram">
 <div class="diagram__node"><b>OpenStack</b><div class="diagram__chips"><span>50-100+ services</span><span>Nova / Neutron / Keystone</span><span>Shrinking talent pool</span></div></div>
 <div class="diagram__conn">migrates via</div>
-<div class="diagram__node"><b>4-12 month migration</b><div class="diagram__chips"><span>Keystone → Tenant CRD</span><span>Neutron → Cilium</span><span>Cinder → LINSTOR/Ceph</span></div></div>
+<div class="diagram__node"><b>4-12 month migration</b><div class="diagram__chips"><span>Keystone → Tenant CRD</span><span>Neutron → Cilium</span><span>Cinder → LINSTOR (DRBD)</span></div></div>
 <div class="diagram__conn">lands on</div>
 <div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>One Kubernetes API</span><span>KubeVirt VMs + containers</span><span>Apache 2.0</span></div></div>
 <div class="diagram__conn">delivers</div>

@@ -33,7 +33,7 @@ quiz:
         - { text: "Kubernetes-native Multi-Tenant-Plattform + Self-Service-Portal + erweiterter Service-Katalog (VMs/K8s/DBs/S3/GPU) + WHMCS-Billing + Pro-Kunden-Observability/Audit", correct: true }
         - { text: "Nur VPS verkaufen", correct: false }
         - { text: "Nur Email-Hosting", correct: false }
-      explanation: "Ziel: Kubernetes-native Multi-Tenant-Plattform (Cozystack), Self-Service-kundenorientiertes Portal (cozyportal), erweiterter Service-Katalog (VMs, K8s, verwaltete DBs, S3, GPU), WHMCS-integriertes Billing, Pro-Kunden-Observability + Audit."
+      explanation: "Ziel: Kubernetes-native Multi-Tenant-Plattform (Cozystack), Self-Service-kundenorientiertes Portal (Cozystack Dashboard), erweiterter Service-Katalog (VMs, K8s, verwaltete DBs, S3, GPU), WHMCS-integriertes Billing, Pro-Kunden-Observability + Audit."
     - q: "Welcher Markup über Plattform-Rohkosten ist typisch für Kunden-Pricing?"
       options:
         - { text: "5-10%", correct: false }

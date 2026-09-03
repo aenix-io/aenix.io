@@ -15,8 +15,8 @@ quiz:
       options:
         - { text: "KubeVirt on Talos (compute layer)", correct: true }
         - { text: "Cilium on Talos (networking layer)", correct: false }
-        - { text: "LINSTOR + Ceph (block-storage layer)", correct: false }
-      explanation: "Per the component mapping: Nova (compute) → KubeVirt on Talos. Neutron maps to Cilium (eBPF); Cinder maps to LINSTOR or Ceph (Rook-managed)."
+        - { text: "LINSTOR (block-storage layer)", correct: false }
+      explanation: "Per the component mapping: Nova (compute) → KubeVirt on Talos. Neutron maps to Cilium (eBPF); Cinder maps to LINSTOR, the DRBD-replicated block storage Cozystack ships."
     - q: "Which of the three migration pressures is structurally tied to Red Hat OSP transitioning toward OpenShift Virtualization?"
       options:
         - { text: "Engineer scarcity (shrinking OpenStack talent pool)", correct: false }
@@ -112,18 +112,18 @@ For OpenStack operators evaluating Cozystack, the canonical translation:
 |---|---|
 | **Nova** (compute) | KubeVirt on Talos |
 | **Neutron** (networking) | Cilium (eBPF) |
-| **Cinder** (block storage) | LINSTOR or Ceph (Rook-managed) |
-| **Swift** (object storage) | SeaweedFS or Ceph RGW (S3-compatible) |
+| **Cinder** (block storage) | LINSTOR (DRBD-replicated block, via the Piraeus operator) |
+| **Swift** (object storage) | SeaweedFS (S3-compatible, managed Bucket service) |
 | **Keystone** (identity) | Kubernetes RBAC + workforce IdP federation (Keycloak / Okta / AD) |
 | **Glance** (image registry) | KubeVirt CDI + container image registry |
 | **Magnum** (managed Kubernetes) | Native — Kubernetes IS the platform |
 | **Heat** (orchestration) | Kubernetes operators + GitOps (Flux / Argo CD) |
-| **Horizon** (UI) | cozyportal |
+| **Horizon** (UI) | Cozystack Dashboard |
 | **Ceilometer / Telemetry** | VictoriaMetrics + VictoriaLogs |
-| **Trove** (DBaaS) | Cozystack managed databases (PostgreSQL, MySQL, Redis, Kafka, RabbitMQ, ClickHouse) |
+| **Trove** (DBaaS) | Cozystack managed databases (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, NATS, RabbitMQ, ClickHouse, OpenSearch, Qdrant, FoundationDB) |
 | **Designate** (DNS) | external-dns operator + customer DNS provider |
 | **Octavia** (load balancing) | MetalLB + Cilium L7 + ingress controllers |
-| **Manila** (file share) | LINSTOR + NFS-Ganesha (RWX volumes, Cozystack v1.0+) |
+| **Manila** (file share) | RWX volumes on DRBD-backed LINSTOR storage classes (Cozystack v1.0+); optional `nfs-driver` package for external NFS exports |
 | **Project / Domain / Role** (tenancy) | Tenant CRD + nested tenants |
 
 Most OpenStack engineers find Cozystack's operational model simpler
@@ -160,7 +160,7 @@ migrate-later / stay / re-architect), risk flags, phasing options.
 Hardware procurement (or repurpose of OpenStack-freed capacity in
 later phases). Cozystack platform deployed on new hardware in parallel
 to existing OpenStack. Cilium networking validated against OpenStack
-network configurations expected to translate. LINSTOR / Ceph storage
+network configurations expected to translate. LINSTOR storage
 operationalised at scale. Federated identity (Keycloak + customer
 IdP).
 
@@ -192,10 +192,10 @@ Cohorts of 50-200 instances migrating at a time. Per cohort:
 2. **Network mapping** — OpenStack subnets to Cilium ClusterPool +
    NetworkPolicies, security groups to NetworkPolicies, Octavia load
    balancers to MetalLB + ingress controllers.
-3. **Storage migration** — Cinder volume data migrated to LINSTOR or
-   Ceph. Snapshot history preserved or pruned per retention policy.
+3. **Storage migration** — Cinder volume data migrated to LINSTOR.
+   Snapshot history preserved or pruned per retention policy.
    For Swift-stored data, S3 API compatibility allows direct
-   migration to SeaweedFS / Ceph RGW.
+   migration to SeaweedFS.
 4. **Validation window** — workload runs in parallel on Cozystack
    for typically 7-14 days. Application owner sign-off required
    before final cutover.
@@ -345,9 +345,9 @@ Poor fit:
 - **[OpenStack alternative](/alternatives/openstack-alternative/)** —
   alternative-focused commercial landing
 - **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
-  common target edition for hosting-provider OpenStack migrations
+  common target product for hosting-provider OpenStack migrations
 - **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
-  common target edition for tier-1 telco OpenStack migrations
+  common target product for tier-1 telco OpenStack migrations
 
 ---
 

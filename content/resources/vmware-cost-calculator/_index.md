@@ -63,6 +63,7 @@ faq:
 {{< vmware-calculator >}}
 
 The license line you pay VMware/Broadcom disappears on an open platform (Apache 2.0, no per-core fee). What remains is support and the one-time migration — both modelled above. For a deeper, workload-level model, use the **[cloud repatriation TCO worksheet](/resources/cloud-repatriation-tco-worksheet/)**.
+
 ---
 
 ## How the calculation works
@@ -84,6 +85,7 @@ The license line you pay VMware/Broadcom disappears on an open platform (Apache 
 </div>
 
 These are deliberately simple inputs so the output is defensible. A full TCO includes power, hardware refresh, staff and the workloads you keep in the cloud — we model those with you on a call.
+
 ---
 
 ## Turn the number into a plan

@@ -46,7 +46,7 @@ aliases:
   - /products/aenix-platform/ai-ml-edition/
 ---
 
-> **This is the AI and GPU module.** Ænix Platform has three platforms — [Provider](/products/public-cloud-platform/) and [Enterprise](/products/private-cloud-platform/) — and this capability extends either one: a provider sells it as GPU-as-a-Service, an enterprise runs its own inference on it.
+> **One engine, three platforms.** AI Platform runs on the same substrate as [Public Cloud Platform](/products/public-cloud-platform/) and [Private Cloud Platform](/products/private-cloud-platform/), and combines with either: a provider sells GPU-as-a-Service through the billing surface it already has, a regulated enterprise runs its own inference under the key custody its auditor already accepted.
 
 **AI platform automation out of the box. Standard AI workloads, service APIs, and ready-to-use blueprints, databases, apps and models — so your AI team goes from idea to running jobs faster. Multi-tenant GPU scheduling, vector DBs, sovereignty controls included. Built for AI-native organizations and regulated AI deployments at scale.**
 
@@ -79,7 +79,7 @@ Per-tenant GPU pools, GPU-class-aware scheduling (e.g., L40S for inference, H100
 
 ### Models, databases, apps included
 
-Pre-deployed open-weight models (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma families). Vector DB (pgvector via PostgreSQL operator, or Qdrant). Managed databases (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ). Object storage (S3-compatible) for training data + model checkpoints.
+Pre-deployed open-weight models (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma families). Vector DB (pgvector via PostgreSQL operator, or Qdrant). Managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ). Object storage (S3-compatible) for training data + model checkpoints.
 
 ### Service APIs
 

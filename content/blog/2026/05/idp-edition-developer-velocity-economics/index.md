@@ -132,9 +132,9 @@ business-unit hierarchies.
 This solves the "soft multi-tenancy is too leaky, cluster-per-team is
 operationally expensive" trilemma without compromise.
 
-### Golden-path-first cozyportal
+### Golden-path-first Cozystack Dashboard
 
-The cozyportal in Developer Self-Service exposes opinionated paths for the 5-10
+The Cozystack Dashboard in Developer Self-Service exposes opinionated paths for the 5-10
 most common product-team needs: environment provisioning, application
 deployment, managed-database provisioning, observability onboarding,
 secrets management. Each path completes in minutes.
@@ -215,7 +215,7 @@ Backstage is a portal, not a platform. Buying Backstage before the
 underlying capabilities are self-service produces a beautiful catalog
 over the same operational chaos. Adoption stalls.
 
-Developer Self-Service's cozyportal can be replaced or augmented by Backstage if
+Developer Self-Service's Cozystack Dashboard can be replaced or augmented by Backstage if
 the customer prefers — but the underlying capabilities (environment
 provisioning, observability, secrets, identity) are self-service
 because the platform is, not because the portal pretends they are.
@@ -249,8 +249,8 @@ Strong fit:
 Marginal fit:
 
 - 100-200 engineers with growing platform pain but limited budget;
-  start with Pure Cozystack with Ænix Support and scale into IDP
-  Edition as the team grows
+  start with Cozystack Enterprise Support and scale into the Ænix
+  Private Cloud Platform as the team grows
 - Strong existing in-house platform with specific gaps — partial
   engagement may fit better than full Developer Self-Service
 
@@ -278,7 +278,7 @@ Engagement size: Project plus managed retainer, quoted per RFP.
 ## Where to dig deeper
 
 - **[Developer Self-Service landing](/products/private-cloud-platform/)** —
-  feature list, edition-specific FAQ
+  feature list, product-specific FAQ
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   engagement details
 - **[Platform Engineering services](/services/platform-engineering/)** —

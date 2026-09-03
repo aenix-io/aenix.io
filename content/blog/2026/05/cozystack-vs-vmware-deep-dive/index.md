@@ -58,9 +58,9 @@ In practice both deliver production-grade VM workloads. The KubeVirt model adds 
 
 **VMware vSAN:** software-defined storage built into vSphere. Operationally smooth; tight integration. Tied to VMware licensing.
 
-**Cozystack LINSTOR (or Ceph):** open-source replicated block storage. LINSTOR uses DRBD for sync replication; Ceph for distributed object/block. More operational responsibility; more architectural flexibility.
+**Cozystack LINSTOR:** open-source replicated block storage, deployed through the Piraeus operator. LINSTOR uses DRBD for synchronous replication; object storage is a separate layer (SeaweedFS). More operational responsibility; more architectural flexibility.
 
-For most workloads, LINSTOR matches vSAN in operational characteristics. Ceph is appropriate where object/file storage is also needed.
+For most workloads, LINSTOR matches vSAN in operational characteristics. Where S3-style object storage is also needed, Cozystack ships SeaweedFS as the managed Bucket service.
 
 ## Network layer
 
@@ -84,7 +84,7 @@ Tenant model is conceptually different — vCD organizations vs Tenant CRD insta
 
 **VMware:** vCenter UI for ad-hoc operations; PowerCLI / Ansible for automation. SSH not the default model.
 
-**Cozystack:** kubectl + GitOps as the default model. cozyportal UI for tenant operations. GitOps PR review for change-management.
+**Cozystack:** kubectl + GitOps as the default model. Cozystack Dashboard UI for tenant operations. GitOps PR review for change-management.
 
 The shift from vCenter-centric to kubectl-centric is a real operational learning curve for VMware-trained teams. Most engineers ramp in 4-8 weeks with focused training.
 
@@ -112,7 +112,7 @@ VMware → Cozystack migration in production:
 2. **Cozystack foundation** — parallel deployment; not a tenant of VMware.
 3. **Image migration** — KubeVirt CDI imports VMDK or qcow2 images. Windows VMs get VMware Tools cleanup before first KubeVirt boot.
 4. **Network cutover** — VLAN mapping into Cilium; policy parity validated against NSX rules.
-5. **Storage cutover** — vSAN → LINSTOR / Ceph; data migration during cohort cutover.
+5. **Storage cutover** — vSAN → LINSTOR (DRBD); data migration during cohort cutover.
 6. **DR cutover** — Velero replaces SRM; tested per cohort.
 7. **VMware decommission** — staged as cohorts complete.
 

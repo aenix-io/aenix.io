@@ -231,8 +231,7 @@ For the full methodology see **[Platform Readiness Assessment](/services/platfor
 We have run cloud-repatriation engagements for service providers, financial-services organizations, telecom operators, and AI/GPU platforms across the EU, DACH, and Central Asia. Workloads moved have ranged from steady-state production databases to AI inference clusters; outcomes have ranged from full on-prem to selective hybrid.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
 Named case studies available on the discovery call where customer permissions allow.
 
 <!-- /BLOCK 8 -->

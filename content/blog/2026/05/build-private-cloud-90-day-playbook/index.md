@@ -75,7 +75,7 @@ Output: a one-page architecture brief. No code yet.
 - Operator and admin access verified
 
 ### Week 3: storage and network
-- LINSTOR (or Ceph) deployed and validated
+- LINSTOR (DRBD) deployed and validated
 - Cilium configured with network policies
 - MetalLB / ingress set up
 - Cross-node replication tested
@@ -124,7 +124,7 @@ End of day-90: platform supports production workloads with self-service. Maturit
 
 Honest acknowledgments:
 
-- **Polished customer-facing portal** — cozyportal works but UI polish is iterative.
+- **Polished customer-facing portal** — Cozystack Dashboard works but UI polish is iterative.
 - **Multi-region / multi-DC operation** — single-region first; multi-region in months 4-6.
 - **GPU/AI workload optimization** — generic GPU support yes; AI-platform-specific optimizations later.
 - **Comprehensive compliance certification** — architecture aligned with DORA/NIS2/GDPR; certification audit is a separate exercise.

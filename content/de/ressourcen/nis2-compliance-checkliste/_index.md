@@ -1,11 +1,12 @@
 ---
 title: "NIS2-Compliance Cloud-Architektur-Checkliste — kostenlos herunterladen"
-description: "Eine 35-Punkt-Checkliste für wesentliche und wichtige Entitäten unter NIS2. Deckt Artikel 21 Risiko-Management-Maßnahmen (10 Bereiche), Artikel 23..."
+description: "Kostenlose 35-Punkt-Checkliste für wesentliche und wichtige Einrichtungen unter NIS2. Deckt Artikel 21, Artikel 23 und angrenzende Anforderungen ab."
 type: "page"
 related_pages:
   - /de/loesungen/nis2-compliance
   - /de/ressourcen/dora-compliance-checkliste
   - /de/produkte/private-cloud-platform/
+hreflang_en: /resources/nis2-compliance-checklist/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
@@ -34,7 +35,7 @@ faq:
   - q: "Was kostet die NIS2-Checkliste?"
     a: "Die Checkliste ist kostenlos. Sie laden das PDF über das Formular auf dieser Seite herunter. Es ist keine Zahlung erforderlich."
   - q: "Wie hilft die Ænix Platform bei der NIS2-Compliance?"
-    a: "Die Private Cloud Platform adressiert NIS2-Kontrollen technisch: Tenant-CRD-Mandantenfähigkeit mit Cilium-NetworkPolicy-Segmentierung, kundenkontrollierte Verschlüsselung und audit-bereites Logging. Die Coordinated Vulnerability Disclosure ist an Artikel 30 ausgerichtet. So lassen sich Risiko-Management- und Reporting-Anforderungen auf Architektur-Ebene abbilden."
+    a: "Die Private Cloud Platform adressiert NIS2-Kontrollen technisch: Tenant-CRD-Mandantenfähigkeit mit Cilium-NetworkPolicy-Segmentierung, kundenkontrollierte Verschlüsselung und audit-bereites Logging. Die Coordinated Vulnerability Disclosure ist an Artikel 12 ausgerichtet. So lassen sich Risiko-Management- und Reporting-Anforderungen auf Architektur-Ebene abbilden."
   - q: "Worauf basiert die Ænix Platform technisch?"
     a: "Die Ænix Platform ist die produktisierte, kommerziell unterstützte Distribution von Cozystack, einem Open-Source-CNCF-Projekt unter Apache-2.0-Lizenz. Cozystack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage."
   - q: "Was kostet die Ænix Platform?"
@@ -43,10 +44,10 @@ faq:
 
 **Eine 35-Punkt-Checkliste für wesentliche und wichtige Entitäten unter NIS2. Deckt Artikel 21 Risiko-Management-Maßnahmen (10 Bereiche), Artikel 23 Vorfall-Reporting-Timelines, Lieferketten-Transparenz, Geschäftskontinuität, MFA, Verschlüsselung und Architektur-Level-Kontrollen ab.**
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — NIS2-konform by design (Tenant CRD mit NetworkPolicy / Cilium für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging, Coordinated Vulnerability Disclosure aligned mit Artikel 30).
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — NIS2-konform by design (Tenant CRD mit NetworkPolicy / Cilium für Segmentierung, kundenkontrollierte Verschlüsselung, audit-bereites Logging, Coordinated Vulnerability Disclosure nach Artikel 12).
 
 <div class="lead-magnet-form">
-{{< pipedrive-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" resource="nis2-compliance-checklist" >}}
 <p class="lead-magnet-form__note">NIS2-Checkliste herunterladen (PDF)</p>
 </div>
 
@@ -54,14 +55,13 @@ faq:
 
 ## Was in der Checkliste enthalten ist
 
-- **Risiko-Management** (Artikel 21) — 10-Punkt-Coverage von Cybersicherheits-Risiko-Management-Maßnahmen
-- **Vorfall-Reporting** — 24-Stunden / 72-Stunden / 1-Monat-Timeline-Bereitschaft
-- **Lieferketten-Sicherheit** — bis zur zweiten Stufe minimum
-- **Geschäftskontinuität** — RTO/RPO dokumentiert und getestet
-- **MFA und Zugangs-Kontrolle**
-- **Verschlüsselungs-Posture**
-- **Vulnerability-Management** — Patch-SLA, SAST/DAST in CI
-- **Audit und Effektivitäts-Bewertung**
+Fünf Sektionen, 35 architektonische Kontrollpunkte:
+
+1. **Risikomanagement** (10 Punkte) — die Risikomanagement-Maßnahmen nach Artikel 21(2)(a)-(j) sowie die Verantwortlichkeit der Leitungsorgane nach Artikel 20
+2. **Vorfallbearbeitung und Meldung** (6 Punkte) — Bereitschaft für Artikel 23(4): Frühwarnung in 24 Stunden, Vorfallsmeldung in 72 Stunden, Abschlussbericht in einem Monat
+3. **Geschäftskontinuität und Schwachstellenmanagement** (7 Punkte) — dokumentierte und getestete RTO/RPO, Patch-SLA, SAST/DAST in der CI, Coordinated Vulnerability Disclosure (Artikel 12)
+4. **Lieferkette und Kryptografie** (6 Punkte) — Lieferantensicherheit bis mindestens zur zweiten Stufe nach Artikel 21(2)(d), Kryptografie und Verschlüsselung nach Artikel 21(2)(h)
+5. **Zugangskontrolle und Audit** (6 Punkte) — Zugangskontrolle und MFA nach Artikel 21(2)(i)-(j), Wirksamkeitsbewertung nach Artikel 21(2)(f)
 
 ---
 
@@ -73,4 +73,18 @@ faq:
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in zwei Editions.*
+## Nach dem Download
+
+Die Checkliste gibt Ihnen die Arbeitsgrundlage, um Ihre Architektur gegen NIS2 zu bewerten. Für ein tieferes Engagement siehe **[NIS2-Compliance-Lösung](/de/loesungen/nis2-compliance/)**.
+
+---
+
+## Verwandte Ressourcen
+
+- **[NIS2-Compliance-Lösung](/de/loesungen/nis2-compliance/)** — vollständiges Engagement
+- **[DORA-Compliance-Checkliste](/de/ressourcen/dora-compliance-checkliste/)** — für Finanzdienstleister
+- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — angrenzend
+
+---
+
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und bietet die Ænix Platform an — eine schlüsselfertige kommerzielle Cloud-in-a-Box.*

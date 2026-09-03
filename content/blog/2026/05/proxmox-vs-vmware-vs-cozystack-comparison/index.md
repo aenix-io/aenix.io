@@ -27,7 +27,7 @@ quiz:
         - { text: "First-class via operators", correct: false }
         - { text: "Limited via vCD plugins", correct: false }
         - { text: "Manual / community", correct: true }
-      explanation: "Proxmox managed databases = manual / community integration. VMware = limited (via vCD plugins). Cozystack = first-class via operators: PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ."
+      explanation: "Proxmox managed databases = manual / community integration. VMware = limited (via vCD plugins). Cozystack = first-class via operators: PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, OpenSearch, Qdrant."
     - q: "For Proxmox → Cozystack migration, what does the article say is the typical timeline?"
       options:
         - { text: "2-4 weeks plus 3-9 months", correct: true }
@@ -86,7 +86,7 @@ The post-Broadcom virtualization market has three main open-source-friendly opti
 
 ## Cozystack — open-source, Kubernetes-native, multi-tenant
 
-**Architecture:** KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. Open-source CNCF Project.
+**Architecture:** KubeVirt + Cilium + Kube-OVN + LINSTOR (DRBD) + Tenant CRD + Cozystack Dashboard. Open-source CNCF Project.
 
 **Strengths:**
 - Kubernetes-native virtualization — same platform for VMs, containers, databases.
@@ -108,13 +108,13 @@ The post-Broadcom virtualization market has three main open-source-friendly opti
 |---|---|---|---|
 | **License** | AGPLv3 + commercial subscription | Subscription-only | Apache 2.0 |
 | **Compute** | KVM + LXC | vSphere | KubeVirt (KVM) + K8s |
-| **Storage** | ZFS, Ceph | vSAN | LINSTOR or Ceph |
+| **Storage** | ZFS, Ceph | vSAN | LINSTOR (DRBD) |
 | **Network** | Linux SDN | NSX | Cilium |
 | **Multi-tenancy** | Namespace + permissions | vCloud Director | Tenant CRD |
-| **Managed databases** | Manual / community | Limited | First-class (PG, MySQL, Redis, Kafka, etc.) |
+| **Managed databases** | Manual / community | Limited | First-class (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, OpenSearch, etc.) |
 | **S3 object storage** | Manual | Limited | First-class |
-| **GPU** | Passthrough | vGPU under Horizon | vGPU + MIG + time-slicing |
-| **Self-service** | Web UI for ops | vCD | cozyportal |
+| **GPU** | Passthrough | vGPU under Horizon | VFIO passthrough or vGPU for VMs; HAMi fractional sharing for containers |
+| **Self-service** | Web UI for ops | vCD | Cozystack Dashboard |
 | **Backup/DR** | PBS | SRM | Velero + PG PITR |
 | **Best scale** | <50 hosts | Enterprise | Multi-tenant scale |
 | **Best for** | SMB, labs | Existing VMware | Cloud builders, regulated multi-tenant |

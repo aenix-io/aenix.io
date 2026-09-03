@@ -127,7 +127,7 @@ Das ist das Open-Core-Modell — wie Confluent auf Kafka, Canonical auf Ubuntu, 
 
 Cozystack ist derzeit ein **CNCF Sandbox**-Projekt. Wir erwarten **CNCF Incubating-Status Spätsommer 2026**, basierend auf der CNCF-Antrags-Bearbeitungs-Kadenz.
 
-- **Architektur:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal + VictoriaMetrics + VictoriaLogs
+- **Architektur:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard + VictoriaMetrics + VictoriaLogs
 - **Lizenz:** Apache 2.0 — jeder kann es betreiben
 - **GitHub:** [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack)
 - **Dokumentation:** [cozystack.io/docs](https://cozystack.io/docs) — vendor-neutrale CNCF-alignierte Projekt-Dokumentation

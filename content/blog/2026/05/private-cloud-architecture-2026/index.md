@@ -98,10 +98,10 @@ A modern private cloud has six functional layers:
 
 ### Layer 5: application and platform services
 
-- **Managed databases** — PostgreSQL (CloudNativePG), MySQL, Redis, Kafka, ClickHouse, RabbitMQ.
+- **Managed databases** — PostgreSQL (CloudNativePG), MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, OpenSearch.
 - **Object storage as a service** — S3-compatible.
 - **AI/ML platform** — KubeVirt for VM-based GPU, Kubernetes-native for container-based GPU, vLLM/Triton for inference.
-- **Self-service portal** — Backstage, Cozystack cozyportal, custom.
+- **Self-service portal** — Backstage, Cozystack Cozystack Dashboard, custom.
 
 ### Layer 6: operations
 
@@ -114,7 +114,7 @@ A modern private cloud has six functional layers:
 
 ### Pattern 1: Cozystack-based Kubernetes-native cloud
 
-**What:** Single Kubernetes cluster (or fleet) with Cozystack as the platform layer. KubeVirt for VMs, Kubernetes for containers, LINSTOR for storage, Cilium for networking, Tenant CRD for multi-tenancy, cozyportal for self-service.
+**What:** Single Kubernetes cluster (or fleet) with Cozystack as the platform layer. KubeVirt for VMs, Kubernetes for containers, LINSTOR for storage, Cilium for networking, Tenant CRD for multi-tenancy, Cozystack Dashboard for self-service.
 
 **Best for:** Service providers, sovereign-cloud builders, regulated multi-tenant. Greenfield deployments.
 

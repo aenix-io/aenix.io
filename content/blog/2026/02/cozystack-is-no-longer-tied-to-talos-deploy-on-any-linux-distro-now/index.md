@@ -53,7 +53,7 @@ Cozystack is expanding beyond Talos Linux. This means you can now transform any 
 
 > ***What is Cozystack***
 
-> *Cozystack is a comprehensive open-source platform for building bare-metal clouds to quickly deploy managed Kubernetes, database-as-a-service (DBaaS), application-as-a-service (AaaS), and virtual machines based on KubeVirt. With it, you can deploy Kafka, FerretDB, PostgreSQL, Cilium, Grafana, Victoria Metrics, and other services with a single click. It also handles GPU workloads in both virtual machines and K8s clusters. Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license.*
+> *Cozystack is a comprehensive open-source platform for building bare-metal clouds to quickly deploy managed Kubernetes, database-as-a-service (DBaaS), application-as-a-service (AaaS), and virtual machines based on KubeVirt. With it, you can deploy Kafka, MongoDB, PostgreSQL, Cilium, Grafana, VictoriaMetrics, and other services with a single click. It also handles GPU workloads in both virtual machines and K8s clusters. Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license.*
 
 #### **When should you use Generic Kubernetes for Cozystack?**
 
@@ -65,7 +65,7 @@ Cozystack is expanding beyond Talos Linux. This means you can now transform any 
 
 #### **Try it yourself**
 
-We’ve prepared [a step-by-step guide](https://cozystack.io/docs/v1/install/kubernetes/generic/) for installing Cozystack on Ubuntu/Debian using k3s (as well as kubeadm or RKE2). This method can be adapted to other Linux distributions, and we plan to release official guides for more popular distros soon.
+We’ve prepared [a step-by-step guide](https://cozystack.io/docs/v1.6/install/kubernetes/generic/) for installing Cozystack on Ubuntu/Debian using k3s (as well as kubeadm or RKE2). This method can be adapted to other Linux distributions, and we plan to release official guides for more popular distros soon.
 
 #### Join the Cozystack Community
 

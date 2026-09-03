@@ -37,7 +37,7 @@ faq:
   - q: "Wie löst Cozystack Mandantenfähigkeit besser als Proxmox?"
     a: "Cozystack nutzt eine strukturelle Mandantentrennung über das Tenant CRD, sodass jeder Mandant isolierte Ressourcen erhält. Proxmox bietet nur permissions-basierte Trennung, die für echte Multi-Tenant-Clouds mit externen Kunden limitiert ist."
   - q: "Was bietet Aenix zusätzlich zum Open-Source-Cozystack?"
-    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und bietet die produktisierte Ænix Platform — etwa die Public Cloud Platform mit WHMCS-Billing-Integration und dem white-label cozyportal — plus kommerziellen Support ab 1.250 USD/Monat für Anbieter, die Proxmox überwachsen."
+    a: "Aenix ist das Open-Core-Unternehmen hinter Cozystack und bietet die produktisierte Ænix Platform — etwa die Public Cloud Platform mit WHMCS-Billing-Integration und dem white-label Cozystack Dashboard — plus kommerziellen Support ab 1.250 USD/Monat für Anbieter, die Proxmox überwachsen."
 ---
 
 **Unterschiedliche Skalen. Unterschiedliche Designziele. Beide Open Source.**
@@ -52,7 +52,7 @@ faq:
 | **Multi-Tenancy** | Permissions-basiert (limitiert) | Tenant CRD (strukturell) |
 | **Service-Katalog** | VMs + LXC | VMs + K8s + DBs + S3 + GPU |
 | **Billing** | DIY | WHMCS-integriert (Public Cloud Platform) |
-| **Customer-Portal** | DIY | cozyportal (white-label) |
+| **Customer-Portal** | DIY | Cozystack Dashboard (white-label) |
 | **Skala** | 5-50 Hosts typisch | 50-1000+ Hosts |
 | **Lizenz** | AGPL (Subscription für Updates) | Apache 2.0 |
 

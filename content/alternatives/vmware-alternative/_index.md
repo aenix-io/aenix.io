@@ -31,7 +31,7 @@ quick_facts:
     value: "OSS is free; Ænix Platform tiers start at Basic $1,250/mo (10 nodes), Standard $3,000, Plus $5,500, Enterprise custom."
 faq:
   - q: "Is Cozystack a true one-to-one replacement for VMware Cloud Foundation?"
-    a: "It maps the full VCF stack: KubeVirt for vSphere/ESXi, Kubernetes API plus cozyportal for vCenter and vCloud Director, LINSTOR or Ceph for vSAN, Cilium for NSX, and Velero plus S3 plus PostgreSQL PITR for Site Recovery Manager. Networking and multi-tenancy need redesign rather than literal 1:1 mapping, which the architecture review covers."
+    a: "It maps the full VCF stack: KubeVirt for vSphere/ESXi, Kubernetes API plus Cozystack Dashboard for vCenter and vCloud Director, LINSTOR or Ceph for vSAN, Cilium for NSX, and Velero plus S3 plus PostgreSQL PITR for Site Recovery Manager. Networking and multi-tenancy need redesign rather than literal 1:1 mapping, which the architecture review covers."
   - q: "How does Cozystack avoid Broadcom-style renewal increases?"
     a: "Cozystack is licensed Apache 2.0 with no per-CPU, per-VM, or per-core meter, so the open-source code stays usable regardless of any support contract. Your spend is hardware plus an optional Aenix engagement, not a subscription tied to socket counts."
   - q: "What replaces ESXi in Cozystack?"
@@ -125,7 +125,7 @@ KubeVirt, Cilium, LINSTOR, and Flux ship faster as community projects than Broad
 
 - **Virtual machines** — KubeVirt, KVM-based, live migration, snapshots
 - **Tenant Kubernetes** — every tenant gets their own real K8s cluster
-- **Managed databases** — PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB
+- **Managed databases** — PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB
 - **S3-compatible object storage** — for backups, AI training data, applications
 - **GPU as a service** — NVIDIA vGPU for VMs, MIG/time-slicing for containers (validated A100, H100, H200, L40S, Blackwell)
 - **Multi-tenant control plane** — Tenant CRD, nested tenants, per-tenant quotas
@@ -163,10 +163,10 @@ Runs on your bare metal — no public-cloud dependency.
 | VMware / VCF | Cozystack equivalent |
 |---|---|
 | vSphere / ESXi | KubeVirt on Talos |
-| vCenter | Kubernetes API + cozyportal |
-| vSAN | LINSTOR or Rook-Ceph |
+| vCenter | Kubernetes API + Cozystack Dashboard |
+| vSAN | LINSTOR or SeaweedFS |
 | NSX | Cilium (eBPF) |
-| vCloud Director | Tenant CRD + cozyportal |
+| vCloud Director | Tenant CRD + Cozystack Dashboard |
 | vRealize / Aria Operations | VictoriaMetrics + VictoriaLogs + Grafana |
 | Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
 | Tanzu Kubernetes Grid | Tenant Kubernetes (native) |
@@ -206,7 +206,7 @@ Two layers need redesign rather than 1:1 mapping: **networking** (Cilium ≠ NSX
   <div class="engagement-step">
     <div class="engagement-step__number">4</div>
     <h3 class="engagement-step__title">Cut over networking and storage</h3>
-    <p class="engagement-step__body">Cilium policy parity, LINSTOR/Ceph import.</p>
+    <p class="engagement-step__body">Cilium policy parity, LINSTOR (DRBD) import.</p>
   </div>
 
   <div class="engagement-step">
@@ -274,10 +274,8 @@ OpenStack, CloudStack, and Proxmox migrations follow the same playbook with diff
 {{< clients >}}
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
 {{< quote-carousel >}}
-> *— {{NAME_2}}, {{TITLE_2}}*
 
 Service providers, telecom operators, regional sovereign clouds, GPU/AI operators, regulated enterprises across the EU and North America.
 

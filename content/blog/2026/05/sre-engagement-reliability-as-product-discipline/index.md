@@ -267,7 +267,7 @@ priorities. Reporting line. Interface with platform engineering
 
 ## The Cozystack reliability defaults
 
-For organisations running Ænix Platform editions, SRE practice
+For organisations running an Ænix platform product, SRE practice
 gets a head start because the platform ships with SRE-aligned
 defaults:
 

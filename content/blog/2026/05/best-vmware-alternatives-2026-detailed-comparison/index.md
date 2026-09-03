@@ -166,7 +166,7 @@ For each alternative, the architectural mismatches with VMware that need redesig
 
 For each alternative, the migration path complexity:
 
-- **VMware → Cozystack:** Image conversion (qcow2 to KubeVirt CDI). Networking redesign (NSX → Cilium). Multi-tenant model redesign (vCD → Tenant CRD). Storage layer migration (vSAN → LINSTOR/Ceph). Typical: 2-4 weeks assessment + 6-18 months implementation.
+- **VMware → Cozystack:** Image conversion (qcow2 to KubeVirt CDI). Networking redesign (NSX → Cilium). Multi-tenant model redesign (vCD → Tenant CRD). Storage layer migration (vSAN → LINSTOR/DRBD). Typical: 2-4 weeks assessment + 6-18 months implementation.
 - **VMware → OpenShift:** Similar to Cozystack but on Red Hat foundation.
 - **VMware → Nutanix:** AHV migration via Nutanix Move (vendor tool). Less control during migration.
 - **VMware → OpenStack:** Most operationally complex; requires deep team expertise.

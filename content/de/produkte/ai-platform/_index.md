@@ -72,7 +72,7 @@ Per-Tenant-GPU-Pools, GPU-Class-aware-Scheduling (z.B. L40S für Inferenz, H100 
 
 ### Modelle, Datenbanken, Apps inklusive
 
-Vor-deployte Open-Weight-Modelle (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma Familien). Vector DB (pgvector via PostgreSQL-Operator, oder Qdrant). Managed Databases (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ). Object Storage (S3-kompatibel) für Trainingsdaten + Modell-Checkpoints.
+Vor-deployte Open-Weight-Modelle (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma Familien). Vector DB (pgvector via PostgreSQL-Operator, oder Qdrant). Managed Databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ). Object Storage (S3-kompatibel) für Trainingsdaten + Modell-Checkpoints.
 
 ### Service-APIs
 

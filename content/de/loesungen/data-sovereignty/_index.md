@@ -203,8 +203,7 @@ Für die vollständige Methodik siehe **[Platform Readiness Assessment](/de/dien
 Wir haben Datensouveränitäts-Assessments und Platform-Engineering-Programme für Banken, Versicherer, Organisationen des öffentlichen Sektors und ICT-Drittanbieter in der gesamten EU, der DACH-Region und Zentralasien durchgeführt. Die Ergebnisse reichen von vollständigen On-Prem-Aufbauten souveräner Cloud bis zur selektiven Repatriierung regulierter Workloads.
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Zu den Providern, die Ænix Platform produktiv betreiben, zählen GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard und Cloudsy. Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
 Benannte Fallstudien sind im Discovery-Call verfügbar, sofern die Kundenfreigaben es erlauben.
 
 <!-- /BLOCK 8 -->

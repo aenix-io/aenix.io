@@ -75,7 +75,7 @@ Wenn Sie ein Hyperscaler sind — ist das nicht relevant. Wenn Sie regional / ve
 <div class="grid-2x2">
 
 **1. Mandantenfähige Architektur**
-Tenant CRD mit Per-Customer-Isolation. Kundenseitiges Portal (cozyportal). Service-Katalog: VMs, K8s, Managed Databases, S3, GPU.
+Tenant CRD mit Per-Customer-Isolation. Kundenseitiges Portal (Cozystack Dashboard). Service-Katalog: VMs, K8s, Managed Databases, S3, GPU.
 
 **2. Billing-Integration**
 WHMCS-produktionsreife Integration (zwei Modi). Custom Billing bei Bedarf.

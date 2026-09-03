@@ -66,7 +66,7 @@ The Ænix team's typical talk subjects:
 
 ### Architecture and platform
 
-- Cozystack architecture (Talos + KubeVirt + Cilium + LINSTOR + Tenant CRD + cozyportal)
+- Cozystack architecture (Talos + KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard)
 - KubeVirt at production scale — when VMs belong on Kubernetes
 - LINSTOR for Kubernetes block storage — DRBD without the legacy
 - Talos Linux — immutable Kubernetes-only OS in production

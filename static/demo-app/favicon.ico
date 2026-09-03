@@ -1,0 +1,253 @@
+<!DOCTYPE html><html><head><script>
+
+
+const kcContext = {
+    "social": {
+        /* class: org.keycloak.forms.login.freemarker.model.IdentityProviderBean */
+        "baseURI": {
+            "path": "",
+            "rawPath": "",
+            "rawSchemeSpecificPart": "?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9&session_code=hafwQAfC0AXpREdR07mN9zuls11gUNEgAva3NdfiyRE",
+            "opaque": false,
+            "query": "client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9&session_code=hafwQAfC0AXpREdR07mN9zuls11gUNEgAva3NdfiyRE",
+            "schemeSpecificPart": "?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9&session_code=hafwQAfC0AXpREdR07mN9zuls11gUNEgAva3NdfiyRE",
+            "port": -1,
+            "absolute": false,
+            "rawQuery": "client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9&session_code=hafwQAfC0AXpREdR07mN9zuls11gUNEgAva3NdfiyRE",
+        },
+        "providers": [
+        ],
+    },
+    "auth": {
+        /* class: org.keycloak.forms.login.freemarker.model.AuthenticationContextBean */
+        "showResetCredentials": false,
+        "authenticationSelections": [
+            {
+                "helpText": "auth-username-password-form-help-text",
+                "displayName": "auth-username-password-form-display-name",
+                "iconCssClass": "kcAuthenticatorDefaultClass",
+                "authExecId": "c2286313-364e-423e-8beb-4f0993ee77bf",
+                /*authenticationExecution: Should not be exposed */
+            },
+        ],
+        "showUsername": false,
+        "showTryAnotherWayLink": false,
+        /*auth.attemptedUsername excluded*/
+    },
+    "login": {
+        /* class: org.keycloak.forms.login.freemarker.model.LoginBean */
+    },
+    "pageId": "login",
+    "url": {
+        /* class: org.keycloak.forms.login.freemarker.model.UrlBean */
+        "oauthAction": "\/realms/cozy/login-actions/authenticate",
+        "resourcesPath": "\/resources/r0o68/login/cozyportal",
+        "loginAction": "https://keycloak-aenix-stage.frcloud.kz/realms/cozy/login-actions/authenticate?session_code=hafwQAfC0AXpREdR07mN9zuls11gUNEgAva3NdfiyRE&execution=c2286313-364e-423e-8beb-4f0993ee77bf&client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9",
+        "loginUrl": "\/realms/cozy/login-actions/authenticate?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9",
+        "resourcesCommonPath": "\/resources/r0o68/common/keycloak",
+        "firstBrokerLoginUrl": "\/realms/cozy/login-actions/first-broker-login?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9",
+        "registrationUrl": "\/realms/cozy/login-actions/registration?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9",
+        "logoutConfirmAction": "\/realms/cozy/protocol/openid-connect/logout/logout-confirm?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9",
+        "registrationAction": "https://keycloak-aenix-stage.frcloud.kz/realms/cozy/login-actions/authenticate?session_code=hafwQAfC0AXpREdR07mN9zuls11gUNEgAva3NdfiyRE&execution=c2286313-364e-423e-8beb-4f0993ee77bf&client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9",
+        "loginResetCredentialsUrl": "\/realms/cozy/login-actions/reset-credentials?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9",
+        "ssoLoginInOtherTabsUrl": "\/realms/cozy/login-actions/restart?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9&skip_logout=true",
+        "resourcesUrl": "\/resources/r0o68?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9/login/cozyportal",
+        "loginRestartFlowUrl": "\/realms/cozy/login-actions/restart?client_id=cozyportal-dashboard&tab_id=n2D1hfGBxmo&client_data=eyJydSI6Imh0dHBzOi8vZGFzaGJvYXJkLWFlbml4LXN0YWdlLmZyY2xvdWQua3ovb2F1dGgyL2NhbGxiYWNrIiwicnQiOiJjb2RlIiwic3QiOiJVNXpZMXlWZWp1Y1YxQ0t4QUdRNENmQ05pOVFmcXQ1QnFVSWdDSlhoVU1ROi9mYXZpY29uLmljbyJ9&skip_logout=false",
+        "oauth2DeviceVerificationAction": "\/realms/cozy/login-actions/authenticate",
+    },
+    "authenticationSession": {
+        /* class: org.keycloak.forms.login.freemarker.model.AuthenticationSessionBean */
+        "tabId": "n2D1hfGBxmo",
+        "authSessionId": "qzFqmFfbDYof-Tifd8uoCofE",
+        "authSessionIdHash": "b7Uv1zSzVAsFUWI5iB8O8m3O/CewCentH0OzKAZ7TiE",
+    },
+    "messagesPerField": {
+        /* class: org.keycloak.theme.beans.MessagesPerFieldBean */
+        "get": function (fieldName) { if(fieldName === 'firstName'){ return ''; } if(fieldName === 'lastName'){ return ''; } if(fieldName === 'email'){ return ''; } if(fieldName === 'username' || fieldName === 'password' ){ return ''; } if(fieldName === 'password-confirm'){ return ''; } if(fieldName === 'global'){ return ''; } if(fieldName === 'totp'){ return ''; } if(fieldName === 'userLabel'){ return ''; } if(fieldName === 'recoveryCodeInput'){ return ''; } if(fieldName === 'termsAccepted'){ return ''; } },
+        "existsError": function (fieldName) { if(fieldName === 'firstName' ){ return false; }if(fieldName === 'lastName' ){ return false; }if(fieldName === 'email' ){ return false; }if(fieldName === 'username' || fieldName === 'password' ){ return false; } if(fieldName === 'password-confirm' ){ return false; }if(fieldName === 'global' ){ return false; }if(fieldName === 'totp' ){ return false; }if(fieldName === 'userLabel' ){ return false; }if(fieldName === 'recoveryCodeInput' ){ return false; }if(fieldName === 'termsAccepted' ){ return false; }},
+    },
+    "templateName": "login.ftl",
+    "client": {
+        /* class: org.keycloak.forms.login.freemarker.model.ClientBean */
+        "clientId": "cozyportal-dashboard",
+        "description": "",
+        "baseUrl": "",
+        "name": "cozyportal-dashboard",
+        "attributes": {
+            "post.logout.redirect.uris": "+",
+            "client.session.max.lifespan": "604800",
+            "backchannel.logout.session.required": "true",
+            "client.session.idle.timeout": "86400",
+            "backchannel.logout.revoke.offline.tokens": "false",
+        },
+    },
+    "passwordPolicies": {
+        /* class: org.keycloak.forms.login.freemarker.model.PasswordPoliciesBean */
+        "notEmail": false,
+        "notUsername": false,
+    },
+    "realm": {
+        /* class: org.keycloak.forms.login.freemarker.model.RealmBean */
+        "displayName": "cozy",
+        "registrationAllowed": true,
+        "displayNameHtml": "cozy",
+        "resetPasswordAllowed": false,
+        "resetCredentialsActionTokenLifespanMinutes": 5,
+        "password": true,
+        "actionTokenGeneratedByUserLifespanMinutes": 5,
+        "internationalizationEnabled": false,
+        "idpVerifyAccountLinkActionTokenLifespanMinutes": 5,
+        "verifyEmailActionTokenLifespanMinutes": 5,
+        "loginWithEmailAllowed": true,
+        "duplicateEmailsAllowed": false,
+        "editUsernameAllowed": false,
+        "name": "cozy",
+        "rememberMe": false,
+        "registrationEmailAsUsername": false,
+        "identityFederationEnabled": false,
+    },
+    "darkMode": true,
+    "scripts": [
+    ],
+    "lang": "en",
+    "properties": {
+        "parent": "keycloak",
+        "styles": "css/login.css",
+        "stylesCommon": "vendor/patternfly-v4/patternfly.min.css vendor/patternfly-v3/css/patternfly.min.css vendor/patternfly-v3/css/patternfly-additions.min.css lib/pficon/pficon.css",
+        "KEYCLOAKIFY_SPA_DEV_SERVER_PORT": "",
+        "darkMode": "true",
+    },
+};
+kcContext.keycloakifyVersion = "11.15.0";
+kcContext.themeVersion = "0.1.0";
+kcContext.themeType = "login";
+kcContext.themeName = "cozyportal";
+kcContext.pageId = "login.ftl";
+kcContext.ftlTemplateFileName = "login.ftl";
+
+
+kcContext["x-keycloakify"] = {};
+
+kcContext["x-keycloakify"].resourcesPath = "/resources/r0o68/login/cozyportal";
+
+{
+    var messages = {};
+        messages["auth-username-password-form-help-text"] = decodeHtmlEntities("Sign in by entering your username and password.");
+        messages["auth-username-password-form-display-name"] = decodeHtmlEntities("Username and password");
+    kcContext["x-keycloakify"].messages = messages;
+}
+
+if( 
+    kcContext.url instanceof Object &&
+    typeof kcContext.url.resourcesPath === "string"
+){
+    kcContext.url.resourcesCommonPath = kcContext.url.resourcesPath + "/resources-common";
+}
+
+if( kcContext.messagesPerField ){
+    var existsError_singleFieldName = kcContext.messagesPerField.existsError;
+    kcContext.messagesPerField.existsError = function (){
+        for( let i = 0; i < arguments.length; i++ ){
+            if( existsError_singleFieldName(arguments[i]) ){
+                return true;
+            }
+        }
+        return false;
+    };
+    kcContext.messagesPerField.exists = function (fieldName) {
+        return kcContext.messagesPerField.get(fieldName) !== "";
+    };
+    kcContext.messagesPerField.printIfExists = function (fieldName, text) {
+        return kcContext.messagesPerField.exists(fieldName) ? text : undefined;
+    };
+    kcContext.messagesPerField.getFirstError = function () {
+        for( let i = 0; i < arguments.length; i++ ){
+            const fieldName = arguments[i];
+            if( kcContext.messagesPerField.existsError(fieldName) ){
+                return kcContext.messagesPerField.get(fieldName);
+            }
+        }
+    };
+}
+attributes_to_attributesByName: {
+    if( !kcContext.profile ){
+        break attributes_to_attributesByName;
+    }
+    if( !kcContext.profile.attributes ){
+        break attributes_to_attributesByName;
+    }
+    var attributes = kcContext.profile.attributes;
+    delete kcContext.profile.attributes;
+    kcContext.profile.attributesByName = {};
+    attributes.forEach(function(attribute){
+        kcContext.profile.attributesByName[attribute.name] = attribute;
+    });
+}
+
+redirect_to_dev_server: {
+
+    switch(kcContext.themeType){
+        case "login":
+            break redirect_to_dev_server;
+        case "account":
+            if( kcContext.pageId !== "index.ftl" ){
+                break redirect_to_dev_server;
+            }
+            break;
+        case "admin":
+            break;
+        default: 
+            break redirect_to_dev_server;
+    }
+
+    const devSeverPort = kcContext.properties.KEYCLOAKIFY_SPA_DEV_SERVER_PORT;
+
+    if( !devSeverPort ){
+        break redirect_to_dev_server;
+    }
+
+    const redirectUrl = new URL(window.location.href);
+
+    const keycloakServerPort = redirectUrl.port;
+
+    redirectUrl.port = devSeverPort;
+
+    delete kcContext.msgJSON;
+
+    console.log(kcContext);
+
+    redirectUrl.searchParams.set("kcContext", JSON.stringify(kcContext));
+    redirectUrl.searchParams.set("keycloakServerPort", keycloakServerPort);
+
+    window.location.href = redirectUrl.toString();
+
+}
+
+
+window.kcContext = kcContext;
+
+function decodeHtmlEntities(htmlStr){
+    var element = decodeHtmlEntities.element;
+    if (!element) {
+        element = document.createElement("textarea");
+        decodeHtmlEntities.element = element;
+    }
+    element.innerHTML = htmlStr;
+    return element.value;
+}
+
+
+</script>
+<base href="/resources/r0o68/login/cozyportal/dist/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/r0o68/login/cozyportal/dist/favicon-32x32.png">
+      <script type="module" crossorigin="" src="/resources/r0o68/login/cozyportal/dist/assets/index-CIORZmoX.js"></script>
+    </head>
+
+    <body>
+        <div id="root"></div>
+    
+
+</body></html>

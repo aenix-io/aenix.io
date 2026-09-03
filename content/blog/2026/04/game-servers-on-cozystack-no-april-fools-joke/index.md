@@ -99,7 +99,7 @@ We welcome contributors. The external-apps mechanism lets you add applications w
 **Links:**
 
 - [Cozystack](https://cozystack.io)
-- [GitHub](https://github.com/aenix-io/cozystack)
+- [GitHub](https://github.com/cozystack/cozystack)
 - [Cozylex](https://github.com/lexfrei/cozylex)
 - [Documentation](https://cozystack.io/docs/)
 

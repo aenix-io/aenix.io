@@ -17,7 +17,7 @@ quick_facts:
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
   - label: "Core technology"
-    value: "KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD and Rook-Ceph storage, Tenant CRD multi-tenancy, VictoriaMetrics + VictoriaLogs observability."
+    value: "KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD and SeaweedFS storage, Tenant CRD multi-tenancy, VictoriaMetrics + VictoriaLogs observability."
   - label: "Who it is for"
     value: "Service providers, regulated enterprises (DORA/NIS2), telecom operators, AI/GPU operators, and enterprise platform teams running self-hosted private cloud."
   - label: "Commercial offering"
@@ -34,7 +34,7 @@ faq:
   - q: "Can Cozystack be deployed air-gapped?"
     a: "Yes. Cozystack has a documented air-gapped install workflow, which suits classified, healthcare-restricted, and defence-adjacent environments where the platform must run without internet access."
   - q: "What hardware does Cozystack support?"
-    a: "Cozystack runs on commodity x86 servers, with ARM support emerging. Bare metal is preferred, though running on VMs is possible. Storage options include LINSTOR (DRBD), Rook-Ceph, and vendor SAN."
+    a: "Cozystack runs on commodity x86 servers, with ARM support emerging. Bare metal is preferred, though running on VMs is possible. Storage options include LINSTOR (DRBD), SeaweedFS, and vendor SAN."
   - q: "Does Aenix provide commercial support?"
     a: "Yes. Aenix offers Platform Readiness Assessments, build engagements, and managed engagements, with support tiers from Basic ($1,250/month per 10 nodes) up to Enterprise Custom. Direct support covers EU, DACH, and Central Asia time zones, with other regions via partners."
 ---
@@ -75,7 +75,7 @@ KVM-based VMs with live migration, snapshots, templates. Side-by-side with conta
 Tenant CRD, nested tenants, per-tenant quotas, RBAC, audit. Built for service-provider model.
 
 **Managed databases**
-PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB.
+PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB.
 
 **S3 object storage**
 SeaweedFS-based S3-compatible storage for backups, applications, AI training data.
@@ -87,23 +87,23 @@ NVIDIA vGPU for VMs, MIG / time-slicing / passthrough for containers. A100, H100
 eBPF-native, network policies, MetalLB, BGP. Replaces NSX-equivalent functionality.
 
 **LINSTOR storage**
-Replicated block storage at scale. Rook-Ceph also supported.
+Replicated block storage at scale. SeaweedFS also supported.
 
 **Observability**
 VictoriaMetrics + VictoriaLogs included.
 
 **Self-service portal & WHMCS**
-cozyportal for self-service. Production-ready WHMCS billing integration with two modes.
+Cozystack Dashboard for self-service. Production-ready WHMCS billing integration with two modes.
 
 </div>
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant CRD multi-tenancy</span><span>cozyportal</span><span>WHMCS billing</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant CRD multi-tenancy</span><span>Cozystack Dashboard</span><span>WHMCS billing</span></div></div>
 <div class="diagram__conn">one Kubernetes API</div>
 <div class="diagram__node"><b>Workloads</b><div class="diagram__chips"><span>KubeVirt VMs</span><span>Containers</span><span>Managed databases</span><span>S3 object storage</span><span>GPU</span></div></div>
 <div class="diagram__conn">networking, storage, observability</div>
-<div class="diagram__node"><b>Platform services</b><div class="diagram__chips"><span>Cilium eBPF</span><span>LINSTOR / DRBD</span><span>Rook-Ceph</span><span>VictoriaMetrics + VictoriaLogs</span></div></div>
+<div class="diagram__node"><b>Platform services</b><div class="diagram__chips"><span>Cilium eBPF</span><span>LINSTOR / DRBD</span><span>SeaweedFS</span><span>VictoriaMetrics + VictoriaLogs</span></div></div>
 <div class="diagram__conn">on</div>
 <div class="diagram__node"><b>Bare metal you own</b><div class="diagram__chips"><span>Commodity x86 servers</span></div></div>
 </div>

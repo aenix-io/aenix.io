@@ -33,16 +33,16 @@ A working customer-facing cloud product has six layers, all of which need engine
 Compute servers, storage, network fabric, datacenter / colocation. Sized for initial customer cohort plus growth headroom.
 
 ### 2. Platform
-Multi-tenant Kubernetes-native platform with KubeVirt for VMs, Cilium for networking, LINSTOR/Ceph for storage. Cozystack is the open-source default for this pattern.
+Multi-tenant Kubernetes-native platform with KubeVirt for VMs, Cilium and Kube-OVN for networking, LINSTOR (DRBD-replicated block) for storage. Cozystack is the open-source default for this pattern.
 
 ### 3. Service catalog
-What customers can self-provision: VMs, K8s clusters, managed databases (PG, MySQL, Redis, Kafka, etc.), S3 buckets, GPU instances, networking primitives.
+What customers can self-provision: VMs, K8s clusters, managed databases (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, OpenSearch, etc.), S3 buckets, GPU instances, networking primitives.
 
 ### 4. Customer-facing portal
-Self-service UI (cozyportal or custom). Catalog browsing, provisioning, monitoring, billing visibility.
+Self-service UI (Cozystack Dashboard or custom). Catalog browsing, provisioning, monitoring, billing visibility.
 
 ### 5. Billing
-WHMCS production-ready integration (two modes available in Cozystack). Custom billing for specific markets.
+WHMCS production-ready integration in two modes — shipped by Ænix as the [WHMCS integration](/products/whmcs-integration/) rather than as part of open-source Cozystack. Custom billing for specific markets.
 
 ### 6. Operations
 24×7 NOC, customer support, SLA management, observability per tenant, incident response.

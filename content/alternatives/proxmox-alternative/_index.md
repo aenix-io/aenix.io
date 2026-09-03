@@ -32,7 +32,7 @@ faq:
   - q: "Does Cozystack support multi-tenancy the way Proxmox does not?"
     a: "Yes. Cozystack uses a Tenant CRD with nested tenants and per-tenant scoped audit, giving hard isolation suitable for multi-customer cloud under regulatory audit. Proxmox relies on namespace-based isolation and permissions, which suits trust-each-other tenants rather than untrusted multi-customer environments."
   - q: "What does Cozystack add beyond running virtual machines?"
-    a: "Beyond KubeVirt VMs and Kubernetes containers, Cozystack provides first-class managed databases (PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ), S3-compatible object storage, GPU as a service (NVIDIA vGPU, MIG, time-slicing), a multi-tenant self-service portal, and Velero-based backup with per-app point-in-time recovery."
+    a: "Beyond KubeVirt VMs and Kubernetes containers, Cozystack provides first-class managed databases (PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ), S3-compatible object storage, GPU as a service (NVIDIA vGPU, MIG, time-slicing), a multi-tenant self-service portal, and Velero-based backup with per-app point-in-time recovery."
   - q: "Is Cozystack just a better Proxmox?"
     a: "No. It targets a different architectural problem. For SMB-scale, single-tenant virtualization, Proxmox VE remains a strong, simpler choice. Cozystack is the upgrade path when you need a multi-tenant cloud, service-provider operations, or regulated-enterprise isolation while keeping an open-source operational model."
 ---
@@ -69,13 +69,13 @@ If your deployment is single-tenant, VM-mostly, under ~50 hosts — Proxmox is l
 | Capability | Proxmox VE | Cozystack |
 |---|---|---|
 | **Compute** | KVM/LXC | KubeVirt (KVM) + Kubernetes containers |
-| **Storage** | ZFS, Ceph (community), shared storage | LINSTOR (DRBD) or Rook-Ceph |
+| **Storage** | ZFS, Ceph (community), shared storage | LINSTOR (DRBD) or SeaweedFS |
 | **Network** | Linux bridge, SDN | Cilium (eBPF) |
 | **Multi-tenancy** | Namespace + permissions | Tenant CRD, nested tenants, scoped audit |
-| **Managed databases** | Manual install or community LXC templates | First-class: PostgreSQL, MySQL, Redis, Kafka, ClickHouse, RabbitMQ |
+| **Managed databases** | Manual install or community LXC templates | First-class: PostgreSQL, MariaDB, Redis, Kafka, ClickHouse, RabbitMQ |
 | **Object storage** | Manual install | First-class S3-compatible |
 | **GPU** | Passthrough | NVIDIA vGPU + MIG + time-slicing |
-| **Self-service portal** | Web UI for VM ops | cozyportal — full multi-tenant catalog |
+| **Self-service portal** | Web UI for VM ops | Cozystack Dashboard — full multi-tenant catalog |
 | **Backup/DR** | PBS (Proxmox Backup Server) | Velero + per-app PITR |
 | **License** | AGPLv3 (open source) | Apache 2.0 (open source, more permissive) |
 | **Best for** | SMB virtualization, labs | Multi-tenant cloud, service providers, regulated enterprise |

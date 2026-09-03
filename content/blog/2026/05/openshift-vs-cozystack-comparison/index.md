@@ -64,7 +64,7 @@ For organizations standardized on Red Hat procurement, OpenShift is administrati
 
 **OpenShift:** broad surface area — OpenShift Container Platform plus Virtualization plus Service Mesh plus Pipelines plus other addons. Operationally rich; team needs OpenShift-specific expertise.
 
-**Cozystack:** focused stack — KubeVirt + Cilium + LINSTOR + cozyportal + observability. Lighter operational footprint; standard Kubernetes operational expertise transfers directly.
+**Cozystack:** focused stack — KubeVirt + Cilium + Kube-OVN + LINSTOR + Cozystack Dashboard + observability. Lighter operational footprint; standard Kubernetes operational expertise transfers directly.
 
 ### Multi-tenancy
 
@@ -107,8 +107,8 @@ Both KubeVirt-based, so VM-level migration is straightforward (image-level compa
 
 - Multi-tenancy model (Project CRD vs Tenant CRD)
 - Networking (OpenShift SDN/OVN vs Cilium)
-- Storage (OpenShift Container Storage / Ceph vs LINSTOR / Ceph)
-- Operational tooling (OpenShift CLI/Console vs cozyportal/standard kubectl)
+- Storage (OpenShift Container Storage / Ceph vs LINSTOR / DRBD)
+- Operational tooling (OpenShift CLI/Console vs Cozystack Dashboard/standard kubectl)
 
 Realistic migration timeline: 3-9 months for mid-size deployment.
 

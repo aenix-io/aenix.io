@@ -1,16 +1,17 @@
 ---
-title: "Sovereign AI Architecture Decision Guide — visual flowchart + Q&A (free PDF)"
-description: "A 12-page decision guide for organizations evaluating sovereign AI infrastructure. Visual flowchart leads through 7 key decisions: trigger profile,..."
+title: "Sovereign AI Architecture Decision Guide — decision tree + reference architectures (free PDF)"
+description: "A free 10-page decision guide for organizations evaluating sovereign AI infrastructure: seven decisions, four reference architectures, GPU sizing tables."
 type: "page"
 related_pages: ["/solutions/sovereign-ai", "/services/ai-platform-build", "/products/ai-platform/"]
+hreflang_de: /de/ressourcen/sovereign-ai-architektur-leitfaden/
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **The Sovereign AI Architecture Decision Guide is a free 12-page PDF for organizations evaluating sovereign AI infrastructure - AI workloads run on infrastructure they control rather than on a hyperscaler API. It is aimed at AI infrastructure leads, CTOs, and platform engineering teams. A visual flowchart walks through seven decisions: trigger profile, regulatory scope (DORA, NIS2, sovereign-cloud mandates), open-weight model selection, GPU hardware sizing, multi-tenancy model, sovereignty controls, and operational model, then maps the answers to one of four architecture patterns. Aenix uses this framework when scoping sovereign AI engagements, and the output maps directly to Ænix AI Platform, which is built on Cozystack, a CNCF project, and offers multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints.**
+  **The Sovereign AI Architecture Decision Guide is a free 10-page PDF for organizations evaluating sovereign AI infrastructure - AI workloads run on infrastructure they control rather than on a hyperscaler API. It is aimed at AI infrastructure leads, CTOs, and platform engineering teams. A visual flowchart walks through seven decisions: trigger profile, regulatory scope (DORA, NIS2, sovereign-cloud mandates), open-weight model selection, GPU hardware sizing, multi-tenancy model, sovereignty controls, and operational model, then maps the answers to one of four architecture patterns. Aenix uses this framework when scoping sovereign AI engagements, and the output maps directly to Ænix AI Platform, which is built on Cozystack, a CNCF project, and offers multi-tenant GPU scheduling with inference, fine-tuning, and RAG blueprints.**
 quick_facts:
   - label: "What it is"
-    value: "A free 12-page decision guide and visual flowchart for designing sovereign AI infrastructure, the same framework Aenix uses to scope sovereign AI engagements"
+    value: "A free 10-page decision guide with a master decision tree for designing sovereign AI infrastructure, the same framework Aenix uses to scope sovereign AI engagements"
   - label: "Who it is for"
     value: "AI infrastructure leads, CTOs, architects, and platform engineering teams evaluating sovereign AI versus hyperscaler AI"
   - label: "What it covers"
@@ -36,12 +37,12 @@ faq:
     a: "The decision guide is a free PDF download. The productized infrastructure it maps to, Ænix Platform, starts at Basic $1,250/mo for up to 10 nodes, with Standard $3,000, Plus $5,500, and Enterprise on custom pricing."
 ---
 
-**A 12-page decision guide for organizations evaluating sovereign AI infrastructure. Visual flowchart leads through 7 key decisions: trigger profile, regulatory scope, model selection, hardware sizing, multi-tenancy model, sovereignty controls, operational model. Used by Ænix during sovereign AI engagement scoping.**
+**A 10-page decision guide for organizations evaluating sovereign AI infrastructure. A master decision tree leads through 7 key decisions: trigger profile, regulatory scope, model selection, hardware sizing, multi-tenancy model, sovereignty controls, operational model. Used by Ænix during sovereign AI engagement scoping.**
 
 > **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — turnkey AI infrastructure with multi-tenant GPU scheduling, ready blueprints for inference + fine-tuning + RAG, sovereignty controls. The decision guide outputs an architecture pattern that maps directly to AI Platform deployment scope.
 
 <div class="lead-magnet-form">
-{{< pipedrive-form type="lead-magnet" >}}
+{{< pipedrive-form type="lead-magnet" resource="sovereign-ai-decision-guide" >}}
 <p class="lead-magnet-form__note">Download the Sovereign AI Decision Guide (PDF)</p>
 </div>
 

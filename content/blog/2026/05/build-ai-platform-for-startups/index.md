@@ -38,8 +38,8 @@ quiz:
       options:
         - { text: "Through bare-metal scheduling only, with no VM layer", correct: false }
         - { text: "Only one mode is supported at a time per cluster", correct: false }
-        - { text: "KubeVirt+vGPU for VMs and MIG / passthrough for containers", correct: true }
-      explanation: "Cozystack supports both: KubeVirt + NVIDIA vGPU for VMs (data-science teams that need notebook-heavy environments), and MIG / time-slicing / passthrough for containers (production inference). Same platform; different consumption patterns."
+        - { text: "KubeVirt + vGPU/passthrough for VMs, GPU Operator + HAMi for containers", correct: true }
+      explanation: "Cozystack supports both: KubeVirt with VFIO passthrough or NVIDIA vGPU for VMs (data-science teams that need notebook-heavy environments), and the NVIDIA GPU Operator plus HAMi fractional sharing for containers (production inference). Same platform; different consumption patterns."
 ---
 
 Companion to **[AI platform build services page](/services/ai-platform-build)**.
@@ -68,7 +68,7 @@ For inference serving 24/7 at sustained traffic, owning the GPUs is usually 30-6
 ## Common architectural decisions
 
 ### Decision 1: VM-based vs container-based GPU
-KubeVirt + NVIDIA vGPU for VMs (data-science teams that need full VMs); MIG / passthrough for containers (production inference). Cozystack supports both.
+KubeVirt with VFIO passthrough or NVIDIA vGPU for VMs (data-science teams that need full VMs); the NVIDIA GPU Operator plus HAMi fractional sharing for containers (production inference). Cozystack supports both.
 
 ### Decision 2: Self-hosted vs cloud GPU
 Self-hosted for sustained; cloud for sporadic. Hybrid for elastic.

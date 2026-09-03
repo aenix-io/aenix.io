@@ -98,7 +98,7 @@ CloudStack legacy environments — modernization patterns to Cozystack-based sta
 1. **Identify what you're moving away from** — VMware / OpenStack / Proxmox / OpenShift / Nutanix / Backstage / CloudStack
 2. **Read the alternative or compare page** — honest assessment of fit
 3. **Read the migration hub** if available — practical patterns
-4. **Identify the matching Plattform** — what you'd run instead
+4. **Identify the matching platform** — what you'd run instead
 5. **Book a discovery call** — discuss your specific scope
 
 </div>

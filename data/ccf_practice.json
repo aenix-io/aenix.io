@@ -1,0 +1,2830 @@
+[
+ {
+  "id": "PUB-M0-01",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Нужно вывести поды из всех пространств имён. Какая команда сделает это правильно?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get pods -n all`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl get pods -A`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl describe pods`"
+   },
+   {
+    "key": "D",
+    "text": "`kubectl logs pods --all`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Нужный флаг — `-A` (all namespaces). Пространства имён с именем «all» не существует.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-02",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Под не запускается. Какая команда покажет его последние события?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get pod <name>`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl logs <name>`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl describe pod <name>`"
+   },
+   {
+    "key": "D",
+    "text": "`kubectl exec <name> -- sh`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "`describe` показывает события — обычно именно они объясняют, почему под не встал на узел или не стартовал. Для `logs` контейнер должен уже запуститься.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-03",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Какая команда выведет все типы ресурсов, доступные в кластере?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get all`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl api-resources`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl get types`"
+   },
+   {
+    "key": "D",
+    "text": "`kubectl describe cluster`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "`kubectl api-resources` перечисляет все типы ресурсов, которые отдаёт кластер, включая собственные типы Cozystack.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-04",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Какой объект поддерживает нужное количество реплик пода?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Service"
+   },
+   {
+    "key": "B",
+    "text": "ReplicaSet"
+   },
+   {
+    "key": "C",
+    "text": "ConfigMap"
+   },
+   {
+    "key": "D",
+    "text": "Namespace"
+   }
+  ],
+  "answer": "B",
+  "rationale": "ReplicaSet (его создаёт Deployment) следит за тем, чтобы работало объявленное число реплик пода.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-05",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Сервису на bare metal в Cozystack нужен внешний IP. Какой тип Service его запрашивает?",
+  "options": [
+   {
+    "key": "A",
+    "text": "ClusterIP"
+   },
+   {
+    "key": "B",
+    "text": "NodePort"
+   },
+   {
+    "key": "C",
+    "text": "LoadBalancer"
+   },
+   {
+    "key": "D",
+    "text": "Headless"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Внешний IP запрашивает тип LoadBalancer. На bare metal в Cozystack такие адреса выдаёт MetalLB.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-06",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Как в Cozystack работает виртуальная машина?",
+  "options": [
+   {
+    "key": "A",
+    "text": "На отдельном кластере гипервизоров вне Kubernetes"
+   },
+   {
+    "key": "B",
+    "text": "Как под Kubernetes под управлением KubeVirt"
+   },
+   {
+    "key": "C",
+    "text": "Как systemd-сервис на узле"
+   },
+   {
+    "key": "D",
+    "text": "Внутри процесса дашборда"
+   }
+  ],
+  "answer": "B",
+  "rationale": "KubeVirt запускает каждую ВМ внутри пода (через QEMU), так что ВМ — обычная нагрузка Kubernetes.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-07",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "В каком поле манифеста задаётся желаемое состояние объекта?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`metadata`"
+   },
+   {
+    "key": "B",
+    "text": "`kind`"
+   },
+   {
+    "key": "C",
+    "text": "`spec`"
+   },
+   {
+    "key": "D",
+    "text": "`apiVersion`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Желаемое состояние объявляет `spec`. В `metadata` лежит идентификация объекта, а `kind` и `apiVersion` задают его тип.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-08",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Какая команда проверит манифест, ничего при этом не создав?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl apply -f manifest.yaml --dry-run=server`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl get -f manifest.yaml`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl describe -f manifest.yaml`"
+   },
+   {
+    "key": "D",
+    "text": "`kubectl edit -f manifest.yaml`"
+   }
+  ],
+  "answer": "A",
+  "rationale": "`--dry-run=server` отправляет манифест на проверку в API-сервер, но ничего не сохраняет.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-09",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Управляемое приложение в Cozystack (например, база данных) сгенерировало учётные данные для подключения. Куда оно их положит?",
+  "options": [
+   {
+    "key": "A",
+    "text": "В ConfigMap в пространстве имён платформы"
+   },
+   {
+    "key": "B",
+    "text": "В созданный Secret в пространстве имён тенанта"
+   },
+   {
+    "key": "C",
+    "text": "В логи приложения"
+   },
+   {
+    "key": "D",
+    "text": "В конфигурацию Platform Package"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Управляемые приложения отдают учётные данные через созданные Secret. Из Secret собирается и kubeconfig тенанта (модуль M2).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-10",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Что такое Helm release?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Версия бинарника Helm"
+   },
+   {
+    "key": "B",
+    "text": "Один установленный в кластере экземпляр чарта"
+   },
+   {
+    "key": "C",
+    "text": "Git-тег в репозитории чарта"
+   },
+   {
+    "key": "D",
+    "text": "Пространство имён Kubernetes"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Release — это один установленный экземпляр чарта. Из одного чарта можно получить много релизов с разными values.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-11",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Что добавляет флаг `--install` к команде `helm upgrade`?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Принудительно переустанавливает все поды"
+   },
+   {
+    "key": "B",
+    "text": "Устанавливает релиз, если его ещё нет"
+   },
+   {
+    "key": "C",
+    "text": "Обновляет все релизы в кластере"
+   },
+   {
+    "key": "D",
+    "text": "Проверяет values, не применяя их"
+   }
+  ],
+  "answer": "B",
+  "rationale": "`upgrade --install` идемпотентна: релиза нет — установит, релиз есть — обновит.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-12",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "О чём говорит колонка READY в выводе `kubectl get hr -A`?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Скачаны ли образы подов"
+   },
+   {
+    "key": "B",
+    "text": "Прошёл ли HelmRelease сверку и здоров ли он"
+   },
+   {
+    "key": "C",
+    "text": "Можно ли планировать поды на узел"
+   },
+   {
+    "key": "D",
+    "text": "Доступен ли Git-репозиторий"
+   }
+  ],
+  "answer": "B",
+  "rationale": "READY True значит, что HelmRelease сведён с желаемым состоянием и здоров. Если False — смотрите колонку MESSAGE и `kubectl describe hr`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-13",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m0",
+  "stem": "Что происходит, когда HelmRelease переводят в suspend?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Поды нагрузки удаляются"
+   },
+   {
+    "key": "B",
+    "text": "Контроллер перестаёт его сверять, ручные правки сохраняются"
+   },
+   {
+    "key": "C",
+    "text": "Чарт удаляется из репозитория"
+   },
+   {
+    "key": "D",
+    "text": "Пространство имён блокируется для всех пользователей"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Suspend останавливает сверку, поэтому ручные правки остаются на месте. Resume возвращает управление объявленному состоянию.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-01",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Как выглядит правильный порядок слоёв Cozystack снизу вверх?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Kubernetes → Talos Linux → Cozystack"
+   },
+   {
+    "key": "B",
+    "text": "Talos Linux → Kubernetes → Cozystack"
+   },
+   {
+    "key": "C",
+    "text": "Cozystack → Kubernetes → Talos Linux"
+   },
+   {
+    "key": "D",
+    "text": "Talos Linux → Cozystack → Kubernetes"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Talos — операционная система узла, поверх неё работает Kubernetes (management-кластер), а уже на Kubernetes ставится платформа Cozystack.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-02",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "В каком виде Cozystack отдаёт объекты платформы — тенанты, виртуальные машины и прочее?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Через отдельный проприетарный API-сервер, не связанный с Kubernetes"
+   },
+   {
+    "key": "B",
+    "text": "Как строки во внутренней SQL-базе"
+   },
+   {
+    "key": "C",
+    "text": "Как кастомные ресурсы Kubernetes (CRD)"
+   },
+   {
+    "key": "D",
+    "text": "Только через веб-дашборд"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Cozystack расширяет Kubernetes кастомными ресурсами. Дашборд и Terraform — такие же клиенты того же Kubernetes API.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-03",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Как оператор меняет конфигурацию узла с Talos?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Заходит по SSH и правит файлы"
+   },
+   {
+    "key": "B",
+    "text": "Применяет декларативную machine configuration через Talos API"
+   },
+   {
+    "key": "C",
+    "text": "Пользуется пакетным менеджером на узле"
+   },
+   {
+    "key": "D",
+    "text": "Правит корневую файловую систему из rescue-шелла"
+   }
+  ],
+  "answer": "B",
+  "rationale": "В Talos нет SSH, а корневая файловая система только для чтения. Единственный путь — декларативная machine configuration через Talos API.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-04",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Зачем Cozystack поставляет собственный образ Talos?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Чтобы добавить SSH-сервер для отладки"
+   },
+   {
+    "key": "B",
+    "text": "Чтобы включить модули ядра DRBD и ZFS, нужные платформе"
+   },
+   {
+    "key": "C",
+    "text": "Чтобы заменить kubelet собственным агентом"
+   },
+   {
+    "key": "D",
+    "text": "Чтобы снизить стоимость лицензии на стоковый Talos"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Платформе нужны модули ядра DRBD (для хранилища LINSTOR) и ZFS, а в стоковом образе Talos их нет.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-05",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Каким инструментом в Cozystack рекомендуют разворачивать Kubernetes на Talos?",
+  "options": [
+   {
+    "key": "A",
+    "text": "kubeadm"
+   },
+   {
+    "key": "B",
+    "text": "Talm"
+   },
+   {
+    "key": "C",
+    "text": "Ansible"
+   },
+   {
+    "key": "D",
+    "text": "Cluster API"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Talm — собственный менеджер конфигураций Talos от Cozystack с шаблонизацией в духе Helm. Именно он описан в документации как рекомендованный путь.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-06",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "При установке через PXE два компонента запускаются как временные Docker-контейнеры. Какая пара?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Matchbox и dnsmasq"
+   },
+   {
+    "key": "B",
+    "text": "Keycloak и MetalLB"
+   },
+   {
+    "key": "C",
+    "text": "FluxCD и Helm"
+   },
+   {
+    "key": "D",
+    "text": "CoreDNS и Multus"
+   }
+  ],
+  "answer": "A",
+  "rationale": "При установке по PXE во временных контейнерах поднимаются Matchbox (раздаёт образ Talos по HTTP) и dnsmasq (DHCP + TFTP).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-07",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Как убедиться, что установка Cozystack прошла успешно?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get nodes` показывает все узлы в Ready"
+   },
+   {
+    "key": "B",
+    "text": "`helm list` показывает один релиз"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl get hr -A` показывает все HelmRelease в READY"
+   },
+   {
+    "key": "D",
+    "text": "`talosctl version` отрабатывает без ошибок"
+   }
+  ],
+  "answer": "C",
+  "rationale": "В документации критерий успеха один: в `kubectl get hr -A` у всех HelmRelease платформы READY True.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-08",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Команде нужен полный набор возможностей Cozystack, но на узлах стоит RKE2, а не Talos. Какой вариант подойдёт?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`isp-full`"
+   },
+   {
+    "key": "B",
+    "text": "`isp-full-generic`"
+   },
+   {
+    "key": "C",
+    "text": "`isp-hosted`"
+   },
+   {
+    "key": "D",
+    "text": "`default`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "`isp-full-generic` даёт полный набор возможностей на обычных дистрибутивах (k3s, kubeadm, RKE2) вместо Talos.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-09",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Какой вариант ставится поверх уже существующего управляемого кластера Kubernetes и идёт **без** CNI, хранилища и виртуализации?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`isp-full`"
+   },
+   {
+    "key": "B",
+    "text": "`isp-full-generic`"
+   },
+   {
+    "key": "C",
+    "text": "`isp-hosted`"
+   },
+   {
+    "key": "D",
+    "text": "`default`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "`isp-hosted` работает на готовом управляемом кластере Kubernetes, где CNI, хранилище и виртуализация (если она есть) уже предоставлены провайдером.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-10",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Что входит в вариант `default`?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Полный PaaS-стек с мониторингом"
+   },
+   {
+    "key": "B",
+    "text": "Только PackageSources, без готового набора компонентов"
+   },
+   {
+    "key": "C",
+    "text": "Только дашборд и API"
+   },
+   {
+    "key": "D",
+    "text": "Демо-тенант с примерами приложений"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Вариант `default` ставит только PackageSources — каждый компонент администратор включает руками (подход BYOP).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-11",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Как называются пакеты платформы?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`pkg-<component>`"
+   },
+   {
+    "key": "B",
+    "text": "`cozystack.<component>`"
+   },
+   {
+    "key": "C",
+    "text": "`<component>.flux`"
+   },
+   {
+    "key": "D",
+    "text": "`bundle/<component>`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Пакеты платформы именуются по схеме `cozystack.<component>` — их список выдаёт `kubectl get package`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-12",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Когда можно отключить пакет платформы через `bundles.disabledPackages`?",
+  "options": [
+   {
+    "key": "A",
+    "text": "В любой момент — платформа сама удалит компонент"
+   },
+   {
+    "key": "B",
+    "text": "До установки; убрать его потом придётся вручную через Helm"
+   },
+   {
+    "key": "C",
+    "text": "Только в варианте `default`"
+   },
+   {
+    "key": "D",
+    "text": "Никогда — набор пакетов жёстко задан вариантом"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Отключение работает до установки. Уже установленный компонент придётся снимать вручную через Helm — сама платформа этого не сделает.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-13",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Какой компонент сверяет все HelmRelease платформы?",
+  "options": [
+   {
+    "key": "A",
+    "text": "kubeadm"
+   },
+   {
+    "key": "B",
+    "text": "Дашборд"
+   },
+   {
+    "key": "C",
+    "text": "FluxCD"
+   },
+   {
+    "key": "D",
+    "text": "Keycloak"
+   }
+  ],
+  "answer": "C",
+  "rationale": "FluxCD — движок GitOps. Каждый компонент платформы описан как HelmRelease, и FluxCD непрерывно сверяет их с желаемым состоянием.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-14",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Какой компонент запускает control plane тенантных кластеров Kubernetes в виде подов в управляющем кластере?",
+  "options": [
+   {
+    "key": "A",
+    "text": "KubeVirt"
+   },
+   {
+    "key": "B",
+    "text": "Kamaji"
+   },
+   {
+    "key": "C",
+    "text": "Kube-OVN"
+   },
+   {
+    "key": "D",
+    "text": "Keycloak"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Kamaji поднимает control plane тенантных кластеров Kubernetes как поды внутри управляющего кластера.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-15",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Какой компонент даёт реплицируемое блочное хранилище для persistent volumes?",
+  "options": [
+   {
+    "key": "A",
+    "text": "SeaweedFS"
+   },
+   {
+    "key": "B",
+    "text": "Velero"
+   },
+   {
+    "key": "C",
+    "text": "LINSTOR / DRBD"
+   },
+   {
+    "key": "D",
+    "text": "MetalLB"
+   }
+  ],
+  "answer": "C",
+  "rationale": "LINSTOR управляет реплицируемыми блочными томами DRBD. SeaweedFS — объектное хранилище, Velero — резервные копии.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-16",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Какая минимальная конфигурация кластера описана в документации для dev/lab-установки?",
+  "options": [
+   {
+    "key": "A",
+    "text": "1 узел, 4 ядра / 8 ГБ RAM"
+   },
+   {
+    "key": "B",
+    "text": "3 узла, по 8 ядер / 24 ГБ RAM / диски 50 ГБ + 256 ГБ"
+   },
+   {
+    "key": "C",
+    "text": "6 узлов, по 32 ядра / 128 ГБ RAM"
+   },
+   {
+    "key": "D",
+    "text": "2 узла, по 16 ядер / 64 ГБ RAM"
+   }
+  ],
+  "answer": "B",
+  "rationale": "В документации минимум — 3 узла по 8 ядер и 24 ГБ RAM с двумя дисками: 50 ГБ под систему и 256 ГБ под данные.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-17",
+  "domain": "D1",
+  "domain_name": "Архитектура и основы Cozystack",
+  "module": "m1",
+  "stem": "Какое состояние сети крайне нежелательно для кластера Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Каналы 10 Гбит/с между узлами"
+   },
+   {
+    "key": "B",
+    "text": "Все узлы в одном L2-сегменте"
+   },
+   {
+    "key": "C",
+    "text": "RTT между узлами выше 20 мс"
+   },
+   {
+    "key": "D",
+    "text": "nip.io как FQDN платформы в лабе"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Требование по задержкам — RTT меньше 10 мс. Выше 20 мс работать крайне не рекомендуется, такая конфигурация не поддерживается.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-01",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Что в Cozystack служит основной единицей изоляции?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Под"
+   },
+   {
+    "key": "B",
+    "text": "Ресурс Tenant"
+   },
+   {
+    "key": "C",
+    "text": "HelmRelease"
+   },
+   {
+    "key": "D",
+    "text": "Узел"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Ресурс Tenant — это «пространство имён с расширенными возможностями» и основная единица изоляции в платформе.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-02",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Как администратор тенанта создаёт вложенный тенант?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Через заявку в команду платформы"
+   },
+   {
+    "key": "B",
+    "text": "Создаёт ресурс Tenant — как любое приложение из каталога"
+   },
+   {
+    "key": "C",
+    "text": "Командой через Talos API"
+   },
+   {
+    "key": "D",
+    "text": "Правкой Platform Package"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Tenant сам по себе — приложение из каталога. Вложенный тенант создаётся как ресурс Tenant в пространстве имён родителя.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-03",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Тенант `beta` вложен в тенант `alpha`, тот — в корневой. Какое пространство имён получит `beta`?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`tenant-beta`"
+   },
+   {
+    "key": "B",
+    "text": "`beta-alpha-tenant`"
+   },
+   {
+    "key": "C",
+    "text": "`tenant-alpha-beta`"
+   },
+   {
+    "key": "D",
+    "text": "`tenant-root-alpha-beta`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Цепочка предков накапливается, но корневой тенант в имени не повторяется: root/alpha/beta даёт tenant-alpha-beta.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-04",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Почему в именах тенантов запрещён дефис?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Kubernetes запрещает дефисы в именах ресурсов"
+   },
+   {
+    "key": "B",
+    "text": "Дефис разделяет предков в имени пространства имён"
+   },
+   {
+    "key": "C",
+    "text": "Дефис ломает формат имени пользователя в Keycloak"
+   },
+   {
+    "key": "D",
+    "text": "Дашборд не умеет отображать дефисы"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Дефисом разделяются имена предков в производном пространстве имён. Дефис внутри имени тенанта сделал бы цепочку предков неоднозначной.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-05",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Где в ресурсе тенанта искать его собственное пространство имён?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`metadata.namespace`"
+   },
+   {
+    "key": "B",
+    "text": "`status.namespace`"
+   },
+   {
+    "key": "C",
+    "text": "`spec.host`"
+   },
+   {
+    "key": "D",
+    "text": "`metadata.labels`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "В `metadata.namespace` лежит пространство имён родителя — там живёт сам ресурс. А `status.namespace` — то пространство имён, которое платформа создала для этого тенанта.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-06",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Какая метка разрешает поду обращаться к apiserver Kubernetes внутри тенанта?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`cozystack.io/apiserver: enabled`"
+   },
+   {
+    "key": "B",
+    "text": "`policy.cozystack.io/allow-to-apiserver: \"true\"`"
+   },
+   {
+    "key": "C",
+    "text": "`network.cozystack.io/open: \"true\"`"
+   },
+   {
+    "key": "D",
+    "text": "`cilium.io/allow-all: \"true\"`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Доступ включается явно меткой `policy.cozystack.io/allow-to-apiserver: \"true\"` — она ставится на каждый под отдельно.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-07",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Как отключить сетевую изоляцию тенанта в v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Выставить `isolated: false` в ресурсе Tenant"
+   },
+   {
+    "key": "B",
+    "text": "Удалить сетевые политики Cilium вручную"
+   },
+   {
+    "key": "C",
+    "text": "Никак: с v1.0 изоляция обязательна"
+   },
+   {
+    "key": "D",
+    "text": "Использовать вариант `default`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Флаг `isolated` убрали в v1.0. Изоляция обязательна, отключить её нельзя.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-08",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Какой компонент обеспечивает сетевую изоляцию тенантов?",
+  "options": [
+   {
+    "key": "A",
+    "text": "MetalLB"
+   },
+   {
+    "key": "B",
+    "text": "Cilium"
+   },
+   {
+    "key": "C",
+    "text": "Keycloak"
+   },
+   {
+    "key": "D",
+    "text": "Velero"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Изолирующие сетевые политики генерируются автоматически, а применяет их eBPF-датаплейн Cilium.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-09",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "В каком наборе перечислены переключатели сервисов уровня тенанта?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`etcd`, `monitoring`, `ingress`, `seaweedfs`"
+   },
+   {
+    "key": "B",
+    "text": "`postgres`, `kafka`, `redis`, `harbor`"
+   },
+   {
+    "key": "C",
+    "text": "`cilium`, `kubeovn`, `metallb`, `velero`"
+   },
+   {
+    "key": "D",
+    "text": "`dashboard`, `keycloak`, `grafana`, `alerta`"
+   }
+  ],
+  "answer": "A",
+  "rationale": "В ресурсе Tenant есть ровно четыре таких переключателя: etcd, monitoring, ingress и seaweedfs.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-10",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "У тенанта `beta` внутри `alpha` мониторинг не включён, а у `alpha` стоит `monitoring: true`. Куда пойдут метрики beta?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Никуда: у beta мониторинг выключен"
+   },
+   {
+    "key": "B",
+    "text": "В стек мониторинга alpha"
+   },
+   {
+    "key": "C",
+    "text": "Всегда в стек корневого тенанта"
+   },
+   {
+    "key": "D",
+    "text": "Во внешний SaaS-коллектор"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Отсутствующий сервис наследуется от ближайшего предка, у которого он поднят. Здесь это родитель alpha, а вовсе не обязательно корень.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-11",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "У какой серии пресетов соотношение CPU к RAM равно 1:4?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`t1`"
+   },
+   {
+    "key": "B",
+    "text": "`c1`"
+   },
+   {
+    "key": "C",
+    "text": "`u1`"
+   },
+   {
+    "key": "D",
+    "text": "`m1`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Соотношения по пресетам: t1=1:0.5, c1=1:1, s1=1:2, u1=1:4, m1=1:8. Значит, 1:4 — это u1. (Речь про пресеты тенантов и приложений, а не про типы инстансов ВМ.)",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-12",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "При стандартном `cpuAllocationRatio` = 10 сколько CPU запросит у планировщика нагрузка с лимитом в 2 CPU?",
+  "options": [
+   {
+    "key": "A",
+    "text": "2 CPU"
+   },
+   {
+    "key": "B",
+    "text": "0.2 CPU"
+   },
+   {
+    "key": "C",
+    "text": "20 CPU"
+   },
+   {
+    "key": "D",
+    "text": "1 CPU"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Запрос считается как лимит, делённый на cpuAllocationRatio: 2 / 10 = 0.2 CPU.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-13",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "В манифесте одновременно указан пресет и явный блок `resources: {cpu, memory}`. Что сработает?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Пресет; явные ресурсы игнорируются"
+   },
+   {
+    "key": "B",
+    "text": "Явные ресурсы; они перекрывают пресет"
+   },
+   {
+    "key": "C",
+    "text": "Ничего; манифест будет отклонён"
+   },
+   {
+    "key": "D",
+    "text": "Большее из двух значений по каждому полю"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Явные значения в `resources: {cpu, memory}` всегда важнее выбранного пресета.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-14",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Из чего скрипт из документации собирает kubeconfig для тенанта?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Из пароля администратора Keycloak"
+   },
+   {
+    "key": "B",
+    "text": "Из токена и CA-сертификата в секрете тенанта плюс адреса сервера из кубконфига администратора"
+   },
+   {
+    "key": "C",
+    "text": "Из YAML-файла Platform Package"
+   },
+   {
+    "key": "D",
+    "text": "Из конфигурации машины Talos"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Скрипт из документации читает одноимённый секрет тенанта и берёт оттуда токен (поле token), CA-сертификат (ca.crt) и пространство имён по умолчанию. Адрес API-сервера в секрете не лежит — его скрипт подставляет из текущего кубконфига администратора, который скрипт и запускает.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-15",
+  "domain": "D2",
+  "domain_name": "Тенанты и доступ",
+  "module": "m2",
+  "stem": "Домен платформы — `cloud.example.com`. Какой домен по умолчанию получит тенант `alpha` в корне?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`alpha.cloud.example.com`"
+   },
+   {
+    "key": "B",
+    "text": "`cloud.alpha.example.com`"
+   },
+   {
+    "key": "C",
+    "text": "`tenant-alpha.example.com`"
+   },
+   {
+    "key": "D",
+    "text": "`alpha.example.com`"
+   }
+  ],
+  "answer": "A",
+  "rationale": "Домен тенанта по умолчанию строится как `<имя>.<домен родителя>`, поэтому alpha в корне получает `alpha.cloud.example.com`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-01",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "К какой группе каталога относится **Qdrant**?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Обмен сообщениями"
+   },
+   {
+    "key": "B",
+    "text": "Базы данных"
+   },
+   {
+    "key": "C",
+    "text": "Сетевые сервисы"
+   },
+   {
+    "key": "D",
+    "text": "Сервисы платформы"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Qdrant — векторная база данных, поэтому её место в группе баз данных.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-02",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Какой оператор управляет PostgreSQL в Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Strimzi"
+   },
+   {
+    "key": "B",
+    "text": "Оператор Percona"
+   },
+   {
+    "key": "C",
+    "text": "CloudNativePG"
+   },
+   {
+    "key": "D",
+    "text": "Оператор Altinity"
+   }
+  ],
+  "answer": "C",
+  "rationale": "За управляемый PostgreSQL отвечает CloudNativePG. Strimzi — это Kafka, Percona — MongoDB, Altinity — ClickHouse.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-03",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Как администратор тенанта создаёт вложенный тенант?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Через заявку в команду платформы"
+   },
+   {
+    "key": "B",
+    "text": "Разворачивает приложение Tenant из каталога"
+   },
+   {
+    "key": "C",
+    "text": "Правкой Platform Package"
+   },
+   {
+    "key": "D",
+    "text": "Создаёт пространство имён Kubernetes напрямую"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Tenant сам по себе — приложение из каталога. Вложенный тенант разворачивается внутри родительского так же, как любое другое приложение.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-04",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "В какой API-группе живут ресурсы приложений каталога?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`platform.cozystack.io/v1`"
+   },
+   {
+    "key": "B",
+    "text": "`apps.cozystack.io/v1alpha1`"
+   },
+   {
+    "key": "C",
+    "text": "`helm.toolkit.fluxcd.io/v2`"
+   },
+   {
+    "key": "D",
+    "text": "`core.cozystack.io/v1alpha1`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Все приложения каталога — это кастомные ресурсы в группе `apps.cozystack.io/v1alpha1`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-05",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Вы создали ресурс `Postgres`. Что платформа создаст следующим звеном цепочки?",
+  "options": [
+   {
+    "key": "A",
+    "text": "HelmRelease, который ставит чарт приложения"
+   },
+   {
+    "key": "B",
+    "text": "Файл Docker Compose"
+   },
+   {
+    "key": "C",
+    "text": "Новый узел Kubernetes"
+   },
+   {
+    "key": "D",
+    "text": "Резервную копию Velero"
+   }
+  ],
+  "answer": "A",
+  "rationale": "Цепочка такая: ресурс → HelmRelease (FluxCD) → чарт Helm → оператор → работающая нагрузка.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-06",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Какая команда покажет все типы приложений каталога, доступные в кластере?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get pods -A`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl get catalog`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl api-resources | grep apps.cozystack`"
+   },
+   {
+    "key": "D",
+    "text": "`helm list -A`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "`kubectl api-resources | grep apps.cozystack` выводит все типы каталога, которые обслуживает платформа.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-07",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Что создаёт дашборд Cozystack, когда вы разворачиваете приложение через форму?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Shell-скрипт на управляющем узле"
+   },
+   {
+    "key": "B",
+    "text": "Тот же кастомный ресурс, что и `kubectl apply`"
+   },
+   {
+    "key": "C",
+    "text": "Docker-контейнер вне Kubernetes"
+   },
+   {
+    "key": "D",
+    "text": "Снимок пространства имён тенанта"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Дашборд работает напрямую с API Kubernetes: форма создаёт ровно тот же ресурс, который вы применили бы через kubectl.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-08",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Откуда берутся формы приложений в дашборде?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Генерируются из схем ресурсов приложений"
+   },
+   {
+    "key": "B",
+    "text": "Их вручную пишут фронтендеры для каждого приложения"
+   },
+   {
+    "key": "C",
+    "text": "Настраиваются в Platform Package"
+   },
+   {
+    "key": "D",
+    "text": "Импортируются из модулей Terraform"
+   }
+  ],
+  "answer": "A",
+  "rationale": "дашборд построен на схемах: формы генерируются из схем ресурсов приложений, поэтому UI и API никогда не расходятся.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-09",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Команда держит всю инфраструктуру в Terraform и хочет описывать базы данных Cozystack в той же кодовой базе. Как это сделать проще всего?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Кликать в дашборде и записывать шаги в документацию"
+   },
+   {
+    "key": "B",
+    "text": "Использовать Terraform-провайдер Cozystack или ресурсы `kubernetes_manifest`"
+   },
+   {
+    "key": "C",
+    "text": "Написать cron-задачу, которая вызывает kubectl"
+   },
+   {
+    "key": "D",
+    "text": "Править Platform Package"
+   }
+  ],
+  "answer": "B",
+  "rationale": "официальный Terraform-провайдер (или обычный ресурс kubernetes_manifest) управляет теми же CR как кодом.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-10",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Что произойдёт, если выполнить `kubectl delete` для CR приложения `Postgres`?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Удалится только объект CR, база продолжит работать"
+   },
+   {
+    "key": "B",
+    "text": "Удалится приложение вместе со своими нагрузками"
+   },
+   {
+    "key": "C",
+    "text": "Команда не пройдёт: приложения удаляются только из дашборда"
+   },
+   {
+    "key": "D",
+    "text": "База автоматически уедет в архив в S3"
+   }
+  ],
+  "answer": "B",
+  "rationale": "удаление CR приложения сносит приложение целиком — вместе с подами и данными. Относитесь к этому как к DROP DATABASE.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-11",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Какой набор приложений получил поддержку TLS в Cozystack v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Kafka, NATS, Qdrant, PostgreSQL"
+   },
+   {
+    "key": "B",
+    "text": "Redis, MongoDB, MariaDB, ClickHouse"
+   },
+   {
+    "key": "C",
+    "text": "Harbor, OpenBao, Bucket, Ingress"
+   },
+   {
+    "key": "D",
+    "text": "VPN, TCP Balancer, HTTP Cache, VPC"
+   }
+  ],
+  "answer": "A",
+  "rationale": "в v1.5 TLS появился у Kafka, NATS, Qdrant и PostgreSQL; базы, опубликованные наружу, получают TLS автоматически.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-12",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Для чего нужен ApplicationDefinition?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Чтобы задать квоты ресурсов для тенанта"
+   },
+   {
+    "key": "B",
+    "text": "Чтобы добавить в каталог новый тип приложения на основе Helm-чарта"
+   },
+   {
+    "key": "C",
+    "text": "Чтобы описать сетевую политику приложения"
+   },
+   {
+    "key": "D",
+    "text": "Чтобы зафиксировать платформу на конкретной версии"
+   }
+  ],
+  "answer": "B",
+  "rationale": "ApplicationDefinition регистрирует в каталоге новый тип приложения на базе Helm-чарта — со своим kind CR и формой в дашборде.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-13",
+  "domain": "D3",
+  "domain_name": "Каталог управляемых приложений",
+  "module": "m3",
+  "stem": "Что даёт BackupClass `cozy-default` в v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Автоматические снапшоты всех виртуальных машин"
+   },
+   {
+    "key": "B",
+    "text": "Рабочие резервные копии управляемых приложений «из коробки» — в общий системный S3-бакет"
+   },
+   {
+    "key": "C",
+    "text": "Полную копию management-кластера"
+   },
+   {
+    "key": "D",
+    "text": "Инкрементальные поблочные копии виртуальных машин"
+   }
+  ],
+  "answer": "B",
+  "rationale": "cozy-default — готовый BackupClass, подключённый к общему системному S3-бакету (полная модель — в M6).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-01",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Как KubeVirt запускает виртуальную машину?",
+  "options": [
+   {
+    "key": "A",
+    "text": "На отдельном кластере гипервизоров рядом с Kubernetes"
+   },
+   {
+    "key": "B",
+    "text": "Внутри пода Kubernetes, как процесс qemu"
+   },
+   {
+    "key": "C",
+    "text": "Как WebAssembly-модуль внутри kubelet"
+   },
+   {
+    "key": "D",
+    "text": "Внутри Docker-in-Docker контейнера на control plane"
+   }
+  ],
+  "answer": "B",
+  "rationale": "KubeVirt запускает каждую ВМ как процесс qemu/KVM внутри пода, поэтому ВМ — обычная нагрузка Kubernetes.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-02",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Какая роль у CDI в стеке виртуализации?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Распределяет поды виртуальных машин по узлам"
+   },
+   {
+    "key": "B",
+    "text": "Даёт VNC-консоль для виртуальных машин"
+   },
+   {
+    "key": "C",
+    "text": "Загружает образы дисков в персистентные тома"
+   },
+   {
+    "key": "D",
+    "text": "Реплицирует диски между дата-центрами"
+   }
+  ],
+  "answer": "C",
+  "rationale": "CDI (Containerized Data Importer) наполняет PVC образами дисков — из URL, реестров или загрузок — через объекты DataVolume.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-03",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Какое утверждение о виртуальных машинах в Cozystack верно?",
+  "options": [
+   {
+    "key": "A",
+    "text": "На ВМ не распространяются квоты тенанта"
+   },
+   {
+    "key": "B",
+    "text": "ВМ обходят сетевые политики Cilium"
+   },
+   {
+    "key": "C",
+    "text": "Для ВМ нужен отдельный планировщик"
+   },
+   {
+    "key": "D",
+    "text": "ВМ размещает штатный планировщик Kubernetes"
+   }
+  ],
+  "answer": "D",
+  "rationale": "раз ВМ — это под, её размещает штатный планировщик, а квоты и сетевые политики действуют на неё как на обычную нагрузку.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-04",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Как правильно создать виртуальную машину в Cozystack v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Создать один ресурс VirtualMachine с диском внутри"
+   },
+   {
+    "key": "B",
+    "text": "Сначала создать VMDisk, затем VMInstance со ссылкой на него"
+   },
+   {
+    "key": "C",
+    "text": "Сначала создать VMInstance — диски платформа создаст сама"
+   },
+   {
+    "key": "D",
+    "text": "Создать DataVolume и Pod вручную"
+   }
+  ],
+  "answer": "B",
+  "rationale": "штатная модель v1.5 — два CR, и диск первым: VMDisk (хранилище), затем VMInstance со ссылкой на него.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-05",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Почему диск и инстанс — отдельные ресурсы?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Kubernetes не умеет хранить две спецификации в одном объекте"
+   },
+   {
+    "key": "B",
+    "text": "У диска свой жизненный цикл: данные переживают удаление инстанса, диски можно переиспользовать"
+   },
+   {
+    "key": "C",
+    "text": "Диски и инстансы обязаны жить в разных пространствах имён"
+   },
+   {
+    "key": "D",
+    "text": "Без этого не работает живая миграция"
+   }
+  ],
+  "answer": "B",
+  "rationale": "весь смысл — в раздельных жизненных циклах: диск переживает удаление инстанса, его можно подключить заново и бэкапить отдельно.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-06",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Команда хочет, чтобы каждая новая ВМ стартовала с одного и того же подготовленного образа Ubuntu и он не скачивался каждый раз. Что использовать?",
+  "options": [
+   {
+    "key": "A",
+    "text": "VMImage (golden image) как источник диска"
+   },
+   {
+    "key": "B",
+    "text": "Пустой диск"
+   },
+   {
+    "key": "C",
+    "text": "Загрузку образа с общего ноутбука"
+   },
+   {
+    "key": "D",
+    "text": "Инстанс большего размера"
+   }
+  ],
+  "answer": "A",
+  "rationale": "VMImage — это и есть golden image: публикуете один раз, а дальше клонируете из него диски через source.image.name.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-07",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Linux-машина загрузилась, но сеть настроена криво и SSH не работает. Каким способом до неё всё ещё можно достучаться?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`virtctl ssh`"
+   },
+   {
+    "key": "B",
+    "text": "`virtctl console`"
+   },
+   {
+    "key": "C",
+    "text": "kubectl port-forward внутрь гостя"
+   },
+   {
+    "key": "D",
+    "text": "Файловый менеджер в дашборде"
+   }
+  ],
+  "answer": "B",
+  "rationale": "последовательная консоль не зависит от сети внутри гостя — это путь доступа на самый крайний случай.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-08",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Что делает cloud-init?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Реплицирует диски ВМ между узлами"
+   },
+   {
+    "key": "B",
+    "text": "Настраивает гостевую ОС при первой загрузке: пользователей, SSH-ключи, пакеты"
+   },
+   {
+    "key": "C",
+    "text": "Размещает под виртуальной машины на узле"
+   },
+   {
+    "key": "D",
+    "text": "Конвертирует образы дисков между форматами"
+   }
+  ],
+  "answer": "B",
+  "rationale": "cloud-init отрабатывает при первой загрузке внутри гостя и настраивает пользователей, ключи, hostname и пакеты.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-09",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Какая возможность реально есть в Cozystack v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Автоперезапуск ВМ после отказа хоста (аналог vSphere HA)"
+   },
+   {
+    "key": "B",
+    "text": "Постоянная автобалансировка ВМ по узлам (аналог DRS)"
+   },
+   {
+    "key": "C",
+    "text": "Живая миграция работающих ВМ между узлами"
+   },
+   {
+    "key": "D",
+    "text": "Инкрементальные бэкапы ВМ через changed block tracking"
+   }
+  ],
+  "answer": "C",
+  "rationale": "живая миграция есть; автоперезапуск HA, балансировка DRS и бэкапы через CBT — честные пробелы v1.5.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-10",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Команда спрашивает: «Если узел умрёт, наши ВМ сами перезапустятся на другом?» Какой честный ответ для v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Да, KubeVirt поднимет их за считаные секунды"
+   },
+   {
+    "key": "B",
+    "text": "Нет — автоперезапуска с фенсингом «из коробки» нет, в восстановлении есть ручные шаги"
+   },
+   {
+    "key": "C",
+    "text": "Да, но только для Windows-гостей"
+   },
+   {
+    "key": "D",
+    "text": "Только если включён DRS"
+   }
+  ],
+  "answer": "B",
+  "rationale": "в v1.5 нет автоперезапуска на основе фенсинга; восстановление ВМ после отказа узла включает ручные шаги.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-11",
+  "domain": "D4",
+  "domain_name": "Основы виртуализации",
+  "module": "m4",
+  "stem": "Что изменилось в проброске GPU в v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "GPU больше нельзя подключить к ВМ"
+   },
+   {
+    "key": "B",
+    "text": "Подготовку узлов автоматизировали: разметку GPU-узлов и привязку устройств"
+   },
+   {
+    "key": "C",
+    "text": "Проброска GPU теперь требует коммерческой лицензии"
+   },
+   {
+    "key": "D",
+    "text": "GPU по умолчанию делятся между ВМ"
+   }
+  ],
+  "answer": "B",
+  "rationale": "в v1.5 автоматизировали подготовку GPU-узлов: расстановку меток и привязку устройств к vfio-pci; сама VMInstance запрашивает GPU через поле gpus.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-01",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Какой компонент обеспечивает сетевую изоляцию тенантов в Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "MetalLB"
+   },
+   {
+    "key": "B",
+    "text": "Cilium"
+   },
+   {
+    "key": "C",
+    "text": "ingress-nginx"
+   },
+   {
+    "key": "D",
+    "text": "ExternalDNS"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Cilium применяет автоматически сгенерированные сетевые политики, которые изолируют тенанты (M2).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-02",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Поду внутри тенанта нужно обращаться к API-серверу Kubernetes. Что для этого нужно?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Ничего, доступ к API открыт по умолчанию"
+   },
+   {
+    "key": "B",
+    "text": "Метка `policy.cozystack.io/allow-to-apiserver: \"true\"` на поде"
+   },
+   {
+    "key": "C",
+    "text": "Поставить `isolated: false` в ресурсе Tenant"
+   },
+   {
+    "key": "D",
+    "text": "Отдельное правило ingress"
+   }
+  ],
+  "answer": "B",
+  "rationale": "доступ к API-серверу по умолчанию закрыт; под явно его запрашивает меткой `policy.cozystack.io/allow-to-apiserver: \"true\"`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-03",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Что добавляет платформе Kube-OVN?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Терминацию TLS для веб-приложений"
+   },
+   {
+    "key": "B",
+    "text": "Постоянные IP-адреса подов при переезде между узлами"
+   },
+   {
+    "key": "C",
+    "text": "Замену kube-proxy на eBPF"
+   },
+   {
+    "key": "D",
+    "text": "Управление DNS-записями"
+   }
+  ],
+  "answer": "B",
+  "rationale": "централизованный IPAM в Kube-OVN сохраняет IP пода при перепланировании; остальные пункты — про TenantGateway/cert-manager, Cilium и ExternalDNS.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-04",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Почему постоянные IP-адреса особенно важны для виртуальных машин?",
+  "options": [
+   {
+    "key": "A",
+    "text": "ВМ не умеют работать по DHCP"
+   },
+   {
+    "key": "B",
+    "text": "Kubernetes запрещает подам менять IP"
+   },
+   {
+    "key": "C",
+    "text": "Нагрузки внутри гостя, правила фаервола и лицензии часто завязаны на фиксированный IP"
+   },
+   {
+    "key": "D",
+    "text": "Живая миграция требует IPv6"
+   }
+  ],
+  "answer": "C",
+  "rationale": "гостевые системы, правила фаервола и лицензии часто привязаны к IP; ВМ, меняющая адрес при каждой миграции, всё это сломает.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-05",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Коллега спрашивает, кто из двух CNI за что отвечает. Какая пара верна?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Cilium: наложенная сеть и IPAM; Kube-OVN: сетевые политики"
+   },
+   {
+    "key": "B",
+    "text": "Cilium: политики и Services (eBPF); Kube-OVN: наложенная сеть, централизованный IPAM, постоянные IP, VPC"
+   },
+   {
+    "key": "C",
+    "text": "Оба слоя делают одно и то же для надёжности"
+   },
+   {
+    "key": "D",
+    "text": "В v1.5 Kube-OVN заменил Cilium"
+   }
+  ],
+  "answer": "B",
+  "rationale": "два CNI работают вместе: Cilium отвечает за обработку пакетов, Services и политики, Kube-OVN — за наложенную сеть, IPAM, постоянные IP и VPC.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-06",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Что будет с Service типа `LoadBalancer` в bare-metal кластере **без** MetalLB?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Он получит IP из сети подов"
+   },
+   {
+    "key": "B",
+    "text": "Внешний IP навсегда останется в pending"
+   },
+   {
+    "key": "C",
+    "text": "Он автоматически откатится к NodePort"
+   },
+   {
+    "key": "D",
+    "text": "API-сервер его отклонит"
+   }
+  ],
+  "answer": "B",
+  "rationale": "на голом железе внешние IP выдавать некому: без MetalLB внешний адрес Service так и висит в pending.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-07",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Что описывает режим BGP в MetalLB?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Один узел отвечает на ARP-запросы для IP сервиса"
+   },
+   {
+    "key": "B",
+    "text": "Узлы анонсируют IP сервисов физическим маршрутизаторам как маршруты"
+   },
+   {
+    "key": "C",
+    "text": "Он работает только в публичных облаках"
+   },
+   {
+    "key": "D",
+    "text": "Ему нужен CRD TenantGateway"
+   }
+  ],
+  "answer": "B",
+  "rationale": "в режиме BGP узлы поднимают пиринг с физическими маршрутизаторами и анонсируют IP сервисов как маршруты (с v1.5 бэкенд — FRR-K8s); ответы на ARP — это режим L2.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-08",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Как в Cozystack развёрнут ingress?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Один общий ingress-контроллер на всю платформу"
+   },
+   {
+    "key": "B",
+    "text": "По одному контроллеру ingress-nginx на тенант, включается переключателем тенанта"
+   },
+   {
+    "key": "C",
+    "text": "Ingress работает на выделенном железном устройстве"
+   },
+   {
+    "key": "D",
+    "text": "Ingress не поддерживается, есть только Services типа LoadBalancer"
+   }
+  ],
+  "answer": "B",
+  "rationale": "ingress-nginx разворачивается для каждого тенанта через переключатель `ingress`; если своего нет, сервис наследуется от родителя (M2).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-09",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "На чём работает data plane у TenantGateway?",
+  "options": [
+   {
+    "key": "A",
+    "text": "ingress-nginx"
+   },
+   {
+    "key": "B",
+    "text": "HAProxy"
+   },
+   {
+    "key": "C",
+    "text": "Cilium"
+   },
+   {
+    "key": "D",
+    "text": "MetalLB"
+   }
+  ],
+  "answer": "C",
+  "rationale": "TenantGateway — это Gateway API в реализации Cilium; никакого nginx в этом пути данных нет.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-10",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Тенанту нужен wildcard-сертификат на `*.apps.example.com`. Какой способ проверки это позволяет?",
+  "options": [
+   {
+    "key": "A",
+    "text": "HTTP-01"
+   },
+   {
+    "key": "B",
+    "text": "DNS-01"
+   },
+   {
+    "key": "C",
+    "text": "ARP"
+   },
+   {
+    "key": "D",
+    "text": "BGP"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Wildcard-сертификаты выпускаются только через проверку DNS-01. HTTP-01 их не выдаёт.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-11",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Домен платформы — `cloud.example.com`. Какой домен по умолчанию получит тенант `alpha`, созданный прямо в корне?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`alpha.cloud.example.com`"
+   },
+   {
+    "key": "B",
+    "text": "`cloud.alpha.example.com`"
+   },
+   {
+    "key": "C",
+    "text": "`tenant-alpha.example.com`"
+   },
+   {
+    "key": "D",
+    "text": "`alpha.example.com`"
+   }
+  ],
+  "answer": "A",
+  "rationale": "Домен тенанта по умолчанию строится как `<имя>.<домен-родителя>`, поэтому alpha в корне получает `alpha.cloud.example.com`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-12",
+  "domain": "D5",
+  "domain_name": "Основы сетей",
+  "module": "m5",
+  "stem": "Какой компонент сам создаёт DNS-записи для опубликованных приложений?",
+  "options": [
+   {
+    "key": "A",
+    "text": "cert-manager"
+   },
+   {
+    "key": "B",
+    "text": "CoreDNS"
+   },
+   {
+    "key": "C",
+    "text": "ExternalDNS"
+   },
+   {
+    "key": "D",
+    "text": "Kilo"
+   }
+  ],
+  "answer": "C",
+  "rationale": "ExternalDNS следит за опубликованными сервисами и ingress-ами и заводит для них DNS-записи. cert-manager занимается сертификатами, а не именами.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-01",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Какой компонент хранит метрики в Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Prometheus"
+   },
+   {
+    "key": "B",
+    "text": "VictoriaMetrics"
+   },
+   {
+    "key": "C",
+    "text": "Loki"
+   },
+   {
+    "key": "D",
+    "text": "InfluxDB"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Метрики хранит VictoriaMetrics (VMCluster). Prometheus в стеке нет — есть только совместимость с PromQL.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-02",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "У тенанта нет собственного приложения Monitoring. Что будет с мониторингом его нагрузок?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Данные мониторинга теряются"
+   },
+   {
+    "key": "B",
+    "text": "Тенант должен вручную поставить Prometheus"
+   },
+   {
+    "key": "C",
+    "text": "Тенант пользуется мониторингом родительского тенанта"
+   },
+   {
+    "key": "D",
+    "text": "Платформа запретит запускать новые нагрузки"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Monitoring — приложение из каталога, своё у каждого тенанта. Если своего нет, работает мониторинг ближайшего предка — обычное правило наследования из M2.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-03",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Какой компонент группирует алерты и убирает дубли перед отправкой уведомлений?",
+  "options": [
+   {
+    "key": "A",
+    "text": "VMAgent"
+   },
+   {
+    "key": "B",
+    "text": "Grafana"
+   },
+   {
+    "key": "C",
+    "text": "Alerta"
+   },
+   {
+    "key": "D",
+    "text": "Fluent Bit"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Цепочка такая: VMAlert считает правила, Alerta группирует, дедуплицирует и маршрутизирует, дальше — Email/SMS/Slack.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-04",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Нужно проверить состояние томов LINSTOR. Какую группу стандартных дашбордов открыть?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Cluster Overview"
+   },
+   {
+    "key": "B",
+    "text": "Storage"
+   },
+   {
+    "key": "C",
+    "text": "ETCD"
+   },
+   {
+    "key": "D",
+    "text": "Tenant Applications"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Группа дашбордов Storage показывает состояние LINSTOR и SeaweedFS.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-05",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Пользователь хочет каждую ночь автоматически снимать резервную копию управляемой базы PostgreSQL. Какой объект он создаёт?",
+  "options": [
+   {
+    "key": "A",
+    "text": "BackupClass"
+   },
+   {
+    "key": "B",
+    "text": "BackupJob"
+   },
+   {
+    "key": "C",
+    "text": "Plan"
+   },
+   {
+    "key": "D",
+    "text": "Backup"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Plan — это копирование по расписанию (cron). BackupJob — разовый запуск, Backup — уже готовый результат.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-06",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Какой объект существует на уровне кластера и создаётся администратором платформы?",
+  "options": [
+   {
+    "key": "A",
+    "text": "BackupClass"
+   },
+   {
+    "key": "B",
+    "text": "BackupJob"
+   },
+   {
+    "key": "C",
+    "text": "Plan"
+   },
+   {
+    "key": "D",
+    "text": "Backup"
+   }
+  ],
+  "answer": "A",
+  "rationale": "BackupClass — единственный объект уровня кластера, его заводит администратор платформы. Остальные создают пользователи или сама система.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-07",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Что даёт BackupClass `cozy-default` в версии v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Автоматические копии всего management-кластера"
+   },
+   {
+    "key": "B",
+    "text": "Готовую конфигурацию с общим системным S3-бакетом — копии управляемых приложений работают без настройки администратором"
+   },
+   {
+    "key": "C",
+    "text": "Инкрементальные копии виртуальных машин"
+   },
+   {
+    "key": "D",
+    "text": "Бесплатный внешний S3-аккаунт каждому тенанту"
+   }
+  ],
+  "answer": "B",
+  "rationale": "cozy-default идёт из коробки начиная с v1.5 и приносит общий системный S3-бакет, так что копии управляемых приложений снимаются без настройки администратором.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-08",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "С какого релиза Velero входит в Cozystack по умолчанию?",
+  "options": [
+   {
+    "key": "A",
+    "text": "v1.3"
+   },
+   {
+    "key": "B",
+    "text": "v1.4"
+   },
+   {
+    "key": "C",
+    "text": "v1.5"
+   },
+   {
+    "key": "D",
+    "text": "Он до сих пор опционален"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Velero (cozystack.velero) стал штатным компонентом платформы в v1.5.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-09",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Какой объект Velero задаёт, *где* лежат резервные копии?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Strategy"
+   },
+   {
+    "key": "B",
+    "text": "BackupStorageLocation"
+   },
+   {
+    "key": "C",
+    "text": "Plan"
+   },
+   {
+    "key": "D",
+    "text": "BackupJob"
+   }
+  ],
+  "answer": "B",
+  "rationale": "BackupStorageLocation описывает S3-хранилище, куда попадают копии. Strategy отвечает за то, как копировать, а BackupClass связывает всё это с типами приложений.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-10",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Что НЕ попадает в резервную копию управляемого приложения, снятую только по данным? (Выберите наиболее точный ответ.)",
+  "options": [
+   {
+    "key": "A",
+    "text": "Таблицы и строки базы данных"
+   },
+   {
+    "key": "B",
+    "text": "Helm-релиз, CR приложения и секреты оператора"
+   },
+   {
+    "key": "C",
+    "text": "Содержимое S3-бакета"
+   },
+   {
+    "key": "D",
+    "text": "Объект Backup с результатом"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Такая копия забирает только содержимое базы. Helm-релиз, CR приложения и секреты оператора в неё не входят.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-11",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Какое условие должно выполняться до восстановления копии управляемого приложения?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Целевое приложение уже должно быть развёрнуто"
+   },
+   {
+    "key": "B",
+    "text": "Тенант нужно сначала удалить"
+   },
+   {
+    "key": "C",
+    "text": "Velero нужно отключить"
+   },
+   {
+    "key": "D",
+    "text": "В кластере должен работать Prometheus"
+   }
+  ],
+  "answer": "A",
+  "rationale": "Восстановление заливает данные в существующую базу. Копии содержат только данные, поэтому целевое приложение должно быть развёрнуто заранее.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-12",
+  "domain": "D6",
+  "domain_name": "Наблюдаемость и резервные копии",
+  "module": "m6",
+  "stem": "Какие резервные копии виртуальных машин делает платформа?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Инкрементальные, с отслеживанием изменённых блоков"
+   },
+   {
+    "key": "B",
+    "text": "Полные — конфигурация и все подключённые диски"
+   },
+   {
+    "key": "C",
+    "text": "Только конфигурацию, без дисков"
+   },
+   {
+    "key": "D",
+    "text": "Только диски, без конфигурации"
+   }
+  ],
+  "answer": "B",
+  "rationale": "В копию попадают конфигурация и все подключённые диски, и каждая копия полная — инкрементальных копий и CBT здесь нет.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-01",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m7",
+  "stem": "Чем занимается контроллер в Kubernetes?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Выполняет команды пользователя по очереди"
+   },
+   {
+    "key": "B",
+    "text": "Постоянно сравнивает желаемое состояние с фактическим и устраняет расхождение"
+   },
+   {
+    "key": "C",
+    "text": "Хранит конфигурацию кластера на диске"
+   },
+   {
+    "key": "D",
+    "text": "Маршрутизирует трафик между подами"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Контроллер крутит цикл сверки: сравнивает желаемое состояние с фактическим и устраняет разницу — и так бесконечно.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-02",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m7",
+  "stem": "Какой объект даёт постоянное сетевое имя для набора подов?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Deployment"
+   },
+   {
+    "key": "B",
+    "text": "Namespace"
+   },
+   {
+    "key": "C",
+    "text": "Service"
+   },
+   {
+    "key": "D",
+    "text": "Secret"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Service даёт постоянное имя и виртуальный IP перед набором подов, который всё время меняется.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-03",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m7",
+  "stem": "Почему `kubectl get tenants` работает в кластере Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Tenant — встроенный тип объектов Kubernetes"
+   },
+   {
+    "key": "B",
+    "text": "Cozystack расширяет API Kubernetes, и API-серверу известен тип Tenant (его отдаёт агрегированный сервер cozystack-api)"
+   },
+   {
+    "key": "C",
+    "text": "У kubectl есть специальный плагин для Cozystack"
+   },
+   {
+    "key": "D",
+    "text": "Это работает только в терминале дашборда"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Cozystack расширяет API Kubernetes: типы из apps.cozystack.io отдаёт агрегированный API-сервер cozystack-api, поэтому обычные команды kubectl с ними работают.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-04",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m7",
+  "stem": "В какой группе API лежат ресурсы каталога Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "apps/v1"
+   },
+   {
+    "key": "B",
+    "text": "core.kubernetes.io/v1"
+   },
+   {
+    "key": "C",
+    "text": "apps.cozystack.io/v1alpha1"
+   },
+   {
+    "key": "D",
+    "text": "helm.toolkit.fluxcd.io/v2"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Все ресурсы каталога — Tenant, Postgres, VMInstance и прочие — живут в apps.cozystack.io/v1alpha1.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-05",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m7",
+  "stem": "С какой команды начинают проверку общего состояния платформы Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "kubectl get pods"
+   },
+   {
+    "key": "B",
+    "text": "kubectl get hr -A"
+   },
+   {
+    "key": "C",
+    "text": "helm list"
+   },
+   {
+    "key": "D",
+    "text": "kubectl get nodes"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Каждый компонент платформы — это HelmRelease, поэтому `kubectl get hr -A` со всеми READY True и есть универсальная проверка здоровья.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-06",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m7",
+  "stem": "Что описывает объект HelmRelease?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Разовую команду установки, которая отрабатывает и исчезает"
+   },
+   {
+    "key": "B",
+    "text": "Что конкретный чарт с конкретными значениями должен быть установлен и оставаться установленным"
+   },
+   {
+    "key": "C",
+    "text": "Резервную копию Helm-чарта"
+   },
+   {
+    "key": "D",
+    "text": "Git-репозиторий с исходным кодом приложения"
+   }
+  ],
+  "answer": "B",
+  "rationale": "HelmRelease описывает желаемое состояние — чарт, версию, значения, — а FluxCD следит, чтобы всё это оставалось установленным и сходилось с описанием.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-07",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m7",
+  "stem": "Что такое Helm-чарт?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Запущенный экземпляр приложения"
+   },
+   {
+    "key": "B",
+    "text": "Пакет из шаблонов манифестов Kubernetes и метаданных"
+   },
+   {
+    "key": "C",
+    "text": "Дашборд с метриками кластера"
+   },
+   {
+    "key": "D",
+    "text": "Тип узла Kubernetes"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Чарт — это пакет: шаблоны плюс метаданные. А релиз — тот же чарт, установленный с конкретными значениями.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-08",
+  "domain": "D7",
+  "domain_name": "Основы cloud native",
+  "module": "m7",
+  "stem": "Как устанавливают саму платформу Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Пакетным менеджером ОС (apt/yum)"
+   },
+   {
+    "key": "B",
+    "text": "Копированием бинарников на все узлы по SSH"
+   },
+   {
+    "key": "C",
+    "text": "Командой Helm, которая ставит чарт cozy-installer"
+   },
+   {
+    "key": "D",
+    "text": "Через интерфейс Grafana"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Платформа ставится одной идемпотентной командой Helm: `helm upgrade --install ... cozy-installer` в пространство имён cozy-system (M1).",
+  "multi": false
+ }
+]

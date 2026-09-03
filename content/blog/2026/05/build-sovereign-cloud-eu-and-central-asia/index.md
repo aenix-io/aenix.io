@@ -34,7 +34,7 @@ quiz:
         - { text: "Tenant CRD multi-tenancy", correct: false }
         - { text: "WHMCS billing integration", correct: false }
         - { text: "Air-gap install support", correct: false }
-      explanation: "Cozystack has no phone-home by default — telemetry is opt-in. The article explicitly lists this as a sovereign-friendly property. Tenant CRD, cozyportal, WHMCS billing, air-gap, VictoriaMetrics + VictoriaLogs, and Cilium are the named sovereign-friendly features."
+      explanation: "Cozystack has no phone-home by default — telemetry is opt-in. The article explicitly lists this as a sovereign-friendly property. Tenant CRD, Cozystack Dashboard, WHMCS billing, air-gap, VictoriaMetrics + VictoriaLogs, and Cilium are the named sovereign-friendly features."
     - q: "For Pattern 2 (managed sovereign cloud), what is the trade-off?"
       options:
         - { text: "Maximum sovereignty with maximum operational footprint", correct: false }
@@ -103,8 +103,8 @@ Cozystack is open-source (Apache 2.0), CNCF Project-governed (community-governed
 
 Specifically for sovereign cloud builders:
 - Multi-tenant Tenant CRD model — for customer-facing sovereign cloud product
-- Cozyportal — customer-facing self-service surface
-- WHMCS billing integration — for subscription customer-facing offering
+- Cozystack Dashboard — customer-facing self-service surface
+- WHMCS billing integration — for a subscription customer-facing offering (an Ænix product on top of Cozystack, not an upstream component)
 - Air-gap install supported and documented
 - VictoriaMetrics + VictoriaLogs — self-hosted observability (no SaaS dependency)
 - Cilium networking — sovereignty-friendly, no proprietary network platform dependency

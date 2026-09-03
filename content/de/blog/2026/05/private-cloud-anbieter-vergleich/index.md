@@ -25,7 +25,7 @@ quiz:
     - q: "Was ist im Vergleich die \"beste Wahl\" für Service Provider mit Multi-Mandanten- und AI/GPU-Bedarf?"
       options:
         - { text: "VMware VCF", correct: false }
-        - { text: "Cozystack (Apache 2.0, KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal)", correct: true }
+        - { text: "Cozystack (Apache 2.0, KubeVirt + Cilium + Kube-OVN + LINSTOR/DRBD + Tenant CRD + Cozystack Dashboard)", correct: true }
         - { text: "Proxmox VE", correct: false }
       explanation: "Cozystack ist die beste Wahl für Service Provider, regulierte Mandantenfähigkeit und AI/GPU-Betreiber. Stärken: Single-Stack für VMs + Container + Datenbanken + S3 + GPU. Multi-Mandant strukturell, nicht nachträglich aufgesetzt."
     - q: "Für welche Zielgruppe wird Proxmox VE empfohlen?"
@@ -54,7 +54,7 @@ Die Private-Cloud-Landschaft hat sich in den letzten 3 Jahren erheblich verände
 ## Open-Source-Plattformen
 
 ### Cozystack
-Apache-2.0-Lizenz, CNCF-Projekt. KubeVirt + Cilium + LINSTOR/Ceph + Tenant CRD + cozyportal. **Beste Wahl für** Service Provider, regulierte Mandantenfähigkeit, AI/GPU-Betreiber. **Stärken:** Single-Stack für VMs + Container + DBs + S3 + GPU. Mandantenfähigkeit strukturell.
+Apache-2.0-Lizenz, CNCF-Projekt. KubeVirt + Cilium + Kube-OVN + LINSTOR/DRBD + Tenant CRD + Cozystack Dashboard. **Beste Wahl für** Service Provider, regulierte Mandantenfähigkeit, AI/GPU-Betreiber. **Stärken:** Single-Stack für VMs + Container + DBs + S3 + GPU. Mandantenfähigkeit strukturell.
 
 ### OpenStack
 Apache-2.0-Lizenz, OpenInfra Foundation. Nova + Neutron + Cinder + Swift + Keystone. **Beste Wahl für** große Telekommunikations-Cluster, behördliche Clouds, OpenStack-erfahrene Teams. **Stärken:** Reif, breite Community, viele Vendor-Distributionen.

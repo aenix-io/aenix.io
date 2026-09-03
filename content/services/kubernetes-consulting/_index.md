@@ -193,8 +193,7 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 {{< clients >}}
 
 {{< quote-carousel >}}
-> *— {{NAME_1}}, {{TITLE_1}}*
-
+Providers running Ænix Platform in production include GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard and Cloudsy. Named references and customer quotes are shared on the discovery call, where permissions allow.
 <!-- /BLOCK 8 -->
 
 ---

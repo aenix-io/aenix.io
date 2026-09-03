@@ -37,7 +37,7 @@ faq:
   - q: "Wie funktioniert die Mandantenfähigkeit?"
     a: "Cozystack nutzt ein Tenant-CRD, um Mandanten auf der Kubernetes-Steuerungsebene zu isolieren. Hosting-Provider und Unternehmen können so getrennte, isolierte Umgebungen pro Kunde oder Team bereitstellen — eine Voraussetzung für Multi-Tenant-Public-Clouds und interne Plattformen."
   - q: "Welche Technologien stecken unter der Haube?"
-    a: "Cozystack baut auf KubeVirt für VMs, Cilium (eBPF) für Networking, LINSTOR/DRBD für replizierten Block-Storage sowie VictoriaMetrics und VictoriaLogs für Observability. Verwaltete Datenbanken umfassen PostgreSQL, MySQL, Redis, RabbitMQ, Kafka und ClickHouse."
+    a: "Cozystack baut auf KubeVirt für VMs, Cilium (eBPF) für Networking, LINSTOR/DRBD für replizierten Block-Storage sowie VictoriaMetrics und VictoriaLogs für Observability. Verwaltete Datenbanken umfassen PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka und ClickHouse."
   - q: "Was kostet kommerzieller Support bei Aenix?"
     a: "Aenix bietet gestaffelten Support: Community ist kostenlos, Standard deckt Support zu Geschäftszeiten ab und Enterprise bietet 24×7-SLA. Für die produktisierte Ænix Platform gibt es Preisstufen ab Basic (1.250 $/Monat für 10 Nodes) über Standard und Plus bis Enterprise nach Vereinbarung."
 ---
@@ -78,7 +78,7 @@ KVM-basierte VMs mit Live-Migration, Snapshots, Templates. Seite an Seite mit Co
 Tenant CRD, verschachtelte Tenants, Per-Tenant-Quotas, RBAC, Audit. Gebaut für das Service-Provider-Modell.
 
 **Verwaltete Datenbanken**
-PostgreSQL, MySQL, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB.
+PostgreSQL, MariaDB, Redis, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB.
 
 **S3-Object-Storage**
 SeaweedFS-basierter S3-kompatibler Storage für Backups, Anwendungen, KI-Trainingsdaten.
@@ -90,23 +90,23 @@ NVIDIA vGPU für VMs, MIG / Time-Slicing / Passthrough für Container. A100, H10
 eBPF-nativ, Network Policies, MetalLB, BGP. Ersetzt NSX-äquivalente Funktionalität.
 
 **LINSTOR-Storage**
-Repliziertes Block-Storage im Maßstab. Rook-Ceph wird ebenfalls unterstützt.
+Repliziertes Block-Storage im Maßstab. SeaweedFS wird ebenfalls unterstützt.
 
 **Observability**
 VictoriaMetrics + VictoriaLogs enthalten.
 
 **Self-Service-Portal & WHMCS**
-cozyportal für Self-Service. Produktionsreife WHMCS-Billing-Integration mit zwei Modi.
+Cozystack Dashboard für Self-Service. Produktionsreife WHMCS-Billing-Integration mit zwei Modi.
 
 </div>
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant-CRD-Mandantenfähigkeit</span><span>cozyportal</span><span>WHMCS-Billing</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>Tenant-CRD-Mandantenfähigkeit</span><span>Cozystack Dashboard</span><span>WHMCS-Billing</span></div></div>
 <div class="diagram__conn">eine Kubernetes-API</div>
 <div class="diagram__node"><b>Workloads</b><div class="diagram__chips"><span>KubeVirt VMs</span><span>Container</span><span>Verwaltete Datenbanken</span><span>S3-Object-Storage</span><span>GPU</span></div></div>
 <div class="diagram__conn">Networking, Storage, Observability</div>
-<div class="diagram__node"><b>Plattform-Dienste</b><div class="diagram__chips"><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Rook-Ceph</span><span>VictoriaMetrics + VictoriaLogs</span></div></div>
+<div class="diagram__node"><b>Plattform-Dienste</b><div class="diagram__chips"><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>SeaweedFS</span><span>VictoriaMetrics + VictoriaLogs</span></div></div>
 <div class="diagram__conn">auf</div>
 <div class="diagram__node"><b>Bare Metal, das Ihnen gehört</b><div class="diagram__chips"><span>eigene Hardware</span></div></div>
 </div>

@@ -52,7 +52,7 @@ faq:
 
 ### Pfad 1 — Ænix-Platform-Kunden (Support gebündelt)
 
-Wenn Sie ein Ænix-Platform-Engagement haben (Public Cloud / ISP / Enterprise / IDP / AI Platform), ist Enterprise-Support Teil des Engagement-Bundles. Spezifisches SLA passt zu Ihrem **Support-Tier** (unabhängig von der Plattform):
+Wenn Sie ein Ænix-Platform-Engagement haben (Public Cloud Platform, Private Cloud Platform oder AI Platform), ist Enterprise-Support Teil des Engagement-Bundles. Spezifisches SLA passt zu Ihrem **Support-Tier** (unabhängig von der Plattform):
 
 - **Basic** ($1,250/Monat per 10 Nodes annual) — Geschäftszeiten-Support, 8-Stunden-Notfall-Reaktion
 - **Standard** ($3,000/Monat) — Geschäftszeiten-Support, 4-Stunden-Notfall-Reaktion, Prioritäts-Tickets
