@@ -6,7 +6,7 @@
     <description>Recent content in Users, Roles, and Groups on Документация Freedom Cloud</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <atom:link href="/docs/en/accounting/users/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/demo-app/docs/en/accounting/users/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Role System</title>
       <link>/docs/en/accounting/users/roles/</link>

@@ -6,6 +6,6 @@
     <description>Recent content in Platform Overview on Документация Freedom Cloud</description>
     <generator>Hugo</generator>
     <language>ru</language>
-    <atom:link href="/docs/en/overview/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/demo-app/docs/en/overview/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
