@@ -38,6 +38,11 @@ jobs:
           python-version: "3.12"
 
       - name: Rebuild static/demo-app from cozyportal-demo
+        env:
+          # cozyportal-demo is private and lives in aenix-org, which the
+          # workflow's built-in GITHUB_TOKEN cannot read. Needs a token with
+          # read access to that repo, stored as DEMO_SRC_TOKEN.
+          DEMO_SRC_TOKEN: ${{ secrets.DEMO_SRC_TOKEN }}
         run: bash demo-src/build.sh master
 
       - name: Open a PR if the demo changed
