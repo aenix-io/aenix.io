@@ -271,7 +271,6 @@ faq:
 | UTC | **09:00–12:00** | — |
 
 <p class="ws-note">Воркшоп идёт в Google Meet. Ссылку на подключение и напоминания пришлём на почту, указанную при регистрации.</p>
-<div class="ws-cta-center"><a class="cta-secondary" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDEwNDRncjAwM2F2ZmpuZXM4YmkwdnV0bmkgdGltdXIudHVrYWV2QGFlbml4Lmlv&tmsrc=timur.tukaev%40aenix.io" target="_blank" rel="noopener">Добавить в Google Календарь →</a></div>
 </div>
 </section>
 
@@ -285,7 +284,7 @@ faq:
 {{< pipedrive-form type="workshop-online" >}}
 
 </div>
-<p class="ws-register__note">Воркшоп идёт в Google Meet — ссылку пришлём на почту после регистрации. Можно сразу <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDEwNDRncjAwM2F2ZmpuZXM4YmkwdnV0bmkgdGltdXIudHVrYWV2QGFlbml4Lmlv&tmsrc=timur.tukaev%40aenix.io" target="_blank" rel="noopener">добавить встречу в календарь</a>.</p>
+<p class="ws-register__note">Воркшоп идёт в Google Meet. Ссылку на подключение пришлём на почту после регистрации — вместе с напоминаниями за день и за час до начала.</p>
 <p class="ws-register__note">Мы ведём <a href="https://t.me/+bq1y-96FMHc2OWUy" target="_blank" rel="noopener">канал воркшопа в Telegram</a> — там материалы, ответы на вопросы и анонсы следующих встреч. Подписаться можно и до регистрации.</p>
 </div>
 </section>
