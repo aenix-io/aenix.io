@@ -6346,3 +6346,29 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 .quote-carousel__dot.is-active { width: 22px; background: var(--aenix-primary, #01a5ff); }
 .quote-carousel__dot:focus-visible { outline: 2px solid var(--aenix-primary, #01a5ff); outline-offset: 2px; }
 .quote-carousel__slide { display: flex; flex-direction: column; justify-content: center; }
+
+/* ── Online workshop: timezone cards ─────────────────────────────────────────
+   A markdown table read as a spreadsheet dropped into the page. The reader is
+   scanning for one row — their own — so the layout leads with the time and
+   treats the city list as the label, and the host timezone is marked so the
+   others are read as offsets from it. */
+.ws-tz { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin: 1.5rem 0 0.5rem; }
+.ws-tz__card {
+  display: flex; flex-direction: column; gap: 0.35rem;
+  padding: 1.125rem 1.25rem;
+  border: 1px solid var(--ws-border); border-radius: 14px;
+  background: var(--ws-panel);
+}
+.ws-tz__utc {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--aenix-text-muted);
+}
+.ws-tz__time { font-size: 1.375rem; font-weight: 700; line-height: 1.15; color: var(--aenix-text); font-variant-numeric: tabular-nums; }
+.ws-tz__places { font-size: 0.875rem; line-height: 1.45; color: var(--aenix-text-muted); }
+.ws-tz__card--home {
+  border-color: rgba(1, 165, 255, 0.45);
+  background: linear-gradient(180deg, rgba(1, 165, 255, 0.08), var(--ws-panel));
+}
+.ws-tz__card--home .ws-tz__utc { color: var(--ws-blue); }
+.ws-tz__card--home .ws-tz__time { color: var(--ws-blue); }
+@media (max-width: 640px) { .ws-tz { grid-template-columns: 1fr; } }

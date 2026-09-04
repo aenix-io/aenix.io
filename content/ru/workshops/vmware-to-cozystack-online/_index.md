@@ -256,19 +256,50 @@ faq:
 <section class="ws-section ws-cities-sec" id="time" aria-labelledby="ws-time-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="ws-time-h">Когда это по вашему времени</h2>
-<p class="ws-lead">Среда, 9 сентября 2026 года. Три часа. Ниже — то же самое время в распространённых часовых поясах; в Европе ещё действует летнее время, оно закончится только в конце октября.</p>
+<p class="ws-lead">Среда, 9 сентября 2026 года, три часа. Найдите свой пояс — в Европе ещё действует летнее время, оно закончится только в конце октября.</p>
 
-| Где | Время | Пояс |
-|---|---|---|
-| Астана, Алматы, Ташкент, Душанбе, Ашхабад | **14:00–17:00** | UTC+5 |
-| Бишкек | **15:00–18:00** | UTC+6 |
-| Москва, Минск, Киев, Стамбул | **12:00–15:00** | UTC+3 |
-| Тбилиси, Ереван, Баку, Дубай | **13:00–16:00** | UTC+4 |
-| Дели | **14:30–17:30** | UTC+5:30 |
-| Берлин, Прага, Варшава, Амстердам, Белград | **11:00–14:00** | UTC+2 (CEST) |
-| Лондон, Лиссабон | **10:00–13:00** | UTC+1 (BST) |
-| Нью-Йорк | **05:00–08:00** | UTC−4 (EDT) |
-| UTC | **09:00–12:00** | — |
+<div class="ws-tz">
+  <div class="ws-tz__card ws-tz__card--home">
+    <span class="ws-tz__utc">UTC+5</span>
+    <span class="ws-tz__time">14:00–17:00</span>
+    <span class="ws-tz__places">Астана, Алматы, Ташкент, Душанбе, Ашхабад</span>
+  </div>
+  <div class="ws-tz__card">
+    <span class="ws-tz__utc">UTC+6</span>
+    <span class="ws-tz__time">15:00–18:00</span>
+    <span class="ws-tz__places">Бишкек</span>
+  </div>
+  <div class="ws-tz__card">
+    <span class="ws-tz__utc">UTC+5:30</span>
+    <span class="ws-tz__time">14:30–17:30</span>
+    <span class="ws-tz__places">Дели</span>
+  </div>
+  <div class="ws-tz__card">
+    <span class="ws-tz__utc">UTC+4</span>
+    <span class="ws-tz__time">13:00–16:00</span>
+    <span class="ws-tz__places">Тбилиси, Ереван, Баку, Дубай</span>
+  </div>
+  <div class="ws-tz__card">
+    <span class="ws-tz__utc">UTC+3</span>
+    <span class="ws-tz__time">12:00–15:00</span>
+    <span class="ws-tz__places">Киев, Стамбул</span>
+  </div>
+  <div class="ws-tz__card">
+    <span class="ws-tz__utc">UTC+2 · CEST</span>
+    <span class="ws-tz__time">11:00–14:00</span>
+    <span class="ws-tz__places">Берлин, Прага, Варшава, Амстердам, Белград</span>
+  </div>
+  <div class="ws-tz__card">
+    <span class="ws-tz__utc">UTC+1 · BST</span>
+    <span class="ws-tz__time">10:00–13:00</span>
+    <span class="ws-tz__places">Лондон, Лиссабон</span>
+  </div>
+  <div class="ws-tz__card">
+    <span class="ws-tz__utc">UTC</span>
+    <span class="ws-tz__time">09:00–12:00</span>
+    <span class="ws-tz__places">Рейкьявик, Аккра</span>
+  </div>
+</div>
 
 <p class="ws-note">Воркшоп идёт в Google Meet. Ссылку на подключение и напоминания пришлём на почту, указанную при регистрации.</p>
 </div>
