@@ -34,7 +34,11 @@ git clone --depth 1 --branch "$REF" "$CLONE_URL" "$SRC"
 echo "==> installing + building console (base /demo-app/)"
 ( cd "$SRC"
   corepack enable >/dev/null 2>&1 || true
-  pnpm install --frozen-lockfile=false
+  # pnpm 11 fails the install outright when a dependency's build script is
+  # ignored (ERR_PNPM_IGNORED_BUILDS). The only one here is msw, whose
+  # postinstall drops a service worker into a dev server's public dir — a
+  # static production build never uses it, so the strictness buys nothing.
+  pnpm install --frozen-lockfile=false --config.strict-dep-builds=false
   # Call the vite binary directly (skips pnpm's deps-status check and the
   # package build's tsc typecheck — this is a demo, not a type gate).
   VITE_BIN="$SRC/node_modules/.bin/vite"
