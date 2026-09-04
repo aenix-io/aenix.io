@@ -72,7 +72,7 @@ quick_facts:
   - label: "Когда"
     value: "Среда, 9 сентября 2026, 14:00–17:00 по Астане (UTC+5). Полное соответствие часовых поясов — в программе ниже"
   - label: "Формат"
-    value: "Онлайн, три часа: около двух часов практики в персональном окружении, остальное — короткие объяснения и разбор вопросов. Ссылку на подключение пришлём после регистрации"
+    value: "Онлайн в Google Meet, три часа: около двух часов практики в персональном окружении, остальное — короткие объяснения и разбор вопросов. Ссылку пришлём после регистрации"
   - label: "Стоимость"
     value: "Бесплатно, по регистрации; количество мест ограничено"
   - label: "Язык"
@@ -270,7 +270,8 @@ faq:
 | Нью-Йорк | **05:00–08:00** | UTC−4 (EDT) |
 | UTC | **09:00–12:00** | — |
 
-<p class="ws-note">Ссылку на подключение и напоминания пришлём на почту, указанную при регистрации.</p>
+<p class="ws-note">Воркшоп идёт в Google Meet. Ссылку на подключение и напоминания пришлём на почту, указанную при регистрации.</p>
+<div class="ws-cta-center"><a class="cta-secondary" href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDEwNDRncjAwM2F2ZmpuZXM4YmkwdnV0bmkgdGltdXIudHVrYWV2QGFlbml4Lmlv&tmsrc=timur.tukaev%40aenix.io" target="_blank" rel="noopener">Добавить в Google Календарь →</a></div>
 </div>
 </section>
 
@@ -284,6 +285,7 @@ faq:
 {{< pipedrive-form type="workshop-online" >}}
 
 </div>
+<p class="ws-register__note">Воркшоп идёт в Google Meet — ссылку пришлём на почту после регистрации. Можно сразу <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDEwNDRncjAwM2F2ZmpuZXM4YmkwdnV0bmkgdGltdXIudHVrYWV2QGFlbml4Lmlv&tmsrc=timur.tukaev%40aenix.io" target="_blank" rel="noopener">добавить встречу в календарь</a>.</p>
 <p class="ws-register__note">Мы ведём <a href="https://t.me/+bq1y-96FMHc2OWUy" target="_blank" rel="noopener">канал воркшопа в Telegram</a> — там материалы, ответы на вопросы и анонсы следующих встреч. Подписаться можно и до регистрации.</p>
 </div>
 </section>
