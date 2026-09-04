@@ -15,8 +15,9 @@ this after every quarterly price refresh in the calculators repo:
 """
 
 # NOTE: the source repo (aenix-org/calculators) titled this "Cozystack vs 13
-# Platforms" while shipping ten comparison pages and a ten-row table. Corrected
-# on the site 2026-09-04; fix it upstream or the next sync reintroduces it.
+# Platforms" while shipping ten comparison pages and a ten-row table, and named
+# AWS in the hub h1 after public cloud had been dropped from the scope. Fixed
+# upstream in calculators#7, so a sync no longer reintroduces either.
 import json
 import re
 import shutil
