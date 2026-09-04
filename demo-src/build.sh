@@ -22,7 +22,14 @@ WORK="$(mktemp -d)"; trap 'rm -rf "$WORK"' EXIT
 SRC="$WORK/cozyportal"
 
 echo "==> cloning cozyportal-demo @ $REF"
-git clone --depth 1 --branch "$REF" https://github.com/aenix-org/cozyportal-demo.git "$SRC"
+# cozyportal-demo is private and in a different org, so CI needs an explicit
+# token; locally `gh auth` already covers it via the credential helper.
+if [ -n "${DEMO_SRC_TOKEN:-}" ]; then
+  CLONE_URL="https://x-access-token:${DEMO_SRC_TOKEN}@github.com/aenix-org/cozyportal-demo.git"
+else
+  CLONE_URL="https://github.com/aenix-org/cozyportal-demo.git"
+fi
+git clone --depth 1 --branch "$REF" "$CLONE_URL" "$SRC"
 
 echo "==> installing + building console (base /demo-app/)"
 ( cd "$SRC"
@@ -35,6 +42,18 @@ echo "==> installing + building console (base /demo-app/)"
   ( cd apps/console && DEMO_BASE_PATH=/demo-app/ "$VITE_BIN" build )
   # SPA deep links: on refresh GitHub Pages serves the folder's 404.html.
   cp apps/console/dist/index.html apps/console/dist/404.html )
+
+# The docs subsite under apps/console/public/docs is a pre-built static site
+# vendored into the demo repo, so Vite copies it verbatim and its root-relative
+# links (/docs/..., /console, /marketplace, /account, /support, /resources,
+# /auth) resolve against aenix.io rather than /demo-app/. Left alone, every
+# Docs click inside the live demo lands on a branded 404 — and because this is
+# generated output, fixing it by hand lasts until the next refresh. Namespace
+# it here instead, so the correction survives every rebuild.
+echo "==> namespacing vendored docs links under /demo-app/"
+find "$SRC/apps/console/dist" -type f \( -name '*.html' -o -name '*.xml' \) -print0 |
+  xargs -0 sed -i.bak -E 's#href="/(docs|console|marketplace|account|support|resources|auth)(/|")#href="/demo-app/\1\2#g; s#href="/"#href="/demo-app/"#g'
+find "$SRC/apps/console/dist" -name '*.bak' -delete
 
 echo "==> publishing to static/demo-app"
 rm -rf "$SITE/static/demo-app"; mkdir -p "$SITE/static/demo-app"
