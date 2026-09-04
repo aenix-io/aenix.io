@@ -1,9 +1,29 @@
 {{ define "main" }}
 <style>
-  #content { max-width: none; padding: 0; }
-  .platform-demo { width: 100%; height: calc(100vh - 72px); min-height: 560px; border: 0; display: block; }
-  .platform-demo__hint { font-size: .85rem; color: #64748b; padding: .5rem 1rem; text-align: center; background: #f8fafc; }
+  /* The demo is a full-screen app, not a document. Before this, the iframe was
+     sized `calc(100vh - 72px)` while the sticky header (73px) and the hint bar
+     (38px) sat outside that calculation, so the page itself was 39px taller
+     than the viewport. Scrolling over the demo therefore scrolled the *page*
+     once the app's own scroller hit its end — the whole demo slid out of view
+     and the Create button at the bottom of a form became unreachable. It read
+     as "nothing can be created".
+
+     Fix: the page never scrolls, and the iframe takes exactly the space left
+     over from the header and the hint. `overscroll-behavior: contain` stops
+     the scroll from chaining out of the app when it reaches its end. */
+  html, body { height: 100%; overflow: hidden; }
+  body { display: flex; flex-direction: column; }
+  .site-header { flex: 0 0 auto; }
+  #content { max-width: none; padding: 0; flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+  .platform-demo { flex: 1 1 auto; width: 100%; min-height: 0; border: 0; display: block; overscroll-behavior: contain; }
+  .platform-demo__hint { flex: 0 0 auto; font-size: .85rem; color: #64748b; padding: .5rem 1rem; text-align: center; background: #f8fafc; }
   footer { display: none; }
+  /* Below the fold on a short window the app needs room to breathe; let the
+     page scroll again rather than squeezing the app into nothing. */
+  @media (max-height: 620px) {
+    html, body { height: auto; overflow: auto; }
+    .platform-demo { height: 560px; flex: 0 0 auto; }
+  }
 </style>
 <iframe class="platform-demo" src="/demo-app/" title="Ænix Platform live demo"
   allow="clipboard-read; clipboard-write"></iframe>
