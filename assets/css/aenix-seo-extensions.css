@@ -5882,6 +5882,23 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
    IN-SHORT / SUMMARY + FAQ OUTRO
    ========================================================================== */
 .event-outro { position: relative; padding: 4.5rem 0 5rem; border-top: 1px solid rgba(255, 255, 255, 0.06); }
+
+/* The registration band is a full-bleed dark panel and every event landing ends
+   its body with it. The summary that follows sat on the page background behind
+   a flat hairline, so the page read as finished and then unexpectedly resumed.
+   Carry the band's colour past its edge and taper it out: the summary reads as
+   the tail of the same page instead of a second one. */
+.ws-body + .event-outro { border-top: 0; padding-top: 3.25rem; }
+.ws-body + .event-outro::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 240px;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, var(--ws-navy-deep) 0%, rgba(9, 13, 22, 0) 100%);
+}
+.ws-body + .event-outro > .container { position: relative; z-index: 1; }
 .event-outro .event-prose { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
 .event-inshort > h2 { margin: 0 0 1.5rem; font-size: clamp(1.5rem, 2.4vw, 1.875rem); font-weight: 700; letter-spacing: -0.02em; color: var(--aenix-text); }
 .event-outro .seo-direct-answer {
@@ -5895,6 +5912,9 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   line-height: 1.7;
 }
 .event-outro .seo-direct-answer strong { font-weight: 500; color: var(--aenix-text-muted); }
+/* A direct_answer written as two paragraphs needs the break to be visible;
+   the base rule zeroes paragraph margins for the single-paragraph case. */
+.event-outro .seo-direct-answer p + p { margin-top: 1rem; }
 .event-outro .seo-quick-facts > h2 { display: none; }
 /* "At a glance" — two-column definition rows */
 .event-outro .facts-rows--def { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; column-gap: 2.5rem; }
