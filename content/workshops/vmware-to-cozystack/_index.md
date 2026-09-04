@@ -292,12 +292,8 @@ faq:
 <section class="ws-section ws-register" id="register" aria-labelledby="ws-register-h">
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
-<h2 class="ws-h2 ws-h2--light" id="ws-register-h">Where should we run it next?</h2>
+<h2 class="ws-h2 ws-h2--light" id="ws-register-h">The August 2026 tour has finished</h2>
 <p class="ws-register__lead">The August 2026 tour has finished. Leave your city and we will tell you when the next date is set — attendance stays free.</p>
-<div class="ws-register__form">
-
-{{< pipedrive-form type="workshop" >}}
-
-</div>
+<p class="ws-register__lead">It ran in Almaty, Bishkek, Astana and Tashkent. The lab material and the certification path stay open, and the next wave is being planned — the online session on 9 September 2026 is the closest thing to it.</p>
 </div>
 </section>

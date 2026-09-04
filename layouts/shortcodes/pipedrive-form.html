@@ -53,10 +53,19 @@
      shortly" panel instead of a broken embed. */}}
 {{- $workshopFormEn := "https://webforms.pipedrive.com/f/6zj2NsfSUZtLNBne0tCMKoZnK1UaSfyuVNg6oVeSMMdlzQ6NYNTCNx4Wbs3OiV0eJ5" -}}
 {{- $workshopFormRu := "https://webforms.pipedrive.com/f/bYZV7we2dsMGEnHA31g5JbwpBOjrZ5TtBQRmN8YkLCXQrpRp1m2PmglhvBHQB2eWRB" -}}
+{{/* Online workshop, RU. Separate form from the in-person tour: no city picker,
+     a free-text country field instead, and its own lead pipeline so online and
+     in-person registrations do not mix. Set the URL once the form exists in
+     Pipedrive; until then the shortcode renders its own error rather than
+     silently showing the in-person form. */}}
+{{- $workshopOnlineFormRu := "" -}}
 {{- $url := "" -}}
 {{- $err := "" -}}
 {{- $pending := false -}}
-{{- if eq $type "workshop" -}}
+{{- if eq $type "workshop-online" -}}
+  {{- $url = $workshopOnlineFormRu -}}
+  {{- if not $url -}}{{ $err = "workshop-online form URL is not set yet — create the form in Pipedrive and paste it into pipedrive-form.html" }}{{- end -}}
+{{- else if eq $type "workshop" -}}
   {{- $url = cond (eq .Page.Params.language "ru") $workshopFormRu $workshopFormEn -}}
   {{- if not $url -}}{{ $url = $workshopFormEn }}{{- end -}}
   {{- if not $url -}}{{ $pending = true }}{{- end -}}
@@ -70,7 +79,7 @@
   {{- $cmap := cond (eq .Page.Params.language "de") $formsDe $forms -}}
   {{- $url = index $cmap $type -}}
   {{- if not $url -}}{{ $url = index $forms $type }}{{- end -}}
-  {{- if not $url -}}{{ $err = printf "unknown type %q (valid: discovery, demo, partner, course, lead-magnet, workshop)" $type }}{{- end -}}
+  {{- if not $url -}}{{ $err = printf "unknown type %q (valid: discovery, demo, partner, course, lead-magnet, workshop, workshop-online)" $type }}{{- end -}}
 {{- end -}}
 {{- if $url -}}
 <div class="pipedrive-form pipedrive-form--{{ $type }}">
