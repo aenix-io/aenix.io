@@ -9,10 +9,15 @@
 
 name: Refresh platform demo
 
+# Manual only. The weekly schedule is off: cozyportal-demo is private and in
+# another org, so the built-in GITHUB_TOKEN cannot clone it, and every
+# scheduled run failed at that step. Set a DEMO_SRC_TOKEN secret with read
+# access to aenix-org/cozyportal-demo to make automatic runs possible again,
+# then restore the `schedule:` block below.
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 4 * * 1" # Mondays 04:00 UTC
+  # schedule:
+  #   - cron: "0 4 * * 1" # Mondays 04:00 UTC
 
 concurrency:
   group: demo-refresh
