@@ -11,7 +11,13 @@
       url: /solutions/
     - name: DORA Compliance
       url: /solutions/dora-compliance/
+
+  Pages whose body already embeds a BreadcrumbList — the TCO calculator
+  pages are synced from aenix-org/calculators with their own JSON-LD —
+  set `skip_breadcrumb_jsonld: true` so the page does not ship two
+  conflicting breadcrumb trails. See the cascade in hugo.yaml.
 */}}
+{{- if not .Params.skip_breadcrumb_jsonld -}}
 {{- $crumbs := slice -}}
 {{- if .Params.breadcrumb -}}
   {{- $crumbs = .Params.breadcrumb -}}
@@ -20,10 +26,13 @@
   {{- $crumbs = $crumbs | append (dict "name" "Home" "url" "/") -}}
   {{- $segments := split (strings.TrimPrefix "/" (strings.TrimSuffix "/" .RelPermalink)) "/" -}}
   {{- $cumulative := "" -}}
+  {{- $last := index $segments (sub (len $segments) 1) -}}
   {{- range $segments -}}
     {{- if . -}}
       {{- $cumulative = printf "%s/%s" $cumulative . -}}
       {{- $name := . | humanize | title -}}
+      {{- /* the leaf reads better as the page's own title than as a humanized slug */ -}}
+      {{- if and (eq . $last) $.Title -}}{{- $name = $.Title -}}{{- end -}}
       {{- $crumbs = $crumbs | append (dict "name" $name "url" (printf "%s/" $cumulative)) -}}
     {{- end -}}
   {{- end -}}
@@ -45,3 +54,4 @@
   ]
 }
 </script>
+{{- end -}}

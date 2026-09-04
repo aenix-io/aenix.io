@@ -117,7 +117,7 @@ Monatlicher Retainer nach dem Rollout — laufender Plattform-Betrieb, Monitorin
 
 Drei Rechner, jeder mit eigenem Modell und eigenen Quellen. Jeder Preis trägt Quelle, Datum und Art der Quelle (Herstellerliste, Dritte, abgeleitet, eigene Schätzung), und jeder Rechner exportiert ein PDF für die Finanzabteilung.
 
-- **[Platform-TCO-Rechner](/tco-calculator/)** — Fünf-Jahres-TCO gegen dreizehn On-Prem-Plattformen: VMware, Nutanix, OpenShift, Proxmox, OpenStack, CloudStack, OpenNebula, Harvester, Rancher, Virtuozzo. Software, einmalige Migration und Personal, mit Break-even und dem Fall, in dem die andere Plattform gewinnt.
+- **[Platform-TCO-Rechner](/tco-calculator/)** — Fünf-Jahres-TCO gegen zehn On-Prem-Plattformen: VMware, Nutanix, OpenShift, Proxmox, OpenStack, CloudStack, OpenNebula, Harvester, Rancher, Virtuozzo. Software, einmalige Migration und Personal, mit Break-even und dem Fall, in dem die andere Plattform gewinnt.
 - **[Cloud-Repatriation-Rechner](/cloud-calculator/)** — Ihre AWS-, Azure- oder GCP-Rechnung gegen denselben Workload auf eigener oder gemieteter Hardware, inklusive Commitment- und Enterprise-Rabatten auf der Cloud-Seite.
 - **[Unit-Economics-Rechner für Anbieter (englisch)](/isp-calculator/)** — monatliche GuV pro Node, wenn Sie Managed Services weiterverkaufen: Umsatz, COGS, Personal, Amortisation.
 
