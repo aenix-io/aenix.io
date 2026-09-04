@@ -180,6 +180,6 @@ Outcome: Deploy S3-compatible storage in-cluster and automate bucket lifecycle.
 | Single Module | 1 topic (3h online + HW review) | $400 | — | $400 |
 | Any 5 Modules | Custom track | $2,000 | -10% | $1,800 |
 | Any 10 Modules | Full DevOps path | $4,000 | -20% | $3,200 |
-| Full Course (15) | Complete "Kubernetes Deep Dive" | $6,000 | -25% | $4,500 |
+| Full Course (16) | Complete "Kubernetes Deep Dive" | $6,000 | -25% | $4,500 |
 
 {{< action-buttons primary_text="Enroll Now" primary_url="/contact/" >}}
