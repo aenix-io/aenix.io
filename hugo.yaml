@@ -32,6 +32,10 @@ cascade:
     page_type: blog-article
   - _target: { path: '/{,ru/}workshops/**' }
     page_type: event-landing
+  # TCO calculator pages are synced from aenix-org/calculators and embed their
+  # own BreadcrumbList JSON-LD; without this they ship two conflicting trails.
+  - _target: { path: '/tco-calculator{,/**}' }
+    skip_breadcrumb_jsonld: true
 
 params:
   description: "Aenix builds turnkey cloud platforms on Cozystack (CNCF): Public Cloud Platform for organisations selling cloud, Private Cloud Platform for regulated organisations running their own, and AI Platform for GPU workloads."

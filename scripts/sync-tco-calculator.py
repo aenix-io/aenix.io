@@ -14,6 +14,9 @@ this after every quarterly price refresh in the calculators repo:
     python3 scripts/sync-tco-calculator.py ../aenix-calculators
 """
 
+# NOTE: the source repo (aenix-org/calculators) titled this "Cozystack vs 13
+# Platforms" while shipping ten comparison pages and a ten-row table. Corrected
+# on the site 2026-09-04; fix it upstream or the next sync reintroduces it.
 import json
 import re
 import shutil
