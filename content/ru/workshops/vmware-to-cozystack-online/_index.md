@@ -316,9 +316,11 @@ faq:
 </div>
 </section>
 
-<!-- TODO(legal/pipedrive): The RU registration form's consent text is
-     configured inside Pipedrive, not in this repo, and currently shows the
-     English line "I agree to be contacted by Aenix about its services".
-     Update the consent copy to approved Russian wording inside the Pipedrive
-     form (form id in layouts/shortcodes/pipedrive-form.html → $workshopFormRu).
-     Do not hardcode consent wording here. -->
+<!-- NOTE(pipedrive): The consent checkbox on the RU form reads "I agree to be
+     contacted by Aenix about its services" in English. That is Pipedrive's
+     standard consent field — its wording is account-wide, so translating it
+     here would change it on every form. Decided 2026-09-05 to leave it as is.
+     The field's own label above it is per-form and stays Russian; keep the two
+     saying the same thing, so the label does not promise something narrower
+     than the box the visitor actually ticks. Consent wording is never
+     hardcoded on this page. -->
