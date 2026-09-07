@@ -54,9 +54,21 @@ Wiederkehrende Marge auf mehrjährige Support-Verträge — Partner verdienen am
 
 ## Aktuelle Ænix-Partner
 
+<aside class="distributor-spot">
+  <div class="distributor-spot__logo">
+    <a href="https://gohost.kz/" target="_blank" rel="noopener"><img src="/images/clients/gohost.svg" alt="GoHost.kz" loading="lazy" height="52"></a>
+  </div>
+  <div class="distributor-spot__body">
+    <p class="distributor-spot__badge">Autorisierter Distributor · Kasachstan</p>
+    <h3 class="distributor-spot__name">GoHost.kz</h3>
+    <p class="distributor-spot__text">GoHost.kz vertreibt Ænix Platform landesweit in Kasachstan — nicht nur in einer Region. Lizenzierung, First-Level-Support und Deal-Schutz für nachgelagerte Reseller laufen im Land selbst. GoHost ist zugleich öffentlicher Produktivkunde und betreibt Ænix Public Cloud Platform auf eigener Infrastruktur.</p>
+    <p class="distributor-spot__meta">Wer Ænix Platform in Kasachstan kauft oder weiterverkauft, beginnt hier.</p>
+  </div>
+</aside>
+
 Aktuelle öffentliche Partner:
 
-- **GoHost.kz** (Kasachstan, Karaganda) — Hosting- und Cloud-Anbieter, Ænix Public Cloud Platform Deployment
+- **GoHost.kz** (Kasachstan) — **autorisierter Distributor von Ænix Platform für Kasachstan**; Hosting- und Cloud-Anbieter, betreibt Ænix Public Cloud Platform
 - **Hidora** (Schweiz, Genf) — europäischer Cloud-Anbieter, souveräner Cloud-Fokus
 - **QOSI** (Kasachstan) — digitale Souveränität + Open-Source-Ökosystem
 - **TECH EVOLVERS INC** (Karibik, Mittel- + Südamerika) — Cloud-native Beratung und System-Integrator, Kubestronaut-Team
