@@ -6392,3 +6392,44 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 .ws-tz__card--home .ws-tz__utc { color: var(--ws-blue); }
 .ws-tz__card--home .ws-tz__time { color: var(--ws-blue); }
 @media (max-width: 640px) { .ws-tz { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   DISTRIBUTOR SPOTLIGHT — /partners/, /de/partner/
+   One named partner pulled out of the list because the role is
+   exclusive to them in that country. Not a generic card style:
+   add a second one only when a second country has a distributor.
+   ============================================================ */
+.distributor-spot {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 0 2.5rem;
+  padding: 1.75rem 2rem;
+  border: 1px solid rgba(1, 165, 255, 0.35);
+  border-radius: 14px;
+  background: linear-gradient(120deg, rgba(1, 165, 255, 0.08), rgba(102, 27, 225, 0.06));
+}
+/* The client logo assets are light-on-transparent, the same ones the
+   clients strip puts straight on the dark background — a white plate
+   behind them washes the wordmark out. */
+.distributor-spot__logo { display: flex; align-items: center; }
+.distributor-spot__logo img { width: auto; height: 52px; object-fit: contain; }
+.distributor-spot__logo a { display: flex; opacity: 0.85; transition: opacity 0.15s ease; }
+.distributor-spot__logo a:hover { opacity: 1; }
+.distributor-spot__badge {
+  margin: 0 0 0.4rem;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4796EA;
+}
+.distributor-spot__name { margin: 0 0 0.6rem; font-size: 1.375rem; font-weight: 700; letter-spacing: -0.01em; }
+.distributor-spot__text { margin: 0 0 0.6rem; font-size: 1rem; line-height: 1.65; }
+.distributor-spot__meta { margin: 0; font-size: 0.9375rem; color: var(--aenix-text-muted); }
+
+@media (max-width: 720px) {
+  .distributor-spot { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.5rem; }
+  .distributor-spot__logo { justify-self: start; padding: 0.75rem 1rem; min-width: 160px; }
+}

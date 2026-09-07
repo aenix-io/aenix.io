@@ -21,7 +21,7 @@ hreflang_de: /de/partner/
 
 - **Margin:** up to **40%** on Ænix Platform license + support sales
 - **Deal protection:** registered opportunities are reserved to the partner — no channel conflict
-- **Five Plattforms to sell:** Public Cloud / Private Cloud / AI
+- **Five products to sell:** Public Cloud Platform / Private Cloud Platform / AI Platform / Enterprise Support for Cozystack / WHMCS Integration
 - **L3 support access:** direct line to Ænix core engineering for partner-supported customers
 - **Training included:** Kubernetes Deep Dive Course + Ænix Platform-specific enablement
 - **Sales kit:** decks, battle cards, demo environment, technical pre-sales support
@@ -41,7 +41,7 @@ Deliver Ænix Platform implementation engagements (Platform Readiness Assessment
 
 ### Distributors
 
-Aggregate Ænix Platform across regional sub-channels. Deal-protect downstream resellers. Ideal for IT distribution networks in specific geographies (Caribbean, Central + South America, MENA, APAC).
+Aggregate Ænix Platform across regional sub-channels. Deal-protect downstream resellers. Ideal for IT distribution networks in specific geographies (Central Asia, Caribbean, Central + South America, MENA, APAC).
 
 ### Sovereign cloud / regional cloud builders
 
@@ -118,14 +118,26 @@ Grid of partner cards. Each card: logo, name, location, 1-line description. Exis
 
 {{< partners >}}
 
+<aside class="distributor-spot">
+  <div class="distributor-spot__logo">
+    <a href="https://gohost.kz/" target="_blank" rel="noopener"><img src="/images/clients/gohost.svg" alt="GoHost.kz" loading="lazy" height="52"></a>
+  </div>
+  <div class="distributor-spot__body">
+    <p class="distributor-spot__badge">Authorized distributor · Kazakhstan</p>
+    <h3 class="distributor-spot__name">GoHost.kz</h3>
+    <p class="distributor-spot__text">GoHost.kz distributes Ænix Platform across Kazakhstan — nationwide, not a single region. Licensing, first-line support and deal protection for downstream resellers all run in-country. GoHost is also a public production customer, running Ænix Public Cloud Platform on its own infrastructure.</p>
+    <p class="distributor-spot__meta">Buying or reselling Ænix Platform in Kazakhstan starts here.</p>
+  </div>
+</aside>
+
 Current public partners include:
 
-- **GoHost.kz** (Kazakhstan, Karaganda) — hosting and cloud provider, Ænix Public Cloud Platform deployment
+- **GoHost.kz** (Kazakhstan) — **authorized distributor of Ænix Platform for Kazakhstan**; hosting and cloud provider running Ænix Public Cloud Platform
 - **Hidora** (Switzerland, Geneva) — European cloud provider, sovereign cloud focus
 - **QOSI** (Kazakhstan) — digital sovereignty + open-source ecosystem
 - **TECH EVOLVERS INC** (Caribbean, Central + South America) — cloud-native consultancy and systems integrator, Kubestronaut team
 
-Plus additional partners under contract — visible in the partner directory above.
+Plus additional partners under contract.
 
 ---
 
@@ -150,9 +162,9 @@ Typical time from application to first deal registration: 4-6 weeks.
 
 Up to 40% on Ænix Platform license + support tier sales. Margin tier depends on partner level (Authorized / Premier / Strategic), engagement size, and renewal performance.
 
-### Which Plattforms can I sell?
+### Which products can I sell?
 
-Both — Provider and Enterprise — plus the AI Platform and developer self-service layers and the enterprise support for Cozystack. Most regional partners start with Public Cloud Platform (the productized one; entry from $1,250/month) and add Private Cloud Platform as their team builds up.
+All five: Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform, Enterprise Support for Cozystack, and the WHMCS Integration. They combine — an AI Platform engagement can sit on top of Private Cloud Platform. Most regional partners start with Public Cloud Platform (the productized one; entry from $1,250/month) and add Private Cloud Platform as their team builds up.
 
 ### Is there exclusivity?
 
