@@ -23,6 +23,12 @@
     stats            — list of {number, label} pain stats (optional)
     inshort_title    — heading for the direct_answer/quick_facts section
     final_cta        — {heading, text, button, href} closing conversion band
+    register         — {heading, lead, clickmeeting_room} registration section.
+                       Optional: set it to move the form OUT of the page body
+                       and render it last, after the FAQ and the closing band,
+                       so the #register anchor lands at the end of the funnel
+                       instead of its middle. Pages that keep the form inside
+                       their body simply omit this.
 */}}
 {{- $isRU := eq (.Params.language | default "en") "ru" -}}
 {{- $photo := .Params.speaker_photo | default "images/workshops/timur-tukaev.png" -}}
@@ -153,6 +159,21 @@
       <div class="ws-final__cta">
         <a class="cta-primary cta-accent cta-lg" href="{{ .href | default "#register" }}">{{ .button | default (cond $isRU "Зарегистрироваться" "Register") }}</a>
       </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{/* Registration last, so every "#register" CTA on the page scrolls forward
+     to the end of the funnel rather than into its middle. */}}
+{{ with .Params.register }}
+<section class="ws-section ws-register" id="register" aria-labelledby="event-register-h">
+  <div class="ws-register__bg" aria-hidden="true"></div>
+  <div class="ws-wrap ws-register__inner">
+    <h2 class="ws-h2 ws-h2--light" id="event-register-h">{{ .heading | default (cond $isRU "Регистрация" "Registration") }}</h2>
+    {{ with .lead }}<p class="ws-register__lead">{{ . }}</p>{{ end }}
+    <div class="ws-register__form">
+      {{ with .clickmeeting_room }}{{ partial "event/clickmeeting.html" (dict "room" .) }}{{ end }}
     </div>
   </div>
 </section>

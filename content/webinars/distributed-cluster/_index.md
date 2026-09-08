@@ -63,6 +63,11 @@ faq:
   - q: "Will there be a recording?"
     a: "Yes, to everyone who registers. The Q&A is the exception — that part only happens live."
 
+register:
+  heading: "Registration"
+  lead: "Wednesday 30 September 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration: you get the calendar invite and the recording."
+  clickmeeting_room: "18263597110070205"
+
 final_cta:
   heading: "Bring your datacenters to the Q&A"
   text: "Wednesday 30 September 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
@@ -102,10 +107,33 @@ final_cta:
 </ul>
 </div>
 </div>
+</section>
 
+<section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
+<div class="ws-wrap">
+<h2 class="ws-h2" id="wb-audience-h">Who should attend</h2>
+<p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosting providers and datacenter operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session is built around your situation.</p>
+<ul class="wb-audience__tiles">
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Enterprise infrastructure teams</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud providers</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Datacenter operators</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="msp" >}}</span>MSPs</li>
+</ul>
+<p class="wb-audience__roles-label">Especially the people who sign off on resilience and DR:</p>
+<ul class="wb-audience__roles">
+<li>Architects</li>
+<li>SREs</li>
+<li>CTOs</li>
+<li>Infrastructure leaders</li>
+</ul>
+</div>
+</section>
+
+<section class="ws-section ws-story wb-story" aria-labelledby="wb-platform-h">
 <div class="ws-wrap ws-story__row ws-story__row--reverse">
 <div class="ws-story__text">
-<h3 class="wb-story__h3">What holds it together</h3>
+<h2 class="ws-h2" id="wb-platform-h">What holds it together</h2>
 <p>Cozystack is an open-source cloud platform and CNCF Sandbox project that runs one Kubernetes API across sites — virtual machines, managed databases, storage and networking as declarative resources, from three nodes to three datacenters. Nodes join through the API, storage and topology are resources, and DR is described as code.</p>
 <p>On top of it sits the difference that matters: <strong>defaults and runbooks forged in real disaster-recovery drills with a production provider</strong> — synchronous storage, quorum tuning, topology-aware placement — so you start from what already survived a real outage.</p>
 </div>
@@ -334,27 +362,6 @@ final_cta:
 </div>
 </section>
 
-<section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
-<div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who should attend</h2>
-<p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosting providers and datacenter operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session is built around your situation.</p>
-<ul class="wb-audience__tiles">
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Enterprise infrastructure teams</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud providers</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Datacenter operators</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="msp" >}}</span>MSPs</li>
-</ul>
-<p class="wb-audience__roles-label">Especially the people who sign off on resilience and DR:</p>
-<ul class="wb-audience__roles">
-<li>Architects</li>
-<li>SREs</li>
-<li>CTOs</li>
-<li>Infrastructure leaders</li>
-</ul>
-</div>
-</section>
-
 <section class="ws-section ws-speaker wb-speaker" aria-labelledby="wb-speaker-h">
 <div class="ws-wrap ws-speaker__grid">
 <div class="ws-speaker__photo">{{< workshop-photo src="images/webinars/andrei-kvapil.png" alt="Andrei Kvapil" >}}</div>
@@ -371,19 +378,6 @@ GitHub</a>
 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
 LinkedIn</a>
 </div>
-</div>
-</div>
-</section>
-
-<section class="ws-section ws-register" id="register" aria-labelledby="wb-register-h">
-<div class="ws-register__bg" aria-hidden="true"></div>
-<div class="ws-wrap ws-register__inner">
-<h2 class="ws-h2 ws-h2--light" id="wb-register-h">Registration</h2>
-<p class="ws-register__lead">Wednesday 30 September 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
-<div class="ws-register__form">
-
-{{< clickmeeting room="18263597110070205" >}}
-
 </div>
 </div>
 </section>
