@@ -19,7 +19,7 @@ hero_chips:
   - "Recording not published yet"
 hero_primary: { text: "Talk to the team", href: "/contact/" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
-speaker_photo: "images/webinars/andrei-kvapil.png"
+speaker_photo: "images/webinars/andrei-kvapil-gpu-hero.png"
 inshort_title: "About the webinar"
 quick_facts_style: "rows"
 event:
@@ -30,7 +30,11 @@ event:
   performer_role: "Creator and maintainer of Cozystack, co-founder and CEO of Ænix"
   price: 0
 direct_answer: |
-  **This was a free live webinar, held on 10 September 2026, for enterprise platform teams and for cloud, telecom and GPU providers building a sovereign AI offering. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — showed the whole path from bare metal to a metered inference endpoint: turning a node with GPUs into GPU-ready tenant clusters, the ways to allocate a single card, serving inference with vLLM and NVIDIA Dynamo, and metering it by GPU-hour or by token — all assembled from open source. The internal AI platform and the commercial GPU cloud turn out to be the same stack. The recording is not published yet.**
+  **This was a free live webinar, held on 10 September 2026, for enterprise platform teams and for cloud, telecom and GPU providers building a sovereign AI offering.**
+
+  Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — showed the whole path from bare metal to a metered inference endpoint: turning nodes with GPUs into GPU-ready tenant clusters, the ways to allocate a single card, queues and the fabric for distributed training, serving inference with vLLM and NVIDIA Dynamo, and metering it by GPU-hour or by token — all assembled from open source.
+
+  The internal AI platform and the commercial GPU cloud turn out to be the same stack, and the session compared that build against Run:ai and OpenShift AI head-on. The recording is not published yet.
 
 quick_facts:
   - label: "Format"
@@ -50,7 +54,7 @@ quick_facts:
 
 faq:
   - q: "Is this about training models or running infrastructure?"
-    a: "Infrastructure. The session covered the platform under your AI workloads — GPU sharing, tenancy, inference serving and metering — not model training, MLOps pipelines or model quality."
+    a: "Infrastructure. The session covered the platform under your AI workloads — GPU sharing, tenancy, queues, inference serving and metering — not model quality, MLOps pipelines or how to train a model."
   - q: "We only want an internal platform, not a commercial cloud. Is it still useful?"
     a: "Yes. An internal GPU platform is the same stack as a commercial AI cloud, minus the second meter. Everything on sharing, tenancy and inference applies directly to an internal build."
   - q: "Do we need NVIDIA GPUs?"
@@ -58,9 +62,9 @@ faq:
   - q: "Can you really meter inference per token on an open stack?"
     a: "Yes, and the session showed it live: an AI gateway in front of the model issues API keys, counts input and output tokens, and returns a 429 (over quota) when a budget runs out. Andrei named the open components used."
   - q: "Do you cover multi-node training and the GPU interconnect?"
-    a: "Briefly, yes. The session showed where the fabric matters — NVLink within a node, GPUDirect RDMA over InfiniBand or RoCE across nodes — and the honest limit: tightly coupled multi-node training doesn't survive WAN latency, so it lives inside one site."
+    a: "Yes — it was agenda item 07. The session showed where the fabric matters (NVLink within a node, GPUDirect RDMA over InfiniBand or RoCE across nodes), where the queues sit (Kueue, Volcano, KAI Scheduler), and the honest limit: tightly coupled multi-node training doesn't survive WAN latency, so it lives inside one site."
   - q: "How does this compare to Run:ai or OpenShift AI?"
-    a: "The session compared approaches — buying a platform, renting capacity, or assembling open source — across licensing, GPU sharing, tenant isolation, inference and metering, including the honest trade-offs."
+    a: "That was agenda item 08, not a footnote: buying a platform, renting capacity, or assembling open source, compared across licensing, GPU sharing, tenant isolation, inference and metering — including the honest trade-offs of the open build."
   - q: "Where is the platform behind this session described?"
     a: "For the platform behind this session, see [GPU as a service for GPU clouds and data centres](/solutions/gpu-as-a-service/) and the [Ænix AI Platform](/products/ai-platform/)."
   - q: "Is there a recording?"
@@ -76,13 +80,13 @@ final_cta:
 <section class="ws-section ws-story wb-story" aria-labelledby="wb-story-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="wb-story-h">The GPUs are already racked. Now make them earn</h2>
-<p class="ws-lead">Every team wants AI infrastructure, and the market sells it as a product you buy whole. In reality a GPU platform is a stack of layers — sharing, tenancy, inference, metering — and each one already has a mature open-source project waiting. The gap is not the hardware. It is the assembly, and that is exactly what this session walks through.</p>
+<p class="ws-lead">Every team wants AI infrastructure, and the market sells it as a product you buy whole. In reality a GPU platform is a stack of layers — sharing, tenancy, queues, inference, metering — and each one already has a mature open-source project waiting. The gap is not the hardware. It is the assembly, and that is exactly what this session walks through.</p>
 </div>
 
 <div class="ws-wrap ws-story__row">
 <div class="ws-story__text">
 <h3 class="wb-story__h3">Where this usually starts</h3>
-<p>Expensive cards run at twenty or thirty per cent while one team waits on another, because there is no sharing, no quotas and no self-service. Or the budget bleeds into hyperscaler GPU instances for work that could run on hardware in your own racks, with the data staying home. Or the platform team is asked to "hand the GPUs out" and discovers there is no clean way to do it.</p>
+<p>In the clusters we get called into, expensive cards sit at 20–30% utilization while one team waits on another, because there is no sharing, no quotas and no self-service. Or the budget bleeds into hyperscaler GPU instances for work that could run on hardware in your own racks, with the data staying home. Or the platform team is asked to &ldquo;hand the GPUs out&rdquo; and discovers there is no clean way to do it.</p>
 <p>None of these calls for new hardware. They call for <strong>a way to turn the cards you already own into a platform teams can use — or customers can buy.</strong></p>
 </div>
 <div class="ws-story__visual">
@@ -105,12 +109,35 @@ final_cta:
 </ul>
 </div>
 </div>
+</section>
 
+<section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
+<div class="ws-wrap">
+<h2 class="ws-h2" id="wb-audience-h">Who it was for</h2>
+<p class="ws-lead">Enterprise teams handed a pile of GPUs and told to make them useful, and cloud, telecom and GPU providers building a sovereign AI offering. If you're weighing an open-source build against Run:ai, OpenShift AI, or simply renting from a hyperscaler, the session was built around your situation.</p>
+<ul class="wb-audience__tiles">
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Platform &amp; infrastructure teams</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud &amp; GPU providers</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Datacenter operators</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="telecom" >}}</span>Telecom companies</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="lab" >}}</span>AI &amp; research platforms</li>
+</ul>
+<p class="wb-audience__roles-label">Especially the people who own the GPUs and the decision:</p>
+<ul class="wb-audience__roles">
+<li>Platform engineers</li>
+<li>Architects</li>
+<li>CTOs</li>
+<li>Infrastructure leaders</li>
+</ul>
+</div>
+</section>
+
+<section class="ws-section ws-story wb-story" aria-labelledby="wb-platform-h">
 <div class="ws-wrap ws-story__row ws-story__row--reverse">
 <div class="ws-story__text">
-<h3 class="wb-story__h3">What turns cards into a platform</h3>
-<p>Cozystack is an open-source cloud platform and CNCF Sandbox project that turns a node with GPUs into GPU-ready tenant clusters, managed databases, S3-compatible storage and inference — each one a Kubernetes resource behind one API. Teams get their own cluster, not a namespace, with the cards visible inside.</p>
-<p>On top of it, Ænix modules turn the platform into a business: <strong>GPU usage measured per tenant, tenant quotas, a self-service panel, and integrations that pass consumption to your billing system (WHMCS or your own), where charging happens.</strong></p>
+<h2 class="ws-h2" id="wb-platform-h">What turns cards into a platform</h2>
+<p>Cozystack is an open-source cloud platform and CNCF Sandbox project that turns nodes with GPUs into GPU-ready tenant clusters, managed databases, S3-compatible storage and inference — each one a Kubernetes resource behind one API. Teams get their own cluster, not a namespace, with the cards visible inside.</p>
+<p>On top of it, the <a href="/products/ai-platform/">Ænix AI platform modules</a> turn it into a business: <strong>GPU usage measured per tenant, tenant quotas, a self-service panel, and integrations that pass consumption to your billing system (WHMCS or your own), where charging happens.</strong></p>
 </div>
 <div class="ws-story__visual ws-story__visual--platform">
 <div class="ws-platform wb-platform">
@@ -143,7 +170,7 @@ final_cta:
 
 <section class="ws-section wb-proof" aria-labelledby="wb-proof-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-proof-h">Providers already running GPU on this</h2>
+<h2 class="ws-h2" id="wb-proof-h">Already running GPU in production</h2>
 <p class="ws-lead">Not pilots. Production platforms serving real users, built on the same foundation the session walks through.</p>
 
 <div class="wb-cover__grid">
@@ -152,18 +179,18 @@ final_cta:
 <span class="wb-cover__icon">{{< ws-icon name="growth" >}}</span>
 <div class="cs-stat__num" style="font-size:1.9rem;margin:.2rem 0 .1rem">5× cheaper GPU</div>
 <div class="cs-stat__label" style="margin-bottom:1rem">~11,000 active users moved with no downtime</div>
-<p class="wb-cover__text"><strong>A European academic-computing platform</strong> moved off a public hyperscaler onto owned bare metal, with fractional GPU sharing across jobs and a single Cluster API spanning bare metal, a hyperscaler and a sovereign Swiss cloud — bursting to rented GPUs only when demand spikes.</p>
+<p class="wb-cover__text"><strong>A European academic-computing platform</strong> moved off a public hyperscaler onto owned bare metal, with fractional GPU sharing across jobs and a single Kubernetes API spanning bare metal, a hyperscaler and a sovereign Swiss cloud — bursting to rented GPUs only when demand spikes.</p>
 </article>
 <article class="wb-cover__item">
 <span class="wb-cover__num">02</span>
 <span class="wb-cover__icon">{{< ws-icon name="shield" >}}</span>
 <div class="cs-stat__num" style="font-size:1.9rem;margin:.2rem 0 .1rem">GPU in the catalog</div>
-<div class="cs-stat__label" style="margin-bottom:1rem">Switzerland · sold under the provider's own brand</div>
-<p class="wb-cover__text"><strong>A Swiss cloud provider</strong> sells GPU beside virtual machines, managed Kubernetes and databases from one platform — whole-card and shared, metered and billed with its own panel. Its own engineers became Cozystack maintainers.</p>
+<div class="cs-stat__label" style="margin-bottom:1rem">Sold under the provider's own brand</div>
+<p class="wb-cover__text"><strong>A European cloud provider</strong> sells GPU beside virtual machines, managed Kubernetes and databases from one platform — whole-card and shared, metered and billed with its own panel. Its own engineers became Cozystack maintainers.</p>
 </article>
 </div>
 
-<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>Both are anonymised at the customer's request. Andrei walks through what each of them actually did with GPUs — and what he would do differently on your stack.</span></p>
+<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>Both are anonymized at the customer's request. Andrei walks through what each of them actually did with GPUs — and what he would do differently on your stack.</span></p>
 </div>
 </section>
 
@@ -171,6 +198,42 @@ final_cta:
 <div class="ws-wrap">
 <h2 class="ws-h2" id="wb-cover-h">What the session covered</h2>
 <p class="ws-lead">Live demos, not slides — then your questions.</p>
+
+<h3 class="wb-layers__h3">A GPU platform is a stack of layers</h3>
+<p class="wb-layers__cap">The bottom row is the metal you already own; the top row is what a tenant actually buys. Every layer in between already has a mature open-source project — the session climbed the stack from the bottom up, one live demo per layer.</p>
+<ol class="wb-layers">
+<li class="wb-layer wb-layer--modules">
+<h4 class="wb-layer__name">Gateway &amp; metering</h4>
+<p class="wb-layer__what">API keys per tenant, GPU-hours and input/output tokens counted, a 429 when the budget runs out — the layer that makes it a product.</p>
+<ul class="wb-layer__projects"><li>AI gateway</li><li>Ænix modules</li></ul>
+</li>
+<li class="wb-layer">
+<h4 class="wb-layer__name">Inference serving</h4>
+<p class="wb-layer__what">A model becomes an endpoint: continuous batching, KV-cache-aware routing, disaggregated prefill and decode.</p>
+<ul class="wb-layer__projects"><li>vLLM</li><li>NVIDIA Dynamo</li></ul>
+</li>
+<li class="wb-layer">
+<h4 class="wb-layer__name">Scheduling &amp; queues</h4>
+<p class="wb-layer__what">Batch and multi-node jobs queue and gang-schedule instead of fighting each other for free cards.</p>
+<ul class="wb-layer__projects"><li>Kueue</li><li>Volcano</li><li>KAI Scheduler</li></ul>
+</li>
+<li class="wb-layer">
+<h4 class="wb-layer__name">Tenancy</h4>
+<p class="wb-layer__what">A team gets its own cluster, not a namespace — with quotas, its own API endpoint and hard network isolation.</p>
+<ul class="wb-layer__projects"><li>Cozystack</li><li>Kubernetes</li><li>KubeVirt</li><li>Cilium</li></ul>
+</li>
+<li class="wb-layer">
+<h4 class="wb-layer__name">GPU allocation</h4>
+<p class="wb-layer__what">One card handed out whole, or split three further ways — the decision that sets your utilization ceiling.</p>
+<ul class="wb-layer__projects"><li>PCI passthrough</li><li>NVIDIA vGPU</li><li>MIG</li><li>HAMi</li></ul>
+</li>
+<li class="wb-layer">
+<h4 class="wb-layer__name">Hardware &amp; drivers</h4>
+<p class="wb-layer__what">Cards discovered on the node, drivers and container toolkit rolled out, health and utilization exported as metrics.</p>
+<ul class="wb-layer__projects"><li>NVIDIA GPU Operator</li><li>node-feature-discovery</li><li>DCGM exporter</li></ul>
+</li>
+</ol>
+
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
 <span class="wb-cover__num">01</span>
@@ -190,7 +253,7 @@ final_cta:
 <li class="wb-cover__item">
 <span class="wb-cover__num">04</span>
 <span class="wb-cover__icon">{{< ws-icon name="stack" >}}</span>
-<p class="wb-cover__text"><strong>Three doors to one API.</strong> Order a GPU cluster from a UI, from the CLI, or with a Git commit — the same resource every time, no portal on top of a portal.</p>
+<p class="wb-cover__text"><strong>Three doors to one API.</strong> Order a GPU cluster from a UI, from the CLI, or with a Git commit — the same resource every time, with no second control plane to keep in sync.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">05</span>
@@ -199,8 +262,18 @@ final_cta:
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">06</span>
+<span class="wb-cover__icon">{{< ws-icon name="catalog" >}}</span>
+<p class="wb-cover__text"><strong>When your service isn't in the catalog.</strong> Package your own service once, then let tenants deploy it with a button — the same resource model as everything shipped in the box.</p>
+</li>
+<li class="wb-cover__item">
+<span class="wb-cover__num">07</span>
 <span class="wb-cover__icon">{{< ws-icon name="growth" >}}</span>
-<p class="wb-cover__text"><strong>When your service isn't in the catalog.</strong> Package it once and deploy it with a button — plus where queues (Kueue, Volcano, KAI) fit for distributed training.</p>
+<p class="wb-cover__text"><strong>Distributed training: queues and the fabric.</strong> Where Kueue, Volcano and KAI Scheduler fit, what NVLink, GPUDirect RDMA and InfiniBand or RoCE actually buy you — and the honest limit: tightly coupled multi-node training stays inside one site.</p>
+</li>
+<li class="wb-cover__item">
+<span class="wb-cover__num">08</span>
+<span class="wb-cover__icon">{{< ws-icon name="map" >}}</span>
+<p class="wb-cover__text"><strong>Build, buy or rent.</strong> This stack against Run:ai and OpenShift AI, and against renting from a hyperscaler — licensing, GPU sharing, tenant isolation, inference and metering, with the trade-offs of the open build stated out loud.</p>
 </li>
 </ol>
 <p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>The session ended with a <strong>live Q&amp;A</strong> with the speaker.</span></p>
@@ -234,27 +307,6 @@ final_cta:
 </article>
 </div>
 <div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Talk to the team</a></div>
-</div>
-</section>
-
-<section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
-<div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who it was for</h2>
-<p class="ws-lead">Enterprise teams handed a pile of GPUs and told to make them useful, and cloud, telecom and GPU providers building a sovereign AI offering. If you're weighing an open-source build against Run:ai, OpenShift AI, or simply renting from a hyperscaler, the session was built around your situation.</p>
-<ul class="wb-audience__tiles">
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Platform &amp; infrastructure teams</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud &amp; GPU providers</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Data centre operators</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="telecom" >}}</span>Telecom companies</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="lab" >}}</span>AI &amp; research platforms</li>
-</ul>
-<p class="wb-audience__roles-label">Especially the people who own the GPUs and the decision:</p>
-<ul class="wb-audience__roles">
-<li>Platform engineers</li>
-<li>Architects</li>
-<li>CTOs</li>
-<li>Infrastructure leaders</li>
-</ul>
 </div>
 </section>
 
