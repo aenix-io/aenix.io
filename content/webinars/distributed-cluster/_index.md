@@ -103,10 +103,33 @@ final_cta:
 </ul>
 </div>
 </div>
+</section>
 
+<section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
+<div class="ws-wrap">
+<h2 class="ws-h2" id="wb-audience-h">Who it was for</h2>
+<p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosting providers and datacenter operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session was built around your situation.</p>
+<ul class="wb-audience__tiles">
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Enterprise infrastructure teams</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud providers</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Datacenter operators</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
+<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="msp" >}}</span>MSPs</li>
+</ul>
+<p class="wb-audience__roles-label">Especially the people who sign off on resilience and DR:</p>
+<ul class="wb-audience__roles">
+<li>Architects</li>
+<li>SREs</li>
+<li>CTOs</li>
+<li>Infrastructure leaders</li>
+</ul>
+</div>
+</section>
+
+<section class="ws-section ws-story wb-story" aria-labelledby="wb-platform-h">
 <div class="ws-wrap ws-story__row ws-story__row--reverse">
 <div class="ws-story__text">
-<h3 class="wb-story__h3">What holds it together</h3>
+<h2 class="ws-h2" id="wb-platform-h">What holds it together</h2>
 <p>Cozystack is an open-source cloud platform and CNCF Sandbox project that runs one Kubernetes API across sites — virtual machines, managed databases, storage and networking as declarative resources, from three nodes to three datacenters. Nodes join through the API, storage and topology are resources, and DR is described as code.</p>
 <p>On top of it sits the difference that matters: <strong>defaults and runbooks forged in real disaster-recovery drills with a production provider</strong> — synchronous storage, quorum tuning, topology-aware placement — so you start from what already survived a real outage.</p>
 </div>
@@ -332,27 +355,6 @@ final_cta:
 </article>
 </div>
 <div class="ws-cta-center"><a class="cta-primary cta-accent" href="/contact/">Talk to the team</a></div>
-</div>
-</section>
-
-<section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
-<div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who it was for</h2>
-<p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosting providers and datacenter operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session was built around your situation.</p>
-<ul class="wb-audience__tiles">
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Enterprise infrastructure teams</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud providers</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="datacenter" >}}</span>Datacenter operators</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
-<li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="msp" >}}</span>MSPs</li>
-</ul>
-<p class="wb-audience__roles-label">Especially the people who sign off on resilience and DR:</p>
-<ul class="wb-audience__roles">
-<li>Architects</li>
-<li>SREs</li>
-<li>CTOs</li>
-<li>Infrastructure leaders</li>
-</ul>
 </div>
 </section>
 
