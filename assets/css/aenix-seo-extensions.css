@@ -5574,11 +5574,12 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
     radial-gradient(26% 24% at 44% 6%, rgba(145, 219, 235, 0.14), transparent 72%);
 }
 /* rim light on the portrait so the dark suede reads against the shaft */
+/* No highlight behind the head: a tight radial there read as a circle drawn
+   on the backdrop rather than light. The shaft and the wide violet below do
+   the separating instead. */
 .ws-hero--beam .ws-hero__stage-glow {
-  background:
-    radial-gradient(30% 27% at 58% 20%, rgba(145, 219, 235, 0.34), transparent 62%),
-    radial-gradient(48% 42% at 44% 68%, rgba(102, 27, 225, 0.32), transparent 72%);
-  filter: blur(10px);
+  background: radial-gradient(52% 44% at 44% 70%, rgba(102, 27, 225, 0.3), transparent 74%);
+  filter: blur(14px);
 }
 
 /* ==========================================================================
@@ -6530,6 +6531,14 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   background: linear-gradient(90deg, rgba(167, 139, 250, 0.1), var(--ws-panel));
 }
 .wb-layer--modules .wb-layer__projects li { border-color: rgba(167, 139, 250, 0.32); color: var(--ws-violet); }
+
+/* --- Speaker portrait, GPU landing: a photograph rather than a cut-out ----
+   A cut-out can never fill a rectangle — the corners above the head are always
+   empty, and on this page that left a visible wedge of panel at the frame's
+   edge. This portrait is composited on its own studio sweep, so it fills the
+   frame edge to edge with nothing cropped; the frame keeps its border and
+   radius and drops only its padding. */
+.wb-gpu .ws-speaker__photo { padding: 0; }
 
 /* --- Who should attend (company tiles + role pills) — centered --- */
 .wb-audience .ws-h2 { text-align: center; }
