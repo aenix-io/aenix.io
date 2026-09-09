@@ -19,6 +19,7 @@ hero_chips:
 hero_primary: { text: "Save my seat", href: "#register" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil-gpu-hero.png"
+hero_bg: "aurora"
 inshort_title: "About the webinar"
 quick_facts_style: "rows"
 event:
@@ -314,7 +315,7 @@ final_cta:
 
 <section class="ws-section ws-speaker wb-speaker" aria-labelledby="wb-speaker-h">
 <div class="ws-wrap ws-speaker__grid">
-<div class="ws-speaker__photo">{{< workshop-photo src="images/webinars/andrei-kvapil.png" alt="Andrei Kvapil" >}}</div>
+<div class="ws-speaker__photo">{{< workshop-photo src="images/webinars/andrei-kvapil-gpu-speaker.png" alt="Andrei Kvapil" >}}</div>
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>

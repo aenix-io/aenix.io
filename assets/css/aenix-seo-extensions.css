@@ -5386,6 +5386,112 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 }
 
 /* ==========================================================================
+   HERO BACKGROUND VARIANTS (`hero_bg:` in frontmatter)
+   Five campaign landings shared one backdrop — 48px grid plus a blue glow —
+   so a reader holding several campaign links could not tell them apart.
+   Each variant swaps the motif and shifts the accent, inside the same tokens.
+   Omit `hero_bg` and a page keeps the house default untouched.
+   ========================================================================== */
+
+/* --- silicon: a wafer. Concentric rings centred behind the portrait over a
+       fine lattice, the glow led by violet instead of blue. -------------- */
+.ws-hero--silicon {
+  background:
+    radial-gradient(110% 85% at 88% -12%, rgba(102, 27, 225, 0.2), transparent 55%),
+    radial-gradient(85% 75% at -5% 105%, rgba(1, 165, 255, 0.12), transparent 58%),
+    linear-gradient(180deg, var(--ws-navy-deep), var(--bg-main, #0b0f1a));
+}
+.ws-hero--silicon .ws-hero__bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(112% 92% at 74% 20%, #000 22%, transparent 74%);
+  mask-image: radial-gradient(112% 92% at 74% 20%, #000 22%, transparent 74%);
+}
+/* the wafer: concentric rings stepping out from behind the portrait's head */
+.ws-hero--silicon .ws-hero__bg-grid::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: repeating-radial-gradient(
+    circle at 74% 28%,
+    rgba(167, 139, 250, 0.16) 0 1px,
+    transparent 1px 46px
+  );
+  -webkit-mask-image: radial-gradient(62% 58% at 74% 28%, #000 6%, transparent 84%);
+  mask-image: radial-gradient(62% 58% at 74% 28%, #000 6%, transparent 84%);
+}
+.ws-hero--silicon .ws-hero__bg-glow {
+  background:
+    radial-gradient(38% 34% at 76% 26%, rgba(102, 27, 225, 0.24), transparent 70%),
+    radial-gradient(30% 28% at 88% 62%, rgba(1, 165, 255, 0.12), transparent 72%);
+}
+
+/* --- utilization: the page's own argument as the backdrop. Bars rise behind
+       the portrait, sparse and dim on the left, dense and bright on the
+       right, the way a utilization graph fills up. ----------------------- */
+.ws-hero--utilization .ws-hero__bg-grid {
+  background-image: repeating-linear-gradient(
+    180deg,
+    rgba(1, 165, 255, 0.16) 0 2px,
+    transparent 2px 15px
+  );
+  background-size: auto;
+  -webkit-mask-image: linear-gradient(103deg, transparent 6%, rgba(0, 0, 0, 0.4) 40%, #000 82%);
+  mask-image: linear-gradient(103deg, transparent 6%, rgba(0, 0, 0, 0.4) 40%, #000 82%);
+}
+.ws-hero--utilization .ws-hero__bg-glow {
+  background:
+    radial-gradient(46% 38% at 74% 66%, rgba(1, 165, 255, 0.2), transparent 72%),
+    radial-gradient(40% 34% at 30% 96%, rgba(102, 27, 225, 0.16), transparent 74%);
+}
+
+/* --- fabric: the interconnect. A diagonal mesh with nodes where the lines
+       cross, violet-led, no square grid anywhere. ------------------------ */
+.ws-hero--fabric {
+  background:
+    radial-gradient(115% 90% at 78% -10%, rgba(102, 27, 225, 0.19), transparent 58%),
+    radial-gradient(95% 80% at 8% 108%, rgba(1, 165, 255, 0.13), transparent 60%),
+    linear-gradient(180deg, var(--ws-navy-deep), var(--bg-main, #0b0f1a));
+}
+.ws-hero--fabric .ws-hero__bg-grid {
+  background-image:
+    repeating-linear-gradient(58deg, rgba(145, 219, 235, 0.1) 0 1px, transparent 1px 58px),
+    repeating-linear-gradient(-58deg, rgba(167, 139, 250, 0.11) 0 1px, transparent 1px 58px);
+  background-size: auto;
+  -webkit-mask-image: radial-gradient(120% 100% at 68% 24%, #000 22%, transparent 82%);
+  mask-image: radial-gradient(120% 100% at 68% 24%, #000 22%, transparent 82%);
+}
+.ws-hero--fabric .ws-hero__bg-grid::after {
+  content: "";
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(145, 219, 235, 0.34) 0 1.4px, transparent 1.6px);
+  background-size: 73px 73px;
+  -webkit-mask-image: radial-gradient(58% 52% at 70% 32%, #000 10%, transparent 74%);
+  mask-image: radial-gradient(58% 52% at 70% 32%, #000 10%, transparent 74%);
+}
+.ws-hero--fabric .ws-hero__bg-glow {
+  background:
+    radial-gradient(40% 36% at 72% 30%, rgba(102, 27, 225, 0.22), transparent 70%),
+    radial-gradient(34% 30% at 26% 84%, rgba(1, 165, 255, 0.13), transparent 72%);
+}
+
+/* --- aurora: the quiet option. No grid, no mesh — one wide violet-to-cyan
+       sweep behind the portrait, so the hero reads by colour alone. ------ */
+.ws-hero--aurora {
+  background:
+    radial-gradient(130% 100% at 72% -18%, rgba(102, 27, 225, 0.28), transparent 62%),
+    radial-gradient(95% 85% at 100% 55%, rgba(1, 165, 255, 0.18), transparent 62%),
+    radial-gradient(80% 70% at -8% 100%, rgba(145, 219, 235, 0.08), transparent 60%),
+    linear-gradient(180deg, var(--ws-navy-deep), var(--bg-main, #0b0f1a));
+}
+.ws-hero--aurora .ws-hero__bg-grid { display: none; }
+.ws-hero--aurora .ws-hero__bg-glow {
+  background: radial-gradient(52% 46% at 76% 34%, rgba(167, 139, 250, 0.16), transparent 74%);
+  filter: blur(2px);
+}
+
+/* ==========================================================================
    BODY + SECTION SCAFFOLD
    ========================================================================== */
 .event-body.ws-body { padding: 0; }

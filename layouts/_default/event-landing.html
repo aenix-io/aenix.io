@@ -19,6 +19,13 @@
     speaker_photo    — assets path to the composited portrait
     speaker_alt      — alt text for that portrait (defaults to
                        "<event.performer> — <webinar|workshop> host")
+    hero_bg          — hero background motif. Omit for the house default
+                       (48px grid + blue glow). Named variants let each
+                       campaign read as its own page instead of five
+                       landings sharing one backdrop:
+                         silicon     — wafer lattice, violet-led (GPU)
+                         utilization — rising bars behind the portrait
+                         fabric      — diagonal interconnect mesh
     translation      — list of {from, to} term pairs (optional signature strip)
     stats            — list of {number, label} pain stats (optional)
     inshort_title    — heading for the direct_answer/quick_facts section
@@ -37,7 +44,7 @@
 {{- $hostRole := cond (eq .Section "webinars") (cond $isRU "ведущий вебинара" "webinar host") (cond $isRU "ведущий воркшопа" "workshop host") -}}
 {{- $portraitAlt := .Params.speaker_alt | default (printf "%s — %s" $performer $hostRole) -}}
 
-<section class="event-hero ws-hero">
+<section class="event-hero ws-hero{{ with .Params.hero_bg }} ws-hero--{{ . }}{{ end }}">
   <div class="ws-hero__bg" aria-hidden="true">
     <div class="ws-hero__bg-grid"></div>
     <div class="ws-hero__bg-glow"></div>
