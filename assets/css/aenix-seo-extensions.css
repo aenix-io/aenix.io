@@ -5387,145 +5387,18 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 
 /* ==========================================================================
    HERO BACKGROUND VARIANTS (`hero_bg:` in frontmatter)
-   Five campaign landings shared one backdrop — 48px grid plus a blue glow —
-   so a reader holding several campaign links could not tell them apart.
-   Each variant swaps the motif and shifts the accent, inside the same tokens.
-   Omit `hero_bg` and a page keeps the house default untouched.
+   The campaign landings all shared one backdrop — 48px grid plus a blue glow —
+   so a reader holding several campaign links could not tell them apart. A
+   variant swaps the motif and shifts the accent inside the same tokens; omit
+   `hero_bg` and a page keeps the house default untouched. One is defined so
+   far, for the GPU landing. Add the next one here when a page needs it.
    ========================================================================== */
-
-/* --- silicon: a wafer. Concentric rings centred behind the portrait over a
-       fine lattice, the glow led by violet instead of blue. -------------- */
-.ws-hero--silicon {
-  background:
-    radial-gradient(110% 85% at 88% -12%, rgba(102, 27, 225, 0.2), transparent 55%),
-    radial-gradient(85% 75% at -5% 105%, rgba(1, 165, 255, 0.12), transparent 58%),
-    linear-gradient(180deg, var(--ws-navy-deep), var(--bg-main, #0b0f1a));
-}
-.ws-hero--silicon .ws-hero__bg-grid {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 24px 24px;
-  -webkit-mask-image: radial-gradient(112% 92% at 74% 20%, #000 22%, transparent 74%);
-  mask-image: radial-gradient(112% 92% at 74% 20%, #000 22%, transparent 74%);
-}
-/* the wafer: concentric rings stepping out from behind the portrait's head */
-.ws-hero--silicon .ws-hero__bg-grid::after {
-  content: "";
-  position: absolute; inset: 0;
-  background-image: repeating-radial-gradient(
-    circle at 74% 28%,
-    rgba(167, 139, 250, 0.16) 0 1px,
-    transparent 1px 46px
-  );
-  -webkit-mask-image: radial-gradient(62% 58% at 74% 28%, #000 6%, transparent 84%);
-  mask-image: radial-gradient(62% 58% at 74% 28%, #000 6%, transparent 84%);
-}
-.ws-hero--silicon .ws-hero__bg-glow {
-  background:
-    radial-gradient(38% 34% at 76% 26%, rgba(102, 27, 225, 0.24), transparent 70%),
-    radial-gradient(30% 28% at 88% 62%, rgba(1, 165, 255, 0.12), transparent 72%);
-}
-
-/* --- utilization: the page's own argument as the backdrop. Bars rise behind
-       the portrait, sparse and dim on the left, dense and bright on the
-       right, the way a utilization graph fills up. ----------------------- */
-.ws-hero--utilization .ws-hero__bg-grid {
-  background-image: repeating-linear-gradient(
-    180deg,
-    rgba(1, 165, 255, 0.16) 0 2px,
-    transparent 2px 15px
-  );
-  background-size: auto;
-  -webkit-mask-image: linear-gradient(103deg, transparent 6%, rgba(0, 0, 0, 0.4) 40%, #000 82%);
-  mask-image: linear-gradient(103deg, transparent 6%, rgba(0, 0, 0, 0.4) 40%, #000 82%);
-}
-.ws-hero--utilization .ws-hero__bg-glow {
-  background:
-    radial-gradient(46% 38% at 74% 66%, rgba(1, 165, 255, 0.2), transparent 72%),
-    radial-gradient(40% 34% at 30% 96%, rgba(102, 27, 225, 0.16), transparent 74%);
-}
-
-/* --- fabric: the interconnect. A diagonal mesh with nodes where the lines
-       cross, violet-led, no square grid anywhere. ------------------------ */
-.ws-hero--fabric {
-  background:
-    radial-gradient(115% 90% at 78% -10%, rgba(102, 27, 225, 0.19), transparent 58%),
-    radial-gradient(95% 80% at 8% 108%, rgba(1, 165, 255, 0.13), transparent 60%),
-    linear-gradient(180deg, var(--ws-navy-deep), var(--bg-main, #0b0f1a));
-}
-.ws-hero--fabric .ws-hero__bg-grid {
-  background-image:
-    repeating-linear-gradient(58deg, rgba(145, 219, 235, 0.1) 0 1px, transparent 1px 58px),
-    repeating-linear-gradient(-58deg, rgba(167, 139, 250, 0.11) 0 1px, transparent 1px 58px);
-  background-size: auto;
-  -webkit-mask-image: radial-gradient(120% 100% at 68% 24%, #000 22%, transparent 82%);
-  mask-image: radial-gradient(120% 100% at 68% 24%, #000 22%, transparent 82%);
-}
-.ws-hero--fabric .ws-hero__bg-grid::after {
-  content: "";
-  position: absolute; inset: 0;
-  background-image: radial-gradient(circle, rgba(145, 219, 235, 0.34) 0 1.4px, transparent 1.6px);
-  background-size: 73px 73px;
-  -webkit-mask-image: radial-gradient(58% 52% at 70% 32%, #000 10%, transparent 74%);
-  mask-image: radial-gradient(58% 52% at 70% 32%, #000 10%, transparent 74%);
-}
-.ws-hero--fabric .ws-hero__bg-glow {
-  background:
-    radial-gradient(40% 36% at 72% 30%, rgba(102, 27, 225, 0.22), transparent 70%),
-    radial-gradient(34% 30% at 26% 84%, rgba(1, 165, 255, 0.13), transparent 72%);
-}
-
-/* --- aurora: no grid, no mesh. A diagonal tonal ramp that runs near-black
-       under the headline and opens into a saturated violet bloom behind the
-       portrait, with a cyan sweep across the bottom right and a bright rim
-       behind the figure so the dark jacket separates from the ground. ---- */
-.ws-hero--aurora {
-  background:
-    radial-gradient(46% 44% at 74% 26%, rgba(102, 27, 225, 0.52), transparent 68%),
-    radial-gradient(38% 34% at 98% 78%, rgba(1, 165, 255, 0.32), transparent 70%),
-    radial-gradient(52% 46% at 6% 96%, rgba(102, 27, 225, 0.14), transparent 66%),
-    linear-gradient(112deg, #04060c 0%, #06090f 34%, #0a0f20 58%, #150b30 100%);
-}
-.ws-hero--aurora .ws-hero__bg-grid { display: none; }
-.ws-hero--aurora .ws-hero__bg-glow {
-  background: radial-gradient(30% 26% at 78% 30%, rgba(167, 139, 250, 0.3), transparent 72%);
-}
-.ws-hero--aurora .ws-hero__stage-glow {
-  background:
-    radial-gradient(30% 27% at 56% 22%, rgba(145, 219, 235, 0.42), transparent 64%),
-    radial-gradient(46% 40% at 50% 66%, rgba(102, 27, 225, 0.3), transparent 72%);
-  filter: blur(10px);
-}
-
-/* --- spotlight: one hard-falloff ellipse behind the portrait on a nearly
-       black stage. The highest-contrast option — a lit subject, not a lit
-       background. ------------------------------------------------------- */
-.ws-hero--spotlight {
-  background:
-    radial-gradient(40% 52% at 74% 34%, rgba(1, 165, 255, 0.34) 0%, rgba(102, 27, 225, 0.24) 44%, transparent 72%),
-    linear-gradient(180deg, #03050a, #05070e);
-}
-.ws-hero--spotlight .ws-hero__bg-grid {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 64px 64px;
-  -webkit-mask-image: radial-gradient(42% 54% at 74% 34%, #000 10%, transparent 70%);
-  mask-image: radial-gradient(42% 54% at 74% 34%, #000 10%, transparent 70%);
-}
-.ws-hero--spotlight .ws-hero__bg-glow { background: none; }
-.ws-hero--spotlight .ws-hero__stage-glow {
-  background: radial-gradient(32% 30% at 54% 24%, rgba(214, 236, 255, 0.5), transparent 60%);
-  filter: blur(14px);
-}
 
 /* --- beam: one wide shaft of light crossing the hero from the top left down
        past the portrait, hot cyan-white where it enters and pooling into
-       violet where it exits, over a faint grid on a deep navy ground.
-       Built from conic sectors so the shaft widens the way a real one does;
-       the layers are inset past the hero's edges so the blur has room and
-       never lands as a band on the boundary (the hero clips them). ------- */
+       violet where it exits, over a faint grid on a deep navy ground. The
+       layers are inset past the hero's edges so the blur has room and never
+       lands as a band on the boundary (the hero clips them). ------------- */
 .ws-hero--beam {
   background:
     radial-gradient(58% 52% at 88% 78%, rgba(102, 27, 225, 0.3), transparent 68%),
