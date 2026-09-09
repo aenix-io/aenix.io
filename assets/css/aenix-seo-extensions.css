@@ -5520,33 +5520,65 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   filter: blur(14px);
 }
 
-/* --- beam: diagonal shafts of light from the top right across a near-black
-       stage, violet into cyan. Graphic rather than atmospheric. --------- */
+/* --- beam: one wide shaft of light crossing the hero from the top left down
+       past the portrait, hot cyan-white where it enters and pooling into
+       violet where it exits, over a faint grid on a deep navy ground.
+       Built from conic sectors so the shaft widens the way a real one does;
+       the layers are inset past the hero's edges so the blur has room and
+       never lands as a band on the boundary (the hero clips them). ------- */
 .ws-hero--beam {
   background:
-    radial-gradient(44% 40% at 84% 18%, rgba(102, 27, 225, 0.4), transparent 68%),
-    linear-gradient(180deg, #04060c, #070a14);
+    radial-gradient(58% 52% at 88% 78%, rgba(102, 27, 225, 0.3), transparent 68%),
+    linear-gradient(180deg, #0a1121 0%, #080e1c 58%, #060a15 100%);
 }
+/* the grid, strongest across the middle where the shaft crosses it */
 .ws-hero--beam .ws-hero__bg-grid {
-  background-image: repeating-linear-gradient(
-    116deg,
-    rgba(145, 219, 235, 0.11) 0 2px,
-    transparent 2px 26px,
-    rgba(102, 27, 225, 0.16) 26px 30px,
-    transparent 30px 74px
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 58px 58px;
+  -webkit-mask-image: radial-gradient(105% 90% at 62% 34%, #000 18%, transparent 82%);
+  mask-image: radial-gradient(105% 90% at 62% 34%, #000 18%, transparent 82%);
+}
+/* the shaft. A band rotated into the diagonal, not a conic sector: the band
+   keeps a crisp leading edge, where the sector's edge softened as it widened
+   and read as a corner glow rather than a beam. The gradient runs across the
+   band, so its stops ARE the beam's cross-section — hot white edge, blue
+   body, violet tail — and the mask fades it along its length. */
+.ws-hero--beam .ws-hero__bg-grid::after {
+  content: "";
+  position: absolute;
+  top: -70%; left: -32%;
+  width: 168%; height: 240%;
+  transform: rotate(29deg);
+  transform-origin: 50% 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0 25%,
+    rgba(214, 240, 255, 0.55) 26.6%,
+    rgba(110, 196, 255, 0.48) 29%,
+    rgba(1, 165, 255, 0.4) 34%,
+    rgba(1, 165, 255, 0.28) 44%,
+    rgba(88, 60, 235, 0.36) 56%,
+    rgba(102, 27, 225, 0.24) 68%,
+    transparent 84%
   );
-  background-size: auto;
-  -webkit-mask-image: linear-gradient(116deg, #000 4%, rgba(0, 0, 0, 0.5) 46%, transparent 84%);
-  mask-image: linear-gradient(116deg, #000 4%, rgba(0, 0, 0, 0.5) 46%, transparent 84%);
+  filter: blur(10px);
+  -webkit-mask-image: linear-gradient(90deg, transparent 2%, #000 22%, #000 72%, transparent 99%);
+  mask-image: linear-gradient(90deg, transparent 2%, #000 22%, #000 72%, transparent 99%);
 }
+/* where the shaft passes the portrait it pools into violet */
 .ws-hero--beam .ws-hero__bg-glow {
-  background: radial-gradient(34% 30% at 92% 74%, rgba(1, 165, 255, 0.26), transparent 72%);
+  background:
+    radial-gradient(36% 42% at 76% 50%, rgba(102, 27, 225, 0.42), transparent 70%),
+    radial-gradient(26% 24% at 44% 6%, rgba(145, 219, 235, 0.14), transparent 72%);
 }
+/* rim light on the portrait so the dark suede reads against the shaft */
 .ws-hero--beam .ws-hero__stage-glow {
   background:
-    radial-gradient(28% 26% at 58% 22%, rgba(145, 219, 235, 0.36), transparent 62%),
-    radial-gradient(44% 38% at 46% 70%, rgba(102, 27, 225, 0.26), transparent 74%);
-  filter: blur(8px);
+    radial-gradient(30% 27% at 58% 20%, rgba(145, 219, 235, 0.34), transparent 62%),
+    radial-gradient(48% 42% at 44% 68%, rgba(102, 27, 225, 0.32), transparent 72%);
+  filter: blur(10px);
 }
 
 /* ==========================================================================
