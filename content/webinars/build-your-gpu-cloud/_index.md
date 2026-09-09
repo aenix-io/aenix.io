@@ -20,7 +20,7 @@ hero_chips:
 hero_primary: { text: "Talk to the team", href: "/contact/" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil-gpu-hero.png"
-hero_bg: "aurora"
+hero_bg: "beam"
 inshort_title: "About the webinar"
 quick_facts_style: "rows"
 event:
