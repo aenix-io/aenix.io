@@ -54,7 +54,11 @@ footer{color:var(--mut);font-size:.9rem;padding:32px 0 48px;border-top:1px solid
   Cozystack — товарный знак The Linux Foundation. Сертификация проводится компанией
   AENIX s.r.o. и не выдаётся ни проектом Cozystack, ни Linux Foundation.
 </div></footer>
-<script>window.__CERT_KEYS__ = {{ site.Data.cert_keys | jsonify | safeJS }};</script>
+{{/* Реестр ключей отдаём ВНЕШНИМ скриптом: CSP на этой странице — script-src 'self'
+     без 'unsafe-inline', поэтому инлайн-скрипт молча не исполнялся и реестр оставался
+     пустым (все сертификаты показывались как «ключ неизвестен»). */}}
+{{ $certKeys := printf "window.__CERT_KEYS__=%s;" (site.Data.cert_keys | jsonify) | resources.FromString "js/cert-keys.js" | minify | fingerprint }}
+<script src="{{ $certKeys.RelPermalink }}"></script>
 <script>
 (function () {
   var EXAM = "https://exam.cert.workshop.aenix.io";
