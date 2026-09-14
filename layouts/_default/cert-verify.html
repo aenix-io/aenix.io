@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'self' https://exam.cert.workshop.aenix.io; base-uri 'none'; form-action 'none'">
 <meta name="robots" content="noindex, nofollow">
 <title>{{ .Title }} · Ænix</title>
 {{/* Эта страница НАМЕРЕННО собирается без общего шаблона сайта.
@@ -59,27 +59,6 @@ footer{color:var(--mut);font-size:.9rem;padding:32px 0 48px;border-top:1px solid
      пустым (все сертификаты показывались как «ключ неизвестен»). */}}
 {{ $certKeys := printf "window.__CERT_KEYS__=%s;" (site.Data.cert_keys | jsonify) | resources.FromString "js/cert-keys.js" | minify | fingerprint }}
 <script src="{{ $certKeys.RelPermalink }}"></script>
-<script>
-(function () {
-  var EXAM = "https://exam.cert.workshop.aenix.io";
-  var inp = document.getElementById("serial-in"), btn = document.getElementById("serial-go"), err = document.getElementById("serial-err");
-  if (!btn) return;
-  async function go() {
-    err.textContent = "";
-    var s = (inp.value || "").trim().toUpperCase();
-    if (!s) { err.textContent = "Введите номер сертификата."; return; }
-    btn.disabled = true;
-    try {
-      var r = await fetch(EXAM + "/cert?serial=" + encodeURIComponent(s));
-      var d = await r.json().catch(function () { return {}; });
-      if (!r.ok || !d.token) { err.textContent = (d && d.error) || "Сертификат с таким номером не найден."; btn.disabled = false; return; }
-      location.hash = d.token; location.reload();
-    } catch (e) { err.textContent = "Служба проверки недоступна. Попробуйте позже."; btn.disabled = false; }
-  }
-  btn.addEventListener("click", go);
-  inp.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
-})();
-</script>
 {{ $js := resources.Get "js/cert-verify.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" type="module"></script>
 </body>

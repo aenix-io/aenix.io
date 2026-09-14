@@ -92,6 +92,28 @@
     var q = out.querySelector('.q') || out; q.appendChild(b);
   }
 
+  // Поиск по номеру: резолвим serial -> token в exam-службе (CORS разрешён для aenix.io,
+  // exam-хост добавлен в connect-src), затем показываем как обычную проверку по токену.
+  function setupSerial() {
+    var EXAM = "https://exam.cert.workshop.aenix.io";
+    var inp = document.getElementById('serial-in'), btn = document.getElementById('serial-go'), serr = document.getElementById('serial-err');
+    if (!btn || !inp) return;
+    async function go() {
+      serr.textContent = '';
+      var s = (inp.value || '').trim().toUpperCase();
+      if (!s) { serr.textContent = 'Введите номер сертификата.'; return; }
+      btn.disabled = true;
+      try {
+        var r = await fetch(EXAM + '/cert?serial=' + encodeURIComponent(s));
+        var d = await r.json().catch(function () { return {}; });
+        if (!r.ok || !d.token) { serr.textContent = (d && d.error) || 'Сертификат с таким номером не найден.'; btn.disabled = false; return; }
+        location.hash = d.token; location.reload();
+      } catch (e) { serr.textContent = 'Служба проверки недоступна. Попробуйте позже.'; btn.disabled = false; }
+    }
+    btn.addEventListener('click', go);
+    inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') go(); });
+  }
+
   async function run() {
     var frag = location.hash.slice(1);            // берём как есть, без раскодирования
     if (!frag) {
@@ -102,7 +124,6 @@
     // Токен есть — это проверка конкретного сертификата, а не посадочная.
     // Прячем общий подзаголовок и блок «поиск по номеру», чтобы не мозолили глаза.
     var _lead = document.querySelector('.lead'); if (_lead) _lead.style.display = 'none';
-    var _bys = document.getElementById('by-serial'); if (_bys) _bys.style.display = 'none';
     var dot = frag.lastIndexOf('.');
     if (dot < 1 || !/^[A-Za-z0-9_.\-]+$/.test(frag)) {
       return say('', 'Ссылка испорчена', '', 'Похоже, при копировании часть ссылки потерялась.');
@@ -183,4 +204,5 @@
     addDownload(c);
   }
   run();
+  setupSerial();
 })();
