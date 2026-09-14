@@ -40,6 +40,58 @@
            '<tr><td>Номер</td><td>' + esc(c.serial) + '</td></tr>';
   }
 
+  // Рисуем именной сертификат на canvas и отдаём PNG. Всё локально: под CSP
+  // (script-src 'self', img-src 'self' data:) внешних ресурсов и шрифтов нет.
+  function certCanvas(c) {
+    var W = 1600, H = 1131, S = 2;
+    var cv = document.createElement('canvas'); cv.width = W * S; cv.height = H * S;
+    var x = cv.getContext('2d'); x.scale(S, S);
+    x.fillStyle = '#ffffff'; x.fillRect(0, 0, W, H);
+    x.strokeStyle = '#2f6fed'; x.lineWidth = 6; x.strokeRect(46, 46, W - 92, H - 92);
+    x.strokeStyle = '#c9d6f0'; x.lineWidth = 2; x.strokeRect(64, 64, W - 128, H - 128);
+    function t(str, y, font, color, align) {
+      x.font = font; x.fillStyle = color; x.textAlign = align || 'center';
+      x.fillText(str, align === 'left' ? 150 : (align === 'right' ? W - 150 : W / 2), y);
+    }
+    t('Ænix', 150, '700 44px Georgia, "Times New Roman", serif', '#0f172a');
+    t('Certification for Cozystack', 190, '400 20px Arial, sans-serif', '#64748b');
+    t('CERTIFICATE OF ACHIEVEMENT', 330, '700 46px Georgia, serif', '#0f172a');
+    t('This certifies that', 405, '400 22px Arial, sans-serif', '#64748b');
+    t(c.name, 480, '700 60px Georgia, serif', '#2f6fed');
+    t('has successfully completed', 552, '400 22px Arial, sans-serif', '#64748b');
+    t(c.exam + ' — ' + c.level, 608, '600 28px Arial, sans-serif', '#0f172a');
+    t('Platform version ' + c.platform, 648, '400 20px Arial, sans-serif', '#64748b');
+    // факты
+    x.strokeStyle = '#e2e8f0'; x.lineWidth = 1;
+    x.beginPath(); x.moveTo(150, 760); x.lineTo(W - 150, 760); x.stroke();
+    t('Certificate No.', 815, '400 18px Arial', '#94a3b8', 'left');
+    t(c.serial, 845, '600 24px Arial', '#0f172a', 'left');
+    t('Issued', 815, '400 18px Arial', '#94a3b8', 'center');
+    t(c.issued + (c.beta ? '  (beta)' : ''), 845, '600 24px Arial', '#0f172a', 'center');
+    t('Valid until', 815, '400 18px Arial', '#94a3b8', 'right');
+    t(c.expires, 845, '600 24px Arial', '#0f172a', 'right');
+    t('Issued by ' + c.issuer, 960, '400 22px Arial', '#334155');
+    t('Verify at aenix.io/certification/verify  ·  ' + c.serial, 1010, '400 17px Arial', '#94a3b8');
+    return cv;
+  }
+  function downloadCert(c) {
+    var cv = certCanvas(c);
+    var name = 'Aenix-' + c.serial + '.png';
+    cv.toBlob(function (b) {
+      if (!b) { var u0 = cv.toDataURL('image/png'); var a0 = document.createElement('a'); a0.href = u0; a0.download = name; a0.click(); return; }
+      var u = URL.createObjectURL(b), a = document.createElement('a');
+      a.href = u; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(u); }, 1500);
+    }, 'image/png');
+  }
+  function addDownload(c) {
+    var b = document.createElement('button');
+    b.textContent = 'Скачать сертификат (PNG)';
+    b.style.cssText = 'margin-top:18px;padding:12px 20px;font-weight:600;color:#fff;background:#2f6fed;border:0;border-radius:9px;cursor:pointer;font-size:15px';
+    b.addEventListener('click', function () { downloadCert(c); });
+    var q = out.querySelector('.q') || out; q.appendChild(b);
+  }
+
   async function run() {
     var frag = location.hash.slice(1);            // берём как есть, без раскодирования
     if (!frag) {
@@ -122,11 +174,13 @@
       return say('', 'Сертификат отозван', rows, 'Этот номер внесён в список отозванных.');
     }
     if (rev === null || revAge > 60) {
-      return say('', 'Подпись верна, список отзывов недоступен', rows,
+      say('', 'Подпись верна, список отзывов недоступен', rows,
         'Сама подпись в порядке. Но проверить, не отозван ли сертификат, сейчас не получилось — ' +
         'список не загрузился или давно не обновлялся.');
+      addDownload(c); return;
     }
     say('', 'Сертификат действителен', rows, 'Подпись верна, в списке отозванных не значится.');
+    addDownload(c);
   }
   run();
 })();
