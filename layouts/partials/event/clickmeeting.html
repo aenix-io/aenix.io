@@ -1,0 +1,26 @@
+{{/*
+  event/clickmeeting.html — the ClickMeeting registration embed (the official
+  embed_conference.html script, marketing-provided and verified).
+
+  Shared by the `clickmeeting` shortcode (for pages that place the form inside
+  their body) and by event-landing.html (for pages that declare `register:` in
+  frontmatter and let the layout put the form at the end of the funnel).
+
+  ctx (dict):
+    room — ClickMeeting room id (required)
+    w    — iframe width  (default "768", the verified size)
+    h    — iframe height (default "1024")
+
+  The injected iframe is made fluid via the .cm-embed CSS (max-width:100%),
+  so the fixed 768px width still fits narrow containers.
+*/}}
+{{- $room := .room -}}
+{{- $w := .w | default "768" -}}
+{{- $h := .h | default "1024" -}}
+{{- if $room -}}
+<div class="cm-embed">
+<script type="text/javascript" src="https://embed.clickmeeting.com/embed_conference.html?r={{ $room }}&w={{ $w }}&h={{ $h }}"></script>
+</div>
+{{- else -}}
+<div class="pipedrive-form pipedrive-form--error"><strong>clickmeeting:</strong> missing <code>room</code> id.</div>
+{{- end -}}
