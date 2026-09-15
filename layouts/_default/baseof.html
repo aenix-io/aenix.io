@@ -5,6 +5,29 @@
 <html lang="{{ $lang }}">
 <head>
   <meta charset="utf-8">
+  {{- if or (eq .Kind "404") (eq .RelPermalink "/404.html") }}
+  {{/* The live demos are single-page apps under /demo-app/ and /idp-app/,
+       embedded by /demo/ and /idp/. GitHub Pages has no SPA fallback, so a
+       document load of a path inside an app (a refresh of /demo/ restores
+       the iframe at the deep URL the app navigated to; a link opened in a
+       new tab) lands here. Send it back to the app's base with the path in
+       ?route= before anything renders; the Ænix Platform demo restores that
+       route, the IDP demo starts from its home screen. */}}
+  <script>
+    (function () {
+      var apps = ["/demo-app/", "/idp-app/"];
+      var path = window.location.pathname;
+      for (var i = 0; i < apps.length; i++) {
+        var base = apps[i];
+        if (path.indexOf(base) === 0 && path !== base) {
+          var route = path.slice(base.length - 1) + window.location.search + window.location.hash;
+          window.location.replace(base + "?route=" + encodeURIComponent(route));
+          return;
+        }
+      }
+    })();
+  </script>
+  {{- end }}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} – Ænix{{ end }}</title>
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
