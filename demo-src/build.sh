@@ -3,8 +3,10 @@
 # it up for static hosting on GitHub Pages.
 #
 # The demo is a standalone app (aenix-org/cozyportal-demo, package
-# @cozyportal/console) with a fully in-memory mock — no backend, no oauth, no
-# Keycloak. It just needs to be built with the /demo-app/ sub-path base.
+# @cozyportal/portal) with a fully in-memory mock — no backend, no oauth, no
+# Keycloak. It is built as one bundle with the back-office inside
+# (WITH_ADMIN=1, the Admin entry in the top bar) and the /demo-app/ sub-path
+# base.
 #
 #   demo-src/build.sh [cozyportal-demo-ref]   # ref defaults to "master"
 #
@@ -31,7 +33,7 @@ else
 fi
 git clone --depth 1 --branch "$REF" "$CLONE_URL" "$SRC"
 
-echo "==> installing + building console (base /demo-app/)"
+echo "==> installing + building portal with the back-office (base /demo-app/)"
 ( cd "$SRC"
   corepack enable >/dev/null 2>&1 || true
   # pnpm 11 fails the install outright when a dependency's build script is
@@ -42,24 +44,12 @@ echo "==> installing + building console (base /demo-app/)"
   # Call the vite binary directly (skips pnpm's deps-status check and the
   # package build's tsc typecheck — this is a demo, not a type gate).
   VITE_BIN="$SRC/node_modules/.bin/vite"
-  [ -x "$VITE_BIN" ] || VITE_BIN="$SRC/apps/console/node_modules/.bin/vite"
-  ( cd apps/console && DEMO_BASE_PATH=/demo-app/ "$VITE_BIN" build )
+  [ -x "$VITE_BIN" ] || VITE_BIN="$SRC/apps/portal/node_modules/.bin/vite"
+  ( cd apps/portal && WITH_ADMIN=1 DEMO_BASE_PATH=/demo-app/ "$VITE_BIN" build )
   # SPA deep links: on refresh GitHub Pages serves the folder's 404.html.
-  cp apps/console/dist/index.html apps/console/dist/404.html )
-
-# The docs subsite under apps/console/public/docs is a pre-built static site
-# vendored into the demo repo, so Vite copies it verbatim and its root-relative
-# links (/docs/..., /console, /marketplace, /account, /support, /resources,
-# /auth) resolve against aenix.io rather than /demo-app/. Left alone, every
-# Docs click inside the live demo lands on a branded 404 — and because this is
-# generated output, fixing it by hand lasts until the next refresh. Namespace
-# it here instead, so the correction survives every rebuild.
-echo "==> namespacing vendored docs links under /demo-app/"
-find "$SRC/apps/console/dist" -type f \( -name '*.html' -o -name '*.xml' \) -print0 |
-  xargs -0 sed -i.bak -E 's#href="/(docs|console|marketplace|account|support|resources|auth)(/|")#href="/demo-app/\1\2#g; s#href="/"#href="/demo-app/"#g'
-find "$SRC/apps/console/dist" -name '*.bak' -delete
+  cp apps/portal/dist/index.html apps/portal/dist/404.html )
 
 echo "==> publishing to static/demo-app"
 rm -rf "$SITE/static/demo-app"; mkdir -p "$SITE/static/demo-app"
-cp -R "$SRC/apps/console/dist/." "$SITE/static/demo-app/"
+cp -R "$SRC/apps/portal/dist/." "$SITE/static/demo-app/"
 echo "==> done: $(find "$SITE/static/demo-app" -type f | wc -l) files in static/demo-app"
