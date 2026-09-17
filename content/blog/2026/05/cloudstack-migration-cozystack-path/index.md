@@ -1,7 +1,8 @@
 ---
 title: "CloudStack migration to Cozystack — the modernization path for established service providers"
 description: "How service providers can modernize Apache CloudStack to Cozystack as a Kubernetes-native target, with architecture mapping, migration phases, and trade-offs."
-date: 2026-05-11
+date: "2026-05-06"
+cover_image: "/img/blog/covers/cloudstack-migration-cozystack-path.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["CloudStack", "Cozystack", "Migration", "Hosting", "Multi-tenancy"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "Offer a compatibility shim or planned API migration", correct: true }
       explanation: "The article calls out customer self-service-API divergence as a stumble point and recommends either a CloudStack-API-compatible shim (for a subset of operations) or planned customer-facing API migration to Cozystack-native patterns."
 ---
+
 
 Apache CloudStack remains established with service providers in
 several EU, MENA, and APAC markets. It has a mature multi-tenancy

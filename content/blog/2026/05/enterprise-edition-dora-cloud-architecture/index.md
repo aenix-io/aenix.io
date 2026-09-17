@@ -1,7 +1,8 @@
 ---
 title: "Private Cloud Platform for regulated cloud — DORA and NIS2 obligations mapped to running architecture"
 description: "Mapping DORA ICT-risk and third-party obligations and the NIS2 Article 21(2) measures onto a defensible cloud architecture for regulated enterprises."
-date: 2026-05-11
+date: "2026-05-10"
+cover_image: "/img/blog/covers/enterprise-edition-dora-cloud-architecture.png"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance", "Sovereignty", "Multi-tenancy", "Cozystack"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "12 to 18 months", correct: false }
       explanation: "The engagement structure section states 18–36 months for tier-1 banks with full TLPT readiness, and 12–18 months for mid-size regulated enterprises with narrower scope."
 ---
+
 
 Regulated-enterprise cloud architecture in 2026 is a different
 conversation than it was in 2022. DORA went into force on 17 January

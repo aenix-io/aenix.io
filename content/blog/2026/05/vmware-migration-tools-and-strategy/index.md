@@ -1,7 +1,8 @@
 ---
 title: "VMware migration tools and strategy in 2026 — what works, what fails"
 description: "Three VMware migration paths, the tooling for KubeVirt-based migration, where migrations stumble, and realistic cost ranges."
-date: "2026-05-01"
+date: "2026-05-29"
+cover_image: "/img/blog/covers/vmware-migration-tools-and-strategy.png"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Nutanix", "OpenShift", "Kubernetes", "Cozystack", "KubeVirt"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "12 months of platform build", correct: false }
       explanation: "1-3 months destination-build before migration cohort 1. Most migrations fail when workloads move to a destination that's been engineered as a PoC, not as a production platform. Engineer the destination first."
 ---
+
 
 The VMware migration market in 2026 is a different conversation than in 2022. Broadcom-induced exits have produced enough customer experience that the patterns that work and the patterns that fail are documented. This article covers the working version.
 

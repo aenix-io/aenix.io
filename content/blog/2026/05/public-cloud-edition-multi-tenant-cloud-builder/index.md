@@ -1,7 +1,8 @@
 ---
 title: "Public Cloud Platform — what it actually takes to launch a sovereign cloud product at scale"
 description: "What a multi-year, multi-million-euro sovereign cloud build covers for telcos, banks, and operators."
-date: 2026-05-11
+date: "2026-05-25"
+cover_image: "/img/blog/covers/public-cloud-edition-multi-tenant-cloud-builder.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Sovereignty", "Cloud", "Platform Engineering"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "Service catalog for all 30-50+ services", correct: false }
       explanation: "Phase 1 covers hardware procurement and racking, Talos/Cozystack platform deployment in the first datacentre, storage layer, networking foundation, identity integration, and initial observability — ending with a working single-region internal platform."
 ---
+
 
 The Public Cloud Platform conversation is different from every other
 Ænix engagement. It's not "should we use Cozystack?" — that's already

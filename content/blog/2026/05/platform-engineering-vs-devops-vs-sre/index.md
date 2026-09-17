@@ -1,7 +1,8 @@
 ---
 title: "Platform engineering vs DevOps vs SRE — a 2026 terminology guide"
 description: "Where platform engineering, DevOps and SRE overlap and where they do not, what each actually builds, and the metrics that separate them."
-date: "2026-05-01"
+date: "2026-05-21"
+cover_image: "/img/blog/covers/platform-engineering-vs-devops-vs-sre.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["DevOps", "Platform Engineering", "Observability"]
@@ -45,6 +46,7 @@ quiz:
 aliases:
   - /blog/2026/05/platform-engineering-maturity-model-2026/
 ---
+
 
 The terms platform engineering, DevOps, and SRE have been used interchangeably, in opposition, and as overlapping practices for nearly a decade. By 2026 the industry has roughly converged — but only roughly. Different companies still use the same words for different jobs, and the resulting org-design conversations stall because nobody quite agrees on what they're discussing.
 

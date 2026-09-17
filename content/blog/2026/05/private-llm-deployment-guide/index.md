@@ -1,7 +1,8 @@
 ---
 title: "Private LLM deployment — a practical guide to on-premise AI infrastructure in 2026"
 description: "The six layers of a real private LLM deployment — hardware, platform, serving, model, application, operations — with the pitfalls at each one."
-date: "2026-05-01"
+date: "2026-05-23"
+cover_image: "/img/blog/covers/private-llm-deployment-guide.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["DORA", "Kubernetes", "Sovereignty", "AI/ML", "GPU", "Multi-tenancy"]
@@ -44,6 +45,7 @@ quiz:
         - { text: "Using vLLM instead of Triton (different memory profiles)", correct: false }
       explanation: "A model that \"fits\" by parameter count may not fit at the operational batch size because of KV cache memory growth with context length and batch size. Right-sizing requires actual benchmark with realistic context lengths."
 ---
+
 
 The decision to deploy a private LLM is increasingly easy to make and surprisingly hard to execute well. The decision is easy because the trigger is usually clear: regulated data, sectoral rules, or the economics of inference at scale make a hyperscaler model API the wrong answer. Execution is hard because the supporting infrastructure — GPU scheduling, model serving, observability, multi-tenancy, audit-readiness — is more work than the LLM itself.
 

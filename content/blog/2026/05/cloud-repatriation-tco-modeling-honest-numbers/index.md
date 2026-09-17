@@ -1,7 +1,8 @@
 ---
 title: "Honest TCO modelling for cloud repatriation — what numbers to actually compare"
 description: "Why most cloud repatriation TCO models are wrong: the destination costs they miss, sensitivity analysis, and workload-level decisions that change the answer."
-date: "2026-05-01"
+date: "2026-05-05"
+cover_image: "/img/blog/covers/cloud-repatriation-tco-modeling-honest-numbers.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Cloud Repatriation", "Financial Services", "Platform Engineering", "Backup and DR", "Observability"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Currency exchange rate fluctuation", correct: false }
       explanation: "Honest TCO is sensitive to occupancy assumptions: steady-state at 50% vs 80% utilization changes private-cloud economics dramatically. Workload growth (20%/year vs 50%/year) changes hardware refresh cycles. Egress volume changes have outsized impact."
 ---
+
 
 ## Why most cloud TCO models are wrong
 

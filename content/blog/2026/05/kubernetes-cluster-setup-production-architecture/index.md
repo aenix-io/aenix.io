@@ -1,7 +1,8 @@
 ---
 title: "Production Kubernetes cluster setup — architecture decisions, sizing, and operations in 2026"
 description: "Ten architecture decisions behind a production Kubernetes cluster — distribution, tenancy, CNI, storage, GitOps, DR — and the readiness failures that recur."
-date: "2026-05-01"
+date: "2026-05-16"
+cover_image: "/img/blog/covers/kubernetes-cluster-setup-production-architecture.png"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Talos", "Sovereignty"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "MetalLB plus Cilium for L2 and L7", correct: true }
       explanation: "Bare-metal deployments default to MetalLB (layer-2 load balancing) plus Cilium (layer-7). Service mesh (Istio/Linkerd) is for advanced traffic management on top."
 ---
+
 
 Most Kubernetes-setup tutorials get you a cluster. They don't get you a production-ready cluster. The difference is the dozen architectural decisions that don't show up in a "kubectl apply" workflow but that determine whether your cluster operates well at scale or becomes a permanent maintenance burden.
 

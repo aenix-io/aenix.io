@@ -1,7 +1,8 @@
 ---
 title: "Cozystack — what it is, architecture, and how it fits in 2026"
 description: "What Cozystack is technically, the architectural choices behind it, how it compares to OpenStack and OpenShift, and when it is the wrong answer."
-date: "2026-05-01"
+date: "2026-05-07"
+cover_image: "/img/blog/covers/cozystack-introduction-architecture.png"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenStack", "OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Talos"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Cozystack itself is forked from the Cilium codebase", correct: false }
       explanation: "Choice 4: Cilium gives eBPF-based networking with native L4/L7 policies, observability, and service-mesh capabilities — replacing what NSX did in VMware deployments without the NSX licensing."
 ---
+
 
 *Component facts below reflect the Cozystack v1.6 release line (current as of September 2026).*
 

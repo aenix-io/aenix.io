@@ -1,7 +1,8 @@
 ---
 title: "Cozystack vs VMware — deep-dive comparison for platform engineers"
 description: "Cozystack against VMware layer by layer — compute, storage, network, multi-tenancy — with the operational implications and migration patterns for each."
-date: "2026-05-01"
+date: "2026-05-07"
+cover_image: "/img/blog/covers/cozystack-vs-vmware-deep-dive.png"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Seven to ten months elapsed end to end", correct: true }
       explanation: "Typical 100-VM VMware → Cozystack migration: 7-10 months elapsed (discovery, parallel deployment, image migration cohorts, network/storage cutover, DR cutover, decommission). The driver is regression testing and parallel-run windows, not raw migration speed."
 ---
+
 
 This article assumes familiarity with both platforms. For broader VMware exit guidance see **[VMware alternative](/alternatives/vmware-alternative/)** or **[VMware migration](/migration/vmware/)**.
 

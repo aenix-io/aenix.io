@@ -1,7 +1,8 @@
 ---
 title: "Proxmox to Cozystack — when single-tenant outgrows itself"
 description: "When does Proxmox VE outgrow single-tenant? A Proxmox-to-Cozystack migration guide for MSPs and growing teams hitting multi-tenancy and scale limits."
-date: 2026-05-11
+date: "2026-05-23"
+cover_image: "/img/blog/covers/proxmox-migration-when-cozystack-fits.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["Proxmox", "Cozystack", "Migration", "Multi-tenancy", "Hosting"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "When the operator needs multi-DC active/active topology", correct: false }
       explanation: "For sub-200-customer providers, SMB IT under 100 internal VMs, lab/dev environments, and mostly-VM workloads, Proxmox stays the better answer — Cozystack Public Cloud Platform is over-engineered for that scope. Managed services and multi-DC active/active are pressures that justify migration."
 ---
+
 
 Proxmox VE is one of the most successful open-source virtualisation
 platforms of the last decade. Mature, easy to install, strong

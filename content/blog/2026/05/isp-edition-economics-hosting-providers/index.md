@@ -1,7 +1,8 @@
 ---
 title: "Public Cloud Platform economics — when a turnkey cloud-in-a-box pays back for hosting providers"
 description: "Unit economics of Aenix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
-date: 2026-05-11
+date: "2026-05-15"
+cover_image: "/img/blog/covers/isp-edition-economics-hosting-providers.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "The fixed-cost stack overwhelms the margin contribution at that scale", correct: true }
       explanation: "The article explicitly says 'for providers below ~300 customers, Public Cloud Platform is often premature — the fixed-cost stack overwhelms the margin contribution. We'll say so in a discovery call rather than push the engagement.'"
 ---
+
 
 Most "should we build our own cloud product?" conversations at hosting
 providers stop at the technology question. The harder question is the

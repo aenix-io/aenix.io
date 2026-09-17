@@ -378,7 +378,7 @@ menus:
       url: /resources/
       weight: 60
       identifier: resources
-    - name: Lead magnets
+    - name: "Checklists & worksheets"
       url: /resources/
       parent: resources
       weight: 1

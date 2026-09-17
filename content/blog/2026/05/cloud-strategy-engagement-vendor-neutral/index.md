@@ -1,7 +1,8 @@
 ---
 title: "Vendor-neutral cloud strategy — what an honest cloud advisory engagement looks like in 2026"
 description: "What a vendor-neutral cloud strategy engagement actually delivers, and how it differs from Big-4 cloud advisory and hyperscaler-aligned consultancies."
-date: 2026-05-11
+date: "2026-05-06"
+cover_image: "/img/blog/covers/cloud-strategy-engagement-vendor-neutral.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Cloud", "Platform Engineering", "Sovereignty", "Compliance"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "PRA is tactical; Strategy defines target and substrate", correct: true }
       explanation: "PRA = tactical, used when strategic direction is settled, produces a 14-28 day remediation plan. Cloud Strategy = strategic, used when the direction is still in question, defines target architecture and substrate position. Most customers engage strategy first, then assessment, then implementation."
 ---
+
 
 "Cloud strategy" is a saturated term. Hyperscalers offer it (Azure
 Cloud Adoption Framework, AWS Migration Acceleration Programme, Google

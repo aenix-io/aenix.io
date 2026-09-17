@@ -1,7 +1,8 @@
 ---
 title: "MSP cloud platform modernization — branded cloud as managed-service offering"
 description: "Architecture pattern, reseller economics, and engagement sequencing for MSPs adding a multi-tenant cloud platform to a managed-services business."
-date: "2026-05-01"
+date: "2026-05-18"
+cover_image: "/img/blog/covers/msp-cloud-platform-modernization.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Hosting", "Observability"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Only cosmetic (colours and logo, not the catalog contents)", correct: false }
       explanation: "Service catalog curation: MSP can expose only PostgreSQL and hide Kafka (or any other service) if the MSP doesn't support it operationally. The catalog matches what the MSP can actually back with support, not what Cozystack technically can run."
 ---
+
 
 ## Why MSPs need cloud now
 

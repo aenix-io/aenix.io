@@ -1,7 +1,8 @@
 ---
 title: "Internal developer platform examples — 6 architectural patterns without Backstage lock-in"
 description: "Six internal developer platform patterns from production, the tools that show up across them, and how to pick one without defaulting to Backstage."
-date: "2026-05-01"
+date: "2026-05-14"
+cover_image: "/img/blog/covers/internal-developer-platform-examples-without-backstage.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes", "KubeVirt", "Sovereignty", "Multi-tenancy", "Platform Engineering"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Kubernetes (distribution per op model)", correct: true }
       explanation: "Kubernetes is named as the de facto orchestration layer. Distribution choice (Cozystack for multi-tenant plus virtualization, OpenShift for enterprise commercial, vanilla for simplicity, Talos as the OS underneath) depends on operational model."
 ---
+
 
 Most articles about internal developer platforms in 2026 are still framed as "how to use Backstage." That framing is wrong. Backstage is a useful tool when the catalog discipline is mature; it is not the platform. The platform sits underneath, and the architecture decisions that matter are made there.
 

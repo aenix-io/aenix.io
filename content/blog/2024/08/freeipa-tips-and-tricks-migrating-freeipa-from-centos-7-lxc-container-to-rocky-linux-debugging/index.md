@@ -2,6 +2,7 @@
 title: "FreeIPA tips and tricks: migrating FreeIPA from CentOS 7 LXC container to Rocky Linux, debugging…"
 description: "Recently, I had the task of updating an outdated FreeIPA in a large enterprise. This FreeIPA instance was installed in an LXC container…"
 date: "2024-08-01"
+cover_image: "/img/blog/covers/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging.png"
 author: "Timur Tukaev"
 type: "article"
 topics: ["Proxmox", "Cozystack", "Migration", "Backup and DR", "FreeIPA"]
@@ -45,6 +46,7 @@ quiz:
         - { text: "kinit admin && klist -e -f", correct: false }
       explanation: "`getcert list` (from certmonger) gives the canonical view of FreeIPA-tracked certs. Grep narrows to the ID/status/path/expiry lines. ipa-getcert resubmit -i <ID> then drives the renewal."
 ---
+
 
 ---
 

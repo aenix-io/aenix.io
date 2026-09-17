@@ -1,7 +1,8 @@
 ---
 title: "Smart grid platform architecture — IT/OT convergence, edge, and AI on customer-controlled infrastructure"
 description: "A smart-grid architectural reference for energy operators: IT/OT boundaries that work, NIS2 controls, AI on grid-operational data, and legacy migration."
-date: "2026-05-01"
+date: "2026-05-26"
+cover_image: "/img/blog/covers/smart-grid-platform-architecture-it-ot.png"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "AI/ML", "GPU", "Compliance"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Vendor-roadmap risk dominates decade horizons", correct: true }
       explanation: "The long horizon argument: Apache 2.0 license + CNCF Project community governance fits decade-plus operational planning. Grid hardware refresh cycles are decade-scale, so vendor roadmap risk — the dominant failure mode over 10–20 years — is minimised because the community can outlive any single vendor."
 ---
+
 
 The energy sector's infrastructure-modernization conversation in 2026 sits at an unusual intersection: NIS2 compliance pressure, AI-driven grid-optimization demand, IT/OT convergence reality, edge compute requirements at substation density, and the irreducible operational fact that grid hardware refresh cycles are measured in decades. Few other sectors face this combination simultaneously.
 

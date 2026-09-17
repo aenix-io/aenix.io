@@ -1,7 +1,8 @@
 ---
 title: "AI Platform — when sustained-inference economics beat hyperscaler GPU"
 description: "GPU economics for sustained inference, multi-tenant GPU scheduling, and when dedicated AI infra pays back."
-date: 2026-05-11
+date: "2026-05-01"
+cover_image: "/img/blog/covers/ai-ml-edition-sustained-gpu-economics.png"
 author: "Aenix Team"
 type: "article"
 topics: ["AI/ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
@@ -44,6 +45,7 @@ quiz:
 aliases:
   - /blog/2026/05/build-ai-platform-for-startups/
 ---
+
 
 The "should we run our own AI infrastructure?" conversation has shifted
 in 2026. For sporadic experimentation, hyperscaler GPU on demand is

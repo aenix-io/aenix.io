@@ -1,7 +1,8 @@
 ---
 title: "Cloud Readiness Assessment — what 14 days actually cover (2026 methodology)"
 description: "A 14-day platform readiness assessment run as four parallel workstreams: how the days sequence, what the report contains, and pitfalls we learned to avoid."
-date: "2026-05-01"
+date: "2026-05-04"
+cover_image: "/img/blog/covers/cloud-readiness-assessment-14-day-methodology.png"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Nutanix", "Kubernetes", "Sovereignty", "Cloud Repatriation"]
@@ -48,6 +49,7 @@ quiz:
 aliases:
   - /blog/2026/05/vmware-migration-assessment-detailed/
 ---
+
 
 Most cloud readiness assessments on the market still come from the early-2010s mold: a hyperscaler-aligned consultancy maps your workloads against a reference architecture and produces a migration plan to that hyperscaler. The output reads like a template because it is one.
 

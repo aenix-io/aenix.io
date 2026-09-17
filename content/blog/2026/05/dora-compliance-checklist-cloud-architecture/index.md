@@ -1,7 +1,8 @@
 ---
 title: "A DORA compliance checklist for cloud infrastructure — framework, controls, and what to demonstrate in 2026"
 description: "A working DORA checklist for cloud architecture: what Articles 21 and 28 require, where current setups fall short, and how to assess where you stand."
-date: "2026-05-01"
+date: "2026-05-10"
+cover_image: "/img/blog/covers/dora-compliance-checklist-cloud-architecture.png"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance"]
@@ -47,6 +48,7 @@ quiz:
 aliases:
   - /blog/2026/05/dora-compliance-checklist-detailed/
 ---
+
 
 The Digital Operational Resilience Act (DORA) has been in force since 17 January 2025. Across the EU's financial sector — banks, insurers, investment firms, payment institutions, crypto-asset service providers, and the third-party ICT providers serving them — DORA replaced a fragmented patchwork of supervisory expectations with a single, directly applicable regulation.
 

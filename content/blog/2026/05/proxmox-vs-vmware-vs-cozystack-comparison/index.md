@@ -1,7 +1,8 @@
 ---
 title: "Proxmox vs VMware vs Cozystack — a 2026 comparison for the post-Broadcom era"
 description: "Proxmox VE, VMware after Broadcom, and Cozystack compared by architecture and use case, with a feature matrix and the realistic migration paths."
-date: "2026-05-01"
+date: "2026-05-24"
+cover_image: "/img/blog/covers/proxmox-vs-vmware-vs-cozystack-comparison.png"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Proxmox", "Kubernetes", "Cozystack", "Sovereignty", "Multi-tenancy"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "The Proxmox community forbids it", correct: false }
       explanation: "Proxmox → VMware migration is rare in 2026 because the economics rarely justify the reverse move post-Broadcom — VMware's subscription pricing makes the move uneconomical for most organizations."
 ---
+
 
 The post-Broadcom virtualization market has three main open-source-friendly options: Proxmox VE, Cozystack, and (less common) XCP-ng. Each has a different architectural target. Picking the right one is mostly a function of scale and use case.
 

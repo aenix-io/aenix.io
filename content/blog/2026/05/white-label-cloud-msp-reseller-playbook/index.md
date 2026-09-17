@@ -1,7 +1,8 @@
 ---
 title: "White-label cloud playbook — for MSPs and resellers in 2026"
 description: "Architecture and reseller economics for launching a white-label cloud under your own brand, and how the engagement is structured."
-date: "2026-05-01"
+date: "2026-05-31"
+cover_image: "/img/blog/covers/white-label-cloud-msp-reseller-playbook.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Hosting", "Observability"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Only the header logo image swap", correct: false }
       explanation: "Branded Cozystack Dashboard: MSP can customize colors, logo, domain, and service catalog options. MSPs can also curate which services to expose to customers (e.g., hide Kafka if MSP doesn't support it)."
 ---
+
 
 ## Why white-label cloud matters for MSPs
 

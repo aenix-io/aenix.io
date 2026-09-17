@@ -1,7 +1,8 @@
 ---
 title: "Developer Self-Service — the cost of developer drag, and what an internal developer platform actually pays back"
 description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
-date: 2026-05-11
+date: "2026-05-13"
+cover_image: "/img/blog/covers/idp-edition-developer-velocity-economics.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "Under 50 engineers in a single product team", correct: true }
       explanation: "The 'Poor fit' section lists under 50 engineers with a single product team (DevOps-only is the right fit) and hyperscaler-managed-meets-needs with no sovereignty pressure as the two poor-fit cases."
 ---
+
 
 The "should we invest in a platform team?" conversation tends to stall
 at one of two places: either the CFO can't see the economic case ("we

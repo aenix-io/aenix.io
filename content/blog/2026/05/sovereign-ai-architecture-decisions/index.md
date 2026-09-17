@@ -1,7 +1,8 @@
 ---
 title: "Seven decisions when designing sovereign AI architecture"
 description: "Seven architecture decisions behind a sovereign AI stack, how they interlock, and the combinations that recur in real deployments."
-date: "2026-05-01"
+date: "2026-05-27"
+cover_image: "/img/blog/covers/sovereign-ai-architecture-decisions.png"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "AI/ML", "Multi-tenancy", "Financial Services"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "They interlock — earlier ones shape later", correct: true }
       explanation: "The seven aren't independent. Trigger profile shapes regulatory scope; regulatory scope shapes sovereignty controls; sovereignty controls shape operational model; operational model affects model selection feasibility. The decision guide walks through them in that order."
 ---
+
 
 ## The seven decisions
 

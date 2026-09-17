@@ -1,13 +1,15 @@
 ---
 title: "Launch a customer-facing cloud product — playbook for hosting providers, telcos, and regional operators"
 description: "The six layers of a customer-facing cloud product, the architectural decisions specific to public cloud, and where launches stumble commercially."
-date: "2026-05-01"
+date: "2026-05-17"
+cover_image: "/img/blog/covers/launch-customer-facing-cloud-product.png"
 author: "Aenix Team"
 type: "announcement"
 topics: ["VMware", "Kubernetes", "Sovereignty", "AI/ML", "Multi-tenancy", "Hosting"]
 language: "en"
 companion_landing: "/services/public-cloud-builder/"
 ---
+
 
 Regional and specialty cloud is having a moment in 2026. Hyperscaler economics, sovereignty pressure, and post-Broadcom market dynamics have all opened space for non-hyperscaler cloud products that didn't make sense to launch 5 years ago. Regional telco sovereign cloud product launches (Central Asia, MENA, EU member states), QazCloud + Clever Cloud's sovereign AI ecosystem, and various EU-member-state-specific sovereign cloud products are visible examples. Many more are in stealth or early stages.
 

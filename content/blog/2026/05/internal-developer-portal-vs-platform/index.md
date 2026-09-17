@@ -1,7 +1,8 @@
 ---
 title: "Internal developer portal vs internal developer platform — and Backstage's place in 2026"
 description: "Portal and platform are not the same thing. Where Backstage actually fits, what the alternatives are, and how to decide whether you need a portal at all."
-date: "2026-05-01"
+date: "2026-05-14"
+cover_image: "/img/blog/covers/internal-developer-portal-vs-platform.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes", "Platform Engineering", "Compliance", "Observability"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Both layers are equal and interchangeable", correct: false }
       explanation: "The article's memorable framing: \"A platform without a portal still works. A portal without a platform is wallpaper.\" Capability stack vs UI/catalog layer — confusing them is why so many Backstage-first projects stall."
 ---
+
 
 The "IDP" acronym is overloaded. It means both:
 

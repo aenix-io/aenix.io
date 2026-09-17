@@ -1,7 +1,8 @@
 ---
 title: "Developer experience platforms — building self-service paths that actually get used"
 description: "The ten golden paths most worth building, the five characteristics that make them work, and the architectural decisions that shape self-service."
-date: "2026-05-01"
+date: "2026-05-09"
+cover_image: "/img/blog/covers/developer-experience-platform-self-service-paths.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "80% of cases; the rest goes through escape hatches", correct: true }
       explanation: "Pitfall 2 (too rigid): golden paths must serve 80% of cases; the remaining 20% need escape hatches. Without them, teams that have specialised needs route around the platform entirely."
 ---
+
 
 Most "developer experience" articles in 2026 stop at "use Backstage." That's not the answer; that's a tooling decision that comes after the architectural decisions. The architectural decisions determine whether self-service paths actually work.
 

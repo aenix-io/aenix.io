@@ -1,7 +1,8 @@
 ---
 title: "K-12 school district cloud infrastructure — when sovereignty matters more than convenience"
 description: "Why K-12 infrastructure differs from universities, when a district actually needs sovereign infrastructure, and the architecture pattern that fits."
-date: "2026-05-01"
+date: "2026-05-15"
+cover_image: "/img/blog/covers/k12-school-district-cloud-infrastructure.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "Multi-tenancy", "Compliance"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Each district runs an independent stack from scratch", correct: false }
       explanation: "For consortia: federated multi-district platform with shared core, per-district isolation, joint procurement, distributed operations. This pools investment without sacrificing district-level data control."
 ---
+
 
 ## Why K-12 is different from universities
 

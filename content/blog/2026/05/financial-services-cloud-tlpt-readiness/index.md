@@ -1,7 +1,8 @@
 ---
 title: "Financial-services cloud platforms — what TLPT readiness actually looks like in 2026"
 description: "What TLPT readiness under DORA actually looks like in 2026 for platform engineers at banks, insurers, and payment institutions facing a real supervisor cycle."
-date: 2026-05-11
+date: "2026-05-11"
+cover_image: "/img/blog/covers/financial-services-cloud-tlpt-readiness.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Financial Services", "DORA", "Compliance", "Sovereignty", "Cozystack"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "Participate in TLPT preparation and post-mortems", correct: false }
       explanation: "Phase 4 explicitly states: 'No kubectl access to customer production cluster — operates via GitOps PR review only. Critical for bank governance.'"
 ---
+
 
 The DORA conversation at most financial-services organisations split
 into two halves in 2024-2025. The first half — governance, policy,
