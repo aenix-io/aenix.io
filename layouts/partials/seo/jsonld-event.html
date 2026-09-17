@@ -1,39 +1,120 @@
 {{/*
   JSON-LD Event — workshop / event landing pages (page_type: event-landing).
 
-  Driven by an `event:` frontmatter map:
+  Two modes:
 
-    event:
-      name: "..."                  # optional, defaults to .Title
-      start_date: "2026-08-19"     # REQUIRED to emit — no schema until the real
-      end_date: "2026-08-19"       #   date is known (never publish guess dates)
-      start_time: "10:00"          # optional, local time
-      timezone: "+05:00"           # optional UTC offset, appended to start_time
-      city: "Tashkent"
-      country: "UZ"                # ISO 3166-1 alpha-2
-      venue: "..."                 # optional; omitted → city-level Place only
-      language: "ru"               # inLanguage of the event itself
-      capacity: 20                 # optional maximumAttendeeCapacity
-      price: 0                     # optional; 0 → free offer
-      registration_url: "..."      # optional; defaults to page URL
+  1. Single event — driven by an `event:` frontmatter map. Emitted only when
+     `event.start_date` is present (a placeholder page ships without Event
+     schema rather than with fabricated dates):
+
+       event:
+         name: "..."                 # optional, defaults to .Title
+         start_date: "2026-08-19"    # REQUIRED to emit
+         end_date: "2026-08-19"      # optional, defaults to start_date
+         start_time: "10:00"         # optional, local time
+         timezone: "+05:00"          # optional UTC offset appended to start_time
+         city: "Tashkent"
+         country: "UZ"               # ISO 3166-1 alpha-2
+         venue: "..."                # optional
+         language: "ru"
+         capacity: 20                # optional
+         price: 0                    # optional; 0 → free offer
+         registration_url: "..."     # optional; defaults to page URL
+
+  2. Multi-city tour — when the page carries a `cities:` list whose entries
+     include an ISO `date_iso`, one EducationEvent is emitted per city inside
+     an @graph. Tour events are hybrid (in person + online). Each city entry:
+
+       cities:
+         - city: "Paris"
+           country_code: "FR"        # ISO 3166-1 alpha-2
+           date_iso: "2026-10-19T10:00:00+02:00"
+           end_iso: "2026-10-19T14:00:00+02:00"   # optional
+           venue: "..."              # optional; falls back to city
+           form: "..."               # used as registration_url when present
 
   Performer/organizer are fixed: Timur Tukaev / Aenix.
-  Emitted only when event.start_date is present — a placeholder page ships
-  without Event schema rather than with fabricated dates.
 */}}
 {{- $e := .Params.event | default dict -}}
+{{- $price := index $e "price" -}}
+{{- $lang := index $e "language" -}}
+{{- $name := index $e "name" | default .Title -}}
+
+{{/* collect tour cities that carry an ISO date */}}
+{{- $tour := slice -}}
+{{- range .Params.cities -}}
+  {{- if index . "date_iso" -}}{{- $tour = $tour | append . -}}{{- end -}}
+{{- end -}}
+
+{{- if gt (len $tour) 0 -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+  {{- range $i, $c := $tour -}}
+  {{- if $i }},{{ end }}
+  {{- $start := index $c "date_iso" -}}
+  {{- $end := index $c "end_iso" | default $start -}}
+  {{- $venue := index $c "venue" -}}
+  {{- $reg := index $c "form" | default (printf "%s#register" $.Permalink) -}}
+  {
+    "@type": "EducationEvent",
+    "name": {{ printf "%s — %s" $name $c.city }},
+    "description": {{ $.Description }},
+    "url": "{{ $.Permalink }}",
+    "startDate": {{ $start }},
+    "endDate": {{ $end }},
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+    {{- with $lang }}
+    "inLanguage": {{ . }},
+    {{- end }}
+    "location": [
+      {
+        "@type": "Place",
+        "name": {{ or $venue $c.city }},
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": {{ $c.city }}{{ with index $c "country_code" }},
+          "addressCountry": {{ . }}{{ end }}
+        }
+      },
+      {
+        "@type": "VirtualLocation",
+        "url": "{{ $.Permalink }}#register"
+      }
+    ],
+    {{- if ne $price nil }}
+    "offers": {
+      "@type": "Offer",
+      "price": {{ $price }},
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": {{ $reg }}
+    },
+    {{- end }}
+    "performer": {
+      "@type": "Person",
+      "name": "Timur Tukaev",
+      "jobTitle": "Cozystack maintainer, community manager, Aenix co-founder"
+    },
+    "organizer": { "@id": "{{ "/#org" | absURL }}" }
+  }
+  {{- end }}
+  ]
+}
+</script>
+{{- else -}}
 {{- $start := index $e "start_date" -}}
 {{- if $start -}}
 {{- $startTime := index $e "start_time" -}}
 {{- $tz := index $e "timezone" | default "" -}}
 {{- $startISO := cond (ne $startTime nil) (printf "%sT%s:00%s" $start $startTime $tz) $start -}}
 {{- $end := index $e "end_date" | default $start -}}
-{{- $name := index $e "name" | default .Title -}}
 {{- $city := index $e "city" | default "" -}}
 {{- $country := index $e "country" | default "" -}}
 {{- $venue := index $e "venue" -}}
 {{- $capacity := index $e "capacity" -}}
-{{- $price := index $e "price" -}}
 {{- $reg := index $e "registration_url" | default .Permalink -}}
 <script type="application/ld+json">
 {
@@ -46,7 +127,7 @@
   "endDate": {{ $end }},
   "eventStatus": "https://schema.org/EventScheduled",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-  {{- with index $e "language" }}
+  {{- with $lang }}
   "inLanguage": {{ . }},
   {{- end }}
   {{- if $capacity }}
@@ -78,4 +159,5 @@
   "organizer": { "@id": "{{ "/#org" | absURL }}" }
 }
 </script>
+{{- end -}}
 {{- end -}}
