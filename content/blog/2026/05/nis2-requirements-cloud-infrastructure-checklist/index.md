@@ -1,7 +1,8 @@
 ---
 title: "NIS2 requirements for cloud infrastructure — a checklist for in-scope entities in 2026"
 description: "NIS2 Articles 21, 23, 28 and 12 mapped to concrete cloud architecture controls, with a working checklist and the architectural failures that recur."
-date: "2026-05-01"
+date: "2026-05-18"
+cover_image: "/img/blog/covers/nis2-requirements-cloud-infrastructure-checklist.png"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Financial Services", "Compliance"]
@@ -43,6 +44,7 @@ quiz:
 aliases:
   - /blog/2026/05/nis2-compliance-checklist-essential-entities/
 ---
+
 
 The Network and Information Security Directive 2 (Directive (EU) 2022/2555 — NIS2) replaced the original NIS Directive in 2023. Transposition into national law was due by 17 October 2024. Some EU member states completed transposition on time; others ran late. Either way, by mid-2025 NIS2 is operational across the EU, with competent authorities in each member state and the European Cybersecurity Agency (ENISA) playing a coordination role.
 

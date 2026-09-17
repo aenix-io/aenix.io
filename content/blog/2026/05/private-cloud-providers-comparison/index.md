@@ -1,7 +1,8 @@
 ---
 title: "Private cloud providers and platforms — a 2026 comparison"
 description: "Open-source platforms, commercial stacks, sovereign hyperscaler regions and regional providers compared — plus the migration paths between them."
-date: "2026-05-01"
+date: "2026-05-22"
+cover_image: "/img/blog/covers/private-cloud-providers-comparison.png"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Kubernetes", "Cozystack"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Operationally simple, integrated stack (HCI appliance)", correct: true }
       explanation: "Nutanix (AHV proprietary KVM-based + Files + Volumes + Era for databases): operationally simple, integrated stack. Limits: closed source, appliance lock-in, less flexibility than open alternatives."
 ---
+
 
 The private cloud landscape has shifted significantly in the last 3 years. Broadcom-induced VMware migrations, sovereignty mandates, AI workload economics, and FinOps pressure have all reshaped what "private cloud" means and what providers serve it.
 

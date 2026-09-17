@@ -1,7 +1,8 @@
 ---
 title: "OpenStack vs Cozystack — modernization options for OpenStack operators in 2026"
 description: "Where OpenStack still wins, where the operational pressure comes from, and the modernization paths available to OpenStack-trained teams."
-date: "2026-05-01"
+date: "2026-05-21"
+cover_image: "/img/blog/covers/openstack-vs-cozystack-modernization.png"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenStack", "Kubernetes", "Cozystack", "Sovereignty", "Migration"]
@@ -43,6 +44,7 @@ quiz:
         - { text: "5+ years elapsed (long-tail parallel-platform operation)", correct: false }
       explanation: "For mid-size (50-500 hosts): 14-28 day assessment + 1-3 months Cozystack foundation + 4-12 months migration cohorts + OpenStack decommission. Total: 6-15 months depending on scale."
 ---
+
 
 OpenStack remains widely deployed in telecom and government infrastructure. It also faces structural pressure: shrinking pool of OpenStack engineers, operational complexity that grows with deployment age, and competition from Kubernetes-native alternatives that didn't exist when OpenStack was designed.
 

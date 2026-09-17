@@ -1,7 +1,8 @@
 ---
 title: "Telco cloud modernization in 2026 — from legacy NFV to Kubernetes-native edge"
 description: "How tier-1 and tier-2 telecom operators modernize legacy NFV environments into Kubernetes-native sovereign cloud platforms — a guide for architects."
-date: 2026-05-11
+date: "2026-05-28"
+cover_image: "/img/blog/covers/telco-cloud-edge-nfv-modernization.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Telco", "Sovereignty", "Multi-tenancy", "Cozystack", "Cloud", "AI/ML"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "6-12 months phased programme", correct: false }
       explanation: "The article states tier-1 telco modernization runs 18-36+ months, phased across strategic engagement, IT cloud, AI/data lake, edge, and NFV modernization tracks."
 ---
+
 
 The telco cloud conversation in 2026 sits at an unusual intersection
 of pressures that no other vertical faces simultaneously. NFV

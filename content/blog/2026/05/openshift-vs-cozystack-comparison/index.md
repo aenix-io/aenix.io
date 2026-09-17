@@ -1,7 +1,8 @@
 ---
 title: "OpenShift vs Cozystack — comparison for KubeVirt-based platform decisions"
 description: "Two KubeVirt-based platforms compared: shared foundations, where they genuinely differ, when OpenShift wins, and what migration between them involves."
-date: "2026-05-01"
+date: "2026-05-19"
+cover_image: "/img/blog/covers/openshift-vs-cozystack-comparison.png"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "3-9 months elapsed for a mid-size deployment", correct: true }
       explanation: "Both KubeVirt-based, so VM-level migration is straightforward (image-level compatibility). Architectural delta is in multi-tenancy model, networking, storage, operational tooling. Realistic migration timeline: 3-9 months for mid-size deployment."
 ---
+
 
 OpenShift Virtualization (Red Hat) and Cozystack (Ænix / CNCF Project) are the two most-mature KubeVirt-based platforms in 2026. They share architectural foundations but differ in commercial model, operational footprint, and vendor relationship.
 

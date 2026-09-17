@@ -1,7 +1,8 @@
 ---
 title: "How to build a sovereign cloud — playbook for EU and Central Asia in 2026"
 description: "What sovereignty actually means in practice, the frameworks that define it, and the architectural patterns for a sovereign cloud in the EU and Central Asia."
-date: "2026-05-01"
+date: "2026-05-03"
+cover_image: "/img/blog/covers/build-sovereign-cloud-eu-and-central-asia.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup and DR", "Observability"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "No real sovereignty guarantees, just marketing", correct: false }
       explanation: "Pattern 2: cloud-provider hardware + sovereign jurisdiction + customer-controlled keys + transparent supply chain. Operational simplification with substantive sovereignty. Right for most regulated enterprise workloads. Pattern 1 (full on-prem) is for the most sensitive workloads."
 ---
+
 
 Sovereign cloud is no longer a niche topic. EU member-state mandates, Kazakhstan procurement-portal sovereignty clauses, and several APAC initiatives have made sovereignty a market category. Hyperscaler "sovereign" regions try to address this but face structural limitations (US-vendor relationship, control-plane dependencies).
 

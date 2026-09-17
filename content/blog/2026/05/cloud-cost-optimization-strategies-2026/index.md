@@ -1,7 +1,8 @@
 ---
 title: "Cloud cost optimization strategies in 2026 — a practical guide for engineering and finance"
 description: "Eight cloud cost optimization strategies, from commitment-realization gaps to Kubernetes right-sizing — and the point where configurational tuning stops paying."
-date: "2026-05-01"
+date: "2026-05-03"
+cover_image: "/img/blog/covers/cloud-cost-optimization-strategies-2026.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["Kubernetes", "Cloud Repatriation", "Financial Services", "Cost Optimization"]
@@ -43,6 +44,7 @@ quiz:
         - { text: "After the first internal cost audit finishes", correct: false }
       explanation: "Configurational first, captures those savings, then evaluate architectural moves. Skipping configurational leaves money on the table; skipping architectural means optimisation hits a structural ceiling and the operator is stuck."
 ---
+
 
 Most cloud-cost articles are vendor-shaped. Either they're written by FinOps tool vendors (so the answer is always "buy our tool") or by hyperscaler partners (so the answer is always "tune within the hyperscaler"). The neutral version of this conversation looks different.
 

@@ -1,7 +1,8 @@
 ---
 title: "OpenStack migration — a cohort-based playbook for moving to Cozystack in 2026"
 description: "Cohort-based playbook for migrating production OpenStack to Cozystack: component mapping, image conversion, networking redesign, handover, and timeline."
-date: 2026-05-11
+date: "2026-05-20"
+cover_image: "/img/blog/covers/openstack-migration-cozystack-cohort-playbook.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["OpenStack", "Cozystack", "Migration", "Multi-tenancy", "Kubernetes"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "Reading Kubernetes RBAC docs (Roles and ClusterRoles)", correct: false }
       explanation: "OpenStack operators are used to imperative APIs. Cozystack expects GitOps for production changes — a culture shift, not just a tool shift. Engineers need 4-8 weeks focused training plus 3-6 months practice to internalise GitOps discipline."
 ---
+
 
 OpenStack remains widely deployed in telecom and large-enterprise
 infrastructure. Modernization is not a one-size-fits-all conversation:

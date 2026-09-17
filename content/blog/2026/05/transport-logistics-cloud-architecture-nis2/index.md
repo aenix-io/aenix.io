@@ -1,7 +1,8 @@
 ---
 title: "Transport and logistics cloud architecture — NIS2, AI, edge in 2026"
 description: "A three-tier architecture for transport and logistics, the NIS2 controls that apply to the sector, and where AI workloads fit."
-date: "2026-05-01"
+date: "2026-05-29"
+cover_image: "/img/blog/covers/transport-logistics-cloud-architecture-nis2.png"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Cozystack", "Sovereignty", "AI/ML", "GPU"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "Chains run 5+ sub-contracting levels deep", correct: true }
       explanation: "Logistics chains often have 5+ levels of sub-contracting (carrier → forwarder → broker → handler → terminal operator). NIS2 (and DORA) expect supplier transparency to second hop — for logistics, even that is unusually hard, and beyond second hop is often impossible without dedicated traceability tooling."
 ---
+
 
 ## Three pressures
 

@@ -3,14 +3,15 @@ title: "Ænix Billing — per-minute usage-based billing for Managed PostgreSQL,
 description: "Aenix Billing brings AWS-style per-minute, usage-based billing to managed Postgres, Redis, Kafka and ClickHouse on Cozystack via a Kubernetes-native API."
 slug: "aenix-billing-per-minute-managed-services-cozystack"
 date: "2026-05-13"
+cover_image: "/img/blog/covers/aenix-billing-per-minute-managed-services-cozystack.png"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "Multi-tenancy", "Platform Engineering", "Billing"]
 language: "en"
 companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Public Cloud Platform →"
-cover_image: ""
 ---
+
 
 {{< placeholder-image width="1200" height="630" label="Ænix Billing — cover image (1200×630)" >}}
 

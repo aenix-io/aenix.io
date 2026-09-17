@@ -1,7 +1,8 @@
 ---
 title: "Hosting provider platform modernization — from VPS to cloud product"
 description: "Architectural starting point, migration sequencing, and unit economics for hosting providers modernizing onto a Kubernetes-native multi-tenant platform."
-date: "2026-05-01"
+date: "2026-05-12"
+cover_image: "/img/blog/covers/hosting-provider-platform-modernization.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU", "Multi-tenancy"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "VMs, Kubernetes, managed databases, S3, and GPU", correct: true }
       explanation: "Most hosting providers in 2026: bare-metal/VPS, per-customer manual provisioning, limited service catalog (VMs maybe managed DBs), custom or WHMCS billing. Target: Kubernetes-native multi-tenant Cozystack, self-service portal, expanded catalog (VMs/K8s/managed DBs/S3/GPU), WHMCS-integrated billing, per-customer observability and audit."
 ---
+
 
 ## The hosting provider opportunity
 

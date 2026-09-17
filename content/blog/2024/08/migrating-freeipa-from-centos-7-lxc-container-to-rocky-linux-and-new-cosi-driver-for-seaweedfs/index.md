@@ -2,6 +2,7 @@
 title: "Migrating FreeIPA from CentOS 7 LXC container to Rocky Linux and new COSI driver for SeaweedFS"
 description: "Hi there! We are glad to share our last updates."
 date: "2024-08-01"
+cover_image: "/img/blog/covers/migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-and-new-cosi-driver-for-seaweedfs.png"
 author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Migration", "Storage", "FreeIPA"]
@@ -41,6 +42,7 @@ quiz:
         - { text: "FreeIPA migration from CentOS 7 LXC to Rocky Linux", correct: true }
       explanation: "The first part of the post points readers to a long-form FreeIPA migration article by Andrei Kvapil — covering an LXC container on CentOS 7 that had been non-functional for several months, debugging certificates, and migration to Rocky Linux."
 ---
+
 
 ---
 

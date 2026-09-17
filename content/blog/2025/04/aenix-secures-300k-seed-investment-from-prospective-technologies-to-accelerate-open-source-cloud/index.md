@@ -2,12 +2,14 @@
 title: "Ænix Secures $300K Seed Investment from Prospective Technologies to Accelerate Open-Source Cloud…"
 description: "Ænix, the company behind the open-source Cozystack platform, today announced a $300,000 seed investment round by Prospective Technologies…"
 date: "2025-04-11"
+cover_image: "/img/blog/covers/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud.png"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Sovereignty", "AI/ML", "Financial Services", "CNCF", "Compliance"]
 language: "en"
 source_url: "https://medium.com/@tym83/%C3%A6nix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud-4f4ea88b08c1"
 ---
+
 
 ---
 

@@ -1,7 +1,8 @@
 ---
 title: "Public-sector sovereign cloud — from procurement framework to running platform"
 description: "How procurement leads and IT directors turn sovereignty mandates into a running cloud platform."
-date: 2026-05-11
+date: "2026-05-25"
+cover_image: "/img/blog/covers/public-sector-sovereign-cloud-procurement.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Public Sector", "Sovereignty", "Compliance", "NIS2", "Cozystack"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "6-12 months phased rollout", correct: false }
       explanation: "The post specifies a 12-36 month total timeline from project start to certified production — substantially longer than private-sector engagements because of certification overhead, but compounding into annual recertification afterwards."
 ---
+
 
 The public-sector sovereign-cloud conversation in 2026 is more
 fragmented than in financial services. There's no single regulation

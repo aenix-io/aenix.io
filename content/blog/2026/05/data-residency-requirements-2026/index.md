@@ -1,7 +1,8 @@
 ---
 title: "Data residency requirements in 2026 — a practical guide for cloud architecture"
 description: "What data residency actually requires at control level, why most cloud setups fail on inspection, and the architectural patterns that hold up."
-date: "2026-05-01"
+date: "2026-05-08"
+cover_image: "/img/blog/covers/data-residency-requirements-2026.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Compliance", "Backup and DR"]
@@ -45,6 +46,7 @@ quiz:
         - { text: "Outsourcing residency to a managed-service provider", correct: false }
       explanation: "The architecture answer is per-jurisdiction tenant boundaries with explicit cross-border controls — the residency landscape is a matrix of jurisdictions with overlapping and sometimes contradictory requirements, not a single rule."
 ---
+
 
 Most coverage of data residency stops at "production storage is in the right region." That's the easy part. The hard part is everywhere else — backups, observability data, CI/CD artifacts, managed-service telemetry, cross-border replication, sub-contractor processing — and it's where regulator audits increasingly land.
 

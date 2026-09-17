@@ -1,7 +1,8 @@
 ---
 title: "SRE as a product discipline — what an SRE engagement actually changes"
 description: "Embed SRE in product teams, centralize it as a function, or buy an engagement — what each delivers and how to measure it."
-date: 2026-05-11
+date: "2026-05-28"
+cover_image: "/img/blog/covers/sre-engagement-reliability-as-product-discipline.png"
 author: "Aenix Team"
 type: "article"
 topics: ["DevOps", "Platform Engineering", "Observability", "Cozystack"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "When platform engineering already exists in-house", correct: false }
       explanation: "Without executive backing for the discipline shift, SRE engagement degrades to incident response training — helpful but not what Aenix sells. Platform engineering existing is actually a strong-fit signal."
 ---
+
 
 SRE — Site Reliability Engineering — is one of the most-adopted and
 most-misunderstood engineering disciplines of the past decade. Most

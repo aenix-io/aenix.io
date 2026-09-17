@@ -1,7 +1,8 @@
 ---
 title: "Reverse cloud migration — a practical playbook for leaving public cloud in 2026"
 description: "A five-step cloud repatriation playbook, the pitfalls that recur, when not to repatriate, and how long a realistic move actually takes."
-date: "2026-05-01"
+date: "2026-05-26"
+cover_image: "/img/blog/covers/reverse-cloud-migration-playbook.png"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "Cloud Repatriation", "AI/ML", "GPU"]
@@ -44,6 +45,7 @@ quiz:
         - { text: "Choosing the wrong cutover season", correct: false }
       explanation: "A repatriation measured purely on cost reduction tends to under-invest in the platform work that makes the cost reduction sustainable. Two years in, the team has saved money but lost velocity — and that triggers a partial reverse-repatriation back into the hyperscaler."
 ---
+
 
 Most coverage of cloud repatriation is either ideological ("public cloud was always too expensive") or vendor-led ("buy our private-cloud appliance"). Neither helps the platform engineer or infrastructure lead who has to translate a board-level decision into running systems. The work below is what we actually do during an Ænix repatriation engagement.
 

@@ -1,7 +1,8 @@
 ---
 title: "VMware replacement after Broadcom: a guide for service providers, banks, and sovereign clouds in 2026"
 description: "What changed under Broadcom, a component-by-component VMware-to-Cozystack mapping, how the migration actually runs, and the FAQ engineers ask first."
-date: "2026-05-01"
+date: "2026-05-30"
+cover_image: "/img/blog/covers/vmware-replacement-after-broadcom.png"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["VMware", "Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU"]
@@ -45,6 +46,7 @@ quiz:
         - { text: "16-25 months regardless of estate size", correct: false }
       explanation: "The article separates two numbers deliberately. The first production cohort runs 6-12 weeks after kickoff, which is when the platform stops being a proof of concept; decommissioning the whole estate takes 7-10 months under 100 VMs and longer above that. Quoting the cohort figure as the estate figure is how migration plans slip."
 ---
+
 
 After Broadcom, the VMware bill stopped being predictable. Subscription-only licensing, mandatory VCF bundling, two-to-five-times price increases on renewal, and the end of perpetual licenses changed the math for every infrastructure team running VMware at scale. The result has been a documented wave of VMware replacement projects across service providers, banks, government, telecom, and AI/GPU operators evaluating how to exit VMware safely.
 

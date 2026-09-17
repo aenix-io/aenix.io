@@ -1,7 +1,8 @@
 ---
 title: "Enterprise platform engineering — org design, headcount, and the failure modes at 1,000+ engineers"
 description: "Org design, headcount math, governance, and recurring failure modes for building a platform-engineering function at 1,000+-engineer organisations."
-date: 2026-05-11
+date: "2026-05-11"
+cover_image: "/img/blog/covers/enterprise-platform-engineering-org-design.png"
 author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "Multi-tenancy", "DevOps"]
@@ -42,6 +43,7 @@ quiz:
         - { text: "Pattern C — hybrid shared substrate plus extensions", correct: false }
       explanation: "Pattern B fits organisations with strong BU autonomy — most established financial services and large industrial conglomerates. Pattern A fits clear engineering-domain boundaries (fintech, consumer-tech); Pattern C balances consistency with domain specialisation."
 ---
+
 
 Platform engineering at 200-500 engineers is mostly a question of
 "do it well" — define golden paths, build the IDP capability stack,
