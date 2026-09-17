@@ -1,0 +1,154 @@
+{{/*
+  workshop-city-forms — per-city registration. Renders a tab strip of the
+  tour cities; clicking a city reveals its own Pipedrive web form, loaded
+  lazily (as an iframe, on first activation) so the page doesn't pull 8–14
+  embeds at once.
+
+  Why an iframe and not the {{< pipedrive-form >}} loader embed: the official
+  Pipedrive loader scans the DOM once at execution and does not reliably
+  re-hydrate divs revealed after load, so a tab that opens later can render
+  empty (or double). A hosted-form iframe initialises independently and
+  on-demand, and — unlike the loader embed — carries its own query string, so
+  UTM params appended to the iframe src reach Pipedrive's own page and are
+  captured there. Per-city attribution also rides the form's hidden
+  `Tour city` field (see the Pipedrive setup prompt), so tracking survives
+  even if UTM is stripped.
+
+  Data-driven from the page's `cities:` frontmatter. Each city needs:
+    - city:  "Paris"
+    - date:  "Mon, 19 Oct 2026, 10:00–14:00 CEST"
+    - form:  "https://webforms.pipedrive.com/f/..."   # per-city Pipedrive URL
+
+  Empty `form` → a graceful "registration opens shortly" panel, so the page
+  ships before the Pipedrive forms exist and lights up as URLs are filled in.
+*/}}
+{{- $items := .Page.Params.cities -}}
+{{- $region := .Page.Params.region_slug | default "eu" -}}
+{{- if $items -}}
+<div class="ws-cityforms" data-ws-cityforms>
+  <div class="ws-cityforms__tabs" role="tablist" aria-label="Choose your city">
+    {{- range $i, $c := $items -}}
+    {{- $slug := $c.city | urlize -}}
+    <button class="ws-cityforms__tab{{ if eq $i 0 }} is-active{{ end }}"
+            role="tab" type="button"
+            id="reg-tab-{{ $slug }}"
+            aria-controls="reg-panel-{{ $slug }}"
+            aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+            tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}"
+            data-ws-tab="{{ $slug }}">
+      <span class="ws-cityforms__tab-city">{{ $c.city }}</span>
+      <span class="ws-cityforms__tab-date">{{ $c.date }}</span>
+    </button>
+    {{- end -}}
+  </div>
+
+  {{- range $i, $c := $items -}}
+  {{- $slug := $c.city | urlize -}}
+  {{- $utm := printf "?utm_source=aenix&utm_medium=landing&utm_campaign=cozystack-tour-2026-%s&utm_content=%s" $region $slug -}}
+  <div class="ws-cityforms__panel{{ if eq $i 0 }} is-active{{ end }}"
+       role="tabpanel"
+       id="reg-panel-{{ $slug }}"
+       aria-labelledby="reg-tab-{{ $slug }}"
+       data-ws-panel="{{ $slug }}"
+       {{ if ne $i 0 }}hidden{{ end }}>
+    <div class="ws-cityforms__head">
+      <span class="ws-cityforms__city">{{ $c.city }}</span>
+      <span class="ws-cityforms__date">{{ $c.date }}</span>
+    </div>
+    {{- with $c.form -}}
+    <div class="ws-cityforms__embed">
+      <iframe class="ws-cityforms__iframe" data-ws-formsrc="{{ . }}{{ $utm }}"
+              title="Register for the {{ $c.city }} workshop" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="ws-cityforms__note">Choose <strong>In&nbsp;person</strong> or <strong>Online</strong> right inside the form. You'll see a confirmation on screen, and we'll follow up by email with the venue and final details. The venue is being confirmed — registered attendees hear first.</p>
+    {{- else -}}
+    <div class="ws-cityforms__pending">
+      <strong>Registration for {{ $c.city }} opens shortly.</strong>
+      <span>The date is set ({{ $c.date }}); the sign-up form and venue are being finalised. Check back soon, or register for another city and tell us you'd prefer {{ $c.city }}.</span>
+    </div>
+    {{- end -}}
+  </div>
+  {{- end -}}
+</div>
+
+<script>
+(function () {
+  var root = document.currentScript.previousElementSibling;
+  while (root && !root.hasAttribute('data-ws-cityforms')) { root = root.previousElementSibling; }
+  if (!root) return;
+  var tabs = [].slice.call(root.querySelectorAll('[data-ws-tab]'));
+
+  function loadForm(panel) {
+    var f = panel.querySelector('iframe[data-ws-formsrc]');
+    if (!f || f.src) return; // no form, or already loaded
+    var src = f.getAttribute('data-ws-formsrc');
+    try {
+      var stored = (window.aenixUTM && window.aenixUTM.last && window.aenixUTM.last()) || {};
+      var url = new URL(src, window.location.origin);
+      Object.keys(stored).forEach(function (k) {
+        if (k.charAt(0) !== '_' && !url.searchParams.get(k)) url.searchParams.set(k, stored[k]);
+      });
+      src = url.toString();
+    } catch (e) { /* keep the plain src */ }
+    f.src = src;
+  }
+
+  function activate(slug, focus) {
+    tabs.forEach(function (t) {
+      var on = t.getAttribute('data-ws-tab') === slug;
+      t.classList.toggle('is-active', on);
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      if (on && focus) t.focus();
+    });
+    root.querySelectorAll('[data-ws-panel]').forEach(function (p) {
+      var on = p.getAttribute('data-ws-panel') === slug;
+      p.classList.toggle('is-active', on);
+      if (on) { p.removeAttribute('hidden'); loadForm(p); } else { p.setAttribute('hidden', ''); }
+    });
+  }
+
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { activate(t.getAttribute('data-ws-tab')); });
+    t.addEventListener('keydown', function (e) {
+      var n;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') n = tabs[(i + 1) % tabs.length];
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === 'Home') n = tabs[0];
+      else if (e.key === 'End') n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); activate(n.getAttribute('data-ws-tab'), true); }
+    });
+  });
+
+  // load the first (active) panel's form once it scrolls into view
+  var first = root.querySelector('.ws-cityforms__panel.is-active');
+  if (first) {
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { loadForm(first); io.disconnect(); } });
+      }, { rootMargin: '200px' });
+      io.observe(first);
+    } else { loadForm(first); }
+  }
+})();
+</script>
+
+<style>
+.ws-cityforms__tabs{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.5rem}
+.ws-cityforms__tab{display:flex;flex-direction:column;align-items:flex-start;gap:.15rem;padding:.6rem .9rem;border-radius:10px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04);color:inherit;cursor:pointer;font:inherit;text-align:left;transition:border-color .15s,background .15s}
+.ws-cityforms__tab:hover{border-color:rgba(1,165,255,.55)}
+.ws-cityforms__tab.is-active{border-color:#01a5ff;background:rgba(1,165,255,.12)}
+.ws-cityforms__tab:focus-visible{outline:2px solid #01a5ff;outline-offset:2px}
+.ws-cityforms__tab-city{font-weight:600}
+.ws-cityforms__tab-date{font-size:.8rem;opacity:.7}
+.ws-cityforms__panel{max-width:640px}
+.ws-cityforms__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1rem;margin-bottom:1rem}
+.ws-cityforms__city{font-size:1.35rem;font-weight:700}
+.ws-cityforms__date{opacity:.75}
+.ws-cityforms__iframe{width:100%;border:0;min-height:680px;background:transparent}
+.ws-cityforms__note{font-size:.85rem;opacity:.75;margin-top:1rem;line-height:1.5}
+.ws-cityforms__pending{display:flex;flex-direction:column;gap:.4rem;padding:1.5rem;border:1px dashed rgba(255,255,255,.25);border-radius:12px;background:rgba(255,255,255,.03)}
+.ws-cityforms__pending span{opacity:.75;font-size:.9rem}
+</style>
+{{- end -}}
