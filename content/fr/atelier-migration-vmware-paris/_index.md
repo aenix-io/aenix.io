@@ -75,7 +75,7 @@ cities:
     end_iso: "2026-10-19T14:00:00+02:00"
     country_code: "FR"
     venue: "MyCowork, salle BANKSY, 54 rue Greneta, 75002 Paris"
-    form: ""
+    form: "https://webforms.pipedrive.com/f/6aZJydtn9XAh1hYdsdfrDBDjbh0GAHzoe9yaYHBmTEuU8PbJ478Hh71IOnLimWFFlx"
     href: "#register"
 final_cta:
   heading: "Quittez VMware, et faites tourner l'IA et les GPU sur le même cloud"
@@ -105,7 +105,7 @@ faq:
   - q: "Combien cela coûte-t-il ?"
     a: "Rien : la participation est gratuite, sur inscription. Le nombre de places est volontairement limité pour que chacun ait du vrai temps au clavier et l'aide d'un assistant en cas de besoin."
   - q: "Puis-je suivre l'atelier en ligne plutôt que sur place ?"
-    a: "Oui. Il suffit de choisir « En ligne » dans le formulaire d'inscription. Vous disposez du même environnement de travail personnel et vous faites les exercices pratiques depuis votre bureau."
+    a: "Oui. Il suffit de choisir « Online » (en ligne) dans le formulaire d'inscription. Vous disposez du même environnement de travail personnel et vous faites les exercices pratiques depuis votre bureau."
   - q: "En quelle langue se déroule l'atelier ?"
     a: "L'atelier est animé en anglais, et les commandes comme les supports sont en anglais. Vos questions en français sont les bienvenues."
   - q: "J'utilise VMware mais je ne connais pas Kubernetes. Vais-je suivre ?"
