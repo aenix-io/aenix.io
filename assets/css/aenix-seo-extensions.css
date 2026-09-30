@@ -1864,6 +1864,10 @@ summary:focus-visible,
   line-height: 1.65;
 }
 .seo-direct-answer p { margin: 0; }
+/* A direct_answer split into several paragraphs (long ones read as one bold
+   wall otherwise) needs the inter-paragraph gap the rule above zeroes out. */
+.seo-direct-answer p + p,
+.answer-clamp__body > p + p { margin-top: 0.9rem; }
 /* Source marks the whole paragraph bold (citation emphasis);
    render it as calm lead text instead of a bold wall. */
 .seo-direct-answer strong {
@@ -1953,9 +1957,10 @@ summary:focus-visible,
 .page-content .faq-item summary h3,
 .faq-item summary h3 {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.45;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.011em;
   color: var(--aenix-text);
 }
 .faq-item summary:hover h3 { color: var(--aenix-primary); }
@@ -5183,6 +5188,7 @@ a.card--hub {
 
 .ws-hero,
 .ws-body .ws-section,
+.ws-register,
 .ws-final,
 .event-outro {
   /* Campaign CTA — cyan→blue→indigo, palette from Button.svg. A corner-anchored
@@ -5377,6 +5383,76 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* ==========================================================================
+   HERO BACKGROUND VARIANTS (`hero_bg:` in frontmatter)
+   The campaign landings all shared one backdrop — 48px grid plus a blue glow —
+   so a reader holding several campaign links could not tell them apart. A
+   variant swaps the motif and shifts the accent inside the same tokens; omit
+   `hero_bg` and a page keeps the house default untouched. One is defined so
+   far, for the GPU landing. Add the next one here when a page needs it.
+   ========================================================================== */
+
+/* --- beam: one wide shaft of light crossing the hero from the top left down
+       past the portrait, hot cyan-white where it enters and pooling into
+       violet where it exits, over a faint grid on a deep navy ground. The
+       layers are inset past the hero's edges so the blur has room and never
+       lands as a band on the boundary (the hero clips them). ------------- */
+.ws-hero--beam {
+  background:
+    radial-gradient(58% 52% at 88% 78%, rgba(102, 27, 225, 0.3), transparent 68%),
+    linear-gradient(180deg, #0a1121 0%, #080e1c 58%, #060a15 100%);
+}
+/* the grid, strongest across the middle where the shaft crosses it */
+.ws-hero--beam .ws-hero__bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 58px 58px;
+  -webkit-mask-image: radial-gradient(105% 90% at 62% 34%, #000 18%, transparent 82%);
+  mask-image: radial-gradient(105% 90% at 62% 34%, #000 18%, transparent 82%);
+}
+/* the shaft. A band rotated into the diagonal, not a conic sector: the band
+   keeps a crisp leading edge, where the sector's edge softened as it widened
+   and read as a corner glow rather than a beam. The gradient runs across the
+   band, so its stops ARE the beam's cross-section — hot white edge, blue
+   body, violet tail — and the mask fades it along its length. */
+.ws-hero--beam .ws-hero__bg-grid::after {
+  content: "";
+  position: absolute;
+  top: -70%; left: -32%;
+  width: 168%; height: 240%;
+  transform: rotate(29deg);
+  transform-origin: 50% 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0 25%,
+    rgba(214, 240, 255, 0.55) 26.6%,
+    rgba(110, 196, 255, 0.48) 29%,
+    rgba(1, 165, 255, 0.4) 34%,
+    rgba(1, 165, 255, 0.28) 44%,
+    rgba(88, 60, 235, 0.36) 56%,
+    rgba(102, 27, 225, 0.24) 68%,
+    transparent 84%
+  );
+  filter: blur(10px);
+  -webkit-mask-image: linear-gradient(90deg, transparent 2%, #000 22%, #000 72%, transparent 99%);
+  mask-image: linear-gradient(90deg, transparent 2%, #000 22%, #000 72%, transparent 99%);
+}
+/* where the shaft passes the portrait it pools into violet */
+.ws-hero--beam .ws-hero__bg-glow {
+  background:
+    radial-gradient(36% 42% at 76% 50%, rgba(102, 27, 225, 0.42), transparent 70%),
+    radial-gradient(26% 24% at 44% 6%, rgba(145, 219, 235, 0.14), transparent 72%);
+}
+/* rim light on the portrait so the dark suede reads against the shaft */
+/* No highlight behind the head: a tight radial there read as a circle drawn
+   on the backdrop rather than light. The shaft and the wide violet below do
+   the separating instead. */
+.ws-hero--beam .ws-hero__stage-glow {
+  background: radial-gradient(52% 44% at 44% 70%, rgba(102, 27, 225, 0.3), transparent 74%);
+  filter: blur(14px);
 }
 
 /* ==========================================================================
@@ -5866,6 +5942,30 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   -webkit-mask-image: radial-gradient(90% 90% at 50% 0%, #000, transparent 70%);
   mask-image: radial-gradient(90% 90% at 50% 0%, #000, transparent 70%);
 }
+/* The closing band and the registration form sit back to back since the form
+   moved to the end of the funnel. Left alone they stack two full section
+   paddings and meet at a hard edge, because .ws-final fades DOWN to #090d18
+   while .ws-register__bg starts again at the lighter --ws-navy — which read as
+   an empty stripe with a line through it. Continue the gradient instead, and
+   drop the doubled padding. */
+.ws-final + .ws-register { padding-top: 1.25rem; }
+.ws-final + .ws-register .ws-register__bg {
+  background:
+    radial-gradient(64% 78% at 50% 8%, rgba(1, 165, 255, 0.07), transparent 62%),
+    linear-gradient(180deg, #090d18, var(--ws-navy-deep));
+}
+.ws-final + .ws-register .ws-register__bg::after {
+  -webkit-mask-image: radial-gradient(85% 85% at 50% 22%, #000, transparent 72%);
+  mask-image: radial-gradient(85% 85% at 50% 22%, #000, transparent 72%);
+}
+.ws-final:has(+ .ws-register) { padding-bottom: 2.5rem; }
+/* and fade the closing band's own glow out before the join, so its decorative
+   layers stop gradually instead of ending on a line */
+.ws-final:has(+ .ws-register) .ws-final__bg {
+  -webkit-mask-image: linear-gradient(180deg, #000 58%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 58%, transparent 100%);
+}
+
 .ws-register__inner { max-width: 720px; text-align: center; }
 .ws-register .ws-h2 { margin-bottom: 0.75rem; }
 .ws-register__lead { margin: 0 auto 2rem; font-size: 1.0625rem; color: var(--aenix-text-muted); }
@@ -6234,6 +6334,105 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 .wb-cover__note-ic { display: inline-flex; flex: none; margin-top: 1px; color: var(--ws-violet); }
 .wb-cover__note-ic .ws-icon { width: 22px; height: 22px; }
 
+/* --- Three topologies (schematic cards above the cover grid) --- */
+.wb-topo {
+  list-style: none;
+  margin: 2.25rem 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.wb-topo__item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.375rem 1.5rem 1.5rem;
+  border: 1px solid var(--ws-border);
+  border-radius: 13px;
+  background: linear-gradient(180deg, rgba(1, 165, 255, 0.05), var(--ws-panel));
+}
+.wb-topo__viz {
+  margin: 0 0 1.125rem;
+  padding: 0.625rem 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.18);
+}
+.wb-topo__viz svg { display: block; width: 100%; max-width: 320px; height: auto; margin: 0 auto; }
+.wb-topo__name {
+  margin: 0 0 0.5rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--aenix-text);
+}
+.wb-topo__desc { margin: 0 0 1.125rem; font-size: 0.9375rem; line-height: 1.55; color: var(--aenix-text-muted); }
+.wb-topo__specs { margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+.wb-topo__spec { display: flex; align-items: baseline; gap: 0.75rem; }
+.wb-topo__spec dt {
+  flex: none;
+  width: 4.75rem;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ws-cyan);
+}
+.wb-topo__spec dd { margin: 0; font-size: 0.8125rem; line-height: 1.45; color: var(--aenix-text-muted); }
+.wb-topo__spec dd strong { color: var(--aenix-text); font-weight: 700; }
+
+/* --- GPU platform stack (layer map above the cover grid) --------------------
+   The reviewer's point: a page whose promised takeaway is "a layer-by-layer map
+   of a GPU platform" had no such map. Each row is one layer of the stack, with
+   the open-source projects that fill it; the top row (the commercial metering
+   layer) is tinted violet to separate it from the open-source foundation. */
+.wb-layers__h3 {
+  margin: 2.75rem 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--aenix-text);
+}
+.wb-layers__cap { margin: 0 0 1.25rem; max-width: 68ch; font-size: 0.9375rem; line-height: 1.6; color: var(--aenix-text-muted); }
+.wb-layers { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.4375rem; }
+.wb-layer {
+  display: grid;
+  grid-template-columns: 12.5rem minmax(0, 1fr) 20rem;
+  align-items: center;
+  gap: 0.75rem 1.5rem;
+  padding: 0.9375rem 1.25rem;
+  border: 1px solid var(--ws-border);
+  border-left: 2px solid rgba(1, 165, 255, 0.4);
+  border-radius: 11px;
+  background: linear-gradient(90deg, rgba(1, 165, 255, 0.07), var(--ws-panel));
+}
+.wb-layer__name { margin: 0; font-size: 1rem; font-weight: 700; letter-spacing: -0.01em; color: var(--aenix-text); }
+.wb-layer__what { margin: 0; font-size: 0.875rem; line-height: 1.5; color: var(--aenix-text-muted); }
+.wb-layer__projects { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.375rem; }
+.wb-layer__projects li {
+  padding: 0.1875rem 0.5rem;
+  border: 1px solid rgba(1, 165, 255, 0.26);
+  border-radius: 6px;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6875rem;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: var(--ws-cyan);
+}
+.wb-layer--modules {
+  border-left-color: rgba(167, 139, 250, 0.5);
+  background: linear-gradient(90deg, rgba(167, 139, 250, 0.1), var(--ws-panel));
+}
+.wb-layer--modules .wb-layer__projects li { border-color: rgba(167, 139, 250, 0.32); color: var(--ws-violet); }
+
+/* --- Speaker portrait, GPU landing: a photograph rather than a cut-out ----
+   A cut-out can never fill a rectangle — the corners above the head are always
+   empty, and on this page that left a visible wedge of panel at the frame's
+   edge. This portrait is composited on its own studio sweep, so it fills the
+   frame edge to edge with nothing cropped; the frame keeps its border and
+   radius and drops only its padding. */
+.wb-gpu .ws-speaker__photo { padding: 0; }
+
 /* --- Who should attend (company tiles + role pills) — centered --- */
 .wb-audience .ws-h2 { text-align: center; }
 .wb-audience .ws-lead { text-align: center; margin-left: auto; margin-right: auto; }
@@ -6339,10 +6538,24 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 /* --- Webinar responsive --- */
 @media (max-width: 960px) {
   .wb-cover__grid { grid-template-columns: 1fr; }
+  /* one card per row, but keep the schematic beside its text */
+  .wb-topo { grid-template-columns: minmax(0, 1fr); }
+  .wb-topo__item {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+    column-gap: 1.75rem;
+    align-items: start;
+  }
+  .wb-topo__viz { grid-row: 1 / span 3; margin-bottom: 0; }
+  .wb-layer { grid-template-columns: 11rem minmax(0, 1fr); }
+  .wb-layer__projects { grid-column: 1 / -1; }
   .wb-audience__tiles { grid-template-columns: repeat(3, 1fr); }
   .webinar-landing .ws-speaker__grid { grid-template-columns: 240px 1fr; }
 }
 @media (max-width: 640px) {
+  .wb-topo__item { display: flex; flex-direction: column; }
+  .wb-topo__viz { grid-row: auto; margin-bottom: 1.125rem; }
+  .wb-layer { grid-template-columns: minmax(0, 1fr); gap: 0.5rem; }
   .wb-audience__tiles { grid-template-columns: repeat(2, 1fr); }
   .wb-factoid { grid-template-columns: 1fr; gap: 0.75rem; }
   .webinar-landing .ws-speaker__grid { grid-template-columns: 1fr; }
