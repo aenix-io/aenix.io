@@ -17,9 +17,9 @@
   treatment — never by color alone.
 */}}
 {{- $items := .Page.Params.cities -}}
-{{- $isRU := eq (.Page.Params.language | default "en") "ru" -}}
-{{- $cta := cond $isRU "Зарегистрироваться" "Register" -}}
-{{- $ctaDone := cond $isRU "Прошёл" "Took place" -}}
+{{- $lang := .Page.Params.language | default "en" -}}
+{{- $cta := index (dict "ru" "Зарегистрироваться" "fr" "S'inscrire") $lang | default "Register" -}}
+{{- $ctaDone := index (dict "ru" "Прошёл" "fr" "Terminé") $lang | default "Took place" -}}
 {{- if $items -}}
 <div class="ws-cities">
   {{- range $i, $c := $items -}}

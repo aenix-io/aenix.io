@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 {{- $lang := .Site.LanguageCode | default "en" -}}
 {{- if or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}{{- $lang = "de" -}}
-{{- else if or (eq .Params.language "ru") (hasPrefix .RelPermalink "/ru/") -}}{{- $lang = "ru" -}}{{- end -}}
+{{- else if or (eq .Params.language "ru") (hasPrefix .RelPermalink "/ru/") -}}{{- $lang = "ru" -}}
+{{- else if or (eq .Params.language "fr") (hasPrefix .RelPermalink "/fr/") -}}{{- $lang = "fr" -}}{{- end -}}
 <html lang="{{ $lang }}">
 <head>
   <meta charset="utf-8">

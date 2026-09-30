@@ -100,7 +100,7 @@
 <meta property="og:description" content="{{ .Description }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:type" content="{{ if eq $type "blog-article" }}article{{ else }}website{{ end }}" />
-<meta property="og:locale" content="{{ if eq .Params.language "de" }}de_DE{{ else if eq .Params.language "ru" }}ru_RU{{ else }}en_US{{ end }}" />
+<meta property="og:locale" content="{{ if eq .Params.language "de" }}de_DE{{ else if eq .Params.language "ru" }}ru_RU{{ else if eq .Params.language "fr" }}fr_FR{{ else }}en_US{{ end }}" />
 {{- if and (ne .Params.language "de") .Params.hreflang_de }}
 <meta property="og:locale:alternate" content="de_DE" />
 {{- end }}

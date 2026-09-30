@@ -23,8 +23,10 @@
     final_cta        — {heading, text, button, href} closing conversion band
 */}}
 {{- $isRU := eq (.Params.language | default "en") "ru" -}}
+{{- $isFR := eq (.Params.language | default "en") "fr" -}}
+{{- $registerLabel := cond $isRU "Зарегистрироваться" (cond $isFR "Je m'inscris" "Register") -}}
 {{- $photo := .Params.speaker_photo | default "images/workshops/timur-tukaev.png" -}}
-{{- $portraitAlt := cond $isRU "Тимур Тукаев — ведущий воркшопа" "Timur Tukaev — workshop host" -}}
+{{- $portraitAlt := cond $isRU "Тимур Тукаев — ведущий воркшопа" (cond $isFR "Timur Tukaev, animateur de l'atelier" "Timur Tukaev — workshop host") -}}
 
 <section class="event-hero ws-hero">
   <div class="ws-hero__bg" aria-hidden="true">
@@ -35,7 +37,7 @@
     <div class="ws-hero__inner">
       <div class="ws-hero__content">
         {{ partial "lang-switch.html" . }}
-        {{ if .Params.cities }}
+        {{ if gt (len (.Params.cities | default slice)) 1 }}
         <p class="event-hero__eyebrow ws-hero__eyebrow ws-hero__cities">{{ range $i, $c := .Params.cities }}{{ if $i }}<span class="ws-hero__cities-sep" aria-hidden="true">·</span>{{ end }}<a class="ws-hero__city" href="#cities">{{ $c.city }}</a>{{ end }}</p>
         {{ else }}{{ with .Params.hero_eyebrow }}<p class="event-hero__eyebrow ws-hero__eyebrow">{{ . }}</p>{{ end }}{{ end }}
         {{ if .Params.hero_title }}
@@ -127,7 +129,7 @@
         {{ with .Params.inshort_title }}<h2>{{ . }}</h2>{{ end }}
         {{ partial "seo/geo-intro.html" . }}
         <div class="ws-cta-center ws-cta-center--outro">
-          <a class="cta-primary cta-accent" href="#register">{{ with .Params.hero_primary }}{{ .text }}{{ else }}{{ cond $isRU "Зарегистрироваться" "Register" }}{{ end }}</a>
+          <a class="cta-primary cta-accent" href="#register">{{ with .Params.hero_primary }}{{ .text }}{{ else }}{{ $registerLabel }}{{ end }}</a>
         </div>
       </div>
       {{ end }}
@@ -146,7 +148,7 @@
       {{ with .heading }}<h2 class="ws-final__title">{{ . }}</h2>{{ end }}
       {{ with .text }}<p class="ws-final__text">{{ . }}</p>{{ end }}
       <div class="ws-final__cta">
-        <a class="cta-primary cta-accent cta-lg" href="{{ .href | default "#register" }}">{{ .button | default (cond $isRU "Зарегистрироваться" "Register") }}</a>
+        <a class="cta-primary cta-accent cta-lg" href="{{ .href | default "#register" }}">{{ .button | default $registerLabel }}</a>
       </div>
     </div>
   </div>
