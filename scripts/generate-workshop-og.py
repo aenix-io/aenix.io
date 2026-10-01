@@ -8,11 +8,13 @@ Google Fonts) — matching the redesigned campaign page. Dark navy + blue->viole
 glow, typographic. These two cards are intentionally NOT produced by
 generate-og-cards.py (their entries were removed there).
 
-Run: python3 scripts/generate-workshop-og.py  -> writes static/img/og/*.png
+Run: python3 scripts/generate-workshop-og.py [card ...]  -> writes static/img/og/*.png
+     (pass card names, e.g. og-workshop-fr, to regenerate only those)
 Requires: Google Chrome / Chromium on PATH (or the macOS app), internet for fonts.
 """
 import os
 import shutil
+import sys
 import subprocess
 import tempfile
 
@@ -27,6 +29,10 @@ CARDS = [
     ("og-workshop-en",
      "Tashkent · Bishkek · Almaty · Astana",
      "Migrating off VMware to open source: a hands-on workshop"),
+    ("og-workshop-fr",
+     "Paris · 19 octobre 2026",
+     "Quitter VMware pour l\u2019open source\u00a0: atelier pratique",
+     "construit sur Cozystack (CNCF)"),
 ]
 
 CHROME_CANDIDATES = [
@@ -77,7 +83,7 @@ HTML = """<!doctype html><html lang="{lang}"><head><meta charset="utf-8">
   <div class="spacer"></div>
   <div class="eyebrow">{eyebrow}</div>
   <h1 class="title">{title}</h1>
-  <div class="footer"><b>aenix.io</b> &nbsp;·&nbsp; built on Cozystack (CNCF)</div>
+  <div class="footer"><b>aenix.io</b> &nbsp;·&nbsp; {footer}</div>
 </div></body></html>"""
 
 
@@ -85,10 +91,14 @@ def main():
     chrome = find_chrome()
     logo_svg = open(LOGO, encoding="utf-8").read().strip()
     os.makedirs(OUT, exist_ok=True)
-    for fn, eyebrow, title in CARDS:
+    only = set(sys.argv[1:])
+    for fn, eyebrow, title, *rest in CARDS:
+        if only and fn not in only:
+            continue
+        footer = rest[0] if rest else "built on Cozystack (CNCF)"
         size = 60 if len(title) > 46 else 66
-        html = HTML.format(lang=("ru" if fn.endswith("-ru") else "en"),
-                           logo=logo_svg, eyebrow=eyebrow, title=title, size=size)
+        html = HTML.format(lang=fn.rsplit("-", 1)[-1], logo=logo_svg, eyebrow=eyebrow,
+                           title=title, footer=footer, size=size)
         with tempfile.NamedTemporaryFile("w", suffix=".html", delete=False, encoding="utf-8") as f:
             f.write(html)
             html_path = f.name
