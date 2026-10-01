@@ -5,77 +5,101 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Speaker handbook — AenixCon 2026</title>
 <meta name="description" content="Everything AenixCon 2026 speakers need: key dates, session formats, slide guidelines, recording and consent, the online tech setup, do's and don'ts, and the code of conduct.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/fonts.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="wrap nav__in">
-    <a class="brand" href="index.html"><span class="brand__mark"></span> Aenix<span class="brand__x">Con</span></a>
-    <div class="nav__links">
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="lockup" href="index.html" aria-label="AenixCon 2026 — home">
+      <svg class="lockup__word" viewBox="0 0 77.0043 24.0638" aria-hidden="true"><path fill-rule="evenodd" d="M0 23.9286L.0548 23.8413 14.9969.0637 15.0135.037H34.1111V.094L36.0777 2.1341 34.1111 4.175V4.2319H20.6964L21.8775 9.6831H34.0779V13.9116H22.8021L24.0709 19.7337H34.1111V23.9286H20.2154L20.2059 23.8836 19.103 18.7683H8.7069L5.6713 23.9006 5.6548 23.9286H0ZM18.2003 14.5734L16.3148 5.8982 11.1733 14.5734H18.2003ZM53.5263 7.1567V2.9942H58.5991V7.1567H53.5263ZM53.7081 23.9829V9.7707H58.4172V23.9829H53.7081ZM59.6102 23.9285L59.6872 23.8352 65.7119 16.569 60.0675 9.7389 59.9899 9.6456H65.2812L65.2984 9.6674 68.304 13.474 71.2864 9.6675 71.3036 9.6456H76.595L76.5179 9.7389 70.8753 16.5668 76.9267 23.8351 77.0043 23.9285H71.6839L71.6667 23.9071 68.2809 19.6744 64.9187 23.9069 64.9016 23.9285H59.6102ZM36.3792 23.8712V23.9281H41.0486V15.9794C41.0486 15.3538 41.1777 14.8066 41.4342 14.3361 41.6907 13.8653 42.0449 13.5086 42.4969 13.2645 42.9707 13.0007 43.524 12.8681 44.1596 12.8681 44.6554 12.8681 45.057 12.9628 45.3674 13.1481 45.6979 13.3153 45.9407 13.6006 46.0977 14.0123 46.2754 14.4086 46.3654 14.9278 46.3654 15.5761V23.9281H51.0349V15.3746C51.0349 14.0257 50.8435 12.9131 50.4567 12.0394 50.0705 11.1461 49.4895 10.4832 48.7129 10.0542 47.9375 9.6062 46.9519 9.3843 45.7589 9.3843 44.5831 9.3843 43.5275 9.6456 42.5934 10.1691 41.9312 10.5343 41.3862 11.0165 40.9586 11.6152V9.6723H36.3792V23.8712Z"/></svg>
+      <span class="lockup__con" aria-hidden="true">CON</span>
+      <span class="lockup__yr" aria-hidden="true">2026</span>
+    </a>
+    <nav class="hdr__nav" aria-label="Sections">
       <a href="index.html#program">Program</a>
       <a href="cfp.html">Call for Proposals</a>
       <a href="#dates">Dates</a>
       <a href="#setup">Tech setup</a>
       <a href="#coc">Code of Conduct</a>
-      <a class="btn btn--primary" href="cfp.html#submit">Submit a talk</a>
-    </div>
+    </nav>
+    <a class="cta cta--primary hdr__cta" href="cfp.html#submit">Submit a talk <span aria-hidden="true">↗</span></a>
+    <button class="hdr__menu" type="button" aria-expanded="false" aria-controls="mnav">Menu</button>
   </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <span class="badge">● Speaker handbook · AenixCon 2026</span>
-    <h1>Everything you need to give a great talk</h1>
-    <p class="lead">Thanks for speaking at AenixCon. This is an online conference, so a little preparation goes a long way. Read this once end-to-end — it covers dates, formats, slides, recording, your tech setup, and the ground rules.</p>
-    <div class="btnrow">
-      <a class="btn btn--primary btn--lg" href="cfp.html#submit">Submit a talk</a>
-      <a class="btn btn--ghost btn--lg" href="#setup">Jump to tech setup →</a>
+  <div class="wrap hdr__rule"></div>
+  <nav class="mnav" id="mnav" aria-label="Menu" hidden>
+    <div class="wrap mnav__in">
+      <a href="index.html#program">Program</a>
+      <a href="cfp.html">Call for Proposals</a>
+      <a href="#dates">Dates</a>
+      <a href="#setup">Tech setup</a>
+      <a href="#coc">Code of Conduct</a>
+      <a class="cta cta--primary" href="cfp.html#submit">Submit a talk <span aria-hidden="true">↗</span></a>
     </div>
-  </div>
+  </nav>
 </header>
 
-<section class="section" id="dates">
-  <div class="wrap grid grid-2" style="align-items:start">
-    <div>
-      <p class="eyebrow">Key dates</p>
-      <h2>Your timeline as a speaker</h2>
-      <ul class="tl" style="margin-top:18px">
-        <li><span class="date">November 1, 2026</span><b>CFP closes</b><span class="muted">Last day to submit, 23:59 Anywhere-on-Earth.</span></li>
-        <li><span class="date">November 5, 2026</span><b>Decisions</b><span class="muted">Everyone hears back. If accepted, you'll get a confirmation form and this handbook.</span></li>
-        <li><span class="date">Mid–late November</span><b>Slides &amp; abstract final</b><span class="muted">Final title, abstract and speaker bio locked for the website and program.</span></li>
-        <li><span class="date">Late November → early December</span><b>Tech check &amp; dry-run</b><span class="muted">A scheduled 20-minute rehearsal on the event platform — mandatory.</span></li>
-        <li><span class="date">December 10–11, 2026</span><b>Showtime</b><span class="muted">Join your green room 30 minutes before your session.</span></li>
-      </ul>
-    </div>
-    <div>
-      <p class="eyebrow">Formats &amp; timing</p>
-      <h2>Know your slot</h2>
-      <div class="grid" style="margin-top:18px;gap:14px">
-        <div class="card"><h3>Conference talk — ~30 min</h3><p class="muted">Target ~22–24 minutes of content + 6–8 minutes of live Q&amp;A. We'll keep time and moderate questions for you.</p></div>
-        <div class="card"><h3>Lightning talk — ~10 min</h3><p class="muted">One idea, tightly delivered. No live Q&amp;A; questions move to the networking room.</p></div>
-        <div class="card"><h3>Panel / fireside — 30–40 min</h3><p class="muted">A moderator guides the conversation. We'll align on questions with you beforehand.</p></div>
-      </div>
-      <p class="muted" style="margin-top:14px">Sessions are <b>live by default</b>. If you prefer, you may pre-record the talk and join live for Q&amp;A — tell us during confirmation.</p>
+<main>
+
+<section class="cfp-hero" aria-labelledby="sh-h">
+  <svg class="kv kv--land" viewBox="0 70 1440 730" aria-hidden="true"><defs><linearGradient id="kv-sh-l" x1="671.307" y1="480.885" x2="1872.69" y2="891.115" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F6B2"/><stop offset=".38" stop-color="#01A5FF"/><stop offset="1" stop-color="#661BE1" stop-opacity=".18"/></linearGradient></defs><circle cx="1272" cy="686" r="532" fill="none" stroke="url(#kv-sh-l)" stroke-width="36"/></svg>
+  <svg class="kv kv--port" viewBox="0 0 1080 1920" aria-hidden="true"><defs><linearGradient id="kv-sh-p" x1="333.178" y1="1074.62" x2="1916.82" y2="1615.38" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F6B2"/><stop offset=".38" stop-color="#01A5FF"/><stop offset="1" stop-color="#661BE1" stop-opacity=".18"/></linearGradient></defs><circle cx="1125" cy="1345" r="704" fill="none" stroke="url(#kv-sh-p)" stroke-width="42"/></svg>
+  <div class="wrap hero__in">
+    <p class="eyebrow">Speaker handbook · AenixCon 2026</p>
+    <h1 class="cfp-hero__h1" id="sh-h">Everything you need to give a great talk</h1>
+    <p class="cfp-hero__lead">Thanks for speaking at AenixCon. This is an online conference, so a little preparation goes a long way. Read this once end-to-end — it covers dates, formats, slides, recording, your tech setup, and the ground rules.</p>
+    <div class="ctas ctas--16">
+      <a class="cta cta--primary" href="cfp.html#submit">Submit a talk <span aria-hidden="true">↗</span></a>
+      <a class="cta cta--secondary" href="#setup">Jump to tech setup <span aria-hidden="true">↓</span></a>
     </div>
   </div>
 </section>
 
-<section class="section" id="slides">
+<section class="sec" id="dates" aria-label="Key dates and formats">
+  <div class="wrap cols">
+    <div class="stack">
+      <p class="eyebrow">Key dates</p>
+      <h2 class="h2">Your timeline as a speaker</h2>
+      <div class="tli"><p class="mono tli__d">01 / November 1, 2026</p><h3 class="tli__t">CFP closes</h3><p class="tli__p">Last day to submit, 23:59 Anywhere-on-Earth.</p></div>
+      <div class="tli"><p class="mono tli__d">02 / November 5, 2026</p><h3 class="tli__t">Decisions</h3><p class="tli__p">Everyone hears back. If accepted, you'll get a confirmation form and this handbook.</p></div>
+      <div class="tli"><p class="mono tli__d">03 / Mid–late November</p><h3 class="tli__t">Slides &amp; abstract final</h3><p class="tli__p">Final title, abstract and speaker bio locked for the website and program.</p></div>
+      <div class="tli"><p class="mono tli__d">04 / Late November → early December</p><h3 class="tli__t">Tech check &amp; dry-run</h3><p class="tli__p">A scheduled 20-minute rehearsal on the event platform — mandatory.</p></div>
+      <div class="tli"><p class="mono tli__d">05 / December 10–11, 2026</p><h3 class="tli__t">Showtime</h3><p class="tli__p">Join your green room 30 minutes before your session.</p></div>
+    </div>
+    <div class="stack">
+      <p class="eyebrow eyebrow--accent">Formats &amp; timing</p>
+      <h2 class="h2">Know your slot</h2>
+      <div class="tli"><p class="mono tli__d accent">01 / ~30 min</p><h3 class="tli__t">Conference talk</h3><p class="tli__p">Target ~22–24 minutes of content + 6–8 minutes of live Q&amp;A. We'll keep time and moderate questions for you.</p></div>
+      <div class="tli"><p class="mono tli__d accent">02 / ~10 min</p><h3 class="tli__t">Lightning talk</h3><p class="tli__p">One idea, tightly delivered. No live Q&amp;A; questions move to the networking room.</p></div>
+      <div class="tli"><p class="mono tli__d accent">03 / 30–40 min</p><h3 class="tli__t">Panel / fireside</h3><p class="tli__p">A moderator guides the conversation. We'll align on questions with you beforehand.</p></div>
+      <p class="body">Sessions are <b>live by default</b>. If you prefer, you may pre-record the talk and join live for Q&amp;A — tell us during confirmation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--canvas" id="slides" aria-labelledby="slides-h">
   <div class="wrap">
-    <p class="eyebrow">Slides &amp; content</p>
-    <h2>Make it useful, make it yours</h2>
-    <div class="grid grid-2" style="margin-top:20px">
-      <ul class="check">
+    <div class="stack">
+      <p class="eyebrow">Slides &amp; content</p>
+      <h2 class="h2" id="slides-h">Make it useful, make it yours</h2>
+    </div>
+    <div class="cols mt-48">
+      <ul class="blist">
         <li><b>16:9 aspect ratio.</b> Use the AenixCon slide template (sent on acceptance) or your own clean deck.</li>
         <li><b>Lead with the takeaway.</b> Tell people early what they'll be able to do afterward.</li>
         <li><b>Big, legible text.</b> Assume people watch on a laptop; small fonts and dense diagrams don't survive streaming.</li>
         <li><b>Show real things.</b> Config, code, dashboards, numbers — depth is why people came.</li>
       </ul>
-      <ul class="check">
+      <ul class="blist">
         <li><b>Community-first, not a pitch.</b> It's fine to mention your product where relevant; a 30-minute ad is not.</li>
         <li><b>Credit sources.</b> Cite projects, papers and people; respect licenses on images and logos.</li>
         <li><b>Have a demo backup.</b> Record a short screencast in case a live demo misbehaves on the day.</li>
@@ -85,40 +109,42 @@
   </div>
 </section>
 
-<section class="section" id="setup">
+<section class="sec" id="setup" aria-labelledby="setup-h">
   <div class="wrap">
-    <p class="eyebrow">Online tech setup</p>
-    <h2>The part that makes or breaks an online talk</h2>
-    <p class="lead">Most problems at online events are audio and network, not content. Please treat this section as a checklist.</p>
-    <div class="grid grid-2" style="margin-top:20px">
-      <ul class="check">
+    <div class="stack">
+      <p class="eyebrow">Online tech setup</p>
+      <h2 class="h2" id="setup-h">The part that makes or breaks an online talk</h2>
+      <p class="lead">Most problems at online events are audio and network, not content. Please treat this section as a checklist.</p>
+    </div>
+    <div class="cols mt-48">
+      <ul class="blist">
         <li><b>Wired internet</b> if at all possible — or sit right next to the router. Have a phone hotspot as backup.</li>
         <li><b>A headset or external mic.</b> Laptop speakers cause echo; a $20 headset beats a $2,000 laptop mic.</li>
         <li><b>Quiet room</b> — mute notifications, close chat apps, silence the phone, tell people not to walk in.</li>
         <li><b>Good, front-facing light.</b> A window or lamp in front of you, not behind.</li>
       </ul>
-      <ul class="check">
+      <ul class="blist">
         <li><b>Use a laptop/desktop</b>, not a phone or tablet, for screen-sharing.</li>
         <li><b>Close heavy apps</b> before you present; share a single window, not your whole desktop.</li>
         <li><b>Attend the dry-run.</b> We'll test your audio, screen-share and slides on the real platform.</li>
         <li><b>Join early.</b> Be in the green room 30 minutes before your slot; a host will be with you.</li>
       </ul>
     </div>
-    <div class="note" style="margin-top:18px">A member of the AenixCon team is in every room to run the timer, moderate Q&amp;A, and jump in if anything breaks. You are never alone on stage.</div>
+    <p class="callout body mt-48">A member of the AenixCon team is in every room to run the timer, moderate Q&amp;A, and jump in if anything breaks. You are never alone on stage.</p>
   </div>
 </section>
 
-<section class="section" id="recording">
-  <div class="wrap grid grid-2" style="align-items:start">
-    <div>
+<section class="sec sec--canvas" id="recording" aria-label="Recording and speaker perks">
+  <div class="wrap cols">
+    <div class="stack">
       <p class="eyebrow">Recording &amp; consent</p>
-      <h2>Everything is recorded</h2>
-      <p class="muted">We record all sessions and publish them after the event. Ticket holders get the videos, and we may cut talks into shorter clips, quote you in write-ups, and feature slides. By speaking you grant AenixCon permission to record, edit and publish your session and materials, with attribution. If any part of your talk can't be recorded (e.g. a sensitive customer demo), tell us in advance and we'll pause the capture.</p>
+      <h2 class="h2">Everything is recorded</h2>
+      <p class="body">We record all sessions and publish them after the event. Ticket holders get the videos, and we may cut talks into shorter clips, quote you in write-ups, and feature slides. By speaking you grant AenixCon permission to record, edit and publish your session and materials, with attribution. If any part of your talk can't be recorded (e.g. a sensitive customer demo), tell us in advance and we'll pause the capture.</p>
     </div>
-    <div>
-      <p class="eyebrow">What you get</p>
-      <h2>Speaker perks</h2>
-      <ul class="check" style="margin-top:6px">
+    <div class="stack">
+      <p class="eyebrow eyebrow--accent">What you get</p>
+      <h2 class="h2">Speaker perks</h2>
+      <ul class="tlist">
         <li>Your own recording, clips and slides to reuse</li>
         <li>A speaker card and promo kit for social</li>
         <li>A spot in the fireside/interview stream if you want it</li>
@@ -129,64 +155,83 @@
   </div>
 </section>
 
-<section class="section" id="promo">
+<section class="sec" id="promo" aria-labelledby="promo-h">
   <div class="wrap">
-    <p class="eyebrow">Help us fill the room</p>
-    <h2>Promoting your talk</h2>
-    <div class="grid grid-3" style="margin-top:20px">
-      <div class="card"><div class="card__ic">🖼️</div><h3>Speaker card</h3><p class="muted">We'll send a personalized graphic with your name, photo and talk title — post it anywhere.</p></div>
-      <div class="card"><div class="card__ic">#️⃣</div><h3>Hashtag</h3><p class="muted">Use <b>#AenixCon</b> and tag <b>@aenix</b>. We'll amplify your posts.</p></div>
-      <div class="card"><div class="card__ic">🔗</div><h3>One link</h3><p class="muted">Point people at the program page — the free ticket is one click from there.</p></div>
+    <div class="stack">
+      <p class="eyebrow">Help us fill the room</p>
+      <h2 class="h2" id="promo-h">Promoting your talk</h2>
+    </div>
+    <div class="formats mt-48">
+      <div class="feature feature--lg"><p class="mono feature__k">01 / Speaker card</p><h3 class="feature__t">Speaker card</h3><p class="feature__d">We'll send a personalized graphic with your name, photo and talk title — post it anywhere.</p></div>
+      <div class="feature feature--lg"><p class="mono feature__k">02 / Hashtag</p><h3 class="feature__t">Hashtag</h3><p class="feature__d">Use <b>#AenixCon</b> and tag <b>@aenix</b>. We'll amplify your posts.</p></div>
+      <div class="feature feature--lg"><p class="mono feature__k">03 / One link</p><h3 class="feature__t">One link</h3><p class="feature__d">Point people at the program page — the free ticket is one click from there.</p></div>
     </div>
   </div>
 </section>
 
-<section class="section" id="coc">
+<section class="sec sec--canvas" id="coc" aria-labelledby="coc-h">
   <div class="wrap">
-    <p class="eyebrow">Ground rules</p>
-    <h2>Code of Conduct</h2>
-    <p class="lead">AenixCon is dedicated to a harassment-free, welcoming experience for everyone, regardless of gender, gender identity, sexual orientation, disability, appearance, body size, race, ethnicity, age, religion or technology choices.</p>
-    <div class="grid grid-2" style="margin-top:18px">
-      <ul class="check">
+    <div class="stack">
+      <p class="eyebrow">Ground rules</p>
+      <h2 class="h2" id="coc-h">Code of Conduct</h2>
+      <p class="lead">AenixCon is dedicated to a harassment-free, welcoming experience for everyone, regardless of gender, gender identity, sexual orientation, disability, appearance, body size, race, ethnicity, age, religion or technology choices.</p>
+    </div>
+    <div class="cols mt-48">
+      <ul class="blist">
         <li>Be respectful. Critique ideas, not people.</li>
         <li>No harassment, discrimination or personal attacks — in talks, chat or networking rooms.</li>
         <li>Keep content professional; no offensive imagery or language in slides or demos.</li>
         <li>Respect privacy — don't share others' data or private conversations.</li>
       </ul>
-      <div class="card">
-        <h3>Reporting</h3>
-        <p class="muted">If you experience or witness unacceptable behavior, contact the organizers immediately at <a href="mailto:conduct@aenix.io">conduct@aenix.io</a>. Reports are handled confidentially. Organizers may warn, mute, remove or ban anyone violating this policy.</p>
-        <p class="muted" style="margin:0">This Code of Conduct applies to all attendees, speakers, sponsors and organizers, across every session, chat and networking space.</p>
+      <div class="callout">
+        <h3 class="tli__t">Reporting</h3>
+        <p class="body">If you experience or witness unacceptable behavior, contact the organizers immediately at <a href="mailto:conduct@aenix.io">conduct@aenix.io</a>. Reports are handled confidentially. Organizers may warn, mute, remove or ban anyone violating this policy.</p>
+        <p class="body mt-s">This Code of Conduct applies to all attendees, speakers, sponsors and organizers, across every session, chat and networking space.</p>
       </div>
     </div>
-    <p class="muted" style="margin-top:16px">Adapted in spirit from the CNCF Community Code of Conduct.</p>
+    <p class="small mt-48">Adapted in spirit from the CNCF Community Code of Conduct.</p>
   </div>
 </section>
 
-<section class="section">
+<section class="cfp-submit" aria-labelledby="ready-h">
+  <svg class="kv kv--land" viewBox="0 30 1440 700" aria-hidden="true"><defs><linearGradient id="kv-rd-l" x1="671.307" y1="480.885" x2="1872.69" y2="891.115" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F6B2"/><stop offset=".38" stop-color="#01A5FF"/><stop offset="1" stop-color="#661BE1" stop-opacity=".18"/></linearGradient></defs><circle cx="1272" cy="686" r="532" fill="none" stroke="url(#kv-rd-l)" stroke-width="36"/></svg>
+  <svg class="kv kv--port" viewBox="0 0 1080 1920" aria-hidden="true"><defs><linearGradient id="kv-rd-p" x1="333.178" y1="1074.62" x2="1916.82" y2="1615.38" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F6B2"/><stop offset=".38" stop-color="#01A5FF"/><stop offset="1" stop-color="#661BE1" stop-opacity=".18"/></linearGradient></defs><circle cx="1125" cy="1345" r="704" fill="none" stroke="url(#kv-rd-p)" stroke-width="42"/></svg>
   <div class="wrap">
-    <div class="band">
-      <h2>Ready to submit?</h2>
-      <p class="lead center">The CFP closes November 1, and everyone hears back by November 5.</p>
-      <div class="btnrow" style="justify-content:center">
-        <a class="btn btn--primary btn--lg" href="cfp.html#submit">Submit your talk →</a>
-        <a class="btn btn--ghost btn--lg" href="index.html#program">See the draft program</a>
+    <div class="stack">
+      <p class="eyebrow">Submit  /  Before November 1</p>
+      <h2 class="cfp-submit__h" id="ready-h">READY TO SUBMIT?</h2>
+      <p class="cfp-submit__lead">The CFP closes November 1, and everyone hears back by November 5.</p>
+      <div class="ctas ctas--16">
+        <a class="cta cta--primary" href="cfp.html#submit">Submit your talk <span aria-hidden="true">↗</span></a>
+        <a class="cta cta--secondary" href="index.html#program">See the draft program <span aria-hidden="true">↗</span></a>
       </div>
-      <p class="muted center" style="margin-top:16px">Questions? <a href="mailto:cfp@aenix.io">cfp@aenix.io</a></p>
+      <p class="contact">Questions? <a href="mailto:cfp@aenix.io">cfp@aenix.io</a></p>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="wrap footer__row">
-    <div><a class="brand" href="index.html"><span class="brand__mark"></span> Aenix<span class="brand__x">Con</span></a> &nbsp;·&nbsp; December 10–11, 2026 · Online</div>
-    <div>
-      <a href="index.html">Home</a> ·
-      <a href="cfp.html">Call for Proposals</a> ·
-      <a href="https://cozystack.io">Cozystack</a> ·
-      <a href="https://aenix.io">Ænix</a>
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div class="ftr__brand">
+      <a class="lockup" href="index.html" aria-label="AenixCon 2026 — home">
+      <svg class="lockup__word" viewBox="0 0 77.0043 24.0638" aria-hidden="true"><path fill-rule="evenodd" d="M0 23.9286L.0548 23.8413 14.9969.0637 15.0135.037H34.1111V.094L36.0777 2.1341 34.1111 4.175V4.2319H20.6964L21.8775 9.6831H34.0779V13.9116H22.8021L24.0709 19.7337H34.1111V23.9286H20.2154L20.2059 23.8836 19.103 18.7683H8.7069L5.6713 23.9006 5.6548 23.9286H0ZM18.2003 14.5734L16.3148 5.8982 11.1733 14.5734H18.2003ZM53.5263 7.1567V2.9942H58.5991V7.1567H53.5263ZM53.7081 23.9829V9.7707H58.4172V23.9829H53.7081ZM59.6102 23.9285L59.6872 23.8352 65.7119 16.569 60.0675 9.7389 59.9899 9.6456H65.2812L65.2984 9.6674 68.304 13.474 71.2864 9.6675 71.3036 9.6456H76.595L76.5179 9.7389 70.8753 16.5668 76.9267 23.8351 77.0043 23.9285H71.6839L71.6667 23.9071 68.2809 19.6744 64.9187 23.9069 64.9016 23.9285H59.6102ZM36.3792 23.8712V23.9281H41.0486V15.9794C41.0486 15.3538 41.1777 14.8066 41.4342 14.3361 41.6907 13.8653 42.0449 13.5086 42.4969 13.2645 42.9707 13.0007 43.524 12.8681 44.1596 12.8681 44.6554 12.8681 45.057 12.9628 45.3674 13.1481 45.6979 13.3153 45.9407 13.6006 46.0977 14.0123 46.2754 14.4086 46.3654 14.9278 46.3654 15.5761V23.9281H51.0349V15.3746C51.0349 14.0257 50.8435 12.9131 50.4567 12.0394 50.0705 11.1461 49.4895 10.4832 48.7129 10.0542 47.9375 9.6062 46.9519 9.3843 45.7589 9.3843 44.5831 9.3843 43.5275 9.6456 42.5934 10.1691 41.9312 10.5343 41.3862 11.0165 40.9586 11.6152V9.6723H36.3792V23.8712Z"/></svg>
+      <span class="lockup__con" aria-hidden="true">CON</span>
+      <span class="lockup__yr" aria-hidden="true">2026</span>
+    </a>
+      <p class="mono">December 10–11, 2026 · Online</p>
     </div>
+    <nav class="ftr__links mono" aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="cfp.html">Call for Proposals</a>
+      <a href="https://cozystack.io">Cozystack</a>
+      <a href="https://aenix.io">Aenix</a>
+    </nav>
+    <p class="mono">Aenix Inc · 2026</p>
   </div>
 </footer>
+
+<script src="con.js"></script>
 </body>
 </html>

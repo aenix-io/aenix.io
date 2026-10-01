@@ -5,191 +5,246 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AenixCon 2026 — the open cloud-native conference · Dec 10–11 · Online</title>
 <meta name="description" content="AenixCon 2026 — a free two-day online conference for the cloud-native community. Two tracks: deep technical talks and real-world business cases. December 10–11, 2026.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/fonts.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="wrap nav__in">
-    <a class="brand" href="index.html"><span class="brand__mark"></span> Aenix<span class="brand__x">Con</span></a>
-    <div class="nav__links">
+<header class="hdr">
+  <div class="wrap hdr__in">
+    <a class="lockup" href="index.html" aria-label="AenixCon 2026 — home">
+      <svg class="lockup__word" viewBox="0 0 77.0043 24.0638" aria-hidden="true"><path fill-rule="evenodd" d="M0 23.9286L.0548 23.8413 14.9969.0637 15.0135.037H34.1111V.094L36.0777 2.1341 34.1111 4.175V4.2319H20.6964L21.8775 9.6831H34.0779V13.9116H22.8021L24.0709 19.7337H34.1111V23.9286H20.2154L20.2059 23.8836 19.103 18.7683H8.7069L5.6713 23.9006 5.6548 23.9286H0ZM18.2003 14.5734L16.3148 5.8982 11.1733 14.5734H18.2003ZM53.5263 7.1567V2.9942H58.5991V7.1567H53.5263ZM53.7081 23.9829V9.7707H58.4172V23.9829H53.7081ZM59.6102 23.9285L59.6872 23.8352 65.7119 16.569 60.0675 9.7389 59.9899 9.6456H65.2812L65.2984 9.6674 68.304 13.474 71.2864 9.6675 71.3036 9.6456H76.595L76.5179 9.7389 70.8753 16.5668 76.9267 23.8351 77.0043 23.9285H71.6839L71.6667 23.9071 68.2809 19.6744 64.9187 23.9069 64.9016 23.9285H59.6102ZM36.3792 23.8712V23.9281H41.0486V15.9794C41.0486 15.3538 41.1777 14.8066 41.4342 14.3361 41.6907 13.8653 42.0449 13.5086 42.4969 13.2645 42.9707 13.0007 43.524 12.8681 44.1596 12.8681 44.6554 12.8681 45.057 12.9628 45.3674 13.1481 45.6979 13.3153 45.9407 13.6006 46.0977 14.0123 46.2754 14.4086 46.3654 14.9278 46.3654 15.5761V23.9281H51.0349V15.3746C51.0349 14.0257 50.8435 12.9131 50.4567 12.0394 50.0705 11.1461 49.4895 10.4832 48.7129 10.0542 47.9375 9.6062 46.9519 9.3843 45.7589 9.3843 44.5831 9.3843 43.5275 9.6456 42.5934 10.1691 41.9312 10.5343 41.3862 11.0165 40.9586 11.6152V9.6723H36.3792V23.8712Z"/></svg>
+      <span class="lockup__con" aria-hidden="true">CON</span>
+      <span class="lockup__yr" aria-hidden="true">2026</span>
+    </a>
+    <nav class="hdr__nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#program">Program</a>
+      <a href="#activities">Activities</a>
+      <a href="#committee">Committee</a>
+    </nav>
+    <a class="cta cta--primary hdr__cta" href="#tickets">Get free ticket <span aria-hidden="true">↗</span></a>
+    <button class="hdr__menu" type="button" aria-expanded="false" aria-controls="mnav">Menu</button>
+  </div>
+  <div class="wrap hdr__rule"></div>
+  <nav class="mnav" id="mnav" aria-label="Menu" hidden>
+    <div class="wrap mnav__in">
       <a href="#about">About</a>
       <a href="#program">Program</a>
       <a href="#activities">Activities</a>
       <a href="#committee">Committee</a>
       <a href="cfp.html">Call for Proposals</a>
-      <a class="btn btn--primary" href="#tickets">Get your free ticket</a>
+      <a class="cta cta--primary" href="#tickets">Get free ticket <span aria-hidden="true">↗</span></a>
     </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="wrap">
-    <span class="badge">● Online · December 10–11, 2026 · Free</span>
-    <h1>AenixCon 2026 — the open cloud-native conference</h1>
-    <p class="lead">Two days, two tracks, one community. Deep technical sessions on Kubernetes, storage, networking, virtualization and AI infrastructure — running alongside a business track of real production case studies. Built by the team behind <a href="https://cozystack.io">Cozystack</a>, open to the whole cloud-native world.</p>
-    <div class="chips">
-      <span class="chip">Free &amp; fully online</span>
-      <span class="chip">Technical + Business tracks</span>
-      <span class="chip">Vendor-deep, community-first</span>
-      <span class="chip">Talks, cases, fireside chats &amp; networking</span>
-    </div>
-    <div class="btnrow">
-      <a class="btn btn--primary btn--lg" href="#tickets">Get your free ticket</a>
-      <a class="btn btn--ghost btn--lg" href="cfp.html">Submit a talk →</a>
-    </div>
-  </div>
+  </nav>
 </header>
 
-<section class="section section--tight" id="about">
-  <div class="wrap">
-    <div class="stats">
-      <div class="stat"><div class="stat__n">2</div><div class="stat__l">days, fully online</div></div>
-      <div class="stat"><div class="stat__n">2</div><div class="stat__l">parallel tracks — technical &amp; business</div></div>
-      <div class="stat"><div class="stat__n">20+</div><div class="stat__l">talks, cases &amp; fireside chats</div></div>
-      <div class="stat"><div class="stat__n">Free</div><div class="stat__l">ticketed registration</div></div>
+<main>
+
+<section class="hero" aria-labelledby="hero-h">
+  <svg class="kv kv--land" viewBox="0 42 1440 812" aria-hidden="true"><defs><linearGradient id="kv-hero-l" x1="671.307" y1="480.885" x2="1872.69" y2="891.115" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F6B2"/><stop offset=".38" stop-color="#01A5FF"/><stop offset="1" stop-color="#661BE1" stop-opacity=".18"/></linearGradient></defs><circle cx="1272" cy="686" r="532" fill="none" stroke="url(#kv-hero-l)" stroke-width="36"/></svg>
+  <svg class="kv kv--port" viewBox="0 0 1080 1920" aria-hidden="true"><defs><linearGradient id="kv-hero-p" x1="333.178" y1="1074.62" x2="1916.82" y2="1615.38" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F6B2"/><stop offset=".38" stop-color="#01A5FF"/><stop offset="1" stop-color="#661BE1" stop-opacity=".18"/></linearGradient></defs><circle cx="1125" cy="1345" r="704" fill="none" stroke="url(#kv-hero-p)" stroke-width="42"/></svg>
+  <div class="wrap hero__in">
+    <p class="hero__meta"><span aria-hidden="true">●  </span><span class="dk">Online · December 10–11, 2026 · Free</span><span class="mb">Online · Dec 10–11 · Free</span></p>
+    <h1 class="hero__h1" id="hero-h">Build the layers<br> others depend on.</h1>
+    <p class="hero__lead"><span class="dk">Two days, two tracks, one community. Deep technical sessions and real production cases for people building open clouds.</span><span class="mb">Two days, two tracks, one community for people building open clouds.</span></p>
+    <div class="ctas hero__ctas">
+      <a class="cta cta--primary" href="#tickets">Get free ticket <span aria-hidden="true">↗</span></a>
+      <a class="cta cta--secondary" href="cfp.html">Submit a talk <span aria-hidden="true">↗</span></a>
     </div>
-    <div style="height:34px"></div>
-    <p class="eyebrow">What is AenixCon</p>
-    <h2>A vendor conference that respects the community</h2>
-    <p class="lead">AenixCon is where the people building open clouds compare notes. One track goes deep on the engineering — distributed clusters, storage, networking, KubeVirt, GPUs and the guts of Cozystack and the CNCF projects around it. The other track is honest business: how real teams left VMware, launched public clouds, monetized hosting, and ran AI on hardware they own. No slideware marathons — every session leaves you with something you can use.</p>
-    <div class="grid grid-3" style="margin-top:26px">
-      <div class="card"><div class="card__ic">⚙️</div><h3>Technical track</h3><p class="muted">Deep, generic-enough-to-reuse talks on Kubernetes, storage, networking, virtualization, edge and AI infra — not just Cozystack.</p></div>
-      <div class="card"><div class="card__ic">📈</div><h3>Business track</h3><p class="muted">Case studies with numbers: private cloud in banks, hosting-to-cloud, universities, marketplaces and the economics of open source.</p></div>
-      <div class="card"><div class="card__ic">🎙️</div><h3>More than talks</h3><p class="muted">Fireside interviews, live Q&amp;A, online networking rooms, a community job board and giveaways across both days.</p></div>
+    <p class="mono hero__tracks"><span class="dk">Build  /  Run  /  Scale  /  Open</span><span class="mb">Build / Run / Scale / Open</span></p>
+    <p class="hero__brand">Where infrastructure builders converge.</p>
+  </div>
+</section>
+
+<section class="facts" aria-label="AenixCon at a glance">
+  <div class="wrap">
+    <p class="eyebrow">AenixCon at a glance</p>
+    <div class="facts__row">
+      <div class="fact"><p class="fact__v">2</p><p class="mono fact__l"><span class="dk">Days · Fully online</span><span class="mb">Days<br>Fully online</span></p></div>
+      <div class="fact"><p class="fact__v">2</p><p class="mono fact__l"><span class="dk">Parallel tracks</span><span class="mb">Parallel<br>tracks</span></p></div>
+      <div class="fact"><p class="fact__v">20+</p><p class="mono fact__l"><span class="dk">Talks &amp; cases</span><span class="mb">Talks &amp;<br>cases</span></p></div>
+      <div class="fact"><p class="fact__v">FREE</p><p class="mono fact__l"><span class="dk">Ticketed registration</span><span class="mb">Ticketed<br>registration</span></p></div>
     </div>
   </div>
 </section>
 
-<section class="section" id="program">
+<section class="about" id="about" aria-labelledby="about-h">
   <div class="wrap">
-    <p class="eyebrow">Program <span class="pill" style="margin-left:8px">Draft</span></p>
-    <h2>Two tracks, across two days</h2>
-    <p class="lead">A first look at the schedule. Talk titles, speakers and ordering are a working draft and will change as the program committee finalizes selections. Times are announced closer to the event.</p>
+    <div class="about__intro">
+      <div class="about__copy">
+        <p class="eyebrow">What is AenixCon</p>
+        <h2 class="about__h" id="about-h">A vendor conference that respects the community.</h2>
+        <p class="lead"><span class="dk">AenixCon is where the people building open clouds compare notes. One track goes deep on distributed systems, storage, networking, virtualization and AI infrastructure. The other is honest business: migration stories, cloud economics and production cases with numbers. Every session should leave you with something you can use.</span><span class="mb">The people building open clouds compare notes: deep engineering in one track, honest business cases in the other. No slideware marathons — every session should leave you with something you can use.</span></p>
+      </div>
+      <div class="about__mf">
+        <p class="eyebrow eyebrow--accent">Campaign principle</p>
+        <p class="about__mf-h">No black<br class="dk"> boxes.</p>
+        <p class="about__mf-s">Clear systems. Honest cases. Open knowledge.</p>
+      </div>
+    </div>
+    <div class="topics">
+      <div class="topic"><span class="badge badge--build">Build</span><div class="topic__body"><h3 class="topic__t">BUILD</h3><p class="topic__d"><span class="dk">Architecture, Kubernetes, storage and the layers underneath.</span><span class="mb">Architecture, Kubernetes and storage.</span></p></div></div>
+      <div class="topic"><span class="badge badge--run">Run</span><div class="topic__body"><h3 class="topic__t">RUN</h3><p class="topic__d"><span class="dk">Reliability, operations, observability and recovery paths.</span><span class="mb">Reliability, operations and recovery.</span></p></div></div>
+      <div class="topic"><span class="badge badge--scale">Scale</span><div class="topic__body"><h3 class="topic__t">SCALE</h3><p class="topic__d"><span class="dk">Production growth, migrations, platforms and cloud economics.</span><span class="mb">Growth, migrations and cloud economics.</span></p></div></div>
+      <div class="topic"><span class="badge badge--open">Open</span><div class="topic__body"><h3 class="topic__t">OPEN</h3><p class="topic__d"><span class="dk">Maintainers, communities and the future of open infrastructure.</span><span class="mb">Maintainers and open infrastructure.</span></p></div></div>
+    </div>
+  </div>
+</section>
 
-    <div class="daytab" role="tablist" aria-label="Choose a day">
-      <button class="on" data-day="d1">Day 1 · Wed, Dec 10</button>
-      <button data-day="d2">Day 2 · Thu, Dec 11</button>
+<section class="program" id="program" aria-labelledby="program-h">
+  <div class="wrap">
+    <div class="program__head">
+      <p class="eyebrow">Program  /  Working draft</p>
+      <h2 class="program__h" id="program-h">Two tracks, across two days.</h2>
+      <p class="lead"><span class="dk">Talk titles, speakers and ordering are a working draft. Final times will be announced as the program committee completes the selection.</span><span class="mb">Final times will be announced as the committee completes the selection.</span></p>
+    </div>
+
+    <div class="days" role="tablist" aria-label="Choose a day">
+      <button type="button" role="tab" id="tab-d1" aria-selected="true" aria-controls="day-d1" data-day="d1"><span class="dk">Day 1 · Wed, Dec 10</span><span class="mb">Day 1 · Dec 10</span></button>
+      <button type="button" role="tab" id="tab-d2" aria-selected="false" aria-controls="day-d2" data-day="d2" tabindex="-1"><span class="dk">Day 2 · Thu, Dec 11</span><span class="mb">Day 2 · Dec 11</span></button>
     </div>
 
     <!-- DAY 1 -->
-    <div class="tracks" data-day-panel="d1">
+    <div class="tracks" id="day-d1" role="tabpanel" aria-labelledby="tab-d1">
       <div class="track">
-        <div class="track__hd track__hd--tech"><span class="dot dot--tech"></span> Technical track</div>
-        <div class="sess"><span class="sess__tag">Keynote</span><div class="sess__t">The year in Cozystack — and where the open cloud goes next</div><div class="sess__s">Andrei Kvapil &amp; Timur Tukaev — Ænix</div></div>
-        <div class="sess"><div class="sess__t">Building a fault-tolerant distributed cluster on Cozystack</div><div class="sess__s">Marek Kowalski — Vistula Systems</div></div>
-        <div class="sess"><div class="sess__t">Inside the storage layer: LINSTOR &amp; DRBD in production</div><div class="sess__s">Sofia Almeida — Kubernetes SIG-Storage</div></div>
-        <div class="sess"><div class="sess__t">The network under a multi-tenant cloud: Kube-OVN + Cilium</div><div class="sess__s">Rajesh Iyer — Meridian Cloud</div></div>
-        <div class="sess"><div class="sess__t">KubeVirt at scale: running VMs as first-class citizens</div><div class="sess__s">Elena Novak — Nordcloud Collective</div></div>
+        <p class="mono--m track__label">Technical track</p>
+        <article class="talk"><span class="badge badge--open">Open</span><h3 class="talk__t">The year in Cozystack — and where the open cloud goes next</h3><p class="talk__s">Andrei Kvapil &amp; Timur Tukaev · AENIX</p><p class="talk__m">Time TBA · Keynote</p></article>
+        <article class="talk"><span class="badge badge--run">Run</span><h3 class="talk__t">Building a fault-tolerant distributed cluster on Cozystack</h3><p class="talk__s">Marek Kowalski · Vistula Systems</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--build">Build</span><h3 class="talk__t">Inside the storage layer: LINSTOR &amp; DRBD in production</h3><p class="talk__s">Sofia Almeida · Kubernetes SIG-Storage</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--build">Build</span><h3 class="talk__t">The network under a multi-tenant cloud: Kube-OVN + Cilium</h3><p class="talk__s">Rajesh Iyer · Meridian Cloud</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--run">Run</span><h3 class="talk__t">KubeVirt at scale: running VMs as first-class citizens</h3><p class="talk__s">Elena Novak · Nordcloud Collective</p><p class="talk__m">Time TBA · 40 min</p></article>
       </div>
       <div class="track">
-        <div class="track__hd track__hd--biz"><span class="dot dot--biz"></span> Business &amp; case studies</div>
-        <div class="sess"><span class="sess__tag">Case study</span><div class="sess__t">Private cloud in a European bank: a VMware-exit story</div><div class="sess__s">Diego Fernández — CNCF Ambassador</div></div>
-        <div class="sess"><div class="sess__t">From hosting provider to cloud provider in 90 days</div><div class="sess__s">Lena Fischer — HelioHost</div></div>
-        <div class="sess"><div class="sess__t">Research compute on open source: a university case</div><div class="sess__s">Dr. Hannah Berger — TU Rhein</div></div>
-        <div class="sess"><div class="sess__t">Selling through the marketplace: a partner's story</div><div class="sess__s">Pavel Roman — StackForge</div></div>
-        <div class="sess"><div class="sess__t">The economics of leaving VMware</div><div class="sess__s">Timur Tukaev — Ænix</div></div>
+        <p class="mono--m track__label">Business &amp; case studies</p>
+        <article class="talk"><span class="badge badge--scale">Scale</span><h3 class="talk__t">Private cloud in a European bank: a VMware-exit story</h3><p class="talk__s">Diego Fernández · CNCF Ambassador</p><p class="talk__m">Time TBA · Case study</p></article>
+        <article class="talk"><span class="badge badge--scale">Scale</span><h3 class="talk__t">From hosting provider to cloud provider in 90 days</h3><p class="talk__s">Lena Fischer · HelioHost</p><p class="talk__m">Time TBA · Case study</p></article>
+        <article class="talk"><span class="badge badge--scale">Scale</span><h3 class="talk__t">Research compute on open source: a university case</h3><p class="talk__s">Dr. Hannah Berger · TU Rhein</p><p class="talk__m">Time TBA · Case study</p></article>
+        <article class="talk"><span class="badge badge--scale">Scale</span><h3 class="talk__t">Selling through the marketplace: a partner's story</h3><p class="talk__s">Pavel Roman · StackForge</p><p class="talk__m">Time TBA · Case study</p></article>
+        <article class="talk"><span class="badge badge--open">Open</span><h3 class="talk__t">The economics of leaving VMware</h3><p class="talk__s">Timur Tukaev · AENIX</p><p class="talk__m">Time TBA · 40 min</p></article>
       </div>
     </div>
 
     <!-- DAY 2 -->
-    <div class="tracks" data-day-panel="d2" hidden>
+    <div class="tracks" id="day-d2" role="tabpanel" aria-labelledby="tab-d2" hidden>
       <div class="track">
-        <div class="track__hd track__hd--tech"><span class="dot dot--tech"></span> Technical track</div>
-        <div class="sess"><div class="sess__t">Cozystack as an installer: ship your app, forget the hardware</div><div class="sess__s">Nikolai Vares — Ænix</div></div>
-        <div class="sess"><div class="sess__t">GPU tenancy &amp; inference serving on open source</div><div class="sess__s">Andrei Kvapil — Ænix</div></div>
-        <div class="sess"><div class="sess__t">Object storage deep dive: SeaweedFS &amp; Ceph on Kubernetes</div><div class="sess__s">Sofia Almeida — Kubernetes SIG-Storage</div></div>
-        <div class="sess"><div class="sess__t">Edge computing with Cozystack: from control plane to the field</div><div class="sess__s">Marek Kowalski — Vistula Systems</div></div>
-        <div class="sess"><span class="sess__tag">Community</span><div class="sess__t">How to contribute to Cozystack</div><div class="sess__s">Maintainers panel</div></div>
+        <p class="mono--m track__label">Technical track</p>
+        <article class="talk"><span class="badge badge--build">Build</span><h3 class="talk__t">Cozystack as an installer: ship your app, forget the hardware</h3><p class="talk__s">Nikolai Vares · AENIX</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--build">Build</span><h3 class="talk__t">GPU tenancy &amp; inference serving on open source</h3><p class="talk__s">Andrei Kvapil · AENIX</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--build">Build</span><h3 class="talk__t">Object storage deep dive: SeaweedFS &amp; Ceph on Kubernetes</h3><p class="talk__s">Sofia Almeida · Kubernetes SIG-Storage</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--run">Run</span><h3 class="talk__t">Edge computing with Cozystack: from control plane to the field</h3><p class="talk__s">Marek Kowalski · Vistula Systems</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--open">Open</span><h3 class="talk__t">How to contribute to Cozystack</h3><p class="talk__s">Maintainers panel</p><p class="talk__m">Time TBA · Community</p></article>
       </div>
       <div class="track">
-        <div class="track__hd track__hd--biz"><span class="dot dot--biz"></span> Business &amp; case studies</div>
-        <div class="sess"><div class="sess__t">Sovereign cloud: building on open source in 2026</div><div class="sess__s">Diego Fernández — CNCF Ambassador</div></div>
-        <div class="sess"><div class="sess__t">An AI/ML platform on your own GPUs: a provider case</div><div class="sess__s">Rajesh Iyer — Meridian Cloud</div></div>
-        <div class="sess"><div class="sess__t">Billing &amp; FinOps for a Kubernetes cloud</div><div class="sess__s">Elena Novak — Nordcloud Collective</div></div>
-        <div class="sess"><div class="sess__t">Working with AI the right way: how we do it internally</div><div class="sess__s">Timur Tukaev — Ænix</div></div>
-        <div class="sess"><span class="sess__tag">Panel</span><div class="sess__t">The open-source cloud business in 2026</div><div class="sess__s">Hosts &amp; guests</div></div>
+        <p class="mono--m track__label">Business &amp; case studies</p>
+        <article class="talk"><span class="badge badge--open">Open</span><h3 class="talk__t">Sovereign cloud: building on open source in 2026</h3><p class="talk__s">Diego Fernández · CNCF Ambassador</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--scale">Scale</span><h3 class="talk__t">An AI/ML platform on your own GPUs: a provider case</h3><p class="talk__s">Rajesh Iyer · Meridian Cloud</p><p class="talk__m">Time TBA · Case study</p></article>
+        <article class="talk"><span class="badge badge--scale">Scale</span><h3 class="talk__t">Billing &amp; FinOps for a Kubernetes cloud</h3><p class="talk__s">Elena Novak · Nordcloud Collective</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--open">Open</span><h3 class="talk__t">Working with AI the right way: how we do it internally</h3><p class="talk__s">Timur Tukaev · AENIX</p><p class="talk__m">Time TBA · 40 min</p></article>
+        <article class="talk"><span class="badge badge--open">Open</span><h3 class="talk__t">The open-source cloud business in 2026</h3><p class="talk__s">Hosts &amp; guests</p><p class="talk__m">Time TBA · Panel</p></article>
       </div>
     </div>
 
-    <div class="note" style="margin-top:20px">Draft program filled with placeholder sessions. The Call for Proposals is open — <a href="cfp.html">submit a talk</a> and help shape the final agenda.</div>
-  </div>
-</section>
-
-<section class="section" id="activities">
-  <div class="wrap">
-    <p class="eyebrow">Beyond the talks</p>
-    <h2>An event, not a webinar playlist</h2>
-    <div class="grid grid-3" style="margin-top:22px">
-      <div class="card"><div class="card__ic">🔥</div><h3>Fireside interviews</h3><p class="muted">Short, candid conversations with speakers between sessions — hosted like a live podcast. Some become the first episodes of our English-language show.</p></div>
-      <div class="card"><div class="card__ic">🤝</div><h3>Networking rooms</h3><p class="muted">Opt-in breakout rooms and an attendee intro board, so an online event still gets you real conversations and new contacts.</p></div>
-      <div class="card"><div class="card__ic">💬</div><h3>Live Q&amp;A</h3><p class="muted">Every talk ends with real questions and answers — no pre-recorded silence.</p></div>
-      <div class="card"><div class="card__ic">💼</div><h3>Community job board</h3><p class="muted">Curated openings from Ænix and our partners, with fast-track chats for candidates during the event.</p></div>
-      <div class="card"><div class="card__ic">🎁</div><h3>Giveaways</h3><p class="muted">Prizes and a few surprises across both days for people who show up and take part.</p></div>
-      <div class="card"><div class="card__ic">📼</div><h3>Recordings &amp; content</h3><p class="muted">Every session is recorded. Ticket holders get the videos, slides and write-ups afterward.</p></div>
+    <div class="program__note">
+      <p class="mono">The Call for Proposals is open — help shape the final agenda.</p>
+      <a class="cta cta--secondary" href="cfp.html">Submit a talk <span aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>
 
-<section class="section" id="committee">
+<section class="activities" id="activities" aria-labelledby="activities-h">
   <div class="wrap">
-    <p class="eyebrow">Program committee <span class="pill" style="margin-left:8px">Forming</span></p>
-    <h2>Who curates the program</h2>
-    <p class="lead">The committee reviews every submission and shapes the two tracks. Membership is still being finalized — the people below are placeholders while invitations go out.</p>
-    <div class="grid grid-4" style="margin-top:24px">
-      <div class="card"><div class="person"><div class="person__av">AK</div><div><div class="person__n">Andrei Kvapil</div><div class="person__r">Creator of Cozystack · Founder, Ænix — Chair</div></div></div></div>
-      <div class="card"><div class="person"><div class="person__av">TT</div><div><div class="person__n">Timur Tukaev</div><div class="person__r">Cozystack maintainer · Co-founder, Ænix — Co-chair</div></div></div></div>
-      <div class="card"><div class="person"><div class="person__av">EN</div><div><div class="person__n">Elena Novak</div><div class="person__r">Principal Platform Engineer, Nordcloud Collective</div></div></div></div>
-      <div class="card"><div class="person"><div class="person__av">RI</div><div><div class="person__n">Rajesh Iyer</div><div class="person__r">Staff SRE, Meridian Cloud</div></div></div></div>
-      <div class="card"><div class="person"><div class="person__av">SA</div><div><div class="person__n">Sofia Almeida</div><div class="person__r">Kubernetes SIG-Storage contributor</div></div></div></div>
-      <div class="card"><div class="person"><div class="person__av">MK</div><div><div class="person__n">Marek Kowalski</div><div class="person__r">Head of Infrastructure, Vistula Systems</div></div></div></div>
-      <div class="card"><div class="person"><div class="person__av">HB</div><div><div class="person__n">Dr. Hannah Berger</div><div class="person__r">Research Computing Lead, TU Rhein</div></div></div></div>
-      <div class="card"><div class="person"><div class="person__av">DF</div><div><div class="person__n">Diego Fernández</div><div class="person__r">Cloud Native Consultant · CNCF Ambassador</div></div></div></div>
+    <div class="section-head">
+      <p class="eyebrow">Beyond the talks</p>
+      <h2 class="h2" id="activities-h">An event, not a webinar playlist.</h2>
+      <p class="lead">AenixCon is designed for participation: candid conversations, live questions and real connections across both days.</p>
+      <p class="mono swipe" aria-hidden="true">Swipe →</p>
     </div>
-  </div>
-</section>
-
-<section class="section" id="tickets">
-  <div class="wrap">
-    <div class="band">
-      <p class="eyebrow center">Register</p>
-      <h2>Free to attend — grab your ticket</h2>
-      <p class="lead center">AenixCon is free, but ticketed: registering reserves your seat and gets you the calendar invite, the networking rooms and the recordings afterward. Registration opens soon.</p>
-      <div class="btnrow" style="justify-content:center;margin-top:12px">
-        <a class="btn btn--primary btn--lg" href="#">Get your free ticket</a>
-        <a class="btn btn--ghost btn--lg" href="cfp.html">Speak at AenixCon →</a>
+    <div class="activities__grid">
+      <div class="activities__row rail">
+        <div class="feature"><p class="mono feature__k">01 / Live</p><h3 class="feature__t">Fireside interviews</h3><p class="feature__d"><span class="dk">Short, candid conversations with speakers between sessions — hosted like a live podcast.</span><span class="mb">Short, candid conversations with speakers between sessions.</span></p></div>
+        <div class="feature"><p class="mono feature__k">02 / Rooms</p><h3 class="feature__t">Networking rooms</h3><p class="feature__d"><span class="dk">Opt-in breakout rooms and an attendee intro board for real conversations online.</span><span class="mb">Breakout rooms and an attendee intro board.</span></p></div>
+        <div class="feature"><p class="mono feature__k">03 / Q&amp;A</p><h3 class="feature__t">Live Q&amp;A</h3><p class="feature__d"><span class="dk">Every talk ends with questions and answers — no pre-recorded silence.</span><span class="mb">Every talk ends with real questions and answers.</span></p></div>
       </div>
-      <p class="note" style="display:inline-block;margin-top:18px">Registration link coming soon — this button is a placeholder.</p>
+      <div class="activities__row rail">
+        <div class="feature"><p class="mono feature__k">04 / Careers</p><h3 class="feature__t">Community job board</h3><p class="feature__d"><span class="dk">Curated openings from AENIX and partners, with fast-track conversations during the event.</span><span class="mb">Curated openings from AENIX and partners.</span></p></div>
+        <div class="feature"><p class="mono feature__k">05 / Community</p><h3 class="feature__t">Giveaways</h3><p class="feature__d"><span class="dk">Prizes and a few surprises for people who show up and take part.</span><span class="mb">Prizes for people who show up and take part.</span></p></div>
+        <div class="feature"><p class="mono feature__k">06 / Archive</p><h3 class="feature__t">Recordings &amp; content</h3><p class="feature__d"><span class="dk">Ticket holders receive every session recording, slide deck and follow-up write-up.</span><span class="mb">Videos, slides and write-ups for ticket holders.</span></p></div>
+      </div>
+    </div>
+    <div class="activities__note">
+      <p class="mono">Built for participation</p>
+      <p>Live questions, opt-in rooms and follow-up materials are part of the program — not add-ons after the talks.</p>
     </div>
   </div>
 </section>
 
-<footer class="footer">
-  <div class="wrap footer__row">
-    <div><a class="brand" href="index.html"><span class="brand__mark"></span> Aenix<span class="brand__x">Con</span></a> &nbsp;·&nbsp; December 10–11, 2026 · Online</div>
-    <div>
-      <a href="cfp.html">Call for Proposals</a> ·
-      <a href="speakers.html">Speaker handbook</a> ·
-      <a href="https://cozystack.io">Cozystack</a> ·
-      <a href="https://aenix.io">Ænix</a>
+<section class="committee" id="committee" aria-labelledby="committee-h">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Program committee  /  Forming</p>
+      <h2 class="h2" id="committee-h">Who curates the program.</h2>
+      <p class="lead">The committee reviews every submission and shapes both tracks. Membership is still being finalized; names below are the current working roster.</p>
+      <p class="mono swipe" aria-hidden="true">Swipe →</p>
     </div>
+    <div class="committee__grid rail">
+      <div class="member"><p class="member__i" aria-hidden="true">AK</p><h3 class="member__n">Andrei Kvapil</h3><p class="member__r"><span class="dk">Creator of Cozystack · Founder, AENIX — Chair</span><span class="mb">Founder, AENIX — Chair</span></p></div>
+      <div class="member"><p class="member__i" aria-hidden="true">TT</p><h3 class="member__n">Timur Tukaev</h3><p class="member__r"><span class="dk">Cozystack maintainer · Co-founder, AENIX</span><span class="mb">Co-founder, AENIX</span></p></div>
+      <div class="member"><p class="member__i" aria-hidden="true">EN</p><h3 class="member__n">Elena Novak</h3><p class="member__r">Principal Platform Engineer</p></div>
+      <div class="member"><p class="member__i" aria-hidden="true">RI</p><h3 class="member__n">Rajesh Iyer</h3><p class="member__r"><span class="dk">Staff SRE · Meridian Cloud</span><span class="mb">Staff SRE</span></p></div>
+      <div class="member"><p class="member__i" aria-hidden="true">SA</p><h3 class="member__n">Sofia Almeida</h3><p class="member__r"><span class="dk">Kubernetes SIG-Storage contributor</span><span class="mb">SIG-Storage contributor</span></p></div>
+      <div class="member"><p class="member__i" aria-hidden="true">MK</p><h3 class="member__n">Marek Kowalski</h3><p class="member__r">Head of Infrastructure</p></div>
+      <div class="member"><p class="member__i" aria-hidden="true">HB</p><h3 class="member__n">Dr. Hannah Berger</h3><p class="member__r">Research Computing Lead</p></div>
+      <div class="member"><p class="member__i" aria-hidden="true">DF</p><h3 class="member__n">Diego Fernández</h3><p class="member__r"><span class="dk">Cloud Native Consultant · CNCF Ambassador</span><span class="mb">CNCF Ambassador</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="tickets" id="tickets" aria-labelledby="tickets-h">
+  <svg class="kv kv--land" viewBox="0 190 1440 520" aria-hidden="true"><defs><linearGradient id="kv-tix-l" x1="671.307" y1="480.885" x2="1872.69" y2="891.115" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F6B2"/><stop offset=".38" stop-color="#01A5FF"/><stop offset="1" stop-color="#661BE1" stop-opacity=".18"/></linearGradient></defs><circle cx="1272" cy="686" r="532" fill="none" stroke="url(#kv-tix-l)" stroke-width="36"/></svg>
+  <svg class="kv kv--port" viewBox="0 0 1080 1920" aria-hidden="true"><defs><linearGradient id="kv-tix-p" x1="333.178" y1="1074.62" x2="1916.82" y2="1615.38" gradientUnits="userSpaceOnUse"><stop stop-color="#D4F6B2"/><stop offset=".38" stop-color="#01A5FF"/><stop offset="1" stop-color="#661BE1" stop-opacity=".18"/></linearGradient></defs><circle cx="1125" cy="1345" r="704" fill="none" stroke="url(#kv-tix-p)" stroke-width="42"/></svg>
+  <div class="wrap tickets__in">
+    <p class="eyebrow"><span class="dk">Register  /  Free to attend</span><span class="mb">Register / Free to attend</span></p>
+    <h2 class="tickets__h" id="tickets-h">Grab your ticket.</h2>
+    <p class="tickets__lead"><span class="dk">Registration reserves your seat and gets you the calendar invite, networking rooms and recordings afterward.</span><span class="mb">Reserve your seat and get the calendar invite, networking rooms and recordings afterward.</span></p>
+    <div class="ctas">
+      <a class="cta cta--primary" href="#">Get free ticket <span aria-hidden="true">↗</span></a>
+      <a class="cta cta--secondary" href="cfp.html">Speak at AenixCon <span aria-hidden="true">↗</span></a>
+    </div>
+    <p class="mono">Registration link coming soon</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap ftr__in">
+    <div class="ftr__brand">
+      <a class="lockup" href="index.html" aria-label="AenixCon 2026 — home">
+        <svg class="lockup__word" viewBox="0 0 77.0043 24.0638" aria-hidden="true"><path fill-rule="evenodd" d="M0 23.9286L.0548 23.8413 14.9969.0637 15.0135.037H34.1111V.094L36.0777 2.1341 34.1111 4.175V4.2319H20.6964L21.8775 9.6831H34.0779V13.9116H22.8021L24.0709 19.7337H34.1111V23.9286H20.2154L20.2059 23.8836 19.103 18.7683H8.7069L5.6713 23.9006 5.6548 23.9286H0ZM18.2003 14.5734L16.3148 5.8982 11.1733 14.5734H18.2003ZM53.5263 7.1567V2.9942H58.5991V7.1567H53.5263ZM53.7081 23.9829V9.7707H58.4172V23.9829H53.7081ZM59.6102 23.9285L59.6872 23.8352 65.7119 16.569 60.0675 9.7389 59.9899 9.6456H65.2812L65.2984 9.6674 68.304 13.474 71.2864 9.6675 71.3036 9.6456H76.595L76.5179 9.7389 70.8753 16.5668 76.9267 23.8351 77.0043 23.9285H71.6839L71.6667 23.9071 68.2809 19.6744 64.9187 23.9069 64.9016 23.9285H59.6102ZM36.3792 23.8712V23.9281H41.0486V15.9794C41.0486 15.3538 41.1777 14.8066 41.4342 14.3361 41.6907 13.8653 42.0449 13.5086 42.4969 13.2645 42.9707 13.0007 43.524 12.8681 44.1596 12.8681 44.6554 12.8681 45.057 12.9628 45.3674 13.1481 45.6979 13.3153 45.9407 13.6006 46.0977 14.0123 46.2754 14.4086 46.3654 14.9278 46.3654 15.5761V23.9281H51.0349V15.3746C51.0349 14.0257 50.8435 12.9131 50.4567 12.0394 50.0705 11.1461 49.4895 10.4832 48.7129 10.0542 47.9375 9.6062 46.9519 9.3843 45.7589 9.3843 44.5831 9.3843 43.5275 9.6456 42.5934 10.1691 41.9312 10.5343 41.3862 11.0165 40.9586 11.6152V9.6723H36.3792V23.8712Z"/></svg>
+        <span class="lockup__con" aria-hidden="true">CON</span>
+        <span class="lockup__yr" aria-hidden="true">2026</span>
+      </a>
+      <p class="mono">December 10–11, 2026 · Online</p>
+    </div>
+    <nav class="ftr__links mono" aria-label="Footer">
+      <a href="cfp.html">Call for Proposals</a>
+      <a href="speakers.html">Speaker handbook</a>
+      <a href="https://cozystack.io">Cozystack</a>
+      <a href="https://aenix.io">Aenix</a>
+    </nav>
+    <p class="mono">Aenix Inc · 2026</p>
   </div>
 </footer>
 
-<script>
-document.querySelectorAll('.daytab button').forEach(function(b){
-  b.addEventListener('click',function(){
-    document.querySelectorAll('.daytab button').forEach(function(x){x.classList.remove('on')});
-    b.classList.add('on');
-    var day=b.getAttribute('data-day');
-    document.querySelectorAll('[data-day-panel]').forEach(function(p){
-      p.hidden = p.getAttribute('data-day-panel')!==day;
-    });
-  });
-});
-</script>
+<script src="con.js"></script>
 </body>
 </html>
