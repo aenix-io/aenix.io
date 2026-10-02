@@ -53,12 +53,11 @@ h1,h2,h3,p{margin:0}
   .h2{font-size:40px;line-height:48px}
 }
 
-/* ── Lockup (Logo/AenixCon 2026 — never split CON or 2026 off) ─────── */
+/* ── Lockup (Aenix wordmark + CON module; year dropped on the site) ── */
 .lockup{--s:1;position:relative;display:block;flex:none;width:calc(174px * var(--s));height:calc(35.911px * var(--s));color:var(--text)}
 .lockup:hover{text-decoration:none}
 .lockup__word{position:absolute;left:calc(7.4px * var(--s));top:calc(5.92px * var(--s));width:calc(77.004px * var(--s));height:calc(24.064px * var(--s));fill:currentColor}
 .lockup__con{position:absolute;left:calc(90.33px * var(--s));top:calc(7.59px * var(--s));padding:calc(3.702px * var(--s)) calc(5.923px * var(--s));border-radius:999px;background:var(--signal);color:var(--inverse);font:700 calc(11.11px * var(--s))/normal var(--sans)}
-.lockup__yr{position:absolute;left:calc(141.79px * var(--s));top:calc(13.7px * var(--s));font:500 calc(6.66px * var(--s))/calc(8.885px * var(--s)) var(--mono);letter-spacing:calc(.1332px * var(--s));color:var(--text)}
 @media(max-width:640px){.lockup{--s:.8046}}
 
 /* ── CTA ───────────────────────────────────────────────────────────── */
