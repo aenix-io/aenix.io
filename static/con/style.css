@@ -389,6 +389,10 @@ h1,h2,h3,p{margin:0}
 .cfp-submit__h{font-size:72px;line-height:80px;font-weight:700}
 .cfp-submit__lead{max-width:min(660px,52vw);font-size:20px;line-height:28px;color:var(--text-2)}
 .cfp-submit__need{max-width:720px;font:500 14px/20px var(--mono);letter-spacing:.6px;color:var(--signal)}
+/* Pipedrive form is styled for light backgrounds (cross-origin iframe), so it sits on the bg/inverse surface. */
+.cfp-form{align-self:stretch;max-width:760px;min-height:120px;padding:32px;background:var(--text);color:var(--inverse)}
+.cfp-form .small{color:var(--inverse)}
+@media(max-width:640px){.cfp-form{padding:16px}}
 @media(max-width:640px){
   .cfp-submit{--kv-r:-130px;min-height:810px;padding:64px 0}
   .cfp-submit .kv--port{top:420px}
