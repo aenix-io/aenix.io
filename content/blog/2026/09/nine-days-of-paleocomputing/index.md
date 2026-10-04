@@ -1,5 +1,5 @@
 ---
-title: "Nine days of paleocomputing: Wirth's processor in a browser, QEMU and Kubernetes, and what I broke along the way"
+title: "Paleocomputing, part 1: Wirth's processor, Project Oberon, a new architecture in QEMU and KubeVirt, and running it in Cozystack and K8s"
 description: "Running Niklaus Wirth's RISC5 processor in a browser, in QEMU and in Kubernetes, and measuring what array-bounds checking really costs on a fully open system."
 date: "2026-09-30"
 cover_image: "/img/blog/covers/nine-days-of-paleocomputing.png"
@@ -10,6 +10,7 @@ language: "en"
 images:
   - "blog/2026/09/nine-days-of-paleocomputing/oberon-boot-screen.png"
 ---
+
 
 
 On 1 January 2024, Niklaus Wirth died — the man who gave us Pascal, Modula-2 and Oberon, won the Turing Award, and spent his whole life waging a stubborn war on bloated software. What fewer people know is that, already well into his seventies, he sat down and designed a processor of his own: small and simple, so that he could show students a whole computer at once, from the logic gates up to the windows on the screen.
