@@ -13,13 +13,13 @@ binary if it is not at a standard path.
 
 Run: python3 scripts/generate-blog-covers.py            # posts without a cover
      python3 scripts/generate-blog-covers.py --regen    # also redraw covers this tool owns
-     python3 scripts/generate-blog-covers.py --only <slug> [--only <slug> ...]
+     python3 scripts/generate-blog-covers.py --only <slug> [--only <slug> ...] [--force]
+                                   # --force also replaces a cover the tool did not make
 Writes static/img/blog/covers/<slug>.jpg and sets cover_image in the post.
 Posts whose cover lives elsewhere (Medium images, hand-made art) are left alone.
 """
 import glob
 import hashlib
-import html as htmllib
 import math
 import os
 import random
@@ -28,21 +28,27 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import urllib.parse
 
+import yaml
 from PIL import Image
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
 CONTENT = os.path.join(ROOT, "content", "blog")
 OUT = os.path.join(ROOT, "static", "img", "blog", "covers")
 WEB_PREFIX = "/img/blog/covers"
-SITE = ROOT
 COZY_LOGO = os.path.join(os.path.dirname(__file__), "blog-covers", "cozystack-logo-white.svg")
 W, H = 1200, 630
 
 
 def _chrome():
-    for c in (os.environ.get("CHROME"), "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-              shutil.which("google-chrome"), shutil.which("chromium"), shutil.which("chromium-browser")):
+    if os.environ.get("CHROME"):
+        if not os.path.exists(os.environ["CHROME"]):
+            raise SystemExit(f"CHROME={os.environ['CHROME']} does not exist")
+        return os.environ["CHROME"]
+    for c in ("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "/Applications/Chromium.app/Contents/MacOS/Chromium",
+              shutil.which("google-chrome"), shutil.which("google-chrome-stable"), shutil.which("chromium"),
+              shutil.which("chromium-browser")):
         if c and os.path.exists(c):
             return c
     raise SystemExit("headless Chrome not found; set CHROME=/path/to/chrome")
@@ -56,8 +62,8 @@ def iso(x, y, z, ox, oy, s):
 
 
 class Scene:
-    def __init__(self, ox, oy, s, rng=None):
-        self.ox, self.oy, self.s, self.rng = ox, oy, s, rng
+    def __init__(self, ox, oy, s):
+        self.ox, self.oy, self.s = ox, oy, s
         self.items = []  # (depth, svg)
 
     def p(self, x, y, z):
@@ -166,8 +172,6 @@ class Scene:
 
     def tile(self, cx, cy, glyph, size=58):
         """Flat floating glass icon tile in screen space (like the Medium covers)."""
-        if self.rng and self.rng.random() < 0.45:
-            glyph = self.rng.choice(sorted(GLYPHS))
         r = size / 2
         g = GLYPHS[glyph]
         svg = (f'<g transform="translate({cx-r:.1f},{cy-r:.1f})" filter="url(#soft)">'
@@ -180,7 +184,7 @@ class Scene:
         rx, ry = r * self.s * C30 * 1.4, r * self.s * S30 * 1.4
         self.items.append((-60, f'<ellipse cx="{c[0]:.1f}" cy="{c[1]:.1f}" rx="{rx:.1f}" ry="{ry:.1f}" fill="none" stroke="rgba(120,200,255,.35)" stroke-width="1.5" stroke-dasharray="3 9"/>'))
 
-    def arrow(self, a, b, z=0.02, width=0.9):
+    def arrow(self, a, b, z=0.02, width=0.9, depth=None):
         (x1, y1), (x2, y2) = a, b
         L = math.hypot(x2 - x1, y2 - y1); ux, uy = (x2 - x1) / L, (y2 - y1) / L; px, py = -uy, ux
         hw, hl = width / 2, width * 1.1
@@ -188,7 +192,7 @@ class Scene:
                (x2 - ux * hl + px * hw, y2 - uy * hl + py * hw), (x2, y2), (x2 - ux * hl - px * hw, y2 - uy * hl - py * hw),
                (x2 - ux * hl - px * hw * .5, y2 - uy * hl - py * hw * .5), (x1 - px * hw * .5, y1 - py * hw * .5)]
         P = [self.p(x, y, z) for x, y in pts]
-        self.items.append((-40, self.poly(P, "url(#gArrow)", "rgba(140,240,255,.9)", 1.5, 'filter="url(#glow)"')))
+        self.items.append((min(x1 + y1, x2 + y2) - 0.5 if depth is None else depth, self.poly(P, "url(#gArrow)", "rgba(140,240,255,.9)", 1.5, 'filter="url(#glow)"')))
 
     def bars(self, x, y, heights, w=0.8, gap=0.35):
         for i, h in enumerate(heights):
@@ -281,100 +285,150 @@ DEFS = """
 """
 
 
-def scene_for(motif, seed=0):
+VARIANTS = {"platform": 3, "compare": 3, "migration": 2, "devx": 3, "security": 2, "sovereign": 2,
+            "cost": 2, "edge": 2, "gpu": 2, "storage": 2, "release": 2, "oberon": 1}
+
+# Icons a scene may float above itself; two distinct ones are drawn per cover.
+TILE_POOLS = {
+    "platform": ("net", "lock", "chart", "cloud", "db"), "compare": ("chart", "net", "cloud"),
+    "migration": ("cloud", "chart", "net", "term"), "devx": ("code", "term", "net", "chart"),
+    "security": ("lock", "shield", "chart", "term"), "sovereign": ("shield", "lock", "db", "cloud"),
+    "cost": ("chart", "cloud", "db"), "edge": ("net", "cpu", "cloud"), "gpu": ("gpu", "cpu", "chart", "cloud"),
+    "storage": ("db", "chart", "shield"), "release": ("code", "lock", "net", "cloud"), "oberon": ("term", "cpu", "code"),
+}
+
+
+def scene_for(motif, seed=0, variant=0, source="legacy"):
     rng = random.Random(seed)
-    variant = rng.randrange(3)
-    s = Scene(ox=880 + rng.randint(-14, 14), oy=250 + rng.randint(-8, 8), s=46 + rng.choice((-2, 0, 1)), rng=rng)
+    variant %= VARIANTS.get(motif, 1)
+    s = Scene(ox=850 + rng.randint(-10, 10), oy=250 + rng.randint(-6, 6), s=45 + rng.choice((-1, 0, 1)))
     s.platform(-1, -1, 9, 8)
     s.ring(3, 3, 0, 4.2)
+    v = variant
     if motif == "oberon":
         s.chip(0.2, 3.6, 0, 3.0, "RISC5")
         s.screen(0.0, 0.0, 0.2, 4.4, 3.0, kind="oberon")
-        s.server(4.6, 1.2, 0, units=3)
-        s.server(4.6, 4.2, 0, units=2)
-        s.link((3.4, 5.1, 0.15), (4.6, 5.1, 0.6))
-        s.link((4.4, 1.5, 1.6), (4.6, 2.2, 1.0))
-        s.tile(745, 120, "term"); s.tile(1105, 160, "cpu"); s.tile(1120, 420, "cloud"); s.tile(735, 470, "code")
-    elif motif == "storage":
+        s.server(4.4, 1.2, 0, units=3)
+        s.server(4.4, 4.2, 0, units=2)
+        s.link((3.4, 5.1, 0.15), (4.4, 5.1, 0.6))
+    elif motif == "storage" and v == 0:
         s.server(0.5, 0.5, 0, units=4)
-        s.cylinder(4.6, 1.6, 0, 1.0, 1.8)
-        s.cylinder(4.6, 4.8, 0, 1.0, 1.2, 2)
+        s.cylinder(4.4, 1.6, 0, 1.0, 1.8)
+        s.cylinder(4.4, 4.8, 0, 1.0, 1.2, 2)
         s.server(0.5, 4.2, 0, units=2)
-        s.link((2.7, 1.6, 0.5), (3.7, 1.6, 0.5)); s.link((2.7, 5.3, 0.5), (3.7, 4.8, 0.5))
-        s.tile(760, 130, "db"); s.tile(1110, 170, "chart"); s.tile(1115, 430, "shield")
-    elif motif == "gpu":
+        s.link((2.7, 1.6, 0.5), (3.5, 1.6, 0.5)); s.link((2.7, 5.3, 0.5), (3.5, 4.8, 0.5))
+    elif motif == "storage":
+        for i, x in enumerate((0.6, 2.8, 5.0)):
+            s.cylinder(x, 4.6 - i * 1.4, 0, 0.9, 1.0 + 0.5 * i, 2 + (i > 0))
+        s.server(1.2, 0.4, 0, w=2.6, d=2.6, units=3)
+        s.link((2.5, 3.0, 0.4), (2.8, 3.2, 0.4))
+    elif motif == "gpu" and v == 0:
         s.chip(1.0, 1.0, 0, 3.4, "GPU")
-        s.server(5.0, 0.8, 0, units=3); s.server(5.0, 4.0, 0, units=3)
-        s.link((4.4, 2.7, 0.2), (5.0, 1.9, 0.6)); s.link((4.4, 2.7, 0.2), (5.0, 5.1, 0.6))
-        s.tile(760, 130, "gpu"); s.tile(1110, 170, "chart"); s.tile(1120, 430, "cloud")
-    elif motif == "migration":
-        s.server(-0.4, 5.0, 0, units=3, legacy=True); s.server(1.9, 5.4, 0, w=1.8, d=1.8, units=2, legacy=True)
-        s.arrow((2.2, 3.6), (4.6, 1.2), width=1.0)
-        s.server(5.0, -0.6, 0, units=4); s.server(5.6, 2.2, 0, w=1.8, d=1.8, units=3)
-        s.label(0.7, 6.1, 2.7, "legacy"); s.label(6.1, 0.5, 3.4, "Cozystack")
-        s.tile(760, 130, "cloud"); s.tile(1120, 440, "chart")
-    elif motif == "compare" and variant == 1:
+        s.server(4.8, 0.8, 0, units=3); s.server(4.8, 4.0, 0, units=3)
+        s.link((4.4, 2.7, 0.2), (4.8, 1.9, 0.6)); s.link((4.4, 2.7, 0.2), (4.8, 5.1, 0.6))
+    elif motif == "gpu":
+        s.server(0.3, 0.6, 0, w=2.6, d=2.6, units=3); s.chip(0.3, 0.6, 1.9, 2.6, "GPU")
+        s.server(4.0, 3.4, 0, w=2.6, d=2.6, units=2); s.chip(4.0, 3.4, 1.26, 2.6, "GPU")
+        s.cylinder(5.0, 0.6, 0, 0.9, 1.4, 2)
+        s.link((2.9, 1.9, 0.4), (4.0, 4.7, 0.4)); s.link((4.1, 0.6, 0.4), (5.3, 3.4, 0.4))
+    elif motif == "migration" and v == 0:
+        s.server(-0.4, 4.8, 0, units=3, legacy=True); s.server(1.9, 5.3, 0, w=1.8, d=1.8, units=2, legacy=True)
+        s.arrow((2.0, 3.6), (3.7, 1.9), width=1.0)
+        s.server(4.2, -0.6, 0, units=4); s.server(4.8, 2.0, 0, w=1.8, d=1.8, units=3)
+        s.label(0.7, 5.9, 2.7, source); s.label(5.3, 0.5, 3.4, "Cozystack")
+    elif motif == "migration":  # from the back of the floor to the front
+        s.server(-0.6, -0.6, 0, w=1.6, d=1.6, units=2, legacy=True); s.server(1.6, -1.0, 0, w=1.4, d=1.4, units=3, legacy=True)
+        s.arrow((1.6, 1.6), (3.5, 3.5), width=0.9, depth=99)
+        s.server(4.2, 4.2, 0, w=2.2, d=2.2, units=2); s.cylinder(1.2, 5.2, 0, 0.9, 1.2, 2)
+        s.label(0.2, 0.2, 1.9, source); s.label(5.3, 5.3, 1.9, "Cozystack")
+    elif motif == "compare" and v == 1:
         for i, (u, legacy) in enumerate([(2, True), (3, True), (5, False)]):
-            s.server(0.2 + i * 2.6, 2.4 - i * 1.2, 0, w=2.0, d=2.0, units=u, legacy=legacy)
-        s.cylinder(1.2, 5.6, 0, 0.8, 0.8, 1); s.cylinder(3.8, 5.2, 0, 0.8, 1.2, 2); s.cylinder(6.4, 4.8, 0, 0.8, 1.8, 3)
-        s.tile(760, 130, "chart"); s.tile(1115, 450, "net")
-    elif motif == "compare" and variant == 2:
+            s.server(0.2 + i * 2.4, 2.6 - i * 1.4, 0, w=2.0, d=2.0, units=u, legacy=legacy)
+        s.cylinder(1.2, 5.6, 0, 0.8, 0.8, 1); s.cylinder(3.6, 5.2, 0, 0.8, 1.2, 2); s.cylinder(6.0, 4.8, 0, 0.8, 1.8, 3)
+    elif motif == "compare" and v == 2:
         s.server(0.0, 0.2, 0, units=2, legacy=True); s.server(0.0, 3.6, 0, units=3, legacy=True)
-        s.server(4.8, 1.6, 0, w=2.6, d=2.6, units=5)
-        s.link((2.2, 1.3, 0.5), (4.8, 2.4, 0.5)); s.link((2.2, 4.7, 0.5), (4.8, 3.4, 0.5))
-        s.label(6.1, 2.9, 3.8, "Cozystack")
-        s.tile(760, 130, "chart"); s.tile(1120, 440, "lock")
+        s.server(4.4, 1.6, 0, w=2.6, d=2.6, units=5)
+        s.link((2.2, 1.3, 0.5), (4.4, 2.4, 0.5)); s.link((2.2, 4.7, 0.5), (4.4, 3.4, 0.5))
+        s.label(5.7, 2.9, 3.8, "Cozystack")
     elif motif == "compare":
-        s.server(0.0, 0.4, 0, units=2, legacy=True); s.server(2.9, 0.4, 0, units=3, legacy=True); s.server(5.8, 0.4, 0, units=5)
-        s.cylinder(1.1, 4.8, 0, 0.9, 0.9, 1); s.cylinder(4.0, 4.8, 0, 0.9, 1.3, 2); s.cylinder(6.9, 4.8, 0, 0.9, 1.9, 3)
-        s.tile(760, 130, "chart"); s.tile(1115, 160, "net")
+        s.server(0.0, 0.8, 0, units=2, legacy=True); s.server(2.6, 0.8, 0, units=3, legacy=True); s.server(5.0, 0.8, 0, units=5)
+        s.cylinder(1.1, 4.8, 0, 0.9, 0.9, 1); s.cylinder(3.7, 4.8, 0, 0.9, 1.3, 2); s.cylinder(6.1, 4.8, 0, 0.9, 1.9, 3)
+    elif motif == "security" and v == 0:
+        s.server(0.3, 0.3, 0, units=3); s.server(0.3, 4.2, 0, units=2); s.server(4.8, 4.2, 0, units=2)
+        s.shield(4.4, 1.6, 0.6, 2.4); s.ring(4.4, 1.6, 0, 2.6)
     elif motif == "security":
-        s.server(0.3, 0.3, 0, units=3); s.server(0.3, 4.2, 0, units=2); s.server(5.2, 4.2, 0, units=2)
-        s.shield(4.6, 1.6, 0.6, 2.4); s.ring(4.6, 1.6, 0, 2.6)
-        s.tile(760, 130, "lock"); s.tile(1110, 430, "chart"); s.tile(1120, 170, "term")
+        s.shield(2.8, 2.8, 2.6, 2.6)
+        for (x, y, u) in ((4.2, 0.0, 3), (0.0, 4.2, 3), (4.4, 4.4, 2)):
+            s.server(x, y, 0, w=1.8, d=1.8, units=u)
+        s.ring(2.8, 2.8, 0, 3.4)
+    elif motif == "sovereign" and v == 0:
+        s.globe(3.6, 2.2, 0.8, 2.2); s.ring(3.6, 2.2, 0, 3.0)
+        s.server(0.2, 4.6, 0, units=2); s.server(5.2, 4.6, 0, units=3)
     elif motif == "sovereign":
-        s.globe(3.8, 2.2, 0.8, 2.2); s.ring(3.8, 2.2, 0, 3.0)
-        s.server(0.2, 4.6, 0, units=2); s.server(5.6, 4.6, 0, units=3)
-        s.tile(760, 130, "shield"); s.tile(1115, 170, "lock"); s.tile(1120, 440, "db")
-    elif motif == "cost":
+        s.server(0.2, 0.4, 0, w=2.6, d=2.6, units=4)
+        s.shield(4.6, 3.6, 0.4, 2.0)
+        s.globe(5.0, 0.0, 1.8, 1.4)
+        s.cylinder(1.4, 5.2, 0, 0.9, 1.2, 2)
+        s.link((2.8, 2.0, 0.4), (4.0, 3.6, 0.4))
+    elif motif == "cost" and v == 0:
         s.bars(0.4, 0.6, [0.8, 1.4, 2.1, 2.9], w=0.85)
-        s.coins(5.6, 1.4, 5); s.coins(6.6, 3.0, 3); s.coins(5.2, 3.6, 2, sym="$")
+        s.coins(5.2, 1.4, 5); s.coins(6.0, 3.0, 3); s.coins(4.8, 3.6, 2, sym="$")
         s.server(0.6, 4.4, 0, units=2)
-        s.tile(760, 130, "chart"); s.tile(1115, 170, "cloud")
-    elif motif == "devx":
+    elif motif == "cost":
+        s.server(0.2, 0.2, 0, w=2.4, d=2.4, units=4)
+        s.bars(0.6, 4.4, [2.6, 2.0, 1.4, 0.8], w=0.8)
+        s.coins(4.6, 0.8, 6, r=0.65); s.coins(5.6, 2.6, 4, r=0.65, sym="$")
+    elif motif == "edge" and v == 0:
+        s.server(0.2, 0.4, 0, units=4); s.cylinder(3.0, 1.4, 0, 0.8, 1.2, 2)
+        for (x, y) in ((5.0, 0.4), (5.4, 3.6), (1.6, 5.4)):
+            s.server(x, y, 0, w=1.2, d=1.2, units=1); s.tower(x + 0.6, y - 0.6)
+        s.link((2.4, 1.4, 0.4), (5.0, 1.0, 0.3)); s.link((2.4, 1.4, 0.4), (5.4, 4.2, 0.3)); s.link((1.3, 2.6, 0.4), (2.2, 5.4, 0.3))
+    elif motif == "edge":
+        s.server(2.0, 2.0, 0, w=2.6, d=2.6, units=3)
+        for (x, y) in ((-0.4, -0.4), (5.2, 0.0), (-0.2, 5.4), (5.4, 5.0)):
+            s.server(x, y, 0, w=1.1, d=1.1, units=1); s.tower(x + 0.55, y - 0.5, 2.0)
+            s.link((x + 0.55, y + 0.55, 0.3), (3.3, 3.3, 0.3))
+    elif motif == "devx" and v == 0:
         s.screen(0.0, 0.0, 0.2, 4.4, 3.0)
         s.package(0.6, 4.6, 0); s.package(2.6, 4.6, 0); s.package(4.6, 4.6, 0)
-        s.arrow((2.2, 5.4), (2.6, 5.4), width=0.5); s.arrow((4.2, 5.4), (4.6, 5.4), width=0.5)
-        s.server(5.4, 1.0, 0, units=3)
-        s.tile(745, 120, "code"); s.tile(1110, 160, "term"); s.tile(1120, 430, "net")
-    elif motif == "edge":
-        s.server(0.4, 0.6, 0, units=4); s.cylinder(3.2, 1.6, 0, 0.8, 1.2, 2)
-        s.tower(6.4, 0.6); s.tower(7.0, 4.2); s.tower(3.6, 5.6, 2.2)
-        s.server(5.6, 2.6, 0, w=1.2, d=1.2, units=1); s.server(2.2, 4.6, 0, w=1.2, d=1.2, units=1)
-        s.link((2.6, 1.6, 0.4), (5.6, 3.1, 0.4)); s.link((1.5, 2.8, 0.4), (2.6, 4.6, 0.4))
-        s.tile(760, 130, "net"); s.tile(1115, 170, "cpu")
-    elif motif == "release":
+        s.server(5.0, 1.0, 0, units=3)
+    elif motif == "devx" and v == 1:
+        for i in range(4):
+            s.package(-0.2 + i * 1.6, 4.8 - i * 1.6, 0, 1.3)
+        s.arrow((0.6, 3.6), (4.2, 0.0), width=0.6)
+        s.server(4.4, 2.6, 0, w=2.4, d=2.4, units=3)
+    elif motif == "devx":
+        s.screen(0.4, 0.4, 0.2, 3.6, 2.6)
+        s.screen(4.2, 0.4, 0.2, 2.2, 1.8)
+        s.server(1.0, 3.8, 0, units=2); s.server(4.0, 3.8, 0, units=3)
+        s.link((2.1, 3.8, 0.6), (5.1, 3.8, 0.6))
+    elif motif == "release" and v == 0:
         s.package(0.4, 0.6, 0, 1.8); s.package(0.4, 0.6, 1.8, 1.8); s.package(2.6, 0.6, 0, 1.8)
-        s.server(5.0, 0.6, 0, units=4); s.server(5.0, 3.8, 0, units=2)
+        s.server(4.8, 0.6, 0, units=4); s.server(4.8, 3.8, 0, units=2)
         s.cylinder(1.8, 4.6, 0, 1.0, 1.4, 2)
-        s.link((4.4, 1.5, 0.6), (5.0, 1.5, 0.6))
-        s.tile(760, 130, "code"); s.tile(1115, 170, "lock"); s.tile(1120, 440, "net")
-    elif variant == 1:  # platform: rack row around a storage core
-        s.server(0.0, 0.0, 0, units=3); s.server(2.6, 0.0, 0, units=4); s.server(5.2, 0.0, 0, units=3)
-        s.cylinder(3.6, 4.4, 0, 1.2, 1.6, 2)
-        s.server(0.0, 4.0, 0, units=2); s.server(5.6, 3.8, 0, w=1.8, d=1.8, units=2)
-        s.link((3.7, 2.2, 0.4), (3.6, 3.2, 0.4)); s.link((2.2, 5.1, 0.4), (2.4, 4.4, 0.4))
-        s.tile(760, 130, "net"); s.tile(1110, 450, "lock"); s.tile(1120, 170, "cloud")
-    elif variant == 2:  # platform: two clusters linked through the fabric
+        s.link((4.4, 1.5, 0.6), (4.8, 1.5, 0.6))
+    elif motif == "release":
+        s.server(0.0, 3.4, 0, w=2.6, d=2.6, units=3)
+        for i in range(3):
+            s.package(3.2 + (i % 2) * 1.0, 0.4 + i * 1.5, 0, 1.4)
+        s.package(3.7, 1.15, 1.4, 1.4)
+        s.shield(5.8, 5.6, 0.2, 1.4)
+        s.link((2.6, 4.7, 0.4), (3.2, 4.0, 0.4))
+    elif v == 1:  # platform: rack row around a storage core
+        s.server(0.0, 0.0, 0, units=3); s.server(2.6, 0.0, 0, units=4); s.server(4.8, 0.4, 0, w=1.8, d=1.8, units=3)
+        s.cylinder(3.4, 4.4, 0, 1.2, 1.6, 2)
+        s.server(0.0, 4.0, 0, units=2)
+        s.link((3.7, 2.2, 0.4), (3.4, 3.2, 0.4)); s.link((2.2, 5.1, 0.4), (2.2, 4.4, 0.4))
+    elif v == 2:  # platform: two clusters linked through the fabric
         s.server(0.2, 0.6, 0, w=2.6, d=2.6, units=4); s.server(0.6, 4.4, 0, w=1.8, d=1.8, units=2)
-        s.server(5.0, 0.6, 0, w=1.8, d=1.8, units=3); s.server(5.0, 3.6, 0, w=2.6, d=2.6, units=3)
-        s.link((2.8, 1.9, 0.5), (5.0, 1.5, 0.5)); s.link((2.8, 1.9, 0.5), (5.0, 4.9, 0.5)); s.link((2.4, 5.3, 0.5), (5.0, 4.9, 0.5))
-        s.tile(760, 130, "cloud"); s.tile(1115, 170, "net"); s.tile(1120, 450, "db")
+        s.server(4.6, 0.6, 0, w=1.8, d=1.8, units=3); s.server(4.6, 3.6, 0, w=2.6, d=2.6, units=3)
+        s.link((2.8, 1.9, 0.5), (4.6, 1.5, 0.5)); s.link((2.8, 1.9, 0.5), (4.6, 4.9, 0.5)); s.link((2.4, 5.3, 0.5), (4.6, 4.9, 0.5))
     else:  # platform / generic cloud
-        s.server(0.3, 0.3, 0, units=4); s.server(3.4, 0.3, 0, units=3); s.server(0.3, 3.6, 0, units=2)
-        s.cylinder(4.6, 4.8, 0, 1.0, 1.4, 2)
-        s.link((2.5, 1.4, 0.6), (3.4, 1.4, 0.6)); s.link((1.4, 2.5, 0.6), (1.4, 3.6, 0.6))
-        s.tile(760, 130, "net"); s.tile(1110, 170, "lock"); s.tile(1120, 430, "chart")
+        s.server(0.3, 0.3, 0, units=4); s.server(3.2, 0.3, 0, units=3); s.server(0.3, 3.6, 0, units=2)
+        s.cylinder(4.4, 4.8, 0, 1.0, 1.4, 2)
+        s.link((2.5, 1.4, 0.6), (3.2, 1.4, 0.6)); s.link((1.4, 2.5, 0.6), (1.4, 3.6, 0.6))
+    for (cx, cy), glyph in zip(((735, 118), (1112, 150)), rng.sample(TILE_POOLS.get(motif, TILE_POOLS["platform"]), 2)):
+        s.tile(cx, cy, glyph)
     return s.render()
 
 
@@ -395,11 +449,11 @@ PALETTES = [  # (glow, second glow, top-left wash, gradient stops)
 ]
 
 
-def html(title, eyebrow, motif, seed=0):
+def html(title, eyebrow, motif, seed=0, variant=0, source="legacy"):
     import html as H_
-    aenix = open(os.path.join(SITE, "static/images/logo-full-white.svg")).read()
+    aenix = open(os.path.join(ROOT, "static/images/logo-full-white.svg")).read()
     cozy = open(COZY_LOGO).read()
-    fonts = os.path.join(SITE, "static/fonts")
+    fonts = urllib.parse.quote(os.path.join(ROOT, "static/fonts"))
     head, sub = split_title(title)
     n = len(head)
     size = 56 if n <= 30 else 50 if n <= 45 else 44 if n <= 70 else 38 if n <= 100 else 32 if n <= 140 else 28
@@ -423,28 +477,33 @@ html,body {{ margin:0; width:{W}px; height:{H}px; overflow:hidden; background:#0
 svg.art {{ position:absolute; inset:0; }}
 .txt {{ position:absolute; left:64px; top:72px; width:540px; }}
 .pill {{ display:inline-block; font-weight:500; font-size:17px; letter-spacing:.02em; padding:7px 14px; border:1.5px solid rgba(255,255,255,.55); border-radius:999px; color:#dfe8ff; background:rgba(255,255,255,.06); }}
-h1 {{ margin:26px 0 0; font-weight:700; font-size:{size}px; line-height:1.14; letter-spacing:-.01em; text-shadow:0 2px 18px rgba(0,0,40,.5); }}
+h1 {{ overflow-wrap:anywhere; margin:26px 0 0; font-weight:700; font-size:{size}px; line-height:1.14; letter-spacing:-.01em; text-shadow:0 2px 18px rgba(0,0,40,.5); }}
 .sub {{ margin:18px 0 0; max-width:470px; font-weight:500; font-size:{22 if len(sub) < 90 else 19}px; line-height:1.35; color:#c9d6ff; text-shadow:none; letter-spacing:0; }}
 .cozy {{ position:absolute; left:64px; bottom:46px; height:30px; }}
 .cozy svg {{ height:30px; width:auto; }}
 .aenix {{ position:absolute; right:56px; bottom:44px; height:36px; }}
 .aenix svg {{ height:36px; width:auto; }}
 </style></head><body><div class="c"><div class="grain"></div>
-<svg class="art" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">{DEFS}{scene_for(motif, seed)}</svg>
+<svg class="art" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">{DEFS}{scene_for(motif, seed, variant, source)}</svg>
 <div class="txt"><span class="pill">{eyebrow}</span><h1>{title_html}</h1></div>
 <div class="cozy">{cozy}</div><div class="aenix">{aenix}</div>
 </div></body></html>"""
 
 
 
-def render(title, eyebrow, motif, out_jpg, seed=0):
+def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy"):
     with tempfile.TemporaryDirectory() as tmp:
         page, png = os.path.join(tmp, "cover.html"), os.path.join(tmp, "cover.png")
         with open(page, "w", encoding="utf-8") as fh:
-            fh.write(html(title, eyebrow, motif, seed))
-        subprocess.run([_chrome(), "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
-                        f"--window-size={W},{H}", "--allow-file-access-from-files", f"--screenshot={png}",
-                        "--virtual-time-budget=2000", "file://" + page], check=True, capture_output=True)
+            fh.write(html(title, eyebrow, motif, seed, variant, source))
+        cmd = [_chrome(), "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
+               f"--window-size={W},{H}", "--allow-file-access-from-files", f"--screenshot={png}",
+               "--virtual-time-budget=2000", "file://" + page]
+        if hasattr(os, "geteuid") and os.geteuid() == 0:
+            cmd.insert(1, "--no-sandbox")  # Chrome refuses to sandbox as root, e.g. in CI containers
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        if res.returncode or not os.path.exists(png):
+            raise SystemExit(f"Chrome failed to render {out_jpg}:\n{res.stderr[-2000:]}")
         Image.open(png).convert("RGB").save(out_jpg, "JPEG", quality=88, optimize=True, progressive=True)
 
 
@@ -455,6 +514,7 @@ MOTIF_OVERRIDES = {
     "cloud-repatriation-tco-modeling-honest-numbers": "cost",
     "hosting-provider-platform-modernization": "migration",
     "idp-edition-developer-velocity-economics": "devx",
+    "internal-developer-portal-vs-platform": "devx",
     "launch-customer-facing-cloud-product": "platform",
     "msp-cloud-platform-modernization": "migration",
     "proxmox-migration-when-cozystack-fits": "migration",
@@ -488,32 +548,39 @@ def motif_for(slug, title):
     return "platform"
 
 
-_FM_RE = {
-    "title": re.compile(r'^title:\s*"?(.*?)"?\s*$', re.M),
-    "type": re.compile(r'^type:\s*"?(.*?)"?\s*$', re.M),
-    "cover_image": re.compile(r'^cover_image:\s*"?(.*?)"?\s*$', re.M),
+# Pill topic when none of the post's topics appears in its title.
+MOTIF_TOPIC = {
+    "platform": "Private Cloud", "compare": "Comparison", "migration": "Migration", "devx": "Platform Engineering",
+    "security": "Compliance", "sovereign": "Sovereign Cloud", "cost": "Cloud Economics", "edge": "Edge",
+    "gpu": "AI/ML", "storage": "Storage", "release": "Cozystack", "oberon": "Paleocomputing",
 }
-_TOPICS_RE = re.compile(r'^topics:\s*\[(.*?)\]', re.M)
-
-
-def _field(fm, name):
-    m = _FM_RE[name].search(fm)
-    return m.group(1).strip() if m else ""
 
 
 def eyebrow_for(fm, title, motif):
-    kind = (_field(fm, "type") or "article").replace("-", " ").capitalize()
-    m = _TOPICS_RE.search(fm)
-    topics = [t.strip().strip('"').strip("'") for t in m.group(1).split(",")] if m else []
-    topics = [t for t in topics if t]
-    if motif == "oberon":
-        topic = "Paleocomputing"
-    elif motif == "release":
-        topic = "Cozystack"
-    else:
-        in_title = [t for t in topics if t.lower() in title.lower() and t.lower() != "cozystack"]
-        topic = (in_title or [t for t in topics if t != "Cozystack"] or ["Cozystack"])[0]
-    return f"{kind} · {topic}"
+    kind = str(fm.get("type") or "article").replace("-", " ").capitalize()
+    if motif in ("release", "oberon"):
+        return f"{kind} · {MOTIF_TOPIC[motif]}"
+    words = re.findall(r"[a-z0-9/]+", title.lower())
+
+    def in_title(topic):  # "Sovereignty" matches "sovereign", "NIS2" matches "nis2"
+        stem = topic.lower()[:max(4, len(topic) - 3)]
+        return any(w.startswith(stem) for w in words) or topic.lower() in title.lower()
+
+    hits = [t for t in (fm.get("topics") or []) if isinstance(t, str) and t.lower() != "cozystack" and in_title(t)]
+    return f"{kind} · {hits[0] if hits else MOTIF_TOPIC.get(motif, 'Cozystack')}"
+
+
+def source_label(title):
+    """What a migration scene moves away from."""
+    return "public cloud" if re.search(r"reverse|repatriation|leaving public cloud", title, re.I) else "legacy"
+
+
+def _split(text):
+    """Front matter text, parsed front matter and body; None if the file has no front matter."""
+    m = re.match(r"---\n(.*?\n)---(\n.*)\Z", text, re.S)
+    if not m:
+        return None
+    return m.group(1), yaml.safe_load(m.group(1)) or {}, m.group(2)
 
 
 def _set_cover(path, fm_text, body, web_path):
@@ -524,44 +591,62 @@ def _set_cover(path, fm_text, body, web_path):
     elif re.search(r'^date:.*$', fm_text, re.M):
         fm_text = re.sub(r'(^date:.*$)', r'\1\n' + line, fm_text, count=1, flags=re.M)
     else:
-        fm_text = fm_text.rstrip() + "\n" + line + "\n"
+        fm_text = fm_text.rstrip("\n") + "\n" + line + "\n"
     with open(path, "w", encoding="utf-8") as fh:
-        fh.write("---\n" + fm_text.strip("\n") + "\n---" + body)
+        fh.write("---\n" + fm_text + "---" + body)
 
 
 def main():
     args = sys.argv[1:]
-    regen = "--regen" in args
+    regen, force = "--regen" in args, "--force" in args
     only = {args[i + 1] for i, a in enumerate(args) if a == "--only" and i + 1 < len(args)}
+    if "--only" in args and not only:
+        raise SystemExit("--only needs a post slug")
     os.makedirs(OUT, exist_ok=True)
-    made = 0
+
+    posts, turn = [], {}
     for path in sorted(glob.glob(os.path.join(CONTENT, "**", "index.md"), recursive=True)):
-        text = open(path, encoding="utf-8").read()
-        parts = text.split("---", 2)
-        if len(parts) < 3:
+        parsed = _split(open(path, encoding="utf-8").read())
+        if not parsed:
             continue
-        fm_text, body = parts[1], parts[2]
+        fm_text, fm, body = parsed
         slug = os.path.basename(os.path.dirname(path))
-        cover = _field(fm_text, "cover_image")
-        owned = cover.startswith(WEB_PREFIX)
+        cover = str(fm.get("cover_image") or "")
+        owned = cover.startswith(WEB_PREFIX + "/")
+        title = str(fm.get("title") or slug.replace("-", " ").title())
+        motif = motif_for(slug, title)
+        # Covers of one motif take turns through its layouts in date order, counted over every
+        # post that has or gets a generated cover, so neighbours in the blog grid differ and a
+        # single cover rendered with --only matches a full run.
+        variant = None
+        if owned or not cover:
+            variant = turn.get(motif, 0)
+            turn[motif] = variant + 1
         if only:
             if slug not in only:
                 continue
+            if cover and not owned and not force:
+                print(f"skip {slug}: its cover ({cover}) is not generated by this tool; add --force to replace it")
+                continue
         elif cover and not (regen and owned):
             continue
-        title = _field(fm_text, "title") or slug.replace("-", " ").title()
-        motif = motif_for(slug, title)
-        web_path = f"{WEB_PREFIX}/{slug}.jpg"
+        posts.append((path, fm_text, fm, body, slug, cover, owned, title, motif, variant or 0))
+    missing = only - {p[4] for p in posts}
+    if missing:
+        print("no such post or skipped: " + ", ".join(sorted(missing)))
+
+    for path, fm_text, fm, body, slug, cover, owned, title, motif, variant in posts:
         seed = int(hashlib.sha1(slug.encode()).hexdigest()[:8], 16)
-        render(title, eyebrow_for(fm_text, title, motif), motif, os.path.join(OUT, slug + ".jpg"), seed)
+        out = os.path.join(OUT, slug + ".jpg")
+        web_path = f"{WEB_PREFIX}/{slug}.jpg"
+        render(title, eyebrow_for(fm, title, motif), motif, out, seed, variant, source_label(title))
         if cover != web_path:
             _set_cover(path, fm_text, body, web_path)
             old = os.path.join(ROOT, "static", cover.lstrip("/")) if owned else None
-            if old and old != os.path.join(OUT, slug + ".jpg") and os.path.exists(old):
+            if old and old != out and os.path.exists(old):
                 os.remove(old)
-        print(f"{motif:10} {slug}")
-        made += 1
-    print(f"\ngenerated {made} cover(s) -> {os.path.relpath(OUT, ROOT)}")
+        print(f"{motif:10} {variant}  {slug}")
+    print(f"\ngenerated {len(posts)} cover(s) -> {os.path.relpath(OUT, ROOT)}")
 
 
 if __name__ == "__main__":
