@@ -2,7 +2,7 @@
 title: "Cozystack v0.11"
 description: "The Cozystack v0.11 release is now available for download, installation, or updating current installations."
 date: "2024-08-15"
-cover_image: "/img/blog/covers/cozystack-v0-11.png"
+cover_image: "/img/blog/medium/cozystack-v0-11/01.jpg"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Cilium", "Talos", "LINSTOR", "Multi-tenancy"]
@@ -17,7 +17,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-11-76ab57a84842"
 
 The [Cozystack v0.11 release](https://github.com/aenix-io/cozystack/releases/tag/v0.11.0) is now available for download, installation, or updating current installations.
 
-![image](https://cdn-images-1.medium.com/max/800/1*YkBDu2xMuY2R4cZcCwh5-Q.jpeg)
+![image](/img/blog/medium/cozystack-v0-11/01.jpg)
 
 **Key changes:**
  — **Added S3 support.** Implemented the basic SeaweedFS functionality in Cozystack. Developed a Kubernetes-COSI driver for automatic S3 bucket provisioning. Added support for automatic volume resizing in the SeaweedFS chart.

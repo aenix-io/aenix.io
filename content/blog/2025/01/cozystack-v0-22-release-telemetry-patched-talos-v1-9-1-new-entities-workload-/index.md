@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "Observability", "Storage", "etcd"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*2QrRVPI2aX1cTINRsKtFzA.png"
+cover_image: "/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-%D0%B8-workloadmonitor-ff22e6d20b17"
 ---
 
@@ -34,7 +34,7 @@ For Kubernetes applications like Postgres, Monitoring, VirtualMachine, VMInstanc
 
 The Cozystack dashboard now displays the number of application replicas and the service level for each workload group.
 
-![image](https://cdn-images-1.medium.com/max/800/1*EEQEZnOxwexdC6rmGQ6Zcg.png)
+![image](/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/02.png)
 
 ### Telemetry
 
@@ -53,7 +53,7 @@ Client and server telemetry have been implemented and [released](https://github.
 - In the Cozystack configuration, the option extra-keycloak-redirect-uri-for-dashboard has been added, allowing you to configure additional redirect URLs for Keycloak.
 - Fixed a VMInstance bug that was blocking the connection of VMdisks to virtual machines.
 
-![image](https://cdn-images-1.medium.com/max/800/1*2QrRVPI2aX1cTINRsKtFzA.png)
+![image](/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/cover.png)
 
 Grafana dashboard for KubeVirt
 

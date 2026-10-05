@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["Platform Engineering", "Developer Tools", "Open Source", "Kubernetes", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*C1MOA-YyrnseDO5ATwQXTQ.png"
+cover_image: "/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/cover.png"
 source_url: "https://blog.aenix.io/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects-c59da4451b8b"
 hreflang_de: /de/blog/2026/07/fokus-auf-heute-aeman-tagesplanung-fuer-entwickler-auf-github-projects/
 ---
@@ -17,7 +17,7 @@ My name is Andrei Kvapil, and I’m the founder of Ænix — we build Cozystack,
 
 This article is the story of how we fixed that with aeman — a tool we built ourselves and recently [open sourced](https://github.com/aenix-io/aeman). But I have to start further back.
 
-![aeman board](https://cdn-images-1.medium.com/max/800/1*C1MOA-YyrnseDO5ATwQXTQ.png)
+![aeman board](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/cover.png)
 
 ### Where this came from
 
@@ -64,13 +64,13 @@ An engineer opens aeman in the morning and sees their day: cards grouped into fo
 
 The board pulls in cards from all of the engineer’s teams, meaning from the current sprint of each of them. The team selector at the top narrows the list to a single team, or hides every card that’s done, blocked, or in review, leaving only what you can work on right here and right now, when it’s time to get into deep work. Each card has a completion slider from 0 to 100% in steps of 10% (dragging the progress bar to done is surprisingly satisfying), a stage (Review / Locked / Recurrent / Done) that recolors the bar, a counter of days in progress, and links to an issue or a PR. On the right there’s a notes panel: a personal log of the day where you can write things down as you work. That way you don’t have to dig through your memory at the next standup — you skim the notes and report what you did. Notes live in the context of the day; tomorrow the board is clean, but you can always step back a day and reread them.
 
-![The aeman Me board](https://cdn-images-1.medium.com/max/800/1*t7GSMyohBoTEF7Eqaq8yJg.png)
+![The aeman Me board](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/02.png)
 
 ### The Team board: the whole team at a glance
 
 The team lead’s view: a grid of people by zones for a chosen day. Columns are engineers with their avatars, rows are the same colored zones. You see immediately who’s working on what, whose work is on fire, and who’s overloaded. The lead creates cards from here too: a couple of clicks and a task is created, assigned, and prioritized.
 
-![The aeman Team board](https://cdn-images-1.medium.com/max/800/1*4bAxYXg2i80DqZ2N3hz5Bg.png)
+![The aeman Team board](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/03.png)
 
 In Me mode the team lead can also impersonate an engineer (the **View as** button) — look at the board through their eyes and tidy it up if needed.
 
@@ -80,7 +80,7 @@ Our sprints are short — one day — and they count **forward**, not backward. 
 
 If planning decides a task definitely isn’t happening today, there are **+1 day** and **+1 week** buttons: the card disappears from the board until its day, and no history is lost. When that day comes, it shows up again.
 
-![Carry-over controls in aeman](https://cdn-images-1.medium.com/max/529/1*ADBOkMVY8IheKZ_g6ZOoVQ.png)
+![Carry-over controls in aeman](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/04.png)
 
 ### The weekly plan
 
@@ -90,7 +90,7 @@ The founders and I used to plan the team’s week by writing a new list of weekl
 
 Under the team grid lives the weekly plan: the team’s business tasks for the week, laid out in two lanes, “by Wednesday” and “by Friday”. Once a week the founders put tasks there, and the tasks wait their turn. The team lead drags a plan card onto an engineer; it appears on that engineer’s daily board while staying in the plan with a colored marker. A shared progress bar shows how the team is doing against the week, and the weekly **Carry over** moves whatever is still open into the next week.
 
-![The aeman weekly plan](https://cdn-images-1.medium.com/max/800/1*InhqRG9OL-5I0VeCIN0UXA.png)
+![The aeman weekly plan](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/05.png)
 
 ### Reviews, subtasks, and the activity log
 
@@ -115,7 +115,7 @@ Now for the part the engineering crowd came for.
 
 aeman has no database of its own at all. Every card is an item on a GitHub Projects board, and every field — zone, progress, sprint, weekly plan — is an ordinary project field. aeman even provisions the fields it needs lazily: point it at any empty project and the first change creates whatever is missing. You could say aeman is a specialized view over a GitHub board: the same board opens in GitHub’s native interface, the data is always yours, and you can walk away from aeman at any moment without migrating anything.
 
-![The same board in the GitHub Projects interface](https://cdn-images-1.medium.com/max/800/1*B5CY3zi_iZz2AnBQJ3TV6w.png)
+![The same board in the GitHub Projects interface](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/06.png)
 
 ### A Kubernetes-style API
 
@@ -161,7 +161,7 @@ There’s no separate API for AI and no special privileges. Every action goes th
 
 Besides the local mode, aeman offers a publicly available MCP server. Engineers can connect AI clients without installing anything locally and start working with their tasks directly from Claude Code and other AI agents.
 
-![aeman driven from an AI agent over MCP](https://cdn-images-1.medium.com/max/800/1*VAAJ0kR7KdjF_2OnIgHpnQ.png)
+![aeman driven from an AI agent over MCP](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/07.png)
 
 ### How to try it
 

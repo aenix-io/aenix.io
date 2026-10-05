@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "KubeVirt", "GPU", "Multi-tenancy", "Talos"]
 language: "de"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*iP1z9ZdvJiK8HrYN.jpg"
+cover_image: "/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/cover.jpg"
 source_url: "https://blog.aenix.io/cozystack-1-4-0c5e399a7308"
 hreflang_en: /blog/2026/05/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/
 ---
@@ -21,7 +21,7 @@ Cozystack v1.4.0 ist verfügbar. Das Release wurde am 19. Mai 2026 veröffentlic
 
 Dieser Zyklus konzentriert sich auf den Betrieb von Cozystack als Produktivplattform: eine schnellere Dashboard-Architektur, langlebigere Worker für Tenant-Kubernetes, klarere Ressourcen-Dimensionierung, Backup-Abläufe für Managed Applications, bessere GPU-Auslastung, sichereres Veröffentlichen über Ingress und weniger Race Conditions bei Erstinstallation und Upgrade.
 
-![image](https://cdn-images-1.medium.com/max/800/0*iP1z9ZdvJiK8HrYN.jpg)
+![image](/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/cover.jpg)
 
 ### Die wichtigsten Neuerungen
 
@@ -29,7 +29,7 @@ Dieser Zyklus konzentriert sich auf den Betrieb von Cozystack als Produktivplatt
 
 Cozystack 1.4 liefert ein neu geschriebenes Dashboard aus dem Projekt `cozystack/cozystack-ui` aus. Der bisherige Stack aus `openapi-ui` plus BFF ist durch ein Frontend auf Basis von React 19 und TypeScript ersetzt, das direkt mit der Kubernetes-API spricht.
 
-![Das neue Cozystack-Dashboard](https://cdn-images-1.medium.com/max/800/1*f-TvLhA7npWzcpBj-tDVtg.png)
+![Das neue Cozystack-Dashboard](/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/02.png)
 
 Die neue Architektur entfernt einen zusätzlichen Prozess und eine Proxy-Schicht, während das Dashboard schemagetrieben bleibt. Außerdem verbessert sie mehrere alltägliche Abläufe:
 
@@ -41,7 +41,7 @@ Die neue Architektur entfernt einen zusätzlichen Prozess und eine Proxy-Schicht
 
 Das neue Dashboard zeigt den IaaS-Marketplace, der von ApplicationDefinition-Ressourcen gespeist wird.
 
-![Der IaaS-Marketplace im neuen Cozystack-Dashboard](https://cdn-images-1.medium.com/max/800/1*U2vqZnOabjKec3r7mBm__w.png)
+![Der IaaS-Marketplace im neuen Cozystack-Dashboard](/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/03.png)
 
 Der PaaS-Katalog umfasst Managed Databases, Messaging, Objektspeicher, Secrets, Suche und Inference-Dienste.
 

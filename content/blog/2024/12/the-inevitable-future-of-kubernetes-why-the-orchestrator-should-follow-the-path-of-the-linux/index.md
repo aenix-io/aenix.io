@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Talos"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*25rAkaFo6sux9O2L"
+cover_image: "/img/blog/medium/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux/cover.jpg"
 source_url: "https://medium.com/@tym83/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux-367f49916712"
 quiz:
   title: "Test yourself: Kubernetes-as-the-Linux-kernel argument"
@@ -56,7 +56,7 @@ As a result, user demands on K8s keep increasing, developers strive to keep up, 
 
 To address this, Tim proposed introducing a “complexity budget.” This approach would allocate a fixed “budget” for the project’s complexity, where each new feature in a release would consume part of that budget. In his view, this could help control the project’s complexity.
 
-![image](https://cdn-images-1.medium.com/max/800/0*25rAkaFo6sux9O2L)
+![image](/img/blog/medium/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux/cover.jpg)
 
 While this idea is reasonable, I believe the broader ecosystem — including Kubernetes developers, businesses leveraging it, and engineers deploying it — needs to rethink their expectations of an orchestrator in the coming years.
 

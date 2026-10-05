@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "Multi-tenancy", "Observability"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*z7lAeBBjXlxFY_hE6AyN0A.png"
+cover_image: "/img/blog/medium/cozystack-v0-18/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-18-d724cd6d2fa1"
 ---
 
@@ -24,7 +24,7 @@ However, note that the dashboard still interacts with HelmReleases directly, so 
 
 A demo of the API server and a guide on how to work with it can be found in the recording of the latest Cozystack community meeting (use the timestamps in the video description as a guide): [Watch on YouTube](https://www.youtube.com/watch?v=yn1ryGRtTGE).
 
-![image](https://cdn-images-1.medium.com/max/800/1*z7lAeBBjXlxFY_hE6AyN0A.png)
+![image](/img/blog/medium/cozystack-v0-18/cover.jpg)
 
 ### Configuring Metrics and Logs Collection from Tenant Clusters
 

@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "tutorial"
 topics: ["Cloud", "Kubernetes", "Open Source", "Platform Engineering"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*ca81wgE3M5JA6B9ST8gT1A.png"
+cover_image: "/img/blog/medium/a-simple-way-to-install-talos-linux-on-any-machine-with-any-provider/cover.png"
 source_url: "https://medium.com/p/c652b35b902e"
 external_only: True
 ---

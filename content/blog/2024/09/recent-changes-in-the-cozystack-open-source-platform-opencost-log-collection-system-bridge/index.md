@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "news"
 topics: ["Kubernetes", "Platform Engineering", "DevOps", "Open Source", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*ZE25TSWfLE46qz7vy5xQGQ.jpeg"
+cover_image: "/img/blog/medium/recent-changes-in-the-cozystack-open-source-platform-opencost-log-collection-system-bridge/cover.jpg"
 source_url: "https://medium.com/p/66bb25b7269b"
 external_only: True
 ---

@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "tutorial"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*nMttTSsu5Os7m1Pku0zBNA.png"
+cover_image: "/img/blog/medium/cozystack-is-no-longer-tied-to-talos-deploy-on-any-linux-distro-now/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-is-no-longer-tied-to-talos-deploy-on-any-linux-distro-now-dd8cd8b05b7e"
 quiz:
   title: "Test yourself: Cozystack on any Linux"
@@ -49,7 +49,7 @@ quiz:
 
 Cozystack is expanding beyond Talos Linux. This means you can now transform any existing K8s cluster — regardless of the underlying Linux distribution it is running on — into a fully featured cloud platform with the entire Cozystack power: Linstor storage, Kube-OVN networking, KubeVirt virtualization, DBaaS, and a variety of one-click services like Kafka, Cilium, Grafana, Victoria Metrics, and more.
 
-![image](https://cdn-images-1.medium.com/max/800/1*nMttTSsu5Os7m1Pku0zBNA.png)
+![image](/img/blog/medium/cozystack-is-no-longer-tied-to-talos-deploy-on-any-linux-distro-now/cover.jpg)
 
 > ***What is Cozystack***
 

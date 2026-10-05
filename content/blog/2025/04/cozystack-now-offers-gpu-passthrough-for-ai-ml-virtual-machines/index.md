@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI/ML", "GPU", "Multi-tenancy"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*Z4hqqFhepCzEwJn7WZpJQw.png"
+cover_image: "/img/blog/medium/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines-b8783c0ce358"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-now-offers-gpu-passthrough-for-
 
 The open-source cloud platform has introduced direct GPU passthrough in its latest release, enabling users to accelerate AI, machine learning, and other compute-intensive workloads on virtual machines. By leveraging physical GPUs from host nodes, teams can now deploy open-source AI stacks without proprietary cloud dependencies.
 
-![image](https://cdn-images-1.medium.com/max/800/1*Z4hqqFhepCzEwJn7WZpJQw.png)
+![image](/img/blog/medium/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines/cover.jpg)
 
 Upcoming features include vGPU resource partitioning and a Kubernetes-native GPU operator for multi-tenant clusters.
 

@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["Kubernetes", "LINSTOR", "Storage", "AI/ML", "Cozystack", "Open Source"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*ep6GUdvlFLIwsXN-U0ovnQ.png"
+cover_image: "/img/blog/medium/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment/cover.jpg"
 source_url: "https://blog.aenix.io/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment-921f7d3a1137"
 hreflang_de: /de/blog/2026/08/was-mich-dutzende-ki-agenten-gelehrt-haben-blockstor-speichersystem/
 ---
@@ -15,7 +15,7 @@ hreflang_de: /de/blog/2026/08/was-mich-dutzende-ki-agenten-gelehrt-haben-blockst
 
 A couple of months ago I decided to run an experiment: build a clean-room implementation of LINSTOR from scratch, working only from its references and public API types. It started as a Friday joke. I wanted to spend as little time on it as possible, leave it running in the background, and see where it went. The point was to find out how far a modern model can get on its own, with no human in the loop.
 
-![image](https://cdn-images-1.medium.com/max/800/1*ep6GUdvlFLIwsXN-U0ovnQ.png)
+![image](/img/blog/medium/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment/cover.jpg)
 
 Spoiler: full autonomy didn’t happen, and I ended up wrestling with the project quite a bit. But the process pulled me in completely, and the end result beat every expectation I had.
 

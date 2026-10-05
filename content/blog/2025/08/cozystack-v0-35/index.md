@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI/ML", "GPU", "Multi-tenancy"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*BTfwy72MMG2NBvvm"
+cover_image: "/img/blog/medium/cozystack-v0-35/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-35-b65472b2cdf8"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-35-b65472b2cdf8"
 
 The new version of Cozystack takes a major step forward in its modular (or: decomposed) architecture, enabling users to swiftly integrate custom applications and services. This significantly extends the platform’s out-of-the-box functionality to meet specific business needs. And there’s more!
 
-![image](https://cdn-images-1.medium.com/max/800/0*BTfwy72MMG2NBvvm)
+![image](/img/blog/medium/cozystack-v0-35/cover.png)
 
 > What is Cozystack?
 

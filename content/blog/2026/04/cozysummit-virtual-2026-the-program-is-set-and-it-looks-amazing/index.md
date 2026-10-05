@@ -6,13 +6,13 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Open Source", "Platform Engineering", "CNCF", "DevOps", "Kubernetes"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*NpRvSM1Y7tFtb2BDf9KCpw.png"
+cover_image: "/img/blog/medium/cozysummit-virtual-2026-the-program-is-set-and-it-looks-amazing/cover.jpg"
 source_url: "https://blog.aenix.io/cozysummit-virtual-2026-the-program-is-set-and-it-looks-amazing-0a921fb62229"
 ---
 
 We are thrilled to announce the full lineup of talks for the new CozySummit Virtual 2026! The program is ready, and we can’t wait to share it with you. Five outstanding sessions from practitioners building real cloud-native infrastructure — all in one free online event on May 26, 2026.
 
-![image](https://cdn-images-1.medium.com/max/1024/1*NpRvSM1Y7tFtb2BDf9KCpw.png)
+![image](/img/blog/medium/cozysummit-virtual-2026-the-program-is-set-and-it-looks-amazing/cover.jpg)
 
 📌 SESSIONS
 

@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "tutorial"
 topics: ["DevOps", "Open Source", "Ansible", "Kubernetes", "Platform Engineering", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*TRGnafeMsVruWze2D0p6DA.png"
+cover_image: "/img/blog/medium/deploy-cozystack-on-any-kubernetes-with-ansible/cover.jpg"
 source_url: "https://blog.aenix.io/deploy-cozystack-on-any-kubernetes-with-ansible-b28e61f586f9"
 quiz:
   title: "Test yourself: Cozystack via Ansible"
@@ -45,7 +45,7 @@ quiz:
 
 For teams that can’t adopt the full Cozystack stack with Talos Linux — whether due to corporate policies, existing infrastructure, or OS-specific requirements — we now offer an official Ansible collection that brings the same Cozystack experience to your existing clusters.
 
-![image](https://cdn-images-1.medium.com/max/1024/1*TRGnafeMsVruWze2D0p6DA.png)
+![image](/img/blog/medium/deploy-cozystack-on-any-kubernetes-with-ansible/cover.jpg)
 
 cozystack.installer automates the complete Cozystack deployment on generic Kubernetes — k3s, kubeadm, or RKE2 — turning a single ansible-playbook run into a fully configured cloud platform.
 

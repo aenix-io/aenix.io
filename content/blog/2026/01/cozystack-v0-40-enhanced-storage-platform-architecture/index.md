@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "LINSTOR", "Observability", "Storage", "etcd"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*rjM-h-08RaKjwq9Jc9se6g.png"
+cover_image: "/img/blog/medium/cozystack-v0-40-enhanced-storage-platform-architecture/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-40-enhanced-storage-platform-architecture-9c5ab48abd68"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-40-enhanced-storage-platform
 
 In version 0.40, we’ve focused on improving storage efficiency and platform architecture. Key updates include the LINSTOR scheduler for smarter pod placement, SeaweedFS traffic locality, a valuesFrom configuration mechanism, LINSTOR auto-diskful, and automated versioning tools.
 
-![image](https://cdn-images-1.medium.com/max/800/1*rjM-h-08RaKjwq9Jc9se6g.png)
+![image](/img/blog/medium/cozystack-v0-40-enhanced-storage-platform-architecture/cover.jpg)
 
 ### Spotlight: Optimized Pod Placement with LINSTOR Schedule
 

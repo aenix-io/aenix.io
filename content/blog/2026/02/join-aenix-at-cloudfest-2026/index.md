@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Cozystack", "Hosting"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*bI_Zo21na7E1xiKxoAnCBg.png"
+cover_image: "/img/blog/medium/join-aenix-at-cloudfest-2026/cover.jpg"
 source_url: "https://medium.com/@tym83/join-%C3%A6nix-at-cloudfest-2026-26ca996d344c"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/join-%C3%A6nix-at-cloudfest-2026-26ca996d
 
 We’re looking forward to meeting you at CloudFest 2026, booth **# Z22**.
 
-![image](https://cdn-images-1.medium.com/max/800/1*bI_Zo21na7E1xiKxoAnCBg.png)
+![image](/img/blog/medium/join-aenix-at-cloudfest-2026/cover.jpg)
 
 **Come by if you’d like to discuss:**
 • How Cozystack and Ænix open-source solutions help reduce infrastructure costs

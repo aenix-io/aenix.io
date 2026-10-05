@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "KubeVirt", "GPU", "Multi-tenancy", "Talos"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*iP1z9ZdvJiK8HrYN.jpg"
+cover_image: "/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/cover.jpg"
 source_url: "https://blog.aenix.io/cozystack-1-4-0c5e399a7308"
 hreflang_de: /de/blog/2026/05/cozystack-1-4-neues-dashboard-persistente-tenant-worker-backup-strategien-gpu-sharing/
 ---
@@ -21,7 +21,7 @@ Cozystack v1.4.0 is now available. The release was published on May 19, 2026, an
 
 This cycle is focused on the operational experience of running Cozystack as a production platform: a faster dashboard architecture, more durable tenant Kubernetes workers, clearer resource sizing, backup workflows for managed applications, better GPU utilization, safer ingress publishing, and fewer race conditions during first installs and upgrades.
 
-![image](https://cdn-images-1.medium.com/max/800/0*iP1z9ZdvJiK8HrYN.jpg)
+![image](/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/cover.jpg)
 
 ### Main highlights
 
@@ -29,7 +29,7 @@ This cycle is focused on the operational experience of running Cozystack as a pr
 
 Cozystack 1.4 ships a rewritten dashboard from the `cozystack/cozystack-ui` project. The old `openapi-ui` plus BFF stack has been replaced by a React 19 and TypeScript frontend that talks directly to the Kubernetes API.
 
-![The new Cozystack dashboard](https://cdn-images-1.medium.com/max/800/1*f-TvLhA7npWzcpBj-tDVtg.png)
+![The new Cozystack dashboard](/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/02.png)
 
 The new architecture removes an extra process and proxy layer while keeping the dashboard schema-driven. It also improves several day-to-day workflows:
 
@@ -41,7 +41,7 @@ The new architecture removes an extra process and proxy layer while keeping the 
 
 The new dashboard exposes the IaaS marketplace driven by ApplicationDefinition resources.
 
-![The IaaS marketplace in the new Cozystack dashboard](https://cdn-images-1.medium.com/max/800/1*U2vqZnOabjKec3r7mBm__w.png)
+![The IaaS marketplace in the new Cozystack dashboard](/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/03.png)
 
 The PaaS catalog covers managed databases, messaging, object storage, secrets, search, and inference services.
 

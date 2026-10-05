@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "AI/ML", "GPU", "CNCF", "Platform Engineering"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*JqeVSHv3Vzld4DhSKOA5GQ.png"
+cover_image: "/img/blog/medium/cozystack-recognized-in-cncfs-cnai-landscape/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-recognized-in-cncfs-cnai-landscape-331f892b9639"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-recognized-in-cncfs-cnai-landsc
 
 We’re thrilled to share that Cozystack has been added to the Cloud Native AI (CNAI) Landscape by the Cloud Native Computing Foundation (CNCF)! This is a significant validation of our work in bridging cloud-native infrastructure with AI workloads.
 
-![image](https://cdn-images-1.medium.com/max/800/1*JqeVSHv3Vzld4DhSKOA5GQ.png)
+![image](/img/blog/medium/cozystack-recognized-in-cncfs-cnai-landscape/cover.png)
 
 Why This Matters:
 

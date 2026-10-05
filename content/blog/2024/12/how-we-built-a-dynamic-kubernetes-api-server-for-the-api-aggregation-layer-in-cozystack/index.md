@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["Kubernetes", "DevOps", "Open Source", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*UnLXn4UMrp8BzIliKvmIPA.png"
+cover_image: "/img/blog/medium/how-we-built-a-dynamic-kubernetes-api-server-for-the-api-aggregation-layer-in-cozystack/cover.png"
 source_url: "https://medium.com/p/15709a183c86"
 external_only: True
 ---

@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "news"
 topics: ["Kubernetes", "Platform Engineering", "DevOps", "Open Source", "Cloud", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*SteyePbFZNEeTIh3JWgiOQ.png"
+cover_image: "/img/blog/medium/cozystack-has-officially-been-included-in-the-cncf-landscape/cover.png"
 source_url: "https://medium.com/p/07cc60c9e0eb"
 external_only: True
 ---

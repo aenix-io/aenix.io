@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "DevOps", "Open Source", "CNCF", "Platform Engineering", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*etD6GwSg0enlbXD_ByPeNg.png"
+cover_image: "/img/blog/medium/cozystack-became-a-certified-kubernetes-platform/cover.png"
 source_url: "https://medium.com/p/5638876bc2e0"
 external_only: True
 ---

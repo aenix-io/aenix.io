@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["Platform Engineering", "Kubernetes", "KubeVirt"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*4YRaynfuf5g_fiSY"
+cover_image: "/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/cover.jpg"
 source_url: "https://medium.com/p/0cb5db21a330"
 external_only: True
 ---

@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["Platform Engineering", "Developer Tools", "Open Source", "Kubernetes", "Cozystack"]
 language: "de"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*C1MOA-YyrnseDO5ATwQXTQ.png"
+cover_image: "/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/cover.png"
 source_url: "https://blog.aenix.io/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects-c59da4451b8b"
 hreflang_en: /blog/2026/07/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/
 ---
@@ -17,7 +17,7 @@ Mein Name ist Andrei Kvapil, und ich bin Gründer von Ænix — wir bauen Cozyst
 
 Dieser Artikel erzählt, wie wir das mit aeman gelöst haben — einem Werkzeug, das wir selbst gebaut und kürzlich [als Open Source veröffentlicht](https://github.com/aenix-io/aeman) haben. Ich muss aber weiter vorne anfangen.
 
-![aeman-Board](https://cdn-images-1.medium.com/max/800/1*C1MOA-YyrnseDO5ATwQXTQ.png)
+![aeman-Board](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/cover.png)
 
 ### Woher die Idee kommt
 
@@ -64,13 +64,13 @@ Ein Entwickler öffnet aeman morgens und sieht seinen Tag: Karten, gruppiert in 
 
 Das Board zieht Karten aus allen Teams des Entwicklers, also aus dem jeweils aktuellen Sprint jedes Teams. Die Teamauswahl am oberen Rand engt die Liste auf ein einzelnes Team ein oder blendet alle Karten aus, die erledigt, blockiert oder im Review sind — es bleibt nur, woran Sie hier und jetzt arbeiten können, wenn Deep Work ansteht. Jede Karte hat einen Fortschrittsregler von 0 bis 100 % in Schritten von 10 % (den Fortschrittsbalken auf „fertig“ zu ziehen, macht erstaunlich viel Freude), eine Stufe (Review / Locked / Recurrent / Done), die den Balken umfärbt, einen Zähler für die Tage in Bearbeitung sowie Links zu einem Issue oder einem PR. Rechts liegt ein Notizbereich: ein persönliches Tagesprotokoll, in dem Sie während der Arbeit festhalten können, was anfällt. So müssen Sie beim nächsten Standup nicht im Gedächtnis kramen — Sie überfliegen die Notizen und berichten, was Sie getan haben. Notizen leben im Kontext des Tages; morgen ist das Board leer, aber Sie können jederzeit einen Tag zurückgehen und sie noch einmal lesen.
 
-![Das Me-Board in aeman](https://cdn-images-1.medium.com/max/800/1*t7GSMyohBoTEF7Eqaq8yJg.png)
+![Das Me-Board in aeman](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/02.png)
 
 ### Das Team-Board: das ganze Team auf einen Blick
 
 Die Sicht des Team-Leads: ein Raster aus Personen und Zonen für einen ausgewählten Tag. Spalten sind die Entwickler mit ihren Avataren, Zeilen dieselben farbigen Zonen. Sie sehen sofort, wer woran arbeitet, wo es brennt und wer überlastet ist. Der Team-Lead legt Karten auch von hier aus an: ein paar Klicks, und eine Aufgabe ist erstellt, zugewiesen und priorisiert.
 
-![Das Team-Board in aeman](https://cdn-images-1.medium.com/max/800/1*4bAxYXg2i80DqZ2N3hz5Bg.png)
+![Das Team-Board in aeman](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/03.png)
 
 Im Me-Modus kann der Team-Lead außerdem in die Rolle eines Entwicklers schlüpfen (Schaltfläche **View as**) — das Board mit dessen Augen ansehen und bei Bedarf aufräumen.
 
@@ -80,7 +80,7 @@ Unsere Sprints sind kurz — ein Tag — und sie zählen **vorwärts**, nicht r�
 
 Ergibt die Planung, dass eine Aufgabe heute definitiv nicht stattfindet, gibt es die Schaltflächen **+1 day** und **+1 week**: Die Karte verschwindet bis zu ihrem Tag vom Board, und es geht nichts an Historie verloren. Ist der Tag gekommen, taucht sie wieder auf.
 
-![Carry-over in aeman](https://cdn-images-1.medium.com/max/529/1*ADBOkMVY8IheKZ_g6ZOoVQ.png)
+![Carry-over in aeman](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/04.png)
 
 ### Der Wochenplan
 
@@ -90,7 +90,7 @@ Die Gründer und ich haben die Woche des Teams früher geplant, indem wir eine n
 
 Unter dem Team-Raster liegt der Wochenplan: die geschäftlichen Aufgaben des Teams für die Woche, aufgeteilt in zwei Bahnen, „bis Mittwoch“ und „bis Freitag“. Einmal pro Woche legen die Gründer dort Aufgaben ab, und die Aufgaben warten auf ihren Einsatz. Der Team-Lead zieht eine Plankarte auf einen Entwickler; sie erscheint auf dessen Tagesboard und bleibt zugleich mit einer farbigen Markierung im Plan. Ein gemeinsamer Fortschrittsbalken zeigt, wie das Team in der Woche steht, und das wöchentliche **Carry over** verschiebt alles noch Offene in die nächste Woche.
 
-![Der Wochenplan in aeman](https://cdn-images-1.medium.com/max/800/1*InhqRG9OL-5I0VeCIN0UXA.png)
+![Der Wochenplan in aeman](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/05.png)
 
 ### Reviews, Teilaufgaben und das Aktivitätsprotokoll
 
@@ -115,7 +115,7 @@ Jetzt der Teil, für den das Engineering-Publikum gekommen ist.
 
 aeman hat überhaupt keine eigene Datenbank. Jede Karte ist ein Item auf einem GitHub-Projects-Board, und jedes Feld — Zone, Fortschritt, Sprint, Wochenplan — ist ein gewöhnliches Projektfeld. aeman legt die benötigten Felder sogar bedarfsgesteuert an: Richten Sie es auf ein beliebiges leeres Projekt, und die erste Änderung erzeugt, was fehlt. Man könnte sagen, aeman ist eine spezialisierte Sicht auf ein GitHub-Board: Dasselbe Board öffnet sich in der nativen Oberfläche von GitHub, die Daten gehören immer Ihnen, und Sie können sich jederzeit von aeman verabschieden, ohne irgendetwas migrieren zu müssen.
 
-![Dasselbe Board in der Oberfläche von GitHub Projects](https://cdn-images-1.medium.com/max/800/1*B5CY3zi_iZz2AnBQJ3TV6w.png)
+![Dasselbe Board in der Oberfläche von GitHub Projects](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/06.png)
 
 ### Eine API im Kubernetes-Stil
 
@@ -161,7 +161,7 @@ Es gibt keine separate API für KI und keine Sonderrechte. Jede Aktion läuft du
 
 Neben dem lokalen Modus bietet aeman einen öffentlich erreichbaren MCP-Server. Entwickler können KI-Clients anbinden, ohne lokal etwas zu installieren, und direkt aus Claude Code und anderen KI-Agenten heraus mit ihren Aufgaben arbeiten.
 
-![aeman, gesteuert von einem KI-Agenten über MCP](https://cdn-images-1.medium.com/max/800/1*VAAJ0kR7KdjF_2OnIgHpnQ.png)
+![aeman, gesteuert von einem KI-Agenten über MCP](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/07.png)
 
 ### So probieren Sie es aus
 

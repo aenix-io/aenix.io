@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "tutorial"
 topics: ["DevOps", "Kubernetes", "Open Source", "Platform Engineering", "Cloud"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*0JxiacW57UaxFSuyG2avlw.png"
+cover_image: "/img/blog/medium/platformize-it-part-2-extending-kubernetes-and-the-api-aggregation-layer/cover.jpg"
 source_url: "https://medium.com/p/1b49265edc7f"
 external_only: True
 ---

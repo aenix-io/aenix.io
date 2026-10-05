@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["DevOps", "Kubernetes"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*lfZ1lGZAL1_yyug9_eL4Vg.png"
+cover_image: "/img/blog/medium/issue-with-configuring-registry-mirroring-in-harbor/cover.jpg"
 source_url: "https://medium.com/p/dd200311885f"
 external_only: True
 ---

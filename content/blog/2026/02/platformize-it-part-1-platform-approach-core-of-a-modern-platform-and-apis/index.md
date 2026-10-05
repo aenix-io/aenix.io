@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["DevOps", "Kubernetes", "Open Source", "Platform Engineering", "Cloud"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*-7jqg0zS3vlc-lRnCsHucQ.jpeg"
+cover_image: "/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/cover.jpg"
 source_url: "https://medium.com/p/3287e55938fe"
 external_only: True
 ---

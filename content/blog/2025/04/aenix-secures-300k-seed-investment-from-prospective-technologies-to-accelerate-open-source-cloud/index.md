@@ -2,7 +2,7 @@
 title: "Ænix Secures $300K Seed Investment from Prospective Technologies to Accelerate Open-Source Cloud…"
 description: "Ænix, the company behind the open-source Cozystack platform, today announced a $300,000 seed investment round by Prospective Technologies…"
 date: "2025-04-11"
-cover_image: "/img/blog/covers/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud.png"
+cover_image: "/img/blog/medium/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud/01.jpg"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Sovereignty", "AI/ML", "Financial Services", "CNCF", "Compliance"]
@@ -17,7 +17,7 @@ source_url: "https://medium.com/@tym83/%C3%A6nix-secures-300k-seed-investment-fr
 
 ****[Ænix](http://aenix.io), the company behind the open-source **Cozystack** platform, today announced a $300,000 seed investment round by ****[Prospective Technologies](https://pt-vc.com/), a venture capital firm known for backing cutting-edge developer tools and early-stage [tech companies](https://pt-vc.com/portfolio/), including** imgproxy, Qase, and DBeaver**.
 
-![image](https://cdn-images-1.medium.com/max/800/1*SbUfsNglPVN88RXx5TSNQw.png)
+![image](/img/blog/medium/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud/01.jpg)
 
 This funding will fuel the growth of **Cozystack**, an open-source platform that simplifies the deployment and management of **virtual machines, containers, databases, bare-metal applications, and AI workloads**. Designed for enterprises and service providers seeking **digital sovereignty**, Cozystack provides modern APIs to manage on-premises hardware, enhancing security and compliance for regulated industries.
 

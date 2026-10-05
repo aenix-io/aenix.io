@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Multi-tenancy", "Observability"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*O0OQMDGX0oHS2AXm0zDg4g.png"
+cover_image: "/img/blog/medium/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21/cover.png"
 source_url: "https://medium.com/@tym83/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21-22e84c65b29d"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/introducing-the-pre-new-year-release-of-o
 
 The dashboard now works directly with the Cozystack API instead of relying on FluxCD resources. This enhancement enables the platform to provide a user-friendly graphical interface while integrating with Kubernetes’ standard RBAC model for managing deployment permissions.
 
-![image](https://cdn-images-1.medium.com/max/800/1*O0OQMDGX0oHS2AXm0zDg4g.png)
+![image](/img/blog/medium/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21/cover.png)
 
 Each tenant now includes four default groups:
 `view`: Read-only access.
@@ -28,7 +28,7 @@ Group members can access the platform via both Kubernetes and the dashboard.
 
 While we maintain an API-driven philosophy, the dashboard remains an essential feature. It allows users to quickly configure services through a graphical interface, explore how they map to the API, and then transition to Infrastructure as Code (IaC) practices.
 
-![image](https://cdn-images-1.medium.com/max/800/1*dbFZzh77cGb_gYbMa1Z1oQ.png)
+![image](/img/blog/medium/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21/02.jpg)
 
 **Key Dashboard Improvements
 **- Direct interaction with the Cozystack API instead of FluxCD resources.

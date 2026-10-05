@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "announcement"
 topics: ["Kubernetes", "Open Source", "CNCF", "Platform Engineering", "DevOps", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*9fPSDNGw-DholkjtUfkSMQ.png"
+cover_image: "/img/blog/medium/cozystack-becomes-a-cncf-sandbox-project/cover.png"
 source_url: "https://medium.com/p/3702b8906971"
 external_only: True
 ---

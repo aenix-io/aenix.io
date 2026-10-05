@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["Open Source", "Platform Engineering"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*St3iowqHrppmH_dV7mqDCQ.png"
+cover_image: "/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/cover.jpg"
 source_url: "https://medium.com/p/003c8ed839ca"
 external_only: True
 ---

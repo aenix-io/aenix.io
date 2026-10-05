@@ -6,7 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["KubeVirt", "DevOps", "Kubernetes", "CNCF"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*triWIjiH0SDtQyK9fsMMng.png"
+cover_image: "/img/blog/medium/kubevirt-the-truth-about-virtualization-overhead-in-kubernetes/cover.jpg"
 source_url: "https://medium.com/p/ba1a5ec21a79"
 external_only: True
 ---

@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "CNCF", "Platform Engineering", "Observability", "etcd"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*OO-ATURlxPokRXAy1Ee8nA.png"
+cover_image: "/img/blog/medium/cncf-webinar-one-api-to-rule-them-all-building-a-unified-platform-with-kubernetes-aggregation/cover.jpg"
 source_url: "https://medium.com/@tym83/cncf-webinar-one-api-to-rule-them-all-building-a-unified-platform-with-kubernetes-aggregation-4b03ec5ee222"
 ---
 
@@ -17,7 +17,7 @@ source_url: "https://medium.com/@tym83/cncf-webinar-one-api-to-rule-them-all-bui
 - Speaker: Andrei Kvapil, Ænix CEO, Cozystack maintainer
 - When: Sep, 4
 
-![image](https://cdn-images-1.medium.com/max/800/1*OO-ATURlxPokRXAy1Ee8nA.png)
+![image](/img/blog/medium/cncf-webinar-one-api-to-rule-them-all-building-a-unified-platform-with-kubernetes-aggregation/cover.jpg)
 
 How do you build a unified product from a stack of open-source tools? In this talk, a Cozystack core maintainer walks through the engineering journey of integrating Helm, Operators, and the Kubernetes Aggregation Layer to build a general-purpose API — without using etcd.
 

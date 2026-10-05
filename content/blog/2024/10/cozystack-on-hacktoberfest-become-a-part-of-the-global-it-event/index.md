@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Cozystack", "Open Source"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*0Xw0OKj1Ldx9MLJqOWX7CQ.jpeg"
+cover_image: "/img/blog/medium/cozystack-on-hacktoberfest-become-a-part-of-the-global-it-event/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-on-hacktoberfest-become-a-part-of-the-global-it-event-e288144861eb"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-on-hacktoberfest-become-a-part-
 
 We’ve decided to participate in Hacktoberfest. If you’re participating too, come visit our GitHub and check out the amazing issues. And if something seems unclear, follow the links below; you’ll find all the answers there :)
 
-![image](https://cdn-images-1.medium.com/max/800/1*0Xw0OKj1Ldx9MLJqOWX7CQ.jpeg)
+![image](/img/blog/medium/cozystack-on-hacktoberfest-become-a-part-of-the-global-it-event/cover.jpg)
 
 🫡 Rules and details [https://hacktoberfest.com](https://hacktoberfest.com)
 
