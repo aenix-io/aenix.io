@@ -11,7 +11,7 @@
         date: "Дата и время уточняются"
         venue: ""                # optional; shown when confirmed
         note: "Место проведения будет объявлено. Зарегистрированные узнают первыми."
-        href: "#register"
+        href: "#register"         # a card linking to #register also opens that city's form tab
 
   Status is conveyed by text (the date/venue wording) AND an icon AND border
   treatment — never by color alone.
@@ -26,7 +26,7 @@
   {{- $status := $c.status | default "pending" -}}
   {{- $href := $c.href | default "#register" -}}
   {{- $ext := or $c.external (hasPrefix $href "http") -}}
-  <a class="ws-city ws-city--{{ $status }}{{ if $ext }} ws-city--external{{ end }}" href="{{ $href }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}>
+  <a class="ws-city ws-city--{{ $status }}{{ if $ext }} ws-city--external{{ end }}" href="{{ $href }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}{{ if hasPrefix $href "#register" }} data-ws-city="{{ $c.city | urlize }}"{{ end }}>
     <span class="ws-city__country">{{ $c.country }}</span>
     <span class="ws-city__name">{{ $c.city }}</span>
     <span class="ws-city__meta">

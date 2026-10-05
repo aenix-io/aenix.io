@@ -55,9 +55,12 @@
        {{ if gt (len $items) 1 }}aria-labelledby="reg-tab-{{ $slug }}"{{ end }}
        data-ws-panel="{{ $slug }}"
        {{ if ne $i 0 }}hidden{{ end }}>
+    {{- $venue := $c.venue | default "" -}}
+    {{- $venueKnown := and $venue (not (strings.Contains (lower $venue) "to be confirmed")) -}}
     <div class="ws-cityforms__head">
       <span class="ws-cityforms__city">{{ $c.city }}</span>
       <span class="ws-cityforms__date">{{ $c.date }}</span>
+      {{- if $venueKnown }}<span class="ws-cityforms__venue">{{ $venue }}</span>{{ end }}
     </div>
     {{- with $c.form -}}
     <div class="ws-cityforms__embed">
@@ -68,7 +71,7 @@
     {{- if $isFR }}
     <p class="ws-cityforms__note">Choisissez <strong>In&nbsp;person</strong> (sur place) ou <strong>Online</strong> (en ligne) directement dans le formulaire. Une confirmation s'affiche à l'écran, puis vous recevrez un e-mail avec les informations pratiques. Vos données sont traitées par AENIX s.r.o. uniquement pour organiser l'atelier ; vous pouvez vous opposer à tout moment à nos communications (privacy@aenix.io, <a href="/privacy-policy/">politique de confidentialité</a>).</p>
     {{- else }}
-    <p class="ws-cityforms__note">Choose <strong>In&nbsp;person</strong> or <strong>Online</strong> right inside the form. You'll see a confirmation on screen, and we'll follow up by email with the venue and final details. The venue is being confirmed — registered attendees hear first.</p>
+    <p class="ws-cityforms__note">Choose <strong>In&nbsp;person</strong> or <strong>Online</strong> right inside the form. You'll see a confirmation on screen, and we'll follow up by email with the final details.{{ if not $venueKnown }} The venue is being confirmed — registered attendees hear first.{{ end }}</p>
     {{- end }}
     {{- else -}}
     {{- if $isFR }}
@@ -136,6 +139,25 @@
     });
   });
 
+  // A city card elsewhere on the page (data-ws-city, see workshop-cities) opens
+  // that city's form; its own href="#register" then scrolls here as before.
+  function hasPanel(slug) { return !!root.querySelector('[data-ws-panel="' + slug + '"]'); }
+  document.addEventListener('click', function (e) {
+    var card = e.target.closest && e.target.closest('[data-ws-city]');
+    if (card && hasPanel(card.getAttribute('data-ws-city'))) activate(card.getAttribute('data-ws-city'));
+  });
+  // Shareable deep link: /…/#register-paris opens Paris and scrolls to the forms.
+  function fromHash() {
+    var m = /^#register-(.+)$/.exec(window.location.hash);
+    if (!m || !hasPanel(m[1])) return false;
+    activate(m[1]);
+    var sec = document.getElementById('register') || root;
+    sec.scrollIntoView();
+    return true;
+  }
+  window.addEventListener('hashchange', fromHash);
+  if (fromHash()) return;
+
   // load the first (active) panel's form once it scrolls into view
   var first = root.querySelector('.ws-cityforms__panel.is-active');
   if (first) {
@@ -161,6 +183,7 @@
 .ws-cityforms__head{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem 1rem;margin-bottom:1rem}
 .ws-cityforms__city{font-size:1.35rem;font-weight:700}
 .ws-cityforms__date{opacity:.75}
+.ws-cityforms__venue{flex-basis:100%;font-size:.9rem;opacity:.75}
 .ws-cityforms__iframe{width:100%;border:0;min-height:680px;background:transparent}
 .ws-cityforms__note{font-size:.85rem;opacity:.75;margin-top:1rem;line-height:1.5}
 .ws-cityforms__pending{display:flex;flex-direction:column;gap:.4rem;padding:1.5rem;border:1px dashed rgba(255,255,255,.25);border-radius:12px;background:rgba(255,255,255,.03)}
