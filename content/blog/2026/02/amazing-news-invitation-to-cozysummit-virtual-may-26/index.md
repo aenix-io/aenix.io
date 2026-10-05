@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Cozystack", "GitOps", "CNCF", "Platform Engineering", "Compliance", "Observability"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*h7Bgr28OCTG8XS5WUtb7RA.png"
+cover_image: "/img/blog/medium/amazing-news-invitation-to-cozysummit-virtual-may-26/cover.jpg"
 source_url: "https://medium.com/@tym83/amazing-news-invitation-to-cozysummit-virtual-may-26-db5190fc4afd"
 ---
 
@@ -18,7 +18,7 @@ Join us on May 26 for 2nd CozySummit Virtual, conference for CozyStack developer
 
 📢 CFP is open until March 8 — submit your talk and become speaker at our event!
 
-![image](https://cdn-images-1.medium.com/max/800/1*h7Bgr28OCTG8XS5WUtb7RA.png)
+![image](/img/blog/medium/amazing-news-invitation-to-cozysummit-virtual-may-26/cover.jpg)
 
 CozySummit Virtual is organized by CNCF with the support of CozyStack maintainers and project sponsors.
 

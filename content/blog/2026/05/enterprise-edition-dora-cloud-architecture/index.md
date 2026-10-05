@@ -2,7 +2,7 @@
 title: "Private Cloud Platform for regulated cloud — DORA and NIS2 obligations mapped to running architecture"
 description: "Mapping DORA ICT-risk and third-party obligations and the NIS2 Article 21(2) measures onto a defensible cloud architecture for regulated enterprises."
 date: "2026-05-10"
-cover_image: "/img/blog/covers/enterprise-edition-dora-cloud-architecture.png"
+cover_image: "/img/blog/covers/enterprise-edition-dora-cloud-architecture.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance", "Sovereignty", "Multi-tenancy", "Cozystack"]

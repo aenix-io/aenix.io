@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Open Source", "Kubernetes", "CNCF", "Cloud", "Game Servers", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*54n_wsW7R9MGslexi-xaLg.png"
+cover_image: "/img/blog/medium/game-servers-on-cozystack-no-april-fools-joke/cover.png"
 source_url: "https://blog.aenix.io/game-servers-on-cozystack-no-april-fools-joke-798704b32998"
 quiz:
   title: "Test yourself: Cozystack for game servers"
@@ -45,7 +45,7 @@ quiz:
 
 Hello, world! We are the team behind[Cozystack](https://cozystack.io), an open-source platform for building clouds on your own hardware. We want to explain why we decided to target the game server space and what came of it.
 
-![image](https://cdn-images-1.medium.com/max/1024/1*54n_wsW7R9MGslexi-xaLg.png)
+![image](/img/blog/medium/game-servers-on-cozystack-no-april-fools-joke/cover.png)
 
 ### What Is Cozystack
 

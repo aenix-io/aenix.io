@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Talos", "Financial Services", "CNCF", "Migration"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*ZaReZmQFCRYbv7yM1zoq-g.png"
+cover_image: "/img/blog/medium/protofire-experience-operating-kubernetes-with-cozystack/cover.png"
 source_url: "https://medium.com/@tym83/protofire-experience-operating-kubernetes-with-cozystack-1daa682945f5"
 quiz:
   title: "Test yourself: Protofire moves to Cozystack"
@@ -51,7 +51,7 @@ In a recent infrastructure transition that spanned several months, our team expl
 
 One of the goals was to consolidate our deployment architecture under Kubernetes while maintaining support for stateful services, without introducing significant operational complexity. After evaluating different options, we decided to adopt [Cozystack](http://cozystack.io), primarily due to its all-in-one approach and compatibility with bare-metal infrastructure.
 
-![image](https://cdn-images-1.medium.com/max/800/1*ZaReZmQFCRYbv7yM1zoq-g.png)
+![image](/img/blog/medium/protofire-experience-operating-kubernetes-with-cozystack/cover.png)
 
 Cozystack is built on Talos Linux, which provides immutable and secure nodes, and includes a set of pre-packaged Helm-ready applications such as PostgreSQL, Redis, RabbitMQ, and Ingress-NGINX. These built-in components allowed us to accelerate the initial setup while maintaining flexibility for customization.
 

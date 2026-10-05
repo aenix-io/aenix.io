@@ -2,7 +2,7 @@
 title: "Private LLM deployment — a practical guide to on-premise AI infrastructure in 2026"
 description: "The six layers of a real private LLM deployment — hardware, platform, serving, model, application, operations — with the pitfalls at each one."
 date: "2026-05-23"
-cover_image: "/img/blog/covers/private-llm-deployment-guide.png"
+cover_image: "/img/blog/covers/private-llm-deployment-guide.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["DORA", "Kubernetes", "Sovereignty", "AI/ML", "GPU", "Multi-tenancy"]

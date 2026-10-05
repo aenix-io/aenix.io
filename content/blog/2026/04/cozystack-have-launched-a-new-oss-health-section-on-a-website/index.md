@@ -6,13 +6,13 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Open Source", "DevOps", "Kubernetes", "CNCF", "Platform Engineering", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*aXwgmFc0CGbAzMet5bY0IQ.png"
+cover_image: "/img/blog/medium/cozystack-have-launched-a-new-oss-health-section-on-a-website/cover.png"
 source_url: "https://blog.aenix.io/cozystack-have-launched-a-new-oss-health-section-on-a-website-fa1f4d889c47"
 ---
 
 We have launched a new OSS health section on the Cozystack website, with project stats refreshed automatically every month.
 
-![image](https://cdn-images-1.medium.com/max/1024/1*aXwgmFc0CGbAzMet5bY0IQ.png)
+![image](/img/blog/medium/cozystack-have-launched-a-new-oss-health-section-on-a-website/cover.png)
 
 It currently includes 3 pages:
 

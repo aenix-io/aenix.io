@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Multi-tenancy", "Observability", "Terraform"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*26UVJiADy26X-QtmslpZqw.png"
+cover_image: "/img/blog/medium/cozystack-v0-20-release-terraform-keycloak-and-stability-security-improvements/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-20-release-terraform-keycloak-and-stability-security-improvements-55dd25335e6e"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-20-release-terraform-keycloa
 
 [This release](https://github.com/aenix-io/cozystack/releases/tag/v0.20.0) focuses on enhancing stability while addressing a significant number of bugs and introducing new features.
 
-![image](https://cdn-images-1.medium.com/max/800/1*26UVJiADy26X-QtmslpZqw.png)
+![image](/img/blog/medium/cozystack-v0-20-release-terraform-keycloak-and-stability-security-improvements/cover.png)
 
 ### What’s new
 

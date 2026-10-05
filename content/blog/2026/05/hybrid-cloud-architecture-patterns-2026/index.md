@@ -2,7 +2,7 @@
 title: "Hybrid cloud architecture patterns 2026 — what works, what fails, and how to choose"
 description: "Five hybrid cloud patterns that work in production, what makes them work, the failure modes to avoid, and when hybrid is the wrong answer."
 date: "2026-05-13"
-cover_image: "/img/blog/covers/hybrid-cloud-architecture-patterns-2026.png"
+cover_image: "/img/blog/covers/hybrid-cloud-architecture-patterns-2026.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["AI/ML", "Observability"]

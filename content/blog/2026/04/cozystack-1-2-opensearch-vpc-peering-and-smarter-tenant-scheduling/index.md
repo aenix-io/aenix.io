@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "LINSTOR", "Multi-tenancy", "Observability"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*NSPtCnH5tEiXHe7Dv62DCw.jpeg"
+cover_image: "/img/blog/medium/cozystack-1-2-opensearch-vpc-peering-and-smarter-tenant-scheduling/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-1-2-opensearch-vpc-peering-and-smarter-tenant-scheduling-777a13bbe25c"
 ---
 
@@ -18,7 +18,7 @@ The Cozystack 1.2 release line is now available. [v1.2.0](https://github.com/coz
 
 This cycle expands the platform in three important directions: managed search and analytics, secure networking between tenant environments, and better control over where tenant workloads run. The follow-up `v1.2.1` release focuses on safety and operational stability.
 
-![image](https://cdn-images-1.medium.com/max/800/1*NSPtCnH5tEiXHe7Dv62DCw.jpeg)
+![image](/img/blog/medium/cozystack-1-2-opensearch-vpc-peering-and-smarter-tenant-scheduling/cover.jpg)
 
 ### Main highlights
 

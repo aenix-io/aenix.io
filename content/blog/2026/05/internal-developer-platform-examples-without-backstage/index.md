@@ -2,7 +2,7 @@
 title: "Internal developer platform examples — 6 architectural patterns without Backstage lock-in"
 description: "Six internal developer platform patterns from production, the tools that show up across them, and how to pick one without defaulting to Backstage."
 date: "2026-05-14"
-cover_image: "/img/blog/covers/internal-developer-platform-examples-without-backstage.png"
+cover_image: "/img/blog/covers/internal-developer-platform-examples-without-backstage.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes", "KubeVirt", "Sovereignty", "Multi-tenancy", "Platform Engineering"]

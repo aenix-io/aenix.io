@@ -2,7 +2,7 @@
 title: "Hosting provider platform modernization — from VPS to cloud product"
 description: "Architectural starting point, migration sequencing, and unit economics for hosting providers modernizing onto a Kubernetes-native multi-tenant platform."
 date: "2026-05-12"
-cover_image: "/img/blog/covers/hosting-provider-platform-modernization.png"
+cover_image: "/img/blog/covers/hosting-provider-platform-modernization.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU", "Multi-tenancy"]

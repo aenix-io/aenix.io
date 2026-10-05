@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Kubernetes", "Cozystack", "AI/ML", "CNCF"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*zEOKAq9jaDdY4Y9drKo9jw.jpeg"
+cover_image: "/img/blog/medium/invitation-to-cozysummit-virtual-december-3/cover.jpg"
 source_url: "https://medium.com/@tym83/invitation-to-cozysummit-virtual-december-3-050bc72f1b4b"
 ---
 
@@ -18,7 +18,7 @@ Join us on December 3 for CozySummit Virtual, the first conference for CozyStack
 
 📢 CFP is open until September 14 — submit your talk and become one of the first speakers at our event!
 
-![image](https://cdn-images-1.medium.com/max/800/1*zEOKAq9jaDdY4Y9drKo9jw.jpeg)
+![image](/img/blog/medium/invitation-to-cozysummit-virtual-december-3/cover.jpg)
 
 CozySummit Virtual is organized by CNCF with the support of CozyStack maintainers and project sponsors.
 

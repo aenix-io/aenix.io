@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Platform Engineering", "CNCF", "Storage", "DevOps", "Kubernetes", "Cozystack"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*StrJHMn6Ie1s_vkNrX_-UQ.png"
+cover_image: "/img/blog/medium/rwx-readwritemany-volumes-in-cozystack-native-shared-storage-for-your-workloads/cover.jpg"
 source_url: "https://blog.aenix.io/rwx-readwritemany-volumes-in-cozystack-native-shared-storage-for-your-workloads-485de0775faa"
 quiz:
   title: "Test yourself: RWX volumes in Cozystack"
@@ -46,7 +46,7 @@ quiz:
 
 Starting with Cozystack v1.0, you can use ReadWriteMany (RWX) persistent volumes out of the box. This means multiple pods and VMs can mount the same volume simultaneously — a capability essential for shared filesystems, multi-replica applications, and cross-VM data sharing.
 
-![image](https://cdn-images-1.medium.com/max/1024/1*StrJHMn6Ie1s_vkNrX_-UQ.png)
+![image](/img/blog/medium/rwx-readwritemany-volumes-in-cozystack-native-shared-storage-for-your-workloads/cover.jpg)
 
 Under the hood, the kubevirt-csi-driver provisions a dedicated NFS server for each RWX PVC, backed by DRBD-replicated (LINSTOR) block storage, with CiliumNetworkPolicy handling traffic isolation. For tenants, it’s as simple as creating a standard PVC with accessModes: [ReadWriteMany] and storageClassName: nfs.
 

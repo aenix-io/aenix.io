@@ -2,7 +2,7 @@
 title: "Industry 4.0 platform — cloud + edge architecture for manufacturing in 2026"
 description: "Industry 4.0 architecture in 2026: edge-to-core patterns, sovereignty for industrial IP, and the NIS2 controls manufacturers are now in scope for."
 date: "2026-05-17"
-cover_image: "/img/blog/covers/manufacturing-cloud-industry-40-edge.png"
+cover_image: "/img/blog/covers/manufacturing-cloud-industry-40-edge.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Cozystack", "Sovereignty", "AI/ML", "Compliance"]

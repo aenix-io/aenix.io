@@ -2,7 +2,7 @@
 title: "OpenShift vs Cozystack — comparison for KubeVirt-based platform decisions"
 description: "Two KubeVirt-based platforms compared: shared foundations, where they genuinely differ, when OpenShift wins, and what migration between them involves."
 date: "2026-05-19"
-cover_image: "/img/blog/covers/openshift-vs-cozystack-comparison.png"
+cover_image: "/img/blog/covers/openshift-vs-cozystack-comparison.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]

@@ -2,7 +2,7 @@
 title: "Cloud cost optimization strategies in 2026 — a practical guide for engineering and finance"
 description: "Eight cloud cost optimization strategies, from commitment-realization gaps to Kubernetes right-sizing — and the point where configurational tuning stops paying."
 date: "2026-05-03"
-cover_image: "/img/blog/covers/cloud-cost-optimization-strategies-2026.png"
+cover_image: "/img/blog/covers/cloud-cost-optimization-strategies-2026.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["Kubernetes", "Cloud Repatriation", "Financial Services", "Cost Optimization"]

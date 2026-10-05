@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Observability", "etcd"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*PKML-xY94j4iWwjUpKo1Yg.png"
+cover_image: "/img/blog/medium/cozystack-v0-41-0-managed-mongodb/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-41-0-managed-mongodb-d93ce116eb88"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-41-0-managed-mongodb-d93ce11
 
 This version features MongoDB as a new managed application, significantly expanding our database offerings alongside existing PostgreSQL, MySQL, and Redis services. This release also brings crucial stability enhancements for core Kubernetes components, storage system improvements, and updated documentation.
 
-![image](https://cdn-images-1.medium.com/max/800/1*PKML-xY94j4iWwjUpKo1Yg.png)
+![image](/img/blog/medium/cozystack-v0-41-0-managed-mongodb/cover.jpg)
 
 ### Spotlight: MongoDB Managed Application.
 

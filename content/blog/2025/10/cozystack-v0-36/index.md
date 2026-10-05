@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Talos", "Multi-tenancy", "Observability", "Storage"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*VDRWuShaJJRRl6HIfP61uA.png"
+cover_image: "/img/blog/medium/cozystack-v0-36/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-36-dfa5a10bd86a"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-36-dfa5a10bd86a"
 
 The new version of Cozystack focuses on the stability, observability, and flexible configuration of managed applications.
 
-![image](https://cdn-images-1.medium.com/max/800/1*nSnbuqjkZ66y1L8T6tEmEw.png)
+![image](/img/blog/medium/cozystack-v0-36/02.jpg)
 
 ### 👉 Major Features and Improvements
 
@@ -53,7 +53,7 @@ Cozystack now includes the LLDPD extension in its Talos OS image, enabling Link 
 
 When a virtual machine has an external IP assigned to it, it will now always use it for egress traffic, independently of the external method used.
 
-![image](https://cdn-images-1.medium.com/max/800/1*VDRWuShaJJRRl6HIfP61uA.png)
+![image](/img/blog/medium/cozystack-v0-36/cover.png)
 
 ### 🔔 New components versions
 

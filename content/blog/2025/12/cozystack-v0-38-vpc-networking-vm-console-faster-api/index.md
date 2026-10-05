@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Multi-tenancy"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*qaWF3O689jNB1BoAEALD4w.png"
+cover_image: "/img/blog/medium/cozystack-v0-38-vpc-networking-vm-console-faster-api/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-38-vpc-networking-vm-console-faster-api-34032464b94f"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-38-vpc-networking-vm-console
 
 This release introduces Virtual Private Cloud (VPC) support, enabling advanced networking capabilities for tenant applications. We’ve also added VNC console support in the dashboard, made Kubernetes worker versions configurable, and delivered numerous improvements and fixes across the platform.
 
-![image](https://cdn-images-1.medium.com/max/800/1*qaWF3O689jNB1BoAEALD4w.png)
+![image](/img/blog/medium/cozystack-v0-38-vpc-networking-vm-console-faster-api/cover.jpg)
 
 ### 🗜 Virtual Private Cloud (VPC) Networking
 

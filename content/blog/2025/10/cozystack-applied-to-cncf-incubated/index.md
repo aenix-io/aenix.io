@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "news"
 topics: ["Cozystack", "CNCF"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*_xs_0yX9K8OK2BRzFEpj6g.png"
+cover_image: "/img/blog/medium/cozystack-applied-to-cncf-incubated/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-applied-to-cncf-incubated-7c22faa134a3"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-applied-to-cncf-incubated-7c22f
 
 We’ve just submitted our application to move from CNCF Sandbox to Incubated. We’d love your support — drop a like to cheer us on. It won’t sway the TOC’s decision, but it means a lot to us.
 
-![image](https://cdn-images-1.medium.com/max/800/1*_xs_0yX9K8OK2BRzFEpj6g.png)
+![image](/img/blog/medium/cozystack-applied-to-cncf-incubated/cover.jpg)
 
 Why it matters: CNCF Incubating signals a more mature project that’s ready for production use. It also attracts contributors and unlocks extra CNCF opportunities to help us grow.
 

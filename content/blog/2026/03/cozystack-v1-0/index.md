@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "GPU", "Hosting"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*zVcPk2CIGDmyEdt8CmRTCQ.png"
+cover_image: "/img/blog/medium/cozystack-v1-0/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v1-0-b3f70879b250"
 ---
 
@@ -18,7 +18,7 @@ The last platform release was 0.41. So it came as a surprise when the next relea
 
 With the release of v1.0.0, Cozystack is undergoing a fundamental architectural transition. We’ve built a package system based on FluxCD and OCI artifacts — think of it like apt for Debian/Ubuntu, but made for Kubernetes (see “Package-based Deployment” below). This let us introduce a unique new approach: **Build Your Own Platform** (BYOP).
 
-![image](https://cdn-images-1.medium.com/max/800/1*zVcPk2CIGDmyEdt8CmRTCQ.png)
+![image](/img/blog/medium/cozystack-v1-0/cover.jpg)
 
 > **What is Cozystack**
 
@@ -35,7 +35,7 @@ Both resources are cluster-scoped (i.e., not bound to any specific namespace) an
 
 This new approach provides a more reliable way to install, customize, and manage platform components, while keeping the system logic simple and consistent.
 
-![image](https://cdn-images-1.medium.com/max/800/1*mQxC0EVDH8xq5_GHuY6Gzw.png)
+![image](/img/blog/medium/cozystack-v1-0/02.png)
 
 Now you’ve got [two options](https://cozystack.io/docs/v1.0/install/cozystack/):
 
@@ -44,7 +44,7 @@ Now you’ve got [two options](https://cozystack.io/docs/v1.0/install/cozystack/
 
 Installation always starts with the **cozystack-operator**. Once it’s up and running, the user can install the core **cozystack-platform** package. After that, you can choose between several platform variants:
 
-![image](https://cdn-images-1.medium.com/max/800/1*gDZfo565-6rXpV-hY1jlgA.png)
+![image](/img/blog/medium/cozystack-v1-0/03.png)
 
 The *isp-full*, *isp-full-generic*, and *isp-hosted* options provide fully-featured Cozystack setups tailored to specific use cases. In the *default* option, only PackageSources are installed — not the actual Packages. The user can then explore available packages via cozypkg, select the needed ones, and install them with all their dependencies. Unlike Debian/Ubuntu, Cozystack packages come in different available flavors. For example, the `cozystack.networking` package — which most others depend on — comes bundled with either kubeovn-cilium, cilium, cilium-kilo, or noop. Noop does nothing but helps satisfy dependencies — handy for existing Kubernetes clusters.
 
@@ -107,7 +107,7 @@ A **Velero strategy controller** has been integrated to provide enterprise-grade
 
 The backup controller currently undergoes production testing, with complete deployment infrastructure, container image builds, and Kubernetes manifests included in the release. For ease of use, we have also introduced a user-facing dashboard interface for managing backups and backup Jobs that provides full visibility into backup statuses and job history.
 
-![image](https://cdn-images-1.medium.com/max/800/1*hL7rZQkn_XO22WcnK6in4Q.png)
+![image](/img/blog/medium/cozystack-v1-0/04.png)
 
 #### AI/ML and complex workloads
 

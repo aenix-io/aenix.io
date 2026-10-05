@@ -2,7 +2,7 @@
 title: "FreeIPA tips and tricks: migrating FreeIPA from CentOS 7 LXC container to Rocky Linux, debugging…"
 description: "Recently, I had the task of updating an outdated FreeIPA in a large enterprise. This FreeIPA instance was installed in an LXC container…"
 date: "2024-08-01"
-cover_image: "/img/blog/covers/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging.png"
+cover_image: "/img/blog/medium/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/01.jpg"
 author: "Timur Tukaev"
 type: "article"
 topics: ["Proxmox", "Cozystack", "Migration", "Backup and DR", "FreeIPA"]
@@ -54,7 +54,7 @@ quiz:
 
 Hi! I’m Andrei, [Ænix](http://aenix.io) founder and main developer of the [Cozystack](http://cozystack.io) platform. Recently, I had the task of updating an outdated FreeIPA in a large enterprise. This FreeIPA instance was installed in an LXC container on CentOS 7 and had been non-functional for several months. I was handed a backup of the LXC container for Proxmox, and so the work began.
 
-![image](https://cdn-images-1.medium.com/max/800/1*pdEMbfyOrXygULAqwcZogw.png)
+![image](/img/blog/medium/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/01.jpg)
 
 Initial Plan:
 

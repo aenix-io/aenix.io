@@ -2,7 +2,7 @@
 title: "Reverse cloud migration — a practical playbook for leaving public cloud in 2026"
 description: "A five-step cloud repatriation playbook, the pitfalls that recur, when not to repatriate, and how long a realistic move actually takes."
 date: "2026-05-26"
-cover_image: "/img/blog/covers/reverse-cloud-migration-playbook.png"
+cover_image: "/img/blog/covers/reverse-cloud-migration-playbook.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "Cloud Repatriation", "AI/ML", "GPU"]

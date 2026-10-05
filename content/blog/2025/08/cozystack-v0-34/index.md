@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*ScnWV4E2GWHi4fRh"
+cover_image: "/img/blog/medium/cozystack-v0-34/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-34-d66557a0deeb"
 ---
 
@@ -18,7 +18,7 @@ Our maintainers and contributors never stand still, and we’re already ready to
 
 Below, we’ll cover the most important changes, and you can find the full list of fixes in the links at the end of the announcement.
 
-![image](https://cdn-images-1.medium.com/max/800/0*ScnWV4E2GWHi4fRh)
+![image](/img/blog/medium/cozystack-v0-34/cover.png)
 
 > What is Cozystack? Cozystack is a free PaaS and framework for building clouds that unifies VMs, containers, and GPU workloads under Kubernetes. Companies can turn hardware into a cloud: offer users or customers managed K8s, VMs, managed data bases, applications and GPU services. With KubeVirt integration, multi-tenancy, and bare-metal simplicity, it lets enterprises deploy AI, databases, or edge apps without vendor lock-in. Cozystack is a CNCF Sandbox project.
 
@@ -33,7 +33,7 @@ Below, we’ll cover the most important changes, and you can find the full list 
 - Put [YAML editor first](https://github.com/cozystack/cozystack/pull/1227) when deploying and upgrading applications, as a more powerful option. Fix handling multiline strings.
 - Numerous API improvements and progress toward the new UI: [OpenAPI schema for apps](https://github.com/cozystack/cozystack/pull/1174), [OpenAPI Schema](https://github.com/cozystack/cozystack/pull/1173) refactoring, using [singular resource names](https://github.com/cozystack/cozystack/pull/1169) in Cozystack API.
 
-![image](https://cdn-images-1.medium.com/max/800/0*_Fs8P1i4xt8umkVO)
+![image](/img/blog/medium/cozystack-v0-34/02.png)
 
 ### Security
 

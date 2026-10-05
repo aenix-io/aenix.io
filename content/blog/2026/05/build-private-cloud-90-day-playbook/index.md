@@ -2,7 +2,7 @@
 title: "Build your own private cloud — a 90-day playbook for the platform-team-led approach"
 description: "A day-0 to day-90 plan for standing up a private cloud: what gets built each month, what you deliberately skip, and where teams routinely stumble."
 date: "2026-05-02"
-cover_image: "/img/blog/covers/build-private-cloud-90-day-playbook.png"
+cover_image: "/img/blog/covers/build-private-cloud-90-day-playbook.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "VMware", "Cozystack", "Cilium", "Talos"]

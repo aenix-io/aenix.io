@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*XPWNsEtGmcIiY6zs"
+cover_image: "/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/cover.png"
 source_url: "https://medium.com/@tym83/updates-to-the-open-source-platform-cozystack-0-24-0-29-d47788ab7ebe"
 ---
 
@@ -63,7 +63,7 @@ Details: [v0.28.0](https://github.com/cozystack/cozystack/releases/tag/v0.28.0),
 
 This release focused on platform stabilization and introduced linstor-plunger scripts to automatically fix issues in LINSTOR (e.g., DRBD lost connection, stuck loop devices). It also added support for distributing PostgreSQL replicas across different nodes.
 
-![image](https://cdn-images-1.medium.com/max/800/0*XPWNsEtGmcIiY6zs)
+![image](/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/cover.png)
 
 **Other Changes:**
 
@@ -100,7 +100,7 @@ This release introduced cozy-proxy, a standalone tool for assigning dedicated IP
 
 **Details: **[v0.25.0](https://github.com/cozystack/cozystack/releases/tag/v0.25.0), [v0.25.1](https://github.com/cozystack/cozystack/releases/tag/v0.25.1), [v0.25.2](https://github.com/cozystack/cozystack/releases/tag/v0.25.2), [v0.25.3](https://github.com/cozystack/cozystack/releases/tag/v0.25.3).
 
-![image](https://cdn-images-1.medium.com/max/800/0*CIY_xKXLnyUjRk4U)
+![image](/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/02.png)
 
 ### Cozystack v0.24
 
@@ -114,7 +114,7 @@ This release added PXE provisioning for nodes to automatically deploy Talos Linu
 
 **Details: **[v0.24.0](https://github.com/cozystack/cozystack/releases/tag/v0.24.0), [v0.24.1](https://github.com/cozystack/cozystack/releases/tag/v0.24.1).
 
-![image](https://cdn-images-1.medium.com/max/800/0*PNjPPNo9algUKb7J)
+![image](/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/03.png)
 
 ### What’s Next
 

@@ -2,7 +2,7 @@
 title: "Public-sector sovereign cloud — from procurement framework to running platform"
 description: "How procurement leads and IT directors turn sovereignty mandates into a running cloud platform."
 date: "2026-05-25"
-cover_image: "/img/blog/covers/public-sector-sovereign-cloud-procurement.png"
+cover_image: "/img/blog/covers/public-sector-sovereign-cloud-procurement.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Public Sector", "Sovereignty", "Compliance", "NIS2", "Cozystack"]

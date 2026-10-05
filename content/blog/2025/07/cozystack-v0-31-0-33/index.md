@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI/ML", "GPU", "Multi-tenancy"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*3pZmxzc_xHr7-X94"
+cover_image: "/img/blog/medium/cozystack-v0-31-0-33/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-31-0-33-ae241c739b23"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-31-0-33-ae241c739b23"
 
 It’s been a while since we last covered Cozystack’s updates — time to fix that! We’re thrilled to showcase a wealth of new features and key improvements in this roundup. For brevity, we’ve curated only the most significant changes here (you’ll find all fixes and enhancements in the release notes, linked throughout the article).
 
-![image](https://cdn-images-1.medium.com/max/800/0*3pZmxzc_xHr7-X94)
+![image](/img/blog/medium/cozystack-v0-31-0-33/cover.jpg)
 
 > **What is Cozystack.** Cozystack is a free PaaS and framework for building clouds that unifies VMs, containers, and GPU workloads under Kubernetes. Companies can turn hardware into a cloud: offer users or customers managed K8s, VMs, managed data bases, applications and GPU services. With KubeVirt integration, multi-tenancy, and bare-metal simplicity, it lets enterprises deploy AI, databases, or edge apps without vendor lock-in. Cozystack is a CNCF Sandbox project.
 

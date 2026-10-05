@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/0*TPCZ3Zpt6v38RauU"
+cover_image: "/img/blog/medium/whats-new-in-cozystack-v0-17/cover.png"
 source_url: "https://medium.com/@tym83/whats-new-in-cozystack-v0-17-4f1373ddf831"
 ---
 
@@ -20,7 +20,7 @@ This update mainly focuses on enhancing the platform’s virtualization features
 
 > Cozystack leverages **Talos Linux** as its foundation, **LINSTOR** for storage, **KubeVirt** for virtualization, and **Cilium + KubeOVN** for networking.
 
-![image](https://cdn-images-1.medium.com/max/800/0*TPCZ3Zpt6v38RauU)
+![image](/img/blog/medium/whats-new-in-cozystack-v0-17/cover.png)
 
 #### **Virtualization Enhancements**
 
@@ -55,19 +55,19 @@ When ordering S3 buckets, a web interface is now automatically deployed for acce
 
 This interface is built on [s3manager](https://github.com/cloudlena/s3manager) (Apache 2.0).
 
-![image](https://cdn-images-1.medium.com/max/800/0*HVZdxOcTtif8O84i)
+![image](/img/blog/medium/whats-new-in-cozystack-v0-17/02.png)
 
 #### **Alert System Improvements**
 
 New alerts for FluxCD have been added, providing real-time status updates on releases. Alerts are now more structured and categorized, making it easier to navigate and identify issues. Additionally, the **Resource** field now displays the specific problematic resource, allowing for faster troubleshooting and resolution.
 
-![image](https://cdn-images-1.medium.com/max/800/0*8TbubaCWTABDevO1)
+![image](/img/blog/medium/whats-new-in-cozystack-v0-17/03.png)
 
 #### **Telegram Alert Integration**
 
 A new feature allows the delivery of alerts directly to Telegram, including deduplication to prevent alert spam. Alerts now come with actionable buttons, enabling you to manage the lifecycle of each alert (e.g., acknowledge, resolve) directly within the Telegram interface.
 
-![image](https://cdn-images-1.medium.com/max/800/0*3lsWgkyGJes-L0-D)
+![image](/img/blog/medium/whats-new-in-cozystack-v0-17/04.png)
 
 #### MachineHealthChecks Controller for Kubernetes
 

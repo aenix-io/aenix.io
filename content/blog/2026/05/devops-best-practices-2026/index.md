@@ -2,7 +2,7 @@
 title: "DevOps best practices for 2026 — beyond the slide-deck era"
 description: "The eight DevOps practices that compound in 2026, what is still contested, the failure modes that recur, and how to place your team on the maturity curve."
 date: "2026-05-09"
-cover_image: "/img/blog/covers/devops-best-practices-2026.png"
+cover_image: "/img/blog/covers/devops-best-practices-2026.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "GitOps", "AI/ML", "DevOps", "Observability"]

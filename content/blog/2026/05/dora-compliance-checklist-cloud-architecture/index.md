@@ -2,7 +2,7 @@
 title: "A DORA compliance checklist for cloud infrastructure — framework, controls, and what to demonstrate in 2026"
 description: "A working DORA checklist for cloud architecture: what Articles 21 and 28 require, where current setups fall short, and how to assess where you stand."
 date: "2026-05-10"
-cover_image: "/img/blog/covers/dora-compliance-checklist-cloud-architecture.png"
+cover_image: "/img/blog/covers/dora-compliance-checklist-cloud-architecture.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance"]

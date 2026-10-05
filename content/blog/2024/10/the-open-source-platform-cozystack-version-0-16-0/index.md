@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "GitOps", "Observability"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*jOAv-G1LLJy84HwQHpI0Pw.png"
+cover_image: "/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/cover.png"
 source_url: "https://medium.com/@tym83/the-open-source-platform-cozystack-version-0-16-0-e2e86ca6ec47"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/the-open-source-platform-cozystack-versio
 
 Key Highlights Cozystack now features an alert system based on the open-source tool [Alerta](https://alerta.io/), with the ability to configure notifications directly to Telegram. Additionally, you can receive alerts from k8s-prometheus stack, all Grafana dashboards have been updated, as well as Grafana itself and the grafana-operator.
 
-![image](https://cdn-images-1.medium.com/max/800/1*jOAv-G1LLJy84HwQHpI0Pw.png)
+![image](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/cover.png)
 
 Alerta interface
 
@@ -31,15 +31,15 @@ Other changes:
 - Talos Linux updated to version v1.8.0
 - Cilium updated to the latest patch version (v1.16.2)
 
-![image](https://cdn-images-1.medium.com/max/800/1*AfwiLHWi-5tqeanoAfTr0A.jpeg)
+![image](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/02.jpg)
 
 New dashboards
 
-![image](https://cdn-images-1.medium.com/max/800/1*Lop2OD3KPS0Zw21Hn4oaDw.jpeg)
+![image](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/03.jpg)
 
 New dashboards
 
-![image](https://cdn-images-1.medium.com/max/800/1*-iZWlbUb3RZH1wfNxdhRhw.jpeg)
+![image](/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/04.jpg)
 
 New dashboards
 

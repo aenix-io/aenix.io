@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Multi-tenancy", "CNCF"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*WLZZyy9BhhuQQ69f3jRGWQ.png"
+cover_image: "/img/blog/medium/cozystack-v0-37-brand-new-ui/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-37-brand-new-ui-dd4ad96eac57"
 ---
 
@@ -16,7 +16,7 @@ source_url: "https://medium.com/@tym83/cozystack-v0-37-brand-new-ui-dd4ad96eac57
 
 In the new release, the Cozystack developer community unveiled a completely new UI based on the openapi-ui project. The maintainers fully rewrote the platform’s frontend, delivered numerous improvements, and fixed issues that existed in the previous Kubeapps-based UI. Let’s see what’s inside.
 
-![image](https://cdn-images-1.medium.com/max/800/1*WLZZyy9BhhuQQ69f3jRGWQ.png)
+![image](/img/blog/medium/cozystack-v0-37-brand-new-ui/cover.png)
 
 > **What’s Cozystack
 **Cozystack is an open-source platform that lets you build a bare-metal cloud for fast rollout of managed Kubernetes, Database-as-a-Service, Applications-as-a-Service, and virtual machines powered by KubeVirt. With a click, you can deploy services like Kafka, FerretDB, PostgreSQL, Cilium, Grafana, VictoriaMetrics, and more. Cozystack is a CNCF Sandbox project.
@@ -31,13 +31,13 @@ A cluster selector has been added. Today, the dashboard operates in single-clust
 
 On the cluster view, you now see all namespaces you’re entitled to. The list is built via the Kubernetes API aggregation layer (tenant namespace), so only namespaces you have access to are shown.
 
-![image](https://cdn-images-1.medium.com/max/800/1*OGeLo4NF3nd7Uwb7xbpCdw.png)
+![image](/img/blog/medium/cozystack-v0-37-brand-new-ui/02.png)
 
 #### Application categories
 
 Existing applications are split into three categories. In upcoming releases, categories will be optional — you’ll be able to deploy only selected groups and skip others.
 
-![image](https://cdn-images-1.medium.com/max/800/1*JxQiidEBWtrGT4Tot2IJhQ.png)
+![image](/img/blog/medium/cozystack-v0-37-brand-new-ui/03.png)
 
 #### Richer resource pages
 
@@ -56,7 +56,7 @@ Resource creation uses forms auto-generated from the Kubernetes OpenAPI spec. Fi
 
 New application specs are generated from Helm charts using the cozy-values generator. Fields you add in the form are reflected live in the resulting YAML.
 
-![image](https://cdn-images-1.medium.com/max/800/1*ZQcrO_HxYeyZstxrgkiP4g.png)
+![image](/img/blog/medium/cozystack-v0-37-brand-new-ui/04.png)
 
 #### Tenant administration separated
 

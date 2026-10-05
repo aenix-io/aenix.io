@@ -6,7 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR", "GPU"]
 language: "en"
-cover_image: "https://cdn-images-1.medium.com/max/1200/1*lLZdb10kWsO4TwvhRA-CAg.png"
+cover_image: "/img/blog/medium/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images-3ad9b04a39de"
 ---
 
@@ -14,7 +14,7 @@ source_url: "https://medium.com/@tym83/cozystack-1-3-storage-aware-scheduling-li
 
 ### Cozystack 1.3: Storage-Aware Scheduling, LINSTOR GUI, and VM Default Images
 
-![image](https://cdn-images-1.medium.com/max/800/1*lLZdb10kWsO4TwvhRA-CAg.png)
+![image](/img/blog/medium/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images/cover.jpg)
 
 Cozystack v1.3.0 is now available. The release also rolls up every fix shipped in the v1.2.1 → v1.2.4 patch line.
 

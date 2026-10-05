@@ -2,7 +2,7 @@
 title: "Private cloud architecture in 2026 — design, components, and implementation patterns"
 description: "What private cloud means in 2026: the architectural layers, three patterns that work, capacity sizing, and the mistakes that recur in design reviews."
 date: "2026-05-22"
-cover_image: "/img/blog/covers/private-cloud-architecture-2026.png"
+cover_image: "/img/blog/covers/private-cloud-architecture-2026.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenStack", "Kubernetes", "KubeVirt", "Sovereignty", "Multi-tenancy", "Financial Services"]
