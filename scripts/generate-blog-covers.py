@@ -526,7 +526,7 @@ def _set_cover(path, fm_text, body, web_path):
     else:
         fm_text = fm_text.rstrip() + "\n" + line + "\n"
     with open(path, "w", encoding="utf-8") as fh:
-        fh.write("---\n" + fm_text.strip("\n") + "\n---\n" + body)
+        fh.write("---\n" + fm_text.strip("\n") + "\n---" + body)
 
 
 def main():
