@@ -8,15 +8,14 @@ topics: ["Kubernetes", "DevOps", "Open Source", "CNCF", "Platform Engineering", 
 language: "en"
 cover_image: "/img/blog/medium/cozystack-became-a-certified-kubernetes-platform/cover.png"
 source_url: "https://medium.com/p/5638876bc2e0"
-external_only: True
 ---
 
-**This article is currently published on Medium.** The full text will be imported here once we have the source archive.
+![image](/img/blog/medium/cozystack-became-a-certified-kubernetes-platform/cover.png)
 
-[Read on Medium →](https://medium.com/p/5638876bc2e0)
+We’re proud to announce: Cozystack has achieved Certified Kubernetes Platform status. Thanks to our community and especially to our good friends from Hidora.
 
-> *We’re proud to announce: Cozystack has achieved Certified Kubernetes Platform status. Thanks to our community and especially to our good…*
+By [Timur Tukaev](https://medium.com/@tym83) on [June 6, 2025](https://medium.com/p/5638876bc2e0).
 
----
+[Canonical link](https://medium.com/p/5638876bc2e0)
 
-By **Timur Tukaev** · June 06, 2025 · 1 min read · 1 claps
+Exported from [Medium](https://medium.com) on October 5, 2026.
