@@ -130,9 +130,9 @@ As a reminder, we’re developing the open-source PaaS platform [Cozystack](http
 
 Cozystack is built on top of [FluxCD](https://fluxcd.io/). Any application is packaged into its own Helm chart, ready for deployment in a tenant namespace. Deploying any application on the platform is done by creating a HelmRelease resource, specifying the chart name and parameters for the application. All the rest logic is handled by FluxCD. This pattern allows us to easily extend the platform with new applications and provide the ability to create new applications that just need to be packaged into the appropriate Helm chart.
 
-![image](/img/blog/medium/how-we-built-a-dynamic-kubernetes-api-server-for-the-api-aggregation-layer-in-cozystack/01.png)
+![Interface of the Cozystack platform](/img/blog/medium/how-we-built-a-dynamic-kubernetes-api-server-for-the-api-aggregation-layer-in-cozystack/01.png)
 
-Interface of the Cozystack platform
+*Interface of the Cozystack platform*
 
 So, in our platform, everything is configured as HelmRelease resources. However, we ran into two problems: limitations of the RBAC model and the need for a public API. Let’s delve into these
 

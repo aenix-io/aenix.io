@@ -1,7 +1,9 @@
 ---
 title: "Recent Changes in the Cozystack Open Source Platform: Opencost, Log Collection System, Bridge…"
 description: "Over the past couple of months, we have been actively developing our Cozystack Open Source platform, and today we’re presenting the…"
-date: "2025-02-28"
+date: "2024-09-26"
+aliases:
+  - "/blog/2025/02/recent-changes-in-the-cozystack-open-source-platform-opencost-log-collection-system-bridge/"
 author: "Andrei Kvapil"
 type: "news"
 topics: ["Kubernetes", "Platform Engineering", "DevOps", "Open Source", "Cozystack"]
@@ -42,7 +44,7 @@ source_url: "https://medium.com/p/66bb25b7269b"
 
 > Join our [cozy community](https://t.me/cozystack): ask questions, receive support from the community and maintainers, and participate in the development of the Open Source platform!
 
-By [Andrei Kvapil](https://medium.com/@kvaps) on [February 28, 2025](https://medium.com/p/66bb25b7269b).
+By [Andrei Kvapil](https://medium.com/@kvaps) on [September 26, 2024](https://medium.com/p/66bb25b7269b).
 
 [Canonical link](https://medium.com/p/66bb25b7269b)
 
