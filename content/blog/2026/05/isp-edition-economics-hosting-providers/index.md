@@ -2,7 +2,7 @@
 title: "Public Cloud Platform economics — when a turnkey cloud-in-a-box pays back for hosting providers"
 description: "Unit economics of Aenix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
 date: "2026-05-15"
-cover_image: "/img/blog/covers/isp-edition-economics-hosting-providers.png"
+cover_image: "/img/blog/covers/isp-edition-economics-hosting-providers.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]

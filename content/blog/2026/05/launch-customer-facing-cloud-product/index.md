@@ -2,7 +2,7 @@
 title: "Launch a customer-facing cloud product — playbook for hosting providers, telcos, and regional operators"
 description: "The six layers of a customer-facing cloud product, the architectural decisions specific to public cloud, and where launches stumble commercially."
 date: "2026-05-17"
-cover_image: "/img/blog/covers/launch-customer-facing-cloud-product.png"
+cover_image: "/img/blog/covers/launch-customer-facing-cloud-product.jpg"
 author: "Aenix Team"
 type: "announcement"
 topics: ["VMware", "Kubernetes", "Sovereignty", "AI/ML", "Multi-tenancy", "Hosting"]

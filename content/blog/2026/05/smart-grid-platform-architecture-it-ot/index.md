@@ -2,7 +2,7 @@
 title: "Smart grid platform architecture — IT/OT convergence, edge, and AI on customer-controlled infrastructure"
 description: "A smart-grid architectural reference for energy operators: IT/OT boundaries that work, NIS2 controls, AI on grid-operational data, and legacy migration."
 date: "2026-05-26"
-cover_image: "/img/blog/covers/smart-grid-platform-architecture-it-ot.png"
+cover_image: "/img/blog/covers/smart-grid-platform-architecture-it-ot.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "AI/ML", "GPU", "Compliance"]

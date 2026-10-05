@@ -2,7 +2,7 @@
 title: "OpenStack vs Cozystack — modernization options for OpenStack operators in 2026"
 description: "Where OpenStack still wins, where the operational pressure comes from, and the modernization paths available to OpenStack-trained teams."
 date: "2026-05-21"
-cover_image: "/img/blog/covers/openstack-vs-cozystack-modernization.png"
+cover_image: "/img/blog/covers/openstack-vs-cozystack-modernization.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenStack", "Kubernetes", "Cozystack", "Sovereignty", "Migration"]

@@ -2,7 +2,7 @@
 title: "NIS2 requirements for cloud infrastructure — a checklist for in-scope entities in 2026"
 description: "NIS2 Articles 21, 23, 28 and 12 mapped to concrete cloud architecture controls, with a working checklist and the architectural failures that recur."
 date: "2026-05-18"
-cover_image: "/img/blog/covers/nis2-requirements-cloud-infrastructure-checklist.png"
+cover_image: "/img/blog/covers/nis2-requirements-cloud-infrastructure-checklist.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Financial Services", "Compliance"]

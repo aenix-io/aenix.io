@@ -2,7 +2,7 @@
 title: "Developer Self-Service — the cost of developer drag, and what an internal developer platform actually pays back"
 description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
 date: "2026-05-13"
-cover_image: "/img/blog/covers/idp-edition-developer-velocity-economics.png"
+cover_image: "/img/blog/covers/idp-edition-developer-velocity-economics.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]

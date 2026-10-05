@@ -2,7 +2,7 @@
 title: "Public Cloud Platform — what it actually takes to launch a sovereign cloud product at scale"
 description: "What a multi-year, multi-million-euro sovereign cloud build covers for telcos, banks, and operators."
 date: "2026-05-25"
-cover_image: "/img/blog/covers/public-cloud-edition-multi-tenant-cloud-builder.png"
+cover_image: "/img/blog/covers/public-cloud-edition-multi-tenant-cloud-builder.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Sovereignty", "Cloud", "Platform Engineering"]

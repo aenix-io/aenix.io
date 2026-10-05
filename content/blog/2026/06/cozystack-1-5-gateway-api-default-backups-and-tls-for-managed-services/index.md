@@ -3,7 +3,7 @@ title: "Cozystack 1.5: Gateway API, default backups, Flux sharding, and TLS for 
 description: "Cozystack v1.5.0 adds opt-in Gateway API via Cilium, a default BackupClass, Flux v2.8 with sharding, TLS for managed databases, and GPU passthrough."
 slug: "cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services"
 date: "2026-06-22"
-cover_image: "/img/blog/covers/cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services.png"
+cover_image: "/img/blog/covers/cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services.jpg"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "Cilium", "KubeVirt", "GPU", "Platform Engineering"]

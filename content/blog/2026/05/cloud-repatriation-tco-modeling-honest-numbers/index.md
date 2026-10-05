@@ -2,7 +2,7 @@
 title: "Honest TCO modelling for cloud repatriation — what numbers to actually compare"
 description: "Why most cloud repatriation TCO models are wrong: the destination costs they miss, sensitivity analysis, and workload-level decisions that change the answer."
 date: "2026-05-05"
-cover_image: "/img/blog/covers/cloud-repatriation-tco-modeling-honest-numbers.png"
+cover_image: "/img/blog/covers/cloud-repatriation-tco-modeling-honest-numbers.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cloud Repatriation", "Financial Services", "Platform Engineering", "Backup and DR", "Observability"]

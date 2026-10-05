@@ -2,7 +2,7 @@
 title: "Platform engineering vs DevOps vs SRE — a 2026 terminology guide"
 description: "Where platform engineering, DevOps and SRE overlap and where they do not, what each actually builds, and the metrics that separate them."
 date: "2026-05-21"
-cover_image: "/img/blog/covers/platform-engineering-vs-devops-vs-sre.png"
+cover_image: "/img/blog/covers/platform-engineering-vs-devops-vs-sre.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["DevOps", "Platform Engineering", "Observability"]

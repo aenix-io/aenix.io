@@ -2,7 +2,7 @@
 title: "VMware migration tools and strategy in 2026 — what works, what fails"
 description: "Three VMware migration paths, the tooling for KubeVirt-based migration, where migrations stumble, and realistic cost ranges."
 date: "2026-05-29"
-cover_image: "/img/blog/covers/vmware-migration-tools-and-strategy.png"
+cover_image: "/img/blog/covers/vmware-migration-tools-and-strategy.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Nutanix", "OpenShift", "Kubernetes", "Cozystack", "KubeVirt"]

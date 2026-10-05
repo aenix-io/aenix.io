@@ -2,7 +2,7 @@
 title: "kubectl-node-shell plugin updated to v1.11.0"
 description: "We have updated the kubectl-node-shell plugin to v1.11.0."
 date: "2024-12-02"
-cover_image: "/img/blog/covers/kubectl-node-shell-plugin-updated-to-v1110.png"
+cover_image: "/img/blog/covers/kubectl-node-shell-plugin-updated-to-v1110.jpg"
 author: "Andrei Kvapil"
 type: "announcement"
 topics: ["Kubernetes", "DevOps", "Open Source", "Cloud"]

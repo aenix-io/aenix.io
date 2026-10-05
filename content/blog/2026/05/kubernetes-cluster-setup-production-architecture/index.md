@@ -2,7 +2,7 @@
 title: "Production Kubernetes cluster setup — architecture decisions, sizing, and operations in 2026"
 description: "Ten architecture decisions behind a production Kubernetes cluster — distribution, tenancy, CNI, storage, GitOps, DR — and the readiness failures that recur."
 date: "2026-05-16"
-cover_image: "/img/blog/covers/kubernetes-cluster-setup-production-architecture.png"
+cover_image: "/img/blog/covers/kubernetes-cluster-setup-production-architecture.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "KubeVirt", "Talos", "Sovereignty"]

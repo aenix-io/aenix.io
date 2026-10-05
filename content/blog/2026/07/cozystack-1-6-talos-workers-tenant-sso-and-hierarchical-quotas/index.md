@@ -3,7 +3,7 @@ title: "Cozystack 1.6: Talos tenant workers, tenant SSO, SecurityGroups, and hie
 description: "Cozystack v1.6.0 moves tenant workers to Talos via Cluster API and adds tenant OIDC, a SecurityGroup firewall API, hierarchical quotas and etcd v1alpha2."
 slug: "cozystack-1-6-talos-workers-tenant-sso-and-hierarchical-quotas"
 date: "2026-07-22"
-cover_image: "/img/blog/covers/cozystack-1-6-talos-workers-tenant-sso-and-hierarchical-quotas.png"
+cover_image: "/img/blog/covers/cozystack-1-6-talos-workers-tenant-sso-and-hierarchical-quotas.jpg"
 author: "Timur Tukaev"
 type: "announcement"
 topics: ["Cozystack", "Kubernetes", "Talos", "Multi-tenancy", "KubeVirt", "Platform Engineering"]

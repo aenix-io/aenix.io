@@ -2,7 +2,7 @@
 title: "Cloud-native research and teaching infrastructure — what universities actually need in 2026"
 description: "Architecture patterns for university research and teaching infrastructure: the three missions, GPU scheduling for labs, and the pitfalls that recur."
 date: "2026-05-04"
-cover_image: "/img/blog/covers/cloud-native-research-and-teaching-infrastructure.png"
+cover_image: "/img/blog/covers/cloud-native-research-and-teaching-infrastructure.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "AI/ML", "GPU", "Multi-tenancy"]

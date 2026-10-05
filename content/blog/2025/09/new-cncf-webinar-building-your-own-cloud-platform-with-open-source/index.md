@@ -2,7 +2,7 @@
 title: "New CNCF Webinar: Building Your Own Cloud Platform with Open Source"
 description: "We’re excited to share Andrey Kvapil’s webinar for CNCF! He dives deep into how to build a powerful cloud platform using open-source…"
 date: "2025-09-05"
-cover_image: "/img/blog/covers/new-cncf-webinar-building-your-own-cloud-platform-with-open-source.png"
+cover_image: "/img/blog/covers/new-cncf-webinar-building-your-own-cloud-platform-with-open-source.jpg"
 author: "Timur Tukaev"
 type: "news"
 topics: ["CNCF", "Migration"]

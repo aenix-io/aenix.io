@@ -2,7 +2,7 @@
 title: "VMware replacement after Broadcom: a guide for service providers, banks, and sovereign clouds in 2026"
 description: "What changed under Broadcom, a component-by-component VMware-to-Cozystack mapping, how the migration actually runs, and the FAQ engineers ask first."
 date: "2026-05-30"
-cover_image: "/img/blog/covers/vmware-replacement-after-broadcom.png"
+cover_image: "/img/blog/covers/vmware-replacement-after-broadcom.jpg"
 author: "Aenix Team"
 type: "tutorial"
 topics: ["VMware", "Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU"]

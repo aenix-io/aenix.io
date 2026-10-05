@@ -2,7 +2,7 @@
 title: "Developer experience platforms — building self-service paths that actually get used"
 description: "The ten golden paths most worth building, the five characteristics that make them work, and the architectural decisions that shape self-service."
 date: "2026-05-09"
-cover_image: "/img/blog/covers/developer-experience-platform-self-service-paths.png"
+cover_image: "/img/blog/covers/developer-experience-platform-self-service-paths.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes"]
