@@ -7,7 +7,7 @@ lastmod: 2026-08-21
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/metallb-evpn-address-mobility/"
-images: ["img/og/og-case-metallb-evpn-address-mobility.png"]
+images: ["img/og/og-case-metallb-evpn-address-mobility.jpg"]
 primary_keyword: "MetalLB L2 asymmetrisches Routing"
 secondary_keywords:
   - "MetalLB EVPN VXLAN"

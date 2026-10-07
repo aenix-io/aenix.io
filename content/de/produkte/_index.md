@@ -7,7 +7,7 @@ page_type: "product"
 hreflang_en: /products/
 primary_keyword: "aenix produkte"
 secondary_keywords: ["cozystack kommerzielle plattform", "kubernetes cloud plattform", "souveräne cloud produkte"]
-images: ["img/og/products.png"]
+images: ["img/og/products.jpg"]
 related_pages: ["/de/produkte/public-cloud-platform/", "/de/produkte/private-cloud-platform/", "/de/produkte/ai-platform/", "/de/produkte/cozystack-enterprise-support/", "/de/produkte/whmcs-integration/"]
 direct_answer: |
   **Aenix verkauft drei Cloud-Plattformen und zwei ergänzende Produkte. Alle bauen auf Cozystack auf, dem Apache-2.0-lizenzierten CNCF-Projekt, das Aenix entwickelt und pflegt. Die Ænix Public Cloud Platform richtet sich an Organisationen, die Cloud-Kapazität verkaufen — Hosting-Anbieter, MSPs, Telcos und nationale Betreiber —, inklusive Billing, Payments und White-Label-Portal. Die Ænix Private Cloud Platform richtet sich an regulierte Organisationen, die Cloud für sich selbst betreiben: DORA- und NIS2-Architektur, kundenkontrollierte Schlüssel, revisionsfeste Protokollierung und eine Developer-Self-Service-Schicht. Die Ænix AI Platform ergänzt mandantenfähiges GPU-Scheduling, Model Serving und Vektordatenbanken für Inferenz und Fine-Tuning auf eigener Hardware. Daneben bietet Aenix Enterprise-Support für selbst betriebenes Cozystack sowie eine WHMCS-Integration für Hoster. Die drei Plattformen sind dieselbe Engine mit unterschiedlich zugeschalteten Oberflächen — sie zu kombinieren ist eine Konfigurationsentscheidung, keine zweite Beschaffung.**

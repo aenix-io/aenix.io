@@ -2,6 +2,7 @@
 title: "Internal Developer Platform Beispiele — 6 architektonische Muster ohne Backstage-Lock-in"
 description: "- Internal Developer Platform — die Capability-Schicht (Compute, Storage, Networking, Identity, Observability, Deployment-Automatisierung) - Internal..."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/internal-developer-platform-beispiele-ohne-backstage.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes", "Cozystack", "GitOps", "Multi-tenancy", "Platform Engineering"]

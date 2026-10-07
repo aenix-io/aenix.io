@@ -1,38 +1,43 @@
 #!/usr/bin/env python3
-"""Generate 1200x630 OG cards for role / tool / partner landing pages.
-Brand: deep teal bg #0F4C5C, orange accent #E36414, cream text #F8F4F0.
-Run: python3 scripts/generate-og-cards.py  -> writes static/img/og/*.png
+"""Social preview (OG) images, 1200x630, in the style of the blog covers.
+
+Two kinds of image:
+
+* Named cards (CARDS below) for landing pages that set `images:` in their front
+  matter, plus the site-wide fallback static/img/aenix-social-card.jpg.
+* One card per page that has neither `images:` nor `cover_image:`, written to
+  static/img/og/pages/<key>.jpg, where <key> is the page's path with "/"
+  replaced by "--" ("home" for the front page). layouts/partials/seo/head.html
+  picks that file up by the same key, so no front matter has to change.
+
+Drawing is shared with scripts/generate-blog-covers.py: the same isometric
+scenes, palette, Inter font and Cozystack / Aenix marks.
+
+Run: python3 scripts/generate-og-cards.py            # named cards + default + every page
+     python3 scripts/generate-og-cards.py --cards    # named cards and the default only
+     python3 scripts/generate-og-cards.py --pages    # per-page cards only (builds the site with hugo)
+     python3 scripts/generate-og-cards.py --static   # the shareable static pages only
 """
-import glob
+import hashlib
+import html as H
+import importlib.util
 import os
-from PIL import Image, ImageDraw, ImageFont
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+from concurrent.futures import ThreadPoolExecutor
 
-OUT = os.path.join(os.path.dirname(__file__), "..", "static", "img", "og")
-os.makedirs(OUT, exist_ok=True)
+ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
+OUT = os.path.join(ROOT, "static", "img", "og")
+PAGES_OUT = os.path.join(OUT, "pages")
+DEFAULT_CARD = os.path.join(ROOT, "static", "img", "aenix-social-card.jpg")
 
-def _font(*candidates):
-    """First font that exists — the script runs on Linux CI and on macOS laptops."""
-    for path in candidates:
-        if os.path.exists(path):
-            return path
-    raise SystemExit("no usable font found; tried: " + ", ".join(candidates))
-
-
-_LIBREOFFICE = "/opt/homebrew/Caskroom/libreoffice/*/LibreOffice.app/Contents/Resources/fonts/truetype"
-
-FONT = _font(
-    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    *glob.glob(f"{_LIBREOFFICE}/DejaVuSans-Bold.ttf"),
-)
-FONT_R = _font(
-    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-    *glob.glob(f"{_LIBREOFFICE}/DejaVuSans.ttf"),
-)
-BG = (15, 76, 92)        # #0F4C5C
-ACCENT = (227, 100, 20)  # #E36414
-CREAM = (248, 244, 240)  # #F8F4F0
-MUTED = (181, 201, 207)  # #B5C9CF
-W, H = 1200, 630
+sys.dont_write_bytecode = True  # importing the covers script must not leave __pycache__ in scripts/
+_spec = importlib.util.spec_from_file_location("covers", os.path.join(os.path.dirname(__file__), "generate-blog-covers.py"))
+covers = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(covers)
 
 # (filename, eyebrow, title)
 CARDS = [
@@ -101,86 +106,219 @@ CARDS = [
     ("og-case-multicloud-academic-gpu", "CUSTOMER CASE · ACADEMIC GPU",
      "From public cloud to bare metal, bursting on demand"),
     ("og-case-sovereign-public-cloud", "CUSTOMER CASE · SOVEREIGN CLOUD",
-     "A sovereign public cloud on bare metal"),
+     "A sovereign public cloud on bare metal"),    # Product and pricing pages
+    ("ai-platform", "PRODUCT", "Ænix AI Platform — sovereign AI and GPU infrastructure"),
+    ("cozystack-enterprise-support", "PRODUCT", "Enterprise support for Cozystack"),
+    ("pricing", "PRICING", "Ænix Platform pricing"),
+    ("private-cloud-platform", "PRODUCT", "Ænix Private Cloud Platform"),
+    ("products", "PRODUCTS", "Ænix products"),
+    ("public-cloud-platform", "PRODUCT", "Ænix Public Cloud Platform — for everyone who sells cloud"),
 ]
 
 
-def wrap(draw, text, font, max_w):
-    words, lines, cur = text.split(), [], ""
-    for w in words:
-        t = (cur + " " + w).strip()
-        if draw.textlength(t, font=font) <= max_w:
-            cur = t
+SMALL = {"of", "for", "and", "on", "to", "the", "in", "vs", "a", "an", "by", "&", "und", "für", "von", "mit", "zu", "im", "der", "die", "das"}
+ACRONYMS = {"AI", "ML", "KI", "GPU", "TCO", "IDP", "SI", "MSP", "MSPS", "CTO", "CTOS", "CISO", "CISOS", "VPS", "DORA", "NIS2",
+            "IBM", "AIX", "ROI", "API", "EU", "OSS", "CNCF", "IT", "OT", "SRE", "LLM", "VM", "VMS", "VCF", "VVF", "ISP", "SAAS"}
+
+
+def pill_case(text):
+    """'FOR CTOs & VPs OF ENGINEERING' -> 'For CTOs & VPs of Engineering'."""
+    out = []
+    for i, w in enumerate(text.split()):
+        core = re.sub(r"[^\w]", "", w)
+        if any(c.islower() for c in w) or core.upper() in ACRONYMS or not core:
+            out.append(w)
+        elif i and w.lower() in SMALL:
+            out.append(w.lower())
         else:
-            if cur:
-                lines.append(cur)
-            cur = w
-    if cur:
-        lines.append(cur)
-    return lines
+            out.append(w[:1] + w[1:].lower())
+    return " ".join(out)
 
 
-def make(fn, eyebrow, title):
-    img = Image.new("RGB", (W, H), BG)
-    d = ImageDraw.Draw(img)
-    margin = 80
-    # accent bar top-left
-    d.rectangle([margin, 96, margin + 64, 104], fill=ACCENT)
-    # wordmark
-    wm = ImageFont.truetype(FONT, 40)
-    d.text((margin, 120), "ÆNIX", font=wm, fill=CREAM)
-    # eyebrow
-    eb = ImageFont.truetype(FONT, 28)
-    d.text((margin, 250), eyebrow, font=eb, fill=ACCENT)
-    # title (wrap, autoshrink)
-    size = 76
-    while size > 40:
-        tf = ImageFont.truetype(FONT, size)
-        lines = wrap(d, title, tf, W - 2 * margin)
-        if len(lines) <= 3:
-            break
-        size -= 4
-    y = 300
-    for ln in lines:
-        d.text((margin, y), ln, font=tf, fill=CREAM)
-        y += int(size * 1.18)
-    # footer
-    ff = ImageFont.truetype(FONT_R, 26)
-    d.text((margin, H - 80), "aenix.io   ·   built on Cozystack (CNCF)", font=ff, fill=MUTED)
-    img.save(os.path.join(OUT, fn + ".png"), "PNG")
-    return fn
+def seed_of(name):
+    return int(hashlib.sha1(name.encode()).hexdigest()[:8], 16)
+
+
+def make(fn, eyebrow, title, out=None):
+    out = out or os.path.join(OUT, fn + ".jpg")
+    motif = covers.motif_for(fn, title + " " + eyebrow)
+    covers.render(title, pill_case(eyebrow), motif, out, seed_of(fn), seed_of(fn) % 4)
+    return out
 
 
 def make_default():
-    """Site-wide fallback OG card: static/img/aenix-social-card.png.
-
-    layouts/partials/seo/head.html falls back to img/aenix-social-card.png for
-    every page without an `images:` entry — the large majority of the site — and
-    jsonld-blogposting.html uses the same path for schema.org `image`. The file
-    must therefore exist, or those pages advertise a 404 to every social
-    scraper. Copy is the site title + params.description from hugo.yaml; keep
-    them in sync.
-    """
-    img = Image.new("RGB", (W, H), BG)
-    d = ImageDraw.Draw(img)
-    margin = 80
-    d.rectangle([margin, 96, margin + 64, 104], fill=ACCENT)
-    d.text((margin, 120), "ÆNIX", font=ImageFont.truetype(FONT, 40), fill=CREAM)
-    d.text((margin, 250), "TURNKEY CLOUD PLATFORM ON COZYSTACK (CNCF)",
-           font=ImageFont.truetype(FONT, 28), fill=ACCENT)
-    tf = ImageFont.truetype(FONT, 64)
-    y = 300
-    for ln in wrap(d, "Sell cloud, run your own, or run AI on your own GPUs", tf, W - 2 * margin):
-        d.text((margin, y), ln, font=tf, fill=CREAM)
-        y += int(64 * 1.18)
-    d.text((margin, H - 80), "aenix.io   ·   built on Cozystack (CNCF)",
-           font=ImageFont.truetype(FONT_R, 26), fill=MUTED)
-    path = os.path.join(os.path.dirname(__file__), "..", "static", "img", "aenix-social-card.png")
-    img.save(path, "PNG")
-    return os.path.normpath(path)
+    """Site-wide fallback: the front page title on the platform scene."""
+    return make("aenix-social-card", "Ænix Platform",
+                "Run your own cloud — sell cloud, run your own, or run AI on your own GPUs", DEFAULT_CARD)
 
 
-for c in CARDS:
-    print("wrote", make(*c) + ".png")
-print("wrote", make_default())
-print("done:", len(CARDS), "cards ->", os.path.normpath(OUT))
+# --- per-page cards ------------------------------------------------------------------------------
+SECTIONS = {  # first path segment -> (EN label, DE label, motif)
+    "services": ("Services", "Dienstleistungen", None), "dienstleistungen": ("Services", "Dienstleistungen", None),
+    "solutions": ("Solutions", "Lösungen", None), "loesungen": ("Solutions", "Lösungen", None),
+    "industries": ("Industries", "Branchen", None), "branchen": ("Industries", "Branchen", None),
+    "resources": ("Resources", "Ressourcen", None), "ressourcen": ("Resources", "Ressourcen", None),
+    "alternatives": ("Alternatives", "Alternativen", "compare"), "alternativen": ("Alternatives", "Alternativen", "compare"),
+    "compare": ("Comparison", "Vergleich", "compare"), "vergleichen": ("Comparison", "Vergleich", "compare"),
+    "migration": ("Migration", "Migration", "migration"),
+    "compliance": ("Compliance", "Compliance", "security"),
+    "certification": ("Certification", "Zertifizierung", "devx"),
+    "products": ("Product", "Produkt", None), "produkte": ("Product", "Produkt", None),
+    "topics": ("Topic", "Thema", None),
+    "case-studies": ("Customer case", "Kundenfall", None),
+    "workshop": ("Workshop", "Workshop", "migration"), "workshops": ("Workshop", "Workshop", "migration"),
+    "webinars": ("Webinar", "Webinar", None), "web0826": ("Webinar", "Webinar", None),
+    "blog": ("Blog", "Blog", None), "authors": ("Blog", "Blog", None), "types": ("Blog", "Blog", None),
+    "pricing": ("Pricing", "Preise", "cost"), "preise": ("Pricing", "Preise", "cost"),
+    "roi-calculator": ("ROI calculator", "ROI-Rechner", "cost"), "roi-rechner": ("ROI calculator", "ROI-Rechner", "cost"),
+    "about": ("About", "Über uns", None), "ueber-uns": ("About", "Über uns", None),
+    "contact": ("Contact", "Kontakt", None), "kontakt": ("Contact", "Kontakt", None),
+    "partners": ("Partners", "Partner", None), "partner": ("Partners", "Partner", None),
+    "conferences": ("Events", "Konferenzen", None), "konferenzen": ("Events", "Konferenzen", None),
+    "kubernetes-deep-dive": ("Deep dive", "Deep Dive", "devx"),
+    "idp": ("Platform Engineering", "Platform Engineering", "devx"),
+    "quiz": ("Quiz", "Quiz", None), "demo": ("Demo", "Demo", None),
+    "oss-contribution": ("Open source", "Open Source", "devx"),
+    "privacy-policy": ("Legal", "Rechtliches", None), "impressum": ("Legal", "Rechtliches", None),
+}
+
+
+def page_key(rel):
+    key = rel.strip("/").replace("/", "--")
+    return key or "home"
+
+
+def _meta(html_text, prop):
+    m = re.search(r'<meta (?:property|name)="%s" content="([^"]*)"' % re.escape(prop), html_text)
+    return H.unescape(m.group(1)) if m else ""
+
+
+def _split(title, desc):
+    """Title and a short second line: the title's own subtitle, else the first sentence of the description."""
+    head, sub = covers.split_title(title)
+    if sub or not desc:
+        return head, sub
+    desc = re.split(r"(?<=[.!?])\s", desc.strip(), maxsplit=1)[0]
+    if len(desc) > 120:
+        desc = desc[:120].rsplit(" ", 1)[0].rstrip(",;:—-") + "…"
+    return title, desc
+
+
+def build_site():
+    tmp = tempfile.mkdtemp(prefix="aenix-og-")
+    res = subprocess.run(["hugo", "--quiet", "-d", tmp], cwd=ROOT, capture_output=True, text=True)
+    if res.returncode:
+        raise SystemExit("hugo build failed:\n" + res.stderr[-3000:])
+    return tmp
+
+
+def page_jobs(public):
+    """Pages whose preview falls back to the site default today."""
+    jobs = []
+    default_url = "img/aenix-social-card.jpg"
+    for root, dirs, files in os.walk(public):
+        dirs[:] = [d for d in dirs if d != "page"]  # paginator copies share their section's card
+        if "index.html" not in files:
+            continue
+        text = open(os.path.join(root, "index.html"), encoding="utf-8", errors="ignore").read()
+        if 'http-equiv="refresh"' in text[:800]:
+            continue
+        og = _meta(text, "og:image")
+        rel = "/" + os.path.relpath(root, public).replace(os.sep, "/") + "/"
+        rel = "/" if rel == "/./" else rel
+        if not (og.endswith(default_url) or "/img/og/pages/" in og):
+            continue
+        parts = rel.strip("/").split("/")
+        lang = "de" if parts[0] == "de" else "en"
+        section = parts[1] if lang == "de" and len(parts) > 1 else parts[0]
+        en_label, de_label, motif = SECTIONS.get(section, ("Ænix Platform", "Ænix Platform", None))
+        label = de_label if lang == "de" else en_label
+        title = _meta(text, "og:title") or "Ænix"
+        if section == "topics" and len(parts) > 1:
+            title = f"{title} — articles, guides and news"
+        head, sub = _split(title, _meta(text, "og:description"))
+        pill = label if label.startswith("Ænix") else "Ænix · " + label
+        jobs.append((page_key(rel), pill, head, sub, motif))
+    return jobs
+
+
+def render_page(job):
+    key, pill, title, sub, motif = job
+    out = os.path.join(PAGES_OUT, key + ".jpg")
+    covers.render(title, pill, motif or covers.motif_for(key, title), out, seed_of(key), seed_of(key) % 4, sub=sub)
+    return key
+
+
+def generate_pages():
+    public = build_site()
+    try:
+        jobs = page_jobs(public)
+    finally:
+        shutil.rmtree(public, ignore_errors=True)
+    os.makedirs(PAGES_OUT, exist_ok=True)
+    keep = {j[0] + ".jpg" for j in jobs} | {page_key(p[0]) + ".jpg" for p in STATIC_PAGES}
+    for f in os.listdir(PAGES_OUT):  # pages that now have their own image or no longer exist
+        if f not in keep:
+            os.remove(os.path.join(PAGES_OUT, f))
+    with ThreadPoolExecutor(max_workers=6) as pool:
+        for i, key in enumerate(pool.map(render_page, jobs), 1):
+            if i % 25 == 0:
+                print(f"  {i}/{len(jobs)}")
+    print(f"pages: {len(jobs)} cards -> {os.path.relpath(PAGES_OUT, ROOT)}")
+
+
+# Hand-written HTML pages under static/ that people share as links. Their card
+# is rendered like any other page and the tags are written into the file.
+STATIC_PAGES = [  # (path under static/, pill, card title)
+    ("links/cozystack", "Cozystack", "Cozystack — Free and open-source platform for building clouds"),
+    ("links/andrei.kvapil", "Ænix", "Andrei Kvapil — Chief Executive Officer at Ænix"),
+    ("links/timur.tukaev", "Ænix", "Timur Tukaev — Chief Operating Officer at Ænix"),
+    ("links/cloudfest2026", "CloudFest 2026", "Meet Ænix at CloudFest 2026 — Booth Z22, live demos and architecture discussions"),
+    ("links/cloudfest2026/americas", "CloudFest Americas 2026", "Ænix at CloudFest Americas 2026 — Book a meeting with our team"),
+    ("con", "AenixCon 2026", "AenixCon 2026 — The open cloud-native conference, December 10–11, online"),
+]
+SITE = "https://aenix.io"
+
+
+def generate_static_pages():
+    os.makedirs(PAGES_OUT, exist_ok=True)
+    for path, pill, title in STATIC_PAGES:
+        key = page_key(path)
+        out = os.path.join(PAGES_OUT, key + ".jpg")
+        covers.render(title, pill, covers.motif_for(key, title), out, seed_of(key), seed_of(key) % 4)
+        html_path = os.path.join(ROOT, "static", path, "index.html")
+        text = open(html_path, encoding="utf-8").read()
+        text = re.sub(r'\n?<meta (?:property|name)="(?:og:image(?::width|:height)?|og:url|twitter:card|twitter:image)" content="[^"]*">', "", text)
+        url = f"{SITE}/img/og/pages/{key}.jpg"
+        tags = (f'<meta property="og:url" content="{SITE}/{path}/">\n'
+                f'<meta property="og:image" content="{url}">\n'
+                '<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n'
+                '<meta name="twitter:card" content="summary_large_image">\n'
+                f'<meta name="twitter:image" content="{url}">')
+        if 'property="og:title"' not in text:
+            m = re.search(r"<title>([^<]*)</title>", text)
+            d = re.search(r'<meta name="description" content="([^"]*)"', text)
+            tags = (f'<meta property="og:title" content="{m.group(1) if m else title}">\n'
+                    + (f'<meta property="og:description" content="{d.group(1)}">\n' if d else "")
+                    + '<meta property="og:type" content="website">\n' + tags)
+        text = text.replace("</head>", tags + "\n</head>", 1)
+        open(html_path, "w", encoding="utf-8").write(text)
+    print(f"static pages: {len(STATIC_PAGES)} cards")
+
+
+def main():
+    args = sys.argv[1:]
+    if "--static" in args:
+        return generate_static_pages()
+    if "--pages" not in args:
+        for c in CARDS:
+            make(*c)
+        make_default()
+        print(f"cards: {len(CARDS)} + default")
+    if "--cards" not in args:
+        generate_pages()
+        generate_static_pages()
+
+
+if __name__ == "__main__":
+    main()

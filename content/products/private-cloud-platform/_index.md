@@ -9,7 +9,7 @@ primary_keyword: "private cloud platform for regulated enterprises"
 secondary_keywords: ["sovereign cloud platform", "dora compliant cloud", "nis2 cloud platform", "internal developer platform", "vmware alternative enterprise"]
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Aenix Private Cloud Platform console"
-images: ["img/og/private-cloud-platform.png"]
+images: ["img/og/private-cloud-platform.jpg"]
 hreflang_de: /de/produkte/private-cloud-platform/
 related_pages: ["/products/public-cloud-platform/", "/products/ai-platform/", "/solutions/dora-compliance/", "/solutions/nis2-compliance/", "/migration/vmware/"]
 direct_answer: |

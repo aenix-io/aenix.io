@@ -4,8 +4,11 @@
 Each cover is an isometric scene (servers, storage, shields, migration arrows,
 edge towers ...) on the brand's deep-blue gradient, with the post's title, a
 "Type · Topic" pill, and the Cozystack and Aenix marks: the same look as the
-covers the Medium-era posts carry. The scene is chosen from the title (see
-MOTIF_RULES), or pinned per post in MOTIF_OVERRIDES.
+covers the Medium-era posts carry. Each post has its own composition in
+blog-covers/post_scenes.py (a bank for financial services, a factory for
+Industry 4.0, a calendar for a 90-day playbook...); German translations reuse
+the composition of their English original. A post without one falls back to a
+generic scene chosen from the title (MOTIF_RULES, MOTIF_OVERRIDES).
 
 The page is drawn as HTML/SVG and screenshotted by headless Chrome, which gives
 real gradients, glows and the site's own Inter font. Set CHROME to the browser
@@ -37,7 +40,15 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
 CONTENT = os.path.join(ROOT, "content", "blog")
 OUT = os.path.join(ROOT, "static", "img", "blog", "covers")
 WEB_PREFIX = "/img/blog/covers"
+# German posts get their own covers with German text; a translation reuses the scene of
+# its English original so the two covers read as one post.
+LANGS = [
+    ("en", CONTENT, OUT, WEB_PREFIX),
+    ("de", os.path.join(ROOT, "content", "de", "blog"), os.path.join(OUT, "de"), WEB_PREFIX + "/de"),
+]
 COZY_LOGO = os.path.join(os.path.dirname(__file__), "blog-covers", "cozystack-logo-white.svg")
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "blog-covers"))
+import post_scenes  # noqa: E402  per-post compositions
 W, H = 1200, 630
 
 
@@ -285,6 +296,8 @@ DEFS = """
 """
 
 
+post_scenes.install(Scene)
+
 VARIANTS = {"platform": 3, "compare": 3, "migration": 2, "devx": 3, "security": 2, "sovereign": 2,
             "cost": 2, "edge": 2, "gpu": 2, "storage": 2, "release": 2, "oberon": 1}
 
@@ -298,12 +311,17 @@ TILE_POOLS = {
 }
 
 
-def scene_for(motif, seed=0, variant=0, source="legacy"):
+def scene_for(motif, seed=0, variant=0, source="legacy", key=None):
     rng = random.Random(seed)
     variant %= VARIANTS.get(motif, 1)
     s = Scene(ox=850 + rng.randint(-10, 10), oy=250 + rng.randint(-6, 6), s=45 + rng.choice((-1, 0, 1)))
     s.platform(-1, -1, 9, 8)
     s.ring(3, 3, 0, 4.2)
+    if key in post_scenes.POST_SCENES:  # a composition drawn for this post
+        post_scenes.POST_SCENES[key](s, rng)
+        for (cx, cy), glyph in zip(((735, 118), (1112, 150)), rng.sample(TILE_POOLS.get(motif, TILE_POOLS["platform"]), 2)):
+            s.tile(cx, cy, glyph)
+        return s.render()
     v = variant
     if motif == "oberon":
         s.chip(0.2, 3.6, 0, 3.0, "RISC5")
@@ -449,12 +467,16 @@ PALETTES = [  # (glow, second glow, top-left wash, gradient stops)
 ]
 
 
-def html(title, eyebrow, motif, seed=0, variant=0, source="legacy"):
+def html(title, eyebrow, motif, seed=0, variant=0, source="legacy", sub=None, key=None):
     import html as H_
     aenix = open(os.path.join(ROOT, "static/images/logo-full-white.svg")).read()
     cozy = open(COZY_LOGO).read()
     fonts = urllib.parse.quote(os.path.join(ROOT, "static/fonts"))
-    head, sub = split_title(title)
+    head, split_sub = split_title(title)
+    if sub is None:
+        sub = split_sub
+    else:
+        head = title
     n = len(head)
     size = 56 if n <= 30 else 50 if n <= 45 else 44 if n <= 70 else 38 if n <= 100 else 32 if n <= 140 else 28
     if sub:
@@ -484,18 +506,18 @@ h1 {{ overflow-wrap:anywhere; margin:26px 0 0; font-weight:700; font-size:{size}
 .aenix {{ position:absolute; right:56px; bottom:44px; height:36px; }}
 .aenix svg {{ height:36px; width:auto; }}
 </style></head><body><div class="c"><div class="grain"></div>
-<svg class="art" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">{DEFS}{scene_for(motif, seed, variant, source)}</svg>
+<svg class="art" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">{DEFS}{scene_for(motif, seed, variant, source, key)}</svg>
 <div class="txt"><span class="pill">{eyebrow}</span><h1>{title_html}</h1></div>
 <div class="cozy">{cozy}</div><div class="aenix">{aenix}</div>
 </div></body></html>"""
 
 
 
-def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy"):
+def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy", sub=None, key=None):
     with tempfile.TemporaryDirectory() as tmp:
         page, png = os.path.join(tmp, "cover.html"), os.path.join(tmp, "cover.png")
         with open(page, "w", encoding="utf-8") as fh:
-            fh.write(html(title, eyebrow, motif, seed, variant, source))
+            fh.write(html(title, eyebrow, motif, seed, variant, source, sub, key))
         cmd = [_chrome(), "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
                f"--window-size={W},{H}", "--allow-file-access-from-files", f"--screenshot={png}",
                "--virtual-time-budget=2000", "file://" + page]
@@ -504,7 +526,11 @@ def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy"):
         res = subprocess.run(cmd, capture_output=True, text=True)
         if res.returncode or not os.path.exists(png):
             raise SystemExit(f"Chrome failed to render {out_jpg}:\n{res.stderr[-2000:]}")
-        Image.open(png).convert("RGB").save(out_jpg, "JPEG", quality=88, optimize=True, progressive=True)
+        img = Image.open(png).convert("RGB")
+        if out_jpg.endswith(".png"):  # named OG cards keep their .png paths
+            img.save(out_jpg, "PNG", optimize=True)
+        else:
+            img.save(out_jpg, "JPEG", quality=88, optimize=True, progressive=True)
 
 
 # Scene per post when the title alone would pick the wrong one.
@@ -522,20 +548,26 @@ MOTIF_OVERRIDES = {
     "sovereign-ai-architecture-decisions": "gpu",
     "transport-logistics-cloud-architecture-nis2": "edge",
     "when-cozystack-fits-smb-and-mid-market": "compare",
+    # German posts without a link to their English original
+    "hosting-anbieter-plattform-modernisierung": "migration",
+    "msp-cloud-plattform-modernisierung": "migration",
+    "smart-grid-plattform-architektur-it-ot": "edge",
+    "transport-logistik-cloud-architektur-nis2": "edge",
+    "wann-cozystack-fuer-mittelstand-passt": "compare",
 }
 
 MOTIF_RULES = [
     (r"paleocomputing|oberon", "oberon"),
     (r"^cozystack \d+\.\d+", "release"),
-    (r" vs |comparison|alternatives", "compare"),
-    (r"(?<!tco )(migration|replacement|repatriation)(?!.*tco)", "migration"),
-    (r"tco|cost|economics|billing", "cost"),
-    (r"dora|nis2|compliance|security|tlpt", "security"),
-    (r"sovereign|residency|public[- ]sector", "sovereign"),
-    (r"gpu|llm|\bai\b|inference", "gpu"),
-    (r"edge|telco|industry 4|smart grid|logistics", "edge"),
-    (r"storage|linstor|backup|seaweedfs", "storage"),
-    (r"developer|devops|platform engineering|backstage|\bsre\b|kubectl", "devx"),
+    (r" vs |comparison|alternatives|vergleich|alternativen", "compare"),
+    (r"(?<!tco )(migration|replacement|repatriation|abl(?:ö|o)sung)(?!.*tco)", "migration"),
+    (r"tco|cost|economics|billing|kosten|abrechnung", "cost"),
+    (r"dora|nis2|compliance|security|tlpt|sicherheit|checkliste", "security"),
+    (r"sovereign|residency|public[- ]sector|souver(?:ä|a)n|datenresidenz", "sovereign"),
+    (r"gpu|llm|\bai\b|\bki\b|inference|inferenz", "gpu"),
+    (r"edge|telco|industry 4|smart grid|logistics|logistik|industrie", "edge"),
+    (r"storage|linstor|backup|seaweedfs|speicher", "storage"),
+    (r"developer|entwickler|devops|platform engineering|backstage|\bsre\b|kubectl", "devx"),
 ]
 
 
@@ -556,7 +588,18 @@ MOTIF_TOPIC = {
 }
 
 
-def eyebrow_for(fm, title, motif):
+KIND_DE = {"article": "Artikel", "announcement": "Ankündigung", "news": "News", "tutorial": "Anleitung"}
+MOTIF_TOPIC_DE = {
+    "platform": "Private Cloud", "compare": "Vergleich", "migration": "Migration", "devx": "Platform Engineering",
+    "security": "Compliance", "sovereign": "Souveräne Cloud", "cost": "Cloud-Kosten", "edge": "Edge",
+    "gpu": "KI/ML", "storage": "Storage", "release": "Cozystack", "oberon": "Paleocomputing",
+}
+
+
+def eyebrow_for(fm, title, motif, lang="en"):
+    if lang == "de":
+        kind = KIND_DE.get(str(fm.get("type") or "article"), "Artikel")
+        return f"{kind} · {MOTIF_TOPIC_DE.get(motif, 'Cozystack')}"
     kind = str(fm.get("type") or "article").replace("-", " ").capitalize()
     if motif in ("release", "oberon"):
         return f"{kind} · {MOTIF_TOPIC[motif]}"
@@ -596,57 +639,89 @@ def _set_cover(path, fm_text, body, web_path):
         fh.write("---\n" + fm_text + "---" + body)
 
 
+def _english_originals():
+    """German post path -> slug of the English post it translates (via hreflang links)."""
+    origin = {}
+    for path in glob.glob(os.path.join(CONTENT, "**", "index.md"), recursive=True):
+        parsed = _split(open(path, encoding="utf-8").read())
+        de = parsed and parsed[1].get("hreflang_de")
+        if de:
+            origin[de.strip("/").split("/")[-1]] = os.path.basename(os.path.dirname(path))
+    return origin
+
+
+def _english_titles():
+    titles = {}
+    for path in glob.glob(os.path.join(CONTENT, "**", "index.md"), recursive=True):
+        parsed = _split(open(path, encoding="utf-8").read())
+        if parsed:
+            titles[os.path.basename(os.path.dirname(path))] = str(parsed[1].get("title") or "")
+    return titles
+
+
 def main():
     args = sys.argv[1:]
     regen, force = "--regen" in args, "--force" in args
     only = {args[i + 1] for i, a in enumerate(args) if a == "--only" and i + 1 < len(args)}
     if "--only" in args and not only:
         raise SystemExit("--only needs a post slug")
-    os.makedirs(OUT, exist_ok=True)
+    origin, en_titles = _english_originals(), _english_titles()
 
-    posts, turn = [], {}
-    for path in sorted(glob.glob(os.path.join(CONTENT, "**", "index.md"), recursive=True)):
-        parsed = _split(open(path, encoding="utf-8").read())
-        if not parsed:
-            continue
-        fm_text, fm, body = parsed
-        slug = os.path.basename(os.path.dirname(path))
-        cover = str(fm.get("cover_image") or "")
-        owned = cover.startswith(WEB_PREFIX + "/")
-        title = str(fm.get("title") or slug.replace("-", " ").title())
-        motif = motif_for(slug, title)
-        # Covers of one motif take turns through its layouts in date order, counted over every
-        # post that has or gets a generated cover, so neighbours in the blog grid differ and a
-        # single cover rendered with --only matches a full run.
-        variant = None
-        if owned or not cover:
-            variant = turn.get(motif, 0)
-            turn[motif] = variant + 1
-        if only:
-            if slug not in only:
+    posts, en_variant = [], {}
+    for lang, content, out_dir, prefix in LANGS:
+        os.makedirs(out_dir, exist_ok=True)
+        turn = {}
+        for path in sorted(glob.glob(os.path.join(content, "**", "index.md"), recursive=True)):
+            parsed = _split(open(path, encoding="utf-8").read())
+            if not parsed:
                 continue
-            if cover and not owned and not force:
-                print(f"skip {slug}: its cover ({cover}) is not generated by this tool; add --force to replace it")
+            fm_text, fm, body = parsed
+            slug = os.path.basename(os.path.dirname(path))
+            cover = str(fm.get("cover_image") or "")
+            owned = cover.startswith(prefix + "/")
+            title = str(fm.get("title") or slug.replace("-", " ").title())
+            en = origin.get(slug) or str(fm.get("hreflang_en") or "").strip("/").split("/")[-1] or None
+            if en not in en_titles:
+                en = None
+            key = en if lang == "de" and en else slug  # scene and seed follow the English original
+            motif = motif_for(key, title) if key == slug else motif_for(key, en_titles[en])
+            # Covers of one motif take turns through its layouts in date order, counted over every
+            # post that has or gets a generated cover, so neighbours in the blog grid differ and a
+            # single cover rendered with --only matches a full run.
+            variant = None
+            if owned or not cover:
+                variant = turn.get(motif, 0)
+                turn[motif] = variant + 1
+            if lang == "en":
+                en_variant[slug] = variant or 0
+            elif key in en_variant:
+                variant = en_variant[key]
+            if only:
+                if slug not in only:
+                    continue
+                if cover and not owned and not force:
+                    print(f"skip {slug}: its cover ({cover}) is not generated by this tool; add --force to replace it")
+                    continue
+            elif cover and not (regen and owned):
                 continue
-        elif cover and not (regen and owned):
-            continue
-        posts.append((path, fm_text, fm, body, slug, cover, owned, title, motif, variant or 0))
-    missing = only - {p[4] for p in posts}
+            scene_key = post_scenes.DE_TO_EN.get(slug, key) if lang == "de" else slug
+            posts.append((lang, out_dir, prefix, path, fm_text, fm, body, slug, key, cover, owned, title, motif, variant or 0, scene_key))
+    missing = only - {p[7] for p in posts}
     if missing:
         print("no such post or skipped: " + ", ".join(sorted(missing)))
 
-    for path, fm_text, fm, body, slug, cover, owned, title, motif, variant in posts:
-        seed = int(hashlib.sha1(slug.encode()).hexdigest()[:8], 16)
-        out = os.path.join(OUT, slug + ".jpg")
-        web_path = f"{WEB_PREFIX}/{slug}.jpg"
-        render(title, eyebrow_for(fm, title, motif), motif, out, seed, variant, source_label(title))
+    for lang, out_dir, prefix, path, fm_text, fm, body, slug, key, cover, owned, title, motif, variant, scene_key in posts:
+        seed = int(hashlib.sha1(key.encode()).hexdigest()[:8], 16)
+        out = os.path.join(out_dir, slug + ".jpg")
+        web_path = f"{prefix}/{slug}.jpg"
+        render(title, eyebrow_for(fm, title, motif, lang), motif, out, seed, variant, source_label(title), key=scene_key)
         if cover != web_path:
             _set_cover(path, fm_text, body, web_path)
             old = os.path.join(ROOT, "static", cover.lstrip("/")) if owned else None
             if old and old != out and os.path.exists(old):
                 os.remove(old)
-        print(f"{motif:10} {variant}  {slug}")
-    print(f"\ngenerated {len(posts)} cover(s) -> {os.path.relpath(OUT, ROOT)}")
+        print(f"{lang} {motif:10} {variant}  {slug}")
+    print(f"\ngenerated {len(posts)} cover(s)")
 
 
 if __name__ == "__main__":

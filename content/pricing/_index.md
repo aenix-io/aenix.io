@@ -8,7 +8,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "aenix pricing"
 secondary_keywords: ["cozystack pricing", "kubernetes cloud platform cost", "private cloud platform pricing", "vmware alternative cost"]
-images: ["img/og/pricing.png"]
+images: ["img/og/pricing.jpg"]
 hreflang_de: /de/preise/
 related_pages: ["/products/", "/tco-calculator/", "/products/cozystack-enterprise-support/", "/contact/"]
 direct_answer: |

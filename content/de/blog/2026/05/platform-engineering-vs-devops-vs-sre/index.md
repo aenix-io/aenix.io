@@ -2,6 +2,7 @@
 title: "Platform Engineering vs DevOps vs SRE — Terminologie-Leitfaden 2026"
 description: "Begleitung zur Platform-Engineering-Services-Page. Wo überlappen sich die drei Begriffe, wo nicht, was tut jede Funktion tatsächlich."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/platform-engineering-vs-devops-vs-sre.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "DevOps", "Platform Engineering", "Compliance", "Observability"]

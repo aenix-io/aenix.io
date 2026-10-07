@@ -9,10 +9,10 @@ topics: ["Cozystack", "Kubernetes", "Multi-tenancy", "Platform Engineering", "Bi
 language: "de"
 companion_landing: "/de/produkte/public-cloud-platform/"
 companion_label: "Public Cloud Platform ansehen →"
-cover_image: ""
+cover_image: "/img/blog/covers/de/aenix-billing-pay-per-minute-managed-services-cozystack.jpg"
 ---
 
-{{< placeholder-image width="1200" height="630" label="Ænix Billing — Cover-Bild (1200×630)" >}}
+![Ænix Billing — minutengenaue Verbrauchsabrechnung für Managed PostgreSQL, Redis, Kafka und ClickHouse auf Cozystack](/img/blog/covers/de/aenix-billing-pay-per-minute-managed-services-cozystack.jpg)
 
 **Sie liefern einem Tenant einen Managed-Postgres- oder ClickHouse-Cluster in zwei Minuten aus. Jetzt müssen Sie abrechnen — minutengenau, aufgeschlüsselt nach CPU, Memory und Speicher, cent-genau abstimmbar. AWS RDS kann das. GCP kann das. Auf eigener Hardware? Bisher: ein eigenes Prometheus-Skript, ein monatlicher Tabellen-Export und ein Vertriebsgespräch, das erklärt, „warum die Zahl so groß ist“. Ænix Billing schließt diese Lücke.**
 

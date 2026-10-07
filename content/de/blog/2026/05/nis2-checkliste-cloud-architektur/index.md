@@ -2,6 +2,7 @@
 title: "NIS2-Anforderungen für Cloud-Infrastruktur — Checkliste für DACH-Unternehmen"
 description: "Begleitung zur NIS2-Compliance-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/nis2-checkliste-cloud-architektur.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Cozystack", "Compliance", "Backup & DR"]

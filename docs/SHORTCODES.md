@@ -133,6 +133,14 @@ SVG placeholder with dimensions and optional label, dashed orange "PLACEHOLDER" 
 {{< placeholder-image width="1200" height="630" label="Sovereign AI architecture diagram" >}}
 ```
 
+### `{{< case-diagram src="..." alt="..." >}}`
+
+Architecture diagram in a case study. The images are drawn by `scripts/generate-case-diagrams.py` (one per case and language, `static/img/case-studies/<slug>-<lang>.webp`); edit the diagram there and re-run the script rather than replacing the file by hand. Put the full description of the architecture in `alt`.
+
+```markdown
+{{< case-diagram src="/img/case-studies/private-cloud-in-a-bank-en.webp" alt="Bank private cloud: ..." >}}
+```
+
 ### `{{< placeholder-quote >}}`
 
 Generic sample customer-quote block. Replaced with real `{{< quote >}}` (with `author=` + `role=`) when permission lands.

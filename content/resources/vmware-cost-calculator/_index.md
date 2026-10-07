@@ -5,7 +5,7 @@ type: "page"
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
-images: ["img/og/og-vmware-cost-calculator.png"]
+images: ["img/og/og-vmware-cost-calculator.jpg"]
 hreflang_de: /de/ressourcen/vmware-kostenrechner/
 primary_keyword: "vmware cost calculator"
 secondary_keywords: ["vmware license calculator", "vmware tco calculator", "vmware exit savings"]

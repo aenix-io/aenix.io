@@ -4,7 +4,7 @@ description: "Cloud bills up, lock-in tightening. Repatriate or build on an open
 hero_subtitle: "Cut cloud costs and escape vendor lock-in"
 type: "page"
 language: "en"
-images: ["img/og/og-cto.png"]
+images: ["img/og/og-cto.jpg"]
 hreflang_de: /de/fuer/cto/
 primary_keyword: "cloud repatriation platform for CTOs"
 related_pages:

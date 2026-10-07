@@ -7,7 +7,7 @@ lastmod: 2026-08-21
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/unified-cloud-portal-financial-group/"
-images: ["img/og/og-case-unified-cloud-portal-financial-group.png"]
+images: ["img/og/og-case-unified-cloud-portal-financial-group.jpg"]
 primary_keyword: "self-service cloud portal"
 secondary_keywords:
   - "unified cloud portal"
@@ -74,7 +74,7 @@ That choice does more work than it first appears to:
 - **Scalability** — horizontal scaling out of the box.
 - **Real time** — the Watch API pushes changes to the frontends as they happen, so the console reflects reality rather than the last poll.
 
-{{< placeholder-image width="1200" height="640" label="Portal architecture: frontend portals (accounting, console, support) talk to the Kubernetes API server acting as an aggregation layer and unified data bus; behind it, backend API services and backend controllers reach out to external databases, OpenNebula, VMware and Kubernetes-as-a-Service" >}}
+{{< case-diagram src="/img/case-studies/unified-cloud-portal-financial-group-en.webp" alt="Portal architecture: frontend portals (accounting, console, support) talk to the Kubernetes API server acting as an aggregation layer and unified data bus; behind it, backend API services and backend controllers reach out to external databases, OpenNebula, VMware and Kubernetes-as-a-Service" >}}
 
 **Portal components.** User registration and SSO; a personal dashboard; the service catalogue covering virtual machines and Kubernetes-as-a-Service through OpenNebula; a ticket centre; a knowledge base and documentation; logging and audit; billing and invoicing; and a platform-administrator interface.
 

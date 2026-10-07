@@ -7,7 +7,7 @@ lastmod: 2026-06-20
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/bare-metal-kubernetes-messaging-saas/"
-images: ["img/og/og-case-bare-metal-kubernetes-messaging-saas.png"]
+images: ["img/og/og-case-bare-metal-kubernetes-messaging-saas.jpg"]
 primary_keyword: "Proxmox Migration"
 secondary_keywords:
   - "Proxmox zu Kubernetes"
@@ -73,7 +73,7 @@ Vor dem Projekt lief er auf einer Flotte von rund 13 Proxmox-Hypervisor-Hosts �
 - **Delivery-Pipeline** — ein verschachteltes verwaltetes Kubernetes („kube-in-kube“) für die API-Dienste, angetrieben von ArgoCD und einer GitLab-Image-Pipeline; Cozystack-Ingress plus cert-manager lösen das handgebaute nginx und die manuellen Zertifikatserneuerungen ab.
 - **Observability** — VictoriaMetrics + VictoriaLogs + Grafana von Tag eins an.
 
-{{< placeholder-image width="1200" height="640" label="Konsolidierungsarchitektur: 13 Proxmox-Hosts kollabieren auf einen 8-Knoten-Cozystack-Cluster auf Talos (3 Control-Plane HA-etcd + 5 Dual-NVMe-Worker); ~25.000 kundenspezifische Container laufen unverändert in KubeVirt-VMs im lokalen Subnetz; verwaltetes MongoDB / PostgreSQL / RabbitMQ auf LINSTOR/DRBD über ZFS; API-Dienste in einem verschachtelten Kubernetes, angetrieben von ArgoCD; SeaweedFS S3 für Medien und Backups" >}}
+{{< case-diagram src="/img/case-studies/bare-metal-kubernetes-messaging-saas-de.webp" alt="Konsolidierungsarchitektur: 13 Proxmox-Hosts kollabieren auf einen 8-Knoten-Cozystack-Cluster auf Talos (3 Control-Plane HA-etcd + 5 Dual-NVMe-Worker); ~25.000 kundenspezifische Container laufen unverändert in KubeVirt-VMs im lokalen Subnetz; verwaltetes MongoDB / PostgreSQL / RabbitMQ auf LINSTOR/DRBD über ZFS; API-Dienste in einem verschachtelten Kubernetes, angetrieben von ArgoCD; SeaweedFS S3 für Medien und Backups" >}}
 
 ## Umsetzung: drei Phasen
 

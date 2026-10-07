@@ -4,7 +4,7 @@ description: "Nach Broadcom brauchen Ihre Kunden eine VMware-Alternative. Ænix 
 hero_subtitle: "Offene Cloud-Linie ins Portfolio, bis zu 40% Marge"
 type: "page"
 language: "de"
-images: ["img/og/og-leiter-allianzen-de.png"]
+images: ["img/og/og-leiter-allianzen-de.jpg"]
 hreflang_en: /for/head-of-alliances/
 primary_keyword: "cloud partnerprogramm reseller"
 related_pages:

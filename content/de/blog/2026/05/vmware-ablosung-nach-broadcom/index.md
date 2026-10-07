@@ -2,6 +2,7 @@
 title: "VMware-Ablösung nach Broadcom — Leitfaden für DACH-Service-Provider, Banken und souveräne Clouds"
 description: "Dies ist die ausführliche Begleitung zu unserer fokussierte Seite zur VMware-Alternative-Page. Sie führt durch den Wandel unter Broadcom, was eine glaubwürdige..."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/vmware-ablosung-nach-broadcom.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "VMware", "Kubernetes", "Cozystack", "KubeVirt"]

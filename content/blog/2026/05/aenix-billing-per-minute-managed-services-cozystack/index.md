@@ -13,7 +13,7 @@ companion_label: "See Public Cloud Platform →"
 ---
 
 
-{{< placeholder-image width="1200" height="630" label="Ænix Billing — cover image (1200×630)" >}}
+![Ænix Billing — per-minute usage-based billing for Managed PostgreSQL, Redis, Kafka and ClickHouse on Cozystack](/img/blog/covers/aenix-billing-per-minute-managed-services-cozystack.jpg)
 
 **You ship a managed Postgres or ClickHouse cluster to a tenant in two minutes. Now you need to charge them — by the minute, broken down by CPU, memory and disk, reconcilable to the cent. AWS RDS does this. GCP does this. On your own metal? Until now: a custom Prometheus script, a monthly spreadsheet export, and a sales call to explain "why is the number this big". Ænix Billing closes that gap.**
 

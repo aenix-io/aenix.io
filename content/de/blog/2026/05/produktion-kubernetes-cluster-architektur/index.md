@@ -2,6 +2,7 @@
 title: "Produktions-Kubernetes-Cluster — Architekturentscheidungen, Sizing und Operations 2026"
 description: "Begleitung zur Kubernetes-Consulting-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/produktion-kubernetes-cluster-architektur.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["OpenShift", "Kubernetes", "Cozystack", "Cilium", "LINSTOR", "GitOps"]

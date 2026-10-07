@@ -2,6 +2,7 @@
 title: "MSP-Cloud-Plattform-Modernisierung — gebrandetes Cloud-Angebot"
 description: "- Multi-Tier Tenant CRD (Aenix → MSP → MSP-Kunden) - Pro-Tier-Isolation - Gebrandetes kundenorientiertes Portal - WHMCS-integriertes Billing -..."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/msp-cloud-plattform-modernisierung.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Multi-tenancy", "Hosting"]

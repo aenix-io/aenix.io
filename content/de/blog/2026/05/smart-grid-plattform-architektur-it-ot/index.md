@@ -2,6 +2,7 @@
 title: "Smart-Grid-Plattform-Architektur — IT/OT-Konvergenz, Edge und KI auf kundenkontrollierter Infrastruktur"
 description: "Begleitung zur Energie-Industry-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/smart-grid-plattform-architektur-it-ot.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Cozystack", "Compliance"]

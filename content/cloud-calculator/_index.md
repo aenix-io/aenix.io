@@ -4,7 +4,7 @@ description: "Price the same workload two ways: your current AWS, Azure or GCP b
 layout: calculator-app
 calculator_app: /cloud-calculator-app/
 bodyClass: calc-app-page
-images: ["img/og/og-cloud-calculator.png"]
+images: ["img/og/og-cloud-calculator.jpg"]
 indexable: true
 page_type: "page"
 language: "en"

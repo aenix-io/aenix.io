@@ -2,6 +2,7 @@
 title: "Cloud Readiness Assessment — was 14 Tage tatsächlich abdecken (Methodik 2026)"
 description: "Begleitung zur Platform-Readiness-Assessment-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/cloud-readiness-assessment-methodik.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Cozystack", "GitOps", "Cloud Repatriation", "Platform Engineering"]

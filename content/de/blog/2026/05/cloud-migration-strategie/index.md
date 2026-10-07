@@ -2,6 +2,7 @@
 title: "Cloud-Migrations-Strategie 2026 — Leitfaden für DACH-Unternehmen"
 description: "Begleitung zur Cloud-Migration-Hub-Page. Praktischer Leitfaden für die strategische Cloud-Migration im Jahr 2026 — welche Workloads wohin gehen, wie man es..."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/cloud-migration-strategie.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "VMware", "Cozystack", "GPU", "Migration"]

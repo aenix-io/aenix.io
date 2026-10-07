@@ -2,6 +2,7 @@
 title: "DevOps Best Practices 2026 — die acht Disziplinen, die Returns kombinieren"
 description: "Begleitung zur DevOps-Consulting-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/devops-best-practices-2026.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Migration", "DevOps", "Platform Engineering", "Cost Optimization", "Observability"]

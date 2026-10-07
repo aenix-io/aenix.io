@@ -2,6 +2,7 @@
 title: "Private LLM Deployment — Praktischer Leitfaden für On-Premise-KI-Infrastruktur 2026"
 description: "Begleitung zur Souveränen KI-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/private-llm-deployment-leitfaden.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR", "Sovereignty"]

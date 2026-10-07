@@ -2,6 +2,7 @@
 title: "Wann Cozystack für KMU und Mittelstand passt — und wann nicht"
 description: "Begleitung zur Mittelstand-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/wann-cozystack-fuer-mittelstand-passt.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "Proxmox", "Cozystack", "GPU", "Multi-tenancy"]

@@ -2,6 +2,7 @@
 title: "Hybrid-Cloud-Architektur-Muster 2026 — was funktioniert, was scheitert"
 description: "Begleitung zur Hybrid-Cloud-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/hybrid-cloud-architektur-muster-2026.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "GPU", "Financial Services"]

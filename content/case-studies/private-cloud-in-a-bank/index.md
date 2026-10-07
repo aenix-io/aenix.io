@@ -7,7 +7,7 @@ lastmod: 2026-08-21
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/private-cloud-in-a-bank/"
-images: ["img/og/og-case-private-cloud-in-a-bank.png"]
+images: ["img/og/og-case-private-cloud-in-a-bank.jpg"]
 primary_keyword: "private cloud for banks"
 secondary_keywords:
   - "bank private cloud platform"
@@ -78,7 +78,7 @@ A self-service cloud platform, delivered as a product and integrated into the ba
 - **Ceph** — the bank's existing external cluster serves as storage, with its own capacity planning and operational history intact.
 - **RBAC** — enforced globally and inside each tenant, consistent with how access is already reviewed.
 
-{{< placeholder-image width="1200" height="640" label="Bank private cloud: internal teams enter through a web console or the public API; the platform enforces per-tenant RBAC, quotas, network policy (firewall, load balancer, ACL), backup policy and threshold monitoring; identity comes from the bank's existing Keycloak with group and role mapping, storage from the bank's external Ceph cluster; usage reports feed internal chargeback" >}}
+{{< case-diagram src="/img/case-studies/private-cloud-in-a-bank-en.webp" alt="Bank private cloud: internal teams enter through a web console or the public API; the platform enforces per-tenant RBAC, quotas, network policy (firewall, load balancer, ACL), backup policy and threshold monitoring; identity comes from the bank's existing Keycloak with group and role mapping, storage from the bank's external Ceph cluster; usage reports feed internal chargeback" >}}
 
 ## Results and current state
 

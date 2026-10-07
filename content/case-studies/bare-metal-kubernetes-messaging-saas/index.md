@@ -7,7 +7,7 @@ lastmod: 2026-06-20
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/bare-metal-kubernetes-messaging-saas/"
-images: ["img/og/og-case-bare-metal-kubernetes-messaging-saas.png"]
+images: ["img/og/og-case-bare-metal-kubernetes-messaging-saas.jpg"]
 primary_keyword: "proxmox to kubernetes migration"
 secondary_keywords:
   - "bare metal kubernetes"
@@ -73,7 +73,7 @@ Before the project it ran on a fleet of about 13 Proxmox hypervisor hosts — ro
 - **Delivery pipeline** — a nested managed Kubernetes ("kube-in-kube") for the API services, driven by ArgoCD and a GitLab image pipeline; Cozystack ingress plus cert-manager retire the hand-rolled nginx and manual certificate renewals.
 - **Observability** — VictoriaMetrics + VictoriaLogs + Grafana from day one.
 
-{{< placeholder-image width="1200" height="640" label="Consolidation architecture: 13 Proxmox hosts collapse onto one 8-node Cozystack cluster on Talos (3 control-plane HA etcd + 5 dual-NVMe workers); ~25,000 per-customer containers run unchanged inside KubeVirt VMs on the local subnet; managed MongoDB / PostgreSQL / RabbitMQ on LINSTOR/DRBD over ZFS; API services in a nested Kubernetes driven by ArgoCD; SeaweedFS S3 for media and backups" >}}
+{{< case-diagram src="/img/case-studies/bare-metal-kubernetes-messaging-saas-en.webp" alt="Consolidation architecture: 13 Proxmox hosts collapse onto one 8-node Cozystack cluster on Talos (3 control-plane HA etcd + 5 dual-NVMe workers); ~25,000 per-customer containers run unchanged inside KubeVirt VMs on the local subnet; managed MongoDB / PostgreSQL / RabbitMQ on LINSTOR/DRBD over ZFS; API services in a nested Kubernetes driven by ArgoCD; SeaweedFS S3 for media and backups" >}}
 
 ## Execution: three phases
 

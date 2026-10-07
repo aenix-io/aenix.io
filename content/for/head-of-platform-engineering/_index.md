@@ -4,7 +4,7 @@ description: "Give developers golden-path self-service on an open, Kubernetes-na
 hero_subtitle: "Golden-path developer self-service without the lock-in"
 type: "page"
 language: "en"
-images: ["img/og/og-head-of-platform-engineering.png"]
+images: ["img/og/og-head-of-platform-engineering.jpg"]
 hreflang_de: /de/fuer/leiter-platform-engineering/
 primary_keyword: "internal developer platform for platform teams"
 related_pages:

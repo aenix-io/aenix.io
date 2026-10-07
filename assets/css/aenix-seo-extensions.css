@@ -6433,3 +6433,7 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
   .distributor-spot { grid-template-columns: 1fr; gap: 1.25rem; padding: 1.5rem; }
   .distributor-spot__logo { justify-self: start; padding: 0.75rem 1rem; min-width: 160px; }
 }
+
+/* Case-study architecture diagrams (shortcode case-diagram) */
+.case-diagram { margin: 2rem 0; }
+.case-diagram img { display: block; width: 100%; height: auto; border-radius: 14px; }

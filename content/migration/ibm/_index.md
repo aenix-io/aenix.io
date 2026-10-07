@@ -14,7 +14,7 @@ secondary_keywords:
   - "IBM Cloud Pak alternative"
   - "Oracle on Kubernetes licensing"
   - "private cloud for banks"
-images: ["img/og/og-ibm-migration.png"]
+images: ["img/og/og-ibm-migration.jpg"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"

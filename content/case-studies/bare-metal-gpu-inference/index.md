@@ -7,7 +7,7 @@ lastmod: 2026-06-20
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/bare-metal-gpu-inference/"
-images: ["img/og/og-case-bare-metal-gpu-inference.png"]
+images: ["img/og/og-case-bare-metal-gpu-inference.jpg"]
 primary_keyword: "bare metal GPU inference"
 secondary_keywords:
   - "on-premise AI inference"
@@ -75,7 +75,7 @@ A single 8xH100 server, layered top to bottom, turns owned bare metal into a pri
 
 Inference runs as two complementary pipelines. Asynchronous: API gateway → RabbitMQ queue → GPU ML workers → webhook callback. Synchronous: HTTP inference endpoints autoscaled with KEDA on nginx-ingress request rate (RPS), using VictoriaMetrics as the metrics source.
 
-{{< placeholder-image width="1200" height="640" label="Single 8xH100 bare-metal node, layered: client ML workers (inference models, RabbitMQ queues, sync/async) on a nested tenant Kubernetes with GPUs passed through and the NVIDIA GPU Operator inside; isolated tenant (dedicated etcd, secrets, registry, monitoring) on Cozystack over k3s/generic Linux (LINSTOR, Cilium+KubeOVN, KubeVirt, vfio-pci passthrough, MetalLB); bare metal: 8x NVIDIA H100 80GB, NVLink, 2TB RAM" >}}
+{{< case-diagram src="/img/case-studies/bare-metal-gpu-inference-en.webp" alt="Single 8xH100 bare-metal node, layered: client ML workers (inference models, RabbitMQ queues, sync/async) on a nested tenant Kubernetes with GPUs passed through and the NVIDIA GPU Operator inside; isolated tenant (dedicated etcd, secrets, registry, monitoring) on Cozystack over k3s/generic Linux (LINSTOR, Cilium+KubeOVN, KubeVirt, vfio-pci passthrough, MetalLB); bare metal: 8x NVIDIA H100 80GB, NVLink, 2TB RAM" >}}
 
 ## Execution: new requirements and how we handled them
 

@@ -4,7 +4,7 @@ description: "Cloud-Kosten und Lock-in steigen, Souveränität wird Kundenanford
 hero_subtitle: "Cloud-Kosten senken und Vendor-Lock-in entkommen"
 type: "page"
 language: "de"
-images: ["img/og/og-cto-de.png"]
+images: ["img/og/og-cto-de.jpg"]
 hreflang_en: /for/cto/
 primary_keyword: "cloud repatriation private cloud cto"
 related_pages:

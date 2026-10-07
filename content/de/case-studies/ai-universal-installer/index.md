@@ -7,7 +7,7 @@ lastmod: 2026-06-15
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/ai-universal-installer/"
-images: ["img/og/og-case-ai-universal-installer.png"]
+images: ["img/og/og-case-ai-universal-installer.jpg"]
 related_pages:
   - /de/loesungen/sovereign-ai/
   - /de/produkte/ai-platform/
@@ -57,7 +57,7 @@ Cozystack ist hier keine „Box“, sondern ein Framework, das bereits Storage, 
 
 Wir schlugen einen phasenweisen Rollout vor: zuerst die Basisinfrastruktur und den Katalog, dann verteiltes Training und Model Serving, anschließend vollständige MLOps und einen Data Lake.
 
-{{< placeholder-image width="1200" height="640" label="Architektur: eine Distribution, Plattformschichten und Geo-GPU — Hardware → Cozystack-Framework → Mandantenfähigkeit → Produkte des Kunden, mit einem geografisch verteilten GPU-Cluster, verbunden über ein verschlüsseltes Mesh" >}}
+{{< case-diagram src="/img/case-studies/ai-universal-installer-de.webp" alt="Architektur: eine Distribution, Plattformschichten und Geo-GPU — Hardware → Cozystack-Framework → Mandantenfähigkeit → Produkte des Kunden, mit einem geografisch verteilten GPU-Cluster, verbunden über ein verschlüsseltes Mesh" >}}
 
 ## Umsetzung: neue Anforderungen und wie wir sie gelöst haben
 

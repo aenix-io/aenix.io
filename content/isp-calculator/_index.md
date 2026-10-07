@@ -8,7 +8,7 @@ language: "en"
 layout: calculator-app
 calculator_app: /isp-calculator-app/
 bodyClass: calc-app-page
-images: ["img/og/og-isp-calculator.png"]
+images: ["img/og/og-isp-calculator.jpg"]
 indexable: true
 hreflang_de: /de/roi-rechner/
 primary_keyword: "hosting provider unit economics"

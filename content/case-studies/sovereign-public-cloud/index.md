@@ -7,7 +7,7 @@ lastmod: 2026-06-15
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/sovereign-public-cloud/"
-images: ["img/og/og-case-sovereign-public-cloud.png"]
+images: ["img/og/og-case-sovereign-public-cloud.jpg"]
 related_pages:
   - /products/public-cloud-platform/
   - /solutions/data-sovereignty/
@@ -56,7 +56,7 @@ The goal — a full-fledged commercial public cloud under its own brand: VMs, ma
 
 The engagement grew into ongoing support and co-development: the client's engineers became Cozystack maintainers.
 
-{{< placeholder-image width="1200" height="640" label="Sovereign boundary (Switzerland): compute cluster geo-distributed across three DCs with synchronous DRBD replication and etcd over three sites; a separate SeaweedFS object-storage cluster holds immutable backups; at-rest / in-transit encryption throughout" >}}
+{{< case-diagram src="/img/case-studies/sovereign-public-cloud-en.webp" alt="Sovereign boundary (Switzerland): compute cluster geo-distributed across three DCs with synchronous DRBD replication and etcd over three sites; a separate SeaweedFS object-storage cluster holds immutable backups; at-rest / in-transit encryption throughout" >}}
 
 ## Execution: new requirements and how we handled them
 

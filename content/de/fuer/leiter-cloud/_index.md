@@ -4,7 +4,7 @@ description: "Machen Sie den VMware-Ausstieg zu Ihrer Marge: gebrandete Cloud au
 hero_subtitle: "Machen Sie den VMware-Ausstieg zu Ihrer Marge"
 type: "page"
 language: "de"
-images: ["img/og/og-leiter-cloud-de.png"]
+images: ["img/og/og-leiter-cloud-de.jpg"]
 hreflang_en: /for/head-of-cloud/
 primary_keyword: "white label cloud plattform anbieter"
 related_pages:

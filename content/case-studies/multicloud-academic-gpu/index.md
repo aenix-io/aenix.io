@@ -7,7 +7,7 @@ lastmod: 2026-06-15
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/multicloud-academic-gpu/"
-images: ["img/og/og-case-multicloud-academic-gpu.png"]
+images: ["img/og/og-case-multicloud-academic-gpu.jpg"]
 related_pages:
   - /solutions/gpu-cloud-bursting/
   - /industries/universities/
@@ -57,7 +57,7 @@ At the core — Cozystack on Talos Linux on owned hardware. A management cluster
 - **Storage.** External Ceph (CephFS RWX) stays the storage system; locally — LINSTOR/DRBD with volume encryption.
 - **Access & observability.** Keycloak (OIDC) instead of the cloud IdP; Cozystack's built-in monitoring (VictoriaMetrics/VictoriaLogs) alongside the client's own logging stack.
 
-{{< placeholder-image width="1200" height="640" label="Multi-cloud architecture: a single management cluster (Cozystack · Talos · Kamaji) orchestrates bare metal, a public hyperscaler and a sovereign OpenStack via one Cluster API; sites and external Ceph stitched by a WireGuard mesh" >}}
+{{< case-diagram src="/img/case-studies/multicloud-academic-gpu-en.webp" alt="Multi-cloud architecture: a single management cluster (Cozystack · Talos · Kamaji) orchestrates bare metal, a public hyperscaler and a sovereign OpenStack via one Cluster API; sites and external Ceph stitched by a WireGuard mesh" >}}
 
 ## Execution: new requirements and how we handled them
 

@@ -2,6 +2,7 @@
 title: "DORA-Compliance-Checkliste für Cloud-Architektur — was Finanzunternehmen 2026 nachweisen müssen"
 description: "Begleitung zur DORA-Compliance-Page. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/dora-checkliste-cloud-architektur.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "Compliance", "Backup & DR", "Observability"]
