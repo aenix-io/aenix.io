@@ -2,6 +2,7 @@
 title: "Proxmox vs VMware vs Cozystack — Vergleich für die Post-Broadcom-Ära"
 description: "Begleitung zur Proxmox-Alternative-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/proxmox-vs-vmware-vs-cozystack.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Proxmox", "Kubernetes", "Cozystack", "KubeVirt", "Cilium"]

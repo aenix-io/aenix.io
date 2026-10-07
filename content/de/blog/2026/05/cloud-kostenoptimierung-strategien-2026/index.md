@@ -2,6 +2,7 @@
 title: "Cloud-Kostenoptimierungs-Strategien 2026 — praktischer Leitfaden für DACH"
 description: "Begleitung zur Cloud-Kostenoptimierungs-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/cloud-kostenoptimierung-strategien-2026.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Cloud Repatriation", "Cost Optimization"]

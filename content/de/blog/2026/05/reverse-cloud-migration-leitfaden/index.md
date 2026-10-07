@@ -2,6 +2,7 @@
 title: "Reverse Cloud Migration — praktischer Leitfaden für Public-Cloud-Ausstieg im Jahr 2026"
 description: "Begleitung zur Cloud-Repatriation-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/reverse-cloud-migration-leitfaden.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Cozystack", "Cloud Repatriation", "Migration"]

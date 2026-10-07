@@ -2,6 +2,7 @@
 title: "Cozystack — was es ist, Architektur und 2026-Positionierung"
 description: "Begleitung zur Cozystack-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/cozystack-einfuehrung-architektur.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Kubernetes", "Cozystack"]

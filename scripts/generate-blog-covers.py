@@ -37,6 +37,12 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
 CONTENT = os.path.join(ROOT, "content", "blog")
 OUT = os.path.join(ROOT, "static", "img", "blog", "covers")
 WEB_PREFIX = "/img/blog/covers"
+# German posts get their own covers with German text; a translation reuses the scene of
+# its English original so the two covers read as one post.
+LANGS = [
+    ("en", CONTENT, OUT, WEB_PREFIX),
+    ("de", os.path.join(ROOT, "content", "de", "blog"), os.path.join(OUT, "de"), WEB_PREFIX + "/de"),
+]
 COZY_LOGO = os.path.join(os.path.dirname(__file__), "blog-covers", "cozystack-logo-white.svg")
 W, H = 1200, 630
 
@@ -522,20 +528,26 @@ MOTIF_OVERRIDES = {
     "sovereign-ai-architecture-decisions": "gpu",
     "transport-logistics-cloud-architecture-nis2": "edge",
     "when-cozystack-fits-smb-and-mid-market": "compare",
+    # German posts without a link to their English original
+    "hosting-anbieter-plattform-modernisierung": "migration",
+    "msp-cloud-plattform-modernisierung": "migration",
+    "smart-grid-plattform-architektur-it-ot": "edge",
+    "transport-logistik-cloud-architektur-nis2": "edge",
+    "wann-cozystack-fuer-mittelstand-passt": "compare",
 }
 
 MOTIF_RULES = [
     (r"paleocomputing|oberon", "oberon"),
     (r"^cozystack \d+\.\d+", "release"),
-    (r" vs |comparison|alternatives", "compare"),
-    (r"(?<!tco )(migration|replacement|repatriation)(?!.*tco)", "migration"),
-    (r"tco|cost|economics|billing", "cost"),
-    (r"dora|nis2|compliance|security|tlpt", "security"),
-    (r"sovereign|residency|public[- ]sector", "sovereign"),
-    (r"gpu|llm|\bai\b|inference", "gpu"),
-    (r"edge|telco|industry 4|smart grid|logistics", "edge"),
-    (r"storage|linstor|backup|seaweedfs", "storage"),
-    (r"developer|devops|platform engineering|backstage|\bsre\b|kubectl", "devx"),
+    (r" vs |comparison|alternatives|vergleich|alternativen", "compare"),
+    (r"(?<!tco )(migration|replacement|repatriation|abl(?:ö|o)sung)(?!.*tco)", "migration"),
+    (r"tco|cost|economics|billing|kosten|abrechnung", "cost"),
+    (r"dora|nis2|compliance|security|tlpt|sicherheit|checkliste", "security"),
+    (r"sovereign|residency|public[- ]sector|souver(?:ä|a)n|datenresidenz", "sovereign"),
+    (r"gpu|llm|\bai\b|\bki\b|inference|inferenz", "gpu"),
+    (r"edge|telco|industry 4|smart grid|logistics|logistik|industrie", "edge"),
+    (r"storage|linstor|backup|seaweedfs|speicher", "storage"),
+    (r"developer|entwickler|devops|platform engineering|backstage|\bsre\b|kubectl", "devx"),
 ]
 
 
@@ -556,7 +568,18 @@ MOTIF_TOPIC = {
 }
 
 
-def eyebrow_for(fm, title, motif):
+KIND_DE = {"article": "Artikel", "announcement": "Ankündigung", "news": "News", "tutorial": "Anleitung"}
+MOTIF_TOPIC_DE = {
+    "platform": "Private Cloud", "compare": "Vergleich", "migration": "Migration", "devx": "Platform Engineering",
+    "security": "Compliance", "sovereign": "Souveräne Cloud", "cost": "Cloud-Kosten", "edge": "Edge",
+    "gpu": "KI/ML", "storage": "Storage", "release": "Cozystack", "oberon": "Paleocomputing",
+}
+
+
+def eyebrow_for(fm, title, motif, lang="en"):
+    if lang == "de":
+        kind = KIND_DE.get(str(fm.get("type") or "article"), "Artikel")
+        return f"{kind} · {MOTIF_TOPIC_DE.get(motif, 'Cozystack')}"
     kind = str(fm.get("type") or "article").replace("-", " ").capitalize()
     if motif in ("release", "oberon"):
         return f"{kind} · {MOTIF_TOPIC[motif]}"
@@ -596,57 +619,88 @@ def _set_cover(path, fm_text, body, web_path):
         fh.write("---\n" + fm_text + "---" + body)
 
 
+def _english_originals():
+    """German post path -> slug of the English post it translates (via hreflang links)."""
+    origin = {}
+    for path in glob.glob(os.path.join(CONTENT, "**", "index.md"), recursive=True):
+        parsed = _split(open(path, encoding="utf-8").read())
+        de = parsed and parsed[1].get("hreflang_de")
+        if de:
+            origin[de.strip("/").split("/")[-1]] = os.path.basename(os.path.dirname(path))
+    return origin
+
+
+def _english_titles():
+    titles = {}
+    for path in glob.glob(os.path.join(CONTENT, "**", "index.md"), recursive=True):
+        parsed = _split(open(path, encoding="utf-8").read())
+        if parsed:
+            titles[os.path.basename(os.path.dirname(path))] = str(parsed[1].get("title") or "")
+    return titles
+
+
 def main():
     args = sys.argv[1:]
     regen, force = "--regen" in args, "--force" in args
     only = {args[i + 1] for i, a in enumerate(args) if a == "--only" and i + 1 < len(args)}
     if "--only" in args and not only:
         raise SystemExit("--only needs a post slug")
-    os.makedirs(OUT, exist_ok=True)
+    origin, en_titles = _english_originals(), _english_titles()
 
-    posts, turn = [], {}
-    for path in sorted(glob.glob(os.path.join(CONTENT, "**", "index.md"), recursive=True)):
-        parsed = _split(open(path, encoding="utf-8").read())
-        if not parsed:
-            continue
-        fm_text, fm, body = parsed
-        slug = os.path.basename(os.path.dirname(path))
-        cover = str(fm.get("cover_image") or "")
-        owned = cover.startswith(WEB_PREFIX + "/")
-        title = str(fm.get("title") or slug.replace("-", " ").title())
-        motif = motif_for(slug, title)
-        # Covers of one motif take turns through its layouts in date order, counted over every
-        # post that has or gets a generated cover, so neighbours in the blog grid differ and a
-        # single cover rendered with --only matches a full run.
-        variant = None
-        if owned or not cover:
-            variant = turn.get(motif, 0)
-            turn[motif] = variant + 1
-        if only:
-            if slug not in only:
+    posts, en_variant = [], {}
+    for lang, content, out_dir, prefix in LANGS:
+        os.makedirs(out_dir, exist_ok=True)
+        turn = {}
+        for path in sorted(glob.glob(os.path.join(content, "**", "index.md"), recursive=True)):
+            parsed = _split(open(path, encoding="utf-8").read())
+            if not parsed:
                 continue
-            if cover and not owned and not force:
-                print(f"skip {slug}: its cover ({cover}) is not generated by this tool; add --force to replace it")
+            fm_text, fm, body = parsed
+            slug = os.path.basename(os.path.dirname(path))
+            cover = str(fm.get("cover_image") or "")
+            owned = cover.startswith(prefix + "/")
+            title = str(fm.get("title") or slug.replace("-", " ").title())
+            en = origin.get(slug) or str(fm.get("hreflang_en") or "").strip("/").split("/")[-1] or None
+            if en not in en_titles:
+                en = None
+            key = en if lang == "de" and en else slug  # scene and seed follow the English original
+            motif = motif_for(key, title) if key == slug else motif_for(key, en_titles[en])
+            # Covers of one motif take turns through its layouts in date order, counted over every
+            # post that has or gets a generated cover, so neighbours in the blog grid differ and a
+            # single cover rendered with --only matches a full run.
+            variant = None
+            if owned or not cover:
+                variant = turn.get(motif, 0)
+                turn[motif] = variant + 1
+            if lang == "en":
+                en_variant[slug] = variant or 0
+            elif key in en_variant:
+                variant = en_variant[key]
+            if only:
+                if slug not in only:
+                    continue
+                if cover and not owned and not force:
+                    print(f"skip {slug}: its cover ({cover}) is not generated by this tool; add --force to replace it")
+                    continue
+            elif cover and not (regen and owned):
                 continue
-        elif cover and not (regen and owned):
-            continue
-        posts.append((path, fm_text, fm, body, slug, cover, owned, title, motif, variant or 0))
-    missing = only - {p[4] for p in posts}
+            posts.append((lang, out_dir, prefix, path, fm_text, fm, body, slug, key, cover, owned, title, motif, variant or 0))
+    missing = only - {p[7] for p in posts}
     if missing:
         print("no such post or skipped: " + ", ".join(sorted(missing)))
 
-    for path, fm_text, fm, body, slug, cover, owned, title, motif, variant in posts:
-        seed = int(hashlib.sha1(slug.encode()).hexdigest()[:8], 16)
-        out = os.path.join(OUT, slug + ".jpg")
-        web_path = f"{WEB_PREFIX}/{slug}.jpg"
-        render(title, eyebrow_for(fm, title, motif), motif, out, seed, variant, source_label(title))
+    for lang, out_dir, prefix, path, fm_text, fm, body, slug, key, cover, owned, title, motif, variant in posts:
+        seed = int(hashlib.sha1(key.encode()).hexdigest()[:8], 16)
+        out = os.path.join(out_dir, slug + ".jpg")
+        web_path = f"{prefix}/{slug}.jpg"
+        render(title, eyebrow_for(fm, title, motif, lang), motif, out, seed, variant, source_label(title))
         if cover != web_path:
             _set_cover(path, fm_text, body, web_path)
             old = os.path.join(ROOT, "static", cover.lstrip("/")) if owned else None
             if old and old != out and os.path.exists(old):
                 os.remove(old)
-        print(f"{motif:10} {variant}  {slug}")
-    print(f"\ngenerated {len(posts)} cover(s) -> {os.path.relpath(OUT, ROOT)}")
+        print(f"{lang} {motif:10} {variant}  {slug}")
+    print(f"\ngenerated {len(posts)} cover(s)")
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@
 title: "Private-Cloud-Anbieter und -Plattformen — Vergleich 2026 für die DACH-Region"
 description: "Begleitung zur Private-Cloud-Plattform-Page. Überblick über Private-Cloud-Anbieter und -Plattformen im Jahr 2026 — was verfügbar ist, wer was bietet, welche..."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/private-cloud-anbieter-vergleich.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "OpenStack", "Proxmox", "OpenShift", "Cozystack", "KubeVirt"]

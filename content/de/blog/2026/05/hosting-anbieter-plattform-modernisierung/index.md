@@ -2,6 +2,7 @@
 title: "Hosting-Anbieter-Plattform-Modernisierung — von VPS zum Cloud-Produkt"
 description: "Begleitung zur Hosting-Anbieter-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/hosting-anbieter-plattform-modernisierung.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "GPU", "Multi-tenancy", "Hosting", "Migration"]

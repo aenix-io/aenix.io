@@ -2,6 +2,7 @@
 title: "Transport- und Logistik-Cloud-Architektur — NIS2, KI, Edge im Jahr 2026"
 description: "Begleitung zur Transport-Industry-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/transport-logistik-cloud-architektur-nis2.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["NIS2", "Cozystack"]

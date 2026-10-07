@@ -2,6 +2,7 @@
 title: "K-12-Schulträger-Cloud-Infrastruktur — wenn Souveränität wichtiger ist als Bequemlichkeit"
 description: "Begleitung zur K-12-Bildung-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/k12-schultraeger-cloud-infrastruktur.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "Multi-tenancy"]

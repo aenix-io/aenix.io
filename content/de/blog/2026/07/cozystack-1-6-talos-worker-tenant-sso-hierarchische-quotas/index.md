@@ -10,10 +10,10 @@ language: "de"
 hreflang_en: "/blog/2026/07/cozystack-1-6-talos-workers-tenant-sso-and-hierarchical-quotas/"
 companion_landing: "/de/produkte/cozystack-enterprise-support/"
 companion_label: "Enterprise-Support für Cozystack ansehen →"
-cover_image: ""
+cover_image: "/img/blog/covers/de/cozystack-1-6-talos-worker-tenant-sso-hierarchische-quotas.jpg"
 ---
 
-{{< placeholder-image width="1200" height="630" label="Cozystack v1.6.0 — Titelbild (1200×630)" >}}
+![Cozystack 1.6: Talos-Worker, Tenant-SSO, SecurityGroups und hierarchische Quotas](/img/blog/covers/de/cozystack-1-6-talos-worker-tenant-sso-hierarchische-quotas.jpg)
 
 Cozystack v1.6.0 ist am 22. Juli 2026 erschienen. Das Release ersetzt den Ubuntu-und-kubeadm-Bootstrap der Tenant-Kubernetes-Worker durch Talos Linux über Cluster API, schließt die Migration auf `etcd-operator v1alpha2` mit In-place-Adoption laufender Cluster ab, bringt OIDC-Single-Sign-on für Tenant-kube-apiserver und einzelne Grafana-Instanzen, führt die tenantseitige Firewall-API `SecurityGroup` ein und macht Ressourcenquotas hierarchisch. Alle Fixes aus v1.5.1 und v1.5.2 sind enthalten.
 

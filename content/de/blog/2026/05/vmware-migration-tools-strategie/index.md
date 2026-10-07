@@ -2,6 +2,7 @@
 title: "VMware-Migration-Tools und -Strategie 2026 — was funktioniert"
 description: "Begleitung zur VMware-Migration-Page."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/vmware-migration-tools-strategie.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Cozystack", "KubeVirt", "Migration"]

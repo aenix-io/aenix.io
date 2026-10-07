@@ -10,10 +10,10 @@ language: "de"
 hreflang_en: "/blog/2026/06/cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services/"
 companion_landing: "/de/produkte/cozystack-enterprise-support/"
 companion_label: "Enterprise-Support für Cozystack ansehen →"
-cover_image: ""
+cover_image: "/img/blog/covers/de/cozystack-1-5-gateway-api-standard-backups-tls-fuer-managed-services.jpg"
 ---
 
-{{< placeholder-image width="1200" height="630" label="Cozystack v1.5.0 — Titelbild (1200×630)" >}}
+![Cozystack 1.5: Gateway API, Standard-Backups, Flux-Sharding und TLS für Managed Services](/img/blog/covers/de/cozystack-1-5-gateway-api-standard-backups-tls-fuer-managed-services.jpg)
 
 Cozystack v1.5.0 ist am 22. Juni 2026 erschienen. Das Release enthält sämtliche Fixes der Patch-Linie v1.4.1 bis v1.4.4 und entwickelt die Plattform in fünf Richtungen weiter: ein zweiter Ingress-Pfad über die Gateway API, Backups ohne S3-Konfiguration pro Anwendung, strengere und shardbare Flux-Reconciliation, TLS für extern veröffentlichte Managed Services und GPU-Passthrough ohne manuelles `kubectl patch`.
 

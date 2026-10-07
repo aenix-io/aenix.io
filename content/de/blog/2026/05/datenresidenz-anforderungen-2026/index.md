@@ -2,6 +2,7 @@
 title: "Datenresidenz-Anforderungen 2026 — praktischer Leitfaden für Cloud-Architektur"
 description: "Begleitung zur Datensouveränitäts-Page. Was Datenresidenzregeln tatsächlich erfordern, wo typische Cloud-Setups versagen, wie eine Architektur aussieht, die..."
 date: "2026-05-01"
+cover_image: "/img/blog/covers/de/datenresidenz-anforderungen-2026.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup & DR", "Observability"]
