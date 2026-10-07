@@ -13,12 +13,12 @@ calendars:
     name: "Europe"
     window: "18 October – 7 November 2026"
     zones: "Paris, Berlin, Warsaw, Copenhagen, Amsterdam, Milan, Madrid, London"
-    url: "https://zcal.co/tym83/europe-2026"
+    url: "https://zcal.co/timurtukaev/europe-2026"
   - key: usa
     name: "United States"
     window: "7 November – 11 December 2026"
     zones: "Salt Lake City, San Francisco, Seattle, Austin, Dallas, Washington DC, Boston, New York"
-    url: "https://zcal.co/tym83/usa-2026"
+    url: "https://zcal.co/timurtukaev/usa-2026"
 
 regions:
   - key: europe
