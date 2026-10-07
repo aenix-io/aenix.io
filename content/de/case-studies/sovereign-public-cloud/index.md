@@ -56,7 +56,7 @@ Das Ziel — eine vollwertige kommerzielle Public Cloud unter eigener Marke: VMs
 
 Das Engagement wuchs zu laufendem Support und Co-Development: die Ingenieure des Kunden wurden Cozystack-Maintainer.
 
-{{< placeholder-image width="1200" height="640" label="Souveräne Grenze (Schweiz): Compute-Cluster geografisch über drei Rechenzentren verteilt mit synchroner DRBD-Replikation und etcd über drei Standorte; ein separater SeaweedFS-Objektspeicher-Cluster hält unveränderliche Backups; durchgängige Verschlüsselung at-rest / in-transit" >}}
+{{< case-diagram src="/img/case-studies/sovereign-public-cloud-de.webp" alt="Souveräne Grenze (Schweiz): Compute-Cluster geografisch über drei Rechenzentren verteilt mit synchroner DRBD-Replikation und etcd über drei Standorte; ein separater SeaweedFS-Objektspeicher-Cluster hält unveränderliche Backups; durchgängige Verschlüsselung at-rest / in-transit" >}}
 
 ## Umsetzung: neue Anforderungen und wie wir sie gelöst haben
 

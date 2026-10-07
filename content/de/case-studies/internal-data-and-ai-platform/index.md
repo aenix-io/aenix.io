@@ -78,7 +78,7 @@ Beides wird üblicherweise als getrennte Programme geführt — und verbringt da
 - Lifecycle- und Ressourcenmanagement, Autoscaling und Provisioning auf Abruf.
 - Sicherheit und Mandantenfähigkeit, Außerbetriebnahme und Rolling Upgrades.
 
-{{< placeholder-image width="1200" height="640" label="Interne Daten- und KI-Plattform: GPU-Pools mit Time-Slicing und Quotas je Tenant speisen einen Scheduler, der Pods und VMs platziert; darüber Datendienste (S3-Objektspeicher, Datenbanken, Modell-Artefakte) und GitOps-Pipelines; die GPU-Lifecycle-Schicht übernimmt automatisiertes Provisioning, Passthrough zu VM und Kubernetes, Treiberverwaltung, Autoscaling, Außerbetriebnahme und Rolling Upgrades; Verbrauchsmetriken fließen in Billing, Quotas und Inventar" >}}
+{{< case-diagram src="/img/case-studies/internal-data-and-ai-platform-de.webp" alt="Interne Daten- und KI-Plattform: GPU-Pools mit Time-Slicing und Quotas je Tenant speisen einen Scheduler, der Pods und VMs platziert; darüber Datendienste (S3-Objektspeicher, Datenbanken, Modell-Artefakte) und GitOps-Pipelines; die GPU-Lifecycle-Schicht übernimmt automatisiertes Provisioning, Passthrough zu VM und Kubernetes, Treiberverwaltung, Autoscaling, Außerbetriebnahme und Rolling Upgrades; Verbrauchsmetriken fließen in Billing, Quotas und Inventar" >}}
 
 ## Was die Plattform heute kann
 

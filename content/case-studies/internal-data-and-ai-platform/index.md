@@ -78,7 +78,7 @@ The two are usually treated as separate programmes and then spend years copying 
 - Lifecycle and resource management, autoscaling and on-demand provisioning.
 - Security and multi-tenancy, decommissioning and rolling upgrades.
 
-{{< placeholder-image width="1200" height="640" label="Internal data and AI platform: GPU pools with time-slicing and per-tenant quotas feed one scheduler placing both pods and VMs; above it, data services (S3 object storage, databases, model artefacts) and GitOps pipelines; the GPU lifecycle layer handles automated provisioning, passthrough to VM and Kubernetes, driver management, autoscaling, decommissioning and rolling upgrades; usage metrics flow to billing, quotas and inventory" >}}
+{{< case-diagram src="/img/case-studies/internal-data-and-ai-platform-en.webp" alt="Internal data and AI platform: GPU pools with time-slicing and per-tenant quotas feed one scheduler placing both pods and VMs; above it, data services (S3 object storage, databases, model artefacts) and GitOps pipelines; the GPU lifecycle layer handles automated provisioning, passthrough to VM and Kubernetes, driver management, autoscaling, decommissioning and rolling upgrades; usage metrics flow to billing, quotas and inventory" >}}
 
 ## What the platform already does
 

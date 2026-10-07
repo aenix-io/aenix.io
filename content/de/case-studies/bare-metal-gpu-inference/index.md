@@ -75,7 +75,7 @@ Ein einzelner Server mit 8xH100, von oben nach unten geschichtet, verwandelt eig
 
 Die Inferenz läuft als zwei sich ergänzende Pipelines. Asynchron: API-Gateway → RabbitMQ-Queue → GPU-ML-Worker → Webhook-Callback. Synchron: HTTP-Inferenz-Endpunkte, autoskaliert mit KEDA über die Request-Rate (RPS) des nginx-ingress, mit VictoriaMetrics als Metrik-Quelle.
 
-{{< placeholder-image width="1200" height="640" label="Einzelner Bare-Metal-Knoten mit 8xH100, geschichtet: ML-Worker des Kunden (Inferenzmodelle, RabbitMQ-Queues, sync/async) auf einem verschachtelten Mandanten-Kubernetes mit durchgereichten GPUs und dem NVIDIA GPU Operator darin; isolierter Mandant (eigenes etcd, Secrets, Registry, Monitoring) auf Cozystack über k3s/generisches Linux (LINSTOR, Cilium+Kube-OVN, KubeVirt, vfio-pci-Passthrough, MetalLB); Bare Metal: 8x NVIDIA H100 80GB, NVLink, 2 TB RAM" >}}
+{{< case-diagram src="/img/case-studies/bare-metal-gpu-inference-de.webp" alt="Einzelner Bare-Metal-Knoten mit 8xH100, geschichtet: ML-Worker des Kunden (Inferenzmodelle, RabbitMQ-Queues, sync/async) auf einem verschachtelten Mandanten-Kubernetes mit durchgereichten GPUs und dem NVIDIA GPU Operator darin; isolierter Mandant (eigenes etcd, Secrets, Registry, Monitoring) auf Cozystack über k3s/generisches Linux (LINSTOR, Cilium+Kube-OVN, KubeVirt, vfio-pci-Passthrough, MetalLB); Bare Metal: 8x NVIDIA H100 80GB, NVLink, 2 TB RAM" >}}
 
 ## Umsetzung: neue Anforderungen und wie wir sie gelöst haben
 

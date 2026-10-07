@@ -78,7 +78,7 @@ Eine Self-Service-Cloud-Plattform, als Produkt geliefert und in die bestehenden 
 - **Ceph** — das bestehende externe Cluster dient als Storage, mit seiner Kapazitätsplanung und Betriebshistorie.
 - **RBAC** — global und innerhalb jedes Tenants durchgesetzt, konsistent mit der bestehenden Zugriffsprüfung.
 
-{{< placeholder-image width="1200" height="640" label="Private Cloud in einer Bank: interne Teams steigen über Webkonsole oder öffentliche API ein; die Plattform setzt RBAC, Quotas, Netz-Policy (Firewall, Load Balancer, ACL), Backup-Policy und Schwellwert-Monitoring je Tenant durch; Identity kommt aus dem bestehenden Keycloak der Bank mit Gruppen- und Rollen-Mapping, Storage aus dem externen Ceph-Cluster; Verbrauchsberichte speisen die interne Leistungsverrechnung" >}}
+{{< case-diagram src="/img/case-studies/private-cloud-in-a-bank-de.webp" alt="Private Cloud in einer Bank: interne Teams steigen über Webkonsole oder öffentliche API ein; die Plattform setzt RBAC, Quotas, Netz-Policy (Firewall, Load Balancer, ACL), Backup-Policy und Schwellwert-Monitoring je Tenant durch; Identity kommt aus dem bestehenden Keycloak der Bank mit Gruppen- und Rollen-Mapping, Storage aus dem externen Ceph-Cluster; Verbrauchsberichte speisen die interne Leistungsverrechnung" >}}
 
 ## Ergebnisse
 

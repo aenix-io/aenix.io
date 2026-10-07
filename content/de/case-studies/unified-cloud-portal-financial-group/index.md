@@ -74,7 +74,7 @@ Diese Entscheidung leistet mehr, als sie zunächst aussieht:
 - **Skalierbarkeit** — horizontale Skalierung ab Werk.
 - **Echtzeit** — die Watch-API schiebt Änderungen sofort an die Frontends; die Konsole zeigt den Ist-Zustand, nicht den letzten Poll.
 
-{{< placeholder-image width="1200" height="640" label="Portal-Architektur: Frontend-Portale (Accounting, Console, Support) sprechen mit dem Kubernetes-API-Server als Aggregationsebene und einheitlichem Datenbus; dahinter Backend-API-Services und Backend-Controller mit Anbindung an externe Datenbanken, OpenNebula, VMware und Kubernetes-as-a-Service" >}}
+{{< case-diagram src="/img/case-studies/unified-cloud-portal-financial-group-de.webp" alt="Portal-Architektur: Frontend-Portale (Accounting, Console, Support) sprechen mit dem Kubernetes-API-Server als Aggregationsebene und einheitlichem Datenbus; dahinter Backend-API-Services und Backend-Controller mit Anbindung an externe Datenbanken, OpenNebula, VMware und Kubernetes-as-a-Service" >}}
 
 **Portal-Komponenten.** Registrierung und SSO; persönliches Dashboard; Servicekatalog mit virtuellen Maschinen und Kubernetes-as-a-Service über OpenNebula; Ticket-Center; Wissensdatenbank und Dokumentation; Logging und Audit; Billing und Rechnungsstellung; Administrator-Oberfläche der Plattform.
 

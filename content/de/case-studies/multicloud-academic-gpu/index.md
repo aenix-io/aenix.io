@@ -57,7 +57,7 @@ Im Kern — Cozystack auf Talos Linux auf eigener Hardware. Ein Management-Clust
 - **Storage.** Externes Ceph (CephFS RWX) bleibt das Speichersystem; lokal — LINSTOR/DRBD mit Volume-Verschlüsselung.
 - **Zugriff & Observability.** Keycloak (OIDC) anstelle des Cloud-IdP; das integrierte Monitoring von Cozystack (VictoriaMetrics/VictoriaLogs) neben dem eigenen Logging-Stack des Kunden.
 
-{{< placeholder-image width="1200" height="640" label="Multi-Cloud-Architektur: ein einziger Management-Cluster (Cozystack · Talos · Kamaji) orchestriert Bare Metal, einen öffentlichen Hyperscaler und eine souveräne OpenStack-Cloud über eine einzige Cluster API; Standorte und externes Ceph über ein WireGuard-Mesh verbunden" >}}
+{{< case-diagram src="/img/case-studies/multicloud-academic-gpu-de.webp" alt="Multi-Cloud-Architektur: ein einziger Management-Cluster (Cozystack · Talos · Kamaji) orchestriert Bare Metal, einen öffentlichen Hyperscaler und eine souveräne OpenStack-Cloud über eine einzige Cluster API; Standorte und externes Ceph über ein WireGuard-Mesh verbunden" >}}
 
 ## Umsetzung: neue Anforderungen und wie wir sie gelöst haben
 
