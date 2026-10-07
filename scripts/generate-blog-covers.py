@@ -455,12 +455,16 @@ PALETTES = [  # (glow, second glow, top-left wash, gradient stops)
 ]
 
 
-def html(title, eyebrow, motif, seed=0, variant=0, source="legacy"):
+def html(title, eyebrow, motif, seed=0, variant=0, source="legacy", sub=None):
     import html as H_
     aenix = open(os.path.join(ROOT, "static/images/logo-full-white.svg")).read()
     cozy = open(COZY_LOGO).read()
     fonts = urllib.parse.quote(os.path.join(ROOT, "static/fonts"))
-    head, sub = split_title(title)
+    head, split_sub = split_title(title)
+    if sub is None:
+        sub = split_sub
+    else:
+        head = title
     n = len(head)
     size = 56 if n <= 30 else 50 if n <= 45 else 44 if n <= 70 else 38 if n <= 100 else 32 if n <= 140 else 28
     if sub:
@@ -497,11 +501,11 @@ h1 {{ overflow-wrap:anywhere; margin:26px 0 0; font-weight:700; font-size:{size}
 
 
 
-def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy"):
+def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy", sub=None):
     with tempfile.TemporaryDirectory() as tmp:
         page, png = os.path.join(tmp, "cover.html"), os.path.join(tmp, "cover.png")
         with open(page, "w", encoding="utf-8") as fh:
-            fh.write(html(title, eyebrow, motif, seed, variant, source))
+            fh.write(html(title, eyebrow, motif, seed, variant, source, sub))
         cmd = [_chrome(), "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
                f"--window-size={W},{H}", "--allow-file-access-from-files", f"--screenshot={png}",
                "--virtual-time-budget=2000", "file://" + page]
@@ -510,7 +514,11 @@ def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy"):
         res = subprocess.run(cmd, capture_output=True, text=True)
         if res.returncode or not os.path.exists(png):
             raise SystemExit(f"Chrome failed to render {out_jpg}:\n{res.stderr[-2000:]}")
-        Image.open(png).convert("RGB").save(out_jpg, "JPEG", quality=88, optimize=True, progressive=True)
+        img = Image.open(png).convert("RGB")
+        if out_jpg.endswith(".png"):  # named OG cards keep their .png paths
+            img.save(out_jpg, "PNG", optimize=True)
+        else:
+            img.save(out_jpg, "JPEG", quality=88, optimize=True, progressive=True)
 
 
 # Scene per post when the title alone would pick the wrong one.

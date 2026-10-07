@@ -7,7 +7,7 @@ lastmod: 2026-06-15
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/sovereign-public-cloud/"
-images: ["img/og/og-case-sovereign-public-cloud.png"]
+images: ["img/og/og-case-sovereign-public-cloud.jpg"]
 related_pages:
   - /products/public-cloud-platform/
   - /solutions/data-sovereignty/

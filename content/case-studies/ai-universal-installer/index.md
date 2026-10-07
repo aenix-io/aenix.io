@@ -7,7 +7,7 @@ lastmod: 2026-06-15
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/ai-universal-installer/"
-images: ["img/og/og-case-ai-universal-installer.png"]
+images: ["img/og/og-case-ai-universal-installer.jpg"]
 related_pages:
   - /solutions/sovereign-ai/
   - /products/ai-platform/

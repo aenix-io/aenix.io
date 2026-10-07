@@ -5,7 +5,7 @@ type: "page"
 language: "en"
 primary_keyword: "sovereign ai infrastructure"
 secondary_keywords: ["private gpu cloud", "self-hosted llm infrastructure", "multi-tenant gpu scheduling", "on-premise ai platform"]
-images: ["img/og/ai-platform.png"]
+images: ["img/og/ai-platform.jpg"]
 hreflang_de: /de/produkte/ai-platform/
 related_pages: ["/products/private-cloud-platform/", "/products/public-cloud-platform/", "/solutions/sovereign-ai/", "/solutions/private-llm/"]
 quick_facts_style: "rows"

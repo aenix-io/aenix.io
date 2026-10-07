@@ -7,7 +7,7 @@ lastmod: 2026-08-21
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/internal-data-and-ai-platform/"
-images: ["img/og/og-case-internal-data-and-ai-platform.png"]
+images: ["img/og/og-case-internal-data-and-ai-platform.jpg"]
 primary_keyword: "interne KI-Plattform GPU"
 secondary_keywords:
   - "mandantenfähiges GPU-Scheduling"

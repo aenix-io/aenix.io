@@ -4,7 +4,7 @@ description: "Training und Inferenz auf eigenen GPUs, in Ihrer Jurisdiktion, ohn
 hero_subtitle: "GPU-Infrastruktur in Ihrer Jurisdiktion, ohne Hyperscaler-Lock-in"
 type: "page"
 language: "de"
-images: ["img/og/og-leiter-ai-ml-de.png"]
+images: ["img/og/og-leiter-ai-ml-de.jpg"]
 hreflang_en: /for/head-of-ai-ml/
 primary_keyword: "souveräne ki gpu plattform"
 secondary_keywords: ["souveräne ki", "private gpu cloud", "ki inferenz plattform"]

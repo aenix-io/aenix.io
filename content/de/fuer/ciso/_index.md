@@ -4,7 +4,7 @@ description: "DORA, NIS2 und Datenresidenz machen Cloud zum Kontrollproblem. Reg
 hero_subtitle: "Souveränität, die Sie für DORA und NIS2 belegen"
 type: "page"
 language: "de"
-images: ["img/og/og-ciso-de.png"]
+images: ["img/og/og-ciso-de.jpg"]
 hreflang_en: /for/ciso/
 primary_keyword: "souveräne compliance cloud dora nis2"
 related_pages:

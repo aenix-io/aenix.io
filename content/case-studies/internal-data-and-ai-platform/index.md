@@ -7,7 +7,7 @@ lastmod: 2026-08-21
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/internal-data-and-ai-platform/"
-images: ["img/og/og-case-internal-data-and-ai-platform.png"]
+images: ["img/og/og-case-internal-data-and-ai-platform.jpg"]
 primary_keyword: "internal AI platform GPU"
 secondary_keywords:
   - "multi-tenant GPU scheduling"

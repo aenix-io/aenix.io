@@ -7,7 +7,7 @@ lastmod: 2026-08-21
 page_type: "case-study"
 language: "de"
 hreflang_en: "/case-studies/unified-cloud-portal-financial-group/"
-images: ["img/og/og-case-unified-cloud-portal-financial-group.png"]
+images: ["img/og/og-case-unified-cloud-portal-financial-group.jpg"]
 primary_keyword: "Self-Service-Cloud-Portal"
 secondary_keywords:
   - "einheitliches Cloud-Portal"

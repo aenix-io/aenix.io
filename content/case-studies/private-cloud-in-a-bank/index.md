@@ -7,7 +7,7 @@ lastmod: 2026-08-21
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/private-cloud-in-a-bank/"
-images: ["img/og/og-case-private-cloud-in-a-bank.png"]
+images: ["img/og/og-case-private-cloud-in-a-bank.jpg"]
 primary_keyword: "private cloud for banks"
 secondary_keywords:
   - "bank private cloud platform"

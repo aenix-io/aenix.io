@@ -4,7 +4,7 @@ description: "Turn the VMware exit into your margin. Offer clients a branded clo
 hero_subtitle: "Turn the VMware exit into your margin"
 type: "page"
 language: "en"
-images: ["img/og/og-head-of-cloud.png"]
+images: ["img/og/og-head-of-cloud.jpg"]
 hreflang_de: /de/fuer/leiter-cloud/
 primary_keyword: "white-label cloud platform for service providers"
 related_pages:

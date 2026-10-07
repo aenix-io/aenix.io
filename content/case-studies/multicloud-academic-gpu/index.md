@@ -7,7 +7,7 @@ lastmod: 2026-06-15
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/multicloud-academic-gpu/"
-images: ["img/og/og-case-multicloud-academic-gpu.png"]
+images: ["img/og/og-case-multicloud-academic-gpu.jpg"]
 related_pages:
   - /solutions/gpu-cloud-bursting/
   - /industries/universities/

@@ -4,7 +4,7 @@ description: "Role-specific entry points to Aenix — infrastructure, platform e
 hero_subtitle: "Find your Aenix entry point by role"
 type: "page"
 language: "en"
-images: ["img/og/og-for.png"]
+images: ["img/og/og-for.jpg"]
 hreflang_de: /de/fuer/
 related_pages:
   - /for/head-of-infrastructure/

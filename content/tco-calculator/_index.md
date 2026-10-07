@@ -10,7 +10,7 @@ date: 2026-08-22
 lastmod: 2026-08-22
 weight: 10
 robots: "index,follow"
-images: ["img/og/og-tco-calculator.png"]
+images: ["img/og/og-tco-calculator.jpg"]
 dataset_version: "0.2.0"
 related_pages:
   - /alternatives/vmware-alternative/

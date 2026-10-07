@@ -7,7 +7,7 @@ lastmod: 2026-06-20
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/bare-metal-kubernetes-messaging-saas/"
-images: ["img/og/og-case-bare-metal-kubernetes-messaging-saas.png"]
+images: ["img/og/og-case-bare-metal-kubernetes-messaging-saas.jpg"]
 primary_keyword: "proxmox to kubernetes migration"
 secondary_keywords:
   - "bare metal kubernetes"

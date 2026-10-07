@@ -4,7 +4,7 @@ description: "DORA, NIS2 and data-residency turn cloud into a control problem. R
 hero_subtitle: "Sovereignty you can evidence for DORA and NIS2"
 type: "page"
 language: "en"
-images: ["img/og/og-ciso.png"]
+images: ["img/og/og-ciso.jpg"]
 hreflang_de: /de/fuer/ciso/
 primary_keyword: "sovereign compliant cloud platform for CISOs"
 related_pages:

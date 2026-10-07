@@ -4,7 +4,7 @@ description: "Post-Broadcom, your clients need a VMware alternative. Add Ænix P
 hero_subtitle: "Add an open cloud line, up to 40% margin"
 type: "page"
 language: "en"
-images: ["img/og/og-head-of-alliances.png"]
+images: ["img/og/og-head-of-alliances.jpg"]
 hreflang_de: /de/fuer/leiter-allianzen/
 primary_keyword: "cloud partner program for alliances leaders"
 related_pages:

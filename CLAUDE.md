@@ -182,7 +182,7 @@ topics: ["Cozystack", "Kubernetes", "..."]
 language: "en"         # or "de"
 companion_landing: "/products/aenix-platform/..."  # optional, renders back-link card
 companion_label: "See ISP Edition →"               # optional, customises back-link text
-cover_image: "..."     # optional; defaults to placeholder SVG 1200×630
+cover_image: "..."     # optional; scripts/generate-blog-covers.py draws one if missing
 ---
 
 Body in markdown. Use the shortcodes above for callouts.

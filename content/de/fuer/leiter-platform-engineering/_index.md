@@ -4,7 +4,7 @@ description: "Self-Service mit Golden Paths für Entwickler auf einer offenen, K
 hero_subtitle: "Golden-Path-Self-Service für Entwickler, ohne Lock-in"
 type: "page"
 language: "de"
-images: ["img/og/og-leiter-platform-engineering-de.png"]
+images: ["img/og/og-leiter-platform-engineering-de.jpg"]
 hreflang_en: /for/head-of-platform-engineering/
 primary_keyword: "internal developer platform plattform engineering"
 related_pages:

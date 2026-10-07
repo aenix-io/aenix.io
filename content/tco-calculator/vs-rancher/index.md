@@ -10,7 +10,7 @@ date: 2026-08-22
 lastmod: 2026-08-22
 weight: 30
 robots: "index,follow"
-images: ["img/og/og-tco-vs-rancher.png"]
+images: ["img/og/og-tco-vs-rancher.jpg"]
 dataset_version: "0.2.0"
 related_pages:
   - /alternatives/vmware-alternative/

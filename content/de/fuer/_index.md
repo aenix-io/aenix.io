@@ -4,7 +4,7 @@ description: "Rollenspezifische Einstiegspunkte zu Aenix — Infrastruktur, Plat
 hero_subtitle: "Finden Sie Ihren Einstieg nach Rolle"
 type: "page"
 language: "de"
-images: ["img/og/og-fuer-de.png"]
+images: ["img/og/og-fuer-de.jpg"]
 hreflang_en: /for/
 related_pages:
   - /de/fuer/leiter-infrastruktur/

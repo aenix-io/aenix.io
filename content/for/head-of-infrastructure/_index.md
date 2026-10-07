@@ -4,7 +4,7 @@ description: "If you own the VMware estate after Broadcom's price hikes, here ar
 hero_subtitle: "Exit VMware on your own terms"
 type: "page"
 language: "en"
-images: ["img/og/og-head-of-infrastructure.png"]
+images: ["img/og/og-head-of-infrastructure.jpg"]
 hreflang_de: /de/fuer/leiter-infrastruktur/
 primary_keyword: "vmware alternative for infrastructure leaders"
 related_pages:

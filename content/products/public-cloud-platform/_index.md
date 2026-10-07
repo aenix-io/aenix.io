@@ -9,7 +9,7 @@ primary_keyword: "public cloud platform"
 secondary_keywords: ["cloud platform for hosting providers", "openstack alternative for providers", "multi-tenant cloud platform", "whmcs cloud billing", "sovereign public cloud"]
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Aenix Public Cloud Platform console"
-images: ["img/og/public-cloud-platform.png"]
+images: ["img/og/public-cloud-platform.jpg"]
 hreflang_de: /de/produkte/public-cloud-platform/
 related_pages: ["/products/private-cloud-platform/", "/products/ai-platform/", "/products/whmcs-integration/", "/migration/vmware/", "/alternatives/openstack-alternative/"]
 direct_answer: |

@@ -4,7 +4,7 @@ description: "Nach den Broadcom-Preisen ist die VMware-Verlängerung Chefsache. 
 hero_subtitle: "VMware ablösen, zu Ihren eigenen Bedingungen"
 type: "page"
 language: "de"
-images: ["img/og/og-leiter-infrastruktur-de.png"]
+images: ["img/og/og-leiter-infrastruktur-de.jpg"]
 hreflang_en: /for/head-of-infrastructure/
 primary_keyword: "vmware alternative private cloud"
 related_pages:

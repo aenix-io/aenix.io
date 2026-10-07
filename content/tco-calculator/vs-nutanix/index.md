@@ -10,7 +10,7 @@ date: 2026-08-22
 lastmod: 2026-08-22
 weight: 20
 robots: "index,follow"
-images: ["img/og/og-tco-vs-nutanix.png"]
+images: ["img/og/og-tco-vs-nutanix.jpg"]
 dataset_version: "0.2.0"
 related_pages:
   - /alternatives/vmware-alternative/

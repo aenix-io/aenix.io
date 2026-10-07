@@ -7,7 +7,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "cozystack enterprise support"
 secondary_keywords: ["kubernetes plattform support", "open source cloud supportvertrag", "cncf projekt kommerzieller support", "cozystack sla"]
-images: ["img/og/cozystack-enterprise-support.png"]
+images: ["img/og/cozystack-enterprise-support.jpg"]
 aliases:
   - /de/enterprise-support/
 related_pages: ["/de/produkte/cozystack/", "/de/produkte/private-cloud-platform/", "/de/produkte/public-cloud-platform/", "/de/preise/"]

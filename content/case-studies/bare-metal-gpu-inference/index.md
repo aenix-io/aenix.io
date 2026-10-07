@@ -7,7 +7,7 @@ lastmod: 2026-06-20
 page_type: "case-study"
 language: "en"
 hreflang_de: "/de/case-studies/bare-metal-gpu-inference/"
-images: ["img/og/og-case-bare-metal-gpu-inference.png"]
+images: ["img/og/og-case-bare-metal-gpu-inference.jpg"]
 primary_keyword: "bare metal GPU inference"
 secondary_keywords:
   - "on-premise AI inference"
