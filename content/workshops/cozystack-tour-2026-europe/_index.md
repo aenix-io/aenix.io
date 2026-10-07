@@ -6,7 +6,7 @@ layout: "event-landing"
 region_slug: "eu"
 primary_keyword: "vmware migration workshop europe"
 secondary_keywords: ["vmware alternative europe", "vmware exit training", "open source virtualization workshop", "cozystack training", "gpu ai platform workshop", "sovereign cloud europe"]
-images: ["img/og/og-workshop-en.png?v=2"]
+images: ["img/og/og-workshop-europe-en.png"]
 hide_child_cards: true
 hero_eyebrow: "Europe · October–November 2026 · eight cities"
 hero_title: "Build your own cloud: replace VMware — then run AI and GPUs on it"
