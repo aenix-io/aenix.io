@@ -1,0 +1,29 @@
+{{/*
+  tour-booking — the two zcal booking cards (Europe / United States) from
+  data/tour2026.yaml `calendars`, plus the direct-contact fallback.
+
+  Usage: {{< tour-booking >}}
+*/}}
+<div class="tour-book">
+  {{- range site.Data.tour2026.calendars }}
+  <a class="tour-book__card" href="{{ .url }}" target="_blank" rel="noopener">
+    <span class="tour-book__region">{{ .name }}</span>
+    <span class="tour-book__window">{{ .window }}</span>
+    <span class="tour-book__zones">{{ .zones }}</span>
+    <span class="tour-book__cta">Pick a time <span aria-hidden="true">↗</span></span>
+  </a>
+  {{- end }}
+</div>
+<div class="tour-direct">
+  <p class="tour-direct__lead">No slot that fits, or want to plan something bigger than a meeting? Write to me directly and we will work it out.</p>
+  <div class="tour-direct__links">
+    <a class="tour-direct__link" href="mailto:timur.tukaev@aenix.io?subject=Cozystack%20Tour%202026%20%E2%80%94%20meeting">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      timur.tukaev@aenix.io
+    </a>
+    <a class="tour-direct__link" href="https://t.me/tym83" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 4 3 11.2l6.3 2.2L18 7.5l-6.6 7.3L18.6 20 21 4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      Telegram @tym83
+    </a>
+  </div>
+</div>

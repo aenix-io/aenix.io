@@ -6437,3 +6437,147 @@ a.lang-switch__item:hover { color: var(--aenix-text); background: rgba(255, 255,
 /* Case-study architecture diagrams (shortcode case-diagram) */
 .case-diagram { margin: 2rem 0; }
 .case-diagram img { display: block; width: 100%; height: auto; border-radius: 14px; }
+
+/* ==========================================================================
+   TOUR 2026 — meet Timur on the road (/tour-2026/): booking cards,
+   itinerary by region, formats grid. Builds on the ws-* workshop scaffold.
+   ========================================================================== */
+.tour-book { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
+.tour-book__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 1.75rem;
+  border: 1px solid rgba(1, 165, 255, 0.4);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(1, 165, 255, 0.08), var(--ws-panel));
+  text-decoration: none;
+  transition: border-color 0.2s var(--ease, ease), transform 0.2s var(--ease, ease), box-shadow 0.2s var(--ease, ease);
+}
+.tour-book__card:hover { border-color: var(--ws-blue); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35); }
+.tour-book__region { font-size: 1.625rem; font-weight: 700; color: var(--aenix-text); }
+.tour-book__window { font-size: 1rem; font-weight: 600; color: var(--ws-cyan); }
+.tour-book__zones { font-size: 0.9375rem; line-height: 1.5; color: var(--aenix-text-muted); }
+.tour-book__cta {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  background-image: var(--ws-cta-bg);
+  box-shadow: var(--ws-cta-glow);
+  font-weight: 700;
+  color: #fff;
+}
+.tour-direct {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ws-border);
+  border-radius: var(--ws-radius);
+  background: var(--ws-panel);
+}
+.tour-direct__lead { margin: 0 0 0.875rem; color: var(--aenix-text-muted); line-height: 1.55; }
+.tour-direct__links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.tour-direct__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--ws-border-strong);
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--aenix-text);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.tour-direct__link:hover { border-color: var(--ws-blue); color: var(--ws-blue); }
+.tour-direct__link svg { color: var(--ws-blue); flex: none; }
+
+.tour-region { margin-top: 2.5rem; }
+.tour-region__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1.25rem; margin-bottom: 1.25rem; }
+.tour-region__title { margin: 0; font-size: 1.5rem; font-weight: 700; color: var(--aenix-text); }
+.tour-region__window { margin: 0; font-family: var(--font-mono, monospace); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--aenix-text-muted); }
+.tour-region__book { margin-left: auto; font-weight: 600; color: var(--ws-blue); text-decoration: none; }
+.tour-region__book:hover { text-decoration: underline; }
+.tour-stops { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.875rem; }
+.tour-stop {
+  display: grid;
+  grid-template-columns: 13rem 1fr;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ws-border);
+  border-radius: var(--ws-radius);
+  background: var(--ws-panel);
+}
+.tour-stop__where { display: flex; flex-direction: column; gap: 0.2rem; }
+.tour-stop__dates { font-family: var(--font-mono, monospace); font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.04em; color: var(--ws-cyan); }
+.tour-stop__city { font-size: 1.25rem; font-weight: 700; color: var(--aenix-text); }
+.tour-stop__country { font-size: 0.875rem; color: var(--aenix-text-muted); }
+.tour-stop__events { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.tour-event { display: grid; grid-template-columns: auto 1fr; gap: 0.15rem 0.75rem; align-items: baseline; }
+.tour-event__tag {
+  grid-row: span 3;
+  align-self: start;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid var(--ws-border);
+  border-radius: 6px;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  min-width: 7.25rem;
+  text-align: center;
+  color: var(--aenix-text-muted);
+}
+.tour-event--conference .tour-event__tag { color: var(--ws-violet); border-color: rgba(167, 139, 250, 0.35); background: rgba(167, 139, 250, 0.1); }
+.tour-event--workshop .tour-event__tag { color: var(--ws-blue); border-color: rgba(1, 165, 255, 0.35); background: rgba(1, 165, 255, 0.1); }
+.tour-event--talk .tour-event__tag,
+.tour-event--community .tour-event__tag,
+.tour-event--podcast .tour-event__tag { color: var(--ws-cyan); border-color: rgba(145, 219, 235, 0.35); background: rgba(145, 219, 235, 0.08); }
+.tour-event--planned { opacity: 0.8; }
+.tour-event__when { font-size: 0.875rem; font-weight: 600; color: var(--aenix-text); }
+.tour-event__title { font-weight: 600; color: var(--aenix-text); text-decoration: none; }
+a.tour-event__title:hover { color: var(--ws-blue); text-decoration: underline; }
+.tour-event__venue { font-size: 0.875rem; color: var(--aenix-text-muted); }
+.tour-event--open { grid-template-columns: 1fr; padding-top: 0.75rem; border-top: 1px dashed var(--ws-border); }
+.tour-event--open .tour-event__when { color: var(--ws-cyan); }
+
+.tour-formats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.tour-format {
+  padding: 1.5rem;
+  border: 1px solid var(--ws-border);
+  border-radius: var(--ws-radius);
+  background: var(--ws-panel);
+}
+.tour-format__who { display: block; margin-bottom: 0.5rem; font-family: var(--font-mono, monospace); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ws-blue); }
+.tour-format h3 { margin: 0 0 0.5rem; font-size: 1.125rem; font-weight: 700; line-height: 1.3; color: var(--aenix-text); }
+.tour-format p { margin: 0; font-size: 0.9375rem; line-height: 1.55; color: var(--aenix-text-muted); }
+.tour-hosts { display: flex; flex-wrap: wrap; gap: 0.625rem; margin-top: 1.5rem; padding: 0; list-style: none; }
+.tour-hosts li { padding: 0.45rem 0.9rem; border: 1px solid var(--ws-border-strong); border-radius: 999px; font-size: 0.9375rem; color: var(--aenix-text); }
+.tour-podcast {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(167, 139, 250, 0.1), rgba(1, 165, 255, 0.06));
+}
+.tour-podcast__badge { display: inline-block; margin-bottom: 0.75rem; padding: 0.2rem 0.65rem; border-radius: 999px; background: rgba(167, 139, 250, 0.18); font-family: var(--font-mono, monospace); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ws-violet); }
+.tour-podcast p { color: var(--aenix-text-muted); line-height: 1.6; }
+.tour-podcast ul { margin: 0; padding-left: 1.1rem; color: var(--aenix-text); line-height: 1.7; }
+
+@media (max-width: 900px) {
+  .tour-formats { grid-template-columns: repeat(2, 1fr); }
+  .tour-podcast { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .tour-book, .tour-formats { grid-template-columns: 1fr; }
+  .tour-stop { grid-template-columns: 1fr; gap: 0.75rem; padding: 1.1rem; }
+  .tour-region__book { margin-left: 0; }
+  .tour-event { grid-template-columns: 1fr; }
+  .tour-event__tag { grid-row: auto; justify-self: start; }
+}
+.tour-hosts__lead { margin: 2rem 0 0; }
