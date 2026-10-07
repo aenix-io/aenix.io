@@ -4,8 +4,11 @@
 Each cover is an isometric scene (servers, storage, shields, migration arrows,
 edge towers ...) on the brand's deep-blue gradient, with the post's title, a
 "Type · Topic" pill, and the Cozystack and Aenix marks: the same look as the
-covers the Medium-era posts carry. The scene is chosen from the title (see
-MOTIF_RULES), or pinned per post in MOTIF_OVERRIDES.
+covers the Medium-era posts carry. Each post has its own composition in
+blog-covers/post_scenes.py (a bank for financial services, a factory for
+Industry 4.0, a calendar for a 90-day playbook...); German translations reuse
+the composition of their English original. A post without one falls back to a
+generic scene chosen from the title (MOTIF_RULES, MOTIF_OVERRIDES).
 
 The page is drawn as HTML/SVG and screenshotted by headless Chrome, which gives
 real gradients, glows and the site's own Inter font. Set CHROME to the browser
@@ -44,6 +47,8 @@ LANGS = [
     ("de", os.path.join(ROOT, "content", "de", "blog"), os.path.join(OUT, "de"), WEB_PREFIX + "/de"),
 ]
 COZY_LOGO = os.path.join(os.path.dirname(__file__), "blog-covers", "cozystack-logo-white.svg")
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "blog-covers"))
+import post_scenes  # noqa: E402  per-post compositions
 W, H = 1200, 630
 
 
@@ -291,6 +296,8 @@ DEFS = """
 """
 
 
+post_scenes.install(Scene)
+
 VARIANTS = {"platform": 3, "compare": 3, "migration": 2, "devx": 3, "security": 2, "sovereign": 2,
             "cost": 2, "edge": 2, "gpu": 2, "storage": 2, "release": 2, "oberon": 1}
 
@@ -304,12 +311,17 @@ TILE_POOLS = {
 }
 
 
-def scene_for(motif, seed=0, variant=0, source="legacy"):
+def scene_for(motif, seed=0, variant=0, source="legacy", key=None):
     rng = random.Random(seed)
     variant %= VARIANTS.get(motif, 1)
     s = Scene(ox=850 + rng.randint(-10, 10), oy=250 + rng.randint(-6, 6), s=45 + rng.choice((-1, 0, 1)))
     s.platform(-1, -1, 9, 8)
     s.ring(3, 3, 0, 4.2)
+    if key in post_scenes.POST_SCENES:  # a composition drawn for this post
+        post_scenes.POST_SCENES[key](s, rng)
+        for (cx, cy), glyph in zip(((735, 118), (1112, 150)), rng.sample(TILE_POOLS.get(motif, TILE_POOLS["platform"]), 2)):
+            s.tile(cx, cy, glyph)
+        return s.render()
     v = variant
     if motif == "oberon":
         s.chip(0.2, 3.6, 0, 3.0, "RISC5")
@@ -455,7 +467,7 @@ PALETTES = [  # (glow, second glow, top-left wash, gradient stops)
 ]
 
 
-def html(title, eyebrow, motif, seed=0, variant=0, source="legacy", sub=None):
+def html(title, eyebrow, motif, seed=0, variant=0, source="legacy", sub=None, key=None):
     import html as H_
     aenix = open(os.path.join(ROOT, "static/images/logo-full-white.svg")).read()
     cozy = open(COZY_LOGO).read()
@@ -494,18 +506,18 @@ h1 {{ overflow-wrap:anywhere; margin:26px 0 0; font-weight:700; font-size:{size}
 .aenix {{ position:absolute; right:56px; bottom:44px; height:36px; }}
 .aenix svg {{ height:36px; width:auto; }}
 </style></head><body><div class="c"><div class="grain"></div>
-<svg class="art" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">{DEFS}{scene_for(motif, seed, variant, source)}</svg>
+<svg class="art" viewBox="0 0 {W} {H}" xmlns="http://www.w3.org/2000/svg">{DEFS}{scene_for(motif, seed, variant, source, key)}</svg>
 <div class="txt"><span class="pill">{eyebrow}</span><h1>{title_html}</h1></div>
 <div class="cozy">{cozy}</div><div class="aenix">{aenix}</div>
 </div></body></html>"""
 
 
 
-def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy", sub=None):
+def render(title, eyebrow, motif, out_jpg, seed=0, variant=0, source="legacy", sub=None, key=None):
     with tempfile.TemporaryDirectory() as tmp:
         page, png = os.path.join(tmp, "cover.html"), os.path.join(tmp, "cover.png")
         with open(page, "w", encoding="utf-8") as fh:
-            fh.write(html(title, eyebrow, motif, seed, variant, source, sub))
+            fh.write(html(title, eyebrow, motif, seed, variant, source, sub, key))
         cmd = [_chrome(), "--headless=new", "--disable-gpu", "--hide-scrollbars", "--force-device-scale-factor=1",
                f"--window-size={W},{H}", "--allow-file-access-from-files", f"--screenshot={png}",
                "--virtual-time-budget=2000", "file://" + page]
@@ -692,16 +704,17 @@ def main():
                     continue
             elif cover and not (regen and owned):
                 continue
-            posts.append((lang, out_dir, prefix, path, fm_text, fm, body, slug, key, cover, owned, title, motif, variant or 0))
+            scene_key = post_scenes.DE_TO_EN.get(slug, key) if lang == "de" else slug
+            posts.append((lang, out_dir, prefix, path, fm_text, fm, body, slug, key, cover, owned, title, motif, variant or 0, scene_key))
     missing = only - {p[7] for p in posts}
     if missing:
         print("no such post or skipped: " + ", ".join(sorted(missing)))
 
-    for lang, out_dir, prefix, path, fm_text, fm, body, slug, key, cover, owned, title, motif, variant in posts:
+    for lang, out_dir, prefix, path, fm_text, fm, body, slug, key, cover, owned, title, motif, variant, scene_key in posts:
         seed = int(hashlib.sha1(key.encode()).hexdigest()[:8], 16)
         out = os.path.join(out_dir, slug + ".jpg")
         web_path = f"{prefix}/{slug}.jpg"
-        render(title, eyebrow_for(fm, title, motif, lang), motif, out, seed, variant, source_label(title))
+        render(title, eyebrow_for(fm, title, motif, lang), motif, out, seed, variant, source_label(title), key=scene_key)
         if cover != web_path:
             _set_cover(path, fm_text, body, web_path)
             old = os.path.join(ROOT, "static", cover.lstrip("/")) if owned else None
