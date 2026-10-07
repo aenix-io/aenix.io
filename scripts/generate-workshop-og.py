@@ -33,6 +33,16 @@ CARDS = [
      "Paris · 19 octobre 2026",
      "Quitter VMware pour l\u2019open source\u00a0: atelier pratique",
      "construit sur Cozystack (CNCF)"),
+    ("og-workshop-europe-en",
+     "Europe · October–November 2026",
+     "Migrating off VMware to open source: a hands-on workshop"),
+    ("og-workshop-usa-en",
+     "United States · November–December 2026",
+     "Migrating off VMware to open source: a hands-on workshop"),
+    ("og-tour-2026-en",
+     "Europe · United States · Oct–Dec 2026",
+     "Meet Timur Tukaev on the Cozystack Tour 2026",
+     "book a meeting, a talk or a coffee"),
 ]
 
 CHROME_CANDIDATES = [

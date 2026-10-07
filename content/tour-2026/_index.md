@@ -6,7 +6,7 @@ layout: "event-landing"
 page_type: "flag-page"
 primary_keyword: "cozystack tour 2026"
 secondary_keywords: ["meet timur tukaev", "cozystack maintainer talk", "open source business model talk", "cncf project talk", "kubernetes ai gpu talk"]
-images: ["img/og/og-workshop-en.png?v=2"]
+images: ["img/og/og-tour-2026-en.png"]
 hero_eyebrow: "Europe and the United States · 18 October – 11 December 2026"
 hero_title: "Meet me on the road: sixteen cities, eight weeks"
 hero_tagline: "I'm Timur Tukaev, a Cozystack maintainer and co-founder of Ænix. This autumn I travel through Europe and the US for NVIDIA GTC, KubeCon and our hands-on workshops — and every hour in between is open. Pick a slot in my calendar, or write to me and we'll plan it together."

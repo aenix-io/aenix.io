@@ -6,7 +6,7 @@ layout: "event-landing"
 region_slug: "us"
 primary_keyword: "vmware migration workshop usa"
 secondary_keywords: ["vmware alternative usa", "vmware exit training", "open source virtualization workshop", "cozystack training", "gpu ai platform workshop", "sovereign cloud usa"]
-images: ["img/og/og-workshop-en.png?v=2"]
+images: ["img/og/og-workshop-usa-en.png"]
 hide_child_cards: true
 hero_eyebrow: "United States · November–December 2026 · six cities"
 hero_title: "Build your own cloud: replace VMware — then run AI and GPUs on it"
