@@ -1,0 +1,274 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">Sovereign-AI-Entscheidungsleitfaden</span>
+    <span class="versionline">Ænix · aenix.io · v1.1 — Oktober 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">Sovereign AI Decision Guide</h1>
+  <p class="cover__subtitle">Sieben Entscheidungen für den Aufbau einer KI-Infrastruktur, die Souveränität, Auditierbarkeit und regulatorische Vorgaben für regulierte Workloads erfüllt.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">Für CTOs, Heads of AI/ML &amp; Verantwortliche für Datensouveränität · aenix.io</div>
+  <p class="cover__strapline"><b>Sieben Entscheidungen, vier Referenzarchitekturen, GPU-Sizing-Tabellen.</b> v1.1 — Oktober 2026.</p>
+</section>
+
+<p class="lead">Dieser Leitfaden führt in fester Reihenfolge durch sieben Entscheidungen für die Architektur einer KI-Infrastruktur für regulierte Workloads. Er kombiniert einen Entscheidungsbaum mit vertiefenden Abschnitten je Entscheidung, vier Referenzarchitekturen und GPU-Sizing-Tabellen für gängige Workloads. Die Zahlen sind grobe Betriebsschätzungen zum Stand des Versionsdatums; validieren Sie sie vor der Kapazitätsfestlegung anhand realer Werte.</p>
+
+<h1 class="doc-h" style="margin-top:6mm">Master-Entscheidungsbaum</h1>
+
+<p class="lead">Durchlaufen Sie die sieben Entscheidungen der Reihe nach. Jede Entscheidung grenzt die Architektur ein; frühere Entscheidungen schränken spätere ein. Die meisten Unternehmensprojekte stoßen auf mehrere Auslöser gleichzeitig — wählen Sie den bindendsten und lagern Sie die übrigen darauf auf.</p>
+
+<ol class="howto">
+  <li><b>Auslöser</b> — Was ist Ihr Auslöser für souveräne KI? Regulierte Daten / Inferenz-Ökonomie / Auditierbarkeitsvorgabe / Air-Gap-Anforderung.</li>
+  <li><b>Regulierung</b> — Welche Regulierung(en) gelten? DORA (Finanzsektor) / NIS2 (wesentliche Einrichtungen) / Sektoral / Nationales Souveränitätsmandat.</li>
+  <li><b>Modellklasse</b> — Open-Weight (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma) oder proprietär (Closed-Weight, herstellerlizenziert)? Souveränitäts- und Auditierbarkeitsanforderungen führen in der Regel zu Open-Weight.</li>
+  <li><b>Hardware</b> — Welche GPU-Klasse? H100/H200 / A100 / L40S / Blackwell (B100/B200) / CPU-only oder kleinere Beschleuniger.</li>
+  <li><b>Mandantenfähigkeit</b> — Single-Tenant / Multi-Tenant über Tenant-CRD (gemeinsamer Cluster, logisch isoliert) / Cluster-pro-Mandant (strikte Isolation).</li>
+  <li><b>Souveränität</b> — Standard (In-Region-Basislinie) / Strikt (dokumentierte Schlüsselverwahrung, Lieferantentransparenz, Audit-isoliert) / Air-Gapped (offline, Updates nur out-of-band).</li>
+  <li><b>Betrieb</b> — Kundenbetrieben / Anbieterbetrieben (von Ænix verwaltet) / Hybrid (Control Plane beim Anbieter + Data Plane beim Kunden oder umgekehrt).</li>
+</ol>
+
+<h1 class="doc-h" style="margin-top:9mm">Die sieben Entscheidungen</h1>
+
+<h3 class="subsec">Entscheidung 1 — Auslöser</h3>
+<p class="question">Was ist Ihr primärer Auslöser für souveräne KI? Mehrere können zutreffen; der primäre Auslöser bestimmt die Architektur.</p>
+
+<table class="flow dense">
+  <thead><tr><th>Option</th><th>Kompromisse</th><th>Wann wählen</th><th>Wechselwirkung mit anderen Entscheidungen</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Regulierte Daten</td><td>Dürfen die Rechtsordnung oder die Anbieterumgebung nicht verlassen. Erzwingt Verschlüsselung, Schlüsselverwahrung, Auditierbarkeit.</td><td>Regulierte Branche (Finanzwesen, öffentlicher Sektor, Gesundheitswesen). Workload verarbeitet personenbezogene oder geschäftskritische Daten.</td><td>Verschiebt Entscheidung 6 (Souveränität) Richtung „Strikt" oder „Air-Gapped".</td></tr>
+    <tr><td class="label">Inferenz-Ökonomie</td><td>Inferenz im großen Maßstab wird auf eigener Infrastruktur günstiger als per Token über eine API.</td><td>Hochvolumige Inferenz (Millionen Tokens/Tag oder dauerhafte Produktionslast). RAG-lastige Anwendungen.</td><td>Entscheidung 4 (Hardware) auf Inferenz optimiert (L40S, H100) statt auf Training.</td></tr>
+    <tr><td class="label">Auditierbarkeitsvorgabe</td><td>Vollständige Reproduzierbarkeit nötig — Modell + Daten + Prompt + Antwort unveränderlich protokolliert.</td><td>Regulierte Entscheidungsfindung (Kreditvergabe, Versicherungsunderwriting, Verwaltungsabläufe).</td><td>Entscheidung 7 (Betrieb) Richtung kundenbetrieben oder striktes Hybrid.</td></tr>
+    <tr><td class="label">Air-Gap-Anforderung</td><td>Workload muss offline laufen — kein Call-home des Anbieters, keine SaaS-Abhängigkeiten.</td><td>Souveräne Cloud, isolierte Industrieumgebungen.</td><td>Entscheidung 6 auf „Air-Gapped" festgelegt. Entscheidung 3 auf Open-Weight festgelegt.</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p>Die meisten Unternehmens-KI-Projekte entdecken zwei oder drei Auslöser gleichzeitig. Wählen Sie den bindendsten — jenen, der für sich allein bereits ein souveränes Deployment erzwingen würde. Dieser bestimmt die Architektur; die übrigen werden darauf aufgesetzt.</p>
+</div>
+
+<h3 class="subsec">Entscheidung 2 — Regulierung</h3>
+<p class="question">Welche Regulierung oder welcher regulatorische Rahmen gilt für Ihren KI-Workload?</p>
+
+<table class="flow dense">
+  <thead><tr><th>Option</th><th>Kompromisse</th><th>Wann wählen</th><th>Wechselwirkung mit anderen Entscheidungen</th></tr></thead>
+  <tbody>
+    <tr><td class="label">DORA (Verordnung (EU) 2022/2554)</td><td>Betriebliche Resilienz, IKT-Drittparteirisiko, Lieferanten-Exit. Architekturseitig anspruchsvolle Erwartungen.</td><td>Regulierte Finanzeinheit oder IKT-Drittdienstleister, der eine solche bedient.</td><td>Verschiebt Entscheidung 7 Richtung kundenbetrieben oder vertraglich strikt anbieterbetrieben. Zwingt Entscheidung 5 zu nachweisbarer Isolation.</td></tr>
+    <tr><td class="label">NIS2 (Richtlinie (EU) 2022/2555)</td><td>Risikomanagement, Meldepflichten bei Vorfällen, Lieferkette. Breiter Anwendungsbereich (Energie, Verkehr, Telekommunikation, Gesundheit, öffentliche Verwaltung usw.).</td><td>Wesentliche oder wichtige Einrichtung gemäß nationaler Umsetzung.</td><td>Beeinflusst Entscheidung 6 (Souveränität) und Entscheidung 7 (Betrieb) erheblich.</td></tr>
+    <tr><td class="label">Sektoral (z. B. nationale Gesundheitsdatengesetze, besondere Kategorien nach DSGVO)</td><td>Domänenspezifische Datenklassifizierung und Verarbeitungsbeschränkungen.</td><td>Gesundheitswesen, Recht, bestimmte öffentliche Dienste.</td><td>Erzwingt oft Entscheidung 6 zu „Strikt"; Entscheidung 4 (Hardware) unberührt.</td></tr>
+    <tr><td class="label">Nationales Souveränitätsmandat</td><td>Länderspezifisch (z. B. GAIA-X-Mitgliedschaft, Einstufung als souveräne Cloud). Oft am restriktivsten.</td><td>Öffentlicher Sektor, kritische nationale Infrastruktur.</td><td>Entscheidung 6 auf „Strikt" oder „Air-Gapped" festgelegt; Entscheidung 7 typischerweise kundenbetrieben.</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p>Mehrere Regulierungen greifen häufig gleichzeitig. Eine Bank im Anwendungsbereich von DORA fällt in der Regel auch unter die DSGVO, unter sektorale nationale Aufsichtserwartungen und — bei EU-übergreifender Tätigkeit — unter NIS2. Die Architektur muss die restriktivste Vorgabe erfüllen, nicht den Durchschnitt.</p>
+</div>
+
+<h3 class="subsec">Entscheidung 3 — Modellklasse</h3>
+<p class="question">Open-Weight oder proprietär?</p>
+
+<table class="flow dense">
+  <thead><tr><th>Option</th><th>Kompromisse</th><th>Wann wählen</th><th>Wechselwirkung mit anderen Entscheidungen</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Open-Weight (Llama, Mistral, Qwen, DeepSeek, Phi, Gemma usw.)</td><td>Kunde kontrolliert die Gewichte; kann feintunen; vollständig reproduzierbar; auditierbar. Lizenzbedingungen variieren (Llama-Lizenz vs. Apache 2.0 vs. andere — je Modell prüfen).</td><td>Souveränität oder Auditierbarkeit ist bindend. Kunde will Eigentum am Fine-Tuning. Kostenberechenbarkeit.</td><td>Entscheidung 4 (Hardware) auf das gewählte Modell dimensioniert; Entscheidung 6 (Souveränität) vollständig erreichbar.</td></tr>
+    <tr><td class="label">Proprietär (Closed-Weight, herstellerlizenziert, z. B. GPT-4-Familie, Claude, Gemini)</td><td>Höhere Spitzenqualität bei bestimmten Aufgaben (heute). Anbieter kontrolliert Gewichte und Updates. Eingeschränktes Fine-Tuning. Auditierbarkeit begrenzt.</td><td>Qualitätsanforderungen von Open-Weight noch nicht erfüllt. Workload nicht im Regulierungsbereich.</td><td>Entscheidung 6 (Souveränität) stark eingeschränkt; Entscheidung 7 (Betrieb) selten kundenkontrolliert.</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p>Die Qualität von Open-Weight-Modellen hat den Abstand zu proprietären Modellen 2024–2026 deutlich verringert. Für die meisten Unternehmens-Workloads (RAG, Code-Unterstützung, strukturierte Generierung, Klassifizierung, Zusammenfassung) liefern Open-Weight-Modelle ab 70B produktionsreife Ergebnisse. Proprietäre Modelle führen weiterhin bei bestimmten Frontier-Aufgaben; je Anwendungsfall prüfen.</p>
+</div>
+
+<h3 class="subsec">Entscheidung 4 — Hardware</h3>
+<p class="question">Welche GPU-Klasse — dimensioniert für welche Workloads?</p>
+
+<table class="flow dense">
+  <thead><tr><th>Option</th><th>Am besten für</th><th>Ungefähre Dimensionierung</th><th>Kompromisse</th></tr></thead>
+  <tbody>
+    <tr><td class="label">NVIDIA H100 / H200 (80 GB / 141 GB HBM)</td><td>Flaggschiff-Inferenz, Fine-Tuning großer Modelle, hoher Produktionsdurchsatz.</td><td>7B–70B Inferenz komfortabel; 70B–405B mit Multi-GPU-Sharding.</td><td>Höchste Kosten, längste Lieferzeit. Für Produktion im großen Maßstab gerechtfertigt.</td></tr>
+    <tr><td class="label">NVIDIA A100 (40 GB / 80 GB)</td><td>Allzweck; kosteneffizient für 7B–70B Inferenz und kleines Fine-Tuning.</td><td>7B–13B komfortabel auf einer GPU; 70B mit Multi-GPU.</td><td>Ältere Generation; bessere Verfügbarkeit als H100. Gutes Preis-Leistungs-Verhältnis bei Inferenz.</td></tr>
+    <tr><td class="label">NVIDIA L40S (48 GB)</td><td>Kosteneffiziente Inferenz, besonders für 7B–30B in Produktion.</td><td>7B–13B komfortabel; 70B erfordert sorgfältiges Sharding.</td><td>Kein NVLink — nicht für das Training großer Modelle geeignet. Hervorragende Inferenz-Kosten je Token.</td></tr>
+    <tr><td class="label">NVIDIA Blackwell (B100/B200)</td><td>Größte Trainings- und Inferenz-Workloads (ab 2026).</td><td>405B+ Inferenz bei passender Clustergröße.</td><td>Neueste Generation; Verfügbarkeit begrenzt.</td></tr>
+    <tr><td class="label">CPU-only / kleinere Beschleuniger (z. B. Intel Gaudi, AMD MI-Serie)</td><td>Kleine Modelle (≤7B), RAG-Retrieval, Embedding-Erzeugung, Batch-Inferenz.</td><td>Llama 7B Q4 auf CPU ist tragfähig; Embeddings auf CPU funktionieren gut.</td><td>Geringerer Durchsatz. Nützlich für Randworkloads und Souveränitäts-Sonderfälle (kein NVIDIA). In Cozystack stehen Nicht-NVIDIA-Beschleuniger nur als PCI-Passthrough an VMs zur Verfügung.</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p>Gemischte Hardware-Flotten sind üblich. L40S für kontinuierliche Inferenz plus H100 für Fine-Tuning-Spitzen ist ein häufiges Muster. In Cozystack werden NVIDIA-Rechenzentrums-GPUs über den NVIDIA GPU Operator unterstützt: Passthrough an VMs, NVIDIA vGPU (mit Ihrer NVIDIA-vGPU-Lizenz) und Sharing über HAMi. MIG und Time-Slicing stehen auf der Roadmap.</p>
+</div>
+
+<h3 class="subsec">Entscheidung 5 — Mandantenfähigkeit</h3>
+<p class="question">Teilen sich mehrere Workloads, Kunden oder Geschäftsbereiche die Infrastruktur — und wie strikt sind sie isoliert?</p>
+
+<table class="flow dense">
+  <thead><tr><th>Option</th><th>Kompromisse</th><th>Wann wählen</th><th>Wechselwirkung mit anderen Entscheidungen</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Single-Tenant</td><td>Am einfachsten. Eine Workload-Klasse pro Cluster. Höchste Kosten je Workload.</td><td>Einzelner kritischer Workload; keine kundenübergreifende Teilung nötig; einfachster Weg.</td><td>Entscheidung 6 (Souveränität) unkompliziert.</td></tr>
+    <tr><td class="label">Multi-Tenant über Tenant-CRD (Cozystack-Muster)</td><td>Gemeinsame Infrastruktur plus logische Isolation: Namespace, NetworkPolicy, Identität und Storage-Klasse je Mandant. Kosteneffizient.</td><td>Mehrere Workloads, Geschäftsbereiche oder Kunden, die effizientes Ressourcen-Pooling mit nachweisbarer Isolation benötigen.</td><td>Am flexibelsten über alle anderen Entscheidungen. Für die meisten Fälle empfohlen.</td></tr>
+    <tr><td class="label">Cluster-pro-Mandant</td><td>Strikte Isolation auf Cluster-Ebene. Höchster Betriebsaufwand. Höchste Kosten.</td><td>Feindliche Mandantenfähigkeit; souveräner Kunde mit Anspruch auf eigenen Cluster; regulatorische Erwartung physischer/virtueller Trennung.</td><td>Betrieblich aufwendig — Cluster-Lebenszyklus automatisieren (Cluster API / Cozystack-Provisionierung).</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p>Das Tenant-CRD ist das am besten skalierbare Muster, wenn Isolation logisch statt physisch sein darf. Es unterstützt Identitäts-, Netzwerk-, Storage- und Observability-Isolation je Mandant auf gemeinsamer Infrastruktur. Prüfen Sie die Erwartung der Regulierung, bevor Sie sich auf „Cluster-pro-Mandant" festlegen — es ist selten wörtlich vorgeschrieben.</p>
+</div>
+
+<h3 class="subsec">Entscheidung 6 — Souveränität</h3>
+<p class="question">Wie strikt muss das Deployment einschränken, wer den Workload einsehen, per Schlüssel kontrollieren, auditieren und ändern kann?</p>
+
+<table class="flow dense">
+  <thead><tr><th>Option</th><th>Kompromisse</th><th>Wann wählen</th><th>Wechselwirkung mit anderen Entscheidungen</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Standard</td><td>Deployment in der Region (z. B. nur EU). Anbieter/Betreiber kann verwalten; kundenkontrolliert, wo sinnvoll.</td><td>Workload ohne striktes Souveränitätsmandat; kostensensitiv.</td><td>Mit den meisten anderen Optionen kompatibel.</td></tr>
+    <tr><td class="label">Strikt</td><td>Schlüsselverwahrung für jede datentragende Schicht dokumentiert, mit Schlüsseln in Ihrer Hand, wo die Plattform es unterstützt (z. B. Volume-Verschlüsselung mit einer Passphrase, die Sie verwahren). Lieferantentransparenz bis zur zweiten Stufe. Audit-isolierte Umgebung. Zugriff des Anbieterpersonals protokolliert und zeitlich begrenzt.</td><td>Regulierte Workloads (DORA, NIS2). Souveräne Cloud-Kunden. Workloads mit nationalem Mandat.</td><td>Entscheidung 7 typischerweise kundenbetrieben oder hybrid mit striktem Vertrag.</td></tr>
+    <tr><td class="label">Air-Gapped</td><td>Offline-Betrieb. Kein Call-home des Anbieters. Updates über signierte Bundles, out-of-band ausgeliefert.</td><td>Isolierte Industrieumgebungen, aufsichtsrechtlich isolierte Workloads des öffentlichen Sektors.</td><td>Zwingt Entscheidung 3 zu Open-Weight, Entscheidung 7 zu kundenbetrieben. Hoher Betriebsaufwand.</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p>Die Schlüsselverwahrung muss für alle datentragenden Schichten konzipiert werden — Primärspeicher, Replikate, Backups, Observability-Daten, Modellgewichte im Ruhezustand und Trainingsdaten-Caches. Eine häufige Lücke sind verschlüsselte Produktionsdaten, während die Backups durch anbieterkontrollierte Schlüssel geschützt sind. In Cozystack ist die Volume-Verschlüsselung im Ruhezustand optional und nutzt eine Passphrase, die Sie verwahren; prüfen Sie jede weitere Schicht ausdrücklich.</p>
+</div>
+
+<h3 class="subsec">Entscheidung 7 — Betrieb</h3>
+<p class="question">Wer betreibt die Plattform im Tagesgeschäft?</p>
+
+<table class="flow dense">
+  <thead><tr><th>Option</th><th>Kompromisse</th><th>Wann wählen</th><th>Wechselwirkung mit anderen Entscheidungen</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Kundenbetrieben</td><td>Kunde kontrolliert alles. Höchste Souveränität. Höchster interner Kompetenzbedarf.</td><td>Starkes Platform-Engineering-Team vorhanden; Air-Gap- oder strikte Souveränitätsanforderung; langfristiges Ziel der Eigenständigkeit.</td><td>Mit allen anderen Optionen kompatibel. Langsamster Weg zur ersten Produktion.</td></tr>
+    <tr><td class="label">Anbieterbetrieben (von Ænix verwaltet)</td><td>Ænix betreibt die Plattform unter SLA. Kunde konzentriert sich auf Workloads. Schneller in Produktion.</td><td>Kein internes Plattformteam für KI-Infrastruktur; Produktionskapazität rasch gewünscht; Souveränität über strikte vertragliche und technische Kontrollen erreichbar.</td><td>Schränkt die Souveränitätsoptionen von Entscheidung 6 ein, sofern Vertrag und Architektur Schlüsselverwahrung und Audit-Export nicht für jede Schicht festlegen.</td></tr>
+    <tr><td class="label">Hybrid</td><td>Am häufigsten in regulierten Branchen: anbieterbetriebene Control Plane plus kundenbetriebene Data Plane (oder umgekehrt). Klare Schnittstelle vertraglich definiert.</td><td>Kunde will Kontrolle über Daten und Workloads behalten, aber den Betrieb beschleunigen. Häufig im DORA/NIS2-Kontext.</td><td>Am flexibelsten für regulierte Workloads. Erfordert vorab eine klare Schnittstellendefinition.</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p>Hybrid ist für regulierte Workloads oft die richtige Antwort. Der Kunde behält die Kontrolle über Daten, Identität, Verschlüsselungsschlüssel und Workload-Definitionen (auditierbar, exportierbar). Der Anbieter betreibt das Plattform-Substrat im vertraglichen Rahmen. Beide Seiten wirken bei der Vorfallbehandlung gemäß DORA Artikel 17–19 und NIS2 Artikel 23 mit.</p>
+</div>
+
+<h1 class="doc-h newpage">Vier Referenzarchitekturen</h1>
+
+<p class="lead">Vier gängige Muster, vom kleinsten souveränen Fußabdruck bis zum maximal souveränen Air-Gapped-Deployment. Ordnen Sie Ihre sieben Entscheidungen dem nächstliegenden Muster zu.</p>
+
+<div class="layer">
+  <h4>Architektur 1 — Single-Tenant-Inferenzcluster</h4>
+  <ul class="bullets">
+    <li>Ein Kubernetes-Cluster, ein Kunde, eine Workload-Klasse (z. B. ein RAG-gestützter Chatbot).</li>
+    <li>Komponenten: 4–8 Inferenzknoten (L40S- oder H100-GPU), 2 Control-Plane-Knoten, gemeinsamer Speicher (LINSTOR), Ingress (Cilium), Observability (VictoriaMetrics + VictoriaLogs).</li>
+    <li>Einzelne Mandantengrenze auf Cluster-Ebene.</li>
+  </ul>
+  <p><b>Fußabdruck:</b> Kleinster tragfähiger Fußabdruck für souveräne Inferenz. Etwa 4–8 GPU-Knoten. Ein bis zwei Platform-Engineers in Teilzeit.</p>
+</div>
+<div class="layer">
+  <h4>Architektur 2 — Multi-Tenant-Inferenzflotte (Tenant-CRD-Muster)</h4>
+  <ul class="bullets">
+    <li>Ein Cozystack-Cluster, mehrere Tenant-CRDs (jeweils = isolierter Namespace, NetworkPolicy, Storage-Klasse, Identität und Quota).</li>
+    <li>8–32 GPU-Knoten, vom Scheduler über die Mandanten hinweg geteilt.</li>
+    <li>Observability-Ansichten je Mandant; mandantenübergreifende Nicht-Teilung durch NetworkPolicy erzwungen.</li>
+  </ul>
+  <p><b>Fußabdruck:</b> Skalierbare Multi-Kunden-Inferenz. Kosteneffizientes Pooling. Logische Isolation je Mandant nachweisbar.</p>
+</div>
+<div class="layer">
+  <h4>Architektur 3 — Inferenz + Fine-Tuning + RAG</h4>
+  <ul class="bullets">
+    <li>Heterogener Cluster: H100/H200-Knoten für Fine-Tuning; L40S für kontinuierliche Inferenz; CPU-Knoten für RAG-Retrieval und Embedding.</li>
+    <li>Vektor-DB (z. B. pgvector über den PostgreSQL-Operator oder Qdrant) für RAG.</li>
+    <li>Objektspeicher (S3-kompatibel, MinIO oder ähnlich) für Trainingsdaten und Modell-Checkpoints.</li>
+  </ul>
+  <p><b>Fußabdruck:</b> Full-Stack-Muster für Organisationen, die sowohl Fine-Tuning als auch kontinuierliche Inferenz betreiben. Speicher plus Vektor-DB plus heterogene GPU.</p>
+</div>
+<div class="layer">
+  <h4>Architektur 4 — Air-Gapped souveränes Deployment</h4>
+  <ul class="bullets">
+    <li>Isoliertes Netzwerk. Kein Internet-Egress. Updates über signiertes Bundle, importiert über eine Air-Gap-Bridge.</li>
+    <li>Open-Weight-Modell (Llama / Qwen / Mistral). Eigenständige Registry (Harbor oder ähnlich). Selbst gehostete Observability.</li>
+    <li>Volume-Verschlüsselung im Ruhezustand mit einer Passphrase, die Sie verwahren. Alle Audit-Logs in ein SIEM unter Ihrer Kontrolle exportiert.</li>
+  </ul>
+  <p><b>Fußabdruck:</b> Für Air-Gapped-souveräne Deployments. Hoher Betriebsaufwand; maximale Souveränität.</p>
+</div>
+
+<h1 class="doc-h newpage">Sizing-Referenz</h1>
+
+<div class="callout" style="margin:0 0 4mm 0">
+  <p>Die folgenden Zahlen sind grobe Betriebsschätzungen zum Stand des Versionsdatums. Validieren Sie sie vor der Kapazitätsfestlegung anhand realer Werte. Aktualisieren Sie sie quartalsweise, da sich die Modell- und Hardwarelandschaft weiterentwickelt.</p>
+</div>
+
+<h3 class="subsec">Sizing je Modell (Open-Weight, FP16-Basislinie; niedriger mit Quantisierung)</h3>
+
+<table class="flow dense">
+  <thead><tr><th>Modellfamilie</th><th>Größe</th><th>Min. GPU-Speicher (Einzelkarte)</th><th>Inferenz-TPS-Referenz</th><th>Anmerkungen</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Llama-3-Familie</td><td>7B</td><td>16 GB (FP16) / 6 GB (Q4)</td><td>~80–120 TPS auf L40S</td><td>Einzelkarte auf den meisten modernen GPUs tragfähig</td></tr>
+    <tr><td class="label">Llama-3-Familie</td><td>70B</td><td>140 GB (FP16) / 40 GB (Q4)</td><td>~25–40 TPS auf H100 (FP16)</td><td>Multi-GPU-Sharding für FP16; Q4 auf einer H100 tragfähig</td></tr>
+    <tr><td class="label">Llama-3-Familie</td><td>405B</td><td>800 GB (FP16)</td><td>~15–20 TPS auf 8×H200</td><td>Produktionsmaßstab; Multi-Node üblich</td></tr>
+    <tr><td class="label">Mistral-Familie</td><td>7B / Mixtral 8×7B</td><td>16 / 90 GB</td><td>ähnlich wie Llama-Äquivalente</td><td>MoE: weniger aktive Parameter als insgesamt</td></tr>
+    <tr><td class="label">Qwen-Familie</td><td>7B / 14B / 72B / 110B</td><td>ähnlich wie Llama</td><td>ähnlich</td><td>Stark mehrsprachig; je Sprache prüfen</td></tr>
+    <tr><td class="label">DeepSeek-Familie</td><td>7B / 67B / V3 (685B)</td><td>ähnlich wie Llama; V3 benötigt mindestens einen 8×H100-Cluster</td><td>variiert</td><td>Neuer; wettbewerbsfähig bei Qualität/Kosten</td></tr>
+    <tr><td class="label">Phi-Familie (Microsoft)</td><td>3,8B / 14B</td><td>8 / 28 GB</td><td>~150+ TPS auf L40S</td><td>Starke Small-Model-Option für CPU-arme Szenarien</td></tr>
+    <tr><td class="label">Gemma-Familie (Google)</td><td>2B / 9B / 27B</td><td>4 / 20 / 56 GB</td><td>ähnlich wie Llama 7B / 70B</td><td>Small-Model-Leistung, permissive Lizenz</td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">Hardware-Kombinationen für typische Workloads</h3>
+
+<table class="flow dense">
+  <thead><tr><th>Workload-Profil</th><th>Empfohlene Hardware</th><th>Warum</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Kontinuierliche Inferenz, 7B–13B, Einzelkunde</td><td>4× L40S-Knoten</td><td>Kosteneffizient, Einzelkarten-Serving, einfach linear skalierbar</td></tr>
+    <tr><td class="label">Kontinuierliche Inferenz, 70B, Einzelkunde</td><td>2× H100 (NVLink) pro Replik, 2–4 Repliken</td><td>Gesharded Inferenz; starker Durchsatz</td></tr>
+    <tr><td class="label">Multi-Tenant-Inferenzflotte, gemischte Modellgrößen</td><td>Heterogen: 8× L40S + 4× H100, je Workload gescheduled</td><td>Tenant-CRD weist je Workload-Klasse zu; hohe Pool-Auslastung</td></tr>
+    <tr><td class="label">Fine-Tuning 7B–13B (LoRA / QLoRA)</td><td>1–2× H100 pro Fine-Tuning-Job</td><td>Speicher und Bandbreite für Gradienten-Updates</td></tr>
+    <tr><td class="label">Fine-Tuning 70B (voll / partiell)</td><td>4–8× H100- / H200-Cluster</td><td>Multi-GPU und Multi-Node je nach Technik</td></tr>
+    <tr><td class="label">Nur RAG-Retrieval + Embedding</td><td>CPU + kleine GPU (L40S / A100)</td><td>Embeddings auf CPU tragfähig; Retrieval ist I/O-gebunden</td></tr>
+    <tr><td class="label">Air-Gapped souveränes Deployment</td><td>Open-Weight-Familie + On-Prem H100/L40S; vollständig selbst gehosteter Stack</td><td>Herstellerunabhängigkeit; maximale Souveränität</td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p>Cozystack (CNCF, Apache 2.0) stellt die Plattformschicht bereit (Tenant-CRD-Mandantenfähigkeit, GPU-Scheduling, Observability, Identität, Storage). Die Ænix AI Platform baut darauf auf; Ænix ergänzt ein Support-Abonnement und Engineering-Leistungen für den Betrieb von GPU-Flotten.</p>
+</div>
+
+<h1 class="doc-h" style="margin-top:9mm">Häufige Fallstricke</h1>
+
+<ul class="cps">
+  <li><b>„Souverän" mit „Air-Gapped" verwechseln.</b> Die meisten regulierten Workloads brauchen strikte Souveränität (Schlüsselverwahrung, Lieferantentransparenz, Audit-Isolation) — aber kein vollständiges Air-Gap. Der Betriebsaufwand eines Air-Gaps ist erheblich; wählen Sie ihn nur, wenn wirklich erforderlich.</li>
+  <li><b>Für Spitzenlast statt Dauerlast dimensionieren.</b> Produktionsinferenz läuft oft bei 30–60 % der Spitzenlast. Dimensionieren Sie für die Dauerlast mit Burst-Reserve (Autoscaling), nicht für die Spitze; andernfalls sind die GPU-Kosten je Token nicht wettbewerbsfähig.</li>
+  <li><b>Die Datenseite vergessen.</b> Vektor-DBs, Trainingsdatenspeicher und Observability-Daten brauchen alle Souveränität, Schlüsselkontrolle und Kapazitätsplanung. Häufig werden GPUs budgetiert und der Speicher vergessen.</li>
+  <li><b>Evaluierungen überspringen.</b> Die Auswahl von Open-Weight-Modellen sollte durch aufgabenspezifische Evaluierungen getrieben sein, nicht durch Schlagzeilen-Benchmarks. Bauen Sie eine kleine Evaluierungssuite für Ihre Workloads auf, bevor Sie sich auf eine Modellfamilie festlegen.</li>
+  <li><b>Abhängigkeit von einem einzelnen GPU-Anbieter.</b> NVIDIA dominiert 2026, doch eine Zweitquellen-Planung ist für Souveränität und Lieferkontinuität wichtig. Prüfen Sie zumindest, ob Open-Weight-Modelle auf alternativen Beschleunigern laufen (z. B. AMD MI300, Intel Gaudi).</li>
+  <li><b>Fine-Tuning-Betrieb unterschätzen.</b> Fine-Tuning ist ein Workflow, kein einmaliges Ereignis — Datenversionierung, Modell-Registry, Evaluierungs-Harness, Deployment-Pipeline. Planen Sie den Workflow, bevor Sie die Fine-Tuning-Hardware dimensionieren.</li>
+</ul>
+
+<h1 class="doc-h newpage">Arbeitsblatt: Entscheidungsübersicht</h1>
+
+<p class="lead">Halten Sie je Entscheidung Ihre gewählte Option und die Begründung fest. Ordnen Sie Ihr Profil anschließend der nächstliegenden Referenzarchitektur zu.</p>
+
+<table class="blank">
+  <thead><tr><th style="width:6%">#</th><th style="width:22%">Entscheidung</th><th style="width:30%">Ihre Wahl</th><th>Warum?</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td class="label">Auslöser</td><td></td><td></td></tr>
+    <tr><td>2</td><td class="label">Regulierung</td><td></td><td></td></tr>
+    <tr><td>3</td><td class="label">Modellklasse</td><td></td><td></td></tr>
+    <tr><td>4</td><td class="label">Hardware</td><td></td><td></td></tr>
+    <tr><td>5</td><td class="label">Mandantenfähigkeit</td><td></td><td></td></tr>
+    <tr><td>6</td><td class="label">Souveränität</td><td></td><td></td></tr>
+    <tr><td>7</td><td class="label">Betrieb</td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<p><b>Nächstliegende Referenzarchitektur:</b> Architektur 1 (Single-Tenant-Inferenz) · Architektur 2 (Multi-Tenant-Flotte) · Architektur 3 (Inferenz + Fine-Tuning + RAG) · Architektur 4 (Air-Gapped souverän).</p>
+<p><b>Offene Fragen für die Teams aus Plattform, Sicherheit und Compliance:</b> Listen Sie die Annahmen, von denen jede Entscheidung abhängt, die noch zu bestätigenden Erwartungen der Regulierung sowie die datenseitigen Kontrollen (Schlüssel, Backups, Observability), die noch nicht konzipiert sind.</p>
+
+<h1 class="doc-h newpage">Nächste Schritte</h1>
+
+<div class="option"><b>Option 1 — Selbst mit diesem Leitfaden planen.</b> Arbeiten Sie ihn mit Ihrem Plattform- und KI-Team durch. Halten Sie die Entscheidungen im Arbeitsblatt fest. Bringen Sie offene Fragen in Ihre nächste Planungssitzung ein.</div>
+<div class="option"><b>Option 2 — Platform Readiness Assessment mit Ænix (14 oder 28 Tage).</b> Wir prüfen Ihre Entscheidungen, validieren sie gegen die regulatorischen Anforderungen und erstellen eine Zielarchitektur-Skizze plus ein Sizing-Modell. Festpreis.</div>
+<div class="option"><b>Option 3 — Phase 2: KI-Plattform-Aufbauprojekt.</b> Mehrmonatiger Aufbau der Architektur: Cluster, GPU-Flotte, Mandantenfähigkeit, Identität, Observability, Model-Serving und Fine-Tuning-Workflow. Umfang nach dem Assessment festgelegt.</div>
+
+<div class="cta">Vereinbaren Sie ein Erstgespräch auf <span>aenix.io</span></div>
+
+<p class="lead" style="margin-top:8mm">Ænix hat Cozystack (ein CNCF-Projekt) entwickelt, pflegt es mit und baut darauf die Ænix-Plattformen für Public Cloud, Private Cloud und KI. aenix.io</p>
+
+<div class="closing">
+  <b>Ænix · aenix.io · Sovereign-AI-Entscheidungsleitfaden · v1.1 — Oktober 2026.</b> Ænix hat Cozystack entwickelt und pflegt es mit (CNCF, Apache 2.0).
+</div>

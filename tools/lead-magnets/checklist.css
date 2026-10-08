@@ -319,3 +319,26 @@ ul.bullets > li::marker { color: #01A5FF; }
   break-inside: avoid;
 }
 .closing b { color: #334155; }
+
+/* ---------- guides and worksheets (decision guide, maturity, TCO) ---------- */
+/* Long tables may run across pages; rows stay whole and the header repeats. */
+table.flow { break-inside: auto; }
+table.flow tr { break-inside: avoid; }
+table.dense { font-size: 8.4pt; }
+table.dense td { padding: 1.6mm 1.8mm; }
+table.dense th { padding: 1.6mm 1.8mm; }
+td.label { font-weight: 700; color: #0f172a; }
+td.stage { white-space: nowrap; font-weight: 700; color: #0856B0; }
+td.fill, th.fill { width: 24%; }
+td.fill { border-bottom: 0.6pt solid #cbd5e1; }
+table.blank td { height: 7mm; border-bottom: 0.6pt solid #cbd5e1; }
+table.blank tr:last-child td { border-bottom: 0.6pt solid #cbd5e1; }
+tr.total td { font-weight: 700; color: #0f172a; border-top: 0.8pt solid #cbd5e1; }
+p.question { font-style: italic; color: #475569; break-after: avoid; }
+p.score { margin: 2mm 0 5mm 0; font-weight: 700; color: #0f172a; }
+p.score .line { display: inline-block; width: 18mm; border-bottom: 0.7pt solid #64748b; margin: 0 4mm 0 1mm; }
+p.score .wide { display: inline-block; width: 90mm; border-bottom: 0.7pt solid #64748b; margin-left: 1mm; }
+p.footprint { margin-top: 1.5mm; }
+.cols3 { display: flex; gap: 4mm; margin: 2mm 0 4mm 0; break-inside: avoid; }
+.cols3 > div { flex: 1; border: 0.6pt solid #dde5ee; border-top: 2.2pt solid #01A5FF; border-radius: 1.2mm; padding: 3mm; font-size: 9pt; }
+.cols3 > div h4 { margin: 0 0 1.5mm 0; font-size: 9.6pt; color: #0856B0; }

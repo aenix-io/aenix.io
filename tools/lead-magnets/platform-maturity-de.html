@@ -1,0 +1,242 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">Platform Engineering Maturity Assessment</span>
+    <span class="versionline">Ænix · aenix.io · v1.1 — Oktober 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">Platform Engineering Maturity Assessment</h1>
+  <p class="cover__subtitle">Bewerten Sie Ihre Organisation entlang von 8 Dimensionen und 5 Reifegraden und erkennen Sie, wo sich Plattforminvestitionen am schnellsten auszahlen.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">Für Leiterinnen und Leiter von Plattform, Infrastruktur &amp; Engineering · aenix.io</div>
+  <p class="cover__strapline"><b>8 Dimensionen, 5 Reifegrade, ein Bewertungsbogen.</b> v1.1 — Oktober 2026.</p>
+</section>
+
+<h1 class="doc-h">So nutzen Sie dieses Assessment</h1>
+
+<p class="lead">Dieses Self-Assessment bewertet Ihre Platform-Engineering-Praxis anhand einer 5-stufigen Reifegradskala: Pre-Platform → Gemeinsame Infrastruktur → Self-Service-Primitive → Internal Developer Platform → Ausgereift. Es ist dasselbe Basisframework, das Ænix in seinen Platform-Readiness-Assessments verwendet, bevor eine Phase-2-Investition empfohlen wird.</p>
+
+<p class="lead">Sie können es auf drei Arten einsetzen:</p>
+
+<ul class="bullets">
+  <li><b>Self-Assessment (empfohlen für den ersten Durchlauf).</b> Eine Person — typischerweise eine Plattformleitung oder VP Engineering — bewertet in 30–45 Minuten.</li>
+  <li><b>Workshop-Assessment (empfohlen für Investitionsentscheidungen).</b> Bringen Sie 4–8 Personen aus Platform Engineering, Produkt-Engineering, Security und Ops zusammen und bewerten Sie jede Dimension gemeinsam. Uneinigkeit über den Reifegrad ist selbst diagnostisch wertvoll.</li>
+  <li><b>Baseline vor der Zusammenarbeit.</b> Bewerten Sie, bevor Sie Ænix oder eine andere Beratung hinzuziehen, und bringen Sie das Assessment zum ersten Gespräch mit.</li>
+</ul>
+
+<h3 class="plain">Die 5 Reifegrade</h3>
+<p>Dieselben fünf Reifegrade gelten einheitlich für alle acht Dimensionen.</p>
+
+<table class="coverage">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Kurzbeschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Jedes Team für sich.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>Ein zentrales Team verwaltet die gemeinsame Infrastruktur.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>Teams bedienen gängige Abläufe selbst.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>Platform-as-Product, vollständige IDP.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Kumulierende Erträge.</td></tr>
+  </tbody>
+</table>
+
+<h3 class="plain">Bewertungsregeln</h3>
+<ul class="bullets">
+  <li>Wählen Sie für jede Dimension die Stufe, die Ihren aktuellen Zustand am besten beschreibt (nicht Ihr Ziel).</li>
+  <li>Liegen Sie zwischen zwei Stufen, wählen Sie die niedrigere Zahl — es sei denn, der Übergang ist bereits weit fortgeschritten (dann die höhere).</li>
+  <li>Halbe Werte sind nur für den Durchschnitt zulässig — einzelne Dimensionen werden ganzzahlig von 1 bis 5 bewertet.</li>
+  <li>Bewerten Sie ehrlich — der Wert liegt darin zu erkennen, wo investiert werden sollte, nicht darin, ein bequemes Bild zu bestätigen.</li>
+</ul>
+
+<div class="callout">
+  <p>Bewerten Sie zunächst mit Bleistift und bringen Sie den Bogen dann in einen Workshop ein. Das Gespräch darüber, warum jemand eine Dimension mit 2 statt 3 bewertet, ist wertvoller als die Zahl selbst.</p>
+</div>
+
+<h2 class="sec newpage"><span class="num">1.</span> Workload-Portabilität</h2>
+<p class="question">Wie leicht lässt sich ein Workload zwischen Substraten (Cloud-Regionen, Rechenzentren, Anbietern, Kubernetes-Clustern) verschieben, ohne ihn neu schreiben zu müssen?</p>
+<table class="dense">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Jedes Team konfiguriert seine eigene Infrastruktur. Kein IaC. Bare-Metal-Skripte, Click-Ops. Workloads verankern Substratannahmen tief im Code. Vendor-Lock-in überall.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>Ein zentrales Team verwaltet die gemeinsame Infrastruktur. Teilweises IaC (Terraform / CloudFormation stückweise). Einige Workloads sind teamübergreifend portabel; Substratwechsel erfordern weiterhin ein Redesign.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>IaC für die meisten Bereitstellungen. Teams bedienen gängige Abläufe selbst. Workloads sind meist als Kubernetes-Manifeste plus Helm ausdrückbar. Substratspezifische Annahmen sind isoliert.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>Workload-Portabilität ist strukturell verankert. Multi-Substrat-fähig (Region-Failover, Cluster-Migration). Anbietergebundene Dienste werden explizit gekennzeichnet und isoliert.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Workloads nutzen ausschließlich Plattformabstraktionen. Mit vorhersehbarem Aufwand über Substrate hinweg portabel. Drift-Erkennung automatisiert. Neue Substrate werden als austauschbare Backends angebunden.</td></tr>
+  </tbody>
+</table>
+<p class="score">Ihre Bewertung (1–5):<span class="line"></span> Warum? Belege?<span class="wide"></span></p>
+
+<h2 class="sec"><span class="num">2.</span> GitOps-Adoption</h2>
+<p class="question">In welchem Ausmaß sind Infrastruktur- und Plattformänderungen deklarativ, versioniert, per PR geprüft und über kontinuierliche Reconciliation ausgerollt?</p>
+<table class="dense">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Manuelle Änderungen. SSH, Click-Ops, kubectl von Hand. Keine Source of Truth für den Umgebungszustand.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>Etwas IaC ist in Git eingecheckt, wird aber manuell angewendet. PRs sind ein Wunschbild. Drift sammelt sich an.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>IaC plus GitOps für einige Workloads (Argo CD / Flux für App-Deployments). Infrastrukturänderungen weiterhin gemischt manuell und automatisiert. PR-Review bei Plattformänderungen.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>GitOps für App und Infrastruktur. Kontinuierliche Reconciliation. Drift wird sichtbar gemacht und behoben. PRs sind der Kanal für das Change-Management. Vollständiger Audit-Trail.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Vollständig deklaratives Modell — Cluster, Netzwerke, IAM, Observability werden alle aus Git rekonziliiert. Drift ohne Alarm unmöglich. PRs durch automatisierte Policies (OPA / Gatekeeper, Conftest) abgesichert.</td></tr>
+  </tbody>
+</table>
+<p class="score">Ihre Bewertung (1–5):<span class="line"></span> Warum? Belege?<span class="wide"></span></p>
+
+<h2 class="sec newpage"><span class="num">3.</span> Vereinheitlichung der Observability</h2>
+<p class="question">Verfügen Ihre Engineers über einen einzigen, verlässlichen Weg, um Metriken, Logs, Traces und SLOs über alle Umgebungen und Mandanten hinweg zu sehen?</p>
+<table class="dense">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Jedes Team wählt eigene Werkzeuge. Wissen darüber, wo man nachschaut, ist informell. Post-Mortems nach Ausfällen offenbaren fragmentierte Daten.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>Zentralisierte Metriken und Logs (z. B. Prometheus + Loki oder VictoriaMetrics + VictoriaLogs). Abdeckung unvollständig. SLO-Disziplin lückenhaft.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>Ein zentrales Dashboard (Single Pane of Glass) für die meisten Workloads. SLOs für Tier-1-Dienste definiert. Alert-Hygiene verbessert sich. Tracing entsteht.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>Vereinheitlichte Metriken, Logs und Traces. SLO-Disziplin durchgängig für Tier 1 und Tier 2. Starke Alert-Hygiene (wenig Alarmrauschen, verlinkte Runbooks). On-Call-Dashboards standardisiert.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Vollständiges Observability-Mesh. SLOs werden automatisch aus Plattformverträgen instrumentiert. Anomalieerkennung speist das Alerting. Observability-Kosten werden erfasst und optimiert. Mandanten erhalten eingegrenzte Sichten.</td></tr>
+  </tbody>
+</table>
+<p class="score">Ihre Bewertung (1–5):<span class="line"></span> Warum? Belege?<span class="wide"></span></p>
+
+<h2 class="sec"><span class="num">4.</span> Umgang mit Secrets</h2>
+<p class="question">Wie werden Secrets erzeugt, gespeichert, verteilt, rotiert und auditiert?</p>
+<table class="dense">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Secrets in Env-Dateien, im Code, in Chat-Nachrichten. Keine zentrale Verwaltung. Rotation manuell oder nie.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>Vault oder Ähnliches für einige Workloads im Einsatz. Rotation ein Wunschbild. Audit-Trail lückenhaft.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>Zentraler Secret-Store (Vault / External Secrets Operator). Die meisten Workloads beziehen daraus. Rotationsrichtlinie definiert. Teilweise Auditierbarkeit.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>Alle Secrets zentralisiert. Rotation erzwungen (richtlinienbasiert). Workload-Identität föderiert (keine eingebetteten Zugangsdaten). Vollständiger Audit-Trail.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Ausschließlich Workload-Identität — keine statischen Secrets in Workloads. Rotation kontinuierlich und automatisiert. Schlüsselverwahrung für souveräne Workloads festgelegt und dokumentiert. Regelmäßiger Chaos-Test der Rotation.</td></tr>
+  </tbody>
+</table>
+<p class="score">Ihre Bewertung (1–5):<span class="line"></span> Warum? Belege?<span class="wide"></span></p>
+
+<h2 class="sec newpage"><span class="num">5.</span> Identitätsmodell</h2>
+<p class="question">Sind Mitarbeiteridentität (Engineers) und Workload-Identität (Dienste) zu einer einzigen vertrauenswürdigen Quelle föderiert oder über Systeme hinweg fragmentiert?</p>
+<table class="dense">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Überall lokale Konten. Geteilte Zugangsdaten. Joiner-Mover-Leaver (JML) manuell.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>SSO / OIDC für einige Systeme. Workload-Identität ad hoc (statische API-Schlüssel). JML überwiegend manuell.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>SSO für den Zugang der Engineers. Workload-Identität im Entstehen (z. B. Service Accounts mit OIDC, IAM-Rollen für Service Accounts). JML teilautomatisiert.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>Durchgängiges SSO plus MFA für Engineers. Föderation zwischen Mitarbeiter- und Workload-Identität (z. B. SPIFFE / SPIRE, OIDC-basiert). JML vollständig automatisiert. RBAC vierteljährlich überprüft.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Zero-Trust-Identität. Autorisierung pro Aktion (nicht nur pro System). Kundenseitige Identitätsföderation unterstützt (BYOidp). Kontinuierliche Attestierung.</td></tr>
+  </tbody>
+</table>
+<p class="score">Ihre Bewertung (1–5):<span class="line"></span> Warum? Belege?<span class="wide"></span></p>
+
+<h2 class="sec"><span class="num">6.</span> Mandantenfähigkeit</h2>
+<p class="question">Wie wird die Isolation zwischen Teams, Produkten, Kunden oder Umgebungen erreicht? Auf welcher Ebene? Wie robust ist die Grenze?</p>
+<table class="dense">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Keine formale Isolation. „Test" und „Prod" teilen sich Cluster, VLANs oder Datenbanken. Noisy-Neighbour-Probleme zwischen Mandanten sind häufig.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>Namespace pro Team in Kubernetes. Netzwerkisolation lückenhaft (keine NetworkPolicy / Cilium). Ressourcenquoten lückenhaft.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>Namespace plus Quota plus NetworkPolicy. Manche Mandanten erhalten einen Cluster pro Team für strengere Isolation. Identität pro Mandant eingegrenzt.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>Tenant-CRD oder Äquivalent — der Mandant ist ein erstklassiges Plattformkonzept. Isolation auf Netzwerk-, Identitäts-, Storage- und Observability-Ebene. Quoten und SLOs pro Mandant.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Mehrstufige Mandantenfähigkeit (Organisation → Projekt → Workload). Zusicherungen zwischen Mandanten sind nachweisbar. Kundenisolationsgrad (geeignet für souveräne / regulierte Workloads). Mandanten-Onboarding vollständig automatisiert.</td></tr>
+  </tbody>
+</table>
+<p class="score">Ihre Bewertung (1–5):<span class="line"></span> Warum? Belege?<span class="wide"></span></p>
+
+<h2 class="sec newpage"><span class="num">7.</span> Disaster-Recovery-Reife</h2>
+<p class="question">Werden Backup, Restore und Disaster Recovery routinemäßig getestet und nachgewiesen, oder ist es ein Plan auf dem Papier?</p>
+<table class="dense">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Backup teilweise und ungetestet. Kein DR-Plan oder ein seit Jahren nicht getesteter Plan. RTO / RPO nicht dokumentiert.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>Backup für die meisten Workloads automatisiert. Restore ad hoc getestet. DR-Plan vorhanden, aber in den letzten 12 Monaten nicht geübt.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>Backup und Restore jährlich für Tier-1-Workloads getestet. DR-Standort vorhanden; Failover teilweise getestet. RTO / RPO dokumentiert.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>Backup, Restore und Failover vierteljährlich für Tier 1 und jährlich für Tier 2 getestet. RTO / RPO gemessen (nicht nur dokumentiert). DR-Testergebnisse für Audits aufbewahrt.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Kontinuierliche DR (Game-Day-Rhythmus). Tier-1-Workloads Multi-Region Active-Active oder Active-Warm. Kundenisolation während der DR gewahrt. Compliance-Nachweise (DORA Art. 25, NIS2-BCP) automatisch erzeugt.</td></tr>
+  </tbody>
+</table>
+<p class="score">Ihre Bewertung (1–5):<span class="line"></span> Warum? Belege?<span class="wide"></span></p>
+
+<h2 class="sec"><span class="num">8.</span> Tiefe des Self-Service</h2>
+<p class="question">Wie schnell gelangt eine Produkt-Engineerin von „Ich brauche eine Umgebung" zu „Ich habe eine, die meinen Code ausführt" — ohne ticketgetriebene Übergaben?</p>
+<table class="dense">
+  <thead><tr><th>Stufe</th><th>Bezeichnung</th><th>Beschreibung</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stufe 1</td><td class="label">Pre-Platform</td><td>Ticketgetrieben. Tage bis Wochen. Engineers warten auf Ops. Kein Standardweg.</td></tr>
+    <tr><td class="stage">Stufe 2</td><td class="label">Gemeinsame Infrastruktur</td><td>Etwas Self-Service für Dev-Umgebungen. Produktion weiterhin ticketgetrieben. Standardwege existieren informell; Dokumentation lückenhaft.</td></tr>
+    <tr><td class="stage">Stufe 3</td><td class="label">Self-Service-Primitive</td><td>Self-Service für Non-Prod und viele Prod-Abläufe. Golden Path für gängige Workload-Typen dokumentiert. Ticket-Warteschlange schrumpft.</td></tr>
+    <tr><td class="stage">Stufe 4</td><td class="label">Internal Developer Platform</td><td>Durchgängiger Self-Service (Umgebung, Deploy, Observability, Skalierung, Rollback). Time-to-Environment in Minuten. Golden Paths sind erstklassig — Abweichungen erfordern einen PR plus Review.</td></tr>
+    <tr><td class="stage">Stufe 5</td><td class="label">Ausgereift</td><td>Platform-as-Product. Engineers beschreiben Ergebnisse (Workload plus SLO plus Mandanten); die Plattform realisiert sie. Interner NPS gemessen. Kontinuierlicher Verbesserungskreislauf.</td></tr>
+  </tbody>
+</table>
+<p class="score">Ihre Bewertung (1–5):<span class="line"></span> Warum? Belege?<span class="wide"></span></p>
+
+<h1 class="doc-h newpage">Ihre Bewertungen</h1>
+<p class="lead">Übertragen Sie jede Dimensionsbewertung unten und berechnen Sie den Durchschnitt.</p>
+
+<table class="blank">
+  <thead><tr><th>Dimension</th><th class="fill">Bewertung (1–5)</th><th class="fill">Stufe</th></tr></thead>
+  <tbody>
+    <tr><td class="label">1. Workload-Portabilität</td><td></td><td></td></tr>
+    <tr><td class="label">2. GitOps-Adoption</td><td></td><td></td></tr>
+    <tr><td class="label">3. Vereinheitlichung der Observability</td><td></td><td></td></tr>
+    <tr><td class="label">4. Umgang mit Secrets</td><td></td><td></td></tr>
+    <tr><td class="label">5. Identitätsmodell</td><td></td><td></td></tr>
+    <tr><td class="label">6. Mandantenfähigkeit</td><td></td><td></td></tr>
+    <tr><td class="label">7. Disaster-Recovery-Reife</td><td></td><td></td></tr>
+    <tr><td class="label">8. Tiefe des Self-Service</td><td></td><td></td></tr>
+    <tr class="total"><td>Durchschnitt</td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<p class="score">Niedrigste 2 Dimensionen:<span class="wide" style="width:112mm"></span></p>
+<p class="score">Höchste 2 Dimensionen:<span class="wide" style="width:116mm"></span></p>
+
+<div class="callout">
+  <p>Ein gezacktes Profil — in manchen Dimensionen sehr hoch, in anderen sehr niedrig — deutet meist auf ungleichmäßige Investitionen hin. Die niedrigsten Dimensionen anzuheben hat in der Regel eine größere Hebelwirkung als die bereits starken weiter zu verbessern.</p>
+</div>
+
+<h1 class="doc-h newpage">Was bedeutet mein Durchschnittswert?</h1>
+
+<table class="flow dense">
+  <thead><tr><th>Wertebereich</th><th>Stufe</th><th>Interpretation</th><th>Nächste Schritte</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">1,0 – 1,5</td><td class="label">Stufe 1 — Pre-Platform</td><td>Überwiegend fragmentierte Infrastruktur. Heldentaten halten den Betrieb am Laufen. Jede Investition in ein Plattformfundament zahlt sich sofort aus.</td><td>Ein Plattformteam aufbauen (3–5 Engineers). IaC plus GitOps für neue Workloads einführen. Secrets zentralisieren.</td></tr>
+    <tr><td class="stage">1,5 – 2,5</td><td class="label">Stufe 2 — Gemeinsame Infrastruktur</td><td>Ein Kern-Stack existiert, ist aber ticketgetrieben. Engineers warten auf Ops. Ein sichtbarer Engpass.</td><td>Golden Paths für die drei häufigsten Workload-Typen definieren. Bereitstellung auf Self-Service umstellen. GitOps durchsetzen.</td></tr>
+    <tr><td class="stage">2,5 – 3,5</td><td class="label">Stufe 3 — Self-Service</td><td>Auf dem Weg zur IDP. Self-Service teilweise. Golden Paths im Entstehen.</td><td>In ein IDP-Produktdenken investieren. Entwickler als Kunden behandeln. Time-to-Environment und internen NPS messen.</td></tr>
+    <tr><td class="stage">3,5 – 4,5</td><td class="label">Stufe 4 — IDP</td><td>Internal Developer Platform in Betrieb. Die meisten Teams bedienen sich selbst.</td><td>Mandantenfähigkeit, DR und Observability vertiefen. Die Plattform intern produktisieren. Auf unterversorgte Workload-Typen ausweiten (Daten, KI, Edge).</td></tr>
+    <tr><td class="stage">4,5 – 5,0</td><td class="label">Stufe 5 — Ausgereift</td><td>Kumulierende Erträge. Das Plattformteam wirkt hebelnd über die gesamte Organisation.</td><td>Kontinuierliche Verbesserung. Extern benchmarken. Erwägen, Werkzeuge extern zu teilen (Open-Source-Beitrag, Community-Präsenz).</td></tr>
+  </tbody>
+</table>
+
+<h1 class="doc-h" style="margin-top:8mm">Worin sollten wir zuerst investieren?</h1>
+<p class="lead">Wenn Ihre schwächste Dimension ... ist</p>
+
+<table class="dense">
+  <thead><tr><th style="width:30%">Schwächste Dimension</th><th>Investition mit der größten Hebelwirkung</th></tr></thead>
+  <tbody>
+    <tr><td class="label">1. Workload-Portabilität</td><td>IaC durchgängig einführen; anbietergebundene Dienste isolieren; ein Kubernetes-basiertes Substrat pilotieren.</td></tr>
+    <tr><td class="label">2. GitOps-Adoption</td><td>Argo CD oder Flux ausrollen; App-Deployments auf einen PR-getriebenen Ablauf umstellen; anschließend Infrastruktur-GitOps ergänzen.</td></tr>
+    <tr><td class="label">3. Vereinheitlichung der Observability</td><td>Vereinheitlichte Metriken plus Logs aufbauen (z. B. VictoriaMetrics + VictoriaLogs); SLOs für Tier 1 definieren; Alerts bereinigen.</td></tr>
+    <tr><td class="label">4. Umgang mit Secrets</td><td>Zentralen Secret-Store plus External Secrets Operator ausrollen; statische Secrets in Workloads eliminieren.</td></tr>
+    <tr><td class="label">5. Identitätsmodell</td><td>Durchgängiges SSO plus MFA; Workload-Identität über OIDC / SPIFFE; JML automatisieren.</td></tr>
+    <tr><td class="label">6. Mandantenfähigkeit</td><td>Ein Tenant-CRD-Muster einführen (z. B. Cozystack Tenant CRD); NetworkPolicy / Cilium durchsetzen; Quoten pro Mandant.</td></tr>
+    <tr><td class="label">7. Disaster-Recovery-Reife</td><td>Backup-Restore plus Failover für Tier 1 innerhalb von 30 Tagen testen; RTO / RPO dokumentieren; danach vierteljährlicher Rhythmus.</td></tr>
+    <tr><td class="label">8. Tiefe des Self-Service</td><td>Die drei wichtigsten Golden Paths definieren; ein Portal oder einen CLI-Wrapper bauen; Time-to-Environment messen.</td></tr>
+  </tbody>
+</table>
+
+<h1 class="doc-h newpage">Häufige Muster</h1>
+
+<div class="callout">
+  <p><b>Muster „Stark bei Werkzeugen, schwach bei Mandantenfähigkeit / DR".</b> Häufig bei Organisationen zu beobachten, die seit 2–3 Jahren in ihre Plattform investieren. Die Werkzeugkompetenz ist hoch (GitOps, Observability, Secrets), doch teamübergreifende Isolation und getestete DR hinken hinterher. Investitionen in Mandantenfähigkeit als Produkt erschließen regulierte Workloads und kundenorientierte Plattformangebote.</p>
+</div>
+<div class="callout">
+  <p><b>Muster „Viel Self-Service, geringe Reife".</b> Engineers können vieles selbst bedienen, doch die zugrunde liegenden Primitive sind fragil. Das Risiko ist ein plötzliches Plateau, wenn diese Schwäche zutage tritt. Investieren Sie in die niedrigsten 2 Dimensionen, bevor Sie den Self-Service weiter vertiefen.</p>
+</div>
+
+<h1 class="doc-h" style="margin-top:9mm">Nächste Schritte</h1>
+
+<div class="option"><b>Option 1 — Selbst nachbessern mit diesem Assessment.</b> Teilen Sie das Assessment mit der Engineering-Leitung. Bearbeiten Sie die niedrigsten 2 Dimensionen in einem Workshop. Definieren Sie einen 90-Tage-Plan.</div>
+<div class="option"><b>Option 2 — Platform Readiness Assessment mit Ænix (14 oder 28 Tage).</b> Wir bewerten gemeinsam mit Ihnen, prüfen die Ergebnisse auf Plausibilität und erstellen eine Roadmap für die Phase-2-Plattformarbeit. Zum Festpreis.</div>
+<div class="option"><b>Option 3 — Managed Engagement für Platform Engineering.</b> Ein mehrmonatiger Aufbau mit Architektur, IDP-Design, Golden Paths, Observability, DR und Mandantenfähigkeit. Der Umfang wird nach Phase 1 festgelegt.</div>
+
+<div class="cta">Vereinbaren Sie ein Erstgespräch: <span>aenix.io/services/platform-readiness-assessment/</span></div>
+
+<p class="lead" style="margin-top:8mm">Ænix hat Cozystack (ein CNCF-Projekt) entwickelt, pflegt es mit und baut darauf die Ænix-Plattformen für Public Cloud, Private Cloud und KI. aenix.io</p>
+
+<div class="closing">
+  <b>Ænix · aenix.io · Platform Engineering Maturity Assessment · v1.1 — Oktober 2026.</b> Ænix hat Cozystack entwickelt und pflegt es mit (CNCF, Apache 2.0).
+</div>

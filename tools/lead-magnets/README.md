@@ -1,7 +1,9 @@
 # Lead-magnet PDF sources
 
-The four downloadable compliance checklists are generated from here, not
-hand-edited as PDFs. Before this existed the only artefact was the compiled
+The downloadable lead-magnet PDFs (DORA and NIS2 checklists, VMware migration
+checklist, Sovereign AI decision guide, platform engineering maturity
+assessment, cloud repatriation TCO worksheet — each in EN and DE) are
+generated from here, not hand-edited as PDFs. Before this existed the only artefact was the compiled
 PDF, so correcting a wrong regulatory citation meant extracting the text and
 rebuilding the document from scratch.
 
@@ -9,7 +11,8 @@ Build:
 
 ```bash
 python3 -m venv venv && ./venv/bin/pip install weasyprint
-./venv/bin/python build.py
+./venv/bin/python build.py                    # every document
+./venv/bin/python build.py vmware-en.html     # just one
 ```
 
 Output goes to `static/downloads/`. Fonts: Lato, subset and embedded — never
