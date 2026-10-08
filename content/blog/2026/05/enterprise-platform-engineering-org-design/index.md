@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "Multi-tenancy", "DevOps"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/enterprise-platform-engineering-organisationsdesign/"
 companion_landing: "/services/enterprise-platform-engineering/"
 companion_label: "See enterprise platform engineering services →"
 quiz:
