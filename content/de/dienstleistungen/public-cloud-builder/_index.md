@@ -51,7 +51,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/launch-customer-facing-cloud-product/">Das Cloud-Produkt-Playbook lesen (englisch) →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/cloud-produkt-starten-playbook-hosting-anbieter/">Das Cloud-Produkt-Playbook lesen →</a>
 </div>
 
 ---
@@ -135,7 +135,7 @@ Pricing-Modell-Design, Customer-Onboarding-Workflow, SLA-Design, regulatorische 
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Playbook für kundenseitige Cloud-Produkte (englisch)](/blog/2026/05/launch-customer-facing-cloud-product/)**
+- **[Playbook für kundenseitige Cloud-Produkte](/de/blog/2026/05/cloud-produkt-starten-playbook-hosting-anbieter/)**
 - **[Branchen — Telco](/de/branchen/telco/)** — der Telekom-Operator-Blickwinkel
 - **[Cozystack](/de/produkte/cozystack/)** — die Foundation
 - **[Private-Cloud-Consulting](/de/dienstleistungen/private-cloud-consulting/)** — breiterer Scope

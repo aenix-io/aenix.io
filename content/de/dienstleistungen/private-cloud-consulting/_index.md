@@ -57,7 +57,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/private-cloud-architecture-2026/">Architektur-Leitfaden lesen (englisch) →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/private-cloud-architektur-2026/">Architektur-Leitfaden lesen →</a>
 </div>
 
 <div class="trust-badges">
@@ -219,7 +219,7 @@ Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Fre
 <!-- BLOCK 10: FAQ -->
 
 
-**Weitere Fragen?** Siehe den **[Private-Cloud-Architektur-Artikel (englisch)](/blog/2026/05/private-cloud-architecture-2026/)** oder **[sprechen Sie mit uns](#discovery)**.
+**Weitere Fragen?** Siehe den **[Private-Cloud-Architektur-Artikel](/de/blog/2026/05/private-cloud-architektur-2026/)** oder **[sprechen Sie mit uns](#discovery)**.
 
 <!-- /BLOCK 10 -->
 
@@ -232,7 +232,7 @@ Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Fre
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[Private Cloud Architecture 2026 (englisch)](/blog/2026/05/private-cloud-architecture-2026/)** — vollständiger Leitfaden
+- **[Private-Cloud-Architektur 2026](/de/blog/2026/05/private-cloud-architektur-2026/)** — vollständiger Leitfaden
 - **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** — wenn Sie die Public Cloud verlassen
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — Souveränitäts-Auslöser
 - **[Cozystack](/de/produkte/cozystack/)** — Open-Source-Plattform-Foundation

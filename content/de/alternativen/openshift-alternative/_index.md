@@ -59,7 +59,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/blog/2026/05/openshift-vs-cozystack-comparison/">OpenShift vs Cozystack (englisch) →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/openshift-vs-cozystack-vergleich-kubevirt/">OpenShift vs Cozystack →</a>
 </div>
 
 ---
@@ -102,7 +102,7 @@ Beide sind KubeVirt-basiert, das zugrunde liegende VM-Modell ist also ähnlich. 
   <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
 </div>
 
-- **[OpenShift vs Cozystack Vergleich (englisch)](/blog/2026/05/openshift-vs-cozystack-comparison/)**
+- **[OpenShift vs Cozystack Vergleich](/de/blog/2026/05/openshift-vs-cozystack-vergleich-kubevirt/)**
 - **[VMware-Alternative](/de/alternativen/vmware-alternative/)**
 - **[Platform-Engineering-Services](/de/dienstleistungen/platform-engineering/)**
 - **[Cozystack](/de/produkte/cozystack/)**
