@@ -27,8 +27,8 @@ related_pages:
 
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">3 DCs</div><div class="cs-stat__label">synchronous storage replication across data centres, etcd over three</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">20 h → 0</div><div class="cs-stat__label">hours of incident — zero data lost</div></div>
   <div class="cs-stat"><div class="cs-stat__num">10+</div><div class="cs-stat__label">tenants in production; public site in three languages</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">20 h → 0</div><div class="cs-stat__label">hours of incident — zero data lost</div></div>
 </div>
 
 <div class="cta-row">

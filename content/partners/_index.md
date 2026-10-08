@@ -121,16 +121,16 @@ Grid of partner cards. Each card: logo, name, location, 1-line description. Exis
     <a href="https://gohost.kz/" target="_blank" rel="noopener"><img src="/images/clients/gohost.svg" alt="GoHost.kz" loading="lazy" height="52"></a>
   </div>
   <div class="distributor-spot__body">
-    <p class="distributor-spot__badge">Authorized distributor · Kazakhstan</p>
+    <p class="distributor-spot__badge">Partner · Kazakhstan</p>
     <h3 class="distributor-spot__name">GoHost.kz</h3>
-    <p class="distributor-spot__text">GoHost.kz distributes Ænix Platform across Kazakhstan — nationwide, not a single region. Licensing, first-line support and deal protection for downstream resellers all run in-country. GoHost is also a public production customer, running Ænix Public Cloud Platform on its own infrastructure.</p>
-    <p class="distributor-spot__meta">Buying or reselling Ænix Platform in Kazakhstan starts here.</p>
+    <p class="distributor-spot__text">GoHost.kz is the Ænix partner in Kazakhstan: local contracting, first-line support and help for resellers across the country. GoHost is also a public production customer, running Ænix Public Cloud Platform on its own infrastructure.</p>
+    <p class="distributor-spot__meta">Customers in Kazakhstan can buy through GoHost.kz or contract with Ænix directly.</p>
   </div>
 </aside>
 
 Current public partners include:
 
-- **GoHost.kz** (Kazakhstan) — **authorized distributor of Ænix Platform for Kazakhstan**; hosting and cloud provider running Ænix Public Cloud Platform
+- **GoHost.kz** (Kazakhstan) — partner in Kazakhstan; hosting and cloud provider running Ænix Public Cloud Platform
 - **Hidora** (Switzerland, Geneva) — European cloud provider, sovereign cloud focus
 - **QOSI** (Kazakhstan) — digital sovereignty + open-source ecosystem
 - **TECH EVOLVERS INC** (Caribbean, Central + South America) — cloud-native consultancy and systems integrator, Kubestronaut team
