@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["OpenStack", "Kubernetes", "KubeVirt", "Sovereignty", "Multi-tenancy", "Financial Services"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/private-cloud-architektur-2026/"
 companion_landing: "/services/private-cloud-consulting/"
 quiz:
   title: "Test yourself: private cloud architecture in 2026"
