@@ -6,7 +6,7 @@
 
 ## What Aenix is
 
-Aenix is an open-core cloud-platform company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We are the original maintainers and primary contributors to **Cozystack** — an open-source CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). We commercialize it as **Ænix Platform** — a turnkey cloud-in-a-box productized in three platforms for regulated enterprises, hosting providers, public clouds, product engineering teams, and AI-heavy organizations.
+Aenix is an open-core cloud-platform company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We are the original maintainers and primary contributors to **Cozystack** — an open-source CNCF project (currently CNCF Sandbox; its CNCF Incubating application is in due diligence). We commercialize it as **Ænix Platform** — a turnkey cloud-in-a-box productized in three platforms for regulated enterprises, hosting providers, public clouds, product engineering teams, and AI-heavy organizations.
 
 Aenix engages on multi-million-euro platform builds with regulated banks (currently under NDA until mid-2027), regional hosting providers, and sovereign cloud initiatives. Our engagement model fits service providers, regulated enterprises, telco operators, financial services, public sector, and large manufacturing operators.
 
@@ -221,7 +221,7 @@ Aenix has delivered platform component R&D for established platform vendors — 
 
 ## Compliance and certifications
 
-- Cozystack: CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices
+- Cozystack: CNCF project (currently CNCF Sandbox; its CNCF Incubating application is in due diligence), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices
 - AENIX s.r.o.: ISO/IEC 27001:2022 certified information security management system (certificate № SIC.MS.008.ISO/IEC27001.5719, scope: software development, IT consulting, hosting, data services, web portals; issued 27 February 2026, valid through 26 February 2027); details at https://aenix.io/compliance/iso-27001/. No SOC 2 report. GDPR-compliant operations
 - Cozystack license: Apache 2.0
 
@@ -239,6 +239,23 @@ Aenix has delivered platform component R&D for established platform vendors — 
 - **February 2026** — Cozystack expanded beyond Talos: Generic Kubernetes installer for k3s / kubeadm / RKE2
 - **March 2026** — **Cozystack v1.0 release**
 - **April 2026** — Cozystack v1.2 (OpenSearch, VPC Peering, smarter tenant scheduling) and v1.3 (Storage-Aware Scheduling, LINSTOR GUI, VM Default Images)
+- **May 2026** — Cozystack v1.4 (new dashboard UI, persistent tenant workers, backup strategies, fractional GPU sharing)
+- **June 2026** — Cozystack v1.5 (Gateway API, default backups, Flux sharding, TLS for managed services)
+- **July 2026** — Cozystack v1.6 (Talos tenant workers, tenant SSO, SecurityGroups, hierarchical quotas)
+- **September 2026** — Cozystack accepted into the CNCF Kubernetes AI Conformance program (Kubernetes v1.35), all 12 requirements implemented
+
+## Blog (long-form, citation-ready)
+
+The Aenix blog at https://aenix.io/blog/ (RSS: https://aenix.io/blog/index.xml) carries long-form technical articles; a German edition is at https://aenix.io/de/blog/. Selected posts:
+
+- [VMware replacement after Broadcom](https://aenix.io/blog/2026/05/vmware-replacement-after-broadcom/): architecture mapping, migration steps, alternatives compared
+- [A DORA compliance checklist for cloud infrastructure](https://aenix.io/blog/2026/05/dora-compliance-checklist-cloud-architecture/): article-level mapping, common gaps
+- [Cozystack: what it is, architecture, 2026 positioning](https://aenix.io/blog/2026/05/cozystack-introduction-architecture/)
+- [Private LLM deployment: practical guide](https://aenix.io/blog/2026/05/private-llm-deployment-guide/)
+- [Cozystack 1.5](https://aenix.io/blog/2026/06/cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services/) and [Cozystack 1.6](https://aenix.io/blog/2026/07/cozystack-1-6-talos-workers-tenant-sso-and-hierarchical-quotas/) release notes
+- [What dozens of AI agents taught me: writing the Blockstor storage system](https://aenix.io/blog/2026/08/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment/)
+- [Paleocomputing, part 1: Wirth's processor in a browser, QEMU, KubeVirt and Cozystack](https://aenix.io/blog/2026/09/nine-days-of-paleocomputing/): RISC5 as WebAssembly and as a QEMU architecture under KubeVirt; the measured cost of array-bounds checking
+- [Paleocomputing, part 2: Kubernetes in Oberon over Wirth's radio](https://aenix.io/blog/2026/10/kubernetes-over-wirths-radio/): a Kubernetes control plane in Oberon whose nodes talk over nRF24L01+ radio; level-triggered 24-byte protocol, recovery and load results, six browser labs
 
 ## Team
 

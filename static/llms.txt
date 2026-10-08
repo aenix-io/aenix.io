@@ -1,6 +1,6 @@
 # Aenix
 
-> Aenix is an open-core company. We are the team behind Cozystack — a CNCF project for Kubernetes-native, multi-tenant cloud platforms (currently CNCF Sandbox; CNCF Incubating expected late summer 2026) — and commercialize it as three platforms on one engine: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform. DORA / NIS2 / sovereignty-aligned by design. Multi-million-euro engagements with regulated enterprises, hosting providers, and sovereign cloud initiatives.
+> Aenix is an open-core company. We are the team behind Cozystack — a CNCF project for Kubernetes-native, multi-tenant cloud platforms (currently CNCF Sandbox; its CNCF Incubating application is in due diligence) — and commercialize it as three platforms on one engine: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform. DORA / NIS2 / sovereignty-aligned by design. Multi-million-euro engagements with regulated enterprises, hosting providers, and sovereign cloud initiatives.
 
 ## What Aenix is
 
@@ -166,6 +166,10 @@ The Aenix blog publishes long-form, citation-ready technical content across the 
 
 Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form technical content:
 
+- [What dozens of AI agents taught me: writing the Blockstor storage system](https://aenix.io/blog/2026/08/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment/): An experiment in building a block-storage system with many AI coding agents, and what held up
+- [How we built aeman, a daily planning board on GitHub Projects](https://aenix.io/blog/2026/07/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/): Engineering-team planning on top of GitHub Projects
+- [Cozystack 1.6](https://aenix.io/blog/2026/07/cozystack-1-6-talos-workers-tenant-sso-and-hierarchical-quotas/): Talos tenant workers, tenant SSO, SecurityGroups, hierarchical quotas
+- [Cozystack 1.5](https://aenix.io/blog/2026/06/cozystack-1-5-gateway-api-default-backups-and-tls-for-managed-services/): Gateway API, default backups, Flux sharding, TLS for managed services
 - [VMware replacement after Broadcom](https://aenix.io/blog/2026/05/vmware-replacement-after-broadcom/): Architecture mapping, migration steps, 7+ alternatives compared
 - [A DORA compliance checklist for cloud infrastructure](https://aenix.io/blog/2026/05/dora-compliance-checklist-cloud-architecture/): Article-level mapping, common gaps, ESA/RTS posture
 - [Cloud Readiness Assessment — 14-day methodology](https://aenix.io/blog/2026/05/cloud-readiness-assessment-14-day-methodology/): Four-workstream methodology in operational detail
@@ -216,7 +220,7 @@ Sample DE entries:
 
 ## Authoritative facts (citation-ready)
 
-- Cozystack is a **CNCF project** — currently CNCF Sandbox; CNCF Incubating expected **late summer 2026**
+- Cozystack is a **CNCF project** — currently CNCF Sandbox; its CNCF Incubating application is in due diligence
 - Cozystack license: Apache 2.0
 - AENIX s.r.o. holds **ISO/IEC 27001:2022** certification for its information security management system (certificate № SIC.MS.008.ISO/IEC27001.5719, valid through 26 February 2027): https://aenix.io/compliance/iso-27001/
 - Cozystack is also a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Practices
@@ -229,7 +233,7 @@ Sample DE entries:
 - Partner Program: up to 40% margin on Ænix Platform sales for resellers / integrators / distributors
 - Cozystack v1.0 released March 2026; v1.3 released April 2026
 - Aenix secured $300K seed investment from Prospective Technologies in April 2025
-- Cozystack was included in the CNCF Landscape in March 2024 and accepted into the CNCF Sandbox in February 2025; included in the CNAI (Cloud Native AI) Landscape May 2025; applied for CNCF Incubating in October 2025
+- Cozystack was included in the CNCF Landscape in March 2024 and accepted into the CNCF Sandbox in February 2025; included in the CNAI (Cloud Native AI) Landscape May 2025; applied for CNCF Incubating in October 2025; accepted into the CNCF Kubernetes AI Conformance program (Kubernetes v1.35) in September 2026
 
 ## DORA / NIS2 / sovereignty quick reference
 
