@@ -33,9 +33,14 @@
            venue: "..."              # optional; falls back to city
            form: "..."               # used as registration_url when present
 
-  Performer/organizer are fixed: Timur Tukaev / Aenix.
+  Performer/organizer are fixed: Timur Tukaev / Ænix.
 */}}
 {{- $e := .Params.event | default dict -}}
+{{- /* Free events still need a priceCurrency; use the local one rather than
+       USD for every city. Venue placeholders ("to be confirmed") are not a
+       place name: fall back to the city. */ -}}
+{{- $eurozone := slice "AT" "BE" "CY" "DE" "EE" "ES" "FI" "FR" "GR" "HR" "IE" "IT" "LT" "LU" "LV" "MT" "NL" "PT" "SI" "SK" -}}
+{{- $currencies := dict "GB" "GBP" "CH" "CHF" "PL" "PLN" "CZ" "CZK" "SE" "SEK" "DK" "DKK" "NO" "NOK" "HU" "HUF" "KZ" "KZT" "UZ" "UZS" "KG" "KGS" "AE" "AED" -}}
 {{- $price := index $e "price" -}}
 {{- $lang := index $e "language" -}}
 {{- $name := index $e "name" | default .Title -}}
@@ -56,6 +61,9 @@
   {{- $start := index $c "date_iso" -}}
   {{- $end := index $c "end_iso" | default $start -}}
   {{- $venue := index $c "venue" -}}
+  {{- if and $venue (in (lower $venue) "to be confirmed") }}{{ $venue = "" }}{{ end -}}
+  {{- $cc := upper (index $c "country_code" | default "") -}}
+  {{- $cur := index $currencies $cc | default (cond (in $eurozone $cc) "EUR" "USD") -}}
   {{- $reg := index $c "form" | default (printf "%s#register" $.Permalink) -}}
   {
     "@type": "EducationEvent",
@@ -88,7 +96,7 @@
     "offers": {
       "@type": "Offer",
       "price": {{ $price }},
-      "priceCurrency": "USD",
+      "priceCurrency": {{ $cur }},
       "availability": "https://schema.org/InStock",
       "url": {{ $reg }}
     },
@@ -96,7 +104,7 @@
     "performer": {
       "@type": "Person",
       "name": "Timur Tukaev",
-      "jobTitle": "Cozystack maintainer, community manager, Aenix co-founder"
+      "jobTitle": "COO and co-founder of Ænix, Cozystack maintainer"
     },
     "organizer": { "@id": "{{ "/#org" | absURL }}" }
   }
@@ -114,6 +122,9 @@
 {{- $city := index $e "city" | default "" -}}
 {{- $country := index $e "country" | default "" -}}
 {{- $venue := index $e "venue" -}}
+{{- if and $venue (in (lower $venue) "to be confirmed") }}{{ $venue = "" }}{{ end -}}
+{{- $cc := upper $country -}}
+{{- $cur := index $currencies $cc | default (cond (in $eurozone $cc) "EUR" "USD") -}}
 {{- $capacity := index $e "capacity" -}}
 {{- $reg := index $e "registration_url" | default .Permalink -}}
 <script type="application/ld+json">
@@ -146,7 +157,7 @@
   "offers": {
     "@type": "Offer",
     "price": {{ $price }},
-    "priceCurrency": "USD",
+    "priceCurrency": {{ $cur }},
     "availability": "https://schema.org/InStock",
     "url": {{ $reg }}
   },
@@ -154,7 +165,7 @@
   "performer": {
     "@type": "Person",
     "name": "Timur Tukaev",
-    "jobTitle": "Cozystack maintainer, community manager, Aenix co-founder"
+    "jobTitle": "COO and co-founder of Ænix, Cozystack maintainer"
   },
   "organizer": { "@id": "{{ "/#org" | absURL }}" }
 }

@@ -5,7 +5,7 @@ description: "Andrei Kvapil on building Blockstor as a clean-room, Kubernetes-na
 date: "2026-08-10"
 author: "Andrei Kvapil"
 type: "article"
-topics: ["Kubernetes", "LINSTOR", "Storage", "AI/ML", "Cozystack", "Open Source"]
+topics: ["Kubernetes", "LINSTOR", "Storage", "AI and ML", "Cozystack", "Open Source"]
 language: "en"
 cover_image: "/img/blog/medium/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment/cover.jpg"
 source_url: "https://blog.aenix.io/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment-921f7d3a1137"

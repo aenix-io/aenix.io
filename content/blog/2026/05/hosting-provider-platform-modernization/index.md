@@ -6,7 +6,7 @@ date: "2026-05-12"
 cover_image: "/img/blog/covers/hosting-provider-platform-modernization.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU", "Multi-tenancy"]
+topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
 companion_landing: "/industries/hosting-providers/"
 companion_label: "See Ænix for hosting providers →"

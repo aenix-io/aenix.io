@@ -47,7 +47,7 @@ cascade:
     skip_breadcrumb_jsonld: true
 
 params:
-  description: "Aenix builds turnkey cloud platforms on Cozystack (CNCF): Public Cloud Platform for organisations selling cloud, Private Cloud Platform for regulated organisations running their own, and AI Platform for GPU workloads."
+  description: "Ænix builds cloud platforms on Cozystack (CNCF): Public Cloud for hosting providers, Private Cloud for regulated enterprises, AI Platform for GPU workloads."
   author: Ænix
   email: info@aenix.io
 
@@ -70,10 +70,14 @@ params:
   company:
     eu:
       name: AENIX s.r.o.
-      address: "Sladkovského 546/8273"
-      city: "Buštěhrad"
-      zip: "273 43"
+      # Registered office as entered in the Czech business register (ARES).
+      address: "U Trojice 2661/1e"
+      district: "České Budějovice 3"
+      city: "České Budějovice"
+      zip: "370 04"
       country: Czech Republic
+      country_code: CZ
+      registered: "2024-04-22"
       cin: "21493871"
       vat: CZ21493871
       databox: 2rvcmud
@@ -83,6 +87,7 @@ params:
       city: "Newark, County of New Castle"
       state: Delaware
       country: United States
+      country_code: US
       zip: "19713"
       registration: "10075938"
 

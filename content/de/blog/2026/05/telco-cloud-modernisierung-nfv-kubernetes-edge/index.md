@@ -7,7 +7,7 @@ date: "2026-05-28"
 cover_image: "/img/blog/covers/de/telco-cloud-modernisierung-nfv-kubernetes-edge.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["Telco", "Sovereignty", "Multi-tenancy", "Cozystack", "Cloud", "AI/ML"]
+topics: ["Telco", "Sovereignty", "Multi-tenancy", "Cozystack", "Cloud", "AI and ML"]
 language: "de"
 hreflang_en: "/blog/2026/05/telco-cloud-edge-nfv-modernization/"
 companion_landing: "/de/branchen/telco/"

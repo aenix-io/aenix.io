@@ -6,7 +6,7 @@ date: "2026-05-17"
 cover_image: "/img/blog/covers/launch-customer-facing-cloud-product.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["VMware", "Kubernetes", "Sovereignty", "AI/ML", "Multi-tenancy", "Hosting"]
+topics: ["VMware", "Kubernetes", "Sovereignty", "AI and ML", "Multi-tenancy", "Hosting"]
 language: "en"
 hreflang_de: "/de/blog/2026/05/cloud-produkt-starten-playbook-hosting-anbieter/"
 companion_landing: "/services/public-cloud-builder/"

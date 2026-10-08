@@ -51,10 +51,10 @@ footer{color:var(--mut);font-size:.9rem;padding:32px 0 48px;border-top:1px solid
   списка отозванных сертификатов.</p>
 
   <section id="by-serial" class="lookup">
-    <h2>Проверить сертификат по номеру</h2>
+    <h2 id="by-serial-h">Проверить сертификат по номеру</h2>
     <p>Введите номер вида <code>CCF-2026-XXXXX</code> — найдём сертификат и проверим его подпись.</p>
     <div class="lookup__row">
-      <input id="serial-in" type="text" placeholder="CCF-2026-XXXXX" autocomplete="off" spellcheck="false">
+      <input id="serial-in" type="text" aria-labelledby="by-serial-h" placeholder="CCF-2026-XXXXX" autocomplete="off" spellcheck="false">
       <button id="serial-go">Проверить</button>
     </div>
     <div id="serial-err" class="lookup__err"></div>

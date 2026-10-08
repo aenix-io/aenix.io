@@ -43,3 +43,6 @@ echo "==> publishing to static/idp-app"
 rm -rf "$SITE/static/idp-app"; mkdir -p "$SITE/static/idp-app"
 cp -R "$SRC/apps/cozyapps/dist/." "$SITE/static/idp-app/"
 echo "==> done: $(find "$SITE/static/idp-app" -type f | wc -l) files in static/idp-app"
+
+echo "==> robots, fonts and next-step bar for the vendored apps"
+python3 "$SITE/scripts/harden-static-apps.py"

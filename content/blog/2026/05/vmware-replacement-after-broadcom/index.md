@@ -6,7 +6,7 @@ date: "2026-05-30"
 cover_image: "/img/blog/covers/vmware-replacement-after-broadcom.jpg"
 author: "Aenix Team"
 type: "tutorial"
-topics: ["VMware", "Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "GPU"]
+topics: ["VMware", "Kubernetes", "Cozystack", "Sovereignty", "AI and ML", "GPU"]
 language: "en"
 images: ["img/og/og-vmware-replacement-broadcom.jpg"]
 companion_landing: "/alternatives/vmware-alternative/"

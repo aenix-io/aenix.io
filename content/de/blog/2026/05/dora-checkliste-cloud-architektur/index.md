@@ -6,7 +6,7 @@ date: "2026-05-01"
 cover_image: "/img/blog/covers/de/dora-checkliste-cloud-architektur.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["DORA", "Compliance", "Backup & DR", "Observability"]
+topics: ["DORA", "Compliance", "Backup and DR", "Observability"]
 language: "de"
 companion_landing: "/de/loesungen/dora-compliance/"
 quiz:

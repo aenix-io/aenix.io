@@ -2,7 +2,8 @@
        Hugo used in CI renders its built-in robots.txt over static/robots.txt,
        and production served a bare "User-agent: *" without the rules below. */ -}}
 User-agent: *
-Disallow: /web0826/
+# /web0826/ itself is crawlable on purpose: it carries <meta name="robots"
+# content="noindex">, which a crawler can only see if it may fetch the page.
 Disallow: /downloads/web0826/
 
 # Live-demo SPAs ship a bundled mock documentation site (including ru/ and kz/
@@ -24,7 +25,6 @@ User-agent: Perplexity-User
 User-agent: Google-Extended
 User-agent: Applebot-Extended
 User-agent: CCBot
-Disallow: /web0826/
 Disallow: /downloads/web0826/
 Disallow: /demo-app/docs/
 Disallow: /idp-app/docs/

@@ -6,31 +6,32 @@
     - DE page declares  hreflang_en: /<en-slug>/
     - RU page declares  hreflang_en: /<en-slug>/
 
+  A pair is emitted only when the counterpart page exists and declares this
+  page back (seo/locale-counterparts.html). One-way declarations — a DE URL
+  that pairs with a different EN page, or a counterpart that was never
+  built — are dropped instead of sending search engines a broken pair.
+
   If a counterpart exists, emits the pair plus `x-default` (always pointing
   at the EN version per Google's recommendation for sites with no neutral
   landing).
 
-  If no counterpart declared in frontmatter, emits only `x-default = self`
+  If no counterpart is verified, an EN page emits only `x-default = self`
   (so single-language pages still pass hreflang validation).
 
   Called from seo/head.html.
-
-  Last updated: 2026-07-15 (RU locale support for /ru/workshops/)
 */}}
 
-{{- $lang := .Params.language | default "en" -}}
-{{- $hreflangEN := .Params.hreflang_en -}}
-{{- $hreflangDE := .Params.hreflang_de -}}
-{{- $hreflangRU := .Params.hreflang_ru -}}
+{{- $c := partial "seo/locale-counterparts.html" . -}}
+{{- $lang := $c.lang -}}
 {{- $self := .Permalink -}}
 {{- $base := .Site.BaseURL | strings.TrimSuffix "/" -}}
 
 {{- if ne $lang "en" -}}
-  {{/* Non-EN page (de/ru) — emit self + EN counterpart (if declared) + x-default → EN */}}
+  {{/* Non-EN page (de/ru/fr) — emit self + EN counterpart (if verified) + x-default → EN */}}
   <link rel="alternate" hreflang="{{ $lang }}" href="{{ $self }}" />
-  {{- if $hreflangEN }}
-  <link rel="alternate" hreflang="en" href="{{ printf "%s%s" $base $hreflangEN }}" />
-  <link rel="alternate" hreflang="x-default" href="{{ printf "%s%s" $base $hreflangEN }}" />
+  {{- with $c.en }}
+  <link rel="alternate" hreflang="en" href="{{ printf "%s%s" $base . }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ printf "%s%s" $base . }}" />
   {{- else }}
   {{/* Non-EN page with no EN counterpart — emit no x-default at all.
        x-default names the version for users whose language we do not match;
@@ -38,13 +39,13 @@
        exists tells Google the wrong thing. Omitting it is valid. */}}
   {{- end }}
 {{- else -}}
-  {{/* EN page (default) — emit EN self + declared counterparts + x-default → EN */}}
+  {{/* EN page (default) — emit EN self + verified counterparts + x-default → EN */}}
   <link rel="alternate" hreflang="en" href="{{ $self }}" />
-  {{- if $hreflangDE }}
-  <link rel="alternate" hreflang="de" href="{{ printf "%s%s" $base $hreflangDE }}" />
+  {{- with $c.de }}
+  <link rel="alternate" hreflang="de" href="{{ printf "%s%s" $base . }}" />
   {{- end }}
-  {{- if $hreflangRU }}
-  <link rel="alternate" hreflang="ru" href="{{ printf "%s%s" $base $hreflangRU }}" />
+  {{- with $c.ru }}
+  <link rel="alternate" hreflang="ru" href="{{ printf "%s%s" $base . }}" />
   {{- end }}
   <link rel="alternate" hreflang="x-default" href="{{ $self }}" />
 {{- end -}}

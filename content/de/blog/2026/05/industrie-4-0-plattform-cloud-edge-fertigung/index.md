@@ -7,7 +7,7 @@ date: "2026-05-17"
 cover_image: "/img/blog/covers/de/industrie-4-0-plattform-cloud-edge-fertigung.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["NIS2", "Cozystack", "Sovereignty", "AI/ML", "Compliance"]
+topics: ["NIS2", "Cozystack", "Sovereignty", "AI and ML", "Compliance"]
 language: "de"
 hreflang_en: "/blog/2026/05/manufacturing-cloud-industry-40-edge/"
 companion_landing: "/de/branchen/fertigung/"

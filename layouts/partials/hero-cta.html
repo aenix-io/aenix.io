@@ -1,0 +1,44 @@
+{{- /*
+  hero-cta.html — primary action in the first screen of commercial landing
+  pages. Product, solution, industry, alternative, compare, migration and
+  service pages (and the calculators) used to open with the title only; the
+  first "Book a call" sat 1,800–5,000 px down.
+
+  Primary: book a discovery call (/contact/, which holds the discovery form
+  and calendar). Secondary: the live demo. German on /de/ pages.
+  Opt out with `hide_hero_cta: true`. A page without GEO blocks whose body
+  opens with a CTA row (first 600 characters) is skipped automatically.
+  Override per page with `hero_cta: {primary_text, primary_url,
+  secondary_text, secondary_url}`.
+*/ -}}
+{{- $types := slice "product" "solution-landing" "services-landing" "industry-landing" "alternative" "compare" "migration-hub" -}}
+{{- $calc := false -}}
+{{- range slice "/tco-calculator/" "/roi-calculator/" "/isp-calculator/" "/cloud-calculator/" "/de/roi-rechner/" "/de/cloud-rechner/" -}}
+  {{- if hasPrefix $.RelPermalink . }}{{ $calc = true }}{{ end -}}
+{{- end -}}
+{{- $show := or (in $types (.Params.page_type | default "")) $calc (in (slice "/pricing/" "/de/preise/") .RelPermalink) -}}
+{{- /* GEO blocks (direct_answer, quick_facts) render above the body, so a CTA
+       at the top of the body is not in the first screen when they exist. */ -}}
+{{- if and (not .Params.direct_answer) (not $calc) (in (substr .RawContent 0 600) "cta-primary") }}{{ $show = false }}{{ end -}}
+{{- if and $show (not .Params.hide_hero_cta) -}}
+  {{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
+  {{- $pt := cond $de "Discovery-Call buchen" "Book a call" -}}
+  {{- $pu := cond $de "/de/kontakt/" "/contact/" -}}
+  {{- $st := cond $de "Live-Demo öffnen" "Open the live demo" -}}
+  {{- $su := "/demo/" -}}
+  {{- if $calc -}}
+    {{- $pt = cond $de "Ergebnis mit einem Ingenieur besprechen" "Review your numbers with an engineer" -}}
+  {{- end -}}
+  {{- with .Params.hero_cta -}}
+    {{- with .primary_text }}{{ $pt = . }}{{ end -}}
+    {{- with .primary_url }}{{ $pu = . }}{{ end -}}
+    {{- with .secondary_text }}{{ $st = . }}{{ end -}}
+    {{- with .secondary_url }}{{ $su = . }}{{ end -}}
+  {{- end -}}
+<div class="cta-row cta-row--center hero-cta">
+  <a class="cta-primary" href="{{ $pu }}" data-cta="hero">{{ $pt }}</a>
+  {{- with $su }}
+  <a class="cta-secondary" href="{{ . }}" data-cta="hero-secondary">{{ $st }} →</a>
+  {{- end }}
+</div>
+{{- end -}}

@@ -1,0 +1,27 @@
+{{- /*
+  locale-counterparts.html — the page's language and the counterparts that
+  really exist and declare this page back. Returns a dict:
+    lang: "en" | "de" | "ru" | "fr"
+    en, de, ru: RelPermalink of the verified counterpart, or ""
+  Shared by seo/hreflang.html and the header language switch so both agree.
+*/ -}}
+{{- $lang := .Params.language | default "en" -}}
+{{- if hasPrefix .RelPermalink "/de/" }}{{ $lang = "de" }}{{ end -}}
+{{- $pairs := partialCached "seo/locale-pairs.html" "pairs" -}}
+{{- $self := .RelPermalink -}}
+{{- $out := dict "lang" $lang "en" "" "de" "" "ru" "" -}}
+{{- range $target := slice "en" "de" "ru" -}}
+  {{- if ne $target $lang -}}
+    {{- $url := index $.Params (printf "hreflang_%s" $target) | default "" -}}
+    {{- if $url -}}
+      {{- $url = strings.TrimSuffix "index.html" $url -}}
+      {{- with index $pairs $url -}}
+        {{- /* reciprocal: the counterpart points back at this page */ -}}
+        {{- if eq (index . $lang) $self -}}
+          {{- $out = merge $out (dict $target $url) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $out -}}

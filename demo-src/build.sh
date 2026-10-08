@@ -53,3 +53,6 @@ echo "==> publishing to static/demo-app"
 rm -rf "$SITE/static/demo-app"; mkdir -p "$SITE/static/demo-app"
 cp -R "$SRC/apps/portal/dist/." "$SITE/static/demo-app/"
 echo "==> done: $(find "$SITE/static/demo-app" -type f | wc -l) files in static/demo-app"
+
+echo "==> robots, fonts and next-step bar for the vendored apps"
+python3 "$SITE/scripts/harden-static-apps.py"

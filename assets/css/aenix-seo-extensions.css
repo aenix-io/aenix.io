@@ -6638,3 +6638,187 @@ a.tour-event__title:hover { color: var(--ws-blue); text-decoration: underline; }
 .blog-author__links a { color: var(--aenix-primary); font-weight: 600; text-decoration: none; }
 .blog-author__links a:hover { color: var(--aenix-accent); }
 .blog-post-hero__author a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ============================================================
+   MOBILE OVERFLOW GUARD
+   A `1fr` grid track has an implicit min-width:auto, so one wide
+   table, code line or long button label stretched the whole
+   article column and the page scrolled sideways on phones.
+   Tracks are clamped with minmax(0, 1fr); wide content scrolls
+   inside its own box; long button labels wrap.
+   ============================================================ */
+.blog-post-layout { grid-template-columns: 56px minmax(0, 1fr); }
+@media (max-width: 800px) {
+  .blog-post-layout { grid-template-columns: minmax(0, 1fr); }
+}
+.blog-post-layout > *,
+.blog-post-content,
+.page-content { min-width: 0; }
+/* .page-content centres itself with margin:auto, which inside a grid cell
+   sizes it to its min-content width instead of the track; pin it to the track. */
+.blog-post-layout > .blog-post-content { width: 100%; }
+.blog-post-content pre,
+.page-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.blog-post-content img,
+.blog-post-content video,
+.blog-post-content iframe,
+.page-content img,
+.page-content video,
+.page-content iframe { max-width: 100%; }
+@media (max-width: 640px) {
+  .cta-primary,
+  .cta-secondary,
+  .trust-badge,
+  .btn {
+    white-space: normal;
+    max-width: 100%;
+    text-align: center;
+  }
+  .cta-row > * { max-width: 100%; }
+  .blog-post-share ul,
+  .blog-share { flex-wrap: wrap; }
+}
+/* Long German compounds, identifiers in inline code and bare URLs break
+   instead of pushing the page wider than the phone screen. */
+h1, h2, h3, h4,
+.page-content,
+.blog-post-content { overflow-wrap: break-word; }
+html[lang="de"] h1,
+html[lang="de"] h2,
+html[lang="de"] h3 { hyphens: auto; }
+.page-content :not(pre) > code,
+.blog-post-content :not(pre) > code,
+.page-content p > a,
+.page-content li > a,
+.blog-post-content p > a,
+.blog-post-content li > a { overflow-wrap: anywhere; }
+
+/* ============================================================
+   HEADER — skip link, language switch, narrow-desktop fit
+   ============================================================ */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -100px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: var(--brand-secondary, #0a6ed1);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus { top: 12px; outline: 2px solid #fff; outline-offset: 2px; }
+
+.header-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.header-lang:hover { color: var(--brand-primary); }
+.header-lang:focus-visible { outline: 2px solid var(--brand-primary, #01a5ff); outline-offset: 2px; }
+.mobile-nav-item--lang .mobile-nav-link { color: var(--text-secondary); font-weight: 500; }
+
+/* The full navigation needs about 1,240 px in German and 1,110 px in
+   English. Between the burger breakpoint and 1,279 px the header used to
+   overflow and cut off the last dropdown. Tighten the spacing there; German
+   labels are longer, so German pages switch to the burger menu instead. */
+@media (min-width: 961px) and (max-width: 1279px) {
+  .site-header .nav-link { padding: 6px 7px; }
+  .site-header .nav-item--cta { margin-left: 4px; }
+  .site-header .nav-link--cta { padding: 7px 12px; }
+  .site-header .main-nav { gap: 4px; }
+  .site-header .github-link { display: none; }
+}
+@media (max-width: 1279px) {
+  html[lang="de"] .site-header .main-nav { display: none; }
+  html[lang="de"] .mobile-menu-toggle { display: flex; }
+}
+/* Dropdowns of the last top-level items open towards the left so they stay
+   inside the viewport. */
+.nav-list > .nav-item:last-child > .dropdown-menu,
+.nav-list > .nav-item:nth-last-child(2) > .dropdown-menu:not(.dropdown-menu--mega) {
+  left: auto;
+  right: 0;
+}
+
+/* ============================================================
+   FOOTER — columns that fit the viewport, legal entity line
+   Six link columns in a flex row with 4rem gaps needed ~1,200 px, so
+   the page scrolled sideways on 1,024–1,199 px screens.
+   ============================================================ */
+.footer-top { min-width: 0; }
+.footer-nav {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 2rem 2.5rem;
+}
+@media (max-width: 1279px) {
+  .footer-nav { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 768px) {
+  .footer-nav { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+}
+.footer-nav-group a { overflow-wrap: anywhere; }
+.footer-legal {
+  flex-basis: 100%;
+  margin: 0.5rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+/* Wide dropdowns stay inside the viewport: grouped panels centre on their
+   menu item, the mega panel narrows below 1,366 px and anchors to its item's
+   left edge below 1,280 px. */
+.nav-item.has-dropdown .dropdown-menu--grouped:not(.dropdown-menu--mega) {
+  left: 50%;
+  translate: -50% 0;
+}
+@media (max-width: 1365px) {
+  .nav-item.has-dropdown .dropdown-menu--mega {
+    width: 620px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 1279px) {
+  .nav-item.has-dropdown .dropdown-menu--mega {
+    left: 0;
+    translate: 0 0;
+  }
+}
+
+/* ============================================================
+   SMALL UX FIXES (acceptance audit)
+   ============================================================ */
+.page-hero-trust--pills { display: flex; flex-wrap: wrap; }
+a.trust-pill { text-decoration: none; }
+a.trust-pill:hover { color: var(--aenix-primary, #01a5ff); border-color: rgba(1, 165, 255, 0.4); }
+/* The architecture diagram's labels shrink to ~6 px on phones; the copy and
+   the CTAs carry the hero there. */
+@media (max-width: 600px) {
+  .page-home .hero-split__visual { display: none; }
+}
+/* Tap targets: blog filter chips and carousel dots were 20 px and 8 px tall. */
+@media (max-width: 768px) {
+  .blog-chip { min-height: 32px; }
+}
+.quote-carousel__dot { position: relative; }
+.quote-carousel__dot::after { content: ""; position: absolute; inset: -8px; }
+/* Pipedrive form: reserve space while the third-party iframe loads and
+   always offer a plain fallback under it. */
+.pipedrive-form .pipedriveWebForms { min-height: 320px; }
+.pipedrive-form__fallback { margin: 0.75rem 0 0; font-size: 0.875rem; color: var(--aenix-text-muted); }
+.clients-caption { margin: 0.5rem 0 1.5rem; font-size: 0.8125rem; color: var(--aenix-text-muted); text-align: center; }

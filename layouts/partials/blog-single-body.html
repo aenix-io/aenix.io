@@ -22,9 +22,12 @@
       </div>
       <h1 class="blog-post-hero__title">{{ .Title }}</h1>
       {{ with .Description }}<p class="blog-post-hero__lede">{{ . }}</p>{{ end }}
-      {{ if $topics }}
+      {{/* Link each chip to the term page Hugo actually built (a hand-made
+           /topics/<urlize>/ path missed terms like "Backup & DR"), and show
+           the term as written in front matter, not humanize|title ("Vmware"). */}}
+      {{ with .GetTerms "topics" }}
       <div class="blog-post-hero__topics">
-        {{ range $topics }}<a href="/topics/{{ . | urlize }}/" class="blog-post-hero__topic">{{ . | humanize | title }}</a>{{ end }}
+        {{ range . }}<a href="{{ .RelPermalink }}" class="blog-post-hero__topic">{{ .LinkTitle }}</a>{{ end }}
       </div>
       {{ end }}
     </div>
@@ -62,21 +65,34 @@
       {{ if $companion }}
       <aside class="blog-post-companion">
         <div class="blog-post-companion__label">{{ if eq .Params.language "de" }}Suchen Sie die passende Leistung?{{ else }}Looking for the service?{{ end }}</div>
-        <a href="{{ $companion }}" class="blog-post-companion__link">{{ .Params.companion_label | default "See the related Aenix engagement →" }}</a>
+        <a href="{{ $companion }}" class="blog-post-companion__link">{{ .Params.companion_label | default "See the related Ænix engagement →" }}</a>
       </aside>
       {{ end }}
 
       {{/* Funnel-aware end-of-article CTA — tutorials point to the assessment,
            other articles to a discovery call; events/releases are suppressed. */}}
+      {{- $de := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") -}}
       {{- if not (in (slice "announcement" "news") $type) -}}
-      {{- $de := eq .Params.language "de" -}}
       {{- $tut := eq $type "tutorial" -}}
-      {{- $heading := cond $tut (cond $de "Möchten Sie das mit uns umsetzen?" "Want this built with you?") (cond $de "Mit Aenix sprechen?" "Talk to Aenix?") -}}
+      {{- $heading := cond $tut (cond $de "Möchten Sie das mit uns umsetzen?" "Want this built with you?") (cond $de "Mit Ænix sprechen?" "Talk to Ænix?") -}}
       {{- $btn := cond $tut (cond $de "Assessment anfragen" "Get readiness assessment") (cond $de "Discovery-Call buchen" "Book a call") -}}
       {{- $url := cond $tut (cond $de "/de/dienstleistungen/platform-readiness-assessment/" "/services/platform-readiness-assessment/") (cond $de "/de/kontakt/" "/contact/") -}}
       <aside class="blog-post-cta">
         <h3 class="blog-post-cta__heading">{{ $heading }}</h3>
         <div class="cta-row"><a class="cta-primary" href="{{ $url }}">{{ $btn }}</a></div>
+      </aside>
+      {{- else if not $companion -}}
+      {{/* Release and news posts draw open-source Cozystack users — the readers
+           most likely to need support for their own clusters. A short, quiet
+           block instead of the sales CTA; posts with companion_landing already
+           carry their own card above. */}}
+      <aside class="blog-post-cta blog-post-cta--support">
+        <h3 class="blog-post-cta__heading">{{ cond $de "Sie betreiben Cozystack selbst?" "Running Cozystack yourself?" }}</h3>
+        <p class="blog-post-cta__text">{{ cond $de "Ænix bietet Enterprise-Support für selbst betriebene Cozystack-Cluster: Upgrades, Störungsbehebung und Architekturfragen mit festen Reaktionszeiten." "Ænix offers enterprise support for self-run Cozystack clusters: upgrades, incident help and architecture questions with defined response times." }}</p>
+        <div class="cta-row">
+          <a class="cta-primary" href="{{ cond $de "/de/produkte/cozystack-enterprise-support/" "/products/cozystack-enterprise-support/" }}">{{ cond $de "Support-Optionen ansehen" "See support options" }}</a>
+          <a class="cta-secondary" href="{{ cond $de "/de/kontakt/" "/contact/" }}">{{ cond $de "Kontakt aufnehmen" "Talk to us" }}</a>
+        </div>
       </aside>
       {{- end -}}
     </div>
@@ -85,6 +101,7 @@
   {{ partial "blog/related.html" . }}
 
   <div class="container blog-post-footer">
-    <a href="/blog/" class="blog-post-back">← Back to blog</a>
+    {{- $deBack := or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") }}
+    <a href="{{ cond $deBack "/de/blog/" "/blog/" }}" class="blog-post-back">{{ cond $deBack "← Zurück zum Blog" "← Back to blog" }}</a>
   </div>
 </article>
