@@ -1,5 +1,6 @@
 ---
 title: "Internal developer platform — built for adoption, not just architecture"
+seo_title: "Internal developer platform built for adoption"
 description: "IDP engagements measured in adoption, not architecture: 5-10 golden paths on a multi-tenant Kubernetes foundation, with handover. Backstage only where it fits."
 related_pages:
   - /services/platform-engineering/
@@ -11,7 +12,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **An internal developer platform (IDP) is a self-service capability layer that lets product engineers provision environments, deploy applications, and access observability, secrets, and networking through opinionated golden paths instead of infrastructure tickets. Aenix builds IDPs that get adopted, not just architected: 5-10 documented golden paths on a multi-tenant Kubernetes foundation, with operational runbooks and knowledge transfer so the customer's platform team owns the result. The foundation is typically Cozystack, an Apache 2.0 CNCF project combining KubeVirt VMs and containers, Cilium eBPF networking, LINSTOR storage, and Tenant-CRD multi-tenancy. Engagements run in three phases — readiness assessment, build, and optional managed operation — and use developer portals such as Backstage only where they fit, never as a destination.**
+  **An internal developer platform (IDP) is a self-service capability layer that lets product engineers provision environments, deploy applications, and access observability, secrets, and networking through opinionated golden paths instead of infrastructure tickets. Ænix builds IDPs that get adopted, not just architected: 5-10 documented golden paths on a multi-tenant Kubernetes foundation, with operational runbooks and knowledge transfer so the customer's platform team owns the result. The foundation is typically Cozystack, an Apache 2.0 CNCF project combining KubeVirt VMs and containers, Cilium eBPF networking, LINSTOR storage, and Tenant-CRD multi-tenancy. Engagements run in three phases — readiness assessment, build, and optional managed operation — and use developer portals such as Backstage only where they fit, never as a destination.**
 quick_facts:
   - label: "What it is"
     value: "A self-service platform giving product teams golden paths for provisioning, deployment, and operations on a multi-tenant Kubernetes foundation"
@@ -22,7 +23,7 @@ quick_facts:
   - label: "Who it's for"
     value: "Organizations with 3+ product teams, weeks-long time-to-environment, and inconsistent per-team infrastructure patterns"
   - label: "Engagement timeline"
-    value: "Phase 1 assessment 14-28 days; Phase 2 build 3-9 months; optional Phase 3 managed operation"
+    value: "Phase 1 assessment 14 or 28 days; Phase 2 build 3-9 months; optional Phase 3 managed operation"
   - label: "Foundation"
     value: "Cozystack pattern — KubeVirt VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy"
   - label: "Developer portal"
@@ -31,15 +32,15 @@ faq:
   - q: "Internal developer platform vs internal developer portal — which do we need?"
     a: "A portal (Backstage, Port, Cortex) is the UI and catalog; a platform is the underlying capability stack. Most organizations need the platform first. For teams under roughly 200 engineers, a well-documented platform with simple IaC entry points is usually enough; portal value emerges at scale."
   - q: "Do we have to build on Cozystack?"
-    a: "No. Cozystack is the foundation Aenix recommends when it fits, which for multi-tenant or sovereign use cases it usually does. For organizations deeply on OpenShift, vanilla Kubernetes, or other distributions, Aenix extends the existing platform instead."
+    a: "No. Cozystack is the foundation Ænix recommends when it fits, which for multi-tenant or sovereign use cases it usually does. For organizations deeply on OpenShift, vanilla Kubernetes, or other distributions, Ænix extends the existing platform instead."
   - q: "How long is a typical IDP engagement?"
-    a: "Phase 1 assessment runs 14-28 days. Phase 2 build runs 3-9 months elapsed depending on scope: foundation first (1-2 months), golden paths layered on (1-3 months), with knowledge transfer running throughout."
+    a: "Phase 1 assessment runs 14 or 28 days. Phase 2 build runs 3-9 months elapsed depending on scope: foundation first (1-2 months), golden paths layered on (1-3 months), with knowledge transfer running throughout."
   - q: "What happens if our team can't operate the IDP after handover?"
-    a: "Two paths: an optional managed-services engagement where Aenix operates the platform under contract, or an extension of the build engagement to grow internal platform-team capacity. The decision is named explicitly during the assessment phase."
-  - q: "Why does Aenix not just sell Backstage?"
-    a: "Backstage is a tool, not a destination. Aenix uses it where it serves the customer's operational maturity and recommends alternatives (Port, Cortex, custom) or no portal at all when they fit better. The decision is calibrated against the team's needs, not vendor incentives."
+    a: "Two paths: an optional managed-services engagement where Ænix operates the platform under contract, or an extension of the build engagement to grow internal platform-team capacity. The decision is named explicitly during the assessment phase."
+  - q: "Why does Ænix not just sell Backstage?"
+    a: "Backstage is a tool, not a destination. Ænix uses it where it serves the customer's operational maturity and recommends alternatives (Port, Cortex, custom) or no portal at all when they fit better. The decision is calibrated against the team's needs, not vendor incentives."
   - q: "Is the platform open source, and do we own it?"
-    a: "Yes. The foundation is Cozystack, an Apache 2.0 CNCF project with no per-core licensing. The IDP Aenix builds is one the customer owns and operates, with no vendor-roadmap lock-in. Aenix sells the productized Ænix Platform and services on top."
+    a: "Yes. The foundation is Cozystack, an Apache 2.0 CNCF project with no per-core licensing. The IDP Ænix builds is one the customer owns and operates, with no vendor-roadmap lock-in. Ænix sells support subscriptions, three commercial platforms and services on top."
 hreflang_de: /de/dienstleistungen/internal-developer-platform/
 ---
 
@@ -50,7 +51,7 @@ hreflang_de: /de/dienstleistungen/internal-developer-platform/
 
 Ænix builds internal developer platforms (IDPs) that get adopted. Not Backstage as wallpaper over chaos; an opinionated platform with golden paths, multi-tenant foundations, and operational handoff your platform team can sustain.
 
-> **Pairs with:** **[Developer self-service](/products/private-cloud-platform/)(/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[Developer self-service](/products/private-cloud-platform/)** — Internal Developer Platform layer (GitLab automation, Argo CD workflows, APIs, golden paths, productivity dashboards) on top of the Cozystack cloud foundation. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -156,7 +157,7 @@ Without explicit headcount and protected golden-path work time, the platform tea
 
 The IDP engagement runs in three phases:
 
-- **Phase 1: Platform Readiness Assessment (14-28 days)** — current-state platform maturity, target IDP architecture, golden-path priorities, RACI for platform team. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+- **Phase 1: Platform Readiness Assessment (14 or 28 days)** — current-state platform maturity, target IDP architecture, golden-path priorities, RACI for platform team. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 - **Phase 2: Build engagement (3-9 months)** — Ænix engineers integrated with your platform team, building the foundation, golden paths, and runbooks. Knowledge transfer is a first-class deliverable, not an afterthought.
 - **Phase 3 (optional): Managed operation** — for organizations that need the IDP but cannot build internal platform-team capacity.
 
@@ -184,7 +185,7 @@ Engagements typically start with Phase 1; Phase 2 sequencing emerges from assess
 | When | What | Output |
 |---|---|---|
 | **Day 0** | 30-min discovery call (free) | Confirm fit, identify scope and IDP stage |
-| **Phase 1: Assessment (14-28 days)** | Platform Readiness Assessment | Target IDP architecture, golden-path priorities, RACI |
+| **Phase 1: Assessment (14 or 28 days)** | Platform Readiness Assessment | Target IDP architecture, golden-path priorities, RACI |
 | **Phase 2: Build (3-9 months)** | Foundation + golden paths + runbooks + knowledge transfer | Production IDP, operational by your team |
 | **Phase 3: Operate (optional, ongoing)** | Managed-services or fully in-house | Sustained IDP |
 
@@ -196,7 +197,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 <!-- BLOCK 8: PROOF -->
 
-## IDPs we've built
+## Companies running platforms built with Ænix
 
 {{< clients >}}
 
