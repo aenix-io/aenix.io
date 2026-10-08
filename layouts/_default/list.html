@@ -36,6 +36,7 @@
     {{- $sub := .Params.hero_subtitle | default .Description -}}
     {{ if and $sub (not $landing) }}<p class="page-hero-subtitle">{{ $sub }}</p>{{ end }}
     {{ partial "hero-cta.html" . }}
+    {{ partial "enquiry-topic.html" . }}
   </div>
 </section>
 
