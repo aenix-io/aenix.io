@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Financial Services", "DORA", "Compliance", "Sovereignty", "Cozystack"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/finanzdienstleister-cloud-tlpt-readiness/"
 companion_landing: "/industries/financial-services/"
 companion_label: "See financial-services industry page →"
 quiz:
