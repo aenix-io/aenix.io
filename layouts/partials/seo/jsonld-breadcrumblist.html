@@ -23,17 +23,31 @@
   {{- $crumbs = .Params.breadcrumb -}}
 {{- else -}}
   {{- /* Auto-derive from URL */ -}}
-  {{- $crumbs = $crumbs | append (dict "name" "Home" "url" "/") -}}
   {{- $segments := split (strings.TrimPrefix "/" (strings.TrimSuffix "/" .RelPermalink)) "/" -}}
   {{- $cumulative := "" -}}
+  {{- /* German pages start at the German home page, not at the English one */ -}}
+  {{- if and (gt (len $segments) 1) (eq (index $segments 0) "de") -}}
+    {{- $crumbs = $crumbs | append (dict "name" "Startseite" "url" "/de/") -}}
+    {{- $segments = after 1 $segments -}}
+    {{- $cumulative = "/de" -}}
+  {{- else -}}
+    {{- $crumbs = $crumbs | append (dict "name" "Home" "url" "/") -}}
+  {{- end -}}
   {{- $last := index $segments (sub (len $segments) 1) -}}
   {{- range $segments -}}
     {{- if . -}}
       {{- $cumulative = printf "%s/%s" $cumulative . -}}
-      {{- $name := . | humanize | title -}}
-      {{- /* the leaf reads better as the page's own title than as a humanized slug */ -}}
-      {{- if and (eq . $last) $.Title -}}{{- $name = $.Title -}}{{- end -}}
-      {{- $crumbs = $crumbs | append (dict "name" $name "url" (printf "%s/" $cumulative)) -}}
+      {{- if eq . $last -}}
+        {{- /* the leaf reads better as the page's own title than as a humanized slug */ -}}
+        {{- $crumbs = $crumbs | append (dict "name" ($.Title | default (. | humanize | title)) "url" (printf "%s/" $cumulative)) -}}
+      {{- else -}}
+        {{- /* only segments that are real pages: a blog post's /blog/2026/09/ has
+               none and is a 404, and humanize made "2026th" and "9th" of them */ -}}
+        {{- $seg := site.GetPage $cumulative -}}
+        {{- if $seg -}}
+          {{- $crumbs = $crumbs | append (dict "name" $seg.LinkTitle "url" $seg.RelPermalink) -}}
+        {{- end -}}
+      {{- end -}}
     {{- end -}}
   {{- end -}}
 {{- end -}}
