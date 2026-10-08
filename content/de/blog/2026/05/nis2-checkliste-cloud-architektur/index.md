@@ -6,7 +6,7 @@ date: "2026-05-01"
 cover_image: "/img/blog/covers/de/nis2-checkliste-cloud-architektur.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["NIS2", "Cozystack", "Compliance", "Backup & DR"]
+topics: ["NIS2", "Cozystack", "Compliance", "Backup and DR"]
 language: "de"
 companion_landing: "/de/loesungen/nis2-compliance/"
 quiz:

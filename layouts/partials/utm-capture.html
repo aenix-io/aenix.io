@@ -2,39 +2,71 @@
   utm-capture — first-party UTM capture so Pipedrive Web Forms attribute leads to
   the campaign that brought the visitor, even after internal navigation.
 
-  - Captures utm_* + gclid on ANY page into first-party cookies (first-touch kept
-    forever, last-touch overwritten). Shared across *.aenix.io.
-  - Does NOT touch the URL globally (so it never self-tags GA4 on normal pages).
-  - Exposes window.aenixUTM.restoreForForm(): form pages call it right before the
-    Pipedrive loader so the loader (which reads UTM from the page URL) can capture
-    the stored campaign. GA4 here is consent-gated (loads later via consent.js),
-    which keeps the self-tag risk low.
+  - Reads utm_* + gclid from the landing URL on any page.
+  - Stores them in first-party cookies (first touch kept, last touch
+    overwritten, 90 days, shared across *.aenix.io) ONLY when the visitor has
+    granted analytics or marketing consent (choice stored by /js/consent.js).
+    Without consent the values live in memory for the current page only; a
+    later "accept" on the same page stores them (aenix:consent-changed), a
+    "reject" deletes any stored ones.
+  - window.aenixUTM.restoreForForm(): form pages call it right before the
+    Pipedrive loader, which reads UTM from the page URL. The stored campaign
+    is put into the URL only until the form iframe has been created, then the
+    clean URL is restored — otherwise GA4 would see utm_* on every form page
+    view and start a fake campaign session.
 */}}
 <script>
 (function(){
   var P=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','utm_id','gclid'];
+  var KEY='aenix-consent-v1';
   function gc(n){var m=document.cookie.match('(^|;)\\s*'+n+'=([^;]*)');return m?decodeURIComponent(m[2]):'';}
-  function sc(n,v){var d=new Date();d.setTime(d.getTime()+90*864e5);
+  function sc(n,v,days){var d=new Date();d.setTime(d.getTime()+days*864e5);
     var base=n+'='+encodeURIComponent(v)+';expires='+d.toUTCString()+';path=/;SameSite=Lax';
     /* Share across *.aenix.io in production; fall back to a host-only cookie on
        deploy previews and localhost, where the .aenix.io domain write is dropped. */
     document.cookie=base+';domain=.aenix.io';
-    if(!gc(n)){document.cookie=base;}}
+    if(days>0&&!gc(n)){document.cookie=base;}
+    if(days<=0){document.cookie=base;}}
+  function consented(c){
+    if(!c){try{c=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){c=null;}
+      if(c&&c.expiry&&Date.now()>c.expiry)c=null;}
+    return !!(c&&(c.analytics||c.marketing));
+  }
   var q=new URLSearchParams(location.search),cur={},has=false;
   P.forEach(function(k){var v=q.get(k);if(v){cur[k]=v;has=true;}});
-  if(has){
-    sc('aenix_utm_last',JSON.stringify(cur));
-    if(!gc('aenix_utm_first')){ cur._ts=Date.now(); sc('aenix_utm_first',JSON.stringify(cur)); }
+  function store(){
+    if(!has)return;
+    sc('aenix_utm_last',JSON.stringify(cur),90);
+    if(!gc('aenix_utm_first')){var f=JSON.parse(JSON.stringify(cur));f._ts=Date.now();sc('aenix_utm_first',JSON.stringify(f),90);}
   }
+  if(consented())store();
+  document.addEventListener('aenix:consent-changed',function(e){
+    if(consented(e.detail))store();
+    else{sc('aenix_utm_last','',-1);sc('aenix_utm_first','',-1);}
+  });
+  function parse(n){try{return JSON.parse(gc(n)||'{}');}catch(e){return{};}}
   window.aenixUTM={
-    last:function(){try{return JSON.parse(gc('aenix_utm_last')||'{}');}catch(e){return{};}},
-    first:function(){try{return JSON.parse(gc('aenix_utm_first')||'{}');}catch(e){return{};}},
+    last:function(){return has?cur:parse('aenix_utm_last');},
+    first:function(){var f=parse('aenix_utm_first');return Object.keys(f).length?f:(has?cur:{});},
     restoreForForm:function(){
       var l=this.last(); var keys=Object.keys(l).filter(function(k){return k.charAt(0)!=='_';});
       if(!keys.length) return;
-      var u=new URL(location.href),changed=false;
+      var clean=location.href;
+      var u=new URL(clean),changed=false;
       keys.forEach(function(k){ if(!u.searchParams.get(k)){ u.searchParams.set(k,l[k]); changed=true; } });
-      if(changed){ try{ history.replaceState(null,'',u.toString()); }catch(e){} }
+      if(!changed) return;
+      try{ history.replaceState(history.state,'',u.toString()); }catch(e){ return; }
+      window.aenixUTM.pendingCleanUrl=clean; /* consent.js sends this as page_location */
+      /* The loader copies document.URL into the iframe config when it creates
+         the iframe; put the clean URL back as soon as that has happened. */
+      var done=false;
+      function restore(){ if(done)return; done=true; try{ history.replaceState(history.state,'',clean); }catch(e){} window.aenixUTM.pendingCleanUrl=''; if(obs)obs.disconnect(); }
+      var obs=null;
+      try{
+        obs=new MutationObserver(function(){ if(document.querySelector('.pipedriveWebForms iframe')) restore(); });
+        obs.observe(document.documentElement,{childList:true,subtree:true});
+      }catch(e){}
+      setTimeout(restore,15000);
     }
   };
 })();

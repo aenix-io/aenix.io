@@ -6,7 +6,7 @@ date: "2026-05-26"
 cover_image: "/img/blog/covers/smart-grid-platform-architecture-it-ot.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["NIS2", "AI/ML", "GPU", "Compliance"]
+topics: ["NIS2", "AI and ML", "GPU", "Compliance"]
 language: "en"
 companion_landing: "/industries/energy/"
 quiz:

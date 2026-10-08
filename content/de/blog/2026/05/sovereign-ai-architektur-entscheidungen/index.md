@@ -7,7 +7,7 @@ date: "2026-05-27"
 cover_image: "/img/blog/covers/de/sovereign-ai-architektur-entscheidungen.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["DORA", "NIS2", "Sovereignty", "AI/ML", "Multi-tenancy", "Financial Services"]
+topics: ["DORA", "NIS2", "Sovereignty", "AI and ML", "Multi-tenancy", "Financial Services"]
 language: "de"
 hreflang_en: "/blog/2026/05/sovereign-ai-architecture-decisions/"
 companion_landing: "/de/loesungen/sovereign-ai/"

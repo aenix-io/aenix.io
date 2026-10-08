@@ -1,15 +1,13 @@
-# Aenix.io — Netlify redirects
+# Aenix.io — Netlify redirects. NETLIFY DEPLOY PREVIEWS ONLY.
 #
-# NOTE: production deploys to GitHub Pages, which ignores this file.
-# Legacy path redirects are implemented as Hugo `aliases:` in page frontmatter.
-# This file is kept for Netlify deploy previews only.
+# Production is GitHub Pages, which ignores this file: nothing here has any
+# effect on https://aenix.io/. Every redirect production needs is a Hugo
+# `aliases:` entry in the target page's front matter (all rules below exist
+# there too), or a static redirect page under static/. The two 410 rules
+# cannot be reproduced on GitHub Pages; those URLs return the site 404 page.
+# Add new redirects as aliases, not here.
 # Format: from-path  to-path  status-code
 # https://docs.netlify.com/routing/redirects/redirect-options/
-#
-# Maintained in: hugo-templates/static/_redirects
-# Deployed by:   scripts/bootstrap-aenix-repo.sh → <repo>/static/_redirects
-#
-# Last updated: 2026-05-10
 
 # ─── URL renames (cleaner slugs) ──────────────────────────────────────────────
 /about-us/                          /about/                               301
@@ -17,9 +15,9 @@
 /contact-us/                        /contact/                             301
 /kubernetes-deep-dive-course/       /kubernetes-deep-dive/                301
 
-# ─── Legacy product / service stubs (folded into editions / case studies) ─────
+# ─── Legacy product / service stubs (folded into platforms / case studies) ─────
 /managed-kubernetes/                /products/public-cloud-platform/   301
-/kubefarm/                          /case-studies/kubernetes-in-kubernetes-and-pxe-bootable-server-farm/  301
+/kubefarm/                          /case-studies/                        301
 
 # ─── External app redirect (existing — preserved) ────────────────────────────
 /cloud/                             https://cloud.aenix.io/               302

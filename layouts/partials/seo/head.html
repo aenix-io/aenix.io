@@ -82,6 +82,10 @@
 
 {{- with .Params.robots }}
 <meta name="robots" content="{{ . }}" />
+{{- else }}
+{{- if (partial "seo/noindex.html" .).emit }}
+<meta name="robots" content="noindex, follow" />
+{{- end }}
 {{- end }}
 
 {{/* ============================================================ */}}
@@ -112,17 +116,18 @@
 <meta property="article:tag" content="{{ . }}" />
 {{- end }}
 {{- end }}
-<meta property="og:description" content="{{ .Description }}" />
+<meta property="og:description" content="{{ partial "seo/description.html" . }}" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:type" content="{{ if eq $type "blog-article" }}article{{ else }}website{{ end }}" />
 <meta property="og:locale" content="{{ if eq .Params.language "de" }}de_DE{{ else if eq .Params.language "ru" }}ru_RU{{ else if eq .Params.language "fr" }}fr_FR{{ else }}en_US{{ end }}" />
-{{- if and (ne .Params.language "de") .Params.hreflang_de }}
+{{- $pairs := partial "seo/locale-counterparts.html" . -}}
+{{- if $pairs.de }}
 <meta property="og:locale:alternate" content="de_DE" />
 {{- end }}
-{{- if and (ne .Params.language "ru") .Params.hreflang_ru }}
+{{- if $pairs.ru }}
 <meta property="og:locale:alternate" content="ru_RU" />
 {{- end }}
-{{- if and (ne (.Params.language | default "en") "en") .Params.hreflang_en }}
+{{- if $pairs.en }}
 <meta property="og:locale:alternate" content="en_US" />
 {{- end }}
 {{- $ogImg := partial "seo/og-image.html" . -}}
@@ -146,7 +151,7 @@
 {{/* SEO extensions stylesheet (badge / callout / card / 404)        */}}
 {{/* ============================================================ */}}
 
-{{ $seoCss := resources.Get "css/aenix-seo-extensions.css" | fingerprint }}
+{{ $seoCss := resources.Get "css/aenix-seo-extensions.css" | minify | fingerprint }}
 {{ with $seoCss }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
 
 {{/* ============================================================ */}}
@@ -179,8 +184,8 @@
   {{ partial "seo/jsonld-blogposting.html" . }}
 {{- end }}
 
-{{- if eq $type "product" }}
-  {{ partial "seo/jsonld-softwareapplication.html" . }}
+{{- if or (eq $type "product") (in (slice "/pricing/" "/de/preise/") .RelPermalink) }}
+  {{ partial "seo/jsonld-product.html" . }}
 {{- end }}
 
 {{- if eq $type "event-landing" }}

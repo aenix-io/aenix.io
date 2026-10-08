@@ -5,7 +5,7 @@ description: "Join us on December 3 for CozySummit Virtual, the first conference
 date: "2025-08-14"
 author: "Timur Tukaev"
 type: "news"
-topics: ["Kubernetes", "Cozystack", "AI/ML", "CNCF"]
+topics: ["Kubernetes", "Cozystack", "AI and ML", "CNCF"]
 language: "en"
 cover_image: "/img/blog/medium/invitation-to-cozysummit-virtual-december-3/cover.jpg"
 source_url: "https://medium.com/@tym83/invitation-to-cozysummit-virtual-december-3-050bc72f1b4b"

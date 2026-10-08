@@ -1,3 +1,8 @@
+# Netlify deploy previews only. Production is GitHub Pages, which ignores
+# this file and cannot set response headers. /web0826/ carries its own
+# <meta name="robots" content="noindex">, and robots.txt (layouts/robots.txt)
+# keeps crawlers out of /downloads/web0826/.
+
 /web0826/
   X-Robots-Tag: noindex, nofollow
 

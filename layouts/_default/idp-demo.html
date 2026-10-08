@@ -24,7 +24,10 @@
     html, body { height: auto; overflow: auto; }
     .idp-demo { height: 560px; flex: 0 0 auto; }
   }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .demo-cta { font-weight: 600; margin-left: .35rem; white-space: nowrap; }
 </style>
-<iframe class="idp-demo" src="/idp-app/" title="Ænix IDP live demo" allow="clipboard-read; clipboard-write"></iframe>
-<div class="idp-demo__hint">Interactive demo of the Ænix Internal Developer Platform — application catalog, topology, and the visual template builder — running entirely in your browser on mock data. Looking for the customer-facing cloud console? <a href="/demo/">Try the Ænix Platform demo</a>.</div>
+<h1 class="sr-only">{{ .Title }}</h1>
+<iframe class="idp-demo" src="/idp-app/" title="Developer self-service live demo (Ænix Private Cloud Platform)" allow="clipboard-read; clipboard-write"></iframe>
+<div class="idp-demo__hint">Interactive demo of developer self-service in Ænix Private Cloud Platform — application catalog, topology and the visual template builder — running in your browser on mock data. Customer-facing cloud console: <a href="/demo/">try that demo</a>. <a class="demo-cta" href="/contact/" data-cta="demo">Book a 30-minute guided walkthrough →</a></div>
 {{ end }}

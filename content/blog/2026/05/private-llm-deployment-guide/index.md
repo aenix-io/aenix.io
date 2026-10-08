@@ -6,7 +6,7 @@ date: "2026-05-23"
 cover_image: "/img/blog/covers/private-llm-deployment-guide.jpg"
 author: "Aenix Team"
 type: "tutorial"
-topics: ["DORA", "Kubernetes", "Sovereignty", "AI/ML", "GPU", "Multi-tenancy"]
+topics: ["DORA", "Kubernetes", "Sovereignty", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
 companion_landing: "/solutions/sovereign-ai/"
 quiz:

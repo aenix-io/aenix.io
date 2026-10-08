@@ -47,7 +47,7 @@
         <span class="blog-filters__label">Topic:</span>
         <button class="blog-chip blog-chip--active" data-filter-group="topic" data-filter-value="">All</button>
         {{ range $topics }}
-        <button class="blog-chip" data-filter-group="topic" data-filter-value="{{ . | urlize }}">{{ . | humanize | title }}</button>
+        <button class="blog-chip" data-filter-group="topic" data-filter-value="{{ . | urlize }}">{{ . }}</button>
         {{ end }}
       </div>
       {{ end }}
@@ -79,7 +79,7 @@
           {{ with .Params.description }}<p class="card-description">{{ . | truncate 180 }}</p>{{ else }}<p class="card-description">{{ .Summary | plainify | truncate 180 }}</p>{{ end }}
           {{ with .Params.topics }}
           <div class="blog-card__topics">
-            {{ range . }}<span class="blog-card__topic">{{ . | humanize | title }}</span>{{ end }}
+            {{ range . }}<span class="blog-card__topic">{{ . }}</span>{{ end }}
           </div>
           {{ end }}
         </div>

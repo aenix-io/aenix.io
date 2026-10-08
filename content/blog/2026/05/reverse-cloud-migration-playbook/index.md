@@ -6,7 +6,7 @@ date: "2026-05-26"
 cover_image: "/img/blog/covers/reverse-cloud-migration-playbook.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["DORA", "NIS2", "Sovereignty", "Cloud Repatriation", "AI/ML", "GPU"]
+topics: ["DORA", "NIS2", "Sovereignty", "Cloud Repatriation", "AI and ML", "GPU"]
 language: "en"
 companion_landing: "/solutions/cloud-repatriation/"
 quiz:

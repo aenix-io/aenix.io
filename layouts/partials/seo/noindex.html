@@ -1,0 +1,33 @@
+{{- /*
+  seo/noindex.html — returns true when a page must not be indexed or listed
+  in the sitemap. One rule set for the robots meta (seo/head.html) and the
+  sitemap (layouts/sitemap.xml), so the two cannot disagree.
+
+  Sources:
+    1. front matter  robots: "noindex, ..."
+    2. layouts that hard-code a noindex meta (keep in sync with
+       grep -rn "noindex" layouts --include='*.html' | grep -v partials/seo)
+    3. calculator-app host pages unless `indexable: true`
+    4. utility URLs with no content of their own (below)
+    5. the "types" taxonomy (post-type filter pages, not topics)
+    6. Russian pages other than the certification programme
+
+  Returns a dict: noindex (bool), emit (bool) — emit is true when the robots
+  meta must come from seo/head.html because nothing else prints it.
+*/ -}}
+{{- $p := . -}}
+{{- $robots := lower (string (or $p.Params.robots "")) -}}
+{{- $layout := string (or $p.Params.layout $p.Layout "") -}}
+{{- $noindexLayouts := slice "quiz" "cert-verify" "cert-all" "link-registry" "link-tool" "redirect" "webinar-materials" -}}
+{{- $utility := slice "/quiz/" "/types/" "/workshop/" "/styleguide/" "/404.html" -}}
+{{- $no := false -}}
+{{- $emit := false -}}
+{{- if in $robots "noindex" }}{{ $no = true }}{{ end -}}
+{{- if in $noindexLayouts $layout }}{{ $no = true }}{{ end -}}
+{{- if and (eq $layout "calculator-app") (not $p.Params.indexable) }}{{ $no = true }}{{ end -}}
+{{- if and (not $no) (in $utility $p.RelPermalink) }}{{ $no = true }}{{ $emit = true }}{{ end -}}
+{{- if and (not $no) (eq $p.Data.Plural "types") }}{{ $no = true }}{{ $emit = true }}{{ end -}}
+{{- if and (not $no) (hasPrefix $p.RelPermalink "/types/") }}{{ $no = true }}{{ $emit = true }}{{ end -}}
+{{- $ru := or (hasPrefix $p.RelPermalink "/ru/") (eq (lower (string (or $p.Params.language ""))) "ru") -}}
+{{- if and $ru (not (hasPrefix $p.RelPermalink "/certification/")) }}{{ $no = true }}{{ end -}}
+{{- return (dict "noindex" $no "emit" $emit) -}}

@@ -2,14 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="noindex,indexifembedded" />
     <link rel="icon" type="image/svg+xml" href="https://aenix.io/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cozystack Cloud Repatriation TCO Calculator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    
     <script type="module" crossorigin src="./assets/index-DF2OomSQ.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BWLLk4Mp.css">
+      <link rel="stylesheet" href="/css/fonts.css" />
+  <!-- aenix:next-step -->
+<script>
+(function () {
+  if (window.top !== window.self) return; /* inside the site page: it has its own CTA */
+  var de = /^\/de\//.test(document.referrer.replace(/^https?:\/\/[^/]+/, ''));
+  var bar = document.createElement('div');
+  bar.setAttribute('role', 'complementary');
+  bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:2147483000;display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap;padding:10px 16px;background:#10182B;border-top:1px solid rgba(255,255,255,.12);font:500 14px/1.4 Inter,system-ui,sans-serif;color:#E2E8F0';
+  var t = document.createElement('span');
+  t.textContent = de ? 'Sollen wir Ihre Zahlen prüfen?' : 'Want an engineer to check these numbers?';
+  var a = document.createElement('a');
+  a.href = de ? '/de/kontakt/' : '/contact/';
+  a.setAttribute('data-cta', 'calculator-app');
+  a.textContent = de ? 'Discovery-Call buchen' : 'Book a call';
+  a.style.cssText = 'padding:8px 16px;border-radius:8px;background:#0A6ED1;color:#fff;font-weight:600;text-decoration:none';
+  bar.appendChild(t); bar.appendChild(a);
+  document.addEventListener('DOMContentLoaded', function () { document.body.appendChild(bar); document.body.style.paddingBottom = '64px'; });
+})();
+</script>
   </head>
   <body>
     <div id="root"></div>

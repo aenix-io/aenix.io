@@ -23,7 +23,8 @@
 {{- end -}}
 {{- $sections := slice
     "solutions" "services" "industries" "alternatives" "migration" "compare" "products" "for" "case-studies"
-    "loesungen" "dienstleistungen" "branchen" "alternativen" "vergleichen" "produkte" "fuer" -}}
+    "loesungen" "dienstleistungen" "branchen" "alternativen" "vergleichen" "produkte" "fuer"
+    "tco-calculator" "roi-calculator" "roi-rechner" -}}
 {{- if and (in $sections $sec) (not .Params.hide_closing_cta) -}}
   {{- $de := eq (.Params.language | default "en") "de" -}}
   {{- $contact := cond $de "/de/kontakt/" "/contact/" -}}

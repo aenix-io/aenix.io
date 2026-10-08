@@ -6,7 +6,7 @@ date: "2026-05-04"
 cover_image: "/img/blog/covers/cloud-native-research-and-teaching-infrastructure.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["Kubernetes", "AI/ML", "GPU", "Multi-tenancy"]
+topics: ["Kubernetes", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
 hreflang_de: "/de/blog/2026/05/cloud-native-forschung-lehre-infrastruktur-hochschulen/"
 companion_landing: "/industries/universities/"

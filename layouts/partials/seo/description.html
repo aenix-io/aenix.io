@@ -1,0 +1,17 @@
+{{- /*
+  seo/description.html — the page's meta description.
+  Front matter wins. Topic pages (auto-generated taxonomy terms) get their own
+  sentence instead of the site default, which 51 list pages used to share.
+*/ -}}
+{{- $d := .Description -}}
+{{- if not $d -}}
+  {{- if and (eq .Kind "term") (eq .Data.Plural "topics") -}}
+    {{- $n := len .Pages -}}
+    {{- $d = printf "%s on the Ænix blog: %d %s on building and running Cozystack-based clouds, from architecture to day-2 operations." .Title $n (cond (eq $n 1) "article" "articles") -}}
+  {{- else if and (eq .Kind "taxonomy") (eq .Data.Plural "topics") -}}
+    {{- $d = "All topics on the Ænix blog: Kubernetes, KubeVirt, multi-tenancy, sovereignty, DORA and NIS2, GPU and AI, VMware migration and more." -}}
+  {{- else -}}
+    {{- $d = site.Params.description -}}
+  {{- end -}}
+{{- end -}}
+{{- return $d -}}
