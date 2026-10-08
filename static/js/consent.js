@@ -48,7 +48,7 @@
       catMarketingName: 'Marketing',
       catMarketingDesc: 'Used to measure ad performance and reach you with relevant content across platforms (Tag Manager, future ad platforms).',
       learnMore: 'Privacy policy',
-      privacyUrl: '/about/#privacy',
+      privacyUrl: '/privacy-policy/',
       footerSettings: 'Cookie settings'
     },
     de: {
@@ -65,7 +65,7 @@
       catMarketingName: 'Marketing',
       catMarketingDesc: 'Wird verwendet, um die Werbewirkung zu messen und Sie plattformübergreifend mit relevanten Inhalten zu erreichen (Tag Manager, zukünftige Werbeplattformen).',
       learnMore: 'Datenschutzerklärung',
-      privacyUrl: '/de/ueber-uns/#datenschutz',
+      privacyUrl: '/privacy-policy/',
       footerSettings: 'Cookie-Einstellungen'
     }
   };
@@ -178,9 +178,11 @@
   // -------------------------------------------------------------------
   // Default consent state — Consent Mode v2 "denied" before banner choice
   // -------------------------------------------------------------------
+  // gtag exists from the start so that the consent update of a returning
+  // visitor is queued before gtag.js loads, instead of being dropped.
   window.dataLayer = window.dataLayer || [];
-  function gtagDefault() { window.dataLayer.push(arguments); }
-  gtagDefault('consent', 'default', {
+  window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+  window.gtag('consent', 'default', {
     analytics_storage: 'denied',
     ad_storage: 'denied',
     ad_user_data: 'denied',
@@ -226,12 +228,14 @@
     root.innerHTML = html;
   }
 
+  // The root is rendered with the `hidden` attribute; toggle that, not
+  // style.display, or the banner never becomes visible.
   function showBanner() {
     if (!root.firstChild) buildBanner();
-    root.style.display = '';
+    root.hidden = false;
   }
   function hideBanner() {
-    root.style.display = 'none';
+    root.hidden = true;
   }
 
   // -------------------------------------------------------------------
@@ -272,7 +276,7 @@
       if (settings) settings.hidden = false;
       var customizeBtn = root.querySelector('[data-action="customize"]');
       if (customizeBtn) customizeBtn.style.display = 'none';
-      root.style.display = '';
+      root.hidden = false;
     },
     getChoice: readChoice,
     reset: function () {
