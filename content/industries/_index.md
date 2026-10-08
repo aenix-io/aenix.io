@@ -1,12 +1,13 @@
 ---
 title: "Industries"
-description: "Aenix industry pages: the regulatory trigger, the architecture pattern and the Aenix platform that fits finance, public sector, telco, industry and hosting."
+seo_title: "Cloud platforms by industry: finance, telco, hosting"
+description: "Ænix industry pages: the regulatory trigger, the architecture pattern and the Ænix platform that fits finance, public sector, telco, industry and hosting."
 hero_subtitle: "Regulatory triggers and architecture patterns, mapped to your sector"
 language: "en"
 hreflang_de: /de/branchen/
 ---
 
-**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix platform that fits. Bank engagements stay anonymous until mid-2027, but [nine deployments are written up in full](/case-studies/) with their architecture and numbers.**
+**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix platform that fits. Bank engagements stay anonymous, but [nine deployments are written up in full](/case-studies/) with their architecture and numbers.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -43,7 +44,7 @@ hreflang_de: /de/branchen/
 
 - **[Hosting providers](/industries/hosting-providers/)** — Regional hosting providers building cloud products. Pairs with: Public Cloud Platform. Public production customers: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 - **[MSP](/industries/msp/)** — Managed service providers offering branded cloud to enterprise customers. Pairs with: Public Cloud Platform (white-label).
-- **[Telco](/industries/telco/)** — Tier-1 / tier-2 telco operators, NIS2 essential entity + customer-cloud product. Pairs with: Public Cloud Platform or Private Cloud Platform.
+- **[Telco](/industries/telco/)** — Telecom operators, NIS2 essential entity + customer-cloud product. Pairs with: Public Cloud Platform or Private Cloud Platform.
 
 ### Industrial / education
 
@@ -62,9 +63,9 @@ hreflang_de: /de/branchen/
 
 ## Customer evidence
 
-**Public production customers** (Ænix Public Cloud Platform, currently listed on aenix.io): GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
+**Hosting providers running Ænix Public Cloud Platform in production:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**NDA-protected engagements** (banks, sovereign cloud, AI/ML, telco): multi-million-euro Private Cloud Platform and Public Cloud Platform deployments; naming permitted from mid-2027. [Nine deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
+**Engagements under NDA** (banks, sovereign cloud, AI/ML, telco): customer names are withheld by contract. [Nine deployments are written up in full](/case-studies/), anonymized but with architecture and figures intact — including [a private cloud in a bank](/case-studies/private-cloud-in-a-bank/) and [a unified cloud portal for a financial group](/case-studies/unified-cloud-portal-financial-group/).
 
 **Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud / VPS hosting platforms, lightweight VDI, backup systems reducing storage cost up to 75%. [See case studies →](/case-studies/)
 
@@ -76,6 +77,8 @@ hreflang_de: /de/branchen/
 - **LSEG Global Cloud Survey 2025 (financial services):** 84% adjusted cloud strategy due to regulation
 - **Nutanix Financial Services ECI 2025:** 92% consider their infrastructure not ready for cloud-native; 62% hiring GenAI specialists
 
+These are 2025 surveys, two of them published by infrastructure vendors (Broadcom, Nutanix); read them as direction, not as independent measurement.
+
 ---
 
-*See also: [Solutions →](/solutions/) for trigger-led entry; [Services →](/services/) for engagement-led entry; [Products →](/products/) for what you buy.*
+*See also: [Solutions →](/solutions/) for trigger-led entry; [Services →](/services/) for engagement-led entry; [Products →](/products/) for what you buy; [Role guides →](/for/) for CTOs, CISOs and heads of infrastructure, cloud and AI.*
