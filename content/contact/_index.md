@@ -4,21 +4,6 @@ seo_title: "Contact Ænix — book a discovery call"
 description: "Book a 30-minute discovery call with Ænix or write to us. AENIX s.r.o., České Budějovice, Czech Republic; AENIX INC, Delaware, USA."
 hero_subtitle: "Book a discovery call, ask a question, or explore a partnership"
 language: "en"
-direct_answer: |
-  **To talk to Ænix, book a free 30-minute discovery call in the calendar or send the form on this page; for anything else, write to info@aenix.io. On the call we confirm which platform fits — Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform, or enterprise support for self-run Cozystack — and what the next step would be. Contracts for customers in the European Economic Area are signed with AENIX s.r.o., registered in České Budějovice, Czech Republic (IČO 21493871); US contracts with AENIX INC, Delaware, USA. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.**
-quick_facts:
-  - label: "Discovery call"
-    value: "Free, 30 minutes, booked in the calendar or through the form on this page"
-  - label: "Email"
-    value: "info@aenix.io (general, press); sales@aenix.io (partners)"
-  - label: "EU entity"
-    value: "AENIX s.r.o., U Trojice 2661/1e, České Budějovice 3, 370 04 České Budějovice, Czech Republic; IČO 21493871, DIČ CZ21493871"
-  - label: "US entity"
-    value: "AENIX INC, 131 Continental Drive, Suite 301, Newark, Delaware 19713, USA; registration number 10075938"
-  - label: "Certification"
-    value: "ISO/IEC 27001:2022 — AENIX s.r.o."
-  - label: "Team"
-    value: "About 20 people in the EU and Central Asia"
 faq:
   - q: "What happens after I send the form?"
     a: "The form goes to our sales team, who reply by email to agree a time for the call — or you can skip that step and pick a slot in the calendar directly. Before the call you may get a short question about your current setup so the call can be specific."
@@ -53,14 +38,7 @@ aliases:
 hreflang_de: /de/kontakt/
 ---
 
-<div class="cta-row">
-  <a class="cta-primary" href="https://zcal.co/i/s5C4-cO1" target="_blank" rel="noopener">Book a call</a>
-  <a class="cta-secondary" href="#discovery-form">Send the form ↓</a>
-</div>
-
----
-
-## Schedule a discovery call
+## Book a call or send a message {#schedule-a-discovery-call}
 
 Two ways to book a free 30-minute discovery call:
 
@@ -91,6 +69,21 @@ Two ways to book a free 30-minute discovery call:
 No commitment. If Ænix isn't the right fit, we'll say so directly.
 
 If you would like an in-depth architecture review instead, mention "architecture review" in the message field and we'll bring in a solutions engineer.
+
+---
+
+## How to reach Ænix
+
+**To talk to Ænix, book a free 30-minute discovery call in the calendar or send the form on this page; for anything else, write to info@aenix.io. On the call we confirm which platform fits — Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform, or enterprise support for self-run Cozystack — and what the next step would be. Contracts for customers in the European Economic Area are signed with AENIX s.r.o., registered in České Budějovice, Czech Republic (IČO 21493871); US contracts with AENIX INC, Delaware, USA. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.**
+
+**Quick facts**
+
+- **Discovery call:** free, 30 minutes, booked in the calendar or through the form on this page
+- **Email:** info@aenix.io (general, press); sales@aenix.io (partners)
+- **EU entity:** AENIX s.r.o., U Trojice 2661/1e, České Budějovice 3, 370 04 České Budějovice, Czech Republic; IČO 21493871, DIČ CZ21493871
+- **US entity:** AENIX INC, 131 Continental Drive, Suite 301, Newark, Delaware 19713, USA; registration number 10075938
+- **Certification:** ISO/IEC 27001:2022 — AENIX s.r.o.
+- **Team:** about 20 people in the EU and Central Asia
 
 ---
 
