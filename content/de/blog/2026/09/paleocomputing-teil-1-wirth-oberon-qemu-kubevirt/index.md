@@ -10,6 +10,7 @@ topics: ["Cozystack", "KubeVirt", "Kubernetes", "Open Source", "CHERI", "Retroco
 language: "de"
 series: "Paleocomputing"
 hreflang_en: "/blog/2026/09/nine-days-of-paleocomputing/"
+related_posts: ["/de/blog/2026/10/paleocomputing-teil-2-kubernetes-oberon-wirth-funk/"]
 ---
 
 Am 1. Januar 2024 starb Niklaus Wirth – der Mann, der uns Pascal, Modula-2 und Oberon geschenkt hat, den Turing Award bekam und sein ganzes Leben lang einen hartnäckigen Krieg gegen aufgeblähte Software führte. Weniger bekannt ist, dass er sich, schon weit über siebzig, hinsetzte und einen eigenen Prozessor entwarf: klein und einfach, damit er Studierenden einen ganzen Computer auf einmal zeigen konnte, von den Logikgattern bis zu den Fenstern auf dem Bildschirm.
