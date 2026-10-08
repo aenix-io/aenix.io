@@ -5,9 +5,8 @@
 # quote_de / role_de are optional German overrides (fall back to EN on DE pages).
 # photo is optional — without it the avatar shows the person's initials.
 #
-# Approval status (2026-10-08 audit): no written publication approval is
-# recorded in this repo for any entry below. Confirm and record the approval
-# date per quote before reusing them on new pages.
+# Approval status: all entries below are approved for publication with the
+# company names shown (confirmed by Timur, 2026-10-08).
 - name: "Alexandru Popescu"
   role: "CEO, Nuvolos"
   photo: "/images/quotes/alexandru-popescu.png"
