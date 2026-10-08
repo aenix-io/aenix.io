@@ -28,7 +28,7 @@ quiz:
         - { text: "5-10% over platform cost", correct: false }
         - { text: "500% over platform cost", correct: false }
         - { text: "30-50% over platform cost", correct: true }
-      explanation: "Typical economics: customer pricing 30-50% above raw platform cost. The margin covers MSP support, sales, operations. Realistic to break even on first 50-100 customers."
+      explanation: "Typical economics: customer pricing 30-50% above raw platform cost. The margin covers MSP support, sales, operations. Realistic to break even at 30-50 paying customers, or 50-100 when a dedicated on-call rota is funded alongside the platform."
     - q: "What does the WHMCS integration provide?"
       options:
         - { text: "Billing through MSP's existing system", correct: true }
