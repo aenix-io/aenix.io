@@ -1,6 +1,6 @@
 ---
-title: "Kubernetes Deep Dive Course"
-description: "Kubernetes Deep Dive Course from Aenix — advanced, hands-on training for engineers on the Cozystack stack: Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux."
+title: "Kubernetes Deep Dive Course on the Cozystack stack"
+description: "Kubernetes Deep Dive Course from Ænix — advanced, hands-on training for engineers on the Cozystack stack: Talos, LINSTOR, Cilium, KubeVirt, Cluster API, Flux."
 hero_subtitle: "Hands-on advanced training on the Cozystack stack"
 language: "en"
 aliases:
@@ -8,11 +8,11 @@ aliases:
 hreflang_de: /de/kubernetes-deep-dive/
 ---
 
-**Advanced Kubernetes course from Ænix. Engineers learn the same stack that powers Ænix Platform deployments — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, production-grade, taught by the engineers who maintain Cozystack.**
+**Advanced Kubernetes course from Ænix. Engineers learn the same stack that powers Cozystack and the Ænix platforms — Talos Linux, LINSTOR, Cilium, KubeVirt, Cluster API, Flux. Hands-on, production-grade, taught by the engineers who maintain Cozystack.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/kubernetes-deep-dive/#enroll">Enroll in next cohort</a>
-  <a class="cta-secondary" href="/products/">Ænix Platform engagement →</a>
+  <a class="cta-secondary" href="/certification/">Ænix Certification for Cozystack →</a>
 </div>
 
 ---
@@ -24,7 +24,9 @@ hreflang_de: /de/kubernetes-deep-dive/
 - **Topics:** Containerization, networking, storage, security, GitOps with the Cozystack stack
 - **Stack covered:** Talos, Kubernetes, LINSTOR, Cilium, KubeVirt, Cluster API, Flux
 - **Outcome:** Engineers ready to operate Cozystack-class platforms in production
-- **Taught by:** Cozystack maintainers and Ænix Platform delivery engineers
+- **Taught by:** Cozystack maintainers and Ænix delivery engineers
+- **Pricing:** per seat or per team, quoted on request. One full course per year is included in the Plus and Enterprise [support tiers](/pricing/#support), with further courses at 30% off
+- **Certification:** pairs with the [Ænix Certification for Cozystack — Fundamentals](/certification/) exam
 
 ---
 
@@ -40,7 +42,7 @@ Most Kubernetes courses cover the basics. This course covers what comes after �
 - **Flux** for GitOps
 - **Multi-tenant architecture** with Tenant CRD-style isolation
 
-This is the same stack Ænix engineers use to build Ænix Platform deployments at regulated enterprises and hosting providers.
+This is the same stack Ænix engineers use to build platforms for regulated enterprises and hosting providers.
 
 ---
 
@@ -49,7 +51,7 @@ This is the same stack Ænix engineers use to build Ænix Platform deployments a
 - **Platform engineers** building or operating internal cloud platforms
 - **Senior DevOps engineers** who want to go beyond basic Kubernetes
 - **OSS contributors** who want to contribute to Cozystack and adjacent CNCF projects
-- **Engineering teams** preparing for Ænix Platform engagements (option to combine with platform build)
+- **Engineering teams** preparing for an Ænix platform engagement (option to combine with the platform build)
 
 ---
 
@@ -67,15 +69,15 @@ After completing the course, engineers can:
 
 ---
 
-## How it relates to Ænix Platform
+## How it relates to the Ænix platforms
 
-The course is independent of Ænix Platform engagements — engineers can take it without their organization buying Ænix Platform.
+The course is independent of Ænix platform engagements — engineers can take it without their organization buying anything else from Ænix.
 
-However, organizations buying Ænix Platform often send engineers to this course either before, during, or after platform builds. Course completion accelerates handoff and operational maturity.
+Organizations building an Ænix platform often send engineers to this course either before, during, or after platform builds. Course completion accelerates handoff and operational maturity.
 
 If you're considering both:
 - **Course only:** train your engineers; decide later whether to engage Ænix on platform build
-- **Course + Ænix Platform:** combined training + production platform engagement
+- **Course + platform build:** combined training and production platform engagement
 
 ---
 
@@ -87,7 +89,7 @@ No. This is an advanced course. Prerequisites: production Kubernetes experience,
 
 ### Can my company sponsor cohort enrollment?
 
-Yes. Course pricing accommodates both individual seats and team enrollments. Contact us for team pricing.
+Yes. The course is priced per seat or per team and quoted on request; tell us how many engineers you want to send. Customers on the Plus and Enterprise support tiers get one full course per year included.
 
 ### How does this differ from CKA / CKAD certification courses?
 
@@ -97,9 +99,13 @@ CKA / CKAD covers core Kubernetes operations and developer skills. This course g
 
 The course teaches the Cozystack stack technologies, but engineers learn each component independently. After the course, engineers can operate Cozystack — but the same skills apply to other deployments using these technologies.
 
-### Will I learn Ænix Platform specifically?
+### Will I learn the Ænix platforms specifically?
 
-The course covers the open-source Cozystack stack, which is the foundation of Ænix Platform. Ænix Platform-specific operational details (productized installer, product-specific features, support workflows) are covered separately during Ænix Platform engagements with customer teams.
+The course covers the open-source Cozystack stack, which is the foundation of the Ænix platforms. Platform-specific operational details (productized installer, commercial modules, support workflows) are covered separately during platform engagements with customer teams.
+
+### Is there a certification?
+
+Yes. The [Ænix Certification for Cozystack — Fundamentals](/certification/) exam is taken separately. The exam is in English; the preparation materials are currently in Russian.
 
 ### What if I'm already a Cozystack contributor?
 
