@@ -19,7 +19,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A sovereign, NIS2-aligned cloud platform for energy operators spanning HQ, regional control centres, and substation edge under one Kubernetes operational model"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -96,7 +96,7 @@ hreflang_de: /de/branchen/energie/
 - **Multi-tenant** — separate generation / transmission / distribution / customer-facing workloads
 - **AI infrastructure** — for grid forecasting, demand response, predictive maintenance
 - **Sovereign by architecture** — open-source platform on customer hardware, opt-in volume encryption
-- **Long-horizon platform** — Apache 2.0 license + community governance suit decade-plus operational planning
+- **Long-horizon platform** — Apache 2.0 licence + community governance suit decade-plus operational planning
 
 <div class="arch-section__fig">
 <div class="diagram">
@@ -116,7 +116,7 @@ hreflang_de: /de/branchen/energie/
 
 {{< clients >}}
 
-Hosting providers running Ænix Public Cloud Platform in production. Energy-sector customers are not named; [nine deployments are written up in full](/case-studies/) in anonymized form, including a [three-data-centre provider platform](/case-studies/sovereign-public-cloud/) that shows the multi-site pattern.
+Hosting providers running Ænix Public Cloud Platform in production. Energy-sector customers are not named; [nine published case studies](/case-studies/) are written up in anonymized form, including a [three-data-centre provider platform](/case-studies/sovereign-public-cloud/) that shows the multi-site pattern.
 
 {{< quote-carousel >}}
 

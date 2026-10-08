@@ -19,7 +19,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A structured engagement that moves selected workloads from public cloud to private cloud, hybrid, or on-prem without breaking the application."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -196,7 +196,7 @@ Delivered by Ænix engineers who have built production platforms for service pro
 
 - **No hyperscaler bias.** Repatriation advisory work from Big-4 consultancies is shaped by their hyperscaler partnerships. Our recommendations are not commercially tied to AWS, Azure, GCP, or any single provider — we say "stay in public cloud" when that's the answer, and we say "fully on-prem" when that's the answer.
 - **Engineers, not consultants.** The engineers who run the repatriation engagement build the production platforms afterwards. The implementation effort estimates in the report are calibrated against work we have actually shipped — not against industry benchmarks.
-- **Open-source destination platform.** We created **[Cozystack](/products/cozystack/)** and co-maintain it — an open-source Kubernetes-native cloud platform (CNCF Sandbox project, Certified Kubernetes distribution). Where Cozystack fits the destination architecture better than the alternative, the report explains why with named architectural attributes. Where it doesn't, we say so.
+- **Open-source destination platform.** We created **[Cozystack](/products/cozystack/)** and co-maintain it — an open-source Kubernetes-native cloud platform (CNCF Sandbox project, CNCF Certified Kubernetes distribution). Where Cozystack fits the destination architecture better than the alternative, the report explains why with named architectural attributes. Where it doesn't, we say so.
 
 </div>
 
@@ -284,7 +284,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix created Cozystack — a CNCF Sandbox project, Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. We run cloud-repatriation engagements and platform-engineering programmes.*
+*Ænix created Cozystack — a CNCF Sandbox project, CNCF Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. We run cloud-repatriation engagements and platform-engineering programmes.*
 
 <!-- /BLOCK 12 -->
 

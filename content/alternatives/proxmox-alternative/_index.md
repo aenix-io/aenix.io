@@ -15,7 +15,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A Kubernetes-native, multi-tenant open-source platform for organizations that have outgrown Proxmox VE's single-tenant, VM-focused design center."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing); Proxmox VE is AGPLv3."
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)."
@@ -33,11 +33,11 @@ faq:
   - q: "Can I migrate Proxmox VMs to Cozystack?"
     a: "Yes. Proxmox qcow2 images import directly into KubeVirt's storage, so VM migration is straightforward. The multi-tenant model is designed rather than converted, because pools and ACLs do not map onto tenants, and the networking and storage layers are re-architected. A typical engagement runs a 14- or 28-day Platform Readiness Assessment plus 3-9 months implementation depending on scope."
   - q: "How does Cozystack licensing compare to Proxmox?"
-    a: "Both are open source, but the licenses differ. Proxmox VE is AGPLv3; Cozystack is Apache 2.0, a more permissive license with no per-CPU or per-core fees. Ænix charges for platform subscriptions, support and services, not for the open-source core."
+    a: "Both are open source, but the licences differ. Proxmox VE is AGPLv3; Cozystack is Apache 2.0, a more permissive licence with no per-CPU or per-core fees. Ænix charges for platform subscriptions, support and services, not for the open-source core."
   - q: "Does Cozystack support multi-tenancy the way Proxmox does not?"
     a: "Yes. Cozystack uses a Tenant CRD with nested tenants and per-tenant scoped audit, giving isolation suitable for multi-customer cloud under regulatory audit. Proxmox uses resource pools with role-based ACLs and pluggable auth realms, which delegates well inside one organisation but is not designed for untrusted multi-customer environments."
   - q: "What does Cozystack add beyond running virtual machines?"
-    a: "Beyond KubeVirt VMs and Kubernetes containers, Cozystack provides first-class managed databases (PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ), S3-compatible object storage, GPU as a service (passthrough or NVIDIA vGPU for VMs, and the NVIDIA GPU Operator with HAMi to share a card across pods; MIG and time-slicing are on the roadmap), a multi-tenant self-service portal, and Velero-based backup with per-app point-in-time recovery."
+    a: "Beyond KubeVirt VMs and Kubernetes containers, Cozystack provides first-class managed databases (PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ), S3-compatible object storage, GPU as a service (passthrough or NVIDIA vGPU for VMs with your NVIDIA vGPU licence, and the NVIDIA GPU Operator with HAMi to share a card across pods; MIG and time-slicing are on the roadmap), a multi-tenant self-service portal, and Velero-based backup with per-app point-in-time recovery."
   - q: "Is Cozystack just a better Proxmox?"
     a: "No. It targets a different architectural problem. For SMB-scale, single-tenant virtualization, Proxmox VE remains a strong, simpler choice. Cozystack is the upgrade path when you need a multi-tenant cloud, service-provider operations, or regulated-enterprise isolation while keeping an open-source operational model."
 hreflang_de: /de/alternativen/proxmox-alternative/
@@ -47,7 +47,7 @@ hreflang_de: /de/alternativen/proxmox-alternative/
 
 Cozystack is the open-source platform built for that next stage. Kubernetes-native virtualization (KubeVirt), multi-tenant control plane, managed database services, S3 object storage, GPU as a service — on the same hardware Proxmox runs on, with a different operational model.
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS billing integration (a proprietary Ænix module), multi-tenant by design, productized installer. Support tiers from $1,250 per 10 nodes per month.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — a complete public-cloud product for hosting providers and regional clouds outgrowing Proxmox: customer portal, billing and service catalog. WHMCS billing integration (a proprietary Ænix module), multi-tenant by design, productized installer. Support tiers from $1,250 per 10 nodes per month.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/?type=architecture-review">Book an architecture call</a>
@@ -95,7 +95,7 @@ If your deployment is single-tenant, VM-mostly, and run by a small team, Proxmox
 | **GPU** | Passthrough | Passthrough or NVIDIA vGPU for VMs; GPU Operator + HAMi sharing for pods |
 | **Self-service portal** | Web UI for VM ops | Cozystack Dashboard — full multi-tenant catalog |
 | **Backup/DR** | PBS (Proxmox Backup Server) | Velero + per-app PITR |
-| **License** | AGPLv3 (open source) | Apache 2.0 (open source, more permissive) |
+| **Licence** | AGPLv3 (open source) | Apache 2.0 (open source, more permissive) |
 | **Best for** | SMB virtualization, labs | Multi-tenant cloud, service providers, regulated enterprise |
 
 Cozystack is not "Proxmox but better" — it's a different architectural target. For SMB-scale single-tenant virtualization, Proxmox remains a strong choice.

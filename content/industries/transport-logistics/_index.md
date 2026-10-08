@@ -18,7 +18,7 @@ quick_facts:
     value: "A single Kubernetes-based cloud platform for transport and logistics operators spanning HQ, regional sites, and edge (depots, ports, terminals, vehicles)."
   - label: "Who it is for"
     value: "Air, rail, water, and road freight operators, logistics service providers, last-mile and fleet operators, and port/terminal operators — many of which are NIS2 essential entities."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -106,7 +106,7 @@ Air, rail, water and road freight operators, multi-modal logistics service provi
 - **[Transport architecture article](/blog/2026/05/transport-logistics-cloud-architecture-nis2/)**
 - **[NIS2 compliance](/solutions/nis2-compliance/)**
 - **[Sovereign AI](/solutions/sovereign-ai/)**
-- **[Case studies](/case-studies/)** — nine deployments written up in anonymized form
+- **[Case studies](/case-studies/)** — nine published case studies, written up in anonymized form
 
 ---
 

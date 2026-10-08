@@ -31,7 +31,7 @@ quick_facts:
   - label: "RAG"
     value: "Retrieval-augmented generation over your own documents using a Qdrant vector database next to the GPU workloads."
   - label: "Inference efficiency"
-    value: "NVIDIA Dynamo for disaggregated serving and KV-cache-aware routing — higher GPU utilization, no extra vendor licenses."
+    value: "NVIDIA Dynamo for disaggregated serving and KV-cache-aware routing — higher GPU utilization, no extra vendor licences."
   - label: "Data boundary"
     value: "Prompts, embeddings, and fine-tuning data stay inside your jurisdiction and infrastructure."
   - label: "Cozystack licence"
@@ -94,7 +94,7 @@ An on-prem GenAI platform is more than a model file. Ænix assembles the full st
 
 - **Open-weight model serving.** Models such as Llama, Mistral, and Qwen served for inference on your GPUs, exposed to teams as ordinary Kubernetes services rather than an external endpoint.
 - **RAG over your documents.** A **Qdrant** vector database indexes your own content and retrieves the relevant passages at query time, grounding answers in your data. Both the source documents and the generated answers stay inside the boundary.
-- **Efficient inference.** **NVIDIA Dynamo** provides disaggregated serving and KV-cache-aware routing across the GPU fleet, raising utilization of expensive cards with no extra vendor licenses.
+- **Efficient inference.** **NVIDIA Dynamo** provides disaggregated serving and KV-cache-aware routing across the GPU fleet, raising utilization of expensive cards with no extra vendor licences.
 - **GPU scheduling and isolation.** The [Kubernetes](https://kubernetes.io/docs/concepts/scheduling-eviction/) scheduler plus the NVIDIA GPU Operator make GPUs a first-class, schedulable resource (whole GPUs to pods or VMs, fractional sharing via HAMi); per-tenant hosted control planes keep teams isolated on shared hardware.
 - **Fine-tuning in-place.** Because the GPUs and the data live in the same platform, you can adapt open-weight models on proprietary data without that data leaving your infrastructure.
 

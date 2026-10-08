@@ -19,7 +19,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "An open-source, Kubernetes-native alternative to Nutanix HCI/AHV for running VMs and containers without appliance lock-in"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -92,7 +92,7 @@ If Nutanix is running well and the renewal is affordable, staying is the right a
 
 | | Nutanix AHV | Cozystack |
 |---|---|---|
-| **License** | Subscription | Apache 2.0 |
+| **Licence** | Subscription | Apache 2.0 |
 | **Foundation** | Proprietary KVM (AHV) | KubeVirt (KVM) on Kubernetes |
 | **Open source** | No | Full |
 | **Multi-tenancy** | Projects, categories and RBAC — good delegation inside one organisation | Tenant CRD, nested, per-tenant quota and scoped audit |

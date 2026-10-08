@@ -20,7 +20,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A Kubernetes-native, Apache 2.0 platform that replaces OpenStack's multi-component stack with a smaller set of operators while keeping open-source and multi-tenant guarantees."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -29,7 +29,7 @@ quick_facts:
   - label: "Operational footprint"
     value: "5-15 Kubernetes operators versus OpenStack's 50-100+ service processes; VMs via KubeVirt, networking via Cilium (eBPF), storage via LINSTOR/DRBD (an existing Ceph cluster can stay in place), multi-tenancy via Tenant CRD."
   - label: "Migration timeline"
-    value: "Typically 4-12 months for a mid-size deployment (Keystone to Tenant CRD, Neutron to Cilium, Cinder to LINSTOR (DRBD))."
+    value: "Typically 4-12 months for a mid-size deployment; 12-18 months with complex provider networks or tenant-facing OpenStack APIs (Keystone to Tenant CRD, Neutron to Cilium, Cinder to LINSTOR (DRBD))."
   - label: "Commercial offering"
     value: "Support tiers for Ænix Public Cloud Platform and self-run Cozystack: Basic $1,250, Standard $3,000, Plus $5,500 per 10 nodes per month (annual), Enterprise custom."
 faq:
@@ -40,9 +40,9 @@ faq:
   - q: "How does the operational footprint compare?"
     a: "OpenStack typically runs 50-100+ services across multiple Python projects (Nova, Neutron, Keystone, and others). Cozystack consolidates equivalent capabilities into roughly 5-15 Kubernetes operators, reducing the number of moving parts to maintain and patch."
   - q: "How long does an OpenStack to Cozystack migration take?"
-    a: "A mid-size deployment typically takes 4-12 months. The main work is re-architecting the tenant model from Keystone projects to the Tenant CRD and moving networking from Neutron to Cilium; VM image migration and storage are usually less involved."
+    a: "A mid-size deployment typically takes 4-12 months; 12-18 months with complex provider networks or tenant-facing OpenStack APIs. The main work is re-architecting the tenant model from Keystone projects to the Tenant CRD and moving networking from Neutron to Cilium; VM image migration and storage are usually less involved."
   - q: "Both are Apache 2.0, so why migrate at all?"
-    a: "License is not the driver. Organizations migrate because OpenStack engineering talent is shrinking while Kubernetes expertise is plentiful, because a 50-100+ service footprint can outweigh the value for a mostly modern workload portfolio, and because a Kubernetes-native foundation runs VMs and containers on one API."
+    a: "Licence is not the driver. Organizations migrate because OpenStack engineering talent is shrinking while Kubernetes expertise is plentiful, because a 50-100+ service footprint can outweigh the value for a mostly modern workload portfolio, and because a Kubernetes-native foundation runs VMs and containers on one API."
   - q: "Does Ænix offer commercial support for the migration?"
     a: "Yes. Ænix created Cozystack and offers Ænix Public Cloud Platform alongside private-cloud consulting and migration services; migration work is quoted after scoping. Support tiers start at Basic $1,250 per 10 nodes per month, with Standard, Plus and Enterprise options."
 hreflang_de: /de/alternativen/openstack-alternative/
@@ -50,7 +50,7 @@ hreflang_de: /de/alternativen/openstack-alternative/
 
 **OpenStack is mature, broad, and proven at telco / government scale. It also requires significant operational expertise to run well, and finding OpenStack engineers in 2026 is harder than it was 5 years ago. Many organizations now ask whether the operational footprint matches the actual workload portfolio — and whether a Kubernetes-native alternative is the right next platform.**
 
-Cozystack is the open-source alternative for organizations that want OpenStack's open-source-and-multi-tenant guarantees with a lighter operational footprint. Same-license (Apache 2.0), Kubernetes-native foundation, fewer moving parts.
+Cozystack is the open-source alternative for organizations that want OpenStack's open-source-and-multi-tenant guarantees with a lighter operational footprint. Same-licence (Apache 2.0), Kubernetes-native foundation, fewer moving parts.
 
 > **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — hosting providers and regional clouds modernizing from OpenStack, and large operators consolidating OpenStack onto a multi-region control plane.
 
@@ -88,7 +88,7 @@ If you have a staffed operations team, an exercised upgrade path, and real use o
 
 | | OpenStack | Cozystack |
 |---|---|---|
-| **License** | Apache 2.0 | Apache 2.0 |
+| **Licence** | Apache 2.0 | Apache 2.0 |
 | **Foundation** | Multiple Python projects (Nova, Neutron, etc.) | Kubernetes + KubeVirt + Cilium |
 | **Multi-tenancy** | Keystone projects | Tenant CRD |
 | **Operational footprint** | 50-100+ service processes across a dozen projects | 5-15 Kubernetes operators |
@@ -105,7 +105,7 @@ If you have a staffed operations team, an exercised upgrade path, and real use o
 
 VM image migration: straightforward (KVM → KubeVirt). Tenant model: re-architect from Keystone projects to Tenant CRD. Network: Neutron → Cilium. Storage: Cinder → LINSTOR/DRBD, or an existing Ceph cluster stays where it is and the platform consumes it. 
 
-Typical migration: 4-12 months for mid-size deployment.
+Typical migration: 4-12 months for a mid-size deployment; 12-18 months with complex provider networks or tenant-facing OpenStack APIs.
 
 <div class="arch-section__fig"><div class="diagram">
 <div class="diagram__node"><b>OpenStack</b><div class="diagram__chips"><span>50-100+ services</span><span>Nova / Neutron / Keystone</span><span>Shrinking talent pool</span></div></div>

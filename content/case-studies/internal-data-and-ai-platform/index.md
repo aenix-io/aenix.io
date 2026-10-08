@@ -76,7 +76,7 @@ The two are usually treated as separate programmes and then spend years copying 
 - **One scheduler** — a single planner for pods and virtual machines, with utilisation metrics that feed both chargeback and deep analytics.
 - **Data and pipelines** — S3-compatible storage, databases and model artefacts, with pipelines automated GitOps-style.
 
-**Full GPU lifecycle management.** Automated GPU provisioning, passthrough into both VMs and Kubernetes, and driver management, joined up rather than scripted per case:
+**Full GPU lifecycle management.** Automated GPU provisioning, passthrough to VMs and GPUs for containers through the GPU Operator, and driver management, joined up rather than scripted per case:
 
 - Full autopilot for NVIDIA cards; GPU passthrough for other vendors.
 - Automatic driver installation and GPU resource management inside Kubernetes.

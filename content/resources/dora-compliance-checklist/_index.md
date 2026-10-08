@@ -71,6 +71,8 @@ faq:
 5. **Third-party risk and contracting** (4 checkpoints) — Articles 28-30
 6. **Risk management and incident handling** (12 checkpoints) — the ICT risk-management framework of Articles 5-16 (Article 6 in particular) and incident classification, reporting and handling under Articles 17-19
 
+The PDF closes with architecture-level recommendations and a generic reference pattern; they describe what the Ænix platforms actually provide: volume encryption at rest is opt-in (LINSTOR and LUKS) with a passphrase you hold, and the key-management process is designed with you; audit logs have configurable retention (default 30 days) and can be shipped to your own immutable store; DR is backup and restore with Velero plus rehearsed runbooks, with no SRM-style orchestrated cross-site failover. The next step it offers is the [Platform Readiness Assessment](/services/platform-readiness-assessment/) of 14 or 28 days. The [DORA evidence page](/compliance/dora/) goes control by control.
+
 <div class="arch-section__fig">
 <div class="diagram">
 <div class="diagram__node"><b>35-point self-assessment</b><div class="diagram__chips"><span>Articles 5-16 + 17-19</span><span>Free PDF</span></div></div>

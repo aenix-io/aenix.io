@@ -18,7 +18,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "End-to-end migration from Proxmox VE to Cozystack for multi-tenant cloud and service-provider deployments"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -48,7 +48,7 @@ faq:
 
 **Proxmox VE is excellent at SMB scale. When deployments grow into multi-tenant cloud builders or service-provider models, the operational model strains. Ænix runs Proxmox-to-Cozystack migrations end-to-end.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox. WHMCS-integrated billing, multi-tenant Tenant CRD, productized installer. Support tiers from $1,250 per 10 nodes per month.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — a complete public-cloud product for hosting providers and regional clouds outgrowing Proxmox: customer portal, billing and service catalog. WHMCS-integrated billing, multi-tenant Tenant CRD, productized installer. Support tiers from $1,250 per 10 nodes per month.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

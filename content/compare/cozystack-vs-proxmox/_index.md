@@ -11,11 +11,11 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cozystack and Proxmox VE are both open-source virtualization platforms, but they target different scales. Proxmox VE (AGPLv3) pairs KVM and LXC for SMB virtualization, labs, and single-tenant deployments under roughly 50 hosts. Cozystack (Apache 2.0) runs KubeVirt on Kubernetes, with a Tenant CRD for hard multi-tenancy, first-class managed databases and S3 object storage, and GPU support through the NVIDIA GPU Operator (passthrough or vGPU for VMs, HAMi sharing for pods). It suits service providers and regulated multi-tenant environments that have outgrown Proxmox's design center. Ænix, which created Cozystack and co-maintains it, sells support and services, including Ænix Public Cloud Platform, a cloud-in-a-box for hosting providers and regional clouds.**
+  **Cozystack and Proxmox VE are both open-source virtualization platforms, but they target different scales. Proxmox VE (AGPLv3) pairs KVM and LXC for SMB virtualization, labs, and single-tenant deployments under roughly 50 hosts. Cozystack (Apache 2.0) runs KubeVirt on Kubernetes, with a Tenant CRD for hard multi-tenancy, first-class managed databases and S3 object storage, and GPU support through the NVIDIA GPU Operator (passthrough or NVIDIA vGPU for VMs with your NVIDIA vGPU licence, HAMi sharing for pods). It suits service providers and regulated multi-tenant environments that have outgrown Proxmox's design center. Ænix, which created Cozystack and co-maintains it, sells support and services, including Ænix Public Cloud Platform, a complete public-cloud product for hosting providers and regional clouds: customer portal, billing and service catalog.**
 quick_facts:
   - label: "What it is"
     value: "A head-to-head comparison of Proxmox VE and Cozystack as open-source virtualization platforms, mapped to scale and tenancy needs."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing); Proxmox VE is AGPLv3"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -32,24 +32,24 @@ faq:
     a: "Cozystack pays off above roughly 50 hosts and wherever hard multi-tenancy matters. Its Tenant CRD, KubeVirt foundation, and first-class managed databases and S3 storage are built for service providers and regulated multi-tenant environments."
   - q: "How does multi-tenancy differ between the two?"
     a: "Proxmox VE uses resource pools with role-based ACLs and pluggable auth realms, which works well for delegating within one organisation. Cozystack provides a Tenant CRD with nested tenants, per-tenant quotas and scoped audit, which is what an untrusted multi-customer or regulated environment needs."
-  - q: "What are the licenses?"
+  - q: "What are the licences?"
     a: "Cozystack is licensed under Apache 2.0, with no per-CPU or per-core licensing. Proxmox VE is licensed under AGPLv3. Both are open source."
   - q: "Does Cozystack support GPUs better than Proxmox VE?"
     a: "It goes further, but be precise about how far. Proxmox VE offers GPU passthrough, one card to one guest. Cozystack schedules GPUs through the NVIDIA GPU Operator and uses HAMi to share a card across container workloads, and passthrough or NVIDIA vGPU (where you hold the NVIDIA vGPU licence) is available for VMs. MIG and time-slicing are on the roadmap, not shipping today, so do not plan an untrusted-tenant GPU product around it yet."
   - q: "What does Ænix offer on top of Cozystack?"
-    a: "Ænix created Cozystack and sells support and services on top of it. Ænix Public Cloud Platform is a turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox; support tiers start at $1,250 per 10 nodes per month (Basic, billed annually)."
+    a: "Ænix created Cozystack and sells support and services on top of it. Ænix Public Cloud Platform is a complete public-cloud product for hosting providers and regional clouds outgrowing Proxmox, with customer portal, billing and service catalog; support tiers start at $1,250 per 10 nodes per month (Basic, billed annually)."
 hreflang_de: /de/vergleichen/cozystack-vs-proxmox/
 ---
 
 **Different scales. Different design centers. Both open source.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox's design center. Support tiers from $1,250 per 10 nodes per month.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — a complete public-cloud product for hosting providers and regional clouds outgrowing Proxmox's design center: customer portal, billing and service catalog. Support tiers from $1,250 per 10 nodes per month.
 
 <div class="compare-elevated compare-elevated--col3">
 
 | | Proxmox VE | Cozystack |
 |---|---|---|
-| **License** | AGPLv3 | Apache 2.0 |
+| **Licence** | AGPLv3 | Apache 2.0 |
 | **Foundation** | KVM + LXC | KubeVirt on Kubernetes |
 | **Multi-tenancy** | Resource pools + role-based ACLs | Tenant CRD |
 | **Managed databases** | Manual / community | First-class |

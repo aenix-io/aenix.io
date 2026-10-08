@@ -20,7 +20,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A structured engagement to take a data-sovereignty position from claim to demonstrable architecture across every data layer"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -205,7 +205,7 @@ Day 0 is a free 30-minute discovery call that fixes the scope. Days 1-13 (or 1-2
 
 ## Case studies
 
-Nine deployments are written up on the [case studies page](/case-studies/), in anonymised form where the customer requires it — including a [private cloud in a bank](/case-studies/private-cloud-in-a-bank/) and a [three-data-centre sovereign public cloud](/case-studies/sovereign-public-cloud/). Reference calls are arranged under NDA where the customer agrees.
+Nine anonymised case studies are published on the [case studies page](/case-studies/), in anonymised form where the customer requires it — including a [private cloud in a bank](/case-studies/private-cloud-in-a-bank/) and a [three-data-centre sovereign public cloud](/case-studies/sovereign-public-cloud/). Reference calls are arranged under NDA where the customer agrees.
 
 {{< quote-carousel >}}
 
@@ -270,7 +270,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix created Cozystack — a CNCF Sandbox project, Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.*
+*Ænix created Cozystack — a CNCF Sandbox project, CNCF Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.*
 
 <!-- /BLOCK 12 -->
 

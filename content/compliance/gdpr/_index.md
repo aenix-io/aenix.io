@@ -73,7 +73,7 @@ The platform installs on your own hardware, in a facility you choose. There is n
 
 It does not close it. Under the EDPB's reading, remote access from a third country is itself a transfer, so support engineers, an integrator's staff, out-of-hours administrators and anything you connect for observability all still count. The outbound paths the cluster does use — container registries, certificate authorities, time sources and update channels — are worth listing once, because they say where the environment reaches even when the personal data does not. If you operate in several jurisdictions, tenants and node placement let you keep processing in one of them rather than spreading it across all of them.
 
-For the architectural version of this discussion — customer-controlled keys, jurisdictional residency, supervisory access — see [data sovereignty](/solutions/data-sovereignty/).
+For the architectural version of this discussion — key custody, jurisdictional residency, supervisory access — see [data sovereignty](/solutions/data-sovereignty/).
 
 ---
 

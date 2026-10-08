@@ -14,7 +14,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A practical 2026 comparison of eight production-grade VMware alternatives, open source and commercial, organized by use case."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -164,7 +164,7 @@ The alternatives below cover the realistic options.
 
 | | Cozystack | Nutanix | OpenShift Virt | Proxmox | OpenStack | Scale | Azure Local |
 |---|---|---|---|---|---|---|---|
-| **License** | Apache 2.0 | Subscription | Red Hat sub | AGPLv3 | Apache 2.0 | Subscription | Microsoft sub + per-core |
+| **Licence** | Apache 2.0 | Subscription | Red Hat sub | AGPLv3 | Apache 2.0 | Subscription | Microsoft sub + per-core |
 | **Open source** | Full | No | Mostly | Full | Full | No | No |
 | **Foundation** | KubeVirt | AHV (KVM) | KubeVirt | KVM/LXC | KVM | KVM | Hyper-V |
 | **Multi-tenancy** | Tenant CRD (nested) | Projects + RBAC | Namespaces + Projects | Pools + ACLs | Keystone | Limited | Arc RBAC |

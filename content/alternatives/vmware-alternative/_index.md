@@ -23,7 +23,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "An open-source, Kubernetes-native platform that covers the core VMware Cloud Foundation stack (vSphere, vCenter, vSAN, NSX, vCloud Director) on bare metal; DR is a backup-and-runbook design, not an SRM-style orchestrator."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -47,7 +47,7 @@ faq:
   - q: "What does it cost compared to VMware?"
     a: "Cozystack is free and open source. Regulated enterprises exiting VCF go through Ænix Private Cloud Platform, which is quoted per RFP after a Platform Readiness Assessment. Service providers on Ænix Public Cloud Platform and teams running Cozystack themselves buy support tiers from $1,250 per 10 nodes per month (Basic), then Standard $3,000, Plus $5,500 and Enterprise custom. Migration services are quoted separately. VMware VCF pricing is quote-driven and non-public."
   - q: "Does Cozystack support GPUs for AI and VDI workloads?"
-    a: "Yes, with the boundary stated plainly. NVIDIA vGPU is available for VMs where you hold the NVIDIA licence, and container workloads schedule through the NVIDIA GPU Operator with HAMi to share a card. MIG and time-slicing are on the roadmap rather than shipping, so an untrusted-tenant GPU product should not be planned around it yet."
+    a: "Yes, with the boundary stated plainly. Whole GPUs can be passed through to VMs, NVIDIA vGPU is available for VMs (requires your NVIDIA vGPU licence), and container workloads schedule through the NVIDIA GPU Operator with HAMi to share a card. MIG and time-slicing are on the roadmap rather than shipping, so an untrusted-tenant GPU product should not be planned around it yet."
 hreflang_de: /de/alternativen/vmware-alternative/
 ---
 
@@ -99,7 +99,7 @@ For the wider market: **[Best VMware alternatives 2026 — market comparison](/a
 <div class="grid-2x2">
 
 **1. Subscription-only economics, post-Broadcom**
-Perpetual licenses retired, mandatory VCF bundling, renewals subscription-only.
+Perpetual licences retired, mandatory VCF bundling, renewals subscription-only.
 
 **2. Stack-wide vendor lock-in**
 vSphere, NSX, vSAN, vCD, Aria — replacing one means rebuilding the rest.
@@ -131,7 +131,7 @@ KubeVirt, Cilium, LINSTOR, and Flux ship faster as community projects than Broad
 - **Tenant Kubernetes** — every tenant gets their own real K8s cluster
 - **Managed databases** — PostgreSQL, MariaDB, Valkey, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB
 - **S3-compatible object storage** — for backups, AI training data, applications
-- **GPU as a service** — NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough or NVIDIA vGPU for VMs, fractional sharing for pods via HAMi; MIG and time-slicing on the roadmap
+- **GPU as a service** — NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough of whole GPUs or NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), fractional sharing for pods via HAMi; MIG and time-slicing on the roadmap
 - **Multi-tenant control plane** — Tenant CRD, nested tenants, per-tenant quotas
 - **Observability** — VictoriaMetrics + VictoriaLogs + Grafana, included
 - **Backup & DR** — Velero to S3 outside the cluster, per-database PITR, DRBD replication; VM recovery as a documented runbook
@@ -234,7 +234,7 @@ Two layers need redesign rather than 1:1 mapping: **networking** (Cilium ≠ NSX
   <div class="engagement-step">
     <div class="engagement-step__number">5</div>
     <h3 class="engagement-step__title">Validate and cut over DR</h3>
-    <p class="engagement-step__body">Velero backups and a rehearsed recovery runbook take over from SRM; no automated failover.</p>
+    <p class="engagement-step__body">Backup and restore with Velero plus rehearsed runbooks; there is no SRM-style orchestrated cross-site failover.</p>
   </div>
 
   <div class="engagement-step">
@@ -272,15 +272,15 @@ OpenStack, CloudStack, and Proxmox migrations follow the same playbook with diff
 
 | | VMware (VCF, post-Broadcom) | Cozystack + Ænix |
 |---|---|---|
-| **License model** | Subscription only (VCF bundles) | Apache 2.0 + optional Ænix support subscription |
+| **Licence model** | Subscription only (VCF bundles) | Apache 2.0 + optional Ænix support subscription |
 | **Renewal risk** | 2–5× increases seen in Ænix engagements | Predictable; OSS code remains usable regardless |
 | **Compute** | vSphere / ESXi | KubeVirt (KVM-based) |
 | **Storage** | vSAN | LINSTOR/DRBD (block), SeaweedFS (object) |
 | **Network** | NSX | Cilium (eBPF, CNCF Graduated) |
 | **Multi-tenancy** | vCloud Director | Tenant CRD (Kubernetes-native) |
 | **Backup / DR** | Site Recovery Manager | Velero + DRBD/stretched clusters + runbook (no automated orchestrated failover — see [DR](/solutions/disaster-recovery/)) |
-| **Observability** | vRealize / Aria (separate license) | VictoriaMetrics + VictoriaLogs (included) |
-| **GPU for VMs** | NVIDIA vGPU on vSphere | NVIDIA vGPU + KubeVirt |
+| **Observability** | vRealize / Aria (separate licence) | VictoriaMetrics + VictoriaLogs (included) |
+| **GPU for VMs** | NVIDIA vGPU on vSphere | Passthrough or NVIDIA vGPU on KubeVirt (your NVIDIA vGPU licence) |
 | **Sovereignty** | Closed source, US vendor | Open source, on-prem; EU contracts via AENIX s.r.o. |
 | **Air-gap install** | Supported (extra licensing) | Supported (no extra cost) |
 | **Pricing transparency** | Quote-driven, non-public | Public on aenix.io/pricing; OSS is free |

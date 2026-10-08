@@ -39,14 +39,14 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "End-to-end migration from IBM AIX/Power (and Cloud Pak/OpenShift) to commodity x86 on Cozystack"
-  - label: "Destination license"
+  - label: "Destination licence"
     value: "Apache 2.0 — no per-socket / per-core / per-vCPU platform licensing"
   - label: "Virtualization"
     value: "KubeVirt replaces PowerVM; VMs and containers on one Kubernetes scheduler"
   - label: "Typical TCO reduction"
     value: "~40% over three years (illustrative mid-size-bank model; recomputed on real estate data)"
   - label: "Oracle"
-    value: "Kept on dedicated bare-metal and attached as an external app — license-clean (Oracle treats KubeVirt as soft partitioning)"
+    value: "Kept on dedicated bare-metal and attached as an external app — licence-clean (Oracle treats KubeVirt as soft partitioning)"
   - label: "Engagement"
     value: "Platform Readiness Assessment (14 or 28 days, fixed price) → pilot → cohort migration; migration services quoted after the assessment"
   - label: "Commercial model"
@@ -58,7 +58,7 @@ faq:
   - q: "Do we have to give up PowerVM live migration?"
     a: "No. KubeVirt provides live migration of running VMs between x86 nodes. In stretched-cluster designs across data centres, replication switches to synchronous only for the VM in flight, so cluster-wide latency does not rise. Stretched designs are delivered as engineering work in the build; there is no automated cross-site VM failover."
   - q: "We depend on Oracle Database. Does Kubernetes break Oracle licensing?"
-    a: "It would if you ran Oracle inside the cluster. Oracle treats Kubernetes and KubeVirt as soft partitioning and does not accept them as a way to limit the licensable scope — running Oracle in a cluster VM can require licensing every physical core it could land on. The recommended pattern keeps production Oracle on dedicated, separately-licensed bare-metal and attaches it to the platform as an external application over a private network. License-clean, and it matches how most banks already run Oracle."
+    a: "It would if you ran Oracle inside the cluster. Oracle treats Kubernetes and KubeVirt as soft partitioning and does not accept them as a way to limit the licensable scope — running Oracle in a cluster VM can require licensing every physical core it could land on. The recommended pattern keeps production Oracle on dedicated, separately-licensed bare-metal and attaches it to the platform as an external application over a private network. Licence-clean, and it matches how most banks already run Oracle."
   - q: "Is IBM Cloud Pak / OpenShift the same kind of product?"
     a: "Not quite. Cloud Pak is a proprietary data/AI software bundle on Red Hat OpenShift, licensed per-cluster on a vCPU-per-pod metric with a restricted OpenShift entitlement — a different class of product from a VM cloud. For an OpenShift-specific comparison see the [OpenShift alternative](/alternatives/openshift-alternative/) and [Cozystack vs OpenShift](/compare/cozystack-vs-openshift/)."
   - q: "Can our existing team operate it, given we lack AIX specialists?"
@@ -154,7 +154,7 @@ The model below is an illustrative list-price scenario for a mid-size bank (~500
 | Hardware (CapEx) | $200,000 — refresh 2 POWER servers | $90,000 — 6 commodity x86 nodes |
 | OS / platform licensing | $40,000 — AIX + PowerVM | $0 — Apache 2.0 |
 | Support (3 yr) | $180,000 — IBM SWMA/HWMA | $198,000 — Plus support tier list price for 10 nodes (24×7, guided migration, 3 h/month training) |
-| Oracle (license + support) | $300,000 — on shared POWER (core-factor 1.0) | $120,000 — isolated to a minimal dedicated footprint |
+| Oracle (licence + support) | $300,000 — on shared POWER (core-factor 1.0) | $120,000 — isolated to a minimal dedicated footprint |
 | Migration services | — | Quoted after the assessment (not included above) |
 | **Total (3 years)** | **$720,000** | **$408,000 + migration services** |
 
@@ -196,12 +196,12 @@ It compresses the licensable footprint as non-Oracle workloads leave POWER. (Ora
 |---|---|---|---|
 | What it is | Open PaaS framework on Kubernetes for building a cloud | IaaS — modular infrastructure services | Proprietary data/AI software bundle on Red Hat OpenShift |
 | VM + containers | One API (KubeVirt + containers, one scheduler) | Separate: VMs via Nova, containers via Zun/Magnum | Container-centric; no native unified VM+container provisioning |
-| License & cost | Apache 2.0; software free. Ænix support tiers from $1,250/mo per 10 nodes | Apache 2.0; pay for distro/support | Proprietary per-cluster subscription, vCPU-per-pod metric; restricted OpenShift entitlement |
+| Licence & cost | Apache 2.0; software free. Ænix support tiers from $1,250/mo per 10 nodes | Apache 2.0; pay for distro/support | Proprietary per-cluster subscription, vCPU-per-pod metric; restricted OpenShift entitlement |
 | Vendor lock-in | Low — API-first, CNCF-governed | Medium — at the distro level | High — proprietary stack + bundled-restricted OpenShift |
 | Multi-tenancy | Native (Tenant model, eBPF isolation, billing integration) | Native (Keystone, projects, quotas) | Supported (OpenShift namespaces + Zen) |
 | On-prem / air-gap | Yes | Yes | Yes (operator-catalog mirroring) |
 
-Cozystack is a CNCF Sandbox project (its Incubation application is in due diligence), released under Apache 2.0 and governed in the open rather than by a single vendor. That removes most of the "vendor changes the license" risk of proprietary and quasi-open products: a different risk profile for a state-owned bank under a digital-sovereignty mandate.
+Cozystack is a CNCF Sandbox project (its Incubation application is in due diligence), released under Apache 2.0 and governed in the open rather than by a single vendor. That removes most of the "vendor changes the licence" risk of proprietary and quasi-open products: a different risk profile for a state-owned bank under a digital-sovereignty mandate.
 
 <!-- /BLOCK 6 -->
 

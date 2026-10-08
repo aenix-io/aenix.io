@@ -21,7 +21,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "An open-source-first Kubernetes platform that replaces OpenShift's licensed virtualization and multi-tenancy with Apache 2.0 tooling — Cozystack."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -80,7 +80,7 @@ If you're already deeply on Red Hat / OpenShift, the alternative analysis usuall
 
 | | OpenShift Virtualization | Cozystack |
 |---|---|---|
-| **License** | Red Hat commercial subscription | Apache 2.0 |
+| **Licence** | Red Hat commercial subscription | Apache 2.0 |
 | **Foundation** | Kubernetes + KubeVirt + Red Hat ecosystem | Kubernetes + KubeVirt + Cilium + LINSTOR |
 | **Multi-tenancy** | Projects, namespaces and RBAC | Tenant CRD (nested, per-tenant quota) |
 | **Operational footprint** | OpenShift (broad) | Cozystack (focused) |

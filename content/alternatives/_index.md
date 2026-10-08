@@ -28,7 +28,7 @@ hreflang_de: /de/alternativen/
 
 ## VMware
 
-Post-Broadcom, VMware customers face subscription pressure + license model uncertainty. The largest single migration trigger we see in 2026.
+Post-Broadcom, VMware customers face subscription pressure + licence model uncertainty. The largest single migration trigger we see in 2026.
 
 - **[VMware alternative — our recommendation](/alternatives/vmware-alternative/)** — for teams close to a migration decision
 - **[Best VMware alternatives 2026 — market comparison](/alternatives/vmware-alternatives/)** — eight platforms side by side for a shortlist

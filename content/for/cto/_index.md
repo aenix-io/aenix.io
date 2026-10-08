@@ -53,7 +53,7 @@ Take back cost and data-location control for the workloads that don't belong on 
 
 ## Two ways Ænix helps you
 
-**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) gives you a production cloud-in-a-box on Cozystack — multi-tenant, with managed databases, storage and observability — that your team operates with our SLA behind it.
+**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) gives you a complete production private cloud on Cozystack — multi-tenant, with managed databases, storage and observability — that your team operates with our SLA behind it.
 
 **2. Build / migrate with our team.** Cozystack is the framework; **Ænix is your outsourced engineering team** for a [cloud-repatriation](/solutions/cloud-repatriation/) or greenfield build — architecture, migration, and the [cost-optimization](/solutions/cloud-cost-optimization/) model, executed by the people who maintain the platform.
 
@@ -63,7 +63,7 @@ Take back cost and data-location control for the workloads that don't belong on 
 
 - **What it is:** an open, Kubernetes-native platform you run on owned or leased hardware (no per-core tax).
 - **Who it's for:** CTOs and VPs of Engineering at scale-ups, SaaS and product companies.
-- **License:** Apache 2.0.
+- **Licence:** Apache 2.0.
 - **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** repatriating compute but leaving data, backups and observability on the hyperscaler, so the savings and the sovereignty both leak.
 

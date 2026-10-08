@@ -18,7 +18,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "An end-to-end project to move workloads off VMware VCF / vSphere / vCloud Director onto customer-controlled infrastructure, typically Cozystack."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -254,10 +254,10 @@ For destination guidance, see **[VMware alternative](/alternatives/vmware-altern
 | Days 1-13 (or 1-27) | Platform Readiness Assessment with VMware emphasis |
 | Day 14 (or 28) | Executive readout — written plan |
 | Months 1-3 | Destination platform foundation |
-| Months 3-12 | Workload cohorts migrate (cohort cadence aligned with VCF expirations) |
-| Months 12-24 | VMware decommission complete |
+| Months 3-12 | Workload cohorts migrate (cohort cadence aligned with VCF expirations); a ~100-VM estate typically finishes in this window |
+| Months 12-24 | Larger estates (~1,000 VMs): remaining cohorts migrate and VMware is decommissioned |
 
-100-VM estate typically completes in 8-12 months. 1000-VM estate in 18-24 months.
+Including planning and migration waves, a ~100-VM estate typically completes in about 8-12 months and a ~1,000-VM estate in 18-24 months; estates in between depend on their dependencies.
 
 <!-- /BLOCK 7 -->
 

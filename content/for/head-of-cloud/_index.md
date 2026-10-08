@@ -63,7 +63,7 @@ Add a cloud line to your portfolio that you control: branded, multi-tenant, bill
 - **What it is:** a branded, multi-tenant cloud (IaaS/PaaS) you deliver to clients on an open core.
 - **Who it's for:** Heads of Cloud / Cloud Practice Leads at SIs, MSPs and resellers.
 - **Margin:** up to **40%** via the Partner Program; the VMware licence line becomes your margin.
-- **License:** Apache 2.0 — no per-core cost dragging your unit economics.
+- **Licence:** Apache 2.0 — no per-core cost dragging your unit economics.
 - **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** reselling a hyperscaler and competing on price while owning none of the platform value.
 
