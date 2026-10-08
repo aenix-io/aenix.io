@@ -2,7 +2,7 @@
   <div class="meta">
     <span class="brandline">ÆNIX</span>
     <span class="doctitle">NIS2-Compliance-Readiness-Checkliste</span>
-    <span class="versionline">Aenix · aenix.io · v1.1 — September 2026</span>
+    <span class="versionline">Ænix · aenix.io · v1.2 — Oktober 2026</span>
   </div>
   <div class="cover__mark">ÆNIX</div>
   <div class="cover__rule"></div>
@@ -10,7 +10,7 @@
   <p class="cover__subtitle">35 architektonische Kontrollpunkte, um zu prüfen, ob Ihre Cloud-Plattform die von der Richtlinie (EU) 2022/2555 geforderten Risikomanagementmaßnahmen für Cybersicherheit trägt.</p>
   <div class="cover__spacer"></div>
   <div class="cover__audience">Für CISOs, Security- &amp; Compliance-Verantwortliche · aenix.io</div>
-  <p class="cover__strapline"><b>35 architektonische Kontrollpunkte für wesentliche und wichtige Einrichtungen.</b> Ausgerichtet auf die Richtlinie (EU) 2022/2555. Umsetzungsfrist der Mitgliedstaaten: 17. Oktober 2024. v1.1 — September 2026.</p>
+  <p class="cover__strapline"><b>35 architektonische Kontrollpunkte für wesentliche und wichtige Einrichtungen.</b> Ausgerichtet auf die Richtlinie (EU) 2022/2555. Umsetzungsfrist der Mitgliedstaaten: 17. Oktober 2024. v1.2 — Oktober 2026.</p>
 </section>
 
 <h1 class="doc-h">So verwenden Sie diese Checkliste</h1>
@@ -132,12 +132,12 @@
 
 <h1 class="doc-h newpage">Empfehlungen auf Architekturebene</h1>
 
-<p class="lead">Für die meisten NIS2-Kontrollen ist die Architektur die wirkungsvollste Abhilfefläche. Trägt die zugrunde liegende Plattform strukturell Mandantenisolierung, kundenkontrollierte Verschlüsselung, einen unveränderlichen Audit-Trail, kontrollierten Lieferantenzugriff sowie getestete Exit-/Restore-Mechaniken, so werden viele der 35 Kontrollpunkte zur Folge des Designs statt zu separaten Compliance-Projekten.</p>
+<p class="lead">Für die meisten NIS2-Kontrollen ist die Architektur die wirkungsvollste Abhilfefläche. Trägt die zugrunde liegende Plattform strukturell Mandantenisolierung, eine Verschlüsselung im Ruhezustand, die Sie selbst konfigurieren, Audit-Logs, die Sie in einen Speicher unter Ihrer Kontrolle exportieren können, kontrollierten Lieferantenzugriff sowie getestete Exit-/Restore-Mechaniken, so werden viele der 35 Kontrollpunkte zur Folge des Designs statt zu separaten Compliance-Projekten.</p>
 
 <h3 class="plain">Wenn die Architektur NIS2-Lücken strukturell schließt</h3>
 <ul class="bullets">
   <li>Tenant-CRD-Mandantenfähigkeit adressiert <span class="art">Art. 21(2)(a)</span> Netzwerksegmentierung und Isolierung zwischen Vertrauenszonen.</li>
-  <li>Kundenkontrollierte Verschlüsselung auf Plattform-, Speicher- und Observability-Ebene adressiert <span class="art">Art. 21(2)(h)</span>.</li>
+  <li>Verschlüsselte Backups, TLS bei der Übertragung und optionale Volume-Verschlüsselung im Ruhezustand (etwa LUKS mit einer Passphrase, die Sie verwalten) adressieren einen Teil von <span class="art">Art. 21(2)(h)</span>; das Schlüsselmanagement bleibt ein Prozess, den Sie darum herum gestalten.</li>
   <li>Air-Gap-Unterstützung adressiert Anforderungen an souveräne / regulatorisch isolierte Workloads, wenn nationales Recht über die NIS2-Grundlinie hinausgeht.</li>
   <li>Vollständigkeit des Audit-Trails (anbieterseitig über VictoriaLogs, kundenseitig per Export) adressiert <span class="art">Art. 21(2)(i)</span> und die Erwartungen an den Behördenzugriff.</li>
   <li>Getestete Exit- und Restore-Mechaniken adressieren <span class="art">Art. 21(2)(c)</span> BCP und die Lieferanten-Exit-Erwartungen aus <span class="art">Art. 21(2)(d)</span>.</li>
@@ -152,7 +152,7 @@
 
 <h3 class="plain">Wenn eine Teil-Nachrüstung wirklich nicht ausreicht</h3>
 <ul class="bullets">
-  <li>Auf VMware Cloud Director basierende Plattformen tun sich mit Portabilität (<span class="art">Art. 21(2)(d)</span> Lieferanten-Exit) und kundenkontrollierten Schlüsseln auf jeder Ebene schwer.</li>
+  <li>Auf VMware Cloud Director basierende Plattformen tun sich mit Portabilität (<span class="art">Art. 21(2)(d)</span> Lieferanten-Exit) schwer.</li>
   <li>Ausschließlich anbieterverwaltete Verschlüsselung, insbesondere für Backups und Observability, scheitert an <span class="art">Art. 21(2)(h)</span>, wo die Prüfung durch die Regulierungsbehörde hoch ist.</li>
   <li>Geteilte Multi-Tenant-SaaS-Infrastruktur tut sich mit den Erwartungen an die Vollständigkeit des Audit-Trails unter behördlicher Prüfung schwer.</li>
 </ul>
@@ -161,17 +161,17 @@
   <p>Die kosteneffizienteste Reihenfolge zur Lückenschließung ist meist: (1) durchgängige MFA + JML, (2) Backup-Test + DR-Test, (3) CVE-SLA + SBOM, (4) Lieferantenregister + Vertragsaktualisierung, (5) architektonische Änderungen dort, wo die Schritte 1–4 die Lücke nicht schließen können.</p>
 </div>
 
-<h1 class="doc-h newpage">NIS2-konforme Cloud-Architektur — Referenzmuster</h1>
+<h1 class="doc-h newpage">An NIS2 ausgerichtete Cloud-Architektur — Referenzmuster</h1>
 
-<p class="lead">Eine Plattform, die um Isolierung, kundenkontrollierte Kryptografie und unveränderliche Nachvollziehbarkeit herum gebaut ist, kann die meisten Artikel-21-Kontrollen auf Plattformebene schließen, statt als 35 kompensierende Verfahren. Das folgende Referenzmuster stapelt drei Ebenen.</p>
+<p class="lead">Eine Plattform, die um Mandantenisolierung, selbst konfigurierte Verschlüsselung und in einen Speicher unter Ihrer Kontrolle exportierte Audit-Logs herum gebaut ist, kann viele Artikel-21-Kontrollen auf Plattformebene adressieren, statt als 35 kompensierende Verfahren. Das folgende Referenzmuster stapelt drei Ebenen.</p>
 
 <div class="layer">
   <h4>Mandantenebene</h4>
-  <p>Voneinander isolierte Mandanten nebeneinander — zum Beispiel ein Produktionsmandant, ein audit-isolierter Mandant, ein Mandant für souveräne Workloads und ein Testmandant. Jeder trägt eigene Verschlüsselungsschlüssel, einen eigenen Audit-Log-Stream und MFA-geschützten Zugriff.</p>
+  <p>Voneinander isolierte Mandanten nebeneinander — zum Beispiel ein Produktionsmandant, ein audit-isolierter Mandant, ein Mandant für souveräne Workloads und ein Testmandant. Jeder trägt eigene Netzwerk-Policies, einen eigenen Audit-Log-Stream und MFA-geschützten Zugriff; die Volume-Verschlüsselung wird je Storage Class aktiviert, wo die Daten es erfordern.</p>
 </div>
 <div class="layer">
   <h4>Plattform-Steuerungsebene</h4>
-  <p>Eine einzige Kubernetes-native Steuerungsebene mit Tenant-CRD, Identität (OIDC), NetworkPolicy- / Cilium-Segmentierung, Verschlüsselung (BYOK / HYOK), einer Audit-Pipeline (VictoriaLogs in ein unveränderliches Backend) und Backup-Orchestrierung.</p>
+  <p>Eine einzige Kubernetes-native Steuerungsebene mit Tenant-CRD, Identität (OIDC), NetworkPolicy- / Cilium-Segmentierung, optionaler Volume-Verschlüsselung im Ruhezustand, einer Audit-Pipeline (VictoriaLogs, exportierbar in einen unveränderlichen Speicher, den Sie betreiben) und Backup-Orchestrierung.</p>
 </div>
 <div class="layer">
   <h4>Substrat</h4>
@@ -183,7 +183,7 @@
     <tr><th>Architekturelement</th><th>NIS2-Kontrollbereich</th></tr>
   </thead>
   <tbody>
-    <tr><td>Verschlüsselungsschlüssel je Mandant</td><td><span class="art">Art. 21(2)(h)</span> Kundenkontrollierte Verschlüsselung</td></tr>
+    <tr><td>Volume-Verschlüsselung im Ruhezustand (optional)</td><td><span class="art">Art. 21(2)(h)</span> Kryptografie und Verschlüsselung</td></tr>
     <tr><td>NetworkPolicy / Cilium</td><td><span class="art">Art. 21(2)(a)</span> Segmentierung</td></tr>
     <tr><td>Audit-Pipeline</td><td><span class="art">Art. 21(2)(i)</span> <span class="art">Art. 23</span></td></tr>
     <tr><td>Mehrere Rechenzentren + DR-Standort</td><td><span class="art">Art. 21(2)(c)</span> Kontinuität &amp; DR</td></tr>
@@ -192,12 +192,12 @@
   </tbody>
 </table>
 
-<p class="lead">Dieses Muster ist nicht die einzige gültige NIS2-konforme Architektur — es zeigt jedoch, wie Isolierung, kundenkontrollierte Kryptografie und unveränderliche Nachvollziehbarkeit die meisten Artikel-21-Kontrollen auf Plattformebene schließen.</p>
+<p class="lead">Dieses Muster ist nicht die einzige gültige an NIS2 ausgerichtete Architektur — es zeigt jedoch, wie Isolierung, selbst konfigurierte Verschlüsselung und exportierbare Audit-Logs viele Artikel-21-Kontrollen auf Plattformebene adressieren.</p>
 
 <h1 class="doc-h newpage">Nächste Schritte</h1>
 
 <div class="option"><b>Option 1 — Selbst beheben mit dieser Checkliste.</b> Gehen Sie sie mit Security-, Platform- und Compliance-Teams durch. Überführen Sie nicht abgehakte Punkte in einen 90-Tage-Behebungsplan.</div>
-<div class="option"><b>Option 2 — NIS2-konformes Readiness-Engagement mit Aenix (4–6 Wochen).</b> Wir arbeiten die Checkliste mit Ihnen durch, prüfen die Architektur gegen jede Kontrolle und erstellen einen Behebungsplan mit Aufwandsschätzungen und Entwürfen der Behördennarrative. Festpreis-Engagement.</div>
+<div class="option"><b>Option 2 — Platform Readiness Assessment mit Ænix (14 oder 28 Tage).</b> Wir arbeiten die Checkliste mit Ihnen durch, prüfen die Architektur gegen jede Kontrolle und erstellen einen Behebungsplan mit Aufwandsschätzungen und Entwürfen der Behördennarrative. Festpreis-Engagement.</div>
 <div class="option"><b>Option 3 — Gemeinsames Mapping von NIS2 + DORA + DSGVO.</b> Für Einrichtungen, die in den Anwendungsbereich mehrerer Rahmenwerke fallen. Wir bilden die Kontrollen ab, um Doppelarbeit zu vermeiden, und zeigen auf, wo ein Rahmenwerk mehrere zugleich erfüllt.</div>
 
 <div class="cta">Vereinbaren Sie ein Erstgespräch: <span>aenix.io/services/platform-readiness-assessment/</span></div>
@@ -209,8 +209,8 @@
   <li><b>Anlassbezogen:</b> bei wesentlichen Änderungen an NIS2 selbst oder an sektoraler Lex specialis.</li>
 </ul>
 
-<p class="lead">Aenix ist das Team hinter Cozystack (einem CNCF-Projekt) und bietet die Ænix Platform — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack. aenix.io</p>
+<p class="lead">Ænix hat Cozystack (ein CNCF-Projekt) entwickelt, pflegt es mit und baut darauf die Ænix-Plattformen für Public Cloud, Private Cloud und KI. aenix.io</p>
 
 <div class="closing">
-  <b>Aenix · aenix.io · NIS2-Compliance-Readiness-Checkliste · v1.1 — September 2026.</b> Aenix is the team behind Cozystack (CNCF, Apache 2.0).
+  <b>Ænix · aenix.io · NIS2-Compliance-Readiness-Checkliste · v1.2 — Oktober 2026.</b> Ænix hat Cozystack entwickelt und pflegt es mit (CNCF, Apache 2.0).
 </div>
