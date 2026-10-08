@@ -1,6 +1,7 @@
 ---
 title: "Resources"
-description: "Free Aenix resources — checklists, decision guides, TCO worksheets, maturity assessments. The same frameworks used in paid engagements, free to self-assess."
+seo_title: "Free cloud checklists, TCO worksheets and guides"
+description: "Free Ænix resources — checklists, decision guides, TCO worksheets, maturity assessments. The same frameworks used in paid engagements, free to self-assess."
 hero_subtitle: "Free checklists, TCO worksheets, and decision guides to self-assess"
 language: "en"
 hreflang_de: /de/ressourcen/
@@ -21,7 +22,7 @@ hreflang_de: /de/ressourcen/
 <div class="diagram__conn">download &amp; self-assess</div>
 <div class="diagram__node"><b>Engagement</b><div class="diagram__chips"><span>Discovery call</span><span>Platform Readiness Assessment</span></div></div>
 <div class="diagram__conn">leads to</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform</b><div class="diagram__chips"><span>Public Cloud Platform</span><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
+<div class="diagram__node diagram__node--brand"><b>Ænix platforms</b><div class="diagram__chips"><span>Public Cloud Platform</span><span>Private Cloud Platform</span><span>AI Platform</span></div></div>
 </div>
 </div>
 
@@ -29,14 +30,14 @@ hreflang_de: /de/ressourcen/
 
 ### Compliance checklists
 
-- **[DORA Compliance Cloud Architecture Checklist](/resources/dora-compliance-checklist/)** — 35-point PDF checklist across six sections, covering the ICT risk-management framework (DORA Articles 5-16), incident classification and reporting (17-19), resilience testing and TLPT (24-27), and ICT third-party risk, exit strategies and key contractual provisions (28-30). For CISOs and cloud architects in financial services and ICT third-party providers. Pairs with: Private Cloud Platform / [DORA solution](/solutions/dora-compliance/).
-- **[NIS2 Compliance Readiness Checklist](/resources/nis2-compliance-checklist/)** — 35-point PDF checklist across five sections, covering the Article 21(2)(a)-(j) risk-management measures, Article 23 reporting timelines, business continuity and vulnerability management (including coordinated vulnerability disclosure under Article 12), supply chain and cryptography, and access control and audit. For essential and important entities. Pairs with: Private Cloud Platform / [NIS2 solution](/solutions/nis2-compliance/).
+- **[DORA Compliance Cloud Architecture Checklist](/resources/dora-compliance-checklist/)** — 35-point PDF checklist across six sections, covering the ICT risk-management framework (DORA Articles 5-16), incident classification and reporting (17-19, major-incident reporting under Article 19), resilience testing and TLPT (24-27), and ICT third-party risk, exit strategies and key contractual provisions (28-30). For CISOs and cloud architects in financial services and ICT third-party providers. Pairs with: Private Cloud Platform / [DORA solution](/solutions/dora-compliance/).
+- **[NIS2 Compliance Cloud Architecture Checklist](/resources/nis2-compliance-checklist/)** — 35-point PDF checklist across five sections, covering the Article 21(2)(a)-(j) risk-management measures, Article 23 reporting timelines, business continuity and vulnerability management (including a published vulnerability disclosure process, see Article 12), supply chain and cryptography, and access control and audit. For essential and important entities. Pairs with: Private Cloud Platform / [NIS2 solution](/solutions/nis2-compliance/).
 
 ### Migration & cost worksheets
 
 - **[VMware Migration Assessment Checklist](/resources/vmware-migration-checklist/)** — 25-point PDF checklist for organizations evaluating VMware exit. Covers inventory, dependencies, network/storage redesign, multi-tenancy, AI/GPU, sovereignty, operational readiness, cost trajectory. Pairs with: [VMware migration hub](/migration/vmware/) / [VMware alternative](/alternatives/vmware-alternative/).
 - **[Cloud Repatriation TCO Worksheet](/resources/cloud-repatriation-tco-worksheet/)** — nine-page PDF worksheet plus an editable CSV that opens in Excel or Google Sheets. Models hidden costs (egress, RI underutilisation, observability vendor egress, hyperscaler-managed-service premium) plus realistic destination costs over a five-year horizon. Outputs a board-grade recommendation. Pairs with: [Cloud repatriation solution](/solutions/cloud-repatriation/) / [Cloud cost optimization solution](/solutions/cloud-cost-optimization/).
-- **[VMware cost calculator](/resources/vmware-cost-calculator/)** — interactive on-page calculator (no download, no email). Enter cores, cost per core and migration cost; get annual saving, three-year net and payback. Pairs with: [VMware alternative](/alternatives/vmware-alternative/) / [VMware migration hub](/migration/vmware/).
+- **[VMware cost calculator](/resources/vmware-cost-calculator/)** — interactive on-page calculator (no download, no email). Enter cores, cost per core and migration cost; get annual saving, three-year net and payback. For a five-year model see the [VMware vs Cozystack TCO calculator](/tco-calculator/vs-vmware/). Pairs with: [VMware alternative](/alternatives/vmware-alternative/) / [VMware migration hub](/migration/vmware/).
 
 ### Decision guides + maturity models
 
@@ -61,10 +62,10 @@ The resources stand alone — no Ænix engagement required. They're useful even 
 
 - The PDF (and, for the TCO worksheet, an editable CSV) itself
 - Email with download link (delivered immediately)
-- Optional 3-5 email nurture sequence over 2 weeks (covers related solutions and which Ænix platform fits your profile)
+- Optional 3-5 follow-up emails over 2 weeks (related solutions and which Ænix platform fits your profile)
 - Optional follow-up offer for discovery call
 
-You can opt out of the nurture sequence at any time.
+You can opt out of the follow-up emails at any time.
 
 ---
 
@@ -75,11 +76,11 @@ You can opt out of the nurture sequence at any time.
 
 | Resource | Pairs with engagement |
 |---|---|
-| DORA Checklist | DORA-aligned readiness engagement (4-6 weeks); Private Cloud Platform build |
-| NIS2 Checklist | NIS2-aligned readiness engagement (4-6 weeks); Private Cloud Platform build |
-| VMware Migration Checklist | Platform Readiness Assessment (14 days, or 28 for the full variant) → cohort migration |
+| DORA Checklist | Platform Readiness Assessment with the DORA workstream (14 or 28 days); Private Cloud Platform build |
+| NIS2 Checklist | Platform Readiness Assessment with the NIS2 workstream (14 or 28 days); Private Cloud Platform build |
+| VMware Migration Checklist | Platform Readiness Assessment (14 or 28 days) → cohort migration |
 | Cloud Repatriation TCO Worksheet | Platform Readiness Assessment with cost workstream emphasis |
-| Sovereign AI Decision Guide | Sovereign AI architecture review (1-2 weeks); AI Platform build |
+| Sovereign AI Decision Guide | Platform Readiness Assessment with AI focus (14 or 28 days); AI Platform build |
 | Platform Engineering Maturity Assessment | Platform Readiness Assessment with IDP focus; Private Cloud Platform build with the developer self-service layer |
 
 </div>

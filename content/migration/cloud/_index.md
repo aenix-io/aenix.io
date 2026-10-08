@@ -1,6 +1,7 @@
 ---
 title: "Cloud migration services — strategy for private and hybrid infrastructure"
-description: "Cloud migration in 2026 is a workload-placement decision, not a race to public cloud. Aenix runs structured migrations: repatriation, VMware exit, greenfield."
+seo_title: "Cloud migration services for private and hybrid cloud"
+description: "Cloud migration in 2026 is a workload-placement decision, not a race to public cloud. Ænix runs structured migrations: repatriation, VMware exit, greenfield."
 date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "migration-hub"
@@ -19,7 +20,7 @@ related_pages:
   - /migration/vmware/
 hreflang_de: /de/migration/cloud/
 direct_answer: |
-  **The right question in a 2026 cloud migration is which workloads run best where — and increasingly the answer is a mix of public cloud, private cloud, and repatriated on-premises capacity, not a mandate to move everything to public cloud. Aenix runs structured cloud migrations across three common patterns: public-cloud repatriation driven by cost or sovereignty, VMware exit under Broadcom subscription pressure, and greenfield private-cloud builds. Each starts with a Platform Readiness Assessment — workload classification, honest TCO modelling, and a target architecture — before a single workload moves. The team that ships your migration is the same team behind Cozystack, the open-source platform most migrations land on.**
+  **The right question in a 2026 cloud migration is which workloads run best where — and increasingly the answer is a mix of public cloud, private cloud, and repatriated on-premises capacity, not a mandate to move everything to public cloud. Ænix runs structured cloud migrations across three common patterns: public-cloud repatriation driven by cost or sovereignty, VMware exit under Broadcom subscription pressure, and greenfield private-cloud builds. Each starts with a Platform Readiness Assessment — workload classification, honest TCO modelling, and a target architecture — before a single workload moves. The team that ships your migration created and co-maintains Cozystack, the open-source platform most migrations land on.**
 quick_facts:
   - label: "What it is"
     value: "A structured cloud migration engagement — repatriation, VMware exit, or greenfield private cloud — led by workload placement, not a fixed destination"
@@ -34,21 +35,21 @@ quick_facts:
   - label: "Areas served"
     value: "EU, DACH, Central Asia — time-zone-aligned engineering"
   - label: "Production reference"
-    value: "A European academic-computing SaaS moved off a hyperscaler onto owned bare metal with no user downtime and cut GPU cost about fivefold (see the multi-cloud academic GPU case study); tier-1 European bank engagements remain NDA-protected until mid-2027"
+    value: "A European academic-computing SaaS moved off a hyperscaler onto owned bare metal with no user downtime and cut GPU cost about fivefold (see the multi-cloud academic GPU case study); a bank case study is published in anonymised form"
 quick_facts_source: "[Cozystack docs](https://cozystack.io), [CNCF Landscape](https://landscape.cncf.io)"
 faq:
   - q: "What are cloud migration services?"
-    a: "Cloud migration services cover the assessment, architecture, and execution work of moving workloads between environments — public cloud, private cloud, or on-premises. Aenix delivers this as a structured engagement: workload classification, TCO modelling, target architecture, then cohort-based execution with parallel-run validation."
+    a: "Cloud migration services cover the assessment, architecture, and execution work of moving workloads between environments — public cloud, private cloud, or on-premises. Ænix delivers this as a structured engagement: workload classification, TCO modelling, target architecture, then cohort-based execution with parallel-run validation."
   - q: "Does cloud migration mean moving everything to public cloud?"
     a: "No. In 2026 the mature approach is workload placement — deciding case by case whether each workload belongs in public cloud, on a private platform, or repatriated on-premises. Many organisations are moving in the opposite direction, repatriating from hyperscalers for cost and sovereignty reasons."
   - q: "How do you build a cloud migration strategy?"
     a: "Start with a Platform Readiness Assessment: inventory every workload, classify it (migrate now / later / stay / re-platform), model TCO honestly, and design the target architecture. The strategy falls out of that classification rather than a top-down mandate to move a set percentage."
   - q: "What is private cloud migration?"
-    a: "Private cloud migration relocates workloads onto infrastructure you control — your own hardware or a dedicated environment — instead of a shared hyperscaler. Aenix typically lands these on Cozystack (KubeVirt, Cilium, LINSTOR), an Apache 2.0 platform with no per-CPU licensing."
+    a: "Private cloud migration relocates workloads onto infrastructure you control — your own hardware or a dedicated environment — instead of a shared hyperscaler. Ænix typically lands these on Cozystack (KubeVirt, Cilium, LINSTOR), an Apache 2.0 platform with no per-CPU licensing."
   - q: "How is this different from a VMware migration?"
     a: "VMware migration is one specific pattern — exiting VCF under Broadcom pricing. This page covers the broader strategy across all cloud migration patterns. If your trigger is specifically VMware, see the dedicated VMware migration hub for cohort sequencing tied to subscription expirations."
   - q: "Can we keep some workloads where they are?"
-    a: "Yes, and you often should. An honest assessment recommends leaving workloads in place — including in public cloud — when that is the right technical and economic fit. Aenix has no hyperscaler bias and no incentive to over-migrate."
+    a: "Yes, and you often should. An honest assessment recommends leaving workloads in place — including in public cloud — when that is the right technical and economic fit. Ænix has no hyperscaler bias and no incentive to over-migrate."
 service:
   type: "Cloud Migration"
   areaServed: ["EU", "DACH", "Central Asia"]
@@ -57,7 +58,7 @@ service:
 
 **Cloud migration in 2026 is a workload-placement decision, not a race to public cloud. Ænix runs structured cloud migrations — public-cloud repatriation, VMware exit, and greenfield private-cloud builds — where the destination is chosen from the workload, not assumed up front.**
 
-The team that ships your migration is the same team behind [Cozystack](/products/cozystack/) — the open-source platform most private-cloud migrations land on. We work alongside your engineers for assessment, sequencing, and implementation.
+The team that ships your migration created and co-maintains [Cozystack](/products/cozystack/) — the open-source platform most private-cloud migrations land on. We work alongside your engineers for assessment, sequencing, and implementation.
 
 > **Pairs with:** one of the **[Ænix platforms](/products/)** — the destination follows the buyer profile. Organizations that sell cloud to external customers (hosters, MSPs, telcos, national operators) land on the **[Public Cloud Platform](/products/public-cloud-platform/)**; regulated organizations running cloud for their own developers land on the **[Private Cloud Platform](/products/private-cloud-platform/)**, whose developer self-service layer replaces the internal PaaS; GPU and inference estates land on the **[AI Platform](/products/ai-platform/)**.
 
@@ -175,9 +176,9 @@ Treating the target's networking and storage as a copy of the source guarantees 
 
 Migration economics look attractive in the abstract and turn on details in practice — hardware refresh, platform-team capacity, and the operational learning curve all move the result. Before committing, model the delta with the **[ROI & TCO calculators](/roi-calculator/)**: VMware-exit savings, DIY-versus-Ænix platform TCO, hosting unit economics, and GPU/AI-inference ROI, each with editable inputs and live results.
 
-For a worked example of a mixed-placement outcome, see the **[multi-cloud academic GPU case study](/case-studies/multicloud-academic-gpu/)** — where the right answer was a blend of owned GPU capacity and retained cloud, not a wholesale move in either direction.
+For a worked example of a mixed-placement outcome, see the **[multi-cloud academic GPU case study](/case-studies/multicloud-academic-gpu/)** — where the right answer was a blend of owned GPU capacity and retained cloud, not a wholesale move in either direction. Making the case to the board? See the **[guide for CTOs](/for/cto/)**.
 
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
+*Ænix created Cozystack (a CNCF Sandbox project) and co-maintains it with maintainers from other companies. On top of it, Ænix offers three platforms — Public Cloud, Private Cloud and AI.*

@@ -1,5 +1,6 @@
 ---
 title: "OpenStack migration — service-by-service move to a Kubernetes control plane"
+seo_title: "OpenStack migration to Cozystack, service by service"
 description: "OpenStack to Cozystack migration: what maps, what is redesigned (Neutron), what does not move (Ironic, Heat), and when staying on OpenStack is right."
 date: 2026-09-03
 lastmod: 2026-09-03
@@ -10,14 +11,15 @@ faq_style: "rows"
 primary_keyword: "openstack migration"
 secondary_keywords: ["migrate from openstack", "openstack to kubernetes", "openstack modernization", "openstack replacement"]
 related_pages:
-  - /alternatives/openstack-alternative
+  - /alternatives/openstack-alternative/
+  - /compare/cozystack-vs-openstack/
   - /products/public-cloud-platform/
   - /products/private-cloud-platform/
-  - /products/cozystack
-  - /services/platform-readiness-assessment
+  - /products/cozystack/
+  - /services/platform-readiness-assessment/
   - /migration/vmware/
 direct_answer: |
-  **An OpenStack migration moves compute, tenants, storage and networking from an OpenStack cloud onto a Kubernetes-native control plane. Aenix runs these onto Cozystack, an Apache 2.0 CNCF project that runs VMs and containers on one Kubernetes API. The mapping is uneven and worth knowing before scoping: Nova and Glance move mechanically because both sides are KVM, Cinder either keeps Ceph or moves to LINSTOR, Keystone projects are re-modelled onto the Tenant CRD, and Neutron is a genuine redesign onto Cilium rather than a conversion. Heat templates and Horizon customisations are rebuilt, not ported, and Ironic has no direct equivalent. A mid-size migration runs 4-12 months. Where the team still has depth and the upgrade path is exercised, staying on OpenStack is the correct answer.**
+  **An OpenStack migration moves compute, tenants, storage and networking from an OpenStack cloud onto a Kubernetes-native control plane. Ænix runs these onto Cozystack, an Apache 2.0 CNCF Sandbox project that runs VMs and containers on one Kubernetes API. The mapping is uneven and worth knowing before scoping: Nova and Glance move mechanically because both sides are KVM, Cinder either keeps Ceph or moves to LINSTOR, Keystone projects are re-modelled onto the Tenant CRD, and Neutron is a genuine redesign onto Cilium rather than a conversion. Heat templates and Horizon customisations are rebuilt, not ported, and Ironic has no direct equivalent. A mid-size migration runs 4-12 months. Where the team still has depth and the upgrade path is exercised, staying on OpenStack is the correct answer.**
 quick_facts:
   - label: "What it is"
     value: "A cohort-based migration from OpenStack to a Kubernetes-native control plane (Cozystack), covering compute, tenancy, storage and networking."
@@ -30,9 +32,9 @@ quick_facts:
   - label: "Typical timeline"
     value: "4-12 months for a mid-size deployment; 12-18 months with complex provider networks or tenant-facing OpenStack APIs."
   - label: "License"
-    value: "Cozystack is Apache 2.0 with no per-CPU or per-core licensing; a CNCF project (Sandbox since 2025-02-28)."
+    value: "Cozystack is Apache 2.0 with no per-CPU or per-core licensing; a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)."
   - label: "Migration tooling"
-    value: "Konveyor Forklift ships in the Aenix platform and supports OpenStack as a source provider — cold migration only, so each instance has a real power-off window."
+    value: "Konveyor Forklift ships in the Ænix platforms and supports OpenStack as a source provider — cold migration only, so each instance has a real power-off window."
   - label: "When not to migrate"
     value: "Staffed operations team, exercised upgrade path, and heavy use of Ironic, Octavia, Manila or Designate — stay on OpenStack."
 faq:
@@ -49,7 +51,7 @@ faq:
   - q: "When should we stay on OpenStack instead of migrating?"
     a: "When you have a staffed operations team that knows the release cadence, an upgrade path that is exercised rather than theoretical, and real use of the wider service surface — Ironic for bare metal, Octavia, Manila, Designate, Barbican. OpenStack does things a Kubernetes-native platform does not. The migration case is operational: stalled upgrades, a bus-factor of one or two engineers, a narrow service footprint, or containers already forming the majority of the workload."
   - q: "What tooling performs the transfer?"
-    a: "Konveyor Forklift, the Kubernetes migration toolkit for virtualization, which ships in the Aenix platform and supports OpenStack as a source provider. Network and storage mappings are declared as Kubernetes objects and virt-v2v handles guest conversion. One constraint to plan around: from OpenStack, Forklift performs cold migration only. Warm, incremental transfer using changed block tracking is available from vSphere and RHV, not from OpenStack, so each instance needs a genuine power-off window and cohort sizing follows from how many of those you can schedule together."
+    a: "Konveyor Forklift, the Kubernetes migration toolkit for virtualization, which ships in the Ænix platforms and supports OpenStack as a source provider. Network and storage mappings are declared as Kubernetes objects and virt-v2v handles guest conversion. One constraint to plan around: from OpenStack, Forklift performs cold migration only. Warm, incremental transfer using changed block tracking is available from vSphere and RHV, not from OpenStack, so each instance needs a genuine power-off window and cohort sizing follows from how many of those you can schedule together."
   - q: "Do we need double the hardware during the migration?"
     a: "No. Cozystack is deployed alongside OpenStack, but only with enough headroom for the largest in-flight cohort. As each cohort completes and its OpenStack side is released, those nodes are drained and rebuilt into the target cluster, so capacity rolls forward rather than being duplicated for the whole programme."
 service:
@@ -64,7 +66,7 @@ service:
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/alternatives/openstack-alternative">OpenStack alternative →</a>
+  <a class="cta-secondary" href="/alternatives/openstack-alternative/">OpenStack alternative →</a>
 </div>
 
 ---
@@ -129,9 +131,9 @@ Two entries deserve emphasis because they are where migrations overrun.
 </div>
 </div>
 
-1. **Architecture review (2-4 weeks).** Full service inventory — which OpenStack projects are actually in use, which have tenant-visible APIs, which have integrations behind them. Tenant model design. Address plan. The output is a written target architecture and a cohort sequence, and it is where a no-go decision is still cheap.
+1. **Platform Readiness Assessment (14 or 28 days, fixed price).** Full service inventory — which OpenStack projects are actually in use, which have tenant-visible APIs, which have integrations behind them. Tenant model design. Address plan. The output is a written target architecture and a cohort sequence, and it is where a no-go decision is still cheap.
 2. **Parallel deployment.** Cozystack is built alongside the running OpenStack cloud, not on top of it. Both control planes coexist for the duration; there is no point at which the estate depends on a single cutover.
-3. **Cohort migration.** The disk transfer itself is done by [Konveyor Forklift](https://github.com/kubev2v/forklift), which ships in the Ænix platform and supports OpenStack as a source provider. Datastore-to-StorageClass and network-to-network mappings are declared as Kubernetes objects, and `virt-v2v` handles guest-side conversion. Note the constraint: **from OpenStack, Forklift does cold migration only** — warm, incremental transfer is available from vSphere and RHV, not from OpenStack — so every OpenStack instance has a real power-off window, and cohort sizing is driven by how many of those windows you can schedule at once. Workloads move in defined groups — typically by tenant, or by application tier for an internal cloud. Each cohort is validated in parallel run before its OpenStack side is released. Compute moves first, storage follows the compute, networking is cut over per cohort against the agreed address plan.
+3. **Cohort migration.** The disk transfer itself is done by [Konveyor Forklift](https://github.com/kubev2v/forklift), which ships in the Ænix platforms and supports OpenStack as a source provider. Datastore-to-StorageClass and network-to-network mappings are declared as Kubernetes objects, and `virt-v2v` handles guest-side conversion. Note the constraint: **from OpenStack, Forklift does cold migration only** — warm, incremental transfer is available from vSphere and RHV, not from OpenStack — so every OpenStack instance has a real power-off window, and cohort sizing is driven by how many of those windows you can schedule at once. Workloads move in defined groups — typically by tenant, or by application tier for an internal cloud. Each cohort is validated in parallel run before its OpenStack side is released. Compute moves first, storage follows the compute, networking is cut over per cohort against the agreed address plan.
 4. **Decommission.** OpenStack nodes are drained and rebuilt into the new cluster as cohorts complete, so the estate does not need double the hardware for the full duration — only enough headroom for the largest in-flight cohort.
 
 **Typical duration:** 4-12 months for a mid-size deployment; 12-18 months where Neutron carries a complex provider-network topology or tenants consume the OpenStack API directly.
@@ -148,13 +150,13 @@ Two entries deserve emphasis because they are where migrations overrun.
 
 **May not move at all.** Ironic-managed bare metal. Windows guests need the same VirtIO driver handling as any other virtualisation migration. Appliances shipped as vendor VMs need their vendor's blessing on the new hypervisor before you plan around them.
 
-For the platform comparison behind these choices, see **[OpenStack vs Cozystack modernization](/blog/2026/05/openstack-vs-cozystack-modernization/)** and the **[OpenStack alternative](/alternatives/openstack-alternative/)** page. To model the cost side, use the **[TCO calculator](/tco-calculator/)**.
+For the platform choice behind this, see **[OpenStack alternative](/alternatives/openstack-alternative/)** and **[Cozystack vs OpenStack](/compare/cozystack-vs-openstack/)**, or the long read **[OpenStack vs Cozystack modernization](/blog/2026/05/openstack-vs-cozystack-modernization/)**. To model the cost side, use the **[TCO calculator](/tco-calculator/)**.
 
 ---
 
 ## How Ænix engages
 
-- **Platform Readiness Assessment** (fixed price, agreed up front) — service inventory, target architecture, tenant and address design, cohort plan, risk register. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+- **Platform Readiness Assessment** (14 or 28 days, fixed price) — service inventory, target architecture, tenant and address design, cohort plan, risk register. See **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 - **Pilot cohort** — the first tenant group migrated with Ænix engineers working inside your team, producing the runbooks the rest of the estate uses.
 - **Rolling migration** — cohort by cohort, parallel-run validated, with OpenStack hardware recycled into the target cluster as it frees up.
 - **Operations** — either your team runs it with **[Cozystack enterprise support](/products/cozystack-enterprise-support/)** behind them, or Ænix operates it.
@@ -165,4 +167,4 @@ For the platform comparison behind these choices, see **[OpenStack vs Cozystack 
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF project, Apache 2.0).*
+*Ænix created Cozystack (a CNCF Sandbox project, Apache 2.0) and co-maintains it with maintainers from other companies.*

@@ -1,5 +1,6 @@
 ---
 title: "Migration hubs"
+seo_title: "Migration guides: VMware, OpenStack, Proxmox and more"
 description: "Migration guides for moving off VMware, OpenStack, CloudStack, Proxmox, Nutanix, Virtuozzo and IBM Power onto an open Kubernetes-native cloud platform."
 hero_subtitle: "Strategy, architecture and tooling for migrating off legacy virtualization"
 language: "en"
@@ -34,17 +35,19 @@ hreflang_de: /de/migration/
 The largest single migration trigger of 2026 — Broadcom subscription pressure and licence-model uncertainty. Forklift performs cold and warm transfer from vSphere; the page covers what that actually requires, including the VDDK licence problem you inherit and the guests that do not convert.
 
 - **[VMware migration](/migration/vmware/)** — Forklift mechanics, cohort sequencing, VCF decommission
+- **[VMware alternative](/alternatives/vmware-alternative/)** and **[Cozystack vs VMware](/compare/cozystack-vs-vmware/)** — choosing the destination
 - Free **[VMware Migration Assessment Checklist](/resources/vmware-migration-checklist/)** — 25-point readiness checklist
 
-**Typical pattern:** assessment (14-28 days) → destination foundation → cohort migration sequenced against subscription expirations → decommission. A 100-VM estate typically completes in 8-12 months.
+**Typical pattern:** assessment (14 or 28 days) → destination foundation → cohort migration sequenced against subscription expirations → decommission. A 100-VM estate typically completes in 8-12 months, a 1,000-VM estate in 18-24 months.
 
 ### OpenStack
 
 An operational case, not a technical-superiority one. Nova and Glance move mechanically because both sides are KVM; Neutron is a genuine redesign; Heat and Horizon are rebuilt; Ironic has no equivalent.
 
 - **[OpenStack migration](/migration/openstack/)** — service-by-service mapping and the parts that do not move
+- **[OpenStack alternative](/alternatives/openstack-alternative/)** and **[Cozystack vs OpenStack](/compare/cozystack-vs-openstack/)** — choosing the destination
 
-**Typical pattern:** architecture review → parallel deployment → cohort migration by tenant → decommission with hardware recycled forward. 4-12 months mid-size.
+**Typical pattern:** assessment → parallel deployment → cohort migration by tenant → decommission with hardware recycled forward. 4-12 months for a mid-size estate.
 
 ### CloudStack
 
@@ -66,6 +69,7 @@ Three products renamed in 2026, exiting three different ways. Virtuozzo Infrastr
 For Proxmox deployments that have outgrown the single-organization model — multi-tenancy, a service catalogue beyond VMs, billing.
 
 - **[Proxmox migration](/migration/proxmox/)** — migration patterns
+- **[Proxmox alternative](/alternatives/proxmox-alternative/)** and **[Cozystack vs Proxmox](/compare/cozystack-vs-proxmox/)** — choosing the destination
 
 **Typical pattern:** productized installer → workload migration via standard VM export/import → tenant model design → cutover. Under 50 hosts and single-tenant, staying on Proxmox is the honest recommendation.
 
@@ -74,6 +78,7 @@ For Proxmox deployments that have outgrown the single-organization model — mul
 HCI licence and renewal pressure, plus the wish to run VMs and containers on one platform rather than two.
 
 - **[Nutanix migration](/migration/nutanix/)** — exiting AOS/AHV to a Kubernetes-native platform
+- **[Nutanix alternative](/alternatives/nutanix-alternative/)** — choosing the destination
 
 ### IBM AIX / Power
 
@@ -108,7 +113,7 @@ Warm migration is not live migration: RAM state is not carried across, so a rebo
 
 Forklift covers the disk and guest layer only. Tenancy, addressing, billing integration and cutover order are engineering work, and that is what the assessment and the cohort plan exist for. For sources Forklift does not cover — Virtuozzo among them — Ænix engineering builds the export and conversion path as part of the engagement.
 
-**Upstream status:** Forklift ships in the Ænix platform today. The work to expose it as tenant self-service VM import in upstream open-source Cozystack is in review and is not yet in a released Cozystack version.
+**Upstream status:** Forklift ships in the Ænix platforms today. The work to expose it as tenant self-service VM import in upstream open-source Cozystack is in review and is not yet in a released Cozystack version.
 
 </div>
 </div>
@@ -125,7 +130,7 @@ Use the **[TCO calculator](/tco-calculator/)** to model five-year cost against y
 
 1. **Discovery call** — confirm fit, scope, timeline
 2. **Platform Readiness Assessment** (14 or 28 days, fixed price agreed up front) — current-state audit, target architecture, cohort plan, risk register. This is also where a no-go decision is still cheap.
-3. **Pilot cohort** (3-6 months) — first cohort migrated with Ænix engineers inside your team, producing the runbooks for the rest
+3. **Pilot cohort** (scope and length set in the assessment) — first cohort migrated with Ænix engineers inside your team, producing the runbooks for the rest
 4. **Rolling migration** — cohort by cohort with parallel-run validation, source hardware recycled forward as it frees up
 5. **Decommission** — source platform shutdown after final validation
 
