@@ -5,6 +5,7 @@ hero_subtitle: "Deep dives on sovereign cloud, Kubernetes, and platform engineer
 bodyClass: "page-blog"
 language: "en"
 hreflang_de: /de/blog/
+outputs: ["HTML", "RSS"]
 ---
 
 Field notes from the team building Cozystack and the Ænix cloud platform products.
