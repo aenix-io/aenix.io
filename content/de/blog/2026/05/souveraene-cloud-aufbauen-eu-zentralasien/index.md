@@ -78,7 +78,7 @@ Jede Rechtsordnung hat ihr eigenes Regelwerk:
 - **NIS2** — breitere Cybersicherheit, gilt für Cloud-Provider als wesentliche Einrichtungen
 
 ### Zentralasien
-- **Kasachstan** — durch die Beschaffung vorgeschriebene Souveränität für Workloads des öffentlichen Sektors. Aktiver Markt für souveräne Clouds: QazCloud, Clever Cloud, Markteinführungen souveräner Cloud-Produkte regionaler Telcos.
+- **Kasachstan** — durch die Beschaffung vorgeschriebene Souveränität für Workloads des öffentlichen Sektors. Aktiver Markt für souveräne Clouds, darunter Markteinführungen souveräner Cloud-Produkte regionaler Telcos.
 - **Weitere GUS-Staaten** — verschiedene nationale Regelwerke im Entstehen
 
 ### Andere Regionen
