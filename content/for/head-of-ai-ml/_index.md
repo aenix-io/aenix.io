@@ -52,7 +52,7 @@ Give data scientists and product teams self-service GPU — for training and for
 
 ## Two ways Ænix helps you
 
-**1. Run a turnkey AI platform.** [Ænix AI Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with Ænix support. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs, whole GPUs to pods, and fractional sharing for pods via HAMi; MIG and time-slicing are on the roadmap.
+**1. Run a turnkey AI platform.** [Ænix AI Platform](/products/ai-platform/) adds GPU scheduling and one-click LLM/vLLM inference to the multi-tenant Cozystack core — self-service for your teams, on your hardware, with Ænix support. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough of whole GPUs to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods, and fractional sharing for pods via HAMi; MIG and time-slicing are on the roadmap.
 
 **2. Build your own, with our team.** Cozystack is the framework; **Ænix is your outsourced engineering team** for an [AI platform build](/services/ai-platform-build/) — GPU topology, scheduling, inference serving and [sovereign-AI](/solutions/sovereign-ai/) controls designed around your models and data.
 
@@ -63,7 +63,7 @@ Give data scientists and product teams self-service GPU — for training and for
 - **What it is:** a multi-tenant GPU platform for training and inference on your own hardware.
 - **Who it's for:** Heads of AI/ML, MLOps leads, AI platform owners.
 - **Control:** your GPUs, your jurisdiction, your model choice — no hyperscaler endpoint dependency.
-- **License:** Apache 2.0 core (Cozystack) — no per-GPU platform tax.
+- **Licence:** Apache 2.0 core (Cozystack) — no per-GPU platform tax.
 - **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence), accepted into the CNCF Kubernetes AI Conformance program in September 2026 ([details](/compliance/kubernetes-conformance/)).
 - **Common pitfall:** prototyping on a hyperscaler endpoint, then discovering the data class can't legally go there in production.
 
@@ -87,7 +87,7 @@ Yes — GPU scheduling for training plus one-click LLM/vLLM serving for inferenc
 No. Models and data stay on your GPUs in your jurisdiction; you choose open or self-hosted models, not a fixed vendor endpoint.
 
 **How do teams share scarce GPUs?**
-Multi-tenant scheduling with quotas and isolation, so teams self-serve without a dedicated cluster each. Fractional sharing for pods runs through HAMi; whole GPUs go to VMs by passthrough. GPU usage is measured per tenant, so you can charge teams back in your own billing system.
+Multi-tenant scheduling with quotas and isolation, so teams self-serve without a dedicated cluster each. Fractional sharing for pods runs through HAMi; whole GPUs go to VMs by passthrough, or NVIDIA vGPU splits a card between VMs (requires your NVIDIA vGPU licence). GPU usage is measured per tenant, so you can charge teams back in your own billing system.
 
 **Build or buy?**
 The AI Platform for speed; the build-with engagement when GPU topology and serving need to fit your stack. The call scopes it.

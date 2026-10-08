@@ -33,7 +33,7 @@ faq:
   - q: "Was liefert ein Cloud-Strategie-Projekt konkret?"
     a: "Einen schriftlichen Bericht für die Geschäftsleitung mit Klassifizierung der Workloads nach Public, Private und Hybrid, einem ehrlichen TCO-Modell, einer Lückenanalyse zu Souveränität und Aufsicht, der Migrationsreihenfolge und einer Umsetzungs-Roadmap für Phase 2 mit benannten Workloads, Kosten und Zeitplänen."
   - q: "Ist das Projekt an ein bestimmtes Produkt gebunden?"
-    a: "Nein. Die Strategiearbeit ist plattformneutral. Wenn die Wirtschaftlichkeit ein Open-Source-Ziel trägt, empfiehlt Ænix Cozystack, das CNCF-Sandbox-Projekt, das Ænix initiiert hat und mitentwickelt; der Bericht bewertet aber jeden Workload für sich über Public-, Private- und Hybrid-Optionen hinweg."
+    a: "Nein. Die Strategiearbeit ist plattformneutral. Wenn die Wirtschaftlichkeit ein Open-Source-Ziel trägt, empfiehlt Ænix Cozystack, das CNCF-Sandbox-Projekt, das Ænix entwickelt hat und mitpflegt; der Bericht bewertet aber jeden Workload für sich über Public-, Private- und Hybrid-Optionen hinweg."
   - q: "Wer sollte auf Kundenseite beteiligt sein?"
     a: "CIOs, CTOs, VP Engineering und Plattformverantwortliche, die über die Platzierung von Workloads und Budgets entscheiden, dazu die Architekten und Betriebsteams der betroffenen Systeme. Compliance-Verantwortliche kommen hinzu, wo Souveränitäts- oder regulatorische Anforderungen die Architektur prägen."
   - q: "Setzt Ænix die Strategie auch um oder berät es nur?"
@@ -95,4 +95,4 @@ Für konkrete Anlässe siehe **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kos
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

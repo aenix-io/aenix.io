@@ -36,7 +36,7 @@ quiz:
         - { text: "Die Schlüssel liegen beim Kunden", correct: true }
         - { text: "Eine Verschlüsselung ist nicht erforderlich", correct: false }
       explanation: "Architektonische Anforderungen: mehrschichtige Datenresidenz, kundenkontrollierte Verschlüsselungsschlüssel für sensible Daten, Lieferantentransparenz bis zur zweiten Ebene, in Standardformaten exportierbare Audit-Logs sowie ein dokumentierter und getesteter Zugang für die Aufsicht."
-    - q: "Welche Rolle spielt das Aenix Platform Readiness Assessment im NIS2-Kontext?"
+    - q: "Welche Rolle spielt das Ænix Platform Readiness Assessment im NIS2-Kontext?"
       options:
         - { text: "Eine strukturierte Architekturbewertung mit NIS2-Schwerpunkt", correct: true }
         - { text: "Es ist für NIS2 nicht einschlägig, sondern rein technisch", correct: false }

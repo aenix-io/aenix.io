@@ -39,7 +39,7 @@ quiz:
         - { text: "Bis zur vollständigen transitiven Hülle aller Upstream-Abhängigkeiten", correct: false }
         - { text: "Bis zur zweiten Stufe — den kritischen Dienstleistern des beauftragten Anbieters", correct: true }
       explanation: "Lücke 4 hält fest, dass Artikel 30(2)(a) Transparenz bis zur zweiten Stufe verlangt — also bis zu den Rechenzentrumsbetreibern, Netzwerkanbietern und gemeinsam genutzten Plattformdiensten unterhalb des beauftragten Hyperscalers."
-    - q: "Was tut Aenix im Projektmodell in Phase 4 (Managed Retainer) ausdrücklich NICHT?"
+    - q: "Was tut Ænix im Projektmodell in Phase 4 (Managed Retainer) ausdrücklich NICHT?"
       options:
         - { text: "Ohne Freigabe des Kunden auf den Produktionscluster zugreifen", correct: true }
         - { text: "SLA-gestützten Support für die Plattform leisten", correct: false }

@@ -53,11 +53,12 @@ One question settles it: who consumes the capacity? The same Cozystack engine ru
     <div class="card-body">
       <div class="card-tag">Capacity goes to inference and training</div>
       <h3 class="card-title">Ænix AI Platform</h3>
-      <p class="card-description"><strong>You're a:</strong> AI-native company, a regulated organisation keeping model weights in-house, or a provider selling GPU-as-a-Service. NVIDIA GPUs through the GPU Operator: passthrough to VMs, fractional sharing via HAMi, model serving and vector databases, with per-tenant usage measured for your billing.</p>
+      <p class="card-description"><strong>You're a:</strong> AI-native company, a regulated organisation keeping model weights in-house, or a provider selling GPU-as-a-Service. NVIDIA GPUs through the GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), fractional sharing via HAMi, model serving and vector databases, with per-tenant usage measured for your billing.</p>
       <p class="card-meta">Quoted per RFP</p>
       <span class="card-link">Explore →</span>
     </div>
   </a>
+  <p style="margin:.75rem 0 0;font-size:.95rem">Selling GPU capacity to customers? See <a href="/solutions/gpu-as-a-service/">GPU as a Service →</a></p>
 </div>
 
 <div class="edition-panel" id="edition-panel-3" role="tabpanel" aria-labelledby="edition-tab-3">
@@ -65,8 +66,8 @@ One question settles it: who consumes the capacity? The same Cozystack engine ru
     <div class="card-body">
       <div class="card-tag">Open source, with us on call</div>
       <h3 class="card-title">Cozystack + Ænix support</h3>
-      <p class="card-description"><strong>You're a:</strong> product team running on Hetzner, OVH or leased bare metal that wants the upstream project and the maintainers reachable — without the commercial portal and billing layer.</p>
-      <p class="card-meta">Apache 2.0 + retainer</p>
+      <p class="card-description"><strong>You're a:</strong> product team running on Hetzner, OVH or leased bare metal that wants the upstream project and the maintainers reachable. Same subscription as Public Cloud Platform; leave the commercial modules unused if you don't need them.</p>
+      <p class="card-meta">Apache 2.0 + support from $1,250 / month per 10 nodes</p>
       <span class="card-link">Enterprise support →</span>
     </div>
   </a>

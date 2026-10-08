@@ -21,7 +21,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A single Kubernetes-native operating model that runs workloads consistently across on-prem, public cloud, and edge"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -249,4 +249,4 @@ Hosting providers running Ænix Public Cloud Platform in production.
 
 ---
 
-*Ænix created Cozystack (CNCF Sandbox project, Certified Kubernetes distribution) and co-maintains it. Ænix sells three platforms on that engine — Public Cloud Platform, Private Cloud Platform and AI Platform.*
+*Ænix created Cozystack (CNCF Sandbox project, CNCF Certified Kubernetes distribution) and co-maintains it. Ænix sells three platforms on that engine — Public Cloud Platform, Private Cloud Platform and AI Platform.*

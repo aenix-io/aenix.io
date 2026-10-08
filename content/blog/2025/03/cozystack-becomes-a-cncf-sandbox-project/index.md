@@ -26,7 +26,7 @@ The platform is developed and maintained by [Ænix](https://aenix.io/). The core
 
 CNCF (Cloud Native Computing Foundation) is part of the larger Linux Foundation, a non-profit organization that supports and curates promising cloud-native projects, including Kubernetes, Envoy, Prometheus, Cilium, Istio, K3s, FluxCD, and others. The CNCF Sandbox is the “entry point” for projects that want to join the CNCF and become part of it. From there, projects progress through the stages of Incubating and Graduated.
 
-Transferring the project to the CNCF guarantees all Cozystack users that the platform will always be available under the Apache 2.0 license and will not suffer the fate of projects like Mongo, Redis, Terraform, and Vault, whose licenses were changed to closed-source and no longer comply with the [Open Source Initiative](https://opensource.org) criteria. From this point forward, the rights to Cozystack belong to the non-profit industry organization, the CNCF.
+Transferring the project to the CNCF guarantees all Cozystack users that the platform will always be available under the Apache 2.0 licence and will not suffer the fate of projects like Mongo, Redis, Terraform, and Vault, whose licences were changed to closed-source and no longer comply with the [Open Source Initiative](https://opensource.org) criteria. From this point forward, the rights to Cozystack belong to the non-profit industry organization, the CNCF.
 
 Moreover, inclusion in the CNCF provides an opportunity to engage a broad engineering community in the development and use of Cozystack, making project management more transparent. Expanding the base of contributors and users will, in turn, significantly accelerate the platform’s development and the exploration of a wide range of use cases.
 
@@ -50,7 +50,7 @@ Moreover, inclusion in the CNCF provides an opportunity to engage a broad engine
 - [GitHub](https://github.com/cozystack)
 - [Telegram Community](https://t.me/cozystack)
 - [Slack Community](https://slack.k8s.io) (registration in the [Kubernetes Slack workspace](https://slack.kubernetes.io/) required)
-- [Community Meeting Calendar](https://calendar.google.com/calendar/embed?src=cozystack.io)
+- [Community Meeting Calendar](https://calendar.google.com/calendar?cid=ZTQzZDIxZTVjOWI0NWE5NWYyOGM1ZDY0OWMyY2IxZTFmNDMzZTJlNjUzYjU2ZGJiZGE3NGNhMzA2ZjBkMGY2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 - Cozystack Community Meetings recordings on YouTube
 - [Cozystack on CNCF Landscape](https://landscape.cncf.io)
 - [Cozystack in CNCF Sandbox](https://www.cncf.io/sandbox-projects/)

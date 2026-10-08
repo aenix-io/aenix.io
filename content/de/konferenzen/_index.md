@@ -124,4 +124,4 @@ Für Einladungen: Vereinbaren Sie ein [Discovery-Gespräch](/de/kontakt/) und er
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen, das [Cozystack](https://cozystack.io) initiiert hat — ein CNCF-Projekt (CNCF Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0 — und darauf die [drei Ænix-Plattformen](/de/produkte/) aufbaut.*
+*Ænix ist das Open-Core-Unternehmen, das [Cozystack](https://cozystack.io) entwickelt hat — ein CNCF-Projekt (CNCF Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0 — und darauf die [drei Ænix-Plattformen](/de/produkte/) aufbaut.*

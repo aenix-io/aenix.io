@@ -16,7 +16,7 @@ hreflang_en: /compare/cozystack-vs-openstack/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cozystack und OpenStack sind beide Open-Source-Private-Cloud-Plattformen unter Apache 2.0, mit denen virtuelle Maschinen, Container und Storage auf eigener Hardware betrieben werden. Sie unterscheiden sich in Generation und Betriebsaufwand: OpenStack ist ein Verbund mehrerer Projekte (Nova, Neutron, Cinder, Keystone) mit typischerweise 50 bis über 100 koordinierten Diensten, während Cozystack auf einer einzigen Kubernetes-API aufbaut — mit KubeVirt für VMs, Cilium (eBPF) für das Networking und LINSTOR/DRBD für Storage — und mit etwa 5 bis 15 Operatoren auskommt. OpenStack passt zu großen Telcos, Behörden und OpenStack-erfahrenen Teams; Cozystack passt zu Service-Providern, regulierten mandantenfähigen Umgebungen und modernen Neubauten. Ænix hat das CNCF-Projekt Cozystack initiiert, pflegt es mit und bietet die Ænix Public Cloud Platform, Support und Migrationsleistungen für Teams, die sich von OpenStack weg modernisieren.**
+  **Cozystack und OpenStack sind beide Open-Source-Private-Cloud-Plattformen unter Apache 2.0, mit denen virtuelle Maschinen, Container und Storage auf eigener Hardware betrieben werden. Sie unterscheiden sich in Generation und Betriebsaufwand: OpenStack ist ein Verbund mehrerer Projekte (Nova, Neutron, Cinder, Keystone) mit typischerweise 50 bis über 100 koordinierten Diensten, während Cozystack auf einer einzigen Kubernetes-API aufbaut — mit KubeVirt für VMs, Cilium (eBPF) für das Networking und LINSTOR/DRBD für Storage — und mit etwa 5 bis 15 Operatoren auskommt. OpenStack passt zu großen Telcos, Behörden und OpenStack-erfahrenen Teams; Cozystack passt zu Service-Providern, regulierten mandantenfähigen Umgebungen und modernen Neubauten. Ænix hat das CNCF-Projekt Cozystack entwickelt, pflegt es mit und bietet die Ænix Public Cloud Platform, Support und Migrationsleistungen für Teams, die sich von OpenStack weg modernisieren.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein direkter Vergleich von Cozystack und OpenStack, zwei Open-Source-Private-Cloud-Plattformen, für Teams, die einen Stack wählen oder sich von OpenStack weg modernisieren."
@@ -46,7 +46,7 @@ faq:
   - q: "Kann Cozystack virtuelle Maschinen betreiben wie OpenStack?"
     a: "Ja. Cozystack betreibt VMs über KubeVirt und Container über Kubernetes auf einer einzigen API; virtuelle Maschinen und Container teilen sich dieselbe Control Plane, dasselbe Networking (Cilium/eBPF) und denselben Storage (LINSTOR/DRBD)."
   - q: "Wer unterstützt eine Migration von OpenStack zu Cozystack?"
-    a: "Ænix, das das CNCF-Projekt Cozystack initiiert hat, bietet die Ænix Public Cloud Platform und Migrationsleistungen. Die Public Cloud Platform deckt beide Fälle ab: Hosting-Anbieter, die sich von OpenStack weg modernisieren, und große Betreiber, die OpenStack in großem Maßstab auf eine Multi-Region-Control-Plane konsolidieren."
+    a: "Ænix, das das CNCF-Projekt Cozystack entwickelt hat, bietet die Ænix Public Cloud Platform und Migrationsleistungen. Die Public Cloud Platform deckt beide Fälle ab: Hosting-Anbieter, die sich von OpenStack weg modernisieren, und große Betreiber, die OpenStack in großem Maßstab auf eine Multi-Region-Control-Plane konsolidieren."
 ---
 
 **Beide sind Open-Source-Private-Cloud-Plattformen. Beide stehen unter Apache 2.0. Beide sind produktionserprobt. Der Unterschied liegt in Generation und Betriebsaufwand.**
@@ -87,4 +87,4 @@ Wann dieses Argument greift, lesen Sie unter **[OpenStack-Alternative](/de/alter
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*

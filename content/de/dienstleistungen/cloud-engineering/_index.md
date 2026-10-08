@@ -88,7 +88,7 @@ Für einen breiteren Umfang siehe **[Platform Engineering Services](/de/dienstle
 </div>
 </div>
 
-Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+Das Architektur-Review ist die kompakte Variante. Für die vollständige Variante siehe das **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 oder 28 Tage).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
@@ -96,4 +96,4 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Projekt und eine von der CNCF zertifizierte Kubernetes-Distribution, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix vertreibt drei darauf aufbauende Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution, entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix vertreibt drei darauf aufbauende Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*

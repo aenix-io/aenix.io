@@ -1,12 +1,12 @@
 ---
 title: "Über Ænix"
-seo_title: "Über Ænix — das Unternehmen hinter Cozystack"
-description: "Ænix hat Cozystack (CNCF) initiiert und baut darauf drei Cloud-Plattformen. AENIX s.r.o. (Tschechien), AENIX INC (Delaware, USA); rund 20 Mitarbeitende."
-hero_subtitle: "Das Open-Core-Unternehmen, das Cozystack initiiert hat"
+seo_title: "Über Ænix — Cozystack entwickelt und mitgepflegt"
+description: "Ænix hat Cozystack (CNCF) entwickelt, pflegt es mit und baut darauf drei Cloud-Plattformen. AENIX s.r.o. (Tschechien) und AENIX INC (Delaware, USA)."
+hero_subtitle: "Das Open-Core-Unternehmen, das Cozystack entwickelt hat und mitpflegt"
 language: "de"
 hreflang_en: /about/
 direct_answer: |
-  **Ænix ist ein Open-Core-Unternehmen mit zwei Gesellschaften: der AENIX s.r.o. in Tschechien für Verträge in der EU und der AENIX INC in Delaware, USA, für Verträge in den USA. Rund 20 Mitarbeitende arbeiten in der EU und in Zentralasien. Ænix hat Cozystack initiiert, ein CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Auf Basis von Cozystack bietet Ænix drei Plattformen an: die Ænix Public Cloud Platform für Hosting-Anbieter und andere Organisationen, die Cloud verkaufen, die Ænix Private Cloud Platform für Unternehmen, die VMware ablösen und Cloud für den Eigenbedarf betreiben, und die Ænix AI Platform für GPU- und KI-Workloads. Dazu kommt Enterprise-Support für Teams, die Cozystack selbst betreiben. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.**
+  **Ænix ist ein Open-Core-Unternehmen mit zwei Gesellschaften: der AENIX s.r.o. in Tschechien für Verträge in der EU und der AENIX INC in Delaware, USA, für Verträge in den USA. Rund 20 Mitarbeitende arbeiten in der EU und in Zentralasien. Ænix hat Cozystack entwickelt, ein CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Auf Basis von Cozystack bietet Ænix drei Plattformen an: die Ænix Public Cloud Platform für Hosting-Anbieter und andere Organisationen, die Cloud verkaufen, die Ænix Private Cloud Platform für Unternehmen, die VMware ablösen und Cloud für den Eigenbedarf betreiben, und die Ænix AI Platform für GPU- und KI-Workloads. Dazu kommt Enterprise-Support für Teams, die Cozystack selbst betreiben. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.**
 quick_facts:
   - label: "Gesellschaften"
     value: "AENIX s.r.o., Tschechien (IČO 21493871, eingetragen am 22. April 2024); AENIX INC, Delaware, USA"
@@ -15,7 +15,7 @@ quick_facts:
   - label: "Team"
     value: "Rund 20 Mitarbeitende in der EU und in Zentralasien — Platform Engineering, SRE, Design und Vertrieb"
   - label: "Open Source"
-    value: "Initiator von Cozystack — CNCF-Sandbox-Projekt, Apache 2.0; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung"
+    value: "Ænix hat Cozystack entwickelt und pflegt es mit — CNCF-Sandbox-Projekt, Apache 2.0; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung"
   - label: "Zertifizierungen"
     value: "ISO/IEC 27001:2022 (AENIX s.r.o.); Cozystack ist eine CNCF Certified Kubernetes Distribution und wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen"
   - label: "Was Ænix anbietet"
@@ -30,7 +30,7 @@ faq:
   - q: "Wer hat Ænix gegründet, und wer leitet das Unternehmen?"
     a: "Ænix wurde von Andrei Kvapil und Timur Tukaev gegründet. Andrei Kvapil ist CEO, Timur Tukaev ist COO."
   - q: "Ist Cozystack ein Produkt von Ænix?"
-    a: "Nein. Cozystack ist ein CNCF-Projekt unter Apache 2.0. Ænix hat es initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft ein Abonnement (Support, kommerzielle Module wie Billing und die WHMCS-Integration sowie Engineering-Leistungen), keine Lizenz für Cozystack."
+    a: "Nein. Cozystack ist ein CNCF-Projekt unter Apache 2.0. Ænix hat es entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft ein Abonnement (Support, kommerzielle Module wie Billing und die WHMCS-Integration sowie Engineering-Leistungen), keine Lizenz für Cozystack."
   - q: "Hat Ænix Zertifizierungen?"
     a: "Ja. Die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert, gültig bis 26. Februar 2027 — siehe [ISO-27001-Seite](/de/compliance/iso-27001/). Es gibt keinen SOC-2-Bericht. Cozystack ist eine CNCF Certified Kubernetes Distribution und wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen."
   - q: "Warum drei Plattformen und nicht eine?"
@@ -116,15 +116,15 @@ Wir bauen schlüsselfertige Cloud-Plattformen für Organisationen, die echte Clo
 3. **Regulierte Unternehmen** (Private Cloud Platform) — Banken, Versicherungen, öffentliche Verwaltung, Telcos und Gesundheitswesen, die VMware unter DORA, NIS2 und Souveränitätsvorgaben ablösen; Developer Self-Service ist enthalten
 4. **KI-intensive Organisationen und GPU-Clouds** (AI Platform) — Unternehmen, die Inferenz und Training auf eigenen GPUs betreiben, und Anbieter, die GPU-Kapazität verkaufen
 
-Dazu kommt **Enterprise-Support für Cozystack** für Teams, die das Open-Source-Projekt auf Hetzner, OVH oder gemieteter Bare-Metal-Hardware betreiben und die Maintainer in Bereitschaft haben möchten, ohne das kommerzielle Portal und die Billing-Schicht.
+Dazu kommt **Enterprise-Support für Cozystack** für Teams, die das Open-Source-Projekt auf Hetzner, OVH oder gemieteter Bare-Metal-Hardware selbst betreiben und die Maintainer in Bereitschaft haben möchten.
 
-Die Support-Stufen sind für Abonnements der Public Cloud Platform und für selbst betriebenes Cozystack dieselben und beginnen bei 1.250 USD pro 10 Nodes und Monat; die Private Cloud Platform und die AI Platform werden per RFP angeboten. Siehe [Preise](/de/preise/).
+Jede Support-Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration). Die Preisliste ist das Abonnement der Ænix Public Cloud Platform; ein Team, das Cozystack selbst betreibt, schließt dasselbe Abonnement ab und lässt die kommerziellen Module einfach ungenutzt. Die Stufen beginnen bei 1.250 USD pro 10 Nodes und Monat; die Private Cloud Platform und die AI Platform werden per RFP angeboten. Siehe [Preise](/de/preise/).
 
 ---
 
 ## Warum Open Core
 
-Wir haben Cozystack als Open-Source-Projekt in der CNCF initiiert, weil Cloud-Infrastruktur, die souverän, prüfbar und unter Kontrolle des Kunden sein soll, auf einem Fundament stehen muss, das Kunden selbst prüfen und besitzen können:
+Wir haben Cozystack als Open-Source-Projekt entwickelt und in die CNCF eingebracht, weil Cloud-Infrastruktur, die souverän, prüfbar und unter Kontrolle des Kunden sein soll, auf einem Fundament stehen muss, das Kunden selbst prüfen und besitzen können:
 
 - **Durchgängig prüfbar** — eine Open-Source-Lieferkette, die Sie nach DORA Artikel 28 (IKT-Drittparteienrisiko) und NIS2 Artikel 21 Absatz 2 Buchstabe d (Sicherheit der Lieferkette) bewerten können
 - **Unter Ihrer Kontrolle** — Ihre Hardware, Ihre Jurisdiktion, Ihre Richtlinien für Verschlüsselung und Aufbewahrung
@@ -156,7 +156,7 @@ Nach den Gepflogenheiten der CNCF-Community bleibt **cozystack.io herstellerneut
 ## Zertifizierungen
 
 - **ISO/IEC 27001:2022** — AENIX s.r.o., Zertifikat SIC.MS.008.ISO/IEC27001.5719, gültig bis 26. Februar 2027. [Zertifikat und Geltungsbereich →](/de/compliance/iso-27001/)
-- **CNCF Certified Kubernetes** und **CNCF Kubernetes AI Conformance** — für Cozystack, den Kern aller drei Plattformen. [Nachweise →](/de/compliance/kubernetes-conformance/)
+- **CNCF Certified Kubernetes Distribution** und **CNCF Kubernetes AI Conformance** — für Cozystack, den Kern aller drei Plattformen. [Nachweise →](/de/compliance/kubernetes-conformance/)
 - Es gibt keinen SOC-2-Bericht. Die Plattformen selbst sind nicht zertifiziert; sie liefern Kontrollen und Nachweise für Ihre eigene Arbeit an ISO 27001, DORA, NIS2 und DSGVO. [Compliance-Nachweise →](/de/compliance/)
 
 ---
@@ -169,7 +169,7 @@ Angefangen haben wir als Team von Platform Engineers, das Cloud-Infrastruktur f�
 Also haben wir Cozystack gebaut — eine Kubernetes-native, mandantenfähige Cloud-Plattform — als das Fundament, das wir uns Jahre früher gewünscht hätten. Daraus wurde ein CNCF-Projekt. Darauf haben wir die kommerzielle Schicht gesetzt: drei Plattformen, je nachdem, wer die Kapazität nutzt.
 {{< /two-cols >}}
 
-Cozystack läuft produktiv bei Hosting-Anbietern und regionalen Clouds, und Ænix setzt Plattformprojekte für Banken unter NDA um. Neun Deployments sind als [Fallstudien](/de/case-studies/) mit Architektur und Kennzahlen beschrieben, anonymisiert, wo Verträge das verlangen.
+Cozystack läuft produktiv bei Hosting-Anbietern und regionalen Clouds, und Ænix setzt Plattformprojekte für Banken unter NDA um. Neun veröffentlichte [Fallstudien](/de/case-studies/) beschreiben Projekte mit Architektur und Kennzahlen, anonymisiert, wo Verträge das verlangen.
 
 ---
 
@@ -192,7 +192,7 @@ Für Regierungen und Anbieter souveräner Clouds laufen Projekte über öffentli
 
 **Öffentlich genannte Produktivkunden** der Ænix Public Cloud Platform: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**Projekte unter NDA** (Banken, souveräne Cloud, AI/ML): Deployments der Ænix Private Cloud Platform und der Public Cloud Platform; eine namentliche Nennung ist ab Mitte 2027 erlaubt. [Unsere Fallstudien](/de/case-studies/) beschreiben neun Deployments, vertraglich anonymisiert, aber mit vollständiger Architektur und Kennzahlen.
+**Projekte unter NDA** (Banken, souveräne Cloud, AI/ML): Deployments der Ænix Private Cloud Platform und der Public Cloud Platform; eine namentliche Nennung ist ab Mitte 2027 erlaubt. Unsere neun veröffentlichten [Fallstudien](/de/case-studies/) sind vertraglich anonymisiert, aber mit vollständiger Architektur und Kennzahlen.
 
 **Plattformentwicklung für Ökosystem-Anbieter:** Entwicklung von CSI-Treibern, Forschung zu Virtualisierungsplattformen, Public-Cloud- und VPS-Hosting-Plattformen, schlankes VDI sowie Backup-Systeme, die die Speicherkosten um bis zu 75 % gesenkt haben.
 
@@ -238,4 +238,4 @@ Vereinbaren Sie ein 30-minütiges Discovery-Gespräch, um zu klären, welche Pla
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen, das [Cozystack](https://cozystack.io) initiiert hat — ein CNCF-Projekt (CNCF Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0 — und darauf die drei Ænix-Plattformen aufbaut.*
+*Ænix ist das Open-Core-Unternehmen, das [Cozystack](https://cozystack.io) entwickelt hat und mitpflegt — ein CNCF-Projekt (CNCF Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0 — und darauf die drei Ænix-Plattformen aufbaut.*

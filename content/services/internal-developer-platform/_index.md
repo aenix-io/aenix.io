@@ -16,7 +16,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A self-service platform giving product teams golden paths for provisioning, deployment, and operations on a multi-tenant Kubernetes foundation"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -172,7 +172,7 @@ Engagements typically start with Phase 1; Phase 2 sequencing emerges from assess
 ## Why Ænix specifically
 
 - **Backstage is a tool, not a destination.** We don't sell it, so we can tell you when a catalog is the wrong first move and a documented golden path is the right one.
-- **Multi-tenancy is the part that is hard, and it is what we run.** [Cozystack](/products/cozystack/) is in production with service providers and regulated enterprises operating multi-tenant clouds; the tenancy model we propose is one we operate.
+- **Multi-tenancy is the part that is hard, and it is what we run.** [Cozystack](/products/cozystack/) has deployments across hosting, regulated finance, telecom, AI and academia, including multi-tenant clouds; the tenancy model we propose is one we operate.
 
 <!-- /BLOCK 6 -->
 
@@ -244,7 +244,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix created Cozystack and co-maintains it — a CNCF project and CNCF Certified Kubernetes distribution with the OpenSSF Best Practices badge.*
 
 <!-- /BLOCK 12 -->
 

@@ -29,7 +29,7 @@ quiz:
         - { text: "One shared namespace across all schools in the district", correct: false }
         - { text: "A separate cluster spun up per individual student", correct: false }
         - { text: "One district Cozystack cluster with a Tenant per school", correct: true }
-      explanation: "District-tier cluster: Cozystack at central district IT; Tenant CRD per school for isolation; sovereign by architecture (student data on customer hardware, customer-controlled keys); federated workforce identity to Google Classroom or Microsoft 365."
+      explanation: "District-tier cluster: Cozystack at central district IT; Tenant CRD per school for isolation; sovereign by architecture (student data on customer hardware, opt-in volume encryption with a passphrase the district holds); federated workforce identity to Google Classroom or Microsoft 365."
     - q: "Which named pitfall is \"vendor-led education cloud with lock-in\"?"
       options:
         - { text: "A common pitfall — districts get locked into one vendor stack", correct: true }
@@ -70,7 +70,7 @@ Most K-12 districts fall in none of these — hyperscaler-managed services + sta
 
 - **District-tier cluster** — Cozystack at central district IT
 - **Per-school isolation** — Tenant CRD per school
-- **Sovereign by architecture** — student data on customer hardware, customer-controlled keys
+- **Sovereign by architecture** — student data on customer hardware, opt-in volume encryption with a passphrase the district holds
 - **Standard EdTech integrations** — Google Classroom / Microsoft 365 federation
 
 For consortia (multi-district shared platform):

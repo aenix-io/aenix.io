@@ -38,24 +38,24 @@ quick_facts:
   - label: "Difference from the alternative page"
     value: "This hub is how to move; the Nutanix alternative page is why and what you move to."
   - label: "Engagement timeline"
-    value: "Assessment in 14-28 days; full-estate migration typically 9-18 months by scope."
+    value: "Assessment in 14 or 28 days; full-estate migration typically 9-18 months, by scope."
 quick_facts_source: "[Cozystack docs](https://cozystack.io), [Nutanix alternative comparison](/alternatives/nutanix-alternative/), [ROI & TCO calculator](/roi-calculator/)"
 faq:
   - q: "Why are organizations leaving Nutanix?"
     a: "The common triggers are renewal and licensing pressure after portfolio and pricing changes, hyperconverged lock-in that ties storage and compute to one vendor's stack, and a strategic wish to run VMs and containers on a single platform the organization owns. When two or more of these apply, a structured migration usually pays back; if a renewal is comfortable and nothing else pushes, staying can be the honest answer."
   - q: "What do you migrate a Nutanix estate to?"
-    a: "To a Kubernetes-native platform: Cozystack runs VMs on KubeVirt alongside containers on the same cluster, uses LINSTOR for replicated block storage in place of the AOS distributed storage fabric, and Cilium for networking. There is no per-node hypervisor license, and the platform is Apache 2.0 open source, so the estate you migrate to is one you control."
+    a: "To a Kubernetes-native platform: Cozystack runs VMs on KubeVirt alongside containers on the same cluster, uses LINSTOR for replicated block storage in place of the AOS distributed storage fabric, and Cilium for networking. There is no per-node hypervisor licence, and the platform is Apache 2.0 open source, so the estate you migrate to is one you control."
   - q: "How is an AHV VM migrated?"
     a: "Nutanix AHV VMs are exported and converted to run on KubeVirt, which uses the same underlying KVM technology, so guest operating systems and disks carry over. The KubeVirt Containerized Data Importer (CDI) handles disk image conversion into the new storage layer, and migration runs cohort by cohort with a parallel run for validation before each cutover."
   - q: "What is the difference between this page and the Nutanix alternative page?"
     a: "This migration hub is about how to move — inventory, sequencing, cutover, and decommission. The Nutanix alternative page is about why and what: the platform-level comparison of Cozystack versus Nutanix HCI. Read the alternative page to decide the destination; read this hub to plan the move."
   - q: "How long does a Nutanix migration take?"
-    a: "It starts with a Platform Readiness Assessment in 14-28 days that produces a written plan and a destination architecture. Execution then runs cohort by cohort, sequenced against your Nutanix renewal dates, typically 9-18 months for a full estate depending on VM count, application complexity, and how much re-platforming to containers you fold in."
+    a: "It starts with a Platform Readiness Assessment of 14 or 28 days that produces a written plan and a destination architecture. Execution then runs cohort by cohort, sequenced against your Nutanix renewal dates, typically 9-18 months for a full estate depending on VM count, application complexity, and how much re-platforming to containers you fold in."
   - q: "Can we model the cost before committing?"
     a: "Yes. Use the ROI and TCO calculator to model the delta between the current Nutanix renewal path and an owned Cozystack platform, including hardware, platform-team capacity, and the operational learning curve, before you commit to hardware or a migration timeline."
 ---
 
-**Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Ænix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor license. The destination is [Cozystack](/products/cozystack/), created and co-maintained by the engineers who run your migration.**
+**Leaving Nutanix is a planned project, not an emergency — and done well it produces a virtualization platform you own instead of one you rent under a renewal that keeps climbing. Ænix migrates Nutanix AOS/AHV estates to a Kubernetes-native platform where VMs and containers share one cluster, storage is replicated with LINSTOR, and there is no per-node hypervisor licence. The destination is [Cozystack](/products/cozystack/), created and co-maintained by the engineers who run your migration.**
 
 > **Pairs with:** the Ænix platform that matches your estate — **[Private Cloud Platform](/products/private-cloud-platform/)** for regulated organisations running cloud for themselves, **[Public Cloud Platform](/products/public-cloud-platform/)** if you sell cloud to customers. Decide the destination on the **[Nutanix alternative](/alternatives/nutanix-alternative/)** comparison, then model the numbers with the **[ROI & TCO calculator](/roi-calculator/)**.
 
@@ -89,7 +89,7 @@ The destination is a single Kubernetes-native platform assembled from open, [CNC
 - **VMs on KubeVirt.** [KubeVirt](https://kubevirt.io/) runs full virtual machines on Kubernetes using the same KVM technology underneath AHV, so guest operating systems, including Windows, carry over. VMs and containers schedule on the same cluster.
 - **LINSTOR replicated storage.** LINSTOR/DRBD provides replicated block storage in place of the AOS distributed storage fabric, with encrypted, replicated volumes across nodes and — where the topology calls for it — across data centres.
 - **Cilium networking.** An eBPF-based CNI replaces the HCI network plane, with network policy, load balancing, and multi-tenant isolation as first-class Kubernetes primitives.
-- **No per-node hypervisor tax.** Cozystack is Apache 2.0 open source; the platform you migrate to has no per-node hypervisor license, so cluster growth does not compound a licensing bill.
+- **No per-node hypervisor tax.** Cozystack is Apache 2.0 open source; the platform you migrate to has no per-node hypervisor licence, so cluster growth does not compound a licensing bill.
 
 For the platform-level comparison — feature by feature, Cozystack versus Nutanix HCI — read the **[Nutanix alternative](/alternatives/nutanix-alternative/)** page. This hub assumes you have chosen the destination and focuses on the move.
 

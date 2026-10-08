@@ -17,21 +17,21 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "An open-source, multi-tenant Cozystack cloud platform for university research computing, reproducible research, and cloud-native teaching, built and supported by Ænix."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Who it is for"
     value: "Universities, research institutes, and R&D organizations across the EU, DACH, and Central Asia."
   - label: "Key capability"
-    value: "GPU-as-a-service for NVIDIA data-centre GPUs via the NVIDIA GPU Operator (passthrough to VMs, HAMi fractional sharing for pods), Tenant CRD per-lab and per-cohort isolation, KubeVirt VMs plus containers, and air-gapped support. Cozystack is accepted into the CNCF Kubernetes AI Conformance program (September 2026)."
+    value: "GPU-as-a-service for NVIDIA data-centre GPUs via the NVIDIA GPU Operator (passthrough of whole GPUs to VMs, NVIDIA vGPU for VMs with your NVIDIA vGPU licence, HAMi fractional sharing for pods), Tenant CRD per-lab and per-cohort isolation, KubeVirt VMs plus containers, and air-gapped support. Cozystack is accepted into the CNCF Kubernetes AI Conformance program (September 2026)."
   - label: "Standards and federation"
     value: "Supports reproducible-research practice (Plan S, FAIR, Horizon Europe) through declarative, versioned environments; standard Kubernetes APIs mean it can be connected to research-infrastructure services such as EOSC as a project-specific integration."
   - label: "Engagement"
     value: "Phased engagement aligned to grant cycles, starting with a fixed-price 14- or 28-day Platform Readiness Assessment, and explicit capacity transfer to in-house academic IT."
 faq:
   - q: "Can Cozystack provide GPU access for AI/ML research labs?"
-    a: "Yes. GPUs are exposed through the NVIDIA GPU Operator, with HAMi providing fractional sharing so several labs can share a card instead of queueing for a whole one. Whole GPUs can also be passed through to VMs; MIG and time-slicing are on the roadmap. Labs self-provision GPU environments under per-lab quotas via the Tenant CRD, without ticket queues."
+    a: "Yes. GPUs are exposed through the NVIDIA GPU Operator, with HAMi providing fractional sharing so several labs can share a card instead of queueing for a whole one. Whole GPUs can also be passed through to VMs, or split between VMs with NVIDIA vGPU (requires your NVIDIA vGPU licence); MIG and time-slicing are on the roadmap. Labs self-provision GPU environments under per-lab quotas via the Tenant CRD, without ticket queues."
   - q: "How does Cozystack isolate departments, labs, and student cohorts?"
     a: "Through the Tenant CRD multi-tenancy model. Each department, lab, or student cohort gets its own tenant with quotas, RBAC, and audit trails. Cohort sandboxes support per-student quotas and automatic cleanup, so teaching and research workloads stay isolated on shared hardware."
   - q: "Does Cozystack support sensitive research data?"
@@ -77,7 +77,7 @@ Modern research increasingly demands GPU clusters, large-scale data processing, 
 </div>
 
 Cozystack delivers:
-- **GPU clusters** for NVIDIA data-centre GPUs via the NVIDIA GPU Operator, with HAMi fractional sharing so several labs share a card rather than queue for a whole one, and whole-GPU passthrough to VMs (MIG and time-slicing are on the roadmap)
+- **GPU clusters** for NVIDIA data-centre GPUs via the NVIDIA GPU Operator, with HAMi fractional sharing so several labs share a card rather than queue for a whole one, whole-GPU passthrough to VMs and NVIDIA vGPU for VMs with your NVIDIA vGPU licence (MIG and time-slicing are on the roadmap)
 - **Multi-tenant per-lab isolation** — Tenant CRD model with per-lab quotas, RBAC, audit trails
 - **VM and container side-by-side** — accommodates legacy research workflows alongside modern containerized pipelines
 - **Self-service for principal investigators** — labs can provision their own environments without ticket queues
@@ -115,7 +115,7 @@ Cozystack delivers:
 Beyond the three missions, several university-specific considerations:
 
 ### Open-source preferred
-Academic ethos, transparency, and budget constraints all favor open-source infrastructure. Apache 2.0 license aligns with academic preferences and procurement realities.
+Academic ethos, transparency, and budget constraints all favor open-source infrastructure. Apache 2.0 licence aligns with academic preferences and procurement realities.
 
 ### Sovereignty for sensitive research
 Medical research data and industrial-partner research with NDA constraints — all benefit from sovereign infrastructure that keeps data within institutional control. Air-gap support handles the most sensitive cases.

@@ -25,7 +25,7 @@ quiz:
         - { text: "Open Source unter Community-Governance (Apache 2.0, herstellerneutral)", correct: false }
         - { text: "Kommerzielle Red-Hat-Subscription, pro Core oder pro Sockel", correct: true }
         - { text: "Im ersten Jahr kostenlos, danach kommerzielle Preise pro VM", correct: false }
-      explanation: "OpenShift Virtualization ist eine kommerzielle Red-Hat-Subscription mit Preisen pro Core oder pro Sockel; enthalten sind Red-Hat-Support, Zertifizierung und Zugang zum Ökosystem. Cozystack ist Open Source unter Apache 2.0; Aenix bietet optionale kommerzielle Support-Stufen an."
+      explanation: "OpenShift Virtualization ist eine kommerzielle Red-Hat-Subscription mit Preisen pro Core oder pro Sockel; enthalten sind Red-Hat-Support, Zertifizierung und Zugang zum Ökosystem. Cozystack ist Open Source unter Apache 2.0; Ænix bietet optionale kommerzielle Support-Stufen an."
     - q: "Welches Modell der Mandantenfähigkeit nutzt OpenShift im Vergleich zu Cozystack?"
       options:
         - { text: "Beide nutzen dasselbe Tenant CRD mit verschachtelten Tenants", correct: false }
@@ -101,9 +101,7 @@ Für Organisationen, deren Beschaffung auf Red Hat standardisiert ist, ist OpenS
 - Kostensensibilität im großen Maßstab (keine Subscription pro Core)
 - Greenfield ohne bestehende Beziehung zu Red Hat
 - Bedarf an einem schlankeren betrieblichen Footprint als beim vollständigen OpenShift
-- SLA-gestützter Support direkt von den Maintainern: veröffentlichte Reaktionszeiten, rund um die Uhr in den Stufen Plus und Enterprise ([Preise](/de/preise/)); die AENIX s.r.o. ist nach [ISO/IEC 27001](/compliance/iso-27001/) zertifiziert
-- SLA-gestützter Support direkt von den Maintainern: veröffentlichte Reaktionszeiten, rund um die Uhr in den Stufen Plus und Enterprise ([Preise](/de/preise/)); die AENIX s.r.o. ist nach [ISO/IEC 27001](/compliance/iso-27001/) zertifiziert
-- SLA-gestützter Support direkt von den Maintainern: veröffentlichte Reaktionszeiten, rund um die Uhr in den Stufen Plus und Enterprise ([Preise](/de/preise/)); die AENIX s.r.o. ist nach [ISO/IEC 27001](/compliance/iso-27001/) zertifiziert
+- SLA-gestützter Support direkt von den Maintainern: veröffentlichte Reaktionszeiten, rund um die Uhr in den Stufen Plus und Enterprise ([Preise](/de/preise/)); die AENIX s.r.o. ist nach [ISO/IEC 27001](/de/compliance/iso-27001/) zertifiziert
 
 ## Migration zwischen beiden
 

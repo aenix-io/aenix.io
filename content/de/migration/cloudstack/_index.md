@@ -132,4 +132,4 @@ Der Grund entsteht, wenn das Produkt breiter werden muss. Wer 2026 ausschließli
 
 ---
 
-*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt, Apache 2.0) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt, Apache 2.0) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

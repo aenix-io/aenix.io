@@ -37,7 +37,7 @@ faq:
   - q: "Was ist der empfohlene nächste Schritt?"
     a: "Gehen Sie die Ergebnisse mit der Engineering-Leitung durch und legen Sie die vorrangigen Dimensionen fest. Die meisten Ergebnisse weisen auf die Developer-Self-Service-Ebene der Ænix Private Cloud Platform (die Internal-Developer-Platform-Ebene auf Cozystack) oder, für ein tiefergehendes Projekt, auf die Leistungen von Ænix zu Platform Engineering und Internal Developer Platform."
   - q: "Wie hängt das mit Cozystack und Ænix zusammen?"
-    a: "Ænix hat Cozystack initiiert, ein CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, das VMs und Container auf einer Kubernetes-API betreibt, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Die Ænix Private Cloud Platform einschließlich Developer Self-Service basiert darauf; zusätzlich bietet Ænix die Leistungen und Assessments an, mit denen Organisationen die Plattform einführen."
+    a: "Ænix hat Cozystack entwickelt, ein CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, das VMs und Container auf einer Kubernetes-API betreibt, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Die Ænix Private Cloud Platform einschließlich Developer Self-Service basiert darauf; zusätzlich bietet Ænix die Leistungen und Assessments an, mit denen Organisationen die Plattform einführen."
   - q: "Was erhalte ich mit dem Download?"
     a: "Ein PDF zur Selbsteinschätzung, das Sie ausdrucken und durcharbeiten können: die fünfstufige Matrix für jede der acht Dimensionen, einen Bewertungsbogen, dessen Summe einen Reifegrad ergibt, und Hinweise, welche Dimensionen Sie bei Investitionen vorziehen sollten."
 ---
@@ -109,4 +109,4 @@ Gehen Sie die Ergebnisse mit der Engineering-Leitung durch und legen Sie die vor
 
 ---
 
-*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*

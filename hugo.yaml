@@ -190,6 +190,11 @@ menus:
       parent: solutions-devai
       weight: 4
 
+    - name: GPU as a Service
+      url: /solutions/gpu-as-a-service/
+      parent: solutions-devai
+      weight: 5
+
     # group: Industries
     - name: Industries
       identifier: solutions-industries
@@ -583,6 +588,10 @@ menus:
       url: /de/loesungen/private-llm/
       parent: solutions-de-devai
       weight: 4
+    - name: GPU as a Service
+      url: /de/loesungen/gpu-as-a-service/
+      parent: solutions-de-devai
+      weight: 5
     # group: Branchen
     - name: Branchen
       identifier: solutions-de-branchen

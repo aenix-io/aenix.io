@@ -41,7 +41,7 @@ quiz:
         - { text: "Faster vendor support tickets for outages", correct: false }
         - { text: "Cheaper per-CPU licensing terms", correct: false }
         - { text: "Vendor-roadmap risk dominates decade horizons", correct: true }
-      explanation: "The long horizon argument: Apache 2.0 license + CNCF Project community governance fits decade-plus operational planning. Grid hardware refresh cycles are decade-scale, so vendor roadmap risk — the dominant failure mode over 10–20 years — is minimised because the community can outlive any single vendor."
+      explanation: "The long horizon argument: Apache 2.0 licence + CNCF Project community governance fits decade-plus operational planning. Grid hardware refresh cycles are decade-scale, so vendor roadmap risk — the dominant failure mode over 10–20 years — is minimised because the community can outlive any single vendor."
 hreflang_de: /de/blog/2026/05/smart-grid-plattform-architektur-it-ot/
 ---
 
@@ -126,16 +126,16 @@ Cozystack platforms federate across central + regional + substation tiers. Singl
 Documented air-gap install workflow. Suitable for OT zones that cannot have internet egress. Updates via Harbor mirror or controlled channels.
 
 ### 3. AI infrastructure native
-KubeVirt for legacy AI workloads, native Kubernetes for modern ML pipelines. VFIO passthrough or NVIDIA vGPU for VM-bound workloads, and HAMi fractional sharing (GPU memory and compute cores) for containers sharing GPUs across forecasting models. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator.
+KubeVirt for legacy AI workloads, native Kubernetes for modern ML pipelines. Passthrough of whole GPUs or NVIDIA vGPU (requires your NVIDIA vGPU licence) for VM-bound workloads, and HAMi fractional sharing (GPU memory and compute cores) for containers sharing GPUs across forecasting models. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator; MIG and time-slicing are on the roadmap.
 
 ### 4. Multi-tenant for cross-BU
 Tenant CRD model accommodates generation / transmission / distribution / retail BUs with separate isolation. For unbundled markets, this is non-optional.
 
 ### 5. Sovereign by architecture
-Open-source platform on customer-controlled hardware. Customer-held encryption keys (volume encryption is opt-in per storage class). Audit-trail completeness in regulator-consumable formats. NIS2-aligned without bolt-on workarounds.
+Open-source platform on customer-controlled hardware. Opt-in volume encryption at rest (LINSTOR and LUKS) with a passphrase you hold. Audit-trail completeness in regulator-consumable formats. NIS2-aligned without bolt-on workarounds.
 
 ### 6. Long operational horizon
-Apache 2.0 license + CNCF Project community governance fits decade-plus grid operational planning. Vendor roadmap risk is minimized.
+Apache 2.0 licence + CNCF Project community governance fits decade-plus grid operational planning. Vendor roadmap risk is minimized.
 
 ## NIS2-specific architecture controls
 

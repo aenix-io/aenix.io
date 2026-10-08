@@ -18,7 +18,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /alternatives/openshift-alternative/
 direct_answer: |
-  **Eine OpenShift-Alternative ist eine Open-Source-orientierte Kubernetes-Plattform, die vergleichbare Enterprise-Fähigkeiten liefert (KubeVirt-basierte Virtualisierung, Mandantenfähigkeit, integriertes Networking und Storage), ohne kommerzielle Red-Hat-Subscription und ohne Bindung an das Ökosystem von Red Hat und IBM. Cozystack ist die realistische Alternative: ein CNCF-Sandbox-Projekt unter Apache 2.0, das virtuelle Maschinen und Container über KubeVirt auf einer einzigen Kubernetes-API betreibt, mit Cilium-Networking (eBPF), LINSTOR/DRBD-Storage und Mandantenfähigkeit über die Tenant-CRD. Es eignet sich für Service-Provider und regulierte Unternehmen, die Open-Core-Beschaffung verfolgen oder aus der Lizenzierung pro CPU aussteigen wollen. Ænix hat Cozystack initiiert, pflegt es mit und bietet darauf die Ænix Private Cloud Platform, kommerziellen Support und Platform-Engineering-Dienstleistungen an.**
+  **Eine OpenShift-Alternative ist eine Open-Source-orientierte Kubernetes-Plattform, die vergleichbare Enterprise-Fähigkeiten liefert (KubeVirt-basierte Virtualisierung, Mandantenfähigkeit, integriertes Networking und Storage), ohne kommerzielle Red-Hat-Subscription und ohne Bindung an das Ökosystem von Red Hat und IBM. Cozystack ist die realistische Alternative: ein CNCF-Sandbox-Projekt unter Apache 2.0, das virtuelle Maschinen und Container über KubeVirt auf einer einzigen Kubernetes-API betreibt, mit Cilium-Networking (eBPF), LINSTOR/DRBD-Storage und Mandantenfähigkeit über die Tenant-CRD. Es eignet sich für Service-Provider und regulierte Unternehmen, die Open-Core-Beschaffung verfolgen oder aus der Lizenzierung pro CPU aussteigen wollen. Ænix hat Cozystack entwickelt, pflegt es mit und bietet darauf die Ænix Private Cloud Platform, kommerziellen Support und Platform-Engineering-Dienstleistungen an.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine Open-Source-orientierte Kubernetes-Plattform, die die lizenzpflichtige Virtualisierung und Mandantenfähigkeit von OpenShift durch Werkzeuge unter Apache 2.0 ersetzt: Cozystack."
@@ -121,4 +121,4 @@ Beide Plattformen basieren auf KubeVirt, das zugrunde liegende VM-Modell ist als
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*

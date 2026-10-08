@@ -42,7 +42,7 @@ quick_facts:
     value: "Cozystack is open source under Apache 2.0 — no per-CPU licensing, full audit of the control plane."
   - label: "Engagement timeline"
     value: "Fixed-price Platform Readiness Assessment (14 or 28 days), then a 3–12 month build depending on scope."
-quick_facts_source: "[NIS2 Directive (EU) 2022/2555, EUR-Lex](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), [ENISA](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive)"
+quick_facts_source: "[NIS2 Directive (EU) 2022/2555, EUR-Lex](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), [ENISA](https://www.enisa.europa.eu/topics/state-of-cybersecurity-in-the-eu/cybersecurity-policies/nis-directive-2)"
 faq:
   - q: "What is a sovereign cloud for healthcare?"
     a: "It is a cloud platform where patient and clinical data physically stays inside a defined jurisdiction, the infrastructure is owned or directly contracted by the healthcare organization, and the software stack is auditable open source. It gives hospitals, clinics, and labs verifiable control over health data instead of contractual assurances from a hyperscaler."
@@ -102,7 +102,7 @@ Health data is the highest-friction data class in European regulation, and two f
 
 **GDPR special-category data.** Under [Article 9 of the GDPR](https://eur-lex.europa.eu/eli/reg/2016/679/oj), data concerning health is special-category personal data. Processing is prohibited unless a specific condition applies, and even then providers must demonstrate heightened technical and organizational safeguards — encryption, access control, and documented residency. A generic hyperscaler contract asserts these controls; a sovereign platform lets you prove them, because the infrastructure and the audit logs stay in your custody.
 
-**NIS2 essential-entity duties.** The health sector is an essential-entity sector under [NIS2 (Directive (EU) 2022/2555)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), Annex I. In-scope hospitals and health organizations carry binding risk-management, supply-chain-security, and incident-reporting obligations, with accountability at management level. [ENISA](https://www.enisa.europa.eu/topics/cybersecurity-policy/nis-directive) provides the reference guidance national authorities build on. A platform whose control plane is auditable open source shortens the distance between "we operate securely" and "here is the evidence."
+**NIS2 essential-entity duties.** The health sector is an essential-entity sector under [NIS2 (Directive (EU) 2022/2555)](https://eur-lex.europa.eu/eli/dir/2022/2555/oj), Annex I. In-scope hospitals and health organizations carry binding risk-management, supply-chain-security, and incident-reporting obligations, with accountability at management level. [ENISA](https://www.enisa.europa.eu/topics/state-of-cybersecurity-in-the-eu/cybersecurity-policies/nis-directive-2) provides the reference guidance national authorities build on. A platform whose control plane is auditable open source shortens the distance between "we operate securely" and "here is the evidence."
 
 **Data residency and key custody.** On a sovereign platform, workloads are pinned to named EU or DACH regions on hardware the provider owns or contracts directly — there is no default cross-border replication to a US-owned parent company. Volume encryption (LUKS on LINSTOR) is available opt-in per storage class, with key handling designed with you during the build — see the [GDPR evidence page](/compliance/gdpr/) for what is and is not provided by default.
 

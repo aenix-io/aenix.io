@@ -139,13 +139,13 @@ and observability.
 ### Layer 4 — Model layer
 
 Open-weight model families in 2026 production:
-- **Llama 3 / 3.1 / 3.2 / 3.3** (Meta) — 1B to 405B+, license permits
+- **Llama 3 / 3.1 / 3.2 / 3.3** (Meta) — 1B to 405B+, licence permits
   commercial with caveats
-- **Mistral / Mixtral** — commercial license for newer, Apache 2.0
+- **Mistral / Mixtral** — commercial licence for newer, Apache 2.0
   for older
 - **Qwen 2 / 3** (Alibaba) — strong multilingual including DACH and
   Eastern European languages, Apache 2.0
-- **DeepSeek V3** — strong reasoning, license varies
+- **DeepSeek V3** — strong reasoning, licence varies
 - **Phi** (Microsoft) — small models with surprising capability, MIT
 - **Gemma** (Google) — small/medium, commercial-use permitted
 
@@ -189,10 +189,11 @@ underperform expectations. The operational surface includes:
 - **On-call** — GPU failures, OOM events, queue backups
 - **Capacity planning** — when to buy more GPUs? When to retire older?
 
-AI Platform ships VictoriaMetrics + VictoriaLogs with AI-specific
-metrics out of the box (token/sec per tenant, latency percentiles per
-model version, cost-per-token per tenant) plus a capacity-planning
-dashboard tied to the GPU sizing tables.
+AI Platform ships VictoriaMetrics + VictoriaLogs. GPU usage is
+measured per tenant; charging happens in your billing system (WHMCS
+or your own). Inference metrics such as tokens per second and latency
+percentiles per model version come from the serving layer and land in
+the same stack, next to the GPU sizing inputs for capacity planning.
 
 ## Common deployment patterns
 
@@ -213,7 +214,9 @@ programme. This is the typical AI Platform flagship deployment.
 
 **Pattern 4 — air-gapped sovereign deployment.** No internet egress;
 updates through controlled channels. Customer-supplied hardware,
-customer-controlled keys (HSM-backed), customer-side audit SIEM. Best
+opt-in volume encryption with a passphrase the customer holds (the
+key-management process, including any HSM, is designed with you),
+customer-side audit SIEM. Best
 for: classified workloads, healthcare with strict
 residency.
 

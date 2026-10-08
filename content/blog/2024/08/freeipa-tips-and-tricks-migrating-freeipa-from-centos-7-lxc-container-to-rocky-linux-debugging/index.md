@@ -21,7 +21,7 @@ quiz:
       explanation: "The new Proxmox runs on Cgroups v2; the outdated container systemd only supports Cgroups v1. systemd inside wouldn't start, but a bash shell could still be entered."
     - q: "Why did the author have to set the system date back before running ipactl restart?"
       options:
-        - { text: "To roll back a license-validity check inside FreeIPA", correct: false }
+        - { text: "To roll back a licence-validity check inside FreeIPA", correct: false }
         - { text: "To pin existing Kerberos tickets to a known TGT lifetime", correct: false }
         - { text: "Most certs had expired and services need valid certs to start", correct: true }
         - { text: "To match the LXC host clock and avoid time-skew errors", correct: false }

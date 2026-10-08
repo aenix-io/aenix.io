@@ -16,7 +16,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A head-to-head comparison of Cozystack and VMware Cloud Foundation for teams planning a post-Broadcom VMware exit."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -59,14 +59,14 @@ For the wider market, see **[Best VMware alternatives 2026 — market comparison
 
 | | VMware (VCF) | Cozystack |
 |---|---|---|
-| **License** | Subscription only | Apache 2.0 (open source) |
+| **Licence** | Subscription only | Apache 2.0 (open source) |
 | **Compute** | vSphere / ESXi | KubeVirt on Talos |
 | **Storage** | vSAN | LINSTOR or SeaweedFS |
 | **Network** | NSX | Cilium (eBPF) |
 | **Multi-tenancy** | vCloud Director | Tenant CRD |
 | **Service catalog** | vRealize / Aria | Service catalogue in the Cozystack Dashboard |
 | **Backup/DR** | Site Recovery Manager (orchestrated failover) | Velero + S3 + PostgreSQL PITR + recovery runbook (no orchestrated failover) |
-| **GPU for VMs** | NVIDIA vGPU on vSphere | Passthrough or NVIDIA vGPU on KubeVirt (MIG on the roadmap) |
+| **GPU for VMs** | NVIDIA vGPU on vSphere | Passthrough or NVIDIA vGPU on KubeVirt (your NVIDIA vGPU licence; MIG on the roadmap) |
 | **Air-gap** | Supported (extra licensing) | Supported (no extra cost) |
 | **Ops model** | Broadcom support plus a large partner and ISV channel | Ænix support through your GitOps repository and, with your approval, remote access to your clusters |
 

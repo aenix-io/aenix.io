@@ -69,4 +69,4 @@ Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf die
 
 ## Datenschutz
 
-Informationen zur Verarbeitung personenbezogener Daten finden Sie unter [Datenschutz](/privacy-policy/) (Datenschutzerklärung in englischer Sprache).
+Informationen zur Verarbeitung personenbezogener Daten finden Sie in unserer [Datenschutzerklärung](/de/datenschutz/).

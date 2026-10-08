@@ -24,7 +24,7 @@ quiz:
         - { text: "Open-source community-governed (Apache 2.0, vendor-neutral)", correct: false }
         - { text: "Red Hat commercial subscription, per-core or per-socket", correct: true }
         - { text: "Free for the first year, then per-VM commercial pricing", correct: false }
-      explanation: "OpenShift Virtualization = Red Hat commercial subscription; per-core or per-socket pricing; includes Red Hat support, certification, ecosystem access. Cozystack = Apache 2.0 open source; Aenix offers optional commercial support tiers."
+      explanation: "OpenShift Virtualization = Red Hat commercial subscription; per-core or per-socket pricing; includes Red Hat support, certification, ecosystem access. Cozystack = Apache 2.0 open source; Ænix offers optional commercial support tiers."
     - q: "What multi-tenancy model does OpenShift use vs Cozystack?"
       options:
         - { text: "Both share the same Tenant CRD with nested-tenant model", correct: false }

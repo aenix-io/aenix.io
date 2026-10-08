@@ -30,7 +30,7 @@ We’re looking forward to meeting you at CloudFest 2026, booth **# Z22**.
 
 Whether you’re scaling a hosting platform or modernizing enterprise infrastructure — let’s talk.
 
-Book a meeting with Ænix team here [https://aenix.io/links/cloudfest2026](https://aenix.io/links/cloudfest2026)
+Book a meeting with Ænix team here [https://aenix.io/links/cloudfest2026/](https://aenix.io/links/cloudfest2026/)
 
 See you at booth **# Z22**.
 

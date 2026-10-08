@@ -30,7 +30,7 @@ quick_facts:
   - label: "Who it is for"
     value: "Data centres and new GPU clouds (neoclouds) selling GPU capacity to their own customers."
   - label: "GPU modes"
-    value: "Whole GPUs passed through to tenant VMs; NVIDIA vGPU for VMs where you hold the NVIDIA vGPU licence; fractional sharing between containers with HAMi. MIG and time-slicing are on the roadmap."
+    value: "Whole GPUs passed through to tenant VMs; NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence); fractional sharing between containers with HAMi. MIG and time-slicing are on the roadmap."
   - label: "Kubernetes for AI"
     value: "Cozystack is a CNCF Certified Kubernetes distribution and was accepted into the CNCF Kubernetes AI Conformance program in September 2026."
   - label: "NVIDIA stack"
@@ -44,7 +44,7 @@ faq:
   - q: "What is a GPU as a service platform?"
     a: "It is the layer between your GPU servers and your customers. It creates isolated tenants, lets customers order GPU VMs or Kubernetes clusters with GPUs themselves, keeps their workloads apart, records how much each tenant used, and hands that usage to your billing. Without it, a data centre can rent out servers; with it, it can run a cloud."
   - q: "How are GPUs shared between tenants?"
-    a: "Two ways ship today. A whole GPU, or several, can be passed through to one tenant's virtual machine, so that tenant has the card to itself. Inside Kubernetes, HAMi lets several containers share one physical GPU with memory and compute limits. MIG partitioning and time-slicing are on the roadmap, so a product that promises hard partitions of one card to untrusted tenants should not be planned around them yet."
+    a: "Three ways ship today. A whole GPU, or several, can be passed through to one tenant's virtual machine, so that tenant has the card to itself. NVIDIA vGPU splits a card into profiles for several VMs (requires your NVIDIA vGPU licence). Inside Kubernetes, HAMi lets several containers share one physical GPU with memory and compute limits. MIG partitioning and time-slicing are on the roadmap, so a product that promises hard partitions of one card to untrusted tenants should not be planned around them yet."
   - q: "Can we bill GPU usage through WHMCS?"
     a: "Yes. The platform measures usage per tenant, and the Ænix WHMCS integration, a proprietary Ænix module, passes provisioning and usage to WHMCS, where you set prices and invoice. Providers with their own billing system take the same usage data from the platform instead. The price per GPU-hour is yours to set."
   - q: "Is the NVIDIA stack validated by NVIDIA?"
@@ -126,7 +126,7 @@ GPU support covers NVIDIA data-centre GPUs through the NVIDIA GPU Operator. Æni
 - **Managed Kubernetes** with GPU node groups. Each tenant cluster has its own control plane.
 - **Managed databases and queues:** PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, MongoDB, OpenSearch, and Qdrant as a vector database.
 - **S3-compatible object storage** for datasets and model checkpoints.
-- **AI services** delivered with [Ænix AI Platform](/products/ai-platform/): model serving and the AI stack around it. One telecom operator's platform, for example, runs NVIDIA Dynamo inference and RAG on Qdrant, packaged as Cozystack services ([case study](/case-studies/ai-universal-installer/)).
+- **AI services** delivered with [Ænix AI Platform](/products/ai-platform/): model serving and the AI stack around it. A telecom operator and integrator, for example, runs NVIDIA Dynamo inference and RAG on Qdrant on its platform, packaged as Cozystack services ([case study](/case-studies/ai-universal-installer/)).
 
 ### Kubernetes for AI, with third-party proof
 
@@ -199,7 +199,7 @@ These deployments are written up in full, with the customers anonymised as their
 
 - **[A sovereign public cloud on bare metal](/case-studies/sovereign-public-cloud/)**: a Swiss provider sells VMs, Kubernetes and GPUs from three data centres, with billing from its own system.
 - **[8×H100 inference on your own bare metal](/case-studies/bare-metal-gpu-inference/)**: all eight GPUs passed through to one isolated tenant VM, about two months to production.
-- **[Cozystack as a universal installer](/case-studies/ai-universal-installer/)**: a telecom operator runs GPU passthrough into VMs and clusters, NVIDIA Dynamo and geo-distributed GPU.
+- **[Cozystack as a universal installer](/case-studies/ai-universal-installer/)**: a telecom operator and integrator runs GPU passthrough into VMs and clusters, NVIDIA Dynamo and geo-distributed GPU.
 - **[From public cloud to bare metal, bursting on demand](/case-studies/multicloud-academic-gpu/)**: fractional GPU sharing and GPU cost about five times lower than the previous hyperscaler setup.
 
 The largest GPU deployment written up here is a single 8×H100 node. For a larger fleet, we scope a proof of concept on your own hardware.

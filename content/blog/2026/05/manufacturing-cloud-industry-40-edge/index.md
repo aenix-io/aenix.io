@@ -30,7 +30,7 @@ quiz:
         - { text: "Design data and process specs are competitive differentiators", correct: true }
         - { text: "Government laws (EU AI Act, NIS2) mandate sovereignty for IP", correct: false }
         - { text: "Industrial customers prefer it by long-standing convention", correct: false }
-      explanation: "Industrial IP — design data, formulations, process specifications — has higher sovereignty requirements because it's the differentiator; leakage is competitive harm, not just compliance harm. The architectural answer is air-gap-capable platform with customer-controlled keys."
+      explanation: "Industrial IP — design data, formulations, process specifications — has higher sovereignty requirements because it's the differentiator; leakage is competitive harm, not just compliance harm. The architectural answer is an air-gap-capable platform with opt-in volume encryption at rest (LINSTOR and LUKS) and a passphrase the manufacturer holds; the key-management process is designed with you."
     - q: "Which manufacturing sectors does the article specifically name as in NIS2 scope?"
       options:
         - { text: "All manufacturing activities, regardless of sector or size", correct: false }
@@ -84,7 +84,7 @@ Cozystack runs at all three layers with consistent operational model.
 
 ## Sovereignty for industrial IP
 
-Industrial IP — design data, formulations, process specifications — has higher sovereignty requirements than typical enterprise data. The architectural answer is air-gap-capable platform with customer-controlled keys.
+Industrial IP — design data, formulations, process specifications — has higher sovereignty requirements than typical enterprise data. The architectural answer is an air-gap-capable platform with opt-in volume encryption at rest (LINSTOR and LUKS) and a passphrase the manufacturer holds; the key-management process is designed with you.
 
 ## NIS2 compliance
 

@@ -73,7 +73,7 @@ faq:
 - Backup and DR infrastructure
 - Identity, observability, platform tooling
 - Platform-engineering capacity needed
-- Software licenses where applicable
+- Software licences where applicable
 
 ### Section 3: Workload classification
 - Per-workload: repatriate now / later / stay / reassess

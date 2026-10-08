@@ -145,4 +145,4 @@ Die Logos oben stehen für Hosting-Anbieter, die die Ænix Public Cloud Platform
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Projekt und eine CNCF-zertifizierte Kubernetes-Distribution, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft drei darauf aufbauende Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft drei darauf aufbauende Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*

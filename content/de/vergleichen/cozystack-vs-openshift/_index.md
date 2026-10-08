@@ -16,7 +16,7 @@ hreflang_en: /compare/cozystack-vs-openshift/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cozystack und OpenShift Virtualization betreiben beide virtuelle Maschinen über KubeVirt auf Kubernetes, unterscheiden sich aber im kommerziellen Modell und im Umfang. OpenShift Virtualization ist das CPU-basiert lizenzierte Subscription-Produkt von Red Hat auf der breiten OpenShift-Plattform und passt am besten zu bestehenden Red-Hat- und IBM-Kunden. Cozystack ist eine Open-Source-Plattform unter Apache 2.0 aus Kubernetes, KubeVirt, Cilium-Networking (eBPF) und LINSTOR/DRBD-Storage mit verschachtelter Mandantenfähigkeit über die Tenant-CRD und eignet sich damit für Open-Source-First-Organisationen und Service-Provider. Cozystack ist ein CNCF-Sandbox-Projekt ohne Lizenzkosten pro CPU. Ænix hat Cozystack initiiert, pflegt es mit und bietet die Ænix Private Cloud Platform, Support und Migrationsleistungen für Unternehmen, die eine OpenShift-Alternative prüfen oder einen Ausstieg aus Red Hat planen.**
+  **Cozystack und OpenShift Virtualization betreiben beide virtuelle Maschinen über KubeVirt auf Kubernetes, unterscheiden sich aber im kommerziellen Modell und im Umfang. OpenShift Virtualization ist das CPU-basiert lizenzierte Subscription-Produkt von Red Hat auf der breiten OpenShift-Plattform und passt am besten zu bestehenden Red-Hat- und IBM-Kunden. Cozystack ist eine Open-Source-Plattform unter Apache 2.0 aus Kubernetes, KubeVirt, Cilium-Networking (eBPF) und LINSTOR/DRBD-Storage mit verschachtelter Mandantenfähigkeit über die Tenant-CRD und eignet sich damit für Open-Source-First-Organisationen und Service-Provider. Cozystack ist ein CNCF-Sandbox-Projekt ohne Lizenzkosten pro CPU. Ænix hat Cozystack entwickelt, pflegt es mit und bietet die Ænix Private Cloud Platform, Support und Migrationsleistungen für Unternehmen, die eine OpenShift-Alternative prüfen oder einen Ausstieg aus Red Hat planen.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein direkter Vergleich von Cozystack und Red Hat OpenShift Virtualization, zwei KubeVirt-basierten Plattformen für VMs auf Kubernetes."
@@ -85,4 +85,4 @@ Wann sich der Wechsel weg von OpenShift lohnt, lesen Sie unter **[OpenShift-Alte
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*

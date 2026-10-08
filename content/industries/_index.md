@@ -7,7 +7,7 @@ language: "en"
 hreflang_de: /de/branchen/
 ---
 
-**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix platform that fits. Bank engagements stay anonymous, but [nine deployments are written up in full](/case-studies/) with their architecture and numbers.**
+**Vertical proof points and engagement patterns by industry. Find your sector — the regulatory triggers, the architectural patterns, and the Ænix platform that fits. Bank engagements stay anonymous, but [nine published case studies](/case-studies/) give their architecture and numbers.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -65,7 +65,7 @@ hreflang_de: /de/branchen/
 
 **Hosting providers running Ænix Public Cloud Platform in production:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**Engagements under NDA** (banks, sovereign cloud, AI/ML, telco): customer names are withheld by contract. [Nine deployments are written up in full](/case-studies/), anonymized but with architecture and figures intact — including [a private cloud in a bank](/case-studies/private-cloud-in-a-bank/) and [a unified cloud portal for a financial group](/case-studies/unified-cloud-portal-financial-group/).
+**Engagements under NDA** (banks, sovereign cloud, AI/ML, telco): customer names are withheld by contract. [Nine published case studies](/case-studies/) are written up in full, anonymized but with architecture and figures intact — including [a private cloud in a bank](/case-studies/private-cloud-in-a-bank/) and [a unified cloud portal for a financial group](/case-studies/unified-cloud-portal-financial-group/).
 
 **Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud / VPS hosting platforms, lightweight VDI, backup systems reducing storage cost up to 75%. [See case studies →](/case-studies/)
 

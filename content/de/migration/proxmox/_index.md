@@ -13,7 +13,7 @@ hreflang_en: /migration/proxmox/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Eine Proxmox-zu-Cozystack-Migration verlagert Virtualisierungs-Workloads von Proxmox VE auf Cozystack, die Open-Source-Cloud-Plattform auf Kubernetes-Basis. Sie richtet sich an Hosting-Anbieter, ISPs und Service-Provider-Clouds, die dem Einzelorganisationsmodell von Proxmox entwachsen sind und ein Tenant-Modell, einen Servicekatalog über reine VMs hinaus (Managed Databases, S3, Kubernetes-Mandanten, GPU) sowie produktionsreife Multi-Cluster-Föderation brauchen. Ænix hat Cozystack initiiert, pflegt es mit und führt diese Migrationen durchgängig durch: VM-Images werden per CDI von qcow2 nach KubeVirt konvertiert, das Mandantenmodell wird während der Migration mit dem Tenant-CRD entworfen, Storage und Netzwerk werden auf LINSTOR/DRBD und Cilium neu aufgebaut. Cozystack steht unter Apache 2.0, ohne Gebühren pro CPU oder Core. Für Single-Tenant-Umgebungen unter 50 Hosts empfehlen wir, bei Proxmox zu bleiben.**
+  **Eine Proxmox-zu-Cozystack-Migration verlagert Virtualisierungs-Workloads von Proxmox VE auf Cozystack, die Open-Source-Cloud-Plattform auf Kubernetes-Basis. Sie richtet sich an Hosting-Anbieter, ISPs und Service-Provider-Clouds, die dem Einzelorganisationsmodell von Proxmox entwachsen sind und ein Tenant-Modell, einen Servicekatalog über reine VMs hinaus (Managed Databases, S3, Kubernetes-Mandanten, GPU) sowie produktionsreife Multi-Cluster-Föderation brauchen. Ænix hat Cozystack entwickelt, pflegt es mit und führt diese Migrationen durchgängig durch: VM-Images werden per CDI von qcow2 nach KubeVirt konvertiert, das Mandantenmodell wird während der Migration mit dem Tenant-CRD entworfen, Storage und Netzwerk werden auf LINSTOR/DRBD und Cilium neu aufgebaut. Cozystack steht unter Apache 2.0, ohne Gebühren pro CPU oder Core. Für Single-Tenant-Umgebungen unter 50 Hosts empfehlen wir, bei Proxmox zu bleiben.**
 
 quick_facts:
   - label: "Was es ist"
@@ -43,12 +43,12 @@ faq:
   - q: "Was bietet Cozystack, das Proxmox nicht bietet?"
     a: "Cozystack vereint VMs und Container über KubeVirt auf einer einzigen Kubernetes-API und ergänzt native Mandantenfähigkeit über das Tenant-CRD, eBPF-Networking mit Cilium und replizierten Storage mit LINSTOR/DRBD, dazu einen Servicekatalog mit Managed Databases, S3, Kubernetes-Mandanten und GPU-Unterstützung."
   - q: "Wer führt die Migration durch?"
-    a: "Ænix, das Unternehmen, das Cozystack initiiert hat und gemeinsam mit anderen Maintainern pflegt, führt die Migration durchgängig durch, vom Assessment bis zur Umsetzung. Cozystack ist ein CNCF-Sandbox-Projekt (der Antrag auf Incubation befindet sich in der Due-Diligence-Prüfung); die zugrunde liegende Plattform ist also Open Source und nicht an einen einzelnen Anbieter gebunden."
+    a: "Ænix, das Unternehmen, das Cozystack entwickelt hat und gemeinsam mit anderen Maintainern pflegt, führt die Migration durchgängig durch, vom Assessment bis zur Umsetzung. Cozystack ist ein CNCF-Sandbox-Projekt (der Antrag auf Incubation befindet sich in der Due-Diligence-Prüfung); die zugrunde liegende Plattform ist also Open Source und nicht an einen einzelnen Anbieter gebunden."
 ---
 
 **Proxmox VE ist im SMB-Umfeld hervorragend. Wachsen Umgebungen zu Multi-Tenant-Clouds oder Service-Provider-Modellen heran, kommt das Betriebsmodell an seine Grenzen. Ænix führt Proxmox-zu-Cozystack-Migrationen durchgängig durch.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — schlüsselfertige Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen. Billing mit WHMCS-Integration, Mandantenfähigkeit über das Tenant-CRD, produktisierter Installer. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen: Hosting-Panel, Billing, Kundenportal und Zahlungen. Billing mit WHMCS-Integration, Mandantenfähigkeit über das Tenant-CRD, produktisierter Installer. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
@@ -93,4 +93,4 @@ Sie wählen noch das Ziel? Siehe **[Proxmox-Alternative](/de/alternativen/proxmo
 
 ---
 
-*Ænix hat Cozystack initiiert (ein CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat Cozystack entwickelt (ein CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

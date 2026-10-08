@@ -10,7 +10,7 @@ aliases:
   - /kubefarm/
 ---
 
-**Nine deployments below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, the hosting providers named below run Ænix Public Cloud Platform in production, and reference calls for other engagements can be arranged under NDA.**
+**Nine published case studies below, written up in detail — what the estate looked like before, what was built, what broke, and what the numbers were afterwards. The customers are anonymized because the contracts require it; the architectures, the failure modes and the figures are not. Beyond these, the hosting providers named below run Ænix Public Cloud Platform in production, and reference calls for other engagements can be arranged under NDA.**
 
 ---
 

@@ -44,7 +44,7 @@ quiz:
       explanation: "Das Team will den Ansatz zur Game Server Edition ausbauen, Minecraft als offizielles Beispiel einer einbindbaren Anwendung übernehmen und Counter-Strike, Rust, FiveM, Factorio und weitere ergänzen."
 ---
 
-Hallo, Welt! Wir sind das Team hinter [Cozystack](https://cozystack.io), einer Open-Source-Plattform für den Aufbau von Clouds auf eigener Hardware. Wir möchten erklären, warum wir uns entschieden haben, Gameserver ins Visier zu nehmen, und was daraus geworden ist.
+Hallo, Welt! Wir haben [Cozystack](https://cozystack.io) entwickelt und pflegen es mit, eine Open-Source-Plattform für den Aufbau von Clouds auf eigener Hardware. Wir möchten erklären, warum wir uns entschieden haben, Gameserver ins Visier zu nehmen, und was daraus geworden ist.
 
 ![Bild](/img/blog/medium/game-servers-on-cozystack-no-april-fools-joke/cover.png)
 

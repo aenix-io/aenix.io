@@ -31,7 +31,7 @@ quick_facts:
     value: "Heat templates and Horizon customisations are rebuilt; Ironic bare-metal provisioning has no direct equivalent."
   - label: "Typical timeline"
     value: "4-12 months for a mid-size deployment; 12-18 months with complex provider networks or tenant-facing OpenStack APIs."
-  - label: "License"
+  - label: "Licence"
     value: "Cozystack is Apache 2.0 with no per-CPU or per-core licensing; a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)."
   - label: "Migration tooling"
     value: "Konveyor Forklift ships in the Ænix platforms and supports OpenStack as a source provider — cold migration only, so each instance has a real power-off window."

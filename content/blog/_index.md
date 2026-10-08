@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: "Articles, deep dives, news, and field notes from the Aenix team — Cozystack, Kubernetes, sovereign cloud, DORA / NIS2, AI infrastructure."
+description: "Articles, deep dives, news, and field notes from the Ænix team — Cozystack, Kubernetes, sovereign cloud, DORA / NIS2, AI infrastructure."
 hero_subtitle: "Deep dives on sovereign cloud, Kubernetes, and platform engineering"
 bodyClass: "page-blog"
 language: "en"

@@ -10,7 +10,7 @@ hreflang_de: /de/vergleichen/
 Direct, side-by-side comparisons of Cozystack against the platforms
 it commonly replaces. Each comparison goes through compute, storage,
 networking, multi-tenancy, observability, backup/DR, GPU, sovereignty
-posture, operational footprint, license, and migration pattern — at
+posture, operational footprint, licence, and migration pattern — at
 the level of detail a platform engineer needs to make an architecture
 call.
 

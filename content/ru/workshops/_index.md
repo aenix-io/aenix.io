@@ -1,6 +1,6 @@
 ---
 title: "Воркшопы"
-description: "Бесплатные практические воркшопы Aenix: перенос реальных нагрузок с VMware на open-source Cozystack — живые кластеры, домашние лабораторные, сертификат."
+description: "Бесплатные практические воркшопы Ænix: перенос реальных нагрузок с VMware на open-source Cozystack — живые кластеры, домашние лабораторные, сертификат."
 hero_subtitle: "Практика на живых кластерах — от мейнтейнеров Cozystack"
 language: "ru"
 hreflang_en: "/workshops/"

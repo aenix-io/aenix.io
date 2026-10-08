@@ -19,7 +19,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A DORA-aligned platform readiness engagement that checks cloud architecture against ICT risk management, incident reporting, third-party and concentration risk, exit strategies, and resilience testing."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -192,7 +192,7 @@ We are different in three concrete ways:
 
 - **No hyperscaler bias.** Our recommendations are not commercially tied to AWS, Azure, GCP, or any single provider. When the answer is hyperscaler-with-better-controls, we say so. When the answer is on-prem or hybrid, we say that.
 - **Engineers not consultants.** The same Ænix engineers who run the readiness engagement build the production platforms afterwards. The implementation effort estimates in the report are calibrated against work we have actually shipped.
-- **Open-source platform foundation.** We created **[Cozystack](/products/cozystack/)** and co-maintain it with maintainers from other companies — a CNCF Sandbox project, Certified Kubernetes distribution, OpenSSF Best Practices badge. Where a Cozystack-based architecture serves DORA's substantive requirements better than the alternative, the report explains why with named controls.
+- **Open-source platform foundation.** We created **[Cozystack](/products/cozystack/)** and co-maintain it with maintainers from other companies — a CNCF Sandbox project, CNCF Certified Kubernetes distribution, OpenSSF Best Practices badge. Where a Cozystack-based architecture serves DORA's substantive requirements better than the alternative, the report explains why with named controls.
 
 <!-- /BLOCK 6 -->
 
@@ -217,9 +217,7 @@ Bank and financial-group work is published in anonymised form:
 - **[Private cloud in a bank](/case-studies/private-cloud-in-a-bank/)** — developer self-service on the bank's own infrastructure.
 - **[Unified cloud portal for a financial group](/case-studies/unified-cloud-portal-financial-group/)** — one self-service portal over existing estates.
 
-All nine written-up deployments are on the [case studies page](/case-studies/). Reference calls are arranged under NDA where the customer agrees.
-
-{{< quote-carousel >}}
+All nine published case studies are on the [case studies page](/case-studies/). Reference calls are arranged under NDA where the customer agrees.
 
 <!-- /BLOCK 8 -->
 
@@ -280,7 +278,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix created Cozystack — a CNCF Sandbox project, Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. We run DORA-aligned platform readiness engagements and platform engineering programmes for financial-services organisations. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.*
+*Ænix created Cozystack — a CNCF Sandbox project, CNCF Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. We run DORA-aligned platform readiness engagements and platform engineering programmes for financial-services organisations. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.*
 
 <!-- /BLOCK 12 -->
 

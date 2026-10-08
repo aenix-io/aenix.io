@@ -41,7 +41,7 @@ quiz:
         - { text: "Sofort kaufen, bevor die Preise steigen", correct: false }
         - { text: "Bleiben Sie, wo Sie sind", correct: true }
         - { text: "Zum nächstgrößeren Wettbewerber wechseln", correct: false }
-      explanation: "Bei den meisten Anfragen aus dem KMU-Segment lautet die ehrliche Antwort: bleiben Sie, wo Sie sind. Aenix sagt das ausdrücklich — wenn Cozystack nicht passt, wird das direkt so benannt und nicht in ein Angebot umgedeutet."
+      explanation: "Bei den meisten Anfragen aus dem KMU-Segment lautet die ehrliche Antwort: bleiben Sie, wo Sie sind. Ænix sagt das ausdrücklich — wenn Cozystack nicht passt, wird das direkt so benannt und nicht in ein Angebot umgedeutet."
 hreflang_en: /blog/2026/05/when-cozystack-fits-smb-and-mid-market/
 ---
 

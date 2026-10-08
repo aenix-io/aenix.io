@@ -63,7 +63,7 @@ body: "Открытый разбор ваших случаев. Ведущий �
 direct_answer: |
   **Бесплатный практический онлайн-воркшоп для тех, кто работает с VMware и решает, что делать дальше. За три часа вы своими руками перенесёте виртуальную машину с работающего сервера VMware на Cozystack — открытую платформу виртуализации из фонда CNCF. Почти всё время — практика в персональном рабочем окружении: перенос машины, база данных, публикация сервиса, мониторинг и резервное копирование. Всё в браузере, устанавливать ничего не нужно.**
 
-  **Ведёт Тимур Тукаев — мейнтейнер Cozystack и сооснователь Aenix. После воркшопа у вас остаются тестовая среда на 30 дней, домашние лабораторные работы, чат с мейнтейнерами платформы и возможность бесплатно получить сертификат Aenix Certification for Cozystack — Fundamentals.**
+  **Ведёт Тимур Тукаев — мейнтейнер Cozystack и сооснователь Ænix. После воркшопа у вас остаются тестовая среда на 30 дней, домашние лабораторные работы, чат с мейнтейнерами платформы и возможность бесплатно получить сертификат Ænix Certification for Cozystack — Fundamentals.**
 
 quick_facts:
   - label: "Когда"
@@ -77,9 +77,9 @@ quick_facts:
   - label: "Для кого"
     value: "Администраторы VMware, системные администраторы, руководители инфраструктуры, технические директора, инженеры DevOps"
   - label: "После воркшопа"
-    value: "Тестовая среда на 30 дней, чат с мейнтейнерами Cozystack, домашние лабораторные работы и возможность получить сертификат Aenix Certification for Cozystack — Fundamentals"
+    value: "Тестовая среда на 30 дней, чат с мейнтейнерами Cozystack, домашние лабораторные работы и возможность получить сертификат Ænix Certification for Cozystack — Fundamentals"
   - label: "Ведущий"
-    value: "Тимур Тукаев — мейнтейнер Cozystack, сооснователь Aenix"
+    value: "Тимур Тукаев — мейнтейнер Cozystack, сооснователь Ænix"
 
 faq:
   - q: "Сколько стоит участие?"
@@ -95,7 +95,7 @@ faq:
   - q: "Что именно я сделаю своими руками?"
     a: "Перенесёте виртуальную машину с работающего сервера VMware, развернёте базу данных, опубликуете сервис в сеть, посмотрите, как устроены мониторинг и резервное копирование, — а в финале поднимете всю собранную инфраструктуру заново из одного файла."
   - q: "Что происходит после воркшопа?"
-    a: "Тестовая среда остаётся с вами ещё на 30 дней, вы получаете домашние лабораторные работы и доступ в чат, где на вопросы отвечают мейнтейнеры Cozystack. Выполнив лабораторные, можно получить сертификат Aenix Certification for Cozystack — Fundamentals — тоже бесплатно."
+    a: "Тестовая среда остаётся с вами ещё на 30 дней, вы получаете домашние лабораторные работы и доступ в чат, где на вопросы отвечают мейнтейнеры Cozystack. Выполнив лабораторные, можно получить сертификат Ænix Certification for Cozystack — Fundamentals — тоже бесплатно."
   - q: "У нас Oracle, SAP или Windows с особыми лицензиями. Это переедет?"
     a: "Возможно, нет — и мы скажем об этом прямо. Лицензионные ограничения некоторых вендоров — одна из тем честного разговора в программе. Приходите со своим самым сложным случаем и получите прямой ответ."
   - q: "Можно прийти с руководителем или коллегой?"
@@ -218,7 +218,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Ваша тестовая среда останется с вами ещё на 30 дней</strong> — для экспериментов и подготовки к сертификации.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Лабораторные работы для выполнения дома</strong> — с поддержкой мейнтейнеров Cozystack.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Чат, где на вопросы отвечают мейнтейнеры Cozystack.</strong></span></li>
-<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Возможность получить сертификат Aenix Certification for Cozystack — Fundamentals</strong> — бесплатно.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Возможность получить сертификат Ænix Certification for Cozystack — Fundamentals</strong> — бесплатно.</span></li>
 </ul>
 <div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Забронировать место</a></div>
 </div>
@@ -230,9 +230,9 @@ faq:
 <span class="ws-cert__tag">образец</span>
 <span class="ws-cert__seal">{{< ws-icon name="cert" >}}</span>
 <span class="ws-cert__kicker">Certificate of completion</span>
-<span class="ws-cert__title">Aenix Certification for Cozystack — Fundamentals</span>
+<span class="ws-cert__title">Ænix Certification for Cozystack — Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">Cozystack · Aenix</span>
+<span class="ws-cert__by">Cozystack · Ænix</span>
 </div>
 </div>
 </div>
@@ -244,8 +244,8 @@ faq:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="ws-speaker-h">Ведущий</h2>
 <div class="ws-speaker__name">Тимур Тукаев</div>
-<div class="ws-speaker__role">Мейнтейнер Cozystack · сооснователь Aenix</div>
-<p class="ws-speaker__bio">Тимур — мейнтейнер открытой платформы Cozystack и сооснователь компании Aenix, которая её разрабатывает. Формат воркшопа — его: без маркетинговых слайдов, большая часть времени за терминалом, а слабые места платформы называются раньше сильных.</p>
+<div class="ws-speaker__role">Мейнтейнер Cozystack · сооснователь Ænix</div>
+<p class="ws-speaker__bio">Тимур — мейнтейнер открытой платформы Cozystack и сооснователь компании Ænix, которая её создала и развивает вместе с мейнтейнерами из других компаний. Формат воркшопа — его: без маркетинговых слайдов, большая часть времени за терминалом, а слабые места платформы называются раньше сильных.</p>
 </div>
 </div>
 </section>

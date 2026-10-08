@@ -1,7 +1,7 @@
 ---
 title: "SRE Consulting — Site-Reliability-Praktiken für Produktion im großen Maßstab"
 seo_title: "SRE Consulting für Produktionsplattformen"
-description: "SRE Consulting, das SLOs, Error Budgets, Incident Command und Toil-Abbau als System verankert, nicht als Gewohnheit. Assessment, Aufbau oder Rufbereitschaft."
+description: "SRE Consulting, das SLOs, Error Budgets, Incident Command und Toil-Abbau als System verankert, nicht als Gewohnheit. Review, Aufbau oder Rufbereitschaft."
 related_pages:
   - /de/dienstleistungen/devops-consulting/
   - /de/dienstleistungen/platform-engineering/
@@ -12,14 +12,14 @@ hreflang_en: /services/sre-consulting/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **SRE Consulting von Ænix überträgt die Disziplin des Software-Engineerings auf den Betrieb, damit die Produktion auch beim Wachstum zuverlässig bleibt. Die Leistung umfasst SLO-Design, Error-Budget-Frameworks, Incident Response mit Blameless Post-Mortems, auf Zuverlässigkeit ausgerichtete Observability, Kapazitätsplanung und den Abbau von Toil. Sie richtet sich an Platform-, Infrastruktur- und Betriebsteams mit Kubernetes- und Cozystack-Umgebungen, die messbare Zuverlässigkeit statt ständiger Brandbekämpfung brauchen. Ænix baut diese Praktiken in das Plattformfundament ein, statt sie nachträglich aufzusetzen, und kann die Arbeit mit jeder Ænix-Plattform verbinden oder eigenständig erbringen. Die Formen der Zusammenarbeit reichen von einem Reifegrad-Assessment über 5–10 Tage über eine Umsetzung von 3–9 Monaten in Ihrem Team bis zu einem Managed-Engagement, bei dem Ænix die Rufbereitschaft mitträgt.**
+  **SRE Consulting von Ænix überträgt die Disziplin des Software-Engineerings auf den Betrieb, damit die Produktion auch beim Wachstum zuverlässig bleibt. Die Leistung umfasst SLO-Design, Error-Budget-Frameworks, Incident Response mit Blameless Post-Mortems, auf Zuverlässigkeit ausgerichtete Observability, Kapazitätsplanung und den Abbau von Toil. Sie richtet sich an Platform-, Infrastruktur- und Betriebsteams mit Kubernetes- und Cozystack-Umgebungen, die messbare Zuverlässigkeit statt ständiger Brandbekämpfung brauchen. Ænix baut diese Praktiken in das Plattformfundament ein, statt sie nachträglich aufzusetzen, und kann die Arbeit mit jeder Ænix-Plattform verbinden oder eigenständig erbringen. Die Formen der Zusammenarbeit reichen von einem Architektur-Review über 5–10 Tage über eine Umsetzung von 3–9 Monaten in Ihrem Team bis zu einem Managed-Engagement, bei dem Ænix die Rufbereitschaft mitträgt.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein SRE-Consulting-Projekt, das SLOs, Error Budgets, Incident Response und Zuverlässigkeitspraktiken für produktive Kubernetes- und Cozystack-Umgebungen etabliert."
   - label: "Für wen"
     value: "Platform-, Infrastruktur- und Betriebsteams mit Produktion im großen Maßstab, die messbare Zuverlässigkeit statt reaktiver Brandbekämpfung brauchen."
   - label: "Formen der Zusammenarbeit"
-    value: "Assessment (5–10 Tage), Umsetzung (3–9 Monate in Ihrem Team) oder Managed-Engagement mit Ænix als Partner in der Rufbereitschaft."
+    value: "Architektur-Review (5–10 Tage), Umsetzung (3–9 Monate in Ihrem Team) oder Managed-Engagement mit Ænix als Partner in der Rufbereitschaft."
   - label: "Kernpraktiken"
     value: "SLO-Design, Error-Budget-Frameworks, Incident Command und Blameless Post-Mortems, Observability für Zuverlässigkeit, Kapazitätsplanung, Abbau von Toil (Ziel: unter 50 %)."
   - label: "Lizenz"
@@ -32,13 +32,13 @@ faq:
   - q: "Muss ich eine Ænix-Plattform einsetzen, um SRE Consulting zu erhalten?"
     a: "Nein. SRE Consulting gibt es auch eigenständig. Es lässt sich mit jeder Ænix-Plattform verbinden, wenn Sie die Zuverlässigkeitspraktiken direkt an die produktive Plattform koppeln möchten, die Sie betreiben — Voraussetzung ist die Plattform aber nicht."
   - q: "Wie lange dauert ein SRE-Projekt?"
-    a: "Das hängt von der Form ab. Ein Reifegrad-Assessment dauert 5–10 Tage, eine Umsetzung in Ihrem Team 3–9 Monate, während das Team die Praktiken aufbaut, und ein Managed-Engagement läuft fortlaufend mit Ænix als Partner in der Rufbereitschaft."
-  - q: "Was liefert ein SRE-Assessment konkret?"
-    a: "Das Assessment über 5–10 Tage bewertet Ihren aktuellen SRE-Reifegrad und definiert einen Zielzustand. Es zeigt, wo SLOs, Error Budgets, Incident Response, Observability und der Abbau von Toil heute stehen und was nötig ist, um auch im großen Maßstab zuverlässig zu betreiben."
+    a: "Das hängt von der Form ab. Ein Architektur-Review dauert 5–10 Tage, eine Umsetzung in Ihrem Team 3–9 Monate, während das Team die Praktiken aufbaut, und ein Managed-Engagement läuft fortlaufend mit Ænix als Partner in der Rufbereitschaft."
+  - q: "Was liefert das Architektur-Review konkret?"
+    a: "Das Architektur-Review über 5–10 Tage bewertet Ihren aktuellen SRE-Reifegrad und definiert einen Zielzustand. Es zeigt, wo SLOs, Error Budgets, Incident Response, Observability und der Abbau von Toil heute stehen und was nötig ist, um auch im großen Maßstab zuverlässig zu betreiben."
   - q: "Wie geht Ænix SLOs und Error Budgets an?"
     a: "SLOs entstehen gemeinsam mit den Produktteams, pro Service und ausgerichtet an den Auswirkungen auf die Nutzer. Der Verbrauch des Error Budgets steuert dann die Priorisierung: Zuverlässigkeitsarbeit und Feature-Arbeit werden gegen ein vereinbartes, messbares Budget abgewogen statt nach Meinung."
   - q: "Funktioniert SRE Consulting mit Cozystack?"
-    a: "Ja. Ænix ist das Team hinter Cozystack, der Open-Source-CNCF-Plattform auf Basis von Kubernetes, KubeVirt, Cilium und LINSTOR. Die SRE-Praktiken sind in das Plattformfundament eingebaut und passen daher von Haus aus zu Cozystack-Umgebungen."
+    a: "Ja. Ænix hat Cozystack entwickelt und pflegt es mit — die Open-Source-CNCF-Plattform auf Basis von Kubernetes, KubeVirt, Cilium und LINSTOR. Die SRE-Praktiken sind in das Plattformfundament eingebaut und passen daher von Haus aus zu Cozystack-Umgebungen."
 ---
 
 **Site Reliability Engineering überträgt als Disziplin das Software-Engineering auf den Betrieb. Das SRE-Projekt von Ænix umfasst SLOs, Error Budgets, Incident Response und die Betriebspraktiken, die Produktion im großen Maßstab zuverlässig halten — eingebaut in das Plattformfundament, nicht nachträglich aufgesetzt.**
@@ -83,9 +83,11 @@ Für einen breiteren DevOps-Umfang siehe **[DevOps-Consulting](/de/dienstleistun
 
 ## Formen der Zusammenarbeit
 
-- Assessment (5–10 Tage) — aktueller SRE-Reifegrad und Zielzustand
+- Architektur-Review (5–10 Tage) — aktueller SRE-Reifegrad und Zielzustand
 - Umsetzung (3–9 Monate) — in Ihrem Team, Aufbau der Praktiken
 - Managed-Engagement — Ænix als Partner in der Rufbereitschaft
+
+Für die vollständige Variante siehe das **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 oder 28 Tage).
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
@@ -93,4 +95,4 @@ Für einen breiteren DevOps-Umfang siehe **[DevOps-Consulting](/de/dienstleistun
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

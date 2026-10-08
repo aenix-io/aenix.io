@@ -1,6 +1,6 @@
 ---
 title: "Cozystack — Open-Source-Cloud-Plattform auf Kubernetes"
-description: "Cozystack ist eine Open-Source-Cloud-Plattform (CNCF) auf Kubernetes für VMs, Container, Datenbanken, S3 und GPUs. Von Ænix initiiert; Support ab 1.250 USD."
+description: "Cozystack ist eine Open-Source-Cloud-Plattform (CNCF) auf Kubernetes für VMs, Container, Datenbanken, S3 und GPUs. Von Ænix entwickelt; Support ab 1.250 USD."
 related_pages:
   - /de/produkte/cozystack-enterprise-support/
   - /de/preise/
@@ -14,7 +14,7 @@ hreflang_en: /products/cozystack/
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Cozystack-Konsole — Self-Service-Katalog"
 direct_answer: |
-  **Cozystack ist eine Open-Source-Cloud-Plattform auf Kubernetes, die virtuelle Maschinen, Container, Managed Databases, S3-Object-Storage und GPU-Workloads auf Ihrem eigenen Bare Metal betreibt — unter einer Kubernetes-nativen Control Plane mit Mandantenisolation. Sie steht unter der Apache-2.0-Lizenz ohne Gebühren pro CPU oder Core und ist ein CNCF-Projekt (Sandbox seit Februar 2025; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung). Ænix hat Cozystack initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Cozystack eignet sich für Service Provider, regulierte Unternehmen, Telekommunikationsbetreiber und Plattform-Teams, die eine selbst betriebene Alternative zu proprietärer Virtualisierung und Public Cloud suchen. Ænix verkauft Enterprise-Support für selbst betriebenes Cozystack (ab 1.250 USD pro 10 Nodes und Monat), drei darauf aufbauende kommerzielle Plattformen sowie Projektleistungen.**
+  **Cozystack ist eine Open-Source-Cloud-Plattform auf Kubernetes, die virtuelle Maschinen, Container, Managed Databases, S3-Object-Storage und GPU-Workloads auf Ihrem eigenen Bare Metal betreibt — unter einer Kubernetes-nativen Control Plane mit Mandantenisolation. Sie steht unter der Apache-2.0-Lizenz ohne Gebühren pro CPU oder Core und ist ein CNCF-Projekt (Sandbox seit Februar 2025; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung). Ænix hat Cozystack entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Cozystack eignet sich für Service Provider, regulierte Unternehmen, Telekommunikationsbetreiber und Plattform-Teams, die eine selbst betriebene Alternative zu proprietärer Virtualisierung und Public Cloud suchen. Ænix verkauft Enterprise-Support für selbst betriebenes Cozystack (ab 1.250 USD pro 10 Nodes und Monat), drei darauf aufbauende kommerzielle Plattformen sowie Projektleistungen.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine Open-Source-Cloud-Plattform, Kubernetes-nativ, die VMs, Container, Managed Databases, S3 und GPU-Workloads auf Bare Metal unter einer mandantenfähigen Control Plane betreibt."
@@ -27,7 +27,7 @@ quick_facts:
   - label: "Für wen"
     value: "Service Provider, regulierte Unternehmen (DORA/NIS2), Telekommunikationsbetreiber, AI-/GPU-Betreiber und Enterprise-Plattform-Teams, die eine selbst betriebene Private Cloud aufbauen."
   - label: "Kommerzielles Angebot"
-    value: "Ænix verkauft Enterprise-Support für selbst betriebenes Cozystack und Abonnements der Ænix Public Cloud Platform auf denselben Stufen — Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD pro 10 Nodes und Monat, Enterprise individuell. Private Cloud und AI Platform werden per RFP angeboten."
+    value: "Ænix verkauft Enterprise-Support für selbst betriebenes Cozystack als dasselbe Abonnement wie die Ænix Public Cloud Platform (kommerzielle Module inklusive, Nutzung optional) — Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD pro 10 Nodes und Monat, Enterprise individuell. Private Cloud und AI Platform werden per RFP angeboten."
 faq:
   - q: "Ist Cozystack kostenlos nutzbar?"
     a: "Ja. Cozystack ist Open Source unter Apache 2.0, ohne Lizenzkosten pro CPU oder Core; jeder kann es auf eigenen oder gemieteten Servern betreiben. Die kommerziellen Plattformen, der Support und die Services von Ænix sind optional."
@@ -40,10 +40,10 @@ faq:
   - q: "Welche Hardware unterstützt Cozystack?"
     a: "Cozystack läuft auf handelsüblichen x86-Servern. Bare Metal wird bevorzugt, der Betrieb auf VMs ist aber möglich. Als Storage stehen LINSTOR (DRBD), SeaweedFS und SAN-Systeme von Herstellern zur Verfügung."
   - q: "Wir betreiben Cozystack bereits. Können wir Support kaufen?"
-    a: "Ja. Enterprise-Support für selbst betriebenes Cozystack wird nach den veröffentlichten Stufen verkauft: Basic 1.250 USD, Standard 3.000 USD und Plus 5.500 USD pro 10 physische Nodes und Monat bei jährlicher Abrechnung sowie eine individuelle Enterprise-Stufe. Dieselben Stufen gelten für Abonnements der Ænix Public Cloud Platform. Basic und Standard decken die Geschäftszeiten ab, Plus und Enterprise rund um die Uhr (24×7)."
+    a: "Ja. Enterprise-Support für selbst betriebenes Cozystack wird nach den veröffentlichten Stufen verkauft: Basic 1.250 USD, Standard 3.000 USD und Plus 5.500 USD pro 10 physische Nodes und Monat bei jährlicher Abrechnung sowie eine individuelle Enterprise-Stufe. Es ist dasselbe Abonnement wie bei der Ænix Public Cloud Platform: Jede Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration), die ein Team mit selbst betriebenem Cozystack einfach ungenutzt lässt. Basic und Standard decken die Geschäftszeiten ab, Plus und Enterprise rund um die Uhr (24×7)."
 ---
 
-**Cozystack ist eine Open-Source-Cloud-Plattform und ein CNCF-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt virtuelle Maschinen, Container, Managed Databases, S3-Object-Storage und GPU-Workloads auf Ihrem eigenen Bare Metal — unter einer Kubernetes-nativen Control Plane mit Mandantenisolation. Apache-2.0-Lizenz, derzeit CNCF Sandbox (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung), CNCF Certified Kubernetes Distribution, CNCF Kubernetes AI Conformance, OpenSSF-Best-Practices-Badge.**
+**Cozystack ist eine Open-Source-Cloud-Plattform und ein CNCF-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt virtuelle Maschinen, Container, Managed Databases, S3-Object-Storage und GPU-Workloads auf Ihrem eigenen Bare Metal — unter einer Kubernetes-nativen Control Plane mit Mandantenisolation. Apache-2.0-Lizenz, derzeit CNCF Sandbox (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung), CNCF Certified Kubernetes Distribution, CNCF Kubernetes AI Conformance, OpenSSF-Best-Practices-Badge.**
 
 Diese Seite erklärt Cozystack aus Sicht von Ænix: was das Projekt ist und wie Ænix es kommerziell unterstützt. Das Projekt selbst finden Sie unter **[cozystack.io](https://cozystack.io)** mit Dokumentation, Installationsanleitungen und Community. Die kommerziellen Plattformen auf Basis von Cozystack finden Sie unter **[die Ænix-Plattformen](/de/produkte/)**.
 
@@ -78,7 +78,7 @@ PostgreSQL (CloudNativePG), MariaDB, MongoDB, ClickHouse, Valkey, OpenSearch, Ka
 S3-kompatibler Storage auf Basis von SeaweedFS für Backups, Anwendungen und AI-Trainingsdaten.
 
 **GPU as a Service**
-NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough an VMs, anteilige Nutzung über HAMi. MIG und Time-Slicing stehen auf der Roadmap.
+NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi; MIG und Time-Slicing stehen auf der Roadmap.
 
 **Cilium-Networking**
 eBPF-nativ, Network Policies, MetalLB, BGP. Ersetzt Funktionen, die bei VMware NSX bereitstellt.
@@ -116,7 +116,7 @@ Cozystack Dashboard für Self-Service, mit Branding zur Laufzeit für White-Labe
 <div class="advantage-panel">
 
 - **Cozystack** — Open-Source-Cloud-Plattform. CNCF-Projekt (derzeit Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung). Apache 2.0. Von der Community gesteuert, mit Maintainern aus mehreren Unternehmen. Jeder kann es einsetzen, dazu beitragen oder forken.
-- **Ænix** — das Unternehmen, das Cozystack initiiert hat und zu seinen Maintainern gehört. Verkauft Support für Cozystack, drei darauf aufbauende kommerzielle Plattformen und Projektleistungen.
+- **Ænix** — das Unternehmen, das Cozystack entwickelt hat und mitpflegt. Verkauft Support für Cozystack, drei darauf aufbauende kommerzielle Plattformen und Projektleistungen.
 - **Die Ænix-Plattformen** — [Public Cloud](/de/produkte/public-cloud-platform/), [Private Cloud](/de/produkte/private-cloud-platform/) und [AI Platform](/de/produkte/ai-platform/): Cozystack plus proprietäre Ænix-Module, ein produktisierter Installer, Projektleistungen und ein Enterprise-SLA. **[Plattformen vergleichen →](/de/produkte/)**
 - **cozystack.io** — offizielle Projektseite. Dokumentation, Installation, Releases, Community. Herstellerneutral.
 - **aenix.io** (diese Website) — das kommerzielle Angebot von Ænix.
@@ -170,7 +170,7 @@ Geeignet, wenn Ihr Team die Kubernetes-Expertise für den Betrieb mitbringt und 
 
 ### Weg 2: Cozystack läuft schon? Enterprise-Support dazunehmen
 
-Wenn Cozystack bereits produktiv läuft, stellt Ihnen der Enterprise-Support von Ænix die Maintainer für Ihre Cluster in Bereitschaft. Die Preise folgen der veröffentlichten Liste — Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD pro 10 physische Nodes und Monat bei jährlicher Abrechnung, Enterprise individuell — dieselben Stufen, die für Abonnements der Ænix Public Cloud Platform gelten. Die Stufen umfassen Reaktionszeiten (SLA) für Incidents, CVE-Fixes, begleitete Upgrades ab Standard und 24×7-Abdeckung ab Plus.
+Wenn Cozystack bereits produktiv läuft, stellt Ihnen der Enterprise-Support von Ænix die Maintainer für Ihre Cluster in Bereitschaft. Die Preise folgen der veröffentlichten Liste — Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD pro 10 physische Nodes und Monat bei jährlicher Abrechnung, Enterprise individuell. Es ist dasselbe Abonnement wie bei der Ænix Public Cloud Platform: Jede Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration), die ein Team mit selbst betriebenem Cozystack einfach ungenutzt lässt. Die Stufen umfassen Reaktionszeiten (SLA) für Incidents, CVE-Fixes, begleitete Upgrades ab Standard und 24×7-Abdeckung ab Plus.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/produkte/cozystack-enterprise-support/">Enterprise-Support für Cozystack →</a>
@@ -196,7 +196,7 @@ Für konkrete Anwendungsfälle siehe:
 
 Cozystack ist **kostenlos** (Apache 2.0). Jeder kann es betreiben.
 
-Enterprise-Support für selbst betriebenes Cozystack und Abonnements der Ænix Public Cloud Platform nutzen dieselben vier Stufen: Basic 1.250 USD, Standard 3.000 USD und Plus 5.500 USD pro 10 physische Nodes und Monat bei jährlicher Abrechnung sowie eine individuelle Enterprise-Stufe. Die Ænix Private Cloud Platform und die Ænix AI Platform werden per RFP angeboten.
+Enterprise-Support für selbst betriebenes Cozystack ist dasselbe Abonnement wie die Ænix Public Cloud Platform, mit vier Stufen: Basic 1.250 USD, Standard 3.000 USD und Plus 5.500 USD pro 10 physische Nodes und Monat bei jährlicher Abrechnung sowie eine individuelle Enterprise-Stufe. Jede Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration); wer Cozystack selbst betreibt, lässt sie einfach ungenutzt. Die Ænix Private Cloud Platform und die Ænix AI Platform werden per RFP angeboten.
 
 <div class="cta-row">
   <a class="cta-secondary" href="/de/preise/">Preisdetails →</a>
@@ -220,4 +220,4 @@ Enterprise-Support für selbst betriebenes Cozystack und Abonnements der Ænix P
 
 ---
 
-*Cozystack ist ein CNCF-Projekt (derzeit CNCF Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung), Apache 2.0. Ænix hat Cozystack initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Cozystack ist ein CNCF-Projekt (derzeit CNCF Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung), Apache 2.0. Ænix hat Cozystack entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

@@ -60,7 +60,7 @@ faq:
 
 **Eine VMware-Migration nach Broadcom ist ein geplantes Projekt, kein Notfall. Gut umgesetzt liefert sie eine Plattform, die Sie kontrollieren, und in den von uns modellierten Projekten eine Kostenreduktion von 30–60 % bei den migrierten Workloads. Schlecht umgesetzt produziert sie operative Altlasten und eine stockende Migration, die zum Notfall des nächsten Jahres wird. Den Unterschied machen ein strukturiertes Assessment, eine ehrliche TCO-Modellierung und Engineers, die das bereits produktiv umgesetzt haben.**
 
-Ænix führt VMware-Migrationen für Organisationen, die VCF verlassen, durchgängig durch. Die Engineers, die [Cozystack](/de/produkte/cozystack/) initiiert haben und mitpflegen — die Zielplattform, die wir typischerweise empfehlen —, arbeiten bei Assessment, Reihenfolgeplanung und Umsetzung mit Ihrem Team zusammen.
+Ænix führt VMware-Migrationen für Organisationen, die VCF verlassen, durchgängig durch. Die Engineers, die [Cozystack](/de/produkte/cozystack/) entwickelt haben und mitpflegen — die Zielplattform, die wir typischerweise empfehlen —, arbeiten bei Assessment, Reihenfolgeplanung und Umsetzung mit Ihrem Team zusammen.
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für alle, die Cloud verkaufen — Hoster, die VMware Cloud Director verlassen (das häufigste Muster 2026), MSPs, Telcos, nationale Betreiber; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die VCF für den Eigenbedarf ablösen. Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
@@ -235,7 +235,7 @@ Zur Wahl des Ziels siehe **[VMware-Alternative](/de/alternativen/vmware-alternat
 
 ## Warum Ænix für die VMware-Migration
 
-- **Erfahrung direkt aus Cozystack.** Wir haben die Zielplattform, auf der viele Migrationen landen, initiiert und pflegen sie mit. Unsere Aufwandsschätzungen für die Umsetzung beruhen auf Projekten, die wir abgeschlossen haben.
+- **Erfahrung direkt aus Cozystack.** Wir haben die Zielplattform, auf der viele Migrationen landen, entwickelt und pflegen sie mit. Unsere Aufwandsschätzungen für die Umsetzung beruhen auf Projekten, die wir abgeschlossen haben.
 - **Keine Hyperscaler-Voreingenommenheit.** Unsere Empfehlungen folgen der technischen Eignung, nicht Partner-Provisionen. Wenn es richtig ist, sagen wir „bleiben Sie in der Cloud“.
 - **Teams in der EU und in Zentralasien.** Engineering-Teams in der EU und in Zentralasien; EU-Verträge über die AENIX s.r.o. (Tschechien).
 - **Open-Source-Ziel.** Cozystack steht unter Apache 2.0; Sie betreiben die Plattform, auf die Sie migrieren, ohne Lizenzkosten für die Plattform.
@@ -255,7 +255,7 @@ Zur Wahl des Ziels siehe **[VMware-Alternative](/de/alternativen/vmware-alternat
 | Tag 14 (oder 28) | Abschlusspräsentation für die Geschäftsführung — schriftlicher Plan |
 | Monate 1–3 | Fundament der Zielplattform |
 | Monate 3–12 | Workload-Kohorten ziehen um (Takt ausgerichtet an den VCF-Laufzeiten) |
-| Monate 12–24 | Rückbau von VMware abgeschlossen |
+| Monate 12–24 | Bei größeren Beständen (~1.000 VMs): Rückbau von VMware abgeschlossen |
 
 Ein Bestand mit 100 VMs ist typischerweise in 8–12 Monaten migriert, einer mit 1.000 VMs in 18–24 Monaten.
 
@@ -309,4 +309,4 @@ Das Platform Readiness Assessment hat einen Festpreis (14 oder 28 Tage). Die Ums
 
 ---
 
-*Ænix hat Cozystack initiiert (ein CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an — Public Cloud, Private Cloud und AI.*
+*Ænix hat Cozystack entwickelt (ein CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an — Public Cloud, Private Cloud und AI.*

@@ -26,12 +26,12 @@ quiz:
         - { text: "Their fees are too high to allow objective analysis", correct: false }
         - { text: "Their integration revenue follows hyperscaler partnerships", correct: true }
       explanation: "Deloitte, KPMG, EY, PwC each have hyperscaler partnership programmes; most engagements end with hyperscaler-aligned modernization plans because that's where integration revenue follows. Vendor-neutral by marketing, vendor-aligned by economics."
-    - q: "What does the article say Aenix will explicitly do when trade-offs warrant it?"
+    - q: "What does the article say Ænix will explicitly do when trade-offs warrant it?"
       options:
-        - { text: "Always recommend Aenix Platform regardless of fit", correct: false }
+        - { text: "Always recommend an Ænix platform regardless of fit", correct: false }
         - { text: "Recommend staying on hyperscaler in writing", correct: true }
         - { text: "Hand the engagement off to a Big-4 firm", correct: false }
-      explanation: "Aenix's vendor-neutral position means they will write 'stay on hyperscaler' when warranted. The downside-incentive — engagements that end with no follow-on Aenix platform work — is real, and that's how vendor-neutrality is supposed to operate."
+      explanation: "Ænix's vendor-neutral position means they will write 'stay on hyperscaler' when warranted. The downside-incentive — engagements that end with no follow-on Ænix platform work — is real, and that's how vendor-neutrality is supposed to operate."
     - q: "What's the page-count range of the synthesised strategy deliverable described in the article?"
       options:
         - { text: "Ten to fifteen pages of focused summary", correct: false }
@@ -43,7 +43,7 @@ quiz:
         - { text: "Strategy is tactical while PRA is strategic", correct: false }
         - { text: "They are the same product under different names", correct: false }
         - { text: "PRA is tactical; Strategy defines target and substrate", correct: true }
-      explanation: "PRA = tactical, used when strategic direction is settled, produces a 14-28 day remediation plan. Cloud Strategy = strategic, used when the direction is still in question, defines target architecture and substrate position. Most customers engage strategy first, then assessment, then implementation."
+      explanation: "PRA = tactical, used when strategic direction is settled, runs 14 or 28 days and produces a remediation plan. Cloud Strategy = strategic, used when the direction is still in question, defines target architecture and substrate position. Most customers engage strategy first, then assessment, then implementation."
 ---
 
 
@@ -201,7 +201,7 @@ sponsor distribution.
 
 ## Engagement variants
 
-- **4-week strategic assessment** — narrower scope, fixed-price,
+- **28-day strategic assessment** — narrower scope, fixed-price,
   single workload portfolio segment
 - **8-week strategy engagement** — full five-workstream scope, fixed-
   price
@@ -260,8 +260,8 @@ Poor fit:
 The two engagements have overlapping scope but different purpose:
 
 - **Platform Readiness Assessment** is *tactical* — assesses current
-  state against a target architecture, produces a 14-28 day
-  remediation plan. Used when the strategic direction is settled.
+  state against a target architecture in 14 or 28 days and produces
+  a remediation plan. Used when the strategic direction is settled.
 - **Cloud Strategy Consultancy** is *strategic* — defines the target
   architecture and substrate position. Used when the strategic
   direction is still in question.

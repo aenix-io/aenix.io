@@ -13,7 +13,7 @@ companion_landing: "/alternatives/vmware-alternative/"
 quiz:
   title: "Test yourself: VMware replacement essentials"
   questions:
-    - q: "According to the article, what kind of price increases on VCF renewal does Aenix observe across its customer pipeline?"
+    - q: "According to the article, what kind of price increases on VCF renewal does Ænix observe across its customer pipeline?"
       options:
         - { text: "2× to 5× over previous spend", correct: true }
         - { text: "10–25% over previous spend", correct: false }
@@ -40,17 +40,17 @@ quiz:
         - { text: "DR cutover validation testing", correct: false }
         - { text: "Cozystack deployed in parallel", correct: true }
       explanation: "The migration runs: discovery & assessment → Cozystack deployed in parallel on new or repurposed hardware → VM-by-VM image migration → network and storage cutover → validation and DR cutover → VMware decommission. No big-bang cutover."
-    - q: "According to the article, how long does a VMware migration take for an estate under 100 VMs?"
+    - q: "According to the article, how long does a VMware migration take for an estate of about 100 VMs?"
       options:
         - { text: "6-12 weeks end-to-end, the whole estate decommissioned", correct: false }
-        - { text: "First production cohort in 6-12 weeks; whole estate 7-10 months", correct: true }
-        - { text: "16-25 months regardless of estate size", correct: false }
-      explanation: "The article separates two numbers deliberately. The first production cohort runs 6-12 weeks after kickoff, which is when the platform stops being a proof of concept; decommissioning the whole estate takes 7-10 months under 100 VMs and longer above that. Quoting the cohort figure as the estate figure is how migration plans slip."
+        - { text: "First production cohort in 6-12 weeks; whole estate about 8-12 months", correct: true }
+        - { text: "3-4 years regardless of estate size", correct: false }
+      explanation: "The article separates two numbers deliberately. The first production cohort runs 6-12 weeks after kickoff, which is when the platform stops being a proof of concept; the whole estate takes about 8-12 months for ~100 VMs and 18-24 months for ~1,000 VMs, including planning and migration waves. Quoting the cohort figure as the estate figure is how migration plans slip."
 hreflang_de: /de/blog/2026/05/vmware-ablosung-nach-broadcom/
 ---
 
 
-After Broadcom, the VMware bill stopped being predictable. Subscription-only licensing, mandatory VCF bundling, two-to-five-times price increases on renewal, and the end of perpetual licenses changed the math for every infrastructure team running VMware at scale. The result has been a documented wave of VMware replacement projects across service providers, banks, government, telecom, and AI/GPU operators evaluating how to exit VMware safely.
+After Broadcom, the VMware bill stopped being predictable. Subscription-only licensing, mandatory VCF bundling, two-to-five-times price increases on renewal, and the end of perpetual licences changed the math for every infrastructure team running VMware at scale. The result has been a documented wave of VMware replacement projects across service providers, banks, government, telecom, and AI/GPU operators evaluating how to exit VMware safely.
 
 ---
 
@@ -67,7 +67,7 @@ If you're scoping the market, here is how Cozystack compares to the most-cited a
 - **Microsoft Azure Stack HCI** — Hyper-V on validated hardware. Locks into Microsoft licensing.
 - **Verge.io / Spectro Cloud / Platform9** — vendor-led KubeVirt or hyperconverged stacks; comparable to Cozystack on architecture, different commercial models.
 
-The rest of this page goes deep on Cozystack as a Cozystack-specific VMware replacement. For a head-to-head listicle, see [VMware alternatives](/alternatives/vmware-alternatives/).
+The rest of this page goes deep on Cozystack as a Cozystack-specific VMware replacement. For a head-to-head comparison of VMware alternatives, see [VMware alternatives](/alternatives/vmware-alternatives/).
 
 ---
 
@@ -79,7 +79,7 @@ The technical case for moving off VMware existed before Broadcom. Broadcom turne
 
 VCF subscription pricing replaced perpetual licensing. Renewal quotes have come back at 2× to 5× prior spend across our pipeline. ELAs have been broken or restructured mid-term. Standalone vSphere SKUs were retired in favour of bundled VCF tiers that include components most customers do not need.
 
-For service providers, this collapses margin: end-customer prices are sticky, license costs are not. For banks and regulated enterprises, it breaks multi-year capex planning that was built around perpetual entitlements.
+For service providers, this collapses margin: end-customer prices are sticky, licence costs are not. For banks and regulated enterprises, it breaks multi-year capex planning that was built around perpetual entitlements.
 
 ### 2. Vendor lock-in across the stack
 
@@ -107,9 +107,9 @@ Cozystack is a single platform you install on bare metal. Once it's up, you have
 - **Tenant Kubernetes clusters** for customers who want containers — every tenant gets their own K8s, isolated.
 - **Managed databases** — PostgreSQL, MariaDB, MongoDB, Redis, Valkey, RabbitMQ, Kafka, NATS, ClickHouse, OpenSearch, Qdrant, FoundationDB — exposed as cloud services your tenants self-provision.
 - **S3-compatible object storage** — for backups, application data, and AI training sets.
-- **GPU as a service** — for VMs (VFIO passthrough, or NVIDIA vGPU with an NVIDIA licence) and for Kubernetes pods (whole-GPU through the NVIDIA GPU Operator, fractional sharing through HAMi). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator.
+- **GPU as a service** — for VMs (passthrough of whole GPUs, or NVIDIA vGPU, which requires your NVIDIA vGPU licence) and for Kubernetes pods (whole-GPU through the NVIDIA GPU Operator, fractional sharing through HAMi). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator; MIG and time-slicing are on the roadmap.
 - **Multi-tenant control plane** — `Tenant` Kubernetes CRD, nested tenants, per-tenant quotas and presets.
-- **Observability built in** — VictoriaMetrics + VictoriaLogs, no Prometheus/Loki licensing trap.
+- **Observability built in** — VictoriaMetrics + VictoriaLogs, open source and included.
 - **Backup and DR** — Velero + S3 + per-database point-in-time recovery for managed services.
 - **Self-service portal** — Cozystack Dashboard. Billing runs in your own system or through the Ænix [WHMCS integration](/products/whmcs-integration/), a proprietary Ænix module (two integration modes) that is not part of open-source Cozystack.
 
@@ -129,7 +129,7 @@ The questions every VMware admin asks first: *"What replaces vSphere? What's a r
 | **NSX** | Cilium (eBPF) | NSX alternative — native L4/L7, network policies, observability, no NSX licensing |
 | **vCloud Director (vCD)** | Tenant CRD + Cozystack Dashboard | vCloud Director alternative — multi-tenancy, self-service, quotas, RBAC |
 | **vRealize / Aria Operations** | VictoriaMetrics + VictoriaLogs + Grafana | Aria Operations alternative — open-source observability stack |
-| **Site Recovery Manager (SRM)** | Velero + S3 + PostgreSQL PITR | SRM alternative — backup-based DR; replication for stateful services |
+| **Site Recovery Manager (SRM)** | Velero + S3 + PostgreSQL PITR | Backup and restore with rehearsed runbooks; replication for stateful services. No SRM-style orchestrated cross-site failover |
 | **Horizon (VDI)** | Not in scope of Cozystack | Pair with KasmWorkspaces or similar; talk to us about reference designs |
 | **Tanzu Kubernetes Grid** | Tenant Kubernetes (native) | Tanzu alternative — each tenant gets a real K8s control plane |
 | **vRealize Automation / vRA** | ApplicationDefinition + portal catalog | vRA alternative — self-service service catalog, GitOps-native |
@@ -161,11 +161,11 @@ Networking: VLAN mapping into Cilium, with policy parity checked against the sou
 
 ### 5. Validation and DR cutover
 
-Each migrated workload runs in parallel on Cozystack until validated by the application owner. DR plans (Velero, PostgreSQL PITR) replace SRM playbooks before final cutover.
+Each migrated workload runs in parallel on Cozystack until validated by the application owner. Backup-and-restore runbooks (Velero, PostgreSQL PITR) are written and rehearsed before final cutover; there is no SRM-style orchestrated cross-site failover.
 
 ### 6. VMware decommission
 
-Licenses end on their own terms. Hardware repurposed into the Cozystack cluster (we run on commodity x86 — your existing servers usually qualify).
+Licences end on their own terms. Hardware repurposed into the Cozystack cluster (we run on commodity x86 — your existing servers usually qualify).
 
 For OpenStack, CloudStack, and Proxmox sources the same playbook applies, with different image-import and network-mapping steps.
 
@@ -190,7 +190,7 @@ Cozystack was built for service providers first. The same model works for any or
 
 | Capability | VMware (VCF, post-Broadcom) | Cozystack + Ænix |
 |---|---|---|
-| **License model** | Subscription only (VCF bundles) | Apache 2.0 open source + optional Ænix support tier |
+| **Licence model** | Subscription only (VCF bundles) | Apache 2.0 open source + optional Ænix support tier |
 | **Renewal risk** | 2–5× increases observed; bundling forced | Predictable support pricing; OSS code remains usable regardless |
 | **Compute** | vSphere / ESXi | KubeVirt (KVM-based) |
 | **Live migration** | Yes (incl. with GPU under vGPU) | Yes (CPU); GPU live migration not supported (industry-wide limitation, not Cozystack-specific) |
@@ -198,14 +198,14 @@ Cozystack was built for service providers first. The same model works for any or
 | **Network** | NSX (proprietary) | Cilium (CNCF Graduated, eBPF) |
 | **Multi-tenancy** | vCloud Director | Tenant CRD; native to Kubernetes |
 | **Service catalog** | vRealize Automation / Aria | ApplicationDefinition + Cozystack Dashboard |
-| **Backup / DR** | Site Recovery Manager (SRM) | Velero + S3 + PostgreSQL PITR |
-| **GPU for VMs** | NVIDIA vGPU under Horizon | NVIDIA vGPU + KubeVirt (NVIDIA Enterprise license required) |
+| **Backup / DR** | Site Recovery Manager (SRM) | Velero + S3 + PostgreSQL PITR with rehearsed runbooks; no SRM-style orchestrated failover |
+| **GPU for VMs** | NVIDIA vGPU under Horizon | NVIDIA vGPU + KubeVirt (requires your NVIDIA vGPU licence); passthrough of whole GPUs |
 | **GPU for containers** | Tanzu (limited) | Whole-GPU via NVIDIA GPU Operator; fractional sharing (GPU memory + cores) via HAMi — Kubernetes-native |
 | **Observability** | vRealize / Aria (licensed separately) | VictoriaMetrics + VictoriaLogs (OSS, included) |
 | **Ops model** | Vendor support requires environment access | Your choice: advisory + runbooks + GitOps PR review with no cluster access, or remote access with your approval |
 | **Sovereignty** | Closed source, US vendor | Open source, hosted on your hardware, EU contracting entity (AENIX s.r.o.) |
 | **Air-gap install** | Supported (additional licensing) | Supported (no additional cost) |
-| **Compliance posture** | Customer responsibility on top of VCF | Architecture aligned with DORA / NIS2 controls; CNCF Certified Kubernetes, CNCF Kubernetes AI Conformance, OpenSSF Best Practices; AENIX s.r.o. holds [ISO/IEC 27001](/compliance/iso-27001/) |
+| **Compliance posture** | Customer responsibility on top of VCF | Architecture aligned with DORA / NIS2 controls; CNCF Certified Kubernetes distribution, CNCF Kubernetes AI Conformance, OpenSSF Best Practices; AENIX s.r.o. holds [ISO/IEC 27001](/compliance/iso-27001/) |
 | **Pricing transparency** | Quote-driven; non-public | Public pricing on aenix.io/pricing; OSS is free |
 
 ---
@@ -214,11 +214,11 @@ Cozystack was built for service providers first. The same model works for any or
 
 ### Can we keep our existing hardware?
 
-Yes — in most cases. Cozystack runs on commodity x86. The standard scenario is to deploy Cozystack on a new pod of servers, migrate workloads off VMware, then repurpose the freed VMware hardware into Cozystack as licenses lapse.
+Yes — in most cases. Cozystack runs on commodity x86. The standard scenario is to deploy Cozystack on a new pod of servers, migrate workloads off VMware, then repurpose the freed VMware hardware into Cozystack as licences lapse.
 
 ### How long is a typical migration?
 
-Two numbers matter, and conflating them is how migration plans go wrong. The **first production cohort** typically runs in a live environment 6-12 weeks after kickoff — that is when the platform stops being a proof of concept. The **whole estate** takes 7-10 months under 100 VMs, 10-16 months for 100-500, and 16-25 months for 500-2000, assessment through VMware decommission. Small, flat estates land at the short end; vCD- or NSX-heavy regulated ones at the long end, run in cohorts. The driver is rarely raw migration speed — it's regression testing and the parallel-run windows application owners will agree to.
+Two numbers matter, and conflating them is how migration plans go wrong. The **first production cohort** typically runs in a live environment 6-12 weeks after kickoff — that is when the platform stops being a proof of concept. The **whole estate** takes about 8-12 months for ~100 VMs and 18-24 months for ~1,000 VMs, including planning and migration waves, after a 14- or 28-day Platform Readiness Assessment; mid-size estates fall in between, depending on dependencies. Small, flat estates land at the short end; vCD- or NSX-heavy regulated ones at the long end, run in cohorts. The driver is rarely raw migration speed — it's regression testing and the parallel-run windows application owners will agree to.
 
 ### Do you support Windows VMs?
 

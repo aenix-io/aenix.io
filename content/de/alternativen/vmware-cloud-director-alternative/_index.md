@@ -18,7 +18,7 @@ related_pages:
   - /de/ressourcen/vmware-migrations-checkliste/
   - /de/preise/
 direct_answer: |
-  **Eine Alternative zu VMware Cloud Director ersetzt die Schicht, über die ein Service-Provider verkauft: Mandanten-Organisationen, Self-Service, Kataloge und die Anbindung an das Billing, nicht nur den Hypervisor darunter. Die Ænix Public Cloud Platform leistet das für Hosting-Anbieter, MSPs und regionale Clouds, die nach den Änderungen durch Broadcom das VMware Cloud Service Provider Program verlassen. Sie läuft auf Cozystack, einem CNCF-Projekt, das Ænix initiiert hat und mitpflegt. Mandanten werden zu Cozystack-Tenants mit Quotas und Zugriffsrechten, für Reseller verschachtelt. Kunden bestellen über ein Portal in Ihrem Branding VMs, Kubernetes, Managed-Datenbanken, S3 und GPUs. Das Billing läuft über WHMCS oder Ihr eigenes System. Mandanten-VMs wechseln in Kohorten mit Konveyor Forklift, das in der Ænix-Plattform enthalten ist, von vSphere, während die VMware-Umgebung weiterläuft.**
+  **Eine Alternative zu VMware Cloud Director ersetzt die Schicht, über die ein Service-Provider verkauft: Mandanten-Organisationen, Self-Service, Kataloge und die Anbindung an das Billing, nicht nur den Hypervisor darunter. Die Ænix Public Cloud Platform leistet das für Hosting-Anbieter, MSPs und regionale Clouds, die nach den Änderungen durch Broadcom das VMware Cloud Service Provider Program verlassen. Sie läuft auf Cozystack, einem CNCF-Projekt, das Ænix entwickelt hat und mitpflegt. Mandanten werden zu Cozystack-Tenants mit Quotas und Zugriffsrechten, für Reseller verschachtelt. Kunden bestellen über ein Portal in Ihrem Branding VMs, Kubernetes, Managed-Datenbanken, S3 und GPUs. Das Billing läuft über WHMCS oder Ihr eigenes System. Mandanten-VMs wechseln in Kohorten mit Konveyor Forklift, das in der Ænix-Plattform enthalten ist, von vSphere, während die VMware-Umgebung weiterläuft.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein Ersatz für die Service-Provider-Schicht von VMware Cloud Director: Mandantenfähigkeit, Self-Service-Portal, Service-Katalog und Billing-Anbindung, auf der Ænix Public Cloud Platform."
@@ -99,7 +99,7 @@ Ein Katalog in VMware Cloud Director besteht überwiegend aus VMs. Auf der Ænix
 - **Managed Kubernetes**: ein Cluster pro Kunde, mit eigener Control Plane
 - **Managed-Datenbanken und Queues**: PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, MongoDB, OpenSearch, Qdrant
 - **S3-kompatibler Object Storage** für Backups und Anwendungen
-- **GPU-Workloads**: GPUs per Passthrough an VMs oder mit HAMi zwischen Containern geteilt. Siehe [GPU as a Service](/de/loesungen/gpu-as-a-service/)
+- **GPU-Workloads**: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) oder fraktionierte Freigabe zwischen Containern über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Siehe [GPU as a Service](/de/loesungen/gpu-as-a-service/)
 
 </div>
 
@@ -193,4 +193,4 @@ Sagen Sie uns, wie viele Mandanten und VMs Sie auf VMware Cloud Director betreib
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Cozystack ist ein CNCF-Sandbox-Projekt unter Apache 2.0; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung. Ænix liefert es als drei Plattformen auf einer gemeinsamen Engine (Public Cloud, Private Cloud und AI), die sich kombinieren lassen, statt sich gegenseitig auszuschließen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Cozystack ist ein CNCF-Sandbox-Projekt unter Apache 2.0; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung. Ænix liefert es als drei Plattformen auf einer gemeinsamen Engine (Public Cloud, Private Cloud und AI), die sich kombinieren lassen, statt sich gegenseitig auszuschließen.*

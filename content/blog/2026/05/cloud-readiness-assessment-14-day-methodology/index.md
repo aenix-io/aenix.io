@@ -12,7 +12,7 @@ companion_landing: "/services/platform-readiness-assessment/"
 quiz:
   title: "Test yourself: 14-day Cloud Readiness Assessment"
   questions:
-    - q: "How many parallel workstreams structure the Aenix 14-day assessment?"
+    - q: "How many parallel workstreams structure the Ænix 14-day assessment?"
       options:
         - { text: "Four parallel workstreams", correct: true }
         - { text: "Two parallel workstreams", correct: false }
@@ -33,7 +33,7 @@ quiz:
         - { text: "Report drafting begins for delivery", correct: false }
         - { text: "Vendor shortlisting workshop session", correct: false }
       explanation: "Day 10 is the findings checkpoint (60 min). The customer corrects, sharpens, or contests preliminary findings before the final report is drafted on days 11–13. The executive readout is Day 14. Vendor shortlisting only happens in the 28-day variant."
-    - q: "According to the article, why does Aenix push back on pre-decided answers at Day 0?"
+    - q: "According to the article, why does Ænix push back on pre-decided answers at Day 0?"
       options:
         - { text: "It blocks parallel workstream execution", correct: false }
         - { text: "A pre-decided answer turns the report into confirmation bias", correct: true }

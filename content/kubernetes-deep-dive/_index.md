@@ -119,4 +119,4 @@ This course is excellent for active contributors who want production-operations 
 
 ---
 
-*Kubernetes Deep Dive Course is from Ænix — the team behind [Cozystack](https://cozystack.io) (CNCF Project).*
+*Kubernetes Deep Dive Course is from Ænix, which created [Cozystack](https://cozystack.io) (CNCF project) and co-maintains it.*

@@ -7,11 +7,11 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **For SMB and small mid-market organizations — under about 100 employees, single-tenant, with simple infrastructure — Cozystack is usually over-engineering, and Ænix says so openly. Cozystack is built for service providers, regulated enterprises, and multi-tenant cloud builders who need KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR storage, and Tenant-CRD isolation. Most Ænix engagements are with service providers and organisations that run a platform team. SMB and mid-market fit is the exception, driven by regulated-data, sovereignty, or multi-tenant-SaaS triggers rather than generic cloud-platform needs. Ænix offers a free 15-minute fit-check, a fixed-price 14-day Platform Readiness Assessment, and recommends simpler options like Proxmox VE or hyperscaler managed services when Cozystack does not fit.**
+  **For SMB and small mid-market organizations — under about 100 employees, single-tenant, with simple infrastructure — Cozystack is usually over-engineering, and Ænix says so openly. Cozystack is built for service providers, regulated enterprises, and multi-tenant cloud builders who need KubeVirt VMs and containers on one Kubernetes API, Cilium eBPF networking, LINSTOR storage, and Tenant-CRD isolation. Most Ænix engagements are with service providers and organisations that run a platform team. SMB and mid-market fit is the exception, driven by regulated-data, sovereignty, or multi-tenant-SaaS triggers rather than generic cloud-platform needs. Ænix offers a free 30-minute discovery call, a fixed-price Platform Readiness Assessment of 14 or 28 days, and recommends simpler options like Proxmox VE or hyperscaler managed services when Cozystack does not fit.**
 quick_facts:
   - label: "What it is"
     value: "An honest fit guide explaining when Cozystack and Ænix make sense for SMB and mid-market organizations, and when a simpler platform is the right choice."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -20,7 +20,7 @@ quick_facts:
   - label: "How SMB engages"
     value: "Typically through an Ænix Partner (regional MSP or hosting provider) running Ænix Public Cloud Platform; direct Ænix engagement is rarely a fit at SMB scale."
   - label: "First step"
-    value: "Free 15-minute fit-check call, then an optional fixed-price 14-day Platform Readiness Assessment before any implementation."
+    value: "Free 30-minute discovery call, then an optional fixed-price Platform Readiness Assessment (14 or 28 days) before any implementation."
 faq:
   - q: "Is Cozystack a good fit for a small business?"
     a: "Usually not. For single-team, single-tenant SMB under roughly 50 hosts with no platform-engineering function, Cozystack is over-engineering. Simpler options such as Proxmox VE, hyperscaler managed services, or providers like Hetzner and OVHcloud are typically the better fit."
@@ -29,11 +29,11 @@ faq:
   - q: "How does an SMB buy an Ænix platform?"
     a: "Most SMB customers consume cloud as a product from an Ænix Partner (a regional MSP or hosting provider) running Ænix Public Cloud Platform underneath. Direct engagement with Ænix is rarely the right fit at SMB scale."
   - q: "What does Ænix charge?"
-    a: "Support tiers for self-run Cozystack and for Ænix Public Cloud Platform subscriptions are Basic $1,250, Standard $3,000 and Plus $5,500 per 10 nodes per month (billed annually), with Enterprise quoted individually — see the pricing page. Ænix Private Cloud Platform is quoted per RFP. Cozystack itself is open source under Apache 2.0 with no license fees."
+    a: "Support tiers for self-run Cozystack and for Ænix Public Cloud Platform subscriptions are Basic $1,250, Standard $3,000 and Plus $5,500 per 10 nodes per month (billed annually), with Enterprise quoted individually — see the pricing page. Ænix Private Cloud Platform is quoted per RFP. Cozystack itself is open source under Apache 2.0 with no licence fees."
   - q: "Why does Ænix tell SMBs not to use Cozystack?"
     a: "Cozystack is open source and Ænix sells subscriptions and services rather than licences, so building something a customer does not need would damage trust. Being honest upfront and engaging only on right-fit projects protects both the customer and Ænix's reputation."
-  - q: "What does the free fit-check call cover?"
-    a: "A 15-minute, no-pressure conversation where Ænix gives an honest answer on whether Cozystack fits your situation. If it does not, you get a recommendation for a simpler alternative; if it might, the next step is an optional fixed-price 14-day Platform Readiness Assessment."
+  - q: "What does the free discovery call cover?"
+    a: "A 30-minute, no-pressure conversation where Ænix gives an honest answer on whether Cozystack fits your situation. If it does not, you get a recommendation for a simpler alternative; if it might, the next step is an optional fixed-price Platform Readiness Assessment of 14 or 28 days."
 hreflang_de: /de/branchen/mittelstand/
 ---
 
@@ -97,7 +97,7 @@ For these cases — discovery call confirms whether Cozystack fits or whether so
 
 ## What we offer SMB / mid-market
 
-- **15-minute fit-check call** — free, honest, no sales pressure. We tell you whether Cozystack fits or doesn't.
+- **30-minute discovery call** — free, honest, no sales pressure. We tell you whether Cozystack fits or doesn't.
 - **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** (14 days focused or 28 days full, fixed price) — for organizations that want a structured assessment before committing.
 - **Phase 2 implementation** — only if assessment confirms Cozystack fits.
 

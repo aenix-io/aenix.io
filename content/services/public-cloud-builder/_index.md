@@ -16,7 +16,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "Consulting and delivery to launch a customer-facing, multi-tenant public cloud product on the open-source Cozystack platform"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -145,5 +145,5 @@ The logos above are hosting providers running Ænix Public Cloud Platform in pro
 
 ---
 
-*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF-Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
 

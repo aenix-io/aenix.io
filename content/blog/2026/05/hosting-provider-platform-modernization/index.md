@@ -25,12 +25,12 @@ quiz:
         - { text: "At least two years before the first customer", correct: false }
         - { text: "Five years or more before any GA", correct: false }
       explanation: "At provider scale the platform goes live in weeks once hardware is ready, via the productized installer. The beta cohort (3-5 friendlies), limited GA (10-50 customers) and catalogue expansion then run at the provider's commercial pace. Only multi-region national or operator programmes follow a 3-6 month pilot and 9-18 months to full multi-region."
-    - q: "For a mid-size hosting provider (1000-10000 customers), what is the typical operational team size post-launch?"
+    - q: "How does the ISP calculator's default model size platform operations?"
       options:
-        - { text: "Just 1 engineer covering everything", correct: false }
+        - { text: "No engineers — the platform runs itself", correct: false }
         - { text: "More than 50 engineers on the platform", correct: false }
-        - { text: "Around 3 to 7 engineers on the platform", correct: true }
-      explanation: "Mid-size hosting provider (1000-10000 customers): typically 3-7 engineers operating the platform post-launch. Customer pricing typically 30-50% above platform raw cost; break-even on first 50-100 paying customers."
+        - { text: "About 1.3 full-time engineers at 10 nodes, about 2.6 at 40", correct: true }
+      explanation: "The ISP calculator models Cozystack operations in engineer-days per node: about 1.3 full-time engineers at 10 nodes and about 2.6 at 40. Round-the-clock on-call needs more people, or the 24×7 coverage of the Plus tier; customer support is a separate headcount."
     - q: "Which named pitfall is \"operations team sized for 50 customers; signs 200 in Q1\"?"
       options:
         - { text: "Common pitfall — operations understaffed for growth", correct: true }
@@ -84,10 +84,10 @@ The platform itself goes live in weeks once hardware is ready. How fast steps 3-
 For mid-size hosting provider (1000-10000 customers):
 - **Platform investment** — assessment + Cozystack build + WHMCS integration
 - **Hardware** — repurpose existing or new compute; storage; network
-- **Operational team** — typically 3-7 engineers post-launch
+- **Platform operations** — the [ISP calculator](/isp-calculator/)'s default model comes to about 1.3 full-time engineers at 10 nodes and about 2.6 at 40; round-the-clock on-call needs more people, or the 24×7 coverage of the Plus tier. Customer support is a separate headcount
 - **Customer pricing** — typically 30-50% above platform raw cost
 
-Break even on first 50-100 paying customers; positive economics as catalog adoption grows.
+Break-even depends on node count, staffing and ARPU — model it in the [ISP calculator](/isp-calculator/). A small start on existing staff breaks even far earlier than a full programme with a dedicated team; positive economics grow as catalog adoption grows.
 
 ## Common pitfalls
 

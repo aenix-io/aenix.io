@@ -29,7 +29,7 @@ quiz:
         - { text: "Als Big-Bang-Cutover an einem einzigen Wochenende", correct: false }
         - { text: "In Kohorten: Discovery, Zielplattform, Migration, Decommission", correct: true }
         - { text: "In zufälliger Reihenfolge, sobald ein Team Kapazität hat", correct: false }
-      explanation: "Die Migration läuft in Kohorten, nicht im Big Bang: Discovery und Architektur (4–8 Wochen), Aufbau der Zielplattform (2–4 Monate), Workload-Migration in Kohorten (6–18 Monate), anschließend Abbau der alten Infrastruktur."
+      explanation: "Die Migration läuft in Kohorten, nicht im Big Bang: Discovery und Architektur (Platform Readiness Assessment, 14 oder 28 Tage), Aufbau der Zielplattform, Workload-Migration in Kohorten, anschließend Abbau der alten Infrastruktur. Bei einem VMware-Bestand dauert das insgesamt rund 8–12 Monate für ~100 VMs und 18–24 Monate für ~1.000 VMs, einschließlich Planung und Migrationswellen."
     - q: "Welche Fehler nennt der Artikel als die häufigsten im Migrationsvorhaben?"
       options:
         - { text: "Übermäßige Vorbereitung und ein zu detaillierter Architekturplan", correct: false }
@@ -66,10 +66,12 @@ Jede Workload sollte ein Label bekommen:
 ## Migrations-Sequenzierung
 
 Migration läuft in Kohorten, nicht im Big-Bang:
-1. Discovery + Architektur-Design (4-8 Wochen)
-2. Ziel-Plattform-Bereitstellung (2-4 Monate)
-3. Workload-Migration in Kohorten (6-18 Monate)
+1. Discovery + Architektur-Design (Platform Readiness Assessment, 14 oder 28 Tage)
+2. Ziel-Plattform-Bereitstellung
+3. Workload-Migration in Kohorten
 4. Decommission der alten Infrastruktur
+
+Bei einem VMware-Bestand dauert das insgesamt rund 8–12 Monate für ~100 VMs und 18–24 Monate für ~1.000 VMs, einschließlich Planung und Migrationswellen.
 
 ## Häufige Fehler
 

@@ -56,7 +56,7 @@ Add a portfolio line that your sales team can take into every VMware renewal con
 
 **2. Co-deliver.** For partners who deliver the build, Cozystack is the framework and **Ænix is the engineering bench** behind your team — [white-label cloud](/services/white-label-cloud/) and platform builds where you own the client and we provide the deep-tech capacity.
 
-Either way the per-core license line your clients pay VMware turns into margin and recurring revenue for you.
+Either way the per-core licence line your clients pay VMware turns into margin and recurring revenue for you.
 
 ---
 
@@ -65,7 +65,7 @@ Either way the per-core license line your clients pay VMware turns into margin a
 - **What it is:** a partner program + open cloud platform you co-sell and/or co-deliver.
 - **Who it's for:** Heads of Alliances / Partnerships / Channel at SIs, MSPs, distributors.
 - **Margin:** up to **40%** on Ænix platform subscriptions and support; deal protection on registered opportunities.
-- **License:** Apache 2.0 core (Cozystack) — no per-CPU cost in the stack.
+- **Licence:** Apache 2.0 core (Cozystack) — no per-CPU cost in the stack.
 - **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Active partners include:** GoHost.kz, Hidora, QOSI, TECH EVOLVERS INC.
 

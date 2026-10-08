@@ -5,7 +5,7 @@ language: "de"
 hreflang_en: /
 layout: "locale-home"
 hero_h1: "Ihre eigene Cloud — für Hosting-Anbieter, Unternehmen, die VMware ablösen, und GPU-Clouds."
-hero_subtitle: "Hosting- und Cloud-Anbieter starten eine Public Cloud mit Billing und WHMCS. Unternehmen ersetzen VMware durch eine Private Cloud, die sie selbst kontrollieren. GPU- und KI-Clouds machen aus ihren eigenen GPUs einen mandantenfähigen Service. Alle drei laufen auf Cozystack, dem CNCF-Projekt, das Ænix initiiert hat und mitpflegt."
+hero_subtitle: "Hosting- und Cloud-Anbieter starten eine Public Cloud mit Billing und WHMCS. Unternehmen ersetzen VMware durch eine Private Cloud, die sie selbst kontrollieren. GPU- und KI-Clouds machen aus ihren eigenen GPUs einen mandantenfähigen Service. Alle drei laufen auf Cozystack, dem CNCF-Projekt, das Ænix entwickelt hat und mitpflegt."
 hero_tag: "Schlüsselfertige Cloud-Plattformen · Open-Source-Kern · CNCF"
 hero_cta_primary: "Gespräch vereinbaren"
 hero_cta_primary_url: "/de/kontakt/"
@@ -63,11 +63,12 @@ Eine Frage entscheidet: Wer nutzt die Kapazität? Unter allen dreien läuft dies
     <div class="card-body">
       <div class="card-tag">Die Kapazität geht an Inferenz und Training</div>
       <h3 class="card-title">Ænix AI Platform</h3>
-      <p class="card-description"><strong>Sie sind:</strong> ein KI-natives Unternehmen, eine regulierte Organisation, die Modellgewichte im Haus behält, oder ein Anbieter, der GPU-as-a-Service verkauft. NVIDIA-GPUs über den GPU Operator: Passthrough an VMs, anteilige Nutzung über HAMi, Model Serving und Vektordatenbanken — die Nutzung wird pro Tenant für Ihr Billing erfasst.</p>
+      <p class="card-description"><strong>Sie sind:</strong> ein KI-natives Unternehmen, eine regulierte Organisation, die Modellgewichte im Haus behält, oder ein Anbieter, der GPU-as-a-Service verkauft. NVIDIA-GPUs über den GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) und fraktionierte Freigabe über HAMi, dazu Model Serving und Vektordatenbanken. Die GPU-Nutzung wird pro Tenant erfasst; abgerechnet wird in Ihrem Billing-System (WHMCS oder Ihr eigenes).</p>
       <p class="card-meta">Angebot per RFP</p>
       <span class="card-link">Ansehen →</span>
     </div>
   </a>
+  <p style="margin:.75rem 0 0;font-size:.95rem">Sie verkaufen GPU-Kapazität an Kunden? Mehr unter <a href="/de/loesungen/gpu-as-a-service/">GPU as a Service →</a></p>
 </div>
 
 <div class="edition-panel" id="edition-panel-3" role="tabpanel" aria-labelledby="edition-tab-3">
@@ -75,8 +76,8 @@ Eine Frage entscheidet: Wer nutzt die Kapazität? Unter allen dreien läuft dies
     <div class="card-body">
       <div class="card-tag">Open Source, mit uns in Rufbereitschaft</div>
       <h3 class="card-title">Cozystack mit Ænix-Support</h3>
-      <p class="card-description"><strong>Sie sind:</strong> ein Produktteam auf Hetzner, OVH oder gemietetem Bare Metal, das das Upstream-Projekt nutzt und die Maintainer erreichen will — ohne die kommerzielle Portal- und Billing-Schicht.</p>
-      <p class="card-meta">Apache 2.0 plus Support-Vertrag</p>
+      <p class="card-description"><strong>Sie sind:</strong> ein Produktteam auf Hetzner, OVH oder gemietetem Bare Metal, das das Open-Source-Projekt selbst betreibt und die Maintainer in Rufbereitschaft haben will. Es ist dasselbe Abonnement wie bei der Public Cloud Platform; die kommerziellen Module bleiben einfach ungenutzt.</p>
+      <p class="card-meta">Apache 2.0 + Support ab 1.250 USD pro Monat und 10 Nodes</p>
       <span class="card-link">Enterprise-Support →</span>
     </div>
   </a>
@@ -183,7 +184,7 @@ Wenn Sie aus einem dieser Gründe hier sind, steigen Sie direkt auf der verlinkt
 
 <div class="open-core-split__intro">
 
-Ænix hat **Cozystack** initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Cozystack ist ein CNCF-Sandbox-Projekt, der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung, und das Projekt steht unter der Apache-2.0-Lizenz.
+Ænix hat **Cozystack** entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Cozystack ist ein CNCF-Sandbox-Projekt, der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung, und das Projekt steht unter der Apache-2.0-Lizenz.
 
 Die drei Ænix-Plattformen ergänzen darüber die kommerzielle Schicht: Hosting-Panel, Nutzer-, Admin- und Support-Portale, Assistenten für die Service-Erstellung, Billing- und Payment-Integrationen, die WHMCS-Integration sowie Support mit SLA.
 
@@ -191,7 +192,7 @@ Was Ihnen das in der Praxis bringt:
 
 <div class="trust-panel" aria-label="Projekt-Nachweise">
 <span class="trust-pill">CNCF-Sandbox-Projekt</span>
-<span class="trust-pill">CNCF Certified Kubernetes</span>
+<span class="trust-pill">CNCF Certified Kubernetes Distribution</span>
 <span class="trust-pill">CNCF Kubernetes AI Conformance</span>
 <a class="trust-pill" href="/de/compliance/iso-27001/">ISO/IEC 27001:2022 — AENIX s.r.o.</a>
 <span class="trust-pill">Apache 2.0</span>

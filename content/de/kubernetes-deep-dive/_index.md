@@ -10,7 +10,7 @@ hreflang_en: /kubernetes-deep-dive/
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kubernetes-deep-dive/#enroll">Für die nächste Kohorte anmelden</a>
-  <a class="cta-secondary" href="/certification/">Ænix Certification for Cozystack →</a>
+  <a class="cta-secondary" href="/certification/">Ænix-Zertifizierung für Cozystack →</a>
 </div>
 
 ---
@@ -24,7 +24,7 @@ hreflang_en: /kubernetes-deep-dive/
 - **Ergebnis:** Engineers, die Plattformen der Cozystack-Klasse im Produktivbetrieb betreiben können
 - **Unterrichtet von:** Cozystack-Maintainern und Delivery-Engineers von Ænix
 - **Preise:** pro Teilnehmer oder pro Team, auf Anfrage. Ein vollständiger Kurs pro Jahr ist in den [Support-Stufen](/de/preise/#support) Plus und Enterprise enthalten, weitere Kurse mit 30 % Rabatt
-- **Zertifizierung:** passt zur Prüfung [Ænix Certification for Cozystack — Fundamentals](/certification/)
+- **Zertifizierung:** passt zur Prüfung [Ænix-Zertifizierung für Cozystack — Fundamentals](/certification/)
 
 ---
 
@@ -103,7 +103,7 @@ Der Kurs behandelt den Open-Source-Stack von Cozystack, die Grundlage der Ænix-
 
 ### Gibt es eine Zertifizierung?
 
-Ja. Die Prüfung [Ænix Certification for Cozystack — Fundamentals](/certification/) wird separat abgelegt. Die Prüfung findet auf Englisch statt; die Vorbereitungsmaterialien gibt es derzeit auf Russisch.
+Ja. Die Prüfung [Ænix-Zertifizierung für Cozystack — Fundamentals](/certification/) wird separat abgelegt. Die Prüfung findet auf Englisch statt; die Vorbereitungsmaterialien gibt es derzeit auf Russisch.
 
 ### Was, wenn ich bereits zu Cozystack beitrage?
 
@@ -117,4 +117,4 @@ Für aktive Beitragende, die Tiefe im Produktivbetrieb suchen, ist der Kurs idea
 
 ---
 
-*Der Kubernetes Deep Dive Kurs kommt von Ænix — dem Unternehmen, das [Cozystack](https://cozystack.io) (CNCF-Projekt) initiiert hat.*
+*Der Kubernetes Deep Dive Kurs kommt von Ænix — dem Unternehmen, das [Cozystack](https://cozystack.io) (CNCF-Projekt) entwickelt hat.*

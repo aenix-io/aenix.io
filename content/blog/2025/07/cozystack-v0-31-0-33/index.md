@@ -131,7 +131,7 @@ Other Features and Improvements
 - [Explain application management strategies and available versions for managed applications](https://cozystack.io/docs/guides/applications/).
 - [How to clean up etcd state](https://cozystack.io/docs/operations/faq/#how-to-clean-up-etcd-state).
 
-All changes: [v0.32.0](https://github.com/cozystack/cozystack/releases/tag/v0.32.0), [v0.32.1](https://github.com/cozystack/cozystack/releases/tag/v0.32.1), [v0.32.2](https://github.com/cozystack/cozystack/releases/tag/untagged-0b49f6a6359b8c314bed)
+All changes: [v0.32.0](https://github.com/cozystack/cozystack/releases/tag/v0.32.0), [v0.32.1](https://github.com/cozystack/cozystack/releases/tag/v0.32.1), v0.32.2
 
 Many thanks to all contributors and especially to new contributors:
 

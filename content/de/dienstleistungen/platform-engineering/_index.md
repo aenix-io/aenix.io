@@ -1,7 +1,7 @@
 ---
 title: "Platform Engineering Services — die interne Plattform, die Ihre Entwickler wirklich nutzen"
 seo_title: "Platform Engineering Services für Produktionsplattformen"
-description: "Platform Engineering vom Team hinter Cozystack: Golden Paths, Multi-Tenancy und ein Betriebsmodell, das Ihr Team trägt. Assessment, Aufbau oder Managed."
+description: "Platform Engineering von den Entwicklern von Cozystack: Golden Paths, Multi-Tenancy und ein Betriebsmodell, das Ihr Team trägt. Assessment, Aufbau oder Managed."
 related_pages:
   - /de/dienstleistungen/internal-developer-platform/
   - /de/dienstleistungen/kubernetes-consulting/
@@ -13,7 +13,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/platform-engineering/
 direct_answer: |
-  **Platform Engineering Services bauen und betreiben die interne Entwicklerplattform, über die Produktteams Umgebungen per Self-Service bereitstellen, deployen und Observability, Secrets und Identity nutzen. Ænix erbringt diese Leistungen als das Engineering-Team hinter Cozystack, einem Open-Source-CNCF-Projekt (Apache 2.0), das VMs und Container über KubeVirt auf einer Kubernetes-API betreibt — mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Multi-Tenancy über das Tenant-CRD. Es gibt drei Formen der Zusammenarbeit: ein Platform Readiness Assessment über 14 oder 28 Tage, einen Plattformaufbau über 3–12 Monate mit strukturiertem Wissenstransfer oder einen Managed Platform Service mit dokumentiertem Weg zurück in den Eigenbetrieb. Die Leistung richtet sich an Organisationen mit mehreren Produktteams, langer Time-to-Environment oder Compliance- und Souveränitätsdruck, typischerweise ab etwa drei Produktteams oder dreißig Engineers.**
+  **Platform Engineering Services bauen und betreiben die interne Entwicklerplattform, über die Produktteams Umgebungen per Self-Service bereitstellen, deployen und Observability, Secrets und Identity nutzen. Ænix erbringt diese Leistungen als das Unternehmen, das Cozystack entwickelt hat und mitpflegt, ein Open-Source-CNCF-Projekt (Apache 2.0), das VMs und Container über KubeVirt auf einer Kubernetes-API betreibt — mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Multi-Tenancy über das Tenant-CRD. Es gibt drei Formen der Zusammenarbeit: ein Platform Readiness Assessment über 14 oder 28 Tage, einen Plattformaufbau über 3–12 Monate mit strukturiertem Wissenstransfer oder einen Managed Platform Service mit dokumentiertem Weg zurück in den Eigenbetrieb. Die Leistung richtet sich an Organisationen mit mehreren Produktteams, langer Time-to-Environment oder Compliance- und Souveränitätsdruck, typischerweise ab etwa drei Produktteams oder dreißig Engineers.**
 quick_facts:
   - label: "Was es ist"
     value: "Aufbau, Betrieb und Beschleunigung einer internen Entwicklerplattform mit Self-Service-Golden-Paths, Multi-Tenancy und einem tragfähigen Betriebsmodell."
@@ -255,6 +255,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix ist das Platform-Engineering-Team hinter Cozystack — CNCF-Projekt, zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes), OpenSSF Best Practices. Wir bauen, betreiben und beschleunigen Platform-Engineering-Programme in der EU, im DACH-Raum und in Zentralasien.*
+*Ænix hat Cozystack entwickelt und pflegt es mit — CNCF-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices. Wir bauen, betreiben und beschleunigen Platform-Engineering-Programme in der EU, im DACH-Raum und in Zentralasien.*
 
 <!-- /BLOCK 12 -->

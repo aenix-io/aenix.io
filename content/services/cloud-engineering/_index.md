@@ -11,7 +11,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "Hands-on engineering services for cloud architecture, automation, and operations across public, hybrid, and private/on-prem environments."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -85,7 +85,7 @@ For broader scope see **[Platform Engineering services](/services/platform-engin
 </div>
 </div>
 
-For methodology see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+For the full version, see the [Platform Readiness Assessment](/services/platform-readiness-assessment/) (14 or 28 days).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -93,5 +93,5 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ---
 
-*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF-Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
 

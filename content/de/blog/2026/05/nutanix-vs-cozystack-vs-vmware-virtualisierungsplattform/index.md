@@ -20,12 +20,12 @@ quiz:
         - { text: "Alle drei sind Open-Source-Projekte mit Community-Governance", correct: false }
         - { text: "Alle drei setzen auf Subscriptions mit vergleichbaren Listenpreisen", correct: false }
       explanation: "Drei verschiedene Philosophien: Nutanix setzt auf herstellergeführte HCI-Integration und betriebliche Einfachheit; VMware bietet ausgereifte Ökosystem-Integration mit Subscription-getriebener Ökonomie; Cozystack liefert eine Kubernetes-native Open-Source-Architektur mit einer von der Community gesteuerten Roadmap."
-    - q: "Welcher Zeitrahmen wird für die Migration einer Umgebung mit 100–1000 VMs von VMware zu Cozystack genannt?"
+    - q: "Welcher Zeitrahmen wird für die Migration einer Umgebung mit 100–1.000 VMs von VMware zu Cozystack genannt?"
       options:
         - { text: "1–2 Wochen (schnelles In-Place-Replatforming)", correct: false }
-        - { text: "7–25 Monate je nach Umfang; positive Wirtschaftlichkeit ab dem zweiten Jahr", correct: true }
+        - { text: "Rund 8–12 Monate bei ~100 VMs, 18–24 Monate bei ~1.000 VMs; positiv ab dem zweiten Jahr", correct: true }
         - { text: "Mehr als 36 Monate (langwierige Abschaltung)", correct: false }
-      explanation: "VMware → Cozystack: 7–10 Monate bei unter 100 VMs, 10–16 Monate bei 100–500 und 16–25 Monate bei 500–2000 VMs (Assessment + Aufbau der Zielplattform + Kohortenmigration). Rechnet man die Migrationskosten gegen die eingesparten Lizenzen, ist das Ergebnis typischerweise ab dem zweiten Jahr positiv."
+      explanation: "VMware → Cozystack: rund 8–12 Monate für einen Bestand von ~100 VMs und 18–24 Monate für ~1.000 VMs, einschließlich Planung und Migrationswellen (Assessment + Aufbau der Zielplattform + Kohortenmigration). Rechnet man die Migrationskosten gegen die eingesparten Lizenzen, ist das Ergebnis typischerweise ab dem zweiten Jahr positiv."
     - q: "Wer sollte sich laut Entscheidungsbaum für Nutanix statt Cozystack entscheiden?"
       options:
         - { text: "Wer HCI-Appliances bevorzugt und bereits eine Nutanix-Beziehung hat", correct: true }
@@ -96,9 +96,9 @@ quiz:
 
 Ein Wechsel zwischen diesen Plattformen ist nicht umsonst. Realistische Aufwandsschätzungen:
 
-- **VMware → Cozystack:** 7–10 Monate bei einer Umgebung unter 100 VMs, 10–16 Monate bei 100–500, 16–25 Monate bei 500–2000; Assessment + Aufbau der Zielplattform + Kohortenmigration. Typischerweise ab dem zweiten Jahr wirtschaftlich positiv.
+- **VMware → Cozystack:** rund 8–12 Monate für einen Bestand von ~100 VMs und 18–24 Monate für ~1.000 VMs, einschließlich Planung und Migrationswellen; Assessment (14 oder 28 Tage) + Aufbau der Zielplattform + Kohortenmigration. Typischerweise ab dem zweiten Jahr wirtschaftlich positiv.
 - **VMware → Nutanix:** ähnlicher Zeitrahmen; nutzt das Werkzeug Nutanix Move.
-- **Nutanix → Cozystack:** 6–12 Monate; die Kompatibilität der KVM-Images hilft.
+- **Nutanix → Cozystack:** Migration des gesamten Bestands typischerweise 9–18 Monate, je nach Umfang; die Kompatibilität der KVM-Images hilft.
 - **Cozystack → VMware/Nutanix:** 2026 selten (Rückmigration).
 
 ## So treffen Sie die Entscheidung

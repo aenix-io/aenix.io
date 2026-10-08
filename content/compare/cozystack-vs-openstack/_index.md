@@ -19,7 +19,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A head-to-head comparison of Cozystack and OpenStack, two open-source private cloud platforms, for teams choosing a stack or modernizing away from OpenStack."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing) for both Cozystack and OpenStack"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -57,7 +57,7 @@ hreflang_de: /de/vergleichen/cozystack-vs-openstack/
 
 | | OpenStack | Cozystack |
 |---|---|---|
-| **License** | Apache 2.0 | Apache 2.0 |
+| **Licence** | Apache 2.0 | Apache 2.0 |
 | **Foundation** | Multi-project (Nova, Neutron, Cinder, etc.) | Kubernetes + KubeVirt + Cilium |
 | **Operational footprint** | 50-100+ service processes across a dozen projects | 5-15 Kubernetes operators |
 | **Engineer availability** | Specialist, and hard to hire in most markets | Kubernetes-large |

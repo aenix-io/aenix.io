@@ -15,7 +15,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "Guidance on when an internal developer portal like Backstage is the wrong layer to fix, and how to build the platform underneath it first"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"

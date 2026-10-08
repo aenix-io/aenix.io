@@ -18,7 +18,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A sovereign, AI-ready cloud platform built to support DORA for insurance carriers and reinsurers, built on Cozystack and delivered as Ænix Private Cloud Platform and AI Platform plus services."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -38,7 +38,7 @@ faq:
   - q: "What is the platform built on?"
     a: "Cozystack, an Apache 2.0 CNCF Sandbox project that Ænix created and co-maintains with maintainers from other companies. It runs VMs and containers on one Kubernetes API using KubeVirt, Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Ænix sells platform subscriptions and services on top."
   - q: "How does this help insurers exit VMware?"
-    a: "Cozystack runs both virtual machines and containers on one Kubernetes API via KubeVirt, so existing VM workloads migrate onto a single platform. Its Apache 2.0 license has no per-CPU or per-core fees, removing the VCF subscription cost pressure many insurers face."
+    a: "Cozystack runs both virtual machines and containers on one Kubernetes API via KubeVirt, so existing VM workloads migrate onto a single platform. Its Apache 2.0 licence has no per-CPU or per-core fees, removing the VCF subscription cost pressure many insurers face."
   - q: "Where does Ænix operate for insurance clients?"
     a: "Ænix builds platforms for insurance organizations across the EU, DACH, and Central Asia, supporting per-market data-residency requirements for multi-jurisdictional carriers and reinsurers."
   - q: "What does it cost?"
@@ -97,8 +97,6 @@ Insurance customers are not named. The closest written-up engagements are in ban
 - **[Unified cloud portal for a financial group](/case-studies/unified-cloud-portal-financial-group/)**
 
 [All case studies →](/case-studies/)
-
-{{< quote-carousel >}}
 
 ---
 

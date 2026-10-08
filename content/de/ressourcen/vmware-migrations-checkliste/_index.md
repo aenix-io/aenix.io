@@ -13,7 +13,7 @@ language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Die VMware-Migrations-Checkliste ist ein strukturiertes Discovery-Framework mit 25 Punkten für Organisationen, die einen Ausstieg aus VMware prüfen. Sie umfasst Workload-Inventar, Abhängigkeiten (vSAN, NSX, vCloud Director, vRealize), die Neugestaltung von Netzwerk und Storage, das Mandantenmodell, KI/GPU-Workloads, Souveränität und Compliance (DORA, NIS2), Betriebsbereitschaft und Kostenentwicklung. Sie richtet sich an Infrastruktur-Leads, Platform Engineers, CIO-Büros und Einkaufsteams in der frühen Bewertungsphase. Ænix nutzt dieselbe Checkliste im Platform Readiness Assessment (14 oder 28 Tage) und stellt sie kostenlos als PDF bereit. Als Ziel empfohlen wird Cozystack, das CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, das Ænix initiiert hat und mitpflegt. Es betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, mit Cilium-Networking und LINSTOR/DRBD-Storage.**
+  **Die VMware-Migrations-Checkliste ist ein strukturiertes Discovery-Framework mit 25 Punkten für Organisationen, die einen Ausstieg aus VMware prüfen. Sie umfasst Workload-Inventar, Abhängigkeiten (vSAN, NSX, vCloud Director, vRealize), die Neugestaltung von Netzwerk und Storage, das Mandantenmodell, KI/GPU-Workloads, Souveränität und Compliance (DORA, NIS2), Betriebsbereitschaft und Kostenentwicklung. Sie richtet sich an Infrastruktur-Leads, Platform Engineers, CIO-Büros und Einkaufsteams in der frühen Bewertungsphase. Ænix nutzt dieselbe Checkliste im Platform Readiness Assessment (14 oder 28 Tage) und stellt sie kostenlos als PDF bereit. Als Ziel empfohlen wird Cozystack, das CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, das Ænix entwickelt hat und mitpflegt. Es betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, mit Cilium-Networking und LINSTOR/DRBD-Storage.**
 quick_facts:
   - label: "Was es ist"
     value: "Kostenlose Checkliste mit 25 Punkten zur Bewertung eines VMware-Ausstiegs: Inventar, Abhängigkeiten, Networking, Storage, Mandantenfähigkeit, KI/GPU, Souveränität und Kosten."
@@ -33,7 +33,7 @@ faq:
   - q: "Was kostet die Checkliste?"
     a: "Nichts. Für den Download geben Sie eine E-Mail-Adresse an; Kosten oder Verpflichtungen entstehen nicht."
   - q: "Auf welche Plattform empfiehlt die Checkliste zu migrieren?"
-    a: "Auf Cozystack, das CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, mit Cilium-Networking und LINSTOR/DRBD-Storage. Organisationen aus vCloud Director werden auf die Tenant-CRD von Cozystack abgebildet."
+    a: "Auf Cozystack, das CNCF-Sandbox-Projekt unter der Apache-2.0-Lizenz, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, mit Cilium-Networking und LINSTOR/DRBD-Storage. Organisationen aus vCloud Director werden auf die Tenant-CRD von Cozystack abgebildet."
   - q: "Wie bildet die Checkliste die Mandantenfähigkeit von vCloud Director ab?"
     a: "Sie überträgt Organisationen aus vCloud Director auf die Tenant-CRD von Cozystack, das native Mittel für Mandantenfähigkeit. So können Hosting-Anbieter ihre bestehenden Mandantengrenzen auf der neuen Plattform abbilden."
   - q: "Gibt es eine tiefere Bewertung als die Checkliste?"
@@ -101,4 +101,4 @@ Die Checkliste gibt Ihnen die strukturierte Discovery an die Hand, die Ihre Orga
 
 ---
 
-*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*

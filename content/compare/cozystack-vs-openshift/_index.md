@@ -19,7 +19,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A head-to-head comparison of Cozystack and Red Hat OpenShift Virtualization, two KubeVirt-based platforms for running VMs on Kubernetes."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing); OpenShift Virtualization ships under a Red Hat commercial subscription, with a VM-only OpenShift Virtualization Engine SKU as the cheaper comparison point"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -55,7 +55,7 @@ hreflang_de: /de/vergleichen/cozystack-vs-openshift/
 
 | | OpenShift Virtualization | Cozystack |
 |---|---|---|
-| **License** | Red Hat commercial subscription | Apache 2.0 |
+| **Licence** | Red Hat commercial subscription | Apache 2.0 |
 | **Foundation** | OpenShift + KubeVirt | Kubernetes + KubeVirt + Cilium + LINSTOR |
 | **Operational footprint** | OpenShift broad | Cozystack focused |
 | **Multi-tenancy** | Project CRD + namespaces | Tenant CRD (nested) |

@@ -16,10 +16,10 @@ quick_facts:
     value: "Engineering organizations where provisioning environments, databases, or services requires platform-team tickets and waits of days or weeks."
   - label: "Delivered on"
     value: "The developer self-service layer of Ænix Private Cloud Platform — GitLab automation, Argo CD workflows, golden-path templates, self-service APIs, and productivity dashboards, built on Cozystack."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Engagement timeline"
-    value: "Discovery 30 min (free); fixed-price assessment of 14 or 28 days; build 1-6 months for the self-service scope."
+    value: "Discovery 30 min (free); fixed-price assessment of 14 or 28 days; 1-6 months to add self-service to a platform you already run, or 3-12 months for a new Private Cloud Platform build."
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
@@ -32,7 +32,7 @@ faq:
   - q: "What platform does the self-service capability run on?"
     a: "The developer self-service layer of Ænix Private Cloud Platform — part of that platform rather than a separate product — with GitLab automation, Argo CD workflows, self-service APIs, golden-path templates, and engineering productivity dashboards. It is built on Cozystack, which runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage."
   - q: "How long before product teams can self-serve?"
-    a: "Discovery is a free 30-minute call. The fixed-price assessment runs 14 or 28 days within a Platform Readiness Assessment. The build engagement spans 1-6 months depending on how many golden paths are in scope and the maturity of the existing platform."
+    a: "Discovery is a free 30-minute call. The fixed-price assessment runs 14 or 28 days within a Platform Readiness Assessment. Adding self-service to a platform you already run takes 1-6 months, depending on how many golden paths are in scope and the maturity of that platform. Where there is no platform yet, self-service is part of an Ænix Private Cloud Platform build of 3-12 months."
   - q: "Is there vendor lock-in?"
     a: "No. The capability is built on Cozystack, an open-source CNCF Sandbox project licensed under Apache 2.0 with no per-CPU or per-core licensing. The golden paths and platform layer use standard Kubernetes APIs, so the foundation remains portable."
 hreflang_de: /de/loesungen/developer-self-service/
@@ -118,7 +118,8 @@ Self-service is part of broader platform engineering work — see **[Internal De
 |---|---|
 | Discovery | 30 min, free |
 | Assessment | 14 or 28 days, fixed price (within Platform Readiness Assessment) |
-| Build | 1-6 months |
+| Build on an existing platform | 1-6 months |
+| New Private Cloud Platform build (self-service included) | 3-12 months |
 
 ---
 

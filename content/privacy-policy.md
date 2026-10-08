@@ -5,6 +5,7 @@ description: "How AENIX s.r.o. collects and uses personal data on aenix.io: anal
 layout: "single"
 page_type: "flag-page"
 url: "/privacy-policy/"
+hreflang_de: /de/datenschutz/
 ---
 
 **Effective date:** 8 October 2026
