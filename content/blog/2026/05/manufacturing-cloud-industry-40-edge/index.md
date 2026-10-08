@@ -1,5 +1,6 @@
 ---
 title: "Industry 4.0 platform — cloud + edge architecture for manufacturing in 2026"
+seo_title: "Industry 4.0 cloud and edge architecture for manufacturing"
 description: "Industry 4.0 architecture in 2026: edge-to-core patterns, sovereignty for industrial IP, and the NIS2 controls manufacturers are now in scope for."
 date: "2026-05-17"
 cover_image: "/img/blog/covers/manufacturing-cloud-industry-40-edge.jpg"
@@ -34,7 +35,7 @@ quiz:
       options:
         - { text: "All manufacturing activities, regardless of sector or size", correct: false }
         - { text: "Medical devices, computers, electronics, machinery, motor vehicles", correct: true }
-        - { text: "Only chemicals and pharmaceuticals (Annex I critical sectors)", correct: false }
+        - { text: "Only chemicals and pharmaceuticals", correct: false }
       explanation: "Manufacturing of critical products is in NIS2 scope: medical devices, computers, electronic equipment, machinery, motor vehicles. Architectural implications are the same as broader NIS2."
     - q: "What does the production-floor edge tier specifically run?"
       options:

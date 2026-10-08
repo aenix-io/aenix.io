@@ -1,5 +1,6 @@
 ---
 title: "Private LLM deployment — a practical guide to on-premise AI infrastructure in 2026"
+seo_title: "Private LLM deployment: on-premise AI infrastructure guide"
 description: "The six layers of a real private LLM deployment — hardware, platform, serving, model, application, operations — with the pitfalls at each one."
 date: "2026-05-23"
 cover_image: "/img/blog/covers/private-llm-deployment-guide.jpg"
@@ -94,7 +95,7 @@ The right GPU depends on workload, model size, and budget. The current productio
 - **AMD MI300 / MI325** — credible alternative for some workloads; ROCm tooling still maturing relative to CUDA.
 - **Specialized accelerators (Groq, Cerebras, etc.)** — strong for specific use cases; ecosystem narrower.
 
-For most regulated-industry deployments, a fleet of H100/H200 (or A100 for cost-sensitive) plus L40S for tenant-fleet inference is the typical answer. Validated GPU models in our deployments: A100, H100, H200, L40S, and Blackwell.
+For most regulated-industry deployments, a fleet of H100/H200 (or A100 for cost-sensitive) plus L40S for tenant-fleet inference is the typical answer. NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator (passthrough to VMs, sharing via HAMi).
 
 The CPU and storage sizing are also important — but largely follow standard practice once GPU sizing is set. Networking matters significantly for multi-GPU training (NVLink, InfiniBand, RoCE) and somewhat less for inference (where 25-100 Gbps Ethernet is usually sufficient).
 
@@ -113,6 +114,7 @@ Kubernetes-native virtualization platforms (Cozystack, OpenShift Virtualization,
 - Container-based AI workloads with Kubernetes GPU scheduling: whole-GPU allocation through the NVIDIA GPU Operator, fractional sharing (GPU memory and compute cores) through HAMi
 - VM-based AI workloads through KubeVirt with NVIDIA vGPU (NVIDIA Enterprise license required)
 - Multi-tenant isolation through Tenant CRD with per-tenant GPU quotas
+- MIG and time-slicing: on the roadmap, not shipped today
 
 OpenStack-based or VMware-based legacy platforms can be retrofitted to host AI workloads, but typically with more operational friction and less native Kubernetes integration.
 

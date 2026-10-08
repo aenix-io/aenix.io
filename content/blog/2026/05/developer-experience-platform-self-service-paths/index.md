@@ -1,5 +1,6 @@
 ---
 title: "Developer experience platforms — building self-service paths that actually get used"
+seo_title: "Developer experience platforms: self-service that works"
 description: "The ten golden paths most worth building, the five characteristics that make them work, and the architectural decisions that shape self-service."
 date: "2026-05-09"
 cover_image: "/img/blog/covers/developer-experience-platform-self-service-paths.jpg"
@@ -139,4 +140,4 @@ Building paths that platform team thinks are needed; turns out the actual top-10
 
 If self-service is on the table, the structured assessment names the top requests, where current paths fail, and what the priority build sequence looks like. Ænix runs this as part of **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
 
-For details see **[developer self-service services](/solutions/developer-self-service)** and **[internal developer platform services](/services/internal-developer-platform/)**.
+For details see **[developer self-service services](/solutions/developer-self-service/)** and **[internal developer platform services](/services/internal-developer-platform/)**.

@@ -1,5 +1,6 @@
 ---
 title: "Cozystack — what it is, architecture, and how it fits in 2026"
+seo_title: "Cozystack explained: architecture and fit in 2026"
 description: "What Cozystack is technically, the architectural choices behind it, how it compares to OpenStack and OpenShift, and when it is the wrong answer."
 date: "2026-05-07"
 cover_image: "/img/blog/covers/cozystack-introduction-architecture.jpg"
@@ -47,7 +48,7 @@ hreflang_de: /de/blog/2026/05/cozystack-einfuehrung-architektur/
 
 *Component facts below reflect the Cozystack v1.6 release line (current as of September 2026).*
 
-Cozystack is an open-source cloud platform — Apache 2.0 licensed, CNCF Project, built primarily by Ænix with growing community contribution. It started as an internal platform for service-provider customers and was open-sourced in 2023 because the architectural pattern proved generally useful.
+Cozystack is an open-source cloud platform — Apache 2.0 licensed, a CNCF Sandbox project (its Incubation application is in due diligence). Ænix created it and is one of its maintainers, alongside maintainers from other companies. It started as an internal platform for service-provider customers and was open-sourced in 2023 because the architectural pattern proved generally useful.
 
 ## What Cozystack is, technically
 

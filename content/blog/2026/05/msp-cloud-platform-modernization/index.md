@@ -1,5 +1,6 @@
 ---
 title: "MSP cloud platform modernization — branded cloud as managed-service offering"
+seo_title: "MSP cloud platform modernization: a branded cloud"
 description: "Architecture pattern, reseller economics, and engagement sequencing for MSPs adding a multi-tenant cloud platform to a managed-services business."
 date: "2026-05-18"
 cover_image: "/img/blog/covers/msp-cloud-platform-modernization.jpg"
