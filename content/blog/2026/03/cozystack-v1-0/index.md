@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "announcement"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "GPU", "Hosting"]
 language: "en"
+hreflang_de: "/de/blog/2026/03/cozystack-v1-0/"
 cover_image: "/img/blog/medium/cozystack-v1-0/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v1-0-b3f70879b250"
 ---
