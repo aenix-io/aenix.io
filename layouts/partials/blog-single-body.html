@@ -31,9 +31,10 @@
   </header>
 
   {{ with .Params.cover_image }}
+  {{- $cd := partial "img/dims.html" (dict "page" $post "src" .) }}
   <div class="container">
     <figure class="blog-post-cover">
-      <img src="{{ . }}" alt="{{ $post.Title }}" loading="eager">
+      <img src="{{ . }}" alt="{{ $post.Title }}"{{ with $cd }} width="{{ .w }}" height="{{ .h }}"{{ end }} loading="eager" fetchpriority="high">
     </figure>
   </div>
   {{ end }}
