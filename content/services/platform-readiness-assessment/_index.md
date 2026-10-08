@@ -1,5 +1,5 @@
 ---
-title: "Platform Readiness Assessment — for cloud sovereignty, migration, and cost posture in 14 days"
+title: "Platform Readiness Assessment — for cloud sovereignty, migration, and cost posture in 14 or 28 days"
 seo_title: "Platform Readiness Assessment: 14 or 28 days, fixed price"
 description: "Fixed-price 14 or 28-day assessment: time-to-environment metric, compliance-by-design map across DORA, NIS2 and GDPR, and a 12-month cost trajectory."
 related_pages: ["/solutions/data-sovereignty/", "/solutions/dora-compliance/", "/solutions/cloud-repatriation/", "/solutions/sovereign-ai/", "/services/platform-engineering/", "/products/", "/products/cozystack/", "/pricing"]
@@ -152,7 +152,7 @@ A 12-month spending plan with caps and a clear path between current public-cloud
 **Not a fit:**
 - Small IT team running one or two systems
 - No internal platform-engineering function and no plan to build one
-- Goal is purely "save on licenses" — not faster delivery, not sovereignty, not control
+- Goal is purely "save on licences" — not faster delivery, not sovereignty, not control
 
 </div>
 
@@ -208,14 +208,14 @@ The 4-week variant adds: vendor-shortlisting workshops (where applicable), proof
 
 ## Who actually does the work
 
-The engagement is run by **Ænix platform engineers** — the team that builds and operates Cozystack in production for service providers, banks, and sovereign-cloud projects. Not seconded management consultants. Not a partner network handing the project off after the sale.
+The engagement is run by **Ænix platform engineers** — engineers from the company that created and co-maintains Cozystack, which has deployments across hosting, regulated finance, telecom, AI and academia. Not seconded management consultants. Not a partner network handing the project off after the sale.
 
 That matters because:
 - We've made these architectural decisions on real production systems, not slides.
 - Our recommendations come with implementation effort estimates we have actually paid.
 - If you decide to engage us for Phase 2 implementation, the same engineers continue.
 
-Ænix is the company behind **[Cozystack](/products/cozystack/)**, an open-source CNCF Project. The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
+Ænix created **[Cozystack](/products/cozystack/)**, an open-source CNCF project, and co-maintains it. The Cozystack stack is the foundation we typically recommend — but the assessment is **not a sales engagement for Cozystack**. If your context fits a different stack, the report says so.
 
 <!-- /BLOCK 7 -->
 
@@ -286,7 +286,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix is the company behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We run platform readiness assessments and platform engineering programs for service providers, banks, and sovereign-cloud projects across the EU and Central Asia.*
+*Ænix created Cozystack and co-maintains it — a CNCF project and CNCF Certified Kubernetes distribution with the OpenSSF Best Practices badge. We run platform readiness assessments and platform engineering programs for service providers, banks, and sovereign-cloud projects across the EU and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

@@ -21,7 +21,7 @@ quick_facts:
     value: "A 14- or 28-day Platform Readiness Assessment, then a 3-12 month build on Cozystack depending on scope; multi-region programmes run a 3-6 month pilot, then 9-18 months."
   - label: "Multi-tenancy"
     value: "Structural via the Cozystack Tenant CRD; equivalent abstractions where other stacks (e.g. OpenShift Project CRD) apply."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -102,5 +102,5 @@ Standard **[Platform Readiness Assessment](/services/platform-readiness-assessme
 
 ---
 
-*Ænix is the team behind Cozystack.*
+*Ænix created Cozystack and co-maintains it.*
 

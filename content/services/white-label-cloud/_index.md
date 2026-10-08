@@ -12,7 +12,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A cloud product branded with the MSP's or reseller's identity, built and operated by Ænix on Cozystack with a multi-tier reseller-customer hierarchy."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"

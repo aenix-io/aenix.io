@@ -12,11 +12,11 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Kubernetes consulting is expert advisory and implementation work that helps an organization design, harden, and operate production-grade Kubernetes — covering distribution choice, multi-tenancy, networking, storage, identity, observability, GitOps discipline, and operational runbooks. It is for teams whose existing clusters are operational but problematic, who need hard tenant isolation, or who are migrating from VMware or OpenStack. Ænix delivers it through the engineers who build and operate Cozystack, an open-source CNCF Kubernetes-native platform run in production by service providers, banks, and AI operators. Engagements stay distribution-neutral: Ænix sells no licensed distribution and recommends the right stack — Cozystack, vanilla Kubernetes, OpenShift, or vendor-led — for the case at hand.**
+  **Kubernetes consulting is expert advisory and implementation work that helps an organization design, harden, and operate production-grade Kubernetes — covering distribution choice, multi-tenancy, networking, storage, identity, observability, GitOps discipline, and operational runbooks. It is for teams whose existing clusters are operational but problematic, who need hard tenant isolation, or who are migrating from VMware or OpenStack. Ænix delivers it through the engineers who created and co-maintain Cozystack, an open-source CNCF Kubernetes-native platform with deployments across hosting, regulated finance, telecom, AI and academia. Engagements stay distribution-neutral: Ænix sells no licensed distribution and recommends the right stack — Cozystack, vanilla Kubernetes, OpenShift, or vendor-led — for the case at hand.**
 quick_facts:
   - label: "What it is"
     value: "Advisory and hands-on implementation for production multi-tenant Kubernetes — architecture, tenancy, operations, and production-readiness."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -34,11 +34,11 @@ faq:
   - q: "How is Kubernetes consulting different from a managed service like EKS, AKS, or GKE?"
     a: "Managed Kubernetes services run the control plane for you. Consulting addresses your architecture and operational decisions on top — distribution choice, multi-tenancy design, observability, GitOps, and runbooks. The two are complementary, not alternatives."
   - q: "What does a typical engagement cost and how long does it take?"
-    a: "An architecture review runs 5-10 days at a fixed price and produces a written assessment and target architecture. Implementation is time-and-materials or fixed-scope, typically 1-6 months, with Ænix engineers integrated into your team."
+    a: "An architecture review runs 5-10 days at a fixed price and produces a written review and target architecture. Implementation is time-and-materials or fixed-scope, typically 1-6 months, with Ænix engineers integrated into your team."
   - q: "Do you provide on-call or 24x7 support after implementation?"
     a: "Yes, under a managed engagement. A standard implementation engagement leaves your team operating with documented runbooks and knowledge transfer; a managed engagement extends Ænix as on-call operators."
   - q: "Why Ænix specifically for Kubernetes consulting?"
-    a: "Ænix is the team behind Cozystack, an open-source CNCF Kubernetes-native platform run in production. Recommendations come from systems Ænix builds and operates, delivered by senior engineers rather than analysts, with no licensed-distribution sales incentive."
+    a: "Ænix created Cozystack and co-maintains it — an open-source CNCF Kubernetes-native platform with deployments across hosting, regulated finance, telecom, AI and academia. Recommendations come from systems Ænix builds and operates, delivered by senior engineers rather than analysts, with no licensed-distribution sales incentive."
   - q: "Can consulting expand into a productized platform engagement?"
     a: "Yes. Stand-alone consulting is available, and scope can expand into an Ænix platform when the work moves toward a productized cloud platform: Public Cloud Platform and support for self-run Cozystack from $1,250 per 10 nodes per month, Private Cloud and AI Platform quoted per RFP."
 hreflang_de: /de/dienstleistungen/kubernetes-consulting/
@@ -49,7 +49,7 @@ hreflang_de: /de/dienstleistungen/kubernetes-consulting/
 
 **Most Kubernetes consulting engagements treat Kubernetes as a generic compute platform. The reality is that production Kubernetes is hard for specific reasons: multi-tenancy, observability, identity, networking, storage choice, GitOps discipline, and the operational practices that keep a cluster reliable at scale. Generic consulting that doesn't address these specifics produces a cluster that "works" but doesn't operate well.**
 
-Ænix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a multi-tenant Kubernetes-native platform we run in production with service providers, banks, and AI operators. Our Kubernetes consulting engagements bring the same engineers into your team.
+Ænix created [Cozystack](/products/cozystack/) and co-maintains it — an open-source CNCF project and multi-tenant Kubernetes-native platform with deployments across hosting, regulated finance, telecom, AI and academia (see the [case studies](/case-studies/)). Our Kubernetes consulting engagements bring the same engineers into your team.
 
 > **Pairs with:** any of the three **[Ænix platforms](/products/)** once scope expands into a productized cloud platform. Stand-alone consulting is available without one.
 
@@ -157,7 +157,7 @@ Multiple teams contribute changes without coordination. Drift accumulates. Upgra
 - **Implementation engagement (1-6 months)** — Ænix engineers integrated with your team, building cluster foundation, multi-tenancy, observability, runbooks.
 - **Managed Kubernetes engagement** — for organizations needing the platform but not operating capacity.
 
-For deeper assessment with broader scope see **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**.
+For the full version, see the [Platform Readiness Assessment](/services/platform-readiness-assessment/) (14 or 28 days).
 
 <!-- /BLOCK 5 -->
 
@@ -168,7 +168,7 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 ## Why Ænix specifically
 
 - **We sell no licensed distribution.** That is the whole reason to ask us which one you should run. A consultancy with an OpenShift or a Tanzu practice has an answer before the question.
-- **We wrote one.** Cozystack is our code, in production with service providers, banks and AI operators. The multi-tenancy and storage recommendations come from operating it, not from reading about it.
+- **We created one.** Ænix created Cozystack and co-maintains it, with deployments across hosting, regulated finance, telecom, AI and academia — see the [case studies](/case-studies/). The multi-tenancy and storage recommendations come from operating it, not from reading about it.
 
 <!-- /BLOCK 6 -->
 
@@ -179,7 +179,7 @@ For deeper assessment with broader scope see **[Platform Readiness Assessment](/
 | When | What | Output |
 |---|---|---|
 | **Day 0** | 30-min discovery call (free) | Confirm fit |
-| **Phase 1: Architecture review (5-10 days)** | Focused review | Written assessment, target architecture |
+| **Phase 1: Architecture review (5-10 days)** | Focused review | Written review, target architecture |
 | **Phase 2: Implementation (1-6 months)** | Integrated with your team | Production-ready cluster, runbooks, knowledge transfer |
 
 <!-- /BLOCK 7 -->
@@ -225,7 +225,7 @@ The architecture review is fixed-price; implementation is time-and-materials or 
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix created Cozystack and co-maintains it — a CNCF project and CNCF Certified Kubernetes distribution with the OpenSSF Best Practices badge.*
 
 <!-- /BLOCK 12 -->
 
