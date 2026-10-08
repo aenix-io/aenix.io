@@ -1,107 +1,124 @@
 ---
 title: "Nutanix-Alternative — Open Source ohne Appliance-Lock-in"
-description: "Nutanix HCI ist operativ einfach, ausgereift und integriert. Die Trade-offs: Closed Source, Appliance-led-Lock-in und ein Subscription-Modell, das ähnlichen..."
+seo_title: "Nutanix-Alternative: Open Source ohne Appliance-Lock-in"
+primary_keyword: "Nutanix Alternative"
+secondary_keywords:
+  - "Open-Source-Alternative zu Nutanix"
+  - "Nutanix AHV Alternative"
+description: "Open-Source-Alternative zu Nutanix: Cozystack betreibt VMs und Container über eine Kubernetes-API auf Standard-Hardware, mandantenfähig und ohne Node-Liste."
 related_pages:
-  - /de/alternativen/vmware-alternative
+  - /de/migration/nutanix/
+  - /de/alternativen/vmware-alternative/
   - /de/produkte/private-cloud-platform/
-  - /de/produkte/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /alternatives/nutanix-alternative/
 direct_answer: |
-  **Eine Nutanix-Alternative ist eine Plattform, die vergleichbare HCI- und VM-Fähigkeiten ohne Appliance-Lock-in und proprietäres Subscription-Modell liefert. Cozystack ist die Open-Source-Antwort: ein CNCF-Projekt unter Apache-2.0-Lizenz, das KubeVirt für VMs und Container über eine einzige Kubernetes-API, Cilium (eBPF) für Networking und LINSTOR/DRBD für replizierten Storage kombiniert. Anders als Nutanix läuft Cozystack auf kundenkontrollierter Standard-Hardware mehrerer Hersteller, ohne CPU- oder Core-basierte Lizenzierung. Aenix, das Open-Core-Unternehmen hinter Cozystack, bietet mit der Ænix Private Cloud Platform eine produktisierte, turnkey Multi-DC-Private/Hybrid-Cloud mit DORA- und NIS2-Alignment für Organisationen, die Open-Source-First und Souveränität verlangen.**
+  **Die führende Open-Source-Alternative zu Nutanix ist Cozystack, ein CNCF-Sandbox-Projekt, das virtuelle Maschinen und Container über eine einzige Kubernetes-API betreibt. Während Nutanix AHV ein proprietäres KVM ist, das an eine Liste zertifizierter Nodes und Subscriptions pro Node gebunden ist, steht Cozystack unter Apache 2.0, läuft auf Standard-Hardware und nutzt KubeVirt für VMs, Cilium (eBPF) für das Networking und LINSTOR/DRBD für Storage. Die Tenant-CRD liefert produktionsreife Mandantenfähigkeit; damit eignet sich Cozystack für Service-Provider, regulierte Unternehmen und moderne Greenfield-Projekte, die das VM-zentrierte Modell von Nutanix weniger direkt abdeckt. Ænix hat Cozystack initiiert, pflegt es mit, baut darauf die Ænix Private Cloud Platform und bietet Enterprise-Support an. So behalten Organisationen, die den Appliance-Lock-in verlassen, ein offenes Fundament und trotzdem kommerziellen Rückhalt.**
 quick_facts:
   - label: "Was es ist"
-    value: "Open-Source-Alternative zu Nutanix HCI ohne Appliance-Lock-in, gebaut auf Cozystack (Kubernetes, KubeVirt, Cilium, LINSTOR)"
+    value: "Eine Kubernetes-native Open-Source-Alternative zu Nutanix HCI/AHV, die VMs und Container ohne Appliance-Lock-in betreibt"
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
-  - label: "Zielgruppe"
-    value: "Organisationen mit Multi-Vendor-Hardware-Strategie, Open-Source-First-Anforderung und Souveränitätsbedarf bei kundenkontrollierter Hardware"
-  - label: "Schlüsselfunktion"
-    value: "VMs und Container über eine gemeinsame Kubernetes-API (KubeVirt), Multi-Tenancy über das Tenant-CRD"
-  - label: "Regulatorik"
-    value: "Alignment mit DORA und NIS2 für regulierte Branchen im DACH-Raum"
-  - label: "Kommerziell"
-    value: "Ænix Platform — Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise individuell"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit dem 28.02.2025; der Antrag auf Incubation befindet sich in der Due-Diligence-Prüfung)"
+  - label: "Virtualisierung"
+    value: "KubeVirt (KVM) auf Kubernetes statt des proprietären AHV von Nutanix"
+  - label: "Mandantenfähigkeit"
+    value: "Verschachtelte Tenant-CRD mit Quotas und eigenem Audit pro Tenant; Nutanix nutzt Projects und Categories, die innerhalb einer Organisation gut delegieren"
+  - label: "Hardware"
+    value: "Läuft auf Standard-Servern, ohne Liste zertifizierter Nodes, von der Sie kaufen müssen. Nutanix unterstützt Nodes von Dell, HPE, Lenovo, Cisco und Fujitsu, aber nur von dieser Liste."
+  - label: "Am besten geeignet für"
+    value: "Service-Provider, regulierte mandantenfähige Umgebungen und Greenfield-Projekte"
 faq:
   - q: "Was ist die beste Open-Source-Alternative zu Nutanix?"
-    a: "Cozystack ist eine realistische Open-Source-Alternative zu Nutanix HCI. Es kombiniert KubeVirt für VMs, Cilium für Networking und LINSTOR/DRBD für replizierten Storage auf einer Kubernetes-Basis — unter Apache-2.0-Lizenz und ohne Appliance-Lock-in. Aenix bietet dazu die produktisierte Ænix Platform mit kommerziellem Support."
-  - q: "Bindet Cozystack mich an spezielle Hardware wie Nutanix-Appliances?"
-    a: "Nein. Cozystack läuft auf kundenkontrollierter Standard-Hardware verschiedener Hersteller. Es gibt keinen Appliance-Lock-in und keine CPU- oder Core-basierte Lizenzierung, was eine echte Multi-Vendor-Hardware-Strategie ermöglicht."
+    a: "Cozystack ist die realistische Open-Source-Alternative. Es steht unter Apache 2.0, betreibt VMs und Container über KubeVirt auf einer einzigen Kubernetes-API und bietet mit der Tenant-CRD produktionsreife Mandantenfähigkeit, ohne den Appliance-Lock-in und das Subscription-Modell pro Node von Nutanix."
+  - q: "Wie schneidet Cozystack im Vergleich zu Nutanix AHV ab?"
+    a: "Nutanix AHV ist ein proprietäres KVM im Abonnement, das auf einer Liste zertifizierter Nodes von Nutanix und OEM-Partnern läuft. Container deckt Nutanix mit der Nutanix Kubernetes Platform ab, einem separaten Produkt statt derselben Control Plane. Cozystack ist Open-Source-KubeVirt auf Kubernetes, läuft auf Standard-Hardware, betreibt VMs und Container über eine API und bietet mit der Tenant-CRD produktionsreife Mandantenfähigkeit."
   - q: "Kann Cozystack sowohl virtuelle Maschinen als auch Container betreiben?"
-    a: "Ja. Über KubeVirt betreibt Cozystack virtuelle Maschinen und Container über eine einzige Kubernetes-API. So lassen sich Legacy-VM-Workloads und Cloud-native Anwendungen auf derselben Plattform konsolidieren — vergleichbar mit dem, was Nutanix als HCI abdeckt."
-  - q: "Wie unterscheidet sich das Lizenzmodell von Nutanix?"
-    a: "Cozystack ist unter Apache 2.0 lizenziert — Open Source, ohne CPU- oder Core-basierte Subscription-Gebühren. Damit entfällt die Subscription-Modell-Druck-Dynamik, die Nutanix-Kunden ähnlich wie bei VMware erleben."
-  - q: "Eignet sich die Lösung für DORA- und NIS2-regulierte Organisationen?"
-    a: "Ja. Die Ænix Private Cloud Platform ist auf DORA- und NIS2-Alignment ausgelegt und unterstützt Multi-DC-Private/Hybrid-Cloud-Architekturen mit kundenkontrollierter Hardware — relevant für regulierte Branchen im DACH-Raum."
-  - q: "Was kostet die kommerzielle Ænix Platform?"
-    a: "Die Ænix Platform startet bei 1.250 $/Monat (Basic, bis 10 Nodes), Standard liegt bei 3.000 $, Plus bei 5.500 $. Für größere oder souveräne Multi-DC-Umgebungen gibt es eine individuelle Enterprise-Stufe."
+    a: "Ja. Cozystack betreibt VMs über KubeVirt und Container nativ auf derselben Kubernetes-API, sodass gemischte Workloads aus Containern und VMs vollwertig unterstützt werden. Nutanix deckt Container über die Nutanix Kubernetes Platform ab, ein leistungsfähiges Produkt, aber eine separate Control Plane, die betrieben und lizenziert werden muss."
+  - q: "Sollten wir von Nutanix wegmigrieren?"
+    a: "Nicht immer. Wenn Ihre Nutanix-Umgebung gut läuft und die Wirtschaftlichkeit stimmt, ist Bleiben vernünftig. Die Alternativen-Analyse richtet sich an Organisationen mit konkretem Anlass: Souveränitätsbedenken wegen Closed Source, Appliance-Lock-in, die Preisentwicklung der Subscriptions oder der Bedarf an einem mandantenfähigen Service-Provider-Modell."
+  - q: "Bietet Ænix kommerziellen Support für Cozystack?"
+    a: "Ja. Ænix hat Cozystack initiiert und bietet Enterprise-Support dafür an: Die Stufen beginnen bei Basic mit 1.250 USD pro 10 Nodes und Monat (jährliche Abrechnung), danach Standard mit 3.000 USD und Plus mit 5.500 USD sowie eine individuelle Enterprise-Stufe. Die Ænix Private Cloud Platform für regulierte Unternehmen wird nach einem Platform Readiness Assessment per RFP angeboten."
+  - q: "Welches Networking und welchen Storage nutzt Cozystack?"
+    a: "Cozystack nutzt Cilium (eBPF) für das Networking und LINSTOR mit DRBD für replizierten Block-Storage, beides auf Standard-Hardware. Das unterscheidet sich vom integrierten proprietären Stack von Nutanix, der an dessen Appliance-Modell gebunden ist."
 ---
 
-**Nutanix HCI ist operativ einfach, ausgereift und integriert. Die Trade-offs: Closed Source, Appliance-getriebener Lock-in und ein Subscription-Modell, das ähnlichen Preisdruck wie bei VMware folgt. Für Organisationen, die vergleichbare VM-Plattform-Fähigkeiten mit Open-Source-Foundations und Multi-Tenant-Cloud-Builder-Features suchen, ist Cozystack die realistische Alternative.**
+**Nutanix HCI ist im Betrieb einfach, ausgereift und integriert. Die Kehrseite: Closed Source, Lock-in über das Appliance-Modell und ein Subscription-Modell, das einer ähnlichen Preisdynamik folgt wie bei VMware. Für Organisationen, die vergleichbare Fähigkeiten einer VM-Plattform auf Open-Source-Basis und mit mandantenfähigen Cloud-Builder-Funktionen suchen, ist Cozystack die realistische Alternative.**
 
-<div class="arch-section__fig">
-<div class="diagram">
-<div class="diagram__node"><b>Nutanix HCI</b><div class="diagram__chips"><span>Closed Source</span><span>Appliance-Lock-in</span><span>Subscription-Modell</span></div></div>
-<div class="diagram__conn">Migration</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Private Cloud Platform</b><div class="diagram__chips"><span>Cozystack</span><span>KubeVirt</span><span>Apache 2.0</span></div></div>
-<div class="diagram__conn">liefert</div>
-<div class="diagram__node"><b>souveräne Multi-DC-Private-/Hybrid-Cloud</b><div class="diagram__chips"><span>kundenkontrollierte Hardware</span><span>DORA</span><span>NIS2</span></div></div>
-</div>
-</div>
-
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — souveräne Multi-DC-Private-/Hybrid-Cloud, kundenkontrollierte Hardware (kein Nutanix-Appliance-Lock-in), DORA-/NIS2-Alignment.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — souveräne Private-/Hybrid-Cloud über mehrere Rechenzentren auf Hardware unter Ihrer Kontrolle (kein Nutanix-Appliance-Lock-in), darauf ausgelegt, Ihre Arbeit an DORA und NIS2 zu unterstützen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Review buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform/">Nutanix vs Cozystack vs VMware →</a>
+  <a class="cta-primary" href="/de/kontakt/?type=architecture-review">Architektur-Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform/">Nutanix vs. Cozystack vs. VMware →</a>
 </div>
 
 ---
 
-## Wann Nutanix nicht die richtige Antwort sein könnte
+<div class="band-fullbleed band-fullbleed--tint"><div class="band-fullbleed__inner">
 
-- **Closed-Source-Bedenken** — Souveränität, Auditierbarkeit und Lieferketten-Transparenz sprechen für Open Source.
-- **Appliance-Lock-in** — der Hardware-Refresh bindet Sie an das Appliance-Modell von Nutanix.
-- **Trajektorie der Subscription-Preise** — ähnliche Dynamiken wie bei anderen kommerziellen HCI-Anbietern.
-- **Multi-Tenant-Service-Provider-Modell** — Nutanix ist auf VM-Mandantenfähigkeit fokussiert; ein kundenorientiertes Service-Provider-Modell braucht mehr.
-- **Vereinheitlichte Container- und VM-Workloads** — Nutanix ist VM-zentriert; das native Container-Handling ist schwächer.
+## Wann Nutanix möglicherweise nicht die richtige Antwort ist
 
-Wenn Ihre bestehende Nutanix-Bereitstellung gut läuft und die Wirtschaftlichkeit für eine Fortsetzung spricht, bleiben Sie. Die Alternativen-Analyse richtet sich an Organisationen, bei denen einer der obigen Punkte den Anstoß gibt.
+- **Bedenken wegen Closed Source** — Souveränität, Auditierbarkeit und Transparenz der Lieferkette sprechen für Open Source.
+- **Bindung an zertifizierte Nodes** — der Hardware-Refresh findet innerhalb der Kompatibilitätsliste von Nutanix statt, bei dessen OEM-Partnern statt mit jedem Server, den Sie kaufen können.
+- **Preisentwicklung der Subscriptions** — ähnliche Dynamik wie bei anderen kommerziellen HCI-Anbietern.
+- **Mandantenfähiges Service-Provider-Modell** — Nutanix-Projects delegieren gut innerhalb einer Organisation; ein Modell mit externen Kunden, denen Sie nicht vertrauen können, braucht mehr.
+- **Gemeinsame Workloads aus Containern und VMs** — die Nutanix Kubernetes Platform ist eine zweite Control Plane neben AHV, nicht dieselbe.
+
+Wenn Ihre bestehende Nutanix-Umgebung gut läuft und die Wirtschaftlichkeit für eine Fortsetzung spricht, bleiben Sie. Die Alternativen-Analyse richtet sich an Organisationen, bei denen einer der obigen Punkte den Anstoß gibt.
+
+</div></div>
 
 ---
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
+## Wo Nutanix wirklich besser ist
 
-## Cozystack vs Nutanix AHV
+Nutanix bietet das beste Betriebserlebnis aller Plattformen auf dieser Website, und zwar mit deutlichem Abstand. Im Einzelnen:
+
+- **Day-2-Betrieb auf Appliance-Niveau.** Prism Central mit Ein-Klick-Upgrades über den Life Cycle Manager, der Firmware, Hypervisor und AOS gemeinsam in der richtigen Reihenfolge aktualisiert. Cozystack-Upgrades sind Kubernetes-Upgrades: deklarativ, aber die Reihenfolge legen Sie selbst fest.
+- **Storage ohne Designentscheidung.** Inline- und Post-Process-Deduplizierung, Kompression, Erasure Coding und Tiering sind in AOS enthalten, abgestimmt und standardmäßig aktiv. LINSTOR/DRBD ist schnell und einfach, verlangt aber ein eigenes Storage-Design.
+- **Ein einziger verantwortlicher Anbieter.** Eine Support-Nummer für Hardware, Hypervisor, Storage und Management, mit einer Support-Organisation, die sich ihren Ruf verdient hat. Bei Cozystack gehört die Hardware Ihnen, und der Plattform-Support ist ein separater Vertrag.
+- **Ergänzende Produkte, die funktionieren.** Nutanix Database Service (ehemals Era), Files, Objects und Nutanix DR mit Metro Availability sind ausgereift und integriert.
+- **Zeit bis zum ersten Cluster.** Wenige Stunden, auch für jemanden, der nie ein Buch über Platform Engineering gelesen hat.
+
+Wenn Nutanix gut läuft und die Verlängerung bezahlbar ist, ist Bleiben die richtige Antwort. Diese Seite richtet sich an Umgebungen, in denen Souveränität, Hardware-Freiheit, Anforderungen eines mandantenfähigen Service-Providers oder die Kosten zweier Control Planes diese Rechnung verändert haben.
+
+---
+
+## Cozystack vs. Nutanix AHV
 
 | | Nutanix AHV | Cozystack |
 |---|---|---|
 | **Lizenz** | Subscription | Apache 2.0 |
-| **Foundation** | Proprietäres KVM (AHV) | KubeVirt (KVM) auf Kubernetes |
+| **Fundament** | Proprietäres KVM (AHV) | KubeVirt (KVM) auf Kubernetes |
 | **Open Source** | Nein | Vollständig |
-| **Multi-Tenancy** | Limitiert | Tenant CRD (produktive Multi-Tenancy) |
-| **Container** | Limitiert (Nutanix Kubernetes Engine als Erweiterung) | Nativ |
-| **Hardware** | Appliance + zertifizierte Hardware | Commodity |
-| **Am besten für** | Bestehende Nutanix-HCI-Kunden | Service-Provider, regulierte Multi-Tenancy, modernes Greenfield |
+| **Mandantenfähigkeit** | Projects, Categories und RBAC: gute Delegation innerhalb einer Organisation | Verschachtelte Tenant-CRD, Quotas und eigenes Audit pro Tenant |
+| **Container** | Nutanix Kubernetes Platform (separates Produkt) | Nativ, dieselbe Control Plane wie für VMs |
+| **Hardware** | Liste zertifizierter Nodes (Nutanix und OEM-Partner) | Standard-Hardware |
+| **Am besten geeignet für** | Unternehmen, die einen einzigen verantwortlichen Anbieter und möglichst wenig Day-2-Aufwand wollen | Service-Provider, regulierte Mandantenfähigkeit, modernes Greenfield |
 
-</div>
-</div>
+<div class="arch-section__fig"><div class="diagram">
+<div class="diagram__node"><b>Nutanix AHV</b><div class="diagram__chips"><span>Proprietäres KVM</span><span>Liste zertifizierter Nodes</span><span>Subscription pro Node</span></div></div>
+<div class="diagram__conn">ersetzt durch</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack</b><div class="diagram__chips"><span>KubeVirt (KVM)</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span><span>Tenant-CRD</span></div></div>
+<div class="diagram__conn">läuft auf</div>
+<div class="diagram__node"><b>Standard-Hardware</b><div class="diagram__chips"><span>Keine zertifizierte Hardware nötig</span><span>Service-Provider</span><span>Regulierte Mandantenfähigkeit</span></div></div>
+</div></div>
 
 ---
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-- **[Nutanix vs Cozystack vs VMware](/de/blog/2026/05/nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform/)**
+- **[Nutanix-Migrations-Hub](/de/migration/nutanix/)**
+- **[Nutanix vs. Cozystack vs. VMware](/de/blog/2026/05/nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform/)**
 - **[VMware-Alternative](/de/alternativen/vmware-alternative/)**
 - **[Cozystack](/de/produkte/cozystack/)**
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

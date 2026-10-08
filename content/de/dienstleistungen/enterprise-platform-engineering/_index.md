@@ -1,95 +1,105 @@
 ---
-title: "Enterprise Platform Engineering — interne Plattformen für Organisationen im großen Maßstab"
-description: "Enterprise Platform Engineering ist die Disziplin des Aufbauens und Betreibens interner Plattformen für Organisationen mit mehreren Produkt-Teams,..."
+title: "Enterprise Platform Engineering — interne Plattformen für große Organisationen"
+seo_title: "Enterprise Platform Engineering für große Organisationen"
+description: "Interne Plattformen im Enterprise-Maßstab, bei denen Mandantenfähigkeit, Trennung von Geschäftsbereichen, Governance und Multi-Region-Betrieb Pflicht sind."
 related_pages:
-  - /de/dienstleistungen/platform-engineering
-  - /de/dienstleistungen/internal-developer-platform
+  - /de/dienstleistungen/platform-engineering/
+  - /de/dienstleistungen/internal-developer-platform/
   - /de/produkte/private-cloud-platform/
-  - /de/produkte/private-cloud-platform/
-  - /de/produkte/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 hreflang_en: /services/enterprise-platform-engineering/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Enterprise Platform Engineering ist die Disziplin, interne Plattformen für große Organisationen mit mehreren Produkt-Teams, BU-übergreifender Isolation und dauerhaft hohem Maßstab aufzubauen und zu betreiben. Sie unterscheidet sich vom Platform Engineering für ein einzelnes Team: Multi-Tenancy, Governance und Operations-at-Scale sind nicht verhandelbar. Zielgruppe sind Engineering-Organisationen mit 5+ Produkt-Teams, Multi-BU-Trennung, cross-jurisdiktionellen Souveränitätsanforderungen und Multi-Cluster-/Multi-Region-Betrieb. Aenix liefert dies mit Cozystack — strukturelle Mandantenfähigkeit über das Tenant CRD, KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium-eBPF-Networking und LINSTOR/DRBD-Storage — produktisiert als Ænix Platform Enterprise und Developer Self-Service inklusive Implementierungs- und Betriebs-Services.**
+  **Enterprise Platform Engineering ist die Disziplin, interne Plattformen für große Organisationen aufzubauen und zu betreiben, in denen viele Produktteams über mehrere Geschäftsbereiche, Regionen und Rechtsräume hinweg arbeiten. In diesem Maßstab sind Mandantenfähigkeit, Governance, Auditfähigkeit und Betrieb im großen Stil Pflicht, nicht optional. Zielgruppe sind Engineering-Organisationen mit rund 500 und mehr Mitarbeitenden, in denen sich fünf oder mehr Teams eine Plattform teilen und mehrere Cluster in mehreren Regionen betrieben werden. Ænix setzt das auf Cozystack um, einem CNCF-Sandbox-Projekt unter Apache 2.0, das VMs und Container über KubeVirt auf einer Kubernetes-API betreibt, mit Cilium-Networking (eBPF), LINSTOR/DRBD-Storage und struktureller Mandantenfähigkeit über das Tenant-CRD. Ænix kombiniert ein Platform Readiness Assessment, eine Ænix-Plattform und praktisches Engineering zu einer Plattform, die als Produkt geführt wird — mit Flottenmanagement und an die Identitätsverwaltung angebundenem RBAC.**
 quick_facts:
   - label: "Was es ist"
-    value: "Die Disziplin, interne Plattformen für große Organisationen mit mehreren Produkt-Teams, BU-übergreifender Isolation und dauerhaft hohem Maßstab aufzubauen und zu betreiben."
+    value: "Die Disziplin, interne Developer-Plattformen für große Organisationen mit vielen Teams und mehreren Geschäftsbereichen dauerhaft im großen Maßstab aufzubauen und zu betreiben."
+  - label: "Für wen"
+    value: "Engineering-Organisationen mit rund 500+ Mitarbeitenden, in denen sich 5+ Produktteams eine Plattform teilen, Geschäftsbereiche getrennt werden müssen und mehrere Cluster bzw. Regionen betrieben werden."
+  - label: "Wie Ænix liefert"
+    value: "Ein Platform Readiness Assessment über 14 oder 28 Tage, danach 3–12 Monate Aufbau auf Cozystack je nach Umfang; Programme über mehrere Regionen: 3–6 Monate Pilot, danach 9–18 Monate."
+  - label: "Mandantenfähigkeit"
+    value: "Strukturell über das Tenant-CRD von Cozystack; gleichwertige Abstraktionen, wo andere Stacks im Einsatz sind (z. B. das Project-CRD von OpenShift)."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
-  - label: "Zielgruppe"
-    value: "Engineering-Organisationen mit 5+ Produkt-Teams, Multi-BU-Trennung, 500+ Engineers, Multi-Cluster-/Multi-Region-Betrieb"
-  - label: "Schlüsselfunktion"
-    value: "Strukturelle Multi-Tenancy über das Tenant CRD, KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium-eBPF-Networking, LINSTOR/DRBD-Storage"
-  - label: "Abgrenzung"
-    value: "Anderer Scope als Platform Engineering für ein einzelnes Team — Governance, Audit und Operations-at-Scale stehen im Zentrum"
-  - label: "Engagement"
-    value: "Ænix Private Cloud Platform samt Developer-Self-Service-Schicht plus Implementierungs- und Betriebs-Services; Service-Stufen ab 1.250 $/Monat (Basic, 10 Nodes)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
 faq:
-  - q: "Worin unterscheidet sich Enterprise Platform Engineering von normalem Platform Engineering?"
-    a: "Der Scope ist breiter: Statt einer Plattform für ein Team geht es um geteilte Plattformen für mehrere Produkt-Teams. Multi-Tenancy, Governance, Audit und Multi-Region-Operations sind nicht verhandelbar. Für kleineren Scope eignen sich die Platform Engineering Services."
-  - q: "Ab wann lohnt sich der Enterprise-Scope?"
-    a: "Wenn 5+ Produkt-Teams eine Plattform teilen, eine Multi-BU-Trennung nötig ist, cross-jurisdiktionelle Souveränitätsbeschränkungen gelten, die Engineering-Organisation 500+ Personen umfasst oder Multi-Cluster-/Multi-Region-Betrieb erforderlich ist."
-  - q: "Wie löst Cozystack Mandantenfähigkeit bei Enterprise-Scale?"
-    a: "Cozystack stellt Multi-Tenancy strukturell über das Tenant CRD bereit. Jeder Mandant erhält isolierte Ressourcen auf einer gemeinsamen Kubernetes-API, mit KubeVirt für VMs und Container, Cilium-eBPF-Networking und LINSTOR/DRBD-Storage — Grundlage für BU-übergreifende Trennung."
-  - q: "Welche Lizenz gilt und gibt es Core-basierte Kosten?"
-    a: "Cozystack steht unter Apache 2.0 ohne CPU- oder Core-basierte Lizenzierung. Aenix verkauft die produktisierte Ænix Platform plus Services. Die Service-Stufen beginnen bei 1.250 $/Monat (Basic, 10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise nach Vereinbarung."
-  - q: "Welche Ænix-Plattform passt zu Enterprise Platform Engineering?"
-    a: "Die Private Cloud Platform für regulierte Multi-DC-Plattformen und ihre Developer-Self-Service-Schicht für produkt-engineering-getriebene Internal Developer Platforms at Enterprise Scale. Beide bauen auf Cozystack auf und werden durch Implementierungs- und Betriebs-Services ergänzt."
-  - q: "Wie wird Governance und Compliance bei Enterprise-Scale abgebildet?"
-    a: "Über Compliance-by-Design: Governance und Audit sind strukturell verankert, SLO-Disziplin gilt über alle Produkt-Teams hinweg, und Multi-Region-Operations sorgen für Konsistenz über Geografien. Die Plattform wird als Produkt mit Roadmap und internem NPS betrieben."
+  - q: "Worin unterscheidet sich Enterprise Platform Engineering von Platform Engineering für ein einzelnes Team?"
+    a: "Im Umfang. Platform Engineering für ein Team optimiert für eines oder wenige Teams. Im Enterprise-Maßstab kommen unverzichtbare Mandantenfähigkeit, Trennung zwischen Geschäftsbereichen, Governance, Auditfähigkeit und Multi-Cluster-Betrieb über Regionen und Rechtsräume hinzu. Für 1–3 Teams bietet Ænix stattdessen seine regulären Platform Engineering Services an."
+  - q: "Wann braucht eine Organisation tatsächlich den Enterprise-Umfang?"
+    a: "Typischerweise, wenn sich fünf oder mehr Produktteams eine Plattform teilen, mehrere Geschäftsbereiche getrennt werden müssen, Souveränitätsvorgaben aus verschiedenen Rechtsräumen gelten, die Engineering-Organisation 500 Personen oder mehr umfasst oder der Betrieb mehrere Cluster und Regionen umspannt. Darunter passt das reguläre Platform-Engineering-Projekt besser."
+  - q: "Mit welcher Technologie baut Ænix Enterprise-Plattformen?"
+    a: "Mit Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0. Es betreibt VMs und Container über KubeVirt auf einer Kubernetes-API, nutzt Cilium (eBPF) für das Networking, LINSTOR/DRBD für Storage und das Tenant-CRD für strukturelle Mandantenfähigkeit. Ænix ergänzt darauf seine kommerziellen Plattformen, Support und Engineering-Leistungen."
+  - q: "Wie lange dauert ein Enterprise-Plattformprojekt?"
+    a: "Es beginnt mit einem Platform Readiness Assessment, das den Umfang klärt. Der Aufbau dauert je nach Umfang typischerweise 3–12 Monate; Programme über mehrere Regionen laufen mit 3–6 Monaten Pilot und danach 9–18 Monaten, weil Flottenmanagement, Governance und Konsistenz über Regionen hinweg zusätzlichen Aufwand bedeuten."
+  - q: "Wie funktionieren Governance und Identitäten im Enterprise-Maßstab?"
+    a: "RBAC wird an die Identitätsverwaltung des Unternehmens angebunden, und die Plattform ist auf Auditfähigkeit ausgelegt, um Compliance-Anforderungen zu unterstützen. Die Mandantenfähigkeit ist strukturell statt konventionsbasiert: Geschäftsbereiche und Teams sind auf Plattformebene isoliert, statt sich auf manuelle Prozesse zu verlassen."
+  - q: "Gibt es Lizenzkosten pro Core oder CPU?"
+    a: "Nein. Cozystack steht unter Apache 2.0 ohne Lizenzkosten pro CPU oder Core. Ænix verkauft darauf Abonnements (Support-Stufen und kommerzielle Module) sowie Dienstleistungen, keine Lizenzen mit Kosten pro Core."
 ---
 
-**Enterprise Platform Engineering ist die Disziplin des Aufbauens und Betreibens interner Plattformen für Organisationen mit mehreren Produkt-Teams, Cross-BU-Isolation und dauerhaft hohem Maßstab. Es ist anderer Scope als „Platform Engineering für ein einzelnes Team“ — Multi-Tenancy, Governance und Ops-at-Scale sind nicht verhandelbar.**
+**Enterprise Platform Engineering ist die Disziplin, interne Plattformen für Organisationen mit mehreren Produktteams, getrennten Geschäftsbereichen und dauerhaft großem Maßstab aufzubauen und zu betreiben. Das ist ein anderer Umfang als „Platform Engineering für ein einzelnes Team“ — Mandantenfähigkeit, Governance und Betrieb im großen Stil sind nicht verhandelbar.**
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Multi-DC-Plattformen; **[Developer-Self-Service-Schicht](/de/produkte/private-cloud-platform/)** für produkt-engineering-led IDP at enterprise scale.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — regulierter Betrieb über mehrere Rechenzentren plus die Developer-Self-Service-Schicht, die eine Enterprise-IDP braucht.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/dienstleistungen/platform-engineering/">Platform Engineering Services →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/platform-engineering/">Platform Engineering →</a>
 </div>
+
+---
+
+## Wann der Enterprise-Umfang zählt
+
+- 5+ Produktteams teilen sich eine Plattform
+- Trennung mehrerer Geschäftsbereiche erforderlich
+- Souveränitätsvorgaben aus mehreren Rechtsräumen
+- Engineering-Organisation mit 500+ Mitarbeitenden
+- Betrieb über mehrere Cluster und Regionen
+
+Für einen kleineren Umfang (ein Team oder 1–3 Teams) siehe die **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)** im regulären Umfang.
 
 ---
 
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wann Enterprise-Scope zählt
+## Was im Enterprise-Maßstab anders ist
 
-- 5+ Produkt-Teams mit geteilter Plattform
-- Multi-BU-Trennung erforderlich
-- Cross-jurisdiktionelle Souveränitätsbeschränkungen
-- 500+ Engineering-Organisation
-- Multi-Cluster / Multi-Region-Operations
-
-Für kleineren Scope siehe **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)**.
+- **Strukturelle Mandantenfähigkeit** — Tenant-CRD auf Cozystack; Project-CRD bei OpenShift; gleichwertige Abstraktionen.
+- **Eingebundene Governance** — RBAC an die Identitätsverwaltung des Unternehmens angebunden; Auditfähigkeit für Compliance.
+- **Multi-Cluster-Betrieb** — Flottenmanagement, Föderation, Konsistenz über Regionen.
+- **Plattform als Produkt** — interne Produktmanagement-Disziplin.
+- **Kapazitätsplanung** — vierteljährliches Review auf Organisationsebene.
 
 </div>
 </div>
 
 ---
 
-## Was bei Enterprise-Scale anders ist
-
-- **Multi-Tenancy strukturell** — Tenant CRD auf Cozystack
-- **Governance und Audit** — Compliance-by-Design
-- **Multi-Region-Operations** — Konsistenz über Geografien
-- **SLO-Disziplin** über Produkt-Teams
-- **Plattform-as-Product** — Internal NPS, Roadmap-Disziplin
+## Ablauf des Projekts
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>5+ Produkt-Teams, Multi-BU</b><div class="diagram__chips"><span>Cross-jurisdiktionelle Souveränität</span><span>Multi-Cluster / Multi-Region</span></div></div>
-<div class="diagram__conn">teilen</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform auf Cozystack</b><div class="diagram__chips"><span>Tenant CRD (strukturelle Multi-Tenancy)</span><span>KubeVirt (VMs und Container)</span><span>Cilium-eBPF-Networking</span><span>LINSTOR/DRBD-Storage</span></div></div>
-<div class="diagram__conn">stellt bereit</div>
-<div class="diagram__node"><b>Isolierte Ressourcen je Mandant</b><div class="diagram__chips"><span>auf einer gemeinsamen Kubernetes-API</span><span>BU-übergreifende Trennung</span></div></div>
+<div class="diagram__node"><b>Platform Readiness Assessment</b><div class="diagram__chips"><span>Arbeitspakete für den Enterprise-Maßstab</span></div></div>
+<div class="diagram__conn">klärt den Umfang für</div>
+<div class="diagram__node"><b>Umsetzung in Phase 2</b><div class="diagram__chips"><span>3–12 Monate</span></div></div>
+<div class="diagram__conn">baut</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Plattform auf Cozystack</b><div class="diagram__chips"><span>Mandantenfähigkeit über das Tenant-CRD</span><span>Cilium (eBPF)</span><span>LINSTOR/DRBD</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Enterprise-Plattform als Produkt</b><div class="diagram__chips"><span>Flottenmanagement</span><span>RBAC mit Identitätsanbindung</span><span>Auditfähigkeit</span></div></div>
 </div>
+</div>
+
+Reguläres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Schwerpunkt auf Arbeitspaketen für den Enterprise-Maßstab. Der Aufbau dauert je nach Umfang typischerweise 3–12 Monate; Programme über mehrere Regionen länger.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt). Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*
+*Ænix hat [Cozystack](https://cozystack.io) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

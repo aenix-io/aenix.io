@@ -1,121 +1,58 @@
 ---
-title: "Private Cloud aufbauen — Engineers, die das in Produktion ausgeliefert haben"
-description: "Die Phrase \"Private Cloud aufbauen\" klingt 2026 simpel. Die Realität: es ist gleichzeitig ein Architektur-Problem, ein operatives Disziplin-Problem und ein..."
+title: "Private Cloud aufbauen — mit Engineers, die das in Produktion umgesetzt haben"
+seo_title: "Private Cloud aufbauen mit den Engineers von Ænix"
+description: "Private Cloud von Anfang bis Ende auf Hardware unter Ihrer Kontrolle: Sizing, Plattform, Storage, Netzwerk, Mandantenfähigkeit und Übergabe an Ihr eigenes Team."
 related_pages:
-  - /de/dienstleistungen/private-cloud-consulting
-  - /de/loesungen/cloud-repatriation
+  - /de/dienstleistungen/private-cloud-consulting/
+  - /de/loesungen/cloud-repatriation/
   - /de/produkte/private-cloud-platform/
   - /de/produkte/public-cloud-platform/
-  - /de/produkte/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/build-private-cloud/
 direct_answer: |
-  **Eine Private Cloud aufzubauen bedeutet 2026, eine eigene Cloud-Plattform für virtuelle Maschinen und Container auf eigener oder gemieteter Hardware zu betreiben — mit voller Daten- und Kostenkontrolle statt Public-Cloud-Abhängigkeit. Aenix baut Private Clouds end-to-end auf [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt (Apache 2.0): KubeVirt vereint VMs und Container auf einer Kubernetes-API, Cilium (eBPF) liefert das Netzwerk, LINSTOR/DRBD den Storage und das Tenant-CRD die Mandantenfähigkeit. Die Arbeit passt für Teams mit Plattform-Engineering-Funktion und konkretem Trigger — VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads oder FinOps-Klippe. Aenix liefert Assessment, Pilot, vollständigen Build und optional Managed Operations.**
+  **Eine Private Cloud aufzubauen heißt, Infrastruktur im Cloud-Stil auf Hardware unter Ihrer Kontrolle zu entwerfen, bereitzustellen und zu betreiben — Plattform, Storage, Netzwerk, Mandantenfähigkeit, Observability und Compliance als ein zusammenhängendes System statt als einmaliges Projekt. Das passt zu Organisationen mit einer Platform-Engineering-Funktion und einem klaren Anlass wie dem VMware-Ausstieg, einer Souveränitätsvorgabe, KI-/GPU-Workloads oder aus dem Ruder laufenden Public-Cloud-Kosten. Ænix baut Private Clouds von Anfang bis Ende auf Cozystack, einem Open-Source-CNCF-Projekt, das wir mit Service-Providern, Banken, Telcos und KI-Betreibern produktiv betreiben. Der Stack nutzt KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium-Networking (eBPF) und LINSTOR/DRBD-Storage; nach der Übergabe betreibt das Team des Kunden die Plattform selbst.**
+
 quick_facts:
   - label: "Was es ist"
-    value: "End-to-End-Aufbau einer Private Cloud auf Cozystack — VMs und Container auf einer Kubernetes-API, betrieben auf eigener oder gemieteter Hardware"
+    value: "Ein End-to-End-Projekt, um eine produktive Private Cloud auf Hardware unter Kontrolle des Kunden zu entwerfen, aufzubauen und zu übergeben, gebaut auf Cozystack."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
-  - label: "Technischer Stack"
-    value: "KubeVirt für VMs und Container, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
-  - label: "Zielgruppe"
-    value: "Teams mit Plattform-Engineering-Funktion und konkretem Trigger: VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads oder Kostenoptimierung"
-  - label: "Engagement-Phasen"
-    value: "Discovery-Call, Platform Readiness Assessment (14 oder 28 Tage, Festpreis), Pilot (3-6 Monate), vollständiger Build (9-18 Monate), optional Managed Operations"
-  - label: "Produkt"
-    value: "Ænix Platform — produktisierte Cloud-in-a-Box in drei Plattformen; Preise Basic 1.250 $/Mon. (10 Nodes) / Standard 3.000 $ / Plus 5.500 $ / Enterprise Custom"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Organisationen, die eine Platform-Engineering-Funktion haben (oder aufbauen) und einen konkreten Anlass: VMware-Ausstieg, Souveränitätsvorgabe, KI-/GPU-Workloads oder sprunghaft steigende Public-Cloud-Kosten."
+  - label: "Zeitplan"
+    value: "Kostenloses 30-minütiges Discovery-Gespräch, Assessment über 14 oder 28 Tage, danach 3–12 Monate Aufbau, optional laufende Managed Operations."
+  - label: "Technologie-Stack"
+    value: "Standardmäßig Cozystack auf Talos; KubeVirt für VMs und Container auf einer Kubernetes-API; Cilium-Networking (eBPF); LINSTOR/DRBD-Storage (Piraeus); Mandantenfähigkeit über das Tenant-CRD."
+  - label: "Eigentum"
+    value: "Die Plattform basiert auf Open Source und wird nach dem Wissenstransfer vom eigenen Team des Kunden betrieben — die Cloud gehört dem Kunden, nicht Ænix."
+
 faq:
-  - q: "Was bedeutet es, eine Private Cloud aufzubauen?"
-    a: "Eine eigene Cloud-Plattform für VMs und Container auf eigener oder gemieteter Hardware zu betreiben — mit Self-Service, Mandantenfähigkeit und Automatisierung wie bei einer Public Cloud, aber unter voller Daten- und Kostenkontrolle. Aenix realisiert das auf Cozystack, einem CNCF-Open-Source-Projekt."
-  - q: "Für wen lohnt sich der Aufbau einer Private Cloud?"
-    a: "Für Teams, die eine Plattform-Engineering-Funktion haben oder aufbauen und einen konkreten Trigger besitzen: VMware-Ausstieg, Souveränitätsmandat, KI/GPU-Workloads im großen Maßstab oder eine FinOps-Klippe. Die Ökonomie muss dedizierte Infrastruktur tragen — dauerhaft ausgelastete Workloads, regulierte Daten oder GPU-Lasten."
-  - q: "Welche Technologie steckt hinter der Aenix Private Cloud?"
-    a: "Cozystack (Apache 2.0). KubeVirt vereint VMs und Container auf einer Kubernetes-API, Cilium (eBPF) liefert das Netzwerk, LINSTOR/DRBD den replizierten Storage und das Tenant-CRD die Mandantenfähigkeit. Alles auf Standard-Kubernetes, ohne proprietären Lock-in."
-  - q: "Wie läuft ein Engagement mit Aenix ab?"
-    a: "In Phasen: kostenloser Discovery-Call (30 min), Platform Readiness Assessment (14 oder 28 Tage, Festpreis), Pilot-Engagement (3-6 Monate), vollständiger Build (9-18 Monate) und optional laufende Managed Operations als Retainer."
-  - q: "Was kostet die Ænix Platform?"
-    a: "Die produktisierte Ænix Platform gibt es in drei Plattformen mit gestaffelten Support-Preisen: Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Aufwand. Der projektbasierte Build wird separat als Assessment, Pilot und Vollausbau kalkuliert."
-  - q: "Entsteht durch Cozystack ein Vendor-Lock-in?"
-    a: "Nein. Cozystack ist Apache-2.0-lizenziert und ein CNCF-Projekt ohne CPU- oder Core-basierte Lizenzierung. Es baut auf Standard-Kubernetes-APIs und etablierten Upstream-Komponenten (KubeVirt, Cilium, LINSTOR) auf, sodass Sie die Plattform auch ohne Aenix weiterbetreiben können."
+  - q: "Was umfasst ein Projekt zum Aufbau einer Private Cloud konkret?"
+    a: "Hardware-Sizing und Herstellerauswahl, die Plattformschicht (Cozystack auf Talos oder als Erweiterung eines bestehenden Kubernetes), Storage- und Backup-Architektur, Netzwerk, Mandantenfähigkeit über das Tenant-CRD, Observability und Betriebsprozesse, Self-Service-Golden-Paths, Compliance-Arbeit sowie Wissenstransfer, damit Ihr Team die Plattform selbst betreibt."
+  - q: "Wie lange dauert der Aufbau einer Private Cloud mit Ænix?"
+    a: "Ein kostenloses 30-minütiges Discovery-Gespräch klärt die Eignung, ein Assessment über 14 oder 28 Tage liefert Architektur, Sizing und Aufbauplan, und der Aufbau selbst dauert je nach Umfang 3–12 Monate. Wer die Plattform nicht selbst betreiben möchte, kann danach laufende Managed Operations beauftragen."
+  - q: "Ist die Private Cloud an Ænix gebunden?"
+    a: "Nein. Sie basiert auf Cozystack, einem Open-Source-CNCF-Projekt unter Apache 2.0 ohne Lizenzkosten pro CPU oder Core. Nach dem Wissenstransfer betreibt Ihr eigenes Plattform-Team die Cloud. Bei Ænix prägen keine Partnerschaftsinteressen mit Hyperscalern die Architektur."
+  - q: "Mit welcher Technologie baut Ænix eine Private Cloud?"
+    a: "Standardmäßig mit Cozystack auf Talos: KubeVirt betreibt virtuelle Maschinen und Container auf einer Kubernetes-API, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD über Piraeus den Storage. Mandantenfähigkeit, RBAC, Quotas und Audit laufen über das Tenant-CRD."
+  - q: "Wann lohnt sich eine eigene Private Cloud statt der Public Cloud?"
+    a: "Wenn Sie eine Platform-Engineering-Funktion haben oder aufbauen, einen konkreten Anlass wie den VMware-Ausstieg oder eine Souveränitätsvorgabe haben, dauerhafte Workloads oder KI/GPU in einem Umfang betreiben, bei dem sich dedizierte Infrastruktur rechnet, und ein Team haben, das die Plattform nach der Übergabe betreiben kann. Das Assessment klärt die Eignung, bevor der Aufbau beginnt."
 ---
 
-**Die Phrase „Private Cloud aufbauen“ klingt so, als sollte sie 2026 unkompliziert sein. Die Realität: es ist gleichzeitig ein Architektur-Problem, ein Problem operativer Disziplin und ein Team-Kapazitäts-Problem. Richtig umgesetzt entsteht eine Plattform, die über Jahre an Wert gewinnt. Schlecht umgesetzt entstehen operative Altlasten und den nächsten Notfall.**
+**„Eine Private Cloud aufbauen“ klingt, als müsste das 2026 eine einfache Sache sein. In Wirklichkeit ist es ein Architekturproblem, eine Frage der Betriebsdisziplin und eine Frage der Teamkapazität zugleich. Gut gemacht, entsteht eine Plattform, deren Wert über Jahre wächst. Schlecht gemacht, entstehen operative Altlasten und der nächste Notfall.**
 
-Ænix baut Private Clouds end-to-end auf Basis von [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das wir in Produktion mit Service-Anbietern, Banken, Telcos und KI-Operatoren betreiben.
+Ænix baut Private Clouds von Anfang bis Ende auf Basis von [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt, das wir mit Service-Providern, Banken, Telcos und KI-Betreibern produktiv betreiben.
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die private/hybride souveräne Cloud aufbauen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die eine Multi-Region-Plattform in Public-Cloud-Qualität brauchen.
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die eine private oder hybride souveräne Cloud aufbauen; **[Public Cloud Platform](/de/produkte/public-cloud-platform/)** für große Betreiber, die eine Multi-Region-Plattform auf dem Niveau einer Public Cloud brauchen.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/private-cloud-aufbauen-90-tage-playbook/">Das 90-Tage-Playbook lesen →</a>
-</div>
-
----
-
-## Wer baut erfolgreich eine Private Cloud
-
-Die Arbeit passt, wenn:
-
-- Sie haben eine Plattform-Engineering-Funktion oder bauen eine auf (das ist eine operative Verpflichtung, kein einmaliges Projekt).
-- Sie haben einen spezifischen Trigger — VMware-Ausstieg, Souveränitätsmandat, KI-Workloads, FinOps-Klippe.
-- Die Ökonomie unterstützt dedizierte Infrastruktur (dauerhaft ausgelastete Workloads, regulierte Daten oder KI/GPU im großen Maßstab).
-- Das Kunden-Team kann den Betrieb aufrechterhalten, nachdem Ænix geht (oder hat sich für Managed-Services entschieden).
-
-Wenn Sie bei einem dieser Punkte unsicher sind, klärt die Assessment-Phase dies, bevor der Aufbau beginnt.
-
----
-
-## Was ein „Private Cloud aufbauen“-Engagement tatsächlich abdeckt
-
-- **Hardware** — Sizing, Vendor-Auswahl, Datacenter- / Colocation-Arrangements.
-- **Plattform-Layer** — Cozystack auf Talos (Standard), oder Erweiterung des bestehenden Kubernetes.
-- **Storage** — LINSTOR/DRBD über den Piraeus-Operator (Standard in Cozystack), SeaweedFS für Objektspeicher, optional ein bestehendes Ceph-Cluster über Ceph CSI; Kapazitätsplanung; Backup-Architektur.
-- **Netzwerk** — Cilium, BGP-Fabric, MetalLB, Ingress.
-- **Multi-Tenancy** — Tenant CRD, RBAC, Quotas, Audit.
-- **Betrieb** — Observability-Stack, Runbooks, Rufbereitschaft, Incident-Response.
-- **Self-Service** — Golden Paths für Produkt-Teams.
-- **Compliance** — Souveränität, Audit-Bereitschaft je nach zuständigem Regulator.
-- **Wissenstransfer** — Ihr Plattform-Team betreibt sie nach der Übergabe.
-
-<div class="arch-section__fig">
-<div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Private Cloud auf Cozystack</b><div class="diagram__chips"><span>eigene oder gemietete Hardware</span><span>CNCF-Projekt, Apache 2.0</span></div></div>
-<div class="diagram__conn">vereint</div>
-<div class="diagram__node"><b>KubeVirt — VMs und Container</b><div class="diagram__chips"><span>Cilium (eBPF) Netzwerk</span><span>LINSTOR/DRBD Storage</span><span>auf einer Kubernetes-API</span></div></div>
-<div class="diagram__conn">liefert</div>
-<div class="diagram__node"><b>Tenant-CRD — Mandantenfähigkeit</b><div class="diagram__chips"><span>RBAC, Quotas, Audit</span><span>Self-Service Golden Paths</span></div></div>
-</div>
-</div>
-
----
-
-## Engagement-Struktur
-
-| Phase | Dauer | Ergebnis |
-|---|---|---|
-| Discovery | 30 min, kostenlos | Fit bestätigen |
-| Assessment | 14-28 Tage | Architektur, Sizing, Phase-2-Plan |
-| Build | 3-12 Monate | Produktive Private Cloud |
-| Betrieb (optional) | Laufend | Managed Service oder in-house |
-
-Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
-
----
-
-## Preise
-
-<div class="pricing-cards-2">
-
-### Assessment (14-28 Tage)
-**Auf Anfrage**
-
-### Build-Engagement (3-12 Monate)
-**Auf Anfrage**
-
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/private-cloud-aufbauen-90-tage-playbook/">Playbook lesen →</a>
 </div>
 
 ---
@@ -123,29 +60,79 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Warum Ænix
+## Wer eine Private Cloud erfolgreich aufbaut
 
-- **Cozystack-Contributors.** Wir haben die Plattform gebaut und betreiben sie.
-- **Kein Hyperscaler-Bias.** Keine Partnerschafts-Ökonomie prägt unsere Empfehlungen.
-- **Teams in der EU + Zentralasien.** Zeitzonen-freundlich.
-- **Open-Source-Plattform-Foundation** — die Cloud gehört Ihnen, nicht uns.
+Das Vorhaben passt, wenn:
+
+- Sie eine Platform-Engineering-Funktion haben oder aufbauen (das ist eine dauerhafte Betriebsverpflichtung, kein einmaliges Projekt).
+- Sie einen konkreten Anlass haben — VMware-Ausstieg, Souveränitätsvorgabe, KI-Workloads, sprunghaft steigende Cloud-Kosten.
+- Sich dedizierte Infrastruktur wirtschaftlich trägt (dauerhafte Workloads, regulierte Daten oder KI/GPU in größerem Umfang).
+- Ihr Team den Betrieb fortführen kann, wenn Ænix das Projekt abschließt (oder Sie sich für Managed Services entschieden haben).
+
+Wenn Sie sich bei einem dieser Punkte nicht sicher sind, klärt das Assessment die Frage, bevor der Aufbau beginnt.
 
 </div>
 </div>
 
 ---
 
-## Wie Sie starten
+## Was ein Projekt „Private Cloud aufbauen“ tatsächlich umfasst
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Discovery</b><div class="diagram__chips"><span>30 Min.</span><span>Kostenlos</span></div></div>
+<div class="diagram__conn">klärt die Eignung</div>
+<div class="diagram__node diagram__node--brand"><b>Aufbauprojekt</b><div class="diagram__chips"><span>Entwerfen</span><span>Aufbauen</span><span>Übergeben</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Private Cloud auf Cozystack</b><div class="diagram__chips"><span>VMs</span><span>Container</span><span>Eine Kubernetes-API</span></div></div>
+<div class="diagram__conn">auf</div>
+<div class="diagram__node"><b>Hardware unter Ihrer Kontrolle</b><div class="diagram__chips"><span>In Ihrem Besitz und Betrieb</span></div></div>
+</div>
+</div>
+
+- **Hardware** — Sizing, Herstellerauswahl, Vereinbarungen mit Rechenzentrum oder Colocation.
+- **Plattformschicht** — Cozystack auf Talos (Standard) oder Erweiterung eines bestehenden Kubernetes.
+- **Storage** — LINSTOR/DRBD über Piraeus; Kapazitätsplanung; Backup-Architektur.
+- **Netzwerk** — Cilium, BGP-Fabric, MetalLB, Ingress.
+- **Mandantenfähigkeit** — Tenant-CRD, RBAC, Quotas, Audit.
+- **Betrieb** — Observability-Stack, Runbooks, Rufbereitschaft, Incident Response.
+- **Self-Service** — Golden Paths für Produktteams.
+- **Compliance** — Souveränität, Auditfähigkeit gegenüber der jeweils zuständigen Aufsicht.
+- **Wissenstransfer** — Ihr Plattform-Team betreibt die Cloud nach der Übergabe.
+
+---
+
+## Ablauf des Projekts
+
+| Phase | Dauer | Ergebnis |
+|---|---|---|
+| Discovery | 30 Min., kostenlos | Eignung klären |
+| Assessment | 14 oder 28 Tage | Architektur, Sizing, Plan für Phase 2 |
+| Aufbau | 3–12 Monate | Produktive Private Cloud |
+| Betrieb (optional) | Laufend | Managed Service oder Eigenbetrieb |
+
+Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+
+---
+
+## Warum Ænix
+
+- **Die Cloud gehört Ihnen, nicht uns.** Die Basis steht unter Apache 2.0 ohne Lizenzkosten pro Core, und die Übergabe ist ein Liefergegenstand mit benannten internen Verantwortlichen, keine bloße Hoffnung.
+- **Wir haben die Basis gebaut.** Cozystack ist unser Code und läuft produktiv bei Service-Providern, Banken, Telcos und KI-Betreibern.
+
+---
+
+## So starten Sie
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 - **[Private Cloud aufbauen — 90-Tage-Playbook](/de/blog/2026/05/private-cloud-aufbauen-90-tage-playbook/)**
-- **[Private-Cloud-Consulting](/de/dienstleistungen/private-cloud-consulting/)** — breiterer Scope
+- **[Private Cloud Consulting](/de/dienstleistungen/private-cloud-consulting/)** — breiterer Umfang
 - **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** — wenn Sie die Public Cloud verlassen
 - **[Cozystack](/de/produkte/cozystack/)**
 
 ---
 
-*Ænix ist das Team hinter Cozystack (CNCF-Projekt), und wir bieten Ænix Platform — unser kommerzielles produktisiertes Angebot auf Basis von Cozystack, Kubernetes Certified Distribution.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Projekt und eine von der CNCF zertifizierte Kubernetes-Distribution, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix vertreibt drei darauf aufbauende Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*

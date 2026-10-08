@@ -1,6 +1,7 @@
 ---
-title: "Für Platform-Engineering-Leiter — eine IDP ohne Lock-in"
-description: "Self-Service mit Golden Paths für Entwickler auf einer offenen, Kubernetes-nativen Plattform. Schlüsselfertig kaufen — oder Ihre IDP mit Aenix aufbauen."
+title: "Für Platform-Engineering-Leiter — eine Internal Developer Platform ohne Lock-in"
+seo_title: "Internal Developer Platform für Platform-Teams"
+description: "Golden-Path-Self-Service für Entwickler auf einer offenen, Kubernetes-nativen Plattform. Schlüsselfertig kaufen oder Ihre Developer Platform mit Ænix bauen."
 hero_subtitle: "Golden-Path-Self-Service für Entwickler, ohne Lock-in"
 type: "page"
 language: "de"
@@ -9,48 +10,26 @@ hreflang_en: /for/head-of-platform-engineering/
 primary_keyword: "internal developer platform plattform engineering"
 related_pages:
   - /de/loesungen/developer-self-service/
-  - /de/dienstleistungen/
-  - /de/produkte/
-  - /de/partner/
+  - /de/dienstleistungen/internal-developer-platform/
+  - /de/produkte/private-cloud-platform/
+  - /de/dienstleistungen/platform-engineering/
+  - /de/produkte/cozystack/
 hide_closing_cta: true
-quick_facts:
-  - label: "Was es ist"
-    value: "mandantenfähige Internal Developer Platform (Self-Service VMs, K8s, DBs, Storage) auf Kubernetes-nativem Kern."
-  - label: "Für wen"
-    value: "Leiter / Direktoren Platform Engineering, Platform- / DevEx-Leads."
-  - label: "Lizenz"
-    value: "Apache 2.0 — keine Pro-Seat-Plattformkosten."
-  - label: "Status"
-    value: "auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung)."
-  - label: "Häufiger Fehler"
-    value: "ein Portal (Backstage) ohne echtes mandantenfähiges Backend kaufen — der Self-Service bleibt an Infra-Tickets hängen."
-quick_facts_source: "[CNCF Platforms White Paper](https://www.cncf.io/reports/), [Cozystack-Doku](https://cozystack.io)"
-faq:
-  - q: "Wie unterscheidet sich das von Backstage?"
-    a: "Backstage ist ein Entwicklerportal; es braucht eine Plattform dahinter. Cozystack ist diese Plattform — mandantenfähige Compute, K8s, Datenbanken und Storage. Backstage können Sie darauf setzen."
-  - q: "Bekommen Teams echte Isolation?"
-    a: "Ja — verschachtelte Mandanten mit Quotas und RBAC, Self-Service innerhalb der Leitplanken, ohne Cluster-Wildwuchs."
-  - q: "Build oder Buy?"
-    a: "Das Erstgespräch grenzt es ab. Tempo: Developer Self-Service. Maßanzug: das Aufbau-Modell mit uns als Plattform-Bank."
-  - q: "Laufen bestehende Workloads?"
-    a: "VMs (KubeVirt) und Container auf einer Plattform, plus Managed Databases und S3-kompatibler Storage."
-  - q: "Was kostet das?"
-    a: "Apache-2.0-Kern, keine Pro-Entwickler-Lizenz. Sie zahlen Support und/oder Aufbau."
 ---
 
 <!-- BLOCK 1: HERO -->
 
-**Sie bauen die Plattform, auf der andere Teams bauen. Die Aufgabe: Golden Paths und Self-Service — mandantenfähiges Kubernetes, Datenbanken, Storage und Umgebungen, die Entwickler selbst bereitstellen — ohne Ticket-Schlange und ohne Bindung an einen geschlossenen Anbieter. Ænix liefert das als schlüsselfertige Internal Developer Platform oder als Team, das Ihre auf offenem Fundament baut.**
+**Sie bauen die Plattform, auf der alle anderen Teams bauen. Der Gewinn liegt in Golden Paths und echtem Self-Service — mandantenfähiges Kubernetes, Datenbanken und Umgebungen, die Entwickler selbst bereitstellen — ohne Ticket-Warteschlange und ohne geschlossenen Anbieter. Ænix liefert das als schlüsselfertige Internal Developer Platform oder baut Ihre auf offenem Fundament.**
 
-> **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** als fertige IDP — oder einem Aufbauprojekt nach Ihrer Organisation. Offener Kern: **[Cozystack](https://cozystack.io)**, Apache 2.0.
+> **Passt zu:** der **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** (Developer Self-Service inklusive) als fertige Internal Developer Platform oder einem **[Aufbau einer Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/)**, zugeschnitten auf Ihre Organisation. Open-Source-Kern: **[Cozystack](/de/produkte/cozystack/)**, Apache 2.0.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
-  <a class="cta-secondary" href="/de/loesungen/developer-self-service/">Developer-Self-Service ansehen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/loesungen/developer-self-service/">Developer Self-Service →</a>
 </div>
 
 <div class="trust-badges">
-Engineering in der EU · Apache 2.0 · Mandantenfähig by design · Auf KubeVirt + Kubernetes
+Apache-2.0-Plattform · Von Grund auf mandantenfähig · KubeVirt + Kubernetes
 </div>
 
 <!-- /BLOCK 1 -->
@@ -59,47 +38,76 @@ Engineering in der EU · Apache 2.0 · Mandantenfähig by design · Auf KubeVirt
 
 ## Ihre Ausgangslage
 
-- Teams warten auf Tickets für Umgebungen, Datenbanken und Cluster.
-- Sie wägen **Build vs. Buy** für eine IDP ab und scheuen reine Backstage-Glue-Arbeit.
-- Jedes Team will Isolation; Sie brauchen **Mandantenfähigkeit** ohne Cluster pro Team.
-- Die Leitung will **Developer-Entwicklungsgeschwindigkeit**, nicht noch eine Plattform, die selbst eine Plattform braucht.
+- Entwicklungsteams warten per Ticket auf Umgebungen, Datenbanken und Cluster.
+- Sie wägen bei der Internal Developer Platform **Kaufen oder Selbstbauen** ab und scheuen reine Integrationsarbeit rund um Backstage.
+- Jedes Team will Isolation; Sie brauchen **Mandantenfähigkeit** ohne einen Cluster pro Team.
+- Die Geschäftsführung will Zahlen zur **Entwicklungsgeschwindigkeit**, keine weitere Plattform, die selbst wieder eine Plattform braucht.
 
 ---
 
 ## Worum es eigentlich geht
 
-Infrastruktur zum Produkt machen: Self-Service für VMs, Managed Kubernetes, Managed Databases und Object Storage — mit Mandanten, Quotas und Leitplanken. Entwickler liefern ohne Tickets, und Sie bauen die Control Plane nicht von Grund auf selbst.
+Infrastruktur zum Produkt machen: Self-Service-Bereitstellung von VMs, Managed Kubernetes, Managed Databases und Object Storage, mit Mandanten, Quotas und Leitplanken — damit Entwickler ohne Tickets liefern und Sie die Control Plane nicht von Grund auf selbst bauen müssen.
 
 ---
 
-## Zwei Wege mit Ænix
+## Zwei Wege, wie Ænix Sie unterstützt
 
-**1. Schlüsselfertige IDP.** Die [Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/) liefert Control Plane, Self-Service-Portal, Service-Katalog und Golden-Path-Bereitstellung auf dem Cozystack-Kern. Ihr Team kuratiert, Entwickler bedienen sich selbst.
+**1. Eine schlüsselfertige Internal Developer Platform betreiben.** Der Developer Self-Service in der [Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/) liefert die mandantenfähige Control Plane, ein Self-Service-Portal, einen Service-Katalog und Golden-Path-Bereitstellung auf dem Open-Source-Kern Cozystack. Ihr Plattformteam kuratiert, die Entwickler bedienen sich selbst.
 
-**2. Mit unserem Team aufbauen.** Cozystack ist das Framework, **Ænix Ihr ausgelagertes Platform-Engineering-Team**: wir entwerfen Mandanten, Golden Paths und Katalog für Ihre Organisation, binden CI/CD und Identity an und übergeben eine Plattform, die Ihr Team besitzt. Siehe [Dienstleistungen](/de/dienstleistungen/).
+**2. Mit unserem Team selbst aufbauen.** Cozystack ist das Framework; **Ænix ist Ihr ausgelagertes Platform-Engineering-Team**. Wir entwerfen Mandantenmodell, Golden Paths und Katalog für Ihre Organisation, binden Ihre CI/CD und Ihr Identity-Management an und übergeben eine Plattform, die Ihrem Team gehört. Siehe [Platform Engineering](/de/dienstleistungen/platform-engineering/) und [Aufbau einer Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/).
+
+---
+
+## Auf einen Blick
+
+- **Was es ist:** eine mandantenfähige Internal Developer Platform (Self-Service für VMs, K8s, Datenbanken, Storage) auf einem Kubernetes-nativen Kern.
+- **Für wen:** Leiter und Direktoren Platform Engineering, Platform- und DevEx-Leads.
+- **Lizenz:** Apache 2.0 — keine Plattformabgabe pro Arbeitsplatz.
+- **Status:** auf Basis von [Cozystack](https://cozystack.io), einem CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung).
+- **Häufiger Fehler:** ein Portal (Backstage) ohne echtes mandantenfähiges Backend kaufen — der Self-Service hängt dann weiter an Infrastruktur-Tickets.
 
 ---
 
 ## Warum Platform-Teams Ænix wählen
 
-- **Ein echtes Backend, nicht nur ein Portal.** Mandantenfähige Compute-, Storage- und Datenbankschicht unter dem Self-Service — der Teil, den Backstage nicht liefert.
-- **Autoren als Partner.** Ænix pflegt Cozystack; Sie bekommen die Leute, die das Mandantenmodell gebaut haben.
-- **Besitzen statt mieten.** Open Source und Ihre Infrastruktur — keine Verlängerung, die Ihre Developer Experience als Geisel nimmt.
+- **Ein echtes Backend, nicht nur ein Portal.** Mandantenfähige Compute-, Storage- und Datenbankschichten unter dem Self-Service — genau der Teil, den Backstage nicht liefert.
+- **Die Autoren als Partner.** Ænix hat Cozystack initiiert und pflegt es mit; Sie arbeiten mit den Leuten, die das Mandantenmodell gebaut haben.
+- **Es gehört Ihnen.** Open Source auf Ihrer Infrastruktur — keine Verlängerung, die Ihre Developer Experience als Geisel nimmt.
+
+---
+
+## FAQ
+
+**Wie unterscheidet sich das von Backstage?**
+Backstage ist ein Entwicklerportal; es braucht eine Plattform dahinter. Cozystack ist diese Plattform — mandantenfähiges Compute, K8s, Datenbanken und Storage. Backstage können Sie darauf aufsetzen; das Backend ist der schwierige Teil, den wir lösen.
+
+**Bekommen Teams echte Isolation?**
+Ja — verschachtelte Tenants mit Quotas und RBAC, sodass jedes Team innerhalb von Leitplanken im Self-Service arbeitet, ohne dass Cluster wild wuchern.
+
+**Kaufen oder selbst bauen — was sollten wir tun?**
+Das klärt das Erstgespräch. Teams, die Tempo wollen, nehmen den Developer Self-Service der Private Cloud Platform; Teams, die eine maßgeschneiderte Lösung brauchen, wählen das gemeinsame Aufbauprojekt, in dem wir Ihr Plattformteam verstärken.
+
+**Laufen unsere bestehenden Workloads darauf?**
+VMs (KubeVirt) und Container auf einer Plattform, dazu Managed Databases und S3-kompatibler Storage — so existieren Bestandsanwendungen und Cloud-native Anwendungen nebeneinander.
+
+**Was kostet das?**
+Apache-2.0-Kern, keine Lizenzkosten pro Entwickler. Sie zahlen für Support und/oder den Aufbau. Das rechnen wir im Gespräch durch.
 
 ---
 
 ## Mit einem 30-minütigen Erstgespräch starten
 
-Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren heutigen Bereitstellungsweg an und sagen, ob Developer Self-Service oder Aufbauprojekt schneller zum Self-Service führt.
+Kostenlos und ohne Vorbereitung. Wir sehen uns an, wie Ihre Teams heute Ressourcen bereitstellen, und sagen Ihnen, ob der Developer Self-Service der Private Cloud Platform oder ein gemeinsames Aufbauprojekt Sie schneller zum Self-Service bringt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Erstgespräch buchen</a>
-  <a class="cta-secondary" href="/de/dienstleistungen/">Dienstleistungen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/internal-developer-platform/">Eine IDP aufbauen →</a>
 </div>
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-platform-engineering/ ; hreflang de self, en → /for/head-of-platform-engineering/.

@@ -1,59 +1,67 @@
 ---
-title: "Souveräne KI-Infrastruktur — GenAI auf Daten, die das Unternehmen nicht verlassen dürfen"
-description: "Für regulierte Workloads ist KI nicht mehr nur ein Hyperscaler-Thema. Sensible Datenklassen, sektorale Vorgaben und die Ökonomie von Inferenz im großen..."
+title: "Souveräne KI-Infrastruktur — GenAI und Inferenz auf Daten, die den Perimeter nicht verlassen dürfen"
+seo_title: "Sovereign AI: GenAI auf eigener Infrastruktur"
+primary_keyword: "sovereign ai"
+description: "Sovereign AI für regulierte Organisationen: Inferenz, Fine-Tuning und RAG auf eigenen GPUs in Ihrer Rechtsordnung — die Daten verlassen nie den Perimeter."
 type: "page"
-related_pages: ["/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/de/produkte/cozystack/"]
+related_pages:
+  - /de/loesungen/data-sovereignty/
+  - /de/loesungen/dora-compliance/
+  - /de/dienstleistungen/platform-readiness-assessment/
+  - /de/dienstleistungen/ai-platform-build/
+  - /de/produkte/ai-platform/
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/sovereign-ai/
 direct_answer: |
-  **Souveräne KI-Infrastruktur bedeutet, dass GenAI, Inferenz, Fine-Tuning und Analytics auf kundeneigener Hardware in der gewählten Jurisdiktion und unter kundenkontrollierten Verschlüsselungsschlüsseln laufen — Trainingsdaten, Prompts, Completions und Embeddings verlassen den Perimeter nie. Sie richtet sich an Finanzdienstleister, Gesundheitswesen, öffentlichen Sektor und KI-Plattform-Betreiber, deren Datenklasse, Regulator (DORA, NIS2, sektorale Vorgaben) oder Inferenz-Ökonomie Hyperscaler-KI-Services nicht praktikabel macht. Aenix baut und betreibt diese Infrastruktur auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0: eine Kubernetes-native KI-Plattform mit Multi-Tenant-GPU-Scheduling für A100, H100, H200, L40S und Blackwell, lokal betriebenen Open-Weight-Modellen (Llama, Mistral, Qwen, DeepSeek, Phi) und voller Kundengovernance.**
+  **Souveräne KI-Infrastruktur betreibt GenAI, Inferenz, Fine-Tuning und RAG auf Hardware, die dem Kunden gehört oder von ihm kontrolliert wird, in der Rechtsordnung seiner Wahl und unter seiner Governance — Modell-Weights, Prompts, Antworten und Embeddings verlassen nie den Perimeter. Sie ist für regulierte Organisationen (Finanzdienstleister, Gesundheitswesen, öffentlicher Sektor) und KI-/GPU-Betreiber gedacht, bei denen Datenklasse, Aufsicht oder die Wirtschaftlichkeit der Inferenz KI-Dienste von Hyperscalern ausschließen. Ænix konzipiert, baut und betreibt diese Plattformen auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0, das im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen wurde. Cozystack vereint KubeVirt-VMs und Kubernetes-Inferenz-Workloads unter einer API. NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert eine NVIDIA-vGPU-Lizenz), ganze GPUs für Pods über das Device Plugin und anteilige Nutzung für Pods über HAMi. MIG und Time-Slicing stehen auf der Roadmap. Ænix ist an keinen Modellanbieter gebunden und empfiehlt das Open-Weight-Modell — Llama, Mistral, Qwen, DeepSeek, Phi —, das zu Datenklasse und Wirtschaftlichkeit passt.**
 quick_facts:
   - label: "Was es ist"
-    value: "KI-Infrastruktur, auf der GenAI, Inferenz und Fine-Tuning auf kundeneigener Hardware in der gewählten Jurisdiktion unter kundenkontrollierten Schlüsseln laufen — Daten verlassen den Perimeter nie."
+    value: "KI-Inferenz, Fine-Tuning und RAG auf kundenkontrollierter Hardware, in der Rechtsordnung des Kunden und unter seiner Governance; die Daten verlassen nie den Perimeter"
+  - label: "Für wen"
+    value: "Regulierte Finanzdienstleister, Gesundheitswesen, öffentlicher Sektor sowie KI-/GPU-Betreiber, bei denen Datenklasse, Aufsicht oder Inferenzkosten KI-Dienste von Hyperscalern ausschließen"
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
-  - label: "Zielgruppe"
-    value: "Finanzdienstleister, Gesundheitswesen, öffentlicher Sektor und KI-Plattform-Betreiber mit sensibler Datenklasse oder Air-gap-/Restricted-egress-Anforderung"
-  - label: "Schlüsselfunktion"
-    value: "Multi-Tenant-GPU-Scheduling für A100, H100, H200, L40S und Blackwell; lokal betriebene Open-Weight-Modelle (Llama, Mistral, Qwen, DeepSeek, Phi)"
-  - label: "Regulatorik"
-    value: "Unterstützt DORA, NIS2, sektorale Vorgaben und souveräne Cloud-Mandate durch Jurisdiktions- und Schlüsselkontrolle"
-  - label: "Engagement"
-    value: "Ænix AI Platform (produktisiert) plus Aenix-Aufbau und -Betrieb; für breitere souveräne Cloud kombinierbar mit Private Cloud Platform"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung)"
+  - label: "Plattform"
+    value: "Cozystack — KubeVirt für VMs und Kubernetes für Inferenz unter einer API; CNCF Kubernetes AI Conformance (seit September 2026)"
+  - label: "GPUs"
+    value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert eine NVIDIA-vGPU-Lizenz), ganze GPUs für Pods über das Device Plugin und anteilige Nutzung für Pods über HAMi. MIG und Time-Slicing stehen auf der Roadmap. Welches Modell zu welcher Hardware passt, klärt das Assessment."
+  - label: "Projektablauf"
+    value: "Platform Readiness Assessment zum Festpreis über 14 oder 28 Tage, danach Aufbau durch Ænix (typischerweise 3–12 Monate je nach Umfang); Angebot per RFP; Air-Gap-Installation wird unterstützt"
 faq:
-  - q: "Was unterscheidet souveräne KI von Hyperscaler-KI-Services?"
-    a: "Bei souveräner KI läuft das Modell auf Ihrer Hardware in Ihrer Jurisdiktion, die Modellgewichte stehen unter Ihrer Kontrolle und Daten — Prompts, Completions, Embeddings, Trainingsdaten — verlassen Ihren Perimeter nie. Hyperscaler-Services verarbeiten Daten in fremder Infrastruktur und Jurisdiktion, was bei regulierten Datenklassen oder Air-gap-Anforderungen nicht praktikabel ist."
-  - q: "Welche GPUs und Modelle werden unterstützt?"
-    a: "Die Plattform bietet Multi-Tenant-GPU-Scheduling für A100, H100, H200, L40S und Blackwell. Betrieben werden Open-Weight-Modelle wie Llama, Mistral, Qwen, DeepSeek und Phi — lokal, mit Modellgewichten unter Ihrer Kontrolle."
-  - q: "Hilft souveräne KI bei DORA- und NIS2-Compliance?"
-    a: "Ja. Indem KI-Verarbeitung an die gewählte Jurisdiktion gebunden, unter kundenkontrollierten Schlüsseln betrieben und reproduzierbar sowie auditbereit gehalten wird, unterstützt souveräne KI-Infrastruktur DORA, NIS2, sektorale Vorgaben und souveräne Cloud-Mandate. Kombinierbar mit der Datensouveränitäts- und DORA-Compliance-Lösung."
-  - q: "Auf welcher Technologie basiert die Plattform?"
-    a: "Auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0. Es nutzt KubeVirt für VMs und Container über eine Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRD-basierte Mandantenfähigkeit. Vector DB und Object Storage sind in der AI Platform inkludiert."
-  - q: "Was kostet die Ænix Platform?"
-    a: "Die Preisstufen sind Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise (Custom). Aenix bietet die produktisierte Ænix AI Platform plus Aufbau- und Betriebs-Services."
-  - q: "Ist Air-gap- oder Restricted-egress-Betrieb möglich?"
-    a: "Ja. Souveräne KI ist explizit für Air-gap- und Restricted-egress-Anforderungen ausgelegt: Inferenz läuft auf eigenen GPUs, Modelle und Daten bleiben innerhalb der kundenkontrollierten Umgebung, und das Modellverhalten lässt sich reproduzierbar und auditbereit halten."
+  - q: "Ist Sovereign AI dasselbe wie Private AI?"
+    a: "Nein. „Private AI“ wird sowohl für SaaS-Endpunkte mit Datenschutzklausel als auch für echte On-Prem-Installationen verwendet. Sovereign AI setzt dagegen voraus, dass das Modell auf Kundenhardware läuft, die Daten im Perimeter des Kunden bleiben und die Plattform unter der Governance des Kunden betrieben wird."
+  - q: "Welche Open-Weight-LLMs unterstützt Ænix?"
+    a: "Zu den aktuell produktionsreifen Modellen gehören Llama, Mistral, Qwen, DeepSeek, Phi und Gemma sowie spezialisierte Modelle für Code, Bildverarbeitung und Embeddings. Die konkrete Auswahl erfolgt im Assessment, abhängig von Datenklasse, Sprachanforderungen und Inferenzkosten."
+  - q: "Umfasst Sovereign AI auch Training oder nur Inferenz?"
+    a: "Beides. Inferenz ist der häufigere Einstieg; die meisten regulierten Organisationen beginnen damit und ergänzen später das Fine-Tuning von Open-Weight-Modellen. Vollständiges Pre-Training von Frontier-Modellen ist in diesem Segment selten."
+  - q: "Welche GPUs unterstützt die Plattform?"
+    a: "NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert eine NVIDIA-vGPU-Lizenz), ganze GPUs für Pods über das Device Plugin und anteilige Nutzung für Pods über HAMi. MIG und Time-Slicing stehen auf der Roadmap. Andere Beschleuniger (AMD, Intel) lassen sich als PCI-Geräte an VMs durchreichen; die Automatisierung über einen Operator gibt es derzeit nur für NVIDIA. Eine veröffentlichte Liste validierter GPU-Modelle gibt es nicht; welches Modell zu welcher Hardware passt, klärt das Assessment."
+  - q: "Kann die Plattform air-gapped betrieben werden?"
+    a: "Ja. Für Cozystack gibt es einen dokumentierten Ablauf für Air-Gap-Installationen. Er kommt zum Einsatz, wo eine Aufsichtsbehörde oder eine Sicherheitsrichtlinie ausgehende Verbindungen verbietet — etwa im öffentlichen Sektor und in kritischer Infrastruktur."
+  - q: "Ist Ænix an einen Modellanbieter gebunden?"
+    a: "Nein. Ænix hat keine Geschäftsbeziehung zu einem LLM-Anbieter. Die Architektur empfiehlt das Open-Weight-Modell und den Serving-Stack — vLLM, Triton oder Alternativen —, die zu Datenklasse, Aufsicht und Inferenzkosten des Kunden passen."
 ---
 
 <!-- BLOCK 1: HERO -->
 
-**Für regulierte Workloads ist KI kein reines Hyperscaler-Thema mehr. Sensible Datenklassen, sektorale Vorgaben und die Ökonomie von Inferenz im großen Maßstab drängen Finanzdienstleister, Gesundheitswesen, öffentlichen Sektor und KI-Plattform-Betreiber zu souveräner KI-Infrastruktur — GenAI, Inferenz und Analytics auf der eigenen Hardware des Kunden, in der vom Kunden gewählten Jurisdiktion, unter den Verschlüsselungsschlüsseln des Kunden.**
+**Für regulierte Workloads ist KI kein reines Hyperscaler-Thema mehr. Sensible Datenklassen, branchenspezifische Vorgaben und die Kosten von Inferenz im großen Maßstab treiben Finanzdienstleister, Gesundheitswesen, öffentlichen Sektor und Betreiber von KI-Plattformen hin zu souveräner KI-Infrastruktur — GenAI, Inferenz und Analytics auf eigener Hardware des Kunden, in der Rechtsordnung seiner Wahl und unter seiner Governance.**
 
-Ænix baut und betreibt souveräne KI-Infrastruktur für Organisationen, deren Datenklasse, Regulator oder Wirtschaftlichkeit Hyperscaler-KI-Services unpraktikabel machen. Ergebnis: eine Architektur, ein Deployment und ein Betriebsmodell, das Ihr Team tatsächlich selbst betreiben kann.
+Ænix baut und betreibt diese Plattformen von Anfang bis Ende: eine Architektur, eine Installation und ein Betriebsmodell, mit dem Ihr Team tatsächlich arbeiten kann.
 
-> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — KI-Plattform-Automatisierung out-of-the-box (Multi-Tenant-GPU-Scheduling für H100/H200/L40S/A100/Blackwell, fertige Blueprints für Inferenz + Fine-Tuning + RAG, Vector DB + Object Storage inkludiert, Souveränitätskontrollen). Für regulierte KI-Workloads auf einer breiteren souveränen Cloud: kombinieren mit [Private Cloud Platform](/de/produkte/private-cloud-platform/). Kostenloser [Sovereign-AI-Architektur-Leitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
+> **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — mandantenfähiges GPU-Scheduling, Inferenz, Fine-Tuning und RAG auf einer Plattform, mit Vektordatenbank und Object Storage; ergänzen Sie die [Private Cloud Platform](/de/produkte/private-cloud-platform/) für eine umfassendere souveräne Cloud, oder lesen Sie den kostenlosen [Sovereign-AI-Entscheidungsleitfaden →](/de/ressourcen/sovereign-ai-architektur-leitfaden/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/private-llm-deployment-leitfaden/">Private-LLM-Leitfaden lesen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/private-llm-deployment-leitfaden/">Leitfaden lesen →</a>
 </div>
 
 <div class="trust-badges">
-NVIDIA-validierter GPU-Stack · Apache-2.0-Plattform · EU-Ingenieure · Air-gapped-Deployment unterstützt
+CNCF Kubernetes AI Conformance · Stack auf Basis des NVIDIA GPU Operator · Plattform unter Apache 2.0 · Air-Gap-Installation unterstützt
 </div>
 
 
@@ -63,17 +71,21 @@ NVIDIA-validierter GPU-Stack · Apache-2.0-Plattform · EU-Ingenieure · Air-gap
 
 <!-- BLOCK 2: WHO THIS IS FOR -->
 
-## Wer souveräne KI braucht
+## Wer Sovereign AI braucht
 
-Souveräne KI ist nicht für jeden Workload sinnvoll. Sie ist die richtige Antwort, wenn mindestens drei der folgenden Punkte zutreffen:
+Sovereign AI ist nicht für jeden Workload das Richtige. Es ist die richtige Antwort, wenn mindestens drei der folgenden Punkte zutreffen:
 
-- **Die Datenklasse ist sensibel** — regulierte personenbezogene Daten, Finanzdatensätze, Gesundheitsakten, klassifizierte Informationen, internes geistiges Eigentum, das Modellanbietern nicht offengelegt werden darf.
-- **Der Regulator bindet die KI-Verarbeitung an eine Jurisdiktion** — DORA, NIS2, sektorale Regeln, Souveräne-Cloud-Mandate (EU-Mitgliedstaaten, Kasachstan, mehrere APAC-Länder).
-- **Inferenz im Maßstab ist beim Hyperscaler wirtschaftlich schmerzhaft** — GPU-Preise, Egress-Kosten und unvorhersehbare Ausgaben machen dedizierte Infrastruktur für 24/7-Inferenz-Workloads besser geeignet.
-- **Das Modellverhalten muss reproduzierbar und auditierbar sein** — der Dialog mit dem Regulator verlangt „genau welches Modell diese Ausgabe erzeugt hat, mit welchen Gewichten, mit welchen Eingabedaten.“
-- **Air-gap oder eingeschränkter Egress ist erforderlich** — klassifizierte Workloads des öffentlichen Sektors, verteidigungsnahe oder kritische Infrastruktur.
+- **Die Datenklasse ist sensibel** — regulierte personenbezogene Daten, Finanzdaten, Gesundheitsdaten, internes geistiges Eigentum, das Modellanbietern nicht zugänglich werden darf.
+- **Die Aufsicht bindet KI-Verarbeitung an eine Rechtsordnung** — DORA, NIS2, branchenspezifische Vorgaben, Auflagen für souveräne Clouds (EU-Mitgliedstaaten, Kasachstan, mehrere Länder im asiatisch-pazifischen Raum).
+- **Inferenz im großen Maßstab ist beim Hyperscaler wirtschaftlich schmerzhaft** — GPU-Preise, Egress-Kosten und unvorhersehbare Ausgaben machen dedizierte Infrastruktur für Inferenz rund um die Uhr attraktiver.
+- **Das Modellverhalten muss reproduzierbar und prüfbar sein** — im Dialog mit der Aufsicht muss feststehen, welches Modell mit welchen Weights und welchen Eingabedaten ein Ergebnis erzeugt hat.
+- **Air-Gap oder eingeschränkter Egress ist vorgeschrieben** — Workloads im öffentlichen Sektor oder in kritischer Infrastruktur, bei denen ausgehende Verbindungen nicht erlaubt sind.
 
-Trifft keiner dieser Punkte zu, ist souveräne KI Over-Engineering. Treffen drei oder mehr zu, lautet die Frage nicht ob — sondern wie, bis wann und zu welchen Kosten.
+Trifft keiner dieser Punkte zu, ist Sovereign AI Over-Engineering.
+
+> **Sie leiten ein ML-Plattform-Team?** Der [Leitfaden für Leiter AI/ML](/de/fuer/leiter-ai-ml/) behandelt GPU-Zuteilung, Model Serving und das Betriebsmodell. Treffen drei oder mehr Punkte zu, stellt sich nicht mehr die Frage, ob — sondern wie, bis wann und zu welchen Kosten.
+
+{{< factoid number="14 oder 28 Tage" label="vom Platform Readiness Assessment zu schriftlicher Architektur, GPU-Strategie und Souveränitätskontrollen für Ihre Datenklasse" >}}
 
 <!-- /BLOCK 2 -->
 
@@ -81,35 +93,31 @@ Trifft keiner dieser Punkte zu, ist souveräne KI Over-Engineering. Treffen drei
 
 <!-- BLOCK 3: WHAT SOVEREIGN AI ACTUALLY MEANS -->
 
-## Was souveräne KI tatsächlich bedeutet
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
 
-<div class="arch-section__fig">
-<div class="diagram">
-<div class="diagram__node"><b>GenAI, Inferenz, Fine-Tuning</b><div class="diagram__chips"><span>Open-Weight-Modelle</span><span>Llama, Mistral, Qwen</span></div></div>
-<div class="diagram__conn">laufen auf</div>
-<div class="diagram__node diagram__node--brand"><b>Cozystack auf kundeneigener Hardware</b><div class="diagram__chips"><span>AI Platform</span><span>A100 / H100 / H200 / L40S / Blackwell</span><span>kundenkontrollierte Schlüssel</span></div></div>
-<div class="diagram__conn">halten</div>
-<div class="diagram__node"><b>Daten im eigenen Perimeter</b><div class="diagram__chips"><span>verlassen den Perimeter nie</span><span>gewählte Jurisdiktion</span></div></div>
-</div>
-</div>
+## Was Sovereign AI tatsächlich bedeutet
 
 <div class="grid-2x2">
 
 **1. Das Modell läuft auf Ihrer Hardware**
-Inferenz (und, wo zutreffend, Training) auf GPUs, die Sie besitzen oder betreiben, nicht auf GPU-Instanzen oder Modell-APIs eines Hyperscalers. NVIDIA H100 / H200 / L40S / Blackwell, AMD MI-series oder passende Alternativen.
+Inferenz (und, wo nötig, Training) auf GPUs, die Sie besitzen oder betreiben — nicht auf GPU-Instanzen oder der Modell-API eines Hyperscalers. NVIDIA-GPUs für Rechenzentren sind der übliche Weg, automatisiert über den NVIDIA GPU Operator; andere Beschleuniger lassen sich als PCI-Geräte an VMs durchreichen.
 
-**2. Die Daten verlassen den Perimeter nie**
-Trainingsdaten, Prompts, Completions, Embeddings und alle abgeleiteten Artefakte bleiben innerhalb der kundenkontrollierten Umgebung. Kein Traffic zu Modellanbieter-Endpunkten; keine Observability-Daten an SaaS-Anbieter, die außerhalb des Perimeters verarbeiten.
+**2. Die Daten verlassen nie den Perimeter**
+Trainingsdaten, Prompts, Antworten, Embeddings und alle daraus abgeleiteten Artefakte bleiben in der kundenkontrollierten Umgebung. Kein Datenverkehr zu Endpunkten von Modellanbietern, keine Observability-Daten an SaaS-Anbieter, die außerhalb des Perimeters verarbeiten.
 
-**3. Die Modellgewichte liegen unter Ihrer Kontrolle**
-Open-Weight-Modelle (Llama, Mistral, Qwen, DeepSeek, Phi usw.), die lokal laufen; oder feinabgestimmte Varianten, deren Gewichte Ihnen gehören. Keine Modell-API mit Prompt-Routing in ein Modell eines Dritten.
+**3. Die Modell-Weights liegen unter Ihrer Kontrolle**
+Open-Weight-Modelle (Llama, Mistral, Qwen, DeepSeek, Phi usw.) laufen lokal, oder feinjustierte Varianten, deren Weights Ihnen gehören. Keine Modell-API, die Prompts an das Modell eines Dritten weiterleitet.
 
-**4. Die Plattform wird von Ihnen betrieben, unter Ihrer Governance**
-Kubernetes-native KI-Plattform mit klarer Verantwortlichkeit für GPU-Scheduling, Autoscaling, Modellverwaltung und Audit-Trails. Keine Black-Box-Appliance mit anbieterkontrolliertem Betrieb.
+**4. Sie betreiben die Plattform, unter Ihrer Governance**
+Eine Kubernetes-native KI-Plattform mit klarer Verantwortung für GPU-Scheduling, Autoscaling, Modellverwaltung und Audit-Trails. Keine Blackbox-Appliance, deren Betrieb der Hersteller kontrolliert.
 
 </div>
 
-Das ist keine „private KI“ als Marketing-Fassade vor einem SaaS-Endpunkt mit einer Datenschutzklausel. Es ist ein architektonisch souveräner Stack mit benannten Komponenten und nachweisbaren Kontrollen.
+Das ist nicht „Private AI“ als Etikett für einen SaaS-Endpunkt mit Datenschutzklausel, sondern ein architektonisch souveräner Stack mit benannten Komponenten und nachweisbaren Kontrollen.
+
+</div>
+</div>
 
 <!-- /BLOCK 3 -->
 
@@ -117,31 +125,25 @@ Das ist keine „private KI“ als Marketing-Fassade vor einem SaaS-Endpunkt mit
 
 <!-- BLOCK 4: WHERE COMMON APPROACHES FAIL -->
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
-
-## Wo gängige KI-Plattform-Ansätze am Souveränitätstest scheitern
+## Woran gängige KI-Plattform-Ansätze beim Souveränitätstest scheitern
 
 <div class="gap-cards-2">
 
 **„Private Bereitstellung“ einer SaaS-Modell-API**
-Der Modellanbieter führt die Inferenz aus; die Daten fließen zum Endpunkt des Anbieters. Datenschutzklausel hin oder her — die Daten haben den Perimeter verlassen. Souveränität gescheitert.
+Der Modellanbieter betreibt die Inferenz; die Daten fließen zu seinem Endpunkt. Trotz Datenschutzklausel haben die Daten den Perimeter verlassen. Souveränität verfehlt.
 
-**Hyperscaler-verwaltete GPU mit proprietären Diensten**
-Die GPU steht in der richtigen Region, aber Modell-Orchestrierung, Observability und Storage-Anbindung binden den Workload an proprietäre Dienste. Die Exit-Kosten steigen; das Konzentrationsrisiko steigt.
+**Hyperscaler-GPU mit proprietären Diensten**
+Die GPU steht in der richtigen Region, aber Modell-Orchestrierung, Observability und Storage-Anbindungen binden den Workload an proprietäre Dienste. Die Ausstiegskosten wachsen, das Konzentrationsrisiko ebenso.
 
 **Single-Tenant-SaaS in einer „souveränen“ Hyperscaler-Region**
-Die Region ist souverän, aber die Service-Ebene wird vom Hyperscaler betrieben. Verschlüsselungsschlüssel, Control-Plane-Zugriff und Software-Update-Kanäle verbleiben bei einem nicht-souveränen Anbieter.
+Die Region ist souverän, aber die Service-Ebene betreibt der Hyperscaler. Verschlüsselungsschlüssel, Zugriff auf die Control Plane und Update-Kanäle bleiben bei einem nicht souveränen Anbieter.
 
 **Selbst gehostetes LLM ohne Plattform darunter**
-Ein Team betreibt vLLM oder llama.cpp auf ein paar Bare-Metal-Servern und nennt das private KI. Funktioniert für einen PoC. Scheitert an Multi-Tenancy, GPU-Autoscaling, Audit-Bereitschaft oder betrieblicher Verfügbarkeit für die Produktion.
+Ein Team betreibt vLLM oder llama.cpp auf ein paar Bare-Metal-Servern und nennt das Private AI. Für einen PoC reicht das. Im Produktivbetrieb scheitert es an Mandantenfähigkeit, GPU-Autoscaling, Auditfähigkeit oder betrieblicher Verfügbarkeit.
 
 </div>
 
-Die ehrliche Antwort ist meist eine Kubernetes-native KI-Plattform auf kundenkontrollierter Hardware mit einem definierten Betriebsmodell. Dieses Muster haben wir für KI/GPU-Betreiber und regulierte Unternehmen in Produktion ausgeliefert.
-
-</div>
-</div>
+Die ehrliche Antwort ist meist eine Kubernetes-native KI-Plattform auf kundenkontrollierter Hardware mit einem klar definierten Betriebsmodell.
 
 <!-- /BLOCK 4 -->
 
@@ -151,24 +153,35 @@ Die ehrliche Antwort ist meist eine Kubernetes-native KI-Plattform auf kundenkon
 
 ## Wie Ænix hilft
 
-Das Sovereign-AI-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Schwerpunkt auf den Workstreams Souveränität und KI-Plattform. Führt das Engagement zur Implementierung, liefert Ænix die Plattform End-to-End.
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>KI-Workloads</b><div class="diagram__chips"><span>Inferenz</span><span>Fine-Tuning</span><span>RAG</span></div></div>
+<div class="diagram__conn">eingeplant auf</div>
+<div class="diagram__node diagram__node--brand"><b>Cozystack / Ænix</b><div class="diagram__chips"><span>KubeVirt-VMs + Kubernetes</span><span>GPU Operator: Passthrough, vGPU, HAMi</span><span>Hardware und Rechtsordnung des Kunden</span></div></div>
+<div class="diagram__conn">ergibt</div>
+<div class="diagram__node"><b>Sovereign AI</b><div class="diagram__chips"><span>Daten verlassen nie den Perimeter</span><span>Keine Endpunkte von Modellanbietern</span></div></div>
+</div>
+</div>
+
+Das Sovereign-AI-Projekt läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**, mit Schwerpunkt auf den Arbeitssträngen Souveränität und KI-Plattform. Führt das Projekt zur Umsetzung, liefert Ænix die Plattform von Anfang bis Ende.
 
 Die Assessment-Phase liefert:
 
-- **Architekturoptionen** — konkrete Plattform-Designs für Inferenz / Training / Fine-Tuning in Ihrem Maßstab, inklusive Hardware-Sizing.
-- **Souveränitätskontrollen** — Design für Datenresidenz, Schlüsselverwahrung und Audit-Trail, spezifisch für KI-Workloads.
-- **GPU-Strategie** — Sizing für NVIDIA / AMD / Alternativen, Modell-zu-Hardware-Eignung, Skalierungsannahmen.
-- **Betriebsmodell** — wer die Plattform betreibt, welche Self-Service-Oberfläche Produkt- / Data-Science-Teams erhalten, wie das On-Call-Modell aussieht.
-- **Phase-2-Implementierungs-Roadmap** — von Ænix gelieferter Aufbau, mit Zeitplan, Aufwandsschätzungen und Erfolgskriterien.
+- **Architekturoptionen** — konkrete Plattformdesigns für Inferenz, Training und Fine-Tuning in Ihrer Größenordnung, mit Hardware-Dimensionierung.
+- **Souveränitätskontrollen** — Datenresidenz, Schlüsselverwahrung und Audit-Trail, speziell für KI-Workloads ausgelegt.
+- **GPU-Strategie** — GPU-Dimensionierung, Zuteilungsart pro Workload (dediziert, vGPU oder anteilig), Passung von Modell und Hardware, Annahmen zur Skalierung.
+- **Betriebsmodell** — wer die Plattform betreibt, welche Self-Service-Oberfläche Produkt- und Data-Science-Teams bekommen, wie die Rufbereitschaft aussieht.
+- **Umsetzungs-Roadmap für Phase 2** — Aufbau durch Ænix, mit Zeitplan, Aufwandsschätzung und Erfolgskriterien.
 
-Die Implementierungsphase liefert:
+Die Umsetzungsphase liefert:
 
-- **Cozystack-basierte KI-Plattform** mit KubeVirt für VMs, Kubernetes für Inferenz-Workloads, NVIDIA vGPU für VM-basierte GPU-Workloads sowie dem NVIDIA GPU Operator mit HAMi für fraktionales GPU-Sharing und PCI-Passthrough bei container-basierten GPU-Workloads.
-- **Validiertes Model Serving** — vLLM, Triton oder Alternativen, passend zur Modellarchitektur.
-- **Self-Service für Data-Science-Teams** — Provisionierungspfade, Observability, Audit-Trails.
-- **Air-gapped-Deployment**, wo der Regulator es verlangt.
+- **KI-Plattform auf Basis von Cozystack** mit KubeVirt für VMs und Kubernetes für Inferenz-Workloads. GPU-Zuteilung: Passthrough ganzer GPUs oder NVIDIA vGPU für VMs, ganze GPUs oder anteiliges Sharing über HAMi für Pods. MIG und Time-Slicing stehen auf der Roadmap.
+- **Model Serving** — vLLM, Triton oder Alternativen, passend zur Modellarchitektur.
+- **GPU-Nutzung pro Tenant erfasst** — Abrechnung oder interne Verrechnung erfolgt in Ihrem Billing-System.
+- **Self-Service für Data-Science-Teams** — Bereitstellungswege, Observability, Audit-Trails.
+- **Air-Gap-Installation**, wo die Aufsicht sie verlangt.
 
-Zu den validierten GPU-Modellen zählen NVIDIA A100, H100, H200, L40S und Blackwell. Die konkrete Modelleignung wird im Assessment ermittelt.
+{{< factoid number="3–12 Monate" label="typische Aufbauzeit bis zu einer produktiven Sovereign-AI-Plattform auf eigener Hardware, je nach Umfang" >}}
 
 <!-- /BLOCK 5 -->
 
@@ -178,9 +191,9 @@ Zu den validierten GPU-Modellen zählen NVIDIA A100, H100, H200, L40S und Blackw
 
 ## Warum gerade Ænix
 
-- **KI-Infrastruktur ist unser Tagesgeschäft.** Cozystack ist bei KI/GPU-Betreibern in der EU und Zentralasien in Produktion. Wir haben GPU-Plattformen ausgeliefert, die Inferenz- und Fine-Tuning-Workloads End-to-End tragen.
-- **Keine Modellanbieter-Voreingenommenheit.** Wir haben keine kommerzielle Beziehung zu einem bestimmten LLM-Anbieter. Die Architektur empfiehlt das Open-Weight-Modell, das zu Ihrer Datenklasse, Ihrem Regulator und Ihrer Ökonomie passt — Llama, Mistral, Qwen, DeepSeek, Phi oder feinabgestimmte Varianten — und den dazu passenden Serving-Stack.
-- **Open-Source-Plattform als Fundament.** [Cozystack](/de/produkte/cozystack/) ist ein CNCF-Projekt, das auf der vom Kunden gewählten Hardware in der gewählten Jurisdiktion läuft. Der Cluster-Level-Zugriff bleibt beim Kunden; wir arbeiten unter Ihrer Governance, nicht gegen sie.
+- **KI-Infrastruktur ist unser Alltag.** Vier GPU-Projekte sind als Fallstudien dokumentiert (siehe unten) — zu Inferenz, Multi-Cloud-GPU-Kapazität und internen KI-Plattformen. Cozystack wurde in das Programm CNCF Kubernetes AI Conformance aufgenommen (September 2026).
+- **Keine Bindung an einen Modellanbieter.** Wir haben keine Geschäftsbeziehung zu einem bestimmten LLM-Anbieter. Die Architektur empfiehlt das Open-Weight-Modell, das zu Datenklasse, Aufsicht und Wirtschaftlichkeit passt — Llama, Mistral, Qwen, DeepSeek, Phi oder feinjustierte Varianten — und den passenden Serving-Stack.
+- **Open-Source-Plattform als Fundament.** [Cozystack](/de/produkte/cozystack/), das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt, ist ein CNCF-Sandbox-Projekt und läuft auf der vom Kunden gewählten Hardware in der gewählten Rechtsordnung. Der Zugriff auf Cluster-Ebene bleibt beim Kunden; wir arbeiten unter Ihrer Governance, nicht an ihr vorbei.
 
 <!-- /BLOCK 6 -->
 
@@ -188,16 +201,9 @@ Zu den validierten GPU-Modellen zählen NVIDIA A100, H100, H200, L40S und Blackw
 
 <!-- BLOCK 7: TIMELINE -->
 
-## Wie das Engagement abläuft
+## So läuft das Projekt ab
 
-| Wann | Was | Ergebnis |
-|---|---|---|
-| **Tag 0** | 30-minütiger Discovery-Call (kostenlos) | Eignung bestätigen, KI-Workload-Scope eingrenzen, Sponsor + Data-Science-Lead identifizieren |
-| **Tage 1-13 (oder 1-27)** | Vier parallele Workstreams; Schwerpunkt Souveränität + KI-Plattform | Architekturoptionen, GPU-Strategie, Souveränitätskontrollen, tägliche asynchrone Updates |
-| **Tag 14 (oder 28)** | Executive-Readout (60-90 Min.) | Schriftlicher Bericht: Architektur, Souveränitätskontrollen, GPU-Strategie, Betriebsmodell, Phase-2-Roadmap |
-| **Phase 2 (3-9 Monate)** | Implementierung — Ænix baut und übergibt | Produktive souveräne KI-Plattform |
-
-Zur vollständigen Assessment-Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+Tag 0 ist ein kostenloses 30-minütiges Discovery-Gespräch, in dem der Umfang festgelegt wird. An den Tagen 1–13 (oder 1–27) laufen vier parallele Arbeitsstränge mit Schwerpunkt auf Souveränität und KI-Plattform. An Tag 14 (oder 28) folgt eine 60- bis 90-minütige Ergebnispräsentation für die Geschäftsleitung auf Basis des schriftlichen Berichts — Architekturoptionen, Souveränitätskontrollen, GPU-Strategie, Betriebsmodell und Roadmap für Phase 2. Phase 2 ist der Aufbau durch Ænix, typischerweise 3–12 Monate bis zur produktiven Plattform und Übergabe, je nach Umfang. Das vollständige Vorgehen Tag für Tag: **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 <!-- /BLOCK 7 -->
 
@@ -205,15 +211,16 @@ Zur vollständigen Assessment-Methodik siehe **[Platform Readiness Assessment](/
 
 <!-- BLOCK 8: PROOF -->
 
-## Souveräne KI-Plattformen, die wir gebaut haben
+## Fallstudien zu GPU und KI
 
-{{< clients >}}
+Vier GPU-Projekte sind in anonymisierter Form dokumentiert:
 
-Wir haben KI-Plattformen für KI/GPU-Betreiber, Finanzdienstleister und Initiativen des öffentlichen Sektors in der EU und Zentralasien gebaut und betrieben. Zu den Workload-Mustern zählen Inferenz im Maßstab (24/7), Fine-Tuning, RAG-Pipelines und Multi-Tenant-Model-Serving.
+- **[GPU-Inferenz auf Bare Metal](/de/case-studies/bare-metal-gpu-inference/)** — eine Inferenz-Plattform mit 8×H100 auf eigener Hardware.
+- **[Multi-Cloud-GPU für eine akademische Plattform](/de/case-studies/multicloud-academic-gpu/)** — eigene GPUs plus Burst-Kapazität.
+- **[Universeller KI-Installer](/de/case-studies/ai-universal-installer/)** — ein wiederholbar installierbarer KI-Stack für einen Telekommunikationsbetreiber und Integrator.
+- **[Interne Daten- und KI-Plattform](/de/case-studies/internal-data-and-ai-platform/)** — gemeinsame GPU-Pools mit interner Verrechnung pro Team.
 
 {{< quote-carousel >}}
-Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
-Benannte Fallstudien sind auf dem Discovery-Call verfügbar, sofern die Kundengenehmigungen es zulassen.
 
 <!-- /BLOCK 8 -->
 
@@ -221,46 +228,53 @@ Benannte Fallstudien sind auf dem Discovery-Call verfügbar, sofern die Kundenge
 
 <!-- BLOCK 9: PRICING -->
 
-## Preise und Engagement-Umfang
+## Preise und Projektumfang
 
-Das Sovereign-AI-Engagement läuft in zwei Phasen.
+Das Sovereign-AI-Projekt läuft in zwei Phasen.
 
 <div class="pricing-cards-2">
 
-### Assessment (14- oder 28-tägig)
-Architekturoptionen, GPU-Strategie, Souveränitätskontrollen, Betriebsmodell, Phase-2-Roadmap. Festpreis.
+### Assessment (14 oder 28 Tage)
+Architekturoptionen, GPU-Strategie, Souveränitätskontrollen, Betriebsmodell, Roadmap für Phase 2. Festpreis.
 **Auf Anfrage**
 
-### Phase-2-Implementierung
-Von Ænix gelieferter Aufbau der souveränen KI-Plattform. Fester Umfang oder nach Aufwand, je nach Anzahl und Komplexität der Workloads. Typischerweise 3-9 Monate Laufzeit.
-**Auf Anfrage**
+### Umsetzung in Phase 2
+Aufbau der Sovereign-AI-Plattform durch Ænix. Fester Leistungsumfang oder nach Aufwand, je nach Anzahl und Komplexität der Workloads. Typischerweise 3–12 Monate.
+**Angebot per RFP**
 
 </div>
 
-Folgt Phase 2 auf das Assessment, werden die Assessment-Kosten je nach Umfang auf das Implementierungs-Engagement angerechnet.
+Folgt Phase 2 auf das Assessment, werden die Kosten des Assessments je nach Umfang auf das Umsetzungsprojekt angerechnet.
 
-Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitgliedstaaten und Kasachstan.
+Die Ænix AI Platform wird per RFP angeboten. RFIs und RFPs nehmen wir über die üblichen Beschaffungskanäle entgegen; EU-Verträge laufen über die AENIX s.r.o. (Tschechien).
 
 <!-- /BLOCK 9 -->
+
+---
+
+<!-- BLOCK 10: FAQ -->
+
+
+<!-- /BLOCK 10 -->
 
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
 
 <a id="discovery"></a>
-## Beginnen Sie mit einem 30-minütigen Discovery-Call
+## Starten Sie mit einem 30-minütigen Discovery-Gespräch
 
-Kostenlos. Keine Vorbereitung nötig. Wir bestätigen die Eignung, grenzen den KI-Workload-Scope auf Ihre Datenklasse und Ihren Regulator ein und sagen Ihnen, ob das 14-tägige oder das 28-tägige Assessment zu Ihrer Situation passt.
+Wir prüfen die Passung, grenzen den Umfang auf Ihre Datenklasse und Ihre Aufsicht ein und legen fest, ob die 14- oder die 28-tägige Variante passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 Oder lesen Sie weiter:
-- **[Private-LLM-Deployment-Leitfaden](/de/blog/2026/05/private-llm-deployment-leitfaden/)** — praktische Architektur
-- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — angrenzender regulatorischer Auslöser
+- **[Leitfaden für den Betrieb privater LLMs](/de/blog/2026/05/private-llm-deployment-leitfaden/)** — praxisnahe Architektur
+- **[Datensouveränität](/de/loesungen/data-sovereignty/)** — verwandter regulatorischer Auslöser
 - **[DORA-Compliance](/de/loesungen/dora-compliance/)** — regulatorischer Auslöser im Finanzsektor
-- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Assessment-Methodik
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Vorgehen beim Assessment
 - **[Cozystack](/de/produkte/cozystack/)** — die Plattform, auf der wir KI-Workloads betreiben
 
 <!-- /BLOCK 11 -->
@@ -269,6 +283,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir bauen souveräne KI-Plattformen für KI/GPU-Betreiber, Finanzdienstleister und Organisationen des öffentlichen Sektors in der EU, DACH-Region und Zentralasien.*
+*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine Certified-Kubernetes-Distribution mit CNCF Kubernetes AI Conformance und OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir bauen Sovereign-AI-Plattformen für GPU-Betreiber und regulierte Organisationen.*
 
 <!-- /BLOCK 12 -->

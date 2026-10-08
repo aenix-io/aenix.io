@@ -1,5 +1,6 @@
 ---
 title: "Migrations-Hubs"
+seo_title: "Migrationsleitfäden: VMware, OpenStack, Proxmox und mehr"
 description: "Migrationsleitfäden für den Wechsel von VMware, OpenStack, CloudStack, Proxmox, Nutanix, Virtuozzo und IBM Power auf eine offene Kubernetes-Plattform."
 hero_subtitle: "Strategie, Architektur und Werkzeuge für die Migration von Altvirtualisierung"
 language: "de"
@@ -9,10 +10,10 @@ cascade:
 hreflang_en: /migration/
 ---
 
-**Migrationsleitfäden für den Wechsel auf die Ænix Plattformen aus einem bestehenden Virtualisierungs- oder Cloud-Stack. Jeder Hub beantwortet dieselben drei Fragen: Was zieht mechanisch um, was muss neu entworfen werden, und wann ist Bleiben die richtige Entscheidung. Kohortenbasiert, im Parallel-Run validiert, mit [Konveyor Forklift](https://github.com/kubev2v/forklift) als VM-Transfer-Engine in der Plattform.**
+**Migrationsleitfäden für den Wechsel auf die Ænix-Plattformen aus einem bestehenden Virtualisierungs- oder Cloud-Stack. Jeder Hub beantwortet dieselben drei Fragen: Was zieht mechanisch um, was muss neu entworfen werden, und wann ist Bleiben die richtige Entscheidung. Kohortenbasiert, im Parallel-Run validiert, mit [Konveyor Forklift](https://github.com/kubev2v/forklift) als VM-Transfer-Engine in der Plattform.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
   <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 
@@ -37,17 +38,19 @@ hreflang_en: /migration/
 Der größte einzelne Migrationsauslöser 2026 — Broadcom-Subscription-Druck und Unsicherheit beim Lizenzmodell. Forklift führt kalte und warme Transfers von vSphere durch; die Seite beschreibt, was das konkret voraussetzt, einschließlich des VDDK-Lizenzproblems, das Sie erben, und der Gäste, die sich nicht konvertieren lassen.
 
 - **[VMware-Migration](/de/migration/vmware/)** — Forklift-Mechanik, Kohorten-Sequenzierung, VCF-Decommission
+- **[VMware-Alternative](/de/alternativen/vmware-alternative/)** und **[Cozystack vs. VMware](/de/vergleichen/cozystack-vs-vmware/)** — die Wahl der Zielplattform
 - Kostenlose **[VMware-Migrations-Checkliste](/de/ressourcen/vmware-migrations-checkliste/)** — 25-Punkte-Readiness-Checkliste
 
-**Typischer Ablauf:** Assessment (14-28 Tage) → Zielplattform aufbauen → Kohorten-Migration entlang der Subscription-Laufzeiten → Decommission. Eine Umgebung mit 100 VMs ist typisch in 8 bis 12 Monaten fertig.
+**Typischer Ablauf:** Assessment (14 oder 28 Tage) → Zielplattform aufbauen → Kohorten-Migration entlang der Subscription-Laufzeiten → Decommission. Ein Bestand mit 100 VMs ist typischerweise in 8–12 Monaten migriert, einer mit 1.000 VMs in 18–24 Monaten.
 
 ### OpenStack
 
 Ein betrieblicher Fall, kein technischer Überlegenheitsfall. Nova und Glance ziehen mechanisch um, weil beide Seiten KVM sind; Neutron ist ein echter Neuentwurf; Heat und Horizon werden neu gebaut; für Ironic gibt es keine Entsprechung.
 
 - **[OpenStack-Migration](/de/migration/openstack/)** — Zuordnung Dienst für Dienst und die Teile, die nicht mitkommen
+- **[OpenStack-Alternative](/de/alternativen/openstack-alternative/)** und **[Cozystack vs. OpenStack](/de/vergleichen/cozystack-vs-openstack/)** — die Wahl der Zielplattform
 
-**Typischer Ablauf:** Architektur-Review → Parallel-Deployment → Kohorten-Migration nach Mandant → Decommission mit nachwandernder Hardware. 4 bis 12 Monate bei mittlerer Größe.
+**Typischer Ablauf:** Assessment → Parallel-Deployment → Kohorten-Migration nach Mandant → Decommission mit nachwandernder Hardware. 4–12 Monate bei einem mittelgroßen Bestand.
 
 ### CloudStack
 
@@ -69,6 +72,7 @@ Drei 2026 umbenannte Produkte, die auf drei Arten aussteigen. Virtuozzo Infrastr
 Für Proxmox-Installationen, die dem Ein-Organisations-Modell entwachsen sind — Mandantenfähigkeit, Servicekatalog über VMs hinaus, Abrechnung.
 
 - **[Proxmox-Migration](/de/migration/proxmox/)** — Migrations-Patterns
+- **[Proxmox-Alternative](/de/alternativen/proxmox-alternative/)** und **[Cozystack vs. Proxmox](/de/vergleichen/cozystack-vs-proxmox/)** — die Wahl der Zielplattform
 
 **Typischer Ablauf:** produktisierter Installer → Workload-Migration über Standard-VM-Export/-Import → Entwurf des Mandantenmodells → Cutover. Unter 50 Hosts und einmandantig lautet die ehrliche Empfehlung: auf Proxmox bleiben.
 
@@ -77,6 +81,7 @@ Für Proxmox-Installationen, die dem Ein-Organisations-Modell entwachsen sind �
 Lizenz- und Renewal-Druck bei HCI, dazu der Wunsch, VMs und Container auf einer Plattform statt auf zweien zu betreiben.
 
 - **[Nutanix-Migration](/de/migration/nutanix/)** — Ausstieg aus AOS/AHV auf eine Kubernetes-native Plattform
+- **[Nutanix-Alternative](/de/alternativen/nutanix-alternative/)** — die Wahl der Zielplattform
 
 ### IBM AIX / Power
 
@@ -97,7 +102,7 @@ Wenn der Auslöser kein einzelner Hersteller ist, beginnen Sie bei der Platzieru
 
 ## Migrationswerkzeuge in der Plattform
 
-Die Ænix Plattformen liefern [Konveyor Forklift](https://github.com/kubev2v/forklift) mit, das Kubernetes-Migrationstoolkit für Virtualisierung, als VM-Transfer-Engine. Konfiguriert wird über Kubernetes-Objekte — ein `Provider` für die Quellverbindung, `NetworkMap` und `StorageMap` für die Zuordnungen, ein `Plan`, den eine `Migration` ausführt. `virt-v2v` übernimmt die Gastkonvertierung: VirtIO-Treiber injizieren, VMware Tools entfernen, statische IPs und Laufwerksbuchstaben erhalten.
+Die Ænix-Plattformen liefern [Konveyor Forklift](https://github.com/kubev2v/forklift) mit, das Kubernetes-Migrationstoolkit für Virtualisierung, als VM-Transfer-Engine. Konfiguriert wird über Kubernetes-Objekte — ein `Provider` für die Quellverbindung, `NetworkMap` und `StorageMap` für die Zuordnungen, ein `Plan`, den eine `Migration` ausführt. `virt-v2v` übernimmt die Gastkonvertierung: VirtIO-Treiber injizieren, VMware Tools entfernen, statische IPs und Laufwerksbuchstaben erhalten.
 
 | Quelle | Forklift-Unterstützung | Hinweise |
 |---|---|---|
@@ -109,9 +114,9 @@ Die Ænix Plattformen liefern [Konveyor Forklift](https://github.com/kubev2v/for
 
 Warme Migration ist keine Live-Migration: Der RAM-Zustand wandert nicht mit, ein Neustart bleibt. Was sie bringt, ist eine Auszeit in der Größe des letzten Deltas statt in der Größe einer vollständigen Disk-Kopie.
 
-Forklift deckt ausschließlich die Disk- und Gast-Ebene ab. Mandantenmodell, Adressierung, Abrechnungsanbindung und Cutover-Reihenfolge sind Ingenieursarbeit — dafür gibt es Assessment und Kohortenplan. Für Quellen, die Forklift nicht abdeckt — Virtuozzo gehört dazu —, baut Ænix Engineering den Export- und Konvertierungspfad im Rahmen des Projekts.
+Forklift deckt ausschließlich die Disk- und Gast-Ebene ab. Mandantenmodell, Adressierung, Abrechnungsanbindung und Cutover-Reihenfolge sind Ingenieursarbeit — dafür gibt es Assessment und Kohortenplan. Für Quellen, die Forklift nicht abdeckt — Virtuozzo gehört dazu —, baut das Engineering-Team von Ænix den Export- und Konvertierungspfad im Rahmen des Projekts.
 
-**Zum Upstream-Stand:** Forklift ist heute Bestandteil der Ænix-Plattform. Die Arbeit, es im Open-Source-Cozystack als Self-Service-VM-Import für Mandanten verfügbar zu machen, befindet sich im Review und steckt noch in keiner veröffentlichten Cozystack-Version.
+**Zum Upstream-Stand:** Forklift ist heute Bestandteil der Ænix-Plattformen. Die Arbeit, es im Open-Source-Cozystack als Self-Service-VM-Import für Mandanten verfügbar zu machen, befindet sich im Review und steckt noch in keiner veröffentlichten Cozystack-Version.
 
 </div>
 </div>
@@ -120,15 +125,15 @@ Forklift deckt ausschließlich die Disk- und Gast-Ebene ab. Mandantenmodell, Adr
 
 ## Migrationsökonomie
 
-Modellieren Sie die Fünf-Jahres-Kosten gegen Ihre aktuelle Plattform mit dem **[ROI- und TCO-Rechner](/de/roi-rechner/)**, oder rechnen Sie Migrationskosten gegen laufende Einsparungen und kumulierten Netto-Cashflow mit dem **[Cloud-Repatriation-TCO-Worksheet](/de/ressourcen/cloud-repatriation-tco-worksheet/)**. Die meisten Repatriation-Fälle erreichen bei dauerhaften Workloads nach 18 bis 36 Monaten den Break-even.
+Modellieren Sie die Fünf-Jahres-Kosten gegen Ihre aktuelle Plattform mit dem **[TCO-Rechner](/tco-calculator/)** (Englisch), oder rechnen Sie Migrationskosten gegen laufende Einsparungen und kumulierten Netto-Cashflow mit dem **[Cloud-Repatriation-TCO-Worksheet](/de/ressourcen/cloud-repatriation-tco-worksheet/)**. Die meisten Repatriation-Fälle erreichen bei dauerhaften Workloads nach 18 bis 36 Monaten den Break-even.
 
 ---
 
 ## Wie wir Migrationen begleiten
 
-1. **Discovery-Call** — Passung, Umfang und Zeitrahmen klären
+1. **Discovery-Gespräch** — Passung, Umfang und Zeitrahmen klären
 2. **Platform Readiness Assessment** (14 oder 28 Tage, Festpreis vorab vereinbart) — Bestandsaufnahme, Zielarchitektur, Kohortenplan, Risikoregister. Auch der Punkt, an dem ein Nein noch günstig ist.
-3. **Pilot-Kohorte** (3-6 Monate) — erste Kohorte mit Ænix-Ingenieuren im Team migriert; daraus entstehen die Runbooks für den Rest
+3. **Pilot-Kohorte** (Umfang und Dauer legt das Assessment fest) — erste Kohorte mit Ænix-Ingenieuren im Team migriert; daraus entstehen die Runbooks für den Rest
 4. **Rollende Migration** — Kohorte für Kohorte mit Parallel-Run-Validierung, Quell-Hardware wandert nach, sobald sie frei wird
 5. **Decommission** — Abschaltung der Quellplattform nach Final-Validierung
 

@@ -1,62 +1,65 @@
 ---
-title: "Internal Developer Platform — gebaut für Adoption, nicht nur Architektur"
-description: "Die meisten Internal Developer Platforms scheitern nicht, weil die Architektur falsch ist, sondern weil Produkt-Teams sie nicht nutzen. Die Plattform mit..."
+title: "Internal Developer Platform — gebaut, damit sie genutzt wird, nicht nur für die Architektur"
+seo_title: "Internal Developer Platform, die genutzt wird"
+description: "IDP-Projekte, gemessen an der Nutzung statt an der Architektur: 5–10 Golden Paths auf mandantenfähigem Kubernetes, mit Übergabe. Backstage nur, wo es passt."
 related_pages:
-  - /de/dienstleistungen/platform-engineering
+  - /de/dienstleistungen/platform-engineering/
+  - /de/dienstleistungen/kubernetes-consulting/
+  - /de/dienstleistungen/platform-readiness-assessment/
+  - /de/produkte/private-cloud-platform/
   - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/internal-developer-platform/
 direct_answer: |
-  **Eine Internal Developer Platform (IDP) ist eine intern bereitgestellte, opinionated Self-Service-Schicht, über die Produkt-Teams Umgebungen, Datenbanken und Deployments selbst bereitstellen, ohne für jede Anfrage ein Ticket beim Plattform- oder DevOps-Team zu öffnen. Sie richtet sich an Organisationen mit drei oder mehr Produkt-Teams, langer Time-to-Environment und inkonsistenten Infrastruktur-Mustern. Aenix baut IDPs, die tatsächlich adoptiert werden: Golden-Path-Templates, GitLab-Automation und Argo-CD-Workflows auf einer mandantenfähigen Cozystack-Foundation (KubeVirt für VMs und Container über eine Kubernetes-API, Cilium-Networking, LINSTOR-Storage, Tenant-CRD-Isolation). Cozystack ist Apache-2.0-lizenziert; Aenix liefert mit der Developer-Self-Service-Schicht der Ænix Private Cloud Platform die produktisierte Variante plus operatives Handover, das Ihr Plattform-Team aufrechterhalten kann.**
-
+  **Eine Internal Developer Platform (IDP) ist eine Self-Service-Schicht, über die Produktentwickler Umgebungen bereitstellen, Anwendungen deployen und auf Observability, Secrets und Netzwerk zugreifen — über klar vorgegebene Golden Paths statt über Infrastruktur-Tickets. Ænix baut IDPs, die tatsächlich genutzt werden, nicht nur gut entworfen sind: 5–10 dokumentierte Golden Paths auf einer mandantenfähigen Kubernetes-Basis, mit Betriebs-Runbooks und Wissenstransfer, sodass das Plattform-Team des Kunden das Ergebnis selbst verantwortet. Die Basis ist in der Regel Cozystack, ein CNCF-Projekt unter Apache 2.0, das KubeVirt-VMs und Container, Cilium-Networking (eBPF), LINSTOR-Storage und Mandantenfähigkeit über das Tenant-CRD vereint. Die Projekte laufen in drei Phasen — Readiness Assessment, Aufbau und optionaler Managed-Betrieb — und setzen Developer-Portale wie Backstage nur dort ein, wo sie passen, nie als Selbstzweck.**
 quick_facts:
   - label: "Was es ist"
-    value: "Eine intern bereitgestellte Self-Service-Plattform mit Golden Paths, über die Produkt-Teams Umgebungen und Deployments ohne Tickets selbst bereitstellen"
-  - label: "Für wen"
-    value: "Organisationen mit 3+ Produkt-Teams, langer Time-to-Environment und mit Tickets überlasteter Plattform-/DevOps-Funktion"
-  - label: "Foundation"
-    value: "Cozystack — KubeVirt (VMs und Container über eine Kubernetes-API), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
+    value: "Eine Self-Service-Plattform, die Produktteams Golden Paths für Bereitstellung, Deployment und Betrieb auf einer mandantenfähigen Kubernetes-Basis gibt"
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
-  - label: "Engagement"
-    value: "Developer-Self-Service-Schicht der Ænix Private Cloud Platform plus Services; Preisstufen Basic 1.250 $/Mon. (10 Nodes), Standard 3.000 $, Plus 5.500 $, Enterprise Custom"
-  - label: "Kostenloser Einstieg"
-    value: "Platform Engineering Maturity Assessment vor dem Aufbau"
-
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Organisationen mit 3+ Produktteams, wochenlangen Wartezeiten auf Umgebungen und uneinheitlichen Infrastrukturmustern je Team"
+  - label: "Zeitplan"
+    value: "Phase 1 Assessment 14 oder 28 Tage; Phase 2 Aufbau 3–9 Monate; optional Phase 3 Managed-Betrieb"
+  - label: "Basis"
+    value: "Cozystack-Muster — KubeVirt-VMs und Container auf einer Kubernetes-API, Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, Mandantenfähigkeit über das Tenant-CRD"
+  - label: "Developer-Portal"
+    value: "Backstage, Port oder Cortex nur dort, wo die Katalogdisziplin reif ist; das Portal liegt auf der Plattform, es ersetzt sie nicht"
 faq:
-  - q: "Was ist eine Internal Developer Platform (IDP)?"
-    a: "Eine IDP ist eine intern bereitgestellte Self-Service-Schicht, über die Produkt-Teams Umgebungen, Datenbanken und Deployments eigenständig bereitstellen, statt für jede Anfrage ein Ticket zu öffnen. Eine gute IDP bietet Golden Paths: vordefinierte, abgesicherte Wege, die das Richtige zum Standardweg machen."
-  - q: "Warum scheitern die meisten IDPs?"
-    a: "Nicht an der Architektur, sondern an der Adoption. Die elegantesten Plattformen haben oft den niedrigsten internen NPS, weil Produkt-Teams sie nicht nutzen. Aenix baut opinionated Plattformen mit Golden Paths und operativem Handover, sodass die IDP tatsächlich adoptiert und vom Plattform-Team aufrechterhalten wird."
-  - q: "Brauche ich Backstage für eine IDP?"
-    a: "Nein. Backstage als Fassade vor chaotischer Infrastruktur löst das Adoptionsproblem nicht. Aenix setzt auf eine opinionated Plattform mit Golden Paths, GitLab-Automation und Argo-CD-Workflows auf einer mandantenfähigen Cozystack-Foundation statt auf einen reinen Service-Katalog."
-  - q: "Wer braucht eine Internal Developer Platform?"
-    a: "Organisationen mit drei oder mehr Produkt-Teams mit überlappenden Bedürfnissen, einer Time-to-Environment im Wochenbereich, mehreren inkonsistenten Infrastruktur-Mustern und einer bestehenden Plattform- oder DevOps-Funktion, die mit Tickets überlastet ist."
-  - q: "Worauf baut die Aenix-IDP technisch auf?"
-    a: "Auf Cozystack: KubeVirt führt VMs und Container über eine einzige Kubernetes-API aus, Cilium (eBPF) übernimmt das Networking, LINSTOR/DRBD den Storage, und Tenant-CRDs sorgen für mandantenfähige Isolation. Darüber liegen IDP-Schichten wie GitLab-Automation, Argo-CD-Workflows und Golden-Path-Templates."
-  - q: "Was kostet das Engagement?"
-    a: "Cozystack selbst ist Apache-2.0-lizenziert und kostenlos, ohne CPU- oder Core-basierte Lizenzierung. Aenix liefert die produktisierte Developer-Self-Service-Schicht der Ænix Private Cloud Platform plus Services in Stufen: Basic 1.250 $/Monat (10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Vereinbarung."
+  - q: "Internal Developer Platform oder Internal Developer Portal — was brauchen wir?"
+    a: "Ein Portal (Backstage, Port, Cortex) ist die Oberfläche und der Katalog; eine Plattform ist der darunterliegende Stack an Fähigkeiten. Die meisten Organisationen brauchen zuerst die Plattform. Für Teams unter rund 200 Engineers reicht meist eine gut dokumentierte Plattform mit einfachen IaC-Einstiegspunkten; der Nutzen eines Portals zeigt sich erst bei größerem Umfang."
+  - q: "Müssen wir auf Cozystack aufbauen?"
+    a: "Nein. Cozystack ist die Basis, die Ænix empfiehlt, wenn sie passt — und bei mandantenfähigen oder souveränen Anwendungsfällen passt sie meist. Für Organisationen, die stark auf OpenShift, Vanilla Kubernetes oder andere Distributionen setzen, erweitert Ænix stattdessen die bestehende Plattform."
+  - q: "Wie lange dauert ein typisches IDP-Projekt?"
+    a: "Das Assessment in Phase 1 dauert 14 oder 28 Tage. Der Aufbau in Phase 2 dauert je nach Umfang 3–9 Monate: zuerst die Basis (1–2 Monate), darauf die Golden Paths (1–3 Monate), mit durchgehendem Wissenstransfer."
+  - q: "Was passiert, wenn unser Team die IDP nach der Übergabe nicht betreiben kann?"
+    a: "Es gibt zwei Wege: ein optionales Managed-Services-Projekt, in dem Ænix die Plattform vertraglich betreibt, oder eine Verlängerung des Aufbauprojekts, um die Kapazität des internen Plattform-Teams auszubauen. Die Entscheidung wird im Assessment ausdrücklich getroffen."
+  - q: "Warum verkauft Ænix nicht einfach Backstage?"
+    a: "Backstage ist ein Werkzeug, kein Ziel. Ænix setzt es ein, wo es zur betrieblichen Reife des Kunden passt, und empfiehlt Alternativen (Port, Cortex, Eigenentwicklung) oder ganz ohne Portal, wenn das besser passt. Die Entscheidung richtet sich nach dem Bedarf des Teams, nicht nach Herstelleranreizen."
+  - q: "Ist die Plattform Open Source, und gehört sie uns?"
+    a: "Ja. Die Basis ist Cozystack, ein CNCF-Projekt unter Apache 2.0 ohne Lizenzkosten pro Core. Die IDP, die Ænix baut, gehört dem Kunden und wird von ihm betrieben, ohne Bindung an die Roadmap eines Herstellers. Ænix verkauft darauf Support-Abonnements, drei kommerzielle Plattformen und Dienstleistungen."
 ---
 
 <!-- BLOCK 1: HERO -->
 
-**Die meisten Internal Developer Platforms scheitern nicht, weil die Architektur falsch ist, sondern weil Produkt-Teams sie nicht nutzen. Die Plattform mit der höchsten Engineering-Eleganz hat oft den niedrigsten internen NPS. Die Plattform, die tatsächlich adoptiert wird, hat weniger Features, einfachere Abstraktionen und ein Team, das Produkt-Engineers als Kunden behandelt.**
 
-Ænix baut Internal Developer Platforms (IDPs), die adoptiert werden. Nicht Backstage als Fassade vor dem Chaos; eine opinionated Plattform mit Golden Paths, mandantenfähiger Grundlage und operativem Handover, das Ihr Plattform-Team aufrechterhalten kann.
+**Die meisten Internal Developer Platforms scheitern nicht an einer falschen Architektur, sondern daran, dass Produktteams sie nicht nutzen. Die Plattform mit der elegantesten Technik hat oft den niedrigsten internen NPS. Die Plattform, die tatsächlich genutzt wird, hat weniger Funktionen, einfachere Abstraktionen und ein Team, das Produktentwickler als Kunden behandelt.**
 
-> **Passt zu:** **[Developer-Self-Service-Schicht der Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Internal Developer Platform Layer (GitLab-Automation, Argo CD Workflows, APIs, Golden Paths, Productivity-Dashboards) auf der Cozystack-Cloud-Foundation. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
+Ænix baut Internal Developer Platforms (IDPs), die genutzt werden. Nicht Backstage als Tapete über dem Chaos, sondern eine Plattform mit klaren Vorgaben, Golden Paths, mandantenfähiger Basis und einer Betriebsübergabe, die Ihr Plattform-Team dauerhaft tragen kann.
+
+> **Passt zu:** **[Developer Self-Service](/de/produkte/private-cloud-platform/)** — die IDP-Schicht (GitLab-Automatisierung, Argo-CD-Workflows, APIs, Golden Paths, Produktivitäts-Dashboards) auf der Cloud-Basis von Cozystack. Kostenloses [Platform Engineering Maturity Assessment →](/de/ressourcen/platform-engineering-maturity-assessment/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/">IDP-Beispiele lesen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/">IDP-Beispiele →</a>
 </div>
 
 <div class="trust-badges">
-Production-grade · Adoption-getrieben · Open-Source-Foundation · Ergebnis im Besitz des Kunden-Teams
+Produktionsreif · An der Nutzung ausgerichtet · Open-Source-Basis · Ergebnis gehört Ihrem Team
 </div>
 
 <!-- /BLOCK 1 -->
@@ -65,23 +68,17 @@ Production-grade · Adoption-getrieben · Open-Source-Foundation · Ergebnis im 
 
 <!-- BLOCK 2: WHO THIS IS FOR -->
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
+## Wer eine Internal Developer Platform braucht
 
-## Wer braucht eine Internal Developer Platform
+Eine Investition in eine Internal Developer Platform passt, wenn:
 
-Die Investition in eine Internal Developer Platform passt, wenn:
+- **3+ Produktteams** überlappende Anforderungen an Infrastruktur und Bereitstellung haben
+- **Umgebungen Wochen brauchen**, obwohl es Stunden sein sollten
+- **Mehrere uneinheitliche Infrastrukturmuster** je Team gewachsen sind
+- **Die bestehende Plattform- oder DevOps-Funktion in Tickets erstickt** — ohne Kapazität für Self-Service-Arbeit
+- **Konkreter Druck** (Aufsicht, Kosten, Souveränität, Wachstum) eine strukturierte Plattforminvestition jetzt sinnvoll macht
 
-- **3+ Produkt-Teams** mit überlappenden Infrastruktur- und Provisioning-Bedürfnissen
-- **Time-to-Environment in Wochen** für das, was Stunden dauern sollte
-- **Mehrere inkonsistente Infrastruktur-Muster**, pro Team entstanden
-- **Bestehende Plattform-/DevOps-Funktion mit Tickets überlastet** — keine Kapazität für Self-Service-Arbeit
-- **Spezifischer Druck** (Regulator, Kosten, Souveränität, Skalierung) macht strukturierte Plattform-Investition jetzt relevant
-
-Wenn Ihre Situation auf drei dieser Punkte passt, liefert strukturierte IDP-Arbeit Adoption + Entwicklungsgeschwindigkeit innerhalb weniger Monate. Wenn Sie ein Produkt-Team und eine kleine Infrastruktur-Oberfläche haben, liefern einfachere Shared-Tooling-Praktiken ein besseres Kosten-Nutzen-Verhältnis.
-
-</div>
-</div>
+Treffen drei dieser Punkte zu, bringt strukturierte IDP-Arbeit innerhalb weniger Monate Nutzung und Tempo. Haben Sie ein einziges Produktteam und eine kleine Infrastruktur, sind einfachere gemeinsame Werkzeuge im Verhältnis von Kosten und Nutzen besser.
 
 <!-- /BLOCK 2 -->
 
@@ -89,35 +86,35 @@ Wenn Ihre Situation auf drei dieser Punkte passt, liefert strukturierte IDP-Arbe
 
 <!-- BLOCK 3: WHAT YOU GET -->
 
-## Was ein Ænix-IDP-Engagement produziert
-
-<div class="grid-2x2">
-
-**1. Opinionated Golden Paths**
-5-10 Self-Service-Pfade, die die häufigsten Produkt-Team-Bedürfnisse abdecken: Environment-Provisioning, Application-Deployment, Observability-Onboarding, Secrets, Identity, Netzwerk-Konnektivität. Dokumentiert, supported, auditiert.
-
-**2. Mandantenfähige Kubernetes-Foundation**
-Gebaut auf KubeVirt + Cilium + LINSTOR (Cozystack-Muster) oder als Erweiterung Ihrer bestehenden Kubernetes-Plattform. Tenant CRD, Per-Tenant-Quotas, RBAC, Audit. Geeignet für Enterprise-Multi-BU oder Service-Provider-Multi-Customer-Nutzung.
-
-**3. Developer-Portal-Layer, wo sinnvoll**
-Backstage (CNCF Incubating), wenn die Katalog-Disziplin reif ist; Alternativen (Port, Cortex, Custom), wenn besser passend. Das Portal ist der sichtbare Teil; die Plattform liegt darunter.
-
-**4. Operatives Modell und Runbooks**
-Dokumentierte Plattform-Team-Verantwortlichkeiten, On-Call-Muster, Kapazitätsplanung. Wissenstransfer durchgehend. Ihr Team betreibt die Plattform, nachdem wir gehen.
-
-</div>
-
-Das Ergebnis wird in Adoptions-Metriken gemessen — Time-to-Environment, Golden-Path-Adoptionsrate, interner NPS — nicht in Feature-Anzahl.
+## Was ein IDP-Projekt mit Ænix liefert
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Ænix-IDP-Engagement</b><div class="diagram__chips"><span>Opinionated Plattform</span><span>Wissenstransfer und operatives Handover</span></div></div>
-<div class="diagram__conn">produziert</div>
-<div class="diagram__node"><b>Opinionated Plattform auf Cozystack</b><div class="diagram__chips"><span>Golden-Path-Templates</span><span>GitLab-Automation, Argo-CD-Workflows</span><span>KubeVirt, Cilium, LINSTOR</span><span>Tenant-CRD-Isolation</span></div></div>
-<div class="diagram__conn">gemessen in</div>
-<div class="diagram__node"><b>Adoptions-Metriken</b><div class="diagram__chips"><span>Time-to-Environment</span><span>Golden-Path-Adoptionsrate</span><span>interner NPS</span></div></div>
+<div class="diagram__node"><b>Produktteams</b><div class="diagram__chips"><span>Umgebungen</span><span>Deployments</span><span>Observability</span></div></div>
+<div class="diagram__conn">im Self-Service über</div>
+<div class="diagram__node diagram__node--brand"><b>Self-Service-IDP auf Cozystack</b><div class="diagram__chips"><span>Golden Paths</span><span>APIs</span><span>Mandantenfähiges Kubernetes</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Nutzung und Tempo</b><div class="diagram__chips"><span>Zeit bis zur Umgebung</span><span>Nutzung der Golden Paths</span><span>Interner NPS</span></div></div>
 </div>
 </div>
+
+<div class="grid-2x2">
+
+**1. Golden Paths mit klaren Vorgaben**
+5–10 Self-Service-Pfade für die häufigsten Anforderungen von Produktteams: Bereitstellung von Umgebungen, Deployment von Anwendungen, Anbindung an Observability, Secrets, Identity, Netzwerkanbindung. Dokumentiert, unterstützt, auditiert.
+
+**2. Mandantenfähige Kubernetes-Basis**
+Aufgebaut auf KubeVirt + Cilium + LINSTOR (Cozystack-Muster) oder als Erweiterung Ihrer bestehenden Kubernetes-Plattform. Tenant-CRD, Quotas je Mandant, RBAC, Audit. Geeignet für Unternehmen mit mehreren Geschäftsbereichen ebenso wie für Service-Provider mit vielen Kunden.
+
+**3. Developer-Portal, wo es sinnvoll ist**
+Backstage (CNCF Incubating), wenn die Katalogdisziplin reif ist; Alternativen (Port, Cortex, Eigenentwicklung), wenn sie besser passen. Das Portal ist der sichtbare Teil; die Plattform liegt darunter.
+
+**4. Betriebsmodell und Runbooks**
+Dokumentierte Verantwortlichkeiten des Plattform-Teams, Muster für die Rufbereitschaft, Kapazitätsplanung. Wissenstransfer über die gesamte Laufzeit. Ihr Team betreibt die Plattform, wenn wir das Projekt abgeschlossen haben.
+
+</div>
+
+Gemessen wird das Ergebnis an der Nutzung — Zeit bis zur bereitgestellten Umgebung, Nutzungsrate der Golden Paths, interner NPS — nicht an der Zahl der Funktionen.
 
 <!-- /BLOCK 3 -->
 
@@ -125,25 +122,30 @@ Das Ergebnis wird in Adoptions-Metriken gemessen — Time-to-Environment, Golden
 
 <!-- BLOCK 4: COMMON IDP FAILURES -->
 
-## Wo IDP-Programme häufig scheitern
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
+## Woran IDP-Programme häufig scheitern
 
 <div class="gap-cards-2">
 
-**Backstage als die Plattform**
-Backstage zu kaufen ohne eine darunterliegende opinionated Plattform produziert einen schönen Katalog über demselben operativen Chaos. Self-Service-Pfade dauern weiterhin Wochen; der Katalog ist nur ein reichhaltigerer Warteraum.
+**Backstage als Plattform**
+Wer Backstage ohne eine darunterliegende Plattform mit klaren Vorgaben kauft, bekommt einen schönen Katalog über demselben Betriebschaos. Self-Service dauert weiterhin Wochen; der Katalog ist nur ein komfortableres Wartezimmer.
 
-**Für Engineers bauen, nicht für Produkt-Teams**
-Die Kunden des Plattform-Teams sind Produkt-Engineers. Eine auf Engineering-Eleganz optimierte Architektur produziert oft eine Plattform, die niemand so nutzen will, wie sie entworfen wurde.
+**Für Engineers gebaut, nicht für Produktteams**
+Die Kunden des Plattform-Teams sind Produktentwickler. Eine auf technische Eleganz optimierte Architektur ergibt oft eine Plattform, die niemand so nutzen will, wie sie gedacht war.
 
-**Vendor-getriebener „Complete IDP“-Lock-in**
-Mehrere Anbieter verkaufen vorgefertigte IDPs. Sie funktionieren für schmale Kundenprofile, bauen aber Lock-in mit einem anderen Anbieter neu auf. Die Roadmap des Anbieters wird zu Ihrer Roadmap.
+**Lock-in durch die „Komplett-IDP“ eines Herstellers**
+Mehrere Hersteller verkaufen fertig geschnürte IDPs. Sie funktionieren für enge Kundenprofile, schaffen aber einen neuen Lock-in bei einem anderen Hersteller. Dessen Roadmap wird zu Ihrer Roadmap.
 
-**Plattform-Team von Tickets absorbiert**
-Ohne explizite Headcount und geschützte Golden-Path-Arbeitszeit wird das Plattform-Team zum Ticket-Support. Self-Service-Arbeit stockt.
+**Plattform-Team geht in Tickets unter**
+Ohne eigene Stellen und geschützte Zeit für Golden Paths wird das Plattform-Team zum Ticket-Support. Die Self-Service-Arbeit kommt zum Stillstand.
 
 </div>
 
-Diese Fehlermodi sind vorhersehbar. Die Engagement-Struktur verhindert jeden bewusst.
+
+</div>
+</div>
 
 <!-- /BLOCK 4 -->
 
@@ -151,15 +153,15 @@ Diese Fehlermodi sind vorhersehbar. Die Engagement-Struktur verhindert jeden bew
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
-## Wie Ænix engagiert
+## Wie Ænix arbeitet
 
-Das IDP-Engagement läuft in drei Phasen:
+Das IDP-Projekt läuft in drei Phasen:
 
-- **Phase 1: Platform Readiness Assessment (14-28 Tage)** — aktuelle Plattform-Reife, Ziel-IDP-Architektur, Golden-Path-Prioritäten, RACI für das Plattform-Team. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
-- **Phase 2: Build-Engagement (3-9 Monate)** — Ænix-Engineers integriert mit Ihrem Plattform-Team, bauen die Foundation, Golden Paths und Runbooks. Wissenstransfer ist ein First-Class-Ergebnis, kein Nachgedanke.
-- **Phase 3 (optional): Managed Operation** — für Organisationen, die die IDP brauchen, aber keine interne Plattform-Team-Kapazität aufbauen können.
+- **Phase 1: Platform Readiness Assessment (14 oder 28 Tage)** — aktuelle Plattformreife, Ziel-Architektur der IDP, Prioritäten der Golden Paths, RACI für das Plattform-Team. Siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+- **Phase 2: Aufbauprojekt (3–9 Monate)** — Ænix-Engineers arbeiten in Ihrem Plattform-Team mit und bauen Basis, Golden Paths und Runbooks auf. Wissenstransfer ist ein vollwertiger Liefergegenstand, kein Nachgedanke.
+- **Phase 3 (optional): Managed-Betrieb** — für Organisationen, die die IDP brauchen, aber keine interne Kapazität für ein Plattform-Team aufbauen können.
 
-Engagements starten typischerweise mit Phase 1; die Sequenzierung von Phase 2 ergibt sich aus dem Assessment.
+Die Projekte beginnen typischerweise mit Phase 1; die Reihenfolge in Phase 2 ergibt sich aus dem Assessment.
 
 <!-- /BLOCK 5 -->
 
@@ -169,10 +171,8 @@ Engagements starten typischerweise mit Phase 1; die Sequenzierung von Phase 2 er
 
 ## Warum gerade Ænix
 
-- **Mandantenfähige Plattformen sind das, was wir betreiben.** Cozystack ist in Produktion bei Service-Anbietern und regulierten Unternehmen, die mandantenfähige Clouds betreiben. Die Plattform-Muster, die wir empfehlen, sind an laufenden Systemen kalibriert.
-- **Backstage ist ein Tool, kein Ziel.** Wir nutzen Backstage, wo es dem Kunden dient; wir verkaufen es nicht. Die Entscheidung ist an der operativen Reife Ihres Teams kalibriert, nicht an Vendor-Anreizen.
-- **Open-Source-Foundation.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Projekt. Die IDP, die wir bauen, gehört Ihnen — kein Vendor-Roadmap-Lock-in.
-- **Teams in der EU + Zentralasien.** Zeitzonen-freundlich für europäische Kunden; ausgerichtet an regulatorischen Frameworks.
+- **Backstage ist ein Werkzeug, kein Ziel.** Wir verkaufen es nicht und können Ihnen deshalb sagen, wenn ein Katalog der falsche erste Schritt ist und ein dokumentierter Golden Path der richtige.
+- **Mandantenfähigkeit ist der schwierige Teil, und genau den betreiben wir.** [Cozystack](/de/produkte/cozystack/) läuft produktiv bei Service-Providern und regulierten Unternehmen, die mandantenfähige Clouds betreiben; das Mandantenmodell, das wir vorschlagen, betreiben wir selbst.
 
 <!-- /BLOCK 6 -->
 
@@ -180,14 +180,14 @@ Engagements starten typischerweise mit Phase 1; die Sequenzierung von Phase 2 er
 
 <!-- BLOCK 7: TIMELINE -->
 
-## Engagement-Struktur
+## Ablauf des Projekts
 
 | Wann | Was | Ergebnis |
 |---|---|---|
-| **Tag 0** | 30-min Discovery-Call (kostenlos) | Fit bestätigen, Scope und IDP-Stufe identifizieren |
-| **Phase 1: Assessment (14-28 Tage)** | Platform Readiness Assessment | Ziel-IDP-Architektur, Golden-Path-Prioritäten, RACI |
-| **Phase 2: Build (3-9 Monate)** | Foundation + Golden Paths + Runbooks + Wissenstransfer | Produktive IDP, betrieben von Ihrem Team |
-| **Phase 3: Operate (optional, laufend)** | Managed-Services oder vollständig in-house | Nachhaltige IDP |
+| **Tag 0** | 30-minütiges Discovery-Gespräch (kostenlos) | Eignung klären, Umfang und IDP-Reifestufe bestimmen |
+| **Phase 1: Assessment (14 oder 28 Tage)** | Platform Readiness Assessment | Ziel-Architektur der IDP, Prioritäten der Golden Paths, RACI |
+| **Phase 2: Aufbau (3–9 Monate)** | Basis + Golden Paths + Runbooks + Wissenstransfer | Produktive IDP, betrieben von Ihrem Team |
+| **Phase 3: Betrieb (optional, laufend)** | Managed Services oder vollständig intern | Dauerhaft betriebene IDP |
 
 Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
@@ -197,14 +197,14 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 
 <!-- BLOCK 8: PROOF -->
 
-## IDPs, die wir gebaut haben
+## Unternehmen, die Plattformen mit Ænix betreiben
 
 {{< clients >}}
 
-Wir haben Internal Developer Platforms gebaut für Service-Anbieter, die mandantenfähige Clouds betreiben, regulierte Unternehmen mit starken Souveränitätsanforderungen, KI/GPU-Operatoren mit Multi-Team-Data-Science-Zugang und Telekom-Operatoren, die mehrere Legacy-Umgebungen konsolidieren.
+Wir haben Internal Developer Platforms für Service-Provider mit mandantenfähigen Clouds, regulierte Unternehmen mit hohen Souveränitätsanforderungen, KI- und GPU-Betreiber mit Zugang für mehrere Data-Science-Teams sowie Telekommunikationsanbieter gebaut, die mehrere Altumgebungen zusammenführen.
 
 {{< quote-carousel >}}
-Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Die Logos oben stehen für produktive Deployments der Ænix Public Cloud Platform. Namentliche Referenzen zu Projekten unter NDA nennen wir im Discovery-Gespräch.
 <!-- /BLOCK 8 -->
 
 ---
@@ -213,19 +213,7 @@ Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Fre
 
 ## Preise
 
-<div class="pricing-cards-2">
-
-### Assessment (14-28 Tage)
-Festpreis. Schriftliches Ergebnis, Ziel-IDP-Architektur, Phase-2-Roadmap.
-**Auf Anfrage**
-
-### Build- / Managed-Engagement
-nach Aufwand oder zum Festpreis. Phase-2-Build typischerweise 3-9 Monate Laufzeit.
-**Auf Anfrage**
-
-</div>
-
-Wenn Phase 2 auf das Assessment folgt, werden die Assessment-Kosten je nach Scope auf die Implementierung angerechnet.
+Das Assessment hat einen Festpreis, der vor dem Start feststeht, und liefert eine schriftliche Ziel-Architektur der IDP sowie eine Roadmap für Phase 2. Der Aufbau wird nach Aufwand oder zum Festpreis abgerechnet. Folgt Phase 2, werden die Kosten des Assessments je nach Umfang darauf angerechnet.
 
 <!-- /BLOCK 9 -->
 
@@ -233,27 +221,22 @@ Wenn Phase 2 auf das Assessment folgt, werden die Assessment-Kosten je nach Scop
 
 <!-- BLOCK 10: FAQ -->
 
-
-**Weitere Fragen?** Siehe den **[Artikel zu IDP-Beispielen und -Architektur](/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/)** oder **[sprechen Sie mit uns](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
 ---
 
 <!-- BLOCK 11: BOTTOM CTA -->
 
 <a id="discovery"></a>
-## Beginnen Sie mit einem 30-minütigen Discovery-Call
+## Starten Sie mit einem 30-minütigen Discovery-Gespräch
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-Oder lesen Sie mehr:
+Oder lesen Sie weiter:
 - **[IDP-Beispiele ohne Backstage-Lock-in](/de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/)** — praktische Muster
-- **[Platform-Engineering-Services](/de/dienstleistungen/platform-engineering/)** — breiterer Scope
-- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Assessment-Methodik
-- **[Cozystack](/de/produkte/cozystack/)** — die Foundation, auf der wir typischerweise bauen
+- **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)** — breiterer Umfang
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Methodik des Assessments
+- **[Cozystack](/de/produkte/cozystack/)** — die Basis, auf der wir in der Regel aufbauen
 
 <!-- /BLOCK 11 -->
 
@@ -261,6 +244,6 @@ Oder lesen Sie mehr:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix ist das Platform-Engineering-Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Platform-Engineering-Team, das Cozystack initiiert hat — ein CNCF-Projekt, eine zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes) mit OpenSSF Best Practices Badge.*
 
 <!-- /BLOCK 12 -->

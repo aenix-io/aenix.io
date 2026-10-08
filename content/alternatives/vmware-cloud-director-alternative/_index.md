@@ -4,6 +4,7 @@ description: "Leaving VMware Cloud Director? Keep multi-tenant self-service, cat
 date: 2026-10-08
 lastmod: 2026-10-08
 language: "en"
+hreflang_de: "/de/alternativen/vmware-cloud-director-alternative/"
 quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "vmware cloud director alternative"

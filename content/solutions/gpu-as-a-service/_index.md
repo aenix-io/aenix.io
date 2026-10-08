@@ -4,6 +4,7 @@ description: "Sell NVIDIA GPU capacity as a multi-tenant cloud: GPU VMs, Kuberne
 date: 2026-10-08
 lastmod: 2026-10-08
 language: "en"
+hreflang_de: "/de/loesungen/gpu-as-a-service/"
 quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "gpu as a service platform"

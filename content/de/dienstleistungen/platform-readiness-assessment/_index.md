@@ -1,60 +1,56 @@
 ---
 title: "Platform Readiness Assessment — für Cloud-Souveränität, Migration und Kostenstruktur in 14 Tagen"
-description: "Eine strukturierte Cloud-Readiness-Bewertung, die Ihnen drei konkrete Ergebnisse liefert: Time-to-Environment-Metrik, Compliance-by-Design-Karte und..."
-related_pages: ["/de/loesungen/data-sovereignty", "/de/loesungen/dora-compliance", "/de/loesungen/cloud-repatriation"]
+seo_title: "Platform Readiness Assessment: 14 oder 28 Tage, Festpreis"
+description: "Assessment zum Festpreis über 14 oder 28 Tage: Time-to-Environment-Metrik, Compliance-by-Design-Karte für DORA, NIS2 und DSGVO, 12-Monats-Kostenpfad."
+related_pages: ["/de/loesungen/data-sovereignty/", "/de/loesungen/dora-compliance/", "/de/loesungen/cloud-repatriation/", "/de/loesungen/sovereign-ai/", "/de/dienstleistungen/platform-engineering/", "/de/produkte/", "/de/produkte/cozystack/", "/de/preise/"]
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/platform-readiness-assessment/
 direct_answer: |
-  **Das Platform Readiness Assessment von Aenix ist ein zeitlich fixiertes Beratungsengagement (14 oder 28 Tage), das die Cloud-Reife einer Organisation in vier Workstreams bewertet — Inventar und Plattform-Reife, Souveränität und Regulator-Lücke (DORA, NIS2, DSGVO), Kosten- und Cloud-Spend-Posture sowie Developer-Self-Service. Es liefert drei konkrete Ergebnisse: eine Time-to-Environment-Metrik, eine Compliance-by-Design-Karte und eine Kosten- und Kontroll-Trajektorie über 12 Monate. Durchgeführt wird es von den Plattform-Engineers hinter Cozystack — dem Apache-2.0-lizenzierten CNCF-Projekt — und es endet mit einer Plattform-Empfehlung für die Ænix Platform. Es richtet sich an Organisationen, die Datensouveränität, Cloud-Repatriation, souveräne KI oder eine Self-Service-Plattform evaluieren.**
-
+  **Das Platform Readiness Assessment ist eine Festpreisleistung von Ænix, die die Cloud-Plattform einer Organisation in vier Workstreams bewertet — Inventar und Plattformreife, Souveränität und regulatorische Lücken (DORA, NIS2, DSGVO), Cloud-Ausgaben sowie Developer Self-Service — und nach 14 Tagen (bzw. 28 Tagen in der vollständigen Variante) einen schriftlichen Bericht liefert. Es richtet sich an Organisationen mit eigenen Platform-Engineering-Teams, die unter Souveränitätsdruck stehen, eine Repatriierung oder Kostenvorgaben umsetzen müssen, souveräne KI planen oder zu lange auf neue Umgebungen warten. Die Arbeit leisten Ænix-Platform-Engineers, die Cozystack in Produktion bauen und betreiben, keine Managementberater. Ergebnis sind drei schriftliche, datierte Dokumente: eine Time-to-Environment-Metrik, eine Compliance-by-Design-Karte und ein Kosten- und Kontrollpfad.**
 quick_facts:
   - label: "Was es ist"
-    value: "Ein zeitlich fixiertes Cloud-Readiness-Assessment (14 oder 28 Tage) mit vier Workstreams und drei schriftlichen Ergebnissen, durchgeführt von Aenix-Plattform-Engineers"
-  - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
-  - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
-  - label: "Zielgruppe"
-    value: "Organisationen, die Datensouveränität, DORA-/NIS2-Compliance, Cloud-Repatriation, souveräne KI oder Developer-Self-Service evaluieren"
-  - label: "Ergebnisse"
-    value: "Time-to-Environment-Metrik, Compliance-by-Design-Karte (DORA / NIS2 / DSGVO) und Kosten- und Kontroll-Trajektorie über 12 Monate"
-  - label: "Regulatorik"
-    value: "Deckt DORA, NIS2 und DSGVO sowie sektorale Anwendbarkeit ab"
-  - label: "Nächster Schritt"
-    value: "Discovery-Call → Assessment → Plattform-Empfehlung (Public Cloud, Private Cloud oder AI) → Pilot → Full Build"
-
+    value: "Ein Cloud-Readiness-Assessment zum Festpreis, das in 14 Tagen eine schriftliche Time-to-Environment-Metrik, eine Compliance-by-Design-Karte und einen Kosten- und Kontrollpfad liefert."
+  - label: "Preis"
+    value: "Festpreis, vor Beginn vereinbart, eine Rechnung; wird je nach Umfang auf eine anschließende Umsetzung angerechnet."
+  - label: "Zeitplan"
+    value: "Fokussierte Variante über 14 Tage (Schwerpunkt auf einem Workstream) oder vollständige Variante über 28 Tage (alle vier Workstreams, Interviews in mehreren Geschäftsbereichen, Roadmap für Phase 2)."
+  - label: "Wer es durchführt"
+    value: "Ænix-Platform-Engineers, die Cozystack in Produktion bauen und betreiben — keine entsandten Berater und kein Partnernetzwerk."
+  - label: "Für wen"
+    value: "Organisationen mit eigenen Platform-/SRE-Teams unter Druck durch Souveränität, Repatriierung, Kostenkontrolle, souveräne KI oder lange Time-to-Environment."
+  - label: "Erforderlicher Zugang"
+    value: "Lesezugriff auf Architekturdokumente, Git-Organisationen, Public-Cloud-Abrechnung und Observability-Dashboards — keine Schreibrechte, kein kubectl auf Produktion."
 faq:
-  - q: "Wie lange dauert das Platform Readiness Assessment?"
-    a: "Es gibt zwei Varianten: ein fokussiertes 14-Tage-Engagement und ein vollständiges 28-Tage-Engagement. Beide laufen über dieselben vier Workstreams; die längere Variante erlaubt eine tiefere Analyse von Inventar, Regulator-Lücke, Kostenstruktur und Developer-Self-Service."
-  - q: "Was bekomme ich am Ende des Assessments?"
-    a: "Drei schriftliche Ergebnisse: eine Time-to-Environment-Metrik (aktuell vs. Ziel), eine Compliance-by-Design-Karte für DORA, NIS2 und DSGVO sowie eine Kosten- und Kontroll-Trajektorie als 12-Monats-Plan. Hinzu kommt eine konkrete Plattform-Empfehlung für die Ænix Platform."
-  - q: "Wer führt das Assessment durch?"
-    a: "Plattform-Engineers von Aenix — dem Team hinter Cozystack, dem Open-Source-Projekt unter Apache-2.0-Lizenz — und nicht Management-Berater. Die Bewertung kommt also direkt von den Ingenieuren, die die Plattform bauen und betreiben."
-  - q: "Was kostet das Assessment, und wird die Gebühr verrechnet?"
-    a: "Das Assessment hat einen Festpreis mit einer einzigen Rechnung. Folgt anschließend eine Implementierung (Phase 2), wird die Bewertungsgebühr gegen die Implementierung gutgeschrieben."
-  - q: "Deckt das Assessment DORA- und NIS2-Compliance ab?"
-    a: "Ja. Der Workstream Souveränität und Regulator-Lücke prüft DORA, NIS2 und DSGVO samt sektoraler Anwendbarkeit. Das Ergebnis ist eine Compliance-by-Design-Karte, die zeigt, wo Lücken bestehen und wie die Ænix Platform sie schließt."
-  - q: "Für wen ist das Assessment geeignet?"
-    a: "Für Organisationen, die Datensouveränität, Cloud-Repatriation, souveräne KI oder eine Self-Service-Plattform für Entwickler evaluieren. Das Assessment verwandelt diese Frage in einen schriftlichen Plan mit Zahlen, Verantwortlichen und Zeitplan und passt zu allen Ænix-Plattformen."
+  - q: "Was unterscheidet das von einem Cloud-Readiness-Assessment der Big Four?"
+    a: "Big-Four-Assessments liefern in der Regel Managementberater, die anschließend an ein separates Umsetzungsteam und einen Hyperscaler-Partner übergeben. Bei Ænix führen dieselben Engineers das Assessment und jede anschließende Umsetzung durch und sind mit keinem Hyperscaler geschäftlich verbunden. Die Empfehlungen spiegeln deshalb wider, wofür das Team technisch einstehen und was es unter Ihrer Governance betreiben kann."
+  - q: "Wird Ænix uns am Ende Cozystack verkaufen wollen?"
+    a: "Der Bericht nennt den empfohlenen Stack mit Begründung. In den meisten Fällen ist das Cozystack — das Open-Source-CNCF-Projekt, das Ænix initiiert hat und mitentwickelt —, aber wenn die Analyse in eine andere Richtung weist, sagt der Bericht das. Es ist kein Verkaufsprojekt für Cozystack."
+  - q: "Wie lange dauert das Assessment und was kostet es?"
+    a: "Es gibt zwei Varianten: eine fokussierte über 14 Tage mit Schwerpunkt auf einem Workstream und eine vollständige über 28 Tage, die alle vier Workstreams abdeckt und eine Roadmap für Phase 2 enthält. Beide haben einen Festpreis mit einer Rechnung und eine gegenseitige NDA zum Kickoff. Folgt eine Umsetzung in Phase 2, werden die Kosten des Assessments je nach Umfang angerechnet."
+  - q: "Welchen Zugang braucht Ænix dafür?"
+    a: "Lesezugriff auf Architekturdokumente, GitHub-/GitLab-Organisationen, die Public-Cloud-Abrechnung und Observability-Dashboards. Ein kubectl-Zugang zur Produktion und Zugangsdaten mit Schreibrechten sind nicht erforderlich."
+  - q: "Was liefert das Assessment konkret?"
+    a: "Drei schriftliche, datierte Ergebnisse für den Executive Sponsor: eine Time-to-Environment-Metrik (Ist und Ziel mit Umsetzungsplan), eine Compliance-by-Design-Karte für DORA, NIS2, DSGVO und branchenspezifische Kontrollen sowie einen Kosten- und Kontrollpfad über 12 Monate mit Obergrenzen und priorisierten Kandidaten für die Repatriierung."
+  - q: "Eignet es sich auch für Organisationen, die ihren Stack bereits gewählt haben?"
+    a: "Ja. Der Schwerpunkt der Workstreams verschiebt sich dann von der Herstellerauswahl hin zu Betriebsreife, Multi-Tenancy-Modell, regulatorischen Lücken und Developer Self-Service — etwa wenn Sie sich bereits für KubeVirt, Cilium, LINSTOR und Talos entschieden haben."
 ---
 
 <!-- BLOCK 1: HERO -->
 
-**Eine strukturierte Cloud-Readiness-Bewertung, die Ihnen drei konkrete Ergebnisse liefert: Time-to-Environment-Metrik, Compliance-by-Design-Karte und Kosten-und-Kontroll-Trajektorie. Durchgeführt von Ænix-Plattform-Engineers — dem Team hinter Cozystack — nicht von Management-Beratern.**
+**Wenn Sie Datensouveränität, DORA- und NIS2-Anforderungen, eine Cloud-Repatriierung, souveräne KI oder eine Self-Service-Plattform für Ihre Entwickler prüfen — mit diesem Assessment wird aus der Frage ein schriftlicher Plan mit Zahlen, Verantwortlichen und Zeitplan.**
 
-Wenn Sie Datensouveränität, DORA- / NIS2-Compliance, Cloud-Repatriation, souveräne KI oder eine Self-Service-Plattform für Ihre Entwickler evaluieren — dies ist das Engagement, das die Frage in einen schriftlichen Plan mit Zahlen, Verantwortlichen und Zeitplan verwandelt.
-
-> **Passt zu:** allen **[Ænix-Plattformen](/de/produkte/)** — das Assessment ergibt, welche Plattform zu Ihrem Scope passt. Public Cloud / Private Cloud / AI. Discovery-Call → Assessment → Plattform-Empfehlung → Pilot → Full Build.
+> **Passt zu:** allen drei **[Ænix-Plattformen](/de/produkte/)** — das Assessment benennt, welche zu Ihrem Umfang passt, oder sagt, dass keine passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
   <a class="cta-secondary" href="#what-we-look-at">Details ansehen →</a>
 </div>
 
 <div class="trust-badges">
-Ænix-Engineers, keine Berater · Festpreis · Schriftliche Ergebnisse · Kein Vendor-Lock-in</div>
+Ænix-Engineers, keine Berater · Festpreis · Schriftliche Ergebnisse · Keine Herstellerbindung
+</div>
 
 <!-- /BLOCK 1 -->
 
@@ -67,21 +63,21 @@ Wenn Sie Datensouveränität, DORA- / NIS2-Compliance, Cloud-Repatriation, souve
 
 ## Wann das Platform Readiness Assessment passt
 
-Kunden kommen mit einem von vier Auslösern zu uns. Das Assessment adressiert sie als ein einziges Programm — nicht als vier unverbundene Workstreams.
+Kunden kommen mit einem von vier Anlässen zu uns. Das Assessment behandelt sie als ein gemeinsames Programm.
 
 <div class="trigger-grid-2x2">
 
-**Regulator- und Souveränitäts-Druck**
-DORA (seit Januar 2025 in Kraft), NIS2, DSGVO, sektorale Data-Residency. Ergebnis: Compliance-by-Design-Karte für Ihren Stack.
+**Druck durch Aufsicht und Souveränität**
+DORA (seit Januar 2025 in Kraft), NIS2, DSGVO, branchenspezifische Vorgaben zum Datenstandort. Ergebnis: eine Compliance-by-Design-Karte für Ihren Stack.
 
 **KI und Analytics auf sensiblen Daten**
-GenAI- / Inferenz-Workloads, bei denen Daten den Perimeter nicht verlassen dürfen. Ergebnis: Private-AI-Architektur-Optionen, zugeschnitten auf Ihr Modell und Ihre Datenklasse.
+GenAI- und Inferenz-Workloads, bei denen die Daten den eigenen Perimeter nicht verlassen dürfen. Ergebnis: Architekturoptionen für private KI, zugeschnitten auf Ihr Modell und Ihre Datenklasse.
 
-**Cloud-Repatriation und Kostenkontrolle**
-Public-Cloud-Rechnung übersteigt die Vorhersehbarkeit, FinOps-Mandat, Repatriation in der Roadmap. Ergebnis: Kosten-Trajektorie mit Caps und Zeitplan.
+**Cloud-Repatriierung und Kostenkontrolle**
+Die Public-Cloud-Rechnung ist nicht mehr planbar, es gibt einen FinOps-Auftrag, die Repatriierung steht auf der Roadmap. Ergebnis: ein Kostenpfad mit Obergrenzen und Zeitplan.
 
-**Developer-Self-Service und Time-to-Environment**
-Umgebungen, deren Provisionierung Wochen dauert, IAM/Network/Monitoring von Hand, mehrere Tools, die niemand besitzt. Ergebnis: Time-to-Environment-Baseline → Ziel mit einem Delivery-Plan.
+**Developer Self-Service und Time-to-Environment**
+Die Bereitstellung von Umgebungen dauert Wochen, IAM, Netzwerk und Monitoring werden von Hand eingerichtet, mehrere Werkzeuge haben keinen Verantwortlichen. Ergebnis: Time-to-Environment als Ausgangswert und Ziel mit Umsetzungsplan.
 
 </div>
 
@@ -97,26 +93,16 @@ Umgebungen, deren Provisionierung Wochen dauert, IAM/Network/Monitoring von Hand
 <a id="what-we-look-at"></a>
 ## Was 14 Tage abdecken — vier Workstreams, ein Bericht
 
-Das Assessment läuft parallel über vier Workstreams. Jeder hat auf unserer Seite einen benannten Owner, ein definiertes Ergebnis und ein festes Fenster.
+Das Assessment läuft parallel in vier Workstreams. Jeder hat auf unserer Seite einen benannten Verantwortlichen, ein festgelegtes Ergebnis und ein festes Zeitfenster.
 
-| # | Workstream | Was wir inspizieren | Ergebnis |
+| # | Workstream | Was wir prüfen | Ergebnis |
 |---|---|---|---|
-| 1 | **Inventar und Plattform-Reife** | Workloads (VMs / Container / Datenbanken), Umgebungen (dev / staging / prod), Provisionierungs-Entwicklungsgeschwindigkeit, IaC-Abdeckung, GitOps-Reife, CI/CD-Ownership | Ist-Zustand-Architektur-Karte + Reifegrad-Score über 8 Dimensionen |
-| 2 | **Souveränität und Regulator-Lücke** | DORA- / NIS2- / DSGVO- / sektorale Anwendbarkeit, Data-Residency-Mapping, Verschlüsselungs-Posture, Supplier-Risk-Konzentration, Audit-Trail | Compliance-by-Design-Karte: erfüllte Controls, Lücken, priorisierte Remediation |
-| 3 | **Kosten und Cloud-Spend-Posture** | Public-Cloud-Rechnung (letzte 12 Monate), Commitment-/Reservation-Auslastung, Egress-Kosten, Repatriations-Machbarkeit pro Workload, FinOps-Reife | Kosten-Trajektorie: aktuelle Ausgaben → 12-Monats-Ziel mit Caps, Repatriations-Kandidaten gerankt |
-| 4 | **Developer-Self-Service und Platform Engineering** | Time-to-Environment (aktuelle SLA), Provisionierungs-Reibungspunkte, Golden-Path-Abdeckung, interne Dokumentation, Platform-Team-Kapazität | Time-to-Environment-Baseline + Ziel-Metrik, Golden-Path-Vorschlag, Platform-Team-RACI |
+| 1 | **Inventar und Plattformreife** | Workloads (VMs / Container / Datenbanken), Umgebungen (Dev / Staging / Prod), Bereitstellungsgeschwindigkeit, IaC-Abdeckung, GitOps-Reife, Verantwortung für CI/CD | Architekturkarte des Ist-Zustands + Reifegrad über 8 Dimensionen |
+| 2 | **Souveränität und regulatorische Lücken** | Anwendbarkeit von DORA / NIS2 / DSGVO / Branchenvorgaben, Zuordnung der Datenstandorte, Stand der Verschlüsselung, Konzentration von Lieferantenrisiken, Audit-Trail | Compliance-by-Design-Karte: erfüllte Kontrollen, Lücken, priorisierte Maßnahmen |
+| 3 | **Kosten und Cloud-Ausgaben** | Public-Cloud-Rechnung (letzte 12 Monate), Auslastung von Commitments und Reservierungen, Egress-Kosten, Machbarkeit der Repatriierung pro Workload, FinOps-Reife | Kostenpfad: aktuelle Ausgaben → 12-Monats-Ziel mit Obergrenzen, priorisierte Kandidaten für die Repatriierung |
+| 4 | **Developer Self-Service und Platform Engineering** | Time-to-Environment (aktuelles SLA), Reibungspunkte bei der Bereitstellung, Abdeckung durch Golden Paths, interne Dokumentation, Kapazität des Platform-Teams | Time-to-Environment als Ausgangs- und Zielwert, Vorschlag für Golden Paths, RACI für das Platform-Team |
 
-Jeder Workstream produziert einen 3-5-seitigen Abschnitt im finalen Bericht. Der vollständige Bericht liegt am Ende von Woche 2 vor (oder Woche 4 für die tiefere Variante).
-
-<div class="arch-section__fig">
-<div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment</b></div>
-<div class="diagram__conn">bewertet</div>
-<div class="diagram__node"><b>Vier Workstreams</b></div>
-<div class="diagram__conn">liefern</div>
-<div class="diagram__node"><b>Drei Ergebnisse</b></div>
-</div>
-</div>
+Jeder Workstream ergibt einen Abschnitt von 3–5 Seiten im Abschlussbericht. Der vollständige Bericht liegt am Ende der zweiten Woche vor (bzw. der vierten Woche in der ausführlicheren Variante).
 
 <!-- /BLOCK 3 -->
 
@@ -124,24 +110,24 @@ Jeder Workstream produziert einen 3-5-seitigen Abschnitt im finalen Bericht. Der
 
 <!-- BLOCK 4: THREE OUTCOMES (cards) -->
 
-## Drei Ergebnisse, mit denen Sie herausgehen
+## Drei Ergebnisse, die Sie mitnehmen
 
 <div class="outcome-cards-3">
 
 ### 1. Time-to-Environment-Metrik
-**Aktuell:** wie lange von „Team braucht eine Umgebung“ bis „Umgebung ist erreichbar, überwacht und sicher“.
-**Ziel:** was es braucht, um das auf Stunden statt Wochen zu bringen.
-**Plan:** die Platform-Engineering-Arbeit, die die Lücke schließt, mit Aufwandsschätzungen und einer Sequenz.
+**Ist:** wie lange es dauert von „ein Team braucht eine Umgebung“ bis „die Umgebung ist erreichbar, überwacht und abgesichert“.
+**Ziel:** was nötig ist, um das auf Stunden statt Wochen zu bringen.
+**Plan:** die Platform-Engineering-Arbeit, die die Lücke schließt, mit Aufwandsschätzungen und Reihenfolge.
 
 ### 2. Compliance-by-Design-Karte
-Eine Control-Level-Karte für die regulatorischen Frameworks, unter denen Sie operieren — DORA, NIS2, DSGVO, sektoral. Für jedes Control: wo Sie stehen, was fehlt, wie ein Fix auf Architektur-Ebene aussieht und welche Workloads er berührt.
+Eine Karte auf Ebene einzelner Kontrollen für die regulatorischen Rahmenwerke, denen Sie unterliegen — DORA, NIS2, DSGVO, Branchenvorgaben. Für jede Kontrolle: wo Sie stehen, was fehlt, wie eine Lösung auf Architekturebene aussieht und welche Workloads sie betrifft.
 
-### 3. Kosten- und Kontroll-Trajektorie
-Ein 12-Monats-Ausgabenplan mit Caps und ein klarer Pfad zwischen aktuellen Public-Cloud-Ausgaben und einer kontrollierbaren Hybrid- oder Private-Cloud-Posture. Repatriations-Kandidaten nach ROI gerankt. FinOps-Owner benannt.
+### 3. Kosten- und Kontrollpfad
+Ein Ausgabenplan über 12 Monate mit Obergrenzen und einem klaren Weg von den aktuellen Public-Cloud-Ausgaben zu einer kontrollierbaren Hybrid- oder Private-Cloud-Aufstellung. Kandidaten für die Repatriierung nach ROI priorisiert. FinOps-Verantwortlicher benannt.
 
 </div>
 
-Alle drei Outputs sind **schriftlich**, **datiert** und werden **dem Executive-Sponsor übergeben** — nicht nur in einem Workshop besprochen.
+{{< factoid number="14 Tage" label="vom Kickoff bis zum schriftlichen, datierten Readiness-Bericht beim Executive Sponsor" >}}
 
 <!-- /BLOCK 4 -->
 
@@ -149,28 +135,28 @@ Alle drei Outputs sind **schriftlich**, **datiert** und werden **dem Executive-S
 
 <!-- BLOCK 5: WHO IT'S FOR (ICP qualifiers) -->
 
-## Für wen das ist — und für wen nicht
+## Für wen es passt — und für wen nicht
 
 <div class="fit-grid">
 
-**Starker Fit — mindestens vier davon treffen zu:**
+**Gute Passung — mindestens vier Punkte treffen zu:**
 - Sie haben eigene Produkt- oder Platform-Engineering-Teams (nicht nur eine IT-Abteilung)
-- Sie handhaben sensible Daten unter Regulator-Druck (Banken, Versicherung, öffentlicher Sektor, Telco, kritisches Enterprise)
+- Sie verarbeiten sensible Daten unter Aufsichtsdruck (Banken, Versicherungen, öffentlicher Sektor, Telekommunikation, kritische Unternehmen)
 - Sie betreiben mehrere Umgebungen und interne Teams, die alle Infrastruktur brauchen
-- Sie haben ein hybrides Setup — on-prem + Public Cloud + Legacy
-- Sie haben KI- / ML-Use-Cases, die nicht einfach zu einem Hyperscaler gehoben werden können
-- Ihre Public-Cloud-Rechnung oder FinOps-Situation ist ein Thema auf Vorstandsebene
-- Sie stellen aktiv Platform- / SRE- / DevOps- / Cloud-Architect-Rollen ein
-- Sie betreiben 24/7-kritische Systeme
+- Sie haben ein hybrides Setup — On-Premises + Public Cloud + Altsysteme
+- Sie haben KI-/ML-Anwendungsfälle, die sich nicht einfach zu einem Hyperscaler verlagern lassen
+- Ihre Public-Cloud-Rechnung oder FinOps-Lage ist ein Thema auf Vorstandsebene
+- Sie stellen aktiv Platform-, SRE-, DevOps- oder Cloud-Architektur-Rollen ein
+- Sie betreiben kritische Systeme rund um die Uhr
 
-**Kein Fit:**
-- Kleines IT-Team, das ein oder zwei Systeme betreibt
+**Keine Passung:**
+- Kleines IT-Team mit ein oder zwei Systemen
 - Keine interne Platform-Engineering-Funktion und kein Plan, eine aufzubauen
-- Das Ziel ist rein „Lizenzen sparen“ — nicht schnellere Delivery, nicht Souveränität, nicht Kontrolle
+- Das Ziel ist ausschließlich „Lizenzkosten sparen“ — nicht schnellere Bereitstellung, nicht Souveränität, nicht Kontrolle
 
 </div>
 
-Wenn Sie nicht sicher sind, auf welcher Seite Sie stehen — **der Discovery-Call beantwortet das kostenlos**, bevor Sie sich zu einem bezahlten Engagement verpflichten.
+Wenn Sie nicht sicher sind, auf welcher Seite Sie stehen — **das Discovery-Gespräch klärt das kostenlos**, bevor Sie sich für eine bezahlte Leistung entscheiden.
 
 <!-- /BLOCK 5 -->
 
@@ -178,31 +164,41 @@ Wenn Sie nicht sicher sind, auf welcher Seite Sie stehen — **der Discovery-Cal
 
 <!-- BLOCK 6: METHODOLOGY (timeline) -->
 
-## Wie das Engagement läuft
+## Wie das Assessment abläuft
+
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Eingaben mit Lesezugriff</b><div class="diagram__chips"><span>Architekturdokumente</span><span>Git-Organisationen</span><span>Public-Cloud-Abrechnung</span><span>Observability-Dashboards</span></div></div>
+<div class="diagram__conn">bewertet durch</div>
+<div class="diagram__node diagram__node--brand"><b>Platform Readiness Assessment</b><div class="diagram__chips"><span>Vier Workstreams</span><span>14 oder 28 Tage</span></div></div>
+<div class="diagram__conn">liefert</div>
+<div class="diagram__node"><b>Drei schriftliche Ergebnisse</b><div class="diagram__chips"><span>Time-to-Environment-Metrik</span><span>Compliance-by-Design-Karte</span><span>Kosten- und Kontrollpfad</span></div></div>
+</div>
+</div>
 
 <div class="timeline-horizontal">
 
-**Tag 0 — Discovery-Call (30 min, kostenlos)**
-Fit bestätigen, Scope eingrenzen, Executive-Sponsor und vier Workstream-Owner identifizieren.
+**Tag 0 — Discovery-Gespräch (30 Min., kostenlos)**
+Passung klären, Umfang eingrenzen, Executive Sponsor und die vier Verantwortlichen für die Workstreams benennen.
 
-**Tag 1 — Kickoff-Workshop (90 min)**
-Gemeinsam vereinbarte Ziele, Zugang zu Artefakten (Architektur-Docs, GitHub-Orgs, Billing read-only, Regulator-Scope).
+**Tag 1 — Kickoff-Workshop (90 Min.)**
+Gemeinsam vereinbarte Ziele, Zugang zu den Unterlagen (Architekturdokumente, GitHub-Organisationen, Abrechnung mit Lesezugriff, regulatorischer Rahmen).
 
-**Tage 2-9 — Parallele Workstream-Analyse**
-Vier Engineers führen die vier Workstreams. Tägliche async Updates an Ihren Sponsor. Drei kurze Interviews pro Workstream mit benannten Ownern auf Ihrer Seite.
+**Tage 2–9 — Parallele Analyse in den Workstreams**
+Vier Engineers bearbeiten die vier Workstreams. Tägliche asynchrone Updates an Ihren Sponsor. Drei kurze Interviews pro Workstream mit benannten Verantwortlichen auf Ihrer Seite.
 
-**Tag 10 — Findings-Checkpoint (60 min)**
-Durchgang durch vorläufige Findings; Sie korrigieren oder schärfen. Wir passen vor dem finalen Bericht an.
+**Tag 10 — Zwischenstand (60 Min.)**
+Wir gehen die vorläufigen Erkenntnisse durch; Sie korrigieren oder schärfen sie. Wir passen sie vor dem Abschlussbericht an.
 
-**Tage 11-13 — Bericht-Erstellung**
-Schriftlicher Bericht zusammengestellt. Alle vier Workstreams, drei Ergebnisse, priorisierte Remediation, Executive Summary.
+**Tage 11–13 — Erstellung des Berichts**
+Der schriftliche Bericht wird zusammengestellt: alle vier Workstreams, drei Ergebnisse, priorisierte Maßnahmen, Management Summary.
 
-**Tag 14 — Executive-Readout (60-90 min)**
-Finaler Bericht übergeben. Q&A mit Sponsor und ausgewählten Stakeholdern. Roadmap-Diskussion: wie Phase 2 aussehen würde.
+**Tag 14 — Abschlusspräsentation (60–90 Min.)**
+Übergabe des Abschlussberichts. Fragen und Antworten mit dem Sponsor und ausgewählten Stakeholdern. Diskussion der Roadmap: wie Phase 2 aussehen könnte.
 
 </div>
 
-Die 4-Wochen-Variante ergänzt: Anbieter-Vorauswahl-Workshops (wo anwendbar), Proof-of-Concept-Scoping für Repatriations-Kandidaten und Stakeholder-Interviews über zwei weitere Business-Units.
+Die vierwöchige Variante ergänzt: Workshops zur Vorauswahl von Anbietern (wo sinnvoll), die Planung von Proof of Concepts für Repatriierungskandidaten und Stakeholder-Interviews in zwei weiteren Geschäftsbereichen.
 
 <!-- /BLOCK 6 -->
 
@@ -212,14 +208,14 @@ Die 4-Wochen-Variante ergänzt: Anbieter-Vorauswahl-Workshops (wo anwendbar), Pr
 
 ## Wer die Arbeit tatsächlich macht
 
-Das Engagement wird von **Ænix-Plattform-Engineers** durchgeführt — dem Team, das Cozystack in Produktion für Service Provider, Banken und Souveräne-Cloud-Projekte baut und betreibt. Keine abgeordneten Management-Berater. Kein Partner-Netzwerk, das das Projekt nach dem Verkauf weiterreicht.
+Das Assessment führen **Ænix-Platform-Engineers** durch — das Team, das Cozystack in Produktion für Service Provider, Banken und Projekte für souveräne Clouds baut und betreibt. Keine entsandten Managementberater. Kein Partnernetzwerk, das das Projekt nach dem Verkauf weiterreicht.
 
 Das ist wichtig, weil:
-- Wir diese Architektur-Entscheidungen an echten Produktions-Systemen getroffen haben, nicht auf Slides.
-- Unsere Empfehlungen kommen mit Aufwandsschätzungen für die Umsetzung, deren Kosten wir selbst getragen haben.
-- Wenn Sie sich entscheiden, uns für die Phase-2-Implementation zu engagieren, dieselben Engineers weitermachen.
+- wir diese Architekturentscheidungen an echten Produktionssystemen getroffen haben, nicht auf Folien;
+- unsere Empfehlungen Aufwandsschätzungen enthalten, deren Kosten wir selbst schon getragen haben;
+- dieselben Engineers weiterarbeiten, wenn Sie uns mit der Umsetzung in Phase 2 beauftragen.
 
-Ænix ist das Unternehmen hinter **[Cozystack](/de/produkte/cozystack/)**, einem Open-Source-CNCF-Projekt (Kubernetes Certified Distribution, OpenSSF Best Practices). Der Cozystack-Stack ist die Foundation, die wir typischerweise empfehlen — aber das Assessment ist **kein Sales-Engagement für Cozystack**. Passt Ihr Kontext zu einem anderen Stack, sagt der Bericht das.
+Ænix ist das Unternehmen, das **[Cozystack](/de/produkte/cozystack/)** initiiert hat, ein Open-Source-CNCF-Projekt. Der Cozystack-Stack ist das Fundament, das wir in der Regel empfehlen — aber das Assessment ist **kein Verkaufsprojekt für Cozystack**. Passt Ihre Ausgangslage zu einem anderen Stack, sagt der Bericht das.
 
 <!-- /BLOCK 7 -->
 
@@ -227,23 +223,23 @@ Das ist wichtig, weil:
 
 <!-- BLOCK 8: PRICING / ENGAGEMENT -->
 
-## Preise und Engagement-Umfang
+## Preise und Leistungsumfang
 
 <div class="pricing-cards-2">
 
 ### 14 Tage (fokussiert)
-Schwerpunkt auf einem Workstream (Souveränität ODER Kosten ODER Developer-Experience). Einzelne Business-Unit / Domain. Schriftlicher Bericht und Executive-Readout.
+Schwerpunkt auf einem Workstream (Souveränität ODER Kosten ODER Developer Experience). Ein Geschäftsbereich bzw. eine Domäne. Schriftlicher Bericht und Abschlusspräsentation.
 **Auf Anfrage**
 
 ### 28 Tage (vollständig)
-Alle vier Workstreams in der Tiefe. Multi-BU-Stakeholder-Interviews. Anbieter-Vorauswahl für relevante Komponenten. PoC-Scoping. Schriftlicher Bericht, Executive-Readout und eine Phase-2-Implementations-Roadmap.
+Alle vier Workstreams in der Tiefe. Stakeholder-Interviews in mehreren Geschäftsbereichen. Vorauswahl von Anbietern für relevante Komponenten. Planung von Proof of Concepts. Schriftlicher Bericht, Abschlusspräsentation und eine Roadmap für die Umsetzung in Phase 2.
 **Auf Anfrage**
 
 </div>
 
-Festpreis. Einzige Rechnung. Gegenseitige NDA beim Kickoff. Keine zusätzlichen Reise- oder Spesen, sofern nicht ausdrücklich im Scope.
+Festpreis. Eine Rechnung. Gegenseitige NDA zum Kickoff. Keine zusätzlichen Reise- oder Nebenkosten, sofern nicht ausdrücklich vereinbart.
 
-Folgt ein Phase-2-Engagement, werden die Assessment-Kosten gegen das Implementations-Engagement angerechnet (je nach Scope).
+Folgt eine Phase 2, werden die Kosten des Assessments auf die Umsetzung angerechnet (je nach Umfang).
 
 <!-- /BLOCK 8 -->
 
@@ -251,46 +247,38 @@ Folgt ein Phase-2-Engagement, werden die Assessment-Kosten gegen das Implementat
 
 <!-- BLOCK 9: PROOF -->
 
-## Was wir bewertet und gebaut haben
+## Unternehmen, die Plattformen mit Ænix betreiben
 
 {{< clients >}}
 
-Wir haben Platform-Readiness-Assessments für Service Provider, regionale Cloud-Provider, Financial-Services-Organisationen, Telekom-Betreiber und Souveräne-Cloud-Initiativen in der EU und Zentralasien durchgeführt. Fünf bis zwanzig Assessments pro Jahr.
-
-Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit die Freigaben vorliegen.
+Wir haben Platform Readiness Assessments für Service Provider, regionale Cloud-Anbieter, Finanzdienstleister, Telekommunikationsanbieter und Initiativen für souveräne Clouds in der EU und in Zentralasien durchgeführt.
 
 {{< quote-carousel >}}
 
-Für benannte Case Studies siehe **[Kundenprojekte](/de/case-studies/)** — fordern Sie die geschützten Versionen im Discovery-Call an, wo anwendbar.
+Namentliche Referenzen und die geschützten Fassungen von Projekten unter NDA teilen wir im Discovery-Gespräch. [Kundenprojekte →](/de/case-studies/)
 
 <!-- /BLOCK 9 -->
 
 ---
 
-<!-- BLOCK 10: FAQ -->
+**Weitere Fragen?** Siehe die **[ausführliche Methodik in unserem Blog](/de/blog/2026/05/cloud-readiness-assessment-methodik/)** oder **[sprechen Sie mit uns](#discovery)**.
 
-
-**Weitere Fragen?** Siehe den **[Methodologie-Deep-Dive in unserem Blog](/de/blog/2026/05/cloud-readiness-assessment-methodik/)** oder **[sprechen Sie mit uns](#discovery)**.
-
-<!-- /BLOCK 10 -->
-
----
 
 <!-- BLOCK 11: BOTTOM CTA -->
 
 <a id="discovery"></a>
-## Starten Sie mit einem 30-minütigen Discovery-Call
+## Beginnen Sie mit einem 30-minütigen Discovery-Gespräch
 
-Kostenlos. Keine Vorbereitung nötig. Wir bestätigen den Fit, einigen uns auf einen fokussierten Scope und sagen Ihnen, ob die 14-Tage- oder die 28-Tage-Variante zu Ihrer Situation passt. Passt keine, sagen wir das.
+Kostenlos und ohne Vorbereitung. Wir klären die Passung, vereinbaren einen fokussierten Umfang und sagen Ihnen, ob die Variante über 14 oder über 28 Tage zu Ihrer Situation passt. Passt keine, sagen wir das.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-Oder lesen Sie mehr:
-- **[Cloud-Readiness-Assessment — 14-Tage-Methodologie im Detail](/de/blog/2026/05/cloud-readiness-assessment-methodik/)**
-- **[Lösungsübersicht — nach Auslöser](/de/loesungen/)**
-- **[Cozystack — die Plattform, die wir typischerweise empfehlen](/de/produkte/cozystack/)**
+Oder lesen Sie weiter:
+- **[Cloud-Readiness-Assessment — die 14-Tage-Methodik im Detail](/de/blog/2026/05/cloud-readiness-assessment-methodik/)**
+- **[Lösungsübersicht — nach Anlass](/de/loesungen/)**
+- **[Cozystack — die Plattform, die wir in der Regel empfehlen](/de/produkte/cozystack/)**
 
 <!-- /BLOCK 11 -->
 
@@ -298,6 +286,6 @@ Oder lesen Sie mehr:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices. Wir führen Platform-Readiness-Assessments und Platform-Engineering-Programme für Service Provider, Banken und Souveräne-Cloud-Projekte in der EU und Zentralasien durch.*
+*Ænix ist das Unternehmen, das Cozystack initiiert hat — CNCF-Projekt, zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes), OpenSSF Best Practices. Wir führen Platform Readiness Assessments und Platform-Engineering-Programme für Service Provider, Banken und Projekte für souveräne Clouds in der EU und in Zentralasien durch.*
 
 <!-- /BLOCK 12 -->
