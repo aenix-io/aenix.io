@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "Talos", "Multi-tenancy", "Observability"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-18/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-18-d724cd6d2fa1"
-canonical: "https://medium.com/@tym83/cozystack-v0-18-d724cd6d2fa1"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI/ML", "GPU", "Multi-tenancy"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines-b8783c0ce358"
-canonical: "https://medium.com/@tym83/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines-b8783c0ce358"
 ---
 
 

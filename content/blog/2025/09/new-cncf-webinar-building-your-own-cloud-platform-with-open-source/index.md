@@ -9,7 +9,6 @@ type: "news"
 topics: ["CNCF", "Migration"]
 language: "en"
 source_url: "https://medium.com/@tym83/new-cncf-webinar-building-your-own-cloud-platform-with-open-source-834dc4bf3928"
-canonical: "https://medium.com/@tym83/new-cncf-webinar-building-your-own-cloud-platform-with-open-source-834dc4bf3928"
 ---
 
 

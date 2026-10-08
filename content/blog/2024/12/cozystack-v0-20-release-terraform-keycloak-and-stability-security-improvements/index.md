@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Multi-tenancy", "Observability"
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-20-release-terraform-keycloak-and-stability-security-improvements/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-20-release-terraform-keycloak-and-stability-security-improvements-55dd25335e6e"
-canonical: "https://medium.com/@tym83/cozystack-v0-20-release-terraform-keycloak-and-stability-security-improvements-55dd25335e6e"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

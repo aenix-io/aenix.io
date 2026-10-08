@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
 cover_image: "/img/blog/medium/whats-new-in-cozystack-v0-17/cover.png"
 source_url: "https://medium.com/@tym83/whats-new-in-cozystack-v0-17-4f1373ddf831"
-canonical: "https://medium.com/@tym83/whats-new-in-cozystack-v0-17-4f1373ddf831"
 ---
 
 

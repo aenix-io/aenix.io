@@ -10,7 +10,6 @@ language: "en"
 hreflang_de: "/de/blog/2026/03/cozystack-v1-0/"
 cover_image: "/img/blog/medium/cozystack-v1-0/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v1-0-b3f70879b250"
-canonical: "https://medium.com/@tym83/cozystack-v1-0-b3f70879b250"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "CNCF", "Platform Engineering", "Observabili
 language: "en"
 cover_image: "/img/blog/medium/cncf-webinar-one-api-to-rule-them-all-building-a-unified-platform-with-kubernetes-aggregation/cover.jpg"
 source_url: "https://medium.com/@tym83/cncf-webinar-one-api-to-rule-them-all-building-a-unified-platform-with-kubernetes-aggregation-4b03ec5ee222"
-canonical: "https://medium.com/@tym83/cncf-webinar-one-api-to-rule-them-all-building-a-unified-platform-with-kubernetes-aggregation-4b03ec5ee222"
 ---
 
 

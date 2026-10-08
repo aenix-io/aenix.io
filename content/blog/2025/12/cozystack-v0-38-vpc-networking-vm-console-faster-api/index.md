@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Multi-tenancy"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-38-vpc-networking-vm-console-faster-api/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-38-vpc-networking-vm-console-faster-api-34032464b94f"
-canonical: "https://medium.com/@tym83/cozystack-v0-38-vpc-networking-vm-console-faster-api-34032464b94f"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

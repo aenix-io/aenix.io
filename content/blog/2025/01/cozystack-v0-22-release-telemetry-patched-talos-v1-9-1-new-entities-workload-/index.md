@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "Talos", "Observability", "Storage", "etcd"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-%D0%B8-workloadmonitor-ff22e6d20b17"
-canonical: "https://medium.com/@tym83/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-%D0%B8-workloadmonitor-ff22e6d20b17"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

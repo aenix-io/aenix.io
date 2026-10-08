@@ -8,7 +8,6 @@ topics: ["Proxmox", "Cozystack", "CNCF", "Storage"]
 language: "en"
 cover_image: "/img/blog/medium/cozysummit-lineup-is-out/cover.png"
 source_url: "https://medium.com/@tym83/cozysummit-lineup-is-out-dd34315ff33f"
-canonical: "https://medium.com/@tym83/cozysummit-lineup-is-out-dd34315ff33f"
 ---
 
 

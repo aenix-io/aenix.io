@@ -9,7 +9,6 @@ type: "announcement"
 topics: ["Kubernetes", "DevOps", "Open Source", "Cloud"]
 language: "en"
 source_url: "https://medium.com/p/3c3bb0a77f25"
-canonical: "https://medium.com/p/3c3bb0a77f25"
 ---
 
 We have updated the kubectl-node-shell plugin to [v1.11.0](https://github.com/kvaps/kubectl-node-shell/releases/tag/v1.11.0).

@@ -8,7 +8,6 @@ topics: ["Cozystack", "GitOps", "CNCF", "Platform Engineering", "Compliance", "O
 language: "en"
 cover_image: "/img/blog/medium/amazing-news-invitation-to-cozysummit-virtual-may-26/cover.jpg"
 source_url: "https://medium.com/@tym83/amazing-news-invitation-to-cozysummit-virtual-may-26-db5190fc4afd"
-canonical: "https://medium.com/@tym83/amazing-news-invitation-to-cozysummit-virtual-may-26-db5190fc4afd"
 ---
 
 

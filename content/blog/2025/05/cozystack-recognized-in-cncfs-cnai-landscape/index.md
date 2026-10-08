@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "AI/ML", "GPU", "CNCF", "Platform Engineerin
 language: "en"
 cover_image: "/img/blog/medium/cozystack-recognized-in-cncfs-cnai-landscape/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-recognized-in-cncfs-cnai-landscape-331f892b9639"
-canonical: "https://medium.com/@tym83/cozystack-recognized-in-cncfs-cnai-landscape-331f892b9639"
 ---
 
 

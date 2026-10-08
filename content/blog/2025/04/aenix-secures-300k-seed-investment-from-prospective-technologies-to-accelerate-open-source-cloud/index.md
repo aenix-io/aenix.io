@@ -9,7 +9,6 @@ type: "announcement"
 topics: ["Cozystack", "Sovereignty", "AI/ML", "Financial Services", "CNCF", "Compliance"]
 language: "en"
 source_url: "https://medium.com/@tym83/%C3%A6nix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud-4f4ea88b08c1"
-canonical: "https://medium.com/@tym83/%C3%A6nix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud-4f4ea88b08c1"
 ---
 
 

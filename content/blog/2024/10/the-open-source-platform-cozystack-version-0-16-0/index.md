@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "GitOps", "Observabili
 language: "en"
 cover_image: "/img/blog/medium/the-open-source-platform-cozystack-version-0-16-0/cover.png"
 source_url: "https://medium.com/@tym83/the-open-source-platform-cozystack-version-0-16-0-e2e86ca6ec47"
-canonical: "https://medium.com/@tym83/the-open-source-platform-cozystack-version-0-16-0-e2e86ca6ec47"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

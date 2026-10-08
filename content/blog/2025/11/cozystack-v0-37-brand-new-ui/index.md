@@ -8,7 +8,6 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Multi-tenancy", "CNCF
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-37-brand-new-ui/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-37-brand-new-ui-dd4ad96eac57"
-canonical: "https://medium.com/@tym83/cozystack-v0-37-brand-new-ui-dd4ad96eac57"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

@@ -11,7 +11,6 @@ topics: ["Kubernetes", "Platform Engineering", "DevOps", "Open Source", "Cozysta
 language: "en"
 cover_image: "/img/blog/medium/recent-changes-in-the-cozystack-open-source-platform-opencost-log-collection-system-bridge/cover.jpg"
 source_url: "https://medium.com/p/66bb25b7269b"
-canonical: "https://medium.com/p/66bb25b7269b"
 ---
 
 Over the past couple of months, we have been actively developing our Cozystack Open Source platform, and today we’re presenting the improvements introduced from v0.12 to v0.15.

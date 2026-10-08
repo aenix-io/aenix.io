@@ -9,7 +9,6 @@ topics: ["Cozystack", "LINSTOR", "Multi-tenancy", "Observability"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-1-2-opensearch-vpc-peering-and-smarter-tenant-scheduling/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-1-2-opensearch-vpc-peering-and-smarter-tenant-scheduling-777a13bbe25c"
-canonical: "https://medium.com/@tym83/cozystack-1-2-opensearch-vpc-peering-and-smarter-tenant-scheduling-777a13bbe25c"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

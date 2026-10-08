@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "Talos", "LINSTOR", "Multi-tenancy", "Observ
 language: "en"
 cover_image: "/img/blog/medium/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21/cover.png"
 source_url: "https://medium.com/@tym83/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21-22e84c65b29d"
-canonical: "https://medium.com/@tym83/introducing-the-pre-new-year-release-of-open-source-platform-cozystack-v0-21-22e84c65b29d"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

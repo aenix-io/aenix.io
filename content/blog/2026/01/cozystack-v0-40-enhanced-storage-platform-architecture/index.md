@@ -8,7 +8,6 @@ topics: ["Kubernetes", "Cozystack", "LINSTOR", "Observability", "Storage", "etcd
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-40-enhanced-storage-platform-architecture/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-40-enhanced-storage-platform-architecture-9c5ab48abd68"
-canonical: "https://medium.com/@tym83/cozystack-v0-40-enhanced-storage-platform-architecture-9c5ab48abd68"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

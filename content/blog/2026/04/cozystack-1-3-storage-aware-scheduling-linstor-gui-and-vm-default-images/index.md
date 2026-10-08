@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR", "GPU"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images-3ad9b04a39de"
-canonical: "https://medium.com/@tym83/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images-3ad9b04a39de"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

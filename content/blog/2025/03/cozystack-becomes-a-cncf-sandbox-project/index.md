@@ -8,7 +8,6 @@ topics: ["Kubernetes", "Open Source", "CNCF", "Platform Engineering", "DevOps", 
 language: "en"
 cover_image: "/img/blog/medium/cozystack-becomes-a-cncf-sandbox-project/cover.png"
 source_url: "https://medium.com/p/3702b8906971"
-canonical: "https://medium.com/p/3702b8906971"
 ---
 
 On February 28, members of the CNCF Technical Oversight Committee [completed their voting](https://github.com/cncf/sandbox/issues/322) and unanimously accepted [Cozystack](https://cozystack.io), a platform for building private clouds and PaaS, into the CNCF Sandbox. The project is currently undergoing the [onboarding process](https://github.com/cncf/sandbox/issues/351). Let’s break down what this means in practice, what Cozystack is, and what the CNCF Sandbox represents.

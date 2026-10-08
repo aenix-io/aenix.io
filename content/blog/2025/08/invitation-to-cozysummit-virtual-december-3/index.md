@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "AI/ML", "CNCF"]
 language: "en"
 cover_image: "/img/blog/medium/invitation-to-cozysummit-virtual-december-3/cover.jpg"
 source_url: "https://medium.com/@tym83/invitation-to-cozysummit-virtual-december-3-050bc72f1b4b"
-canonical: "https://medium.com/@tym83/invitation-to-cozysummit-virtual-december-3-050bc72f1b4b"
 ---
 
 

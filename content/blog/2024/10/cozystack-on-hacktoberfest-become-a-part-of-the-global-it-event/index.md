@@ -9,7 +9,6 @@ topics: ["Cozystack", "Open Source"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-on-hacktoberfest-become-a-part-of-the-global-it-event/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-on-hacktoberfest-become-a-part-of-the-global-it-event-e288144861eb"
-canonical: "https://medium.com/@tym83/cozystack-on-hacktoberfest-become-a-part-of-the-global-it-event-e288144861eb"
 ---
 
 

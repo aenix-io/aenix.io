@@ -8,7 +8,6 @@ topics: ["Kubernetes", "DevOps", "Open Source", "CNCF", "Platform Engineering", 
 language: "en"
 cover_image: "/img/blog/medium/cozystack-became-a-certified-kubernetes-platform/cover.png"
 source_url: "https://medium.com/p/5638876bc2e0"
-canonical: "https://medium.com/p/5638876bc2e0"
 ---
 
 ![Cozystack Certified Kubernetes platform](/img/blog/medium/cozystack-became-a-certified-kubernetes-platform/cover.png)

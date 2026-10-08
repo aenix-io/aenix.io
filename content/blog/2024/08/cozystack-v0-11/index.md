@@ -9,7 +9,6 @@ type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Cilium", "Talos", "LINSTOR", "Multi-tenancy"]
 language: "en"
 source_url: "https://medium.com/@tym83/cozystack-v0-11-76ab57a84842"
-canonical: "https://medium.com/@tym83/cozystack-v0-11-76ab57a84842"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

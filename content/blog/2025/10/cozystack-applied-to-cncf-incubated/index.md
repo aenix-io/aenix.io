@@ -8,7 +8,6 @@ topics: ["Cozystack", "CNCF"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-applied-to-cncf-incubated/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-applied-to-cncf-incubated-7c22faa134a3"
-canonical: "https://medium.com/@tym83/cozystack-applied-to-cncf-incubated-7c22faa134a3"
 ---
 
 

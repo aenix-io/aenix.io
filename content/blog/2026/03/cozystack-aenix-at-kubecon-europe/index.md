@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "CNCF"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-aenix-at-kubecon-europe/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-%C3%A6nix-at-kubecon-europe-430eea0e9a3c"
-canonical: "https://medium.com/@tym83/cozystack-%C3%A6nix-at-kubecon-europe-430eea0e9a3c"
 ---
 
 

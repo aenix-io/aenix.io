@@ -9,7 +9,6 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Talos", "LINSTOR"]
 language: "en"
 cover_image: "/img/blog/medium/updates-to-the-open-source-platform-cozystack-0-24-0-29/cover.png"
 source_url: "https://medium.com/@tym83/updates-to-the-open-source-platform-cozystack-0-24-0-29-d47788ab7ebe"
-canonical: "https://medium.com/@tym83/updates-to-the-open-source-platform-cozystack-0-24-0-29-d47788ab7ebe"
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---

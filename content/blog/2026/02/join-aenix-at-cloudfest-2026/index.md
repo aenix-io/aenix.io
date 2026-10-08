@@ -8,7 +8,6 @@ topics: ["Cozystack", "Hosting"]
 language: "en"
 cover_image: "/img/blog/medium/join-aenix-at-cloudfest-2026/cover.jpg"
 source_url: "https://medium.com/@tym83/join-%C3%A6nix-at-cloudfest-2026-26ca996d344c"
-canonical: "https://medium.com/@tym83/join-%C3%A6nix-at-cloudfest-2026-26ca996d344c"
 ---
 
 
