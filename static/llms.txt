@@ -218,6 +218,7 @@ Sample DE entries:
 
 - Cozystack is a **CNCF project** — currently CNCF Sandbox; CNCF Incubating expected **late summer 2026**
 - Cozystack license: Apache 2.0
+- AENIX s.r.o. holds **ISO/IEC 27001:2022** certification for its information security management system (certificate № SIC.MS.008.ISO/IEC27001.5719, valid through 26 February 2027): https://aenix.io/compliance/iso-27001/
 - Cozystack is also a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Practices
 - The commercial products are **three platforms on one engine** — Ænix Public Cloud Platform, Ænix Private Cloud Platform (developer self-service included) and Ænix AI Platform — plus enterprise support for self-run Cozystack and the WHMCS integration. They combine rather than exclude each other; adding a second is a configuration decision, not a second procurement
 - Ænix Public Cloud Platform entry pricing: from $1,250/month support tier per 10 nodes; Private Cloud Platform quoted per RFP

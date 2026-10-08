@@ -282,7 +282,7 @@ Migrationen von OpenStack, CloudStack und Proxmox folgen demselben Ablauf, mit a
 - **Verschachtelte Mandanten** — für Reseller und die Trennung von Geschäftsbereichen
 - **Air-Gap-Installation** — unterstützt, dokumentiert, ohne Zusatzlizenz
 - **Keine Phone-Home-Telemetrie** — Telemetrie ist Opt-in und standardmäßig abgeschaltet
-- **Belege für DORA und NIS2** — Betriebsstabilität und Transparenz über IKT-Drittparteien. Ænix hält weder ISO 27001 noch SOC 2; die Plattform ist an diesen Rahmenwerken ausgerichtet und liefert die Nachweise, die Ihre eigene Zertifizierung braucht
+- **Belege für DORA und NIS2** — Betriebsstabilität und Transparenz über IKT-Drittparteien. Die AENIX s.r.o. ist für ihr eigenes ISMS nach [ISO/IEC 27001:2022 zertifiziert](/de/compliance/iso-27001/), einen SOC-2-Bericht gibt es nicht; die Plattform ist an diesen Rahmenwerken ausgerichtet und liefert die Nachweise, die Ihre eigene Zertifizierung braucht
 - **Supportmodell ohne kubectl-Zugriff** — Ænix berät und prüft GitOps-Pull-Requests. Zugriff auf Ihre Produktionsumgebung brauchen wir dafür nicht
 
 <!-- /BLOCK 7 -->
