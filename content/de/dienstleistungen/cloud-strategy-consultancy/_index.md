@@ -1,57 +1,54 @@
 ---
-title: "Cloud-Strategie-Beratung — Engineers, die Plattformen betreiben, keine Slide-Deck-Strategen"
-description: "Cloud-Strategie ist eine Frage, die Architekten und Senior-Engineers besser beantworten können als Management-Berater. Aenix führt..."
+title: "Cloud-Strategie-Beratung — von Engineers, die Plattformen betreiben, nicht von Folien-Strategen"
+seo_title: "Cloud-Strategie-Beratung von Platform Engineers"
+description: "Cloud-Strategie von Architekten, die produktive Plattformen betreiben: Workload-Klassifizierung, ehrliches TCO-Modell und Migrationsreihenfolge im Bericht."
 related_pages:
-  - /de/dienstleistungen/platform-readiness-assessment
-  - /de/loesungen/cloud-kostenoptimierung
-  - /de/loesungen/cloud-repatriation
+  - /de/dienstleistungen/platform-readiness-assessment/
+  - /de/loesungen/cloud-kostenoptimierung/
+  - /de/loesungen/cloud-repatriation/
   - /de/produkte/
-  - /de/produkte/cozystack
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/cloud-strategy-consultancy/
 direct_answer: |
-  **Cloud-Strategie-Beratung beantwortet, welche Workloads in welche Umgebung gehören (Public, Private, Hybrid), was sie über alle Substrate hinweg wirklich kosten und in welcher Reihenfolge migriert wird. Aenix führt Cloud-Strategie als Teil seines Platform Readiness Assessments durch — geleitet von Architekten und Senior-Engineers, die Plattformen tatsächlich betreiben, nicht von Management-Beratern. Das Ergebnis ist ein umsetzbarer schriftlicher Bericht mit benannten Workloads, ehrlichem TCO-Modell, Souveränitäts-/Lücken gegenüber der Aufsicht und einer Implementations-Roadmap, kein 200-seitiger Transformations-Plan. Aenix ist das Open-Core-Unternehmen hinter Cozystack (CNCF-Projekt) und kann die empfohlene Architektur anschließend selbst umsetzen.**
-
+  **Die Cloud-Strategie-Beratung von Ænix übernehmen die Architekten und Senior Engineers, die produktive Plattformen bauen und betreiben, nicht Management-Analysten. Das Projekt läuft als Platform Readiness Assessment mit strategischem Schwerpunkt: Klassifizierung der Workloads nach Public, Private und Hybrid, ein ehrliches TCO-Modell, eine Lückenanalyse zu Souveränität und Aufsicht, die Migrationsreihenfolge und eine Umsetzungs-Roadmap für Phase 2. Es richtet sich an CIOs, CTOs und Plattformverantwortliche, die entscheiden, wo Workloads laufen sollen und ob sie aus der Hyperscaler-Cloud zurückgeholt werden. Ænix hat keine Hyperscaler-Partnerschaft, die Empfehlungen sind also frei von kommerziellen Interessen; ein Open-Source-Ziel auf Cozystack wird bevorzugt, wenn die Wirtschaftlichkeit es trägt. Das Ergebnis ist ein kompakter schriftlicher Bericht für die Geschäftsleitung mit benannten Workloads, Kosten und Zeitplänen.**
 quick_facts:
   - label: "Was es ist"
-    value: "Engineer-geführtes Cloud-Strategie-Engagement, das Workload-Klassifizierung, TCO, Souveränitäts-Lücken und Migrations-Sequenzierung in einem umsetzbaren Bericht liefert"
+    value: "Ein von Engineers geführtes Cloud-Strategie-Projekt in Form eines Platform Readiness Assessments, das einen schriftlichen Bericht für die Geschäftsleitung mit benannten Workloads, Kosten und Zeitplänen liefert."
+  - label: "Für wen"
+    value: "CIOs, CTOs, VP Engineering und Plattformverantwortliche, die über die Platzierung von Workloads, eine Hybrid-Architektur oder die Rückholung aus der Hyperscaler-Cloud entscheiden."
+  - label: "Durchgeführt von"
+    value: "Architekten und Senior Engineers, die produktive Kubernetes-Plattformen bauen und betreiben, keine Folien-Berater."
+  - label: "Herstellerneutralität"
+    value: "Keine Hyperscaler-Partnerschaft und keine kommerziellen Interessen in den Empfehlungen; ein Open-Source-Ziel auf Cozystack wird bevorzugt, wenn die Wirtschaftlichkeit es trägt."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
-  - label: "Zielgruppe"
-    value: "CIOs, CTOs, VP Engineering und Architektur-Teams, die eine Public-/Private-/Hybrid-Entscheidung treffen"
-  - label: "Liefergegenstand"
-    value: "Schriftlicher Bericht mit benannten Workloads, ehrlichem TCO-Modell, Compliance-Lücken und Phase-2-Implementations-Roadmap"
-  - label: "Plattform"
-    value: "Ænix Platform: KubeVirt (VMs + Container auf einer Kubernetes-API), Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
-  - label: "Anschluss"
-    value: "Strategie fließt direkt in ein lieferbares Aenix-Implementations-Engagement über (Phase 2)"
-
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
 faq:
-  - q: "Wer führt das Cloud-Strategie-Engagement durch?"
-    a: "Architekten und Senior-Engineers, die Cozystack-basierte Plattformen tatsächlich bauen und betreiben — keine Management-Berater mit Slide-Decks. Die Empfehlungen sind dadurch direkt umsetzbar, weil dasselbe Team die Phase-2-Implementierung liefern kann."
-  - q: "Was unterscheidet das von klassischer Cloud-Strategie-Beratung?"
-    a: "Statt eines 200-seitigen Transformations-Plans erhalten Sie einen kompakten, umsetzbaren Bericht: benannte Workloads, ehrliches TCO-Modell über alle Substrate, konkrete Souveränitäts-/Lücken gegenüber der Aufsicht und eine Migrations-Sequenzierung. Das Engagement läuft als Teil des Platform Readiness Assessments."
-  - q: "Welche Themen deckt das Engagement ab?"
-    a: "Workload-Klassifizierung (Public, Private, Hybrid), ein ehrliches TCO-Modell über Substrate hinweg, die Lücken bei Souveränität und Aufsicht (wo Compliance die Architektur formt), die Migrations-Sequenzierung sowie eine Phase-2-Implementations-Roadmap."
-  - q: "Berücksichtigt die Strategie Souveränität und Compliance?"
-    a: "Ja. Ein eigener Teil des Engagements identifiziert, wo regulatorische Anforderungen und Datensouveränität die Architektur formen, sodass die empfohlene Verteilung von Workloads auf Public, Private und Hybrid von Anfang an compliance-konform ist."
-  - q: "Welche Technologie steht hinter der empfohlenen Plattform?"
-    a: "Die Ænix Platform basiert auf Cozystack: KubeVirt für VMs und Container auf einer einzigen Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage und Tenant-CRDs für Mandantenfähigkeit. Lizenziert unter Apache 2.0, ohne CPU-/Core-basierte Lizenzkosten."
-  - q: "Was passiert nach der Strategie-Phase?"
-    a: "Die Strategie mündet in eine Phase-2-Implementations-Roadmap, die Aenix als lieferbares Build-Engagement umsetzen kann. Die Ænix Platform ist in drei Plattformen verfügbar; das Engagement enthält eine passende Plattform-Empfehlung zu Ihrem Käuferprofil."
+  - q: "Worin unterscheidet sich das von der Cloud-Strategie-Beratung der Big Four?"
+    a: "Die Arbeit machen dieselben Engineers, die produktive Plattformen bauen und betreiben, keine Analysten. Ænix hat keine Hyperscaler-Partnerschaft, die Empfehlungen sind also frei von kommerziellen Interessen, und Open-Source-Ziele werden bevorzugt, wenn die Wirtschaftlichkeit es trägt. Das Ergebnis ist ein umsetzbarer schriftlicher Bericht, kein 200-seitiger Transformationsplan."
+  - q: "Was liefert ein Cloud-Strategie-Projekt konkret?"
+    a: "Einen schriftlichen Bericht für die Geschäftsleitung mit Klassifizierung der Workloads nach Public, Private und Hybrid, einem ehrlichen TCO-Modell, einer Lückenanalyse zu Souveränität und Aufsicht, der Migrationsreihenfolge und einer Umsetzungs-Roadmap für Phase 2 mit benannten Workloads, Kosten und Zeitplänen."
+  - q: "Ist das Projekt an ein bestimmtes Produkt gebunden?"
+    a: "Nein. Die Strategiearbeit ist plattformneutral. Wenn die Wirtschaftlichkeit ein Open-Source-Ziel trägt, empfiehlt Ænix Cozystack, das CNCF-Sandbox-Projekt, das Ænix initiiert hat und mitentwickelt; der Bericht bewertet aber jeden Workload für sich über Public-, Private- und Hybrid-Optionen hinweg."
+  - q: "Wer sollte auf Kundenseite beteiligt sein?"
+    a: "CIOs, CTOs, VP Engineering und Plattformverantwortliche, die über die Platzierung von Workloads und Budgets entscheiden, dazu die Architekten und Betriebsteams der betroffenen Systeme. Compliance-Verantwortliche kommen hinzu, wo Souveränitäts- oder regulatorische Anforderungen die Architektur prägen."
+  - q: "Setzt Ænix die Strategie auch um oder berät es nur?"
+    a: "Ænix setzt sie auch um. Die Umsetzungs-Roadmap für Phase 2 ist ein Aufbauplan, den Ænix liefern kann. Ænix vertreibt drei kommerzielle Plattformen und Dienstleistungen darauf. Für Abonnements der Public Cloud Platform und Support für selbst betriebenes Cozystack gelten veröffentlichte Stufen ab 1.250 USD pro 10 Nodes und Monat; Programme für Private Cloud und AI Platform werden per RFP angeboten."
+  - q: "Auf welcher Plattform basiert der empfohlene Open-Source-Weg?"
+    a: "Auf Cozystack, einem CNCF-Projekt unter Apache 2.0, das VMs und Container über KubeVirt auf einer Kubernetes-API betreibt, mit Cilium-Networking (eBPF), LINSTOR/DRBD-Storage und Mandantenfähigkeit über das Tenant-CRD. Lizenzkosten pro CPU oder Core gibt es nicht."
 ---
 
-**Cloud-Strategie ist eine Frage, die Architekten und Senior-Engineers besser beantworten können als Management-Berater. Ænix führt Cloud-Strategie-Engagements als Teil desselben Platform Readiness Assessments durch, das umsetzbare Architektur liefert — ein schriftlicher Bericht mit benannten Workloads, Kosten und Timelines, kein 200-seitiger Transformationsplan.**
+**Cloud-Strategie ist eine Frage, die Architekten und Senior Engineers besser beantworten als Management-Berater. Ænix führt Cloud-Strategie-Projekte im Rahmen desselben Platform Readiness Assessments durch, das auch umsetzbare Architektur liefert — als schriftlichen Bericht mit benannten Workloads, Kosten und Zeitplänen, nicht als 200-seitigen Transformationsplan.**
 
-> **Passt zu:** allen **[Ænix-Plattformen](/de/produkte/)** — die Strategie ergibt, welche Plattform zu Ihrem Käuferprofil und Engagement-Scope passt.
+> **Passt zu:** allen drei **[Ænix-Plattformen](/de/produkte/)** — die Strategie benennt, welche zu Ihrem Profil und zum Umfang des Vorhabens passt.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Assessment-Methodologie →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Methodik des Assessments →</a>
 </div>
 
 ---
@@ -59,43 +56,43 @@ faq:
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Was unser Cloud-Strategie-Engagement abdeckt
-
-- **Workload-Klassifizierung** — was passt zu welchem Substrat (public, private, hybrid)
-- **Ehrliches TCO-Modell** — über Substrate hinweg, mit realistischen Annahmen
-- **Souveränitäts-/Regulator-Lücke** — wo Compliance die Architektur formt
-- **Migrations-Sequenzierung** — was bewegt sich zuerst, was bleibt, was ist hybrid
-- **Phase-2-Implementations-Roadmap** — von Ænix lieferbarer Build-Plan
+## Was unser Cloud-Strategie-Projekt umfasst
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Cloud-Strategie-Engagement</b><div class="diagram__chips"><span>Architekten und Senior-Engineers</span><span>Teil des Platform Readiness Assessments</span></div></div>
+<div class="diagram__node"><b>Workloads in allen Umgebungen</b><div class="diagram__chips"><span>Public</span><span>Private</span><span>Hybrid</span></div></div>
+<div class="diagram__conn">klassifiziert durch</div>
+<div class="diagram__node diagram__node--brand"><b>Cloud-Strategie-Projekt</b><div class="diagram__chips"><span>Ehrliches TCO-Modell</span><span>Souveränitätslücken</span><span>Migrationsreihenfolge</span></div></div>
 <div class="diagram__conn">liefert</div>
-<div class="diagram__node"><b>Umsetzbarer schriftlicher Bericht</b><div class="diagram__chips"><span>Benannte Workloads (Public, Private, Hybrid)</span><span>Ehrliches TCO-Modell</span><span>Souveränitäts-/Regulator-Lücke</span></div></div>
-<div class="diagram__conn">mündet in</div>
-<div class="diagram__node"><b>Phase-2-Implementations-Roadmap</b><div class="diagram__chips"><span>Von Ænix lieferbares Build-Engagement</span><span>Passende Ænix-Plattform</span></div></div>
+<div class="diagram__node"><b>Bericht für die Geschäftsleitung</b><div class="diagram__chips"><span>Benannte Workloads</span><span>Kosten</span><span>Zeitpläne</span></div></div>
 </div>
 </div>
 
-Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit Strategie-Schwerpunkt. Das Ergebnis ist ein schriftlicher Executive-Bericht.
+- **Klassifizierung der Workloads** — was in welche Umgebung gehört (Public, Private, Hybrid)
+- **Ehrliches TCO-Modell** — über alle Umgebungen hinweg, mit realistischen Annahmen
+- **Lücken bei Souveränität und Aufsicht** — wo Compliance die Architektur prägt
+- **Migrationsreihenfolge** — was zuerst umzieht, was bleibt, was hybrid läuft
+- **Umsetzungs-Roadmap für Phase 2** — ein Aufbauplan, den Ænix liefern kann
+
+Das Projekt läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit strategischem Schwerpunkt. Das Ergebnis ist ein schriftlicher Bericht für die Geschäftsleitung.
 
 </div>
 </div>
 
 ---
 
-## Wie wir uns von Big-4-Cloud-Strategie unterscheiden
+## Was uns von der Cloud-Strategie der Big Four unterscheidet
 
-- **Engineers, keine Analysten** — dieselben Engineers, die produktive Plattformen bauen
-- **Keine Hyperscaler-Partnerschaft** — keine kommerzielle Verzerrung der Empfehlung
-- **Open-Source-Ziel bevorzugt** — wenn die Ökonomie es stützt
+- **Engineers statt Analysten** — dieselben Engineers, die produktive Plattformen bauen
+- **Keine Hyperscaler-Partnerschaft** — keine kommerziellen Interessen in der Empfehlung
+- **Open-Source-Ziel bevorzugt** — wenn die Wirtschaftlichkeit es trägt
 
-Für konkrete Auslöser siehe **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)**, **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
+Für konkrete Anlässe siehe **[Cloud-Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)**, **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat [Cozystack](https://cozystack.io) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
