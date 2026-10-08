@@ -179,8 +179,8 @@
   {{ partial "seo/jsonld-blogposting.html" . }}
 {{- end }}
 
-{{- if eq $type "product" }}
-  {{ partial "seo/jsonld-softwareapplication.html" . }}
+{{- if or (eq $type "product") (in (slice "/pricing/" "/de/preise/") .RelPermalink) }}
+  {{ partial "seo/jsonld-product.html" . }}
 {{- end }}
 
 {{- if eq $type "event-landing" }}

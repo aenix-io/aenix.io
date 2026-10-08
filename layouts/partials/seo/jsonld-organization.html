@@ -1,36 +1,40 @@
-{{/* JSON-LD Organization — emitted on every page */}}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "{{ "/#org" | absURL }}",
-  "name": "Aenix",
-  "url": "{{ "/" | absURL }}",
-  "logo": {
-    "@type": "ImageObject",
-    "url": "{{ "images/logo.png" | absURL }}",
-    "width": 1940,
-    "height": 851
-  },
-  "description": "Aenix is the team behind Cozystack — a CNCF Sandbox cloud platform. We deliver sovereign cloud, multi-tenant Kubernetes, and AI-ready infrastructure for regulated enterprises and cloud builders.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Sladkovského 546/8",
-    "addressLocality": "Buštěhrad",
-    "postalCode": "273 43",
-    "addressCountry": "CZ"
-  },
-  "sameAs": [
-    "https://github.com/aenix-io",
-    "https://www.linkedin.com/company/aenix-io/",
-    "https://x.com/aenix_io",
-    "https://www.facebook.com/aenix.io",
-    "https://cozystack.io"
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Timur Tukaev"
-  },
-  "areaServed": ["EU", "DACH", "Central Asia", "MENA"]
-}
-</script>
+{{- /* JSON-LD Organization — emitted on every page.
+       Legal facts come from hugo.yaml params.company (one source with the
+       footer), so the registered address cannot drift between pages. */ -}}
+{{- $eu := site.Params.company.eu -}}
+{{- $us := site.Params.company.us -}}
+{{- $org := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "@id" ("/#org" | absURL)
+  "name" "Ænix"
+  "alternateName" (slice "Aenix" $eu.name $us.name)
+  "legalName" $eu.name
+  "url" ("/" | absURL)
+  "logo" (dict "@type" "ImageObject" "url" ("images/logo.png" | absURL) "width" 1940 "height" 851)
+  "description" "Ænix created Cozystack, a CNCF Sandbox cloud platform, and is one of its maintainers. It builds and supports cloud platforms on Cozystack: Ænix Public Cloud Platform for hosting and cloud providers, Ænix Private Cloud Platform for regulated enterprises and Ænix AI Platform for GPU workloads."
+  "email" site.Params.email
+  "vatID" $eu.vat
+  "identifier" (dict "@type" "PropertyValue" "propertyID" "IČO" "value" $eu.cin)
+  "address" (dict
+    "@type" "PostalAddress"
+    "streetAddress" $eu.address
+    "addressLocality" $eu.city
+    "postalCode" $eu.zip
+    "addressCountry" $eu.country_code)
+  "founder" (slice
+    (dict "@type" "Person" "name" "Andrei Kvapil")
+    (dict "@type" "Person" "name" "Timur Tukaev"))
+  "subOrganization" (dict
+    "@type" "Organization"
+    "name" $us.name
+    "legalName" $us.name
+    "address" (dict "@type" "PostalAddress" "addressRegion" $us.state "addressCountry" $us.country_code))
+  "sameAs" (slice
+    "https://github.com/aenix-io"
+    "https://www.linkedin.com/company/aenix-io/"
+    "https://x.com/aenix_io"
+    "https://www.facebook.com/aenix.io")
+  "areaServed" (slice "EU" "DACH" "Central Asia" "MENA" "US")
+-}}
+<script type="application/ld+json">{{ $org | jsonify | safeJS }}</script>
