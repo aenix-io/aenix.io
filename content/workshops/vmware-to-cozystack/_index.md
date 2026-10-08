@@ -2,6 +2,7 @@
 title: "Hands-on workshop: migrating off VMware to open source"
 description: "A free hands-on workshop: migrate a virtual machine off VMware to an open platform and leave with a migration plan. Tashkent, Bishkek, Almaty, Astana."
 language: "en"
+hreflang_de: "/de/workshops/vmware-zu-cozystack/"
 layout: "event-landing"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/"
 primary_keyword: "vmware migration workshop"

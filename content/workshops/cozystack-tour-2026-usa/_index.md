@@ -2,6 +2,7 @@
 title: "Cozystack Tour 2026 USA: VMware migration workshop"
 description: "A free hands-on workshop across the U.S.: migrate a real VM off VMware to an open platform, and see the same cloud run AI and GPUs. Six cities, Nov–Dec 2026."
 language: "en"
+hreflang_de: "/de/workshops/cozystack-tour-2026-usa/"
 layout: "event-landing"
 region_slug: "us"
 primary_keyword: "vmware migration workshop usa"
