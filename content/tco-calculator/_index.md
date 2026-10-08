@@ -112,7 +112,7 @@ related_pages:
   <p class="footnote">* Including one-time migration from that platform. Estimates only — not a quote. Each comparison page shows the break-even and the inputs at which the other platform comes out cheaper.</p>
   <h2>Frequently asked questions</h2>
   <h3>How does this TCO calculator work?</h3>
-  <p>Pick a scenario (50 / 200 / 1,000 VMs or custom), up to three competitors and a region. The model prices exactly three articles: software (licenses + vendor support from sourced data), one-time migration (a fixed setup plus a marginal $/VM) and personnel (a days-per-month staffing model). Hardware and facilities are identical on both sides and excluded. Every default shows its source, date and source nature.</p>
+  <p>Pick a scenario (50 / 200 / 1,000 VMs or custom), up to three competitors and a region. The model prices exactly three articles: software (licences + vendor support from sourced data), one-time migration (a fixed setup plus a marginal $/VM) and personnel (a days-per-month staffing model). Hardware and facilities are identical on both sides and excluded. Every default shows its source, date and source nature.</p>
   <h3>Does Cozystack always win?</h3>
   <p>No. At the default 200-VM scenario in the table above, Cozystack comes out cheaper than all ten platforms, by the widest margin where per-core licensing dominates (VMware VCF, Nutanix) and by the narrowest against low-cost open-source support subscriptions. At other scenarios — 50 or 1,000 VMs — and with your own inputs, some platforms come out cheaper, and the calculator shows that result as it is. Each comparison page states the break-even.</p>
   <h3>Where do the prices come from?</h3>

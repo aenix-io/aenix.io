@@ -1,6 +1,6 @@
 ---
 title: "Turnkey Public Cloud webinar materials"
-description: "Private materials for attendees of the Aenix webinar on launching or upgrading a public cloud customers can buy."
+description: "Materials for attendees of the Ænix webinar on launching or upgrading a public cloud customers can buy."
 url: "/web0826/"
 layout: "webinar-materials"
 bodyClass: "webinar-materials-page"
@@ -17,7 +17,7 @@ build:
 <div class="wm-wrap">
 <p class="wm-kicker">Webinar materials · Private attendee page</p>
 <h2 id="materials-h">Launch or upgrade a public cloud your customers can buy</h2>
-<p class="wm-lead">Thank you for joining Andrei Kvapil's session on turning hosting, colocation, or data center infrastructure into commercial cloud services. The recording is available in closed access for two weeks, together with the supporting materials below.</p>
+<p class="wm-lead">Thank you for joining Andrei Kvapil's session on turning hosting, colocation, or data center infrastructure into commercial cloud services. The recording is on YouTube, and the supporting materials are below.</p>
 <div class="wm-actions">
 <a class="btn btn-primary" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Open video on YouTube</a>
 <a class="btn btn-secondary" href="#audit">Book free infrastructure audit</a>
@@ -30,7 +30,7 @@ build:
 <div>
 <p class="wm-kicker">Recording</p>
 <h2 id="recording-h">Watch the webinar</h2>
-<p>The video is available in closed access for webinar attendees for two weeks.</p>
+<p>The recording is on YouTube; you can watch it here or open it directly.</p>
 </div>
 <div class="wm-video" aria-label="Webinar video player">
 <iframe src="https://www.youtube-nocookie.com/embed/eRFap6FzNj0" title="Turnkey Public Cloud webinar recording" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -53,7 +53,7 @@ build:
 <a class="wm-card" href="/downloads/web0826/cozystack-hosters.pdf" target="_blank" rel="noopener">
 <span class="wm-card__type">PDF</span>
 <h3>Cozystack for hosters</h3>
-<p>One-page overview for hosting providers evaluating Cozystack and the Aenix provider stack.</p>
+<p>One-page overview for hosting providers evaluating Cozystack and the Ænix provider stack.</p>
 <span class="wm-card__link">Download PDF</span>
 </a>
 </div>
@@ -76,7 +76,7 @@ build:
 <aside class="wm-speaker" aria-label="Speaker">
 {{< workshop-photo src="images/webinars/andrei-kvapil.png" alt="Andrei Kvapil" >}}
 <h3>Andrei Kvapil</h3>
-<p>Creator of Cozystack · Founder of Aenix</p>
+<p>Creator of Cozystack · Co-founder of Ænix</p>
 <p>Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure.</p>
 </aside>
 </div>

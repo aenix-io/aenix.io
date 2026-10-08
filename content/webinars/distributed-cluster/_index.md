@@ -54,13 +54,13 @@ faq:
   - q: "Do I need three datacenters to get value?"
     a: "No. The session covered single-site teams planning their first second site, two-DC plus witness setups, and full three-site stretch — so you can place yourself on the map wherever you start."
   - q: "How is this different from VMware vSAN stretched + SRM?"
-    a: "The same metro-stretch resilience, without per-socket licensing or vendor lock-in, on an open-source core you can run on your own hardware. We compare the approaches honestly."
+    a: "The same metro-stretch resilience, without per-socket licensing or vendor lock-in, on an open-source core you can run on your own hardware. The session compared the approaches honestly."
   - q: "Can you really lose a datacenter with zero data loss?"
     a: "In a synchronous metro-stretch topology — datacenters within metro distance, roughly a couple of milliseconds round-trip — yes, RPO=0. The session showed it live and was explicit about where synchronous replication stops working over longer distances, and what you use instead."
   - q: "What about GPU and databases across sites?"
     a: "The session covered both: GPU sharing within a site and cloud-burst to other sites or a public cloud, and managed databases that place replicas per zone and switch over automatically when a site is lost."
   - q: "Which storage — DRBD or Ceph?"
-    a: "Both. We compare synchronous DRBD and Ceph across datacenters — the replication model, the quorum, dedicated storage networks and the tuning that keeps latency from triggering false failovers."
+    a: "Both. The session compared synchronous DRBD and Ceph across datacenters — the replication model, the quorum, dedicated storage networks and the tuning that keeps latency from triggering false failovers."
   - q: "Is there a recording?"
     a: "The webinar took place on 30 September 2026; the recording is not published yet. To go through geo-resilience for your own setup, [talk to the team](/contact/)."
 
@@ -167,7 +167,7 @@ final_cta:
 
 <section class="ws-section wb-cover" id="agenda" aria-labelledby="wb-cover-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-cover-h">What the session covers</h2>
+<h2 class="ws-h2" id="wb-cover-h">What the session covered</h2>
 <p class="ws-lead">Live demos, not slides — then your questions.</p>
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
@@ -237,8 +237,8 @@ final_cta:
 
 <section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who it is for</h2>
-<p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosters and data centre operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session is built around your situation.</p>
+<h2 class="ws-h2" id="wb-audience-h">Who it was for</h2>
+<p class="ws-lead">Enterprise infrastructure teams that need geo-resilience they can prove, and clouds, hosters and data centre operators that want to sell geo-redundant services. If you're comparing VMware vSAN stretched and SRM, an OpenStack build, or multi-AZ on a hyperscaler, the session was built around your situation.</p>
 <ul class="wb-audience__tiles">
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Enterprise infrastructure teams</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud providers</li>
@@ -263,7 +263,7 @@ final_cta:
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
 <div class="ws-speaker__role">Creator of Cozystack · Co-founder and CEO of Ænix</div>
-<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers across Europe build geo-resilient infrastructure on hardware they own.</p>
+<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Ænix, he helps providers across Europe build geo-resilient infrastructure on hardware they own.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
 <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>

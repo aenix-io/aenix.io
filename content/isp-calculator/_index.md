@@ -23,9 +23,4 @@ related_pages:
   - /pricing/
 ---
 
-If you sell cloud to your own customers, the question is not what a platform costs but what a node earns. This calculator models the monthly P&L: the infrastructure footprint you run, the services you sell on top of it (managed Kubernetes, VMs, databases, GPU, object storage), how full those nodes actually are, what the team costs, and when the investment pays back. Multi-currency, and it exports a PDF you can put in front of a board. The platform subscription itself is priced per 10 nodes on the [pricing page](/pricing/#support).
-
-<div class="cta-row">
-  <a class="cta-primary" href="/contact/?source=isp-calculator">Have an engineer review this model</a>
-  <a class="cta-secondary" href="/products/public-cloud-platform/">Ænix Public Cloud Platform →</a>
-</div>
+If you sell cloud to your own customers, the question is not what a platform costs but what a node earns. This calculator models the monthly P&L: the infrastructure footprint you run, the services you sell on top of it (managed Kubernetes, VMs, databases, GPU, object storage), how full those nodes actually are, what the team costs, and when the investment pays back. Multi-currency, and it exports a PDF you can put in front of a board. The platform subscription itself is priced per 10 nodes on the [pricing page](/pricing/#support). The platform it models is the [Ænix Public Cloud Platform](/products/public-cloud-platform/).

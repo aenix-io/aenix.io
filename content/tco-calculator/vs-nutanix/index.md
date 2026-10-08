@@ -66,7 +66,7 @@ related_pages:
       </tr>
     </tbody>
   </table>
-  <p class="footnote">* Cozystack total includes the one-time migration from Nutanix NCI Pro (a fixed setup plus a marginal $/VM — owner estimate, Ænix field data). Estimates only — not a quote.</p>
+  <p class="footnote">* Cozystack total includes the one-time migration from Nutanix NCI Pro (a fixed setup plus a marginal $/VM — an indicative figure from the calculator, based on Ænix field data). Estimates only — not a quote; the final quote follows scoping.</p>
   <h2>Break-even</h2>
   <p>Cozystack becomes cheaper than Nutanix NCI Pro when Nutanix NCI Pro $/core/yr exceeds $35 (current: $150) — it already does at the current value. One-time migration costs pay back in month 1.</p>
   <p>Quote sensitivity: Nutanix NCI Pro 5-year total ranges from $460,645 at $70/core/yr to $2,409,445 at $650/core/yr.</p>
@@ -80,16 +80,16 @@ related_pages:
     <li>Hard vendor-ecosystem dependencies (ISV certifications, existing tooling and runbooks) that outweigh the cost delta.</li>
   </ul>
   <h2>How this is calculated</h2>
-  <p>Three cost articles — software (licenses + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; an internal sizing chain (CPU oversubscription 3:1, RAM target 85%, per-platform storage replication, N+1 HA headroom) only produces the node/core/socket counters that licenses bill against. Renewal uplifts apply only after a real renewal event inside the horizon. Default pricing basis is realized (typical negotiated) — conservative against our own headline. Every default carries a source, date and source nature; owner estimates (migration setup and $/VM, personnel days) are labeled as Ænix field data. <a href="/tco-calculator/methodology/">Full methodology, formulas and the complete source list</a>.</p>
+  <p>Three cost articles — software (licences + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; an internal sizing chain (CPU oversubscription 3:1, RAM target 85%, per-platform storage replication, N+1 HA headroom) only produces the node/core/socket counters that licences bill against. Renewal uplifts apply only after a real renewal event inside the horizon. Default pricing basis is realized (typical negotiated) — conservative against our own headline. Every default carries a source, date and source nature; Ænix estimates (migration setup and $/VM, personnel days) are labeled as Ænix field data. <a href="/tco-calculator/methodology/">Full methodology, formulas and the complete source list</a>.</p>
   <h2>Frequently asked questions</h2>
   <h3>How much does Nutanix NCI Pro cost for 200 VMs over 5 years?</h3>
-  <p>At default assumptions (EU region, typical negotiated prices, Q3 2026) the model puts Nutanix NCI Pro at $729,445 over 5 years across the three cost articles: software (licenses + vendor support), migration (one-time, target platform only) and personnel (a days-per-month staffing model).</p>
+  <p>At default assumptions (EU region, typical negotiated prices, Q3 2026) the model puts Nutanix NCI Pro at $729,445 over 5 years across the three cost articles: software (licences + vendor support), migration (one-time, target platform only) and personnel (a days-per-month staffing model).</p>
   <h3>Is Cozystack cheaper than Nutanix NCI Pro?</h3>
   <p>At 50 VMs: Cozystack is $145,709 cheaper (51%). At 200 VMs: Cozystack is $386,530 cheaper (53%). At 1000 VMs: Cozystack is $1,629,106 cheaper (52%). Cozystack becomes cheaper than Nutanix NCI Pro when Nutanix NCI Pro $/core/yr exceeds $35 (current: $150) — it already does at the current value.</p>
   <h3>What does migration from Nutanix NCI Pro to Cozystack cost?</h3>
-  <p>For 200 VMs the model estimates $36,000 one-time: $8,000 of fixed setup — discovery, standing up the target, cutover design, runbook — plus 200 × $140/VM marginal (owner estimate — Ænix field data: 50 VMs ≈ $15K total). Most of a small migration is the setup, which is why cost does not scale with the estate. Professional services or training can be added via the &quot;migration extras&quot; input (default $0). One-time migration costs pay back in month 1.</p>
+  <p>For 200 VMs the model estimates $36,000 one-time: $8,000 of fixed setup — discovery, standing up the target, cutover design, runbook — plus 200 × $140/VM marginal — indicative figures from the calculator, anchored on Ænix field data (50 VMs ≈ $15K total); the final quote follows scoping. Most of a small migration is the setup, which is why cost does not scale with the estate. Professional services or training can be added via the &quot;migration extras&quot; input (default $0). One-time migration costs pay back in month 1.</p>
   <h3>What is included in the estimate — and what is not?</h3>
-  <p>Exactly three articles: software (licenses + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; backup, guest-OS licensing, DR/second site, GPU and security tooling are excluded uniformly. Full formulas and every source are on the methodology page.</p>
+  <p>Exactly three articles: software (licences + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; backup, guest-OS licensing, DR/second site, GPU and security tooling are excluded uniformly. Full formulas and every source are on the methodology page.</p>
   <h3>Why is the Nutanix result shown as a range?</h3>
   <p>Nutanix pricing is quote-driven: reported street prices span roughly $70–650/core/yr. The calculator treats the realized price as a slider (default $150) and always reports quote sensitivity — the 5-year total at both ends of the range — rather than a single false-precision number.</p>
   <h3>Is Cozystack ready for regulated industries compared to Nutanix?</h3>

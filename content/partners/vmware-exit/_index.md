@@ -1,5 +1,6 @@
 ---
 title: "VMware exit for integrators & MSPs — turn the renewal into margin"
+seo_title: "VMware exit partner program for integrators & MSPs"
 description: "Your clients' VMware costs jumped. Offer an open, sovereign cloud you resell or co-deliver on Cozystack — up to 40% margin, deal protection."
 type: "page"
 language: "en"
@@ -58,7 +59,7 @@ Want your own differentiated cloud? Cozystack is the framework and **Ænix is yo
 
 </div>
 
-Either way, the per-core license your client pays VMware becomes margin and recurring services revenue for you.
+Either way, the per-core licence your client pays VMware becomes margin and recurring services revenue for you.
 
 ---
 
@@ -67,7 +68,7 @@ Either way, the per-core license your client pays VMware becomes margin and recu
 - **What it is:** a VMware-exit offer integrators and MSPs resell or co-deliver on an open platform.
 - **Who it's for:** Heads of Cloud, Cloud Practice Leads, Heads of Alliances at SIs / MSPs / resellers.
 - **Margin:** up to **40%** on Ænix subscriptions and support; plus your own managed-services revenue.
-- **License:** Apache 2.0 (Cozystack) — no per-core/per-socket cost in the stack.
+- **Licence:** Apache 2.0 (Cozystack) — no per-core/per-socket cost in the stack.
 - **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** competing on price reselling a hyperscaler while owning none of the platform value or the renewal relationship.
 
@@ -126,7 +127,7 @@ Free, no prep. We map your client base to the platforms, walk through margin and
 
 ---
 
-*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF-Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/partners/vmware-exit/ ; hreflang de → /de/partner/vmware-exit/, x-default EN.

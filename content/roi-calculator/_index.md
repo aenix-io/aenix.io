@@ -17,7 +17,7 @@ faq:
   - q: "Are these calculators official pricing?"
     a: "No. They are free estimators built by Ænix, not affiliated with VMware/Broadcom or any other vendor, to help you model platform economics with your own inputs. Ænix list prices are on the pricing page. For a firm quote, book a discovery call and we build a workload-level TCO with you."
   - q: "What platform do the savings assume?"
-    a: "The target platform is Cozystack — a CNCF project, Apache 2.0, with no per-CPU or per-socket license. You pay for support and/or the build engagement, both editable in the calculators."
+    a: "The target platform is Cozystack — a CNCF project, Apache 2.0, with no per-CPU or per-socket licence. You pay for support and/or the build engagement, both editable in the calculators."
   - q: "Do I have to move everything to realise the numbers?"
     a: "No. Savings apply to the workloads that actually move or that you actually build on the platform. Some workloads should stay where they are; a discovery call sorts out which."
   - q: "How accurate are the defaults?"
@@ -92,8 +92,8 @@ See the **[AI Platform](/products/ai-platform/)** and **[Sovereign AI](/solution
 - **Two kinds of tool:** the TCO, repatriation and ISP calculators are full models — every price carries a source and a date, the assumptions are editable, and each produces a PDF report you can hand to finance. The VMware-exit and GPU blocks on this page are quick four-input estimates, useful for a first sanity check and nothing more.
 - **What they are:** free, editable estimators built by Ænix for the economics of running a cloud platform on an open foundation; not affiliated with VMware/Broadcom.
 - **Who they're for:** infrastructure, finance and procurement teams scoping a platform build, a VMware exit, a hosting business, or a GPU investment.
-- **The target platform:** [Cozystack](https://cozystack.io), Apache 2.0 — no per-core/per-socket license. You pay for support and/or the build.
-- **Common pitfall:** comparing license-to-license only, and ignoring migration cost, staffing, and the workloads that should stay put.
+- **The target platform:** [Cozystack](https://cozystack.io), Apache 2.0 — no per-core/per-socket licence. You pay for support and/or the build.
+- **Common pitfall:** comparing licence-to-licence only, and ignoring migration cost, staffing, and the workloads that should stay put.
 ---
 
 ## Turn the numbers into a plan
@@ -107,4 +107,4 @@ A discovery call turns these estimates into an honest, workload-level TCO — in
 
 ---
 
-*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF-Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*

@@ -60,7 +60,7 @@ faq:
   - q: "Do you cover multi-node training and the GPU interconnect?"
     a: "Briefly, yes. The session showed where the fabric matters — NVLink within a node, GPUDirect RDMA over InfiniBand or RoCE across nodes — and the honest limit: tightly coupled multi-node training doesn't survive WAN latency, so it lives inside one site."
   - q: "How does this compare to Run:ai or OpenShift AI?"
-    a: "We compare approaches — buying a platform, renting capacity, or assembling open source — across licensing, GPU sharing, tenant isolation, inference and metering, including the honest trade-offs."
+    a: "The session compared approaches — buying a platform, renting capacity, or assembling open source — across licensing, GPU sharing, tenant isolation, inference and metering, including the honest trade-offs."
   - q: "Where is the platform behind this session described?"
     a: "For the platform behind this session, see [GPU as a service for GPU clouds and data centres](/solutions/gpu-as-a-service/) and the [Ænix AI Platform](/products/ai-platform/)."
   - q: "Is there a recording?"
@@ -110,7 +110,7 @@ final_cta:
 <div class="ws-story__text">
 <h3 class="wb-story__h3">What turns cards into a platform</h3>
 <p>Cozystack is an open-source cloud platform and CNCF Sandbox project that turns a node with GPUs into GPU-ready tenant clusters, managed databases, S3-compatible storage and inference — each one a Kubernetes resource behind one API. Teams get their own cluster, not a namespace, with the cards visible inside.</p>
-<p>On top of it, Ænix modules turn the platform into a business: <strong>GPU-hour and per-token metering, tenant quotas, a self-service panel, and the integrations that turn raw consumption into an invoice.</strong></p>
+<p>On top of it, Ænix modules turn the platform into a business: <strong>GPU usage measured per tenant, tenant quotas, a self-service panel, and integrations that pass consumption to your billing system (WHMCS or your own), where charging happens.</strong></p>
 </div>
 <div class="ws-story__visual ws-story__visual--platform">
 <div class="ws-platform wb-platform">
@@ -124,7 +124,7 @@ final_cta:
 </ul>
 <div class="wb-platform__plus"><span>+ Ænix modules</span></div>
 <ul class="wb-platform__modules">
-<li><span class="wb-mod__ic">{{< ws-icon name="billing" >}}</span>GPU-hour &amp; per-token metering</li>
+<li><span class="wb-mod__ic">{{< ws-icon name="billing" >}}</span>Per-tenant GPU usage for your billing</li>
 <li><span class="wb-mod__ic">{{< ws-icon name="catalog" >}}</span>Self-service panel &amp; quotas</li>
 <li><span class="wb-mod__ic">{{< ws-icon name="stack" >}}</span>Custom integrations over the API</li>
 </ul>
@@ -169,7 +169,7 @@ final_cta:
 
 <section class="ws-section wb-cover" id="agenda" aria-labelledby="wb-cover-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-cover-h">What the session covers</h2>
+<h2 class="ws-h2" id="wb-cover-h">What the session covered</h2>
 <p class="ws-lead">Live demos, not slides — then your questions.</p>
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
@@ -195,7 +195,7 @@ final_cta:
 <li class="wb-cover__item">
 <span class="wb-cover__num">05</span>
 <span class="wb-cover__icon">{{< ws-icon name="billing" >}}</span>
-<p class="wb-cover__text"><strong>Two meters on one cluster.</strong> GPU-hours for renting capacity, and input/output tokens for selling inference — the moment internal infrastructure becomes a product, with a 429 when a budget runs out.</p>
+<p class="wb-cover__text"><strong>Charging for GPU use.</strong> The session discussed GPU-hours for renting capacity and input/output tokens for selling inference as pricing patterns. In the platform, GPU usage is measured per tenant and charging happens in your billing system (WHMCS or your own).</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">06</span>
@@ -239,8 +239,8 @@ final_cta:
 
 <section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who it is for</h2>
-<p class="ws-lead">Enterprise teams handed a pile of GPUs and told to make them useful, and cloud, telecom and GPU providers building a sovereign AI offering. If you're weighing an open-source build against Run:ai, OpenShift AI, or simply renting from a hyperscaler, the session is built around your situation.</p>
+<h2 class="ws-h2" id="wb-audience-h">Who it was for</h2>
+<p class="ws-lead">Enterprise teams handed a pile of GPUs and told to make them useful, and cloud, telecom and GPU providers building a sovereign AI offering. If you're weighing an open-source build against Run:ai, OpenShift AI, or simply renting from a hyperscaler, the session was built around your situation.</p>
 <ul class="wb-audience__tiles">
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Platform &amp; infrastructure teams</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud &amp; GPU providers</li>
@@ -265,7 +265,7 @@ final_cta:
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
 <div class="ws-speaker__role">Creator of Cozystack · Co-founder and CEO of Ænix</div>
-<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps teams turn their GPUs and hardware into commercial cloud services.</p>
+<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Ænix, he helps teams turn their GPUs and hardware into commercial cloud services.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
 <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
