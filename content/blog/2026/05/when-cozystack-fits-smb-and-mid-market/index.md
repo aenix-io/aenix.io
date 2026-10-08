@@ -41,6 +41,7 @@ quiz:
         - { text: "OpenStack on shared hardware pool", correct: false }
         - { text: "A bigger multi-region Cozystack", correct: false }
       explanation: "For container-only mid-market: vanilla Kubernetes is lighter than Cozystack (no KubeVirt overhead). Other \"doesn't fit\" alternatives include staying on existing managed cloud (don't fix what isn't broken) or Hetzner cloud + VPS for small operationally-simple teams."
+hreflang_de: /de/blog/2026/05/wann-cozystack-fuer-mittelstand-passt/
 ---
 
 

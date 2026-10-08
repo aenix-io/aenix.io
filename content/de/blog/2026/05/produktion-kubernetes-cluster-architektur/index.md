@@ -41,6 +41,7 @@ quiz:
         - { text: "Sowohl Argo CD als auch Flux", correct: true }
         - { text: "Ausschließlich Argo CD", correct: false }
       explanation: "Sowohl Argo CD als auch Flux sind produktionsreif und CNCF-graduiert. Argo CD bietet eine reichhaltige Oberfläche, ein großes Plugin-Ökosystem und Mandantenfähigkeit über Projects. Flux liegt näher am Upstream-Kubernetes, ist eng mit dem Helm-Controller verzahnt und hat einen leichteren Betriebsaufwand. In Cozystack ist Flux der Standard."
+hreflang_en: /blog/2026/05/kubernetes-cluster-setup-production-architecture/
 ---
 
 Begleitung zur **[Kubernetes-Consulting-Page](/de/dienstleistungen/kubernetes-consulting)**.

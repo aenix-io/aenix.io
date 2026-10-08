@@ -45,6 +45,7 @@ quiz:
         - { text: "First production cohort in 6-12 weeks; whole estate 7-10 months", correct: true }
         - { text: "16-25 months regardless of estate size", correct: false }
       explanation: "The article separates two numbers deliberately. The first production cohort runs 6-12 weeks after kickoff, which is when the platform stops being a proof of concept; decommissioning the whole estate takes 7-10 months under 100 VMs and longer above that. Quoting the cohort figure as the estate figure is how migration plans slip."
+hreflang_de: /de/blog/2026/05/vmware-ablosung-nach-broadcom/
 ---
 
 

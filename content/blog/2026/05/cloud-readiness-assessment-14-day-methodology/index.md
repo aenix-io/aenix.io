@@ -48,6 +48,7 @@ quiz:
       explanation: "Strong fits include a regulator deadline (DORA Article 28, NIS2, sectoral audit), an upcoming board-level cost decision, a new platform engineering function being stood up, or an AI / data-residency project blocked at architecture review. The other options are explicitly listed as poor fits."
 aliases:
   - /blog/2026/05/vmware-migration-assessment-detailed/
+hreflang_de: /de/blog/2026/05/cloud-readiness-assessment-methodik/
 ---
 
 

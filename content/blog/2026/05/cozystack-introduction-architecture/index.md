@@ -41,6 +41,7 @@ quiz:
         - { text: "Cilium replaces NSX features without licensing fees", correct: true }
         - { text: "Cozystack itself is forked from the Cilium codebase", correct: false }
       explanation: "Choice 4: Cilium gives eBPF-based networking with native L4/L7 policies, observability, and service-mesh capabilities — replacing what NSX did in VMware deployments without the NSX licensing."
+hreflang_de: /de/blog/2026/05/cozystack-einfuehrung-architektur/
 ---
 
 

@@ -41,6 +41,7 @@ quiz:
         - { text: "Allein die Lizenzkosten über fünf Jahre", correct: false }
         - { text: "Die Wahl des Hardwareherstellers", correct: false }
       explanation: "Die Wahl folgt vor allem der Größenordnung und dem Anwendungsfall: unter 50 Hosts, Single-Tenant und überwiegend virtuelle Maschinen sprechen für Proxmox; eine Multi-Mandanten-Cloud bei einem Service-Provider spricht für Cozystack. Die beiden Plattformen verfolgen unterschiedliche architektonische Ziele."
+hreflang_en: /blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/
 ---
 
 Begleitung zur [Proxmox-Alternative-Page](/de/alternativen/proxmox-alternative).

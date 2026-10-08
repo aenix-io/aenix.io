@@ -45,6 +45,7 @@ quiz:
       explanation: "Both Argo CD and Flux are production-grade. The article notes Cozystack uses Flux as the default — Flux is closer to the upstream Kubernetes way; Argo CD has stronger UI ergonomics."
 aliases:
   - /blog/2026/05/platform-engineering-maturity-model-2026/
+hreflang_de: /de/blog/2026/05/platform-engineering-vs-devops-vs-sre/
 ---
 
 

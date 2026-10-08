@@ -42,6 +42,7 @@ quiz:
         - { text: "6–12 Wochen", correct: true }
         - { text: "2–3 Jahre", correct: false }
       explanation: "Kleinere Bestände: 6 bis 12 Wochen von Discovery bis Abschaltung. Größere und komplexere Bestände mit vCloud Director, viel NSX oder regulierten Workloads brauchen 3 bis 9 Monate in Kohorten. Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
+hreflang_en: /blog/2026/05/vmware-replacement-after-broadcom/
 ---
 
 **Dies ist die ausführliche Begleitung zu unserer [fokussierte Seite zur VMware-Alternative-Page](/de/alternativen/vmware-alternative). Sie führt durch den Wandel unter Broadcom, was eine glaubwürdige VMware-Ablösung in der Produktion tatsächlich bedeutet, und wie eine echte Migration End-to-End abläuft.**

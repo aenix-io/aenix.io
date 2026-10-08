@@ -41,6 +41,7 @@ quiz:
         - { text: "F5 BIG-IP plus Istio service mesh", correct: false }
         - { text: "MetalLB plus Cilium for L2 and L7", correct: true }
       explanation: "Bare-metal deployments default to MetalLB (layer-2 load balancing) plus Cilium (layer-7). Service mesh (Istio/Linkerd) is for advanced traffic management on top."
+hreflang_de: /de/blog/2026/05/produktion-kubernetes-cluster-architektur/
 ---
 
 

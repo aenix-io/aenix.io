@@ -42,6 +42,7 @@ quiz:
         - { text: "Kubernetes-nativ und mit deutlich leichterem Betriebsaufwand", correct: true }
         - { text: "Cozystack ist ein Fork der OpenStack-Codebasis", correct: false }
       explanation: "Cozystack ist Kubernetes-nativ und hat einen leichteren Betriebsaufwand als OpenStack, das mit 50 und mehr Komponenten betrieblich schwer ist. Gegenüber OpenShift steht Apache 2.0 ohne Vendor-Lock-in, gegenüber Proxmox die Auslegung auf Mandantenfähigkeit im großen Maßstab."
+hreflang_en: /blog/2026/05/cozystack-introduction-architecture/
 ---
 
 Begleitung zur **[Cozystack-Page](/de/produkte/cozystack)**.

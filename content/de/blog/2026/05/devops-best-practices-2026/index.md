@@ -42,6 +42,7 @@ quiz:
         - { text: "Als Teilaspekt von Disziplin 1, ohne eigenen Abschnitt", correct: false }
         - { text: "Sicherheit kommt im Artikel bewusst nicht vor", correct: false }
       explanation: "Disziplin 5: Sicherheit als parallele Disziplin, nicht als Gate am Ende und nicht nur zur Entwurfszeit. Integriert über den gesamten Lebenszyklus — SAST und DAST in der CI, Container-Scanning mit SBOM, Workload-Identität über SPIFFE/SPIRE und Absicherung der Lieferkette."
+hreflang_en: /blog/2026/05/devops-best-practices-2026/
 ---
 
 Begleitung zur **[DevOps-Consulting-Page](/de/dienstleistungen/devops-consulting)**.

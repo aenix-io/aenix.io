@@ -43,6 +43,7 @@ quiz:
         - { text: "Candidates lack relevant industry certifications", correct: false }
         - { text: "Candidates only know Jenkins-era tooling", correct: false }
       explanation: "Avoid hiring a \"DevOps engineer\" who actually does platform engineering, or an \"SRE\" who actually does general infrastructure. The titles increasingly mean specific things — mismatched titles cause org-design confusion."
+hreflang_de: /de/blog/2026/05/devops-best-practices-2026/
 ---
 
 

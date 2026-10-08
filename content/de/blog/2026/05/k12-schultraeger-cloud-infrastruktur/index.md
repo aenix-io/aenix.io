@@ -41,6 +41,7 @@ quiz:
         - { text: "Eine schnellere Bereitstellung neuer Cloud-Umgebungen", correct: false }
         - { text: "Niedrigere Kosten als jede andere Betriebsvariante", correct: false }
       explanation: "Souverän nach Architektur heißt: Schülerdaten liegen auf der Hardware des Schulträgers, die Verschlüsselungsschlüssel kontrolliert der Schulträger selbst, und in der Plattformschicht entsteht kein Vendor-Lock-in. Das passt für Schulträger mit erhöhtem Datenschutzbedarf oder entsprechenden Beschaffungsvorgaben."
+hreflang_en: /blog/2026/05/k12-school-district-cloud-infrastructure/
 ---
 
 Begleitung zur **[K-12-Bildung-Page](/de/branchen/k12-bildung)**.

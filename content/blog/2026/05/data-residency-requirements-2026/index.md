@@ -45,6 +45,7 @@ quiz:
         - { text: "A single hyperscaler globally on a long-term contract", correct: false }
         - { text: "Outsourcing residency to a managed-service provider", correct: false }
       explanation: "The architecture answer is per-jurisdiction tenant boundaries with explicit cross-border controls — the residency landscape is a matrix of jurisdictions with overlapping and sometimes contradictory requirements, not a single rule."
+hreflang_de: /de/blog/2026/05/datenresidenz-anforderungen-2026/
 ---
 
 

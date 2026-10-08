@@ -41,6 +41,7 @@ quiz:
         - { text: "Email and shared web hosting as primary services", correct: false }
         - { text: "VMs, Kubernetes, managed databases, S3, and GPU", correct: true }
       explanation: "Most hosting providers in 2026: bare-metal/VPS, per-customer manual provisioning, limited service catalog (VMs maybe managed DBs), custom or WHMCS billing. Target: Kubernetes-native multi-tenant Cozystack, self-service portal, expanded catalog (VMs/K8s/managed DBs/S3/GPU), WHMCS-integrated billing, per-customer observability and audit."
+hreflang_de: /de/blog/2026/05/hosting-anbieter-plattform-modernisierung/
 ---
 
 

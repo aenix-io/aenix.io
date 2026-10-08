@@ -41,6 +41,7 @@ quiz:
         - { text: "Die Kapazität für Golden Paths verschwindet im Ticketbetrieb", correct: true }
         - { text: "Die Liefergeschwindigkeit der Produktteams steigt", correct: false }
       explanation: "Fallstrick 4: Plattformteams, die zugleich die Plattform bauen und die Rufbereitschaft für gemeinsame Dienste tragen, verbringen ihre Zeit mit Tickets. Die Kapazität für die Arbeit an den Golden Paths verschwindet, und die Funktion kommt zum Stillstand."
+hreflang_en: /blog/2026/05/internal-developer-platform-examples-without-backstage/
 ---
 
 Begleitung zur **[IDP-Page](/de/dienstleistungen/internal-developer-platform)**.
