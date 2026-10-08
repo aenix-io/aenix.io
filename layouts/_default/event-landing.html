@@ -132,7 +132,7 @@
         {{ with .Params.inshort_title }}<h2>{{ . }}</h2>{{ end }}
         {{ partial "seo/geo-intro.html" . }}
         <div class="ws-cta-center ws-cta-center--outro">
-          <a class="cta-primary cta-accent" href="#register">{{ with .Params.hero_primary }}{{ .text }}{{ else }}{{ $registerLabel }}{{ end }}</a>
+          {{ with .Params.hero_primary }}<a class="cta-primary cta-accent" href="{{ .href | default "#register" }}">{{ .text }}</a>{{ else }}<a class="cta-primary cta-accent" href="#register">{{ $registerLabel }}</a>{{ end }}
         </div>
       </div>
       {{ end }}
