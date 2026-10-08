@@ -18,8 +18,9 @@
 */}}
 {{- $items := .Page.Params.cities -}}
 {{- $lang := .Page.Params.language | default "en" -}}
-{{- $cta := index (dict "ru" "Зарегистрироваться" "fr" "S'inscrire") $lang | default "Register" -}}
-{{- $ctaDone := index (dict "ru" "Прошёл" "fr" "Terminé") $lang | default "Took place" -}}
+{{- if hasPrefix .Page.RelPermalink "/de/" }}{{ $lang = "de" }}{{ end -}}
+{{- $cta := index (dict "ru" "Зарегистрироваться" "fr" "S'inscrire" "de" "Anmelden") $lang | default "Register" -}}
+{{- $ctaDone := index (dict "ru" "Прошёл" "fr" "Terminé" "de" "Hat stattgefunden") $lang | default "Took place" -}}
 {{- if $items -}}
 <div class="ws-cities">
   {{- range $i, $c := $items -}}
