@@ -6,9 +6,13 @@
   recordings). A stop without events still renders: those days are open for
   meetings, and the card says so.
 
+  German pages (language "de" or a /de/ path) read the `<field>_de` values
+  from the data file via partial i18n/field.html, falling back to English.
+
   Usage: {{< tour-schedule >}}  or  {{< tour-schedule region="usa" >}}
 */}}
 {{- $only := .Get "region" -}}
+{{- $de := or (eq (.Page.Params.language | default "en") "de") (hasPrefix .Page.RelPermalink "/de/") -}}
 {{- $kinds := dict
   "conference" "Conference"
   "workshop" "Workshop"
@@ -16,6 +20,15 @@
   "community" "Community"
   "podcast" "Podcast"
   "private" "Private" -}}
+{{- if $de -}}
+{{- $kinds = dict
+  "conference" "Konferenz"
+  "workshop" "Workshop"
+  "talk" "Vortrag"
+  "community" "Community"
+  "podcast" "Podcast"
+  "private" "Privat" -}}
+{{- end -}}
 {{- $cal := dict -}}
 {{- range site.Data.tour2026.calendars -}}{{- $cal = merge $cal (dict .key .) -}}{{- end -}}
 {{- range site.Data.tour2026.regions -}}
@@ -23,38 +36,46 @@
 {{- $c := index $cal .key -}}
 <div class="tour-region" id="schedule-{{ .key }}">
   <div class="tour-region__head">
-    <h3 class="tour-region__title">{{ .name }}</h3>
+    <h3 class="tour-region__title">{{ partial "i18n/field.html" (dict "item" . "key" "name" "de" $de) }}</h3>
     {{- with $c }}
-    <p class="tour-region__window">{{ .window }}</p>
-    <a class="tour-region__book" href="{{ .url }}" target="_blank" rel="noopener">Book a slot in {{ .name }} <span aria-hidden="true">↗</span></a>
+    <p class="tour-region__window">{{ partial "i18n/field.html" (dict "item" . "key" "window" "de" $de) }}</p>
+    <a class="tour-region__book" href="{{ .url }}" target="_blank" rel="noopener">{{ if and $de .book_de }}{{ .book_de }}{{ else }}Book a slot in {{ .name }}{{ end }} <span aria-hidden="true">↗</span></a>
     {{- end }}
   </div>
   <ol class="tour-stops">
     {{- range .stops }}
+    {{- $city := partial "i18n/field.html" (dict "item" . "key" "city" "de" $de) }}
     <li class="tour-stop">
       <div class="tour-stop__where">
-        <span class="tour-stop__dates">{{ .dates }}</span>
-        <span class="tour-stop__city">{{ .city }}</span>
-        <span class="tour-stop__country">{{ .country }} · {{ .tz }}</span>
+        <span class="tour-stop__dates">{{ partial "i18n/field.html" (dict "item" . "key" "dates" "de" $de) }}</span>
+        <span class="tour-stop__city">{{ $city }}</span>
+        <span class="tour-stop__country">{{ partial "i18n/field.html" (dict "item" . "key" "country" "de" $de) }} · {{ .tz }}</span>
       </div>
       <ul class="tour-stop__events">
         {{- range .events }}
         {{- $kind := .kind | default "talk" }}
+        {{- $link := partial "i18n/field.html" (dict "item" . "key" "link" "de" $de) }}
+        {{- $title := partial "i18n/field.html" (dict "item" . "key" "title" "de" $de) }}
         <li class="tour-event tour-event--{{ $kind }}{{ if eq .status "planned" }} tour-event--planned{{ end }}">
-          <span class="tour-event__tag">{{ index $kinds $kind | default $kind }}{{ if eq .status "planned" }} · planned{{ end }}</span>
-          <span class="tour-event__when">{{ .date }}{{ with .time }}, {{ . }}{{ end }}</span>
-          {{- if .link }}
-          {{- $ext := hasPrefix .link "http" }}
-          <a class="tour-event__title" href="{{ .link }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}>{{ .title }}</a>
+          <span class="tour-event__tag">{{ index $kinds $kind | default $kind }}{{ if eq .status "planned" }} · {{ if $de }}geplant{{ else }}planned{{ end }}{{ end }}</span>
+          <span class="tour-event__when">{{ partial "i18n/field.html" (dict "item" . "key" "date" "de" $de) }}{{ with partial "i18n/field.html" (dict "item" . "key" "time" "de" $de) }}, {{ . }}{{ end }}</span>
+          {{- if $link }}
+          {{- $ext := hasPrefix $link "http" }}
+          <a class="tour-event__title" href="{{ $link }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}>{{ $title }}</a>
           {{- else }}
-          <span class="tour-event__title">{{ .title }}</span>
+          <span class="tour-event__title">{{ $title }}</span>
           {{- end }}
-          {{- with .venue }}<span class="tour-event__venue">{{ . }}</span>{{ end }}
+          {{- with partial "i18n/field.html" (dict "item" . "key" "venue" "de" $de) }}<span class="tour-event__venue">{{ . }}</span>{{ end }}
         </li>
         {{- end }}
         <li class="tour-event tour-event--open">
+          {{- if $de }}
+          <span class="tour-event__when">Die übrige Zeit in {{ $city }}, 7:00–22:00 Uhr Ortszeit</span>
+          <span class="tour-event__venue">Frei für Meetings, Vorträge, Kaffee und Podcast-Aufnahmen</span>
+          {{- else }}
           <span class="tour-event__when">The rest of my time in {{ .city }}, 7:00–22:00 local</span>
           <span class="tour-event__venue">Open for meetings, talks, coffee and podcast recordings</span>
+          {{- end }}
         </li>
       </ul>
     </li>
