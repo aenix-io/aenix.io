@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["AI/ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/ai-platform-gpu-wirtschaftlichkeit-inferenz/"
 companion_landing: "/products/ai-platform/"
 companion_label: "See AI Platform product details →"
 quiz:
