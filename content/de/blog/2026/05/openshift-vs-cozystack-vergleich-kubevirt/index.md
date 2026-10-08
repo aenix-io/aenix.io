@@ -107,8 +107,8 @@ Für Organisationen, deren Beschaffung auf Red Hat standardisiert ist, ist OpenS
 Beide basieren auf KubeVirt, daher ist die Migration auf VM-Ebene unkompliziert (Kompatibilität auf Image-Ebene). Die architektonischen Unterschiede liegen in:
 
 - Mandantenmodell (Project CRD vs Tenant CRD)
-- Networking (OpenShift SDN/OVN vs Cilium)
-- Storage (OpenShift Container Storage / Ceph vs LINSTOR / DRBD)
+- Networking (OVN-Kubernetes, das das abgekündigte OpenShift SDN abgelöst hat, vs Cilium)
+- Storage (OpenShift Data Foundation / Ceph vs LINSTOR / DRBD)
 - Betriebswerkzeugen (OpenShift CLI/Console vs Cozystack Dashboard/Standard-kubectl)
 
 Realistischer Zeitrahmen für die Migration: 3–9 Monate für ein mittelgroßes Deployment.
