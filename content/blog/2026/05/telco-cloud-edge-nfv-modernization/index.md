@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Telco", "Sovereignty", "Multi-tenancy", "Cozystack", "Cloud", "AI/ML"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/telco-cloud-modernisierung-nfv-kubernetes-edge/"
 companion_landing: "/industries/telco/"
 companion_label: "See telco industry page →"
 quiz:
