@@ -1,8 +1,41 @@
 ---
 title: "About Ænix"
-description: "Aenix is an open-core company that created and maintains Cozystack, a CNCF project, and commercializes it as three cloud platforms on one engine."
-hero_subtitle: "The open-core company behind Cozystack"
+seo_title: "About Ænix — the company behind Cozystack"
+description: "Ænix created Cozystack (CNCF) and builds three cloud platforms on it. AENIX s.r.o. (Czech Republic), AENIX INC (Delaware, USA); about 20 people."
+hero_subtitle: "The open-core company that created Cozystack"
 language: "en"
+direct_answer: |
+  **Ænix is an open-core company with two legal entities: AENIX s.r.o. in the Czech Republic for EU contracts and AENIX INC in Delaware, USA, for US contracts. About 20 people work in the EU and Central Asia. Ænix created Cozystack, a CNCF Sandbox project licensed under Apache 2.0, and is one of its maintainers together with maintainers from other companies. On top of Cozystack, Ænix sells three platforms: Ænix Public Cloud Platform for hosting providers and other organisations selling cloud, Ænix Private Cloud Platform for enterprises replacing VMware and running cloud for themselves, and Ænix AI Platform for GPU and AI workloads. It also sells enterprise support for teams that run Cozystack themselves. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.**
+quick_facts:
+  - label: "Legal entities"
+    value: "AENIX s.r.o., Czech Republic (IČO 21493871, registered 22 April 2024); AENIX INC, Delaware, USA"
+  - label: "Founders"
+    value: "Andrei Kvapil (CEO) and Timur Tukaev (COO)"
+  - label: "Team"
+    value: "About 20 people in the EU and Central Asia — platform engineers, SRE, design and commercial"
+  - label: "Open source"
+    value: "Created Cozystack — CNCF Sandbox project, Apache 2.0; CNCF Incubation application in due diligence"
+  - label: "Certifications"
+    value: "ISO/IEC 27001:2022 (AENIX s.r.o.); Cozystack is a CNCF Certified Kubernetes distribution and was accepted into CNCF Kubernetes AI Conformance in September 2026"
+  - label: "What Ænix sells"
+    value: "Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform, plus enterprise support for self-run Cozystack"
+  - label: "Contracts"
+    value: "Contracts with AENIX s.r.o. are in EUR; list prices on the site are shown in USD"
+faq:
+  - q: "What does Ænix do?"
+    a: "Ænix builds and supports cloud platforms on Cozystack: a public cloud for hosting providers and other organisations selling cloud, a private cloud for enterprises replacing VMware, and an AI platform for GPU workloads. It also sells enterprise support for teams that run open-source Cozystack themselves."
+  - q: "Where is Ænix based?"
+    a: "AENIX s.r.o. is registered in České Budějovice, Czech Republic, and handles EU contracts and EU public-sector procurement. AENIX INC is registered in Delaware, USA, and handles US contracts. The team of about 20 people works in the EU and Central Asia."
+  - q: "Who founded and leads Ænix?"
+    a: "Ænix was founded by Andrei Kvapil and Timur Tukaev. Andrei Kvapil is CEO and Timur Tukaev is COO."
+  - q: "Is Cozystack an Ænix product?"
+    a: "No. Cozystack is a CNCF project under Apache 2.0. Ænix created it and is one of its maintainers, with maintainers from other companies. What Ænix sells is a subscription — support, commercial modules such as billing and the WHMCS integration, and engineering services — not a licence to Cozystack."
+  - q: "Does Ænix hold any certifications?"
+    a: "Yes. AENIX s.r.o. holds ISO/IEC 27001:2022 for its information security management system, valid through 26 February 2027 — see the [ISO 27001 page](/compliance/iso-27001/). There is no SOC 2 report. Cozystack is a CNCF Certified Kubernetes distribution and was accepted into the CNCF Kubernetes AI Conformance programme in September 2026."
+  - q: "Why three platforms and not one?"
+    a: "Because the commercial surface differs, not the technology. Selling capacity to customers needs billing, payments, a customer portal and tenant suspension. Running cloud for your own organisation under a regulator needs audit logging, air-gapped installs, control mapping and developer self-service. Running GPUs needs allocation, sharing and per-tenant usage measurement. One engine, three surfaces — and they combine."
+  - q: "How big is Ænix, and can it support a large programme?"
+    a: "About 20 people. The platform is a product, so a large build is mostly configuration and migration rather than bespoke construction, and the engineers who maintain Cozystack upstream are the ones who work on customer clusters. For a large programme Ænix staffs a named delivery team for each phase."
 
 team:
   - name: "Andrei Kvapil"
@@ -29,7 +62,7 @@ team:
     role: "Head of Development"
     photo: "/images/uploads/2026/04/timofei-larkin.png"
     links:
-      github: "deckhouse"
+      github: "lllamnyp"
       telegram: "lllamnyp"
   - name: "Julia Pavlova"
     role: "Drama Manager"
@@ -74,70 +107,59 @@ aliases:
 hreflang_de: /de/ueber-uns/
 ---
 
-**Ænix is an open-core company headquartered in Czechia (AENIX s.r.o.) and the United States (AENIX INC, Delaware), with engineering teams across the EU and Central Asia. We created and maintain Cozystack — a CNCF project (Apache 2.0) — and commercialize it as three platforms on one engine: Ænix Public Cloud Platform for organisations selling cloud, Ænix Private Cloud Platform for regulated organisations running it for themselves, and Ænix AI Platform for GPU workloads.**
-
----
-
-## Quick facts
-
-- **Founded:** AENIX s.r.o. (Czech Republic) + AENIX INC (Delaware, US)
-- **Team:** 20 people — platform engineers, SRE, design and commercial, distributed across the EU and Central Asia
-- **Investors:** PTV
-- **Geography:** EU + Central Asia engineering teams
-- **CEO:** Andrei Kvapil
-- **COO:** Timur Tukaev
-- **Open-source pedigree:** We created Cozystack — CNCF project, Apache 2.0, currently CNCF Sandbox; CNCF Incubating application in due diligence
-- **Commercial products:** three platforms on one engine — Ænix Public Cloud Platform, Ænix Private Cloud Platform (developer self-service included) and Ænix AI Platform — plus enterprise support for self-run Cozystack and the WHMCS integration
-- **Engagement scale:** Public Cloud Platform entry from $1,250/month support tier; Public Cloud / Enterprise full builds quoted per RFP
-- **Stage:** Early commercial journey — production-grade technology, growing sales motion
-
----
-
 ## What we do
 
-We build turnkey cloud platforms for organizations that need real cloud infrastructure on their own terms — whether for regulatory reasons, commercial reasons, or both.
+We build turnkey cloud platforms for organisations that need real cloud infrastructure on their own terms — for regulatory reasons, commercial reasons, or both.
 
 **Our customers fall into a few buyer profiles, each matched by a platform:**
 
-1. **Large public-cloud operators** (Public Cloud Platform) — public clouds, big banks running own cloud at scale, large telcos / national operators
-2. **Hosting providers and MSPs** (Public Cloud Platform) — small / mid hosting providers, MSPs, regional clouds, data centres modernizing beyond traditional VPS
-3. **Regulated enterprises** (Private Cloud Platform) — banks, insurance, public administration, telco, healthcare facing DORA / NIS2 / sovereignty mandates
-4. **Product / SaaS engineering teams** (Developer Self-Service) — organizations investing in developer experience and internal platform engineering
-5. **AI-heavy organizations** (AI Platform) — AI-native companies, regulated AI deployments, GPU-heavy product companies
+1. **Hosting providers, MSPs and regional clouds** (Public Cloud Platform) — providers modernising beyond VPS and adding managed Kubernetes, databases, object storage and GPU to their price list
+2. **National clouds, telcos and other operators at scale** (Public Cloud Platform) — multi-region commercial clouds
+3. **Regulated enterprises** (Private Cloud Platform) — banks, insurers, public administration, telcos and healthcare replacing VMware under DORA, NIS2 and sovereignty mandates; developer self-service is included
+4. **AI-heavy organisations and GPU clouds** (AI Platform) — companies running inference and training on their own GPUs, and providers selling GPU capacity
 
-Plus an entry tier — **enterprise support for Cozystack** — for product teams running on Hetzner / OVH / leased bare-metal who want vendor support without the commercial portal/billing layer.
+Plus **enterprise support for Cozystack** for teams running the open-source project on Hetzner, OVH or leased bare metal who want the maintainers on call without the commercial portal and billing layer.
 
-We engage at both ends of the range: a $1,250/month productized support tier for a small provider, and multi-year platform builds for banks and public clouds.
+The same support tiers apply to Public Cloud Platform subscriptions and to self-run Cozystack, from $1,250 per month per 10 nodes; Private Cloud Platform and AI Platform programmes are quoted per RFP. See [pricing](/pricing/).
 
 ---
 
-## Why open-core
+## Why open core
 
-We created Cozystack as an open-source CNCF project because cloud infrastructure that aspires to be sovereign, auditable, and customer-controlled must be built on a foundation customers can verify and own:
+We created Cozystack as an open-source CNCF project because cloud infrastructure that aims to be sovereign, auditable and customer-controlled must be built on a foundation customers can verify and own:
 
-- **Auditable end-to-end** — open-source supply chain (DORA Article 24 friendly, NIS2 Article 21 alignable)
-- **Customer-controlled** — customer's hardware, customer's keys, customer's jurisdiction
+- **Auditable end-to-end** — an open-source supply chain you can assess under DORA Article 28 (ICT third-party risk) and NIS2 Article 21(2)(d) (supply-chain security)
+- **Customer-controlled** — your hardware, your jurisdiction, your encryption and retention policies
 - **Vendor-neutral at the foundation** — no architectural lock-in to Ænix
-- **Long-horizon viable** — Apache 2.0 license outlives any single commercial vendor
+- **Long-horizon viable** — the Apache 2.0 licence outlives any single commercial vendor
 
-Ænix Platform is the commercial productized version we offer for organizations that need a turnkey cloud (hosting panel, billing, portals, payments, support, productized installer) without building it themselves. The open-source foundation remains free for anyone to run.
+The Ænix platforms are the commercial layer for organisations that need a turnkey cloud (hosting panel, billing, portals, payments, support, productized installer) without building it themselves. The open-source foundation remains free for anyone to run.
 
-This is the open-core model — like Confluent on Kafka, Canonical on Ubuntu, GitLab CE/EE, or Red Hat on Linux. The open project keeps its integrity; the commercial product adds turnkey value on top.
+This is the open-core model, as with Confluent on Kafka or GitLab CE/EE: the open project keeps its integrity, and the commercial product adds turnkey value on top.
 
 ---
 
 ## Cozystack and CNCF
 
-Cozystack is currently a **CNCF Sandbox** project. Its **CNCF Incubating** application, filed in October 2025, is in due diligence with the CNCF Technical Oversight Committee.
+Cozystack is a **CNCF Sandbox** project. Its **CNCF Incubation** application, filed in October 2025, is in due diligence with the CNCF Technical Oversight Committee.
 
+- **Conformance:** CNCF Certified Kubernetes distribution; accepted into the CNCF Kubernetes AI Conformance programme in September 2026 — see the [Kubernetes conformance evidence](/compliance/kubernetes-conformance/)
 - **Architecture:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard + VictoriaMetrics + VictoriaLogs
-- **License:** Apache 2.0 — anyone can run it
+- **Licence:** Apache 2.0 — anyone can run it
 - **GitHub:** [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack)
-- **Documentation:** [cozystack.io/docs](https://cozystack.io/docs) — vendor-neutral CNCF-aligned project documentation
-- **Community:** Slack (#cozystack on Kubernetes Slack), Telegram, GitHub
-- **Maintenance:** Ænix engineers + community contributors; we are the largest single contributor
+- **Documentation:** [cozystack.io/docs](https://cozystack.io/docs) — vendor-neutral project documentation
+- **Community:** #cozystack on Kubernetes Slack, Telegram, GitHub
+- **Maintainers:** Ænix engineers together with maintainers from other companies, plus community contributors
 
-Per CNCF community norms, **cozystack.io stays vendor-neutral** — no commercial CTAs, no funnel-links to aenix.io. The boundary protects long-term community trust.
+Per CNCF community norms, **cozystack.io stays vendor-neutral** — no commercial calls to action and no funnel links to aenix.io. The boundary protects long-term community trust.
+
+---
+
+## Certifications
+
+- **ISO/IEC 27001:2022** — AENIX s.r.o., certificate SIC.MS.008.ISO/IEC27001.5719, valid through 26 February 2027. [Certificate details and scope →](/compliance/iso-27001/)
+- **CNCF Certified Kubernetes** and **CNCF Kubernetes AI Conformance** — for Cozystack, the engine of all three platforms. [Evidence →](/compliance/kubernetes-conformance/)
+- There is no SOC 2 report. The platforms themselves are not certified; they supply controls and evidence for your own ISO 27001, DORA, NIS2 and GDPR work. [Compliance evidence →](/compliance/)
 
 ---
 
@@ -146,12 +168,10 @@ Per CNCF community norms, **cozystack.io stays vendor-neutral** — no commercia
 {{< two-cols image="/images/uploads/2023/12/1-edited.png" alt="Our story" >}}
 We started as a team of platform engineers building cloud infrastructure for service providers and regulated enterprises. The pattern we kept seeing: customers wanted a real cloud (multi-tenant, billing, portals, GPU, managed services) but did not want hyperscaler dependency or VMware lock-in. The existing open-source options (raw Kubernetes, OpenStack at scale) required years of platform-engineering investment most customers couldn't make.
 
-So we built Cozystack — a Kubernetes-native multi-tenant cloud platform — as the foundation we wished we'd had years earlier. It became a CNCF project. Then we productized it: the turnkey commercial layer on top, as three platforms matched to who consumes the capacity.
+So we built Cozystack — a Kubernetes-native multi-tenant cloud platform — as the foundation we wished we'd had years earlier. It became a CNCF project. Then we built the commercial layer on top, as three platforms matched to who consumes the capacity.
 {{< /two-cols >}}
 
-We are early in our commercial journey. The technology is production-grade — Cozystack runs in production at regional hosting providers, and we have multi-million-euro engagements with tier-1 European banks under NDA. The sales motion is still building.
-
-This is a deliberate sequence: **technology first, community second, commercial third**. We are now in the commercial-acceleration phase.
+Cozystack runs in production at hosting providers and regional clouds, and Ænix delivers platform engagements for banks under NDA. Nine deployments are [written up as case studies](/case-studies/) with architecture and figures, anonymised where contracts require it.
 
 ---
 
@@ -159,11 +179,10 @@ This is a deliberate sequence: **technology first, community second, commercial 
 
 Ænix engagements typically follow this sequence:
 
-1. **Discovery call** (free, 30 min) — confirm fit, scope, regulatory context, edition match
-2. **Platform Readiness Assessment** (14 or 28 days, fixed price agreed up front) — current-state audit, gap analysis, edition recommendation, migration roadmap
-3. **Pilot engagement** (3-6 months, quoted per RFP) — defined slice, validated business case, customer-side learning
-4. **Full platform build** — weeks for Public Cloud Platform with productized installer; 9-18 months for Public Cloud / Enterprise full deployments, quoted per RFP
-5. **Managed operations** (ongoing retainer) — optional post-deployment
+1. **Discovery call** (free, 30 min) — confirm fit, scope, regulatory context and which platform matches
+2. **Platform Readiness Assessment** (14 days focused or 28 days full, fixed price) — current-state audit, gap analysis, platform recommendation, migration roadmap
+3. **Launch or build** — Public Cloud Platform at provider scale goes live in weeks once hardware is ready, with the productized installer. Private Cloud Platform: a 3–12 month build depending on scope. Multi-region national or operator programmes: a 3–6 month pilot, then 9–18 months to full multi-region
+4. **Managed operations** (ongoing retainer) — optional after deployment
 
 For governments and sovereign cloud builders, engagements run through public-sector procurement (RFI / RFP) and are priced through the procurement process itself.
 
@@ -175,74 +194,32 @@ For governments and sovereign cloud builders, engagements run through public-sec
 
 **Public production customers** running Ænix Public Cloud Platform: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**NDA-protected engagements** (banks, sovereign cloud, AI/ML): multi-million-euro Ænix Private Cloud Platform and Public Cloud Platform deployments; naming permitted from mid-2027. [Five deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact.
+**Engagements under NDA** (banks, sovereign cloud, AI/ML): Ænix Private Cloud Platform and Public Cloud Platform deployments; naming permitted from mid-2027. [Our case studies](/case-studies/) describe nine deployments, anonymised by contract but with architecture and figures intact.
 
-**Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud / VPS hosting platforms, lightweight VDI, backup systems reducing storage cost up to 75% — work that demonstrates deep technical capability underpinning Ænix Platform delivery. [See case studies →](/case-studies/)
+**Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud and VPS hosting platforms, lightweight VDI, and backup systems that reduced storage cost by up to 75%.
 
 ---
 
 ## Geography and jurisdictions
 
-- **AENIX s.r.o.** (Czech Republic) — handles EU contracts (DORA, NIS2 are EU regulations) and EU procurement
-- **AENIX INC** (Delaware, US) — handles US engagements and US procurement
-- **Engineering teams** distributed across the EU and Central Asia
-- **Central Asia** — strong presence in Kazakhstan and adjacent markets. Direct experience with KZ procurement frameworks (goszakup.gov.kz, mitwork.kz, zakup.sk.kz) and sovereign-cloud requirements.
+- **AENIX s.r.o.** — U Trojice 2661/1e, České Budějovice 3, 370 04 České Budějovice, Czech Republic; IČO 21493871, DIČ CZ21493871. Contracting party for customers in the European Economic Area and for EU public-sector procurement. Contracts are in EUR; list prices on the site are shown in USD.
+- **AENIX INC** — Delaware, USA. Handles US contracts and US procurement.
+- **Team** — about 20 people in the EU and Central Asia.
+- **Central Asia** — experience with Kazakhstan procurement frameworks (goszakup.gov.kz, mitwork.kz, zakup.sk.kz) and sovereign-cloud requirements.
 
-The dual-jurisdiction structure matters for sovereignty narratives — we are not US-only or EU-only, and customers can engage with the entity matched to their jurisdiction.
+Customers contract with the entity that matches their jurisdiction. [Contact details →](/contact/)
 
 ---
 
 ## Partner Program
 
-Up to **40% margin** on Ænix Platform sales for resellers, integrators, and distributors. Includes deal registration, sales kit, technical pre-sales support, L3 support access, training.
+Up to **40% margin** on Ænix platform subscriptions and support for resellers, integrators and distributors. Includes deal registration, a sales kit, technical pre-sales support, L3 support access and training.
 
 [Partner Program →](/partners/)
 
 ---
 
-## Frequently asked questions
-
-### What does Ænix do?
-
-We build turnkey cloud platforms for hosting providers, regulated enterprises, public clouds, product engineering teams, and AI-heavy organizations. We are the open-core company behind Cozystack (CNCF project) and commercialize it as three platforms on one engine.
-
-### Where are you based?
-
-AENIX s.r.o. (Czech Republic) and AENIX INC (Delaware, USA). Engineering teams across the EU and Central Asia.
-
-### Why two legal entities (Czechia + US)?
-
-EU + US legal jurisdictions cover our customer base. AENIX s.r.o. handles EU contracts; AENIX INC handles US engagements. The dual structure also matters for sovereignty narratives — we are not US-only or EU-only, and customers can choose the entity matched to their jurisdiction.
-
-### Who leads Ænix?
-
-CEO: Andrei Kvapil. COO: Timur Tukaev. Engineering team distributed across the EU and Central Asia. See team section below.
-
-### How big is Ænix?
-
-Twenty people, backed by PTV. That is deliberately small for the size of the engagements: the platform is a product, so a bank build is a configuration and migration exercise rather than a bespoke construction project, and the same engineers who maintain Cozystack upstream are the ones on your cluster. For a large programme we staff a named delivery team and scale it to the phase; we do not carry a bench.
-
-### What's "open-core"?
-
-Open-core companies maintain an open-source project (here: Cozystack) and commercialize a productized version (here: Ænix Platform). Examples: Confluent on Kafka, Red Hat on Linux, Canonical on Ubuntu, GitLab CE/EE.
-
-### Are you a Cozystack consultancy?
-
-No. We are an open-core platform vendor. We sell the three Ænix platforms (the commercial productized layer) and engineering services around it. We are also the maintainers of Cozystack (the open-source foundation under Ænix Platform) — but consulting on Cozystack is a side activity, not the primary business.
-
-### Why three platforms and not one?
-
-Because the commercial surface differs, not the technology. If you sell capacity to customers you need billing, payments, a customer-facing portal and tenant suspension — machinery an internal platform never touches. If you run cloud for your own organisation under a regulator you need key custody, audit-ready logging, air-gap and control mapping — machinery a hoster rarely needs. One core, two commercial packages. GPU and developer self-service are modules rather than editions because both sides ask for them.
-
-We used to describe five editions. That was one product wearing five names, and it made the catalogue look larger than the product is. Three platforms, split by who consumes the capacity, is the honest shape — and they combine.
-
----
-
 ## Team
-
-{{< design-note >}}
-Render existing team grid (Andrei, Timur, Viktoriia, Timofei, Julia + Community Champions) using the existing `{{< team >}}` and `{{< community-champions >}}` shortcodes. Keep current photos and structure. **Reframe** "Drama Manager" role to something more aligned with executive tone (suggested: "Operations Lead" or "Head of People") — confirm with Julia + Timur before publishing.
-{{< /design-note >}}
 
 {{< team >}}
 
@@ -254,13 +231,13 @@ Render existing team grid (Andrei, Timur, Viktoriia, Timofei, Julia + Community 
 
 ## Get in touch
 
-Book a discovery call to discuss your buyer profile, edition fit, and engagement scope.
+Book a 30-minute discovery call to discuss which platform fits and what an engagement would look like.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
-  <a class="cta-secondary" href="/contact/">Contact details →</a>
+  <a class="cta-secondary" href="/contact/#offices">Contact details →</a>
 </div>
 
 ---
 
-*Ænix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project (currently CNCF Sandbox; CNCF Incubating application in due diligence), Apache 2.0. Maker of the Ænix platforms — turnkey commercial cloud on an open-source engine.*
+*Ænix is the open-core company that created [Cozystack](https://cozystack.io) — a CNCF project (CNCF Sandbox; CNCF Incubation application in due diligence), Apache 2.0 — and builds the three Ænix platforms on it.*

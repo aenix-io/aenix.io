@@ -64,7 +64,7 @@ agenda:
     body: "Where to start at home: the first non-critical workload, the stages of the move, and the support you get after the workshop."
   - time: "03:30"
     title: "Questions and conversation"
-    tag: "45 min"
+    tag: "30 min"
     kind: "social"
     body: "Open conversation over food and drinks. The speaker stays in the room — bring your own cases."
 cities:
@@ -75,7 +75,7 @@ cities:
     date_iso: "2026-10-19T10:00:00+02:00"
     end_iso: "2026-10-19T14:00:00+02:00"
     country_code: "FR"
-    venue: "MyCowork — Meeting room BANKSY, 54 rue Greneta, 75002 Paris"
+    venue: "MyCowork, 54 rue Greneta, 75002 Paris"
     form: "https://webforms.pipedrive.com/f/c6EKi2Xyd7mTOEBNs4j7mNgFlzotHVo1eqEXGOeaodMt6bwpstuYnti4ubNmfSvlrd"
     href: "#register"
   - city: "Berlin"
@@ -85,7 +85,7 @@ cities:
     date_iso: "2026-10-23T10:00:00+02:00"
     end_iso: "2026-10-23T14:00:00+02:00"
     country_code: "DE"
-    venue: "Techspace Eiswerk — Meeting room 0.2, Köpenicker Straße 40-41, 10179 Berlin, Germany"
+    venue: "Techspace Eiswerk, Köpenicker Straße 40-41, 10179 Berlin"
     form: "https://webforms.pipedrive.com/f/cee1SzmEOjdS1GbqVkh1iVOudwyLo6RqAYokbE0PeHXHyNT20le8jyNzEHiv1IyFqP"
     href: "#register"
   - city: "Warsaw"
@@ -95,7 +95,7 @@ cities:
     date_iso: "2026-10-26T10:00:00+01:00"
     end_iso: "2026-10-26T14:00:00+01:00"
     country_code: "PL"
-    venue: "Mindspace Koszyki — Meeting room M12, Koszykowa 61, 00-667 Warszawa, Poland"
+    venue: "Mindspace Koszyki, Koszykowa 61, 00-667 Warszawa"
     form: "https://webforms.pipedrive.com/f/5VHAcBb9sIEeptEEtCsAngfjTDqT8VxfYQLkvv7e9rShyaJCbGFY1jTg176vasmEdt"
     href: "#register"
   - city: "Copenhagen"
@@ -105,7 +105,7 @@ cities:
     date_iso: "2026-10-28T10:00:00+01:00"
     end_iso: "2026-10-28T14:00:00+01:00"
     country_code: "DK"
-    venue: "Soho Network — room \"Safari\" (up to 12 people), Flæsketorvet 68, 1711 København V, Denmark"
+    venue: "Soho Network, Flæsketorvet 68, 1711 København V"
     form: "https://webforms.pipedrive.com/f/5XdP3bKfxiPs2N2RM5qgriZ42137zsrujmuomDnTK5vrp33QCiSxplYRbMbBwgdziP"
     href: "#register"
   - city: "Amsterdam"
@@ -115,7 +115,7 @@ cities:
     date_iso: "2026-10-30T10:00:00+01:00"
     end_iso: "2026-10-30T14:00:00+01:00"
     country_code: "NL"
-    venue: "Mindspace Dam — Meeting room M14, Nieuwezijds Voorburgwal 162, 1012 SJ Amsterdam"
+    venue: "Mindspace Dam, Nieuwezijds Voorburgwal 162, 1012 SJ Amsterdam"
     form: "https://webforms.pipedrive.com/f/5XdRhHymS1fHqrAOeH72DRtgLjCDM78JNP9BM1UTGTF5Yt1UNuPemW6gcLf8TftrP5"
     href: "#register"
   - city: "Milan"
@@ -125,7 +125,7 @@ cities:
     date_iso: "2026-11-02T10:00:00+01:00"
     end_iso: "2026-11-02T14:00:00+01:00"
     country_code: "IT"
-    venue: "Flexworking Cerva — Meeting room da 8/10 posti, Via Cerva, 20 - 20122 Milano"
+    venue: "Flexworking Cerva, Via Cerva 20, 20122 Milano"
     form: "https://webforms.pipedrive.com/f/5Xeb3egRT38Lu4nqfgISpZc4LUwNAaUCqDFBXcMdhQmav4FBZsDuYKuvOXpyWWYL0T"
     href: "#register"
   - city: "Madrid"
@@ -135,17 +135,17 @@ cities:
     date_iso: "2026-11-04T10:00:00+01:00"
     end_iso: "2026-11-04T14:00:00+01:00"
     country_code: "ES"
-    venue: "Impact Hub Madrid (Barceló) — [BAR] Sketch 112, C/ Serrano Anguita, 13, Madrid"
+    venue: "Impact Hub Madrid (Barceló), C/ Serrano Anguita 13, Madrid"
     form: "https://webforms.pipedrive.com/f/63f23YV2NKLYPPGDfW2xlR31DOD2VMmZKQkl2gdkqlxBLoXccSqwsyLwl09lrS056H"
     href: "#register"
   - city: "London"
     country: "United Kingdom"
-    status: "confirmed"
+    status: "pending"
     date: "Fri, 6 Nov 2026, 10:00–14:00 GMT"
     date_iso: "2026-11-06T10:00:00+00:00"
     end_iso: "2026-11-06T14:00:00+00:00"
     country_code: "GB"
-    venue: "Venue to be confirmed — registered attendees hear first. In person or online."
+    venue: "Date set, venue to be announced — registered attendees hear first. In person or online."
     form: "https://webforms.pipedrive.com/f/63fmcb0ML4ruV9dZvat9eZELmi8trXuB0nrsQPlGpH2Cve2dnnRImpwAilE1uvKu43"
     href: "#register"
 final_cta:
@@ -154,7 +154,7 @@ final_cta:
   button: "Register for your city"
   href: "#register"
 direct_answer: |
-  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. In autumn 2026 it runs across eight European cities — Paris, Berlin, Warsaw, Copenhagen, Amsterdam, Milan, Madrid, and London. In one day, you migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform hosted by the CNCF — with your own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. Then a short live demo shows the same platform running AI and GPUs, so a VMware replacement doubles as an AI/GPU platform on infrastructure you own. The workshop is led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. You can attend in person or online, and afterwards every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate. Attendance is free with registration; seats are limited.**
+  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. In autumn 2026 it runs across eight European cities — Paris, Berlin, Warsaw, Copenhagen, Amsterdam, Milan, Madrid, and London. In one day, you migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform hosted by the CNCF — with your own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. Then a short live demo shows the same platform running AI and GPUs, so a VMware replacement doubles as an AI/GPU platform on infrastructure you own. The workshop is led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. You can attend in person or online, and afterwards every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam. Attendance is free with registration; seats are limited.**
 
 quick_facts:
   - label: "Format"
@@ -168,7 +168,7 @@ quick_facts:
   - label: "Who it's for"
     value: "VMware administrators, sysadmins, infrastructure leads, technology executives, DevOps and platform engineers"
   - label: "After the workshop"
-    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate"
+    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs with a practice badge, and the option to take the free Ænix Certification for Cozystack — Fundamentals exam"
   - label: "Host"
     value: "Timur Tukaev — Cozystack maintainer, Ænix co-founder"
 
@@ -190,7 +190,7 @@ faq:
   - q: "What exactly will I do with my own hands?"
     a: "Move a virtual machine off a running VMware server, deploy a database, publish a service to the network, see how monitoring and backups work — and, at the end, bring the whole setup back up from a single file."
   - q: "What happens after the workshop?"
-    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. Completing the labs earns you the Ænix Certification for Cozystack — Fundamentals certificate — also free."
+    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. You can then take the free Ænix Certification for Cozystack — Fundamentals exam (60 questions, 90 minutes, in English); the certificate comes from passing the exam. Completing the labs earns a separate practice badge. The certification study materials are currently in Russian."
   - q: "We run Oracle, SAP, or specially licensed Windows. Will it migrate?"
     a: "Maybe not — and we will say so directly. Vendor licensing restrictions are one of the topics of the honest-limitations conversation. Bring your hardest case and get a straight answer."
   - q: "Can I bring my manager or a colleague?"
@@ -334,7 +334,7 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Your test environment stays with you for another 30 days</strong> — for experiments and certification prep.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Take-home lab exercises</strong> — with support from the Cozystack maintainers.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>A chat where Cozystack maintainers answer your questions.</strong></span></li>
-<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate</strong> — free.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The option to take the Ænix Certification for Cozystack — Fundamentals exam</strong> — free, 60 questions in English; the labs earn a separate practice badge.</span></li>
 </ul>
 <div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Register for your city</a></div>
 </div>
@@ -345,7 +345,7 @@ faq:
 <div class="ws-cert">
 <span class="ws-cert__tag">sample</span>
 <span class="ws-cert__seal">{{< ws-icon name="cert" >}}</span>
-<span class="ws-cert__kicker">Certificate of completion</span>
+<span class="ws-cert__kicker">Awarded for passing the exam</span>
 <span class="ws-cert__title">Ænix Certification for Cozystack — Fundamentals</span>
 <span class="ws-cert__line"></span>
 <span class="ws-cert__by">Cozystack · Ænix</span>

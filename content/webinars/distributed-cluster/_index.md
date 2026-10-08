@@ -17,7 +17,6 @@ hero_chips:
   - "Took place on 30 September 2026"
   - "60 minutes, with a live Q&A"
   - "Recording not published yet"
-  - "Bring your stack — questions answered live"
 hero_primary: { text: "Talk to the team", href: "/contact/" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
@@ -28,7 +27,7 @@ event:
   language: "en"
   mode: "online"
   performer: "Andrei Kvapil"
-  performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
+  performer_role: "Creator and maintainer of Cozystack, co-founder and CEO of Ænix"
   price: 0
 direct_answer: |
   **This was a free live webinar, held on 30 September 2026, for enterprise infrastructure teams and for clouds, hosters and data centre operators that need geo-resilience they can prove. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — built a distributed Kubernetes cluster live: the three topologies for three levels of latency (metro-stretch with RPO=0, two datacenters plus a witness, and remote-DC DR), the quorum math for surviving a lost site, synchronous storage across datacenters, live migration of VMs and databases, GPU across sites, and the real DR drills where a whole datacenter was powered off on purpose. Shown on a real production cluster stretched across three datacenters. The recording is not published yet.**
@@ -45,7 +44,7 @@ quick_facts:
   - label: "Who it's for"
     value: "Architects, SREs, CTOs and infrastructure leaders who sign off on DR — and providers selling geo-redundant services"
   - label: "Host"
-    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), founder of Aenix"
+    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), co-founder and CEO of Ænix"
   - label: "After the webinar"
     value: "A map of the three topologies and a readiness checklist you can score your own datacenters against"
 
@@ -53,13 +52,13 @@ faq:
   - q: "Is this a real production system or a lab demo?"
     a: "Real production. The core case is a Cozystack cluster stretched across three datacenters, plus the actual DR drills we ran with the provider — including what broke and what we fixed."
   - q: "Do I need three datacenters to get value?"
-    a: "No. We cover single-site teams planning their first second site, two-DC plus witness setups, and full three-site stretch — so you can place yourself on the map wherever you start."
+    a: "No. The session covered single-site teams planning their first second site, two-DC plus witness setups, and full three-site stretch — so you can place yourself on the map wherever you start."
   - q: "How is this different from VMware vSAN stretched + SRM?"
     a: "The same metro-stretch resilience, without per-socket licensing or vendor lock-in, on an open-source core you can run on your own hardware. We compare the approaches honestly."
   - q: "Can you really lose a datacenter with zero data loss?"
-    a: "In a synchronous metro-stretch topology — datacenters within metro distance, roughly a couple of milliseconds round-trip — yes, RPO=0. We show it live and are explicit about where synchronous replication stops working over longer distances, and what you use instead."
+    a: "In a synchronous metro-stretch topology — datacenters within metro distance, roughly a couple of milliseconds round-trip — yes, RPO=0. The session showed it live and was explicit about where synchronous replication stops working over longer distances, and what you use instead."
   - q: "What about GPU and databases across sites?"
-    a: "We cover both: GPU sharing within a site and cloud-burst to other sites or a public cloud, and managed databases that place replicas per zone and switch over automatically when a site is lost."
+    a: "The session covered both: GPU sharing within a site and cloud-burst to other sites or a public cloud, and managed databases that place replicas per zone and switch over automatically when a site is lost."
   - q: "Which storage — DRBD or Ceph?"
     a: "Both. We compare synchronous DRBD and Ceph across datacenters — the replication model, the quorum, dedicated storage networks and the tuning that keeps latency from triggering false failovers."
   - q: "Is there a recording?"
@@ -263,7 +262,7 @@ final_cta:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
-<div class="ws-speaker__role">Creator of Cozystack · Founder of Aenix</div>
+<div class="ws-speaker__role">Creator of Cozystack · Co-founder and CEO of Ænix</div>
 <p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers across Europe build geo-resilient infrastructure on hardware they own.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">

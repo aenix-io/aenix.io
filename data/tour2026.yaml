@@ -3,12 +3,15 @@
 #
 # To add a university talk, community meetup or podcast recording, append an
 # item to the stop's `events` list. Kinds: conference, workshop, talk,
-# community, podcast, private. Status: confirmed | planned.
+# community, podcast, private. Status: confirmed | planned — use `planned`
+# until the date AND the venue are fixed.
 #
 # Booking links live under `calendars`; replace the URLs once the zcal
 # scheduling links exist.
 #
-# German pages (/de/tour-2026/) read the `<field>_de` sibling of a field when
+# The German tour and workshop pages are withdrawn (their URLs redirect to
+# English), so the `_de` fields are currently unused. If German pages return,
+# they read the `<field>_de` sibling of a field when
 # it exists and fall back to the English value otherwise (addresses and
 # conference names need no `_de`). When you add or change an English value,
 # add or update its `_de` sibling too. `book_de` is the German label of a
@@ -195,7 +198,7 @@ regions:
             venue_de: "Central London, Veranstaltungsort wird noch bestätigt"
             link: "/workshops/cozystack-tour-2026-europe/#register"
             link_de: "/de/workshops/cozystack-tour-2026-europa/#register"
-            status: confirmed
+            status: planned
 
   - key: usa
     name: "United States"
@@ -234,7 +237,7 @@ regions:
             venue_de: "San Francisco, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: confirmed
+            status: planned
       - city: "Seattle"
         country: "Washington"
         dates: "18–20 Nov"
@@ -252,7 +255,7 @@ regions:
             venue_de: "Downtown Seattle, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: confirmed
+            status: planned
       - city: "Austin"
         country: "Texas"
         dates: "20–24 Nov"
@@ -270,7 +273,7 @@ regions:
             venue_de: "Downtown Austin, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: confirmed
+            status: planned
       - city: "Dallas"
         country: "Texas"
         dates: "24–29 Nov"
@@ -315,7 +318,7 @@ regions:
             venue_de: "Downtown DC, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: confirmed
+            status: planned
       - city: "Boston"
         country: "Massachusetts"
         dates: "8–9 Dec"
@@ -333,7 +336,7 @@ regions:
             venue_de: "Den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: confirmed
+            status: planned
       - city: "New York"
         country: "New York"
         dates: "9–11 Dec"
@@ -351,4 +354,4 @@ regions:
             venue_de: "Midtown Manhattan, den genauen Ort erfahren angemeldete Teilnehmende"
             link: "/workshops/cozystack-tour-2026-usa/#register"
             link_de: "/de/workshops/cozystack-tour-2026-usa/#register"
-            status: confirmed
+            status: planned

@@ -1,90 +1,116 @@
 ---
 title: "Privacy Policy"
-description: "How Ænix collects, uses, and protects your personal information."
+seo_title: "Privacy Policy — how Ænix handles personal data"
+description: "How AENIX s.r.o. collects and uses personal data on aenix.io: analytics, forms, cookies, processors, retention, transfers and your rights under the GDPR."
 layout: "single"
+page_type: "flag-page"
 url: "/privacy-policy/"
 ---
 
-**Effective date:** April 2026
+**Effective date:** 8 October 2026
 
-Ænix ("we", "us", or "our") operates the website [aenix.io](https://aenix.io). This Privacy Policy explains how we collect, use, and protect information about visitors and customers.
+This policy explains what personal data we collect on [aenix.io](https://aenix.io), why, who processes it for us, how long we keep it, and what rights you have.
 
-## Information we collect
+## Who is responsible {#controller}
 
-We may collect information you provide directly — for example, when you submit a contact form, sign up for communications, or take part in a quiz or survey. This may include your name, email address, company name, job title, and phone number.
+The controller for personal data processed through this website is:
 
-We also collect certain information automatically when you visit our website, such as your IP address, browser type, pages visited, and referral source.
+**AENIX s.r.o.**  
+U Trojice 2661/1e, České Budějovice 3  
+370 04 České Budějovice, Czech Republic  
+IČO 21493871, DIČ CZ21493871  
+Email: [privacy@aenix.io](mailto:privacy@aenix.io)
 
-## How we use your information
+For contracts with US customers, **AENIX INC** (131 Continental Drive, Suite 301, Newark, Delaware 19713, USA) is the contracting party and controls the data it needs for that contract. Questions about either company go to the same address: [privacy@aenix.io](mailto:privacy@aenix.io).
 
-We use the information we collect to:
+We have not appointed a data protection officer.
 
-- respond to your enquiries and provide requested services;
-- send relevant product and company communications where you have consented or where we have a legitimate business interest;
-- improve our website, products, and marketing;
-- comply with legal obligations.
+## What we collect and why {#purposes}
 
-## Cookies, analytics, visitor identification, and sales/marketing tools {#cookies}
-
-We use cookies and similar tracking technologies on our website. Some of these technologies are strictly necessary for the website to operate. Others are used only where permitted by law or where you have given consent.
-
-Subject to your consent where required, we may use analytics, visitor identification, enrichment, and sales/marketing automation tools to measure website traffic, understand how visitors interact with our website, identify company-level interest in our products and services, enrich business contact or account information, support relevant B2B sales and marketing communications, and measure the effectiveness of campaigns and website content.
-
-These tools may process information such as IP address, device and browser information, pages visited, referral source, approximate location, cookie identifiers, and interaction data. In some cases, this information may be combined with business contact or company data provided by third-party enrichment providers.
-
-Where required by applicable law, including EU/UK privacy and ePrivacy rules, we will ask for your consent before placing or accessing non-essential cookies or similar tracking technologies. You can withdraw or change your consent at any time through our **[cookie preferences tool](#)** (accessible via "Your Privacy Choices" in the website footer).
-
-For visitors in certain U.S. states, including California, some uses of cookies, advertising, analytics, or enrichment technologies may be considered a "sale" or "sharing" of personal information under applicable privacy laws. Where required, you may opt out by using the **[Your Privacy Choices](#your-privacy-choices)** link in the footer of our website.
-
-### Cookies we use
-
-| Category | Purpose | Examples |
+| What | Purpose | Legal basis (GDPR) |
 | --- | --- | --- |
-| Essential | Required for the website to function | Session state, security |
-| Analytics | Measure traffic and improve content | Google Analytics, Ahrefs Analytics |
-| Visitor identification & sales | Identify company-level interest, support B2B outreach | Apollo.io |
+| What you enter in our forms — name, work email, company, role, phone (optional), message, and the page and campaign you came from | Reply to your enquiry, arrange a call, send a requested document, register you for a workshop or webinar | Steps at your request before a contract (Art. 6(1)(b)); our legitimate interest in answering business enquiries (Art. 6(1)(f)) |
+| Analytics data — pages visited, referrer, approximate location, device and browser type, cookie identifiers | Measure traffic and improve the site | Your consent (Art. 6(1)(a)) |
+| Campaign parameters in the link you followed (utm_* and gclid) | Know which campaign or event brought an enquiry | Our legitimate interest in measuring our own marketing (Art. 6(1)(f)) |
+| Your cookie choice | Remember whether you accepted or rejected analytics | Necessary to honour your choice (Art. 6(1)(c) and (f)) |
+| Server logs kept by our hosting provider — IP address, time, requested URL | Deliver the site and keep it secure | Our legitimate interest in running a secure website (Art. 6(1)(f)) |
+| Business contact data from other sources (for example Apollo.io, LinkedIn or event attendee lists) — name, company, role, work email | Contact companies that may need our platforms, in a business-to-business context | Our legitimate interest in B2B marketing (Art. 6(1)(f)); you can object at any time |
+| Certification programme data | Run the Cozystack certification exam | See [Certification programme](#certification) below |
 
-## Third-party services
+We do not sell personal data, and we do not use it for automated decisions that have legal or similarly significant effects on you.
 
-Our website may reference or link to third-party services. This policy does not cover the data practices of those third parties. We encourage you to review their privacy policies.
+## Cookies and similar technologies {#cookies}
 
-## Data retention
+When you first visit, a banner asks whether you accept analytics. Analytics scripts load only after you accept. You can change your choice at any time:
 
-We retain personal data only as long as necessary for the purposes described above or as required by law.
+<a href="#" data-aenix-consent-open class="btn btn-secondary">Open cookie settings</a>
 
-## Your rights
+The same control is available as **Cookie settings** in the footer of every page.
 
-Depending on your location, you may have rights to access, correct, delete, or restrict processing of your personal data, or to object to certain uses. To exercise any of these rights, please contact us at **privacy@aenix.io**.
+| Name | Type | Purpose | Lifetime |
+| --- | --- | --- | --- |
+| `aenix-consent-v1` | Browser storage (first party) | Remembers your cookie choice | Until you clear it |
+| `aenix_utm_first`, `aenix_utm_last` | Cookie (first party) | Store the campaign parameters of the link you arrived from, so a later form submission can be attributed | 90 days |
+| Google Analytics (`_ga`, `_ga_*`) | Cookie (first party, set by Google's script) | Traffic measurement — only after consent | Up to 2 years |
+| Ahrefs Analytics | Script (no advertising cookies) | Traffic measurement — only after consent | — |
 
-For California residents and other U.S. state privacy law rights (including the right to opt out of sale/sharing of personal information), please use the **[Your Privacy Choices](#your-privacy-choices)** link in the footer or contact us at **privacy@aenix.io**.
+## Who processes data for us {#processors}
 
-## Your Privacy Choices {#your-privacy-choices}
+We use the following service providers. Each processes data on our behalf under a data processing agreement or the provider's standard terms for business customers.
 
-You can manage your cookie and tracking preferences at any time. Click below to open our cookie preferences panel where you can:
+| Provider | What it does on this site | Data involved | Where |
+| --- | --- | --- | --- |
+| Google Ireland Ltd. / Google LLC — **Google Analytics 4** | Traffic measurement, only after consent | Analytics data, cookie identifiers; IP addresses are not stored | EU and USA |
+| **Ahrefs** Pte. Ltd. — Ahrefs Analytics | Traffic measurement, only after consent | Pages visited, referrer, device and browser type | Singapore and other countries |
+| **Pipedrive** OÜ — web forms and CRM | Hosts our contact, demo, partner, course, workshop and download forms, and stores the enquiries | Form contents, campaign parameters | EU, with sub-processors in other countries |
+| Google — **reCAPTCHA** | Protects the Pipedrive forms against spam | IP address, browser and interaction data | USA |
+| GitHub, Inc. — **GitHub Pages** | Hosts the website | Server logs (IP address, time, requested URL) | USA |
+| Google — **YouTube** embeds | Shows talk recordings on some pages; YouTube loads when the page with the video is opened | IP address, device and browser data; YouTube's own cookies when you play a video | USA |
+| zcal | Calendar booking, if you choose to book a call or a tour meeting through a zcal link | Name, email, chosen time, message | USA |
 
-- reject non-essential cookies;
-- withdraw previously given consent;
-- opt out of the sale or sharing of personal information where applicable.
+## International transfers {#transfers}
 
-<a href="#" data-cookie-preferences class="btn btn-secondary">Open cookie preferences</a>
+Some of the providers above are based in, or use sub-processors in, countries outside the European Economic Area, mainly the USA. Where a provider is certified under the EU–US Data Privacy Framework, transfers to it rely on the European Commission's adequacy decision; otherwise they rely on the European Commission's Standard Contractual Clauses. You can ask us for a copy of the relevant safeguards at [privacy@aenix.io](mailto:privacy@aenix.io).
 
-## Changes to this policy
+## How long we keep data {#retention}
 
-We may update this Privacy Policy from time to time. When we do, we will update the effective date above. We encourage you to review this page periodically.
+- **Form submissions and email correspondence** that do not lead to a contract: up to 24 months after our last contact with you, then deleted. If you ask us to delete them earlier, we do.
+- **Data relating to a contract**: for the duration of the contract and afterwards for as long as Czech accounting and tax law requires (generally up to 10 years for accounting records).
+- **Analytics data**: Google Analytics keeps event data for up to 14 months.
+- **Campaign cookies**: 90 days. **Your cookie choice**: until you clear your browser storage.
+- **Business contact data from other sources**: until you object, or when it is no longer relevant to our B2B marketing.
 
-## Contact
+## Your rights {#your-rights}
 
-If you have questions about this Privacy Policy or how we handle your personal data, please contact us at **privacy@aenix.io**.
+Under the GDPR (Articles 15–22) you have the right to:
 
-## Certification programme
+- **access** the personal data we hold about you and get a copy (Art. 15);
+- **rectification** of inaccurate data (Art. 16);
+- **erasure** (Art. 17);
+- **restriction** of processing (Art. 18);
+- **data portability** for data you gave us, where processing is based on consent or a contract (Art. 20);
+- **object** to processing based on our legitimate interests, including direct marketing — for direct marketing we always stop (Art. 21);
+- not be subject to a decision based solely on automated processing that significantly affects you (Art. 22) — we make no such decisions.
+
+Where processing is based on consent, you can withdraw it at any time with the cookie settings above, without affecting what happened before.
+
+To exercise any right, write to [privacy@aenix.io](mailto:privacy@aenix.io). We answer within one month, as the GDPR requires. You also have the right to complain to a supervisory authority — in the Czech Republic, the Úřad pro ochranu osobních údajů ([uoou.gov.cz](https://uoou.gov.cz/)), or the authority in the EU country where you live or work.
+
+**Visitors in US states with privacy laws, including California:** we do not sell or share personal information for cross-context behavioural advertising. You can ask us what we hold, ask us to correct or delete it, and opt out of analytics with the cookie settings above, by writing to [privacy@aenix.io](mailto:privacy@aenix.io).
+
+## Changes to this policy {#changes}
+
+When we change this policy, we update the effective date at the top of the page.
+
+## Certification programme {#certification}
 
 This section covers the Cozystack certification programme at
 [aenix.io/certification](/certification/): the CCF exam, certificates and the
 workshop labs badge.
 
-**Who processes the data.** AENIX s.r.o., Sladkovského 546/8273, 273 43 Buštěhrad,
-Czech Republic, CIN 21493871. Write to info@aenix.io with any question about this
-section.
+**Who processes the data.** AENIX s.r.o., U Trojice 2661/1e, České Budějovice 3,
+370 04 České Budějovice, Czech Republic, IČO 21493871. Write to
+[privacy@aenix.io](mailto:privacy@aenix.io) with any question about this section.
 
 **What we collect.** Your name in Latin script, e-mail address and company, given when
 we issue your exam access. Your exam attempts: which questions you were shown, what you

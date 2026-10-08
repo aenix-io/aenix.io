@@ -45,7 +45,7 @@ faq:
   - q: "Does a talk or meeting cost anything?"
     a: "Talks for universities, labs, student clubs and community groups are free, and so are coffee meetings and podcast recordings. For an in-house workshop at a company, write first and we will agree the format, length and terms."
   - q: "What is the Other People's Computers podcast?"
-    a: "An English-language podcast about the people who run the infrastructure everyone else rents: hosting providers, GPU clouds, platform teams and open-source maintainers. It launches soon, and episodes are being recorded on this tour. Timur can interview you as host, or join your podcast as a guest."
+    a: "An English-language podcast about the people who run the infrastructure everyone else rents: hosting providers, GPU clouds, platform teams and open-source maintainers. Episodes are being recorded on this tour; the release date will be announced on this page. Timur can interview you as host, or join your podcast as a guest."
   - q: "What if my city is not on the list?"
     a: "Write anyway. A short trip from one of the listed cities is often possible, especially on weekends and around conferences, and remote talks or recordings work from anywhere."
 final_cta:
@@ -66,7 +66,7 @@ final_cta:
 <section class="ws-section" id="schedule" aria-labelledby="tour-schedule-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="tour-schedule-h">Where I'll be</h2>
-<p class="ws-lead">The fixed points so far are conferences and our free hands-on workshops. University lectures, community meetups and podcast recordings will appear here as they are confirmed — and everything not listed is open for meetings.</p>
+<p class="ws-lead">The fixed points so far are conferences and our free hands-on workshops; stops marked "planned" have a date but no venue yet. University lectures, community meetups and podcast recordings will appear here as they are confirmed — and everything not listed is open for meetings.</p>
 {{< tour-schedule >}}
 </div>
 </section>
@@ -123,7 +123,7 @@ final_cta:
 <div class="ws-wrap">
 <div class="tour-podcast">
 <div>
-<span class="tour-podcast__badge">Launching soon</span>
+<span class="tour-podcast__badge">Recording now</span>
 <h2 class="ws-h2" id="tour-podcast-h">Other People's Computers — a podcast</h2>
 <p>"The cloud is just other people's computers." Our new English-language podcast is about the people who run those computers: hosting providers, GPU clouds, platform teams and open-source maintainers — how they build, what breaks, and what the business really looks like. Episodes are being recorded on this tour.</p>
 </div>
