@@ -108,7 +108,7 @@ Cozystack deckt jeden Punkt ab:
 - **Self-Service für Lehrende** — Lehrende legen Studierendenumgebungen ohne IT-Ticket an und löschen sie wieder
 - **Status als CNCF-Projekt** — Studierende lernen das CNCF-Ökosystem kennen, was nach dem Abschluss wertvoll ist
 
-Erwähnenswert ist auch das Projekt CNOE (CNCF Cloud Native Operational Excellence) — es liefert Referenzmuster für Cloud-native Umgebungen, die sich für die akademische Lehre eignen.
+Erwähnenswert ist auch die Brancheninitiative CNOE (Cloud Native Operational Excellence) — es liefert Referenzmuster für Cloud-native Umgebungen, die sich für die akademische Lehre eignen.
 
 ## Architekturmuster, die sich bewährt haben
 
