@@ -11,7 +11,7 @@ companion_landing: "/services/public-cloud-builder/"
 ---
 
 
-Regional and specialty cloud is having a moment in 2026. Hyperscaler economics, sovereignty pressure, and post-Broadcom market dynamics have all opened space for non-hyperscaler cloud products that didn't make sense to launch 5 years ago. Regional telco sovereign cloud product launches (Central Asia, MENA, EU member states), QazCloud + Clever Cloud's sovereign AI ecosystem, and various EU-member-state-specific sovereign cloud products are visible examples. Many more are in stealth or early stages.
+Regional and specialty cloud is having a moment in 2026. Hyperscaler economics, sovereignty pressure, and post-Broadcom market dynamics have all opened space for non-hyperscaler cloud products that didn't make sense to launch 5 years ago. Regional telco sovereign cloud product launches (Central Asia, MENA, EU member states) and various EU-member-state-specific sovereign cloud products are visible examples. Many more are in stealth or early stages.
 
 ## Why now
 
