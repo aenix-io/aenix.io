@@ -110,4 +110,4 @@ Before the project it ran on a fleet of about 13 Proxmox hypervisor hosts — ro
 
 *This case study is published in anonymized form; a customer reference under NDA is available on request. The provider is described by profile, not by name. For a reference call on an active opportunity, [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*

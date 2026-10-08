@@ -21,7 +21,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 — keine Pro-Seat-Plattformkosten."
   - label: "Status"
-    value: "auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026)."
+    value: "auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung)."
   - label: "Häufiger Fehler"
     value: "ein Portal (Backstage) ohne echtes mandantenfähiges Backend kaufen — der Self-Service bleibt an Infra-Tickets hängen."
 quick_facts_source: "[CNCF Platforms White Paper](https://www.cncf.io/reports/), [Cozystack-Doku](https://cozystack.io)"
@@ -99,7 +99,7 @@ Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren heutigen Bereitstellungsweg an
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-platform-engineering/ ; hreflang de self, en → /for/head-of-platform-engineering/.

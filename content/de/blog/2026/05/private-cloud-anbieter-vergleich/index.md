@@ -22,7 +22,7 @@ quiz:
         - { text: "Hetzner", correct: true }
         - { text: "AWS Frankfurt", correct: false }
         - { text: "DigitalOcean", correct: false }
-      explanation: "Genannte regionale souveräne Anbieter: Hetzner in Deutschland, OVHcloud in Frankreich mit starker EU-Positionierung und QazCloud in Kasachstan. AWS Sovereign Cloud, Azure Sovereign und GCP sind demgegenüber die souveränen Angebote der Hyperscaler."
+      explanation: "Genannte regionale souveräne Anbieter: Hetzner in Deutschland, OVHcloud in Frankreich mit starker EU-Positionierung. AWS Sovereign Cloud, Azure Sovereign und GCP sind demgegenüber die souveränen Angebote der Hyperscaler."
     - q: "Welche Plattform empfiehlt der Vergleich für Service-Provider mit Mandanten- und GPU-Bedarf?"
       options:
         - { text: "VMware VCF", correct: false }
@@ -41,6 +41,7 @@ quiz:
         - { text: "Ausschließlich Subscription", correct: true }
         - { text: "Weiterhin auch als Dauerlizenz erhältlich", correct: false }
       explanation: "VMware Cloud Foundation gibt es nach Broadcom nur noch im Abonnement. Bei Verlängerungen wurden Preissteigerungen um den Faktor 2 bis 5 beobachtet. Als Grenzen nennt der Artikel den Subscription-Druck, den Vendor-Lock-in und Souveränitätsbedenken gegenüber einem US-Anbieter."
+hreflang_en: /blog/2026/05/private-cloud-providers-comparison/
 ---
 
 **Begleitung zur [Private-Cloud-Plattform-Page](/de/produkte/private-cloud). Überblick über Private-Cloud-Anbieter und -Plattformen im Jahr 2026 — was verfügbar ist, wer was bietet, welche architektonischen Trade-offs.**
@@ -80,7 +81,6 @@ Red Hat kommerzielle Subscription. **Wann sinnvoll:** bestehende Red Hat / OpenS
 - **Hetzner** (Deutschland) — Bare Metal + Cloud, beliebt in DACH
 - **OVHcloud** (Frankreich) — starke EU-souveräne Positionierung
 - **Ænix Public Cloud Platform** — im Einsatz bei regionalen Hosting-Anbietern; Engagements mit europäischen Tier-1-Banken sind bis Mitte 2027 NDA-geschützt. Regionales souveränes Cloud-Produkt.
-- **QazCloud** (Kasachstan) — souveränes KI-Ökosystem
 
 **Trade-off:** vom Anbieter verwalteter Komfort gegen direkte Kontrolle über die Hardware.
 

@@ -41,6 +41,7 @@ quiz:
         - { text: "Cheaper per-CPU licensing terms", correct: false }
         - { text: "Vendor-roadmap risk dominates decade horizons", correct: true }
       explanation: "The long horizon argument: Apache 2.0 license + CNCF Project community governance fits decade-plus operational planning. Grid hardware refresh cycles are decade-scale, so vendor roadmap risk — the dominant failure mode over 10–20 years — is minimised because the community can outlive any single vendor."
+hreflang_de: /de/blog/2026/05/smart-grid-plattform-architektur-it-ot/
 ---
 
 

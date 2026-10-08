@@ -41,6 +41,7 @@ quiz:
         - { text: "Economics rarely justify the reverse move", correct: true }
         - { text: "The Proxmox community forbids it", correct: false }
       explanation: "Proxmox → VMware migration is rare in 2026 because the economics rarely justify the reverse move post-Broadcom — VMware's subscription pricing makes the move uneconomical for most organizations."
+hreflang_de: /de/blog/2026/05/proxmox-vs-vmware-vs-cozystack/
 ---
 
 

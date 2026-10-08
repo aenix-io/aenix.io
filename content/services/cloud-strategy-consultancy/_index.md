@@ -19,7 +19,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "How is this different from Big-4 cloud strategy consulting?"
     a: "The work is done by the same engineers who build and run production platforms, not by analysts. Aenix holds no hyperscaler partnership, so recommendations carry no commercial bias, and favours open-source destinations when the economics support it. The deliverable is an actionable written report, not a 200-page transformation plan."

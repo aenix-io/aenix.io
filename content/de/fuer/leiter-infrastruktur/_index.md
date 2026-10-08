@@ -63,7 +63,7 @@ Die Hypervisor-Schicht ablösen, ohne das Geschäft über Nacht neu zu plattform
 - **Was es ist:** offene, Kubernetes-native Plattform (VMs über KubeVirt + Container + Storage + Netzwerk) als vSphere-/Nutanix-Ersatz.
 - **Für wen:** Leiter / VPs / Direktoren Infrastruktur mit VMware- oder Nutanix-Bestand.
 - **Lizenz:** Apache 2.0 — keine Pro-Core-/Pro-Socket-Lizenz.
-- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox seit 26.09.2024; Incubating erwartet Spätsommer 2026).
+- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox seit 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung).
 - **Typischer Zeitrahmen:** 9–18 Monate für die volle Umgebung; erste Workloads in Wochen.
 - **Häufiger Fehler:** den Ausstieg nur als VM-Thema sehen und übersehen, dass Backup, Observability und CI/CD am alten Stack hängen.
 
@@ -109,7 +109,7 @@ Kostenlos, ohne Vorbereitung. Wir prüfen die Passung, sehen uns Ihre Umgebung a
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-infrastruktur/ ; hreflang de self, en → /for/head-of-infrastructure/, x-default → EN.

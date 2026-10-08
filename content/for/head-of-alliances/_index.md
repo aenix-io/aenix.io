@@ -65,7 +65,7 @@ Either way the per-core license line your clients pay VMware turns into margin a
 - **Who it's for:** Heads of Alliances / Partnerships / Channel at SIs, MSPs, distributors.
 - **Margin:** up to **40%** on license + support; deal protection on registered opportunities.
 - **License:** Apache 2.0 core (Cozystack) — no per-CPU cost in the stack.
-- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Active partners include:** GoHost.kz, Hidora, QOSI, TECH EVOLVERS INC.
 
 [Source: [Ænix Partner Program](/partners/)]
@@ -110,7 +110,7 @@ Free, no prep. We map your client base to the editions, walk through margin and 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:

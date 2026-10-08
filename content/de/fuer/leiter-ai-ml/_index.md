@@ -23,7 +23,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache-2.0-Kern (Cozystack) — keine Pro-GPU-Plattformkosten."
   - label: "Status"
-    value: "auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026)."
+    value: "auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung)."
   - label: "Häufiger Fehler"
     value: "auf einem Hyperscaler-Endpoint prototypen und dann feststellen, dass die Datenklasse dort produktiv nicht hin darf."
 quick_facts_source: "[CNCF Landscape](https://landscape.cncf.io), [Cozystack-Doku](https://cozystack.io)"
@@ -101,7 +101,7 @@ Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren GPU-Footprint und Ihre Modell-
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-ai-ml/ ; hreflang de self, en → /for/head-of-ai-ml/.

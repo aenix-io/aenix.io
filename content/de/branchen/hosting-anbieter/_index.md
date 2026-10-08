@@ -24,7 +24,7 @@ quick_facts:
   - label: "Engagement"
     value: "Ænix Public Cloud Platform ab 1.250 USD/Monat Support-Tier; Partner-Programm mit bis zu 40% Marge"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
 faq:
   - q: "Wie können Hosting-Anbieter preislich mit Hyperscalern konkurrieren?"
     a: "Durch eine Open-Source-Plattform ohne per-CPU-Lizenzierung (Apache 2.0) entfallen die Lizenzkosten, die proprietäre Stacks aufschlagen. Cozystack bündelt VMs, Container und einen Service-Katalog über eine Kubernetes-API, sodass Hoster wettbewerbsfähige Cloud-Dienste anbieten und zugleich ihre direkten Kundenbeziehungen behalten."

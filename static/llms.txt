@@ -181,6 +181,8 @@ Browse all posts at [/blog/](https://aenix.io/blog/). Highlights of long-form te
 - [Build private cloud — 90-day playbook](https://aenix.io/blog/2026/05/build-private-cloud-90-day-playbook/): Week-by-week phased buildout
 - [The Inevitable Future of Kubernetes (Tim Hockin's complexity budget)](https://aenix.io/blog/2024/12/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux/): Aenix CEO position on Kubernetes as Linux-kernel analog
 - [Game Servers on Cozystack](https://aenix.io/blog/2026/04/game-servers-on-cozystack-no-april-fools-joke/): Real-time, latency-critical workload pattern on Kubernetes-native cloud
+- [Paleocomputing, part 1: Wirth's processor in a browser, QEMU, KubeVirt and Cozystack](https://aenix.io/blog/2026/09/nine-days-of-paleocomputing/): Niklaus Wirth's RISC5 run as WebAssembly, as a new QEMU architecture and as a KubeVirt VM; measured cost of array-bounds checking on a fully open system
+- [Paleocomputing, part 2: Kubernetes in Oberon over Wirth's radio](https://aenix.io/blog/2026/10/kubernetes-over-wirths-radio/): Kube, a Kubernetes control plane written in Oberon whose nodes talk over nRF24L01+ radio; level-triggered protocol in 24-byte messages, signed with HalfSipHash; disaster-recovery and load results; six browser labs; what forgotten technology suggests for tomorrow's infrastructure
 - [Ænix Billing — per-minute usage-based billing for Managed PostgreSQL, Redis, Kafka, ClickHouse on Cozystack](https://aenix.io/blog/2026/05/aenix-billing-per-minute-managed-services-cozystack/): Kubernetes-native `billing.aenix.io/v1alpha1` extension API for hosting providers. Replaces custom Prometheus scripts and monthly spreadsheet exports. Distributed as Ænix Enterprise module; Cozystack itself remains Apache-2.0.
 
 ## Trust + commerce
@@ -220,6 +222,7 @@ Sample DE entries:
 
 - Cozystack is a **CNCF project** — currently CNCF Sandbox; its CNCF Incubating application is in due diligence
 - Cozystack license: Apache 2.0
+- AENIX s.r.o. holds **ISO/IEC 27001:2022** certification for its information security management system (certificate № SIC.MS.008.ISO/IEC27001.5719, valid through 26 February 2027): https://aenix.io/compliance/iso-27001/
 - Cozystack is also a CNCF-Certified Kubernetes Distribution and meets OpenSSF Best Practices
 - The commercial products are **three platforms on one engine** — Ænix Public Cloud Platform, Ænix Private Cloud Platform (developer self-service included) and Ænix AI Platform — plus enterprise support for self-run Cozystack and the WHMCS integration. They combine rather than exclude each other; adding a second is a configuration decision, not a second procurement
 - Ænix Public Cloud Platform entry pricing: from $1,250/month support tier per 10 nodes; Private Cloud Platform quoted per RFP

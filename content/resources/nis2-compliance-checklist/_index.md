@@ -24,7 +24,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "Who must comply with NIS2?"
     a: "NIS2 applies to essential entities (energy, transport, banking, healthcare, public administration, digital infrastructure, MSPs) and important entities (postal, manufacturers of critical products, digital service providers, R&D), plus ICT third-party providers serving them. The checklist covers all three groups."

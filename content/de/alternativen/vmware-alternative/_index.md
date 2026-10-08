@@ -22,7 +22,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
   - label: "Technologie-Stack"
     value: "KubeVirt für VMs und Container, Cilium (eBPF) und Kube-OVN im Netzwerk, LINSTOR/DRBD für Block- und SeaweedFS für Object-Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Zielgruppe"
@@ -282,7 +282,7 @@ Migrationen von OpenStack, CloudStack und Proxmox folgen demselben Ablauf, mit a
 - **Verschachtelte Mandanten** — für Reseller und die Trennung von Geschäftsbereichen
 - **Air-Gap-Installation** — unterstützt, dokumentiert, ohne Zusatzlizenz
 - **Keine Phone-Home-Telemetrie** — Telemetrie ist Opt-in und standardmäßig abgeschaltet
-- **Belege für DORA und NIS2** — Betriebsstabilität und Transparenz über IKT-Drittparteien. Ænix hält weder ISO 27001 noch SOC 2; die Plattform ist an diesen Rahmenwerken ausgerichtet und liefert die Nachweise, die Ihre eigene Zertifizierung braucht
+- **Belege für DORA und NIS2** — Betriebsstabilität und Transparenz über IKT-Drittparteien. Die AENIX s.r.o. ist für ihr eigenes ISMS nach [ISO/IEC 27001:2022 zertifiziert](/de/compliance/iso-27001/), einen SOC-2-Bericht gibt es nicht; die Plattform ist an diesen Rahmenwerken ausgerichtet und liefert die Nachweise, die Ihre eigene Zertifizierung braucht
 - **Supportmodell ohne kubectl-Zugriff** — Ænix berät und prüft GitOps-Pull-Requests. Zugriff auf Ihre Produktionsumgebung brauchen wir dafür nicht
 
 <!-- /BLOCK 7 -->

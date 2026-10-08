@@ -1,6 +1,6 @@
 ---
 title: "Developer Self-Service — the cost of developer drag, and what an internal developer platform actually pays back"
-description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP."
+description: "Time-to-environment cost, golden-path coverage, platform-team sizing, and the economic case for an IDP that pays back inside 12 months at 200+ engineers."
 date: "2026-05-13"
 cover_image: "/img/blog/covers/idp-edition-developer-velocity-economics.jpg"
 author: "Aenix Team"
@@ -119,7 +119,7 @@ fail."
 
 ## What Developer Self-Service ships
 
-the developer self-service layer of Ænix Private Cloud Platform is the productisation of these characteristics
+The developer self-service layer of Ænix Private Cloud Platform is the productisation of these characteristics
 on top of the Cozystack foundation. Specifically:
 
 ### A multi-tenant Cozystack platform with Tenant CRD

@@ -41,6 +41,7 @@ quiz:
         - { text: "AI workload economics and GPU availability", correct: false }
         - { text: "Sovereignty — DORA, sectoral rules, data residency", correct: true }
       explanation: "Pattern 2 puts regulated workloads (banking, healthcare, public-sector) on private cloud and auxiliary workloads (analytics, internal tooling, dev/test) in public cloud. The driver is sovereignty — DORA, sectoral rules, data-residency mandates — not pure cost."
+hreflang_de: /de/blog/2026/05/hybrid-cloud-architektur-muster-2026/
 ---
 
 

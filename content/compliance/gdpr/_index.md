@@ -30,7 +30,7 @@ quick_facts:
   - label: "Largest gap"
     value: "Integrity monitoring. No IDS, file-integrity monitoring or change detection ships with the platform."
   - label: "Certification"
-    value: "None. There is no GDPR certification for a platform, and Aenix holds no ISO 27001 or SOC 2 certificate."
+    value: "None for GDPR: there is no GDPR certification for a platform. AENIX s.r.o. holds ISO/IEC 27001:2022 for its own information security management system; there is no SOC 2 report."
 faq:
   - q: "Is the Aenix platform GDPR compliant?"
     a: "The question does not apply to infrastructure. An organisation is compliant; a platform supplies measures. The Aenix platforms supply encryption, access control, tenant separation, audit logging, backup and restore, and full control over where data physically resides. The lawful basis, the records of processing, the impact assessments and the breach notifications remain with whoever determines the purposes and means of the processing."

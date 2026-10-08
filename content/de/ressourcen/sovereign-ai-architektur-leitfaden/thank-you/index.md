@@ -24,4 +24,4 @@ hide_closing_cta: true
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating für Spätsommer 2026 erwartet), Apache 2.0.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0.*

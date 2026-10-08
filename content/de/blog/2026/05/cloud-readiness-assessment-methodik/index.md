@@ -41,6 +41,7 @@ quiz:
         - { text: "Ein gerade unterschriebenes mehrjähriges Hyperscaler-Commitment", correct: false }
         - { text: "Ein konkreter aufsichtsrechtlicher Termin, etwa DORA oder NIS2", correct: true }
       explanation: "Gute Passform: ein konkreter aufsichtsrechtlicher Termin (DORA Artikel 28, NIS2-Umsetzung, ein sektorales Audit), eine anstehende Kostenentscheidung auf Vorstandsebene, eine neu aufgebaute Platform-Engineering-Funktion, die eine externe Ausgangsbasis braucht, oder ein KI- beziehungsweise Datenresidenz-Projekt, das im Architektur-Review feststeckt."
+hreflang_en: /blog/2026/05/cloud-readiness-assessment-14-day-methodology/
 ---
 
 Begleitung zur **[Platform-Readiness-Assessment-Page](/de/dienstleistungen/platform-readiness-assessment)**.

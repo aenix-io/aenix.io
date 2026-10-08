@@ -17,7 +17,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
   - label: "Zielgruppe"
     value: "Hosting-Provider, ISPs und Unternehmen, die VMware ablösen oder eine souveräne private Cloud betreiben wollen"
   - label: "Kernfunktionen"
@@ -44,7 +44,7 @@ faq:
 
 <!-- BLOCK 1: HERO -->
 
-**Cozystack ist die von Ænix erstellte und gepflegte Open-Source-Cloud-Plattform und ein CNCF-Projekt. Sie betreibt virtuelle Maschinen, Container, verwaltete Datenbanken, S3-Object-Storage und GPU-Workloads auf Bare Metal, das Ihnen gehört — unter einer Kubernetes-nativen Steuerungsebene mit Multi-Mandanten-Isolation. Apache-2.0-Lizenz, derzeit CNCF Sandbox (CNCF Incubating erwartet Spätsommer 2026), CNCF-zertifizierte Kubernetes-Distribution, OpenSSF-Best-Practices-Badge.**
+**Cozystack ist die von Ænix erstellte und gepflegte Open-Source-Cloud-Plattform und ein CNCF-Projekt. Sie betreibt virtuelle Maschinen, Container, verwaltete Datenbanken, S3-Object-Storage und GPU-Workloads auf Bare Metal, das Ihnen gehört — unter einer Kubernetes-nativen Steuerungsebene mit Multi-Mandanten-Isolation. Apache-2.0-Lizenz, derzeit CNCF Sandbox (CNCF-Incubating-Antrag in der Due-Diligence-Prüfung), CNCF-zertifizierte Kubernetes-Distribution, OpenSSF-Best-Practices-Badge.**
 
 Diese Seite beschreibt Cozystack als Ænix' Open-Source-Produkt. Das Open-Source-Projekt selbst liegt unter **[cozystack.io](https://cozystack.io)** mit Dokumentation, Installationsanleitungen und der Community. Für die turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack siehe **[Ænix Platform](/de/produkte/)** mit ihren drei Plattformen.
 
@@ -126,7 +126,7 @@ Cozystack Dashboard für Self-Service. Produktionsreife WHMCS-Billing-Integratio
 
 ## Cozystack, das Projekt — Ænix, das Unternehmen — Ænix Platform, das Produkt
 
-- **Cozystack** — Open-Source-Plattform. CNCF-Projekt (derzeit Sandbox; CNCF Incubating erwartet Spätsommer 2026). Apache 2.0. Community-verwaltet. Jeder kann deployen, beitragen, forken.
+- **Cozystack** — Open-Source-Plattform. CNCF-Projekt (derzeit Sandbox; CNCF-Incubating-Antrag in der Due-Diligence-Prüfung). Apache 2.0. Community-verwaltet. Jeder kann deployen, beitragen, forken.
 - **Ænix** — das Open-Core-Unternehmen, das Cozystack erstellt und pflegt. Der größte einzelne Beitragende des Projekts. Hersteller von Ænix Platform.
 - **Ænix Platform** — Ænix' turnkey kommerzielle Cloud-in-a-Box auf Basis von Cozystack. Drei Plattformen (Public Cloud / Private Cloud / AI), abgestimmt auf das Käuferprofil. Ergänzt Hosting-Panel, Billing, Portale, Payments, Support, produktisierten Installer, Enterprise-SLA. **[Ænix Platform erkunden →](/de/produkte/)**.
 - **cozystack.io** — offizielle Projektseite. Dokumentation, Installation, Releases, Community. Hersteller-neutral, CNCF-ausgerichtet.
@@ -241,4 +241,4 @@ Einstiegs-Tier — **Enterprise-Support für Cozystack** — für Produkt-Teams,
 
 ---
 
-*Cozystack ist ein CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix ist das Open-Core-Unternehmen, das es erstellt und pflegt, und der Hersteller von Ænix Platform — der turnkey kommerziellen Cloud-in-a-Box.*
+*Cozystack ist ein CNCF-Projekt (derzeit CNCF Sandbox; CNCF-Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix ist das Open-Core-Unternehmen, das es erstellt und pflegt, und der Hersteller von Ænix Platform — der turnkey kommerziellen Cloud-in-a-Box.*

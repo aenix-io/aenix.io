@@ -62,7 +62,7 @@ Eine Cloud-Linie ins Portfolio holen, die Sie kontrollieren: gebrandet, mandante
 - **Für wen:** Cloud-Leiter / Cloud-Practice-Leads bei SIs, MSPs und Resellern.
 - **Marge:** bis **40%** über das Partnerprogramm; die VMware-Lizenz wird zu Ihrer Marge.
 - **Lizenz:** Apache 2.0 — keine Pro-Core-Kosten in den Unit Economics.
-- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026).
+- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung).
 
 [Quelle: [Cozystack-Doku](https://cozystack.io); [Partnerprogramm](/de/partner/)]
 
@@ -106,7 +106,7 @@ Kostenlos, ohne Vorbereitung. Wir sehen uns Ihren Kundenstamm an und sagen, ob W
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-cloud/ ; hreflang de self, en → /for/head-of-cloud/.

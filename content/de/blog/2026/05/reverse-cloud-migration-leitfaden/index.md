@@ -41,6 +41,7 @@ quiz:
         - { text: "Den Aufwand der Datenverlagerung als erledigt abzuhaken", correct: true }
         - { text: "Eine bestimmte Backup-Strategie während der Migration", correct: false }
       explanation: "Fallstrick: die Datenschwerkraft unterschätzen. 50 Terabyte Produktionsdaten zu verlagern ist keine Wochenendaufgabe. Übertragung über das Netz, Cutover-Fenster, Phasen mit Doppelschreiben, Rückfallpfade und Backups während der Migration brauchen eigenes Engineering. Teams, die das nicht planen, landen mitten in einem mehrwöchigen Notfall."
+hreflang_en: /blog/2026/05/reverse-cloud-migration-playbook/
 ---
 
 Begleitung zur **[Cloud-Repatriation-Page](/de/loesungen/cloud-repatriation)**.

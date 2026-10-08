@@ -41,6 +41,7 @@ quiz:
         - { text: "Tracing is trivial with modern TMS tooling", correct: false }
         - { text: "Chains run 5+ sub-contracting levels deep", correct: true }
       explanation: "Logistics chains often have 5+ levels of sub-contracting (carrier → forwarder → broker → handler → terminal operator). NIS2 (and DORA) expect supplier transparency to second hop — for logistics, even that is unusually hard, and beyond second hop is often impossible without dedicated traceability tooling."
+hreflang_de: /de/blog/2026/05/transport-logistik-cloud-architektur-nis2/
 ---
 
 

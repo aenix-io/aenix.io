@@ -342,5 +342,3 @@ Poor fit:
   alternative-focused commercial landing
 - **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
   common target product for hosting-provider OpenStack migrations
-- **[Public Cloud Platform product page](/products/public-cloud-platform/)** —
-  common target product for tier-1 telco OpenStack migrations

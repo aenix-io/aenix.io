@@ -23,7 +23,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
 faq:
   - q: "Was ist Cloud Repatriation?"
     a: "Cloud Repatriation bezeichnet die Rückverlagerung von Workloads aus der Public Cloud (Hyperscaler) zurück in eine Private Cloud, eigene Rechenzentren oder Colocation. Treiber sind meist Kosten, Datensouveränität und Kontrolle. Das TCO-Worksheet hilft, diese Entscheidung anhand realer Zahlen statt Bauchgefühl zu treffen."

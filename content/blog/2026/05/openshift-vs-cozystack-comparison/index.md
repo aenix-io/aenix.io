@@ -106,8 +106,8 @@ For organizations standardized on Red Hat procurement, OpenShift is administrati
 Both KubeVirt-based, so VM-level migration is straightforward (image-level compatibility). The architectural delta is in:
 
 - Multi-tenancy model (Project CRD vs Tenant CRD)
-- Networking (OpenShift SDN/OVN vs Cilium)
-- Storage (OpenShift Container Storage / Ceph vs LINSTOR / DRBD)
+- Networking (OVN-Kubernetes, which replaced the deprecated OpenShift SDN, vs Cilium)
+- Storage (OpenShift Data Foundation / Ceph vs LINSTOR / DRBD)
 - Operational tooling (OpenShift CLI/Console vs Cozystack Dashboard/standard kubectl)
 
 Realistic migration timeline: 3-9 months for mid-size deployment.

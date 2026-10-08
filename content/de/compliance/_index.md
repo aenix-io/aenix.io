@@ -24,7 +24,7 @@ quick_facts:
   - label: "Was geprüft wurde"
     value: "Cozystack v1.6 bzw. v1.6.1 auf Talos Linux — dieselbe Engine, die alle drei Ænix-Plattformen ausliefern."
   - label: "Zertifikate"
-    value: "Keine behauptet. Aenix hält weder ISO 27001 noch SOC 2, und keine Plattform kann eine PCI-DSS- oder DSGVO-Zertifizierung halten."
+    value: "Die AENIX s.r.o. ist für ihr Informationssicherheits-Managementsystem nach ISO/IEC 27001:2022 zertifiziert (Zertifikat Nr. SIC.MS.008.ISO/IEC27001.5719, gültig bis 26. Februar 2027). Einen SOC-2-Bericht gibt es nicht, und keine Plattform kann eine PCI-DSS- oder DSGVO-Zertifizierung halten."
   - label: "Konformität"
     value: "Tenant-Kubernetes-Cluster bestehen die CNCF-Konformitätssuite vollständig auf Kubernetes v1.31 bis v1.35."
   - label: "CIS-Benchmark"
@@ -35,7 +35,7 @@ faq:
   - q: "Sind das Benchmark-Ergebnisse für Cozystack oder für die Aenix-Plattformen?"
     a: "Für Cozystack — und genau das ist die ehrliche und zugleich brauchbare Antwort. Die Aenix Public Cloud Platform, die Private Cloud Platform und die AI Platform sind Distributionen von Cozystack, dem Apache-2.0-lizenzierten CNCF-Projekt, das Aenix entwickelt und pflegt. Es gibt keine separate, geschlossene Engine, die man testen könnte. Eine Kontrolle, die auf Cozystack besteht, besteht auch auf der darauf gebauten Plattform; eine Abweichung dort ist eine Abweichung hier. Wo ein Ergebnis von der Talos-Maschinenkonfiguration oder der Referenzarchitektur abhängt, die Aenix um die Engine herum liefert, sagt die jeweilige Seite das ausdrücklich."
   - q: "Ist die Aenix-Plattform zertifiziert — ISO 27001, SOC 2, PCI DSS?"
-    a: "Nein. Aenix hält weder ein ISO-27001- noch ein SOC-2-Zertifikat und behauptet das auch nicht. Eine PCI-DSS-Zertifizierung bezieht sich auf eine abgegrenzte Karteninhaberdaten-Umgebung und wird von einem Qualified Security Assessor testiert, nicht an ein Produkt vergeben. Der CIS-Benchmark vergibt überhaupt kein Urteil — er ist eine Liste von Kontrollen. Was die Plattformen leisten: Sie stellen die technischen Kontrollen bereit, auf die solche Programme aufbauen, weisen sie nach und unterstützen Ihre Zertifizierungsarbeit. Das ist eine engere Aussage — und es ist die, die wir treffen."
+    a: "Das Unternehmen ja, die Plattform nein. Die AENIX s.r.o. ist für ihr Informationssicherheits-Managementsystem nach ISO/IEC 27001:2022 zertifiziert — ein Zertifikat dafür, wie das Unternehmen arbeitet, nicht für ein Produkt. Einen SOC-2-Bericht gibt es nicht. Eine PCI-DSS-Zertifizierung bezieht sich auf eine abgegrenzte Karteninhaberdaten-Umgebung und wird von einem Qualified Security Assessor testiert, nicht an ein Produkt vergeben. Der CIS-Benchmark vergibt überhaupt kein Urteil — er ist eine Liste von Kontrollen. Was die Plattformen leisten: Sie stellen die technischen Kontrollen bereit, auf die solche Programme aufbauen, weisen sie nach und unterstützen Ihre Zertifizierungsarbeit. Das ist eine engere Aussage — und es ist die, die wir treffen."
   - q: "Können wir diese Ergebnisse auf unserem eigenen Cluster reproduzieren?"
     a: "Ja, und Sie sollten es vor einer Prüfung tun. Die CIS-Benchmark-Seite veröffentlicht das exakte kube-bench-Job-Manifest, die gepinnte Image-Version und die verwendete Benchmark-Revision. Die Konformitätsseite veröffentlicht den Sonobuoy-Aufruf. Die PCI-DSS- und DSGVO-Seiten enthalten kubectl-Kommandos, die Tenant-Isolierung und RBAC-Grenzen direkt nachweisen. Ihre Installation kann andere Zahlen liefern, insbesondere wenn die Talos-Maschinenkonfiguration abweicht."
   - q: "Wie verhält sich dieser Bereich zu den DORA- und NIS2-Lösungsseiten?"
@@ -75,6 +75,7 @@ Die Alternative — dieselben Zahlen als Ergebnisse eines proprietären Produkts
 
 ## Rahmenwerke
 
+- **[ISO/IEC 27001](/de/compliance/iso-27001/)** — das ISO/IEC-27001:2022-Zertifikat der AENIX s.r.o.: Nummer, Geltungsbereich, Gültigkeit und was ein Unternehmenszertifikat über die Plattformen aussagt und was nicht.
 - **[PCI DSS](/de/compliance/pci-dss/)** — alle zwölf Anforderungen von PCI DSS v4.0.1, Anforderung für Anforderung: was ab Werk aktiv ist, was eine Einstellung entfernt ist, was bei Ihnen bleibt — mit Kommandos zur Prüfung auf dem eigenen Cluster.
 - **[DSGVO](/de/compliance/dsgvo/)** — die technischen Maßnahmen nach Art. 32, wo personenbezogene Daten physisch liegen, und die Teile des Löschanspruchs, die Infrastruktur nicht klären kann.
 - **[CIS Kubernetes Benchmark](/de/compliance/cis-benchmark/)** — der vollständige kube-bench-Lauf: 54 bestanden, 24 fehlgeschlagen, 53 Warnungen, mit jedem Fehlschlag eingeordnet als echte Abweichung, anders erfüllte Kontrolle oder nicht anwendbare Prüfung.
@@ -92,7 +93,7 @@ Präzision ist hier mehr wert als Beruhigung, weil ein Prüfer jeden Satz nachfa
 
 | Aussage, die wir **nicht** treffen | Was stattdessen zutrifft |
 |---|---|
-| „Ænix ist ISO-27001-zertifiziert“ | Aenix hält kein ISO-27001-Zertifikat. Die Plattformen sind so gebaut, dass sie ein ISMS tragen — Audit-Logging, Zugriffskontrolle, Änderungskontrolle über deklarative Konfiguration — und Ænix unterstützt die Zertifizierungsarbeit von Kunden. Das ist eine andere Aussage. |
+| „Die Ænix-Plattform ist ISO-27001-zertifiziert“ | ISO/IEC 27001 zertifiziert ein Managementsystem, kein Produkt. Die AENIX s.r.o. hält das Zertifikat für ihr eigenes ISMS ([Details](/de/compliance/iso-27001/)); die Plattformen unterstützen Ihr ISMS mit Audit-Logging, Zugriffskontrolle und deklarativer Änderungskontrolle, Ihre Umgebung braucht aber eine eigene Zertifizierung. |
 | „Ænix ist SOC-2-testiert“ | Es gibt keinen SOC-2-Bericht. Wo ein Kunde einen für seinen eigenen, auf der Plattform betriebenen Dienst braucht, liefert die Plattform Kontroll-Nachweise; der Bericht bleibt seiner. |
 | „Die Plattform ist PCI-DSS-zertifiziert“ | Keine Plattform ist das. Ein Qualified Security Assessor zertifiziert eine abgegrenzte Karteninhaberdaten-Umgebung. Die Plattform liefert die technischen Kontrollen, auf die die Prüfung aufsetzt. |
 | „Die Plattform ist DSGVO-konform“ | Compliance liegt beim Verantwortlichen. Die Plattform liefert Maßnahmen nach Art. 32 und macht sie nachweisbar. |

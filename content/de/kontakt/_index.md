@@ -80,7 +80,7 @@ Sie an Solutions Engineering weiter.
 
 **E-Mail:** [info@aenix.io](mailto:info@aenix.io)
 
-{{< social-icons linkedin="https://www.linkedin.com/company/aenix/" telegram="https://t.me/cozystack" facebook="https://www.facebook.com/aenix.io" x="https://x.com/aenix_io" >}}
+{{< social-icons linkedin="https://www.linkedin.com/company/aenix-io/" telegram="https://t.me/cozystack" facebook="https://www.facebook.com/aenix.io" x="https://x.com/aenix_io" >}}
 
 ---
 

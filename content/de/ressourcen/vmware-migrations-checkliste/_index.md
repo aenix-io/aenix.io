@@ -28,7 +28,7 @@ quick_facts:
   - label: "Regulatorik"
     value: "Checkliste deckt DORA/NIS2-Alignment und Schlüsselverwahrung für Souveränitäts-Anforderungen ab"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
 faq:
   - q: "Was deckt die VMware-Migrations-Checkliste ab?"
     a: "Acht Bereiche über 25 Punkte: Inventar (Workload-Anzahl, OS-Mix, Kritikalität), Abhängigkeiten (vSAN, NSX, vCD, vRealize), Network- und Storage-Redesign, Multi-Tenancy-Modell, KI/GPU-Workloads, Souveränität und Compliance (DORA/NIS2), operative Bereitschaft sowie Kosten-Trajektorie mit TCO-Inputs und Commitment-Abläufe."

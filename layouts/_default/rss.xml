@@ -1,0 +1,51 @@
+{{- /* RSS for the blog. The front page's feed carries the English blog, a blog
+       section's feed (/blog/, /de/blog/) carries that section's posts; other
+       sections have no feed (outputs in hugo.yaml). Every item carries the full
+       text and the cover, so feed readers and AI crawlers get the article,
+       not a teaser. Stubs that only point to Medium are left out. */ -}}
+{{- $posts := slice -}}
+{{- if .IsHome -}}
+  {{- with site.GetPage "/blog" }}{{ $posts = .RegularPagesRecursive }}{{ end -}}
+{{- else -}}
+  {{- $posts = .RegularPagesRecursive -}}
+{{- end -}}
+{{- $posts = where $posts "Params.external_only" "!=" true -}}
+{{- $posts = first 50 $posts.ByDate.Reverse -}}
+{{- $feed := cond .IsHome (site.GetPage "/blog") . -}}
+{{- $de := eq $feed.Params.language "de" -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>{{ cond $de "Ænix Blog (Deutsch)" "Ænix Blog" }}</title>
+    <link>{{ $feed.Permalink }}</link>
+    <description>{{ $feed.Description }}</description>
+    <language>{{ cond $de "de" "en" }}</language>
+    {{- with $posts }}
+    <lastBuildDate>{{ (index . 0).Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>
+    {{- end }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
+    {{- range $posts }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <guid isPermaLink="true">{{ .Permalink }}</guid>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+      {{- with .Params.author }}
+      <dc:creator>{{ . }}</dc:creator>
+      {{- end }}
+      {{- range .Params.topics }}
+      <category>{{ . }}</category>
+      {{- end }}
+      <description>{{ .Description }}</description>
+      {{- $cover := "" -}}
+      {{- with .Params.cover_image }}{{ $cover = printf "<p><img src=\"%s\" alt=\"\"></p>" (. | absURL) }}{{ end }}
+      {{- /* links and images inside the text are site-relative; a feed reader
+             needs them absolute */ -}}
+      {{- $body := replaceRE `(src|href)="/` (printf `$1="%s` site.BaseURL) (string .Content) -}}
+      {{- $body = replace $body "]]>" "]]]]><![CDATA[>" -}}
+      {{- with .Params.cover_image }}{{ if in $body (. | absURL) }}{{ $cover = "" }}{{ end }}{{ end -}}
+      <content:encoded>{{ printf "<![CDATA[%s%s]]>" $cover $body | safeHTML }}</content:encoded>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

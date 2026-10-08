@@ -72,7 +72,7 @@
   </ul>
   {{- end }}
   {{- with $.Params.quick_facts_source }}
-  <p class="quick-facts-source"><em>Source: {{ . | markdownify }}</em></p>
+  <p class="quick-facts-source"><em>{{ cond $isDE "Quelle" (cond $isRU "Источник" "Source") }}: {{ . | markdownify }}</em></p>
   {{- end }}
 </section>
 {{- end -}}

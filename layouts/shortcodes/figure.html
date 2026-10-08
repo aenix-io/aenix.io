@@ -1,0 +1,21 @@
+{{- /* Hugo's figure shortcode, same parameters, plus the image's real width and
+       height and lazy, async loading, so long posts do not shift as images
+       load (CLS) and below-the-fold images do not compete with the cover. */ -}}
+{{- $src := .Get "src" -}}
+{{- $d := partial "img/dims.html" (dict "page" .Page "src" $src) -}}
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  {{- if .Get "link" }}<a href="{{ .Get "link" }}"{{ with .Get "target" }} target="{{ . }}"{{ end }}{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>{{ end -}}
+  <img src="{{ $src }}" alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify | plainify }}{{ end }}"
+    {{- with .Get "width" }} width="{{ . }}"{{ else }}{{ with $d }} width="{{ .w }}" height="{{ .h }}"{{ end }}{{ end }}
+    {{- with .Get "height" }} height="{{ . }}"{{ end }} loading="lazy" decoding="async">
+  {{- if .Get "link" }}</a>{{ end -}}
+  {{- if or (.Get "title") (.Get "caption") (.Get "attr") }}
+  <figcaption>
+    {{- with .Get "title" }}<h4>{{ . }}</h4>{{ end -}}
+    {{- if or (.Get "caption") (.Get "attr") }}<p>
+      {{- .Get "caption" | markdownify -}}
+      {{- with .Get "attrlink" }}<a href="{{ . }}">{{ end }}{{ .Get "attr" | markdownify }}{{ if .Get "attrlink" }}</a>{{ end -}}
+    </p>{{ end -}}
+  </figcaption>
+  {{- end }}
+</figure>

@@ -41,6 +41,7 @@ quiz:
         - { text: "OpenStack with Heat orchestration", correct: false }
         - { text: "Kubernetes (distribution per op model)", correct: true }
       explanation: "Kubernetes is named as the de facto orchestration layer. Distribution choice (Cozystack for multi-tenant plus virtualization, OpenShift for enterprise commercial, vanilla for simplicity, Talos as the OS underneath) depends on operational model."
+hreflang_de: /de/blog/2026/05/internal-developer-platform-beispiele-ohne-backstage/
 ---
 
 

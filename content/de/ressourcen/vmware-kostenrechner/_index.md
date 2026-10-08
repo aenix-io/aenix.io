@@ -30,7 +30,7 @@ quick_facts:
   - label: "Zielplattform"
     value: "Cozystack — KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage."
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
 faq:
   - q: "Ist das ein offizieller VMware/Broadcom-Rechner?"
     a: "Nein. Es ist ein unabhängiger Schätzer von Aenix, der VMware/VCF-Ausgaben mit einer offenen Apache-2.0-Alternative vergleicht. Geben Sie Ihre eigenen Zahlen ein, um ein belastbares Ergebnis für Ihren Bestand zu erhalten."
@@ -98,7 +98,7 @@ Bewusst einfache Eingaben für ein belegbares Ergebnis. Eine volle TCO umfasst S
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/ressourcen/vmware-kostenrechner/ ; hreflang de self, en → /resources/vmware-cost-calculator/.

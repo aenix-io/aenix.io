@@ -41,6 +41,7 @@ quiz:
         - { text: "1:10 bis 1:20", correct: true }
         - { text: "1:50 bis 1:100", correct: false }
       explanation: "In reifen Organisationen liegt das Verhältnis bei 1:10 bis 1:20. Unter 1:10 ist die Plattformfunktion überbesetzt; über 1:20 wird das Plattformteam in der Regel vom Wachstum der Produktteams überholt."
+hreflang_en: /blog/2026/05/platform-engineering-vs-devops-vs-sre/
 ---
 
 Begleitung zur **[Platform-Engineering-Services-Page](/de/dienstleistungen/platform-engineering)**. Wo überlappen sich die drei Begriffe, wo nicht, was tut jede Funktion tatsächlich.

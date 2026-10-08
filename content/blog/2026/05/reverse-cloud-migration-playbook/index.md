@@ -44,6 +44,7 @@ quiz:
         - { text: "Failing to negotiate exit-fee terms", correct: false }
         - { text: "Choosing the wrong cutover season", correct: false }
       explanation: "A repatriation measured purely on cost reduction tends to under-invest in the platform work that makes the cost reduction sustainable. Two years in, the team has saved money but lost velocity — and that triggers a partial reverse-repatriation back into the hyperscaler."
+hreflang_de: /de/blog/2026/05/reverse-cloud-migration-leitfaden/
 ---
 
 

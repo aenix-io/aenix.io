@@ -41,6 +41,7 @@ quiz:
         - { text: "Souveränität und aufsichtsrechtlicher Druck", correct: true }
         - { text: "Die Wirtschaftlichkeit von KI-Workloads", correct: false }
       explanation: "Muster 2 legt regulierte Workloads aus Banking, Gesundheit und öffentlichem Sektor in die Private Cloud und Hilfs-Workloads wie Analytics, interne Werkzeuge sowie Dev und Test in die Public Cloud. Treiber ist die Souveränität — DORA, sektorale Regeln, Datenresidenzvorgaben — nicht die reine Kostenfrage."
+hreflang_en: /blog/2026/05/hybrid-cloud-architecture-patterns-2026/
 ---
 
 Begleitung zur **[Hybrid-Cloud-Page](/de/loesungen/hybrid-cloud)**.

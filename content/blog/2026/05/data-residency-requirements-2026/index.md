@@ -45,6 +45,7 @@ quiz:
         - { text: "A single hyperscaler globally on a long-term contract", correct: false }
         - { text: "Outsourcing residency to a managed-service provider", correct: false }
       explanation: "The architecture answer is per-jurisdiction tenant boundaries with explicit cross-border controls — the residency landscape is a matrix of jurisdictions with overlapping and sometimes contradictory requirements, not a single rule."
+hreflang_de: /de/blog/2026/05/datenresidenz-anforderungen-2026/
 ---
 
 
@@ -188,7 +189,7 @@ UK GDPR + sectoral rules (FCA, PRA for financial services). Adequacy decision wi
 Sectoral, not general. HIPAA for health, GLBA for financial, FedRAMP for federal. State-level laws (California CCPA, Virginia VCDPA, etc.) increasingly impose data-handling rules. No single national data-residency mandate.
 
 ### Kazakhstan and Central Asia
-Procurement-mandated sovereignty for public-sector and quasi-public organizations. Active sovereign-cloud initiatives include QazCloud, Clever Cloud, and regional telco sovereign cloud product launches. Practical procurement portal channels: goszakup.gov.kz, mitwork.kz, zakup.sk.kz.
+Procurement-mandated sovereignty for public-sector and quasi-public organizations. Active sovereign-cloud initiatives include regional telco sovereign cloud product launches. Practical procurement portal channels: goszakup.gov.kz, mitwork.kz, zakup.sk.kz.
 
 ### India
 DPDP Act 2023 introduces explicit data-localization for sensitive data classes, with implementing rules being finalized.

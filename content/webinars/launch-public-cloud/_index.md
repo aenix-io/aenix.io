@@ -1,6 +1,6 @@
 ---
 title: "Webinar: add Kubernetes, databases and GPU to your price list"
-description: "A free live webinar with Andrei Kvapil, creator of Cozystack: how a working hosting or cloud provider widens the catalog — managed Kubernetes, databases, S3 and GPU — beside the platform they already run, keeping their billing and their panel."
+description: "Recording of the 19 August 2026 webinar with Andrei Kvapil: how a hosting or cloud provider adds managed Kubernetes, databases, S3 and GPU to its catalog."
 language: "en"
 layout: "event-landing"
 bodyClass: "webinar-landing"
@@ -8,15 +8,15 @@ primary_keyword: "managed services for hosting providers"
 secondary_keywords: ["sell managed kubernetes", "managed database hosting provider", "gpu as a service provider", "cozystack webinar", "cloud service catalog"]
 images: ["img/og/og-webinar-en.png"]
 hide_child_cards: true
-hero_eyebrow: "Free live webinar · Online · Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC)"
+hero_eyebrow: "Webinar · Took place online on Wednesday 19 August 2026 · Recording available"
 hero_title: "Add Kubernetes, databases and GPU to your price list"
 hero_tagline: "One hour with Andrei Kvapil, the creator of Cozystack: how a working provider widens the catalog on the racks it already owns — beside the platform it already runs, keeping its own billing and its own panel."
 hero_chips:
-  - "Free with registration"
-  - "60 minutes, live Q&A"
-  - "Recording to every registrant"
-  - "Bring your stack — questions answered live"
-hero_primary: { text: "Save my seat", href: "#register" }
+  - "Recording on YouTube"
+  - "60 minutes, with a live Q&A"
+  - "Free to watch"
+  - "Questions about your own stack — talk to the team"
+hero_primary: { text: "Watch the recording", href: "https://youtu.be/eRFap6FzNj0" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
 inshort_title: "About the webinar"
@@ -31,15 +31,15 @@ event:
   performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
   price: 0
 direct_answer: |
-  **This is a free live webinar for hosting providers, cloud providers, data centre operators, MSPs and telecoms that already sell infrastructure and are deciding what to sell next. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — walks through how a working provider widens its catalog with managed Kubernetes, managed databases, S3-compatible object storage and GPU: what runs beside the current stack, what happens to billing and to the customer panel, how customers move across one at a time, and what the first ninety days look like. Attendance is free with registration, and every registrant receives the recording.**
+  **This was a free live webinar, held on 19 August 2026, for hosting providers, cloud providers, data centre operators, MSPs and telecoms that already sell infrastructure and are deciding what to sell next. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — walked through how a working provider widens its catalog with managed Kubernetes, managed databases, S3-compatible object storage and GPU: what runs beside the current stack, what happens to billing and to the customer panel, how customers move across one at a time, and what the first ninety days look like. The recording is free to watch on YouTube.**
 
 quick_facts:
   - label: "Format"
     value: "A live online webinar, about 60 minutes: a practical walkthrough followed by a live Q&A with the speaker"
   - label: "Date"
-    value: "Wednesday 19 August 2026, 16:00 CEST (14:00 UTC) — online. Register to get the calendar invite and the recording."
+    value: "Took place on Wednesday 19 August 2026, 16:00 CEST (14:00 UTC), online"
   - label: "Price"
-    value: "Free with registration; every registrant receives the recording"
+    value: "Free; the recording is public on YouTube"
   - label: "Language"
     value: "English"
   - label: "Who it's for"
@@ -64,14 +64,14 @@ faq:
     a: "Fewer than OpenStack. The platform is one coherent Kubernetes-native stack rather than a dozen services you integrate yourself, and upgrades are a release rather than a project."
   - q: "What does a pilot involve?"
     a: "One node's worth of hardware to start, access, and someone to accept the result against criteria agreed by both sides. The pilot environment becomes your production — you add nodes as you grow into it."
-  - q: "Will there be a recording?"
-    a: "Yes, to everyone who registers. The Q&A is the exception — that part only happens live."
+  - q: "Is there a recording?"
+    a: "Yes. The webinar took place on 19 August 2026 and the recording is on YouTube: [watch the recording](https://youtu.be/eRFap6FzNj0). For questions about your own stack, [talk to the team](/contact/)."
 
 final_cta:
-  heading: "Bring your stack to the Q&A"
-  text: "Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration; every registrant gets the calendar invite and the recording."
-  button: "Save my seat"
-  href: "#register"
+  heading: "Bring your stack to a conversation"
+  text: "The webinar took place on 19 August 2026. Watch the recording, then talk to the team about the catalog that fits your own platform."
+  button: "Talk to the team"
+  href: "/contact/"
 ---
 
 <section class="ws-section ws-story wb-story" aria-labelledby="wb-story-h">
@@ -171,7 +171,7 @@ final_cta:
 
 <section class="ws-section wb-cover" id="agenda" aria-labelledby="wb-cover-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-cover-h">What we'll cover</h2>
+<h2 class="ws-h2" id="wb-cover-h">What the session covers</h2>
 <p class="ws-lead">Forty-five minutes of practice, then your questions.</p>
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
@@ -205,14 +205,14 @@ final_cta:
 <p class="wb-cover__text"><strong>The pilot, and the first ninety days.</strong> One node, roughly two weeks to a working environment, and the pilot becomes your production — no reinstall, acceptance criteria agreed by both sides.</p>
 </li>
 </ol>
-<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>The session ends with a <strong>live Q&amp;A</strong>. Questions submitted at registration get priority — and this part only happens live.</span></p>
+<p class="wb-cover__note"><span class="wb-cover__note-ic">{{< ws-icon name="chat" >}}</span><span>The session ended with a <strong>live Q&amp;A</strong> with the speaker.</span></p>
 </div>
 </section>
 
 <section class="ws-section ws-outcomes wb-outcomes" aria-labelledby="wb-outcomes-h">
 <div class="ws-outcomes__bg" aria-hidden="true"></div>
 <div class="ws-wrap">
-<h2 class="ws-h2 ws-h2--light" id="wb-outcomes-h">What you'll leave with</h2>
+<h2 class="ws-h2 ws-h2--light" id="wb-outcomes-h">What you take away</h2>
 <div class="ws-outcomes__grid">
 <article class="ws-outcome ws-outcome--hero">
 <span class="ws-outcome__num">01</span>
@@ -235,13 +235,13 @@ final_cta:
 <p class="ws-outcome__text"><strong>A pilot you can actually start</strong> — one node, two weeks, and it becomes your production.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Save my seat</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Watch the recording</a></div>
 </div>
 </section>
 
 <section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who should attend</h2>
+<h2 class="ws-h2" id="wb-audience-h">Who it is for</h2>
 <p class="ws-lead">Providers that already sell infrastructure and are deciding what to sell next. If your platform today is VMware, OpenStack, Proxmox, Virtuozzo, CloudStack, OpenNebula or something you wrote yourself, the session is built around your situation.</p>
 <ul class="wb-audience__tiles">
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
@@ -280,15 +280,12 @@ LinkedIn</a>
 </div>
 </section>
 
-<section class="ws-section ws-register" id="register" aria-labelledby="wb-register-h">
+<section class="ws-section ws-register" id="recording" aria-labelledby="wb-recording-h">
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
-<h2 class="ws-h2 ws-h2--light" id="wb-register-h">Registration</h2>
-<p class="ws-register__lead">Wednesday 19 August 2026 · 16:00 CEST (14:00 UTC) · online. Attendance is free — with registration: you get the calendar invite and the recording.</p>
-<div class="ws-register__form">
-
-{{< clickmeeting room="18263597110070205" >}}
-
-</div>
+<h2 class="ws-h2 ws-h2--light" id="wb-recording-h">Watch the recording</h2>
+<p class="ws-register__lead">The webinar took place online on Wednesday 19 August 2026. The recording is on YouTube.</p>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="https://youtu.be/eRFap6FzNj0" target="_blank" rel="noopener">Watch the recording</a></div>
+<p class="ws-register__lead">Weighing what to add to your own catalog? <a href="/contact/">Talk to the team</a>, or see the <a href="/workshops/">upcoming workshops</a>.</p>
 </div>
 </section>

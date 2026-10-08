@@ -10,6 +10,7 @@ language: "de"
 companion_landing: "/de/produkte/public-cloud-platform/"
 companion_label: "Public Cloud Platform ansehen →"
 cover_image: "/img/blog/covers/de/aenix-billing-pay-per-minute-managed-services-cozystack.jpg"
+hreflang_en: /blog/2026/05/aenix-billing-per-minute-managed-services-cozystack/
 ---
 
 ![Ænix Billing — minutengenaue Verbrauchsabrechnung für Managed PostgreSQL, Redis, Kafka und ClickHouse auf Cozystack](/img/blog/covers/de/aenix-billing-pay-per-minute-managed-services-cozystack.jpg)

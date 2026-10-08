@@ -6,7 +6,12 @@
   "@id": "{{ "/#org" | absURL }}",
   "name": "Aenix",
   "url": "{{ "/" | absURL }}",
-  "logo": "{{ "img/aenix-logo.png" | absURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ "images/logo.png" | absURL }}",
+    "width": 1940,
+    "height": 851
+  },
   "description": "Aenix is the team behind Cozystack — a CNCF Sandbox cloud platform. We deliver sovereign cloud, multi-tenant Kubernetes, and AI-ready infrastructure for regulated enterprises and cloud builders.",
   "address": {
     "@type": "PostalAddress",
@@ -17,7 +22,9 @@
   },
   "sameAs": [
     "https://github.com/aenix-io",
-    "https://www.linkedin.com/company/aenix-io",
+    "https://www.linkedin.com/company/aenix-io/",
+    "https://x.com/aenix_io",
+    "https://www.facebook.com/aenix.io",
     "https://cozystack.io"
   ],
   "founder": {

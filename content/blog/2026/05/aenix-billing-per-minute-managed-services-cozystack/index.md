@@ -10,6 +10,7 @@ topics: ["Cozystack", "Kubernetes", "Multi-tenancy", "Platform Engineering", "Bi
 language: "en"
 companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Public Cloud Platform →"
+hreflang_de: /de/blog/2026/05/aenix-billing-pay-per-minute-managed-services-cozystack/
 ---
 
 

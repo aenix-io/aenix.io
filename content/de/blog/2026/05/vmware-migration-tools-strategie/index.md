@@ -40,6 +40,7 @@ quiz:
         - { text: "Ein Big-Bang-Cutover an einem einzigen Wochenende", correct: false }
         - { text: "Eine zufällige Reihenfolge nach verfügbarer Teamkapazität", correct: false }
       explanation: "Empfohlene Sequenz: (1) Discovery und Bewertung, (2) die Zielplattform produktionsreif bereitstellen, ausdrücklich nicht als PoC, (3) Migration in Kohorten von 10 bis 50 Workloads, (4) die Sequenzierung an den Ablaufdaten der VCF-Verträge ausrichten, (5) Abschaltung der Altumgebung."
+hreflang_en: /blog/2026/05/vmware-migration-tools-and-strategy/
 ---
 
 Begleitung zur **[VMware-Migration-Page](/de/migration/vmware)**.

@@ -1,6 +1,6 @@
 ---
 title: "Hands-on workshop: migrating off VMware to open source"
-description: "A free hands-on workshop: migrate a virtual machine off VMware to an open platform and leave with a migration plan. Tashkent, Bishkek, Almaty, Astana."
+description: "A free hands-on workshop held in August 2026 in Tashkent, Bishkek, Almaty and Astana: migrating a virtual machine off VMware to an open platform."
 language: "en"
 layout: "event-landing"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/"
@@ -10,12 +10,12 @@ images: ["img/og/og-workshop-en.png?v=2"]
 hide_child_cards: true
 hero_eyebrow: "Ran in Almaty · Bishkek · Astana · Tashkent, August 2026"
 hero_title: "Migrating off VMware to open source: a hands-on workshop"
-hero_tagline: "No theory for theory's sake: attendees migrated a real virtual machine off VMware with their own hands, in a live environment, and left with a step-by-step migration plan. The August 2026 tour is over; the lab material stays open, and the next wave is being scheduled."
+hero_tagline: "No theory for theory's sake: attendees migrated a real virtual machine off VMware with their own hands, in a live environment, and left with a step-by-step migration plan. The August 2026 tour is over; the same workshop now runs in Europe and the United States."
 hero_chips:
-  - "Free with registration"
-  - "Seats are limited"
+  - "Free of charge"
+  - "Small groups"
   - "Held in Russian"
-hero_primary: { text: "Tell us where to run it next", href: "#register" }
+hero_primary: { text: "See the upcoming workshops", href: "#next" }
 hero_secondary: { text: "See the program", href: "#program" }
 speaker_photo: "images/workshops/timur-tukaev.png"
 inshort_title: "About the workshop"
@@ -66,55 +66,50 @@ cities:
     status: "completed"
     date: "26 Aug 2026, 15:00–19:00"
     venue: "Impact.t Hub, Bogibuston St. 186, 5th floor"
-    href: "#register"
   - city: "Bishkek"
     country: "Kyrgyzstan"
     status: "completed"
     date: "17 Aug 2026, 14:00–18:00"
     venue: "Technopark, Gorkogo St. 1a, event hall “GO”"
-    href: "#register"
   - city: "Almaty"
     country: "Kazakhstan"
     status: "completed"
     date: "13 Aug 2026, 10:00–14:00"
     venue: "Almaty Hub, Zenkov St. 24, 4th floor"
-    href: "https://forms.qosi.kz/s/cmqunqfix0039mw011sc3e8bn"
-    external: true
-    note: "Local partner in Almaty — QOSI, Qazaq Open Source Initiative; registration is on their form."
+    note: "Local partner in Almaty — QOSI, Qazaq Open Source Initiative."
   - city: "Astana"
     country: "Kazakhstan"
     status: "completed"
     date: "24 Aug 2026, 14:00–18:30"
     venue: "Astana Hub, 55/1 Mangilik El Ave., Block C3.5, Franklin Herbert hall"
-    href: "#register"
     note: "Local partner in Astana — GoHost.kz."
 final_cta:
   heading: "Migrating off VMware to open source: a hands-on workshop"
-  text: "The August 2026 tour has finished. Tell us which city should be next and we will let you know when a date is set."
-  button: "Tell us where to run it next"
-  href: "#register"
+  text: "The August 2026 tour has finished. The same hands-on workshop runs across Europe in October–November 2026 and in the United States in November–December 2026."
+  button: "See the Europe tour"
+  href: "/workshops/cozystack-tour-2026-europe/"
 direct_answer: |
-  **This is a free hands-on workshop for people who run VMware and are deciding what to do next. It takes place in Tashkent, Bishkek, Almaty, and Astana. In one day, participants migrate a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform developed within the CNCF — with their own hands. Most of the time is practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. The workshop is led by Timur Tukaev, Cozystack maintainer and Aenix co-founder. Afterwards, every participant keeps a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Aenix Certification for Cozystack — Fundamentals certificate. Attendance is free with registration; seats are limited.**
+  **This was a free hands-on workshop for people who run VMware and are deciding what to do next. It took place in August 2026 in Tashkent, Bishkek, Almaty, and Astana. In one day, participants migrated a real virtual machine off a running VMware server onto Cozystack — an open virtualization platform developed within the CNCF — with their own hands. Most of the time was practice in a personal working environment: migrating the machine, adding a database, monitoring, and backups. The workshop was led by Timur Tukaev, Cozystack maintainer and Ænix co-founder. Afterwards, every participant kept a test environment for 30 days, a chat with the platform's maintainers, take-home lab exercises, and the opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate. Attendance was free; seats were limited.**
 
 quick_facts:
   - label: "Format"
     value: "An in-person workshop, about four hours: roughly three hours of practice in a personal working environment, the rest — short explanations and conversation"
   - label: "Cities"
-    value: "Tashkent, Bishkek, Almaty, Astana"
+    value: "Tashkent, Bishkek, Almaty, Astana — all four sessions took place in August 2026"
   - label: "Price"
-    value: "Free with registration; seats are limited"
+    value: "Free; seats were limited"
   - label: "Language"
     value: "Russian; commands and materials are in English"
   - label: "Who it's for"
     value: "VMware administrators, sysadmins, infrastructure leads, technology executives, DevOps engineers"
   - label: "After the workshop"
-    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the opportunity to earn the Aenix Certification for Cozystack — Fundamentals certificate"
+    value: "A test environment for 30 days, a chat with Cozystack maintainers, take-home labs, and the opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate"
   - label: "Host"
-    value: "Timur Tukaev — Cozystack maintainer, Aenix co-founder"
+    value: "Timur Tukaev — Cozystack maintainer, Ænix co-founder"
 
 faq:
   - q: "How much does it cost?"
-    a: "Attendance was free. The August 2026 tour has finished, so there is nothing to register for right now — leave your city and we will tell you when the next wave is scheduled. Seats are deliberately limited: everyone gets real time at the terminal and an assistant's attention when needed."
+    a: "Attendance was free. The August 2026 tour has finished, so there is nothing to register for on this page. The same workshop runs in English across [Europe in October–November 2026](/workshops/cozystack-tour-2026-europe/) and the [United States in November–December 2026](/workshops/cozystack-tour-2026-usa/). Seats are deliberately limited: everyone gets real time at the terminal and an assistant's attention when needed."
   - q: "I run VMware but don't know Kubernetes. Will I keep up?"
     a: "Yes. The workshop is built for exactly your profile: everything is explained through VMware concepts you already know, and assistants are there whenever something doesn't work. Your experience is the foundation we build on."
   - q: "What language is the workshop in?"
@@ -126,7 +121,7 @@ faq:
   - q: "What exactly will I do with my own hands?"
     a: "Move a virtual machine off a running VMware server, deploy a database, publish a service to the network, see how monitoring and backups work — and, at the end, bring the whole setup back up from a single file."
   - q: "What happens after the workshop?"
-    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. Completing the labs earns you the Aenix Certification for Cozystack — Fundamentals certificate — also free."
+    a: "Your test environment stays with you for another 30 days, you receive take-home lab exercises, and you join a chat where Cozystack maintainers answer questions. Completing the labs earns you the Ænix Certification for Cozystack — Fundamentals certificate — also free."
   - q: "We run Oracle, SAP, or specially licensed Windows. Will it migrate?"
     a: "Maybe not — and we will say so directly. Vendor licensing restrictions are one of the topics of the honest-limitations conversation. Bring your hardest case and get a straight answer."
   - q: "Can I bring my manager or a colleague?"
@@ -167,13 +162,13 @@ faq:
 </div>
 </div>
 </div>
-<div class="ws-wrap ws-cta-center"><a class="cta-primary cta-accent" href="#register">Tell us where to run it next</a></div>
+<div class="ws-wrap ws-cta-center"><a class="cta-primary cta-accent" href="#next">See the upcoming workshops</a></div>
 </section>
 
 <section class="ws-section ws-agenda" id="program" aria-labelledby="ws-agenda-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="ws-agenda-h">What you will do</h2>
-<p class="ws-lead">No three-hour slide decks. Every participant gets a personal working environment on a real cluster, and that is where you spend almost all of the time.</p>
+<h2 class="ws-h2" id="ws-agenda-h">What participants did</h2>
+<p class="ws-lead">No three-hour slide decks. Every participant got a personal working environment on a real cluster, and that is where they spent almost all of the time.</p>
 {{< workshop-agenda >}}
 </div>
 </section>
@@ -209,7 +204,7 @@ faq:
 <p class="ws-outcome__text"><strong>Materials and cheat sheets</strong> to work with at home — plus a month of support after the workshop.</p>
 </article>
 </div>
-<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#register">Tell us where to run it next</a></div>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="#next">See the upcoming workshops</a></div>
 </div>
 </section>
 
@@ -249,9 +244,9 @@ faq:
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Your test environment stays with you for another 30 days</strong> — for experiments and certification prep.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>Take-home lab exercises</strong> — with support from the Cozystack maintainers.</span></li>
 <li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>A chat where Cozystack maintainers answer your questions.</strong></span></li>
-<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The opportunity to earn the Aenix Certification for Cozystack — Fundamentals certificate</strong> — free.</span></li>
+<li><span class="ws-checklist__mark" aria-hidden="true"></span><span><strong>The opportunity to earn the Ænix Certification for Cozystack — Fundamentals certificate</strong> — free.</span></li>
 </ul>
-<div class="ws-cta-row"><a class="cta-primary cta-accent" href="#register">Tell us where to run it next</a></div>
+<div class="ws-cta-row"><a class="cta-primary cta-accent" href="#next">See the upcoming workshops</a></div>
 </div>
 <div class="ws-after__stack" aria-hidden="true">
 <div class="ws-after__tile ws-after__tile--env"><span class="ws-after__ic">{{< ws-icon name="cal30" >}}</span><span class="ws-after__tile-label">30-day test environment</span></div>
@@ -261,9 +256,9 @@ faq:
 <span class="ws-cert__tag">sample</span>
 <span class="ws-cert__seal">{{< ws-icon name="cert" >}}</span>
 <span class="ws-cert__kicker">Certificate of completion</span>
-<span class="ws-cert__title">Aenix Certification for Cozystack — Fundamentals</span>
+<span class="ws-cert__title">Ænix Certification for Cozystack — Fundamentals</span>
 <span class="ws-cert__line"></span>
-<span class="ws-cert__by">Cozystack · Aenix</span>
+<span class="ws-cert__by">Cozystack · Ænix</span>
 </div>
 </div>
 </div>
@@ -275,8 +270,8 @@ faq:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="ws-speaker-h">Your host</h2>
 <div class="ws-speaker__name">Timur Tukaev</div>
-<div class="ws-speaker__role">Cozystack maintainer · Aenix co-founder</div>
-<p class="ws-speaker__bio">Timur is a maintainer of the open Cozystack platform and a co-founder of Aenix, the company behind it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
+<div class="ws-speaker__role">Cozystack maintainer · Ænix co-founder</div>
+<p class="ws-speaker__bio">Timur is a maintainer of the open Cozystack platform and a co-founder of Ænix, the company behind it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
 </div>
 </div>
 </section>
@@ -284,16 +279,16 @@ faq:
 <section class="ws-section ws-cities-sec" id="cities" aria-labelledby="ws-cities-h">
 <div class="ws-wrap">
 <h2 class="ws-h2" id="ws-cities-h">Cities</h2>
-<p class="ws-lead">The program is the same in every city. Pick the one that suits you and register.</p>
+<p class="ws-lead">The program was the same in every city. All four sessions took place in August 2026.</p>
 {{< workshop-cities >}}
 </div>
 </section>
 
-<section class="ws-section ws-register" id="register" aria-labelledby="ws-register-h">
+<section class="ws-section ws-register" id="next" aria-labelledby="ws-next-h">
 <div class="ws-register__bg" aria-hidden="true"></div>
 <div class="ws-wrap ws-register__inner">
-<h2 class="ws-h2 ws-h2--light" id="ws-register-h">The August 2026 tour has finished</h2>
-<p class="ws-register__lead">The August 2026 tour has finished. Leave your city and we will tell you when the next date is set — attendance stays free.</p>
-<p class="ws-register__lead">It ran in Almaty, Bishkek, Astana and Tashkent. The lab material and the certification path stay open, and the next wave is being planned — the online session on 9 September 2026 is the closest thing to it.</p>
+<h2 class="ws-h2 ws-h2--light" id="ws-next-h">The August 2026 tour has finished</h2>
+<p class="ws-register__lead">It ran in Almaty, Bishkek, Astana and Tashkent. The same hands-on workshop, held in English, now travels across Europe in October–November 2026 and the United States in November–December 2026 — registration is open on those pages.</p>
+<div class="ws-cta-center"><a class="cta-primary cta-accent" href="/workshops/cozystack-tour-2026-europe/">Cozystack Tour 2026 Europe</a> <a class="cta-secondary" href="/workshops/cozystack-tour-2026-usa/">Cozystack Tour 2026 USA</a></div>
 </div>
 </section>

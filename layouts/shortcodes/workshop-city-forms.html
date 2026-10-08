@@ -25,11 +25,12 @@
 {{- $items := .Page.Params.cities -}}
 {{- $region := .Page.Params.region_slug | default "eu" -}}
 {{- $isFR := eq (.Page.Params.language | default "en") "fr" -}}
+{{- $isDE := or (eq (.Page.Params.language | default "en") "de") (hasPrefix .Page.RelPermalink "/de/") -}}
 {{- if $items -}}
 <div class="ws-cityforms" data-ws-cityforms>
   {{- /* a single-city page (e.g. the Paris FR page) has nothing to choose between */ -}}
   {{- if gt (len $items) 1 }}
-  <div class="ws-cityforms__tabs" role="tablist" aria-label="Choose your city">
+  <div class="ws-cityforms__tabs" role="tablist" aria-label="{{ if $isDE }}Stadt auswählen{{ else }}Choose your city{{ end }}">
     {{- range $i, $c := $items -}}
     {{- $slug := $c.city | urlize -}}
     <button class="ws-cityforms__tab{{ if eq $i 0 }} is-active{{ end }}"
@@ -56,7 +57,10 @@
        data-ws-panel="{{ $slug }}"
        {{ if ne $i 0 }}hidden{{ end }}>
     {{- $venue := $c.venue | default "" -}}
-    {{- $venueKnown := and $venue (not (strings.Contains (lower $venue) "to be confirmed")) -}}
+    {{- /* an unconfirmed venue is a placeholder sentence, not an address; the
+         German wordings are matched too so a translated venue keeps working */ -}}
+    {{- $venueTBC := or (strings.Contains (lower $venue) "to be confirmed") (strings.Contains (lower $venue) "wird noch bestätigt") (strings.Contains (lower $venue) "wird noch bekannt gegeben") -}}
+    {{- $venueKnown := and $venue (not $venueTBC) -}}
     <div class="ws-cityforms__head">
       <span class="ws-cityforms__city">{{ $c.city }}</span>
       <span class="ws-cityforms__date">{{ $c.date }}</span>
@@ -65,11 +69,13 @@
     {{- with $c.form -}}
     <div class="ws-cityforms__embed">
       <iframe class="ws-cityforms__iframe" data-ws-formsrc="{{ . }}{{ $utm }}"
-              title="{{ if $isFR }}Inscription à l'atelier de {{ $c.city }}{{ else }}Register for the {{ $c.city }} workshop{{ end }}" loading="lazy"
+              title="{{ if $isFR }}Inscription à l'atelier de {{ $c.city }}{{ else if $isDE }}Anmeldung zum Workshop in {{ $c.city }}{{ else }}Register for the {{ $c.city }} workshop{{ end }}" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     {{- if $isFR }}
     <p class="ws-cityforms__note">Choisissez <strong>In&nbsp;person</strong> (sur place) ou <strong>Online</strong> (en ligne) directement dans le formulaire. Une confirmation s'affiche à l'écran, puis vous recevrez un e-mail avec les informations pratiques. Vos données sont traitées par AENIX s.r.o. uniquement pour organiser l'atelier ; vous pouvez vous opposer à tout moment à nos communications (privacy@aenix.io, <a href="/privacy-policy/">politique de confidentialité</a>).</p>
+    {{- else if $isDE }}
+    <p class="ws-cityforms__note">Wählen Sie direkt im Formular <strong>In&nbsp;person</strong> (vor Ort) oder <strong>Online</strong>. Sie sehen sofort eine Bestätigung auf dem Bildschirm, die finalen Details schicken wir Ihnen per E-Mail.{{ if not $venueKnown }} Der Veranstaltungsort wird noch bestätigt – angemeldete Teilnehmende erfahren ihn zuerst.{{ end }}</p>
     {{- else }}
     <p class="ws-cityforms__note">Choose <strong>In&nbsp;person</strong> or <strong>Online</strong> right inside the form. You'll see a confirmation on screen, and we'll follow up by email with the final details.{{ if not $venueKnown }} The venue is being confirmed — registered attendees hear first.{{ end }}</p>
     {{- end }}
@@ -78,6 +84,11 @@
     <div class="ws-cityforms__pending">
       <strong>Les inscriptions pour {{ $c.city }} ouvrent très bientôt.</strong>
       <span>La date est fixée ({{ $c.date }})&#8239;; le formulaire d'inscription est en cours de finalisation. Revenez bientôt.</span>
+    </div>
+    {{- else if $isDE }}
+    <div class="ws-cityforms__pending">
+      <strong>Die Anmeldung für {{ $c.city }} öffnet in Kürze.</strong>
+      <span>Der Termin steht fest ({{ $c.date }}); Anmeldeformular und Veranstaltungsort werden gerade finalisiert. Schauen Sie bald wieder vorbei – oder melden Sie sich für eine andere Stadt an und teilen Sie uns mit, dass Sie {{ $c.city }} bevorzugen.</span>
     </div>
     {{- else }}
     <div class="ws-cityforms__pending">

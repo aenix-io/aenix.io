@@ -97,4 +97,4 @@ Bemerkenswert ist die technische Tiefe des Supports: einige der benötigten Fixe
 
 *Diese Fallstudie wird in anonymisierter Form veröffentlicht (Tier-3-Evidenz): der Integrator und der Endkunde werden über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einer aktiven Opportunity [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*

@@ -150,4 +150,4 @@ Das Engagement läuft als **[Platform Readiness Assessment](/de/dienstleistungen
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet für Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen souveräne Disaster-Recovery- und Business-Continuity-Plattformen für regulierte Organisationen in der EU und DACH.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend. Wir bauen souveräne Disaster-Recovery- und Business-Continuity-Plattformen für regulierte Organisationen in der EU und DACH.*

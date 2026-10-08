@@ -19,7 +19,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "What is the difference between SRE, DevOps, and platform engineering at Aenix?"
     a: "SRE applies software engineering to operations through SLOs, error budgets, and incident discipline. DevOps consulting covers a broader delivery and culture scope, while platform engineering builds the self-service platform itself. Aenix offers each as a distinct service that can be combined."

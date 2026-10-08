@@ -20,7 +20,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 core (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "For"
     value: "Regulated enterprises — banks, insurance, public administration, telco, healthcare, regulated industrial and energy operators"
   - label: "Includes"
@@ -197,4 +197,4 @@ Prefer a shorter first step? [Book a discovery call](/contact/) instead.
 
 ---
 
-*Ænix Private Cloud Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating expected late summer 2026). Apache 2.0. Ænix is the open-core company.*
+*Ænix Private Cloud Platform is built on [Cozystack](https://cozystack.io) — a CNCF project we created and maintain (currently CNCF Sandbox; CNCF Incubating application in due diligence). Apache 2.0. Ænix is the open-core company.*

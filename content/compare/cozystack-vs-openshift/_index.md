@@ -17,7 +17,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing); OpenShift Virtualization ships under a Red Hat commercial subscription, with a VM-only OpenShift Virtualization Engine SKU as the cheaper comparison point"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Shared foundation"
     value: "Both use KubeVirt to run VMs and containers on a single Kubernetes API"
   - label: "Cozystack stack"
@@ -36,7 +36,7 @@ faq:
   - q: "How does multi-tenancy compare?"
     a: "OpenShift uses Project CRDs and namespaces. Cozystack uses a nested Tenant CRD, which lets you carve out isolated, self-service tenants within a single cluster, a model suited to service providers and internal developer platforms."
   - q: "Is Cozystack a CNCF project?"
-    a: "Yes. Cozystack has been a CNCF Sandbox project since 28 February 2025, with CNCF Incubating status expected in late summer 2026. It is released under Apache 2.0."
+    a: "Yes. Cozystack has been a CNCF Sandbox project since 28 February 2025, and its CNCF Incubating application is in due diligence. It is released under Apache 2.0."
   - q: "When should we choose OpenShift Virtualization over Cozystack?"
     a: "If you already run Red Hat OpenShift and value the existing Red Hat support relationship and broad platform footprint, OpenShift Virtualization fits naturally. Cozystack is the stronger fit when you want open-source licensing, a focused operational footprint, or a service-provider model."
 hreflang_de: /de/vergleichen/cozystack-vs-openshift/

@@ -63,7 +63,7 @@ Take back cost and data-location control for the workloads that don't belong on 
 - **What it is:** an open, Kubernetes-native platform you run on owned or leased hardware (no per-core tax).
 - **Who it's for:** CTOs and VPs of Engineering at scale-ups, SaaS and product companies.
 - **License:** Apache 2.0.
-- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** repatriating compute but leaving data, backups and observability on the hyperscaler, so the savings and the sovereignty both leak.
 
 [Source: [CNCF Landscape](https://landscape.cncf.io); see also the [TCO worksheet](/resources/cloud-repatriation-tco-worksheet/)]
@@ -108,7 +108,7 @@ Free, no prep. We pressure-test the economics and tell you whether turnkey or a 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:

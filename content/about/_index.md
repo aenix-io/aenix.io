@@ -86,7 +86,7 @@ hreflang_de: /de/ueber-uns/
 - **Geography:** EU + Central Asia engineering teams
 - **CEO:** Andrei Kvapil
 - **COO:** Timur Tukaev
-- **Open-source pedigree:** We created Cozystack — CNCF project, Apache 2.0, currently CNCF Sandbox; CNCF Incubating expected late summer 2026
+- **Open-source pedigree:** We created Cozystack — CNCF project, Apache 2.0, currently CNCF Sandbox; CNCF Incubating application in due diligence
 - **Commercial products:** three platforms on one engine — Ænix Public Cloud Platform, Ænix Private Cloud Platform (developer self-service included) and Ænix AI Platform — plus enterprise support for self-run Cozystack and the WHMCS integration
 - **Engagement scale:** Public Cloud Platform entry from $1,250/month support tier; Public Cloud / Enterprise full builds quoted per RFP
 - **Stage:** Early commercial journey — production-grade technology, growing sales motion
@@ -128,7 +128,7 @@ This is the open-core model — like Confluent on Kafka, Canonical on Ubuntu, Gi
 
 ## Cozystack and CNCF
 
-Cozystack is currently a **CNCF Sandbox** project. We expect **CNCF Incubating status late summer 2026**, based on the application processing cadence.
+Cozystack is currently a **CNCF Sandbox** project. Its **CNCF Incubating** application, filed in October 2025, is in due diligence with the CNCF Technical Oversight Committee.
 
 - **Architecture:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard + VictoriaMetrics + VictoriaLogs
 - **License:** Apache 2.0 — anyone can run it
@@ -263,4 +263,4 @@ Book a discovery call to discuss your buyer profile, edition fit, and engagement
 
 ---
 
-*Ænix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), Apache 2.0. Maker of the Ænix platforms — turnkey commercial cloud on an open-source engine.*
+*Ænix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project (currently CNCF Sandbox; CNCF Incubating application in due diligence), Apache 2.0. Maker of the Ænix platforms — turnkey commercial cloud on an open-source engine.*

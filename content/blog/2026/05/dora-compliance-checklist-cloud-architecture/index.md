@@ -47,6 +47,7 @@ quiz:
       explanation: "For significant entities, TLPT is required every three years. Other in-scope entities run scenario-based resilience testing at least annually."
 aliases:
   - /blog/2026/05/dora-compliance-checklist-detailed/
+hreflang_de: /de/blog/2026/05/dora-checkliste-cloud-architektur/
 ---
 
 
