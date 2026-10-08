@@ -33,6 +33,8 @@
           {{- range $trust }}
           <span class="trust-pill">{{ . }}</span>
           {{- end }}
+          <a class="trust-pill" href="{{ $p.hero_trust_iso_url | default "/compliance/iso-27001/" }}">ISO/IEC 27001 (AENIX s.r.o.)</a>
+          <span class="trust-pill">CNCF Kubernetes AI Conformance</span>
         </div>
       </div>
       <div class="hero-split__visual">
@@ -45,5 +47,11 @@
     <div class="page-content">
       {{ .Content }}
     </div>
+    {{/* GEO blocks (direct_answer, quick_facts, faq) from front matter, after
+         the visual sections so the designed home is not interrupted. Same
+         partials as landing pages; they render nothing when the fields are
+         absent. FAQPage JSON-LD comes from seo/head.html. */}}
+    {{ partial "seo/geo-intro.html" . }}
+    {{ partial "seo/geo-faq.html" . }}
   </div>
 </article>

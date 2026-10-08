@@ -13,6 +13,7 @@ hero_cta_secondary: "Plattformen ansehen →"
 hero_cta_secondary_url: "/de/produkte/"
 hero_microcopy: "30-minütiges Discovery-Gespräch — ohne Folien; wir klären Umfang von Aufbau oder Migration."
 hero_trust_label: "Vertrauensmerkmale"
+hero_trust_iso_url: "/de/compliance/iso-27001/"
 hero_trust: ["CNCF-Projekt", "Apache 2.0", "AENIX s.r.o. (Tschechien)", "AENIX INC (Delaware, USA)"]
 ---
 
