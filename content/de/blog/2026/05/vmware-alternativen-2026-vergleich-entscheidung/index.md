@@ -25,7 +25,7 @@ quiz:
         - { text: "Proxmox VE", correct: true }
         - { text: "OpenShift Virtualization", correct: false }
         - { text: "Cozystack", correct: false }
-      explanation: "Proxmox VE — Open Source, große Community, gut geeignet für Single-Tenant-Installationen unter etwa 50 Hosts. Cozystack ist die zweitbeste Wahl, für den Single-Tenant-Fall im KMU aber überdimensioniert."
+      explanation: "Proxmox VE — Open Source, große Community, gut geeignet für Single-Tenant-Installationen unter etwa 50 Hosts. Scale Computing HC3 ist dank der Einfachheit einer Appliance die zweitbeste Wahl."
     - q: "Welche Alternative gilt speziell für ROBO / Edge als beste Wahl?"
       options:
         - { text: "Scale Computing HC3", correct: true }
