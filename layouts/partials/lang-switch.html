@@ -1,22 +1,50 @@
 {{/*
-  lang-switch.html — RU ⇄ EN language toggle pill for pages that declare a
-  locale counterpart in frontmatter (hreflang_ru on EN pages / hreflang_en on
-  RU pages). Rendered by _default/list.html inside the page hero.
+  lang-switch.html — language toggle pill for pages that declare a locale
+  counterpart in frontmatter (hreflang_en / hreflang_de / hreflang_ru).
+  Rendered by _default/list.html and _default/event-landing.html in the hero.
 
-  Scope: only the EN↔RU pair (workshop pages). DE pages keep their existing
-  behavior (no visible switcher) — this partial no-ops for them.
+  When it shows:
+    - the EN↔RU pair (workshop pages), as before;
+    - the EN↔DE pair, but only on event pages (layout or page_type
+      `event-landing`: tour, workshops, webinars). DE landing pages and their
+      EN counterparts keep their existing behavior (no visible switcher).
+  Once shown, it lists every counterpart the page declares, in EN · DE · RU
+  order, with the current language marked active.
+
+  The DE locale is content under /de/ flagged with language: "de".
 */}}
 {{- $lang := .Params.language | default "en" -}}
+{{- if hasPrefix .RelPermalink "/de/" }}{{ $lang = "de" }}{{ end -}}
 {{- $ru := .Params.hreflang_ru -}}
 {{- $en := .Params.hreflang_en -}}
-{{- if or (and (eq $lang "en") $ru) (and (eq $lang "ru") $en) -}}
+{{- $de := .Params.hreflang_de -}}
+{{- $event := or (eq .Layout "event-landing") (eq (.Params.page_type | default "") "event-landing") -}}
+{{- $ruPair := or (and (eq $lang "en") $ru) (and (eq $lang "ru") $en) -}}
+{{- $dePair := and $event (or (and (eq $lang "en") $de) (and (eq $lang "de") $en)) -}}
+{{- if $ruPair -}}
 <nav class="lang-switch" aria-label="Language">
   {{- if eq $lang "ru" }}
   <a class="lang-switch__item" href="{{ $en | relURL }}" hreflang="en" lang="en">English</a>
   <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="ru">Русский</span>
   {{- else }}
   <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="en">English</span>
+  {{- if and $de $event }}
+  <a class="lang-switch__item" href="{{ $de | relURL }}" hreflang="de" lang="de">Deutsch</a>
+  {{- end }}
   <a class="lang-switch__item" href="{{ $ru | relURL }}" hreflang="ru" lang="ru">Русский</a>
+  {{- end }}
+</nav>
+{{- else if $dePair -}}
+<nav class="lang-switch" aria-label="{{ if eq $lang "de" }}Sprache{{ else }}Language{{ end }}">
+  {{- if eq $lang "de" }}
+  <a class="lang-switch__item" href="{{ $en | relURL }}" hreflang="en" lang="en">English</a>
+  <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="de">Deutsch</span>
+  {{- with $ru }}
+  <a class="lang-switch__item" href="{{ . | relURL }}" hreflang="ru" lang="ru">Русский</a>
+  {{- end }}
+  {{- else }}
+  <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="en">English</span>
+  <a class="lang-switch__item" href="{{ $de | relURL }}" hreflang="de" lang="de">Deutsch</a>
   {{- end }}
 </nav>
 {{- end -}}
