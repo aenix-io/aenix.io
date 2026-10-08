@@ -73,7 +73,7 @@ Your answers narrow the realistic options to 1-2 candidates.
 
 ### For regulated enterprises (banking, insurance, financial services)
 
-**Best: Cozystack** (sovereignty-by-architecture, customer-controlled keys, audit-ready)
+**Best: Cozystack** (sovereignty-by-architecture, opt-in volume encryption with a passphrase you hold, audit-ready)
 
 **Runner-up: OpenShift Virtualization** (Red Hat commercial support, established procurement relationships)
 
@@ -168,7 +168,7 @@ For each alternative, the architectural mismatches with VMware that need redesig
 
 For each alternative, the migration path complexity:
 
-- **VMware → Cozystack:** Image conversion (qcow2 to KubeVirt CDI). Networking redesign (NSX → Cilium). Multi-tenant model redesign (vCD → Tenant CRD). Storage layer migration (vSAN → LINSTOR/DRBD). Typical: 2-4 weeks assessment + 6-18 months implementation.
+- **VMware → Cozystack:** Image conversion (qcow2 to KubeVirt CDI). Networking redesign (NSX → Cilium). Multi-tenant model redesign (vCD → Tenant CRD). Storage layer migration (vSAN → LINSTOR/DRBD). Typical: a 14- or 28-day Platform Readiness Assessment, then about 8-12 months for ~100 VMs and 18-24 months for ~1,000 VMs, including planning and migration waves.
 - **VMware → OpenShift:** Similar to Cozystack but on Red Hat foundation.
 - **VMware → Nutanix:** AHV migration via Nutanix Move (vendor tool). Less control during migration.
 - **VMware → OpenStack:** Most operationally complex; requires deep team expertise.

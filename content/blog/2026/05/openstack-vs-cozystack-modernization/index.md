@@ -42,9 +42,9 @@ quiz:
     - q: "For mid-size (50-500 hosts) OpenStack to Cozystack migration, what is total elapsed time?"
       options:
         - { text: "1-2 weeks elapsed (rapid in-place replatform)", correct: false }
-        - { text: "6-15 months depending on scale and cohort count", correct: true }
+        - { text: "4-12 months; 12-18 with complex provider networks or tenant-facing APIs", correct: true }
         - { text: "5+ years elapsed (long-tail parallel-platform operation)", correct: false }
-      explanation: "For mid-size (50-500 hosts): 14-28 day assessment + 1-3 months Cozystack foundation + 4-12 months migration cohorts + OpenStack decommission. Total: 6-15 months depending on scale."
+      explanation: "For mid-size (50-500 hosts): a 14- or 28-day assessment, then the Cozystack foundation deployed in parallel, migration cohorts and staged OpenStack decommission. Total: 4-12 months for a mid-size deployment; 12-18 months with complex provider networks or tenant-facing OpenStack APIs."
 ---
 
 
@@ -106,9 +106,9 @@ Most OpenStack engineers find Cozystack's operational model simpler — fewer mo
 
 For mid-size (50-500 hosts) OpenStack to Cozystack:
 
-1. **Assessment (14-28 days)** — current OpenStack deployment, workload classification, target Cozystack architecture.
-2. **Cozystack foundation (1-3 months)** — parallel deployment on new or repurposed hardware.
-3. **Migration cohorts (4-12 months)** — workloads move cohort by cohort. Image migration via KVM→KubeVirt.
+1. **Assessment (14 or 28 days)** — current OpenStack deployment, workload classification, target Cozystack architecture.
+2. **Cozystack foundation** — parallel deployment on new or repurposed hardware, overlapping the first cohorts.
+3. **Migration cohorts** — workloads move cohort by cohort. Image migration via KVM→KubeVirt.
 4. **OpenStack decommission** — staged as cohorts complete.
 
-Total elapsed: 6-15 months depending on scale.
+Total elapsed: 4-12 months for a mid-size deployment; 12-18 months with complex provider networks or tenant-facing OpenStack APIs.

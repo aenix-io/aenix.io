@@ -17,7 +17,7 @@ quiz:
     - q: "Which three pressures does the article cite as the main drivers of CloudStack modernization in 2026?"
       options:
         - { text: "Engineer scarcity, catalog ceiling, K8s-native demand", correct: true }
-        - { text: "License cost, vendor lock-in, regulator pressure", correct: false }
+        - { text: "Licence cost, vendor lock-in, regulator pressure", correct: false }
         - { text: "Performance issues, security CVEs, hardware end-of-life", correct: false }
       explanation: "The three dominant pressures are engineer scarcity (CloudStack expertise pool shrinking), service-catalog ceiling (VMs/networks/storage scope can't absorb managed DBs / S3 / GPU natively), and Kubernetes-native customer demand."
     - q: "Which two CloudStack areas need substantial redesign rather than 1:1 mapping to Cozystack?"

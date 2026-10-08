@@ -31,7 +31,7 @@ quiz:
         - { text: "6-12 months end-to-end (rapid greenfield programme)", correct: false }
         - { text: "12-24 months end-to-end (single calendar-year migration)", correct: false }
         - { text: "24-48 months total; first workloads on Cozystack in 12-18", correct: true }
-      explanation: "Tier-1 telco modernization is 24-48 months total, with first production workloads on Cozystack within 12-18 months. The VNF modernization track runs 18-36 months in parallel. Mid-size enterprises (200-500 nodes) hit 12-24 months."
+      explanation: "Tier-1 telco modernization is 24-48 months total, with first production workloads on Cozystack within 12-18 months. The VNF modernization track runs 18-36 months in parallel. Mid-size deployments take 4-12 months, or 12-18 months with complex provider networks or tenant-facing OpenStack APIs."
     - q: "Which three approaches does the article describe for handling certified VNFs in a tier-1 telco migration?"
       options:
         - { text: "Force re-certification, drop the VNF, or replace the vendor", correct: false }
@@ -152,7 +152,7 @@ Inventory the OpenStack deployment:
 Output: migration plan with workload buckets (migrate-now /
 migrate-later / stay / re-architect), risk flags, phasing options.
 
-### Phase 1 — Cozystack foundation (2-4 months)
+### Phase 1 — Cozystack foundation
 
 Hardware procurement (or repurpose of OpenStack-freed capacity in
 later phases). Cozystack platform deployed on new hardware in parallel
@@ -168,7 +168,7 @@ a Cozystack Tenant; nested projects become nested Tenants.
 End state: Cozystack platform up, internally validated, ready for
 workload onboarding.
 
-### Phase 2 — Operational tooling (2-3 months)
+### Phase 2 — Operational tooling
 
 Observability stack (VictoriaMetrics + VictoriaLogs) integrated with
 customer SIEM. Backup/DR with Velero + per-app patterns. Runbook
@@ -178,7 +178,7 @@ deployment workflow (Flux default; Argo CD if customer prefers).
 End state: production-operations-grade tooling in place; team
 training in progress.
 
-### Phase 3 — Workload migration cohorts (4-12 months)
+### Phase 3 — Workload migration cohorts
 
 Cohorts of 50-200 instances migrating at a time. Per cohort:
 
@@ -200,14 +200,14 @@ Cohorts of 50-200 instances migrating at a time. Per cohort:
    endpoint. OpenStack instance kept available for 7-30 days
    rollback window.
 
-### Phase 4 — Operational handover (2-4 months, parallel to Phase 3)
+### Phase 4 — Operational handover (parallel to Phase 3)
 
 Ænix engineers reduce direct involvement. Customer operations team
 absorbs first- and second-line incidents. Ænix support (Plus or
 Enterprise tier for 24×7) continues for escalation. Documentation handover. Knowledge transfer
 sessions.
 
-### Phase 5 — OpenStack decommission (2-6 months)
+### Phase 5 — OpenStack decommission
 
 As migration cohorts complete, OpenStack capacity is repurposed into
 the Cozystack cluster. Hardware is the same commodity x86; OpenStack
@@ -275,12 +275,12 @@ Mid-size enterprise (200-500 nodes, simple multi-tenancy, mostly
 default networking):
 
 - Phase 0: 14 or 28 days
-- Phase 1: 2-3 months
-- Phase 2: 1-2 months
-- Phase 3: 6-12 months
-- Phase 4-5: 3-6 months
+- Phases 1-2: foundation and tooling, overlapping the first cohorts
+- Phase 3: the bulk of the elapsed time
+- Phases 4-5: alongside the last cohorts
 
-**Total: 12-24 months**
+**Total: 4-12 months for a mid-size deployment; 12-18 months with
+complex provider networks or tenant-facing OpenStack APIs**
 
 Tier-1 telco (1,000-5,000 nodes, complex multi-tenancy, certified VNF
 environments, NFV-specific networking):
@@ -329,7 +329,10 @@ Poor fit:
   phasing options, risk flags
 - **Pilot deployment** (2-3 months) — Cozystack stood up, 50-100
   workloads migrated, billing / operational workflows validated
-- **Cohort migration** (6-24 months) — workload migration in cohorts
+- **Cohort migration** — workload migration in cohorts; 4-12 months
+  in total for a mid-size deployment, 12-18 months with complex
+  provider networks or tenant-facing OpenStack APIs, longer at
+  telco scale
 - **OpenStack decommission** (parallel to cohort migration) — staged
   as cohorts complete
 - **Support subscription** (ongoing) — Plus or Enterprise support tier

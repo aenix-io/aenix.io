@@ -36,7 +36,7 @@ quiz:
         - { text: "Only hardware acquisition cost matters", correct: false }
         - { text: "Refresh cliffs, network, backup, tooling, headcount", correct: true }
         - { text: "Nothing — destination is always cheaper", correct: false }
-      explanation: "Skipping destination items makes TCO look artificially good; reality bites in Year 2. Full destination cost includes hardware acquisition + 5-year refresh, datacenter/colocation, network bandwidth, storage tiering, backup/DR, identity/observability/tooling, platform-engineering capacity, software licenses."
+      explanation: "Skipping destination items makes TCO look artificially good; reality bites in Year 2. Full destination cost includes hardware acquisition + 5-year refresh, datacenter/colocation, network bandwidth, storage tiering, backup/DR, identity/observability/tooling, platform-engineering capacity, software licences."
     - q: "Which sensitivity factor has \"outsized impact\" on private-cloud economics?"
       options:
         - { text: "Steady-state utilization at 50 percent vs 80 percent", correct: true }
@@ -70,7 +70,7 @@ For private-cloud destination:
 - **Backup and DR infrastructure**
 - **Identity, observability, platform tooling**
 - **Platform-engineering capacity to operate**
-- **Software licenses where applicable**
+- **Software licences where applicable**
 
 Skip these and the TCO looks artificially good; reality bites in Year 2.
 

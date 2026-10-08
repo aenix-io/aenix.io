@@ -1,5 +1,5 @@
 ---
-title: "Public Cloud Platform economics — when a turnkey cloud-in-a-box pays back for hosting providers"
+title: "When Public Cloud Platform pays back for hosting providers"
 seo_title: "Public Cloud Platform economics for hosting providers"
 description: "Unit economics of Ænix Public Cloud Platform for hosting providers: ARPU, infrastructure cost per tenant, platform-team capacity, payback, and where it breaks."
 date: "2026-05-15"
@@ -19,14 +19,14 @@ quiz:
         - { text: "From $1,250 per month covering 10 nodes", correct: true }
         - { text: "€500 per month for unlimited nodes and tenants", correct: false }
         - { text: "Per-VM pricing starting around €5 per VM monthly", correct: false }
-      explanation: "The pricing section explicitly states 'from $1,250/month for the Basic support tier covering 10 nodes' — Aenix does not charge per VM, per CPU, or per GB."
+      explanation: "The pricing section explicitly states 'from $1,250/month for the Basic support tier covering 10 nodes' — Ænix does not charge per VM, per CPU, or per GB."
     - q: "At a mid-size provider running 500 tenants, what is the all-in cost per typical tenant the article cites?"
       options:
         - { text: "Around €5 to €10 per tenant per month", correct: false }
         - { text: "Around €80 to €100 per tenant per month", correct: false }
         - { text: "Around €20 to €40 per tenant per month", correct: true }
       explanation: "The unit economics section calculates €15-30/month direct infra cost plus €5-10 platform-team allocation across 500 tenants, landing at €20-40/month all-in per typical tenant at the lower end of resource consumption."
-    - q: "For a provider with a dedicated 3-5 person platform team and 50 nodes, around what break-even tenant count does the article compute?"
+    - q: "For a full programme with a dedicated team and 50 nodes, around what break-even tenant count does the article compute?"
       options:
         - { text: "Roughly 100 to 200 paying tenants", correct: false }
         - { text: "Roughly 1,200 to 4,000 paying tenants", correct: true }
@@ -59,8 +59,8 @@ business — not the abstract one.
 
 ## What Public Cloud Platform actually delivers
 
-Before economics, scope. Public Cloud Platform is the turnkey cloud-in-a-box
-Ænix sells to hosting providers, MSPs, regional clouds, and small-to-
+Before economics, scope. Public Cloud Platform is a complete public-cloud
+product Ænix sells to hosting providers, MSPs, regional clouds, and small-to-
 mid data centres. It includes:
 
 - **Multi-tenant Cozystack platform** running on customer-controlled
@@ -92,7 +92,8 @@ incidents, 24×7 support (Plus and Enterprise) and a wider support
 scope — the full matrix is on [/pricing/](/pricing/). Ænix does not charge per VM,
 per CPU, or per GB — the Cozystack platform itself is free under
 Apache 2.0; what you pay for is engagement, support, and operational
-assurance.
+assurance. Every support tier includes the proprietary Ænix commercial
+modules (billing system and WHMCS integration).
 
 For a typical mid-size hosting provider running 30-100 customer-facing
 nodes, that is $3,750-12,500/month on Basic or $9,000-30,000/month on
@@ -147,10 +148,10 @@ The fixed cost stack for a mid-size hosting provider on Public Cloud Platform:
 | Item | Monthly | Annual |
 |---|---|---|
 | Ænix support (Standard tier, 50 nodes = 5 × $3,000) | $15k | $180k |
-| Platform-engineering team (3-5 FTE) | €20-35k | €240-420k |
+| Platform operations (ISP calculator default model: about 1.3 FTE at 10 nodes, about 2.6 at 40; more at 50 nodes and for 24×7 on-call) | €20-35k | €240-420k |
 | Hardware amortisation (50 nodes) | €5-8k | €60-100k |
 | Colocation / power / bandwidth | €4-7k | €50-85k |
-| Customer support team (2-4 FTE for cloud) | €10-20k | €120-240k |
+| Customer support team, separate from platform operations (2-4 FTE for cloud customers) | €10-20k | €120-240k |
 | Marketing / sales | €5-15k | €60-180k |
 
 **Total monthly fixed: €44-85k, plus $15k for Ænix support.**
@@ -169,7 +170,7 @@ work. Without growth, Public Cloud Platform is a cost reduction (modest) but not
 a transformation.
 
 For providers below ~300 customers, a full programme with a dedicated
-3-5 person platform team is often *premature* — that fixed cost
+platform team is often *premature* — that fixed cost
 overwhelms the margin contribution. A smaller start (10 nodes on the
 Basic tier, a narrow catalogue, existing staff) is usually the better
 first step. We'll say so in a discovery call rather than push a larger
@@ -255,7 +256,7 @@ increasingly view as a structural risk).
 It fits when at least three of the following hold:
 
 1. **You operate today on bare metal or commercial hypervisor with
-   recurring license pressure** — VMware, OpenStack, Virtuozzo, or
+   recurring licence pressure** — VMware, OpenStack, Virtuozzo, or
    commercial KVM distribution.
 2. **You have direct customer relationships you can monetise** — not
    pure reseller of someone else's cloud.

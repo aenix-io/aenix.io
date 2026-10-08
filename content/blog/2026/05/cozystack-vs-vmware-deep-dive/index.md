@@ -30,19 +30,19 @@ quiz:
         - { text: "One to two days of self-paced study", correct: false }
         - { text: "Four to eight weeks with focused training", correct: true }
         - { text: "Twelve months minimum of on-the-job ramp", correct: false }
-      explanation: "The shift from vCenter-centric to kubectl-centric is a real operational learning curve. Most engineers ramp in 4-8 weeks with focused training. Aenix runs the training as part of professional services."
+      explanation: "The shift from vCenter-centric to kubectl-centric is a real operational learning curve. Most engineers ramp in 4-8 weeks with focused training. Ænix runs the training as part of professional services."
     - q: "For mission-critical DR, how does the article compare SRM vs Velero + per-app PITR?"
       options:
         - { text: "Both work; trade plug-and-play against transparency", correct: true }
         - { text: "SRM is the only viable option for production DR", correct: false }
         - { text: "Velero benchmarks faster than SRM at scale", correct: false }
-      explanation: "Both work for mission-critical DR. SRM = mature DR orchestration, vendor-managed, plug-and-play. Velero + per-app PITR (PostgreSQL, etc.) = more moving parts but more transparent and tunable."
-    - q: "For a VMware → Cozystack migration of under 100 VMs, what is the elapsed-time estimate?"
+      explanation: "Both work for mission-critical DR. SRM = mature DR orchestration, vendor-managed, plug-and-play. Velero + per-app PITR (PostgreSQL, etc.) = more moving parts but more transparent and tunable; it is backup and restore with rehearsed runbooks, not SRM-style orchestrated cross-site failover."
+    - q: "For a VMware → Cozystack migration of about 100 VMs, what is the elapsed-time estimate?"
       options:
         - { text: "Around two weeks of focused cutover work", correct: false }
         - { text: "Around three years of phased migration", correct: false }
-        - { text: "Seven to ten months elapsed end to end", correct: true }
-      explanation: "VMware → Cozystack migration under 100 VMs: 7-10 months elapsed (discovery, parallel deployment, image migration cohorts, network/storage cutover, DR cutover, decommission). Estates of 100-500 VMs take 10-16 months. The driver is regression testing and parallel-run windows, not raw migration speed."
+        - { text: "About eight to twelve months elapsed end to end", correct: true }
+      explanation: "VMware → Cozystack migration of ~100 VMs: about 8-12 months elapsed, including planning and migration waves (discovery, parallel deployment, image migration cohorts, network/storage cutover, DR cutover, decommission). Estates of ~1,000 VMs take 18-24 months. The driver is regression testing and parallel-run windows, not raw migration speed."
 ---
 
 
@@ -104,7 +104,7 @@ Both rolling-upgrade. Operationally similar in spirit; tooling different.
 
 **Cozystack Velero + per-app PITR:** Velero handles cluster-level backup; per-app patterns (PostgreSQL PITR, etc.) on top. More moving parts; more flexibility.
 
-For mission-critical DR, both work. The pattern is different — SRM is plug-and-play vendor-managed; Velero stack is more transparent and tunable.
+For mission-critical DR, both work. The pattern is different — SRM is plug-and-play vendor-managed orchestration; the Velero stack is backup and restore with rehearsed runbooks, more transparent and tunable, and there is no SRM-style orchestrated cross-site failover.
 
 ## Migration patterns
 
@@ -115,10 +115,10 @@ VMware → Cozystack migration in production:
 3. **Image migration** — KubeVirt CDI imports VMDK or qcow2 images. Windows VMs get VMware Tools cleanup before first KubeVirt boot.
 4. **Network cutover** — VLAN mapping into Cilium; policy parity validated against NSX rules.
 5. **Storage cutover** — vSAN → LINSTOR (DRBD); data migration during cohort cutover.
-6. **DR cutover** — Velero replaces SRM; tested per cohort.
+6. **DR cutover** — Velero backup and restore with rehearsed runbooks takes over from SRM-based plans (no orchestrated cross-site failover); tested per cohort.
 7. **VMware decommission** — staged as cohorts complete.
 
-Typical elapsed time: 7-10 months under 100 VMs, 10-16 months for 100-500 and 16-25 months for 500-2000, assessment through decommission. The driver is rarely raw copy speed — it is regression testing and the parallel-run windows application owners will agree to.
+Typical elapsed time: about 8-12 months for ~100 VMs and 18-24 months for ~1,000 VMs, including planning and migration waves; mid-size estates fall in between, depending on dependencies. The driver is rarely raw copy speed — it is regression testing and the parallel-run windows application owners will agree to.
 
 ## When the comparison matters
 

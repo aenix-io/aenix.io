@@ -55,7 +55,7 @@ The post-Broadcom virtualization market has three main options this article comp
 **Strengths:**
 - Mature, stable, easy to install.
 - Strong community.
-- AGPLv3 license, commercial subscription available.
+- AGPLv3 licence, commercial subscription available.
 - Excellent for single-team or single-tenant deployments.
 - Proxmox Backup Server is good.
 
@@ -94,7 +94,7 @@ The post-Broadcom virtualization market has three main options this article comp
 - Kubernetes-native virtualization — same platform for VMs, containers, databases.
 - Multi-tenancy structural (Tenant CRD) — production-grade for service providers and regulated multi-tenant.
 - First-class managed database, S3 object storage, GPU services.
-- Apache 2.0 license, no per-CPU pricing.
+- Apache 2.0 licence, no per-CPU pricing.
 - Air-gapped deployment supported.
 
 **Limits:**
@@ -108,14 +108,14 @@ The post-Broadcom virtualization market has three main options this article comp
 
 | | Proxmox VE | VMware (VCF) | Cozystack |
 |---|---|---|---|
-| **License** | AGPLv3 + commercial subscription | Subscription-only | Apache 2.0 |
+| **Licence** | AGPLv3 + commercial subscription | Subscription-only | Apache 2.0 |
 | **Compute** | KVM + LXC | vSphere | KubeVirt (KVM) + K8s |
 | **Storage** | ZFS, Ceph | vSAN | LINSTOR (DRBD) |
 | **Network** | Linux SDN | NSX | Cilium |
 | **Multi-tenancy** | Namespace + permissions | vCloud Director | Tenant CRD |
 | **Managed databases** | Manual / community | Limited | First-class (PostgreSQL, MariaDB, MongoDB, Redis, Valkey, Kafka, ClickHouse, OpenSearch, etc.) |
 | **S3 object storage** | Manual | Limited | First-class |
-| **GPU** | Passthrough | vGPU under Horizon | VFIO passthrough or vGPU for VMs; HAMi fractional sharing for containers |
+| **GPU** | Passthrough | vGPU under Horizon | Passthrough of whole GPUs or NVIDIA vGPU (requires your NVIDIA vGPU licence) for VMs; HAMi fractional sharing for containers; MIG and time-slicing on the roadmap |
 | **Self-service** | Web UI for ops | vCD | Cozystack Dashboard |
 | **Backup/DR** | PBS | SRM | Velero + PG PITR |
 | **Best scale** | <50 hosts | Enterprise | Multi-tenant scale |

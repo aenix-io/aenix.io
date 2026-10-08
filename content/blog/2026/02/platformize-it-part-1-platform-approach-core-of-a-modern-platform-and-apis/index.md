@@ -503,7 +503,7 @@ We welcome feedback and pull requests: [https://github.com/cozystack/cozypkg](ht
 - [DIY: Create Your Own Cloud with Kubernetes (3-part series)](https://blog.aenix.io/diy-create-your-own-cloud-with-kubernetes-part-1-7a692c37f0a8)
 - [Cozystack joins the CNCF Sandbox](https://t.me/aenix_io/192)
 - [The Evolution of Virtualization Platforms: The Rise of Managed Services and Local Providers’ Edge Against Hyperscalers](/blog/2025/06/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/)
-- [Cozystack became a Certified Kubernetes Platform](/blog/2025/06/cozystack-became-a-certified-kubernetes-platform/)
+- [Cozystack became a CNCF Certified Kubernetes distribution](/blog/2025/06/cozystack-became-a-certified-kubernetes-platform/)
 - [Cozypkg: How We Simplified Local Development with Helm and Flux](/blog/2025/06/cozypkg-how-we-simplified-local-development-with-helm-and-flux/)
 
 By [Andrei Kvapil](https://medium.com/@kvaps) on [February 9, 2026](https://medium.com/p/3287e55938fe).

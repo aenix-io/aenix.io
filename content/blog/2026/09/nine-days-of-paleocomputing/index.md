@@ -701,7 +701,7 @@ And if you'd like to check up on us, the command `cd impl && make deps && make c
 
 ## In place of a conclusion
 
-All of this is open. The sources are in the [repository](https://github.com/tym83/paleocomputing), our code under the Apache-2.0 license, and the processor for QEMU under the GPL, like QEMU itself. The site with the lab is [tym83.github.io/paleocomputing](https://tym83.github.io/paleocomputing/). Every find, with the commands to reproduce it, is in the repository in the `impl/docs` folder, and about Cozystack itself you can read at [cozystack.io](https://cozystack.io/).
+All of this is open. The sources are in the [repository](https://github.com/tym83/paleocomputing), our code under the Apache-2.0 licence, and the processor for QEMU under the GPL, like QEMU itself. The site with the lab is [tym83.github.io/paleocomputing](https://tym83.github.io/paleocomputing/). Every find, with the commands to reproduce it, is in the repository in the `impl/docs` folder, and about Cozystack itself you can read at [cozystack.io](https://cozystack.io/).
 
 Coming up next in the series: the Burroughs B5000 with its hardware memory protection; Lilith, Wirth's very first machine, which will need only a new passport; and, patience permitting, my own board with Oberon on an FPGA, to finally measure the cycles not in simulation but on real hardware.
 

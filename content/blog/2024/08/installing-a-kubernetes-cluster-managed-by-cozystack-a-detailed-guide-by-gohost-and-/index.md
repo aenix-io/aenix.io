@@ -45,7 +45,7 @@ quiz:
         - { text: "Mandatory air-gap install for security-sensitive deployments", correct: false }
         - { text: "Tenant Kubernetes clusters run as VMs inside the host cluster", correct: true }
         - { text: "Built-in support for Microsoft Active Directory federation", correct: false }
-        - { text: "Free commercial license for resellers and hosting partners", correct: false }
+        - { text: "Free commercial licence for resellers and hosting partners", correct: false }
       explanation: "The author calls out that Cozystack runs tenant Kubernetes control planes inside the host Kubernetes — no virtualization for the control plane — while workers run as VMs. That gives optimal resource use without sacrificing tenant isolation."
 ---
 

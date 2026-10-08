@@ -37,7 +37,7 @@ quiz:
         - { text: "A CI/CD engine for service deployment", correct: false }
         - { text: "A GitOps controller for declarative cluster state", correct: false }
       explanation: "\"Backstage is a portal (catalog + UI), not a platform. The platform sits underneath; the portal exposes it.\" Pitfall 2 also reinforces this: buying Backstage without an underlying opinionated platform produces a catalog over the same operational mess."
-    - q: "Which Aenix-default GitOps engine is named in the article?"
+    - q: "Which Ænix-default GitOps engine is named in the article?"
       options:
         - { text: "Argo CD (UI-first GitOps with strong app-of-apps)", correct: false }
         - { text: "Flux (Cozystack default, upstream-Kubernetes idiomatic)", correct: true }

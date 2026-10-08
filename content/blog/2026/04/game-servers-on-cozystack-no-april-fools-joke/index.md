@@ -44,13 +44,13 @@ quiz:
       explanation: "The team plans to expand the approach into Game Server Edition, accept Minecraft as an official example of pluggable application, and add Counter-Strike, Rust, FiveM, Factorio, and others."
 ---
 
-Hello, world! We are the team behind[Cozystack](https://cozystack.io), an open-source platform for building clouds on your own hardware. We want to explain why we decided to target the game server space and what came of it.
+Hello, world! We are the team that created and co-maintains [Cozystack](https://cozystack.io), an open-source platform for building clouds on your own hardware. We want to explain why we decided to target the game server space and what came of it.
 
 ![Game servers on Cozystack](/img/blog/medium/game-servers-on-cozystack-no-april-fools-joke/cover.png)
 
 ## What Is Cozystack
 
-Cozystack is a platform that turns ordinary servers into a full-fledged cloud. The project is part of CNCF Sandbox, is distributed under the open Apache 2.0 license, and is deployed on bare-metal servers.
+Cozystack is a platform that turns ordinary servers into a full-fledged cloud. The project is part of CNCF Sandbox, is distributed under the open Apache 2.0 licence, and is deployed on bare-metal servers.
 
 Out of the box, the platform provides more than 20 managed services: databases (PostgreSQL, MariaDB, MongoDB, etc.), message queues (Kafka, RabbitMQ), caching (Redis), S3 storage, virtual machines, Kubernetes clusters, networking, and load balancers. Everything runs directly on hardware, with no extra virtualization layers.
 

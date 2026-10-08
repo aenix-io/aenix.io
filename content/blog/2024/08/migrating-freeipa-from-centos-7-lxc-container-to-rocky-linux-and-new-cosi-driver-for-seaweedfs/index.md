@@ -24,18 +24,18 @@ quiz:
         - { text: "Pod, Service, Deployment", correct: false }
         - { text: "Tenant, Namespace, ResourceQuota", correct: false }
       explanation: "BucketClaim (request), Bucket (provisioned bucket), BucketAccess (access binding). The pattern is analogous to PersistentVolumeClaim/PersistentVolume/Secret for storage."
-    - q: "What did Aenix do with the SeaweedFS COSI driver they developed?"
+    - q: "What did Ænix do with the SeaweedFS COSI driver they developed?"
       options:
         - { text: "Kept it proprietary inside the Cozystack distribution", correct: false }
         - { text: "Open-sourced it and gifted it to the SeaweedFS community", correct: true }
         - { text: "Sold the codebase to Red Hat as part of OpenShift Data", correct: false }
-      explanation: "Aenix developed the COSI driver in open source and gifted it to the SeaweedFS community. The project moved under the SeaweedFS organisation; the official SeaweedFS chart was expanded to include COSI support."
+      explanation: "Ænix developed the COSI driver in open source and gifted it to the SeaweedFS community. The project moved under the SeaweedFS organisation; the official SeaweedFS chart was expanded to include COSI support."
     - q: "Why was Cozystack adding S3 bucket support relevant to this driver?"
       options:
         - { text: "Pure coincidence — the two projects evolved independently", correct: false }
         - { text: "Cozystack tenants can now order buckets from Kubernetes directly", correct: true }
         - { text: "The driver replaces SeaweedFS entirely with a new storage layer", correct: false }
-      explanation: "Aenix was working on S3 bucket support in Cozystack (PR #131). The COSI driver allows Cozystack tenants to automatically order buckets directly from Kubernetes, instead of provisioning out-of-band."
+      explanation: "Ænix was working on S3 bucket support in Cozystack (PR #131). The COSI driver allows Cozystack tenants to automatically order buckets directly from Kubernetes, instead of provisioning out-of-band."
     - q: "What was the related article in the same announcement about?"
       options:
         - { text: "A recap of the most recent KubeCon EU conference", correct: false }
@@ -53,7 +53,7 @@ Hi there! We are glad to share our last updates.
 
 Details: [FreeIPA tips and tricks: migrating FreeIPA from CentOS 7 LXC to Rocky Linux](/blog/2024/08/freeipa-tips-and-tricks-migrating-freeipa-from-centos-7-lxc-container-to-rocky-linux-debugging/)
 
-**Second, we are pleased to introduce the new COSI driver for SeaweedFS**. [COSI](https://container-object-storage-interface.github.io/) is a unified Container Object Storage Interface for Kubernetes. It introduces [new resources](https://github.com/seaweedfs/seaweedfs-cosi-driver/tree/main/examples) such as BucketClaim, Bucket, and BucketAccess for the declarative provisioning of S3 buckets and access management based on the PVC principle.
+**Second, we are pleased to introduce the new COSI driver for SeaweedFS**. [COSI](https://github.com/kubernetes-sigs/container-object-storage-interface) is a unified Container Object Storage Interface for Kubernetes. It introduces [new resources](https://github.com/seaweedfs/seaweedfs-cosi-driver/tree/main/examples) such as BucketClaim, Bucket, and BucketAccess for the declarative provisioning of S3 buckets and access management based on the PVC principle.
 
 [We are working](https://github.com/aenix-io/cozystack/pull/131) on adding support for S3 buckets in Cozystack, and this driver will allow you to automatically order buckets directly from Kubernetes.
 

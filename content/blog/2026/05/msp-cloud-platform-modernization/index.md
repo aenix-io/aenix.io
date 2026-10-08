@@ -32,10 +32,10 @@ quiz:
       explanation: "Engagement sequencing: discovery → Cozystack pilot → initial customer cohort (5-10 with full white-label experience) → operations workflow (support escalation, SLA management) → scale. Total elapsed: 6-12 months."
     - q: "Why does the architecture pattern use multi-tier Tenant CRD?"
       options:
-        - { text: "Three-tier isolation: Aenix → MSP → MSP customers", correct: true }
+        - { text: "Three-tier isolation: Ænix → MSP → MSP customers", correct: true }
         - { text: "Performance — flat tenants would saturate API server", correct: false }
         - { text: "Each MSP customer needs a dedicated Kubernetes cluster", correct: false }
-      explanation: "Multi-tier Tenant CRD: Aenix → MSP → MSP customers. Per-tier isolation: RBAC, quotas, observability scope, billing. Nesting is what makes the reseller model clean — each layer can't see into others without explicit permission."
+      explanation: "Multi-tier Tenant CRD: Ænix → MSP → MSP customers. Per-tier isolation: RBAC, quotas, observability scope, billing. Nesting is what makes the reseller model clean — each layer can't see into others without explicit permission."
     - q: "What customization does the article say MSPs can do to the service catalog?"
       options:
         - { text: "Nothing (catalog is fixed across all Cozystack deployments)", correct: false }

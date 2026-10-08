@@ -72,7 +72,7 @@ Each has limits:
 
 What modern research computing increasingly wants: **shared GPU pool with strong isolation, self-service for PIs, IaC-managed for reproducibility, integrated with national/European research infrastructure where applicable.**
 
-A Kubernetes-native platform like Cozystack delivers this. KubeVirt handles legacy VM-based research workflows; native containers handle modern ML pipelines. The NVIDIA GPU Operator hands whole GPUs to workloads and HAMi shares a single GPU across labs by memory and compute cores; VMs get VFIO passthrough or NVIDIA vGPU. Tenant CRD provides per-lab isolation. The Cozystack Dashboard gives PIs self-service. The same infrastructure can integrate with EuroHPC for largest workloads (many universities have hybrid arrangements).
+A Kubernetes-native platform like Cozystack delivers this. KubeVirt handles legacy VM-based research workflows; native containers handle modern ML pipelines. The NVIDIA GPU Operator hands whole GPUs to workloads and HAMi shares a single GPU across labs by memory and compute cores; VMs get passthrough of whole GPUs or NVIDIA vGPU (which requires your NVIDIA vGPU licence); MIG and time-slicing are on the roadmap. Tenant CRD provides per-lab isolation. The Cozystack Dashboard gives PIs self-service. The same infrastructure can integrate with EuroHPC for largest workloads (many universities have hybrid arrangements).
 
 ### Mission 2 — reproducible research infrastructure
 
@@ -129,7 +129,7 @@ Research institutes (IT, engineering, biotech) operating Cozystack as core resea
 ## Specific university considerations
 
 ### Open source ethos
-Academic culture strongly prefers open-source infrastructure. Apache 2.0, transparent governance, ability to inspect and modify code — all align with academic values. Cozystack's CNCF Project status and Apache 2.0 license fit this.
+Academic culture strongly prefers open-source infrastructure. Apache 2.0, transparent governance, ability to inspect and modify code — all align with academic values. Cozystack's CNCF Project status and Apache 2.0 licence fit this.
 
 ### Budget realism
 University IT budgets don't scale with compute demand. Open-source platform with optional commercial support is a sustainable economic model. Per-CPU subscription pricing (typical of commercial alternatives) doesn't fit university economics.
@@ -138,7 +138,7 @@ University IT budgets don't scale with compute demand. Open-source platform with
 Universities plan in decades, not quarters. Vendor-led platforms whose roadmap and pricing change with corporate decisions are risky for multi-decade planning. Community-governed open-source projects are more predictable in this dimension.
 
 ### Sovereignty for some research
-Medical research data, classified research, industrial-partner research with NDA constraints — these benefit from infrastructure that keeps data within institutional control. Cozystack's air-gap support, customer-controlled keys, and on-prem deployment match these needs.
+Medical research data, classified research, industrial-partner research with NDA constraints — these benefit from infrastructure that keeps data within institutional control. Cozystack's air-gap support, opt-in volume encryption with a passphrase the institution holds, and on-prem deployment match these needs.
 
 ### Federation with national / European infrastructure
 EuroHPC for the largest workloads. EOSC for open-science federation. GÉANT for European research networking. National research networks. Cozystack platforms can integrate with all of these via standard Kubernetes APIs.
@@ -171,6 +171,5 @@ Building research infrastructure without reproducibility patterns from day 1 mea
 - **Capacity-transfer first-class** — knowledge handover to in-house academic IT is explicit deliverable
 - **Phased engagement** aligned with grant cycles where applicable
 - **Multi-institution consortia** supported
-- **Academic-friendly support tiers** — discounted commercial support for academic deployments
 
 For details see **[universities industry page](/industries/universities/)**.

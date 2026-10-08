@@ -32,7 +32,7 @@ quiz:
         - { text: "At least to the second hop", correct: true }
         - { text: "No documentation needed under GDPR", correct: false }
       explanation: "The post explains that supply-chain provisions (DORA Art. 28, NIS2 Art. 21(2)(d) and national schemes) expect documentation of the supplier chain at least to the second hop, and that most hyperscaler-based sovereign-cloud arrangements stop at the first hop (the hyperscaler itself)."
-    - q: "Which entity does the post identify as Aenix's EU contracting entity?"
+    - q: "Which entity does the post identify as Ænix's EU contracting entity?"
       options:
         - { text: "AENIX INC (Delaware)", correct: false }
         - { text: "AENIX s.r.o. (Czechia)", correct: true }
@@ -241,7 +241,7 @@ Multi-DC deployment, air-gap option enabled if applicable, sovereign
 identity integration, audit-isolated environments. A national
 multi-region programme runs a 3-6 month pilot, then 9-18 months to full
 multi-region operation; a single-agency private cloud is a 3-12 month
-build after a 14-28 day assessment.
+build after a 14- or 28-day assessment.
 
 ### Phase 3 — Certification cycle
 
