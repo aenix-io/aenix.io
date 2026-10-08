@@ -116,7 +116,7 @@ faq:
 
 {{< clients >}}
 
-Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben. Kunden aus dem Energiesektor werden nicht genannt; [neun Deployments sind ausführlich beschrieben](/de/case-studies/), in anonymisierter Form — darunter eine [Provider-Plattform über drei Rechenzentren](/de/case-studies/sovereign-public-cloud/), die das Multi-Site-Muster zeigt.
+Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben. Kunden aus dem Energiesektor werden nicht genannt; [neun veröffentlichte Fallstudien](/de/case-studies/) beschreiben Projekte ausführlich, in anonymisierter Form — darunter eine [Provider-Plattform über drei Rechenzentren](/de/case-studies/sovereign-public-cloud/), die das Multi-Site-Muster zeigt.
 
 {{< quote-carousel >}}
 
@@ -170,4 +170,4 @@ Oder lesen Sie weiter:
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes, OpenSSF Best Practices) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI — für Organisationen in der EU, im DACH-Raum und in Zentralasien.*
+*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI — für Organisationen in der EU, im DACH-Raum und in Zentralasien.*

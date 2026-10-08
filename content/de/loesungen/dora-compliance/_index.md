@@ -219,8 +219,6 @@ Projekte für Banken und Finanzgruppen sind in anonymisierter Form veröffentlic
 
 Alle beschriebenen Projekte finden Sie auf der [Seite mit den Fallstudien](/de/case-studies/). Referenzgespräche vereinbaren wir unter Geheimhaltung, sofern der Kunde zustimmt.
 
-{{< quote-carousel >}}
-
 <!-- /BLOCK 8 -->
 
 ---

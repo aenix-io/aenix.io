@@ -255,7 +255,7 @@ Zur Wahl des Ziels siehe **[VMware-Alternative](/de/alternativen/vmware-alternat
 | Tag 14 (oder 28) | Abschlusspräsentation für die Geschäftsführung — schriftlicher Plan |
 | Monate 1–3 | Fundament der Zielplattform |
 | Monate 3–12 | Workload-Kohorten ziehen um (Takt ausgerichtet an den VCF-Laufzeiten) |
-| Monate 12–24 | Rückbau von VMware abgeschlossen |
+| Monate 12–24 | Bei größeren Beständen (~1.000 VMs): Rückbau von VMware abgeschlossen |
 
 Ein Bestand mit 100 VMs ist typischerweise in 8–12 Monaten migriert, einer mit 1.000 VMs in 18–24 Monaten.
 

@@ -96,8 +96,6 @@ Versicherungskunden werden nicht namentlich genannt. Die am nächsten liegenden 
 
 [Alle Fallstudien →](/de/case-studies/)
 
-{{< quote-carousel >}}
-
 ---
 
 <div class="cta-row">

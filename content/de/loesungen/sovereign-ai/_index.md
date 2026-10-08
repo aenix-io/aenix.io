@@ -283,6 +283,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine Certified-Kubernetes-Distribution mit CNCF Kubernetes AI Conformance und OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir bauen Sovereign-AI-Plattformen für GPU-Betreiber und regulierte Organisationen.*
+*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit CNCF Kubernetes AI Conformance und OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir bauen Sovereign-AI-Plattformen für GPU-Betreiber und regulierte Organisationen.*
 
 <!-- /BLOCK 12 -->

@@ -205,7 +205,7 @@ Tag 0 ist ein kostenloses 30-minütiges Discovery-Gespräch, in dem der Umfang f
 
 ## Fallstudien
 
-Neun Projekte sind auf der [Seite mit den Fallstudien](/de/case-studies/) beschrieben, anonymisiert, wo der Kunde es verlangt — darunter eine [Private Cloud in einer Bank](/de/case-studies/private-cloud-in-a-bank/) und eine [souveräne Public Cloud über drei Rechenzentren](/de/case-studies/sovereign-public-cloud/). Referenzgespräche vereinbaren wir unter Geheimhaltung, sofern der Kunde zustimmt.
+Neun veröffentlichte Fallstudien stehen auf der [Seite mit den Fallstudien](/de/case-studies/), anonymisiert, wo der Kunde es verlangt — darunter eine [Private Cloud in einer Bank](/de/case-studies/private-cloud-in-a-bank/) und eine [souveräne Public Cloud über drei Rechenzentren](/de/case-studies/sovereign-public-cloud/). Referenzgespräche vereinbaren wir unter Geheimhaltung, sofern der Kunde zustimmt.
 
 {{< quote-carousel >}}
 

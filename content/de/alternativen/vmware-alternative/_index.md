@@ -45,7 +45,7 @@ faq:
   - q: "Was kostet es im Vergleich zu VMware?"
     a: "Cozystack ist kostenlos und Open Source. Regulierte Unternehmen, die aus VCF aussteigen, gehen über die Ænix Private Cloud Platform, die nach einem Platform Readiness Assessment per RFP angeboten wird. Service-Provider auf der Ænix Public Cloud Platform und Teams, die Cozystack selbst betreiben, buchen Support-Stufen ab 1.250 USD pro 10 Nodes und Monat (Basic), dann Standard 3.000 USD, Plus 5.500 USD und Enterprise individuell. Migrationsleistungen werden separat angeboten. VMware-VCF-Preise werden individuell angeboten und nicht veröffentlicht."
   - q: "Unterstützt Cozystack GPUs für AI- und VDI-Workloads?"
-    a: "Ja, mit klar benannter Grenze. NVIDIA vGPU steht für VMs zur Verfügung, sofern Sie eine NVIDIA-vGPU-Lizenz besitzen, und Container-Workloads werden über den NVIDIA GPU Operator eingeplant und teilen sich eine Karte per HAMi. MIG und Time-Slicing stehen auf der Roadmap und sind noch nicht verfügbar; ein GPU-Produkt für einander nicht vertrauende Tenants sollte daher noch nicht darauf geplant werden."
+    a: "Ja, mit klar benannter Grenze. Ganze GPUs lassen sich per Passthrough an VMs durchreichen, NVIDIA vGPU steht für VMs zur Verfügung, sofern Sie eine NVIDIA-vGPU-Lizenz besitzen, und Container-Workloads werden über den NVIDIA GPU Operator eingeplant und teilen sich eine Karte per HAMi. MIG und Time-Slicing stehen auf der Roadmap und sind noch nicht verfügbar; ein GPU-Produkt für einander nicht vertrauende Tenants sollte daher noch nicht darauf geplant werden."
 ---
 
 <!-- BLOCK 1: HERO -->
@@ -128,7 +128,7 @@ KubeVirt, Cilium, LINSTOR und Flux liefern als Community-Projekte schneller, als
 - **Tenant-Kubernetes** — jeder Tenant erhält seinen eigenen, echten Kubernetes-Cluster
 - **Managed-Datenbanken** — PostgreSQL, MariaDB, Valkey, RabbitMQ, Kafka, ClickHouse, OpenSearch, MongoDB
 - **S3-kompatibler Object Storage** — für Backups, AI-Trainingsdaten und Anwendungen
-- **GPU as a Service** — NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough oder NVIDIA vGPU für VMs, anteilige Nutzung für Pods über HAMi; MIG und Time-Slicing auf der Roadmap
+- **GPU as a Service** — NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough oder NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), anteilige Nutzung für Pods über HAMi; MIG und Time-Slicing auf der Roadmap
 - **Mandantenfähige Control Plane** — Tenant-CRD, verschachtelte Tenants, Quotas pro Tenant
 - **Observability** — VictoriaMetrics + VictoriaLogs + Grafana, enthalten
 - **Backup und DR** — Velero in S3 außerhalb des Clusters, PITR pro Datenbank, DRBD-Replikation; VM-Wiederherstellung als dokumentiertes Runbook
@@ -231,7 +231,7 @@ Zwei Ebenen müssen neu entworfen statt eins zu eins abgebildet werden: das **Ne
   <div class="engagement-step">
     <div class="engagement-step__number">5</div>
     <h3 class="engagement-step__title">DR prüfen und umstellen</h3>
-    <p class="engagement-step__body">Velero-Backups und ein geprobtes Wiederherstellungs-Runbook lösen SRM ab; kein automatisches Failover.</p>
+    <p class="engagement-step__body">Backup und Wiederherstellung mit Velero plus geübte Runbooks; kein orchestriertes standortübergreifendes Failover wie bei SRM.</p>
   </div>
 
   <div class="engagement-step">
@@ -353,6 +353,6 @@ Oder lesen Sie den **[vollständigen Leitfaden zur VMware-Ablösung in unserem B
 
 <!-- BLOCK 13: FOOTER TRUST STRIP -->
 
-*Cozystack ist ein CNCF-Sandbox-Projekt und eine CNCF-zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes), wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen und trägt das OpenSSF-Best-Practices-Badge. Ænix hat Cozystack initiiert und pflegt es mit.*
+*Cozystack ist ein CNCF-Sandbox-Projekt und eine CNCF Certified Kubernetes Distribution, wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen und trägt das OpenSSF-Best-Practices-Badge. Ænix hat Cozystack initiiert und pflegt es mit.*
 
 <!-- /BLOCK 13 -->

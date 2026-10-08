@@ -73,7 +73,7 @@ Die Plattform installiert auf Ihrer eigenen Hardware, in einem Rechenzentrum Ihr
 
 Geschlossen ist sie damit nicht. Nach Lesart des EDSA ist Fernzugriff aus einem Drittland selbst eine Übermittlung; Support-Engineers, Personal eines Integrators, Administratoren außerhalb der Geschäftszeiten und alles, was Sie zur Beobachtbarkeit anbinden, zählen also weiterhin. Die ausgehenden Pfade, die der Cluster tatsächlich nutzt — Container-Registries, Zertifizierungsstellen, Zeitquellen und Update-Kanäle —, lohnt es sich einmal aufzulisten, denn sie sagen, wohin die Umgebung reicht, auch wenn die personenbezogenen Daten es nicht tun. Wenn Sie in mehreren Jurisdiktionen arbeiten, erlauben Tenants und Knotenplatzierung, die Verarbeitung in einer davon zu halten, statt sie über alle zu verteilen.
 
-Die architektonische Fassung dieser Diskussion — kundenkontrollierte Schlüssel, jurisdiktionsgebundene Datenhaltung, Aufsichtszugang — steht unter [Datensouveränität](/de/loesungen/data-sovereignty/).
+Die architektonische Fassung dieser Diskussion — wer die Schlüssel hält, jurisdiktionsgebundene Datenhaltung, Aufsichtszugang — steht unter [Datensouveränität](/de/loesungen/data-sovereignty/).
 
 ---
 

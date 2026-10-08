@@ -36,7 +36,7 @@ faq:
   - q: "Unterstützt Cozystack virtuelle Maschinen und Container?"
     a: "Ja. Cozystack nutzt KubeVirt, um VMs und Container auf einer Kubernetes-API zu betreiben. Ein Anbieter bedient so klassische VM-Kunden und moderne Container-Workloads mit derselben Plattform und demselben Betriebsteam."
   - q: "Wie funktioniert die Billing-Integration für Hosting-Anbieter?"
-    a: "Die Ænix Public Cloud Platform enthält eine WHMCS-Integration in zwei Modi: die native Cozystack-Oberfläche und ein kundenseitiges Frontend auf Basis des Cozystack Dashboard. Außerdem lassen sich Mandanten abhängig vom Abrechnungsstatus sperren und stilllegen."
+    a: "Die Ænix Public Cloud Platform enthält eine WHMCS-Integration mit zwei Integrationsmodi: WHMCS als Frontend für Ihre Kunden oder Cozystack Dashboard als Frontend mit WHMCS als Billing-Back-End. Außerdem lassen sich Mandanten abhängig vom Abrechnungsstatus sperren und stilllegen."
   - q: "Gibt es Lizenzkosten pro CPU oder Core?"
     a: "Nein. Cozystack steht unter Apache 2.0, es fallen also keine Gebühren pro CPU oder Core an. Das erhält die Hosting-Marge im Vergleich zu proprietären Virtualisierungsplattformen, die pro Sockel oder Core lizenzieren."
   - q: "Kann ein Anbieter bestehende Workloads von VMware, OpenStack oder Virtuozzo migrieren?"
@@ -95,7 +95,7 @@ Für ein vertriebsgeführtes Projekt siehe **[Public Cloud Builder](/de/dienstle
 ## Warum Cozystack zu Hosting-Anbietern passt
 
 - **Mandantenfähigkeit über die Tenant-CRD** — Kundenisolation auf Produktionsniveau
-- **WHMCS-Integration** — zwei Modi (native Oberfläche und Frontend auf Basis des Cozystack Dashboard)
+- **WHMCS-Integration** — zwei Modi: WHMCS als Frontend für Ihre Kunden oder Cozystack Dashboard als Frontend mit WHMCS als Billing-Back-End
 - **Open-Source-Plattform** — keine Lizenzkosten pro CPU, die Hosting-Marge bleibt erhalten
 - **Service-Katalog** — weit über VMs hinaus (Managed Databases, S3, GPU)
 - **Einfacher Betrieb** — eine Plattform, ein Team

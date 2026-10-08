@@ -48,7 +48,7 @@ faq:
 
 **Proxmox VE ist im SMB-Umfeld hervorragend. Wachsen Umgebungen zu Multi-Tenant-Clouds oder Service-Provider-Modellen heran, kommt das Betriebsmodell an seine Grenzen. Ænix führt Proxmox-zu-Cozystack-Migrationen durchgängig durch.**
 
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — schlüsselfertige Cloud-in-a-Box für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen. Billing mit WHMCS-Integration, Mandantenfähigkeit über das Tenant-CRD, produktisierter Installer. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat.
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** — ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen: Hosting-Panel, Billing, Kundenportal und Zahlungen. Billing mit WHMCS-Integration, Mandantenfähigkeit über das Tenant-CRD, produktisierter Installer. Support-Stufen ab 1.250 USD pro 10 Nodes und Monat.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>

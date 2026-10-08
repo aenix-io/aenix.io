@@ -217,4 +217,4 @@ Passt Ihre Situation nicht zum Profil von Cozystack, decken die acht Optionen ob
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes) initiiert und pflegt es mit. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) initiiert und pflegt es mit. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*

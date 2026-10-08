@@ -54,7 +54,7 @@ Die Hypervisor-Schicht ablösen, ohne das Unternehmen über Nacht auf eine neue 
 
 ## Zwei Wege, wie Ænix Sie unterstützt
 
-**1. Eine schlüsselfertige Plattform betreiben.** Die [Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/) ist eine Cloud-in-a-Box auf dem Open-Source-Kern Cozystack: VMs, Managed Kubernetes, Managed Databases, Object Storage, Observability, Mandantenfähigkeit — mit Enterprise-SLA. Sie betreiben die Plattform, wir unterstützen Sie.
+**1. Eine schlüsselfertige Plattform betreiben.** Die [Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/) ist eine produktive Private Cloud auf dem Open-Source-Kern Cozystack: VMs, Managed Kubernetes, Managed Databases, Object Storage, Observability, Mandantenfähigkeit — mit Enterprise-SLA. Sie betreiben die Plattform, wir unterstützen Sie.
 
 **2. Mit unserem Team selbst aufbauen.** Wenn Sie eine Plattform wollen, die auf Ihren Bestand und Ihre Prozesse zugeschnitten ist, ist Cozystack das Framework und **Ænix Ihr ausgelagertes Engineering-Team**: Wir entwerfen die Architektur, führen die [VMware-Migration](/de/migration/vmware/) durch und bauen eine [Private Cloud](/de/dienstleistungen/build-private-cloud/) auf, die Ihnen gehört. So schließen Sie die KubeVirt-/Kubernetes-Lücke ohne langwierige Personalsuche.
 

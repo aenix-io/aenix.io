@@ -104,7 +104,7 @@ Betreiber im Luft-, Schienen-, Wasser- und Straßengüterverkehr, multimodale Lo
 - **[Artikel zur Transport-Architektur](/de/blog/2026/05/transport-logistik-cloud-architektur-nis2/)**
 - **[NIS2-Compliance](/de/loesungen/nis2-compliance/)**
 - **[Souveräne KI](/de/loesungen/sovereign-ai/)**
-- **[Fallstudien](/de/case-studies/)** — neun Projekte, anonymisiert und ausführlich beschrieben
+- **[Fallstudien](/de/case-studies/)** — neun veröffentlichte Fallstudien, anonymisiert und ausführlich beschrieben
 
 ---
 

@@ -47,14 +47,14 @@ faq:
   - q: "Wie funktioniert RAG auf einer Private-LLM-Plattform?"
     a: "Retrieval-Augmented Generation indexiert Ihre eigenen Dokumente in einer Vektordatenbank — auf dieser Plattform Qdrant — und ruft zum Zeitpunkt der Anfrage die relevantesten Passagen ab, auf die sich die Antwort des Modells stützt. Das läuft neben den GPU-Inferenz-Workloads innerhalb derselben Grenze, sodass Quelldokumente und generierte Antworten privat bleiben."
   - q: "Kann ich Modelle mit meinen eigenen Daten feinjustieren?"
-    a: "Ja. Weil GPUs und Daten auf derselben Plattform liegen, können Sie Open-Weight-Modelle mit proprietären Daten feinjustieren oder anpassen, ohne dass diese Daten Ihre Infrastruktur verlassen. Die AI Platform bietet GPU-Scheduling und anteiliges Sharing (HAMi) für Inferenz- und Fine-Tuning-Workloads; MIG und Time-Slicing stehen auf der Roadmap."
+    a: "Ja. Weil GPUs und Daten auf derselben Plattform liegen, können Sie Open-Weight-Modelle mit proprietären Daten feinjustieren oder anpassen, ohne dass diese Daten Ihre Infrastruktur verlassen. Die AI Platform bietet GPU-Scheduling, Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) und anteiliges Sharing (HAMi) für Inferenz- und Fine-Tuning-Workloads; MIG und Time-Slicing stehen auf der Roadmap."
   - q: "Wie unterscheidet sich ein Private LLM von Sovereign AI?"
     a: "Beides ist verwandt, aber nicht dasselbe. Private LLM bezeichnet den konkreten Workload — ein selbst gehostetes Modell auf Ihren GPUs. Sovereign AI ist die übergeordnete Strategie, KI-Rechenleistung, Daten und Governance innerhalb einer Rechtsordnung zu halten, die Sie kontrollieren. Ein Private LLM ist meist ein Baustein eines Sovereign-AI-Programms; das Gesamtbild zeigt die Seite zu Sovereign AI."
   - q: "Was umfasst ein Private-LLM-Projekt mit Ænix?"
     a: "Es läuft als AI Platform Build: GPU-Architektur, ein Inferenz-Stack, eine Qdrant-Vektordatenbank für RAG, Isolation zwischen Tenants und Single Sign-on, bereitgestellt auf Ihrer eigenen Hardware. In einem veröffentlichten Projekt hat dieselbe Plattform NVIDIA-Dynamo-Inferenz und einen Qdrant-RAG-Stack paketiert und in die Umgebung eines Endkunden ausgeliefert; die Daten blieben dabei innerhalb dieser Grenze."
 ---
 
-**Betreiben Sie Ihr eigenes großes Sprachmodell auf Hardware, die Sie kontrollieren — Open-Weight-Modelle wie Llama, Mistral und Qwen, bereitgestellt für Inferenz, per RAG auf Ihre Dokumente gestützt und bei Bedarf mit Ihren Daten feinjustiert. Ein Private LLM hält Prompts, Embeddings, Weights, Schlüssel und den Audit-Trail auf Ihrer Seite der Grenze: Sie nutzen moderne GenAI, ohne sensible Texte an die API eines Drittanbieters zu schicken. Ænix baut diese Plattformen auf [Cozystack](/de/produkte/cozystack/), auf Ihren eigenen GPUs.**
+**Betreiben Sie Ihr eigenes großes Sprachmodell auf Hardware, die Sie kontrollieren — Open-Weight-Modelle wie Llama, Mistral und Qwen, bereitgestellt für Inferenz, per RAG auf Ihre Dokumente gestützt und bei Bedarf mit Ihren Daten feinjustiert. Ein Private LLM hält Prompts, Embeddings, Weights und den Audit-Trail auf Ihrer Seite der Grenze: Sie nutzen moderne GenAI, ohne sensible Texte an die API eines Drittanbieters zu schicken. Ænix baut diese Plattformen auf [Cozystack](/de/produkte/cozystack/), auf Ihren eigenen GPUs.**
 
 > **Passt zu:** **[Ænix AI Platform](/de/produkte/ai-platform/)** — GPU-Scheduling und anteiliges Sharing für Inferenz und Fine-Tuning, Angebot per RFP. Für die elastische GPU-Kapazität darunter kombinieren Sie sie mit **[GPU-Cloud-Bursting](/de/loesungen/gpu-cloud-bursting/)**. Die übergeordnete Strategie beschreibt **[Sovereign AI](/de/loesungen/sovereign-ai/)**. Für Verantwortliche von ML-Plattformen: der [Leitfaden für Leiter AI/ML](/de/fuer/leiter-ai-ml/).
 
@@ -88,14 +88,14 @@ Eine On-Prem-GenAI-Plattform ist mehr als eine Modelldatei. Ænix setzt den gesa
 <div class="diagram__conn">für Inferenz bereitgestellt auf</div>
 <div class="diagram__node diagram__node--brand"><b>Cozystack-GPUs</b><div class="diagram__chips"><span>NVIDIA Dynamo</span><span>Qdrant-RAG</span><span>Daten verlassen nie die Grenze</span></div></div>
 <div class="diagram__conn">ergibt</div>
-<div class="diagram__node"><b>Private Inferenz</b><div class="diagram__chips"><span>Antworten bleiben innerhalb der Grenze</span><span>Weights, Schlüssel, Logs bei Ihnen</span></div></div>
+<div class="diagram__node"><b>Private Inferenz</b><div class="diagram__chips"><span>Antworten bleiben innerhalb der Grenze</span><span>Weights und Logs bei Ihnen</span></div></div>
 </div>
 </div>
 
 - **Bereitstellung von Open-Weight-Modellen.** Modelle wie Llama, Mistral und Qwen laufen für Inferenz auf Ihren GPUs und stehen Teams als gewöhnliche Kubernetes-Services zur Verfügung statt als externer Endpoint.
 - **RAG über Ihre Dokumente.** Eine **Qdrant**-Vektordatenbank indexiert Ihre eigenen Inhalte und ruft zum Zeitpunkt der Anfrage die relevanten Passagen ab, sodass sich Antworten auf Ihre Daten stützen. Quelldokumente und generierte Antworten bleiben innerhalb der Grenze.
 - **Effiziente Inferenz.** **NVIDIA Dynamo** liefert disaggregiertes Serving und KV-Cache-bewusstes Routing über die gesamte GPU-Flotte und erhöht so die Auslastung teurer Karten ohne zusätzliche Herstellerlizenzen.
-- **GPU-Scheduling und Isolation.** Der [Kubernetes](https://kubernetes.io/docs/concepts/scheduling-eviction/)-Scheduler und der NVIDIA GPU Operator machen GPUs zu einer vollwertigen, einplanbaren Ressource (ganze GPUs für Pods oder VMs, anteiliges Sharing über HAMi); Hosted Control Planes pro Tenant halten Teams auf gemeinsamer Hardware voneinander getrennt.
+- **GPU-Scheduling und Isolation.** Der [Kubernetes](https://kubernetes.io/docs/concepts/scheduling-eviction/)-Scheduler und der NVIDIA GPU Operator machen GPUs zu einer vollwertigen, einplanbaren Ressource (ganze GPUs für Pods oder per Passthrough an VMs, NVIDIA vGPU für VMs mit Ihrer NVIDIA-vGPU-Lizenz, anteiliges Sharing über HAMi); Hosted Control Planes pro Tenant halten Teams auf gemeinsamer Hardware voneinander getrennt.
 - **Fine-Tuning vor Ort.** Weil GPUs und Daten auf derselben Plattform liegen, können Sie Open-Weight-Modelle mit proprietären Daten anpassen, ohne dass diese Daten Ihre Infrastruktur verlassen.
 
 ---

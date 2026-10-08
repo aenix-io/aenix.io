@@ -1,7 +1,7 @@
 ---
 title: "Cozystack als universeller Installer: eine KI-Plattform im Kundenumfeld"
 seo_title: "Eine KI-Plattform als Cozystack-Installer ausgeliefert"
-description: "Ein Telekom-Integrator baute auf Cozystack eine KI-Plattform (GPU, RAG auf Qdrant, NVIDIA-Dynamo-Inferenz) und lieferte dieselbe Distribution an seinen Kunden."
+description: "Ein Telekommunikationsbetreiber und Integrator baute auf Cozystack eine KI-Plattform mit GPUs, RAG und NVIDIA Dynamo und lieferte sie auch an seinen Kunden."
 hero_subtitle: "Unternehmens-KI-Plattform, ausgeliefert direkt im Kundenumfeld"
 date: 2026-06-15
 lastmod: 2026-06-15

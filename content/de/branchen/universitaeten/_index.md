@@ -25,14 +25,14 @@ quick_facts:
   - label: "Für wen"
     value: "Universitäten, Forschungsinstitute und F&E-Organisationen in der EU, im DACH-Raum und in Zentralasien."
   - label: "Kernfunktion"
-    value: "GPU-as-a-Service für NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator (Passthrough an VMs, anteilige Nutzung für Pods über HAMi), Isolation pro Labor und pro Kohorte über Tenant-CRDs, KubeVirt-VMs und Container sowie Air-Gap-Unterstützung. Cozystack ist seit September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen."
+    value: "GPU-as-a-Service für NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator (Passthrough an VMs, NVIDIA vGPU für VMs mit Ihrer NVIDIA-vGPU-Lizenz, anteilige Nutzung für Pods über HAMi), Isolation pro Labor und pro Kohorte über Tenant-CRDs, KubeVirt-VMs und Container sowie Air-Gap-Unterstützung. Cozystack ist seit September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen."
   - label: "Standards und Föderation"
     value: "Unterstützt reproduzierbare Forschung (Plan S, FAIR, Horizon Europe) durch deklarative, versionierte Umgebungen; über Standard-Kubernetes-APIs lässt sich die Plattform als projektspezifische Integration an Forschungsinfrastrukturen wie EOSC anbinden."
   - label: "Vorgehen"
     value: "Phasenweise Zusammenarbeit entlang der Förderzyklen, beginnend mit einem Platform Readiness Assessment zum Festpreis (14 oder 28 Tage), und ausdrücklicher Kompetenztransfer an die Hochschul-IT."
 faq:
   - q: "Kann Cozystack GPU-Zugang für KI/ML-Forschungslabore bereitstellen?"
-    a: "Ja. GPUs werden über den NVIDIA GPU Operator bereitgestellt; HAMi ermöglicht die anteilige Nutzung, sodass sich mehrere Labore eine Karte teilen, statt auf eine ganze zu warten. Ganze GPUs lassen sich auch per Passthrough an VMs durchreichen; MIG und Time-Slicing stehen auf der Roadmap. Labore stellen GPU-Umgebungen im Self-Service innerhalb ihrer Quotas pro Labor über die Tenant-CRD bereit — ohne Ticket-Warteschlangen."
+    a: "Ja. GPUs werden über den NVIDIA GPU Operator bereitgestellt; HAMi ermöglicht die anteilige Nutzung, sodass sich mehrere Labore eine Karte teilen, statt auf eine ganze zu warten. Ganze GPUs lassen sich auch per Passthrough an VMs durchreichen, und NVIDIA vGPU steht für VMs zur Verfügung (erfordert Ihre NVIDIA-vGPU-Lizenz); MIG und Time-Slicing stehen auf der Roadmap. Labore stellen GPU-Umgebungen im Self-Service innerhalb ihrer Quotas pro Labor über die Tenant-CRD bereit — ohne Ticket-Warteschlangen."
   - q: "Wie isoliert Cozystack Fakultäten, Labore und Studierendenkohorten?"
     a: "Über das Mandantenmodell der Tenant-CRD. Jede Fakultät, jedes Labor und jede Studierendenkohorte erhält einen eigenen Tenant mit Quotas, RBAC und Audit-Trails. Sandboxes für Kohorten unterstützen Quotas pro Studierendem und automatisches Aufräumen, sodass Lehre und Forschung auf gemeinsamer Hardware isoliert bleiben."
   - q: "Unterstützt Cozystack sensible Forschungsdaten?"
@@ -77,7 +77,7 @@ Moderne Forschung verlangt zunehmend GPU-Cluster, Datenverarbeitung in großem M
 </div>
 
 Cozystack liefert:
-- **GPU-Cluster** für NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator, mit anteiliger Nutzung über HAMi, sodass sich mehrere Labore eine Karte teilen, statt auf eine ganze zu warten, und mit Passthrough ganzer GPUs an VMs (MIG und Time-Slicing stehen auf der Roadmap)
+- **GPU-Cluster** für NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) und anteilige Nutzung über HAMi, sodass sich mehrere Labore eine Karte teilen, statt auf eine ganze zu warten (MIG und Time-Slicing stehen auf der Roadmap)
 - **Mandantenfähige Isolation pro Labor** — Tenant-CRD-Modell mit Quotas, RBAC und Audit-Trails pro Labor
 - **VMs und Container nebeneinander** — gewachsene Forschungs-Workflows laufen neben modernen containerisierten Pipelines
 - **Self-Service für Projektleitungen** — Labore stellen ihre Umgebungen selbst bereit, ohne Ticket-Warteschlangen

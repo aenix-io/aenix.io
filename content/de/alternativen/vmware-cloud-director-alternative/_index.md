@@ -99,7 +99,7 @@ Ein Katalog in VMware Cloud Director besteht überwiegend aus VMs. Auf der Ænix
 - **Managed Kubernetes**: ein Cluster pro Kunde, mit eigener Control Plane
 - **Managed-Datenbanken und Queues**: PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, MongoDB, OpenSearch, Qdrant
 - **S3-kompatibler Object Storage** für Backups und Anwendungen
-- **GPU-Workloads**: GPUs per Passthrough an VMs oder mit HAMi zwischen Containern geteilt. Siehe [GPU as a Service](/de/loesungen/gpu-as-a-service/)
+- **GPU-Workloads**: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) oder fraktionierte Freigabe zwischen Containern über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Siehe [GPU as a Service](/de/loesungen/gpu-as-a-service/)
 
 </div>
 

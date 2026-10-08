@@ -106,9 +106,7 @@ Die Umsetzung in Phase 2 läuft durchgängig von der Hardware über die Plattfor
 
 ## Referenzen
 
-Kunden aus dem öffentlichen Sektor werden nicht namentlich genannt. Referenzen besprechen wir im Discovery-Gespräch, soweit der Kunde es erlaubt, und [neun Projekte sind ausführlich beschrieben](/de/case-studies/) — anonymisiert, mit Architektur und Zahlen.
-
-{{< quote-carousel >}}
+Kunden aus dem öffentlichen Sektor werden nicht namentlich genannt. Referenzen besprechen wir im Discovery-Gespräch, soweit der Kunde es erlaubt, und [neun veröffentlichte Fallstudien](/de/case-studies/) beschreiben Projekte ausführlich — anonymisiert, mit Architektur und Zahlen.
 
 ---
 

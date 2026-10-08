@@ -7,7 +7,7 @@ language: "de"
 hreflang_en: /industries/
 ---
 
-**Branchenbezogene Nachweise und Vorgehensmuster. Finden Sie Ihren Sektor — mit den regulatorischen Auslösern, den Architekturmustern und der passenden Ænix-Plattform. Projekte mit Banken bleiben anonym, aber [neun Deployments sind ausführlich beschrieben](/de/case-studies/), mit Architektur und Zahlen.**
+**Branchenbezogene Nachweise und Vorgehensmuster. Finden Sie Ihren Sektor — mit den regulatorischen Auslösern, den Architekturmustern und der passenden Ænix-Plattform. Projekte mit Banken bleiben anonym, aber [neun veröffentlichte Fallstudien](/de/case-studies/) beschreiben Projekte ausführlich, mit Architektur und Zahlen.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
@@ -65,7 +65,7 @@ hreflang_en: /industries/
 
 **Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben:** GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**Projekte unter NDA** (Banken, souveräne Cloud, AI/ML, Telco): Die Kundennamen sind vertraglich geschützt. [Neun Deployments sind ausführlich beschrieben](/de/case-studies/), anonymisiert, aber mit vollständiger Architektur und allen Zahlen — darunter [eine Private Cloud in einer Bank](/de/case-studies/private-cloud-in-a-bank/) und [ein einheitliches Cloud-Portal für eine Finanzgruppe](/de/case-studies/unified-cloud-portal-financial-group/).
+**Projekte unter NDA** (Banken, souveräne Cloud, AI/ML, Telco): Die Kundennamen sind vertraglich geschützt. [Neun veröffentlichte Fallstudien](/de/case-studies/) beschreiben Projekte ausführlich, anonymisiert, aber mit vollständiger Architektur und allen Zahlen — darunter [eine Private Cloud in einer Bank](/de/case-studies/private-cloud-in-a-bank/) und [ein einheitliches Cloud-Portal für eine Finanzgruppe](/de/case-studies/unified-cloud-portal-financial-group/).
 
 **Plattform-F&E für Anbieter im Ökosystem:** Entwicklung von CSI-Treibern, Forschung zu Virtualisierungsplattformen, Public-Cloud- und VPS-Hosting-Plattformen, schlanke VDI, Backup-Systeme, die die Speicherkosten um bis zu 75 % senken. [Fallstudien ansehen →](/de/case-studies/)
 

@@ -249,4 +249,4 @@ Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben.
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, Certified-Kubernetes-Distribution) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud Platform, Private Cloud Platform und AI Platform.*
+*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud Platform, Private Cloud Platform und AI Platform.*

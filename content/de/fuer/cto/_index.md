@@ -53,7 +53,7 @@ Kosten und Datenstandort für die Workloads zurückholen, die nicht auf einen Hy
 
 ## Zwei Wege, wie Ænix Sie unterstützt
 
-**1. Eine schlüsselfertige Plattform betreiben.** Die [Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/) gibt Ihnen eine produktive Cloud-in-a-Box auf Cozystack — mandantenfähig, mit Managed Databases, Storage und Observability —, die Ihr Team betreibt, mit unserem SLA im Rücken.
+**1. Eine schlüsselfertige Plattform betreiben.** Die [Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/) gibt Ihnen eine produktive, mandantenfähige Private Cloud auf Cozystack — mit VMs, Managed Kubernetes, Managed Databases, Storage und Observability —, die Ihr Team betreibt, mit unserem SLA im Rücken.
 
 **2. Mit unserem Team aufbauen oder migrieren.** Cozystack ist das Framework; **Ænix ist Ihr ausgelagertes Engineering-Team** für eine [Cloud-Repatriation](/de/loesungen/cloud-repatriation/) oder einen Neuaufbau — Architektur, Migration und das Modell zur [Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/), umgesetzt von den Leuten, die die Plattform pflegen.
 

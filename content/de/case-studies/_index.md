@@ -8,7 +8,7 @@ language: "de"
 hreflang_en: /case-studies/
 ---
 
-**Neun Deployments, unten ausführlich dokumentiert: wie der Bestand vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Darüber hinaus betreiben die unten genannten Hosting-Anbieter die Ænix Public Cloud Platform produktiv, und Referenzgespräche zu weiteren Projekten lassen sich unter NDA vereinbaren.**
+**Neun veröffentlichte Fallstudien, unten ausführlich dokumentiert: wie der Bestand vorher aussah, was gebaut wurde, was schiefging und welche Zahlen am Ende standen. Die Kunden sind anonymisiert, weil die Verträge es verlangen — Architektur, Fehlerbilder und Zahlen sind es nicht. Darüber hinaus betreiben die unten genannten Hosting-Anbieter die Ænix Public Cloud Platform produktiv, und Referenzgespräche zu weiteren Projekten lassen sich unter NDA vereinbaren.**
 
 ---
 
