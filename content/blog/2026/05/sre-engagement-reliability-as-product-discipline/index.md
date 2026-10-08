@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["DevOps", "Platform Engineering", "Observability", "Cozystack"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/sre-produktdisziplin-engagement-zuverlaessigkeit/"
 companion_landing: "/services/sre-consulting/"
 companion_label: "See SRE consulting services →"
 quiz:
