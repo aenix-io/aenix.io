@@ -1,5 +1,6 @@
 ---
-title: "GPU cloud bursting and multi-cloud GPU-as-a-service"
+title: "GPU cloud bursting across bare metal, public and sovereign clouds"
+seo_title: "GPU cloud bursting on Kubernetes"
 description: "Cloud bursting for GPU workloads: burst from owned bare metal into public and sovereign clouds under one Cluster API, with fractional GPU sharing."
 date: 2026-07-01
 lastmod: 2026-07-01
@@ -8,7 +9,7 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "cloud bursting"
-secondary_keywords: ["gpu as a service", "multi-cloud kubernetes", "gpu cloud bursting"]
+secondary_keywords: ["gpu cloud bursting", "multi-cloud kubernetes", "multi-cloud gpu"]
 hreflang_de: "/de/loesungen/gpu-cloud-bursting/"
 hreflang_en: "/solutions/gpu-cloud-bursting/"
 related_pages:
@@ -26,7 +27,7 @@ service:
   areaServed: ["EU", "DACH"]
   audience: "AI/ML and research organizations"
 direct_answer: |
-  **Cloud bursting is running steady workloads on your own capacity and spilling peak demand into external clouds only when you need it. For GPU work, this means treating owned bare metal as your baseline and bursting inference or training jobs into public hyperscalers or a sovereign cloud during spikes — then tearing the extra capacity down. Aenix delivers this as GPU-as-a-service on your own platform: a single Cluster API spans bare metal, hyperscaler and sovereign cloud, with fractional GPU sharing, autoscaling and a WireGuard mesh. It fits AI/ML teams, research institutions and platform operators who need elastic GPU without hyperscaler lock-in — and, in a live academic case, cut sovereign-cloud GPU cost roughly 5x.**
+  **Cloud bursting is running steady workloads on your own capacity and spilling peak demand into external clouds only when you need it. For GPU work, this means treating owned bare metal as your baseline and bursting inference or training jobs into public hyperscalers or a sovereign cloud during spikes — then tearing the extra capacity down. Ænix delivers this as an engineering engagement on Cozystack and Cluster API — it is not a one-click feature: a single Cluster API spans bare metal, hyperscaler and sovereign cloud, with fractional GPU sharing (HAMi), autoscaling and a WireGuard mesh. It fits AI/ML teams, research institutions and platform operators who need elastic GPU without hyperscaler lock-in — and, in a live academic case, cut sovereign-cloud GPU cost roughly 5x.**
 quick_facts:
   - label: "What it is"
     value: "Running baseline GPU workloads on owned capacity and bursting peaks into external clouds on demand"
@@ -37,7 +38,7 @@ quick_facts:
   - label: "Economics"
     value: "~5x cheaper GPU on a sovereign cloud vs. the prior hyperscaler setup (academic multi-cloud case)"
   - label: "Platform"
-    value: "Cozystack — CNCF project, Apache 2.0 (no per-GPU or per-CPU licensing)"
+    value: "Cozystack — CNCF Sandbox project, Apache 2.0 (no per-GPU or per-CPU licensing); delivered as an engagement, not a one-click feature"
   - label: "Connectivity"
     value: "WireGuard mesh stitches sites and clouds into one pod and service network"
   - label: "Isolation"
@@ -58,9 +59,11 @@ faq:
     a: "No. Cloud bursting is additive. Owned bare metal stays the baseline, existing storage (for example external Ceph) stays in place, and public or sovereign clouds are attached as burst targets. Nothing forces a full migration — you extend capacity where and when you need it."
 ---
 
-**Own the baseline, rent only the peaks. Cloud bursting lets you run steady GPU workloads on hardware you control and spill inference or training spikes into public or sovereign clouds on demand — then tear the extra capacity down. Ænix builds this as GPU-as-a-service on a single Kubernetes platform, so your teams get elastic GPU without hyperscaler lock-in, opaque billing, or a full migration.**
+**Own the baseline, rent only the peaks. Cloud bursting lets you run steady GPU workloads on hardware you control and spill inference or training spikes into public or sovereign clouds on demand — then tear the extra capacity down. Ænix builds this on a single Kubernetes platform, so your teams get elastic GPU without hyperscaler lock-in, opaque billing, or a full migration.**
 
-> **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — multi-tenant GPU scheduling, fractional sharing and ready blueprints for inference and fine-tuning. For the elastic self-service cloud underneath it, combine with **[Public Cloud Platform](/products/public-cloud-platform/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**.
+Bursting is delivered as an engagement on Cozystack and Cluster API, designed around your burst targets; it is not a one-click feature you switch on in a proof of concept.
+
+> **Pairs with:** **[Ænix AI Platform](/products/ai-platform/)** — multi-tenant GPU scheduling and fractional sharing (HAMi) for inference and fine-tuning; quoted per RFP. For the elastic self-service cloud underneath it, combine with **[Public Cloud Platform](/products/public-cloud-platform/)**. Model the numbers with the **[ROI & TCO calculators](/roi-calculator/)**, or watch the [build-your-GPU-cloud webinar](/webinars/build-your-gpu-cloud/). ML platform leads: see the [Head of AI/ML guide](/for/head-of-ai-ml/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -75,7 +78,7 @@ faq:
 
 ## What you get
 
-GPU cloud bursting on the Ænix platform is one elastic GPU pool spread across the infrastructure you already have and the clouds you want to reach.
+GPU cloud bursting on Cozystack is one elastic GPU pool spread across the infrastructure you already have and the clouds you want to reach.
 
 - **Burst to public and sovereign clouds.** Baseline workloads run on owned bare metal. When demand spikes, capacity is added in a public hyperscaler, a sovereign cloud, or both — and released afterwards. A sovereign cloud can be a first-class burst target when a regulator binds GPU processing to a jurisdiction or when its GPUs are simply cheaper.
 - **Fractional GPU sharing.** With HAMi on top of the NVIDIA GPU-operator, several jobs share one physical card. A notebook, a small inference endpoint and a batch job can co-exist on a single GPU instead of each pinning a whole device.
@@ -109,7 +112,7 @@ The pattern is standard Kubernetes primitives, assembled and operated end-to-end
 
 - **Cluster Autoscaler** watches for GPU pods that cannot be scheduled and provisions nodes on the right target — bare metal, hyperscaler or sovereign cloud — through the [Cluster API](https://cluster-api.sigs.k8s.io/), Kubernetes' declarative standard for lifecycle-managing clusters and machines. When the queue drains, the nodes are removed.
 - **Cilium plus a WireGuard mesh (Kilo)** provide the CNI and an encrypted overlay that spans clouds. Freshly autoscaled nodes advertise themselves into the mesh and reach shared storage with no manual steps — the [Kubernetes networking model](https://kubernetes.io/docs/concepts/services-networking/) treats them as if they were local.
-- **NVIDIA GPU-operator** handles driver installation, device discovery and passthrough on each node, and HAMi adds fractional sharing so one card serves several pods.
+- **NVIDIA GPU Operator** handles driver installation and device discovery on each node, and HAMi adds fractional sharing so one card serves several pods. MIG and time-slicing are on the roadmap.
 - **Talos Linux and Kamaji** form the base: an immutable, API-managed OS for the nodes and hosted control planes for tenant clusters, so each tenant is isolated by design.
 
 This is the same class of open, [CNCF](https://www.cncf.io/)-aligned building blocks the cloud-native ecosystem standardizes on — no proprietary orchestration layer, no per-GPU control-plane tax.
@@ -120,11 +123,11 @@ This is the same class of open, [CNCF](https://www.cncf.io/)-aligned building bl
 
 GPU is the scarce, expensive resource, and its price is under pressure: GPU prices are volatile and have spiked sharply in short windows. Owning the baseline and bursting the peaks — rather than renting GPU 24/7 in a hyperscaler — is precisely where that pressure is absorbed.
 
-In the **[academic multi-cloud case study](/case-studies/multicloud-academic-gpu/)**, a European academic-computing SaaS moved its backend and user workloads off a public hyperscaler onto owned bare metal on Cozystack, kept a single Cluster API across bare metal, a hyperscaler and a sovereign Swiss OpenStack cloud, and burst GPU on demand. GPU on the sovereign cloud came out roughly **5x cheaper** than the prior hyperscaler setup — with fractional sharing and per-tenant isolation intact, and no downtime for thousands of active users.
+In the **[academic multi-cloud case study](/case-studies/multicloud-academic-gpu/)**, a European academic-computing SaaS moved its backend and user workloads off a public hyperscaler onto owned bare metal on Cozystack, kept a single Cluster API across bare metal, a hyperscaler and a sovereign OpenStack cloud, and burst GPU on demand. GPU on the sovereign cloud came out roughly **5x cheaper** than the prior hyperscaler setup — with fractional sharing and per-tenant isolation intact, and no downtime for thousands of active users.
 
 Your mix of baseline, peak and burst target decides the saving. Model it with the **[ROI & TCO calculators](/roi-calculator/)** before you commit to hardware or a burst-target contract.
 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other. We build multi-cloud GPU platforms for AI/ML, research and platform-operator organizations across the EU and DACH.*
+*Ænix created [Cozystack](https://cozystack.io) — a CNCF Sandbox project (Incubation application in due diligence), Apache 2.0, accepted into the CNCF Kubernetes AI Conformance program in September 2026 — and co-maintains it. Ænix sells three platforms on that engine — Public Cloud, Private Cloud and AI.*
