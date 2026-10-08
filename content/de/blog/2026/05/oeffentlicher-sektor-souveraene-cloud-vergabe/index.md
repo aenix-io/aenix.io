@@ -90,9 +90,8 @@ Andere Mitgliedstaaten haben eigene Varianten.
 
 - **Kasachstan** — per Vergaberecht vorgeschriebene Souveränität für
   Workloads des öffentlichen Sektors über goszakup.gov.kz /
-  mitwork.kz / zakup.sk.kz. Aktiver Markt für souveräne Clouds:
-  QazCloud, Clever Cloud, Produktstarts souveräner Clouds regionaler
-  Telcos.
+  mitwork.kz / zakup.sk.kz. Aktiver Markt für souveräne Clouds,
+  darunter Produktstarts souveräner Clouds regionaler Telcos.
 - **Singapur: IM8** — IT-Sicherheitsstandards der Regierung.
 - **Indien: MeitY** — Ministry of Electronics IT, einschließlich des
   STQC-Rahmens für gelistete Cloud-Anbieter (Empanelled CSP).
@@ -185,8 +184,8 @@ erfüllt:
   verändern oder den Plattformanbieter austauschen.
 - **Kundenkontrollierte Schlüssel** — External Secrets Operator mit
   dem HSM des Kunden als Backend; Ænix hält niemals Schlüssel.
-- **Air-Gap-Unterstützung** — dokumentiert und im Einsatz bei Kunden
-  mit eingestuften Daten und verteidigungsnahen Anwendungen.
+- **Air-Gap-Unterstützung** — dokumentiert für Anwendungsfälle mit
+  eingestuften Daten und verteidigungsnahen Anwendungen.
 - **Selbst betriebene Observability** — VictoriaMetrics und
   VictoriaLogs innerhalb der Jurisdiktion; kein Residenzleck durch
   SaaS-Observability.
@@ -289,9 +288,8 @@ erscheinen in der Regel mit einer Verzögerung von 3-5 Jahren.
 
 Öffentlich sagen wir Folgendes: Ænix hat mehrjährige Projekte mit
 souveränen Cloud-Produkten, die auf den kasachischen Vergabeportalen
-gelistet sind, mit regionalen Digitalisierungsprogrammen von
-EU-Mitgliedstaaten und mit verteidigungsnaher Infrastruktur von
-europäischen Tier-1-Organisationen. Konkrete Referenzen nennen wir
+gelistet sind, und mit regionalen Digitalisierungsprogrammen von
+EU-Mitgliedstaaten. Konkrete Referenzen nennen wir
 unter NDA im Discovery Call.
 
 ## Wann dieses Modell der Zusammenarbeit passt
