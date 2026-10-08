@@ -31,7 +31,7 @@ APP = SITE / "static" / "tco-calculator-app"
 RELATED = [
     "/alternatives/vmware-alternative/",
     "/migration/vmware/",
-    "/products/aenix-platform/",
+    "/products/",
     "/pricing/",
     "/roi-calculator/",
 ]
@@ -85,6 +85,12 @@ def enable_widget(html: str) -> str:
     )
 
 
+def demote_h1(html: str) -> str:
+    """The Hugo page prints the title as its H1; the generated fragment's own
+    <h1> would be a second one."""
+    return re.sub(r"</h1>", "</h2>", re.sub(r"<h1(\s|>)", r"<h2\1", html))
+
+
 def as_markdown_body(html: str) -> str:
     """Hugo refuses text/html content files under the default security policy,
     so the fragment ships inside a .md file. Goldmark passes a raw HTML block
@@ -116,7 +122,7 @@ def main() -> int:
     written = []
     for meta_path in sorted(static.rglob("meta.json")):
         meta = json.loads(meta_path.read_text())
-        body = as_markdown_body(enable_widget((meta_path.parent / "index.html").read_text()))
+        body = as_markdown_body(demote_h1(enable_widget((meta_path.parent / "index.html").read_text())))
         rel = meta_path.parent.relative_to(static)
         if rel == Path("."):
             target, weight = CONTENT / "_index.md", 10
@@ -126,6 +132,10 @@ def main() -> int:
             weight = 20 if meta.get("tier") == 1 else 30
         target.write_text(frontmatter(meta, weight) + body)
         written.append(meta["path"])
+
+    # robots, self-hosted fonts and the next-step bar on the vendored app
+    import subprocess
+    subprocess.run([sys.executable, str(SITE / "scripts" / "harden-static-apps.py")], check=True)
 
     print(f"app  -> {APP.relative_to(SITE)}")
     for path in written:
