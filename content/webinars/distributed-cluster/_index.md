@@ -2,7 +2,8 @@
 title: "Webinar: the cluster that survives a datacenter outage"
 description: "Webinar held on 30 September 2026 with Andrei Kvapil, creator of Cozystack: a Kubernetes cluster on your own hardware that survives losing a datacenter."
 language: "en"
-hreflang_de: "/de/webinare/verteilter-cluster/"
+# The German version was withdrawn; its URL redirects here.
+aliases: ["/de/webinare/verteilter-cluster/"]
 layout: "event-landing"
 bodyClass: "webinar-landing"
 primary_keyword: "distributed kubernetes cluster"

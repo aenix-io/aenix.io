@@ -2,7 +2,8 @@
 title: "Hands-on workshop: migrating off VMware to open source"
 description: "A free hands-on workshop held in August 2026 in Tashkent, Bishkek, Almaty and Astana: migrating a virtual machine off VMware to an open platform."
 language: "en"
-hreflang_de: "/de/workshops/vmware-zu-cozystack/"
+# The German version was withdrawn; its URL redirects here.
+aliases: ["/de/workshops/vmware-zu-cozystack/"]
 layout: "event-landing"
 hreflang_ru: "/ru/workshops/vmware-to-cozystack/"
 primary_keyword: "vmware migration workshop"

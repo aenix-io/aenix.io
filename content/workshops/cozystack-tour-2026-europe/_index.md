@@ -2,7 +2,8 @@
 title: "Cozystack Tour 2026 Europe: VMware migration workshop"
 description: "A free hands-on workshop across Europe: migrate a real VM off VMware to an open platform, and see the same cloud run AI and GPUs. Eight cities, Oct–Nov 2026."
 language: "en"
-hreflang_de: "/de/workshops/cozystack-tour-2026-europa/"
+# The German version was withdrawn; its URL redirects here.
+aliases: ["/de/workshops/cozystack-tour-2026-europa/"]
 layout: "event-landing"
 region_slug: "eu"
 primary_keyword: "vmware migration workshop europe"
