@@ -3,9 +3,12 @@
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}
 {{ define "main" }}
+{{- $ru := eq (.Params.language | default "en") "ru" -}}
+{{- $base := cond $ru "/ru/certification/" "/certification/" -}}
 <article class="cert" data-tpl="cert-materials">
   <section class="cert__hero">
     <div class="container">
+      {{ partial "lang-switch.html" . }}
       <p class="cert__eyebrow">{{ .Params.eyebrow }}</p>
       <h1>{{ .Title }}</h1>
       <p class="cert__lead">{{ .Description }}</p>
@@ -25,7 +28,7 @@
       {{ end }}
     </div>
     <p style="margin-top:34px">
-      <a class="cert__btn" href="/certification/materials/all/">Одной страницей — для печати и PDF</a>
+      <a class="cert__btn" href="{{ $base }}materials/all/">{{ cond $ru "Одной страницей — для печати и PDF" "All on one page — for printing and PDF" }}</a>
     </p>
   </div>
 </article>

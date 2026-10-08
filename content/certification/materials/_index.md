@@ -1,36 +1,40 @@
 ---
-title: "Материалы к экзамену CCF"
-description: "Семь уроков — ровно то, что спрашивают на экзамене, и ничего сверх этого. Читаются за вечер, проверяются лабами."
-eyebrow: "Ænix Certification for Cozystack · подготовка"
+title: "CCF exam materials"
+description: "Seven lessons — exactly what the exam asks about, and nothing beyond it. Read in an evening, reinforced by the labs."
+eyebrow: "Ænix Certification for Cozystack · preparation"
 layout: "cert-materials"
-language: "ru"
+language: "en"
 url: "/certification/materials/"
+hreflang_ru: "/ru/certification/materials/"
 page_type: "flag-page"
 ---
 
-Это не учебник по Kubernetes и не пересказ документации. Это семь уроков ровно по тем
-темам, которые спрашивает экзамен, — с теми же весами, что у него в программе. Плюс
-восьмая страница-шпаргалка: таблицы, числа и план подготовки по дням.
+This is not a Kubernetes textbook and not a retelling of the documentation. It is seven lessons on exactly the
+topics the exam asks about — with the same weights it has in the program. Plus
+an eighth cheat-sheet page: tables, numbers and a day-by-day preparation plan.
 
-Каждый урок устроен одинаково: сначала объяснение, потом схема, в конце — что именно из
-этого попадёт в вопросы, и ссылки на разделы документации, если захочется копнуть глубже.
+Every lesson is built the same way: first an explanation, then a diagram, and at the end — exactly what from
+it will show up in the questions, plus links to documentation sections if you want to dig deeper.
 
-Порядок неслучаен: первые две темы дают почти половину экзамена, и начинать стоит с них.
-Остальные пять весят по десять процентов каждая, и пропускать их нельзя — шести вопросов
-хватает, чтобы не добрать до порога.
+The order is not accidental: the first two topics make up almost half of the exam, and they are where to start.
+The other five weigh ten percent each, and you cannot skip them — six questions
+are enough to fall short of the threshold.
 
-**Сколько это займёт.** Минут сорок на все семь уроков, если читать подряд. Плюс лаборатории,
-если хотите потрогать руками, — но экзамен их не требует.
+**How long it takes.** About forty minutes for all seven lessons if you read them straight through. Plus the labs,
+if you want hands-on practice — but the exam does not require them.
 
-**Достаточно ли этого, чтобы сдать.** Материалы покрывают то, что спрашивают: мы сверили
-их с набором пробных вопросов, и ответ на девять из десяти находится прямо в уроках.
-Оставшееся — редкие частности, которые быстрее посмотреть в документации по ссылкам в конце
-каждого урока, чем заучивать заранее.
+**Is this enough to pass.** The materials cover what is asked: we checked
+them against the set of practice questions, and the answer to nine out of ten is right there in the lessons.
+The rest are rare details that are quicker to look up in the documentation via the links at the end of
+each lesson than to memorize in advance.
 
-**Скачать целиком.** [PDF со всеми уроками](/certification/ccf-materials.pdf) — те же
-семь уроков, та же вёрстка, читается без интернета.
+**Download it all.** A [print-friendly page with all lessons](/certification/materials/all/) — the same
+seven lessons and the same layout, which you can save as PDF from the browser and read offline. There is also
+[a ready-made PDF of the Russian edition](/certification/ccf-materials.pdf).
 
-**Основы Kubernetes** — коротко, в последнем уроке: экзамен спрашивает термины, но не
-требует уметь администрировать кластер. Если совсем не сталкивались, начните с
-<a href="https://kubernetes.io/ru/docs/concepts/" target="_blank" rel="noopener">официальной документации Kubernetes</a>,
-а сюда возвращайтесь потом.
+A Russian version of these materials is at [/ru/certification/materials/](/ru/certification/materials/).
+
+**Kubernetes fundamentals** are covered briefly in the last lesson: the exam asks about terms but does not
+require you to be able to administer a cluster. If you have never dealt with it, start with
+<a href="https://kubernetes.io/docs/concepts/" target="_blank" rel="noopener">the official Kubernetes documentation</a>,
+and come back here afterwards.

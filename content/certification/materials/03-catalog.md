@@ -1,173 +1,173 @@
 ---
-title: "Каталог управляемых сервисов"
-description: "Что можно заказать у платформы, что происходит после нажатия кнопки и почему это всегда один и тот же механизм."
+title: "Managed applications catalog"
+description: "What you can order from the platform, what happens after you click the button, and why it is always the same mechanism."
 lesson: 3
 weight: 3
 layout: "cert-lesson"
-language: "ru"
+language: "en"
 url: "/certification/materials/catalog/"
+hreflang_ru: "/ru/certification/materials/catalog/"
 page_type: "flag-page"
 ---
 
-Каталог — то, ради чего платформу обычно и берут. Вместо «поставьте нам PostgreSQL»
-человек открывает список и заказывает базу, как заказывают виртуалку.
+The catalog is usually the reason people take the platform in the first place. Instead of "please set up PostgreSQL for us",
+a person opens a list and orders a database the way they would order a virtual machine.
 
-## Что в списке
+## What is on the list
 
-Каталог поделён на четыре группы, и на экзамене их называют по-английски: базы данных
-`Databases`, обмен сообщениями `Messaging`, платформенные сервисы `Platform services`,
-сетевые сервисы `Networking services`.
+The catalog is split into four groups, and the exam names them in English: `Databases`,
+`Messaging`, `Platform services`, and `Networking services`.
 
-| Группа | Позиции |
+| Group | Items |
 |---|---|
-| Базы данных | PostgreSQL, MariaDB, MongoDB, ClickHouse, FoundationDB, Redis, Qdrant |
-| Обмен сообщениями | Kafka, NATS, RabbitMQ |
-| Платформенные сервисы | Harbor, OpenBao, Bucket, Tenant, Monitoring, Etcd, Ingress |
-| Сетевые сервисы | VPN, балансировщик TCP, кеш HTTP, virtual-router, VPC |
+| Databases | PostgreSQL, MariaDB, MongoDB, ClickHouse, FoundationDB, Redis, Qdrant |
+| Messaging | Kafka, NATS, RabbitMQ |
+| Platform services | Harbor, OpenBao, Bucket, Tenant, Monitoring, Etcd, Ingress |
+| Networking services | VPN, TCP balancer, HTTP cache, virtual-router, VPC |
 
-Виртуальные машины и кластеры Kubernetes живут в той же группе API, но экзамен относит их к
-другим доменам — виртуализации и мультитенантности, — а не к каталогу.
+Virtual machines and Kubernetes clusters live in the same API group, but the exam assigns them to
+other domains — virtualization and multi-tenancy — rather than to the catalog.
 
-Одна позиция в платформенных сервисах удивляет: **`Tenant` — тоже приложение каталога**.
-Вложенные тенанты именно так и создаются — администратор заказывает дочерний тенант из
-каталога, как заказал бы базу.
+One item in platform services comes as a surprise: **`Tenant` is a catalog application too**.
+That is exactly how nested tenants are created — an administrator orders a child tenant from
+the catalog, just as they would order a database.
 
-Список растёт от версии к версии, и заучивать его целиком незачем. Спрашивают другое —
-**что все они устроены одинаково**.
+The list grows from version to version, and there is no point memorizing all of it. What gets asked is something else —
+**that they are all built the same way**.
 
-## Один механизм на всё
+## One mechanism for everything
 
-Вот что стоит понять один раз и больше не возвращаться.
+This is worth understanding once, so you never have to come back to it.
 
 <figure>
-<svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Как заказ превращается в работающий сервис">
+<svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How an order turns into a running service">
   <rect x="10" y="70" width="130" height="56" rx="8" fill="#dbeafe" stroke="#2563eb"/>
-  <text x="75" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#1e3a8a">Ваш заказ</text>
+  <text x="75" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#1e3a8a">Your order</text>
   <text x="75" y="110" text-anchor="middle" font-family="monospace" font-size="11" fill="#1e40af">kind: Postgres</text>
   <path d="M145 98 L185 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
   <rect x="190" y="70" width="130" height="56" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
   <text x="255" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#312e81">HelmRelease</text>
-  <text x="255" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">Flux разворачивает чарт</text>
+  <text x="255" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">Flux deploys the chart</text>
   <path d="M325 98 L365 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
   <rect x="370" y="70" width="130" height="56" rx="8" fill="#f1f5f9" stroke="#64748b"/>
-  <text x="435" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Оператор</text>
-  <text x="435" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">приехал из чарта, ведёт базу</text>
+  <text x="435" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#0f172a">Operator</text>
+  <text x="435" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">from the chart, runs the DB</text>
   <path d="M505 98 L545 98" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
   <rect x="550" y="70" width="100" height="56" rx="8" fill="#dcfce7" stroke="#16a34a"/>
-  <text x="600" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#14532d">Поды</text>
-  <text x="600" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#166534">база работает</text>
+  <text x="600" y="93" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="700" fill="#14532d">Pods</text>
+  <text x="600" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#166534">database is up</text>
   <defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
     <path d="M0 0 L8 4 L0 8 z" fill="#64748b"/></marker></defs>
 </svg>
-<figcaption>Один и тот же путь для базы, очереди, виртуалки и кластера.</figcaption>
+<figcaption>The same path for a database, a queue, a virtual machine and a cluster.</figcaption>
 </figure>
 
-Вы создаёте объект. Платформа заводит на него `HelmRelease`, Flux разворачивает чарт —
-а уже из чарта приезжает **оператор**, который дальше и ведёт вашу базу: следит за
-репликацией, снимает копии, переключает главную копию при отказе.
+You create an object. The platform creates a `HelmRelease` for it, Flux deploys the chart —
+and the chart in turn brings the **operator**, which from then on runs your database: it watches
+replication, takes backups, and switches the primary copy over on failure.
 
-Своих движков баз платформа не пишет — берёт известные операторы. Их имена спрашивают:
+The platform does not write its own database engines — it uses well-known operators. Their names come up in questions:
 
-| Сервис | Оператор |
+| Service | Operator |
 |---|---|
 | PostgreSQL | CloudNativePG |
 | Kafka | Strimzi |
 | MongoDB | Percona |
 | ClickHouse | Altinity |
 
-Порядок звеньев стоит запомнить именно так: оператор приезжает **из** чарта, а не
-предшествует ему.
+Remember the order of the links exactly this way: the operator comes **from** the chart, it does not
+precede it.
 
-Отсюда два практических вывода, которые попадают в вопросы. Первый: **дашборд не делает
-ничего особенного** — нажатие кнопки собирает ровно такой же объект и отправляет его в
-API. Второй: если сервис не поднялся, смотреть надо на `HelmRelease`, а не гадать по подам.
+Two practical conclusions follow from this, and both show up in questions. First: **the dashboard does nothing
+special** — clicking the button assembles exactly the same object and sends it to the
+API. Second: if a service has not come up, look at the `HelmRelease` instead of guessing from the pods.
 
-Какие типы приложений вообще есть на конкретном кластере, показывает одна команда:
+Which application types exist on a particular cluster is shown by a single command:
 
 ```bash
 kubectl api-resources | grep apps.cozystack
 ```
 
-Результат работы платформа пишет обратно в сам объект — в `status.conditions`. У живого
-приложения там стоит `Ready: True`; если не стоит — дальше по цепочке, к `HelmRelease`.
+The platform writes the result back into the object itself — into `status.conditions`. A healthy
+application has `Ready: True` there; if it does not, go further down the chain, to the `HelmRelease`.
 
-## Три пути к одному и тому же
+## Three paths to the same thing
 
-**Дашборд** — форма с полями. Поля берутся из описания приложения, поэтому список
-параметров всегда соответствует версии платформы.
+**The dashboard** is a form with fields. The fields come from the application's definition, so the list
+of parameters always matches the platform version.
 
-**kubectl** — тот же объект текстом. Этот путь важен не потому, что удобнее, а потому, что
-описание можно отревьюить, положить в Git и откатить. Кнопку откатить нельзя.
+**kubectl** is the same object as text. This path matters not because it is more convenient, but because
+the definition can be reviewed, stored in Git and rolled back. A button click cannot be rolled back.
 
-**Terraform** — для тех, у кого инфраструктура уже описана им. Официальный провайдер зовут
-`cozystack/cozystack`; имя стоит запомнить, его спрашивают.
+**Terraform** is for those whose infrastructure is already described in it. The official provider is called
+`cozystack/cozystack`; the name is worth remembering, it gets asked.
 
-И общее для всех трёх путей предупреждение: `kubectl delete` на объекте приложения сносит
-приложение целиком — вместе с подами и данными. Обращайтесь с этой командой так же, как с
-удалением базы.
+And a warning common to all three paths: `kubectl delete` on an application object wipes out the
+application entirely — together with its pods and data. Treat this command the same way you would treat
+deleting a database.
 
-## Что задаётся при заказе
+## What you set when ordering
 
-Набор полей у каждого сервиса свой, но три вещи есть почти всегда.
+Each service has its own set of fields, but three things are almost always there.
 
-**Размер** (`resourcesPreset`) — сколько ресурсов дать. Задаётся не числами, а готовым набором вроде
-`t1.micro` или `u1.medium`: платформа подставляет за ним конкретные значения.
+**Size** (`resourcesPreset`) — how many resources to give. It is set not with numbers but with a ready-made preset such as
+`t1.micro` or `u1.medium`: the platform substitutes concrete values behind it.
 
-**Хранилище** (`storageClass`) — сколько места и какого класса. `replicated` держит несколько копий на
-разных узлах, `local` быстрее, но живёт на одном.
+**Storage** (`storageClass`) — how much space and of which class. `replicated` keeps several copies on
+different nodes; `local` is faster but lives on a single one.
 
-**Пользователи и базы** — платформа заводит их сама. Именно поэтому в файле схемы, который
-вы потом накатываете, нет команд создания базы и пользователя: они уже выполнены.
+**Users and databases** — the platform creates them itself. That is exactly why the schema file
+you apply afterwards contains no commands to create the database and the user: they have already been run.
 
-Пароли платформа генерирует сама и кладёт в секрет. В дашборде он виден на вкладке
-`Secrets` у самого приложения.
+The platform generates passwords itself and puts them in a secret. In the dashboard it is visible on the
+`Secrets` tab of the application itself.
 
-## Отказоустойчивость не бесплатна
+## High availability is not free
 
-Заказывая сервис, вы выбираете число копий. Одна копия — учебный стенд: узел ушёл, сервис
-ушёл с ним. Две и больше — платформа сама следит, кто главный, и переключает при отказе.
+When ordering a service, you choose the number of replicas. One replica is a training setup: the node goes away, and the service
+goes with it. With two or more, the platform itself keeps track of which one is primary and switches over on failure.
 
-Здесь же живёт частая ловушка: **отказоустойчивость сервиса и сохранность данных — разные
-вещи**. Копии спасают от падения узла, но не от удалённой таблицы. Для второго нужны
-резервные копии, и о них отдельный урок.
+This is also where a common trap lives: **service high availability and data safety are different
+things**. Replicas save you from a node failure, but not from a dropped table. For the latter you need
+backups, and they have a lesson of their own.
 
-## Что принесла версия 1.5
+## What version 1.5 brought
 
-Три факта из этого релиза спрашивают прямо. Шифрование клиентских подключений (`TLS`)
-появилось у четырёх сервисов: Kafka, NATS, Qdrant и PostgreSQL. Резервные копии управляемых
-приложений заработали из коробки — раньше администратору приходилось сначала настраивать
-хранилище под них. И появились `ApplicationDefinition`: механизм регистрирует в каталоге
-новый тип приложения поверх Helm-чарта, и у него сразу есть свой объект API, форма в
-дашборде и та же цепочка с `HelmRelease`. Так организации добавляют в общий каталог
-собственные сервисы — каталог не закрытый список.
+Three facts from this release are asked about directly. Encryption of client connections (`TLS`)
+arrived for four services: Kafka, NATS, Qdrant and PostgreSQL. Backups of managed
+applications started working out of the box — previously an administrator first had to set up
+storage for them. And `ApplicationDefinition` appeared: the mechanism registers a new application type in the catalog
+on top of a Helm chart, and that type immediately gets its own API object, a form in the
+dashboard and the same chain with a `HelmRelease`. This is how organizations add their own
+services to the shared catalog — the catalog is not a closed list.
 
-Каталог мы прошли, но одну его позицию — виртуальные машины — стоит разобрать отдельно:
-у неё своя модель, и привычки из vSphere здесь подводят.
+We have covered the catalog, but one of its items — virtual machines — deserves a separate look:
+it has a model of its own, and habits from vSphere let you down here.
 
 <div class="exam-box">
-<h4>Что спросят на экзамене</h4>
+<h4>What the exam will ask</h4>
 <ul>
-<li>Четыре группы каталога: <code>Databases</code>, <code>Messaging</code>,
-<code>Platform services</code>, <code>Networking services</code> — и кто в какой.</li>
-<li>Что <code>Tenant</code> — сам позиция каталога, и вложенные тенанты создают через неё.</li>
-<li>Операторов по именам: CloudNativePG — PostgreSQL, Strimzi — Kafka, Percona — MongoDB,
+<li>The four catalog groups: <code>Databases</code>, <code>Messaging</code>,
+<code>Platform services</code>, <code>Networking services</code> — and what belongs where.</li>
+<li>That <code>Tenant</code> is itself a catalog item, and nested tenants are created through it.</li>
+<li>The operators by name: CloudNativePG — PostgreSQL, Strimzi — Kafka, Percona — MongoDB,
 Altinity — ClickHouse.</li>
-<li>Что заказ любого сервиса — это объект в API, а дашборд лишь собирает его за вас.</li>
-<li>Что список типов показывает <code>kubectl api-resources | grep apps.cozystack</code>.</li>
-<li>Что готовность читают в <code>status.conditions</code> — там должно быть
+<li>That ordering any service means an object in the API, and the dashboard merely assembles it for you.</li>
+<li>That the list of types is shown by <code>kubectl api-resources | grep apps.cozystack</code>.</li>
+<li>That readiness is read from <code>status.conditions</code> — it should show
 <code>Ready: True</code>.</li>
-<li>Что <code>kubectl delete</code> на объекте удаляет приложение вместе с данными.</li>
-<li>Имя провайдера Terraform — <code>cozystack/cozystack</code>.</li>
-<li>Что нового в 1.5: TLS для Kafka, NATS, Qdrant и PostgreSQL; резервные копии из коробки;
-<code>ApplicationDefinition</code> для расширения каталога.</li>
-<li>Цепочку: объект → HelmRelease → чарт → оператор → работающие поды.</li>
-<li>Что диагностику начинают с состояния HelmRelease.</li>
-<li>Что пользователей и базы заводит платформа, а пароли кладёт в секрет.</li>
-<li>Разницу между <code>replicated</code> и <code>local</code>.</li>
-<li>Что число копий защищает от отказа узла, но не заменяет резервные копии.</li>
+<li>That <code>kubectl delete</code> on the object deletes the application along with its data.</li>
+<li>The Terraform provider name is <code>cozystack/cozystack</code>.</li>
+<li>What is new in 1.5: TLS for Kafka, NATS, Qdrant and PostgreSQL; backups out of the box;
+<code>ApplicationDefinition</code> for extending the catalog.</li>
+<li>The chain: object → HelmRelease → chart → operator → running pods.</li>
+<li>That troubleshooting starts with the state of the HelmRelease.</li>
+<li>That the platform creates users and databases and puts passwords in a secret.</li>
+<li>The difference between <code>replicated</code> and <code>local</code>.</li>
+<li>That the number of replicas protects against a node failure but does not replace backups.</li>
 </ul>
 </div>
 
-<p class="doclink">Подробнее:
-<a href="https://cozystack.io/docs/v1.6/applications/" target="_blank" rel="noopener">управляемые приложения</a> ·
-<a href="https://cozystack.io/docs/v1.6/kubernetes/" target="_blank" rel="noopener">кластеры Kubernetes</a></p>
+<p class="doclink">Further reading:
+<a href="https://cozystack.io/docs/v1.6/applications/" target="_blank" rel="noopener">managed applications</a> ·
+<a href="https://cozystack.io/docs/v1.6/kubernetes/" target="_blank" rel="noopener">Kubernetes clusters</a></p>

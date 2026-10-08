@@ -1,226 +1,234 @@
 ---
-title: "Как это вообще работает"
-description: "Желаемое состояние, операторы и GitOps — четыре идеи, на которых держится всё остальное."
+title: "How it all actually works"
+description: "Desired state, operators and GitOps — the four ideas everything else rests on."
 lesson: 7
 weight: 7
 layout: "cert-lesson"
-language: "ru"
+language: "en"
 url: "/certification/materials/cloud-native/"
+hreflang_ru: "/ru/certification/materials/cloud-native/"
 page_type: "flag-page"
 ---
 
-Последний урок — про идеи, а не про компоненты. Они лежат в основании всего, о чём шла речь
-раньше, и вопросы по ним формулируются просто: «почему это работает именно так».
+The last lesson is about ideas, not components. They underlie everything covered so far, and
+the questions about them are phrased simply: “why does it work this way”.
 
-## Вы описываете результат, а не действия
+## You describe the outcome, not the actions
 
-Привычный подход к администрированию — последовательность шагов: поставь, настрой, запусти,
-проверь. Здесь иначе: вы описываете, **как должно быть** — желаемое состояние, desired state, а система сама решает, что для
-этого сделать.
+The familiar approach to administration is a sequence of steps: install, configure, start,
+check. Here it is different: you describe **how things should be** — the desired state — and
+the system decides on its own what to do to get there.
 
-Разница проявляется, когда что-то ломается. Скрипт, отработавший вчера, сегодня не поможет:
-он уже выполнен. А описание желаемого состояния действует постоянно — если реальность от
-него отклонилась, её вернут обратно.
+The difference shows when something breaks. A script that ran yesterday will not help today:
+it has already been executed. A description of the desired state, on the other hand, is in
+effect all the time — if reality drifts away from it, reality is brought back.
 
 <figure>
-<svg viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Цикл сверки">
+<svg viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Reconciliation loop">
   <circle cx="280" cy="90" r="66" fill="none" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="5 5"/>
   <rect x="196" y="8" width="168" height="38" rx="7" fill="#dbeafe" stroke="#2563eb"/>
-  <text x="280" y="32" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#1e3a8a">1. Прочитать, как должно быть</text>
+  <text x="280" y="32" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#1e3a8a">1. Read how it should be</text>
   <rect x="368" y="70" width="170" height="38" rx="7" fill="#e0e7ff" stroke="#4f46e5"/>
-  <text x="453" y="94" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#312e81">2. Посмотреть, как есть</text>
+  <text x="453" y="94" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#312e81">2. Look at how it is</text>
   <rect x="196" y="134" width="168" height="38" rx="7" fill="#dcfce7" stroke="#16a34a"/>
-  <text x="280" y="158" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#14532d">3. Устранить разницу</text>
+  <text x="280" y="158" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#14532d">3. Close the gap</text>
   <rect x="22" y="70" width="170" height="38" rx="7" fill="#f1f5f9" stroke="#64748b"/>
-  <text x="107" y="94" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#0f172a">4. Повторять всегда</text>
+  <text x="107" y="94" text-anchor="middle" font-family="sans-serif" font-size="12.5" fill="#0f172a">4. Repeat forever</text>
 </svg>
-<figcaption>Этот цикл крутится непрерывно — и в контроллерах Kubernetes, и в операторах платформы.</figcaption>
+<figcaption>This loop runs continuously — both in Kubernetes controllers and in the platform's operators.</figcaption>
 </figure>
 
-Отсюда самолечение: удалённая копия приложения возвращается не потому, что кто-то заметил
-пропажу, а потому, что реальность разошлась с описанием.
+Hence self-healing: a deleted replica of an application comes back not because someone
+noticed it was missing, but because reality diverged from the description.
 
-## Из чего состоит манифест
+## What a manifest is made of
 
-Описание желаемого состояния живёт в файле YAML, который называют **манифестом**. Какой бы
-объект вы ни описывали — тенант, базу, виртуальную машину, — верхнеуровневых полей всегда
-четыре, и путать их на экзамене не стоит.
+The description of the desired state lives in a YAML file called a **manifest**. Whatever
+object you describe — a tenant, a database, a virtual machine — there are always four
+top-level fields, and mixing them up in the exam is a bad idea.
 
-| Поле | Что в нём |
+| Field | What it holds |
 |---|---|
-| `apiVersion` | к какой версии API относится тип, например `apps.cozystack.io/v1alpha1` |
-| `kind` | сам тип: `Tenant`, `Bucket`, `VMInstance` |
-| `metadata` | паспортные данные: имя, пространство имён, метки, аннотации |
-| `spec` | **желаемое состояние** — всё, чем объект должен стать |
+| `apiVersion` | which API version the type belongs to, for example `apps.cozystack.io/v1alpha1` |
+| `kind` | the type itself: `Tenant`, `Bucket`, `VMInstance` |
+| `metadata` | identity data: name, namespace, labels, annotations |
+| `spec` | **the desired state** — everything the object should become |
 
-Пятое поле, `status`, вы не пишете никогда: его заполняет контроллер, и в нём написано, как
-дела обстоят на самом деле. Отсюда простое правило чтения любого объекта: **`spec` — это
-ваше требование, `status` — ответ платформы на него.** Цикл сверки выше — это и есть
-непрерывное сведение одного к другому.
+The fifth field, `status`, you never write: the controller fills it in, and it says how
+things actually are. Hence a simple rule for reading any object: **`spec` is your
+requirement, `status` is the platform's answer to it.** The reconciliation loop above is
+exactly the continuous bringing of one in line with the other.
 
 ```yaml
 apiVersion: apps.cozystack.io/v1alpha1
 kind: Bucket
 metadata:
-  name: images          # как объект зовут
-  namespace: tenant-lab # где он живёт
-spec:                   # каким он должен стать
+  name: images          # what the object is called
+  namespace: tenant-lab # where it lives
+spec:                   # what it should become
   replicas: 2
 ```
 
-## Новые типы объектов и операторы
+## New object types and operators
 
-`kubectl get tenants` работает, хотя в самом Kubernetes никаких тенантов нет. Работает
-потому, что Cozystack **расширяет API Kubernetes**, и API-серверу тип `Tenant` известен.
+`kubectl get tenants` works even though Kubernetes itself has no tenants. It works because
+Cozystack **extends the Kubernetes API**, and the API server knows the `Tenant` type.
 
-Расширяют API двумя разными способами, и экзамен различает их.
+The API is extended in two different ways, and the exam distinguishes between them.
 
-**Определение своего типа — CRD** (custom resource definition). Вы регистрируете новый тип,
-и дальше его объекты хранит и отдаёт обычный API-сервер вместе со встроенными. Так в
-платформе устроены, например, резервные копии (`backups.cozystack.io`) и шлюзы
-(`gateway.cozystack.io`).
+**Defining your own type — a CRD** (custom resource definition). You register a new type,
+and from then on its objects are stored and served by the regular API server along with the
+built-in ones. This is how, for example, backups (`backups.cozystack.io`) and gateways
+(`gateway.cozystack.io`) are implemented in the platform.
 
-**Агрегированный API-сервер.** Отдельная программа берёт на себя целую группу API, а
-основной API-сервер переадресует ей запросы. В Cozystack это `cozystack-api` в пространстве
-имён `cozy-system`, и именно он отвечает за самые заметные группы — `apps.cozystack.io`
-(тенанты, бакеты, базы, кластеры), `core.cozystack.io`, `sdn.cozystack.io`. CRD с именем
-`tenants.apps.cozystack.io` в кластере вы не найдёте: этот тип не зарегистрирован, он
-**отдаётся** агрегированным сервером.
+**An aggregated API server.** A separate program takes over an entire API group, and the
+main API server forwards requests to it. In Cozystack this is `cozystack-api` in the
+`cozy-system` namespace, and it is the one responsible for the most visible groups —
+`apps.cozystack.io` (tenants, buckets, databases, clusters), `core.cozystack.io`,
+`sdn.cozystack.io`. You will not find a CRD named `tenants.apps.cozystack.io` in the cluster:
+this type is not registered, it is **served** by the aggregated server.
 
-Кто за какую группу отвечает, видно одной командой — в колонке `SERVICE` либо адрес
-программы, либо слово `Local`, означающее «обычный API-сервер, тип из CRD»:
+Which component is responsible for which group is visible with a single command — the
+`SERVICE` column shows either the program's address or the word `Local`, meaning “the regular
+API server, type from a CRD”:
 
 ```bash
 kubectl get apiservices | grep cozystack
 ```
 
-Но тип сам по себе ничего не делает: это запись, которую кластер согласен хранить. Работу
-выполняет **оператор** (operator) — программа, которая следит за объектами своего типа и приводит мир
-в соответствие.
+But a type on its own does nothing: it is a record the cluster agrees to store. The work is
+done by an **operator** — a program that watches objects of its type and brings the world
+into line.
 
-Отсюда практический вывод: если объект создан, а ничего не произошло, вопрос не к объекту,
-а к оператору. Он либо не запущен, либо не смог.
+Hence the practical conclusion: if an object has been created and nothing happened, the
+question is not for the object but for the operator. Either it is not running, or it failed.
 
 ## GitOps
 
-Раз состояние описывается текстом, текст можно хранить в системе контроля версий. Тогда
-Git становится единственным источником истины, а специальная программа следит, чтобы
-кластер ему соответствовал.
+Since state is described as text, the text can be stored in version control. Git then
+becomes the single source of truth, and a dedicated program makes sure the cluster matches
+it.
 
-Платформа использует **FluxCD** и применяет этот подход **к самой себе**: её компоненты
-описаны и разворачиваются тем же способом, каким вы разворачивали бы своё приложение.
+The platform uses **FluxCD** and applies this approach **to itself**: its components are
+described and deployed the same way you would deploy your own application.
 
-Одна оговорка, чтобы не сказать лишнего. Желаемое состояние самой платформы задаёт не ваш
-репозиторий, а **Platform Package** — YAML-конфигурация установки; чарты FluxCD тянет из
-OCI-регистри. Агент внутри кластера непрерывно приводит кластер к описанному состоянию,
-поэтому изменение, сделанное мимо описания, живёт недолго.
+One caveat, so as not to overstate things. The desired state of the platform itself is
+defined not by your repository but by the **Platform Package** — the YAML configuration of
+the installation; FluxCD pulls the charts from an OCI registry. An agent inside the cluster
+continuously brings the cluster to the described state, so a change made bypassing the
+description does not live long.
 
-У FluxCD два объекта, которые нужно знать по именам. `HelmRepository` — источник, откуда
-берутся чарты. `HelmRelease` (короткое имя `hr`) — заявление «этот чарт такой-то версии с
-такими значениями должен быть установлен и оставаться установленным».
+FluxCD has two objects you need to know by name. `HelmRepository` is the source the charts
+come from. `HelmRelease` (short name `hr`) is the statement “this chart, of this version,
+with these values, must be installed and stay installed”.
 
-### Как временно отключить сверку
+### How to temporarily disable reconciliation
 
-Непрерывная сверка мешает ровно в одном случае: когда нужно что-то починить руками. Правку,
-сделанную в обход описания, контроллер откатит через несколько секунд — он для этого и
-существует.
+Continuous reconciliation gets in the way in exactly one case: when you need to fix
+something by hand. A change made bypassing the description will be rolled back by the
+controller within a few seconds — that is what it exists for.
 
-На такой случай у `HelmRelease` есть выключатель `spec.suspend`. Переведённый в `suspend`
-релиз контроллер **перестаёт сверять**: он не переустанавливает чарт, не откатывает
-изменения и вообще не трогает объект. При этом **нагрузка продолжает работать** — поды не
-удаляются, приложение отвечает, — а ваши ручные правки сохраняются до тех пор, пока сверку
-не включат обратно.
+For this case `HelmRelease` has a switch, `spec.suspend`. For a release switched to
+`suspend`, the controller **stops reconciling**: it does not reinstall the chart, does not
+roll back changes, and does not touch the object at all. Meanwhile **the workload keeps
+running** — pods are not deleted, the application responds — and your manual changes are
+kept until reconciliation is switched back on.
 
 ```bash
-kubectl patch hr <имя> -n <пространство> --type merge -p '{"spec":{"suspend":true}}'
+kubectl patch hr <name> -n <namespace> --type merge -p '{"spec":{"suspend":true}}'
 ```
 
-Обратная операция — `"suspend": false`. В момент возврата контроллер сверяет объект заново и
-всё, что вы поправили руками мимо описания, откатывается. Поэтому `suspend` — инструмент
-диагностики на время расследования, а не способ жить с ручными правками.
+The reverse operation is `"suspend": false`. At the moment it is turned back on, the
+controller reconciles the object anew, and everything you fixed by hand bypassing the
+description is rolled back. That is why `suspend` is a diagnostic tool for the duration of an
+investigation, not a way to live with manual changes.
 
 ## Helm
 
-Один объект — это один объект. Приложение — это обычно десяток: развёртывание, сервис,
-настройки, секреты, правила доступа.
+One object is one object. An application is usually a dozen: a deployment, a service,
+configuration, secrets, access rules.
 
-**Helm** упаковывает такой набор в **чарт** — шаблоны плюс значения. Меняя значения, вы
-получаете разные установки из одной упаковки.
+**Helm** packages such a set into a **chart** — templates plus values. By changing the
+values, you get different installations from one package.
 
-В платформе Helm — не рекомендация, а несущая конструкция: каждая позиция каталога это
-чарт, и заказ сервиса разворачивает именно его. Сама платформа тоже ставится Helm-чартом —
-одной командой `helm upgrade --install` с чартом `cozy-installer` в пространство имён
-`cozy-system`.
+In the platform, Helm is not a recommendation but a load-bearing structure: every item in the
+managed applications catalog is a chart, and ordering a service deploys exactly that chart.
+The platform itself is also installed with a Helm chart — with a single
+`helm upgrade --install` command using the `cozy-installer` chart into the `cozy-system`
+namespace.
 
-Складывается такая цепочка, и она стоит того, чтобы её запомнить целиком:
+The result is the following chain, and it is worth memorizing in full:
 
 <p style="text-align:center;font-family:monospace;font-size:15px;margin:1.6em 0">
-объект → HelmRelease → чарт → оператор → работающие поды
+object → HelmRelease → chart → operator → running pods
 </p>
 
-Всё, что делает платформа, проходит по ней. Заказали базу — прошло по ней. Создали
-тенант — прошло по ней. Установилась сама платформа — тоже.
+Everything the platform does goes through it. You ordered a database — it went through it.
+You created a tenant — it went through it. The platform installed itself — that too.
 
-## Словарь Kubernetes, который спросят здесь же
+## Kubernetes vocabulary that will be asked here too
 
-Этот раздел экзамена описан как «седьмая тема плюс базовая терминология», поэтому шесть слов
-стоит проговорить. Английские названия — ровно те, что будут в вопросах.
+This exam domain is described as “the seventh topic plus basic terminology”, so it is worth
+going over six terms out loud. The English names are exactly the ones that will appear in the
+questions.
 
-| Объект | Что это и зачем |
+| Object | What it is and why |
 |---|---|
-| `Namespace` | именованное пространство, группирует ресурсы; у каждого тенанта своё |
-| `Pod` | наименьшая единица нагрузки — один контейнер или несколько вместе |
-| `Deployment` | описывает желаемое: какой образ, сколько реплик, как обновлять |
-| `ReplicaSet` | его исполнитель: держит нужное число подов; руками его почти не трогают |
-| `Service` | стабильное имя и адрес перед меняющимся набором подов |
-| `PVC` | заявка на постоянное хранилище, которое переживает перезапуск пода |
-| `Secret` | хранит чувствительное: пароли, токены, ключи |
+| `Namespace` | a named space that groups resources; each tenant has its own |
+| `Pod` | the smallest unit of workload — one container or several together |
+| `Deployment` | describes what is desired: which image, how many replicas, how to update |
+| `ReplicaSet` | its executor: keeps the required number of pods; it is rarely touched by hand |
+| `Service` | a stable name and address in front of a changing set of pods |
+| `PVC` | a claim for persistent storage that survives a pod restart |
+| `Secret` | stores sensitive data: passwords, tokens, keys |
 
-У `Service` три типа: **ClusterIP** — адрес виден только внутри кластера, это тип по
-умолчанию; **NodePort** — открывает порт на каждом узле, годится для проб; **LoadBalancer** —
-просит внешний адрес у платформы, на своём железе его даёт MetalLB из пятого урока.
+`Service` has three types: **ClusterIP** — the address is visible only inside the cluster,
+this is the default type; **NodePort** — opens a port on every node, good for testing;
+**LoadBalancer** — asks the platform for an external address; on your own hardware it is
+provided by MetalLB from lesson five.
 
-И пять команд, которые экзамен спрашивает по написанию:
+And five commands the exam asks about by their exact spelling:
 
-- `kubectl get pods -A` — все поды во всех пространствах имён сразу
-- `kubectl describe pod <имя>` — подробности пода и, главное, его события
-- `kubectl api-resources` — какие типы ресурсов кластер вообще знает, включая добавленные
-  платформой
-- `kubectl apply -f manifest.yaml --dry-run=server` — отдать манифест на проверку серверу,
-  ничего не сохраняя
-- `helm upgrade --install` — идемпотентно: поставит, если релиза нет, обновит, если есть
+- `kubectl get pods -A` — all pods in all namespaces at once
+- `kubectl describe pod <name>` — pod details and, most importantly, its events
+- `kubectl api-resources` — which resource types the cluster knows at all, including those
+  added by the platform
+- `kubectl apply -f manifest.yaml --dry-run=server` — submit the manifest to the server for
+  validation without saving anything
+- `helm upgrade --install` — idempotent: installs if the release does not exist, upgrades if
+  it does
 
 <div class="exam-box">
-<h4>Что спросят на экзамене</h4>
+<h4>What the exam will ask</h4>
 <ul>
-<li>Что описывается желаемое состояние, а не последовательность действий.</li>
-<li>Что контроллер непрерывно сверяет желаемое с фактическим и устраняет разницу.</li>
-<li>Что желаемое состояние объекта лежит в <code>spec</code>, фактическое — в
-<code>status</code>, а <code>apiVersion</code>, <code>kind</code> и <code>metadata</code>
-отвечают за версию API, тип и имя.</li>
-<li>Что CRD добавляет тип, а работу выполняет оператор.</li>
-<li>Что <code>kubectl get tenants</code> работает потому, что Cozystack расширяет API
-Kubernetes: тип <code>Tenant</code> отдаёт агрегированный сервер <code>cozystack-api</code>,
-а не CRD.</li>
-<li>Что <code>suspend</code> у HelmRelease останавливает сверку, но не удаляет нагрузку:
-поды продолжают работать, ручные правки сохраняются до возврата сверки.</li>
-<li>Что платформа применяет GitOps к самой себе через FluxCD.</li>
-<li>Что желаемое состояние платформы задаёт Platform Package, а чарты FluxCD берёт из
-OCI-регистри.</li>
-<li>Два объекта FluxCD: <code>HelmRepository</code> — источник чартов,
-<code>HelmRelease</code> — заявление об установленном чарте.</li>
-<li>Что чарт — единица упаковки, и каждая позиция каталога это чарт.</li>
-<li>Что сам Cozystack ставится Helm-чартом <code>cozy-installer</code>.</li>
-<li>Цепочку: объект → HelmRelease → чарт → оператор → поды.</li>
-<li>Что такое Namespace, Pod, Deployment, ReplicaSet, Service, PVC и Secret — по одной фразе
-на каждый.</li>
-<li>Три типа Service: ClusterIP, NodePort, LoadBalancer.</li>
-<li>Команды: <code>kubectl get pods -A</code>, <code>kubectl describe pod</code> для событий,
+<li>That it is the desired state that is described, not a sequence of actions.</li>
+<li>That a controller continuously compares the desired state with the actual one and closes the gap.</li>
+<li>That an object's desired state lives in <code>spec</code>, the actual state in
+<code>status</code>, while <code>apiVersion</code>, <code>kind</code> and <code>metadata</code>
+are responsible for the API version, the type and the name.</li>
+<li>That a CRD adds a type, while the work is done by an operator.</li>
+<li>That <code>kubectl get tenants</code> works because Cozystack extends the Kubernetes API:
+the <code>Tenant</code> type is served by the aggregated server <code>cozystack-api</code>,
+not by a CRD.</li>
+<li>That <code>suspend</code> on a HelmRelease stops reconciliation but does not delete the
+workload: pods keep running, manual changes are kept until reconciliation is turned back on.</li>
+<li>That the platform applies GitOps to itself via FluxCD.</li>
+<li>That the platform's desired state is defined by the Platform Package, and FluxCD takes the
+charts from an OCI registry.</li>
+<li>The two FluxCD objects: <code>HelmRepository</code> — the source of charts,
+<code>HelmRelease</code> — the statement about an installed chart.</li>
+<li>That a chart is the unit of packaging, and every item in the managed applications catalog is a chart.</li>
+<li>That Cozystack itself is installed with the <code>cozy-installer</code> Helm chart.</li>
+<li>The chain: object → HelmRelease → chart → operator → pods.</li>
+<li>What Namespace, Pod, Deployment, ReplicaSet, Service, PVC and Secret are — one sentence
+for each.</li>
+<li>The three Service types: ClusterIP, NodePort, LoadBalancer.</li>
+<li>Commands: <code>kubectl get pods -A</code>, <code>kubectl describe pod</code> for events,
 <code>kubectl api-resources</code>, <code>--dry-run=server</code>,
 <code>helm upgrade --install</code>.</li>
 </ul>
 </div>
 
-<p class="doclink">Подробнее:
-<a href="https://cozystack.io/docs/v1.6/" target="_blank" rel="noopener">обзор платформы</a> ·
-<a href="https://fluxcd.io/flux/concepts/" target="_blank" rel="noopener">концепции FluxCD</a></p>
+<p class="doclink">Further reading:
+<a href="https://cozystack.io/docs/v1.6/" target="_blank" rel="noopener">platform overview</a> ·
+<a href="https://fluxcd.io/flux/concepts/" target="_blank" rel="noopener">FluxCD concepts</a></p>

@@ -11,8 +11,8 @@
 {{- /*
   The rules live in layouts/partials/seo/noindex.html, shared with the robots
   meta in seo/head.html. Russian pages stay out of the sitemap, except the
-  certification programme (/certification/, Russian-language, html lang="ru"),
-  which is a product and is meant to be found.
+  Russian edition of the certification programme (/ru/certification/) and
+  the Russian workshop pages, which are meant to be found.
 */ -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">

@@ -7,6 +7,7 @@
 <article class="cert" data-tpl="cert-practice">
   <section class="cert__hero">
     <div class="container">
+      {{ partial "lang-switch.html" . }}
       <p class="cert__eyebrow">{{ .Params.eyebrow }}</p>
       <h1>{{ .Title }}</h1>
       <p class="cert__lead">{{ .Description }}</p>
@@ -19,7 +20,7 @@
 </article>
 {{ end }}
 {{ define "scripts" }}
-{{ $pool := site.Data.ccf_practice }}
+{{ $pool := cond (eq (.Params.language | default "en") "ru") site.Data.ccf_practice site.Data.ccf_practice_en }}
 <script>window.__CCF_POOL__ = {{ $pool | jsonify | safeJS }};</script>
 {{ $js := resources.Get "js/cert-practice.js" | minify | fingerprint }}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

@@ -1,0 +1,2830 @@
+[
+ {
+  "id": "PUB-M0-01",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "You need to list pods from all namespaces. Which command does this correctly?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get pods -n all`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl get pods -A`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl describe pods`"
+   },
+   {
+    "key": "D",
+    "text": "`kubectl logs pods --all`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The flag you need is `-A` (all namespaces). There is no namespace called \"all\".",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-02",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "A pod will not start. Which command shows its recent events?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get pod <name>`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl logs <name>`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl describe pod <name>`"
+   },
+   {
+    "key": "D",
+    "text": "`kubectl exec <name> -- sh`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "`describe` shows events, and they usually explain why the pod was not scheduled to a node or did not start. For `logs` to work, the container must already have started.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-03",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "Which command lists all resource types available in the cluster?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get all`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl api-resources`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl get types`"
+   },
+   {
+    "key": "D",
+    "text": "`kubectl describe cluster`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "`kubectl api-resources` lists every resource type the cluster serves, including Cozystack's own types.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-04",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "Which object maintains the desired number of pod replicas?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Service"
+   },
+   {
+    "key": "B",
+    "text": "ReplicaSet"
+   },
+   {
+    "key": "C",
+    "text": "ConfigMap"
+   },
+   {
+    "key": "D",
+    "text": "Namespace"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A ReplicaSet (created by a Deployment) makes sure the declared number of pod replicas is running.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-05",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "A service on bare metal in Cozystack needs an external IP. Which Service type requests one?",
+  "options": [
+   {
+    "key": "A",
+    "text": "ClusterIP"
+   },
+   {
+    "key": "B",
+    "text": "NodePort"
+   },
+   {
+    "key": "C",
+    "text": "LoadBalancer"
+   },
+   {
+    "key": "D",
+    "text": "Headless"
+   }
+  ],
+  "answer": "C",
+  "rationale": "The LoadBalancer type requests an external IP. On bare metal in Cozystack, these addresses are assigned by MetalLB.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-06",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "How does a virtual machine run in Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "On a separate hypervisor cluster outside Kubernetes"
+   },
+   {
+    "key": "B",
+    "text": "As a Kubernetes pod managed by KubeVirt"
+   },
+   {
+    "key": "C",
+    "text": "As a systemd service on the node"
+   },
+   {
+    "key": "D",
+    "text": "Inside the dashboard process"
+   }
+  ],
+  "answer": "B",
+  "rationale": "KubeVirt runs each VM inside a pod (via QEMU), so a VM is an ordinary Kubernetes workload.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-07",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "Which manifest field defines the desired state of an object?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`metadata`"
+   },
+   {
+    "key": "B",
+    "text": "`kind`"
+   },
+   {
+    "key": "C",
+    "text": "`spec`"
+   },
+   {
+    "key": "D",
+    "text": "`apiVersion`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "The desired state is declared in `spec`. `metadata` holds the object's identity, while `kind` and `apiVersion` define its type.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-08",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "Which command validates a manifest without creating anything?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl apply -f manifest.yaml --dry-run=server`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl get -f manifest.yaml`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl describe -f manifest.yaml`"
+   },
+   {
+    "key": "D",
+    "text": "`kubectl edit -f manifest.yaml`"
+   }
+  ],
+  "answer": "A",
+  "rationale": "`--dry-run=server` sends the manifest to the API server for validation but does not persist anything.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-09",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "A managed application in Cozystack (a database, for example) has generated connection credentials. Where will it put them?",
+  "options": [
+   {
+    "key": "A",
+    "text": "In a ConfigMap in the platform namespace"
+   },
+   {
+    "key": "B",
+    "text": "In a generated Secret in the tenant namespace"
+   },
+   {
+    "key": "C",
+    "text": "In the application logs"
+   },
+   {
+    "key": "D",
+    "text": "In the Platform Package configuration"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Managed applications expose credentials through generated Secrets. The tenant kubeconfig is also assembled from a Secret (module M2).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-10",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "What is a Helm release?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A version of the Helm binary"
+   },
+   {
+    "key": "B",
+    "text": "A single instance of a chart installed in the cluster"
+   },
+   {
+    "key": "C",
+    "text": "A Git tag in the chart repository"
+   },
+   {
+    "key": "D",
+    "text": "A Kubernetes namespace"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A release is a single installed instance of a chart. One chart can produce many releases with different values.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-11",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "What does the `--install` flag add to the `helm upgrade` command?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Forces all pods to be reinstalled"
+   },
+   {
+    "key": "B",
+    "text": "Installs the release if it does not exist yet"
+   },
+   {
+    "key": "C",
+    "text": "Upgrades all releases in the cluster"
+   },
+   {
+    "key": "D",
+    "text": "Validates values without applying them"
+   }
+  ],
+  "answer": "B",
+  "rationale": "`upgrade --install` is idempotent: if the release does not exist, it installs it; if it exists, it upgrades it.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-12",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "What does the READY column in the output of `kubectl get hr -A` tell you?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Whether the pod images have been pulled"
+   },
+   {
+    "key": "B",
+    "text": "Whether the HelmRelease has been reconciled and is healthy"
+   },
+   {
+    "key": "C",
+    "text": "Whether pods can be scheduled on the node"
+   },
+   {
+    "key": "D",
+    "text": "Whether the Git repository is reachable"
+   }
+  ],
+  "answer": "B",
+  "rationale": "READY True means the HelmRelease has been reconciled to the desired state and is healthy. If it is False, check the MESSAGE column and `kubectl describe hr`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M0-13",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m0",
+  "stem": "What happens when a HelmRelease is suspended?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The workload pods are deleted"
+   },
+   {
+    "key": "B",
+    "text": "The controller stops reconciling it, and manual changes are kept"
+   },
+   {
+    "key": "C",
+    "text": "The chart is removed from the repository"
+   },
+   {
+    "key": "D",
+    "text": "The namespace is locked for all users"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Suspend stops reconciliation, so manual changes stay in place. Resume hands control back to the declared state.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-01",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "What is the correct order of Cozystack layers, from bottom to top?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Kubernetes → Talos Linux → Cozystack"
+   },
+   {
+    "key": "B",
+    "text": "Talos Linux → Kubernetes → Cozystack"
+   },
+   {
+    "key": "C",
+    "text": "Cozystack → Kubernetes → Talos Linux"
+   },
+   {
+    "key": "D",
+    "text": "Talos Linux → Cozystack → Kubernetes"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Talos is the node operating system, Kubernetes (the management cluster) runs on top of it, and the Cozystack platform is installed on Kubernetes.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-02",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "In what form does Cozystack expose platform objects such as tenants, virtual machines and so on?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Through a separate proprietary API server unrelated to Kubernetes"
+   },
+   {
+    "key": "B",
+    "text": "As rows in an internal SQL database"
+   },
+   {
+    "key": "C",
+    "text": "As Kubernetes custom resources (CRDs)"
+   },
+   {
+    "key": "D",
+    "text": "Only through the web dashboard"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Cozystack extends Kubernetes with custom resources. The dashboard and Terraform are just other clients of the same Kubernetes API.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-03",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "How does an operator change the configuration of a Talos node?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Logs in over SSH and edits files"
+   },
+   {
+    "key": "B",
+    "text": "Applies a declarative machine configuration through the Talos API"
+   },
+   {
+    "key": "C",
+    "text": "Uses a package manager on the node"
+   },
+   {
+    "key": "D",
+    "text": "Edits the root file system from a rescue shell"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Talos has no SSH, and the root file system is read-only. The only way is a declarative machine configuration applied through the Talos API.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-04",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "Why does Cozystack ship its own Talos image?",
+  "options": [
+   {
+    "key": "A",
+    "text": "To add an SSH server for debugging"
+   },
+   {
+    "key": "B",
+    "text": "To include the DRBD and ZFS kernel modules the platform needs"
+   },
+   {
+    "key": "C",
+    "text": "To replace kubelet with its own agent"
+   },
+   {
+    "key": "D",
+    "text": "To reduce the licence cost of stock Talos"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The platform needs the DRBD (for LINSTOR storage) and ZFS kernel modules, and the stock Talos image does not include them.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-05",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "Which tool does Cozystack recommend for deploying Kubernetes on Talos?",
+  "options": [
+   {
+    "key": "A",
+    "text": "kubeadm"
+   },
+   {
+    "key": "B",
+    "text": "Talm"
+   },
+   {
+    "key": "C",
+    "text": "Ansible"
+   },
+   {
+    "key": "D",
+    "text": "Cluster API"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Talm is Cozystack's own Talos configuration manager with Helm-style templating. It is the path the documentation describes as recommended.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-06",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "In a PXE installation, two components run as temporary Docker containers. Which pair?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Matchbox and dnsmasq"
+   },
+   {
+    "key": "B",
+    "text": "Keycloak and MetalLB"
+   },
+   {
+    "key": "C",
+    "text": "FluxCD and Helm"
+   },
+   {
+    "key": "D",
+    "text": "CoreDNS and Multus"
+   }
+  ],
+  "answer": "A",
+  "rationale": "In a PXE installation, temporary containers run Matchbox (serves the Talos image over HTTP) and dnsmasq (DHCP + TFTP).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-07",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "How do you confirm that a Cozystack installation succeeded?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get nodes` shows all nodes as Ready"
+   },
+   {
+    "key": "B",
+    "text": "`helm list` shows one release"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl get hr -A` shows all HelmReleases as READY"
+   },
+   {
+    "key": "D",
+    "text": "`talosctl version` runs without errors"
+   }
+  ],
+  "answer": "C",
+  "rationale": "The documentation gives a single success criterion: in `kubectl get hr -A`, every platform HelmRelease shows READY True.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-08",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "A team needs the full Cozystack feature set, but its nodes run RKE2 rather than Talos. Which variant fits?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`isp-full`"
+   },
+   {
+    "key": "B",
+    "text": "`isp-full-generic`"
+   },
+   {
+    "key": "C",
+    "text": "`isp-hosted`"
+   },
+   {
+    "key": "D",
+    "text": "`default`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "`isp-full-generic` provides the full feature set on standard distributions (k3s, kubeadm, RKE2) instead of Talos.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-09",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "Which variant is installed on top of an existing managed Kubernetes cluster and comes **without** CNI, storage and virtualization?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`isp-full`"
+   },
+   {
+    "key": "B",
+    "text": "`isp-full-generic`"
+   },
+   {
+    "key": "C",
+    "text": "`isp-hosted`"
+   },
+   {
+    "key": "D",
+    "text": "`default`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "`isp-hosted` runs on a ready-made managed Kubernetes cluster where CNI, storage and virtualization (if any) are already provided by the provider.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-10",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "What does the `default` variant include?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A full PaaS stack with monitoring"
+   },
+   {
+    "key": "B",
+    "text": "Only PackageSources, without a ready-made set of components"
+   },
+   {
+    "key": "C",
+    "text": "Only the dashboard and the API"
+   },
+   {
+    "key": "D",
+    "text": "A demo tenant with sample applications"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The `default` variant installs only PackageSources; the administrator enables each component manually (the BYOP approach).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-11",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "How are platform packages named?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`pkg-<component>`"
+   },
+   {
+    "key": "B",
+    "text": "`cozystack.<component>`"
+   },
+   {
+    "key": "C",
+    "text": "`<component>.flux`"
+   },
+   {
+    "key": "D",
+    "text": "`bundle/<component>`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Platform packages follow the `cozystack.<component>` naming scheme; `kubectl get package` lists them.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-12",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "When can a platform package be disabled through `bundles.disabledPackages`?",
+  "options": [
+   {
+    "key": "A",
+    "text": "At any time; the platform will remove the component itself"
+   },
+   {
+    "key": "B",
+    "text": "Before installation; afterwards it has to be removed manually with Helm"
+   },
+   {
+    "key": "C",
+    "text": "Only in the `default` variant"
+   },
+   {
+    "key": "D",
+    "text": "Never; the set of packages is fixed by the variant"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Disabling works before installation. A component that is already installed has to be removed manually with Helm; the platform will not do it for you.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-13",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "Which component reconciles all of the platform's HelmReleases?",
+  "options": [
+   {
+    "key": "A",
+    "text": "kubeadm"
+   },
+   {
+    "key": "B",
+    "text": "The dashboard"
+   },
+   {
+    "key": "C",
+    "text": "FluxCD"
+   },
+   {
+    "key": "D",
+    "text": "Keycloak"
+   }
+  ],
+  "answer": "C",
+  "rationale": "FluxCD is the GitOps engine. Every platform component is described as a HelmRelease, and FluxCD continuously reconciles them against the desired state.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-14",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "Which component runs the control planes of tenant Kubernetes clusters as pods in the management cluster?",
+  "options": [
+   {
+    "key": "A",
+    "text": "KubeVirt"
+   },
+   {
+    "key": "B",
+    "text": "Kamaji"
+   },
+   {
+    "key": "C",
+    "text": "Kube-OVN"
+   },
+   {
+    "key": "D",
+    "text": "Keycloak"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Kamaji runs the control planes of tenant Kubernetes clusters as pods inside the management cluster.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-15",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "Which component provides replicated block storage for persistent volumes?",
+  "options": [
+   {
+    "key": "A",
+    "text": "SeaweedFS"
+   },
+   {
+    "key": "B",
+    "text": "Velero"
+   },
+   {
+    "key": "C",
+    "text": "LINSTOR / DRBD"
+   },
+   {
+    "key": "D",
+    "text": "MetalLB"
+   }
+  ],
+  "answer": "C",
+  "rationale": "LINSTOR manages replicated DRBD block volumes. SeaweedFS is object storage, Velero is backups.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-16",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "What is the minimum cluster configuration described in the documentation for a dev/lab installation?",
+  "options": [
+   {
+    "key": "A",
+    "text": "1 node, 4 cores / 8 GB RAM"
+   },
+   {
+    "key": "B",
+    "text": "3 nodes, each with 8 cores / 24 GB RAM / 50 GB + 256 GB disks"
+   },
+   {
+    "key": "C",
+    "text": "6 nodes, each with 32 cores / 128 GB RAM"
+   },
+   {
+    "key": "D",
+    "text": "2 nodes, each with 16 cores / 64 GB RAM"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The documented minimum is 3 nodes with 8 cores and 24 GB RAM each and two disks: 50 GB for the system and 256 GB for data.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M1-17",
+  "domain": "D1",
+  "domain_name": "Cozystack architecture and fundamentals",
+  "module": "m1",
+  "stem": "Which network condition is strongly discouraged for a Cozystack cluster?",
+  "options": [
+   {
+    "key": "A",
+    "text": "10 Gbit/s links between nodes"
+   },
+   {
+    "key": "B",
+    "text": "All nodes in a single L2 segment"
+   },
+   {
+    "key": "C",
+    "text": "RTT between nodes above 20 ms"
+   },
+   {
+    "key": "D",
+    "text": "nip.io as the platform FQDN in a lab"
+   }
+  ],
+  "answer": "C",
+  "rationale": "The latency requirement is an RTT below 10 ms. Running above 20 ms is strongly discouraged, and such a configuration is not supported.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-01",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "What is the primary unit of isolation in Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A pod"
+   },
+   {
+    "key": "B",
+    "text": "The Tenant resource"
+   },
+   {
+    "key": "C",
+    "text": "A HelmRelease"
+   },
+   {
+    "key": "D",
+    "text": "A node"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The Tenant resource is a \"namespace with extended capabilities\" and the primary unit of isolation in the platform.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-02",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "How does a tenant administrator create a nested tenant?",
+  "options": [
+   {
+    "key": "A",
+    "text": "By filing a request with the platform team"
+   },
+   {
+    "key": "B",
+    "text": "By creating a Tenant resource, like any application from the catalog"
+   },
+   {
+    "key": "C",
+    "text": "With a command through the Talos API"
+   },
+   {
+    "key": "D",
+    "text": "By editing the Platform Package"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A Tenant is itself an application from the catalog. A nested tenant is created as a Tenant resource in the parent's namespace.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-03",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "Tenant `beta` is nested in tenant `alpha`, which is nested in the root tenant. Which namespace will `beta` get?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`tenant-beta`"
+   },
+   {
+    "key": "B",
+    "text": "`beta-alpha-tenant`"
+   },
+   {
+    "key": "C",
+    "text": "`tenant-alpha-beta`"
+   },
+   {
+    "key": "D",
+    "text": "`tenant-root-alpha-beta`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "The chain of ancestors accumulates, but the root tenant is not repeated in the name: root/alpha/beta gives tenant-alpha-beta.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-04",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "Why are hyphens not allowed in tenant names?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Kubernetes does not allow hyphens in resource names"
+   },
+   {
+    "key": "B",
+    "text": "The hyphen separates ancestors in the namespace name"
+   },
+   {
+    "key": "C",
+    "text": "A hyphen breaks the username format in Keycloak"
+   },
+   {
+    "key": "D",
+    "text": "The dashboard cannot display hyphens"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Hyphens separate ancestor names in the derived namespace. A hyphen inside a tenant name would make the chain of ancestors ambiguous.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-05",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "Where in a tenant resource do you find the tenant's own namespace?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`metadata.namespace`"
+   },
+   {
+    "key": "B",
+    "text": "`status.namespace`"
+   },
+   {
+    "key": "C",
+    "text": "`spec.host`"
+   },
+   {
+    "key": "D",
+    "text": "`metadata.labels`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "`metadata.namespace` holds the parent's namespace, which is where the resource itself lives. `status.namespace` is the namespace the platform created for this tenant.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-06",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "Which label allows a pod to reach the Kubernetes apiserver inside a tenant?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`cozystack.io/apiserver: enabled`"
+   },
+   {
+    "key": "B",
+    "text": "`policy.cozystack.io/allow-to-apiserver: \"true\"`"
+   },
+   {
+    "key": "C",
+    "text": "`network.cozystack.io/open: \"true\"`"
+   },
+   {
+    "key": "D",
+    "text": "`cilium.io/allow-all: \"true\"`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Access is enabled explicitly with the `policy.cozystack.io/allow-to-apiserver: \"true\"` label, which is set on each pod individually.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-07",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "How do you disable tenant network isolation in v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Set `isolated: false` in the Tenant resource"
+   },
+   {
+    "key": "B",
+    "text": "Delete the Cilium network policies manually"
+   },
+   {
+    "key": "C",
+    "text": "You can't: isolation has been mandatory since v1.0"
+   },
+   {
+    "key": "D",
+    "text": "Use the `default` variant"
+   }
+  ],
+  "answer": "C",
+  "rationale": "The `isolated` flag was removed in v1.0. Isolation is mandatory and cannot be disabled.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-08",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "Which component enforces tenant network isolation?",
+  "options": [
+   {
+    "key": "A",
+    "text": "MetalLB"
+   },
+   {
+    "key": "B",
+    "text": "Cilium"
+   },
+   {
+    "key": "C",
+    "text": "Keycloak"
+   },
+   {
+    "key": "D",
+    "text": "Velero"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The isolating network policies are generated automatically and enforced by Cilium's eBPF data plane.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-09",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "Which set lists the tenant-level service toggles?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`etcd`, `monitoring`, `ingress`, `seaweedfs`"
+   },
+   {
+    "key": "B",
+    "text": "`postgres`, `kafka`, `redis`, `harbor`"
+   },
+   {
+    "key": "C",
+    "text": "`cilium`, `kubeovn`, `metallb`, `velero`"
+   },
+   {
+    "key": "D",
+    "text": "`dashboard`, `keycloak`, `grafana`, `alerta`"
+   }
+  ],
+  "answer": "A",
+  "rationale": "The Tenant resource has exactly four such toggles: etcd, monitoring, ingress and seaweedfs.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-10",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "Tenant `beta` inside `alpha` does not have monitoring enabled, while `alpha` has `monitoring: true`. Where will beta's metrics go?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Nowhere: monitoring is disabled for beta"
+   },
+   {
+    "key": "B",
+    "text": "To alpha's monitoring stack"
+   },
+   {
+    "key": "C",
+    "text": "Always to the root tenant's stack"
+   },
+   {
+    "key": "D",
+    "text": "To an external SaaS collector"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A missing service is inherited from the nearest ancestor that runs it. Here that is the parent alpha, not necessarily the root.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-11",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "Which preset series has a CPU-to-RAM ratio of 1:4?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`t1`"
+   },
+   {
+    "key": "B",
+    "text": "`c1`"
+   },
+   {
+    "key": "C",
+    "text": "`u1`"
+   },
+   {
+    "key": "D",
+    "text": "`m1`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Preset ratios: t1=1:0.5, c1=1:1, s1=1:2, u1=1:4, m1=1:8. So 1:4 is u1. (This is about tenant and application presets, not VM instance types.)",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-12",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "With the default `cpuAllocationRatio` = 10, how much CPU will a workload with a 2 CPU limit request from the scheduler?",
+  "options": [
+   {
+    "key": "A",
+    "text": "2 CPU"
+   },
+   {
+    "key": "B",
+    "text": "0.2 CPU"
+   },
+   {
+    "key": "C",
+    "text": "20 CPU"
+   },
+   {
+    "key": "D",
+    "text": "1 CPU"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The request is the limit divided by cpuAllocationRatio: 2 / 10 = 0.2 CPU.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-13",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "A manifest specifies both a preset and an explicit `resources: {cpu, memory}` block. Which one takes effect?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The preset; the explicit resources are ignored"
+   },
+   {
+    "key": "B",
+    "text": "The explicit resources; they override the preset"
+   },
+   {
+    "key": "C",
+    "text": "Neither; the manifest will be rejected"
+   },
+   {
+    "key": "D",
+    "text": "The larger of the two values for each field"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Explicit values in `resources: {cpu, memory}` always take precedence over the selected preset.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-14",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "What does the script from the documentation build a tenant kubeconfig from?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The Keycloak administrator password"
+   },
+   {
+    "key": "B",
+    "text": "The token and CA certificate in the tenant secret, plus the server address from the administrator's kubeconfig"
+   },
+   {
+    "key": "C",
+    "text": "The Platform Package YAML file"
+   },
+   {
+    "key": "D",
+    "text": "The Talos machine configuration"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The script from the documentation reads the tenant's secret of the same name and takes the token (the token field), the CA certificate (ca.crt) and the default namespace from it. The API server address is not in the secret: the script fills it in from the current kubeconfig of the administrator who runs the script.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M2-15",
+  "domain": "D2",
+  "domain_name": "Tenants and access",
+  "module": "m2",
+  "stem": "The platform domain is `cloud.example.com`. Which default domain will tenant `alpha` under the root get?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`alpha.cloud.example.com`"
+   },
+   {
+    "key": "B",
+    "text": "`cloud.alpha.example.com`"
+   },
+   {
+    "key": "C",
+    "text": "`tenant-alpha.example.com`"
+   },
+   {
+    "key": "D",
+    "text": "`alpha.example.com`"
+   }
+  ],
+  "answer": "A",
+  "rationale": "A tenant's default domain is built as `<name>.<parent domain>`, so alpha under the root gets `alpha.cloud.example.com`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-01",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "Which catalog group does **Qdrant** belong to?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Messaging"
+   },
+   {
+    "key": "B",
+    "text": "Databases"
+   },
+   {
+    "key": "C",
+    "text": "Networking services"
+   },
+   {
+    "key": "D",
+    "text": "Platform services"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Qdrant is a vector database, so it belongs in the databases group.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-02",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "Which operator manages PostgreSQL in Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Strimzi"
+   },
+   {
+    "key": "B",
+    "text": "The Percona operator"
+   },
+   {
+    "key": "C",
+    "text": "CloudNativePG"
+   },
+   {
+    "key": "D",
+    "text": "The Altinity operator"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Managed PostgreSQL is handled by CloudNativePG. Strimzi is Kafka, Percona is MongoDB, Altinity is ClickHouse.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-03",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "How does a tenant administrator create a nested tenant?",
+  "options": [
+   {
+    "key": "A",
+    "text": "By filing a request with the platform team"
+   },
+   {
+    "key": "B",
+    "text": "By deploying the Tenant application from the catalog"
+   },
+   {
+    "key": "C",
+    "text": "By editing the Platform Package"
+   },
+   {
+    "key": "D",
+    "text": "By creating a Kubernetes namespace directly"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A Tenant is itself an application from the catalog. A nested tenant is deployed inside the parent tenant just like any other application.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-04",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "Which API group do catalog application resources live in?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`platform.cozystack.io/v1`"
+   },
+   {
+    "key": "B",
+    "text": "`apps.cozystack.io/v1alpha1`"
+   },
+   {
+    "key": "C",
+    "text": "`helm.toolkit.fluxcd.io/v2`"
+   },
+   {
+    "key": "D",
+    "text": "`core.cozystack.io/v1alpha1`"
+   }
+  ],
+  "answer": "B",
+  "rationale": "All catalog applications are custom resources in the `apps.cozystack.io/v1alpha1` group.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-05",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "You have created a `Postgres` resource. What will the platform create as the next link in the chain?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A HelmRelease that installs the application's chart"
+   },
+   {
+    "key": "B",
+    "text": "A Docker Compose file"
+   },
+   {
+    "key": "C",
+    "text": "A new Kubernetes node"
+   },
+   {
+    "key": "D",
+    "text": "A Velero backup"
+   }
+  ],
+  "answer": "A",
+  "rationale": "The chain is: resource → HelmRelease (FluxCD) → Helm chart → operator → running workload.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-06",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "Which command shows all catalog application types available in the cluster?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`kubectl get pods -A`"
+   },
+   {
+    "key": "B",
+    "text": "`kubectl get catalog`"
+   },
+   {
+    "key": "C",
+    "text": "`kubectl api-resources | grep apps.cozystack`"
+   },
+   {
+    "key": "D",
+    "text": "`helm list -A`"
+   }
+  ],
+  "answer": "C",
+  "rationale": "`kubectl api-resources | grep apps.cozystack` lists all catalog types the platform serves.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-07",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "What does the Cozystack dashboard create when you deploy an application through a form?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A shell script on the control node"
+   },
+   {
+    "key": "B",
+    "text": "The same custom resource as `kubectl apply`"
+   },
+   {
+    "key": "C",
+    "text": "A Docker container outside Kubernetes"
+   },
+   {
+    "key": "D",
+    "text": "A snapshot of the tenant namespace"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The dashboard works directly with the Kubernetes API: the form creates exactly the same resource you would apply with kubectl.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-08",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "Where do the application forms in the dashboard come from?",
+  "options": [
+   {
+    "key": "A",
+    "text": "They are generated from the application resource schemas"
+   },
+   {
+    "key": "B",
+    "text": "Frontend developers write them by hand for each application"
+   },
+   {
+    "key": "C",
+    "text": "They are configured in the Platform Package"
+   },
+   {
+    "key": "D",
+    "text": "They are imported from Terraform modules"
+   }
+  ],
+  "answer": "A",
+  "rationale": "the dashboard is schema-driven: forms are generated from the application resource schemas, so the UI and the API never diverge.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-09",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "A team keeps all its infrastructure in Terraform and wants to describe Cozystack databases in the same codebase. What is the simplest way to do this?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Click through the dashboard and write the steps down in the documentation"
+   },
+   {
+    "key": "B",
+    "text": "Use the Cozystack Terraform provider or `kubernetes_manifest` resources"
+   },
+   {
+    "key": "C",
+    "text": "Write a cron job that calls kubectl"
+   },
+   {
+    "key": "D",
+    "text": "Edit the Platform Package"
+   }
+  ],
+  "answer": "B",
+  "rationale": "the official Terraform provider (or a plain kubernetes_manifest resource) manages the same CRs as code.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-10",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "What happens if you run `kubectl delete` on a `Postgres` application CR?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Only the CR object is deleted; the database keeps running"
+   },
+   {
+    "key": "B",
+    "text": "The application is deleted together with its workloads"
+   },
+   {
+    "key": "C",
+    "text": "The command fails: applications can only be deleted from the dashboard"
+   },
+   {
+    "key": "D",
+    "text": "The database is automatically archived to S3"
+   }
+  ],
+  "answer": "B",
+  "rationale": "deleting an application CR removes the whole application, pods and data included. Treat it like DROP DATABASE.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-11",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "Which set of applications gained TLS support in Cozystack v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Kafka, NATS, Qdrant, PostgreSQL"
+   },
+   {
+    "key": "B",
+    "text": "Redis, MongoDB, MariaDB, ClickHouse"
+   },
+   {
+    "key": "C",
+    "text": "Harbor, OpenBao, Bucket, Ingress"
+   },
+   {
+    "key": "D",
+    "text": "VPN, TCP Balancer, HTTP Cache, VPC"
+   }
+  ],
+  "answer": "A",
+  "rationale": "in v1.5, TLS arrived for Kafka, NATS, Qdrant and PostgreSQL; databases exposed externally get TLS automatically.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-12",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "What is an ApplicationDefinition for?",
+  "options": [
+   {
+    "key": "A",
+    "text": "To set resource quotas for a tenant"
+   },
+   {
+    "key": "B",
+    "text": "To add a new application type to the catalog based on a Helm chart"
+   },
+   {
+    "key": "C",
+    "text": "To describe an application's network policy"
+   },
+   {
+    "key": "D",
+    "text": "To pin the platform to a specific version"
+   }
+  ],
+  "answer": "B",
+  "rationale": "ApplicationDefinition registers a new application type in the catalog based on a Helm chart, with its own CR kind and dashboard form.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M3-13",
+  "domain": "D3",
+  "domain_name": "Managed applications catalog",
+  "module": "m3",
+  "stem": "What does the `cozy-default` BackupClass provide in v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Automatic snapshots of all virtual machines"
+   },
+   {
+    "key": "B",
+    "text": "Working backups of managed applications out of the box, to a shared system S3 bucket"
+   },
+   {
+    "key": "C",
+    "text": "A full copy of the management cluster"
+   },
+   {
+    "key": "D",
+    "text": "Incremental block-level copies of virtual machines"
+   }
+  ],
+  "answer": "B",
+  "rationale": "cozy-default is a ready-made BackupClass wired to a shared system S3 bucket (the full model is in M6).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-01",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "How does KubeVirt run a virtual machine?",
+  "options": [
+   {
+    "key": "A",
+    "text": "On a separate hypervisor cluster next to Kubernetes"
+   },
+   {
+    "key": "B",
+    "text": "Inside a Kubernetes pod, as a qemu process"
+   },
+   {
+    "key": "C",
+    "text": "As a WebAssembly module inside the kubelet"
+   },
+   {
+    "key": "D",
+    "text": "Inside a Docker-in-Docker container on the control plane"
+   }
+  ],
+  "answer": "B",
+  "rationale": "KubeVirt runs each VM as a qemu/KVM process inside a pod, so a VM is an ordinary Kubernetes workload.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-02",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "What role does CDI play in the virtualization stack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "It schedules virtual machine pods onto nodes"
+   },
+   {
+    "key": "B",
+    "text": "It provides a VNC console for virtual machines"
+   },
+   {
+    "key": "C",
+    "text": "It loads disk images into persistent volumes"
+   },
+   {
+    "key": "D",
+    "text": "It replicates disks between data centers"
+   }
+  ],
+  "answer": "C",
+  "rationale": "CDI (Containerized Data Importer) populates PVCs with disk images, from URLs, registries or uploads, through DataVolume objects.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-03",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "Which statement about virtual machines in Cozystack is true?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Tenant quotas do not apply to VMs"
+   },
+   {
+    "key": "B",
+    "text": "VMs bypass Cilium network policies"
+   },
+   {
+    "key": "C",
+    "text": "VMs need a separate scheduler"
+   },
+   {
+    "key": "D",
+    "text": "VMs are placed by the standard Kubernetes scheduler"
+   }
+  ],
+  "answer": "D",
+  "rationale": "since a VM is a pod, it is placed by the standard scheduler, and quotas and network policies apply to it as to any other workload.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-04",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "What is the correct way to create a virtual machine in Cozystack v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Create a single VirtualMachine resource with the disk inside"
+   },
+   {
+    "key": "B",
+    "text": "First create a VMDisk, then a VMInstance that references it"
+   },
+   {
+    "key": "C",
+    "text": "First create a VMInstance; the platform will create the disks itself"
+   },
+   {
+    "key": "D",
+    "text": "Create a DataVolume and a Pod by hand"
+   }
+  ],
+  "answer": "B",
+  "rationale": "the standard v1.5 model is two CRs, disk first: a VMDisk (storage), then a VMInstance that references it.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-05",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "Why are the disk and the instance separate resources?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Kubernetes cannot store two specs in one object"
+   },
+   {
+    "key": "B",
+    "text": "A disk has its own lifecycle: data survives deletion of the instance, and disks can be reused"
+   },
+   {
+    "key": "C",
+    "text": "Disks and instances must live in different namespaces"
+   },
+   {
+    "key": "D",
+    "text": "Live migration does not work otherwise"
+   }
+  ],
+  "answer": "B",
+  "rationale": "the whole point is separate lifecycles: the disk survives deletion of the instance, can be attached again and backed up on its own.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-06",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "A team wants every new VM to start from the same prepared Ubuntu image without downloading it each time. What should they use?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A VMImage (golden image) as the disk source"
+   },
+   {
+    "key": "B",
+    "text": "An empty disk"
+   },
+   {
+    "key": "C",
+    "text": "Uploading the image from a shared laptop"
+   },
+   {
+    "key": "D",
+    "text": "A larger instance"
+   }
+  ],
+  "answer": "A",
+  "rationale": "VMImage is exactly the golden image: you publish it once and then clone disks from it via source.image.name.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-07",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "A Linux machine has booted, but its network is misconfigured and SSH does not work. Which way can you still reach it?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`virtctl ssh`"
+   },
+   {
+    "key": "B",
+    "text": "`virtctl console`"
+   },
+   {
+    "key": "C",
+    "text": "kubectl port-forward into the guest"
+   },
+   {
+    "key": "D",
+    "text": "The file manager in the dashboard"
+   }
+  ],
+  "answer": "B",
+  "rationale": "the serial console does not depend on the network inside the guest; it is the access path of last resort.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-08",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "What does cloud-init do?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Replicates VM disks between nodes"
+   },
+   {
+    "key": "B",
+    "text": "Configures the guest OS on first boot: users, SSH keys, packages"
+   },
+   {
+    "key": "C",
+    "text": "Places the virtual machine pod on a node"
+   },
+   {
+    "key": "D",
+    "text": "Converts disk images between formats"
+   }
+  ],
+  "answer": "B",
+  "rationale": "cloud-init runs on first boot inside the guest and configures users, keys, hostname and packages.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-09",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "Which capability actually exists in Cozystack v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Automatic VM restart after a host failure (like vSphere HA)"
+   },
+   {
+    "key": "B",
+    "text": "Continuous automatic VM balancing across nodes (like DRS)"
+   },
+   {
+    "key": "C",
+    "text": "Live migration of running VMs between nodes"
+   },
+   {
+    "key": "D",
+    "text": "Incremental VM backups via changed block tracking"
+   }
+  ],
+  "answer": "C",
+  "rationale": "live migration exists; HA auto-restart, DRS balancing and CBT backups are honest gaps in v1.5.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-10",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "A team asks: “If a node dies, will our VMs restart on another one by themselves?” What is the honest answer for v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Yes, KubeVirt will bring them up within seconds"
+   },
+   {
+    "key": "B",
+    "text": "No: there is no fencing-based auto-restart out of the box, and recovery involves manual steps"
+   },
+   {
+    "key": "C",
+    "text": "Yes, but only for Windows guests"
+   },
+   {
+    "key": "D",
+    "text": "Only if DRS is enabled"
+   }
+  ],
+  "answer": "B",
+  "rationale": "v1.5 has no fencing-based auto-restart; recovering VMs after a node failure involves manual steps.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M4-11",
+  "domain": "D4",
+  "domain_name": "Virtualization fundamentals",
+  "module": "m4",
+  "stem": "What changed in GPU passthrough in v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "GPUs can no longer be attached to VMs"
+   },
+   {
+    "key": "B",
+    "text": "Node preparation was automated: labeling GPU nodes and binding devices"
+   },
+   {
+    "key": "C",
+    "text": "GPU passthrough now requires a commercial licence"
+   },
+   {
+    "key": "D",
+    "text": "GPUs are shared between VMs by default"
+   }
+  ],
+  "answer": "B",
+  "rationale": "v1.5 automated GPU node preparation: applying labels and binding devices to vfio-pci; the VMInstance itself requests GPUs through the gpus field.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-01",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "Which component provides network isolation between tenants in Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "MetalLB"
+   },
+   {
+    "key": "B",
+    "text": "Cilium"
+   },
+   {
+    "key": "C",
+    "text": "ingress-nginx"
+   },
+   {
+    "key": "D",
+    "text": "ExternalDNS"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Cilium enforces the automatically generated network policies that isolate tenants (M2).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-02",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "A pod inside a tenant needs to talk to the Kubernetes API server. What is required?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Nothing; API access is open by default"
+   },
+   {
+    "key": "B",
+    "text": "The label `policy.cozystack.io/allow-to-apiserver: \"true\"` on the pod"
+   },
+   {
+    "key": "C",
+    "text": "Set `isolated: false` in the Tenant resource"
+   },
+   {
+    "key": "D",
+    "text": "A separate ingress rule"
+   }
+  ],
+  "answer": "B",
+  "rationale": "access to the API server is closed by default; a pod requests it explicitly with the label `policy.cozystack.io/allow-to-apiserver: \"true\"`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-03",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "What does Kube-OVN add to the platform?",
+  "options": [
+   {
+    "key": "A",
+    "text": "TLS termination for web applications"
+   },
+   {
+    "key": "B",
+    "text": "Persistent pod IP addresses when pods move between nodes"
+   },
+   {
+    "key": "C",
+    "text": "Replacing kube-proxy with eBPF"
+   },
+   {
+    "key": "D",
+    "text": "DNS record management"
+   }
+  ],
+  "answer": "B",
+  "rationale": "centralized IPAM in Kube-OVN keeps a pod's IP across rescheduling; the other options are about TenantGateway/cert-manager, Cilium and ExternalDNS.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-04",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "Why are persistent IP addresses especially important for virtual machines?",
+  "options": [
+   {
+    "key": "A",
+    "text": "VMs cannot work with DHCP"
+   },
+   {
+    "key": "B",
+    "text": "Kubernetes forbids pods from changing IPs"
+   },
+   {
+    "key": "C",
+    "text": "Workloads inside the guest, firewall rules and licences are often tied to a fixed IP"
+   },
+   {
+    "key": "D",
+    "text": "Live migration requires IPv6"
+   }
+  ],
+  "answer": "C",
+  "rationale": "guest systems, firewall rules and licences are often bound to an IP; a VM that changes its address on every migration would break all of that.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-05",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "A colleague asks which of the two CNIs is responsible for what. Which pairing is correct?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Cilium: overlay network and IPAM; Kube-OVN: network policies"
+   },
+   {
+    "key": "B",
+    "text": "Cilium: policies and Services (eBPF); Kube-OVN: overlay network, centralized IPAM, persistent IPs, VPC"
+   },
+   {
+    "key": "C",
+    "text": "Both layers do the same thing for redundancy"
+   },
+   {
+    "key": "D",
+    "text": "In v1.5 Kube-OVN replaced Cilium"
+   }
+  ],
+  "answer": "B",
+  "rationale": "the two CNIs work together: Cilium handles packet processing, Services and policies; Kube-OVN handles the overlay network, IPAM, persistent IPs and VPC.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-06",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "What happens to a Service of type `LoadBalancer` in a bare-metal cluster **without** MetalLB?",
+  "options": [
+   {
+    "key": "A",
+    "text": "It gets an IP from the pod network"
+   },
+   {
+    "key": "B",
+    "text": "Its external IP stays pending forever"
+   },
+   {
+    "key": "C",
+    "text": "It automatically falls back to NodePort"
+   },
+   {
+    "key": "D",
+    "text": "The API server rejects it"
+   }
+  ],
+  "answer": "B",
+  "rationale": "on bare metal nothing hands out external IPs: without MetalLB the Service's external address just stays pending.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-07",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "What describes MetalLB's BGP mode?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A single node answers ARP requests for the service IP"
+   },
+   {
+    "key": "B",
+    "text": "Nodes advertise service IPs to physical routers as routes"
+   },
+   {
+    "key": "C",
+    "text": "It works only in public clouds"
+   },
+   {
+    "key": "D",
+    "text": "It requires the TenantGateway CRD"
+   }
+  ],
+  "answer": "B",
+  "rationale": "in BGP mode, nodes peer with physical routers and advertise service IPs as routes (since v1.5 the backend is FRR-K8s); answering ARP is L2 mode.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-08",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "How is ingress deployed in Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "One shared ingress controller for the whole platform"
+   },
+   {
+    "key": "B",
+    "text": "One ingress-nginx controller per tenant, enabled by a tenant toggle"
+   },
+   {
+    "key": "C",
+    "text": "Ingress runs on a dedicated hardware appliance"
+   },
+   {
+    "key": "D",
+    "text": "Ingress is not supported; there are only Services of type LoadBalancer"
+   }
+  ],
+  "answer": "B",
+  "rationale": "ingress-nginx is deployed per tenant via the `ingress` toggle; if a tenant has none of its own, the service is inherited from the parent (M2).",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-09",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "What does the TenantGateway data plane run on?",
+  "options": [
+   {
+    "key": "A",
+    "text": "ingress-nginx"
+   },
+   {
+    "key": "B",
+    "text": "HAProxy"
+   },
+   {
+    "key": "C",
+    "text": "Cilium"
+   },
+   {
+    "key": "D",
+    "text": "MetalLB"
+   }
+  ],
+  "answer": "C",
+  "rationale": "TenantGateway is the Gateway API as implemented by Cilium; there is no nginx anywhere in this data path.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-10",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "A tenant needs a wildcard certificate for `*.apps.example.com`. Which validation method makes this possible?",
+  "options": [
+   {
+    "key": "A",
+    "text": "HTTP-01"
+   },
+   {
+    "key": "B",
+    "text": "DNS-01"
+   },
+   {
+    "key": "C",
+    "text": "ARP"
+   },
+   {
+    "key": "D",
+    "text": "BGP"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Wildcard certificates are issued only through DNS-01 validation. HTTP-01 does not issue them.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-11",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "The platform domain is `cloud.example.com`. What default domain will tenant `alpha`, created directly under the root, get?",
+  "options": [
+   {
+    "key": "A",
+    "text": "`alpha.cloud.example.com`"
+   },
+   {
+    "key": "B",
+    "text": "`cloud.alpha.example.com`"
+   },
+   {
+    "key": "C",
+    "text": "`tenant-alpha.example.com`"
+   },
+   {
+    "key": "D",
+    "text": "`alpha.example.com`"
+   }
+  ],
+  "answer": "A",
+  "rationale": "A tenant's default domain is built as `<name>.<parent-domain>`, so alpha under the root gets `alpha.cloud.example.com`.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M5-12",
+  "domain": "D5",
+  "domain_name": "Networking fundamentals",
+  "module": "m5",
+  "stem": "Which component creates DNS records for published applications on its own?",
+  "options": [
+   {
+    "key": "A",
+    "text": "cert-manager"
+   },
+   {
+    "key": "B",
+    "text": "CoreDNS"
+   },
+   {
+    "key": "C",
+    "text": "ExternalDNS"
+   },
+   {
+    "key": "D",
+    "text": "Kilo"
+   }
+  ],
+  "answer": "C",
+  "rationale": "ExternalDNS watches published services and ingresses and creates DNS records for them. cert-manager deals with certificates, not names.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-01",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "Which component stores metrics in Cozystack?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Prometheus"
+   },
+   {
+    "key": "B",
+    "text": "VictoriaMetrics"
+   },
+   {
+    "key": "C",
+    "text": "Loki"
+   },
+   {
+    "key": "D",
+    "text": "InfluxDB"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Metrics are stored by VictoriaMetrics (VMCluster). There is no Prometheus in the stack, only PromQL compatibility.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-02",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "A tenant has no Monitoring application of its own. What happens to monitoring of its workloads?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Monitoring data is lost"
+   },
+   {
+    "key": "B",
+    "text": "The tenant must install Prometheus by hand"
+   },
+   {
+    "key": "C",
+    "text": "The tenant uses the parent tenant's monitoring"
+   },
+   {
+    "key": "D",
+    "text": "The platform will refuse to run new workloads"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Monitoring is a catalog application, one per tenant. If a tenant has none of its own, the nearest ancestor's monitoring is used: the usual inheritance rule from M2.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-03",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "Which component groups alerts and removes duplicates before notifications are sent?",
+  "options": [
+   {
+    "key": "A",
+    "text": "VMAgent"
+   },
+   {
+    "key": "B",
+    "text": "Grafana"
+   },
+   {
+    "key": "C",
+    "text": "Alerta"
+   },
+   {
+    "key": "D",
+    "text": "Fluent Bit"
+   }
+  ],
+  "answer": "C",
+  "rationale": "The chain is: VMAlert evaluates the rules, Alerta groups, deduplicates and routes, and then on to Email/SMS/Slack.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-04",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "You need to check the state of LINSTOR volumes. Which group of standard dashboards should you open?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Cluster Overview"
+   },
+   {
+    "key": "B",
+    "text": "Storage"
+   },
+   {
+    "key": "C",
+    "text": "ETCD"
+   },
+   {
+    "key": "D",
+    "text": "Tenant Applications"
+   }
+  ],
+  "answer": "B",
+  "rationale": "The Storage dashboard group shows the state of LINSTOR and SeaweedFS.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-05",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "A user wants a managed PostgreSQL database backed up automatically every night. Which object do they create?",
+  "options": [
+   {
+    "key": "A",
+    "text": "BackupClass"
+   },
+   {
+    "key": "B",
+    "text": "BackupJob"
+   },
+   {
+    "key": "C",
+    "text": "Plan"
+   },
+   {
+    "key": "D",
+    "text": "Backup"
+   }
+  ],
+  "answer": "C",
+  "rationale": "A Plan is a scheduled (cron) backup. A BackupJob is a one-off run, and a Backup is the finished result.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-06",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "Which object exists at cluster level and is created by the platform administrator?",
+  "options": [
+   {
+    "key": "A",
+    "text": "BackupClass"
+   },
+   {
+    "key": "B",
+    "text": "BackupJob"
+   },
+   {
+    "key": "C",
+    "text": "Plan"
+   },
+   {
+    "key": "D",
+    "text": "Backup"
+   }
+  ],
+  "answer": "A",
+  "rationale": "BackupClass is the only cluster-level object, and the platform administrator creates it. The rest are created by users or by the system itself.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-07",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "What does the `cozy-default` BackupClass provide in v1.5?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Automatic backups of the entire management cluster"
+   },
+   {
+    "key": "B",
+    "text": "A ready-made configuration with a shared system S3 bucket, so managed application backups work without administrator setup"
+   },
+   {
+    "key": "C",
+    "text": "Incremental backups of virtual machines"
+   },
+   {
+    "key": "D",
+    "text": "A free external S3 account for every tenant"
+   }
+  ],
+  "answer": "B",
+  "rationale": "cozy-default ships out of the box starting with v1.5 and brings a shared system S3 bucket, so managed application backups are taken without administrator setup.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-08",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "Since which release has Velero been included in Cozystack by default?",
+  "options": [
+   {
+    "key": "A",
+    "text": "v1.3"
+   },
+   {
+    "key": "B",
+    "text": "v1.4"
+   },
+   {
+    "key": "C",
+    "text": "v1.5"
+   },
+   {
+    "key": "D",
+    "text": "It is still optional"
+   }
+  ],
+  "answer": "C",
+  "rationale": "Velero (cozystack.velero) became a standard platform component in v1.5.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-09",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "Which Velero object defines *where* backups are stored?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Strategy"
+   },
+   {
+    "key": "B",
+    "text": "BackupStorageLocation"
+   },
+   {
+    "key": "C",
+    "text": "Plan"
+   },
+   {
+    "key": "D",
+    "text": "BackupJob"
+   }
+  ],
+  "answer": "B",
+  "rationale": "BackupStorageLocation describes the S3 storage that backups go to. Strategy defines how to back up, and BackupClass ties all of this to application types.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-10",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "What is NOT included in a data-only backup of a managed application? (Choose the most accurate answer.)",
+  "options": [
+   {
+    "key": "A",
+    "text": "Database tables and rows"
+   },
+   {
+    "key": "B",
+    "text": "The Helm release, the application CR and the operator secrets"
+   },
+   {
+    "key": "C",
+    "text": "The contents of the S3 bucket"
+   },
+   {
+    "key": "D",
+    "text": "The Backup object with the result"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Such a backup captures only the database contents. The Helm release, the application CR and the operator secrets are not part of it.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-11",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "Which condition must be met before restoring a managed application backup?",
+  "options": [
+   {
+    "key": "A",
+    "text": "The target application must already be deployed"
+   },
+   {
+    "key": "B",
+    "text": "The tenant must be deleted first"
+   },
+   {
+    "key": "C",
+    "text": "Velero must be disabled"
+   },
+   {
+    "key": "D",
+    "text": "Prometheus must be running in the cluster"
+   }
+  ],
+  "answer": "A",
+  "rationale": "A restore loads data into an existing database. Backups contain only data, so the target application must be deployed beforehand.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M6-12",
+  "domain": "D6",
+  "domain_name": "Observability and backups",
+  "module": "m6",
+  "stem": "What kind of virtual machine backups does the platform take?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Incremental, with changed block tracking"
+   },
+   {
+    "key": "B",
+    "text": "Full: the configuration and all attached disks"
+   },
+   {
+    "key": "C",
+    "text": "Configuration only, without disks"
+   },
+   {
+    "key": "D",
+    "text": "Disks only, without configuration"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A backup includes the configuration and all attached disks, and every backup is full: there are no incremental backups or CBT here.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-01",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m7",
+  "stem": "What does a controller do in Kubernetes?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Executes user commands one by one"
+   },
+   {
+    "key": "B",
+    "text": "Continuously compares the desired state with the actual state and fixes any drift"
+   },
+   {
+    "key": "C",
+    "text": "Stores the cluster configuration on disk"
+   },
+   {
+    "key": "D",
+    "text": "Routes traffic between pods"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A controller runs a reconciliation loop: it compares the desired state with the actual state and closes the gap, over and over, forever.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-02",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m7",
+  "stem": "Which object provides a stable network name for a set of pods?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Deployment"
+   },
+   {
+    "key": "B",
+    "text": "Namespace"
+   },
+   {
+    "key": "C",
+    "text": "Service"
+   },
+   {
+    "key": "D",
+    "text": "Secret"
+   }
+  ],
+  "answer": "C",
+  "rationale": "A Service provides a stable name and a virtual IP in front of a set of pods that keeps changing.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-03",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m7",
+  "stem": "Why does `kubectl get tenants` work in a Cozystack cluster?",
+  "options": [
+   {
+    "key": "A",
+    "text": "Tenant is a built-in Kubernetes object type"
+   },
+   {
+    "key": "B",
+    "text": "Cozystack extends the Kubernetes API, and the API server knows the Tenant type (served by the cozystack-api aggregated server)"
+   },
+   {
+    "key": "C",
+    "text": "kubectl has a special Cozystack plugin"
+   },
+   {
+    "key": "D",
+    "text": "It only works in the dashboard terminal"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Cozystack extends the Kubernetes API: the types in apps.cozystack.io are served by the cozystack-api aggregated API server, so ordinary kubectl commands work with them.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-04",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m7",
+  "stem": "Which API group holds the Cozystack catalog resources?",
+  "options": [
+   {
+    "key": "A",
+    "text": "apps/v1"
+   },
+   {
+    "key": "B",
+    "text": "core.kubernetes.io/v1"
+   },
+   {
+    "key": "C",
+    "text": "apps.cozystack.io/v1alpha1"
+   },
+   {
+    "key": "D",
+    "text": "helm.toolkit.fluxcd.io/v2"
+   }
+  ],
+  "answer": "C",
+  "rationale": "All catalog resources, Tenant, Postgres, VMInstance and the rest, live in apps.cozystack.io/v1alpha1.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-05",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m7",
+  "stem": "Which command do you start with to check the overall health of a Cozystack platform?",
+  "options": [
+   {
+    "key": "A",
+    "text": "kubectl get pods"
+   },
+   {
+    "key": "B",
+    "text": "kubectl get hr -A"
+   },
+   {
+    "key": "C",
+    "text": "helm list"
+   },
+   {
+    "key": "D",
+    "text": "kubectl get nodes"
+   }
+  ],
+  "answer": "B",
+  "rationale": "Every platform component is a HelmRelease, so `kubectl get hr -A` with READY True everywhere is the universal health check.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-06",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m7",
+  "stem": "What does a HelmRelease object describe?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A one-off install command that runs and disappears"
+   },
+   {
+    "key": "B",
+    "text": "That a specific chart with specific values must be installed and stay installed"
+   },
+   {
+    "key": "C",
+    "text": "A backup of a Helm chart"
+   },
+   {
+    "key": "D",
+    "text": "A Git repository with the application source code"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A HelmRelease describes the desired state (chart, version, values), and FluxCD makes sure it all stays installed and matches the description.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-07",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m7",
+  "stem": "What is a Helm chart?",
+  "options": [
+   {
+    "key": "A",
+    "text": "A running instance of an application"
+   },
+   {
+    "key": "B",
+    "text": "A package of Kubernetes manifest templates and metadata"
+   },
+   {
+    "key": "C",
+    "text": "A dashboard with cluster metrics"
+   },
+   {
+    "key": "D",
+    "text": "A type of Kubernetes node"
+   }
+  ],
+  "answer": "B",
+  "rationale": "A chart is a package: templates plus metadata. A release is that same chart installed with specific values.",
+  "multi": false
+ },
+ {
+  "id": "PUB-M7-08",
+  "domain": "D7",
+  "domain_name": "Cloud native fundamentals",
+  "module": "m7",
+  "stem": "How is the Cozystack platform itself installed?",
+  "options": [
+   {
+    "key": "A",
+    "text": "With the OS package manager (apt/yum)"
+   },
+   {
+    "key": "B",
+    "text": "By copying binaries to all nodes over SSH"
+   },
+   {
+    "key": "C",
+    "text": "With a Helm command that installs the cozy-installer chart"
+   },
+   {
+    "key": "D",
+    "text": "Through the Grafana UI"
+   }
+  ],
+  "answer": "C",
+  "rationale": "The platform is installed with a single idempotent Helm command: `helm upgrade --install ... cozy-installer` into the cozy-system namespace (M1).",
+  "multi": false
+ }
+]

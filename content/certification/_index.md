@@ -1,86 +1,83 @@
 ---
 title: "Ænix Certification for Cozystack"
-description: "Программа для инженеров, которые работают с платформой: курс, лаборатории, экзамен первой ступени и сертификат, который можно показать работодателю."
-eyebrow: "Программа сертификации · первая ступень"
+description: "A program for engineers who work with the platform: a course, labs, a first-level exam and a certificate you can show an employer."
+eyebrow: "Certification program · first level"
 layout: "cert-page"
-language: "ru"
+language: "en"
 url: "/certification/"
+hreflang_ru: "/ru/certification/"
 page_type: "flag-page"
 ---
 
-<div lang="en" class="cert-en-summary" style="border:1px solid rgba(127,127,127,.35);border-radius:10px;padding:14px 16px;margin:0 0 24px">
-<p style="margin:0"><strong>In English.</strong> The Ænix Certification for Cozystack — Fundamentals (CCF) checks that an engineer understands how Cozystack is built and how to work with it. The exam is in English: 60 multiple-choice questions in 90 minutes, free of charge and currently in beta; the certificate is valid for 24 months. The programme pages, preparation materials and labs are in Russian today. To enrol a team or get exam access for your engineers, <a href="/contact/">contact us</a> with the number of engineers and their names in Latin script. For instructor-led training on the same stack, see the <a href="/kubernetes-deep-dive/">Kubernetes Deep Dive Course</a>.</p>
-</div>
-
-Сертификация подтверждает, что человек понимает, как устроен Cozystack и как в нём
-работать. Первая ступень называется **CCF — Fundamentals**, первая ступень программы **Ænix Certification for Cozystack**: она
-проверяет знание платформы, а не умение чинить её в три часа ночи. Это вход в программу,
-и дальше есть ступени серьёзнее.
+Certification confirms that a person understands how Cozystack is built and how to work
+in it. The first level is called **CCF — Fundamentals**, the first level of the **Ænix Certification for Cozystack** program: it
+tests knowledge of the platform, not the ability to fix it at three in the morning. It is the entry point to the program,
+and more serious levels come after it.
 
 {{< cert-cards >}}
 
-## Что вас ждёт
+## What to expect
 
-Скажем сразу и полностью, чтобы вы решали осознанно, а не выясняли на середине пути.
+We'll lay it all out upfront, so you decide with your eyes open rather than find out halfway through.
 
 <table class="cert__facts">
-<tr><td>Подготовка</td><td>около 30 часов на курс из восьми модулей. Лаборатории — отдельно, примерно шесть-семь вечеров</td></tr>
-<tr><td>Экзамен</td><td>60 вопросов с вариантами ответов, 90 минут</td></tr>
-<tr><td>Язык экзамена</td><td>английский. Если он вам не родной, попросите дополнительные 30 минут — это штатная просьба, а не одолжение</td></tr>
-<tr><td>Цена</td><td>бесплатно</td></tr>
-<tr><td>Наблюдение за сдачей</td><td>нет. Это входная ступень, и она честно устроена как входная</td></tr>
-<tr><td>Результат</td><td>«сдал» или «не сдал» с общим баллом. По каждой теме — насколько вы к ней готовы, чтобы знать, что перечитать</td></tr>
-<tr><td>Попытки</td><td>две, с перерывом в неделю. Если обе не вышли — пауза три месяца, потом ещё две</td></tr>
-<tr><td>Сертификат</td><td>действует 24 месяца, продлевается сдачей следующей ступени</td></tr>
+<tr><td>Preparation</td><td>about 30 hours for a course of eight modules. Labs are separate, roughly six or seven evenings</td></tr>
+<tr><td>Exam</td><td>60 multiple-choice questions, 90 minutes</td></tr>
+<tr><td>Exam language</td><td>English. If it is not your native language, ask for an extra 30 minutes — this is a standard request, not a favor</td></tr>
+<tr><td>Price</td><td>free</td></tr>
+<tr><td>Proctoring</td><td>none. This is an entry level, and it is honestly built as one</td></tr>
+<tr><td>Result</td><td>“pass” or “fail” with an overall score. For each topic, how ready you are for it, so you know what to reread</td></tr>
+<tr><td>Attempts</td><td>two, a week apart. If neither works out, a three-month pause, then two more</td></tr>
+<tr><td>Certificate</td><td>valid for 24 months, renewed by passing the next level</td></tr>
 </table>
 
-**Сейчас идёт бета.** Банк вопросов ещё пополняется, а проходной балл будет уточнён по
-данным реальных попыток. На срок действия вашего сертификата это не повлияет: выданный в
-бете действует те же 24 месяца.
+**The program is currently in beta.** The question bank is still growing, and the passing score will be refined
+based on data from real attempts. This does not affect how long your certificate is valid: one issued during
+the beta is valid for the same 24 months.
 
-## Лаборатории — это не часть экзамена
+## The labs are not part of the exam
 
-Пятнадцать лабораторных работ по переезду с VMware — отдельная история. Экзамен их не
-требует, и наоборот: пройденные лабы не заменяют экзамен.
+The fifteen labs on migrating from VMware are a separate thing. The exam does not
+require them, and the reverse is also true: completed labs do not replace the exam.
 
-За них выдаётся **значок**, и он говорит ровно то, что говорит: человек проделал работу
-руками. Файл с результатами вы собираете у себя на машине, проверить это мы не можем, —
-поэтому значок не сертификат и не притворяется им.
+They earn a **badge**, and it says exactly what it says: the person did the work
+hands-on. You assemble the results file on your own machine, and we cannot verify that —
+so the badge is not a certificate and does not pretend to be one.
 
-Лабы стоит пройти до экзамена: половина вопросов станет очевидной, потому что вы это уже
-делали.
+The labs are worth doing before the exam: half the questions will become obvious, because you have already
+done these things.
 
-## Я администратор VMware и Kubernetes почти не знаю
+## I'm a VMware administrator and barely know Kubernetes
 
-Нормальный вход в программу, и маршрут для вас выглядит так.
+That's a normal way into the program, and your route looks like this.
 
-1. **Мост от виртуализации.** Как то, что вы знаете про vSphere, ложится на платформу: где
-   аналогия работает, а где врёт.
-2. **Основы Kubernetes.** Отдельный модуль, около десяти часов. Без него дальше будет тяжело.
-3. **Модули с первого по седьмой.** Архитектура, тенанты, каталог, виртуализация, сети,
-   наблюдаемость.
-4. **Лаборатории.** Здесь всё прочитанное впервые становится руками.
-5. **Экзамен.**
+1. **A bridge from virtualization.** How what you know about vSphere maps onto the platform: where
+   the analogy holds and where it misleads.
+2. **Kubernetes fundamentals.** A separate module, about ten hours. Without it the rest will be hard going.
+3. **Modules one through seven.** Architecture, tenants, the managed applications catalog, virtualization, networking,
+   observability.
+4. **Labs.** This is where everything you've read becomes hands-on for the first time.
+5. **The exam.**
 
-## Если не сдали
+## If you don't pass
 
-Вторая попытка — через неделю. Она не наказание и не стоит денег.
+The second attempt comes a week later. It is not a punishment and it costs nothing.
 
-Между попытками вы увидите, по каким темам провалились, — не в баллах, а словами «ниже
-ожидаемого», «на уровне», «выше». Этого достаточно, чтобы понять, какие два модуля
-перечитать.
+Between attempts you will see which topics you fell short on — not as scores, but in words: “below
+expected”, “at expected”, “above”. That is enough to work out which two modules
+to reread.
 
-Если экзамен оборвался по нашей вине — связь, ошибка службы, что угодно на нашей стороне —
-пересдача бесплатная и попытку не расходует. Разбираться в переписке для этого не нужно,
-порядок описан в правилах.
+If the exam broke off through our fault — connectivity, a service error, anything on our side —
+the retake is free and does not use up an attempt. You don't need to argue it out over email;
+the procedure is described in the rules.
 
-## Что нужно на ноутбуке
+## What you need on your laptop
 
-Для экзамена — только браузер.
+For the exam, just a browser.
 
-Для лабораторных — `kubectl`, `kubelogin`, `git`, а для части лаб ещё `docker` и `flux`.
-На Windows нужен WSL: без него лабы проходятся, но автопроверка не запустится и файл с
-результатами не соберётся.
+For the labs: `kubectl`, `kubelogin`, `git`, and for some labs also `docker` and `flux`.
+On Windows you need WSL: without it you can still do the labs, but the automated check will not run and the
+results file will not be assembled.
 
-Кластер для лабораторных — свой. Если своего нет, напишите: у нас есть учебный стенд, но
-он ограничен, и тенанты на нём выдаются по очереди.
+The cluster for the labs is your own. If you don't have one, write to us: we have a training environment, but
+it is limited, and tenants on it are handed out in turn.

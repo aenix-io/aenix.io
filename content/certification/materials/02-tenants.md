@@ -1,24 +1,24 @@
 ---
-title: "Тенанты и доступ"
-description: "Как платформа делит себя между тенантами, откуда берутся квоты и почему тенант — это не просто namespace."
+title: "Tenants and access"
+description: "How the platform divides itself among tenants, where quotas come from, and why a tenant is more than just a namespace."
 lesson: 2
 weight: 2
 layout: "cert-lesson"
-language: "ru"
+language: "en"
 url: "/certification/materials/tenants/"
+hreflang_ru: "/ru/certification/materials/tenants/"
 page_type: "flag-page"
 ---
 
-Вторая по весу тема экзамена — и, пожалуй, самая полезная на практике. Если первый урок
-объяснял, из чего платформа собрана, то этот — как она делится между людьми.
+The second-heaviest topic of the exam — and arguably the most useful in practice. If the first
+lesson explained what the platform is made of, this one explains how it is divided among people.
 
-## Тенант — это объект, а не папка
+## A tenant is an object, not a folder
 
-В привычном Kubernetes изоляция начинается и заканчивается пространством имён. Здесь
-иначе: **тенант (tenant) — это объект платформы**, и создание его влечёт за собой целый набор
-последствий.
+In familiar Kubernetes, isolation begins and ends with a namespace. Here it is different: **a
+tenant is a platform object**, and creating one brings a whole set of consequences with it.
 
-Заводите вы его так же, как всё остальное:
+You create it the same way as everything else:
 
 ```yaml
 apiVersion: apps.cozystack.io/v1alpha1
@@ -28,84 +28,84 @@ metadata:
   namespace: tenant-root
 ```
 
-Платформа в ответ создаёт пространство имён (namespace), раздаёт права, вешает сетевые политики,
-заводит квоты и, если попросили, поднимает внутри собственный мониторинг и хранилище.
+In response, the platform creates a namespace, grants permissions, applies network policies,
+sets up quotas and, if requested, brings up its own monitoring and storage inside.
 
-Заодно тенант получает свой домен, и собирается он по правилу `<имя>.<домен родителя>`.
-Платформа живёт на `cloud.example.com` — значит, у тенанта `alpha` будет
-`alpha.cloud.example.com`, а у его ребёнка `beta` — `beta.alpha.cloud.example.com`. При
-необходимости домен переопределяют вручную.
+The tenant also gets its own domain, built by the rule `<name>.<parent domain>`. The platform
+lives at `cloud.example.com` — so tenant `alpha` gets `alpha.cloud.example.com`, and its child
+`beta` gets `beta.alpha.cloud.example.com`. If needed, the domain can be overridden manually.
 
-## Тенанты вкладываются друг в друга
+## Tenants nest inside each other
 
-Вот что отличает эту модель от плоского списка namespace: тенанты образуют дерево.
+This is what sets the model apart from a flat list of namespaces: tenants form a tree.
 
 <figure>
-<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Дерево тенантов">
+<svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tenant tree">
   <rect x="240" y="14" width="160" height="42" rx="7" fill="#dbeafe" stroke="#2563eb"/>
   <text x="320" y="34" text-anchor="middle" font-family="monospace" font-size="13" font-weight="700" fill="#1e3a8a">tenant-root</text>
-  <text x="320" y="49" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1e40af">корень платформы</text>
+  <text x="320" y="49" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1e40af">platform root</text>
   <line x1="320" y1="56" x2="320" y2="76" stroke="#94a3b8" stroke-width="1.5"/>
   <line x1="150" y1="76" x2="490" y2="76" stroke="#94a3b8" stroke-width="1.5"/>
   <line x1="150" y1="76" x2="150" y2="96" stroke="#94a3b8" stroke-width="1.5"/>
   <line x1="490" y1="76" x2="490" y2="96" stroke="#94a3b8" stroke-width="1.5"/>
   <rect x="70" y="96" width="160" height="42" rx="7" fill="#e0e7ff" stroke="#4f46e5"/>
   <text x="150" y="116" text-anchor="middle" font-family="monospace" font-size="13" fill="#312e81">tenant-acme</text>
-  <text x="150" y="131" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">клиент</text>
+  <text x="150" y="131" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">customer</text>
   <rect x="410" y="96" width="160" height="42" rx="7" fill="#e0e7ff" stroke="#4f46e5"/>
   <text x="490" y="116" text-anchor="middle" font-family="monospace" font-size="13" fill="#312e81">tenant-beta</text>
-  <text x="490" y="131" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">клиент</text>
+  <text x="490" y="131" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3730a3">customer</text>
   <line x1="150" y1="138" x2="150" y2="162" stroke="#94a3b8" stroke-width="1.5"/>
   <rect x="70" y="162" width="160" height="42" rx="7" fill="#f1f5f9" stroke="#64748b"/>
   <text x="150" y="182" text-anchor="middle" font-family="monospace" font-size="13" fill="#0f172a">tenant-acme-dev</text>
-  <text x="150" y="197" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">отдел клиента</text>
+  <text x="150" y="197" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">customer's department</text>
 </svg>
-<figcaption>Тенант живёт внутри родителя. Имя пространства имён складывается из слова tenant- и имени.</figcaption>
+<figcaption>A tenant lives inside its parent. The namespace name is made of the word tenant- and the name.</figcaption>
 </figure>
 
-Правило именования спрашивают, и оно чуть хитрее, чем кажется: имя пространства имён
-собирается из слова `tenant-` и **всей цепочки предков через дефис, кроме корня**.
+The naming rule is asked about, and it is a little trickier than it looks: the namespace name is
+built from the word `tenant-` and **the whole chain of ancestors joined by hyphens, except the
+root**.
 
-| Путь тенанта | Пространство имён |
+| Tenant path | Namespace |
 |---|---|
 | `root/acme` | `tenant-acme` |
 | `root/alpha/beta` | `tenant-alpha-beta` |
 | `root/a/b/c` | `tenant-a-b-c` |
 
-Корень в имя не попадает — `tenant-root-alpha-beta` будет неверным ответом.
+The root does not make it into the name — `tenant-root-alpha-beta` would be a wrong answer.
 
-Отсюда же ограничение на имена: **дефис в имени тенанта запрещён**, потому что он занят
-под разделитель предков. Тенант `acme-dev` не существует — существует `dev` внутри `acme`,
-и живёт он в `tenant-acme-dev`.
+The same rule gives a restriction on names: **a hyphen in a tenant name is forbidden**, because
+it is reserved as the ancestor separator. There is no tenant `acme-dev` — there is `dev` inside
+`acme`, and it lives in `tenant-acme-dev`.
 
-В самом объекте эти два имени лежат в разных полях, и их различие тоже спрашивают:
-`metadata.namespace` — пространство имён **родителя**, там и лежит сам CR, а собственное
-пространство имён тенанта платформа записывает в `status.namespace`. Отсюда и способ
-перечислить детей — `kubectl get tenants -n tenant-alpha` покажет CR-ы, созданные внутри
-`alpha`.
+In the object itself these two names sit in different fields, and the difference between them is
+asked about too: `metadata.namespace` is the **parent's** namespace, where the CR itself lives,
+while the tenant's own namespace is written by the platform into `status.namespace`. That also
+gives you the way to list the children — `kubectl get tenants -n tenant-alpha` shows the CRs
+created inside `alpha`.
 
-Зачем это нужно: провайдер отдаёт клиенту тенант, а тот делит его между своими отделами —
-и не приходит к провайдеру за каждым новым окружением.
+Why this matters: a provider hands a tenant to a customer, and the customer divides it among its
+own departments — without coming to the provider for every new environment.
 
-## Что наследуется, а что включается
+## What is inherited and what is enabled
 
-У тенанта есть ровно четыре переключателя, и на экзамене спрашивают их буквальные имена:
-`etcd` — свой кластер etcd, `monitoring` — свой мониторинг, `ingress` — свой контроллер
-входящего трафика с TLS, `seaweedfs` — своё объектное хранилище S3. Каждый можно включить
-или оставить выключенным.
+A tenant has exactly four switches, and the exam asks for their literal names: `etcd` — its own
+etcd cluster, `monitoring` — its own monitoring, `ingress` — its own ingress controller with TLS,
+`seaweedfs` — its own S3 object storage. Each can be enabled or left disabled.
 
-Ключевая мысль, которую любят проверять: **если сервис выключен, тенант поднимается вверх
-по дереву до ближайшего предка, у которого он включён**. Не обязательно до родителя и не
-обязательно до корня — до ближайшего. Не остаётся без него, а наследует. Тенант без своего мониторинга шлёт
-метрики в мониторинг родителя; тенант без своего хранилища кладёт файлы в родительское.
+The key idea the exam likes to test: **if a service is disabled, the tenant goes up the tree to
+the nearest ancestor that has it enabled**. Not necessarily to the parent and not necessarily to
+the root — to the nearest one. It is not left without the service; it inherits it. A tenant
+without its own monitoring sends metrics to the parent's monitoring; a tenant without its own
+storage puts files into the parent's.
 
-Включать своё имеет смысл, когда нужна настоящая изоляция — например, клиент не должен
-видеть чужие метрики даже теоретически. Плата за это — ресурсы: каждый включённый сервис
-это реально работающие процессы.
+Enabling your own makes sense when you need real isolation — for example, a customer must not
+see other customers' metrics even theoretically. The cost is resources: every enabled service is
+processes that actually run.
 
-## Квоты и переподписка
+## Quotas and overcommit
 
-Тенанту назначают предел по процессорам и памяти:
+A tenant is assigned a limit on CPU and memory:
 
 ```yaml
 spec:
@@ -114,12 +114,11 @@ spec:
     memory: 32Gi
 ```
 
-Размер ресурсов задают **пресетом** (preset) в формате `<серия>.<размер>`. Серия закрепляет
-соотношение процессора к памяти: `t1` — 1:0.5, `c1` — 1:1, `s1` — 1:2, `u1` — 1:4,
-`m1` — 1:8. Размеры идут от `nano` до `4xlarge`, так что `u1.medium` — это универсальная
-серия среднего размера.
+Resource sizes are set with a **preset** in the format `<series>.<size>`. The series fixes the
+CPU-to-memory ratio: `t1` — 1:0.5, `c1` — 1:1, `s1` — 1:2, `u1` — 1:4, `m1` — 1:8. Sizes range
+from `nano` to `4xlarge`, so `u1.medium` is the universal series in a medium size.
 
-Если рядом с пресетом явно написан блок `resources`, побеждает он:
+If a `resources` block is written explicitly next to the preset, it wins:
 
 ```yaml
 resources:
@@ -127,124 +126,127 @@ resources:
   memory: 8Gi
 ```
 
-И ловушка, ради которой всё это и спрашивают: пресеты тенантов и приложений — **не то же
-самое**, что типы экземпляров KubeVirt (instance types) для виртуальных машин с сериями
-`U`, `O`, `CX`, `M` и `RT`. Строка `u1.medium` допустима в обеих системах и означает разное,
-так что смотрите, о каком объекте вопрос.
+And the trap that all of this is asked about for: tenant and application presets are **not the
+same thing** as KubeVirt instance types for virtual machines, with the series `U`, `O`, `CX`,
+`M` and `RT`. The string `u1.medium` is valid in both systems and means different things, so
+check which object the question is about.
 
-А теперь то, на чём спотыкаются практически все, — **переподписка** (overcommit,
-`cpuAllocationRatio`, по умолчанию **10**).
+And now the thing practically everyone trips over — **overcommit** (`cpuAllocationRatio`,
+**10** by default).
 
-Работает она так: когда вы запускаете нагрузку с пределом в четыре процессора, платформа
-просит у планировщика не четыре, а **предел, делённый на коэффициент** — то есть четыре
-десятых. Гарантируется малое, а взять при необходимости можно много.
+It works like this: when you run a workload with a limit of four CPUs, the platform asks the
+scheduler not for four, but for **the limit divided by the ratio** — that is, four tenths. A
+small amount is guaranteed, and a lot can be taken when needed.
 
-Формула короткая, и её стоит запомнить дословно:
+The formula is short, and it is worth memorizing verbatim:
 
 <p style="text-align:center;font-family:monospace;font-size:15px;margin:1.5em 0">
-запрос = предел ÷ cpuAllocationRatio
+request = limit ÷ cpuAllocationRatio
 </p>
 
-Смысл в том, что приложения почти никогда не потребляют свой предел. Раздавать гарантии по
-верхней планке значит держать половину железа простаивающей. Но если про коэффициент не
-знать, поведение планировщика кажется бессмысленным: попросили четыре ядра, а зарезервировано
-меньше половины одного.
+The point is that applications almost never consume their limit. Handing out guarantees at the
+upper bound means keeping half of the hardware idle. But if you do not know about the ratio, the
+scheduler's behavior seems senseless: you asked for four cores, and less than half of one is
+reserved.
 
-Важно, где живёт этот коэффициент: он настраивается на уровне **всей платформы**, а не в
-отдельном тенанте. Один на всех — свойством тенанта его в вариантах ответа не называйте.
+It matters where this ratio lives: it is configured at the level of **the whole platform**, not
+in an individual tenant. One for everyone — do not pick it as a tenant property in the answer
+options.
 
-## Изоляция
+## Isolation
 
-По умолчанию тенанты друг друга не видят: сетевые политики запрещают ходить между
-пространствами имён. И это не переключатель — **отключить изоляцию нельзя**. Флаг
-`isolated` существовал до версии 1.0 и убран; если он попадётся в вариантах ответа, это
-ловушка.
+By default tenants cannot see each other: network policies forbid traffic between namespaces.
+And this is not a switch — **isolation cannot be disabled**. The `isolated` flag existed before
+version 1.0 and has been removed; if it shows up in the answer options, it is a trap.
 
-Отрезаны поды не только от соседей. По умолчанию они не достучатся ни до `kube-apiserver`,
-ни до собственного `etcd` тенанта. Нужен доступ — его открывают точечно, метками на поде:
+Pods are cut off not only from their neighbors. By default they cannot reach either
+`kube-apiserver` or the tenant's own `etcd`. If access is needed, it is opened selectively, with
+labels on the pod:
 
 ```yaml
 policy.cozystack.io/allow-to-apiserver: "true"
 policy.cozystack.io/allow-to-etcd: "true"
 ```
 
-Значение — строка `"true"`, и это тоже спрашивают.
+The value is the string `"true"`, and that is asked about too.
 
-## Как люди попадают внутрь
+## How people get inside
 
-Три пути, и это тоже спрашивают.
+Three paths, and this is asked about too.
 
-**Дашборд** — веб-интерфейс платформы. Вход через **Keycloak**, то есть по корпоративной
-учётной записи, а не по отдельному паролю.
+**Dashboard** — the platform's web interface. Sign-in is through **Keycloak**, that is, with a
+corporate account rather than a separate password.
 
-**kubeconfig** — файл доступа, который выдаётся тенанту. Внутри него не сертификат, а
-вызов внешней программы: `kubectl` при первом обращении открывает браузер, вы входите
-через Keycloak, и выданный токен действует до истечения срока. Отсюда, кстати, требование
-поставить `kubelogin`: без него `kubectl` не знает, как логиниться.
+**kubeconfig** — the access file issued to a tenant. Inside it is not a certificate but a call
+to an external program: on the first request `kubectl` opens a browser, you sign in through
+Keycloak, and the issued token is valid until it expires. This, by the way, is why you need to
+install `kubelogin`: without it `kubectl` does not know how to log in.
 
-**Terraform** — тот же API, только описанием.
+**Terraform** — the same API, only declaratively.
 
-### Откуда берётся сам файл кубконфига
+### Where the kubeconfig file itself comes from
 
-Готовым файлом кубконфиг тенанту не выдают — его собирает администратор платформы скриптом
-из документации. Знать этот скрипт наизусть не нужно, а вот **из чего он собирает файл** —
-спрашивают.
+A tenant is not handed a ready-made kubeconfig file — the platform administrator builds it with
+a script from the documentation. You do not need to know that script by heart, but **what it
+builds the file from** is asked about.
 
-У каждого тенанта в его пространстве имён лежит одноимённый секрет: у тенанта `alpha` это
-секрет `alpha` в пространстве `tenant-alpha`. Скрипт достаёт оттуда три вещи:
+Every tenant has a secret with the same name in its namespace: for tenant `alpha` it is the
+secret `alpha` in the `tenant-alpha` namespace. The script takes three things from it:
 
-| Что берётся | Из какого поля | Зачем |
+| What is taken | From which field | Why |
 |---|---|---|
-| токен доступа | `token` | им тенант предъявляет себя API-серверу |
-| сертификат центра сертификации | `ca.crt` | по нему `kubectl` убеждается, что сервер настоящий |
-| пространство имён по умолчанию | `namespace` | чтобы не писать `-n` в каждой команде |
+| access token | `token` | the tenant presents itself to the API server with it |
+| certificate authority certificate | `ca.crt` | `kubectl` uses it to verify the server is genuine |
+| default namespace | `namespace` | so you do not have to write `-n` in every command |
 
-Адрес самого API-сервера скрипт берёт не из секрета, а из текущего кубконфига администратора,
-который скрипт запускает. Итого файл собирается из **токена, CA-сертификата и адреса
-сервера** — и в этом варианте никакого Keycloak и никакого `kubelogin` не требуется: токен
-уже внутри файла.
+The address of the API server itself the script takes not from the secret but from the current
+kubeconfig of the administrator who runs the script. In total, the file is built from **the
+token, the CA certificate and the server address** — and in this variant neither Keycloak nor
+`kubelogin` is required: the token is already inside the file.
 
-Отсюда важное следствие: **кубконфиг тенанта — это секрет ровно в том же смысле, что и
-пароль.** Кто получил файл, тот получил и права тенанта, до отзыва токена.
+An important consequence follows: **a tenant kubeconfig is a secret in exactly the same sense
+as a password.** Whoever gets the file gets the tenant's permissions too, until the token is
+revoked.
 
-Права внутри тенанта раздаются обычными ролями Kubernetes. Никакой отдельной системы
-разрешений у платформы нет, и это ответ на популярный вопрос-ловушку.
+Permissions inside a tenant are granted with ordinary Kubernetes roles. The platform has no
+separate permission system, and that is the answer to a popular trick question.
 
-Тенант заведён, квоты выданы, люди внутрь пущены. Теперь им надо что-то заказать.
+The tenant is created, quotas are assigned, people are let inside. Now they need to order
+something.
 
 <div class="exam-box">
-<h4>Что спросят на экзамене</h4>
+<h4>What the exam will ask</h4>
 <ul>
-<li>Что тенант — объект платформы, а не просто пространство имён.</li>
-<li>Что имя пространства имён = <code>tenant-</code> плюс цепочка предков через дефис, без корня.</li>
-<li>Что дефис в имени тенанта запрещён.</li>
-<li>Что тенанты вкладываются друг в друга, а вложенный создаётся внутри родителя.</li>
-<li>Что выключенный сервис наследуется от ближайшего предка, у которого он включён, — не обязательно от родителя.</li>
-<li>Имена четырёх переключателей дословно: <code>etcd</code>, <code>monitoring</code>,
+<li>That a tenant is a platform object, not just a namespace.</li>
+<li>That the namespace name = <code>tenant-</code> plus the chain of ancestors joined by hyphens, without the root.</li>
+<li>That a hyphen in a tenant name is forbidden.</li>
+<li>That tenants nest inside each other, and a nested one is created inside its parent.</li>
+<li>That a disabled service is inherited from the nearest ancestor that has it enabled — not necessarily from the parent.</li>
+<li>The names of the four switches verbatim: <code>etcd</code>, <code>monitoring</code>,
 <code>ingress</code>, <code>seaweedfs</code>.</li>
-<li>Что домен тенанта собирается как <code>&lt;имя&gt;.&lt;домен родителя&gt;</code>.</li>
-<li>Что <code>metadata.namespace</code> — пространство имён родителя, а
-<code>status.namespace</code> — своё.</li>
-<li>Что кубконфиг тенанта скрипт из документации собирает из <b>токена, CA-сертификата и
-адреса сервера</b>: первые два — из одноимённого секрета тенанта, адрес — из кубконфига
-администратора.</li>
-<li>Формат пресетов <code>&lt;серия&gt;.&lt;размер&gt;</code>: t1 (1:0.5), c1 (1:1), s1 (1:2), u1
+<li>That a tenant's domain is built as <code>&lt;name&gt;.&lt;parent domain&gt;</code>.</li>
+<li>That <code>metadata.namespace</code> is the parent's namespace, and
+<code>status.namespace</code> is the tenant's own.</li>
+<li>That the script from the documentation builds a tenant kubeconfig from <b>the token, the CA certificate and the
+server address</b>: the first two from the tenant's secret of the same name, the address from the
+administrator's kubeconfig.</li>
+<li>The preset format <code>&lt;series&gt;.&lt;size&gt;</code>: t1 (1:0.5), c1 (1:1), s1 (1:2), u1
 (1:4), m1 (1:8);
-размеры от nano до 4xlarge.</li>
-<li>Что явно заданный блок <code>resources</code> перекрывает пресет.</li>
-<li>Что пресеты тенантов — не instance types KubeVirt (U, O, CX, M, RT): <code>u1.medium</code>
-есть и там,
-и там.</li>
-<li>Что запрос нагрузки = её предел, делённый на <code>cpuAllocationRatio</code> (по умолчанию
-10).</li>
-<li>Что <code>cpuAllocationRatio</code> настраивается на уровне платформы, а не отдельного
-тенанта.</li>
-<li>Что изоляцию отключить нельзя, а флаг <code>isolated</code> убран в версии 1.0.</li>
-<li>Имена меток дословно: <code>policy.cozystack.io/allow-to-apiserver</code> и <code>allow-to-etcd</code>, значение — строка <code>"true"</code>.</li>
-<li>Что вход идёт через Keycloak, а права — обычным RBAC.</li>
+sizes from nano to 4xlarge.</li>
+<li>That an explicitly set <code>resources</code> block overrides the preset.</li>
+<li>That tenant presets are not KubeVirt instance types (U, O, CX, M, RT): <code>u1.medium</code>
+exists in both
+systems.</li>
+<li>That a workload's request = its limit divided by <code>cpuAllocationRatio</code> (10 by
+default).</li>
+<li>That <code>cpuAllocationRatio</code> is configured at the platform level, not for an individual
+tenant.</li>
+<li>That isolation cannot be disabled, and the <code>isolated</code> flag was removed in version 1.0.</li>
+<li>The label names verbatim: <code>policy.cozystack.io/allow-to-apiserver</code> and <code>allow-to-etcd</code>; the value is the string <code>"true"</code>.</li>
+<li>That sign-in goes through Keycloak, and permissions through ordinary RBAC.</li>
 </ul>
 </div>
 
-<p class="doclink">Подробнее:
-<a href="https://cozystack.io/docs/v1.6/guides/tenants/" target="_blank" rel="noopener">тенанты</a> ·
-<a href="https://cozystack.io/docs/v1.6/operations/" target="_blank" rel="noopener">эксплуатация платформы</a></p>
+<p class="doclink">Learn more:
+<a href="https://cozystack.io/docs/v1.6/guides/tenants/" target="_blank" rel="noopener">tenants</a> ·
+<a href="https://cozystack.io/docs/v1.6/operations/" target="_blank" rel="noopener">platform operations</a></p>

@@ -1,20 +1,23 @@
+{{- $ru := eq (.Page.Params.language | default "en") "ru" -}}
+{{- $base := cond $ru "/ru/certification/" "/certification/" -}}
+{{- if $ru }}
 <div class="cert__grid">
   <div class="cert__card">
     <h3>Учебные материалы</h3>
     <p>Семь уроков ровно по темам экзамена — со схемами, разбором того, что спросят, и
        ссылками на нужные разделы документации. Читаются за вечер, скачиваются в PDF.</p>
-    <a class="cert__btn" href="/certification/materials/">Открыть материалы</a>
+    <a class="cert__btn" href="{{ $base }}materials/">Открыть материалы</a>
   </div>
   <div class="cert__card">
     <h3>Пробные вопросы</h3>
     <p>Двадцать вопросов из открытого набора, с разбором каждого ответа. Без регистрации,
        сколько угодно раз.</p>
-    <a class="cert__btn" href="/certification/practice/">Попробовать</a>
+    <a class="cert__btn" href="{{ $base }}practice/">Попробовать</a>
   </div>
   <div class="cert__card">
     <h3>Экзамен CCF</h3>
     <p>Настоящий экзамен: 60 вопросов, 90 минут. Нужен доступ — его выдаём поимённо.</p>
-    <a class="cert__btn" href="/certification/exam/">Сдать экзамен</a>
+    <a class="cert__btn" href="{{ $base }}exam/">Сдать экзамен</a>
   </div>
   <div class="cert__card">
     <h3>Лаборатории и воркшоп</h3>
@@ -26,4 +29,37 @@
 <p class="cert__note"><strong>Нет доступа к экзамену?</strong> Напишите
 <a href="https://t.me/tym83" target="_blank" rel="noopener">@tym83</a> в Telegram или
 <a href="https://www.linkedin.com/in/timur-tukaev/" target="_blank" rel="noopener">Timur Tukaev</a> в LinkedIn — пришлём
-пригласительную ссылку. Понадобится имя латиницей: оно попадёт в сертификат.</p>
+пригласительную ссылку. Понадобится имя латиницей: оно попадёт в сертификат.
+Руководители, которые записывают на экзамен команду, могут также <a href="/contact/">написать нам</a>.</p>
+{{- else }}
+<div class="cert__grid">
+  <div class="cert__card">
+    <h3>Study materials</h3>
+    <p>Seven lessons that follow the exam topics exactly, with diagrams, notes on what the
+       questions cover, and links to the relevant documentation. One evening to read; printable as PDF.</p>
+    <a class="cert__btn" href="{{ $base }}materials/">Open the materials</a>
+  </div>
+  <div class="cert__card">
+    <h3>Practice questions</h3>
+    <p>Twenty questions from an open set, with an explanation for every answer. No sign-up,
+       as many times as you like.</p>
+    <a class="cert__btn" href="{{ $base }}practice/">Try them</a>
+  </div>
+  <div class="cert__card">
+    <h3>CCF exam</h3>
+    <p>The real exam: 60 questions, 90 minutes. You need access, which is issued per person.</p>
+    <a class="cert__btn" href="{{ $base }}exam/">Take the exam</a>
+  </div>
+  <div class="cert__card">
+    <h3>Labs and workshop</h3>
+    <p>Fifteen labs on moving off VMware: from your first cluster to your own application
+       in the platform catalog.</p>
+    <a class="cert__btn" href="https://github.com/aenix-org/cozystack-migration-workshop" target="_blank" rel="noopener">Open the labs ↗</a>
+  </div>
+</div>
+<p class="cert__note"><strong>No exam access?</strong> Message
+<a href="https://t.me/tym83" target="_blank" rel="noopener">@tym83</a> on Telegram or
+<a href="https://www.linkedin.com/in/timur-tukaev/" target="_blank" rel="noopener">Timur Tukaev</a> on LinkedIn and we will send
+you an invitation link. We need your name in Latin script: it goes on the certificate.
+Managers enrolling a team can also <a href="/contact/">contact us</a>.</p>
+{{- end }}
