@@ -6,6 +6,7 @@ weight: 1
 layout: "cert-lesson"
 language: "ru"
 url: "/certification/materials/architecture/"
+page_type: "flag-page"
 ---
 
 Начнём с вопроса, который на экзамене задают чаще любого другого: **что такое Cozystack по

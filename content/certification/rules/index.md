@@ -5,6 +5,7 @@ eyebrow: "Экзамен CCF"
 layout: "cert-page"
 language: "ru"
 url: "/certification/rules/"
+page_type: "flag-page"
 ---
 
 ## Попытки
