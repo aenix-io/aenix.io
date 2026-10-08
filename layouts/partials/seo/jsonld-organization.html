@@ -3,33 +3,54 @@
        footer), so the registered address cannot drift between pages. */ -}}
 {{- $eu := site.Params.company.eu -}}
 {{- $us := site.Params.company.us -}}
-{{- $org := dict
-  "@context" "https://schema.org"
+{{- /* The brand "Ænix" is not a legal entity. The two companies are listed
+       separately with their own registered details, so search engines and
+       AI answers do not merge the Czech and the US entity. */ -}}
+{{- $sro := dict
   "@type" "Organization"
-  "@id" ("/#org" | absURL)
-  "name" "Ænix"
-  "alternateName" (slice "Aenix" $eu.name $us.name)
+  "@id" ("/#aenix-sro" | absURL)
+  "name" $eu.name
   "legalName" $eu.name
-  "url" ("/" | absURL)
-  "logo" (dict "@type" "ImageObject" "url" ("images/logo.png" | absURL) "width" 1940 "height" 851)
-  "description" "Ænix created Cozystack, a CNCF Sandbox cloud platform, and is one of its maintainers. It builds and supports cloud platforms on Cozystack: Ænix Public Cloud Platform for hosting and cloud providers, Ænix Private Cloud Platform for regulated enterprises and Ænix AI Platform for GPU workloads."
-  "email" site.Params.email
   "vatID" $eu.vat
   "identifier" (dict "@type" "PropertyValue" "propertyID" "IČO" "value" $eu.cin)
+  "foundingDate" $eu.registered
   "address" (dict
     "@type" "PostalAddress"
     "streetAddress" $eu.address
     "addressLocality" $eu.city
     "postalCode" $eu.zip
     "addressCountry" $eu.country_code)
+  "areaServed" "EU"
+-}}
+{{- $inc := dict
+  "@type" "Organization"
+  "@id" ("/#aenix-inc" | absURL)
+  "name" $us.name
+  "legalName" $us.name
+  "identifier" (dict "@type" "PropertyValue" "propertyID" "Delaware file number" "value" $us.registration)
+  "address" (dict
+    "@type" "PostalAddress"
+    "streetAddress" $us.address
+    "addressLocality" "Newark"
+    "addressRegion" "DE"
+    "postalCode" $us.zip
+    "addressCountry" $us.country_code)
+  "areaServed" "US"
+-}}
+{{- $org := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "@id" ("/#org" | absURL)
+  "name" "Ænix"
+  "alternateName" "Aenix"
+  "url" ("/" | absURL)
+  "logo" (dict "@type" "ImageObject" "url" ("images/logo.png" | absURL) "width" 1940 "height" 851)
+  "description" "Ænix created Cozystack, a CNCF Sandbox cloud platform, and is one of its maintainers. It builds and supports cloud platforms on Cozystack: Ænix Public Cloud Platform for hosting and cloud providers, Ænix Private Cloud Platform for regulated enterprises and Ænix AI Platform for GPU workloads. Contracts are made by AENIX s.r.o. (Czech Republic) for the EU and by AENIX INC (Delaware, USA) for the US."
+  "email" site.Params.email
   "founder" (slice
     (dict "@type" "Person" "name" "Andrei Kvapil")
     (dict "@type" "Person" "name" "Timur Tukaev"))
-  "subOrganization" (dict
-    "@type" "Organization"
-    "name" $us.name
-    "legalName" $us.name
-    "address" (dict "@type" "PostalAddress" "addressRegion" $us.state "addressCountry" $us.country_code))
+  "subOrganization" (slice $sro $inc)
   "sameAs" (slice
     "https://github.com/aenix-io"
     "https://www.linkedin.com/company/aenix-io/"

@@ -50,6 +50,7 @@
   "complianceUrl" "/compliance/"
   "regNo"      "Company ID (IČO)"
   "vatNo"      "VAT"
+  "usRegNo"    "Delaware file no."
   "company"    "Company"
   "about"      "About"
   "aboutUrl"   "/about/"
@@ -108,6 +109,7 @@
   "cert"       "Zertifizierung"
   "regNo"      "IČO"
   "vatNo"      "USt-IdNr."
+  "usRegNo"    "Delaware-Registernr."
   "company"    "Unternehmen"
   "about"      "Über uns"
   "aboutUrl"   "/de/ueber-uns/"
@@ -199,7 +201,7 @@
       {{- with site.Params.company }}
       <p class="footer-legal">
         {{ .eu.name }}, {{ .eu.address }}, {{ .eu.zip }} {{ .eu.city }}, {{ if $de }}Tschechische Republik{{ else }}{{ .eu.country }}{{ end }} · {{ index $f "regNo" }} {{ .eu.cin }} · {{ index $f "vatNo" }} {{ .eu.vat }}<br>
-        {{ .us.name }}, {{ .us.state }}, USA
+        {{ .us.name }}, {{ .us.address }}, Newark, DE {{ .us.zip }}, {{ if $de }}USA{{ else }}{{ .us.country }}{{ end }} · {{ index $f "usRegNo" }} {{ .us.registration }}
       </p>
       {{- end }}
     </div>
