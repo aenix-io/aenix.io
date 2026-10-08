@@ -13,14 +13,14 @@ secondary_keywords: ["cozystack preise", "cozystack support preise", "kubernetes
 images: ["img/og/pricing.jpg"]
 related_pages: ["/de/produkte/", "/tco-calculator/", "/de/produkte/cozystack-enterprise-support/", "/de/kontakt/"]
 direct_answer: |
-  **Cozystack selbst ist kostenlos: Apache 2.0, keine Lizenzkosten pro CPU, Core oder VM, und Sie können es betreiben, ohne Ænix etwas zu zahlen. Ænix verkauft ein Abonnement (Support, kommerzielle Module, Services), keine Lizenz. Die veröffentlichte Preisliste besteht aus Support-Stufen pro 10 physische Nodes und Monat: Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD bei jährlicher Abrechnung sowie eine individuelle Stufe Enterprise. Dieselben Stufen gelten für ein Abonnement der Ænix Public Cloud Platform, das zusätzlich die proprietären kommerziellen Ænix-Module enthält (Billing-System und WHMCS-Integration), und für den Support von selbst betriebenem Cozystack. Die Pakete wachsen mit dem Bestand: 60 Nodes in der Stufe Basic sind sechs Pakete. Die Ænix Private Cloud Platform, die Ænix AI Platform und Multi-Region-Aufbauten für Betreiber werden nach einem Discovery-Gespräch per RFP angeboten, weil der Preis von Bestandsgröße, regulatorischem Umfang, Migrationsvolumen und dem Anteil des Betriebs abhängt, den Ænix übernimmt.**
+  **Cozystack selbst ist kostenlos: Apache 2.0, keine Lizenzkosten pro CPU, Core oder VM, und Sie können es betreiben, ohne Ænix etwas zu zahlen. Ænix verkauft ein Abonnement (Support, kommerzielle Module, Services), keine Lizenz. Die veröffentlichte Preisliste besteht aus Support-Stufen pro 10 physische Nodes und Monat: Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD bei jährlicher Abrechnung sowie eine individuelle Stufe Enterprise. Jede Support-Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration). Die Preisliste ist das Abonnement der Ænix Public Cloud Platform; ein Team, das Cozystack selbst betreibt, schließt dasselbe Abonnement ab und lässt die kommerziellen Module einfach ungenutzt. Die Pakete wachsen mit dem Bestand: 60 Nodes in der Stufe Basic sind sechs Pakete. Die Ænix Private Cloud Platform, die Ænix AI Platform und Multi-Region-Aufbauten für Betreiber werden nach einem Discovery-Gespräch per RFP angeboten, weil der Preis von Bestandsgröße, regulatorischem Umfang, Migrationsvolumen und dem Anteil des Betriebs abhängt, den Ænix übernimmt.**
 quick_facts:
   - label: "Lizenzkosten für Cozystack"
     value: "Keine. Apache 2.0, keine Gebühren pro CPU, Core oder VM, und es läuft weiter, wenn die Geschäftsbeziehung endet."
   - label: "Veröffentlichte Stufen"
     value: "Basic 1.250 USD · Standard 3.000 USD · Plus 5.500 USD · Enterprise individuell — pro 10 physische Nodes und Monat, jährliche Abrechnung."
   - label: "Wofür die Preisliste gilt"
-    value: "Abonnements der Ænix Public Cloud Platform und Support für selbst betriebenes Cozystack. Dieselben vier Stufen für beides."
+    value: "Das Abonnement der Ænix Public Cloud Platform. Teams, die Cozystack selbst betreiben, schließen dasselbe Abonnement ab und lassen die kommerziellen Module ungenutzt."
   - label: "Jährlich oder monatlich"
     value: "Bei jährlicher Abrechnung zahlen Sie 10 Monatspreise für 12 Monate (2 Monate gratis). Monatlich abgerechnet kosten die Stufen 1.500 / 3.600 / 6.600 USD pro 10 Nodes."
   - label: "Angebot per RFP"
@@ -31,7 +31,7 @@ quick_facts:
     value: "Listenpreise auf der Website in USD; Verträge mit der AENIX s.r.o. in EUR."
 faq:
   - q: "Ist Cozystack kostenlos?"
-    a: "Ja. Cozystack ist Open Source unter Apache 2.0, ohne Lizenzkosten pro CPU, VM oder Core, und jeder kann es betreiben. Cozystack ist ein CNCF-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt; die Engine überdauert also jede Geschäftsbeziehung mit uns. Ænix bezahlen Sie für Support, die proprietären kommerziellen Module und Services."
+    a: "Ja. Cozystack ist Open Source unter Apache 2.0, ohne Lizenzkosten pro CPU, VM oder Core, und jeder kann es betreiben. Cozystack ist ein CNCF-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt; die Engine überdauert also jede Geschäftsbeziehung mit uns. Ænix bezahlen Sie für Support, die proprietären kommerziellen Module und Services."
   - q: "Was enthält ein Abonnement der Public Cloud Platform für 1.250 USD?"
     a: "Ein Paket deckt 10 physische Nodes in der Support-Stufe Basic ab: Support zu Geschäftszeiten mit 8 Stunden Reaktionszeit im Notfall und fünf abgedeckten Vorfällen, CVE-Fixes und die proprietären kommerziellen Ænix-Module — das Billing-System und die WHMCS-Integration. Plattforminstallation, begleitete Upgrades und Support für die White-Label-Konfiguration gibt es ab Standard (3.000 USD). Migration, ein Platform Readiness Assessment und Managed Operations werden separat angeboten."
   - q: "Was passiert, wenn das Abonnement endet?"
@@ -40,8 +40,8 @@ faq:
     a: "Nein. Es sind Open-Source-Funktionen von Cozystack, die jeder nutzen kann. Die Stufen legen fest, ob Ænix Sie bei Konfiguration und Betrieb unterstützt: White-Label-Konfiguration und GPU-Sharing (HAMi) ab Standard, Air-Gap-Installation ab Plus."
   - q: "Warum veröffentlichen Sie keine Preise pro CPU?"
     a: "Weil Sie keine Lizenz kaufen. Ein Preis pro CPU würde ein gebündeltes Projekt — Assessment, Migration, Betriebsmodell, Support — so bepreisen, als wäre es eine Gebühr pro Sockel, und er läge je nach Umfang in beide Richtungen daneben. Die Support-Stufen sind vollständig veröffentlicht; Plattformprogramme werden nach einem Discovery-Gespräch angeboten."
-  - q: "Können wir Support kaufen, ohne eine Plattform zu kaufen?"
-    a: "Ja, und das ist ein bewusstes Angebot, keine geduldete Ausnahme. Teams, die Cozystack auf eigener oder gemieteter Hardware betreiben, kaufen dieselben Support-Stufen pro 10 Nodes und haben die Maintainer auf Abruf. Siehe Enterprise-Support für Cozystack."
+  - q: "Können wir Support für selbst betriebenes Cozystack kaufen?"
+    a: "Ja, und das ist ein bewusstes Angebot, keine geduldete Ausnahme. Teams, die Cozystack auf eigener oder gemieteter Hardware betreiben, schließen dasselbe Abonnement pro 10 Nodes ab — die enthaltenen kommerziellen Module müssen sie nicht nutzen — und haben die Maintainer auf Abruf. Siehe Enterprise-Support für Cozystack."
   - q: "Wie lange dauert die Beschaffung üblicherweise?"
     a: "Das Discovery-Gespräch findet in derselben Woche statt. Ein Platform Readiness Assessment wird typischerweise innerhalb von 2–4 Wochen beauftragt und dauert 14 oder 28 Tage. Die Beauftragung eines vollständigen Enterprise-Aufbaus dauert über Rechtsprüfung und Einkauf typischerweise 8–16 Wochen; ein Support-Abonnement hat einen deutlich kleineren kommerziellen Umfang und ist in wenigen Wochen abgeschlossen."
 ---
@@ -64,7 +64,7 @@ Zwei voneinander unabhängige Entscheidungen:
 
 Services — Platform Readiness Assessment, Pilot, Aufbau, Migration, Managed Operations — werden separat eingegrenzt.
 
-**Wo Sie landen:** Ein Abonnement der Ænix Public Cloud Platform in Provider-Größe und Support für selbst betriebenes Cozystack sind standardisierte Produkte; die Preisliste unten ist der Preis. Private Cloud Platform, AI Platform und Multi-Region-Aufbauten für Betreiber sind Programme, keine Artikelnummern: Sie umfassen immer ein Assessment, einen Migrationsplan und ein Betriebsmodell und werden deshalb nach dem Scoping per RFP angeboten.
+**Wo Sie landen:** Ein Abonnement der Ænix Public Cloud Platform in Provider-Größe ist ein standardisiertes Produkt — auch für Teams, die Cozystack selbst betreiben und dasselbe Abonnement abschließen; die Preisliste unten ist der Preis. Private Cloud Platform, AI Platform und Multi-Region-Aufbauten für Betreiber sind Programme, keine Artikelnummern: Sie umfassen immer ein Assessment, einen Migrationsplan und ein Betriebsmodell und werden deshalb nach dem Scoping per RFP angeboten.
 
 ---
 
@@ -79,7 +79,7 @@ Services — Platform Readiness Assessment, Pilot, Aufbau, Migration, Managed Op
 
 Das sind die drei Ænix-Plattformen. Sie laufen auf einer Engine mit unterschiedlich zugeschalteten Oberflächen; eine zweite Plattform wird deshalb als Konfigurationsänderung an der bestehenden eingegrenzt, nicht als zweiter Aufbau.
 
-Daneben gibt es den **[Enterprise-Support für Cozystack](/de/produkte/cozystack-enterprise-support/)** für Teams, die Cozystack auf eigenen oder gemieteten Servern betreiben, bepreist nach derselben Tabelle, und die **[WHMCS-Integration](/de/produkte/whmcs-integration/)**, ein proprietäres Ænix-Modul, das in jeder Stufe enthalten ist.
+Daneben gibt es den **[Enterprise-Support für Cozystack](/de/produkte/cozystack-enterprise-support/)** für Teams, die Cozystack auf eigenen oder gemieteten Servern betreiben — dasselbe Abonnement, bei dem die kommerziellen Module ungenutzt bleiben —, und die **[WHMCS-Integration](/de/produkte/whmcs-integration/)**, ein proprietäres Ænix-Modul, das in jeder Stufe enthalten ist.
 
 [Plattformen ansehen →](/de/produkte/)
 
@@ -87,7 +87,7 @@ Daneben gibt es den **[Enterprise-Support für Cozystack](/de/produkte/cozystack
 
 ## Schritt 2 — Support-Stufe wählen {#support}
 
-Das ist die veröffentlichte Preisliste. Sie gilt für Abonnements der Ænix Public Cloud Platform und für den Support von selbst betriebenem Cozystack, mit denselben Stufen für beides. Die Preise gelten pro 10 physische Nodes und Monat. Bei jährlicher Abrechnung zahlen Sie 10 Monatspreise für 12 Monate (2 Monate gratis). Die Tabellen unten zeigen den vollständigen Vergleich: SLA, kommerzielle Module, Support-Umfang, PoC, Schulungen, Sicherheit, Beratung, Beschaffungsbedingungen und Zusammenarbeit mit dem Team.
+Das ist die veröffentlichte Preisliste. Jede Support-Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration). Die Preisliste ist das Abonnement der Ænix Public Cloud Platform; ein Team, das Cozystack selbst betreibt, schließt dasselbe Abonnement ab und lässt die kommerziellen Module einfach ungenutzt. Die Preise gelten pro 10 physische Nodes und Monat. Bei jährlicher Abrechnung zahlen Sie 10 Monatspreise für 12 Monate (2 Monate gratis). Die Tabellen unten zeigen den vollständigen Vergleich: SLA, kommerzielle Module, Support-Umfang, PoC, Schulungen, Sicherheit, Beratung, Beschaffungsbedingungen und Zusammenarbeit mit dem Team.
 
 ### Preise und Ausrichtung
 

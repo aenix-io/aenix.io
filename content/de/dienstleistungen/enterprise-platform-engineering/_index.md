@@ -102,4 +102,4 @@ Reguläres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readi
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

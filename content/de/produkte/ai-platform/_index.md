@@ -13,14 +13,14 @@ faq_style: "rows"
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Service-Katalog im Cozystack Dashboard"
 direct_answer: |
-  **Die Ænix AI Platform ist selbst gehostete KI-Infrastruktur für Organisationen, die Inferenz, Fine-Tuning und RAG auf eigenen GPUs betreiben statt über KI-APIs der Hyperscaler. Sie ist die dritte Ænix-Plattform neben Public Cloud und Private Cloud und läuft auf derselben Engine Cozystack (Apache 2.0, ein CNCF-Projekt, seit September 2026 im Programm CNCF Kubernetes AI Conformance). NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough ganzer GPUs an virtuelle Maschinen und anteilige Nutzung über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Dazu kommen GPU-Quotas pro Mandant, Model Serving (vLLM-kompatibel), Vektordatenbanken, Object Storage und Air-Gap-Deployment. Ænix liefert die Plattform als Projekt per RFP — 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach Umfang — mit optionalem Managed-Retainer.**
+  **Die Ænix AI Platform ist selbst gehostete KI-Infrastruktur für Organisationen, die Inferenz, Fine-Tuning und RAG auf eigenen GPUs betreiben statt über KI-APIs der Hyperscaler. Sie ist die dritte Ænix-Plattform neben Public Cloud und Private Cloud und läuft auf derselben Engine Cozystack (Apache 2.0, ein CNCF-Projekt, seit September 2026 im Programm CNCF Kubernetes AI Conformance). NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Dazu kommen GPU-Quotas pro Mandant, Model Serving (vLLM-kompatibel), Vektordatenbanken, Object Storage und Air-Gap-Deployment. Ænix liefert die Plattform als Projekt per RFP — 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach Umfang — mit optionalem Managed-Retainer.**
 quick_facts:
   - label: "Was es ist"
     value: "Selbst gehostete, mandantenfähige KI-Infrastruktur für Inferenz, Fine-Tuning und RAG auf GPUs unter Ihrer Kontrolle. Die dritte Ænix-Plattform, auf derselben Engine wie Public Cloud und Private Cloud."
   - label: "GPUs"
-    value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough an VMs, anteilige Nutzung über HAMi. MIG und Time-Slicing: Roadmap. Andere Beschleuniger: nur PCI-Passthrough an VMs."
+    value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), anteilige Nutzung über HAMi. MIG und Time-Slicing: Roadmap. Andere Beschleuniger: nur PCI-Passthrough an VMs."
   - label: "CNCF-Programme und NVIDIA"
-    value: "Cozystack ist seit September 2026 im Programm CNCF Kubernetes AI Conformance; CNCF-zertifizierte Kubernetes-Distribution. Die Partner-Validierung des GPU-Operator-Stacks bei NVIDIA wurde im Oktober 2026 eingereicht und steht noch aus."
+    value: "Cozystack ist seit September 2026 im Programm CNCF Kubernetes AI Conformance; CNCF Certified Kubernetes Distribution. Die Partner-Validierung des GPU-Operator-Stacks bei NVIDIA wurde im Oktober 2026 eingereicht und steht noch aus."
   - label: "Lizenz"
     value: "Engine unter der Apache-2.0-Lizenz (keine Lizenzkosten pro CPU, Core oder GPU)"
   - label: "GPU-Nutzung und Abrechnung"
@@ -33,11 +33,11 @@ faq:
   - q: "Was unterscheidet die AI Platform vom Eigenbetrieb des Open-Source-Cozystack mit eigenem KI-Stack?"
     a: "Cozystack liefert das mandantenfähige Kubernetes- und GPU-Fundament: Der NVIDIA GPU Operator, GPU-Passthrough an VMs und das Sharing mit HAMi sind Open Source. Die AI Platform ergänzt die Umsetzung darum herum — Architektur und GPU-Sizing für Ihre Workloads, Muster für Inferenz, Fine-Tuning und RAG, dafür eingerichtete Vektordatenbanken und Object Storage, Quotas pro Mandant, Observability und eine Enterprise-Support-Stufe —, sodass Ihr Team den Plattformaufbau nicht selbst stemmen muss."
   - q: "Welche GPUs werden unterstützt?"
-    a: "NVIDIA-GPUs für Rechenzentren, über den NVIDIA GPU Operator: eine ganze GPU per Passthrough an eine virtuelle Maschine oder eine GPU, die sich Container über HAMi teilen. Zu unseren veröffentlichten Deployments gehört ein Inferenz-Server mit 8×H100. Eine Liste validierter Modelle veröffentlichen wir nicht; die Partner-Validierung des GPU-Operator-Stacks bei NVIDIA wurde im Oktober 2026 eingereicht und steht noch aus. Andere Beschleuniger lassen sich als PCI-Geräte an VMs durchreichen, ohne Automatisierung über einen Operator."
+    a: "NVIDIA-GPUs für Rechenzentren, über den NVIDIA GPU Operator: eine ganze GPU per Passthrough an eine virtuelle Maschine, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) oder eine GPU, die sich Container über HAMi teilen. Zu unseren veröffentlichten Deployments gehört ein Inferenz-Server mit 8×H100. Eine Liste validierter Modelle veröffentlichen wir nicht; die Partner-Validierung des GPU-Operator-Stacks bei NVIDIA wurde im Oktober 2026 eingereicht und steht noch aus. Andere Beschleuniger lassen sich als PCI-Geräte an VMs durchreichen, ohne Automatisierung über einen Operator."
   - q: "Unterstützen Sie MIG oder Time-Slicing?"
     a: "Heute nicht als ausgelieferte Plattformfunktion; beides steht auf der Roadmap. Eine Karte wird zwischen Mandanten mit HAMi geteilt, das pro Workload Grenzen für Speicher und Rechenleistung setzt. Planen Sie Ihre Anforderungen an die Isolation entsprechend."
   - q: "Was ist CNCF Kubernetes AI Conformance?"
-    a: "Ein CNCF-Programm, das prüft, ob eine Kubernetes-Plattform die Fähigkeiten unterstützt, auf die KI-Workloads angewiesen sind. Cozystack wurde im September 2026 aufgenommen und steht damit in derselben Liste wie andere konforme Kubernetes-Plattformen, die KI-Teams vergleichen."
+    a: "Ein CNCF-Programm, das prüft, ob eine Kubernetes-Plattform die Fähigkeiten unterstützt, auf die KI-Workloads angewiesen sind. Cozystack wurde im September 2026 aufgenommen und steht damit in derselben Liste wie andere Kubernetes-Plattformen mit AI Conformance, die KI-Teams vergleichen."
   - q: "Wie wird die GPU-Nutzung abgerechnet?"
     a: "Die GPU-Nutzung wird pro Tenant erfasst. Abgerechnet wird in dem Billing-System, das Sie bereits betreiben — WHMCS über die Ænix-Integration oder ein eigenes. In Kombination mit der Public Cloud Platform verkauft ein Anbieter GPU-Kapazität über dieselbe Abrechnung wie seine VMs und Datenbanken."
   - q: "Können wir das air-gapped betreiben?"
@@ -69,6 +69,7 @@ NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator:
 |---|---|---|
 | Ganze GPU für eine virtuelle Maschine | PCI-Passthrough in eine KubeVirt-VM | Verfügbar |
 | Ganze GPU für einen Container | Device Plugin des NVIDIA GPU Operator | Verfügbar |
+| NVIDIA vGPU für eine virtuelle Maschine | NVIDIA vGPU in einer KubeVirt-VM; erfordert Ihre NVIDIA-vGPU-Lizenz | Verfügbar (seit Cozystack 1.5) |
 | Anteilige GPU, geteilt zwischen Containern | HAMi, mit Grenzen für Speicher und Rechenleistung pro Workload | Verfügbar (optional aktivierbar) |
 | MIG-Partitionen | — | Roadmap |
 | Time-Slicing | — | Roadmap |
@@ -185,4 +186,4 @@ Vereinbaren Sie ein Discovery-Gespräch. Bringen Sie Ihr KI-Workload-Profil mit 
 
 ---
 
-*Die Ænix AI Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt (derzeit CNCF Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung). Apache 2.0.*
+*Die Ænix AI Platform basiert auf [Cozystack](https://cozystack.io) — einem CNCF-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt (derzeit CNCF Sandbox; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung). Apache 2.0.*

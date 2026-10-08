@@ -244,6 +244,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix ist das Platform-Engineering-Team, das Cozystack initiiert hat — ein CNCF-Projekt, eine zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes) mit OpenSSF Best Practices Badge.*
+*Ænix hat Cozystack entwickelt und pflegt es mit — ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices Badge.*
 
 <!-- /BLOCK 12 -->

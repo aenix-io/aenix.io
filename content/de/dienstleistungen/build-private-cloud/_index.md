@@ -118,7 +118,7 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 ## Warum Ænix
 
 - **Die Cloud gehört Ihnen, nicht uns.** Die Basis steht unter Apache 2.0 ohne Lizenzkosten pro Core, und die Übergabe ist ein Liefergegenstand mit benannten internen Verantwortlichen, keine bloße Hoffnung.
-- **Wir haben die Basis gebaut.** Cozystack ist unser Code und läuft produktiv bei Service-Providern, Banken, Telcos und KI-Betreibern.
+- **Wir kennen die Basis von innen.** Ænix hat Cozystack entwickelt und pflegt es mit; es läuft produktiv bei Service-Providern, Banken, Telcos und KI-Betreibern.
 
 ---
 
@@ -135,4 +135,4 @@ Zur Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platfo
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Projekt und eine von der CNCF zertifizierte Kubernetes-Distribution, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix vertreibt drei darauf aufbauende Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution, entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix vertreibt drei darauf aufbauende Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*

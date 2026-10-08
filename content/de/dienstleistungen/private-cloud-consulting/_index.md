@@ -15,7 +15,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/private-cloud-consulting/
 direct_answer: |
-  **Private Cloud Consulting ist eine Beratungs- und Umsetzungsleistung, bei der erfahrene Platform Engineers eine Private Cloud auf vom Kunden kontrollierter Infrastruktur entwerfen, aufbauen, dorthin migrieren und sie betreiben. Ænix erbringt sie als das Team hinter Cozystack, einem Open-Source-CNCF-Projekt, das virtuelle Maschinen (über KubeVirt) und Container auf einer Kubernetes-API betreibt — mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Multi-Tenancy über das Tenant-CRD. Die Leistung passt zu Organisationen, die VMware nach den Änderungen durch Broadcom verlassen, Souveränitätsvorgaben erfüllen müssen, Workloads von Hyperscalern zurückholen oder private Infrastruktur für KI-Workloads dimensionieren. Ænix deckt Architekturdesign, Multi-Tenancy und Betriebsmodell, Migration und Übergabe in den Betrieb ab und empfiehlt Plattformen nach technischer Eignung statt nach Partnerprovisionen — ohne Lizenzkosten pro CPU und ohne Bindung an die Roadmap eines Herstellers.**
+  **Private Cloud Consulting ist eine Beratungs- und Umsetzungsleistung, bei der erfahrene Platform Engineers eine Private Cloud auf vom Kunden kontrollierter Infrastruktur entwerfen, aufbauen, dorthin migrieren und sie betreiben. Ænix erbringt sie als das Unternehmen, das Cozystack entwickelt hat und mitpflegt, ein Open-Source-CNCF-Projekt, das virtuelle Maschinen (über KubeVirt) und Container auf einer Kubernetes-API betreibt — mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Multi-Tenancy über das Tenant-CRD. Die Leistung passt zu Organisationen, die VMware nach den Änderungen durch Broadcom verlassen, Souveränitätsvorgaben erfüllen müssen, Workloads von Hyperscalern zurückholen oder private Infrastruktur für KI-Workloads dimensionieren. Ænix deckt Architekturdesign, Multi-Tenancy und Betriebsmodell, Migration und Übergabe in den Betrieb ab und empfiehlt Plattformen nach technischer Eignung statt nach Partnerprovisionen — ohne Lizenzkosten pro CPU und ohne Bindung an die Roadmap eines Herstellers.**
 
 quick_facts:
   - label: "Was es ist"
@@ -224,6 +224,6 @@ Die Logos oben stehen für produktive Installationen der Ænix Public Cloud Plat
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix ist das Team hinter Cozystack — CNCF-Projekt, zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes), OpenSSF Best Practices.*
+*Ænix hat Cozystack entwickelt und pflegt es mit — CNCF-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->

@@ -39,7 +39,7 @@ faq:
   - q: "Bieten Sie nach der Umsetzung Rufbereitschaft oder 24/7-Support?"
     a: "Ja, im Rahmen eines Managed-Engagements. Nach einem regulären Umsetzungsprojekt betreibt Ihr Team die Plattform mit dokumentierten Runbooks und übergebenem Wissen; bei einem Managed-Engagement übernimmt Ænix zusätzlich die Rufbereitschaft."
   - q: "Warum gerade Ænix für Kubernetes Consulting?"
-    a: "Ænix ist das Team hinter Cozystack, einer Open-Source-, Kubernetes-nativen CNCF-Plattform im Produktionseinsatz. Die Empfehlungen stammen aus Systemen, die Ænix selbst baut und betreibt, kommen von Senior-Engineers statt von Analysten und sind frei von Verkaufsinteressen an einer lizenzierten Distribution."
+    a: "Ænix hat Cozystack entwickelt und pflegt es mit — eine Open-Source-, Kubernetes-native CNCF-Plattform im Produktionseinsatz. Die Empfehlungen stammen aus Systemen, die Ænix selbst baut und betreibt, kommen von Senior-Engineers statt von Analysten und sind frei von Verkaufsinteressen an einer lizenzierten Distribution."
   - q: "Kann das Consulting in ein Projekt mit einer produktisierten Plattform übergehen?"
     a: "Ja. Consulting gibt es auch eigenständig; wenn sich die Arbeit in Richtung einer produktisierten Cloud-Plattform entwickelt, kann der Umfang auf eine Ænix-Plattform erweitert werden: Public Cloud Platform und Support für selbst betriebenes Cozystack ab 1.250 USD pro 10 Nodes und Monat, Private Cloud und AI Platform per RFP."
 ---
@@ -157,7 +157,7 @@ Mehrere Teams ändern ohne Abstimmung. Drift sammelt sich an. Upgrades werden zu
 - **Umsetzungsprojekt (1–6 Monate)** — Ænix-Engineers arbeiten in Ihrem Team und bauen Cluster-Fundament, Multi-Tenancy, Observability und Runbooks auf.
 - **Managed-Kubernetes-Engagement** — für Organisationen, die die Plattform brauchen, aber keine Betriebskapazität haben.
 
-Für eine tiefere Bewertung mit breiterem Umfang siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+Für die vollständige Variante siehe das **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** (14 oder 28 Tage).
 
 <!-- /BLOCK 5 -->
 
@@ -168,7 +168,7 @@ Für eine tiefere Bewertung mit breiterem Umfang siehe **[Platform Readiness Ass
 ## Warum gerade Ænix
 
 - **Wir verkaufen keine lizenzierte Distribution.** Genau deshalb lohnt es sich, uns zu fragen, welche Sie betreiben sollten. Ein Beratungshaus mit eigener OpenShift- oder Tanzu-Sparte hat die Antwort, bevor die Frage gestellt ist.
-- **Wir haben selbst eine geschrieben.** Cozystack haben wir initiiert; es läuft in Produktion bei Service Providern, Banken und KI-Betreibern. Die Empfehlungen zu Multi-Tenancy und Storage stammen aus dem Betrieb, nicht aus der Lektüre.
+- **Wir kennen eine von innen.** Ænix hat Cozystack entwickelt und pflegt es mit; es läuft in Produktion bei Service Providern, Banken und KI-Betreibern. Die Empfehlungen zu Multi-Tenancy und Storage stammen aus dem Betrieb, nicht aus der Lektüre.
 
 <!-- /BLOCK 6 -->
 
@@ -225,6 +225,6 @@ Das Architektur-Review hat einen Festpreis; die Umsetzung erfolgt nach Aufwand o
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix ist das Team hinter Cozystack — CNCF-Projekt, zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes), OpenSSF Best Practices.*
+*Ænix hat Cozystack entwickelt und pflegt es mit — CNCF-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
