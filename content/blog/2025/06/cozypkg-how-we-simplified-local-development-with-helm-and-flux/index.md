@@ -6,6 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["Open Source", "Platform Engineering"]
 language: "en"
+hreflang_de: "/de/blog/2025/06/cozypkg-lokale-entwicklung-helm-flux/"
 cover_image: "/img/blog/medium/cozypkg-how-we-simplified-local-development-with-helm-and-flux/cover.jpg"
 source_url: "https://medium.com/p/003c8ed839ca"
 ---

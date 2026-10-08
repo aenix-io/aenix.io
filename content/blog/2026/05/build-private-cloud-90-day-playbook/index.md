@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["DORA", "NIS2", "VMware", "Cozystack", "Cilium", "Talos"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/private-cloud-aufbauen-90-tage-playbook/"
 companion_landing: "/services/build-private-cloud/"
 quiz:
   title: "Test yourself: 90-day private cloud playbook"

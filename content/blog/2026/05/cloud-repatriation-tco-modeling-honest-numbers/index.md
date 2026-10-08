@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Cloud Repatriation", "Financial Services", "Platform Engineering", "Backup and DR", "Observability"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/cloud-repatriation-tco-modell-ehrliche-zahlen/"
 companion_landing: "/solutions/cloud-repatriation/"
 quiz:
   title: "Test yourself: honest cloud repatriation TCO"

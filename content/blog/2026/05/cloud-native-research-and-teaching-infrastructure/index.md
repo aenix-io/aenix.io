@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Kubernetes", "AI/ML", "GPU", "Multi-tenancy"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/cloud-native-forschung-lehre-infrastruktur-hochschulen/"
 companion_landing: "/industries/universities/"
 quiz:
   title: "Test yourself: cloud-native infra for universities"

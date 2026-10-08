@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Cloud", "Platform Engineering", "Sovereignty", "Compliance"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/herstellerneutrale-cloud-strategie-beratung/"
 companion_landing: "/services/cloud-strategy-consultancy/"
 companion_label: "See cloud strategy consultancy →"
 quiz:
