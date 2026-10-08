@@ -1,6 +1,6 @@
 ---
 title: "Disaster Recovery as a Service auf souveräner Plattform"
-description: "Disaster Recovery auf einer souveränen, selbst betriebenen Plattform: synchrone Replikation über Rechenzentren, Backups außerhalb des Clusters, geprobtes RTO/RPO."
+description: "Disaster Recovery auf selbst betriebener Plattform: synchrone Replikation zwischen Rechenzentren, Backups außerhalb des Clusters, geprobte RTO/RPO."
 date: 2026-07-01
 lastmod: 2026-07-01
 page_type: "solution-landing"
