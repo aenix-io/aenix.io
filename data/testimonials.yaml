@@ -4,6 +4,10 @@
 # Tier-1 named quotes require Timur sign-off (CLAUDE.md Rule 1). EN is required;
 # quote_de / role_de are optional German overrides (fall back to EN on DE pages).
 # photo is optional — without it the avatar shows the person's initials.
+#
+# Approval status (2026-10-08 audit): no written publication approval is
+# recorded in this repo for any entry below. Confirm and record the approval
+# date per quote before reusing them on new pages.
 - name: "Alexandru Popescu"
   role: "CEO, Nuvolos"
   photo: "/images/quotes/alexandru-popescu.png"
@@ -52,7 +56,7 @@
     services faster and sleep better — the platform just keeps running.
 
 - name: "Sergey Fedenyak"
-  role: "CEO & Founder, Gohost"
+  role: "CEO & Founder, GoHost.kz"
   quote: >-
     Working with Ænix feels less like buying support and more like gaining an
     engineering partner. They bring serious product and platform expertise to
