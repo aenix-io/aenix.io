@@ -14,9 +14,9 @@ sitemap:
 
 **AENIX s.r.o.**
 
-U Trojice 2661/1e
-České Budějovice 3
-370 04 České Budějovice
+U Trojice 2661/1e\
+České Budějovice 3\
+370 04 České Budějovice\
 Tschechische Republik
 
 Rechtsform: společnost s ručením omezeným (Gesellschaft mit beschränkter Haftung nach tschechischem Recht)
@@ -33,8 +33,8 @@ Kontaktformular: [aenix.io/de/kontakt/](/de/kontakt/)
 
 ## Registereintrag
 
-Eingetragen im Handelsregister der Tschechischen Republik (obchodní rejstřík), geführt beim Kreisgericht České Budějovice (Krajský soud v Českých Budějovicích), Abteilung C, Einlage 34173, seit 22. April 2024
-Identifikationsnummer (IČO): 21493871
+Eingetragen im Handelsregister der Tschechischen Republik (obchodní rejstřík), geführt beim Kreisgericht České Budějovice (Krajský soud v Českých Budějovicích), Abteilung C, Einlage 34173, seit dem 22. April 2024\
+Identifikationsnummer (IČO): 21493871\
 Datenbox-ID (datová schránka): 2rvcmud
 
 ## Umsatzsteuer-Identifikationsnummer
@@ -43,19 +43,19 @@ Umsatzsteuer-Identifikationsnummer (DIČ): CZ21493871
 
 ## Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-Andrei Kvapil
-AENIX s.r.o.
-U Trojice 2661/1e
-370 04 České Budějovice
+Andrei Kvapil\
+AENIX s.r.o.\
+U Trojice 2661/1e\
+370 04 České Budějovice\
 Tschechische Republik
 
 ## Konzernverbundenes Unternehmen
 
-**AENIX INC**
-131 Continental Drive, Suite 301
-Newark, County of New Castle
-Delaware 19713, USA
-Registrierungsnummer: 10075938
+**AENIX INC**\
+131 Continental Drive, Suite 301\
+Newark, County of New Castle\
+Delaware 19713, USA\
+Registernummer: 10075938
 
 AENIX INC verantwortet Verträge und Beschaffung in den Vereinigten Staaten. Für Kunden im Europäischen Wirtschaftsraum ist AENIX s.r.o. der Vertragspartner.
 
@@ -69,4 +69,4 @@ Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf die
 
 ## Datenschutz
 
-Informationen zur Verarbeitung personenbezogener Daten finden Sie in unserer [Datenschutzerklärung (englisch)](/privacy-policy/).
+Informationen zur Verarbeitung personenbezogener Daten finden Sie unter [Datenschutz](/privacy-policy/) (Datenschutzerklärung in englischer Sprache).
