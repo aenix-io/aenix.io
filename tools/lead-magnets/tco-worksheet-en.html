@@ -1,0 +1,316 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">Cloud Repatriation TCO Worksheet</span>
+    <span class="versionline">Ænix · aenix.io · v1.1 — October 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">Cloud Repatriation TCO Worksheet</h1>
+  <p class="cover__subtitle">Model your honest exit case from public cloud, line item by line item.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">For infrastructure, finance &amp; procurement teams · aenix.io</div>
+  <p class="cover__strapline"><b>Five sections, from current cloud spend to a board-ready recommendation.</b> v1.1 — October 2026.</p>
+</section>
+
+<h1 class="doc-h">How to use this worksheet</h1>
+
+<p class="lead">This worksheet lets you build a <b>board-grade TCO comparison</b> between your current public-cloud architecture and a target destination (private cloud, colocation, on-premises, or hybrid). It is designed to surface the costs that are <b>typically missed</b> in informal estimates: egress, Reserved Instance / Savings Plan underutilisation, cross-region replication, observability vendor fees, idle or over-sized resources, and hyperscaler managed-service premiums.</p>
+
+<p class="lead">It is the same analytical framework Ænix uses during the cost workstream of a Platform Readiness Assessment.</p>
+
+<div class="callout">
+  <p><b>Workflow (allow roughly 2–4 hours of combined finance and platform-engineering input):</b></p>
+  <ul class="cps">
+    <li>Section 1 — Public Cloud State: record your current cloud spend.</li>
+    <li>Section 2 — Destination Architecture: enter your destination assumptions across a five-year horizon.</li>
+    <li>Section 3 — Workload Classification: list workloads and classify each.</li>
+    <li>Section 4 — Cost Trajectory: compare year by year and find the break-even point.</li>
+    <li>Section 5 — Decision Framework: reach a board-ready recommendation.</li>
+  </ul>
+  <p>Fill in every "Your figure" column. Where a figure is calculated from others, the formula is noted so you can reproduce it in your own spreadsheet.</p>
+</div>
+
+<h2 class="sec"><span class="num">1.</span> Public Cloud State</h2>
+<p class="lead">Capture the honest annual cost of your current public-cloud footprint. Pull the numbers from your billing reports rather than from memory — the missed line items are usually where the case is won or lost.</p>
+
+<h3 class="subsec">A. Monthly bill breakdown — last full month</h3>
+<table class="flow dense">
+  <thead><tr><th>Cost item</th><th>Notes</th><th class="fill">Your figure (per month)</th></tr></thead>
+  <tbody>
+    <tr><td>Compute spend (EC2 / GCE / Azure VMs)</td><td>Aggregate across all accounts</td><td class="fill"></td></tr>
+    <tr><td>Storage spend (object + block + file)</td><td>All tiers</td><td class="fill"></td></tr>
+    <tr><td>Network — intra-region</td><td>Internal traffic, NAT, load balancers</td><td class="fill"></td></tr>
+    <tr><td class="label">Network — egress (cross-region + internet)</td><td class="label">Often missed — pull from billing reports explicitly</td><td class="fill"></td></tr>
+    <tr><td>Managed-service premium (RDS, Aurora, EKS, etc.)</td><td>Versus self-managed equivalent on raw VMs</td><td class="fill"></td></tr>
+    <tr><td>Observability / SaaS data-egress fees</td><td>Datadog, New Relic, Splunk, etc.</td><td class="fill"></td></tr>
+    <tr><td>Backup / DR egress</td><td>Cross-region or vendor egress for backup tooling</td><td class="fill"></td></tr>
+    <tr><td>Other (security tooling, CI runners, misc.)</td><td></td><td class="fill"></td></tr>
+    <tr class="total"><td>Direct monthly spend</td><td>Sum of the rows above</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">B. Commitment posture — Reserved Instances / Savings Plans</h3>
+<table class="flow dense">
+  <thead><tr><th>Item</th><th>Notes / formula</th><th class="fill">Your figure (per year)</th></tr></thead>
+  <tbody>
+    <tr><td>Total RI / SP commitment, annualised</td><td>Sum of all active commitments</td><td class="fill"></td></tr>
+    <tr><td>Actual utilisation against commitment (%)</td><td>Pull from cost tools (0–100%)</td><td class="fill"></td></tr>
+    <tr><td>Realised commitment discount</td><td>Commitment × utilisation × discount assumption</td><td class="fill"></td></tr>
+    <tr><td>Underutilisation waste</td><td>Commitment × (1 − utilisation)</td><td class="fill"></td></tr>
+    <tr><td>Effective monthly RI / SP burden</td><td>Commitment ÷ 12</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p><b>Tip:</b> the realised-discount assumption defaults to 30%. Adjust it if you have a measured figure from your cost-management tool.</p>
+</div>
+
+<h3 class="subsec">C. Hidden costs — frequently missed</h3>
+<table class="flow dense">
+  <thead><tr><th>Cost item</th><th>Notes</th><th class="fill">Your figure (per month)</th></tr></thead>
+  <tbody>
+    <tr><td>Cross-region replication egress</td><td>DB read replicas, S3 cross-region replication</td><td class="fill"></td></tr>
+    <tr><td>Cross-cloud / inter-account traffic</td><td>If multi-cloud or multi-account</td><td class="fill"></td></tr>
+    <tr><td>Idle / over-sized resources</td><td>From rightsizing tool — only the waste portion</td><td class="fill"></td></tr>
+    <tr><td>Snapshot / backup retention storage</td><td>Long-tail snapshot accumulation</td><td class="fill"></td></tr>
+    <tr><td>Marketplace / partner-billed services</td><td>Often invoiced through the cloud bill</td><td class="fill"></td></tr>
+    <tr><td>Egress to vendor SaaS (observability, security)</td><td>Separate from section A</td><td class="fill"></td></tr>
+    <tr class="total"><td>Hidden-cost subtotal</td><td>Sum of the rows above</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">D. Output — annual public-cloud TCO</h3>
+<table class="flow dense">
+  <thead><tr><th>Item</th><th>Formula</th><th class="fill">Your figure (per year)</th></tr></thead>
+  <tbody>
+    <tr><td>Direct annual spend</td><td>Direct monthly spend × 12</td><td class="fill"></td></tr>
+    <tr><td>Hidden annual spend</td><td>Hidden-cost subtotal × 12</td><td class="fill"></td></tr>
+    <tr><td>RI / SP underutilisation waste</td><td>From section B</td><td class="fill"></td></tr>
+    <tr class="total"><td>Total honest annual public-cloud TCO</td><td>Direct + hidden + RI waste</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h2 class="sec"><span class="num">2.</span> Destination Architecture</h2>
+<p class="lead">Enter the assumptions for your destination architecture across a five-year horizon. Fill in one "Your figure" column per year (Year 0 through Year 5); the table shows Year 0 and the annual pattern — replicate the year columns in your own spreadsheet.</p>
+
+<h3 class="subsec">A. Hardware capital and refresh — 5-year horizon</h3>
+<table class="flow dense">
+  <thead><tr><th>Component</th><th>Notes</th><th class="fill">Your figure (per year)</th></tr></thead>
+  <tbody>
+    <tr><td>Compute servers (initial + growth)</td><td>Refresh-cycle assumption: 4 years (default)</td><td class="fill"></td></tr>
+    <tr><td>Storage (capacity + tiering)</td><td>Include both performance and capacity tiers</td><td class="fill"></td></tr>
+    <tr><td>Network (switches, fabric, edge)</td><td></td><td class="fill"></td></tr>
+    <tr><td>Datacenter / colocation contract</td><td>If owned: amortised; if rented: contract spend</td><td class="fill"></td></tr>
+    <tr><td>GPU / accelerator hardware (if applicable)</td><td>Per-card pricing (with vendor support)</td><td class="fill"></td></tr>
+    <tr class="total"><td>Hardware total</td><td>Sum of the rows above</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<div class="callout">
+  <p><b>Tip:</b> the default refresh cycle is 4 years, with Year 4 carrying a 25–50% replacement charge. Adjust to match your own asset policy.</p>
+</div>
+
+<h3 class="subsec">B. Operations — 5-year operating cost</h3>
+<table class="flow dense">
+  <thead><tr><th>Operating cost</th><th>Notes / formula</th><th class="fill">Your figure (per year)</th></tr></thead>
+  <tbody>
+    <tr><td>Platform-engineering team headcount</td><td>Heads × loaded salary</td><td class="fill"></td></tr>
+    <tr><td>Average loaded annual salary</td><td>Loaded = salary + benefits + tax + tools</td><td class="fill"></td></tr>
+    <tr><td>Platform-engineering total</td><td>Heads × salary</td><td class="fill"></td></tr>
+    <tr><td>Network bandwidth (internet + transit + peering)</td><td></td><td class="fill"></td></tr>
+    <tr><td>Backup + DR infrastructure</td><td></td><td class="fill"></td></tr>
+    <tr><td>Software / licences (excluding Cozystack — Apache 2.0)</td><td>OS licences if not Linux; self-hosted observability; etc.</td><td class="fill"></td></tr>
+    <tr><td>Ænix support subscription (optional)</td><td>Per 10 nodes per month — see aenix.io/pricing/. If self-operated without a subscription, leave blank</td><td class="fill"></td></tr>
+    <tr class="total"><td>Operations total</td><td>Sum of the rows above</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">C. Migration cost — one-time, mostly Year 0–1</h3>
+<table class="flow dense">
+  <thead><tr><th>One-time cost</th><th>Notes</th><th class="fill">Your figure (per year)</th></tr></thead>
+  <tbody>
+    <tr><td>Architecture + design (engagement)</td><td>Often Platform Readiness Assessment + Phase 2</td><td class="fill"></td></tr>
+    <tr><td>Migration build + execution</td><td></td><td class="fill"></td></tr>
+    <tr><td>Parallel-run period (cloud + destination both live)</td><td>Critical — often underestimated</td><td class="fill"></td></tr>
+    <tr><td>Training + knowledge transfer</td><td></td><td class="fill"></td></tr>
+    <tr class="total"><td>Migration total</td><td>Sum of the rows above</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">D. Output — annual destination TCO + 5-year total</h3>
+<table class="flow dense">
+  <thead><tr><th>Item</th><th>Formula</th><th class="fill">Your figure (5-year total)</th></tr></thead>
+  <tbody>
+    <tr><td>Hardware annual</td><td>From section A</td><td class="fill"></td></tr>
+    <tr><td>Operations annual</td><td>From section B</td><td class="fill"></td></tr>
+    <tr><td>Migration annual</td><td>From section C</td><td class="fill"></td></tr>
+    <tr class="total"><td>Total destination annual TCO</td><td>Hardware + operations + migration</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h2 class="sec"><span class="num">3.</span> Workload Classification</h2>
+<p class="lead">List each workload and classify it. The net delta and recommendation columns are derived — fill in the input columns and apply the rules below. Add as many rows as you need.</p>
+
+<table class="blank dense">
+  <thead><tr><th>Workload</th><th>Type</th><th>Criticality</th><th>Compute pattern</th><th>Cloud (per month)</th><th>Destination (per month)</th><th>Net delta (per month)</th><th>Effort (1–5)</th><th>Recommendation</th></tr></thead>
+  <tbody>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">Column reference</h3>
+<table class="dense">
+  <thead><tr><th style="width:30%">Column</th><th>How to fill it</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Type</td><td>VM / Container / DB / Object storage / File storage / ML training / ML inference / Other</td></tr>
+    <tr><td class="label">Criticality</td><td>Tier 1 (mission-critical) / Tier 2 (important) / Tier 3 (non-critical)</td></tr>
+    <tr><td class="label">Compute pattern</td><td>Steady / Spike / Elastic / Batch / Idle-prone</td></tr>
+    <tr><td class="label">Net delta (per month)</td><td>Destination − Cloud. Negative = saving; positive = cost increase.</td></tr>
+    <tr><td class="label">Effort (1–5)</td><td>1 (lift-and-shift) through 5 (rewrite required)</td></tr>
+    <tr><td class="label">Recommendation</td><td>Apply the rules below</td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">Recommendation rules</h3>
+<ul class="bullets">
+  <li>Net delta &lt; 0 and effort ≤ 2 → <b>"Repatriate now"</b></li>
+  <li>Net delta &lt; 0 and effort ≤ 4 → <b>"Repatriate phase 2"</b></li>
+  <li>Net delta &lt; 0 and effort = 5 → <b>"Reassess — high effort"</b></li>
+  <li>Net delta ≥ 0 → <b>"Stay in cloud"</b></li>
+</ul>
+
+<div class="callout">
+  <p><b>Insight:</b> in most cases the top 10 workloads by absolute delta account for 60–80% of the cost case. Focus discovery and migration planning on those, not on inventory completeness.</p>
+</div>
+
+<h2 class="sec"><span class="num">4.</span> Cost Trajectory</h2>
+<p class="lead">Compare public-cloud TCO against destination TCO plus migration cost, year by year, and identify the break-even point.</p>
+
+<table class="blank">
+  <thead><tr><th>Period</th><th>Public-cloud TCO</th><th>Destination TCO</th><th>Migration cost</th><th>Net annual</th><th>Cumulative net</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Year 0 (current)</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="label">Year 1</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="label">Year 2</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="label">Year 3</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="label">Year 4</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr><td class="label">Year 5</td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr class="total"><td>5-year total</td><td></td><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">How each column is derived</h3>
+<ul class="bullets">
+  <li><b>Public-cloud TCO:</b> Section 1 total, grown by (1 + cloud growth rate) each year (default 8%).</li>
+  <li><b>Destination TCO:</b> from Section 2, Section D.</li>
+  <li><b>Migration cost:</b> from Section 2, Section C.</li>
+  <li><b>Net annual:</b> public cloud − (destination + migration). Positive = saving.</li>
+  <li><b>Cumulative net:</b> rolling sum of net annual.</li>
+</ul>
+
+<h3 class="subsec">Break-even</h3>
+<table class="dense">
+  <thead><tr><th>Item</th><th>How to read it</th><th class="fill">Your figure</th></tr></thead>
+  <tbody>
+    <tr><td class="label">Break-even point</td><td>First month at which cumulative net turns positive (or "does not break even within 5 years")</td><td class="fill"></td></tr>
+    <tr><td class="label">5-year cumulative net</td><td>Final row of the cumulative-net column</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">Sensitivity drivers — adjust to test scenarios</h3>
+<table class="dense">
+  <thead><tr><th>Driver</th><th>Default</th><th class="fill">Your value</th></tr></thead>
+  <tbody>
+    <tr><td>Cloud growth rate (annual %)</td><td>8%</td><td class="fill"></td></tr>
+    <tr><td>Destination utilisation (%)</td><td>70%</td><td class="fill"></td></tr>
+    <tr><td>Workload growth (annual %)</td><td>15%</td><td class="fill"></td></tr>
+    <tr><td>Egress volume change (multiplier)</td><td>1.0×</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h2 class="sec"><span class="num">5.</span> Decision Framework</h2>
+<p class="lead">Turn the figures above into a board-grade recommendation.</p>
+
+<h3 class="subsec">Decision matrix</h3>
+<table class="dense">
+  <thead><tr><th>Indicator</th><th>Favourable threshold</th><th class="fill">Your value</th></tr></thead>
+  <tbody>
+    <tr><td>Share of workloads with negative net delta (savings)</td><td>Higher is better</td><td class="fill"></td></tr>
+    <tr><td>5-year cumulative net</td><td>&gt; 0 = favourable</td><td class="fill"></td></tr>
+    <tr><td>Break-even point</td><td>&lt; 36 months = favourable</td><td class="fill"></td></tr>
+    <tr><td>Concentration risk (single-workload share)</td><td>&lt; 30% = favourable</td><td class="fill"></td></tr>
+  </tbody>
+</table>
+
+<h3 class="subsec">Recommendation logic</h3>
+<ul class="bullets">
+  <li>Break-even &lt; 24 months and 5-year net &gt; 0 → <b>Full repatriate — strong case</b></li>
+  <li>Break-even &lt; 36 months and 5-year net &gt; 0 → <b>Partial repatriate — top-10 workloads</b></li>
+  <li>5-year net &gt; 0 (but slower payback) → <b>Optimize within cloud first — revisit in 12 months</b></li>
+  <li>Otherwise → <b>Stay in cloud — destination economics not favourable</b></li>
+</ul>
+
+<h3 class="subsec">Risk-factors checklist</h3>
+<ul class="cps">
+  <li>Hyperscaler commitment expirations align with the migration window</li>
+  <li>Platform-engineering capacity is available without delaying other initiatives</li>
+  <li>Vendor support commitments for destination hardware are confirmed</li>
+  <li>Workload portability (IaC, container-native, no proprietary services) is confirmed for "Repatriate now" workloads</li>
+  <li>Sovereignty / regulatory requirements are verified compatible with the destination</li>
+  <li>Pilot scope is agreed (typically 2–3 representative workloads over 8–12 weeks)</li>
+</ul>
+
+<h1 class="doc-h" style="margin-top:9mm">Next steps</h1>
+
+<div class="cols3">
+  <div><h4>Self</h4>Use this worksheet to model your own case. Walk through it with finance and platform engineering, and refresh it quarterly.</div>
+  <div><h4>Assessment</h4>The Ænix Platform Readiness Assessment (14 or 28 days) extends this analysis with workload-by-workload sizing, a destination-architecture sketch, and a phased migration plan. Fixed fee.</div>
+  <div><h4>Engagement</h4>Full repatriation engagement: a multi-month build covering architecture, build, migration waves, and operational handover. Scope is set after the assessment.</div>
+</div>
+
+<div class="cta">Need help interpreting your results? This is the working surface; a 30-minute discovery call is offered free. See our cloud-repatriation services for engagement options at <span>aenix.io</span></div>
+
+<h1 class="doc-h" style="margin-top:9mm">Glossary</h1>
+<table class="flow dense">
+  <thead><tr><th style="width:24%">Term</th><th>Definition</th></tr></thead>
+  <tbody>
+    <tr><td class="label">TCO</td><td>Total Cost of Ownership — the sum of capital, operating, hidden, and migration costs over a defined horizon (5 years in this worksheet).</td></tr>
+    <tr><td class="label">RI / SP</td><td>Reserved Instance / Savings Plan — a pre-paid commitment to cloud usage in exchange for a discount. Underutilised commitment is sunk cost.</td></tr>
+    <tr><td class="label">Egress</td><td>Data transferred out of a cloud region or to the public internet. Often missed in informal estimates.</td></tr>
+    <tr><td class="label">Workload portability</td><td>The ability to deploy a workload to a different substrate without rewriting it. IaC + container-native + no proprietary cloud services = high portability.</td></tr>
+    <tr><td class="label">Loaded salary</td><td>Engineer salary + benefits + payroll tax + tooling allocation. Used to estimate the true cost of a platform-engineering team.</td></tr>
+    <tr><td class="label">Refresh cycle</td><td>Hardware replacement cadence — 4 years by default in this worksheet; adjust to your asset policy.</td></tr>
+    <tr><td class="label">Cumulative net</td><td>The running sum of annual net cash flow (savings minus migration cost). Crosses zero at break-even.</td></tr>
+    <tr><td class="label">Break-even</td><td>The month at which cumulative net first becomes positive — i.e., when repatriation has paid for itself.</td></tr>
+    <tr><td class="label">Concentration risk</td><td>The share of total spend on a single provider, region, or workload class. Often a board-level concern in regulated sectors (DORA / NIS2).</td></tr>
+  </tbody>
+</table>
+
+<h3 class="plain">Methodology notes</h3>
+<ul class="bullets">
+  <li>The cloud growth-rate default of 8%/year is conservative. Many organisations see 15–20% in the absence of FinOps discipline.</li>
+  <li>The destination-utilisation default of 70% reflects typical Kubernetes-native dense scheduling. VMware / VM-only environments often reach only 30–45%.</li>
+  <li>Migration cost is bottom-up only — it does not include the opportunity cost of slowing other initiatives. Add an explicit line item if that is material.</li>
+  <li>Hidden costs (Section 1C) are typically 15–30% of direct spend. If your figure is below 15%, audit your billing reports — you have likely missed line items.</li>
+  <li>This worksheet does not include sovereignty or regulatory-compliance gains, exit-readiness value (DORA / NIS2), or strategic optionality. Those are separate analyses.</li>
+</ul>
+
+<div class="disclaimer">
+  <p><b>Disclaimer:</b> this worksheet produces estimates only and is not financial advice. Validate all figures with your finance team before making decisions.</p>
+</div>
+
+<p class="lead">Ænix created Cozystack (a CNCF project) and co-maintains it, and builds the Ænix Public Cloud, Private Cloud and AI platforms on it. aenix.io</p>
+
+<div class="closing">
+  <b>Ænix · aenix.io · Cloud Repatriation TCO Worksheet · v1.1 — October 2026.</b> Ænix created and co-maintains Cozystack (CNCF, Apache 2.0).
+</div>
