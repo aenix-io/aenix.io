@@ -8,6 +8,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "KubeVirt", "Kubernetes", "Open Source", "CHERI", "Retrocomputing"]
 language: "de"
+series: "Paleocomputing"
 hreflang_en: "/blog/2026/09/nine-days-of-paleocomputing/"
 ---
 
