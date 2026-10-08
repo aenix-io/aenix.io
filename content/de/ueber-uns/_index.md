@@ -66,7 +66,7 @@ team:
       github: "lllamnyp"
       telegram: "lllamnyp"
   - name: "Julia Pavlova"
-    role: "Drama Manager"
+    role: "Backoffice-Managerin"
     photo: "/images/uploads/2026/04/julia-pavlova.png"
     links:
       telegram: "tvoya_sowest"
