@@ -7,6 +7,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Cozystack", "KubeVirt", "Kubernetes", "Open Source", "CHERI", "Retrocomputing"]
 language: "en"
+hreflang_de: "/de/blog/2026/09/paleocomputing-teil-1-wirth-oberon-qemu-kubevirt/"
 images:
   - "blog/2026/09/nine-days-of-paleocomputing/oberon-boot-screen.png"
 ---
