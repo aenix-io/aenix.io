@@ -1,5 +1,6 @@
 ---
 title: "Fokus auf heute: Wie wir aeman gebaut haben, ein Tagesboard für Entwickler auf Basis von GitHub Projects"
+seo_title: "aeman: Tagesplanung für Entwickler auf GitHub"
 description: "Wie Aenix aeman gebaut hat: ein Open-Source-Tagesboard für Entwickler, das GitHub Projects v2 als einzigen Speicher und eine Kubernetes-artige Watch-API nutzt."
 date: "2026-07-24"
 author: "Andrei Kvapil"
@@ -11,15 +12,14 @@ source_url: "https://blog.aenix.io/focus-on-today-how-we-built-aeman-a-daily-pla
 hreflang_en: /blog/2026/07/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/
 ---
 
----
 
-Mein Name ist Andrei Kvapil, und ich bin Gründer von Ænix — wir bauen Cozystack, eine Open-Source-Cloud-Plattform, und wir helfen Unternehmen beim Aufbau ihrer Infrastruktur. Wir sind ein vollständig remote arbeitendes Unternehmen: 15 Personen, mehrere Teams (zwei Reliability-Teams, ein Entwicklungsteam, Marketing, Backoffice und weitere), verteilt über mehrere Zeitzonen. Angefangen haben wir in GitHub Projects, aber in dem Moment, in dem wir zu wachsen begannen, sind wir direkt an die Grenzen unseres eigenen Prozesses gestoßen: Aufgaben über Boards und Chats verstreut, das halbe Morgen-Sync damit verbracht herauszufinden, was überhaupt läuft, und ungeplante Arbeit, die ganze Tage auffraß, ohne irgendwo eine Spur zu hinterlassen.
+Mein Name ist Andrei Kvapil, und ich bin Gründer von Ænix — wir bauen Cozystack, eine Open-Source-Cloud-Plattform, und wir helfen Unternehmen beim Aufbau ihrer Infrastruktur. Wir sind ein vollständig remote arbeitendes Unternehmen: zum Zeitpunkt des Schreibens (Juli 2026) 15 Personen, mehrere Teams (zwei Reliability-Teams, ein Entwicklungsteam, Marketing, Backoffice und weitere), verteilt über mehrere Zeitzonen. Angefangen haben wir in GitHub Projects, aber in dem Moment, in dem wir zu wachsen begannen, sind wir direkt an die Grenzen unseres eigenen Prozesses gestoßen: Aufgaben über Boards und Chats verstreut, das halbe Morgen-Sync damit verbracht herauszufinden, was überhaupt läuft, und ungeplante Arbeit, die ganze Tage auffraß, ohne irgendwo eine Spur zu hinterlassen.
 
 Dieser Artikel erzählt, wie wir das mit aeman gelöst haben — einem Werkzeug, das wir selbst gebaut und kürzlich [als Open Source veröffentlicht](https://github.com/aenix-io/aeman) haben. Ich muss aber weiter vorne anfangen.
 
 ![aeman-Board](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/cover.png)
 
-### Woher die Idee kommt
+## Woher die Idee kommt
 
 Vor Jahren habe ich in einem anderen Unternehmen gearbeitet, und dort gab es zwei interne Systeme mit den schönen Namen Ford und Nixon. Kollegen haben ausführlich darüber geschrieben, deshalb hier die Kurzfassung. Es sind Boards für die Verfolgung von Tagesaufgaben, auf denen ein Entwickler genau sieht, woran er heute arbeitet. Kein Backlog über drei Monate, keine hundert Kanban-Spalten — Ihr Tag, und sonst nichts. Über Jahre hat dieses System viele Remote-Teams effektiv arbeiten lassen und die Infrastruktur vieler Kunden am Laufen gehalten.
 
@@ -27,7 +27,7 @@ Ich will ehrlich sein: Der Prozess hinter aeman ist nicht vollständig meine Ide
 
 Anders als Trello geht dieses Modell davon aus, dass eine Person an einem einzigen Tag an Aufgaben in mehreren Teams arbeiten kann. Und der Tagesplan darf nicht zur Aufgabenwand werden. Wenn ein Entwickler 6 bis 10 Aufgaben eingeplant hat, realistisch aber nur 3 oder 4 abschließen kann, bleibt bei ihm ein dauerhaftes Gefühl von Schuld zurück, während das Management ein falsches Bild von hoher Auslastung bekommt. Außerdem fangen Menschen an, ständig zwischen Aufgaben zu wechseln, und das Gehirn greift naturgemäß nach denen, die sich leichter abschließen lassen. Schwere Aufgaben bleiben dann lange unangetastet liegen. Der Tagesplan muss also kurz und ehrlich sein.
 
-### Warum kein fertiges Werkzeug?
+## Warum kein fertiges Werkzeug?
 
 Ich habe versucht, einen solchen Prozess auf vorhandenen Werkzeugen aufzubauen: Trello, Asana, Notion, GitHub Projects — mit unterschiedlichem Erfolg. Notion kam dem am nächsten, aber ich war nicht bereit, das ganze Team allein wegen der Boards in noch ein weiteres System zu ziehen und dafür zu bezahlen. Und mit der Zeit wuchs das Board unweigerlich, bis es nicht mehr auf einen Bildschirm passte.
 
@@ -39,7 +39,7 @@ Mit der Zeit zeigte sich ein weiteres Problem. Bei jedem Sync schauten wir fakti
 
 **Genau deshalb habe ich, als ich mit dem Bau von aeman anfing, GitHub Projects als Backend des neuen Systems gewählt und die Oberfläche und den Workflow darauf aufgesetzt.**
 
-### Die Grundidee: genau die Karten, die Sie heute brauchen
+## Die Grundidee: genau die Karten, die Sie heute brauchen
 
 Das Ziel von aeman ist, die heute relevanten Aufgaben sichtbar zu machen und den Entwickler darauf zu fokussieren. Idealerweise verlässt ein Entwickler das Morgen-Sync mit einer Liste von Aufgaben, an denen er an diesem Tag **definitiv** arbeiten wird. Alles andere wandert auf morgen oder auf nächste Woche — und verschwindet physisch vom Board, damit es nicht länger ins Auge fällt.
 
@@ -51,9 +51,9 @@ Und die vierte Idee: Ein Team-Lead braucht ein Werkzeug, das den Status jeder Au
 
 Philosophisch steht aeman Todoist näher als einem klassischen Kanban-Board. Karten sind bewusst kurz: Im Normalmodus sehen Sie nur den Titel, die Beschreibung öffnet sich per Doppelklick. Die Beschreibung nimmt Links in freier Form auf — Pull Requests, GitHub-Issues, Telegram-Chats, was auch immer — und aeman erkennt sie automatisch und zeigt eine Schaltfläche, um direkt dorthin zu springen. Das hält den Hauptbildschirm sauber, und eine weitere abgeschlossene Aufgabe erzeugt jenes befriedigende Gefühl, das jeder kennt, der einen guten Task-Manager benutzt.
 
-### Wie es aussieht
+## Wie es aussieht
 
-### Das Me-Board: Ihr Tag
+## Das Me-Board: Ihr Tag
 
 Ein Entwickler öffnet aeman morgens und sieht seinen Tag: Karten, gruppiert in vier farbige Zonen. Das ist nicht die Eisenhower-Matrix, die Aufteilung ist eine andere:
 
@@ -66,7 +66,7 @@ Das Board zieht Karten aus allen Teams des Entwicklers, also aus dem jeweils akt
 
 ![Das Me-Board in aeman](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/02.png)
 
-### Das Team-Board: das ganze Team auf einen Blick
+## Das Team-Board: das ganze Team auf einen Blick
 
 Die Sicht des Team-Leads: ein Raster aus Personen und Zonen für einen ausgewählten Tag. Spalten sind die Entwickler mit ihren Avataren, Zeilen dieselben farbigen Zonen. Sie sehen sofort, wer woran arbeitet, wo es brennt und wer überlastet ist. Der Team-Lead legt Karten auch von hier aus an: ein paar Klicks, und eine Aufgabe ist erstellt, zugewiesen und priorisiert.
 
@@ -74,7 +74,7 @@ Die Sicht des Team-Leads: ein Raster aus Personen und Zonen für einen ausgewäh
 
 Im Me-Modus kann der Team-Lead außerdem in die Rolle eines Entwicklers schlüpfen (Schaltfläche **View as**) — das Board mit dessen Augen ansehen und bei Bedarf aufräumen.
 
-### Tagessprints und Carry-over
+## Tagessprints und Carry-over
 
 Unsere Sprints sind kurz — ein Tag — und sie zählen **vorwärts**, nicht rückwärts. Im Morgen-Sync bespricht das Team zuerst, was gestern fertig geworden ist, und dann drückt der Team-Lead auf **Carry over**: Jede unerledigte Karte wandert in den neuen Sprint (heute), erledigte bleiben in der Historie von gestern. Wiederkehrende Aufgaben werden automatisch neu angelegt. Das ist hier die Tagesplanung, und sie dauert Minuten.
 
@@ -82,7 +82,7 @@ Ergibt die Planung, dass eine Aufgabe heute definitiv nicht stattfindet, gibt es
 
 ![Carry-over in aeman](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/04.png)
 
-### Der Wochenplan
+## Der Wochenplan
 
 Hier sind wir von der ursprünglichen Idee abgewichen und haben angefangen, unseren eigenen Workflow auf das entstandene Werkzeug zu übertragen.
 
@@ -92,11 +92,11 @@ Unter dem Team-Raster liegt der Wochenplan: die geschäftlichen Aufgaben des Tea
 
 ![Der Wochenplan in aeman](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/05.png)
 
-### Reviews, Teilaufgaben und das Aktivitätsprotokoll
+## Reviews, Teilaufgaben und das Aktivitätsprotokoll
 
 Eine Aufgabe ins Review zu schicken erzeugt eine verknüpfte Karte für den Reviewer, mit einer Rückkopplung: Solange das Review offen ist, steht das Original auf der Stufe Review, und sobald der Reviewer seine eigene Karte auf 100 % bringt, wird das Original automatisch freigegeben. Große Aufgaben zerfallen in Teilaufgaben, deren Fortschritt in die übergeordnete Karte einfließt. Jede Aktion auf dem Board wird in das Aktivitätsprotokoll der Karte geschrieben, sodass sich ihre gesamte Historie im Nachhinein rekonstruieren lässt: wer sie verschoben hat, wann sich der Fortschritt geändert hat und warum sie in einem anderen Sprint gelandet ist.
 
-### Ein Tag mit aeman
+## Ein Tag mit aeman
 
 So sieht der ganze Ablauf aus:
 
@@ -107,17 +107,17 @@ So sieht der ganze Ablauf aus:
 
 Jedes Board ist **live**: Änderungen von Kolleginnen, Kollegen und KI-Agenten erscheinen auf allen Bildschirmen in etwa einer Sekunde, ganz ohne Neuladen. Wie das funktioniert, steht weiter unten.
 
-### Unter der Haube
+## Unter der Haube
 
 Jetzt der Teil, für den das Engineering-Publikum gekommen ist.
 
-### GitHub Projects v2 als einziger Speicher
+## GitHub Projects v2 als einziger Speicher
 
 aeman hat überhaupt keine eigene Datenbank. Jede Karte ist ein Item auf einem GitHub-Projects-Board, und jedes Feld — Zone, Fortschritt, Sprint, Wochenplan — ist ein gewöhnliches Projektfeld. aeman legt die benötigten Felder sogar bedarfsgesteuert an: Richten Sie es auf ein beliebiges leeres Projekt, und die erste Änderung erzeugt, was fehlt. Man könnte sagen, aeman ist eine spezialisierte Sicht auf ein GitHub-Board: Dasselbe Board öffnet sich in der nativen Oberfläche von GitHub, die Daten gehören immer Ihnen, und Sie können sich jederzeit von aeman verabschieden, ohne irgendetwas migrieren zu müssen.
 
 ![Dasselbe Board in der Oberfläche von GitHub Projects](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/06.png)
 
-### Eine API im Kubernetes-Stil
+## Eine API im Kubernetes-Stil
 
 Die API von aeman ist bewusst nach denselben Prinzipien gebaut wie die Kubernetes-API — einem Muster, das sich für die Synchronisation verteilten Zustands bewährt hat. Jede Entität — Card, Sprint, Ordering, Presence — ist eine eigene Ressource mit den vertrauten Feldern kind, metadata und spec.
 
@@ -125,7 +125,7 @@ Der Client folgt dem bekannten Schema **list + watch**. Er holt zunächst einen 
 
 Im Ergebnis arbeitet jeder geöffnete Browser-Tab wie ein Kubernetes-Informer mit eigenem lokalem Cache. Jede Änderung durch andere Nutzer oder durch einen KI-Agenten erscheint auf allen offenen Bildschirmen in etwa einer Sekunde, und die eigenen Änderungen werden Ihnen nicht zurückgespiegelt. GET /api/v1 liefert einen maschinenlesbaren Katalog aller verfügbaren Ressourcen und Endpunkte, sodass Clients und KI-Agenten die Form der API nicht vorab kennen müssen.
 
-### Die GitHub-API ist langsam. Was tun?
+## Die GitHub-API ist langsam. Was tun?
 
 Das wichtigste technische Problem des Projekts: GraphQL-Mutationen bei GitHub brauchen Hunderte von Millisekunden, mitunter ganze Sekunden; Lastspitzen laufen in sekundäre Rate Limits; und — Überraschung — die Read-Replicas von GitHub hinken den Schreibvorgängen um mehrere Sekunden hinterher. Schreibt man direkt durch, wird die Oberfläche zur Diaschau: Regler bewegen, warten; Karte ziehen, warten.
 
@@ -137,7 +137,7 @@ Scheitert ein Schreibvorgang auch nach allen Wiederholungen, benachrichtigt der 
 
 GitHub garantiert nicht, dass eine Änderung in dem Moment lesbar ist, in dem sie geschrieben wurde. Manchmal liefert die API unmittelbar nach einem erfolgreichen Schreibvorgang noch eine Weile den alten Zustand zurück. Dadurch könnte ein Nutzer sehen, wie eine gerade verschobene Karte zurückspringt, eine gelöschte Karte wieder auftaucht oder eine neue an der falschen Stelle landet. Um das zu vermeiden, behandelt aeman die eigenen jüngsten Schreibvorgänge für ein kurzes Zeitfenster als vertrauenswürdiger als frische Daten von GitHub. Sobald GitHub den aktuellen Zustand zurückliefert, schaltet das System automatisch wieder darauf um. Im Ergebnis sieht der Nutzer nie, wie die Oberfläche zurückspringt.
 
-### Kommentare und Aktivitätsprotokoll
+## Kommentare und Aktivitätsprotokoll
 
 Auch Notizen und Änderungshistorie liegen in GitHub, ohne separate Datenbank. Bei Entwurfskarten steht das Protokoll direkt im Body des Issues, hinter einer speziellen Markierung `<!-- aeman:log -->`. Ist eine Karte mit einem bestehenden Issue oder Pull Request verknüpft, werden Notizen zu gewöhnlichen GitHub-Kommentaren und sind für alle in der Diskussion sichtbar.
 
@@ -145,7 +145,7 @@ Jede Aktion auf dem Board — eine Karte anlegen, den Fortschritt ändern, zwisc
 
 Das Ergebnis ist eine vollständige Änderungshistorie für jede Karte: wer sie wann verschoben hat, wie sich der Fortschritt entwickelt hat und warum sie in dem einen oder anderen Sprint gelandet ist. Dieses Protokoll ist nicht nur für die Nachvollziehbarkeit nützlich, sondern auch als Datenquelle für Statistiken und Kennzahlen.
 
-### Ein austauschbares Backend
+## Ein austauschbares Backend
 
 aeman war von Anfang an für ein austauschbares Backend ausgelegt. Heute liegen die Karten in GitHub Projects, das System selbst ist aber nicht an GitHub gebunden. Die gesamte Interaktion mit dem Speicher liegt hinter einem Backend-Interface, sodass die Unterstützung eines neuen Backends darauf hinausläuft, genau dieses eine Interface zu implementieren.
 
@@ -153,7 +153,7 @@ In künftigen Iterationen möchte ich ein Git-Backend ergänzen, das Karten als 
 
 Die Pakete unter pkg/ lassen sich außerdem als gewöhnliche Go-Bibliothek verwenden, womit Sie die Board-Engine in Ihr eigenes Werkzeug einbetten können. Mehr dazu steht in docs/embedding.md.
 
-### MCP für KI-Agenten
+## MCP für KI-Agenten
 
 Dieselbe Binärdatei kann auch als MCP-Server laufen. Damit werden Claude und andere KI-Agenten zu vollwertigen Teilnehmern des Prozesses: Sie legen Karten an und verschieben sie, hinterlassen Notizen, führen den Carry-over zwischen Sprints aus und erledigen weitere Operationen.
 
@@ -163,7 +163,7 @@ Neben dem lokalen Modus bietet aeman einen öffentlich erreichbaren MCP-Server. 
 
 ![aeman, gesteuert von einem KI-Agenten über MCP](/img/blog/medium/focus-on-today-how-we-built-aeman-a-daily-planning-board-for-engineers-on-top-of-github-projects/07.png)
 
-### So probieren Sie es aus
+## So probieren Sie es aus
 
 Am einfachsten probieren Sie aeman lokal mit Ihrem eigenen GitHub-Token aus.
 
@@ -179,7 +179,7 @@ Der Browser öffnet sich automatisch unter http://127.0.0.1:8765. Als Board kön
 
 Für die Teamarbeit gibt es einen Mehrbenutzermodus. Das Repository bringt eine fertige docker-compose.yml mit, die Anmeldung über eine GitHub-OAuth-App wird unterstützt, und jeder Nutzer arbeitet mit seinem eigenen GitHub-Token. Eine ausführliche Anleitung steht in docs/deploy.md.
 
-### Wo wir gelandet sind
+## Wo wir gelandet sind
 
 Das gesamte Unternehmen lebt inzwischen seit einigen Wochen auf aeman. Produktmanager und Team-Leads haben den neuen Planungsansatz schnell angenommen, wobei es — wie bei jedem neuen Werkzeug — auch Skepsis gab. Der wichtigste Effekt war aber ein anderer: Morgens weiß jeder Entwickler, woran er heute arbeiten wird, ungeplante Arbeit ist nicht länger unsichtbar, und die täglichen Syncs sind sehr viel konstruktiver und fokussierter geworden.
 

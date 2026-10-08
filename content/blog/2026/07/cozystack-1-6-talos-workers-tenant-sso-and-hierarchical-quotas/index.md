@@ -1,5 +1,6 @@
 ---
 title: "Cozystack 1.6: Talos tenant workers, tenant SSO, SecurityGroups, and hierarchical quotas"
+seo_title: "Cozystack 1.6: Talos workers and tenant SSO"
 description: "Cozystack v1.6.0 moves tenant workers to Talos via Cluster API and adds tenant OIDC, a SecurityGroup firewall API, hierarchical quotas and etcd v1alpha2."
 slug: "cozystack-1-6-talos-workers-tenant-sso-and-hierarchical-quotas"
 date: "2026-07-22"
@@ -22,7 +23,7 @@ It also carries the largest upgrade surface since v1.0. The platform migration `
 
 ## Read this before upgrading
 
-**Upgrade to v1.6.2, not v1.6.0.** Three of the fixes that landed after v1.6.0 are the kind that fail silently:
+**Upgrade to v1.6.4 (or the latest 1.6.x), not v1.6.0.** Three of the fixes that landed after v1.6.0 are the kind that fail silently:
 
 - v1.6.0 shipped a **fail-open** copy of `hack/seaweedfs-naming-audit.sh` — the script whose output gates a runbook step that deletes PVCs. Every `kubectl` call in it was silenced with `2>/dev/null`, so a timeout or an RBAC denial produced an empty "all clean" table byte-identical to an honestly clean fleet. Fixed in v1.6.1. Run the audit from a v1.6.1-or-later checkout, and read the **exit code**, not the table. A clean result from the v1.6.0 copy is not evidence of anything.
 - v1.6.2 fixes Velero CRDs staying frozen at whatever version was first installed, because Helm never touches a chart's `crds/` directory on upgrade. Once the Velero image moved to a version with new backup phases, the apiserver rejected phase transitions against the stale CRDs and **backups stopped while the HelmRelease stayed green**.
@@ -182,6 +183,7 @@ Two API groups are worth knowing about as non-events. `SecurityGroup` had `spec.
 
 - **v1.6.1** (5 August 2026): CNPG operator and CRDs aligned to 1.28.2, fixing a PVC resize deadlock that could leave a single-instance PostgreSQL cluster with zero instances; the `talos-reconcile` Job now renders for the implicit `md0` group, so the first autoscaler-driven scale-up no longer leaves Machines permanently blocked with no matching `TalosConfigTemplate`; the `keycloak-configure` pre-delete Job patches the HelmRelease in the right namespace, unblocking Keycloak uninstall and reinstall; the SeaweedFS naming audit fails closed; etcd-operator to v0.5.4.
 - **v1.6.2** (19 August 2026): the backup-strategy lookup gate, the Velero CRD upgrade, and the kube-ovn webhook certificate reload — that last one mattering because `kube-ovn-webhook` loaded its serving certificate once at startup and never re-read it, so after a cert-manager renewal every pod creation in tenant namespaces was rejected under `failurePolicy: Fail`, including `virt-launcher` pods, blocking VMI startup. Also: barman-cloud requests an S3 checksum only when required, so backups to Ceph RGW and some MinIO and R2 builds stop failing outright; sharded helm-controllers no longer crashloop behind an HTTP proxy; `kubectl apply --validate` works again against the `core` and `sdn` API groups.
+- Later patch releases v1.6.3 and v1.6.4 followed. Use the latest 1.6.x; see the [Cozystack releases](https://github.com/cozystack/cozystack/releases).
 
 ## Upgrading
 
@@ -190,7 +192,7 @@ kubectl annotate namespace cozy-system helm.sh/resource-policy=keep --overwrite
 kubectl annotate configmap -n cozy-system cozystack-version helm.sh/resource-policy=keep --overwrite
 
 helm upgrade cozystack oci://ghcr.io/cozystack/cozystack/cozy-installer \
-  --version 1.6.2 \
+  --version 1.6.4 \
   --namespace cozy-system
 ```
 
@@ -198,11 +200,12 @@ The annotations are required — without them, removing or upgrading the install
 
 ## Where Ænix fits
 
-Cozystack is a CNCF Sandbox project under Apache 2.0. v1.6 is a good release and a demanding upgrade — the Talos worker rollover, the etcd adoption and the deletion-semantics change all deserve a rehearsal on a non-production cluster first. Ænix maintains the project and sells [enterprise support for Cozystack](/products/cozystack-enterprise-support/), including upgrade planning and hands-on migration for teams running it at scale.
+Cozystack is a CNCF Sandbox project under Apache 2.0. v1.6 is a good release and a demanding upgrade — the Talos worker rollover, the etcd adoption and the deletion-semantics change all deserve a rehearsal on a non-production cluster first. Ænix created Cozystack and is one of its maintainers; it sells [enterprise support for Cozystack](/products/cozystack-enterprise-support/), including upgrade planning and hands-on migration for teams running it at scale.
 
 ## Release links
 
 - [Cozystack v1.6.0 on GitHub](https://github.com/cozystack/cozystack/releases/tag/v1.6.0)
 - [Cozystack v1.6.2 on GitHub](https://github.com/cozystack/cozystack/releases/tag/v1.6.2)
+- [All Cozystack releases on GitHub](https://github.com/cozystack/cozystack/releases)
 - [Cozystack v1.6 documentation](https://cozystack.io/docs/v1.6/)
 - [Telegram](https://t.me/cozystack) and [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (invite at [slack.kubernetes.io](https://slack.kubernetes.io/))
