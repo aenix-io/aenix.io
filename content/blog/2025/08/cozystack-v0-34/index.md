@@ -1,7 +1,7 @@
 ---
 title: "Cozystack v0.34: Kubernetes Version Selection, PVC Snapshots in Tenants, Windows and RouterOS on VMs"
 seo_title: "Cozystack v0.34: Kubernetes versions and snapshots"
-description: "Cozystack v0.34 lets tenants choose the Kubernetes version and take PVC snapshots, runs Windows and RouterOS on VMs, and adds VPA for VPA."
+description: "Cozystack v0.34: tenants choose their Kubernetes version and take PVC snapshots, VMs run Windows and RouterOS, and VPA now autoscales itself."
 date: "2025-08-04"
 author: "Timur Tukaev"
 type: "announcement"
