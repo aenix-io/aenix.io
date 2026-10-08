@@ -58,7 +58,7 @@ In addition to this core shift, this version debuts a comprehensive backup syste
 
 ### Breaking Changes
 
-#### FerretDB depreciation
+#### FerretDB removal
 
 We’ve completely removed this component from the platform. There’s no automatic migration, so make sure to **back up your data before upgrading if you’re still using FerretDB!**
 
