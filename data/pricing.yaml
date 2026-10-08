@@ -1,12 +1,25 @@
-# Enterprise support tiers — single source of truth for the pricing table.
+# Ænix support tiers — single source of truth for the pricing table.
 #
 # Rendered server-side by layouts/shortcodes/pricing-table.html so the prices and
 # the SLA matrix are in the HTML for Google, AI search engines and no-JS clients.
 # /js/pricing-table.js only switches the displayed price between the annual and
 # monthly figures already present in the markup — it no longer owns any data.
 #
-# Monthly is annual + 20% (the "-20%" annual discount shown on the toggle).
-# Keep monthly_ consistent with that if you change a price.
+# The same tiers apply to Ænix Public Cloud Platform subscriptions and to
+# support for self-run Cozystack. Private Cloud Platform and AI Platform are
+# quoted per RFP and are not priced from this table.
+#
+# Annual billing = 10 months of the monthly price ("2 months free"):
+# price_annual * 12 == price_monthly * 10. Keep that true if you change a price.
+#
+# Feature rows describe SUPPORT SCOPE, not software entitlement. White-labeling,
+# air-gapped installs, GPU sharing (HAMi) and backups are open-source Cozystack
+# features available to everyone; the tier decides whether Ænix supports them.
+# Only the "Ænix commercial modules" rows are proprietary Ænix software.
+
+# Toggle label and the unit printed next to every price.
+annual_label: "2 months free"
+price_unit: "/ month per 10 nodes"
 
 plans:
   - id: basic
@@ -14,19 +27,19 @@ plans:
     price_annual: 1250
     price_monthly: 1500
     who: "Small providers, startups, and internal teams running limited workloads"
-    value: "Reliable incident support, guided upgrades and basic enterprise features. Low risk at low cost"
+    value: "Business-hours incident support, the Ænix commercial modules, CVE fixes and knowledge-base upgrade guidance. Low risk at low cost"
   - id: standard
     name: Standard
     price_annual: 3000
     price_monthly: 3600
     who: "Middle-size providers and data centers, growing teams with production SLAs who need faster responses and hands-on guidance"
-    value: "Priority tickets, onboarding assistance, enterprise features and stable releases for daily ops"
+    value: "Unlimited incidents, 4-hour emergency response, platform installation, supervised upgrades and fast-track security fixes"
   - id: plus
     name: Plus
     price_annual: 5500
     price_monthly: 6600
     who: "Regulated and privacy-conscious organizations, SPs/DCs with mission-critical clusters"
-    value: "24×7 support, full enterprise features package, hardened security practices and help with migration/audits"
+    value: "24×7 support, 8-hour standard response, air-gapped install support, guided migration, compliance audit support and external monitoring"
   - id: enterprise
     name: Enterprise
     price_annual: null
@@ -47,7 +60,7 @@ sections:
   - title: SLA-guaranteed Support
     items:
       - k: "Package Includes"
-        v: { basic: "10 Physical Nodes", standard: "10 Physical Nodes", plus: "10 Physical Nodes", enterprise: "10 Physical Nodes" }
+        v: { basic: "10 Physical Nodes", standard: "10 Physical Nodes", plus: "10 Physical Nodes", enterprise: "Custom" }
       - k: "Incidents covered¹"
         v: { basic: "5", standard: "Unlimited", plus: "Unlimited", enterprise: "Unlimited" }
       - k: "Service Desk Hours²"
@@ -57,19 +70,22 @@ sections:
       - k: "Standard Response Time"
         v: { basic: "In 2 Business Days", standard: "In 2 Business Days", plus: "In 8 Hours", enterprise: "In 4 Hours" }
 
-  - title: Enterprise features
+  - title: Ænix commercial modules (proprietary)
     items:
       - k: "Billing System"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "White-labeling"
-        v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "Air-gap"
-        v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
       - k: "WHMCS Integration"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "Backup System"
+
+  - title: Support scope for open-source Cozystack features
+    items:
+      - k: "White-labeling configuration"
+        v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
+      - k: "Air-gapped installation"
+        v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
+      - k: "Backup configuration"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "GPU sharing"
+      - k: "GPU sharing (HAMi) configuration"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
 
   - title: PoC
@@ -80,9 +96,9 @@ sections:
   - title: Learning and trainings
     items:
       - k: "K8s Deep Dive Course"
-        v: { basic: "As per pricing", standard: "As per pricing", plus: "1 full course/year free; additional at 30% off", enterprise: "1 full course/year free; additional at 30% off" }
+        v: { basic: "Quoted on request", standard: "Quoted on request", plus: "1 full course/year free; additional at 30% off", enterprise: "1 full course/year free; additional at 30% off" }
       - k: "Training"
-        v: { basic: "1 hour/month", standard: "2 hour/month", plus: "3 hour/month", enterprise: "5 hour/month" }
+        v: { basic: "1 hour/month", standard: "2 hours/month", plus: "3 hours/month", enterprise: "5 hours/month" }
 
   - title: Security Features
     items:
@@ -103,12 +119,12 @@ sections:
         v: { basic: "Billed hourly", standard: "Billed hourly", plus: "✔", enterprise: "✔" }
       - k: "Platform Installation"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "Certification and Compliance Support"
+      - k: "Compliance audit support"
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
       - k: "Supervised Upgrade Assistance"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "Extra Consultation Rate"
-        v: { basic: "$150 / hour", standard: "", plus: "", enterprise: "" }
+      - k: "Out-of-scope work rate"
+        v: { basic: "$150 / hour", standard: "$150 / hour", plus: "$150 / hour", enterprise: "$150 / hour" }
 
   - title: Procurement
     items:
@@ -119,7 +135,7 @@ sections:
     items:
       - k: "Dedicated support channel"
         v: { basic: "✔", standard: "✔", plus: "✔", enterprise: "✔" }
-      - k: "Remote Access (ssh)"
+      - k: "Remote access to your clusters, with your approval"
         v: { basic: "✖", standard: "✔", plus: "✔", enterprise: "✔" }
       - k: "External Monitoring"
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
