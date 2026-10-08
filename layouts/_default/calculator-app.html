@@ -32,13 +32,19 @@
 
 {{ define "main" }}
 {{ $app := .Params.calculator_app | default "/isp-calculator-app/" }}
+{{ $de := or (eq (.Params.language | default "en") "de") (hasPrefix .RelPermalink "/de/") }}
 <div class="container calc-app-intro">
   <h1 class="page-hero-title" style="font-size:1.6rem;margin:0 0 .35rem">{{ .Title }}</h1>
   {{ with .Description }}<p class="page-hero-subtitle" style="margin:0 0 .75rem">{{ . }}</p>{{ end }}
   {{ with .Content }}<div class="calc-app-copy">{{ . }}</div>{{ end }}
   <p style="margin:0">
+    {{- if $de }}
+    <a class="cta-secondary" href="/de/roi-rechner/">Alle ROI- &amp; TCO-Rechner</a>
+    <a class="cta-primary" href="{{ $app }}" target="_blank" rel="noopener" style="margin-left:.5rem">Im Vollbild öffnen</a>
+    {{- else }}
     <a class="cta-secondary" href="/roi-calculator/">All ROI &amp; TCO calculators</a>
     <a class="cta-primary" href="{{ $app }}" target="_blank" rel="noopener" style="margin-left:.5rem">Open full-screen</a>
+    {{- end }}
   </p>
 </div>
 <iframe class="calc-app-frame" src="{{ $app }}" title="{{ .Title }}"
