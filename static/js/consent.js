@@ -119,7 +119,12 @@
     window.gtag = window.gtag || gtag;
     loadScript('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_ID));
     gtag('js', new Date());
-    gtag('config', GA_ID, { anonymize_ip: true });
+    // A form page briefly carries the stored utm_* in its URL for the Pipedrive
+    // loader (layouts/partials/utm-capture.html); report the clean URL so that
+    // GA4 does not open a new campaign session on every form view.
+    var cfg = { anonymize_ip: true };
+    if (window.aenixUTM && window.aenixUTM.pendingCleanUrl) cfg.page_location = window.aenixUTM.pendingCleanUrl;
+    gtag('config', GA_ID, cfg);
   }
 
   function updateGtagConsent(analytics, marketing) {

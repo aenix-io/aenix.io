@@ -94,6 +94,9 @@
        {{ with .Site.Params.hotjarId }}data-hotjar-id="{{ . }}"{{ end }}
        hidden></div>
   <script src="/js/consent.js" defer></script>
+  {{/* GA4 conversion events (generate_lead, cta_click, outbound_click,
+       calculator_use/_result) — sent through the consent-gated gtag queue. */}}
+  <script src="/js/aenix-events.js" defer></script>
 
   {{ $js := resources.Get "js/main.js" | fingerprint }}
   {{ if $js }}
