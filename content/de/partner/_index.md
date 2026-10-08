@@ -86,7 +86,7 @@ Three-tier card layout. Each card: tier name, requirements (sales target / techn
 
 **Für:** neu aufgenommene Partner, regionale Reseller, Partner in Unterkanälen
 
-**Voraussetzungen:** unterzeichneter Partnervertrag, abgeschlossenes Onboarding, mindestens ein Engineer, der die Prüfung [Ænix-Zertifizierung für Cozystack — Fundamentals](/certification/) bestanden hat (die Prüfung ist auf Englisch; die Vorbereitungsmaterialien liegen derzeit auf Russisch vor)
+**Voraussetzungen:** unterzeichneter Partnervertrag, abgeschlossenes Onboarding, mindestens ein Engineer, der die Prüfung [Ænix-Zertifizierung für Cozystack — Fundamentals](/certification/) bestanden hat (Prüfung und Vorbereitungsmaterialien sind auf Englisch; eine [russische Fassung](/ru/certification/) der Materialien gibt es ebenfalls)
 
 **Leistungen:** Standardmarge, Deal-Registrierung, Demo-Zugang, L3-Support-Eskalation, Sales-Kit, Grundtraining
 
