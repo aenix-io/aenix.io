@@ -110,9 +110,20 @@
 {{- if and (ne (.Params.language | default "en") "en") .Params.hreflang_en }}
 <meta property="og:locale:alternate" content="en_US" />
 {{- end }}
-<meta property="og:image" content="{{ partial "seo/og-image.html" . | absURL }}" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+{{- $ogImg := partial "seo/og-image.html" . -}}
+<meta property="og:image" content="{{ $ogImg | absURL }}" />
+{{- /* The real size of the image, not an assumed 1200x630: a third of the blog's
+       covers are Medium artwork of other proportions. Looked up where the file
+       lives (static/, or a page bundle under content/); omitted when unknown. */}}
+{{- $ogFile := "" -}}
+{{- $ogPath := index (split $ogImg "?") 0 -}}
+{{- range slice (printf "static/%s" $ogPath) (printf "content/%s" $ogPath) -}}
+  {{- if and (not $ogFile) (fileExists .) }}{{ $ogFile = . }}{{ end -}}
+{{- end -}}
+{{- with $ogFile }}{{ with imageConfig . }}
+<meta property="og:image:width" content="{{ .Width }}" />
+<meta property="og:image:height" content="{{ .Height }}" />
+{{- end }}{{ end }}
 <meta name="twitter:image" content="{{ partial "seo/og-image.html" . | absURL }}" />
 <meta name="twitter:card" content="summary_large_image" />
 
