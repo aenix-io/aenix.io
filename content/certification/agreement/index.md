@@ -1,78 +1,79 @@
 ---
-title: "Соглашение кандидата"
-description: "Что вы принимаете, садясь за экзамен, и на каком основании сертификат может быть отозван."
-eyebrow: "Экзамен CCF · версия 1.0"
+title: "Candidate agreement"
+description: "What you accept when you sit the exam, and on what grounds a certificate may be revoked."
+eyebrow: "CCF exam · version 1.0"
 layout: "cert-page"
-language: "ru"
+language: "en"
 url: "/certification/agreement/"
+hreflang_ru: "/ru/certification/agreement/"
 page_type: "flag-page"
 ---
 
-Документ короткий, и написан он не чтобы напугать. Экзамен бесплатный и без наблюдения —
-значит, держится он на договорённости, а договорённость стоит записать.
+This document is short, and it is not written to scare you. The exam is free and unproctored —
+which means it rests on an agreement, and an agreement is worth writing down.
 
-Вы примете его одним нажатием перед первым вопросом. Мы сохраним факт согласия и версию
-текста, которую вы видели.
+You will accept it with a single click before the first question. We will store the fact of your consent and the version
+of the text you saw.
 
-## Что вы обещаете
+## What you promise
 
-**Не выносить содержимое экзамена.** Не переписывать вопросы, не пересказывать, не
-выкладывать и не передавать другим кандидатам.
+**Not to take exam content out.** Do not copy down the questions, retell them,
+post them or pass them on to other candidates.
 
-Причина не в секретности. Выложенные вопросы обесценивают сертификат у всех, кто его уже
-получил, — в том числе у вас. Он стоит ровно столько, сколько стоит уверенность, что за ним
-есть знание.
+The reason is not secrecy. Leaked questions devalue the certificate for everyone who already
+holds it — including you. It is worth exactly as much as the confidence that there is knowledge
+behind it.
 
-**Сдавать самому.** Без чужой помощи, документации, поиска и записей по существу вопросов.
-Словарём пользоваться можно: экзамен на английском, а проверяем мы знание платформы, а не
-языка.
+**To take the exam yourself.** Without help from others, documentation, search or notes on the substance of the questions.
+You may use a dictionary: the exam is in English, and we are testing knowledge of the platform, not of the
+language.
 
-**Отвечать за файл с результатами лабораторных.** Загружаете — значит, он о вашей работе.
-Проверить это мы не можем и говорим прямо; поэтому здесь и нужна договорённость, а не
-проверка.
+**To answer for the lab results file.** If you upload it, that means it is about your own work.
+We cannot verify this, and we say so plainly; that is exactly why an agreement is needed here rather than a
+check.
 
-**Один человек — один аккаунт.** Не передавайте доступ и не заводите второй, чтобы обойти
-ограничение на попытки.
+**One person — one account.** Do not share access and do not create a second account to get around
+the limit on attempts.
 
-## Что обещаем мы
+## What we promise
 
-Принять экзамен и выдать сертификат, если вы его сдали.
+To accept your exam and issue a certificate if you pass.
 
-Не расходовать вашу попытку, если сломалось на нашей стороне. Доказывать ничего не нужно:
-в журнале видно, что произошло.
+Not to use up your attempt if something broke on our side. You don't need to prove anything:
+the log shows what happened.
 
-Не публиковать ваши результаты и никому их не передавать. В сертификате есть имя — но
-публикуете его вы сами и тогда, когда захотите.
+Not to publish your results or pass them on to anyone. The certificate contains your name — but
+you publish it yourself, when you choose to.
 
-Предупредить, если в программе меняется что-то, затрагивающее уже выданные сертификаты.
+To notify you if anything in the program changes that affects certificates already issued.
 
-## Когда сертификат может быть отозван
+## When a certificate may be revoked
 
-Три основания, других нет.
+Three grounds, and no others.
 
-1. **Нарушение этого соглашения** — вынос содержимого, посторонняя помощь, поддельный файл
-   лабораторных.
-2. **Наша ошибка при выдаче** — сертификат появился из-за сбоя.
-3. **Ваша просьба.**
+1. **Breach of this agreement** — taking content out, outside help, a forged lab
+   file.
+2. **Our error in issuing it** — the certificate appeared because of a malfunction.
+3. **Your request.**
 
-Порядок: мы пишем вам, что и почему. У вас **14 дней на возражение** — не формальных, мы
-правда читаем. Дальше решение, и если оно в силе, номер попадает в публичный список
-отозванных, а страница проверки начинает показывать, что сертификат недействителен.
+The procedure: we write to you saying what and why. You have **14 days to object** — and not as a formality; we
+really do read objections. Then a decision is made, and if it stands, the number goes into the public list of
+revoked certificates, and the verification page starts showing that the certificate is invalid.
 
-Решает ведущий программы. Не согласны — вторая инстанция, рабочая группа сертификации.
+The program lead decides. If you disagree, the second instance is the certification working group.
 
-## Чего мы не можем отменить
+## What we cannot undo
 
-Ссылка на сертификат — это и есть сертификат: в ней лежат данные и подпись под ними.
-Опубликовали — из интернета её уже не вернуть, ни вы, ни мы.
+The certificate link is the certificate: it carries the data and the signature over it.
+Once published, it cannot be pulled back from the internet — not by you, not by us.
 
-Всё, что мы можем по вашей просьбе или по решению об отзыве, — внести номер в список
-отозванных. Тогда любой, кто откроет ссылку, увидит, что сертификат недействителен.
+All we can do, at your request or following a revocation decision, is add the number to the list of
+revoked certificates. Then anyone who opens the link will see that the certificate is invalid.
 
-Устройство выбрано осознанно: оно позволяет проверять сертификат без обращения к нам и без
-базы, которую можно потерять. Плата — невозможность стереть уже выданное.
+This design was chosen deliberately: it lets anyone verify a certificate without contacting us and without
+a database that could be lost. The price is that what has been issued cannot be erased.
 
-## Персональные данные
+## Personal data
 
-Коротко: имя, почта, компания, результаты попыток и, если загружали, файл лабораторных.
-Обрабатывает AENIX s.r.o. Подробно — в [политике конфиденциальности](/privacy-policy/).
+In short: name, email, company, attempt results and, if you uploaded it, the lab file.
+Processed by AENIX s.r.o. Details are in the [privacy policy](/privacy-policy/).

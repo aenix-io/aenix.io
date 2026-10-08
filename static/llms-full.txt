@@ -132,7 +132,7 @@ A 14- or 28-day fixed-price engagement with four parallel workstreams: inventory
 - [Cozystack Tour 2026 USA](https://aenix.io/workshops/cozystack-tour-2026-usa/): free hands-on workshops in six US cities, November–December 2026; venues to be announced
 - [Tour schedule and meetings](https://aenix.io/tour-2026/): NVIDIA GTC Berlin (20–22 October 2026), KubeCon + CloudNativeCon North America (9–12 November 2026), NVIDIA GTC Washington, DC (30 November – 3 December 2026)
 - [Webinars](https://aenix.io/webinars/): recordings and summaries of past sessions with Andrei Kvapil (19 August, 10 September and 30 September 2026)
-- [Certification](https://aenix.io/certification/): Ænix Certification for Cozystack — Fundamentals; free exam, 60 questions, 90 minutes, in English; study materials currently in Russian; the certificate is earned by passing the exam, the workshop labs earn a separate badge
+- [Certification](https://aenix.io/certification/): Ænix Certification for Cozystack — Fundamentals; free exam, 60 questions, 90 minutes, in English; study materials in English, with a Russian version at https://aenix.io/ru/certification/; the certificate is earned by passing the exam, the workshop labs earn a separate badge
 - [Kubernetes Deep Dive course](https://aenix.io/kubernetes-deep-dive/)
 
 ## Related vendor-neutral resources

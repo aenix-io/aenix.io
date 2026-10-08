@@ -123,7 +123,7 @@ faq:
   - q: "What exactly will I do with my own hands?"
     a: "Move a virtual machine off a running VMware server, deploy a database, publish a service to the network, see how monitoring and backups work — and, at the end, bring the whole setup back up from a single file."
   - q: "What happened after the workshop?"
-    a: "Each participant kept the test environment for another 30 days, received take-home lab exercises, and joined a chat where Cozystack maintainers answer questions. You can then take the free Ænix Certification for Cozystack — Fundamentals exam (60 questions, 90 minutes, in English); the certificate comes from passing the exam. Completing the labs earns a separate practice badge. The certification study materials are currently in Russian."
+    a: "Each participant kept the test environment for another 30 days, received take-home lab exercises, and joined a chat where Cozystack maintainers answer questions. You can then take the free Ænix Certification for Cozystack — Fundamentals exam (60 questions, 90 minutes, in English); the certificate comes from passing the exam. Completing the labs earns a separate practice badge. The certification study materials are in English, with a Russian version at /ru/certification/."
   - q: "We run Oracle, SAP, or specially licensed Windows. Will it migrate?"
     a: "Maybe not — and we will say so directly. Vendor licensing restrictions are one of the topics of the honest-limitations conversation. Bring your hardest case and get a straight answer."
   - q: "Can I bring my manager or a colleague?"

@@ -3,12 +3,15 @@
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ end }}
 {{ define "main" }}
+{{- $ru := eq (.Params.language | default "en") "ru" -}}
+{{- $base := cond $ru "/ru/certification/" "/certification/" -}}
 <article class="cert" data-tpl="cert-lesson">
   <section class="cert__hero">
     <div class="container">
+      {{ partial "lang-switch.html" . }}
       <p class="cert__eyebrow">
-        <a href="/certification/materials/" style="color:inherit">Материалы к экзамену</a>
-        {{ with .Params.lesson }} · Урок {{ . }}{{ end }}
+        <a href="{{ $base }}materials/" style="color:inherit">{{ cond $ru "Материалы к экзамену" "Exam materials" }}</a>
+        {{ with .Params.lesson }} · {{ cond $ru "Урок" "Lesson" }} {{ . }}{{ end }}
       </p>
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="cert__lead">{{ . }}</p>{{ end }}
@@ -17,8 +20,8 @@
   <div class="container">
     <div class="lesson">{{ .Content }}</div>
     <nav class="lnav">
-      {{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><span>Назад</span>{{ .Title }}</a>{{ else }}<span></span>{{ end }}
-      {{ with .NextInSection }}<a href="{{ .RelPermalink }}" style="text-align:right"><span>Дальше</span>{{ .Title }}</a>{{ end }}
+      {{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><span>{{ cond $ru "Назад" "Previous" }}</span>{{ .Title }}</a>{{ else }}<span></span>{{ end }}
+      {{ with .NextInSection }}<a href="{{ .RelPermalink }}" style="text-align:right"><span>{{ cond $ru "Дальше" "Next" }}</span>{{ .Title }}</a>{{ end }}
     </nav>
   </div>
 </article>

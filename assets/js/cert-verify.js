@@ -4,6 +4,9 @@
   var REVOKED_URL = '/certification/revoked.json';
   var out = document.getElementById('verify');
   if (!out) return;
+  // Page language picks the strings: /certification/verify/ is English, /ru/certification/verify/ Russian.
+  var RU = document.documentElement.lang === 'ru';
+  function L(ru, en) { return RU ? ru : en; }
 
   function b64uToBytes(s) {
     s = s.replace(/-/g, '+').replace(/_/g, '/');
@@ -36,8 +39,8 @@
   }
 
   function rowsPreview(c) {
-    return '<tr><td>Имя в сертификате</td><td>' + esc(c.name) + '</td></tr>' +
-           '<tr><td>Номер</td><td>' + esc(c.serial) + '</td></tr>';
+    return '<tr><td>' + L('Имя в сертификате', 'Name on certificate') + '</td><td>' + esc(c.name) + '</td></tr>' +
+           '<tr><td>' + L('Номер', 'Number') + '</td><td>' + esc(c.serial) + '</td></tr>';
   }
 
   // Рисуем именной сертификат на canvas и отдаём PNG. Всё локально: под CSP
@@ -86,7 +89,7 @@
   }
   function addDownload(c) {
     var b = document.createElement('button');
-    b.textContent = 'Скачать сертификат (PNG)';
+    b.textContent = L('Скачать сертификат (PNG)', 'Download certificate (PNG)');
     b.style.cssText = 'margin-top:18px;padding:12px 20px;font-weight:600;color:#fff;background:#2f6fed;border:0;border-radius:9px;cursor:pointer;font-size:15px';
     b.addEventListener('click', function () { downloadCert(c); });
     var q = out.querySelector('.q') || out; q.appendChild(b);
@@ -101,14 +104,14 @@
     async function go() {
       serr.textContent = '';
       var s = (inp.value || '').trim().toUpperCase();
-      if (!s) { serr.textContent = 'Введите номер сертификата.'; return; }
+      if (!s) { serr.textContent = L('Введите номер сертификата.', 'Enter a certificate number.'); return; }
       btn.disabled = true;
       try {
         var r = await fetch(EXAM + '/cert?serial=' + encodeURIComponent(s));
         var d = await r.json().catch(function () { return {}; });
-        if (!r.ok || !d.token) { serr.textContent = (d && d.error) || 'Сертификат с таким номером не найден.'; btn.disabled = false; return; }
+        if (!r.ok || !d.token) { serr.textContent = (d && d.error) || L('Сертификат с таким номером не найден.', 'No certificate with this number was found.'); btn.disabled = false; return; }
         location.hash = d.token; location.reload();
-      } catch (e) { serr.textContent = 'Служба проверки недоступна. Попробуйте позже.'; btn.disabled = false; }
+      } catch (e) { serr.textContent = L('Служба проверки недоступна. Попробуйте позже.', 'The verification service is unavailable. Please try again later.'); btn.disabled = false; }
     }
     btn.addEventListener('click', go);
     inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') go(); });
@@ -117,64 +120,69 @@
   async function run() {
     var frag = location.hash.slice(1);            // берём как есть, без раскодирования
     if (!frag) {
-      return say('', 'Ссылка неполная',
-        '', 'Откройте ссылку целиком — ту, что выдана вместе с сертификатом. ' +
-        'В ней после знака # идут данные и подпись, без них проверять нечего.');
+      return say('', L('Ссылка неполная', 'Incomplete link'),
+        '', L('Откройте ссылку целиком — ту, что выдана вместе с сертификатом. ' +
+        'В ней после знака # идут данные и подпись, без них проверять нечего.',
+        'Open the full link issued with the certificate. ' +
+        'The data and the signature follow the # sign; without them there is nothing to check.'));
     }
     // Токен есть — это проверка конкретного сертификата, а не посадочная.
     // Прячем общий подзаголовок и блок «поиск по номеру», чтобы не мозолили глаза.
     var _lead = document.querySelector('.lead'); if (_lead) _lead.style.display = 'none';
     var dot = frag.lastIndexOf('.');
     if (dot < 1 || !/^[A-Za-z0-9_.\-]+$/.test(frag)) {
-      return say('', 'Ссылка испорчена', '', 'Похоже, при копировании часть ссылки потерялась.');
+      return say('', L('Ссылка испорчена', 'Broken link'), '', L('Похоже, при копировании часть ссылки потерялась.', 'It looks like part of the link was lost when it was copied.'));
     }
     var payloadB64 = frag.slice(0, dot), sigB64 = frag.slice(dot + 1);
     var msg = new TextEncoder().encode(payloadB64);   // подписаны байты строки как она пришла
     var sig; try { sig = b64uToBytes(sigB64); } catch (e) { sig = null; }
     if (!sig || sig.length !== 64) {
-      return say('', 'Подпись не читается', '', 'Ссылка повреждена или это не наш сертификат.');
+      return say('', L('Подпись не читается', 'Unreadable signature'), '', L('Ссылка повреждена или это не наш сертификат.', 'The link is damaged or this is not one of our certificates.'));
     }
 
     var data; try { data = JSON.parse(new TextDecoder().decode(b64uToBytes(payloadB64))); }
-    catch (e) { return say('', 'Данные не читаются', '', 'Ссылка повреждена.'); }
+    catch (e) { return say('', L('Данные не читаются', 'Unreadable data'), '', L('Ссылка повреждена.', 'The link is damaged.')); }
     if (!Array.isArray(data) || data.length < 10) {
-      return say('', 'Неизвестный формат', '', 'Эта ссылка выдана не нашей системой.');
+      return say('', L('Неизвестный формат', 'Unknown format'), '', L('Эта ссылка выдана не нашей системой.', 'This link was not issued by our system.'));
     }
     var c = { ver: data[0], kid: data[1], issuer: data[2], exam: data[3], level: data[4],
               platform: data[5], serial: data[6], name: data[7], issued: data[8],
               expires: data[9], beta: !!data[10] };
 
     var key = KEYS.filter(function (k) { return k.kid === c.kid; })[0];
-    if (!key) return say('', 'Ключ неизвестен', '', 'Сертификат подписан ключом, которого нет в нашем реестре.');
+    if (!key) return say('', L('Ключ неизвестен', 'Unknown key'), '', L('Сертификат подписан ключом, которого нет в нашем реестре.', 'The certificate is signed with a key that is not in our registry.'));
     // Срок ключа сверяем с датой ВЫДАЧИ, а не с сегодняшним днём: иначе в день
     // истечения ключа разом стали бы недействительны все выданные им сертификаты.
     if (c.issued < key.not_before || c.issued > key.not_after) {
-      return say('', 'Сертификат не подтверждён', '', 'Дата выдачи не попадает в срок действия ключа.');
+      return say('', L('Сертификат не подтверждён', 'Certificate not confirmed'), '', L('Дата выдачи не попадает в срок действия ключа.', 'The issue date falls outside the validity period of the key.'));
     }
 
     var ok = false;
     try { ok = await verifySig(b64uToBytes(key.pub), msg, sig); }
     catch (e) {
-      return say('', 'Проверить не удалось', rowsPreview(c),
-        'Ваш браузер не умеет проверять подпись такого типа. Это не значит, что сертификат ' +
-        'плохой — откройте ссылку в свежем Chrome, Safari или Firefox.');
+      return say('', L('Проверить не удалось', 'Could not verify'), rowsPreview(c),
+        L('Ваш браузер не умеет проверять подпись такого типа. Это не значит, что сертификат ' +
+        'плохой — откройте ссылку в свежем Chrome, Safari или Firefox.',
+        'Your browser cannot verify this type of signature. That does not mean the certificate ' +
+        'is bad: open the link in a recent Chrome, Safari or Firefox.'));
     }
-    if (!ok) return say('', 'Подпись неверна', '', 'Данные не соответствуют подписи. Сертификат недействителен.');
+    if (!ok) return say('', L('Подпись неверна', 'Invalid signature'), '', L('Данные не соответствуют подписи. Сертификат недействителен.', 'The data does not match the signature. The certificate is not valid.'));
 
     var rows =
-      '<tr><td>Имя</td><td><strong>' + esc(c.name) + '</strong></td></tr>' +
-      '<tr><td>Экзамен</td><td>' + esc(c.exam) + ' — ' + esc(c.level) + '</td></tr>' +
-      '<tr><td>Версия платформы</td><td>' + esc(c.platform) + '</td></tr>' +
-      '<tr><td>Номер</td><td>' + esc(c.serial) + '</td></tr>' +
-      '<tr><td>Выдан</td><td>' + esc(c.issued) + (c.beta ? ' (бета-волна)' : '') + '</td></tr>' +
-      '<tr><td>Действует до</td><td>' + esc(c.expires) + '</td></tr>' +
-      '<tr><td>Кто выдал</td><td>' + esc(c.issuer) + '</td></tr>' +
-      '<tr><td>Проверено ключом</td><td>' + esc(key.kid) + ' · ' + esc(key.fp) + '</td></tr>';
+      '<tr><td>' + L('Имя', 'Name') + '</td><td><strong>' + esc(c.name) + '</strong></td></tr>' +
+      '<tr><td>' + L('Экзамен', 'Exam') + '</td><td>' + esc(c.exam) + ' — ' + esc(c.level) + '</td></tr>' +
+      '<tr><td>' + L('Версия платформы', 'Platform version') + '</td><td>' + esc(c.platform) + '</td></tr>' +
+      '<tr><td>' + L('Номер', 'Number') + '</td><td>' + esc(c.serial) + '</td></tr>' +
+      '<tr><td>' + L('Выдан', 'Issued') + '</td><td>' + esc(c.issued) + (c.beta ? L(' (бета-волна)', ' (beta wave)') : '') + '</td></tr>' +
+      '<tr><td>' + L('Действует до', 'Valid until') + '</td><td>' + esc(c.expires) + '</td></tr>' +
+      '<tr><td>' + L('Кто выдал', 'Issued by') + '</td><td>' + esc(c.issuer) + '</td></tr>' +
+      '<tr><td>' + L('Проверено ключом', 'Verified with key') + '</td><td>' + esc(key.kid) + ' · ' + esc(key.fp) + '</td></tr>';
 
     var today = new Date().toISOString().slice(0, 10);
     if (c.expires < today) {
-      return say('', 'Срок действия истёк', rows,
-        'Подпись верна, но сертификат просрочен. Он продлевается сдачей следующей ступени.');
+      return say('', L('Срок действия истёк', 'Expired'), rows,
+        L('Подпись верна, но сертификат просрочен. Он продлевается сдачей следующей ступени.',
+          'The signature is valid, but the certificate has expired. It is renewed by passing the next level.'));
     }
 
     // Список отозванных. Недоступен или устарел — говорим об этом прямо,
@@ -192,15 +200,17 @@
     } catch (e) { /* оставляем rev = null */ }
 
     if (rev && rev.indexOf(c.serial) !== -1) {
-      return say('', 'Сертификат отозван', rows, 'Этот номер внесён в список отозванных.');
+      return say('', L('Сертификат отозван', 'Certificate revoked'), rows, L('Этот номер внесён в список отозванных.', 'This number is on the revocation list.'));
     }
     if (rev === null || revAge > 60) {
-      say('', 'Подпись верна, список отзывов недоступен', rows,
-        'Сама подпись в порядке. Но проверить, не отозван ли сертификат, сейчас не получилось — ' +
-        'список не загрузился или давно не обновлялся.');
+      say('', L('Подпись верна, список отзывов недоступен', 'Signature valid, revocation list unavailable'), rows,
+        L('Сама подпись в порядке. Но проверить, не отозван ли сертификат, сейчас не получилось — ' +
+        'список не загрузился или давно не обновлялся.',
+        'The signature itself is fine. But we could not check right now whether the certificate has been revoked: ' +
+        'the list did not load or has not been updated for a long time.'));
       addDownload(c); return;
     }
-    say('', 'Сертификат действителен', rows, 'Подпись верна, в списке отозванных не значится.');
+    say('', L('Сертификат действителен', 'Certificate valid'), rows, L('Подпись верна, в списке отозванных не значится.', 'The signature is valid and the certificate is not on the revocation list.'));
     addDownload(c);
   }
   run();

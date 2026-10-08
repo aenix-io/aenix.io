@@ -103,7 +103,7 @@ Der Kurs behandelt den Open-Source-Stack von Cozystack, die Grundlage der Ænix-
 
 ### Gibt es eine Zertifizierung?
 
-Ja. Die Prüfung [Ænix-Zertifizierung für Cozystack — Fundamentals](/certification/) wird separat abgelegt. Die Prüfung findet auf Englisch statt; die Vorbereitungsmaterialien gibt es derzeit auf Russisch.
+Ja. Die Prüfung [Ænix-Zertifizierung für Cozystack — Fundamentals](/certification/) wird separat abgelegt. Prüfung und Vorbereitungsmaterialien sind auf Englisch; eine [russische Fassung](/ru/certification/) der Materialien gibt es ebenfalls.
 
 ### Was, wenn ich bereits zu Cozystack beitrage?
 

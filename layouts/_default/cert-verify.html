@@ -1,5 +1,6 @@
+{{- $ru := eq (.Params.language | default "en") "ru" -}}
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="{{ cond $ru "ru" "en" }}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,25 +46,37 @@ footer{color:var(--mut);font-size:.9rem;padding:32px 0 48px;border-top:1px solid
 <main class="container" data-tpl="cert-verify">
   <h1>{{ .Title }}</h1>
   <p class="lead">{{ .Description }}</p>
-  <div id="verify"><div class="q"><h2 style="margin-top:0">Проверяем…</h2></div></div>
+  <div id="verify"><div class="q"><h2 style="margin-top:0">{{ cond $ru "Проверяем…" "Checking…" }}</h2></div></div>
+  {{- if $ru }}
   <p class="q__why">Проверка идёт прямо в этом браузере: данные сертификата и подпись под
   ними лежат в самой ссылке. Ни к нам, ни к какой-либо базе страница не обращается — кроме
   списка отозванных сертификатов.</p>
+  {{- else }}
+  <p class="q__why">The check runs right here in your browser: the certificate data and its
+  signature are carried in the link itself. The page does not contact us or any database,
+  except to fetch the list of revoked certificates.</p>
+  {{- end }}
 
   <section id="by-serial" class="lookup">
-    <h2 id="by-serial-h">Проверить сертификат по номеру</h2>
-    <p>Введите номер вида <code>CCF-2026-XXXXX</code> — найдём сертификат и проверим его подпись.</p>
+    <h2 id="by-serial-h">{{ cond $ru "Проверить сертификат по номеру" "Check a certificate by number" }}</h2>
+    <p>{{ if $ru }}Введите номер вида <code>CCF-2026-XXXXX</code> — найдём сертификат и проверим его подпись.{{ else }}Enter a number like <code>CCF-2026-XXXXX</code> and we will find the certificate and check its signature.{{ end }}</p>
     <div class="lookup__row">
       <input id="serial-in" type="text" aria-labelledby="by-serial-h" placeholder="CCF-2026-XXXXX" autocomplete="off" spellcheck="false">
-      <button id="serial-go">Проверить</button>
+      <button id="serial-go">{{ cond $ru "Проверить" "Check" }}</button>
     </div>
     <div id="serial-err" class="lookup__err"></div>
   </section>
 </main>
 <footer><div class="container">
+  {{- if $ru }}
   Сертификаты выдаёт AENIX Inc. в рамках своей программы сертификации по Cozystack.
   Cozystack — товарный знак The Linux Foundation. Сертификация проводится компанией
   AENIX Inc. и не выдаётся ни проектом Cozystack, ни Linux Foundation.
+  {{- else }}
+  Certificates are issued by AENIX Inc. under its certification programme for Cozystack.
+  Cozystack is a trademark of The Linux Foundation. The certification is run by
+  AENIX Inc. and is not issued by the Cozystack project or by the Linux Foundation.
+  {{- end }}
 </div></footer>
 {{/* Реестр ключей отдаём ВНЕШНИМ скриптом: CSP на этой странице — script-src 'self'
      без 'unsafe-inline', поэтому инлайн-скрипт молча не исполнялся и реестр оставался

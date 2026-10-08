@@ -1,146 +1,155 @@
 ---
-title: "Сети"
-description: "Четыре компонента, каждый со своей задачей: кто носит пакеты внутри, кто делит сети между тенантами, кто выдаёт внешние адреса и кто пускает HTTP."
+title: "Networking"
+description: "Four components, each with its own job: who carries packets inside, who separates tenant networks, who hands out external addresses and who lets HTTP in."
 lesson: 5
 weight: 5
 layout: "cert-lesson"
-language: "ru"
+language: "en"
 url: "/certification/materials/networking/"
+hreflang_ru: "/ru/certification/materials/networking/"
 page_type: "flag-page"
 ---
 
-Сетевая часть выглядит сложной, пока не разложить её по задачам. Компонентов четыре, и у
-каждого своя работа — экзамен спрашивает именно распределение ролей, а не настройки.
+The networking part looks complicated until you break it down by job. There are four
+components, and each has its own work to do — the exam asks about the division of roles, not
+about settings.
 
 <figure>
-<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Кто за что отвечает в сети">
+<svg viewBox="0 0 640 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Who is responsible for what in the network">
   <rect x="20" y="20" width="600" height="52" rx="8" fill="#dcfce7" stroke="#16a34a"/>
   <text x="130" y="42" font-family="sans-serif" font-size="14" font-weight="700" fill="#14532d">Ingress / Gateway</text>
-  <text x="130" y="60" font-family="sans-serif" font-size="12" fill="#166534">пускает HTTP снаружи внутрь, отдельно у каждого тенанта</text>
+  <text x="130" y="60" font-family="sans-serif" font-size="12" fill="#166534">lets HTTP in from outside, separately for each tenant</text>
   <rect x="20" y="82" width="600" height="52" rx="8" fill="#fef3c7" stroke="#d97706"/>
   <text x="130" y="104" font-family="sans-serif" font-size="14" font-weight="700" fill="#78350f">MetalLB</text>
-  <text x="130" y="122" font-family="sans-serif" font-size="12" fill="#92400e">выдаёт внешние адреса на своём железе, без облачного балансировщика</text>
+  <text x="130" y="122" font-family="sans-serif" font-size="12" fill="#92400e">hands out external addresses on your own hardware, without a cloud load balancer</text>
   <rect x="20" y="144" width="600" height="52" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
   <text x="130" y="166" font-family="sans-serif" font-size="14" font-weight="700" fill="#312e81">Kube-OVN</text>
-  <text x="130" y="184" font-family="sans-serif" font-size="12" fill="#3730a3">отдельные сети тенантов, VPC, выдача адресов</text>
+  <text x="130" y="184" font-family="sans-serif" font-size="12" fill="#3730a3">separate tenant networks, VPC, address assignment</text>
   <rect x="20" y="206" width="600" height="40" rx="8" fill="#dbeafe" stroke="#2563eb"/>
   <text x="130" y="231" font-family="sans-serif" font-size="14" font-weight="700" fill="#1e3a8a">Cilium</text>
-  <text x="255" y="231" font-family="sans-serif" font-size="12" fill="#1e40af">носит пакеты между подами, применяет сетевые политики</text>
+  <text x="255" y="231" font-family="sans-serif" font-size="12" fill="#1e40af">carries packets between pods, enforces network policies</text>
 </svg>
-<figcaption>Снизу вверх: от пакетов между подами до входа снаружи.</figcaption>
+<figcaption>Bottom to top: from packets between pods to the entry point from outside.</figcaption>
 </figure>
 
-## Cilium — основа
+## Cilium — the foundation
 
-Отвечает за то, чтобы поды видели друг друга, и за сетевые политики. Работает на **eBPF** —
-технологии, которая позволяет исполнять программы прямо в ядре Linux, не переключаясь в
-пространство пользователя на каждый пакет.
+It makes sure pods can see each other, and it handles network policies. It runs on **eBPF** —
+a technology that lets programs run directly in the Linux kernel, without switching to user
+space for every packet.
 
-Практическое следствие: сетевые правила применяются в ядре, без длинных цепочек `iptables`,
-и не деградируют по мере роста их числа.
+The practical consequence: network rules are applied in the kernel, without long `iptables`
+chains, and they do not degrade as their number grows.
 
-Именно Cilium исполняет ту изоляцию между тенантами, о которой шла речь во втором уроке.
+It is Cilium that enforces the isolation between tenants discussed in the second lesson.
 
-Есть и третья роль, которую легко пропустить: Cilium **заменяет собой kube-proxy**
-(`kube-proxy replacement`). Обычно сервисы Kubernetes обслуживает kube-proxy через iptables,
-а здесь поиск нужного адресата идёт по хеш-таблице и стоит одинаково при любом числе
-сервисов. На платформе с сотнями тенантов это заметно.
+There is also a third role that is easy to miss: Cilium **replaces kube-proxy**
+(`kube-proxy replacement`). Normally Kubernetes services are handled by kube-proxy via
+iptables; here the right destination is looked up in a hash table, and the cost is the same
+no matter how many services there are. On a platform with hundreds of tenants this is
+noticeable.
 
-Разделение труда между ним и Kube-OVN стоит запомнить, потому что оба называются «сетью»:
-**Cilium — основной CNI**, он даёт сеть подам и применяет политики для всех. **Kube-OVN
-работает поверх** и отвечает за наложенную сеть, выдачу адресов и VPC тенантов.
+The division of labor between it and Kube-OVN is worth remembering, because both are called
+“the network”: **Cilium is the primary CNI**; it gives pods their network and enforces
+policies for everyone. **Kube-OVN runs on top** and is responsible for the overlay network,
+address assignment and tenant VPCs.
 
-## Kube-OVN — сети тенантов
+## Kube-OVN — tenant networks
 
-Kube-OVN строит поверх физической сети узлов **наложенную сеть** (`overlay`) и добавляет к
-ней два свойства, которые экзамен спрашивает чаще прочего.
+Kube-OVN builds an **overlay network** (`overlay`) on top of the nodes' physical network and
+adds two properties to it that the exam asks about more often than anything else.
 
-**Централизованная выдача адресов** (`centralized IPAM`): адреса раздаются из одного места, а
-не отдельно на каждом узле, и весь кластер по умолчанию живёт в одном общем диапазоне подов.
+**Centralized address assignment** (`centralized IPAM`): addresses are handed out from one
+place rather than separately on each node, and by default the whole cluster lives in one
+shared pod range.
 
-**Стабильные адреса подов** (`stable pod IPs`): под сохраняет свой адрес, когда переезжает на
-другой узел. Контейнеру это удобство, а виртуальной машине — необходимость: гостевые системы,
-лицензии и правила межсетевых экранов обычно привязаны к адресу, и смена адреса при каждой
-миграции сломала бы их.
+**Stable pod addresses** (`stable pod IPs`): a pod keeps its address when it moves to another
+node. For a container this is a convenience; for a virtual machine it is a necessity: guest
+systems, licences and firewall rules are usually tied to the address, and changing the
+address on every migration would break them.
 
-Ещё Kube-OVN даёт **VPC** — приватные сети со своим адресным пространством. И VPC, и
-виртуальный маршрутизатор (`virtual-router`) — позиции каталога: тенант заказывает их так же,
-как базу данных.
+Kube-OVN also provides **VPCs** — private networks with their own address space. Both VPC and
+the virtual router (`virtual-router`) are items in the managed applications catalog: a tenant
+orders them the same way as a database.
 
-Ближайшая аналогия из привычного мира — VPC у облачных провайдеров или сети NSX.
+The closest analogy from the familiar world is the VPC at cloud providers, or NSX networks.
 
-## MetalLB — внешние адреса
+## MetalLB — external addresses
 
-В публичном облаке сервис типа `LoadBalancer` получает адрес от провайдера. На своём железе
-провайдера нет, и без MetalLB такой сервис вечно висит в ожидании.
+In a public cloud, a service of type `LoadBalancer` gets its address from the provider. On
+your own hardware there is no provider, and without MetalLB such a service hangs in pending
+forever.
 
-MetalLB держит пул адресов и раздаёт их сервисам, а затем объявляет их в сеть — либо по
-ARP, либо через BGP, если сеть построена на маршрутизации. Начиная с версии 1.5 за сторону
-BGP отвечает **FRR-K8s** (`FRR-K8s`) — именно он объявляет маршруты физическим роутерам.
+MetalLB holds a pool of addresses, hands them out to services and then announces them to the
+network — either via ARP, or via BGP if the network is built on routing. Starting with
+version 1.5, the BGP side is handled by **FRR-K8s** (`FRR-K8s`) — it is the one that
+announces routes to the physical routers.
 
-Именно он нужен, чтобы виртуалка или приложение получили адрес, доступный снаружи кластера.
+It is what you need for a virtual machine or an application to get an address reachable from
+outside the cluster.
 
-## Ingress — вход для HTTP
+## Ingress — the entry point for HTTP
 
-Для веб-приложений выдавать каждому свой адрес расточительно. **Ingress** принимает запросы на
-общий адрес и раскладывает их по именам и путям.
+For web applications, giving each one its own address is wasteful. **Ingress** accepts
+requests on a shared address and distributes them by host names and paths.
 
-Особенность платформы: **точка входа (ingress) своя у каждого тенанта**. Это не общий контроллер
-на весь кластер — тенант с включённым `ingress` получает собственный `ingress-nginx`, со своими
-правилами, своим внешним адресом от MetalLB и своими сертификатами. Тенант без него
-пользуется родительским, как и с остальными сервисами.
+A platform specific: **each tenant has its own entry point (ingress)**. This is not a shared
+controller for the whole cluster — a tenant with `ingress` enabled gets its own
+`ingress-nginx`, with its own rules, its own external address from MetalLB and its own
+certificates. A tenant without one uses its parent's, just as with the other services.
 
-## TenantGateway — путь Gateway API
+## TenantGateway — the Gateway API path
 
-Kubernetes постепенно уходит со старого Ingress на **Gateway API** — более выразительный
-стандарт маршрутизации трафика. В платформе он появился в версии 1.5 в виде объекта
-`TenantGateway`.
+Kubernetes is gradually moving from the old Ingress to the **Gateway API** — a more
+expressive standard for routing traffic. In the platform it appeared in version 1.5 as the
+`TenantGateway` object.
 
-Пакеты через него носит **Cilium**: nginx в этом пути нет вовсе. И это не замена
-`ingress-nginx`, а альтернатива — в 1.5 живут оба варианта.
+Packets through it are carried by **Cilium**: there is no nginx on this path at all. And it
+is not a replacement for `ingress-nginx` but an alternative — in 1.5 both options coexist.
 
-Сертификаты `TenantGateway` умеет выпускать в двух режимах проверки. **HTTP-01** — центр
-сертификации забирает токен по обычному HTTP, значит домен должен быть виден из интернета.
-**DNS-01** — проверка через DNS-запись; только этот режим годится для wildcard-сертификатов
-вида `*.apps.example.com` и для точек входа, не выставленных наружу.
+`TenantGateway` can issue certificates in two validation modes. **HTTP-01** — the certificate
+authority fetches a token over plain HTTP, so the domain must be visible from the internet.
+**DNS-01** — validation via a DNS record; only this mode works for wildcard certificates like
+`*.apps.example.com` and for entry points that are not exposed to the outside.
 
-## Имена и сертификаты
+## Names and certificates
 
-Три помощника, которых обычно не замечают, пока они работают.
+Three helpers that usually go unnoticed as long as they work.
 
-**CoreDNS** разрешает имена внутри кластера — поэтому в настройках приложений пишут
-`postgres-db-rw`, а не адрес: имя переживает переезд базы на другой узел, а адрес нет.
+**CoreDNS** resolves names inside the cluster — that is why application settings say
+`postgres-db-rw` rather than an address: the name survives the database moving to another
+node, the address does not.
 
-**ExternalDNS** смотрит за опубликованными сервисами и точками входа и сам заводит для них
-записи у вашего DNS-провайдера. Приложение опубликовали — имя начало разрешаться, заявку в
-сетевой отдел писать не нужно.
+**ExternalDNS** watches published services and entry points and creates records for them at
+your DNS provider by itself. An application gets published, the name starts resolving — no
+need to file a ticket with the network team.
 
-**cert-manager** выпускает сертификаты и продлевает их сам, без напоминаний.
+**cert-manager** issues certificates and renews them by itself, without reminders.
 
-Всё это работает ровно до первого сбоя. О том, как о сбое узнать и что стоит подготовить
-заранее, — следующий урок.
+All of this works right up until the first failure. How to find out about a failure and what
+is worth preparing in advance is the next lesson.
 
 <div class="exam-box">
-<h4>Что спросят на экзамене</h4>
+<h4>What the exam will ask</h4>
 <ul>
-<li>Что Cilium носит пакеты между подами и работает на eBPF.</li>
-<li>Что Cilium заменяет собой kube-proxy.</li>
-<li>Что Kube-OVN даёт отдельные сети тенантов и VPC.</li>
-<li>Что у Kube-OVN централизованная выдача адресов и один общий диапазон подов на кластер.</li>
-<li>Что под сохраняет адрес при переезде на другой узел — и почему это критично для ВМ.</li>
-<li>Что VPC и виртуальный маршрутизатор (<code>virtual-router</code>) — позиции каталога.</li>
-<li>Что MetalLB выдаёт внешние адреса на своём железе, объявляя их по ARP или BGP.</li>
-<li>Что с версии 1.5 за BGP в MetalLB отвечает FRR-K8s.</li>
-<li>Что точка входа для HTTP — <code>ingress-nginx</code> — заводится у каждого тенанта
-отдельно.</li>
-<li>Что <code>TenantGateway</code> появился в 1.5, это Gateway API, и пакеты для него носит
+<li>That Cilium carries packets between pods and runs on eBPF.</li>
+<li>That Cilium replaces kube-proxy.</li>
+<li>That Kube-OVN provides separate tenant networks and VPCs.</li>
+<li>That Kube-OVN has centralized address assignment and one shared pod range per cluster.</li>
+<li>That a pod keeps its address when moving to another node — and why this is critical for VMs.</li>
+<li>That VPC and the virtual router (<code>virtual-router</code>) are items in the managed applications catalog.</li>
+<li>That MetalLB hands out external addresses on your own hardware, announcing them via ARP or BGP.</li>
+<li>That since version 1.5, BGP in MetalLB is handled by FRR-K8s.</li>
+<li>That the HTTP entry point — <code>ingress-nginx</code> — is set up separately for each
+tenant.</li>
+<li>That <code>TenantGateway</code> appeared in 1.5, it is the Gateway API, and its packets are carried by
 Cilium.</li>
-<li>Два режима выпуска сертификатов: HTTP-01 и DNS-01; wildcard — только DNS-01.</li>
-<li>Что записи в DNS для опубликованных приложений заводит ExternalDNS.</li>
-<li>Что имена внутри кластера разрешает CoreDNS, а сертификаты выпускает cert-manager.</li>
-<li>Почему в настройках приложений пишут имена сервисов, а не адреса.</li>
+<li>Two certificate issuance modes: HTTP-01 and DNS-01; wildcard — DNS-01 only.</li>
+<li>That DNS records for published applications are created by ExternalDNS.</li>
+<li>That names inside the cluster are resolved by CoreDNS, and certificates are issued by cert-manager.</li>
+<li>Why application settings use service names rather than addresses.</li>
 </ul>
 </div>
 
-<p class="doclink">Подробнее:
-<a href="https://cozystack.io/docs/v1.6/networking/" target="_blank" rel="noopener">сети платформы</a></p>
+<p class="doclink">More:
+<a href="https://cozystack.io/docs/v1.6/networking/" target="_blank" rel="noopener">platform networking</a></p>

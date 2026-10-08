@@ -1,121 +1,122 @@
 ---
-title: "Шпаргалка"
-description: "Одна страница на весь экзамен: кто за что отвечает, чем его подменяют в вариантах ответа и как готовиться по дням."
+title: "Cheat sheet"
+description: "One page for the whole exam: what is responsible for what, what it gets swapped for in the answer options, and how to prepare day by day."
 lesson: 8
 weight: 8
 layout: "cert-lesson"
-language: "ru"
+language: "en"
 url: "/certification/materials/cheatsheet/"
+hreflang_ru: "/ru/certification/materials/cheatsheet/"
 page_type: "flag-page"
 ---
 
-Последняя страница перед экзаменом. Читать её вместо уроков бесполезно — она не объясняет,
-а напоминает. А вот пробежать глазами за полчаса до попытки — самое то.
+The last page before the exam. Reading it instead of the lessons is pointless — it does not
+explain, it reminds. But skimming it half an hour before your attempt is exactly right.
 
-## Кто за что отвечает
+## What is responsible for what
 
-Третья колонка важнее первых двух: экзамен строит неверные варианты ответа на подменах, и
-почти все они — из этого списка.
+The third column matters more than the first two: the exam builds wrong answer options out of
+substitutions, and almost all of them come from this list.
 
-| Задача | Компонент | Чем подменяют в вариантах |
+| Task | Component | What it gets swapped for in the options |
 |---|---|---|
-| Операционная система узлов | Talos Linux | Ubuntu, CoreOS |
-| Виртуальные машины | KubeVirt | Proxmox, oVirt |
-| Control plane тенантских кластеров | Kamaji | Cluster API сам по себе |
-| Дисковое хранилище | LINSTOR / DRBD | Ceph, Longhorn |
-| Объектное хранилище | SeaweedFS | MinIO, Ceph RGW |
-| Сеть подов, политики | Cilium | Calico, Flannel |
-| Сети тенантов, VPC | Kube-OVN | Cilium, Calico |
-| Внешние адреса | MetalLB | облачный балансировщик |
-| Метрики | VictoriaMetrics | **Prometheus** |
-| Журналы | VictoriaLogs | **Loki**, Elasticsearch |
-| Графики | Grafana | Kibana |
-| Оповещения | VMAlert → Alerta | Alertmanager |
-| Доставка конфигурации | FluxCD | ArgoCD |
-| Вход | Keycloak | Dex |
-| Записи DNS наружу | ExternalDNS | CoreDNS |
-| Сертификаты | cert-manager | ExternalDNS |
+| Node operating system | Talos Linux | Ubuntu, CoreOS |
+| Virtual machines | KubeVirt | Proxmox, oVirt |
+| Control plane of tenant clusters | Kamaji | Cluster API on its own |
+| Block storage | LINSTOR / DRBD | Ceph, Longhorn |
+| Object storage | SeaweedFS | MinIO, Ceph RGW |
+| Pod network, policies | Cilium | Calico, Flannel |
+| Tenant networks, VPC | Kube-OVN | Cilium, Calico |
+| External addresses | MetalLB | cloud load balancer |
+| Metrics | VictoriaMetrics | **Prometheus** |
+| Logs | VictoriaLogs | **Loki**, Elasticsearch |
+| Dashboards | Grafana | Kibana |
+| Alerts | VMAlert → Alerta | Alertmanager |
+| Configuration delivery | FluxCD | ArgoCD |
+| Sign-in | Keycloak | Dex |
+| External DNS records | ExternalDNS | CoreDNS |
+| Certificates | cert-manager | ExternalDNS |
 
-Жирным — две самые частые ловушки. Prometheus и Loki в платформе нет вовсе.
+In bold — the two most common traps. Prometheus and Loki are not in the platform at all.
 
-## Числа, которые спрашивают
+## Numbers that get asked
 
-| Что | Значение |
+| What | Value |
 |---|---|
-| Минимум узлов | 3 |
-| На узел | 8 ядер, 24 ГБ памяти |
-| Диски на узел | 50 ГБ + 256 ГБ |
-| Задержка между узлами | меньше 10 мс |
-| Сеть | один сегмент L2 |
-| `cpuAllocationRatio` | 10 по умолчанию |
-| Длина имени пространства имён | до 63 символов |
+| Minimum nodes | 3 |
+| Per node | 8 cores, 24 GB of memory |
+| Disks per node | 50 GB + 256 GB |
+| Latency between nodes | under 10 ms |
+| Network | a single L2 segment |
+| `cpuAllocationRatio` | 10 by default |
+| Namespace name length | up to 63 characters |
 
-## Имена, которые надо знать дословно
+## Names to know verbatim
 
-**Варианты установки:** `isp-full`, `isp-full-generic`, `isp-hosted`, `default`.
-Старые имена `paas-full` и `distro-full` заменены в версии 1.5 — в вариантах ответа это ловушка.
+**Installation variants:** `isp-full`, `isp-full-generic`, `isp-hosted`, `default`.
+The old names `paas-full` and `distro-full` were replaced in version 1.5 — in the answer options they are a trap.
 
-**Переключатели тенанта:** `etcd`, `monitoring`, `ingress`, `seaweedfs`.
+**Tenant switches:** `etcd`, `monitoring`, `ingress`, `seaweedfs`.
 
-**Метки доступа:** `policy.cozystack.io/allow-to-apiserver`,
-`policy.cozystack.io/allow-to-etcd`. Значение — строка `"true"`.
+**Access labels:** `policy.cozystack.io/allow-to-apiserver`,
+`policy.cozystack.io/allow-to-etcd`. The value is the string `"true"`.
 
-**Объекты резервных копий:** `BackupClass`, `Plan`, `BackupJob`, `Backup`, `RestoreJob`.
-Готовый класс — `cozy-default`.
+**Backup objects:** `BackupClass`, `Plan`, `BackupJob`, `Backup`, `RestoreJob`.
+The ready-made class is `cozy-default`.
 
-**Группа API платформы:** `apps.cozystack.io/v1alpha1`. Её отдаёт **агрегированный
-API-сервер** `cozystack-api` в `cozy-system` — не CRD. Отсюда и работает `kubectl get tenants`.
+**Platform API group:** `apps.cozystack.io/v1alpha1`. It is served by the **aggregated
+API server** `cozystack-api` in `cozy-system` — not a CRD. That is why `kubectl get tenants` works.
 
-**Поля манифеста:** `apiVersion` — версия API, `kind` — тип, `metadata` — имя и метки,
-`spec` — **желаемое состояние**, `status` — фактическое, его пишет контроллер.
+**Manifest fields:** `apiVersion` — the API version, `kind` — the type, `metadata` — name and labels,
+`spec` — **the desired state**, `status` — the actual state, written by the controller.
 
-**Кубконфиг тенанта** собирается из **токена**, **CA-сертификата** и **адреса сервера**:
-первые два — из одноимённого секрета тенанта, адрес — из кубконфига администратора.
+**A tenant's kubeconfig** is assembled from a **token**, a **CA certificate** and the **server address**:
+the first two come from the tenant's secret of the same name, the address from the administrator's kubeconfig.
 
-**`suspend` у HelmRelease** — контроллер перестаёт сверять; поды продолжают работать,
-ручные правки сохраняются до возврата сверки.
+**`suspend` on a HelmRelease** — the controller stops reconciling; pods keep running,
+manual changes are kept until reconciliation is turned back on.
 
-## Цепочки
+## Chains
 
 <p style="font-family:monospace;font-size:14px;line-height:2">
-Слои: Talos → Kubernetes → Cozystack<br>
-Заказ: объект → HelmRelease → чарт → оператор → поды<br>
-Метрика: под → vmagent → VictoriaMetrics → Grafana<br>
-Журнал: под → fluent-bit → VictoriaLogs → Grafana<br>
-Оповещение: VMAlert → Alerta → почта и мессенджеры<br>
-Имя namespace: tenant- + цепочка предков без корня
+Layers: Talos → Kubernetes → Cozystack<br>
+Order: object → HelmRelease → chart → operator → pods<br>
+Metric: pod → vmagent → VictoriaMetrics → Grafana<br>
+Log: pod → fluent-bit → VictoriaLogs → Grafana<br>
+Alert: VMAlert → Alerta → email and messengers<br>
+Namespace name: tenant- + chain of ancestors without the root
 </p>
 
-## Что есть, а чего нет
+## What exists and what does not
 
-**Есть:** живая миграция машин, снимки состояния, проброс видеокарт, резервные копии по
-расписанию, отдельные сети тенантов.
+**Exists:** live migration of machines, snapshots, GPU passthrough, scheduled backups,
+separate tenant networks.
 
-**Нет:** автоматической балансировки между узлами, как у DRS. Инкрементальных копий
-виртуальных машин. Возможности отключить изоляцию тенантов. **Автоперезапуска виртуальной
-машины на другом узле после отказа** — для этого нужен фенсинг, которого в поставке нет.
+**Does not exist:** automatic balancing across nodes, like DRS. Incremental backups of
+virtual machines. The ability to disable tenant isolation. **Automatic restart of a virtual
+machine on another node after a failure** — that requires fencing, which is not included.
 
-**Изменилось в 1.5:** автоматизирована **подготовка узлов** под проброс видеокарт — разметка
-узлов и список разрешённых устройств. Сам проброс был и раньше.
+**Changed in 1.5:** **node preparation** for GPU passthrough has been automated — node
+labeling and the list of allowed devices. Passthrough itself existed before.
 
-## План подготовки на пять дней
+## Five-day preparation plan
 
-| День | Что делать |
+| Day | What to do |
 |---|---|
-| 1 | Урок 7 — он про идеи, на которых держится всё. Потом урок 1 |
-| 2 | Урок 2 — самый плотный. Разобрать пропущенное из первого дня |
-| 3 | Уроки 3 и 4 |
-| 4 | Уроки 5 и 6 |
-| 5 | [Пробные вопросы](/certification/practice/) несколько раз, добор по слабым темам, эта шпаргалка |
+| 1 | Lesson 7 — it is about the ideas everything rests on. Then lesson 1 |
+| 2 | Lesson 2 — the densest one. Go over whatever you missed on day one |
+| 3 | Lessons 3 and 4 |
+| 4 | Lessons 5 and 6 |
+| 5 | [Practice questions](/certification/practice/) several times, catch up on weak topics, this cheat sheet |
 
-Если пяти дней нет — читайте подряд за вечер, прогоняйте пробные вопросы до тех пор, пока
-не перестанете ошибаться, и идите сдавать.
+If you do not have five days — read straight through in an evening, run the practice
+questions until you stop making mistakes, and go take the exam.
 
-## Как устроен экзамен
+## How the exam works
 
-60 вопросов, 90 минут. На английском — если он вам не родной, попросите дополнительные
-30 минут заранее. Часть вопросов с несколькими верными ответами, и они засчитываются только
-целиком. Результат — сдал или нет, с общим баллом и оценкой по темам. Две попытки, между
-ними неделя.
+60 questions, 90 minutes. In English — if it is not your native language, request an extra
+30 minutes in advance. Some questions have several correct answers, and they count only if
+answered in full. The result is pass or fail, with an overall score and a breakdown by topic.
+Two attempts, one week apart.
 
-Проходной балл не публикуется. Готовьтесь знать материал, а не попадать в число.
+The passing score is not published. Prepare to know the material, not to hit a number.

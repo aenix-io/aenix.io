@@ -88,7 +88,7 @@ Three-tier card layout. Each card: tier name, requirements (sales target / techn
 
 **For:** Newly onboarded partners, regional resellers, sub-channel partners
 
-**Requirements:** Signed partner agreement, completed onboarding, at least one engineer who has passed the [Ænix Certification for Cozystack — Fundamentals](/certification/) exam (the exam is in English; preparation materials are currently in Russian)
+**Requirements:** Signed partner agreement, completed onboarding, at least one engineer who has passed the [Ænix Certification for Cozystack — Fundamentals](/certification/) exam (the exam and the preparation materials are in English; a [Russian version](/ru/certification/) of the materials is available)
 
 **Benefits:** Standard margin, deal registration, demo access, L3 support escalation, sales kit, basic training
 

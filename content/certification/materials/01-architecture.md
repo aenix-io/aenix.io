@@ -1,201 +1,210 @@
 ---
-title: "Из чего собран Cozystack"
-description: "Три слоя, четыре варианта установки и почему платформа — это просто ещё один набор объектов Kubernetes."
+title: "What Cozystack is made of"
+description: "Three layers, four installation variants, and why the platform is just another set of Kubernetes objects."
 lesson: 1
 weight: 1
 layout: "cert-lesson"
-language: "ru"
+language: "en"
 url: "/certification/materials/architecture/"
+hreflang_ru: "/ru/certification/materials/architecture/"
 page_type: "flag-page"
 ---
 
-Начнём с вопроса, который на экзамене задают чаще любого другого: **что такое Cozystack по
-своей природе?** Не «для чего он», а именно из чего сделан.
+Let's start with the question the exam asks more often than any other: **what is Cozystack by
+nature?** Not "what is it for", but what exactly it is made of.
 
-Ответ короткий: это Kubernetes, которому добавили новые типы объектов. Не форк, не
-надстройка над чужим API, не отдельный сервер управления. Когда вы просите платформу
-завести базу данных, вы создаёте объект — такой же, как под или сервис, только называется
-он `Postgres`. Дальше за ним следит программа-оператор и делает всё остальное.
+The short answer: it is Kubernetes with new object types added. Not a fork, not a layer on top
+of someone else's API, not a separate management server. When you ask the platform for a
+database, you create an object — just like a pod or a service, except it is called `Postgres`.
+From there an operator program watches it and does everything else.
 
-Это стоит уложить в голове до всего прочего, потому что из этого следует почти всё
-остальное. Работает `kubectl`? Работает. Работает Terraform? Работает. Права раздаются
-обычным RBAC? Да, обычным.
+It is worth getting this into your head before anything else, because almost everything else
+follows from it. Does `kubectl` work? It does. Does Terraform work? It does. Are permissions
+granted through ordinary RBAC? Yes, ordinary RBAC.
 
-## Три слоя
+## Three layers
 
-Платформа собрана из трёх этажей, и путать их порядок — самая частая ошибка на экзамене.
+The platform is built from three floors, and mixing up their order is the most common mistake
+on the exam.
 
 <figure>
-<svg viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Три слоя Cozystack">
+<svg viewBox="0 0 620 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The three layers of Cozystack">
   <rect x="60" y="20" width="500" height="64" rx="8" fill="#dbeafe" stroke="#2563eb"/>
   <text x="310" y="48" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#1e3a8a">Cozystack</text>
-  <text x="310" y="70" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e40af">тенанты, базы, виртуалки, S3 — как объекты Kubernetes</text>
+  <text x="310" y="70" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#1e40af">tenants, databases, VMs, S3 — as Kubernetes objects</text>
   <rect x="60" y="100" width="500" height="64" rx="8" fill="#e0e7ff" stroke="#4f46e5"/>
   <text x="310" y="128" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#312e81">Kubernetes</text>
-  <text x="310" y="150" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#3730a3">управляющий кластер: API, планировщик, операторы</text>
+  <text x="310" y="150" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#3730a3">management cluster: API, scheduler, operators</text>
   <rect x="60" y="180" width="500" height="64" rx="8" fill="#f1f5f9" stroke="#64748b"/>
   <text x="310" y="208" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="700" fill="#0f172a">Talos Linux</text>
-  <text x="310" y="230" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#475569">операционная система на каждом узле</text>
+  <text x="310" y="230" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#475569">the operating system on every node</text>
 </svg>
-<figcaption>Снизу вверх: Talos → Kubernetes → Cozystack. Каждый слой стоит на предыдущем.</figcaption>
+<figcaption>Bottom to top: Talos → Kubernetes → Cozystack. Each layer stands on the one below.</figcaption>
 </figure>
 
-**Talos Linux** — операционная система узлов (node OS). Её особенность в том, что у неё нет
-командной строки: ни SSH, ни консоли, ни пакетного менеджера. Настраивается она
-декларативно, через свой API: вы отправляете описание желаемого состояния, узел приводит
-себя к нему. Корневая файловая система при этом только для чтения.
+**Talos Linux** is the node operating system (node OS). What sets it apart is that it has no
+command line: no SSH, no console, no package manager. It is configured declaratively, through
+its own API: you send a description of the desired state, and the node brings itself into line
+with it. The root filesystem is read-only.
 
-Для администратора, привыкшего зайти на сервер и что-нибудь поправить, это поначалу
-неуютно. Смысл в другом: если зайти и поправить нельзя, то и состояние узла не расползается
-со временем. Два узла, собранные по одному описанию, останутся одинаковыми через год.
+For an administrator used to logging into a server and tweaking something, this feels
+uncomfortable at first. The point is elsewhere: if you cannot log in and tweak things, the
+node's state does not drift over time. Two nodes built from the same description will still be
+identical a year later.
 
-Ставят при этом не стоковый Talos, а **собственный образ платформы**: в него добавлены
-модули ядра DRBD — на нём держится репликация LINSTOR — и ZFS. В обычном образе их нет.
+What gets installed is not stock Talos but **the platform's own image**: it adds the DRBD
+kernel modules — LINSTOR replication depends on them — and ZFS. The regular image does not
+have them.
 
-**Kubernetes** — управляющий кластер (management cluster), который работает поверх Talos.
-Обычный, не переделанный: тот же API, те же контроллеры.
+**Kubernetes** is the management cluster, running on top of Talos. Ordinary, unmodified: the
+same API, the same controllers.
 
-Здесь легко смешать два разных понятия. Управляющий кластер один — это и есть платформа.
-А кластеры, которые заказывают тенанты (tenant clusters), — уже её продукт: их управляющий
-слой работает подами внутри управляющего кластера.
+Two different concepts are easy to confuse here. There is one management cluster — that is the
+platform itself. The clusters that tenants order (tenant clusters) are already its product:
+their control plane runs as pods inside the management cluster.
 
-**Cozystack** — набор компонентов, устанавливаемых в этот кластер. Именно они добавляют
-новые типы объектов и следят за ними.
+**Cozystack** is a set of components installed into that cluster. They are what add the new
+object types and watch over them.
 
-## Установка в три этапа
+## Installation in three stages
 
-Экзамен спрашивает не команды, а порядок и смысл этапов.
+The exam asks not about commands but about the order and meaning of the stages.
 
-1. **Talos на узлах.** Машины загружаются с образа платформы и получают машинное описание.
-   Способов три: `boot-to-talos` — установщик пишет Talos на диск из уже запущенного
-   Linux, загрузка с **ISO** и сетевая загрузка **PXE**. PXE держат два временных
-   контейнера: **Matchbox** отдаёт образ по HTTP, **dnsmasq** раздаёт DHCP и TFTP.
-2. **Kubernetes.** Из этих узлов собирается управляющий кластер. Рекомендованный
-   инструмент — **Talm**, собственный менеджер конфигураций Talos с шаблонами в духе Helm.
-3. **Cozystack.** В кластер ставится сама платформа, дальше она разворачивает свои
-   компоненты сама. Ставят её чартом `cozy-installer` в пространство имён `cozy-system`,
-   а затем применяют один YAML — **Platform Package**. Это единственная точка настройки:
-   домен платформы, адрес apiserver, диапазоны адресов и выбранный вариант установки.
+1. **Talos on the nodes.** The machines boot from the platform image and receive a machine
+   configuration. There are three ways to do it: `boot-to-talos` — an installer that writes
+   Talos to disk from an already running Linux, booting from an **ISO**, and network boot via
+   **PXE**. PXE is served by two temporary containers: **Matchbox** serves the image over HTTP,
+   and **dnsmasq** provides DHCP and TFTP.
+2. **Kubernetes.** The management cluster is assembled from these nodes. The recommended tool
+   is **Talm**, the platform's own Talos configuration manager with Helm-style templates.
+3. **Cozystack.** The platform itself is installed into the cluster, and from there it deploys
+   its components on its own. It is installed with the `cozy-installer` chart into the
+   `cozy-system` namespace, and then a single YAML is applied — the **Platform Package**. This
+   is the only point of configuration: the platform domain, the apiserver address, address
+   ranges, and the chosen installation variant.
 
-Третий этап устроен любопытно: платформа не устанавливает компоненты по списку, а описывает
-желаемый состав и передаёт его **FluxCD**. Дальше Flux сам приводит кластер к описанию и
-продолжает следить, чтобы состав не расходился. Обновление платформы — это смена версии в
-описании, а не пересборка руками.
+The third stage works in an interesting way: the platform does not install components from a
+list; it describes the desired composition and hands it to **FluxCD**. From then on Flux brings
+the cluster into line with the description itself and keeps watching that the composition does
+not drift. Upgrading the platform means changing the version in the description, not rebuilding
+by hand.
 
-Каждый компонент платформы Flux ставит отдельным **релизом** — объект называется
-`HelmRelease`, в командах сокращается до `hr`. Поэтому вопрос «встала ли платформа» — это
-вопрос о релизах, а не о подах:
+Flux installs each platform component as a separate **release** — the object is called
+`HelmRelease`, abbreviated to `hr` in commands. So the question "is the platform up" is a
+question about releases, not about pods:
 
 ```bash
 kubectl get hr -A
 ```
 
-Все в состоянии `READY True` — установка завершена.
+All of them in the `READY True` state — the installation is complete.
 
-## Четыре варианта установки
+## Four installation variants
 
-Платформу ставят не целиком, а одним из четырёх наборов. Названия надо знать **дословно** —
-и вот почему это не придирка: в версии 1.5 их переименовали, а старые имена (`paas-full`,
-`distro-full` и подобные) остались жить в чужих статьях. Перепутать легко.
+The platform is not installed as a whole but as one of four sets. You need to know the names
+**verbatim** — and here is why this is not nitpicking: in version 1.5 they were renamed, and
+the old names (`paas-full`, `distro-full` and the like) live on in other people's articles. It
+is easy to mix them up.
 
-| Вариант | Что это | Когда ваш случай |
+| Variant | What it is | When it is your case |
 |---|---|---|
-| `isp-full` | вся платформа на Talos | своё железо, нужно всё сразу |
-| `isp-full-generic` | то же, но на чужом Kubernetes | кластер уже есть: k3s, kubeadm, RKE2 |
-| `isp-hosted` | платформенные сервисы **без** сети, хранилища и виртуализации | поверх управляемого Kubernetes, где сеть и диски дал провайдер |
-| `default` | только источники пакетов, ничего не включено | собираете платформу сами, компонент за компонентом |
+| `isp-full` | the whole platform on Talos | your own hardware, you need everything at once |
+| `isp-full-generic` | the same, but on someone else's Kubernetes | you already have a cluster: k3s, kubeadm, RKE2 |
+| `isp-hosted` | platform services **without** networking, storage and virtualization | on top of managed Kubernetes, where the provider supplies networking and disks |
+| `default` | only package sources, nothing enabled | you assemble the platform yourself, component by component |
 
-Запомнить проще через одну фразу: `isp-full` — всё на Talos, `-generic` — то же на других
-дистрибутивах, `-hosted` — только платформа, инфраструктура снизу чужая, `default` — с нуля
-и вручную.
+It is easier to remember as a single phrase: `isp-full` — everything on Talos, `-generic` — the
+same on other distributions, `-hosted` — only the platform, the infrastructure underneath is
+someone else's, `default` — from scratch and by hand.
 
-Выбирают один раз, при установке. Сменить набор на работающей платформе — это не
-переключатель, а переустановка.
+You choose once, at installation. Changing the set on a running platform is not a switch; it
+is a reinstallation.
 
-Вариант задаёт состав по умолчанию, а тонкая настройка идёт **пакетами** (package). Каждый
-компонент платформы — пакет с именем вида `cozystack.<компонент>`, и посмотреть их состояние
-можно одной командой:
+The variant sets the default composition, and fine-tuning is done with **packages**. Every
+platform component is a package named `cozystack.<component>`, and you can see their state with
+a single command:
 
 ```bash
 kubectl get package
 ```
 
-Подправить набор дают два ключа в Platform Package: `bundles.enabledPackages` добавляет
-пакеты сверх варианта, `bundles.disabledPackages` — убирает. Оговорка, которую спрашивают:
-отключать пакеты можно только **до установки**. С работающей платформы компонент так не
-снимется — убирать придётся руками через Helm.
+Two keys in the Platform Package let you adjust the set: `bundles.enabledPackages` adds
+packages on top of the variant, `bundles.disabledPackages` removes them. A caveat that the exam
+asks about: packages can be disabled only **before installation**. A component will not be
+removed from a running platform this way — you will have to remove it by hand through Helm.
 
-## Из чего она состоит
+## What it consists of
 
-Компонентов много, но на экзамене спрашивают, **кто за что отвечает**, а не полный список.
-Держите в голове такую карту:
+There are many components, but the exam asks **who is responsible for what**, not for the full
+list. Keep this map in your head:
 
-| Задача | Компонент |
+| Task | Component |
 |---|---|
-| Виртуальные машины | KubeVirt |
-| Управляющий слой тенантских кластеров | Kamaji |
-| Дисковое хранилище | LINSTOR / DRBD |
-| Объектное хранилище (S3) | SeaweedFS |
-| Сеть подов | Cilium |
-| Сеть тенантов, VPC | Kube-OVN |
-| Внешние адреса | MetalLB |
-| Метрики | VictoriaMetrics |
-| Журналы | VictoriaLogs |
-| Графики | Grafana |
-| Доставка конфигурации | FluxCD |
-| Вход по учётным записям | Keycloak |
+| Virtual machines | KubeVirt |
+| Control plane of tenant clusters | Kamaji |
+| Block storage | LINSTOR / DRBD |
+| Object storage (S3) | SeaweedFS |
+| Pod networking | Cilium |
+| Tenant networking, VPC | Kube-OVN |
+| External addresses | MetalLB |
+| Metrics | VictoriaMetrics |
+| Logs | VictoriaLogs |
+| Dashboards | Grafana |
+| Configuration delivery | FluxCD |
+| Sign-in with user accounts | Keycloak |
 
-Строку про **Kamaji** стоит запомнить отдельно: он поднимает управляющий слой тенантских
-кластеров подами прямо в управляющем кластере — отдельных машин под мастера тенанту не надо.
+The row about **Kamaji** is worth memorizing separately: it runs the control plane of tenant
+clusters as pods right in the management cluster — a tenant does not need separate machines for
+control-plane nodes.
 
-Обратите внимание, чего в списке **нет**: Prometheus и Loki. Их часто подставляют в
-варианты ответа как ловушку — метрики и журналы здесь собирают VictoriaMetrics и
-VictoriaLogs.
+Note what is **not** on the list: Prometheus and Loki. They are often slipped into answer
+options as a trap — metrics and logs here are collected by VictoriaMetrics and VictoriaLogs.
 
-## Что нужно от железа
+## Hardware requirements
 
-Цифры спрашивают дословно, так что минимальный профиль придётся выучить как есть: **три
-узла**, на каждом **8 ядер**, **24 ГБ** памяти и **два диска** — 50 ГБ системный и 256 ГБ
-под данные. Два диска здесь не прихоть: второй отдаётся под LINSTOR. Меньше трёх узлов не
-даёт отказоустойчивости ни хранилищу, ни управляющему слою.
+The numbers are asked verbatim, so you will have to learn the minimum profile as it is: **three
+nodes**, each with **8 cores**, **24 GB** of memory and **two disks** — 50 GB for the system and
+256 GB for data. Two disks are not a whim here: the second one is given to LINSTOR. Fewer than
+three nodes gives fault tolerance neither to storage nor to the control plane.
 
-Сеть нормирована не слабее: все узлы в **одном сегменте L2**, задержка между ними —
-**меньше 10 мс** по времени обращения (RTT).
+The network is specified no less strictly: all nodes in **one L2 segment**, latency between
+them **under 10 ms** round-trip time (RTT).
 
-Если узлы сами виртуальные — стенд в vSphere или Proxmox, — включите вложенную
-виртуализацию и проброс флагов процессора. На железе это не нужно. Домашний стенд по этому
-минимуму — законный способ пройти весь getting-started целиком.
+If the nodes are themselves virtual — a lab in vSphere or Proxmox — enable nested
+virtualization and CPU flag passthrough. On bare metal this is not needed. A home lab built to
+this minimum is a legitimate way to go through the whole getting-started guide.
 
-Платформа собрана. Дальше её надо между кем-то поделить — этим и займётся следующий урок.
+The platform is assembled. Next it has to be divided among someone — that is what the next
+lesson is about.
 
 <div class="exam-box">
-<h4>Что спросят на экзамене</h4>
+<h4>What the exam will ask</h4>
 <ul>
-<li>Порядок слоёв снизу вверх: Talos → Kubernetes → Cozystack.</li>
-<li>Что Talos управляется через API и не имеет SSH, а корень доступен только на чтение.</li>
-<li>Что платформа расширяет Kubernetes своими типами объектов, а не заменяет его.</li>
-<li>Названия четырёх вариантов установки (bundles) — дословно.</li>
-<li>Кто за что отвечает: KubeVirt, LINSTOR, SeaweedFS, Cilium, Kube-OVN, MetalLB.</li>
-<li>Что метрики хранит VictoriaMetrics, а не Prometheus.</li>
-<li>Что Kamaji держит управляющий слой тенантских кластеров подами в управляющем кластере.</li>
-<li>Чем управляющий кластер (management cluster) отличается от тенантских кластеров.</li>
-<li>Что пакеты называются <code>cozystack.&lt;компонент&gt;</code>, список даёт <code>kubectl get
-package</code>.</li>
-<li>Ключи <code>bundles.enabledPackages</code> и <code>bundles.disabledPackages</code>, отключение
-— только до установки.</li>
-<li>Что Talm — рекомендованный инструмент начальной настройки Talos и сборки кластера.</li>
-<li>Зачем платформе свой образ Talos: модули ядра DRBD и ZFS.</li>
-<li>Способы установки Talos: boot-to-talos, ISO, PXE (Matchbox отдаёт образ, dnsmasq — DHCP и
+<li>The order of layers from bottom to top: Talos → Kubernetes → Cozystack.</li>
+<li>That Talos is managed through an API and has no SSH, and the root is read-only.</li>
+<li>That the platform extends Kubernetes with its own object types rather than replacing it.</li>
+<li>The names of the four installation variants (bundles) — verbatim.</li>
+<li>Who is responsible for what: KubeVirt, LINSTOR, SeaweedFS, Cilium, Kube-OVN, MetalLB.</li>
+<li>That metrics are stored by VictoriaMetrics, not Prometheus.</li>
+<li>That Kamaji runs the control plane of tenant clusters as pods in the management cluster.</li>
+<li>How the management cluster differs from tenant clusters.</li>
+<li>That packages are named <code>cozystack.&lt;component&gt;</code>, and <code>kubectl get
+package</code> lists them.</li>
+<li>The keys <code>bundles.enabledPackages</code> and <code>bundles.disabledPackages</code>; disabling
+works only before installation.</li>
+<li>That Talm is the recommended tool for the initial Talos configuration and cluster assembly.</li>
+<li>Why the platform has its own Talos image: the DRBD and ZFS kernel modules.</li>
+<li>Ways to install Talos: boot-to-talos, ISO, PXE (Matchbox serves the image, dnsmasq provides DHCP and
 TFTP).</li>
-<li>Что платформу ставит <code>cozy-installer</code> в <code>cozy-system</code>, а настраивает
+<li>That the platform is installed by <code>cozy-installer</code> into <code>cozy-system</code> and configured by the
 Platform Package.</li>
-<li>Минимум железа: 3 узла, 8 ядер, 24 ГБ, диски 50 и 256 ГБ, один сегмент L2, задержка до 10
-мс.</li>
-<li>Что готовность установки проверяют по состоянию релизов FluxCD.</li>
+<li>Minimum hardware: 3 nodes, 8 cores, 24 GB, 50 and 256 GB disks, one L2 segment, latency under 10
+ms.</li>
+<li>That installation readiness is checked by the state of the FluxCD releases.</li>
 </ul>
 </div>
 
-<p class="doclink">Подробнее:
-<a href="https://cozystack.io/docs/v1.6/" target="_blank" rel="noopener">обзор платформы</a> ·
-<a href="https://cozystack.io/docs/v1.6/install/" target="_blank" rel="noopener">установка</a> ·
-<a href="https://cozystack.io/docs/v1.6/getting-started/" target="_blank" rel="noopener">первые шаги</a></p>
+<p class="doclink">Learn more:
+<a href="https://cozystack.io/docs/v1.6/" target="_blank" rel="noopener">platform overview</a> ·
+<a href="https://cozystack.io/docs/v1.6/install/" target="_blank" rel="noopener">installation</a> ·
+<a href="https://cozystack.io/docs/v1.6/getting-started/" target="_blank" rel="noopener">getting started</a></p>

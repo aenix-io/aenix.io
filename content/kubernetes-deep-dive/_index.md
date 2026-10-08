@@ -105,7 +105,7 @@ The course covers the open-source Cozystack stack, which is the foundation of th
 
 ### Is there a certification?
 
-Yes. The [Ænix Certification for Cozystack — Fundamentals](/certification/) exam is taken separately. The exam is in English; the preparation materials are currently in Russian.
+Yes. The [Ænix Certification for Cozystack — Fundamentals](/certification/) exam is taken separately. The exam and the preparation materials are in English; a [Russian version](/ru/certification/) of the materials is available.
 
 ### What if I'm already a Cozystack contributor?
 

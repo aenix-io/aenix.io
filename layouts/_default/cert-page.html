@@ -6,6 +6,7 @@
 <article class="cert" data-tpl="cert-page">
   <section class="cert__hero">
     <div class="container">
+      {{ partial "lang-switch.html" . }}
       {{ with .Params.eyebrow }}<p class="cert__eyebrow">{{ . }}</p>{{ end }}
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p class="cert__lead">{{ . }}</p>{{ end }}

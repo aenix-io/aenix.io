@@ -1,19 +1,20 @@
 ---
-title: "Пробные вопросы"
-description: "Двадцать вопросов из открытого набора, с разбором каждого ответа. Без регистрации и сколько угодно раз."
-eyebrow: "Подготовка к экзамену"
+title: "Practice questions"
+description: "Twenty questions from the open set, with an explanation of every answer. No registration, as many times as you like."
+eyebrow: "Exam preparation"
 layout: "cert-practice"
-language: "ru"
+language: "en"
 url: "/certification/practice/"
+hreflang_ru: "/ru/certification/practice/"
 page_type: "flag-page"
 ---
 
-Вопросы взяты из модулей курса — из тех блоков самопроверки, что стоят в конце каждого
-урока. Вы их уже видели вместе с ответами, если читали материалы.
+The questions come from the course modules — from the self-check blocks at the end of each
+lesson. If you have read the materials, you have already seen them along with the answers.
 
-Поэтому честно: **этот набор не предсказывает результат экзамена.** Он проверяет, что вы
-прочли курс. На экзамене будут другие вопросы, включая разбор ситуаций и вопросы с
-несколькими верными ответами, где засчитывается только полностью верный набор.
+So, to be honest: **this set does not predict your exam result.** It checks that you
+have read the course. The exam will have different questions, including scenario questions and questions with
+several correct answers, where only a fully correct set counts.
 
-Форма собирается по весам тем настоящего экзамена, так что заодно вы увидите, из чего он
-состоит. Варианты ответов перемешиваются при каждом запуске.
+The form is assembled according to the topic weights of the real exam, so along the way you will see what it
+is made of. Answer options are shuffled on every run.

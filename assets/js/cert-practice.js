@@ -4,6 +4,9 @@
   var pool = window.__CCF_POOL__ || [];
   var root = document.getElementById('practice');
   if (!root) return;
+  // Page language picks the strings: /certification/practice/ is English, /ru/certification/practice/ Russian.
+  var RU = document.documentElement.lang === 'ru';
+  function L(ru, en) { return RU ? ru : en; }
 
   // Веса тем: форма повторяет структуру экзамена, чтобы тренировка учила не только
   // материалу, но и тому, из чего экзамен состоит.
@@ -40,7 +43,7 @@
     root.innerHTML = '';
     var card = document.createElement('div'); card.className = 'q';
     var bar = document.createElement('div'); bar.className = 'q__bar';
-    bar.innerHTML = '<span>Вопрос ' + (idx + 1) + ' из ' + form.length + '</span>' +
+    bar.innerHTML = '<span>' + L('Вопрос ', 'Question ') + (idx + 1) + L(' из ', ' of ') + form.length + '</span>' +
                     '<span>' + q.domain_name + '</span>';
     card.appendChild(bar);
     var stem = document.createElement('p'); stem.className = 'q__stem'; stem.textContent = q.stem;
@@ -87,12 +90,12 @@
     });
     if (q.rationale) {
       var why = document.createElement('p'); why.className = 'q__why';
-      why.textContent = (ok ? 'Верно. ' : 'Неверно. ') + q.rationale;
+      why.textContent = (ok ? L('Верно. ', 'Correct. ') : L('Неверно. ', 'Incorrect. ')) + q.rationale;
       card.appendChild(why);
     }
     var next = document.createElement('button');
     next.className = 'cert__btn'; next.style.marginTop = '16px';
-    next.textContent = idx + 1 < form.length ? 'Следующий вопрос' : 'Посмотреть итог';
+    next.textContent = idx + 1 < form.length ? L('Следующий вопрос', 'Next question') : L('Посмотреть итог', 'See results');
     next.addEventListener('click', function () { idx++; render(); });
     card.appendChild(next); next.focus();
   }
@@ -102,15 +105,18 @@
     var rows = Object.keys(perDomain).map(function (d) {
       var v = perDomain[d];
       var name = (pool.find(function (q) { return q.domain === d; }) || {}).domain_name || d;
-      return '<tr><td>' + name + '</td><td>' + v.ok + ' из ' + v.all + '</td></tr>';
+      return '<tr><td>' + name + '</td><td>' + v.ok + L(' из ', ' of ') + v.all + '</td></tr>';
     }).join('');
     root.innerHTML =
-      '<div class="q"><h2 style="margin-top:0">Правильно ' + right + ' из ' + form.length + '</h2>' +
+      '<div class="q"><h2 style="margin-top:0">' + L('Правильно ', 'Correct: ') + right + L(' из ', ' of ') + form.length + '</h2>' +
       '<table class="cert__facts">' + rows + '</table>' +
-      '<p class="q__why">Это вопросы из модулей курса — вы уже видели их вместе с ответами. ' +
+      '<p class="q__why">' + L('Это вопросы из модулей курса — вы уже видели их вместе с ответами. ' +
       'Они проверяют, что материал прочитан, и не предсказывают результат экзамена: там есть ' +
-      'вопросы по ситуациям и вопросы с несколькими верными ответами, которых в этом наборе нет.</p>' +
-      '<button class="cert__btn" id="again">Пройти ещё раз</button></div>';
+      'вопросы по ситуациям и вопросы с несколькими верными ответами, которых в этом наборе нет.',
+      'These questions come from the course modules, and you have already seen them with their answers. ' +
+      'They check that you have read the material and do not predict your exam result: the exam has ' +
+      'scenario questions and questions with several correct answers, which this set does not include.') + '</p>' +
+      '<button class="cert__btn" id="again">' + L('Пройти ещё раз', 'Try again') + '</button></div>';
     document.getElementById('again').addEventListener('click', function () {
       form = buildForm(); idx = 0; right = 0; perDomain = {}; render();
     });

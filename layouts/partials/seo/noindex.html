@@ -11,9 +11,9 @@
     4. utility URLs with no content of their own (below), and everything
        under /workshop/ (hands-on lab material for workshop attendees)
     5. the "types" taxonomy (post-type filter pages, not topics)
-    6. Russian pages other than the certification programme and the
-       Russian workshop event pages (/ru/workshops/), which are real event
-       landings meant to be found
+    6. Russian pages other than the Russian edition of the certification
+       programme (/ru/certification/) and the Russian workshop event pages
+       (/ru/workshops/), which are real landings meant to be found
 
   The one rule: a page is either indexable AND in the sitemap, or it carries
   a robots noindex meta AND stays out of the sitemap. Never one without the
@@ -38,6 +38,6 @@
 {{- if and (not $no) (eq $p.Data.Plural "types") }}{{ $no = true }}{{ $emit = true }}{{ end -}}
 {{- if and (not $no) (hasPrefix $p.RelPermalink "/types/") }}{{ $no = true }}{{ $emit = true }}{{ end -}}
 {{- $ru := or (hasPrefix $p.RelPermalink "/ru/") (eq (lower (string (or $p.Params.language ""))) "ru") -}}
-{{- $ruIndexable := or (hasPrefix $p.RelPermalink "/certification/") (hasPrefix $p.RelPermalink "/ru/workshops/") -}}
+{{- $ruIndexable := or (hasPrefix $p.RelPermalink "/ru/certification/") (hasPrefix $p.RelPermalink "/ru/workshops/") -}}
 {{- if and (not $no) $ru (not $ruIndexable) }}{{ $no = true }}{{ $emit = true }}{{ end -}}
 {{- return (dict "noindex" $no "emit" $emit) -}}
