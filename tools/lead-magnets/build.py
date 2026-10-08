@@ -1,5 +1,8 @@
 #!/usr/bin/env python
-"""Render the Aenix compliance checklists to PDF with WeasyPrint."""
+"""Render the Aenix lead-magnet PDFs with WeasyPrint.
+
+Usage: build.py [source.html ...]   (no arguments builds every document)
+"""
 import pathlib
 import sys
 
@@ -19,6 +22,22 @@ DOCS = {
                      "NIS2 Compliance Readiness Checklist — Ænix"),
     "nis2-de.html": ("aenix-nis2-compliance-checklist-de.pdf", "de",
                      "NIS2-Compliance-Readiness-Checkliste — Ænix"),
+    "vmware-en.html": ("aenix-vmware-migration-checklist.pdf", "en",
+                       "VMware Migration Assessment Checklist — Ænix"),
+    "vmware-de.html": ("aenix-vmware-migration-checklist-de.pdf", "de",
+                       "VMware-Migrations-Checkliste — Ænix"),
+    "sovereign-ai-en.html": ("aenix-sovereign-ai-decision-guide.pdf", "en",
+                             "Sovereign AI Decision Guide — Ænix"),
+    "sovereign-ai-de.html": ("aenix-sovereign-ai-decision-guide-de.pdf", "de",
+                             "Sovereign-AI-Entscheidungsleitfaden — Ænix"),
+    "platform-maturity-en.html": ("aenix-platform-engineering-maturity-assessment.pdf", "en",
+                                  "Platform Engineering Maturity Assessment — Ænix"),
+    "platform-maturity-de.html": ("aenix-platform-engineering-maturity-assessment-de.pdf", "de",
+                                  "Platform Engineering Maturity Assessment — Ænix"),
+    "tco-worksheet-en.html": ("aenix-cloud-repatriation-tco-worksheet.pdf", "en",
+                              "Cloud Repatriation TCO Worksheet — Ænix"),
+    "tco-worksheet-de.html": ("aenix-cloud-repatriation-tco-worksheet-de.pdf", "de",
+                              "Cloud-Repatriation-TCO-Arbeitsblatt — Ænix"),
 }
 
 SHELL = """<!DOCTYPE html>
@@ -34,7 +53,13 @@ SHELL = """<!DOCTYPE html>
 </html>
 """
 
-for src, (pdf_name, lang, title) in DOCS.items():
+selected = sys.argv[1:] or list(DOCS)
+unknown = [name for name in selected if name not in DOCS]
+if unknown:
+    sys.exit(f"unknown source(s): {', '.join(unknown)}")
+
+for src in selected:
+    pdf_name, lang, title = DOCS[src]
     body = (BUILD / src).read_text(encoding="utf-8")
     html = SHELL.format(lang=lang, title=title, css=CSS_TEXT, body=body)
     (BUILD / (src + ".full")).write_text(html, encoding="utf-8")
