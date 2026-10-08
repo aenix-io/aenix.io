@@ -1,0 +1,24 @@
+{{- /*
+  enquiry-topic.html — on the contact pages, names the topic the visitor
+  came for. CTAs elsewhere link to /contact/?type=<topic> (support page,
+  alternatives); the Pipedrive form is a cross-origin embed whose fields
+  cannot be preselected from the page, so the topic is shown as a line in
+  the hero instead. The loader still passes the full page URL (including
+  ?type=) to Pipedrive with the lead. Unknown or missing types show nothing.
+*/ -}}
+{{- if in (slice "/contact/" "/de/kontakt/") .RelPermalink -}}
+{{- $de := hasPrefix .RelPermalink "/de/" -}}
+{{- $topics := dict
+  "cozystack-support" (cond $de "Ihr Anliegen: Enterprise-Support für selbst betriebene Cozystack-Cluster. Nennen Sie im Formular Knotenzahl und Cozystack-Version, dann kann das erste Gespräch konkret werden." "Your enquiry: enterprise support for self-run Cozystack clusters. Mention your node count and Cozystack version in the form so the first call can be specific.")
+  "architecture-review" (cond $de "Ihr Anliegen: ein Architekturgespräch. Nennen Sie im Formular Ihre aktuelle Plattform und die ungefähre Größe der Umgebung." "Your enquiry: an architecture call. Mention your current platform and the rough size of your estate in the form.")
+-}}
+<p class="enquiry-topic" id="enquiry-topic" hidden></p>
+<script>
+(function(){
+  var t={{ $topics | jsonify | safeJS }};
+  var k=new URLSearchParams(location.search).get('type');
+  var el=document.getElementById('enquiry-topic');
+  if(el&&k&&Object.prototype.hasOwnProperty.call(t,k)){el.textContent=t[k];el.hidden=false;}
+})();
+</script>
+{{- end -}}

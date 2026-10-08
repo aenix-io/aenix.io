@@ -37,12 +37,12 @@ quiz:
         - { text: "Discovery, paralleler Aufbau, Image-Migration, Cutover, Abschaltung", correct: true }
         - { text: "Ein Big-Bang-Cutover an einem einzigen Wochenende", correct: false }
       explanation: "Sechs Stufen: Discovery, paralleler Aufbau von Cozystack neben der bestehenden VMware-Umgebung, VM-Image-Migration, Cutover von Netz und Storage, Validierung samt DR-Cutover, dann die Abschaltung von VMware. Kein Big Bang: die Workloads ziehen in Kohorten um, jede wird parallel verifiziert."
-    - q: "Wie lange dauert die Migration eines Bestands unter 100 VMs vom Assessment bis zur Abschaltung von VMware?"
+    - q: "Wie lange dauert die Migration eines VMware-Bestands von rund 100 VMs, einschließlich Planung und Migrationswellen?"
       options:
         - { text: "1–2 Wochen", correct: false }
-        - { text: "7–10 Monate", correct: true }
+        - { text: "Rund 8–12 Monate", correct: true }
         - { text: "5 Jahre oder mehr", correct: false }
-      explanation: "Unter 100 VMs: 7–10 Monate vom Assessment bis zur Abschaltung; 100–500 VMs: 10–16 Monate; 500–2.000 VMs: 16–25 Monate in Kohorten. Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
+      explanation: "Rund 8–12 Monate für einen Bestand von ~100 VMs und 18–24 Monate für ~1.000 VMs, einschließlich Planung und Migrationswellen, nach einem Platform Readiness Assessment von 14 oder 28 Tagen. Treiber sind die Regressionstests und die Parallelbetriebsfenster, nicht die reine Migrationsgeschwindigkeit."
 hreflang_en: /blog/2026/05/vmware-replacement-after-broadcom/
 ---
 
@@ -72,7 +72,7 @@ Drei unabhängige Druckpunkte treffen die gleiche Architektur gleichzeitig:
 | NSX | Cilium (eBPF) |
 | vCloud Director | Tenant CRD + Cozystack Dashboard |
 | vRealize/Aria Operations | VictoriaMetrics + VictoriaLogs + Grafana |
-| Site Recovery Manager | Velero + S3 + PostgreSQL PITR |
+| Site Recovery Manager | Velero + S3 + PostgreSQL PITR plus geübte Runbooks (kein orchestriertes Failover wie bei SRM) |
 | Tanzu Kubernetes Grid | Tenant Kubernetes (nativ) |
 | VMware Cloud Foundation | Cozystack (vollständiges Stack-Äquivalent) |
 
@@ -95,7 +95,7 @@ Für die meisten VMs ist die Migration eine Disk-Image-Kopie. KubeVirt CDI plus 
 Networking: VLAN-Mapping in Cilium mit Policy-Parität gegen NSX-Regeln. Storage: Disks in LINSTOR importieren.
 
 ### 5. Validierung und DR-Cutover
-Jede migrierte Workload läuft parallel auf Cozystack bis zur Validierung. DR-Pläne (Velero, PostgreSQL PITR) ersetzen SRM-Playbooks vor dem finalen Cutover.
+Jede migrierte Workload läuft parallel auf Cozystack bis zur Validierung. Vor dem finalen Cutover stehen Backup und Wiederherstellung mit Velero und PostgreSQL PITR plus geübte Runbooks; ein orchestriertes standortübergreifendes Failover wie bei SRM gibt es nicht.
 
 ### 6. VMware-Decommission
 Lizenzen enden zu ihren eigenen Bedingungen. Hardware in den Cozystack-Cluster umgewidmet.
@@ -113,11 +113,11 @@ Architektonische Implikationen:
 
 ## Migrations-Zeitplan
 
-Vom Assessment bis zur Abschaltung von VMware:
+Nach einem Platform Readiness Assessment von 14 oder 28 Tagen:
 
-- **Unter 100 VMs:** 7–10 Monate
-- **100–500 VMs:** 10–16 Monate
-- **500–2.000 VMs:** 16–25 Monate, in Kohorten
+- **Rund 100 VMs:** rund 8–12 Monate, einschließlich Planung und Migrationswellen
+- **Rund 1.000 VMs:** 18–24 Monate, in Kohorten
+- **Dazwischen:** je nach Abhängigkeiten zwischen diesen beiden Werten
 
 Treiber sind Regressionstests und Parallelbetriebsfenster, nicht die reine Kopiergeschwindigkeit.
 

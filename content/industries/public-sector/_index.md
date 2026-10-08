@@ -18,7 +18,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A customer-owned, audit-ready sovereign cloud platform for public-sector and quasi-public organizations, built on the open-source Cozystack foundation."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -106,9 +106,7 @@ Phase 2 implementation runs end-to-end: hardware-to-platform-to-operations, with
 
 ## References
 
-Public-sector customers are not named. References are discussed on the discovery call where the customer allows it, and [nine deployments are written up in full](/case-studies/) in anonymized form, with architecture and figures.
-
-{{< quote-carousel >}}
+Public-sector customers are not named. References are discussed on the discovery call where the customer allows it, and [nine published case studies](/case-studies/) are written up in anonymized form, with architecture and figures.
 
 ---
 

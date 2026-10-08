@@ -13,14 +13,14 @@ images: ["img/og/pricing.jpg"]
 hreflang_de: /de/preise/
 related_pages: ["/products/", "/tco-calculator/", "/products/cozystack-enterprise-support/", "/contact/"]
 direct_answer: |
-  **Cozystack itself is free: Apache 2.0, no per-CPU, per-core or per-VM licensing, and you can run it without paying Ænix anything. Ænix sells a subscription, not a licence. The published price list is a set of support tiers per 10 physical nodes per month: Basic $1,250, Standard $3,000, Plus $5,500 on annual billing, and a custom Enterprise tier. The same tiers apply to an Ænix Public Cloud Platform subscription, which also includes the proprietary Ænix commercial modules (billing system and WHMCS integration), and to support for Cozystack you run yourself. Packages multiply with the estate, so a 60-node estate on Basic is six packages. Ænix Private Cloud Platform, Ænix AI Platform and multi-region operator builds are quoted per RFP after a discovery call, because the number depends on estate size, regulatory scope, migration volume and how much of the operation Ænix runs.**
+  **Cozystack itself is free: Apache 2.0, no per-CPU, per-core or per-VM licensing, and you can run it without paying Ænix anything. Ænix sells a subscription, not a licence. The published price list is a set of support tiers per 10 physical nodes per month: Basic $1,250, Standard $3,000, Plus $5,500 on annual billing, and a custom Enterprise tier. Every support tier includes the proprietary Ænix commercial modules (billing system and WHMCS integration). The price list is the Ænix Public Cloud Platform subscription; a team running Cozystack itself buys the same subscription and can simply leave the commercial modules unused. Packages multiply with the estate, so a 60-node estate on Basic is six packages. Ænix Private Cloud Platform, Ænix AI Platform and multi-region operator builds are quoted per RFP after a discovery call, because the number depends on estate size, regulatory scope, migration volume and how much of the operation Ænix runs.**
 quick_facts:
   - label: "Cozystack licence cost"
     value: "Zero. Apache 2.0, no per-CPU, per-core or per-VM fees, and it keeps running if the commercial relationship ends."
   - label: "Published tiers"
     value: "Basic $1,250 · Standard $3,000 · Plus $5,500 · Enterprise custom — per 10 physical nodes per month, annual billing."
   - label: "Who the price list covers"
-    value: "Ænix Public Cloud Platform subscriptions and support for self-run Cozystack. The same four tiers for both."
+    value: "One subscription: the Ænix Public Cloud Platform. Teams running Cozystack themselves buy the same tiers and can leave the commercial modules unused."
   - label: "Annual vs monthly"
     value: "Annual billing costs 10 months of the monthly price: two months free. Monthly billing is $1,500 / $3,600 / $6,600 per 10 nodes."
   - label: "Quoted per RFP"
@@ -41,7 +41,7 @@ faq:
   - q: "Why do you not publish per-CPU pricing?"
     a: "Because what you buy is not a licence. A per-CPU figure would price a bundled engagement — assessment, migration, operating model, support — as though it were a per-socket fee, and it would be wrong in both directions depending on scope. The support tiers are published in full; platform programmes are quoted after a discovery call."
   - q: "Can we buy support without buying a platform?"
-    a: "Yes, and it is a deliberate offering rather than a tolerated exception. Teams running Cozystack on their own or leased hardware buy the same support tiers per 10 nodes and get the maintainers on call. See enterprise support for Cozystack."
+    a: "Yes, and it is a deliberate offering rather than a tolerated exception. Teams running Cozystack on their own or leased hardware buy the same subscription per 10 nodes and get the maintainers on call. The commercial modules are included in every tier and can simply stay unused. See enterprise support for Cozystack."
   - q: "How long does procurement usually take?"
     a: "The discovery call happens in the same week. A Platform Readiness Assessment is typically contracted within 2-4 weeks and runs for 14 or 28 days. Contracting a full enterprise build typically takes 8-16 weeks through legal review and procurement; a support subscription is a much smaller commercial scope and moves in weeks."
 ---
@@ -79,7 +79,7 @@ Services — Platform Readiness Assessment, pilot, build, migration, managed ope
 
 These are the three Ænix platforms. They run on one engine with different surfaces switched on, so a second platform is scoped as a configuration change on the one you already run, not as a second build.
 
-Alongside them: **[enterprise support for Cozystack](/products/cozystack-enterprise-support/)** for teams running Cozystack on their own or leased servers, priced from the same table, and the **[WHMCS integration](/products/whmcs-integration/)**, a proprietary Ænix module included in every tier.
+Alongside them: **[enterprise support for Cozystack](/products/cozystack-enterprise-support/)** for teams running Cozystack on their own or leased servers, who buy the same subscription from the same table, and the **[WHMCS integration](/products/whmcs-integration/)**, a proprietary Ænix module included in every tier.
 
 [Explore the platforms →](/products/)
 
@@ -87,7 +87,7 @@ Alongside them: **[enterprise support for Cozystack](/products/cozystack-enterpr
 
 ## Step 2 — Pick a support tier {#support}
 
-This is the published price list. It applies to Ænix Public Cloud Platform subscriptions and to support for self-run Cozystack, with the same tiers for both. Prices are per 10 physical nodes per month. Annual billing costs 10 months of the monthly price, so two months are free. Toggle annual and monthly, and scroll the table for the full comparison: SLA, commercial modules, support scope, PoC, training, security, consulting, procurement terms and team engagement.
+This is the published price list: the Ænix Public Cloud Platform subscription. Every support tier includes the proprietary Ænix commercial modules (billing system and WHMCS integration); a team running Cozystack itself buys the same subscription and can simply leave the commercial modules unused. Prices are per 10 physical nodes per month. Annual billing costs 10 months of the monthly price, so two months are free. Toggle annual and monthly, and scroll the table for the full comparison: SLA, commercial modules, support scope, PoC, training, security, consulting, procurement terms and team engagement.
 
 {{< pricing-table >}}
 
@@ -96,7 +96,7 @@ This is the published price list. It applies to Ænix Public Cloud Platform subs
 1. Basic covers five incidents; the period they are counted over is stated in the support contract. Incidents related to installation support do not count towards the limit if they are reported inside the 30-day installation-support period.
 2. Business hours are Monday to Friday, 9:00–18:00 Central European Time, excluding holidays.
 3. An emergency is a production system down or unresponsive with no workaround available.
-4. Priority engagement time is time we spend each month building features on your roadmap.
+4. Priority engagement time is engineering time per month for your requests: features, integrations or reviews.
 
 Rows under "Support scope for open-source Cozystack features" describe what Ænix supports, not what the software can do. White-labeling, air-gapped installation, backups and GPU sharing with HAMi are part of open-source Cozystack and available to everyone. Remote access to your clusters only happens with your approval, for the session you approve.
 

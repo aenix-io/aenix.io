@@ -65,6 +65,8 @@ Five sections, 35 architectural control points:
 4. **Supply chain and cryptography** (6 points) — Article 21(2)(d) supplier security to the second hop, Article 21(2)(h) cryptography and encryption posture
 5. **Access control and audit** (6 points) — Article 21(2)(i)-(j) access control and MFA, plus Article 21(2)(f) effectiveness assessment
 
+The PDF closes with architecture-level recommendations and a generic reference pattern; they describe what the Ænix platforms actually provide: volume encryption at rest is opt-in (LINSTOR and LUKS) with a passphrase you hold, and the key-management process is designed with you; audit logs have configurable retention (default 30 days) and can be shipped to your own immutable store; DR is backup and restore with Velero plus rehearsed runbooks, with no SRM-style orchestrated cross-site failover. The next step it offers is the [Platform Readiness Assessment](/services/platform-readiness-assessment/) of 14 or 28 days.
+
 ---
 
 ## Who uses this

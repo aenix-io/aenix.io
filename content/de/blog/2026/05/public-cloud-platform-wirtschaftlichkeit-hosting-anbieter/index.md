@@ -1,7 +1,7 @@
 ---
-title: "Wirtschaftlichkeit der Public Cloud Platform — wann sich eine schlüsselfertige Cloud aus der Box für Hosting-Anbieter rechnet"
+title: "Wirtschaftlichkeit der Public Cloud Platform — wann sich ein eigenes Cloud-Produkt für Hosting-Anbieter rechnet"
 seo_title: "Public Cloud Platform: Wirtschaftlichkeit für Hoster"
-description: "Unit Economics der Aenix Public Cloud Platform für Hosting-Anbieter: ARPU, Infrastrukturkosten pro Tenant, Kapazität des Plattformteams, Amortisation, Grenzen."
+description: "Unit Economics der Ænix Public Cloud Platform für Hosting-Anbieter: ARPU, Infrastrukturkosten pro Tenant, Kapazität des Plattformteams, Amortisation, Grenzen."
 slug: "public-cloud-platform-wirtschaftlichkeit-hosting-anbieter"
 date: "2026-05-15"
 cover_image: "/img/blog/covers/de/public-cloud-platform-wirtschaftlichkeit-hosting-anbieter.jpg"
@@ -20,7 +20,7 @@ quiz:
         - { text: "Ab 1.250 $ pro Monat für 10 Nodes", correct: true }
         - { text: "500 € pro Monat für unbegrenzt viele Nodes und Tenants", correct: false }
         - { text: "Preis pro VM, ab etwa 5 € pro VM und Monat", correct: false }
-      explanation: "Der Abschnitt zum Preismodell nennt ausdrücklich „ab 1.250 $/Monat für den Basic-Support-Tier mit 10 Nodes“ — Aenix rechnet nicht pro VM, pro CPU oder pro GB ab."
+      explanation: "Der Abschnitt zum Preismodell nennt ausdrücklich „ab 1.250 $/Monat für den Basic-Support-Tier mit 10 Nodes“ — Ænix rechnet nicht pro VM, pro CPU oder pro GB ab."
     - q: "Welche Gesamtkosten pro typischem Tenant nennt der Artikel für einen mittelgroßen Provider mit 500 Tenants?"
       options:
         - { text: "Etwa 5 bis 10 € pro Tenant und Monat", correct: false }
@@ -62,10 +62,10 @@ nicht zu einem abstrakten.
 
 ## Was die Public Cloud Platform tatsächlich liefert
 
-Vor der Wirtschaftlichkeit der Umfang. Die Public Cloud Platform ist die
-schlüsselfertige Cloud aus der Box, die Ænix an Hosting-Anbieter, MSPs,
-regionale Clouds sowie kleine und mittlere Rechenzentren verkauft. Sie
-umfasst:
+Vor der Wirtschaftlichkeit der Umfang. Die Public Cloud Platform ist ein
+komplettes Public-Cloud-Produkt für Hosting-Anbieter, das Ænix an
+Hosting-Anbieter, MSPs, regionale Clouds sowie kleine und mittlere
+Rechenzentren verkauft. Sie umfasst:
 
 - **Eine mandantenfähige Cozystack-Plattform** auf Bare Metal unter
   Kontrolle des Kunden (KubeVirt + Cilium + Kube-OVN + LINSTOR +
@@ -97,7 +97,7 @@ jährlicher Abrechnung: **Basic 1.250 $**, **Standard 3.000 $**,
 **Plus 5.500 $**; Enterprise wird individuell angeboten. Höhere Stufen
 bringen kürzere Reaktionszeiten, unbegrenzte Incidents, Support rund um
 die Uhr (Plus und Enterprise) und einen breiteren Supportumfang — die
-vollständige Übersicht steht auf der [Preisseite](/de/preise/). Ænix rechnet nicht pro VM, pro CPU oder pro GB
+vollständige Übersicht steht auf der [Preisseite](/de/preise/). Jede Support-Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration). Ænix rechnet nicht pro VM, pro CPU oder pro GB
 ab — die Cozystack-Plattform selbst ist unter Apache 2.0 kostenlos;
 bezahlt werden Projektarbeit, Support und betriebliche Absicherung.
 
@@ -167,6 +167,11 @@ Platform:
 | Marketing / Vertrieb | 5–15 Tsd. € | 60–180 Tsd. € |
 
 **Fixkosten gesamt pro Monat: 44–85 Tsd. € plus 15 Tsd. $ für den Ænix-Support.**
+
+Die Tabelle rechnet mit einem vollständigen eigenen Team für Produkt,
+Plattform und Kundensupport. Der reine Plattformbetrieb ist kleiner: Der
+[ISP-Rechner](/isp-calculator/) setzt dafür etwa 1,3 Vollzeit-Engineers
+bei 10 Nodes und etwa 2,6 bei 40 Nodes an.
 
 Bei 25–50 €/Monat Marge pro Tenant (40–80 € ARPU nach 15–30 € direkten
 Infrastrukturkosten) liegt der Break-even je nach ARPU-Mix und Gehaltsniveau

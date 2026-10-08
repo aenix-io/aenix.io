@@ -12,6 +12,11 @@ this after every quarterly price refresh in the calculators repo:
 
     npm run tco:build && npm run tco:static     # in the calculators checkout
     python3 scripts/sync-tco-calculator.py ../aenix-calculators
+
+To re-apply only the site-side post-processing (JSON-LD clean-up) to the
+already vendored content files, without a calculators checkout:
+
+    python3 scripts/sync-tco-calculator.py --fix-existing
 """
 
 # NOTE: the source repo (aenix-org/calculators) titled this "Cozystack vs 13
@@ -91,6 +96,40 @@ def demote_h1(html: str) -> str:
     return re.sub(r"</h1>", "</h2>", re.sub(r"<h1(\s|>)", r"<h2\1", html))
 
 
+ORG_ID = "https://aenix.io/#org"
+STANDALONE_ORG = re.compile(
+    r'<script type="application/ld\+json">\s*\{\s*"@context":\s*"https://schema.org",\s*'
+    r'"@type":\s*"Organization",[^{}]*\}\s*</script>\s*',
+    re.S,
+)
+INLINE_ORG = re.compile(
+    r'\{\s*"@type":\s*"Organization",\s*"name":\s*"[^"]*",\s*"url":\s*"[^"]*"\s*\}', re.S
+)
+
+
+def fix_jsonld(html: str) -> str:
+    """The generator emits a minimal stand-alone Organization block and an
+    inline publisher Organization. Every page already carries the full
+    Organization node (@id /#org) from layouts/partials/seo, so these copies
+    are a second, conflicting Organization: drop the stand-alone block and
+    point the publisher at the site's node."""
+    html = STANDALONE_ORG.sub("", html)
+    return INLINE_ORG.sub('{ "@id": "' + ORG_ID + '" }', html)
+
+
+def fix_existing() -> int:
+    changed = 0
+    for path in sorted(CONTENT.rglob("*.md")):
+        text = path.read_text()
+        fixed = fix_jsonld(text)
+        if fixed != text:
+            path.write_text(fixed)
+            changed += 1
+            print(f"fixed -> {path.relative_to(SITE)}")
+    print(f"{changed} file(s) changed")
+    return 0
+
+
 def as_markdown_body(html: str) -> str:
     """Hugo refuses text/html content files under the default security policy,
     so the fragment ships inside a .md file. Goldmark passes a raw HTML block
@@ -100,6 +139,8 @@ def as_markdown_body(html: str) -> str:
 
 
 def main() -> int:
+    if sys.argv[1:] == ["--fix-existing"]:
+        return fix_existing()
     if len(sys.argv) != 2:
         print(__doc__)
         return 2
@@ -122,7 +163,7 @@ def main() -> int:
     written = []
     for meta_path in sorted(static.rglob("meta.json")):
         meta = json.loads(meta_path.read_text())
-        body = as_markdown_body(demote_h1(enable_widget((meta_path.parent / "index.html").read_text())))
+        body = as_markdown_body(fix_jsonld(demote_h1(enable_widget((meta_path.parent / "index.html").read_text()))))
         rel = meta_path.parent.relative_to(static)
         if rel == Path("."):
             target, weight = CONTENT / "_index.md", 10

@@ -52,14 +52,14 @@ The private cloud landscape has shifted significantly in the last 3 years. Broad
 The terminology is overloaded. "Private cloud" means either:
 
 - **Private cloud platform** — software you deploy on infrastructure you control. Examples: VMware VCF, Cozystack, OpenStack, OpenShift Virtualization, Proxmox VE.
-- **Private cloud provider** — a vendor that provides dedicated infrastructure (single-tenant) which you consume. Examples: IBM Cloud Private, Oracle dedicated regions, hyperscaler "sovereign" regions, regional cloud providers (regulated enterprise customers (NDA-protected), OVHcloud, Hetzner, etc.).
+- **Private cloud provider** — a vendor that provides dedicated infrastructure (single-tenant) which you consume. Examples: IBM Cloud Private, Oracle dedicated regions, hyperscaler "sovereign" regions, regional cloud providers (OVHcloud, Hetzner, or a regional provider running Ænix Public Cloud Platform).
 
 Both are valid; they answer different questions. This article focuses primarily on platforms (the software layer); providers come up where relevant.
 
 ## Open-source platforms
 
 ### Cozystack
-**License:** Apache 2.0, CNCF Project.
+**Licence:** Apache 2.0, CNCF Project.
 **Architecture:** Kubernetes-native virtualization (KubeVirt) + Cilium and Kube-OVN networking + LINSTOR (DRBD) block storage + SeaweedFS object storage + Tenant CRD multi-tenancy + Cozystack Dashboard self-service.
 **Maintainer:** Ænix (open-source, community-governed).
 **Best for:** Service providers, sovereign-cloud builders, regulated multi-tenant, AI/GPU operators with sustained workloads.
@@ -67,7 +67,7 @@ Both are valid; they answer different questions. This article focuses primarily 
 **Limits:** Newer than OpenStack; smaller community.
 
 ### OpenStack
-**License:** Apache 2.0, OpenInfra Foundation.
+**Licence:** Apache 2.0, OpenInfra Foundation.
 **Architecture:** Nova compute + Neutron network + Cinder block + Swift object + Keystone identity + Horizon UI + many other components.
 **Maintainer:** OpenInfra Foundation; commercial distros from Red Hat, Canonical, Mirantis.
 **Best for:** Large telecom operators, government clouds, OpenStack-fluent teams.
@@ -75,7 +75,7 @@ Both are valid; they answer different questions. This article focuses primarily 
 **Limits:** Operationally complex; harder to find OpenStack engineers in 2026; less Kubernetes-native.
 
 ### OpenShift Virtualization (Red Hat)
-**License:** Red Hat commercial subscription.
+**Licence:** Red Hat commercial subscription.
 **Architecture:** OpenShift Kubernetes + KubeVirt + Red Hat ecosystem.
 **Maintainer:** Red Hat / IBM.
 **Best for:** Existing Red Hat customers, enterprises with Red Hat procurement.
@@ -83,7 +83,7 @@ Both are valid; they answer different questions. This article focuses primarily 
 **Limits:** Subscription pricing; tied to Red Hat / IBM relationship.
 
 ### Proxmox VE
-**License:** AGPLv3 + commercial subscription.
+**Licence:** AGPLv3 + commercial subscription.
 **Architecture:** KVM + LXC + ZFS + Ceph (community).
 **Maintainer:** Proxmox Server Solutions GmbH.
 **Best for:** SMB virtualization, single-tenant, labs.
@@ -91,7 +91,7 @@ Both are valid; they answer different questions. This article focuses primarily 
 **Limits:** Limited multi-tenancy; service catalog beyond VMs requires manual integration.
 
 ### Apache CloudStack
-**License:** Apache 2.0.
+**Licence:** Apache 2.0.
 **Architecture:** Hypervisor-agnostic (XenServer / KVM / VMware), service-provider-oriented.
 **Best for:** Service providers in markets where CloudStack remains established (some EU, MENA, APAC).
 **Strengths:** Service-provider features mature; multi-tenancy native.
@@ -100,35 +100,35 @@ Both are valid; they answer different questions. This article focuses primarily 
 ## Commercial / closed-source platforms
 
 ### VMware (VMware Cloud Foundation)
-**License:** Subscription-only post-Broadcom.
+**Licence:** Subscription-only post-Broadcom.
 **Architecture:** vSphere + vSAN + NSX + vCD + vRealize.
 **Best for:** Existing VMware estates that haven't yet been triggered out by economics.
 **Strengths:** Mature, well-known, extensive ecosystem.
 **Limits:** Subscription pricing increases (2-5× observed); vendor lock-in; sovereignty concerns.
 
 ### Nutanix
-**License:** Subscription, multiple tiers.
+**Licence:** Subscription, multiple tiers.
 **Architecture:** AHV (proprietary KVM-based) + Files + Volumes + Era (databases).
 **Best for:** Existing Nutanix HCI customers, enterprises preferring appliance model.
 **Strengths:** Operationally simple, integrated stack.
 **Limits:** Closed source; appliance lock-in; less flexible than open alternatives.
 
 ### Scale Computing HC3
-**License:** Subscription.
+**Licence:** Subscription.
 **Architecture:** KVM-based hyperconverged appliance.
 **Best for:** ROBO / edge / SMB.
 **Strengths:** Operationally simple.
 **Limits:** Smaller scale ceiling; appliance lock-in.
 
 ### Microsoft Azure Stack HCI
-**License:** Microsoft subscription + per-core fee.
+**Licence:** Microsoft subscription + per-core fee.
 **Architecture:** Hyper-V + Storage Spaces Direct + Azure Arc.
 **Best for:** Microsoft-aligned shops with Azure relationship.
 **Strengths:** Strong Microsoft ecosystem integration.
 **Limits:** Locks into Microsoft licensing economics.
 
 ### Oracle Cloud Native Environment / Oracle Linux Virtualization Manager
-**License:** Subscription / commercial.
+**Licence:** Subscription / commercial.
 **Best for:** Oracle-aligned organizations.
 
 ## Sovereign hyperscaler regions

@@ -1,7 +1,7 @@
 ---
 title: "Fokus auf heute: Wie wir aeman gebaut haben, ein Tagesboard für Entwickler auf Basis von GitHub Projects"
 seo_title: "aeman: Tagesplanung für Entwickler auf GitHub"
-description: "Wie Aenix aeman gebaut hat: ein Open-Source-Tagesboard für Entwickler, das GitHub Projects v2 als einzigen Speicher und eine Kubernetes-artige Watch-API nutzt."
+description: "Wie Ænix aeman gebaut hat: ein Open-Source-Tagesboard für Entwickler, das GitHub Projects v2 als einzigen Speicher und eine Kubernetes-artige Watch-API nutzt."
 date: "2026-07-24"
 author: "Andrei Kvapil"
 type: "article"

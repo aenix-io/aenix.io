@@ -18,7 +18,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A NIS2-aligned platform readiness engagement that maps your cloud architecture against the EU NIS2 Directive (EU 2022/2555) and produces an architecture-level remediation plan."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -200,7 +200,7 @@ Delivered by Ænix engineers with regulator-dialog experience (engineering teams
 
 ## Case studies
 
-Nine deployments are written up on the [case studies page](/case-studies/), in anonymised form where the customer requires it. Reference calls are arranged under NDA where the customer agrees.
+Nine anonymised case studies are published on the [case studies page](/case-studies/), in anonymised form where the customer requires it. Reference calls are arranged under NDA where the customer agrees.
 
 {{< quote-carousel >}}
 
@@ -247,7 +247,7 @@ Nine deployments are written up on the [case studies page](/case-studies/), in a
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix created Cozystack — a CNCF Sandbox project and Certified Kubernetes distribution — and co-maintains it. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.*
+*Ænix created Cozystack — a CNCF Sandbox project and CNCF Certified Kubernetes distribution — and co-maintains it. AENIX s.r.o. holds ISO/IEC 27001:2022 certification.*
 
 <!-- /BLOCK 12 -->
 

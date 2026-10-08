@@ -7,6 +7,7 @@ robots: "noindex, nofollow"
 hide_closing_cta: true
 build:
   list: never
+  render: never
 ---
 
 **Internal page.** Every approved semantic block, numbered. Reference blocks by number when requesting batch page work (e.g. "apply blocks 3 + 7 to all services landings"). Sample copy below is illustrative only.

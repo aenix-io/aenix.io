@@ -16,7 +16,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/cloud-repatriation/
 direct_answer: |
-  **Cloud Repatriation bezeichnet die Verlagerung ausgewählter Workloads aus der Public Cloud (AWS, Azure, GCP) in Private-Cloud-, Hybrid- oder On-Premises-Umgebungen — meist, um die Kosten dauerhafter Workloads zu senken, Datensouveränität und regulatorischen Druck (DORA, NIS2, DSGVO) zu bewältigen oder die Wirtschaftlichkeit von KI und Inferenz in den Griff zu bekommen. Ænix führt ein strukturiertes Repatriation-Projekt als Teil des Platform Readiness Assessment durch. Es liefert ein ehrliches TCO-Modell, ein Ranking jedes Workloads nach „jetzt verlagern / später verlagern / bleiben“, eine Zielarchitektur und eine Cutover-Reihenfolge. Ænix hat Cozystack initiiert, ein CNCF-Sandbox-Projekt unter Apache 2.0, das VMs und Container über eine Kubernetes-API vereint; Ænix empfiehlt es typischerweise als Ziel einer Repatriation. Das Projekt liefern Ingenieure ohne kommerzielle Bindung an einen Hyperscaler.**
+  **Cloud Repatriation bezeichnet die Verlagerung ausgewählter Workloads aus der Public Cloud (AWS, Azure, GCP) in Private-Cloud-, Hybrid- oder On-Premises-Umgebungen — meist, um die Kosten dauerhafter Workloads zu senken, Datensouveränität und regulatorischen Druck (DORA, NIS2, DSGVO) zu bewältigen oder die Wirtschaftlichkeit von KI und Inferenz in den Griff zu bekommen. Ænix führt ein strukturiertes Repatriation-Projekt als Teil des Platform Readiness Assessment durch. Es liefert ein ehrliches TCO-Modell, ein Ranking jedes Workloads nach „jetzt verlagern / später verlagern / bleiben“, eine Zielarchitektur und eine Cutover-Reihenfolge. Ænix hat Cozystack entwickelt, ein CNCF-Sandbox-Projekt unter Apache 2.0, das VMs und Container über eine Kubernetes-API vereint; Ænix empfiehlt es typischerweise als Ziel einer Repatriation. Das Projekt liefern Ingenieure ohne kommerzielle Bindung an einen Hyperscaler.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein strukturiertes Projekt, das ausgewählte Workloads aus der Public Cloud in Private Cloud, Hybrid oder On-Premises verlagert, ohne die Anwendung zu zerbrechen."
@@ -196,7 +196,7 @@ Geliefert von Ænix-Ingenieuren, die Produktionsplattformen für Service-Provide
 
 - **Keine Hyperscaler-Bindung.** Repatriation-Beratung der Big Four ist von deren Hyperscaler-Partnerschaften geprägt. Unsere Empfehlungen sind kommerziell weder an AWS, Azure, GCP noch an einen anderen Anbieter gebunden — wir sagen „in der Public Cloud bleiben“, wenn das die Antwort ist, und „vollständig On-Premises“, wenn das die Antwort ist.
 - **Ingenieure statt Berater.** Die Ingenieure, die das Repatriation-Projekt durchführen, bauen danach die Produktionsplattformen. Die Aufwandsschätzungen im Bericht sind an Arbeit kalibriert, die wir tatsächlich ausgeliefert haben — nicht an Branchen-Benchmarks.
-- **Open-Source-Zielplattform.** Wir haben **[Cozystack](/de/produkte/cozystack/)** initiiert und pflegen es gemeinsam mit Maintainern anderer Unternehmen — eine quelloffene, Kubernetes-native Cloud-Plattform (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution). Wo Cozystack besser zur Zielarchitektur passt als die Alternative, begründet der Bericht das mit konkret benannten architektonischen Eigenschaften. Wo nicht, sagen wir es.
+- **Open-Source-Zielplattform.** Wir haben **[Cozystack](/de/produkte/cozystack/)** entwickelt und pflegen es gemeinsam mit Maintainern anderer Unternehmen — eine quelloffene, Kubernetes-native Cloud-Plattform (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution). Wo Cozystack besser zur Zielarchitektur passt als die Alternative, begründet der Bericht das mit konkret benannten architektonischen Eigenschaften. Wo nicht, sagen wir es.
 
 </div>
 
@@ -284,6 +284,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir führen Repatriation-Projekte und Platform-Engineering-Programme durch.*
+*Ænix hat Cozystack entwickelt — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir führen Repatriation-Projekte und Platform-Engineering-Programme durch.*
 
 <!-- /BLOCK 12 -->

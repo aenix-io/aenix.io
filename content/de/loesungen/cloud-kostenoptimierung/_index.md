@@ -16,7 +16,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/cloud-cost-optimization/
 direct_answer: |
-  **Cloud-Kostenoptimierung bedeutet, Public-Cloud-Ausgaben zu senken: Verschwendung beseitigen, Ressourcen richtig dimensionieren, Commitments nachjustieren und entscheiden, welche Workloads beim Hyperscaler bleiben und welche auf Infrastruktur unter Ihrer Kontrolle gehören. Sie richtet sich an Organisationen mit einer siebenstelligen jährlichen Cloud-Rechnung, dauerhaften und planbaren Workloads und einer Kostenentwicklung, die der Finanzabteilung Sorgen macht. Ænix führt ein strukturiertes, herstellerneutrales Kostenprojekt (14 oder 28 Tage) durch, das ein ehrliches TCO-Modell, ein quantifiziertes Inventar der Kostenlecks, Right-Sizing-Empfehlungen und einen 12-Monats-Ausgabenverlauf liefert. Ænix hat keine Hyperscaler-Partnerschaft, die Empfehlungen werden also nicht von Partnerschaftsökonomie geprägt. Spricht die Rechnung für den Ausstieg aus der Cloud, bietet Cozystack — die quelloffene, Kubernetes-native Plattform, die Ænix initiiert hat und mitpflegt — ein Ziel unter Kundenkontrolle; bei dauerhaften Workloads verbessern sich die Stückkosten typischerweise um 30–60 %.**
+  **Cloud-Kostenoptimierung bedeutet, Public-Cloud-Ausgaben zu senken: Verschwendung beseitigen, Ressourcen richtig dimensionieren, Commitments nachjustieren und entscheiden, welche Workloads beim Hyperscaler bleiben und welche auf Infrastruktur unter Ihrer Kontrolle gehören. Sie richtet sich an Organisationen mit einer siebenstelligen jährlichen Cloud-Rechnung, dauerhaften und planbaren Workloads und einer Kostenentwicklung, die der Finanzabteilung Sorgen macht. Ænix führt ein strukturiertes, herstellerneutrales Kostenprojekt (14 oder 28 Tage) durch, das ein ehrliches TCO-Modell, ein quantifiziertes Inventar der Kostenlecks, Right-Sizing-Empfehlungen und einen 12-Monats-Ausgabenverlauf liefert. Ænix hat keine Hyperscaler-Partnerschaft, die Empfehlungen werden also nicht von Partnerschaftsökonomie geprägt. Spricht die Rechnung für den Ausstieg aus der Cloud, bietet Cozystack — die quelloffene, Kubernetes-native Plattform, die Ænix entwickelt hat und mitpflegt — ein Ziel unter Kundenkontrolle; bei dauerhaften Workloads verbessern sich die Stückkosten typischerweise um 30–60 %.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein strukturiertes Projekt, das beziffert, wo Public-Cloud-Ausgaben versickern, und entscheidet, was in der Cloud behoben und was auf kontrollierte Infrastruktur verlagert wird"
@@ -269,6 +269,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir führen Cloud-Kostenprojekte und Platform-Engineering-Programme durch.*
+*Ænix hat Cozystack entwickelt — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir führen Cloud-Kostenprojekte und Platform-Engineering-Programme durch.*
 
 <!-- /BLOCK 12 -->

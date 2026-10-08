@@ -36,6 +36,10 @@
         <div class="page-hero-cta">
           <a href="{{ .url }}" class="btn btn-primary btn-lg">{{ .text }}</a>
         </div>
+        {{ else }}
+        {{/* Leaf commercial pages (e.g. /tco-calculator/vs-*) get the same
+             first-screen CTA as section landings; the partial decides. */}}
+        {{ partial "hero-cta.html" . }}
         {{ end }}
       </div>
     </section>

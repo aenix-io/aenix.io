@@ -23,7 +23,7 @@ quiz:
         - { text: "Ein gemeinsamer Namespace für alle Schulen", correct: false }
         - { text: "Ein Cozystack-Cluster beim Schulträger, ein Tenant je Schule", correct: true }
         - { text: "Ein eigener Cluster je Schülerin und Schüler", correct: false }
-      explanation: "Cluster auf Schulträgerebene: Cozystack zentral in der Schulträger-IT, ein Tenant CRD je Schule für die Isolation, souverän nach Architektur (Schülerdaten auf eigener Hardware, kundenkontrollierte Schlüssel) und Standardanbindungen an EdTech wie Google Classroom oder Microsoft 365."
+      explanation: "Cluster auf Schulträgerebene: Cozystack zentral in der Schulträger-IT, ein Tenant CRD je Schule für die Isolation, souverän nach Architektur (Schülerdaten auf eigener Hardware, optionale Volume-Verschlüsselung mit einer Passphrase, die der Schulträger verwaltet) und Standardanbindungen an EdTech wie Google Classroom oder Microsoft 365."
     - q: "Was bedeutet der Fallstrick „vendor-led Bildungs-Cloud mit Lock-in“?"
       options:
         - { text: "Ein häufiger Fehler: der Schulträger bindet sich an einen Anbieterstack", correct: true }
@@ -38,10 +38,10 @@ quiz:
       explanation: "Der vierte häufige Fehler ist die Neuarchitektur mitten im Zyklus, ausgelöst durch das Missverhältnis der Budgetzyklen. Schulträger planen über drei bis fünf Jahre; eine Plattformentscheidung, die diesen Horizont nicht trägt, erzwingt genau die teure Umplanung, die der lange Zyklus eigentlich vermeiden soll."
     - q: "Was bringt die Eigenschaft „souverän nach Architektur“ für Schulträger?"
       options:
-        - { text: "Schülerdaten auf eigener Hardware mit kundenkontrollierten Schlüsseln", correct: true }
+        - { text: "Schülerdaten auf eigener Hardware, Verschlüsselungs-Passphrase beim Schulträger", correct: true }
         - { text: "Eine schnellere Bereitstellung neuer Cloud-Umgebungen", correct: false }
         - { text: "Niedrigere Kosten als jede andere Betriebsvariante", correct: false }
-      explanation: "Souverän nach Architektur heißt: Schülerdaten liegen auf der Hardware des Schulträgers, die Verschlüsselungsschlüssel kontrolliert der Schulträger selbst, und in der Plattformschicht entsteht kein Vendor-Lock-in. Das passt für Schulträger mit erhöhtem Datenschutzbedarf oder entsprechenden Beschaffungsvorgaben."
+      explanation: "Souverän nach Architektur heißt: Schülerdaten liegen auf der Hardware des Schulträgers, die Passphrase für die optionale Volume-Verschlüsselung verwaltet der Schulträger selbst, und in der Plattformschicht entsteht kein Vendor-Lock-in. Das passt für Schulträger mit erhöhtem Datenschutzbedarf oder entsprechenden Beschaffungsvorgaben."
 hreflang_en: /blog/2026/05/k12-school-district-cloud-infrastructure/
 ---
 

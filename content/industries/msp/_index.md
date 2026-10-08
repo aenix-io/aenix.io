@@ -13,7 +13,7 @@ quick_facts:
     value: "A white-label, multi-tenant cloud platform that lets MSPs sell branded cloud services on open-source Cozystack instead of reselling a hyperscaler."
   - label: "Who it's for"
     value: "Mid-sized and regional MSPs, system integrators, specialty MSPs in regulated verticals, and reseller-channel partners."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"

@@ -28,9 +28,9 @@ quiz:
     - q: "For a typical 100-VM repatriation, how long does end-to-end elapsed time usually take from \"we should look at this\" to \"we are running on the destination platform\"?"
       options:
         - { text: "4–8 weeks", correct: false }
-        - { text: "8–14 months", correct: true }
+        - { text: "8–12 months", correct: true }
         - { text: "24–36 months", correct: false }
-      explanation: "For an org with ~100 VMs and a moderate cloud bill: a 14- or 28-day assessment, a destination platform build that overlaps with the first cohorts, and 6–18 months of workload migration in cohorts. Total elapsed: 8–14 months."
+      explanation: "For an org with ~100 VMs and a moderate cloud bill: a 14- or 28-day assessment, a destination platform build that overlaps with the first cohorts, and workload migration in cohorts. Total elapsed: about 8–12 months."
     - q: "Which of these is NOT on the article's list of when repatriation is the wrong answer?"
       options:
         - { text: "You have a small IT team running a handful of services", correct: false }
@@ -99,7 +99,7 @@ A honest TCO model captures all of these and compares them to a realistic destin
 - Backup and DR infrastructure
 - Identity, observability, and platform tooling
 - Platform-engineering capacity needed to operate the destination
-- Software licenses where applicable
+- Software licences where applicable
 
 The honest model usually shows on-prem economics 30-60% better for steady-state workloads, and 0-20% worse for highly elastic workloads. The interesting question is which workloads are which.
 
@@ -153,7 +153,7 @@ The cutover plan respects three constraints:
 2. **Data gravity.** Workloads that share data move together, or with explicit cross-cloud data flow during transition.
 3. **Risk concentration.** No single cohort moves more than your operational capacity to manage rollback.
 
-A typical 100-VM repatriation runs as 4-8 cohorts over 6-12 months. Each cohort is parallel-run in cloud and on-prem until validated by the application owner.
+A typical 100-VM repatriation runs as 4-8 cohorts within a programme of about 8-12 months. Each cohort is parallel-run in cloud and on-prem until validated by the application owner.
 
 **Deliverable:** cutover plan with cohort definitions, dates, dependencies, rollback paths, and signoff criteria.
 
@@ -220,10 +220,10 @@ A typical repatriation, end-to-end:
 
 - **14 or 28 days:** assessment phase ([Platform Readiness Assessment](/services/platform-readiness-assessment/), fixed price, with cost-and-cloud-spend workstream emphasis).
 - **3-12 months, overlapping with the first cohorts:** destination platform build — greenfield infrastructure, base services, observability, identity, IaC and GitOps tooling, runbooks. The platform is usable for the first cohort well before the build is complete.
-- **6-18 months:** workload migration in cohorts. Earliest cohorts move quickly; later cohorts respect commitment ladders.
+- **The bulk of the programme:** workload migration in cohorts. Earliest cohorts move quickly; later cohorts respect commitment ladders. For ~1,000 VMs, expect 18-24 months in total.
 - **Ongoing:** platform operation and continuous optimization. The post-repatriation platform is a long-term asset that compounds value.
 
-For an organization with 100 VMs and a moderate cloud bill, total elapsed time from "we should look at this" to "we are running on the destination platform" is 8-14 months.
+For an organization with 100 VMs and a moderate cloud bill, total elapsed time from "we should look at this" to "we are running on the destination platform" is about 8-12 months.
 
 ## Where to start
 

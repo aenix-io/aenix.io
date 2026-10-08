@@ -17,7 +17,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /alternatives/openstack-alternative/
 direct_answer: |
-  **Eine OpenStack-Alternative ist eine Cloud-Plattform, die die Open-Source- und Mandantenfähigkeits-Garantien von OpenStack mit deutlich schlankerem Betrieb liefert. Cozystack ist eine Kubernetes-native Alternative unter Apache 2.0 für Service-Provider, regulierte mandantenfähige Betreiber und moderne Greenfield-Projekte, die die 50 bis 100+ Services von OpenStack und dessen schrumpfenden Pool an Fachkräften nicht mehr brauchen. Cozystack betreibt virtuelle Maschinen (KubeVirt) und Container über eine Kubernetes-API, nutzt Cilium (eBPF) für das Networking, LINSTOR/DRBD für Storage und eine Tenant-CRD für die Mandantenfähigkeit. Ænix hat Cozystack initiiert, pflegt es mit und bietet die Ænix Public Cloud Platform, kommerziellen Support sowie Migrations- und Beratungsleistungen für Organisationen, die von OpenStack auf ein Kubernetes-natives Fundament wechseln.**
+  **Eine OpenStack-Alternative ist eine Cloud-Plattform, die die Open-Source- und Mandantenfähigkeits-Garantien von OpenStack mit deutlich schlankerem Betrieb liefert. Cozystack ist eine Kubernetes-native Alternative unter Apache 2.0 für Service-Provider, regulierte mandantenfähige Betreiber und moderne Greenfield-Projekte, die die 50 bis 100+ Services von OpenStack und dessen schrumpfenden Pool an Fachkräften nicht mehr brauchen. Cozystack betreibt virtuelle Maschinen (KubeVirt) und Container über eine Kubernetes-API, nutzt Cilium (eBPF) für das Networking, LINSTOR/DRBD für Storage und eine Tenant-CRD für die Mandantenfähigkeit. Ænix hat Cozystack entwickelt, pflegt es mit und bietet die Ænix Public Cloud Platform, kommerziellen Support sowie Migrations- und Beratungsleistungen für Organisationen, die von OpenStack auf ein Kubernetes-natives Fundament wechseln.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine Kubernetes-native Plattform unter Apache 2.0, die den Stack aus vielen OpenStack-Komponenten durch eine kleinere Zahl von Operatoren ersetzt und die Open-Source- und Mandantenfähigkeits-Garantien beibehält."
@@ -45,7 +45,7 @@ faq:
   - q: "Beide stehen unter Apache 2.0. Warum dann überhaupt migrieren?"
     a: "Die Lizenz ist nicht der Grund. Organisationen migrieren, weil OpenStack-Fachkräfte knapper werden, während Kubernetes-Know-how reichlich vorhanden ist, weil ein Betrieb mit 50 bis 100+ Services bei einem überwiegend modernen Workload-Portfolio mehr kosten kann, als er bringt, und weil ein Kubernetes-natives Fundament VMs und Container über eine API betreibt."
   - q: "Bietet Ænix kommerzielle Unterstützung für die Migration?"
-    a: "Ja. Ænix hat Cozystack initiiert und bietet die Ænix Public Cloud Platform sowie Private-Cloud-Beratung und Migrationsleistungen an; Migrationsarbeit wird nach einer Umfangsklärung angeboten. Die Support-Stufen beginnen bei Basic mit 1.250 USD pro 10 Nodes und Monat, mit den Optionen Standard, Plus und Enterprise."
+    a: "Ja. Ænix hat Cozystack entwickelt und bietet die Ænix Public Cloud Platform sowie Private-Cloud-Beratung und Migrationsleistungen an; Migrationsarbeit wird nach einer Umfangsklärung angeboten. Die Support-Stufen beginnen bei Basic mit 1.250 USD pro 10 Nodes und Monat, mit den Optionen Standard, Plus und Enterprise."
 ---
 
 **OpenStack ist ausgereift, breit aufgestellt und in Telco- und Behördengrößenordnungen bewährt. Gut betreiben lässt es sich aber nur mit erheblicher operativer Expertise, und OpenStack-Engineers zu finden ist 2026 schwerer als vor fünf Jahren. Viele Organisationen fragen sich inzwischen, ob der Betriebsaufwand zum tatsächlichen Workload-Portfolio passt und ob eine Kubernetes-native Alternative die richtige nächste Plattform ist.**
@@ -132,4 +132,4 @@ Typische Migration: 4 bis 12 Monate für eine mittelgroße Umgebung.
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*

@@ -114,8 +114,6 @@ Kunden aus dem Finanzsektor werden nicht genannt; zwei Projekte sind in anonymis
 
 Referenzgespräche lassen sich unter NDA vereinbaren. [Alle Fallstudien →](/de/case-studies/)
 
-{{< quote-carousel >}}
-
 ---
 
 ## Warum Ænix für Finanzdienstleistungen
@@ -162,4 +160,4 @@ Oder lesen Sie weiter:
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes, OpenSSF Best Practices) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI. Die AENIX s.r.o. ist nach [ISO/IEC 27001:2022](/de/compliance/iso-27001/) zertifiziert.*
+*Ænix hat Cozystack entwickelt (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI. Die AENIX s.r.o. ist nach [ISO/IEC 27001:2022](/de/compliance/iso-27001/) zertifiziert.*

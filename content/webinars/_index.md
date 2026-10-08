@@ -1,7 +1,7 @@
 ---
 title: "Webinars"
 seo_title: "Ænix webinars with the Cozystack maintainers"
-description: "Past Aenix webinars with the Cozystack maintainers: public cloud, GPU clouds, and distributed clusters that survive a datacenter outage."
+description: "Past Ænix webinars with the Cozystack maintainers: public cloud, GPU clouds, and distributed clusters that survive a datacenter outage."
 hero_subtitle: "Sessions with the Cozystack maintainers"
 language: "en"
 # The German version was withdrawn; its URL redirects here.

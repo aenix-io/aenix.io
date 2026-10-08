@@ -11,6 +11,14 @@
     calculator_app: /cloud-calculator-app/     # path to the vendored build
     bodyClass: calc-app-page
     indexable: true                            # opt in; thin app pages stay out
+    hide_layout_cta: true                      # optional; drop the primary
+                                               # button above the iframe
+
+  The primary "review your numbers" button above the iframe is also skipped
+  automatically when the page body already renders its own CTA row
+  (`cta-primary`), so the first screen never shows two rows with the same
+  action. The secondary links (all calculators, full-screen) stay as a
+  plain text line in that case.
 */}}
 {{/* An iframe host page is thin content by nature — indexable only where the
      page carries its own copy and answers a real query on its own. */}}
@@ -19,7 +27,9 @@
   body.calc-app-page,
   body.calc-app-page main#content { background: #0B0F1A; }
   body.calc-app-page main#content { padding: 0; margin: 0; }
-  .calc-app-intro { padding: 1.25rem 0 .9rem; }
+  .calc-app-intro { padding-top: 1.25rem; padding-bottom: .9rem; }
+  .calc-app-links { margin: .5rem 0 0; font-size: .9rem; }
+  .calc-app-links a { margin-right: 1.25rem; white-space: nowrap; }
   .calc-app-frame {
     display: block;
     width: 100%;
@@ -38,6 +48,18 @@
   {{ with .Description }}<p class="page-hero-subtitle" style="margin:0 0 .75rem">{{ . }}</p>{{ end }}
   {{ with .Content }}<div class="calc-app-copy">{{ . }}</div>{{ end }}
   {{- $contact := cond $de "/de/kontakt/" "/contact/" }}
+  {{- $ownCta := or .Params.hide_layout_cta (in (string .Content) "cta-primary") }}
+  {{- if $ownCta }}
+  <p class="calc-app-links">
+    {{- if $de }}
+    <a href="/de/roi-rechner/">Alle ROI- &amp; TCO-Rechner</a>
+    <a href="{{ $app }}" target="_blank" rel="noopener">Im Vollbild öffnen ↗</a>
+    {{- else }}
+    <a href="/roi-calculator/">All ROI &amp; TCO calculators</a>
+    <a href="{{ $app }}" target="_blank" rel="noopener">Open full-screen ↗</a>
+    {{- end }}
+  </p>
+  {{- else }}
   <div class="cta-row calc-app-actions" style="margin:.25rem 0 0">
     {{- if $de }}
     <a class="cta-primary" href="{{ $contact }}" data-cta="calculator">Ergebnis mit einem Ingenieur besprechen</a>
@@ -49,6 +71,7 @@
     <a class="cta-secondary" href="{{ $app }}" target="_blank" rel="noopener">Open full-screen ↗</a>
     {{- end }}
   </div>
+  {{- end }}
 </div>
 <iframe class="calc-app-frame" src="{{ $app }}" title="{{ .Title }}" data-calculator="{{ $app }}"
         loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>

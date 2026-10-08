@@ -24,12 +24,12 @@ quiz:
         - { text: "Erst nach mehreren Jahren Eigenentwicklung", correct: false }
         - { text: "Mehr als fünf Jahre", correct: false }
       explanation: "Nach dem Assessment (14 oder 28 Tage) ist die Plattform über den produktisierten Installer wenige Wochen nach Bereitstellung der Hardware live. Beta-Kohorte, eingeschränkte Verfügbarkeit und allgemeine Verfügbarkeit folgen in dem Tempo, das Vertrieb und Betrieb des Anbieters tragen."
-    - q: "Wie groß ist das typische Betriebsteam eines mittelgroßen Hosting-Anbieters nach dem Start?"
+    - q: "Wie setzt der Ænix-Rechner den Personalbedarf für den Plattformbetrieb an?"
       options:
-        - { text: "Eine einzelne Person", correct: false }
-        - { text: "3–7 Engineers", correct: true }
+        - { text: "Eine einzelne Person, unabhängig von der Größe", correct: false }
+        - { text: "Etwa 1,3 Vollzeit-Engineers bei 10 Nodes, etwa 2,6 bei 40 Nodes", correct: true }
         - { text: "Mehr als 50 Engineers", correct: false }
-      explanation: "Mittelgroßer Hosting-Anbieter mit 1.000 bis 10.000 Kunden: typischerweise 3–7 Engineers im Betrieb nach dem Start. Der Kundenpreis liegt üblicherweise 30–50 Prozent über den reinen Plattformkosten, der Break-even bei den ersten 50 bis 100 zahlenden Kunden."
+      explanation: "Der Rechner modelliert den Betrieb in Engineer-Tagen pro Node: etwa 1,3 Vollzeit-Engineers bei 10 Nodes und etwa 2,6 bei 40 Nodes. Eine Rufbereitschaft rund um die Uhr braucht mehr Personal — oder die 24×7-Abdeckung der Stufe Plus. Der Kundenpreis liegt üblicherweise 30–50 Prozent über den reinen Plattformkosten, der Break-even bei den ersten 50 bis 100 zahlenden Kunden."
     - q: "Was ist das architektonische Ziel der Modernisierung?"
       options:
         - { text: "Eine Kubernetes-native Multi-Mandanten-Plattform mit Self-Service-Portal", correct: true }
@@ -77,7 +77,7 @@ Die Plattform ist in Wochen betriebsbereit; wann die allgemeine Verfügbarkeit f
 Mittelgroßer Hosting-Anbieter (1.000-10.000 Kunden):
 - Plattform-Investition: Ænix-Subskription + Cozystack-Aufbau + WHMCS-Integration (proprietäres Ænix-Modul)
 - Hardware: bestehende oder neue Compute, Storage, Netzwerk
-- Betriebsteam: 3-7 Engineers post-Launch
+- Betriebsteam: laut Rechner etwa 1,3 Vollzeit-Engineers bei 10 Nodes und etwa 2,6 bei 40 Nodes; eine Rufbereitschaft rund um die Uhr braucht mehr Personal oder die 24×7-Abdeckung der Stufe Plus
 - Kunden-Pricing: typisch 30-50% über Plattform-Rohkosten
 
 Break-even: erste 50-100 zahlende Kunden.

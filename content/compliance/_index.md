@@ -26,7 +26,7 @@ quick_facts:
   - label: "Certifications held"
     value: "AENIX s.r.o. holds ISO/IEC 27001:2022 for its information security management system (certificate № SIC.MS.008.ISO/IEC27001.5719, valid through 26 February 2027). There is no SOC 2 report, and no platform can hold a PCI DSS or GDPR certification. Cozystack is a CNCF Certified Kubernetes distribution, a conformance mark that says nothing about security."
   - label: "Conformance"
-    value: "Tenant Kubernetes clusters pass the CNCF conformance suite in full on Kubernetes v1.31 through v1.35; Cozystack v1.6.1 is listed as a Certified Kubernetes distribution for v1.34 and v1.35."
+    value: "Tenant Kubernetes clusters pass the CNCF conformance suite in full on Kubernetes v1.31 through v1.35; Cozystack v1.6.1 is listed as a CNCF Certified Kubernetes distribution for v1.34 and v1.35."
   - label: "CIS Benchmark"
     value: "54 pass, 24 fail, 53 warn on the management cluster — with every failure sorted into deviation, control met otherwise, or not applicable."
   - label: "AI conformance"

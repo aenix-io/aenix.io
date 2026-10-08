@@ -24,7 +24,7 @@ quiz:
         - { text: "One shared namespace for all tenants", correct: false }
         - { text: "Multi-tier nested Tenant CRD model", correct: true }
         - { text: "One dedicated cluster per end customer", correct: false }
-      explanation: "Multi-tier Tenant CRD: Aenix tenant → MSP tenant → MSP customer tenant. Per-tier isolation in RBAC, quotas, observability scope, billing. The nesting is what makes the reseller model work cleanly."
+      explanation: "Multi-tier Tenant CRD: Ænix tenant → MSP tenant → MSP customer tenant. Per-tier isolation in RBAC, quotas, observability scope, billing. The nesting is what makes the reseller model work cleanly."
     - q: "Typical customer pricing markup over raw platform cost?"
       options:
         - { text: "5-10% over platform cost", correct: false }

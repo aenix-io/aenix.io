@@ -6,7 +6,7 @@ import sys
 from weasyprint import HTML, CSS
 
 BUILD = pathlib.Path(__file__).resolve().parent
-OUT = pathlib.Path("/Users/tym83/projects/aenix.io/static/downloads")
+OUT = BUILD.parent.parent / "static" / "downloads"
 
 CSS_TEXT = (BUILD / "checklist.css").read_text(encoding="utf-8")
 

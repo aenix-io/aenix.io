@@ -66,7 +66,7 @@ related_pages:
       </tr>
     </tbody>
   </table>
-  <p class="footnote">* Cozystack total includes the one-time migration from Virtuozzo Hybrid Infrastructure (a fixed setup plus a marginal $/VM — owner estimate, Ænix field data). Estimates only — not a quote.</p>
+  <p class="footnote">* Cozystack total includes the one-time migration from Virtuozzo Hybrid Infrastructure (a fixed setup plus a marginal $/VM — an indicative figure from the calculator, based on Ænix field data). Estimates only — not a quote; the final quote follows scoping.</p>
   <h2>Break-even</h2>
   <p>Cozystack becomes cheaper than Virtuozzo Hybrid Infrastructure when Virtuozzo Hybrid Infrastructure $/core/yr exceeds $9.531 (current: $75) — it already does at the current value. One-time migration costs pay back in month 1.</p>
   <h2>Key facts</h2>
@@ -79,14 +79,14 @@ related_pages:
     <li>Hard vendor-ecosystem dependencies (ISV certifications, existing tooling and runbooks) that outweigh the cost delta.</li>
   </ul>
   <h2>How this is calculated</h2>
-  <p>Three cost articles — software (licenses + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; an internal sizing chain (CPU oversubscription 3:1, RAM target 85%, per-platform storage replication, N+1 HA headroom) only produces the node/core/socket counters that licenses bill against. Renewal uplifts apply only after a real renewal event inside the horizon. Default pricing basis is realized (typical negotiated) — conservative against our own headline. Every default carries a source, date and source nature; owner estimates (migration setup and $/VM, personnel days) are labeled as Ænix field data. <a href="/tco-calculator/methodology/">Full methodology, formulas and the complete source list</a>.</p>
+  <p>Three cost articles — software (licences + vendor support), one-time migration and personnel. Hardware and facilities are identical on both sides and excluded; an internal sizing chain (CPU oversubscription 3:1, RAM target 85%, per-platform storage replication, N+1 HA headroom) only produces the node/core/socket counters that licences bill against. Renewal uplifts apply only after a real renewal event inside the horizon. Default pricing basis is realized (typical negotiated) — conservative against our own headline. Every default carries a source, date and source nature; Ænix estimates (migration setup and $/VM, personnel days) are labeled as Ænix field data. <a href="/tco-calculator/methodology/">Full methodology, formulas and the complete source list</a>.</p>
   <h2>Frequently asked questions</h2>
   <h3>How much does Virtuozzo Hybrid Infrastructure cost for 200 VMs over 5 years?</h3>
-  <p>At default assumptions (EU region, typical negotiated prices, Q3 2026) the model puts Virtuozzo Hybrid Infrastructure at $861,429 over 5 years across the three cost articles: software (licenses + vendor support), migration (one-time, target platform only) and personnel (a days-per-month staffing model).</p>
+  <p>At default assumptions (EU region, typical negotiated prices, Q3 2026) the model puts Virtuozzo Hybrid Infrastructure at $861,429 over 5 years across the three cost articles: software (licences + vendor support), migration (one-time, target platform only) and personnel (a days-per-month staffing model).</p>
   <h3>Is Cozystack cheaper than Virtuozzo Hybrid Infrastructure?</h3>
   <p>At 50 VMs: Cozystack is $158,361 cheaper (53%). At 200 VMs: Cozystack is $518,513 cheaper (60%). At 1000 VMs: Cozystack is $1,968,988 cheaper (57%). Cozystack becomes cheaper than Virtuozzo Hybrid Infrastructure when Virtuozzo Hybrid Infrastructure $/core/yr exceeds $9.531 (current: $75) — it already does at the current value.</p>
   <h3>What does migration from Virtuozzo Hybrid Infrastructure to Cozystack cost?</h3>
-  <p>For 200 VMs the model estimates $36,000 one-time: $8,000 of fixed setup — discovery, standing up the target, cutover design, runbook — plus 200 × $140/VM marginal (owner estimate — Ænix field data: 50 VMs ≈ $15K total). Most of a small migration is the setup, which is why cost does not scale with the estate. Professional services or training can be added via the &quot;migration extras&quot; input (default $0). One-time migration costs pay back in month 1.</p>
+  <p>For 200 VMs the model estimates $36,000 one-time: $8,000 of fixed setup — discovery, standing up the target, cutover design, runbook — plus 200 × $140/VM marginal — indicative figures from the calculator, anchored on Ænix field data (50 VMs ≈ $15K total); the final quote follows scoping. Most of a small migration is the setup, which is why cost does not scale with the estate. Professional services or training can be added via the &quot;migration extras&quot; input (default $0). One-time migration costs pay back in month 1.</p>
   <p><a href="/tco-calculator/">All 10 platform comparisons</a> · <a href="/tco-calculator/methodology/">Methodology</a></p>
 </article>
 <script type="application/ld+json">
@@ -103,11 +103,7 @@ related_pages:
     "priceCurrency": "USD"
   },
   "dateModified": "2026-08-22",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Ænix",
-    "url": "https://aenix.io/"
-  }
+  "publisher": { "@id": "https://aenix.io/#org" }
 }
 </script>
 <script type="application/ld+json">
@@ -134,13 +130,5 @@ related_pages:
       "item": "https://aenix.io/tco-calculator/vs-virtuozzo/"
     }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Ænix",
-  "url": "https://aenix.io/"
 }
 </script>

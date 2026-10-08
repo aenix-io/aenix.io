@@ -167,4 +167,4 @@ Zur Plattformentscheidung dahinter siehe **[OpenStack-Alternative](/de/alternati
 
 ---
 
-*Ænix hat Cozystack initiiert (ein CNCF-Sandbox-Projekt, Apache 2.0) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat Cozystack entwickelt (ein CNCF-Sandbox-Projekt, Apache 2.0) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

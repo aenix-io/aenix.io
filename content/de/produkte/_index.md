@@ -10,7 +10,7 @@ secondary_keywords: ["cozystack kommerzielle plattform", "kubernetes cloud platt
 images: ["img/og/products.jpg"]
 related_pages: ["/de/produkte/public-cloud-platform/", "/de/produkte/private-cloud-platform/", "/de/produkte/ai-platform/", "/de/produkte/cozystack-enterprise-support/", "/de/produkte/whmcs-integration/"]
 direct_answer: |
-  **Ænix verkauft drei Cloud-Plattformen und zwei ergänzende Produkte, alle aufgebaut auf Cozystack — dem CNCF-Projekt unter Apache 2.0, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Die Ænix Public Cloud Platform richtet sich an Organisationen, die Cloud-Kapazität verkaufen — Hosting-Anbieter, MSPs, Telcos und nationale Betreiber —, mit dem Ænix-Billing-System, der WHMCS-Integration und einem Kundenportal in Ihrem Branding. Die Ænix Private Cloud Platform richtet sich an regulierte Organisationen, die Cloud für sich selbst betreiben: an DORA und NIS2 ausgerichtete Architektur, Verschlüsselung und Audit-Logging, die gemeinsam mit Ihnen ausgelegt werden, und eine Developer-Self-Service-Schicht. Die Ænix AI Platform bringt mandantenfähiges GPU-Scheduling, Model Serving und Vektordatenbanken für Inferenz und Fine-Tuning auf eigener Hardware. Daneben bietet Ænix Enterprise-Support für selbst betriebenes Cozystack und eine WHMCS-Integration für Hoster. Die drei Plattformen sind eine Engine mit unterschiedlich zugeschalteten Oberflächen; sie zu kombinieren ist eine Konfigurationsentscheidung, keine zweite Beschaffung.**
+  **Ænix verkauft drei Cloud-Plattformen und zwei ergänzende Produkte, alle aufgebaut auf Cozystack — dem CNCF-Projekt unter Apache 2.0, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Die Ænix Public Cloud Platform richtet sich an Organisationen, die Cloud-Kapazität verkaufen — Hosting-Anbieter, MSPs, Telcos und nationale Betreiber —, mit dem Ænix-Billing-System, der WHMCS-Integration und einem Kundenportal in Ihrem Branding. Die Ænix Private Cloud Platform richtet sich an regulierte Organisationen, die Cloud für sich selbst betreiben: an DORA und NIS2 ausgerichtete Architektur, Verschlüsselung und Audit-Logging, die gemeinsam mit Ihnen ausgelegt werden, und eine Developer-Self-Service-Schicht. Die Ænix AI Platform bringt mandantenfähiges GPU-Scheduling, Model Serving und Vektordatenbanken für Inferenz und Fine-Tuning auf eigener Hardware. Daneben bietet Ænix Enterprise-Support für selbst betriebenes Cozystack und eine WHMCS-Integration für Hoster. Die drei Plattformen sind eine Engine mit unterschiedlich zugeschalteten Oberflächen; sie zu kombinieren ist eine Konfigurationsentscheidung, keine zweite Beschaffung.**
 quick_facts:
   - label: "Wie Sie wählen"
     value: "Danach, wer die Kapazität verbraucht: Kunden, die nicht Sie selbst sind (Public Cloud), die eigenen Fachbereiche (Private Cloud) oder KI- und GPU-Workloads (AI Platform)."
@@ -30,7 +30,7 @@ faq:
   - q: "Schließt die Wahl einer Plattform die anderen aus?"
     a: "Nein — und das ist das häufigste Missverständnis der Produktlinie. Die drei Plattformen sind dieselbe Cozystack-Engine mit unterschiedlich zugeschalteten Oberflächen, unter einer gemeinsamen Control Plane. Die AI Platform mit Private-Cloud-Funktionen zu betreiben oder einem internen Bestand später eine kommerzielle Billing-Schicht hinzuzufügen, ist eine Konfigurationsentscheidung auf der Plattform, die Sie ohnehin betreiben — keine Migration, keine zweite Installation, keine zweite Beschaffung."
   - q: "Was ist der Unterschied zwischen Cozystack und den Ænix-Plattformen?"
-    a: "Cozystack ist die Open-Source-Engine: Kubernetes-native Mandantenfähigkeit, KubeVirt-VMs und Container über eine gemeinsame API, Cilium-Networking, replizierter Storage, Managed Databases. Es steht unter Apache 2.0, und Sie können es dauerhaft selbst betreiben, ohne uns etwas zu zahlen. Die Ænix-Plattformen ergänzen, was ein Geschäftsbetrieb um diese Engine herum braucht — proprietäre Module wie das Billing-System und die WHMCS-Integration, Compliance-Architektur, Migrationsprojekte, SLA und die Engineers, die das Projekt pflegen. Wenn Sie die Engine und einen Supportvertrag wollen, aber nichts von der kommerziellen Schicht, ist das der Enterprise-Support für Cozystack."
+    a: "Cozystack ist die Open-Source-Engine: Kubernetes-native Mandantenfähigkeit, KubeVirt-VMs und Container über eine gemeinsame API, Cilium-Networking, replizierter Storage, Managed Databases. Es steht unter Apache 2.0, und Sie können es dauerhaft selbst betreiben, ohne uns etwas zu zahlen. Die Ænix-Plattformen ergänzen, was ein Geschäftsbetrieb um diese Engine herum braucht — proprietäre Module wie das Billing-System und die WHMCS-Integration, Compliance-Architektur, Migrationsprojekte, SLA und die Engineers, die das Projekt pflegen. Wenn Sie die Engine selbst betreiben und die Maintainer mit SLA erreichen wollen, ist das der Enterprise-Support für Cozystack: dasselbe Abonnement wie bei der Public Cloud Platform, bei dem Sie die kommerziellen Module einfach ungenutzt lassen."
   - q: "Können wir klein anfangen und wachsen?"
     a: "Ja, und der Wachstumspfad ist bewusst kein Replatforming. Ein Anbieter, der in Provider-Größe mit der Preisliste einsteigt und zum nationalen Multi-Region-Betreiber wächst, schaltet Multi-Region zu und behält Portal, Billing und Mandanten. Ein Unternehmen, das mit einer regulierten Private Cloud beginnt und später GPU-Mandanten will, ergänzt sie auf demselben Fundament, innerhalb der Mandantengrenze, die der Prüfer bereits begutachtet hat."
   - q: "Gibt es einen Vendor-Lock-in?"
@@ -70,7 +70,7 @@ Nichts in dieser Linie ist eine Sackgasse. In Provider-Größe mit der Preislist
 
 **Für alle, die Cloud verkaufen** — Hosting-Anbieter, MSPs und regionale Clouds auf der einen Seite; Telcos, nationale Betreiber und Banken mit kommerziellem Cloud-Angebot auf der anderen.
 
-Schlüsselfertige Cloud-in-a-Box: vollständiges Billing im Back- und Frontend, WHMCS-Integration, ein Kundenportal in Ihrem Branding, Zahlungsabwicklung, Sperren und Suspendieren von Mandanten sowie Assistenten zum Anlegen von VMs, Kubernetes, Managed Databases, S3 und GPU. Multi-Region-fähig, und sie läuft neben einer bestehenden VMware- oder OpenStack-Umgebung, während Sie migrieren.
+Ein komplettes Public-Cloud-Produkt für Hosting-Anbieter: vollständiges Billing im Back- und Frontend, WHMCS-Integration, ein Kundenportal in Ihrem Branding, Zahlungsabwicklung, Sperren und Suspendieren von Mandanten sowie Assistenten zum Anlegen von VMs, Kubernetes, Managed Databases, S3 und GPU. Multi-Region-fähig, und sie läuft neben einer bestehenden VMware- oder OpenStack-Umgebung, während Sie migrieren.
 
 Ab 1.250 USD pro 10 Nodes und Monat in Provider-Größe, live innerhalb weniger Wochen, sobald die Hardware bereitsteht; Multi-Region-Programme für Betreiber per RFP.
 
@@ -90,7 +90,7 @@ Angebot per RFP: 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach
 
 **Für Teams, die KI auf eigener Hardware betreiben** — KI-native Organisationen mit großem Volumen, regulierte KI-Deployments, GPU-intensive Produktunternehmen und Anbieter, die GPU-as-a-Service verkaufen.
 
-Mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken, Object Storage und Service-APIs, auf Wunsch als Air-Gap-Deployment. NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough an VMs und anteilige Nutzung über HAMi. Cozystack ist in das Programm CNCF Kubernetes AI Conformance aufgenommen.
+Mandantenfähiges GPU-Scheduling, Model Serving, Vektordatenbanken, Object Storage und Service-APIs, auf Wunsch als Air-Gap-Deployment. NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator: Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz) und fraktionierte Freigabe über HAMi; MIG und Time-Slicing stehen auf der Roadmap. Cozystack ist in das Programm CNCF Kubernetes AI Conformance aufgenommen.
 
 Angebot per RFP: 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach Umfang.
 
@@ -100,9 +100,9 @@ Angebot per RFP: 14 oder 28 Tage Assessment, danach 3–12 Monate Aufbau je nach
 
 ## Enterprise-Support für Cozystack
 
-**Für Teams, die Open-Source-Cozystack selbst betreiben** und die Engineers, die es pflegen, auf Abruf haben wollen — ohne die kommerzielle Portal- und Billing-Schicht.
+**Für Teams, die Open-Source-Cozystack selbst betreiben** und die Engineers, die es pflegen, auf Abruf haben wollen.
 
-Support mit SLA direkt von den Maintainern, nach den veröffentlichten Stufen ab 1.250 USD pro 10 physische Nodes und Monat — dieselben Stufen wie für Abonnements der Public Cloud Platform. Der übliche Einstieg für Teams auf Hetzner, OVH oder gemietetem Bare Metal.
+Support mit SLA direkt von den Maintainern, nach den veröffentlichten Stufen ab 1.250 USD pro 10 physische Nodes und Monat. Jede Support-Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration). Die Preisliste ist das Abonnement der Ænix Public Cloud Platform; ein Team, das Cozystack selbst betreibt, schließt dasselbe Abonnement ab und lässt die kommerziellen Module einfach ungenutzt. Der übliche Einstieg für Teams auf Hetzner, OVH oder gemietetem Bare Metal.
 
 [Enterprise-Support für Cozystack →](/de/produkte/cozystack-enterprise-support/)
 
@@ -116,7 +116,7 @@ Support mit SLA direkt von den Maintainern, nach den veröffentlichten Stufen ab
 
 ## Die Engine darunter
 
-All das läuft auf **[Cozystack](/de/produkte/cozystack/)** — der Open-Source-Cloud-Plattform, die Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt, und einem CNCF-Projekt (Sandbox seit Februar 2025; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung). Apache 2.0, keine Gebühren pro CPU oder Core.
+All das läuft auf **[Cozystack](/de/produkte/cozystack/)** — der Open-Source-Cloud-Plattform, die Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt, und einem CNCF-Projekt (Sandbox seit Februar 2025; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung). Apache 2.0, keine Gebühren pro CPU oder Core.
 
 Das ist nicht nur eine Frage der Haltung, sondern ein kommerzielles Argument: Wir können die Engine nicht zurückziehen. Endet die Geschäftsbeziehung, betreiben Sie die Open-Source-Plattform auf derselben Hardware weiter; die proprietären Ænix-Module und der Support enden.
 

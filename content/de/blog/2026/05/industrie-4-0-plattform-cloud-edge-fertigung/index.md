@@ -31,7 +31,7 @@ quiz:
         - { text: "Konstruktionsdaten und Prozessspezifikationen sind Wettbewerbsvorteile", correct: true }
         - { text: "Gesetze (EU AI Act, NIS2) schreiben Souveränität für geistiges Eigentum vor", correct: false }
         - { text: "Industriekunden bevorzugen das aus langjähriger Gewohnheit", correct: false }
-      explanation: "Industrie-IP — Konstruktionsdaten, Rezepturen, Prozessspezifikationen — stellt höhere Anforderungen an die Souveränität, weil sie das Unterscheidungsmerkmal ist; ein Abfluss richtet Wettbewerbsschaden an, nicht nur einen Compliance-Schaden. Die architektonische Antwort ist eine Air-Gap-fähige Plattform mit kundenkontrollierten Schlüsseln."
+      explanation: "Industrie-IP — Konstruktionsdaten, Rezepturen, Prozessspezifikationen — stellt höhere Anforderungen an die Souveränität, weil sie das Unterscheidungsmerkmal ist; ein Abfluss richtet Wettbewerbsschaden an, nicht nur einen Compliance-Schaden. Die architektonische Antwort ist eine Air-Gap-fähige Plattform mit optionaler Volume-Verschlüsselung, deren Passphrase das Unternehmen selbst verwaltet."
     - q: "Welche Fertigungssektoren nennt der Artikel ausdrücklich als NIS2-relevant?"
       options:
         - { text: "Alle Fertigungstätigkeiten, unabhängig von Sektor und Größe", correct: false }
@@ -85,7 +85,7 @@ Cozystack läuft auf allen drei Ebenen mit einem einheitlichen Betriebsmodell.
 
 ## Souveränität für Industrie-IP
 
-Industrie-IP — Konstruktionsdaten, Rezepturen, Prozessspezifikationen — stellt höhere Anforderungen an die Souveränität als typische Unternehmensdaten. Die architektonische Antwort ist eine Air-Gap-fähige Plattform mit kundenkontrollierten Schlüsseln.
+Industrie-IP — Konstruktionsdaten, Rezepturen, Prozessspezifikationen — stellt höhere Anforderungen an die Souveränität als typische Unternehmensdaten. Die architektonische Antwort ist eine Air-Gap-fähige Plattform mit optionaler Volume-Verschlüsselung, deren Passphrase das Unternehmen selbst verwaltet.
 
 ## NIS2-Compliance
 

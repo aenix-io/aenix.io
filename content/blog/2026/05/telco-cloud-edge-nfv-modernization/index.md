@@ -163,8 +163,9 @@ cannot match on the substantive sovereignty criteria.
 
 Cozystack-based architecture supports this commercially:
 
-- **Customer-controlled keys** — telco customer holds keys, telco
-  provides operational support
+- **Encryption with a customer-held passphrase** — opt-in volume
+  encryption at rest (LINSTOR and LUKS); the key-management process
+  is designed with the telco, which provides operational support
 - **Air-gap option** — for classified or restricted-egress use cases
 - **Open-source substrate** — exit-readiness built in; telco doesn't
   lock customers into vendor relationship

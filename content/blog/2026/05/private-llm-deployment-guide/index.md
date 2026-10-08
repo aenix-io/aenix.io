@@ -112,7 +112,7 @@ Kubernetes-native virtualization platforms (Cozystack, OpenShift Virtualization,
 
 [Cozystack](/products/cozystack/) supports:
 - Container-based AI workloads with Kubernetes GPU scheduling: whole-GPU allocation through the NVIDIA GPU Operator, fractional sharing (GPU memory and compute cores) through HAMi
-- VM-based AI workloads through KubeVirt with NVIDIA vGPU (NVIDIA Enterprise license required)
+- VM-based AI workloads through KubeVirt with passthrough of whole GPUs or NVIDIA vGPU (requires your NVIDIA vGPU licence)
 - Multi-tenant isolation through Tenant CRD with per-tenant GPU quotas
 - MIG and time-slicing: on the roadmap, not shipped today
 
@@ -134,18 +134,18 @@ For multi-tenant production: vLLM (or Triton) with autoscaling, batched inferenc
 
 Open-weight models in production-ready 2026 landscape:
 
-- **Llama (Meta)** — large family covering 1B to 405B+, license permits commercial use with caveats
-- **Mistral** — Mixtral (MoE) and Mistral Large; commercial license for some, Apache 2.0 for older
+- **Llama (Meta)** — large family covering 1B to 405B+, licence permits commercial use with caveats
+- **Mistral** — Mixtral (MoE) and Mistral Large; commercial licence for some, Apache 2.0 for older
 - **Qwen (Alibaba)** — strong multilingual, including non-English; Apache 2.0
-- **DeepSeek** — strong reasoning models; license varies
+- **DeepSeek** — strong reasoning models; licence varies
 - **Phi (Microsoft)** — small models with surprising capability; MIT
-- **Gemma (Google)** — small/medium-size; license permits commercial use
+- **Gemma (Google)** — small/medium-size; licence permits commercial use
 
 Selection depends on:
 - Language requirement (multilingual vs English-only)
 - Workload type (chat / RAG / code / vision / embedding)
 - Cost-per-token target at expected throughput
-- License terms (commercial use, attribution, redistribution)
+- Licence terms (commercial use, attribution, redistribution)
 
 For most regulated-industry deployments: a primary model in the 7B-70B range for general use, plus smaller models (Phi, Gemma) for cost-sensitive paths, plus an embedding model for RAG. Fine-tuning happens for domain-specific accuracy needs.
 

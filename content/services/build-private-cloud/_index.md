@@ -12,12 +12,12 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Building a private cloud means designing, deploying, and operating cloud-style infrastructure on hardware you control — covering platform, storage, networking, multi-tenancy, observability, and compliance as one coherent system rather than a one-off project. It suits organizations with a platform engineering function and a clear trigger such as a VMware exit, a sovereignty mandate, AI/GPU workloads, or runaway public-cloud costs. Ænix builds private clouds end-to-end on Cozystack, an open-source CNCF project it runs in production with service providers, banks, telecom, and AI operators. The stack uses KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, and LINSTOR/DRBD storage, with handover so the customer's own team operates the platform afterward.**
+  **Building a private cloud means designing, deploying, and operating cloud-style infrastructure on hardware you control — covering platform, storage, networking, multi-tenancy, observability, and compliance as one coherent system rather than a one-off project. It suits organizations with a platform engineering function and a clear trigger such as a VMware exit, a sovereignty mandate, AI/GPU workloads, or runaway public-cloud costs. Ænix builds private clouds end-to-end on Cozystack, an open-source CNCF project it created and co-maintains, with deployments across hosting, regulated finance, telecom, AI and academia. The stack uses KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, and LINSTOR/DRBD storage, with handover so the customer's own team operates the platform afterward.**
 
 quick_facts:
   - label: "What it is"
     value: "An end-to-end engagement to design, build, and hand over a production private cloud on hardware the customer controls, built on Cozystack."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -46,7 +46,7 @@ hreflang_de: /de/dienstleistungen/build-private-cloud/
 
 **The phrase "build a private cloud" sounds like it should be straightforward in 2026. The reality: it's an architecture problem, an operational discipline problem, and a team-capacity problem at the same time. Done well, it produces a platform that compounds value for years. Done badly, it produces operational debt and the next emergency.**
 
-Ænix builds private clouds end-to-end based on [Cozystack](/products/cozystack/), an open-source CNCF project we run in production with service providers, banks, telecom, and AI operators.
+Ænix builds private clouds end-to-end based on [Cozystack](/products/cozystack/), an open-source CNCF project that Ænix created and co-maintains, with deployments across hosting, regulated finance, telecom, AI and academia (see the [case studies](/case-studies/)).
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises building private/hybrid sovereign cloud; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators needing multi-region public-cloud-class platform.
 
@@ -118,7 +118,7 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 ## Why Ænix
 
 - **The cloud is yours, not ours.** The foundation is Apache 2.0 with no per-core licensing, and the handover is a deliverable with named in-house owners, not a hope.
-- **We built the foundation.** Cozystack is our code, running in production with service providers, banks, telecom and AI operators.
+- **We created the foundation.** Ænix created Cozystack and co-maintains it; it has deployments across hosting, regulated finance, telecom, AI and academia.
 
 ---
 
@@ -135,5 +135,5 @@ For methodology see **[Platform Readiness Assessment](/services/platform-readine
 
 ---
 
-*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF-Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF project and CNCF Certified Kubernetes distribution, and maintains it with maintainers from other companies. Ænix sells three platforms built on it — Public Cloud, Private Cloud and AI — plus support and services.*
 

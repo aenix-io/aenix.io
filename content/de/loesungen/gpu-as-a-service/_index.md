@@ -24,7 +24,7 @@ service:
   areaServed: ["EU", "DACH", "MENA", "Central Asia"]
   audience: "GPU cloud providers and data centres"
 direct_answer: |
-  **Eine GPU-as-a-Service-Plattform ist die Softwareschicht, die aus einem Bestand an GPU-Servern eine Cloud macht, die Sie verkaufen können: Tenants, Bestellung im Self-Service, Isolation zwischen Kunden, Nutzungsdaten für die Abrechnung und die Dienste, die Kunden neben der GPU erwarten. Ænix baut das für Rechenzentren und neue GPU-Clouds, die ihren eigenen NVIDIA-Bestand betreiben. Grundlage ist Cozystack, ein CNCF-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt; geliefert wird es als Ænix Public Cloud Platform, ergänzt um die Ænix AI Platform für die KI-Dienste darüber. GPUs werden per Passthrough an Tenant-VMs durchgereicht oder mit HAMi zwischen Containern geteilt; MIG-Partitionierung steht auf der Roadmap. Tenants erhalten GPU-VMs, Kubernetes-Cluster mit GPU-Nodes, verwaltete Datenbanken und S3 aus einem Portal in Ihrer Marke, und die Nutzung pro Tenant fließt in WHMCS oder Ihr eigenes Billing-System.**
+  **Eine GPU-as-a-Service-Plattform ist die Softwareschicht, die aus einem Bestand an GPU-Servern eine Cloud macht, die Sie verkaufen können: Tenants, Bestellung im Self-Service, Isolation zwischen Kunden, Nutzungsdaten für die Abrechnung und die Dienste, die Kunden neben der GPU erwarten. Ænix baut das für Rechenzentren und neue GPU-Clouds, die ihren eigenen NVIDIA-Bestand betreiben. Grundlage ist Cozystack, ein CNCF-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt; geliefert wird es als Ænix Public Cloud Platform, ergänzt um die Ænix AI Platform für die KI-Dienste darüber. GPUs werden per Passthrough an Tenant-VMs durchgereicht oder mit HAMi zwischen Containern geteilt; MIG-Partitionierung steht auf der Roadmap. Tenants erhalten GPU-VMs, Kubernetes-Cluster mit GPU-Nodes, verwaltete Datenbanken und S3 aus einem Portal in Ihrer Marke, und die Nutzung pro Tenant fließt in WHMCS oder Ihr eigenes Billing-System.**
 quick_facts:
   - label: "Was es ist"
     value: "Software, um eine mandantenfähige GPU-Cloud auf eigenen NVIDIA-Servern zu betreiben und zu verkaufen: Tenants, Portal, GPU-VMs und Kubernetes, verwaltete Dienste, Nutzungsdaten für die Abrechnung."
@@ -33,7 +33,7 @@ quick_facts:
   - label: "GPU-Modi"
     value: "Ganze GPUs per Passthrough an Tenant-VMs; NVIDIA vGPU für VMs, sofern Sie die NVIDIA-vGPU-Lizenz besitzen; anteiliges Sharing zwischen Containern mit HAMi. MIG und Time-Slicing stehen auf der Roadmap."
   - label: "Kubernetes für KI"
-    value: "Cozystack ist eine CNCF-Certified-Kubernetes-Distribution und wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen."
+    value: "Cozystack ist eine CNCF Certified Kubernetes Distribution und wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen."
   - label: "NVIDIA-Stack"
     value: "NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator. Die Partner-Validierung des GPU-Operator-Stacks bei NVIDIA wurde im Oktober 2026 eingereicht und steht noch aus."
   - label: "Abrechnung"
@@ -45,11 +45,11 @@ faq:
   - q: "Was ist eine GPU-as-a-Service-Plattform?"
     a: "Sie ist die Schicht zwischen Ihren GPU-Servern und Ihren Kunden. Sie legt isolierte Tenants an, lässt Kunden GPU-VMs oder Kubernetes-Cluster mit GPUs selbst bestellen, hält ihre Workloads voneinander getrennt, erfasst, wie viel jeder Tenant verbraucht hat, und übergibt diese Nutzung an Ihre Abrechnung. Ohne sie kann ein Rechenzentrum Server vermieten; mit ihr kann es eine Cloud betreiben."
   - q: "Wie werden GPUs zwischen Tenants aufgeteilt?"
-    a: "Heute gibt es zwei Wege. Eine ganze GPU oder mehrere lassen sich per Passthrough an die virtuelle Maschine eines Tenants durchreichen, sodass dieser Tenant die Karte für sich allein hat. Innerhalb von Kubernetes erlaubt HAMi mehreren Containern, sich eine physische GPU mit Grenzen für Speicher und Rechenleistung zu teilen. MIG-Partitionierung und Time-Slicing stehen auf der Roadmap; ein Produkt, das nicht vertrauenswürdigen Tenants harte Partitionen einer Karte verspricht, sollte also noch nicht darauf aufbauen."
+    a: "Heute gibt es drei Wege. Eine ganze GPU oder mehrere lassen sich per Passthrough an die virtuelle Maschine eines Tenants durchreichen, sodass dieser Tenant die Karte für sich allein hat. Mit NVIDIA vGPU wird eine Karte in vGPU-Profile für mehrere VMs aufgeteilt; das erfordert Ihre NVIDIA-vGPU-Lizenz. Innerhalb von Kubernetes erlaubt HAMi mehreren Containern, sich eine physische GPU mit Grenzen für Speicher und Rechenleistung zu teilen. MIG-Partitionierung und Time-Slicing stehen auf der Roadmap; ein Produkt, das nicht vertrauenswürdigen Tenants harte Partitionen einer Karte verspricht, sollte also noch nicht darauf aufbauen."
   - q: "Können wir die GPU-Nutzung über WHMCS abrechnen?"
     a: "Ja. Die Plattform erfasst die Nutzung pro Tenant, und die Ænix-WHMCS-Integration, ein proprietäres Ænix-Modul, übergibt Bereitstellung und Nutzung an WHMCS, wo Sie Preise festlegen und Rechnungen stellen. Anbieter mit eigenem Billing-System übernehmen dieselben Nutzungsdaten direkt aus der Plattform. Den Preis pro GPU-Stunde legen Sie selbst fest."
   - q: "Ist der NVIDIA-Stack von NVIDIA validiert?"
-    a: "Noch nicht. Die GPUs laufen über den NVIDIA GPU Operator, und Ænix hat den Stack im Oktober 2026 zur Partner-Validierung bei NVIDIA eingereicht. Diese Prüfung steht noch aus; sobald sie abgeschlossen ist, sagen wir es auf dieser Seite. Cozystack ist bereits eine CNCF-Certified-Kubernetes-Distribution und Teil des Programms CNCF Kubernetes AI Conformance."
+    a: "Noch nicht. Die GPUs laufen über den NVIDIA GPU Operator, und Ænix hat den Stack im Oktober 2026 zur Partner-Validierung bei NVIDIA eingereicht. Diese Prüfung steht noch aus; sobald sie abgeschlossen ist, sagen wir es auf dieser Seite. Cozystack ist bereits eine CNCF Certified Kubernetes Distribution und Teil des Programms CNCF Kubernetes AI Conformance."
   - q: "Wie lange dauert der Start einer GPU-Cloud?"
     a: "Im Maßstab eines Anbieters bringt der produktisierte Installer die Plattform innerhalb weniger Wochen live, sobald die Hardware eingebaut und bereit ist. Nationale oder betreibergeführte Multi-Region-Programme laufen mit 3–6 Monaten Pilot und danach 9–18 Monaten bis zum vollständigen Multi-Region-Betrieb. Die meisten Projekte beginnen mit einem 30-minütigen Discovery-Gespräch und einem Platform Readiness Assessment zum Festpreis über 14 oder 28 Tage."
   - q: "Wie sieht die Preisgestaltung aus?"
@@ -127,11 +127,11 @@ Unterstützt werden NVIDIA-GPUs für Rechenzentren über den NVIDIA GPU Operator
 - **Managed Kubernetes** mit GPU-Node-Gruppen. Jeder Tenant-Cluster hat eine eigene Control Plane.
 - **Verwaltete Datenbanken und Queues:** PostgreSQL, MariaDB, Valkey, Kafka, ClickHouse, RabbitMQ, NATS, MongoDB, OpenSearch und Qdrant als Vektordatenbank.
 - **S3-kompatibler Object Storage** für Datensätze und Modell-Checkpoints.
-- **KI-Dienste** mit der [Ænix AI Platform](/de/produkte/ai-platform/): Model Serving und der KI-Stack drumherum. Die Plattform eines Telekommunikationsbetreibers etwa betreibt NVIDIA-Dynamo-Inferenz und RAG auf Qdrant, paketiert als Cozystack-Dienste ([Fallstudie](/de/case-studies/ai-universal-installer/)).
+- **KI-Dienste** mit der [Ænix AI Platform](/de/produkte/ai-platform/): Model Serving und der KI-Stack drumherum. Die Plattform eines Telekommunikationsbetreibers und Integrators etwa betreibt NVIDIA-Dynamo-Inferenz und RAG auf Qdrant, paketiert als Cozystack-Dienste ([Fallstudie](/de/case-studies/ai-universal-installer/)).
 
 ### Kubernetes für KI, von Dritten bestätigt
 
-Cozystack ist eine CNCF-Certified-Kubernetes-Distribution. Im September 2026 wurde es für Kubernetes v1.35 in das Programm [CNCF Kubernetes AI Conformance](https://github.com/cncf/k8s-ai-conformance) aufgenommen, das prüft, ob eine Plattform KI-Workloads so ausführt, wie es die Kubernetes-Community festlegt. Details zur Conformance und wie sich die Prüfläufe nachvollziehen lassen, finden Sie auf der Seite zur [Kubernetes Conformance](/de/compliance/kubernetes-conformance/).
+Cozystack ist eine CNCF Certified Kubernetes Distribution. Im September 2026 wurde es für Kubernetes v1.35 in das Programm [CNCF Kubernetes AI Conformance](https://github.com/cncf/k8s-ai-conformance) aufgenommen, das prüft, ob eine Plattform KI-Workloads so ausführt, wie es die Kubernetes-Community festlegt. Details zur Conformance und wie sich die Prüfläufe nachvollziehen lassen, finden Sie auf der Seite zur [Kubernetes Conformance](/de/compliance/kubernetes-conformance/).
 
 ---
 
@@ -200,7 +200,7 @@ Diese Projekte sind vollständig dokumentiert, die Kunden anonymisiert, wie es i
 
 - **[Eine souveräne Public Cloud auf Bare Metal](/de/case-studies/sovereign-public-cloud/)**: Ein Schweizer Anbieter verkauft VMs, Kubernetes und GPUs aus drei Rechenzentren und rechnet aus seinem eigenen System ab.
 - **[8×H100-Inferenz auf eigenem Bare Metal](/de/case-studies/bare-metal-gpu-inference/)**: alle acht GPUs per Passthrough an eine isolierte Tenant-VM, rund zwei Monate bis zum Produktivbetrieb.
-- **[Cozystack als universeller Installer](/de/case-studies/ai-universal-installer/)**: Ein Telekommunikationsbetreiber betreibt GPU-Passthrough in VMs und Cluster, NVIDIA Dynamo und geografisch verteilte GPUs.
+- **[Cozystack als universeller Installer](/de/case-studies/ai-universal-installer/)**: Ein Telekommunikationsbetreiber und Integrator betreibt GPU-Passthrough in VMs und Cluster, NVIDIA Dynamo und geografisch verteilte GPUs.
 - **[Von der Public Cloud auf Bare Metal, Bursting bei Bedarf](/de/case-studies/multicloud-academic-gpu/)**: anteiliges GPU-Sharing und GPU-Kosten rund fünfmal niedriger als im vorherigen Hyperscaler-Setup.
 
 Das größte hier dokumentierte GPU-Projekt ist ein einzelner 8×H100-Node. Für einen größeren Bestand planen wir einen Proof of Concept auf Ihrer eigenen Hardware.
@@ -224,4 +224,4 @@ Bringen Sie Anzahl und Modelle Ihrer GPUs mit, Ihren aktuellen Stack und das, wa
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Cozystack ist ein CNCF-Sandbox-Projekt unter Apache 2.0; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung. Ænix liefert es als drei Plattformen auf einer Engine (Public Cloud, Private Cloud und AI), die sich kombinieren lassen, statt einander auszuschließen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Cozystack ist ein CNCF-Sandbox-Projekt unter Apache 2.0; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung. Ænix liefert es als drei Plattformen auf einer Engine (Public Cloud, Private Cloud und AI), die sich kombinieren lassen, statt einander auszuschließen.*

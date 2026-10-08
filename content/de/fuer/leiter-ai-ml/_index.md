@@ -53,7 +53,7 @@ Data-Science- und Produktteams GPUs im Self-Service geben — für Training und 
 
 ## Zwei Wege, wie Ænix Sie unterstützt
 
-**1. Eine schlüsselfertige KI-Plattform betreiben.** Die [Ænix AI Platform](/de/produkte/ai-platform/) ergänzt den mandantenfähigen Cozystack-Kern um GPU-Scheduling und LLM-/vLLM-Inferenz per Klick — Self-Service für Ihre Teams, auf Ihrer Hardware, mit Support von Ænix. NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough an VMs, NVIDIA vGPU für VMs, ganze GPUs für Pods und anteilige Nutzung für Pods über HAMi; MIG und Time-Slicing stehen auf der Roadmap.
+**1. Eine schlüsselfertige KI-Plattform betreiben.** Die [Ænix AI Platform](/de/produkte/ai-platform/) ergänzt den mandantenfähigen Cozystack-Kern um GPU-Scheduling und LLM-/vLLM-Inferenz per Klick — Self-Service für Ihre Teams, auf Ihrer Hardware, mit Support von Ænix. NVIDIA-GPUs für Rechenzentren werden über den NVIDIA GPU Operator unterstützt: Passthrough an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), ganze GPUs für Pods und anteilige Nutzung für Pods über HAMi; MIG und Time-Slicing stehen auf der Roadmap.
 
 **2. Mit unserem Team selbst aufbauen.** Cozystack ist das Framework; **Ænix ist Ihr ausgelagertes Engineering-Team** für einen [AI Platform Build](/de/dienstleistungen/ai-platform-build/) — GPU-Topologie, Scheduling, Inferenz-Serving und Kontrollen für [souveräne KI](/de/loesungen/sovereign-ai/), ausgelegt auf Ihre Modelle und Daten.
 
@@ -74,7 +74,7 @@ Data-Science- und Produktteams GPUs im Self-Service geben — für Training und 
 
 - **Souverän von Grund auf.** Sensible Daten und Modelle bleiben auf Ihrer Hardware, in Ihrer Jurisdiktion — nicht beim Endpoint eines Drittanbieters.
 - **Mandantenfähige GPUs statt Silos.** Knappe GPUs über Teams hinweg teilen, mit Quotas und Isolation.
-- **Autoren, keine Reseller.** Das Team, das Cozystack initiiert hat, entwirft und betreut die Plattform.
+- **Autoren, keine Reseller.** Das Team, das Cozystack entwickelt hat, entwirft und betreut die Plattform.
 
 ---
 
@@ -108,7 +108,7 @@ Kostenlos und ohne Vorbereitung. Wir sehen uns Ihren GPU-Bestand und Ihre Vorgab
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-ai-ml/ ; hreflang de self, en → /for/head-of-ai-ml/.

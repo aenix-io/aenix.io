@@ -31,7 +31,7 @@ quiz:
         - { text: "Wenn die Einsparkurve nach 6–12 Monaten abflacht", correct: true }
         - { text: "Erst nach dem nächsten Hardware-Refresh", correct: false }
       explanation: "Zuerst konfigurativ arbeiten und diese Einsparungen sichern, dann architektonisch bewerten. Nach sechs bis zwölf Monaten disziplinierter konfigurativer Arbeit flacht die Einsparkurve ab — erst dann wird die architektonische Frage relevant. Wer sie überspringt, stößt an eine strukturelle Decke."
-    - q: "Auf welche Aenix-Seite verweist der Artikel für die architektonische Veränderung?"
+    - q: "Auf welche Ænix-Seite verweist der Artikel für die architektonische Veränderung?"
       options:
         - { text: "Auf die Seite zur Cloud-Repatriierung", correct: true }
         - { text: "Auf die Seite zum Kubernetes-Consulting", correct: false }

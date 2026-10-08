@@ -32,18 +32,18 @@ quiz:
         - { text: "Hybrid: embedded plus a central function", correct: true }
         - { text: "Centralised SRE function as the only mode", correct: false }
       explanation: "The hybrid model (embedded + centralised) is recommended for 500+-engineer organisations with multiple BUs; below 500 engineers, the dual investment is hard to amortise."
-    - q: "What observability stack does Aenix recommend by default for SRE engagements?"
+    - q: "What observability stack does Ænix recommend by default for SRE engagements?"
       options:
         - { text: "Prometheus, Loki, and Jaeger stack", correct: false }
         - { text: "Datadog SaaS as the unified backend", correct: false }
         - { text: "VictoriaMetrics, VictoriaLogs, OpenTelemetry", correct: true }
-      explanation: "Aenix's default observability recommendation is VictoriaMetrics + VictoriaLogs + OpenTelemetry — self-hosted, sovereignty-friendly, lower overhead than Prometheus + Loki at scale, and no SaaS data-residency leak."
+      explanation: "Ænix's default observability recommendation is VictoriaMetrics + VictoriaLogs + OpenTelemetry — self-hosted, sovereignty-friendly, lower overhead than Prometheus + Loki at scale, and no SaaS data-residency leak."
     - q: "When does the article say an SRE engagement is a poor fit?"
       options:
         - { text: "Firefighting culture without leadership backing", correct: true }
         - { text: "When the organisation has 100-200 engineers", correct: false }
         - { text: "When platform engineering already exists in-house", correct: false }
-      explanation: "Without executive backing for the discipline shift, SRE engagement degrades to incident response training — helpful but not what Aenix sells. Platform engineering existing is actually a strong-fit signal."
+      explanation: "Without executive backing for the discipline shift, SRE engagement degrades to incident response training — helpful but not what Ænix sells. Platform engineering existing is actually a strong-fit signal."
 ---
 
 

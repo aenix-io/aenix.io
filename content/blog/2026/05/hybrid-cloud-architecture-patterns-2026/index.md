@@ -156,7 +156,7 @@ A practical sequence for moving from fragmented multi-cloud to coherent hybrid:
 5. **Migration cohorts 2-N** — remaining workloads aligned with the pattern.
 6. **Steady state** — single platform team, single operations model, multiple substrates.
 
-Total elapsed: typically 12-24 months for a 100-VM hybrid estate.
+Total elapsed: typically about 8-12 months for ~100 VMs and 18-24 months for ~1,000 VMs, including planning and migration waves.
 
 ## Want to dig deeper?
 

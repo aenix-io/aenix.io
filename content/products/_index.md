@@ -29,7 +29,7 @@ faq:
   - q: "Does choosing one exclude the others?"
     a: "No, and this is the most common misreading of the product line. The three platforms are the same Cozystack engine with different surfaces enabled, running under one control plane. Taking AI Platform with Private Cloud features, or adding a commercial billing layer to an internal estate later, is a configuration decision on the platform you already run — not a migration, not a second installation, not a second procurement."
   - q: "What is the difference between Cozystack and the Ænix platforms?"
-    a: "Cozystack is the open-source engine: Kubernetes-native multi-tenancy, KubeVirt VMs and containers on one API, Cilium networking, replicated storage, managed databases. It is Apache 2.0 and you can run it yourself, forever, without paying us. The Ænix platforms add what a business needs around that engine — proprietary modules such as the billing system and WHMCS integration, compliance architecture, migration delivery, SLA and the engineers who maintain the project. If you want the engine and a support contract but none of the commercial layer, that is enterprise support for Cozystack."
+    a: "Cozystack is the open-source engine: Kubernetes-native multi-tenancy, KubeVirt VMs and containers on one API, Cilium networking, replicated storage, managed databases. It is Apache 2.0 and you can run it yourself, forever, without paying us. The Ænix platforms add what a business needs around that engine — proprietary modules such as the billing system and WHMCS integration, compliance architecture, migration delivery, SLA and the engineers who maintain the project. If you run the open-source engine yourself and want the maintainers on call, that is enterprise support for Cozystack: the same subscription and price list, with the commercial modules included in every tier and free to leave unused."
   - q: "Can we start small and grow?"
     a: "Yes, and the growth path is deliberately not a replatform. A provider that starts on the price list at provider scale and grows into a multi-region national operator switches multi-region on and keeps its portal, its billing and its tenants. An enterprise that starts with a regulated private cloud and later wants GPU tenancy adds it on the same substrate, inside the tenancy boundary the auditor already reviewed."
   - q: "Is there vendor lock-in?"
@@ -70,7 +70,7 @@ Nothing in the line is a dead end. Starting on the price list at provider scale 
 
 **For everyone who sells cloud** — hosting providers, MSPs and regional clouds at one end; telcos, national operators and banks running a commercial cloud at the other.
 
-Turnkey cloud-in-a-box: full billing back-end and front-end, WHMCS integration, a customer portal with your branding, payment processing, tenant lock and suspension, and service-creation wizards for VMs, Kubernetes, managed databases, S3 and GPU. Multi-region, and it runs alongside an existing VMware or OpenStack estate while you migrate.
+A complete public-cloud product for hosting providers: full billing back-end and front-end, WHMCS integration, a customer portal with your branding, payment processing, tenant lock and suspension, and service-creation wizards for VMs, Kubernetes, managed databases, S3 and GPU. Multi-region, and it runs alongside an existing VMware or OpenStack estate while you migrate.
 
 From $1,250 per 10 nodes per month at provider scale, live in weeks once the hardware is ready; multi-region operator programmes quoted per RFP.
 
@@ -90,7 +90,7 @@ Quoted per RFP: a 14- or 28-day assessment, then a 3-12 month build depending on
 
 **For teams running AI on their own hardware** — AI-native organizations at scale, regulated AI deployments, GPU-heavy product companies, and providers selling GPU-as-a-Service.
 
-Multi-tenant GPU scheduling, model serving, vector databases, object storage and service APIs, with air-gapped deployment available. NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs and sharing via HAMi. Cozystack is accepted into the CNCF Kubernetes AI Conformance program.
+Multi-tenant GPU scheduling, model serving, vector databases, object storage and service APIs, with air-gapped deployment available. NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough of whole GPUs to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence) and fractional sharing via HAMi; MIG and time-slicing are on the roadmap. Cozystack is accepted into the CNCF Kubernetes AI Conformance program.
 
 Quoted per RFP: a 14- or 28-day assessment, then a 3-12 month build depending on scope.
 
@@ -100,9 +100,9 @@ Quoted per RFP: a 14- or 28-day assessment, then a 3-12 month build depending on
 
 ## Enterprise support for Cozystack
 
-**For teams running open-source Cozystack themselves** and wanting the engineers who maintain it on call — without the commercial portal and billing layer.
+**For teams running open-source Cozystack themselves** and wanting the engineers who maintain it on call.
 
-SLA-backed support from the maintainers on the published tiers, from $1,250 per 10 physical nodes per month — the same tiers as Public Cloud Platform subscriptions. The common entry point for teams on Hetzner, OVH or leased bare metal.
+SLA-backed support from the maintainers on the published tiers, from $1,250 per 10 physical nodes per month. It is the same subscription as Public Cloud Platform: every tier includes the proprietary Ænix commercial modules (billing system and WHMCS integration), which a self-run team can simply leave unused. The common entry point for teams on Hetzner, OVH or leased bare metal.
 
 [Enterprise support for Cozystack →](/products/cozystack-enterprise-support/)
 

@@ -19,7 +19,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A sovereign, edge-to-core cloud platform for telecom operators, built on Cozystack and delivered with Ænix implementation services."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -126,7 +126,7 @@ Hosting providers running Ænix Public Cloud Platform in production.
 
 {{< quote-carousel >}}
 
-Telecom customers are not named. The closest written-up case is [a telecom operator that built a corporate AI platform on Cozystack](/case-studies/ai-universal-installer/).
+Telecom customers are not named. The closest written-up case is [a telecom operator and integrator that built a corporate AI platform on Cozystack](/case-studies/ai-universal-installer/).
 
 ---
 

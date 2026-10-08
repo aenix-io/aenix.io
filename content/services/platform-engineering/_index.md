@@ -12,11 +12,11 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Platform engineering services build and operate the internal developer platform that product teams use for self-service environment provisioning, deployment, observability, secrets, and identity. Ænix delivers these services as the engineering team behind Cozystack, an open-source CNCF project (Apache 2.0) that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and a Tenant CRD multi-tenancy model. Engagements run in three modes: a 14- or 28-day Platform Readiness Assessment, a 3-12 month platform build with structured knowledge transfer, or a managed platform service with a documented in-house exit path. The work targets organizations with multiple product teams, slow time-to-environment, or compliance and sovereignty pressure, typically from roughly three product teams or thirty engineers upward.**
+  **Platform engineering services build and operate the internal developer platform that product teams use for self-service environment provisioning, deployment, observability, secrets, and identity. Ænix delivers these services as the company that created and co-maintains Cozystack, an open-source CNCF project (Apache 2.0) that runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking, LINSTOR/DRBD storage, and a Tenant CRD multi-tenancy model. Engagements run in three modes: a 14- or 28-day Platform Readiness Assessment, a 3-12 month platform build with structured knowledge transfer, or a managed platform service with a documented in-house exit path. The work targets organizations with multiple product teams, slow time-to-environment, or compliance and sovereignty pressure, typically from roughly three product teams or thirty engineers upward.**
 quick_facts:
   - label: "What it is"
     value: "Build, operation, and acceleration of an internal developer platform with self-service golden paths, multi-tenancy, and a sustainable operational model."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -48,7 +48,7 @@ hreflang_de: /de/dienstleistungen/platform-engineering/
 
 **Platform engineering is no longer a debate; it's an operational layer that mature engineering organizations now treat as core infrastructure. The question is not whether to invest in it, but whether to build the function in-house slowly, hire a consultancy that hands off to junior implementers, or work with engineers who have already operated multi-tenant platforms in production.**
 
-Ænix is the platform engineering team behind [Cozystack](/products/cozystack/), a CNCF project running in production with service providers, banks, and AI operators. We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
+Ænix created [Cozystack](/products/cozystack/) and co-maintains it — a CNCF project with deployments across hosting, regulated finance, telecom, AI and academia (see the [case studies](/case-studies/)). We extend our team into yours — building, operating, or accelerating the internal developer platform your organization actually needs.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** — its developer self-service layer is the product form of this engagement. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
 
@@ -177,7 +177,7 @@ Most engagements start with the assessment. The decision between options 2 and 3
 
 ## Why Ænix specifically
 
-- **We operate platforms in production.** Cozystack is in production with service providers and regulated enterprises. The decisions in our engagements are calibrated against running systems, not against tooling reviews.
+- **We operate platforms in production.** Cozystack has deployments across hosting, regulated finance, telecom, AI and academia. The decisions in our engagements are calibrated against running systems, not against tooling reviews.
 - **Open-source platform foundation.** [Cozystack](/products/cozystack/) is an open-source CNCF Project. The platform we recommend is a platform you own. No vendor-roadmap lock-in.
 - **No hyperscaler bias.** Our recommendations reflect technical fit and operational reality, not partnership economics. We say "stay in cloud" when that's right, and "go on-prem" when that's right.
 - **Engineering teams in the EU and Central Asia.** Time-zone friendly for European customers; aligned with EU data sovereignty requirements; understanding of regulator dialog from inside the same jurisdictions.
@@ -255,7 +255,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix is the platform engineering team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices. We build, operate, and accelerate platform engineering programs across the EU, DACH, and Central Asia.*
+*Ænix created Cozystack and co-maintains it — a CNCF project and CNCF Certified Kubernetes distribution with the OpenSSF Best Practices badge. We build, operate, and accelerate platform engineering programs across the EU, DACH, and Central Asia.*
 
 <!-- /BLOCK 12 -->
 

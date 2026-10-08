@@ -15,7 +15,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "The software layer that turns hardware you own into self-service cloud — compute, storage, networking, multi-tenancy and managed data services under your own governance."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -102,7 +102,7 @@ Tenant CRD model with nested tenants, per-tenant quotas, RBAC, audit. Suitable f
 PostgreSQL (CloudNativePG), MariaDB, MongoDB, ClickHouse, Valkey, OpenSearch, Kafka, NATS, RabbitMQ and Qdrant — provisioned as first-class platform services, not bolted-on Helm charts.
 
 **6. GPUs**
-NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires an NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and fractional sharing for pods via HAMi. MIG and time-slicing are on the roadmap.
+NVIDIA data-centre GPUs through the NVIDIA GPU Operator: whole-GPU passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), whole GPUs to pods via the device plugin, and fractional sharing for pods via HAMi. MIG and time-slicing are on the roadmap.
 
 **7. Observability**
 VictoriaMetrics + VictoriaLogs included — low-overhead, sovereignty-friendly. Optional Grafana on top.
@@ -125,7 +125,7 @@ Cozystack Dashboard for service provisioning. Operators that bill tenants add th
 
 | | VMware (VCF) | OpenStack | OpenShift Virtualization | **Cozystack** |
 |---|---|---|---|---|
-| **License** | Subscription only | Apache 2.0 | Red Hat commercial | **Apache 2.0** |
+| **Licence** | Subscription only | Apache 2.0 | Red Hat commercial | **Apache 2.0** |
 | **Compute** | vSphere + ESXi | Nova + KVM | KubeVirt | **KubeVirt** |
 | **Multi-tenancy** | vCloud Director | Keystone projects | Namespaces | **Tenant CRD (Kubernetes-native)** |
 | **Managed databases** | Limited | DBaaS optional | Available | **First-class** |
@@ -209,6 +209,6 @@ Or:
 
 ---
 
-*Ænix created Cozystack (CNCF Sandbox project, Certified Kubernetes distribution, OpenSSF Best Practices) and co-maintains it. Ænix sells three platforms on that engine — Public Cloud Platform, Private Cloud Platform and AI Platform.*
+*Ænix created Cozystack (CNCF Sandbox project, CNCF Certified Kubernetes distribution, OpenSSF Best Practices) and co-maintains it. Ænix sells three platforms on that engine — Public Cloud Platform, Private Cloud Platform and AI Platform.*
 
 

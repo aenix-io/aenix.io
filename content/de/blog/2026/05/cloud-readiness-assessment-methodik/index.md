@@ -30,7 +30,7 @@ quiz:
         - { text: "Der Zwischenstand mit den vorläufigen Befunden", correct: true }
         - { text: "Der Workshop zur Anbieterauswahl", correct: false }
       explanation: "Tag 10 ist der Zwischenstand (60 Minuten). Der Kunde korrigiert, schärft oder widerspricht den vorläufigen Befunden, bevor der Bericht an den Tagen 11 bis 13 geschrieben wird. Das abschließende Executive Readout findet an Tag 14 statt; die Anbieterauswahl gehört nur in die 28-Tage-Variante."
-    - q: "Warum lehnt Aenix eine bereits feststehende Antwort an Tag 0 ab?"
+    - q: "Warum lehnt Ænix eine bereits feststehende Antwort an Tag 0 ab?"
       options:
         - { text: "Weil sich die parallelen Workstreams sonst nicht planen lassen", correct: false }
         - { text: "Weil der Bericht dann intern als Bestätigungsfehler abgewertet wird", correct: true }

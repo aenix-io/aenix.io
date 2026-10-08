@@ -36,7 +36,7 @@ faq:
   - q: "Wie unterstützt Ænix bei NIS2?"
     a: "Ænix setzt diese Checkliste in an NIS2 ausgerichteten Readiness-Projekten ein und bietet für tiefergehende Arbeit Leistungen zur NIS2-Compliance an. Die Plattform liefert Kontrollen, nicht die Compliance: Die NIS2-Pflichten liegen bei der wesentlichen oder wichtigen Einrichtung, keine Plattform kann sie übernehmen. Die Ænix Private Cloud Platform auf Basis des CNCF-Sandbox-Projekts Cozystack unterstützt die relevanten Kontrollen mit Segmentierung über die Tenant-CRD und Cilium-NetworkPolicy, optionaler Volume-Verschlüsselung und API-Audit-Logs mit konfigurierbarer Aufbewahrung (standardmäßig 30 Tage), die sich in Ihren eigenen unveränderlichen (WORM-)Speicher ausleiten lassen."
   - q: "Was ist Cozystack, und wie hängt es mit dieser Checkliste zusammen?"
-    a: "Cozystack ist eine Open-Source-Cloud-Plattform unter der Apache-2.0-Lizenz und ein CNCF-Sandbox-Projekt. Es betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, mit Cilium-Networking (eBPF) und LINSTOR/DRBD-Storage. Ænix hat Cozystack initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen; die Ænix Private Cloud Platform basiert darauf. Die Checkliste selbst ist plattformneutral."
+    a: "Cozystack ist eine Open-Source-Cloud-Plattform unter der Apache-2.0-Lizenz und ein CNCF-Sandbox-Projekt. Es betreibt VMs über KubeVirt und Container auf einer Kubernetes-API, mit Cilium-Networking (eBPF) und LINSTOR/DRBD-Storage. Ænix hat Cozystack entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen; die Ænix Private Cloud Platform basiert darauf. Die Checkliste selbst ist plattformneutral."
 ---
 
 **Eine Checkliste mit 35 Punkten für wesentliche und wichtige Einrichtungen unter NIS2. Sie deckt die Risikomanagementmaßnahmen nach Art. 21 (10 Bereiche), die Meldefristen nach Art. 23, Transparenz in der Lieferkette, Business Continuity, MFA, Verschlüsselung und Kontrollen auf Architekturebene ab. Ænix setzt sie in an NIS2 ausgerichteten Readiness-Projekten ein.**
@@ -84,4 +84,4 @@ Mit der Checkliste bewerten Sie Ihre Architektur anhand der NIS2-Anforderungen. 
 
 ---
 
-*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*

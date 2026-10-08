@@ -83,9 +83,29 @@
 {{- end -}}
 {{- if $url -}}
 <div class="pipedrive-form pipedrive-form--{{ $type }}">
-  <script>window.aenixUTM&&window.aenixUTM.restoreForForm();</script>
   <div class="pipedriveWebForms" data-pd-webforms="{{ $url }}"></div>
-  <script src="https://webforms.pipedrive.com/f/loader"></script>
+  {{- /* The Pipedrive loader (and the Google reCAPTCHA it pulls in) is
+         fetched when the form comes within ~1.5 screens of the viewport,
+         not on page load: visitors who never scroll to a form send nothing
+         to Pipedrive or Google, while anyone heading for the form finds it
+         rendered when they get there. The loader scans the DOM once when it
+         runs, so one load serves every form on the page. */}}
+  <script>
+  (function(){
+    var box=document.currentScript.parentNode;
+    function go(){
+      if(window.__aenixPdLoader)return; window.__aenixPdLoader=true;
+      window.aenixUTM&&window.aenixUTM.restoreForForm();
+      var s=document.createElement('script'); s.src='https://webforms.pipedrive.com/f/loader'; s.async=true;
+      document.body.appendChild(s);
+    }
+    if(!('IntersectionObserver' in window)){go();return;}
+    var io=new IntersectionObserver(function(es){
+      for(var i=0;i<es.length;i++){if(es[i].isIntersecting){io.disconnect();go();return;}}
+    },{rootMargin:'1200px 0px'});
+    io.observe(box);
+  })();
+  </script>
   {{- $lang := .Page.Params.language | default "en" }}
   {{- if not (in (slice "workshop" "workshop-online") $type) }}
   {{- if eq $lang "de" }}

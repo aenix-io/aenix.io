@@ -210,4 +210,4 @@ Oder schreiben Sie an [sales@aenix.io](mailto:sales@aenix.io).
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Projekt, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft [drei Plattformen](/de/produkte/) auf dieser Basis — Public Cloud, Private Cloud und AI. AENIX s.r.o. (Tschechien) und AENIX INC (Delaware, USA).*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Projekt, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft [drei Plattformen](/de/produkte/) auf dieser Basis — Public Cloud, Private Cloud und AI. AENIX s.r.o. (Tschechien) und AENIX INC (Delaware, USA).*

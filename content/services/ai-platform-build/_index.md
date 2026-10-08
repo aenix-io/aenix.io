@@ -16,10 +16,10 @@ quick_facts:
   - label: "Platform foundation"
     value: "Cozystack — VM and container GPU workloads on one Kubernetes API via KubeVirt, Cilium (eBPF) networking, LINSTOR/DRBD storage, Tenant CRD multi-tenancy."
   - label: "GPUs"
-    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs, sharing via HAMi; MIG and time-slicing on the roadmap. Serving on vLLM and Triton."
+    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), sharing via HAMi; MIG and time-slicing on the roadmap. Serving on vLLM and Triton."
   - label: "Engagement timeline"
     value: "Discovery call, a 14- or 28-day assessment with workload fit and GPU sizing, then a 3-12 month build depending on scope; optional managed operations."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -27,7 +27,7 @@ faq:
   - q: "When does building a dedicated AI platform beat renting hyperscaler GPU?"
     a: "For sustained workloads such as 24/7 inference, fine-tuning, and training, dedicated infrastructure usually wins after about a year of operation. Bursty or short-lived experimentation often stays cheaper on rented capacity. Ænix models the break-even during the assessment to determine the break-even point for a given workload."
   - q: "What GPUs and inference stacks does Ænix support?"
-    a: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator, passed through whole to VMs or shared between containers with HAMi; our published deployments include an 8×H100 inference server. We do not publish a validated-model list, and NVIDIA partner validation of the stack is pending. Inference serving is matched to model architecture using vLLM, Triton, or custom serving stacks, and the platform supports multi-tenant model serving for customer-facing AI products."
+    a: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator, passed through whole to VMs, split with NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), or shared between containers with HAMi; our published deployments include an 8×H100 inference server. We do not publish a validated-model list, and NVIDIA partner validation of the stack is pending. Inference serving is matched to model architecture using vLLM, Triton, or custom serving stacks, and the platform supports multi-tenant model serving for customer-facing AI products."
   - q: "Can a dedicated AI platform keep regulated data on-premises?"
     a: "Yes. The platform is built for enterprises with regulated data classes that cannot be sent to external model providers. Sovereignty controls are applied to the relevant data classes, and Cozystack's Tenant CRD provides multi-tenant isolation. Sovereignty-led engagements are covered under Sovereign AI."
   - q: "How is the platform built and how long does it take?"
@@ -76,7 +76,7 @@ hreflang_de: /de/dienstleistungen/ai-platform-build/
 </div>
 
 - **Cozystack-based AI platform** — KubeVirt + Kubernetes for both VM and container GPU workloads
-- **NVIDIA GPUs** — through the NVIDIA GPU Operator: passthrough to VMs, HAMi sharing for containers
+- **NVIDIA GPUs** — through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), HAMi sharing for containers
 - **Inference serving** — vLLM, Triton, custom; matched to model architecture
 - **Multi-tenant model serving** — for customer-facing AI products
 - **Sovereignty controls** for regulated data classes

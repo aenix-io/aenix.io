@@ -113,4 +113,4 @@ faq:
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Projekt, und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Projekt, und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

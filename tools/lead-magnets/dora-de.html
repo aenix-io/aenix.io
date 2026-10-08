@@ -2,7 +2,7 @@
   <div class="meta">
     <span class="brandline">ÆNIX</span>
     <span class="doctitle">DORA-Compliance Cloud-Architektur-Checkliste</span>
-    <span class="versionline">Aenix · aenix.io · v1.1 — September 2026</span>
+    <span class="versionline">Ænix · aenix.io · v1.2 — Oktober 2026</span>
   </div>
   <div class="cover__mark">ÆNIX</div>
   <div class="cover__rule"></div>
@@ -10,14 +10,14 @@
   <p class="cover__subtitle">35 Kontrollpunkte, die zeigen, ob Ihre Cloud-Architektur die DORA-Anforderungen tatsächlich erfüllt.</p>
   <div class="cover__spacer"></div>
   <div class="cover__audience">Für CISOs, Cloud-Architekten und Compliance-Verantwortliche · aenix.io</div>
-  <p class="cover__strapline"><b>35 Kontrollpunkte für Finanzunternehmen und IKT-Drittdienstleister.</b> Ausgerichtet auf die Verordnung (EU) 2022/2554. Anwendbar ab dem 17. Januar 2025. v1.1 — September 2026.</p>
+  <p class="cover__strapline"><b>35 Kontrollpunkte für Finanzunternehmen und IKT-Drittdienstleister.</b> Ausgerichtet auf die Verordnung (EU) 2022/2554. Anwendbar ab dem 17. Januar 2025. v1.2 — Oktober 2026.</p>
 </section>
 
 <h1 class="doc-h">So verwenden Sie diese Checkliste</h1>
 
 <p class="lead">Der Digital Operational Resilience Act (DORA, Verordnung (EU) 2022/2554) ist seit dem 17. Januar 2025 in Kraft. Er gilt für die meisten regulierten Finanzunternehmen, die in der EU tätig sind, sowie für die IKT-Drittdienstleister, die sie beliefern — darunter Cloud-Plattformen, Hosting-Anbieter, Managed Services und Softwareanbieter.</p>
 
-<p class="lead">Diese Checkliste mit 35 Punkten gibt CISOs, Cloud-Architekten und Compliance-Teams eine strukturierte Möglichkeit zu beurteilen, ob ihre Cloud-Architektur die DORA-Verpflichtungen unterstützt. Es ist dasselbe Ausgangsframework, das Aenix bei DORA-orientierten Readiness-Projekten mit Finanzunternehmen und IKT-Drittdienstleistern einsetzt.</p>
+<p class="lead">Diese Checkliste mit 35 Punkten gibt CISOs, Cloud-Architekten und Compliance-Teams eine strukturierte Möglichkeit zu beurteilen, ob ihre Cloud-Architektur die DORA-Verpflichtungen unterstützt. Es ist dasselbe Ausgangsframework, das Ænix bei DORA-orientierten Readiness-Projekten mit Finanzunternehmen und IKT-Drittdienstleistern einsetzt.</p>
 
 <p class="lead">Nutzen Sie sie auf drei Arten:</p>
 
@@ -154,16 +154,16 @@
 
 <h1 class="doc-h newpage">Empfehlungen auf Architekturebene</h1>
 
-<p class="lead">Bei den meisten Kontrollpunkten ist die Lücke struktureller, nicht prozeduraler Natur. Eine Plattform, die auf (1) Workload-Portabilität über Kubernetes-native Primitive, (2) kundengesteuerten Verschlüsselungsschlüsseln auf jeder Ebene, (3) unveränderlichen, kundenexportierbaren Audit-Logs, (4) durchsetzbarer, datenresidenzgebundener Workload-Platzierung und (5) getesteten Exit- / Wiederherstellungsmechaniken aufbaut, adressiert den Großteil der architektonischen Oberfläche von DORA in einem einzigen kohärenten Design — statt als 35 separate kompensierende Kontrollen.</p>
+<p class="lead">Bei den meisten Kontrollpunkten ist die Lücke struktureller, nicht prozeduraler Natur. Eine Plattform, die auf (1) Workload-Portabilität über Kubernetes-native Primitive, (2) einer Verschlüsselung im Ruhezustand, die Sie konfigurieren und deren Schlüssel Sie verwalten, (3) Audit-Logs, die Sie in einen manipulationssicheren Speicher unter Ihrer Kontrolle exportieren können, (4) durchsetzbarer, datenresidenzgebundener Workload-Platzierung und (5) getesteten Exit- / Wiederherstellungsmechaniken aufbaut, adressiert den Großteil der architektonischen Oberfläche von DORA in einem einzigen kohärenten Design — statt als 35 separate kompensierende Kontrollen.</p>
 
-<p class="lead">Aenix entwirft Plattformen nach diesem Muster. Cozystack (CNCF Project) liefert die quelloffene Grundlage; die Ænix Platform ergänzt sie um ein Enterprise-SLA, Lieferantentransparenz und DORA-orientierte Betriebsdokumentation, die für die aufsichtsrechtliche Prüfung geeignet ist.</p>
+<p class="lead">Ænix entwirft Plattformen nach diesem Muster. Cozystack (ein CNCF-Projekt) liefert die quelloffene Grundlage; die Ænix Private Cloud Platform ergänzt sie um Support mit definierten Reaktionszeiten, die Umsetzung durch die Engineers, die Cozystack entwickelt haben und mitpflegen, und Dokumentation, die Sie für Ihre eigene DORA-Arbeit nutzen können.</p>
 
 <p class="lead">Bestehende Plattformen (VMware-basiert, OpenStack-basiert, Hyperscaler-basiert) lassen sich meist teilweise nachrüsten — doch die Erwartungen von DORA an Portabilität und Exit-Readiness sind schwer zu erfüllen, wenn die zugrunde liegende Plattform selbst die Quelle des Lock-in ist.</p>
 
 <h1 class="doc-h" style="margin-top:9mm">Nächste Schritte</h1>
 
-<div class="option"><b>Option 1 — Selbstständige Behebung mit dieser Checkliste.</b> Weisen Sie jedes nicht angekreuzte Kästchen einem Workstream-Verantwortlichen zu. Die meisten Finanzunternehmen haben 12-18 nicht angekreuzte Kästchen, die 90 Tage strukturierte Arbeit erfordern.</div>
-<div class="option"><b>Option 2 — DORA-orientiertes Readiness-Projekt mit Aenix (4-6 Wochen).</b> Wir gehen die Checkliste gemeinsam mit Ihnen durch, prüfen die Architektur gegen jede Kontrolle und erstellen einen Remediationsplan mit Aufwandsschätzungen und Entwürfen für das Aufsichts-Narrativ. Festpreis-Projekt.</div>
+<div class="option"><b>Option 1 — Selbstständige Behebung mit dieser Checkliste.</b> Weisen Sie jedes nicht angekreuzte Kästchen einem Workstream-Verantwortlichen zu. Überführen Sie die offenen Punkte in einen Behebungsplan mit Verantwortlichen und Terminen.</div>
+<div class="option"><b>Option 2 — Platform Readiness Assessment mit Ænix (14 oder 28 Tage).</b> Wir gehen die Checkliste gemeinsam mit Ihnen durch, prüfen die Architektur gegen jede Kontrolle und erstellen einen Remediationsplan mit Aufwandsschätzungen und Entwürfen für das Aufsichts-Narrativ. Festpreis-Projekt.</div>
 <div class="option"><b>Option 3 — Gemeinsames Mapping von DORA + NIS2 + sektoralen Anforderungen.</b> Für Unternehmen im Anwendungsbereich mehrerer Rahmenwerke. Wir bilden Kontrollen über DORA, NIS2 und sektorale Erwartungen hinweg ab, um Doppelarbeit zu vermeiden.</div>
 
 <div class="cta">Vereinbaren Sie ein Erstgespräch: <span>aenix.io/services/platform-readiness-assessment/</span></div>
@@ -175,8 +175,8 @@
   <li><b>Anlassbezogen:</b> bei wesentlichen Änderungen an DORA selbst.</li>
 </ul>
 
-<p class="lead">Aenix ist das Team hinter Cozystack (CNCF Project) und bietet die Ænix Platform an — unser kommerzielles, produktisiertes Angebot auf Basis von Cozystack. aenix.io</p>
+<p class="lead">Ænix hat Cozystack (ein CNCF-Projekt) entwickelt, pflegt es mit und baut darauf die Ænix-Plattformen für Public Cloud, Private Cloud und KI. aenix.io</p>
 
 <div class="closing">
-  <b>Aenix · aenix.io · DORA-Compliance Cloud-Architektur-Checkliste · v1.1 — September 2026.</b> Aenix is the team behind Cozystack (CNCF, Apache 2.0).
+  <b>Ænix · aenix.io · DORA-Compliance Cloud-Architektur-Checkliste · v1.2 — Oktober 2026.</b> Ænix hat Cozystack entwickelt und pflegt es mit (CNCF, Apache 2.0).
 </div>

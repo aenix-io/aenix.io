@@ -101,7 +101,7 @@ Sovereign cloud distributed to edge sites within jurisdiction. Right for workloa
 
 ## Cozystack as sovereign cloud foundation
 
-Cozystack is open-source (Apache 2.0), CNCF Project-governed (community-governed roadmap), supports air-gap deployment, customer-controlled encryption keys, and audit-trail completeness.
+Cozystack is open-source (Apache 2.0), CNCF Project-governed (community-governed roadmap), supports air-gap deployment and opt-in volume encryption at rest (LINSTOR and LUKS) with a passphrase you hold; audit logs have configurable retention (default 30 days) and can be shipped to your own immutable store.
 
 Specifically for sovereign cloud builders:
 - Multi-tenant Tenant CRD model — for customer-facing sovereign cloud product

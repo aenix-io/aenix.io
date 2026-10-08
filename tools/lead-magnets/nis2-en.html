@@ -2,7 +2,7 @@
   <div class="meta">
     <span class="brandline">ÆNIX</span>
     <span class="doctitle">NIS2 Compliance Readiness Checklist</span>
-    <span class="versionline">Aenix · aenix.io · v1.1 — September 2026</span>
+    <span class="versionline">Ænix · aenix.io · v1.2 — October 2026</span>
   </div>
   <div class="cover__mark">ÆNIX</div>
   <div class="cover__rule"></div>
@@ -10,7 +10,7 @@
   <p class="cover__subtitle">35 architectural control points to assess whether your cloud platform supports the cybersecurity risk-management measures required by Directive (EU) 2022/2555.</p>
   <div class="cover__spacer"></div>
   <div class="cover__audience">For CISOs, security &amp; compliance leads · aenix.io</div>
-  <p class="cover__strapline"><b>35 architectural control points for essential and important entities.</b> Aligned to Directive (EU) 2022/2555. Member State transposition deadline 17 October 2024. v1.1 — September 2026.</p>
+  <p class="cover__strapline"><b>35 architectural control points for essential and important entities.</b> Aligned to Directive (EU) 2022/2555. Member State transposition deadline 17 October 2024. v1.2 — October 2026.</p>
 </section>
 
 <h1 class="doc-h">How to use this checklist</h1>
@@ -132,12 +132,12 @@
 
 <h1 class="doc-h newpage">Architecture-level recommendations</h1>
 
-<p class="lead">For most NIS2 controls, architecture is the most leveraged remediation surface. Where the underlying platform structurally supports tenant isolation, customer-controlled encryption, an immutable audit trail, controlled supplier access, and tested exit/restore mechanics, many of the 35 checkpoints become consequences of design rather than separate compliance projects.</p>
+<p class="lead">For most NIS2 controls, architecture is the most leveraged remediation surface. Where the underlying platform structurally supports tenant isolation, encryption at rest that you configure, audit logs you can export to storage you control, controlled supplier access, and tested exit/restore mechanics, many of the 35 checkpoints become consequences of design rather than separate compliance projects.</p>
 
 <h3 class="plain">When architecture closes NIS2 gaps structurally</h3>
 <ul class="bullets">
   <li>Tenant CRD multi-tenancy addresses <span class="art">Art. 21(2)(a)</span> network segmentation and isolation between trust zones.</li>
-  <li>Customer-controlled encryption at platform, storage, and observability layers addresses <span class="art">Art. 21(2)(h)</span>.</li>
+  <li>Encrypted backups, TLS in transit and opt-in volume encryption at rest (for example LUKS with a passphrase you hold) address part of <span class="art">Art. 21(2)(h)</span>; key management remains a process you design around them.</li>
   <li>Air-gap support addresses sovereign / regulator-isolated workload requirements where national law goes beyond the NIS2 baseline.</li>
   <li>Audit-trail completeness (provider-side via VictoriaLogs, customer-side via export) addresses <span class="art">Art. 21(2)(i)</span> and authority-access expectations.</li>
   <li>Tested exit and restore mechanics address <span class="art">Art. 21(2)(c)</span> BCP and the supplier-exit expectations of <span class="art">Art. 21(2)(d)</span>.</li>
@@ -152,7 +152,7 @@
 
 <h3 class="plain">When a partial retrofit is genuinely insufficient</h3>
 <ul class="bullets">
-  <li>VMware-Cloud-Director-based platforms struggle with portability (<span class="art">Art. 21(2)(d)</span> supplier exit) and customer-controlled keys at every layer.</li>
+  <li>VMware-Cloud-Director-based platforms struggle with portability (<span class="art">Art. 21(2)(d)</span> supplier exit).</li>
   <li>Vendor-managed-only encryption, especially for backups and observability, fails <span class="art">Art. 21(2)(h)</span> where regulator scrutiny is high.</li>
   <li>Multi-tenant SaaS shared infrastructure struggles with audit-trail completeness expectations under authority scrutiny.</li>
 </ul>
@@ -163,15 +163,15 @@
 
 <h1 class="doc-h newpage">NIS2-aligned cloud architecture — reference pattern</h1>
 
-<p class="lead">A platform built around isolation, customer-controlled cryptography, and immutable auditability can close most Article 21 controls at the platform layer rather than as 35 compensating procedures. The reference pattern below stacks three layers.</p>
+<p class="lead">A platform built around tenant isolation, encryption you configure, and audit logs exported to storage you control can address many Article 21 controls at the platform layer rather than as 35 compensating procedures. The reference pattern below stacks three layers.</p>
 
 <div class="layer">
   <h4>Tenant plane</h4>
-  <p>Isolated tenants side by side — for example a production tenant, an audit-isolated tenant, a sovereign-workloads tenant, and a test tenant. Each carries its own encryption keys, audit-log stream, and MFA-gated access.</p>
+  <p>Isolated tenants side by side — for example a production tenant, an audit-isolated tenant, a sovereign-workloads tenant, and a test tenant. Each carries its own network policies, audit-log stream, and MFA-gated access; volume encryption is enabled per storage class where the data needs it.</p>
 </div>
 <div class="layer">
   <h4>Platform control plane</h4>
-  <p>A single Kubernetes-native control plane providing the Tenant CRD, identity (OIDC), NetworkPolicy / Cilium segmentation, encryption (BYOK / HYOK), an audit pipeline (VictoriaLogs to an immutable backend), and backup orchestration.</p>
+  <p>A single Kubernetes-native control plane providing the Tenant CRD, identity (OIDC), NetworkPolicy / Cilium segmentation, opt-in volume encryption at rest, an audit pipeline (VictoriaLogs, exportable to an immutable store you run), and backup orchestration.</p>
 </div>
 <div class="layer">
   <h4>Substrate</h4>
@@ -183,7 +183,7 @@
     <tr><th>Architecture element</th><th>NIS2 control area</th></tr>
   </thead>
   <tbody>
-    <tr><td>Per-tenant encryption keys</td><td><span class="art">Art. 21(2)(h)</span> Customer-controlled encryption</td></tr>
+    <tr><td>Volume encryption at rest (opt-in)</td><td><span class="art">Art. 21(2)(h)</span> Cryptography and encryption</td></tr>
     <tr><td>NetworkPolicy / Cilium</td><td><span class="art">Art. 21(2)(a)</span> Segmentation</td></tr>
     <tr><td>Audit pipeline</td><td><span class="art">Art. 21(2)(i)</span> <span class="art">Art. 23</span></td></tr>
     <tr><td>Multi-datacenter + DR site</td><td><span class="art">Art. 21(2)(c)</span> Continuity &amp; DR</td></tr>
@@ -192,12 +192,12 @@
   </tbody>
 </table>
 
-<p class="lead">This pattern is not the only valid NIS2-aligned architecture — but it illustrates how isolation, customer-controlled cryptography, and immutable auditability close most Article 21 controls at the platform layer.</p>
+<p class="lead">This pattern is not the only valid NIS2-aligned architecture — but it illustrates how isolation, encryption you configure, and exportable audit logs address many Article 21 controls at the platform layer.</p>
 
 <h1 class="doc-h newpage">Next steps</h1>
 
 <div class="option"><b>Option 1 — Self-remediate using this checklist.</b> Walk through it with security, platform, and compliance teams. Convert unchecked boxes into a 90-day remediation plan.</div>
-<div class="option"><b>Option 2 — NIS2-aligned readiness engagement with Aenix (4–6 weeks).</b> We run the checklist with you, review architecture against each control, and produce a remediation plan with effort estimates and authority-narrative drafts. Fixed-fee engagement.</div>
+<div class="option"><b>Option 2 — Platform Readiness Assessment with Ænix (14 or 28 days).</b> We run the checklist with you, review architecture against each control, and produce a remediation plan with effort estimates and authority-narrative drafts. Fixed-fee engagement.</div>
 <div class="option"><b>Option 3 — Joint NIS2 + DORA + GDPR mapping.</b> For entities in scope of multiple frameworks. We map controls to avoid duplicated work and surface where one framework satisfies several.</div>
 
 <div class="cta">Schedule a discovery call: <span>aenix.io/services/platform-readiness-assessment/</span></div>
@@ -209,8 +209,8 @@
   <li><b>Ad-hoc:</b> on material amendments to NIS2 itself or to sectoral lex-specialis.</li>
 </ul>
 
-<p class="lead">Aenix is the team behind Cozystack (a CNCF project) and offers the Ænix Platform — our commercial productized offering based on Cozystack. aenix.io</p>
+<p class="lead">Ænix created Cozystack (a CNCF project) and co-maintains it, and builds the Ænix Public Cloud, Private Cloud and AI platforms on it. aenix.io</p>
 
 <div class="closing">
-  <b>Aenix · aenix.io · NIS2 Compliance Readiness Checklist · v1.1 — September 2026.</b> Aenix is the team behind Cozystack (CNCF, Apache 2.0).
+  <b>Ænix · aenix.io · NIS2 Compliance Readiness Checklist · v1.2 — October 2026.</b> Ænix created and co-maintains Cozystack (CNCF, Apache 2.0).
 </div>

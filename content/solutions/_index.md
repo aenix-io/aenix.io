@@ -32,6 +32,7 @@ hreflang_de: /de/loesungen/
 
 - **[Sovereign AI](/solutions/sovereign-ai/)** — GPU infrastructure for AI workloads on customer-controlled hardware. Pairs with: AI Platform. Free [Sovereign AI Decision Guide](/resources/sovereign-ai-decision-guide/).
 - **[Private LLM](/solutions/private-llm/)** — open-weight models, RAG and fine-tuning on your own GPUs, weights and logs on your side of the boundary. Pairs with: AI Platform.
+- **[GPU as a service](/solutions/gpu-as-a-service/)** — turn a fleet of GPU servers into a cloud you can sell: tenants, isolation between customers, self-service ordering and per-tenant usage data for your billing. Pairs with: Public Cloud Platform plus AI Platform.
 - **[GPU cloud bursting](/solutions/gpu-cloud-bursting/)** — own the baseline, burst peaks into public or sovereign clouds under one Cluster API. Pairs with: AI Platform plus Public Cloud Platform.
 
 ### Cost / consolidation triggers

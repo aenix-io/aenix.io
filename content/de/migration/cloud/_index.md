@@ -19,7 +19,7 @@ related_pages:
   - /de/migration/vmware/
 hreflang_en: /migration/cloud/
 direct_answer: |
-  **Die richtige Frage bei einer Cloud-Migration 2026 lautet: Welche Workloads laufen wo am besten? Die Antwort ist immer häufiger eine Mischung aus Public Cloud, Private Cloud und zurückgeholter On-Premises-Kapazität — nicht die Vorgabe, alles in die Public Cloud zu verlagern. Ænix führt strukturierte Cloud-Migrationen nach drei verbreiteten Mustern durch: Public-Cloud-Repatriation aus Kosten- oder Souveränitätsgründen, VMware-Exit unter dem Subscription-Druck von Broadcom und Greenfield-Aufbau einer Private Cloud. Jede Migration beginnt mit einem Platform Readiness Assessment — Klassifizierung der Workloads, ehrliche TCO-Modellierung und eine Zielarchitektur —, bevor auch nur ein Workload umzieht. Das Team, das Ihre Migration umsetzt, hat Cozystack initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen; auf dieser Open-Source-Plattform landen die meisten Migrationen.**
+  **Die richtige Frage bei einer Cloud-Migration 2026 lautet: Welche Workloads laufen wo am besten? Die Antwort ist immer häufiger eine Mischung aus Public Cloud, Private Cloud und zurückgeholter On-Premises-Kapazität — nicht die Vorgabe, alles in die Public Cloud zu verlagern. Ænix führt strukturierte Cloud-Migrationen nach drei verbreiteten Mustern durch: Public-Cloud-Repatriation aus Kosten- oder Souveränitätsgründen, VMware-Exit unter dem Subscription-Druck von Broadcom und Greenfield-Aufbau einer Private Cloud. Jede Migration beginnt mit einem Platform Readiness Assessment — Klassifizierung der Workloads, ehrliche TCO-Modellierung und eine Zielarchitektur —, bevor auch nur ein Workload umzieht. Das Team, das Ihre Migration umsetzt, hat Cozystack entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen; auf dieser Open-Source-Plattform landen die meisten Migrationen.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein strukturiertes Cloud-Migrationsprojekt — Repatriation, VMware-Exit oder Greenfield-Private-Cloud —, gesteuert von der Platzierung der Workloads, nicht von einem festgelegten Ziel"
@@ -57,7 +57,7 @@ service:
 
 **Cloud-Migration ist 2026 eine Platzierungsentscheidung pro Workload, kein Wettlauf in die Public Cloud. Ænix führt strukturierte Cloud-Migrationen durch — Public-Cloud-Repatriation, VMware-Exit und Greenfield-Aufbau einer Private Cloud —, bei denen das Ziel aus dem Workload abgeleitet und nicht vorab festgelegt wird.**
 
-Das Team, das Ihre Migration umsetzt, hat [Cozystack](/de/produkte/cozystack/) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen — die Open-Source-Plattform, auf der die meisten Private-Cloud-Migrationen landen. Bei Assessment, Planung der Reihenfolge und Umsetzung arbeiten wir Seite an Seite mit Ihren Engineers.
+Das Team, das Ihre Migration umsetzt, hat [Cozystack](/de/produkte/cozystack/) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen — die Open-Source-Plattform, auf der die meisten Private-Cloud-Migrationen landen. Bei Assessment, Planung der Reihenfolge und Umsetzung arbeiten wir Seite an Seite mit Ihren Engineers.
 
 > **Passt zu:** einer der **[Ænix-Plattformen](/de/produkte/)** — das Ziel richtet sich nach dem Käuferprofil. Wer Cloud an externe Kunden verkauft (Hoster, MSPs, Telcos, nationale Betreiber), landet auf der **[Public Cloud Platform](/de/produkte/public-cloud-platform/)**; regulierte Organisationen, die Cloud für die eigenen Entwickler betreiben, auf der **[Private Cloud Platform](/de/produkte/private-cloud-platform/)**, deren Developer-Self-Service-Schicht die interne PaaS ersetzt; GPU- und Inferenz-Bestände auf der **[AI Platform](/de/produkte/ai-platform/)**.
 
@@ -180,4 +180,4 @@ Ein durchgerechnetes Beispiel für eine gemischte Platzierung zeigt die **[Falls
 
 ---
 
-*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an — Public Cloud, Private Cloud und AI.*
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an — Public Cloud, Private Cloud und AI.*

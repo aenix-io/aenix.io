@@ -1,7 +1,7 @@
 ---
 title: "Focus on today: how we built aeman, a daily planning board for engineers on top of GitHub Projects"
 seo_title: "aeman: a daily planning board on GitHub Projects"
-description: "How Aenix built aeman, an open-source daily planning board for engineers that uses GitHub Projects v2 as its only storage and a Kubernetes-style watch API."
+description: "How Ænix built aeman, an open-source daily planning board for engineers that uses GitHub Projects v2 as its only storage and a Kubernetes-style watch API."
 date: "2026-07-24"
 author: "Andrei Kvapil"
 type: "article"
@@ -13,7 +13,7 @@ hreflang_de: /de/blog/2026/07/fokus-auf-heute-aeman-tagesplanung-fuer-entwickler
 ---
 
 
-My name is Andrei Kvapil, and I’m the founder of Ænix — we build Cozystack, an open source cloud platform, and we help companies build infrastructure. We’re a fully remote company: 15 people at the time of writing (July 2026), several teams (two reliability teams, a development team, marketing, back office, and so on), spread across several time zones. We started out living in GitHub Projects, but the moment we began to grow we ran straight into the limits of our own process: tasks scattered across boards and chats, half of the morning sync spent figuring out what was even in flight, and unplanned work eating entire days without leaving a trace anywhere.
+My name is Andrei Kvapil, and I’m a co-founder of Ænix — we created Cozystack, an open source cloud platform, and co-maintain it, and we help companies build infrastructure. We’re a fully remote company: 15 people at the time of writing (July 2026), several teams (two reliability teams, a development team, marketing, back office, and so on), spread across several time zones. We started out living in GitHub Projects, but the moment we began to grow we ran straight into the limits of our own process: tasks scattered across boards and chats, half of the morning sync spent figuring out what was even in flight, and unplanned work eating entire days without leaving a trace anywhere.
 
 This article is the story of how we fixed that with aeman — a tool we built ourselves and recently [open sourced](https://github.com/aenix-io/aeman). But I have to start further back.
 
@@ -183,7 +183,7 @@ For teamwork there’s a multi-user mode. The repository ships a ready-made dock
 
 The whole company has been living on aeman for a few weeks now. Product managers and team leads quickly took to the new approach to planning, though — as with any new tool — there was some skepticism. But the main effect turned out to be a different one: in the morning every engineer knows what they’ll be working on today, unplanned work has stopped being invisible, and the daily syncs have become far more constructive and focused.
 
-The project is open source under the Apache-2.0 license and available on GitHub: [github.com/aenix-io/aeman](https://github.com/aenix-io/aeman).
+The project is open source under the Apache-2.0 licence and available on GitHub: [github.com/aenix-io/aeman](https://github.com/aenix-io/aeman).
 
 If you decide to try aeman, I’d be glad to hear any feedback, any problems you run into, and your stories about how planning works where you are.
 

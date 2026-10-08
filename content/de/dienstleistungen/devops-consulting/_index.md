@@ -13,7 +13,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/devops-consulting/
 direct_answer: |
-  **DevOps Consulting von Ænix ist ein praktisches Engineering-Projekt, keine Beratung mit Foliensätzen: Senior Engineers, die Plattformen in Produktion bauen und betreiben, arbeiten an der Seite Ihres internen Teams und führen CI/CD und GitOps auf Plattformebene (Argo CD oder Flux), Infrastructure as Code (Terraform, OpenTofu, Crossplane), Observability (VictoriaMetrics und VictoriaLogs) und SRE-Praktiken ein; zurück bleiben schriftliche Runbooks, die dem Kunden gehören. Das passt zu Organisationen, deren CI/CD funktioniert, deren Betrieb aber reaktiv läuft, deren Tooling zersplittert ist oder die unter äußerem Druck stehen — durch Aufsicht, Wachstum oder technische Schulden. Ænix hat Cozystack initiiert, ein CNCF-Projekt unter Apache 2.0; die eingeführten Praktiken tragen sich daher unabhängig von Ænix, und der Fortschritt wird an DORA-Metriken und der Einhaltung von SLOs gemessen, nicht an Workshop-Ergebnissen.**
+  **DevOps Consulting von Ænix ist ein praktisches Engineering-Projekt, keine Beratung mit Foliensätzen: Senior Engineers, die Plattformen in Produktion bauen und betreiben, arbeiten an der Seite Ihres internen Teams und führen CI/CD und GitOps auf Plattformebene (Argo CD oder Flux), Infrastructure as Code (Terraform, OpenTofu, Crossplane), Observability (VictoriaMetrics und VictoriaLogs) und SRE-Praktiken ein; zurück bleiben schriftliche Runbooks, die dem Kunden gehören. Das passt zu Organisationen, deren CI/CD funktioniert, deren Betrieb aber reaktiv läuft, deren Tooling zersplittert ist oder die unter äußerem Druck stehen — durch Aufsicht, Wachstum oder technische Schulden. Ænix hat Cozystack entwickelt, ein CNCF-Projekt unter Apache 2.0; die eingeführten Praktiken tragen sich daher unabhängig von Ænix, und der Fortschritt wird an DORA-Metriken und der Einhaltung von SLOs gemessen, nicht an Workshop-Ergebnissen.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein DevOps-Consulting-Projekt mit Senior Engineers, das produktive CI/CD-, IaC-, Observability- und SRE-Praktiken einführt und die Verantwortung an das interne Team übergibt"
@@ -51,7 +51,7 @@ faq:
 
 > **Passt zu:** **[Developer Self-Service](/de/produkte/private-cloud-platform/)**, wenn die DevOps-Arbeit zu einer vollständigen Internal Developer Platform anwächst. Für technische Themen auf bestehender Infrastruktur: eigenständiges Consulting-Projekt.
 
-Ænix hat [Cozystack](/de/produkte/cozystack/) initiiert, ein Open-Source-CNCF-Projekt, das bei Service-Providern, Banken und KI-Betreibern produktiv läuft. In unseren DevOps-Consulting-Projekten verstärken unsere Engineers Ihr Team — für Assessment, Transformation oder dauerhaften Betrieb.
+Ænix hat [Cozystack](/de/produkte/cozystack/) entwickelt, ein Open-Source-CNCF-Projekt, das bei Service-Providern, Banken und KI-Betreibern produktiv läuft. In unseren DevOps-Consulting-Projekten verstärken unsere Engineers Ihr Team — für Assessment, Transformation oder dauerhaften Betrieb.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
@@ -242,6 +242,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix hat Cozystack initiiert — ein CNCF-Projekt, eine zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes) mit OpenSSF Best Practices Badge.*
+*Ænix hat Cozystack entwickelt und pflegt es mit — ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices Badge.*
 
 <!-- /BLOCK 12 -->

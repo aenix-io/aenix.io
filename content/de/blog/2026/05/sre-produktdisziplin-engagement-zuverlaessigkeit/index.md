@@ -33,18 +33,18 @@ quiz:
         - { text: "Hybrid: eingebettet plus zentrale Funktion", correct: true }
         - { text: "Ausschließlich eine zentrale SRE-Funktion", correct: false }
       explanation: "Das hybride Modell (eingebettet plus zentral) wird für Organisationen mit über 500 Engineers und mehreren Geschäftsbereichen empfohlen; unterhalb von 500 Engineers lässt sich die doppelte Investition kaum amortisieren."
-    - q: "Welchen Observability-Stack empfiehlt Aenix standardmäßig für SRE-Engagements?"
+    - q: "Welchen Observability-Stack empfiehlt Ænix standardmäßig für SRE-Engagements?"
       options:
         - { text: "Prometheus, Loki und Jaeger", correct: false }
         - { text: "Datadog SaaS als einheitliches Backend", correct: false }
         - { text: "VictoriaMetrics, VictoriaLogs, OpenTelemetry", correct: true }
-      explanation: "Die Standardempfehlung von Aenix lautet VictoriaMetrics + VictoriaLogs + OpenTelemetry — selbst gehostet, souveränitätsfreundlich, im großen Maßstab mit weniger Overhead als Prometheus + Loki und ohne Datenabfluss an einen SaaS-Anbieter."
+      explanation: "Die Standardempfehlung von Ænix lautet VictoriaMetrics + VictoriaLogs + OpenTelemetry — selbst gehostet, souveränitätsfreundlich, im großen Maßstab mit weniger Overhead als Prometheus + Loki und ohne Datenabfluss an einen SaaS-Anbieter."
     - q: "Wann passt ein SRE-Engagement laut Artikel schlecht?"
       options:
         - { text: "Bei einer Feuerwehr-Kultur ohne Rückendeckung der Führung", correct: true }
         - { text: "Wenn die Organisation 100–200 Engineers hat", correct: false }
         - { text: "Wenn Platform Engineering bereits intern existiert", correct: false }
-      explanation: "Ohne Rückendeckung des Managements für den Wandel der Disziplin verkommt ein SRE-Engagement zu einem Incident-Response-Training — hilfreich, aber nicht das, was Aenix anbietet. Ein bestehendes Platform Engineering ist sogar ein deutliches Signal für eine gute Passung."
+      explanation: "Ohne Rückendeckung des Managements für den Wandel der Disziplin verkommt ein SRE-Engagement zu einem Incident-Response-Training — hilfreich, aber nicht das, was Ænix anbietet. Ein bestehendes Platform Engineering ist sogar ein deutliches Signal für eine gute Passung."
 ---
 
 SRE — Site Reliability Engineering — gehört zu den am weitesten

@@ -27,7 +27,7 @@ quick_facts:
     value: "Ænix holds no hyperscaler partnership; recommendations are not shaped by partnership economics"
   - label: "Typical savings range"
     value: "15-25% addressable from cost leaks before any architectural change; 30-60% better unit economics when sustained workloads move to customer-controlled hardware"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -269,7 +269,7 @@ Or read more:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix created Cozystack — a CNCF Sandbox project, Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. We run cloud-cost engagements and platform-engineering programmes.*
+*Ænix created Cozystack — a CNCF Sandbox project, CNCF Certified Kubernetes distribution, OpenSSF Best Practices — and co-maintains it. We run cloud-cost engagements and platform-engineering programmes.*
 
 <!-- /BLOCK 12 -->
 

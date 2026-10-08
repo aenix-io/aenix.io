@@ -32,7 +32,7 @@ quiz:
         - { text: "6–12 Monate durchgängig (schnelles Greenfield-Programm)", correct: false }
         - { text: "12–24 Monate durchgängig (Migration innerhalb eines Kalenderjahres)", correct: false }
         - { text: "24–48 Monate insgesamt; erste Workloads auf Cozystack nach 12–18 Monaten", correct: true }
-      explanation: "Die Modernisierung bei einer Tier-1-Telco dauert insgesamt 24–48 Monate, die ersten produktiven Workloads laufen nach 12–18 Monaten auf Cozystack. Der Track zur VNF-Modernisierung läuft parallel über 18–36 Monate. Mittelgroße Unternehmen (200–500 Nodes) kommen auf 12–24 Monate."
+      explanation: "Die Modernisierung bei einer Tier-1-Telco dauert insgesamt 24–48 Monate, die ersten produktiven Workloads laufen nach 12–18 Monaten auf Cozystack. Der Track zur VNF-Modernisierung läuft parallel über 18–36 Monate. Mittelgroße Deployments kommen auf 4–12 Monate, bei komplexen Provider-Netzwerken oder OpenStack-APIs, die Mandanten direkt nutzen, auf 12–18 Monate."
     - q: "Welche drei Ansätze beschreibt der Artikel für den Umgang mit zertifizierten VNFs bei der Migration einer Tier-1-Telco?"
       options:
         - { text: "Neuzertifizierung erzwingen, VNF aufgeben oder Hersteller wechseln", correct: false }
@@ -158,7 +158,7 @@ Ergebnis: ein Migrationsplan mit Workload-Kategorien (jetzt migrieren /
 später migrieren / bleiben / neu architekturieren), Risikomarkierungen und
 Optionen für die Phasenplanung.
 
-### Phase 1 — Cozystack-Fundament (2–4 Monate)
+### Phase 1 — Cozystack-Fundament
 
 Hardwarebeschaffung (oder in späteren Phasen Wiederverwendung der Kapazität,
 die OpenStack freigibt). Die Cozystack-Plattform wird auf neuer Hardware
@@ -175,7 +175,7 @@ Cozystack-Tenant, verschachtelte Projects werden zu verschachtelten Tenants.
 Endzustand: Die Cozystack-Plattform läuft, ist intern validiert und bereit
 für das Onboarding der Workloads.
 
-### Phase 2 — Betriebswerkzeuge (2–3 Monate)
+### Phase 2 — Betriebswerkzeuge
 
 Observability-Stack (VictoriaMetrics + VictoriaLogs), integriert in das SIEM
 des Kunden. Backup/DR mit Velero plus anwendungsspezifischen Mustern.
@@ -186,7 +186,7 @@ Kunden).
 Endzustand: Werkzeuge in Produktionsbetriebsqualität sind vorhanden, die
 Schulung des Teams läuft.
 
-### Phase 3 — Workload-Migration in Kohorten (4–12 Monate)
+### Phase 3 — Workload-Migration in Kohorten
 
 Es migrieren jeweils Kohorten von 50–200 Instanzen. Pro Kohorte:
 
@@ -209,14 +209,14 @@ Es migrieren jeweils Kohorten von 50–200 Instanzen. Pro Kohorte:
    Cozystack-Endpunkt umgeschaltet. Die OpenStack-Instanz bleibt für ein
    Rollback-Fenster von 7–30 Tagen verfügbar.
 
-### Phase 4 — Betriebsübergabe (2–4 Monate, parallel zu Phase 3)
+### Phase 4 — Betriebsübergabe (parallel zu Phase 3)
 
 Die Ænix-Engineers reduzieren ihre direkte Beteiligung. Das Betriebsteam des
 Kunden übernimmt Incidents im First- und Second-Level. Der Ænix-Support
 (Plus- oder Enterprise-Stufe für 24×7) läuft für die Eskalation weiter. Übergabe der Dokumentation.
 Sitzungen zum Wissenstransfer.
 
-### Phase 5 — Stilllegung von OpenStack (2–6 Monate)
+### Phase 5 — Stilllegung von OpenStack
 
 Sobald Migrationskohorten abgeschlossen sind, wird OpenStack-Kapazität in
 den Cozystack-Cluster überführt. Die Hardware ist dieselbe
@@ -285,12 +285,12 @@ Mittelgroßes Unternehmen (200–500 Nodes, einfache Mandantenstruktur,
 überwiegend Standard-Networking):
 
 - Phase 0: 14 oder 28 Tage
-- Phase 1: 2–3 Monate
-- Phase 2: 1–2 Monate
-- Phase 3: 6–12 Monate
-- Phase 4–5: 3–6 Monate
+- Phasen 1–5: Fundament, Betriebswerkzeuge, Kohortenmigration, Übergabe
+  und Stilllegung, teilweise parallel
 
-**Gesamt: 12–24 Monate**
+**Gesamt: 4–12 Monate für ein mittelgroßes Deployment; 12–18 Monate bei
+komplexen Provider-Netzwerken oder OpenStack-APIs, die Mandanten direkt
+nutzen**
 
 Tier-1-Telco (1.000–5.000 Nodes, komplexe Mandantenstruktur, zertifizierte
 VNF-Umgebungen, NFV-spezifisches Networking):
@@ -339,9 +339,11 @@ Schlechte Passung:
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**
   (Festpreis, 14 Tage fokussiert oder 28 Tage vollständig) — Workload-Kategorien,
   Optionen für die Phasenplanung, Risikomarkierungen
-- **Pilot-Deployment** (2–3 Monate) — Cozystack wird aufgebaut, 50–100
+- **Pilot-Deployment** — Cozystack wird aufgebaut, 50–100
   Workloads werden migriert, Abrechnungs- und Betriebsabläufe validiert
-- **Migration in Kohorten** (6–24 Monate) — Workload-Migration in Kohorten
+- **Migration in Kohorten** — Workload-Migration in Kohorten; insgesamt
+  4–12 Monate für ein mittelgroßes Deployment, 12–18 Monate bei komplexen
+  Provider-Netzwerken
 - **Stilllegung von OpenStack** (parallel zur Kohortenmigration) —
   schrittweise, sobald Kohorten abgeschlossen sind
 - **Support-Subskription** (laufend) — Plus- oder Enterprise-Stufe für

@@ -203,7 +203,7 @@ faq:
 <div class="ws-wrap ws-story__row">
 <div class="ws-story__text">
 <h2 class="ws-h2" id="ws-vmware-h">What is happening to VMware</h2>
-<p>After Broadcom bought VMware, the familiar model ended: perpetual licenses are no longer sold, only subscriptions remain, and renewal bills have grown severalfold — not by percentages, but by multiples. Support for vSphere&nbsp;7 ended in the autumn of 2025, so "leaving everything as is" stopped being a free option too.</p>
+<p>After Broadcom bought VMware, the familiar model ended: perpetual licences are no longer sold, only subscriptions remain, and renewal bills have grown severalfold — not by percentages, but by multiples. Support for vSphere&nbsp;7 ended in the autumn of 2025, so "leaving everything as is" stopped being a free option too.</p>
 <p>Meanwhile, your infrastructure works, your team knows it, and nobody wants to break it. The real question sounds different: what can replace VMware without losing your data, your people, or your control — and without ending up dependent on the next vendor.</p>
 </div>
 <div class="ws-story__visual ws-story__visual--legacy" aria-hidden="true">
@@ -361,7 +361,7 @@ faq:
 <h2 class="ws-h2" id="ws-speaker-h">Your host</h2>
 <div class="ws-speaker__name">Timur Tukaev</div>
 <div class="ws-speaker__role">Cozystack maintainer · Ænix co-founder</div>
-<p class="ws-speaker__bio">Timur is a maintainer of the open Cozystack platform and a co-founder of Ænix, the company behind it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
+<p class="ws-speaker__bio">Timur is a maintainer of the open Cozystack platform and a co-founder of Ænix, the company that created Cozystack and co-maintains it. The workshop format is his: no marketing slides, most of the time at the terminal, and the platform's weak points named before its strong ones.</p>
 </div>
 </div>
 </section>

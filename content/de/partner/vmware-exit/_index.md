@@ -127,7 +127,7 @@ Kostenlos, ohne Vorbereitung. Wir ordnen Ihren Kundenstamm den Plattformen zu, g
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft darauf drei Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Services.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft darauf drei Plattformen — Public Cloud, Private Cloud und AI — sowie Support und Services.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/partner/vmware-exit/ ; hreflang en → /partners/vmware-exit/, x-default EN.

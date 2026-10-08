@@ -31,98 +31,98 @@ related_pages:
   <h2>Model rules — three cost articles</h2>
   <ul>
     <li><strong>TCO = Software + Migration + Personnel.</strong> Exactly three articles, nothing else — every total on this site is the sum of these three lines.</li>
-    <li><strong>Hardware and facilities are identical on both sides and excluded</strong> (servers, amortization, electricity, PUE, colocation, bandwidth). The internal sizing chain — CPU oversubscription 3:1, RAM target utilization 85%, raw storage = usable × per-platform replication factor (Ceph/LINSTOR 3.0, vSAN FTT=1 2.0, Nutanix RF2 2.0), nodes = max of the three ceilings + HA headroom (N+1, minimum +15%) — exists only to produce the node/core/socket counters that per-core, per-socket and per-node licenses bill against. Hardware and facilities are excluded because the estate is identical at equal node count; where storage replication differs (e.g. the Cozystack 3-replica option against a 2-replica competitor) node counts diverge, so compare at like-for-like replication. By default Cozystack uses 2 copies — like-for-like with vSAN FTT=1 and Nutanix RF2.</li>
-    <li><strong>Software</strong> = licenses/subscriptions + vendor support + extra-product service lines. VMware phantom cores (16/socket minimum; 72/order for new purchases) are shown as their own line. When the K8s workload requires a separately paid product (OpenShift: containers need OCP on top of OVE), it appears as a visible extra-product line: OCP ≈ $875/core/yr (third-party reported) billed on K8s worker vCPUs at the Red Hat virtualization unit of 2 vCPU = 1 core-equivalent — a dedicated bare-metal pool would overstate the competitor. Cozystack support is priced per physical node/year at real Ænix 2026 prices across four tiers: business-hours $1,500, business-plus $3,600 (unlimited incidents), 24×7 $6,600, 24×7-premium $12,000. The default comparison uses the 24×7 tier. Renewal uplift and late-renewal penalties apply only after a renewal event inside the horizon; on the default 5-year horizon a 3-year prepaid contract renews once (year 3) so uplift applies to years 4–5, while a 3-year horizon sees zero uplift; uplift is not compounded across renewals (conservative toward the competitor). Support tiers switch cost or show an explicit status (included in base / tier unavailable / max tier) — never a silent downgrade; the business-plus tier has no competitor equivalent, so competitors are priced at their business-hours support price with a "no equivalent tier" flag.</li>
-    <li><strong>Migration</strong> (one-time, target platform only): a fixed setup of $8,000 plus a marginal $140/VM by default, and an optional one-time "extras" bucket (default $0) for PS/training/consulting. Most of the work — discovery of the estate, standing up the target, network and storage cutover design, the runbook and rollback plan, the first machines by hand — is paid once whatever the estate size; only conversion and cutover of each machine is marginal, and automated tooling (Forklift / virt-v2v) keeps pushing that down. Both figures are owner estimates fitted to one field data point (50 VMs ≈ $15K total, typical migrations $10–20K); one observation cannot fix two parameters, so the split is taken at the end least favourable to Cozystack — $13,000 + $40/VM would match the same point and put a 1,000-VM migration at a third of what this model charges. Uniform for all directions; the migration duration only shapes the cumulative curve, never the sum. <em>Both parameters await measured hours from completed migrations of different sizes.</em></li>
-    <li><strong>Personnel</strong> (two-part days-per-month model, owner estimate — Ænix field data): days/mo = (base node-ops + service ops) × tier-coverage factor. Base node-ops = nodes × 0.25 day/mo × orchestration factor (table below) — anchored on physical hosts, not VMs, because per-host toil is what scales an operations team. Cost = days/mo × (monthly platform-engineer salary / 21.7 working days) × 1.28 employer overhead (IDC). Tier coverage: a selected 24×7-class tier that the vendor does not offer at any price (Proxmox, self-managed OpenStack) → ×1.5 self-managed on-call on (base + service) days, flagged; otherwise ×1.0. There is no ×3 multiplier and no compounding.</li>
-    <li><strong>Services</strong> (owner estimate): three service types are part of the default workload — K8s clusters, managed databases and other managed services (caches/queues/buckets/LB) — counts SMB 1 + 2 + 2; Mid 3 + 8 + 6; Enterprise 10 + 30 + 20 — a fleet runs services, not only VMs. Each platform covers them per its capability class: <em>managed</em> (included in the software price — residual 0.15 day/mo per cluster + 0.1 per DB + 0.05 per other service), <em>extra-product</em> (paid software on top, see the Software article) or <em>DIY</em> (personnel days: 0.75 day/mo per self-run cluster + 0.5 per self-run production DB + 0.3 per self-run cache/queue/bucket/LB — roughly a 5:1 gap to managed). Other managed services are managed only on Cozystack — no on-prem platform ships managed caches/queues from a catalog. Manual work is priced, never hidden. A K8s cluster adds 3 worker VMs of the average profile to capacity for every platform; other managed services add operational days only, no capacity.</li>
+    <li><strong>Hardware and facilities are identical on both sides and excluded</strong> (servers, amortization, electricity, PUE, colocation, bandwidth). The internal sizing chain — CPU oversubscription 3:1, RAM target utilization 85%, raw storage = usable × per-platform replication factor (Ceph/LINSTOR 3.0, vSAN FTT=1 2.0, Nutanix RF2 2.0), nodes = max of the three ceilings + HA headroom (N+1, minimum +15%) — exists only to produce the node/core/socket counters that per-core, per-socket and per-node licences bill against. Hardware and facilities are excluded because the estate is identical at equal node count; where storage replication differs (e.g. the Cozystack 3-replica option against a 2-replica competitor) node counts diverge, so compare at like-for-like replication. By default Cozystack uses 2 copies — like-for-like with vSAN FTT=1 and Nutanix RF2.</li>
+    <li><strong>Software</strong> = licences/subscriptions + vendor support + extra-product service lines. VMware phantom cores (16/socket minimum; 72/order for new purchases) are shown as their own line. When the K8s workload requires a separately paid product (OpenShift: containers need OCP on top of OVE), it appears as a visible extra-product line: OCP ≈ $875/core/yr (third-party reported) billed on K8s worker vCPUs at the Red Hat virtualization unit of 2 vCPU = 1 core-equivalent — a dedicated bare-metal pool would overstate the competitor. Cozystack support is priced per physical node/year at real Ænix 2026 prices across four tiers: business-hours $1,500, business-plus $3,600 (unlimited incidents), 24×7 $6,600, 24×7-premium $12,000. The default comparison uses the 24×7 tier. Renewal uplift and late-renewal penalties apply only after a renewal event inside the horizon; on the default 5-year horizon a 3-year prepaid contract renews once (year 3) so uplift applies to years 4–5, while a 3-year horizon sees zero uplift; uplift is not compounded across renewals (conservative toward the competitor). Support tiers switch cost or show an explicit status (included in base / tier unavailable / max tier) — never a silent downgrade; the business-plus tier has no competitor equivalent, so competitors are priced at their business-hours support price with a "no equivalent tier" flag.</li>
+    <li><strong>Migration</strong> (one-time, target platform only): a fixed setup of $8,000 plus a marginal $140/VM by default, and an optional one-time "extras" bucket (default $0) for PS/training/consulting. Most of the work — discovery of the estate, standing up the target, network and storage cutover design, the runbook and rollback plan, the first machines by hand — is paid once whatever the estate size; only conversion and cutover of each machine is marginal, and automated tooling (Forklift / virt-v2v) keeps pushing that down. Both figures are Ænix estimates fitted to one field data point (50 VMs ≈ $15K total, typical migrations $10–20K); one observation cannot fix two parameters, so the split is taken at the end least favourable to Cozystack — $13,000 + $40/VM would match the same point and put a 1,000-VM migration at a third of what this model charges. Uniform for all directions; the migration duration only shapes the cumulative curve, never the sum. <em>Both parameters await measured hours from completed migrations of different sizes.</em> These are indicative figures from the calculator ($8,000 + $140 per VM), not a price: the final migration quote follows scoping.</li>
+    <li><strong>Personnel</strong> (two-part days-per-month model, Ænix estimate — Ænix field data): days/mo = (base node-ops + service ops) × tier-coverage factor. Base node-ops = nodes × 0.25 day/mo × orchestration factor (table below) — anchored on physical hosts, not VMs, because per-host toil is what scales an operations team. Cost = days/mo × (monthly platform-engineer salary / 21.7 working days) × 1.28 employer overhead (IDC). Tier coverage: a selected 24×7-class tier that the vendor does not offer at any price (Proxmox, self-managed OpenStack) → ×1.5 self-managed on-call on (base + service) days, flagged; otherwise ×1.0. There is no ×3 multiplier and no compounding.</li>
+    <li><strong>Services</strong> (Ænix estimate): three service types are part of the default workload — K8s clusters, managed databases and other managed services (caches/queues/buckets/LB) — counts SMB 1 + 2 + 2; Mid 3 + 8 + 6; Enterprise 10 + 30 + 20 — a fleet runs services, not only VMs. Each platform covers them per its capability class: <em>managed</em> (included in the software price — residual 0.15 day/mo per cluster + 0.1 per DB + 0.05 per other service), <em>extra-product</em> (paid software on top, see the Software article) or <em>DIY</em> (personnel days: 0.75 day/mo per self-run cluster + 0.5 per self-run production DB + 0.3 per self-run cache/queue/bucket/LB — roughly a 5:1 gap to managed). Other managed services are managed only on Cozystack — no on-prem platform ships managed caches/queues from a catalog. Manual work is priced, never hidden. A K8s cluster adds 3 worker VMs of the average profile to capacity for every platform; other managed services add operational days only, no capacity.</li>
     <li><strong>Pricing basis:</strong> realized (typical negotiated) by default, list as a uniform toggle. Street prices are always labeled "third-party reported, not vendor list price".</li>
   </ul>
   <h2>Per-platform orchestration factors</h2>
-  <p>Orchestration-maturity multiplier on base node-ops days — <strong>owner field estimate, adjustable</strong> in the calculator (advanced section D); it reflects per-node manual toil relative to Cozystack (non-orchestrated platforms scale worse). Each value carries its one-line justification in the tooltip and in the source list below.</p>
+  <p>Orchestration-maturity multiplier on base node-ops days — <strong>Ænix field estimate, adjustable</strong> in the calculator (advanced section D); it reflects per-node manual toil relative to Cozystack (non-orchestrated platforms scale worse). Each value carries its one-line justification in the tooltip and in the source list below.</p>
   <table>
-    <caption>Personnel orchestration factors — owner field estimates (low confidence, adjustable), dataset v0.2.0.</caption>
+    <caption>Personnel orchestration factors — Ænix field estimates (low confidence, adjustable), dataset v0.2.0.</caption>
     <thead><tr><th>Platform</th><th>Factor</th><th>Why (one line)</th></tr></thead>
     <tbody>
       <tr>
         <td>Cozystack (+ Ænix support)</td>
         <td>×1</td>
-        <td>baseline orchestration maturity — tenant self-service and declarative operations set the per-node reference; non-orchestrated platforms scale worse (owner field estimate)</td>
+        <td>baseline orchestration maturity — tenant self-service and declarative operations set the per-node reference; non-orchestrated platforms scale worse (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>Nutanix NCI Pro</td>
         <td>×1</td>
-        <td>mature HCI operations, one-click lifecycle — reference-class (owner field estimate)</td>
+        <td>mature HCI operations, one-click lifecycle — reference-class (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>VMware VCF</td>
         <td>×1</td>
-        <td>mature VM operations tooling — the reference point (owner field estimate)</td>
+        <td>mature VM operations tooling — the reference point (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>VMware VVF</td>
         <td>×1</td>
-        <td>mature VM operations tooling — the reference point (owner field estimate)</td>
+        <td>mature VM operations tooling — the reference point (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>vSphere Standard</td>
         <td>×1</td>
-        <td>mature VM operations tooling — the reference point (owner field estimate)</td>
+        <td>mature VM operations tooling — the reference point (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>OpenShift Container Platform</td>
         <td>×1.1</td>
-        <td>orchestrated platform with declarative operations; slightly above the Cozystack reference because cluster, storage and database operators are separate lifecycles the team owns (owner field estimate)</td>
+        <td>orchestrated platform with declarative operations; slightly above the Cozystack reference because cluster, storage and database operators are separate lifecycles the team owns (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>OpenShift Platform Plus</td>
         <td>×1.1</td>
-        <td>same orchestration maturity as OCP; the bundle removes separate ACM/ACS/registry installs but databases remain the team’s lifecycle (owner field estimate)</td>
+        <td>same orchestration maturity as OCP; the bundle removes separate ACM/ACS/registry installs but databases remain the team’s lifecycle (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>OpenShift Virtualization Engine (OVE)</td>
         <td>×1.1</td>
-        <td>orchestration maturity: powerful operator model, slightly higher per-node toil than Cozystack from the learning curve and upgrade operations (owner field estimate)</td>
+        <td>orchestration maturity: powerful operator model, slightly higher per-node toil than Cozystack from the learning curve and upgrade operations (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>OpenNebula</td>
         <td>×1.3</td>
-        <td>orchestration maturity: thin ecosystem, more manual operations than the mainstream stacks → per-node toil ×1.3 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: thin ecosystem, more manual operations than the mainstream stacks → per-node toil ×1.3 vs Cozystack (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>Rancher (+ Harvester)</td>
         <td>×1.3</td>
-        <td>orchestration maturity: K8s management is native but the VM layer via Harvester is the weak link → per-node toil ×1.3 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: K8s management is native but the VM layer via Harvester is the weak link → per-node toil ×1.3 vs Cozystack (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>Virtuozzo Hybrid Infrastructure</td>
         <td>×1.3</td>
-        <td>orchestration maturity: narrow specialist pool, less ecosystem automation → per-node toil ×1.3 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: narrow specialist pool, less ecosystem automation → per-node toil ×1.3 vs Cozystack (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>Apache CloudStack</td>
         <td>×1.5</td>
-        <td>orchestration maturity: dated tooling, manual operations at scale → per-node toil ×1.5 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: dated tooling, manual operations at scale → per-node toil ×1.5 vs Cozystack (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>Harvester (SUSE)</td>
         <td>×1.5</td>
-        <td>orchestration maturity: N-1 upgrade policy → ~2 real-toil upgrades/year → per-node toil ×1.5 vs Cozystack (owner field estimate); third-party corroboration: documented stuck upgrades — GitHub harvester#7457 (node stuck cordoned, 1.4.0→1.4.1), harvester#5828 (pre-drain stuck on expired certs), 1.7.1→1.8.0 field report &quot;stuck four times&quot;</td>
+        <td>orchestration maturity: N-1 upgrade policy → ~2 real-toil upgrades/year → per-node toil ×1.5 vs Cozystack (Ænix field estimate); third-party corroboration: documented stuck upgrades — GitHub harvester#7457 (node stuck cordoned, 1.4.0→1.4.1), harvester#5828 (pre-drain stuck on expired certs), 1.7.1→1.8.0 field report &quot;stuck four times&quot;</td>
       </tr>
       <tr>
         <td>OpenStack (vendor distro)</td>
         <td>×1.5</td>
-        <td>orchestration maturity: the distro subscription buys support and LTS, not cloud operations → per-node toil ×1.5 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: the distro subscription buys support and LTS, not cloud operations → per-node toil ×1.5 vs Cozystack (Ænix field estimate)</td>
       </tr>
       <tr>
         <td>OpenStack (self-managed)</td>
         <td>×2</td>
-        <td>orchestration maturity: a self-managed cloud needs a team and has no vendor to call → per-node toil ×2.0 vs Cozystack (owner field estimate); third-party corroboration: Canonical shift-math — 24×7 self-managed OpenStack ≈ 10 FTE (~$741k/yr); OpenMetal — private cloud breaks even at 400+ VMs per engineer</td>
+        <td>orchestration maturity: a self-managed cloud needs a team and has no vendor to call → per-node toil ×2.0 vs Cozystack (Ænix field estimate); third-party corroboration: Canonical shift-math — 24×7 self-managed OpenStack ≈ 10 FTE (~$741k/yr); OpenMetal — private cloud breaks even at 400+ VMs per engineer</td>
       </tr>
       <tr>
         <td>Proxmox VE</td>
         <td>×2</td>
-        <td>orchestration maturity: no orchestration/self-service at scale, corosync forces multi-cluster manual ops → per-node toil ×2.0 vs Cozystack (owner field estimate); third-party corroboration: OpenMetal — 100+ VMs needs automation/templating engineering (limit is operational, not technical); Hornetsecurity — scaling Proxmox takes more admin involvement than vCenter</td>
+        <td>orchestration maturity: no orchestration/self-service at scale, corosync forces multi-cluster manual ops → per-node toil ×2.0 vs Cozystack (Ænix field estimate); third-party corroboration: OpenMetal — 100+ VMs needs automation/templating engineering (limit is operational, not technical); Hornetsecurity — scaling Proxmox takes more admin involvement than vCenter</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +146,7 @@ related_pages:
     <li><strong>Dual-run:</strong> a parallel run of both stacks during migration (dual-run) is not priced by default; add it via the migration extras input if relevant.</li>
   </ul>
   <h2>Exit cost &amp; reversibility</h2>
-  <p>Leaving any platform — including Cozystack — is priced with the same instrument: the same setup plus per-VM migration cost. Open formats (KubeVirt VMs, standard qcow2/raw disks, Velero backups) keep the exit on the low end of the same range; there is no license penalty for leaving.</p>
+  <p>Leaving any platform — including Cozystack — is priced with the same instrument: the same setup plus per-VM migration cost. Open formats (KubeVirt VMs, standard qcow2/raw disks, Velero backups) keep the exit on the low end of the same range; there is no licence penalty for leaving.</p>
   <h2>Published sanity table — including where Cozystack loses</h2>
   <table>
     <caption>All platform records × all presets, default assumptions, EU region, Q3 2026 (dataset v0.2.0). Negative savings = the competitor is cheaper.</caption>
@@ -593,9 +593,9 @@ related_pages:
         <td>A9</td>
         <td>VMware VCF · orchestration factor (base node-ops)</td>
         <td>1</td>
-        <td>mature VM operations tooling — the reference point (owner field estimate)</td>
+        <td>mature VM operations tooling — the reference point (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A10</td>
@@ -665,9 +665,9 @@ related_pages:
         <td>A18</td>
         <td>VMware VVF · orchestration factor (base node-ops)</td>
         <td>1</td>
-        <td>mature VM operations tooling — the reference point (owner field estimate)</td>
+        <td>mature VM operations tooling — the reference point (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A19</td>
@@ -729,9 +729,9 @@ related_pages:
         <td>A26</td>
         <td>vSphere Standard · orchestration factor (base node-ops)</td>
         <td>1</td>
-        <td>mature VM operations tooling — the reference point (owner field estimate)</td>
+        <td>mature VM operations tooling — the reference point (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A27</td>
@@ -769,9 +769,9 @@ related_pages:
         <td>A31</td>
         <td>Nutanix NCI Pro · orchestration factor (base node-ops)</td>
         <td>1</td>
-        <td>mature HCI operations, one-click lifecycle — reference-class (owner field estimate)</td>
+        <td>mature HCI operations, one-click lifecycle — reference-class (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A32</td>
@@ -825,9 +825,9 @@ related_pages:
         <td>A38</td>
         <td>OpenShift Virtualization Engine (OVE) · orchestration factor (base node-ops)</td>
         <td>1.1</td>
-        <td>orchestration maturity: powerful operator model, slightly higher per-node toil than Cozystack from the learning curve and upgrade operations (owner field estimate)</td>
+        <td>orchestration maturity: powerful operator model, slightly higher per-node toil than Cozystack from the learning curve and upgrade operations (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A39</td>
@@ -921,9 +921,9 @@ related_pages:
         <td>A50</td>
         <td>OpenShift Container Platform · orchestration factor (base node-ops)</td>
         <td>1.1</td>
-        <td>orchestrated platform with declarative operations; slightly above the Cozystack reference because cluster, storage and database operators are separate lifecycles the team owns (owner field estimate)</td>
+        <td>orchestrated platform with declarative operations; slightly above the Cozystack reference because cluster, storage and database operators are separate lifecycles the team owns (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A51</td>
@@ -993,9 +993,9 @@ related_pages:
         <td>A59</td>
         <td>OpenShift Platform Plus · orchestration factor (base node-ops)</td>
         <td>1.1</td>
-        <td>same orchestration maturity as OCP; the bundle removes separate ACM/ACS/registry installs but databases remain the team’s lifecycle (owner field estimate)</td>
+        <td>same orchestration maturity as OCP; the bundle removes separate ACM/ACS/registry installs but databases remain the team’s lifecycle (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A60</td>
@@ -1041,9 +1041,9 @@ related_pages:
         <td>A65</td>
         <td>Virtuozzo Hybrid Infrastructure · orchestration factor (base node-ops)</td>
         <td>1.3</td>
-        <td>orchestration maturity: narrow specialist pool, less ecosystem automation → per-node toil ×1.3 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: narrow specialist pool, less ecosystem automation → per-node toil ×1.3 vs Cozystack (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A66</td>
@@ -1097,9 +1097,9 @@ related_pages:
         <td>A72</td>
         <td>Proxmox VE · orchestration factor (base node-ops)</td>
         <td>2</td>
-        <td>orchestration maturity: no orchestration/self-service at scale, corosync forces multi-cluster manual ops → per-node toil ×2.0 vs Cozystack (owner field estimate); third-party corroboration: OpenMetal — 100+ VMs needs automation/templating engineering (limit is operational, not technical); Hornetsecurity — scaling Proxmox takes more admin involvement than vCenter</td>
+        <td>orchestration maturity: no orchestration/self-service at scale, corosync forces multi-cluster manual ops → per-node toil ×2.0 vs Cozystack (Ænix field estimate); third-party corroboration: OpenMetal — 100+ VMs needs automation/templating engineering (limit is operational, not technical); Hornetsecurity — scaling Proxmox takes more admin involvement than vCenter</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A73</td>
@@ -1137,9 +1137,9 @@ related_pages:
         <td>A77</td>
         <td>OpenStack (self-managed) · orchestration factor (base node-ops)</td>
         <td>2</td>
-        <td>orchestration maturity: a self-managed cloud needs a team and has no vendor to call → per-node toil ×2.0 vs Cozystack (owner field estimate); third-party corroboration: Canonical shift-math — 24×7 self-managed OpenStack ≈ 10 FTE (~$741k/yr); OpenMetal — private cloud breaks even at 400+ VMs per engineer</td>
+        <td>orchestration maturity: a self-managed cloud needs a team and has no vendor to call → per-node toil ×2.0 vs Cozystack (Ænix field estimate); third-party corroboration: Canonical shift-math — 24×7 self-managed OpenStack ≈ 10 FTE (~$741k/yr); OpenMetal — private cloud breaks even at 400+ VMs per engineer</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A78</td>
@@ -1185,9 +1185,9 @@ related_pages:
         <td>A83</td>
         <td>OpenStack (vendor distro) · orchestration factor (base node-ops)</td>
         <td>1.5</td>
-        <td>orchestration maturity: the distro subscription buys support and LTS, not cloud operations → per-node toil ×1.5 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: the distro subscription buys support and LTS, not cloud operations → per-node toil ×1.5 vs Cozystack (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A84</td>
@@ -1257,9 +1257,9 @@ related_pages:
         <td>A92</td>
         <td>Apache CloudStack · orchestration factor (base node-ops)</td>
         <td>1.5</td>
-        <td>orchestration maturity: dated tooling, manual operations at scale → per-node toil ×1.5 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: dated tooling, manual operations at scale → per-node toil ×1.5 vs Cozystack (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A93</td>
@@ -1345,9 +1345,9 @@ related_pages:
         <td>A103</td>
         <td>OpenNebula · orchestration factor (base node-ops)</td>
         <td>1.3</td>
-        <td>orchestration maturity: thin ecosystem, more manual operations than the mainstream stacks → per-node toil ×1.3 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: thin ecosystem, more manual operations than the mainstream stacks → per-node toil ×1.3 vs Cozystack (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A104</td>
@@ -1401,9 +1401,9 @@ related_pages:
         <td>A110</td>
         <td>Harvester (SUSE) · orchestration factor (base node-ops)</td>
         <td>1.5</td>
-        <td>orchestration maturity: N-1 upgrade policy → ~2 real-toil upgrades/year → per-node toil ×1.5 vs Cozystack (owner field estimate); third-party corroboration: documented stuck upgrades — GitHub harvester#7457 (node stuck cordoned, 1.4.0→1.4.1), harvester#5828 (pre-drain stuck on expired certs), 1.7.1→1.8.0 field report &quot;stuck four times&quot;</td>
+        <td>orchestration maturity: N-1 upgrade policy → ~2 real-toil upgrades/year → per-node toil ×1.5 vs Cozystack (Ænix field estimate); third-party corroboration: documented stuck upgrades — GitHub harvester#7457 (node stuck cordoned, 1.4.0→1.4.1), harvester#5828 (pre-drain stuck on expired certs), 1.7.1→1.8.0 field report &quot;stuck four times&quot;</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A111</td>
@@ -1465,9 +1465,9 @@ related_pages:
         <td>A118</td>
         <td>Rancher (+ Harvester) · orchestration factor (base node-ops)</td>
         <td>1.3</td>
-        <td>orchestration maturity: K8s management is native but the VM layer via Harvester is the weak link → per-node toil ×1.3 vs Cozystack (owner field estimate)</td>
+        <td>orchestration maturity: K8s management is native but the VM layer via Harvester is the weak link → per-node toil ×1.3 vs Cozystack (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A119</td>
@@ -1539,15 +1539,15 @@ related_pages:
         <td>8</td>
         <td>24×7-premium $12,000/node/yr (24/7 + dev hours + fast response) = $1,500 × 8 — illustrative modelling assumption for the Enterprise tier, not a list price; the Enterprise tier is quoted per contract</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A128</td>
         <td>Cozystack (+ Ænix support) · orchestration factor (base node-ops)</td>
         <td>1</td>
-        <td>baseline orchestration maturity — tenant self-service and declarative operations set the per-node reference; non-orchestrated platforms scale worse (owner field estimate)</td>
+        <td>baseline orchestration maturity — tenant self-service and declarative operations set the per-node reference; non-orchestrated platforms scale worse (Ænix field estimate)</td>
         <td>2026-07</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A129</td>
@@ -1571,7 +1571,7 @@ related_pages:
         <td>140</td>
         <td>Ænix field data: 50 VMs ≈ $15K total; typical Cozystack migrations $10–20K total — MARGINAL cost per VM on top of the fixed setup — conversion, verification and cutover of one machine once the pipeline runs, plus coordination with its application owner. At a loaded $100/hour this is ~1.4 h per machine; the plausible band is $40-140 ($0.4-1.4 h), and the conservative end is used. Slider $20-400; uniform for all directions. Tooling maturity (Forklift / virt-v2v / Move / MTV) differs — declared in methodology, not priced.</td>
         <td>2026-08</td>
-        <td>owner-estimate (estimate badge)</td>
+        <td>Ænix estimate (estimate badge)</td>
       </tr>
       <tr>
         <td>A132</td>
@@ -1579,7 +1579,7 @@ related_pages:
         <td>0</td>
         <td>optional one-time bucket for professional services, training or consulting at the user's discretion — default $0</td>
         <td>2026-07</td>
-        <td>owner-estimate</td>
+        <td>Ænix estimate</td>
       </tr>
       <tr>
         <td>A133</td>
@@ -1587,7 +1587,7 @@ related_pages:
         <td>0.25</td>
         <td>Ænix field data: per physical node, ≈0.25 ops day/mo at orchestration factor 1.0 (a 20-node Cozystack fleet ≈ 2 incidents/quarter — light base)</td>
         <td>2026-07</td>
-        <td>owner-estimate</td>
+        <td>Ænix estimate</td>
       </tr>
       <tr>
         <td>A134</td>
@@ -1617,25 +1617,25 @@ related_pages:
         <td>A137</td>
         <td>Preset SMB — 50 VMs · migration duration (months)</td>
         <td>3</td>
-        <td>Ænix field data (owner estimate) — SMB default</td>
+        <td>Ænix field data (estimate) — SMB default</td>
         <td>2026-07</td>
-        <td>owner-estimate</td>
+        <td>Ænix estimate</td>
       </tr>
       <tr>
         <td>A138</td>
         <td>Preset Mid-size — 200 VMs · migration duration (months)</td>
         <td>6</td>
-        <td>Ænix field data (owner estimate) — mid-size default</td>
+        <td>Ænix field data (estimate) — mid-size default</td>
         <td>2026-07</td>
-        <td>owner-estimate</td>
+        <td>Ænix estimate</td>
       </tr>
       <tr>
         <td>A139</td>
         <td>Preset Enterprise — 1,000 VMs · migration duration (months)</td>
         <td>12</td>
-        <td>Ænix field data (owner estimate) — enterprise default</td>
+        <td>Ænix field data (estimate) — enterprise default</td>
         <td>2026-07</td>
-        <td>owner-estimate</td>
+        <td>Ænix estimate</td>
       </tr>
     </tbody>
   </table>
@@ -1655,11 +1655,7 @@ related_pages:
     "priceCurrency": "USD"
   },
   "dateModified": "2026-08-22",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Ænix",
-    "url": "https://aenix.io/"
-  }
+  "publisher": { "@id": "https://aenix.io/#org" }
 }
 </script>
 <script type="application/ld+json">
@@ -1680,13 +1676,5 @@ related_pages:
       "item": "https://aenix.io/tco-calculator/"
     }
   ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Ænix",
-  "url": "https://aenix.io/"
 }
 </script>

@@ -5,21 +5,6 @@ description: "Vereinbaren Sie ein 30-minütiges Discovery-Gespräch mit Ænix od
 hero_subtitle: "Discovery-Gespräch vereinbaren, eine Frage stellen oder eine Partnerschaft besprechen"
 language: "de"
 hreflang_en: /contact/
-direct_answer: |
-  **Um mit Ænix zu sprechen, vereinbaren Sie im Kalender ein kostenloses 30-minütiges Discovery-Gespräch oder senden Sie das Formular auf dieser Seite; für alles andere schreiben Sie an info@aenix.io. Im Gespräch klären wir, welche Plattform passt — Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform oder Enterprise-Support für selbst betriebenes Cozystack — und was der nächste Schritt wäre. Verträge mit Kunden im Europäischen Wirtschaftsraum schließt die AENIX s.r.o. mit Sitz in České Budějovice, Tschechien (IČO 21493871); Verträge in den USA die AENIX INC, Delaware, USA. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.**
-quick_facts:
-  - label: "Discovery-Gespräch"
-    value: "Kostenlos, 30 Minuten, im Kalender oder über das Formular auf dieser Seite vereinbar"
-  - label: "E-Mail"
-    value: "info@aenix.io (allgemein, Presse); sales@aenix.io (Partner)"
-  - label: "Gesellschaft in der EU"
-    value: "AENIX s.r.o., U Trojice 2661/1e, České Budějovice 3, 370 04 České Budějovice, Tschechien; IČO 21493871, DIČ CZ21493871"
-  - label: "Gesellschaft in den USA"
-    value: "AENIX INC, 131 Continental Drive, Suite 301, Newark, Delaware 19713, USA; Registernummer 10075938"
-  - label: "Zertifizierung"
-    value: "ISO/IEC 27001:2022 — AENIX s.r.o."
-  - label: "Team"
-    value: "Rund 20 Mitarbeitende in der EU und in Zentralasien"
 faq:
   - q: "Was passiert, nachdem ich das Formular abgeschickt habe?"
     a: "Das Formular geht an unser Vertriebsteam, das sich per E-Mail meldet, um einen Termin für das Gespräch abzustimmen — Sie können diesen Schritt auch überspringen und direkt einen Termin im Kalender wählen. Vor dem Gespräch stellen wir Ihnen eventuell eine kurze Frage zu Ihrer aktuellen Umgebung, damit das Gespräch konkret wird."
@@ -51,14 +36,7 @@ offices:
       - "Zuständig für Verträge und Vergabeverfahren in den USA"
 ---
 
-<div class="cta-row">
-  <a class="cta-primary" href="https://zcal.co/i/s5C4-cO1" target="_blank" rel="noopener">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="#discovery-form">Formular senden ↓</a>
-</div>
-
----
-
-## Discovery-Gespräch vereinbaren {#discovery-call}
+## Gespräch buchen oder Nachricht senden {#discovery-call}
 
 Zwei Wege zu einem kostenlosen 30-minütigen Discovery-Gespräch:
 
@@ -89,6 +67,21 @@ Zwei Wege zu einem kostenlosen 30-minütigen Discovery-Gespräch:
 Unverbindlich. Wenn Ænix nicht die richtige Wahl ist, sagen wir Ihnen das offen.
 
 Wenn Sie stattdessen eine ausführliche Architekturprüfung wünschen, schreiben Sie „Architekturprüfung“ in das Nachrichtenfeld — dann nimmt ein Solutions Engineer am Gespräch teil.
+
+---
+
+## So erreichen Sie Ænix {#so-erreichen-sie-aenix}
+
+**Um mit Ænix zu sprechen, vereinbaren Sie im Kalender ein kostenloses 30-minütiges Discovery-Gespräch oder senden Sie das Formular auf dieser Seite; für alles andere schreiben Sie an info@aenix.io. Im Gespräch klären wir, welche Plattform passt — Ænix Public Cloud Platform, Ænix Private Cloud Platform, Ænix AI Platform oder Enterprise-Support für selbst betriebenes Cozystack — und was der nächste Schritt wäre. Verträge mit Kunden im Europäischen Wirtschaftsraum schließt die AENIX s.r.o. mit Sitz in České Budějovice, Tschechien (IČO 21493871); Verträge in den USA die AENIX INC, Delaware, USA. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.**
+
+### Kurzfakten
+
+- **Discovery-Gespräch:** Kostenlos, 30 Minuten, im Kalender oder über das Formular auf dieser Seite vereinbar
+- **E-Mail:** info@aenix.io (allgemein, Presse); sales@aenix.io (Partner)
+- **Gesellschaft in der EU:** AENIX s.r.o., U Trojice 2661/1e, České Budějovice 3, 370 04 České Budějovice, Tschechien; IČO 21493871, DIČ CZ21493871
+- **Gesellschaft in den USA:** AENIX INC, 131 Continental Drive, Suite 301, Newark, Delaware 19713, USA; Registernummer 10075938
+- **Zertifizierung:** [ISO/IEC 27001:2022 — AENIX s.r.o.](/de/compliance/iso-27001/)
+- **Team:** Rund 20 Mitarbeitende in der EU und in Zentralasien
 
 ---
 
@@ -134,4 +127,4 @@ Rund 20 Mitarbeitende arbeiten in der EU und in Zentralasien; unsere Kunden sitz
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen, das [Cozystack](https://cozystack.io) (CNCF-Projekt) initiiert hat und darauf die [drei Ænix-Plattformen](/de/produkte/) aufbaut.*
+*Ænix ist das Open-Core-Unternehmen, das [Cozystack](https://cozystack.io) (CNCF-Projekt) entwickelt hat, es mitpflegt und darauf die [drei Ænix-Plattformen](/de/produkte/) aufbaut.*

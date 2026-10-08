@@ -74,7 +74,7 @@ Ihre Antworten grenzen die realistischen Optionen auf 1–2 Kandidaten ein.
 
 ### Für regulierte Unternehmen (Banken, Versicherungen, Finanzdienstleister)
 
-**Beste Wahl: Cozystack** (Souveränität durch Architektur, vom Kunden kontrollierte Schlüssel, auditfähig)
+**Beste Wahl: Cozystack** (Souveränität durch Architektur, optionale Volume-Verschlüsselung mit einer Passphrase, die Sie verwalten, auditfähig)
 
 **Zweitbeste Wahl: OpenShift Virtualization** (kommerzieller Support von Red Hat, etablierte Beschaffungsbeziehungen)
 
@@ -106,7 +106,7 @@ Ihre Antworten grenzen die realistischen Optionen auf 1–2 Kandidaten ein.
 
 ### Für KI / GPU im großen Maßstab
 
-**Beste Wahl: Cozystack** (KubeVirt + NVIDIA GPU Operator für NVIDIA-Rechenzentrums-GPUs; Passthrough an VMs, Sharing über HAMi)
+**Beste Wahl: Cozystack** (KubeVirt + NVIDIA GPU Operator für NVIDIA-Rechenzentrums-GPUs; Passthrough ganzer GPUs an VMs, NVIDIA vGPU für VMs (erfordert Ihre NVIDIA-vGPU-Lizenz), fraktionierte Freigabe über HAMi)
 
 **Zweitbeste Wahl: OpenShift Virtualization** (Red-Hat-Ökosystem mit GPU)
 
@@ -169,7 +169,7 @@ Für jede Alternative die architektonischen Abweichungen von VMware, die einen N
 
 Für jede Alternative die Komplexität des Migrationspfads:
 
-- **VMware → Cozystack:** Image-Konvertierung (qcow2 nach KubeVirt CDI). Neuentwurf des Netzwerks (NSX → Cilium). Neuentwurf des Mandantenmodells (vCD → Tenant CRD). Migration der Storage-Schicht (vSAN → LINSTOR/DRBD). Typisch: 2–4 Wochen Assessment + 6–18 Monate Umsetzung.
+- **VMware → Cozystack:** Image-Konvertierung (qcow2 nach KubeVirt CDI). Neuentwurf des Netzwerks (NSX → Cilium). Neuentwurf des Mandantenmodells (vCD → Tenant CRD). Migration der Storage-Schicht (vSAN → LINSTOR/DRBD). Typisch: Platform Readiness Assessment von 14 oder 28 Tagen, danach rund 8–12 Monate für einen Bestand von ~100 VMs und 18–24 Monate für ~1.000 VMs, einschließlich Planung und Migrationswellen.
 - **VMware → OpenShift:** Ähnlich wie bei Cozystack, aber auf Red-Hat-Basis.
 - **VMware → Nutanix:** AHV-Migration über Nutanix Move (Herstellerwerkzeug). Weniger Kontrolle während der Migration.
 - **VMware → OpenStack:** Betrieblich am komplexesten; erfordert tiefe Expertise im Team.

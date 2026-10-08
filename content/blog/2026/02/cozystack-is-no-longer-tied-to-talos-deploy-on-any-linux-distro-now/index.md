@@ -35,7 +35,7 @@ quiz:
         - { text: "CNCF Sandbox under Apache 2.0", correct: true }
         - { text: "CNCF Graduated since the last TOC vote", correct: false }
         - { text: "CNCF Incubating with finalised governance", correct: false }
-      explanation: "Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license. (Aenix has also applied for CNCF Incubating, with a decision pending.)"
+      explanation: "Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 licence. (Cozystack has also applied for CNCF Incubation; the application is in due diligence.)"
     - q: "Which storage and networking layers does the announcement explicitly name as part of Cozystack on generic K8s?"
       options:
         - { text: "Only Ceph for storage and Calico for networking", correct: false }

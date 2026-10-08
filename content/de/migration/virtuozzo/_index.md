@@ -203,4 +203,4 @@ Rechnen Sie die Kostenseite vorher durch: Der **[Fünf-Jahres-TCO-Vergleich Virt
 
 ---
 
-*Ænix hat Cozystack initiiert (ein CNCF-Sandbox-Projekt, Apache 2.0) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat Cozystack entwickelt (ein CNCF-Sandbox-Projekt, Apache 2.0) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

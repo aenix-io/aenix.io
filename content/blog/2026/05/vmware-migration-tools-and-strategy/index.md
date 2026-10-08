@@ -172,6 +172,6 @@ For planning:
 - **Assessment:** [Platform Readiness Assessment](/services/platform-readiness-assessment/), fixed price, 14 days focused or 28 days full.
 - **Destination platform foundation:** live in weeks once hardware is ready; up to 3 months with integrations, depending on scale.
 - **Migration cohort labor:** 8-15 person-days per cohort of 10-50 VMs.
-- **Total elapsed:** 7-10 months under 100 VMs, 10-16 months for 100-500 VMs, 16-25 months for 500-2,000 VMs, assessment through VMware decommission.
+- **Total elapsed:** about 8-12 months for ~100 VMs and 18-24 months for ~1,000 VMs, including planning and migration waves; mid-size estates fall in between, depending on dependencies.
 
 Compared to ongoing VCF subscription: most customer engagements show net positive after Year 2 even accounting for migration cost.

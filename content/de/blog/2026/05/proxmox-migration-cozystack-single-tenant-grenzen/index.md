@@ -30,9 +30,9 @@ quiz:
     - q: "Welche realistische Gesamtdauer hat die Migration bei einem typischen Hosting-Anbieter mit 300–1.000 Kunden?"
       options:
         - { text: "1–3 Monate (schnelles Lift-and-Shift-Programm)", correct: false }
-        - { text: "6–18 Monate insgesamt bei mittelgroßen Anbietern", correct: true }
+        - { text: "Plattform in wenigen Wochen live, Kundenumzug typischerweise 3–9 Monate", correct: true }
         - { text: "3–5 Jahre (langer Parallelbetrieb zweier Plattformen)", correct: false }
-      explanation: "Vom Projektstart bis zur vollständigen Ablösung von Proxmox vergehen bei typischen mittelgroßen Anbietern 6–18 Monate. Größere Betreiber (1.000–5.000 Kunden) dehnen Phase 3 auf 12–24 Monate aus, um ein tragfähiges Kohortentempo zu halten."
+      explanation: "Die Plattform läuft wenige Wochen nach Bereitstellung der Hardware; der Umzug von Workloads und Kunden dauert bei typischen mittelgroßen Anbietern 3–9 Monate. Größere Betreiber (1.000–5.000 Kunden) brauchen für den Umzug länger, um ein tragfähiges Kohortentempo zu halten."
     - q: "Warum ist LXC die problematischste Proxmox-Komponente bei der Migration?"
       options:
         - { text: "Weil LXC proprietär ist (keine Code-Parität mit Upstream)", correct: false }
@@ -170,7 +170,7 @@ Cozystack in der Regel durch Servicekatalog und betriebliche Tiefe.
 
 Ergebnis: eine Go/No-Go-Entscheidung mit quantifizierter Begründung.
 
-### Phase 1 — Cozystack-Fundament (wenige Wochen bis 3 Monate)
+### Phase 1 — Cozystack-Fundament (wenige Wochen)
 
 Mit dem produktisierten Installer ist die Plattform wenige Wochen nach
 Bereitstellung der Hardware live; Katalog- und Markenarbeit füllen den Rest
@@ -185,7 +185,7 @@ Die WHMCS-Integration wird Ende-zu-Ende validiert. Der Servicekatalog wird
 mit den vom Betreiber gewählten Diensten befüllt (zuerst VMs, danach Managed
 Databases, dann S3, und von dort aus weiter).
 
-### Phase 2 — Migration der Pilotkunden (1–3 Monate)
+### Phase 2 — Migration der Pilotkunden
 
 5–20 wohlgesonnene Kunden werden als erste Kohorte zu Cozystack migriert.
 Ablauf pro Kunde:
@@ -202,7 +202,7 @@ Ablauf pro Kunde:
 Während des Piloten baut das Support-Team betriebliche Vertrautheit mit
 Cozystack auf. Die Dokumentationsmuster spielen sich ein.
 
-### Phase 3 — Produktive Migrationskohorten (3–9 Monate)
+### Phase 3 — Produktive Migrationskohorten
 
 Kohorten von jeweils 30–100 Kunden. Pro Kunde derselbe Ablauf wie im Piloten,
 mit wachsender betrieblicher Effizienz, je mehr das Team den Workflow
@@ -212,7 +212,7 @@ Kunden mit LXC werden gesondert behandelt: entweder als KubeVirt-VM im
 System-Stil (1:1-Ersatz) oder durch Umbau zu einem Kubernetes-nativen
 Anwendungscontainer (je nach Präferenz und Unterstützung des Kunden).
 
-### Phase 4 — Abschaltung von Proxmox (1–3 Monate)
+### Phase 4 — Abschaltung von Proxmox (parallel zu Phase 3)
 
 Mit dem Abschluss der Migrationskohorten wandert die Proxmox-Hardware in den
 Cozystack-Cluster. Die Proxmox-Subscription läuft gemäß Verlängerungszyklus
@@ -224,15 +224,15 @@ archiviert.
 Für einen typischen mittelgroßen Hosting-Anbieter (300–1.000 Kunden):
 
 - Phase 0: 14 oder 28 Tage
-- Phase 1: wenige Wochen bis 3 Monate
-- Phase 2: 1–3 Monate
-- Phase 3: 3–9 Monate
-- Phase 4: 1–3 Monate
+- Phase 1: wenige Wochen nach Bereitstellung der Hardware
+- Phasen 2–3: zusammen typischerweise 3–9 Monate
+- Phase 4: parallel zu den letzten Kohorten
 
-**Gesamt: 6–18 Monate vom Projektstart bis zur vollständigen Ablösung von Proxmox**
+**Die Plattform läuft wenige Wochen nach Bereitstellung der Hardware; der
+Umzug von Workloads und Kunden dauert typischerweise 3–9 Monate.**
 
-Bei größeren Betreibern (1.000–5.000 Kunden) verlängert sich Phase 3 auf
-12–24 Monate, um ein tragfähiges Kohortentempo zu halten.
+Bei größeren Betreibern (1.000–5.000 Kunden) dauert der Umzug länger, um
+ein tragfähiges Kohortentempo zu halten.
 
 ## Woran Migrationen von Proxmox zu Cozystack scheitern
 
@@ -299,7 +299,7 @@ Gut geeignet:
 - Wachstumskurs in Richtung 1.000+ Kunden
 - Kundennachfrage nach Diensten jenseits von VMs
 - Betrieb über mehrere Rechenzentren
-- Budget für ein Migrationsprogramm von 6–18 Monaten
+- Budget für ein Migrationsprogramm mit typischerweise 3–9 Monaten Kundenumzug
 
 Grenzfall:
 
@@ -320,10 +320,11 @@ Schlecht geeignet:
 - **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**
   (Festpreis, 14 Tage fokussiert oder 28 Tage vollständig) — Go/No-Go mit
   TCO-Vergleich
-- **Pilot-Deployment** (1–3 Monate) — Cozystack wird aufgebaut, 5–20
+- **Pilot-Deployment** — Cozystack wird aufgebaut, 5–20
   wohlgesonnene Kunden werden migriert
-- **Kohortenmigration** (3–12 Monate) — Kundenmigration in Kohorten
-- **Abschaltung von Proxmox** (1–3 Monate, parallel) — sobald Kohorten
+- **Kohortenmigration** — Kundenmigration in Kohorten; Pilot und Kohorten
+  zusammen typischerweise 3–9 Monate
+- **Abschaltung von Proxmox** (parallel) — sobald Kohorten
   abgeschlossen sind
 - **Support-Subskription** (laufend) — Plus- oder Enterprise-Stufe für
   Abdeckung rund um die Uhr (siehe [Preise](/de/preise/))

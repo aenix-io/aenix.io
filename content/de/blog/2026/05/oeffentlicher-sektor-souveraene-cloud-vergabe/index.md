@@ -33,7 +33,7 @@ quiz:
         - { text: "Mindestens bis zur zweiten Stufe", correct: true }
         - { text: "Nach DSGVO ist keine Dokumentation nötig", correct: false }
       explanation: "Der Beitrag erklärt, dass die Lieferketten-Bestimmungen (DORA Art. 28, NIS2 Art. 21 Abs. 2 lit. d und nationale Schemata) eine Dokumentation der Lieferkette mindestens bis zur zweiten Stufe erwarten und dass die meisten souveränen Cloud-Konstrukte auf Hyperscaler-Basis bei der ersten Stufe (dem Hyperscaler selbst) enden."
-    - q: "Welche Gesellschaft ist laut Beitrag der EU-Vertragspartner von Aenix?"
+    - q: "Welche Gesellschaft ist laut Beitrag der EU-Vertragspartner von Ænix?"
       options:
         - { text: "AENIX INC (Delaware)", correct: false }
         - { text: "AENIX s.r.o. (Tschechien)", correct: true }
@@ -259,7 +259,7 @@ aktiviert, Integration einer souveränen Identity, audit-isolierte
 Umgebungen. Ein nationales Programm mit mehreren Regionen läuft mit
 3–6 Monaten Pilot und danach 9–18 Monaten bis zum vollen
 Multi-Region-Betrieb; eine Private Cloud für eine einzelne Behörde ist
-ein Aufbau von 3–12 Monaten nach einem Assessment von 14–28 Tagen.
+ein Aufbau von 3–12 Monaten nach einem Assessment von 14 oder 28 Tagen.
 
 ### Phase 3 — Zertifizierungszyklus
 

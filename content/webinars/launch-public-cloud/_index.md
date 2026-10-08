@@ -54,7 +54,7 @@ quick_facts:
 
 faq:
   - q: "We already run a cloud platform. Is this relevant?"
-    a: "That is who it is built for. Most of the hour is about adding a second platform beside an existing one, widening the catalog and moving customers gradually — not about starting from zero."
+    a: "That is who it was built for. Most of the hour was about adding a second platform beside an existing one, widening the catalog and moving customers gradually — not about starting from zero."
   - q: "Do we have to migrate off VMware, OpenStack or Proxmox?"
     a: "No. The two run side by side for as long as you want. Several providers keep the old stack for the workloads that are happiest there and sell the new services from the new one."
   - q: "What happens to our billing?"
@@ -62,7 +62,7 @@ faq:
   - q: "We wrote our own control panel. Do we throw it away?"
     a: "No. The platform exposes a REST API and its own panel is optional. Andrei covered both patterns: keeping your panel as the customer-facing surface, or white-labelling ours."
   - q: "Can we sell GPU from the same platform?"
-    a: "Yes. Whole-card passthrough, plus vGPU and fractional sharing (HAMi) on supported cards, so one card can serve more than one tenant; MIG is on the roadmap. Andrei covered what each mode gives you and what you can put in a customer contract."
+    a: "Yes. Whole-card passthrough, plus NVIDIA vGPU (requires your NVIDIA vGPU licence) and fractional sharing (HAMi) on supported cards, so one card can serve more than one tenant; MIG is on the roadmap. Andrei covered what each mode gives you and what you can put in a customer contract."
   - q: "How many engineers does it take to run?"
     a: "Fewer than OpenStack. The platform is one coherent Kubernetes-native stack rather than a dozen services you integrate yourself, and upgrades are a release rather than a project."
   - q: "What does a pilot involve?"
@@ -174,7 +174,7 @@ final_cta:
 
 <section class="ws-section wb-cover" id="agenda" aria-labelledby="wb-cover-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-cover-h">What the session covers</h2>
+<h2 class="ws-h2" id="wb-cover-h">What the session covered</h2>
 <p class="ws-lead">Forty-five minutes of practice, then your questions.</p>
 <ol class="wb-cover__grid">
 <li class="wb-cover__item">
@@ -244,8 +244,8 @@ final_cta:
 
 <section class="ws-section wb-audience" aria-labelledby="wb-audience-h">
 <div class="ws-wrap">
-<h2 class="ws-h2" id="wb-audience-h">Who it is for</h2>
-<p class="ws-lead">Providers that already sell infrastructure and are deciding what to sell next. If your platform today is VMware, OpenStack, Proxmox, Virtuozzo, CloudStack, OpenNebula or something you wrote yourself, the session is built around your situation.</p>
+<h2 class="ws-h2" id="wb-audience-h">Who it was for</h2>
+<p class="ws-lead">Providers that already sell infrastructure and are deciding what to sell next. If your platform today is VMware, OpenStack, Proxmox, Virtuozzo, CloudStack, OpenNebula or something you wrote yourself, the session was built around your situation.</p>
 <ul class="wb-audience__tiles">
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="server" >}}</span>Hosting providers</li>
 <li class="wb-audience__tile"><span class="wb-audience__ic">{{< ws-icon name="cloud" >}}</span>Cloud providers</li>
@@ -270,7 +270,7 @@ final_cta:
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
 <div class="ws-speaker__role">Creator of Cozystack · Co-founder and CEO of Ænix</div>
-<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers across Europe turn their infrastructure into commercial cloud services.</p>
+<p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Ænix, he helps providers across Europe turn their infrastructure into commercial cloud services.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
 <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>

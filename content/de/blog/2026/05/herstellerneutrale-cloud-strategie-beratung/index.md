@@ -27,12 +27,12 @@ quiz:
         - { text: "Ihre Honorare sind zu hoch für eine objektive Analyse", correct: false }
         - { text: "Ihre Integrationsumsätze folgen den Hyperscaler-Partnerschaften", correct: true }
       explanation: "Deloitte, KPMG, EY und PwC haben jeweils Partnerprogramme mit Hyperscalern; die meisten Projekte enden mit Modernisierungsplänen, die auf einen Hyperscaler ausgerichtet sind, weil dort die Integrationsumsätze liegen. Herstellerneutral laut Marketing, herstellergebunden laut Ökonomie."
-    - q: "Was tut Aenix laut Artikel ausdrücklich, wenn die Abwägung es rechtfertigt?"
+    - q: "Was tut Ænix laut Artikel ausdrücklich, wenn die Abwägung es rechtfertigt?"
       options:
-        - { text: "Immer die Aenix-Plattform empfehlen, unabhängig von der Eignung", correct: false }
+        - { text: "Immer eine Ænix-Plattform empfehlen, unabhängig von der Eignung", correct: false }
         - { text: "Schriftlich empfehlen, beim Hyperscaler zu bleiben", correct: true }
         - { text: "Das Projekt an eine Big-4-Gesellschaft übergeben", correct: false }
-      explanation: "Die herstellerneutrale Position von Aenix bedeutet, dass „beim Hyperscaler bleiben“ schriftlich empfohlen wird, wenn es gerechtfertigt ist. Der negative Anreiz — Projekte, auf die keine Plattformarbeit für Aenix folgt — ist real, und genau so soll Herstellerneutralität funktionieren."
+      explanation: "Die herstellerneutrale Position von Ænix bedeutet, dass „beim Hyperscaler bleiben“ schriftlich empfohlen wird, wenn es gerechtfertigt ist. Der negative Anreiz — Projekte, auf die keine Plattformarbeit für Ænix folgt — ist real, und genau so soll Herstellerneutralität funktionieren."
     - q: "Welchen Seitenumfang hat das zusammengeführte Strategiedokument laut Artikel?"
       options:
         - { text: "Zehn bis fünfzehn Seiten konzentrierte Zusammenfassung", correct: false }
@@ -44,7 +44,7 @@ quiz:
         - { text: "Die Strategie ist taktisch, das PRA strategisch", correct: false }
         - { text: "Beides ist dasselbe Produkt unter anderem Namen", correct: false }
         - { text: "Das PRA ist taktisch; die Strategie definiert Zielbild und Substrat", correct: true }
-      explanation: "PRA = taktisch, kommt zum Einsatz, wenn die strategische Richtung feststeht, und liefert einen Maßnahmenplan über 14–28 Tage. Cloud-Strategie = strategisch, kommt zum Einsatz, wenn die Richtung noch offen ist, und definiert Zielarchitektur und Substrat-Position. Die meisten Kunden beginnen mit der Strategie, dann folgen Assessment und Umsetzung."
+      explanation: "PRA = taktisch, kommt zum Einsatz, wenn die strategische Richtung feststeht, und liefert in 14 oder 28 Tagen einen Maßnahmenplan. Cloud-Strategie = strategisch, kommt zum Einsatz, wenn die Richtung noch offen ist, und definiert Zielarchitektur und Substrat-Position. Die meisten Kunden beginnen mit der Strategie, dann folgen Assessment und Umsetzung."
 ---
 
 
@@ -219,7 +219,7 @@ für Vorstand bzw. Sponsoren.
 
 ## Varianten der Zusammenarbeit
 
-- **Strategisches Assessment über 4 Wochen** — engerer Umfang,
+- **Strategisches Assessment über 28 Tage** — engerer Umfang,
   Festpreis, ein einzelnes Segment des Workload-Portfolios
 - **Strategieprojekt über 8 Wochen** — voller Umfang mit fünf
   Arbeitssträngen, Festpreis
@@ -287,7 +287,7 @@ unterschiedliche Zwecke:
 
 - **Platform Readiness Assessment** ist *taktisch* — es bewertet den
   Ist-Zustand gegenüber einer Zielarchitektur und liefert einen
-  Maßnahmenplan über 14–28 Tage. Es kommt zum Einsatz, wenn die
+  Maßnahmenplan in 14 oder 28 Tagen. Es kommt zum Einsatz, wenn die
   strategische Richtung feststeht.
 - **Cloud-Strategie-Beratung** ist *strategisch* — sie definiert die
   Zielarchitektur und die Substrat-Position. Sie kommt zum Einsatz,

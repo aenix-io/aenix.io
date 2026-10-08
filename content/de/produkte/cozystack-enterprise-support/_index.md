@@ -13,12 +13,12 @@ aliases:
   - /de/enterprise-support/
 related_pages: ["/de/produkte/cozystack/", "/de/preise/", "/de/produkte/public-cloud-platform/", "/de/produkte/private-cloud-platform/"]
 direct_answer: |
-  **Der Enterprise-Support von Ænix für Cozystack ist ein Support-Abonnement für Organisationen, die das Open-Source-Projekt Cozystack bereits selbst betreiben, auf eigener oder gemieteter Hardware. Die Preise folgen der veröffentlichten Liste: vier Stufen pro 10 physische Nodes und Monat — Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD bei jährlicher Abrechnung sowie eine individuelle Enterprise-Stufe —, also dieselben Stufen, die für Abonnements der Ænix Public Cloud Platform gelten. Jede Stufe umfasst Incident Response mit festgelegtem SLA (Notfallreaktion von 8 Stunden bei Basic bis 1 Stunde bei Enterprise), CVE-Fixes und einen eigenen Support-Kanal. Höhere Stufen ergänzen die Plattforminstallation, begleitete Upgrades, beschleunigte Security-Fixes, 24×7-Abdeckung, Architekturberatung und begleitete Migration. Der Support kommt von Ænix, dem Unternehmen, das Cozystack initiiert hat und es gemeinsam mit Engineers anderer Unternehmen pflegt. Ein Plattformkauf ist nicht nötig.**
+  **Der Enterprise-Support von Ænix für Cozystack ist ein Support-Abonnement für Organisationen, die das Open-Source-Projekt Cozystack bereits selbst betreiben, auf eigener oder gemieteter Hardware. Die Preise folgen der veröffentlichten Liste: vier Stufen pro 10 physische Nodes und Monat — Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD bei jährlicher Abrechnung sowie eine individuelle Enterprise-Stufe. Es ist dasselbe Abonnement wie bei der Ænix Public Cloud Platform: Jede Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration), die ein Team mit selbst betriebenem Cozystack einfach ungenutzt lässt. Jede Stufe umfasst außerdem Incident Response mit festgelegtem SLA (Notfallreaktion von 8 Stunden bei Basic bis 1 Stunde bei Enterprise), CVE-Fixes und einen eigenen Support-Kanal. Höhere Stufen ergänzen die Plattforminstallation, begleitete Upgrades, beschleunigte Security-Fixes, 24×7-Abdeckung, Architekturberatung und begleitete Migration. Der Support kommt von Ænix, dem Unternehmen, das Cozystack entwickelt hat und es gemeinsam mit Engineers anderer Unternehmen pflegt. Ein Plattformprojekt ist nicht nötig.**
 quick_facts:
   - label: "Für wen"
-    value: "Teams, die Cozystack als Open Source selbst betreiben und die Maintainer in Bereitschaft haben wollen. Kein Kauf einer Ænix-Plattform erforderlich."
+    value: "Teams, die Cozystack als Open Source selbst betreiben und die Maintainer in Bereitschaft haben wollen. Kein Plattformprojekt erforderlich."
   - label: "Preis"
-    value: "Basic 1.250 USD · Standard 3.000 USD · Plus 5.500 USD · Enterprise individuell — pro 10 physische Nodes und Monat, jährliche Abrechnung. Dieselben Stufen wie bei Abonnements der Public Cloud Platform."
+    value: "Basic 1.250 USD · Standard 3.000 USD · Plus 5.500 USD · Enterprise individuell — pro 10 physische Nodes und Monat, jährliche Abrechnung. Dasselbe Abonnement wie bei der Public Cloud Platform, inklusive der kommerziellen Ænix-Module, die Sie nicht nutzen müssen."
   - label: "Reaktions-SLA"
     value: "Notfallreaktion in 8 Stunden (Basic), 4 Stunden (Standard, Plus) oder 1 Stunde (Enterprise)."
   - label: "Servicezeiten"
@@ -30,8 +30,8 @@ quick_facts:
   - label: "Wer den Support leistet"
     value: "Ænix-Engineers, die Cozystack pflegen — kein ausgelagerter First-Level-Desk."
 faq:
-  - q: "Müssen wir eine Ænix-Plattform kaufen, um Support zu bekommen?"
-    a: "Nein. Support für selbst betriebenes Cozystack wird eigenständig verkauft, und das ist ein bewusstes Angebot. Cozystack steht unter Apache 2.0 und ist ein CNCF-Projekt; es zu betreiben, ohne etwas von Ænix zu kaufen, ist eine legitime Entscheidung — und ein Support-Abonnement stellt Ihnen dabei die Maintainer in Bereitschaft."
+  - q: "Brauchen wir ein Plattformprojekt mit Ænix, um Support zu bekommen?"
+    a: "Nein. Sie schließen das Abonnement aus der veröffentlichten Preisliste ab — dasselbe wie bei der Public Cloud Platform —, ohne Aufbau- oder Migrationsprojekt; die enthaltenen kommerziellen Module (Billing-System und WHMCS-Integration) müssen Sie nicht nutzen. Cozystack steht unter Apache 2.0 und ist ein CNCF-Projekt; es zu betreiben, ohne etwas von Ænix zu kaufen, ist eine legitime Entscheidung — und ein Support-Abonnement stellt Ihnen dabei die Maintainer in Bereitschaft."
   - q: "Was kostet es?"
     a: "Die veröffentlichten Stufen pro 10 physische Nodes und Monat bei jährlicher Abrechnung: Basic 1.250 USD, Standard 3.000 USD, Plus 5.500 USD sowie eine individuelle Enterprise-Stufe. Monatliche Abrechnung ist teurer; bei jährlicher Abrechnung zahlen Sie 10 Monatspreise für 12 Monate (2 Monate gratis). Arbeiten außerhalb des Umfangs der Stufe werden mit 150 USD pro Stunde berechnet. Den vollständigen Vergleich finden Sie auf der Preisseite."
   - q: "Was deckt das Reaktions-SLA ab?"
@@ -79,7 +79,7 @@ Arbeiten außerhalb des Umfangs einer Stufe werden mit 150 USD pro Stunde berech
 
 ## Sie nutzen bereits eine Ænix-Plattform?
 
-Kunden der Ænix Public Cloud Platform erhalten dieselben Stufen als Teil ihres Abonnements, zusammen mit den kommerziellen Ænix-Modulen (Billing und WHMCS-Integration). Programme mit der Private Cloud Platform und der AI Platform werden per RFP angeboten und enthalten die Support-Stufe, die bei der Abstimmung des Umfangs gewählt wird.
+Jede Support-Stufe enthält die proprietären kommerziellen Ænix-Module (Billing-System und WHMCS-Integration). Die Preisliste ist das Abonnement der Ænix Public Cloud Platform; ein Team, das Cozystack selbst betreibt, schließt dasselbe Abonnement ab und lässt die kommerziellen Module einfach ungenutzt. Programme mit der Private Cloud Platform und der AI Platform werden per RFP angeboten und enthalten die Support-Stufe, die bei der Abstimmung des Umfangs gewählt wird.
 
 [Ænix-Plattformen →](/de/produkte/) | [Support-Stufen und Preise →](/de/preise/#support)
 
@@ -96,4 +96,4 @@ Nennen Sie uns die Zahl Ihrer Cluster und physischen Nodes, Ihre Cozystack-Versi
 
 ---
 
-*[Cozystack](https://cozystack.io) ist ein CNCF-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt.*
+*[Cozystack](https://cozystack.io) ist ein CNCF-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt.*

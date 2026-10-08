@@ -12,16 +12,16 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "An open-source, Kubernetes-native cloud platform running VMs, containers, managed databases, S3, and GPU workloads on bare metal under one multi-tenant control plane."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence). CNCF-Certified Kubernetes Distribution; accepted into the CNCF Kubernetes AI Conformance program (September 2026); OpenSSF Best Practices badge."
+    value: "CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence). CNCF Certified Kubernetes distribution; accepted into the CNCF Kubernetes AI Conformance program (September 2026); OpenSSF Best Practices badge."
   - label: "Core technology"
     value: "KubeVirt for VMs and containers on one Kubernetes API, Cilium (eBPF) networking, LINSTOR/DRBD and SeaweedFS storage, Tenant CRD multi-tenancy, VictoriaMetrics + VictoriaLogs observability."
   - label: "Who it is for"
     value: "Service providers, regulated enterprises (DORA/NIS2), telecom operators, AI/GPU operators, and enterprise platform teams running self-hosted private cloud."
   - label: "Commercial offering"
-    value: "Ænix sells enterprise support for self-run Cozystack and Ænix Public Cloud Platform subscriptions on the same tiers — Basic $1,250, Standard $3,000, Plus $5,500 per 10 nodes per month, Enterprise custom. Private Cloud and AI Platform are quoted per RFP."
+    value: "One subscription for Ænix Public Cloud Platform and for enterprise support of self-run Cozystack — Basic $1,250, Standard $3,000, Plus $5,500 per 10 nodes per month, Enterprise custom. Every tier includes the Ænix commercial modules; self-run teams can leave them unused. Private Cloud and AI Platform are quoted per RFP."
 faq:
   - q: "Is Cozystack free to use?"
     a: "Yes. Cozystack is open source under Apache 2.0 with no per-CPU or per-core licensing, so anyone can deploy it on their own or leased servers. Ænix's commercial platforms, support and services on top are optional."
@@ -34,13 +34,13 @@ faq:
   - q: "What hardware does Cozystack support?"
     a: "Cozystack runs on commodity x86 servers. Bare metal is preferred, though running on VMs is possible. Storage options include LINSTOR (DRBD), SeaweedFS, and vendor SAN."
   - q: "We already run Cozystack. Can we buy support?"
-    a: "Yes. Enterprise support for self-run Cozystack is sold on the published tiers: Basic $1,250, Standard $3,000 and Plus $5,500 per 10 physical nodes per month on annual billing, and a custom Enterprise tier. These are the same tiers that apply to Ænix Public Cloud Platform subscriptions. Business-hours coverage on Basic and Standard, 24×7 on Plus and Enterprise."
+    a: "Yes. Enterprise support for self-run Cozystack is sold on the published tiers: Basic $1,250, Standard $3,000 and Plus $5,500 per 10 physical nodes per month on annual billing, and a custom Enterprise tier. Every support tier includes the proprietary Ænix commercial modules (billing system and WHMCS integration); the price list is the Ænix Public Cloud Platform subscription, and a team running Cozystack itself buys the same subscription and can simply leave the commercial modules unused. Business-hours coverage on Basic and Standard, 24×7 on Plus and Enterprise."
 aliases:
   - /cozystack/
 hreflang_de: /de/produkte/cozystack/
 ---
 
-**Cozystack is an open-source cloud platform and a CNCF project, created by Ænix and maintained by Ænix together with maintainers from other companies. It runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own — under one Kubernetes-native control plane with multi-tenant isolation. Apache 2.0 license, currently CNCF Sandbox (CNCF Incubating application in due diligence), CNCF-Certified Kubernetes Distribution, CNCF Kubernetes AI Conformance, OpenSSF Best Practices badge.**
+**Cozystack is an open-source cloud platform and a CNCF project, created by Ænix and maintained by Ænix together with maintainers from other companies. It runs virtual machines, containers, managed databases, S3 object storage, and GPU workloads on bare metal you own — under one Kubernetes-native control plane with multi-tenant isolation. Apache 2.0 licence, currently CNCF Sandbox (CNCF Incubating application in due diligence), CNCF Certified Kubernetes distribution, CNCF Kubernetes AI Conformance, OpenSSF Best Practices badge.**
 
 This page explains Cozystack from Ænix's side: what the project is and how Ænix supports it commercially. The project itself lives at **[cozystack.io](https://cozystack.io)** with documentation, install guides and the community. For the commercial platforms built on Cozystack, see **[the Ænix platforms](/products/)**.
 
@@ -50,7 +50,7 @@ This page explains Cozystack from Ænix's side: what the project is and how Æni
 </div>
 
 <div class="trust-badges">
-CNCF Project · CNCF-Certified Kubernetes Distribution · CNCF Kubernetes AI Conformance · OpenSSF Best Practices · Apache 2.0
+CNCF Project · CNCF Certified Kubernetes distribution · CNCF Kubernetes AI Conformance · OpenSSF Best Practices · Apache 2.0
 </div>
 
 ---
@@ -75,7 +75,7 @@ PostgreSQL (CloudNativePG), MariaDB, MongoDB, ClickHouse, Valkey, OpenSearch, Ka
 SeaweedFS-based S3-compatible storage for backups, applications, AI training data.
 
 **GPU as a service**
-NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs, sharing via HAMi. MIG and time-slicing are on the roadmap.
+NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough of whole GPUs to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), fractional sharing via HAMi. MIG and time-slicing are on the roadmap.
 
 **Cilium networking**
 eBPF-native, network policies, MetalLB, BGP. Replaces NSX-equivalent functionality.
@@ -124,8 +124,8 @@ Cozystack Dashboard for self-service, with runtime branding for white-labeling.
 
 Not part of open-source Cozystack, and sold by Ænix:
 
-- **[WHMCS integration](/products/whmcs-integration/)** — a proprietary Ænix module that sells Cozystack services from WHMCS and bills them there. Part of the Ænix Public Cloud Platform subscription.
-- **Ænix billing system** — proprietary, part of the Ænix Public Cloud Platform subscription.
+- **[WHMCS integration](/products/whmcs-integration/)** — a proprietary Ænix module that sells Cozystack services from WHMCS and bills them there. Part of the Ænix Public Cloud Platform subscription, included in every support tier.
+- **Ænix billing system** — proprietary, part of the same subscription and included in every support tier.
 - **[Enterprise support](/products/cozystack-enterprise-support/)**, delivery and managed operations.
 
 You can use Cozystack without Ænix. Everything Ænix sells on top is optional.
@@ -167,7 +167,7 @@ Suitable when your team has the Kubernetes expertise to operate it and needs no 
 
 ### Path 2: Already running Cozystack? Get enterprise support
 
-If Cozystack already runs in production, Ænix enterprise support puts the maintainers on call for your clusters. It is priced from the published list — Basic $1,250, Standard $3,000, Plus $5,500 per 10 physical nodes per month on annual billing, Enterprise custom — the same tiers that apply to Ænix Public Cloud Platform subscriptions. Tiers cover incident response SLAs, CVE fixes, supervised upgrades from Standard and 24×7 coverage from Plus.
+If Cozystack already runs in production, Ænix enterprise support puts the maintainers on call for your clusters. It is priced from the published list — Basic $1,250, Standard $3,000, Plus $5,500 per 10 physical nodes per month on annual billing, Enterprise custom. Every support tier includes the proprietary Ænix commercial modules (billing system and WHMCS integration); the price list is the Ænix Public Cloud Platform subscription, and a team running Cozystack itself buys the same subscription and can simply leave the commercial modules unused. Tiers cover incident response SLAs, CVE fixes, supervised upgrades from Standard and 24×7 coverage from Plus.
 
 <div class="cta-row">
   <a class="cta-primary" href="/products/cozystack-enterprise-support/">Enterprise support for Cozystack →</a>
@@ -193,7 +193,7 @@ For specific use cases see:
 
 Cozystack is **free** (Apache 2.0). Anyone can run it.
 
-Enterprise support for self-run Cozystack and Ænix Public Cloud Platform subscriptions use the same four tiers: Basic $1,250, Standard $3,000 and Plus $5,500 per 10 physical nodes per month on annual billing, and a custom Enterprise tier. Ænix Private Cloud Platform and Ænix AI Platform are quoted per RFP.
+Enterprise support for self-run Cozystack and Ænix Public Cloud Platform are one subscription with four tiers, each including the Ænix commercial modules (a self-run team can leave them unused): Basic $1,250, Standard $3,000 and Plus $5,500 per 10 physical nodes per month on annual billing, and a custom Enterprise tier. Ænix Private Cloud Platform and Ænix AI Platform are quoted per RFP.
 
 <div class="cta-row">
   <a class="cta-secondary" href="/pricing/">Pricing details →</a>

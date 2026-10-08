@@ -19,7 +19,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A sovereign cloud platform built to support DORA for banks, insurers, investment firms, and payment institutions, built on Cozystack and run on customer-controlled infrastructure."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -113,8 +113,6 @@ Financial-services customers are not named; two engagements are written up in an
 - **[Unified cloud portal for a financial group](/case-studies/unified-cloud-portal-financial-group/)** — one self-service portal across existing estates.
 
 Reference calls can be arranged under NDA. [All case studies →](/case-studies/)
-
-{{< quote-carousel >}}
 
 ---
 

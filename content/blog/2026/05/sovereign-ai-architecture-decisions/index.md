@@ -23,13 +23,13 @@ quiz:
         - { text: "Proprietary closed-weight via vendor API", correct: false }
         - { text: "Custom-trained foundation model from scratch", correct: false }
         - { text: "Open-weight 70B-class on owned H100/L40S", correct: true }
-      explanation: "Pattern 1 example for regulated finance: DORA + Article 28 controls + multi-tenant Tenant CRD + customer-controlled keys + Aenix-managed operations + open-weight Llama 70B class on H100/L40S fleet."
+      explanation: "Pattern 1 example for regulated finance: DORA + Article 28 controls + multi-tenant Tenant CRD + opt-in volume encryption with a customer-held passphrase + Ænix-managed operations + open-weight Llama 70B class on H100/L40S fleet."
     - q: "Which open-weight model families does the article list as common 2026 choices?"
       options:
         - { text: "Only GPT-4 derivative variants", correct: false }
         - { text: "Llama, Mistral, Qwen, DeepSeek, Phi, Gemma", correct: true }
         - { text: "Only the Llama 3 family of models", correct: false }
-      explanation: "Common 2026 open-weight families: Llama, Mistral, Qwen, DeepSeek, Phi, Gemma. Selection depends on language requirement, workload type, license terms, capability target."
+      explanation: "Common 2026 open-weight families: Llama, Mistral, Qwen, DeepSeek, Phi, Gemma. Selection depends on language requirement, workload type, licence terms, capability target."
     - q: "In the seven decisions, what does \"sovereignty controls\" specifically include?"
       options:
         - { text: "Customer-controlled keys, audit, optional air-gap", correct: true }
@@ -57,7 +57,7 @@ Which regulators bind you? (DORA, NIS2, sectoral, sovereign-cloud mandate, GDPR 
 Open-weight vs proprietary. Common 2026 open-weight: Llama, Mistral, Qwen, DeepSeek, Phi, Gemma. Choice depends on:
 - Language requirement (multilingual vs English)
 - Workload type (chat / RAG / code / vision / embedding)
-- License (commercial use, attribution, redistribution)
+- Licence (commercial use, attribution, redistribution)
 - Capability target
 
 ### 4. Hardware sizing
@@ -90,7 +90,7 @@ The seven aren't independent. Trigger profile shapes regulatory scope; regulator
 ## Common combinations
 
 **Pattern 1: Regulated finance + sustained inference + multi-tenant**
-DORA + Article 28 controls + multi-tenant Tenant CRD + customer-controlled keys + Ænix-managed operations + open-weight (Llama 70B class) on H100/L40S fleet.
+DORA + Article 28 controls + multi-tenant Tenant CRD + opt-in volume encryption with a customer-held passphrase + Ænix-managed operations + open-weight (Llama 70B class) on H100/L40S fleet.
 
 **Pattern 2: Public sector + air-gapped + classified data**
 Sovereign-cloud mandate + air-gap + customer-operated + open-weight (Llama / Phi) on customer hardware.

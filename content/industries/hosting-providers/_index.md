@@ -11,7 +11,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "An open-source, Kubernetes-native cloud platform that lets hosting providers launch multi-tenant cloud products beyond VPS, built on Cozystack and productized as the Ænix Public Cloud Platform."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -29,7 +29,7 @@ faq:
   - q: "Does Cozystack support both virtual machines and containers?"
     a: "Yes. Cozystack uses KubeVirt to run VMs and containers on one Kubernetes API, so a provider can serve traditional VM customers and modern container workloads from the same platform and operations team."
   - q: "How does billing integration work for hosting providers?"
-    a: "The Ænix Public Cloud Platform includes WHMCS integration in two modes: the native Cozystack UI and a Cozystack Dashboard customer-facing frontend. It also supports tenant lock and suspension tied to billing status."
+    a: "The Ænix Public Cloud Platform includes WHMCS integration in two modes: WHMCS as the customer-facing front, or Cozystack Dashboard as the front with WHMCS as the billing back-end. It also supports tenant lock and suspension tied to billing status."
   - q: "Is there per-CPU or per-core licensing?"
     a: "No. Cozystack is Apache 2.0 licensed, so there is no per-CPU or per-core fee. This preserves hosting margin compared with proprietary virtualization platforms that license by socket or core."
   - q: "Can a provider migrate existing workloads from VMware, OpenStack, or Virtuozzo?"
@@ -74,7 +74,7 @@ hreflang_de: /de/branchen/hosting-anbieter/
 ## What hosting providers come to us for
 
 - **Modernization from VPS to cloud product** — multi-tenant Kubernetes-native platform
-- **Service catalog expansion** — VMs + containers + managed databases + S3 + GPU on one platform
+- **Service catalog expansion** — VMs + containers + managed databases + S3 + GPU on one platform; for selling GPU capacity see [GPU as a service](/solutions/gpu-as-a-service/)
 - **WHMCS integration** — production-ready, two integration modes
 - **Customer-facing portal** — Cozystack Dashboard customizable per provider
 - **Sovereign cloud product launches** — for regional markets
@@ -89,7 +89,7 @@ For sales-led engagement see **[public cloud builder](/services/public-cloud-bui
 ## Why Cozystack fits hosting providers
 
 - **Multi-tenant Tenant CRD** — production-grade customer isolation
-- **WHMCS integration** — two modes (native UI + Cozystack Dashboard frontend)
+- **WHMCS integration** — two modes (WHMCS as the customer-facing front, or Cozystack Dashboard as the front with WHMCS as the billing back-end)
 - **Open-source platform** — no per-CPU licensing, hosting margin preserved
 - **Service catalog** — far beyond VMs (managed DBs, S3, GPU)
 - **Operational simplicity** — single platform, single team

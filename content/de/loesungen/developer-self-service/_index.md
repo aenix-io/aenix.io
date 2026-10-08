@@ -154,4 +154,4 @@ Self-Service ist Teil der übergreifenden Platform-Engineering-Arbeit — zur Ei
 
 ---
 
-*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Developer Self-Service ist Teil der Ænix Private Cloud Platform, einer von drei Ænix-Plattformen auf dieser Grundlage.*
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Developer Self-Service ist Teil der Ænix Private Cloud Platform, einer von drei Ænix-Plattformen auf dieser Grundlage.*

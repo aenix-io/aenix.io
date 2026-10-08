@@ -14,7 +14,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "Sovereign, multi-tenant cloud infrastructure for the minority of K-12 districts and consortia that cannot use hyperscaler-managed services for student data"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"

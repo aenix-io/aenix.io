@@ -16,7 +16,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /compare/cozystack-vs-vmware/
 direct_answer: |
-  **Cozystack vs VMware ist ein direkter Vergleich für Organisationen, die nach den Preisänderungen von Broadcom einen Ausstieg aus VMware (VCF) planen. Cozystack ist eine Open-Source-Cloud-Plattform (Apache 2.0) auf Kubernetes, die virtuelle Maschinen und Container über KubeVirt betreibt, mit Cilium-Networking (eBPF), LINSTOR- oder SeaweedFS-Storage und nativer Mandantenfähigkeit über eine Tenant-CRD. Anders als beim CPU-basierten Subscription-Modell von VMware fallen für Cozystack keine Lizenzgebühren an — die Kosten bestehen aus Hardware plus einem optionalen Support-Abonnement. Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert, pflegt es mit und bietet die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und Migrationsleistungen; in den von uns modellierten Beständen wird die kumulierte Kostenposition typischerweise bis Ende des zweiten Jahres positiv. Der Vergleich richtet sich an IT-Verantwortliche, die souveräne, herstellerneutrale Alternativen zu vSphere, NSX, vSAN und vCloud Director prüfen.**
+  **Cozystack vs VMware ist ein direkter Vergleich für Organisationen, die nach den Preisänderungen von Broadcom einen Ausstieg aus VMware (VCF) planen. Cozystack ist eine Open-Source-Cloud-Plattform (Apache 2.0) auf Kubernetes, die virtuelle Maschinen und Container über KubeVirt betreibt, mit Cilium-Networking (eBPF), LINSTOR- oder SeaweedFS-Storage und nativer Mandantenfähigkeit über eine Tenant-CRD. Anders als beim CPU-basierten Subscription-Modell von VMware fallen für Cozystack keine Lizenzgebühren an — die Kosten bestehen aus Hardware plus einem optionalen Support-Abonnement. Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) entwickelt, pflegt es mit und bietet die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und Migrationsleistungen; in den von uns modellierten Beständen wird die kumulierte Kostenposition typischerweise bis Ende des zweiten Jahres positiv. Der Vergleich richtet sich an IT-Verantwortliche, die souveräne, herstellerneutrale Alternativen zu vSphere, NSX, vSAN und vCloud Director prüfen.**
 
 quick_facts:
   - label: "Was es ist"
@@ -70,7 +70,7 @@ Den breiteren Markt finden Sie unter **[Die besten VMware-Alternativen 2026 — 
 | **Mandantenfähigkeit** | vCloud Director | Tenant-CRD |
 | **Service-Katalog** | vRealize / Aria | Service-Katalog im Cozystack Dashboard |
 | **Backup/DR** | Site Recovery Manager (orchestriertes Failover) | Velero + S3 + PostgreSQL PITR + Wiederherstellungs-Runbook (kein orchestriertes Failover) |
-| **GPU für VMs** | NVIDIA vGPU auf vSphere | Passthrough oder NVIDIA vGPU auf KubeVirt (MIG auf der Roadmap) |
+| **GPU für VMs** | NVIDIA vGPU auf vSphere | Passthrough oder NVIDIA vGPU auf KubeVirt (NVIDIA-vGPU-Lizenz erforderlich; MIG und Time-Slicing auf der Roadmap) |
 | **Air-Gap** | Unterstützt (zusätzliche Lizenzierung) | Unterstützt (ohne Zusatzkosten) |
 | **Betriebsmodell** | Broadcom-Support plus großer Partner- und ISV-Kanal | Ænix-Support über Ihr GitOps-Repository und, mit Ihrer Freigabe, per Remote-Zugriff auf Ihre Cluster |
 
@@ -147,4 +147,4 @@ Modellieren Sie Ihre eigenen Werte mit dem **[VMware-TCO-Vergleich](/tco-calcula
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*

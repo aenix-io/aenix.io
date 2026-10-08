@@ -14,12 +14,12 @@ language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Private cloud consulting is an advisory and delivery service in which experienced platform engineers design, build, migrate to, and operate a private cloud running on infrastructure the customer controls. Ænix delivers it as the team behind Cozystack, an open-source CNCF project that runs virtual machines (via KubeVirt) and containers on one Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Engagements suit organizations leaving VMware after Broadcom changes, meeting sovereignty mandates, repatriating from hyperscalers, or sizing private infrastructure for AI workloads. Ænix covers architecture design, multi-tenancy and operations model, migration, and operational handover, recommending platforms on technical fit rather than partnership economics, with no per-CPU licensing and no vendor-roadmap lock-in.**
+  **Private cloud consulting is an advisory and delivery service in which experienced platform engineers design, build, migrate to, and operate a private cloud running on infrastructure the customer controls. Ænix delivers it as the company that created and co-maintains Cozystack, an open-source CNCF project that runs virtual machines (via KubeVirt) and containers on one Kubernetes API, with Cilium eBPF networking, LINSTOR/DRBD storage, and Tenant-CRD multi-tenancy. Engagements suit organizations leaving VMware after Broadcom changes, meeting sovereignty mandates, repatriating from hyperscalers, or sizing private infrastructure for AI workloads. Ænix covers architecture design, multi-tenancy and operations model, migration, and operational handover, recommending platforms on technical fit rather than partnership economics, with no per-CPU licensing and no vendor-roadmap lock-in.**
 
 quick_facts:
   - label: "What it is"
     value: "Advisory and delivery service where Ænix engineers design, build, migrate to, and operate a customer-controlled private cloud."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -53,7 +53,7 @@ hreflang_de: /de/dienstleistungen/private-cloud-consulting/
 
 **Private cloud is back — driven by Broadcom-induced VMware exits, sovereignty mandates, AI workload economics, and FinOps pressure on hyperscaler bills. The Broadcom Private Cloud Outlook 2025 found 53% of organizations now prioritize private cloud for new workloads, and 69% are evaluating repatriation. The architecture decisions are bigger than picking a vendor — they shape operations for the next decade.**
 
-Ænix is the team behind [Cozystack](/products/cozystack/), an open-source CNCF project — a Kubernetes-native private cloud platform we run in production with service providers, banks, and regulated enterprises. Our private cloud consulting engagements bring those same engineers to your engagement.
+Ænix created [Cozystack](/products/cozystack/) and co-maintains it — an open-source CNCF project and Kubernetes-native private cloud platform with deployments across hosting, regulated finance, telecom, AI and academia (see the [case studies](/case-studies/)). Our private cloud consulting engagements bring those same engineers to your engagement.
 
 > **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** for regulated enterprises building private/hybrid sovereign cloud; **[Public Cloud Platform](/products/public-cloud-platform/)** for large operators running their own public-cloud-class platform.
 
@@ -173,7 +173,7 @@ For broader assessment see **[Platform Readiness Assessment](/services/platform-
 ## Why Ænix specifically
 
 - **No hyperscaler partnership.** On a private-cloud decision that is the material fact: nothing in our margin moves when the answer is "keep this in the public cloud", so we can say it.
-- **We operate the destination.** [Cozystack](/products/cozystack/) is in production with service providers and regulated enterprises, so the capacity model and the operational headcount in our recommendations come from bills we have paid.
+- **We operate the destination.** [Cozystack](/products/cozystack/) has deployments across hosting, regulated finance, telecom, AI and academia, so the capacity model and the operational headcount in our recommendations come from bills we have paid.
 
 <!-- /BLOCK 6 -->
 
@@ -224,7 +224,7 @@ The logos above are production Ænix Public Cloud Platform deployments. Named re
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix is the team behind Cozystack — a CNCF Project, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix created Cozystack and co-maintains it — a CNCF project and CNCF Certified Kubernetes distribution with the OpenSSF Best Practices badge.*
 
 <!-- /BLOCK 12 -->
 

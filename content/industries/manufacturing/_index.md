@@ -17,7 +17,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "A unified Cozystack-based cloud platform spanning manufacturing HQ, regional sites, and production-floor edge under one operational model"
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"

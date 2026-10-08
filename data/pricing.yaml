@@ -5,8 +5,9 @@
 # /js/pricing-table.js only switches the displayed price between the annual and
 # monthly figures already present in the markup — it no longer owns any data.
 #
-# The same tiers apply to Ænix Public Cloud Platform subscriptions and to
-# support for self-run Cozystack. Private Cloud Platform and AI Platform are
+# This is the Ænix Public Cloud Platform subscription; every tier includes the
+# commercial modules. A team running Cozystack itself buys the same subscription
+# and may leave the modules unused. Private Cloud Platform and AI Platform are
 # quoted per RFP and are not priced from this table.
 #
 # Annual billing = 10 months of the monthly price ("2 months free"):

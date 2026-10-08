@@ -29,7 +29,7 @@ quick_facts:
   - label: "Destination platform"
     value: "Cozystack (Apache 2.0, no per-CPU licensing) on customer-controlled hardware — other targets where a better technical fit"
   - label: "Assessment timeline"
-    value: "14-28 days for Platform Readiness Assessment and written target architecture"
+    value: "14 or 28 days for the Platform Readiness Assessment and written target architecture"
   - label: "Implementation timeline"
     value: "3-18 months depending on estate size, integrated with your team"
   - label: "Areas served"
@@ -94,7 +94,7 @@ The engagement is deliberately staged so you commit incrementally, with a decisi
 
   <div class="engagement-step">
     <div class="engagement-step__number">1</div>
-    <h3 class="engagement-step__title">Platform Readiness Assessment (14–28 days)</h3>
+    <h3 class="engagement-step__title">Platform Readiness Assessment (14 or 28 days)</h3>
     <p class="engagement-step__body">Full workload inventory, classification (migrate now / migrate later / stay / re-platform), honest TCO modelling, and a written target architecture. This is the methodology behind every migration; see <a href="/services/platform-readiness-assessment/">Platform Readiness Assessment</a>.</p>
   </div>
 

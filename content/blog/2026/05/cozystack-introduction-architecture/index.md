@@ -17,22 +17,22 @@ quiz:
         - { text: "In 2023, after the pattern proved generally useful", correct: true }
         - { text: "In 2020, to support a Series A fundraise", correct: false }
         - { text: "In 2026, following CNCF Sandbox acceptance", correct: false }
-      explanation: "Cozystack started as an internal platform for service-provider customers. It was open-sourced in 2023 because the architectural pattern proved generally useful beyond Aenix's own customer engagements."
+      explanation: "Cozystack started as an internal platform for service-provider customers. It was open-sourced in 2023 because the architectural pattern proved generally useful beyond Ænix's own customer engagements."
     - q: "Why does Cozystack use Talos Linux as its host OS by default?"
       options:
         - { text: "Talos is the only Linux distribution supporting KubeVirt", correct: false }
         - { text: "Talos has the cheapest commercial subscription pricing", correct: false }
         - { text: "Talos is minimal, immutable, and API-configured", correct: true }
       explanation: "Talos: no SSH, configuration via API, no package manager, no shell. Whole classes of incident (drift, manual hotfixes, snowflake nodes) disappear. Patching is boring."
-    - q: "Why does the article emphasise that Cozystack and Aenix are intentionally separate?"
+    - q: "Why does the article emphasise that Cozystack and Ænix are intentionally separate?"
       options:
-        - { text: "Customer choice, project longevity, Aenix focus", correct: true }
+        - { text: "Customer choice, project longevity, Ænix focus", correct: true }
         - { text: "Marketing positioning and brand separation", correct: false }
         - { text: "A CNCF governance rule mandates it", correct: false }
-      explanation: "Three reasons: (1) customers can deploy Cozystack independently of Aenix, (2) project longevity — Cozystack survives Aenix-business decisions because CNCF-governed and Apache-licensed, (3) Aenix focus is engagement (assessment, build, support) rather than licenses."
+      explanation: "Three reasons: (1) customers can deploy Cozystack independently of Ænix, (2) project longevity — Cozystack survives Ænix-business decisions because CNCF-governed and Apache-licensed, (3) Ænix focus is engagement (assessment, build, support) rather than licences."
     - q: "How does the article characterise OpenStack vs Cozystack architecturally?"
       options:
-        - { text: "Both are 2010s-era architectures; choose by license", correct: false }
+        - { text: "Both are 2010s-era architectures; choose by licence", correct: false }
         - { text: "OpenStack is 2010s-era heavyweight; Cozystack is K8s-native", correct: true }
         - { text: "Cozystack is closed source; OpenStack is open source", correct: false }
       explanation: "OpenStack: 2010s architecture, comprehensive but operationally heavy, 50–100+ services. Cozystack: 2020s-era Kubernetes-native, single platform abstraction, 5–15 components running as Kubernetes operators with single platform team."
@@ -58,7 +58,7 @@ A single Kubernetes-based platform that runs on bare metal and provides:
 - Multi-tenant control plane via Tenant CRD
 - Managed database, queue, cache services
 - S3-compatible object storage
-- GPU as a service (VFIO passthrough or NVIDIA vGPU for VMs; HAMi fractional sharing for containers in tenant Kubernetes clusters)
+- GPU as a service (passthrough of whole GPUs or NVIDIA vGPU for VMs, where vGPU requires your NVIDIA vGPU licence; HAMi fractional sharing for containers in tenant Kubernetes clusters; MIG and time-slicing on the roadmap)
 - Self-service portal (Cozystack Dashboard)
 - Observability (VictoriaMetrics + VictoriaLogs)
 - Backup and DR (Velero + per-app PITR)
@@ -135,13 +135,13 @@ Cozystack: Multi-tenant scale, service-provider-friendly. Better above ~50 hosts
 Cozystack and Ænix are intentionally separate:
 
 - **Cozystack** is community-governed CNCF Project. Apache 2.0. Anyone can deploy, contribute, or fork.
-- **Ænix** is the commercial entity. Builds and maintains Cozystack. Provides paid support tiers and professional services.
+- **Ænix** is the commercial entity. It created Cozystack and co-maintains it with maintainers from other companies. Provides paid support tiers and professional services.
 
 The separation matters because:
 
 - **Customer choice** — you can deploy Cozystack independently. You don't need Ænix to use the platform.
 - **Project longevity** — Cozystack survives Ænix-business decisions because it's CNCF-governed and Apache-licensed.
-- **Ænix focus** — Ænix sells engagement (assessment, build, support), not licenses.
+- **Ænix focus** — Ænix sells engagement (assessment, build, support), not licences.
 
 For organizations seeking commercial support, Ænix is one option (the primary one in 2026 because Ænix is the largest contributor). Other commercial support providers may emerge as the project matures.
 

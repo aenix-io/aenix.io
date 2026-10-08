@@ -26,7 +26,7 @@ faq:
   - q: "Was unterscheidet das von einem Cloud-Readiness-Assessment der Big Four?"
     a: "Big-Four-Assessments liefern in der Regel Managementberater, die anschließend an ein separates Umsetzungsteam und einen Hyperscaler-Partner übergeben. Bei Ænix führen dieselben Engineers das Assessment und jede anschließende Umsetzung durch und sind mit keinem Hyperscaler geschäftlich verbunden. Die Empfehlungen spiegeln deshalb wider, wofür das Team technisch einstehen und was es unter Ihrer Governance betreiben kann."
   - q: "Wird Ænix uns am Ende Cozystack verkaufen wollen?"
-    a: "Der Bericht nennt den empfohlenen Stack mit Begründung. In den meisten Fällen ist das Cozystack — das Open-Source-CNCF-Projekt, das Ænix initiiert hat und mitentwickelt —, aber wenn die Analyse in eine andere Richtung weist, sagt der Bericht das. Es ist kein Verkaufsprojekt für Cozystack."
+    a: "Der Bericht nennt den empfohlenen Stack mit Begründung. In den meisten Fällen ist das Cozystack — das Open-Source-CNCF-Projekt, das Ænix entwickelt hat und mitpflegt —, aber wenn die Analyse in eine andere Richtung weist, sagt der Bericht das. Es ist kein Verkaufsprojekt für Cozystack."
   - q: "Wie lange dauert das Assessment und was kostet es?"
     a: "Es gibt zwei Varianten: eine fokussierte über 14 Tage mit Schwerpunkt auf einem Workstream und eine vollständige über 28 Tage, die alle vier Workstreams abdeckt und eine Roadmap für Phase 2 enthält. Beide haben einen Festpreis mit einer Rechnung und eine gegenseitige NDA zum Kickoff. Folgt eine Umsetzung in Phase 2, werden die Kosten des Assessments je nach Umfang angerechnet."
   - q: "Welchen Zugang braucht Ænix dafür?"
@@ -215,7 +215,7 @@ Das ist wichtig, weil:
 - unsere Empfehlungen Aufwandsschätzungen enthalten, deren Kosten wir selbst schon getragen haben;
 - dieselben Engineers weiterarbeiten, wenn Sie uns mit der Umsetzung in Phase 2 beauftragen.
 
-Ænix ist das Unternehmen, das **[Cozystack](/de/produkte/cozystack/)** initiiert hat, ein Open-Source-CNCF-Projekt. Der Cozystack-Stack ist das Fundament, das wir in der Regel empfehlen — aber das Assessment ist **kein Verkaufsprojekt für Cozystack**. Passt Ihre Ausgangslage zu einem anderen Stack, sagt der Bericht das.
+Ænix ist das Unternehmen, das **[Cozystack](/de/produkte/cozystack/)** entwickelt hat und mitpflegt, ein Open-Source-CNCF-Projekt. Der Cozystack-Stack ist das Fundament, das wir in der Regel empfehlen — aber das Assessment ist **kein Verkaufsprojekt für Cozystack**. Passt Ihre Ausgangslage zu einem anderen Stack, sagt der Bericht das.
 
 <!-- /BLOCK 7 -->
 
@@ -286,6 +286,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix ist das Unternehmen, das Cozystack initiiert hat — CNCF-Projekt, zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes), OpenSSF Best Practices. Wir führen Platform Readiness Assessments und Platform-Engineering-Programme für Service Provider, Banken und Projekte für souveräne Clouds in der EU und in Zentralasien durch.*
+*Ænix ist das Unternehmen, das Cozystack entwickelt hat und mitpflegt — CNCF-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices. Wir führen Platform Readiness Assessments und Platform-Engineering-Programme für Service Provider, Banken und Projekte für souveräne Clouds in der EU und in Zentralasien durch.*
 
 <!-- /BLOCK 12 -->

@@ -29,9 +29,9 @@ quiz:
     - q: "For a typical 300-1,000 customer hosting provider, what's the realistic end-to-end migration timeline?"
       options:
         - { text: "1-3 months (rapid lift-and-shift programme)", correct: false }
-        - { text: "6-18 months end-to-end for mid-size providers", correct: true }
+        - { text: "Platform live in weeks; moving customers typically 3-9 months", correct: true }
         - { text: "3-5 years (long-tail parallel-platform operation)", correct: false }
-      explanation: "Total time from project start to Proxmox fully retired is 6-18 months for typical mid-size providers. Larger operators (1,000-5,000 customers) extend Phase 3 to 12-24 months for sustainable cohort pacing."
+      explanation: "After a 14- or 28-day assessment, the platform is live in weeks once hardware is ready; moving workloads and customers typically takes 3-9 months for a typical mid-size provider. Larger operators (1,000-5,000 customers) need slower cohort pacing, so their migration runs longer."
     - q: "Why is LXC the most problematic Proxmox component to migrate?"
       options:
         - { text: "Because LXC is closed source (no upstream code parity)", correct: false }
@@ -114,7 +114,7 @@ Customers want tenant Kubernetes clusters or container-native
 service catalogs. Proxmox can host containers via LXC but isn't the
 right operational model for tenant-facing Kubernetes-as-a-service.
 
-### 6. Recurring license / subscription pressure on commercial Proxmox
+### 6. Recurring licence / subscription pressure on commercial Proxmox
 
 Proxmox's commercial subscription is competitive but real cost.
 Operators with growing infrastructure footprint sometimes find the
@@ -166,11 +166,11 @@ wins on service-catalog and operational depth.
 
 Output: go/no-go decision with quantified justification.
 
-### Phase 1 — Cozystack foundation (weeks to 3 months)
+### Phase 1 — Cozystack foundation (live in weeks)
 
 The platform goes live in weeks once hardware is ready, using the
-productized installer; catalogue and brand work take the rest of the
-phase. Cozystack platform deployed on new hardware or repurposed Proxmox
+productized installer; catalogue and brand work continue alongside
+the pilot. Cozystack platform deployed on new hardware or repurposed Proxmox
 hardware (commodity x86 servers move easily). Cilium networking
 configured. LINSTOR storage operationalised. Identity integration
 (typically Keycloak + customer IdP). Cozystack Dashboard brand customisation
@@ -180,7 +180,7 @@ WHMCS integration validated end-to-end. Service catalog populated
 with the operator's chosen services (VMs first, managed databases
 next, S3 then, expanding from there).
 
-### Phase 2 — Pilot customer migration (1-3 months)
+### Phase 2 — Pilot customer migration
 
 5-20 friendly customers migrated to Cozystack as the first cohort.
 Pattern per customer:
@@ -197,7 +197,7 @@ Pattern per customer:
 During the pilot, customer support team builds operational
 familiarity with Cozystack. Documentation patterns shake out.
 
-### Phase 3 — Production migration cohorts (3-9 months)
+### Phase 3 — Production migration cohorts
 
 Cohorts of 30-100 customers at a time. Same per-customer pattern as
 pilot, with operational efficiency improvements as the team
@@ -208,7 +208,7 @@ KubeVirt VM (1:1 replacement) or refactor to Kubernetes-native
 application container (depending on customer's preference and
 support).
 
-### Phase 4 — Proxmox decommission (1-3 months)
+### Phase 4 — Proxmox decommission
 
 As migration cohorts complete, Proxmox hardware moves into the
 Cozystack cluster. Proxmox subscription wound down per renewal
@@ -219,15 +219,15 @@ cycle. Proxmox Backup Server data archived per customer agreements.
 For typical mid-size hosting provider (300-1,000 customers):
 
 - Phase 0: 14 or 28 days
-- Phase 1: weeks to 3 months
-- Phase 2: 1-3 months
-- Phase 3: 3-9 months
-- Phase 4: 1-3 months
+- Phase 1: platform live in weeks once hardware is ready
+- Phases 2-3 (pilot and production cohorts): typically 3-9 months
+- Phase 4: alongside the last cohorts, timed to Proxmox renewals
 
-**Total: 6-18 months from project start to Proxmox fully retired**
+**Total: the platform is live in weeks once hardware is ready;
+moving workloads and customers typically takes 3-9 months**
 
-For larger operators (1,000-5,000 customers), Phase 3 extends to
-12-24 months for sustainable cohort pacing.
+For larger operators (1,000-5,000 customers), Phase 3 runs longer
+for sustainable cohort pacing; the assessment sets the schedule.
 
 ## Where Proxmox-to-Cozystack migrations stumble
 
@@ -293,7 +293,7 @@ Strong fit:
 - Growth trajectory toward 1,000+ customers
 - Customer demand for services beyond VMs
 - Multi-DC operational reality
-- Budget for 6-18 month migration programme
+- Budget for a migration programme (typically 3-9 months of customer moves)
 
 Marginal fit:
 
@@ -314,10 +314,11 @@ Poor fit:
 - **[Platform Readiness Assessment](/services/platform-readiness-assessment/)**
   (fixed price, 14 days focused or 28 days full) — go/no-go with TCO
   comparison
-- **Pilot deployment** (1-3 months) — Cozystack stood up, 5-20
-  friendly customers migrated
-- **Cohort migration** (3-12 months) — customer migration in cohorts
-- **Proxmox decommission** (1-3 months, parallel) — as cohorts
+- **Pilot deployment** — Cozystack stood up (live in weeks once
+  hardware is ready), 5-20 friendly customers migrated
+- **Cohort migration** — customer migration in cohorts; pilot and
+  cohorts together typically take 3-9 months
+- **Proxmox decommission** (parallel) — as cohorts
   complete
 - **Support subscription** (ongoing) — Plus or Enterprise support tier
   for 24×7 coverage (see [/pricing/](/pricing/))

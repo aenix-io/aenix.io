@@ -24,7 +24,7 @@ related_pages:
   <span class="cs-tag">Geo-GPU</span>
 </div>
 
-**A large telecom operator and systems integrator built a corporate AI platform on Cozystack and used the same distribution as a universal installer — shipping its own AI services into a state-owned end customer's environment, with data staying inside the customer's boundary. The engagement moved the integrator from a CapEx "hardware and licenses" model to a long-term OpEx service contract.**
+**A large telecom operator and systems integrator built a corporate AI platform on Cozystack and used the same distribution as a universal installer — shipping its own AI services into a state-owned end customer's environment, with data staying inside the customer's boundary. The engagement moved the integrator from a CapEx "hardware and licences" model to a long-term OpEx service contract.**
 
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">141 / 141</div><div class="cs-stat__label">managed releases in Ready state on the production cluster</div></div>
@@ -39,7 +39,7 @@ related_pages:
 
 ## About the project
 
-The client is a large telecom operator and systems integrator building a corporate AI platform for an end customer — a large state-owned enterprise in the transport sector. The commercial goal was to shift from buying hardware and licenses (CapEx) to a service model (OpEx) under a long-term contract.
+The client is a large telecom operator and systems integrator building a corporate AI platform for an end customer — a large state-owned enterprise in the transport sector. The commercial goal was to shift from buying hardware and licences (CapEx) to a service model (OpEx) under a long-term contract.
 
 The starting pain is typical for a large integrator: heterogeneous legacy hardware and virtualization with vendor lock-in, a slow path to shipping new services, and capital spend instead of predictable subscription. The client needed a single layer to quickly assemble and sell its own AI services — and to ship them into the end customer's environment just as fast.
 
@@ -68,7 +68,7 @@ We proposed a phased rollout: first the base infrastructure and catalog, then di
 ## Execution: new requirements and how we handled them
 
 - **Vector DB for RAG.** The client asked for a vector database for document search — we packaged Qdrant as a Cozystack app and deployed it next to the GPU workloads; integration took about a week.
-- **NVIDIA Dynamo — new development for the client.** To use the expensive cards more efficiently, we packaged Dynamo as a full platform package (a dedicated resource in the Cozystack API that the controller renders into a ready inference stack). Dynamo raises GPU utilization through disaggregated inference serving and KV-cache-aware routing across the fleet — with no extra vendor licenses.
+- **NVIDIA Dynamo — new development for the client.** To use the expensive cards more efficiently, we packaged Dynamo as a full platform package (a dedicated resource in the Cozystack API that the controller renders into a ready inference stack). Dynamo raises GPU utilization through disaggregated inference serving and KV-cache-aware routing across the fleet — with no extra vendor licences.
 - **Geo-distributed GPU.** A powerful GPU node sits in one data centre, the main cluster in another, 12–20 ms apart. We joined the clusters with an encrypted tunnel (WireGuard/Kilo): the GPU node connects to the main cluster's API, brings up the tunnel and sets routing.
 - **Single access to models from all tenants.** We built a multi-cluster service proxy: a scheduled job syncs the remote GPU cluster's services and publishes them behind a shared address. Tenants reach the models as ordinary Kubernetes services.
 - **Self-service for access and networking.** We added an intermediate level to the tenant hierarchy (dev → staging → prod via GitLab), expanded the address pool, switched to MetalLB, and scaled resources for heavy analytical queries — all on request.

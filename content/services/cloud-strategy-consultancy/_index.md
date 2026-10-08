@@ -17,7 +17,7 @@ quick_facts:
     value: "Architects and senior engineers who build and operate production Kubernetes platforms, not slide-deck consultants."
   - label: "Vendor neutrality"
     value: "No hyperscaler partnership and no commercial bias on recommendations; open-source destination on Cozystack preferred when economics support it."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -90,5 +90,5 @@ For specific triggers see **[cloud cost optimization](/solutions/cloud-cost-opti
 
 ---
 
-*Ænix is the team behind Cozystack.*
+*Ænix created Cozystack and co-maintains it.*
 

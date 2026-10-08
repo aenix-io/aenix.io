@@ -47,13 +47,13 @@ Apache 2.0 platform · No per-CPU licensing · Mutual NDA at kickoff
 
 ## What you're actually trying to do
 
-Replace the hypervisor layer without re-platforming the business overnight: one multi-tenant platform that runs your existing VMs (KubeVirt), gives teams managed Kubernetes, and keeps storage and networking software-defined — on your hardware, under your control. The license line Broadcom was eating becomes budget you redeploy, not a subscription to a different vendor.
+Replace the hypervisor layer without re-platforming the business overnight: one multi-tenant platform that runs your existing VMs (KubeVirt), gives teams managed Kubernetes, and keeps storage and networking software-defined — on your hardware, under your control. The licence line Broadcom was eating becomes budget you redeploy, not a subscription to a different vendor.
 
 ---
 
 ## Two ways Ænix helps you
 
-**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) is cloud-in-a-box on the open-source Cozystack core: VMs, managed Kubernetes, managed databases, object storage, observability, multi-tenancy — with enterprise SLA. You operate it; we support it.
+**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) is a complete private cloud on the open-source Cozystack core: VMs, managed Kubernetes, managed databases, object storage, observability, multi-tenancy — with enterprise SLA. You operate it; we support it.
 
 **2. Build your own, with our team.** When you want a platform tuned to your estate and processes, Cozystack is the framework and **Ænix is your outsourced engineering team**: we design the architecture, run the [VMware migration](/migration/vmware/), and stand up a [private cloud](/services/build-private-cloud/) you own. This fills the KubeVirt/Kubernetes gap without a hiring cycle.
 
@@ -65,9 +65,9 @@ Either path ends with the platform — and the skills — in your hands.
 
 - **What it is:** an open, Kubernetes-native platform (VMs via KubeVirt + containers + storage + networking) that replaces vSphere/Nutanix.
 - **Who it's for:** Heads / VPs / Directors of Infrastructure running a VMware or Nutanix estate.
-- **License:** Apache 2.0 — no per-core/per-socket licensing.
+- **Licence:** Apache 2.0 — no per-core/per-socket licensing.
 - **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence).
-- **Typical timeline:** a 14- or 28-day fixed-price assessment, then a 3–12 month platform build; a 100-VM estate typically migrates in 8–12 months, a 1,000-VM estate in 18–24 months.
+- **Typical timeline:** a 14- or 28-day fixed-price assessment, then a 3–12 month platform build. Moving a VMware estate, including planning and migration waves, takes about 8–12 months for ~100 VMs and 18–24 months for ~1,000 VMs.
 - **Common pitfall:** treating the exit as VM-only and discovering backup, observability and CI/CD still depend on the old stack.
 
 
@@ -93,10 +93,10 @@ No. Cozystack is a single Kubernetes-native framework for VMs, containers, manag
 That's the build-with model — Ænix acts as your engineering bench, builds the platform, and trains your team to operate it.
 
 **How fast can we show a result?**
-A discovery call scopes a low-risk first workload. After a 14- or 28-day assessment, the platform build takes 3–12 months depending on scope; a 100-VM estate typically migrates in 8–12 months, a 1,000-VM estate in 18–24 months.
+A discovery call scopes a low-risk first workload. After a 14- or 28-day assessment, the platform build takes 3–12 months depending on scope. Moving a VMware estate, including planning and migration waves, takes about 8–12 months for ~100 VMs and 18–24 months for ~1,000 VMs.
 
 **What does it cost versus VMware?**
-The per-core license line disappears (Apache 2.0). You pay for support and/or the build engagement. We model the delta with you on the call.
+The per-core licence line disappears (Apache 2.0). You pay for support and/or the build engagement. We model the delta with you on the call.
 
 ---
 

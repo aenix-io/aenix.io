@@ -16,7 +16,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /alternatives/nutanix-alternative/
 direct_answer: |
-  **Die führende Open-Source-Alternative zu Nutanix ist Cozystack, ein CNCF-Sandbox-Projekt, das virtuelle Maschinen und Container über eine einzige Kubernetes-API betreibt. Während Nutanix AHV ein proprietäres KVM ist, das an eine Liste zertifizierter Nodes und Subscriptions pro Node gebunden ist, steht Cozystack unter Apache 2.0, läuft auf Standard-Hardware und nutzt KubeVirt für VMs, Cilium (eBPF) für das Networking und LINSTOR/DRBD für Storage. Die Tenant-CRD liefert produktionsreife Mandantenfähigkeit; damit eignet sich Cozystack für Service-Provider, regulierte Unternehmen und moderne Greenfield-Projekte, die das VM-zentrierte Modell von Nutanix weniger direkt abdeckt. Ænix hat Cozystack initiiert, pflegt es mit, baut darauf die Ænix Private Cloud Platform und bietet Enterprise-Support an. So behalten Organisationen, die den Appliance-Lock-in verlassen, ein offenes Fundament und trotzdem kommerziellen Rückhalt.**
+  **Die führende Open-Source-Alternative zu Nutanix ist Cozystack, ein CNCF-Sandbox-Projekt, das virtuelle Maschinen und Container über eine einzige Kubernetes-API betreibt. Während Nutanix AHV ein proprietäres KVM ist, das an eine Liste zertifizierter Nodes und Subscriptions pro Node gebunden ist, steht Cozystack unter Apache 2.0, läuft auf Standard-Hardware und nutzt KubeVirt für VMs, Cilium (eBPF) für das Networking und LINSTOR/DRBD für Storage. Die Tenant-CRD liefert produktionsreife Mandantenfähigkeit; damit eignet sich Cozystack für Service-Provider, regulierte Unternehmen und moderne Greenfield-Projekte, die das VM-zentrierte Modell von Nutanix weniger direkt abdeckt. Ænix hat Cozystack entwickelt, pflegt es mit, baut darauf die Ænix Private Cloud Platform und bietet Enterprise-Support an. So behalten Organisationen, die den Appliance-Lock-in verlassen, ein offenes Fundament und trotzdem kommerziellen Rückhalt.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine Kubernetes-native Open-Source-Alternative zu Nutanix HCI/AHV, die VMs und Container ohne Appliance-Lock-in betreibt"
@@ -42,7 +42,7 @@ faq:
   - q: "Sollten wir von Nutanix wegmigrieren?"
     a: "Nicht immer. Wenn Ihre Nutanix-Umgebung gut läuft und die Wirtschaftlichkeit stimmt, ist Bleiben vernünftig. Die Alternativen-Analyse richtet sich an Organisationen mit konkretem Anlass: Souveränitätsbedenken wegen Closed Source, Appliance-Lock-in, die Preisentwicklung der Subscriptions oder der Bedarf an einem mandantenfähigen Service-Provider-Modell."
   - q: "Bietet Ænix kommerziellen Support für Cozystack?"
-    a: "Ja. Ænix hat Cozystack initiiert und bietet Enterprise-Support dafür an: Die Stufen beginnen bei Basic mit 1.250 USD pro 10 Nodes und Monat (jährliche Abrechnung), danach Standard mit 3.000 USD und Plus mit 5.500 USD sowie eine individuelle Enterprise-Stufe. Die Ænix Private Cloud Platform für regulierte Unternehmen wird nach einem Platform Readiness Assessment per RFP angeboten."
+    a: "Ja. Ænix hat Cozystack entwickelt und bietet Enterprise-Support dafür an: Die Stufen beginnen bei Basic mit 1.250 USD pro 10 Nodes und Monat (jährliche Abrechnung), danach Standard mit 3.000 USD und Plus mit 5.500 USD sowie eine individuelle Enterprise-Stufe. Die Ænix Private Cloud Platform für regulierte Unternehmen wird nach einem Platform Readiness Assessment per RFP angeboten."
   - q: "Welches Networking und welchen Storage nutzt Cozystack?"
     a: "Cozystack nutzt Cilium (eBPF) für das Networking und LINSTOR mit DRBD für replizierten Block-Storage, beides auf Standard-Hardware. Das unterscheidet sich vom integrierten proprietären Stack von Nutanix, der an dessen Appliance-Modell gebunden ist."
 ---
@@ -121,4 +121,4 @@ Wenn Nutanix gut läuft und die Verlängerung bezahlbar ist, ist Bleiben die ric
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

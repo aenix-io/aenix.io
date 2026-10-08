@@ -25,7 +25,7 @@ faq:
     a: "Die Standardwerte sind realistische Ausgangspunkte für mittelgroße Unternehmen, nicht Ihre Zahlen. Ersetzen Sie jedes Feld durch Ihre eigenen Werte — die Ergebnisse werden live neu berechnet und sind nur so gut wie die Eingaben."
 ---
 
-**Interaktive Rechner für die Wirtschaftlichkeit einer eigenen Cloud-Plattform. Vergleichen Sie die Gesamtkosten über fünf Jahre mit zehn On-Premises-Plattformen, stellen Sie eine Hyperscaler-Rechnung dem Betrieb auf eigener Hardware gegenüber, dimensionieren Sie die Unit Economics eines Hosting-Geschäfts oder wägen Sie den Kauf von GPUs gegen deren Miete ab. Jede Eingabe lässt sich anpassen, die drei vollständigen Modelle versehen jeden Preis mit Quelle und Datum, und jedes Ergebnis wird live neu berechnet — entwickelt von Ænix, das Cozystack initiiert hat.**
+**Interaktive Rechner für die Wirtschaftlichkeit einer eigenen Cloud-Plattform. Vergleichen Sie die Gesamtkosten über fünf Jahre mit zehn On-Premises-Plattformen, stellen Sie eine Hyperscaler-Rechnung dem Betrieb auf eigener Hardware gegenüber, dimensionieren Sie die Unit Economics eines Hosting-Geschäfts oder wägen Sie den Kauf von GPUs gegen deren Miete ab. Jede Eingabe lässt sich anpassen, die drei vollständigen Modelle versehen jeden Preis mit Quelle und Datum, und jedes Ergebnis wird live neu berechnet — entwickelt von Ænix, dem Unternehmen, das Cozystack entwickelt hat und mitpflegt.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
@@ -63,6 +63,8 @@ Sie sind bereits auf AWS, Azure oder GCP. Kalkulieren Sie denselben Workload-Foo
 Eine Plausibilitätsprüfung mit vier Eingaben für eine VMware-/VCF-Verlängerung: jährliche Einsparung, Netto über drei Jahre, Amortisation der Migration. Für das belegte Fünfjahresmodell mit Sensitivität gegenüber dem Angebotspreis nutzen Sie oben [Cozystack vs. VMware](/tco-calculator/vs-vmware/) (englisch).
 
 {{< vmware-calculator lang="de" >}}
+
+Die Migrationskosten sind ein Richtwert aus dem Rechner (8.000 USD + 140 USD pro VM); das verbindliche Angebot folgt nach dem Scoping.
 
 ---
 
@@ -109,4 +111,4 @@ Ein Erstgespräch macht aus diesen Schätzungen eine ehrliche TCO auf Workload-E
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix bietet drei darauf aufbauende Plattformen an — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Projekt und eine CNCF Certified Kubernetes Distribution, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix bietet drei darauf aufbauende Plattformen an — Public Cloud, Private Cloud und AI — sowie Support und Dienstleistungen.*
