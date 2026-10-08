@@ -1,48 +1,52 @@
 ---
-title: "DORA-Compliance Cloud-Architektur-Checkliste — kostenlos herunterladen"
-description: "Kostenlose 35-Punkt-Checkliste für Finanzinstitute und IKT-Drittdienstleister zur Bewertung der DORA-Konformität ihrer Cloud-Infrastruktur."
+title: "DORA-Compliance: Checkliste zur Cloud-Architektur — kostenlos herunterladen"
+seo_title: "DORA-Compliance-Checkliste für die Cloud-Architektur"
+description: "Kostenlose Checkliste mit 35 Punkten für Finanzunternehmen und IKT-Drittdienstleister, die ihre Cloud-Infrastruktur auf DORA-Anforderungen prüfen."
 type: "page"
 related_pages:
-  - /de/loesungen/dora-compliance
-  - /de/ressourcen/vmware-migrations-checkliste
+  - /de/loesungen/dora-compliance/
+  - /de/compliance/dora/
+  - /de/ressourcen/nis2-compliance-checkliste/
   - /de/produkte/private-cloud-platform/
 hreflang_en: /resources/dora-compliance-checklist/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Die DORA-Compliance Cloud-Architektur-Checkliste ist eine kostenlose 35-Punkt-Selbstbewertung in sechs Sektionen für Finanzinstitute und IKT-Drittdienstleister, die ihre Cloud-Infrastruktur gegen die EU-Verordnung über die digitale operationale Resilienz (Verordnung (EU) 2022/2554, DORA) prüfen. Sie deckt den IKT-Risikomanagement-Rahmen (Artikel 5-16), die Klassifizierung und Meldung IKT-bezogener Vorfälle (Artikel 17-19), Resilienztests inklusive TLPT (Artikel 24-27) sowie IKT-Drittparteienrisiko, Ausstiegsstrategien und Vertragsinhalte (Artikel 28-30) ab, dazu Workload-Portabilität, Konzentrationsrisiko, Souveränität und Aufsichtszugang. Zielgruppe sind CISOs, Cloud-Architekten und Compliance-Teams. Aenix nutzt sie in DORA-konformen Readiness-Engagements; die Ænix Private Cloud Platform (gebaut auf Cozystack) ist DORA-konform by design mit kundenkontrollierten Schlüsseln, audit-bereitem Logging und getesteter Exit-Mechanik.**
+  **Die DORA-Compliance-Checkliste zur Cloud-Architektur ist eine kostenlose Selbstbewertung mit 35 Punkten, mit der Finanzunternehmen und IKT-Drittdienstleister prüfen, ob ihre Cloud-Infrastruktur die Anforderungen des Digital Operational Resilience Act der EU (Verordnung (EU) 2022/2554) erfüllt. Sie gliedert sich in sechs Abschnitte: Workload-Portabilität und Ausstiegsfähigkeit, Konzentrationsrisiko, operationale Resilienz, Souveränität und Zugang der Aufsicht, Drittparteienrisiko und Vertragsgestaltung sowie Risikomanagement und Vorfallbehandlung (der IKT-Risikomanagementrahmen nach Art. 5–16 und die Klassifizierung und Meldung von Vorfällen nach Art. 17–19, mit der Meldung schwerwiegender Vorfälle nach Art. 19). Ænix setzt sie in an DORA ausgerichteten Readiness-Projekten ein. Sie passt zur Ænix Private Cloud Platform auf Basis von Cozystack (CNCF-Sandbox-Projekt, Apache 2.0). Die Plattform bietet optionale Volume-Verschlüsselung, API-Audit-Logs mit konfigurierbarer Aufbewahrung, die sich in Ihren eigenen unveränderlichen (WORM-)Speicher ausleiten lassen, Mandantenfähigkeit über die Tenant-CRD, die Sie an der IKT-Risikoklassifizierung ausrichten können, und einen Ausstieg, den Sie proben können, weil Workloads gewöhnliche Kubernetes-Objekte und virtuelle Maschinen bleiben. Ænix beansprucht keine DORA-Zertifizierung: Für eine Plattform gibt es keine.**
+
 quick_facts:
   - label: "Was es ist"
-    value: "Kostenlose 35-Punkt-Checkliste in sechs Sektionen zur Selbstbewertung der DORA-Konformität einer Cloud-Infrastruktur"
-  - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
-  - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
+    value: "Kostenlose Checkliste mit 35 Punkten, um eine Cloud-Infrastruktur an den Anforderungen von DORA (Verordnung (EU) 2022/2554) zu messen"
+  - label: "Abdeckung"
+    value: "Sechs Gruppen von Prüfpunkten: IKT-Risikomanagementrahmen (Art. 5–16), Klassifizierung und Meldung von Vorfällen (Art. 17–19), Resilienztests und TLPT (Art. 24–27), IKT-Drittparteienrisiko, Ausstiegsstrategien und wesentliche Vertragsbestimmungen (Art. 28–30), Verschlüsselung und Auditfähigkeit"
   - label: "Zielgruppe"
-    value: "CISOs bei Finanzinstituten, Cloud-Architekten bei IKT-Drittanbietern, Compliance- und Beschaffungs-Teams"
-  - label: "Regulatorik"
-    value: "Deckt DORA Artikel 5-16 (IKT-Risikomanagement-Rahmen), Artikel 17-19 (Klassifizierung und Meldung IKT-bezogener Vorfälle), Artikel 24-27 (Resilienztests, TLPT) und Artikel 28-30 (IKT-Drittparteienrisiko, Ausstiegsstrategien, Vertragsinhalte) ab"
-  - label: "Passendes Produkt"
-    value: "Ænix Private Cloud Platform — DORA-konform by design mit kundenkontrollierten Schlüsseln, audit-bereitem Logging und getesteter Exit-Mechanik"
+    value: "CISOs und Cloud-Architekten in Finanzunternehmen und bei IKT-Drittdienstleistern sowie Compliance- und Einkaufsteams, die die DORA-Readiness abstecken"
+  - label: "Format"
+    value: "Kostenloses PDF, 35 Kontrollpunkte in sechs Abschnitten, jeweils dem zugehörigen DORA-Artikel zugeordnet; Zustellung per E-Mail"
+  - label: "Zeitaufwand"
+    value: "Typischerweise 1–3 Stunden mit Ihren Teams aus Security, Architektur und Einkauf"
+  - label: "Passt zu"
+    value: "Ænix Private Cloud Platform — darauf ausgelegt, DORA-Programme zu unterstützen: optionale Volume-Verschlüsselung, Audit-Logs mit konfigurierbarer Aufbewahrung, ein Ausstieg, den Sie proben können. Keine DORA-Zertifizierung — eine solche gibt es für Plattformen nicht."
+
 faq:
-  - q: "Was ist die DORA-Compliance Cloud-Architektur-Checkliste?"
-    a: "Eine kostenlose 35-Punkt-Selbstbewertung in sechs Sektionen, mit der Finanzinstitute und IKT-Drittdienstleister ihre Cloud-Architektur gegen DORA prüfen. Sie umfasst Workload-Portabilität und Ausstiegsbereitschaft, Konzentrationsrisiko, operative Resilienz, Souveränität und Aufsichtszugang, Drittparteienrisiko und Vertragsgestaltung sowie Risikomanagement und Vorfallbearbeitung."
-  - q: "Welche DORA-Artikel deckt die Checkliste ab?"
-    a: "Sie adressiert den IKT-Risikomanagement-Rahmen (Artikel 5-16, insbesondere Artikel 6), die Klassifizierung und Meldung IKT-bezogener Vorfälle (Artikel 17-19), Resilienztests und bedrohungsgeleitete Penetrationstests (Artikel 24-27) sowie IKT-Drittparteienrisiko, Ausstiegsstrategien und Vertragsinhalte (Artikel 28-30), dazu Verschlüsselung und Audit-Bereitschaft."
-  - q: "Für wen ist die Checkliste gedacht?"
-    a: "Für CISOs bei Finanzinstituten in Vorbereitung auf den Aufsichtsdialog, Cloud-Architekten bei IKT-Drittanbietern mit Finanz-Sektor-Kunden, Compliance-Teams beim Scoping von DORA-Readiness-Engagements und Beschaffung bei der Vorbereitung von RFIs für DORA-aligned Services."
-  - q: "Kostet die Checkliste etwas?"
-    a: "Nein. Die Checkliste ist als kostenloser PDF-Download verfügbar. Für ein vollständiges DORA-aligned Engagement verweist die Seite auf die DORA-Compliance-Services-Seite von Aenix."
-  - q: "Wie unterstützt die Ænix Platform DORA-Compliance?"
-    a: "Die Ænix Private Cloud Platform ist DORA-konform by design: kundenkontrollierte Schlüssel, audit-bereites Logging, Tenant-CRD-Mandantenfähigkeit abgestimmt auf die IKT-Risikoklassifizierung, getestete Exit-Mechanik und Lieferantentransparenz. Sie basiert auf Cozystack (Apache 2.0, CNCF-Projekt) und vermeidet so proprietäres Vendor-Lock-in."
-  - q: "Adressiert DORA das Konzentrations- und Vendor-Lock-in-Risiko?"
-    a: "Ja. DORA verlangt von Finanzinstituten, das Konzentrations-Risiko bei IKT-Drittdienstleistern zu steuern und Exit-Strategien nachzuweisen. Die Checkliste enthält dafür eigene Sektionen; eine Open-Source-Basis wie Cozystack (Apache 2.0) und getestete Exit-Mechanik reduzieren die Abhängigkeit von einem einzelnen Anbieter."
+  - q: "Was ist DORA, und wer muss die Verordnung einhalten?"
+    a: "DORA (Digital Operational Resilience Act, Verordnung (EU) 2022/2554) ist die EU-Verordnung zum IKT-Risiko im Finanzsektor. Sie gilt für Finanzunternehmen wie Banken, Versicherer und Zahlungsinstitute. Deren IKT-Drittdienstleister, darunter Cloud- und Infrastrukturanbieter, werden über die Vertrags- und Drittparteienregeln der Art. 28–30 einbezogen; als kritisch eingestufte Anbieter unterliegen nach Art. 31–44 einer direkten Überwachung."
+  - q: "Was deckt die Checkliste ab?"
+    a: "Sie enthält 35 Kontrollpunkte in sechs Gruppen: Workload-Portabilität und Ausstiegsfähigkeit (5), Konzentrationsrisiko (4), operationale Resilienz (5), Souveränität und Zugang der Aufsicht (5), Drittparteienrisiko und Vertragsgestaltung (4) sowie Risikomanagement und Vorfallbehandlung (12). Jeder Punkt nennt den zugehörigen DORA-Artikel: Art. 28 Abs. 8 und Art. 30 Abs. 3 lit. f für Ausstiegsstrategien, Art. 29 für das Konzentrationsrisiko, Art. 5–16 für den IKT-Risikomanagementrahmen, Art. 17–19 für Klassifizierung und Meldung von Vorfällen und Art. 26–27 für bedrohungsorientierte Penetrationstests."
+  - q: "Ist die Checkliste kostenlos?"
+    a: "Ja. Die Checkliste ist ein kostenloses PDF. Sie fordern es über das Formular auf dieser Seite an und erhalten einen Download-Link. Ænix nutzt dieselbe Checkliste auch in bezahlten, an DORA ausgerichteten Readiness-Projekten."
+  - q: "Wie unterstützt die Ænix Private Cloud Platform bei DORA?"
+    a: "Sie liefert plattformseitige Kontrollen, auf die sich ein DORA-Programm stützt, nicht die Compliance selbst — DORA verpflichtet Finanzunternehmen, nicht Plattformen, und ein DORA-Zertifikat gibt es nicht. Die Ænix Private Cloud Platform basiert auf Cozystack und bietet optionale Volume-Verschlüsselung, API-Audit-Logs mit konfigurierbarer Aufbewahrung (standardmäßig 30 Tage), die sich in Ihren eigenen unveränderlichen (WORM-)Speicher ausleiten lassen, Mandantenfähigkeit über die Tenant-CRD, die Sie der IKT-Risikoklassifizierung zuordnen können, transparente Lieferanteninformationen und einen Ausstieg, den Sie proben können, statt ihn nur in einer Vertragsklausel zuzusagen. Die Details Kontrolle für Kontrolle, einschließlich dessen, was die Plattform nicht leistet, stehen auf der Seite mit den DORA-Nachweisen."
+  - q: "Ersetzt die Checkliste ein formales DORA-Audit?"
+    a: "Nein. Sie ist eine Arbeitsgrundlage zur Selbstbewertung Ihrer aktuellen Cloud-Architektur und zur Vorbereitung auf den Dialog mit der Aufsicht. Für ein vollständiges Projekt siehe die Seite zur DORA-Compliance auf aenix.io."
+  - q: "Ist Cozystack Open Source, und wie sieht das Lizenzmodell aus?"
+    a: "Cozystack ist Open Source unter der Apache-2.0-Lizenz, ohne Lizenzkosten pro CPU oder Core, und ein CNCF-Sandbox-Projekt. Die darauf aufbauende Ænix Private Cloud Platform für regulierte Organisationen wird nach einem Platform Readiness Assessment per RFP angeboten; Support-Stufen für selbst betriebenes Cozystack beginnen bei 1.250 USD pro 10 Nodes und Monat."
 ---
 
-**Eine 35-Punkt-Checkliste für Finanzinstitute und IKT-Drittdienstleister, die die DORA-Konformität ihrer Cloud-Infrastruktur bewerten. Deckt den IKT-Risikomanagement-Rahmen (Artikel 5-16), die Meldung IKT-bezogener Vorfälle (Artikel 17-19), Resilienztests und TLPT (Artikel 24-27) sowie IKT-Drittparteienrisiko, Ausstiegsstrategien und Vertragsinhalte (Artikel 28-30) ab, dazu Verschlüsselung und Audit-Bereitschaft. Verwendet von Ænix in DORA-konformen Readiness-Engagements.**
+**Eine Checkliste mit 35 Punkten für Finanzunternehmen und IKT-Drittdienstleister, die ihre Cloud-Infrastruktur auf DORA-Anforderungen prüfen. Sie deckt den IKT-Risikomanagementrahmen (Art. 5–16), Klassifizierung und Meldung von Vorfällen (Art. 17–19), Resilienztests und TLPT (Art. 24–27), IKT-Drittparteienrisiko, Ausstiegsstrategien und wesentliche Vertragsbestimmungen (Art. 28–30) sowie Verschlüsselung und Auditfähigkeit ab. Ænix setzt sie in an DORA ausgerichteten Readiness-Projekten ein.**
 
-> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — DORA-konform by design (kundenkontrollierte Schlüssel, audit-bereites Logging, Tenant-CRD-Mandantenfähigkeit abgestimmt auf die IKT-Risikoklassifizierung, getestete Exit-Mechanik, Lieferantentransparenz).
+> **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — darauf ausgelegt, die plattformseitigen Kontrollen zu liefern, auf die sich ein DORA-Programm stützt: optionale Volume-Verschlüsselung, Audit-Logs mit konfigurierbarer Aufbewahrung, die sich in Ihren eigenen unveränderlichen (WORM-)Speicher ausleiten lassen, Mandantenfähigkeit über die Tenant-CRD, die Sie an der IKT-Risikoklassifizierung ausrichten können, transparente Lieferanteninformationen und ein Ausstieg, den Sie proben können. Was die Plattform abdeckt und was nicht, zeigt die Seite mit den [DORA-Nachweisen](/de/compliance/dora/).
 
 <div class="lead-magnet-form">
 {{< pipedrive-form type="lead-magnet" resource="dora-compliance-checklist" >}}
@@ -51,42 +55,53 @@ faq:
 
 ---
 
-## Was in der Checkliste enthalten ist
+## Was die Checkliste enthält
 
-6 Sektionen, 35 spezifische Kontroll-Checkpoints:
+Sechs Abschnitte mit 35 konkreten Kontrollpunkten:
 
-1. **Workload-Portabilität und Ausstiegsbereitschaft** (5 Checkpoints) — Ausstiegsstrategien nach Artikel 28(8) und 30(3)(f)
-2. **Konzentrationsrisiko** (4 Checkpoints) — Artikel 28 und 29
-3. **Operative Resilienz** (5 Checkpoints) — Resilienztests nach Artikel 24-27, inklusive bedrohungsgeleiteter Penetrationstests
-4. **Souveränität und Aufsichtszugang** (5 Checkpoints)
-5. **Drittparteienrisiko und Vertragsgestaltung** (4 Checkpoints) — Artikel 28-30
-6. **Risikomanagement und Vorfallbearbeitung** (12 Checkpoints) — IKT-Risikomanagement-Rahmen nach Artikel 5-16 (insbesondere Artikel 6) und Klassifizierung, Meldung und Bearbeitung IKT-bezogener Vorfälle nach Artikel 17-19
+1. **Workload-Portabilität und Ausstiegsfähigkeit** (5 Prüfpunkte) — Ausstiegsstrategien nach Art. 28 Abs. 8 und Art. 30 Abs. 3 lit. f
+2. **Konzentrationsrisiko** (4 Prüfpunkte) — Art. 28 und 29
+3. **Operationale Resilienz** (5 Prüfpunkte) — Resilienztests nach Art. 24–27, einschließlich bedrohungsorientierter Penetrationstests
+4. **Souveränität und Zugang der Aufsicht** (5 Prüfpunkte)
+5. **Drittparteienrisiko und Vertragsgestaltung** (4 Prüfpunkte) — Art. 28–30
+6. **Risikomanagement und Vorfallbehandlung** (12 Prüfpunkte) — der IKT-Risikomanagementrahmen nach Art. 5–16 (insbesondere Art. 6) sowie Klassifizierung, Meldung und Behandlung von Vorfällen nach Art. 17–19
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>35-Punkt-Selbstbewertung</b><div class="diagram__chips"><span>Artikel 5-16 + 17-19</span><span>Kostenloses PDF</span></div></div>
-<div class="diagram__conn">führt zu</div>
-<div class="diagram__node diagram__node--brand"><b>DORA-konformes Readiness-Engagement</b><div class="diagram__chips"><span>Verwendet von Ænix</span></div></div>
+<div class="diagram__node"><b>Selbstbewertung mit 35 Punkten</b><div class="diagram__chips"><span>Art. 5–16 + 17–19</span><span>Kostenloses PDF</span></div></div>
+<div class="diagram__conn">fließt ein in</div>
+<div class="diagram__node diagram__node--brand"><b>An DORA ausgerichtetes Readiness-Projekt</b><div class="diagram__chips"><span>Eingesetzt von Ænix</span></div></div>
 <div class="diagram__conn">bereitet vor</div>
-<div class="diagram__node"><b>Aufsichtsdialog</b><div class="diagram__chips"><span>getestete Exit-Mechanik</span></div></div>
+<div class="diagram__node"><b>Dialog mit der Aufsicht</b><div class="diagram__chips"><span>Nachweisbare Ausstiegsfähigkeit</span></div></div>
 </div>
 </div>
 
 ---
 
-## Wer das nutzt
+## Wer sie nutzt
 
-- CISOs bei Finanzinstituten in Vorbereitung auf Aufsichtsdialog
-- Cloud-Architekten bei IKT-Drittanbietern, die Finanz-Sektor bedienen
-- Compliance-Teams in Scoping von DORA-Readiness-Engagements
-- Beschaffung in Vorbereitung auf RFI für DORA-aligned Services
+- CISOs in Finanzunternehmen, die den Dialog mit der Aufsicht vorbereiten
+- Cloud-Architekten bei IKT-Drittdienstleistern, die den Finanzsektor bedienen
+- Compliance-Teams, die DORA-Readiness-Projekte abstecken
+- Einkaufsteams, die eine RFI für an DORA ausgerichtete Leistungen vorbereiten
 
 ---
 
 ## Nach dem Download
 
-Die Checkliste gibt Ihnen die Arbeits-Oberfläche, um Ihre aktuelle Cloud-Architektur gegen DORA zu bewerten. Für vollständiges DORA-aligned Engagement siehe **[DORA-Compliance-Services-Seite](/de/loesungen/dora-compliance/)**.
+Mit der Checkliste bewerten Sie Ihre aktuelle Cloud-Architektur anhand der DORA-Anforderungen. Für ein vollständiges, an DORA ausgerichtetes Projekt siehe die **[Seite zur DORA-Compliance](/de/loesungen/dora-compliance/)**.
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) (CNCF-Projekt) und bietet die Ænix Platform an — eine schlüsselfertige kommerzielle Cloud-in-a-Box.*
+## Verwandte Ressourcen
+
+- **[DORA-Compliance](/de/loesungen/dora-compliance/)** — das vollständige Projekt
+- **[NIS2-Compliance](/de/loesungen/nis2-compliance/)** — verwandte Regulierung
+- **[Data Sovereignty](/de/loesungen/data-sovereignty/)** — verwandtes Thema
+- **[DORA-Nachweise](/de/compliance/dora/)** — was die Plattform leistet und was nicht, Kontrolle für Kontrolle
+- **[ISO/IEC-27001-Zertifikat](/de/compliance/iso-27001/)** — die AENIX s.r.o. ist für ihr eigenes ISMS nach ISO/IEC 27001:2022 zertifiziert
+- **[Fallstudie Bank](/de/case-studies/private-cloud-in-a-bank/)** — eine Private Cloud mit Developer Self-Service in einer Bank
+
+---
+
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an: Public Cloud, Private Cloud und AI.*
