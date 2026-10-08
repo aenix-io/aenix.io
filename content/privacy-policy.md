@@ -64,7 +64,7 @@ We use the following service providers. Each processes data on our behalf under 
 | Google Ireland Ltd. / Google LLC — **Google Analytics 4** | Traffic measurement, only after consent | Analytics data, cookie identifiers; IP addresses are not stored | EU and USA |
 | **Ahrefs** Pte. Ltd. — Ahrefs Analytics | Traffic measurement, only after consent | Pages visited, referrer, device and browser type | Singapore and other countries |
 | **Pipedrive** OÜ — web forms and CRM | Hosts our contact, demo, partner, course, workshop and download forms, and stores the enquiries | Form contents, campaign parameters | EU, with sub-processors in other countries |
-| Google — **reCAPTCHA** | Protects the Pipedrive forms against spam | IP address, browser and interaction data | USA |
+| Google — **reCAPTCHA** | Protects the Pipedrive forms against spam; loads together with a form when you scroll near it | IP address, browser and interaction data | USA |
 | GitHub, Inc. — **GitHub Pages** | Hosts the website | Server logs (IP address, time, requested URL) | USA |
 | Google — **YouTube** embeds | Shows talk recordings on some pages; YouTube loads when the page with the video is opened | IP address, device and browser data; YouTube's own cookies when you play a video | USA |
 | zcal | Calendar booking, if you choose to book a call or a tour meeting through a zcal link | Name, email, chosen time, message | USA |
