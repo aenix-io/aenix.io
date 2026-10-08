@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Nutanix", "Kubernetes", "Cozystack", "KubeVirt", "Cilium"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/nutanix-vs-cozystack-vs-vmware-virtualisierungsplattform/"
 companion_landing: "/alternatives/nutanix-alternative/"
 quiz:
   title: "Test yourself: Nutanix vs Cozystack vs VMware"
