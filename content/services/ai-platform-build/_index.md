@@ -21,7 +21,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "When does building a dedicated AI platform beat renting hyperscaler GPU?"
     a: "For sustained workloads such as 24/7 inference, fine-tuning, and training, dedicated infrastructure usually wins after about a year of operation. Bursty or short-lived experimentation often stays cheaper on rented capacity. Aenix runs a workload-fit assessment during discovery to determine the break-even point for a given workload."

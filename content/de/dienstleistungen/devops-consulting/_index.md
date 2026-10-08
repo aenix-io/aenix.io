@@ -16,7 +16,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
   - label: "Engagement-Modi"
     value: "DevOps-Reifegrad-Bewertung (14-28 Tage), DevOps-Transformation (3-9 Monate), DevOps-as-a-Service / Managed"
   - label: "Zielgruppe"

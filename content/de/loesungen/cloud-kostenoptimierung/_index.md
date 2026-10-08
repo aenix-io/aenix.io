@@ -21,7 +21,7 @@ quick_facts:
   - label: "Plattform-Basis"
     value: "Cozystack: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
 faq:
   - q: "Wo gehen Cloud-Kosten typischerweise verloren?"
     a: "An vier Stellen: untergenutzten Reserved Instances und Savings Plans, idle und über-dimensionierten Ressourcen, Egress- und Cross-Region-Verkehr sowie dem Aufschlag für Hyperscaler-Managed-Services wie RDS oder Aurora. Diese summieren sich oft auf 20-40% der Rechnung, bevor eine architektonische Änderung nötig ist."

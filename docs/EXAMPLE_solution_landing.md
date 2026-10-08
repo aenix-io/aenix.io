@@ -99,4 +99,4 @@ customer_evidence:
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — CNCF project (currently CNCF Sandbox; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes Cozystack as Ænix Platform, available in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — CNCF project (currently CNCF Sandbox; Incubating application in due diligence), Apache 2.0. Aenix commercializes Cozystack as Ænix Platform, available in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*

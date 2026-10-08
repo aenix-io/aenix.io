@@ -16,7 +16,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
   - label: "Zielgruppe"
     value: "Service Provider, Banken und KI-Operatoren, die Produktions-Kubernetes im großen Maßstab zuverlässig betreiben müssen"
   - label: "Schwerpunkte"
@@ -35,7 +35,7 @@ faq:
   - q: "Welche Technologien liegen der empfohlenen Architektur zugrunde?"
     a: "Cozystack vereint virtuelle Maschinen und Container über KubeVirt auf einer einzigen Kubernetes-API. Das Networking läuft über Cilium (eBPF), der Storage über LINSTOR/DRBD, und die Mandantenfähigkeit wird über das Tenant-CRD abgebildet. Die gesamte Plattform steht unter Apache 2.0."
   - q: "Ist Cozystack ein anerkanntes Open-Source-Projekt?"
-    a: "Ja. Cozystack ist ein CNCF-Projekt — Sandbox-Status seit dem 28.02.2025, mit erwartetem Incubating-Status für den Spätsommer 2026. Es steht unter Apache 2.0 und verwendet keine CPU- oder Core-basierte Lizenzierung."
+    a: "Ja. Cozystack ist ein CNCF-Projekt — Sandbox-Status seit dem 28.02.2025, der Antrag auf Incubating befindet sich in der Due-Diligence-Prüfung. Es steht unter Apache 2.0 und verwendet keine CPU- oder Core-basierte Lizenzierung."
   - q: "Eignet sich das Consulting für regulierte Branchen wie Banken?"
     a: "Ja. Aenix betreibt Cozystack in Produktion mit Banken und adressiert im Consulting gezielt Multi-Tenancy-Isolation, RBAC, Backup/DR und eine Produktionsbereitschaft-Checkliste für Compliance — relevant für regulierte Umgebungen mit hohen Sicherheitsanforderungen."
 ---

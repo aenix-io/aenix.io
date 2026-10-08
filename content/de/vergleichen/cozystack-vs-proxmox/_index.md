@@ -17,7 +17,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Cozystack: Apache 2.0 (keine CPU-/Core-basierte Lizenzierung); Proxmox VE: AGPL mit Subscription für Updates"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
   - label: "Zielgruppe"
     value: "Cozystack: Hosting-Anbieter, ISPs und regionale Clouds (50-1000+ Hosts); Proxmox: internes IT, < 50 Hosts"
   - label: "Mandantenfähigkeit"

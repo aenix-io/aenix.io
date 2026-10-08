@@ -63,7 +63,7 @@ So oder so: Die Pro-Core-Lizenz, die Ihre Kunden an VMware zahlen, wird zu Marge
 - **Für wen:** Leiter Allianzen / Partnerschaften / Channel bei SIs, MSPs, Distributoren.
 - **Marge:** bis **40%** auf Lizenz + Support; Deal-Schutz auf registrierten Opportunities.
 - **Lizenz:** Apache-2.0-Kern (Cozystack) — keine Pro-CPU-Kosten im Stack.
-- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026).
+- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung).
 - **Aktive Partner u. a.:** GoHost.kz, Hidora, QOSI, TECH EVOLVERS INC.
 
 [Quelle: [Ænix-Partnerprogramm](/de/partner/)]
@@ -108,7 +108,7 @@ Kostenlos, ohne Vorbereitung. Wir ordnen Ihren Kundenstamm den Plattformen zu, g
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-allianzen/ ; hreflang de self, en → /for/head-of-alliances/.

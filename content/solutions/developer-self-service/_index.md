@@ -20,7 +20,7 @@ quick_facts:
   - label: "Engagement timeline"
     value: "Discovery 30 min (free); Assessment 14-28 days; Build 1-6 months."
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "What counts as real developer self-service versus a catalog?"
     a: "Real self-service means the most common product-team requests are completed without filing a ticket, in under an hour from request to running. A catalog-only Backstage where provisioning still needs platform-team intervention does not qualify — that is a registry, not self-service."

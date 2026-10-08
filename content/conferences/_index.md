@@ -120,4 +120,4 @@ For invitations: book a [discovery call](/contact/) and mention "speaking invita
 
 ---
 
-*Ænix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), Apache 2.0. Ænix commercializes Cozystack as [Ænix Platform](/products/) — turnkey commercial cloud-in-a-box in three platforms.*
+*Ænix is the open-core company behind [Cozystack](https://cozystack.io) — a CNCF project (currently CNCF Sandbox; CNCF Incubating application in due diligence), Apache 2.0. Ænix commercializes Cozystack as [Ænix Platform](/products/) — turnkey commercial cloud-in-a-box in three platforms.*

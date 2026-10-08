@@ -20,7 +20,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Regulation"
     value: "EU Digital Operational Resilience Act (DORA), Regulation (EU) 2022/2554, applying since 17 January 2025. Architecture-binding articles: 5-16 (ICT risk management), 17-19 (incident reporting), 24-27 (resilience testing, TLPT at 26-27), 28-30 (third-party and concentration risk)"
   - label: "Who it is for"

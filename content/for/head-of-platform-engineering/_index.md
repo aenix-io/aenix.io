@@ -63,7 +63,7 @@ Turn infrastructure into a product: self-service provisioning of VMs, managed Ku
 - **What it is:** a multi-tenant internal developer platform (self-service VMs, K8s, DBs, storage) on a Kubernetes-native core.
 - **Who it's for:** Heads / Directors of Platform Engineering, Platform / DevEx leads.
 - **License:** Apache 2.0 — no per-seat platform tax.
-- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating expected late summer 2026).
+- **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox 2025-02-28; Incubating application in due diligence).
 - **Common pitfall:** buying a portal (Backstage) with no real multi-tenant backend, so self-service still bottlenecks on infra tickets.
 
 [Source: [CNCF Platforms white paper](https://www.cncf.io/reports/), [Cozystack docs](https://cozystack.io)]
@@ -108,7 +108,7 @@ Free, no prep. We look at how your teams provision today and tell you whether th
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
 
 <!--
 SEO/GEO:

@@ -67,7 +67,7 @@ So oder so: Die Pro-Core-Lizenz, die Ihr Kunde an VMware zahlt, wird zu Marge un
 - **Für wen:** Leiter Cloud, Cloud-Practice-Leads, Leiter Allianzen bei SIs / MSPs / Resellern.
 - **Marge:** bis **40%** auf Lizenz + Support; plus Ihr eigener Managed-Services-Umsatz.
 - **Lizenz:** Apache 2.0 (Cozystack) — keine Pro-Core-/Pro-Socket-Kosten im Stack.
-- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating erwartet Spätsommer 2026).
+- **Status:** auf Basis von [Cozystack](https://cozystack.io), CNCF-Projekt (Sandbox 26.09.2024; Incubating-Antrag in der Due-Diligence-Prüfung).
 - **Häufiger Fehler:** über den Preis konkurrieren und einen Hyperscaler wiederverkaufen, ohne Plattformwert oder Verlängerungsbeziehung zu besitzen.
 
 [Quelle: [Ænix-Partnerprogramm](/de/partner/); [Cozystack-Doku](https://cozystack.io)]
@@ -125,7 +125,7 @@ Kostenlos, ohne Vorbereitung. Wir ordnen Ihren Kundenstamm den Plattformen zu, g
 
 ---
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating erwartet Spätsommer 2026), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
+*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/partner/vmware-exit/ ; hreflang de self, en → /partners/vmware-exit/.

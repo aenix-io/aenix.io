@@ -26,7 +26,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
 faq:
   - q: "Was ist das Platform Engineering Maturity Assessment?"
     a: "Eine kostenlose Selbsteinschätzung, die Ihre Platform-Engineering-Praxis über acht Dimensionen auf einer 5-Stufen-Reife-Skala bewertet — von Pre-platform bis Mature platform engineering. Aenix nutzt dasselbe Assessment, um Organisationen vor einer Phase-2-Empfehlung zu als Ausgangswert zu erfassen."

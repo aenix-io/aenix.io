@@ -84,7 +84,7 @@ community_champions:
 - **Geografie:** EU + Zentralasien Engineering-Teams
 - **CEO:** Andrei Kvapil
 - **COO:** Timur Tukaev
-- **Open-Source-Herkunft:** Wir haben Cozystack entwickelt — CNCF-Projekt, Apache 2.0, derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026
+- **Open-Source-Herkunft:** Wir haben Cozystack entwickelt — CNCF-Projekt, Apache 2.0, derzeit CNCF Sandbox; CNCF-Incubating-Antrag in der Due-Diligence-Prüfung
 - **Kommerzielles Produkt:** Ænix Platform — drei Plattformen (Public Cloud / Private Cloud / AI), plus Enterprise-Support für Cozystack
 - **Engagement-Skala:** Einstieg in die Public Cloud Platform ab 1.250 USD/Monat im Basic-Support-Tier; vollständige Public-Cloud- und Private-Cloud-Aufbauten nach RFP
 - **Phase:** früh in der Kommerzialisierung — die Technologie ist produktionsreif, der Vertrieb wächst
@@ -126,7 +126,7 @@ Das ist das Open-Core-Modell — wie Confluent auf Kafka, Canonical auf Ubuntu, 
 
 ## Cozystack und CNCF
 
-Cozystack ist derzeit ein **CNCF Sandbox**-Projekt. Wir erwarten **CNCF Incubating-Status Spätsommer 2026**, basierend auf der CNCF-Antrags-Bearbeitungs-Kadenz.
+Cozystack ist derzeit ein **CNCF Sandbox**-Projekt. Der im Oktober 2025 eingereichte Antrag auf **CNCF Incubating** befindet sich in der Due-Diligence-Prüfung durch das CNCF Technical Oversight Committee.
 
 - **Architektur:** Talos Linux + Kubernetes + KubeVirt + Cilium + LINSTOR + Tenant CRD + Cozystack Dashboard + VictoriaMetrics + VictoriaLogs
 - **Lizenz:** Apache 2.0 — jeder kann es betreiben
@@ -259,4 +259,4 @@ Buchen Sie einen 30-Minuten-Discovery-Call.
 
 ---
 
-*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF Incubating erwartet Spätsommer 2026), Apache 2.0. Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*
+*Ænix ist das Open-Core-Unternehmen hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (derzeit CNCF Sandbox; CNCF-Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Hersteller von Ænix Platform — turnkey kommerzielle Cloud-in-a-Box in drei Plattformen.*

@@ -15,7 +15,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Dimensions scored"
     value: "Workload portability, GitOps adoption, observability unification, secrets handling, identity model, multi-tenancy, disaster-recovery posture, self-service depth"
   - label: "Who it's for"

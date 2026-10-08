@@ -18,7 +18,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
   - label: "Zielgruppe"
     value: "Plattform-Teams und Engineering-Organisationen, die Backstage betreiben, aber langsame Self-Service-Pfade und eine fragmentierte Cloud-Foundation haben"
   - label: "Kernfunktion"
@@ -38,7 +38,7 @@ faq:
   - q: "Welche Ænix-Plattform passt für eine Internal Developer Platform?"
     a: "Die Developer-Self-Service-Schicht der Ænix Private Cloud Platform. Sie kombiniert die Cozystack-Foundation mit GitLab-Automation, Argo CD Workflows und Golden-Path-Templates zu einer vollständigen Internal Developer Platform. Eine Backstage-UI lässt sich optional als Front-End anbinden."
   - q: "Ist Cozystack Open Source und wie ist die Lizenzierung?"
-    a: "Cozystack steht unter Apache 2.0 und ist ein CNCF-Projekt (Sandbox seit dem 28.02.2025, Incubating erwartet für Spätsommer 2026). Es gibt keine CPU- oder Core-basierte Lizenzierung. Aenix verkauft die produktisierte Ænix Platform plus Services darum herum."
+    a: "Cozystack steht unter Apache 2.0 und ist ein CNCF-Projekt (Sandbox seit dem 28.02.2025, Incubating-Antrag in der Due-Diligence-Prüfung). Es gibt keine CPU- oder Core-basierte Lizenzierung. Aenix verkauft die produktisierte Ænix Platform plus Services darum herum."
   - q: "Wie steige ich am besten ein, wenn Backstage bereits läuft?"
     a: "Über ein Architektur-Review. Es klärt, ob das Problem im Portal oder in der Plattform-Foundation liegt, und ob die Developer-Self-Service-Schicht der Ænix Private Cloud Platform mit Cozystack darunter die Self-Service-Pfade beschleunigt — mit Backstage als optionalem Front-End."
 ---

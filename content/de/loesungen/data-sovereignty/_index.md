@@ -23,7 +23,7 @@ quick_facts:
   - label: "Lizenz"
     value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating erwartet Spätsommer 2026)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
 faq:
   - q: "Was bedeutet Datensouveränität in der Cloud-Infrastruktur?"
     a: "Datensouveränität bedeutet, nachweislich belegen zu können, dass Daten in der vom Regulator vorgeschriebenen Jurisdiktion gespeichert und verarbeitet werden — und zwar auf jeder Schicht, nicht nur in der Produktion. Dazu gehören Backups, Observability-Daten und CI/CD-Artefakte. Es geht um Nachweisbarkeit, nicht um eine Beschaffungsklausel."

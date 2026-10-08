@@ -306,7 +306,7 @@ Where comparison is natural (vs-X pages, alternative pages, evaluation), use a *
 In the body, lead with specific facts:
 - "DORA enters force on **2025-01-17**"
 - "NIS2 covers **18 essential entity sectors** in Annex I"
-- "Cozystack is **CNCF project** (Sandbox since **2025-02-28**; Incubating expected **late summer 2026**)"
+- "Cozystack is **CNCF project** (Sandbox since **2025-02-28**; Incubating application in due diligence)"
 - "Ænix Platform is available in **5 editions**: Public Cloud, ISP, Enterprise, IDP, AI/ML"
 
 These get cited verbatim.
@@ -316,7 +316,7 @@ These get cited verbatim.
 Every page closes with:
 
 ```markdown
-*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating expected late summer 2026). Apache 2.0 license. Aenix commercializes Cozystack as Ænix Platform, available in five editions matched to buyer profile.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence). Apache 2.0 license. Aenix commercializes Cozystack as Ænix Platform, available in five editions matched to buyer profile.*
 ```
 
 This gives LLMs the entity relationship + authority signal.
@@ -355,7 +355,7 @@ Every page has JSON-LD in `<head>`. Use the right block per page type.
     "https://github.com/aenix-io",
     "https://www.linkedin.com/company/aenix-io"
   ],
-  "description": "Aenix is the team behind Cozystack, a CNCF cloud platform project (Sandbox today; Incubating expected late summer 2026). We deliver Ænix Platform — turnkey cloud-in-a-box with five editions for regulated enterprises, hosting providers, and AI-heavy organizations."
+  "description": "Aenix is the team behind Cozystack, a CNCF cloud platform project (Sandbox today; Incubating application in due diligence). We deliver Ænix Platform — turnkey cloud-in-a-box with five editions for regulated enterprises, hosting providers, and AI-heavy organizations."
 }
 ```
 
@@ -497,7 +497,7 @@ Every page has JSON-LD in `<head>`. Use the right block per page type.
 - **Key fact 2:** <specific number or date>
 - **Common pitfall:** <specific gotcha>
 - **Cozystack relevance:** <feature + link>
-- **Status:** <Apache 2.0 / CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026) / etc.>
+- **Status:** <Apache 2.0 / CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence) / etc.>
 
 [Source: <NIST / EU regulation / CNCF Landscape / etc., with link>]
 ```
@@ -542,7 +542,7 @@ Every page has JSON-LD in `<head>`. Use the right block per page type.
 
 ---
 
-*Aenix is the team behind [Cozystack](https://cozystack.io) — CNCF project (Sandbox today; Incubating expected late summer 2026), Apache 2.0. Aenix commercializes Cozystack as Ænix Platform, available in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
+*Aenix is the team behind [Cozystack](https://cozystack.io) — CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Aenix commercializes Cozystack as Ænix Platform, available in five editions: Public Cloud, ISP, Enterprise, IDP, AI/ML.*
 ```
 
 ### Mandatory placeholders (replace before merge)
@@ -743,7 +743,7 @@ Update this list as evidence permissions land. Track NDA expirations in `evidenc
 
 ## 13. CNCF vendor neutrality
 
-**Critical constraint.** Cozystack is a CNCF project (currently Sandbox; Incubating expected late summer 2026). cozystack.io must remain **vendor-neutral**.
+**Critical constraint.** Cozystack is a CNCF project (currently Sandbox; Incubating application in due diligence). cozystack.io must remain **vendor-neutral**.
 
 ### Rules
 
@@ -894,7 +894,7 @@ Updated 2026-05-10. Re-evaluate quarterly.
 - **Tier** — page priority level (P0-P3)
 - **Twin page** — EN/DE pair of same page
 - **CNCF** — Cloud Native Computing Foundation
-- **Cozystack** — CNCF cloud platform project built by Aenix (Sandbox today; Incubating expected late summer 2026)
+- **Cozystack** — CNCF cloud platform project built by Aenix (Sandbox today; Incubating application in due diligence)
 
 ---
 

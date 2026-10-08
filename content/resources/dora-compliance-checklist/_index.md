@@ -23,7 +23,7 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Status"
-    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating expected late summer 2026)"
+    value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
   - label: "Pairs with"
     value: "Ænix Private Cloud Platform — built to support DORA work: keys you hold, audit logging you retain, an exit you can rehearse. Not a DORA certification, which does not exist for a platform."
 
