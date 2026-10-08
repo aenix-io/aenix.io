@@ -13,7 +13,7 @@
 */ -}}
 {{- $types := slice "product" "solution-landing" "services-landing" "industry-landing" "alternative" "compare" "migration-hub" -}}
 {{- $calc := false -}}
-{{- range slice "/tco-calculator/" "/roi-calculator/" "/isp-calculator/" "/cloud-calculator/" "/de/roi-rechner/" "/de/cloud-rechner/" -}}
+{{- range slice "/tco-calculator/" "/roi-calculator/" "/isp-calculator/" "/cloud-calculator/" "/de/roi-rechner/" "/de/cloud-rechner/" "/resources/vmware-cost-calculator/" "/de/ressourcen/vmware-kostenrechner/" -}}
   {{- if hasPrefix $.RelPermalink . }}{{ $calc = true }}{{ end -}}
 {{- end -}}
 {{- $show := or (in $types (.Params.page_type | default "")) $calc (in (slice "/pricing/" "/de/preise/") .RelPermalink) -}}

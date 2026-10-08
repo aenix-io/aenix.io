@@ -153,6 +153,21 @@
 
 {{ $seoCss := resources.Get "css/aenix-seo-extensions.css" | minify | fingerprint }}
 {{ with $seoCss }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+{{- /* Page-type sheets, split out of the global one so other pages do not
+       download them: rules whose every selector targets event or blog markup.
+       Keep the path lists in sync with the markup (a page that uses ws-*,
+       wm-*, wb-*, event-*, tour-*, blog-* or quiz-* classes must match). */ -}}
+{{- $rp := .RelPermalink -}}
+{{- $events := in (slice "event-landing" "webinar-materials") (string (or .Params.layout .Layout "")) -}}
+{{- range slice "/workshops/" "/ru/workshops/" "/de/workshops/" "/fr/" "/webinars/" "/tour-2026/" "/web0826/" -}}
+  {{- if hasPrefix $rp . }}{{ $events = true }}{{ end -}}
+{{- end -}}
+{{- if $events }}
+{{ with resources.Get "css/aenix-events.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+{{- end }}
+{{- if or (eq .Section "blog") (hasPrefix $rp "/de/blog/") (hasPrefix $rp "/ru/blog/") }}
+{{ with resources.Get "css/aenix-blog.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ .RelPermalink }}">{{ end }}
+{{- end }}
 
 {{/* ============================================================ */}}
 {{/* JSON-LD                                                         */}}

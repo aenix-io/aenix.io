@@ -34,4 +34,14 @@
   </url>
     {{- end }}
   {{- end }}
+  {{- /* Indexable hand-written pages under /static/ that Hugo does not know
+         about. Keep in sync with the files: /con/speakers.html is a
+         handbook for accepted speakers and carries its own noindex. */ -}}
+  {{- if eq .Site.Language.Lang "en" }}
+  {{- range slice "con/" "con/cfp.html" }}
+  <url>
+    <loc>{{ . | absURL }}</loc>
+  </url>
+  {{- end }}
+  {{- end }}
 </urlset>

@@ -8,9 +8,18 @@
     2. layouts that hard-code a noindex meta (keep in sync with
        grep -rn "noindex" layouts --include='*.html' | grep -v partials/seo)
     3. calculator-app host pages unless `indexable: true`
-    4. utility URLs with no content of their own (below)
+    4. utility URLs with no content of their own (below), and everything
+       under /workshop/ (hands-on lab material for workshop attendees)
     5. the "types" taxonomy (post-type filter pages, not topics)
-    6. Russian pages other than the certification programme
+    6. Russian pages other than the certification programme and the
+       Russian workshop event pages (/ru/workshops/), which are real event
+       landings meant to be found
+
+  The one rule: a page is either indexable AND in the sitemap, or it carries
+  a robots noindex meta AND stays out of the sitemap. Never one without the
+  other. Static pages under /static/ (e.g. /con/) are not Hugo pages: the
+  sitemap lists the indexable ones explicitly, and each noindex one carries
+  its own meta.
 
   Returns a dict: noindex (bool), emit (bool) — emit is true when the robots
   meta must come from seo/head.html because nothing else prints it.
@@ -25,9 +34,10 @@
 {{- if in $robots "noindex" }}{{ $no = true }}{{ end -}}
 {{- if in $noindexLayouts $layout }}{{ $no = true }}{{ end -}}
 {{- if and (eq $layout "calculator-app") (not $p.Params.indexable) }}{{ $no = true }}{{ end -}}
-{{- if and (not $no) (in $utility $p.RelPermalink) }}{{ $no = true }}{{ $emit = true }}{{ end -}}
+{{- if and (not $no) (or (in $utility $p.RelPermalink) (hasPrefix $p.RelPermalink "/workshop/")) }}{{ $no = true }}{{ $emit = true }}{{ end -}}
 {{- if and (not $no) (eq $p.Data.Plural "types") }}{{ $no = true }}{{ $emit = true }}{{ end -}}
 {{- if and (not $no) (hasPrefix $p.RelPermalink "/types/") }}{{ $no = true }}{{ $emit = true }}{{ end -}}
 {{- $ru := or (hasPrefix $p.RelPermalink "/ru/") (eq (lower (string (or $p.Params.language ""))) "ru") -}}
-{{- if and $ru (not (hasPrefix $p.RelPermalink "/certification/")) }}{{ $no = true }}{{ end -}}
+{{- $ruIndexable := or (hasPrefix $p.RelPermalink "/certification/") (hasPrefix $p.RelPermalink "/ru/workshops/") -}}
+{{- if and (not $no) $ru (not $ruIndexable) }}{{ $no = true }}{{ $emit = true }}{{ end -}}
 {{- return (dict "noindex" $no "emit" $emit) -}}

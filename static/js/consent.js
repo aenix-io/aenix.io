@@ -42,7 +42,7 @@
       customize: 'Customize',
       save: 'Save preferences',
       catNecessaryName: 'Strictly necessary',
-      catNecessaryDesc: 'Required for the site to function (cookie-consent state, language). Always active.',
+      catNecessaryDesc: 'Required for the site to function (cookie-consent state, language) and for the contact forms, which load from Pipedrive with Google reCAPTCHA spam protection when you scroll to a form. Always active.',
       catAnalyticsName: 'Analytics',
       catAnalyticsDesc: 'Helps us understand how visitors use the site (Google Analytics, Ahrefs Analytics).',
       catMarketingName: 'Marketing',
@@ -59,13 +59,13 @@
       customize: 'Anpassen',
       save: 'Auswahl speichern',
       catNecessaryName: 'Unbedingt erforderlich',
-      catNecessaryDesc: 'Erforderlich für den Betrieb der Website (Cookie-Consent-Status, Sprache). Immer aktiv.',
+      catNecessaryDesc: 'Erforderlich für den Betrieb der Website (Cookie-Consent-Status, Sprache) und für die Kontaktformulare, die beim Scrollen zum Formular von Pipedrive mit Google-reCAPTCHA-Spamschutz geladen werden. Immer aktiv.',
       catAnalyticsName: 'Analyse',
       catAnalyticsDesc: 'Hilft uns zu verstehen, wie Besucher die Seite nutzen (Google Analytics, Ahrefs Analytics).',
       catMarketingName: 'Marketing',
       catMarketingDesc: 'Wird verwendet, um die Werbewirkung zu messen und Sie plattformübergreifend mit relevanten Inhalten zu erreichen (Tag Manager, zukünftige Werbeplattformen).',
       learnMore: 'Datenschutzerklärung',
-      privacyUrl: '/privacy-policy/',
+      privacyUrl: '/de/datenschutz/',
       footerSettings: 'Cookie-Einstellungen'
     }
   };
