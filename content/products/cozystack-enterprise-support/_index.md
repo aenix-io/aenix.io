@@ -1,88 +1,99 @@
 ---
-title: "Enterprise support for Cozystack"
-description: "Enterprise support for Cozystack and Aenix platforms from the engineers who maintain the project: SLA tiers, dedicated channels, upgrade and compliance support."
-hero_subtitle: "SLA-backed support from the engineers who maintain it"
+title: "Enterprise support for Cozystack from its maintainers"
+description: "Enterprise support for self-run Cozystack from $1,250 per 10 nodes per month: incident response SLAs, upgrades, security fixes and architecture help."
+hero_subtitle: "SLA-backed support for the Cozystack you already run, from the engineers who maintain it"
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "cozystack enterprise support"
-secondary_keywords: ["kubernetes platform support", "cozystack sla", "open source cloud support contract", "cncf project commercial support"]
+secondary_keywords: ["cozystack support", "kubernetes platform support", "cozystack sla", "open source cloud support contract", "cncf project commercial support"]
 images: ["img/og/cozystack-enterprise-support.jpg"]
 hreflang_de: /de/produkte/cozystack-enterprise-support/
-related_pages: ["/products/cozystack/", "/products/private-cloud-platform/", "/products/public-cloud-platform/", "/pricing/"]
+related_pages: ["/products/cozystack/", "/pricing/", "/products/public-cloud-platform/", "/products/private-cloud-platform/"]
 direct_answer: |
-  **Enterprise support for Cozystack is a commercial support contract from Aenix, the open-core company that created and maintains Cozystack and is its largest single contributor. It gives organizations running the open-source platform themselves direct access to the maintainers: architecture review, incident triage and root-cause analysis, upgrade planning and execution, custom feature development against Cozystack, and compliance gap analysis for DORA, NIS2 and sovereignty requirements. It is sold as a monthly retainer, independent of any Ænix platform licence, and is the usual entry point for product teams running Cozystack on Hetzner, OVH or leased bare metal who want vendor backing without the commercial portal and billing layer. Customers of the Ænix platforms receive support as part of their engagement, at the tier they select.**
+  **Ænix enterprise support for Cozystack is a support subscription for organizations that already run open-source Cozystack themselves, on their own or leased hardware. It is priced from the published list: four tiers per 10 physical nodes per month — Basic $1,250, Standard $3,000, Plus $5,500 on annual billing, and a custom Enterprise tier — the same tiers that apply to Ænix Public Cloud Platform subscriptions. Every tier includes incident response with a defined SLA (emergency response from 8 hours on Basic down to 1 hour on Enterprise), CVE fixes and a dedicated support channel. Higher tiers add platform installation, supervised upgrades, fast-track security fixes, 24×7 coverage, architecture advisory and guided migration. Support comes from Ænix, which created Cozystack and maintains it together with engineers from other companies. No platform purchase is needed.**
 quick_facts:
-  - label: "Who provides it"
-    value: "The engineers who maintain Cozystack and build the Ænix platforms — not a tiered outsourced desk."
   - label: "For"
-    value: "Organizations running open-source Cozystack themselves, on a retainer; Ænix platform customers, bundled with the engagement."
-  - label: "Coverage"
-    value: "Architecture, operations, incident response, upgrade planning, compliance (DORA / NIS2 / sovereignty)."
-  - label: "Tiers"
-    value: "Basic, Standard, Plus and Enterprise — response SLA from 8 hours down to 1 hour, with a named TAM at the top tier."
-  - label: "Entry price"
-    value: "From $1,250/month per 10 nodes on an annual commitment."
-  - label: "Geography"
-    value: "EU, Central Asia and MENA business hours; 24/7 from the Plus tier upward."
+    value: "Teams running open-source Cozystack themselves who want the maintainers on call. No Ænix platform purchase required."
+  - label: "Price"
+    value: "Basic $1,250 · Standard $3,000 · Plus $5,500 · Enterprise custom — per 10 physical nodes per month, annual billing. Same tiers as Public Cloud Platform subscriptions."
+  - label: "Response SLA"
+    value: "Emergency response in 8 hours (Basic), 4 hours (Standard, Plus) or 1 hour (Enterprise)."
+  - label: "Hours"
+    value: "Business hours on Basic and Standard; 24×7 on Plus and Enterprise. Business hours are defined in the pricing notes."
+  - label: "Upgrades and security"
+    value: "CVE fixes on every tier; supervised upgrade assistance and fast-track security fixes from Standard."
+  - label: "Supported versions"
+    value: "Agreed in the support contract for your estate."
+  - label: "Who provides it"
+    value: "Ænix engineers who maintain Cozystack, not an outsourced first-line desk."
 faq:
-  - q: "Do we need an Ænix platform licence to buy support?"
-    a: "No. Support for self-run Cozystack is sold on its own as a monthly retainer, and that is a deliberate offering rather than an exception we tolerate. Cozystack is Apache 2.0 and a CNCF project; running it without buying anything from Aenix is a legitimate, supported choice, and a support contract simply puts the maintainers on call when you do."
-  - q: "How is this different from buying one of the Ænix platforms?"
-    a: "Support covers the engine you already run. The platforms add surfaces around that engine — billing, customer portals, compliance architecture bundles, migration tooling, productized installers. Teams with their own platform-engineering capacity frequently want the first and not the second, and that is the case this product is built for."
-  - q: "What does the response SLA actually cover?"
-    a: "Response, not resolution, and the distinction is stated in the contract rather than buried in it. A P1 acknowledgement lands within the tier's window with an engineer who can read the stack traces; resolution time depends on the fault. Architecture review cadence, incident triage, root-cause analysis and upgrade planning are the substance of the retainer, and most of the value shows up before an incident rather than during one."
-  - q: "Can you support a version we have pinned or forked?"
-    a: "Pinned versions, yes, within the supported release window, and upgrade planning off an old version is one of the more common reasons teams start a retainer. A local fork is a scoping conversation: we can support divergence we have reviewed, and we will say plainly when a change has moved a deployment outside what we can reason about."
-  - q: "How does this differ from the free community support?"
-    a: "Community support is GitHub issues, the CNCF Slack channel and the Telegram group — best-effort answers from maintainers and other operators, and often good ones. What it cannot give you is a response time you can put in a risk register, a named engineer who knows your topology, or an upgrade you can schedule. That is what the retainer buys."
-  - q: "How does it compare to a Red Hat OpenShift subscription?"
-    a: "OpenShift support is bundled into a per-CPU subscription, so support cost scales with the size of your estate. Ænix support is priced per 10 nodes for self-run Cozystack, or bundled into a platform engagement that is scoped as a project. The engine itself stays Apache 2.0 either way, so you are buying people rather than the right to run software."
+  - q: "Do we need to buy an Ænix platform to get support?"
+    a: "No. Support for self-run Cozystack is sold on its own, and that is a deliberate offering. Cozystack is Apache 2.0 and a CNCF project; running it without buying anything from Ænix is a legitimate choice, and a support subscription puts the maintainers on call when you do."
+  - q: "How much does it cost?"
+    a: "The published tiers per 10 physical nodes per month on annual billing: Basic $1,250, Standard $3,000, Plus $5,500, and a custom Enterprise tier. Monthly billing costs 20% more; annual billing works out as two months free. Work outside the tier's scope is billed at $150 per hour. The full comparison is on the pricing page."
+  - q: "What does the response SLA cover?"
+    a: "Response, not resolution. An emergency — a production system down or unresponsive with no workaround — gets an engineer within the tier's window: 8 hours on Basic, 4 hours on Standard and Plus, 1 hour on Enterprise. Standard requests are answered within 2 business days on Basic and Standard, 8 hours on Plus and 4 hours on Enterprise."
+  - q: "Are upgrades included?"
+    a: "Every tier gets CVE fixes and access to the upgrade documentation. From Standard upward, Ænix engineers supervise your upgrades and fast-track security fixes. Upgrade planning off an older version is one of the most common reasons teams start a subscription."
+  - q: "Which Cozystack versions do you support?"
+    a: "The supported versions are agreed in the contract for your estate. A local fork is a scoping conversation: we can support divergence we have reviewed, and we will say plainly when a change has moved a deployment outside what we can reason about."
+  - q: "Do your engineers need access to our clusters?"
+    a: "Not on Basic, where support runs through the support channel. From Standard upward, Ænix engineers can work on your clusters remotely, and only with your approval for each session."
+  - q: "How does this differ from free community support?"
+    a: "Community support is GitHub issues, the #cozystack channel on Kubernetes Slack and the Telegram group: best-effort answers from maintainers and other operators, and often good ones. What it cannot give you is a response time you can put in a risk register, engineers who know your topology, or an upgrade you can schedule."
   - q: "Does support include compliance work?"
-    a: "Gap analysis against DORA, NIS2 and sovereignty requirements is in scope, as is the architecture work that follows from it. Formal certification is not something a support contract delivers — ISO 27001 and SOC 2 alignment support is part of a platform engagement or a separate services scope."
+    a: "Compliance audit support is included from the Plus tier. Formal certification of your organization is not something a support contract delivers; ISO 27001 or DORA programme work is scoped as a separate service."
 aliases:
   - /enterprise-support/
 ---
 
-**Ænix enterprise support covers self-run Cozystack environments on a standalone retainer, and Ænix platform deployments as part of the engagement. Direct access to the engineers who maintain Cozystack and ship Ænix Platform.**
+**Already running Cozystack? Ænix enterprise support puts the engineers who maintain it on call for your clusters, priced from the published list: from $1,250 per 10 physical nodes per month.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-primary" href="/contact/?type=cozystack-support">Book a call</a>
+  <a class="cta-secondary" href="/pricing/#support">See the support tiers →</a>
 </div>
 
 ---
 
-## Two paths
+## For teams running Cozystack themselves
 
-### Path 1 — Ænix platform customers (support bundled)
+You installed Cozystack from [cozystack.io](https://cozystack.io), it runs in production, and you want a response time you can rely on. That is what this subscription is for. You buy support tiers per 10 physical nodes from the [published price list](/pricing/#support); there is no platform licence and nothing to migrate.
 
-If you have an Ænix platform engagement (Public Cloud, Private Cloud or AI Platform), enterprise support is part of the engagement bundle. Specific SLA matches your **support tier** (independent of platform):
+| Tier | Price per 10 nodes / month (annual) | What it adds |
+|---|---|---|
+| **Basic** | $1,250 | Business-hours support, 5 incidents, 8-hour emergency response, CVE fixes, knowledge-base upgrade guidance, 1 hour of training per month |
+| **Standard** | $3,000 | Unlimited incidents, 4-hour emergency response, platform installation, supervised upgrade assistance, fast-track security fixes, remote work on your clusters with your approval, support for white-label and GPU sharing (HAMi) configuration |
+| **Plus** | $5,500 | 24×7 support, 8-hour standard response, architecture advisory and best-practice audits included, air-gapped installation support, guided migration, compliance audit support, external monitoring, personalized roadmap |
+| **Enterprise** | Custom | 1-hour emergency and 4-hour standard response, migration managed by Ænix, customer contract templates permitted, co-engineering on features |
 
-- **Basic** ($1,250/month per 10 nodes annual) — Business-hours support, 8-hour emergency response
-- **Standard** ($3,000/month) — Business-hours support, 4-hour emergency response, priority tickets
-- **Plus** ($5,500/month) — 24/7 support, 4-hour emergency response, full enterprise features (white-labeling, air-gap, GPU sharing)
-- **Enterprise** (Custom) — 24/7 support, 1-hour emergency response, named TAM, personalized roadmap, customer-template MSA permitted, classified-data-cleared engineers for sovereign-cloud engagements
+Work outside a tier's scope is billed at $150 per hour. The row-by-row comparison, including training hours and procurement terms, is in one table on the [pricing page](/pricing/#support).
 
-[Ænix platforms →](/products/) | [Detailed pricing & tiers →](/pricing/)
+## What is included
 
-### Path 2 — Cozystack support (self-running organizations)
+- **Incident response** with the tier's SLA: triage, root-cause analysis and a fix or workaround from engineers who can read the stack traces.
+- **Upgrades and patches.** CVE fixes on every tier; supervised upgrades and fast-track security fixes from Standard. Supported versions are agreed in the contract for your estate.
+- **Architecture review.** Billed hourly on Basic and Standard, included on Plus and Enterprise.
+- **A dedicated support channel** on every tier.
 
-If your team runs Cozystack itself, without an Ænix platform licence, support is available on a standalone retainer: architecture review and best-practice guidance, incident triage and root-cause analysis, upgrade planning and execution, custom feature development against Cozystack, and compliance gap analysis for DORA, NIS2 and sovereignty. Monthly retainer or pay-per-incident.
+## Already on an Ænix platform?
 
-Response windows, review cadence, named TAM and 24/7 coverage vary by tier. The feature-by-feature comparison lives in one table on the pricing page rather than a summary here.
+Customers of the Ænix Public Cloud Platform buy the same tiers as part of their subscription, together with the Ænix commercial modules (billing and WHMCS integration). Private Cloud Platform and AI Platform programmes are quoted per RFP and include the support tier chosen during scoping.
 
-[Support tiers and pricing →](/pricing/#support)
+[Ænix platforms →](/products/) | [Support tiers and pricing →](/pricing/#support)
 
 ---
 
 ## How to start
 
-Book a discovery call to scope your support requirements.
+Tell us how many clusters and physical nodes you run, which Cozystack versions, and the response time you need. We will confirm the tier and the support terms on a short call.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-primary" href="/contact/?type=cozystack-support">Book a call</a>
+  <a class="cta-secondary" href="/pricing/#support">Compare tiers →</a>
 </div>
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) (CNCF Project) and the maker of Ænix Platform.*
+*[Cozystack](https://cozystack.io) is a CNCF project that Ænix created and maintains together with maintainers from other companies.*
