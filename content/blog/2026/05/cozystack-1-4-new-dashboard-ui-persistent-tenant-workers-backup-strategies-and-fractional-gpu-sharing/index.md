@@ -9,7 +9,6 @@ topics: ["Cozystack", "Kubernetes", "KubeVirt", "GPU", "Multi-tenancy", "Talos"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-1-4-new-dashboard-ui-persistent-tenant-workers-backup-strategies-and-fractional-gpu-sharing/cover.jpg"
 source_url: "https://blog.aenix.io/cozystack-1-4-0c5e399a7308"
-canonical: "https://blog.aenix.io/cozystack-1-4-0c5e399a7308"
 hreflang_de: /de/blog/2026/05/cozystack-1-4-neues-dashboard-persistente-tenant-worker-backup-strategien-gpu-sharing/
 companion_landing: "/products/cozystack-enterprise-support/"
 companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
