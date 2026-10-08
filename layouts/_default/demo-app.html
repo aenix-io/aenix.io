@@ -18,6 +18,8 @@
   .platform-demo { flex: 1 1 auto; width: 100%; min-height: 0; border: 0; display: block; overscroll-behavior: contain; }
   .platform-demo__hint { flex: 0 0 auto; font-size: .85rem; color: #64748b; padding: .5rem 1rem; text-align: center; background: #f8fafc; }
   footer { display: none; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .demo-cta { font-weight: 600; margin-left: .35rem; white-space: nowrap; }
   /* Below the fold on a short window the app needs room to breathe; let the
      page scroll again rather than squeezing the app into nothing. */
   @media (max-height: 620px) {
@@ -25,7 +27,8 @@
     .platform-demo { height: 560px; flex: 0 0 auto; }
   }
 </style>
-<iframe class="platform-demo" src="/demo-app/" title="Ænix Platform live demo"
+<h1 class="sr-only">{{ .Title }}</h1>
+<iframe class="platform-demo" src="/demo-app/" title="Ænix Public Cloud Platform live demo"
   allow="clipboard-read; clipboard-write"></iframe>
-<div class="platform-demo__hint">Interactive demo of the Ænix Platform customer portal and back-office (switch with Admin in the top bar) — runs entirely in your browser on mock data. Nothing here touches a real cloud. Looking for the developer-facing side? <a href="/idp/">Try the Ænix IDP demo</a>.</div>
+<div class="platform-demo__hint">Interactive demo of the Ænix Public Cloud Platform customer portal and back-office (switch with Admin in the top bar) — runs in your browser on mock data. Developer self-service: <a href="/idp/">try that demo</a>. <a class="demo-cta" href="/contact/" data-cta="demo">Book a 30-minute guided walkthrough →</a></div>
 {{ end }}
