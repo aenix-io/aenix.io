@@ -1,12 +1,17 @@
 ---
 title: "Cozystack vs Proxmox VE — head-to-head for SMB and multi-tenant scale"
-description: "Different scales. Different design centers. Both open source."
-related_pages: ["/alternatives/proxmox-alternative", "/products/public-cloud-platform/", "/products/cozystack"]
+seo_title: "Cozystack vs Proxmox VE: head-to-head comparison"
+primary_keyword: "cozystack vs proxmox"
+secondary_keywords:
+  - "proxmox vs cozystack"
+  - "proxmox vs kubevirt"
+description: "Cozystack vs Proxmox VE: both open source, built for different scales. Compare multi-tenancy, managed services, GPU, licensing and where Proxmox is better."
+related_pages: ["/alternatives/proxmox-alternative/", "/migration/proxmox/", "/products/public-cloud-platform/", "/products/cozystack/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cozystack and Proxmox VE are both open-source virtualization platforms, but they target different scales. Proxmox VE (AGPLv3) pairs KVM and LXC for SMB virtualization, labs, and single-tenant deployments under roughly 50 hosts. Cozystack (Apache 2.0) runs KubeVirt on Kubernetes, with a Tenant CRD for hard multi-tenancy, first-class managed databases and S3 object storage, and GPU support through the NVIDIA GPU Operator with HAMi for sharing a card across workloads. It suits service providers and regulated multi-tenant environments that have outgrown Proxmox's design center. Aenix, the team behind Cozystack, sells the productized Ænix Platform plus services, including the Public Cloud Platform cloud-in-a-box for hosting providers and regional clouds.**
+  **Cozystack and Proxmox VE are both open-source virtualization platforms, but they target different scales. Proxmox VE (AGPLv3) pairs KVM and LXC for SMB virtualization, labs, and single-tenant deployments under roughly 50 hosts. Cozystack (Apache 2.0) runs KubeVirt on Kubernetes, with a Tenant CRD for hard multi-tenancy, first-class managed databases and S3 object storage, and GPU support through the NVIDIA GPU Operator (passthrough or vGPU for VMs, HAMi sharing for pods). It suits service providers and regulated multi-tenant environments that have outgrown Proxmox's design center. Ænix, which created Cozystack and co-maintains it, sells support and services, including Ænix Public Cloud Platform, a cloud-in-a-box for hosting providers and regional clouds.**
 quick_facts:
   - label: "What it is"
     value: "A head-to-head comparison of Proxmox VE and Cozystack as open-source virtualization platforms, mapped to scale and tenancy needs."
@@ -30,15 +35,15 @@ faq:
   - q: "What are the licenses?"
     a: "Cozystack is licensed under Apache 2.0, with no per-CPU or per-core licensing. Proxmox VE is licensed under AGPLv3. Both are open source."
   - q: "Does Cozystack support GPUs better than Proxmox VE?"
-    a: "It goes further, but be precise about how far. Proxmox VE offers GPU passthrough, one card to one guest. Cozystack schedules GPUs through the NVIDIA GPU Operator and uses HAMi to share a card across container workloads, and NVIDIA vGPU is available for VMs where you hold the NVIDIA licence. Hard multi-tenant partitioning with MIG is on the roadmap, not shipping today, so do not plan an untrusted-tenant GPU product around it yet."
-  - q: "What does Aenix offer on top of Cozystack?"
-    a: "Aenix is the team behind Cozystack and sells the productized Ænix Platform plus services. The Public Cloud Platform is a turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox, with support tiers starting around $1,250/month."
+    a: "It goes further, but be precise about how far. Proxmox VE offers GPU passthrough, one card to one guest. Cozystack schedules GPUs through the NVIDIA GPU Operator and uses HAMi to share a card across container workloads, and passthrough or NVIDIA vGPU (where you hold the NVIDIA vGPU licence) is available for VMs. MIG and time-slicing are on the roadmap, not shipping today, so do not plan an untrusted-tenant GPU product around it yet."
+  - q: "What does Ænix offer on top of Cozystack?"
+    a: "Ænix created Cozystack and sells support and services on top of it. Ænix Public Cloud Platform is a turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox; support tiers start at $1,250 per 10 nodes per month (Basic, billed annually)."
 hreflang_de: /de/vergleichen/cozystack-vs-proxmox/
 ---
 
 **Different scales. Different design centers. Both open source.**
 
-> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox's design center. From $1,250/month support tier.
+> **Pairs with:** **[Ænix Public Cloud Platform](/products/public-cloud-platform/)** — turnkey cloud-in-a-box for hosting providers and regional clouds outgrowing Proxmox's design center. Support tiers from $1,250 per 10 nodes per month.
 
 <div class="compare-elevated compare-elevated--col3">
 
@@ -49,7 +54,7 @@ hreflang_de: /de/vergleichen/cozystack-vs-proxmox/
 | **Multi-tenancy** | Resource pools + role-based ACLs | Tenant CRD |
 | **Managed databases** | Manual / community | First-class |
 | **S3 object storage** | Manual | First-class |
-| **GPU** | Passthrough | GPU Operator + HAMi sharing; NVIDIA vGPU for VMs |
+| **GPU** | Passthrough | GPU Operator: passthrough or NVIDIA vGPU for VMs, HAMi sharing for pods |
 | **Best scale** | <50 hosts, single-tenant | Multi-tenant, service-provider |
 | **Best for** | SMB virtualization, labs | Service providers, regulated multi-tenant |
 
@@ -62,12 +67,12 @@ Simplicity is a feature, and the table above does not price it:
 - **One ISO, one afternoon.** A working three-node cluster with HA and a web UI, installed by one person who has not read a platform-engineering book. Cozystack asks you to understand Kubernetes before you understand the platform.
 - **Proxmox Backup Server.** Incremental, deduplicated, verified backups with single-file restore, built by the same vendor and integrated into the same UI. Velero plus per-database point-in-time recovery covers the same ground with more moving parts and more design work.
 - **Built-in ZFS and Ceph.** Both are first-class, installable from the UI, and supported by the vendor. No separate storage decision on day one.
-- **Subscription cost.** Proxmox support is priced per socket per year in low three figures, which is a different order of magnitude from any platform engagement.
+- **Subscription cost.** Proxmox subscriptions are priced per CPU socket per year: the Community tier sits in low three figures, and the tiers with support tickets cost more, but all are a different order of magnitude from any platform engagement.
 - **LXC where you want a container that behaves like a machine.** Legitimately useful, and not something Kubernetes offers.
 
 For a single-tenant, VM-mostly estate with a small team, Proxmox is the right answer and moving costs you more than it returns. Cozystack starts paying off where hard multi-tenancy, a catalogue beyond VMs, or per-tenant billing enter the requirements.
 
-See **[Proxmox alternative](/alternatives/proxmox-alternative)** for migration guidance and **[Proxmox vs VMware vs Cozystack article](/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/)** for full comparison.
+See **[Proxmox alternative](/alternatives/proxmox-alternative/)** for when moving beyond Proxmox makes sense, the **[Proxmox migration hub](/migration/proxmox/)** for the migration path, and **[Proxmox vs VMware vs Cozystack article](/blog/2026/05/proxmox-vs-vmware-vs-cozystack-comparison/)** for full comparison.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -75,7 +80,7 @@ See **[Proxmox alternative](/alternatives/proxmox-alternative)** for migration g
 
 ---
 
-*Ænix is the team behind Cozystack.*
+*Ænix created Cozystack (CNCF Sandbox project) and co-maintains it with maintainers from other companies. On top of it we offer Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!-- SEO: title "Cozystack vs Proxmox VE — Head-to-Head Comparison | Ænix"
 -->

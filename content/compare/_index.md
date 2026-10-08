@@ -1,5 +1,6 @@
 ---
 title: "Cozystack vs ... — head-to-head comparisons"
+seo_title: "Cozystack vs VMware, OpenStack, OpenShift, Proxmox"
 description: "Architectural comparisons of Cozystack vs the platforms it replaces — VMware, OpenStack, OpenShift Virtualization, Proxmox VE — for platform engineers."
 hero_subtitle: "Cozystack against the platforms it replaces, head-to-head"
 language: "en"
@@ -13,13 +14,13 @@ posture, operational footprint, license, and migration pattern — at
 the level of detail a platform engineer needs to make an architecture
 call.
 
-For market-wide listicles (e.g. "best VMware alternatives") see
+For market-wide comparisons (e.g. "best VMware alternatives") and our recommendation per platform, see
 **[Alternatives →](/alternatives/)**.
 For migration playbooks see **[Migration hubs →](/migration/)**.
 
 ## Cost comparisons with sourced prices
 
-The four write-ups above are architectural. For the money, the TCO calculator
+The four comparisons listed below are architectural. For the money, the TCO calculator
 compares five-year cost against ten platforms, with each price carrying a
 source, a date and a source-nature label, and each page stating the case where
 the other platform wins:

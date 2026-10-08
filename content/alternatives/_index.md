@@ -1,12 +1,13 @@
 ---
 title: "Alternatives"
-description: "Cozystack and Ænix Platform compared with VMware, OpenStack, OpenShift, Proxmox, Nutanix and Backstage — honest comparisons and migration paths."
+seo_title: "Cozystack alternatives and comparisons"
+description: "Cozystack and the Ænix platforms compared with VMware, OpenStack, OpenShift, Proxmox, Nutanix and Backstage — honest comparisons and migration paths."
 hero_subtitle: "Honest comparisons and real migration paths off legacy platforms"
 language: "en"
 hreflang_de: /de/alternativen/
 ---
 
-**Cozystack and Ænix Platform compared with the most common alternatives. Honest assessments — when each fits, when it doesn't, what migration looks like. Not marketing battle cards.**
+**Cozystack and the Ænix platforms compared with the most common alternatives. Honest assessments — when each fits, when it doesn't, what migration looks like. Not marketing battle cards.**
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -29,9 +30,9 @@ hreflang_de: /de/alternativen/
 
 Post-Broadcom, VMware customers face subscription pressure + license model uncertainty. The largest single migration trigger we see in 2026.
 
-- **[VMware alternative](/alternatives/vmware-alternative/)** — singular, BOFU intent; for organizations close to migration decision
-- **[VMware alternatives (listicle)](/alternatives/vmware-alternatives/)** — plural, MOFU intent; market-shortlist comparison
-- **[Cozystack vs VMware](/compare/cozystack-vs-vmware/)** — direct head-to-head architectural comparison
+- **[VMware alternative — our recommendation](/alternatives/vmware-alternative/)** — for teams close to a migration decision
+- **[Best VMware alternatives 2026 — market comparison](/alternatives/vmware-alternatives/)** — eight platforms side by side for a shortlist
+- **[Cozystack vs VMware — head to head](/compare/cozystack-vs-vmware/)** — direct architectural comparison
 - **[VMware migration hub](/migration/vmware/)** — strategy + architecture + cohort migration patterns
 
 **Pairs with:** Public Cloud Platform (hosting providers exiting VMware Cloud Director, and large operators); Private Cloud Platform (regulated enterprises exiting VMware Cloud Foundation).
@@ -70,6 +71,7 @@ OpenShift is enterprise-grade but Red Hat subscription model + opinionated appro
 Nutanix HCI is the strongest day-2 experience in this list, and proprietary. Sovereign and cost-conscious enterprises evaluate alternatives when hardware freedom or a multi-tenant service-provider model matters more than that.
 
 - **[Nutanix alternative](/alternatives/nutanix-alternative/)** — when to look beyond Nutanix
+- **[Nutanix migration hub](/migration/nutanix/)** — migration patterns
 
 **Pairs with:** Private Cloud Platform.
 
