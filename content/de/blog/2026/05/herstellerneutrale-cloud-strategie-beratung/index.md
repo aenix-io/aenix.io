@@ -207,7 +207,7 @@ Entscheidungsauslösern.
 
 ### Synthese: der Plan für 18–36 Monate
 
-Die Ergebnisse von drei Arbeitssträngen werden zu einem
+Die Ergebnisse von fünf Arbeitssträngen werden zu einem
 Strategiedokument auf Vorstandsniveau zusammengeführt. Management
 Summary (3–5 Seiten). Details der Arbeitsstränge (5–8 Seiten je
 Strang). Roadmap mit Meilensteinen (2–3 Seiten). Empfehlungen zur
