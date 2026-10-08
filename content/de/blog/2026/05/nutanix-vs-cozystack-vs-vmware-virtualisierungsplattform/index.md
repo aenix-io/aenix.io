@@ -35,14 +35,14 @@ quiz:
       options:
         - { text: "Natives Kubernetes (Container und VMs auf einer Ebene)", correct: false }
         - { text: "Tanzu-Integration (föderierte Control Plane)", correct: false }
-        - { text: "Karbon (separates Kubernetes-Produkt neben AHV)", correct: true }
-      explanation: "Container bei Nutanix = Karbon (separates Produkt). VMware = Tanzu (separates Produkt). Cozystack = natives Kubernetes (Container und VMs auf derselben Plattform). Das Muster „separates Produkt“ ist ein zentraler architektonischer Unterschied."
+        - { text: "NKP (separates Kubernetes-Produkt neben AHV)", correct: true }
+      explanation: "Container bei Nutanix = Nutanix Kubernetes Platform (NKP, Nachfolger von Karbon; separates Produkt). VMware = Tanzu (separates Produkt). Cozystack = natives Kubernetes (Container und VMs auf derselben Plattform). Das Muster „separates Produkt“ ist ein zentraler architektonischer Unterschied."
     - q: "Auf welcher Hardware läuft Nutanix im Vergleich zu Cozystack?"
       options:
         - { text: "Beide laufen auf handelsüblichen x86-Standardservern", correct: false }
         - { text: "Beide benötigen moderne ARM-basierte Serverhardware", correct: false }
-        - { text: "Nutanix auf Nutanix-Appliances; Cozystack auf handelsüblichem x86", correct: true }
-      explanation: "Nutanix = Nutanix-Appliance-Hardware (HCI-Modell). VMware VCF = x86 (allgemein). Cozystack = handelsübliches x86. Weil Cozystack auf handelsüblichem x86 läuft, lässt sich bestehende VMware-Hardware bei der Migration in der Regel weiterverwenden."
+        - { text: "Nutanix auf NX- oder zertifizierten OEM-Knoten; Cozystack auf handelsüblichem x86", correct: true }
+      explanation: "Nutanix = NX-Appliances oder zertifizierte OEM-Hardware von Dell, HPE, Lenovo und anderen (HCI-Modell). VMware VCF = x86 (allgemein). Cozystack = handelsübliches x86. Weil Cozystack auf handelsüblichem x86 läuft, lässt sich bestehende VMware-Hardware bei der Migration in der Regel weiterverwenden."
 ---
 
 
@@ -66,8 +66,8 @@ quiz:
 | **Mandantenfähigkeit** | Eingeschränkt | vCloud Director | Tenant CRD |
 | **Storage** | Verteilt (proprietär) | vSAN | LINSTOR (DRBD) |
 | **Netzwerk** | AHV-Networking | NSX | Cilium |
-| **Container** | Karbon (separat) | Tanzu (separat) | Nativ |
-| **Hardware** | Nutanix-Appliance | x86 | Handelsübliches x86 |
+| **Container** | NKP (separat) | Tanzu (separat) | Nativ |
+| **Hardware** | Nutanix NX oder zertifizierte OEM-Hardware (Dell, HPE, Lenovo u. a.) | x86 | Handelsübliches x86 |
 | **Am besten für** | HCI-orientierte Unternehmen | Bestehende VMware-Umgebungen | Service-Provider + souveräne Cloud |
 
 ## Wann welche Plattform gewinnt
