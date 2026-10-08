@@ -6,8 +6,8 @@ description: "Compare VMware VCF licensing (Broadcom renewal uplift included) ag
 type: "page"
 page_type: "flag-page"
 language: "en"
-date: 2026-08-22
-lastmod: 2026-08-22
+date: 2026-10-08
+lastmod: 2026-10-08
 weight: 20
 robots: "index,follow"
 images: ["img/og/og-tco-vs-vmware.jpg"]
@@ -25,7 +25,7 @@ related_pages:
      (title, description, self-canonical /tco-calculator/vs-vmware/). -->
 <article class="tco-spoke tco-tier-1">
   <h2>VMware vs Cozystack — 5-year TCO and exit cost</h2>
-  <p class="stamp">Last updated: <time datetime="2026-08-22">2026-08-22</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
+  <p class="stamp">Last updated: <time datetime="2026-10-08">2026-10-08</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
   <p class="lead">Cozystack 5-year TCO for 200 VMs is $342,915 vs VMware VCF $1,124,837, at typical negotiated prices, Q3 2026 (including one-time migration costs).</p>
   <!-- calculator widget: eager iframe, fixed size (no CLS); the app URL stays noindex,indexifembedded -->
   <iframe src="/tco-calculator-app/?vs=vmware" title="Cozystack TCO Calculator — vs VMware VCF" loading="eager" width="100%" height="900"></iframe>
@@ -71,7 +71,7 @@ related_pages:
   <p>Cozystack becomes cheaper than VMware VCF when VMware VCF $/core/yr exceeds $42 (current: $250) — it already does at the current value. One-time migration costs pay back in month 1.</p>
   <h2>Key facts</h2>
   <ul>
-    <li>VMware VCF licensing: $350/core/yr list, ~$250/core/yr typical negotiated (third-party reported street price $185–275; as of 2026-Q3).</li>
+    <li>VMware VCF licensing: $350/core/yr list, ~$250/core/yr typical negotiated (street/negotiated (third-party reported) — street $185–275; as of 2026-Q3).</li>
     <li>VMware VCF bills a minimum of 16 cores per socket (Broadcom licensing minimum 16 cores/socket).</li>
     <li>VMware VCF renewal uplift modeled at +30% after a renewal event (documented cases up to 10×: AT&amp;T 1050%, CISPE 800–1500%, SMB 350–450%).</li>
     <li>Contract term default: 36 months (3yr prepaid is the norm).</li>
@@ -110,7 +110,7 @@ related_pages:
     "price": "0",
     "priceCurrency": "USD"
   },
-  "dateModified": "2026-08-22",
+  "dateModified": "2026-10-08",
   "publisher": { "@id": "https://aenix.io/#org" }
 }
 </script>
