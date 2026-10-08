@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Kubernetes", "Talos"]
 language: "en"
+hreflang_de: "/de/blog/2024/12/zukunft-kubernetes-linux-kernel/"
 cover_image: "/img/blog/medium/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux/cover.jpg"
 source_url: "https://medium.com/@tym83/the-inevitable-future-of-kubernetes-why-the-orchestrator-should-follow-the-path-of-the-linux-367f49916712"
 quiz:
