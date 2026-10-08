@@ -144,7 +144,7 @@ cities:
     date_iso: "2026-11-06T10:00:00+00:00"
     end_iso: "2026-11-06T14:00:00+00:00"
     country_code: "GB"
-    venue: "Venue to be confirmed — registered attendees hear first. In person or online."
+    venue: "Veranstaltungsort wird noch bestätigt — Angemeldete erfahren ihn zuerst. Vor Ort oder online."
     form: "https://webforms.pipedrive.com/f/63fmcb0ML4ruV9dZvat9eZELmi8trXuB0nrsQPlGpH2Cve2dnnRImpwAilE1uvKu43"
     href: "#register"
 final_cta:
@@ -153,13 +153,13 @@ final_cta:
   button: "Für Ihre Stadt anmelden"
   href: "#register"
 direct_answer: |
-  **Dies ist ein kostenloser Praxis-Workshop für alle, die VMware betreiben und entscheiden müssen, wie es weitergeht. Im Herbst 2026 findet er in acht europäischen Städten statt – Paris, Berlin, Warsaw, Copenhagen, Amsterdam, Milan, Madrid und London. An einem Tag migrieren Sie eigenhändig eine echte virtuelle Maschine von einem laufenden VMware-Server auf Cozystack – eine offene Virtualisierungsplattform unter dem Dach der CNCF. Die meiste Zeit ist Praxis in einer persönlichen Arbeitsumgebung: die Maschine migrieren, eine Datenbank hinzufügen, Monitoring und Backups. Anschließend zeigt eine kurze Live-Demo dieselbe Plattform mit KI und GPUs – der VMware-Ersatz ist damit zugleich eine KI/GPU-Plattform auf Infrastruktur, die Ihnen gehört. Geleitet wird der Workshop von Timur Tukaev, Maintainer von Cozystack und Mitgründer von Ænix. Sie können vor Ort oder online teilnehmen; danach erhalten alle Teilnehmenden eine Testumgebung für 30 Tage, Zugang zu einem Chat mit den Maintainern der Plattform, Lab-Aufgaben für zu Hause und die Möglichkeit, das Zertifikat Ænix Certification for Cozystack – Fundamentals zu erwerben. Die Teilnahme ist nach Anmeldung kostenlos; die Plätze sind begrenzt.**
+  **Dies ist ein kostenloser Praxis-Workshop für alle, die VMware betreiben und entscheiden müssen, wie es weitergeht. Im Herbst 2026 findet er in acht europäischen Städten statt – Paris, Berlin, Warschau, Kopenhagen, Amsterdam, Mailand, Madrid und London. An einem Tag migrieren Sie eigenhändig eine echte virtuelle Maschine von einem laufenden VMware-Server auf Cozystack – eine offene Virtualisierungsplattform unter dem Dach der CNCF. Die meiste Zeit ist Praxis in einer persönlichen Arbeitsumgebung: die Maschine migrieren, eine Datenbank hinzufügen, Monitoring und Backups. Anschließend zeigt eine kurze Live-Demo dieselbe Plattform mit KI und GPUs – der VMware-Ersatz ist damit zugleich eine KI/GPU-Plattform auf Infrastruktur, die Ihnen gehört. Geleitet wird der Workshop von Timur Tukaev, Maintainer von Cozystack und Mitgründer von Ænix. Sie können vor Ort oder online teilnehmen; danach erhalten alle Teilnehmenden eine Testumgebung für 30 Tage, Zugang zu einem Chat mit den Maintainern der Plattform, Lab-Aufgaben für zu Hause und die Möglichkeit, das Zertifikat Ænix Certification for Cozystack – Fundamentals zu erwerben. Die Teilnahme ist nach Anmeldung kostenlos; die Plätze sind begrenzt.**
 
 quick_facts:
   - label: "Format"
     value: "Workshop vor Ort oder online, rund vier Stunden: etwa drei Stunden Praxis, dazu eine kurze KI/GPU-Live-Demo und offener Austausch"
   - label: "Städte"
-    value: "Paris, Berlin, Warsaw, Copenhagen, Amsterdam, Milan, Madrid, London – Oktober–November 2026"
+    value: "Paris, Berlin, Warschau, Kopenhagen, Amsterdam, Mailand, Madrid, London – Oktober–November 2026"
   - label: "Preis"
     value: "Kostenlos nach Anmeldung; begrenzte Plätze"
   - label: "Sprache"

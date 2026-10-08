@@ -20,6 +20,7 @@ hero_chips:
 hero_primary: { text: "Platz sichern", href: "#register" }
 hero_secondary: { text: "Zur Agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
+speaker_alt: "Andrei Kvapil"
 inshort_title: "Über das Webinar"
 quick_facts_style: "rows"
 event:
