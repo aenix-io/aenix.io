@@ -222,7 +222,7 @@ Aenix has delivered platform component R&D for established platform vendors — 
 ## Compliance and certifications
 
 - Cozystack: CNCF project (currently CNCF Sandbox; CNCF Incubating expected late summer 2026), CNCF-Certified Kubernetes Distribution, OpenSSF Best Practices
-- Aenix: ISO 27001 in progress, GDPR-compliant operations
+- AENIX s.r.o.: ISO/IEC 27001:2022 certified information security management system (certificate № SIC.MS.008.ISO/IEC27001.5719, scope: software development, IT consulting, hosting, data services, web portals; issued 27 February 2026, valid through 26 February 2027); details at https://aenix.io/compliance/iso-27001/. No SOC 2 report. GDPR-compliant operations
 - Cozystack license: Apache 2.0
 
 ## Project milestones (citation-ready)

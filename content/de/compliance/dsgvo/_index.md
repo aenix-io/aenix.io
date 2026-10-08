@@ -30,7 +30,7 @@ quick_facts:
   - label: "Größte Lücke"
     value: "Integritätsüberwachung. Weder IDS noch Dateiintegritäts- oder Änderungserkennung werden mitgeliefert."
   - label: "Zertifizierung"
-    value: "Keine. Eine DSGVO-Zertifizierung für eine Plattform existiert nicht, und Aenix hält weder ISO 27001 noch SOC 2."
+    value: "Keine für die DSGVO: Eine DSGVO-Zertifizierung für eine Plattform existiert nicht. Die AENIX s.r.o. ist für ihr eigenes Informationssicherheits-Managementsystem nach ISO/IEC 27001:2022 zertifiziert; einen SOC-2-Bericht gibt es nicht."
 faq:
   - q: "Ist die Aenix-Plattform DSGVO-konform?"
     a: "Die Frage passt nicht auf Infrastruktur. Eine Organisation ist konform; eine Plattform liefert Maßnahmen. Die Aenix-Plattformen liefern Verschlüsselung, Zugriffskontrolle, Tenant-Trennung, Audit-Logging, Backup und Wiederherstellung sowie vollständige Kontrolle darüber, wo Daten physisch liegen. Rechtsgrundlage, Verzeichnis von Verarbeitungstätigkeiten, Datenschutz-Folgenabschätzungen und Meldungen von Datenschutzverletzungen bleiben bei demjenigen, der über Zwecke und Mittel der Verarbeitung entscheidet."

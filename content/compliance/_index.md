@@ -24,7 +24,7 @@ quick_facts:
   - label: "What was tested"
     value: "Cozystack v1.6 / v1.6.1 on Talos Linux — the same engine the three Ænix platforms ship, not a separate build."
   - label: "Certifications held"
-    value: "No security certification. Aenix holds no ISO 27001 or SOC 2 certificate, and no platform can hold a PCI DSS or GDPR certification. The one certification that does exist is CNCF Certified Kubernetes for Cozystack, which is a conformance mark and says nothing about security."
+    value: "AENIX s.r.o. holds ISO/IEC 27001:2022 for its information security management system (certificate № SIC.MS.008.ISO/IEC27001.5719, valid through 26 February 2027). There is no SOC 2 report, and no platform can hold a PCI DSS or GDPR certification. Cozystack is a CNCF Certified Kubernetes distribution, a conformance mark that says nothing about security."
   - label: "Conformance"
     value: "Tenant Kubernetes clusters pass the CNCF conformance suite in full on Kubernetes v1.31 through v1.35; Cozystack v1.6.1 is listed as a Certified Kubernetes distribution for v1.34 and v1.35."
   - label: "CIS Benchmark"
@@ -35,7 +35,7 @@ faq:
   - q: "Are these benchmark results for Cozystack or for the Aenix platforms?"
     a: "For Cozystack, and that is the honest and useful answer. The Aenix Public Cloud Platform, Private Cloud Platform and AI Platform are distributions of Cozystack, the Apache 2.0 CNCF project Aenix creates and maintains. There is no separate closed-source engine to test. A control that passes on Cozystack passes on the platform built from it; a deviation on Cozystack is a deviation on the platform. Where a result depends on the Talos machine configuration or the reference architecture Aenix supplies around the engine rather than on the software itself, each page says so explicitly."
   - q: "Is the Aenix platform certified — ISO 27001, SOC 2, PCI DSS?"
-    a: "No. Aenix holds no ISO 27001 or SOC 2 certificate, and does not claim one. PCI DSS certification applies to a scoped cardholder data environment and is signed by a Qualified Security Assessor, not granted to a platform. The CIS Benchmark has no pass or fail verdict to award at all — it is a list of controls. What the platforms do is supply and evidence the technical controls those programmes depend on, and support your certification work; that is a narrower claim, and it is the one we make."
+    a: "The company is, the platform is not. AENIX s.r.o. holds ISO/IEC 27001:2022 for its information security management system — a certificate for how the company works, not for a product. There is no SOC 2 report. PCI DSS certification applies to a scoped cardholder data environment and is signed by a Qualified Security Assessor, not granted to a platform. The CIS Benchmark has no pass or fail verdict to award at all — it is a list of controls. What the platforms do is supply and evidence the technical controls those programmes depend on, and support your certification work; that is a narrower claim, and it is the one we make."
   - q: "Can we reproduce these results on our own cluster?"
     a: "Yes, and you should before an assessment. The CIS Benchmark page publishes the exact kube-bench job manifest, pinned image version and benchmark revision used for the published run. The Kubernetes conformance page publishes the Sonobuoy invocation. The PCI DSS and GDPR pages give kubectl commands that verify tenant isolation and RBAC scope directly. Your installation may produce different numbers, particularly where the Talos machine configuration differs."
   - q: "How does this section relate to the DORA and NIS2 solution pages?"
@@ -75,6 +75,7 @@ The alternative framing — publishing these as results for a proprietary produc
 
 ## Frameworks
 
+- **[ISO/IEC 27001](/compliance/iso-27001/)** — the ISO/IEC 27001:2022 certificate of AENIX s.r.o.: number, scope, validity, and what an organisation's certificate does and does not say about the platforms.
 - **[PCI DSS](/compliance/pci-dss/)** — a requirement-by-requirement mapping of all twelve PCI DSS v4.0.1 requirements: what is active by default, what is one setting away, what stays with you, with commands to verify each control on your own cluster.
 - **[GDPR](/compliance/gdpr/)** — the Article 32 technical measures the platform supplies, where personal data physically sits, and the parts of the right to erasure that infrastructure cannot settle.
 - **[CIS Kubernetes Benchmark](/compliance/cis-benchmark/)** — the full kube-bench run: 54 pass, 24 fail, 53 warn, with every failure sorted into a real deviation, a control met another way, or a check that does not apply on an immutable node.
@@ -92,7 +93,7 @@ Precision here is worth more than reassurance, because an assessor will test eve
 
 | Claim we do **not** make | What is true instead |
 |---|---|
-| "Ænix is ISO 27001 certified" | Aenix holds no ISO 27001 certificate. The platforms are built to support an ISMS — audit logging, access control, change control through declarative configuration — and Ænix supports customers' certification work. That is a different claim. |
+| "The Ænix platform is ISO 27001 certified" | ISO/IEC 27001 certifies a management system, not a product. AENIX s.r.o. holds the certificate for its own ISMS ([details](/compliance/iso-27001/)); the platforms support your ISMS with audit logging, access control and declarative change control, but your environment needs its own certification. |
 | "Ænix is SOC 2 attested" | There is no SOC 2 report. Where a customer needs one for their own service running on the platform, the platform supplies control evidence; the report is theirs. |
 | "The platform is PCI DSS certified" | No platform is. A Qualified Security Assessor certifies a scoped cardholder data environment. The platform supplies the technical controls the assessment leans on. |
 | "The platform is GDPR compliant" | Compliance belongs to the controller. The platform supplies Article 32 measures and makes them demonstrable. |
