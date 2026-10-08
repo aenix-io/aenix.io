@@ -20,7 +20,6 @@
 /kubefarm/                          /case-studies/                        301
 
 # ─── External app redirect (existing — preserved) ────────────────────────────
-/cloud/                             https://cloud.aenix.io/               302
 
 # ─── Removed Deckhouse case studies (Aenix did the work, no longer published) ──
 /case-studies/prototype-a-virtualization-subsystem-for-deckhouse-kubernetes-platform/    /case-studies/  410
