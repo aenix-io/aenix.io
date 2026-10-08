@@ -8,7 +8,6 @@ topics: ["Open Source", "DevOps", "Kubernetes", "CNCF", "Platform Engineering", 
 language: "en"
 cover_image: "/img/blog/medium/cozystack-have-launched-a-new-oss-health-section-on-a-website/cover.png"
 source_url: "https://blog.aenix.io/cozystack-have-launched-a-new-oss-health-section-on-a-website-fa1f4d889c47"
-canonical: "https://blog.aenix.io/cozystack-have-launched-a-new-oss-health-section-on-a-website-fa1f4d889c47"
 ---
 
 We have launched a new OSS health section on the Cozystack website, with project stats refreshed automatically every month.
