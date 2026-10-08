@@ -1,6 +1,6 @@
 # aenix.io
 
-The official website for **Aenix**, the open-core company behind [Cozystack](https://cozystack.io) (CNCF Sandbox project; CNCF Incubating expected late summer 2026). Built with [Hugo](https://gohugo.io/), deployed via Netlify.
+The official website for **Aenix**, the open-core company behind [Cozystack](https://cozystack.io) (CNCF Sandbox project; its CNCF Incubating application is in due diligence). Built with [Hugo](https://gohugo.io/), deployed to GitHub Pages; Netlify builds pull-request previews.
 
 ## Site structure
 
@@ -24,7 +24,7 @@ Hugo extended ≥0.151.1 required (see `netlify.toml`).
 hugo --gc --minify --logLevel info
 ```
 
-Netlify auto-builds on push to `main` (production) and `feat/*` branches (deploy previews).
+Pushing to `main` deploys production to GitHub Pages through `.github/workflows/hugo.yaml` (Hugo 0.160.1). Netlify builds a deploy preview for every pull request.
 
 ## Documentation for contributors
 
