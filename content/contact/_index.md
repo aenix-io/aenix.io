@@ -86,7 +86,7 @@ solutions engineering.
 Render social-icons shortcode below contact info — LinkedIn / Telegram / Facebook / X.
 {{< /design-note >}}
 
-{{< social-icons linkedin="https://www.linkedin.com/company/aenix/" telegram="https://t.me/cozystack" facebook="https://www.facebook.com/aenix.io" x="https://x.com/aenix_io" >}}
+{{< social-icons linkedin="https://www.linkedin.com/company/aenix-io/" telegram="https://t.me/cozystack" facebook="https://www.facebook.com/aenix.io" x="https://x.com/aenix_io" >}}
 
 ---
 

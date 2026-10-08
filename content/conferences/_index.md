@@ -9,7 +9,7 @@ hreflang_de: /de/konferenzen/
 **The Ænix team speaks at Kubernetes, cloud, and platform-engineering conferences globally — sharing how Cozystack works, how Ænix Platform extends it for production cloud operations, and the architecture decisions behind sovereign / regulated cloud at scale.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="https://www.linkedin.com/company/aenix/">Follow Ænix on LinkedIn for upcoming talks →</a>
+  <a class="cta-primary" href="https://www.linkedin.com/company/aenix-io/">Follow Ænix on LinkedIn for upcoming talks →</a>
   <a class="cta-secondary" href="/contact/">Invite us to your event</a>
 </div>
 
@@ -32,7 +32,7 @@ hreflang_de: /de/konferenzen/
 Render upcoming-events block. Empty state: "Ænix conference calendar updates throughout the year — follow us on LinkedIn or subscribe for notifications." Calendar entries inserted as confirmed.
 {{< /design-note >}}
 
-For 2026 H2 conference appearances and customer-event tours, follow us on [LinkedIn](https://www.linkedin.com/company/aenix/) or [Telegram](https://t.me/cozystack).
+For 2026 H2 conference appearances and customer-event tours, follow us on [LinkedIn](https://www.linkedin.com/company/aenix-io/) or [Telegram](https://t.me/cozystack).
 
 ---
 
@@ -113,7 +113,7 @@ For invitations: book a [discovery call](/contact/) and mention "speaking invita
 
 ## Stay in touch
 
-- **LinkedIn:** [linkedin.com/company/aenix/](https://www.linkedin.com/company/aenix/)
+- **LinkedIn:** [linkedin.com/company/aenix-io/](https://www.linkedin.com/company/aenix-io/)
 - **Telegram (English):** [t.me/cozystack](https://t.me/cozystack)
 - **YouTube:** [Ænix talks playlist on YouTube](https://www.youtube.com/results?search_query=aenix+cozystack) (filter by Ænix / Cozystack speakers)
 - **GitHub:** [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack) — community engagement

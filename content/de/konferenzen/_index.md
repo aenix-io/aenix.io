@@ -8,7 +8,7 @@ hreflang_en: /conferences/
 **Das Ænix-Team spricht auf Kubernetes-, Cloud- und Platform-Engineering-Konferenzen weltweit — wir teilen, wie Cozystack funktioniert, wie Ænix Platform es für produktive Cloud-Operations erweitert und welche Architektur-Entscheidungen hinter souveräner / regulierter Cloud im großen Maßstab stehen.**
 
 <div class="cta-row">
-  <a class="cta-primary" href="https://www.linkedin.com/company/aenix/">Ænix auf LinkedIn folgen für kommende Vorträge →</a>
+  <a class="cta-primary" href="https://www.linkedin.com/company/aenix-io/">Ænix auf LinkedIn folgen für kommende Vorträge →</a>
   <a class="cta-secondary" href="/de/kontakt/">Zum Event einladen</a>
 </div>
 
@@ -57,7 +57,7 @@ Für Einladungen: [Discovery-Call buchen](/de/kontakt/) und „Speaking-Einladun
 
 ## In Kontakt bleiben
 
-- **LinkedIn:** [linkedin.com/company/aenix/](https://www.linkedin.com/company/aenix/)
+- **LinkedIn:** [linkedin.com/company/aenix-io/](https://www.linkedin.com/company/aenix-io/)
 - **Telegram (Englisch):** [t.me/cozystack](https://t.me/cozystack)
 - **GitHub:** [github.com/cozystack/cozystack](https://github.com/cozystack/cozystack) — Community-Engagement
 
