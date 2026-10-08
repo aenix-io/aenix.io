@@ -5,6 +5,15 @@ theme: aenix
 enableRobotsTXT: true
 canonicalizeURLs: false
 
+# When a page last changed: an explicit `lastmod:` wins, otherwise the date of
+# the last commit that touched the file, otherwise the publication date. Feeds
+# BlogPosting dateModified, article:modified_time and <lastmod> in the sitemap,
+# which otherwise always repeated the publication date. CI checks out the full
+# history (fetch-depth: 0) for this.
+enableGitInfo: true
+frontmatter:
+  lastmod: ["lastmod", ":git", "date"]
+
 # Sitewide page_type assignment (GEO). Cascades into every landing page by
 # section so authors don't repeat it. Page-level `page_type` in frontmatter
 # overrides the cascade. EN + DE slugs both covered; non-matching globs are
