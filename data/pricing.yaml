@@ -144,5 +144,3 @@ sections:
         v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
       - k: "Priority Engagement Time⁴"
         v: { basic: "2 Hours", standard: "4 Hours", plus: "15 Hours", enterprise: "40 Hours" }
-      - k: "Exclusive Update Channel"
-        v: { basic: "✖", standard: "✖", plus: "✔", enterprise: "✔" }
