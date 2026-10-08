@@ -6,8 +6,9 @@
   When it shows:
     - the EN↔RU pair (workshop pages), as before;
     - the EN↔DE pair, but only on event pages (layout or page_type
-      `event-landing`: tour, workshops, webinars). DE landing pages and their
-      EN counterparts keep their existing behavior (no visible switcher).
+      `event-landing`, or under the tour / workshops / webinars sections and
+      their /de/ twins, hubs included). DE landing pages and their EN
+      counterparts keep their existing behavior (no visible switcher).
   Once shown, it lists every counterpart the page declares, in EN · DE · RU
   order, with the current language marked active.
 
@@ -19,6 +20,9 @@
 {{- $en := .Params.hreflang_en -}}
 {{- $de := .Params.hreflang_de -}}
 {{- $event := or (eq .Layout "event-landing") (eq (.Params.page_type | default "") "event-landing") -}}
+{{- range slice "/tour-2026/" "/workshops/" "/webinars/" "/de/tour-2026/" "/de/workshops/" "/de/webinare/" -}}
+  {{- if hasPrefix $.RelPermalink . }}{{ $event = true }}{{ end -}}
+{{- end -}}
 {{- $ruPair := or (and (eq $lang "en") $ru) (and (eq $lang "ru") $en) -}}
 {{- $dePair := and $event (or (and (eq $lang "en") $de) (and (eq $lang "de") $en)) -}}
 {{- if $ruPair -}}
