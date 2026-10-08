@@ -1,0 +1,22 @@
+# Blog authors: the byline, the author box under a post and the author in the
+# BlogPosting JSON-LD all come from here, keyed by the post's `author:` value.
+# A post whose author is not listed (e.g. "Aenix Team") is attributed to the
+# organization instead of a person.
+"Timur Tukaev":
+  slug: timur-tukaev
+  role: "COO at Ænix"
+  bio: "Timur runs operations, product and go-to-market at Ænix, the company behind Cozystack, and writes about cloud platforms, Kubernetes and the paleocomputing series."
+  photo: "/images/uploads/2026/04/timur-tukaev.png"
+  links:
+    linkedin: "https://www.linkedin.com/in/timur-tukaev"
+    github: "https://github.com/tym83"
+    telegram: "https://t.me/tym83"
+"Andrei Kvapil":
+  slug: andrei-kvapil
+  role: "CEO at Ænix"
+  bio: "Andrei leads Ænix and Cozystack's engineering, and writes about Kubernetes, virtualization, storage and the design of cloud platforms."
+  photo: "/images/uploads/2026/04/andrei-kvapil.jpg"
+  links:
+    linkedin: "https://www.linkedin.com/in/kvapss"
+    github: "https://github.com/kvaps"
+    telegram: "https://t.me/kvaps"

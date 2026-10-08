@@ -1,0 +1,16 @@
+{{- /* About the author, under a post. Only for authors in data/authors.yaml. */ -}}
+{{- with index site.Data.authors ($.Params.author | default "") -}}
+{{- $de := eq $.Params.language "de" -}}
+<aside class="blog-author" id="author" aria-label="{{ cond $de "Über den Autor" "About the author" }}">
+  {{- with .photo }}<img class="blog-author__photo" src="{{ . }}" alt="{{ $.Params.author }}" width="72" height="72" loading="lazy" decoding="async">{{ end }}
+  <div class="blog-author__body">
+    <div class="blog-author__label">{{ cond $de "Über den Autor" "About the author" }}</div>
+    <div class="blog-author__name">{{ $.Params.author }}<span class="blog-author__role"> · {{ .role }}</span></div>
+    <p class="blog-author__bio">{{ .bio }}</p>
+    <div class="blog-author__links">
+      {{- $names := dict "github" "GitHub" "linkedin" "LinkedIn" "telegram" "Telegram" "x" "X" -}}
+      {{- range $k, $v := .links }}<a href="{{ $v }}" rel="author me noopener" target="_blank">{{ index $names $k | default ($k | humanize) }}</a>{{ end }}
+    </div>
+  </div>
+</aside>
+{{- end -}}

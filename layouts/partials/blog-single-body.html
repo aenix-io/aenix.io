@@ -18,7 +18,7 @@
       <div class="blog-post-hero__meta">
         <span class="blog-post-hero__type">{{ $type | humanize | title }}</span>
         {{ with .Date }}<time class="blog-post-hero__date" datetime="{{ .Format "2006-01-02" }}">{{ .Format "January 2, 2006" }}</time>{{ end }}
-        {{ with .Params.author }}<span class="blog-post-hero__author">by {{ . }}</span>{{ end }}
+        {{ with .Params.author }}<span class="blog-post-hero__author">by {{ if index site.Data.authors . }}<a href="#author" rel="author">{{ . }}</a>{{ else }}{{ . }}{{ end }}</span>{{ end }}
       </div>
       <h1 class="blog-post-hero__title">{{ .Title }}</h1>
       {{ with .Description }}<p class="blog-post-hero__lede">{{ . }}</p>{{ end }}
@@ -45,6 +45,8 @@
 
     <div class="blog-post-content page-content">
       {{ .Content }}
+
+      {{ partial "blog/author-box.html" . }}
 
       {{ if .Params.quiz }}
       {{ partial "blog/quiz.html" . }}
