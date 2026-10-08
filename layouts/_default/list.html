@@ -29,6 +29,7 @@
          meta/OG/SERP either way. */}}
     {{- $sub := .Params.hero_subtitle | default .Description -}}
     {{ if and $sub (not $landing) }}<p class="page-hero-subtitle">{{ $sub }}</p>{{ end }}
+    {{ partial "hero-cta.html" . }}
   </div>
 </section>
 
@@ -40,7 +41,10 @@
          frontmatter, matching the theme mechanism; geo-faq after the body. Bodies
          must NOT also carry seo-blocks/seo-faq shortcodes (would double-render). */}}
     {{ partial "seo/geo-intro.html" . }}
-    {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . }}</div>{{ end }}
+    {{/* The hero prints the title as H1; raw-HTML bodies (synced calculator
+         pages) that bring their own <h1> render it as H2. Markdown headings
+         are handled in _markup/render-heading.html. */}}
+    {{ with .Content }}<div class="page-content" style="padding-top:0">{{ . | replaceRE `<h1(\s|>)` "<h2$1" | replaceRE `</h1>` "</h2>" | safeHTML }}</div>{{ end }}
     {{ partial "seo/geo-faq.html" . }}
 
     {{/* Pages that render their own richer child navigation in-body (e.g. the

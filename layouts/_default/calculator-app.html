@@ -37,16 +37,40 @@
   <h1 class="page-hero-title" style="font-size:1.6rem;margin:0 0 .35rem">{{ .Title }}</h1>
   {{ with .Description }}<p class="page-hero-subtitle" style="margin:0 0 .75rem">{{ . }}</p>{{ end }}
   {{ with .Content }}<div class="calc-app-copy">{{ . }}</div>{{ end }}
-  <p style="margin:0">
+  {{- $contact := cond $de "/de/kontakt/" "/contact/" }}
+  <div class="cta-row calc-app-actions" style="margin:.25rem 0 0">
     {{- if $de }}
+    <a class="cta-primary" href="{{ $contact }}" data-cta="calculator">Ergebnis mit einem Ingenieur besprechen</a>
     <a class="cta-secondary" href="/de/roi-rechner/">Alle ROI- &amp; TCO-Rechner</a>
-    <a class="cta-primary" href="{{ $app }}" target="_blank" rel="noopener" style="margin-left:.5rem">Im Vollbild öffnen</a>
+    <a class="cta-secondary" href="{{ $app }}" target="_blank" rel="noopener">Im Vollbild öffnen ↗</a>
     {{- else }}
+    <a class="cta-primary" href="{{ $contact }}" data-cta="calculator">Review your numbers with an engineer</a>
     <a class="cta-secondary" href="/roi-calculator/">All ROI &amp; TCO calculators</a>
-    <a class="cta-primary" href="{{ $app }}" target="_blank" rel="noopener" style="margin-left:.5rem">Open full-screen</a>
+    <a class="cta-secondary" href="{{ $app }}" target="_blank" rel="noopener">Open full-screen ↗</a>
     {{- end }}
-  </p>
+  </div>
 </div>
-<iframe class="calc-app-frame" src="{{ $app }}" title="{{ .Title }}"
+<iframe class="calc-app-frame" src="{{ $app }}" title="{{ .Title }}" data-calculator="{{ $app }}"
         loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{/* Conversion block after the model: the visitor who has just run the
+     numbers gets a next step instead of a dead end. */}}
+<section class="cta-banner landing-cta calc-app-cta">
+  <div class="container">
+    {{- if $de }}
+    <h2 class="cta-heading">Sollen wir Ihre Zahlen prüfen?</h2>
+    <p class="cta-description">Ein 30-minütiges Gespräch mit einem Ænix-Ingenieur: Wir gehen Ihre Annahmen durch, gleichen sie mit realen Deployments ab und sagen Ihnen, welche Plattform und welcher Support-Umfang passt.</p>
+    <div class="cta-row cta-row--center">
+      <a class="cta-primary" href="{{ $contact }}" data-cta="calculator-result">Discovery-Call buchen</a>
+      <a class="cta-secondary" href="/de/preise/">Preise ansehen →</a>
+    </div>
+    {{- else }}
+    <h2 class="cta-heading">Want an engineer to check these numbers?</h2>
+    <p class="cta-description">A 30-minute call with an Ænix engineer: we go through your assumptions, compare them with real deployments and tell you which platform and support scope fit.</p>
+    <div class="cta-row cta-row--center">
+      <a class="cta-primary" href="{{ $contact }}" data-cta="calculator-result">Book a call</a>
+      <a class="cta-secondary" href="/pricing/">See pricing →</a>
+    </div>
+    {{- end }}
+  </div>
+</section>
 {{ end }}
