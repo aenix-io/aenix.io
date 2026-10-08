@@ -1,5 +1,6 @@
 ---
 title: "Data residency requirements in 2026 — a practical guide for cloud architecture"
+seo_title: "Data residency requirements in 2026: a practical guide"
 description: "What data residency actually requires at control level, why most cloud setups fail on inspection, and the architectural patterns that hold up."
 date: "2026-05-08"
 cover_image: "/img/blog/covers/data-residency-requirements-2026.jpg"
@@ -165,7 +166,7 @@ For multinational enterprises, per-tenant region pinning. Cozystack's Tenant CRD
 
 ### Air-gapped or restricted-egress architecture
 
-For the most sensitive workloads — public-sector classified, healthcare, defence-adjacent — the platform itself runs without internet egress, with software updates delivered through controlled channels. KubeVirt + Cozystack supports air-gapped deployments out of the box.
+For the most sensitive workloads — public-sector classified, healthcare — the platform itself runs without internet egress, with software updates delivered through controlled channels. KubeVirt + Cozystack supports air-gapped deployments out of the box.
 
 ## What residency does not solve
 
@@ -189,7 +190,7 @@ UK GDPR + sectoral rules (FCA, PRA for financial services). Adequacy decision wi
 Sectoral, not general. HIPAA for health, GLBA for financial, FedRAMP for federal. State-level laws (California CCPA, Virginia VCDPA, etc.) increasingly impose data-handling rules. No single national data-residency mandate.
 
 ### Kazakhstan and Central Asia
-Procurement-mandated sovereignty for public-sector and quasi-public organizations. Active sovereign-cloud initiatives include regional telco sovereign cloud product launches. Practical procurement portal channels: goszakup.gov.kz, mitwork.kz, zakup.sk.kz.
+Procurement-mandated sovereignty for public-sector and quasi-public organizations. Practical procurement portal channels: goszakup.gov.kz, mitwork.kz, zakup.sk.kz.
 
 ### India
 DPDP Act 2023 introduces explicit data-localization for sensitive data classes, with implementing rules being finalized.

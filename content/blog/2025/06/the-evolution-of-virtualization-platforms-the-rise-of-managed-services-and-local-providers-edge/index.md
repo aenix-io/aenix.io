@@ -1,6 +1,7 @@
 ---
-title: "The Evolution of Virtualization Platforms: The Rise of Managed Services and Local Providers’ Edge…"
-description: "Hello everyone! I’m Andrey Kvapil, CEO of Ænix and developer of Cozystack, an open-source platform and framework for building cloud…"
+title: "The Evolution of Virtualization Platforms: The Rise of Managed Services and the Edge of Local Providers"
+seo_title: "Virtualization to managed services: local providers"
+description: "Andrei Kvapil traces the path from physical servers to VMs, containers and managed services, and shows how local providers can compete with hyperscalers."
 date: "2025-06-04"
 author: "Andrei Kvapil"
 type: "article"
@@ -13,7 +14,7 @@ source_url: "https://medium.com/p/0cb5db21a330"
 
 Hello everyone! I’m Andrey Kvapil, CEO of Ænix and developer of Cozystack, an open-source platform and framework for building cloud infrastructure. In this article, I want to share my perspective on how modern cloud patterns have transformed infrastructure approaches, the evolving role of service providers and public clouds in this landscape, and most importantly, how virtualization’s purpose has fundamentally changed in today’s infrastructure stack.
 
-![image](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/cover.jpg)
+![The evolution of virtualization platforms](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/cover.jpg)
 
 ## The Core Challenge for Local Service Providers
 
@@ -23,7 +24,7 @@ The risks compound with scale. More components mean more potential failure point
 
 In today’s cloud-dominated world, responsibility for infrastructure increasingly falls on service providers. Businesses now prefer turnkey solutions, shifting focus from low-level operations to core priorities. This drives the migration from IaaS (where clients manage OS, middleware, and runtime) to PaaS where providers not only maintain infrastructure but deliver managed services (databases, message brokers, etc.) as seamlessly as spinning up VMs.
 
-![image](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/01.png)
+![Responsibility for infrastructure shifting to service providers](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/01.png)
 
 These shifts have dramatically reshaped virtualization’s purpose. Virtual machines are losing ground to managed services: Kubernetes, databases, caches, queues, and beyond. This inherently advantages cloud platforms like AWS, GCP, and Azure over traditional providers (especially local ones lacking comparable infrastructure). Hyperscalers, with their vast R&D budgets and engineering armies, have already deployed mature PaaS offerings, while resource-constrained local providers often remain stuck offering basic IaaS, perpetually playing catch-up.
 
@@ -118,7 +119,7 @@ Cozystack functions as a next-gen hypervisor/cloud platform, enabling local prov
 
 As an open CNCF project (home to Kubernetes, Cilium, Flux etc.), Cozystack helps providers embrace digital sovereignty, improve margins, and eliminate vendor lock-in while accelerating time-to-market for profitable cloud services — including GPU-powered AI workloads.
 
-![image](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/03.jpg)
+![Cozystack as an open platform for service providers](/img/blog/medium/the-evolution-of-virtualization-platforms-the-rise-of-managed-services-and-local-providers-edge/03.jpg)
 
 ## Conclusion
 
@@ -149,7 +150,7 @@ Join our community, develop your own managed services, and together we’ll make
 ## Join Cozystack Community
 
 - [Telegram](https://t.me/cozystack)
-- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (in [Kubernetes Slack workspace](https://communityinviter.com/apps/kubernetes/community))
+- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (in [Kubernetes Slack workspace](https://slack.kubernetes.io/))
 - [Community Meeting Calendar](https://calendar.google.com/calendar?cid=ZTQzZDIxZTVjOWI0NWE5NWYyOGM1ZDY0OWMyY2IxZTFmNDMzZTJlNjUzYjU2ZGJiZGE3NGNhMzA2ZjBkMGY2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 By [Andrei Kvapil](https://medium.com/@kvaps) on [June 4, 2025](https://medium.com/p/0cb5db21a330).

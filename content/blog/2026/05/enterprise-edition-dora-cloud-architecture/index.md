@@ -1,5 +1,6 @@
 ---
 title: "Private Cloud Platform for regulated cloud — DORA and NIS2 obligations mapped to running architecture"
+seo_title: "Private Cloud Platform: DORA and NIS2 architecture"
 description: "Mapping DORA ICT-risk and third-party obligations and the NIS2 Article 21(2) measures onto a defensible cloud architecture for regulated enterprises."
 date: "2026-05-10"
 cover_image: "/img/blog/covers/enterprise-edition-dora-cloud-architecture.jpg"
@@ -31,18 +32,18 @@ quiz:
         - { text: "A second backup hyperscaler signed under contract", correct: false }
         - { text: "Tested feasibility — a rehearsal in the past 24 months", correct: true }
       explanation: "Pattern 2 in the Article 28 section explains that most entities have an exit plan on paper but few have rehearsed it, and supervisors are now asking for rehearsal within the last 24 months."
-    - q: "What does the 'advisory-only support model' mean in a Private Cloud Platform engagement?"
+    - q: "What access model does the article describe for Ænix engineers in a Private Cloud Platform engagement?"
       options:
-        - { text: "Aenix engineers operate via GitOps PR review, not kubectl", correct: true }
-        - { text: "Aenix only provides written advice and no engineering work", correct: false }
+        - { text: "The bank chooses: advisory and GitOps PR review need no cluster access; remote access is granted only with its approval", correct: true }
+        - { text: "Ænix requires standing root access to every production cluster", correct: false }
         - { text: "The customer must hire its own consultancy for cluster changes", correct: false }
-      explanation: "Advisory-only means Aenix engineers don't need kubectl access to production; reviewers operate via GitOps PR review and runbooks remain customer-side — critical for banks where vendor-side access is a structural risk."
-    - q: "What total elapsed time does the article cite for a Private Cloud Platform production deployment at a tier-1 bank with full TLPT readiness?"
+      explanation: "Access is the customer's choice. Advisory, runbooks and GitOps PR review need no access to production; where the support tier includes it, remote access to the clusters happens only with the customer's approval. That matters for banks where vendor-side access is a structural risk."
+    - q: "After the 14- or 28-day Platform Readiness Assessment, how long does a Private Cloud Platform build take?"
       options:
-        - { text: "6 to 12 months", correct: false }
-        - { text: "18 to 36 months", correct: true }
-        - { text: "12 to 18 months", correct: false }
-      explanation: "The engagement structure section states 18–36 months for tier-1 banks with full TLPT readiness, and 12–18 months for mid-size regulated enterprises with narrower scope."
+        - { text: "About one week", correct: false }
+        - { text: "3 to 12 months, depending on scope", correct: true }
+        - { text: "Five years or more", correct: false }
+      explanation: "The engagement structure section states a 3-12 month build depending on scope, after a free discovery call and a 14- or 28-day assessment. TLPT readiness and supervisor-evidence work at a tier-1 bank continue after the platform is in production."
 ---
 
 
@@ -129,12 +130,12 @@ part of the engagement (separate product).
 
 ### 8. Cryptography
 
-Customer-controlled encryption keys at every layer — production
-storage, backups, observability data, audit logs. HSM-backed for
-sensitive data classes. Key rotation and emergency-access procedures
-documented. Private Cloud Platform supports External Secrets Operator
-backed by customer HSM (CloudHSM, Azure Key Vault HSM-mode, on-prem
-HSM appliance).
+Supervisors expect customer-controlled encryption for production
+storage, backups, observability data and audit logs, with key rotation
+and emergency-access procedures documented. On Private Cloud Platform,
+volume encryption is opt-in per storage class, and the key-management
+process — including integration with a key store or HSM you already
+operate — is designed with you during the engagement.
 
 ### 9. Human resources security, access control, asset management
 
@@ -146,9 +147,9 @@ drift between policy and running state.
 
 ### 10. MFA / continuous authentication / secured comms
 
-MFA on all privileged accounts at minimum. Enterprise tier of Ænix
-support requires MFA on all customer-side cluster access. Secured
-emergency comms via the support channel itself.
+MFA on all privileged accounts at minimum, including any vendor access
+you grant — Ænix support engineers included. Secured emergency comms
+via the support channel itself.
 
 ## DORA Articles 28-30 — the supplier-risk dimension that breaks most setups
 
@@ -199,27 +200,26 @@ the cloud provider relationship becomes hardware and bandwidth, not
 platform services. Sub-contractor mapping shortens dramatically. The
 sovereignty story becomes architectural rather than contractual.
 
-## What Private Cloud Platform includes that ISP / Public Cloud doesn't
+## What a regulated Private Cloud Platform build adds
 
-Several Enterprise-specific layers:
+Several layers that matter specifically to regulated builds:
 
 - **Air-gap install** documented and supported as a first-class
   deployment mode. Updates flow through controlled channels (Harbor
-  mirror, customer-side artifact registry, manual approval). Used by
-  defence-adjacent, classified-data, and the most sensitive banking
-  workloads.
-- **Multi-DC active/passive or active/active** — Enterprise typically
-  deploys to two or more datacentres with cross-DC replication tuned
-  for RTO/RPO targets. Public Cloud Platform is single-DC by default.
-- **Advisory-only support model** — Ænix engineers do not require
-  kubectl access to your production cluster. Reviewers operate via
-  GitOps PR review; runbooks remain on the customer side. Critical
-  for banks where vendor-side access is a structural risk.
-- **Customer-controlled HSM integration** — keys never leave the
-  customer's HSM appliance. Cozystack reaches keys only through
-  attested signed requests.
+  mirror, customer-side artifact registry, manual approval). Suited to
+  classified-data and the most sensitive banking workloads.
+- **Multi-DC designs** — regulated builds typically span two or more
+  datacentres, with cross-DC replication tuned for RTO/RPO targets.
+  VM failover between sites is a rehearsed runbook, not an automatic
+  switch.
+- **Access on your terms** — advisory, runbooks and GitOps PR review
+  need no access to your production cluster. Where your support tier
+  includes it, remote access to your clusters happens only with your
+  approval. Critical for banks where vendor-side access is a
+  structural risk.
 - **Audit-isolated environments** — separate clusters for production,
-  audit, and forensic copy. Tamper-evident logging across.
+  audit, and forensic copy. Audit-log retention is configurable, and
+  logs can be shipped to your own immutable store.
 - **Compliance documentation deliverables** — at engagement close,
   the customer receives a control-by-control evidence catalogue
   aligned to DORA / NIS2 supervisor expectations.
@@ -250,7 +250,7 @@ Strong fit:
   obligations.
 - You have a board-level decision to bring critical-function workloads
   off hyperscaler.
-- You can budget for a multi-year platform programme, sized at scoping.
+- You can budget for a platform programme, sized at scoping.
 - You have or can hire a 5-10 engineer platform team to operate the
   infrastructure.
 - You have sectoral pressure on TLPT, supplier-chain audit, or
@@ -259,13 +259,14 @@ Strong fit:
 Marginal fit:
 
 - Mid-size organisations where the regulatory pressure is real but
-  the budget for a multi-year programme isn't yet there. Public Cloud Platform
-  with sovereignty-focused architecture may bridge.
+  the budget for a full programme isn't yet there. A narrower Private
+  Cloud Platform scope, or self-run Cozystack with Ænix enterprise
+  support, may bridge.
 
 Poor fit:
 
-- Organisations without regulatory pressure. Use a different product
-  (Developer Self-Service or Cozystack Enterprise Support) — Private Cloud Platform's
+- Organisations without regulatory pressure. Use self-run Cozystack
+  with [Ænix enterprise support](/products/cozystack-enterprise-support/) — Private Cloud Platform's
   compliance overhead doesn't pay back without the regulator driver.
 
 ## Engagement structure
@@ -274,16 +275,16 @@ Poor fit:
 - **Platform Readiness Assessment** (14- or 28-day, DORA / NIS2
   workstream emphasised) — control-level gap analysis against current
   architecture
-- **Pilot** (3-6 months) — defined slice migrated to the Ænix Private
-  Cloud Platform, supervisor evidence catalogue partially built
-- **Full Private Cloud Platform build** (12-30 months) — production-grade
-  multi-DC deployment with full compliance documentation
-- **Managed retainer** (ongoing) — advisory, runbooks, GitOps PR
-  review, incident response under SLA
+- **Private Cloud Platform build** (3-12 months, depending on scope) —
+  starts with a defined pilot slice, then production-grade multi-DC
+  deployment with compliance documentation
+- **Support subscription** (ongoing) — advisory, runbooks, GitOps PR
+  review and incident response; Plus or Enterprise tier for 24×7 (see
+  [/pricing/](/pricing/))
 
-Total elapsed time from project start to production: 18-36 months
-for tier-1 banks with full TLPT readiness; 12-18 months for mid-size
-regulated enterprises with narrower scope.
+TLPT readiness and the supervisor evidence work at a tier-1 bank
+continue after the platform is in production; plan them as a separate
+track rather than as part of the build.
 
 ## Where to dig deeper
 

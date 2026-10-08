@@ -1,5 +1,6 @@
 ---
 title: "SRE as a product discipline — what an SRE engagement actually changes"
+seo_title: "SRE as a product discipline: what an engagement changes"
 description: "Embed SRE in product teams, centralize it as a function, or buy an engagement — what each delivers and how to measure it."
 date: "2026-05-28"
 cover_image: "/img/blog/covers/sre-engagement-reliability-as-product-discipline.jpg"
@@ -268,15 +269,15 @@ gets a head start because the platform ships with SRE-aligned
 defaults:
 
 - **Observability built in** — VictoriaMetrics + VictoriaLogs
-  pre-deployed, security-focused alert rules curated
-- **SLO templates** — per-service SLO templates for managed
-  database services, message queues, Kubernetes control plane
-- **Failure-injection hooks** — for controlled chaos engineering
-  in production without unacceptable customer impact
-- **Tenant CRD audit trail** — every change traceable to who, what,
-  when, with what change ticket
-- **Backup-restore tested patterns** — Velero + per-app PITR with
-  documented RPO / RTO
+  pre-deployed, with alert rules for the platform components
+- **Declarative change history** — tenants and services are
+  Kubernetes resources managed through GitOps, so every change has a
+  commit, an author and a review
+- **Backup-restore patterns** — Velero + per-app PITR, with RPO / RTO
+  documented per service during the engagement
+
+SLO definitions and failure-injection (chaos) tooling are not shipped
+as platform features; they are designed with you in the engagement.
 
 This lets the SRE engagement focus on the organisation-specific
 work (function design, SLOs aligned to business priorities,

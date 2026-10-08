@@ -1,6 +1,6 @@
 ---
 title: "Cozystack v0.37: Brand New UI"
-description: "In the new release, the Cozystack developer community unveiled a completely new UI based on the openapi-ui project. The maintainers fully…"
+description: "Cozystack v0.37 replaces the dashboard with a new UI built on the openapi-ui project, generated from the platform API. What changed for users."
 date: "2025-11-04"
 author: "Timur Tukaev"
 type: "announcement"
@@ -8,38 +8,38 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "Multi-tenancy", "CNCF
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-37-brand-new-ui/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-37-brand-new-ui-dd4ad96eac57"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack v0.37: Brand New UI
 
 In the new release, the Cozystack developer community unveiled a completely new UI based on the openapi-ui project. The maintainers fully rewrote the platform’s frontend, delivered numerous improvements, and fixed issues that existed in the previous Kubeapps-based UI. Let’s see what’s inside.
 
-![image](/img/blog/medium/cozystack-v0-37-brand-new-ui/cover.png)
+![New Cozystack dashboard UI](/img/blog/medium/cozystack-v0-37-brand-new-ui/cover.png)
 
 > **What’s Cozystack
 **Cozystack is an open-source platform that lets you build a bare-metal cloud for fast rollout of managed Kubernetes, Database-as-a-Service, Applications-as-a-Service, and virtual machines powered by KubeVirt. With a click, you can deploy services like Kafka, FerretDB, PostgreSQL, Cilium, Grafana, VictoriaMetrics, and more. Cozystack is a CNCF Sandbox project.
 
-### Main Cozystack dashboard changes
+## Main Cozystack dashboard changes
 
-#### Cluster selector
+### Cluster selector
 
 A cluster selector has been added. Today, the dashboard operates in single-cluster mode (one dashboard per cluster). The same UI will power multi-cluster mode in future releases.
 
-#### Namespace navigation (Tenant Namespace)
+### Namespace navigation (Tenant Namespace)
 
 On the cluster view, you now see all namespaces you’re entitled to. The list is built via the Kubernetes API aggregation layer (tenant namespace), so only namespaces you have access to are shown.
 
-![image](/img/blog/medium/cozystack-v0-37-brand-new-ui/02.png)
+![Cluster view listing the namespaces a user is entitled to](/img/blog/medium/cozystack-v0-37-brand-new-ui/02.png)
 
-#### Application categories
+### Application categories
 
 Existing applications are split into three categories. In upcoming releases, categories will be optional — you’ll be able to deploy only selected groups and skip others.
 
-![image](/img/blog/medium/cozystack-v0-37-brand-new-ui/03.png)
+![Application categories in the new dashboard](/img/blog/medium/cozystack-v0-37-brand-new-ui/03.png)
 
-#### Richer resource pages
+### Richer resource pages
 
 Every resource page now includes:
 - a resource table and basic metadata,
@@ -48,29 +48,29 @@ Every resource page now includes:
 - Ingresses, Services, Secrets,
 - the resource YAML.
 
-#### OpenAPI-driven configurators
+### OpenAPI-driven configurators
 
 Resource creation uses forms auto-generated from the Kubernetes OpenAPI spec. Field definitions and validation come directly from the spec — no YAML comments needed.
 
-#### Spec generation from Helm
+### Spec generation from Helm
 
 New application specs are generated from Helm charts using the cozy-values generator. Fields you add in the form are reflected live in the resulting YAML.
 
-![image](/img/blog/medium/cozystack-v0-37-brand-new-ui/04.png)
+![Application form with live YAML preview](/img/blog/medium/cozystack-v0-37-brand-new-ui/04.png)
 
-#### Tenant administration separated
+### Tenant administration separated
 
 Tenant management modules have moved to a dedicated Administration section: create sub-tenants and deploy tenant-specific modules/apps there (subject to your role and permissions).
 
-#### VM features groundwork
+### VM features groundwork
 
 A VNC console tab for virtual machines is planned and will appear as an additional tab. Certain resource types (e.g., KubeVirt VMs) will gain specialized tabs/fields.
 
-#### New Cozystack UI Video Demo
+### New Cozystack UI Video Demo
 
-#### Cozystack in 5 Minutes
+### Cozystack in 5 Minutes
 
-#### New Components Versions
+### New Components Versions
 
 - Flux Operator 0.29.0
 - Cilium v1.17.8
@@ -81,7 +81,7 @@ A VNC console tab for virtual machines is planned and will appear as an addition
 
 All changes: [v0.37.0](https://github.com/cozystack/cozystack/releases/tag/v0.37.0), [v0.37.1](https://github.com/cozystack/cozystack/releases/tag/v0.37.1), [v0.37.2](https://github.com/cozystack/cozystack/releases/tag/v0.37.2), [v0.37.3](https://github.com/cozystack/cozystack/releases/tag/v0.37.3), [v0.37.4](https://github.com/cozystack/cozystack/releases/tag/v0.37.4)
 
-### Join the community
+## Join the community
 
 - [Telegram](http://t.me/cozystack) group
 - [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) group (Get invite at [https://slack.kubernetes.io](https://slack.kubernetes.io/))

@@ -1,5 +1,6 @@
 ---
 title: "Talos Linux einfach installieren: auf jeder Maschine, bei jedem Anbieter"
+seo_title: "Talos Linux auf jeder Maschine installieren"
 description: "Talos Linux per kexec aus jedem laufenden Linux starten, das Netzwerk über die Kernel-cmdline übergeben und mit talosctl oder Talm dauerhaft auf Disk bringen."
 slug: "talos-linux-installieren-beliebige-maschine-beliebiger-anbieter"
 date: "2025-04-28"
@@ -15,7 +16,7 @@ Talos Linux ist ein spezialisiertes Betriebssystem für den Betrieb von Kubernet
 
 Gleichzeitig legt Talos Linux den Schwerpunkt auf Sicherheit und schränkt die Möglichkeiten des Benutzers, auf das System einzuwirken, auf ein Minimum ein. Ein Markenzeichen dieses Betriebssystems ist das nahezu vollständige Fehlen ausführbarer Dateien: Es gibt keine Shell, und eine Anmeldung per SSH ist nicht möglich. Die gesamte Konfiguration von Talos Linux erfolgt über eine Kubernetes-ähnliche API.
 
-![image](/img/blog/medium/a-simple-way-to-install-talos-linux-on-any-machine-with-any-provider/cover.png)
+![Talos Linux auf jeder Maschine installieren](/img/blog/medium/a-simple-way-to-install-talos-linux-on-any-machine-with-any-provider/cover.png)
 
 Üblicherweise wird Talos Linux als Satz vorgefertigter Images für verschiedene Umgebungen bereitgestellt.
 
@@ -66,7 +67,7 @@ DEV=$(udevadm info -q property "/sys/class/net/$ETH" | awk -F= '$1~/ID_NET_NAME_
 
 Diese Parameter können Sie über die `kernel cmdline` übergeben. Mit dem Parameter `ip=` konfigurieren Sie das Netzwerk über den Mechanismus der [IP-Konfiguration auf Kernel-Ebene](https://cateee.net/lkddb/web-lkddb/IP_PNP.html). Dabei richtet der Kernel beim Booten automatisch die Interfaces ein und vergibt IP-Adressen, und zwar anhand der Informationen, die über die `kernel cmdline` übergeben werden. Es handelt sich um eine eingebaute Kernel-Funktion, die über die Option `CONFIG_IP_PNP` aktiviert wird. In Talos Linux ist sie standardmäßig aktiv. Sie müssen lediglich korrekt formatierte Netzwerkeinstellungen in der `kernel cmdline` angeben.
 
-- Die korrekte Syntax für diese Option finden Sie in der [Dokumentation von Talos Linux](https://www.talos.dev/latest/talos-guides/install/bare-metal-platforms/network-config/#kernel-command-line).
+- Die korrekte Syntax für diese Option finden Sie in der [Dokumentation von Talos Linux](https://www.talos.dev/).
 - Ausführlichere Beispiele bietet außerdem die [offizielle Dokumentation des Linux-Kernels](https://www.kernel.org/doc/Documentation/filesystems/nfs/nfsroot.txt).
 
 Setzen Sie die Variable `CMDLINE` mit der Option `ip`, die die Einstellungen des aktuellen Systems enthält, und geben Sie sie anschließend aus:
@@ -95,7 +96,7 @@ Im Ergebnis haben Sie eine laufende Talos-Linux-Instanz mit konfiguriertem Netzw
 
 ## machine-config anwenden und Talos Linux auf die Disk installieren
 
-Um Talos Linux dauerhaft auf die Disk zu installieren und das aktuelle Betriebssystem zu ersetzen, müssen Sie eine machine-config anwenden, die die Ziel-Disk für die Installation angibt. Für die Konfiguration der Maschine können Sie entweder das offizielle Werkzeug [*talosctl*](https://www.talos.dev/latest/learn-more/talosctl/) verwenden oder [*Talm*](https://github.com/cozystack/talm), ein Werkzeug, das vom Projekt Cozystack gepflegt wird (Talm funktioniert auch mit Vanilla-Talos-Linux).
+Um Talos Linux dauerhaft auf die Disk zu installieren und das aktuelle Betriebssystem zu ersetzen, müssen Sie eine machine-config anwenden, die die Ziel-Disk für die Installation angibt. Für die Konfiguration der Maschine können Sie entweder das offizielle Werkzeug [*talosctl*](https://www.talos.dev/) verwenden oder [*Talm*](https://github.com/cozystack/talm), ein Werkzeug, das vom Projekt Cozystack gepflegt wird (Talm funktioniert auch mit Vanilla-Talos-Linux).
 
 Betrachten wir zuerst die Konfiguration mit *talosctl*. Stellen Sie vor dem Anwenden der Konfiguration sicher, dass sie die Netzwerkeinstellungen Ihres Nodes enthält; andernfalls konfiguriert der Node nach dem Neustart kein Netzwerk. Bei der Installation wird der Bootloader auf die Disk geschrieben, und dieser enthält die Option `ip` für die Autokonfiguration durch den Kernel nicht.
 

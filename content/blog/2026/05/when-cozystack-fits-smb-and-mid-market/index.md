@@ -1,5 +1,6 @@
 ---
 title: "When Cozystack fits SMB and mid-market — and when it doesn't"
+seo_title: "When Cozystack fits SMB and mid-market teams"
 description: "Most SMB organizations do not need Cozystack. An honest test for when they do, and what to run instead when they do not."
 date: "2026-05-30"
 cover_image: "/img/blog/covers/when-cozystack-fits-smb-and-mid-market.jpg"
@@ -26,9 +27,9 @@ quiz:
     - q: "What does the article offer as a free initial step for evaluating Cozystack fit?"
       options:
         - { text: "Two-week paid proof-of-concept", correct: false }
-        - { text: "Free 15-minute fit-check call", correct: true }
+        - { text: "Free 30-minute discovery call", correct: true }
         - { text: "Full paid architecture audit", correct: false }
-      explanation: "The mid-market engagement model starts with a 15-minute fit-check call (free, no sales pressure), then optionally architecture review (5-10 days), then phase-2 implementation only if it actually fits. The article is explicit: for most SMB outreach, the honest answer is \"stay where you are.\""
+      explanation: "The mid-market engagement model starts with a free 30-minute discovery call (no sales pressure), then optionally a fixed-price Platform Readiness Assessment (14 days focused), then implementation only if it actually fits. The article is explicit: for most SMB outreach, the honest answer is \"stay where you are.\""
     - q: "For a \"mid-market becoming multi-tenant\" example, what use case is named?"
       options:
         - { text: "Personal blog hosting platform", correct: false }
@@ -88,8 +89,8 @@ If you have 0-1 of these, Cozystack is over-engineering. If 2, marginal. If 3+, 
 
 ## Ænix engagement model for mid-market
 
-- **15-minute fit-check call** — free, no sales pressure
-- **Architecture review** (5-10 days) — if mid-market wants structured assessment
-- **Phase 2 implementation** — only if it actually fits
+- **[30-minute discovery call](/contact/)** — free, no sales pressure
+- **[Platform Readiness Assessment](/services/platform-readiness-assessment/)** (fixed price, 14 days focused) — if you want a structured assessment
+- **Implementation** — only if it actually fits; self-run Cozystack with [Ænix enterprise support](/products/cozystack-enterprise-support/) is often enough at mid-market scale
 
 For most SMB outreach, the honest answer is "stay where you are." We're explicit about this.

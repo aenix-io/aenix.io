@@ -1,5 +1,6 @@
 ---
 title: "Cozystack 1.5: Gateway API, Standard-Backups, Flux-Sharding und TLS für Managed Services"
+seo_title: "Cozystack 1.5: Gateway API und Standard-Backups"
 description: "Cozystack v1.5.0 bringt optionale Gateway API über Cilium, eine Standard-BackupClass, Flux v2.8 mit Sharding, TLS für Managed-Datenbanken und GPU-Passthrough."
 slug: "cozystack-1-5-gateway-api-standard-backups-tls-fuer-managed-services"
 date: "2026-06-22"
@@ -116,7 +117,7 @@ GPU-Sharing bleibt in Cozystack die Kombination aus NVIDIA GPU Operator und HAMi
 
 ## Die Patch-Linie 1.5
 
-- **v1.5.1** (23. Juni 2026) behebt eine Regression aus v1.5.0: Für die KubeVirt-Preferences `windows.11`, `windows.2k22` und `windows.2k25` war der persistente EFI/TPM-Zustand wieder aktiviert worden. KubeVirt legt dafür ein ReadWriteOnce-PVC `persistent-state-for-<vm>` auf der StorageClass `replicated` an — das bindet die VM an ihren Node und blockiert Live-Migration und Node-Drains. Auf Clustern mit `evictionStrategy: LiveMigrate` kann das ein Cluster-Upgrade vollständig anhalten. Secure Boot und vTPM funktionieren weiterhin; nur der Zustand überlebt keinen Reboot.
+- **v1.5.1** (24. Juni 2026) behebt eine Regression aus v1.5.0: Für die KubeVirt-Preferences `windows.11`, `windows.2k22` und `windows.2k25` war der persistente EFI/TPM-Zustand wieder aktiviert worden. KubeVirt legt dafür ein ReadWriteOnce-PVC `persistent-state-for-<vm>` auf der StorageClass `replicated` an — das bindet die VM an ihren Node und blockiert Live-Migration und Node-Drains. Auf Clustern mit `evictionStrategy: LiveMigrate` kann das ein Cluster-Upgrade vollständig anhalten. Secure Boot und vTPM funktionieren weiterhin; nur der Zustand überlebt keinen Reboot.
 - **v1.5.2** (3. Juli 2026) bringt zehn Fixes, darunter ein Kamaji-DataStore-Deadlock beim Löschen, der Tenant-Namespaces festfahren konnte, eine victoria-metrics-operator-Abhängigkeit, die bei `certManager.enabled: false` nie auflösbar war, und MariaDB-Instanzen mit einer Replik, die der Operator-Webhook ablehnte.
 - **v1.5.3** wurde getaggt, das GitHub-Release blieb aber ein Entwurf und wurde nie veröffentlicht. Kein Betreiber hat es erhalten.
 - **v1.5.4** (19. August 2026) ist das letzte Release der 1.5-Linie und die Version, die ausgerollt gehört.
@@ -136,7 +137,7 @@ Die Annotationen sind Pflicht, keine Empfehlung: Ohne sie kann das Entfernen ode
 
 ## Wo Ænix ins Spiel kommt
 
-Cozystack ist ein CNCF-Sandbox-Projekt unter Apache 2.0, und die beschriebenen Upgrade-Pfade gelten für alle gleichermaßen. Ænix pflegt das Projekt und bietet [Enterprise-Support für Cozystack](/de/produkte/cozystack-enterprise-support/) — inklusive Upgrade-Planung für die scharfen Kanten dieses Releases — für Teams, die die Plattform nicht allein tragen wollen.
+Cozystack ist ein CNCF-Sandbox-Projekt unter Apache 2.0, und die beschriebenen Upgrade-Pfade gelten für alle gleichermaßen. Ænix hat Cozystack geschaffen und gehört zu seinen Maintainern; es bietet [Enterprise-Support für Cozystack](/de/produkte/cozystack-enterprise-support/) — inklusive Upgrade-Planung für die scharfen Kanten dieses Releases — für Teams, die die Plattform nicht allein tragen wollen.
 
 ## Release-Links
 

@@ -1,5 +1,6 @@
 ---
 title: "Die unausweichliche Zukunft von Kubernetes: Warum der Orchestrator dem Weg des Linux-Kernels folgen sollte"
+seo_title: "Kubernetes sollte dem Linux-Kernel folgen"
 description: "Tim Hockin fordert ein Komplexitätsbudget für Kubernetes. Timur Tukaev meint: Kubernetes sollte wie der Linux-Kernel werden, Plattformen wie Distributionen."
 slug: "zukunft-kubernetes-linux-kernel"
 date: "2024-12-27"
@@ -44,9 +45,7 @@ quiz:
       explanation: "Solange Kubernetes als eigenständige Software gilt, hängt die Infrastruktur von Engineers ab, die Kubernetes vollständig verstehen — eine knappe Spezialisierung. Nur wenige verstehen den Linux-Kernel im Detail, doch die Branche erwartet das auch nicht, weil Distributionen diese Ebene abstrahieren. Denselben Wandel braucht Kubernetes."
 ---
 
----
 
-### Die unausweichliche Zukunft von Kubernetes: Warum der Orchestrator dem Weg des Linux-Kernels folgen sollte
 
 Auf der KubeCon + CloudNativeCon in Chicago hat Tim Hockin, einer der frühen Entwickler von Kubernetes, am 9. November [einen Vortrag gehalten](https://www.youtube.com/watch?v=WqeShpaztZY) (hier eine [Zusammenfassung](https://thenewstack.io/tim-hockin-kubernetes-needs-a-complexity-budget/)), der eine der großen Herausforderungen des Orchestrators beleuchtet: die unaufhaltsam wachsende Komplexität. Seine Kernaussage war einfach: Kubernetes wird für ein immer breiteres Spektrum spezialisierter Anwendungsfälle eingesetzt, etwa für Machine Learning.
 

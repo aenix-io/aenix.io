@@ -1,5 +1,6 @@
 ---
 title: "Financial-services cloud platforms — what TLPT readiness actually looks like in 2026"
+seo_title: "TLPT readiness for financial-services cloud platforms"
 description: "What TLPT readiness under DORA actually looks like in 2026 for platform engineers at banks, insurers, and payment institutions facing a real supervisor cycle."
 date: "2026-05-11"
 cover_image: "/img/blog/covers/financial-services-cloud-tlpt-readiness.jpg"
@@ -37,12 +38,12 @@ quiz:
         - { text: "Full transitive closure of every upstream dependency", correct: false }
         - { text: "Second hop — the contracted vendor's own critical providers", correct: true }
       explanation: "Gap 4 states Article 30(2)(a) requires visibility to second hop — the contracted hyperscaler's data-centre operators, network providers, and shared platform services beneath."
-    - q: "In the engagement model, what does Aenix explicitly NOT do in Phase 4 (Managed retainer)?"
+    - q: "In Phase 4 of the engagement model, how do Ænix engineers get access to the bank's production cluster?"
       options:
-        - { text: "Hold kubectl access to the customer's production cluster", correct: true }
-        - { text: "Provide Tier-3 SLA support for the platform substrate", correct: false }
-        - { text: "Participate in TLPT preparation and post-mortems", correct: false }
-      explanation: "Phase 4 explicitly states: 'No kubectl access to customer production cluster — operates via GitOps PR review only. Critical for bank governance.'"
+        - { text: "Only if the bank grants it; GitOps PR review needs no access at all", correct: true }
+        - { text: "Through standing root access agreed at contract signature", correct: false }
+        - { text: "Through a shared administrator account owned by Ænix", correct: false }
+      explanation: "Phase 4 states that access is the bank's choice: advisory and GitOps PR review need no access to production, and remote access to clusters happens only with the bank's approval. That is critical for bank governance."
 ---
 
 
@@ -238,8 +239,8 @@ shape the work.
 Confirm regulatory scope (DORA + national overlays + sectoral rules).
 Confirm criticality classification of workloads. Sponsor and
 supervisor-engagement contacts on customer side. Engagement model
-(typical: Ænix runs advisory + Tier-3 SLA; customer runs production
-operations).
+(typical: Ænix provides advisory and escalation support; customer runs
+production operations).
 
 ### Phase 1 — Platform Readiness Assessment with DORA workstream
 
@@ -247,24 +248,26 @@ operations).
 review against DORA Article 6 and Articles 28-30 expectations. Output: 30-50
 page report with gap analysis, prioritised remediation, timing.
 
-### Phase 2 — Pilot deployment of Private Cloud Platform
+### Phase 2 — Pilot slice of Private Cloud Platform
 
-3-6 months. Defined slice of critical-function workloads migrated to
-Cozystack-based Private Cloud Platform. Supervisor evidence catalogue
+The first part of the build. A defined slice of critical-function
+workloads migrated to Ænix Private Cloud Platform. Supervisor evidence catalogue
 partially built. TLPT-readiness validated against the pilot scope.
 
 ### Phase 3 — Full Private Cloud Platform build
 
-12-30 months depending on workload scope, multi-DC structure, TLPT
-cycle. Production-grade deployment with full compliance documentation
+Pilot and full build together take 3-12 months, depending on workload
+scope and multi-DC structure; TLPT readiness then follows the bank's
+TLPT cycle. Production-grade deployment with full compliance documentation
 deliverables. Ænix participates in TLPT preparation; the test itself
 is run by accredited red-team providers.
 
-### Phase 4 — Managed retainer
+### Phase 4 — Support subscription
 
-Ænix advisory + Tier-3 under SLA. No kubectl access to customer
-production cluster — operates via GitOps PR review only. Critical for
-bank governance.
+Ænix advisory and escalation under a Plus or Enterprise support tier
+(see [/pricing/](/pricing/)). Access is the bank's choice: GitOps PR
+review needs no access to production, and remote access to clusters
+happens only with the bank's approval. Critical for bank governance.
 
 ## When this engagement model fits
 

@@ -1,6 +1,7 @@
 ---
 title: "How we built a dynamic Kubernetes API Server for the API Aggregation Layer in Cozystack"
-description: "Hi there! I’m Andrei Kvapil, but you might know me as @kvaps in communities dedicated to Kubernetes and cloud-native tools. In this…"
+seo_title: "A dynamic Kubernetes API server in Cozystack"
+description: "Andrei Kvapil explains how Cozystack runs its own extension API server on the Kubernetes API Aggregation Layer, and when that approach is worth it."
 date: "2024-12-12"
 author: "Andrei Kvapil"
 type: "article"
@@ -15,7 +16,7 @@ Hi there! I’m Andrei Kvapil, but you might know me as [@kvaps](https://github.
 
 Kubernetes truly amazes me with its powerful extensibility features. You’re probably already familiar with the [controller](https://kubernetes.io/docs/concepts/architecture/controller/) concept and frameworks like [kubebuilder](https://book.kubebuilder.io/) and [operator-sdk](https://sdk.operatorframework.io/) that help you implement it. In a nutshell, they allow you to extend your Kubernetes cluster by defining custom resources (CRDs) and writing additional controllers that handle your business logic for reconciling and managing these kinds of resources. This approach is well-documented, with a wealth of information available online on how to develop your own operators.
 
-![image](/img/blog/medium/how-we-built-a-dynamic-kubernetes-api-server-for-the-api-aggregation-layer-in-cozystack/cover.png)
+![Kubernetes API Aggregation Layer in Cozystack](/img/blog/medium/how-we-built-a-dynamic-kubernetes-api-server-for-the-api-aggregation-layer-in-cozystack/cover.png)
 
 However, this is not the only way to [extend the Kubernetes API](https://kubernetes.io/docs/concepts/extend-kubernetes/#api-extensions). For more complex scenarios such as implementing imperative logic, managing subresources, and dynamically generating responses — the Kubernetes API *aggregation layer* provides an effective alternative. Through the aggregation layer, you can develop a custom extension API server and seamlessly integrate it within the broader Kubernetes API framework.
 

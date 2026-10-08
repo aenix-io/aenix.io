@@ -1,12 +1,15 @@
 ---
 title: "VMware-Migration-Tools und -Strategie 2026 — was funktioniert"
-description: "Begleitung zur VMware-Migration-Page."
+seo_title: "VMware-Migration: Tools und Strategie 2026"
+description: "VMware-Migration 2026: drei Migrationspfade mit ihren Werkzeugen, eine Strategie für die Reihenfolge der Workloads und typische Stellen, an denen sie scheitern."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/vmware-migration-tools-strategie.jpg"
 author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Cozystack", "KubeVirt", "Migration"]
 language: "de"
+companion_landing: "/de/migration/vmware/"
+companion_label: "Zum VMware-Migrations-Hub →"
 quiz:
   title: "Wissens-Check: VMware-Migrationstools"
   questions:
@@ -43,7 +46,7 @@ quiz:
 hreflang_en: /blog/2026/05/vmware-migration-tools-and-strategy/
 ---
 
-Begleitung zur **[VMware-Migration-Page](/de/migration/vmware)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[VMware-Migration](/de/migration/vmware/)**.
 
 ## Drei Migrations-Pfade
 
@@ -69,5 +72,5 @@ Begleitung zur **[VMware-Migration-Page](/de/migration/vmware)**.
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

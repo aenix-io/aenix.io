@@ -1,6 +1,7 @@
 ---
 title: "DORA-Compliance-Checkliste für Cloud-Architektur — was Finanzunternehmen 2026 nachweisen müssen"
-description: "Begleitung zur DORA-Compliance-Page. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung."
+seo_title: "DORA-Checkliste für die Cloud-Architektur"
+description: "DORA-Checkliste für Cloud-Architekten: Geltungsbereich, Portabilität, Konzentrationsrisiko, operative Resilienz, Aufsichtszugang und die häufigsten Lücken."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/dora-checkliste-cloud-architektur.jpg"
 author: "Aenix Team"
@@ -44,7 +45,7 @@ quiz:
 hreflang_en: /blog/2026/05/dora-compliance-checklist-cloud-architecture/
 ---
 
-Begleitung zur **[DORA-Compliance-Page](/de/loesungen/dora-compliance)**. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung.
+Dieser Beitrag vertieft das Thema unserer Seite **[DORA](/de/loesungen/dora-compliance/)**. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung.
 
 ## DORA-Geltungsbereich
 
@@ -91,5 +92,5 @@ Strukturierte DORA-Bewertung → **[Platform Readiness Assessment](/de/dienstlei
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

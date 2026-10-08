@@ -1,7 +1,7 @@
 ---
 title: "Paleocomputing, part 2: Kubernetes in Oberon, Wirth's radio instead of a network, a cluster in your browser, and what forgotten technology says about tomorrow's infrastructure"
 description: "Kube: a Kubernetes control plane in Oberon, on Niklaus Wirth's own machines talking over radio. Six browser labs, the design lessons, and how to run it."
-seo_title: "Kubernetes in Oberon over Wirth's radio: paleocomputing, part 2"
+seo_title: "Kubernetes in Oberon over Wirth's radio"
 date: "2026-10-08"
 lastmod: "2026-10-08"
 series: "Paleocomputing"

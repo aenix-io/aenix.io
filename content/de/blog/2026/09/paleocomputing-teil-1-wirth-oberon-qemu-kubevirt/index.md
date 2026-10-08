@@ -1,5 +1,6 @@
 ---
 title: "Paleocomputing, Teil 1: Wirths Prozessor, Project Oberon, eine neue Architektur in QEMU und KubeVirt und der Betrieb in Cozystack und K8s"
+seo_title: "Paleocomputing, Teil 1: Wirths Oberon in Kubernetes"
 description: "Niklaus Wirths RISC5-Prozessor im Browser, in QEMU und in Kubernetes und eine ehrliche Messung, was Bounds-Checking auf einem offenen System wirklich kostet."
 slug: "paleocomputing-teil-1-wirth-oberon-qemu-kubevirt"
 date: "2026-09-30"

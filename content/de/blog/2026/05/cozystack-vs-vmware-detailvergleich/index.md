@@ -1,5 +1,6 @@
 ---
 title: "Cozystack vs. VMware — der Detailvergleich für Platform Engineers"
+seo_title: "Cozystack vs. VMware: Detailvergleich"
 description: "Cozystack und VMware Schicht für Schicht verglichen — Compute, Storage, Netzwerk, Mandantenfähigkeit — mit Folgen für den Betrieb und Migrationsmustern."
 slug: "cozystack-vs-vmware-detailvergleich"
 date: "2026-05-07"

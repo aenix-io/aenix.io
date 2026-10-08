@@ -1,6 +1,7 @@
 ---
 title: "Transport- und Logistik-Cloud-Architektur — NIS2, KI, Edge im Jahr 2026"
-description: "Begleitung zur Transport-Industry-Page."
+seo_title: "Transport und Logistik: Cloud-Architektur mit NIS2"
+description: "Cloud-Architektur für Transport und Logistik: NIS2-Pflichten, ein dreistufiges Muster von Edge bis Rechenzentrum, Kontrollen für den Sektor und KI-Anwendungen."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/transport-logistik-cloud-architektur-nis2.jpg"
 author: "Aenix Team"
@@ -13,10 +14,10 @@ quiz:
   questions:
     - q: "In welchen NIS2-Anhang fällt der Sektor Verkehr?"
       options:
-        - { text: "Anhang II als wichtige Einrichtung", correct: false }
-        - { text: "Anhang I als wesentliche Einrichtung", correct: true }
+        - { text: "Anhang II, Unternehmen sind immer wichtige Einrichtungen", correct: false }
+        - { text: "Anhang I; wesentlich oder wichtig je nach Unternehmensgröße", correct: true }
         - { text: "Der Sektor liegt außerhalb des Geltungsbereichs", correct: false }
-      explanation: "Verkehr steht in NIS2 Anhang I als wesentliche Einrichtung. Die Risikomanagementmaßnahmen aus Artikel 21 und die Meldepflichten aus Artikel 23 gelten für die IT von Verkehrsunternehmen auf Schiene, Straße, Wasser und in der Luft."
+      explanation: "Verkehr ist in NIS2 ein Sektor nach Anhang I (Sektoren mit hoher Kritikalität). Ob ein Unternehmen wesentliche oder wichtige Einrichtung ist, hängt nach Artikel 3 von seiner Größe ab. Die Risikomanagementmaßnahmen aus Artikel 21 und die Meldepflichten aus Artikel 23 gelten für die IT von Verkehrsunternehmen auf Schiene, Straße, Wasser und in der Luft."
     - q: "Welche dreistufige Architektur beschreibt der Artikel?"
       options:
         - { text: "Zentrale Cloud, regionale Standorte und Edge in Depots und Terminals", correct: true }
@@ -44,11 +45,11 @@ quiz:
 hreflang_en: /blog/2026/05/transport-logistics-cloud-architecture-nis2/
 ---
 
-Begleitung zur **[Transport-Industry-Page](/de/branchen/transport-logistik)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Transport und Logistik](/de/branchen/transport-logistik/)**.
 
 ## Drei Druckpunkte
 
-1. NIS2 wesentliche Einrichtung (Anhang I)
+1. NIS2: Sektor nach Anhang I (wesentliche oder wichtige Einrichtung, je nach Größe)
 2. KI-Optimierung
 3. Edge-Compute-Dichte
 
@@ -60,10 +61,10 @@ Begleitung zur **[Transport-Industry-Page](/de/branchen/transport-logistik)**.
 
 ## NIS2-Architekturkontrollen für Transport
 
-Standard-Article-21+23-Mapping; transport-spezifisch:
+Übliche Zuordnung zu Artikel 21 und 23; dazu transportspezifisch:
 - Multi-modale Datensouveränität
 - Sub-Lieferanten-Transparenz (Logistikketten 5+ Ebenen)
-- BCP für kinetische Disruption
+- Notfallplanung für physische Störungen
 - Air-gap für sicherheitskritische OT
 
 ## KI-Use-Cases im Transport
@@ -76,5 +77,5 @@ Standard-Article-21+23-Mapping; transport-spezifisch:
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

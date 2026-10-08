@@ -1,5 +1,5 @@
 ---
-title: "Cozystack have launched a new OSS health section on a website"
+title: "Cozystack Launches an OSS Health Section on Its Website"
 description: "We have launched a new OSS health section on the Cozystack website, with project stats refreshed automatically every month."
 date: "2026-04-08"
 author: "Timur Tukaev"
@@ -8,25 +8,26 @@ topics: ["Open Source", "DevOps", "Kubernetes", "CNCF", "Platform Engineering", 
 language: "en"
 cover_image: "/img/blog/medium/cozystack-have-launched-a-new-oss-health-section-on-a-website/cover.png"
 source_url: "https://blog.aenix.io/cozystack-have-launched-a-new-oss-health-section-on-a-website-fa1f4d889c47"
+canonical: "https://blog.aenix.io/cozystack-have-launched-a-new-oss-health-section-on-a-website-fa1f4d889c47"
 ---
 
 We have launched a new OSS health section on the Cozystack website, with project stats refreshed automatically every month.
 
-![image](/img/blog/medium/cozystack-have-launched-a-new-oss-health-section-on-a-website/cover.png)
+![OSS health section on the Cozystack website](/img/blog/medium/cozystack-have-launched-a-new-oss-health-section-on-a-website/cover.png)
 
 It currently includes 3 pages:
 
-#### OSS Insight
+## OSS Insight
 
 [https://cozystack.io/oss-health/oss-insight/](https://cozystack.io/oss-health/oss-insight/)
 Shows repository activity and public signals around the project: stars, forks, watchers, open issues, commits, and merged PRs.
 
-#### OpenSSF
+## OpenSSF
 
 [https://cozystack.io/oss-health/openssf/](https://cozystack.io/oss-health/openssf/)
 Shows the project status in OpenSSF Best Practices. In the 2026–04–05 snapshot, Cozystack is Passing.
 
-#### DevStats
+## DevStats
 
 [https://cozystack.io/oss-health/devstats/](https://cozystack.io/oss-health/devstats/)
 Shows community activity: contributors, PR authors, opened and merged PRs, commits, and other metrics across month, quarter, and year views.

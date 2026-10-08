@@ -1,5 +1,6 @@
 ---
 title: "Honest TCO modelling for cloud repatriation — what numbers to actually compare"
+seo_title: "Cloud repatriation TCO: which numbers to compare"
 description: "Why most cloud repatriation TCO models are wrong: the destination costs they miss, sensitivity analysis, and workload-level decisions that change the answer."
 date: "2026-05-05"
 cover_image: "/img/blog/covers/cloud-repatriation-tco-modeling-honest-numbers.jpg"

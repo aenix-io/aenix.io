@@ -1,6 +1,7 @@
 ---
 title: "Cozystack Now Offers GPU Passthrough for AI/ML Virtual Machines"
-description: "The open-source cloud platform has introduced direct GPU passthrough in its latest release, enabling users to accelerate AI, machine…"
+seo_title: "Cozystack adds GPU passthrough for AI/ML VMs"
+description: "Cozystack now passes GPUs directly through to KubeVirt virtual machines, so tenants can run AI, machine learning and other GPU workloads in their VMs."
 date: "2025-04-18"
 author: "Timur Tukaev"
 type: "news"
@@ -10,19 +11,17 @@ cover_image: "/img/blog/medium/cozystack-now-offers-gpu-passthrough-for-ai-ml-vi
 source_url: "https://medium.com/@tym83/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines-b8783c0ce358"
 ---
 
----
 
-### **Cozystack Now Offers GPU Passthrough for AI/ML Virtual Machines**
 
 The open-source cloud platform has introduced direct GPU passthrough in its latest release, enabling users to accelerate AI, machine learning, and other compute-intensive workloads on virtual machines. By leveraging physical GPUs from host nodes, teams can now deploy open-source AI stacks without proprietary cloud dependencies.
 
-![image](/img/blog/medium/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines/cover.jpg)
+![GPU passthrough for virtual machines in Cozystack](/img/blog/medium/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines/cover.jpg)
 
 Upcoming features include vGPU resource partitioning and a Kubernetes-native GPU operator for multi-tenant clusters.
 
 [Read the documentation →](https://cozystack.io/docs/operations/virtualization/gpu)
 
-#### What is Cozystack
+## What is Cozystack
 
 Cozystack is a free PaaS and framework for building clouds that unifies VMs, containers, and GPU workloads under Kubernetes. With KubeVirt integration, multi-tenancy, and bare-metal simplicity, it lets enterprises deploy AI, databases, or edge apps without vendor lock-in. And service providers can turn hardware into a cloud business: sell managed K8s, VMs and GPU services. CNCF Sandbox project.
 

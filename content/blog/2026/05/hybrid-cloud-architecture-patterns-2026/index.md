@@ -1,5 +1,6 @@
 ---
 title: "Hybrid cloud architecture patterns 2026 — what works, what fails, and how to choose"
+seo_title: "Hybrid cloud architecture patterns for 2026"
 description: "Five hybrid cloud patterns that work in production, what makes them work, the failure modes to avoid, and when hybrid is the wrong answer."
 date: "2026-05-13"
 cover_image: "/img/blog/covers/hybrid-cloud-architecture-patterns-2026.jpg"

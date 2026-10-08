@@ -1,5 +1,6 @@
 ---
 title: "Was mich Dutzende KI-Agenten gelehrt haben: Wie ich das Speichersystem Blockstor als Experiment geschrieben habe"
+seo_title: "Blockstor: was mich KI-Agenten gelehrt haben"
 description: "Andrei Kvapil über Blockstor: ein Clean-Room-Orchestrator für Blockspeicher, gebaut mit bis zu 60 KI-Agenten, testgetriebener Entwicklung und harten Exit Gates."
 date: "2026-08-10"
 author: "Andrei Kvapil"
@@ -11,17 +12,16 @@ source_url: "https://blog.aenix.io/what-dozens-of-ai-agents-taught-me-how-i-wrot
 hreflang_en: /blog/2026/08/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment/
 ---
 
----
 
 Vor ein paar Monaten habe ich mich zu einem Experiment entschlossen: eine Clean-Room-Implementierung von LINSTOR von Grund auf zu bauen, ausschließlich anhand der Referenzen und der öffentlichen API-Typen. Angefangen hat es als Freitagsscherz. Ich wollte so wenig Zeit wie möglich hineinstecken, das Ganze im Hintergrund laufen lassen und schauen, wohin es führt. Die Frage war, wie weit ein modernes Modell allein kommt, ganz ohne Menschen in der Schleife.
 
-![image](/img/blog/medium/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment/cover.jpg)
+![Speichersystem Blockstor, gebaut mit KI-Agenten](/img/blog/medium/what-dozens-of-ai-agents-taught-me-how-i-wrote-the-blockstor-storage-system-as-an-experiment/cover.jpg)
 
 Spoiler: Aus der vollen Autonomie wurde nichts, und ich habe mich mit dem Projekt ziemlich herumgeschlagen. Aber der Prozess hat mich völlig gepackt, und das Ergebnis hat alle meine Erwartungen übertroffen.
 
 > Aus der Community kam immer wieder die Frage, wie das eigentlich gelaufen ist. Eine berechtigte Frage — bei diesem Projekt habe ich sehr viel darüber gelernt, wie man Modelle wirksam führt, und dabei sind etliche Methoden und Muster herausgekommen, die mich seither auch in der täglichen Arbeit deutlich produktiver machen.
 
-### Was Blockstor ist
+## Was Blockstor ist
 
 Ich habe das Projekt Blockstor genannt. Es ist ein Orchestrator für Blockgeräte. Grob gesagt: Sie fordern ein repliziertes Volume in der gewünschten Größe an, und dieses Volume wird auf mehreren Knoten in ZFS oder LVM angelegt und per DRBD für die Replikation eingerichtet — eine intelligente, netzwerkbewusste Variante von RAID 1. Das System beherrscht Snapshots, das Umverteilen von Repliken, Resize, automatisches Failover und einiges mehr.
 
@@ -31,7 +31,7 @@ LINSTOR kam für mich einem idealen Speichersystem sehr nahe, weil seine API-Typ
 
 Umschreibungen von einer Sprache in eine andere sind übrigens keine Seltenheit. So ist zum Beispiel das Projekt rusternetes entstanden: Kubernetes, neu geschrieben von Go nach Rust. Aber wie soll das überhaupt gehen? Kubernetes hat eine gewaltige Codebasis mit einer gewaltigen Zahl an Personenstunden darin. Wie überzeugt man sich davon, dass der dabei entstehende „KI-Schrott“ korrekt funktioniert? Und kann man sich überhaupt darauf verlassen, geschweige denn ihn produktiv betreiben?
 
-### TDD
+## TDD
 
 Die Antwort liegt darin, wie Kubernetes selbst offen entwickelt wird. Freie, community-getriebene Projekte haben einen festen Bestand an etablierter Praxis, und die Beitragenden halten sich nach Kräften daran.
 
@@ -47,13 +47,13 @@ Ob ein Projekt als Kubernetes-Ersatz durchgeht, misst sich also in erster Linie 
 >
 > *— Der berühmte [Ententest](https://de.wikipedia.org/wiki/Ententest)*
 
-### Hooks und Setup
+## Hooks und Setup
 
 Aus demselben Grund war mein erster Schritt, das Modell auf testgetriebene Entwicklung (TDD) festzulegen, bei der die Tests vor der Implementierung entstehen. Über Tests lassen sich die Konformitätsanforderungen festzurren, die man braucht. Und sie geben mir die Sicherheit, dass neue Funktionalität, die während der Entwicklung dazukommt, das Bestehende nicht beschädigt.
 
 Auf Rat eines Kollegen habe ich sofort golangci-lint eingebunden und es für das Modell verbindlich gemacht, jeden Code dort durchlaufen zu lassen. [@lexfrei](https://github.com/lexfrei) — der besagte Kollege — argumentiert, dass dieser Schritt eine erhebliche Menge Tokens spart.
 
-### Das Exit Gate und ein deterministisches Ergebnis
+## Das Exit Gate und ein deterministisches Ergebnis
 
 Das ist wohl die erste und wichtigste Lektion: Man kann einem Modell sagen „schreib weiter, bis die Tests grün sind“, und das ist eine gute Bedingung an das Artefakt, das dabei herauskommt. Genau nach dieser Methode habe ich dieses Projekt gebaut. Mit einem Haken: Ich hatte keine Tests, denn LINSTOR veröffentlicht keine Test-Suite für die eigene Funktionalität.
 
@@ -61,7 +61,7 @@ Zur Verfügung standen mir nur Jahre im Betrieb von LINSTOR, Dutzende eigener Vo
 
 Meine Hauptaufgabe bestand damit darin, diese Exit Gates zu definieren. Sitzen sie richtig, muss ich nicht die gesamte entstehende Codebasis kontrollieren: Erfüllt der Code die Bedingungen, die ich mir selbst gesetzt habe, ist das der Nachweis, dass die Arbeit erledigt ist.
 
-### Die API als Vertrag
+## Die API als Vertrag
 
 Mir gefallen die Typdefinitionen, die LINSTOR in seiner API verwendet. Hinzu kommt, dass sowohl der offizielle CSI-Treiber als auch der Piraeus-Operator mit diesen Typen arbeiten, und ich hatte keine Lust, eines von beiden neu zu schreiben.
 
@@ -73,11 +73,11 @@ Zur Erinnerung: Der Code von LINSTOR ist unter GPLv3 veröffentlicht, und ich ha
 
 Damit hatte ich meinen ersten Vertrag: Die API muss mit der LINSTOR-Go-Bibliothek, mit linstor-csi und mit dem Piraeus-Operator kompatibel sein.
 
-### Die Testumgebung
+## Die Testumgebung
 
 Das Modell brauchte einen Ort zum Arbeiten und einen Ort, um das Erzeugte zu testen. Als Testumgebung habe ich einen kräftigen Bare-Metal-Knoten gewählt, dazu eine generierte Test-Suite, die in virtuellen Maschinen (VMs) einen Kubernetes-Cluster auf Talos hochzieht und Blockstor darin ausrollt. Diese Wahl war bewusst: Blockstor braucht das DRBD-Modul, und DRBD neigt bei falscher Konfiguration dazu, sich aufzuhängen — ich brauchte also einen schnellen Weg, eine kaputte Umgebung neu aufzusetzen. Da Blockstor seine Konfiguration architekturbedingt als Kubernetes-CRDs ablegt, war mit Talos zugleich die Frage des Kubernetes-Bootstraps erledigt.
 
-### Das erste Ergebnis
+## Das erste Ergebnis
 
 Als der erste Proof of Concept (PoC) fertig war, hatte mir das Modell einen funktionierenden Prototyp gebaut — allein anhand der genannten Quellen und seines eigenen Datenbestands. Für das Interaktionsmodell hatte es allerdings genau dasselbe anfragegetriebene Modell implementiert wie das Original-LINSTOR, vermutlich aus dessen Dokumentation übernommen. Und es funktionierte bereits! Ich konnte über das offizielle CLI mit der API sprechen, wenn auch mit Hunderten von Fehlern und Lücken.
 
@@ -89,7 +89,7 @@ An dieser Stelle floss mein gesamtes Material ein — meine Artikel zum Debuggin
 
 Irgendwann habe ich angefangen zu fragen, wie sich der Prozess beschleunigen ließe.
 
-### Die Entwicklung beschleunigen
+## Die Entwicklung beschleunigen
 
 Daraus entstand die Idee, Agenten zu parallelisieren. Manche Probleme ließen sich auf Ebene der Unit-Tests abschließen. Andere waren nur an einer echten Umgebung zu verifizieren. Nachdem ich denselben Satz Fehler immer wieder durchgespielt hatte, kam ich zu dieser Methode:
 
@@ -102,13 +102,13 @@ Daraus entstand die Idee, Agenten zu parallelisieren. Manche Probleme ließen si
 
 Nach einer Weile fing das Projekt an, nach etwas auszusehen, das man tatsächlich benutzen kann. Vieles war noch nicht stabil.
 
-### Der Marathon geht weiter
+## Der Marathon geht weiter
 
 Während ich diesen ganzen Zoo betreute, habe ich parallel selbst Integrationstests gefahren und die Ergebnisse von Hand geprüft. Ich ließ mir von Claude Zugang zu einer Umgebung geben, bediente das linstor-CLI manuell und versuchte, die Fehler zu reproduzieren — von denen es noch reichlich gab.
 
 An diesem Punkt musste ich aufhören, große Blöcke zu bauen, und stattdessen sehr viel akribischer die User Journey testen. Der Großteil der Probleme verschwand, als ich die Agenten Tests über das offizielle CLI implementieren ließ und die User Journey für den Day-2-Betrieb aus der offiziellen LINSTOR-Dokumentation vorgab. An manchen Stellen drehte sich das Modell allerdings im Kreis: Über die ganze Zeit brachte es nie alle Tests zuverlässig auf Grün, und ich musste persönlich eingreifen. Gestützt auf mein eigenes Wissen ließ ich mir jedes Problem erklären und stellte dem Modell dann eine Reihe gezielter Fragen zur Architektur.
 
-### Die Feinschliff-Phase
+## Die Feinschliff-Phase
 
 Viele meiner Fragen liefen auf die asynchrone Natur der Controller hinaus. DRBD ist von Haus aus heikel, was den Zeitpunkt, die Art und die Reihenfolge der Konfigurationsanwendung angeht. Entscheidend war deshalb eine stabile Zustandsmaschine — eine, die den Reconciliation-Loop erst dann zu einer bestimmten Aktion durchlässt, wenn die Bedingungen erfüllt sind.
 
@@ -120,7 +120,7 @@ Zuerst habe ich versucht, die exakte Befehlsfolge allein aus dem beobachteten Ve
 
 Ein weiteres Problem war die konsistente Vergabe von Node-IDs — jede DRBD-Replik braucht im Cluster eine eindeutige Nummer von 1 bis 8 — sowie die Vergabe der TCP-Ports für die Replikation, die in der aktuellen Implementierung nicht mehr an DRBD gebunden ist, sondern aus einem Pool je Knoten erfolgt. Genau hier hat sich die oben beschriebene Zustandsmaschine ausgezahlt.
 
-### Der Aufbau des CI-Systems
+## Der Aufbau des CI-Systems
 
 Inzwischen war klar, dass das Experiment in seine Endphase ging, und ich begann, über die Zukunft des Projekts nachzudenken. Um es fertigzustellen und produktionsreif zu machen, brauchten wir ein ernsthaftes System für Continuous Integration (CI), das garantiert, dass kein ungetesteter Code in der Codebasis landet. Angesichts der Testmenge durfte ein Lauf nicht über mehrere Stunden gehen, die Tests mussten also ebenso parallelisiert werden.
 
@@ -128,7 +128,7 @@ Und wir haben eines gebaut: Für jeden Pull Request lief ein großer Stapel Test
 
 In diesem Modus habe ich noch etliche Runden gearbeitet, bis die CI wirklich grün und stabil war. Danach sind wir von lokalen Worktrees auf Pull Requests bei GitHub umgestiegen.
 
-### Die Endphase
+## Die Endphase
 
 Datenverlust ist nicht akzeptabel. Bevor ich das Projekt für fertig erklären konnte, musste ich also gründlich prüfen, ob Blockstor sich in dieser Hinsicht korrekt und verlässlich verhält. Den gesamten generierten Code zu lesen und zu prüfen, überstieg sowohl meine Energie als auch meine Kapazität. Andererseits ist Blockstor — wie LINSTOR — im Kern ein Orchestrator. Die Daten selbst liegen in ZFS und DRBD, und an deren Zuverlässigkeit hatte ich keine Zweifel. Wichtig war der Nachweis, dass der Controller die Ressourcen tatsächlich korrekt konfiguriert und Ausfälle übersteht.
 
@@ -142,7 +142,7 @@ Stand 15. Juli 2026 ist dieser Pull Request noch nicht gemergt — aber die Chan
 
 > **Anmerkung der Redaktion (September 2026):** Blockstor ist weiterhin ein eigenständiges, experimentelles Projekt — [github.com/cozystack/blockstor](https://github.com/cozystack/blockstor), Apache 2.0 — und nicht Bestandteil von Cozystack. LINSTOR/DRBD über Piraeus bleibt der Speicher, den Cozystack ausliefert, und ist dort das Standard-Backend. Blockstor steht auf der Roadmap als optional zuschaltbares Backend für 2027.
 
-### Die wichtigste Erkenntnis
+## Die wichtigste Erkenntnis
 
 Blockstor hat nach wie vor experimentellen Status. Die Erfahrung hat mir aber erlaubt, die Arbeit an anderen Projekten erheblich zu beschleunigen und zu automatisieren, und ich wende sie inzwischen täglich an.
 
@@ -152,7 +152,7 @@ Auf diese Weise kann man Aufgaben angehen, die für ein kleines Team früher zu 
 
 Und so, glaube ich, sieht der Bau komplexer Infrastruktur von hier an aus: nicht ein Ingenieur gegen eine gewaltige Codebasis, sondern ein Ingenieur als Architekt eines Prozesses, um den herum ein Schwarm spezialisierter Agenten arbeitet. Die Aufgabe des Ingenieurs ist es nicht, jeden Agenten zu beaufsichtigen. Sie ist es, ein System zu bauen, in dem die Agenten sich selbst beaufsichtigen und nur mit dem zum Menschen kommen, was wirklich einen Menschen braucht.
 
-### Community
+## Community
 
 - [Blockstor auf GitHub](https://github.com/cozystack/blockstor)
 - [Cozystack auf GitHub](https://github.com/cozystack/cozystack)

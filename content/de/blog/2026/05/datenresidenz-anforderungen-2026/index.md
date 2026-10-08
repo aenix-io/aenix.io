@@ -1,6 +1,7 @@
 ---
 title: "Datenresidenz-Anforderungen 2026 — praktischer Leitfaden für Cloud-Architektur"
-description: "Begleitung zur Datensouveränitäts-Page. Was Datenresidenzregeln tatsächlich erfordern, wo typische Cloud-Setups versagen, wie eine Architektur aussieht, die..."
+seo_title: "Datenresidenz 2026: Anforderungen an die Cloud"
+description: "Was Datenresidenz-Regeln 2026 tatsächlich verlangen, wo typische Cloud-Setups bei Prüfungen scheitern und welche Architektur Residenz auf jeder Schicht belegt."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/datenresidenz-anforderungen-2026.jpg"
 author: "Aenix Team"
@@ -44,7 +45,7 @@ quiz:
 hreflang_en: /blog/2026/05/data-residency-requirements-2026/
 ---
 
-Begleitung zur **[Datensouveränitäts-Page](/de/loesungen/data-sovereignty)**. Was Datenresidenzregeln tatsächlich erfordern, wo typische Cloud-Setups versagen, wie eine Architektur aussieht, die Residenz auf jeder Schicht nachweisen kann.
+Dieser Beitrag vertieft das Thema unserer Seite **[Datensouveränität](/de/loesungen/data-sovereignty/)**. Was Datenresidenzregeln tatsächlich erfordern, wo typische Cloud-Setups versagen, wie eine Architektur aussieht, die Residenz auf jeder Schicht nachweisen kann.
 
 ## Was „Datenresidenz“ bedeutet
 
@@ -96,7 +97,7 @@ Datenresidenz ist die Anforderung, dass spezifizierte Daten in einer definierten
 
 - Region-aligned Virtualisierung mit kontrollierter Replikation
 - Selbstgehostete Observability (VictoriaMetrics + VictoriaLogs)
-- Customer-controlled Schlüsselverwaltung (HSM)
+- Vom Kunden kontrollierte Schlüsselverwaltung (z. B. mit HSM)
 - Multi-Region-Mandantenfähigkeit mit expliziten Cross-Border-Kontrollen
 - Air-gapped oder restricted-egress Architektur
 
@@ -106,5 +107,5 @@ Strukturierte Bewertung → **[Platform Readiness Assessment](/de/dienstleistung
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

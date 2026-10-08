@@ -1,5 +1,6 @@
 ---
 title: "White-Label-Cloud-Playbook — für MSPs und Reseller 2026"
+seo_title: "White-Label-Cloud: Playbook für MSPs und Reseller"
 description: "Architektur und Reseller-Ökonomie für den Start einer White-Label-Cloud unter eigener Marke — und wie das Engagement mit Ænix dafür aufgebaut ist."
 slug: "white-label-cloud-playbook-msp-reseller"
 date: "2026-05-31"
@@ -24,7 +25,7 @@ quiz:
         - { text: "Ein gemeinsamer Namespace für alle Tenants", correct: false }
         - { text: "Mehrstufiges, verschachteltes Tenant-CRD-Modell", correct: true }
         - { text: "Ein dedizierter Cluster pro Endkunde", correct: false }
-      explanation: "Mehrstufiges Tenant CRD: Ænix-Tenant → MSP-Tenant → Tenant des MSP-Kunden. Isolation je Ebene bei RBAC, Quotas, Observability-Umfang und Abrechnung. Erst die Verschachtelung lässt das Reseller-Modell sauber funktionieren."
+      explanation: "Mehrstufiges Tenant CRD: Root-Tenant → MSP-Tenant → Tenant des MSP-Kunden. Isolation je Ebene bei RBAC, Quotas, Observability-Umfang und Abrechnung. Erst die Verschachtelung lässt das Reseller-Modell sauber funktionieren."
     - q: "Welcher Aufschlag auf die reinen Plattformkosten ist beim Kundenpreis typisch?"
       options:
         - { text: "5–10 % über den Plattformkosten", correct: false }
@@ -54,16 +55,16 @@ Das Muster 2026: Der MSP erhält ein gebrandetes, mandantenfähiges Cloud-Produk
 
 ## Architektur
 
-- **Mehrstufiges Tenant CRD** — Ænix-Tenant → MSP-Tenant → Tenant des MSP-Kunden. Isolation auf jeder Ebene.
+- **Mehrstufiges Tenant CRD** — Root-Tenant → MSP-Tenant → Tenant des MSP-Kunden. Isolation auf jeder Ebene.
 - **Gebrandetes Cozystack Dashboard** — der MSP kann Farben, Logo, Domain und die Optionen des Servicekatalogs anpassen
-- **WHMCS-Integration** — die Abrechnung läuft über das bestehende Kundenverwaltungssystem des MSP
+- **WHMCS-Integration** (proprietäres Ænix-Modul) — die Abrechnung läuft über das bestehende Kundenverwaltungssystem des MSP
 - **Servicekatalog** — der MSP kann festlegen, welche Services er seinen Kunden anbietet (z. B. Kafka ausblenden, wenn er es nicht unterstützt)
 - **SLA-Management** — Nachverfolgung des SLA pro Kunde über die Observability von Cozystack
 
 ## Reseller-Ökonomie
 
 Typische Ökonomie für einen MSP, der eine White-Label-Cloud betreibt:
-- **Plattformkosten** — Ænix-Engagement + Hardware + Colocation
+- **Plattformkosten** — Ænix-Subskription (White-Labeling ab der Standard-Stufe, 3.000 $ pro 10 Nodes und Monat; siehe [Preise](/de/preise/)) + Hardware + Colocation
 - **Kosten pro Kunde** — zusätzliche Hardware, Storage und Bandbreite
 - **Kundenpreis** — typischerweise 30–50 % über den reinen Plattformkosten
 - **Marge** — deckt Support, Vertrieb und Betrieb des MSP
@@ -72,6 +73,6 @@ Der Break-even liegt bei 30–50 zahlenden Kunden, wenn Sie Plattform und Werkze
 
 ## Aufbau des Engagements
 
-- **4–8 Wochen Discovery + Assessment der Produktreife**
-- **4–12 Monate Aufbau**
+- **Platform Readiness Assessment** (14 oder 28 Tage, Festpreis) inklusive Produktreife
+- **Plattform live in wenigen Wochen** über den produktisierten Installer, sobald die Hardware bereitsteht; Produkt- und Vertriebsarbeit läuft parallel in den folgenden Monaten
 - **Optionale Managed Services**

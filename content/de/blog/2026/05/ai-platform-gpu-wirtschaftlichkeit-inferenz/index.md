@@ -1,5 +1,6 @@
 ---
 title: "AI Platform — wann sich Dauer-Inferenz auf eigenen GPUs gegenüber Hyperscalern rechnet"
+seo_title: "Eigene GPUs für Dauer-Inferenz: wann es sich rechnet"
 description: "GPU-Wirtschaftlichkeit für Dauer-Inferenz, mandantenfähiges GPU-Scheduling und ab wann sich eine eigene KI-Infrastruktur gegenüber Hyperscalern auszahlt."
 slug: "ai-platform-gpu-wirtschaftlichkeit-inferenz"
 date: "2026-05-01"
@@ -106,8 +107,9 @@ Eine typische mandantenfähige Inferenz-Flotte besteht aus einem Mix:
 - **Reine CPU-Nodes** für RAG-Retrieval, das Erzeugen von Embeddings und
   Preprocessing-Pipelines, die keine GPU brauchen
 
-In unseren Installationen validierte Konfigurationen: A100 40/80 GB,
-H100 80 GB, H200 141 GB, L40S 48 GB, Blackwell B100/B200. NVLink für
+Unterstützt werden NVIDIA-Rechenzentrums-GPUs über den NVIDIA GPU Operator
+(Passthrough an VMs, Sharing über HAMi); MIG-Partitionierung steht auf der
+Roadmap. NVLink für
 Training über mehrere GPUs, wo sinnvoll; 25–100 Gbit/s Ethernet reichen
 für die meisten Inferenz-Muster.
 
@@ -221,9 +223,9 @@ typische Flaggschiff-Installation von AI Platform.
 
 **Muster 4 — souveräne Air-Gapped-Installation.** Kein ausgehender
 Internetverkehr; Updates über kontrollierte Kanäle. Vom Kunden
-gestellte Hardware, vom Kunden kontrollierte Schlüssel (HSM-gestützt),
+gestellte Hardware, vom Kunden kontrollierte Schlüssel,
 SIEM für Audits auf Kundenseite. Am besten für: Verschlusssachen,
-verteidigungsnahe Bereiche, Gesundheitswesen mit strengen Vorgaben zur
+Gesundheitswesen mit strengen Vorgaben zur
 Datenresidenz.
 
 ## Häufige Fallstricke
@@ -291,16 +293,18 @@ Schlechte Eignung:
 ## Ablauf der Zusammenarbeit
 
 - **Discovery Call** (30 Min., kostenlos)
-- **Architektur-Review für Sovereign AI** (1–2 Wochen, Festpreis) —
+- **Platform Readiness Assessment** (14 oder 28 Tage, Festpreis) —
   auf Basis des Frameworks aus dem [Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/) und der Erfahrung von Ænix
 - **Pilotprojekt** (3–6 Monate) — klar abgegrenzter Ausschnitt: eine
   Workload-Klasse, ein Tenant, eine Modellfamilie
-- **Vollständiger Aufbau der AI Platform** (6–12 Monate) — produktive
-  KI-Infrastruktur mit allen vorgesehenen Workload-Typen
-- **Managed Retainer** (laufend) — Ænix betreibt die KI-Plattform
-  unter SLA
+- **Vollständiger Aufbau der AI Platform** — produktive
+  KI-Infrastruktur mit allen vorgesehenen Workload-Typen; Umfang und
+  Dauer werden im Assessment festgelegt
+- **Support-Subskription** (laufend) — Plus- oder Enterprise-Stufe für
+  24×7 (siehe [/de/preise/](/de/preise/)) oder separat angebotener
+  Managed-Betrieb
 
-Umfang: Projekt plus Managed Retainer, Angebot je Ausschreibung.
+Umfang: Projekt plus Support-Subskription, Angebot je Ausschreibung.
 
 ## Weiterführende Informationen
 

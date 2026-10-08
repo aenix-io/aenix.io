@@ -1,5 +1,6 @@
 ---
 title: "Invitation to CozySummit Virtual — December 3"
+seo_title: "CozySummit Virtual on December 3: invitation"
 description: "Join us on December 3 for CozySummit Virtual, the first conference for CozyStack developers and users."
 date: "2025-08-14"
 author: "Timur Tukaev"
@@ -10,15 +11,13 @@ cover_image: "/img/blog/medium/invitation-to-cozysummit-virtual-december-3/cover
 source_url: "https://medium.com/@tym83/invitation-to-cozysummit-virtual-december-3-050bc72f1b4b"
 ---
 
----
 
-### Invitation to CozySummit Virtual — December 3
 
 Join us on December 3 for CozySummit Virtual, the first conference for CozyStack developers and users.
 
-📢 CFP is open until September 14 — submit your talk and become one of the first speakers at our event!
+CFP is open until September 14 — submit your talk and become one of the first speakers at our event!
 
-![image](/img/blog/medium/invitation-to-cozysummit-virtual-december-3/cover.jpg)
+![CozySummit Virtual, December 3](/img/blog/medium/invitation-to-cozysummit-virtual-december-3/cover.jpg)
 
 CozySummit Virtual is organized by CNCF with the support of CozyStack maintainers and project sponsors.
 
@@ -28,8 +27,8 @@ Suggested Session Topics:
 3. Contributing to Cozystack
 4. Powering AI: Running Demanding Workloads on Cozystack (VMs & K8s)
 
-👉 [Conference website](https://community.cncf.io/events/details/cncf-virtual-project-events-hosted-by-cncf-presents-cozysummit-virtual-2025/)
-👉 [CFP](https://sessionize.com/CozySummit_2025)
+[Conference website](https://community.cncf.io/events/details/cncf-virtual-project-events-hosted-by-cncf-presents-cozysummit-virtual-2025/)
+[CFP](https://sessionize.com/CozySummit_2025)
 
 By [Timur Tukaev](https://medium.com/@tym83) on [August 14, 2025](https://medium.com/p/050bc72f1b4b).
 

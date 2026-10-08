@@ -1,5 +1,6 @@
 ---
 title: "Internal Developer Portal vs. Internal Developer Platform — und der Platz von Backstage im Jahr 2026"
+seo_title: "Developer Portal oder Plattform – und Backstage"
 description: "Portal und Plattform sind nicht dasselbe. Wo Backstage wirklich passt, welche Alternativen es gibt und wie Sie klären, ob Sie überhaupt ein Portal brauchen."
 slug: "internal-developer-portal-vs-plattform"
 date: "2026-05-14"

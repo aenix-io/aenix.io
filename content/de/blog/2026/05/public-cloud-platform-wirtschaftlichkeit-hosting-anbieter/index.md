@@ -1,5 +1,6 @@
 ---
 title: "Wirtschaftlichkeit der Public Cloud Platform — wann sich eine schlüsselfertige Cloud aus der Box für Hosting-Anbieter rechnet"
+seo_title: "Public Cloud Platform: Wirtschaftlichkeit für Hoster"
 description: "Unit Economics der Aenix Public Cloud Platform für Hosting-Anbieter: ARPU, Infrastrukturkosten pro Tenant, Kapazität des Plattformteams, Amortisation, Grenzen."
 slug: "public-cloud-platform-wirtschaftlichkeit-hosting-anbieter"
 date: "2026-05-15"
@@ -26,24 +27,24 @@ quiz:
         - { text: "Etwa 80 bis 100 € pro Tenant und Monat", correct: false }
         - { text: "Etwa 20 bis 40 € pro Tenant und Monat", correct: true }
       explanation: "Der Abschnitt zu den Unit Economics rechnet mit 15–30 €/Monat direkten Infrastrukturkosten plus 5–10 € anteiligen Kosten des Plattformteams bei 500 Tenants und kommt so auf 20–40 €/Monat Gesamtkosten pro typischem Tenant am unteren Ende des Ressourcenverbrauchs."
-    - q: "Ab etwa welcher Zahl von Tenants rechnet sich die Public Cloud Platform laut Artikel wirtschaftlich?"
+    - q: "Welche Break-even-Zahl errechnet der Artikel für einen Provider mit eigenem Plattformteam von 3–5 Personen und 50 Nodes?"
       options:
-        - { text: "Ab etwa 100 bis 200 zahlenden Tenants", correct: false }
-        - { text: "Ab etwa 1.000 bis 3.600 zahlenden Tenants", correct: true }
-        - { text: "Ab etwa 10.000 oder mehr zahlenden Tenants", correct: false }
-      explanation: "Der Abschnitt zur Break-even-Rechnung ermittelt monatliche Fixkosten von 50–90 Tsd. €; bei 25–50 €/Monat Marge pro Tenant (40–80 € ARPU abzüglich 15–30 € direkter Infrastrukturkosten) liegt der Break-even je nach ARPU-Mix bei etwa 1.000–3.600 zahlenden Tenants."
+        - { text: "Etwa 100 bis 200 zahlende Tenants", correct: false }
+        - { text: "Etwa 1.200 bis 4.000 zahlende Tenants", correct: true }
+        - { text: "Etwa 10.000 oder mehr zahlende Tenants", correct: false }
+      explanation: "Die Break-even-Rechnung addiert Support der Standard-Stufe für 50 Nodes (15.000 $ pro Monat zum Listenpreis) zu 44–85 Tsd. € für Team, Hardware, Colocation, Support und Vertrieb. Bei 25–50 €/Monat Marge pro Tenant liegt der Break-even bei etwa 1.200–4.000 zahlenden Tenants. Ein kleinerer Start auf 10 Nodes mit vorhandenem Personal ändert dieses Bild."
     - q: "Welches Fehlermuster wird als das größte einzelne Fehlermuster bei Providern der Public Cloud Platform in der Pipeline genannt?"
       options:
         - { text: "Zu geringe Investitionen in das Kundenportal", correct: false }
         - { text: "Ein Betriebsteam, das für das Volumen in 18 Monaten zu klein ist", correct: true }
         - { text: "Ein Servicekatalog mit Diensten, die der Betrieb nicht beherrscht", correct: false }
       explanation: "Der Artikel nennt die Unterbesetzung im Betrieb „das größte einzelne Fehlermuster in unserer Pipeline“: Betriebsteams mit 4 Personen, die bei 50 Kunden funktioniert haben, skalieren bei 200+ nicht, SLA-Verletzungen häufen sich, die Abwanderung steigt."
-    - q: "Warum passt die Public Cloud Platform laut Artikel für Provider mit weniger als ~300 Kunden meist NICHT?"
+    - q: "Warum ist ein vollständiges Programm mit eigenem Plattformteam laut Artikel unter ~300 Kunden oft verfrüht?"
       options:
         - { text: "Cozystack kann technisch nicht auf so wenige Tenants herunterskalieren", correct: false }
         - { text: "EU-Aufsichtsbehörden verbieten kommerzielle Clouds mit weniger als 300 Tenants", correct: false }
-        - { text: "Die Fixkosten erdrücken in dieser Größe den Deckungsbeitrag", correct: true }
-      explanation: "Der Artikel sagt ausdrücklich: „Für Provider mit weniger als ~300 Kunden ist die Public Cloud Platform oft verfrüht — die Fixkosten erdrücken den Deckungsbeitrag. Das sagen wir im Discovery Call offen, statt das Projekt voranzutreiben.“"
+        - { text: "Die Fixkosten eines eigenen Teams erdrücken in dieser Größe den Deckungsbeitrag", correct: true }
+      explanation: "Unter ~300 Kunden kostet ein vollständiges Programm mit eigenem Plattformteam von 3–5 Personen meist mehr, als es an Marge einbringt. Der Artikel empfiehlt stattdessen einen kleineren Start: 10 Nodes in der Basic-Stufe, ein schmaler Katalog und vorhandenes Personal."
 ---
 
 
@@ -90,19 +91,21 @@ Präsenz, Souveränität und Preisflexibilität konkurrieren wollen — nicht
 
 ## Preismodell
 
-Die Public Cloud Platform ist das einzige Ænix-Produkt mit
-veröffentlichtem Einstiegspreis: ab **1.250 $/Monat** für den
-Basic-Support-Tier mit 10 Nodes. Höhere Tiers (Standard, Enterprise)
-bringen SLA, einen dedizierten TAM und Reaktion rund um die Uhr (24×7),
-Preise auf Anfrage (RFP). Ænix rechnet nicht pro VM, pro CPU oder pro GB
+Subskriptionen der Public Cloud Platform nutzen die veröffentlichten
+Support-Stufen, berechnet pro 10 physische Nodes und Monat bei
+jährlicher Abrechnung: **Basic 1.250 $**, **Standard 3.000 $**,
+**Plus 5.500 $**; Enterprise wird individuell angeboten. Höhere Stufen
+bringen kürzere Reaktionszeiten, unbegrenzte Incidents, Support rund um
+die Uhr (Plus und Enterprise) und einen breiteren Supportumfang — die
+vollständige Übersicht steht auf der [Preisseite](/de/preise/). Ænix rechnet nicht pro VM, pro CPU oder pro GB
 ab — die Cozystack-Plattform selbst ist unter Apache 2.0 kostenlos;
 bezahlt werden Projektarbeit, Support und betriebliche Absicherung.
 
 Für einen typischen mittelgroßen Hosting-Anbieter mit 30–100 Nodes im
-Kundenbetrieb liegen die Supportkosten bei Ænix je nach Tier und SLA im
-Bereich von 4–15 Tsd. €/Monat. Das ist ein Bruchteil der wiederkehrenden
-Lizenzkosten, die die meisten Provider bisher an VMware oder an Anbieter
-von OpenStack-Distributionen gezahlt haben.
+Kundenbetrieb sind das zum Listenpreis 3.750–12.500 $/Monat in der
+Basic-Stufe oder 9.000–30.000 $/Monat in der Standard-Stufe. Vergleichen
+Sie das mit den wiederkehrenden Lizenz- und Subskriptionskosten, die Sie
+heute an VMware oder an einen Anbieter von OpenStack-Distributionen zahlen.
 
 ## Unit Economics — die Sicht pro Tenant
 
@@ -156,18 +159,21 @@ Platform:
 
 | Posten | Monatlich | Jährlich |
 |---|---|---|
-| Ænix-Support (Standard-Tier) | 6 Tsd. € | 72 Tsd. € |
+| Ænix-Support (Standard-Stufe, 50 Nodes = 5 × 3.000 $) | 15 Tsd. $ | 180 Tsd. $ |
 | Platform-Engineering-Team (3–5 VZÄ) | 20–35 Tsd. € | 240–420 Tsd. € |
 | Abschreibung der Hardware (50 Nodes) | 5–8 Tsd. € | 60–100 Tsd. € |
 | Colocation / Strom / Bandbreite | 4–7 Tsd. € | 50–85 Tsd. € |
 | Kundensupport-Team (2–4 VZÄ für die Cloud) | 10–20 Tsd. € | 120–240 Tsd. € |
 | Marketing / Vertrieb | 5–15 Tsd. € | 60–180 Tsd. € |
 
-**Fixkosten gesamt pro Monat: 50–90 Tsd. €.**
+**Fixkosten gesamt pro Monat: 44–85 Tsd. € plus 15 Tsd. $ für den Ænix-Support.**
 
 Bei 25–50 €/Monat Marge pro Tenant (40–80 € ARPU nach 15–30 € direkten
 Infrastrukturkosten) liegt der Break-even je nach ARPU-Mix und Gehaltsniveau
-bei **~1.000–3.600 zahlenden Tenants**.
+bei **etwa 1.200–4.000 zahlenden Tenants**. Das ist der Fall eines
+vollständigen Programms mit eigenem Team; ein Start mit 10 Nodes in der
+Basic-Stufe und vorhandenem Personal erreicht den Break-even deutlich
+früher — rechnen Sie Ihre eigenen Zahlen im [ISP-Rechner](/isp-calculator/) durch.
 
 Für Provider, die heute ~500 Kunden auf Legacy-Infrastruktur betreiben
 und den Wechsel prüfen, ist das entscheidend: Sie brauchen einen
@@ -176,9 +182,12 @@ mindestens zu verdoppeln, damit die Rechnung tatsächlich aufgeht. Ohne Wachstum
 die Public Cloud Platform eine (moderate) Kostensenkung, aber keine
 Transformation.
 
-Für Provider mit weniger als ~300 Kunden ist die Public Cloud Platform
-oft *verfrüht* — die Fixkosten erdrücken den Deckungsbeitrag. Das sagen
-wir im Discovery Call offen, statt das Projekt voranzutreiben.
+Für Provider mit weniger als ~300 Kunden ist ein vollständiges Programm
+mit eigenem Plattformteam von 3–5 Personen oft *verfrüht* — diese
+Fixkosten erdrücken den Deckungsbeitrag. Ein kleinerer Start (10 Nodes in
+der Basic-Stufe, ein schmaler Katalog, vorhandenes Personal) ist meist der
+bessere erste Schritt. Das sagen wir im Discovery Call offen, statt ein
+größeres Projekt voranzutreiben.
 
 ## Wo das Modell versagt
 
@@ -226,10 +235,10 @@ vCD ist der historisch etablierte Platzhirsch bei Hosting-Anbietern.
 Nach Broadcom hat die Abo-Preisgestaltung die Rechnung verändert —
 Steigerungen um das 2- bis 5-Fache bei der Verlängerung, verpflichtende
 VCF-Bündelung, Ende der Dauerlizenzen. Für die meisten Provider, die
-heute vCD betreiben, ist der Verlängerungszyklus der Auslöser. Der
-Migrationspfad zur Cozystack Public Cloud Platform ist dokumentiert;
-wir haben ihn für mehrere Provider umgesetzt. Projektumfang: 6–18
-Monate, je nach Größe des Bestands.
+heute vCD betreiben, ist der Verlängerungszyklus der Auslöser. Die Ænix
+Public Cloud Platform ist wenige Wochen nach Bereitstellung der Hardware
+live; der Umzug eines bestehenden vCD-Bestands ist ein eigenes
+Migrationsprojekt, dessen Umfang das Assessment je nach Bestand festlegt.
 
 **Im Vergleich zu OpenStack:**
 
@@ -292,19 +301,23 @@ mit geringerer Marge ein hyperscaler-verwaltetes Cloud-Produkt wählen.
 Für Provider, zu denen die Public Cloud Platform passt:
 
 - **Discovery Call** (30 Min., kostenlos)
-- **Architektur-Assessment** (1–2 Wochen, Festpreis) — Inventar des
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**
+  (Festpreis, 14 Tage fokussiert oder 28 Tage vollständig) — Inventar des
   aktuellen Bestands, Zielarchitektur, Migrationsplan
-- **Pilot-Deployment** (1–3 Monate) — Aufbau der Cozystack-Plattform auf
-  Ihrer Hardware, Migration von 5–10 wohlgesonnenen Kunden, Validierung
-  der Abrechnung
+- **Plattform live und Pilotkohorte** — die Plattform ist mit dem
+  produktisierten Installer in wenigen Wochen auf Ihrer Hardware live;
+  Migration von 5–10 wohlgesonnenen Kunden, Validierung der Abrechnung
 - **Limited GA** (2–4 Monate) — 50–100 Kunden, stabilisierte
   Betriebsabläufe
 - **General Availability** — Start am offenen Markt
-- **Managed Retainer** (optional, fortlaufend) — Ænix übernimmt den
-  Tier-3-Betrieb unter SLA
+- **Support-Subskription** (fortlaufend) — eine der [veröffentlichten
+  Stufen](/de/preise/); Plus oder Enterprise für Abdeckung rund um die Uhr
 
-Typischer Zeitrahmen vom Projektstart bis zum Marktstart: 9–18 Monate,
-je nach Komplexität des Bestands und Bereitschaft des Teams.
+Wie lange der kommerzielle Start nach dem Go-live der Plattform dauert,
+hängt vom Migrationsumfang und der Bereitschaft des Teams ab. Programme
+im nationalen oder Betreibermaßstab mit mehreren Regionen rechnen mit
+3–6 Monaten Pilot und danach 9–18 Monaten bis zum vollen
+Multi-Region-Betrieb.
 
 ## Weiterführende Inhalte
 

@@ -100,6 +100,6 @@ No specific regulator + cost economics trigger + multi-tenant + customer-operate
 
 ## How to use the decision guide
 
-Walk through the flowchart. Note your answers. Architecture options narrow naturally.
+Answer the questions above in order and note your answers; the architecture options narrow naturally. The [sovereign AI decision guide](/resources/sovereign-ai-decision-guide/) walks through the same decisions in more depth.
 
 For specific engagement see **[Sovereign AI services](/solutions/sovereign-ai/)**.

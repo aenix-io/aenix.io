@@ -1,6 +1,7 @@
 ---
 title: "Private LLM Deployment — Praktischer Leitfaden für On-Premise-KI-Infrastruktur 2026"
-description: "Begleitung zur Souveränen KI-Page."
+seo_title: "Private LLM: Leitfaden für On-Premise-KI"
+description: "Private LLMs auf eigener Infrastruktur betreiben: drei typische Auslöser, die sechs Schichten eines Private-LLM-Stacks und die passenden Architekturmuster."
 date: "2026-05-01"
 cover_image: "/img/blog/covers/de/private-llm-deployment-leitfaden.jpg"
 author: "Aenix Team"
@@ -29,12 +30,12 @@ quiz:
         - { text: "Llama, Mistral, Qwen, DeepSeek, Phi und Gemma", correct: true }
         - { text: "Ausschließlich Derivate von GPT-4", correct: false }
       explanation: "Open-Weight-Modelle für den Produktionsbetrieb 2026: Llama, Mistral, Qwen, DeepSeek, Phi und Gemma. Die Auswahl hängt von der geforderten Sprache, dem Workload-Typ, den Lizenzbedingungen und dem angestrebten Leistungsniveau ab."
-    - q: "Welches architektonische Muster passt zu klassifizierten oder verteidigungsnahen Workloads?"
+    - q: "Welches architektonische Muster passt zu Workloads mit eingestuften Daten?"
       options:
         - { text: "Ein einzelner Inferenz-Cluster für einen Mandanten", correct: false }
         - { text: "Eine souveräne Bereitstellung ohne Netzanbindung nach außen", correct: true }
         - { text: "Ein Multi-Mandanten-Betrieb in der Public Cloud", correct: false }
-      explanation: "Vier Muster: ein Single-Tenant-Inferenz-Cluster für kleine Vorhaben, eine Multi-Mandanten-Inferenzflotte im Unternehmen, Inferenz plus Fine-Tuning plus RAG als vollständige KI-Plattform sowie die vom Netz getrennte souveräne Bereitstellung für klassifizierte, verteidigungsnahe oder besonders residenzstrenge Gesundheitsdaten."
+      explanation: "Vier Muster: ein Single-Tenant-Inferenz-Cluster für kleine Vorhaben, eine Multi-Mandanten-Inferenzflotte im Unternehmen, Inferenz plus Fine-Tuning plus RAG als vollständige KI-Plattform sowie die vom Netz getrennte souveräne Bereitstellung für eingestufte oder besonders residenzstrenge Gesundheitsdaten."
     - q: "Welcher Serving-Stack ist die Standardwahl für Inferenz?"
       options:
         - { text: "TGI", correct: false }
@@ -45,7 +46,7 @@ quiz:
 hreflang_en: /blog/2026/05/private-llm-deployment-guide/
 ---
 
-Begleitung zur **[Souveränen KI-Page](/de/loesungen/sovereign-ai)**.
+Dieser Beitrag vertieft das Thema unserer Seite **[Sovereign AI](/de/loesungen/sovereign-ai/)**.
 
 ## Drei Trigger-Profile für Private LLM
 
@@ -75,5 +76,5 @@ Strukturierte Bewertung → **[Platform Readiness Assessment](/de/dienstleistung
 
 ---
 
-*Ænix ist das Team hinter Cozystack.*
+*Ænix hat Cozystack entwickelt und gehört zu den Maintainern des CNCF-Projekts.*
 

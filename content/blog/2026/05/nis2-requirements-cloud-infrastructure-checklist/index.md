@@ -1,5 +1,6 @@
 ---
 title: "NIS2 requirements for cloud infrastructure — a checklist for in-scope entities in 2026"
+seo_title: "NIS2 requirements for cloud infrastructure explained"
 description: "NIS2 Articles 21, 23, 28 and 12 mapped to concrete cloud architecture controls, with a working checklist and the architectural failures that recur."
 date: "2026-05-18"
 cover_image: "/img/blog/covers/nis2-requirements-cloud-infrastructure-checklist.jpg"
@@ -23,12 +24,12 @@ quiz:
         - { text: "One month of becoming aware (final report deadline)", correct: false }
         - { text: "24 hours of becoming aware (early warning to CSIRT)", correct: true }
       explanation: "Three-stage process: early warning within 24h, incident notification within 72h, final report within one month. The 24h alert is usually the tightest constraint and forces investment in detection telemetry."
-    - q: "Cloud providers and datacenter providers are classified under NIS2 as which kind of entity?"
+    - q: "Where do cloud and data-centre providers sit under NIS2?"
       options:
-        - { text: "Essential entities under Digital Infrastructure (Annex I)", correct: true }
-        - { text: "Important entities under Digital Providers (Annex II)", correct: false }
+        - { text: "Annex I (Digital Infrastructure); essential or important depends on size (Article 3)", correct: true }
+        - { text: "Annex II (Digital Providers); always important regardless of size", correct: false }
         - { text: "Out of scope (covered by sector regulators instead)", correct: false }
-      explanation: "Annex I (essential entities) lists Digital Infrastructure including IXPs, DNS service providers, TLD name registries, cloud providers, datacenter providers, CDN providers, MSPs, MSSPs, and public electronic communications services."
+      explanation: "Annex I lists the sectors of high criticality, including Digital Infrastructure: IXPs, DNS service providers, TLD name registries, cloud providers, data-centre providers, CDN providers and public electronic communications. Under Article 3, large entities in these sectors are essential and medium-sized ones are important; DNS service providers and TLD registries are essential regardless of size."
     - q: "In Article 21 → architecture mapping, which control is named for service-to-service authentication?"
       options:
         - { text: "Username + password rotation (with PAM vaulting)", correct: false }
@@ -55,7 +56,7 @@ For in-scope entities — and the ICT third parties serving them — the archite
 
 NIS2 applies to two categories of entities, with sectoral scoping:
 
-### Essential entities (Article 3, Annex I)
+### Annex I — sectors of high criticality
 - Energy (electricity, gas, oil, district heating/cooling, hydrogen)
 - Transport (air, rail, water, road)
 - Banking
@@ -63,12 +64,12 @@ NIS2 applies to two categories of entities, with sectoral scoping:
 - Healthcare
 - Drinking water
 - Wastewater
-- **Digital infrastructure** — IXPs, DNS service providers, TLD name registries, cloud providers, datacenter providers, CDN providers, MSPs, MSSPs, public electronic communications networks/services
-- ICT services management (B2B)
+- **Digital infrastructure** — IXPs, DNS service providers, TLD name registries, cloud providers, datacenter providers, CDN providers, public electronic communications networks/services
+- ICT service management (B2B) — MSPs, MSSPs
 - Public administration (central + at member state's discretion regional)
 - Space
 
-### Important entities (Article 3, Annex II)
+### Annex II — other critical sectors
 - Postal and courier services
 - Waste management
 - Chemical (manufacture, production, distribution)
@@ -77,7 +78,7 @@ NIS2 applies to two categories of entities, with sectoral scoping:
 - **Digital service providers** — online marketplaces, search engines, social networking platforms
 - Research
 
-Entity classification depends on size thresholds (medium/large enterprise) and sector-specific criteria. Some entities are in scope regardless of size (e.g., DNS service providers, TLD registries, MSPs).
+Whether an entity is essential or important is decided by Article 3, not by the annex alone. Large entities in Annex I sectors are essential; medium-sized entities in Annex I sectors and entities in Annex II sectors are important, unless a member state designates them otherwise. Some entities are in scope regardless of size (e.g., DNS service providers and TLD registries, which are essential).
 
 ## Article 21 — risk management measures
 
@@ -171,7 +172,7 @@ For cloud architecture this requires:
 - Communication channels with national CSIRT / competent authority pre-established
 - Documentation discipline so the 72-hour and one-month reports are evidence-based
 
-## Article 28 — registration of essential / important entities
+## Article 3 and Article 27 — registration
 
 Many essential and important entities must register with their national competent authority. The architecture decision: ensure your registration data (including DNS, IP ranges, contact details) reflects what's actually deployed.
 

@@ -1,5 +1,6 @@
 ---
 title: "Cloud-native Infrastruktur für Forschung und Lehre — was Hochschulen 2026 wirklich brauchen"
+seo_title: "Cloud-native Infrastruktur für Hochschulen 2026"
 description: "Architekturmuster für Forschungs- und Lehrinfrastruktur an Hochschulen: die drei Aufgaben, GPU-Scheduling für Labore und die wiederkehrenden Fallstricke."
 slug: "cloud-native-forschung-lehre-infrastruktur-hochschulen"
 date: "2026-05-04"
@@ -167,7 +168,7 @@ Wer Forschungsinfrastruktur ohne Muster für Reproduzierbarkeit ab dem ersten Ta
 
 Ænix hat Cozystack-basierte Plattformen für Hochschulen und Forschungsinstitute in der EU und in Zentralasien gebaut. Die Besonderheiten der Zusammenarbeit:
 
-- **Vertraut mit öffentlicher Beschaffung** — RFI / RFP über die üblichen Kanäle in EU-Mitgliedstaaten und in Kasachstan
+- **Vertraut mit öffentlicher Beschaffung** — RFI / RFP über die üblichen Kanäle in der EU und in Zentralasien
 - **Kapazitätstransfer als Kernbestandteil** — die Wissensübergabe an die hochschuleigene IT ist ein ausdrückliches Ergebnis
 - **Schrittweise Zusammenarbeit**, wo sinnvoll abgestimmt auf Förderzyklen
 - **Konsortien mehrerer Einrichtungen** werden unterstützt

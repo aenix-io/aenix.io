@@ -1,5 +1,6 @@
 ---
 title: "Sieben Entscheidungen beim Entwurf einer Sovereign-AI-Architektur"
+seo_title: "Sovereign AI: sieben Architekturentscheidungen"
 slug: "sovereign-ai-architektur-entscheidungen"
 description: "Sieben Architekturentscheidungen hinter einem souveränen AI-Stack, wie sie ineinandergreifen und welche Kombinationen in realen Deployments immer wiederkehren."
 date: "2026-05-27"
@@ -101,6 +102,6 @@ Keine spezifische Aufsicht + Kostenwirtschaftlichkeit als Auslöser + mandantenf
 
 ## So nutzen Sie den Entscheidungsleitfaden
 
-Gehen Sie das Flussdiagramm Schritt für Schritt durch. Notieren Sie Ihre Antworten. Die Architekturoptionen grenzen sich dabei von selbst ein.
+Beantworten Sie die Fragen oben der Reihe nach und notieren Sie Ihre Antworten; die Architekturoptionen grenzen sich dabei von selbst ein. Der [Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/) geht dieselben Entscheidungen ausführlicher durch.
 
 Zur konkreten Zusammenarbeit siehe **[Sovereign AI](/de/loesungen/sovereign-ai/)**.

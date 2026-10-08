@@ -1,5 +1,6 @@
 ---
 title: "Developer-Experience-Plattformen — Self-Service-Pfade bauen, die tatsächlich genutzt werden"
+seo_title: "Developer Experience: Self-Service-Pfade, die wirken"
 description: "Die zehn Golden Paths, die sich am meisten lohnen, die fünf Merkmale, mit denen sie funktionieren, und die Architekturentscheidungen hinter Self-Service."
 slug: "developer-experience-plattform-self-service-pfade"
 date: "2026-05-09"

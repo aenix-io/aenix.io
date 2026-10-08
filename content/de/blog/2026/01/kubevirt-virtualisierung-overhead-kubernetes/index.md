@@ -1,5 +1,6 @@
 ---
 title: "KubeVirt: Die Wahrheit über den Virtualisierungs-Overhead in Kubernetes"
+seo_title: "KubeVirt: der echte Virtualisierungs-Overhead"
 description: "Wie viel Overhead bringen virtuelle Maschinen mit KubeVirt in Kubernetes wirklich? Eine Analyse in drei Bereichen: Compute, Storage und Netzwerk."
 slug: "kubevirt-virtualisierung-overhead-kubernetes"
 date: "2026-01-20"

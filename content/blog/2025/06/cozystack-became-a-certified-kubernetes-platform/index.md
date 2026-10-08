@@ -1,6 +1,6 @@
 ---
 title: "Cozystack became a Certified Kubernetes Platform"
-description: "We’re proud to announce: Cozystack has achieved Certified Kubernetes Platform status. Thanks to our community and especially to our good…"
+description: "Cozystack has achieved CNCF Certified Kubernetes Platform status. Thanks to the community and to our friends at Hidora."
 date: "2025-06-06"
 author: "Timur Tukaev"
 type: "announcement"
@@ -10,7 +10,7 @@ cover_image: "/img/blog/medium/cozystack-became-a-certified-kubernetes-platform/
 source_url: "https://medium.com/p/5638876bc2e0"
 ---
 
-![image](/img/blog/medium/cozystack-became-a-certified-kubernetes-platform/cover.png)
+![Cozystack Certified Kubernetes platform](/img/blog/medium/cozystack-became-a-certified-kubernetes-platform/cover.png)
 
 We’re proud to announce: Cozystack has achieved Certified Kubernetes Platform status. Thanks to our community and especially to our good friends from Hidora.
 

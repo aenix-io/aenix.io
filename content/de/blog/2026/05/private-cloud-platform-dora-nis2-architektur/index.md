@@ -1,5 +1,6 @@
 ---
 title: "Private Cloud Platform für die regulierte Cloud — DORA- und NIS2-Pflichten in der laufenden Architektur"
+seo_title: "DORA und NIS2 in der Private-Cloud-Architektur"
 description: "Wie sich IKT-Risiko- und Drittparteienpflichten aus DORA und die Maßnahmen nach NIS2 Artikel 21(2) auf eine belastbare Cloud-Architektur abbilden lassen."
 slug: "private-cloud-platform-dora-nis2-architektur"
 date: "2026-05-10"
@@ -32,18 +33,18 @@ quiz:
         - { text: "Einen zweiten, vertraglich gebundenen Backup-Hyperscaler", correct: false }
         - { text: "Erprobte Durchführbarkeit — eine Übung innerhalb der letzten 24 Monate", correct: true }
       explanation: "Muster 2 im Abschnitt zu Artikel 28 erklärt, dass die meisten Unternehmen einen Exit-Plan auf dem Papier haben, ihn aber nur wenige geübt haben — und die Aufsicht fragt inzwischen nach einer Übung innerhalb der letzten 24 Monate."
-    - q: "Was bedeutet das „rein beratende Supportmodell“ in einem Private-Cloud-Platform-Projekt?"
+    - q: "Welches Zugriffsmodell beschreibt der Artikel für Ænix-Engineers in einem Private-Cloud-Platform-Projekt?"
       options:
-        - { text: "Aenix-Engineers arbeiten über das Review von GitOps-PRs, nicht mit kubectl", correct: true }
-        - { text: "Aenix liefert nur schriftliche Empfehlungen und keine Engineering-Arbeit", correct: false }
+        - { text: "Die Bank entscheidet: Beratung und GitOps-PR-Review brauchen keinen Clusterzugriff, Fernzugriff gibt es nur mit ihrer Freigabe", correct: true }
+        - { text: "Ænix verlangt dauerhaften Root-Zugriff auf jeden Produktionscluster", correct: false }
         - { text: "Der Kunde muss für Änderungen am Cluster eine eigene Beratung beauftragen", correct: false }
-      explanation: "Rein beratend heißt: Aenix-Engineers brauchen keinen kubectl-Zugriff auf die Produktion; die Reviewer arbeiten über GitOps-PR-Reviews, und die Runbooks bleiben beim Kunden — entscheidend für Banken, bei denen ein Zugriff des Anbieters ein strukturelles Risiko darstellt."
-    - q: "Welche Gesamtdauer nennt der Artikel für ein Produktions-Deployment der Private Cloud Platform bei einer Tier-1-Bank mit vollständiger TLPT-Readiness?"
+      explanation: "Der Zugriff ist Sache des Kunden. Beratung, Runbooks und GitOps-PR-Reviews kommen ohne Zugriff auf die Produktion aus; wo die Support-Stufe es vorsieht, gibt es Fernzugriff auf die Cluster nur mit Freigabe des Kunden. Das ist für Banken entscheidend, bei denen ein Zugriff des Anbieters ein strukturelles Risiko darstellt."
+    - q: "Wie lange dauert laut Artikel der Aufbau der Private Cloud Platform nach dem Assessment?"
       options:
-        - { text: "6 bis 12 Monate", correct: false }
-        - { text: "18 bis 36 Monate", correct: true }
-        - { text: "12 bis 18 Monate", correct: false }
-      explanation: "Der Abschnitt zum Ablauf der Zusammenarbeit nennt 18–36 Monate für Tier-1-Banken mit vollständiger TLPT-Readiness und 12–18 Monate für mittelgroße regulierte Unternehmen mit engerem Umfang."
+        - { text: "1 bis 2 Wochen", correct: false }
+        - { text: "3 bis 12 Monate, je nach Umfang", correct: true }
+        - { text: "5 bis 10 Jahre", correct: false }
+      explanation: "Der Abschnitt zum Ablauf der Zusammenarbeit nennt ein Assessment über 14 oder 28 Tage und danach 3–12 Monate Aufbau je nach Umfang; bei großen Banken bestimmen TLPT-Zyklus und Abnahmen durch die Aufsicht zusätzlich den Start des Produktivbetriebs."
 ---
 
 
@@ -61,7 +62,7 @@ operative und organisatorische Maßnahmen“ in zehn aufgezählten
 Bereichen. DORA deckt weitgehend dasselbe Terrain auf anderem Weg ab:
 über den Rahmen für das IKT-Risikomanagement (Artikel 5–16,
 insbesondere Artikel 6), das Management und die Meldung von Vorfällen
-(Artikel 17–19) und das IKT-Drittparteienrisiko (Artikel 28–30). Ein
+(Artikel 17–23) und das IKT-Drittparteienrisiko (Artikel 28–30). Ein
 reguliertes Unternehmen, das unter beide Regelwerke fällt, betreibt
 nicht zwei Architekturen — es betreibt eine und weist sie zweimal nach.
 Die zehn Bereiche unten folgen der Aufzählung in NIS2; wo DORA dieselbe
@@ -137,12 +138,11 @@ Teil des Projekts liefern (separates Produkt).
 
 ### 8. Kryptografie
 
-Vom Kunden kontrollierte Schlüssel auf jeder Ebene — produktiver
-Storage, Backups, Observability-Daten, Audit-Logs. HSM-gestützt für
-sensible Datenklassen. Schlüsselrotation und Notfallzugriff sind
-dokumentiert. Die Private Cloud Platform unterstützt den External
-Secrets Operator mit dem HSM des Kunden als Backend (CloudHSM, Azure Key
-Vault im HSM-Modus, HSM-Appliance on-prem).
+Die Verschlüsselung ruhender Volumes ist pro Storage-Klasse verfügbar
+und wird beim Design aktiviert (Opt-in). Schlüsselverwaltung, Rotation
+und Notfallzugriff entwerfen und dokumentieren wir gemeinsam mit Ihnen.
+Secrets lassen sich über den External Secrets Operator aus dem
+Schlüsselspeicher des Kunden beziehen.
 
 ### 9. Personalsicherheit, Zugriffskontrolle und Asset-Management
 
@@ -215,31 +215,32 @@ Hardware und Bandbreite, nicht auf Plattformdienste. Die Abbildung der
 Unterauftragnehmer wird drastisch kürzer. Souveränität wird zu einer
 Frage der Architektur statt des Vertrags.
 
-## Was die Private Cloud Platform enthält, ISP und Public Cloud aber nicht
+## Was die Private Cloud Platform zusätzlich zur Public Cloud Platform mitbringt
 
-Mehrere Enterprise-spezifische Ebenen:
+Mehrere Ebenen speziell für regulierte Unternehmen:
 
 - **Air-Gap-Installation**, dokumentiert und als vollwertiger
   Deployment-Modus unterstützt. Updates laufen über kontrollierte Kanäle
   (Harbor-Mirror, Artefakt-Registry auf Kundenseite, manuelle
-  Freigabe). Im Einsatz im verteidigungsnahen Umfeld, für
-  Verschlusssachen und für die sensibelsten Bank-Workloads.
-- **Multi-DC aktiv/passiv oder aktiv/aktiv** — Enterprise wird in der
+  Freigabe). Geeignet für Umgebungen mit Verschlusssachen und für die
+  sensibelsten Bank-Workloads.
+- **Multi-DC aktiv/passiv oder aktiv/aktiv** — die Private Cloud Platform wird in der
   Regel in zwei oder mehr Rechenzentren ausgerollt, mit
   rechenzentrumsübergreifender Replikation, die auf die RTO-/RPO-Ziele
-  abgestimmt ist. Die Public Cloud Platform ist standardmäßig auf ein
-  Rechenzentrum ausgelegt.
-- **Rein beratendes Supportmodell** — Ænix-Engineers brauchen keinen
-  kubectl-Zugriff auf Ihren Produktionscluster. Die Reviewer arbeiten
-  über GitOps-PR-Reviews; die Runbooks bleiben auf Kundenseite.
+  abgestimmt ist. Ein VM-Failover zwischen Standorten ist ein geprobtes
+  Runbook, kein automatischer Schalter.
+- **Zugriff nach Ihrer Wahl** — Beratung, Runbooks und GitOps-PR-Reviews
+  brauchen keinen Zugriff auf Ihren Produktionscluster. Wo Ihre
+  Support-Stufe es vorsieht, gibt es Fernzugriff auf Ihre Cluster nur
+  mit Ihrer Freigabe.
   Entscheidend für Banken, bei denen ein Zugriff des Anbieters ein
   strukturelles Risiko darstellt.
-- **Integration des kundeneigenen HSM** — die Schlüssel verlassen nie
-  die HSM-Appliance des Kunden. Cozystack erreicht die Schlüssel nur
-  über attestierte, signierte Anfragen.
+- **Anbindung an den Schlüsselspeicher des Kunden** — Secrets kommen
+  über den External Secrets Operator aus dem System des Kunden; die
+  genaue Schlüsselarchitektur wird im Projekt festgelegt.
 - **Für Audits isolierte Umgebungen** — getrennte Cluster für
-  Produktion, Audit und forensische Kopie. Durchgängig
-  manipulationssicheres Logging.
+  Produktion, Audit und forensische Kopie. Audit-Logs lassen sich in
+  einen unveränderlichen Speicher des Kunden ausleiten.
 - **Compliance-Dokumentation als Lieferergebnis** — zum Projektabschluss
   erhält der Kunde einen Nachweiskatalog Kontrolle für Kontrolle,
   ausgerichtet an den Erwartungen der Aufsicht zu DORA und NIS2.
@@ -303,15 +304,16 @@ Schlechte Passung:
 - **Pilot** (3–6 Monate) — ein definierter Ausschnitt wird auf die Ænix
   Private Cloud Platform migriert, der Nachweiskatalog für die Aufsicht
   teilweise aufgebaut
-- **Vollständiger Aufbau der Private Cloud Platform** (12–30 Monate) —
+- **Vollständiger Aufbau der Private Cloud Platform** (3–12 Monate je nach Umfang) —
   Multi-DC-Deployment in Produktionsqualität mit vollständiger
   Compliance-Dokumentation
 - **Managed Retainer** (fortlaufend) — Beratung, Runbooks, Review von
   GitOps-PRs, Incident Response unter SLA
 
-Gesamtdauer vom Projektstart bis zur Produktion: 18–36 Monate für
-Tier-1-Banken mit vollständiger TLPT-Readiness; 12–18 Monate für
-mittelgroße regulierte Unternehmen mit engerem Umfang.
+Zeitrahmen: 30-minütiges Discovery-Gespräch, Assessment über 14 oder
+28 Tage, danach 3–12 Monate Aufbau je nach Umfang. Bei großen Banken
+bestimmen TLPT-Zyklus und Abnahmen durch die Aufsicht zusätzlich, wann
+der Produktivbetrieb beginnt.
 
 ## Weiterführende Inhalte
 
