@@ -1,6 +1,6 @@
 ---
 title: "Cozystack Becomes a CNCF Sandbox Project"
-description: "On February 28, members of the CNCF Technical Oversight Committee completed their voting and unanimously accepted Cozystack, a platform for…"
+description: "On 28 February 2025 the CNCF Technical Oversight Committee accepted Cozystack as a CNCF Sandbox project. What Cozystack is and what Sandbox means."
 date: "2025-03-13"
 author: "Andrei Kvapil"
 type: "announcement"
@@ -8,11 +8,12 @@ topics: ["Kubernetes", "Open Source", "CNCF", "Platform Engineering", "DevOps", 
 language: "en"
 cover_image: "/img/blog/medium/cozystack-becomes-a-cncf-sandbox-project/cover.png"
 source_url: "https://medium.com/p/3702b8906971"
+canonical: "https://medium.com/p/3702b8906971"
 ---
 
 On February 28, members of the CNCF Technical Oversight Committee [completed their voting](https://github.com/cncf/sandbox/issues/322) and unanimously accepted [Cozystack](https://cozystack.io), a platform for building private clouds and PaaS, into the CNCF Sandbox. The project is currently undergoing the [onboarding process](https://github.com/cncf/sandbox/issues/351). Let’s break down what this means in practice, what Cozystack is, and what the CNCF Sandbox represents.
 
-![image](/img/blog/medium/cozystack-becomes-a-cncf-sandbox-project/cover.png)
+![Cozystack accepted as a CNCF Sandbox project](/img/blog/medium/cozystack-becomes-a-cncf-sandbox-project/cover.png)
 
 ## What is Cozystack?
 
@@ -20,7 +21,7 @@ Cozystack is an open-source platform that enables the creation of a bare metal c
 
 Service and hosting providers, banks, SaaS solution vendors, medtech, fintech, AI/ML services, and other companies use Cozystack to offer customers managed services, managed Kubernetes, and databases that run directly on hardware, ensuring maximum performance and service stability. Additionally, Cozystack can be used to build geo-distributed clusters.
 
-The platform is developed and maintained by [Ænix](http://aenix.io). The core developer and creator of Cozystack is Andrey Kvapil, known in the engineering community by the nickname “kvaps.” He is an active contributor to Linstor, KubeVirt, Kamaji, Kubernetes, Cilium, and others.
+The platform is developed and maintained by [Ænix](https://aenix.io/). The core developer and creator of Cozystack is Andrey Kvapil, known in the engineering community by the nickname “kvaps.” He is an active contributor to Linstor, KubeVirt, Kamaji, Kubernetes, Cilium, and others.
 
 ## What is CNCF Sandbox, and What Does It Mean for Users?
 
@@ -49,9 +50,9 @@ Moreover, inclusion in the CNCF provides an opportunity to engage a broad engine
 - [Cozystack Website](https://cozystack.io)
 - [GitHub](https://github.com/cozystack)
 - [Telegram Community](https://t.me/cozystack)
-- [Slack Community](https://slack.k8s.io) (registration in the [Kubernetes Slack workspace](https://communityinviter.com/apps/kubernetes/community) required)
+- [Slack Community](https://slack.k8s.io) (registration in the [Kubernetes Slack workspace](https://slack.kubernetes.io/) required)
 - [Community Meeting Calendar](https://calendar.google.com/calendar/embed?src=cozystack.io)
-- [Cozystack Community Meetings Recordings](https://youtube.com/cozystack)
+- Cozystack Community Meetings recordings on YouTube
 - [Cozystack on CNCF Landscape](https://landscape.cncf.io)
 - [Cozystack in CNCF Sandbox](https://www.cncf.io/sandbox-projects/)
 - [Cozystack on Devstat](https://devstats.cncf.io)

@@ -1,5 +1,6 @@
 ---
 title: "Cozystack 1.3: Storage-Aware Scheduling, LINSTOR GUI, and VM Default Images"
+seo_title: "Cozystack 1.3: storage-aware scheduling, LINSTOR GUI"
 description: "Cozystack v1.3.0 is now available. The release also rolls up every fix shipped in the v1.2.1 → v1.2.4 patch line."
 date: "2026-04-27"
 author: "Timur Tukaev"
@@ -8,13 +9,14 @@ topics: ["Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR", "GPU"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images-3ad9b04a39de"
+canonical: "https://medium.com/@tym83/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images-3ad9b04a39de"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack 1.3: Storage-Aware Scheduling, LINSTOR GUI, and VM Default Images
 
-![image](/img/blog/medium/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images/cover.jpg)
+![Cozystack 1.3 release](/img/blog/medium/cozystack-1-3-storage-aware-scheduling-linstor-gui-and-vm-default-images/cover.jpg)
 
 Cozystack v1.3.0 is now available. The release also rolls up every fix shipped in the v1.2.1 → v1.2.4 patch line.
 
@@ -24,33 +26,33 @@ This cycle pushes the platform forward in five clear directions: smarter storage
 
 > *Cozystack is a comprehensive open-source platform for building bare-metal clouds to quickly deploy managed Kubernetes, database-as-a-service (DBaaS), application-as-a-service (AaaS), and virtual machines based on KubeVirt. With it, you can deploy Kafka, MongoDB, PostgreSQL, Cilium, Grafana, VictoriaMetrics, and other services with a single click. It also handles GPU workloads in both virtual machines and K8s clusters. Cozystack is a CNCF Sandbox project, distributed under the Apache 2.0 license.*
 
-### Main highlights
+## Main highlights
 
-#### Storage-aware scheduling via the LINSTOR extender
+### Storage-aware scheduling via the LINSTOR extender
 
 The cozystack-scheduler now consults a LINSTOR scheduler extender when placing pods that declare both a SchedulingClass and LINSTOR-backed PVCs. Pods are preferentially scheduled to nodes where their volume replicas already live, cutting cross-node replication traffic and lowering I/O latency for storage-heavy workloads — databases, object stores, VMs.
 
 It builds on the SchedulingClass system introduced in v1.2 and requires no tenant-side configuration. Operators can continue to mix storage locality with the existing data-center / hardware-generation constraints on SchedulingClass.
 
-#### LINSTOR GUI: managed web console for storage administration
+### LINSTOR GUI: managed web console for storage administration
 
 A new opt-in linstor-gui package deploys LINBIT’s linstor-gui alongside the LINSTOR controller with mTLS client authentication and a non-root security context. When OIDC is configured, an optional Keycloak-protected ingress (via oauth2-proxy) exposes the UI; access is restricted to members of the cozystack-cluster-admin group, consistent with host-cluster admin RBAC. The CLI workflow is unchanged — the GUI is strictly additive.
 
-#### VM Default Images: out-of-the-box VM provisioning
+### VM Default Images: out-of-the-box VM provisioning
 
 The new vm-default-images package ships a curated set of cluster-wide VM images (Ubuntu, Debian, CentOS Stream, and others) as pre-populated DataVolumes. Tenants can provision VMs against well-known base images without having to upload them first. The package is opt-in via the iaas bundle and defaults to replicated storage. The vm-disk chart also gains a new “disk” source type for cloning from existing vm-disks in the same namespace.
 
-#### Application-level observability: WorkloadsReady, Events, and S3 metering
+### Application-level observability: WorkloadsReady, Events, and S3 metering
 
 Applications now expose a WorkloadsReady condition on their status by aggregating their underlying WorkloadMonitor resources, giving operators a single readiness signal for Deployments, StatefulSets, DaemonSets, and PVCs. The dashboard gains a new Events tab showing namespace-scoped Kubernetes events per application.
 
 The WorkloadMonitor reconciler is extended to track COSI BucketClaim objects as first-class Workloads, and the bucket controller queries SeaweedFS bucket-size metrics from VictoriaMetrics — enabling S3 billing pipelines on par with Pods and PVCs.
 
-#### Cross-namespace VM backup restore and RestoreJob dashboard
+### Cross-namespace VM backup restore and RestoreJob dashboard
 
 The backup system now supports restoring VMInstance backups into a different namespace, with IP/MAC preservation and safe rename semantics. In-place backup and restore flows for VMDisk and VMInstance are improved across the board, and Velero failure messages now propagate to the Application status. The dashboard ships a complete RestoreJob experience: list view, details page, create form, and sidebar entry.
 
-### Also in v1.3.0
+## Also in v1.3.0
 
 - Stricter tenant-name validation — alphanumeric-only at the API level, plus a check that the computed ancestor-chain namespace fits the 63-character Kubernetes limit.
 - VMInstance subnets renamed to networks with a dashboard dropdown selector; the old field stays supported via migration 36.
@@ -60,7 +62,7 @@ The backup system now supports restoring VMInstance backups into a different nam
 - kube-ovn upgraded to v1.15.10 with a port-group regression fix that preserves VM LSP membership across live migration.
 - All bug fixes from v1.2.1 → v1.2.4 are rolled into v1.3.0.
 
-### Documentation worth knowing about
+## Documentation worth knowing about
 
 This release ships with a substantial documentation update. New and rewritten guides that pair directly with the v1.3 features:
 
@@ -74,15 +76,15 @@ This release ships with a substantial documentation update. New and rewritten gu
 - [Talos / talosctl / Cozystack version pairing matrix](https://cozystack.io/docs/v1.3/install/kubernetes/talm/) — definitive compatibility reference.
 - [Air-gapped tenant Kubernetes registry mirrors](https://cozystack.io/docs/v1.3/install/kubernetes/air-gapped/) — improved guidance for offline installations.
 
-### Governance
+## Governance
 
 We also welcomed two new maintainers in this cycle: Mattia Eleuteri (@mattia-eleuteri) — CSI, storage, networking and security — and Matthieu Robin (@matthieu-robin) — managed applications, platform quality, and benchmarking.
 
-### Release link
+## Release link
 
 - Cozystack v1.3.0 on GitHub: [https://github.com/cozystack/cozystack/releases/tag/v1.3.0](https://github.com/cozystack/cozystack/releases/tag/v1.3.0)
 
-### Join the community
+## Join the community
 
 - Telegram [group](https://t.me/cozystack)
 - Slack [group](https://kubernetes.slack.com/archives/C06L3CPRVN1) (Get invite at [https://slack.kubernetes.io](https://slack.kubernetes.io/))

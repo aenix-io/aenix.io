@@ -1,6 +1,7 @@
 ---
-title: "Cozystack v0.22 Release: telemetry, patched Talos v1.9.1, new entities Workload andWorkloadMonitor"
-description: "Main changes"
+title: "Cozystack v0.22: Telemetry, Patched Talos v1.9.1, and the New Workload and WorkloadMonitor Entities"
+seo_title: "Cozystack v0.22: telemetry and WorkloadMonitor"
+description: "Cozystack v0.22 adds Workload and WorkloadMonitor to show service health in the dashboard, opt-in telemetry, a patched Talos v1.9.1 and component updates."
 date: "2025-01-17"
 author: "Timur Tukaev"
 type: "announcement"
@@ -8,19 +9,20 @@ topics: ["Kubernetes", "Cozystack", "Talos", "Observability", "Storage", "etcd"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-%D0%B8-workloadmonitor-ff22e6d20b17"
+canonical: "https://medium.com/@tym83/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-%D0%B8-workloadmonitor-ff22e6d20b17"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack v0.22 Release: telemetry, patched Talos v1.9.1, new entities Workload andWorkloadMonitor
 
-### Main changes
+## Main changes
 
 In the latest release was added cozystack-controller and new entities: Workload and WorkloadMonitor, which allow monitoring the state of pods managed by operators and evaluating the service level according to predefined rules.
 
 Since different applications in Cozystack are managed by different operators, we decided to create a unified format for displaying the status of each service.
 
-#### It works as follows:
+### It works as follows:
 
 During an application’s deployment, a WorkloadMonitor is deployed alongside it, which watches the state of pods by selector. As soon as the selector finds a pod, a new entity is created for it: Workload, which displays the role of each pod and its status.
 
@@ -34,13 +36,13 @@ For Kubernetes applications like Postgres, Monitoring, VirtualMachine, VMInstanc
 
 The Cozystack dashboard now displays the number of application replicas and the service level for each workload group.
 
-![image](/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/02.png)
+![Cozystack dashboard showing replicas and service level per workload](/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/02.png)
 
-### Telemetry
+## Telemetry
 
 Client and server telemetry have been implemented and [released](https://github.com/aenix-io/cozystack-telemetry-server) under the Apache License 2.0. Metrics collection has been implemented in accordance with the [LF Telemetry Data Collection and Usage Policy](https://www.linuxfoundation.org/legal/telemetry-data-policy) and can be easily disabled with the single configuration option `telemetry-enabled:false` in Cozystack. In future releases, a public dashboard with the collected information is planned. See [documentation](https://cozystack.io/docs/telemetry/) for more details.
 
-### Other changes
+## Other changes
 
 - The cluster-autoscaler component for Kubernetes and its configuration have been updated, allowing for more efficient scaling of clusters both up and down.
 - [MAINTAINERS](https://github.com/aenix-io/cozystack/blob/main/MAINTAINERS.md) file has been updated, listing project contributors and their areas of responsibility.
@@ -53,11 +55,11 @@ Client and server telemetry have been implemented and [released](https://github.
 - In the Cozystack configuration, the option extra-keycloak-redirect-uri-for-dashboard has been added, allowing you to configure additional redirect URLs for Keycloak.
 - Fixed a VMInstance bug that was blocking the connection of VMdisks to virtual machines.
 
-![image](/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/cover.png)
+![Grafana dashboard for KubeVirt](/img/blog/medium/cozystack-v0-22-release-telemetry-patched-talos-v1-9-1-new-entities-workload-/cover.png)
 
 Grafana dashboard for KubeVirt
 
-### Components updates
+## Components updates
 
 - Flux Operator upgraded from v0.10.0 to v0.12.0.
 - Flux Instance chart updated from v0.9.0 to v0.12.0.
@@ -68,7 +70,7 @@ Grafana dashboard for KubeVirt
 
 *For more details, check out the project on ***[GitHub](https://github.com/aenix-io/cozystack/releases/tag/v0.22.0)*.*
 
-### Feel free to join our community spaces
+## Feel free to join our community spaces
 
 - [Telegram](https://t.me/cozystack)
 - [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1)

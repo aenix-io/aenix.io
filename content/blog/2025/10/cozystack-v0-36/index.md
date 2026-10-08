@@ -1,5 +1,6 @@
 ---
-title: "😜 Cozystack v0.36:"
+title: "Cozystack v0.36: Server-side Encryption for S3, Kube-OVN Cluster Health Monitor and REST API Documentation"
+seo_title: "Cozystack v0.36: S3 encryption and Kube-OVN health"
 description: "The new version of Cozystack focuses on the stability, observability, and flexible configuration of managed applications."
 date: "2025-10-01"
 author: "Timur Tukaev"
@@ -8,61 +9,62 @@ topics: ["Cozystack", "Talos", "Multi-tenancy", "Observability", "Storage"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-36/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-36-dfa5a10bd86a"
+canonical: "https://medium.com/@tym83/cozystack-v0-36-dfa5a10bd86a"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### 😜 Cozystack v0.36: Server-side Encryption for S3, Kube-OVN Cluster Health Monitor, REST API Documentation
 
 The new version of Cozystack focuses on the stability, observability, and flexible configuration of managed applications.
 
-![image](/img/blog/medium/cozystack-v0-36/02.jpg)
+![Cozystack v0.36 release](/img/blog/medium/cozystack-v0-36/02.jpg)
 
-### 👉 Major Features and Improvements
+## Major Features and Improvements
 
-#### Per-Namespace Resource Limits for Tenants
+### Per-Namespace Resource Limits for Tenants
 
 Resource management for Cozystack tenants has received a final patch and is now graduated to a stable feature. Platform administrators can define explicit CPU, memory, and storage limits for each tenant’s namespace via the tenant specification. This prevents any single tenant from consuming more than their share of cluster resources, ensuring cluster stability and a guaranteed service level for each tenant.
 
-#### Kube-OVN Cluster Health Monitor
+### Kube-OVN Cluster Health Monitor
 
 A new component called the Kube-OVN Plunger continuously monitors the health of the Kube-OVN network’s central control cluster. This external agent gathers OVN cluster status and consensus information, exposing Prometheus metrics and live events stream via SSE. As a result, it provides much better visibility of the virtual network layer and helps maintain a reliable and observable network in Cozystack. This change opens the road to automated Kube-OVN database operations and recovery in specific corner cases.
 
-#### Configurable CoreDNS Addon for Kubernetes
+### Configurable CoreDNS Addon for Kubernetes
 
 Cozystack introduces a dedicated CoreDNS addon for managing cluster DNS with greater flexibility. CoreDNS is now deployed via a Helm chart and can be tuned through custom values in the cluster specification, including autoscaling, replica count, and adjusting service IP. CoreDNS can now be configured in the dashboard and using Cozystack API.
 
-#### Granular SeaweedFS Service Configuration
+### Granular SeaweedFS Service Configuration
 
 The SeaweedFS S3 storage service in Cozystack is now far more configurable at a component level. The Helm chart for SeaweedFS now includes independent configuration for each component and its resources. It includes the master nodes, volume servers with support for multiple zones, filers, the backing database, and the S3 gateway. Administrators can set per-component parameters such as the number of replicas, available CPU, memory, and storage size.
 
-#### Server-side Encryption for S3
+### Server-side Encryption for S3
 
 Cozystack v0.36.0 includes SeaweedFS 3.97, bringing support for server-side encryption of S3 buckets (SSE-C, SSE-KMS, and SSE-S3).
 Breaking change: upon updating Cozystack, SeaweedFS will be updated to a newer version, and the services specification will be converted to the new format.
 
-#### Custom Resource Profiles for Ingress Controller
+### Custom Resource Profiles for Ingress Controller
 
 NGINX controller is now configurable on a per-replica basis. Configurations include the ingress controller pods’ CPU and memory requests/limits, either with direct values or using one of the available presets.
 
-#### Built-in LLDP-Based Neighbor Discovery in Talos
+### Built-in LLDP-Based Neighbor Discovery in Talos
 
 Cozystack now includes the LLDPD extension in its Talos OS image, enabling Link Layer Discovery Protocol (LLDP) out of the box. This means each node can automatically discover and advertise its network neighbors and topology without any manual setup.
 
-#### Use external IP for Egress Traffic in VMs
+### Use external IP for Egress Traffic in VMs
 
 When a virtual machine has an external IP assigned to it, it will now always use it for egress traffic, independently of the external method used.
 
-![image](/img/blog/medium/cozystack-v0-36/cover.png)
+![Cozystack v0.36 new features](/img/blog/medium/cozystack-v0-36/cover.png)
 
-### 🔔 New components versions
+## New components versions
 
 - Update LINSTOR to v1.31.3
 - Update SeaweedFS to v3.97
 - Update Kube-OVN to 1.14.5
 - Replace Bitnami images with alternatives in all charts
 
-### 📚 New Documentation
+## New Documentation
 
 - [REST API Reference](https://cozystack.io/docs/cozystack-api/rest/)
 - [How to add a node to a Cozystack cluster](https://cozystack.io/docs/operations/cluster/scaling/)
@@ -72,7 +74,7 @@ When a virtual machine has an external IP assigned to it, it will now always use
 
 All changes: [v0.36.0](https://github.com/cozystack/cozystack/releases/tag/v0.36.0), [v0.36.1](https://github.com/cozystack/cozystack/releases/tag/v0.36.1), [v0.36.2](https://github.com/cozystack/cozystack/releases/tag/v0.36.2)
 
-### Join the community
+## Join the community
 
 - [Telegram](http://t.me/cozystack) group
 - [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) group (Get invite at [https://slack.kubernetes.io](https://slack.kubernetes.io))

@@ -1,6 +1,7 @@
 ---
 title: "kubectl-node-shell plugin updated to v1.11.0"
-description: "We have updated the kubectl-node-shell plugin to v1.11.0."
+seo_title: "kubectl-node-shell plugin v1.11.0 released"
+description: "kubectl-node-shell v1.11.0 opens a shell on any cluster node through the Kubernetes API, with new namespace options, image pull secrets and volume mounts."
 date: "2024-12-02"
 cover_image: "/img/blog/covers/kubectl-node-shell-plugin-updated-to-v1110.jpg"
 author: "Andrei Kvapil"
@@ -8,6 +9,7 @@ type: "announcement"
 topics: ["Kubernetes", "DevOps", "Open Source", "Cloud"]
 language: "en"
 source_url: "https://medium.com/p/3c3bb0a77f25"
+canonical: "https://medium.com/p/3c3bb0a77f25"
 ---
 
 We have updated the kubectl-node-shell plugin to [v1.11.0](https://github.com/kvaps/kubectl-node-shell/releases/tag/v1.11.0).

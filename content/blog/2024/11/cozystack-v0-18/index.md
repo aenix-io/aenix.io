@@ -1,6 +1,7 @@
 ---
-title: "Cozystack v0.18"
-description: "🔥 Public API for Cozystack"
+title: "Cozystack v0.18: Public API Server, Metrics and Logs from Tenant Clusters"
+seo_title: "Cozystack v0.18: public API server and tenant logs"
+description: "Cozystack v0.18 adds its own Kubernetes API server for granular user access, metrics and log collection from tenant clusters, and Talos Linux v1.8.2."
 date: "2024-11-07"
 author: "Timur Tukaev"
 type: "announcement"
@@ -8,13 +9,14 @@ topics: ["Kubernetes", "Cozystack", "Talos", "Multi-tenancy", "Observability"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-18/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-v0-18-d724cd6d2fa1"
+canonical: "https://medium.com/@tym83/cozystack-v0-18-d724cd6d2fa1"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
----
 
-### Cozystack v0.18 Release: Public API Server, Metrics and Logs from Tenant Clusters, and Other Improvements
 
-### 🔥 Public API for Cozystack
+## Public API for Cozystack
 
 This is the biggest and most anticipated update for us. Cozystack now includes its own Kubernetes API server, which automatically translates all requests to custom resources into HelmReleases.
 
@@ -24,13 +26,13 @@ However, note that the dashboard still interacts with HelmReleases directly, so 
 
 A demo of the API server and a guide on how to work with it can be found in the recording of the latest Cozystack community meeting (use the timestamps in the video description as a guide): [Watch on YouTube](https://www.youtube.com/watch?v=yn1ryGRtTGE).
 
-![image](/img/blog/medium/cozystack-v0-18/cover.jpg)
+![Cozystack v0.18 public API server](/img/blog/medium/cozystack-v0-18/cover.jpg)
 
-### Configuring Metrics and Logs Collection from Tenant Clusters
+## Configuring Metrics and Logs Collection from Tenant Clusters
 
 In the Kubernetes configuration for tenant clusters, there’s now an option to enable the monitoring agents addon. When enabled, all metrics and logs are automatically redirected to the monitoring system deployed within the user’s tenant space.
 
-### Other Changes
+## Other Changes
 
 - Database operators have been made optional components in the distro-full and distro-hosted editions.
 - Talos Linux has been updated to version v1.8.2.

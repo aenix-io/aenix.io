@@ -1,6 +1,7 @@
 ---
-title: "Ænix Secures $300K Seed Investment from Prospective Technologies to Accelerate Open-Source Cloud…"
-description: "Ænix, the company behind the open-source Cozystack platform, today announced a $300,000 seed investment round by Prospective Technologies…"
+title: "Ænix Secures $300K Seed Investment from Prospective Technologies to Accelerate Open-Source Cloud Innovation and the Cozystack Platform"
+seo_title: "Ænix secures $300K seed investment"
+description: "Ænix, the company that created the open-source Cozystack platform, announces a $300,000 seed investment from Prospective Technologies (April 2025)."
 date: "2025-04-11"
 cover_image: "/img/blog/medium/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud/01.jpg"
 author: "Timur Tukaev"
@@ -8,20 +9,19 @@ type: "announcement"
 topics: ["Cozystack", "Sovereignty", "AI/ML", "Financial Services", "CNCF", "Compliance"]
 language: "en"
 source_url: "https://medium.com/@tym83/%C3%A6nix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud-4f4ea88b08c1"
+canonical: "https://medium.com/@tym83/%C3%A6nix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud-4f4ea88b08c1"
 ---
 
 
----
 
-### **Ænix Secures $300K Seed Investment from Prospective Technologies to Accelerate Open-Source Cloud Innovation and Cozystack Platform**
 
-****[Ænix](http://aenix.io), the company behind the open-source **Cozystack** platform, today announced a $300,000 seed investment round by ****[Prospective Technologies](https://pt-vc.com/), a venture capital firm known for backing cutting-edge developer tools and early-stage [tech companies](https://pt-vc.com/portfolio/), including** imgproxy, Qase, and DBeaver**.
+****[Ænix](https://aenix.io/), the company behind the open-source **Cozystack** platform, today announced a $300,000 seed investment round by ****[Prospective Technologies](https://pt-vc.com/), a venture capital firm known for backing cutting-edge developer tools and early-stage [tech companies](https://pt-vc.com/portfolio/), including** imgproxy, Qase, and DBeaver**.
 
-![image](/img/blog/medium/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud/01.jpg)
+![Ænix seed investment from Prospective Technologies](/img/blog/medium/aenix-secures-300k-seed-investment-from-prospective-technologies-to-accelerate-open-source-cloud/01.jpg)
 
 This funding will fuel the growth of **Cozystack**, an open-source platform that simplifies the deployment and management of **virtual machines, containers, databases, bare-metal applications, and AI workloads**. Designed for enterprises and service providers seeking **digital sovereignty**, Cozystack provides modern APIs to manage on-premises hardware, enhancing security and compliance for regulated industries.
 
-In March 2024, Ænix [contributed](https://blog.aenix.io/cozystack-has-officially-been-included-in-the-cncf-landscape-07cc60c9e0eb) Cozystack to the ****[Cloud Native Computing Foundation](https://www.cncf.io/projects/cozystack/)** (CNCF)**, ensuring its long-term commitment to open-source development under the Linux Foundation’s governance. This move guarantees that organizations worldwide can rely on Cozystack as a vendor-neutral solution for building **secure, compliant, and scalable cloud infrastructure**.
+In March 2024, Ænix [contributed](/blog/2024/09/cozystack-has-officially-been-included-in-the-cncf-landscape/) Cozystack to the ****[Cloud Native Computing Foundation](https://www.cncf.io/projects/cozystack/)** (CNCF)**, ensuring its long-term commitment to open-source development under the Linux Foundation’s governance. This move guarantees that organizations worldwide can rely on Cozystack as a vendor-neutral solution for building **secure, compliant, and scalable cloud infrastructure**.
 
 Ænix monetizes through **Ænix Enterprise** for Cozystack, a premium subscription offering enterprise features, support with guaranteed SLA and professional services. The new funding will accelerate product development, expand the team, and drive adoption among regulated sectors like finance, healthcare, and government.
 
@@ -37,11 +37,11 @@ With this funding, Ænix plans to:
 
 For more information about Ænix and Cozystack, visit [https://aenix.io](https://aenix.io) or contact [info@aenix.io](mailto:info@aenix.io).
 
-#### **About Ænix**
+## About Ænix
 
 Ænix builds open-source PaaS solutions that enable companies and service providers to deploy sovereign cloud infrastructure. Cozystack, maintained by Ænix, simplifies running VMs, containers, databases, and AI workloads while ensuring compliance and security.
 
-#### **About Prospective Technologies**
+## About Prospective Technologies
 
 Prospective Technologies invests in developer tools and early-stage infrastructure software, backing projects like imgproxy, Qase, and DBeaver. The firm supports open-source innovation and scalable technology solutions.
 

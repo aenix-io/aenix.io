@@ -1,5 +1,6 @@
 ---
-title: "Cozystack v0.11"
+title: "Cozystack v0.11: S3 Buckets, Better Tenant Isolation and UI Enhancements"
+seo_title: "Cozystack v0.11: S3 buckets and tenant isolation"
 description: "The Cozystack v0.11 release is now available for download, installation, or updating current installations."
 date: "2024-08-15"
 cover_image: "/img/blog/medium/cozystack-v0-11/01.jpg"
@@ -8,16 +9,17 @@ type: "announcement"
 topics: ["Kubernetes", "Cozystack", "Cilium", "Talos", "LINSTOR", "Multi-tenancy"]
 language: "en"
 source_url: "https://medium.com/@tym83/cozystack-v0-11-76ab57a84842"
+canonical: "https://medium.com/@tym83/cozystack-v0-11-76ab57a84842"
+companion_landing: "/products/cozystack-enterprise-support/"
+companion_label: "Need SLA-backed support for Cozystack? See enterprise support →"
 ---
 
 
----
 
-### Cozystack v0.11 Open Source platform has been released: S3, improved tenant isolation, UI enhancements, and other features
 
 The [Cozystack v0.11 release](https://github.com/aenix-io/cozystack/releases/tag/v0.11.0) is now available for download, installation, or updating current installations.
 
-![image](/img/blog/medium/cozystack-v0-11/01.jpg)
+![Cozystack v0.11 release announcement banner](/img/blog/medium/cozystack-v0-11/01.jpg)
 
 **Key changes:**
  — **Added S3 support.** Implemented the basic SeaweedFS functionality in Cozystack. Developed a Kubernetes-COSI driver for automatic S3 bucket provisioning. Added support for automatic volume resizing in the SeaweedFS chart.

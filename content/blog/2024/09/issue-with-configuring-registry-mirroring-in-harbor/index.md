@@ -1,6 +1,6 @@
 ---
 title: "Issue with Configuring Registry Mirroring in Harbor"
-description: "Today, there was an interesting case with setting up registry mirroring in Harbor. Harbor allows you to create a proxy repository for…"
+description: "Harbor proxies docker.io, ghcr.io and other registries only as separate projects, which breaks Docker registry mirrors. How we worked around it."
 date: "2024-09-10"
 author: "Andrei Kvapil"
 type: "article"
@@ -10,7 +10,7 @@ cover_image: "/img/blog/medium/issue-with-configuring-registry-mirroring-in-harb
 source_url: "https://medium.com/p/dd200311885f"
 ---
 
-![image](/img/blog/medium/issue-with-configuring-registry-mirroring-in-harbor/cover.jpg)
+![Registry mirroring in Harbor](/img/blog/medium/issue-with-configuring-registry-mirroring-in-harbor/cover.jpg)
 
 Today, there was an interesting case with setting up registry mirroring in Harbor. Harbor allows you to create a proxy repository for popular services like docker.io, ghcr.io, quay.io, and gcr.io.
 

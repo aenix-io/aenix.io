@@ -1,6 +1,7 @@
 ---
 title: "Platformize It! Part 1: Platform Approach, Core of a Modern Platform, and APIs"
-description: "I have spent many years dreaming about building my own cloud platform. After several attempts within different companies, I finally…"
+seo_title: "Platformize It, part 1: the platform approach"
+description: "Andrei Kvapil on the platform approach behind Cozystack: why Kubernetes is the base and how Helm, operators and one API work together."
 date: "2026-02-09"
 author: "Andrei Kvapil"
 type: "article"
@@ -13,7 +14,7 @@ source_url: "https://medium.com/p/3287e55938fe"
 
 I have spent many years dreaming about building my own cloud platform. After several attempts within different companies, I finally launched my own project, Cozystack. In this article, I am going to share our experience and our approach to building a modern infrastructure platform around Kubernetes and its API. I’ll dive into the “platform approach” — what platform is, how it works, who it’s for, and how to get one off the ground. Plus, I’ll compare different architectures, explain why we went with K8s, and show you how we put together a production-grade solution based on it.
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/cover.jpg)
+![Platformize It, part 1](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/cover.jpg)
 
 After reading this series, you will be able to build your own robust and modern solution — whether you adopt my patterns, use them as a reference, or reject them altogether. Regardless, it will be easier than building a platform from scratch; and it is always insightful to look into the inner workings of other projects and understand their underlying logic. Cozystack is always growing and changing, so what I’m describing here is where we stand as of Fall 2025. We’ve already moved away from some of our early architectural choices (we’re actually overhauling the platform’s “engine” right now; I’ll give an update on that once 1.0 is out).
 
@@ -29,7 +30,7 @@ Imagine you provide services to multiple clients, each needing to run their own 
 
 Driven by these needs, you set out to build a comprehensive turnkey solution, delivering a pre-integrated suite of managed services as a boxed platform.
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/01.png)
+![Managed services a turnkey platform delivers to customers](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/01.png)
 
 ## The Technology Stack Challenge
 
@@ -37,13 +38,13 @@ Before you can commence building platform services, you must first establish the
 
 The result is a complex “tower” of technologies:
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/02.png)
+![The tower of technologies behind a cloud platform](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/02.png)
 
 What’s more, building and running your own infrastructure and platform demands deep expertise across a large array of technologies. You are responsible for supporting every component you ship, even as each layer introduces its own bugs, complexity, and unexpected updates. That means you’ll need a significant effort to support your solution; otherwise, this tower will crumble and fall.
 
 How can you avoid this? You can offload specific layers of the stack using the “as-a-service” model. The chart below shows various options for sharing responsibility across the platform stack.
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/03.png)
+![Shared-responsibility options from on-site to as-a-service](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/03.png)
 
 - On-site: The most demanding approach, where you bear responsibility for the entire stack — from infrastructure to services. This is our starting point.
 - Infrastructure as a service (IaaS): The provider manages networking, storage, servers, and virtualization. You operate the virtual machines, but still have to handle OS management and infrastructure services.
@@ -58,7 +59,7 @@ Now you have to take care of the infrastructure and platform stack. Let’s expl
 
 **OpenStack** is often the first candidate to consider. However, when you try to adopt it, you’ll find that it’s not easy to support at all due to complex architecture and a ton of asynchronous APIs. You’ll need a dedicated development team to maintain OpenStack and all of its components:
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/04.png)
+![Platform stack options: OpenStack, Docker and Kubernetes](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/04.png)
 
 **Docker** is another popular alternative. It offers a vast library of containerized images that are easy to deploy with a simple `docker run <image>`. While this works for standalone instances, Docker lacks the tools required for high availability and multi-node applications — the very features customers expect from a managed platform.
 
@@ -68,7 +69,7 @@ Finally, there’s **Kubernetes**, which offers a wide variety of features for m
 
 As a cherry on top, Kubernetes features many ready-to-use operators. An operator is a controller running in Kubernetes that manages the lifecycle of an application. Operators perform the imperative work required for each task — deploying, upgrading, replicating, restoring from backup, and more. They do this in the best possible way as they accumulate the experience of developers of each particular software. Users no longer need to deal with low-level operational burden; instead, they interact with a high-level declarative API. Users define the desired state of the application, and the operator works to reconcile the actual state to match it.
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/05.png)
+![Kubernetes operator capability levels](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/05.png)
 
 Here are some of the operators we use at Cozystack. Each of them is at least level-3 operator:
 
@@ -183,7 +184,7 @@ As you can see, no single option is a complete solution; we still have to use op
 
 Cozystack employs a hybrid approach: Helm serves as the user-facing API, while operators handle the full lifecycle in the backend. Users specify parameters and deploy Helm charts to Kubernetes. The charts then create resources of various kinds (`kind:`) that operators manage. As the user-facing API, `values.yaml` exposes only tenant-modifiable parameters.
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/06.png)
+![Hybrid approach: Helm as the user API, operators in the backend](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/06.png)
 
 The user-facing part of this flow is handled by Flux CD, a Helm operator for Kubernetes featuring the HelmRelease Custom Resource. Users define their deployments in a HelmRelease, and Flux CD reconciles it to deploy the application.
 
@@ -191,7 +192,7 @@ For example, to deploy a virtual machine, a user creates a resource with `kind: 
 
 It’s the same deal with Kafka: you start with a `kind: HelmRelease` and end up with a `kind: Kafka` instance managed by the [Kafka operator](https://github.com/strimzi/strimzi-kafka-operator). This creates a unified API and a streamlined process for deploying all sorts of different applications:
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/07.png)
+![From a HelmRelease to a Kafka resource managed by its operator](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/07.png)
 
 Let’s look at two examples below: one for Redis and one for MySQL. As you examine them, you’ll notice a few key things they have in common and where they differ:
 
@@ -253,7 +254,7 @@ spec:
 
 With our hybrid design in place, we now have a unified API for deploying applications, which originally exposed very different operator APIs. Now that we’ve learned how it works under the hood, let’s see how users interact with it. This unified API is what allows the platform to render all these applications in a dashboard, complete with a name, metadata, and an icon for each Helm chart. Cozystack initially used Kubeapps for this, but we’re moving to a new frontend (more on that in future posts).
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/08.png)
+![Unified API for deploying applications in Cozystack](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/08.png)
 
 When a user is ready to deploy an application, they create a single YAML file with parameters. Here’s what that looks like:
 
@@ -292,7 +293,7 @@ With multiple users, granting everyone access to the management cluster is not a
 
 Our solution was to introduce higher-level API objects that mirror application kinds for the underlying resources (Redis, Postgres, VirtualMachine, Kubernetes, etc.). With these in place, you can devise a granular RBAC rule that, e. g., grants access to Redis and Postgres while denying access to VirtualMachine and Kubernetes.
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/09.png)
+![Higher-level API objects that mirror application kinds](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/09.png)
 
 ## State Synchronization
 
@@ -310,7 +311,7 @@ Our alternative was to build a stateless API server that leverages existing in-c
 
 Building a custom API server is a significant undertaking. We’ll dive into how to extend the Kubernetes API and detail the specific solution we implemented in our next article. But first, let’s explore our solution from a user’s perspective and see how they interact with it.
 
-![image](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/10.png)
+![Custom API server extending the Kubernetes API](/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/10.png)
 
 ## What Our API Looks Like in Action
 
@@ -492,7 +493,7 @@ We welcome feedback and pull requests: [https://github.com/cozystack/cozypkg](ht
 ### Join the Cozystack Community
 
 - [Telegram](https://t.me/cozystack)
-- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (in the [Kubernetes Slack](https://communityinviter.com/apps/kubernetes/community))
+- [Slack](https://kubernetes.slack.com/archives/C06L3CPRVN1) (in the [Kubernetes Slack](https://slack.kubernetes.io/))
 - [Community Meeting Calendar](https://calendar.google.com/calendar?cid=ZTQzZDIxZTVjOWI0NWE5NWYyOGM1ZDY0OWMyY2IxZTFmNDMzZTJlNjUzYjU2ZGJiZGE3NGNhMzA2ZjBkMGY2OEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 ### See also
