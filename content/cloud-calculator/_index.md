@@ -8,6 +8,7 @@ images: ["img/og/og-cloud-calculator.jpg"]
 indexable: true
 page_type: "page"
 language: "en"
+hreflang_de: "/de/cloud-rechner/"
 date: 2026-08-21
 lastmod: 2026-08-21
 primary_keyword: "cloud repatriation calculator"
