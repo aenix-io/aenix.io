@@ -33,7 +33,7 @@ faq:
   - q: "How is this different from running open-source Cozystack ourselves?"
     a: "Cozystack is the engine, and it stops where the cloud business begins. Public Cloud Platform adds the operator surface: billing back-end and front-end, payment integrations, WHMCS modules, a brandable customer portal, service-creation wizards, tenant lock and suspension, a productized installer, multi-region control plane, enterprise SLA and dedicated support. The billing system and WHMCS integration are proprietary Ænix modules; the rest of the platform stays open-source Cozystack. Building those surfaces yourself is years of engineering, and none of it differentiates you from another provider."
   - q: "How is it different from Ænix Private Cloud Platform?"
-    a: "Who consumes the capacity. Public Cloud Platform is for operators selling cloud to customers who are not them, so it carries billing, payments, resale and customer-facing portals. Private Cloud Platform is for organizations running cloud for their own business units, so it carries DORA / NIS2 architecture, customer-controlled keys and audit-ready logging instead. Same Cozystack foundation, same APIs — you can run both, and organizations that sell cloud and also run regulated internal workloads frequently do."
+    a: "Who consumes the capacity. Public Cloud Platform is for operators selling cloud to customers who are not them, so it carries billing, payments, resale and customer-facing portals. Private Cloud Platform is for organizations running cloud for their own business units, so it carries DORA- and NIS2-aligned architecture, encryption and audit logging designed for its regulator instead. Same Cozystack foundation, same APIs — you can run both, and organizations that sell cloud and also run regulated internal workloads frequently do."
   - q: "Can it coexist with our existing VMware or OpenStack estate?"
     a: "Yes, and that is the normal path. The platform is multi-hypervisor: it orchestrates native KubeVirt VMs while integrating with existing VMware, OpenStack, OpenNebula and OpenShift footprints, so you consolidate one cohort at a time instead of running a big-bang migration. VMs move from VMware or OpenStack with built-in migration tooling, and Ænix has done cohort-based VMware exits in production."
   - q: "Do we need our own 24/7 operations team?"
@@ -150,7 +150,7 @@ The honest read: if VPS resale is your whole business and the margin satisfies y
 The three Ænix platforms are the same engine with different surfaces switched on, so they compose rather than compete. Nothing here is a separate installation.
 
 - **[AI Platform](/products/ai-platform/)** — multi-tenant GPU scheduling, fractional GPU sharing, model serving, vector databases. Providers sell this as GPU-as-a-Service on the hardware they already have.
-- **[Private Cloud Platform](/products/private-cloud-platform/)** — DORA / NIS2 architecture, customer-controlled keys, audit-ready logging. Relevant when you are a regulated entity yourself, or when you run internal workloads next to the ones you sell.
+- **[Private Cloud Platform](/products/private-cloud-platform/)** — DORA- and NIS2-aligned architecture, encryption and audit logging designed for your regulator. Relevant when you are a regulated entity yourself, or when you run internal workloads next to the ones you sell.
 
 A telco selling a sovereign cloud product while running its own regulated internal estate takes both, on one platform, under one operations team.
 
