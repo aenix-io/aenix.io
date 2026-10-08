@@ -1,5 +1,5 @@
 ---
-title: "Cloud-Plattform für Telekommunikationsanbieter — souverän, edge-fähig, bereit für KI"
+title: "Cloud-Plattform für Telekom-Betreiber — souverän, edge-fähig, bereit für KI"
 seo_title: "Souveräne Edge-to-Core-Cloud für Telekom-Betreiber"
 description: "Souveräne Edge-to-Core-Cloud für Telekom-Betreiber: SR-IOV und DPDK, wo die Datenebene es verlangt, KubeVirt für VNFs und Cilium für alles andere."
 related_pages:
@@ -63,7 +63,7 @@ faq:
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Womit Telekommunikationsanbieter zu uns kommen
+## Womit Telekom-Betreiber zu uns kommen
 
 - **Start souveräner Cloud-Produkte** — Anbieter mit souveräner Cloud für Endkunden (regionale souveräne Telco-Cloud-Produkte, souveräne Angebote für einzelne Mitgliedstaaten). Siehe **[Datensouveränität](/de/loesungen/data-sovereignty/)**.
 - **Umstieg von NFV auf Kubernetes** — alte NFV-Umgebungen werden durch Kubernetes-native Entsprechungen ersetzt.
@@ -110,7 +110,7 @@ Die ehrliche Grenze: Dies ist eine Plattform für die Infrastruktur rund um das 
 
 ---
 
-## Wie Ænix mit Telekommunikationsanbietern zusammenarbeitet
+## Wie Ænix mit Telekom-Betreibern zusammenarbeitet
 
 Ein **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit telekomspezifischen Arbeitssträngen: Multi-Site-Architektur, Edge-Reife, Paketierung souveräner Cloud-Produkte (wo relevant), NIS2-Kontrollen und KI-Infrastruktur für Telco-Anwendungsfälle.
 

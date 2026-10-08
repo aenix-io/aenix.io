@@ -61,7 +61,7 @@ faq:
 </div>
 
 <div class="trust-badges">
-ISO/IEC 27001:2022 (AENIX s.r.o.) · Gegenseitige Geheimhaltungsvereinbarung zum Kick-off · Schriftliche Ergebnisse · Keine Hyperscaler-Bindung
+ISO/IEC 27001:2022 (AENIX s.r.o.) · Gegenseitige NDA zum Projektstart · Schriftliche Ergebnisse · Keine Hyperscaler-Bindung
 </div>
 
 
@@ -241,7 +241,7 @@ DORA plus Abgleich der Überschneidungen mit NIS2, DSGVO und Branchenregeln. Sta
 
 </div>
 
-Festpreis. Eine Rechnung. Gegenseitige Geheimhaltungsvereinbarung zum Kick-off. Folgt ein Umsetzungsprojekt in Phase 2, werden die Kosten des Assessments darauf angerechnet (je nach Umfang).
+Festpreis. Eine Rechnung. Gegenseitige NDA zum Projektstart. Folgt ein Umsetzungsprojekt in Phase 2, werden die Kosten des Assessments darauf angerechnet (je nach Umfang).
 
 Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge laufen über die AENIX s.r.o. (Tschechien). Das Discovery-Gespräch klärt die verfahrensrechtliche Eignung.
 

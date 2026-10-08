@@ -162,8 +162,8 @@ Projekt plus optionaler Managed-Retainer, per RFP nach einem Discovery-Gespräch
 - **Managed-Retainer** (optional, laufend) — Ænix betreibt die KI-Plattform unter SLA
 
 <div class="cta-row">
-  <a class="cta-secondary" href="/de/dienstleistungen/ai-platform-build/">Leistung AI Platform Build →</a>
-  <a class="cta-secondary" href="/de/ressourcen/sovereign-ai-architektur-leitfaden/">Kostenloser Sovereign-AI-Architektur-Leitfaden →</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/ai-platform-build/">Service: AI Platform Build →</a>
+  <a class="cta-secondary" href="/de/ressourcen/sovereign-ai-architektur-leitfaden/">Leitfaden Sovereign AI (gratis) →</a>
 </div>
 
 ---

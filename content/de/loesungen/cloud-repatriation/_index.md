@@ -246,7 +246,7 @@ Zusätzlich Anbieter-Shortlist (Compute / Storage / Netzwerk / Observability), Z
 
 </div>
 
-Festpreis. Eine Rechnung. Gegenseitige Geheimhaltungsvereinbarung zum Kick-off. Kosten der Umsetzung in Phase 2: Das Assessment-Honorar wird je nach Umfang angerechnet.
+Festpreis. Eine Rechnung. Gegenseitige NDA zum Projektstart. Kosten der Umsetzung in Phase 2: Das Assessment-Honorar wird je nach Umfang angerechnet.
 
 Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge laufen über die AENIX s.r.o. (Tschechien).
 

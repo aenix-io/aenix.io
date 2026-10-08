@@ -11,7 +11,7 @@ hreflang_en: /resources/
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Oder tiefer einsteigen mit dem Platform Readiness Assessment →</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/platform-readiness-assessment/">Platform Readiness Assessment →</a>
 </div>
 
 ---

@@ -122,7 +122,7 @@ Gesundheits-IT ist keine beliebige Infrastruktur, und die Plattform muss den Bes
 <div class="band-fullbleed band-fullbleed--tint">
 <div class="band-fullbleed__inner">
 
-## Wie Ænix mit Gesundheitsorganisationen arbeitet
+## Wie Ænix mit Einrichtungen im Gesundheitswesen arbeitet
 
 Das Standardprojekt läuft als **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**, mit Arbeitspaketen, die auf das Gesundheitswesen zugeschnitten sind:
 

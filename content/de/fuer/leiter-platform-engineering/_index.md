@@ -102,7 +102,7 @@ Kostenlos und ohne Vorbereitung. Wir sehen uns an, wie Ihre Teams heute Ressourc
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/de/dienstleistungen/internal-developer-platform/">Aufbau einer Internal Developer Platform →</a>
+  <a class="cta-secondary" href="/de/dienstleistungen/internal-developer-platform/">Eine IDP aufbauen →</a>
 </div>
 
 ---

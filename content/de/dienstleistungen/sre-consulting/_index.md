@@ -47,7 +47,7 @@ faq:
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/platform-engineering-vs-devops-vs-sre/">SRE vs. DevOps vs. Platform Engineering →</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/platform-engineering-vs-devops-vs-sre/">SRE, DevOps, Platform Engineering →</a>
 </div>
 
 ---

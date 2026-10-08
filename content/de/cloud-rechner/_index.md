@@ -28,6 +28,6 @@ related_pages:
 Sie sind bereits auf AWS, Azure oder GCP und fragen sich, was derselbe Workload auf Hardware unter Ihrer eigenen Kontrolle kosten würde? Geben Sie den Footprint ein, den Sie tatsächlich betreiben – vCPU, RAM, Block- und Object Storage, Managed-Kubernetes-Cluster, Datenbanken, GPUs, Egress, Cross-AZ-Traffic –, und das Modell kalkuliert ihn zweimal: einmal zu den Listenpreisen des Hyperscalers, abzüglich Ihrer Commitment- und Enterprise-Rabatte, und einmal mit Cozystack auf eigener oder gemieteter Hardware, einschließlich Strom, PUE, Colocation, Netzwerk und des Betriebspersonals, das dafür realistisch nötig ist. Jeder Tarif ist mit Quelle und Stand versehen, und das Ergebnis zeigt die Einsparung über mehrere Jahre samt dem Zeitpunkt, an dem sich die Migration amortisiert – statt einer plakativen Prozentzahl.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/?source=cloud-calculator">30-minütige Durchsicht Ihrer Zahlen vereinbaren</a>
+  <a class="cta-primary" href="/de/kontakt/?source=cloud-calculator">Zahlen in 30 Minuten durchgehen</a>
   <a class="cta-secondary" href="/de/preise/">Ænix-Preise ansehen →</a>
 </div>

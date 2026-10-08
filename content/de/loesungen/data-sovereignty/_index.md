@@ -62,7 +62,7 @@ faq:
 </div>
 
 <div class="trust-badges">
-ISO/IEC 27001:2022 (AENIX s.r.o.) · Plattform unter Apache 2.0 · Schriftliche Ergebnisse · Gegenseitige Geheimhaltungsvereinbarung zum Kick-off
+ISO/IEC 27001:2022 (AENIX s.r.o.) · Plattform unter Apache 2.0 · Schriftliche Ergebnisse · Gegenseitige NDA zum Projektstart
 </div>
 
 
@@ -231,7 +231,7 @@ Souveränität plus angrenzende regulatorische Überschneidungen (Abgleich mit D
 
 </div>
 
-Festpreis. Eine Rechnung. Gegenseitige Geheimhaltungsvereinbarung zum Kick-off. Kosten der Umsetzung in Phase 2: Das Assessment-Honorar wird je nach Umfang angerechnet.
+Festpreis. Eine Rechnung. Gegenseitige NDA zum Projektstart. Kosten der Umsetzung in Phase 2: Das Assessment-Honorar wird je nach Umfang angerechnet.
 
 Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge laufen über die AENIX s.r.o. (Tschechien). Das Discovery-Gespräch klärt die verfahrensrechtliche Eignung.
 
