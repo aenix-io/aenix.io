@@ -44,7 +44,13 @@
     </aside>
 
     <div class="blog-post-content page-content">
+      {{/* GEO blocks, the same partials landing pages use: direct_answer and
+           quick_facts above the text, faq below it. A post without these
+           fields renders exactly as before. The FAQ must be visible on the
+           page, since head.html emits FAQPage JSON-LD for any `faq:`. */}}
+      {{ partial "seo/geo-intro.html" . }}
       {{ .Content }}
+      {{ partial "seo/geo-faq.html" . }}
 
       {{ if .Params.quiz }}
       {{ partial "blog/quiz.html" . }}

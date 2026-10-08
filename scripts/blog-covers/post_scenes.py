@@ -415,6 +415,25 @@ def install(Scene):
                 svg += _line(self, c, (c[0] + 20 * math.cos(a), c[1] + 11 * math.sin(a)), "#8fd3ff", 2)
         self.items.append((x + y + z * 0.01 + 0.5, svg))
 
+    def antenna(self, x, y, z, h=1.3, waves=3):
+        """A whip antenna on top of a machine, with radio waves rising from its tip."""
+        P = self.p
+        base, tip = P(x, y, z), P(x, y, z + h)
+        svg = _line(self, base, tip, "#bfe9ff", 2.5)
+        svg += f'<circle cx="{tip[0]:.1f}" cy="{tip[1]:.1f}" r="4.5" fill="#5cf2ff" filter="url(#glow)"/>'
+        for k in range(waves):
+            r_ = 14 + k * 11
+            svg += (f'<path d="M{tip[0]-r_:.1f},{tip[1]-r_*0.15:.1f} a{r_},{r_*0.8:.1f} 0 0 1 {2*r_},0" fill="none" '
+                    f'stroke="rgba(92,242,255,{0.85 - k * 0.22:.2f})" stroke-width="2" filter="url(#glow)"/>')
+        self.items.append((x + y + z * 0.01 + 4, svg))
+        return tip
+
+    def airwave(self, a, b, depth=-45):
+        """A radio path between two antenna tips: a dotted arc, brighter in the middle."""
+        mx, my = (a[0] + b[0]) / 2, min(a[1], b[1]) - 46
+        self.items.append((depth, f'<path d="M{a[0]:.1f},{a[1]:.1f} Q{mx:.1f},{my:.1f} {b[0]:.1f},{b[1]:.1f}" fill="none" '
+                                  f'stroke="#5cf2ff" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round" opacity=".85" filter="url(#glow)"/>'))
+
     for name, fn in list(locals().items()):
         if callable(fn) and not name.startswith("_") and name != "Scene":
             setattr(Scene, name, fn)
@@ -965,3 +984,22 @@ DE_TO_EN = {
     "wann-cozystack-fuer-mittelstand-passt": "when-cozystack-fits-smb-and-mid-market",
     "cloud-migration-strategie": "cloud-migration-strategie",
 }
+
+
+@scene("kubernetes-over-wirths-radio")
+def _(s, rng):
+    # The control plane: an Oberon workstation with the Kubernetes wheel beside it.
+    s.box(0.0, 0.2, 0, 3.6, 1.0, 0.25, depth=0.9)
+    s.screen(0.2, 0.2, 0.25, 3.2, 2.3, kind="oberon")
+    plane = s.antenna(3.2, 0.2, 2.55, 1.2, 3)
+    s.box(0.6, 2.6, 0, 1.6, 1.6, 0.5); s.kube(1.4, 3.4, 0.5, 0.85)
+    # Two nodes: smaller Oberon machines, each with its antenna.
+    s.box(4.2, 2.4, 0, 2.4, 0.8, 0.2, depth=6.4)
+    s.screen(4.3, 2.4, 0.2, 2.2, 1.6, kind="oberon")
+    n1 = s.antenna(6.3, 2.4, 1.8, 1.0, 2)
+    s.box(3.0, 5.0, 0, 2.4, 0.8, 0.2, depth=7.6)
+    s.screen(3.1, 5.0, 0.2, 2.2, 1.6, kind="oberon")
+    n2 = s.antenna(5.1, 5.0, 1.8, 1.0, 2)
+    # The air between them.
+    s.airwave(plane, n1); s.airwave(plane, n2); s.airwave(n1, n2)
+    s.chip(0.2, 5.0, 0, 1.8, "RISC5")
