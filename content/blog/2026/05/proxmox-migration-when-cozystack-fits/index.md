@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "tutorial"
 topics: ["Proxmox", "Cozystack", "Migration", "Multi-tenancy", "Hosting"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/proxmox-migration-cozystack-single-tenant-grenzen/"
 companion_landing: "/migration/proxmox/"
 companion_label: "See Proxmox migration hub →"
 quiz:
