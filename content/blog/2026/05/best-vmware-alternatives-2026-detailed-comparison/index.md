@@ -23,7 +23,7 @@ quiz:
         - { text: "Proxmox VE", correct: true }
         - { text: "OpenShift Virtualization", correct: false }
         - { text: "Cozystack", correct: false }
-      explanation: "Proxmox VE — open source, large community, well-suited to single-tenant deployments under ~50 hosts. Cozystack is the runner-up but is overkill for the SMB single-tenant case."
+      explanation: "Proxmox VE — open source, large community, well-suited to single-tenant deployments under ~50 hosts. Scale Computing HC3 is the runner-up for its appliance simplicity."
     - q: "For ROBO / edge specifically, which alternative is named best?"
       options:
         - { text: "Scale Computing HC3", correct: true }

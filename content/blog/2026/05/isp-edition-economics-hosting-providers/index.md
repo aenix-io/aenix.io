@@ -27,9 +27,9 @@ quiz:
     - q: "Around what break-even tenant count does the article say Public Cloud Platform starts to make economic sense?"
       options:
         - { text: "Roughly 100 to 200 paying tenants", correct: false }
-        - { text: "Roughly 1,000 to 2,000 paying tenants", correct: true }
+        - { text: "Roughly 1,000 to 3,600 paying tenants", correct: true }
         - { text: "Roughly 10,000 or more paying tenants", correct: false }
-      explanation: "The break-even math section computes total monthly fixed cost of €50-90k and with €40-80/month margin per tenant, break-even sits at roughly 1,000-2,000 paying tenants depending on ARPU mix."
+      explanation: "The break-even math section computes total monthly fixed cost of €50-90k and with €25-50/month margin per tenant (€40-80 ARPU minus €15-30 direct infrastructure cost), break-even sits at roughly 1,000-3,600 paying tenants depending on ARPU mix."
     - q: "Which of these is identified as the biggest single failure mode for Public Cloud Platform providers in the pipeline?"
       options:
         - { text: "Customer-facing portal getting under-invested", correct: false }
@@ -150,13 +150,13 @@ The fixed cost stack for a mid-size hosting provider on Public Cloud Platform:
 
 **Total monthly fixed: €50-90k.**
 
-With €40-80/month margin per tenant (after direct infrastructure cost),
-break-even sits at **~1,000-2,000 paying tenants** depending on ARPU
+With €25-50/month margin per tenant (€40-80 ARPU after €15-30 direct
+infrastructure cost), break-even sits at **~1,000-3,600 paying tenants** depending on ARPU
 mix and where you are in the salary band.
 
 For providers currently running ~500 customers on legacy infrastructure
 who are evaluating the move, this matters: you need a credible path to
-double tenant count within 18-24 months for the economics to actually
+at least double tenant count within 18-24 months for the economics to actually
 work. Without growth, Public Cloud Platform is a cost reduction (modest) but not
 a transformation.
 

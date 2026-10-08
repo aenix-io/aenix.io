@@ -18,13 +18,13 @@ quiz:
         - { text: "Threat-Led Penetration Testing, run every three years", correct: true }
         - { text: "Transaction-Level Privacy Test, run annually with GDPR audit", correct: false }
       explanation: "TLPT is Threat-Led Penetration Testing, required every three years as a structured red-team exercise against live production by an external test provider, with the CSIRT/SOC treated as a real defender."
-    - q: "What does the article say about why the 24-hour DORA Article 23 early-warning window often turns out to be fictional in practice?"
+    - q: "What does the article say about why the 24-hour NIS2 Article 23 early-warning window often turns out to be fictional in practice?"
       options:
         - { text: "Supervisors rarely enforce the 24-hour clock in practice", correct: false }
         - { text: "Most banks have outsourced detection to MSSPs that miss it", correct: false }
         - { text: "Detection telemetry is tuned for performance, not security", correct: true }
-      explanation: "TLPT-readiness question 1 explains that if detection telemetry is tuned for performance and not security, the 24-hour window is fictional — most banks have rich performance telemetry and alert-fatigued security telemetry, so the signal-to-noise on Article 23 triggers is too low."
-    - q: "How does the Cozystack-based architecture address Article 28's concentration-risk substantive condition (not just procurement)?"
+      explanation: "TLPT-readiness question 1 explains that if detection telemetry is tuned for performance and not security, the 24-hour window is fictional — most banks have rich performance telemetry and alert-fatigued security telemetry, so the signal-to-noise on reportable-incident triggers is too low."
+    - q: "How does the Cozystack-based architecture address Article 29's concentration-risk substantive condition (not just procurement)?"
       options:
         - { text: "Workloads use platform abstractions that exist on multiple substrates", correct: true }
         - { text: "By contracting two competing hyperscalers simultaneously", correct: false }
@@ -298,8 +298,6 @@ Poor fit:
   the product for regulated enterprises
 - **[A DORA compliance checklist for cloud infrastructure](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
   architecture-level DORA walkthrough
-- **[DORA compliance evidence checklist](/blog/2026/05/dora-compliance-checklist-cloud-architecture/)** —
-  what demonstrable means in practice
 - **[Private Cloud Platform — DORA and NIS2 obligations mapped to architecture](/blog/2026/05/enterprise-edition-dora-cloud-architecture/)** —
   product-level architectural detail
 - **[DORA compliance checklist resource](/resources/dora-compliance-checklist/)** —

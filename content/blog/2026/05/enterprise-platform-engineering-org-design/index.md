@@ -328,7 +328,7 @@ Poor fit:
   smaller-scope scope
 - **[Internal Developer Platform services](/services/internal-developer-platform/)** —
   the IDP-layer engagement
-- **[Developer Self-Service product page](/products/private-cloud-platform/)** —
+- **[Developer Self-Service solution page](/solutions/developer-self-service/)** —
   for product-engineering-focused organisations
 - **[Private Cloud Platform product page](/products/private-cloud-platform/)** —
   for regulated organisations

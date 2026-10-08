@@ -35,12 +35,12 @@ quiz:
         - { text: "SRM is the only viable option for production DR", correct: false }
         - { text: "Velero benchmarks faster than SRM at scale", correct: false }
       explanation: "Both work for mission-critical DR. SRM = mature DR orchestration, vendor-managed, plug-and-play. Velero + per-app PITR (PostgreSQL, etc.) = more moving parts but more transparent and tunable."
-    - q: "For a typical 100-VM VMware → Cozystack migration, what is the elapsed-time estimate?"
+    - q: "For a VMware → Cozystack migration of under 100 VMs, what is the elapsed-time estimate?"
       options:
         - { text: "Around two weeks of focused cutover work", correct: false }
         - { text: "Around three years of phased migration", correct: false }
         - { text: "Seven to ten months elapsed end to end", correct: true }
-      explanation: "Typical 100-VM VMware → Cozystack migration: 7-10 months elapsed (discovery, parallel deployment, image migration cohorts, network/storage cutover, DR cutover, decommission). The driver is regression testing and parallel-run windows, not raw migration speed."
+      explanation: "VMware → Cozystack migration under 100 VMs: 7-10 months elapsed (discovery, parallel deployment, image migration cohorts, network/storage cutover, DR cutover, decommission). Estates of 100-500 VMs take 10-16 months. The driver is regression testing and parallel-run windows, not raw migration speed."
 ---
 
 

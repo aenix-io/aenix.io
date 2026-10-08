@@ -17,11 +17,11 @@ quiz:
         - { text: "~300 customers (tenant audit and quota pain starts)", correct: true }
         - { text: "~50 customers (single-rack deployment thresholds)", correct: false }
         - { text: "~5,000 customers (hyperscale-tier operational ceiling)", correct: false }
-      explanation: "Above ~300 customer-facing tenants, Proxmox's namespace+permissions model (no hard isolation) starts to feel thin; per-customer audit trails, isolation guarantees, and quota enforcement become operational pain."
+      explanation: "Above ~300 customer-facing tenants, Proxmox's pools + realms + permissions model (no hard isolation) starts to feel thin; per-customer audit trails, isolation guarantees, and quota enforcement become operational pain."
     - q: "Which two Proxmox components map to KubeVirt and Cilium respectively in Cozystack?"
       options:
         - { text: "ZFS storage and Proxmox Backup Server (PBS)", correct: false }
-        - { text: "LXC containers and pvecli (CLI management plane)", correct: false }
+        - { text: "LXC containers and pvesh (CLI management plane)", correct: false }
         - { text: "KVM hypervisor and Linux SDN / Linux bridges", correct: true }
       explanation: "Per the architectural mapping table: KVM hypervisor → KubeVirt (KVM-based), and Linux SDN / bridges → Cilium (eBPF). LXC needs redesign rather than 1:1 mapping; PBS maps to Velero+S3+PITR."
     - q: "For a typical 300-1,000 customer hosting provider, what's the realistic end-to-end migration timeline?"
@@ -81,7 +81,7 @@ hold:
 
 ### 1. Customer count growing past ~300
 
-Proxmox's multi-tenancy model (namespace + permissions, not hard
+Proxmox's multi-tenancy model (pools, realms and permissions, not hard
 isolation) starts to feel thin above ~300 customer-facing tenants.
 Per-customer audit trails, isolation guarantees, and quota enforcement
 become operational pain.
@@ -131,7 +131,7 @@ upside of Cozystack tips the decision.
 | **Proxmox web UI** | Cozystack Dashboard |
 | **Proxmox Backup Server (PBS)** | Velero + S3-compatible target + per-app PITR |
 | **PVE-Storage replication** | LINSTOR DRBD replication |
-| **Proxmox API / pvecli** | Kubernetes API |
+| **Proxmox API / pvesh, qm, pct** | Kubernetes API |
 | **Datacenter / Pool / VM** | Tenant CRD + namespace + KubeVirt VM |
 | **Permission model (roles)** | Kubernetes RBAC + Tenant CRD scope |
 
@@ -142,8 +142,8 @@ Two areas need redesign rather than 1:1 mapping:
   (single process or small set). Workloads using LXC for system-
   container patterns either migrate to KubeVirt VMs or get
   refactored.
-- **Multi-tenancy model** — Proxmox tenant model (namespace +
-  permissions) versus Cozystack Tenant CRD (Kubernetes-native).
+- **Multi-tenancy model** — Proxmox tenant model (pools, realms
+  and permissions) versus Cozystack Tenant CRD (Kubernetes-native).
   Customer-facing isolation is stronger in Cozystack; operational
   abstraction is different.
 
@@ -245,7 +245,7 @@ compatibility shim) is engagement work.
 ### 3. Operations team training
 
 Proxmox operators are comfortable with the Proxmox web UI and the
-imperative `pvecli` command. Cozystack expects GitOps for production
+imperative `qm` / `pct` / `pvesh` CLI tools. Cozystack expects GitOps for production
 changes. Operations team needs 4-8 weeks of focused training plus
 3-6 months of practice. Ænix engagement includes training; customer
 investment in the transition is also required.
@@ -253,8 +253,8 @@ investment in the transition is also required.
 ### 4. ZFS-specific workloads
 
 Some customers chose Proxmox specifically for ZFS-on-host features
-(advanced snapshots, ZFS-replicated backups). Cozystack uses LINSTOR
-or Ceph; ZFS-specific operational patterns don't translate. Customer
+(advanced snapshots, ZFS-replicated backups). Cozystack ships LINSTOR
+(DRBD); ZFS-specific operational patterns don't translate. Customer
 dialogue about feature equivalence is part of Phase 0.
 
 ## Versus other alternatives

@@ -140,7 +140,7 @@ All you need now is to run the `bootstrap` command to initialize the etcd cluste
 talosctl --talosconfig=talosconfig bootstrap -e 10.0.0.131 -n 10.0.0.131
 ```
 
-You can view the node’s status at any time using `dashboard` commnad:
+You can view the node’s status at any time using `dashboard` command:
 
 ```
 talosctl --talosconfig=talosconfig dashboard -e 10.0.0.131 -n 10.0.0.131

@@ -106,7 +106,7 @@ Cozystack handles each:
 - **Self-service for instructors** — instructor can create / destroy student environments without IT ticket
 - **CNCF Project status** — students gain familiarity with CNCF ecosystem, valuable post-graduation
 
-The CNOE (CNCF Cloud Native Operational Excellence) project is also worth mentioning — it provides reference cloud-native patterns suitable for academic teaching contexts.
+The CNOE (Cloud Native Operational Excellence) industry initiative is also worth mentioning — it provides reference cloud-native patterns suitable for academic teaching contexts.
 
 ## Architecture patterns we've seen work
 

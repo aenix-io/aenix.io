@@ -43,7 +43,7 @@ As soon as the Kubernetes api-server receives requests for resources in the grou
 
 ## When to use the API Aggregation Layer
 
-The API Aggregation Layer helps solve several issues where the usual CRD mechanism might not enough. Let’s break them down.
+The API Aggregation Layer helps solve several issues where the usual CRD mechanism might not be enough. Let’s break them down.
 
 ## Imperative Logic and Subresources
 
@@ -51,7 +51,7 @@ Besides regular resources, Kubernetes also has something called subresources.
 
 In Kubernetes, subresources are additional actions or operations you can perform on primary resources (like Pods, Deployments, Services) via the Kubernetes API. They provide interfaces to manage specific aspects of resources without affecting the entire object.
 
-A simple example is `status`, which is traditionally exposed as a separate subresource that you can access independently from the parent object. The `status` field isn't meant to be changed
+A simple example is `status`, which is traditionally exposed as a separate subresource that you can access independently from the parent object. The `status` field isn't meant to be changed by users; controllers update it through this subresource.
 
 But beyond `/status`, Pods in Kubernetes also have subresources like `/exec`, `/portforward`, and `/log`. Interestingly, instead of the usual declarative resources in Kubernetes, these represent endpoints for imperative operations like viewing logs, proxying connections, executing commands in a running container, and so on.
 
@@ -140,8 +140,6 @@ So, in our platform, everything is configured as HelmRelease resources. However,
 
 The widely-deployed RBAC system in Kubernetes doesn’t allow you to restrict access to a list of resources of the same kind based on labels or specific fields in the spec. When creating a role, you can limit access across the resources in the same kind only by specifying specific resource names in `resourceNames`. For verbs like **get** or **update** it will work. However, filtering by `resourceNames` using **list** verb doesn't work like that. Thus you can limit listing certain resources by kind but not by name.
 
-- Kubernetes has a special API used to provide users with information about their permissions. This is implemented using the SelfSubjectAccessReview API. One unusual detail of these resources is that you can’t view them using **get** or **list** verbs. You can only create them (using the **create** verb) and receive output with information about what you have access to at that moment.
-
 So, we decided to introduce new resource types based on the names of the Helm charts they use and generate the list of available kinds dynamically at runtime in our extension api-server. This way, we can reuse Kubernetes standard RBAC model to manage access to specific resource types.
 
 ## Need for a public API
@@ -178,13 +176,13 @@ In our case, we don’t need it since all resources are stored directly in the K
 
 You can disable etcd options by passing nil to `RecommendedOptions.Etcd`:
 
-- [Disabling etcd options](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/cmd/server/start.go#L70)
+- [Disabling etcd options](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/cmd/server/start.go#L70)
 
 ## Generate a common resource kind
 
 We called it Application, and it looks like this:
 
-- [Application type definition](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/apis/apps/v1alpha1/types.go)
+- [Application type definition](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/apis/apps/v1alpha1/types.go)
 
 This is a generic type used for any application type, and its handling logic is the same for all charts.
 
@@ -192,31 +190,31 @@ This is a generic type used for any application type, and its handling logic is 
 
 Since we want to configure our extension api-server via a config file, we formed the config structure in Go:
 
-- [Config type definition](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/config/config.go)
+- [Config type definition](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/config/config.go)
 
 We also modified the resource registration logic so that the resources we create are registered in scheme with different `Kind` values:
 
-- [Dynamic resource registration](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/apis/apps/v1alpha1/register.go#L63-L77)
+- [Dynamic resource registration](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/apis/apps/v1alpha1/register.go#L63-L77)
 
 As a result, we got a config where you can pass all possible types and specify what they should map to:
 
-- [ConfigMap example](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/packages/system/cozystack-api/templates/configmap.yaml)
+- [ConfigMap example](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/packages/system/cozystack-api/templates/configmap.yaml)
 
 ## Implement our own registry
 
 To store state not in etcd but translate it directly into Kubernetes HelmRelease resources (and vice versa), we wrote conversion functions from Application to HelmRelease and from HelmRelease to Application:
 
-- [Conversion functions](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go#L920-L991)
+- [Conversion functions](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go#L920-L991)
 
 We implemented logic to filter resources by chart name, `sourceRef`, and prefix in the HelmRelease name:
 
-- [Filtering functions](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go#L747-L784)
+- [Filtering functions](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go#L747-L784)
 
 Then, using this logic, we implemented the methods `Get()`, `Delete()`, `List()`, `Create()`.
 
 You can see the full example here:
 
-- [Registry Implementation](https://github.com/aenix-io/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go)
+- [Registry Implementation](https://github.com/cozystack/cozystack/blob/003edf8cf0a419bd67cd822d61ff806db49e7026/pkg/registry/apps/application/rest.go)
 
 At the end of each method, we set the correct `Kind` and return an `unstructured.Unstructured{}` object so that Kubernetes serializes the object correctly. Otherwise, it would always serialize them with `kind: Application`, which we don't want.
 
@@ -352,7 +350,7 @@ We don’t intend to stop here with our API. In the future, we plan to add new f
 
 The API Aggregation Layer allowed us to quickly and efficiently solve our problem by providing a flexible mechanism for extending the Kubernetes API with dynamically registered resources and converting them on the fly. Ultimately, this made our platform even more flexible and extensible without the need to write code for each new resource.
 
-You can test the API yourself in the open-source PaaS platform Cozystack, starting from [version v0.18](https://github.com/aenix-io/cozystack/releases/tag/v0.18.0).
+You can test the API yourself in the open-source PaaS platform Cozystack, starting from [version v0.18](https://github.com/cozystack/cozystack/releases/tag/v0.18.0).
 
 By [Andrei Kvapil](https://medium.com/@kvaps) on [December 12, 2024](https://medium.com/p/15709a183c86).
 

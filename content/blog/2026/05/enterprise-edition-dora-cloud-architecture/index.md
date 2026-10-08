@@ -12,12 +12,12 @@ companion_label: "See Private Cloud Platform product details →"
 quiz:
   title: "Test yourself: DORA architecture and third-party risk"
   questions:
-    - q: "What are the DORA Article 23 incident reporting windows that detection telemetry must support?"
+    - q: "What are the NIS2 Article 23 incident reporting windows that detection telemetry must support?"
       options:
         - { text: "24-hour early warning, 72-hour notification, one-month report", correct: true }
         - { text: "1-hour early warning, 24-hour notification, 7-day final report", correct: false }
         - { text: "No fixed windows — the entity defines its own SLO", correct: false }
-      explanation: "Detection must operate within Article 23 windows: 24-hour early warning, 72-hour incident notification, and one-month final report."
+      explanation: "Detection must operate within the NIS2 Article 23 windows: 24-hour early warning, 72-hour incident notification, and one-month final report. DORA reporting under Article 19 follows deadlines fixed by the implementing standards; build detection to the tighter of the two."
     - q: "Why does the article say SaaS observability vendors create a DORA Article 28 risk?"
       options:
         - { text: "They charge in USD and breach FX exposure rules in DORA", correct: false }
