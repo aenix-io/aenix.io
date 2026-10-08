@@ -4,6 +4,7 @@ description: "Running Niklaus Wirth's RISC5 processor in a browser, in QEMU and 
 date: "2026-09-30"
 cover_image: "/img/blog/covers/nine-days-of-paleocomputing.jpg"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/09/paleocomputing-teil-1-wirth-oberon-qemu-kubevirt/"
 type: "article"
 topics: ["Cozystack", "KubeVirt", "Kubernetes", "Open Source", "CHERI", "Retrocomputing"]
 language: "en"
