@@ -1,6 +1,6 @@
 ---
 title: "Webinar: build the GPU cloud you've been renting"
-description: "A webinar held on 10 September 2026 with Andrei Kvapil, creator of Cozystack: turn the GPUs you already own into a multi-tenant AI cloud — sharing, inference and per-token metering, assembled entirely from open source."
+description: "Webinar held on 10 September 2026 with Andrei Kvapil, creator of Cozystack: turning GPUs you own into a multi-tenant AI cloud with inference and metering."
 language: "en"
 layout: "event-landing"
 bodyClass: "webinar-landing"

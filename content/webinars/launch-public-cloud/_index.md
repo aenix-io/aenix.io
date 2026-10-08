@@ -1,6 +1,6 @@
 ---
 title: "Webinar: add Kubernetes, databases and GPU to your price list"
-description: "Recording of the 19 August 2026 webinar with Andrei Kvapil, creator of Cozystack: how a working hosting or cloud provider widens the catalog — managed Kubernetes, databases, S3 and GPU — beside the platform they already run, keeping their billing and their panel."
+description: "Recording of the 19 August 2026 webinar with Andrei Kvapil: how a hosting or cloud provider adds managed Kubernetes, databases, S3 and GPU to its catalog."
 language: "en"
 layout: "event-landing"
 bodyClass: "webinar-landing"

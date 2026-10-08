@@ -1,6 +1,6 @@
 ---
 title: "Webinar: the cluster that survives a datacenter outage"
-description: "A webinar held on 30 September 2026 with Andrei Kvapil, creator of Cozystack: build a distributed Kubernetes cluster on your own hardware that survives losing a whole datacenter — metro-stretch, two-DC + witness, storage, GPU and live migration."
+description: "Webinar held on 30 September 2026 with Andrei Kvapil, creator of Cozystack: a Kubernetes cluster on your own hardware that survives losing a datacenter."
 language: "en"
 layout: "event-landing"
 bodyClass: "webinar-landing"
