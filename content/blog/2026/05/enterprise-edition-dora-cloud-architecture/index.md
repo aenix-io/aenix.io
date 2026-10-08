@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["DORA", "Financial Services", "Compliance", "Sovereignty", "Multi-tenancy", "Cozystack"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/private-cloud-platform-dora-nis2-architektur/"
 companion_landing: "/products/private-cloud-platform/"
 companion_label: "See Private Cloud Platform product details →"
 quiz:

@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Hosting", "Cozystack", "Multi-tenancy", "Platform Engineering", "Cloud"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/public-cloud-platform-wirtschaftlichkeit-hosting-anbieter/"
 companion_landing: "/products/public-cloud-platform/"
 companion_label: "See Public Cloud Platform product details →"
 quiz:

@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/developer-experience-plattform-self-service-pfade/"
 companion_landing: "/solutions/developer-self-service/"
 quiz:
   title: "Test yourself: self-service paths that get used"

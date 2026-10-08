@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Platform Engineering", "Cozystack", "DevOps", "Multi-tenancy"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/developer-self-service-oekonomie-entwicklungsgeschwindigkeit/"
 companion_landing: "/products/private-cloud-platform/"
 companion_label: "See Developer Self-Service product details →"
 quiz:

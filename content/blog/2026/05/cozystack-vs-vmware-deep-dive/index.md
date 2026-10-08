@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["VMware", "Kubernetes", "Cozystack", "KubeVirt", "Cilium", "LINSTOR"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/cozystack-vs-vmware-detailvergleich/"
 companion_landing: "/compare/cozystack-vs-vmware/"
 quiz:
   title: "Test yourself: Cozystack vs VMware deep-dive"
