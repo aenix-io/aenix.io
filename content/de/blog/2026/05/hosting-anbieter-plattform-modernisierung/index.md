@@ -21,7 +21,7 @@ quiz:
     - q: "Wie schnell ist die Plattform selbst nach Bereitstellung der Hardware live?"
       options:
         - { text: "In wenigen Wochen, über den produktisierten Installer", correct: true }
-        - { text: "Erst nach 9–18 Monaten Eigenentwicklung", correct: false }
+        - { text: "Erst nach mehreren Jahren Eigenentwicklung", correct: false }
         - { text: "Mehr als fünf Jahre", correct: false }
       explanation: "Nach dem Assessment (14 oder 28 Tage) ist die Plattform über den produktisierten Installer wenige Wochen nach Bereitstellung der Hardware live. Beta-Kohorte, eingeschränkte Verfügbarkeit und allgemeine Verfügbarkeit folgen in dem Tempo, das Vertrieb und Betrieb des Anbieters tragen."
     - q: "Wie groß ist das typische Betriebsteam eines mittelgroßen Hosting-Anbieters nach dem Start?"

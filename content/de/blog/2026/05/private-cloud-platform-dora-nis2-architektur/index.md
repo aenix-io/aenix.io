@@ -33,12 +33,12 @@ quiz:
         - { text: "Einen zweiten, vertraglich gebundenen Backup-Hyperscaler", correct: false }
         - { text: "Erprobte Durchführbarkeit — eine Übung innerhalb der letzten 24 Monate", correct: true }
       explanation: "Muster 2 im Abschnitt zu Artikel 28 erklärt, dass die meisten Unternehmen einen Exit-Plan auf dem Papier haben, ihn aber nur wenige geübt haben — und die Aufsicht fragt inzwischen nach einer Übung innerhalb der letzten 24 Monate."
-    - q: "Was bedeutet das „rein beratende Supportmodell“ in einem Private-Cloud-Platform-Projekt?"
+    - q: "Welches Zugriffsmodell beschreibt der Artikel für Ænix-Engineers in einem Private-Cloud-Platform-Projekt?"
       options:
-        - { text: "Aenix-Engineers arbeiten über das Review von GitOps-PRs, nicht mit kubectl", correct: true }
-        - { text: "Aenix liefert nur schriftliche Empfehlungen und keine Engineering-Arbeit", correct: false }
+        - { text: "Die Bank entscheidet: Beratung und GitOps-PR-Review brauchen keinen Clusterzugriff, Fernzugriff gibt es nur mit ihrer Freigabe", correct: true }
+        - { text: "Ænix verlangt dauerhaften Root-Zugriff auf jeden Produktionscluster", correct: false }
         - { text: "Der Kunde muss für Änderungen am Cluster eine eigene Beratung beauftragen", correct: false }
-      explanation: "Rein beratend heißt: Aenix-Engineers brauchen keinen kubectl-Zugriff auf die Produktion; die Reviewer arbeiten über GitOps-PR-Reviews, und die Runbooks bleiben beim Kunden — entscheidend für Banken, bei denen ein Zugriff des Anbieters ein strukturelles Risiko darstellt."
+      explanation: "Der Zugriff ist Sache des Kunden. Beratung, Runbooks und GitOps-PR-Reviews kommen ohne Zugriff auf die Produktion aus; wo die Support-Stufe es vorsieht, gibt es Fernzugriff auf die Cluster nur mit Freigabe des Kunden. Das ist für Banken entscheidend, bei denen ein Zugriff des Anbieters ein strukturelles Risiko darstellt."
     - q: "Wie lange dauert laut Artikel der Aufbau der Private Cloud Platform nach dem Assessment?"
       options:
         - { text: "1 bis 2 Wochen", correct: false }
@@ -227,12 +227,12 @@ Mehrere Ebenen speziell für regulierte Unternehmen:
 - **Multi-DC aktiv/passiv oder aktiv/aktiv** — die Private Cloud Platform wird in der
   Regel in zwei oder mehr Rechenzentren ausgerollt, mit
   rechenzentrumsübergreifender Replikation, die auf die RTO-/RPO-Ziele
-  abgestimmt ist. Die Public Cloud Platform ist standardmäßig auf ein
-  Rechenzentrum ausgelegt.
-- **Rein beratendes Supportmodell möglich** — Ænix-Engineers brauchen
-  keinen kubectl-Zugriff auf Ihren Produktionscluster. Die Reviewer
-  arbeiten über GitOps-PR-Reviews; die Runbooks bleiben auf Kundenseite.
-  Fernzugriff auf Ihre Cluster gibt es nur mit Ihrer Freigabe.
+  abgestimmt ist. Ein VM-Failover zwischen Standorten ist ein geprobtes
+  Runbook, kein automatischer Schalter.
+- **Zugriff nach Ihrer Wahl** — Beratung, Runbooks und GitOps-PR-Reviews
+  brauchen keinen Zugriff auf Ihren Produktionscluster. Wo Ihre
+  Support-Stufe es vorsieht, gibt es Fernzugriff auf Ihre Cluster nur
+  mit Ihrer Freigabe.
   Entscheidend für Banken, bei denen ein Zugriff des Anbieters ein
   strukturelles Risiko darstellt.
 - **Anbindung an den Schlüsselspeicher des Kunden** — Secrets kommen

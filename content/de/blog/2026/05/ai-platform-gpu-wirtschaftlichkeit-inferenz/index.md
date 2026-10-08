@@ -225,7 +225,7 @@ typische Flaggschiff-Installation von AI Platform.
 Internetverkehr; Updates über kontrollierte Kanäle. Vom Kunden
 gestellte Hardware, vom Kunden kontrollierte Schlüssel,
 SIEM für Audits auf Kundenseite. Am besten für: Verschlusssachen,
-verteidigungsnahe Bereiche, Gesundheitswesen mit strengen Vorgaben zur
+Gesundheitswesen mit strengen Vorgaben zur
 Datenresidenz.
 
 ## Häufige Fallstricke
@@ -297,12 +297,14 @@ Schlechte Eignung:
   auf Basis des Frameworks aus dem [Sovereign-AI-Architektur-Leitfaden](/de/ressourcen/sovereign-ai-architektur-leitfaden/) und der Erfahrung von Ænix
 - **Pilotprojekt** (3–6 Monate) — klar abgegrenzter Ausschnitt: eine
   Workload-Klasse, ein Tenant, eine Modellfamilie
-- **Vollständiger Aufbau der AI Platform** (6–12 Monate) — produktive
-  KI-Infrastruktur mit allen vorgesehenen Workload-Typen
-- **Managed Retainer** (laufend) — Ænix betreibt die KI-Plattform
-  unter SLA
+- **Vollständiger Aufbau der AI Platform** — produktive
+  KI-Infrastruktur mit allen vorgesehenen Workload-Typen; Umfang und
+  Dauer werden im Assessment festgelegt
+- **Support-Subskription** (laufend) — Plus- oder Enterprise-Stufe für
+  24×7 (siehe [/de/preise/](/de/preise/)) oder separat angebotener
+  Managed-Betrieb
 
-Umfang: Projekt plus Managed Retainer, Angebot je Ausschreibung.
+Umfang: Projekt plus Support-Subskription, Angebot je Ausschreibung.
 
 ## Weiterführende Informationen
 
