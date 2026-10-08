@@ -4,4 +4,5 @@ description: "Aenix-Blog auf Deutsch — Cloud-Souveränität, Kubernetes, DORA/
 hero_subtitle: "Analysen zu souveräner Cloud, Kubernetes und Plattform-Engineering"
 language: "de"
 hreflang_en: /blog/
+outputs: ["HTML", "RSS"]
 ---

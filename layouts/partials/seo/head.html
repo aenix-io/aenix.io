@@ -73,6 +73,12 @@
   {{- end -}}
 {{- end -}}
 <link rel="canonical" href="{{ $canonical }}" />
+{{- /* The blog's feed, discoverable from every page: German pages point to the German one. */}}
+{{- if or (eq .Params.language "de") (hasPrefix .RelPermalink "/de/") }}
+<link rel="alternate" type="application/rss+xml" title="Ænix Blog (Deutsch)" href="{{ "de/blog/index.xml" | absURL }}" />
+{{- else }}
+<link rel="alternate" type="application/rss+xml" title="Ænix Blog" href="{{ "blog/index.xml" | absURL }}" />
+{{- end }}
 
 {{- with .Params.robots }}
 <meta name="robots" content="{{ . }}" />
