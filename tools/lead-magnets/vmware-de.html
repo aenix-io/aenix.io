@@ -1,0 +1,151 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">VMware-Migrations-Checkliste</span>
+    <span class="versionline">Ænix · aenix.io · v1.1 — Oktober 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">VMware Migration Assessment Checklist</h1>
+  <p class="cover__subtitle">25 Prüfpunkte zur Bewertung eines VMware-Ausstiegs — von Inventarisierung und Abhängigkeiten über Souveränität und GPU-Workloads bis zur Kostenentwicklung.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">Für Infrastruktur- und Plattform-Teams, die einen VMware-Ausstieg planen · aenix.io</div>
+  <p class="cover__strapline"><b>25 Prüfpunkte in acht Abschnitten.</b> v1.1 — Oktober 2026.</p>
+</section>
+
+<h1 class="doc-h">So nutzen Sie diese Checkliste</h1>
+
+<p class="lead">Diese Checkliste mit 25 Prüfpunkten gibt Infrastrukturverantwortlichen, Plattform-Engineers und CIO-Bereichen eine strukturierte Methode, um die Bereitschaft für einen VMware-Ausstieg zu bewerten. Es ist dasselbe Ausgangsframework, das Ænix im Rahmen des <b>Platform Readiness Assessment</b> verwendet — einer Zusammenarbeit zum Festpreis über 14 Tage (fokussiert) oder 28 Tage (vollständig), die die Checkliste in einen maßgeschneiderten Migrationsplan überführt.</p>
+
+<p class="lead"><b>Nutzen Sie sie auf drei Arten:</b></p>
+
+<ol class="howto">
+  <li><b>Selbstbewertung</b> — gehen Sie die Punkte mit Ihrem Plattform-Team in einem Workshop durch. Jedes nicht abgehakte Feld wird zu einem Klärungspunkt.</li>
+  <li><b>Ausschreibungs-Scoping</b> — teilen Sie die Liste mit Anbietern, damit alle auf derselben Grundlage antworten.</li>
+  <li><b>Vorstandsreife</b> — die Abschnittszusammenfassungen lassen sich direkt in ein entscheidungsreifes Migrations-Briefing überführen.</li>
+</ol>
+
+<div class="callout">
+  <p>Jeder Prüfpunkt entspricht einer strukturellen Entscheidung in Ihrer Zielarchitektur. Eine „unbekannt"-Antwort ist wertvoller als eine Vermutung — sie zeigt den Arbeitsstrang auf, der zuerst bewertet werden muss.</p>
+</div>
+
+<h3 class="plain">Übersichtskarte</h3>
+
+<table class="coverage">
+  <thead>
+    <tr><th>Abschnitt</th><th class="num">Prüfpunkte</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1. Inventarisierung</td><td class="num">4</td></tr>
+    <tr><td>2. Abhängigkeiten</td><td class="num">4</td></tr>
+    <tr><td>3. Netzwerk- und Speicher-Redesign</td><td class="num">4</td></tr>
+    <tr><td>4. Mandantenfähigkeit</td><td class="num">2</td></tr>
+    <tr><td>5. KI- / GPU-Workloads</td><td class="num">3</td></tr>
+    <tr><td>6. Souveränität &amp; Compliance</td><td class="num">3</td></tr>
+    <tr><td>7. Betriebliche Bereitschaft</td><td class="num">3</td></tr>
+    <tr><td>8. Kostenentwicklung</td><td class="num">2</td></tr>
+  </tbody>
+</table>
+
+<h2 class="sec newpage"><span class="num">1.</span> Inventarisierung</h2>
+
+<ul class="cps">
+  <li><b>Workload-Anzahl nach Kritikalitätsstufe</b> — Gesamtzahl der VMs, aufgeschlüsselt nach Kritikalität (geschäftskritisch / wichtig / unkritisch). Uptime-SLO je Stufe angeben.</li>
+  <li><b>Betriebssystem- und Kernel-Mix</b> — Verteilung der Gast-Betriebssystem- und Kernel-Versionen sowie End-of-Life-Status. Kernel, die älter als 5 Jahre sind, identifizieren.</li>
+  <li><b>Ressourcenprofil je Workload</b> — vCPU, RAM, angebundener Speicher, Netzwerkbandbreite (Spitze/Durchschnitt) je VM. Über- und unterdimensionierte Systeme kennzeichnen.</li>
+  <li><b>Verantwortlichkeit auf Anwendungsebene</b> — Benanntes Verantwortungsteam je Workload, Datum der letzten Änderung, Deployment-Kadenz (manuell / skriptbasiert / GitOps).</li>
+</ul>
+
+<div class="callout">
+  <p><b>Tipp.</b> Workloads ohne benannten Verantwortlichen treiben die Migrationskosten in die Höhe. Klären Sie die Verantwortlichkeit, bevor Sie den Aufwand schätzen.</p>
+</div>
+
+<h2 class="sec"><span class="num">2.</span> Abhängigkeiten</h2>
+
+<ul class="cps">
+  <li><b>vSAN-Abhängigkeiten erfasst</b> — Workloads, die auf vSAN-spezifische Funktionen angewiesen sind (Snapshots auf Datastore-Ebene, Deduplizierung, RAID auf Speicherebene). Ersatzstrategie je Workload auflisten.</li>
+  <li><b>NSX-Konfigurationen exportiert</b> — Regeln der Distributed Firewall, Mikrosegmentierungs-Richtlinien, Edge-Gateway-Konfigurationen. Hinweis: vieles lässt sich nicht 1:1 übertragen.</li>
+  <li><b>vCloud-Director-Mandantenmodell (vCD) dokumentiert</b> — Organization-VDCs, Katalogstruktur, Rollenzuweisungen, vApp-Vorlagen. Auf das Ziel-Mandantenmodell abbilden (z. B. Cozystack Tenant CRD).</li>
+  <li><b>Individuelle Integrationen katalogisiert</b> — vRealize Automation/Operations, Drittanbieter-Backup (Veeam, Rubrik), Monitoring-Agents, Lizenzserver. Hersteller-Support für die Zielplattform auflisten.</li>
+</ul>
+
+<div class="disclaimer">
+  <p><b>Achtung.</b> Die Semantik der NSX Distributed Firewall lässt sich selten 1:1 auf Kubernetes NetworkPolicy oder Cilium abbilden. Planen Sie ein Redesign der Netzwerksicherheitsrichtlinien ein, kein Lift-and-Shift.</p>
+</div>
+
+<h2 class="sec"><span class="num">3.</span> Netzwerk- und Speicher-Redesign</h2>
+
+<ul class="cps">
+  <li><b>Netzwerktopologie dokumentiert</b> — VLANs, IP-Plan, MTU, ggf. BGP/OSPF, Ingress-/Egress-Edges. Auf das Ziel-CNI (Cilium / Calico) und Gateway-Modell abbilden.</li>
+  <li><b>Storage-Klassen auf das Ziel abgebildet</b> — vSAN-Tiers, Datastore-Richtlinien, IOPS-Zusagen. Auf LINSTOR / Ceph / Longhorn oder gleichwertige Storage-Klassen abbilden.</li>
+  <li><b>Snapshot- und Replikations-SLAs</b> — Aktuelle Snapshot-Zeitpläne, Replikationsziele, RPO/RTO-Zusagen. Lücken im Ziel-Storage-Backend identifizieren.</li>
+  <li><b>L2-Stretched- / Multi-Site-Netzwerke</b> — Standortübergreifendes L2, vMotion über Rechenzentren hinweg, Stretched Cluster. Das Meiste übersteht eine Migration nicht; identifizieren Sie Workloads, die dies wirklich benötigen.</li>
+</ul>
+
+<div class="callout">
+  <p>„Wir nutzen vSAN für alles" bedeutet meist 4–6 unterschiedliche Speicherprofile. Erfassen Sie sie alle — die Dimensionierung der Zielplattform hängt von genauen IOPS-/Durchsatzwerten je Klasse ab.</p>
+</div>
+
+<h2 class="sec"><span class="num">4.</span> Mandantenfähigkeit</h2>
+
+<ul class="cps">
+  <li><b>vCD-Organisationsmodell übertragen</b> — Jede vCD-Org entspricht einer Ziel-Mandantengrenze (Tenant CRD, Namespace-Bundle, Projekt). Kontingente, Netzwerkisolation und IAM je Org abbilden.</li>
+  <li><b>Self-Service-Umfang definiert</b> — Self-Service über Portal, API oder YAML für Mandanten. Festlegen, was Mandanten dürfen und was nicht (Provisionierung, Skalierung, Netzwerkrichtlinien, Auswahl der Storage-Klasse).</li>
+</ul>
+
+<h2 class="sec"><span class="num">5.</span> KI- / GPU-Workloads</h2>
+
+<ul class="cps">
+  <li><b>GPU-Inventar</b> — vGPU vs. Passthrough, GPU-Modell (A100 / H100 / L40S / Blackwell), Workload-Zuordnung je Karte. Herstellergebundene Funktionen notieren (z. B. MIG-Profile).</li>
+  <li><b>Abbildung vGPU auf KubeVirt-vGPU</b> — Bestätigen, dass das Ziel die benötigte GPU-Klasse und das Slicing-Modell unterstützt. Treiberversionen validieren. In Cozystack: Passthrough an VMs, NVIDIA vGPU (mit Ihrer NVIDIA-vGPU-Lizenz) und Sharing über HAMi; MIG und Time-Slicing stehen auf der Roadmap.</li>
+  <li><b>Architektonische Eignung der KI-Workloads</b> — Inferenz vs. Fine-Tuning vs. Training; Anforderungen an die Mandantenisolation; Souveränitätsvorgaben für Modellgewichte und Trainingsdaten.</li>
+</ul>
+
+<div class="disclaimer">
+  <p><b>Achtung.</b> Die vGPU-Lizenzbedingungen von VMware unterscheiden sich wesentlich von der direkten NVIDIA-Lizenzierung unter Kubernetes. Klären Sie dies mit einem NVIDIA-Partner, bevor Sie einen Migrationszeitplan festlegen.</p>
+</div>
+
+<h2 class="sec"><span class="num">6.</span> Souveränität &amp; Compliance</h2>
+
+<ul class="cps">
+  <li><b>Regulatorischer Geltungsbereich bestimmt</b> — DORA / NIS2 / DSGVO / branchenspezifische / nationale Vorgaben, die für die betroffenen Workloads gelten. Je Workload abbilden, nicht je Umgebung.</li>
+  <li><b>Verwahrung der Verschlüsselungsschlüssel</b> — Aktuelles Schlüsselmanagement (herstellerverwaltet / kundenverwaltet / HSM-gestützt). Ziel-Modell der Schlüsselverwahrung und Anforderung an die Transparenz des Anbieters definieren.</li>
+  <li><b>Vollständigkeit des Audit-Trails</b> — Aufbewahrung, Unveränderlichkeit und Exportierbarkeit der Wer-hat-wann-was-Protokolle. Auf die Audit-Pipeline der Zielplattform abbilden (z. B. VictoriaLogs, exportiert in einen unveränderlichen Speicher, den Sie selbst betreiben).</li>
+</ul>
+
+<h2 class="sec"><span class="num">7.</span> Betriebliche Bereitschaft</h2>
+
+<ul class="cps">
+  <li><b>Runbook-Inventar</b> — Dokumentierte Runbooks je Workload-Klasse (Provisionierung, Backup, Wiederherstellung, Failover, Patch). Lücken durch nicht dokumentiertes Erfahrungswissen identifizieren.</li>
+  <li><b>Bereitschaftsdienst-Abdeckung</b> — Aktuelle Rotation, Eskalationsstufen, MTTA-/MTTR-Ziele. Prüfen, ob die Zielplattform zur Kapazität des Bereitschaftsteams passt.</li>
+  <li><b>Plan für den Wissenstransfer</b> — Erforderlicher Kompetenzaufbau für den Zielstack (Kubernetes, KubeVirt, Cozystack-Betrieb). Stunden je Engineer sowie Schulungsformat.</li>
+</ul>
+
+<div class="callout">
+  <p><b>Tipp.</b> Die meisten VMware-nativen Betriebsteams benötigen 60–120 Stunden strukturierte Kubernetes-Schulung, bevor sie ein Kubernetes-basiertes Ziel eigenständig betreiben können. Planen Sie dies in den Migrationszeitplan ein, nicht danach.</p>
+</div>
+
+<h2 class="sec"><span class="num">8.</span> Kostenentwicklung</h2>
+
+<ul class="cps">
+  <li><b>TCO-Eingangsdaten erhoben</b> — Aktuelle VMware-Lizenzierung (VCF-Abonnementstufe, Host-Anzahl, Support-Stufe, Ablaufdatum). Hardware-Erneuerungszyklus. Betriebskosten (FTE, Support, Rechenzentrumsanteil).</li>
+  <li><b>Ablauf von Verpflichtungen abgebildet</b> — Ende der VMware-Vertragslaufzeit, Ende der Hardware-Garantie. Diese bestimmen das Migrationsfenster. Frühere Ablaufdaten wirken als treibender Faktor.</li>
+</ul>
+
+<div class="callout">
+  <p>Kombinieren Sie diese Checkliste mit dem <b>Cloud Repatriation TCO Worksheet</b>, um die Zielökonomie quantitativ zu modellieren.</p>
+</div>
+
+<h1 class="doc-h newpage">Nächste Schritte</h1>
+
+<div class="option"><b>Option 1 — Eigenständige Bearbeitung anhand dieser Checkliste.</b> Gehen Sie die Liste mit Plattform-, Betriebs- und Compliance-Teams durch. Wandeln Sie nicht abgehakte Felder in ein Backlog um. Die meisten Organisationen finden 8–12 nicht abgehakte Felder, die Klärungsarbeit erfordern.</div>
+<div class="option"><b>Option 2 — Platform Readiness Assessment mit Ænix (14 oder 28 Tage).</b> Ænix arbeitet die Checkliste gemeinsam mit Ihnen durch, modelliert die Zielarchitektur und erstellt einen phasenweisen Migrationsplan. Festpreis-Engagement.</div>
+<div class="option"><b>Option 3 — Vollständiges Migrationsprojekt.</b> Mehrmonatiger Aufbau mit Architektur, Umsetzung, Migrationswellen und operativer Übergabe. Der Umfang wird durch Phase 2 des Assessments festgelegt.</div>
+
+<div class="cta">Vereinbaren Sie ein Erstgespräch: <span>aenix.io/services/platform-readiness-assessment/</span></div>
+
+<p class="lead" style="margin-top:8mm">Ænix hat Cozystack (ein CNCF-Projekt) entwickelt, pflegt es mit und baut darauf die Ænix-Plattformen für Public Cloud, Private Cloud und KI. aenix.io</p>
+
+<div class="closing">
+  <b>Ænix · aenix.io · VMware-Migrations-Checkliste · v1.1 — Oktober 2026.</b> Ænix hat Cozystack entwickelt und pflegt es mit (CNCF, Apache 2.0).
+</div>

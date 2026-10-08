@@ -1,0 +1,151 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">VMware Migration Assessment Checklist</span>
+    <span class="versionline">Ænix · aenix.io · v1.1 — October 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">VMware Migration Assessment Checklist</h1>
+  <p class="cover__subtitle">25 control points for evaluating a VMware exit, from inventory and dependencies to sovereignty, GPU workloads, and cost trajectory.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">For infrastructure &amp; platform teams planning a VMware exit · aenix.io</div>
+  <p class="cover__strapline"><b>25 control points across eight sections.</b> v1.1 — October 2026.</p>
+</section>
+
+<h1 class="doc-h">How to use this checklist</h1>
+
+<p class="lead">This 25-point checklist gives infrastructure leaders, platform engineers, and CIO offices a structured way to evaluate readiness for a VMware exit. It is the same starting framework Ænix uses during the <b>Platform Readiness Assessment</b> — a fixed-price engagement of 14 days (focused) or 28 days (full) that converts the checklist into a tailored migration plan.</p>
+
+<p class="lead"><b>Use it in three ways:</b></p>
+
+<ol class="howto">
+  <li><b>Self-assessment</b> — walk through with your platform team in one workshop. Each unchecked box becomes a discovery item.</li>
+  <li><b>RFP scoping</b> — share with bidders so they answer against the same surface.</li>
+  <li><b>Board readiness</b> — the section summaries map directly to a board-grade migration brief.</li>
+</ol>
+
+<div class="callout">
+  <p>Each checkpoint maps to a structural decision in your destination architecture. An "unknown" answer is more useful than a guess — it surfaces the workstream that needs assessment first.</p>
+</div>
+
+<h3 class="plain">Coverage map</h3>
+
+<table class="coverage">
+  <thead>
+    <tr><th>Section</th><th class="num">Checkpoints</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1. Inventory</td><td class="num">4</td></tr>
+    <tr><td>2. Dependencies</td><td class="num">4</td></tr>
+    <tr><td>3. Network &amp; storage redesign</td><td class="num">4</td></tr>
+    <tr><td>4. Multi-tenancy</td><td class="num">2</td></tr>
+    <tr><td>5. AI / GPU workloads</td><td class="num">3</td></tr>
+    <tr><td>6. Sovereignty &amp; compliance</td><td class="num">3</td></tr>
+    <tr><td>7. Operational readiness</td><td class="num">3</td></tr>
+    <tr><td>8. Cost trajectory</td><td class="num">2</td></tr>
+  </tbody>
+</table>
+
+<h2 class="sec newpage"><span class="num">1.</span> Inventory</h2>
+
+<ul class="cps">
+  <li><b>Workload count by tier</b> — Total VM count broken down by criticality tier (mission-critical / important / non-critical). Include uptime SLO per tier.</li>
+  <li><b>OS and kernel mix</b> — Distribution of guest OS versions, kernel versions, end-of-life status. Identify kernels older than 5 years.</li>
+  <li><b>Resource shape per workload</b> — vCPU, RAM, attached storage, network bandwidth peak/avg per VM. Flag oversized and undersized.</li>
+  <li><b>Application-layer ownership</b> — Named owner team per workload, last-modified date, deployment cadence (manual / scripted / GitOps).</li>
+</ul>
+
+<div class="callout">
+  <p><b>Tip.</b> Workloads without a named owner are migration-cost amplifiers. Resolve ownership before estimating effort.</p>
+</div>
+
+<h2 class="sec"><span class="num">2.</span> Dependencies</h2>
+
+<ul class="cps">
+  <li><b>vSAN dependencies inventoried</b> — Workloads relying on vSAN-specific features (datastore-level snapshots, deduplication, RAID-on-storage). List a replacement strategy per workload.</li>
+  <li><b>NSX configurations exported</b> — Distributed firewall rules, micro-segmentation policies, edge gateway configs. Note: many cannot be ported 1:1.</li>
+  <li><b>vCloud Director (vCD) tenant model documented</b> — Organization VDCs, catalog structure, role assignments, vApp templates. Map to the destination tenant model (e.g., Cozystack Tenant CRD).</li>
+  <li><b>Custom integrations cataloged</b> — vRealize Automation/Operations, third-party backup (Veeam, Rubrik), monitoring agents, licence servers. List vendor support for the destination platform.</li>
+</ul>
+
+<div class="disclaimer">
+  <p><b>Warning.</b> NSX distributed firewall semantics rarely map 1:1 to Kubernetes NetworkPolicy or Cilium. Plan for redesign, not lift-and-shift, of network security policy.</p>
+</div>
+
+<h2 class="sec"><span class="num">3.</span> Network &amp; storage redesign</h2>
+
+<ul class="cps">
+  <li><b>Network topology documented</b> — VLANs, IP plan, MTU, BGP/OSPF if applicable, ingress/egress edges. Map to the destination CNI (Cilium / Calico) and gateway model.</li>
+  <li><b>Storage classes mapped to destination</b> — vSAN tiers, datastore policies, IOPS commitments. Map to LINSTOR / Ceph / Longhorn / equivalent storage classes.</li>
+  <li><b>Snapshot and replication SLAs</b> — Current snapshot schedules, replication targets, RPO/RTO commitments. Identify gaps in the destination storage backend.</li>
+  <li><b>L2 stretched / multi-site networking</b> — Cross-site L2, vMotion across DCs, stretched clusters. Most do not survive migration; identify workloads that genuinely require this.</li>
+</ul>
+
+<div class="callout">
+  <p>"We use vSAN for everything" usually means 4–6 distinct storage profiles. Surface them all — destination platform sizing depends on accurate IOPS/throughput per class.</p>
+</div>
+
+<h2 class="sec"><span class="num">4.</span> Multi-tenancy</h2>
+
+<ul class="cps">
+  <li><b>vCD organization model translated</b> — Each vCD Org maps to a destination tenant boundary (Tenant CRD, namespace bundle, project). Map quotas, network isolation, and IAM per Org.</li>
+  <li><b>Self-service surface defined</b> — Portal vs API vs YAML-driven self-service for tenants. Define what tenants can and cannot do (provisioning, scaling, network policy, storage class selection).</li>
+</ul>
+
+<h2 class="sec"><span class="num">5.</span> AI / GPU workloads</h2>
+
+<ul class="cps">
+  <li><b>GPU inventory</b> — vGPU vs passthrough, GPU model (A100 / H100 / L40S / Blackwell), per-card workload assignment. Note vendor-locked features (e.g., MIG profiles).</li>
+  <li><b>vGPU to KubeVirt vGPU mapping</b> — Confirm the destination supports the GPU class and slicing model needed. Validate driver versions. On Cozystack: passthrough to VMs, NVIDIA vGPU (with your NVIDIA vGPU licence) and sharing via HAMi; MIG and time-slicing are on the roadmap.</li>
+  <li><b>AI workload architectural fit</b> — Inference vs fine-tuning vs training; multi-tenant isolation requirements; sovereignty constraints on model weights and training data.</li>
+</ul>
+
+<div class="disclaimer">
+  <p><b>Warning.</b> VMware's vGPU licensing terms differ materially from NVIDIA's direct licensing under Kubernetes. Validate with an NVIDIA partner before committing to a migration timeline.</p>
+</div>
+
+<h2 class="sec"><span class="num">6.</span> Sovereignty &amp; compliance</h2>
+
+<ul class="cps">
+  <li><b>Regulatory scope identified</b> — DORA / NIS2 / GDPR / sectoral / national mandates that apply to workloads in scope. Map per-workload, not per-environment.</li>
+  <li><b>Encryption key custody</b> — Current key management (vendor-managed / customer-managed / HSM-backed). Define the destination key custody model and supplier transparency requirement.</li>
+  <li><b>Audit-trail completeness</b> — Who-did-what-when log retention, immutability, exportability. Map to the destination platform audit pipeline (e.g., VictoriaLogs, exported to an immutable store you run).</li>
+</ul>
+
+<h2 class="sec"><span class="num">7.</span> Operational readiness</h2>
+
+<ul class="cps">
+  <li><b>Runbook inventory</b> — Documented runbooks per workload class (provisioning, backup, restore, failover, patch). Identify tribal-knowledge gaps.</li>
+  <li><b>On-call coverage</b> — Current rotation, escalation tiers, MTTA/MTTR targets. Validate that the destination platform fits on-call team capacity.</li>
+  <li><b>Knowledge transfer plan</b> — Skills uplift required for the destination stack (Kubernetes, KubeVirt, Cozystack operations). Hours per engineer plus training format.</li>
+</ul>
+
+<div class="callout">
+  <p><b>Tip.</b> Most VMware-native ops teams need 60–120 hours of structured Kubernetes training before independently operating a Kubernetes-based destination. Build this into the migration timeline, not after it.</p>
+</div>
+
+<h2 class="sec"><span class="num">8.</span> Cost trajectory</h2>
+
+<ul class="cps">
+  <li><b>TCO inputs gathered</b> — Current VMware licensing (VCF subscription tier, host count, support tier, expiration date). Hardware refresh cycle. Operations cost (FTE, support, datacenter share).</li>
+  <li><b>Commitment expirations mapped</b> — VMware contract end date, hardware warranty end date. These set the migration window. Earlier expirations act as a forcing function.</li>
+</ul>
+
+<div class="callout">
+  <p>Pair this checklist with the <b>Cloud Repatriation TCO Worksheet</b> to model destination economics quantitatively.</p>
+</div>
+
+<h1 class="doc-h newpage">Next steps</h1>
+
+<div class="option"><b>Option 1 — Self-remediate using this checklist.</b> Walk through with platform, ops, and compliance teams. Convert unchecked boxes into a backlog. Most organizations find 8–12 unchecked boxes that need discovery work.</div>
+<div class="option"><b>Option 2 — Platform Readiness Assessment with Ænix (14 or 28 days).</b> Ænix runs the checklist with you, models destination architecture, and produces a phased migration plan. Fixed-fee engagement.</div>
+<div class="option"><b>Option 3 — Full migration engagement.</b> Multi-month build with architecture, build, migration waves, and operational handover. Scope set by Phase 2 of the assessment.</div>
+
+<div class="cta">Schedule a discovery call: <span>aenix.io/services/platform-readiness-assessment/</span></div>
+
+<p class="lead" style="margin-top:8mm">Ænix created Cozystack (a CNCF project) and co-maintains it, and builds the Ænix Public Cloud, Private Cloud and AI platforms on it. aenix.io</p>
+
+<div class="closing">
+  <b>Ænix · aenix.io · VMware Migration Assessment Checklist · v1.1 — October 2026.</b> Ænix created and co-maintains Cozystack (CNCF, Apache 2.0).
+</div>
