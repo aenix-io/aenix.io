@@ -89,6 +89,6 @@ Repatriating top-10 workloads, leaving tail in cloud, often best.
 
 ## How to use the worksheet
 
-Fill in your numbers, walk through with finance partner + platform engineering. Identify top-10 repatriation candidates. Validate assumptions.
+Download the **[Cloud Repatriation TCO Worksheet](/resources/cloud-repatriation-tco-worksheet/)**. Fill in your numbers, walk through with finance partner + platform engineering. Identify top-10 repatriation candidates. Validate assumptions.
 
 For full engagement see **[Cloud repatriation services](/solutions/cloud-repatriation/)**.
