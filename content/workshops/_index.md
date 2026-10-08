@@ -3,7 +3,8 @@ title: "Workshops"
 description: "Free hands-on Aenix workshops: migrate real workloads off VMware to open-source Cozystack, with live clusters, take-home labs, and a certification path."
 hero_subtitle: "Hands-on training on live clusters — by the Cozystack maintainers"
 language: "en"
-hreflang_de: "/de/workshops/"
+# The German version was withdrawn; its URL redirects here.
+aliases: ["/de/workshops/"]
 hreflang_ru: "/ru/workshops/"
 ---
 

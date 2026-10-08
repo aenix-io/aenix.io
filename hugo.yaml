@@ -39,7 +39,7 @@ cascade:
     page_type: flag-page
   - _target: { path: '/{,de/}blog/**' }
     page_type: blog-article
-  - _target: { path: '/{,ru/,de/}workshops/**' }
+  - _target: { path: '/{,ru/}workshops/**' }
     page_type: event-landing
   # TCO calculator pages are synced from aenix-org/calculators and embed their
   # own BreadcrumbList JSON-LD; without this they ship two conflicting trails.
