@@ -41,6 +41,7 @@ quiz:
         - { text: "Die Region ist zu dokumentieren, weil sektorale Regeln sie erfassen", correct: true }
         - { text: "Quellcode gehört grundsätzlich in die USA", correct: false }
       explanation: "CI/CD-Checkliste: Build- und Testinfrastruktur in der zugelassenen Region, anonymisierte Testdaten, keine unmaskierten Produktionsdaten in Dev und Staging und eine dokumentierte Region für das Quellcode-Management — besonders wichtig, weil manche sektoralen Regeln auch den Quellcode in den Geltungsbereich nehmen."
+hreflang_en: /blog/2026/05/data-residency-requirements-2026/
 ---
 
 Begleitung zur **[Datensouveränitäts-Page](/de/loesungen/data-sovereignty)**. Was Datenresidenzregeln tatsächlich erfordern, wo typische Cloud-Setups versagen, wie eine Architektur aussieht, die Residenz auf jeder Schicht nachweisen kann.

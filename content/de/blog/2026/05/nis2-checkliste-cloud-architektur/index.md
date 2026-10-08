@@ -41,6 +41,7 @@ quiz:
         - { text: "Es ist für NIS2 nicht einschlägig, sondern rein technisch", correct: false }
         - { text: "Es deckt ausschließlich DORA-Anforderungen ab", correct: false }
       explanation: "Das Platform Readiness Assessment lässt sich mit NIS2-Schwerpunkt durchführen: eine strukturierte Architekturbewertung gegen die Anforderungen aus Artikel 21 und Artikel 23, bevor die Auditzyklen anlaufen."
+hreflang_en: /blog/2026/05/nis2-requirements-cloud-infrastructure-checklist/
 ---
 
 Begleitung zur **[NIS2-Compliance-Page](/de/loesungen/nis2-compliance)**.

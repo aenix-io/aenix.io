@@ -41,6 +41,7 @@ quiz:
         - { text: "Ausschließlich Subscription", correct: true }
         - { text: "Weiterhin auch als Dauerlizenz erhältlich", correct: false }
       explanation: "VMware Cloud Foundation gibt es nach Broadcom nur noch im Abonnement. Bei Verlängerungen wurden Preissteigerungen um den Faktor 2 bis 5 beobachtet. Als Grenzen nennt der Artikel den Subscription-Druck, den Vendor-Lock-in und Souveränitätsbedenken gegenüber einem US-Anbieter."
+hreflang_en: /blog/2026/05/private-cloud-providers-comparison/
 ---
 
 **Begleitung zur [Private-Cloud-Plattform-Page](/de/produkte/private-cloud). Überblick über Private-Cloud-Anbieter und -Plattformen im Jahr 2026 — was verfügbar ist, wer was bietet, welche architektonischen Trade-offs.**

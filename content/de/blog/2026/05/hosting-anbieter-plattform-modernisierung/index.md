@@ -41,6 +41,7 @@ quiz:
         - { text: "30–50 Prozent", correct: true }
         - { text: "Rund 500 Prozent", correct: false }
       explanation: "Typische Wirtschaftlichkeit: Der Kundenpreis liegt 30–50 Prozent über den reinen Plattformkosten. Die Marge deckt Support, Vertrieb und Betrieb. Realistisch erreicht der Anbieter den Break-even bei den ersten 50 bis 100 zahlenden Kunden."
+hreflang_en: /blog/2026/05/hosting-provider-platform-modernization/
 ---
 
 Begleitung zur **[Hosting-Anbieter-Page](/de/branchen/hosting-anbieter)**.

@@ -41,6 +41,7 @@ quiz:
         - { text: "1–3 months of platform build", correct: true }
         - { text: "12 months of platform build", correct: false }
       explanation: "1-3 months destination-build before migration cohort 1. Most migrations fail when workloads move to a destination that's been engineered as a PoC, not as a production platform. Engineer the destination first."
+hreflang_de: /de/blog/2026/05/vmware-migration-tools-strategie/
 ---
 
 

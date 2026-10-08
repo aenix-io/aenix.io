@@ -41,6 +41,7 @@ quiz:
         - { text: "Federated platform with shared core and per-district isolation", correct: true }
         - { text: "Each district runs an independent stack from scratch", correct: false }
       explanation: "For consortia: federated multi-district platform with shared core, per-district isolation, joint procurement, distributed operations. This pools investment without sacrificing district-level data control."
+hreflang_de: /de/blog/2026/05/k12-schultraeger-cloud-infrastruktur/
 ---
 
 

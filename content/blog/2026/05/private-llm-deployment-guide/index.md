@@ -44,6 +44,7 @@ quiz:
         - { text: "Ignoring KV cache memory growth (context × batch size)", correct: true }
         - { text: "Using vLLM instead of Triton (different memory profiles)", correct: false }
       explanation: "A model that \"fits\" by parameter count may not fit at the operational batch size because of KV cache memory growth with context length and batch size. Right-sizing requires actual benchmark with realistic context lengths."
+hreflang_de: /de/blog/2026/05/private-llm-deployment-leitfaden/
 ---
 
 

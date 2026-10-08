@@ -41,6 +41,7 @@ quiz:
         - { text: "Einen häufigen Fehler: vertragliche statt architektonischer Vielfalt", correct: true }
         - { text: "Eine ausdrückliche Anforderung aus der DSGVO", correct: false }
       explanation: "Häufige Lücke: Das Konzentrationsrisiko wird erkannt und dann mit vertraglichen Diversitätsklauseln beruhigt — ohne dass sich architektonisch etwas daran ändert, wie stark die Workloads von einem Anbieter abhängen. DORA fordert die tatsächliche Resilienz, nicht die vertragliche Formalie."
+hreflang_en: /blog/2026/05/dora-compliance-checklist-cloud-architecture/
 ---
 
 Begleitung zur **[DORA-Compliance-Page](/de/loesungen/dora-compliance)**. Praktische Checkliste für Plattform-Engineers und Cloud-Architekten zur DORA-Umsetzung.

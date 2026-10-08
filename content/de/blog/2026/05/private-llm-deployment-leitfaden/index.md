@@ -42,6 +42,7 @@ quiz:
         - { text: "llama.cpp beziehungsweise Ollama", correct: false }
         - { text: "NVIDIA Triton", correct: false }
       explanation: "vLLM ist die Standardwahl für die meisten Inferenz-Workloads, weil PagedAttention hohen Durchsatz liefert. Triton eignet sich für gemischte Workloads aus LLM, Vision und klassischem maschinellem Lernen, TGI hat Nischenfunktionen, llama.cpp und Ollama passen zu kleinen Modellen oder Machbarkeitsstudien."
+hreflang_en: /blog/2026/05/private-llm-deployment-guide/
 ---
 
 Begleitung zur **[Souveränen KI-Page](/de/loesungen/sovereign-ai)**.

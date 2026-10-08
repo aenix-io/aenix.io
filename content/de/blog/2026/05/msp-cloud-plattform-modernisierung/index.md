@@ -41,6 +41,7 @@ quiz:
         - { text: "Die Abrechnung läuft über das bestehende System des MSP", correct: true }
         - { text: "Sie repliziert die Daten zwischen zwei Standorten", correct: false }
       explanation: "Die WHMCS-Integration führt die Abrechnung über das Kundenverwaltungssystem, das der MSP ohnehin betreibt. Er muss keine neue Abrechnungsplattform danebenstellen — das Cloud-Produkt fügt sich in das vorhandene System ein."
+hreflang_en: /blog/2026/05/msp-cloud-platform-modernization/
 ---
 
 Begleitung zur **[MSP-Page](/de/branchen/msp)**.

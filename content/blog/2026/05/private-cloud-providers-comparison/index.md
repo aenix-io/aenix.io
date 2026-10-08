@@ -41,6 +41,7 @@ quiz:
         - { text: "Open-source code (Apache-licensed core distribution)", correct: false }
         - { text: "Operationally simple, integrated stack (HCI appliance)", correct: true }
       explanation: "Nutanix (AHV proprietary KVM-based + Files + Volumes + Era for databases): operationally simple, integrated stack. Limits: closed source, appliance lock-in, less flexibility than open alternatives."
+hreflang_de: /de/blog/2026/05/private-cloud-anbieter-vergleich/
 ---
 
 

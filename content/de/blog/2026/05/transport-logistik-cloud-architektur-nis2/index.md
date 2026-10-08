@@ -41,6 +41,7 @@ quiz:
         - { text: "Weil die Ketten oft fünf und mehr Ebenen tief verschachtelt sind", correct: true }
         - { text: "Weil moderne Transportmanagementsysteme das ohnehin abbilden", correct: false }
       explanation: "Logistikketten reichen häufig über fünf und mehr Ebenen: Carrier, Spediteur, Makler, Umschlagbetrieb, Terminalbetreiber. NIS2 und DORA erwarten Transparenz bis zur zweiten Ebene — schon das ist in der Logistik ungewöhnlich schwer, und alles darüber hinaus ist ohne eigene Nachverfolgungswerkzeuge kaum zu leisten."
+hreflang_en: /blog/2026/05/transport-logistics-cloud-architecture-nis2/
 ---
 
 Begleitung zur **[Transport-Industry-Page](/de/branchen/transport-logistik)**.

@@ -41,6 +41,7 @@ quiz:
         - { text: "MSP curates which services to expose (hide unsupported ones)", correct: true }
         - { text: "Only cosmetic (colours and logo, not the catalog contents)", correct: false }
       explanation: "Service catalog curation: MSP can expose only PostgreSQL and hide Kafka (or any other service) if the MSP doesn't support it operationally. The catalog matches what the MSP can actually back with support, not what Cozystack technically can run."
+hreflang_de: /de/blog/2026/05/msp-cloud-plattform-modernisierung/
 ---
 
 

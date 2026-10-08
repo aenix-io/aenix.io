@@ -43,6 +43,7 @@ quiz:
       explanation: "Entity classification depends on size thresholds AND sector-specific criteria. Some entities are in scope regardless of size — explicitly DNS service providers, TLD registries, MSPs."
 aliases:
   - /blog/2026/05/nis2-compliance-checklist-essential-entities/
+hreflang_de: /de/blog/2026/05/nis2-checkliste-cloud-architektur/
 ---
 
 

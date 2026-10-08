@@ -41,6 +41,7 @@ quiz:
         - { text: "16–64 GPUs", correct: true }
         - { text: "Mindestens 500 GPUs", correct: false }
       explanation: "Typische Größe für einen mittelgroßen Versorger mit 5 bis 10 GW: 16 bis 64 GPUs. Die Workloads — Inferenz für Lastprognose, Erzeugungsprognose und vorausschauende Wartung — laufen dauerhaft rund um die Uhr, und genau dort trägt die Wirtschaftlichkeit eigener GPUs."
+hreflang_en: /blog/2026/05/smart-grid-platform-architecture-it-ot/
 ---
 
 Begleitung zur **[Energie-Industry-Page](/de/branchen/energie)**.

@@ -42,6 +42,7 @@ quiz:
         - { text: "Pod-Right-Sizing, Autoscaler-Tuning, Spot-Nutzung, Konsolidierung", correct: true }
         - { text: "Den Wechsel von Kubernetes zu Docker Swarm", correct: false }
       explanation: "Kubernetes-spezifische Optimierung: Pod-Requests und -Limits an der historischen Auslastung ausrichten, Cluster-Autoscaler beziehungsweise Karpenter tunen, Spot- und Preemptible-Kapazität nutzen, Single-Team-Cluster konsolidieren und die Kosten mit OpenCost oder Kubecost auf Namespace- und Workload-Ebene sichtbar machen. Typische Einsparung: 20–50 Prozent des Kubernetes-Spends."
+hreflang_en: /blog/2026/05/cloud-cost-optimization-strategies-2026/
 ---
 
 Begleitung zur **[Cloud-Kostenoptimierungs-Page](/de/loesungen/cloud-kostenoptimierung)**.

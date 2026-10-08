@@ -43,6 +43,7 @@ quiz:
         - { text: "When the platform team rotates onto other work", correct: false }
         - { text: "After the first internal cost audit finishes", correct: false }
       explanation: "Configurational first, captures those savings, then evaluate architectural moves. Skipping configurational leaves money on the table; skipping architectural means optimisation hits a structural ceiling and the operator is stuck."
+hreflang_de: /de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/
 ---
 
 
