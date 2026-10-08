@@ -4,7 +4,7 @@ description: "The new version of Cozystack takes a major step forward in its mod
 date: "2025-08-21"
 author: "Timur Tukaev"
 type: "announcement"
-topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI/ML", "GPU", "Multi-tenancy"]
+topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-v0-35/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-v0-35-b65472b2cdf8"

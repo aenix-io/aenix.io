@@ -4,7 +4,7 @@ description: "We’re thrilled to share that Cozystack has been added to the Clo
 date: "2025-05-21"
 author: "Timur Tukaev"
 type: "news"
-topics: ["Kubernetes", "Cozystack", "AI/ML", "GPU", "CNCF", "Platform Engineering"]
+topics: ["Kubernetes", "Cozystack", "AI and ML", "GPU", "CNCF", "Platform Engineering"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-recognized-in-cncfs-cnai-landscape/cover.png"
 source_url: "https://medium.com/@tym83/cozystack-recognized-in-cncfs-cnai-landscape-331f892b9639"

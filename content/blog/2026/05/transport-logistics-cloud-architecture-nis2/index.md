@@ -5,7 +5,7 @@ date: "2026-05-29"
 cover_image: "/img/blog/covers/transport-logistics-cloud-architecture-nis2.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["NIS2", "Cozystack", "Sovereignty", "AI/ML", "GPU"]
+topics: ["NIS2", "Cozystack", "Sovereignty", "AI and ML", "GPU"]
 language: "en"
 companion_landing: "/industries/transport-logistics/"
 quiz:

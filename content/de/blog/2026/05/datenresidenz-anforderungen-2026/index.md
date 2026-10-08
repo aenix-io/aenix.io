@@ -5,7 +5,7 @@ date: "2026-05-01"
 cover_image: "/img/blog/covers/de/datenresidenz-anforderungen-2026.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup & DR", "Observability"]
+topics: ["DORA", "NIS2", "Sovereignty", "Financial Services", "Backup and DR", "Observability"]
 language: "de"
 companion_landing: "/de/loesungen/data-sovereignty/"
 quiz:

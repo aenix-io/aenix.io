@@ -4,7 +4,7 @@ description: "The open-source cloud platform has introduced direct GPU passthrou
 date: "2025-04-18"
 author: "Timur Tukaev"
 type: "news"
-topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI/ML", "GPU", "Multi-tenancy"]
+topics: ["Kubernetes", "Cozystack", "KubeVirt", "AI and ML", "GPU", "Multi-tenancy"]
 language: "en"
 cover_image: "/img/blog/medium/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines/cover.jpg"
 source_url: "https://medium.com/@tym83/cozystack-now-offers-gpu-passthrough-for-ai-ml-virtual-machines-b8783c0ce358"

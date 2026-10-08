@@ -5,7 +5,7 @@ date: "2026-05-15"
 cover_image: "/img/blog/covers/k12-school-district-cloud-infrastructure.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI/ML", "Multi-tenancy", "Compliance"]
+topics: ["Kubernetes", "Cozystack", "Sovereignty", "AI and ML", "Multi-tenancy", "Compliance"]
 language: "en"
 companion_landing: "/industries/education-k12/"
 quiz:

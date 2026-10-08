@@ -5,7 +5,7 @@ date: "2026-05-13"
 cover_image: "/img/blog/covers/hybrid-cloud-architecture-patterns-2026.jpg"
 author: "Aenix Team"
 type: "tutorial"
-topics: ["AI/ML", "Observability"]
+topics: ["AI and ML", "Observability"]
 language: "en"
 companion_landing: "/solutions/hybrid-cloud-platform/"
 quiz:

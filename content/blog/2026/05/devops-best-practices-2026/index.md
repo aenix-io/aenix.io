@@ -5,7 +5,7 @@ date: "2026-05-09"
 cover_image: "/img/blog/covers/devops-best-practices-2026.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["Kubernetes", "GitOps", "AI/ML", "DevOps", "Observability"]
+topics: ["Kubernetes", "GitOps", "AI and ML", "DevOps", "Observability"]
 language: "en"
 companion_landing: "/services/devops-consulting/"
 quiz:

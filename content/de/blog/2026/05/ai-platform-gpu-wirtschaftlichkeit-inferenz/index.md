@@ -6,7 +6,7 @@ date: "2026-05-01"
 cover_image: "/img/blog/covers/de/ai-platform-gpu-wirtschaftlichkeit-inferenz.jpg"
 author: "Aenix Team"
 type: "article"
-topics: ["AI/ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
+topics: ["AI and ML", "GPU", "Cozystack", "Sovereignty", "Multi-tenancy", "KubeVirt"]
 language: "de"
 hreflang_en: "/blog/2026/05/ai-ml-edition-sustained-gpu-economics/"
 companion_landing: "/de/produkte/ai-platform/"
