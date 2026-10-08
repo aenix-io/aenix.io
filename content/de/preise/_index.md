@@ -172,7 +172,6 @@ Das ist die veröffentlichte Preisliste. Jede Support-Stufe enthält die proprie
 | Externes Monitoring | ✖ | ✖ | ✔ | ✔ |
 | Individuelle Roadmap | ✖ | ✖ | ✔ | ✔ |
 | Priorisierte Entwicklungszeit⁴ | 2 Stunden | 4 Stunden | 15 Stunden | 40 Stunden |
-| Exklusiver Update-Kanal | ✖ | ✖ | ✔ | ✔ |
 
 **Hinweise zur Tabelle**
 
