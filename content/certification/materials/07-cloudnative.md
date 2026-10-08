@@ -169,7 +169,7 @@ You created a tenant — it went through it. The platform installed itself — t
 ## Kubernetes vocabulary that will be asked here too
 
 This exam domain is described as “the seventh topic plus basic terminology”, so it is worth
-going over six terms out loud. The English names are exactly the ones that will appear in the
+going over seven terms out loud. The English names are exactly the ones that will appear in the
 questions.
 
 | Object | What it is and why |
