@@ -257,3 +257,10 @@
     color: var(--text-secondary);
   }
 }
+
+/* Narrow desktops: the container is narrower than the 940px minimum, so the
+   table pushed the page sideways between the card breakpoint and ~1,010px. */
+@media (max-width: 1100px) {
+  .cozy-pricing table { min-width: 0; }
+  .cozy-pricing th, .cozy-pricing td { padding: 12px 10px; }
+}
