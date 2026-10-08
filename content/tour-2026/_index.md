@@ -2,6 +2,7 @@
 title: "Meet Timur Tukaev on the Cozystack Tour 2026"
 description: "Where Timur Tukaev will be in Europe and the US, Oct–Dec 2026, and how to book a meeting, talk, workshop, coffee or podcast recording with him."
 language: "en"
+hreflang_de: "/de/tour-2026/"
 layout: "event-landing"
 page_type: "flag-page"
 primary_keyword: "cozystack tour 2026"
