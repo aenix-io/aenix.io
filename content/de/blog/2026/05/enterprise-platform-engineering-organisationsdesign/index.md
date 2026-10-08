@@ -349,7 +349,7 @@ Schlechte Passung:
   der kleinere Umfang
 - **[Leistungen rund um die Internal Developer Platform](/de/dienstleistungen/internal-developer-platform/)** —
   das Projekt auf der IDP-Ebene
-- **[Produktseite Developer Self-Service](/de/produkte/private-cloud-platform/)** —
+- **[Lösungsseite Developer Self-Service](/de/loesungen/developer-self-service/)** —
   für Organisationen mit Fokus auf Produkt-Engineering
 - **[Produktseite Private Cloud Platform](/de/produkte/private-cloud-platform/)** —
   für regulierte Organisationen
