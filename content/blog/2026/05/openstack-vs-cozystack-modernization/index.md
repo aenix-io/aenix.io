@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["OpenStack", "Kubernetes", "Cozystack", "Sovereignty", "Migration"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/openstack-vs-cozystack-modernisierung/"
 companion_landing: "/alternatives/openstack-alternative/"
 quiz:
   title: "Test yourself: OpenStack modernization"
