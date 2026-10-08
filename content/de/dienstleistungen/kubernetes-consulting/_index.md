@@ -1,60 +1,65 @@
 ---
-title: "Kubernetes Consulting — Engineers, die multi-tenant Plattformen in Produktion betreiben"
-description: "Die meisten Kubernetes-Consulting-Engagements behandeln Kubernetes als generische Compute-Plattform. Die Realität ist, dass Produktions-Kubernetes aus..."
+title: "Kubernetes Consulting — Engineers, die Multi-Tenant-Plattformen in Produktion betreiben"
+seo_title: "Kubernetes Consulting für Multi-Tenant-Produktion"
+description: "Kubernetes Consulting von Engineers, die Multi-Tenant-Cluster produktiv betreiben. Ænix verkauft keine lizenzierte Distribution – die Empfehlung bleibt neutral."
 related_pages:
-  - /de/dienstleistungen/platform-engineering
+  - /de/dienstleistungen/platform-engineering/
+  - /de/dienstleistungen/internal-developer-platform/
+  - /de/dienstleistungen/platform-readiness-assessment/
+  - /de/produkte/
   - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /services/kubernetes-consulting/
 direct_answer: |
-  **Kubernetes-Consulting von Aenix richtet sich an Organisationen, die Produktions-Kubernetes als Multi-Tenant-Plattform betreiben — nicht als generische Compute-Schicht. Aenix ist das Team hinter Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0, und betreibt diese Kubernetes-native Plattform in Produktion mit Service Providern, Banken und KI-Operatoren. Das Consulting deckt Architektur-Review (Distribution, CNI, Storage, Identity, Observability, GitOps), Multi-Tenancy-Design über das Tenant-CRD, operative Praktiken (Cluster-Lifecycle, Backup/DR, Incident Response) und Produktionsbereitschaft ab. Cozystack vereint VMs und Container über KubeVirt auf einer Kubernetes-API, mit Cilium (eBPF) für Networking und LINSTOR/DRBD für Storage. Eigenständiges Consulting ist auch ohne Ænix-Platform-Evaluierung verfügbar.**
+  **Kubernetes Consulting ist Beratungs- und Umsetzungsarbeit, mit der eine Organisation produktionsreifes Kubernetes entwirft, härtet und betreibt — von der Wahl der Distribution über Multi-Tenancy, Networking, Storage, Identity und Observability bis zu GitOps-Disziplin und operativen Runbooks. Es richtet sich an Teams, deren Cluster zwar laufen, aber Probleme machen, die harte Tenant-Isolation brauchen oder von VMware bzw. OpenStack migrieren. Ænix erbringt es mit den Engineers, die Cozystack entwickeln und betreiben — eine Open-Source-, Kubernetes-native CNCF-Plattform, die Service Provider, Banken und KI-Betreiber in Produktion einsetzen. Die Projekte bleiben distributionsneutral: Ænix verkauft keine lizenzierte Distribution und empfiehlt den passenden Stack für den jeweiligen Fall — Cozystack, Vanilla Kubernetes, OpenShift oder eine Herstellerdistribution.**
 quick_facts:
   - label: "Was es ist"
-    value: "Kubernetes-Consulting für Multi-Tenant-Produktionsplattformen — Architektur, Multi-Tenancy, Operations und Produktionsbereitschaft, geliefert vom Team hinter Cozystack."
+    value: "Beratung und praktische Umsetzung für Multi-Tenant-Kubernetes in Produktion — Architektur, Mandantentrennung, Betrieb und Produktionsreife."
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU oder Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
-  - label: "Zielgruppe"
-    value: "Service Provider, Banken und KI-Operatoren, die Produktions-Kubernetes im großen Maßstab zuverlässig betreiben müssen"
-  - label: "Schwerpunkte"
-    value: "Multi-Tenancy (Tenant-CRD, Namespace-Strategie, RBAC, Quotas), Networking (Cilium/eBPF), Storage (LINSTOR/DRBD), Observability, GitOps-Disziplin"
-  - label: "Plattform-Grundlage"
-    value: "Cozystack — Kubernetes-native Plattform, die VMs und Container über KubeVirt auf einer Kubernetes-API vereint"
-  - label: "Engagement"
-    value: "Eigenständiges Consulting verfügbar; erweiterbar auf eine produktisierte Ænix-Plattform (Basic ab 1.250 $/Mon. für 10 Nodes)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Antrag auf Incubation in der Due-Diligence-Prüfung)"
+  - label: "Für wen"
+    value: "Teams mit problematischen Clustern, harten Anforderungen an Multi-Tenancy oder regulierte Isolation, laufenden VMware-/OpenStack-Migrationen oder einem Produktionsreife-Review vor dem GA."
+  - label: "Zeitplan"
+    value: "Architektur-Review 5–10 Tage (Festpreis); Umsetzung 1–6 Monate (Ænix-Engineers arbeiten in Ihrem Team); optional ein Managed-Engagement für den Betrieb mit Rufbereitschaft."
+  - label: "Technische Grundlage"
+    value: "KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) für Networking, LINSTOR/DRBD für Storage, Multi-Tenancy über das Tenant-CRD."
+  - label: "Herstellerposition"
+    value: "Distributionsneutral — Ænix verkauft keine lizenzierte Distribution und empfiehlt je nach Fall Cozystack, Vanilla Kubernetes, OpenShift oder eine Herstellerdistribution."
 faq:
-  - q: "Was unterscheidet das Kubernetes-Consulting von Aenix von anderen Anbietern?"
-    a: "Aenix ist das Team hinter Cozystack, einem CNCF-Sandbox-Projekt, und betreibt die Plattform selbst in Produktion mit Service Providern, Banken und KI-Operatoren. Statt Kubernetes als generische Compute-Plattform zu behandeln, adressiert das Consulting die tatsächlich schwierigen Themen: Multi-Tenancy, Observability, Identität, Networking, Storage-Auswahl und GitOps-Disziplin."
-  - q: "Welche Themen deckt ein Consulting-Engagement ab?"
-    a: "Vier Bereiche: Architektur-Review (Distribution, CNI, Storage, Identity, Observability, GitOps-Engine), Multi-Tenancy-Design (Tenant-CRD, Namespace-Strategie, RBAC, Quotas), operative Praktiken (Cluster-Lifecycle, Backup/DR, Incident Response) und eine Produktionsbereitschaft-Checkliste für Sicherheit, Compliance und Operations."
-  - q: "Muss ich die Ænix Platform kaufen, um Consulting zu erhalten?"
-    a: "Nein. Eigenständiges Consulting ist auch für Organisationen verfügbar, die noch keine Ænix Platform evaluieren. Wenn sich der Scope zu einer produktisierten Cloud-Plattform-Engagement erweitert, kann das Consulting in eine Ænix-Plattform übergehen — Basic beginnt bei 1.250 $/Monat für 10 Nodes."
-  - q: "Welche Technologien liegen der empfohlenen Architektur zugrunde?"
-    a: "Cozystack vereint virtuelle Maschinen und Container über KubeVirt auf einer einzigen Kubernetes-API. Das Networking läuft über Cilium (eBPF), der Storage über LINSTOR/DRBD, und die Mandantenfähigkeit wird über das Tenant-CRD abgebildet. Die gesamte Plattform steht unter Apache 2.0."
-  - q: "Ist Cozystack ein anerkanntes Open-Source-Projekt?"
-    a: "Ja. Cozystack ist ein CNCF-Projekt — Sandbox-Status seit dem 28.02.2025, der Antrag auf Incubating befindet sich in der Due-Diligence-Prüfung. Es steht unter Apache 2.0 und verwendet keine CPU- oder Core-basierte Lizenzierung."
-  - q: "Eignet sich das Consulting für regulierte Branchen wie Banken?"
-    a: "Ja. Aenix betreibt Cozystack in Produktion mit Banken und adressiert im Consulting gezielt Multi-Tenancy-Isolation, RBAC, Backup/DR und eine Produktionsbereitschaft-Checkliste für Compliance — relevant für regulierte Umgebungen mit hohen Sicherheitsanforderungen."
+  - q: "Arbeiten Sie nur mit Cozystack?"
+    a: "Nein. Ænix erweitert die Kubernetes-Distribution, die zum Fall passt. Cozystack empfehlen wir dort, wo Multi-Tenancy und Virtualisierung zählen; für andere Fälle passen Vanilla Kubernetes, OpenShift oder Herstellerdistributionen. Ænix verkauft keine lizenzierte Distribution, deshalb bleibt die Empfehlung neutral."
+  - q: "Worin unterscheidet sich Kubernetes Consulting von einem Managed Service wie EKS, AKS oder GKE?"
+    a: "Managed-Kubernetes-Dienste betreiben die Control Plane für Sie. Consulting befasst sich mit den Architektur- und Betriebsentscheidungen darüber — Wahl der Distribution, Multi-Tenancy-Design, Observability, GitOps und Runbooks. Beides ergänzt sich und ist keine Alternative zueinander."
+  - q: "Was kostet ein typisches Projekt und wie lange dauert es?"
+    a: "Ein Architektur-Review dauert 5–10 Tage zum Festpreis und liefert eine schriftliche Bewertung und eine Zielarchitektur. Die Umsetzung erfolgt nach Aufwand oder mit festem Umfang, typischerweise über 1–6 Monate, mit Ænix-Engineers in Ihrem Team."
+  - q: "Bieten Sie nach der Umsetzung Rufbereitschaft oder 24/7-Support?"
+    a: "Ja, im Rahmen eines Managed-Engagements. Nach einem regulären Umsetzungsprojekt betreibt Ihr Team die Plattform mit dokumentierten Runbooks und übergebenem Wissen; bei einem Managed-Engagement übernimmt Ænix zusätzlich die Rufbereitschaft."
+  - q: "Warum gerade Ænix für Kubernetes Consulting?"
+    a: "Ænix ist das Team hinter Cozystack, einer Open-Source-, Kubernetes-nativen CNCF-Plattform im Produktionseinsatz. Die Empfehlungen stammen aus Systemen, die Ænix selbst baut und betreibt, kommen von Senior-Engineers statt von Analysten und sind frei von Verkaufsinteressen an einer lizenzierten Distribution."
+  - q: "Kann das Consulting in ein Projekt mit einer produktisierten Plattform übergehen?"
+    a: "Ja. Consulting gibt es auch eigenständig; wenn sich die Arbeit in Richtung einer produktisierten Cloud-Plattform entwickelt, kann der Umfang auf eine Ænix-Plattform erweitert werden: Public Cloud Platform und Support für selbst betriebenes Cozystack ab 1.250 USD pro 10 Nodes und Monat, Private Cloud und AI Platform per RFP."
 ---
 
 <!-- BLOCK 1 -->
 
-**Die meisten Kubernetes-Consulting-Engagements behandeln Kubernetes als generische Compute-Plattform. Die Realität ist, dass Produktions-Kubernetes aus spezifischen Gründen schwierig ist: Multi-Tenancy, Observability, Identität, Networking, Storage-Auswahl, GitOps-Disziplin und die operativen Praktiken, die einen Cluster zuverlässig im großen Maßstab halten. Generisches Consulting, das diese Spezifika nicht adressiert, erzeugt einen Cluster, der „funktioniert“, aber nicht gut läuft.**
 
-Ænix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Multi-Tenant-Kubernetes-nativen Plattform, die wir in Produktion mit Service Providern, Banken und KI-Operatoren betreiben. Unsere Kubernetes-Consulting-Engagements bringen dieselben Engineers in Ihr Team.
+**Die meisten Kubernetes-Consulting-Projekte behandeln Kubernetes als generische Compute-Plattform. Tatsächlich ist Kubernetes in Produktion aus ganz bestimmten Gründen schwierig: Multi-Tenancy, Observability, Identity, Networking, die Wahl des Storage, GitOps-Disziplin und die Betriebspraktiken, die einen Cluster auch im großen Maßstab zuverlässig halten. Generisches Consulting, das diese Punkte nicht angeht, liefert einen Cluster, der „funktioniert“, sich aber schlecht betreiben lässt.**
 
-> **Passt zu:** jeder **[Ænix-Plattform](/de/produkte/)**, wenn der Consulting-Scope sich zu einem produktisierten Cloud-Plattform-Engagement erweitert. Eigenständiges Consulting ist auch für Organisationen verfügbar, die Ænix Platform noch nicht evaluieren.
+Ænix ist das Team hinter [Cozystack](/de/produkte/cozystack/), einem Open-Source-CNCF-Projekt — einer Multi-Tenant-, Kubernetes-nativen Plattform, die wir mit Service Providern, Banken und KI-Betreibern in Produktion betreiben. In unseren Kubernetes-Consulting-Projekten arbeiten dieselben Engineers in Ihrem Team.
+
+> **Passt zu:** jeder der drei **[Ænix-Plattformen](/de/produkte/)**, sobald sich der Umfang auf eine produktisierte Cloud-Plattform erweitert. Eigenständiges Consulting ist auch ohne Plattform möglich.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
   <a class="cta-secondary" href="/de/blog/2026/05/produktion-kubernetes-cluster-architektur/">Leitfaden für Produktions-Cluster →</a>
 </div>
 
 <div class="trust-badges">
-Produktions-Multi-Tenancy · Open-Source-Foundation · CNCF-Contributor · Senior-Engineers</div>
+Multi-Tenancy in Produktion · Open-Source-Fundament · CNCF-Contributor · Senior-Engineers</div>
 
 <!-- /BLOCK 1 -->
 
@@ -62,23 +67,17 @@ Produktions-Multi-Tenancy · Open-Source-Foundation · CNCF-Contributor · Senio
 
 <!-- BLOCK 2: WHO -->
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
+## Wer Kubernetes Consulting braucht
 
-## Wer Kubernetes-Consulting braucht
+Das Projekt passt, wenn:
 
-Das Engagement passt, wenn:
+- **Ihr bestehendes Kubernetes läuft, aber Probleme macht** — Drift, Fragmentierung, unklare Zuständigkeiten.
+- **Multi-Tenancy erforderlich ist** — Service-Provider-Modell, harte Trennung von Geschäftsbereichen, regulierte Isolation.
+- **eine konkrete Architekturentscheidung ansteht** — Wahl der Distribution, des Storage oder des Networkings, Einführung von GitOps.
+- **eine Migration läuft** — von VMware, OpenStack oder einem anderen Orchestrator zu Kubernetes.
+- **ein Produktionsreife-Review** vor dem GA ansteht.
 
-- **Bestehendes Kubernetes ist operativ, aber problematisch** — Drift, Fragmentierung, unklares Ownership.
-- **Multi-Tenancy ist erforderlich** — Service-Provider-Modell, harte BU-Trennung, regulierte Isolation.
-- **Spezifische Architektur-Entscheidung** — Distributions-Auswahl, Storage-Auswahl, Networking-Auswahl, GitOps-Einführung.
-- **Migration läuft** — von VMware, OpenStack oder einem anderen Orchestrator zu Kubernetes.
-- **Produktionsbereitschafts-Review** vor dem GA.
-
-Wenn drei oder mehr zutreffen, verzinst sich strukturiertes Consulting schnell. Andernfalls ist eine interne Kompetenz kosteneffizienter.
-
-</div>
-</div>
+Treffen drei oder mehr Punkte zu, zahlt sich strukturiertes Consulting schnell aus. Andernfalls ist es kosteneffizienter, die Kompetenz intern aufzubauen.
 
 <!-- /BLOCK 2 -->
 
@@ -86,31 +85,27 @@ Wenn drei oder mehr zutreffen, verzinst sich strukturiertes Consulting schnell. 
 
 <!-- BLOCK 3: WHAT WE DO -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Was wir abdecken
 
 <div class="grid-2x2">
 
 **1. Architektur-Review**
-Distributions-Auswahl (vanilla / Cozystack / OpenShift / Vendor), CNI-Auswahl, Storage, Identity, Observability, GitOps-Engine. Entscheidungen dokumentiert mit benannten Trade-offs.
+Wahl der Distribution (Vanilla / Cozystack / OpenShift / Hersteller), Wahl des CNI, Storage, Identity, Observability, GitOps-Engine. Entscheidungen werden mit benannten Trade-offs dokumentiert.
 
 **2. Multi-Tenancy-Design**
-Tenant-CRD-Modell, Namespace-Strategie, RBAC, Resource-Quotas, Netzwerk-Isolation, Cluster vs Namespace pro Tenant. Produktions-Patterns.
+Tenant-CRD-Modell, Namespace-Strategie, RBAC, Resource Quotas, Netzwerkisolation, Cluster oder Namespace pro Tenant. Bewährte Muster aus der Produktion.
 
-**3. Operative Praktiken**
-Cluster-Lifecycle (Upgrades, Skalierung, Recovery), Backup und DR (Velero), Observability-Stack, Incident-Response, Capacity-Planning.
+**3. Betriebspraktiken**
+Cluster-Lifecycle (Upgrades, Skalierung, Wiederherstellung), Backup und DR (Velero), Observability-Stack, Incident Response, Kapazitätsplanung.
 
-**4. Produktionsbereitschafts-Checkliste**
-Sicherheitslage (Pod Security Standards, Network Policies, Secrets-Management), Compliance-Lage (Audit-Logging, Zertifizierungen) und Betriebslage (Runbooks, Rufbereitschaft, SLOs).
+**4. Checkliste zur Produktionsreife**
+Sicherheit (Pod Security Standards, Network Policies, Secrets-Management), Compliance (Audit-Logging, Zertifizierungen), Betrieb (Runbooks, Rufbereitschaft, SLOs).
 
 </div>
 
-<div class="arch-section__fig">
-<div class="diagram">
-<div class="diagram__node diagram__node--brand"><b>Kubernetes-Consulting</b><div class="diagram__chips"><span>Team hinter Cozystack</span><span>Senior-Engineers, keine Analysten</span></div></div>
-<div class="diagram__conn">deckt ab</div>
-<div class="diagram__node"><b>Multi-Tenant-Produktionsplattform</b><div class="diagram__chips"><span>Architektur-Review</span><span>Multi-Tenancy-Design (Tenant-CRD)</span><span>Operative Praktiken</span><span>Produktionsbereitschafts-Checkliste</span></div></div>
-<div class="diagram__conn">läuft auf</div>
-<div class="diagram__node"><b>Cozystack (Apache 2.0)</b><div class="diagram__chips"><span>VMs und Container über KubeVirt</span><span>Cilium (eBPF) Networking</span><span>LINSTOR/DRBD Storage</span></div></div>
 </div>
 </div>
 
@@ -120,21 +115,21 @@ Sicherheitslage (Pod Security Standards, Network Policies, Secrets-Management), 
 
 <!-- BLOCK 4: COMMON FAILURES -->
 
-## Häufige Fehler bei Kubernetes-Deployments
+## Typische Fehler bei Kubernetes-Deployments
 
 <div class="gap-cards-2">
 
-**Distribution nach Vertrautheit gewählt, nicht nach Eignung**
-„Wir sind ein OpenShift-Shop“ — selbst wenn OpenShift für einen Multi-Tenant-Cloud-Use-Case Komplexität hinzufügt, in dem Cozystack besser passen würde. Die Distributions-Auswahl ist strukturell.
+**Distribution nach Gewohnheit gewählt, nicht nach Eignung**
+„Wir sind ein OpenShift-Haus“ — selbst wenn OpenShift für einen Multi-Tenant-Cloud-Anwendungsfall unnötige Komplexität bringt und Cozystack besser passen würde. Die Wahl der Distribution ist eine strukturelle Entscheidung.
 
-**Multi-Tenancy aufgesetzt statt eingebaut**
-Cluster startete als Single-Team; Multi-Tenancy später über Namespaces und Konvention hinzugefügt. Kippt im großen Maßstab oder unter Regulator-Audit.
+**Multi-Tenancy nachträglich aufgesetzt statt von Anfang an eingeplant**
+Der Cluster startete für ein einzelnes Team; Multi-Tenancy kam später über Namespaces und Konventionen hinzu. Das bricht im großen Maßstab oder bei einer Prüfung durch die Aufsicht zusammen.
 
-**Observability nicht investiert**
-Prometheus ohne Retention-Pläne deployt, Grafana-Dashboards aus Blog-Posts kopiert. Kippt im Produktions-Maßstab.
+**Keine Investition in Observability**
+Prometheus ohne Plan für die Aufbewahrung ausgerollt, Grafana-Dashboards aus Blogposts kopiert. Das hält dem Produktionsmaßstab nicht stand.
 
-**Kein Platform-Team-Ownership**
-Mehrere Teams tragen Änderungen ohne Koordination bei. Drift akkumuliert. Upgrades werden zu Notfällen.
+**Kein Platform-Team mit klarer Verantwortung**
+Mehrere Teams ändern ohne Abstimmung. Drift sammelt sich an. Upgrades werden zu Notfällen.
 
 </div>
 
@@ -144,13 +139,25 @@ Mehrere Teams tragen Änderungen ohne Koordination bei. Drift akkumuliert. Upgra
 
 <!-- BLOCK 5: HOW WE ENGAGE -->
 
-## Wie Ænix arbeitet
+## So arbeitet Ænix
 
-- **Architektur-Review (5-10 Tage)** — fokussiertes Engagement, schriftliches Ergebnis, Ziel-Architektur.
-- **Implementations-Engagement (1-6 Monate)** — Ænix-Engineers integriert mit Ihrem Team, Aufbau von Cluster-Foundation, Multi-Tenancy, Observability, Runbooks.
+<div class="arch-section__fig">
+<div class="diagram">
+<div class="diagram__node"><b>Discovery-Gespräch</b><div class="diagram__chips"><span>30 Min.</span><span>Kostenlos</span><span>Passung klären</span></div></div>
+<div class="diagram__conn">dann</div>
+<div class="diagram__node diagram__node--brand"><b>Architektur-Review</b><div class="diagram__chips"><span>5–10 Tage</span><span>Festpreis</span><span>Zielarchitektur</span></div></div>
+<div class="diagram__conn">führt zu</div>
+<div class="diagram__node"><b>Umsetzungsprojekt</b><div class="diagram__chips"><span>1–6 Monate</span><span>In Ihrem Team</span><span>Runbooks</span></div></div>
+<div class="diagram__conn">optional</div>
+<div class="diagram__node"><b>Managed-Engagement</b><div class="diagram__chips"><span>Betrieb mit Rufbereitschaft</span></div></div>
+</div>
+</div>
+
+- **Architektur-Review (5–10 Tage)** — fokussiertes Projekt, schriftliches Ergebnis, Zielarchitektur.
+- **Umsetzungsprojekt (1–6 Monate)** — Ænix-Engineers arbeiten in Ihrem Team und bauen Cluster-Fundament, Multi-Tenancy, Observability und Runbooks auf.
 - **Managed-Kubernetes-Engagement** — für Organisationen, die die Plattform brauchen, aber keine Betriebskapazität haben.
 
-Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+Für eine tiefere Bewertung mit breiterem Umfang siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 <!-- /BLOCK 5 -->
 
@@ -160,10 +167,8 @@ Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessmen
 
 ## Warum gerade Ænix
 
-- **Cozystack-Contributor und -Betreiber.** Wir haben die Open-Source-Plattform gebaut und betreiben sie. Die Kubernetes-Empfehlungen stammen aus Systemen, die wir in Produktion betreiben.
-- **Senior-Engineers, keine Analysten.** Kein Bait-and-Switch.
-- **Open-Source-Bias.** Wir verkaufen keine lizenzierten Distributionen. Die Empfehlung ist der richtige Kubernetes-Stack für Ihren Fall.
-- **EU- + Zentralasien-Teams.** Zeitzonen-freundlich für europäische Kunden.
+- **Wir verkaufen keine lizenzierte Distribution.** Genau deshalb lohnt es sich, uns zu fragen, welche Sie betreiben sollten. Ein Beratungshaus mit eigener OpenShift- oder Tanzu-Sparte hat die Antwort, bevor die Frage gestellt ist.
+- **Wir haben selbst eine geschrieben.** Cozystack haben wir initiiert; es läuft in Produktion bei Service Providern, Banken und KI-Betreibern. Die Empfehlungen zu Multi-Tenancy und Storage stammen aus dem Betrieb, nicht aus der Lektüre.
 
 <!-- /BLOCK 6 -->
 
@@ -173,9 +178,9 @@ Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessmen
 
 | Wann | Was | Ergebnis |
 |---|---|---|
-| **Tag 0** | 30-min Discovery-Call (kostenlos) | Fit bestätigen |
-| **Phase 1: Architektur-Review (5-10 Tage)** | Fokussierter Review | Schriftliche Bewertung, Ziel-Architektur |
-| **Phase 2: Implementation (1-6 Monate)** | Integriert mit Ihrem Team | Produktionsreifer Cluster, Runbooks, Knowledge-Transfer |
+| **Tag 0** | 30-minütiges Discovery-Gespräch (kostenlos) | Passung klären |
+| **Phase 1: Architektur-Review (5–10 Tage)** | Fokussiertes Review | Schriftliche Bewertung, Zielarchitektur |
+| **Phase 2: Umsetzung (1–6 Monate)** | In Ihrem Team | Produktionsreifer Cluster, Runbooks, Wissenstransfer |
 
 <!-- /BLOCK 7 -->
 
@@ -183,55 +188,36 @@ Für tiefere Bewertung mit breiterem Scope siehe **[Platform Readiness Assessmen
 
 <!-- BLOCK 8: PROOF -->
 
-## Engagements, die wir durchgeführt haben
+## Unternehmen, die Plattformen mit Ænix betreiben
 
 {{< clients >}}
 
 {{< quote-carousel >}}
-Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
+Die Logos oben stehen für produktive Installationen der Ænix Public Cloud Platform. Namentliche Referenzen aus Projekten unter NDA nennen wir im Discovery-Gespräch.
 <!-- /BLOCK 8 -->
 
 ---
 
-<!-- BLOCK 9: PRICING -->
-
-<div class="pricing-cards-2">
-
-### Architektur-Review (5-10 Tage)
-Festpreis.
-**Auf Anfrage**
-
-### Implementations-Engagement
-nach Aufwand oder zum Festpreis. Phase 2 typischerweise 1-6 Monate.
-**Auf Anfrage**
-
-</div>
-
-<!-- /BLOCK 9 -->
+Das Architektur-Review hat einen Festpreis; die Umsetzung erfolgt nach Aufwand oder mit festem Umfang, je nachdem, wie klar der Umfang bei Vertragsschluss ist. Beides wird nach dem Discovery-Gespräch angeboten.
 
 ---
 
 <!-- BLOCK 10: FAQ -->
-
-
-**Weitere Fragen?** Siehe **[den Leitfaden zum Produktions-Cluster-Setup](/de/blog/2026/05/produktion-kubernetes-cluster-architektur/)** oder **[sprechen Sie mit uns](#discovery)**.
-
-<!-- /BLOCK 10 -->
 
 ---
 
 <!-- BLOCK 11: CTA -->
 
 <a id="discovery"></a>
-## Starten Sie mit einem 30-minütigen Discovery-Call
+## Beginnen Sie mit einem 30-minütigen Discovery-Gespräch
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
-- **[Leitfaden zum Produktions-Cluster-Setup](/de/blog/2026/05/produktion-kubernetes-cluster-architektur/)**
-- **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)** — breiterer Scope
-- **[Cozystack](/de/produkte/cozystack/)** — Open-Source-Plattform-Foundation
+- **[Leitfaden zum Aufbau von Produktions-Clustern](/de/blog/2026/05/produktion-kubernetes-cluster-architektur/)**
+- **[Platform Engineering Services](/de/dienstleistungen/platform-engineering/)** — breiterer Umfang
+- **[Cozystack](/de/produkte/cozystack/)** — Open-Source-Fundament der Plattform
 
 <!-- /BLOCK 11 -->
 
@@ -239,6 +225,6 @@ nach Aufwand oder zum Festpreis. Phase 2 typischerweise 1-6 Monate.
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix ist das Team hinter Cozystack — einem CNCF-Projekt, Kubernetes Certified Distribution, OpenSSF Best Practices.*
+*Ænix ist das Team hinter Cozystack — CNCF-Projekt, zertifizierte Kubernetes-Distribution (CNCF Certified Kubernetes), OpenSSF Best Practices.*
 
 <!-- /BLOCK 12 -->
