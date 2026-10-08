@@ -6,6 +6,7 @@ author: "Timur Tukaev"
 type: "article"
 topics: ["Platform Engineering", "CNCF", "Storage", "DevOps", "Kubernetes", "Cozystack"]
 language: "en"
+hreflang_de: "/de/blog/2026/04/rwx-readwritemany-volumes-cozystack-shared-storage/"
 cover_image: "/img/blog/medium/rwx-readwritemany-volumes-in-cozystack-native-shared-storage-for-your-workloads/cover.jpg"
 source_url: "https://blog.aenix.io/rwx-readwritemany-volumes-in-cozystack-native-shared-storage-for-your-workloads-485de0775faa"
 quiz:
