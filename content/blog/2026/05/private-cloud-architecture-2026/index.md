@@ -132,7 +132,7 @@ A modern private cloud has six functional layers:
 
 ### Pattern 3: VMware Cloud Foundation (VCF) — legacy
 
-**What:** vSphere + vSAN + NSX + vCD + vRealize. Closed source, subscription-licensed.
+**What:** vSphere + vSAN + NSX + vCD + Aria (formerly vRealize). Closed source, subscription-licensed.
 
 **Best for:** Existing VMware estates that haven't yet been triggered out by Broadcom economics.
 
