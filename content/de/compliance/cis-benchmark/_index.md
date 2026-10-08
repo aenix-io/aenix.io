@@ -1,6 +1,7 @@
 ---
 title: "CIS-Kubernetes-Benchmark-Ergebnisse für die Ænix-Plattformen"
-description: "kube-bench-Lauf hinter den Aenix-Plattformen: CIS v1.12 gegen Cozystack v1.6 auf Talos — 54 bestanden, 24 fehlgeschlagen, nur vier echte Abweichungen."
+seo_title: "CIS Kubernetes Benchmark: Ergebnisse der Ænix-Plattformen"
+description: "kube-bench-Lauf hinter den Ænix-Plattformen: CIS v1.12 gegen Cozystack v1.6 auf Talos — 54 bestanden, 24 fehlgeschlagen, nur vier echte Abweichungen."
 page_type: "solution-landing"
 language: "de"
 quick_facts_style: "rows"
@@ -32,8 +33,8 @@ quick_facts:
   - label: "Vergebenes Urteil"
     value: "Keines. Der CIS-Benchmark vergibt kein Bestanden/Nicht-bestanden; Compliance ist eine Beurteilung eines konkreten Clusters."
 faq:
-  - q: "Ist das ein CIS-Benchmark-Lauf von Cozystack oder von der Aenix-Plattform?"
-    a: "Von Cozystack, und zwar bewusst. Die Aenix-Plattformen sind Distributionen von Cozystack — dem Apache-2.0-lizenzierten CNCF-Projekt, das Aenix entwickelt und pflegt —, es gibt also keine separate geschlossene Engine zum Benchmarken. Eine Kontrolle, die auf Cozystack besteht, besteht auch auf der darauf gebauten Plattform, und eine Abweichung dort ist eine Abweichung hier. Wichtiger ist die Einschränkung beim Geltungsbereich: Dieser Lauf umfasst den Management-Cluster, und mehrere der gemessenen Einstellungen stammen aus der zum Installationszeitpunkt angewendeten Talos-Maschinenkonfiguration und nicht aus der Software — ein Lauf auf Ihrer Installation darf also legitim abweichen."
+  - q: "Ist das ein CIS-Benchmark-Lauf von Cozystack oder von der Ænix-Plattform?"
+    a: "Von Cozystack, und zwar bewusst. Die Ænix-Plattformen sind Distributionen von Cozystack — dem Apache-2.0-lizenzierten CNCF-Projekt, das Ænix initiiert hat und mitpflegt —, und die proprietären Ænix-Module (WHMCS-Integration, Billing- und Portal-Komponenten) laufen darauf, ohne irgendetwas zu verändern, was ein Benchmark misst. Eine Kontrolle, die auf Cozystack besteht, besteht auch auf der darauf gebauten Plattform, und eine Abweichung dort ist eine Abweichung hier. Wichtiger ist die Einschränkung beim Geltungsbereich: Dieser Lauf umfasst den Management-Cluster, und mehrere der gemessenen Einstellungen stammen aus der zum Installationszeitpunkt angewendeten Talos-Maschinenkonfiguration und nicht aus der Software — ein Lauf auf Ihrer Installation darf also legitim abweichen."
   - q: "Ist die Plattform CIS-Kubernetes-Benchmark-zertifiziert?"
     a: "Nein, und nichts ist es. Der Benchmark vergibt kein Bestanden/Nicht-bestanden — er ist eine Liste von Kontrollen, und Compliance ist eine Beurteilung eines konkreten Clusters durch denjenigen, der ihn prüft. Im hier veröffentlichten Lauf bestehen 54 Kontrollen, und vier Abweichungen sind es wert, geschlossen zu werden. Von den übrigen zwanzig prüfen rund fünfzehn Dateirechte auf einem unveränderlichen Knoten, drei ein Flag, das die strukturierte Autorisierung abgelöst hat, eine erwartet eine kubelet-Unit-Datei, für die Talos keine Verwendung hat, und eine einen kube-proxy, den Cilium ersetzt hat."
   - q: "Warum schlagen so viele CIS-Prüfungen auf Talos Linux fehl?"
@@ -59,9 +60,9 @@ Diese Seite veröffentlicht den vollständigen Lauf, nicht nur den schmeichelhaf
 
 ## Was gemessen wurde, und woran
 
-CIS Kubernetes Benchmark v1.12, ausgeführt von [kube-bench](https://github.com/aquasec/kube-bench) v0.12.0 gegen **Cozystack v1.6 auf Kubernetes v1.34.3**, am 18. August 2026. Control-Plane-Prüfungen liefen auf einem Control-Plane-Knoten, Worker-Prüfungen auf einem Worker.
+CIS Kubernetes Benchmark v1.12, ausgeführt von [kube-bench](https://github.com/aquasecurity/kube-bench) v0.12.0 gegen **Cozystack v1.6 auf Kubernetes v1.34.3**, am 18. August 2026. Control-Plane-Prüfungen liefen auf einem Control-Plane-Knoten, Worker-Prüfungen auf einem Worker.
 
-**Lesen Sie den Prüfgegenstand genau, denn darum geht es.** Der Lauf richtet sich gegen Cozystack — die quelloffene, Apache-2.0-lizenzierte, bei der CNCF gehostete Engine, die Ænix entwickelt und pflegt — und nicht gegen ein separates proprietäres Produkt. Ein solches gibt es nicht: Die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform sind Distributionen genau dieser Engine. Eine Kontrolle, die hier besteht, besteht auf der Plattform; eine Abweichung hier ist eine Abweichung dort. Was Ænix um die Engine herum liefert — die zum Installationszeitpunkt angewendete Talos-Maschinenkonfiguration, die Referenzarchitektur, die Runbooks — ist genau der Ort, aus dem mehrere der folgenden Einstellungen stammen. Deshalb ist derselbe Benchmark auf Ihrer Installation ein anderer Lauf und kann andere Summen liefern.
+**Lesen Sie den Prüfgegenstand genau, denn darum geht es.** Der Lauf richtet sich gegen Cozystack — die quelloffene, Apache-2.0-lizenzierte, bei der CNCF gehostete Engine, die Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform basieren auf genau dieser Engine; die proprietären Ænix-Module (WHMCS-Integration, Billing- und Portal-Komponenten) laufen darauf und verändern nichts von dem, was dieser Benchmark prüft. Eine Kontrolle, die hier besteht, besteht auf der Plattform; eine Abweichung hier ist eine Abweichung dort. Was Ænix um die Engine herum liefert — die zum Installationszeitpunkt angewendete Talos-Maschinenkonfiguration, die Referenzarchitektur, die Runbooks — ist genau der Ort, aus dem mehrere der folgenden Einstellungen stammen. Deshalb ist derselbe Benchmark auf Ihrer Installation ein anderer Lauf und kann andere Summen liefern.
 
 **Geltungsbereich: der Management-Cluster** — die Talos-Knoten und die Kubernetes-Control-Plane, auf der die Plattform selbst läuft. Tenant-Kubernetes-Cluster sind von diesen Zahlen nicht abgedeckt. Ihre Control Planes sind Kamaji-Deployments mit eigenen API-Server-Flags und eigenem etcd; die Abschnitte 1, 2 und 3 müssen für sie separat bewertet werden.
 
@@ -126,7 +127,7 @@ authorizers:
   type: RBAC
 ```
 
-Beide Authorizer sind aktiv, `AlwaysAllow` kommt nirgends vor. Das ist kein Fall von veraltetem Benchmark: CIS v1.12 ist die aktuelle Revision und deckt Kubernetes 1.32 bis 1.34 ab, während die strukturierte Autorisierung in 1.32 allgemein verfügbar wurde. Die Kontrolle prüft schlicht weiterhin auf ein Flag, auf das ein konformes modernes Cluster verzichten darf. Rechnen Sie mit weiteren False Positives dieser Bauart. Sie zu widerlegen heißt, die Konfiguration zu lesen, nicht das Werkzeug erneut laufen zu lassen.
+Beide Authorizer sind aktiv, `AlwaysAllow` kommt nirgends vor. Das ist kein Fall von veraltetem Benchmark: CIS v1.12 ist die aktuelle Revision und deckt Kubernetes 1.32 bis 1.34 ab, während die strukturierte Autorisierung in 1.32 allgemein verfügbar wurde. Die Kontrolle prüft schlicht weiterhin auf ein Flag, auf das ein konformer moderner Cluster verzichten darf. Rechnen Sie mit weiteren False Positives dieser Bauart. Sie zu widerlegen heißt, die Konfiguration zu lesen, nicht das Werkzeug erneut laufen zu lassen.
 
 ### Beide Worker-Fehlschläge sind architektonisch
 
@@ -188,7 +189,7 @@ Warnungen sind manuelle Prüfungen: Der Benchmark kann sie nicht entscheiden, al
 - **Jeder Tenant wird mit Cilium-Netzwerk-Policies erzeugt**, die Verkehr aus anderen Tenants abweisen — nachweisbar mit einem Cross-Tenant-Test; die Kommandos stehen auf der [PCI-DSS-Seite](/de/compliance/pci-dss/).
 - **Die Tenant-Rolle trägt kein `get secrets`.** Lesen Sie das als Least Privilege an der API-Oberfläche, nicht als Vertraulichkeitsgrenze: Wer in einem Namespace Workloads planen darf, kann die Secrets dieses Namespaces in einen Pod mounten.
 
-Die übrigen Warnungen — insbesondere Client-Zertifikate und Service-Account-Tokens als Benutzer-Credentials — hängen davon ab, wie Sie das Cluster betreiben, nicht davon, wie es ausgeliefert wird.
+Die übrigen Warnungen — insbesondere Client-Zertifikate und Service-Account-Tokens als Benutzer-Credentials — hängen davon ab, wie Sie den Cluster betreiben, nicht davon, wie es ausgeliefert wird.
 
 ---
 
@@ -252,7 +253,7 @@ Die Ausnahme, die dieser Job von der Admission braucht, ist bewusst und temporä
 
 ## Wo das hingehört
 
-Ein CIS-Lauf ist ein Test eines Clusters zu einem Zeitpunkt. Er sagt nichts darüber, ob das Cluster sich wie Kubernetes verhält — das ist die [Kubernetes-Konformität](/de/compliance/kubernetes-conformance/) — und nichts über die organisatorische Hälfte eines Compliance-Programms, wo [DORA](/de/compliance/dora/) und das [DORA-Readiness-Engagement](/de/loesungen/dora-compliance/) ansetzen. Für Finanzunternehmen sowie für wesentliche und wichtige Einrichtungen unter NIS2 liegt die aufsichtsgerichtete Arbeit auf den Seiten [DORA](/de/loesungen/dora-compliance/) und [NIS2](/de/loesungen/nis2-compliance/); diese Seite ist eines der Artefakte, die solche Engagements erzeugen.
+Ein CIS-Lauf ist ein Test eines Clusters zu einem Zeitpunkt. Er sagt nichts darüber, ob der Cluster sich wie Kubernetes verhält — das ist die [Kubernetes-Konformität](/de/compliance/kubernetes-conformance/) — und nichts über die organisatorische Hälfte eines Compliance-Programms, wo [DORA](/de/compliance/dora/) und das [DORA-Readiness-Engagement](/de/loesungen/dora-compliance/) ansetzen. Für Finanzunternehmen sowie für wesentliche und wichtige Einrichtungen unter NIS2 liegt die aufsichtsgerichtete Arbeit auf den Seiten [DORA](/de/loesungen/dora-compliance/) und [NIS2](/de/loesungen/nis2-compliance/); diese Seite ist eines der Artefakte, die solche Engagements erzeugen.
 
 <div class="cta-row">
   <a class="cta-primary" href="/de/kontakt/">Rohbericht anfordern</a>
