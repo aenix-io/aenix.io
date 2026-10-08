@@ -6,8 +6,8 @@ description: "Red Hat OpenShift OVE per-socket subscriptions vs Cozystack per-no
 type: "page"
 page_type: "flag-page"
 language: "en"
-date: 2026-08-22
-lastmod: 2026-08-22
+date: 2026-10-08
+lastmod: 2026-10-08
 weight: 20
 robots: "index,follow"
 images: ["img/og/og-tco-vs-openshift.jpg"]
@@ -25,7 +25,7 @@ related_pages:
      (title, description, self-canonical /tco-calculator/vs-openshift/). -->
 <article class="tco-spoke tco-tier-1">
   <h2>OpenShift Virtualization vs Cozystack — 5-year TCO</h2>
-  <p class="stamp">Last updated: <time datetime="2026-08-22">2026-08-22</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
+  <p class="stamp">Last updated: <time datetime="2026-10-08">2026-10-08</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
   <p class="lead">Cozystack 5-year TCO for 200 VMs is $342,915 vs OpenShift Virtualization Engine (OVE) $374,618, at typical negotiated prices, Q3 2026 (including one-time migration costs).</p>
   <!-- calculator widget: eager iframe, fixed size (no CLS); the app URL stays noindex,indexifembedded -->
   <iframe src="/tco-calculator-app/?vs=openshift" title="Cozystack TCO Calculator — vs OpenShift Virtualization Engine (OVE)" loading="eager" width="100%" height="900"></iframe>
@@ -109,7 +109,7 @@ related_pages:
     "price": "0",
     "priceCurrency": "USD"
   },
-  "dateModified": "2026-08-22",
+  "dateModified": "2026-10-08",
   "publisher": { "@id": "https://aenix.io/#org" }
 }
 </script>

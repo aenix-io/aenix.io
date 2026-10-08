@@ -6,8 +6,8 @@ description: "Virtuozzo Hybrid Infrastructure vs Cozystack: default TCO tables f
 type: "page"
 page_type: "flag-page"
 language: "en"
-date: 2026-08-22
-lastmod: 2026-08-22
+date: 2026-10-08
+lastmod: 2026-10-08
 weight: 30
 robots: "index,follow"
 images: ["img/og/og-tco-vs-virtuozzo.jpg"]
@@ -25,7 +25,7 @@ related_pages:
      (title, description, self-canonical /tco-calculator/vs-virtuozzo/). -->
 <article class="tco-spoke tco-tier-2">
   <h2>Virtuozzo vs Cozystack — 5-year TCO</h2>
-  <p class="stamp">Last updated: <time datetime="2026-08-22">2026-08-22</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
+  <p class="stamp">Last updated: <time datetime="2026-10-08">2026-10-08</time> · dataset v0.2.0 · FX pinned 2026-07-01 · prices as of Q3 2026 · <a href="/tco-calculator/methodology/">methodology &amp; sources</a></p>
   <p class="lead">Cozystack 5-year TCO for 200 VMs is $342,915 vs Virtuozzo Hybrid Infrastructure $861,429, at typical negotiated prices, Q3 2026 (including one-time migration costs).</p>
   <!-- calculator widget: eager iframe, fixed size (no CLS); the app URL stays noindex,indexifembedded -->
   <iframe src="/tco-calculator-app/?vs=virtuozzo" title="Cozystack TCO Calculator — vs Virtuozzo Hybrid Infrastructure" loading="eager" width="100%" height="900"></iframe>
@@ -102,7 +102,7 @@ related_pages:
     "price": "0",
     "priceCurrency": "USD"
   },
-  "dateModified": "2026-08-22",
+  "dateModified": "2026-10-08",
   "publisher": { "@id": "https://aenix.io/#org" }
 }
 </script>
