@@ -1,6 +1,7 @@
 ---
 title: "For CISOs & Compliance Leads — sovereignty you can evidence"
-description: "DORA, NIS2 and data-residency turn cloud into a control problem. Run regulated workloads on a platform where keys, hardware and jurisdiction are yours."
+seo_title: "Sovereign cloud platform for CISOs and compliance leads"
+description: "DORA, NIS2 and data residency turn cloud into a control problem. Run regulated workloads on a platform where hardware, jurisdiction and access are yours."
 hero_subtitle: "Sovereignty you can evidence for DORA and NIS2"
 type: "page"
 language: "en"
@@ -17,7 +18,7 @@ related_pages:
 
 <!-- BLOCK 1: HERO -->
 
-**DORA, NIS2 and data-residency turned cloud into a control-and-evidence problem: prove where data lives, who holds the keys, how far the supplier chain reaches. You need a platform where the answers are structural — your hardware, your jurisdiction, your keys. Ænix delivers it turnkey, or builds it with you.**
+**DORA, NIS2 and data-residency turned cloud into a control-and-evidence problem: prove where data lives, who holds the keys, how far the supplier chain reaches. You need a platform where the answers are structural — your hardware, your jurisdiction, your access rules. Ænix delivers it turnkey, or builds it with you.**
 
 > **Pairs with:** **[DORA](/solutions/dora-compliance/)**, **[NIS2](/solutions/nis2-compliance/)** and **[data-sovereignty](/solutions/data-sovereignty/)** engagements, **[Ænix Private Cloud Platform](/products/private-cloud-platform/)**, on open-source **[Cozystack](/products/cozystack/)**.
 
@@ -27,7 +28,7 @@ related_pages:
 </div>
 
 <div class="trust-badges">
-EU-based engineers · Customer-held keys · No hyperscaler bias · Audit-ready deliverables
+Your hardware and jurisdiction · ISO/IEC 27001 (AENIX s.r.o.) · No hyperscaler bias
 </div>
 
 <!-- /BLOCK 1 -->
@@ -45,13 +46,13 @@ EU-based engineers · Customer-held keys · No hyperscaler bias · Audit-ready d
 
 ## What you're actually trying to do
 
-Move regulated workloads onto infrastructure where sovereignty is a property of the architecture: data residency demonstrable at every layer, encryption keys in your custody, supplier chain transparent past the first hop, and audit trails exportable — so you pass supervision rather than hope to.
+Move regulated workloads onto infrastructure where sovereignty is a property of the architecture: data residency you can demonstrate for production data, backups and observability, encryption you control, a supplier chain transparent past the first hop, and audit trails you can export — so you pass supervision rather than hope to.
 
 ---
 
 ## Two ways Ænix helps you
 
-**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) runs on your hardware in your jurisdiction, with customer-controlled keys at every data layer (primary, replicas, backups, observability) and an air-gap option — the regulated cloud you operate with our SLA.
+**1. Run a turnkey platform.** [Ænix Private Cloud Platform](/products/private-cloud-platform/) runs on your hardware in your jurisdiction, with opt-in volume encryption whose key handling is designed with you, backups to storage outside the cluster, and an air-gapped option — the regulated cloud you operate, with Ænix support behind it. The measured evidence for each control is on the [compliance evidence pages](/compliance/).
 
 **2. Assess and build with our team.** Cozystack is the framework; **Ænix is your engineering and assessment team** for [DORA](/solutions/dora-compliance/), [NIS2](/solutions/nis2-compliance/) and [data-sovereignty](/solutions/data-sovereignty/) work — a control-level map of where data lives today, the gaps, and the remediation build.
 
@@ -62,7 +63,8 @@ Move regulated workloads onto infrastructure where sovereignty is a property of 
 - **What it is:** a sovereign-by-architecture cloud platform for regulated workloads.
 - **Who it's for:** CISOs, Heads of Compliance / Risk, DORA/NIS2 programme owners.
 - **Key dates:** DORA in force **2025-01-17**; NIS2 covers **18 sectors** in Annex I/II.
-- **Control:** customer-held encryption keys; cluster-level access; air-gap supported.
+- **Control:** your hardware and cluster-level access; opt-in volume encryption; air-gapped installs supported.
+- **Vendor certification:** AENIX s.r.o. holds ISO/IEC 27001:2022 for its own ISMS ([certificate](/compliance/iso-27001/)). There is no SOC 2 report.
 - **Status:** built on [Cozystack](https://cozystack.io), CNCF project (Sandbox 2025-02-28; Incubating application in due diligence), Apache 2.0.
 - **Common pitfall:** production data is in-region but observability/backups leave the perimeter unnoticed.
 
@@ -72,9 +74,10 @@ Move regulated workloads onto infrastructure where sovereignty is a property of 
 
 ## Why CISOs pick Ænix
 
-- **Sovereignty is structural.** Your hardware, jurisdiction and keys — not a contractual promise on a hyperscaler.
+- **Sovereignty is structural.** Your hardware, your jurisdiction and your access rules — not a contractual promise on a hyperscaler.
+- **Evidence, not assertions.** Control-level results (CIS Benchmark, PCI DSS, GDPR, DORA) are published on the [compliance pages](/compliance/), including what the platform does not do.
 - **No provider bias.** We aren't tied to any cloud; the report's bias is toward what we can demonstrate.
-- **Engineers who also build.** The same team that assesses runs the remediation — EU-based.
+- **Engineers who also build.** The same team that assesses runs the remediation. Engineering teams in the EU and Central Asia; EU contracts through AENIX s.r.o. (Czech Republic).
 
 ---
 
@@ -90,7 +93,7 @@ Not always. The engagement determines per data class what needs dedicated infras
 See [DORA compliance](/solutions/dora-compliance/) and [NIS2 compliance](/solutions/nis2-compliance/) for the article-level control mapping.
 
 **Who holds the encryption keys?**
-You do — at every data layer, with documented rotation and emergency access.
+Volume encryption (LUKS on LINSTOR) is opt-in per storage class, and its key handling — custody, rotation, emergency access — is designed with you during the build. The [GDPR evidence page](/compliance/gdpr/) describes exactly what the platform does and does not do here.
 
 **Can we run this under public-sector procurement?**
 Yes — we accept RFI/RFP through standard EU member-state and Kazakhstan channels.
@@ -99,7 +102,7 @@ Yes — we accept RFI/RFP through standard EU member-state and Kazakhstan channe
 
 ## Start with a 30-minute discovery call
 
-Free, no prep. We narrow the scope to the regulators and clauses that bind you, and tell you whether the assessment, the turnkey edition, or a build fits.
+Free, no prep. We narrow the scope to the regulators and clauses that bind you, and tell you whether the assessment, the turnkey platform, or a build fits.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -108,7 +111,7 @@ Free, no prep. We narrow the scope to the regulators and clauses that bind you, 
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!--
 SEO/GEO:
