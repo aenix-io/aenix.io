@@ -37,7 +37,7 @@ faq:
   - q: "Können wir GenAI auf sensiblen Schaden- und Underwriting-Daten betreiben, ohne sie in eine Public Cloud zu schicken?"
     a: "Ja. Die AI Platform betreibt KI für Schadenbearbeitung, Underwriting und Betrugserkennung auf privater LLM-Infrastruktur in Ihrer eigenen souveränen Umgebung, sodass regulierte Versicherungsdaten auf Infrastruktur unter Ihrer Kontrolle bleiben statt bei einem KI-Dienst in der Public Cloud."
   - q: "Worauf basiert die Plattform?"
-    a: "Auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs und Container über KubeVirt auf einer Kubernetes-API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Mandantenfähigkeit über Tenant-CRDs. Ænix verkauft darauf Plattform-Abonnements und Services."
+    a: "Auf Cozystack, einem CNCF-Sandbox-Projekt unter Apache 2.0, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs und Container über KubeVirt auf einer Kubernetes-API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Mandantenfähigkeit über Tenant-CRDs. Ænix verkauft darauf Plattform-Abonnements und Services."
   - q: "Wie hilft das Versicherern beim Ausstieg aus VMware?"
     a: "Cozystack betreibt virtuelle Maschinen und Container über KubeVirt auf einer Kubernetes-API, sodass bestehende VM-Workloads auf eine einzige Plattform migrieren. Die Apache-2.0-Lizenz kennt keine Gebühren pro CPU oder Core und nimmt damit den Kostendruck der VCF-Abonnements, unter dem viele Versicherer stehen."
   - q: "Wo ist Ænix für Versicherungskunden tätig?"
@@ -111,4 +111,4 @@ Versicherungskunden werden nicht namentlich genannt. Die am nächsten liegenden 
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI.*

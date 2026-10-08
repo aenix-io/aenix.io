@@ -193,7 +193,7 @@ Die Umsetzungsphase liefert:
 
 - **KI-Infrastruktur ist unser Alltag.** Vier GPU-Projekte sind als Fallstudien dokumentiert (siehe unten) — zu Inferenz, Multi-Cloud-GPU-Kapazität und internen KI-Plattformen. Cozystack wurde in das Programm CNCF Kubernetes AI Conformance aufgenommen (September 2026).
 - **Keine Bindung an einen Modellanbieter.** Wir haben keine Geschäftsbeziehung zu einem bestimmten LLM-Anbieter. Die Architektur empfiehlt das Open-Weight-Modell, das zu Datenklasse, Aufsicht und Wirtschaftlichkeit passt — Llama, Mistral, Qwen, DeepSeek, Phi oder feinjustierte Varianten — und den passenden Serving-Stack.
-- **Open-Source-Plattform als Fundament.** [Cozystack](/de/produkte/cozystack/), das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt, ist ein CNCF-Sandbox-Projekt und läuft auf der vom Kunden gewählten Hardware in der gewählten Rechtsordnung. Der Zugriff auf Cluster-Ebene bleibt beim Kunden; wir arbeiten unter Ihrer Governance, nicht an ihr vorbei.
+- **Open-Source-Plattform als Fundament.** [Cozystack](/de/produkte/cozystack/), das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt, ist ein CNCF-Sandbox-Projekt und läuft auf der vom Kunden gewählten Hardware in der gewählten Rechtsordnung. Der Zugriff auf Cluster-Ebene bleibt beim Kunden; wir arbeiten unter Ihrer Governance, nicht an ihr vorbei.
 
 <!-- /BLOCK 6 -->
 
@@ -283,6 +283,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit CNCF Kubernetes AI Conformance und OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir bauen Sovereign-AI-Plattformen für GPU-Betreiber und regulierte Organisationen.*
+*Ænix hat Cozystack entwickelt — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit CNCF Kubernetes AI Conformance und OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir bauen Sovereign-AI-Plattformen für GPU-Betreiber und regulierte Organisationen.*
 
 <!-- /BLOCK 12 -->

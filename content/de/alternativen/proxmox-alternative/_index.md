@@ -17,7 +17,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /alternatives/proxmox-alternative/
 direct_answer: |
-  **Eine Proxmox-Alternative ist eine Virtualisierungsplattform, die dort übernimmt, wo Proxmox VE mit seinem Schwerpunkt auf kleinen und mittleren Umgebungen nicht mehr mitwächst: typischerweise wenn Teams harte Mandantenfähigkeit, einen Managed-Services-Katalog jenseits von VMs, Billing für Service-Provider oder GPU- und KI-Workloads brauchen. Cozystack ist die Kubernetes-native Open-Source-Alternative für diese nächste Stufe: Es betreibt VMs über KubeVirt und Container auf einer einzigen Kubernetes-API, mit Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, einem Mandantenmodell auf Basis der Tenant-CRD sowie vollwertigen Managed-Datenbanken und S3-Object-Storage, auf derselben Hardware, auf der Proxmox läuft. Ænix hat Cozystack initiiert, pflegt es mit und bietet die Ænix Public Cloud Platform, Support sowie Architektur- und Migrationsleistungen für Hosting-Anbieter, regionale Clouds und regulierte Unternehmen, die Proxmox entwachsen.**
+  **Eine Proxmox-Alternative ist eine Virtualisierungsplattform, die dort übernimmt, wo Proxmox VE mit seinem Schwerpunkt auf kleinen und mittleren Umgebungen nicht mehr mitwächst: typischerweise wenn Teams harte Mandantenfähigkeit, einen Managed-Services-Katalog jenseits von VMs, Billing für Service-Provider oder GPU- und KI-Workloads brauchen. Cozystack ist die Kubernetes-native Open-Source-Alternative für diese nächste Stufe: Es betreibt VMs über KubeVirt und Container auf einer einzigen Kubernetes-API, mit Cilium-Networking (eBPF), LINSTOR/DRBD-Storage, einem Mandantenmodell auf Basis der Tenant-CRD sowie vollwertigen Managed-Datenbanken und S3-Object-Storage, auf derselben Hardware, auf der Proxmox läuft. Ænix hat Cozystack entwickelt, pflegt es mit und bietet die Ænix Public Cloud Platform, Support sowie Architektur- und Migrationsleistungen für Hosting-Anbieter, regionale Clouds und regulierte Unternehmen, die Proxmox entwachsen.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine Kubernetes-native, mandantenfähige Open-Source-Plattform für Organisationen, die über den Single-Tenant- und VM-Schwerpunkt von Proxmox VE hinausgewachsen sind."
@@ -147,4 +147,4 @@ Wenn Sie prüfen, wo Proxmox für Ihren Anwendungsfall nicht mehr die richtige W
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) initiiert und pflegt es mit. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) entwickelt und pflegt es mit. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*

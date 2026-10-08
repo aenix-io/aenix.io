@@ -112,4 +112,4 @@ Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektu
 
 *Diese Fallstudie wird in anonymisierter Form veröffentlicht: der Integrator und der Endkunde werden über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einem konkreten Vorhaben [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

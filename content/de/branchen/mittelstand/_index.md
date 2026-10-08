@@ -123,4 +123,4 @@ Projekte mit KMU sind selten — und wenn es sie gibt, sind Ausnahmefälle mit r
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI. Wir übernehmen Projekte, bei denen die Architektur wirklich passt.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI. Wir übernehmen Projekte, bei denen die Architektur wirklich passt.*

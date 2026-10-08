@@ -8,7 +8,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/msp/
 direct_answer: |
-  **Mit einer Cloud-Plattform für MSPs liefert ein Managed Service Provider Cloud-Funktionen auf Hyperscaler-Niveau unter eigener Marke, statt einen Hyperscaler weiterzuverkaufen. Ænix baut sie auf Cozystack auf, einem Open-Source-Projekt der CNCF (Sandbox), das Ænix initiiert hat und gemeinsam mit anderen pflegt. Cozystack betreibt virtuelle Maschinen (über KubeVirt) und Container auf einer Kubernetes-API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und einer verschachtelten Tenant-CRD, die die Reseller-Hierarchie Provider → MSP → Kunde direkt abbildet. MSPs erhalten ein Cozystack Dashboard in eigenem Branding (White-Labeling ist eine Open-Source-Funktion von Cozystack), Billing über die proprietäre WHMCS-Integration von Ænix (Teil der Ænix Public Cloud Platform) und einen kuratierten Service-Katalog. Da Cozystack unter Apache 2.0 steht und keine Lizenzkosten pro CPU oder Core kennt, entgehen MSPs der Lizenzökonomie von Hyperscalern und VMware und behalten volle Kontrolle über Marge, Datenresidenz und Kundenbeziehungen.**
+  **Mit einer Cloud-Plattform für MSPs liefert ein Managed Service Provider Cloud-Funktionen auf Hyperscaler-Niveau unter eigener Marke, statt einen Hyperscaler weiterzuverkaufen. Ænix baut sie auf Cozystack auf, einem Open-Source-Projekt der CNCF (Sandbox), das Ænix entwickelt hat und gemeinsam mit anderen pflegt. Cozystack betreibt virtuelle Maschinen (über KubeVirt) und Container auf einer Kubernetes-API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und einer verschachtelten Tenant-CRD, die die Reseller-Hierarchie Provider → MSP → Kunde direkt abbildet. MSPs erhalten ein Cozystack Dashboard in eigenem Branding (White-Labeling ist eine Open-Source-Funktion von Cozystack), Billing über die proprietäre WHMCS-Integration von Ænix (Teil der Ænix Public Cloud Platform) und einen kuratierten Service-Katalog. Da Cozystack unter Apache 2.0 steht und keine Lizenzkosten pro CPU oder Core kennt, entgehen MSPs der Lizenzökonomie von Hyperscalern und VMware und behalten volle Kontrolle über Marge, Datenresidenz und Kundenbeziehungen.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine mandantenfähige White-Label-Cloud-Plattform, mit der MSPs Cloud-Dienste unter eigener Marke auf Open-Source-Cozystack verkaufen, statt einen Hyperscaler weiterzuverkaufen."
@@ -90,4 +90,4 @@ Die Tenant-CRD von Cozystack lässt sich verschachteln, die Hierarchie ist also 
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

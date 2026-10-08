@@ -130,4 +130,4 @@ Wie viel Sie sparen, hängt von Ihrem Mix aus Grundlast, Spitzen und Burst-Targe
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen — ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0, seit September 2026 im Programm CNCF Kubernetes AI Conformance. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud, Private Cloud und AI.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen — ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0, seit September 2026 im Programm CNCF Kubernetes AI Conformance. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud, Private Cloud und AI.*

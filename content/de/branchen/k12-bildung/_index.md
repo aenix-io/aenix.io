@@ -11,7 +11,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/education-k12/
 direct_answer: |
-  **Cozystack ist eine Open-Source-Cloud-Plattform (Apache 2.0), die zu einem eng umrissenen Kreis von Fällen in der Schulbildung passt: große Schulträger und regionale Verbünde mit Souveränitätsvorgaben für Schülerdaten, EdTech-Teams, die ihr eigenes LMS, SIS oder Analytics aufbauen, sowie KI- oder Analytics-Workloads auf Schülerdaten, die nicht über Hyperscaler-Endpunkte laufen dürfen. Sie betreibt virtuelle Maschinen und Container über KubeVirt auf einer Kubernetes-API, mit Cilium-(eBPF-)Networking, LINSTOR/DRBD-Storage und Mandantenfähigkeit über die Tenant-CRD, die sich sauber auf Trägerzentrale, einzelne Schulen und einzelne Klassen abbilden lässt. Ænix hat Cozystack initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen; darauf liefert Ænix die Ænix Private Cloud Platform (Angebot per RFP) und Support. Für die meisten Schulträger bleiben Managed Services der Hyperscaler und gängige EdTech-Werkzeuge die bessere Wahl — und Ænix sagt das offen.**
+  **Cozystack ist eine Open-Source-Cloud-Plattform (Apache 2.0), die zu einem eng umrissenen Kreis von Fällen in der Schulbildung passt: große Schulträger und regionale Verbünde mit Souveränitätsvorgaben für Schülerdaten, EdTech-Teams, die ihr eigenes LMS, SIS oder Analytics aufbauen, sowie KI- oder Analytics-Workloads auf Schülerdaten, die nicht über Hyperscaler-Endpunkte laufen dürfen. Sie betreibt virtuelle Maschinen und Container über KubeVirt auf einer Kubernetes-API, mit Cilium-(eBPF-)Networking, LINSTOR/DRBD-Storage und Mandantenfähigkeit über die Tenant-CRD, die sich sauber auf Trägerzentrale, einzelne Schulen und einzelne Klassen abbilden lässt. Ænix hat Cozystack entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen; darauf liefert Ænix die Ænix Private Cloud Platform (Angebot per RFP) und Support. Für die meisten Schulträger bleiben Managed Services der Hyperscaler und gängige EdTech-Werkzeuge die bessere Wahl — und Ænix sagt das offen.**
 quick_facts:
   - label: "Was es ist"
     value: "Souveräne, mandantenfähige Cloud-Infrastruktur für die Minderheit der Schulträger und Verbünde, die für Schülerdaten keine Managed Services von Hyperscalern nutzen können"
@@ -103,4 +103,4 @@ Für die meisten Schulträger sind Managed Services von Hyperscalern und gängig
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat Cozystack entwickelt (CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

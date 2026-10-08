@@ -161,4 +161,4 @@ Vereinbaren Sie ein Discovery-Gespräch. Wir gleichen Ihre Situation mit passend
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei kommerzielle Plattformen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt, entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei kommerzielle Plattformen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

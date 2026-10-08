@@ -17,7 +17,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/data-sovereignty/
 direct_answer: |
-  **Datensouveränität für Cloud-Infrastruktur bedeutet, mit Belegen nachzuweisen, dass Daten auf jeder Schicht in der vom Regulator verlangten Jurisdiktion liegen — Produktionsspeicher, Replikate, Backups, Observability und CI/CD-Artefakte —, dass der Dateneigentümer die Schlüsselverwahrung erklären kann und dass Lieferantenabhängigkeiten über die erste Stufe hinaus transparent sind. Das ist die operative Anforderung hinter DORA, NIS2, DSGVO, branchenspezifischen Regeln zur Datenresidenz und den Souveränitätsvorgaben der EU-Mitgliedstaaten für Cloud. Ænix führt ein strukturiertes Projekt durch, das erfasst, wo jede Datenklasse tatsächlich liegt, Lücken benennt und Sovereignty-by-Design für regulierte Organisationen festlegt. Ænix hat Cozystack initiiert, ein CNCF-Sandbox-Projekt unter Apache 2.0, das auf der vom Kunden gewählten Hardware in der gewählten Jurisdiktion läuft, wobei der Kunde den Zugriff auf Cluster-Ebene hält — so wird Souveränität strukturell statt nur vertraglich.**
+  **Datensouveränität für Cloud-Infrastruktur bedeutet, mit Belegen nachzuweisen, dass Daten auf jeder Schicht in der vom Regulator verlangten Jurisdiktion liegen — Produktionsspeicher, Replikate, Backups, Observability und CI/CD-Artefakte —, dass der Dateneigentümer die Schlüsselverwahrung erklären kann und dass Lieferantenabhängigkeiten über die erste Stufe hinaus transparent sind. Das ist die operative Anforderung hinter DORA, NIS2, DSGVO, branchenspezifischen Regeln zur Datenresidenz und den Souveränitätsvorgaben der EU-Mitgliedstaaten für Cloud. Ænix führt ein strukturiertes Projekt durch, das erfasst, wo jede Datenklasse tatsächlich liegt, Lücken benennt und Sovereignty-by-Design für regulierte Organisationen festlegt. Ænix hat Cozystack entwickelt, ein CNCF-Sandbox-Projekt unter Apache 2.0, das auf der vom Kunden gewählten Hardware in der gewählten Jurisdiktion läuft, wobei der Kunde den Zugriff auf Cluster-Ebene hält — so wird Souveränität strukturell statt nur vertraglich.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein strukturiertes Projekt, das eine Souveränitätsposition von der Behauptung zu einer nachweisbaren Architektur über alle Datenschichten führt"
@@ -169,7 +169,7 @@ Das Souveränitätsprojekt läuft als Teil unseres **[Platform Readiness Assessm
 - **Bewertung der Prüfbereitschaft** — welche Prozesse für den Zugang der Aufsicht dokumentiert, welche erprobt und welche nicht vorhanden sind.
 - **Maßnahmenplan auf Architekturebene** — was in welcher Reihenfolge zu beheben ist, mit Aufwandsschätzungen und abgestimmt auf regulatorische Fristen.
 
-Geliefert von Ænix-Ingenieuren — dem Team, das Cozystack initiiert hat — aus Engineering-Teams in der EU und in Zentralasien, ohne kommerzielle Bindung an einen Hyperscaler. EU-Verträge laufen über die AENIX s.r.o. (Tschechien).
+Geliefert von Ænix-Ingenieuren — dem Team, das Cozystack entwickelt hat — aus Engineering-Teams in der EU und in Zentralasien, ohne kommerzielle Bindung an einen Hyperscaler. EU-Verträge laufen über die AENIX s.r.o. (Tschechien).
 
 <!-- /BLOCK 5 -->
 
@@ -181,7 +181,7 @@ Geliefert von Ænix-Ingenieuren — dem Team, das Cozystack initiiert hat — au
 
 - **Ingenieure, die unter diesen Regeln arbeiten.** Unsere Engineering-Teams sitzen in der EU und in Zentralasien; EU-Verträge laufen über die AENIX s.r.o. (Tschechien). Wir kennen den Unterschied zwischen Souveränität als US-Marketingbegriff und Souveränität, wie sie unter EU-Branchenregeln und Vergabeklauseln der EU-Mitgliedstaaten durchgesetzt wird.
 - **Keine Hyperscaler-Bindung.** Souveränitätsberatung der Big Four ist von deren Hyperscaler-Partnerschaften geprägt. Unsere Empfehlungen sind an keinen Cloud-Anbieter kommerziell gebunden — wir empfehlen die Architektur, die die Souveränitätsanforderung tatsächlich erfüllt, auch wenn das vollständig On-Premises bedeutet.
-- **Open-Source-Plattform als Fundament.** Wir haben **[Cozystack](/de/produkte/cozystack/)** initiiert und pflegen es gemeinsam mit Maintainern anderer Unternehmen — ein CNCF-Sandbox-Projekt, das auf der von Ihnen gewählten Hardware in der von Ihnen gewählten Jurisdiktion läuft, mit Zugriff auf Cluster-Ebene bei Ihnen. Souveränität ist strukturell, nicht vertraglich.
+- **Open-Source-Plattform als Fundament.** Wir haben **[Cozystack](/de/produkte/cozystack/)** entwickelt und pflegen es gemeinsam mit Maintainern anderer Unternehmen — ein CNCF-Sandbox-Projekt, das auf der von Ihnen gewählten Hardware in der von Ihnen gewählten Jurisdiktion läuft, mit Zugriff auf Cluster-Ebene bei Ihnen. Souveränität ist strukturell, nicht vertraglich.
 
 <!-- /BLOCK 6 -->
 
@@ -270,6 +270,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.*
+*Ænix hat Cozystack entwickelt — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.*
 
 <!-- /BLOCK 12 -->

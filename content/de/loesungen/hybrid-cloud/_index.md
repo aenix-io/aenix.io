@@ -178,7 +178,7 @@ Aufbauphase: Ænix-Engineers liefern die Hybrid-Plattform von Anfang bis Ende �
 ## Warum gerade Ænix
 
 - **Hybrid-Erfahrung aus echten Projekten.** Veröffentlichte Fallstudien zeigen [GPU-Kapazität über eigene Hardware und Public Clouds hinweg](/de/case-studies/multicloud-academic-gpu/) und ein [gemeinsames Portal über bestehende VMware- und OpenNebula-Umgebungen](/de/case-studies/unified-cloud-portal-financial-group/).
-- **Open-Source-Fundament.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Sandbox-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Eine Plattform, mehrere Substrate, kein Vendor-Lock-in.
+- **Open-Source-Fundament.** [Cozystack](/de/produkte/cozystack/) ist ein Open-Source-CNCF-Sandbox-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Eine Plattform, mehrere Substrate, kein Vendor-Lock-in.
 - **Ehrliche Workload-Klassifizierung, auch bei den Kosten.** Wir sagen Ihnen, wann Public Cloud richtig ist, wann On-Prem und wann Hybrid.
 - **Erfahrung im clusterübergreifenden Betrieb.** Ein Plattform-Team, das mehrere Substrate betreibt, ist eine eigene Disziplin.
 
@@ -249,4 +249,4 @@ Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben.
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud Platform, Private Cloud Platform und AI Platform.*
+*Ænix hat Cozystack entwickelt (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud Platform, Private Cloud Platform und AI Platform.*

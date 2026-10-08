@@ -111,7 +111,7 @@ Kostenlos und ohne Vorbereitung. Wir grenzen den Rahmen auf die Aufsichtsbehörd
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/ciso/ ; hreflang de self, en → /for/ciso/.

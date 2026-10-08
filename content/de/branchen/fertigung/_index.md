@@ -13,7 +13,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/manufacturing/
 direct_answer: |
-  **Eine Cloud-Plattform für die Fertigung ist ein einheitliches Rechenfundament, das Industrie-4.0- und IT/OT-Workloads in der Zentrale, an regionalen Standorten und an der Edge in der Produktion einheitlich in einem Betriebsmodell betreibt. Sie richtet sich an Hersteller in der EU, im DACH-Raum und in Zentralasien, die unter NIS2 fallen (die Herstellung kritischer Produkte ist in Anhang II aufgeführt), industrielles geistiges Eigentum wie Konstruktionsdaten und Rezepturen schützen und KI für Qualitätskontrolle und Predictive Maintenance einsetzen. Ænix baut diese Plattformen auf Cozystack, einem Open-Source-CNCF-Sandbox-Projekt (Apache 2.0), das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt virtuelle Maschinen und Container über KubeVirt auf einer Kubernetes-API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Tenant-basierter Mandantenfähigkeit. Zusätzlich bietet Ænix die Ænix Private Cloud Platform (Angebot per RFP) sowie Implementierungs- und Support-Leistungen an.**
+  **Eine Cloud-Plattform für die Fertigung ist ein einheitliches Rechenfundament, das Industrie-4.0- und IT/OT-Workloads in der Zentrale, an regionalen Standorten und an der Edge in der Produktion einheitlich in einem Betriebsmodell betreibt. Sie richtet sich an Hersteller in der EU, im DACH-Raum und in Zentralasien, die unter NIS2 fallen (die Herstellung kritischer Produkte ist in Anhang II aufgeführt), industrielles geistiges Eigentum wie Konstruktionsdaten und Rezepturen schützen und KI für Qualitätskontrolle und Predictive Maintenance einsetzen. Ænix baut diese Plattformen auf Cozystack, einem Open-Source-CNCF-Sandbox-Projekt (Apache 2.0), das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt virtuelle Maschinen und Container über KubeVirt auf einer Kubernetes-API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Tenant-basierter Mandantenfähigkeit. Zusätzlich bietet Ænix die Ænix Private Cloud Platform (Angebot per RFP) sowie Implementierungs- und Support-Leistungen an.**
 
 quick_facts:
   - label: "Was es ist"
@@ -131,4 +131,4 @@ Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben. Kein 
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI.*
+*Ænix hat Cozystack entwickelt (CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI.*

@@ -16,7 +16,7 @@ hreflang_en: /compare/cozystack-vs-proxmox/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cozystack und Proxmox VE sind beide Open-Source-Virtualisierungsplattformen, zielen aber auf unterschiedliche Größenordnungen. Proxmox VE (AGPLv3) kombiniert KVM und LXC für Virtualisierung im KMU-Umfeld, Labore und Single-Tenant-Installationen mit weniger als etwa 50 Hosts. Cozystack (Apache 2.0) betreibt KubeVirt auf Kubernetes, mit einer Tenant-CRD für harte Mandantentrennung, vollwertigen Managed-Datenbanken und S3-Object-Storage sowie GPU-Unterstützung über den NVIDIA GPU Operator (Passthrough oder NVIDIA vGPU für VMs mit Ihrer NVIDIA-vGPU-Lizenz, anteilige Nutzung über HAMi für Pods). Es passt zu Service-Providern und regulierten mandantenfähigen Umgebungen, die dem Einsatzbereich von Proxmox entwachsen sind. Ænix hat Cozystack initiiert, pflegt es mit und bietet Support und Services, darunter die Ænix Public Cloud Platform, ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds.**
+  **Cozystack und Proxmox VE sind beide Open-Source-Virtualisierungsplattformen, zielen aber auf unterschiedliche Größenordnungen. Proxmox VE (AGPLv3) kombiniert KVM und LXC für Virtualisierung im KMU-Umfeld, Labore und Single-Tenant-Installationen mit weniger als etwa 50 Hosts. Cozystack (Apache 2.0) betreibt KubeVirt auf Kubernetes, mit einer Tenant-CRD für harte Mandantentrennung, vollwertigen Managed-Datenbanken und S3-Object-Storage sowie GPU-Unterstützung über den NVIDIA GPU Operator (Passthrough oder NVIDIA vGPU für VMs mit Ihrer NVIDIA-vGPU-Lizenz, anteilige Nutzung über HAMi für Pods). Es passt zu Service-Providern und regulierten mandantenfähigen Umgebungen, die dem Einsatzbereich von Proxmox entwachsen sind. Ænix hat Cozystack entwickelt, pflegt es mit und bietet Support und Services, darunter die Ænix Public Cloud Platform, ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein direkter Vergleich von Proxmox VE und Cozystack als Open-Source-Virtualisierungsplattformen, bezogen auf Größenordnung und Anforderungen an Mandantenfähigkeit."
@@ -42,7 +42,7 @@ faq:
   - q: "Unterstützt Cozystack GPUs besser als Proxmox VE?"
     a: "Es geht weiter, aber man sollte genau sagen, wie weit. Proxmox VE bietet GPU-Passthrough, eine Karte an einen Gast. Cozystack plant GPUs über den NVIDIA GPU Operator ein und teilt eine Karte per HAMi zwischen Container-Workloads; für VMs stehen Passthrough oder NVIDIA vGPU (sofern Sie eine NVIDIA-vGPU-Lizenz besitzen) zur Verfügung. MIG und Time-Slicing stehen auf der Roadmap und sind heute nicht verfügbar — planen Sie also noch kein GPU-Produkt für einander nicht vertrauende Tenants darauf."
   - q: "Was bietet Ænix zusätzlich zu Cozystack?"
-    a: "Ænix hat Cozystack initiiert und bietet darauf aufbauend Support und Services. Die Ænix Public Cloud Platform ist ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen — mit Hosting-Panel, Billing und Kundenportal; die Support-Stufen beginnen bei 1.250 USD pro 10 Nodes und Monat (Basic, jährliche Abrechnung)."
+    a: "Ænix hat Cozystack entwickelt und bietet darauf aufbauend Support und Services. Die Ænix Public Cloud Platform ist ein komplettes Public-Cloud-Produkt für Hosting-Anbieter und regionale Clouds, die Proxmox entwachsen — mit Hosting-Panel, Billing und Kundenportal; die Support-Stufen beginnen bei 1.250 USD pro 10 Nodes und Monat (Basic, jährliche Abrechnung)."
 ---
 
 **Unterschiedliche Größenordnungen. Unterschiedliche Einsatzschwerpunkte. Beide Open Source.**
@@ -84,4 +84,4 @@ Wann sich der Schritt über Proxmox hinaus lohnt, lesen Sie unter **[Proxmox-Alt
 
 ---
 
-*Ænix hat Cozystack (CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*
+*Ænix hat Cozystack (CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir die Ænix Public Cloud Platform, die Ænix Private Cloud Platform und die Ænix AI Platform an.*

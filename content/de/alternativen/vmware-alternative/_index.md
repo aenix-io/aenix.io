@@ -17,7 +17,7 @@ hreflang_en: /alternatives/vmware-alternative/
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Cozystack ist eine Open-Source-, Kubernetes-native Alternative zu VMware, die den Kern des VMware-Cloud-Foundation-Stacks — vSphere/ESXi, vCenter, vSAN, NSX und vCloud Director — auf Ihrem eigenen Bare Metal abdeckt, mit Backups und einem dokumentierten DR-Runbook anstelle des Site Recovery Manager. Sie ist für Service-Provider gebaut, die VMware Cloud Director verlassen, und für regulierte Unternehmen, die aus VCF aussteigen. Cozystack betreibt virtuelle Maschinen über KubeVirt (KVM-basiert, mit Live-Migration und Snapshots) neben Containern auf einer Kubernetes-API, nutzt Cilium (eBPF) für das Networking, LINSTOR/DRBD für replizierten Block-Storage und SeaweedFS für Object Storage sowie eine Tenant-CRD für native Mandantenfähigkeit. Lizenziert unter Apache 2.0, ohne Abrechnung pro CPU, VM oder Core. Ænix hat Cozystack initiiert, pflegt es mit, baut darauf die Ænix Public Cloud Platform und die Ænix Private Cloud Platform und führt die VMware-Migration von Anfang bis Ende durch.**
+  **Cozystack ist eine Open-Source-, Kubernetes-native Alternative zu VMware, die den Kern des VMware-Cloud-Foundation-Stacks — vSphere/ESXi, vCenter, vSAN, NSX und vCloud Director — auf Ihrem eigenen Bare Metal abdeckt, mit Backups und einem dokumentierten DR-Runbook anstelle des Site Recovery Manager. Sie ist für Service-Provider gebaut, die VMware Cloud Director verlassen, und für regulierte Unternehmen, die aus VCF aussteigen. Cozystack betreibt virtuelle Maschinen über KubeVirt (KVM-basiert, mit Live-Migration und Snapshots) neben Containern auf einer Kubernetes-API, nutzt Cilium (eBPF) für das Networking, LINSTOR/DRBD für replizierten Block-Storage und SeaweedFS für Object Storage sowie eine Tenant-CRD für native Mandantenfähigkeit. Lizenziert unter Apache 2.0, ohne Abrechnung pro CPU, VM oder Core. Ænix hat Cozystack entwickelt, pflegt es mit, baut darauf die Ænix Public Cloud Platform und die Ænix Private Cloud Platform und führt die VMware-Migration von Anfang bis Ende durch.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine Open-Source-, Kubernetes-native Plattform, die den Kern des VMware-Cloud-Foundation-Stacks (vSphere, vCenter, vSAN, NSX, vCloud Director) auf Bare Metal abdeckt; DR ist ein Design aus Backups und Runbook, kein Orchestrator nach Art von SRM."
@@ -52,7 +52,7 @@ faq:
 
 **Ersetzen Sie vSphere, vCenter, vSAN, NSX und den Rest von VCF durch eine Kubernetes-native Plattform auf Ihrem eigenen Bare Metal — ohne Lizenzkosten pro CPU, ohne Verlängerungsklippe à la Broadcom, ohne Bindung an einen US-Hersteller.**
 
-Cozystack ist ein CNCF-Sandbox-Projekt. Ænix hat es initiiert, pflegt es gemeinsam mit Maintainern anderer Unternehmen, betreibt es mit Hosting-Anbietern in Produktion und führt die Migration von Anfang bis Ende durch.
+Cozystack ist ein CNCF-Sandbox-Projekt. Ænix hat es entwickelt, pflegt es gemeinsam mit Maintainern anderer Unternehmen, betreibt es mit Hosting-Anbietern in Produktion und führt die Migration von Anfang bis Ende durch.
 
 > **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für alle, die Cloud verkaufen — Hosting-Anbieter, die VMware Cloud Director verlassen, MSPs, Telcos, nationale Betreiber; **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die aus VMware Cloud Foundation aussteigen. Service-Provider, die VMware Cloud Director verlassen: siehe [die VCD-Alternative](/de/alternativen/vmware-cloud-director-alternative/). Kostenlose [VMware-Migrations-Checkliste →](/de/ressourcen/vmware-migrations-checkliste/).
 
@@ -353,6 +353,6 @@ Oder lesen Sie den **[vollständigen Leitfaden zur VMware-Ablösung in unserem B
 
 <!-- BLOCK 13: FOOTER TRUST STRIP -->
 
-*Cozystack ist ein CNCF-Sandbox-Projekt und eine CNCF Certified Kubernetes Distribution, wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen und trägt das OpenSSF-Best-Practices-Badge. Ænix hat Cozystack initiiert und pflegt es mit.*
+*Cozystack ist ein CNCF-Sandbox-Projekt und eine CNCF Certified Kubernetes Distribution, wurde im September 2026 in das Programm CNCF Kubernetes AI Conformance aufgenommen und trägt das OpenSSF-Best-Practices-Badge. Ænix hat Cozystack entwickelt und pflegt es mit.*
 
 <!-- /BLOCK 13 -->

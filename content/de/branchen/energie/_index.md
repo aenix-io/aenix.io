@@ -43,7 +43,7 @@ faq:
   - q: "Warum eignet sich eine Open-Source-Plattform für Netzinfrastruktur?"
     a: "Netz-Hardware wird über Jahrzehnte abgeschrieben, die Plattform muss also mehrere Hardware-Generationen überdauern. Cozystack steht unter Apache 2.0, wird in der CNCF gemeinschaftlich gesteuert und läuft auf Kunden-Hardware — ohne Lizenzkosten pro Core und ohne Vendor-Lock-in über Planungshorizonte von mehr als einem Jahrzehnt."
   - q: "Was verkauft Ænix, und worin unterscheidet sich das von Cozystack?"
-    a: "Cozystack ist das Open-Source-Plattformfundament in der CNCF, von Ænix initiiert und gemeinsam mit Maintainern anderer Unternehmen gepflegt. Ænix verkauft Plattform-Abonnements (Support, kommerzielle Module und Services) — die Ænix Private Cloud Platform wird nach einem Platform Readiness Assessment per RFP angeboten — sowie Platform-Engineering-Leistungen."
+    a: "Cozystack ist das Open-Source-Plattformfundament in der CNCF, von Ænix entwickelt und gemeinsam mit Maintainern anderer Unternehmen gepflegt. Ænix verkauft Plattform-Abonnements (Support, kommerzielle Module und Services) — die Ænix Private Cloud Platform wird nach einem Platform Readiness Assessment per RFP angeboten — sowie Platform-Engineering-Leistungen."
   - q: "Wie beginnt ein Projekt?"
     a: "Mit einem Platform Readiness Assessment zum Festpreis über 14 oder 28 Tage. Es erfasst NIS2- und sektorale Compliance-Lücken, die Multi-Site-Architektur, das Design der OT/IT-Grenze, die Konsolidierung der Smart-Grid-Systeme und die KI-Infrastruktur für Netz-Anwendungsfälle. Der Aufbau dauert danach typischerweise 3–12 Monate je nach Umfang; Multi-Site-Rollouts erfolgen Standort für Standort."
 ---
@@ -170,4 +170,4 @@ Oder lesen Sie weiter:
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI — für Organisationen in der EU, im DACH-Raum und in Zentralasien.*
+*Ænix hat Cozystack entwickelt (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bieten wir drei Plattformen an — Public Cloud, Private Cloud und AI — für Organisationen in der EU, im DACH-Raum und in Zentralasien.*

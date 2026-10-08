@@ -247,6 +247,6 @@ Die dokumentierten Projekte finden Sie auf der Seite mit den [Fallstudien](/de/c
 
 <!-- BLOCK 12: FOOTER -->
 
-*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt und eine CNCF Certified Kubernetes Distribution — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.*
+*Ænix hat Cozystack entwickelt — ein CNCF-Sandbox-Projekt und eine CNCF Certified Kubernetes Distribution — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.*
 
 <!-- /BLOCK 12 -->

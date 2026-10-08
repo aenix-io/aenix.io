@@ -75,7 +75,7 @@ Beide Wege enden damit, dass die Plattform — und das Know-how — in Ihren Hä
 
 ## Warum Infrastrukturleiter Ænix wählen
 
-- **Wir haben die Plattform initiiert.** Ænix hat Cozystack initiiert und pflegt es mit — Sie bekommen die Autoren als Liefer- und Support-Partner, keinen Reseller.
+- **Wir haben die Plattform entwickelt.** Ænix hat Cozystack entwickelt und pflegt es mit — Sie bekommen die Autoren als Liefer- und Support-Partner, keinen Reseller.
 - **Keine Hyperscaler-Präferenz.** Wir empfehlen (und betreiben) die Architektur, die Ihre Anforderungen erfüllt — bis hin zu vollständig On-Premises.
 - **Souveränität steckt in der Architektur.** Ihre Hardware, Ihre Jurisdiktion, Ihr Zugriff auf Cluster-Ebene — keine Vertragsklausel. Engineering-Teams in der EU und in Zentralasien; EU-Verträge über die AENIX s.r.o. (Tschechien).
 
@@ -111,7 +111,7 @@ Kostenlos und ohne Vorbereitung. Wir prüfen, ob es passt, sehen uns Ihren aktue
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-infrastruktur/ ; hreflang de self, en → /for/head-of-infrastructure/, x-default → EN.

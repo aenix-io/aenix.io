@@ -14,7 +14,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /industries/hosting-providers/
 direct_answer: |
-  **Mit einer Cloud-Plattform für Hosting-Anbieter kann ein klassisches Shared-, VPS- oder Dedicated-Server-Geschäft Cloud-Produkte auf Hyperscaler-Niveau einführen und dabei seine direkten Kundenbeziehungen, seine Preisgestaltung und seine Marge behalten. Ænix setzt das mit Cozystack um, einem Kubernetes-nativen Open-Source-CNCF-Sandbox-Projekt, das Ænix initiiert hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs (über KubeVirt) und Container auf einer API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Mandantenisolation über die Tenant-CRD. Als Produkt ist es die Ænix Public Cloud Platform (mit dem produktisierten Installer live innerhalb weniger Wochen, sobald die Hardware bereitsteht), mit WHMCS-integriertem Billing, Sperren und Stilllegen von Mandanten, einem Service-Katalog über VMs hinaus (Managed Databases, S3, GPU) und Migrationswerkzeugen für VMware, OpenStack und Virtuozzo. Durch die Apache-2.0-Lizenz fallen keine Gebühren pro CPU an, die Hosting-Marge bleibt erhalten.**
+  **Mit einer Cloud-Plattform für Hosting-Anbieter kann ein klassisches Shared-, VPS- oder Dedicated-Server-Geschäft Cloud-Produkte auf Hyperscaler-Niveau einführen und dabei seine direkten Kundenbeziehungen, seine Preisgestaltung und seine Marge behalten. Ænix setzt das mit Cozystack um, einem Kubernetes-nativen Open-Source-CNCF-Sandbox-Projekt, das Ænix entwickelt hat und gemeinsam mit Maintainern anderer Unternehmen pflegt. Es betreibt VMs (über KubeVirt) und Container auf einer API, mit Cilium-eBPF-Networking, LINSTOR/DRBD-Storage und Mandantenisolation über die Tenant-CRD. Als Produkt ist es die Ænix Public Cloud Platform (mit dem produktisierten Installer live innerhalb weniger Wochen, sobald die Hardware bereitsteht), mit WHMCS-integriertem Billing, Sperren und Stilllegen von Mandanten, einem Service-Katalog über VMs hinaus (Managed Databases, S3, GPU) und Migrationswerkzeugen für VMware, OpenStack und Virtuozzo. Durch die Apache-2.0-Lizenz fallen keine Gebühren pro CPU an, die Hosting-Marge bleibt erhalten.**
 quick_facts:
   - label: "Was es ist"
     value: "Eine Kubernetes-native Open-Source-Cloud-Plattform, mit der Hosting-Anbieter mandantenfähige Cloud-Produkte über VPS hinaus einführen — gebaut auf Cozystack, als Produkt die Ænix Public Cloud Platform."
@@ -129,4 +129,4 @@ Produktive Referenzen: regionale Hosting-Anbieter, die die Ænix Public Cloud Pl
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat Cozystack entwickelt (CNCF-Sandbox-Projekt) und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

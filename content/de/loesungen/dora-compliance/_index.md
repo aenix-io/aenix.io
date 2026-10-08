@@ -16,7 +16,7 @@ quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/dora-compliance/
 direct_answer: |
-  **DORA-Compliance für Cloud-Infrastruktur bedeutet nachzuweisen, dass Ihre Cloud-Architektur den Digital Operational Resilience Act der EU erfüllt, der seit dem 17. Januar 2025 gilt: IKT-Risikomanagement (Art. 5–16), Behandlung und Meldung IKT-bezogener Vorfälle (Art. 17–23, Meldung schwerwiegender Vorfälle nach Art. 19, Fristen gemäß Delegierter Verordnung (EU) 2025/301), IKT-Drittparteienrisiko (Art. 28–30, Konzentrationsrisiko nach Art. 29, Vertragsbestimmungen nach Art. 30), getestete Exit-Strategien (Art. 28 Abs. 8) und Tests der digitalen operationalen Resilienz (Art. 24–27). DORA gilt für Banken, Versicherer, Wertpapierfirmen und Zahlungsinstitute, Anbieter von Krypto-Dienstleistungen sowie die IKT-Drittdienstleister, die sie beliefern. Ænix, das Unternehmen, das das CNCF-Projekt Cozystack initiiert hat, führt ein an DORA ausgerichtetes Platform-Readiness-Projekt durch. Es liefert eine Karte auf Kontrollebene, was ein Unternehmen heute nachweisen kann, ein Bild des Konzentrationsrisikos bis zur zweiten Lieferantenstufe, eine Analyse der Exit-Machbarkeit und einen Maßnahmenplan auf Architekturebene — geliefert von Ingenieuren ohne kommerzielle Bindung an einen Hyperscaler. Die Arbeit ist darauf ausgelegt, Ihre DORA-Position zu unterstützen; sie ist keine Zertifizierung.**
+  **DORA-Compliance für Cloud-Infrastruktur bedeutet nachzuweisen, dass Ihre Cloud-Architektur den Digital Operational Resilience Act der EU erfüllt, der seit dem 17. Januar 2025 gilt: IKT-Risikomanagement (Art. 5–16), Behandlung und Meldung IKT-bezogener Vorfälle (Art. 17–23, Meldung schwerwiegender Vorfälle nach Art. 19, Fristen gemäß Delegierter Verordnung (EU) 2025/301), IKT-Drittparteienrisiko (Art. 28–30, Konzentrationsrisiko nach Art. 29, Vertragsbestimmungen nach Art. 30), getestete Exit-Strategien (Art. 28 Abs. 8) und Tests der digitalen operationalen Resilienz (Art. 24–27). DORA gilt für Banken, Versicherer, Wertpapierfirmen und Zahlungsinstitute, Anbieter von Krypto-Dienstleistungen sowie die IKT-Drittdienstleister, die sie beliefern. Ænix, das Unternehmen, das das CNCF-Projekt Cozystack entwickelt hat, führt ein an DORA ausgerichtetes Platform-Readiness-Projekt durch. Es liefert eine Karte auf Kontrollebene, was ein Unternehmen heute nachweisen kann, ein Bild des Konzentrationsrisikos bis zur zweiten Lieferantenstufe, eine Analyse der Exit-Machbarkeit und einen Maßnahmenplan auf Architekturebene — geliefert von Ingenieuren ohne kommerzielle Bindung an einen Hyperscaler. Die Arbeit ist darauf ausgelegt, Ihre DORA-Position zu unterstützen; sie ist keine Zertifizierung.**
 quick_facts:
   - label: "Was es ist"
     value: "Ein an DORA ausgerichtetes Platform-Readiness-Projekt, das die Cloud-Architektur auf IKT-Risikomanagement, Meldung von Vorfällen, Drittparteien- und Konzentrationsrisiko, Exit-Strategien und Resilienztests prüft."
@@ -176,7 +176,7 @@ Unser DORA-Projekt ist in das **[Platform Readiness Assessment](/de/dienstleistu
 - **Bereitschaft für Resilienztests** — ob Ihre Architektur die szenariobasierten Tests unterstützt, die die Aufsicht erwartet.
 - **Maßnahmenplan auf Architekturebene** — was in welcher Reihenfolge zu beheben ist, mit Aufwandsschätzungen.
 
-Geliefert von Ænix-Ingenieuren — dem Team, das Cozystack initiiert hat — und nicht von Managementberatern.
+Geliefert von Ænix-Ingenieuren — dem Team, das Cozystack entwickelt hat — und nicht von Managementberatern.
 
 <!-- /BLOCK 5 -->
 
@@ -192,7 +192,7 @@ Wir unterscheiden uns in drei konkreten Punkten:
 
 - **Keine Hyperscaler-Bindung.** Unsere Empfehlungen sind kommerziell weder an AWS, Azure, GCP noch an einen anderen Anbieter gebunden. Lautet die Antwort „Hyperscaler mit besseren Kontrollen“, sagen wir das. Lautet sie „On-Premises oder Hybrid“, sagen wir das.
 - **Ingenieure statt Berater.** Dieselben Ænix-Ingenieure, die das Readiness-Projekt durchführen, bauen danach die Produktionsplattformen. Die Aufwandsschätzungen im Bericht sind an Arbeit kalibriert, die wir tatsächlich ausgeliefert haben.
-- **Open-Source-Plattform als Fundament.** Wir haben **[Cozystack](/de/produkte/cozystack/)** initiiert und pflegen es gemeinsam mit Maintainern anderer Unternehmen — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF-Best-Practices-Badge. Wo eine Architektur auf Basis von Cozystack die inhaltlichen Anforderungen von DORA besser erfüllt als die Alternative, begründet der Bericht das anhand konkret benannter Kontrollen.
+- **Open-Source-Plattform als Fundament.** Wir haben **[Cozystack](/de/produkte/cozystack/)** entwickelt und pflegen es gemeinsam mit Maintainern anderer Unternehmen — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF-Best-Practices-Badge. Wo eine Architektur auf Basis von Cozystack die inhaltlichen Anforderungen von DORA besser erfüllt als die Alternative, begründet der Bericht das anhand konkret benannter Kontrollen.
 
 <!-- /BLOCK 6 -->
 
@@ -278,6 +278,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir führen an DORA ausgerichtete Platform-Readiness-Projekte und Platform-Engineering-Programme für Finanzdienstleister durch. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.*
+*Ænix hat Cozystack entwickelt — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir führen an DORA ausgerichtete Platform-Readiness-Projekte und Platform-Engineering-Programme für Finanzdienstleister durch. Die AENIX s.r.o. ist nach ISO/IEC 27001:2022 zertifiziert.*
 
 <!-- /BLOCK 12 -->

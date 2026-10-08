@@ -72,7 +72,7 @@ Infrastruktur zum Produkt machen: Self-Service-Bereitstellung von VMs, Managed K
 ## Warum Platform-Teams Ænix wählen
 
 - **Ein echtes Backend, nicht nur ein Portal.** Mandantenfähige Compute-, Storage- und Datenbankschichten unter dem Self-Service — genau der Teil, den Backstage nicht liefert.
-- **Die Autoren als Partner.** Ænix hat Cozystack initiiert und pflegt es mit; Sie arbeiten mit den Leuten, die das Mandantenmodell gebaut haben.
+- **Die Autoren als Partner.** Ænix hat Cozystack entwickelt und pflegt es mit; Sie arbeiten mit den Leuten, die das Mandantenmodell gebaut haben.
 - **Es gehört Ihnen.** Open Source auf Ihrer Infrastruktur — keine Verlängerung, die Ihre Developer Experience als Geisel nimmt.
 
 ---
@@ -107,7 +107,7 @@ Kostenlos und ohne Vorbereitung. Wir sehen uns an, wie Ihre Teams heute Ressourc
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/leiter-platform-engineering/ ; hreflang de self, en → /for/head-of-platform-engineering/.

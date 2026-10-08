@@ -140,4 +140,4 @@ Das Projekt läuft als **[AI Platform Build](/de/dienstleistungen/ai-platform-bu
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen — ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud, Private Cloud und AI. Wir bauen Private-LLM- und On-Prem-GenAI-Plattformen für Unternehmen und Organisationen des öffentlichen Sektors.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen — ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud, Private Cloud und AI. Wir bauen Private-LLM- und On-Prem-GenAI-Plattformen für Unternehmen und Organisationen des öffentlichen Sektors.*

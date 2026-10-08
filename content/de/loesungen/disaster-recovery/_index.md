@@ -150,4 +150,4 @@ Das Projekt läuft als **[Platform Readiness Assessment](/de/dienstleistungen/pl
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert — ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0 — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix bietet auf dieser Grundlage drei Plattformen an — Public Cloud, Private Cloud und AI. Wir entwerfen Architekturen für Disaster Recovery und Geschäftskontinuität für regulierte Organisationen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt — ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter Apache 2.0 — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix bietet auf dieser Grundlage drei Plattformen an — Public Cloud, Private Cloud und AI. Wir entwerfen Architekturen für Disaster Recovery und Geschäftskontinuität für regulierte Organisationen.*

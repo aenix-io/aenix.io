@@ -19,7 +19,7 @@ hide_closing_cta: true
 
 <!-- BLOCK 1: HERO -->
 
-**Ihre Cloud-Rechnung wächst mit dem Geschäft, der Lock-in wird enger, und „souverän“ ist inzwischen eine Kundenanforderung. Holen Sie sich Kostenkontrolle und Hoheit zurück, ohne die Roadmap zu bremsen: eine offene, Kubernetes-native Plattform auf eigener oder gemieteter Hardware — schlüsselfertig geliefert oder gemeinsam mit Ihnen gebaut, von dem Team, das sie initiiert hat.**
+**Ihre Cloud-Rechnung wächst mit dem Geschäft, der Lock-in wird enger, und „souverän“ ist inzwischen eine Kundenanforderung. Holen Sie sich Kostenkontrolle und Hoheit zurück, ohne die Roadmap zu bremsen: eine offene, Kubernetes-native Plattform auf eigener oder gemieteter Hardware — schlüsselfertig geliefert oder gemeinsam mit Ihnen gebaut, von dem Team, das sie entwickelt hat.**
 
 > **Passt zu:** Projekten zu **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** und **[Kostenoptimierung](/de/loesungen/cloud-kostenoptimierung/)**, der **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)**, alles auf Basis des Open-Source-Projekts **[Cozystack](/de/produkte/cozystack/)**.
 
@@ -74,7 +74,7 @@ Siehe auch das [TCO-Worksheet zur Cloud-Repatriation](/de/ressourcen/cloud-repat
 ## Warum CTOs Ænix wählen
 
 - **Wirtschaftlichkeit, die Sie vertreten können.** Wir rechnen die TCO ehrlich — einschließlich der Workloads, die in der Cloud bleiben sollten.
-- **Autoren, keine Reseller.** Ænix hat Cozystack initiiert und pflegt es mit; Sie bekommen erfahrene Engineers, keinen Vertriebskanal.
+- **Autoren, keine Reseller.** Ænix hat Cozystack entwickelt und pflegt es mit; Sie bekommen erfahrene Engineers, keinen Vertriebskanal.
 - **Entwicklungstempo bleibt.** Entwickler behalten Self-Service für Kubernetes und Datenbanken — die Plattform bremst die Roadmap nicht.
 
 ---
@@ -109,7 +109,7 @@ Kostenlos und ohne Vorbereitung. Wir prüfen die Wirtschaftlichkeit auf Herz und
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt, ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich ergänzen statt ausschließen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
 
 <!--
 SEO/GEO: canonical https://aenix.io/de/fuer/cto/ ; hreflang de self, en → /for/cto/.

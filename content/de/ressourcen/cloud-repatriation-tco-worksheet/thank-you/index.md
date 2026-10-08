@@ -25,4 +25,4 @@ hide_closing_cta: true
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert — ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz — und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt — ein CNCF-Sandbox-Projekt (der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz — und pflegt es gemeinsam mit Maintainern anderer Unternehmen.*

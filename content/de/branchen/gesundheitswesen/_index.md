@@ -148,4 +148,4 @@ Wir veröffentlichen keine Namen von Kunden aus dem Gesundheitswesen. Als archit
 
 ---
 
-*Ænix hat [Cozystack](https://cozystack.io) initiiert — ein CNCF-Sandbox-Projekt (Antrag auf Incubation in der Due-Diligence-Prüfung) unter Apache 2.0 — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen auf einer Engine an — Public Cloud, Private Cloud und AI —, die sich kombinieren lassen, statt einander auszuschließen.*
+*Ænix hat [Cozystack](https://cozystack.io) entwickelt — ein CNCF-Sandbox-Projekt (Antrag auf Incubation in der Due-Diligence-Prüfung) unter Apache 2.0 — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen auf einer Engine an — Public Cloud, Private Cloud und AI —, die sich kombinieren lassen, statt einander auszuschließen.*

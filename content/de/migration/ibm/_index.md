@@ -72,7 +72,7 @@ faq:
 
 **IBM-POWER-Hardware ist kapitalintensiv, AIX/PowerVM wird pro Socket lizenziert, und die SWMA/HWMA-Verlängerungen summieren sich Jahr für Jahr — während AIX-Spezialisten immer schwerer zu finden sind. Ein IBM-Ausstieg verlagert diese Workloads auf Standard-x86 mit einer offenen, Kubernetes-nativen Plattform, die Ihr bestehendes Team betreiben kann.**
 
-Ænix begleitet IBM-AIX/Power-Migrationen von Anfang bis Ende. Die Engineers, die [Cozystack](/de/produkte/cozystack/) — die Open-Source-Zielplattform — initiiert haben und gemeinsam mit Maintainern anderer Unternehmen pflegen, arbeiten bei Assessment, Reihenfolge und Umsetzung Seite an Seite mit Ihrem Team.
+Ænix begleitet IBM-AIX/Power-Migrationen von Anfang bis Ende. Die Engineers, die [Cozystack](/de/produkte/cozystack/) — die Open-Source-Zielplattform — entwickelt haben und gemeinsam mit Maintainern anderer Unternehmen pflegen, arbeiten bei Assessment, Reihenfolge und Umsetzung Seite an Seite mit Ihrem Team.
 
 > **Passt zu:** **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Banken (Air-Gap-Installation, Chargeback, Migration als angebotene Leistung) oder zur **[OpenShift-Alternative](/de/alternativen/openshift-alternative/)**, wenn Sie gezielt IBM Cloud Pak / OpenShift ablösen.
 
@@ -240,7 +240,7 @@ Eine Idee, die in der Praxis immer wieder aufkommt: die Plattform auf den POWER-
 
 ## Warum gerade Ænix
 
-- **Wir haben die Zielplattform initiiert.** Aufwandsschätzungen beruhen auf tatsächlich geleisteter Arbeit, nicht auf Theorie.
+- **Wir haben die Zielplattform entwickelt.** Aufwandsschätzungen beruhen auf tatsächlich geleisteter Arbeit, nicht auf Theorie.
 - **Ehrlich bei den schwierigen Punkten.** Endianness, Oracle-Lizenzierung und die Neuarchitektur von Altanwendungen kommen im Assessment auf den Tisch, nicht mitten im Cutover.
 - **Von Ihrem Team betreibbar.** Kubernetes-Kompetenzen, die Sie einstellen können, statt knapper AIX/PowerVM-Spezialisten.
 - **Offenes Ziel.** Apache 2.0 und unter dem Dach der CNCF entwickelt — Sie betreiben die Plattform, auf die Sie migrieren, ohne Lizenzkosten für die Plattform.
@@ -308,4 +308,4 @@ Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben. Für 
 
 ---
 
-*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an — Public Cloud, Private Cloud und AI.*
+*Ænix hat Cozystack (ein CNCF-Sandbox-Projekt) entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf aufbauend bietet Ænix drei Plattformen an — Public Cloud, Private Cloud und AI.*

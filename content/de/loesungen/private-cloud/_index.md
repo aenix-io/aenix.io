@@ -12,7 +12,7 @@ hreflang_en: /solutions/private-cloud-platform/
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Private-Cloud-Konsole von Cozystack — Self-Service-Marktplatz"
 direct_answer: |
-  **Eine Private-Cloud-Plattform ist die Softwareschicht, die Hardware im Besitz oder unter der Kontrolle einer Organisation in eine Self-Service-Cloud verwandelt: Compute, Storage, Networking, Mandantenfähigkeit, verwaltete Datendienste und eine Bereitstellungsoberfläche — gesteuert von der Organisation selbst statt von einem Hyperscaler. Sie ersetzt den VMware-Cloud-Foundation-Stack für Teams, die das Betriebsmodell der Cloud wollen, aber keinen Cloud-Vermieter. Die Kubernetes-native Open-Source-Option in dieser Kategorie ist Cozystack — ein CNCF-Sandbox-Projekt unter Apache 2.0 ohne Lizenzkosten pro CPU oder Core. Es vereint KubeVirt-Virtualisierung für VMs und Container, Cilium-Networking (eBPF), replizierten Storage mit LINSTOR/DRBD, eine mandantenfähige Control Plane über das Tenant-CRD, verwaltete Datenbanken, S3-Object-Storage mit SeaweedFS und NVIDIA-GPUs auf Bare Metal. Ænix hat Cozystack initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen; die Ænix Private Cloud Platform ist der unterstützte Aufbau für regulierte Organisationen und wird per RFP angeboten.**
+  **Eine Private-Cloud-Plattform ist die Softwareschicht, die Hardware im Besitz oder unter der Kontrolle einer Organisation in eine Self-Service-Cloud verwandelt: Compute, Storage, Networking, Mandantenfähigkeit, verwaltete Datendienste und eine Bereitstellungsoberfläche — gesteuert von der Organisation selbst statt von einem Hyperscaler. Sie ersetzt den VMware-Cloud-Foundation-Stack für Teams, die das Betriebsmodell der Cloud wollen, aber keinen Cloud-Vermieter. Die Kubernetes-native Open-Source-Option in dieser Kategorie ist Cozystack — ein CNCF-Sandbox-Projekt unter Apache 2.0 ohne Lizenzkosten pro CPU oder Core. Es vereint KubeVirt-Virtualisierung für VMs und Container, Cilium-Networking (eBPF), replizierten Storage mit LINSTOR/DRBD, eine mandantenfähige Control Plane über das Tenant-CRD, verwaltete Datenbanken, S3-Object-Storage mit SeaweedFS und NVIDIA-GPUs auf Bare Metal. Ænix hat Cozystack entwickelt und pflegt es gemeinsam mit Maintainern anderer Unternehmen; die Ænix Private Cloud Platform ist der unterstützte Aufbau für regulierte Organisationen und wird per RFP angeboten.**
 quick_facts:
   - label: "Was es ist"
     value: "Die Softwareschicht, die eigene Hardware in eine Self-Service-Cloud verwandelt — Compute, Storage, Networking, Mandantenfähigkeit und verwaltete Datendienste unter Ihrer eigenen Governance."
@@ -30,7 +30,7 @@ quick_facts:
     value: "Selbst aus dem Open-Source-Projekt installieren (Dokumentation auf cozystack.io) oder mit Ænix: Assessment über 14 oder 28 Tage und Aufbau in 3–12 Monaten; Air-Gap-Installationen werden unterstützt."
 faq:
   - q: "Was ist der Unterschied zwischen Cozystack und Ænix?"
-    a: "Cozystack ist die Open-Source-Plattform und ein CNCF-Sandbox-Projekt unter Apache 2.0 mit Maintainern aus mehreren Unternehmen. Ænix hat Cozystack initiiert, pflegt es mit und verkauft Abonnements — Support, kommerzielle Module und Services —, darunter die Ænix Private Cloud Platform. Sie können Cozystack auch komplett ohne Ænix betreiben."
+    a: "Cozystack ist die Open-Source-Plattform und ein CNCF-Sandbox-Projekt unter Apache 2.0 mit Maintainern aus mehreren Unternehmen. Ænix hat Cozystack entwickelt, pflegt es mit und verkauft Abonnements — Support, kommerzielle Module und Services —, darunter die Ænix Private Cloud Platform. Sie können Cozystack auch komplett ohne Ænix betreiben."
   - q: "Wie unterscheidet sich eine Private Cloud mit Cozystack von VMware Cloud Foundation?"
     a: "Cozystack ersetzt den gesamten VCF-Stack durch ein Kubernetes-natives Gegenstück unter Apache 2.0. Es nutzt KubeVirt statt vSphere/ESXi, Cilium statt NSX und ein Tenant-CRD statt vCloud Director und kennt kein Abonnement pro CPU oder Core. Der Betriebsaufwand ist geringer, und es entsteht kein Vendor-Lock-in."
   - q: "Wie unterscheidet sich Cozystack von OpenStack?"
@@ -50,7 +50,7 @@ aliases:
 
 **Eine Private-Cloud-Plattform ist die Software, die eigene Hardware in eine Self-Service-Cloud verwandelt — Compute, Storage, Networking, Mandantenfähigkeit, verwaltete Datendienste und eine Bereitstellungsoberfläche, unter Ihrer eigenen Governance. Diese Seite erklärt, was die Kategorie leisten muss und wie die Kubernetes-native Open-Source-Option im Vergleich zu VMware Cloud Foundation, OpenStack und OpenShift Virtualization abschneidet.**
 
-Die Open-Source-Referenzimplementierung ist hier [Cozystack](/de/produkte/cozystack/) — ein CNCF-Sandbox-Projekt unter Apache 2.0, von Ænix initiiert und gemeinsam mit Maintainern anderer Unternehmen gepflegt; [Produktivprojekte](/de/case-studies/) sind als Fallstudien dokumentiert.
+Die Open-Source-Referenzimplementierung ist hier [Cozystack](/de/produkte/cozystack/) — ein CNCF-Sandbox-Projekt unter Apache 2.0, von Ænix entwickelt und gemeinsam mit Maintainern anderer Unternehmen gepflegt; [Produktivprojekte](/de/case-studies/) sind als Fallstudien dokumentiert.
 
 > **Sie wollen kaufen statt lernen?** Die unterstützte kommerzielle Version für eine regulierte Umgebung ist die **[Ænix Private Cloud Platform](/de/produkte/private-cloud-platform/)** — Architektur, Aufbau, Support und Preise finden Sie auf der Produktseite. Infrastrukturverantwortliche können mit dem [Leitfaden für Infrastrukturverantwortliche](/de/fuer/leiter-infrastruktur/) beginnen.
 
@@ -211,4 +211,4 @@ Oder:
 
 ---
 
-*Ænix hat Cozystack initiiert (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud Platform, Private Cloud Platform und AI Platform.*
+*Ænix hat Cozystack entwickelt (CNCF-Sandbox-Projekt, CNCF Certified Kubernetes Distribution, OpenSSF Best Practices) und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Ænix verkauft auf dieser Engine drei Plattformen: Public Cloud Platform, Private Cloud Platform und AI Platform.*
