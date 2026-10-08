@@ -1,58 +1,65 @@
 ---
 title: "Cloud-Kostenoptimierung — vorhersagbare Ausgaben auf kontrollierter Infrastruktur"
-description: "Public-Cloud-Rechnungen schrumpfen nicht von selbst. Die Kombination aus untergenutzten Commitments, ungenutzten Ressourcen, Egress-Gebühren und..."
+seo_title: "Cloud-Kostenoptimierung ohne Hyperscaler-Bindung"
+primary_keyword: "Cloud-Kostenoptimierung"
+description: "Wo Public-Cloud-Ausgaben versickern, was sich in der Cloud beheben lässt und was auf eigene Infrastruktur gehört. Festpreis, 14 oder 28 Tage."
 type: "page"
-related_pages: ["/de/loesungen/cloud-repatriation", "/de/produkte/private-cloud-platform/", "/de/dienstleistungen/platform-readiness-assessment/"]
+related_pages:
+  - /de/loesungen/cloud-repatriation/
+  - /de/loesungen/data-sovereignty/
+  - /de/dienstleistungen/platform-readiness-assessment/
+  - /de/produkte/public-cloud-platform/
+  - /de/produkte/private-cloud-platform/
+  - /de/produkte/cozystack/
 language: "de"
 quick_facts_style: "rows"
 faq_style: "rows"
 hreflang_en: /solutions/cloud-cost-optimization/
 direct_answer: |
-  **Cloud-Kostenoptimierung bedeutet, Public-Cloud-Ausgaben systematisch zu senken — durch das Beheben untergenutzter Reserved Instances und Savings Plans, ungenutzter und überdimensionierter Ressourcen, Egress- und Cross-Region-Gebühren sowie Hyperscaler-Managed-Service-Aufschläge. Die meisten Cloud-Rechnungen liegen 20-40% höher als nötig, bevor irgendeine architektonische Änderung erfolgt. Aenix, das Team hinter Cozystack, benennt in einem 14- oder 28-Tage-Engagement, wo Ausgaben verloren gehen, was sich innerhalb des Hyperscalers lohnt zu beheben und welche Workloads sich auf eine kontrollierte Plattform (KubeVirt, Cilium, LINSTOR auf Kubernetes) verlagern lassen. Bei dauerhaft ausgelasteten Workloads erreicht die Repatriation eine TCO-Reduktion von 40-70%.**
+  **Cloud-Kostenoptimierung bedeutet, Public-Cloud-Ausgaben zu senken: Verschwendung beseitigen, Ressourcen richtig dimensionieren, Commitments nachjustieren und entscheiden, welche Workloads beim Hyperscaler bleiben und welche auf Infrastruktur unter Ihrer Kontrolle gehören. Sie richtet sich an Organisationen mit einer siebenstelligen jährlichen Cloud-Rechnung, dauerhaften und planbaren Workloads und einer Kostenentwicklung, die der Finanzabteilung Sorgen macht. Ænix führt ein strukturiertes, herstellerneutrales Kostenprojekt (14 oder 28 Tage) durch, das ein ehrliches TCO-Modell, ein quantifiziertes Inventar der Kostenlecks, Right-Sizing-Empfehlungen und einen 12-Monats-Ausgabenverlauf liefert. Ænix hat keine Hyperscaler-Partnerschaft, die Empfehlungen werden also nicht von Partnerschaftsökonomie geprägt. Spricht die Rechnung für den Ausstieg aus der Cloud, bietet Cozystack — die quelloffene, Kubernetes-native Plattform, die Ænix initiiert hat und mitpflegt — ein Ziel unter Kundenkontrolle; bei dauerhaften Workloads verbessern sich die Stückkosten typischerweise um 30–60 %.**
 quick_facts:
   - label: "Was es ist"
-    value: "Systematische Senkung von Public-Cloud-Ausgaben durch FinOps-Analyse plus selektive Repatriation untergenutzter Workloads auf eine selbst kontrollierte Kubernetes-Plattform"
-  - label: "Typische Einsparung"
-    value: "20-40% allein durch schnelle Einsparungen beim Hyperscaler; 40-70% TCO-Reduktion bei Repatriation dauerhaft ausgelasteter Workloads"
-  - label: "Engagement"
-    value: "14-Tage (TCO-Modellierung und schnelle Einsparungen) oder 28-Tage (vollständiges Programm mit Repatriation-Bewertung) nach der Platform-Readiness-Assessment-Methodik"
+    value: "Ein strukturiertes Projekt, das beziffert, wo Public-Cloud-Ausgaben versickern, und entscheidet, was in der Cloud behoben und was auf kontrollierte Infrastruktur verlagert wird"
+  - label: "Für wen"
+    value: "Organisationen mit siebenstelliger jährlicher Cloud-Rechnung, dauerhaften planbaren Workloads oder einer anstehenden Kostenentscheidung auf Vorstandsebene"
+  - label: "Zeitplan"
+    value: "14 Tage mit fokussiertem Kosten-Scope oder 28 Tage als vollständiges Kostenprogramm; kostenloses 30-minütiges Discovery-Gespräch an Tag 0, schriftlicher Executive-Readout am letzten Tag"
+  - label: "Herstellerneutralität"
+    value: "Ænix hat keine Hyperscaler-Partnerschaft; Empfehlungen werden nicht von Partnerschaftsökonomie geprägt"
+  - label: "Typische Einsparungen"
+    value: "15–25 % adressierbar aus Kostenlecks vor jeder architektonischen Änderung; 30–60 % bessere Stückkosten, wenn dauerhafte Workloads auf Hardware unter Kundenkontrolle umziehen"
   - label: "Lizenz"
-    value: "Apache 2.0 (keine CPU-/Core-basierte Lizenzierung)"
-  - label: "Plattform-Basis"
-    value: "Cozystack: KubeVirt für VMs und Container auf einer Kubernetes-API, Cilium (eBPF) Networking, LINSTOR/DRBD Storage, Tenant-CRD-Mandantenfähigkeit"
+    value: "Apache 2.0 (keine Lizenzkosten pro CPU/Core)"
   - label: "Status"
-    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; Incubating-Antrag in der Due-Diligence-Prüfung)"
+    value: "Cozystack ist ein CNCF-Projekt (Sandbox seit 28.02.2025; der Antrag auf CNCF Incubation befindet sich in der Due-Diligence-Prüfung)"
 faq:
-  - q: "Wo gehen Cloud-Kosten typischerweise verloren?"
-    a: "An vier Stellen: untergenutzten Reserved Instances und Savings Plans, idle und über-dimensionierten Ressourcen, Egress- und Cross-Region-Verkehr sowie dem Aufschlag für Hyperscaler-Managed-Services wie RDS oder Aurora. Diese summieren sich oft auf 20-40% der Rechnung, bevor eine architektonische Änderung nötig ist."
-  - q: "Muss ich für Kostenoptimierung gleich aus der Cloud migrieren?"
-    a: "Nein. Ein erheblicher Teil der Einsparung lässt sich innerhalb des Hyperscalers erzielen — durch Right-Sizing, Commitment-Bereinigung und Egress-Reduktion. Repatriation kommt nur dort ins Spiel, wo dauerhaft ausgelastete, planbare Workloads auf einer kontrollierten Plattform dauerhaft günstiger laufen."
-  - q: "Wie lange dauert ein Aenix-Engagement?"
-    a: "Es gibt zwei Varianten: ein 14-Tage-Engagement mit fokussierter TCO-Modellierung und schnelle Einsparungen, oder ein 28-Tage-Engagement als vollständiges Programm inklusive Repatriation-Bewertung. Beide folgen der Platform-Readiness-Assessment-Methodik."
-  - q: "Wie viel TCO-Reduktion ist bei Repatriation realistisch?"
-    a: "Bei dauerhaft ausgelasteten, planbaren Workloads sind 40-70% TCO-Reduktion realistisch. Der genaue Wert hängt von Auslastungsprofil, Datenvolumen und Egress ab — deshalb steht am Anfang immer eine konkrete TCO-Modellierung statt einer pauschalen Zusage."
-  - q: "Auf welcher Plattform laufen repatriierte Workloads?"
-    a: "Auf der Ænix Platform, der produktisierten Distribution von Cozystack: KubeVirt führt VMs und Container über eine gemeinsame Kubernetes-API aus, Cilium übernimmt eBPF-Networking, LINSTOR/DRBD das Storage. Cozystack steht unter Apache 2.0 ohne CPU-/Core-basierte Lizenzierung."
-  - q: "Was kostet die Ænix Platform selbst?"
-    a: "Die Preisstufen sind Basic 1.250 $/Monat (bis 10 Nodes), Standard 3.000 $, Plus 5.500 $ und Enterprise nach Angebot. Die zugrunde liegende Cozystack-Software ist Open Source unter Apache 2.0; bezahlt werden Support, Härtung und Services."
+  - q: "Ist das ein FinOps-Projekt oder ein Projekt zur Kostenoptimierung?"
+    a: "Beides. Reines FinOps erschließt konfigurative Einsparungen — Right-Sizing, Nachjustieren von Reservierungen, Beseitigen von Verschwendung. Die Entscheidungen auf Architekturebene, die strukturelle von konfigurativen Einsparungen trennen, erfordern Platform Engineering. Das Ænix-Projekt deckt beide Ebenen in einem Programm ab."
+  - q: "Worin unterscheidet sich das von einem Cloud-Kostenprojekt der Big Four?"
+    a: "Big-Four-Projekte werden meist von Managementberatern geliefert und sind von der Partnerschaftsökonomie mit Hyperscalern geprägt. Bei Ænix machen Ingenieure die Arbeit, und Ænix ist mit keinem Hyperscaler partnerschaftlich verbunden. Die Empfehlung sagt klar, wann es richtig ist, in der Cloud zu bleiben, und wann der Ausstieg richtig ist."
+  - q: "Können Sie einen bestimmten Einsparungsprozentsatz garantieren?"
+    a: "Nein, und Ænix wirbt nicht mit Prozentversprechen. Gut verwaltete Cloud-Landschaften bringen vor jeder architektonischen Änderung typischerweise 15–25 %, schlecht verwaltete 30–50 %; Landschaften mit starkem Repatriation-Argument können darüber liegen, erfordern dann aber Umsetzungsarbeit in Phase 2. Die belastbare Zahl liefert das Assessment."
+  - q: "Wird Ænix am Ende eine Repatriation empfehlen?"
+    a: "Nur wenn die Rechnung dafür spricht und der Käufer die Zielplattform betreiben kann. Oft lautet die Antwort: teilweise Repatriation ausgewählter Workloads und Optimierung für den Rest; manchmal ist reine Optimierung richtig. Der schriftliche Bericht benennt die Antwort für Ihren konkreten Fall."
+  - q: "Was liefert Ænix am Ende des Projekts?"
+    a: "Ein ehrliches TCO-Modell nach Account, Service und Team; ein quantifiziertes Inventar der Kostenlecks mit benannten Commitments und Instanz-IDs; Right-Sizing-Empfehlungen pro Workload; architektonische Kostenentscheidungen; einen 12-Monats-Ausgabenverlauf mit Konfidenzbereichen sowie einen Plan für FinOps-Verantwortung und -Prozess."
+  - q: "Können wir das über ein Beschaffungsverfahren abwickeln?"
+    a: "Ja. Ænix nimmt RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge laufen über die AENIX s.r.o. (Tschechien). Das Projekt hat einen Festpreis und eine einzige Rechnung; das Assessment-Honorar wird je nach Umfang auf die Umsetzung in Phase 2 angerechnet."
 ---
 
 <!-- BLOCK 1: HERO -->
 
-**Public-Cloud-Rechnungen schrumpfen nicht von selbst. Die Kombination aus untergenutzten Commitments, ungenutzten Ressourcen, Egress-Gebühren und Aufschlägen für Hyperscaler-Managed-Services führt dazu, dass die meisten Cloud-Ausgaben 20-40 % höher liegen als nötig — noch vor jeder architektonischen Änderung. Das richtige Engagement zur Cloud-Kostenoptimierung benennt, wo die Ausgaben versickern, was sich innerhalb des Hyperscalers zu beheben lohnt und was sich auf eine Plattform verlagern lässt, die Sie selbst kontrollieren.**
+**Public-Cloud-Rechnungen schrumpfen nicht von selbst. Untergenutzte Commitments, ungenutzte Ressourcen, Egress-Gebühren und Aufschläge für Managed Services der Hyperscaler führen dazu, dass die meisten Cloud-Ausgaben 20–40 % höher liegen als nötig — noch vor jeder architektonischen Änderung. Das richtige Projekt zur Cloud-Kostenoptimierung benennt, wo die Ausgaben versickern, was sich innerhalb des Hyperscalers zu beheben lohnt und was sich auf eine Plattform verlagern lässt, die Sie selbst kontrollieren.**
 
-Ænix führt ein strukturiertes Cloud-Kosten-Engagement durch, das mit Zahlen beantwortet: wo Sie heute stehen, wo Sie in 12 Monaten stehen können und was die architektonischen Entscheidungen Sie auf dem Weg dorthin kosten.
-
-> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)** für Hosting-Anbieter, regionale Clouds und große Betreiber; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)** für regulierte Unternehmen, die für sich selbst betreiben. Die Wirtschaftlichkeit dauerhafter Auslastung auf kundeneigener Hardware senkt die TCO typischerweise um 40-70 % gegenüber Hyperscalern. Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/).
+> **Passt zu:** **[Ænix Public Cloud Platform](/de/produkte/public-cloud-platform/)**, wenn Sie Cloud an Kunden verkaufen; **[Private Cloud Platform](/de/produkte/private-cloud-platform/)**, wenn Sie sie für Ihre eigene Organisation betreiben. Kostenloses [Cloud-Repatriation-TCO-Worksheet →](/de/ressourcen/cloud-repatriation-tco-worksheet/). Für CTOs: siehe den [CTO-Leitfaden](/de/fuer/cto/).
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
-  <a class="cta-secondary" href="/de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/">Leitfaden zu Optimierungsstrategien lesen →</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/">Leitfaden lesen →</a>
 </div>
 
-
 <div class="trust-badges">
-Keine Hyperscaler-Voreingenommenheit · Ehrliche TCO-Modellierung · EU-Ingenieure · Schriftliche Ergebnisse
+Keine Hyperscaler-Bindung · Ehrliche TCO-Modellierung · Ingenieure statt Berater · Schriftliche Ergebnisse
 </div>
 
 <!-- /BLOCK 1 -->
@@ -63,16 +70,16 @@ Keine Hyperscaler-Voreingenommenheit · Ehrliche TCO-Modellierung · EU-Ingenieu
 
 ## Wer ein Cloud-Kostenproblem hat, das sich zu lösen lohnt
 
-Das Cloud-Kosten-Engagement passt, wenn mindestens drei der folgenden Punkte zutreffen:
+Das Kostenprojekt passt, wenn mindestens drei der folgenden Punkte zutreffen:
 
 - **Jährliche Public-Cloud-Rechnung im siebenstelligen Bereich** — dann lohnt sich die Analyse.
-- **Die Ausgaben wachsen schneller als der Umsatz** oder der Verlängerungstrend bereitet der Finanzabteilung Unbehagen.
-- **Dauerhafte Workloads mit planbarer Auslastung** — kein reines Burst-Elastic-Profil.
+- **Die Ausgaben wachsen schneller als der Umsatz**, oder die Entwicklung bis zur nächsten Verlängerung bereitet der Finanzabteilung Unbehagen.
+- **Dauerhafte Workloads mit planbarer Auslastung** — kein reines Burst-Profil.
 - **Multi-Cloud- oder Multi-Account-Komplexität** — die Transparenz ist über Accounts, Regionen und Teams hinweg fragmentiert.
-- **Eine FinOps-Funktion existiert, agiert aber reaktiv** — das Team meldet Mehrausgaben, nachdem sie angefallen sind; es prägt Architekturentscheidungen nicht im Vorfeld.
+- **Eine FinOps-Funktion existiert, agiert aber reaktiv** — das Team meldet Mehrausgaben, nachdem sie angefallen sind, prägt Architekturentscheidungen aber nicht im Vorfeld.
 - **Eine Kostenentscheidung auf Vorstandsebene steht bevor** — Budgetprüfung, Repatriation-Frage, Einstellungsstopp oder M&A.
 
-Wenn Ihre Situation auf mindestens drei Punkte zutrifft, spielt das Engagement seine Kosten bereits innerhalb der Bewertung durch identifizierte Einsparungen wieder ein, noch bevor Umsetzungsarbeiten beginnen. Bei weniger Signalen liegt der Großteil des Werts in routinemäßigem FinOps-Tooling, nicht in einem strukturierten Engagement.
+Treffen mindestens drei Punkte zu, findet das Assessment in der Regel Einsparungen, die es rechtfertigen, noch bevor Umsetzungsarbeiten beginnen — wie in den FAQ beschrieben, versprechen wir dabei aber keinen Prozentsatz. Bei weniger Signalen liegt der Großteil des Nutzens in routinemäßigem FinOps-Tooling, nicht in einem strukturierten Projekt.
 
 <!-- /BLOCK 2 -->
 
@@ -80,31 +87,27 @@ Wenn Ihre Situation auf mindestens drei Punkte zutrifft, spielt das Engagement s
 
 <!-- BLOCK 3: WHERE THE COST LEAKS ARE -->
 
-<div class="band-fullbleed band-fullbleed--tint">
-<div class="band-fullbleed__inner">
-
 ## Wo sich Cloud-Kostenlecks konzentrieren
 
 <div class="grid-2x2">
 
 **1. Untergenutzte Commitments und Reservierungen**
-Reserved Instances, Savings Plans und Committed Use Discounts, die gekauft wurden, um „Einsparungen zu sichern“, sind regelmäßig nur zu 50-70 % ausgelastet. Der Rabatt verpufft gegen ungenutzte Kapazität. Die meisten Organisationen können ihre tatsächliche Einlösequote ohne gezielten Blick nicht benennen.
+Reserved Instances, Savings Plans und Committed Use Discounts, die gekauft wurden, um „Einsparungen zu sichern“, sind regelmäßig nur zu 50–70 % ausgelastet. Der Rabatt verpufft an ungenutzter Kapazität. Die meisten Organisationen können ihre tatsächliche Ausnutzungsquote ohne gezielte Prüfung nicht benennen.
 
 **2. Ungenutzte und überdimensionierte Ressourcen**
-EC2-/VM-Instanzen, die rund um die Uhr bei 5-15 % CPU laufen. Storage-Volumes, die an beendete Workloads gebunden sind. Load Balancer, die nichts schützen. NAT Gateways, die nichts routen. Die Ansammlung wächst stetig und bleibt bei der monatlichen Rechnungsprüfung weitgehend unsichtbar.
+EC2- oder VM-Instanzen, die rund um die Uhr bei 5–15 % CPU laufen. Storage-Volumes, die an beendeten Workloads hängen. Load Balancer, die nichts schützen. NAT Gateways, die nichts routen. Das sammelt sich stetig an und bleibt bei der monatlichen Rechnungsprüfung weitgehend unsichtbar.
 
 **3. Egress und Cross-Region-Verkehr**
-Cross-Region-Replikation, die strukturell bedingt ist; Cross-Cloud-Verkehr aus zufälligen Architekturentscheidungen; SaaS-Observability-Anbieter, die Daten über Cross-Region-Endpunkte ziehen. Egress ist margenintensiv für den Hyperscaler und wird zum Architekturzeitpunkt fast nie optimiert.
+Strukturell bedingte Cross-Region-Replikation; Cross-Cloud-Verkehr aus zufälligen Architekturentscheidungen; SaaS-Observability-Anbieter, die Daten über Cross-Region-Endpunkte ziehen. Egress bringt den Hyperscalern hohe Margen und wird beim Architekturentwurf fast nie optimiert.
 
-**4. Aufschlag für Hyperscaler-Managed-Services**
-Managed Databases, Managed Kubernetes, Managed Observability — im großen Maßstab alle mit dem 2- bis 4-Fachen gegenüber selbst betriebenen Äquivalenten bepreist. Für manche Workloads lohnt es sich; für andere bleibt der Aufschlag unsichtbar, bis er gemessen wird.
-
-</div>
-
-Ein strukturiertes Kosten-Engagement erfasst alle vier mit quantifizierten Zahlen pro Account und Team. Die meisten Organisationen können daraus 15-25 % adressierbare Einsparungen ohne architektonische Änderung identifizieren.
+**4. Aufschlag für Managed Services der Hyperscaler**
+Managed Databases, Managed Kubernetes, Managed Observability — im großen Maßstab alle zum 2- bis 4-Fachen selbst betriebener Äquivalente bepreist. Für manche Workloads lohnt sich das; bei anderen bleibt der Aufschlag unsichtbar, bis man ihn misst.
 
 </div>
-</div>
+
+Ein strukturiertes Kostenprojekt erfasst alle vier mit quantifizierten Zahlen pro Account und Team.
+
+{{< factoid number="15–25 %" label="adressierbare Einsparungen, die ein strukturiertes Projekt in den vier Leckkategorien typischerweise findet — ohne architektonische Änderung" >}}
 
 <!-- /BLOCK 3 -->
 
@@ -117,20 +120,20 @@ Ein strukturiertes Kosten-Engagement erfasst alle vier mit quantifizierten Zahle
 <div class="gap-cards-2">
 
 **Der Gewinn ist strukturell, nicht konfigurativ**
-Nach sechs Monaten Right-sizing, Reservierungs-Tuning und Beseitigung von Verschwendung ist die Rechnung 20 % niedriger. Dann sinkt sie nicht weiter. Weitere Einsparungen erfordern architektonische Änderungen — Repatriation, Plattformwechsel oder Workload-Redesign.
+Nach sechs Monaten Right-Sizing, Nachjustieren von Reservierungen und Beseitigen von Verschwendung ist die Rechnung 20 % niedriger. Dann sinkt sie nicht weiter. Weitere Einsparungen erfordern architektonische Änderungen — Repatriation, Plattformwechsel oder Neuentwurf der Workloads.
 
 **Die Kostenkrise ist ein Symptom einer Plattformkrise**
-Die Cloud-Ausgaben wachsen, weil das Provisioning von Umgebungen kaputt ist: Jedes Team baut seine eigene Infrastruktur, ohne gemeinsame Plattform. Die Kosten sind real, aber die Lösung liegt nicht in FinOps. Sie liegt im Platform Engineering.
+Die Cloud-Ausgaben wachsen, weil die Bereitstellung von Umgebungen nicht funktioniert: Jedes Team baut seine eigene Infrastruktur, ohne gemeinsame Plattform. Die Kosten sind real, aber die Lösung liegt nicht im FinOps, sondern im Platform Engineering.
 
 **Die Hyperscaler-Ökonomie passt schlicht nicht zum Workload**
-Dauerhafte 24/7-Inferenz, Analytik auf großen Datenmengen, regulierte Workloads im großen Maßstab — manche Workloads eignen sich strukturell besser für dedizierte Infrastruktur. Kein noch so gutes FinOps-Tooling schließt diese Lücke.
+Inferenz rund um die Uhr, Analytik auf großen Datenmengen, regulierte Workloads im großen Maßstab — manche Workloads eignen sich strukturell besser für dedizierte Infrastruktur. Kein FinOps-Tooling schließt diese Lücke.
 
 **Vendor-Lock-in ist ein Kostenfaktor, kein Feature**
-Der „Managed-Service-Aufschlag“ ist erträglich, bis es zur Vertragsverhandlung kommt. Dann macht das Fehlen einer glaubwürdigen Alternative die nächste Verlängerung teuer. Optimierung kann darauf hinweisen; nur architektonische Änderung löst es auf.
+Der Aufschlag für Managed Services ist erträglich, bis die Vertragsverhandlung ansteht. Dann macht das Fehlen einer glaubwürdigen Alternative die nächste Verlängerung teuer. Optimierung kann darauf hinweisen; lösen lässt es sich nur durch eine architektonische Änderung.
 
 </div>
 
-Das ehrliche Engagement benennt, welche dieser Punkte auf Ihre Situation zutreffen, und sagt Ihnen, ob die Antwort FinOps-Tuning, Platform Engineering oder Repatriation lautet. Siehe **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)**, wenn die Antwort die dritte ist.
+Ein ehrliches Projekt benennt, welche dieser Punkte auf Ihre Situation zutreffen, und sagt Ihnen, ob die Antwort FinOps-Tuning, Platform Engineering oder Repatriation lautet. Lautet sie Repatriation, siehe **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)**.
 
 <!-- /BLOCK 4 -->
 
@@ -138,30 +141,36 @@ Das ehrliche Engagement benennt, welche dieser Punkte auf Ihre Situation zutreff
 
 <!-- BLOCK 5: HOW AENIX HELPS -->
 
+<div class="band-fullbleed band-fullbleed--tint">
+<div class="band-fullbleed__inner">
+
 ## Wie Ænix hilft
 
 <div class="arch-section__fig">
 <div class="diagram">
-<div class="diagram__node"><b>Public-Cloud-Rechnung</b><div class="diagram__chips"><span>20-40 % höher als nötig</span></div></div>
-<div class="diagram__conn">bereinigt durch</div>
-<div class="diagram__node"><b>FinOps-Analyse & schnelle Einsparungen</b><div class="diagram__chips"><span>Right-Sizing, Commitment-Bereinigung, Egress-Reduktion</span></div></div>
-<div class="diagram__conn">verlagert dauerhaft ausgelastete Workloads auf</div>
-<div class="diagram__node diagram__node--brand"><b>Ænix Platform (Cozystack)</b><div class="diagram__chips"><span>KubeVirt, Cilium (eBPF), LINSTOR/DRBD</span></div></div>
-<div class="diagram__conn">erreicht</div>
-<div class="diagram__node"><b>40-70 % TCO-Reduktion</b></div>
+<div class="diagram__node"><b>Public-Cloud-Ausgaben</b><div class="diagram__chips"><span>Untergenutzte Commitments</span><span>Ungenutzte Ressourcen</span><span>Egress-Gebühren</span></div></div>
+<div class="diagram__conn">bewertet durch</div>
+<div class="diagram__node diagram__node--brand"><b>Ænix-Kostenprojekt</b><div class="diagram__chips"><span>Ehrliches TCO-Modell</span><span>Inventar der Kostenlecks</span><span>Right-Sizing</span></div></div>
+<div class="diagram__conn">in der Cloud beheben oder verlagern</div>
+<div class="diagram__node"><b>Optimierte Landschaft</b><div class="diagram__chips"><span>Nachjustierte Commitments</span><span>Repatriation-Kandidaten</span></div></div>
+<div class="diagram__conn">ergibt typischerweise</div>
+<div class="diagram__node"><b>Planbare Ausgaben</b><div class="diagram__chips"><span>30–60 % bessere Stückkosten</span><span>Infrastruktur unter Ihrer Kontrolle</span></div></div>
 </div>
 </div>
 
-Das Kosten-Engagement läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit dem Workstream Kosten und Cloud-Ausgaben als primärem Fokus. Das 14- oder 28-tägige Engagement liefert:
+Das Kostenprojekt läuft als Teil unseres **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** mit dem Arbeitsstrang Kosten und Cloud-Ausgaben als Schwerpunkt. Das 14- oder 28-tägige Projekt liefert:
 
 - **Ehrliches TCO-Modell** — aktuelle Ausgaben nach Account, Service und Team, mit normalisiertem Vergleich zu alternativen Architekturen.
 - **Inventar der Kostenlecks** — quantifiziert, mit benannten Commitments, Instanz-IDs und Verantwortlichkeiten.
-- **Right-sizing-Empfehlungen** — pro Workload, mit Ranking nach Aufwand gegen Einsparung.
-- **Architektonische Kostenentscheidungen** — Prüfung von Managed Services, Egress-Redesign, Rationalisierung von Multi-Region-Setups, Repatriation-Kandidaten.
+- **Right-Sizing-Empfehlungen** — pro Workload, sortiert nach Aufwand und Einsparung.
+- **Architektonische Kostenentscheidungen** — Prüfung der Managed Services, Neuentwurf des Egress, Bereinigung von Multi-Region-Setups, Repatriation-Kandidaten.
 - **12-Monats-Ausgabenverlauf** — aktuell → optimiert → architektonisch verändert, mit Obergrenzen und Konfidenzbereichen.
-- **Plan für FinOps-Verantwortung und -Prozess** — wer die Maschine betreibt, nachdem wir gegangen sind.
+- **Plan für FinOps-Verantwortung und -Prozess** — wer den Prozess weiterführt, wenn wir gegangen sind.
 
-Geliefert von Ænix-Ingenieuren, die Produktionsplattformen in der EU und in Zentralasien gebaut und betrieben haben. Wir sind mit keinem Hyperscaler kommerziell verbunden — Empfehlungen werden nicht von Partnerschaftsökonomie geprägt.
+Geliefert von Ænix-Ingenieuren, die Produktionsplattformen in der EU und in Zentralasien gebaut und betrieben haben.
+
+</div>
+</div>
 
 <!-- /BLOCK 5 -->
 
@@ -171,8 +180,8 @@ Geliefert von Ænix-Ingenieuren, die Produktionsplattformen in der EU und in Zen
 
 ## Warum gerade Ænix
 
-- **Keine Hyperscaler-Partnerschaft.** Kostenoptimierungs-Engagements der Big-4 werden meist von dem Hyperscaler gesponsert oder mitgeliefert, dessen Ausgaben optimiert werden. Der Interessenkonflikt ist real. Wir haben keinen.
-- **Ingenieure, keine Buchhalter.** Kostenoptimierung ist eine Platform-Engineering-Frage im Gewand einer FinOps-Frage. Right-sizing erfordert das Verständnis, wie Workloads Ressourcen nutzen; Kostenentscheidungen auf Architekturebene erfordern das Verständnis der Architektur. Unsere Ingenieure beherrschen beides.
+- **Keine Hyperscaler-Partnerschaft.** Kostenoptimierungsprojekte der Big Four werden meist von genau dem Hyperscaler gesponsert oder mitgeliefert, dessen Ausgaben optimiert werden. Der Interessenkonflikt ist real. Wir haben keinen.
+- **Ingenieure, keine Buchhalter.** Kostenoptimierung ist eine Platform-Engineering-Frage im Gewand einer FinOps-Frage. Right-Sizing erfordert Verständnis dafür, wie Workloads Ressourcen nutzen; Kostenentscheidungen auf Architekturebene erfordern Verständnis der Architektur. Unsere Ingenieure können beides.
 - **Open-Source-Plattform als Fundament.** [Cozystack](/de/produkte/cozystack/) ist eine quelloffene, Kubernetes-native Plattform. Wenn Workloads davon profitieren, auf einer Plattform zu laufen, die Sie kontrollieren statt mieten, zeigen wir Ihnen die Rechnung, die Architektur und den Umsetzungsweg — unter Ihrer Governance.
 
 <!-- /BLOCK 6 -->
@@ -181,15 +190,9 @@ Geliefert von Ænix-Ingenieuren, die Produktionsplattformen in der EU und in Zen
 
 <!-- BLOCK 7: TIMELINE -->
 
-## Wie das Engagement abläuft
+## Wie das Projekt abläuft
 
-| Wann | Was | Ergebnis |
-|---|---|---|
-| **Tag 0** | 30-minütiger Discovery-Call (kostenlos) | Passung bestätigen, Kostenanliegen und Scope identifizieren |
-| **Tage 1-13 (oder 1-27)** | Vier parallele Workstreams; Schwerpunkt auf Kosten und Cloud-Ausgaben | TCO-Modellierung, Inventar der Kostenlecks, tägliche asynchrone Updates |
-| **Tag 14 (oder 28)** | Executive-Readout (60-90 Min.) | Schriftlicher Bericht: TCO, Inventar der Kostenlecks, Right-sizing, architektonische Entscheidungen, 12-Monats-Verlauf, FinOps-Plan |
-
-Zur vollständigen Methodik siehe **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
+Tag 0 ist ein kostenloses 30-minütiges Discovery-Gespräch, in dem der Umfang festgelegt wird. An den Tagen 1–13 (bzw. 1–27) laufen vier parallele Arbeitsstränge mit Schwerpunkt auf Kosten und Cloud-Ausgaben, begleitet von täglichen asynchronen Updates und drei Abstimmungsterminen mit dem Sponsor. An Tag 14 (bzw. 28) folgt ein 60- bis 90-minütiger Executive-Readout zum schriftlichen Bericht — TCO-Modell, Inventar der Kostenlecks, Right-Sizing, architektonische Entscheidungen, 12-Monats-Verlauf und FinOps-Plan. Die vollständige Methodik Tag für Tag: **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)**.
 
 <!-- /BLOCK 7 -->
 
@@ -197,15 +200,13 @@ Zur vollständigen Methodik siehe **[Platform Readiness Assessment](/de/dienstle
 
 <!-- BLOCK 8: PROOF -->
 
-## Kosten-Engagements, die wir durchgeführt haben
+## Unternehmen, die Plattformen mit Ænix betreiben
 
 {{< clients >}}
 
-Wir haben kostenfokussierte Engagements für Service-Provider, Finanzdienstleister, Telekommunikationsbetreiber und AI-/GPU-Plattformen in der EU, in der DACH-Region und in Zentralasien durchgeführt. Die identifizierten Einsparungen reichten von 15 % (gut verwaltete Cloud-Landschaft, überwiegend taktische Optimierung) bis über 50 % (schlecht verwaltete Ausgaben mit starkem Repatriation-Argument).
+Hosting-Anbieter, die die Ænix Public Cloud Platform produktiv betreiben. Kostenergebnisse aus konkreten Projekten — zum Beispiel [GPU-Kosten auf eigener Hardware im Vergleich zu gemieteter Kapazität](/de/case-studies/multicloud-academic-gpu/) — finden Sie auf der [Seite mit den Fallstudien](/de/case-studies/).
 
 {{< quote-carousel >}}
-Namentliche Referenzen und Kundenzitate teilen wir im Discovery-Call, soweit Freigaben vorliegen.
-Namentlich genannte Fallstudien sind im Discovery-Call verfügbar, sofern die Kundenfreigaben dies erlauben.
 
 <!-- /BLOCK 8 -->
 
@@ -213,25 +214,25 @@ Namentlich genannte Fallstudien sind im Discovery-Call verfügbar, sofern die Ku
 
 <!-- BLOCK 9: PRICING -->
 
-## Preise und Umfang des Engagements
+## Preise und Projektumfang
 
-Das kostenfokussierte Engagement läuft als Platform Readiness Assessment.
+Das Kostenprojekt läuft als Platform Readiness Assessment.
 
 <div class="pricing-cards-2">
 
 ### 14 Tage (fokussierter Kosten-Scope)
-Tiefe der TCO-Modellierung, Inventar der Kostenlecks, Right-sizing-Empfehlungen, Identifikation von Repatriation-Kandidaten, FinOps-Prozessplan.
+TCO-Modellierung in der Tiefe, Inventar der Kostenlecks, Right-Sizing-Empfehlungen, Identifikation von Repatriation-Kandidaten, FinOps-Prozessplan.
 **Auf Anfrage**
 
 ### 28 Tage (vollständiges Kostenprogramm)
-Ergänzt um Anbieter-Shortlisting, PoC-Scoping für die besten Repatriation-Kandidaten, Stakeholder-Interviews über mehrere Geschäftsbereiche, vollständige Umsetzungs-Roadmap für Phase 2.
+Zusätzlich Anbieter-Shortlist, PoC-Zuschnitt für die besten Repatriation-Kandidaten, Stakeholder-Interviews über mehrere Geschäftsbereiche, vollständige Umsetzungs-Roadmap für Phase 2.
 **Auf Anfrage**
 
 </div>
 
-Festpreis. Eine Rechnung. Kosten der Phase-2-Umsetzung: Assessment-Honorar wird je nach Scope angerechnet.
+Festpreis. Eine Rechnung. Kosten der Umsetzung in Phase 2: Das Assessment-Honorar wird je nach Umfang angerechnet.
 
-Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitgliedstaaten und in Kasachstan.
+Wir nehmen RFI und RFP über die üblichen Beschaffungskanäle an; EU-Verträge laufen über die AENIX s.r.o. (Tschechien).
 
 <!-- /BLOCK 9 -->
 
@@ -240,8 +241,6 @@ Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitglied
 <!-- BLOCK 10: FAQ -->
 
 
-**Weitere Fragen?** Siehe den **[Leitfaden zu Cloud-Kostenoptimierungsstrategien](/de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/)** oder **[sprechen Sie mit uns](#discovery)**.
-
 <!-- /BLOCK 10 -->
 
 ---
@@ -249,19 +248,19 @@ Wir akzeptieren RFI / RFP über die üblichen Beschaffungskanäle in EU-Mitglied
 <!-- BLOCK 11: BOTTOM CTA -->
 
 <a id="discovery"></a>
-## Beginnen Sie mit einem 30-minütigen Discovery-Call
+## Beginnen Sie mit einem 30-minütigen Discovery-Gespräch
 
-Kostenlos. Keine Vorbereitung nötig. Wir bestätigen die Passung, identifizieren Ihre wichtigsten Kostenanliegen und sagen Ihnen, ob die 14-Tage- oder die 28-Tage-Variante zu Ihrer Situation passt.
+Wir prüfen die Passung, finden heraus, wo Ihre Ausgaben tatsächlich versickern, und benennen die passende Variante — 14 oder 28 Tage.
 
 <div class="cta-row">
-  <a class="cta-primary" href="/de/kontakt/">Discovery-Call buchen</a>
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
 </div>
 
 Oder lesen Sie weiter:
-- **[Leitfaden zu Cloud-Kostenoptimierungsstrategien](/de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/)** — praktische Tiefe
+- **[Leitfaden zu Strategien der Cloud-Kostenoptimierung](/de/blog/2026/05/cloud-kostenoptimierung-strategien-2026/)** — praktische Vertiefung
 - **[Cloud-Repatriation](/de/loesungen/cloud-repatriation/)** — wenn Optimierung nicht ausreicht
 - **[Datensouveränität](/de/loesungen/data-sovereignty/)** — wenn Souveränität und Kosten zusammenfallen
-- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Methodik des Engagements
+- **[Platform Readiness Assessment](/de/dienstleistungen/platform-readiness-assessment/)** — Methodik des Projekts
 - **[Cozystack](/de/produkte/cozystack/)** — die Zielplattform, die wir typischerweise empfehlen
 
 <!-- /BLOCK 11 -->
@@ -270,6 +269,6 @@ Oder lesen Sie weiter:
 
 <!-- BLOCK 12: FOOTER TRUST STRIP -->
 
-*Ænix ist das Unternehmen hinter Cozystack — einem CNCF-Projekt, einer Kubernetes Certified Distribution mit OpenSSF Best Practices. Wir führen Cloud-Kosten-Engagements und Platform-Engineering-Programme für Service-Provider, Banken, Telekommunikationsunternehmen und AI-Betreiber in der EU, in der DACH-Region und in Zentralasien durch.*
+*Ænix hat Cozystack initiiert — ein CNCF-Sandbox-Projekt, eine CNCF Certified Kubernetes Distribution mit OpenSSF Best Practices — und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Wir führen Cloud-Kostenprojekte und Platform-Engineering-Programme durch.*
 
 <!-- /BLOCK 12 -->
