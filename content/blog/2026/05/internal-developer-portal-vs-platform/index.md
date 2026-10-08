@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["Backstage", "Kubernetes", "Platform Engineering", "Compliance", "Observability"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/internal-developer-portal-vs-plattform/"
 companion_landing: "/alternatives/backstage-alternative/"
 quiz:
   title: "Test yourself: portal vs platform (and Backstage)"
