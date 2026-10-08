@@ -185,7 +185,8 @@ What that buys you in practice:
 <span class="trust-pill">CNCF Kubernetes AI Conformance</span>
 <a class="trust-pill" href="/compliance/iso-27001/">ISO/IEC 27001:2022 — AENIX s.r.o.</a>
 <span class="trust-pill">Apache 2.0</span>
-<span class="trust-pill">AENIX s.r.o. (Czech Republic) · AENIX INC (Delaware, USA)</span>
+<span class="trust-pill">AENIX s.r.o. (Czech Republic)</span>
+<span class="trust-pill">AENIX INC (Delaware, USA)</span>
 </div>
 
 </div>
