@@ -119,16 +119,16 @@ Grid of partner cards. Each card: logo, name, location, 1-line description. Exis
     <a href="https://gohost.kz/" target="_blank" rel="noopener"><img src="/images/clients/gohost.svg" alt="GoHost.kz" loading="lazy" height="52"></a>
   </div>
   <div class="distributor-spot__body">
-    <p class="distributor-spot__badge">Autorisierter Distributor · Kasachstan</p>
+    <p class="distributor-spot__badge">Partner · Kasachstan</p>
     <h3 class="distributor-spot__name">GoHost.kz</h3>
-    <p class="distributor-spot__text">GoHost.kz vertreibt die Ænix-Plattformen in ganz Kasachstan — landesweit, nicht nur in einer Region. Vertrieb, First-Level-Support und Deal-Schutz für nachgelagerte Reseller laufen im Land. GoHost ist zugleich ein öffentlich genannter Produktivkunde und betreibt die Ænix Public Cloud Platform auf eigener Infrastruktur.</p>
-    <p class="distributor-spot__meta">Wer die Ænix-Plattformen in Kasachstan kaufen oder weiterverkaufen will, beginnt hier.</p>
+    <p class="distributor-spot__text">GoHost.kz ist der Ænix-Partner in Kasachstan: Vertragsabschluss vor Ort, First-Level-Support und Unterstützung für Reseller im ganzen Land. GoHost ist zugleich ein öffentlich genannter Produktivkunde und betreibt die Ænix Public Cloud Platform auf eigener Infrastruktur.</p>
+    <p class="distributor-spot__meta">Kunden in Kasachstan kaufen über GoHost.kz oder schließen den Vertrag direkt mit Ænix.</p>
   </div>
 </aside>
 
 Zu den aktuellen öffentlich genannten Partnern gehören:
 
-- **GoHost.kz** (Kasachstan) — **autorisierter Distributor der Ænix-Plattformen für Kasachstan**; Hosting- und Cloud-Anbieter, der die Ænix Public Cloud Platform betreibt
+- **GoHost.kz** (Kasachstan) — Partner in Kasachstan; Hosting- und Cloud-Anbieter, der die Ænix Public Cloud Platform betreibt
 - **Hidora** (Schweiz, Genf) — europäischer Cloud-Anbieter mit Fokus auf souveräne Cloud
 - **QOSI** (Kasachstan) — digitale Souveränität und Open-Source-Ökosystem
 - **TECH EVOLVERS INC** (Karibik, Mittel- und Südamerika) — Cloud-native Beratung und Systemintegrator, Kubestronaut-Team

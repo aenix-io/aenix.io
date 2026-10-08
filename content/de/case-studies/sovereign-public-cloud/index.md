@@ -27,8 +27,8 @@ related_pages:
 
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">3 RZ</div><div class="cs-stat__label">synchrone Storage-Replikation über die Rechenzentren, etcd über drei Standorte</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">20 h → 0</div><div class="cs-stat__label">Stunden Vorfall — kein Datenverlust</div></div>
   <div class="cs-stat"><div class="cs-stat__num">10+</div><div class="cs-stat__label">Mandanten in Produktion; öffentliche Website in drei Sprachen</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">20 h → 0</div><div class="cs-stat__label">Stunden Vorfall — kein Datenverlust</div></div>
 </div>
 
 <div class="cta-row">
