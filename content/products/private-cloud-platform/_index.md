@@ -3,6 +3,7 @@ title: "Ænix Private Cloud Platform for regulated enterprises"
 description: "Ænix Private Cloud Platform: private and hybrid sovereign cloud for banks, insurers, public sector, telco and healthcare. DORA- and NIS2-aligned; per RFP."
 type: "page"
 language: "en"
+hero_cta: {secondary_text: "Open the developer-platform demo", secondary_url: "/idp/"}
 quick_facts_style: "rows"
 faq_style: "rows"
 primary_keyword: "private cloud platform for regulated enterprises"
@@ -17,7 +18,7 @@ direct_answer: |
 quick_facts:
   - label: "What it is"
     value: "Private and hybrid sovereign cloud for regulated enterprises, built on Cozystack, running alongside VMware, OpenNebula and OpenShift while you migrate."
-  - label: "License"
+  - label: "Licence"
     value: "Apache 2.0 core (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -145,7 +146,7 @@ The practical consequence: choosing Private Cloud Platform now does not foreclos
 | Vs. | The trade |
 |---|---|
 | **Nutanix** | Nutanix sells an appliance-grade experience: HCI with Prism, one vendor for hardware and software, and an operations story that genuinely works out of the box. The costs are the licence per core, the hardware compatibility list, and an exit that gets harder each renewal — and quotes swing widely, so the same estate can price anywhere in a broad band. Ænix Private Cloud Platform runs on commodity hardware with no per-core licence, and Kubernetes is the API rather than a bolted-on add-on. [Five-year TCO with quote sensitivity](/tco-calculator/vs-nutanix/). |
-| **Azure Stack HCI / Azure Local** | The right answer if your target state is Azure and this is a landing zone for workloads that cannot leave the building yet: the Azure control plane, Azure billing, Azure identity, one operating model. It is also the opposite of sovereignty — the control plane is Microsoft's, the meter runs to Microsoft, and a jurisdiction question about the control plane has one answer. Private Cloud Platform puts the control plane inside your perimeter, including fully air-gapped, with encryption keys under your control. |
+| **Azure Stack HCI / Azure Local** | The right answer if your target state is Azure and this is a landing zone for workloads that cannot leave the building yet: the Azure control plane, Azure billing, Azure identity, one operating model. It is also the opposite of sovereignty — the control plane is Microsoft's, the meter runs to Microsoft, and a jurisdiction question about the control plane has one answer. Private Cloud Platform puts the control plane inside your perimeter, including fully air-gapped, with opt-in volume encryption at rest (LINSTOR and LUKS) using a passphrase you hold; the key-management process is designed with you. |
 | **VMware / VCF under Broadcom** | The migration everyone is currently modelling. See [Cozystack vs VMware](/compare/cozystack-vs-vmware/) and the [five-year TCO](/tco-calculator/vs-vmware/). |
 | **OpenShift** | A real ecosystem advantage in certified operators and images, against a per-core subscription and a heavier platform. [The honest version](/compare/cozystack-vs-openshift/). |
 
@@ -185,7 +186,7 @@ Quoted per RFP after a discovery call and a Platform Readiness Assessment. The [
 
 ## Customer evidence
 
-[Nine deployments are written up in full](/case-studies/), anonymized by contract but with architecture and figures intact — including [a private cloud inside a bank](/case-studies/private-cloud-in-a-bank/) and [one portal over OpenNebula, VMware and Kubernetes for a financial group](/case-studies/unified-cloud-portal-financial-group/). Reference calls with existing customers can be arranged under NDA for an active opportunity.
+[Nine case studies are published in full](/case-studies/), anonymized by contract but with architecture and figures intact — including [a private cloud inside a bank](/case-studies/private-cloud-in-a-bank/) and [one portal over OpenNebula, VMware and Kubernetes for a financial group](/case-studies/unified-cloud-portal-financial-group/). Reference calls with existing customers can be arranged under NDA for an active opportunity.
 
 ---
 

@@ -16,7 +16,7 @@ On top of Cozystack, Ænix sells **three platforms**, chosen by who consumes the
 - **Ænix Private Cloud Platform** — for enterprises replacing VMware and running cloud for their own users under a regulator: banks, insurers, public administration, telcos, healthcare, energy. Controls aligned with DORA and NIS2, air-gapped installs, multi-site designs; developer self-service is included. https://aenix.io/products/private-cloud-platform/
 - **Ænix AI Platform** — for organisations running AI on their own GPUs and for GPU clouds selling GPU capacity. https://aenix.io/products/ai-platform/
 
-Plus **enterprise support for Cozystack** for teams that run the open-source project themselves: https://aenix.io/products/cozystack-enterprise-support/
+Plus **enterprise support for Cozystack** for teams that run the open-source project themselves: https://aenix.io/products/cozystack-enterprise-support/ — the same subscription as Public Cloud Platform; the commercial modules included in every tier can simply stay unused.
 
 What Ænix sells is a **subscription** — support, proprietary commercial modules (such as the WHMCS integration and the Ænix billing and portal components) and engineering services — not a licence. Cozystack itself is free under Apache 2.0, including white-labelling, air-gapped installs, GPU sharing via the NVIDIA GPU Operator and HAMi, multi-tenancy and the managed-services catalogue; the paid tiers decide the support scope for these features, they do not unlock them.
 
@@ -54,7 +54,7 @@ What Ænix sells is a **subscription** — support, proprietary commercial modul
 
 ## GPUs and AI
 
-- NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough to VMs, and fractional sharing via HAMi
+- NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator: passthrough of whole GPUs to VMs, NVIDIA vGPU for VMs (shipping since Cozystack 1.5; requires the customer's NVIDIA vGPU licence), and fractional sharing via HAMi
 - MIG partitioning and time-slicing are on the roadmap, not shipped
 - GPU usage is measured per tenant; charging happens in the provider's billing system (WHMCS or its own)
 - NVIDIA partner validation of the GPU Operator stack was submitted in October 2026 and is pending; there is no NVIDIA validation badge yet
@@ -66,7 +66,7 @@ What Ænix sells is a **subscription** — support, proprietary commercial modul
 Single source: https://aenix.io/pricing/
 
 - **Support tiers**, per 10 physical nodes per month, billed annually: Basic $1,250, Standard $3,000, Plus $5,500, Enterprise custom. Monthly billing costs more; annual billing equals 10 months of the monthly price
-- The same tiers apply to Ænix Public Cloud Platform subscriptions and to support for self-run Cozystack
+- Every support tier includes the proprietary Ænix commercial modules (billing system and WHMCS integration). The price list is the Ænix Public Cloud Platform subscription; a team running Cozystack itself buys the same subscription and can simply leave the commercial modules unused
 - **Ænix Private Cloud Platform** and **Ænix AI Platform** are quoted per RFP
 - Out-of-scope work: $150 per hour
 - Currency: list prices on the site are shown in USD; contracts with AENIX s.r.o. are in EUR
@@ -107,7 +107,7 @@ A 14- or 28-day fixed-price engagement with four parallel workstreams: inventory
 - [NIS2 compliance](https://aenix.io/solutions/nis2-compliance/): platform architecture aligned with NIS2 for essential and important entities
 - [Data sovereignty](https://aenix.io/solutions/data-sovereignty/): your hardware, your jurisdiction, your data flows
 - [Sovereign AI](https://aenix.io/solutions/sovereign-ai/): AI on GPUs you control, without hyperscaler endpoint dependency
-- [GPU as a service platform](https://aenix.io/solutions/gpu-as-a-service/): software for data centres and GPU clouds to sell NVIDIA GPU capacity as a multi-tenant cloud — GPU passthrough to VMs, HAMi sharing (MIG on the roadmap), per-tenant usage for WHMCS or own billing
+- [GPU as a service platform](https://aenix.io/solutions/gpu-as-a-service/): software for data centres and GPU clouds to sell NVIDIA GPU capacity as a multi-tenant cloud — GPU passthrough to VMs, NVIDIA vGPU for VMs (customer's NVIDIA vGPU licence), HAMi sharing (MIG on the roadmap), per-tenant usage for WHMCS or own billing
 - [Cloud repatriation](https://aenix.io/solutions/cloud-repatriation/): moving workloads off AWS, Azure or GCP onto owned or leased hardware
 - [Private LLM](https://aenix.io/solutions/private-llm/): self-hosted inference on open-weight models
 - [Developer self-service](https://aenix.io/solutions/developer-self-service/): internal developer platform on Ænix Private Cloud Platform
@@ -123,7 +123,7 @@ A 14- or 28-day fixed-price engagement with four parallel workstreams: inventory
 
 - Public production customers running Ænix Public Cloud Platform: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy
 - Bank engagements are under NDA; named bank case studies are expected from mid-2027 as NDAs expire
-- Nine deployments are written up as case studies, anonymised where contracts require it: https://aenix.io/case-studies/
+- Nine case studies are published, anonymised where contracts require it: https://aenix.io/case-studies/
 - Platform R&D for ecosystem vendors: CSI driver development, virtualization platform research, public-cloud and VPS hosting platforms, lightweight VDI, backup systems
 
 ## Events, webinars and training

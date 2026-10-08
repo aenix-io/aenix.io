@@ -3,6 +3,7 @@ title: "Ænix AI Platform — sovereign AI and GPU infrastructure"
 description: "Ænix AI Platform: self-hosted AI infrastructure on your own NVIDIA GPUs — multi-tenant GPU scheduling, HAMi sharing, model serving, vector databases."
 type: "page"
 language: "en"
+hero_cta: {secondary_text: "GPU as a Service for providers", secondary_url: "/solutions/gpu-as-a-service/"}
 primary_keyword: "sovereign ai infrastructure"
 secondary_keywords: ["private gpu cloud", "self-hosted llm infrastructure", "multi-tenant gpu scheduling", "on-premise ai platform", "kubernetes ai conformance"]
 images: ["img/og/ai-platform.jpg"]
@@ -13,15 +14,15 @@ faq_style: "rows"
 direct_answer_image: "/images/cozystack-screenshot.png"
 direct_answer_image_alt: "Cozystack Dashboard service marketplace"
 direct_answer: |
-  **Ænix AI Platform is self-hosted AI infrastructure for organizations that run inference, fine-tuning and RAG on their own GPUs instead of hyperscaler AI APIs. It is the third Ænix platform, alongside Public Cloud and Private Cloud, and runs on the same Cozystack engine (Apache 2.0, a CNCF project accepted into the CNCF Kubernetes AI Conformance program in September 2026). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator, with passthrough of whole GPUs to virtual machines and fractional sharing via HAMi; MIG and time-slicing are on the roadmap. Around that sit multi-tenant GPU quotas, model serving (vLLM-compatible), vector databases, object storage and air-gapped deployment. Ænix delivers it as a project quoted per RFP — a 14- or 28-day assessment, then a 3-12 month build depending on scope — with an optional managed retainer.**
+  **Ænix AI Platform is self-hosted AI infrastructure for organizations that run inference, fine-tuning and RAG on their own GPUs instead of hyperscaler AI APIs. It is the third Ænix platform, alongside Public Cloud and Private Cloud, and runs on the same Cozystack engine (Apache 2.0, a CNCF project accepted into the CNCF Kubernetes AI Conformance program in September 2026). NVIDIA data-centre GPUs are supported through the NVIDIA GPU Operator, with passthrough of whole GPUs to virtual machines, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence) and fractional sharing via HAMi; MIG and time-slicing are on the roadmap. Around that sit multi-tenant GPU quotas, model serving (vLLM-compatible), vector databases, object storage and air-gapped deployment. Ænix delivers it as a project quoted per RFP — a 14- or 28-day assessment, then a 3-12 month build depending on scope — with an optional managed retainer.**
 quick_facts:
   - label: "What it is"
     value: "Self-hosted, multi-tenant AI infrastructure for inference, fine-tuning and RAG on GPUs you control. The third Ænix platform, on the same engine as Public Cloud and Private Cloud."
   - label: "GPUs"
-    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs, sharing via HAMi. MIG and time-slicing: roadmap. Other accelerators: PCI passthrough to VMs only."
+    value: "NVIDIA data-centre GPUs through the NVIDIA GPU Operator: passthrough to VMs, NVIDIA vGPU for VMs (requires your NVIDIA vGPU licence), sharing via HAMi. MIG and time-slicing: roadmap. Other accelerators: PCI passthrough to VMs only."
   - label: "Conformance"
-    value: "Cozystack accepted into the CNCF Kubernetes AI Conformance program (September 2026); CNCF-Certified Kubernetes distribution. NVIDIA partner validation of the GPU Operator stack submitted in October 2026, pending."
-  - label: "License"
+    value: "Cozystack accepted into the CNCF Kubernetes AI Conformance program (September 2026); CNCF Certified Kubernetes distribution. NVIDIA partner validation of the GPU Operator stack submitted in October 2026, pending."
+  - label: "Licence"
     value: "Apache 2.0 engine (no per-CPU, per-core or per-GPU licensing)"
   - label: "GPU usage and billing"
     value: "GPU usage is measured per tenant; charging happens in your billing system (WHMCS or your own)."
@@ -31,9 +32,9 @@ quick_facts:
     value: "Four anonymized GPU case studies, including 8×H100 inference on owned bare metal in about two months."
 faq:
   - q: "How is AI Platform different from running open-source Cozystack with our own AI stack?"
-    a: "Cozystack provides the multi-tenant Kubernetes and GPU foundation: the NVIDIA GPU Operator, GPU passthrough to VMs and HAMi sharing are open source. AI Platform adds the delivery around it — architecture and GPU sizing for your workloads, inference, fine-tuning and RAG patterns, vector databases and object storage set up for them, tenant quotas, observability and an enterprise support tier — so your team does not run the platform build itself."
+    a: "Cozystack provides the multi-tenant Kubernetes and GPU foundation: the NVIDIA GPU Operator, GPU passthrough to VMs, NVIDIA vGPU support for VMs and HAMi sharing are open source (vGPU itself needs your NVIDIA vGPU licence). AI Platform adds the delivery around it — architecture and GPU sizing for your workloads, inference, fine-tuning and RAG patterns, vector databases and object storage set up for them, tenant quotas, observability and an enterprise support tier — so your team does not run the platform build itself."
   - q: "Which GPUs are supported?"
-    a: "NVIDIA data-centre GPUs, through the NVIDIA GPU Operator: a whole GPU passed through to a virtual machine, or a GPU shared between containers with HAMi. Our published deployments include an 8×H100 inference server. We do not publish a validated-model list; NVIDIA partner validation of the GPU Operator stack was submitted in October 2026 and is pending. Other accelerators can be passed through to VMs as PCI devices, without operator automation."
+    a: "NVIDIA data-centre GPUs, through the NVIDIA GPU Operator: a whole GPU passed through to a virtual machine, NVIDIA vGPU for virtual machines (requires your NVIDIA vGPU licence), or a GPU shared between containers with HAMi. Our published deployments include an 8×H100 inference server. We do not publish a validated-model list; NVIDIA partner validation of the GPU Operator stack was submitted in October 2026 and is pending. Other accelerators can be passed through to VMs as PCI devices, without operator automation."
   - q: "Do you support MIG or time-slicing?"
     a: "Not as shipped platform features today; both are on the roadmap. Sharing a card between tenants is done with HAMi, which sets memory and compute limits per workload. Size isolation requirements accordingly."
   - q: "What is the CNCF Kubernetes AI Conformance?"
@@ -68,6 +69,7 @@ NVIDIA data-centre GPUs through the NVIDIA GPU Operator:
 | Mode | How it works | Status |
 |---|---|---|
 | Whole GPU to a virtual machine | PCI passthrough into a KubeVirt VM | Shipping |
+| NVIDIA vGPU for VMs | Mediated vGPU devices in KubeVirt VMs; requires your NVIDIA vGPU licence | Shipping since Cozystack 1.5 |
 | Whole GPU to a container | NVIDIA GPU Operator device plugin | Shipping |
 | Fractional GPU shared between containers | HAMi, with memory and compute limits per workload | Shipping (opt-in) |
 | MIG partitions | — | Roadmap |
@@ -99,7 +101,7 @@ Hardware and data in your jurisdiction. Air-gapped deployment supported. Encrypt
 
 ### GPU sizing
 
-Sizing for common workload profiles (7B to 405B-parameter models, single-card, multi-card and multi-node configurations) and capacity planning for sustained workloads, as part of the engagement.
+Sizing for common workload profiles (7B to 405B-parameter models, single-card, multi-card and multi-node configurations) and capacity planning for sustained workloads, as part of the engagement. Network fabric design for multi-node training (InfiniBand, RoCE) is scoped in the assessment for your hardware, not sold as a packaged feature.
 
 ### Observability for AI workloads
 
@@ -117,7 +119,7 @@ Migration planning from AWS Bedrock, Azure OpenAI Service or GCP Vertex AI to se
 |---|---|
 | [8×H100 inference on your own bare metal](/case-studies/bare-metal-gpu-inference/) | A mobile photo/video app moved GPU inference off a rented GPU cloud onto its own 8×H100 server: about two months to production, KubeVirt passthrough |
 | [From public cloud to bare metal](/case-studies/multicloud-academic-gpu/) | A European academic-computing SaaS moved to owned bare metal and cut GPU cost about five times |
-| [Cozystack as a universal installer](/case-studies/ai-universal-installer/) | A telecom integrator built a corporate AI platform with RAG on Qdrant and NVIDIA Dynamo inference, then shipped it into its end customer's environment |
+| [Cozystack as a universal installer](/case-studies/ai-universal-installer/) | A telecom operator and integrator built a corporate AI platform with RAG on Qdrant and NVIDIA Dynamo inference, then shipped it into its end customer's environment |
 | [An internal data and AI platform](/case-studies/internal-data-and-ai-platform/) | GPU pools with per-tenant quotas and usage metrics that feed billing, in rollout |
 
 ---

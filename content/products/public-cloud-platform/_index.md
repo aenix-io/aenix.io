@@ -1,6 +1,6 @@
 ---
 title: "Ænix Public Cloud Platform — for everyone who sells cloud"
-description: "Ænix Public Cloud Platform: turnkey cloud for hosting providers, MSPs and operators — billing, WHMCS, customer portal. From $1,250 per 10 nodes per month."
+description: "Ænix Public Cloud Platform: a complete public-cloud product for hosting providers, MSPs and operators: billing, WHMCS, customer portal. From $1,250 / 10 nodes."
 type: "page"
 language: "en"
 quick_facts_style: "rows"
@@ -13,11 +13,11 @@ images: ["img/og/public-cloud-platform.jpg"]
 hreflang_de: /de/produkte/public-cloud-platform/
 related_pages: ["/products/private-cloud-platform/", "/products/ai-platform/", "/products/whmcs-integration/", "/migration/vmware/", "/alternatives/openstack-alternative/"]
 direct_answer: |
-  **Ænix Public Cloud Platform is a turnkey, Kubernetes-native cloud platform for organizations that sell cloud capacity to someone else — hosting providers, MSPs and regional clouds at one end, telcos, national operators and banks running a commercial cloud at the other. It is the productized, supported distribution of Cozystack (Apache 2.0, a CNCF project that Ænix created and maintains with maintainers from other companies), adding the commercial surfaces a cloud business needs: full billing back-end and front-end, WHMCS integration, a brandable customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage and GPU workloads. It runs multi-region and multi-hypervisor, so it extends an existing VMware or OpenStack estate rather than forcing a rip-and-replace. A subscription starts at $1,250 per 10 physical nodes per month (Basic support tier plus the proprietary Ænix commercial modules); national multi-region programmes are quoted per RFP.**
+  **Ænix Public Cloud Platform is a complete, Kubernetes-native public-cloud product for organizations that sell cloud capacity to someone else — hosting providers, MSPs and regional clouds at one end, telcos, national operators and banks running a commercial cloud at the other. It is the productized, supported distribution of Cozystack (Apache 2.0, a CNCF project that Ænix created and maintains with maintainers from other companies), adding the commercial surfaces a cloud business needs: full billing back-end and front-end, WHMCS integration, a brandable customer portal, payment processing, automatic tenant lock and suspension, and service-creation wizards for VMs, Kubernetes clusters, managed databases, S3 storage and GPU workloads. It runs multi-region and alongside an existing VMware or OpenStack estate during migration, rather than forcing a rip-and-replace. A subscription starts at $1,250 per 10 physical nodes per month (Basic support tier plus the proprietary Ænix commercial modules); national multi-region programmes are quoted per RFP.**
 quick_facts:
   - label: "What it is"
-    value: "Turnkey, supported cloud-in-a-box for anyone selling cloud — built on Cozystack, with the Ænix billing system, WHMCS integration and a brandable customer portal."
-  - label: "License"
+    value: "A complete, supported public-cloud product for anyone selling cloud — built on Cozystack, with the Ænix billing system, WHMCS integration and a brandable customer portal."
+  - label: "Licence"
     value: "Apache 2.0 core (no per-CPU / per-core licensing)"
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
@@ -35,7 +35,7 @@ faq:
   - q: "How is it different from Ænix Private Cloud Platform?"
     a: "Who consumes the capacity. Public Cloud Platform is for operators selling cloud to customers who are not them, so it carries billing, payments, resale and customer-facing portals. Private Cloud Platform is for organizations running cloud for their own business units, so it carries DORA- and NIS2-aligned architecture, encryption and audit logging designed for its regulator instead. Same Cozystack foundation, same APIs — you can run both, and organizations that sell cloud and also run regulated internal workloads frequently do."
   - q: "Can it coexist with our existing VMware or OpenStack estate?"
-    a: "Yes, and that is the normal path. The platform is multi-hypervisor: it orchestrates native KubeVirt VMs while integrating with existing VMware, OpenStack, OpenNebula and OpenShift footprints, so you consolidate one cohort at a time instead of running a big-bang migration. VMs move from VMware or OpenStack with built-in migration tooling, and Ænix has done cohort-based VMware exits in production."
+    a: "Yes, and that is the normal path. The platform is multi-hypervisor: it orchestrates native KubeVirt VMs and runs alongside existing VMware, OpenStack, OpenNebula and OpenShift footprints during migration, so you consolidate one cohort at a time instead of running a big-bang migration. VMs move from VMware or OpenStack with built-in migration tooling, and Ænix has done cohort-based VMware exits in production."
   - q: "Do we need our own 24/7 operations team?"
     a: "Not necessarily. Both customer-operated and Ænix-managed operating models are supported; in the hybrid one you own the data plane while Ænix operates the control plane under SLA. Our calculators model Cozystack operations in engineer-days per node: the hosting-provider calculator's default model comes to about 1.3 full-time engineers at 10 nodes and about 2.6 at 40 nodes, and the TCO model puts per-node operations effort for a self-managed OpenStack at about twice that of Cozystack. Round-the-clock on-call needs more people than that arithmetic, or the 24×7 coverage of the Plus tier."
   - q: "What does the multi-region pattern look like?"
@@ -49,7 +49,7 @@ aliases:
   - /managed-kubernetes/
 ---
 
-**A modern alternative to OpenStack for everyone who sells cloud — from a regional hoster with forty nodes to a national operator with several data centres. Turnkey cloud-in-a-box: hosting panel, billing, customer portal, payments, support. Install, plug in users, start operating.**
+**A modern alternative to OpenStack for everyone who sells cloud — from a regional hoster with forty nodes to a national operator with several data centres. A complete public-cloud product for hosting providers: hosting panel, billing, customer portal, payments, support. Install, plug in users, start operating.**
 
 The live demo runs in your browser on demo data: the customer portal (marketplace, console, account, support) and, behind the Admin switch, the operator back-office with clients, verification, invoices and resource pricing. No signup, no cluster.
 
@@ -114,7 +114,7 @@ Built-in VM migration tooling and runbooks for moving off VMware, OpenStack, Vir
 
 ### What the subscription includes
 
-A subscription is a support tier plus the proprietary Ænix commercial modules (billing system and WHMCS integration), priced per 10 physical nodes per month: Basic $1,250, Standard $3,000, Plus $5,500 on annual billing, Enterprise custom. The same tiers are sold as [enterprise support for self-run Cozystack](/products/cozystack-enterprise-support/). Platform installation is included from Standard, 24×7 support from Plus. If the subscription ends, the open-source Cozystack platform keeps running on your hardware; the commercial modules and Ænix support stop. [Full tier comparison →](/pricing/#support)
+A subscription is a support tier plus the proprietary Ænix commercial modules (billing system and WHMCS integration), priced per 10 physical nodes per month: Basic $1,250, Standard $3,000, Plus $5,500 on annual billing, Enterprise custom. A team running Cozystack itself buys the same subscription as [enterprise support for self-run Cozystack](/products/cozystack-enterprise-support/) and can simply leave the commercial modules unused. Platform installation is included from Standard, 24×7 support from Plus. If the subscription ends, the open-source Cozystack platform keeps running on your hardware; the commercial modules and Ænix support stop. [Full tier comparison →](/pricing/#support)
 
 ## Why providers choose this over OpenStack
 
@@ -185,7 +185,7 @@ Tell us your scale, your current stack and what you sell today, and we will set 
 
 {{< pipedrive-form type="demo" >}}
 
-Prefer a shorter first step? [Book a discovery call](/contact/) instead, or model your margins in the [hosting-provider unit economics calculator](/isp-calculator/).
+Prefer a shorter first step? [Book a discovery call](/contact/) instead, or model your margins in the [hosting-provider unit economics calculator](/isp-calculator/). The recorded webinar [Add Kubernetes, databases and GPU to your price list](/webinars/launch-public-cloud/) walks through the catalogue, billing and migration path.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>

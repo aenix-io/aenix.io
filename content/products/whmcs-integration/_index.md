@@ -131,7 +131,7 @@ Not on WHMCS, or running something else? We also help hosters and clouds:
 - **Integrate** Cozystack and billing with other control panels.
 - **Package and add** the specific apps and services your customers ask for.
 
-Model the business in the **[hosting-provider unit economics calculator](/isp-calculator/)**, see the **[Ænix Public Cloud Platform](/products/public-cloud-platform/)**, and read the anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**.
+Model the business in the **[hosting-provider unit economics calculator](/isp-calculator/)**, see the **[Ænix Public Cloud Platform](/products/public-cloud-platform/)**, read the anonymized **[sovereign public cloud case study](/case-studies/sovereign-public-cloud/)**, and watch the recorded webinar **[Add Kubernetes, databases and GPU to your price list](/webinars/launch-public-cloud/)**, which uses WHMCS as a worked example.
 
 ---
 

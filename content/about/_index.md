@@ -1,6 +1,6 @@
 ---
 title: "About Ænix"
-seo_title: "About Ænix — the company behind Cozystack"
+seo_title: "About Ænix — the company that created Cozystack"
 description: "Ænix created Cozystack (CNCF) and builds three cloud platforms on it. AENIX s.r.o. (Czech Republic), AENIX INC (Delaware, USA); about 20 people."
 hero_subtitle: "The open-core company that created Cozystack"
 language: "en"
@@ -109,7 +109,7 @@ hreflang_de: /de/ueber-uns/
 
 ## What we do
 
-We build turnkey cloud platforms for organisations that need real cloud infrastructure on their own terms — for regulatory reasons, commercial reasons, or both.
+We build cloud platforms for organisations that need real cloud infrastructure on their own terms — for regulatory reasons, commercial reasons, or both.
 
 **Our customers fall into a few buyer profiles, each matched by a platform:**
 
@@ -118,9 +118,9 @@ We build turnkey cloud platforms for organisations that need real cloud infrastr
 3. **Regulated enterprises** (Private Cloud Platform) — banks, insurers, public administration, telcos and healthcare replacing VMware under DORA, NIS2 and sovereignty mandates; developer self-service is included
 4. **AI-heavy organisations and GPU clouds** (AI Platform) — companies running inference and training on their own GPUs, and providers selling GPU capacity
 
-Plus **enterprise support for Cozystack** for teams running the open-source project on Hetzner, OVH or leased bare metal who want the maintainers on call without the commercial portal and billing layer.
+Plus **enterprise support for Cozystack** for teams running the open-source project on Hetzner, OVH or leased bare metal who want the maintainers on call.
 
-The same support tiers apply to Public Cloud Platform subscriptions and to self-run Cozystack, from $1,250 per month per 10 nodes; Private Cloud Platform and AI Platform programmes are quoted per RFP. See [pricing](/pricing/).
+Every support tier includes the proprietary Ænix commercial modules (billing system and WHMCS integration). The price list, from $1,250 per month per 10 nodes, is the Ænix Public Cloud Platform subscription; a team running Cozystack itself buys the same subscription and can simply leave the commercial modules unused. Private Cloud Platform and AI Platform programmes are quoted per RFP. See [pricing](/pricing/).
 
 ---
 
@@ -133,9 +133,9 @@ We created Cozystack as an open-source CNCF project because cloud infrastructure
 - **Vendor-neutral at the foundation** — no architectural lock-in to Ænix
 - **Long-horizon viable** — the Apache 2.0 licence outlives any single commercial vendor
 
-The Ænix platforms are the commercial layer for organisations that need a turnkey cloud (hosting panel, billing, portals, payments, support, productized installer) without building it themselves. The open-source foundation remains free for anyone to run.
+The Ænix platforms are the commercial layer for organisations that need a complete cloud product (hosting panel, billing, portals, payments, support, productized installer) without building it themselves. The open-source foundation remains free for anyone to run.
 
-This is the open-core model, as with Confluent on Kafka or GitLab CE/EE: the open project keeps its integrity, and the commercial product adds turnkey value on top.
+This is the open-core model, as with Confluent on Kafka or GitLab CE/EE: the open project keeps its integrity, and the commercial product adds billing, portals, support and delivery on top.
 
 ---
 
@@ -171,7 +171,7 @@ We started as a team of platform engineers building cloud infrastructure for ser
 So we built Cozystack — a Kubernetes-native multi-tenant cloud platform — as the foundation we wished we'd had years earlier. It became a CNCF project. Then we built the commercial layer on top, as three platforms matched to who consumes the capacity.
 {{< /two-cols >}}
 
-Cozystack runs in production at hosting providers and regional clouds, and Ænix delivers platform engagements for banks under NDA. Nine deployments are [written up as case studies](/case-studies/) with architecture and figures, anonymised where contracts require it.
+Cozystack runs in production at hosting providers and regional clouds, and Ænix delivers platform engagements for banks under NDA. Nine [case studies](/case-studies/) are published with architecture and figures, anonymised where contracts require it.
 
 ---
 
@@ -194,7 +194,7 @@ For governments and sovereign cloud builders, engagements run through public-sec
 
 **Public production customers** running Ænix Public Cloud Platform: GoHost.kz, HDReady, Beby Cloud, HiKube, UseTech, Cloupard, Cloudsy.
 
-**Engagements under NDA** (banks, sovereign cloud, AI/ML): Ænix Private Cloud Platform and Public Cloud Platform deployments; naming permitted from mid-2027. [Our case studies](/case-studies/) describe nine deployments, anonymised by contract but with architecture and figures intact.
+**Engagements under NDA** (banks, sovereign cloud, AI/ML): Ænix Private Cloud Platform and Public Cloud Platform deployments; naming permitted from mid-2027. [Our nine published case studies](/case-studies/) are anonymised by contract but keep architecture and figures intact.
 
 **Platform R&D for ecosystem vendors:** CSI driver development, virtualization platform research, public-cloud and VPS hosting platforms, lightweight VDI, and backup systems that reduced storage cost by up to 75%.
 
