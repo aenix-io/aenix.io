@@ -7,6 +7,7 @@ lastmod: "2026-10-08"
 series: "Paleocomputing"
 cover_image: "/img/blog/covers/kubernetes-over-wirths-radio.jpg"
 author: "Timur Tukaev"
+hreflang_de: "/de/blog/2026/10/paleocomputing-teil-2-kubernetes-oberon-wirth-funk/"
 type: "article"
 topics: ["Kubernetes", "Cozystack", "KubeVirt", "Open Source", "Retrocomputing", "Distributed Systems"]
 language: "en"
