@@ -1,6 +1,6 @@
 ---
 title: "Ein Portal über OpenNebula, VMware und Kubernetes"
-description: "Eine Finanzgruppe in Asien legte ein Self-Service-Portal über OpenNebula, VMware und Kubernetes-as-a-Service — vier Monate bis Produktion, Support-Last automatisiert."
+description: "Eine Finanzgruppe in Asien legte ein Self-Service-Portal über OpenNebula, VMware und Kubernetes-as-a-Service: in vier Monaten produktiv, Tickets automatisiert."
 hero_subtitle: "Ein Katalog über drei Infrastrukturen, vier Monate bis Produktion"
 date: 2026-08-21
 lastmod: 2026-08-21
@@ -16,7 +16,6 @@ secondary_keywords:
   - "Cloud-Servicekatalog"
   - "Private-Cloud-Billing-Portal"
 related_pages:
-  - /de/produkte/public-cloud-platform/
   - /de/produkte/public-cloud-platform/
   - /de/branchen/finanzdienstleistungen/
   - /de/dienstleistungen/public-cloud-builder/
@@ -47,6 +46,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">4 Monate</div><div class="cs-stat__label">von Projektstart bis Produktion, rund doppelt so schnell wie vergleichbare Builds</div></div>
   <div class="cs-stat"><div class="cs-stat__num">3 Systeme</div><div class="cs-stat__label">OpenNebula, VMware und Kubernetes-as-a-Service hinter einem Katalog</div></div>
   <div class="cs-stat"><div class="cs-stat__num">1 Einstieg</div><div class="cs-stat__label">für Nutzer statt mehrerer getrennter Systeme mit je einem Ticket</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
 </div>
 
 ## Über das Projekt
@@ -100,8 +104,17 @@ Diese Entscheidung leistet mehr, als sie zunächst aussieht:
   <div class="card"><div class="card-body"><h3 class="card-title">Support-Last ist ein Automatisierungsproblem</h3><p class="card-description">Dem Team fehlten keine Leute, sondern automatisiertes Provisioning. Das zu ändern hat die Last verändert.</p></div></div>
 </div>
 
+## Ein ähnliches Projekt besprechen
+
+Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+</div>
+
 ---
 
-*Diese Case Study erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
+*Diese Case Study erscheint anonymisiert: Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform in drei Plattformen — Provider und Enterprise — mit den Modulen AI Platform und Developer Self-Service.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

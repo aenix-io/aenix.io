@@ -1,6 +1,6 @@
 ---
 title: "Wenn das Antwortpaket die falsche Tür nimmt"
-description: "Beim Hoster hingen öffentliche IPs am Rack, die Hälfte des Verkehrs starb still. vlan-router macht MetalLB-L2-Routing deklarativ — und die Adresse folgt dem Workload."
+description: "Beim Hoster hingen öffentliche IPs an einem Rack, die Hälfte des Verkehrs brach still ab. vlan-router macht Routing deklarativ, Adressen folgen dem Workload."
 hero_subtitle: "MetalLB-L2-Routing automatisiert, und die Adresse übersteht den Umzug"
 date: 2026-08-21
 lastmod: 2026-08-21
@@ -47,6 +47,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">6 Kommandos</div><div class="cs-stat__label">pro Subnetz pro Node von Hand — ersetzt durch wenige Zeilen YAML an einer Stelle</div></div>
   <div class="cs-stat"><div class="cs-stat__num">EVPN Type-2</div><div class="cs-stat__label">Routen je Node, damit die Adresse mit dem Workload umzieht</div></div>
   <div class="cs-stat"><div class="cs-stat__num">3 Modi</div><div class="cs-stat__label">VXLAN+EVPN, VXLAN ohne BGP, reines VLAN — nebeneinander während der Migration</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
 </div>
 
 ## Das Problem des Kunden
@@ -141,8 +146,17 @@ Der größte Teil solcher Migrationen besteht darin, Annahmen wie diese zu finde
   <div class="card"><div class="card-body"><h3 class="card-title">Das Schwierige sind Upstream-Annahmen</h3><p class="card-description">Eine jahrealte MAC-Bindung, getroffen als eine Adresse nur hinter einem Port leben konnte, war der Fehler. Solche Annahmen zu finden ist der größte Teil der Arbeit.</p></div></div>
 </div>
 
+## Ein ähnliches Projekt besprechen
+
+Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+</div>
+
 ---
 
-*Diese Case Study erscheint anonymisiert (Tier-3-Evidenz): Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
+*Diese Case Study erscheint anonymisiert: Der Kunde wird über sein Profil beschrieben, nicht über seinen Namen. Eine Kundenreferenz ist unter NDA auf Anfrage möglich — [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox, Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform in drei Plattformen — Provider und Enterprise — mit den Modulen AI Platform und Developer Self-Service.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

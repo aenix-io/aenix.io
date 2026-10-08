@@ -1,6 +1,7 @@
 ---
 title: "Cozystack als universeller Installer: eine KI-Plattform im Kundenumfeld"
-description: "Ein Telco-Integrator baute auf Cozystack eine Unternehmens-KI-Plattform — GPU, RAG auf Qdrant, NVIDIA-Dynamo-Inferenz, Geo-GPU — und lieferte dieselbe Distribution beim staatlichen Endkunden aus."
+seo_title: "Eine KI-Plattform als Cozystack-Installer ausgeliefert"
+description: "Ein Telekom-Integrator baute auf Cozystack eine KI-Plattform (GPU, RAG auf Qdrant, NVIDIA-Dynamo-Inferenz) und lieferte dieselbe Distribution an seinen Kunden."
 hero_subtitle: "Unternehmens-KI-Plattform, ausgeliefert direkt im Kundenumfeld"
 date: 2026-06-15
 lastmod: 2026-06-15
@@ -29,6 +30,11 @@ related_pages:
   <div class="cs-stat"><div class="cs-stat__num">141 / 141</div><div class="cs-stat__label">Managed Releases im Zustand „Ready“ auf dem Produktionscluster</div></div>
   <div class="cs-stat"><div class="cs-stat__num">12–20 ms</div><div class="cs-stat__label">zwischen den Rechenzentren — Geo-GPU über ein verschlüsseltes Mesh verbunden</div></div>
   <div class="cs-stat"><div class="cs-stat__num">1 → 2</div><div class="cs-stat__label">eine Distribution, zwei Auslieferungsmodelle (SaaS + innerhalb der Kundengrenze)</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
 </div>
 
 ## Über das Projekt
@@ -93,8 +99,17 @@ Bemerkenswert ist die technische Tiefe des Supports: einige der benötigten Fixe
   <div class="card"><div class="card-body"><h3 class="card-title">Geschwindigkeit und Anpassung</h3><p class="card-description">Nicht standardisierte Anforderungen „in einem Tag bis einer Woche“ gelöst, wobei einige Verbesserungen upstream in Cozystack einflossen.</p></div></div>
 </div>
 
+## Ein ähnliches Projekt besprechen
+
+Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+</div>
+
 ---
 
-*Diese Fallstudie wird in anonymisierter Form veröffentlicht (Tier-3-Evidenz): der Integrator und der Endkunde werden über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einer aktiven Opportunity [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie wird in anonymisierter Form veröffentlicht: der Integrator und der Endkunde werden über ihr Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einem konkreten Vorhaben [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*

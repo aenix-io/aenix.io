@@ -1,6 +1,6 @@
 ---
 title: "Eine souveräne Public Cloud auf Bare Metal"
-description: "Ein Schweizer Provider migrierte von einem Hypervisor-Stack auf eine vollwertige kommerzielle Public Cloud mit Cozystack — Multi-Region über drei Rechenzentren, synchrone Replikation und Verschlüsselung."
+description: "Ein Provider ersetzte seinen Hypervisor-Stack durch eine kommerzielle Public Cloud auf Cozystack über drei Rechenzentren, synchron repliziert und verschlüsselt."
 hero_subtitle: "Kommerzielle Public Cloud auf Bare Metal, Multi-Region"
 date: 2026-06-15
 lastmod: 2026-06-15
@@ -31,6 +31,11 @@ related_pages:
   <div class="cs-stat"><div class="cs-stat__num">10+</div><div class="cs-stat__label">Mandanten in Produktion; öffentliche Website in drei Sprachen</div></div>
 </div>
 
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/de/case-studies/">Alle Fallstudien →</a>
+</div>
+
 ## Über das Projekt
 
 Der Kunde ist ein Schweizer Cloud-Provider. Vor dem Projekt lief er auf einem Hypervisor-Stack (Harvester) und, historisch bedingt, auf einer Jelastic/Virtuozzo-Legacy — daher der Schmerz mit Vendor-Lock-in, Lizenzierung und der Unfähigkeit, Funktionen schnell zu ergänzen. Vor Cozystack evaluierte er OpenShift und OpenStack und erwog, eine eigene Plattform zu bauen — „uns fehlten die Kapazität und die Leute“.
@@ -54,7 +59,7 @@ Das Ziel — eine vollwertige kommerzielle Public Cloud unter eigener Marke: VMs
 - **Networking** — Kube-OVN + Cilium + MetalLB; VPC, Firewall-Gateways, redundante Uplinks mit Policy-Routing.
 - **Billing** — ein eigenes System: Verkauf dedizierter vCPU/RAM (wie bei den großen Clouds), stündliches Metering in eine externe Datenbank.
 
-Das Engagement wuchs zu laufendem Support und Co-Development: die Ingenieure des Kunden wurden Cozystack-Maintainer.
+Die Zusammenarbeit wuchs zu laufendem Support und Co-Development: die Ingenieure des Kunden wurden Cozystack-Maintainer.
 
 {{< case-diagram src="/img/case-studies/sovereign-public-cloud-de.webp" alt="Souveräne Grenze (Schweiz): Compute-Cluster geografisch über drei Rechenzentren verteilt mit synchroner DRBD-Replikation und etcd über drei Standorte; ein separater SeaweedFS-Objektspeicher-Cluster hält unveränderliche Backups; durchgängige Verschlüsselung at-rest / in-transit" >}}
 
@@ -89,8 +94,17 @@ Das Engagement wuchs zu laufendem Support und Co-Development: die Ingenieure des
   <div class="card"><div class="card-body"><h3 class="card-title">Ein reifes Enterprise-Set</h3><p class="card-description">Verschlüsselung at-rest/in-transit, SSO und Network Policies pro Mandant, Windows-Lizenzierung, Performance-Garantien, Billing nach Instanztypen.</p></div></div>
 </div>
 
+## Ein ähnliches Projekt besprechen
+
+Ein 30-minütiges Discovery-Gespräch reicht, um zu klären, ob diese Architektur zu Ihrer Umgebung passt und was der erste Schritt wäre.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/de/kontakt/">Gespräch vereinbaren</a>
+  <a class="cta-secondary" href="/demo/">Live-Demo öffnen</a>
+</div>
+
 ---
 
-*Diese Fallstudie wird in anonymisierter Form veröffentlicht (Tier-3-Evidenz): der Provider wird über sein Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einer aktiven Opportunity [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
+*Diese Fallstudie wird in anonymisierter Form veröffentlicht: der Provider wird über sein Profil beschrieben, nicht namentlich. Für ein Referenzgespräch unter NDA zu einem konkreten Vorhaben [sprechen Sie mit dem Ænix-Vertrieb](/de/kontakt/).*
 
-*Ænix ist das Team hinter [Cozystack](https://cozystack.io) — einem CNCF-Projekt (heute Sandbox; Incubating-Antrag in der Due-Diligence-Prüfung), Apache 2.0. Ænix kommerzialisiert es als Ænix Platform — drei Plattformen auf einer Engine: Public Cloud, Private Cloud und AI — kombinierbar statt sich gegenseitig ausschließend.*
+*Ænix hat [Cozystack](https://cozystack.io), ein CNCF-Sandbox-Projekt (Antrag auf CNCF Incubation in der Due-Diligence-Prüfung) unter der Apache-2.0-Lizenz, initiiert und pflegt es gemeinsam mit Maintainern anderer Unternehmen. Darauf baut Ænix drei Plattformen, die sich kombinieren statt ausschließen lassen: Ænix Public Cloud Platform, Ænix Private Cloud Platform und Ænix AI Platform.*
