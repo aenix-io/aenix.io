@@ -1,5 +1,6 @@
 ---
 title: "How to build a sovereign cloud — playbook for EU and Central Asia in 2026"
+seo_title: "How to build a sovereign cloud in the EU and Central Asia"
 description: "What sovereignty actually means in practice, the frameworks that define it, and the architectural patterns for a sovereign cloud in the EU and Central Asia."
 date: "2026-05-03"
 cover_image: "/img/blog/covers/build-sovereign-cloud-eu-and-central-asia.jpg"
@@ -23,20 +24,20 @@ quiz:
         - { text: "BSI C5 (German cloud security catalogue)", correct: false }
         - { text: "DORA (EU financial-sector regulation)", correct: false }
         - { text: "SecNumCloud (ANSSI certification)", correct: true }
-      explanation: "SecNumCloud is France's strict sovereign requirement. BSI C5 is Germany's cloud security catalogue. EUCS is the emerging EU-wide framework."
-    - q: "What is the typical end-to-end timeline for building a sovereign cloud product to first customer GA?"
+      explanation: "SecNumCloud is France's strict sovereign requirement. BSI C5 is Germany's cloud security catalogue. EUCS is the proposed EU-wide scheme, with adoption still pending."
+    - q: "What is the typical timeline for a national, multi-region sovereign cloud programme?"
       options:
-        - { text: "Three to six weeks of focused work", correct: false }
-        - { text: "Twelve to thirty months from project start", correct: true }
+        - { text: "A single weekend of installation", correct: false }
+        - { text: "A 3-6 month pilot, then 9-18 months to full multi-region, with certification alongside", correct: true }
         - { text: "Five to ten years of phased build-out", correct: false }
-      explanation: "Discovery + assessment 4-8 weeks; architecture + procurement readiness 2-4 months; phase-2 platform build 8-24 months including certification work; customer onboarding ongoing. Total elapsed: 12-30 months."
-    - q: "Which Cozystack feature is NOT named as supporting sovereign-cloud builders?"
+      explanation: "After a 14- or 28-day assessment, a national or operator programme runs a 3-6 month pilot, then 9-18 months to full multi-region operation. Certification work runs alongside and can extend the date of the first certified service. A single provider at provider scale goes live much faster."
+    - q: "Which property is NOT named as supporting sovereign-cloud builders?"
       options:
         - { text: "Mandatory phone-home telemetry", correct: true }
         - { text: "Tenant CRD multi-tenancy", correct: false }
         - { text: "WHMCS billing integration", correct: false }
         - { text: "Air-gap install support", correct: false }
-      explanation: "Cozystack has no phone-home by default — telemetry is opt-in. The article explicitly lists this as a sovereign-friendly property. Tenant CRD, Cozystack Dashboard, WHMCS billing, air-gap, VictoriaMetrics + VictoriaLogs, and Cilium are the named sovereign-friendly features."
+      explanation: "Cozystack has no phone-home by default — telemetry is opt-in. The article explicitly lists this as a sovereign-friendly property. Tenant CRD, Cozystack Dashboard, air-gap, VictoriaMetrics + VictoriaLogs and Cilium are the named sovereign-friendly Cozystack features; WHMCS billing is an Ænix module on top."
     - q: "For Pattern 2 (managed sovereign cloud), what is the trade-off?"
       options:
         - { text: "Maximum sovereignty with maximum operational footprint", correct: false }
@@ -74,10 +75,10 @@ Each jurisdiction has its own framework:
 - **SecNumCloud** (France) — strict French sovereign requirement
 - **BSI C5** (Germany) — German cloud security catalogue
 - **DORA** — financial-services-specific, applies to cloud providers serving banks
-- **NIS2** — broader cybersecurity, applies to cloud providers as essential entities
+- **NIS2** — broader cybersecurity; cloud providers are an Annex I sector (essential or important entities depending on size)
 
 ### Central Asia
-- **Kazakhstan** — procurement-mandated sovereignty for public-sector workloads. Active sovereign cloud market, including regional telco sovereign cloud product launches.
+- **Kazakhstan** — procurement-mandated sovereignty for public-sector workloads.
 - **Other CIS** — various national frameworks emerging
 
 ### Other regions
@@ -87,7 +88,7 @@ Each jurisdiction has its own framework:
 ## Architectural patterns for sovereign cloud
 
 ### Pattern 1: full on-prem sovereign cloud
-Customer hardware, customer-operated, customer-controlled at every layer. Maximum sovereignty; maximum operational footprint. Right for the most sensitive workloads (classified, defence, banking core).
+Customer hardware, customer-operated, customer-controlled at every layer. Maximum sovereignty; maximum operational footprint. Right for the most sensitive workloads (classified data, banking core).
 
 ### Pattern 2: managed sovereign cloud
 Cloud provider hardware + sovereign jurisdiction + customer-controlled keys + transparent supply chain. Operational simplification with substantive sovereignty. Right for most regulated enterprise workloads.
@@ -114,15 +115,14 @@ Specifically for sovereign cloud builders:
 
 A sovereign cloud product takes longer to build than a non-sovereign cloud:
 
-- **Discovery + assessment:** 4-8 weeks
-- **Architecture and procurement readiness:** 2-4 months
-- **Phase 2 platform build:** 8-24 months including certification work
+- **Discovery + assessment:** free 30-minute discovery call, then a fixed-price [Platform Readiness Assessment](/services/platform-readiness-assessment/) (14 or 28 days)
+- **Single provider at provider scale:** platform live in weeks once hardware is ready, with the productized installer
+- **National or operator programme:** a 3-6 month pilot, then 9-18 months to full multi-region operation
+- **Certification work:** runs alongside the build; its scope can move the date of the first certified service
 - **Customer onboarding:** ongoing
-
-Total elapsed: 12-30 months from project start to first customer GA, depending on certification scope.
 
 ## Ænix engagement
 
-Ænix builds sovereign cloud products end-to-end. EU + Central Asia teams. Open-source foundation. Procurement-ready documentation.
+Ænix builds sovereign cloud products end-to-end, with a team of about 20 people in the EU and Central Asia. Open-source foundation. Procurement-ready documentation.
 
-For details see **[sovereign cloud builder services page](/services/sovereign-cloud-builder)**.
+For details see the **[sovereign cloud builder service](/services/sovereign-cloud-builder/)** and **[Ænix Public Cloud Platform](/products/public-cloud-platform/)**.
