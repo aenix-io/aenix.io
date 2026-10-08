@@ -33,7 +33,7 @@ Kontaktformular: [aenix.io/de/kontakt/](/de/kontakt/)
 
 ## Registereintrag
 
-Eingetragen im Handelsregister der Tschechischen Republik (obchodní rejstřík) seit 22. April 2024
+Eingetragen im Handelsregister der Tschechischen Republik (obchodní rejstřík), geführt beim Kreisgericht České Budějovice (Krajský soud v Českých Budějovicích), Abteilung C, Einlage 34173, seit 22. April 2024
 Identifikationsnummer (IČO): 21493871
 Datenbox-ID (datová schránka): 2rvcmud
 
