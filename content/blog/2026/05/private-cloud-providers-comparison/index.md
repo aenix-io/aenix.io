@@ -150,7 +150,6 @@ A growing market in 2026:
 - **Hetzner** (Germany) — bare metal + cloud, popular in DACH
 - **OVHcloud** (France) — strong EU sovereign positioning
 - **Ænix Public Cloud Platform deployments at regional hosting providers (currently listed on aenix.io); tier-1 European bank engagements under NDA until mid-2027** — regional sovereign cloud product
-- **QazCloud** (Kazakhstan) — partnered with Clever Cloud for sovereign AI
 - Various regional providers per jurisdiction
 
 These offer private-cloud-style isolation without you operating the platform. Trade-off: provider relationship vs. direct hardware control.

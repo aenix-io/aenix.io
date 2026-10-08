@@ -22,7 +22,7 @@ quiz:
         - { text: "Hetzner", correct: true }
         - { text: "AWS Frankfurt", correct: false }
         - { text: "DigitalOcean", correct: false }
-      explanation: "Genannte regionale souveräne Anbieter: Hetzner in Deutschland, OVHcloud in Frankreich mit starker EU-Positionierung und QazCloud in Kasachstan. AWS Sovereign Cloud, Azure Sovereign und GCP sind demgegenüber die souveränen Angebote der Hyperscaler."
+      explanation: "Genannte regionale souveräne Anbieter: Hetzner in Deutschland, OVHcloud in Frankreich mit starker EU-Positionierung. AWS Sovereign Cloud, Azure Sovereign und GCP sind demgegenüber die souveränen Angebote der Hyperscaler."
     - q: "Welche Plattform empfiehlt der Vergleich für Service-Provider mit Mandanten- und GPU-Bedarf?"
       options:
         - { text: "VMware VCF", correct: false }
@@ -80,7 +80,6 @@ Red Hat kommerzielle Subscription. **Wann sinnvoll:** bestehende Red Hat / OpenS
 - **Hetzner** (Deutschland) — Bare Metal + Cloud, beliebt in DACH
 - **OVHcloud** (Frankreich) — starke EU-souveräne Positionierung
 - **Ænix Public Cloud Platform** — im Einsatz bei regionalen Hosting-Anbietern; Engagements mit europäischen Tier-1-Banken sind bis Mitte 2027 NDA-geschützt. Regionales souveränes Cloud-Produkt.
-- **QazCloud** (Kasachstan) — souveränes KI-Ökosystem
 
 **Trade-off:** vom Anbieter verwalteter Komfort gegen direkte Kontrolle über die Hardware.
 

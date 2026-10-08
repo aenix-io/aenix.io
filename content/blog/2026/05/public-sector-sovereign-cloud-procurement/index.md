@@ -83,8 +83,8 @@ Other member states have variations.
 
 - **Kazakhstan** — procurement-mandated sovereignty for public-sector
   workloads via goszakup.gov.kz / mitwork.kz / zakup.sk.kz. Active
-  sovereign cloud market: QazCloud, Clever Cloud, regional telco
-  sovereign cloud product launches.
+  sovereign cloud market, including regional telco sovereign cloud
+  product launches.
 - **Singapore: IM8** — Government IT security standards.
 - **India: MeitY** — Ministry of Electronics IT, including STQC
   Empanelled CSP framework.
@@ -171,8 +171,8 @@ simultaneously:
   the platform vendor.
 - **Customer-controlled keys** — External Secrets Operator backed by
   customer HSM; Ænix never holds keys.
-- **Air-gap support** — documented and used by classified-data and
-  defence-adjacent customers.
+- **Air-gap support** — documented for classified-data and
+  defence-adjacent use cases.
 - **Self-hosted observability** — VictoriaMetrics + VictoriaLogs in
   jurisdiction; no SaaS-observability residency leak.
 - **Customer-controlled identity** — Keycloak / Active Directory /
@@ -265,9 +265,8 @@ case studies in public sector typically follow a 3-5 year
 publication lag.
 
 What we will say publicly: Ænix has multi-year engagements with
-Kazakhstan procurement-portal-listed sovereign cloud products, EU
-member-state regional digitalisation programmes, and tier-1 European
-defence-adjacent infrastructure. Concrete references available
+Kazakhstan procurement-portal-listed sovereign cloud products and EU
+member-state regional digitalisation programmes. Concrete references available
 under NDA in the discovery call.
 
 ## When this engagement model fits

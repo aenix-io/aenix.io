@@ -76,7 +76,7 @@ Each jurisdiction has its own framework:
 - **NIS2** — broader cybersecurity, applies to cloud providers as essential entities
 
 ### Central Asia
-- **Kazakhstan** — procurement-mandated sovereignty for public-sector workloads. Active sovereign cloud market: QazCloud, Clever Cloud, regional telco sovereign cloud product launches.
+- **Kazakhstan** — procurement-mandated sovereignty for public-sector workloads. Active sovereign cloud market, including regional telco sovereign cloud product launches.
 - **Other CIS** — various national frameworks emerging
 
 ### Other regions
