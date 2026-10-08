@@ -6609,3 +6609,31 @@ a.tour-event__title:hover { color: var(--ws-blue); text-decoration: underline; }
   .tour-event__tag { grid-row: auto; justify-self: start; }
 }
 .tour-hosts__lead { margin: 2rem 0 0; }
+
+/* About the author, under a blog post (partials/blog/author-box.html). */
+.blog-author {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin: 2.5rem 0 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--aenix-bg-tint);
+  border: 1px solid rgba(1, 165, 255, 0.22);
+  border-radius: 10px;
+}
+.blog-author img.blog-author__photo { width: 72px; height: 72px; max-width: none; margin: 0; border-radius: 50%; object-fit: cover; flex: none; }
+.blog-author__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--aenix-text-muted);
+  margin-bottom: 0.25rem;
+}
+.blog-author__name { font-weight: 700; font-size: 1.0625rem; }
+.blog-author__role { font-weight: 400; color: var(--aenix-text-muted); }
+.blog-author__bio { margin: 0.5rem 0; }
+.blog-author__links { display: flex; gap: 1rem; flex-wrap: wrap; }
+.blog-author__links a { color: var(--aenix-primary); font-weight: 600; text-decoration: none; }
+.blog-author__links a:hover { color: var(--aenix-accent); }
+.blog-post-hero__author a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }

@@ -839,7 +839,6 @@ menus:
 taxonomies:
   type: types
   topic: topics
-  author: authors
 
 permalinks:
   blog: /blog/:year/:month/:contentbasename/
