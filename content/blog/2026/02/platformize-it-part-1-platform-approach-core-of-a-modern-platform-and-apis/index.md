@@ -6,6 +6,7 @@ author: "Andrei Kvapil"
 type: "article"
 topics: ["DevOps", "Kubernetes", "Open Source", "Platform Engineering", "Cloud"]
 language: "en"
+hreflang_de: "/de/blog/2026/02/platformize-it-teil-1-plattformansatz-kern-moderner-plattform-apis/"
 cover_image: "/img/blog/medium/platformize-it-part-1-platform-approach-core-of-a-modern-platform-and-apis/cover.jpg"
 source_url: "https://medium.com/p/3287e55938fe"
 ---

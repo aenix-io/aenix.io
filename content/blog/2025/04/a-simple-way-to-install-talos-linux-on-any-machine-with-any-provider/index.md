@@ -6,6 +6,7 @@ author: "Andrei Kvapil"
 type: "tutorial"
 topics: ["Cloud", "Kubernetes", "Open Source", "Platform Engineering"]
 language: "en"
+hreflang_de: "/de/blog/2025/04/talos-linux-installieren-beliebige-maschine-beliebiger-anbieter/"
 cover_image: "/img/blog/medium/a-simple-way-to-install-talos-linux-on-any-machine-with-any-provider/cover.png"
 source_url: "https://medium.com/p/c652b35b902e"
 ---
