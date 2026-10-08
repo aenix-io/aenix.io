@@ -1,6 +1,6 @@
 ---
 title: "When the return packet takes the wrong door"
-description: "A hosting provider's public IPs were pinned to a rack and half their traffic died silently. vlan-router made MetalLB L2 routing declarative and the address follow the workload."
+description: "A hosting provider's public IPs were pinned to a rack and half the traffic died silently. vlan-router made routing declarative so addresses follow workloads."
 hero_subtitle: "MetalLB L2 routing automated, and the address survives a move"
 date: 2026-08-21
 lastmod: 2026-08-21
@@ -47,6 +47,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">6 commands</div><div class="cs-stat__label">per subnet per node, by hand — replaced by a few lines of YAML in one place</div></div>
   <div class="cs-stat"><div class="cs-stat__num">EVPN Type-2</div><div class="cs-stat__label">routes announced per node, so the address moves with the workload</div></div>
   <div class="cs-stat"><div class="cs-stat__num">3 modes</div><div class="cs-stat__label">VXLAN+EVPN, VXLAN without BGP, plain VLAN — side by side during migration</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
 </div>
 
 ## The client's problem
@@ -141,8 +146,17 @@ Most of this kind of migration is finding assumptions like that one — made rea
   <div class="card"><div class="card-body"><h3 class="card-title">The hard part is upstream assumptions</h3><p class="card-description">A years-old MAC binding, made when an address could only live behind one port, was the bug. Finding those is most of the work.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
+*This case study is published in anonymized form: the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

@@ -1,6 +1,6 @@
 ---
 title: "PCI DSS on the Ænix platforms"
-description: "Which PCI DSS 4.0.1 requirements the Aenix platforms cover by default, which are one setting away, and which stay yours — with commands to verify each control."
+description: "Which PCI DSS 4.0.1 requirements the Ænix platforms cover by default, which are one setting away, and which stay yours — with commands to verify each control."
 page_type: "solution-landing"
 language: "en"
 quick_facts_style: "rows"
@@ -15,7 +15,7 @@ related_pages:
   - /products/private-cloud-platform/
   - /alternatives/vmware-alternative/
 direct_answer: |
-  **The Ænix platforms provide most of the technical controls a PCI DSS v4.0.1 assessment depends on, and several are active on a fresh installation: tenant network isolation enforced by Cilium policies, privileged workloads refused by admission, automatic TLS for published services, and encrypted backups. Others ship but stay off until you enable them — single sign-on with MFA, volume encryption, restricted egress, encrypted east-west traffic, longer audit retention — and each is a configuration option rather than a development project. No platform passes a PCI DSS audit: a Qualified Security Assessor certifies a scoped cardholder data environment, not a product, and Aenix claims no PCI DSS certification. The controls below were verified against Cozystack v1.6, the open-source engine the Ænix platforms are built from, with commands you can run on your own cluster.**
+  **The Ænix platforms provide most of the technical controls a PCI DSS v4.0.1 assessment depends on, and several are active on a fresh installation: tenant network isolation enforced by Cilium policies, privileged workloads refused by admission, automatic TLS for published services, and encrypted backups. Others ship but stay off until you enable them — single sign-on with MFA, volume encryption, restricted egress, encrypted east-west traffic, longer audit retention — and each is a configuration option rather than a development project. No platform passes a PCI DSS audit: a Qualified Security Assessor certifies a scoped cardholder data environment, not a product, and Ænix claims no PCI DSS certification. The controls below were verified against Cozystack v1.6, the open-source engine the Ænix platforms are built from, with commands you can run on your own cluster.**
 quick_facts:
   - label: "Standard"
     value: "PCI DSS v4.0.1, all twelve requirements mapped."
@@ -32,10 +32,10 @@ quick_facts:
   - label: "Common starting point"
     value: "Teams replacing VMware vSphere, where the CDE was scoped around clusters, VLANs and vCenter roles."
 faq:
-  - q: "Is the Aenix platform PCI DSS certified?"
-    a: "No, and no infrastructure platform is. PCI DSS certification applies to a cardholder data environment, is scoped by the entity that owns it, and is signed by a Qualified Security Assessor. A vendor advertising a PCI DSS certified platform is describing something that does not exist. What Aenix says is narrower and verifiable: the infrastructure controls an assessment leans on — segmentation, hardened configuration, encryption, centralized identity, audit logging — are present, most are on before you touch anything, and every one can be checked against your own cluster with the commands on this page."
-  - q: "Were these controls tested on the Aenix platform or on Cozystack?"
-    a: "On Cozystack, the Apache 2.0 CNCF engine that Aenix creates and maintains and that all three Aenix platforms are distributions of. There is no separate closed build to test. The distinction that does matter is configuration: settings such as --encryption-provider-config, the audit policy and the time source come from the Talos machine configuration applied at install time, which is part of what Aenix supplies and operates, so verify them on your own cluster rather than assuming them."
+  - q: "Is the Ænix platform PCI DSS certified?"
+    a: "No, and no infrastructure platform is. PCI DSS certification applies to a cardholder data environment, is scoped by the entity that owns it, and is signed by a Qualified Security Assessor. A vendor advertising a PCI DSS certified platform is describing something that does not exist. What Ænix says is narrower and verifiable: the infrastructure controls an assessment leans on — segmentation, hardened configuration, encryption, centralized identity, audit logging — are present, most are on before you touch anything, and every one can be checked against your own cluster with the commands on this page."
+  - q: "Were these controls tested on the Ænix platform or on Cozystack?"
+    a: "On Cozystack, the Apache 2.0 CNCF engine that Ænix created and co-maintains and that all three Ænix platforms are built on; the proprietary Ænix modules (WHMCS integration, billing and portal components) run on top of it and do not change the controls tested here. The distinction that does matter is configuration: settings such as --encryption-provider-config, the audit policy and the time source come from the Talos machine configuration applied at install time, which is part of what Ænix supplies and operates, so verify them on your own cluster rather than assuming them."
   - q: "How does the platform affect PCI DSS audit scope?"
     a: "That is what segmentation is for, and here isolation is enforced rather than declared: creating a tenant provisions Cilium network policies that deny traffic from other tenants by default. But putting the cardholder data environment in its own tenant does not by itself take the rest of the cluster out of scope — the control plane, Cilium, LINSTOR, Keycloak and the nodes are shared services supporting the CDE, and assessors normally treat them as in scope. Segmentation limits which workloads are in scope, not which platform components. Agree the boundary with your assessor early and use the verification commands as evidence."
   - q: "Is cardholder data encrypted at rest by default?"
@@ -65,7 +65,7 @@ Finding out during an assessment that a control was never switched on is expensi
 
 ### Where the evidence comes from
 
-The controls on this page were verified against **Cozystack v1.6** on a reference cluster, and the verification commands are the ones you would run yourself. Cozystack is the open-source, Apache 2.0, CNCF engine that Ænix creates and maintains; the Ænix Public Cloud Platform, Private Cloud Platform and AI Platform are distributions of it. There is no separate closed build with different behaviour, which is why the mapping carries across without a caveat.
+The controls on this page were verified against **Cozystack v1.6** on a reference cluster, and the verification commands are the ones you would run yourself. Cozystack is the open-source, Apache 2.0, CNCF engine that Ænix created and co-maintains; the Ænix Public Cloud Platform, Private Cloud Platform and AI Platform are built on it, and the proprietary Ænix modules (WHMCS integration, billing and portal components) do not change these controls, which is why the mapping carries across without a caveat.
 
 The caveat that does apply is configuration. Several settings an assessor will ask about — `--encryption-provider-config`, `--anonymous-auth=false`, `--profiling=false`, the audit policy, the time source — come from the Talos machine configuration applied at install time rather than from the software. That configuration is part of what Ænix supplies and operates. Verify it on your own cluster instead of taking a published number for it.
 

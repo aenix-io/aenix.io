@@ -1,6 +1,6 @@
 ---
 title: "For Heads of Infrastructure — exit VMware on your terms"
-description: "If you own the VMware estate after Broadcom's price hikes, here are your real options: an open turnkey cloud platform, or engineers to build your own. EU-based."
+description: "If you own the VMware estate after Broadcom's price hikes, here are your real options: an open turnkey cloud platform, or engineers to build your own."
 hero_subtitle: "Exit VMware on your own terms"
 type: "page"
 language: "en"
@@ -28,7 +28,7 @@ related_pages:
 </div>
 
 <div class="trust-badges">
-EU-based engineers · Apache 2.0 platform · No per-CPU licensing · Mutual NDA at kickoff
+Apache 2.0 platform · No per-CPU licensing · Mutual NDA at kickoff
 </div>
 
 <!-- /BLOCK 1 -->
@@ -67,18 +67,17 @@ Either path ends with the platform — and the skills — in your hands.
 - **Who it's for:** Heads / VPs / Directors of Infrastructure running a VMware or Nutanix estate.
 - **License:** Apache 2.0 — no per-core/per-socket licensing.
 - **Status:** built on [Cozystack](https://cozystack.io), a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence).
-- **Typical timeline:** 9–18 months for a full estate; first workloads in weeks.
+- **Typical timeline:** a 14- or 28-day fixed-price assessment, then a 3–12 month platform build; a 100-VM estate typically migrates in 8–12 months, a 1,000-VM estate in 18–24 months.
 - **Common pitfall:** treating the exit as VM-only and discovering backup, observability and CI/CD still depend on the old stack.
 
-[Source: [CNCF Landscape](https://landscape.cncf.io), [Cozystack docs](https://cozystack.io)]
 
 ---
 
 ## Why infrastructure leaders pick Ænix
 
-- **We are the team behind the platform.** Ænix maintains Cozystack — you get the authors as your delivery and support partner, not a reseller.
+- **We created the platform.** Ænix created Cozystack and co-maintains it — you get the authors as your delivery and support partner, not a reseller.
 - **No hyperscaler bias.** We recommend (and operate) the architecture that meets your constraint, including fully on-prem.
-- **EU engineering.** Sovereignty is structural — your hardware, your jurisdiction, your cluster-level access — not a contract clause.
+- **Sovereignty is structural.** Your hardware, your jurisdiction, your cluster-level access — not a contract clause. Engineering teams in the EU and Central Asia; EU contracts through AENIX s.r.o. (Czech Republic).
 
 ---
 
@@ -94,7 +93,7 @@ No. Cozystack is a single Kubernetes-native framework for VMs, containers, manag
 That's the build-with model — Ænix acts as your engineering bench, builds the platform, and trains your team to operate it.
 
 **How fast can we show a result?**
-A discovery call scopes a low-risk first workload; pilots typically run in weeks, full-estate migration over 9–18 months.
+A discovery call scopes a low-risk first workload. After a 14- or 28-day assessment, the platform build takes 3–12 months depending on scope; a 100-VM estate typically migrates in 8–12 months, a 1,000-VM estate in 18–24 months.
 
 **What does it cost versus VMware?**
 The per-core license line disappears (Apache 2.0). You pay for support and/or the build engagement. We model the delta with you on the call.
@@ -103,7 +102,7 @@ The per-core license line disappears (Apache 2.0). You pay for support and/or th
 
 ## Start with a 30-minute discovery call
 
-Free, no prep. We confirm fit, look at your current estate, and tell you whether the turnkey edition or the build-with engagement matches your situation.
+Free, no prep. We confirm fit, look at your current estate, and tell you whether the turnkey platform or the build-with engagement matches your situation.
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -112,7 +111,7 @@ Free, no prep. We confirm fit, look at your current estate, and tell you whether
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!--
 SEO/GEO:

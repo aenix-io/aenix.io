@@ -1,6 +1,6 @@
 ---
 title: "One portal over OpenNebula, VMware and Kubernetes"
-description: "A financial group in Asia put a single self-service portal over OpenNebula, VMware and Kubernetes-as-a-Service — four months to production, support load cut by automation."
+description: "A financial group in Asia put one self-service portal over OpenNebula, VMware and Kubernetes-as-a-Service: four months to production, tickets became automation."
 hero_subtitle: "One catalogue over three infrastructures, four months to production"
 date: 2026-08-21
 lastmod: 2026-08-21
@@ -16,7 +16,6 @@ secondary_keywords:
   - "cloud service catalog"
   - "private cloud billing portal"
 related_pages:
-  - /products/public-cloud-platform/
   - /products/public-cloud-platform/
   - /industries/financial-services/
   - /services/public-cloud-builder/
@@ -47,6 +46,11 @@ faq:
   <div class="cs-stat"><div class="cs-stat__num">4 months</div><div class="cs-stat__label">from kickoff to production, about twice as fast as comparable builds</div></div>
   <div class="cs-stat"><div class="cs-stat__num">3 systems</div><div class="cs-stat__label">OpenNebula, VMware and Kubernetes-as-a-Service behind one catalogue</div></div>
   <div class="cs-stat"><div class="cs-stat__num">1 entry point</div><div class="cs-stat__label">for users, instead of several disconnected systems and a ticket each</div></div>
+</div>
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/case-studies/">All case studies →</a>
 </div>
 
 ## About the project
@@ -100,8 +104,17 @@ That choice does more work than it first appears to:
   <div class="card"><div class="card-body"><h3 class="card-title">Support load is an automation problem</h3><p class="card-description">The team was not short of people; it was short of automated provisioning. Fixing that is what changed the workload.</p></div></div>
 </div>
 
+## Discuss a similar project
+
+A 30-minute discovery call is enough to tell whether this architecture fits your estate and what the first step would be.
+
+<div class="cta-row">
+  <a class="cta-primary" href="/contact/">Book a call</a>
+  <a class="cta-secondary" href="/demo/">Open the live demo</a>
+</div>
+
 ---
 
-*This case study is published in anonymized form (Tier-3 evidence): the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
+*This case study is published in anonymized form: the customer is described by profile, not by name. A customer reference is available under NDA on request — [talk to Ænix sales](/contact/).*
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform, as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*

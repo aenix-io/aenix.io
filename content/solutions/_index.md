@@ -1,6 +1,7 @@
 ---
 title: "Solutions"
-description: "Aenix solutions — trigger-led entry points for cloud platform engagements: DORA, NIS2, sovereignty, sovereign AI, private LLM, repatriation, DR, hybrid cloud."
+seo_title: "Cloud platform solutions by business trigger"
+description: "Ænix solutions — trigger-led entry points for cloud platform engagements: DORA, NIS2, sovereignty, sovereign AI, private LLM, repatriation, DR, hybrid cloud."
 hero_subtitle: "Start from the problem that brought you here"
 language: "en"
 hreflang_de: /de/loesungen/
@@ -22,10 +23,10 @@ hreflang_de: /de/loesungen/
 
 ### Regulatory triggers
 
-- **[DORA compliance](/solutions/dora-compliance/)** — cloud architecture mapped to DORA ICT risk management (Arts. 5-16), incident reporting (Arts. 17-19), third-party and concentration risk (Arts. 28-30) and resilience testing (Arts. 24-27). Pairs with: Private Cloud Platform. Free [DORA checklist](/resources/dora-compliance-checklist/).
+- **[DORA compliance](/solutions/dora-compliance/)** — cloud architecture mapped to DORA ICT risk management (Arts. 5-16), incident reporting (Arts. 17-23, major incidents under Art. 19), third-party risk (Arts. 28-30, concentration risk at Art. 29) and resilience testing (Arts. 24-27). Pairs with: Private Cloud Platform. Free [DORA checklist](/resources/dora-compliance-checklist/).
 - **[NIS2 compliance](/solutions/nis2-compliance/)** — risk-management measures (Art. 21) and 24h/72h/one-month incident reporting (Art. 23) for essential and important entities. Pairs with: Private Cloud Platform. Free [NIS2 checklist](/resources/nis2-compliance-checklist/).
-- **[Data sovereignty](/solutions/data-sovereignty/)** — customer-controlled keys, customer-controlled hardware, jurisdictional data residency at every layer. Pairs with: Private Cloud Platform or Public Cloud Platform.
-- **[Disaster recovery](/solutions/disaster-recovery/)** — cross-DC synchronous replication, immutable backups, RTO/RPO you can evidence in a drill. Pairs with: Private Cloud Platform.
+- **[Data sovereignty](/solutions/data-sovereignty/)** — customer-controlled hardware, documented key custody and data residency for every data class. Pairs with: Private Cloud Platform or Public Cloud Platform.
+- **[Disaster recovery](/solutions/disaster-recovery/)** — cross-DC synchronous replication, backups outside the protected cluster, RTO/RPO you can evidence in a drill. Pairs with: Private Cloud Platform.
 
 ### AI / GPU triggers
 
@@ -66,4 +67,4 @@ Take the **[Platform Readiness Assessment](/services/platform-readiness-assessme
 
 ---
 
-*See also: [Services →](/services/) for engagement-led entry; [Industries →](/industries/) for vertical proof.*
+*See also: [Services →](/services/) for engagement-led entry; [Industries →](/industries/) by sector; [Role guides →](/for/) for CTOs, CISOs and platform leads.*

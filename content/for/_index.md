@@ -1,7 +1,7 @@
 ---
 title: "By role — find the Ænix entry point for your job"
-description: "Role-specific entry points to Aenix — infrastructure, platform engineering, cloud, alliances, compliance or engineering. Start where your problem lives."
-hero_subtitle: "Find your Aenix entry point by role"
+description: "Role-specific entry points to Ænix — infrastructure, platform engineering, cloud, alliances, compliance or engineering. Start where your problem lives."
+hero_subtitle: "Find your Ænix entry point by role"
 type: "page"
 language: "en"
 images: ["img/og/og-for.jpg"]
@@ -37,7 +37,7 @@ related_pages:
 
 ---
 
-*Ænix is the team behind [Cozystack](https://cozystack.io) — a CNCF project (Sandbox today; Incubating application in due diligence), Apache 2.0. Ænix commercializes it as Ænix Platform as three platforms on one engine — Public Cloud, Private Cloud and AI — that combine rather than exclude each other.*
+*Ænix created [Cozystack](https://cozystack.io), a CNCF Sandbox project (Incubation application in due diligence) under Apache 2.0, and co-maintains it with maintainers from other companies. On it, Ænix builds three platforms that combine rather than exclude each other: Ænix Public Cloud Platform, Ænix Private Cloud Platform and Ænix AI Platform.*
 
 <!--
 SEO/GEO: section hub for /for/. canonical https://aenix.io/for/. hreflang de → /de/fuer/.

@@ -1,13 +1,14 @@
 ---
 title: "Developer self-service — environments in hours, not weeks"
-description: "One of the most expensive things in most engineering organizations is the wait time between \"team needs an environment\" and \"team has an..."
+description: "Developer self-service: golden paths that give product teams environments, databases and services without tickets, in hours instead of weeks."
+primary_keyword: "developer self-service"
 type: "page"
 related_pages: ["/services/internal-developer-platform/", "/services/platform-engineering/", "/products/private-cloud-platform/", "/products/cozystack/"]
 language: "en"
 quick_facts_style: "rows"
 faq_style: "rows"
 direct_answer: |
-  **Developer self-service is the platform-engineering capability that lets product teams provision environments, databases, services, storage, and observability on their own — without filing tickets — typically in under an hour from request to running. It targets engineering organizations where the wait between "team needs an environment" and "team has one" stretches into days or weeks, decaying product velocity. Aenix builds this capability into platforms teams actually adopt: opinionated golden paths backed by a real platform layer, not a catalog UI as wallpaper. Engagements deliver a golden-path inventory of the ten most common requests, self-service paths designed and implemented by Aenix engineers, and an adoption-metrics framework. The work runs on the developer self-service layer of Ænix Private Cloud Platform, the company's productized Internal Developer Platform built on Cozystack.**
+  **Developer self-service is the platform-engineering capability that lets product teams provision environments, databases, services, storage, and observability on their own — without filing tickets — typically in under an hour from request to running. It targets engineering organizations where the wait between "team needs an environment" and "team has one" stretches into days or weeks, decaying product velocity. Ænix builds this capability into platforms teams actually adopt: opinionated golden paths backed by a real platform layer, not a catalog UI as wallpaper. Engagements deliver a golden-path inventory of the ten most common requests, self-service paths designed and implemented by Ænix engineers, and an adoption-metrics framework. The work runs on the developer self-service layer that is part of Ænix Private Cloud Platform (not a separate product), built on Cozystack.**
 quick_facts:
   - label: "What it is"
     value: "A platform-engineering capability where the most common product-team needs are satisfied without tickets, completed in under an hour from request to running."
@@ -18,22 +19,22 @@ quick_facts:
   - label: "License"
     value: "Apache 2.0 (no per-CPU / per-core licensing)"
   - label: "Engagement timeline"
-    value: "Discovery 30 min (free); Assessment 14-28 days; Build 1-6 months."
+    value: "Discovery 30 min (free); fixed-price assessment of 14 or 28 days; build 1-6 months for the self-service scope."
   - label: "Status"
     value: "Cozystack is a CNCF project (Sandbox since 2025-02-28; Incubating application in due diligence)"
 faq:
   - q: "What counts as real developer self-service versus a catalog?"
     a: "Real self-service means the most common product-team requests are completed without filing a ticket, in under an hour from request to running. A catalog-only Backstage where provisioning still needs platform-team intervention does not qualify — that is a registry, not self-service."
   - q: "Which requests should be self-service first?"
-    a: "Aenix scopes the ten most common needs: environment provisioning, service deployment, database provisioning (PostgreSQL, MariaDB, Valkey), object storage, observability onboarding, secrets management, network access, SSO integration, CI/CD setup, and backup/DR. The engagement prioritizes whichever of these still require tickets in your organization."
-  - q: "How does Aenix deliver developer self-service?"
-    a: "Through a golden-path inventory (current versus target state), self-service paths designed for priority requests, an implementation engagement where Aenix engineers build the paths into your platform, and an adoption-metrics framework to measure what works. It is scoped within broader Internal Developer Platform and Platform Engineering services."
+    a: "Ænix scopes the ten most common needs: environment provisioning, service deployment, database provisioning (PostgreSQL, MariaDB, Valkey), object storage, observability onboarding, secrets management, network access, SSO integration, CI/CD setup, and backup/DR. The engagement prioritizes whichever of these still require tickets in your organization."
+  - q: "How does Ænix deliver developer self-service?"
+    a: "Through a golden-path inventory (current versus target state), self-service paths designed for priority requests, an implementation engagement where Ænix engineers build the paths into your platform, and an adoption-metrics framework to measure what works. It is scoped within broader Internal Developer Platform and Platform Engineering services."
   - q: "What platform does the self-service capability run on?"
-    a: "The developer self-service layer of Ænix Private Cloud Platform — an internal-developer-platform layer with GitLab automation, Argo CD workflows, self-service APIs, golden-path templates, and engineering productivity dashboards. It is built on Cozystack, which runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage."
+    a: "The developer self-service layer of Ænix Private Cloud Platform — part of that platform rather than a separate product — with GitLab automation, Argo CD workflows, self-service APIs, golden-path templates, and engineering productivity dashboards. It is built on Cozystack, which runs VMs and containers on one Kubernetes API via KubeVirt, with Cilium eBPF networking and LINSTOR/DRBD storage."
   - q: "How long before product teams can self-serve?"
-    a: "Discovery is a free 30-minute call. Assessment runs 14-28 days within a Platform Readiness Assessment. The build engagement spans 1-6 months depending on how many golden paths are in scope and the maturity of the existing platform."
+    a: "Discovery is a free 30-minute call. The fixed-price assessment runs 14 or 28 days within a Platform Readiness Assessment. The build engagement spans 1-6 months depending on how many golden paths are in scope and the maturity of the existing platform."
   - q: "Is there vendor lock-in?"
-    a: "No. The capability is built on Cozystack, an open-source CNCF project licensed under Apache 2.0 with no per-CPU or per-core licensing. The golden paths and platform layer use standard Kubernetes APIs, so the foundation remains portable."
+    a: "No. The capability is built on Cozystack, an open-source CNCF Sandbox project licensed under Apache 2.0 with no per-CPU or per-core licensing. The golden paths and platform layer use standard Kubernetes APIs, so the foundation remains portable."
 hreflang_de: /de/loesungen/developer-self-service/
 ---
 
@@ -41,7 +42,7 @@ hreflang_de: /de/loesungen/developer-self-service/
 
 Ænix builds developer self-service capability into platforms that product teams actually adopt — not Backstage as wallpaper, but underlying golden paths that provision what a team asks for without filing a ticket.
 
-> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** and its developer self-service layer — GitLab automation, Argo CD workflows, self-service APIs, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/).
+> **Pairs with:** **[Ænix Private Cloud Platform](/products/private-cloud-platform/)** and its developer self-service layer — GitLab automation, Argo CD workflows, self-service APIs, golden-path templates, engineering productivity dashboards. Free [Platform Engineering Maturity Assessment →](/resources/platform-engineering-maturity-assessment/). Platform leads: see the [Head of Platform Engineering guide](/for/head-of-platform-engineering/).
 
 <div class="cta-row">
   <a class="cta-primary" href="/contact/">Book a call</a>
@@ -116,7 +117,7 @@ Self-service is part of broader platform engineering work — see **[Internal De
 | Phase | Duration |
 |---|---|
 | Discovery | 30 min, free |
-| Assessment | 14-28 days (within Platform Readiness Assessment) |
+| Assessment | 14 or 28 days, fixed price (within Platform Readiness Assessment) |
 | Build | 1-6 months |
 
 ---
@@ -148,7 +149,4 @@ Self-service is part of broader platform engineering work — see **[Internal De
 
 ---
 
-*Ænix is the team behind Cozystack (CNCF Project), and we offer Ænix Platform — our commercial productized offering based on Cozystack.*
-
-<!-- SEO: title "Developer Self-Service — Environments in Hours, Not Weeks | Ænix"
-Word count: ~600. -->
+*Ænix created Cozystack (a CNCF Sandbox project) and co-maintains it. Developer self-service is part of Ænix Private Cloud Platform, one of three Ænix platforms on that engine.*
