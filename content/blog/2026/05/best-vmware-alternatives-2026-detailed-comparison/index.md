@@ -7,6 +7,7 @@ author: "Aenix Team"
 type: "article"
 topics: ["VMware", "OpenStack", "OpenShift", "Kubernetes", "Cozystack", "Sovereignty"]
 language: "en"
+hreflang_de: "/de/blog/2026/05/vmware-alternativen-2026-vergleich-entscheidung/"
 companion_landing: "/alternatives/vmware-alternatives/"
 quiz:
   title: "Test yourself: best VMware alternatives in 2026"
