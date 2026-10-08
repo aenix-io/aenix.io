@@ -91,6 +91,6 @@ Die Top-10-Workloads zurückzuholen und den Rest in der Cloud zu lassen, ist oft
 
 ## So nutzen Sie das Arbeitsblatt
 
-Tragen Sie Ihre Zahlen ein und gehen Sie sie mit Ihrem Partner aus dem Finanzbereich und dem Platform Engineering durch. Bestimmen Sie die Top-10-Kandidaten für die Repatriierung. Prüfen Sie die Annahmen.
+Laden Sie das **[Cloud-Repatriation-TCO-Worksheet](/de/ressourcen/cloud-repatriation-tco-worksheet/)** herunter. Tragen Sie Ihre Zahlen ein und gehen Sie sie mit Ihrem Partner aus dem Finanzbereich und dem Platform Engineering durch. Bestimmen Sie die Top-10-Kandidaten für die Repatriierung. Prüfen Sie die Annahmen.
 
 Für die vollständige Zusammenarbeit siehe **[Cloud Repatriation](/de/loesungen/cloud-repatriation/)**.
