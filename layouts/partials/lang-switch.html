@@ -1,54 +1,58 @@
 {{/*
-  lang-switch.html — language toggle pill for pages that declare a locale
-  counterpart in frontmatter (hreflang_en / hreflang_de / hreflang_ru).
-  Rendered by _default/list.html and _default/event-landing.html in the hero.
+  lang-switch.html — language links for pages that have a counterpart in
+  another locale (hreflang_en / hreflang_de / hreflang_ru in frontmatter,
+  verified by seo/locale-counterparts.html: the other page exists and
+  declares this one back). Nothing renders when there is no counterpart.
 
-  When it shows:
-    - the EN↔RU pair (workshop pages), as before;
-    - the EN↔DE pair, but only on event pages (layout or page_type
-      `event-landing`, or under the tour / workshops / webinars sections and
-      their /de/ twins, hubs included). DE landing pages and their EN
-      counterparts keep their existing behavior (no visible switcher).
-  Once shown, it lists every counterpart the page declares, in EN · DE · RU
-  order, with the current language marked active.
+  Three placements:
+    {{ partial "lang-switch.html" . }}
+        Hero pill (_default/list.html, _default/event-landing.html). Shown
+        for EN↔RU pairs (the RU workshop pages), listing DE too when the
+        page has one. EN↔DE switching lives in the header.
+    {{ partial "lang-switch.html" (dict "page" . "mode" "header") }}
+        Desktop header: a compact "DE" / "EN" link next to the GitHub icon.
+    {{ partial "lang-switch.html" (dict "page" . "mode" "mobile") }}
+        Last item of the mobile menu: "Deutsch" / "English".
 
   The DE locale is content under /de/ flagged with language: "de".
 */}}
-{{- $lang := .Params.language | default "en" -}}
-{{- if hasPrefix .RelPermalink "/de/" }}{{ $lang = "de" }}{{ end -}}
-{{- $ru := .Params.hreflang_ru -}}
-{{- $en := .Params.hreflang_en -}}
-{{- $de := .Params.hreflang_de -}}
-{{- $event := or (eq .Layout "event-landing") (eq (.Params.page_type | default "") "event-landing") -}}
-{{- range slice "/tour-2026/" "/workshops/" "/webinars/" "/de/tour-2026/" "/de/workshops/" "/de/webinare/" -}}
-  {{- if hasPrefix $.RelPermalink . }}{{ $event = true }}{{ end -}}
-{{- end -}}
-{{- $ruPair := or (and (eq $lang "en") $ru) (and (eq $lang "ru") $en) -}}
-{{- $dePair := and $event (or (and (eq $lang "en") $de) (and (eq $lang "de") $en)) -}}
-{{- if $ruPair -}}
+{{- $p := . -}}
+{{- $mode := "hero" -}}
+{{- if reflect.IsMap . }}{{ $p = .page }}{{ $mode = .mode | default "hero" }}{{ end -}}
+{{- $c := partial "seo/locale-counterparts.html" $p -}}
+{{- $lang := $c.lang -}}
+{{- if eq $mode "hero" -}}
+  {{- if or (and (eq $lang "en") $c.ru) (and (eq $lang "ru") $c.en) -}}
 <nav class="lang-switch" aria-label="Language">
-  {{- if eq $lang "ru" }}
-  <a class="lang-switch__item" href="{{ $en | relURL }}" hreflang="en" lang="en">English</a>
+    {{- if eq $lang "ru" }}
+  <a class="lang-switch__item" href="{{ $c.en | relURL }}" hreflang="en" lang="en">English</a>
   <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="ru">Русский</span>
-  {{- else }}
+    {{- else }}
   <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="en">English</span>
-  {{- if and $de $event }}
-  <a class="lang-switch__item" href="{{ $de | relURL }}" hreflang="de" lang="de">Deutsch</a>
-  {{- end }}
-  <a class="lang-switch__item" href="{{ $ru | relURL }}" hreflang="ru" lang="ru">Русский</a>
-  {{- end }}
+      {{- with $c.de }}
+  <a class="lang-switch__item" href="{{ . | relURL }}" hreflang="de" lang="de">Deutsch</a>
+      {{- end }}
+  <a class="lang-switch__item" href="{{ $c.ru | relURL }}" hreflang="ru" lang="ru">Русский</a>
+    {{- end }}
 </nav>
-{{- else if $dePair -}}
-<nav class="lang-switch" aria-label="{{ if eq $lang "de" }}Sprache{{ else }}Language{{ end }}">
-  {{- if eq $lang "de" }}
-  <a class="lang-switch__item" href="{{ $en | relURL }}" hreflang="en" lang="en">English</a>
-  <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="de">Deutsch</span>
-  {{- with $ru }}
-  <a class="lang-switch__item" href="{{ . | relURL }}" hreflang="ru" lang="ru">Русский</a>
-  {{- end }}
-  {{- else }}
-  <span class="lang-switch__item lang-switch__item--active" aria-current="page" lang="en">English</span>
-  <a class="lang-switch__item" href="{{ $de | relURL }}" hreflang="de" lang="de">Deutsch</a>
-  {{- end }}
-</nav>
+  {{- end -}}
+{{- else -}}
+  {{- $target := "" }}{{ $code := "" }}{{ $label := "" }}{{ $title := "" -}}
+  {{- if and (eq $lang "en") $c.de -}}
+    {{- $target = $c.de }}{{ $code = "de" }}{{ $label = "DE" }}{{ $title = "Deutsch" -}}
+  {{- else if and (eq $lang "de") $c.en -}}
+    {{- $target = $c.en }}{{ $code = "en" }}{{ $label = "EN" }}{{ $title = "English" -}}
+  {{- end -}}
+  {{- with $target -}}
+    {{- if eq $mode "mobile" }}
+<li class="mobile-nav-item mobile-nav-item--lang">
+  <a href="{{ . | relURL }}" class="mobile-nav-link" hreflang="{{ $code }}" lang="{{ $code }}">{{ $title }}</a>
+</li>
+    {{- else }}
+<a href="{{ . | relURL }}" class="header-lang" hreflang="{{ $code }}" lang="{{ $code }}" title="{{ $title }}" aria-label="{{ $title }}">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>
+  <span>{{ $label }}</span>
+</a>
+    {{- end }}
+  {{- end -}}
 {{- end -}}
