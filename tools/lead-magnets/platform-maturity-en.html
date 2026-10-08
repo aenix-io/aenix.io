@@ -1,0 +1,242 @@
+<section class="cover">
+  <div class="meta">
+    <span class="brandline">ÆNIX</span>
+    <span class="doctitle">Platform Engineering Maturity Assessment</span>
+    <span class="versionline">Ænix · aenix.io · v1.1 — October 2026</span>
+  </div>
+  <div class="cover__mark">ÆNIX</div>
+  <div class="cover__rule"></div>
+  <h1 class="cover__title">Platform Engineering Maturity Assessment</h1>
+  <p class="cover__subtitle">Score your organization across 8 dimensions and 5 maturity stages to find where platform investment pays back fastest.</p>
+  <div class="cover__spacer"></div>
+  <div class="cover__audience">For Heads of Platform, Infrastructure &amp; Engineering · aenix.io</div>
+  <p class="cover__strapline"><b>8 dimensions, 5 maturity stages, one scoring sheet.</b> v1.1 — October 2026.</p>
+</section>
+
+<h1 class="doc-h">How to use this assessment</h1>
+
+<p class="lead">This self-assessment scores your platform engineering practice on a 5-stage maturity scale: Pre-platform → Shared infrastructure → Self-service primitives → Internal Developer Platform → Mature. It is the same baseline framework Ænix uses during Platform Readiness Assessments before recommending Phase 2 investment.</p>
+
+<p class="lead">Use it in three ways:</p>
+
+<ul class="bullets">
+  <li><b>Self-assessment (recommended first pass).</b> One person — typically a platform lead or VP Engineering — scores in 30–45 minutes.</li>
+  <li><b>Workshop assessment (recommended for investment decisions).</b> Bring 4–8 people from platform engineering, product engineering, security, and ops, and score each dimension together. Disagreements about stage are themselves diagnostic.</li>
+  <li><b>Pre-engagement baseline.</b> Score before engaging Ænix or any other consultancy; have the assessment in hand at the first call.</li>
+</ul>
+
+<h3 class="plain">The 5 maturity stages</h3>
+<p>The same five stages apply consistently across all eight dimensions.</p>
+
+<table class="coverage">
+  <thead><tr><th>Stage</th><th>Name</th><th>Summary</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>Each team for itself.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>Central team manages shared infrastructure.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>Teams self-serve common operations.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>Platform-as-product, full IDP.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Compounding returns.</td></tr>
+  </tbody>
+</table>
+
+<h3 class="plain">Scoring rules</h3>
+<ul class="bullets">
+  <li>For each dimension, choose the stage that best matches your current state (not your target).</li>
+  <li>If you fall between two stages, use the lower number unless the transition is well underway (then use the upper).</li>
+  <li>Half-scores are allowed only for the average — individual dimensions are integer 1–5.</li>
+  <li>Score honestly — the value is in identifying where to invest, not in confirming a comfortable picture.</li>
+</ul>
+
+<div class="callout">
+  <p>Score in pencil, then bring the sheet to a workshop. The conversation about why someone scored a dimension 2 rather than 3 is more valuable than the number itself.</p>
+</div>
+
+<h2 class="sec newpage"><span class="num">1.</span> Workload portability</h2>
+<p class="question">How readily can a workload be moved between substrates (cloud regions, datacenters, providers, Kubernetes clusters) without rewrite?</p>
+<table class="dense">
+  <thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>Each team configures its own infrastructure. No IaC. Bare-metal scripts, click-ops. Workloads embed substrate assumptions deep in code. Vendor lock-in everywhere.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>Central team manages shared infrastructure. Partial IaC (Terraform / CloudFormation in patches). Some workloads portable across teams; substrate moves still require redesign.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>IaC for most provisioning. Teams can self-serve common operations. Workloads usually expressible as Kubernetes manifests plus Helm. Substrate-specific assumptions isolated.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>Workload portability is structural. Multi-substrate-aware (region failover, cluster migration). Vendor-locked services explicitly tagged and quarantined.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Workloads use platform abstractions only. Portable across substrates with predictable effort. Drift detection automated. New substrates onboarded as pluggable backends.</td></tr>
+  </tbody>
+</table>
+<p class="score">Your score (1–5):<span class="line"></span> Why? Evidence?<span class="wide"></span></p>
+
+<h2 class="sec"><span class="num">2.</span> GitOps adoption</h2>
+<p class="question">To what extent are infrastructure and platform changes declarative, version-controlled, PR-reviewed, and deployed via continuous reconciliation?</p>
+<table class="dense">
+  <thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>Manual changes. SSH, click-ops, kubectl by hand. No source of truth for environment state.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>Some IaC committed to git, but applied manually. PRs are aspirational. Drift accumulates.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>IaC plus GitOps for some workloads (Argo CD / Flux for app deploys). Infra changes still mixed manual and automated. PR review on platform changes.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>GitOps for app and infra. Continuous reconciliation. Drift surfaced and remediated. PRs are the change-management channel. Audit trail complete.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Full declarative model — clusters, networks, IAM, observability, all reconciled from git. Drift impossible without an alert. PRs gated by automated policy (OPA / Gatekeeper, Conftest).</td></tr>
+  </tbody>
+</table>
+<p class="score">Your score (1–5):<span class="line"></span> Why? Evidence?<span class="wide"></span></p>
+
+<h2 class="sec newpage"><span class="num">3.</span> Observability unification</h2>
+<p class="question">Do engineers have a single, reliable way to see metrics, logs, traces, and SLOs across all environments and tenants?</p>
+<table class="dense">
+  <thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>Each team picks its own tools. Tribal knowledge of where to look. Outage post-mortems reveal fragmented data.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>Centralised metrics and logs (e.g., Prometheus + Loki, or VictoriaMetrics + VictoriaLogs). Coverage incomplete. SLO discipline patchy.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>Single pane of glass for most workloads. SLOs defined for tier-1 services. Alert hygiene improving. Tracing emerging.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>Unified metrics, logs, and traces. SLO discipline universal for tier-1 and tier-2. Alert hygiene strong (low alert noise, runbooks linked). On-call dashboards standardised.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Full observability mesh. SLOs auto-instrumented from platform contracts. Anomaly detection feeds alerting. Cost of observability tracked and optimised. Tenants get scoped views.</td></tr>
+  </tbody>
+</table>
+<p class="score">Your score (1–5):<span class="line"></span> Why? Evidence?<span class="wide"></span></p>
+
+<h2 class="sec"><span class="num">4.</span> Secrets handling</h2>
+<p class="question">How are secrets created, stored, distributed, rotated, and audited?</p>
+<table class="dense">
+  <thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>Secrets in env files, code, chat messages. No central management. Rotation manual or never.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>Vault or similar deployed for some workloads. Rotation aspirational. Audit trail patchy.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>Central secret store (Vault / External Secrets Operator). Most workloads consume from it. Rotation policy defined. Some auditability.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>All secrets centralised. Rotation enforced (policy-based). Workload identity federated (no embedded credentials). Audit trail complete.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Workload-identity-only — no static secrets in workloads. Rotation continuous and automated. Key custody for sovereign workloads defined and documented. Periodic chaos-test of rotation.</td></tr>
+  </tbody>
+</table>
+<p class="score">Your score (1–5):<span class="line"></span> Why? Evidence?<span class="wide"></span></p>
+
+<h2 class="sec newpage"><span class="num">5.</span> Identity model</h2>
+<p class="question">Are workforce identity (engineers) and workload identity (services) federated to a single trustworthy source, or fragmented across systems?</p>
+<table class="dense">
+  <thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>Local accounts everywhere. Shared credentials. Joiner-mover-leaver (JML) handled manually.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>SSO / OIDC for some systems. Workload identity ad-hoc (static API keys). JML mostly manual.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>SSO for engineer access. Workload identity emerging (e.g., service accounts with OIDC, IAM roles for service accounts). JML semi-automated.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>Universal SSO plus MFA for engineers. Workforce-to-workload identity federation (e.g., SPIFFE / SPIRE, OIDC-based). JML fully automated. RBAC reviewed quarterly.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Zero-trust identity. Per-action authorisation (not just per-system). Customer-side identity federation supported (BYOidp). Continuous attestation.</td></tr>
+  </tbody>
+</table>
+<p class="score">Your score (1–5):<span class="line"></span> Why? Evidence?<span class="wide"></span></p>
+
+<h2 class="sec"><span class="num">6.</span> Multi-tenancy</h2>
+<p class="question">How is isolation between teams, products, customers, or environments achieved? At what layer? How robust is the boundary?</p>
+<table class="dense">
+  <thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>No formal isolation. "Test" and "prod" share clusters, VLANs, or databases. Cross-tenant noisy-neighbour issues common.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>Namespace-per-team in Kubernetes. Network isolation patchy (no NetworkPolicy / Cilium). Resource quotas patchy.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>Namespace plus quota plus NetworkPolicy. Some tenants get a cluster-per-team for stricter isolation. Identity scoped per tenant.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>Tenant CRD or equivalent — the tenant is a first-class platform concept. Isolation at the network, identity, storage, and observability layers. Quotas and SLOs per tenant.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Multi-tier tenancy (org → project → workload). Cross-tenant guarantees provable. Customer-isolation-grade (suitable for sovereign / regulated workloads). Tenant onboarding fully automated.</td></tr>
+  </tbody>
+</table>
+<p class="score">Your score (1–5):<span class="line"></span> Why? Evidence?<span class="wide"></span></p>
+
+<h2 class="sec newpage"><span class="num">7.</span> Disaster-recovery posture</h2>
+<p class="question">Is backup, restore, and disaster recovery routinely tested and proven, or is it a paper plan?</p>
+<table class="dense">
+  <thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>Backup partial and untested. No DR plan, or a plan untested for years. RTO / RPO not documented.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>Backup automated for most workloads. Restore tested ad-hoc. DR plan exists but has not been exercised in the past 12 months.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>Backup and restore tested annually for tier-1 workloads. DR site exists; failover tested partially. RTO / RPO documented.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>Backup, restore, and failover tested quarterly for tier-1 and annually for tier-2. RTO / RPO measured (not just documented). DR-tested results retained for audit.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Continuous DR (game-day cadence). Tier-1 workloads multi-region active-active or active-warm. Customer isolation respected during DR. Compliance evidence (DORA Art. 25, NIS2 BCP) auto-generated.</td></tr>
+  </tbody>
+</table>
+<p class="score">Your score (1–5):<span class="line"></span> Why? Evidence?<span class="wide"></span></p>
+
+<h2 class="sec"><span class="num">8.</span> Self-service depth</h2>
+<p class="question">How quickly can a product engineer go from "I need an environment" to "I have one running my code", without ticket-driven hand-offs?</p>
+<table class="dense">
+  <thead><tr><th>Stage</th><th>Name</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">Stage 1</td><td class="label">Pre-platform</td><td>Ticket-driven. Days to weeks. Engineers wait on ops. No standard path.</td></tr>
+    <tr><td class="stage">Stage 2</td><td class="label">Shared infrastructure</td><td>Some self-service for dev environments. Production still ticket-driven. Standard paths exist informally; documentation patchy.</td></tr>
+    <tr><td class="stage">Stage 3</td><td class="label">Self-service primitives</td><td>Self-service for non-prod and many prod operations. Golden path documented for common workload types. Ticket queue shrinking.</td></tr>
+    <tr><td class="stage">Stage 4</td><td class="label">Internal Developer Platform</td><td>Self-service end-to-end (environment, deploy, observability, scaling, rollback). Time-to-environment in minutes. Golden paths first-class — divergence requires a PR plus review.</td></tr>
+    <tr><td class="stage">Stage 5</td><td class="label">Mature</td><td>Platform-as-product. Engineers describe outcomes (workload plus SLO plus tenancy); the platform realises them. Internal NPS measured. Continuous improvement loop.</td></tr>
+  </tbody>
+</table>
+<p class="score">Your score (1–5):<span class="line"></span> Why? Evidence?<span class="wide"></span></p>
+
+<h1 class="doc-h newpage">Your scores</h1>
+<p class="lead">Transfer each dimension score below, then compute the average.</p>
+
+<table class="blank">
+  <thead><tr><th>Dimension</th><th class="fill">Score (1–5)</th><th class="fill">Stage</th></tr></thead>
+  <tbody>
+    <tr><td class="label">1. Workload portability</td><td></td><td></td></tr>
+    <tr><td class="label">2. GitOps adoption</td><td></td><td></td></tr>
+    <tr><td class="label">3. Observability unification</td><td></td><td></td></tr>
+    <tr><td class="label">4. Secrets handling</td><td></td><td></td></tr>
+    <tr><td class="label">5. Identity model</td><td></td><td></td></tr>
+    <tr><td class="label">6. Multi-tenancy</td><td></td><td></td></tr>
+    <tr><td class="label">7. Disaster-recovery posture</td><td></td><td></td></tr>
+    <tr><td class="label">8. Self-service depth</td><td></td><td></td></tr>
+    <tr class="total"><td>Average</td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<p class="score">Lowest 2 dimensions:<span class="wide" style="width:120mm"></span></p>
+<p class="score">Highest 2 dimensions:<span class="wide" style="width:118mm"></span></p>
+
+<div class="callout">
+  <p>A jagged profile — very high on some dimensions, very low on others — usually indicates uneven investment. Lifting your lowest dimensions typically has higher leverage than improving the ones that are already strong.</p>
+</div>
+
+<h1 class="doc-h newpage">What does my average score mean?</h1>
+
+<table class="flow dense">
+  <thead><tr><th>Score range</th><th>Stage</th><th>Interpretation</th><th>What to do next</th></tr></thead>
+  <tbody>
+    <tr><td class="stage">1.0 – 1.5</td><td class="label">Stage 1 — Pre-platform</td><td>Mostly fragmented infrastructure. Heroics keep things running. Investment in any platform foundation pays back immediately.</td><td>Stand up a platform team (3–5 engineers). Adopt IaC plus GitOps for new workloads. Centralise secrets.</td></tr>
+    <tr><td class="stage">1.5 – 2.5</td><td class="label">Stage 2 — Shared infrastructure</td><td>Core stack exists but is ticket-driven. Engineers wait on ops. A visible bottleneck.</td><td>Define golden paths for the top-3 workload types. Move provisioning to self-service. Enforce GitOps.</td></tr>
+    <tr><td class="stage">2.5 – 3.5</td><td class="label">Stage 3 — Self-service</td><td>Approaching IDP. Self-service partial. Golden paths emerging.</td><td>Invest in an IDP product mindset. Treat developers as customers. Measure time-to-environment and internal NPS.</td></tr>
+    <tr><td class="stage">3.5 – 4.5</td><td class="label">Stage 4 — IDP</td><td>Internal developer platform operational. Most teams self-serve.</td><td>Deepen tenancy, DR, and observability. Productize the platform internally. Expand to underserved workload types (data, AI, edge).</td></tr>
+    <tr><td class="stage">4.5 – 5.0</td><td class="label">Stage 5 — Mature</td><td>Compounding returns. The platform team is leveraged across the org.</td><td>Continuous improvement. Benchmark externally. Consider sharing tooling externally (open-source contribution, community presence).</td></tr>
+  </tbody>
+</table>
+
+<h1 class="doc-h" style="margin-top:8mm">What should we invest in first?</h1>
+<p class="lead">If your weakest dimension is...</p>
+
+<table class="dense">
+  <thead><tr><th style="width:30%">Weakest dimension</th><th>Most-leveraged investment</th></tr></thead>
+  <tbody>
+    <tr><td class="label">1. Workload portability</td><td>Adopt IaC universally; quarantine vendor-locked services; pilot a Kubernetes-based substrate.</td></tr>
+    <tr><td class="label">2. GitOps adoption</td><td>Deploy Argo CD or Flux; move app deploys to a PR-driven flow; layer infra GitOps next.</td></tr>
+    <tr><td class="label">3. Observability unification</td><td>Stand up unified metrics plus logs (e.g., VictoriaMetrics + VictoriaLogs); define SLOs for tier-1; rationalise alerts.</td></tr>
+    <tr><td class="label">4. Secrets handling</td><td>Deploy a central secret store plus External Secrets Operator; eliminate static secrets in workloads.</td></tr>
+    <tr><td class="label">5. Identity model</td><td>Universal SSO plus MFA; workload identity via OIDC / SPIFFE; automate JML.</td></tr>
+    <tr><td class="label">6. Multi-tenancy</td><td>Adopt a tenant-CRD pattern (e.g., Cozystack Tenant CRD); enforce NetworkPolicy / Cilium; quotas per tenant.</td></tr>
+    <tr><td class="label">7. Disaster-recovery posture</td><td>Test backup restore plus failover for tier-1 within 30 days; document RTO / RPO; quarterly cadence after that.</td></tr>
+    <tr><td class="label">8. Self-service depth</td><td>Define the top-3 golden paths; build a portal or CLI wrapper; measure time-to-environment.</td></tr>
+  </tbody>
+</table>
+
+<h1 class="doc-h newpage">Common patterns</h1>
+
+<div class="callout">
+  <p><b>"Strong on tooling, weak on tenancy / DR" pattern.</b> Often seen at organisations 2–3 years into platform investment. Tooling fluency is high (GitOps, observability, secrets), but cross-team isolation and tested DR lag behind. Investment in tenancy-as-product unlocks regulated workloads and customer-facing platform offerings.</p>
+</div>
+<div class="callout">
+  <p><b>"High self-service, low maturity" pattern.</b> Engineers can self-serve a lot, but the underlying primitives are fragile. The risk is a sudden plateau when that underlying weakness surfaces. Invest in the lowest 2 dimensions before deepening self-service further.</p>
+</div>
+
+<h1 class="doc-h" style="margin-top:9mm">Next steps</h1>
+
+<div class="option"><b>Option 1 — Self-remediate using this assessment.</b> Share the assessment with engineering leadership. Workshop the lowest 2 dimensions. Define a 90-day plan.</div>
+<div class="option"><b>Option 2 — Platform Readiness Assessment with Ænix (14 or 28 days).</b> We score with you, sanity-check the results, and produce a roadmap for Phase 2 platform engineering work. Fixed fee.</div>
+<div class="option"><b>Option 3 — Platform engineering managed engagement.</b> A multi-month build covering architecture, IDP design, golden paths, observability, DR, and tenancy. Scope is set after Phase 1.</div>
+
+<div class="cta">Schedule a discovery call: <span>aenix.io/services/platform-readiness-assessment/</span></div>
+
+<p class="lead" style="margin-top:8mm">Ænix created Cozystack (a CNCF project) and co-maintains it, and builds the Ænix Public Cloud, Private Cloud and AI platforms on it. aenix.io</p>
+
+<div class="closing">
+  <b>Ænix · aenix.io · Platform Engineering Maturity Assessment · v1.1 — October 2026.</b> Ænix created and co-maintains Cozystack (CNCF, Apache 2.0).
+</div>
