@@ -1,5 +1,6 @@
 ---
 title: "Webinar: add Kubernetes, databases and GPU to your price list"
+seo_title: "Webinar: Kubernetes, databases and GPU for providers"
 description: "Recording of the 19 August 2026 webinar with Andrei Kvapil: how a hosting or cloud provider adds managed Kubernetes, databases, S3 and GPU to its catalog."
 language: "en"
 # The German version was withdrawn; its URL redirects here.
@@ -30,7 +31,7 @@ event:
   language: "en"
   mode: "online"
   performer: "Andrei Kvapil"
-  performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
+  performer_role: "Creator and maintainer of Cozystack, co-founder and CEO of Ænix"
   price: 0
 direct_answer: |
   **This was a free live webinar, held on 19 August 2026, for hosting providers, cloud providers, data centre operators, MSPs and telecoms that already sell infrastructure and are deciding what to sell next. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — walked through how a working provider widens its catalog with managed Kubernetes, managed databases, S3-compatible object storage and GPU: what runs beside the current stack, what happens to billing and to the customer panel, how customers move across one at a time, and what the first ninety days look like. The recording is free to watch on YouTube.**
@@ -47,7 +48,7 @@ quick_facts:
   - label: "Who it's for"
     value: "Founders, CTOs, COOs and product leaders at hosting providers, cloud providers, data centres, MSPs and telecoms that already sell infrastructure"
   - label: "Host"
-    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), founder of Aenix"
+    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), co-founder and CEO of Ænix"
   - label: "After the webinar"
     value: "The recording, plus a practical view of a catalog and migration plan you can adapt to your own stack"
 
@@ -59,9 +60,9 @@ faq:
   - q: "What happens to our billing?"
     a: "It stays yours. WHMCS has a ready integration, anything else connects over the platform API, and usage metering exports into whatever you invoice from today. Your customer database stays the source of truth."
   - q: "We wrote our own control panel. Do we throw it away?"
-    a: "No. The platform exposes a REST API and its own panel is optional. Andrei covers both patterns: keeping your panel as the customer-facing surface, or white-labelling ours."
+    a: "No. The platform exposes a REST API and its own panel is optional. Andrei covered both patterns: keeping your panel as the customer-facing surface, or white-labelling ours."
   - q: "Can we sell GPU from the same platform?"
-    a: "Yes. Whole-card passthrough, vGPU and MIG on supported cards, so one card can serve more than one tenant. Andrei covers what each mode gives you and what you can put in a customer contract."
+    a: "Yes. Whole-card passthrough, plus vGPU and fractional sharing (HAMi) on supported cards, so one card can serve more than one tenant; MIG is on the roadmap. Andrei covered what each mode gives you and what you can put in a customer contract."
   - q: "How many engineers does it take to run?"
     a: "Fewer than OpenStack. The platform is one coherent Kubernetes-native stack rather than a dozen services you integrate yourself, and upgrades are a release rather than a project."
   - q: "What does a pilot involve?"
@@ -124,7 +125,7 @@ final_cta:
 <li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.66 3.13 3 7 3s7-1.34 7-3V6"/><path d="M5 12c0 1.66 3.13 3 7 3s7-1.34 7-3"/></svg></span>Managed databases</li>
 <li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg></span>Virtual machines</li>
 <li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4 4 0 0 1 0-8 5 5 0 0 1 9.6-1.3A3.5 3.5 0 0 1 17.5 18H7Z"/></svg></span>S3-compatible storage</li>
-<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>GPU · passthrough, vGPU, MIG</li>
+<li><span class="ws-platform__ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></span>GPU · passthrough, vGPU, HAMi sharing</li>
 </ul>
 <div class="wb-platform__plus"><span>+ Ænix modules</span></div>
 <ul class="wb-platform__modules">
@@ -139,7 +140,7 @@ final_cta:
 <div class="ws-wrap">
 <div class="cs-stats">
   <div class="cs-stat"><div class="cs-stat__num">20+</div><div class="cs-stat__label">managed services in the catalog, ready to price and sell</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">1 GPU → many tenants</div><div class="cs-stat__label">whole-card passthrough, vGPU and MIG on supported cards</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">1 GPU → many tenants</div><div class="cs-stat__label">whole-card passthrough, vGPU and fractional sharing on supported cards</div></div>
   <div class="cs-stat"><div class="cs-stat__num">€0</div><div class="cs-stat__label">per-core hypervisor licensing — Apache 2.0, CNCF Sandbox project</div></div>
 </div>
 </div>
@@ -199,7 +200,7 @@ final_cta:
 <li class="wb-cover__item">
 <span class="wb-cover__num">05</span>
 <span class="wb-cover__icon">{{< ws-icon name="vm" >}}</span>
-<p class="wb-cover__text"><strong>GPU as a product.</strong> Renting a whole card or a slice of one: passthrough, vGPU and MIG, what each isolates, and what you can put in a customer contract.</p>
+<p class="wb-cover__text"><strong>GPU as a product.</strong> Renting a whole card or a share of one: passthrough, vGPU and fractional sharing (HAMi), what each isolates, and what you can put in a customer contract.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">06</span>
@@ -268,7 +269,7 @@ final_cta:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
-<div class="ws-speaker__role">Creator of Cozystack · Founder of Aenix</div>
+<div class="ws-speaker__role">Creator of Cozystack · Co-founder and CEO of Ænix</div>
 <p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps providers across Europe turn their infrastructure into commercial cloud services.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">

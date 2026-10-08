@@ -12,12 +12,11 @@ images: ["img/og/og-webinar-en.png"]
 hide_child_cards: true
 hero_eyebrow: "Webinar · Took place online on Thursday 10 September 2026"
 hero_title: "Build the GPU cloud you've been renting"
-hero_tagline: "One hour with Andrei Kvapil, the creator of Cozystack: turn the GPUs you already own into a multi-tenant platform teams can use — or customers can buy — from bare metal to a metered inference endpoint, assembled entirely from open source."
+hero_tagline: "About 50 minutes with Andrei Kvapil, the creator of Cozystack: turn the GPUs you already own into a multi-tenant platform teams can use — or customers can buy — from bare metal to a metered inference endpoint, assembled entirely from open source."
 hero_chips:
   - "Took place on 10 September 2026"
   - "50 minutes, with a live Q&A"
   - "Recording not published yet"
-  - "Bring your stack — questions answered live"
 hero_primary: { text: "Talk to the team", href: "/contact/" }
 hero_secondary: { text: "See the agenda", href: "#agenda" }
 speaker_photo: "images/webinars/andrei-kvapil.png"
@@ -28,10 +27,10 @@ event:
   language: "en"
   mode: "online"
   performer: "Andrei Kvapil"
-  performer_role: "Creator and maintainer of Cozystack, founder of Aenix"
+  performer_role: "Creator and maintainer of Cozystack, co-founder and CEO of Ænix"
   price: 0
 direct_answer: |
-  **This was a free live webinar, held on 10 September 2026, for enterprise platform teams and for cloud, telecom and GPU providers building a sovereign AI offering. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — showed the whole path from bare metal to a metered inference endpoint: turning a node with GPUs into GPU-ready tenant clusters, the four ways to allocate a single card, serving inference with vLLM and NVIDIA Dynamo, and metering it by GPU-hour or by token — all assembled from open source. The internal AI platform and the commercial GPU cloud turn out to be the same stack. The recording is not published yet.**
+  **This was a free live webinar, held on 10 September 2026, for enterprise platform teams and for cloud, telecom and GPU providers building a sovereign AI offering. Andrei Kvapil — the creator of Cozystack, an open-source cloud platform and CNCF Sandbox project — showed the whole path from bare metal to a metered inference endpoint: turning a node with GPUs into GPU-ready tenant clusters, the ways to allocate a single card, serving inference with vLLM and NVIDIA Dynamo, and metering it by GPU-hour or by token — all assembled from open source. The internal AI platform and the commercial GPU cloud turn out to be the same stack. The recording is not published yet.**
 
 quick_facts:
   - label: "Format"
@@ -45,23 +44,25 @@ quick_facts:
   - label: "Who it's for"
     value: "Platform engineers, architects, CTOs and infrastructure leaders who own the GPUs — and providers building an AI cloud"
   - label: "Host"
-    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), founder of Aenix"
+    value: "Andrei Kvapil — creator and maintainer of Cozystack (CNCF Sandbox project), co-founder and CEO of Ænix"
   - label: "After the webinar"
     value: "A clear map of a GPU platform and a decision matrix for sharing GPUs you can adapt to your own cluster"
 
 faq:
   - q: "Is this about training models or running infrastructure?"
-    a: "Infrastructure. We cover the platform under your AI workloads — GPU sharing, tenancy, inference serving and metering — not model training, MLOps pipelines or model quality."
+    a: "Infrastructure. The session covered the platform under your AI workloads — GPU sharing, tenancy, inference serving and metering — not model training, MLOps pipelines or model quality."
   - q: "We only want an internal platform, not a commercial cloud. Is it still useful?"
     a: "Yes. An internal GPU platform is the same stack as a commercial AI cloud, minus the second meter. Everything on sharing, tenancy and inference applies directly to an internal build."
   - q: "Do we need NVIDIA GPUs?"
-    a: "The live demos run on NVIDIA — GPU Operator, MIG, vGPU and Dynamo. The state of AMD and other accelerators was covered in the Q&A."
+    a: "The live demos ran on NVIDIA — the GPU Operator, vGPU and Dynamo. MIG partitioning is on the Cozystack roadmap. The state of AMD and other accelerators was covered in the Q&A."
   - q: "Can you really meter inference per token on an open stack?"
-    a: "Yes, and we show it live: an AI gateway in front of the model issues API keys, counts input and output tokens, and returns a 429 (over quota) when a budget runs out. We name the open components used."
+    a: "Yes, and the session showed it live: an AI gateway in front of the model issues API keys, counts input and output tokens, and returns a 429 (over quota) when a budget runs out. Andrei named the open components used."
   - q: "Do you cover multi-node training and the GPU interconnect?"
-    a: "Briefly, yes. We show where the fabric matters — NVLink within a node, GPUDirect RDMA over InfiniBand or RoCE across nodes — and the honest limit: tightly coupled multi-node training doesn't survive WAN latency, so it lives inside one site."
+    a: "Briefly, yes. The session showed where the fabric matters — NVLink within a node, GPUDirect RDMA over InfiniBand or RoCE across nodes — and the honest limit: tightly coupled multi-node training doesn't survive WAN latency, so it lives inside one site."
   - q: "How does this compare to Run:ai or OpenShift AI?"
     a: "We compare approaches — buying a platform, renting capacity, or assembling open source — across licensing, GPU sharing, tenant isolation, inference and metering, including the honest trade-offs."
+  - q: "Where is the platform behind this session described?"
+    a: "For the platform behind this session, see [GPU as a service for GPU clouds and data centres](/solutions/gpu-as-a-service/) and the [Ænix AI Platform](/products/ai-platform/)."
   - q: "Is there a recording?"
     a: "The webinar took place on 10 September 2026; the recording is not published yet. To go through a GPU platform for your own setup, [talk to the team](/contact/)."
 
@@ -117,7 +118,7 @@ final_cta:
 <span class="wb-platform__cap">Open-source foundation</span>
 <ul class="ws-platform__layers">
 <li><span class="ws-platform__ic">{{< ws-icon name="vm" >}}</span>GPU-ready tenant clusters</li>
-<li><span class="ws-platform__ic">{{< ws-icon name="layers" >}}</span>GPU sharing · passthrough, vGPU, MIG, fractional</li>
+<li><span class="ws-platform__ic">{{< ws-icon name="layers" >}}</span>GPU sharing · passthrough, vGPU, fractional (HAMi)</li>
 <li><span class="ws-platform__ic">{{< ws-icon name="rocket" >}}</span>Managed inference · vLLM, NVIDIA Dynamo</li>
 <li><span class="ws-platform__ic">{{< ws-icon name="stack" >}}</span>Managed databases &amp; S3-compatible storage</li>
 </ul>
@@ -133,8 +134,8 @@ final_cta:
 
 <div class="ws-wrap">
 <div class="cs-stats">
-  <div class="cs-stat"><div class="cs-stat__num">4 ways</div><div class="cs-stat__label">to allocate one card — passthrough, vGPU, MIG, fractional</div></div>
-  <div class="cs-stat"><div class="cs-stat__num">1 GPU → many tenants</div><div class="cs-stat__label">vGPU, MIG and fractional sharing on supported cards</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">3 ways</div><div class="cs-stat__label">to allocate one card — passthrough, vGPU, fractional (HAMi); MIG on the roadmap</div></div>
+  <div class="cs-stat"><div class="cs-stat__num">1 GPU → many tenants</div><div class="cs-stat__label">vGPU and fractional sharing on supported cards</div></div>
   <div class="cs-stat"><div class="cs-stat__num">€0</div><div class="cs-stat__label">per-core hypervisor licensing — Apache 2.0, CNCF Sandbox project</div></div>
 </div>
 </div>
@@ -179,7 +180,7 @@ final_cta:
 <li class="wb-cover__item">
 <span class="wb-cover__num">02</span>
 <span class="wb-cover__icon">{{< ws-icon name="layers" >}}</span>
-<p class="wb-cover__text"><strong>Four ways to allocate a GPU.</strong> One whole card (passthrough) or three ways to share it — vGPU, MIG and fractional (HAMi) — side by side, with the utilization graph that turns idle silicon into money.</p>
+<p class="wb-cover__text"><strong>Ways to allocate a GPU.</strong> One whole card (passthrough) or a share of it — vGPU and fractional (HAMi) — side by side, with MIG partitioning on the roadmap, with the utilization graph that turns idle silicon into money.</p>
 </li>
 <li class="wb-cover__item">
 <span class="wb-cover__num">03</span>
@@ -219,7 +220,7 @@ final_cta:
 <article class="ws-outcome">
 <span class="ws-outcome__num">02</span>
 <span class="ws-outcome__icon">{{< ws-icon name="map" >}}</span>
-<p class="ws-outcome__text"><strong>A one-page decision matrix</strong> for sharing GPUs: passthrough vs vGPU vs MIG vs fractional, and when each wins.</p>
+<p class="ws-outcome__text"><strong>A one-page decision matrix</strong> for sharing GPUs: passthrough vs vGPU vs fractional, and when each wins.</p>
 </article>
 <article class="ws-outcome">
 <span class="ws-outcome__num">03</span>
@@ -263,7 +264,7 @@ final_cta:
 <div class="ws-speaker__info">
 <h2 class="ws-h2" id="wb-speaker-h">Your speaker</h2>
 <div class="ws-speaker__name">Andrei Kvapil</div>
-<div class="ws-speaker__role">Creator of Cozystack · Founder of Aenix</div>
+<div class="ws-speaker__role">Creator of Cozystack · Co-founder and CEO of Ænix</div>
 <p class="ws-speaker__bio">Andrei created Cozystack, the open-source cloud platform and CNCF Sandbox project, after more than fifteen years of building clouds and high-load infrastructure. He contributes to Kubernetes, KubeVirt, Cilium and LINSTOR, and speaks at KubeCon and other industry events. At Aenix, he helps teams turn their GPUs and hardware into commercial cloud services.</p>
 <div class="wb-speaker__links">
 <a class="wb-speaker__link" href="https://github.com/kvaps" target="_blank" rel="noopener">
